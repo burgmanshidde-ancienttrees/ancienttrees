@@ -1,0 +1,20 @@
+{
+  "_note": "OPEN GAPS, not decisions. Read by check_every_language_gets_the_same_controls() in scripts/qa.py. Each entry is a part the English page has and its translated twins do not, recorded with what is missing and why it is still missing. Nothing here is approved: an entry is work to do, and it is deleted the day the part reaches those pages. A part NOT listed here that goes missing from a translated page fails the push. Hidde, 2026-09-12: 'hoe zorg ik dat je dat onthoudt waar opschrijven' - the answer is that he should not have to, so this is the check instead of a sentence.",
+  "closed_on_2026-09-12": "The worth-it vote, the share button and the app block. They were missing from 907 translated tree pages and 47 translated city pages; they now render in all seven languages.",
+  "open": [
+    {
+      "part": "which-one",
+      "page_kind": "tree",
+      "measured": "2026-09-12",
+      "what": "The recognition line, the 'How do I find it?' paragraph that says what separates this trunk from its neighbours.",
+      "why_still_open": "Not a template gap: TreeTranslation in site/src/lib/i18n.ts carries name, species, age_estimate, access, transport and story, and no recognise field, so there is nothing to render. Closing it means widening that schema and translating the lines themselves, which is real translation work rather than a wiring change. It matters most of the three that remain: CLAUDE.md ranks the recognition line above page gaps precisely because it is often the only thing that tells a visitor which tree they are standing in front of."
+    },
+    {
+      "part": "best-now-inline",
+      "page_kind": "tree",
+      "measured": "2026-09-12",
+      "what": "The 'at its best right now' season chip.",
+      "why_still_open": "Needs the best_time label and the phenology moment names in seven languages. Those live per species in data/phenology and are written as English sentences, so this is translation work on the data rather than on the page."
+    }
+  ]
+}

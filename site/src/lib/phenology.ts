@@ -150,7 +150,7 @@ export function seasonCurve(tree: Tree): string {
     const by = (peakY / H) * 100;
     peakBadge = `<span class="sc-peakbadge" style="left:${bx.toFixed(1)}%;top:${by.toFixed(1)}%">${KIND_ICONS[kind]}</span>`;
   }
-  const nowBadge = inSeason ? '<span class="best-now">at its best right now</span>' : "";
+  const nowBadge = inSeason ? '<span class="best-now">at its best now</span>' : "";
 
   return `
 <figure class="season">
@@ -437,7 +437,7 @@ export function seasonBlock(tree: Tree, lat: number): string {
   }
 
   const keys = moments.map((mo) => `<span class="ph-key">${KIND_ICONS[mo.kind]}${esc(mo.label || mo.kind.charAt(0).toUpperCase() + mo.kind.slice(1))}</span>`).join("");
-  const nowBadge = inSeason ? '<span class="best-now">at its best right now</span>' : "";
+  const nowBadge = inSeason ? '<span class="best-now">at its best now</span>' : "";
   const labelLine = hasBt ? `<p class="season-label">${esc(bt.label!)}</p>` : "";
 
   return `

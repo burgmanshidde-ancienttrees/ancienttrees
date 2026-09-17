@@ -3,7 +3,7 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Zwolle pulled down its fortifications and made a ring of parks out of the earth, which is why almost every old tree in the city is standing on a seventeenth century rampart. The best of them is a plane on the Potgietersingel: 33.6 metres tall with a trunk 719 centimetres round, which are measured figures rather than estimates. The oldest is a beech in the grounds of a small country house outside town, where Rhijnvis Feith, poet and mayor of Zwolle, spent his free time writing and in 1799 published an ode to the place in 34 verses.",
-  "meta_description": "14 remarkable trees in Zwolle: a plane 33.6 metres tall on a 17th-century rampart, and a beech in the grounds a mayor wrote a 34-verse ode about.",
+  "meta_description": "16 remarkable trees in Zwolle: a plane 33.6 metres tall on a 17th-century rampart, and a beech in the grounds a mayor wrote a 34-verse ode about.",
   "question_meta": "Zwolle's oldest tree is a beech at Park Boschwijk, banded 1750 to 1800. The tallest is a 33.6 metre plane on the Potgietersingel.",
   "question_answer": "The oldest tree in Zwolle is a beech on the west side of the beech avenue in Park Boschwijk, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. Boschwijk is a small country house just outside the city, and its most famous owner was Rhijnvis Feith, who lived from 1753 to 1824 and was both a poet and mayor of Zwolle. He came here in his free time to write, and in 1799 he published an ode to Boschwijk running to 34 verses. The beech was already a young tree when he was writing, which makes it one of the very few things named in this city that Feith could plausibly have walked past.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements, and the beech at Boschwijk carries a band fifty years wide. The plane on the Potgietersingel is the exception: the register gives it a measured height of 33.6 metres and a trunk girth of 719 centimetres, and those two numbers are the firmest facts on this page. The register is the 2024 edition and is the single source for the first seven found here, which is why those are all flagged. A second batch of seven, cross-checked against the municipality's own protected-tree ordinance, mostly still carries a flag where the two disagree on age or exactly which tree is meant. The singels and Park Eekhout sit on the city's former defensive works, made ground rather than natural soil, which is why several pins there mark a row rather than a trunk. If you find one of these gone, tell us and it comes off the same day.",
@@ -495,6 +495,72 @@
       "curation_status": "flagged",
       "story": "The national register lists this beech, gives it monumental status, and then leaves two boxes blank. Can you visit it: unknown. Can you see it: unknown.\n\nWhat the entry does say is specific. A bruine beuk, a copper beech rather than a plain one, on private ground at the Wipstrikkerallee, planted between 1860 and 1870. That dating would make it a grown tree well before Villa Urbana opened as a tea house next door in 1924, and by some distance the oldest thing at this corner of the avenue.\n\nThe corroboration is thinner than we would like. Zwolle's 2024 list of special trees records no copper beech on this street at all. It does record a private plain beech here, dated 1940, which is either the same tree written up loosely by a different surveyor or an entirely different one, and the avenue holds more than a dozen registered beeches, so either is possible. The age therefore sits in a wide band, somewhere between about 85 and 165 years.\n\nBoth questions come apart with one visit. Purple leaves mean the register has it right, green leaves mean it does not, and either way you will know whether you can stand in front of it. Tell us which.",
       "how_to_recognise": "You can recognise it by the purple foliage, which is what separates it from the plain green beeches further along the avenue. It stands in front of the former Urbana tea house, now Loetje, with the big plane beside the building.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zwo_015",
+      "name": "The Plume Elm of Potgietersingel",
+      "species": "Elm (Ulmus sp., a plume-form cultivar; possibly Ulmus x hollandica)",
+      "age_estimate": "roughly 130 years, from a registered planting date around 1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Potgietersingel, Zwolle",
+        "latitude": 52.509469,
+        "longitude": 6.094311,
+        "neighbourhood": "Potgietersingel"
+      },
+      "story": "The Plume Elm of Potgietersingel does not appear on Zwolle's own list of protected trees. The municipality's 2015 survey of the city's special trees names nineteen elms across town and catalogues the rest of this exact park strip in detail, its maples, oaks, planes and even a tree of heaven, and still skips this one. The only record of it at all is the national Landelijk Register Monumentale Bomen, which dates the planting to around 1900 and calls it a Pluimiep, Dutch for plume elm, after its narrow, weeping crown. The register is not settled on what species it actually is: one entry names Ulmus x hollandica, a duplicate entry backs off to Ulmus sp. Dutch elm disease has killed most of the country's old elms since the 1970s, which makes a plume-form specimen from around 1900 still standing, in a public strip the city owns and leaves open at all hours, worth more attention than its own municipality has given it. It stands about a hundred and twenty metres from the park's Copper Beech, part of the same walk. Nobody has settled the exact cultivar, and the page would welcome someone who can.",
+      "how_to_recognise": "You can recognise it by the narrow, plume-shaped crown, unlike the broader elms elsewhere in the city. It stands in the park strip at Potgietersingel, about 120 metres from the Copper Beech by the Fountain.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1689103"
+      ],
+      "access": "Free. Stands in the public park strip at Potgietersingel (gemeente-owned), open at any time; about 120m from the Copper Beech by the Fountain (zwo_006), so it joins that same walk.",
+      "transport": "About 700 m north of Zwolle station, same stop as the Van Nahuysplein cluster.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zwo_016",
+      "name": "Huis de Paddestoel's Swamp Cypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "roughly 100 years, from a registered planting date around 1920-1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Herenweg, by Huis de Paddestoel, Zwolle (register text says 'Herenweg 33' but the register's own coordinate places it near Herenweg 131-133, in Wipstrik/Zalne; see notes)",
+        "latitude": 52.507506,
+        "longitude": 6.122003,
+        "neighbourhood": "Wipstrik"
+      },
+      "story": "Huis de Paddestoel means Toadstool House, and the bald cypress carrying its name stands where the paperwork about it does not quite agree with itself. The national register lists the tree's address as Herenweg 33, but its own coordinate sits nearly a kilometre away, at Herenweg 131 to 133 in the Wipstrik district, exactly where a 1991 photograph in a local historical archive identifies \"Huize de Paddestoel van Schulte Nordholt\". The municipality's 2015 survey of the city's protected trees lists only one Taxodium distichum on the entire street, also placed in Wipstrik, also municipally owned, which is almost certainly this same tree rather than a second one nobody else has recorded. Planted somewhere around 1920 to 1930, it now stands close to a century old on the public road verge, at what was once the edge of the private grounds around the house. Bald cypresses are unusual among conifers for dropping their needles every winter, turning a rust orange first, so the tree rewards two visits: one in leaf, one bare. The exact planting year has not been confirmed, so treat the century as an estimate rather than a measurement. The register itself calls the tree visible and open to the public, which the road verge it stands on bears out.",
+      "how_to_recognise": "You can recognise it by the flat, feathery foliage that turns rust orange and drops completely each winter, unlike the evergreens nearby. It stands on the road verge along Herenweg at the old Huis de Paddestoel grounds.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the needles turn rust orange before dropping"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1688404",
+        "Gemeente Zwolle, 'Bijzondere bomen Gemeente Zwolle' (definitieve lijst, 15 februari 2015): one Taxodium distichum 'Monumentaal', wijk Wipstrik, straatnaam Herenweg, kadastraal ZLE00B 07605G0000, eigendom Gemeente Zwolle"
+      ],
+      "access": "Stands on or right at the edge of the public road verge along Herenweg, at the boundary of the private grounds historically known as Huis de Paddestoel; visible and reachable from the public road without needing anyone's permission. The register itself flags this tree visitable: ja, visible: ja.",
+      "transport": "About 175 m from the Plane by Restaurant Urbana (zwo_013), same Wipstrik walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
       "photo": {
         "url": null,
         "license": null,

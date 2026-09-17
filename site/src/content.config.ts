@@ -6,7 +6,7 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
-const photoSchema = z
+const photoFields = z
   .object({
     url: z.string().nullable().optional(),
     license: z.string().nullable().optional(),
@@ -35,8 +35,22 @@ const photoSchema = z
     // an account that is already gone.
     unlinked: z.boolean().nullable().optional(),
   })
-  .partial()
-  .optional();
+  .partial();
+
+const photoSchema = photoFields.optional();
+
+// FURTHER photographs of the same tree (2026-09-12). Same shape as the lead,
+// deliberately: an extra carries a licence, an attribution and a takedown id on
+// exactly the terms the lead does, so hard rule 4 and the deletion promise do
+// not acquire a second, looser set of rules for the second picture.
+//
+// No caption field, and that is a decision rather than an omission. A typed
+// caption is user-facing text, and user-facing text on this site goes through
+// UIStrings so the seven translated page sets get it too; an English sentence
+// written into a city file would render untranslated on the Japanese page, which
+// is the exact fault check_translated_components_have_no_typed_text() exists to
+// stop. The thumbnails are labelled "Photograph 2 of 3" from UIStrings instead.
+const photosSchema = z.array(photoFields).optional();
 
 const bestTimeSchema = z
   .object({
@@ -85,6 +99,7 @@ export const treeSchema = z.object({
   paid_entry: z.boolean().optional(),
   transport: z.string().optional(),
   photo: photoSchema,
+  photos: photosSchema,
   curation_status: z.enum(["ai_generated", "hidde_approved", "flagged"]).optional(),
   location_precision: z.enum(["confirmed", "approximate"]).optional(),
   /** Which tree it is, once you are standing there. One plain sentence.
@@ -111,39 +126,6 @@ export const treeSchema = z.object({
    * because a visitor deserves to know that before the walk rather than
    * after. */
   how_to_recognise: z.string().optional(),
-  /** WHY WOULD SOMEBODY WALK TO THIS ONE? In the reader's view, added on
-   * Hidde's ruling of 2026-09-08: "mss moeten we een regel toevoegen
-   * why remarkable? why worth the walk? tell others why they should go and
-   * visit the tree".
-   *
-   * It exists because four Nara trees went live from his own photographs and
-   * passed EVERY mechanical check we had. They carried a name, a species, a
-   * pin, a story and honest flags. What none of them carried was a reason, and
-   * nothing had ever asked for one. The run had confused "I can write an honest
-   * page about this" with "this deserves a page", and those are different: the
-   * first is always possible and the second is the product.
-   *
-   * It is public rather than a private checklist on purpose. A box gets ticked;
-   * a sentence a reader will see has to survive being read. It is also the
-   * answer Google wants: for a tree with no recorded age and no measurement,
-   * metaForTree leads on this, which is the only honest thing there is to say
-   * about such a page. See tree-copy.ts.
-   *
-   * AS LONG AS IT NEEDS TO BE, which is his correction to my own first draft
-   * of this field (2026-09-08: "Een zin? mogen er meer zijn van mij - liever
-   * dat het duidelijk is"). I had capped it at one sentence to keep it out of
-   * the story's way, and a cap is the wrong instrument: the point is that a
-   * reader understands why to go, and a reason that needs two sentences is
-   * better as two sentences than squeezed into one. The meta description takes
-   * whole sentences from the front and stops where it runs out of room, so a
-   * longer field costs the snippet nothing.
-   *
-   * What belongs here: the thing that makes THIS trunk worth the trip. What
-   * does not: praise ("a magnificent specimen"), the species, the age or girth
-   * when they are already fields, or a reason that would be equally true of any
-   * old tree. If the only honest answer is "it is one of dozens like it on this
-   * slope", the tree is a lead, not a page. */
-  why_go: z.string().optional(),
   label: z.string().optional(),
   notes: z.string().optional(),
   best_time: bestTimeSchema,

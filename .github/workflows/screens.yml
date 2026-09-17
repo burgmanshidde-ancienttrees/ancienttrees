@@ -1,0 +1,143 @@
+name: Publish screens
+
+# Put a named app screenshot where a phone can see it.
+#
+# Hidde, 2026-09-13, asking to see the globe on My trees: "kun je een screenshot
+# van de globe maken ik kan m niet zien op mobiele". Every screen has been
+# photographed in CI since 2026-08-25, and every one of those pictures is inside
+# a 21 MB zip on a workflow run page, which is not something anybody opens on a
+# telephone. So the pictures existed and the eyes layer still could not reach
+# them, which is the same shape as every other gate-nobody-looks-at in this
+# repository.
+#
+# This does the last ten metres: it takes the screenshots an "iOS app" run has
+# already produced and commits the named ones to docs/screens/, where github.com
+# renders a png inline on any device. It builds nothing and needs no Mac, so it
+# runs on ubuntu in about a minute.
+#
+# DELIBERATELY ON DEMAND, never automatic. A sweep photographs 38 screens on two
+# phones and several of them are maps, which differ every run because the tiles
+# and the rotation differ; committing all of that twice a day would be several
+# megabytes of churn for pictures nobody asked to see. Asking for one screen by
+# name costs a few hundred kilobytes and happens when somebody actually wants to
+# look.
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "The 'iOS app' run to take the pictures from (the number in its URL)"
+        required: true
+      screens:
+        description: "Which screens, comma separated. Substring match on the filename."
+        required: true
+        default: collection-globe
+
+permissions:
+  contents: write
+  # Reading another workflow run's artifact needs this; without it
+  # download-artifact reports the run as not found rather than as forbidden.
+  actions: read
+
+concurrency:
+  group: publish-screens
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch that run's screenshots
+        uses: actions/download-artifact@v4
+        with:
+          name: appsweep-${{ inputs.run_id }}
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+          path: sweep
+
+      - name: Copy the ones asked for
+        id: copy
+        run: |
+          mkdir -p docs/screens
+          found=0
+          IFS=',' read -ra WANTED <<< "${{ inputs.screens }}"
+          for want in "${WANTED[@]}"; do
+            want="$(echo "$want" | xargs)"       # trim
+            [ -z "$want" ] && continue
+            while IFS= read -r f; do
+              # The sweep writes one folder per device, so keep that in the name
+              # rather than letting the second phone overwrite the first.
+              dev="$(basename "$(dirname "$f")")"
+              cp "$f" "docs/screens/${dev}-$(basename "$f")"
+              echo "copied $f -> docs/screens/${dev}-$(basename "$f")"
+              found=$((found+1))
+            done < <(find sweep -type f -name "*${want}*.png")
+          done
+          echo "found=$found" >> "$GITHUB_OUTPUT"
+          if [ "$found" -eq 0 ]; then
+            echo "::error::No screenshot matched. What the artifact holds:"
+            find sweep -type f -name '*.png' -printf '%P\n' | sort
+            exit 1
+          fi
+
+      - name: Commit them
+        run: |
+          git config user.name "claude[bot]"
+          git config user.email "41898282+claude[bot]@users.noreply.github.com"
+          # STAGE FIRST, then ask. The first version asked before staging, and
+          # a brand new file is untracked, so `git diff` saw nothing and the
+          # job reported success having committed nothing at all.
+          git add -A docs/screens
+          if git diff --cached --quiet; then
+            echo "the pictures are identical to what is already committed"
+            exit 0
+          fi
+          git commit -m "Screens: ${{ inputs.screens }} from iOS run ${{ inputs.run_id }}"
+          git pull --rebase --autostash -q
+          git push
+
+      # THE NUMBERS, not only the picture. appfit dumps every element's frame
+      # for BOTH phones, and the sweep photographs only the small one, so a
+      # fault that appears on a large screen has a measurement and no image.
+      # Printed to the log rather than committed: it is a wall of text that
+      # answers one question on one afternoon.
+      - name: Fetch that run's frame dump
+        id: dump
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: appfit-dump-${{ inputs.run_id }}
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+          path: dump
+
+      - name: The frames for those screens
+        if: steps.dump.outcome == 'success'
+        run: |
+          IFS=',' read -ra WANTED <<< "${{ inputs.screens }}"
+          for f in $(find dump -type f); do
+            echo "=================== $f"
+            for want in "${WANTED[@]}"; do
+              want="$(echo "$want" | xargs)"
+              [ -z "$want" ] && continue
+              echo "--- $want"
+              # SweepFrames brackets each screen with "<<<SWEEP <name> <WxH>"
+              # and "SWEEP>>>". Matching the name as its own field, so
+              # "tree" does not also print "own-tree" and "tree-nophoto".
+              awk -v w="$want" '
+                $1 == "<<<SWEEP" && $2 == w { on=1; print; next }
+                $1 == "SWEEP>>>" { on=0 }
+                on { print }
+              ' "$f" | head -200
+            done
+          done
+
+      - name: Where to look
+        run: |
+          echo "### Screens published" >> "$GITHUB_STEP_SUMMARY"
+          for f in docs/screens/*.png; do
+            echo "- https://github.com/${{ github.repository }}/blob/main/$f" >> "$GITHUB_STEP_SUMMARY"
+          done

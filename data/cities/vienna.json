@@ -856,10 +856,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/329230142/medium.jpeg",
+        "license": "CC BY",
+        "attribution": "Flora_DUMO, via iNaturalist",
+        "status": "approved",
+        "width": 500,
+        "height": 375
       },
       "how_to_recognise": "You can recognise it by the trunk, 434 centimetres round on a tree planted in 1928. It stands on Dr. Karl Lueger-Platz, the only protected tree on the stretch of Ring between Stubentor and the Stadtpark."
     },
@@ -925,12 +927,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Naturdenkmal_567_GuentherZ_2010-08-25_0129_Wien01_Rathauspark_Platane.JPG",
+        "license": "CC BY 3.0",
+        "attribution": "GuentherZ, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1234,
+        "height": 1800
       },
-      "how_to_recognise": "You can recognise it by the trunk, 5.97 metres round, a mottled grey column splitting into heavy limbs. It stands at the north end of the park, away from the famous plane at the front with the 1783 date."
+      "how_to_recognise": "You can recognise it by the trunk, 5.97 metres round, a mottled grey column splitting into heavy limbs. It stands at the north end of the park, away from the famous plane at the front with the 1783 date.",
+      "verify_notes": "Naturdenkmal 567 (GuentherZ photo geotagged 11 m from this pin, 55 m from vie_029s pin, which is ND 566), settled by a 2026-09-13 photo-judge pass. Photo approved from the ND 567 file."
     },
     {
       "id": "vie_027",
@@ -956,10 +961,12 @@
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Platane_Wien_H%C3%BCgelgasse_7.jpg",
+        "license": "CC BY-SA 3.0 at",
+        "attribution": "HeinzLW, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1600,
+        "height": 2597
       },
       "how_to_recognise": "You can recognise it by the crown, 16 metres across on an 18 metre frame, covering the road and both pavements, on a trunk of only 2.2 metres. It stands on the pavement in front of Hügelgasse 7."
     },
@@ -1017,13 +1024,15 @@
       "transport": "3 min walk from Rathaus U-Bahn station (U2) or the Rathausplatz tram stop (Tram 1/71/D)",
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "verify_notes": "This completes the set: Rathauspark has exactly three individually protected planes (Naturdenkmal Nr. 564, 566, 567, all designated 3 July 1973). vie_006 is Nr. 564 (the 'Founding Plane', catalogue no. 252, register_id 3257649) and vie_026 is one of the other two (register_id 3257651, girth 597 cm). This tree is register_id 3257650, the remaining one, standing 55 m from vie_026 (baum_id 147511 vs 147537, girth 526 cm vs 597 cm, genuinely distinct trees, not the same specimen mismeasured). An earlier verify pass held this one back on a padding concern ('three planes in one park'); it is not padding, it is the third and final member of a designation that already exists as a set of three, same as the other two already published. Age: the city's own tree register gives 1873 to every protected tree in this park (the year the park was laid out around the new Rathaus), which is what a register writes when a whole park is planted at once, so treat 1873 as documented-but-blanket rather than a ring count, same caveat as vie_006 and vie_026. Girth 526 cm is the smallest of the park's three protected planes (526 vs 534 vs 597 vs the beech's 600, per the Baumkataster query already run for vie_013), still a substantial trunk. No dispute, no access issue: same public park as three already-published trees.",
+      "verify_notes": "This completes the set: Rathauspark has exactly three individually protected planes (Naturdenkmal Nr. 564, 566, 567, all designated 3 July 1973). vie_006 is Nr. 564 (the 'Founding Plane', catalogue no. 252, register_id 3257649) and vie_026 is one of the other two (register_id 3257651, girth 597 cm). This tree is register_id 3257650, the remaining one, standing 55 m from vie_026 (baum_id 147511 vs 147537, girth 526 cm vs 597 cm, genuinely distinct trees, not the same specimen mismeasured). An earlier verify pass held this one back on a padding concern ('three planes in one park'); it is not padding, it is the third and final member of a designation that already exists as a set of three, same as the other two already published. Age: the city's own tree register gives 1873 to every protected tree in this park (the year the park was laid out around the new Rathaus), which is what a register writes when a whole park is planted at once, so treat 1873 as documented-but-blanket rather than a ring count, same caveat as vie_006 and vie_026. Girth 526 cm is the smallest of the park's three protected planes (526 vs 534 vs 597 vs the beech's 600, per the Baumkataster query already run for vie_013), still a substantial trunk. No dispute, no access issue: same public park as three already-published trees. A 2026-09-13 photo-judge pass settled which Naturdenkmal number this is by geotag: this tree is ND 566 (GuentherZ photo geotagged 23 m from this pin, 37 m from vie_026s), and vie_026 is ND 567 (11 m from its own pin). Photo approved from the ND 566 file.",
       "story": "Rathauspark's plane trees carry three separate protection orders, all granted the same day in 1973, and this is the last of the set to make it onto this page. The first two already here, one with a six-metre trunk and a rumoured planting year of 1783, the other just under six metres round, get the story so far. This one is smaller, 526 centimetres, but belongs to exactly the same legal designation and stands only 55 metres from the second, close enough that a single stop in the park now takes in all three.\n\nVienna's own tree register gives every protected tree in Rathauspark the same planting year, 1873, the year the park itself was laid out around the new town hall. That is a blanket date rather than a measurement, the kind a register writes when a whole park goes in at once, so read the resulting age, around a century and a half, as an estimate rather than a count of rings.\n\nIt stands a three-minute walk from the Rathaus U-Bahn stop, free and open at any time, on the same lawn as its two sibling planes and the park's fern-leaved beech, which between them make Rathauspark one of the densest single stops on this whole page.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Naturdenkmal_566_GuentherZ_2010-08-25_0130_Wien01_Rathauspark_Platane.JPG",
+        "license": "CC BY 3.0",
+        "attribution": "GuentherZ, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1359,
+        "height": 1800
       },
       "how_to_recognise": "You can recognise it by the trunk, 5.26 metres round, the smallest of the park's three protected planes. It stands 55 metres from the second one, on the same lawn as the fern-leaved beech."
     },

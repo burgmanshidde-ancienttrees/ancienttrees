@@ -367,6 +367,44 @@ def covered_by(lat, lng, km=8.0):
     return {"city": city, "trees": n}
 
 
+LEADS_DIR = os.path.join(ROOT, "data", "leads")
+
+# Phrases a from-zero opening pass already writes into a leads file's own
+# `note` when the answer was no supply, no access, or otherwise settled: see
+# data/leads/dubai.json ("VERDICT: Dubai has no publishable supply right
+# now") and data/leads/taormina.json ("Kept so nobody re-runs this hunt").
+# Neither city's leads file uses the same field name (CLAUDE.md already
+# flags this: "leads files disagree on field names"), so this matches on the
+# prose itself rather than a schema that was never standardised.
+SETTLED_PHRASES = ("verdict:", "kept so nobody re-run", "do not re-run this",
+                    "do not re-research")
+
+
+def settled_verdict(city):
+    """A leads file's own note, if an earlier pass already settled this city
+    as not worth opening. Written 2026-09-17 after `--next` recommended
+    Taormina and Dubai for the Nth time in three weeks; both already carry
+    exactly this verdict in data/leads/, unread by this script. Matches by
+    SLUG guess (the Funchal lesson: never match a place by name alone would
+    apply here too, except leads filenames are not indexed any other way),
+    so a miss just means the old behaviour, never a wrong exclusion: this
+    only fires when a leads file it actually opens contains one of the
+    phrases above."""
+    slug = re.sub(r"[^a-z0-9]+", "-", city.lower()).strip("-")
+    path = os.path.join(LEADS_DIR, slug + ".json")
+    if not os.path.isfile(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+    except (OSError, json.JSONDecodeError):
+        return None
+    note = str(d.get("note") or "")
+    if any(p in note.lower() for p in SETTLED_PHRASES):
+        return note
+    return None
+
+
 def enrich(doc, live):
     """Write the measured columns into the source file itself, so the numbers a
     human reads and the numbers a script computes are the same object."""
@@ -404,6 +442,11 @@ def enrich(doc, live):
                 c["covered_by"] = cov
             else:
                 c.pop("covered_by", None)
+            settled = settled_verdict(c["city"])
+            if settled:
+                c["settled"] = settled
+            else:
+                c.pop("settled", None)
             c.update(status="pending", trees=0, photos=0, walks=0,
                      register=reg, ready=0, wikidata=wd, supply=supply,
                      target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel")))
@@ -563,8 +606,10 @@ def main():
         def _supply(c):
             return c.get("register", 0) + c.get("ready", 0) + c.get("wikidata", 0)
 
-        openable = [c for c in s1 if _supply(c) > 0]
-        dry = [c for c in s1 if _supply(c) == 0]
+        settled = [c for c in s1 if c.get("settled")]
+        unsettled = [c for c in s1 if not c.get("settled")]
+        openable = [c for c in unsettled if _supply(c) > 0]
+        dry = [c for c in unsettled if _supply(c) == 0]
         print("  OPENABLE TODAY (%d of %d): supply already on hand, so rule 1(d)"
               % (len(openable), len(s1)))
         print("  does not apply. These are the top of rule one.\n")
@@ -598,6 +643,18 @@ def main():
               % len(dry_rest))
         print("  wait for Hidde to name one. Do not research these from zero.\n")
         print("  " + ", ".join("%s (#%d)" % (c["city"], c["rank"]) for c in dry_rest[:15]))
+        # Written 2026-09-17: a leads file already carrying a settled verdict
+        # (data/leads/dubai.json, data/leads/taormina.json) used to print
+        # nowhere near this list, so a run re-read the SAME "no supply" finding
+        # every time it reached this rung. Printed here, once, so the verdict
+        # is seen instead of re-discovered.
+        if settled:
+            print("\n  SETTLED, DO NOT RE-OPEN (%d): an earlier pass already"
+                  % len(settled))
+            print("  wrote a verdict to this city's own leads file. Read it")
+            print("  before dispatching anything here again.\n")
+            for c in settled:
+                print("  %s (#%d): %s" % (c["city"], c["rank"], c["settled"][:160]))
         print("\nSTAGE 2, DEEPENING: once stage 1 has nothing left that moves")
         print("cheaply. Targets are 20, or 30 for a big confirmed city.\n")
         print("  #  city             now target  ready  register  wikidata")
@@ -625,8 +682,9 @@ def main():
         # subset is printed under it. Nothing here decides priority; it only
         # says which of the ranked cities have something to work FROM.
         movable = [c for c in s1 + s2
-                   if (c.get("ready", 0) or c.get("register", 0)
-                       or c.get("wikidata", 0) >= 4)]
+                   if not c.get("settled")
+                   and (c.get("ready", 0) or c.get("register", 0)
+                        or c.get("wikidata", 0) >= 4)]
         # UNOPENED FIRST, and it is a priority ruling rather than a tidy-up.
         # Hidde, 2026-08-27: "wat mij betreft gaan we zoveel mogelijk steden
         # van nul naar tien zetten", so that they get indexed and Google can

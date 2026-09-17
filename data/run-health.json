@@ -12823,6 +12823,1320 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-12T05:57:02+00:00",
+   "date": "2026-09-12",
+   "run_id": "34676859880",
+   "minutes": 50.9,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 334,
+   "denials": 28,
+   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(if), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(sed)",
+   "ended": "success",
+   "tokens": 7949180,
+   "claims_held": [
+    "dallas"
+   ],
+   "commits": 7,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "warsaw",
+     "trees": 2
+    }
+   ],
+   "trees": 2,
+   "logged": false
+  },
+  {
+   "started": "2026-09-12T08:12:34+00:00",
+   "date": "2026-09-12",
+   "run_id": "34682665660",
+   "minutes": 47.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 334,
+   "denials": 45,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(grep), Bash(pip), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 3244613,
+   "claims_held": [
+    "milan",
+    "florence",
+    "brisbane"
+   ],
+   "commits": 4,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-12T10:37:18+00:00",
+   "date": "2026-09-12",
+   "run_id": "34688914154",
+   "minutes": 79.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 486,
+   "denials": 33,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(find), Bash(for), Bash(git), Bash(grep), Bash(if), Bash(jobs), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 10123711,
+   "claims_held": [
+    "warsaw",
+    "_famous-lithuania",
+    "helmond"
+   ],
+   "commits": 16,
+   "cities_touched": 27,
+   "cities": [
+    {
+     "city": "florence",
+     "trees": 1
+    },
+    {
+     "city": "maastricht",
+     "trees": 1
+    },
+    {
+     "city": "baltimore",
+     "trees": 0
+    },
+    {
+     "city": "boise",
+     "trees": 0
+    },
+    {
+     "city": "brussels",
+     "trees": 0
+    },
+    {
+     "city": "cabeza-del-buey",
+     "trees": 0
+    },
+    {
+     "city": "cardiff",
+     "trees": 0
+    },
+    {
+     "city": "caserta",
+     "trees": 0
+    },
+    {
+     "city": "cerro-veronese",
+     "trees": 0
+    },
+    {
+     "city": "fonte-colombo",
+     "trees": 0
+    },
+    {
+     "city": "hallstatt",
+     "trees": 0
+    },
+    {
+     "city": "helsinki",
+     "trees": 0
+    },
+    {
+     "city": "kyoto",
+     "trees": 0
+    },
+    {
+     "city": "lausanne",
+     "trees": 0
+    },
+    {
+     "city": "leeuwarden",
+     "trees": 0
+    },
+    {
+     "city": "macugnaga",
+     "trees": 0
+    },
+    {
+     "city": "mendaza",
+     "trees": 0
+    },
+    {
+     "city": "minneapolis",
+     "trees": 0
+    },
+    {
+     "city": "monterey",
+     "trees": 0
+    },
+    {
+     "city": "nara",
+     "trees": 0
+    },
+    {
+     "city": "ottawa",
+     "trees": 0
+    },
+    {
+     "city": "rome",
+     "trees": 0
+    },
+    {
+     "city": "salamanca",
+     "trees": 0
+    },
+    {
+     "city": "sorrento",
+     "trees": 0
+    },
+    {
+     "city": "spokane",
+     "trees": 0
+    },
+    {
+     "city": "stockholm",
+     "trees": 0
+    },
+    {
+     "city": "tilburg",
+     "trees": 0
+    }
+   ],
+   "trees": 2,
+   "logged": true
+  },
+  {
+   "started": "2026-09-12T13:13:37+00:00",
+   "date": "2026-09-12",
+   "run_id": "34695821788",
+   "minutes": 77.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 449,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash(cd), Bash(echo), Bash(env), Bash(for), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(timeout), Bash(until), Bash(while)",
+   "ended": "success",
+   "tokens": 11005279,
+   "claims_held": [],
+   "commits": 13,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "tallinn",
+     "trees": 2
+    },
+    {
+     "city": "lausanne",
+     "trees": 0
+    },
+    {
+     "city": "montreal",
+     "trees": 0
+    }
+   ],
+   "trees": 2,
+   "logged": true
+  },
+  {
+   "started": "2026-09-12T16:31:28+00:00",
+   "date": "2026-09-12",
+   "run_id": "34705475564",
+   "minutes": 65.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 438,
+   "denials": 33,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(jobs), Bash(ls), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 17940424,
+   "claims_held": [],
+   "commits": 12,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "florence",
+     "trees": 2
+    }
+   ],
+   "trees": 2,
+   "logged": true
+  },
+  {
+   "started": "2026-09-12T17:38:11+00:00",
+   "date": "2026-09-12",
+   "run_id": "34705751292",
+   "minutes": 118.5,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 354,
+   "denials": 37,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(curl), Bash(diff), Bash(for), Bash(gh), Bash(git), Bash(python3), Bash(rm), Bash(until), Bash(wc)",
+   "ended": "success",
+   "tokens": 63214073,
+   "claims_held": [],
+   "commits": 21,
+   "cities_touched": 9,
+   "cities": [
+    {
+     "city": "warsaw",
+     "trees": 11
+    },
+    {
+     "city": "kaunas",
+     "trees": 3
+    },
+    {
+     "city": "florence",
+     "trees": 2
+    },
+    {
+     "city": "vainiai",
+     "trees": 2
+    },
+    {
+     "city": "dallas",
+     "trees": 1
+    },
+    {
+     "city": "degsne",
+     "trees": 1
+    },
+    {
+     "city": "pagramantis-regional-park",
+     "trees": 1
+    },
+    {
+     "city": "plauginiai-forest",
+     "trees": 1
+    },
+    {
+     "city": "zalgiriai",
+     "trees": 1
+    }
+   ],
+   "trees": 23,
+   "logged": true
+  },
+  {
+   "started": "2026-09-12T19:50:25+00:00",
+   "date": "2026-09-12",
+   "run_id": "34715312499",
+   "minutes": 36.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 277,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(grep), Bash(if), Bash(ls), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 4083967,
+   "claims_held": [
+    "berlin"
+   ],
+   "commits": 12,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "mrakotin",
+     "trees": 1
+    },
+    {
+     "city": "vir",
+     "trees": 1
+    },
+    {
+     "city": "visnova",
+     "trees": 1
+    }
+   ],
+   "trees": 3,
+   "logged": false
+  },
+  {
+   "started": "2026-09-12T21:48:31+00:00",
+   "date": "2026-09-12",
+   "run_id": "34720976767",
+   "minutes": 51.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 355,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(grep), Bash(if), Bash(ls), Bash(python3), Bash(tail)",
+   "ended": "success",
+   "tokens": 11305884,
+   "claims_held": [
+    "alicante"
+   ],
+   "commits": 10,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "zwolle",
+     "trees": 2
+    }
+   ],
+   "trees": 2,
+   "logged": true
+  },
+  {
+   "started": "2026-09-12T23:32:48+00:00",
+   "date": "2026-09-13",
+   "run_id": "34725682591",
+   "minutes": 94.5,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 436,
+   "denials": 37,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(ls), Bash(python3), Bash(rm), Bash(sed), Bash(test)",
+   "ended": "success",
+   "tokens": 35012183,
+   "claims_held": [],
+   "commits": 7,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "alicante",
+     "trees": 3
+    },
+    {
+     "city": "berlin",
+     "trees": 0
+    },
+    {
+     "city": "porto",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    }
+   ],
+   "trees": 3,
+   "logged": true
+  },
+  {
+   "started": "2026-09-13T01:56:50+00:00",
+   "date": "2026-09-13",
+   "run_id": "34731776726",
+   "minutes": 68.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 405,
+   "denials": 27,
+   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(for), Bash(gh), Bash(git), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 9289153,
+   "claims_held": [],
+   "commits": 10,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "berlin",
+     "trees": 2
+    },
+    {
+     "city": "rome",
+     "trees": 0
+    }
+   ],
+   "trees": 2,
+   "logged": true
+  },
+  {
+   "started": "2026-09-13T05:58:20+00:00",
+   "date": "2026-09-13",
+   "run_id": "34741578940",
+   "minutes": 99.1,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 254,
+   "denials": 60,
+   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(ls), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(test), Bash(wc), Write",
+   "ended": "success",
+   "tokens": 24641116,
+   "claims_held": [
+    "tokyo"
+   ],
+   "commits": 12,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "gdansk",
+     "trees": 6
+    },
+    {
+     "city": "alicante",
+     "trees": 2
+    },
+    {
+     "city": "milan",
+     "trees": 1
+    }
+   ],
+   "trees": 9,
+   "logged": true
+  },
+  {
+   "started": "2026-09-13T11:40:48+00:00",
+   "date": "2026-09-13",
+   "run_id": "34755049910",
+   "minutes": 110.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 640,
+   "denials": 38,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(if), Bash(jobs), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(tail), Bash(timeout), Bash(until)",
+   "ended": "success",
+   "tokens": 39920599,
+   "claims_held": [],
+   "commits": 17,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "baarn",
+     "trees": 0
+    },
+    {
+     "city": "london",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    },
+    {
+     "city": "singapore",
+     "trees": 0
+    },
+    {
+     "city": "valencia",
+     "trees": 0
+    },
+    {
+     "city": "vienna",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-09-13T13:33:17+00:00",
+   "date": "2026-09-13",
+   "run_id": "34758373772",
+   "minutes": 36.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 263,
+   "denials": 16,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(echo), Bash(env), Bash(for), Bash(ls), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 3572960,
+   "claims_held": [
+    "milan",
+    "leiden"
+   ],
+   "commits": 12,
+   "cities_touched": 7,
+   "cities": [
+    {
+     "city": "berlin",
+     "trees": 0
+    },
+    {
+     "city": "krakow",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    },
+    {
+     "city": "singapore",
+     "trees": 0
+    },
+    {
+     "city": "utrecht",
+     "trees": 0
+    },
+    {
+     "city": "valencia",
+     "trees": 0
+    },
+    {
+     "city": "vienna",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-09-13T15:03:54+00:00",
+   "date": "2026-09-13",
+   "run_id": "34764453372",
+   "minutes": 90.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 376,
+   "denials": 44,
+   "denials_source": "permission_denials: Bash(curl), Bash(env), Bash(for), Bash(git), Bash(mkdir), Bash(pip), Bash(ps), Bash(python3), Bash(rm), Bash(wc), Bash(which)",
+   "ended": "success",
+   "tokens": 18986522,
+   "claims_held": [],
+   "commits": 6,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "krakow",
+     "trees": 4
+    },
+    {
+     "city": "barcelona",
+     "trees": 0
+    },
+    {
+     "city": "berlin",
+     "trees": 0
+    }
+   ],
+   "trees": 4,
+   "logged": false
+  },
+  {
+   "started": "2026-09-13T17:07:36+00:00",
+   "date": "2026-09-13",
+   "run_id": "34770625544",
+   "minutes": 22.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 171,
+   "denials": 31,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(if), Bash(ls), Bash(mkdir), Bash(pdftotext), Bash(pip), Bash(python3), Bash(which)",
+   "ended": "success",
+   "tokens": 9588148,
+   "claims_held": [
+    "enschede",
+    "amersfoort"
+   ],
+   "commits": 7,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-13T19:58:59+00:00",
+   "date": "2026-09-13",
+   "run_id": "34779308345",
+   "minutes": 49.9,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 325,
+   "denials": 30,
+   "denials_source": "permission_denials: Bash(awk), Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(printenv), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 30119286,
+   "claims_held": [],
+   "commits": 11,
+   "cities_touched": 7,
+   "cities": [
+    {
+     "city": "ghent",
+     "trees": 2
+    },
+    {
+     "city": "bonnerue",
+     "trees": 1
+    },
+    {
+     "city": "jalhay",
+     "trees": 1
+    },
+    {
+     "city": "macon",
+     "trees": 1
+    },
+    {
+     "city": "s-gravenvoeren",
+     "trees": 1
+    },
+    {
+     "city": "waremme",
+     "trees": 1
+    },
+    {
+     "city": "xhoris",
+     "trees": 1
+    }
+   ],
+   "trees": 8,
+   "logged": true
+  },
+  {
+   "started": "2026-09-13T22:08:01+00:00",
+   "date": "2026-09-13",
+   "run_id": "34785853151",
+   "minutes": 108.1,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 534,
+   "denials": 33,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 34415648,
+   "claims_held": [],
+   "commits": 16,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "belgrade",
+     "trees": 1
+    },
+    {
+     "city": "chiapa-de-corzo",
+     "trees": 1
+    },
+    {
+     "city": "gornja-stubica",
+     "trees": 1
+    },
+    {
+     "city": "portalegre",
+     "trees": 1
+    },
+    {
+     "city": "tallinn",
+     "trees": 1
+    },
+    {
+     "city": "kyoto",
+     "trees": 0
+    }
+   ],
+   "trees": 5,
+   "logged": true
+  },
+  {
+   "started": "2026-09-14T00:28:09+00:00",
+   "date": "2026-09-14",
+   "run_id": "34792770547",
+   "minutes": 36.1,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 214,
+   "denials": 15,
+   "denials_source": "permission_denials: Bash, Bash(curl), Bash(echo), Bash(for), Bash(if), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 11959186,
+   "claims_held": [
+    "eindhoven",
+    "berlin"
+   ],
+   "commits": 5,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-14T02:14:38+00:00",
+   "date": "2026-09-14",
+   "run_id": "34798529582",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-14T05:28:38+00:00",
+   "date": "2026-09-14",
+   "run_id": "34809748736",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 1,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-14T09:21:31+00:00",
+   "date": "2026-09-14",
+   "run_id": "34827477448",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-14T16:02:46+00:00",
+   "date": "2026-09-14",
+   "run_id": "34866067585",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-14T20:53:22+00:00",
+   "date": "2026-09-14",
+   "run_id": "34895563839",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-14T21:09:32+00:00",
+   "date": "2026-09-14",
+   "run_id": "34897143200",
+   "minutes": 0.1,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-14T23:49:55+00:00",
+   "date": "2026-09-14",
+   "run_id": "34910574769",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-15T00:04:09+00:00",
+   "date": "2026-09-15",
+   "run_id": "34911584534",
+   "minutes": 0.1,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 1,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-15T04:44:17+00:00",
+   "date": "2026-09-15",
+   "run_id": "34929949751",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-15T06:56:21+00:00",
+   "date": "2026-09-15",
+   "run_id": "34939192953",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-15T12:58:38+00:00",
+   "date": "2026-09-15",
+   "run_id": "34972045388",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 1,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-15T17:49:23+00:00",
+   "date": "2026-09-15",
+   "run_id": "35003615820",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-15T20:36:56+00:00",
+   "date": "2026-09-15",
+   "run_id": "35020687059",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-15T23:48:58+00:00",
+   "date": "2026-09-15",
+   "run_id": "35037297713",
+   "minutes": 0.2,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-16T02:13:55+00:00",
+   "date": "2026-09-16",
+   "run_id": "35047161294",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 1,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-16T06:49:50+00:00",
+   "date": "2026-09-16",
+   "run_id": "35065496368",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-16T08:55:19+00:00",
+   "date": "2026-09-16",
+   "run_id": "35076427774",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-16T14:26:55+00:00",
+   "date": "2026-09-16",
+   "run_id": "35108539319",
+   "minutes": 58.0,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 379,
+   "denials": 30,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 16352187,
+   "claims_held": [
+    "berlin"
+   ],
+   "commits": 19,
+   "cities_touched": 5,
+   "cities": [
+    {
+     "city": "pamplona",
+     "trees": 8
+    },
+    {
+     "city": "milan",
+     "trees": 4
+    },
+    {
+     "city": "berlin",
+     "trees": 2
+    },
+    {
+     "city": "ottawa",
+     "trees": 2
+    },
+    {
+     "city": "fukuoka",
+     "trees": 0
+    }
+   ],
+   "trees": 16,
+   "logged": true
+  },
+  {
+   "started": "2026-09-16T17:17:53+00:00",
+   "date": "2026-09-16",
+   "run_id": "35127257497",
+   "minutes": 82.0,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 556,
+   "denials": 103,
+   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(curl), Bash(echo), Bash(find), Bash(for), Bash(grep), Bash(head), Bash(ls), Bash(nohup), Bash(pip), Bash(python3), Bash(rm), Bash(which)",
+   "ended": "success",
+   "tokens": 24732263,
+   "claims_held": [],
+   "commits": 25,
+   "cities_touched": 13,
+   "cities": [
+    {
+     "city": "berlin",
+     "trees": 8
+    },
+    {
+     "city": "enschede",
+     "trees": 5
+    },
+    {
+     "city": "amersfoort",
+     "trees": 4
+    },
+    {
+     "city": "brussels",
+     "trees": 4
+    },
+    {
+     "city": "lisbon",
+     "trees": 1
+    },
+    {
+     "city": "emmen",
+     "trees": 0
+    },
+    {
+     "city": "monterey",
+     "trees": 0
+    },
+    {
+     "city": "regensburg",
+     "trees": 0
+    },
+    {
+     "city": "tokyo",
+     "trees": 0
+    },
+    {
+     "city": "tsuruoka",
+     "trees": 0
+    },
+    {
+     "city": "uda",
+     "trees": 0
+    },
+    {
+     "city": "vainiai",
+     "trees": 0
+    },
+    {
+     "city": "warsaw",
+     "trees": 0
+    }
+   ],
+   "trees": 22,
+   "logged": false
+  },
+  {
+   "started": "2026-09-16T19:19:02+00:00",
+   "date": "2026-09-16",
+   "run_id": "35139037557",
+   "minutes": 58.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 287,
+   "denials": 35,
+   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(nohup), Bash(python3), Bash(rm), Bash(while)",
+   "ended": "success",
+   "tokens": 8833591,
+   "claims_held": [
+    "eindhoven"
+   ],
+   "commits": 8,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "berlin",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-09-16T22:28:18+00:00",
+   "date": "2026-09-17",
+   "run_id": "35157806558",
+   "minutes": 17.7,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 129,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(for), Bash(git), Bash(grep), Bash(mkdir), Bash(python3), Bash(rm), Bash(sleep)",
+   "ended": "success",
+   "tokens": 12252422,
+   "claims_held": [],
+   "commits": 15,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "montreal",
+     "trees": 2
+    },
+    {
+     "city": "perusic",
+     "trees": 1
+    },
+    {
+     "city": "sremski-karlovci",
+     "trees": 1
+    }
+   ],
+   "trees": 4,
+   "logged": true
+  },
+  {
+   "started": "2026-09-17T01:19:44+00:00",
+   "date": "2026-09-17",
+   "run_id": "35170096370",
+   "minutes": 95.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 665,
+   "denials": 30,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(gh), Bash(grep), Bash(if), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(sleep), Bash(which)",
+   "ended": "success",
+   "tokens": 8205173,
+   "claims_held": [
+    "fortaleza"
+   ],
+   "commits": 16,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "florence",
+     "trees": 1
+    },
+    {
+     "city": "milan",
+     "trees": 1
+    }
+   ],
+   "trees": 2,
+   "logged": true
+  },
+  {
+   "started": "2026-09-17T02:56:44+00:00",
+   "date": "2026-09-17",
+   "run_id": "35173855527",
+   "minutes": 115.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 635,
+   "denials": 39,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(gh), Bash(if), Bash(ls), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm), Bash(until)",
+   "ended": "success",
+   "tokens": 26717676,
+   "claims_held": [],
+   "commits": 23,
+   "cities_touched": 8,
+   "cities": [
+    {
+     "city": "vancouver",
+     "trees": 3
+    },
+    {
+     "city": "houston",
+     "trees": 2
+    },
+    {
+     "city": "enschede",
+     "trees": 1
+    },
+    {
+     "city": "florence",
+     "trees": 1
+    },
+    {
+     "city": "haarlem",
+     "trees": 0
+    },
+    {
+     "city": "milan",
+     "trees": 0
+    },
+    {
+     "city": "montreal",
+     "trees": 0
+    },
+    {
+     "city": "zurich",
+     "trees": 0
+    }
+   ],
+   "trees": 7,
+   "logged": true
+  },
+  {
+   "started": "2026-09-17T06:13:51+00:00",
+   "date": "2026-09-17",
+   "run_id": "35188900433",
+   "minutes": 26.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 258,
+   "denials": 38,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(if), Bash(ls), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 14182028,
+   "claims_held": [
+    "helmond",
+    "enschede",
+    "eindhoven"
+   ],
+   "commits": 7,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [

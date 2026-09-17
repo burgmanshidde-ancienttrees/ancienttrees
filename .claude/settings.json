@@ -126,6 +126,15 @@
             "timeout": 5
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 scripts/hooks/ratchet_nudge.py 2>/dev/null || true",
+            "timeout": 5
+          }
+        ]
       }
     ]
   }

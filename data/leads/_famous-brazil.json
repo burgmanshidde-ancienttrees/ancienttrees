@@ -100,7 +100,8 @@
     "https://commons.wikimedia.org/wiki/File:Chich%C3%A1_do_Largo_do_Arouche.jpg",
     "https://commons.wikimedia.org/wiki/File:Chich%C3%A1_do_Largo_do_Arouche_01.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "Already checked and blocked in data/leads/saopaulo.json (wikidata Q55235336): dead, fell in a storm on 2025-03-12 (metropoles.com, terra.com.br), a nine-month-old replacement seedling planted 2025-12-19 is not a collectible tree. Duplicate entry from famous_trees.py; this file was not updated when the per-city verdict was recorded. Synced 2026-09-17."
   },
   {
    "name": "Cipreste Farroupilha",

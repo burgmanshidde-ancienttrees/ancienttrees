@@ -2,7 +2,7 @@
   "city": "Belgrade",
   "country": "Serbia",
   "status": "needs_curation",
-  "intro": "Belgrade's protected trees read like a short course in the city's overlapping histories: a two-century oak that predates the square built around it, a princely plane tree that outgrew the legend crediting the prince himself, and two yews planted a century later, flanking a cathedral gate as an accidental match of male and female. Across the river in Zemun, once Habsburg territory rather than Serbian, a single 1991 designation protects nine unrelated evergreens as one grouping. None of the four costs anything to see, and none was planted with a visitor in mind.",
+  "intro": "Belgrade's protected trees read like a short course in the city's overlapping histories: a two-century oak that predates the square built around it, a princely plane tree that outgrew the legend crediting the prince himself, and two yews flanking a cathedral gate as an accidental match of male and female. A fifth, a tavern-keeper's plane on a five-way Vračar corner, is protected in its own right. None of the five costs anything to see, and none was planted with a visitor in mind.",
   "meta_description": "Belgrade's most remarkable trees: a 200-year-old oak, a prince's plane tree with 17 iron supports, cathedral yews, and Zemun's protected evergreens.",
   "question_answer": "Belgrade's oldest protected tree is the pedunculate oak on Cvetni trg in Vračar, over 200 years old and first protected as a natural monument in 1980, the last living remnant of the oak and ash forest that covered this part of the city before 19th-century development cleared it. It predates every building and street around it.",
   "question_meta": "A 200-year-old oak on a Belgrade square, the last living trace of the forest the city was built over, holds the oldest documented tree title.",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Are Belgrade's protected trees free to visit?",
-      "a": "Yes, all four stand in public parks, a public square, or a church courtyard, with no entry charge."
+      "a": "Yes, all five stand in public parks, a public square, a church courtyard or on the open street, with no entry charge."
     }
   ],
   "trees": [
@@ -180,6 +180,42 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "how_to_recognise": "You can recognise them as dark, dense evergreens among nine trees protected as one designation, five yews and four wingnut stands. They stand scattered through Zemun's Gradski park."
+    },
+    {
+      "id": "bel_005",
+      "name": "The Plane of Vračar",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "~170 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 390,
+      "height_m": 27,
+      "location": {
+        "address": "Makenzijeva 73, in the garden of the Trandafilović restaurant, Vračar, Belgrade",
+        "latitude": 44.7988805,
+        "longitude": 20.4728619,
+        "neighbourhood": "Vračar"
+      },
+      "story": "A restaurant grew up around this plane tree, not the other way round. When Milan Trandafilović opened his kafana beside Kalenić market around 1890, he built it facing the crossroads where five streets converge, choosing the spot because a plane tree already stood there large enough to shade an outdoor terrace. Restaurant and tree have shared the corner ever since, run under his family's name for well over a century, the terrace still sitting in the tree's shadow today.\n\nBelgrade's own park management, Zelenilo-Beograd, puts the tree at roughly 170 years old, its trunk 3.9 metres round and its crown 27 metres tall, rising clear of the apartment block behind it. The Belgrade City Assembly declared it a natural monument in 2002, protecting a plot of pavement barely bigger than the restaurant garden it shades.\n\nVračar's traffic has grown in tight around it since. Five roads meet within sight of the trunk and a parking sign stands almost against the bark, the tree's widest limbs stretching out over passing cars rather than open ground. It needed no palace and no prince to earn its protection, just a nineteenth-century tavern keeper's instinct that a good tree was worth building next to.",
+      "verified_sources": [
+        "https://www.zelenilo.rs/qr/en/en-zasticena-pojedinacna-stabla",
+        "https://sr.wikipedia.org/sr-el/%D0%A1%D0%BF%D0%BE%D0%BC%D0%B5%D0%BD%D0%B8%D0%BA_%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%B5_%D0%9F%D0%BB%D0%B0%D1%82%D0%B0%D0%BD_%D0%BD%D0%B0_%D0%92%D1%80%D0%B0%D1%87%D0%B0%D1%80%D1%83"
+      ],
+      "verify_notes": "Two sources disagree slightly on size and age: Zelenilo-Beograd (the city's own green-space manager, cited here) gives ~170 years, 27m height, 390cm girth; Serbian Wikipedia gives ~150 years, no height, 367cm girth, citing the same 2002 protection order (Belgrade City Assembly, Official Gazette of Belgrade 5/2002). Both agree it is a single London Plane on this plot, protected since 2002. Used the official manager's figures as the primary source.",
+      "access": "Free, standing on the public pavement beside the Trandafilović restaurant garden, visible from the street at any time.",
+      "transport": "Vračar district, Makenzijeva ulica, near Kalenić market; about a 15 minute walk from Slavija Square.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Platan_na_Vra%C4%8Daru.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ljiljana Sundać, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1836,
+        "height": 3264
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "The tall plane tree behind the low fence of the Trandafilović restaurant garden, at the crossroads where five streets meet on Makenzijeva; a parking sign stands almost against its trunk."
     }
   ]
 }

@@ -223,11 +223,40 @@ def photos_still_off_domain(out):
                 ""]
 
 
+def bundled_catalogue_drift(out):
+    """How far the copy inside the app binary has fallen behind this checkout.
+
+    Hidde, 2026-09-13: "en hoe kan de boom database achterlopen?!!" The
+    database is not behind. `ios/.../Data/trees.json` is, and it is meant to
+    be, up to a point: a running app replaces it on launch, so its only job is
+    the floor for a fresh install and for a phone with no signal.
+
+    What makes it worth a line is WHEN it is written. release.py step 3
+    refreshes it at archive time, so a TestFlight build is never stale. Press
+    Run in Xcode instead and you ship whatever was last committed, which on the
+    day this was written was two days and 113 trees old. Nothing anywhere said
+    so, and `appdata.py --check` needs four fetches and seven megabytes, which
+    is why nobody ran it.
+
+    Not a gate. It is a fresh-install cosmetic, not a break, and a threshold
+    keeps it from crying wolf on the ordinary drift of one night's work.
+    """
+    r = sh("python3", str(ROOT / "scripts" / "appdata.py"), "--local")
+    m = re.search(r"(\d+) behind", r or "")
+    if m and int(m.group(1)) >= 100:
+        out += [f"The app's bundled catalogue is {m.group(1)} trees behind this "
+                f"checkout, which is what a FRESH install shows until it syncs.",
+                "  python3 scripts/appdata.py   (release.py already does this at "
+                "archive time)",
+                ""]
+
+
 def main():
     out = ["ANCIENT TREES — state at session start", ""]
     since_last_visit(out)
     broken_gates(out)
     photos_still_off_domain(out)
+    bundled_catalogue_drift(out)
 
     # Cities and trees
     try:

@@ -73,8 +73,8 @@
       "girth_cm": 140,
       "lat": 50.837912,
       "lng": 4.356373,
-      "status": "lead",
-      "why": "Second largest of its cultivar in the region and signposted on the park's own panel. A holly at 140cm girth is unusual, but it is a shrub-scale tree that will not read as a destination beside a 32 metre sycamore in the same park."
+      "status": "resolved",
+      "why": "Second largest of its cultivar in the region and signposted on the park's own panel. [STALE ENTRY, found already resolved by a 2026-09-16 verify pass: this is already published as bru_027, The Pyramidal Holly of Parc d'Egmont, at these exact coordinates. This lead entry was never marked resolved when the tree shipped; removed from the active leads list so a future pass does not re-research it.]"
     },
     {
       "register_id": "7112",
@@ -123,13 +123,42 @@
       "girth_cm": 266,
       "lat": 50.8353,
       "lng": 4.35234,
-      "status": "lead",
-      "why": "A tiny square between the Sablon and the Palace of Justice, two registered trees, both described as holding a central position in the landscape. The silver maple's health is recorded as 'Defauts moyens', middling defects, which is the worst rating anywhere in this cluster and needs checking before it could ship. bru_008 already gives Brussels a pagoda tree."
+      "status": "resolved",
+      "why": "[RESOLVED 2026-09-16, delivered as bru_035 in data/research/brussels-verified.json.] The prior pass's own reasons (species overlap with bru_008, and the silver maple's health) are exactly the invalid reasons CLAUDE.md's 2026-08-10 ruling forbids holding a tree back for. On re-check, both trees were re-measured 9 and 10 September 2026 (days before this pass): the silver maple's health has improved to 'Legers defauts' (was 'Defauts moyens'), girth now 277cm; the pagoda tree is now 222cm. Shipped flagged, single-sourced on the region's own inventory per Step 2's allowance, folded into one entry since both stand about 12 metres apart in one small square."
     },
     {
       "next_pass": true,
       "name": "Where to deepen Brussels next",
-      "why": "The register's four walkable clusters hold 577 of its 582 trees, and this pass worked one corner of one of them. The three richest untouched sub-clusters, by count of registered trees within 400 metres: Parc Leopold and its slope, 41 trees, where bru_003 already stands alone and where a second and third entry would turn one pin into a walk. The Laeken and Osseghem parks in the north, 34 trees including a giant sequoia of 7.44 metres, which is the thickest tree in this export and still short of the 8.66 metre Parc de Woluwe sequoia that bru_005 already publishes, so that entry's 'largest tree in Brussels' claim survives. Worth knowing for the next pass: the 582-entry export is the LEGAL inventory only, a subset of the region's scientific inventory, and several trees brussels.json already cites, including the Woluwe sequoia at register id 2851, are absent from it. And the Uccle and Watermael belt in the south, 38 trees around 50.8103, 4.3845, which is the densest concentration of genuinely large oaks and beeches in the whole register."
+      "why": "The register's four walkable clusters hold 577 of its 582 trees. A 2026-08-05 pass worked the Sablon/Egmont corner; a 2026-09-16 verify pass (bru_032 to bru_035) opened Parc Leopold with a second and third tree beside bru_003 (register 795 Oriental Plane 514cm, register 774 European Beech 409cm) and made a first stop in the Solbosch woods at the north end of Bois de la Cambre (register 7286, European Beech 510cm, 7th thickest of its species regionwide), plus resolved the Place Jean Jacobs lead (bru_035). Worth knowing for the next pass: the 582-entry export is the LEGAL inventory only, a subset of the region's scientific inventory, and several trees brussels.json already cites, including the Woluwe sequoia at register id 2851, are absent from it.",
+      "remaining_leads": [
+        {
+          "register_id": "660",
+          "species": "Juglans nigra",
+          "name": "Black Walnut, Parc Leopold",
+          "girth_cm": 370,
+          "lat": 50.83590725123007,
+          "lng": 4.37613403422715,
+          "why": "A fourth Parc Leopold candidate, untouched by this pass. Same single-source situation as bru_032/033/034 above; would extend the same three-tree walk to four."
+        },
+        {
+          "register_id": "7272",
+          "species": "Fagus sylvatica",
+          "name": "second European Beech, Solbosch woods",
+          "girth_cm": 469,
+          "lat": 50.80820106823023,
+          "lng": 4.379903213705223,
+          "why": "About 380m south of bru_034 on a different public path (Chemin de l'Hallali, confirmed via OSM), 469cm, 469th... ranked highly for its species too. Not worked this pass to keep the pass to four named candidates per BRIEF_RESEARCH.md's stall-prevention rule; a natural next addition to the Solbosch stop."
+        },
+        {
+          "register_id": "6857",
+          "species": "Sequoiadendron giganteum",
+          "name": "Giant Sequoia, Domaine royal de Laeken",
+          "girth_cm": 744,
+          "lat": 50.88840568287461,
+          "lng": 4.358776060739933,
+          "why": "The thickest tree in the whole 582-entry export (744cm), on 'Avenue du Parc Royal' per OSM/Nominatim reverse geocoding: this sits inside the Domaine royal de Laeken (the royal estate), whose grounds are closed to the public most of the year except the Serres Royales' brief spring opening. NOT verified for access this pass; a future pass should confirm whether this specific tree stands where the public can actually reach it (a boundary path, or only inside the closed domain) before treating it as more than a lead. Do not ship on the register coordinate alone."
+        }
+      ]
     }
   ],
   "blocked": [

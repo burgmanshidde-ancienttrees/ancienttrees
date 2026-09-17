@@ -23,6 +23,7 @@ import { DATA } from "./data-dir";
 // pulls in Astro content types and runs later, so the rule lives in its own
 // dependency-free module rather than in the two copies that were here before.
 import { slugify, legacySlugify } from "./slug";
+import { cityHasQuestionPage } from "./question-page";
 
 const BASE_URL = "https://ancienttrees.app";
 
@@ -339,18 +340,52 @@ export function buildRedirectStubs(): RedirectStub[] {
     });
   }
 
+  // /<city>/oldest-tree on a place with one tree, retired 2026-09-17 under
+  // Contract B v1.18 (Hidde, on the Search Console report: "ze verdienen ze
+  // niet ... in afgelegen plekken weghalen"). The question page, the city page
+  // and the single tree's own page were three URLs paraphrasing one tree, and
+  // Google indexed one and filed the rest as crawled-not-indexed.
+  //
+  // These URLs were in the sitemap for months, so they keep resolving: hard
+  // rule 3, and the same treatment /<city>/walks got. They land on the TREE
+  // page rather than the city page, because that is the answer to the question
+  // the visitor asked; the city page would list the one tree and make them
+  // click again.
+  //
+  // Reads the tree count from disk like everything else here, so a place that
+  // grows to a second tree stops emitting the stub and starts emitting the
+  // page again on the next build, with no list to maintain.
+  //
+  // No translated counterpart: no translated city has ever been on one tree,
+  // so /<lang>/<city>/<question> has never existed for one and there is
+  // nothing indexed to keep alive. Should one ever drop that far, its language
+  // overlay is the event to deal with, not this stub.
+  for (const slug of published) {
+    const trees = readCityTrees(slug);
+    if (cityHasQuestionPage(trees.length)) continue;
+    const only = trees[0];
+    if (!only) continue;
+    const treeSlug = slugify(only.name);
+    const canonical = `${BASE_URL}/${slug}/${treeSlug}`;
+    const title = "Moved: this tree";
+    stubs.push({ outputPath: `${slug}/oldest-tree.html`, targetRelative: treeSlug, canonical, title });
+    stubs.push({ outputPath: `${slug}/oldest-tree/index.html`, targetRelative: `../${treeSlug}`, canonical, title });
+  }
+
   for (const [oldSlug, newSlug] of RENAMED_CITY_SLUGS) {
     if (!publishedSet.has(newSlug)) continue;
     const canonical = `${BASE_URL}/${newSlug}`;
     const title = `Moved: Ancient Trees in ${cityName(newSlug)}`;
     stubs.push({ outputPath: `${oldSlug}.html`, targetRelative: newSlug, canonical, title });
     stubs.push({ outputPath: `${oldSlug}/index.html`, targetRelative: `../${newSlug}`, canonical, title });
-    stubs.push({
-      outputPath: `${oldSlug}/oldest-tree.html`,
-      targetRelative: `../${newSlug}/oldest-tree`,
-      canonical: `${BASE_URL}/${newSlug}/oldest-tree`,
-      title,
-    });
+    if (cityHasQuestionPage(readCityTrees(newSlug).length)) {
+      stubs.push({
+        outputPath: `${oldSlug}/oldest-tree.html`,
+        targetRelative: `../${newSlug}/oldest-tree`,
+        canonical: `${BASE_URL}/${newSlug}/oldest-tree`,
+        title,
+      });
+    }
     const slugs = treeSlugsForCity(newSlug);
     for (const treeSlug of Object.values(slugs)) {
       stubs.push({

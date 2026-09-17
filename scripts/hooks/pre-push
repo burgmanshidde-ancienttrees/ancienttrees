@@ -19,12 +19,19 @@
 #   convention  a NEW screen or component names the product its interaction was
 #               copied from, so a design from somebody's own head cannot ship
 #               unnoticed (2026-08-28)
+#   standing    a sighting records where the PHONE stood, never our own pin
+#               handed back to us as if somebody had measured it (2026-09-12)
 #   darkcheck   every colour pair in the palette can be read, in BOTH
 #               appearances. The app shipped with white text on the dark
 #               palette's moss at 2.85:1, on the primary button, because
 #               nobody had ever done the arithmetic (2026-09-03)
 #   map style   the dark map style is what the light one generates, so the two
 #               cannot drift while nobody looks at the dark one in daylight
+#   crosscheck  a feed field the website sends is decoded by the app, and the
+#               reverse, so a FEATURE cannot reach one surface only (2026-09-12)
+#   pluralcheck a count interpolated into a string with the plural hardcoded
+#               on it, which reads fine until the count is exactly 1 and
+#               nobody tests with exactly 1 (recurred three times, 2026-09-12)
 #
 # It only runs when the push actually touches the app, so a night run pushing
 # trees never sees it.
@@ -72,6 +79,23 @@ for f in $PITCH; do
     fi
 done
 
+# A SESSION MERGES ITS OWN WORK (2026-09-17). Hidde, after a finished and
+# verified change was parked on a claude/ branch with a FOR HIDDE line asking
+# him to land it: "Merge maar ik wil niet mergen doe dit zelf vraag nooit meer
+# aan mij." The corpus already said he is not the gate and that waiting for
+# permission is the failure mode here; none of it could refuse a push. This can.
+# Narrow on purpose: it refuses git plumbing handed to him, never FOR HIDDE
+# itself, which still carries the things only he can do.
+if echo "$CHANGED" | grep -qE '^LOG\.md$'; then
+    if ! out=$(python3 scripts/handoffcheck.py 2>&1); then
+        echo ""
+        echo "$out" | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. Merge it to main yourself and say it is live."
+        exit 1
+    fi
+fi
+
 # BOTH SURFACES, checked rather than remembered (2026-09-11). Hidde found
 # "Exact location. The pin marks the trunk." still on the website a week after
 # he had it taken out of the app: "zorg dat dit volgende keer wel gelijk app en
@@ -89,9 +113,25 @@ if echo "$CHANGED" | grep -qE '^(ios/|site/src/)'; then
         echo "lives on one in data/parity-allow.json."
         exit 1
     fi
+    # And the FEATURE half of the same rule (2026-09-12). paritycheck reads
+    # strings, so it can see a sentence that left one surface and cannot see a
+    # feature that only ever reached one. crosscheck reads the contract between
+    # them instead: a feed field the website sends that no Swift model decodes
+    # is a feature that stopped at the web, and neither compiler nor decoder
+    # says a word about it. Skipped silently without a build, which is the
+    # ordinary case for a push that only touches ios/.
+    if ! out=$(python3 scripts/crosscheck.py 2>&1); then
+        echo ""
+        echo "pre-push: crosscheck says no"
+        echo "$out" | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. Read the field on the other surface too, or"
+        echo "record why it is one-sided in data/cross-surface-allow.json."
+        exit 1
+    fi
 fi
 
-echo "$CHANGED" | grep -qE '^(ios/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|darkcheck|map_style_dark))' || exit 0
+echo "$CHANGED" | grep -qE '^(ios/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|darkcheck|map_style_dark|pluralcheck))' || exit 0
 
 fail=0
 for check in \
@@ -100,7 +140,9 @@ for check in \
     "scripts/icon_check.py" \
     "scripts/conventioncheck.py" \
     "scripts/darkcheck.py" \
-    "scripts/map_style_dark.py --check"
+    "scripts/standingpoint.py" \
+    "scripts/map_style_dark.py --check" \
+    "scripts/pluralcheck.py"
 do
     # shellcheck disable=SC2086
     if ! out=$(python3 $check 2>&1); then

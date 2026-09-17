@@ -1,0 +1,50 @@
+[
+ {
+  "id": "ens_014",
+  "name": "The Beech Arbour of Van Heekpark",
+  "species": "Common Hornbeam (Carpinus betulus)",
+  "age_estimate": "about a century old (sources disagree on the exact planting year)",
+  "age_min": 97,
+  "age_max": 109,
+  "girth_cm": null,
+  "location": {
+   "address": "G.J. van Heekpark, Enschede",
+   "latitude": 52.228731,
+   "longitude": 6.880145,
+   "neighbourhood": "Van Heekpark"
+  },
+  "verified_sources": [
+   "data/registers/netherlands-lrmb.json (nr 1678438, 'Beukenberceau Van Heekpark')",
+   "https://www.monumenten.nl/monument/510593"
+  ],
+  "access": "Free, open public park (Rijksmonument since 1995)",
+  "transport": "About 1.8 km west of Enschede Centraal station, roughly 20-25 minutes on foot; the park borders Hengelosestraat. No specific bus stop verified this pass.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Ensemble entry: a pruned hornbeam (haagbeuk, Carpinus betulus) tunnel/arbour of roughly 100 trees (register n_trees: 100), the principal architectural link between G.J. van Heekpark and Van Lochemsbleekpark. Both parks form one Rijksmonument (national monument, registered 1995), designed by garden architect P.H. Wattez for textile industrialist Gerrit Jan van Heek, who gave the park to the municipality in 1918. Collectible-point test: this is a compact, famous ensemble with one obvious place to stand/walk through, comparable to the precedent of Amsterdam's Lomanstraat beech tunnel, not a dispersed avenue. TWO SOURCES DISAGREE ON THE PLANTING YEAR, recorded rather than reconciled per the bridge-claim rule: the LRMB register's own history note says the whole park including the berceau was laid out in 1917-1918 ('Het park is in 1917-1918 aangelegd... De beukenberceau is toen aangelegd'); the Rijksmonument description at monumenten.nl/monument/510593 says 'In het midden van dit deel ligt een berceau van haagbeuk die als belangrijkste verbinding tussen de beide parken dient en die in 1929 in het zuid-oostelijk deel van het bos van het Van Lochemsbleekpark werd aangelegd' (built 1929 in the south-eastern part of Van Lochemsbleekpark, as the main link between the two parks). No source confirms these describe the same construction event versus an extension/rebuild, so both dates are kept rather than bridged; age_min/age_max span both (1929 to 1917). Species confirmed directly from the Rijksmonument text ('haagbeuk' = Carpinus betulus, hornbeam, NOT beuk/Fagus despite the Dutch nickname 'Beukenberceau' which literally translates as 'beech arbour' - a naming quirk worth a line in the story). Register marks visitable=ja, visible=ja, owner_category=gemeente. Register nr 1678438."
+ },
+ {
+  "id": "ens_015",
+  "name": "The Plane Tree of Klokkenplas",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "roughly 150 to 165 years",
+  "age_min": 150,
+  "age_max": 166,
+  "girth_cm": null,
+  "location": {
+   "address": "Klokkenplas, Enschede",
+   "latitude": 52.220283,
+   "longitude": 6.896504,
+   "neighbourhood": "City centre"
+  },
+  "verified_sources": [
+   "data/registers/netherlands-lrmb.json (nr 1678439, 'Gewone plataan')",
+   "https://www.erfgoedenschede.nl/2026/09/03/de-platanen-in-de-binnenstad-als-bomen-konden-praten/"
+  ],
+  "access": "Free, public square",
+  "transport": "In the city centre, roughly 1-1.5 km / a 15-20 minute walk from Enschede Centraal station.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "London Plane standing at Klokkenplas, a square in central Enschede. Register (nr 1678439) gives a planted_band of 1860-1870 (roughly 156-166 years old as of 2026) and records it as a remnant of the van Heek family's former garden ('Restant van tuin van de fam. van Heek'). Independently corroborated by a 2026-09-03 Stichting Cultureel Erfgoed Enschede article ('De Platanen in de Binnenstad: Als bomen konden praten', erfgoedenschede.nl), which names it among the city's monumental plane trees and calls it a 'bekroonde' (prize-winning) tree; the article gives the cluster of historic planes it discusses (Klokkenplas, Noorderhagen, Cort van der Lindenlaan) as '140 tot 160 jaar oud' collectively, a slightly younger but clearly overlapping estimate, so age_min/age_max is widened to span both (150-166) rather than picking one figure. Public square, gemeente-owned, register marks visitable=ja, visible=ja. Note for the writer: the same erfgoedenschede.nl article also names 'de Bomen van Herman' at Noorderhagen and a 't Zwik plane at Cort van der Lindenlaan (the latter already published as ens_007) as part of the same local set of monumental planes, which may be worth a cross-reference line."
+ }
+]

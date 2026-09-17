@@ -102,8 +102,11 @@ struct TreeMap: UIViewRepresentable {
     /// Pass false only where the map is a PICTURE rather than a map: the city
     /// and country page previews take no taps at all and open the real map when
     /// you tap them, so a control on top of one would be a button inside a
-    /// button. The map tab passes false at full sheet height for the same kind
-    /// of reason, which is that there is no map on screen to recentre.
+    /// button. The map tab passed false at full sheet height once, for the same
+    /// kind of reason, and that is what made the control vanish on release
+    /// (2026-09-04): a stop only changes when a drag ENDS. It passes true
+    /// always now, and recentrePlacement() below decides what the control does
+    /// as the sheet covers it.
     var showsRecentre = true
     /// How tall the sheet in front of this map is, so the recentre control can
     /// sit ABOVE it. It was pinned 120 points off the bottom, which was clear
@@ -349,6 +352,47 @@ struct TreeMap: UIViewRepresentable {
         // was broken and it was arithmetic.
         let metresPerPointAtZoomZero = (40_075_017.0 / 512.0) * cos(latitude * .pi / 180)
         return max(1, min(20, log2(metresPerPointAtZoomZero * width / max(m, 1))))
+    }
+
+    /// WHERE THE RECENTRE CONTROL SITS, given how much of the map the sheet is
+    /// covering this frame. Its lift off the bottom, and how visible it is.
+    ///
+    /// Pure and tested (MapAimTests), because this one control has now been
+    /// reported four times and every fix so far was judged by eye: missing
+    /// altogether (2026-08-24), the gap to the sheet wobbling under a drag
+    /// (2026-08-29), disappearing and jumping on release (2026-09-04), and now
+    /// carried off up the screen (Hidde, 2026-09-13: "het lukt me nog steeds
+    /// het centre knopje weg te slepen bij map als ik de lijst naar beneden en
+    /// boven sleep").
+    ///
+    /// IT RIDES, THEN IT STOPS AND IS COVERED. That last report is the 09-04
+    /// fix overshooting: removing the clamp was bundled with removing the
+    /// control from the hierarchy, and only the second was the bug. With no
+    /// clamp the button follows the sheet the whole way, so dragging the list
+    /// up walks it across the map and over the search field and the filter
+    /// chips before it fades. Nothing it is copied from does that. Google Maps
+    /// floats its my-location control just above the sheet and lets the sheet
+    /// slide over it when it expands; Apple Maps pins its map controls to the
+    /// top right and never moves them at all. Both keep the control in one
+    /// region of the screen, which is the property that was lost.
+    ///
+    /// So it stops at the tallest stop below full and the sheet swallows it.
+    /// COMPUTED rather than a percentage of the screen: `card` is a fixed 400
+    /// points and `half` is a fraction, so which of the two is taller depends
+    /// on the phone. On an iPhone SE the card stop is the taller one, and the
+    /// old 55 percent clamp sat below it, which parked the button underneath a
+    /// sheet that had not finished rising.
+    ///
+    /// The fade is short and exists for one reason: the sheet is a translucent
+    /// material, so a button left underneath shows through as a smudge. Sixty
+    /// points is the sheet closing over it, not a screen-long dissolve.
+    static func recentrePlacement(coverage: CGFloat,
+                                  mapHeight: CGFloat) -> (lift: CGFloat, alpha: CGFloat) {
+        let ceiling = max(SheetHeight.card.points(in: mapHeight),
+                          SheetHeight.half.points(in: mapHeight))
+        let ride = min(coverage, ceiling)
+        return (min(-(ride + 12), -120),
+                max(0, min(1, 1 - (coverage - ceiling) / 60)))
     }
 
     /// Whether the opening shot should be taken, or taken again.
@@ -699,33 +743,12 @@ struct TreeMap: UIViewRepresentable {
                 // Google Maps both have this control ride the sheet frame by
                 // frame. The content inset below deliberately stays on the stop.
                 let coverage = parent.livePoints ?? coverage
-                let height = map.bounds.height
-                // IT RIDES ALL THE WAY AND FADES, rather than sticking and then
-                // vanishing (Hidde, 2026-09-04: "het button op de kaart om je
-                // naar je locatie te krijgen die verdwijnt en verspringt als je
-                // de lijst view verschuift").
-                //
-                // Two things made that one fault. It was clamped at 55 percent
-                // of the screen, so past that the sheet slid over a button that
-                // had stopped moving; and the map tab removed it from the view
-                // hierarchy outright at the FULL stop, which only changes when a
-                // drag ends, so it disappeared on release and was rebuilt
-                // somewhere else on the way back down.
-                //
-                // The clamp existed for a real reason: at full height "just
-                // above the sheet" put this control up among the search field
-                // and the filter chips. Fading solves that better than freezing
-                // did, because by the time it would collide it is not there.
-                let clamped = min(-(coverage + 12), -120)
-                if abs(lift.constant - clamped) > 1 { lift.constant = clamped }
-                // Gone by the time the sheet covers 70 percent, which is past
-                // any stop but full, and untappable before it is invisible.
-                let from = height * 0.55, to = height * 0.70
-                let t = (coverage - from) / max(to - from, 1)
-                let alpha = max(0, min(1, 1 - t))
-                if let view = recentreView, abs(view.alpha - alpha) > 0.01 {
-                    view.alpha = alpha
-                    view.isUserInteractionEnabled = alpha > 0.05
+                let place = TreeMap.recentrePlacement(coverage: coverage,
+                                                      mapHeight: map.bounds.height)
+                if abs(lift.constant - place.lift) > 1 { lift.constant = place.lift }
+                if let view = recentreView, abs(view.alpha - place.alpha) > 0.01 {
+                    view.alpha = place.alpha
+                    view.isUserInteractionEnabled = place.alpha > 0.05
                 }
             }
 

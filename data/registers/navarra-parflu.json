@@ -1,0 +1,86 @@
+{
+ "source": "Gobierno de Navarra, SITNA/IDENA, Parque Fluvial de la Comarca de Pamplona - Arboles Singulares",
+ "endpoint": "https://idena.navarra.es/descargas/PARFLU_Sym_ArbolSing.zip",
+ "licence": "CC BY 4.0",
+ "licence_proof": "datosabiertos.navarra.es's own catalogue page for this dataset (spasitnaparflu_sym_arbolsing-xml) states 'Creative Commons Attribution 4.0', linking publications.europa.eu's CC_BY_4_0 authority entry. No non-commercial clause stated.",
+ "designation": "Arbol singular del Parque Fluvial de la Comarca de Pamplona (not a Monumento Natural; a regional-park inventory of notable trees, distinct from navarra-sitna.json)",
+ "country": "Spain",
+ "attribution": "Informacion geografica propiedad del Gobierno de Navarra",
+ "fetched": "2026-09-16",
+ "scope": "All 8 entries in the shapefile. DESCRIPCIO is free Spanish text mixing size (usually diametro/diameter in cm, not girth) with condition notes; a verify pass must read and convert it, never trust a bare number without checking which measurement it is.",
+ "caveat": "Coordinates were published in ETRS89 / UTM zone 30N and converted here; ETRS89 and WGS84 differ by centimetres in Europe. No individual name, no declaration/protection year, no age: BEGINLIFE looks like a survey date (all 8 share 08/01/2013) rather than a planting date, do not read it as one. Several entries plausibly describe more than one trunk at one point ('2 chopos lombardos', 'Chopos de gran tamano'); check whether each is a single collectible point before shipping.",
+ "entries": [
+  {
+   "feature_id": "35300014",
+   "tree_no": "1",
+   "species": "Populus nigra",
+   "description_es": "Trasmocho de chopo de gran tamaño. 26 metros de altura y 150 cm de diámetro",
+   "surveyed": "08/01/2013",
+   "latitude": 42.819706,
+   "longitude": -1.649591
+  },
+  {
+   "feature_id": "35300014",
+   "tree_no": "2",
+   "species": "Populus nigra",
+   "description_es": "Chopos de gran tamaño",
+   "surveyed": "08/01/2013",
+   "latitude": 42.838093,
+   "longitude": -1.590041
+  },
+  {
+   "feature_id": "35300014",
+   "tree_no": "3",
+   "species": "Platanus hispanica",
+   "description_es": "Plátano de gran diámetro (120-130 cm de diámetro) con antiguos soportes de cables eléctricos.",
+   "surveyed": "08/01/2013",
+   "latitude": 42.817653,
+   "longitude": -1.627924
+  },
+  {
+   "feature_id": "35300014",
+   "tree_no": "4",
+   "species": "Populus nigra",
+   "description_es": "2 chopos lombardos de gran diámetro y vigorosos. Diam: 90 y 120 cm.",
+   "surveyed": "08/01/2013",
+   "latitude": 42.822156,
+   "longitude": -1.61083
+  },
+  {
+   "feature_id": "35300014",
+   "tree_no": "5",
+   "species": "Populus nigra",
+   "description_es": "Chopo lombardo de gran diámetro.",
+   "surveyed": "08/01/2013",
+   "latitude": 42.832733,
+   "longitude": -1.605159
+  },
+  {
+   "feature_id": "35300014",
+   "tree_no": "8",
+   "species": "Populus nigra",
+   "description_es": "Chopo de gran diámetro (> 1m) y vigoroso.",
+   "surveyed": "08/01/2013",
+   "latitude": 42.817603,
+   "longitude": -1.62888
+  },
+  {
+   "feature_id": "35300014",
+   "tree_no": "7",
+   "species": "Populus nigra",
+   "description_es": "Chopo de gran diámetro (> 1m) y vigoroso.",
+   "surveyed": "08/01/2013",
+   "latitude": 42.830583,
+   "longitude": -1.605432
+  },
+  {
+   "feature_id": "35300014",
+   "tree_no": "6",
+   "species": "Populus nigra",
+   "description_es": "Chopo de gran diámetro (> 1m) con 3 ramas principales (1 muerta) y parcialemnte descortezado.",
+   "surveyed": "08/01/2013",
+   "latitude": 42.83112,
+   "longitude": -1.605491
+  }
+ ]
+}

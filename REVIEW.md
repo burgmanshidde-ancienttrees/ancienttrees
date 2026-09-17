@@ -13,6 +13,239 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-16
+
+Reviewed commits since the last review (9f3feebb, 2026-09-13) through ef37440b:
+a near-total quiet stretch. No city file changed and no tree was published in
+this window; the only content-bearing commits are the routine daily digest
+(ef37440b) and reader-photo queue refreshes (cea69100, 6f7f42a3, both Hidde's
+own app photographs, queued and unpublished). Confirmed both findings from the
+2026-09-13 review are fixed: Trainiškis's built title now reads "Ancient Trees
+in Trainiškis: One Tree Worth Visiting" (no "2017, Years" leak,
+`trainiskis.html`), and `note_a_reader_photograph_is_not_a_reason()` in
+scripts/preflight.py was corrected the same day to accept a verified
+government/park source as a reason, so kyo_017/kyo_019 no longer read as a
+stale threshold. Ran `python3 scripts/qa.py` (clean, 8788 pages), `python3
+scripts/preflight.py` (607 cities, 0 problems, only standing NOTEs, none new)
+and `python3 scripts/superlatives.py` (374 claims, no collisions). Read five
+random built city pages (Stoutenburg, Dębina, Königslutter, Montreal, Drnava)
+plus their question pages: titles, meta descriptions and answer-first ledes
+all conform to Contract B/C, nothing self-contradicts. Read this rotation's
+six app screenshots (feedback, map-full, map, own-tree, paywall, people):
+nothing contradicts itself or promises something absent. `people.png` shows a
+"Find people" / follow screen with three named profiles (Marieke, Tom, Sofia);
+traced to `ios/.../Kit/DemoPeople.swift`, which is fixture data gated behind a
+`-people-demo` launch argument specifically so this unreachable-without-a-live-
+backend screen could be photographed at all, not real user data. Not a
+finding.
+
+**BLOCKER — the machine has produced zero trees and zero minutes of real work
+across every knock for three days running, and the daily digest's own
+headline verdict says the opposite: "Today: nothing here needs you."**
+`data/run-health.json`'s last 15 entries (2026-09-13 ~18:00 UTC through this
+morning) are a solid wall of `"minutes": 0.0, "turns": 1, "ended": "success",
+"trees": 0, "commits": 0 or 1`, the exact fingerprint CLAUDE.md's capacity
+doctrine names for a usage-limit death ("a result record saying turns 1,
+minutes 0.0, subtype success, the agent having started, asked and been
+refused"). The last genuinely productive run was 2026-09-13, 108.1 minutes,
+534 turns, 5 trees; every one of roughly 16 knocks since has died immediately.
+LOG.md's own auto-written entries for every one of these ("Night run ended
+without saying anything... 0.0 minutes of its 120 minute window, 1 turns")
+say as much. DATA.md's 2026-09-15 entry, published today, reports this
+honestly two places down in the document: "What the machine did, the last 24
+hours" shows 7 of 7 runs producing no trees and "0 got real work time
+(~0 min total)"; the night-shift table below it repeats "7 of 7 produced no
+trees; 7 wrote nothing to LOG.md." Yet the SAME entry opens with "**Today:
+nothing here needs you.**", and the 2026-09-13 entry (written the day the
+stoppage started) opens with the identical line.
+
+Root cause traced in `scripts/daily_digest.py`: the headline verdict (line
+~2320) prints "nothing here needs you" whenever the `ATTENTION` list is
+empty, and `ATTENTION` is populated in exactly four places: three for new
+signups/accounts (lines 1472, 1480, 1501) and one watchdog (line 1964) that
+flags a scheduled workflow only when it has not STARTED within 26 hours.
+`nightly.yml` and `review.yml` have kept starting on schedule this whole
+time, they simply accomplish nothing once started, so the watchdog reads them
+as healthy. The `worked`/`minutes` count the same function computes two lines
+above (used to print the honest "0 got real work time" sentence) is never
+consulted when deciding whether to raise ATTENTION. This is precisely the
+gap CLAUDE.md's own capacity doctrine names as a distinct failure mode ("a
+knock that never ARRIVES is a third failure mode, invisible to run-health.json
+because that file only records runs that started") extended one step further:
+a knock that arrives, is recorded, and still does nothing is invisible to the
+mechanism built to surface silence, because arriving is all that mechanism
+checks for.
+
+This also explains the SessionStart brief's own flag at the top of this
+session: Fresh-eyes review and Weekly analysis have both failed on schedule
+repeatedly (3 in a row for fresh-eyes as of 2026-09-15), which is the same
+underlying stoppage reaching the workflows meant to catch broken things,
+including this one. Rung 2 of the ordinary run ladder (`python3
+scripts/health.py`) would have caught the stale schedules directly, but a run
+that dies at turn 1 never reaches Step 0 to run it. This review is itself the
+first successful run since the stoppage began, so whatever was gating it may
+already be releasing; that does not change that Hidde read three days of "all
+clear" while the machine did nothing, from a report built specifically to
+tell him when it does.
+
+No Monday corpus-rot audit today (Wednesday UTC).
+
+## 2026-09-13
+
+Reviewed commits since the last review (14a16874, 2026-09-12) through 9f3feebb
+(~144 commits, day-and-night assembly-line work): the usual claim/verify/write
+cycle across many cities (Warsaw 28->39 from a pre-filtered GDOS cluster,
+Gdansk 6->12 via a new Park Oliwski dendrological cluster earning its own park
+page, Alicante 16->21 across several passes, Milan +1 via OSM edit-history
+cross-reference, Berlin +2, Zwolle +2, Tallinn +2, Montreal +1, Florence
+23->26, a Czech famous-tree batch of 3 single-tree places, a Lithuania
+famous-tree batch of 9 trees across 6 places), the "1 trees" grammar bug class
+chased to its last two spots in the app with a proper ratchet this time
+(`scripts/pluralcheck.py`, wired into the pre-push hook), a map-control fix
+(the recentre button climbing the screen and teleporting on release) and two
+Swift map-arithmetic fixes shipped with unit tests but flagged by their own
+commits as "not verified on a phone: no Xcode here" (the globe now aims at a
+real member of the collection instead of the empty space between two
+clusters; "you are standing in front of" now measures from the phone's actual
+location fix rather than the map's last-panned centre). Ran `python3
+scripts/qa.py` (clean, 8708 pages, links resolve, text clean), `python3
+scripts/preflight.py` (598 cities, 0 problems, standing NOTEs otherwise) and
+`python3 scripts/superlatives.py` (370 claims, no collisions). Read the app
+screenshots in this rotation (tree, tree-nophoto, walk-begin, walk, city-map,
+city): the "1 tree(s)" fix is visibly correct on both Aachen screens
+(`city-map.png` "1 tree in Aachen", `city.png` "1 tree"); nothing else stood
+out as contradicting itself or promising something absent.
+
+**BLOCKER — Trainiškis's city page and question page fabricate an age of
+"2017 years" for a tree the SAME page's own FAQ correctly says was planted in
+2017, `trainiskis.html` and `trainiskis/oldest-tree.html`.** Built titles:
+`Ancient Trees in Trainiškis: One Tree, Oldest 2017, Years` and `What Is the
+Oldest Tree in Trainiškis? (2017, Years Old)`, both also carrying the
+malformed literal string "2017," into rendered HTML and into the page's own
+JSON-LD (ItemList/FAQPage schema, P4). The tree, `trn_001` (Trainiškis Oak,
+successor), has `age_estimate: "planted 2017, a genetic clone of the fallen
+original"` and no `age_min`/`age_max`. Root cause in
+`site/src/lib/tree-copy.ts` `ageToken()`: when a tree carries no age range,
+the function falls back to `nums[0] ?? null` (line 64), the FIRST number the
+regex `/(\d[\d,]*\+?)/g` finds in the raw sentence, unstripped and
+unvalidated. For this sentence the regex greedily captures "2017," (the
+digits plus the immediately-following comma, since nothing separates them),
+and nothing checks whether the captured number is plausible as an age at all,
+let alone whether the sentence is describing a PLANTING YEAR for a young
+successor rather than an age. This directly contradicts the same page's own
+FAQ ("Not yet. The tree here is a young clone planted in 2017... roughly 800
+years old [original], fell in a 2016 storm") and is exactly the class of
+error hard rule 2 and P7 exist to stop, mechanical though it is: a false,
+self-contradicting factual claim, live, in a page's title tag and structured
+data, which both Google and any AI engine reading the schema will take as
+fact. Checked: this is the only tree site-wide whose age_estimate opens with
+"planted `<year>`" and has no age bounds (a search for the pattern across all
+598 city files found exactly one match), so the blast radius is one place's
+city and question pages rather than a wider outbreak; the tree's OWN page
+(`trainiskis/trainiskis-oak-successor.html`) is unaffected because Contract A
+falls back to a species-based title when `ageToken()` returns falsy rather
+than trusting a raw match. `qa.py` and `preflight.py` both pass clean on this
+page, so there is no existing ratchet that would catch a calendar year, or a
+stray trailing comma, being printed as an age.
+
+**WARN — a preflight check's own stated "exactly one" threshold was crossed
+today, and the check's docstring says that is the trigger to make it a FAIL.**
+`note_a_reader_photograph_is_not_a_reason()` in scripts/preflight.py now
+prints two trees, `kyo_017` and `kyo_019` (both Kyoto Gyoen), each carrying an
+approved contributor photograph and no recorded age or measurement. The
+check's own comment (added 2026-09-12, DECISIONS.md same date) states it is
+"a NOTE and not a FAIL only because exactly one published tree is in this
+state on the day the field was removed... When that one is settled this goes
+back to a FAIL." `kyo_019` was already in this state as of the 2026-09-11
+review; today's Kyoto photo-viewing pass (part of commit 443106e4, "kyo_017
+gets its first photo") approved a second contributor photograph for
+`kyo_017`, pushing the count from one to two without anyone updating the
+check or its comment. Worth a session's judgment rather than a night run's:
+both trees carry their own independent government/park sources (unlike the
+Nara trees this check was built to catch, which had none), so this may be a
+case of the check's blunt proxy over-firing rather than a real "photograph
+flatters an ordinary tree" problem, but the corpus's own accounting of when
+this becomes a hard FAIL is now stale and a run reading it at face value
+would not know whether it still describes the current state.
+
+**NOTE — a structural title-budget problem, found while checking a page this
+window touched (`pagramantis-regional-park.html`, Lithuania batch, 4->5
+trees): a long place name can consume the whole 60-character title budget and
+leave the page with a bare, uninformative title.** Built title: `Ancient
+Trees in Pagramantis Regional Park` (42 chars), with no tree count and no age
+hook, because every longer candidate `[city].astro` tries (`: 5 to See,
+Oldest 600 Years`, `: 5 Trees Worth Visiting`, etc.) runs past 60 characters
+and `fitTitle()` falls through to the bare city name. Not new: a scan of
+every built city/place title found 21 pages in this state, all with long
+names (national parks, German/Slovak compound names, American "City, State"
+names). Not caused by today's work and not a rule violation (`fitTitle`'s
+cascade is deliberate, documented code), but it does mean 21 pages carry none
+of the "give a person a reason to click" value the 2026-08-10 title rework
+was built for (SEO_GEO_BLUEPRINT.md Contract C), which is worth a session's
+attention rather than a night run's, since fixing it means shortening the
+candidate templates rather than researching anything.
+
+No Monday corpus-rot audit today (Sunday UTC).
+
+## 2026-09-12
+
+Reviewed commits since the last review (bae8a196, 2026-09-11) through abfb15e6
+(~128 commits, day-and-night): the usual claim/verify/write cycle across many
+cities (Warsaw 26->28, Amersfoort 8->14 and Breda 4->10 from the Dutch LRMB
+register, Ottawa +5 forming a second Dominion Arboretum cluster with its own
+earned park page, Prague +3 Praha 8 oaks, Milan +1, several exhausted-register
+releases correctly logged rather than re-hunted), a mobile Safari zoom-on-focus
+fix (`.hero-search` font-size, now gated by `smoke_test.py`'s computed-size
+check), a run of map-attribution work (OpenFreeMap/OSM credit now reaches
+every one of the 5 MapLibre call sites via one `mapScript()` wrapper, collapses
+to an "(i)" after 5 seconds per the OSMF 2021 guideline, and moved out of the
+global footer into the map itself), the cross-language control-parity check
+(907 translated tree pages and 47 city pages were missing the worth-it vote
+and share button; `check_every_language_gets_the_same_controls()` in qa.py now
+catches this class, `data/lang-gaps.json` honestly lists the two still-open
+gaps with reasons), and the multi-photo feature merging to main (`photo` stays
+the lead, `photos[]` carries extras, both surfaces get a strip + pager, see
+DECISIONS.md 2026-09-12). Both WARNs from the 2026-09-11 review (the empty
+"Photo: " credit and the three self-repeating tree titles) are fixed
+(ef66e113) and verified gone from the built output. Ran `python3
+scripts/preflight.py` (595 cities, 0 problems; standing NOTEs only, none
+touching a page changed in this window), `python3 scripts/superlatives.py`
+(366 claims, no collisions), `python3 scripts/crosscheck.py` (3057 trees,
+feed and app agree field for field) and `python3 scripts/qa.py` (clean, 8584
+pages, links resolve, text clean). Read the built multi-photo page
+(`kyoto/camphor-of-munakata-shrine.html`): thumbnail strip, paging lightbox
+with swipe/arrow-key navigation and a correct "Photograph 1 of 2" / "2 of 2"
+count all render as described.
+
+**WARN APP — a single-tree place's own page shows "1 trees" in its header,
+`ios/AncientTrees/AncientTrees/Screens/Home.swift:720` (`CityView`,
+`ShelfHeader(title: "\(trees.count) trees")`).** Confirmed live in
+`city.png` (Aachen, 1 tree: header reads "1 trees") from this rotation's
+screenshots. The adjacent screenshot of the same city's map sheet,
+`city-map.png`, gets it right: "1 tree in Aachen"
+(`PlaceMapPage.swift:85`, which does branch on `trees.count == 1`). This is
+the same bug class flagged in the 2026-09-10 review in a different file
+(`MapSearch.swift`'s "1 trees" for Liskiava/Alishan under Places), which
+means it is a recurring pattern rather than a one-off: at least one other
+unconditional `"\(count) trees"` construction exists nearby with no
+singular branch (`Home.swift:538`, a homepage shelf, not confirmed on
+screen this rotation). PRINCIPLES.md #9 is the rule this trips: text a loop
+generates is "guilty until read aloud", and a single-tree place (the site
+has several) is exactly where a stranger reading cold notices the
+grammar first.
+
+**NOTE — CONVENTIONS.md's new 2026-09-12 entry ("Adding a photograph of a
+place, and saying you were there") correctly flags an open product question
+rather than resolving it, and is doing its job: `CollectSheet.claim()` still
+ticks a tree as visited in the same call that attaches an identification
+photograph, which the entry itself says Google Maps and iNaturalist keep
+separate and marks "Undecided by Hidde as of this date."** Not acted on: it
+is explicitly parked for him, and forcing a resolution here would be a
+judgment call above this reviewer's mandate. Recorded so it does not read as
+missed on a later pass.
+
+No Monday corpus-rot audit today (Saturday UTC).
+
 ## 2026-09-11
 
 Reviewed commits since the last review (519318c2, itself the newest at review

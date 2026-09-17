@@ -286,6 +286,23 @@ def supa(path, key, method="GET", body=None):
         return json.loads(raw) if raw else None
 
 
+def with_app_link(text, addr, page):
+    """Append the standing App Store paragraph if a reply does not already
+    carry it (Hidde, 2026-09-03: every outbound mail says the app is live).
+    mailcheck.py enforces this on any real letter, and a specific answer
+    composed by hand or by an earlier run is not exempt just because it was
+    written before the auto-composed template learned the same line: eight
+    rows sat on HOLD for exactly this reason before this existed."""
+    if "6806177833" in text or addr in NO_APP_LINK:
+        return text
+    if (page or "").startswith("app"):
+        para = "We would like to know what you think of the app:\n\n" + APP_STORE_URL
+    else:
+        para = ("Our app is also live now. We would like to know what you "
+                "think of it:\n\n" + APP_STORE_URL)
+    return text.rstrip("\n") + "\n\n" + para + "\n"
+
+
 def mailcheck_ok(text):
     """Run mailcheck.py on the draft; nonzero exit means hold it."""
     with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False) as f:
@@ -411,6 +428,16 @@ def main():
             continue
         if why.startswith("vote undone"):
             continue
+        if ours.is_ours(r.get("user_id")):
+            # Stage two never wrote to ourselves before either (2026-09-13):
+            # mailable() already excludes our own rows from the thank-you
+            # stage above, but this loop re-checks privacy and vote-undone by
+            # hand rather than calling mailable(), and had quietly dropped
+            # the ours check when it did. Confirmed the hard way: eight rows
+            # from Hidde's own Nara test account sat ready to mail him about
+            # his own submissions the moment mailcheck stopped holding them.
+            print("OURS row %s: never mail ourselves" % r["id"])
+            continue
         if only != "answers" and not r.get("thanked_at") and addr not in thanked_addrs:
             subj = THANKS_SUBJECT.get(r.get("kind"), THANKS_SUBJECT["feedback"])
             jobs.append((r, subj, thanks_body(unthanked.get(addr, [r]), addr),
@@ -451,6 +478,12 @@ def main():
                  {"reply_text": r["reply_text"]})
             print("AUTO composed a change confirmation for row %s" % r["id"])
         if r.get("reply_text") and not r.get("replied_at"):
+            fixed = with_app_link(r["reply_text"], addr, r.get("page"))
+            if fixed != r["reply_text"]:
+                r["reply_text"] = fixed
+                supa("/rest/v1/submissions?id=eq.%s" % r["id"], key, "PATCH",
+                     {"reply_text": fixed})
+                print("Added the app-store line to row %s's reply" % r["id"])
             ok, report = mailcheck_ok(r["reply_text"])
             if not ok:
                 print("HOLD reply for row %s: mailcheck says:\n%s"

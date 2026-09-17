@@ -1038,10 +1038,12 @@
         "label": "late June into July, when the flowers open and the crown fills with bees you can hear from the pavement"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Small-leaved_linden_%28Tilia_cordata_Mill.%29%2C_29_Pi%C5%82sudskiego_street%2C_Krak%C3%B3w%2C_Poland.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Zygmunt Put, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3685,
+        "height": 5115
       },
       "how_to_recognise": "You can recognise it by the trunk, 339 centimetres round, between Krakow's two other small-leaved limes in girth. It stands on ul. Pilsudskiego 29, about 700 metres from the Straszewskiego Ash."
     },
@@ -1214,6 +1216,139 @@
       },
       "paid_entry": true,
       "how_to_recognise": "You can recognise it as the plant on the Botanical Garden's own logo, a squat caudex 108 centimetres round rather than a true trunk. It stands in the palm house, recorded on this site since 1864."
+    },
+    {
+      "id": "kra_035",
+      "name": "The Beliny-Prazmowskiego Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "roughly 50 to 75 years",
+      "age_min": 50,
+      "age_max": 75,
+      "girth_cm": 200,
+      "location": {
+        "address": "Al. Pulkownika Wladyslawa Beliny-Prazmowskiego 38, Osiedle Oficerskie, Grzegorzki, Krakow",
+        "latitude": 50.070759,
+        "longitude": 19.95883,
+        "neighbourhood": "Grzegorzki"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.913",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+      ],
+      "access": "Free. A street tree on the pavement outside a residential building in the Officers' Quarter (Osiedle Oficerskie); no gate or ticket.",
+      "transport": "Roughly 2 km / 25 minute walk from Rynek Glowny (Main Square); tram stops along al. 29 Listopada / Rondo Mogilskie are the nearest public transport.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This species was described from fossils before anybody found a living one. Until 1941 the dawn redwood existed for Western science as an imprint in rock and nothing else; then living stands were identified in central China, and seed reached gardens outside the country around 1947. That history puts a hard ceiling on the tree outside number 38 on al. Beliny-Prazmowskiego. No specimen of its kind in Poland can be much more than seventy-five years old, and this one already carried two metres of girth when the Malopolskie voivode made it a protected natural monument in April 2004, which places it somewhere between fifty and seventy-five years. Young for this list, and old for a species that spent the twentieth century starting again.\n\nIt is a deciduous conifer, which is the thing to watch for. Soft flat needles come out pale green in spring, hold all summer, turn rust and fall, and the tree stands through the Krakow winter as a bare fluted spike among evergreens that keep theirs. The trunk folds and buttresses at the base as these do with age.\n\nTwo records carry it, the national register of natural monuments and the city's own list of protected trees, and neither says who planted it or when. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by the needles, soft and flat on a conifer that turns rust red and drops the lot. It stands on the pavement outside number 38 on al. Beliny-Prazmowskiego, its trunk two metres round and fluted at the base.",
+      "verify_notes": "Species genuinely absent from Krakow's published page until now, which makes it the most distinctive addition this pass found. Designated a pomnik przyrody by Regulation No. 7 of the Malopolskie Voivode, 13 April 2004 (Wojewoda Malopolski). GDOS register (kodinspire PL.ZIPOP.1393.PP.1261011.913, gid 72099) gives coordinates only, no girth; Polish Wikipedia's own 'Pomniki przyrody w Krakowie' article reproduces the city's official wykaz (entry 141): species Metasekwoja chinska, address ul. Beliny Prazmowskiego 38, girth 200 cm, designated 2004, with its own photo file on Commons ('Dawn redwood (Metasequoia glyptostroboides), 38 Beliny-Prazmowskiego Av, Krakow, Poland.jpg'), which is independent evidence the tree is alive and photographed in situ. No storm-felled or removal note in the wykaz, unlike two other Krakow entries that were. Age basis: Metasequoia glyptostroboides was unknown to Western science until 1941 and was not distributed to cultivation outside China until roughly 1947-48 (well documented botanical history, independent of this specific tree), so no specimen in Poland can be older than about 78 years; a 200 cm girth by the 2004 designation date is consistent with a fast-growing specimen planted in the 1950s-1970s. A WebSearch AI summary separately claimed this tree is locally believed to be a 'mother tree' grown from seed brought from China by Prof. Wladyslaw Szafer, from which Krakow's other metasequoias were propagated; this could NOT be confirmed on any page actually fetched this pass (only appeared in the search engine's own synthesized summary, which BRIEF_RESEARCH.md treats as a lead, never a source), so it is recorded here as unconfirmed local lore only and must not be stated as fact. Only two sources found (register + the city's own wikipedia-reproduced wykaz), no independent third source; flagged for that reason, not for any doubt about the tree's existence.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "kra_036",
+      "name": "The Jordan Park Black Poplar",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "roughly 90 to 140 years",
+      "age_min": 90,
+      "age_max": 140,
+      "girth_cm": 402,
+      "location": {
+        "address": "Park im. Henryka Jordana, ul. Reymonta side, Czarna Wies, Krakow",
+        "latitude": 50.064449,
+        "longitude": 19.918209,
+        "neighbourhood": "Czarna Wies / Krowodrza"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.968",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "https://en.wikipedia.org/wiki/Henryk_Jordan_Park,_Krak%C3%B3w"
+      ],
+      "access": "Free. Stands inside Park Jordana, a public city park with no gates or opening hours, on the side nearest ul. Reymonta.",
+      "transport": "Roughly 2.3 km / 30 minute walk from Rynek Glowny; tram and bus stops on al. 3 Maja and ul. Reymonta (AGH / Czarna Wies area) are a few minutes' walk from the park entrance.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The first public playground in Europe opened on this ground in 1889, and the poplar on the ul. Reymonta side of the park is old enough that it might have been there to watch. Dr Henryk Jordan laid the place out so that the children of Krakow had somewhere to run and play games in the open, the first of its kind in the city and the first anywhere on the continent. It has been free and ungated ever since.\n\nWhether the tree predates the park is genuinely unsettled, and the honest answer is that nobody has dated it. Its trunk measures 402 cm around on the city's list of protected trees, and black poplars put on girth much faster than the oaks and limes people mentally compare a four-metre trunk against. That gives a broad ninety to a hundred and forty years, a band which straddles 1889 rather than settling it. The tree became a protected natural monument in 2010.\n\nWhat it does not leave in doubt is the species. Black poplar bark ridges into thick vertical cords with age, and the leaves are triangular on long flattened stalks, so the crown rustles in wind that barely moves anything else around it. If anyone holds a dated planting record for this corner of the park, we would like to see it.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.02 metres round and ridged into thick vertical cords, and by the triangular long-stalked leaves that rustle in almost no wind. It stands inside Park Jordana on the side nearest ul. Reymonta.",
+      "verify_notes": "Fills a species gap (Black Poplar, absent from Krakow's page) and adds a genuinely famous, free public park with no register-derived tree of ours there yet. GDOS register (kodinspire .968, gid 72148) gives coordinates and 2010 designation; Polish Wikipedia's wykaz (entry 190) confirms address ('Park im. H. Jordana od str. ul. Reymonta'), girth 402 cm, designated 2010. No felled/removed note. English Wikipedia independently confirms Park Jordana was founded in 1889 by Dr Henryk Jordan as the first public playground in Krakow and the first of its kind in Europe, still a genuinely popular free destination today, which answers the access question cleanly. A WebSearch summary separately described this tree, citing a Polish enthusiast site, as leaning and moss-covered with a girth of 495 cm; that figure could not be confirmed on any page actually fetched (the cited page, pomnikowo.eu, turned out to catalogue statues and memorials in the park, not trees), so it is NOT used; girth recorded here is the wykaz's own 402 cm only. Age is a broad dendrological estimate from that girth: poplars grow much faster than oak or ash, so a similar circumference implies a younger tree than the same girth would on a slower species; flagged because only two written sources (register + its own wiki reproduction) speak to the tree itself, the park history is the third, independent source.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "kra_037",
+      "name": "The Serkowskiego Square White Poplar",
+      "species": "White Poplar (Populus alba)",
+      "age_estimate": "roughly 90 to 150 years",
+      "age_min": 90,
+      "age_max": 150,
+      "girth_cm": 450,
+      "location": {
+        "address": "Plac Emila Serkowskiego, Stare Podgorze, Krakow",
+        "latitude": 50.043355,
+        "longitude": 19.942422,
+        "neighbourhood": "Podgorze"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1066",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+      ],
+      "access": "Free. Stands on/beside Plac Emila Serkowskiego, an ordinary public square/street in Stare Podgorze; no gate or ticket.",
+      "transport": "Roughly 2 km / 25 minute walk from Rynek Glowny via the Powstancow Slaskich bridge; bus and tram routes serve Podgorze a short walk away.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Four and a half metres of trunk, on a square almost no visitor to Krakow crosses the river to see. Plac Emila Serkowskiego is an ordinary public square in Stare Podgorze, one bridge and twenty-five minutes from the Main Square, and the white poplar standing on it has been a protected natural monument since 1997.\n\nWhite poplars announce themselves in a breeze. Every leaf is covered underneath in dense white felt, so a gust turns the whole crown from green to silver and back, and the bark is pale grey, pocked low down with dark diamond-shaped marks and furrowing toward the base. They also grow quickly, which is why 450 cm of circumference does not buy the age the same figure would buy on an oak. The estimate here is a wide ninety to a hundred and fifty years, worked from the girth the city's register recorded rather than from a planting document, because no planting document has turned up.\n\nThat is most of what is known about it. Two written records mention the tree, the national register and the city list that reproduces it, and both run to about three lines. What neither conveys is the scale: a poplar allowed to reach four and a half metres round on a city square is not a common sight. If somebody has a date for it, we would take it.",
+      "how_to_recognise": "You can recognise it by the leaves, white-felted underneath so the crown flashes silver in a gust, and by the trunk, 4.5 metres round. It stands on plac Emila Serkowskiego in Stare Podgorze, on the far side of the river from the Old Town.",
+      "verify_notes": "Fills a species gap (White Poplar, absent from Krakow's page) in a Podgorze location the page does not otherwise cover. GDOS register (kodinspire .1066, gid 71988) gives coordinates and 1997 designation; Polish Wikipedia's wykaz (entry 16) confirms address (plac Serkowskiego), girth 450 cm, designated 1997, with its own Commons photo file. No felled/removed note. Confirmed via Nominatim that Plac Emila Serkowskiego is a genuine public street/square in Stare Podgorze (OSM highway=residential), not a private courtyard. A WebSearch summary separately cited a girth of 430 cm from an unclear mix of sources (one of which, familyfunspace.com, describes a different, unrelated white poplar called 'Plawianka' elsewhere), so that figure is NOT used; girth recorded here is the wykaz's own 450 cm only. Age is a broad estimate from that girth using the same fast-poplar-growth reasoning as kra_036. Flagged for having only two written sources (register + its own wiki reproduction).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "kra_038",
+      "name": "The Westerplatte French Maple",
+      "species": "French Maple (Acer monspessulanum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Ul. Westerplatte, near the Planty ring park, Stare Miasto, Krakow",
+        "latitude": 50.062697,
+        "longitude": 19.944539,
+        "neighbourhood": "Stare Miasto"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.3253",
+        "https://lifeinkrakow.pl/w-miescie/9844,ile-w-krakowie-jest-pomnikow-przyrody-ma-byc-ich-wiecej"
+      ],
+      "access": "Free. On ul. Westerplatte, which borders the Planty, Krakow's public ring park around the Old Town; no gate or ticket.",
+      "transport": "Roughly 0.8 km / 10 minute walk from Rynek Glowny, right beside the Planty walking route near Wawel.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Krakow's newest protected tree is a maple from the Mediterranean, and the city asked its residents about it first. Acer monspessulanum grows wild on dry limestone slopes from Spain to the Caucasus and is almost never planted on a Central European street, where the maples are Norway and sycamore. This one stands on ul. Westerplatte, hard against the Planty, the ring of park laid out on the ground the medieval city walls once held.\n\nIn September 2025 the city put five candidate trees out to public consultation: two beeches, an ash, an oak and this klon francuski. The consultation closed in early October, and the tree's entry in the national register of natural monuments is dated 6 June 2026, which makes it one of the most recently protected trees in the city.\n\nNobody has published a measurement of it. The register gives a species, a coordinate and a date and stops there; the local reporting on the consultation named the tree and did not measure it either. So there is no girth here and no age. French maple leaves are small, leathery and three-lobed, a fraction of the size of the Norway maple leaves further along the same walk, and the species does not make a giant, so the case for the ten minutes from the Main Square is the rarity rather than the scale. If you pass it with a tape measure, send us the number.",
+      "how_to_recognise": "You can recognise it by the leaves, small, leathery and three-lobed, a fraction of the size of every other maple leaf on the walk. It stands on ul. Westerplatte on the Planty side, and it is a small tree rather than a big one.",
+      "verify_notes": "This was already a lead in data/leads/krakow.json ('French Maple on ul. [unnamed nearby street]'), blocked only for lacking a second source because it was designated too recently (GDOS gives 2026-06-06) to appear in the 2023-snapshot Wikipedia wykaz table used to cross-verify this city's other trees. A fresh search this pass found the missing second source by a different route: lifeinkrakow.pl (2025-09, independent local news) reports the City of Krakow ran a public consultation (8 Sept to 3 Oct 2025) on five proposed new pomniki przyrody, one of them explicitly 'klon francuski' (French maple), alongside two beeches, an ash and an oak; the GDOS record's 2026-06-06 designation date is consistent with that consultation having concluded and a council resolution having since passed. That is a genuine independent second source for the tree's existence and designation, even though neither source states its girth. Nominatim places the coordinate on ul. Westerplatte immediately beside the Planty, Krakow's Old Town ring park, i.e. free public ground, not a private plot. Species is genuinely absent from Krakow's page and Acer monspessulanum is a rare choice for a Central European city street tree, which is the whole case for including it: worth-the-visit here rests on rarity of species in a very central, walkable location, not on age or size, neither of which is documented anywhere yet. No girth or age given in any source found; left honestly empty per BRIEF_RESEARCH.md rather than guessed, and the page should ask a reader with a tape measure. Flagged for the missing girth/age and for resting on only two sources, neither of which is a physical measurement of the tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

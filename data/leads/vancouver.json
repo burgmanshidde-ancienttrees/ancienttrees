@@ -10,23 +10,23 @@
    "heritage_register_id": "2529",
    "municipal_designation": "No",
    "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00. CHECKED 2026-08-30 and 2026-09-17 (verify passes): the address is Trinity Baptist Church, institutional grounds and a presumptive yes under hard rule 10, but zero corroboration found that the sequoia still stands, no size, no independent source beyond the register. Not in the City's public-trees street inventory (expected, it would be on private/institutional land not the boulevard). Left as a lead; worth a street-level image check."
   },
   {
    "name": "Aesculus Hippocastanum, Horse Chestnut",
    "address": "101‑199 W 10TH AV",
    "heritage_register_id": "2521",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "status": "blocked",
+   "why": "CHECKED 2026-09-17 (verify pass): the City's public-trees street-tree inventory shows 8+ mature Horse Chestnuts along this exact block, same species, consecutive addresses. An avenue planting, not one collectible point (same reasoning as the register's own already-blocked streetscape rows). BLOCKED."
   },
   {
    "name": "London Plane",
    "address": "3700-3800 W 8TH AV",
    "heritage_register_id": "2520",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "status": "blocked",
+   "why": "CHECKED 2026-09-17 (verify pass): the address range matches multiple London Planes in the City's public-trees dataset, a very common Vancouver boulevard species (40+ hits per street citywide); no distinguishing feature found. BLOCKED as avenue/generic, same reasoning as the register's own already-blocked London Plane streetscape entry (id 2547)."
   },
   {
    "name": "Northern Red Oak",
@@ -50,15 +50,15 @@
    "heritage_register_id": "2534",
    "municipal_designation": "No",
    "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00. CHECKED 2026-09-17 (verify pass): zero corroboration anywhere, including zero Acer cappadocicum in the citywide public-trees dataset. Wide address range; genuinely unresolved rather than confidently an avenue. Left a lead."
   },
   {
    "name": "Maple (Various Species)",
    "address": "2200‑4400 BOUNDARY RD",
    "heritage_register_id": "2537",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "status": "blocked",
+   "why": "CHECKED 2026-09-17 (verify pass): name itself says 'various species' over a 2.2km stretch. Streetscape planting, not one collectible point. BLOCKED."
   },
   {
    "name": "Tulip Tree",
@@ -66,7 +66,7 @@
    "heritage_register_id": "2548",
    "municipal_designation": "No",
    "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00. CHECKED 2026-09-17 (verify pass): confirmed real via search (Kerrisdale, a known registered heritage tree) but not in the City's public-trees street inventory at this address (a different species stands there instead), so it reads as a private-yard specimen. No explicit 'private, no access' statement found, so left a lead rather than blocked."
   },
   {
    "name": "Fernleaf Beech",
@@ -74,7 +74,7 @@
    "heritage_register_id": "2519",
    "municipal_designation": "No",
    "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00. CHECKED 2026-09-17 (verify pass): West Point Grey residential address, referenced in passing in a Heritage Vancouver 'plaqued heritage trees' PDF that no fetch tool this pass could decode (font-encoded text). Not in the City's public-trees street inventory. Needs a site/access check or a working PDF extraction; left a lead."
   },
   {
    "name": "Douglas Firs (2)",
@@ -90,15 +90,15 @@
    "heritage_register_id": "2524",
    "municipal_designation": "No",
    "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00. CHECKED 2026-09-17 (verify pass): that stretch of E 15th is a mixed commercial/residential strip near Main St; could not determine if the frontage is publicly viewable. Not in the public-trees dataset. Left a lead."
   },
   {
    "name": "Spanish Chestnut",
    "address": "2001 W 20TH AV",
    "heritage_register_id": "2526",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "status": "promoted",
+   "why": "PROMOTED 2026-09-17 (verify pass) to data/research/vancouver-verified.json as van_006 'The West 20th Avenue Spanish Chestnut'. Geocoded via the City's separate public-trees street-tree inventory to 2003 W 20th Ave, one house number from the register's 2001, flagged for that address discrepancy rather than silently resolved. 104.1cm diameter, confirmed location precision."
   },
   {
    "name": "Saucer Magnolia",
@@ -121,8 +121,8 @@
    "address": "4000‑4600 W 16TH AV",
    "heritage_register_id": "2525",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "status": "blocked",
+   "why": "CHECKED 2026-09-17 (verify pass): wide address range, a common Prairie-bred boulevard cultivar, no corroborating match at all in the City's public-trees dataset within that range. BLOCKED as avenue/streetscape."
   },
   {
    "name": "Copper Beech (3)",
@@ -130,31 +130,31 @@
    "heritage_register_id": "2530",
    "municipal_designation": "Yes",
    "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00. CHECKED 2026-08-30 (verify pass), left as an unresolved lead rather than shipped or blocked: this address is now 'Shannon Wall Centre Kerrisdale', a ~10-acre redevelopment of a former private estate (Mansion, Coach House, Gate House retained; Adera House and Hudson House added as new condo buildings), marketed as a 'semi-gated' community. Could not confirm within the pass's time budget whether the copper beeches (presumably retained landscape trees from the original estate) stand on ground the public may freely enter, or behind the gating. Do not guess; a future pass should check the development's own landscape/heritage-tree preservation plan or a site visit/street-level image before deciding either way."
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00. CHECKED 2026-08-30 (verify pass), left as an unresolved lead rather than shipped or blocked: this address is now 'Shannon Wall Centre Kerrisdale', a ~10-acre redevelopment of a former private estate (Mansion, Coach House, Gate House retained; Adera House and Hudson House added as new condo buildings), marketed as a 'semi-gated' community. Could not confirm within the pass's time budget whether the copper beeches (presumably retained landscape trees from the original estate) stand on ground the public may freely enter, or behind the gating. Do not guess; a future pass should check the development's own landscape/heritage-tree preservation plan or a site visit/street-level image before deciding either way. CHECKED AGAIN 2026-09-17 (verify pass): the public-trees dataset shows a completely different species (Crimean Linden) at this exact address, meaning the copper beeches aren't in the street inventory either, consistent with them being retained private-estate trees rather than boulevard trees. Does not resolve the access question either way; still unresolved."
   },
   {
    "name": "Pin Oak",
    "address": "4010 BLENHEIM ST",
    "heritage_register_id": "2535",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "status": "promoted",
+   "why": "PROMOTED 2026-09-17 (verify pass) to data/research/vancouver-verified.json as van_007 'The Blenheim Street Oak'. Species conflict disclosed rather than resolved: the register says Pin Oak, the City's public-trees inventory shows two Red Oaks (127.0cm and 111.8cm diameter) plus two elms and a hackberry at the identical address; shipped as the larger Red Oak with the discrepancy flagged for a reader to settle."
   },
   {
    "name": "London Plane",
    "address": "3800-3900 W BROADWAY",
    "heritage_register_id": "2538",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "status": "blocked",
+   "why": "CHECKED 2026-09-17 (verify pass): the address range matches multiple London Planes in the City's public-trees dataset, same as register id 2520; no distinguishing feature. BLOCKED as avenue/generic."
   },
   {
    "name": "Beech",
    "address": "1711 DUNBAR ST",
    "heritage_register_id": "2543",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "status": "promoted",
+   "why": "PROMOTED 2026-09-17 (verify pass) to data/research/vancouver-verified.json as van_005 'The Dunbar Street Beech'. Geocoded via the City's public-trees inventory, exact address match, single record (no ambiguity): European Beech, 133.4cm diameter, 19.8m tall. Confirmed location precision."
   },
   {
    "name": "Dove Tree, Handkerchief Tree",
@@ -162,7 +162,7 @@
    "heritage_register_id": "2528",
    "municipal_designation": "No",
    "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00. CHECKED 2026-09-17 (verify pass): not in the City's public-trees dataset at this address (an Arborvitae sits there instead); Kerrisdale residential, no institutional match found. Left a lead."
   },
   {
    "name": "Redwood",
@@ -170,7 +170,7 @@
    "heritage_register_id": "2536",
    "municipal_designation": "No",
    "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00. CHECKED 2026-09-17 (verify pass): the address is Point Grey Secondary School, whose grounds include a community-used sports field, but could not confirm the redwood itself stands in a publicly reachable part of the grounds rather than a restricted part. Schools need real evidence of genuine public access (hard rule 10); left a lead pending that."
   },
   {
    "name": "Caucasian Wing‑Nut",
@@ -185,16 +185,16 @@
    "address": "3537 DUNBAR ST",
    "heritage_register_id": "2544",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "status": "blocked",
+   "why": "CHECKED 2026-09-17 (verify pass): confirmed an ordinary private single-family residence (real-estate sale records, 4bd/2.5ba house); not in the City's public-trees dataset (only a private ornamental cherry recorded there). No public-access evidence. BLOCKED as private land, same standard as the Wales St blocks."
   },
   {
    "name": "Black Walnut",
    "address": "6690 MARINE CRESCEN",
    "heritage_register_id": "2549",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "status": "blocked",
+   "why": "CHECKED 2026-09-17 (verify pass): confirmed private luxury residential cul-de-sac (Kerrisdale/SW Marine); not in the City's public-trees dataset at this address (Magnolia/Honeylocust street trees found instead, no Juglans). BLOCKED as private land."
   },
   {
    "name": "Copper Beech",

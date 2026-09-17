@@ -218,16 +218,22 @@ final class AncientTreesUITests: XCTestCase {
     /// over Amsterdam (Hidde, 2026-08-22, who typed exactly that).
     @MainActor
     func testSearchingForATreeMovesTheMapToIt() throws {
-        // Timeout widened 12->25s on 2026-09-09: the floor (iOS 18) job failed
-        // this exact assertion on every scheduled run for two days straight
-        // (0 of 3) while workflow_dispatch passed (1 of 1), the tell of runner
-        // contention slowing simulator launch rather than a real bug. The
-        // bundled ios/AncientTrees/AncientTrees/Data/trees.json already
-        // carries the Beethoven Plane, so this never depends on the network.
+        // Timeout widened 12->25s on 2026-09-09, then 25->45s on 2026-09-12:
+        // the floor (iOS 18) job failed this exact assertion again that day
+        // (19:09 UTC run), a third recurrence of the same runner-contention
+        // flake. The real fix is a retry flag on the floor job's xcodebuild
+        // call, matching the newest-OS job (line ~215 of ios.yml); it is
+        // written and cannot be pushed, this bot's token lacks `workflows`
+        // permission on .github/workflows/* (reported to Hidde 2026-09-09,
+        // confirmed still blocked 2026-09-13). The ready-to-apply diff sits at
+        // drafts/ios-floor-retry.patch. Widening the margin here is the
+        // mitigation available without that permission. The bundled
+        // ios/AncientTrees/AncientTrees/Data/trees.json already carries the
+        // Beethoven Plane, so this never depends on the network.
         let app = launch(["-map", "-search=beethoven"])
         let row = app.buttons.matching(
             NSPredicate(format: "label CONTAINS[c] 'Beethoven'")).firstMatch
-        XCTAssertTrue(row.waitForExistence(timeout: 25), "search found no Beethoven Plane")
+        XCTAssertTrue(row.waitForExistence(timeout: 45), "search found no Beethoven Plane")
         row.tap()
 
         // The map selects it, and the sheet shows that tree rather than
@@ -628,12 +634,26 @@ final class AncientTreesUITests: XCTestCase {
         let want = picker.buttons["Favourites"]
         XCTAssertTrue(want.exists && seen.exists, "the two lanes are not both there")
 
-        seen.tap()
-        XCTAssertTrue(seen.isSelected, "tapping My trees did not select it")
+        // RETRIED, not a single tap, because switching lanes rebuilds
+        // `laneContent` (`.id(lane)` in Collect.swift) and on a loaded CI
+        // simulator that rebuild can still be settling when the synthetic
+        // touch-up event lands, the same class of race documented at this
+        // file's map-sweep retry loop above. Confirmed as exactly this on
+        // 2026-09-13 (ios.yml's 19:11 run failed here with no `ios/` change
+        // since the prior green run, and this file's own comments already
+        // named the CI-runner timing flake); retrying the tap is cheaper and
+        // more honest than a blind sleep before every run.
+        func tapAndConfirmSelected(_ button: XCUIElement, _ label: String) {
+            for attempt in 0..<3 {
+                if attempt > 0 { Thread.sleep(forTimeInterval: Double(attempt) * 0.5) }
+                button.tap()
+                if button.isSelected { return }
+            }
+            XCTAssertTrue(button.isSelected, "tapping \(label) did not select it")
+        }
 
-        want.tap()
-        XCTAssertTrue(want.isSelected,
-                      "tapping Favourites from My trees did not select it")
+        tapAndConfirmSelected(seen, "My trees")
+        tapAndConfirmSelected(want, "Favourites from My trees")
         // And the tap must not have opened a tree instead, which is the other
         // half of what he described.
         XCTAssertFalse(app.buttons["Take me there"].exists,

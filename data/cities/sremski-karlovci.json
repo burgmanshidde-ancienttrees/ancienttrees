@@ -1,0 +1,66 @@
+{
+  "city": "Sremski Karlovci",
+  "country": "Serbia",
+  "status": "needs_curation",
+  "intro": "Sremski Karlovci is a small baroque town on the Danube, nine kilometres from Novi Sad. Its mapped tree grows in the courtyard where a future Montenegrin ruler was ordained a bishop over two centuries ago: a plane over 30 metres tall, tall enough that Vojvodina's own nature institute calls it unique for its species anywhere in the province. The town's own survey puts its age at around 165 years; local memory, tracing it to a sapling carried in from Vienna soon after the church was rebuilt, would make it older still. It has stood under state protection since 1960.",
+  "meta_description": "The plane tree of Sremski Karlovci: over 30 metres tall, protected since 1960, possibly older than its official age of 165 years.",
+  "question_meta": "Sremski Karlovci's plane tree stands over 30 metres tall in the Lower Church's courtyard, protected as a natural monument since 1960.",
+  "question_answer": "Sremski Karlovci's only mapped tree is a plane growing in the courtyard of the Lower Church, dedicated to the apostles Peter and Paul, in the town's old core. A municipal survey of the town's protected trees puts its age at around 165 years, and it has stood over 30 metres tall long enough for Vojvodina's own Provincial Institute for Nature Protection to call it unique for its species anywhere in the province. It has carried state protection as a natural monument since 1960. Local memory tells a longer story: that the tree began as a sapling carried in from Vienna and planted soon after the church itself was rebuilt in 1719, which would put it closer to two and a half centuries old. Nobody has cored the trunk to settle which figure is right, so both are given here.",
+  "question_context": "Serbia has no single national register of monumental trees with an age field, so this page rests on two independent accounts that agree on the essentials and disagree on the detail. The Provincial Institute for Nature Protection's own survey of Sremski Karlovci's dendroflora, cited on the tree's Serbian Wikipedia entry, puts the age at around 165 years. The town's own Tourism Organization publishes a shorter figure, over 150 years, on its list of individual natural monuments, and adds that the tree has held state protection since 1960 as the tallest of its species recorded anywhere in Vojvodina. Neither source gives a trunk girth. A separate, older story, repeated in local histories of the church beside it, holds that the sapling was carried in from Vienna and planted soon after the building was rebuilt in 1719, which would make the tree considerably older than either official figure. That version rests on memory rather than a record, so it is presented as tradition rather than fact.",
+  "hero_tree_id": "srk_001",
+  "oldest_tree_id": "srk_001",
+  "faq": [
+    {
+      "q": "How old is the plane tree in Sremski Karlovci?",
+      "a": "Around 165 years, according to a municipal survey of the town's protected trees, though the town's own tourism office gives a shorter figure of over 150. Local tradition holds it was planted as a sapling carried in from Vienna soon after the church beside it was rebuilt in 1719, which would make it considerably older; nobody has cored the trunk to settle it."
+    },
+    {
+      "q": "Why is the tree protected?",
+      "a": "It has stood under state protection as a natural monument since 1960. At over 30 metres tall, Vojvodina's own Provincial Institute for Nature Protection calls it the tallest example of its species recorded anywhere in the province."
+    },
+    {
+      "q": "Can I walk up to it?",
+      "a": "Yes. It grows in the open courtyard of the Lower Church, dedicated to the apostles Peter and Paul, in the middle of Sremski Karlovci's old town, and the grounds are open to visitors during the day."
+    },
+    {
+      "q": "How do I get to Sremski Karlovci?",
+      "a": "It is a small town on the Danube about 9 kilometres southeast of Novi Sad, an easy day trip by regular local bus; Belgrade is roughly 60 kilometres further south. The church stands in the old town centre, a short walk from the main square."
+    }
+  ],
+  "trees": [
+    {
+      "id": "srk_001",
+      "name": "The Plane of the Lower Church",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 150 to 165 years, officially",
+      "age_min": 150,
+      "age_max": 170,
+      "height_m": 30,
+      "location": {
+        "address": "Courtyard of the Lower Church (Donja crkva, Church of the Holy Apostles Peter and Paul), Mitropolita Stratimirovića street, old town centre, Sremski Karlovci",
+        "latitude": 45.202049,
+        "longitude": 19.936069,
+        "neighbourhood": "Old town centre, Sremski Karlovci"
+      },
+      "story": "Local memory in Sremski Karlovci says this plane began life as a sapling carried in from Vienna, planted in the churchyard soon after the building beside it went up. The town's own mapping survey of its protected trees is more cautious, putting the age at around 165 years rather than the two centuries or more the Vienna story implies, and nobody has settled which figure is right.\n\nWhat both accounts agree on is the size. The tree now stands over 30 metres tall, which the region's Provincial Institute for Nature Protection calls unique for the species anywhere in Vojvodina, and it has carried state protection as a natural monument since 1960.\n\nIt grows in the courtyard of the Lower Church, dedicated to the apostles Peter and Paul, in the old core of a small Danube town nine kilometres from Novi Sad. The church was built on foundations first recorded in 1599 and rebuilt in 1719, and it was here in 1784 that Petar I Petrović-Njegoš, later canonised as Saint Peter of Cetinje and ruler of Montenegro for nearly half a century, was ordained a bishop.\n\nThe tree's heaviest limbs now rest on props, maintained by the town's own public utility company. Nobody has cored it to settle its age, so the plane keeps its two stories: a documented 165 years, and a longer one that only the tree itself could confirm.",
+      "verified_sources": [
+        "https://sr.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D1%82%D0%B0%D0%BD_%D1%83_%D0%A1%D1%80%D0%B5%D0%BC%D1%81%D0%BA%D0%B8%D0%BC_%D0%9A%D0%B0%D1%80%D0%BB%D0%BE%D0%B2%D1%86%D0%B8%D0%BC%D0%B0",
+        "https://karlovci.org.rs/en/individual-natural-monuments/"
+      ],
+      "access": "Free, in the open courtyard of the Lower Church in the centre of Sremski Karlovci; the church grounds are open to visitors during the day.",
+      "transport": "Sremski Karlovci is a small town on the Danube about 9 km southeast of Novi Sad, reachable by regular local bus; Belgrade is roughly 60 km further south. The church stands in the old town centre, a short walk from the main square.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Donja_Crkva%2C_Sremski_Karlovci_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Miljan Simonović, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3096,
+        "height": 4128
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the pale, flaking bark and the size of its trunk against the small church behind it. It stands directly in front of the Lower Church's entrance, the only tree of its size in the churchyard."
+    }
+  ]
+}

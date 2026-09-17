@@ -259,8 +259,11 @@ struct CollectView: View {
         let visitedShown = showsYourCollection ? allVisited : []
         let points = visitedShown.map { (lat: $0.lat, lng: $0.lng) }
             + mineShown.map { (lat: $0.lat, lng: $0.lng) }
-        if countries > 1, showsYourCollection {
-            GlobeMap(points: points)
+        // -globe forces the branch for the sweep and the layout gate, because
+        // the real condition (signed in, trees ticked in two countries) is one
+        // no simulator can reach. See Launch.globe.
+        if Launch.globe || (countries > 1 && showsYourCollection) {
+            GlobeMap(points: points.isEmpty ? GlobeMap.somewhereToLookAt : points)
         } else {
             TreeMap(trees: visitedShown,
                     mine: mineShown.map {

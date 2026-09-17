@@ -58,8 +58,20 @@
       "at": "2026-09-09T08:37:25+00:00"
     },
     "2026-09-11": {
-      "note": "Both WARNs already fixed in code before this run started (verified against a fresh build): PhotoFigure.astro/creditText already return null for reader-app photos with no attribution (no empty 'Photo: ' figcaption renders), and [tree].astro already has the nameEchoesSpecies guard so Manchester/Munich titles no longer self-repeat. Confirmed by grepping dist/kyoto/twisted-muku-of-omiya-gate-kyoto-gyoen.html (no figcaption) and dist/manchester/amur-cork-tree.html, dist/manchester/adams-laburnum.html, dist/munich/fern-leaved-beech.html (clean titles).",
-      "at": "2026-09-12T00:26:07+00:00"
+      "note": "Both WARNs verified already fixed in current code/build: PhotoFigure.astro/TreeCard.astro guard null creditText so no empty 'Photo: ' figcaption renders (checked kyoto/baarn pages, none present); [tree].astro's nameEchoesSpecies check already drops the duplicated species clause (Manchester Amur Cork Tree, Adam's Laburnum, Munich Fern-leaved Beech all title correctly). No code change needed.",
+      "at": "2026-09-12T08:20:50+00:00"
+    },
+    "2026-09-12": {
+      "note": "1-trees WARN fixed in 068159d9f (Home.swift walk card, Walks.swift row, ContentView empty-state, city-shelf subtitle); scripts/pluralcheck.py added as ratchet, wired into pre-push",
+      "at": "2026-09-13T06:01:33+00:00"
+    },
+    "2026-09-13": {
+      "note": "BLOCKER: Fixed ageToken() fabricating '2017, Years' for Trainiskis (trn_001), a planting year mistaken for an age. Added a qa.py ratchet check (297ddd0d). WARN: note_a_reader_photograph_is_not_a_reason() already corrected by an earlier attempt this window: verified_sources now counts as a reason alongside age/measurement, so kyo_017/kyo_019 (both carrying kyoto.lg.jp/kyotogyoen.go.jp sources) no longer trip the check. Fix is committed in scripts/preflight.py.",
+      "at": "2026-09-13T15:53:22+00:00"
+    },
+    "2026-09-16": {
+      "note": "Fixed the underlying gap: night_shift() in daily_digest.py now feeds a real stall (all knocks in the 24h window producing 0 trees and under 2 real minutes) into ATTENTION, so the headline verdict stops saying 'nothing here needs you' while the machine is dead. Did not touch the root cause itself (the shared usage window closing for 3 days, 2026-09-14 through this morning): that is Hidde's subscription window per CLAUDE.md's capacity doctrine, not a bug, and it appears to have reopened as of this session (currently running with normal turns). Commit 16282a0a.",
+      "at": "2026-09-16T14:32:04+00:00"
     }
   }
 }

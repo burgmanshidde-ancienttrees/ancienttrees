@@ -3,10 +3,10 @@
   "country": "Portugal",
   "status": "needs_curation",
   "intro": "Lisbon officially records almost every notable tree in the city. Since a 2012 law, the state can formally classify select specimens as trees of public interest, and Lisbon holds more of them than any other Portuguese municipality. Its oldest are four hollow olive trees outside a hilltop chapel in Alcântara, older than the Braganza dynasty. Its strangest is a rubber fig that escaped a cracked flowerpot in Mouraria and swallowed a street. Between them sit a bleeding dragon tree, a cypress mistaken for a cedar, and the Portuguese parliament's private tipu. All but one are free to visit.",
-  "meta_description": "Lisbon's oldest trees are classified by law. Meet the 457-year-old olives of Santo Amaro, a dragon tree nobody can age, and thirty-two more.",
-  "question_answer": "The oldest tree in Lisbon is one of four olive trees outside the Capela de Santo Amaro in Alcântara, estimated at around 457 years old, the only trees in the city with documented ages predating the 18th century. They stand in a small hilltop garden with a well known river view, an eleven minute walk from Alcântara-Terra train station.",
-  "question_meta": "The 457-year-old olive trees of Santo Amaro are Lisbon's oldest. Their exact location, how to reach them, and thirty-two more remarkable trees.",
-  "question_context": "Lisbon keeps its oldest trees close to its water. The four olive trees at the Capela de Santo Amaro have grown against the wall of a small circular hilltop chapel in Alcântara since sometime in the 1500s, making them roughly 457 years old by the city's own classification records, decades older than anything else on this list. The chapel itself, built in 1549, is a national monument, but the trees have outlasted several rounds of restoration to the building beside them. Their runner up in age is Lisbon's dragon tree in the Jardim Botânico da Ajuda, which was already a mature adult when transplanted into the city's first botanical garden in 1768, making it at least 258 years old. Between them, the two trees frame two very different kinds of longevity: quiet olives outside a functioning chapel, and a dramatic, half collapsed dragon tree behind paid admission and a steel prop. Getting to the olive trees is straightforward: Alcântara-Terra train station on the Cascais line, then an eleven minute walk uphill past the Miradouro de Santo Amaro, one of the better river views in the city and usually far quieter than the famous ones downtown.",
+  "meta_description": "Lisbon's oldest trees are classified by law. A nearly 2,850-year-old olive, a dragon tree nobody can age, and thirty-five more.",
+  "question_answer": "The oldest tree on this list is the Ancient Olive of Santa Iria de Azoia, in Loures municipality, about half an hour from central Lisbon by train and on foot. Researchers at the University of Trás-os-Montes e Alto Douro dated it in 2011 to roughly 2,850 years old from the size of its trunk, over ten metres round at the base. It once held the title of Portugal's oldest tree; two other olives dated by the same method have since been shown to be older, so this one keeps its place as one of the country's oldest confirmed and independently certified trees rather than the record holder. It stands beside the ruins of Pirescoxe Castle in a small dedicated square. This page names it plainly as a day trip rather than folding it quietly into the city: the oldest tree actually standing inside Lisbon itself is one of the four olives outside the Capela de Santo Amaro in Alcântara, at around 457 years.",
+  "question_meta": "The Ancient Olive of Santa Iria de Azoia, roughly 2,850 years old, is the oldest tree on this list. Where it stands, and thirty-five more.",
+  "question_context": "Lisbon's own classification records put the Santo Amaro olives, outside a hilltop chapel in Alcântara, at around 457 years, and until recently that was the oldest documented age on this list. It no longer is. The Ancient Olive of Santa Iria de Azoia, in neighbouring Loures municipality, was dated in 2011 by researchers at the University of Trás-os-Montes e Alto Douro using a dendrometric method built for trees whose rings have long since hollowed away, and it came out at roughly 2,850 years, a base ten metres round. Press called it Portugal's oldest tree at the time. That title has since passed to two other olives assessed by the same method, one in Abrantes near 3,350 years and one in Vidigueira over 3,700, so this one is no longer the record holder, only one of the country's oldest confirmed specimens. It stands beside the ruined Pirescoxe Castle, about half an hour from central Lisbon by train and on foot, which this page states plainly rather than quietly folding an out of town tree into the city list. The Santo Amaro olives remain the oldest tree actually standing inside Lisbon itself.",
   "faq": [
     {
       "q": "What is the oldest tree in Lisbon?",
@@ -1263,6 +1263,46 @@
       "location_precision": "confirmed",
       "paid_entry": false,
       "how_to_recognise": "You can recognise it by its bottle-shaped trunk studded with blunt thorns, 4.20 metres round. It stands on Rua dos Jeronimos, two minutes from the monastery, in Belem."
+    },
+    {
+      "id": "lis_036",
+      "name": "The Ancient Olive of Santa Iria de Azoia",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "roughly 2,850 years",
+      "age_min": 2500,
+      "age_max": 3000,
+      "girth_cm": 550,
+      "location": {
+        "address": "Rua 18 de Janeiro, Bairro da Covina, Pirescoxe, Santa Iria de Azoia, Loures",
+        "latitude": 38.8380364,
+        "longitude": -9.088205,
+        "neighbourhood": "Bairro da Covina, Pirescoxe (Santa Iria de Azoia, Loures)"
+      },
+      "verified_sources": [
+        "https://sol.iol.pt/2011/07/07/oliveira-com-quase-3-mil-anos-em-santa-iria-da-azoia/",
+        "https://www.rtp.pt/noticias/lusa/oliveira-com-2850-anos-comprovados-vive-em-santa-iria-da-azoia_n458629",
+        "https://www.euronews.com/2026/08/17/portugal-is-home-to-hundreds-of-ancient-olive-trees-one-may-be-over-3700-years-old"
+      ],
+      "access": "Free. Stands beside a public street (Rua 18 de Janeiro) in the Covina neighbourhood, next to the ruins of Pirescoxe Castle (now a municipal cultural gallery). A small dedicated monument square with information panels marks the spot.",
+      "transport": "Santa Iria train station (CP suburban line from Lisboa Oriente/Santa Apolonia), then about 10 minutes on foot. Roughly 30-35 minutes door to door from central Lisbon; this is a Loures municipality day-trip case, not an in-town tree, and the page must say so honestly.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "A road-widening scheme once looked at this olive and saw an obstacle. Rua 18 de Janeiro survived the argument, and so did the tree.\n\nIn 2011 researchers from the University of Trás-os-Montes e Alto Douro measured its trunk, a buttressed, hollow mass over ten metres round at the base, and used a dendrometric method built for exactly this kind of ancient, ring-less wood to put its age at roughly 2,850 years. At the time, press called it the oldest tree in Portugal. That title has since moved to two other olives dated by the same method, one in Abrantes at around 3,350 years and one in Vidigueira at over 3,700, so this one is no longer the record holder, only one of the country's oldest confirmed and independently certified trees.\n\nIt stands in the Covina neighbourhood of Loures, beside the ruins of Pirescoxe Castle, in what survives of an old olive grove that has otherwise given way to houses. A small square with information panels now marks the spot, the tree that nearly lost an argument with a road, and the reason the road bent instead.\n\nThis is a genuine day trip from Lisbon rather than an in-town stop, about half an hour by train and on foot from the centre.",
+      "how_to_recognise": "You can recognise it by the trunk, over ten metres round at the base, heavily buttressed and hollowed with age. It stands in a small dedicated square on Rua 18 de Janeiro, beside the ruins of Pirescoxe Castle.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October and November, during the olive harvest",
+        "kind": "fruit"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "hero_tree_id": "lis_017"

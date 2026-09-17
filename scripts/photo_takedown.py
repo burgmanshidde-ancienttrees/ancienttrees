@@ -70,22 +70,45 @@ def contributor_photos():
         with open(path, encoding="utf-8") as fh:
             city = json.load(fh)
         for tree in city.get("trees", []):
-            photo = tree.get("photo") or {}
-            if photo.get("source") != "contributor":
-                continue
-            # Already unlinked: the account went, the picture stayed, and there
-            # is nobody left to ask Supabase about. Asking again would spend a
-            # request a night forever on a question already answered.
-            if photo.get("unlinked"):
-                continue
-            out.append({
-                "path": path,
-                "city": city.get("city"),
-                "tree_id": tree.get("id"),
-                "tree_name": tree.get("name"),
-                "user_id": photo.get("contributor_user_id"),
-                "url": photo.get("url"),
-            })
+            # EVERY photograph on the tree, not only the lead (2026-09-12, when
+            # trees gained photos[]). A sweep that reads one field and a page
+            # that renders several is how the promise in /terms breaks without
+            # anything going red: the second picture a reader sent would keep
+            # their account id after they had asked us to forget them.
+            for slot, photo in photo_slots(tree):
+                if photo.get("source") != "contributor":
+                    continue
+                # Already unlinked: the account went, the picture stayed, and
+                # there is nobody left to ask Supabase about. Asking again would
+                # spend a request a night forever on a question already answered.
+                if photo.get("unlinked"):
+                    continue
+                out.append({
+                    "path": path,
+                    "city": city.get("city"),
+                    "tree_id": tree.get("id"),
+                    "tree_name": tree.get("name"),
+                    # None is the lead, an integer is that index of photos[].
+                    # The sweep has to name WHICH picture it is unlinking, or a
+                    # tree carrying two reader photographs from two accounts
+                    # would have the wrong one anonymised.
+                    "slot": slot,
+                    "user_id": photo.get("contributor_user_id"),
+                    "url": photo.get("url"),
+                })
+    return out
+
+
+def photo_slots(tree):
+    """(slot, photo) for every photograph on a tree, lead first.
+
+    Mirrors usablePhotos() in site/src/lib/images.ts, minus the display gate:
+    this sweep must reach a photograph whatever its status, because a `held`
+    picture still sits in the repository with somebody's account id on it.
+    """
+    out = [(None, tree.get("photo") or {})]
+    for i, extra in enumerate(tree.get("photos") or []):
+        out.append((i, extra or {}))
     return out
 
 
@@ -161,7 +184,9 @@ def take_down(item):
     for tree in city.get("trees", []):
         if tree.get("id") != item["tree_id"]:
             continue
-        photo = tree.get("photo") or {}
+        slot = item.get("slot")
+        photo = (tree.get("photo") or {}) if slot is None \
+            else ((tree.get("photos") or [])[slot] or {})
         photo.pop("contributor_user_id", None)
         photo["attribution"] = ANON_CREDIT
         photo["license"] = ("Provided by a reader through the Ancient Trees app, "
@@ -171,7 +196,10 @@ def take_down(item):
                          + " The account was deleted, so the photograph was unlinked "
                            "from it: the picture stays under the licence in /terms, "
                            "the person does not.")
-        tree["photo"] = photo
+        if slot is None:
+            tree["photo"] = photo
+        else:
+            tree.setdefault("photos", [])[slot] = photo
     with open(item["path"], "w", encoding="utf-8") as fh:
         json.dump(city, fh, indent=2, ensure_ascii=False)
         fh.write("\n")

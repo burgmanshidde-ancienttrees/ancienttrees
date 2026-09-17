@@ -3,8 +3,8 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Around 1388 Amersfoort built a second city wall, heaviest on the northeast side because that was the direction Gelre would come from. The wall is mostly gone and what is left of it is a park with old trees growing out of the rampart, including a catalpa that flowers hard enough to stop people. The oldest tree in the city is nowhere near it: an oak at a crossroads called the Hertekop, where a hunting lodge hung with antlers became a pub, then a meeting point, and then a motorway junction. The oak is what is left.",
-  "meta_description": "Fourteen remarkable trees in Amersfoort: a catalpa on a 14th-century rampart, an oak that outlasted a motorway, and a plane the city built a school around.",
-  "question_meta": "Amersfoort's oldest tree is the oak at the Hertekop crossroads, banded 1750 to 1800. Where it stands, and twelve more worth the walk.",
+  "meta_description": "Eighteen remarkable trees in Amersfoort: a catalpa on a 14th-century rampart, an oak that outlasted a motorway, and a plane the city built a school around.",
+  "question_meta": "Amersfoort's oldest tree is the oak at the Hertekop crossroads, banded 1750 to 1800. Where it stands, and seventeen more worth the walk.",
   "question_answer": "The oldest tree in Amersfoort is the oak at the Hertekop, on the Arnhemseweg where it crosses the Dodeweg beside the A28 slip road, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. The crossroads takes its name from a hunting chalet that once stood there with deer antlers fixed to it. That building became an inn, then a well known meeting place and a starting point for walks and outings, and then it disappeared, when a southern ring road was laid around the city and later joined to a new trunk road from Utrecht. The junction that resulted bears no resemblance to the place the tree was planted in. The oak is the only part of the Hertekop still standing.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the main source for these trees, which is why they are all flagged. One of them is a special case. The plane on the Schimmelpenninckkade grows inside the playground of the Sint Jorisschool, and an earlier version of this page left it out for that reason. It is here now because the register records it as both visitable and visible, and because you can see the whole crown from the public quay, which is where this page sends you: the yard is a working school and is not somewhere to walk into. Where the register describes a tree's condition we pass that on, as with the weeping lime in Park Schothorst, whose root flare is walked on constantly and which the register thinks is standing up to it. Pins marked approximate mean we know the place and not the trunk.",
   "hero_tree_id": "ame_008",
@@ -508,6 +508,142 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "ame_015",
+      "name": "The Bald Cypress at the Monnikendam",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "roughly 190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Zuidsingel 36, Amersfoort",
+        "latitude": 52.153951,
+        "longitude": 5.39205,
+        "neighbourhood": "Muurhuizen, old town"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://www.natuurinnederland.nl/pdf_bestanden/10-De%20steden-Amersfoort.pdf",
+        "https://hetgroenehuisamersfoort.nl/storage/uploads/de496d2/files/Bomenwandeling%20Langs%20de%20meest%20bijzondere%20bomen%20van%20de%20binnenstad%20van%20Amersfoort.pdf"
+      ],
+      "access": "Free to view from the Zuidsingel street and the Monnikendam bridge. The tree stands inside a private garden behind the gate (register owner_category: particulier, visitable: nee, visible: ja) and is not open to enter.",
+      "transport": "About 400 m east of Amersfoort station, beside the historic Monnikendam water gate on the Zuidsingel/Kortegracht.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The oldest tree in this garden is no longer in it. A copper beech planted in 1750, counted among the twenty oldest trees in the country by the Bomenstichting, stood behind the Monnikendam until it was felled. The cypress on the far side of the water is still there, and three separate sources agree on when it went in: 1830.\n\nThat agreement is worth noting, because it almost never happens. The national tree register, a Wageningen-linked city nature walk and the municipality's own tree-walk booklet all place a Taxodium distichum in this private garden and all give the same planting year, which puts the tree at roughly 190 years.\n\nIt is a conifer that behaves like a broadleaf. In its home range, the swamp forests of the American southeast, it stands in standing water and pushes woody knees up through the mud; here it turns rust red in November, drops every needle, and spends the winter looking dead before leafing out again in late spring.\n\nBehind it is the Monnikendam itself, the water gate of Amersfoort's second city wall, built around 1400 and now holding a restaurant. The garden is private and you cannot walk in. You look at the tree from the Zuidsingel or from the bridge, which is exactly how the nature walk describes it: on the left of the water, an old cypress.",
+      "how_to_recognise": "You can recognise it as the conifer that stands bare through the winter and leafs out late, rusty red in November. It is in the private garden on the far side of the water, seen from the Zuidsingel or the Monnikendam bridge.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the needles turn foxy red and then drop"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ame_016",
+      "name": "The King's Lime at the Stadsring",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 90 years",
+      "age_min": 86,
+      "age_max": 96,
+      "location": {
+        "address": "Corner of Stadsring and Molenstraat, Amersfoort",
+        "latitude": 52.155658,
+        "longitude": 5.384019,
+        "neighbourhood": "Stadsring, old town"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://hetgroenehuisamersfoort.nl/storage/uploads/de496d2/files/Bomenwandeling%20Langs%20de%20meest%20bijzondere%20bomen%20van%20de%20binnenstad%20van%20Amersfoort.pdf"
+      ],
+      "access": "Free. Stands on a raised stone plateau on a public street corner, no gate.",
+      "transport": "About 230 m northwest of Amersfoort station, at the corner of Stadsring and Molenstraat.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two official sources agree that this lime was planted for the House of Orange and disagree about which occasion. The national tree register lists it as the Juliana-Bernhard wedding tree, for the marriage of Princess Juliana and Prince Bernhard in January 1937. The municipality's own tree-walk booklet, describing the same tree on the same raised stone plateau on this corner, says it went in during 1938 for the birth of Princess Beatrix. Both years fall inside the register's 1930 to 1940 planting band, the two occasions are a year apart, and nothing we found settles which one this tree marks.\n\nThe confusion is almost the tree's own fault. It is a Koningslinde, a selection of common lime bred in the Netherlands specifically to be planted at royal occasions, the tree a town council orders when a wedding, a coronation or a birth needs marking in wood. Amersfoort had two of those within thirteen months and put a lime on a plateau at the corner of the Stadsring and Molenstraat.\n\nWhichever event it commemorates, it was in the ground before the occupation and it is still there. Beatrix was born, became queen, reigned for thirty-three years and abdicated in 2013, and the lime has kept its plateau on one of the busiest corners in town throughout.",
+      "how_to_recognise": "You can recognise it by where it stands: alone on a raised stone plateau right on the corner of the Stadsring and Molenstraat, a single lime set above the pavement rather than planted in it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ame_017",
+      "name": "The Last Lime of the Westsingel",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Westsingel 50, by the entrance to Museum Flehite, Amersfoort",
+        "latitude": 52.157875,
+        "longitude": 5.386266,
+        "neighbourhood": "Westsingel / Zocherplantsoen, old town"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://hetgroenehuisamersfoort.nl/storage/uploads/de496d2/files/Bomenwandeling%20Langs%20de%20meest%20bijzondere%20bomen%20van%20de%20binnenstad%20van%20Amersfoort.pdf"
+      ],
+      "access": "Free. Public street/park ground beside the bridge to Museum Flehite, open at any time.",
+      "transport": "About 420 m north of Amersfoort station, on the Westsingel next to the bridge to Museum Flehite.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This lime is hollow, rotted through the middle, and the last one standing of its row. It still comes into full leaf every spring.\n\nThe register entry originally covered a whole line of common limes along the Westsingel, planted somewhere between 1750 and 1800. One is left. The municipality's own tree-walk booklet puts a Hollandse linde at this exact spot by the bridge to Museum Flehite and dates it to 1800, the young end of the register's band, so the honest figure is somewhere between 225 and 275 years rather than a single year anyone can point to. Young limes have since been replanted alongside it, which makes the comparison easy: they are the same species and a fraction of the girth.\n\nThe hollowness is not the emergency it sounds like. A lime lives in its outer wood, and the heart can rot away entirely while the tree goes on putting out leaves; pollarding, which is the form the register records for this one, tends to extend that career rather than shorten it.\n\nIt stands in front of a museum whose collection includes a painted view of Amersfoort from 1671, made about a century before anybody pushed this lime into the ground. This tree is the last of the avenue that once lined the singel, and it is doing the job of all of them.",
+      "how_to_recognise": "You can recognise it by the trunk, hollow and pollarded and far thicker than the young limes replanted beside it. It stands right at the bridge to Museum Flehite on the Westsingel.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the hollow pollarded trunk is the whole story"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ame_018",
+      "name": "The Lime of the Havik",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Havik, next to the Bolle brug, Amersfoort",
+        "latitude": 52.157546,
+        "longitude": 5.3876,
+        "neighbourhood": "Havik / Zocherplantsoen, old town"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://www.natuurinnederland.nl/pdf_bestanden/10-De%20steden-Amersfoort.pdf"
+      ],
+      "access": "Free. Public canal-side street in the old town, no gate.",
+      "transport": "About 400 m north of Amersfoort station, on the Havik beside the Bolle brug.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Every other old lime along this quay was cut back hard and made to grow again. This one was left alone, and it is the tree that still gives the Havik its shape. The national register's own history for the Havik-linde says the two rows that once lined both sides of the water were all rejuvenated at some point, except this one, and that it is in good health.\n\nThe water it stands on was a working harbour. Havik comes from Havenwijk, the harbour quarter, and this short canal was where medieval Amersfoort loaded and unloaded before the trade moved on and the quay became a street of houses with a bridge in the middle of it.\n\nThe age is where the sources part company. The Bomenstichting register puts the planting between 1880 and 1890, which is the figure we carry, and places the tree beside the Bolle brug. An older city nature walk describes the surviving Havik lime as planted in 1850 and standing opposite Krommestraat 1, a few doors along the same row. Thirty or forty years apart, and possibly not even the same tree: the two accounts may describe one lime dated twice, or two survivors of the same planting. We give the register's coordinate and its band, and flag the rest rather than pick the neater story.",
+      "how_to_recognise": "You can recognise it as the one full-grown lime on the quay: the others along the Havik were cut back and regrown, so they read as visibly younger. It stands on the canal side of the street beside the Bolle brug.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

@@ -1,0 +1,71 @@
+{
+  "city": "Portalegre",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Portalegre's Jardim do Rossio holds a single plane tree that has outgrown the ground it stands on. Planted in 1838 by the town's own physician and botanist, its canopy has spread so wide that twenty steel props now hold up branches the trunk can no longer carry alone. Portugal's first tree ever classified a Monument of Public Interest, in 1938, it went on to win the national Tree of the Year contest in 2020 and place fourth in the European final the following spring.",
+  "meta_description": "The Plane Tree of Rossio in Portalegre: planted in 1838, propped on 20 posts, Portugal's first tree ever classified a Monument of Public Interest.",
+  "question_meta": "Portalegre's only mapped tree is the Plane Tree of Rossio, planted in 1838 and Portugal's first tree ever classified a Monument of Public Interest.",
+  "question_answer": "Portalegre's only mapped tree is the Plane Tree of Rossio, standing in the Jardim do Rossio since it was planted in 1838 by the physician and botanist José Maria Grande. Its trunk now measures roughly 7 metres round and its canopy spans about 37 metres, spread so wide that the town has propped the lowest branches on twenty steel posts. It became Portugal's first tree ever classified a Monument of Public Interest in 1938, and won the national Árvore Portuguesa do Ano contest for 2021.",
+  "question_context": "Sources agree closely on the tree's history and disagree on its exact current size. Portuguese Wikipedia gives a trunk perimeter of 5.26 metres and a 27 metre canopy, citing older records; the Portalegre municipal council's own page and several 2020-2021 national press reports covering the tree's Tree of the Year win (Público, LusoJornal, Gazeta Rural) independently converge on 7 metres and 37 metres. This page uses the more recent, more widely corroborated figures, and notes the discrepancy rather than picking silently: a growing tree measured decades apart should show different numbers, and a documented 1894 survey (3 metres round, 24 metres across) confirms the pattern of continuous growth, not a single settled size. Even the classification year moves by one across sources, 1938 against 1939, and this page uses the earlier of the two rather than resolve it by guessing. No age is disputed: planting in 1838 by the physician and botanist José Maria Grande is consistent across every source, including the municipality's own visitor page and the national press coverage of its 2021 award.",
+  "hero_tree_id": "pta_001",
+  "oldest_tree_id": "pta_001",
+  "faq": [
+    {
+      "q": "How old is the Plane Tree of Rossio?",
+      "a": "It was planted in 1838 by José Maria Grande, a physician and botanist from Portalegre, which puts it at roughly 188 years old. The planting date is consistent across every source, including the municipality's own records."
+    },
+    {
+      "q": "Why does it need props?",
+      "a": "Its canopy has spread so wide, roughly 37 metres across by recent measurement, that its lowest branches can no longer support their own weight over that distance. The town has installed twenty steel posts to carry them, giving the tree the look of a low, spreading pergola rather than a conventional crown."
+    },
+    {
+      "q": "Is it really Portugal's oldest protected tree?",
+      "a": "It is Portugal's oldest tree by classification date: declared a Monument of Public Interest in 1938, before the country had any general law protecting individual trees. Other Portuguese trees are older in age, but this was the first one ever given that specific legal status."
+    },
+    {
+      "q": "Can I walk up to it?",
+      "a": "Yes. It stands in the Jardim do Rossio, a public garden in the centre of Portalegre, free to visit at any time."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Portalegre is a district capital in the Alto Alentejo region of Portugal. The tree stands in the Jardim do Rossio in the town centre, an easy walk from anywhere in the historic core."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pta_001",
+      "name": "The Plane Tree of Rossio",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "~188 years, planted 1838",
+      "age_min": 185,
+      "age_max": 190,
+      "girth_cm": 700,
+      "location": {
+        "address": "Jardim do Rossio, Portalegre",
+        "latitude": 39.2956539,
+        "longitude": -7.4303453,
+        "neighbourhood": "Sé e São Lourenço, town centre"
+      },
+      "story": "A single tree from 1838 now needs twenty steel props just to hold itself together. Portalegre's own physician and botanist, José Maria Grande, planted this plane in what is now the Jardim do Rossio, and its lowest branches have since spread so far sideways that the town installed a ring of posts to carry weight the trunk alone can no longer manage, turning the canopy into something closer to a pergola than an ordinary crown.\n\nThe growth is documented rather than guessed at. An 1894 survey measured the trunk at 3 metres round and the canopy at 24 metres across; more recent measurements put the same tree at roughly 7 metres round and a canopy spanning about 37 metres, among the widest of any plane tree recorded on the Iberian Peninsula. In 1938 it became the first tree in Portugal ever classified a Monument of Public Interest, decades before the country had any general law protecting old trees at all.\n\nIt has kept collecting titles since. Portalegre's plane won the national Árvore Portuguesa do Ano contest for the year 2021, then placed fourth in the European Tree of the Year the following spring. It still shades the same square Grande planted it in, free to sit under any day of the year.",
+      "verified_sources": [
+        "https://pt.wikipedia.org/wiki/Pl%C3%A1tano_do_Rossio",
+        "https://www.cm-portalegre.pt/visitantes/turismo/patrimonio-natural/platano-do-rossio/"
+      ],
+      "verify_notes": "Sources disagree on current size: Portuguese Wikipedia gives 5.26m trunk perimeter and 27m canopy (citing older records); the Portalegre municipal council's own page and multiple 2020-2021 national press pieces on its Tree of the Year win (Publico, LusoJornal, Gazeta Rural) converge on 7m and 37m, used here as the primary figures. Classification year also varies by a year across sources (1938 per Wikipedia, 1939 per the municipality); used 1938. Planting date (1838) and planter (Jose Maria Grande) are consistent everywhere.",
+      "access": "Free, standing in the Jardim do Rossio, a public garden in the centre of Portalegre.",
+      "transport": "Town centre, Portalegre, Alto Alentejo; an easy walk from anywhere in the historic core.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/2021_Plane_tree_of_Rossio_PT.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "João Martins, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3264,
+        "height": 4896
+      },
+      "photos": [],
+      "how_to_recognise": "The single huge plane tree in the Jardim do Rossio, its low, spreading branches held up on twenty visible steel props, forming a canopy that reads more like a pergola than a normal crown.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

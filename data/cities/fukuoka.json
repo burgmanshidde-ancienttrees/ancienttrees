@@ -69,8 +69,8 @@
       "age_max": 1050,
       "location": {
         "address": "Kushida Shrine, 1-41 Kamikawabata-machi, Hakata-ku, Fukuoka 812-0026",
-        "latitude": 33.592972,
-        "longitude": 130.410472,
+        "latitude": 33.592849,
+        "longitude": 130.411173,
         "neighbourhood": "Kawabata, Hakata-ku"
       },
       "story": "A 1913 stone monument at the foot of this ginkgo already declared it over a thousand years old, and the monument itself is now old enough to be doubted along with the tree. A later measurement of its trunk put the real figure closer to 600 years, which barely dents the point: this is Hakata's most sung-about tree, its own line in the centuries-old Hakata Iwai Uta, the toast still performed at weddings and shop openings across the district. It stands beside the starting point of the Gion Yamakasa festival, so its crown has watched every decorated float lurch past below it every July for generations. Age has not been gentle underneath the show: the lower trunk is hollow and decayed, several major limbs have been cut back hard, and metal rings and props now hold up what canopy remains. None of that stops it turning, every November, into a single dense cone of butter-gold leaves that the whole neighbourhood times its photographs around. A female tree, it drops fruit by the bagful onto the shrine's stone paving each autumn, pollinated by male ginkgoes it cannot see from streets away.",
@@ -89,7 +89,8 @@
         "height": 2304
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
+      "verify_notes": "Pin corrected 2026-09-16: a reader submission (correction, standing at the tree) moved the map pin 66m from the published position (33.592972,130.410472 to 33.592849,130.411173), and an independent photograph of this same tree taken 2 days earlier carries its own phone GPS at 33.593151,130.411125, 34m from the correction and both roughly 65m from the old pin in the same direction, i.e. two independent fixes agreeing the old pin was off by about that much. Old pin was marked approximate; per the standing rule (a reader's GPS beats an approximate pin of ours) took the explicit correction's coordinate and upgraded to confirmed. The corroborating photograph was viewed: a hollow, propped and roped ginkgo trunk matching this tree's recognise line exactly.",
       "best_time": {
         "months": [
           11

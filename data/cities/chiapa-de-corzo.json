@@ -1,0 +1,70 @@
+{
+  "city": "Chiapa de Corzo",
+  "country": "Mexico",
+  "status": "needs_curation",
+  "intro": "Chiapa de Corzo, on the Grijalva river a short drive from Tuxtla Gutiérrez, was built around a single tree. La Pochota, a giant ceiba in the main plaza, was already standing when the town was founded beside it in 1528, and its trunk still carries a scar from a 1945 fire that a scorched limb outgrew. Chiapas declared it the state's first Historic and Notable Tree in 1993, a status it shares nationally with only two others: the Árbol del Tule in Oaxaca and Mexico City's Árbol de la Noche Triste.",
+  "meta_description": "La Pochota in Chiapa de Corzo: the ceiba the town was founded around in 1528, one of only three trees declared a national historic monument in Mexico.",
+  "question_meta": "Chiapa de Corzo's only mapped tree is La Pochota, the ceiba the town was built around in 1528, protected since 1993.",
+  "question_answer": "Chiapa de Corzo's only mapped tree is La Pochota, a huge ceiba standing in the Parque Ángel Albino Corzo, the town's main plaza. Spanish colonists founded the town beside it in 1528, and state sources now describe the tree as more than 500 years old, with older local tradition calling it a thousand-year tree. In 1945 a neighbour irritated by its seasonal cotton-like seed fluff set part of it on fire, destroying roughly a third of the crown; one scorched limb kept growing and is still there. Chiapas declared it the state's first Historic and Notable Tree in 1993.",
+  "question_context": "No botanical survey has cored or dated La Pochota, so every age claim here rests on documentary history rather than growth rings. Spanish-language Wikipedia and a 2026 Sol del Soconusco anniversary piece on the 1993 declaration both put the documented history at over 500 years, anchored to the town's 1528 founding beside the tree; older oral tradition rounds that up to a thousand years, which this page repeats as tradition rather than as a measured fact. Mexico's own heritage institute, INAH, separately confirms that the ceiba's position was used as a reference point when Chiapa de Corzo's original street grid was laid out. Height is a case of a claim outrunning the evidence: several Mexican outlets describe La Pochota as over sixty metres tall, a figure no survey supports and one the tree's own silhouette against the two-storey arcades beside it does not bear out, so no height is given here. Girth has not been published by any source seen and is left blank rather than estimated from a photograph.",
+  "hero_tree_id": "cdc_001",
+  "oldest_tree_id": "cdc_001",
+  "faq": [
+    {
+      "q": "How old is La Pochota?",
+      "a": "At least 500 years by the town's own history: Chiapa de Corzo was founded beside it in 1528, and the tree was already large enough to serve as a landmark. State sources describe it as \"more than 500 years old\" and older local tradition calls it a thousand-year tree, but nobody has cored it, so treat both as estimates rather than a measured age."
+    },
+    {
+      "q": "Why was the town built around this tree?",
+      "a": "Tradition holds that when Diego de Mazariegos founded Chiapa de Corzo on the bank of the Grijalva river in 1528, a large ceiba already stood on the site that became the main plaza, and Mexico's heritage institute (INAH) records that its position was used as a reference point for laying out the town's original street grid."
+    },
+    {
+      "q": "What happened to it in 1945?",
+      "a": "A neighbour, frustrated by the cotton-like seed fluff the tree sheds each dry season, deliberately set part of it on fire. The blaze destroyed roughly a third of the crown before it was put out. One scorched limb survived and kept growing, and is still part of the tree today."
+    },
+    {
+      "q": "Can I walk up to it?",
+      "a": "Yes. It stands in the open in the Parque Ángel Albino Corzo, the plaza de armas at the centre of Chiapa de Corzo, free to visit at any time."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Chiapa de Corzo sits on the Grijalva river about 15 minutes by road from Tuxtla Gutiérrez, reachable by taxi or by the frequent local combis that run between the two towns. The tree stands in the town's main square, on foot from anywhere in the historic centre."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cdc_001",
+      "name": "La Pochota",
+      "species": "Kapok (Ceiba pentandra)",
+      "age_estimate": "more than 500 years, per the state's own declaration; local tradition calls it a thousand-year tree",
+      "age_min": 500,
+      "age_max": 600,
+      "location": {
+        "address": "Parque Ángel Albino Corzo (plaza de armas), Chiapa de Corzo, Chiapas",
+        "latitude": 16.70833,
+        "longitude": -93.01667,
+        "neighbourhood": "Historic centre, Chiapa de Corzo"
+      },
+      "story": "Chiapa de Corzo's town square was built around this tree, not the other way round. When Diego de Mazariegos founded the settlement on the bank of the Grijalva river in 1528, a ceiba already stood where the plaza now sits, and Mexico's national heritage institute records that its position was used as a fixed point when the town's original street grid was laid out.\n\nThe tree has outlasted more than the founding. In 1945 a neighbour, irritated by the cotton-like fluff it sheds every dry season, set part of it alight; the fire destroyed roughly a third of the crown before townspeople put it out, and one scorched limb kept growing regardless, still part of the canopy today. Chiapas declared it the state's first Historic and Notable Tree in 1993, a status now shared nationally with only two others, the Árbol del Tule in Oaxaca and Mexico City's Árbol de la Noche Triste.\n\nNobody has cored La Pochota to date it. The state's own anniversary notices put its documented history at over 500 years, tied to the 1528 founding; older local tradition rounds that up to a thousand. Some Mexican press describes it as over sixty metres tall, a figure no survey backs and one the tree's own silhouette against the plaza's two-storey arcades does not support.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/La_Pochota",
+        "https://www.elsoldelsoconusco.com/2026/07/08/celebran-33-anos-de-la-declaratoria-historica-de-la-pochota/",
+        "https://lugares.inah.gob.mx/en/node/4834"
+      ],
+      "access": "Free, standing in the open in the Parque Ángel Albino Corzo, the town's main plaza.",
+      "transport": "In the historic centre of Chiapa de Corzo, on foot; about 15 minutes by road or combi from Tuxtla Gutiérrez.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Chiapa_de_Corzo_-_1000j%C3%A4hriger_Ceiba-Baum_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Wolfgang Sauber, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2560,
+        "height": 1920
+      },
+      "photos": [],
+      "how_to_recognise": "The single huge ceiba filling the main plaza, its canopy shading most of the square in front of the arcaded municipal buildings; nothing else in Chiapa de Corzo's centre comes close to its size.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
