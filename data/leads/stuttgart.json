@@ -1,99 +1,105 @@
 {
-  "leads": [
-    {
-      "candidate": "Speierling im Kräherwald bei Kräherwaldstr. 190 a",
-      "coordinates": [
-        48.79003,
-        9.14863
-      ],
-      "reason": "Official Naturdenkmal (register no. 81110000505, ordinance entry 5/5, Stadtbezirk West, Flurstuck 9546/1), designated 24-06-2003 for rarity (Seltenheit) and landscape character. Re-checked 2026-09-03: still only one source (the register/LUBW steckbrief, restated verbatim by the city ordinance PDF and by de.wikipedia's 'Liste der Naturdenkmale in Stuttgart', which is not independent since it is sourced from the same register). Searched baumkunde.de, komoot highlights (2836920, 2596561, 2661655, all unrelated: a dead Speierling in Bavaria and two generic Kräherwald-forest highlights with no tree content), and Stuttgart forestry-office pages; nothing further found. Two search attempts made per BRIEF_RESEARCH.md's stall rule; stopping here. Still needs a second, independent descriptive source before it can ship."
-    },
-    {
-      "candidate": "Speierling im Kräherwald (plain, without street address)",
-      "coordinates": null,
-      "reason": "A second, separately numbered Naturdenkmal (register no. 81110000208, ordinance entry 2/8, Stadtbezirk Nord, Flurstuck 9546/14, a different Flurstuck and a different Stadtbezirk than the Kräherwaldstr. 190a tree). The Wikipedia/Wikitext infobox gives it the IDENTICAL coordinates to the Kräherwaldstr. 190a tree (48.79003, 9.14863), which cannot be right for two objects in different city districts; this looks like a copy-paste error in the Wikipedia source rather than a real duplicate location. Re-checked 2026-09-03, same wikitext fetch, coordinates still identical to the other Speierling and no independent coordinate found. Needs its own coordinate (e.g. the LUBW map viewer or an on-the-ground source) before it can be verified or folded with the other Speierling."
-    },
-    {
-      "candidate": "Baumgruppe vor Schloss Solitude, the two Bergahorn (sycamore maples)",
-      "coordinates": [
-        48.78743,
-        9.08391
-      ],
-      "reason": "Same official Naturdenkmal group as stu_006 (the ash). Re-checked 2026-09-03: searched baumkunde.de and general web for a Bergahorn/Solitude description; nothing found beyond the register's ash entry. The two accompanying sycamore maples are still not individually measured or described by any source. The ash alone remains well enough documented (baumkunde.de) to ship on its own. If a source is later found describing the maples specifically, they belong to stu_006's entry rather than a new one."
-    }
-  ],
-  "blocked": [
-    {
-      "candidate": "Bruchweide im Dronfieldpark (Wikidata Q108806255)",
-      "coordinates": [
-        48.70606,
-        9.00692
-      ],
-      "reason": "Not in Stuttgart. Dronfieldpark is in Sindelfingen (Böblingen district), a separate town roughly 15 km from Stuttgart's centre, picked up by the brief's 15 km Wikidata radius sweep rather than being inside city limits. Publishing it under Stuttgart would misstate its location; it is a candidate for a future Sindelfingen page instead, not this one."
-    },
-    {
-      "candidate": "Dicke Eiche im Mietholz (Wikidata Q58020248)",
-      "coordinates": [
-        48.73628,
-        9.04887
-      ],
-      "reason": "Location uncertain: the Mietholz is a strictly protected Bannwald forest reserve described as separated from the Sindelfingen forest by the A8/A81 motorway and as the forest reserve closest to Stuttgart, which suggests it may sit outside Stuttgart's own municipal boundary (unconfirmed either way this pass). Access is also a concern independent of the boundary question: sources describe the oak as 'deep within the forest, hidden off marked trails', and a Bannwald (strict forest nature reserve) commonly restricts visitors to marked paths, which would put the tree itself off-limits even if the general area is open. Needs a boundary check and an access answer (does a permissive path reach it, per the OSM-access technique in BRIEF_RESEARCH.md) before it can be verified either way."
-    },
-    {
-      "candidate": "Eiche am Schafweideweg (Wikidata Q108744770)",
-      "coordinates": [
-        48.71838,
-        8.99515
-      ],
-      "reason": "Checked 2026-09-03: Wikidata's own location data places this oak in Sindelfingen (Böblingen district), a separate town roughly 15 km from Stuttgart's centre, the same as the already-blocked Dronfieldpark willow. Not in Stuttgart; a candidate for a future Sindelfingen page, not this one."
-    },
-    {
-      "candidate": "Linde am Steinbaß (Wikidata Q1430583)",
-      "coordinates": [
-        48.6616,
-        9.0683
-      ],
-      "reason": "Checked 2026-09-03: Wikidata's own location data places this lime in Schönaich (Böblingen district), a separate municipality roughly 15 km south of Stuttgart's centre, protected under its own LUBW entry (81150440002). Not in Stuttgart; a candidate for a future Schönaich page, not this one."
-    },
-    {
-      "id": "stu_003",
-      "name": "The Max-Eyth-See Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "location": {
-        "address": "Max-Eyth-See lakeside park, Mühlhausen/Hofen, Stuttgart",
-        "latitude": 48.83698,
-        "longitude": 9.21885,
-        "neighbourhood": "Mühlhausen/Hofen"
-      },
-      "story": "Stuttgart's protection ordinance obliges the city to have this oak examined once a year for its health and safety. That is a level of attention most trees never get, and it comes with the natural monument status the pedunculate oak was given in June 2003, for its character and for its value as habitat.\n\nIt stands on the shore of the Max-Eyth-See, which is not a natural lake at all. The water sits in a gravel quarry that was worked out and then flooded in 1935, put under landscape protection in 1961, and has been Stuttgart's biggest outdoor escape ever since. On a warm weekend up to 15,000 people come out here, and the paths run the whole way round the water.\n\nSo this oak has spent its recent decades as a piece of public furniture, which is a harder life than a forest. It has watched a working pit turn into a lake, then into a protected landscape, then into a place where a good part of the city spends its Sundays.\n\nWhat no source will tell us is how old it is. Nobody has recorded an age or a girth, so we do not know whether it stood here before the quarry filled with water or arrived with the park. A photograph taken in May 2022 puts it firmly alive and standing. If you know its age, tell us.",
-      "verified_sources": [
-        "https://www.stuttgart.de/medien/ibs/3-8.pdf",
-        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_am_Max-Eyth-See_Stuttgart.jpg"
-      ],
-      "access": "In the public lakeside park around the Max-Eyth-See, a free and heavily used recreation area with paths all around the lake; open at all times, no ticket.",
-      "transport": "Stadtbahn U14 to the Max-Eyth-See stop, a few minutes' walk",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-        "kind": "fruit"
-      },
-      "removed": "2026-09-10",
-      "removed_reason": "Dead. Its own Commons photograph, dated 21 May 2022 and taken 27 m from our pin, shows every limb sawn off with fresh cut faces and not one leaf on the trunk while everything around it stands in full spring green. Stuttgart's ordinance protected it partly 'for its value as habitat', which is why a dead oak is left standing there. Removed under the rule that a dead tree is never a collectible entry. If the city ever plants a successor at the Max-Eyth-See, this is where the research is."
-    }
-  ]
+ "leads": [
+  {
+   "candidate": "Speierling im Kräherwald bei Kräherwaldstr. 190 a",
+   "coordinates": [
+    48.79003,
+    9.14863
+   ],
+   "reason": "Official Naturdenkmal (register no. 81110000505, ordinance entry 5/5, Stadtbezirk West, Flurstuck 9546/1), designated 24-06-2003 for rarity (Seltenheit) and landscape character. Re-checked 2026-09-03: still only one source (the register/LUBW steckbrief, restated verbatim by the city ordinance PDF and by de.wikipedia's 'Liste der Naturdenkmale in Stuttgart', which is not independent since it is sourced from the same register). Searched baumkunde.de, komoot highlights (2836920, 2596561, 2661655, all unrelated: a dead Speierling in Bavaria and two generic Kräherwald-forest highlights with no tree content), and Stuttgart forestry-office pages; nothing further found. Two search attempts made per BRIEF_RESEARCH.md's stall rule; stopping here. Still needs a second, independent descriptive source before it can ship.",
+   "lat": 48.79003,
+   "lng": 9.14863,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
+  },
+  {
+   "candidate": "Speierling im Kräherwald (plain, without street address)",
+   "coordinates": null,
+   "reason": "A second, separately numbered Naturdenkmal (register no. 81110000208, ordinance entry 2/8, Stadtbezirk Nord, Flurstuck 9546/14, a different Flurstuck and a different Stadtbezirk than the Kräherwaldstr. 190a tree). The Wikipedia/Wikitext infobox gives it the IDENTICAL coordinates to the Kräherwaldstr. 190a tree (48.79003, 9.14863), which cannot be right for two objects in different city districts; this looks like a copy-paste error in the Wikipedia source rather than a real duplicate location. Re-checked 2026-09-03, same wikitext fetch, coordinates still identical to the other Speierling and no independent coordinate found. Needs its own coordinate (e.g. the LUBW map viewer or an on-the-ground source) before it can be verified or folded with the other Speierling."
+  },
+  {
+   "candidate": "Baumgruppe vor Schloss Solitude, the two Bergahorn (sycamore maples)",
+   "coordinates": [
+    48.78743,
+    9.08391
+   ],
+   "reason": "Same official Naturdenkmal group as stu_006 (the ash). Re-checked 2026-09-03: searched baumkunde.de and general web for a Bergahorn/Solitude description; nothing found beyond the register's ash entry. The two accompanying sycamore maples are still not individually measured or described by any source. The ash alone remains well enough documented (baumkunde.de) to ship on its own. If a source is later found describing the maples specifically, they belong to stu_006's entry rather than a new one.",
+   "lat": 48.78743,
+   "lng": 9.08391,
+   "position_basis": "recovered from the lead's own `coordinates` field (field)"
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Bruchweide im Dronfieldpark (Wikidata Q108806255)",
+   "coordinates": [
+    48.70606,
+    9.00692
+   ],
+   "reason": "Not in Stuttgart. Dronfieldpark is in Sindelfingen (Böblingen district), a separate town roughly 15 km from Stuttgart's centre, picked up by the brief's 15 km Wikidata radius sweep rather than being inside city limits. Publishing it under Stuttgart would misstate its location; it is a candidate for a future Sindelfingen page instead, not this one."
+  },
+  {
+   "candidate": "Dicke Eiche im Mietholz (Wikidata Q58020248)",
+   "coordinates": [
+    48.73628,
+    9.04887
+   ],
+   "reason": "Location uncertain: the Mietholz is a strictly protected Bannwald forest reserve described as separated from the Sindelfingen forest by the A8/A81 motorway and as the forest reserve closest to Stuttgart, which suggests it may sit outside Stuttgart's own municipal boundary (unconfirmed either way this pass). Access is also a concern independent of the boundary question: sources describe the oak as 'deep within the forest, hidden off marked trails', and a Bannwald (strict forest nature reserve) commonly restricts visitors to marked paths, which would put the tree itself off-limits even if the general area is open. Needs a boundary check and an access answer (does a permissive path reach it, per the OSM-access technique in BRIEF_RESEARCH.md) before it can be verified either way."
+  },
+  {
+   "candidate": "Eiche am Schafweideweg (Wikidata Q108744770)",
+   "coordinates": [
+    48.71838,
+    8.99515
+   ],
+   "reason": "Checked 2026-09-03: Wikidata's own location data places this oak in Sindelfingen (Böblingen district), a separate town roughly 15 km from Stuttgart's centre, the same as the already-blocked Dronfieldpark willow. Not in Stuttgart; a candidate for a future Sindelfingen page, not this one."
+  },
+  {
+   "candidate": "Linde am Steinbaß (Wikidata Q1430583)",
+   "coordinates": [
+    48.6616,
+    9.0683
+   ],
+   "reason": "Checked 2026-09-03: Wikidata's own location data places this lime in Schönaich (Böblingen district), a separate municipality roughly 15 km south of Stuttgart's centre, protected under its own LUBW entry (81150440002). Not in Stuttgart; a candidate for a future Schönaich page, not this one."
+  },
+  {
+   "id": "stu_003",
+   "name": "The Max-Eyth-See Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Max-Eyth-See lakeside park, Mühlhausen/Hofen, Stuttgart",
+    "latitude": 48.83698,
+    "longitude": 9.21885,
+    "neighbourhood": "Mühlhausen/Hofen"
+   },
+   "story": "Stuttgart's protection ordinance obliges the city to have this oak examined once a year for its health and safety. That is a level of attention most trees never get, and it comes with the natural monument status the pedunculate oak was given in June 2003, for its character and for its value as habitat.\n\nIt stands on the shore of the Max-Eyth-See, which is not a natural lake at all. The water sits in a gravel quarry that was worked out and then flooded in 1935, put under landscape protection in 1961, and has been Stuttgart's biggest outdoor escape ever since. On a warm weekend up to 15,000 people come out here, and the paths run the whole way round the water.\n\nSo this oak has spent its recent decades as a piece of public furniture, which is a harder life than a forest. It has watched a working pit turn into a lake, then into a protected landscape, then into a place where a good part of the city spends its Sundays.\n\nWhat no source will tell us is how old it is. Nobody has recorded an age or a girth, so we do not know whether it stood here before the quarry filled with water or arrived with the park. A photograph taken in May 2022 puts it firmly alive and standing. If you know its age, tell us.",
+   "verified_sources": [
+    "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+    "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_am_Max-Eyth-See_Stuttgart.jpg"
+   ],
+   "access": "In the public lakeside park around the Max-Eyth-See, a free and heavily used recreation area with paths all around the lake; open at all times, no ticket.",
+   "transport": "Stadtbahn U14 to the Max-Eyth-See stop, a few minutes' walk",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+    "kind": "fruit"
+   },
+   "removed": "2026-09-10",
+   "removed_reason": "Dead. Its own Commons photograph, dated 21 May 2022 and taken 27 m from our pin, shows every limb sawn off with fresh cut faces and not one leaf on the trunk while everything around it stands in full spring green. Stuttgart's ordinance protected it partly 'for its value as habitat', which is why a dead oak is left standing there. Removed under the rule that a dead tree is never a collectible entry. If the city ever plants a successor at the Max-Eyth-See, this is where the research is."
+  }
+ ]
 }
