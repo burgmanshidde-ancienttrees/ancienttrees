@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hlm_020",
+    "name": "The Copper Beech of the Sint Lucia Churchyard",
+    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+    "age_estimate": "about 140 years, planted 1880-1890",
+    "age_min": 136,
+    "age_max": 146,
+    "girth_cm": null,
+    "location": {
+      "address": "Hoofdstraat 157/159, Helmond",
+      "latitude": 51.466816,
+      "longitude": 5.632981,
+      "neighbourhood": "Mierlo-Hout"
+    },
+    "verified_sources": [
+      "data/registers/netherlands-lrmb.json (LRMB record nr 1679427, Bruine beuk, Hoofdstraat 157/159, kerkhof Sint Luciakerk, planted_band 1880-1890, n_trees 2, owner_category religieuze instantie, setting begraafplaats, visitable ja, visible ja)",
+      "https://canonvanmierlo.nl/tijdlijn/twee-luciakerken and https://www.parochienicasius.nl/index.php/30-mierlo/16-geschiedenis-lucia (Mierlo-Hout became an independent Catholic parish 1 September 1884; the church complex including the churchyard/kerkhof was built in stages from 1856 to circa 1925; rijksmonumenten.nl dates the current Sint-Luciakerk building itself to 1896), corroborating the founding era of this churchyard but not naming the tree specifically"
+    ],
+    "access": "Free. Public Roman Catholic parish churchyard (kerkhof) beside the Sint Lucia church, open daily from sunrise to sunset (damiaanhelmond.nl).",
+    "transport": "Helmond 't Hout railway station is directly across the road, about 200 metres / 3 minutes' walk.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register describes a registered PAIR (n_trees: 2) of copper beeches at this exact point rather than one; per the register-twins rule this is written up as one entry describing the pair, seen together at the churchyard entrance/grounds, rather than as two near-identical points. Form 'Natuurlijke vorm' (natural, unpruned form). No girth or height on file anywhere found; girth_cm left null rather than guessed. Second source is site-history rather than tree-specific: two independent parish-history pages (Canon van Mierlo; Parochie Nicasius) confirm Mierlo-Hout split off as its own parish on 1 September 1884 and that the church/rectory/churchyard complex went up in stages from 1856 into the 1920s, which lines up with the register's own 1880-1890 planting band for a beech planted on the new parish's grounds, but neither source names this beech individually. Flagged for that reason, not for any doubt about the tree's existence: the register gives tree-level coordinates and the churchyard itself is independently and repeatedly confirmed as a real, standing, public site (a still-active Catholic cemetery with online grave records). Public access confirmed openly (sunrise to sunset, damiaanhelmond.nl); this is a churchyard, not a private garden, so it passes hard rule 10 cleanly, unlike most of the other candidates checked in this city."
+  }
+]
