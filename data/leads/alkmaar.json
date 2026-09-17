@@ -1,0 +1,42 @@
+{
+ "leads": [
+  {
+   "name": "Hollandse iep, Bolwerkpark aan Molenbuurt (north-east side)",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "location_hint": "LRMB register nr 1691015, 52.635125,4.744868, planted_band 1920-1930, part of the same Bolwerken/Munnikenbolwerk cluster verified this pass",
+   "why_not_shipped": "Register-only. Searched the Alkmaar municipal 'Lijst monumentale en waardevolle bomen 2017' PDF (extracted with scripts/pdf_text.py) for a matching entry at this exact address/coordinate and did not find one (the PDF's Molenbuurt-area entries match a DIFFERENT nearby elm, the Pluimiep at nr 1691012, which was delivered as alk_012). No second independent source found for this specific tree in the time available. Sits well inside the verified cluster (roughly 250-540m from alk_008 through alk_012), so a future pass revisiting this cluster should check it first before searching further afield."
+  },
+  {
+   "name": "Canadese populier (Canadian Poplar), two entries near Kwerenbolwerk/Kwerenpad",
+   "species": "Canadian Poplar (Populus x canadensis)",
+   "location_hint": "LRMB nrs unread this pass, approx 52.6277,4.7483 and 52.6269,4.7517, planted_band 1940-1950, register visitable=ja/ja",
+   "why_not_shipped": "Roughly 700-900m from the Bolwerken/Grote Kerk cluster verified this pass, too far to fold into the same short walk without stretching it, and not close enough to alk_006 (Weeping Willow, Victoriepark) either. Not researched for a second source this pass given the distance; would need to stand as the seed of a third, separate small cluster (Kwerenbolwerk/Kwerenpad) if pursued, or be treated as a stretch extension of the Grote Kerk cluster if a future pass decides the walk can reasonably extend that far."
+  },
+  {
+   "name": "Zwarte populieren, Koedijkerstraat",
+   "species": "Black Poplar (Populus nigra)",
+   "location_hint": "LRMB register, approx 52.63873,4.75539, planted_band 1940-1950",
+   "why_not_shipped": "Register's own visitable field reads 'nee' (no) for this entry, unlike every other candidate checked this pass which reads 'ja'. Not chased further given the register's own access flag argues against it; would need a specific access check (OSM path tags, a site visit report) before being reconsidered, per hard rule 10."
+  },
+  {
+   "name": "Groep bonte veldiepen (variegated field elm group)",
+   "species": "Field Elm, variegated cultivar (Ulmus minor, cultivar unspecified)",
+   "location_hint": "LRMB register, approx 52.62788,4.74744, age unknown ('Leeftijd onbekend' per the register's own age field)",
+   "why_not_shipped": "A GROUP registration (an ensemble, not obviously one collectible point) with no age recorded and roughly 550-700m from the verified Bolwerken cluster in a different direction (toward Kwerenbolwerk). Not researched this pass given time; worth a second look if the Kwerenbolwerk-area poplars above are ever picked up as a third cluster, since it sits close to them."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Bruine beuk (Copper Beech), near the music garden/flower clock, Alkmaarderhout",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "location_hint": "LRMB register nr 1684912, 52.625128,4.734696, planted_band 1800-1850, about 25-50m from already-published alk_003 (The Plane of the Alkmaarderhout)",
+   "reason": "DEAD. The register's own site_history is explicit: 'Helaas is de beuk gesneuveld in de Polystorm van de zomer 2023. Tot bijna vier meter hoogte staat de stam nog overeind' (the beech fell in Storm Poly, summer 2023; the trunk still stands to almost four metres). Independently confirmed that Storm Poly struck Alkmaar on 5 July 2023, felling 500+ trees and severely damaging roughly 200 more across the municipality (Rodi.nl news report; gemeente Alkmaar's own storm-damage recovery page, 'Herstel schade storm Poly'). A stump, however tall, is not a collectible entry per 'we doen niet aan dode bomen'. Do not confuse with the nearby still-standing alk_013 (Copper Beech of the Hertenkamp, register nr 1688896), which is a different, separate specimen about 800m away with no storm-damage note in its own register history."
+  },
+  {
+   "name": "Hollandse iep, against the historic ice cellar (ijskeldertje/kruithuisje), Geest/Bolwerk",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "location_hint": "LRMB register nr 1691005, 52.633538,4.74068, planted_band 1900-1910",
+   "reason": "DEAD, felled. Confirmed by two independent sources: NH Nieuws ('Oude iep gekapt om Alkmaars rijksmonument te redden') and Alkmaar Centraal / Streekstad Centraal ('Iep op Bolwerk moet weg vanwege schade aan monument en ziekte', with a follow-up 'Monumentale iep op Alkmaars Bolwerk nu echt weg' video). The elm's roots were damaging the walls and roof of the adjacent listed ice cellar (a rijksmonument) and the tree itself had Dutch elm disease despite annual inoculation; permitting began in early 2018 and the tree was felled in January 2019. The LRMB register entry itself carries no vitality flag and would otherwise read as a live, publishable tree, which is exactly the register-pitfall this project's rules warn about. Confirmed distinct from all trees delivered this pass (different address, 'tegen buskruid/ijskeldertje', not matched to any of alk_008 through alk_014)."
+  }
+ ]
+}
