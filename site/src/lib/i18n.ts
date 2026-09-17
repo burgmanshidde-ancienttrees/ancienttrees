@@ -1848,6 +1848,81 @@ export function hreflangSet(enPath: string, variants: Record<string, string>): s
  * decides the path shape; the question page is the one whose last segment
  * differs per language, which is why QUESTION_SLUG is consulted here rather
  * than at each call site. */
+/** A translated page's own path, converted back to its English one.
+ *
+ * Stripping the /[lang] prefix is not enough and that cost a build to learn.
+ * The question page's last segment is localised on purpose (Contract J: the
+ * URL carries the phrase people actually search), so /de/aachen/aeltester-baum
+ * strips to /aachen/aeltester-baum, which is not an English path at all. The
+ * language picker then pasted the German slug into all seven URLs and qa found
+ * 29,686 dead links.
+ *
+ * Tree and city slugs are identical across languages by design, so the
+ * question slug is the only segment that needs translating back. */
+export function toEnglishPath(pathname: string, lang: string): string {
+  const clean = (pathname.replace(/\/index\.html$/, "").replace(/\.html$/, "") || "/");
+  if (lang === "en") return clean;
+  const stripped = clean.replace(new RegExp(`^/${lang}(?=/|$)`), "") || "/";
+  const seg = stripped.split("/").filter(Boolean);
+  if (seg.length === 2 && seg[1] === (QUESTION_SLUG[lang] ?? "")) {
+    return `/${seg[0]}/oldest-tree`;
+  }
+  return stripped;
+}
+
+/** Which page types exist under /[lang]/. The single place that knows.
+ *
+ * Future-proofing, 2026-09-17: when a new page type ships in the seven
+ * languages, it is added HERE and the language picker starts offering it on
+ * every one of those pages at once. Nothing else needs touching, and no page
+ * has to remember whether it has translations.
+ *
+ * "city" covers a city, its trees and its question page, which is why it is
+ * matched last: those paths are one and two segments deep and would otherwise
+ * swallow every standing page above them. */
+const TRANSLATED_STANDING = new Set(["/cities", "/explore"]);
+
+/** Where this page lives in every language, for the PICKER.
+ *
+ * Deliberately NOT the same function as hreflangForCity, and the difference is
+ * the point. hreflang advertises real translations to Google, so it lists only
+ * the languages with an overlay. The picker offers a HUMAN every URL they can
+ * actually reach, and since 2026-09-17 that is all seven everywhere, because
+ * an untranslated page still renders with the frame in their language. Merging
+ * the two would either hide reachable pages from readers or tell Google a
+ * fallback is a translation, and both are wrong.
+ *
+ * Returns an empty object for a page type that has no translated route yet, so
+ * the picker simply does not render there rather than offering a 404.
+ */
+export function pathInEveryLanguage(enPath: string): Record<string, string> {
+  const clean = ("/" + enPath.replace(/^\/+|\/+$/g, "")).replace(/\/+/g, "/");
+  const langs = translatedLanguages();
+  const out: Record<string, string> = {};
+
+  if (TRANSLATED_STANDING.has(clean)) {
+    for (const l of langs) out[l] = `/${l}${clean}`;
+    return out;
+  }
+
+  const seg = clean.split("/").filter(Boolean);
+  if (seg.length === 1 || seg.length === 2) {
+    const [slug, leaf] = seg;
+    // A one-segment path is only a city if we publish one by that name; this is
+    // what keeps /privacy and /sponsor out without naming them.
+    if (!fs.existsSync(path.join(DATA, "cities", `${slug}.json`))) return {};
+    for (const l of langs) {
+      out[l] = !leaf
+        ? `/${l}/${slug}`
+        : leaf === "oldest-tree"
+          ? `/${l}/${slug}/${QUESTION_SLUG[l] ?? "oldest-tree"}`
+          : `/${l}/${slug}/${leaf}`;
+    }
+    return out;
+  }
+  return {};
+}
+
 export function hreflangForCity(slug: string, kind: "city" | "question", treeSlug?: string): string {
   const langs = languagesForCity(slug);
   const enPath = kind === "question" ? `/${slug}/oldest-tree` : treeSlug ? `/${slug}/${treeSlug}` : `/${slug}`;

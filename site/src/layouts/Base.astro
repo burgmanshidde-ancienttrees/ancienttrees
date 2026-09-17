@@ -10,6 +10,8 @@
 //     reported at the very end of the build instead).
 import { STYLE_HREF } from "../lib/asset-hash";
 import { UNITS_JS } from "../lib/units-js";
+import LanguagePicker from "../components/LanguagePicker.astro";
+import { toEnglishPath } from "../lib/i18n";
 import { chrome } from "../lib/ui-strings";
 import AppModal from "../components/AppModal.astro";
 import AppDownloadModal from "../components/AppDownloadModal.astro";
@@ -45,6 +47,10 @@ const { title, description, canonical, ogType = "article", headExtra = "", foote
 // its stories in Spanish or Japanese inside an English frame; see
 // site/src/lib/ui-strings.ts for the measurement and the convention behind it.
 const t = chrome(lang);
+/** The English path of whatever page this is, derived from its own URL rather
+ * than passed in, so the language picker below needs no cooperation from any
+ * page and keeps working for page types that do not exist yet. */
+const enPath = toEnglishPath(Astro.url.pathname, lang);
 /** Nav and footer links that have a translated twin, pointed at the reader's
  * own language. Added 2026-09-17 after qa.py's orphan check caught all seven
  * /[lang]/explore pages: they were built and nothing on the site linked to
@@ -237,6 +243,14 @@ const year = new Date().getFullYear();
       <a href="/privacy">{t.privacy}</a>
       <a href="/terms">{t.terms}</a>
       <a href="/sources">{t.sources}</a>
+    </div>
+    {/* Last item in the footer, which is where both references put it:
+        komoot as a plain line at the very bottom, AllTrails as a select in
+        its own footer block. Autonyms, no flags, no redirect. It renders
+        itself away on a page type with no translated route, so nothing here
+        has to know which pages those are. */}
+    <div class="footer-col footer-lang">
+      <LanguagePicker current={lang} enPath={enPath} />
     </div>
   </div>
   {/* The map and routing credits live one level down, on /sources, which the
