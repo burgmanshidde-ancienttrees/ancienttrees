@@ -483,6 +483,27 @@ struct ContentView: View {
                         Task { await account.signInFromLink(url) }
                         return
                     }
+                    // CONTINUE IN THE APP. The website's sheet points its loud
+                    // button at /open, which this app claims, so iOS hands the
+                    // whole URL here instead of loading the page. ?tree= or
+                    // ?city= says where the reader was standing, so the app
+                    // lands on the same tree rather than on whatever tab it
+                    // last had open; with neither, opening IS the whole of what
+                    // the button promised and there is nothing more to do.
+                    //
+                    // Somebody without the app never reaches this: iOS loads
+                    // /open in the browser and that page forwards to the App
+                    // Store. One URL, both outcomes, decided by the OS.
+                    if let comps = URLComponents(url: url, resolvingAgainstBaseURL: false),
+                       comps.path == "/open" {
+                        let q = comps.queryItems ?? []
+                        if let id = q.first(where: { $0.name == "tree" })?.value, !id.isEmpty {
+                            navigator.push = .tree(id)
+                        } else if let slug = q.first(where: { $0.name == "city" })?.value, !slug.isEmpty {
+                            navigator.push = .city(slug)
+                        }
+                        return
+                    }
                     guard let route = Self.route(for: url) else { return }
                     navigator.push = route
                 }

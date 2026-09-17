@@ -275,6 +275,14 @@ The first pass had the icon at 104px (nearly double), buttons at 56, gaps at
 10, and a centred card instead of a sheet. Every one of those was a guess
 dressed as a decision, and the fix was arithmetic rather than taste.
 
+**AND THE SHEET'S ACTUAL SUBJECT IS THE APP, which the first two passes
+missed.** Their headline is "AllTrails werkt beter in de app" and their loud
+button is "Ga verder in de app"; the Google button and "Meer opties" are what
+sits BELOW the rule. Twice this was rebuilt as a sign-in sheet wearing their
+layout, with our own Apple button in the loud slot, until Hidde said it plainly:
+"ik wil dat je daadwerkelijk de open in app functie erin bouwt". The rule
+separates continuing from signing in, not one provider from another.
+
 **What they actually do, top to bottom.** A close cross in a grey circle, top
 right. The app icon as a large rounded tile, roughly 104px, centred. A big bold
 headline over two balanced lines. ONE dark filled pill at full width, tall. A

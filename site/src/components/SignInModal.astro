@@ -50,8 +50,20 @@ const T = signInCopy(lang);
     28px emoji until 2026-09-17, which reads as a placeholder rather than as a
     product, and it was the first thing on the screen. */}
     <img class="signin-icon" src="/assets/app-icon.png" alt="" width="104" height="104" loading="lazy" />
-    <h3 id="signin-title" data-generic={T.title} data-feedback={T.titleFeedback}>{T.title}</h3>
+    <h3 id="signin-title" data-generic={T.title} data-feedback={T.titleFeedback} data-app={T.appTitle}>{T.title}</h3>
     <p id="signin-sub" data-generic={T.sub} data-named={T.subNamed} data-feedback={T.subFeedback}>{T.sub}</p>
+
+    {/* CONTINUE IN THE APP, which is the offer the reference actually leads
+    with ("AllTrails werkt beter in de app") and the thing this sheet was
+    missing: the first pass copied their layout and left our own sign-in button
+    in the loud slot. Hidde, 2026-09-17: "ik wil dat je daadwerkelijk de open in
+    app functie erin bouwt".
+
+    Hidden in the markup and revealed by signin-js only on an iPhone, because
+    it is the one control here that a laptop cannot honour. When it appears it
+    TAKES the loud slot and pushes sign-in down to grey, so there is still
+    exactly one dark button. */}
+    <a class="oauth-btn oauth-loud" id="signin-openapp" href="/open" hidden data-ev="app-open"><span>{T.openApp}</span></a>
 
     {/* ONE dark button, then everything else quiet. That is the whole shape
     Hidde asked for from AllTrails' own sheet, and the thing our version got
