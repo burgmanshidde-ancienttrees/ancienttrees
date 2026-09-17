@@ -12,21 +12,21 @@
    "slug": "brussels",
    "status": "published",
    "demand_views_90d": 176863,
-   "trees": 31
+   "trees": 35
   },
   {
    "city": "Lisbon",
    "country": "Portugal",
    "slug": "lisbon",
    "status": "published",
-   "trees": 35
+   "trees": 36
   },
   {
    "city": "Milan",
    "country": "Italy",
    "slug": "milan",
    "status": "published",
-   "trees": 25
+   "trees": 30
   },
   {
    "city": "Barcelona",
@@ -36,19 +36,19 @@
    "trees": 56
   },
   {
+   "city": "Pamplona",
+   "country": "Spain",
+   "slug": "pamplona",
+   "status": "published",
+   "trees": 14,
+   "note": "Opened 2026-08-31 from Navarra's SITNA register of declared Natural Monuments (CC BY 4.0). The thinnest register on the site: species, place, declaration year and coordinate, with no height, girth, age or vitality field anywhere, so no tree here carries a measurement it does not have and every page says so."
+  },
+  {
    "city": "Amsterdam",
    "country": "Netherlands",
    "slug": "amsterdam",
    "status": "published",
    "trees": 34
-  },
-  {
-   "city": "Pamplona",
-   "country": "Spain",
-   "slug": "pamplona",
-   "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from Navarra's SITNA register of declared Natural Monuments (CC BY 4.0). The thinnest register on the site: species, place, declaration year and coordinate, with no height, girth, age or vitality field anywhere, so no tree here carries a measurement it does not have and every page says so."
   },
   {
    "city": "Oahu",
@@ -107,7 +107,7 @@
    "country": "Germany",
    "slug": "berlin",
    "status": "published",
-   "trees": 23
+   "trees": 33
   },
   {
    "city": "Brisbane",
@@ -524,7 +524,7 @@
    "country": "Netherlands",
    "slug": "enschede",
    "status": "published",
-   "trees": 7
+   "trees": 12
   },
   {
    "city": "Coimbra",
@@ -653,7 +653,7 @@
    "country": "Netherlands",
    "slug": "amersfoort",
    "status": "published",
-   "trees": 14
+   "trees": 18
   },
   {
    "city": "Miami",
@@ -827,7 +827,7 @@
    "slug": "montreal",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 11
+   "trees": 13
   },
   {
    "city": "Turin",
