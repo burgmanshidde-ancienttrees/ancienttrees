@@ -18,7 +18,29 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-16 - Submission #110 (Oguni): a tree add with only a GPS pin, does not verify yet
+## 2026-09-17 - Submissions #111, #112 (Taketa): two more GPS-only pins at Oka Castle, same submitter as #110
+
+Same reader (user_id a8ca51da-...) who sent #110 from the Oguni/Taketa border
+yesterday, now two pins a day later, 290m apart, both landing inside the Oka
+Castle ruins (Oka-jo) national historic site in Taketa, Oita: 32.96713,131.40504
+and 32.96912,131.40796. Both kind `tree`, app Collect flow, no name, no
+species, no girth, no `why`, and no matching row in the `sightings` table for
+either tree id, so no photo ever arrived despite the app's copy promising one
+travels with the add.
+
+Checked data/registers/japan-bunkacho.json: nothing within 25km of either
+point. Web search confirms the coordinates are Oka Castle itself; its
+documented trees are planted cherry and maple for seasonal colour (one of
+Japan's 100 best cherry-viewing spots), not a named ancient specimen, and no
+giant tree at the site turned up in English or Japanese search. An Overpass
+check for natural=tree within 400m of both points timed out (server
+overloaded, consistent with the standing blocklist note) and was not retried.
+
+Does not clear the bar: no second source, no species, no name, no photo,
+nothing to verify beyond two coordinates. Filed as leads
+(data/leads/taketa.json) rather than published. Both submissions rows set to
+outcome `open_question` with a reply asking for a photo or the species;
+rows 111 and 112 marked processed.
 
 Reader submission (kind `tree`, app's Collect flow, no name/species/girth given).
 The pin (33.04561, 131.29971) was tagged "Oguni" by the app, but that is just
