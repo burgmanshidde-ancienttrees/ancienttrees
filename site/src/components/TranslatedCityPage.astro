@@ -31,8 +31,18 @@ import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation } from "../lib
 interface Props { lang: string; city: CityEntry; tr: CityTranslation; fallback?: boolean }
 const { lang, city, tr, fallback = false } = Astro.props as Props;
 
+
 const U = ui(lang);
 const cslug = city.id;
+/** Where this city's tree and question pages live. A translated city has them
+ * in its own language; a fallback city does not, because only real
+ * translations render tree pages (i18n.ts allTreePathsFor, 2026-09-17), so its
+ * links point at the English ones. Getting this wrong is how 25,208 dead links
+ * happened, so it is one helper rather than a decision at each call site.
+ *
+ * TREE pages only. The question page still renders as a fallback, so its link
+ * stays in the reader's language whether or not the city is translated. */
+const leaf = (slug: string) => (fallback ? `/${cslug}/${slug}` : `/${lang}/${cslug}/${slug}`);
 const trees = renderableTrees(city);
 const tslugs = treeSlugsForCity(city);
 const selfUrl = `${BASE_URL}/${lang}/${cslug}`;
@@ -68,7 +78,7 @@ const listElements = trees.map((t, i) => ({
   "@type": "ListItem",
   position: i + 1,
   name: tr.trees[t.id].name,
-  url: `${BASE_URL}/${lang}/${cslug}/${tslugs[t.id]}`,
+  url: `${BASE_URL}${leaf(tslugs[t.id])}`,
   item: {
     "@type": "TouristAttraction",
     name: tr.trees[t.id].name,
@@ -118,7 +128,7 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
         const x = tr.trees[t.id];
         return (
           <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={i + 1}
-                    variant="full" headingLevel={2} lang={lang} canTick
+                    variant="full" headingLevel={2} lang={lang} canTick fallback={fallback}
                     overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
         );
       })}
