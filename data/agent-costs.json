@@ -8056,6 +8056,24 @@
         "note": "Resolved the Piazza Vasari hackberry register-trap/felling question (1 tree, 3 register twins folded); confirmed 2 candidates as wrong-comune (Fiesole) and 10 as existing duplicates; Isolotto poplar candidate turned out to already be published as flo_026 (same MASAF sheet), missed by the pass's own search. Story written and merged by the session.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Vancouver",
+        "kind": "verify",
+        "tokens": 214735,
+        "trees": 3,
+        "note": "15 remaining City of Vancouver Heritage Register leads checked; 3 geocoded and verified via the City's separate public-trees street-tree dataset (van_005-007), 2 institutional sites (church, school) surfaced but left unresolved, 6 avenue/wide-range entries blocked, 2 private-yard entries newly blocked, 4 singles left as open leads.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Houston",
+        "kind": "verify",
+        "tokens": 204027,
+        "trees": 2,
+        "note": "10 Texas Big Tree Registry leads checked; 3 turned out to be exact-coordinate duplicates of already-published hou_001/002/004 (caught by passcheck.py --pending before merging, not by the pass itself), 2 genuinely new trees verified (hou_005-006), 2 newly blocked as Spring Branch ISD private grounds, 1 (Inverness POA) left unresolved on access, 2 pre-existing blocks untouched.",
+        "wasted": 0,
+        "brief_wrong": true
       }
     ]
   }
