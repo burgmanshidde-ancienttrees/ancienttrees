@@ -2,9 +2,9 @@
   "city": "Eindhoven",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Eindhoven's old trees are mostly Philips trees. A horse chestnut planted in 1909 because the company believed staff worked better with something green to look at, now at gate 11 of the stadium. An oak in twenty five hectares Anton Philips gave to the city in 1920. A sequoia in the pinetum on the estate his son lived on until 2005, shut for a century and opened in September 2025. The two that owe Philips nothing are the oldest and the best loved: a beech from before the industrial town, and an oak the neighbours light every December.",
-  "meta_description": "Sixteen remarkable trees in Eindhoven: the 1909 Philips chestnut, a plane set on fire and grafted back to life, and an estate opened in 2025.",
-  "question_meta": "Eindhoven's oldest tree is a copper beech in the Glorieuxpark, from a planting band of 1700 to 1750. Where it stands, and fifteen more worth the walk.",
+  "intro": "Eindhoven's old trees are mostly Philips trees: a chestnut planted in 1909 at gate 11 of the stadium, an oak in the twenty-five hectares Anton Philips gave the city in 1920, a sequoia in the pinetum on the estate his son kept closed until 2025. Five more line the streets of Villapark, the garden suburb Philips built for its executives from 1907. The two that owe Philips nothing are the oldest and best loved: a beech from before the industrial town, and an oak the neighbours light every December.",
+  "meta_description": "Twenty-one trees in Eindhoven: the 1909 Philips chestnut, a plane set on fire and grafted back to life, and a garden suburb of imported species.",
+  "question_meta": "Eindhoven's oldest tree is a copper beech in the Glorieuxpark, from a planting band of 1700 to 1750. Where it stands, and twenty more worth the walk.",
   "question_answer": "The oldest tree in Eindhoven is a copper beech in the Glorieuxpark on the Geldropseweg, which the national register of monumental trees places in a planting band of 1700 to 1750, so somewhere between about 275 and 325 years old. It stands on ground that was the Eikenburg estate long before the Brothers of Charity bought it in 1894 and built a boys' boarding school there. The claim has a rival: the Wereldboom foundation puts the plane tree at Groendomein Wasven at around 1760, while the same national register gives that tree a band of 1820 to 1830. Both cannot be right, and neither tree has been cored, so the honest answer is that the beech is the oldest by the register and the plane may be older by its foundation.",
   "question_context": "Every age on this page comes from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so ages here are bands and are not narrowed to look precise. That register is the 2024 edition and is a single source for most of these trees, which is why several are flagged. Where a second source exists it is named in the story, and the two trees with the most reporting behind them are the Philips chestnut at the stadium and the plane at Wasven. That plane is the one to watch: it was set on fire in July 2022 and arborists gave it a thirty percent chance of pulling through, so if you walk out there and find it has not made it, tell us and we will take it down the same day. Pins marked approximate mean the park is known and the trunk is not, which matters most at De Wielewaal, where the estate runs to 144 hectares and the oak avenues all look alike.",
   "hero_tree_id": "ein_001",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All sixteen. The Wielewaal, the Philips de Jongh park and Groendomein Wasven are open public parks with no charge, the Philips chestnut stands on the square outside the stadium, and the Lichtjesboom is a street tree. The Glorieuxpark is owned by a religious order and the register records it as visitable. The Sint Trudo and Antonius churchyards in Strijp are working Catholic cemeteries, open daily and free to walk through. Five more stand outside the Van Abbemuseum, on Pastoor Sickingstraat, in the park behind the Stadspaviljoen, and at Marienhage, all open ground with no charge."
+      "a": "All twenty-one. The Wielewaal, the Philips de Jongh park and Groendomein Wasven are open public parks with no charge, the Philips chestnut stands on the square outside the stadium, and the Lichtjesboom is a street tree. The Glorieuxpark is owned by a religious order and the register records it as visitable. The Sint Trudo and Antonius churchyards in Strijp are working Catholic cemeteries, open daily and free to walk through. Five more stand outside the Van Abbemuseum, on Pastoor Sickingstraat, in the park behind the Stadspaviljoen, and at Marienhage, all open ground with no charge. The last five stand on public street verges in Villapark, a residential district open at any time."
     }
   ],
   "trees": [
@@ -582,6 +582,190 @@
       "curation_status": "flagged",
       "story": "This plane stands more than twenty-four metres tall and you cannot see it from the street. It grows behind Marienhage on the bank of the Dommel, screened by the buildings, and the national register says as much in its own fields: reachable, but not visible from the road.\n\nThere has been a religious house on this ground since 1419, when Augustinian hermits founded a cloister on the river outside what was then a small town. The complex was rebuilt in the last quarter of the nineteenth century, ran as a monastery and a school for generations, and was sold in 2017. It is a hotel and a cultural venue now, which is a strange fate for a cloister and a fortunate one for the tree, since the garden came with it.\n\nHow old the plane is depends on which register you ask. The national one bands the planting between 1880 and 1890, which would make it about 140. Eindhoven's own tree database says 1935, which makes it 91. Neither source explains the other and we have not picked a side.\n\nGetting to it asks a little faith in the map. Public footpaths run through the riverside grounds, the site's redevelopment plan undertook to open the garden, and Marienhage is a marked stop on the Dommelpad walking route. None of that proves the path takes you within sight of this particular tree, so go expecting a short hunt along the water.",
       "how_to_recognise": "You can recognise it by the flaking, patchy plane bark and a crown of over twenty-four metres. It stands on the bank of the Dommel behind the old Marienhage monastery, out of sight of Kanaalstraat.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ein_017",
+      "name": "The Horse Chestnut of Prinsenhof",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Prinsenhof, opposite no. 5, Villapark, Eindhoven",
+        "latitude": 51.435175,
+        "longitude": 5.467954,
+        "neighbourhood": "Villapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1690257",
+        "Gemeente Eindhoven open data, dataset 'bomen', record near 51.435141,5.467914 (Dubbelbloemige paardenkastanje, Aesculus hippocastanum, plantjaar 1900)"
+      ],
+      "access": "Free. Stands on the public street verge of Prinsenhof, a residential street in the Villapark conservation area (rijksbeschermd stadsgezicht).",
+      "transport": "Eindhoven Centraal station, about 20 minutes on foot; bus stops on Geldropseweg and Karel de Grotelaan are a few minutes' walk.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Eindhoven's monumental trees keep turning out to be Philips trees, and this one fits the pattern from an unusual angle: not a company gift but a plan. In 1907 the Villapark district went up as a garden suburb for Philips executives, laid out street by street with imported ornamental species, and the municipality's own tree management survey names this one specifically as a double-flowered cultivar of the ordinary horse chestnut, chosen on purpose rather than planted from whatever the nursery had spare that year.\n\nThe national monumental tree register and the city's separate street-tree inventory agree closely on where it stands and roughly when it went in, within a few years of 1900 either way. Two independently kept lists landing on the same tree and the same decade is rare enough here to be worth saying outright, since most entries in this project carry one source repeating what the other cannot check.\n\nIt stands on the street verge of Prinsenhof, in a district still recognisable as the plan that built it, protected now as a townscape rather than a nature reserve. The chestnut that gave Eindhoven its stadium tree and its avenue at the Wielewaal did not plant this one. Its own street did.",
+      "how_to_recognise": "You can recognise it by the doubled, fuller flower spikes in May, a cultivar the city's own tree survey names outright. It stands on the Prinsenhof verge opposite no. 5, in the Villapark district.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when its doubled flower spikes open fuller than an ordinary chestnut's"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ein_018",
+      "name": "The Caucasian Wingnut of Frederika van Pruisenweg",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Frederika van Pruisenweg, opposite no. 28/30, Villapark, Eindhoven",
+        "latitude": 51.435428,
+        "longitude": 5.466584,
+        "neighbourhood": "Villapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1680790",
+        "Gemeente Eindhoven open data, dataset 'bomen', record at 51.435442,5.466565 (Gewone vleugelnoot, Pterocarya fraxinifolia, plantjaar 1910)"
+      ],
+      "access": "Free. Stands on the public street verge of Frederika van Pruisenweg in the Villapark conservation area.",
+      "transport": "Eindhoven Centraal station, about 20 minutes on foot; bus stops on Geldropseweg and Karel de Grotelaan are a few minutes' walk.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "A wingnut on a residential verge is an odd choice, which is the point. The Villapark district went up from 1907 as a garden suburb built for Philips executives, and whoever planted its streets reached past the ordinary lime and plane for something a passer-by would not recognise: Pterocarya fraxinifolia, native to the Caucasus and Iran, a relative of the walnut whose true claim to fame is a chain of winged seed pods that hangs off the branches like a string of pale green fish, sometimes half a metre long, through late summer.\n\nThe national monumental tree register and the city's own street-tree survey agree on the species and land within two metres of each other on where it stands, both pointing to a planting around 1910. Neither source records a girth.\n\nIt grows on Frederika van Pruisenweg, one street over from the district's chestnuts and its pin oak, all part of the same deliberate planting that turned a stretch of Philips-era Eindhoven into an outdoor collection of trees nobody expected to find on a Dutch street.",
+      "how_to_recognise": "You can recognise it by the long strings of winged seed pods hanging through late summer, unlike any lime or plane nearby. It stands on Frederika van Pruisenweg opposite no. 28/30.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "catkins",
+        "label": "July and August, when its half-metre chains of winged seeds hang from every branch"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ein_019",
+      "name": "The Pin Oak of Prinsenhof",
+      "species": "Pin Oak (Quercus palustris)",
+      "age_estimate": "roughly 130 years, from a registered planting date around 1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Prinsenhof, opposite no. 18/19, Villapark, Eindhoven",
+        "latitude": 51.434437,
+        "longitude": 5.467842,
+        "neighbourhood": "Villapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1680792",
+        "Gemeente Eindhoven open data, dataset 'bomen', record at 51.434410,5.467817 (Moeraseik, Quercus palustris, plantjaar 1890)"
+      ],
+      "access": "Free. Stands on the public street verge of Prinsenhof in the Villapark conservation area.",
+      "transport": "Eindhoven Centraal station, about 20 minutes on foot; bus stops on Geldropseweg and Karel de Grotelaan are a few minutes' walk.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The tightest date on any tree in this Eindhoven cluster comes from a disagreement of exactly ten years. The national monumental tree register bands this pin oak's planting to 1890 through 1900; the city's own separate street-tree survey names a single year inside that band, 1890, and the two records sit within four metres of each other on the ground. A register that admits a wide guess and a city inventory that commits to a year rarely meet this closely, and when they do the tighter figure is usually the one worth repeating.\n\nA pin oak is not a native to be found lining a Dutch street by accident. Villapark was laid out from 1907 as a garden suburb for Philips executives, its verges deliberately planted with species that read as a collection rather than a default, and this Quercus palustris, with its fine drooping lower branches and leaves that stay reddish-bronze on the tree through much of winter, is one of them.\n\nIt stands on Prinsenhof, the same street as the district's double-flowered horse chestnut, a two-minute walk apart.",
+      "how_to_recognise": "You can recognise it by the fine drooping lower branches and reddish-bronze leaves that often hang on into winter. It stands on Prinsenhof opposite no. 18/19, a few doors from the district's double-flowered chestnut.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the finely cut leaves turn reddish-bronze and hold on through much of winter"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ein_020",
+      "name": "The Southern Catalpa of Julianastraat",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Julianastraat, Villapark, Eindhoven",
+        "latitude": 51.435773,
+        "longitude": 5.46786,
+        "neighbourhood": "Villapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1680793"
+      ],
+      "access": "Free. Stands on the public street verge of Julianastraat in the Villapark conservation area.",
+      "transport": "Eindhoven Centraal station, about 20 minutes on foot; bus stops on Geldropseweg and Karel de Grotelaan are a few minutes' walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Only one source names this tree, and it is honest about not being sure of everything either. The national monumental tree register lists a Catalpa on Julianastraat, planted sometime in the 1900s, but gives no house number for it and marks its own visibility field unknown. The city's separate street-tree management inventory, which independently confirmed three of this cluster's other trees to within a few metres, has no Catalpa recorded anywhere near this point at all.\n\nThat gap does not mean the tree is wrong, only that it is unconfirmed a second way, which is the honest way to leave it rather than a reason to leave it out. A Catalpa bignonioides at roughly 120 years old would be a distinctive planting for this corner of the Villapark garden suburb, laid out from 1907 with deliberately varied ornamental species along its verges: broad heart-shaped leaves, white orchid-like flowers in early summer, and long thin seed pods that hang on through winter and give the tree its old nickname, the cigar tree.\n\nIf you know this tree or can measure it, tell us. A second source is the only thing standing between a flag and a confirmed entry.",
+      "how_to_recognise": "You can recognise it by the broad heart-shaped leaves and, in early summer, white orchid-like flowers; the long thin pods that follow give it the old name cigar tree. It stands on Julianastraat, Villapark.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the white orchid-like flowers open across the crown"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ein_021",
+      "name": "The Horse Chestnut of Palingstraat",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Palingstraat / Karel de Grotelaan, Villapark, Eindhoven",
+        "latitude": 51.433412,
+        "longitude": 5.467705,
+        "neighbourhood": "Villapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1680794"
+      ],
+      "access": "Free. Stands on the public road verge at the Palingstraat/Karel de Grotelaan junction, owner category 'gemeente' (municipality) in the register.",
+      "transport": "Eindhoven Centraal station, about 20 minutes on foot; bus stops on Geldropseweg and Karel de Grotelaan are a few minutes' walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This chestnut and the double-flowered one on Prinsenhof, about 250 metres away, are two different trees carrying the same common name and the same rough age, which is worth saying plainly so nobody mistakes one for the other. Only the national monumental tree register names this one: a white horse chestnut on the public road verge at the junction of Palingstraat and Karel de Grotelaan, planted somewhere in the 1900s, owned and maintained by the municipality.\n\nThe city's own separate street-tree survey, checked within 25 metres of this spot, records no horse chestnut here at all, only a silver lime from 1920 and a black lime from 1985 a short distance off. That is not evidence the register is wrong, registers and management inventories are compiled differently and do not always list the same trees, but it means this one stands on one source rather than two, and the entry says so honestly.\n\nIt grows in the Villapark district, the Philips-era garden suburb planted from 1907, on a street corner rather than in a garden, open to anyone walking past.",
+      "how_to_recognise": "You can recognise it by standing at the Palingstraat/Karel de Grotelaan corner rather than on Prinsenhof, about 250 metres from the district's other monumental horse chestnut.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when it flowers"
+      },
       "photo": {
         "url": null,
         "license": null,
