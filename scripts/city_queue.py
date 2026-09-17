@@ -422,6 +422,17 @@ def enrich(doc, live):
             wd = near(WD, pos[0], pos[1], 15.0) if pos else info["wikidata"]
             info["wikidata"] = max(wd, info["wikidata"])
             supply = info["register"] + info["ready"] + info["wikidata"]
+            # A published (stage-2, deepening) city can be just as settled as an
+            # unpublished one: Brisbane's own leads file carries five documented
+            # zero-yield deepen attempts (its 558-row register has no species or
+            # name per point, so it never clears the two-source bar), and this
+            # branch never checked, so `--next` kept listing its 186 register
+            # rows as movable supply. Fixed 2026-09-17.
+            settled = settled_verdict(c["city"])
+            if settled:
+                c["settled"] = settled
+            else:
+                c.pop("settled", None)
             c.update(status="published", trees=info["trees"], photos=info["photos"],
                      walks=info["walks"], register=info["register"],
                      ready=info["ready"], wikidata=info["wikidata"], supply=supply,
@@ -655,14 +666,24 @@ def main():
             print("  before dispatching anything here again.\n")
             for c in settled:
                 print("  %s (#%d): %s" % (c["city"], c["rank"], c["settled"][:160]))
+        s2_settled = [c for c in s2 if c.get("settled")]
+        s2_open = [c for c in s2 if not c.get("settled")]
         print("\nSTAGE 2, DEEPENING: once stage 1 has nothing left that moves")
         print("cheaply. Targets are 20, or 30 for a big confirmed city.\n")
         print("  #  city             now target  ready  register  wikidata")
-        for c in s2[:20]:
+        for c in s2_open[:20]:
             print("%3d  %-16s %4d %6d %6d %9d %9d" % (
                 c["rank"], c["city"][:16], c.get("trees", 0),
                 c["target"], c.get("ready", 0), c.get("register", 0),
                 c.get("wikidata", 0)))
+        if s2_settled:
+            print("\n  SETTLED, DO NOT RE-DEEPEN (%d): an earlier pass already"
+                  % len(s2_settled))
+            print("  wrote a verdict to this city's own leads file (its register")
+            print("  or Wikidata count above is not usable supply). Read the")
+            print("  verdict before dispatching a deepen pass here again.\n")
+            for c in s2_settled:
+                print("  %s (#%d): %s" % (c["city"], c["rank"], c["settled"][:160]))
         print("\nStage 1: %d cities unopened. Stage 2: %d cities, %d trees to target."
               % (len(s1), len(s2), sum(c["target"] - c.get("trees", 0) for c in s2)))
 
