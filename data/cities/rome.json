@@ -1105,9 +1105,9 @@
       "id": "rom_031",
       "name": "The Almond of Villa di Faonte",
       "species": "Almond (Prunus dulcis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 125 to 250 years, judged from a trunk 3.6 m round",
+      "age_min": 125,
+      "age_max": 250,
       "girth_cm": 360,
       "height_m": 20,
       "location": {
@@ -1132,7 +1132,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its trunk, 3.6 metres round, thick for an almond tree. It stands in the open park at Via delle Vigne Nuove 280; a second, smaller almond stands about 110 metres away."
+      "how_to_recognise": "You can recognise it by its trunk, 3.6 metres round, thick for an almond tree. It stands in the open park at Via delle Vigne Nuove 280; a second, smaller almond stands about 110 metres away.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 360 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ],
   "hero_tree_id": "rom_001"

@@ -421,9 +421,9 @@
       "id": "ens_013",
       "name": "The Sweet Birch of the Oosterbegraafplaats",
       "species": "Sweet Birch (Betula lenta)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 75 to 175 years, judged from a trunk 2.34 m round",
+      "age_min": 75,
+      "age_max": 175,
       "girth_cm": 234,
       "location": {
         "address": "Oosterbegraafplaats, northern main path, towards the back on the left, Noord Esmarkerrondweg 407, Enschede",
@@ -446,7 +446,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 234 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "ens_014",

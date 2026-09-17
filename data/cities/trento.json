@@ -165,9 +165,9 @@
       "id": "tre_005",
       "name": "The Elm of Maso Ginocchio",
       "species": "Field Elm (Ulmus minor)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 150 to 300 years, judged from a trunk 3.93 m round",
+      "age_min": 150,
+      "age_max": 300,
       "location": {
         "address": "Giardino di Maso Ginocchio, Via Giusti, 38122 Trento TN, Italy",
         "latitude": 46.058939,
@@ -190,9 +190,10 @@
         "status": "missing"
       },
       "height_m": 26.0,
-      "verify_notes": "Height 26.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 26.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 393 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
       "girth_cm": 393,
-      "how_to_recognise": "You can recognise it by its trunk, 3.93 metres round, tucked into a corner of the garden where it takes some finding. It stands in the Giardino di Maso Ginocchio, Via Giusti."
+      "how_to_recognise": "You can recognise it by its trunk, 3.93 metres round, tucked into a corner of the garden where it takes some finding. It stands in the Giardino di Maso Ginocchio, Via Giusti.",
+      "age_basis": "girth"
     },
     {
       "id": "tre_006",
@@ -231,9 +232,9 @@
       "id": "tre_007",
       "name": "The Chestnut of Sardagna",
       "species": "Sweet Chestnut (Castanea sativa)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 200 to 400 years, judged from a trunk 5.5 m round",
+      "age_min": 200,
+      "age_max": 400,
       "location": {
         "address": "Loc. Castagnara, Sardagna, 38121 Trento TN, Italy",
         "latitude": 46.062369,
@@ -264,9 +265,10 @@
         "status": "missing"
       },
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 550 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
       "girth_cm": 550,
-      "how_to_recognise": "You are looking for a grove rather than an appointment: sweet chestnuts on the hillside at Castagnara, waymarked as the Sentiero dei Castagni. The register maps the locality and not the trunk."
+      "how_to_recognise": "You are looking for a grove rather than an appointment: sweet chestnuts on the hillside at Castagnara, waymarked as the Sentiero dei Castagni. The register maps the locality and not the trunk.",
+      "age_basis": "girth"
     },
     {
       "id": "tre_008",
@@ -306,9 +308,9 @@
       "id": "tre_009",
       "name": "The Beech of Malga Brigolina",
       "species": "European Beech (Fagus sylvatica)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 175 to 350 years, judged from a trunk 4.65 m round",
+      "age_min": 175,
+      "age_max": 350,
       "location": {
         "address": "Prato sotto Malga Brigolina, Monte Bondone, 38123 Trento TN, Italy",
         "latitude": 46.05985,
@@ -340,17 +342,18 @@
       },
       "notes": "Pin is the register coordinate, roughly 330 m north-east of the malga building, so it is the meadow rather than the trunk: location_precision approximate. Age deliberately empty, Italy's national register has no age column and no source publishes one. Flagged because the girth comes from the register alone and the tourism sources describe the tree only as secolare. Access verdict 2026-08-14: open alpine pasture on Monte Bondone, nobody's home and no permission needed, so the tree clears hard rule 10; what held it back until now was a transport line, and bus B202 plus the Giro della Selva path supplies one.",
       "height_m": 17.0,
-      "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 465 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
       "girth_cm": 465,
-      "how_to_recognise": "You can recognise it by standing alone in the grass with nothing within reach of its branches, low and broad rather than tall, 4.65 metres round. It is in the pasture below Malga Brigolina."
+      "how_to_recognise": "You can recognise it by standing alone in the grass with nothing within reach of its branches, low and broad rather than tall, 4.65 metres round. It is in the pasture below Malga Brigolina.",
+      "age_basis": "girth"
     },
     {
       "id": "tre_010",
       "name": "The Wild Cherry of Passo del Cimirlo",
       "species": "Wild Cherry (Prunus avium)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 125 to 250 years, judged from a trunk 3.59 m round",
+      "age_min": 125,
+      "age_max": 250,
       "location": {
         "address": "Passo del Cimirlo, Casare, 38123 Trento TN, Italy",
         "latitude": 46.064825,
@@ -382,9 +385,10 @@
       },
       "notes": "Age deliberately empty: the comune's register has no age column and no source found gives one. Flagged because girth/height come from a single register entry with press corroborating only the tree's existence and monumental status, not its measurements. This is the tenth tree noted as a research question in review_2026_08_14b; researched fresh 2026-08-15 from the comune's own open dataset rather than the villa-access leads, which remain held.",
       "height_m": 26.5,
-      "verify_notes": "Height 26.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 26.5 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 359 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
       "girth_cm": 359,
-      "how_to_recognise": "You can recognise it by its trunk, 3.59 metres round, unusually thick for a wild cherry, on forest land near old war fortifications. It stands at Passo del Cimirlo, Casare."
+      "how_to_recognise": "You can recognise it by its trunk, 3.59 metres round, unusually thick for a wild cherry, on forest land near old war fortifications. It stands at Passo del Cimirlo, Casare.",
+      "age_basis": "girth"
     }
   ]
 }

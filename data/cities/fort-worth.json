@@ -130,9 +130,9 @@
       "id": "ftw_004",
       "name": "The Pioneers Rest Texas Ash",
       "species": "Texas Ash (Fraxinus texensis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 75 to 150 years, judged from a trunk 2.13 m round",
+      "age_min": 75,
+      "age_max": 150,
       "girth_cm": 213,
       "location": {
         "address": "Pioneers Rest Cemetery, 620 Samuels Avenue, Fort Worth, TX 76102",
@@ -155,7 +155,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the ash growing among the earliest graves. It stands in Pioneers Rest Cemetery, on Samuels Avenue."
+      "how_to_recognise": "You can recognise it as the ash growing among the earliest graves. It stands in Pioneers Rest Cemetery, on Samuels Avenue.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 213 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ]
 }

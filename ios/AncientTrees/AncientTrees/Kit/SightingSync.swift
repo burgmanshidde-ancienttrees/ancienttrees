@@ -63,6 +63,7 @@ enum SightingSync {
             // tree on the phone, waiting for a push to tell us what we already
             // know.
             made.syncedAt = Date()
+            made.girthHugs = row["girth_hugs"] as? String
             if let st = row["status"] as? String,
                let k = Sightings.Status(rawValue: st) { made.status = k }
             made.shared = row["shared"] as? Bool
@@ -184,18 +185,43 @@ enum SightingSync {
         row["tree_id"] = sighting.treeId
         row["species"] = sighting.species
         row["age"] = sighting.age
-        // Sent only when there is one. A key PostgREST does not know rejects
-        // the whole row, so a phone meeting a database where supabase/girth.sql
-        // has not been run yet keeps syncing every tree that has no girth.
+        // Both sent only when there is one. A key PostgREST does not know
+        // rejects the whole row, so a phone meeting a database where
+        // supabase/girth.sql or supabase/sightings.sql has not been run yet
+        // keeps syncing every tree that carries neither.
+        //
+        // Two fields rather than one because they are two questions: girth_cm
+        // is a measurement typed against a tree we already map, girth_hugs is
+        // what a contributor answers while adding a tree they found. The
+        // second is stored as they gave it and converted server side.
         if let g = sighting.girthCm { row["girth_cm"] = g }
+        if let h = sighting.girthHugs { row["girth_hugs"] = h }
         row["photo"] = stored
         // Explicit, like every other field here, rather than left to the
         // column's own default: the LOCAL value is the one somebody may have
         // just changed by tapping "Stop sharing the link", and omitting the
         // key would let a later edit silently re-share a tree they turned off.
         if let shared = sighting.shared { row["shared"] = shared }
-        let landed = await Supa.post("/rest/v1/sightings?on_conflict=user_id,id",
+        var landed = await Supa.post("/rest/v1/sightings?on_conflict=user_id,id",
                                 token: s.accessToken, body: [row])
+        // ONE RETRY WITHOUT THE TRUNK ANSWER, for the window where the column
+        // does not exist yet.
+        //
+        // `girth_hugs` shipped on 2026-09-11 and its column is a hand-applied
+        // migration (supabase/sightings.sql), so between this build and that
+        // paste PostgREST refuses the whole row for a column it cannot find.
+        // Refusing the row loses the TREE, and the trunk is the least valuable
+        // thing in it: losing a tree somebody walked to because they answered
+        // an optional question is not a trade this app gets to make.
+        //
+        // Cheap and self-retiring: the key is only present when somebody
+        // answered, so nothing else ever takes the second call, and once the
+        // column exists the first call lands and this never runs again.
+        if !landed, row["girth_hugs"] != nil {
+            row["girth_hugs"] = nil
+            landed = await Supa.post("/rest/v1/sightings?on_conflict=user_id,id",
+                                     token: s.accessToken, body: [row])
+        }
         // ONLY when the photograph went too, where there is one. A row without
         // its picture is not a copy of this sighting, and treating it as one
         // is how somebody signs out and loses the photograph while keeping the
