@@ -1,6 +1,63 @@
 # LOG
 
 <!-- archive-index -->
+
+## 2026-09-17 (session) - The translations went live, one gate late, and what is left is written down
+
+**It was not live when I said it was.** The seven-language work reached main at
+11:22 and the deploy failed thirty-five seconds later, on `i18ncheck.py`, before
+the build ever started. I had run that check before the merge and not after it,
+which is exactly the gap the 622-commit merge could produce: `data/i18n/it/`
+was one of the thirteen conflicted paths. So the push was green in my own log
+and red in CI, and nobody would have known until somebody looked at the site.
+Fixed the same hour and the whole chain re-run in the right order this time.
+
+The finding itself was small and real, and it is the check I added yesterday
+doing its job: Jubaea chilensis was standing under two Italian names, "Palma da
+vino cilena" in Florence and "Palma del Cile" in Naples, which would have split
+the Italian species page in two. Both are correct Italian; the national MASAF
+register uses "del Cile" in six of its seven entries, so Florence moved.
+
+**And the reason it could happen at all, which is worth more than the fix.**
+`git config core.hooksPath` was UNSET in this clone, so the pre-push hook has
+never run here once. It carries eight checks and has since 27 August:
+handoffcheck, paritycheck, crosscheck, pitchcheck, netcheck and the rest. All
+installed, all documented, all dead, because enabling them is a manual step per
+clone and every remote session starts from a clone made an hour ago. A hook
+nobody enables is not a hook. `prepare.py` now arms it at the top of every run
+and never overrides a path somebody set deliberately.
+
+The overlay check has been added to that hook too, tested red then green. It is
+the FIRST step in deploy.yml, so a problem there kills the build before a single
+page renders, which is exactly what happened.
+
+**What is live now:** 67 translated city sets across seven languages, es (18),
+de (12), it (10), ja (10), nl (7), pt (5), fr (5), each with its trees, its
+question page and the frame around them. Plus a localised /cities and /explore
+in all seven, a language picker in the footer that offers only pages that
+genuinely exist, and hreflang that advertises real translations rather than
+fallbacks. Legal pages stay English on your call.
+
+**What is still to do is in PRODUCT_TODO.md**, at the top, five items. The
+short version, in order: there is no localised HOMEPAGE, which is the biggest
+hole (a Spanish reader who clicks the logo lands in English with no way back);
+/countries, /species, /parks and /collections have no localised route and
+should wait for their leaf intros; the app is English-only and /api/trees.json
+carries no language, so not one overlay can reach a phone; Cologne and Takayama
+are too small to be worth a pass yet; and the six-claim cap in passcheck.py
+disagrees with batch translation passes, which is a line I did not want to move
+on my own.
+
+Which city gets translated next needs no list: `python3 scripts/langcheck.py
+--next` answers it, and `langcheck.py` alone prints the per-language verdict.
+Those verdicts are still early readings until 2026-09-19, which is Contract J's
+own four-week mark. As of today de, es and ja read ROLL OUT; fr, it, nl and pt
+have no verdict yet.
+
+FOR HIDDE: one thing, and it is not git. `drafts/batches/reply-schloesserverwaltung-2.json`
+is the Munich photograph reply, still `status: "draft"`. Flip it to
+`approved_by_hidde` and it goes out; outreach is yours under hard rule 4.
+
 ## 2026-09-17 (session) - Google leads the sign-in sheet, Apple moves behind More options
 
 Hidde: "Google hoort daar Apple is de optie die vertoond wordt als je more

@@ -72,6 +72,10 @@
     "2026-09-16": {
       "note": "Fixed the underlying gap: night_shift() in daily_digest.py now feeds a real stall (all knocks in the 24h window producing 0 trees and under 2 real minutes) into ATTENTION, so the headline verdict stops saying 'nothing here needs you' while the machine is dead. Did not touch the root cause itself (the shared usage window closing for 3 days, 2026-09-14 through this morning): that is Hidde's subscription window per CLAUDE.md's capacity doctrine, not a bug, and it appears to have reopened as of this session (currently running with normal turns). Commit 16282a0a.",
       "at": "2026-09-16T14:32:04+00:00"
+    },
+    "2026-09-17": {
+      "note": "Jubaea chilensis split in Italian: florence.json renamed to 'Palma del Cile' to match naples.json, on MASAF's own dominant spelling (6 of 7 entries). i18ncheck clean on 67 overlays; i18ncheck added to the pre-push hook, tested red then green, so this class cannot reach main again.",
+      "at": "2026-09-17T12:01:11+00:00"
     }
   }
 }

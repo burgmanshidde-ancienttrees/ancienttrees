@@ -445,10 +445,39 @@ def refill_batches(b, want=3):
 READY_FLOOR = 60
 
 
+def arm_the_hooks():
+    """Point git at scripts/hooks, because a hook nobody enables is no hook.
+
+    Written 2026-09-17, after a push went to main with a red gate on it. The
+    pre-push hook has carried eight checks since 27 August and it had never run
+    once in this clone: it needs `git config core.hooksPath scripts/hooks`, and
+    that is per clone, while every remote session starts from a clone made an
+    hour ago. So handoffcheck, paritycheck, crosscheck and pitchcheck were all
+    installed, all documented, and all dead on arrival in exactly the sessions
+    that most needed them.
+
+    prepare.py runs at the top of every run, which makes it the one place that
+    can fix a fresh clone before anything is pushed from it. It never overrides
+    a path somebody set deliberately.
+    """
+    import subprocess
+    try:
+        cur = subprocess.run(["git", "config", "core.hooksPath"], cwd=ROOT,
+                             capture_output=True, text=True, timeout=10).stdout.strip()
+        if cur:
+            return
+        subprocess.run(["git", "config", "core.hooksPath", "scripts/hooks"],
+                       cwd=ROOT, capture_output=True, timeout=10)
+        print("  armed the pre-push hooks (core.hooksPath was unset in this clone)")
+    except Exception:
+        pass  # never let a git quirk stop a run from starting
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--status", action="store_true")
     a = ap.parse_args()
+    arm_the_hooks()
     if a.status:
         pipeline_status()
         return 0

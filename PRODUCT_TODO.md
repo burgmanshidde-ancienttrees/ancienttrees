@@ -1,3 +1,52 @@
+## TRANSLATION: WHAT IS STILL OPEN (written 2026-09-17, after the seven-language rollout)
+
+67 overlays are live across es (18), de (12), it (10), ja (10), nl (7), pt (5),
+fr (5). What follows is only the part **no script knows**. Which city to
+translate next is already answered by `python3 scripts/langcheck.py --next`, and
+the per-language roll-out verdict by `langcheck.py` with no flag, so neither is
+repeated here. Do not re-derive an order in this file.
+
+1. **There is no localised homepage, and it is the biggest hole in the frame.**
+   `site/src/pages/<lang>/` holds `[city]`, `cities.astro` and `explore.astro`
+   and nothing else, so a Spanish reader on /es/cadiz who clicks the logo lands
+   on the English homepage with no way back into Spanish. The picker already
+   hides itself rather than offering a 404 (`pathInEveryLanguage` returns {} for
+   a path it has no route for), so nothing is broken; it is simply missing.
+   Every reference product (AllTrails, komoot) has one. The homepage is also
+   the page carrying the value proposition, which is the one piece of copy a
+   stranger reads before deciding anything.
+   **Cost:** the strings, not the structure. `ui(lang)` already carries most of
+   the frame. **Then add "" to TRANSLATED_STANDING** in site/src/lib/i18n.ts and
+   the picker starts offering it everywhere at once.
+
+2. **/countries, /species, /parks and /collections have no localised route.**
+   Same shape as item 1 and deliberately below it: each index is only worth
+   shipping once its leaf pages have intros in that language, and those intros
+   are hand-written per subject (Contracts F and G). An index linking to seven
+   English leaves is a worse page than no index. Do the homepage first.
+
+3. **The app is English-only and nothing reaches it.** No `.xcstrings` and no
+   `.lproj` anywhere under ios/, and `/api/trees.json` carries no `lang`, so not
+   one of the 67 overlays can reach a phone. CONVENTIONS.md 2026-09-17 records
+   what the reference apps do here, so the design question is answered and only
+   the work is left. Note the honest sequence: the feed has to carry the
+   language before any String Catalog is worth filling, because translating the
+   chrome around English tree stories is the half that shows.
+
+4. **Cologne (5 trees) and Takayama (1) are held back on purpose.** A pass costs
+   about 148k tokens fixed plus 2.4k per tree, so under roughly ten trees a
+   translation costs more per tree than researching a new tree does. They
+   translate when they grow, not before. This is arithmetic, not a judgement
+   about the cities.
+
+5. **The six-claim cap and batch passes disagree, and it is Hidde's call.**
+   `MAX_OPEN_CLAIMS = 6` in scripts/passcheck.py was set for research passes,
+   where a claim protects a city from being researched twice. A translation
+   batch wants 15 to 20 cities in one context, which is where its cost advantage
+   comes from, and it cannot claim them. Nothing has collided yet; raising the
+   cap for `--kind translate` only is the obvious fix and is not a run's to make
+   unilaterally, because the cap is what stops two sessions colliding.
+
 ## THE NIGHT-RUN QUEUE, rewritten 2026-08-05 after eight passes ran
 
 **Run `python3 scripts/backlog.py` before writing any brief.** Three passes have
