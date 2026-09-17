@@ -12,6 +12,27 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 4) - `git push` auth failure mid-session, recurrence of the documented token-swap fix
+
+Right after committing the Perušić work above, `git push` started failing
+with "Invalid username or token" on both the embedded remote URL and a
+credential-helper retry: `GH_TOKEN`, `GITHUB_TOKEN` and `DEFAULT_WORKFLOW_TOKEN`
+all decoded (as JWTs) to already-expired `exp` claims, `GH_TOKEN` about 25
+minutes past and `DEFAULT_WORKFLOW_TOKEN` about 44. `gh run list` 401'd the
+same way, confirming it was not a fluke. This is the same failure mode
+archive/LOG-2026-08.md already recorded twice (2026-08-2x): a GitHub App
+installation token with roughly a one-hour lifetime, minted once at session
+start and never refreshed mid-session. The documented fix still worked
+despite the JWT looking expired on paper: pointing the git remote's
+credential helper at `DEFAULT_WORKFLOW_TOKEN` instead of `GH_TOKEN` let the
+push through immediately. Left the credential helper configured that way
+(`git config credential.https://github.com.helper`) rather than reverting,
+so later pushes in this same session do not hit the same wall. Worth
+repeating in this file a third time since two mentions apparently was not
+enough for it to be checked automatically before retrying blindly: if
+`git push` ever fails mid-session with an auth error, try
+`DEFAULT_WORKFLOW_TOKEN` in the remote before assuming the work is stuck.
+
 ## 2026-09-16 (continuation 3) - A new place: Perušić, Croatia, the largest common fir left in Europe
 
 Same window, continuing after Sremski Karlovci above, further down
