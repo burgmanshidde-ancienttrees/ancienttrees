@@ -1,5 +1,35 @@
 # Decisions
 
+## 2026-09-17 - The legal pages stay English, in every language
+
+Hidde, asked whether the general pages should all be translated now that the
+structure work had started: "Juridisch en legal enzo hou maar Engels dat lijkt
+toch niemand voorlopig."
+
+**What this covers:** /privacy, /terms and /sources, 13,620 characters between
+them. They are not copy. They are a statement of what we do with other people's
+data, made on Hidde's name, and a mistranslated sentence there is a claim about
+his obligations in a language neither of us can read back. That is question 3 of
+the mandate, can it hurt anyone other than Hidde, and the honest answer is that
+it can hurt the reader who relies on it.
+
+His reason is also the right one on its own terms: at the volumes this site
+runs at, nobody is reading the terms page in Spanish, so the risk buys nothing.
+Keeping legal text in one governing language is the ordinary practice for
+international sites rather than a shortcut.
+
+**What this does NOT cover, so the line is clear.** Everything a reader uses to
+find a tree is translated and stays translated: the city, tree and question
+pages, the indexes, the navigation, the homepage, /contribute and /app. The
+split is between the product and the paperwork, not between cheap and
+expensive.
+
+**The consequence to leave honest.** A translated page's footer links to
+/privacy and /terms in English. That is the intended state and not a gap for a
+later run to close; a session that finds it should read this entry rather than
+"fix" it. If the volumes ever change, the thing that reopens this is a reader
+asking, not a tidiness instinct.
+
 ## 2026-09-12 - A tree may carry several photographs, and the lead field does not move
 
 Hidde, sending a close-up of the Camphor of Munakata Shrine beside the wide shot
