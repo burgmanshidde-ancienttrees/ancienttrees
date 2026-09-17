@@ -1,6 +1,83 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - The homepage duplication was fixed five days ago and never merged
+
+Hidde, with a screenshot of the homepage: "wat ik niet helemaal begrijp is dat
+er nog steeds een dubbele missie op home staat terwijl we het hier uitgebreid
+over hebben gehad, zijn er dingen niet gepusht?"
+
+They were pushed. The fix was written on 2026-09-12 and pushed to
+`claude/website-ux-audit-aji746`, where it sat for five days while he looked at
+the bug he had already reported. Merged into main today, conflicts resolved by
+keeping both sides:
+
+- **The homepage says the contribution ask once.** The `.mission` block above
+  the footer is gone; the footer carries the same sentence on all 5,400 pages,
+  and on the homepage the two stood one under the other inside a single screen.
+- **The species column is ranked by tree count**, not alphabetically. Under a
+  heading reading "Top species" it had been listing Aleppo Pine, American Elm,
+  American Sycamore, Amur Cork Tree, Bald Cypress, Baobab, Bishop Wood, Bitter
+  Orange. It now reads Pedunculate Oak, London Plane, Ginkgo, Horse Chestnut.
+- **Tree pages state each fact once**, English and translated: the facts list no
+  longer repeats the age the panel above already prints, and the note under the
+  map no longer repeats the transport sentence the "Getting there" row carries.
+  Main's Girth row and the WorthIt report block were added after that branch was
+  written and are kept.
+
+Verified: astro build 5,436 pages, qa.py passed on 9,234 pages, preflight 0
+problems, paritycheck clean, and the built index.html carries the mission
+sentence exactly once.
+
+**And the ratchet, because the bug was not the duplication.** The corpus got its
+merge ruling this morning and `handoffcheck.py` with it, which refuses a LOG.md
+line asking him for git plumbing. That catches the sentence. It does not catch
+the SILENCE, which is the shape this took and the more common one: a session
+finishes, pushes a branch, says nothing, and the work is gone. Twenty-six
+branches were unmerged when this was checked, six of them carrying site or app
+work.
+
+`work_stranded_on_branches()` in `scripts/brief.py` now names them at the top of
+the session brief, beside the broken gates, with their date and subject. It asks
+git rather than keeping a list, so a branch whose work landed some other way
+drops off by itself, and one that is genuinely abandoned has to be merged or
+deleted by somebody rather than left to a fetch. It reports only branches
+touching `site/` or `ios/`, because those are the ones a reader or a phone would
+notice.
+
+The six it names are the next thing to work through: `vigilant-thompson` (an app
+screenshot viewer), `multiple-images-per-tree`, `mobile-search-zoom-bug`,
+`hero-photo-ratio`, `emoji-icon-inconsistencies` and `boom-pagina-kop`. Each
+needs reading against a main that has moved before it is merged or deleted.
+
+
+## 2026-09-17 - Alkmaar 7 -> 14, Eindhoven verify pass dispatched
+
+Resumed a window an earlier attempt had stopped in with two claims left
+standing (alkmaar write, eindhoven verify). Alkmaar already had five of
+seven stories drafted; wrote the last two (a copper beech and a horse
+chestnut, both single-source and flagged honestly) and merged all seven
+into the live city, taking **Alkmaar from 7 to 14 trees**, a second
+walkable cluster around the Bolwerken ramparts and the Alkmaarderhout.
+Updated the page's count promises (intro, meta description, FAQ) to match.
+Build and preflight clean, claim released, pushed to main.
+
+Eindhoven's claim had no work behind it yet, so dispatched a verify pass
+on its 751-candidate Dutch register pool, aimed at one new tight cluster
+since the existing 16 trees already span 6.5 km. It found one: five trees
+in **Villapark**, a protected garden suburb Philips built for its
+executives from 1907, three of them double-sourced against the city's own
+street-tree inventory. Wrote all five stories, merged them (**Eindhoven
+16 -> 21**), and updated the count promises. Build and preflight clean,
+claim released, pushed to main.
+
+Also added a species page, `/species/weeping-silver-lime`: fixing
+Alkmaar's species-name drift above (it now matches Ghent and Maastricht)
+pushed that cultivar to exactly the three trees a Contract F page needs,
+and pagegaps.py flagged the gap immediately. Written from those three
+trees' own facts, all park designers who planted it for the same
+wind-shimmer effect.
+
 ## 2026-09-17 - Spacing becomes a number, because eyes cannot see it
 
 Hidde, on a sheet whose every element was right: "verticale spacing ziet er
@@ -3104,6 +3181,61 @@ picture.
 
 Most of those pages draw no map at all, which is the part that made it
 wrong rather than merely long.
+## 2026-09-12 (session) - Tree pages said each fact twice; they say it once now
+
+Fix 1 from the UX audit, on branch claude/website-ux-audit-aji746.
+
+The facts panel above the story arrived with the app's design on 2026-09-04
+and took over age, species and the ticket. The detail list below it was never
+trimmed, so every tree page had been repeating itself since. Measured over 500
+English pages: 307 printed an age in both places and 283 of those printed two
+different forms of it (a computed band "260-285" up top against the written
+"275 years" below), 25 repeated the access sentence word for word, and the
+note under the map repeated the transport line on every page that has one. On
+translated pages the species row was character for character the panel.
+
+Each row now renders only where the panel is not carrying it. Age survives on
+the 70 of 500 pages where the panel had no number, which are exactly the pages
+where the written estimate is the only age there is. Species stays in English,
+because the panel there shows the common name alone and Contract A wants the
+scientific name in the fact block; on translated pages the panel already
+prints the whole string, so the row went. After: zero duplicates in either
+language, nothing lost from any page.
+
+qa 8582 pages clean, smoke passed, paritycheck clean, and the block was looked
+at at 375px in English and Spanish.
+
+## 2026-09-12 (session) - The homepage said the same thing twice, and "Top species" was the alphabet
+
+Hidde sent a screenshot of the phone homepage: the mission sentence stands
+once in the page's own block and again in the footer directly underneath.
+Both fixed, on branch claude/website-ux-audit-aji746.
+
+The homepage `.mission` block is gone. The footer's `footerAbout` says the
+same sentence on all 5,515 pages, so the footer is the copy that survives;
+the page-level one added only "or want to map a whole city" and paid for it
+by saying everything else a second time. Its CSS went with it.
+
+"Top species" in the directory was sorted alphabetically and printed Aleppo
+Pine, American Elm, American Sycamore, Amur Cork Tree, Atlas Cedar, Austrian
+Pine, Bald Cypress, Baobab, Bishop Wood, Bitter Orange, which is the first
+ten names in the alphabet under a heading promising the top of the site. Top
+cities, Collections and Oldest trees in the same block are all genuinely
+ranked, and the Species SHELF further up the page already sorts by tree
+count, so the directory disagreed with its own label and with itself one
+screen higher. Now ranked: Pedunculate Oak, London Plane, Ginkgo.
+
+Rebuilt (5,515 pages), qa clean, preflight 0 problems, smoke test passed.
+
+The rest of the UX walk (375px, real viewport, screenshots) is reported to
+him in session rather than written up here, because most of it is a question
+for him rather than a finding to act on. The one thing worth recording for a
+later run: on 283 of 500 sampled tree pages the age is printed twice in two
+different forms, a computed band in the top panel ("260-285") and the written
+estimate in the facts table below ("275 years"), and access text is repeated
+word for word on 25 of them. The comment above that block in
+site/src/pages/[city]/[tree].astro already states the rule it breaks: "a fact
+appears exactly once per page."
 
 ## 2026-09-12 - Night run 2026-09-12 02:02 UTC ended without saying anything
 
