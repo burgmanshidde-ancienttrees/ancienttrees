@@ -18,6 +18,41 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 6) - Enschede 12 -> 13, the Sweet Birch of the Oosterbegraafplaats
+
+Released a standing claim rather than starting fresh: an earlier attempt in
+this same window had already run a verify pass and left its finding on disk
+(`data/research/enschede-verified.json`), uncommitted. One candidate: ens_013,
+"The Sweet Birch of the Oosterbegraafplaats" (Betula lenta), the fourth
+register-designated tree on the Oosterbegraafplaats cemetery alongside
+ens_008/009/010 (Hungarian Oak, Sweet Gum, Oriental Spruce). Netherlands
+LRMB register nr 1692854 is the primary source (dendrological grounds, no
+age or planting history recorded); monumentaltrees.com independently lists
+the same specimen and was used only to corroborate species, girth (234cm)
+and height (~18m), never as the sole source, per hard rule 1. No age is
+documented anywhere, so `age_estimate` stays empty rather than guessed, same
+as ens_010's spruce.
+
+Wrote the story myself (one tree, below the six-candidate write-pass
+batching floor) and merged it into data/cities/enschede.json. Fixed the
+city's meta_description and question_meta, both of which still said twelve
+trees. Ran a full `npx astro build` and `scripts/qa.py` against the built
+output (both needed a fresh `npm install`, site/ had no node_modules this
+session): 5745 pages built, QA clean. preflight.py and superlatives.py also
+pass clean (one unrelated pre-existing FAIL on preflight was the enschede
+count itself, now fixed; everything else it prints is pre-existing NOTEs
+elsewhere in the corpus). Photo still missing (13 of 13 for this city).
+
+Also confirmed rather than re-investigated: the two rung-2 alerts from
+session start are both already-known non-issues. Weekly analysis's failure
+on 2026-09-14 matches the documented usage-limit-death fingerprint exactly
+(1 turn, 0 cost, <1s) and `scripts/health.py` says so outright; the iOS
+app's newest failure (2026-09-16) is the same already-documented flaky tap
+race in `FlowWalk.swift` (`testEveryFlowLeavesAWayBack` failing to find
+"person-more"), already recorded as FOR HIDDE (needs a workflow-scoped push
+token this bot's token does not have) as recently as 2026-09-16. Neither
+needed new work.
+
 ## 2026-09-17 (continuation) - Florence 26 -> 27; city_queue.py stops re-recommending settled dead ends
 
 Picked up two claims an earlier attempt in this window left standing. Vilnius's

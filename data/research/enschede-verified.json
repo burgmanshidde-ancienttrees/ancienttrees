@@ -1,0 +1,26 @@
+[
+ {
+  "id": "ens_013",
+  "name": "The Sweet Birch of the Oosterbegraafplaats",
+  "species": "Sweet Birch (Betula lenta)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 234,
+  "location": {
+   "address": "Oosterbegraafplaats, noordelijke hoofdpad, achteraan links, Noord Esmarkerrondweg 407, Enschede",
+   "latitude": 52.222483,
+   "longitude": 6.934562,
+   "neighbourhood": "Oosterbegraafplaats cemetery"
+  },
+  "verified_sources": [
+   "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1692854",
+   "https://www.monumentaltrees.com/nl/nld/overijssel/enschede/2859_oosterbegraafplaats/15512/"
+  ],
+  "access": "Free. The cemetery is a public rijksmonument, open daily from sunrise to sunset.",
+  "transport": "About 3 km northeast of Enschede city centre (Noord Esmarkerrondweg 407); best reached by bicycle or car. Same cemetery as ens_008/009/010.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Fourth register-designated tree on the Oosterbegraafplaats cemetery, same site as ens_008 (Hungarian Oak), ens_009 (Sweet Gum) and ens_010 (Oriental Spruce). Register (nr 1692854) records no age and no site history (both onbekend/unknown), only the reason dendrologisch. A previous verify pass held this candidate back on species uncertainty (Suikerberk is not a standard Dutch common name). monumentaltrees.com independently lists a Betula lenta on this same cemetery, called Suikerberk in Dutch, with a measured girth of 2.34m at 1.30m height and a height of 18m, dated 23 November 2013 -- this resolves the species question and is used here as corroboration only (never as sole source, per hard rule 1), the register nr remains the primary source. No age is documented anywhere; flagged rather than estimated, since no reliable growth-rate basis is at hand for this species/site. Cemetery is described by monumentaltrees.com as holding 16 monumental trees total with Enschede/Overijssel/Netherlands champion specimens, so more remain unmined here as leads."
+ }
+]
