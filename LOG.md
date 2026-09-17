@@ -1,6 +1,29 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - Sign in with Apple is live on the web
+
+Hidde opened /auth/v1/authorize?provider=apple and got Apple's own login page:
+client_id=app.ancienttrees.web, the Supabase callback as redirect_uri, our tree
+icon above it. That is the whole chain answering in one screen rather than
+three steps each ticked off on its own, so the flag went from false to true.
+
+The button itself was built and wired on 2026-09-12 and had been dark since,
+which is why this is one word. It renders on the sheet's second screen, behind
+More options, on the dialog and on /account, in all eight languages with real
+translations (Appleで続ける, Continuer avec Apple, not English left standing).
+
+Verified on the built output: Google loud and visible, Apple and email quiet
+and behind the disclosure, More options removing itself. qa 15,507 pages,
+preflight 0 problems, paritycheck, crosscheck and the smoke test clean.
+Screenshotted at 402pt. Merged and pushed to main.
+
+FOR HIDDE: keep the .p8 somewhere you can find it. Apple's client secret is a
+JWT capped at six months and expires 2027-03-18, and Apple says nothing when it
+lapses, so the button would simply start failing. health.py warns a fortnight
+ahead and scripts/apple_secret.py regenerates it, but only on a machine holding
+that key, and Apple hands it over once.
+
 ## 2026-09-17 (session) - /cities lists cities, and the famous-tree collection is live
 
 Second of the stranded branches Hidde asked for, merged and deployed
