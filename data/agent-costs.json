@@ -8056,6 +8056,15 @@
     "note": "Contract J overlay via transbrief. kag_011 and kag_012 ship ageless, as the English does.",
     "wasted": 0,
     "brief_wrong": 1
+   },
+   {
+    "target": "de-batch (hamburg, salzburg, nuremberg, heidelberg, graz, dresden)",
+    "kind": "translate",
+    "tokens": 241154,
+    "trees": 50,
+    "note": "First batched pass: 6 cities in one context, calibration inlined so no i18n file was opened. Metered 4,823 tokens per tree against 13,474 for the same work as single-city passes. The pass's own estimate was 640k, 2.7x over; agent self-reports are unreliable in both directions and the harness figure is the one to log.",
+    "wasted": 0,
+    "brief_wrong": 0
    }
   ]
  }
