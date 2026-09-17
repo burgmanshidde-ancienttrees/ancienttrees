@@ -3936,6 +3936,53 @@ Per the prompt's "first dispatch is a write pass" rule, claimed and dispatched a
 **Free work alongside it, since the write pass ran as a background agent**: `python3 scripts/photo_hunt.py --recheck` refreshed the whole 2522-tree API sweep queue. `python3 scripts/photo_gaps.py --shortlist` named 7 photo-less, depth-allowed cities (checked each against DATA.md's 2026-09-09 roster: Leeuwarden, Tilburg, Helmond, Maastricht, Eindhoven, Budapest, Kamakura all qualify); ran `photo_fetch.py` to download their candidates into `photo-pass/` (gitignored) for a viewing pass. Budapest had nothing left to fetch. On a first look at the manifests most titles read as likely misses (Maastricht's top hits are Stolpersteine and city-wall remains, Leeuwarden pulled in an unrelated Amsterdam park and a Zutphen monument by filename coincidence) rather than genuine tree photographs; did not get to the actual pixel-by-pixel judging this window, so nothing was approved or rejected. That is next window's or a photo-judge pass's job.
 
 Checked `health.py` (rung 2 clear, no BLOCKER; one APP-tagged WARN in REVIEW.md about a "1 trees" pluralization bug in MapSearch.swift, correctly left alone per its own note that night runs don't touch app UI Swift), `sightings_inbox.py --status` (nothing waiting) and `recognise.py --stuck` (backlog still at zero) before starting.
+## 2026-09-11 (session) - The empty-shelf alarm had a hole in it, and 43 leads were holding a pin nobody read
+
+Chasing why the writable pile stood at 3 against its own floor of 60.
+
+**The alarm was silent, and that is why nobody fixed it.** prepare.py picks its directive from the DOMINANT missing field, and it has a branch for "species" and a branch for "source" and nothing else. The dominant gap had become "position" (527 mentions), so neither branch fired and a run under the floor was told nothing at all. Hidde's own ruling of 2026-09-01 ("de schrijfplank moet ook autonoom gevuld worden als die leeg raakt") has therefore not been reaching any run for some time. An alarm with a hole is worse than no alarm, because the silence reads as fine.
+
+Two fixes, both in prepare.py. It now counts the leads that are ONE field away rather than every mention of a field, because a lead missing four things is a scrape and closing one of its gaps buys nothing: the real picture is 119 on source, 91 on position, 41 on verification, 23 on name, 12 on species, against raw counts that made position look like the problem. And there is an else, so every gap now produces a directive whatever the dominant one turns out to be.
+
+**New: `scripts/repin.py`, the sibling of refill.py.** refill.py recovers a missing species from the tree's own name; this recovers a missing POSITION from a coordinate the lead was already holding under a key nothing reads (`coordinates`, `coords`, `coordinate`). 43 leads across 9 files, recovered for no tokens and no network.
+
+**Five of those 43 were lat/lng SWAPPED, and catching them is the point of the script rather than a detail.** Luxembourg's five carry `coordinates` as [lng, lat], so copying them as written would have put five pins in the Indian Ocean. The check is evidence rather than a hunch: a recovered pin is accepted only when it lands within 120 km of where that file's trees actually are, a swap only when the pair as written lands nowhere near and the swapped pair lands on it, and anything else is refused and left without a position. Nothing was refused today.
+
+**The honest result: the shelf went from 3 to 7, and scripts are now exhausted.** refill.py has nothing left to fill (0 leads), repin.py has nothing left to recover. The 119 leads that need only a source cannot be closed by any script, by definition: they are scrapes no pass has ever looked at. Refilling the shelf from here costs a verify pass, which the meter puts at 45k to 245k tokens for 0 to 7 trees, 37.8k per tree across 351 recorded passes. The batches prepare.py names are _famous-czech-republic (27 unsourced, all 27 with a photograph already attached), _famous-poland (the same), and trieste (27, no photographs).
+
+FOR HIDDE: that verify pass is the one thing standing between the night runs and an empty writing shelf, and it is your budget. Standing instruction says a run refills autonomously; I did not spend it inside a session with you sitting there without saying the number first.
+
+## 2026-09-11 (session) - A famous-tree collection, ranked by what the world already wrote
+
+Hidde: "Moeten we een famous tree collectie maken?" Yes, and it follows straight on from the city-list change in the entry below: the 341 places that left the city grid are mostly single famous trees, and they needed a front door.
+
+**/collections/famous-trees is live, 60 trees in four bands.** Generated rather than curated (Contract D, the pattern the thickest and tallest rankings already use), so it re-ranks itself on every build and no new famous tree can be forgotten. No blueprint change and no new page type.
+
+**What it ranks on, and this is the whole quality of the page: measured fame, not felt fame.** The number of language Wikipedias that carry an article on the tree, with their summed monthly reads breaking ties. Ranking by what I have heard of is the error CLAUDE.md already records twice, once for which city to open and once for which page to translate. The floor is two languages: one article usually means a local historian did their job, two means the tree travelled. El Árbol del Tule leads with 26, the Fortingall Yew 20, the Stelmuže Oak 19.
+
+**New: `scripts/fame.py`.** The fame chain already existed for LEADS in famous_demand.py and its answers sit in data/famous-demand.json; what was missing was the join to the trees we actually publish. fame.py does that join BY DISTANCE, never by name (150 m, the same number famous_map.py uses), and writes a `fame` block onto the tree carrying the Wikidata qid and the lead name beside the number, so the next run can check it rather than trust it. 147 trees got a number; 60 clear the two-language floor.
+
+**The honest gap, and it is filled by a script rather than by remembering.** 429 of the 938 cached leads have never been resolved, General Sherman among them, and resolving needs Wikidata and the pageviews API, which this sandbox cannot reach. `prepare.py` now prints the gap and the two lines that close it at the top of every run, so the first night run with network fills it and those trees appear on the page by themselves.
+
+Build 5367 pages, qa clean (8369), preflight 0 problems, superlatives no collisions. Looked at the page rendered at 375px and 1280px.
+
+Noted in passing, not acted on: prepare.py says the writable lead pile is down to **3**, far under its own floor of 60. The night runs will run out of stories to write within one pass.
+
+## 2026-09-11 (session) - /cities lists cities again: 241 of them, and the other 341 places get a section of their own
+
+Hidde, from his phone: "Ik zou in de city lijst wel echt cities alleen tonen en niet bomen die random in een park staan." He was looking at Australia, where Cooper Creek, Derby and the Flinders Ranges each sat with one tree in a card the same size as Brisbane's twenty.
+
+**What was wrong.** Blueprint v1.15 already said only cities appear on /cities, and it could not be obeyed: `kind` was declared twice in the same object in site/src/content.config.ts, so the second declaration won and the enum in force was `["city", "island"]`. A place could not be a region, a park or a forest even though that was approved on 2026-08-28. Fixed to one declaration. And the real cause was elsewhere anyway: the places breaking the list are single famous trees given a home under the floor exception of 2026-08-31, which are `kind: city` files and always will be.
+
+**The line, in site/src/lib/city-index.ts.** A place appears in the city grid when it calls itself a city AND either holds four trees or is a ranked city in data/city-queue.json. Mechanical both ways, no per-village judgement. 241 cities in the grid; the queue clause is what keeps Canberra, Nantes, Liverpool, Philadelphia and Turku there at one or two trees, because a ranked city we are deliberately opening is often two trees old for weeks.
+
+**The other 341 are still on the page**, under "Places with fewer than 4 trees", as plain text links grouped by country rather than photo cards, with a line saying what they are. Nothing is hidden, no URL moved, and that section is what keeps the five places whose country has no country page from being orphaned (Luxembourg, Mexico, New Zealand, South Korea, Turkey). The homepage's "All N cities" signpost now counts the same 241 rather than every place file. The country page heading reads "Every place we map in X" rather than "Every mapped city", which the Flinders Ranges never were.
+
+Build 5366 pages, qa.py clean (8368 pages), preflight 0 problems. Looked at the page rendered at 375px and 1280px, both sections. Recorded in DECISIONS.md and, for the convention question of how a directory treats a famous single thing, in CONVENTIONS.md.
+
+FOR HIDDE: one judgement call is yours to overrule in a sentence. Canberra stays on the list with its single tree because the queue ranks it as a city we are covering. If you would rather the grid held only places with something to walk between, say so and the queue clause comes out, which drops Canberra and ten others.
+
+## 2026-09-11 (continuation) - New city Hallstatt (4 trees, Austria's 7th), cleared two stale write claims
 
 An earlier attempt in this window stopped after 24 minutes with 96 unspent, having already released cleanly (no half-finished work behind it). Started from three standing claims left by attempts before that: `hallstatt` (verify, already finished, 4 trees sitting uncommitted), `busan` and `saopaulo` (write, but both cities are below the 4-tree floor with their register/Wikidata supply already exhausted, so nothing productive to write toward publication). Released busan and saopaulo's stale write claims rather than force research that CLAUDE.md itself rules out (from-zero web research on an unnamed city).
 
