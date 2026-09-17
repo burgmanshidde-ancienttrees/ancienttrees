@@ -162,10 +162,18 @@ jobs:
           # You have unstaged changes". The commit had already succeeded, so the
           # digest wrote its entry and then threw it away: DATA.md simply had no
           # row for 2026-08-17 and nothing anywhere said why.
+          # data/backlinks.json joined on 2026-09-17 for the same reason, and it
+          # had been throwing away more than a date. backlinks.check() rotates
+          # through the watch list least-recently-checked first and writes the
+          # new stamps back to the store; the store was never staged, so every
+          # morning started from the committed copy where all 25 pages carry
+          # 2026-09-08. The same first 12 were fetched every day and the last 13
+          # were never fetched at all, while last_seen on the two live links sat
+          # frozen at the day they were found.
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json \
-            data/outreach-sent.json data/cities \
+            data/outreach-sent.json data/cities data/backlinks.json \
             data/city-coords.json data/research/*-register-candidates.json 2>/dev/null || \
-            git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json data/city-coords.json data/outreach-sent.json
+            git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json data/city-coords.json data/outreach-sent.json data/backlinks.json
           if git diff --cached --quiet; then
             echo "No new entry today."
           else
