@@ -1,6 +1,12 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 - Night run 2026-09-17 06:13 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 26.3 minutes of its 120 minute window, 258 turns, 38 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: helmond, enschede, eindhoven, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-17 (session with Hidde) - A session merges its own work; handoffcheck.py
 
 **"Merge maar ik wil niet mergen doe dit zelf vraag nooit meer aan mij."**
