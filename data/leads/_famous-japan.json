@@ -809,28 +809,17 @@
       "resolved": "2026-09-05: verified and BLOCKED. Full record with both reasons in data/leads/tatsuno.json. It is a bamboo grove inside a working ryokan garden, so it fails the single-collectible-point rule and the walk-in-without-asking access test. Do not re-research."
     },
     {
-      "name": "Teno no Sugi",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Teno_no_Sugi.jpg",
-        "https://commons.wikimedia.org/wiki/File:Teno_no_Sugi_2.jpg",
-        "https://commons.wikimedia.org/wiki/File:Tenonosugi.jpg"
-      ],
-      "status": "lead",
-      "species": "Japanese Cedar (Cryptomeria sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "Torreya nucifera at Zenyō-ji",
-      "lat": null,
-      "lng": null,
+      "lat": 35.601556,
+      "lng": 139.641583,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Japanese_nutmeg_in_Zeny%C5%8Dmitsu-ji_201504_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Japanese_nutmeg_in_Zeny%C5%8Dmitsu-ji_201504_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Japanese_nutmeg_in_Zeny%C5%8Dmitsu-ji_201504_03.jpg"
       ],
-      "status": "lead"
+      "status": "resolved",
+      "species": "Japanese Nutmeg-yew (Torreya nucifera)",
+      "resolved": "2026-09-17: duplicate, not delivered. The temple's real name is Zenyo-ji (Setagaya-ku, Tokyo; 'Zenyomitsu-ji' is its full formal name, Eikosan Busshoin Daibirushanaden Zenyomitsu-ji, but it is known locally and on our own site as Zenyo-ji). This tree is ALREADY published as tok_020, The Kaya of Zenyo-ji, in data/cities/tokyo.json (35.601702, 139.642336), sourced from the same ja.wikipedia.org/wiki/善養寺のカヤ article this pass would have used: same 700-800y age estimate, same 22.6m height, same 530cm girth, same 1964 Tokyo Metropolitan Natural Monument designation. Straight-line distance from this lead's coordinate (read off the Wikipedia article's own {{coord}} template, 35 36 5.6 N 139 38 31.7 E) to tok_020 is about 70 metres, well within match distance for the same tree. WORTH FLAGGING FOR A PHOTO PASS: tok_020 currently ships with photo status 'missing', and this lead's three Commons files (Japanese nutmeg in Zenyomitsu-ji 201504_01/02/03.jpg, all dated April 2015) have not been viewed against the Cadiz standard. A photo-judge pass could close tok_020's photo gap directly from this lead's photo list."
     },
     {
       "name": "Tsutta no Keyaki",
@@ -1018,6 +1007,14 @@
       "species_basis": "confirmed by name and multiple sources (ja.wikipedia, Ichikawa city cultural-heritage page)",
       "note": "CORRECTED COORDINATES, 2026-09-04 (famousjapan-batch1 verify pass). The original 'Senbon Icho' entry in this file carried coordinates 31.48857/130.742443, which land in Tarumizu, Kagoshima on an unrelated modern (planted from 1953) private ginkgo garden of ~1,200 trees, not this tree. The photographs attached to that entry (Katsushika-hachimangu filenames) actually belong to THIS shrine: Katsushika Hachimangu, 4-2-1 Yawata, Ichikawa City, Chiba Prefecture. This ginkgo is a real single-specimen candidate: goshinboku estimated over 1,200 years old, height 22m, root girth 10.2m, trunk girth 10.8m, named 'Senbon' (thousand-trunk) because many shoots rose from the base after lightning split the original trunk, National Natural Monument since 1931-02-20, white-snake legend attached. Sources: ja.wikipedia.org/wiki/葛飾八幡宮, city.ichikawa.lg.jp/culture/24242.html. Not verified to ship-ready in this pass (out of scope for a Kagoshima-focused batch, and outside this pass's four-candidate limit); worth a dedicated Ichikawa/Chiba pass, checking day-trip distance to Tokyo before deciding its container.",
       "resolve_2026-09-06": "SHIPPED 2026-09-06 as tok_017, merged into data/cities/tokyo.json; question_meta tree-count fixed at the same time. Straight-line distance to Tokyo's nearest published tree (tok_014/tok_016, Yogo no Matsu, Edogawa Ward) is only 3.4km, not the ~15.9km figure measured against Tokyo's centroid; both sit on the JR Sobu Line, one stop / 6 minutes apart with no transfer, plus a short walk each end. Confirmed alive via a dated 2024-11-29/30 shrine/city light-up event (maruchiba.jp). Two independent sources beyond the shrine's own site: ja.wikipedia.org and city.ichikawa.lg.jp, agreeing on 1931 National Natural Monument designation, ~1,200-year estimated age, 22m height, 10.8m girth at breast height. Full facts in verify_notes on the delivered record; ready to write and merge into data/cities/tokyo.json, with its true place name (Ichikawa, Chiba) stated honestly per the day-trip rule."
+    },
+    {
+      "name": "The Kaya of Sawatari",
+      "lat": 38.473194,
+      "lng": 140.780609,
+      "species": "Japanese Torreya (Torreya nucifera)",
+      "status": "lead",
+      "resolved": "2026-09-17: verified (Taiwa Town's own Mahoroba Hyakusen page, archived, plus ja.wikipedia's Taiwa-cho article) but held rather than published. Torreya nucifera, town-designated highlight (not a National or Prefectural Natural Monument), roughly 450-500 years by the town's own figures, girth ~310cm, height ~16m. A good local history (a Date-era distance-marker tree, a travellers' rest stop on the old Yoshioka-Yamagata road) but no festival, no national designation and no record-holder claim, so the verifying pass's own honest read is that it does not clear the single-tree-destination bar the 2026-08-31 exception requires. No nearby published Ancient Trees city exists in Miyagi or Yamagata to join either. Coordinate is a nearby bus-stop approximation (location_precision would be approximate), not a tree-level pin. Keep as a lead; publish if a future pass finds stronger fame evidence or a Sendai-area/Taiwa page opens that it can join."
     }
   ],
   "blocked": [
@@ -1243,6 +1240,19 @@
         "https://ja.wikipedia.org/wiki/%E7%B8%84%E6%96%87%E6%9D%89",
         "https://www.nikkei.com/article/DGXNASDG1301I_T10C10A9000000/"
       ]
+    },
+    {
+      "name": "Teno no Sugi",
+      "lat": 32.98964,
+      "lng": 131.12431,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Teno_no_Sugi.jpg",
+        "https://commons.wikimedia.org/wiki/File:Teno_no_Sugi_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tenonosugi.jpg"
+      ],
+      "status": "blocked",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "reason": "Confirmed dead. This tree (the surviving 'female' of a once-paired Teno-no-Kamisugi) stood at Kokuzo Shrine, Ichinomiya, Aso City, Kumamoto, and was a National Natural Monument from 9 Dec 1924 (cited at 1000-2000 years old, about 47m tall, about 11m girth at breast height per a 1981 survey). Typhoon 19 (Mireille) snapped its main trunk 11m above ground on 27 Sep 1991; it never recovered and death was confirmed, so the designation was formally revoked on 6 Sep 2000. The lower 2.5-7m stump section is preserved under a shelter roof as a memorial, not a living tree and not a collectible entry per the dead-tree rule; a 1993 clone graft grown from its own cuttings stands replanted beside the stump but is too young (30-ish years) to be a collectible ancient tree in its own right. Source: ja.wikipedia.org/wiki/手野のスギ (citing 天然記念物事典 1981 and 日本の天然記念物 1984, plus the Bunkacho 2000 delisting notice); corroborated by explore-kumamoto.com/kokuzo-shrine-teno-sugi/."
     }
   ]
 }
