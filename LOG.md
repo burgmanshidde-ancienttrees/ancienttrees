@@ -1,6 +1,35 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - /cities lists cities, and the famous-tree collection is live
+
+Second of the stranded branches Hidde asked for, merged and deployed
+(claude/city-list-cities-only-tvip1a, written 09-11, unmerged for six days).
+
+- **/cities shows cities.** 254 in the grid, the rest under "Places with
+  fewer than 4 trees" as plain text by country. Cooper Creek, Derby and the
+  Flinders Ranges no longer sit with one tree in a card the size of
+  Brisbane's twenty. The queue clause keeps the cities we open at one or two
+  trees on purpose.
+- **Blueprint v1.15 could not be obeyed until now**: content.config.ts
+  declared  twice in one object, so the enum in force was ["city",
+  "island"] and the region, park and forest kinds approved on 2026-08-28
+  were unusable. One declaration now.
+- **/collections/famous-trees**, generated, 60 trees in four bands, ranked on
+  how many language Wikipedias wrote the tree up rather than on what anybody
+  had heard of. 147 trees carry a fame number; 60 clear the two-language
+  floor.
+- **43 leads recovered** from coordinates they already held under a key
+  nothing read, and prepare.py's empty-shelf alarm now fires on any dominant
+  gap rather than only on a missing species or source.
+
+The famous ranking had to be ported into site/src/lib/collection-rank.ts
+rather than merged into the page: this morning's empty-collections merge moved
+the MODES table out of the page, because the page was not its only reader.
+
+Verified: build 11,710 pages, qa 15,508 pages, preflight 0 problems, and the
+built collection carries 6/7/17/30 trees across its four bands.
+
 
 ## 2026-09-17 (session) - The translations went live, one gate late, and what is left is written down
 
