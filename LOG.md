@@ -1,6 +1,38 @@
 # LOG
 
 <!-- archive-index -->
+
+## 2026-09-17 - Digest session: App Store downloads is its own block now, and the fold is a check
+
+Reported the daily digest. Two of the tables it contracts for were missing
+from this morning's entry: the app's own events, and App Store downloads. The
+first is honest bad luck, a PostHog read timeout. The second was structural
+and is fixed.
+
+`app_store_downloads_lines()` was being appended INSIDE `app_section`, so
+`block()` caught the PostHog exception and Apple's numbers, which come from
+Apple, died with it. The digest went green reporting neither. That is the
+exact thing the 2026-09-08 ruling forbids ("ik mis app downloads in deze
+lijst": its own table, beside the app's, never folded in), and it held in
+print while the wiring quietly had it folded.
+
+Live on main:
+- `app_store_section()` is its own `block()`, so the two fail apart.
+- `_posthog` retries once on a timeout, which is the failure that happened.
+- `check_app_downloads_are_their_own_block()` in qa.py refuses the fold
+  coming back. Second showing of one lesson, so a check rather than a third
+  sentence. Removing it needs Hidde.
+
+Verified by running the check against both shapes of the source: it fires on
+the folded one and passes on this one. qa.py's full suite needs a built site
+and this change does not touch the site, so it was not rebuilt here.
+
+Numbers, since tomorrow's digest will have moved on: Google's freshest day 37
+clicks on 2140 impressions, the window 387/18359 at 2.1%. Beacon 90 visits.
+Nothing from readers again: 50 of the 54 feedback rows in the fortnight are
+ours. Seven night runs, 453 minutes, 51 trees. Last known app numbers are
+09-15: 69 downloads over 12 days, 799 events ever.
+
 ## 2026-09-17 - Night run 2026-09-17 22:31 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 43.8 minutes of its 120 minute window, 350 turns, 58 commands refused by the allowlist, ended clean (success). 10 tree(s) reached data/cities across 9 city file(s), and the run still wrote no log entry of its own. Claims left behind: _famous-japan, arnhem, krakow, geneva, utrecht, which block the top of the queue until they expire.
