@@ -1,6 +1,14 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session with Hidde) - His Kyoto sighting now points at the muku
+
+On his "punt 2 doe dat maar": sighting 84ebae36 moved from kyo_016 (the Sudajii) to kyo_019 (the Twisted Muku of Omiya Gate) in Supabase, name included, with a fresh `updated_at` so the sync fix of 2026-09-12 takes it on his phone.
+
+**Watch for it being undone.** The row's `updated_at` was 2026-09-16, which means his phone pushed it that day. A build from BEFORE the sync fix skips rows it knows and then pushes everything back, so signing in on an old build writes kyo_016 over this again. If the row reads kyo_016 after he has installed a build containing e1a8e844, re-run the same PATCH; before that, it can revert.
+
+The photograph-versus-tick split stays open: Hidde wants to think about it longer.
+
 
 <!-- archive-index -->
 
