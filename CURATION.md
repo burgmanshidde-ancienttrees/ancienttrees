@@ -18,6 +18,26 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 10) - Tallinn register pool confirmed exhausted a second time, claim released
+
+Resumed a window an earlier attempt stopped in with 4 claims standing
+(helmond, enschede, tallinn, eindhoven, all verify). Enschede and Helmond
+each already had a `-verified.json` file with a story-ready tree
+(ens_014, ens_015, hlm_019) sitting unmerged; dispatched a write-stories
+pass on those rather than re-verifying.
+
+Read Tallinn's brief before dispatching a verify pass on it, per the
+"finish it or release it" rule. The remaining 52 unmined register
+candidates are almost entirely ornamental cultivars already carrying a
+`lead:` verdict from the 2026-09-12/13 passes (copper beeches, globe
+maples, pyramid oaks, weeping cultivars, none with an age or story), one
+dead tree, and 3 already-BLOCKED entries. The Wikidata sweep's 6
+candidates are the same already-blocked black poplar plus outliers
+10-20km out. Nothing here clears the bar. Released the claim rather than
+burn a 40-minute pass re-confirming what the 2026-09-12/13 passes already
+found; `city_queue.py --next` should move past Tallinn now that this is
+on record twice.
+
 ## 2026-09-17 (continuation 9) - Houston and Vancouver: write pass on 5 bought-and-paid-for trees, city grows to 6 and 7
 
 A prior attempt this window stopped with two write claims still standing on
