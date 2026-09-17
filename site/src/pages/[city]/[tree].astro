@@ -21,6 +21,7 @@ import { haversineKm } from "../../lib/walks";
 // plainly that the route is in the app, counts the walks from the same helper
 // that feeds the app, and says nothing at all when a city has no walk.
 import { pageWalksFor, hasWalksPage } from "../../lib/city-walks";
+import { cityHasQuestionPage } from "../../lib/question-page";
 import { speciesCommon, speciesPageSlugs } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
 import { usablePhotos, metaImageUrls, ogImageUrl } from "../../lib/images";
@@ -116,6 +117,10 @@ const cslug = city.id;
 // on saying the word "walk" to a reader. cityWalkCount (the number of walks,
 // not trees) only picks the wording once that gate has already passed.
 const cityHasWalksPage = hasWalksPage(city);
+// Contract B v1.18. This chip has been gated on `allTrees.length > 1` since
+// long before the rule was written down, which is the same line; it reads it
+// from lib/question-page.ts now so the two cannot drift.
+const cityHasQuestion = cityHasQuestionPage(allTrees.length);
 const cityWalkCount = pageWalksFor(city).length;
 const tslugs = treeSlugsForCity(city);
 const tslug = tslugs[tree.id];
@@ -429,7 +434,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <h2>Discover more</h2>
       <div class="dm-chips">
         <a class="dm-chip" href={`/${cslug}`}>{allTrees.length > 1 ? `All ${allTrees.length} trees in ${cityName}` : `${cityName}`}</a>
-        {allTrees.length > 1 && <a class="dm-chip" href={`/${cslug}/oldest-tree`}>The oldest tree in {cityName}</a>}
+        {cityHasQuestion && <a class="dm-chip" href={`/${cslug}/oldest-tree`}>The oldest tree in {cityName}</a>}
         {spSlug && <a class="dm-chip" href={`/species/${spSlug}`}>Every {spCommon.toLowerCase()}</a>}
         {parkPage && <a class="dm-chip" href={`/parks/${parkPage.slug}`}>{parkPage.name || parkPage.park}</a>}
         {/* No country chip: country pages live at /[country] and only exist

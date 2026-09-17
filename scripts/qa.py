@@ -689,6 +689,84 @@ def check_walks_go_to_the_app():
     return out
 
 
+def check_one_tree_places_have_no_question_page():
+    """Contract B v1.18 (2026-09-17): a place with one tree publishes no
+    question page, and its old URL keeps resolving.
+
+    Hidde, on the Search Console report of 36 pages crawled and not indexed:
+    "ze verdienen ze niet - maar uiteindelijk komen er meer bomen in grote
+    steden - in afgelegen plekken weghalen." The finding behind it: for a
+    one-tree place, /<city>, /<city>/oldest-tree and the tree's own page were
+    three URLs paraphrasing one tree. Lebec spent 87 words of intro, 139 of
+    question_answer, 193 of question_context and 234 of story on one oak, all
+    of it naming the same grizzly, the same bark and the same entry fee.
+    Google indexed one and filed the others, which is Google reading it
+    correctly. 328 of 609 published places were in that state.
+
+    It is a check rather than a sentence in CLAUDE.md because the rule lives
+    in four route families plus two components plus the redirect map, and
+    nothing a corpus file says can refuse a push that re-links one of them.
+
+    Three things are refused. A built question page for a place under the
+    threshold, in English or in any of the seven languages. A one-tree place
+    whose retired URL does not resolve, which would be hard rule 3 broken by
+    our own hand. And a live link into one, which is how a page comes back by
+    accident; the redirect stubs themselves are exempt, being the mechanism.
+
+    Removing this check needs Hidde."""
+    import json as _json
+    out = []
+    qslugs = {"oldest-tree", "arbol-mas-antiguo", "albero-piu-antico", "oudste-boom",
+              "aeltester-baum", "arvore-mais-antiga", "arbre-le-plus-vieux", "saiko-rei-no-ki"}
+    min_trees = 2
+    root = Path(__file__).resolve().parent.parent
+    small = {}
+    for f in sorted((root / "data" / "cities").glob("*.json")):
+        doc = _json.loads(f.read_text(encoding="utf-8"))
+        n = sum(1 for t in doc.get("trees", [])
+                if t.get("story") and (t.get("location") or {}).get("latitude") is not None
+                and (t.get("location") or {}).get("longitude") is not None)
+        if 0 < n < min_trees:
+            small[f.stem] = n
+    if not small:
+        return out
+
+    def is_stub(html):
+        return "Moved:" in html and 'http-equiv="refresh"' in html.lower()
+
+    live, unresolved = [], []
+    for slug in sorted(small):
+        for q in qslugs:
+            for cand in (DIST / slug / f"{q}.html", DIST / slug / q / "index.html"):
+                if cand.exists() and not is_stub(cand.read_text(encoding="utf-8")):
+                    live.append(str(cand.relative_to(DIST)))
+        if not (DIST / slug / "oldest-tree.html").exists():
+            unresolved.append(f"{slug}/oldest-tree")
+    if live:
+        out.append("%d question page(s) built for a place with fewer than %d trees "
+                   "(Contract B v1.18), e.g. %s"
+                   % (len(live), min_trees, ", ".join(live[:5])))
+    if unresolved:
+        out.append("%d retired question URL(s) no longer resolve, which breaks hard "
+                   "rule 3; redirect-map.ts should emit a stub, e.g. %s"
+                   % (len(unresolved), ", ".join(unresolved[:5])))
+
+    linking = []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        if is_stub(html):
+            continue
+        for slug in small:
+            if re.search(r'href="[^"]*/%s/(?:%s)/?"' % (re.escape(slug), "|".join(map(re.escape, qslugs))), html):
+                linking.append(str(page.relative_to(DIST)))
+                break
+    if linking:
+        out.append("%d page(s) link to a question page of a one-tree place, which "
+                   "Contract B v1.18 retired, e.g. %s"
+                   % (len(linking), ", ".join(linking[:5])))
+    return out
+
+
 def check_no_owner_name():
     """The thirteenth ratchet check, from 2026-08-24.
 
@@ -1692,6 +1770,7 @@ def main():
     failures += check_no_owner_name()
     failures += check_no_personal_address()
     failures += check_walks_go_to_the_app()
+    failures += check_one_tree_places_have_no_question_page()
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
     failures += check_approved_photos_reach_the_feed()

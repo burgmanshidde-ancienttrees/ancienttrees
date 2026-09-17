@@ -101,6 +101,13 @@ def check_city(path):
 # point of running it before pushing was lost. Same mirror rule as the rest of
 # this file: the Astro build is the authority and this only moves the finding-out
 # earlier.
+# Still required for a place with ONE tree, which publishes no question page
+# since Contract B v1.18 (2026-09-17). Deliberate, and the reason is day thirty
+# rather than today: the moment such a place gains a second tree the page starts
+# building, and the route throws if those two fields are missing. Relaxing this
+# for one-tree places would move that failure to a deploy nobody expected it on,
+# on a commit that only added a tree. Writing them costs a run ~200 words once;
+# a red deploy on an unrelated push costs a window.
 CONTEXT_MIN, CONTEXT_MAX = 150, 200
 
 
