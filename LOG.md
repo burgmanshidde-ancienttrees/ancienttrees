@@ -12,6 +12,79 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 - Five translated city sets, and the brief/merge pair that made them cheaper
+
+Hidde's call: keep translating only the pages that already score, and look
+for ways to do it faster. Five cities in the three languages langcheck has
+cleared for rollout, 42 tree entries, all merged and clean:
+
+| Lang | City | English impressions | Trees |
+|---|---|---:|---:|
+| ja | nara | 29 | 15 |
+| ja | kagoshima | 25 | 13 |
+| de | leipzig | 27 | 7 |
+| es | menorca | 29 | 6 |
+| es | ibiza | 30 | 1 |
+
+fr, it, nl and pt were left alone: their language-test verdict falls on
+09-19 and none has passed its twin on two cities yet.
+
+**Measured 5,452 tokens per tree entry** against the assembly line's ~15k
+target for a new tree, which is the arithmetic behind rung 0b: a translation
+produces no new facts, so it should cost a fraction, and it does.
+
+**Two speedups, and the obvious one did not work.** A translation memory
+harvested from the 50 existing overlays saves 2%: the repetitive fields are
+short and stories are 85% of the payload. It is kept anyway, for consistency
+rather than cost, so one species does not get two names across cities. What
+pays is the file itself: 35 to 45% of a city JSON is coordinates, photo
+blocks, licences and verify_notes that a translator may not touch.
+`scripts/transbrief.py --brief` hands over only the translatable fields and
+`--apply` merges the answer back, refusing one that is missing a tree id.
+That last refusal matters more than the saving: a short overlay does not
+break one page, it stops the whole site deploying, and it has done so twice.
+
+`.claude/agents/translate.md` pins the pass to Opus and carries the rules, so
+a night run can dispatch a translation without a session.
+
+**A bug in my own brief, caught by i18ncheck on the first merge.** The
+overlay needs `title` and `question_title` and the English city file has
+neither, because the build generates both and there is no generator for any
+other language. The brief only passed through English fields that exist, so
+the pass was never shown them. Both are asked for now, with a sibling
+overlay's pair as the pattern, and `--apply` refuses an answer missing any
+required city field. Verified red on the broken answer and green once fixed.
+
+**`transplan.py --value` replaces reading langcheck by eye.** It ranks by
+English impressions per 1,000 characters of work rather than by raw
+impressions, which puts a one-tree island above a thirty-tree capital. It
+also sees second languages in multilingual countries, which langcheck cannot:
+a city carrying its first language leaves that queue entirely, hiding every
+Belgian, Swiss and Luxembourgish page.
+
+**And it skips what seolearn marks NOT DEMAND, which caught a trap.** Brussels
+has 720 English impressions and 35 trees with no Dutch page, the largest
+untranslated set on the site. Every one of those impressions is a Google
+exact-phrase operator query, so no person typed them, and the proof was
+already on disk: the French Brussels overlay took 1 impression against a 739
+English twin. The list is parsed from DATA.md rather than copied.
+
+Three judgement calls the passes made and did not hide, each checked here
+before merging. Leipzig's question title says no age is recorded rather than
+carrying a number, because Leipzig publishes none for any of its seven trees,
+only the 1996 resolution; that follows de/munich, which drops the
+parenthetical where the answer is not a number. The Balearic place, estate
+and register names stay Catalan inside Spanish prose, because a visitor reads
+them off a sign. Eight species had no settled Japanese name and are now
+canonical under hard rule 9; checked across every ja overlay, no binomial
+carries two Japanese names.
+
+FOR HIDDE: the app is still English-only end to end. No String Catalog at
+all, and /api/trees.json carries no `lang`, so none of the 55 overlays
+reaches a phone. The website has had all 119 UI strings in seven languages
+for weeks. The cheap half is the feed, because those translations already
+exist and are simply not being served. Waiting on his word.
+
 ## 2026-09-16 (continuation) - Finished the stopped Montreal claim, iOS retry-flag patch still blocked
 
 Picked up after an earlier attempt in this window stopped early with 101
