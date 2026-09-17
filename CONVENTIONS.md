@@ -2080,3 +2080,103 @@ the floor exception (CLAUDE.md, 2026-08-31) is our `/trail/...`, not our
 directory lists cities. Where we differ from both references, and it is forced
 by our own data model: our famous tree IS a place file, so the split cannot be
 a URL shape and has to be a listing rule (site/src/lib/city-index.ts).
+---
+
+## Asking a contributor how thick a tree is (2026-09-11)
+
+The lookup, recorded before any design, because Hidde asked whether we could
+get a trunk size out of a contributor and turn it plus a species into an
+approximate age. Built the same day, as the trunk row in the app's add-a-tree
+sheet; what it became is at the bottom of this entry.
+
+**Reference: the Ancient Tree Inventory (Woodland Trust).** The largest
+citizen-science tree recording project there is, 15 years of it, and the only
+one of our references whose contributors are asked for a measurement at all.
+Two things it does. Girth is recorded at 1.5 m above the ground, tape level and
+flat against the trunk, with published variants for a leaning trunk and for
+multiple stems. And for anybody without a tape it publishes the HUG: one adult
+hug is 1.5 m fingertip to fingertip, and it prints a threshold table in hugs
+per species (oak 3 hugs, beech 2, sweet chestnut 4, Scots pine 1, hawthorn an
+elbow hug). So the convention for an amateur is not a number in centimetres, it
+is a body.
+
+Note for a later run: this is their published METHOD, not their data. The
+London gate in CLAUDE.md (no Woodland Trust tree records without written
+permission) is untouched by using a measuring convention they publish for
+everyone.
+
+**Reference: ForestScanner and Arboreal Forest.** Both measure diameter at
+breast height from the iPhone's LiDAR, in augmented reality, one shot. The
+peer-reviewed accuracy against calipers is better than a citizen needs: RMSE
+2.3 to 3.1 cm, with a slight underestimating bias of about 1 cm. LiDAR is
+iPhone Pro and Pro Max from the 12 onward, so roughly a third of phones.
+
+**What the two lookups say together, and it is the decision-shaped fact.** The
+error in a DERIVED AGE is dominated by the growth rate assumed for the species,
+not by the measurement. An open-grown trunk puts on roughly 2.5 cm of girth a
+year and a crowded one roughly 1.25, so the honest output is a band a factor of
+two wide whatever the tape says. A hug measured to plus or minus 25 cm and a
+LiDAR scan measured to plus or minus 3 cm produce very nearly the same band.
+The expensive instrument buys precision the answer cannot use.
+
+Read 2026-09-11:
+- https://ati.woodlandtrust.org.uk/how-to-record/recording-guide/how-to-record-the-girth-of-a-tree/
+- https://www.ancienttreeforum.org.uk/wp-content/uploads/2015/03/ATHmeasureleaflet1.pdf
+- https://link.springer.com/article/10.1007/s10531-020-02033-2
+- https://academic.oup.com/forestscience/article/70/4/304/7664433
+- https://www.sciencedirect.com/science/article/pii/S157495412400092X
+- https://en.wikipedia.org/wiki/Tree_girth_measurement
+
+**What we built, the same day.** A row in the add-a-tree sheet asking "How
+thick is the trunk?", answered in hugs on five capsules: less than 1, 1, 2, 3,
+4 or more. Optional, like both fields above it.
+
+**Hugs rather than a number**, since somebody in a park has no tape and a
+number would also force a metric or imperial question that a body sidesteps.
+The phone stores the answer as given ("<1", "1", "2", "3", "4+") and the
+conversion to metres lives in scripts/sightings_inbox.py, so it can be
+corrected without an App Store release.
+
+**The explanation sits above the control**, not under it as a footnote, because
+it defines the unit somebody is about to count in rather than helping after the
+fact. A chip saying "2 hugs" means nothing until you have read what a hug is.
+Our own web contribute form already does this, hint between the label and the
+field.
+
+---
+
+## Picking one value out of a few, inside a form (2026-09-11)
+
+Looked up because the trunk row above needed a control and the first version
+picked the wrong one.
+
+**Reference: Apple's Human Interface Guidelines, segmented controls.** A
+segmented control is for "closely related choices that affect an object, state,
+or view, such as helping people switch between views in a toolbar", it holds
+five or fewer segments on iPhone, and its segments are EQUAL WIDTH. Its labels
+have to be short and of roughly equal length, because a segmented control
+cannot wrap or resize text without looking broken.
+
+**Reference: the choice chip, as every consumer design system uses it.** A chip
+is for selecting an INPUT out of roughly three to six options, the way a radio
+button does. It sizes to its own text, the row wraps, and it is toggleable, so
+tapping the chosen one takes the answer back.
+
+**So the test is what the control DOES, not how many options it has.** Switching
+what is on screen is a segmented control. Answering a question is a chip row.
+Ours answers a question, and "4+ hugs" beside "Less than 1" is exactly the
+unequal pair a segmented control handles badly.
+
+**Where we got it wrong first, which is the part worth keeping.** The first
+version used a `LazyVGrid` with adaptive columns. It wrapped correctly and it
+forced every chip to one width, which is a segmented control wearing capsules:
+it had the chip's shape and the segmented control's behaviour, and it came from
+reaching for the container SwiftUI ships rather than the one the convention
+asks for. SwiftUI has no flow container, so a chip row is the `Layout` protocol
+(`FlowRow` in CollectSheet.swift).
+
+Read 2026-09-11:
+- https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+- https://developer.apple.com/documentation/swiftui/pickerstyle/segmented
+- https://medium.com/tap-to-dismiss/select-to-proceed-996d19c8a7a4
+- https://www.createwithswift.com/mastering-forms-in-swiftui-selecting-information/

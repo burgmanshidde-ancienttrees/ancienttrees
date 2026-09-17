@@ -1,0 +1,1250 @@
+{
+  "method": "Mitchell's rule, 2.5 to 1.5 cm of girth a year",
+  "written": [
+    {
+      "id": "bcn_048",
+      "city": "Barcelona",
+      "name": "The Hackberry of Jardins dels Drets Humans",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "girth_cm": 290,
+      "age_min": 100,
+      "age_max": 200
+    },
+    {
+      "id": "bru_023",
+      "city": "Brussels",
+      "name": "The Turkish Hazel of the Grand Sablon",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "girth_cm": 208,
+      "age_min": 75,
+      "age_max": 150
+    },
+    {
+      "id": "bru_024",
+      "city": "Brussels",
+      "name": "The Pedunculate Oak of Mont des Arts",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "girth_cm": 166,
+      "age_min": 50,
+      "age_max": 125
+    },
+    {
+      "id": "cag_010",
+      "city": "Cagliari",
+      "name": "The Common Lime of Corongiu",
+      "species": "Common Lime (Tilia x europaea)",
+      "girth_cm": 260,
+      "age_min": 100,
+      "age_max": 175
+    },
+    {
+      "id": "kol_003",
+      "city": "Cologne",
+      "name": "The Hohenlind Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "girth_cm": 375,
+      "age_min": 150,
+      "age_max": 250
+    },
+    {
+      "id": "com_009",
+      "city": "Como",
+      "name": "The Horse Chestnut of Quarcino",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "girth_cm": 335,
+      "age_min": 125,
+      "age_max": 250
+    },
+    {
+      "id": "ftw_004",
+      "city": "Fort Worth",
+      "name": "The Pioneers Rest Texas Ash",
+      "species": "Texas Ash (Fraxinus texensis)",
+      "girth_cm": 213,
+      "age_min": 75,
+      "age_max": 150
+    },
+    {
+      "id": "fry_001",
+      "city": "Frydlant",
+      "name": "Buk u vodojemu",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "girth_cm": 422,
+      "age_min": 150,
+      "age_max": 300
+    },
+    {
+      "id": "gir_001",
+      "city": "Girona",
+      "name": "The Great Oak of Ca n'Iglesies",
+      "species": "Sessile Oak (Quercus petraea)",
+      "girth_cm": 475,
+      "age_min": 175,
+      "age_max": 350
+    },
+    {
+      "id": "gir_003",
+      "city": "Girona",
+      "name": "The Ash of L'Aulet",
+      "species": "Narrow-Leaved Ash (Fraxinus angustifolia)",
+      "girth_cm": 590,
+      "age_min": 200,
+      "age_max": 400
+    },
+    {
+      "id": "grz_007",
+      "city": "Graz",
+      "name": "The Panoramagasse Oak (No. 54)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "girth_cm": 280,
+      "age_min": 100,
+      "age_max": 200
+    },
+    {
+      "id": "grz_008",
+      "city": "Graz",
+      "name": "The Panoramagasse Oak (No. 56)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "girth_cm": 490,
+      "age_min": 175,
+      "age_max": 350
+    },
+    {
+      "id": "iwk_001",
+      "city": "Iwaki",
+      "name": "Nakakamado no Shidare Momiji",
+      "species": "Japanese Maple (Acer palmatum)",
+      "girth_cm": 350,
+      "age_min": 125,
+      "age_max": 250
+    },
+    {
+      "id": "kan_002",
+      "city": "Kanazawa",
+      "name": "The Cherry of Shogetsuji",
+      "species": "Japanese Mountain Cherry (Prunus jamasakura)",
+      "girth_cm": 350,
+      "age_min": 125,
+      "age_max": 250
+    },
+    {
+      "id": "kra_010",
+      "city": "Krakow",
+      "name": "The Basztowa Turkish Hazel",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "girth_cm": 165,
+      "age_min": 50,
+      "age_max": 125
+    },
+    {
+      "id": "kra_014",
+      "city": "Krakow",
+      "name": "The Sikorskiego Square Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "girth_cm": 263,
+      "age_min": 100,
+      "age_max": 200
+    },
+    {
+      "id": "kra_027",
+      "city": "Krakow",
+      "name": "The Karmelicka Elm",
+      "species": "European White Elm (Ulmus laevis)",
+      "girth_cm": 290,
+      "age_min": 100,
+      "age_max": 200
+    },
+    {
+      "id": "kra_028",
+      "city": "Krakow",
+      "name": "The Morawskiego Elm",
+      "species": "European White Elm (Ulmus laevis)",
+      "girth_cm": 399,
+      "age_min": 150,
+      "age_max": 300
+    },
+    {
+      "id": "kra_031",
+      "city": "Krakow",
+      "name": "The Wola Justowska Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "girth_cm": 351,
+      "age_min": 125,
+      "age_max": 250
+    },
+    {
+      "id": "kra_032",
+      "city": "Krakow",
+      "name": "The Botanical Garden Hungarian Oak",
+      "species": "Hungarian Oak (Quercus frainetto)",
+      "girth_cm": 462,
+      "age_min": 175,
+      "age_max": 350
+    },
+    {
+      "id": "mce_001",
+      "city": "Mcely",
+      "name": "Buk v Podlesí",
+      "species": "European Beech (Fagus sylvatica)",
+      "girth_cm": 415,
+      "age_min": 150,
+      "age_max": 300
+    },
+    {
+      "id": "paj_001",
+      "city": "Pajūris",
+      "name": "The Akmenynė Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "girth_cm": 445,
+      "age_min": 175,
+      "age_max": 300
+    },
+    {
+      "id": "par_033",
+      "city": "Paris",
+      "name": "The Turkey Oak of Square Rene-Le Gall",
+      "species": "Turkey Oak (Quercus cerris)",
+      "girth_cm": 190,
+      "age_min": 75,
+      "age_max": 150
+    },
+    {
+      "id": "pgi_005",
+      "city": "Perugia",
+      "name": "The Hackberry of Via Fiume",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "girth_cm": 445,
+      "age_min": 175,
+      "age_max": 300
+    },
+    {
+      "id": "pgi_009",
+      "city": "Perugia",
+      "name": "The North Oak of Strada del Gioco",
+      "species": "Downy Oak (Quercus pubescens)",
+      "girth_cm": 430,
+      "age_min": 150,
+      "age_max": 300
+    },
+    {
+      "id": "pgi_010",
+      "city": "Perugia",
+      "name": "The South Oak of Strada del Gioco",
+      "species": "Downy Oak (Quercus pubescens)",
+      "girth_cm": 422,
+      "age_min": 150,
+      "age_max": 300
+    },
+    {
+      "id": "pgi_011",
+      "city": "Perugia",
+      "name": "The Downy Oak of Strada dei Conservoni",
+      "species": "Downy Oak (Quercus pubescens)",
+      "girth_cm": 427,
+      "age_min": 150,
+      "age_max": 300
+    },
+    {
+      "id": "ptl_016",
+      "city": "Portland",
+      "name": "The Irvington Elm",
+      "species": "Field Elm (Ulmus minor)",
+      "girth_cm": 454,
+      "age_min": 175,
+      "age_max": 350
+    },
+    {
+      "id": "ptl_017",
+      "city": "Portland",
+      "name": "The Thompson Street Horsechestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "girth_cm": 436,
+      "age_min": 150,
+      "age_max": 300
+    },
+    {
+      "id": "ppj_001",
+      "city": "Prosec pod Jestedem",
+      "name": "Buk lesní v Proseči pod Ještědem",
+      "species": "European Beech (Fagus sylvatica)",
+      "girth_cm": 500,
+      "age_min": 200,
+      "age_max": 350
+    },
+    {
+      "id": "sal_003",
+      "city": "Sant'Alfio",
+      "name": "The Etna Birch of Magazzeni",
+      "species": "Etna Birch (Betula aetnensis)",
+      "girth_cm": 205,
+      "age_min": 75,
+      "age_max": 150
+    },
+    {
+      "id": "tgn_004",
+      "city": "Tarragona",
+      "name": "The Wild Pear of El Cisterer",
+      "species": "Almond-leaved Pear (Pyrus spinosa)",
+      "girth_cm": 197,
+      "age_min": 75,
+      "age_max": 150
+    },
+    {
+      "id": "tre_005",
+      "city": "Trento",
+      "name": "The Elm of Maso Ginocchio",
+      "species": "Field Elm (Ulmus minor)",
+      "girth_cm": 393,
+      "age_min": 150,
+      "age_max": 300
+    },
+    {
+      "id": "tre_007",
+      "city": "Trento",
+      "name": "The Chestnut of Sardagna",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "girth_cm": 550,
+      "age_min": 200,
+      "age_max": 400
+    },
+    {
+      "id": "tre_009",
+      "city": "Trento",
+      "name": "The Beech of Malga Brigolina",
+      "species": "European Beech (Fagus sylvatica)",
+      "girth_cm": 465,
+      "age_min": 175,
+      "age_max": 350
+    },
+    {
+      "id": "tre_010",
+      "city": "Trento",
+      "name": "The Wild Cherry of Passo del Cimirlo",
+      "species": "Wild Cherry (Prunus avium)",
+      "girth_cm": 359,
+      "age_min": 125,
+      "age_max": 250
+    },
+    {
+      "id": "war_014",
+      "city": "Warsaw",
+      "name": "The Puławska Street Pear",
+      "species": "European Pear (Pyrus communis)",
+      "girth_cm": 153,
+      "age_min": 50,
+      "age_max": 125
+    }
+  ],
+  "refused": [
+    {
+      "id": "ali_014",
+      "city": "Alicante",
+      "why": "species outside the published rate: Ficus microcarpa"
+    },
+    {
+      "id": "bcn_047",
+      "city": "Barcelona",
+      "why": "species outside the published rate: Grevillea robusta"
+    },
+    {
+      "id": "bcn_049",
+      "city": "Barcelona",
+      "why": "species outside the published rate: Erythrina caffra"
+    },
+    {
+      "id": "bcn_050",
+      "city": "Barcelona",
+      "why": "species outside the published rate: Yucca filifera"
+    },
+    {
+      "id": "bcn_052",
+      "city": "Barcelona",
+      "why": "species outside the published rate: Styphnolobium japonicum"
+    },
+    {
+      "id": "bcn_059",
+      "city": "Barcelona",
+      "why": "species outside the published rate: Maclura pomifera"
+    },
+    {
+      "id": "bar_002",
+      "city": "Bari",
+      "why": "species outside the published rate: Nolina longifolia"
+    },
+    {
+      "id": "bgm_002",
+      "city": "Bergamo",
+      "why": "species outside the published rate: Cedrus atlantica"
+    },
+    {
+      "id": "bgm_003",
+      "city": "Bergamo",
+      "why": "species outside the published rate: Arbutus unedo"
+    },
+    {
+      "id": "bgm_006",
+      "city": "Bergamo",
+      "why": "species outside the published rate: Cedrus deodara"
+    },
+    {
+      "id": "bdx_001",
+      "city": "Bordeaux",
+      "why": "species outside the published rate: Populus nigra"
+    },
+    {
+      "id": "bdx_002",
+      "city": "Bordeaux",
+      "why": "species outside the published rate: Carya illinoinensis"
+    },
+    {
+      "id": "bdx_005",
+      "city": "Bordeaux",
+      "why": "species outside the published rate: Ginkgo biloba"
+    },
+    {
+      "id": "bdx_006",
+      "city": "Bordeaux",
+      "why": "species outside the published rate: Sequoia sempervirens"
+    },
+    {
+      "id": "bdx_007",
+      "city": "Bordeaux",
+      "why": "species outside the published rate: Zelkova carpinifolia"
+    },
+    {
+      "id": "bdx_008",
+      "city": "Bordeaux",
+      "why": "species outside the published rate: Robinia pseudoacacia"
+    },
+    {
+      "id": "bdx_009",
+      "city": "Bordeaux",
+      "why": "species outside the published rate: Sequoiadendron giganteum"
+    },
+    {
+      "id": "bdx_010",
+      "city": "Bordeaux",
+      "why": "species outside the published rate: Cedrus deodara"
+    },
+    {
+      "id": "brq_006",
+      "city": "Brno",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "bru_021",
+      "city": "Brussels",
+      "why": "species outside the published rate: Quercus x turneri"
+    },
+    {
+      "id": "bru_022",
+      "city": "Brussels",
+      "why": "entry describes more than one trunk"
+    },
+    {
+      "id": "bru_025",
+      "city": "Brussels",
+      "why": "species outside the published rate: Ailanthus altissima"
+    },
+    {
+      "id": "bru_026",
+      "city": "Brussels",
+      "why": "species outside the published rate: Pterocarya fraxinifolia"
+    },
+    {
+      "id": "bru_027",
+      "city": "Brussels",
+      "why": "species outside the published rate: Ilex aquifolium 'Pyramidalis'"
+    },
+    {
+      "id": "bsc_011",
+      "city": "Bucaco",
+      "why": "species outside the published rate: Sequoia sempervirens"
+    },
+    {
+      "id": "bsc_014",
+      "city": "Bucaco",
+      "why": "species outside the published rate: Ocotea foetens"
+    },
+    {
+      "id": "bsc_015",
+      "city": "Bucaco",
+      "why": "species outside the published rate: Cupressus lusitanica"
+    },
+    {
+      "id": "bsc_016",
+      "city": "Bucaco",
+      "why": "species outside the published rate: Cupressus lusitanica"
+    },
+    {
+      "id": "bsc_019",
+      "city": "Bucaco",
+      "why": "species outside the published rate: Syzygium paniculatum"
+    },
+    {
+      "id": "cas_013",
+      "city": "Caserta",
+      "why": "species outside the published rate: Casuarina equisetifolia"
+    },
+    {
+      "id": "cas_014",
+      "city": "Caserta",
+      "why": "species outside the published rate: Taxus baccata"
+    },
+    {
+      "id": "kol_002",
+      "city": "Cologne",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "com_002",
+      "city": "Como",
+      "why": "species outside the published rate: Cedrus deodara"
+    },
+    {
+      "id": "com_003",
+      "city": "Como",
+      "why": "species outside the published rate: Platanus occidentalis"
+    },
+    {
+      "id": "com_007",
+      "city": "Como",
+      "why": "species outside the published rate: Magnolia grandiflora"
+    },
+    {
+      "id": "dal_003",
+      "city": "Dallas",
+      "why": "species outside the published rate: Quercus stellata"
+    },
+    {
+      "id": "flo_016",
+      "city": "Florence",
+      "why": "species outside the published rate: Pinus pinea"
+    },
+    {
+      "id": "flo_017",
+      "city": "Florence",
+      "why": "species outside the published rate: Cupressus macrocarpa"
+    },
+    {
+      "id": "flo_018",
+      "city": "Florence",
+      "why": "species outside the published rate: Cupressus sempervirens"
+    },
+    {
+      "id": "flo_019",
+      "city": "Florence",
+      "why": "species outside the published rate: Pinus halepensis"
+    },
+    {
+      "id": "flo_021",
+      "city": "Florence",
+      "why": "species outside the published rate: Jubaea chilensis"
+    },
+    {
+      "id": "flo_022",
+      "city": "Florence",
+      "why": "species outside the published rate: Cupressus sempervirens"
+    },
+    {
+      "id": "ftl_001",
+      "city": "Fort Lauderdale",
+      "why": "species outside the published rate: Enterolobium cyclocarpum"
+    },
+    {
+      "id": "ftl_002",
+      "city": "Fort Lauderdale",
+      "why": "species outside the published rate: Hura crepitans"
+    },
+    {
+      "id": "ftl_003",
+      "city": "Fort Lauderdale",
+      "why": "species outside the published rate: Tabebuia rosea"
+    },
+    {
+      "id": "ftl_004",
+      "city": "Fort Lauderdale",
+      "why": "species outside the published rate: Brosimum alicastrum"
+    },
+    {
+      "id": "ftw_001",
+      "city": "Fort Worth",
+      "why": "species outside the published rate: Ziziphus jujuba"
+    },
+    {
+      "id": "ftw_002",
+      "city": "Fort Worth",
+      "why": "species outside the published rate: Quercus buckleyi"
+    },
+    {
+      "id": "ftw_003",
+      "city": "Fort Worth",
+      "why": "species outside the published rate: Prosopis glandulosa var. glandulosa"
+    },
+    {
+      "id": "gen_014",
+      "city": "Geneva",
+      "why": "species outside the published rate: Pinus pinea"
+    },
+    {
+      "id": "gen_019",
+      "city": "Geneva",
+      "why": "species outside the published rate: Cedrus deodara"
+    },
+    {
+      "id": "gen_021",
+      "city": "Geneva",
+      "why": "species outside the published rate: Cedrus atlantica"
+    },
+    {
+      "id": "gnv_012",
+      "city": "Genoa",
+      "why": "species outside the published rate: Cedrus libani"
+    },
+    {
+      "id": "gnv_013",
+      "city": "Genoa",
+      "why": "species outside the published rate: Jubaea chilensis"
+    },
+    {
+      "id": "gir_002",
+      "city": "Girona",
+      "why": "girth 970 cm is past where the linear rule holds; we measurably under-age trunks this size"
+    },
+    {
+      "id": "gir_004",
+      "city": "Girona",
+      "why": "species outside the published rate: Pinus pinea"
+    },
+    {
+      "id": "gir_005",
+      "city": "Girona",
+      "why": "species outside the published rate: Pistacia lentiscus"
+    },
+    {
+      "id": "gir_006",
+      "city": "Girona",
+      "why": "species outside the published rate: Arbutus unedo"
+    },
+    {
+      "id": "gir_007",
+      "city": "Girona",
+      "why": "species outside the published rate: Pinus nigra subsp. salzmannii"
+    },
+    {
+      "id": "grz_009",
+      "city": "Graz",
+      "why": "species outside the published rate: Pinus strobus"
+    },
+    {
+      "id": "gut_001",
+      "city": "Gutau",
+      "why": "species outside the published rate: Taxus baccata"
+    },
+    {
+      "id": "hst_001",
+      "city": "Hallstatt",
+      "why": "species outside the published rate: Taxus baccata"
+    },
+    {
+      "id": "hst_003",
+      "city": "Hallstatt",
+      "why": "species outside the published rate: Taxus baccata"
+    },
+    {
+      "id": "haw_001",
+      "city": "Hawaii",
+      "why": "species outside the published rate: Acacia koa"
+    },
+    {
+      "id": "haw_002",
+      "city": "Hawaii",
+      "why": "species outside the published rate: Antidesma platyphyllum"
+    },
+    {
+      "id": "haw_003",
+      "city": "Hawaii",
+      "why": "species outside the published rate: Psychotria hawaiiensis"
+    },
+    {
+      "id": "haw_004",
+      "city": "Hawaii",
+      "why": "species outside the published rate: Psychotria hawaiiensis"
+    },
+    {
+      "id": "haw_005",
+      "city": "Hawaii",
+      "why": "species outside the published rate: Metrosideros polymorpha"
+    },
+    {
+      "id": "haw_006",
+      "city": "Hawaii",
+      "why": "species outside the published rate: Metrosideros polymorpha"
+    },
+    {
+      "id": "hel_011",
+      "city": "Helsinki",
+      "why": "species outside the published rate: Pinus sylvestris"
+    },
+    {
+      "id": "hel_012",
+      "city": "Helsinki",
+      "why": "species outside the published rate: Pinus sylvestris f. gibberosa"
+    },
+    {
+      "id": "hbi_004",
+      "city": "Hilo",
+      "why": "species outside the published rate: Caesalpinia coriaria"
+    },
+    {
+      "id": "hbi_005",
+      "city": "Hilo",
+      "why": "species outside the published rate: Pritchardia beccariana"
+    },
+    {
+      "id": "hbi_006",
+      "city": "Hilo",
+      "why": "species outside the published rate: Cocos nucifera"
+    },
+    {
+      "id": "hir_009",
+      "city": "Hiroshima",
+      "why": "species outside the published rate: Cinnamomum camphora"
+    },
+    {
+      "id": "hir_010",
+      "city": "Hiroshima",
+      "why": "species outside the published rate: Cinnamomum camphora"
+    },
+    {
+      "id": "hir_011",
+      "city": "Hiroshima",
+      "why": "species outside the published rate: Celtis sinensis"
+    },
+    {
+      "id": "iga_001",
+      "city": "Iga",
+      "why": "species outside the published rate: Torreya nucifera var. shibunashi"
+    },
+    {
+      "id": "kan_001",
+      "city": "Kanazawa",
+      "why": "species outside the published rate: Castanopsis sieboldii"
+    },
+    {
+      "id": "kan_006",
+      "city": "Kanazawa",
+      "why": "species outside the published rate: Machilus thunbergii"
+    },
+    {
+      "id": "kan_007",
+      "city": "Kanazawa",
+      "why": "species outside the published rate: Zelkova serrata"
+    },
+    {
+      "id": "kau_002",
+      "city": "Kauai",
+      "why": "species outside the published rate: Adansonia sp."
+    },
+    {
+      "id": "kau_006",
+      "city": "Kauai",
+      "why": "species outside the published rate: Samanea saman"
+    },
+    {
+      "id": "kra_008",
+      "city": "Krakow",
+      "why": "species outside the published rate: Ginkgo biloba"
+    },
+    {
+      "id": "kra_016",
+      "city": "Krakow",
+      "why": "species outside the published rate: Ailanthus altissima"
+    },
+    {
+      "id": "kra_017",
+      "city": "Krakow",
+      "why": "species outside the published rate: Ginkgo biloba"
+    },
+    {
+      "id": "kra_018",
+      "city": "Krakow",
+      "why": "species outside the published rate: Quercus rubra"
+    },
+    {
+      "id": "kra_019",
+      "city": "Krakow",
+      "why": "species outside the published rate: Gleditsia triacanthos"
+    },
+    {
+      "id": "kra_033",
+      "city": "Krakow",
+      "why": "species outside the published rate: Phoenix canariensis"
+    },
+    {
+      "id": "lvn_004",
+      "city": "Leuven",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "luc_011",
+      "city": "Lucca",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "luc_012",
+      "city": "Lucca",
+      "why": "species outside the published rate: Taxodium distichum"
+    },
+    {
+      "id": "mcr_001",
+      "city": "Manchester",
+      "why": "species outside the published rate: Populus nigra subsp. betulifolia"
+    },
+    {
+      "id": "mat_001",
+      "city": "Matera",
+      "why": "species outside the published rate: Pinus pinea"
+    },
+    {
+      "id": "mat_002",
+      "city": "Matera",
+      "why": "species outside the published rate: Populus nigra"
+    },
+    {
+      "id": "mat_004",
+      "city": "Matera",
+      "why": "species outside the published rate: Phoenix dactylifera"
+    },
+    {
+      "id": "mau_002",
+      "city": "Maui",
+      "why": "species outside the published rate: Samanea saman"
+    },
+    {
+      "id": "mau_003",
+      "city": "Maui",
+      "why": "species outside the published rate: Ficus microcarpa"
+    },
+    {
+      "id": "mau_004",
+      "city": "Maui",
+      "why": "species outside the published rate: Prosopis pallida"
+    },
+    {
+      "id": "mil_020",
+      "city": "Milan",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "mil_021",
+      "city": "Milan",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "mil_022",
+      "city": "Milan",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "myz_003",
+      "city": "Miyazaki",
+      "why": "species outside the published rate: Cinnamomum camphora"
+    },
+    {
+      "id": "myz_006",
+      "city": "Miyazaki",
+      "why": "species outside the published rate: Cinnamomum camphora"
+    },
+    {
+      "id": "myz_007",
+      "city": "Miyazaki",
+      "why": "species outside the published rate: Cinnamomum camphora"
+    },
+    {
+      "id": "urk_001",
+      "city": "Muxika",
+      "why": "species outside the published rate: Quercus ilex subsp. ilex"
+    },
+    {
+      "id": "nah_002",
+      "city": "Naha",
+      "why": "species outside the published rate: Ficus superba"
+    },
+    {
+      "id": "nap_018",
+      "city": "Naples",
+      "why": "species outside the published rate: Cedrus libani"
+    },
+    {
+      "id": "nap_019",
+      "city": "Naples",
+      "why": "species outside the published rate: Podocarpus macrophyllus"
+    },
+    {
+      "id": "nap_020",
+      "city": "Naples",
+      "why": "species outside the published rate: Eucalyptus camaldulensis"
+    },
+    {
+      "id": "nap_022",
+      "city": "Naples",
+      "why": "species outside the published rate: Brahea armata"
+    },
+    {
+      "id": "nap_023",
+      "city": "Naples",
+      "why": "species outside the published rate: Magnolia grandiflora"
+    },
+    {
+      "id": "hnl_008",
+      "city": "Oahu",
+      "why": "species outside the published rate: Bucida buceras"
+    },
+    {
+      "id": "hnl_010",
+      "city": "Oahu",
+      "why": "species outside the published rate: Couroupita guianensis"
+    },
+    {
+      "id": "hnl_011",
+      "city": "Oahu",
+      "why": "species outside the published rate: Samanea saman"
+    },
+    {
+      "id": "hnl_014",
+      "city": "Oahu",
+      "why": "species outside the published rate: Adansonia digitata"
+    },
+    {
+      "id": "hnl_015",
+      "city": "Oahu",
+      "why": "species outside the published rate: Ficus benghalensis"
+    },
+    {
+      "id": "hnl_018",
+      "city": "Oahu",
+      "why": "species outside the published rate: Sterculia foetida"
+    },
+    {
+      "id": "hnl_019",
+      "city": "Oahu",
+      "why": "species outside the published rate: Ficus benghalensis"
+    },
+    {
+      "id": "hnl_021",
+      "city": "Oahu",
+      "why": "species outside the published rate: Hydnocarpus anthelminthica"
+    },
+    {
+      "id": "pad_012",
+      "city": "Padua",
+      "why": "species outside the published rate: Ginkgo biloba"
+    },
+    {
+      "id": "pal_011",
+      "city": "Palermo",
+      "why": "species outside the published rate: Araucaria bidwillii"
+    },
+    {
+      "id": "pal_012",
+      "city": "Palermo",
+      "why": "species outside the published rate: Ceiba speciosa"
+    },
+    {
+      "id": "pal_013",
+      "city": "Palermo",
+      "why": "species outside the published rate: Yucca gigantea"
+    },
+    {
+      "id": "pal_015",
+      "city": "Palermo",
+      "why": "species outside the published rate: Ficus macrophylla"
+    },
+    {
+      "id": "pal_017",
+      "city": "Palermo",
+      "why": "species outside the published rate: Carya illinoinensis"
+    },
+    {
+      "id": "pal_020",
+      "city": "Palermo",
+      "why": "species outside the published rate: Araucaria columnaris"
+    },
+    {
+      "id": "pal_021",
+      "city": "Palermo",
+      "why": "species outside the published rate: Araucaria heterophylla"
+    },
+    {
+      "id": "pgi_007",
+      "city": "Perugia",
+      "why": "species outside the published rate: Cedrus deodara"
+    },
+    {
+      "id": "pgi_008",
+      "city": "Perugia",
+      "why": "species outside the published rate: Cupressus sempervirens"
+    },
+    {
+      "id": "pgi_012",
+      "city": "Perugia",
+      "why": "species outside the published rate: Cupressus sempervirens"
+    },
+    {
+      "id": "ptl_008",
+      "city": "Portland",
+      "why": "species outside the published rate: Sequoiadendron giganteum"
+    },
+    {
+      "id": "ptl_009",
+      "city": "Portland",
+      "why": "species outside the published rate: Pseudotsuga menziesii"
+    },
+    {
+      "id": "ptl_011",
+      "city": "Portland",
+      "why": "species outside the published rate: Sequoiadendron giganteum"
+    },
+    {
+      "id": "ptl_012",
+      "city": "Portland",
+      "why": "species outside the published rate: Populus nigra 'Italica'"
+    },
+    {
+      "id": "ptl_013",
+      "city": "Portland",
+      "why": "girth 704 cm is past where the linear rule holds; we measurably under-age trunks this size"
+    },
+    {
+      "id": "ptl_014",
+      "city": "Portland",
+      "why": "species outside the published rate: Pterocarya fraxinifolia"
+    },
+    {
+      "id": "ptl_015",
+      "city": "Portland",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "ptl_018",
+      "city": "Portland",
+      "why": "species outside the published rate: Catalpa speciosa"
+    },
+    {
+      "id": "ptl_019",
+      "city": "Portland",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "ptl_020",
+      "city": "Portland",
+      "why": "species outside the published rate: Platanus occidentalis"
+    },
+    {
+      "id": "prg_017",
+      "city": "Prague",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "rom_030",
+      "city": "Rome",
+      "why": "species outside the published rate: Eucalyptus globulus"
+    },
+    {
+      "id": "rnd_002",
+      "city": "Ronda",
+      "why": "species outside the published rate: Abies pinsapo"
+    },
+    {
+      "id": "rnd_005",
+      "city": "Ronda",
+      "why": "girth 720 cm is past where the linear rule holds; we measurably under-age trunks this size"
+    },
+    {
+      "id": "rnd_006",
+      "city": "Ronda",
+      "why": "species outside the published rate: Abies pinsapo"
+    },
+    {
+      "id": "szb_001",
+      "city": "Salzburg",
+      "why": "species outside the published rate: Populus nigra"
+    },
+    {
+      "id": "szb_005",
+      "city": "Salzburg",
+      "why": "species outside the published rate: Sequoiadendron giganteum"
+    },
+    {
+      "id": "spr_001",
+      "city": "Sapporo",
+      "why": "species outside the published rate: Cercidiphyllum japonicum"
+    },
+    {
+      "id": "spr_004",
+      "city": "Sapporo",
+      "why": "species outside the published rate: Quercus dentata"
+    },
+    {
+      "id": "sev_041",
+      "city": "Seville",
+      "why": "species outside the published rate: Eucalyptus camaldulensis"
+    },
+    {
+      "id": "sev_042",
+      "city": "Seville",
+      "why": "species outside the published rate: Citrus x paradisi"
+    },
+    {
+      "id": "sev_043",
+      "city": "Seville",
+      "why": "species outside the published rate: Lagunaria patersonii"
+    },
+    {
+      "id": "sgp_021",
+      "city": "Singapore",
+      "why": "species outside the published rate: Rubroshorea pauciflora"
+    },
+    {
+      "id": "sgp_022",
+      "city": "Singapore",
+      "why": "species outside the published rate: Heritiera elata"
+    },
+    {
+      "id": "sgp_025",
+      "city": "Singapore",
+      "why": "species outside the published rate: Hymenaea courbaril"
+    },
+    {
+      "id": "sgp_026",
+      "city": "Singapore",
+      "why": "species outside the published rate: Hopea odorata"
+    },
+    {
+      "id": "sgp_027",
+      "city": "Singapore",
+      "why": "species outside the published rate: Koompassia malaccensis"
+    },
+    {
+      "id": "sgp_028",
+      "city": "Singapore",
+      "why": "species outside the published rate: Ficus kerkhovenii"
+    },
+    {
+      "id": "stk_001",
+      "city": "Stokaičiai",
+      "why": "species outside the published rate: Pinus sylvestris"
+    },
+    {
+      "id": "sul_002",
+      "city": "Sulechów",
+      "why": "species outside the published rate: Pinus sylvestris"
+    },
+    {
+      "id": "tgn_002",
+      "city": "Tarragona",
+      "why": "species outside the published rate: Pinus pinea"
+    },
+    {
+      "id": "tgn_003",
+      "city": "Tarragona",
+      "why": "species outside the published rate: Cupressus sempervirens"
+    },
+    {
+      "id": "tre_002",
+      "city": "Trento",
+      "why": "species outside the published rate: Populus nigra"
+    },
+    {
+      "id": "tre_003",
+      "city": "Trento",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "uda_003",
+      "city": "Uda",
+      "why": "species outside the published rate: Cryptomeria japonica"
+    },
+    {
+      "id": "vlc_017",
+      "city": "Valencia",
+      "why": "species outside the published rate: Ceiba speciosa"
+    },
+    {
+      "id": "vlc_018",
+      "city": "Valencia",
+      "why": "species outside the published rate: Quercus virginiana"
+    },
+    {
+      "id": "vlc_019",
+      "city": "Valencia",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "vlc_020",
+      "city": "Valencia",
+      "why": "species outside the published rate: Pinus brutia"
+    },
+    {
+      "id": "vlc_021",
+      "city": "Valencia",
+      "why": "species outside the published rate: Quercus hartwissiana"
+    },
+    {
+      "id": "vlc_022",
+      "city": "Valencia",
+      "why": "species outside the published rate: Casuarina cunninghamiana"
+    },
+    {
+      "id": "vlc_025",
+      "city": "Valencia",
+      "why": "species outside the published rate: Quercus polymorpha"
+    },
+    {
+      "id": "vlc_027",
+      "city": "Valencia",
+      "why": "species outside the published rate: Brachychiton populneus"
+    },
+    {
+      "id": "vlc_028",
+      "city": "Valencia",
+      "why": "species outside the published rate: Carya illinoinensis"
+    },
+    {
+      "id": "vlc_029",
+      "city": "Valencia",
+      "why": "species outside the published rate: Diospyros virginiana"
+    },
+    {
+      "id": "vlc_030",
+      "city": "Valencia",
+      "why": "species outside the published rate: Araucaria heterophylla"
+    },
+    {
+      "id": "vlc_031",
+      "city": "Valencia",
+      "why": "species outside the published rate: Phoenix canariensis"
+    },
+    {
+      "id": "vlc_032",
+      "city": "Valencia",
+      "why": "species outside the published rate: Ficus macrophylla"
+    },
+    {
+      "id": "vln_014",
+      "city": "Vilnius",
+      "why": "species outside the published rate: Pinus cembra"
+    },
+    {
+      "id": "war_013",
+      "city": "Warsaw",
+      "why": "entry describes more than one trunk"
+    },
+    {
+      "id": "war_017",
+      "city": "Warsaw",
+      "why": "species outside the published rate: Populus canescens"
+    }
+  ]
+}

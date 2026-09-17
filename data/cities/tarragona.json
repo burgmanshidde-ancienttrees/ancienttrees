@@ -136,9 +136,9 @@
       "id": "tgn_004",
       "name": "The Wild Pear of El Cisterer",
       "species": "Almond-leaved Pear (Pyrus spinosa)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 75 to 150 years, judged from a trunk 1.97 m round",
+      "age_min": 75,
+      "age_max": 150,
       "girth_cm": 197,
       "height_m": 10.5,
       "location": {
@@ -163,7 +163,9 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Declared a Catalan monumental tree in 1991, condition normal. Height 10.5 m, trunk perimeter 1.97 m, crown 16.0 m from the register. No age published. The coordinate is the register's own; the location description places it beside a track at Cap del Plans, which is why precision is marked approximate rather than confirmed.",
-      "how_to_recognise": "You can recognise it as a wild pear grown to tree size, 10.5 metres tall with a crown 16 across, where the species is usually a hillside bush. It stands on the right of the track above the village."
+      "how_to_recognise": "You can recognise it as a wild pear grown to tree size, 10.5 metres tall with a crown 16 across, where the species is usually a hillside bush. It stands on the right of the track above the village.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 197 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ]
 }

@@ -187,9 +187,9 @@
       "id": "van_005",
       "name": "The Dunbar Street Beech",
       "species": "European Beech (Fagus sylvatica)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 150 to 300 years, judged from a trunk 4.19 m round",
+      "age_min": 150,
+      "age_max": 300,
       "girth_cm": 419,
       "location": {
         "address": "1711 Dunbar Street, Vancouver, BC",
@@ -221,7 +221,9 @@
       },
       "how_to_recognise": "You can recognise it by the smooth grey beech trunk, 4.2 metres round and 19.8 metres tall. It is the only tree the city records standing on the boulevard outside 1711 Dunbar Street.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 419 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "van_006",

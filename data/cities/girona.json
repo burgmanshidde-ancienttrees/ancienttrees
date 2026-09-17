@@ -35,9 +35,9 @@
       "id": "gir_001",
       "name": "The Great Oak of Ca n'Iglesies",
       "species": "Sessile Oak (Quercus petraea)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 175 to 350 years, judged from a trunk 4.75 m round",
+      "age_min": 175,
+      "age_max": 350,
       "girth_cm": 475,
       "height_m": 38.5,
       "location": {
@@ -62,7 +62,9 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Declared a Catalan monumental tree in 1990, also inside the EIN les Guilleries. Height 38.5 m, trunk perimeter at 1.3 m of 4.75 m, mean crown 26.5 m, condition normal, all from the register. No age published. A Commons photograph exists under the tree's own name and has not yet been checked.",
-      "how_to_recognise": "You can recognise it by its height, 38.5 metres, extraordinary for a sessile oak, with a crown 26.5 metres across. It stands above Osor, about 480 metres from the great pine."
+      "how_to_recognise": "You can recognise it by its height, 38.5 metres, extraordinary for a sessile oak, with a crown 26.5 metres across. It stands above Osor, about 480 metres from the great pine.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 475 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "gir_002",
@@ -109,9 +111,9 @@
       "id": "gir_003",
       "name": "The Ash of L'Aulet",
       "species": "Narrow-Leaved Ash (Fraxinus angustifolia)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 200 to 400 years, judged from a trunk 5.9 m round",
+      "age_min": 200,
+      "age_max": 400,
       "girth_cm": 590,
       "height_m": 21,
       "location": {
@@ -138,7 +140,9 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Declared a Catalan monumental tree in 2000. Height 21 m, trunk perimeter 5.90 m, mean crown 23.0 m, condition normal, from the register. No age published. The pollarding reading is general practice for the species in Catalonia and is not a documented history of this tree; the story asks the reader rather than asserting it.",
-      "how_to_recognise": "You can recognise it by its short, massive pollarded trunk carrying a crown that is entirely regrowth, 5.90 metres round. It stands at L'Aulet, Vidreres."
+      "how_to_recognise": "You can recognise it by its short, massive pollarded trunk carrying a crown that is entirely regrowth, 5.90 metres round. It stands at L'Aulet, Vidreres.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 590 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "gir_004",

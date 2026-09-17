@@ -32,9 +32,9 @@
       "id": "xho_001",
       "name": "Tilleul des Lognards",
       "species": "Lime (Tilia sp.)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 150 to 300 years, judged from a trunk 4 m round",
+      "age_min": 150,
+      "age_max": 300,
       "girth_cm": 400,
       "location": {
         "address": "Grassy plateau between the village centre, Pierreux and the Bléron valley, Xhoris, Ferrières",
@@ -58,7 +58,9 @@
       "photos": [],
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the company it keeps: a lime four metres round standing beside the Sainte-Barbe chapel, a Herman cross and a stele. It stands on the open plateau above Xhoris, near the GR571."
+      "how_to_recognise": "You can recognise it by the company it keeps: a lime four metres round standing beside the Sainte-Barbe chapel, a Herman cross and a stele. It stands on the open plateau above Xhoris, near the GR571.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 400 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ]
 }

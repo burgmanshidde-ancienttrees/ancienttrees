@@ -1150,9 +1150,9 @@
       "id": "par_033",
       "name": "The Turkey Oak of Square Rene-Le Gall",
       "species": "Turkey Oak (Quercus cerris)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 75 to 150 years, judged from a trunk 1.9 m round",
+      "age_min": 75,
+      "age_max": 150,
       "girth_cm": 190,
       "height_m": 18.0,
       "location": {
@@ -1169,14 +1169,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Three hundred metres from Square Rene-Le Gall's horse chestnut, on the same buried river, stands a Turkey oak the city's own register lists at 190 centimetres round and 18 metres tall. It shares the garden's history without sharing its fame: the horse chestnut has a planting date, an obelisk nearby and a published story, while this oak has only its two register measurements and a spot in the same 1930s park laid out over the vanished Bievre.\n\nQuercus cerris is a fast grower for an oak, native to southern Europe and Asia Minor, distinguishable from more familiar oaks by acorns wrapped in a shaggy, moss-like cup that gives the species its French name, chene chevelu, the hairy oak. Paris plants it as a street and park tree precisely because it tolerates drought and poor soil better than the native pedunculate oak, useful for a garden built on reclaimed, once-marshy ground.\n\nNo second source beyond the city's own tree register has been found for this specific tree, so it ships flagged. If you know more, the garden's obelisk is a five minute walk and the two trees make an easy stop on the same visit.",
-      "verify_notes": "Single official source (Ville de Paris Arbres Remarquables register, register_id 104840): girth 190cm, height 18m, no planting date. Earlier pass held this back only for lacking a second source ('short of the two-source bar'), which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker; Step 2 explicitly allows a single-sourced tree to ship flagged. 300m from the already-published par_031 (Horse Chestnut, same square), no extra walking distance on the existing walk. A city per-tree PDF fact sheet exists for a nearby-numbered register entry (104839, not this tree's 104840) but was not confirmed to be the same specimen; not used as a source here to avoid a wrong-tree risk.",
+      "verify_notes": "Single official source (Ville de Paris Arbres Remarquables register, register_id 104840): girth 190cm, height 18m, no planting date. Earlier pass held this back only for lacking a second source ('short of the two-source bar'), which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker; Step 2 explicitly allows a single-sourced tree to ship flagged. 300m from the already-published par_031 (Horse Chestnut, same square), no extra walking distance on the existing walk. A city per-tree PDF fact sheet exists for a nearby-numbered register entry (104839, not this tree's 104840) but was not confirmed to be the same specimen; not used as a source here to avoid a wrong-tree risk. Age derived from girth, not from a source: 190 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the acorns wrapped in shaggy, moss-like cups, on a trunk 190 centimetres round and 18 metres tall. It stands in Square Rene-Le Gall, 300 metres from the horse chestnut near the obelisk."
+      "how_to_recognise": "You can recognise it by the acorns wrapped in shaggy, moss-like cups, on a trunk 190 centimetres round and 18 metres tall. It stands in Square Rene-Le Gall, 300 metres from the horse chestnut near the obelisk.",
+      "age_basis": "girth"
     }
   ]
 }
