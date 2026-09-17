@@ -14,9 +14,19 @@ Build and preflight clean, claim released, pushed to main.
 
 Eindhoven's claim had no work behind it yet, so dispatched a verify pass
 on its 751-candidate Dutch register pool, aimed at one new tight cluster
-since the existing 16 trees already span 6.5 km. Still running as this
-entry is written; check `data/research/eindhoven-verified.json` before
-starting anything new on that city.
+since the existing 16 trees already span 6.5 km. It found one: five trees
+in **Villapark**, a protected garden suburb Philips built for its
+executives from 1907, three of them double-sourced against the city's own
+street-tree inventory. Wrote all five stories, merged them (**Eindhoven
+16 -> 21**), and updated the count promises. Build and preflight clean,
+claim released, pushed to main.
+
+Also added a species page, `/species/weeping-silver-lime`: fixing
+Alkmaar's species-name drift above (it now matches Ghent and Maastricht)
+pushed that cultivar to exactly the three trees a Contract F page needs,
+and pagegaps.py flagged the gap immediately. Written from those three
+trees' own facts, all park designers who planted it for the same
+wind-shimmer effect.
 
 ## 2026-09-17 - Spacing becomes a number, because eyes cannot see it
 
