@@ -46,6 +46,11 @@ interface Props {
    * English page. Widened from an "en" | "es" union on 2026-08-22 when
    * Contract J went to seven languages. */
   lang?: string;
+  /** True when this card sits on a FALLBACK page: the city has no overlay in
+   * `lang`, so its tree pages do not exist there (i18n.ts allTreePathsFor,
+   * 2026-09-17) and the card must link at the English URL. Without it this
+   * card produced 20,984 dead links the moment the fallback tree pages went. */
+  fallback?: boolean;
   /** A translated city page carries its own translated name, species and age. */
   overrides?: { name?: string; species?: string; age?: string; story?: string };
   /** The tick, on the pages that are the web's answer to the app's map screen:
@@ -58,7 +63,7 @@ interface Props {
 
 const {
   tree, citySlug, treeSlug, index, variant = "compact", note,
-  headingLevel = 3, omitSpecies = false, lang = "en", overrides, canTick = false,
+  headingLevel = 3, omitSpecies = false, lang = "en", overrides, canTick = false, fallback = false,
 } = Astro.props as Props;
 
 // Labels come from the one shared table rather than a ternary, which is what
@@ -75,7 +80,7 @@ const story = overrides?.story ?? tree.story ?? "";
 const photo = usablePhoto(tree);
 // The href is functional rather than cosmetic, so it generalises properly:
 // English lives at the root, every other language under its own prefix.
-const href = lang === "en" ? `/${citySlug}/${treeSlug}` : `/${lang}/${citySlug}/${treeSlug}`;
+const href = lang === "en" || fallback ? `/${citySlug}/${treeSlug}` : `/${lang}/${citySlug}/${treeSlug}`;
 
 // A compact card takes the first sentence. Splitting on ". " alone cut
 // "Quercus robur. It stands..." in the wrong place on any story opening with

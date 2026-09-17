@@ -33,6 +33,7 @@ import { cityFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../
 import { groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey } from "../../lib/parks";
 import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
+import { collectionEntries } from "../../lib/collection-rank";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -61,10 +62,16 @@ export async function GET() {
     face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, trees: renderableTrees(c) })),
   }));
 
+  // Contract D's own gate, the one /collections applies: a draft is built for
+  // review and never linked publicly, and this feed is as public as a page.
+  const citiesBySlug = new Map(cities.map((c) => [c.id, c]));
   const collections = (await getCollection("collectionPages"))
-    .filter((c) => (c.data.status ?? "published") !== "draft")
+    .filter((c) => c.data.status !== "needs_curation")
     .map((c) => {
-      const ids = (c.data.entries ?? [])
+      // Generated collections rank themselves at build time and carry an empty
+      // array on disk, so reading it dropped four of them out of the app
+      // entirely on the filter below.
+      const ids = collectionEntries(c, citiesBySlug)
         .map((e) => e.tree_id)
         // Only entries whose tree is actually live: a collection that lists a
         // retired tree would send somebody to a page that no longer exists.

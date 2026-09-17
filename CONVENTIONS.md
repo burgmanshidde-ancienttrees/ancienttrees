@@ -1921,3 +1921,124 @@ decide the second from the first. Undecided by Hidde as of this date.
 Read 2026-09-12:
 - https://support.google.com/maps/answer/2622947?hl=en&co=GENIE.Platform%3DAndroid
 - https://help.inaturalist.org/en/support/solutions/articles/151000194901-how-do-identifications-work-
+
+---
+
+## Translating an APP, as opposed to a website (2026-09-17)
+
+Hidde: "how to do it in app - can't you just use translation settings", then
+"benchmark how competitors treat app translations". The website half is already
+above under "Switching the language of a page"; this is the app half, and the
+two are not the same problem, because a website serves a URL per language and
+an app serves one binary to a phone that has already picked a language.
+
+**Nobody ships an in-app language picker on iOS. Unanimous, and it is the
+clearest answer in this file.**
+
+- **AllTrails.** 14 languages. "The AllTrails app uses the language on your
+  phone to detect which language the app will display in. If you wish to change
+  the language of your app you will have to change the language on your
+  device." The website keeps its footer dropdown; the app has nothing.
+- **komoot.** 11 languages. Follows the device's system language on both
+  platforms and cannot be overridden inside the app on iOS at all. Android
+  alone allows a per-app override, which is an Android platform feature rather
+  than a komoot design decision.
+
+So: a String Catalog, the phone decides, no control anywhere in the app. The
+control we would have reached for is the thing neither reference has.
+
+**Content is a separate layer from the interface, and it localises later,
+narrower, and by a different mechanism.** This is the part worth having looked
+up, because "translate the app" sounds like one job and is three.
+
+- **AllTrails** translates the interface into 14 languages and does NOT
+  translate trail descriptions.
+- **komoot** translates the interface into 11 and leaves community highlights
+  and tour descriptions in whatever language their author wrote them.
+- **Merlin (Cornell Lab)** has bird DESCRIPTIONS in 16 languages while its
+  interface ships in fewer, so the two counts are independent in both
+  directions.
+- **iNaturalist** has 57 interface languages and takes species descriptions
+  from the Wikipedia of that language rather than translating its own.
+
+**And the species NAME is its own layer in both nature apps, with its own
+setting.** iNaturalist puts common names under Content & Display as a lexicon
+plus a place, separate from the interface language, and can show two lexicons
+at once. Merlin localises common names through namesets shared across eBird,
+Merlin and the Macaulay Library, so the name travels between products while
+each product's prose does not.
+
+That maps straight onto our data and is the cheap thing this lookup found:
+our `species` field is 589 unique strings covering all 3,164 trees, against
+3,164 stories that repeat never. Both nature apps localise exactly that layer
+first and independently, so a translated species name can ship to every tree
+in a language long before that language has any stories.
+
+**Machine translation, where it is used, is labelled and the original stays
+reachable.** Google Maps auto-translates reviews into the device's language and
+shows the original underneath. Nobody silently replaces text with a machine
+translation, which is the shape to copy if we ever use Apple's on-device
+Translation framework for the long tail: a "See translation" affordance, not a
+substitution.
+
+**What this settles for us.** Three layers, not one job: interface (119 strings
+already written in 7 languages on the web, waiting on a String Catalog and the
+phone's own setting); species names (589 strings, shippable to every tree
+independently of stories); and stories (per language where an overlay exists,
+English otherwise). It also settles that the app needs no language control at
+all, and that `/api/trees.json` carrying a `lang` is the mechanism, since the
+app must not re-decide anything the server already knows.
+
+Read 2026-09-17:
+- https://support.alltrails.com/hc/en-us/articles/360028396712-How-to-change-your-AllTrails-language-settings
+- https://support.komoot.com/hc/en-us/articles/10272835126426-Changing-Language-Settings-on-the-komoot-App (via search summary; the domain is blocked by this sandbox's egress proxy)
+- https://newsroom.komoot.com/216676-komoot-adds-japanese-korean-polish-brazilian-portuguese-and-european-portuguese-to-its-growing-language-offerings
+- https://www.inaturalist.org/blog/88740-using-inaturalist-to-learn-names-in-other-languages
+- https://birdsoftheworld.org/bow/content/language-settings
+- https://techcrunch.com/2017/04/24/google-makes-its-local-reviews-easier-to-use-when-traveling-with-automated-translation/
+---
+
+## Telling somebody what species they are looking at (2026-09-11)
+
+**Two conventions, not one, and which one applies is decided by whether
+identification IS the product or is a feature beside it.**
+
+**Live in the viewfinder means the model is on the phone.** Seek by iNaturalist
+puts the name on screen while you move the camera, and Merlin does the same for
+birds; both run a model on the device and both work with no signal. Merlin is
+the one that shows the price: it only fits because you download a Bird Pack for
+one region first, so the model never has to hold the world. Neither is a
+camera screen with a clever feature on it; identification is the whole app.
+
+**Everything that has identification as a FEATURE takes a photograph first and
+answers from a server.** AllTrails shipped exactly this as Outdoor Lens: you
+point their in-app camera at a tree, snap, and land on a results page. So does
+PictureThis, and so does iNaturalist's own main app, which keeps a small
+on-device model only as the offline fallback. AllTrails is the closest shape to
+ours, an outdoors product that added identification, and it is the one that
+went to the server.
+
+**Three details of the AllTrails result screen worth copying, all three of them
+about honesty rather than accuracy.** It shows a probability rather than a
+verdict. It lists up to five alternatives underneath, so the screen admits it is
+ranking rather than knowing. And offline it does not fail: the scan is saved to
+the logbook and identified when the signal comes back, which is the same thing
+PictureThis does with the photographs you take in a garden with no reception.
+
+Ours is the second shape. `SpeciesChooser` already keeps room above its list for
+a suggestion, which is where a ranked answer lands, and `SightingSync` already
+queues a photograph that could not be sent, which is the offline half. What we
+do not have and they do is the model.
+
+**One thing they do that we now do too: AllTrails put Outdoor Lens behind Peak,
+their paid tier.** Hidde ruled the same way for ours the day this entry was
+written, so recognition is Plus and waits on his time (DECISIONS.md
+2026-09-11). What stays his alone under hard rule 2 is the price and whether it
+sits inside Plus or beside it.
+
+Read 2026-09-11:
+- https://support.alltrails.com/hc/en-us/articles/40312229299348-Introducing-Outdoor-Lens
+- https://www.picturethisai.com/faq
+- https://apps.apple.com/us/app/seek-by-inaturalist/id1353224144
+- https://support.ebird.org/en/support/solutions/articles/48000961587-merlin-bird-id-faqs
+- https://www.inaturalist.org/blog/108940-new-inaturalist-app-for-iphone

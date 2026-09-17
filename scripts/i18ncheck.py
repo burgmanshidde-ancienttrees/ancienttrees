@@ -99,7 +99,25 @@ def check(lang, slug):
              r"\u672c|\u9078|\u540d\u6728|\u5de8\u6728|\u53e4\u6728")
     n_trees = len(en.get("trees", []))
     copy = " ".join(str(d.get(k) or "") for k in COUNT_FIELDS)
-    for m in re.finditer(r"(?<!\d)(\d{1,2})(?![\d.,])", copy):
+    # Japanese needs the opposite rule, learned 2026-09-17 when this check
+    # failed three of three Japanese pages and was right about none of them.
+    # A 30-character window is a whole clause in Japanese, so "11月" (November),
+    # "12メートル" and the stray 4 out of "16.4メートル" all landed next to 巨木
+    # and read as tree counts. Japanese does not leave a count bare: it counts
+    # trees with 本 and titles a listicle with 選, so the counter IS the signal
+    # and proximity is not needed at all.
+    japanese = re.search(r"[\u3040-\u30ff\u4e00-\u9fff]", copy)
+    if japanese:
+        for m in re.finditer(r"(?<![\d.])(\d{1,2})(?![\d.,])\s*([本選])", copy):
+            v = int(m.group(1))
+            if v in (n_trees, n_trees - 1) or not (3 <= v <= 60):
+                continue
+            out.append("copy says %d but the city has %d trees (...%s...)"
+                       % (v, n_trees,
+                          copy[max(0, m.start() - 30):m.end() + 30].strip()))
+        return out
+
+    for m in re.finditer(r"(?<![\d.])(\d{1,2})(?![\d.,])", copy):
         v = int(m.group(1))
         if v in (n_trees, n_trees - 1) or not (3 <= v <= 60):
             continue
@@ -157,6 +175,62 @@ def check(lang, slug):
     return out
 
 
+def check_species_are_canonical_per_language():
+    """Hard rule 9, one language down: one common name per binomial, per language.
+
+    Added 2026-09-17 after a batch pass asked whether its own Spanish name for
+    Pinus nigra subsp. salzmannii clashed with an existing one. It did not, and
+    the scan that answered it found sixteen other species that DID, across four
+    languages and 29 tree entries: Taxodium mucronatum as both Ahuehuete and
+    Cipres de Moctezuma, Cupressus sempervirens as both Cipresso comune and
+    Cipresso mediterraneo, Aesculus hippocastanum under two Dutch names and two
+    different capitalisations in Spanish.
+
+    It matters for the same reason the English rule does and nothing was
+    watching it: Contract F groups a species page by the name, so two names for
+    one binomial split one page into two, each missing half its trees. The
+    per-overlay check above cannot see this, because neither file is wrong on
+    its own; only the pair is.
+
+    A tree naming two species in one string is left alone. Those are real
+    ("Ahornblaettrige Platane (Platanus x acerifolia) und Schwarzkiefer"), and
+    the binomial at the end belongs to the second tree rather than to the name
+    in front of it.
+    """
+    joiners = (" und ", " e ", " y ", " et ", " en ", "\u3068")
+    out = []
+    for lang in sorted(os.listdir(I18N)):
+        d = os.path.join(I18N, lang)
+        if not os.path.isdir(d):
+            continue
+        seen = {}
+        for f in sorted(os.listdir(d)):
+            if not f.endswith(".json"):
+                continue
+            try:
+                doc = json.load(open(os.path.join(d, f), encoding="utf-8"))
+            except (ValueError, OSError):
+                continue
+            for tid, t in (doc.get("trees") or {}).items():
+                sp = t.get("species") or ""
+                m = re.search(r"[\uff08(]([^)\uff09]+)[)\uff09]\s*$", sp)
+                if not m:
+                    continue
+                common = sp[:m.start()].strip()
+                if any(j in common for j in joiners):
+                    continue
+                seen.setdefault(m.group(1).strip(), {}).setdefault(
+                    common, []).append("%s/%s" % (f[:-5], tid))
+        for binom, names in sorted(seen.items()):
+            if len(names) > 1:
+                where = "; ".join(
+                    "%r (%dx, e.g. %s)" % (n, len(v), v[0])
+                    for n, v in sorted(names.items(), key=lambda kv: -len(kv[1])))
+                out.append("%s: %s has %d names in %s: %s"
+                           % (lang, binom, len(names), lang, where))
+    return out
+
+
 def main():
     targets = []
     if len(sys.argv) > 1:
@@ -184,8 +258,13 @@ def main():
                 print("    %s" % x)
         else:
             print("%-16s clean" % label)
-    print("\n%d overlay(s) checked, %d with problems" % (len(targets), bad))
-    return 1 if bad else 0
+    splits = check_species_are_canonical_per_language() if len(sys.argv) == 1 else []
+    for x in splits:
+        print("SPLIT SPECIES  %s" % x)
+    print("\n%d overlay(s) checked, %d with problems%s"
+          % (len(targets), bad,
+             ", %d split species" % len(splits) if splits else ""))
+    return 1 if (bad or splits) else 0
 
 
 if __name__ == "__main__":

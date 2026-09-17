@@ -515,6 +515,78 @@ The photograph-versus-tick split stays open: Hidde wants to think about it longe
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 - Five translated city sets, and the brief/merge pair that made them cheaper
+
+Hidde's call: keep translating only the pages that already score, and look
+for ways to do it faster. Five cities in the three languages langcheck has
+cleared for rollout, 42 tree entries, all merged and clean:
+
+| Lang | City | English impressions | Trees |
+|---|---|---:|---:|
+| ja | nara | 29 | 15 |
+| ja | kagoshima | 25 | 13 |
+| de | leipzig | 27 | 7 |
+| es | menorca | 29 | 6 |
+| es | ibiza | 30 | 1 |
+
+fr, it, nl and pt were left alone: their language-test verdict falls on
+09-19 and none has passed its twin on two cities yet.
+
+**Measured 5,452 tokens per tree entry** against the assembly line's ~15k
+target for a new tree, which is the arithmetic behind rung 0b: a translation
+produces no new facts, so it should cost a fraction, and it does.
+
+**Two speedups, and the obvious one did not work.** A translation memory
+harvested from the 50 existing overlays saves 2%: the repetitive fields are
+short and stories are 85% of the payload. It is kept anyway, for consistency
+rather than cost, so one species does not get two names across cities. What
+pays is the file itself: 35 to 45% of a city JSON is coordinates, photo
+blocks, licences and verify_notes that a translator may not touch.
+`scripts/transbrief.py --brief` hands over only the translatable fields and
+`--apply` merges the answer back, refusing one that is missing a tree id.
+That last refusal matters more than the saving: a short overlay does not
+break one page, it stops the whole site deploying, and it has done so twice.
+
+`.claude/agents/translate.md` pins the pass to Opus and carries the rules, so
+a night run can dispatch a translation without a session.
+
+**A bug in my own brief, caught by i18ncheck on the first merge.** The
+overlay needs `title` and `question_title` and the English city file has
+neither, because the build generates both and there is no generator for any
+other language. The brief only passed through English fields that exist, so
+the pass was never shown them. Both are asked for now, with a sibling
+overlay's pair as the pattern, and `--apply` refuses an answer missing any
+required city field. Verified red on the broken answer and green once fixed.
+
+**`transplan.py --value` replaces reading langcheck by eye.** It ranks by
+English impressions per 1,000 characters of work rather than by raw
+impressions, which puts a one-tree island above a thirty-tree capital. It
+also sees second languages in multilingual countries, which langcheck cannot:
+a city carrying its first language leaves that queue entirely, hiding every
+Belgian, Swiss and Luxembourgish page.
+
+**And it skips what seolearn marks NOT DEMAND, which caught a trap.** Brussels
+has 720 English impressions and 35 trees with no Dutch page, the largest
+untranslated set on the site. Every one of those impressions is a Google
+exact-phrase operator query, so no person typed them, and the proof was
+already on disk: the French Brussels overlay took 1 impression against a 739
+English twin. The list is parsed from DATA.md rather than copied.
+
+Three judgement calls the passes made and did not hide, each checked here
+before merging. Leipzig's question title says no age is recorded rather than
+carrying a number, because Leipzig publishes none for any of its seven trees,
+only the 1996 resolution; that follows de/munich, which drops the
+parenthetical where the answer is not a number. The Balearic place, estate
+and register names stay Catalan inside Spanish prose, because a visitor reads
+them off a sign. Eight species had no settled Japanese name and are now
+canonical under hard rule 9; checked across every ja overlay, no binomial
+carries two Japanese names.
+
+FOR HIDDE: the app is still English-only end to end. No String Catalog at
+all, and /api/trees.json carries no `lang`, so none of the 55 overlays
+reaches a phone. The website has had all 119 UI strings in seven languages
+for weeks. The cheap half is the feed, because those translations already
+exist and are simply not being served. Waiting on his word.
 ## 2026-09-17 (continuation 11) - Enschede 13->15, Helmond 18->19; Alkmaar verify pass dispatched
 
 Followed the run prompt's write-first rule: `prepare.py` showed three fully
@@ -3192,6 +3264,73 @@ time and wore a wide double band across the top of the map. It now says only
 what the tile credit cannot: the way to /sources, where Valhalla, FOSSGIS and
 the ODbL are named.
 
+## 2026-09-12 - Baarn's town hall plane, from a newspaper clipping, and the size of the Dutch seam
+
+Hidde photographed a page of the local paper: Baarn is the national kick-off
+of the European TreeTag campaign on Friday 18 September, and the first tag
+goes on the plane in front of the town hall. He asked for the tree and for
+the database behind it, and said explicitly not to mail anybody.
+
+**The tree.** brn_008, The Town Hall Plane, Baarn 7 -> 8. Stationsweg 18,
+pin confirmed from the register's own per-tree coordinate, 450 cm round,
+26 m tall, planted band 1890-1900. Two independent lines of evidence: LRMB
+record 1677447 for position, girth, ownership, access and condition, and
+the municipality's TreeTag announcement for the measurements taken by
+boomdeskundige Pius Floris. Girth and planting band agree independently,
+450 cm at about 3.5 cm a year putting a plane near 130. The register's own
+hedge about the tree being planted during the 1897 villa's construction is
+repeated as a hedge, not sharpened, which is the bridge claim this city
+already taught us once. No photograph: the press image is credited Gemeente
+Baarn and is not openly licensed. Baarn's intro, question_meta and access
+FAQ were rewritten for eight trees; preflight caught all three.
+
+**The database was already on disk, and it is bigger than anyone has said
+out loud.** data/registers/netherlands-lrmb.json, 16,094 trees, Bomenstichting,
+attribution-only licence, imported 2026-08-18. It holds 44 Baarn rows and
+carried the town hall plane with every field the page needed. Measured
+across the whole country: 8,233 rows are visitable=ja and not privately
+owned, so hard rule 10 is answered from the data, and **7,439 of those we do
+not map**, against 569 Dutch trees published. Utrecht alone has 210 unmapped
+and sits at queue #78; Amsterdam 165, Bronckhorst 112, Land van Cuijk 106,
+Zutphen 90, Lochem 86. The night runs are already mining this seam (Breda
+and Amersfoort the same week), so this is the size of it rather than a
+discovery that it was idle. Baarn itself has 17 more publishable unmapped
+rows, which would take it from 8 to 25 with no web research at all.
+
+**The register was imported but never indexed in the scouting ledger**, so
+scout_next.py read every Dutch city as unscouted. Added as a country-level
+entry with the measurement above and the unscouted Dutch leads worth a look
+when it runs dry (openbomenkaart.org, boomregister.nl / Boombasis,
+data.overheid.nl 14394, atlasleefomgeving.nl, the RCE green heritage map).
+
+**TreeTag is not a database.** It is an awareness action by Pius Floris
+Boomverzorging, hundreds of locations across the Netherlands, Belgium,
+Poland, England, Sweden and the United States, with the numbers computed in
+i-Tree. No public list or map of tagged trees exists that search can find.
+It is a lead source, because every tagged tree is one somebody argued for,
+and not something to import.
+
+FOR HIDDE: four of the six nominated Baarn trees are still unknown to us,
+and baarn.nl, baarnschecourant.nl, mooibaarn.nl and boomkronen.eu are all
+blocked by this session's egress proxy, so the list could not be read. A
+night run with open egress should try; if it is blocked there too, the page
+is one paste away.
+And the doubled preposition found beside it, fixed the same day on his "doe
+maar gewoon beide". Eleven trees read "A Muku Tree in On the stone perimeter
+wall near Omiya-gomon, Kyoto", because every metaLead joins the area with its
+own preposition and four Pisa and four Kyoto neighbourhoods already start with
+one. The tempting fix was to strip it from the data, and it is wrong twice
+over: that field renders correctly in the facts table, and "near Piazza dei
+Miracoli" would become "in Piazza dei Miracoli", putting a tree on a square it
+stands beside. A snippet does not get to be more precise than the record about
+where something is. So an area beginning with a preposition is dropped and the
+city carries the lead alone, which also hands 40 characters back to the
+sentence that says why to go.
+
+The app change could not be built here, this being Linux with no Xcode, so
+appsweep and appfit did not run on it locally; ios.yml picked it up on the
+push and judges it in CI.
+
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
 Hidde, on finding the whole attribution line under every page: "moet dit
@@ -4068,6 +4207,61 @@ looking first: Astro writes `london.html` and not `london/index.html`, and
 iNaturalist names every photograph `medium.jpg` with the identity one segment
 up. Nothing was lost, the live site stayed up throughout. Both fixed and the
 final deploy is green.
+## 2026-09-10 (session) - A failed backlink fetch no longer records itself as a check
+
+Hidde asked about the SEO numbers and then corrected me on backlinks: I had
+repeated the 08-09 "zero referring domains" reading and the digest's
+"external referrers: none yet" line, when getLISBON's two followed links
+have been live since 09-04 and verified on 09-08. That correction is
+already recorded in the 09-08 entry; what is new is the bug I found by
+running `backlinks.py` from a session whose egress proxy blocks all twelve
+watched hosts.
+
+`check()` set `item["checked"] = today` BEFORE fetching, so every one of the
+twelve 403s still stamped today's date. Two costs, and the second is the
+real one. The date claims we read a page we could not reach. And `due()`
+sorts least-recently-checked first, so a stamped failure pushes that page to
+the BACK of the rotation: a host that is persistently unreachable would get
+retried least often of all, which is exactly backwards. The date now moves
+only after a successful fetch. A deliberate blocklist skip still advances
+it, because that is a decision rather than a failure and retrying it first
+forever would starve the rest of the list.
+
+No data change: the store-level `checked` field is written and never read,
+and the per-page dates now stay put when a run cannot fetch.
+## 2026-09-10 - Four collections were showing no trees; the ranking now travels
+
+Hidde: "I see some collections in the website that are empty of trees." He is
+right, and it was worse than the /collections page it shows on.
+
+The tallest, the thickest, the autumn and the harvest lists are GENERATED
+collections: they rank themselves at build time and their files on disk carry
+an empty `entries` array on purpose. Only the collection page itself knew that,
+because the ranking lived inside `collections/[slug].astro`. Everything else
+read the file's own empty array and believed it:
+
+- /collections printed **"0 trees, 0 cities"** on four cards, each under the
+  no-photograph placeholder, next to cards showing real counts.
+- **/api/browse.json dropped all four from the app entirely**, on a filter that
+  removes a collection with no trees, so the Collection tab has never once
+  shown the tallest, the thickest, the autumn or the harvest list.
+- City, country and question pages never cross-linked a tree that appears only
+  in a generated collection. 515 city pages now carry a collection link.
+- A fifth, `trees-older-than-400-years`, generated as well but holding six
+  hand-written notes, advertised itself as "6 trees, 1 city". It holds 299
+  across 231.
+
+The ranking moved to `site/src/lib/collection-rank.ts`, and a consumer now asks
+that module what a collection holds instead of reading the array. What the
+cards say after the change: thickest 794, harvest 334, oldest 299, tallest 266,
+autumn 226. The collection pages themselves render exactly as before.
+
+Two things found on the way. The app feed gated drafts on `status != "draft"`
+while Contract D's draft status is `needs_curation`, so a drafted collection
+would have gone straight to the app while the website held it back; it uses
+/collections' own gate now. And `check_no_collection_is_empty()` in qa.py is
+the ratchet: it asks the reader's question of both surfaces, does this
+collection show me any trees, which is a question only a built site can answer.
 
 ## 2026-09-10 - Fixed a failing deploy, finished 3 of 4 open claims from the previous run
 

@@ -1,0 +1,84 @@
+{
+ "_note": "es overlay for girona, written 2026-09-17 from data/cities/girona.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Girona",
+ "title": "Árboles monumentales de Girona: 7, de las Guilleries al mar",
+ "meta_description": "Los árboles monumentales de Girona: un roble de 38 metros, un castaño de nueve metros de perímetro tras una ermita y un lentisco hecho árbol.",
+ "intro": "Ninguno de estos árboles está en Girona. La gran plantación de la ciudad es la Devesa, una alameda de unos dos mil quinientos plátanos que están entre los más altos de Cataluña, y como son arboleda y no ejemplares sueltos ninguno figura en el registro autonómico. Lo que sí figura crece en las colinas, a media hora en coche: un roble albar de 38 metros, un castaño de nueve metros de perímetro tras una ermita y dos arbustos mediterráneos, un lentisco y un madroño, a los que se ha dejado en paz tanto tiempo que se han vuelto árboles.",
+ "question_title": "¿Cuál es el árbol más antiguo de Girona? (nadie los anota)",
+ "question_meta": "Cataluña no anota la edad de sus árboles, así que el más antiguo de Girona se desconoce. Qué sí mide el registro y 7 monumentales a media hora.",
+ "question_answer": "Nadie publica edades de los árboles monumentales de Cataluña, así que no se puede nombrar el más antiguo de los alrededores de Girona. El mayor de tronco es el castaño del Pla de Sant Nicolau, con 9,70 metros de perímetro, y el más alto es el roble albar de Ca n'Iglesies, en Osor, con 38,5 metros.",
+ "question_context": "El registro catalán lo mide todo salvo la edad. Cada árbol declarado monumental recibe una especie, un estado, una altura total, un perímetro de tronco a 1,3 metros, un diámetro medio de copa, una localización con cinco decimales y una ficha oficial, y en ninguna parte hay columna de edad. Así que la clasificación tiene que ser por tamaño, y alrededor de Girona los dos extremos están claros. El castaño que crece detrás de la ermita del Pla de Sant Nicolau tiene un tronco de 9,70 metros de perímetro, más del doble que cualquier otro de aquí, y el registro anota su estado como en decadencia, cosa que conviene saber antes de viajar. El roble albar de Ca n'Iglesies, en Osor, mide 38,5 metros, algo notable para la especie tan al sur, y crece dentro de un espacio natural protegido de las Guilleries. Los dos están amparados por la ley de 1987 que hace ilegal talar un árbol declarado. Lo que el registro sí anota y casi ninguno anota es si cada árbol sigue vivo: unas cuantas fichas cercanas a Girona figuran como muertas y se mantienen en la lista, y ninguna de ellas está en esta página. Cómo llegar a Osor: a unos 21 km al suroeste de Girona por carretera de montaña.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Girona?",
+   "a": "Se desconoce. El registro catalán de árboles monumentales anota especie, estado y medidas, y no tiene columna de edad alguna, así que la clasificación honesta aquí es por tamaño: el castaño del Pla de Sant Nicolau es el más grueso, con 9,70 metros de perímetro, y el roble de Ca n'Iglesies es el más alto, con 38,5 metros."
+  },
+  {
+   "q": "¿Están en esta página los plátanos de la Devesa de Girona?",
+   "a": "No. La Devesa son unos 2.500 plátanos plantados en alameda y de los más altos de Cataluña, y el registro autonómico declara árboles individuales y no arboledas, así que ninguno está en la lista. Merecen el paseo igualmente, y quedan en pleno centro de la ciudad."
+  },
+  {
+   "q": "¿Qué significa árbol monumental en Cataluña?",
+   "a": "Una protección legal en vigor desde 1987: un árbol declarado no puede talarse ni arrancarse, ni entero ni en parte. Hay 299 declarados en toda la comunidad, 24 de ellos añadidos en 2025 tras casi una década sin declaraciones nuevas."
+  },
+  {
+   "q": "¿Se pueden visitar gratis estos árboles?",
+   "a": "Sí, los siete. Cuatro están dentro de espacios naturales protegidos de las Guilleries y de Rocacorba, uno junto a un cruce de carreteras, otro junto a un camino y otro detrás de una ermita. Ninguno cobra nada."
+  },
+  {
+   "q": "¿Se puede ir andando de uno a otro?",
+   "a": "De dos de ellos, sí: el roble y el pino de Ca n'Iglesies, en Osor, están a unos 480 metros el uno del otro en el mismo valle. El resto son paradas sueltas, de 16 a 25 kilómetros de Girona en cuatro direcciones distintas."
+  }
+ ],
+ "trees": {
+  "gir_001": {
+   "name": "El gran roble de Ca n'Iglesies",
+   "species": "Roble albar (Quercus petraea)",
+   "access": "Gratuito, en el espacio natural protegido de las Guilleries",
+   "transport": "Osor, a unos 21 km al suroeste de Girona por carretera de montaña, y luego a pie",
+   "story": "Treinta y ocho metros y medio es una altura extraordinaria para un roble albar en cualquier parte, y este la alcanza en Cataluña. Quercus petraea es un árbol de laderas frías del norte que toca su límite meridional en estas montañas, y llega hasta aquí creciendo en los valles húmedos y sombríos de las Guilleries, donde se acaba el Mediterráneo y empieza algo más parecido al bosque atlántico. Este lleva una copa de 26,5 metros de diámetro sobre un tronco de 4,75 metros de perímetro, en el valle de Santa Creu d'Horta, por encima de Osor. Cataluña lo declaró árbol monumental en 1990 y además queda dentro del espacio natural protegido de las Guilleries, así que lleva dos capas de protección encima. A unos 480 metros crece un pino salgareño de 29 metros que se declaró el mismo día, lo que convierte a este en la única parada de los alrededores de Girona donde dos árboles protegidos quedan a un paseo corto uno del otro. El registro anota a los dos en estado normal. Ninguno tiene edad publicada, porque Cataluña no las anota."
+  },
+  "gir_002": {
+   "name": "El castaño del Pla de Sant Nicolau",
+   "species": "Castaño (Castanea sativa)",
+   "access": "Gratuito, detrás de la ermita del Pla de Sant Nicolau, dentro de un espacio natural protegido",
+   "transport": "Sant Miquel de Campmajor, a unos 16 km al noroeste de Girona, y luego a pie",
+   "story": "Nueve metros y setenta centímetros de perímetro, detrás de una ermita en una llanada de las montañas de Rocacorba. Es con diferencia el árbol más grueso de los alrededores de Girona, más del doble del tronco de cualquier otro de esta página, en un árbol de solo 18 metros de alto y con una copa de 16 metros de diámetro; los castaños hacen eso, se van a lo ancho en vez de a lo alto y acaban ahuecándose mientras la cáscara sigue engordando. Cataluña lo declaró árbol monumental en 1991 y además queda dentro del espacio natural protegido de las Muntanyes de Rocacorba. El registro anota su estado como en decadencia, que es lo único de esta página que conviene saber antes de conducir hasta allí: un castaño de ese perímetro en decadencia puede verse enorme o puede verse hecho una ruina según el año, y la ficha se hizo hace tiempo. El castaño no es autóctono de Cataluña en sentido estricto. Los romanos lo repartieron por el Mediterráneo occidental por el fruto, que alimentaba comarcas enteras de montaña en los inviernos en que se acababa el grano, y de aquellos castañares viejos salen casi todos los castaños gigantes que quedan hoy en Europa."
+  },
+  "gir_003": {
+   "name": "El fresno de L'Aulet",
+   "species": "Fresno de hoja estrecha (Fraxinus angustifolia)",
+   "access": "Gratuito, en campo abierto en L'Aulet",
+   "transport": "Vidreres, a unos 20 km al sur de Girona",
+   "story": "Un tronco de 5,90 metros de perímetro es muchísimo fresno. Fraxinus angustifolia es el fresno del sur de Europa, un árbol de ribera que sigue los cursos de agua por tierras demasiado secas para la especie del norte, y se desmochó durante siglos por toda Cataluña porque las ramas con hoja dan buen forraje y la madera es lo bastante flexible para mangos de herramienta. Cortar un árbol así una y otra vez es lo que produce esta forma: un tronco corto y enorme que sostiene una copa que es todo rebrote, en este caso de 23 metros de diámetro en un árbol de 21 metros de alto. Cataluña lo declaró árbol monumental en el año 2000, de las incorporaciones tardías. Crece en L'Aulet, en el término de Vidreres, al pie de la llanura de la Selva, donde el agua queda cerca de la superficie, que es el único suelo en el que un fresno de este tamaño podía llegar hasta aquí. El registro lo da en estado normal y no le pone edad, como no se la pone a ninguno de los 299 árboles que protege. Si sabe cuándo se desmochó por última vez, eso lo dataría mejor que ninguna otra cosa."
+  },
+  "gir_004": {
+   "name": "El gran pino de Romanya",
+   "species": "Pino piñonero (Pinus pinea)",
+   "access": "Gratuito, en campo abierto al sur de la aldea",
+   "transport": "Romanya de la Selva, a unos 20 km al sureste de Girona",
+   "story": "Treinta metros y medio es muchísimo para un pino piñonero, que suele gastar el esfuerzo en irse de lado hasta formar el parasol de copa plana que todo el mundo reconoce. Este tiró hacia arriba, sobre un tronco de 3,81 metros de perímetro y con una copa de solo 18,8 metros de diámetro, estrecha para esa altura. Crece 330 metros al sur de Romanya de la Selva, una aldea de una loma sobre la Costa Brava conocida sobre todo por lo que tiene al lado: la Cova d'en Daina, un sepulcro megalítico de corredor rodeado de un círculo de piedras, levantado hacia el 3000 a. C. y de los mejor conservados de Cataluña. Sea cual sea la edad de este pino, el terreno donde crece lleva cinco mil años siendo un sitio al que la gente va. Cataluña lo declaró árbol monumental en 1991 con dos nombres, el Pi Gros d'en Cama y el Pi de Romanya, cosa normal en estos árboles: el registro guarda el nombre de la casa y el del pueblo uno al lado del otro porque los dos se usan en la zona. Su estado figura como normal y no se publica edad."
+  },
+  "gir_005": {
+   "name": "El lentisco de Torrent",
+   "species": "Lentisco (Pistacia lentiscus)",
+   "access": "Gratuito, junto a un cruce de carreteras público",
+   "transport": "Torrent, a unos 25 km al este de Girona en dirección a Palafrugell",
+   "story": "Esto es un arbusto, y Cataluña lo ha protegido por ley. El lentisco crece por todo el Mediterráneo seco como matorral a la altura de la cintura, esa maleza que uno aparta en un camino de costa, y normalmente se cuenta en matas y no en troncos. Este mide 5,5 metros de alto, con un tronco de 1,90 metros de perímetro y una copa de 8 metros de diámetro, algo fuera de escala para la especie, y le toca estar junto al cruce de la C-255 con la GI-652, a las afueras de Torrent, donde cualquiera puede parar y mirarlo. Cataluña lo declaró árbol monumental en 1991. El lentisco es la planta de la que sale la almáciga, la resina que se sangra en Quíos y que se masca desde hace tres mil años, y de esa resina viene el verbo masticar; el comercio catalán nunca tuvo peso, así que a este nunca se le sacó nada. Lo que le hizo falta para llegar aquí fue tiempo y que nadie desbrozara el terreno. El registro anota su estado como normal y, como siempre, ninguna edad. Un lentisco de este tamaño es el mejor argumento de este sitio a favor de la idea de que cualquier especie se vuelve notable si se la deja en paz el tiempo suficiente."
+  },
+  "gir_006": {
+   "name": "El madroño de Can Genoer",
+   "species": "Madroño (Arbutus unedo)",
+   "access": "Gratuito, a la derecha de un camino público cerca de Can Genoer",
+   "transport": "Cruilles, a unos 16 km al este de Girona",
+   "story": "Aquí ha pasado lo mismo que en Torrent, con otro arbusto. Arbutus unedo es una planta mediterránea de costa que casi todo el mundo conoce como matorral de dos o tres metros, y este mide 8,5 metros de alto sobre un tronco de 2,38 metros de perímetro, más o menos lo máximo que se le conoce a la especie. Crece junto al camino, cerca de Can Genoer, en las tierras de colina del Baix Emporda, y Cataluña lo declaró árbol monumental en el año 2000. El madroño hace algo que casi ningún otro árbol europeo hace: lleva flores y fruto maduro a la vez, a finales de otoño, así que de octubre a diciembre la copa tiene campanillas blancas colgando junto a frutos redondos y rojos de la floración del año anterior. El fruto se come y no es gran cosa, que es justo lo que dice el nombre de la especie, porque unedo suele leerse como contracción de unum edo, como uno. La corteza es lo otro que hay que mirar, de un rojo canela liso que se desprende en tiras. El registro da su estado como normal y no le pone edad."
+  },
+  "gir_007": {
+   "name": "El gran pino de L'Espinau",
+   "species": "Pino salgareño (Pinus nigra subsp. salzmannii)",
+   "access": "Gratuito, en el espacio natural protegido de las Guilleries, a unos 480 m del gran roble",
+   "transport": "Osor, a unos 21 km al suroeste de Girona por carretera de montaña, y luego a pie",
+   "story": "A unos 480 metros del gran roble crece un pino que se protegió el mismo día. Los dos árboles de Ca n'Iglesies, en Osor, se declararon monumentales en 1990 y los dos quedan dentro del espacio natural protegido de las Guilleries, y juntos son la única pareja de árboles protegidos a un paseo uno del otro en todo el entorno de Girona. Este mide 29 metros de alto, con un tronco de 3,16 metros de perímetro y una copa de 16,5 metros de diámetro. Es un pino salgareño, la subespecie salzmannii, que es el pino de montaña del interior de la península y crece sobre caliza y en suelos pobres donde casi nada más da madera; la suya se usó para mástiles y vigas porque crece recto y su contenido en resina hace que tarde en pudrirse. Ver uno de 29 metros en los valles húmedos de las Guilleries sorprende un poco, porque la subespecie está más en su sitio sobre calizas secas más al oeste. El registro lo anota en estado normal. No se publica edad, y el emparejamiento con el roble es la razón de que esta parada sea la parada que es."
+  }
+ }
+}

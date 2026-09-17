@@ -1,5 +1,134 @@
 # Decisions
 
+## 2026-09-17 - The translation strategy, fixed
+
+Hidde: "zet deze vertaal strategie vast en vind de meest token effectieve manier
+om het voor elkaar te krijgen", then "en seo sterke manier". Both halves are
+here because they pull against each other and the tension is the whole design.
+
+### Two engines, and they are not the same work
+
+**Coverage costs no tokens and earns no ranking.** Under the fallback model
+(his call, 2026-09-17, following the convention), every city, species, country
+and collection page exists at `/[lang]/...` whether or not it is translated.
+Where no overlay exists the frame is the reader's language and the content is
+English, carrying `rel=canonical` to the English URL. That is Google's own
+documented answer for the same language on a second URL, and it is not the
+scaled-content policy, which is about MACHINE TRANSLATION at scale. These pages
+are deliberately out of the sitemap and deliberately do not rank. They exist so
+a reader who lands on /es/cadiz can keep browsing without being thrown into
+English, which is what AllTrails and komoot both do.
+
+**Ranking costs tokens and is bought one page at a time.** Only a genuinely
+translated overlay competes in search, self-canonical with hreflang to its
+siblings. So the translation budget is never spent on coverage; it is spent
+where demand is already measured.
+
+Reading those two together: never translate to fill a gap. The gap is already
+filled, for free, by the fallback. Translate only to win a query.
+
+### Where the budget goes, on the measured numbers
+
+Mature overlays (live four weeks, robot-inflated English twins excluded) carry
+0.88 of their English twin's impressions, so a translation roughly doubles a
+city's reach when it works. Per language it is not close:
+
+| de 1.95 | es 1.15 | ja 1.13 | fr 0.95 | nl 0.74 | it 0.44 | pt 0.28 |
+
+The upside is larger than the average suggests, and it clusters where the local
+language IS the search language: Cadiz 4.26, Madrid 2.90, Zurich 2.89, Kyoto
+2.44. So the selection rule stands, and the order inside it is: a language that
+has passed its twin on two cities, then the city with the most English
+impressions in that language's own area.
+
+Two traps this file has already paid for. A new overlay needs about four weeks
+before its numbers mean anything, so an early reading is indexing lag wearing a
+verdict's clothes; every one of the thirteen newest read below 0.54 and none of
+them was a failure. And impressions that come from Google exact-phrase operator
+queries are robots: Brussels showed 739 of them, its French overlay earned 1,
+and `transplan.py --value` now skips those rows outright.
+
+### What is never translated
+
+The legal set, per DECISIONS.md 2026-09-17 above. And nothing is machine
+translated in bulk without curation, which is the one line Google's spam policy
+actually draws.
+
+**Said plainly, because it is his risk and not mine to reassure away: our
+translations ARE machine translations.** What stands between them and the
+policy is curation rather than a human reader, since nobody here reads Japanese:
+calibration on the existing set, i18ncheck, the length limits the build
+enforces, the banned-word scan, canonical species names per language, and a
+session reading the output. That is a long way from doorway pages and I believe
+it holds. It is not the same thing as a person having read it.
+
+### The cost model, measured rather than guessed
+
+A translation pass costs about **148k tokens before it translates anything** and
+**~2.4k per tree** after that. The fixed part is turns, each re-sending context,
+not payload. So batch size is nearly the whole lever:
+
+| 7 trees | 23,500/tree | 28 trees | 7,656/tree | 50 trees | 4,823/tree measured |
+
+Three passes predicted within 10% of the meter, so the model is usable for
+deciding whether a pass is worth running. What follows from it:
+
+- **Never run a pass under about ten trees.** Below that a translated tree
+  costs more than publishing a new one (~15k), and the answer is to wait until
+  the language has enough cities to fill a batch.
+- **One pass per language, many cities**, not one per city.
+- **Hand over only the translatable fields** (`transbrief.py --brief`): 35 to
+  45% of a city file is coordinates, photo blocks and licences a translator may
+  not touch.
+- **Inline the calibration.** Opening de/berlin.json to learn the register
+  costs 66k characters and a turn; two sample entries in the brief teach the
+  same thing.
+- **State every limit in the brief.** Titles are capped at 60 characters and
+  descriptions at 155, and a brief that omits them gets them back over the
+  limit in every language at once, because these languages run 10 to 20 percent
+  longer than English. Thirteen came back over, and the build finds them one
+  five-minute build at a time.
+- **Never trust a pass's own token estimate.** They were 2.5x under and 2.7x
+  over on the same day. Log the harness figure.
+
+### What refuses a breach
+
+`scripts/uistrings_check.py` (limits, in a second rather than a build),
+`i18ncheck.py` including `check_species_are_canonical_per_language()`,
+preflight's `check_overlay_coverage()`, qa.py's orphan check, and
+`transbrief.py --apply`, which refuses an answer missing a tree id or a
+required city field.
+
+## 2026-09-17 - The legal pages stay English, in every language
+
+Hidde, asked whether the general pages should all be translated now that the
+structure work had started: "Juridisch en legal enzo hou maar Engels dat lijkt
+toch niemand voorlopig."
+
+**What this covers:** /privacy, /terms and /sources, 13,620 characters between
+them. They are not copy. They are a statement of what we do with other people's
+data, made on Hidde's name, and a mistranslated sentence there is a claim about
+his obligations in a language neither of us can read back. That is question 3 of
+the mandate, can it hurt anyone other than Hidde, and the honest answer is that
+it can hurt the reader who relies on it.
+
+His reason is also the right one on its own terms: at the volumes this site
+runs at, nobody is reading the terms page in Spanish, so the risk buys nothing.
+Keeping legal text in one governing language is the ordinary practice for
+international sites rather than a shortcut.
+
+**What this does NOT cover, so the line is clear.** Everything a reader uses to
+find a tree is translated and stays translated: the city, tree and question
+pages, the indexes, the navigation, the homepage, /contribute and /app. The
+split is between the product and the paperwork, not between cheap and
+expensive.
+
+**The consequence to leave honest.** A translated page's footer links to
+/privacy and /terms in English. That is the intended state and not a gap for a
+later run to close; a session that finds it should read this entry rather than
+"fix" it. If the volumes ever change, the thing that reopens this is a reader
+asking, not a tidiness instinct.
+
 ## 2026-09-12 - Sign in with Apple comes to the web, and the app's emailed link comes back to the app
 
 Hidde: "Why is apple login not available on mobile web? Everything should be
@@ -108,6 +237,59 @@ page, because `.tree-photo.tree-hero img { height: 280px; object-fit: cover }`
 out-specifies `.pv-frame img` and the dialog lives inside that figure. No gate
 could see it, since the dialog exists, the image loads and the link works.
 Measuring the rendered box is what found it.
+## 2026-09-11 - Species recognition from the camera is a Plus feature, and it waits
+
+Hidde, asked how hard live species recognition in the camera would be and shown
+what it costs: "Onthou dat we dit als premium optie gaan bouwen nu geen tijd
+voor."
+
+**Two things settled, and the second is the one worth writing down.** It is
+PAID, on his own ruling, and it is NOT NOW, for time rather than for evidence.
+That second half matters because it is a different reason from the one this
+project usually parks things for. Nothing is waiting on a measurement here: the
+cost is known, the route is known, and the convention is looked up. It waits
+because his week is full, so the trigger is him saying go, never a number
+arriving.
+
+**It resolves the 2026-08-29 "guessing waits" into a date-less yes.** That entry
+said naming a species is a picker and guessing it from the photograph waits, on
+his "nog niet, alleen de kiezer". The picker shipped. This says what the waiting
+was for.
+
+**And it settles a genuine ambiguity in the launch freeze of 2026-08-26.** Rule
+5 there says every new feature defaults to Plus unless it feeds the flywheel by
+bringing in data or users, and recognition does both halves of that exception:
+14 of the 15 trees ever added through the app carry no species, and the field is
+what makes such a tree publishable. So it could honestly have gone either way,
+and he has chosen. Worth remembering when the next feature sits on that line,
+because the exception is narrower than it reads.
+
+**The route, decided by the convention rather than by taste.** Photograph first,
+answer from a server, per CONVENTIONS.md 2026-09-11: every product that has
+identification as a FEATURE does it that way, AllTrails included, and only the
+apps whose whole product is identification (Seek, Merlin) put a model on the
+phone. Live-in-the-viewfinder is therefore the expensive shape and not the
+convention, which is a happy coincidence rather than an argument.
+
+**What it costs, so nobody prices it again.** Roughly half a cent per
+identification on Haiku 4.5 and about a cent on Sonnet 5, for a photograph
+downscaled to about 1000 pixels. There is no fixed floor: the endpoint is a
+Supabase Edge Function, which is a provider we already have, and the site itself
+stays static on GitHub Pages. At any volume this product has ever seen it is
+under a euro a month; a hundred identifications a day is a tenner. Pl@ntNet is
+still ruled out for the same reason as in August, a EUR 1,000 Pro floor the
+moment we charge for anything, and we now would be. A per-account daily cap
+ships with it so a bug cannot run up a bill.
+
+**Two things this does NOT decide, both his.** Whether it sits inside Plus or is
+priced separately, and what anything costs, under hard rule 2. And the API
+account itself, since a run never opens an account in his name.
+
+**One flag for whoever builds it: a server call needs a network and Plus
+promises the outdoors.** AllTrails and PictureThis both answer this the same
+way, by queueing the scan and identifying it when the signal returns rather than
+failing. `SightingSync` already holds an unsent photograph, so we have the
+machinery; it just has to be the design from the start rather than a patch.
 
 ## 2026-09-08 - A tree needs a reason, not just an honest page
 
@@ -494,6 +676,8 @@ One dated entry per decision that shapes the product, newest first: what was dec
   3. **The Plus line: every tree free, the walks are Plus.** His hard line. The category precedent is GPSmyCity; the July interim-paywall paragraph always had routes on the paid list. Launching without walks means the later Plus introduction IS the walks launch, so nothing is ever taken away from an app user.
   4. **The whole season story is Plus, the fact included.** The split (fact free, chart paid) was proposed and he chose against it: "ik zeg eigenlijk ook gewoon wanneer die op zijn mooist is, dan weghalen. We moeten iets achterhouden voor plus." At launch preparation the web loses the year-curve chart, the at-its-best chip, the best_time blocks and the /in-season page. The DATA and machinery stay: nothing that Plus later needs is deleted, only hidden.
   5. **The freeze: the free app is finished at launch scope.** From launch day every new feature defaults to Plus unless it feeds the flywheel (brings in data or users). Log, badges, photo upload and collecting stay free forever-in-practice because they ARE the flywheel; no public forever-promise is printed, so the geography option (hometown free, world paid) stays open.
+
+  **Two things learned the first time a feature actually sat on this line, 2026-09-11 (species recognition), written here because this is the rule somebody reads when designing the next one.** The flywheel exception is NARROWER than it reads: recognition plainly feeds the flywheel (14 of the 15 trees ever added through the app carry no species, and species is the field that makes such a tree publishable), and Hidde still ruled it Plus. So feeding the flywheel makes a feature ARGUABLE as free, never automatically free, and the call stays his. And every Plus feature that needs a server has to answer what it does with NO SIGNAL before it is designed rather than after, because Plus sells being outdoors and that is exactly where the network is not: AllTrails and PictureThis both queue the request and answer when the signal returns, and `SightingSync` already holds an unsent photograph for us.
   6. **A feedback button in the profile**, general plus "tell us which features you would like": the open wishes are the material the next Plus features get designed from. Built the same day (kind `feedback`, page `app-profile`, account-gated per the Google Maps convention).
 
   What did NOT move: pricing and the paywall wiring stay his alone; content stays free on the web (SEO); the no-clawback contract is internal discipline, not printed copy; stats and year-recap stay in the drawer as garnish, not a driver. The revenue picture he accepted with the corner-fear arithmetic: the subscription is one leg of four (Plus, one-time trip purchases, the printed passport, B2B later).

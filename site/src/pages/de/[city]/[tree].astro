@@ -4,12 +4,12 @@
 import { getCollection } from "astro:content";
 import TranslatedTreePage from "../../../components/TranslatedTreePage.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity } from "../../../lib/trees";
-import { translatedTreePaths } from "../../../lib/i18n";
+import { allTreePathsFor } from "../../../lib/i18n";
 
 export async function getStaticPaths() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
-  return translatedTreePaths("de", cities as any, renderableTrees, treeSlugsForCity);
+  return allTreePathsFor("de", cities as any, renderableTrees, treeSlugsForCity);
 }
 const p = Astro.props as any;
 ---
-<TranslatedTreePage lang="de" city={p.city} tree={p.tree} x={p.x} allTrees={p.allTrees} tr={p.tr} />
+<TranslatedTreePage lang="de" city={p.city} tree={p.tree} x={p.x} allTrees={p.allTrees} tr={p.tr} fallback={p.fallback} />

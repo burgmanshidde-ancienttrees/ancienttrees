@@ -8137,6 +8137,69 @@
     "note": "5 stories + recognition lines, distinguishing the two Prinsenhof trees and the two horse chestnuts from each other; merged into data/cities (eindhoven 16 -> 21), fixed count-promise copy. Session work, tokens not logged by an agent report.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "de/leipzig",
+    "kind": "translate",
+    "tokens": 46000,
+    "trees": 7,
+    "note": "Contract J overlay via the new transbrief.py. Brief-driven rather than whole-file, 35% less read in. The brief omitted title/question_title, which the English build generates and no other language can; fixed in the script mid-batch and now refused on merge.",
+    "wasted": 0,
+    "brief_wrong": 1
+   },
+   {
+    "target": "es/menorca+ibiza",
+    "kind": "translate",
+    "tokens": 78000,
+    "trees": 7,
+    "note": "Two Balearic pages in one pass so the register matches between them. Pass added title/question_title itself after tracing the requirement to i18ncheck, before the script fix reached it.",
+    "wasted": 0,
+    "brief_wrong": 1
+   },
+   {
+    "target": "ja/nara",
+    "kind": "translate",
+    "tokens": 55000,
+    "trees": 15,
+    "note": "Contract J overlay via transbrief. 8 species had no settled Japanese name and are now canonical under hard rule 9; checked, no binomial carries two ja names.",
+    "wasted": 0,
+    "brief_wrong": 1
+   },
+   {
+    "target": "ja/kagoshima",
+    "kind": "translate",
+    "tokens": 50000,
+    "trees": 13,
+    "note": "Contract J overlay via transbrief. kag_011 and kag_012 ship ageless, as the English does.",
+    "wasted": 0,
+    "brief_wrong": 1
+   },
+   {
+    "target": "de-batch (hamburg, salzburg, nuremberg, heidelberg, graz, dresden)",
+    "kind": "translate",
+    "tokens": 241154,
+    "trees": 50,
+    "note": "First batched pass: 6 cities in one context, calibration inlined so no i18n file was opened. Metered 4,823 tokens per tree against 13,474 for the same work as single-city passes. The pass's own estimate was 640k, 2.7x over; agent self-reports are unreliable in both directions and the harness figure is the one to log.",
+    "wasted": 0,
+    "brief_wrong": 0
+   },
+   {
+    "target": "es-batch (segovia, buenos-aires, girona)",
+    "kind": "translate",
+    "tokens": 179970,
+    "trees": 17,
+    "note": "Batched pass, calibration inline. Model predicted 188k, metered 180k.",
+    "wasted": 0,
+    "brief_wrong": 0
+   },
+   {
+    "target": "ja-batch (yakushima, kanazawa, sapporo)",
+    "kind": "translate",
+    "tokens": 169318,
+    "trees": 14,
+    "note": "Batched pass, calibration inline. Model predicted 181k, metered 169k.",
+    "wasted": 0,
+    "brief_wrong": 0
    }
   ]
  }
