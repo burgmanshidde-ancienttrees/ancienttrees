@@ -43,7 +43,7 @@ interface Props {
   allTrees: Tree[];
   tr: CityTranslation;
 }
-const { lang, city, tree, x, allTrees, tr } = Astro.props as Props;
+const { lang, city, tree, x, allTrees, tr, fallback = false } = Astro.props as any;
 const U = ui(lang);
 const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
 // Contract B v1.18, in every language: a one-tree place has no question page.
@@ -63,7 +63,10 @@ const cityHasWalksPage = hasWalksPage(city);
 const tslugs = treeSlugsForCity(city);
 const tslug = tslugs[tree.id];
 const loc = tree.location;
-const canonical = `${BASE_URL}/${lang}/${cslug}/${tslug}`;
+const selfUrl = `${BASE_URL}/${lang}/${cslug}/${tslug}`;
+// English text on a second URL: canonical to the English page, no hreflang,
+// and out of the sitemap. See i18n.ts fallbackCityTranslation.
+const canonical = fallback ? `${BASE_URL}/${cslug}/${tslug}` : selfUrl;
 
 const title = `${x.name}, ${tr.city}`.length <= 60 ? `${x.name}, ${tr.city}` : x.name;
 // Answer before hook, in this page's own language. Until 2026-09-02 this was
@@ -110,7 +113,7 @@ const graph = [
   },
   breadcrumbSchema(crumbItems, canonical),
 ];
-const headExtra = mapHead() + ogImage + "\n" + hreflangForCity(cslug, "tree", tslug) + "\n" + ldScript(graph);
+const headExtra = mapHead() + ogImage + (fallback ? "" : "\n" + hreflangForCity(cslug, "tree", tslug)) + "\n" + ldScript(graph);
 // The sources are facts about the tree, not text about it, so they come from
 // the canonical city file and are identical in every language. Only the
 // heading and the line above them are looked up.

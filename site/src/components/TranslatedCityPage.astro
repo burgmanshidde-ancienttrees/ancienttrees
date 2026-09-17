@@ -28,14 +28,29 @@ import { SHEET_JS } from "../lib/sheet-js";
 import { SHARE_JS } from "../lib/share-js";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation } from "../lib/i18n";
 
-interface Props { lang: string; city: CityEntry; tr: CityTranslation }
-const { lang, city, tr } = Astro.props as Props;
+interface Props { lang: string; city: CityEntry; tr: CityTranslation; fallback?: boolean }
+const { lang, city, tr, fallback = false } = Astro.props as Props;
+
 
 const U = ui(lang);
 const cslug = city.id;
+/** Where this city's tree and question pages live. A translated city has them
+ * in its own language; a fallback city does not, because only real
+ * translations render tree pages (i18n.ts allTreePathsFor, 2026-09-17), so its
+ * links point at the English ones. Getting this wrong is how 25,208 dead links
+ * happened, so it is one helper rather than a decision at each call site.
+ *
+ * TREE pages only. The question page still renders as a fallback, so its link
+ * stays in the reader's language whether or not the city is translated. */
+const leaf = (slug: string) => (fallback ? `/${cslug}/${slug}` : `/${lang}/${cslug}/${slug}`);
 const trees = renderableTrees(city);
 const tslugs = treeSlugsForCity(city);
-const canonical = `${BASE_URL}/${lang}/${cslug}`;
+const selfUrl = `${BASE_URL}/${lang}/${cslug}`;
+// A fallback page is the English text on a second URL, so it points its
+// canonical at the English page. That is Google's own answer for the same
+// language on two URLs, and it is why these pages carry no hreflang and stay
+// out of the sitemap: they exist to be navigated to, never to compete.
+const canonical = fallback ? `${BASE_URL}/${cslug}` : selfUrl;
 
 // The overlay may name the country in its own language; the English city file
 // is the fallback, which is honest rather than wrong and shows up as one
@@ -63,7 +78,7 @@ const listElements = trees.map((t, i) => ({
   "@type": "ListItem",
   position: i + 1,
   name: tr.trees[t.id].name,
-  url: `${BASE_URL}/${lang}/${cslug}/${tslugs[t.id]}`,
+  url: `${BASE_URL}${leaf(tslugs[t.id])}`,
   item: {
     "@type": "TouristAttraction",
     name: tr.trees[t.id].name,
@@ -75,9 +90,9 @@ const graph = [
   ...SITE_SCHEMA,
   { "@type": "ItemList", name: tr.title, itemListElement: listElements },
   { "@type": "FAQPage", mainEntity: tr.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
-  breadcrumbSchema(crumbItems, canonical),
+  breadcrumbSchema(crumbItems, selfUrl),
 ];
-const headExtra = mapHead() + "\n" + hreflangForCity(cslug, "city") + "\n" + ldScript(graph);
+const headExtra = mapHead() + (fallback ? "" : "\n" + hreflangForCity(cslug, "city")) + "\n" + ldScript(graph);
 
 const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
 const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
@@ -91,12 +106,12 @@ const cityHasQuestion = hasQuestionPage(city);
     <aside class="panel" id="sheet">
       <div class="sheet-grab">
       <div class="panel-head">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{U.home}</a> › <span>{tr.city}</span></nav>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href={`/${lang}/cities`}>{U.citiesCrumb}</a> › <span>{tr.city}</span></nav>
         <button type="button" class="sheet-back">{U.backToTrees(trees.length)}</button>
         <p class="eyebrow">{countryLabel}</p>
         <div class="page-head">
           <h1>{U.heading("")}<em>{tr.city}</em></h1>
-          <ShareButton url={canonical} title={U.heading(tr.city)} label={U.share} copied={U.shareCopied} />
+          <ShareButton url={selfUrl} title={U.heading(tr.city)} label={U.share} copied={U.shareCopied} />
         </div>
         <p class="sheet-count">{U.treesOnMap(trees.length)}</p>
       </div>
@@ -105,7 +120,7 @@ const cityHasQuestion = hasQuestionPage(city);
       <div class="city-intro">
         <p class="lede">{tr.intro}</p>
         <button type="button" class="city-intro-more">{U.readMore}</button>
-        <LanguagePicker current={lang} citySlug={cslug} />
+        <LanguagePicker current={lang} enPath={`/${cslug}`} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
           <span class="passport-total" id="passport-total"></span>
@@ -115,7 +130,7 @@ const cityHasQuestion = hasQuestionPage(city);
         const x = tr.trees[t.id];
         return (
           <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={i + 1}
-                    variant="full" headingLevel={2} lang={lang} canTick
+                    variant="full" headingLevel={2} lang={lang} canTick fallback={fallback}
                     overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
         );
       })}

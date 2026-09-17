@@ -1,0 +1,71 @@
+{
+ "_note": "de overlay for dresden, written 2026-09-17 from data/cities/dresden.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Dresden",
+ "title": "Alte Bäume in Dresden: 5 bemerkenswerte Exemplare",
+ "meta_description": "Fünf geschützte Dresdner Bäume: eine Linde in Kaditz, 1818 halb abgebrannt und auf eigenen Wurzeln, und eine splittervernarbte Eiche im Großen Garten.",
+ "intro": "Draußen in Kaditz steht eine Linde, die 1818 zur Hälfte abbrannte, und im Inneren halten sie Wurzeln aufrecht, die zu Stämmen geworden sind. Sie ist um mehrere Jahrhunderte der älteste Baum Dresdens, und die Stadt will keine Zahl nennen. Die anderen vier stehen in der Stadt und sind alt genug, um die Bombennächte des Februar 1945 erlebt zu haben: eine splittervernarbte Eiche im Großen Garten, eine Platane auf einer Verkehrsinsel am Albertplatz, eine Überbecher-Eiche, um die 1949 ein Straßenbahnhäuschen gebaut wurde, und eine Zerreiche, die bis 2024 auf ihren Schutz warten musste.",
+ "question_title": "Was ist der älteste Baum Dresdens? Die Kaditzer Linde",
+ "question_meta": "Die Kaditzer Linde im Kirchhof von Kaditz ist Dresdens ältester Baum: die Schätzungen reichen von 500 bis 1000 Jahren, und die Stadt lässt die Frage offen.",
+ "question_answer": "Der älteste Baum Dresdens ist die Kaditzer Linde, eine Sommerlinde im Kirchhof der Emmauskirche in Kaditz, und die Stadt selbst will nicht sagen, wie alt. Ihr Schild nennt den Baum viele Jahrhunderte alt und setzt dann tausend Jahre mit einem Fragezeichen dahinter, denn ein Brand von 1818 zerstörte die dem Pfarrhaus zugewandte Seite des Stamms, und eine Ringzählung ist seither nicht möglich. Was dort steht, ist eine halbe Schale von über neun Metern Umfang, im Inneren gehalten von früheren Wurzeln, die zu tragenden Stämmen geworden sind. Die Schätzungen in der Literatur reichen von 500 bis 1000 Jahren. Der nächstälteste auf dieser Seite ist die Splittereiche im Großen Garten, eine Stieleiche, die auf etwa 250 bis 300 Jahre geschätzt wird und eine sichtbare Narbe aus den Bombennächten des 13. und 14. Februar 1945 trägt. Wenn Sie von einer datierten Untersuchung wissen, die das Alter der Linde eingrenzt, sagen Sie es uns.",
+ "question_context": "Dresden führt ein amtliches Verzeichnis seiner Naturdenkmale, das als öffentliche Wikipedia-Tabelle wiedergegeben wird, daneben gibt es eigene Artikel zu mehreren einzelnen Bäumen, und beides wurde hier gegen das Stadtwiki Dresden geprüft, ein unabhängiges Gemeinschaftswiki, das dieselben Bäume unter ihren eigenen Registernummern führt. Vier der fünf Bäume dieser Seite tragen diese förmliche Ausweisung. Die Splittereiche nicht, sie ist stattdessen als Teil des denkmalgeschützten Großen Gartens um sie herum geschützt, und diese Seite sagt das, statt einen gleichwertigen Status anzudeuten. Die Platane am Albertplatz und die Eiche am Fetscherplatz wurden mit demselben Ratsbeschluss vom 3. Januar 1985 ausgewiesen; die Eiche am Trinitatisplatz musste bis Februar 2024 warten. Die Kaditzer Linde ist in jeder Hinsicht die Ausnahme: um mehrere Jahrhunderte die älteste, 6 km nordwestlich der anderen, und mit einer Spanne statt einer Schätzung, weil der Stamm zu lange zu stark beschädigt ist, um gezählt zu werden. Die übrigen Altersangaben stammen aus einem bei der Ausweisung festgehaltenen Pflanzdatum, was besser ist als eine Wachstumsvermutung und trotzdem keine Ringzählung.",
+ "faq": [
+  {
+   "q": "Was ist der älteste Baum Dresdens?",
+   "a": "Die Kaditzer Linde, eine Sommerlinde im Kirchhof der Emmauskirche in Kaditz. Die Schätzungen reichen von 500 bis 1000 Jahren, und das Schild der Stadt setzt hinter die höhere Zahl ein Fragezeichen, weil ein Brand von 1818 den halben Stamm zerstörte und nichts zum Zählen übrig ließ."
+  },
+  {
+   "q": "Kann ich alle fünf Bäume auf einem Weg sehen?",
+   "a": "Nein. Die Zerreiche und die Eiche am Fetscherplatz stehen beide in der Johannstadt, eine kurze Straßenbahnfahrt auseinander, und der Albertplatz und der Große Garten liegen weiter weg in verschiedenen Richtungen. Kaditz ist ein eigener Ausflug, 6 km nordwestlich der Altstadt."
+  },
+  {
+   "q": "Sind sie frei zugänglich?",
+   "a": "Ja. Alle fünf stehen auf offenen öffentlichen Plätzen, in einem öffentlichen Park oder in einem Kirchhof, bei Tageslicht erreichbar, ohne Ticket."
+  },
+  {
+   "q": "Warum stehen mehrere dieser Bäume unter demselben Datum von 1985?",
+   "a": "Der Dresdner Stadtrat wies die Platane am Albertplatz und die Eiche am Fetscherplatz mit einem einzigen Beschluss vom 3. Januar 1985 als Naturdenkmale aus. Die Eiche am Trinitatisplatz musste weit länger warten und bekam denselben Schutz erst im Februar 2024."
+  }
+ ],
+ "trees": {
+  "dre_001": {
+   "name": "Die Zerreiche am Trinitatisplatz",
+   "species": "Zerreiche (Quercus cerris)",
+   "age_estimate": "etwa 130 Jahre",
+   "access": "Kostenlos, steht auf einem öffentlichen Platz (Trinitatisplatz) gegenüber der Kirche",
+   "transport": "Haltestelle Trinitatisplatz, direkt am Platz (in Berichten über eine Umleitung in der Nähe nennen die Quellen unterschiedliche Liniennummern, deshalb wird hier keine bestimmte Linie genannt)",
+   "story": "Dresden kam im Februar 2024 dazu, diese Eiche zu schützen, rund 130 Jahre nachdem die Stadt sie gepflanzt hatte. Aufgezogen wurde sie in der städtischen Baumschule am Tatzberg und 1895 am Trinitatisplatz gesetzt, gegenüber dem Hauptportal der Trinitatiskirche. Fünfzig Jahre später kamen die Luftangriffe des Februar 1945 über die Johannstadt, und die Eiche kam ohne ernsten Schaden hindurch. Danach kam sie durch die Winter, in denen Brennholz in Dresden so knapp war, dass stehende Bäume in den Öfen verschwanden, und diese hier ließ man stehen.\n\nSie ist eine Zerreiche, eine südeuropäische Art mit tief eingeschnittenen Blättern und Eicheln in zottigen, moosigen Bechern statt in den glatten, die eine deutsche Eiche trägt. Die Begründung für ihre Ausweisung nannte sie das stärkste Exemplar ihrer Art in Dresden und das drittstärkste in Sachsen, wegen Alter, Seltenheit, Form und genetischem Wert.\n\nDer Stamm misst etwa 3,84 Meter im Umfang, gerechnet aus einem festgehaltenen Stammdurchmesser von 122 Zentimetern, auch wenn die Registerzeile der Stadt von über vier Metern spricht. Niemand hat die beiden Zahlen in Übereinstimmung gebracht, und keine ist viel Aufhebens wert.\n\nZwanzig Meter hoch, frei auf einem öffentlichen Platz mit einer Haltestelle zu ihren Füßen, ist sie ungefähr so leicht zu erreichen, wie ein geschützter Baum nur sein kann."
+  },
+  "dre_002": {
+   "name": "Die Platane am Albertplatz",
+   "species": "Ahornblättrige Platane (Platanus x acerifolia)",
+   "age_estimate": "etwa 140 Jahre",
+   "access": "Kostenlos, steht auf einer Verkehrsinsel mitten auf einem öffentlichen Platz, jederzeit zugänglich",
+   "transport": "Umsteigeknoten Albertplatz für Straßenbahn und Bus, direkt am Platz",
+   "story": "Diese Platane lebt auf einer Verkehrsinsel. Der Albertplatz ist einer der belebtesten Knoten Dresdens, ein Ring aus Straßenbahn- und Buslinien in der Neustadt, und der Baum steht mittendrin Richtung Bautzner Straße, fünfundzwanzig Meter hoch, mit einer Krone, die ungefähr so breit ist wie er hoch.\n\nGepflanzt wurde er um 1885, als dieser Boden offen und still war. Alles andere kam später: die Straßenbahnen, der Verkehr, die Nacht des 13. Februar 1945 und der lange Wiederaufbau danach, vierzig Jahre DDR und die jüngere Verwandlung der Neustadt in das lauteste Viertel der Stadt. Der Baum ist durch all das auf seiner Insel geblieben, was dem Albertplatz am nächsten kommt, was er an festem Punkt hat. Dresden machte ihn am 3. Januar 1985 zum Naturdenkmal, mit demselben Ratsbeschluss, der die Eiche am Fetscherplatz schützte.\n\nEine Ahornblättrige Platane ist eine Kreuzung aus amerikanischer und morgenländischer Platane, und sie wurde in europäischen Städten genau für die Eigenschaften gepflanzt, die hier zu sehen sind. Sie verträgt Hitze, verdichteten Boden und schmutzige Luft besser als fast alles andere mit einem Stamm, und sie wirft im Sommer ihre Rinde in hellen Platten ab, statt den Schmutz aufwachsen zu lassen.\n\nIhr Stamm misst 3,30 Meter im Umfang. Das Register und der eigene Nachweis der Stadt stimmen bei der Zahl überein, was seltener ist, als es klingt."
+  },
+  "dre_003": {
+   "name": "Die Eiche am Fetscherplatz",
+   "species": "Überbecher-Eiche (Quercus lyrata)",
+   "age_estimate": "etwa 125 Jahre",
+   "access": "Kostenlos, steht auf einem öffentlichen Platz, jederzeit sichtbar und erreichbar",
+   "transport": "Haltestelle Fetscherplatz, direkt neben dem Baum",
+   "story": "1949 baute ein Architekt ein Straßenbahnhäuschen um diesen Baum herum, statt eines von beiden zu versetzen. Herbert Schneider setzte seinen Wartepavillon am Fetscherplatz so nah an den Stamm, dass sich das Dach biegen musste, um der Eiche Platz zu lassen, vier Jahre nach den Luftangriffen, in einer Stadt mit dringenderen Dingen, auf die zu achten war. Seither teilen sich die beiden die Ecke.\n\nDer Baum ist eine Überbecher-Eiche, eine nordamerikanische Art und ein unwahrscheinlicher Fund für einen Platz in der Johannstadt. Er kam um 1900 in die Erde, als der Ort noch Fürstenplatz hieß, und hat seither eine Krone von etwa zweiunddreißig Metern Durchmesser aufgestellt, breiter als der Baum hoch ist. Diese Krone ist praktisch das Dach des Platzes. Fünfundzwanzig Meter hoch, 3,35 Meter Umfang am Stamm, und der einzige echte Schatten, den jemand beim Warten auf die Straßenbahn bekommt.\n\nDresden schützte ihn am 3. Januar 1985 als Naturdenkmal, im selben Ratsbeschluss, der auch die Platane am Albertplatz umfasste.\n\nWenn Sie im Herbst dort sind, sehen Sie sich die Eicheln am Boden an. Der Becher umschließt bei dieser Art fast die ganze Frucht, daher der Name, und es ist der schnellste Weg, sie von jeder anderen Eiche der Stadt zu unterscheiden."
+  },
+  "dre_004": {
+   "name": "Die Splittereiche",
+   "species": "Stieleiche (Quercus robur)",
+   "age_estimate": "250 bis 300 Jahre",
+   "access": "Kostenlos, steht frei auf einer öffentlichen Wiese im Großen Garten, während der Öffnungszeiten des Parks zugänglich",
+   "transport": "In den Großen Garten gehen und zum Mosaikbrunnen laufen; nächste Haltestellen um den Straßburger Platz oder den Lennéplatz, etwa 10-15 Minuten Weg in den Park hinein (ungefähre Angabe, nicht unabhängig nachgegangen)",
+   "story": "Diese Eiche ist nach ihren Wunden benannt. In den Nächten des 13. und 14. Februar 1945 erreichte die Bombardierung Dresdens den Großen Garten, und Splitter rissen eine Seite des Stamms auf etwa acht Metern Höhe auf. Der Baum überlebte. Der Schaden ist noch da und noch immer offensichtlich, und so kam sie zu ihrem Namen Splittereiche.\n\nAlt war sie damals schon. Eine Begutachtung aus den 2010er Jahren setzte sie auf 250 bis 300 Jahre, eine Spanne, die seither niemand enger gefasst hat und die selbst inzwischen ein Jahrzehnt alt ist. Sie steht siebenundzwanzig Meter hoch, mit einem Stamm von über sechs Metern Umfang, frei auf einer Wiese ein kurzes Stück südlich des Mosaikbrunnens, man sieht also ihre ganze Form aus der Entfernung, bevor man zur Narbe kommt.\n\nAm 8. Mai 2017, dem zweiundsiebzigsten Jahrestag des Kriegsendes in Europa, kam neben ihr eine Gedenktafel mit einem Satz von Mark Twain auf: Die Zeit heilt vielleicht alle Wunden, aber sie ist eine miserable Kosmetikerin. Im Jahr darauf brachte die Stadt Metallblech über der beschädigten Flanke an, weil Besucher, die an der alten Verletzung herumstocherten, sie verschlimmerten.\n\nIm Dresdner Verzeichnis der Naturdenkmale haben wir sie nicht einzeln geführt gefunden. Sie steht stattdessen in einem denkmalgeschützten historischen Park, und sie ist der Baum, den die Leute in diesem Park suchen."
+  },
+  "dre_005": {
+   "name": "Die Kaditzer Linde",
+   "species": "Sommerlinde (Tilia platyphyllos)",
+   "age_estimate": "irgendwo zwischen 500 und 1000 Jahren; das Schild der Stadt stellt die Frage, statt sie zu beantworten",
+   "access": "Kostenlos. Im Kirchhof der Emmauskirche, bei Tageslicht geöffnet. Eine Holzbank läuft um den Stamm.",
+   "transport": "Straßenbahn 9 bis zur Endhaltestelle Kaditz, Riegelplatz, dann etwa zehn Minuten zu Fuß nach Altkaditz. Etwa 6 km nordwestlich der Altstadt.",
+   "story": "Die Hälfte dieses Baums ist 1818 verbrannt, und was die andere Hälfte hält, sind seine eigenen Wurzeln.\n\nEin Brand nahm in jenem Jahr achtzehn Höfe, dreißig Scheunen und das Pfarrhaus von Kaditz mit, und die Linde neben der Kirche ging mit ihnen. Die dem Pfarrhaus zugewandte Seite starb ganz ab. Übrig blieb eine halbe Schale von einem Stamm, und das Schild der Stadt erklärt den Kunstgriff, der die Sache am Leben hielt: Die Stämme im Inneren der Höhlung sind frühere Wurzeln, die zu Stützen geworden sind.\n\nDresden nennt sie den ältesten Baum der Stadt und will keine Zahl nennen. Das Schild sagt viele Jahrhunderte alt und setzt dann tausend Jahre mit einem Fragezeichen dahinter. Zählen lässt sich nichts, weil der Stamm zu oft beschädigt wurde, als dass Ringe erhalten wären. Ein Pfarrbericht von 1909 gab den Umfang mit zwölfeinhalb Metern an. Eine Messung in Brusthöhe im Jahr 2007 ergab 9,6. Beide Zahlen stehen im Nachweis, und niemand hat sie in Übereinstimmung gebracht.\n\nSeit 1829 werden ihre schwersten Äste gestützt, zuerst auf Holz, heute an Stahlankern und Seilen. Der kleinere ihrer beiden Stämme trieb 2021 nicht mehr aus und starb. Der größere nicht.\n\nUm den Fuß läuft eine Bank im Ring."
+  }
+ }
+}

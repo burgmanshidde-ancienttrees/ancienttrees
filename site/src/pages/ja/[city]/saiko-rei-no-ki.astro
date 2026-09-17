@@ -4,11 +4,11 @@
 import { getCollection } from "astro:content";
 import TranslatedQuestionPage from "../../../components/TranslatedQuestionPage.astro";
 import { cityIsRenderable, renderableTrees } from "../../../lib/trees";
-import { translatedQuestionPaths } from "../../../lib/i18n";
+import { allQuestionPathsFor } from "../../../lib/i18n";
 
 export async function getStaticPaths() {
-  return translatedQuestionPaths("ja", (await getCollection("cities")).filter(cityIsRenderable) as any, renderableTrees);
+  return allQuestionPathsFor("ja", (await getCollection("cities")).filter(cityIsRenderable) as any, renderableTrees);
 }
-const { city, tr } = Astro.props as any;
+const { city, tr, fallback } = Astro.props as any;
 ---
-<TranslatedQuestionPage lang="ja" city={city} tr={tr} />
+<TranslatedQuestionPage lang="ja" city={city} tr={tr} fallback={fallback} />

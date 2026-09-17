@@ -14,10 +14,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def sh(*args):
+def sh(*args, timeout=15):
     try:
         return subprocess.run(args, cwd=ROOT, capture_output=True, text=True,
-                              timeout=15).stdout.strip()
+                              timeout=timeout).stdout.strip()
     except Exception:
         return ""
 
@@ -245,6 +245,15 @@ def work_stranded_on_branches(out):
     that is genuinely abandoned should be deleted, which is also a decision
     somebody has to make rather than leave to a fetch.
     """
+    # A shallow clone has no merge base for an older branch, so git calls it
+    # unmerged and the diff fails outright. The first run of this check named
+    # five branches whose work was already in main, which is how a check stops
+    # being believed. Session clones are shallow by default, so it deepens
+    # once rather than reporting a list it cannot stand behind.
+    if sh("git", "rev-parse", "--is-shallow-repository") == "true":
+        sh("git", "fetch", "--unshallow", "-q", timeout=300)
+        if sh("git", "rev-parse", "--is-shallow-repository") == "true":
+            return
     branches = sh("git", "branch", "-r", "--no-merged", "origin/main").splitlines()
     stranded = []
     for b in branches:
