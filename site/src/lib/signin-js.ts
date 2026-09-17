@@ -86,8 +86,9 @@ export const SIGNIN_JS = `
     // Apple, 2026-09-12, through the identical redirect. The app signs in with
     // Apple natively and a browser has no native credential to present, so the
     // web takes the ordinary OAuth route and the only difference from Google is
-    // the word. The buttons render only where APPLE_SIGNIN is on, so this
-    // listener is dormant rather than wrong while the flag is false.
+    // the word. It sits on the SECOND screen (SignInPanel.astro says why), so
+    // this listener fires only after More options. The buttons render only where
+    // APPLE_SIGNIN is on, so it is dormant rather than wrong while that is off.
     var a = e.target.closest('#signin-apple, #acct-apple');
     if (a) { e.preventDefault(); window.atOAuth('apple'); }
   });
@@ -101,7 +102,8 @@ export const SIGNIN_JS = `
     var el = function(n) { return document.getElementById(p + '-' + n); };
     if (!el('more')) return;
 
-    // CONTINUE IN THE APP takes the loud slot on an iPhone and nowhere else.
+    // CONTINUE IN THE APP takes the loud slot on an iPhone and nowhere else,
+    // demoting Google, which holds it everywhere else.
     // The tree id rides along so the app lands on the tree the reader was
     // standing on; it comes off the save heart, the one element already
     // carrying it on every tree page.
@@ -110,8 +112,7 @@ export const SIGNIN_JS = `
       || (ua.indexOf('Macintosh') > -1 && navigator.maxTouchPoints > 1);
     if (isIOS && el('openapp')) {
       var open = el('openapp');
-      var loudSel = '#' + p + '-apple, #' + p + '-google';
-      var loud = document.querySelector(loudSel + '.oauth-loud');
+      var loud = document.querySelector('#' + p + '-google.oauth-loud');
       if (loud) { loud.classList.remove('oauth-loud'); loud.classList.add('oauth-quiet'); }
       var t = document.querySelector('[data-tree]');
       var slug = location.pathname.split('/').filter(Boolean)[0] || '';
@@ -145,7 +146,7 @@ export const SIGNIN_JS = `
 
     // THE SECOND SCREEN: every remaining route, and "More options" gone.
     el('more').addEventListener('click', function() {
-      ['google', 'emailbtn'].forEach(function(n) { if (el(n)) el(n).hidden = false; });
+      ['apple', 'emailbtn'].forEach(function(n) { if (el(n)) el(n).hidden = false; });
       el('more').hidden = true;
     });
     // The address is asked for only once somebody has chosen to type one.
@@ -188,8 +189,8 @@ export const SIGNIN_JS = `
     if (moreBtn) moreBtn.hidden = false;
     var eb = document.getElementById('signin-emailbtn');
     if (eb) eb.hidden = true;
-    var gg = document.getElementById('signin-google');
-    if (gg && document.getElementById('signin-apple')) gg.hidden = true;
+    var ap = document.getElementById('signin-apple');
+    if (ap) ap.hidden = true;
     if (dlg.showModal) { dlg.showModal(); } else { location.href = '/account'; }
   };
   document.addEventListener('click', function(e) {
