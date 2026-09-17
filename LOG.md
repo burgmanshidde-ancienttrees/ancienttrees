@@ -4068,6 +4068,28 @@ looking first: Astro writes `london.html` and not `london/index.html`, and
 iNaturalist names every photograph `medium.jpg` with the identity one segment
 up. Nothing was lost, the live site stayed up throughout. Both fixed and the
 final deploy is green.
+## 2026-09-10 (session) - A failed backlink fetch no longer records itself as a check
+
+Hidde asked about the SEO numbers and then corrected me on backlinks: I had
+repeated the 08-09 "zero referring domains" reading and the digest's
+"external referrers: none yet" line, when getLISBON's two followed links
+have been live since 09-04 and verified on 09-08. That correction is
+already recorded in the 09-08 entry; what is new is the bug I found by
+running `backlinks.py` from a session whose egress proxy blocks all twelve
+watched hosts.
+
+`check()` set `item["checked"] = today` BEFORE fetching, so every one of the
+twelve 403s still stamped today's date. Two costs, and the second is the
+real one. The date claims we read a page we could not reach. And `due()`
+sorts least-recently-checked first, so a stamped failure pushes that page to
+the BACK of the rotation: a host that is persistently unreachable would get
+retried least often of all, which is exactly backwards. The date now moves
+only after a successful fetch. A deliberate blocklist skip still advances
+it, because that is a decision rather than a failure and retrying it first
+forever would starve the rest of the list.
+
+No data change: the store-level `checked` field is written and never read,
+and the per-page dates now stay put when a run cannot fetch.
 
 ## 2026-09-10 - Fixed a failing deploy, finished 3 of 4 open claims from the previous run
 
