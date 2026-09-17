@@ -1,6 +1,509 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - Google leads the sign-in sheet, Apple moves behind More options
+
+Hidde: "Google hoort daar Apple is de optie die vertoond wordt als je more
+options klikt net als bij alltrails."
+
+He is right and the first build was wrong on purpose, which is the part worth
+recording. Apple sat in the front slot because I read Apple's guideline that
+their button be no less prominent than the others as binding here. It is not:
+it binds an APP that Apple reviews, and a website is not reviewed. The
+reference settles it without the argument, because AllTrails ships Sign in with
+Apple and still puts Google in front of it. A guideline quoted outside its
+scope is exactly the "eigen idee" the convention check exists to stop, so the
+correction is written beside the entry that got it wrong in CONVENTIONS.md
+rather than quietly swapped.
+
+Live on both surfaces, dialog and /account, because they render one component:
+
+- The front screen is Google (dark pill) and More options. On a phone
+  "Continue in the app" takes the dark slot and Google steps back to grey,
+  which is unchanged.
+- More options reveals Google, Apple, email in that order, the reference minus
+  Facebook, and removes itself.
+
+Measured on the built page at 402pt with the Apple pill injected, since the
+flag is still off: three 48pt pills, 16pt apart, same left and right edge,
+no horizontal overflow. qa 9,226 pages, preflight 0 problems, paritycheck,
+crosscheck and the smoke test all clean. Merged and pushed to main.
+
+FOR HIDDE: the Apple button still renders nowhere, because APPLE_SIGNIN is
+false until /auth/v1/authorize?provider=apple returns a 302 rather than an
+error. That is one URL in a browser; open it and tell me what happens.
+
+## 2026-09-17 (session) - The homepage duplication was fixed five days ago and never merged
+
+Hidde, with a screenshot of the homepage: "wat ik niet helemaal begrijp is dat
+er nog steeds een dubbele missie op home staat terwijl we het hier uitgebreid
+over hebben gehad, zijn er dingen niet gepusht?"
+
+They were pushed. The fix was written on 2026-09-12 and pushed to
+`claude/website-ux-audit-aji746`, where it sat for five days while he looked at
+the bug he had already reported. Merged into main today, conflicts resolved by
+keeping both sides:
+
+- **The homepage says the contribution ask once.** The `.mission` block above
+  the footer is gone; the footer carries the same sentence on all 5,400 pages,
+  and on the homepage the two stood one under the other inside a single screen.
+- **The species column is ranked by tree count**, not alphabetically. Under a
+  heading reading "Top species" it had been listing Aleppo Pine, American Elm,
+  American Sycamore, Amur Cork Tree, Bald Cypress, Baobab, Bishop Wood, Bitter
+  Orange. It now reads Pedunculate Oak, London Plane, Ginkgo, Horse Chestnut.
+- **Tree pages state each fact once**, English and translated: the facts list no
+  longer repeats the age the panel above already prints, and the note under the
+  map no longer repeats the transport sentence the "Getting there" row carries.
+  Main's Girth row and the WorthIt report block were added after that branch was
+  written and are kept.
+
+Verified: astro build 5,436 pages, qa.py passed on 9,234 pages, preflight 0
+problems, paritycheck clean, and the built index.html carries the mission
+sentence exactly once.
+
+**And the ratchet, because the bug was not the duplication.** The corpus got its
+merge ruling this morning and `handoffcheck.py` with it, which refuses a LOG.md
+line asking him for git plumbing. That catches the sentence. It does not catch
+the SILENCE, which is the shape this took and the more common one: a session
+finishes, pushes a branch, says nothing, and the work is gone. Twenty-six
+branches were unmerged when this was checked, six of them carrying site or app
+work.
+
+`work_stranded_on_branches()` in `scripts/brief.py` now names them at the top of
+the session brief, beside the broken gates, with their date and subject. It asks
+git rather than keeping a list, so a branch whose work landed some other way
+drops off by itself, and one that is genuinely abandoned has to be merged or
+deleted by somebody rather than left to a fetch. It reports only branches
+touching `site/` or `ios/`, because those are the ones a reader or a phone would
+notice.
+
+The six it names are the next thing to work through: `vigilant-thompson` (an app
+screenshot viewer), `multiple-images-per-tree`, `mobile-search-zoom-bug`,
+`hero-photo-ratio`, `emoji-icon-inconsistencies` and `boom-pagina-kop`. Each
+needs reading against a main that has moved before it is merged or deleted.
+
+
+## 2026-09-17 - Alkmaar 7 -> 14, Eindhoven verify pass dispatched
+
+Resumed a window an earlier attempt had stopped in with two claims left
+standing (alkmaar write, eindhoven verify). Alkmaar already had five of
+seven stories drafted; wrote the last two (a copper beech and a horse
+chestnut, both single-source and flagged honestly) and merged all seven
+into the live city, taking **Alkmaar from 7 to 14 trees**, a second
+walkable cluster around the Bolwerken ramparts and the Alkmaarderhout.
+Updated the page's count promises (intro, meta description, FAQ) to match.
+Build and preflight clean, claim released, pushed to main.
+
+Eindhoven's claim had no work behind it yet, so dispatched a verify pass
+on its 751-candidate Dutch register pool, aimed at one new tight cluster
+since the existing 16 trees already span 6.5 km. It found one: five trees
+in **Villapark**, a protected garden suburb Philips built for its
+executives from 1907, three of them double-sourced against the city's own
+street-tree inventory. Wrote all five stories, merged them (**Eindhoven
+16 -> 21**), and updated the count promises. Build and preflight clean,
+claim released, pushed to main.
+
+Also added a species page, `/species/weeping-silver-lime`: fixing
+Alkmaar's species-name drift above (it now matches Ghent and Maastricht)
+pushed that cultivar to exactly the three trees a Contract F page needs,
+and pagegaps.py flagged the gap immediately. Written from those three
+trees' own facts, all park designers who planted it for the same
+wind-shimmer effect.
+
+## 2026-09-17 - Spacing becomes a number, because eyes cannot see it
+
+Hidde, on a sheet whose every element was right: "verticale spacing ziet er
+beter uit bij alltrails let op dat soort dingen onthou dit".
+
+He was right and the gap was not small. Measured off his screenshots against
+our render: the app pill was 50 tall among 48s, the rule block ran 61 where the
+reference has 51, and the headline sat 8pt above the loud button where the
+reference leaves 32. That last one had a cause worth naming: hiding the
+subtitle on a phone took its bottom margin with it, so the space that looked
+like a decision was only ever the gap before a paragraph.
+
+All three are fixed and every gap now lands within a point or two: pills 48,
+16 between them, 50 across the rule, 32 under the headline.
+
+**"Onthou dit" is a check rather than a note.** The numbers are in
+scripts/layout_rules.py, the one file both platforms read, and the smoke test
+measures the rendered sheet against them on every push in BOTH shapes, since a
+phone gets the app button, loses the subtitle and gains the rule. Proven to
+fire before being trusted: a deliberate 56pt pill with 10pt gaps turned it red
+with eleven named faults.
+
+Spacing earns a check more than most things do. It is the fault that reads as
+cheapness while nobody can say what is wrong, so it survives every gate that
+asks whether an element EXISTS and every review by eye, which is how three of
+them got through in one afternoon here.
+
+**Also fixed on desktop:** a stray "or" sat between Apple and More options,
+separating nothing. Same collision as before, `display:flex` beating the
+[hidden] attribute, which is now twice this exact thing has cost a visible
+fault.
+
+## 2026-09-17 - The sheet's second screen, from the reference's own
+
+Hidde sent the expanded state and said to build it "behalve de Facebook optie".
+
+**"More options" opens a list of routes, not a form.** Theirs replaces itself
+with every remaining provider as filled grey pills and offers the typed route
+as a BUTTON, "Verdergaan met e-mail"; the address is asked for only after that.
+Ours had dropped a text input straight into the sheet, which turns the second
+screen into a form with buttons stacked above it.
+
+So there are three steps now and one set of buttons between them: closed is
+continue-in-the-app, a rule, one provider and "More options"; opened reveals
+the rest and takes "More options" away; and the field appears only once
+somebody has chosen to type. Nothing is duplicated, visibility is all that
+moves, so the screens cannot drift apart.
+
+**One deliberate deviation.** Their order is Google, Facebook, Apple, email.
+Ours is Apple, Google, email. Facebook is out on his instruction and we have no
+such provider anyway; Apple leads because Apple's own guidelines ask that their
+button be shown no less prominently than the others, and a front screen
+offering Google while Apple waits behind a disclosure is what that forbids.
+Same weight and shape, order changed for a published rule rather than a
+preference.
+
+Also gone: "Get the app" at the foot of the last screen, which was the same
+offer as the loud button at the top of the first one.
+
+Photographed at all three steps under an iPhone user-agent. qa 8,584 pages,
+preflight 0 problems, parity and smoke pass.
+
+## 2026-09-17 - Continue in the app, which is what that sheet was always for
+
+Hidde: "Nee ik wil dat je daadwerkelijk de open in app functie erin bouwt -
+ancient trees works better in the app."
+
+**The sheet he photographed was never a sign-in sheet.** Its headline is
+"AllTrails werkt beter in de app" and its loud button is "Ga verder in de app";
+Google and "Meer opties" sit below the rule. Two passes rebuilt it as a sign-in
+sheet wearing that layout, matching the shape and missing the subject.
+
+**The function now exists end to end.** `/open` joins `/t` and `/auth` in the
+site's apple-app-site-association, so on a phone that has the app iOS hands it
+the URL and never loads the page; `ContentView` reads `?tree=` or `?city=` and
+lands on the tree the reader was standing on. Where the app is not installed,
+which is every laptop and every phone without it, the page itself loads and
+forwards to the App Store. One URL, both outcomes, and the OS decides which
+before anything of ours runs.
+
+The tree id comes off the save heart, the one element already carrying it on
+every tree page, so the button on Amsterdam's Beatrix Lime reads
+`/open?tree=ams_039` rather than a generic open.
+
+**On a phone only.** A laptop cannot honour it, so the button stays hidden
+there and sign-in keeps the loud slot. When it does appear it TAKES that slot,
+the sign-in button steps down to grey, the rule moves up to separate continuing
+from signing in, and the subtitle goes, because "Sign in to save X" under
+"works better in the app" answers a question nobody asked.
+
+Verified under a real iPhone user-agent and a desktop one: the button appears
+and carries the tree id on the first, stays hidden on the second, and there is
+exactly one dark button in both. Three faults came out of looking: an anchor
+arrives underlined and moss green where a button does not, the rule sat in the
+old place, and the subtitle contradicted the new headline.
+
+**Not an interstitial, deliberately.** This sheet opens on a tap (a save, a
+vote, a sign-in), never on arrival. An app-install sheet thrown at somebody
+landing from Google is the pattern Google penalises by name, and search is this
+project's whole distribution.
+
+qa 8,584 pages, preflight 0 problems, parity, netcheck and the smoke test all
+pass. The Swift is uncompiled here as always; ios.yml judges it on push.
+
+## 2026-09-17 - The sign-in sheet, rebuilt on AllTrails' own shape
+
+Hidde, shown our sign-in screens beside theirs: "ik vind die van ons er weer
+bijzonder lelijk uitzien VS alltrails", then a photograph of their sheet and
+"bouw deze opzet maar volledig na zonder de sterren en redactie ding".
+
+**What was actually wrong**, and it was not one thing. Two filled buttons of
+equal weight, a black Apple and a green send, so nothing was the answer. A 28px
+EMOJI as the mark, first thing on the screen. An outline as a third button
+weight. Four lines of small print ending on an orphaned word. And our two own
+sign-in surfaces disagreed with each other, the dialog centred and /account
+left-aligned.
+
+**What it is now**, on their shape: the app icon at 104px, a balanced two-line
+headline, ONE dark pill, a rule with the word inside it, and filled grey for
+everything else. The typed route waits behind "More options" and discloses in
+place, which is what keeps the closed sheet at two choices. /account was
+brought to the same two weights and the same stacked shape, so the two surfaces
+are one act again.
+
+The small print stays and stays whole, which is the one thing their sheet does
+that ours cannot copy: it is our statement of what personal data we hold.
+
+**Three real bugs came out of looking rather than assuming.** "More options"
+did not disappear after being used, because `display:flex` on the button beats
+the `[hidden]` attribute. Two labels sat left-aligned because the centring rule
+targets a `span` and those buttons had bare text. And the headline broke with
+"device" alone on its second line.
+
+Gates: qa 8,583 pages, preflight 0 problems, parity, conventions, and the smoke
+test's 375px fit check all pass. Photographed in both states, with Apple on and
+with it off, and with the email route open and closed.
+
+**Nothing here is live.** APPLE_SIGNIN is still false and the branch is not
+merged, so the site a reader sees is unchanged.
+
+## 2026-09-12 - Apple on the web, and the app's sign-in link finds its way home
+
+Hidde asked why Apple login is missing on mobile web, and said email sign-in
+still has to be built for the app. Both are the same rule failing: a feature
+designed for one surface and not the other.
+
+**Apple on the web is built and waits on one console visit.** The button, the
+copy in all eight languages, the click wiring and the styling are in; the flag
+`APPLE_SIGNIN` in site/src/lib/site-config.ts is false, and the comment there
+carries the three steps he has to do. The app signs in with Apple natively,
+which needs only the bundle id; the web takes the ordinary OAuth redirect,
+which Apple will not run against a bundle id. It needs a Services ID and a
+signing key, and neither can be made from here. Flipping that one word puts the
+button on the dialog and on /account. Verified with the flag on: it renders in
+English, German and Japanese, does not overflow at 375px, and both buttons
+measure identically.
+
+**The app's email route now comes back to the app.** He chose the universal
+link over paying for SMTP. /auth joins /t in the site's
+apple-app-site-association, the app asks Supabase to land sign-in links there,
+and it reads the tokens out of the fragment. The new /auth page is the other
+half: when iOS does not hand the link to the app, it signs the person in on the
+website, which is the same account.
+
+**FOR HIDDE, ONE thing, and he was right to ask.** He answered the first draft
+of this list with "check of ik het echt moet doen want ik heb alles al ooit voor
+de app gemaakt", and checking removed one of the two.
+
+1. **Still needed: the Services ID and the .p8**, on developer.apple.com. It is
+   the smaller half of a setup he has already half done. RELEASE_CHECKLIST.md
+   records that he enabled the Apple provider with the bundle id on 2026-08-30
+   and that Apple sign-in was then proven on his own device; the same entry
+   records the WEB route answering 400 "because it needs the OAuth secret we
+   deliberately left empty, and the website has no Apple button". The website
+   has one now, so that empty secret is the only thing left. A Services ID with
+   ancienttrees.app and
+   `https://caimvxiyrtifilimlkqw.supabase.co/auth/v1/callback` as the return
+   URL, a key with Sign in with Apple enabled, then both into the provider with
+   the Services ID listed BEFORE the bundle id. The bundle id staying there is
+   what keeps the app working. When it is done,
+   `/auth/v1/authorize?provider=apple` answers 302 instead of 400, which is the
+   same outside check that proved the app's half, and then the flag flips.
+
+2. **NOT needed after all: the redirect allow-list.** The first draft of this
+   entry asked him to add `https://ancienttrees.app/auth` to it. He does not
+   have to. The website's own magic link has sent `redirect_to` for whatever
+   page the reader was standing on since 2026-08-18, across 2,800 pages, and it
+   demonstrably works, which no list of literal URLs could do: it is a wildcard
+   and `/auth` is already inside it. His own checklist says the same thing from
+   the other side, `ancienttrees://auth-callback` having been on the list since
+   2026-08-30. Asking again was this file failing at the job it exists for.
+
+**The app half IS verified, and it did not need his Mac.** `ios.yml` runs on a
+macOS runner and fires on any push touching `ios/**`, so it had already built
+these commits. Run 403 on this branch: **success**. The app compiles, every
+test passes, `appfit` reports **0 findings on 68 screens across 2 phones**, and
+netcheck, the icon check and the two screen lists all pass.
+
+**It also caught a break this sandbox could not have.** Runs 393 and 399 were
+red, and both failures were mine: two UI tests ask for a button named "Email me
+a code", which this work renamed to "Email me a sign-in link" for every launch
+that does not pass -show-email-code. `main` was green and the branch turned it
+red. No amount of careful reading of the four files changed here would have
+found it, because the assertion lives in a fifth file there was no reason to
+open. The tests now ask for the name a person actually meets.
+
+**What is still NOT done, plainly, and neither part is a build.** The
+SCREENSHOTS were taken and could not be looked at from here: appsweep wrote 34
+of them and the artifact host is blocked by this sandbox's egress proxy, so the
+log's own "Now LOOK at them" went unanswered. They are on the run page for
+fourteen days. And `Launch.emailSignIn` stays false, waiting on the one thing
+no machine can do: tapping a real sign-in mail on a real phone, which is the
+only place a universal link arriving at the end of a server redirect can be
+proven.
+## 2026-09-17 - Night run 2026-09-17 06:13 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 26.3 minutes of its 120 minute window, 258 turns, 38 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: helmond, enschede, eindhoven, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-17 (session with Hidde) - A session merges its own work; handoffcheck.py
+
+**"Merge maar ik wil niet mergen doe dit zelf vraag nooit meer aan mij."**
+
+Said after the Contract B change below was finished, verified and then parked
+on `claude/blissful-cray-9dppia` with a FOR HIDDE line asking him to merge it.
+He is right and the corpus already agreed with him: he is not the quality gate,
+a run decides for itself, waiting for permission is the failure mode this
+project is built to avoid. None of that stopped the handoff, because a sentence
+in a file cannot refuse a push.
+
+So, the ratchet, in its own order:
+
+- **`scripts/handoffcheck.py`** refuses a LOG.md line that is both addressed to
+  him and asks for git plumbing: merge it, push it to main, "when you want it
+  live", "not on main yet". Tested on the real case (it catches the exact line
+  that produced this ruling) and on three months of archived LOG plus
+  CURATION.md and DECISIONS.md, where it fires on nothing.
+- **Wired into `scripts/hooks/pre-push`**, so it runs where the mistake is made.
+- **CLAUDE.md** gets the sentence beside the check, never instead of it.
+
+The boundary is deliberate and narrow: FOR HIDDE stays, and most of what it
+carries is real. What is refused is a GIT operation a session could have done
+itself. A spend (hard rule 5), a blueprint or tone edit (hard rule 7), anything
+touching his accounts or his name, and any judgement this corpus records as his
+are untouched and still go to him.
+
+Done the same session: merged main (night run: Houston, Vancouver, the Mexican
+White Oak species page) and pushed Contract B v1.18 to main. Rebuilt and
+re-verified on the exact pushed tree, because new cities change which places
+stand on one tree: QA passed 9,221 pages, preflight 609 cities 0 problems.
+
+## 2026-09-17 (session with Hidde) - Question pages retired on one-tree places, Contract B v1.18
+
+He pasted the Search Console "crawled, currently not indexed" report: 36 URLs,
+validation started 10-09 and failed 15-09. The diagnosis, checked against the
+data rather than guessed:
+
+| Kind | Count | Verdict |
+|---|---|---|
+| Tree pages | 17 | 15 of 17 have no photograph; stories 169-249 words; none carries a recognition line |
+| Places with 1-2 trees | 6 | Three URLs paraphrasing one tree |
+| 4-5 tree city pages | 3 | Same cause, milder |
+| Bigger city pages | 5 | Young, no authority |
+| Question pages | 2 | Same as the one-tree case |
+| `/contribute?kind=correction&...` | 1 | Correct outcome, canonical already handles it |
+| `/api/cards.json`, `/feed.xml` | 2 | Correct outcome, neither should ever be indexed |
+
+Nothing was broken. 36 of ~5,000 URLs is 0.7 percent, and the graph he sent
+shows it near 90 in the summer, so the headline number was not the story.
+
+**The structural finding: 328 of 609 published places hold exactly one tree**,
+and each publishes a city page, a tree page and a question page. Lebec spends
+87 words of intro, 139 of question_answer, 193 of question_context and 234 of
+story on one valley oak, every one of them naming the same grizzly, the same
+bark and the same entry fee. All of it passes P3 and none of it is templated;
+it still reads to a crawler as three pages about one thing. That is ~650
+surplus URLs spending the crawl budget of a site with no backlinks.
+
+**His ruling:** "ze verdienen ze niet - maar uiteindelijk komen er meer bomen
+in grote steden - in afgelegen plekken weghalen." Built the same session,
+blueprint bumped to v1.18 (hard rule 7 satisfied: his approval plus a
+changelog entry).
+
+- **The rule is the tree count and nothing else**, in `site/src/lib/question-page.ts`,
+  dependency-free so redirect-map.ts can read it too. A place that grows to a
+  second tree gets its page back on the next build. No list to maintain, which
+  is what the second half of his sentence asks for.
+- **281 question pages build, 328 retired**, and every retired URL resolves,
+  landing on the tree page rather than the city page because that is the answer
+  to the question the visitor asked. Hard rule 3, same treatment /[city]/walks got.
+- **All seven languages in the same change**, though no translated city is on
+  one tree today, so that half is a guard rather than a fix.
+- **`check_one_tree_places_have_no_question_page()` in qa.py** is the ratchet:
+  it refuses a built question page under the threshold, a retired URL that stops
+  resolving, and a live link into one. Both failure modes were tested red before
+  the change was called done.
+- **preflight still requires question_answer/question_context on one-tree
+  places**, deliberately. Relaxing it would move a build failure onto whichever
+  future commit adds that place's second tree.
+
+QA passes on 9,215 pages, preflight 609 cities 0 problems, paritycheck and
+crosscheck clean.
+
+**Live on main.** The first version of this entry parked the work on a branch
+and asked him to land it, which produced the ruling below.
+
+Not done, and it is the other half of the same report: **none of the 17 tree
+pages carries a recognition line**, which is rung 7 and the cheapest unique
+text we have. Left for a run.
+
+## 2026-09-17 (continuation 9) - Houston and Vancouver: 5 trees written and merged, a species page, a city-list gap fixed
+
+Picked up after an earlier attempt this window stopped with two write
+claims standing on Vancouver and Houston whose verify work (continuation
+8, below) had already landed. Released both stale claims, deleted the
+now-merged `enschede-verified.json` research file, re-claimed both cities
+for a write pass, and ran one: `leads.py --ready` was empty (that pipeline
+is register-leads only), but `passcheck.py --pending` had exactly these 5
+already-verified trees waiting on a story, which is the same "bought and
+paid for" work the wake-up brief was pointing at, just under the other
+assembly-line queue.
+
+**5 trees written and merged.** hou_005 (The Rienzi Yaupon, Museum of Fine
+Arts Houston's garden, state champion class yaupon holly grown to tree
+height) and hou_006 (The Russ Pitman Mexican White Oak, Bellaire) from the
+Texas Big Tree Registry; van_005 (The Dunbar Street Beech), van_006 (The
+West 20th Avenue Sweet Chestnut) and van_007 (The Blenheim Street Oak) from
+Vancouver's Heritage Register, each cross-checked against the city's
+separate street-tree inventory. None has a documented age; all five say so
+plainly and ask the reader. Houston grows 4 to 6, Vancouver 4 to 7.
+Normalised 3 species-field collisions the writer correctly left alone as
+verified fields (Spanish Chestnut to Sweet Chestnut, a dual-name Mexican
+White Oak field, a multi-clause disputed-species field on the Blenheim
+oak), fixed the count-promise copy both cities' growth broke, rebuilt,
+qa.py and preflight.py both clean.
+
+**Found and fixed: Houston has been missing from `data/city-list.json`
+since the city was first opened** (0339be59, weeks ago), which is why
+`feed.xml.ts`'s first-seen stamping (iterates city-list.json) had never
+recorded hou_001-004 even though the pages themselves build fine through a
+separate directory-scan path. Added the entry, corrected Vancouver's stale
+`trees: 4`, bumped united-states.json's meta_description count.
+
+**A species page earned itself mid-pass:** hou_006 crossed Mexican White
+Oak (Quercus polymorpha) to 3 trees, the Contract F threshold.
+`pagegaps.py` caught it; wrote the intro from the three trees' own facts
+(Barcelona, Valencia, Houston) rather than waiting for a later sweep.
+
+Both write claims released. Costs logged (write pass, 5 trees, 133k
+tokens). `health.py` rung 2 is clear (the iOS failure the session-start
+brief flagged had already resolved itself by the time this run checked,
+per a run that landed at 03:45 before this one started); rung 1
+(submissions, sightings) was empty both times it was checked.
+## 2026-09-17 (continuation 8) - Ischia settled, Marthalen Oak photographed, Vancouver and Houston verify passes dispatched
+
+Picked up after an earlier attempt in this window stopped with 74 minutes
+still unspent. `passcheck.py --claims` was clear and `leads.py --ready` was
+empty, so worked down CLAUDE.md's Step 0 ladder: `health.py` flagged the iOS
+floor job as failing, which is the same well-documented flake (a tap race on
+"person-more") already blocked on a `workflow`-scope permission this bot's
+token lacks, reconfirmed 2026-09-09/13/16; nothing new to add.
+
+**Ischia settled to a leads verdict** (`data/leads/ischia.json`), same
+thin-and-spread shape Ravenna got yesterday: 3 MASAF candidates 2.3-17km
+apart, below the six-candidate verify floor. `city_queue.py` regenerated so
+it stops recommending it.
+
+**The Marthalen Oak (Zurich) now has a photograph.** `photo_gaps.py
+--shortlist` printed one candidate; found 8 queued, 6 geotagged within
+metres of our pin, all CC BY 3.0 from one 2015 Panoramio upload. Approved a
+full-height shot as the lead and added a trunk-plaque close-up as a second
+photo (the 2026-09-12 `photos` field), which happens to independently
+confirm our story's exact figures (34m, 5.60m round, ~360 years) from an
+official-looking museum plaque. Added `height_m: 34`.
+
+**Dispatched two register-backed verify passes** on cities from Hidde's
+2026-08-19 named list (from-zero web research is explicitly on there,
+targeting 10 trees each): Vancouver (15 unmined City of Vancouver Heritage
+Register leads, currently 4/10) and Houston (10 unmined Texas Big Tree
+Registry leads, non-commercial licence so lead-only). Both claimed in
+data/in-flight.json. Results still pending when this entry was written; a
+later run should check `passcheck.py --claims` and merge whatever they
+delivered to `data/research/vancouver-verified.json` /
+`data/research/houston-verified.json`, or release the claim if they died.
+
+## 2026-09-17 (session with Hidde) - His Kyoto sighting now points at the muku
+
+On his "punt 2 doe dat maar": sighting 84ebae36 moved from kyo_016 (the Sudajii) to kyo_019 (the Twisted Muku of Omiya Gate) in Supabase, name included, with a fresh `updated_at` so the sync fix of 2026-09-12 takes it on his phone.
+
+**Watch for it being undone.** The row's `updated_at` was 2026-09-16, which means his phone pushed it that day. A build from BEFORE the sync fix skips rows it knows and then pushes everything back, so signing in on an old build writes kyo_016 over this again. If the row reads kyo_016 after he has installed a build containing e1a8e844, re-run the same PATCH; before that, it can revert.
+
+The photograph-versus-tick split stays open: Hidde wants to think about it longer.
+
 
 <!-- archive-index -->
 
@@ -84,6 +587,201 @@ all, and /api/trees.json carries no `lang`, so none of the 55 overlays
 reaches a phone. The website has had all 119 UI strings in seven languages
 for weeks. The cheap half is the feed, because those translations already
 exist and are simply not being served. Waiting on his word.
+## 2026-09-17 (continuation 11) - Enschede 13->15, Helmond 18->19; Alkmaar verify pass dispatched
+
+Followed the run prompt's write-first rule: `prepare.py` showed three fully
+verified trees already sitting unmerged (ens_014, ens_015, hlm_019, left by an
+earlier continuation). Dispatched a write-stories pass on them rather than
+starting anything new, merged the result, fixed one species-name drift
+(Common Hornbeam -> the site's canonical Hornbeam (Carpinus betulus)) and
+updated both cities' tree-count promises in meta_description, question_meta,
+question_context and Helmond's access FAQ. Build, preflight and QA all clean.
+Live now.
+
+With the write shelf otherwise empty, dispatched a verify pass on Alkmaar
+(7 of a 20 target, 361 unmined Dutch LRMB register candidates, real demand)
+rather than touching Enschede/Helmond again in the same window, to keep two
+agents from writing the same delivery file at once. Steered it toward a new
+walkable cluster rather than more sprawl (the existing 7 trees already span
+10.9 km). Still running as this entry is written; its output will merge in a
+later continuation.
+
+## 2026-09-17 (continuation 7) - Ravenna settled with a leads-file verdict, a photo-queue viewing pass, one new photo (Montreal's McGill Katsura)
+
+`leads.py --ready` was empty (0 READY), so per the harness instructions this
+went to Step 0. `city_queue.py --next`'s OPENABLE list was all cities too
+thin to dispatch a verify pass on (1-3 candidates each, spread far apart);
+Ravenna specifically had been checked and passed over five times already
+without ever getting a `data/leads/` file, so it kept re-surfacing. Wrote
+`data/leads/ravenna.json` with the verdict and re-ran `city_queue.py` to
+regenerate the queue; it now settles correctly. Ischia checked too (also
+too thin, 3 candidates 2-17km apart).
+
+With no cheap new-coverage target, spent the rest of the window on a photo
+viewing pass (2026-09-01 already rules this in for a night run): fetched
+and judged every unjudged queued candidate for the biggest zero-photo
+cities (Leeuwarden, Haarlem, Maastricht, Eindhoven, Zwolle, Spokane,
+Rotterdam, Hobart, Rouen). Result: 39 rejected, 2 held, 1 approved
+(Montreal's McGill Katsura, an iNaturalist photo whose coordinate matches
+our pin within about 13m). Full reasoning and the repeatable false-positive
+patterns (Dutch heritage-building surveys, archival B&W material, keyword
+collisions) are in CURATION.md.
+
+Rebuild and qa.py both clean (8887 pages). preflight.py: 0 problems.
+
+## 2026-09-17 (continuation 6, previous attempt in this window stopped after 8 min with 112 min unspent) - Enschede 12 -> 13, and confirmed both rung-2 alerts are known non-issues
+
+Followed the harness's own order. **Claims first:** one claim standing,
+Enschede, and unlike a bare claim with no output, an earlier attempt this
+window had already finished the verify work and left it on disk uncommitted
+(`data/research/enschede-verified.json`, one candidate). Finished it rather
+than releasing it empty: merged ens_013, "The Sweet Birch of the
+Oosterbegraafplaats" (Betula lenta, LRMB register nr 1692854, dendrological
+grounds, no age), the fourth register tree on the same Oosterbegraafplaats
+cemetery as ens_008/009/010. Wrote the story myself (one tree, below the
+six-candidate write-pass floor). Fixed enschede.json's meta_description and
+question_meta, which still said twelve trees. Full write-up in CURATION.md.
+
+`leads.py --ready` was checked but the window closed on the claim work
+before reaching it (a fresh `npm install` plus a full `astro build` for QA
+verification took most of the remaining time; site/ had no node_modules
+this session).
+
+**Checked, not re-investigated, the two rung-2 alerts from session start.**
+Weekly analysis's 2026-09-14 failure is the documented usage-limit-death
+fingerprint (1 turn, 0 cost, sub-second) and `scripts/health.py` already
+says so; nothing to do until a full window passes still failing. The iOS
+app's newest failure (2026-09-16) is the same already-documented flaky tap
+race in `FlowWalk.swift`, FOR HIDDE since it needs a workflow-scoped push
+token this bot's does not have, reconfirmed as recently as 2026-09-16.
+Neither needed new work this run.
+
+`preflight.py`, `superlatives.py` and `qa.py` (against a full rebuild) all
+pass clean.
+
+## 2026-09-17 (continuation 5, previous attempt in this window stopped after 32 min with 88 min unspent) - Florence 26 -> 27, and city_queue.py stops re-recommending settled dead ends
+
+Followed the harness's own order. **Claims first:** an earlier attempt this
+window had left Vilnius and Florence claimed. Vilnius's verify work was
+already finished and logged in CURATION.md (register confirmed exhausted);
+released the claim. Florence's verify pass had not actually run, so dispatched
+one, then merged and wrote the story myself (one tree, below the six-candidate
+write-pass batching floor).
+
+**Florence 26 -> 27**: flo_027, "The Hackberries of Piazza Vasari", resolves a
+stale register-trap lead (wrong park name, and an "alive now" question left
+open by two earlier passes: a November 2025 railway-bridge felling excluded
+these specific trees by name, per La Nazione and RAMI's own health record).
+Four sources. Italian overlay updated in the same commit, including a stale
+tree-count in its title/meta_description ("26 giganti" -> "27").
+
+**Fixed a real, repeated waste**: `city_queue.py --next` was recommending
+Dubai and Taormina as openable new cities, though both already carry a
+written "no supply" verdict in their own `data/leads/*.json` file from
+earlier passes. Grepping the corpus shows this exact rediscovery logged
+across at least seven sessions since 2026-09-08. Added `settled_verdict()`
+to scripts/city_queue.py, matching a leads file by slug and its note's own
+verdict phrasing; settled cities now print under a SETTLED section instead
+of OPENABLE/NAMED BY HIDDE. While checking the rest of the OPENABLE list,
+found the same failure one layer deeper: Trier's supply is entirely
+cross-border Luxembourg register rows (10.7-21km out, wrong comune), the
+same mistake already recorded for Florence/Fiesole; wrote it a verdict too.
+Nothing else on the OPENABLE list clears the six-candidate floor.
+
+Also confirmed (not re-attempted): the iOS app's newest CI failure is the
+already-documented flaky tap race in FlowWalk.swift, whose real fix is FOR
+HIDDE (needs a `workflow`-scoped push token this bot's does not have,
+reconfirmed 2026-09-16 per drafts/ios-floor-retry.patch).
+
+`qa.py`, `preflight.py`, `superlatives.py`, `i18ncheck.py` all pass clean.
+
+## 2026-09-17 (continuation 4) - `git push` auth failure mid-session, recurrence of the documented token-swap fix
+
+Right after committing the Perušić work above, `git push` started failing
+with "Invalid username or token" on both the embedded remote URL and a
+credential-helper retry: `GH_TOKEN`, `GITHUB_TOKEN` and `DEFAULT_WORKFLOW_TOKEN`
+all decoded (as JWTs) to already-expired `exp` claims, `GH_TOKEN` about 25
+minutes past and `DEFAULT_WORKFLOW_TOKEN` about 44. `gh run list` 401'd the
+same way, confirming it was not a fluke. This is the same failure mode
+archive/LOG-2026-08.md already recorded twice (2026-08-2x): a GitHub App
+installation token with roughly a one-hour lifetime, minted once at session
+start and never refreshed mid-session. The documented fix still worked
+despite the JWT looking expired on paper: pointing the git remote's
+credential helper at `DEFAULT_WORKFLOW_TOKEN` instead of `GH_TOKEN` let the
+push through immediately. Left the credential helper configured that way
+(`git config credential.https://github.com.helper`) rather than reverting,
+so later pushes in this same session do not hit the same wall. Worth
+repeating in this file a third time since two mentions apparently was not
+enough for it to be checked automatically before retrying blindly: if
+`git push` ever fails mid-session with an auth error, try
+`DEFAULT_WORKFLOW_TOKEN` in the remote before assuming the work is stuck.
+
+## 2026-09-16 (continuation 3) - A new place: Perušić, Croatia, the largest common fir left in Europe
+
+Same window, continuing after Sremski Karlovci above, further down
+`famous_demand.py --gap`'s list. Xiangyang Famous Tree (Taiwan) was
+already a documented dead end (multi-day permit-gated trek, checked
+2026-09-08). Next candidate with a pin, Fir Tsar/**Jela Car** near
+Perušić, Croatia, had never been looked at: a Silver Fir 144 km from the
+nearest published tree (Trieste), so its own place under the
+single-famous-tree rule.
+
+Verified against Park prirode Velebit's own July 2025 conservation work
+(reported by multiple Croatian outlets: 42.5 m tall, 5.42 m round,
+removing mistletoe and dead branches) corroborated by Croatian Wikipedia
+and the Perušić Tourist Board's own page, both citing the same figures. A
+competing set of numbers (47.5 m / 5.9 m) circulates on other tourism
+sites with no stated measurement date or method, so the better-sourced
+figures are used and the discrepancy is named in the story.
+
+Age is genuinely unconfirmed: the managing nature park says so outright,
+so `age_estimate` uses "contested" rather than "unconfirmed" to trigger
+`ageToken()`'s own disputed-age guard in `tree-copy.ts` (the 2026-08-28
+BLOCKER fix). Caught this the hard way: the first draft ("unconfirmed;
+commonly said to be over 500 years") slipped past that guard because it
+matches only `disputed|contested`, and the built title read "Oldest 500
+Years" as fact until the wording was fixed and rebuilt. Worth flagging
+here since it is an easy trap for any future single-famous-tree page with
+a genuinely disputed age: say "contested" or "disputed", not
+"unconfirmed", "unknown" or similar synonyms, or the guard does not fire.
+
+Photo (CC BY-SA 3.0, Wikimedia Commons, three people linking hands around
+the trunk for scale) meets the Cadiz standard; a second photo (CC BY 3.0)
+showing the trunk beside its own identifying sign added to `photos` as a
+secondary image. Ran `city_names.py` for the new slug. Build (5740
+pages), `qa.py` (8882 pages) and `preflight.py` (609 cities, 0 problems)
+all clean.
+
+## 2026-09-16 (continuation 2) - A new place: Sremski Karlovci, Serbia, the plane tree by the Lower Church
+
+Same window, continuing after the Montreal/iOS work above. `city_queue.py
+--next` and `scout_next.py --target` both pointed at cities already
+documented dead ends this week (Jersey City and Funchal both duplicate
+already-published cities; Taormina, Ravenna and Trier's register/Wikidata
+supply is already exhausted per CURATION.md and LOG.md entries from
+2026-09-08 through 2026-09-13). Followed the documented fallback to the
+famous-tree track: `famous_demand.py --gap` (read about in other languages,
+unwritten in English), picked the highest-demand candidate that already
+had a pin: **Platan u Sremskim Karlovcima**, a London Plane in the
+courtyard of Sremski Karlovci's Lower Church, 9 km from Novi Sad
+(unpublished) and 60 km from Belgrade (too far for a day trip), so its own
+place under the single-famous-tree rule.
+
+Verified against two independent sources: Serbian Wikipedia's dendroflora
+survey citation (~165 years) and the town's own Tourism Organization page
+(over 150 years, protected since 1960, tallest of its species recorded in
+Vojvodina). A local legend ties it to a sapling from Vienna planted after
+the 1719 church rebuild, which would make it considerably older; presented
+honestly as tradition rather than fact, since nobody has cored the trunk.
+Corrected one fact mid-research: the church's own Wikipedia article names
+"Petar I Petrović Njegoš" ordained there in 1784, which is Saint Peter of
+Cetinje, not his grand-nephew Petar II who wrote Montenegro's national
+epic; caught before it reached the story. Photo (CC BY-SA 4.0, Wikimedia
+Commons) shows the trunk against the church itself and meets the Cadiz
+standard; looked at all three candidate photos on file, the other two were
+of the church tower and interior, not the tree. Ran `city_names.py` for
+the new slug. Build (5737 pages), `qa.py` (8874 pages) and
+`superlatives.py` (378 claims, no collisions) all clean.
 
 ## 2026-09-16 (continuation) - Finished the stopped Montreal claim, iOS retry-flag patch still blocked
 
@@ -2566,6 +3264,73 @@ time and wore a wide double band across the top of the map. It now says only
 what the tile credit cannot: the way to /sources, where Valhalla, FOSSGIS and
 the ODbL are named.
 
+## 2026-09-12 - Baarn's town hall plane, from a newspaper clipping, and the size of the Dutch seam
+
+Hidde photographed a page of the local paper: Baarn is the national kick-off
+of the European TreeTag campaign on Friday 18 September, and the first tag
+goes on the plane in front of the town hall. He asked for the tree and for
+the database behind it, and said explicitly not to mail anybody.
+
+**The tree.** brn_008, The Town Hall Plane, Baarn 7 -> 8. Stationsweg 18,
+pin confirmed from the register's own per-tree coordinate, 450 cm round,
+26 m tall, planted band 1890-1900. Two independent lines of evidence: LRMB
+record 1677447 for position, girth, ownership, access and condition, and
+the municipality's TreeTag announcement for the measurements taken by
+boomdeskundige Pius Floris. Girth and planting band agree independently,
+450 cm at about 3.5 cm a year putting a plane near 130. The register's own
+hedge about the tree being planted during the 1897 villa's construction is
+repeated as a hedge, not sharpened, which is the bridge claim this city
+already taught us once. No photograph: the press image is credited Gemeente
+Baarn and is not openly licensed. Baarn's intro, question_meta and access
+FAQ were rewritten for eight trees; preflight caught all three.
+
+**The database was already on disk, and it is bigger than anyone has said
+out loud.** data/registers/netherlands-lrmb.json, 16,094 trees, Bomenstichting,
+attribution-only licence, imported 2026-08-18. It holds 44 Baarn rows and
+carried the town hall plane with every field the page needed. Measured
+across the whole country: 8,233 rows are visitable=ja and not privately
+owned, so hard rule 10 is answered from the data, and **7,439 of those we do
+not map**, against 569 Dutch trees published. Utrecht alone has 210 unmapped
+and sits at queue #78; Amsterdam 165, Bronckhorst 112, Land van Cuijk 106,
+Zutphen 90, Lochem 86. The night runs are already mining this seam (Breda
+and Amersfoort the same week), so this is the size of it rather than a
+discovery that it was idle. Baarn itself has 17 more publishable unmapped
+rows, which would take it from 8 to 25 with no web research at all.
+
+**The register was imported but never indexed in the scouting ledger**, so
+scout_next.py read every Dutch city as unscouted. Added as a country-level
+entry with the measurement above and the unscouted Dutch leads worth a look
+when it runs dry (openbomenkaart.org, boomregister.nl / Boombasis,
+data.overheid.nl 14394, atlasleefomgeving.nl, the RCE green heritage map).
+
+**TreeTag is not a database.** It is an awareness action by Pius Floris
+Boomverzorging, hundreds of locations across the Netherlands, Belgium,
+Poland, England, Sweden and the United States, with the numbers computed in
+i-Tree. No public list or map of tagged trees exists that search can find.
+It is a lead source, because every tagged tree is one somebody argued for,
+and not something to import.
+
+FOR HIDDE: four of the six nominated Baarn trees are still unknown to us,
+and baarn.nl, baarnschecourant.nl, mooibaarn.nl and boomkronen.eu are all
+blocked by this session's egress proxy, so the list could not be read. A
+night run with open egress should try; if it is blocked there too, the page
+is one paste away.
+And the doubled preposition found beside it, fixed the same day on his "doe
+maar gewoon beide". Eleven trees read "A Muku Tree in On the stone perimeter
+wall near Omiya-gomon, Kyoto", because every metaLead joins the area with its
+own preposition and four Pisa and four Kyoto neighbourhoods already start with
+one. The tempting fix was to strip it from the data, and it is wrong twice
+over: that field renders correctly in the facts table, and "near Piazza dei
+Miracoli" would become "in Piazza dei Miracoli", putting a tree on a square it
+stands beside. A snippet does not get to be more precise than the record about
+where something is. So an area beginning with a preposition is dropped and the
+city carries the lead alone, which also hands 40 characters back to the
+sentence that says why to go.
+
+The app change could not be built here, this being Linux with no Xcode, so
+appsweep and appfit did not run on it locally; ios.yml picked it up on the
+push and judges it in CI.
+
 ## 2026-09-12 - The map credits leave the footer of 2,800 pages for the legal corner
 
 Hidde, on finding the whole attribution line under every page: "moet dit
@@ -2587,6 +3352,61 @@ picture.
 
 Most of those pages draw no map at all, which is the part that made it
 wrong rather than merely long.
+## 2026-09-12 (session) - Tree pages said each fact twice; they say it once now
+
+Fix 1 from the UX audit, on branch claude/website-ux-audit-aji746.
+
+The facts panel above the story arrived with the app's design on 2026-09-04
+and took over age, species and the ticket. The detail list below it was never
+trimmed, so every tree page had been repeating itself since. Measured over 500
+English pages: 307 printed an age in both places and 283 of those printed two
+different forms of it (a computed band "260-285" up top against the written
+"275 years" below), 25 repeated the access sentence word for word, and the
+note under the map repeated the transport line on every page that has one. On
+translated pages the species row was character for character the panel.
+
+Each row now renders only where the panel is not carrying it. Age survives on
+the 70 of 500 pages where the panel had no number, which are exactly the pages
+where the written estimate is the only age there is. Species stays in English,
+because the panel there shows the common name alone and Contract A wants the
+scientific name in the fact block; on translated pages the panel already
+prints the whole string, so the row went. After: zero duplicates in either
+language, nothing lost from any page.
+
+qa 8582 pages clean, smoke passed, paritycheck clean, and the block was looked
+at at 375px in English and Spanish.
+
+## 2026-09-12 (session) - The homepage said the same thing twice, and "Top species" was the alphabet
+
+Hidde sent a screenshot of the phone homepage: the mission sentence stands
+once in the page's own block and again in the footer directly underneath.
+Both fixed, on branch claude/website-ux-audit-aji746.
+
+The homepage `.mission` block is gone. The footer's `footerAbout` says the
+same sentence on all 5,515 pages, so the footer is the copy that survives;
+the page-level one added only "or want to map a whole city" and paid for it
+by saying everything else a second time. Its CSS went with it.
+
+"Top species" in the directory was sorted alphabetically and printed Aleppo
+Pine, American Elm, American Sycamore, Amur Cork Tree, Atlas Cedar, Austrian
+Pine, Bald Cypress, Baobab, Bishop Wood, Bitter Orange, which is the first
+ten names in the alphabet under a heading promising the top of the site. Top
+cities, Collections and Oldest trees in the same block are all genuinely
+ranked, and the Species SHELF further up the page already sorts by tree
+count, so the directory disagreed with its own label and with itself one
+screen higher. Now ranked: Pedunculate Oak, London Plane, Ginkgo.
+
+Rebuilt (5,515 pages), qa clean, preflight 0 problems, smoke test passed.
+
+The rest of the UX walk (375px, real viewport, screenshots) is reported to
+him in session rather than written up here, because most of it is a question
+for him rather than a finding to act on. The one thing worth recording for a
+later run: on 283 of 500 sampled tree pages the age is printed twice in two
+different forms, a computed band in the top panel ("260-285") and the written
+estimate in the facts table below ("275 years"), and access text is repeated
+word for word on 25 of them. The comment above that block in
+site/src/pages/[city]/[tree].astro already states the rule it breaks: "a fact
+appears exactly once per page."
 
 ## 2026-09-12 - Night run 2026-09-12 02:02 UTC ended without saying anything
 
@@ -3387,6 +4207,61 @@ looking first: Astro writes `london.html` and not `london/index.html`, and
 iNaturalist names every photograph `medium.jpg` with the identity one segment
 up. Nothing was lost, the live site stayed up throughout. Both fixed and the
 final deploy is green.
+## 2026-09-10 (session) - A failed backlink fetch no longer records itself as a check
+
+Hidde asked about the SEO numbers and then corrected me on backlinks: I had
+repeated the 08-09 "zero referring domains" reading and the digest's
+"external referrers: none yet" line, when getLISBON's two followed links
+have been live since 09-04 and verified on 09-08. That correction is
+already recorded in the 09-08 entry; what is new is the bug I found by
+running `backlinks.py` from a session whose egress proxy blocks all twelve
+watched hosts.
+
+`check()` set `item["checked"] = today` BEFORE fetching, so every one of the
+twelve 403s still stamped today's date. Two costs, and the second is the
+real one. The date claims we read a page we could not reach. And `due()`
+sorts least-recently-checked first, so a stamped failure pushes that page to
+the BACK of the rotation: a host that is persistently unreachable would get
+retried least often of all, which is exactly backwards. The date now moves
+only after a successful fetch. A deliberate blocklist skip still advances
+it, because that is a decision rather than a failure and retrying it first
+forever would starve the rest of the list.
+
+No data change: the store-level `checked` field is written and never read,
+and the per-page dates now stay put when a run cannot fetch.
+## 2026-09-10 - Four collections were showing no trees; the ranking now travels
+
+Hidde: "I see some collections in the website that are empty of trees." He is
+right, and it was worse than the /collections page it shows on.
+
+The tallest, the thickest, the autumn and the harvest lists are GENERATED
+collections: they rank themselves at build time and their files on disk carry
+an empty `entries` array on purpose. Only the collection page itself knew that,
+because the ranking lived inside `collections/[slug].astro`. Everything else
+read the file's own empty array and believed it:
+
+- /collections printed **"0 trees, 0 cities"** on four cards, each under the
+  no-photograph placeholder, next to cards showing real counts.
+- **/api/browse.json dropped all four from the app entirely**, on a filter that
+  removes a collection with no trees, so the Collection tab has never once
+  shown the tallest, the thickest, the autumn or the harvest list.
+- City, country and question pages never cross-linked a tree that appears only
+  in a generated collection. 515 city pages now carry a collection link.
+- A fifth, `trees-older-than-400-years`, generated as well but holding six
+  hand-written notes, advertised itself as "6 trees, 1 city". It holds 299
+  across 231.
+
+The ranking moved to `site/src/lib/collection-rank.ts`, and a consumer now asks
+that module what a collection holds instead of reading the array. What the
+cards say after the change: thickest 794, harvest 334, oldest 299, tallest 266,
+autumn 226. The collection pages themselves render exactly as before.
+
+Two things found on the way. The app feed gated drafts on `status != "draft"`
+while Contract D's draft status is `needs_curation`, so a drafted collection
+would have gone straight to the app while the website held it back; it uses
+/collections' own gate now. And `check_no_collection_is_empty()` in qa.py is
+the ratchet: it asks the reader's question of both surfaces, does this
+collection show me any trees, which is a question only a built site can answer.
 
 ## 2026-09-10 - Fixed a failing deploy, finished 3 of 4 open claims from the previous run
 

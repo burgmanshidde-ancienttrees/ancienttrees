@@ -12,6 +12,7 @@ import { haversineKm } from "./walks";
 // Nothing caught it because astro build does not typecheck; astro check does.
 import { slugify, legacySlugify } from "./slug";
 export { slugify, legacySlugify };
+import { cityHasQuestionPage } from "./question-page";
 
 export type Tree = CollectionEntry<"cities">["data"]["trees"][number];
 export type CityData = CollectionEntry<"cities">["data"];
@@ -34,6 +35,13 @@ export function cityIsRenderable(city: CityEntry): boolean {
 
 export function renderableTrees(city: CityEntry): Tree[] {
   return city.data.trees.filter(treeIsRenderable);
+}
+
+/** Does this city publish a question page (Contract B)? The rule and the
+ * reasoning live in ./question-page, shared with redirect-map.ts, which keeps
+ * the retired URLs resolving and runs too early to import this file. */
+export function hasQuestionPage(city: CityEntry): boolean {
+  return cityHasQuestionPage(renderableTrees(city).length);
 }
 
 /** Human distance between two tree locations: "350 m" or "2.1 km".

@@ -450,6 +450,181 @@ that exists.
 
 ---
 
+## The shape of a sign-in sheet
+
+**Reference: AllTrails' own web sheet, 2026-09-17.** Hidde photographed it on
+his phone and told me to rebuild ours on it, after calling our version "weer
+bijzonder lelijk". The screenshot is the source: alltrails.com refuses
+ClaudeBot and Mobbin, Banani and PageFlows are all unreachable from here, so
+nothing about their screen is described from memory.
+
+**MEASURED OFF THE SCREENSHOT RATHER THAN EYEBALLED**, after a first pass that
+matched the shape and got four numbers wrong by being creative with them
+(Hidde: "doe je best het echt zo dicht mogelijk hier op de laten lijken niet
+zelf creatief worden"). The capture is 1206px wide for a 402pt phone, so
+everything divides by three:
+
+| | reference | ours now |
+|---|---|---|
+| side inset | 24pt | 24 |
+| button height | 48pt | 48 |
+| button width | 353.7pt | 354 |
+| gap between buttons | 16pt | 16 |
+| icon tile | 56pt square | 56 |
+| headline | cap 19.7pt, 33pt line pitch, so ~28px at 1.2 | 28px / 1.2 |
+| sheet | off the bottom, top corners only | same under 600px |
+
+The first pass had the icon at 104px (nearly double), buttons at 56, gaps at
+10, and a centred card instead of a sheet. Every one of those was a guess
+dressed as a decision, and the fix was arithmetic rather than taste.
+
+**AND THE SHEET'S ACTUAL SUBJECT IS THE APP, which the first two passes
+missed.** Their headline is "AllTrails werkt beter in de app" and their loud
+button is "Ga verder in de app"; the Google button and "Meer opties" are what
+sits BELOW the rule. Twice this was rebuilt as a sign-in sheet wearing their
+layout, with our own Apple button in the loud slot, until Hidde said it plainly:
+"ik wil dat je daadwerkelijk de open in app functie erin bouwt". The rule
+separates continuing from signing in, not one provider from another.
+
+**IT IS TWO SCREENS, and the second one is a LIST OF ROUTES rather than a
+form.** Hidde's second photograph, 2026-09-17: "More options" replaces itself
+with every remaining provider, each a filled grey pill with the provider's mark
+at the leading edge, and the typed route is a BUTTON reading "Verdergaan met
+e-mail". The address is asked for only after that, on a step of its own. Our
+first attempt dropped a text input straight into the sheet, which makes the
+second screen a form with buttons stacked above it.
+
+Their expanded order is Google, Facebook, Apple, email, and ours is the same
+list with Facebook taken out (Hidde's instruction, and we have no such
+provider): Google on the front screen, Apple and email revealed by More options.
+
+**That took two goes, and the wrong one is worth recording because it was
+reasoned rather than guessed.** The first build put Apple in the front slot,
+arguing in the code and in this file that Apple's guidelines require their
+button to be no less prominent than any other. Hidde, 2026-09-17: "Google hoort
+daar Apple is de optie die vertoond wordt als je more options klikt net als bij
+alltrails." He is right, on both halves. Apple's prominence rule is an App Store
+review requirement about an APP that offers a third-party sign-in; a website is
+not reviewed by Apple and the rule does not reach it. And the reference settles
+it anyway, because AllTrails ships Sign in with Apple and still puts Google in
+front of it. A guideline quoted out of its scope is exactly the "eigen idee"
+this whole section exists to stop.
+
+**THE VERTICAL RHYTHM, which is the part that reads as quality and the part
+nobody can name.** Hidde, after a rebuild whose elements were all correct:
+"verticale spacing ziet er beter uit bij alltrails let op dat soort dingen
+onthou dit". Measured off both screenshots:
+
+| | reference |
+|---|---|
+| pill height, loud and quiet alike | 48pt |
+| between two adjacent pills | 16pt |
+| across the rule, loud pill to next | 51pt |
+| headline to the loud pill, no subtitle | 32pt |
+| icon to headline | ~25pt |
+| sheet top to icon | 60pt |
+
+These live in `scripts/layout_rules.py` and `scripts/smoke_test.py` measures the
+rendered sheet against them on every push, in both shapes, because spacing is
+the one fault that survives a screenshot. Three had already got through in an
+afternoon: an `<a>` computing a 50pt pill among 48s, a rule block at 61, and a
+headline left 8pt above a button because hiding the subtitle took its margin
+with it. Every one was invisible to the eye and obvious in a number.
+
+**What they actually do, top to bottom.** A close cross in a grey circle, top
+right. The app icon as a large rounded tile, roughly 104px, centred. A big bold
+headline over two balanced lines. ONE dark filled pill at full width, tall. A
+hairline rule with the word "of" sitting inside it. Then two FILLED GREY pills:
+the provider, and "Meer opties" holding everything else. No small print at all.
+
+**The one rule worth carrying away: two weights, never three.** One loud
+button answers the question and everything else is the same quiet grey. Ours
+had a black Apple and a green send of equal weight, so the eye had no landing
+place, plus an outlined Google as a third weight. Filled grey is what lets a
+secondary sit there without competing, and it is why an outline is the wrong
+tool for it.
+
+**Three things ours does differently, each on purpose.**
+
+The small print STAYS. Their sheet carries none; our sentence about what
+personal data we hold is fixed by CLAUDE.md and may not be softened or
+shortened. It got quieter, not smaller in meaning.
+
+"More options" is back, and it is NOT the control removed on 2026-08-20. That
+one was a link to /account carrying the same single email form, a fork in a
+road somebody was already walking down. This one discloses in place and reveals
+something the sheet does not already show.
+
+**And it is CENTRED, which contradicts what the app chose two weeks earlier.**
+The entry below records Apple's WWDC25 move to leading alignment and Hidde
+picking it for the app sheet on 2026-09-01. This reference centres, and he
+picked the reference. The two surfaces now disagree because somebody decided,
+rather than because one of them was forgotten, and that is the only version of
+this disagreement worth having.
+
+The dark slot holds the strongest tap route available, which on a phone is
+"Continue in the app" and everywhere else is Google. Apple sits on the second
+screen as a grey pill, the same weight every other route there carries.
+
+---
+
+## Sign in with Apple ON THE WEB, and why it is not the app's flow
+
+**Looked up 2026-09-12**, when Hidde asked why Apple login was missing on
+mobile web. Apple's own HIG and button pages are JS-rendered and did not yield
+their numbers to a fetch, so what is recorded here is what was verified from
+Supabase's own Apple guide and from our own two code paths, and the parts that
+could not be read are named as such rather than guessed.
+
+**The two flows are not the same flow, which is the whole answer.** The APP
+holds a native Apple credential and posts it: `/auth/v1/token?grant_type=id_token`
+with the id token and the nonce. Apple accepts the BUNDLE ID as the audience
+there, so that route needs no web registration at all. A BROWSER has no such
+credential, so the web takes the ordinary OAuth redirect,
+`/auth/v1/authorize?provider=apple`, byte for byte what our Google button
+already does. That flow authenticates US to Apple, and Apple will not take a
+bundle id for it: it wants a **Services ID** (a second identifier for the web
+half) plus a **.p8 signing key**. Both are created in the Apple Developer
+account and cannot be made from a build.
+
+Supabase's guide adds one ordering detail worth keeping, because it is the fix
+for an error that reads like something else entirely: in the provider's client
+ids list the **Services ID goes before the bundle id**, and that is what avoids
+"Unacceptable audience in id_token". The callback to register on the Services
+ID is `https://<project>.supabase.co/auth/v1/callback`.
+
+**The button, and why ours is drawn rather than Apple's own.** In the app,
+`SignInWithAppleButton` IS Apple's control and nothing about it is adjustable,
+which is what the entry below is about. On the web Apple ships that control
+only through Sign in with Apple JS, a third-party script in the product and
+therefore hard rule 5, and we do not need it, because Supabase performs the
+OAuth. So on the web NEITHER provider hands us a control: both buttons are ours
+to draw, and the honest resolution is the opposite of the app's. There the two
+cannot agree and the entry below explains the gap; here they can, so Apple's
+button inherits the Google button's geometry whole, same height, radius, type
+size and mark column. Measured at 375px: both 276 by 44, same left and right
+edge.
+
+Apple's appearances are black, white and white-with-outline. On the second
+screen every route is a grey pill of equal weight, so Apple wears the dark mark
+on our cream ground rather than a black fill, which is the white appearance and
+one Apple publishes.
+
+**Their prominence rule does not apply here, corrected 2026-09-17.** It asks
+that the Sign in with Apple button be no less prominent than the other options,
+and the first build of this sheet read that as a licence to put Apple in the
+front slot with Google behind a disclosure. The rule binds an APP offering a
+third-party sign-in, which Apple reviews; a website is not reviewed and the
+guideline does not reach it. AllTrails, which ships Sign in with Apple, puts
+Google in front of it. Hidde ruled the same way. The full record is in the
+sign-in sheet entry above.
+
+- https://supabase.com/docs/guides/auth/social-login/auth-apple
+- https://developer.apple.com/sign-in-with-apple/usage-guidelines-for-websites-and-other-platforms/
+- https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+
+---
+
 ## Two sign-in buttons stacked, and why they cannot fully agree
 
 **Looked up 2026-09-01:** Apple's Human Interface Guidelines and
@@ -1821,3 +1996,49 @@ Read 2026-09-17:
 - https://www.inaturalist.org/blog/88740-using-inaturalist-to-learn-names-in-other-languages
 - https://birdsoftheworld.org/bow/content/language-settings
 - https://techcrunch.com/2017/04/24/google-makes-its-local-reviews-easier-to-use-when-traveling-with-automated-translation/
+---
+
+## Telling somebody what species they are looking at (2026-09-11)
+
+**Two conventions, not one, and which one applies is decided by whether
+identification IS the product or is a feature beside it.**
+
+**Live in the viewfinder means the model is on the phone.** Seek by iNaturalist
+puts the name on screen while you move the camera, and Merlin does the same for
+birds; both run a model on the device and both work with no signal. Merlin is
+the one that shows the price: it only fits because you download a Bird Pack for
+one region first, so the model never has to hold the world. Neither is a
+camera screen with a clever feature on it; identification is the whole app.
+
+**Everything that has identification as a FEATURE takes a photograph first and
+answers from a server.** AllTrails shipped exactly this as Outdoor Lens: you
+point their in-app camera at a tree, snap, and land on a results page. So does
+PictureThis, and so does iNaturalist's own main app, which keeps a small
+on-device model only as the offline fallback. AllTrails is the closest shape to
+ours, an outdoors product that added identification, and it is the one that
+went to the server.
+
+**Three details of the AllTrails result screen worth copying, all three of them
+about honesty rather than accuracy.** It shows a probability rather than a
+verdict. It lists up to five alternatives underneath, so the screen admits it is
+ranking rather than knowing. And offline it does not fail: the scan is saved to
+the logbook and identified when the signal comes back, which is the same thing
+PictureThis does with the photographs you take in a garden with no reception.
+
+Ours is the second shape. `SpeciesChooser` already keeps room above its list for
+a suggestion, which is where a ranked answer lands, and `SightingSync` already
+queues a photograph that could not be sent, which is the offline half. What we
+do not have and they do is the model.
+
+**One thing they do that we now do too: AllTrails put Outdoor Lens behind Peak,
+their paid tier.** Hidde ruled the same way for ours the day this entry was
+written, so recognition is Plus and waits on his time (DECISIONS.md
+2026-09-11). What stays his alone under hard rule 2 is the price and whether it
+sits inside Plus or beside it.
+
+Read 2026-09-11:
+- https://support.alltrails.com/hc/en-us/articles/40312229299348-Introducing-Outdoor-Lens
+- https://www.picturethisai.com/faq
+- https://apps.apple.com/us/app/seek-by-inaturalist/id1353224144
+- https://support.ebird.org/en/support/solutions/articles/48000961587-merlin-bird-id-faqs
+- https://www.inaturalist.org/blog/108940-new-inaturalist-app-for-iphone

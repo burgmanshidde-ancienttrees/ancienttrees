@@ -1,0 +1,27 @@
+{
+  "leads": [
+    {
+      "name": "Unidentified tree, reader submission #111",
+      "species": null,
+      "location": {
+        "address": "no address given; GPS fix only",
+        "latitude": 32.96713,
+        "longitude": 131.40504,
+        "neighbourhood": "Oka Castle ruins (Oka-jo), Taketa, Oita"
+      },
+      "reason": "Reader submission via the app's Collect flow (submissions row id 111, 2026-09-17), GPS only, no name/species/girth/photo. Pin sits at the Oka Castle ruins national historic site. No entry within 25km in data/registers/japan-bunkacho.json; the castle's own documented trees are planted cherry and maple for scenery, not a named ancient specimen. Overpass query for natural=tree within 400m timed out (server overloaded) and was not retried. Does not clear the two-source bar: kept as a lead rather than published. Same submitter as leads/oguni.json's #110 and #112 below, on the same Kyushu trip. See CURATION.md 2026-09-17."
+    },
+    {
+      "name": "Unidentified tree, reader submission #112",
+      "species": null,
+      "location": {
+        "address": "no address given; GPS fix only",
+        "latitude": 32.96912,
+        "longitude": 131.40796,
+        "neighbourhood": "Oka Castle ruins (Oka-jo), Taketa, Oita, roughly 290m from #111"
+      },
+      "reason": "Reader submission via the app's Collect flow (submissions row id 112, 2026-09-17), GPS only, no name/species/girth/photo. Same situation as #111 immediately above: no register entry nearby, no documented ancient tree at Oka Castle beyond its planted cherry and maple. Kept as a lead rather than published. See CURATION.md 2026-09-17."
+    }
+  ],
+  "blocked": []
+}

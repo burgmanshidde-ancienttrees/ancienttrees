@@ -153,8 +153,12 @@ Each is idempotent and each is his, the same as `saves.sql` was:
 
   The fix is Authentication > Providers > Apple, enabled, with the bundle id
   `app.ancienttrees.AncientTrees` under Client IDs, which is what the app's
-  native id-token route uses. A Services ID and .p8 are for the web flow, and
-  the website has no Apple button.
+  native id-token route uses. A Services ID and .p8 are for the WEB flow, which
+  is a separate job: the website grew an Apple button on 2026-09-12 and the
+  sentence here said it had none until that day. It is built behind
+  APPLE_SIGNIN in site/src/lib/site-config.ts and waits on exactly that Services
+  ID and key. Adding them does not disturb the app, as long as the Services ID
+  is listed BEFORE the bundle id in Client IDs.
 
   **Test it on a TestFlight or archive build, never on a Debug run.**
   CODE_SIGN_ENTITLEMENTS sits on the Release configuration only, so a Debug
@@ -162,12 +166,16 @@ Each is idempotent and each is his, the same as `saves.sql` was:
   well Supabase is configured.
 
 - [x] **Google sign-in on a real phone** (Hidde, 2026-08-30: "google werkt"), so
-  `ancienttrees://auth-callback` is on Supabase's redirect list after all.
+  `ancienttrees://auth-callback` is on Supabase's redirect allow-list after all.
+  The open copy of this same item stood three lines below the ticked one until
+  2026-09-12, still saying the allow-list entry might be missing, which is how a
+  question that was answered a fortnight ago got asked again.
 
-- [ ] **Google sign-in on a real phone.** `ancienttrees://auth-callback` has to be
-  in Supabase's redirect allow-list or Supabase quietly redirects to the website
-  instead, which looks like a button that does nothing. Apple's and the magic
-  link are unaffected. It cannot be seen in the simulator or in CI.
+  What that confirms is wider than Google, and it answers the emailed link too:
+  the allow-list is not empty and the website's own magic link has been sending
+  `redirect_to` for whatever page the reader stood on since 2026-08-18, across
+  2,800 pages. Only a wildcard can satisfy that, so `https://ancienttrees.app/auth`
+  is already covered by it and needs nothing added.
 - [ ] **Everything in part 2 above**, which needs a real phone and cannot be done here.
 
 ### Getting a build into TestFlight, which nothing here does for you

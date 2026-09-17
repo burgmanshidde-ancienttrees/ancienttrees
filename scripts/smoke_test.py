@@ -33,7 +33,10 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from layout_rules import MIN_TAP, DRIFT_MAX, SAME, PHONE_W, MIN_INPUT_FONT  # noqa: E402
+from layout_rules import (MIN_TAP, DRIFT_MAX, SAME, PHONE_W,  # noqa: E402
+                          MIN_INPUT_FONT,
+                          SHEET_BTN_H, SHEET_BTN_GAP, SHEET_RULE_GAP,
+                          SHEET_TITLE_GAP, SHEET_TOL)
 
 DIST = Path(__file__).resolve().parent.parent / "site" / "dist"
 
@@ -372,6 +375,120 @@ def fits_at_375(chrome, base, page):
         return None
 
 
+SHEET_HARNESS = """<!doctype html><meta charset="utf-8"><title>sheet</title>
+<style>html,body{margin:0}iframe{width:402px;height:874px;border:0}</style>
+<iframe id="f"></iframe><pre id="r">pending</pre>
+<script>
+var p = new URLSearchParams(location.search);
+var f = document.getElementById('f');
+f.src = p.get('u');
+f.addEventListener('load', function () {
+  var w = f.contentWindow, d = f.contentDocument;
+  setTimeout(function () {
+    try { w.atOpenSignIn('A Tree'); } catch (e) {}
+    setTimeout(function () {
+      // Open the second screen, so the whole list is on show and every gap
+      // between two pills is measurable in one pass.
+      var m = d.getElementById('signin-more');
+      if (m) m.click();
+      setTimeout(function () {
+        try {
+          var dlg = d.querySelector('.signin-dialog'), out = [];
+          if (!dlg) { document.getElementById('r').textContent =
+            'RESULT ' + JSON.stringify({error: 'no sheet'}); return; }
+          var title = d.getElementById('signin-title');
+          dlg.querySelectorAll('.oauth-btn').forEach(function (e) {
+            if (e.hidden || !e.getClientRects().length) return;
+            var b = e.getBoundingClientRect();
+            out.push({id: e.id || 'btn', top: b.top, h: b.height});
+          });
+          var tb = title && !title.hidden ? title.getBoundingClientRect() : null;
+          var sub = d.getElementById('signin-sub');
+          document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({
+            btns: out,
+            titleBottom: tb ? tb.bottom : null,
+            subShown: !!(sub && !sub.hidden),
+            ruleShown: !!(d.getElementById('signin-rule')
+                          && !d.getElementById('signin-rule').hidden)
+          });
+        } catch (e) {
+          document.getElementById('r').textContent =
+            'RESULT ' + JSON.stringify({error: String(e)});
+        }
+      }, 400);
+    }, 600);
+  }, 1200);
+});
+</script>"""
+
+
+def sheet_rhythm(chrome, base, page, phone):
+    """The sign-in sheet's vertical spacing, measured rather than looked at.
+
+    The fourteenth ratchet check (Hidde, 2026-09-17, on a rebuild that had every
+    element right and the air between them wrong: "verticale spacing ziet er
+    beter uit bij alltrails let op dat soort dingen onthou dit").
+
+    Spacing is the fault that reads as cheapness without being nameable, so it
+    survives every gate that asks whether a thing EXISTS and every review by
+    eye. The numbers it holds ours to are in layout_rules.py and come off the
+    reference itself.
+
+    `phone` swaps the user-agent, because the sheet is a different shape on a
+    phone: the app button takes the loud slot, the subtitle goes, and the rule
+    appears. Both shapes are measured.
+    """
+    ua = ("Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15"
+          " (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1")
+    cmd = [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+           "--window-size=430,920", "--virtual-time-budget=16000"]
+    if phone:
+        cmd.append("--user-agent=" + ua)
+    cmd += ["--dump-dom", "%s/__sheet.html?u=%s" % (base, page)]
+    out = subprocess.run(cmd, capture_output=True, text=True, timeout=90).stdout
+    m = re.search(r"RESULT (\{.*?\})</pre>", out, re.S)
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(1).replace("&quot;", '"').replace("&amp;", "&"))
+    except Exception:
+        return None
+
+
+def sheet_faults(r, where):
+    """Turn one measurement into named faults, or an empty list."""
+    if r is None:
+        return ["%s: could not measure the sign-in sheet" % where]
+    if r.get("error"):
+        return ["%s: sheet probe failed: %s" % (where, r["error"])]
+    btns = r.get("btns") or []
+    if len(btns) < 2:
+        return ["%s: the sheet showed %d button(s); it cannot be right"
+                % (where, len(btns))]
+    bad = []
+    for b in btns:
+        if abs(b["h"] - SHEET_BTN_H) > SHEET_TOL:
+            bad.append("%s: %s is %.0f tall, the reference is %.0f"
+                       % (where, b["id"], b["h"], SHEET_BTN_H))
+    btns = sorted(btns, key=lambda b: b["top"])
+    for a, b in zip(btns, btns[1:]):
+        gap = b["top"] - (a["top"] + a["h"])
+        # The one wide gap is the rule, and only where a rule is drawn.
+        want = (SHEET_RULE_GAP if (r.get("ruleShown") and a is btns[0])
+                else SHEET_BTN_GAP)
+        if abs(gap - want) > SHEET_TOL:
+            bad.append("%s: %.0f between %s and %s, the reference is %.0f"
+                       % (where, gap, a["id"], b["id"], want))
+    # Only where the subtitle is gone does the headline sit straight on a
+    # button, which is the case the reference actually shows.
+    if r.get("titleBottom") is not None and not r.get("subShown"):
+        gap = btns[0]["top"] - r["titleBottom"]
+        if abs(gap - SHEET_TITLE_GAP) > SHEET_TOL:
+            bad.append("%s: %.0f between the headline and the first button, "
+                       "the reference is %.0f" % (where, gap, SHEET_TITLE_GAP))
+    return bad
+
+
 def check_basemap(dist):
     """The map is the product, and nothing was checking that it draws.
 
@@ -568,6 +685,8 @@ setTimeout(function(){
     fit_page.write_text(HARNESS.replace("__MINFONT__", str(MIN_INPUT_FONT)), encoding="utf-8")
     align_page = DIST / "__align.html"
     align_page.write_text(ALIGN_HARNESS, encoding="utf-8")
+    sheet_page = DIST / "__sheet.html"
+    sheet_page.write_text(SHEET_HARNESS, encoding="utf-8")
 
     failures = []
     base_fails, base_warns = check_basemap(DIST)
@@ -629,6 +748,13 @@ setTimeout(function(){
                 "%s: %d field(s) under %gpx at 375px, so iOS zooms the page in "
                 "on tap and never back out: %s"
                 % (label, len(r["tiny"]), MIN_INPUT_FONT, "; ".join(r["tiny"][:3])))
+
+    # Does the sign-in sheet keep the rhythm it was built to? Both shapes,
+    # because a phone gets the app button, loses the subtitle and gains the
+    # rule, and only one of those two shapes was ever looked at.
+    for phone, where in ((True, "sheet on a phone"), (False, "sheet on desktop")):
+        failures += sheet_faults(
+            sheet_rhythm(chrome, base, f"/{city.stem}/{tree.name}", phone), where)
 
     # Does everything line up? Same three rules as the app (layout_rules.py),
     # at the two widths the site is actually read at.

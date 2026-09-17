@@ -1,0 +1,54 @@
+---
+// CONTINUE IN THE APP (2026-09-17, Hidde: "ik wil dat je daadwerkelijk de open
+// in app functie erin bouwt - ancient trees works better in the app").
+//
+// This page is the second half of a universal link, and it exists so the
+// button can promise one thing and be honest in both outcomes.
+//
+// The app claims /open in apple-app-site-association, so on a phone that has
+// it installed iOS never loads this page at all: it hands the URL straight to
+// the app, which reads ?tree= or ?city= and opens there. This page is what
+// happens when it does NOT, which is every laptop, every Android, and every
+// iPhone without the app. Then the honest next thing is the App Store, and
+// that is where it goes.
+//
+// Why a page rather than pointing the button at the App Store directly: the
+// App Store is the answer for somebody who has not got the app, and the wrong
+// answer for somebody who has, who would be sent out to a store listing to
+// press OPEN on an app already on their phone. One URL serves both because
+// iOS decides which, and it decides before this page loads.
+//
+// The redirect is a meta refresh plus a script rather than a server rule,
+// because the site is static. Both fire immediately; the visible link is for
+// the case where neither does.
+//
+// noindex, and out of the sitemap: there is nothing to find here, and it would
+// be a bad search result in any language.
+import Base from "../layouts/Base.astro";
+import { BASE_URL } from "../lib/schema";
+import { APP_STORE_URL } from "../lib/site-config";
+
+const canonical = `${BASE_URL}/open`;
+---
+<Base
+  title="Opening the app"
+  description="Continue in the Ancient Trees app."
+  canonical={canonical}
+  headExtra={'<meta name="robots" content="noindex, nofollow">'
+    + `<meta http-equiv="refresh" content="0; url=${APP_STORE_URL}">`}
+>
+<main class="content-page">
+  <h1>Opening the app</h1>
+  <div class="prose-block">
+    <p>If nothing happens, the app is not on this device yet.</p>
+    <p><a class="go-btn" href={APP_STORE_URL}>Get Ancient Trees</a></p>
+    <p class="signin-fine">Already have it? Open the app and carry on there.</p>
+  </div>
+</main>
+<script is:inline define:vars={{ STORE: APP_STORE_URL }}>
+  // The app did not take this URL, so the store is the honest destination.
+  // replace() rather than href, so Back returns to the tree rather than
+  // bouncing through here again.
+  setTimeout(function () { location.replace(STORE); }, 50);
+</script>
+</Base>

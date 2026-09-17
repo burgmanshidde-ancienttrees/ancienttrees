@@ -8,6 +8,7 @@ import Base from "../layouts/Base.astro";
 import TreeCard from "../components/TreeCard.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
+import { collectionEntries } from "../lib/collection-rank";
 import { COUNTRY_MIN_CITIES, GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific, speciesPageSlugs } from "../lib/species";
 import { usablePhoto, imgSrcset, cityFace, NO_PHOTO_SVG } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -48,7 +49,8 @@ export async function getStaticPaths() {
     .filter((intro) => (byCountry.get(intro.data.country)?.length ?? 0) >= COUNTRY_MIN_CITIES)
     .map((intro) => ({
       params: { country: intro.data.slug },
-      props: { intro, countryCities: byCountry.get(intro.data.country)!, collections },
+      props: { intro, countryCities: byCountry.get(intro.data.country)!, collections,
+               citiesBySlug: new Map(allCities.map((c) => [c.id, c])) },
     }));
 }
 
@@ -56,8 +58,9 @@ interface Props {
   intro: CollectionEntry<"countries">;
   countryCities: CityEntry[];
   collections: CollectionEntry<"collectionPages">[];
+  citiesBySlug: Map<string, CityEntry>;
 }
-const { intro, countryCities, collections } = Astro.props as Props;
+const { intro, countryCities, collections, citiesBySlug } = Astro.props as Props;
 
 const country = intro.data.country;
 const disp = countryName(intro.data);
@@ -153,7 +156,10 @@ const speciesSections = GROUP_ORDER.map((g) => ({
 const speciesTotal = speciesCount.size;
 
 const countrySlugSet = new Set(countryCities.map((c) => c.id));
-const relColls = collections.filter((coll) => coll.data.entries.some((e) => countrySlugSet.has(e.city_slug)));
+// collectionEntries rather than coll.data.entries: a generated collection holds
+// an empty array on disk and ranks itself at build time.
+const relColls = collections.filter((coll) =>
+  collectionEntries(coll, citiesBySlug).some((e) => countrySlugSet.has(e.city_slug)));
 const collLine =
   relColls.length > 0
     ? `Trees from ${esc(disp)} also appear in ${relColls

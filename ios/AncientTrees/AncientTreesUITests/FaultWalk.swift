@@ -102,7 +102,11 @@ final class FaultWalk: XCTestCase {
         // form with nothing to read. The app had been right the whole time
         // (2026-08-27). A sign-in sheet is full of buttons that sound alike, so
         // this one is named.
-        let send = app.buttons["Email me a code"]
+        //
+        // The NAME changed on 2026-09-12 and the test did not move with it,
+        // which turned this red: the button says "Email me a sign-in link"
+        // unless -show-email-code is passed, because the mail carries a link.
+        let send = app.buttons["Email me a sign-in link"]
         XCTAssertTrue(send.waitForExistence(timeout: 5), "nothing to submit the address with")
         XCTAssertEqual(field.value as? String, "walker@ancienttrees.app",
                        "the address never reached the field, so this tests the wrong failure")

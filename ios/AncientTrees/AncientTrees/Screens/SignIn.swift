@@ -150,7 +150,7 @@ struct SignInSheet: View {
             } label: {
                 HStack(spacing: 8) {
                     if account.state == .working { ProgressView().tint(.white) }
-                    Text("Email me a code")
+                    Text(Launch.emailCode ? "Email me a code" : "Email me a sign-in link")
                 }
                 .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 15)
             }
@@ -172,12 +172,20 @@ struct SignInSheet: View {
             VStack(spacing: 8) {
                 SpeciesMark(species: "Ginkgo", color: brand).frame(width: 48, height: 48)
                 Text("Check your email").font(.title2.bold())
-                Text("We sent a six digit code to \(to). Type it here and you are in.")
+                Text(Launch.emailCode
+                     ? "We sent a six digit code to \(to). Type it here and you are in."
+                     : "We sent a sign-in link to \(to). Tap it and you come back here, signed in. It works once and lasts fifteen minutes.")
                     .font(.subheadline).foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
             }
             .padding(.top, 4)
 
+            // The digits only where the mail actually carries digits. See
+            // Launch.emailCode: with the built-in sender it carries a link, and
+            // a field asking for six numbers that are nowhere in the mail is
+            // the exact fault Hidde hit on 2026-08-30 ("je hoort digits te
+            // krijgen maar ik krijg een magic link").
+            if Launch.emailCode {
             TextField("123456", text: $code)
                 .keyboardType(.numberPad)
                 .textContentType(.oneTimeCode)
@@ -206,14 +214,17 @@ struct SignInSheet: View {
             }
             .buttonStyle(.borderedProminent).tint(brandFill).clipShape(.capsule)
             .disabled(account.state == .working)
+            }
 
             problemLine
 
-            Button("Send another code") { Task { await account.sendCode(to: to) } }
+            Button(Launch.emailCode ? "Send another code" : "Send another link") {
+                Task { await account.sendCode(to: to) }
+            }
                 .font(.footnote)
             footer
         }
-        .onAppear { focus = .code }
+        .onAppear { if Launch.emailCode { focus = .code } }
     }
 
     // MARK: - done

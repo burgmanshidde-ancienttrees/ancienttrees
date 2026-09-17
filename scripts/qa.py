@@ -689,6 +689,84 @@ def check_walks_go_to_the_app():
     return out
 
 
+def check_one_tree_places_have_no_question_page():
+    """Contract B v1.18 (2026-09-17): a place with one tree publishes no
+    question page, and its old URL keeps resolving.
+
+    Hidde, on the Search Console report of 36 pages crawled and not indexed:
+    "ze verdienen ze niet - maar uiteindelijk komen er meer bomen in grote
+    steden - in afgelegen plekken weghalen." The finding behind it: for a
+    one-tree place, /<city>, /<city>/oldest-tree and the tree's own page were
+    three URLs paraphrasing one tree. Lebec spent 87 words of intro, 139 of
+    question_answer, 193 of question_context and 234 of story on one oak, all
+    of it naming the same grizzly, the same bark and the same entry fee.
+    Google indexed one and filed the others, which is Google reading it
+    correctly. 328 of 609 published places were in that state.
+
+    It is a check rather than a sentence in CLAUDE.md because the rule lives
+    in four route families plus two components plus the redirect map, and
+    nothing a corpus file says can refuse a push that re-links one of them.
+
+    Three things are refused. A built question page for a place under the
+    threshold, in English or in any of the seven languages. A one-tree place
+    whose retired URL does not resolve, which would be hard rule 3 broken by
+    our own hand. And a live link into one, which is how a page comes back by
+    accident; the redirect stubs themselves are exempt, being the mechanism.
+
+    Removing this check needs Hidde."""
+    import json as _json
+    out = []
+    qslugs = {"oldest-tree", "arbol-mas-antiguo", "albero-piu-antico", "oudste-boom",
+              "aeltester-baum", "arvore-mais-antiga", "arbre-le-plus-vieux", "saiko-rei-no-ki"}
+    min_trees = 2
+    root = Path(__file__).resolve().parent.parent
+    small = {}
+    for f in sorted((root / "data" / "cities").glob("*.json")):
+        doc = _json.loads(f.read_text(encoding="utf-8"))
+        n = sum(1 for t in doc.get("trees", [])
+                if t.get("story") and (t.get("location") or {}).get("latitude") is not None
+                and (t.get("location") or {}).get("longitude") is not None)
+        if 0 < n < min_trees:
+            small[f.stem] = n
+    if not small:
+        return out
+
+    def is_stub(html):
+        return "Moved:" in html and 'http-equiv="refresh"' in html.lower()
+
+    live, unresolved = [], []
+    for slug in sorted(small):
+        for q in qslugs:
+            for cand in (DIST / slug / f"{q}.html", DIST / slug / q / "index.html"):
+                if cand.exists() and not is_stub(cand.read_text(encoding="utf-8")):
+                    live.append(str(cand.relative_to(DIST)))
+        if not (DIST / slug / "oldest-tree.html").exists():
+            unresolved.append(f"{slug}/oldest-tree")
+    if live:
+        out.append("%d question page(s) built for a place with fewer than %d trees "
+                   "(Contract B v1.18), e.g. %s"
+                   % (len(live), min_trees, ", ".join(live[:5])))
+    if unresolved:
+        out.append("%d retired question URL(s) no longer resolve, which breaks hard "
+                   "rule 3; redirect-map.ts should emit a stub, e.g. %s"
+                   % (len(unresolved), ", ".join(unresolved[:5])))
+
+    linking = []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        if is_stub(html):
+            continue
+        for slug in small:
+            if re.search(r'href="[^"]*/%s/(?:%s)/?"' % (re.escape(slug), "|".join(map(re.escape, qslugs))), html):
+                linking.append(str(page.relative_to(DIST)))
+                break
+    if linking:
+        out.append("%d page(s) link to a question page of a one-tree place, which "
+                   "Contract B v1.18 retired, e.g. %s"
+                   % (len(linking), ", ".join(linking[:5])))
+    return out
+
+
 def check_no_owner_name():
     """The thirteenth ratchet check, from 2026-08-24.
 
@@ -912,6 +990,52 @@ def check_every_feed_is_in_the_version():
             f"downloads (Kit/Sync.swift). A change to those feeds would be invisible "
             f"to every installed phone: it asks version.json, sees no change, and "
             f"never fetches the file that moved. Hash them into the version."]
+
+
+def check_no_collection_is_empty():
+    """A collection page nobody can see any trees on.
+
+    Four of them shipped that way and stayed that way. A GENERATED collection
+    (the tallest, the thickest, the autumn and the harvest lists) ranks itself
+    at build time and carries an EMPTY entries array in its own file, so every
+    reader other than the collection page itself saw a collection with nothing
+    in it: /collections printed "0 trees, 0 cities" under a placeholder where a
+    photograph belongs, and /api/browse.json dropped them from the app outright
+    on a "has no trees" filter. The pages themselves were fine the whole time,
+    which is why nobody caught it from the pages.
+
+    So the check asks the question a reader asks, of both surfaces at once:
+    does this collection show me any trees. It cannot be answered from the data
+    files, because for half of them the answer is only true after a build."""
+    out = []
+    index = DIST / "collections.html"
+    if not index.exists():
+        return ["collections.html missing from the build"]
+    html = index.read_text(encoding="utf-8")
+    cards = re.findall(r'<a class="exc-card" href="/collections/([^"]+)">(.*?)</a>', html, re.S)
+    if not cards:
+        return ["collections.html lists no collections at all"]
+    for slug, body in cards:
+        m = re.search(r"<span>\s*(\d+) trees", body)
+        if not m:
+            out.append(f"/collections: the {slug} card names no tree count")
+        elif m.group(1) == "0":
+            out.append(f"/collections: the {slug} card says 0 trees; a generated "
+                       f"collection's own file holds an empty entries array, so "
+                       f"read it through collectionEntries()")
+        page = DIST / "collections" / f"{slug}.html"
+        if page.exists() and "tree-card-top" not in page.read_text(encoding="utf-8"):
+            out.append(f"/collections/{slug}: the page renders no tree cards")
+
+    browse_path = DIST / "api" / "browse.json"
+    if browse_path.exists():
+        feed = json.loads(browse_path.read_text(encoding="utf-8"))
+        in_feed = {c.get("slug") for c in feed.get("collections", [])}
+        for slug, _ in cards:
+            if slug not in in_feed:
+                out.append(f"/api/browse.json: {slug} is public on the website and "
+                           f"missing from the app's feed")
+    return out
 
 
 def check_faces_travel_to_the_app():
@@ -1692,6 +1816,8 @@ def main():
     failures += check_no_owner_name()
     failures += check_no_personal_address()
     failures += check_walks_go_to_the_app()
+    failures += check_one_tree_places_have_no_question_page()
+    failures += check_no_collection_is_empty()
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
     failures += check_approved_photos_reach_the_feed()

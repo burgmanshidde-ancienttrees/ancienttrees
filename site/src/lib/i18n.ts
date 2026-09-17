@@ -13,6 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { DATA } from "./data-dir";
 import { BASE_URL } from "./schema";
+import { cityHasQuestionPage } from "./question-page";
 
 export interface TreeTranslation {
   name: string;
@@ -2083,14 +2084,20 @@ export async function allTreePathsFor(lang: string, allCities: any[], renderable
 }
 
 /** Every question page in this language, real then fallback. */
-export async function allQuestionPathsFor(lang: string, allCities: any[]) {
-  const real = await translatedQuestionPaths(lang, allCities);
+export async function allQuestionPathsFor(lang: string, allCities: any[], renderableTrees: any) {
+  const real = await translatedQuestionPaths(lang, allCities, renderableTrees);
   const done = new Set(real.map((r: any) => r.params.city));
+  // main added cityHasQuestionPage while this branch was open: a city only
+  // earns a question page once it has enough trees to answer one. The fallback
+  // half has to honour it too, or an untranslated city would get a question
+  // page its English twin does not have.
   const rest = allCities
     .filter((c) => !done.has(c.id))
+    .filter((c) => cityHasQuestionPage(renderableTrees(c).length))
     .map((city) => ({ params: { city: city.id }, props: { city, tr: fallbackCityTranslation(city), fallback: true } }));
   return [...real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } })), ...rest];
 }
+
 
 interface CityLike { id: string; data: any }
 
@@ -2118,11 +2125,18 @@ export async function translatedTreePaths(lang: string, allCities: any[], render
   return paths;
 }
 
-/** getStaticPaths for a language's question pages. */
-export async function translatedQuestionPaths(lang: string, allCities: any[]) {
-  return translatedCities(lang).map((slug) => {
+/** getStaticPaths for a language's question pages.
+ *
+ * Contract B v1.18 applies in every language: a place with one tree publishes
+ * no question page, here for the same reason as in English. No translated
+ * city was on one tree the day this was written, so this is a guard against a
+ * language overlay outliving the rule rather than a fix for anything live.
+ */
+export async function translatedQuestionPaths(lang: string, allCities: any[], renderableTrees: any) {
+  return translatedCities(lang).flatMap((slug) => {
     const city = allCities.find((c) => c.id === slug);
     if (!city) throw new Error(`data/i18n/${lang}/${slug}.json has no matching English city file`);
-    return { params: { city: slug }, props: { city, tr: cityTranslation(lang, slug)! } };
+    if (!cityHasQuestionPage(renderableTrees(city).length)) return [];
+    return [{ params: { city: slug }, props: { city, tr: cityTranslation(lang, slug)! } }];
   });
 }

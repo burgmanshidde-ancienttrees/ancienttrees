@@ -109,13 +109,26 @@ def links_on(html):
 
 
 def due(watch, limit):
-    """The slice to check this run, least-recently-checked first.
+    """The slice to check this run, least-recently-TRIED first.
 
     Fetching every watched page every morning is both slow and rude to small
     blogs. A rotation covers the whole list within a few days and costs a
     handful of requests a run, which is the right shape for something that
-    changes maybe twice a month."""
-    return sorted(watch, key=lambda w: w.get("checked") or "")[:limit]
+    changes maybe twice a month.
+
+    It sorts on `tried` rather than `checked`, and the two fields exist
+    because two sessions fixed this line in opposite directions and both were
+    right about a different failure (2026-09-10 and 2026-09-17, merged
+    2026-09-17). Stamp a failure into `checked` and the file claims a
+    verification that never happened. Do not stamp it anywhere and a host
+    that refuses us forever sits permanently at the front of the rotation and
+    starves the 13 pages behind it, which is exactly what had happened: 25
+    watched pages all carrying one date, a stable sort, and the same first
+    twelve fetched every morning. So `tried` advances on every attempt and
+    decides the order; `checked` advances only on a fetch that returned a
+    page and is what the table reports. Older records carry no `tried` and
+    fall back to `checked`, so they rotate in first."""
+    return sorted(watch, key=lambda w: w.get("tried") or w.get("checked") or "")[:limit]
 
 
 def check(store, today, limit=12, verbose=True):
@@ -123,26 +136,41 @@ def check(store, today, limit=12, verbose=True):
 
     A page that fails to load is NOT recorded as a lost link: a 503 or a
     timeout is our problem, not theirs, and marking a live link gone on one
-    bad morning would turn this table into noise."""
+    bad morning would turn this table into noise.
+
+    For the same reason a failed fetch does not advance `checked`. That date
+    says when we last READ the page, so stamping it after a 403 would record
+    a verification that never happened. What every attempt does advance is
+    `tried`, which is what `due()` rotates on, so an unreachable host neither
+    claims to have been read nor blocks the rest of the list. See due()."""
     bad = blocked_hosts()
     seen = store.setdefault("seen", {})
     events = []
+    read = 0
+    missed = 0
     for item in due(store.get("watch", []), limit):
         url = item["url"]
-        item["checked"] = today
+        # Every attempt advances `tried`, which is what the rotation sorts on,
+        # whether or not anything was read. `checked` is stamped further down,
+        # only where a page actually came back.
+        item["tried"] = today
         if any(b in url.lower() for b in bad):
+            missed += 1
             if verbose:
                 print("  skipped (blocklist): %s" % url, file=sys.stderr)
             continue
         try:
             html = fetch(url)
         except (urllib.error.URLError, OSError, ValueError) as e:
+            missed += 1
             if verbose:
                 print("  unreachable, left as-is: %s (%s)" % (url, e),
                       file=sys.stderr)
             continue
         finally:
             time.sleep(PAUSE)
+        item["checked"] = today
+        read += 1
 
         hits = links_on(html)
         prev = seen.get(url)
@@ -167,6 +195,8 @@ def check(store, today, limit=12, verbose=True):
             prev["gone_since"] = today
             events.append("GONE: %s no longer links to us" % url)
     store["checked"] = today
+    store["last_run"] = {"date": today, "read": read, "missed": missed,
+                         "watched": len(store.get("watch", []))}
     return events
 
 
@@ -199,6 +229,17 @@ def digest_section(store):
             "table, so these two lines measure different things and neither "
             "replaces the other. Unknown links stay a manual read of Search "
             "Console's Links report." % (n, followed))
+    # Say how many pages were actually READ this morning. Without it, a run
+    # where every fetch failed prints exactly the same table as a run where
+    # every page was read and nothing had changed, and "no new links" would
+    # be indistinguishable from "nobody could look".
+    run = store.get("last_run") or {}
+    if run:
+        note += (" This run read %d of %d fetched (%d unreachable), out of %d "
+                 "watched pages." % (run.get("read", 0),
+                                     run.get("read", 0) + run.get("missed", 0),
+                                     run.get("missed", 0),
+                                     run.get("watched", 0)))
     return "Backlinks (watched pages):\n" + head + note
 
 
