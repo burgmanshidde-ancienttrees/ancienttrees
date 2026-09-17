@@ -298,6 +298,63 @@ export interface UIStrings {
   citiesHeading: string;
   citiesLead: (cities: number, trees: number) => string;
   citiesDescription: string;
+
+  /** The map page, per language. The map is the product (CLAUDE.md, the four
+   * verbs), so it is the second index to exist in every language after the
+   * cities list. The "browse another way" line deliberately names only the
+   * cities index: species, collections and parks have no translated leaf
+   * pages yet, and an index that links into English is the dead end this
+   * whole structure pass exists to remove. */
+  exploreTitle: string;
+  exploreDescription: string;
+  exploreHeading: string;
+  exploreNote: string;
+  exploreWhatH: string;
+  exploreWhatBody: (trees: number, places: number, countries: number) => string;
+  exploreWalksH: string;
+  exploreWalksBody: string;
+  exploreIslandsH: string;
+  exploreIslandsBody: string;
+  exploreNotH: string;
+  exploreNotBody: string;
+  exploreBrowse: string;
+
+  /** The homepage, per language. Scoped deliberately: hero, the value
+   * proposition, the four verbs and the city directory, all of which link
+   * only to pages that exist in the language. The country, species, park and
+   * oldest shelves are left off a translated homepage until their leaf pages
+   * are translated, for the same reason the cities index lists only
+   * translated cities. */
+  homeTitle: string;
+  homeDescription: string;
+  homeHeroLead: string;
+  homeHeroEm: string;
+  homeSub: string;
+  homeFindH: string;
+  homeFindBody: string;
+  homeWalkH: string;
+  homeWalkBody: string;
+  homeCollectH: string;
+  homeCollectBody: string;
+  homeDirectoryH: string;
+  homeMission: string;
+  homeMissionLink: string;
+
+  /** The map's chip row. On the list because check_every_language_gets_the_
+   * same_controls() (qa.py, 2026-09-12) is about CONTROLS rather than prose:
+   * a translated map with an English filter row is the same fault it was
+   * written to catch. */
+  mapFilterGroup: string;
+  mapFilterFav: string;
+  mapFilterMine: string;
+  mapFilterSpecies: string;
+  mapFilterFree: string;
+
+  /** One entry in the tightest-walks list: how many trees and how far apart.
+   * A key rather than bare numbers because dropping the nouns to avoid
+   * translating them turned the English from "6 trees, 300 m apart" into
+   * "6, 300 m", which is not a shorter sentence, it is a worse one. */
+  exploreWalkItem: (trees: number, apart: string) => string;
 }
 
 const EN: UIStrings = {
@@ -443,15 +500,81 @@ const EN: UIStrings = {
   citiesHeading: "Every city we have mapped",
   citiesLead: (c, t) => `${c} cities, ${t} trees, each one researched and verified.`,
   citiesDescription: "Every city on the map, by country: the remarkable old trees of each, verified, with their stories and exact spots.",
+  exploreTitle: "Ancient Tree Map: every remarkable old tree, one map",
+  exploreDescription: "The interactive map of every verified ancient tree on the site, each pin a tree worth standing in front of.",
+  exploreHeading: "The ancient tree map",
+  exploreNote: "Every pin is a tree worth the walk. Find one near you, or somewhere you are going.",
+  exploreWhatH: "What is on this map",
+  exploreWhatBody: (t, p, c) => `${t} trees in ${p} places across ${c} countries, every one checked against at least two independent sources before it went on. Each pin opens a tree with its age, its species, why it is worth standing in front of, and directions from where you are.`,
+  exploreWalksH: "The tightest walks",
+  exploreWalksBody: "A map of scattered pins is a list. What makes an afternoon is trees close enough to walk between, so these are the places where the whole set fits in one stroll:",
+  exploreIslandsH: "Islands",
+  exploreIslandsBody: "An island is a different kind of day. The trees sit a drive apart rather than a walk, and what you get for the distance is a tree that grows nowhere else: dragon trees, laurel forest that outlived the Ice Age, pines that reach heights the mainland never manages.",
+  exploreNotH: "What is not on it, and why",
+  exploreNotBody: "Every pin says how precise it is. A tree marked approximate means we know the park but not the trunk, and the page says so rather than sending you to a spot where the tree is not. Trees on private land are left off entirely, as are trees whose own register hides their position, because the people who protect them have a reason. Nothing here is a bulk street-tree inventory: a tree earns a pin by being remarkable, not by existing.",
+  exploreBrowse: "Browse another way:",
+  homeTitle: "Ancient Trees: remarkable old trees near you, mapped",
+  homeDescription: "Find the remarkable old trees around you. Each one verified, each with its story, its exact spot and directions from where you stand.",
+  homeHeroLead: "Trees worth the walk,",
+  homeHeroEm: "wherever you are.",
+  homeSub: "Made for people who love being outside. Find remarkable old trees nearby, explore a few of them in an afternoon, read the story behind each one, and tick off the trees you visit.",
+  homeFindH: "The trees near you, right now.",
+  homeFindBody: "The map finds the remarkable old trees closest to where you are standing, and points you at the nearest one with a walk time and directions to your phone.",
+  homeWalkH: "A route past the ones worth seeing.",
+  homeWalkBody: "Only the most remarkable, linked into one walk you can do in an afternoon, each with its story and the month it is at its most spectacular, so you know when to go.",
+  homeCollectH: "Tick off the ones you have stood in front of.",
+  homeCollectBody: "Check in at the tree and watch your collection grow: trees, cities, species. Rarer and older trees count for more, and badges for a finished city are on their way.",
+  homeDirectoryH: "Ancient trees anywhere",
+  homeMission: "We are on a mission to map every remarkable tree in the world, and we could use your help. If you know a good tree, or want to map a whole city,",
+  homeMissionLink: "tell us about it",
+  mapFilterGroup: "Filter the map",
+  mapFilterFav: "Favourites",
+  mapFilterMine: "My trees",
+  mapFilterSpecies: "Species",
+  mapFilterFree: "Free to visit",
+  exploreWalkItem: (n, d) => `${n} trees, ${d} apart`,
 };
 
 const TABLE: Record<string, Partial<UIStrings>> = {
   es: {
+    exploreWalkItem: (n, d) => `${n} árboles en ${d}`,
     citiesCrumb: "Ciudades",
     citiesTitle: "Todas las ciudades del mapa",
     citiesHeading: "Todas las ciudades del mapa",
     citiesLead: (c, t) => `${c} ciudades, ${t} árboles, cada uno investigado y verificado.`,
     citiesDescription: "Todas las ciudades del mapa, por país: los árboles viejos y notables de cada una, verificados, con su historia y su sitio exacto.",
+    exploreTitle: "Mapa de árboles históricos del mundo",
+    exploreDescription: "El mapa interactivo de todos los árboles históricos verificados del sitio, cada marcador un árbol ante el que merece la pena plantarse.",
+    exploreHeading: "El mapa de árboles históricos",
+    exploreNote: "Cada marcador es un árbol que merece el paseo. Encuentra uno cerca de ti, o donde vayas a ir.",
+    exploreWhatH: "Qué hay en este mapa",
+    exploreWhatBody: (t, p, c) => `${t} árboles en ${p} lugares de ${c} países, cada uno contrastado con al menos dos fuentes independientes antes de entrar. Cada marcador abre un árbol con su edad, su especie, por qué merece la pena plantarse ante él y cómo llegar desde donde estás.`,
+    exploreWalksH: "Los paseos más compactos",
+    exploreWalksBody: "Un mapa de marcadores dispersos es una lista. Lo que hace una tarde son árboles lo bastante cerca como para ir andando de uno a otro, así que estos son los lugares donde el conjunto entero cabe en un solo paseo:",
+    exploreIslandsH: "Islas",
+    exploreIslandsBody: "Una isla es otro tipo de día. Los árboles están a un trayecto en coche, no a un paseo, y lo que ganas a cambio de la distancia es un árbol que no crece en ningún otro sitio: dragos, laurisilva que sobrevivió a la glaciación, pinos que alcanzan alturas que el continente nunca da.",
+    exploreNotH: "Qué no está, y por qué",
+    exploreNotBody: "Cada marcador dice hasta qué punto es preciso. Un árbol marcado como aproximado significa que conocemos el parque pero no el tronco, y la página lo dice en vez de mandarte a un sitio donde el árbol no está. Los árboles en terreno privado se quedan fuera por completo, igual que aquellos cuyo propio registro oculta su posición, porque quien los protege tiene sus motivos. Esto no es un inventario masivo del arbolado urbano: un árbol se gana su marcador por ser singular, no por existir.",
+    exploreBrowse: "Explora de otra manera:",
+    homeTitle: "Ancient Trees: árboles singulares cerca de ti",
+    homeDescription: "Encuentra los árboles históricos que tienes alrededor. Cada uno verificado, con su historia, su sitio exacto y cómo llegar desde donde estás.",
+    homeHeroLead: "Árboles que merecen el paseo,",
+    homeHeroEm: "estés donde estés.",
+    homeSub: "Hecho para quien disfruta de estar al aire libre. Encuentra árboles singulares cerca, recorre unos cuantos en una tarde, lee la historia de cada uno y ve marcando los que visitas.",
+    homeFindH: "Los árboles que tienes cerca, ahora mismo.",
+    homeFindBody: "El mapa encuentra los árboles históricos más cercanos al sitio donde estás y te señala el más próximo, con el tiempo a pie y las indicaciones en tu móvil.",
+    homeWalkH: "Una ruta que pasa por los que merecen la pena.",
+    homeWalkBody: "Solo los más singulares, enlazados en un paseo que puedes hacer en una tarde, cada uno con su historia y el mes en que está más espectacular, para que sepas cuándo ir.",
+    homeCollectH: "Marca aquellos ante los que te has plantado.",
+    homeCollectBody: "Marca el árbol cuando estés delante y mira crecer tu colección: árboles, ciudades, especies. Los árboles más raros y más viejos cuentan más, y las insignias por completar una ciudad están en camino.",
+    homeDirectoryH: "Árboles históricos en cualquier parte",
+    homeMission: "Estamos cartografiando todos los árboles singulares del mundo, y nos vendría bien tu ayuda. Si conoces un buen árbol, o quieres cartografiar una ciudad entera,",
+    homeMissionLink: "cuéntanoslo",
+    mapFilterGroup: "Filtrar el mapa",
+    mapFilterFav: "Favoritos",
+    mapFilterMine: "Mis árboles",
+    mapFilterSpecies: "Especie",
+    mapFilterFree: "Gratis",
     treeLabels: {
       "Youngest tree": "El más joven",
       "Urban curiosity": "Curiosidad urbana",
@@ -591,11 +714,44 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Verla a tamaño completo",
   },
   it: {
+    exploreWalkItem: (n, d) => `${n} alberi in ${d}`,
     citiesCrumb: "Città",
     citiesTitle: "Tutte le città sulla mappa",
     citiesHeading: "Tutte le città sulla mappa",
     citiesLead: (c, t) => `${c} città, ${t} alberi, ognuno documentato e verificato.`,
     citiesDescription: "Tutte le città sulla mappa, per paese: gli alberi antichi e notevoli di ognuna, verificati, con la loro storia e il punto esatto.",
+    exploreTitle: "Mappa degli alberi monumentali del mondo",
+    exploreDescription: "La mappa interattiva di tutti gli alberi monumentali verificati del sito, ogni segnaposto un albero davanti a cui vale la pena fermarsi.",
+    exploreHeading: "La mappa degli alberi monumentali",
+    exploreNote: "Ogni segnaposto è un albero che vale la camminata. Trovane uno vicino a te, o dove stai andando.",
+    exploreWhatH: "Che cosa c'è su questa mappa",
+    exploreWhatBody: (t, p, c) => `${t} alberi in ${p} luoghi di ${c} paesi, ognuno verificato su almeno due fonti indipendenti prima di finire qui. Ogni segnaposto apre un albero con la sua età, la specie, il motivo per cui vale la pena fermarsi davanti e le indicazioni da dove sei.`,
+    exploreWalksH: "Le passeggiate più compatte",
+    exploreWalksBody: "Una mappa di segnaposti sparsi è un elenco. Quello che fa un pomeriggio sono alberi abbastanza vicini da andare a piedi dall'uno all'altro, quindi questi sono i posti dove l'insieme intero sta in una sola passeggiata:",
+    exploreIslandsH: "Isole",
+    exploreIslandsBody: "Un'isola è una giornata di un altro tipo. Gli alberi distano un tragitto in auto invece di una passeggiata, e in cambio della distanza trovi un albero che non cresce da nessun'altra parte: alberi del drago, laurisilva sopravvissuta all'era glaciale, pini che raggiungono altezze che sulla terraferma non si vedono.",
+    exploreNotH: "Che cosa non c'è, e perché",
+    exploreNotBody: "Ogni segnaposto dice quanto è preciso. Un albero segnato come approssimativo vuol dire che conosciamo il parco ma non il tronco, e la pagina lo scrive invece di mandarti in un punto dove l'albero non c'è. Gli alberi su terreno privato restano fuori del tutto, come quelli di cui il registro stesso nasconde la posizione, perché chi li protegge ha le sue ragioni. Qui non c'è nessun censimento del verde urbano: un albero si guadagna il segnaposto perché è notevole, non perché esiste.",
+    exploreBrowse: "Sfoglia in un altro modo:",
+    homeTitle: "Ancient Trees: alberi monumentali vicino a te",
+    homeDescription: "Trova gli alberi monumentali che hai intorno. Ognuno verificato, con la sua storia, il punto esatto e le indicazioni da dove sei.",
+    homeHeroLead: "Alberi che valgono la camminata,",
+    homeHeroEm: "ovunque tu sia.",
+    homeSub: "Fatto per chi ama stare all'aperto. Trova alberi notevoli lì vicino, guardane qualcuno in un pomeriggio, leggi la storia di ognuno e spunta quelli che visiti.",
+    homeFindH: "Gli alberi vicino a te, adesso.",
+    homeFindBody: "La mappa trova gli alberi monumentali più vicini al punto in cui sei e ti indica il più prossimo, con il tempo a piedi e le indicazioni sul telefono.",
+    homeWalkH: "Un percorso che passa da quelli che valgono.",
+    homeWalkBody: "Solo i più notevoli, uniti in una passeggiata che fai in un pomeriggio, ognuno con la sua storia e il mese in cui dà il meglio, così sai quando andare.",
+    homeCollectH: "Spunta quelli davanti a cui ti sei fermato.",
+    homeCollectBody: "Segna l'albero quando ci sei davanti e guarda crescere la tua collezione: alberi, città, specie. Gli alberi più rari e più vecchi valgono di più, e i distintivi per una città completata stanno arrivando.",
+    homeDirectoryH: "Alberi monumentali ovunque",
+    homeMission: "Stiamo mappando tutti gli alberi notevoli del mondo, e il tuo aiuto ci serve. Se conosci un bell'albero, o vuoi mappare un'intera città,",
+    homeMissionLink: "raccontacelo",
+    mapFilterGroup: "Filtra la mappa",
+    mapFilterFav: "Preferiti",
+    mapFilterMine: "I miei alberi",
+    mapFilterSpecies: "Specie",
+    mapFilterFree: "Gratis",
     treeLabels: {
       "Youngest tree": "Il più giovane",
       "Urban curiosity": "Curiosità urbana",
@@ -735,11 +891,44 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Vedila a dimensione intera",
   },
   nl: {
+    exploreWalkItem: (n, d) => `${n} bomen binnen ${d}`,
     citiesCrumb: "Steden",
     citiesTitle: "Alle steden op de kaart",
     citiesHeading: "Alle steden op de kaart",
     citiesLead: (c, t) => `${c} steden, ${t} bomen, stuk voor stuk uitgezocht en geverifieerd.`,
     citiesDescription: "Alle steden op de kaart, per land: de oude en bijzondere bomen van elke stad, geverifieerd, met hun verhaal en de precieze plek.",
+    exploreTitle: "Kaart met monumentale bomen wereldwijd",
+    exploreDescription: "De interactieve kaart van alle geverifieerde monumentale bomen op de site, elke speld een boom om voor te gaan staan.",
+    exploreHeading: "De kaart met monumentale bomen",
+    exploreNote: "Elke speld is een boom die de wandeling waard is. Zoek er een bij jou in de buurt, of op de plek waar je heen gaat.",
+    exploreWhatH: "Wat er op deze kaart staat",
+    exploreWhatBody: (t, p, c) => `${t} bomen op ${p} plekken in ${c} landen, stuk voor stuk nagetrokken bij minstens twee onafhankelijke bronnen voordat ze erop kwamen. Elke speld opent een boom met zijn leeftijd, zijn soort, waarom hij het waard is om voor te gaan staan, en de route vanaf waar je nu bent.`,
+    exploreWalksH: "De kortste wandelingen",
+    exploreWalksBody: "Een kaart met verspreide spelden is een lijst. Wat een middag maakt, zijn bomen die dicht genoeg bij elkaar staan om ertussen te lopen, dus dit zijn de plekken waar de hele reeks in één wandeling past:",
+    exploreIslandsH: "Eilanden",
+    exploreIslandsBody: "Een eiland is een ander soort dag. De bomen liggen een autorit uit elkaar in plaats van een wandeling, en wat je voor die afstand terugkrijgt is een boom die nergens anders groeit: drakenbloedbomen, laurierbos dat de ijstijd overleefde, dennen die hoogtes halen die het vasteland nooit haalt.",
+    exploreNotH: "Wat er niet op staat, en waarom",
+    exploreNotBody: "Bij elke speld staat hoe precies hij is. Een boom die bij benadering staat aangegeven, betekent dat we het park kennen maar niet de stam, en de pagina zegt dat, in plaats van je naar een plek te sturen waar de boom niet staat. Bomen op privéterrein blijven er helemaal af, net als bomen waarvan het register zelf de positie verbergt, want wie ze beschermt heeft daar een reden voor. Dit is geen complete inventarisatie van het straatgroen: een boom verdient zijn speld doordat hij bijzonder is, niet doordat hij bestaat.",
+    exploreBrowse: "Blader op een andere manier:",
+    homeTitle: "Ancient Trees: bijzondere oude bomen bij jou in de buurt",
+    homeDescription: "Vind de bijzondere oude bomen om je heen. Stuk voor stuk geverifieerd, met hun verhaal, de precieze plek en de route vanaf waar je staat.",
+    homeHeroLead: "Bomen die de wandeling waard zijn,",
+    homeHeroEm: "waar je ook bent.",
+    homeSub: "Gemaakt voor wie graag buiten is. Vind bijzondere oude bomen in de buurt, loop er een paar langs in één middag, lees het verhaal achter elke boom en vink de bomen af die je ziet.",
+    homeFindH: "De bomen bij jou in de buurt, nu.",
+    homeFindBody: "De kaart zoekt de bijzondere oude bomen die het dichtst bij je staan en wijst je de dichtstbijzijnde aan, met looptijd en de route op je telefoon.",
+    homeWalkH: "Een route langs de bomen die het waard zijn.",
+    homeWalkBody: "Alleen de bijzonderste, aan elkaar geregen tot één wandeling die je in een middag doet, elk met zijn verhaal en de maand waarin hij op zijn mooist is, zodat je weet wanneer je moet gaan.",
+    homeCollectH: "Vink de bomen af waar je voor hebt gestaan.",
+    homeCollectBody: "Vink de boom af terwijl je ervoor staat en zie je verzameling groeien: bomen, steden, soorten. Zeldzamere en oudere bomen tellen zwaarder, en badges voor een voltooide stad komen eraan.",
+    homeDirectoryH: "Monumentale bomen overal",
+    homeMission: "We brengen alle bijzondere bomen ter wereld in kaart, en we kunnen je hulp gebruiken. Ken je een mooie boom, of wil je een hele stad in kaart brengen,",
+    homeMissionLink: "laat het ons weten",
+    mapFilterGroup: "Kaart filteren",
+    mapFilterFav: "Favorieten",
+    mapFilterMine: "Mijn bomen",
+    mapFilterSpecies: "Soort",
+    mapFilterFree: "Gratis",
     treeLabels: {
       "Youngest tree": "Jongste boom",
       "Urban curiosity": "Stadscuriositeit",
@@ -879,11 +1068,44 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Bekijk hem op volledige grootte",
   },
   de: {
+    exploreWalkItem: (n, d) => `${n} Bäume auf ${d}`,
     citiesCrumb: "Städte",
     citiesTitle: "Alle Städte auf der Karte",
     citiesHeading: "Alle Städte auf der Karte",
     citiesLead: (c, t) => `${c} Städte, ${t} Bäume, jeder einzeln recherchiert und geprüft.`,
     citiesDescription: "Alle Städte auf der Karte, nach Land: die alten und bemerkenswerten Bäume jeder Stadt, geprüft, mit ihrer Geschichte und dem genauen Standort.",
+    exploreTitle: "Karte alter Bäume weltweit",
+    exploreDescription: "Die interaktive Karte aller geprüften alten Bäume auf dieser Seite, jede Markierung ein Baum, vor dem es sich zu stehen lohnt.",
+    exploreHeading: "Die Karte der alten Bäume",
+    exploreNote: "Jede Markierung ist ein Baum, der den Weg lohnt. Finden Sie einen in Ihrer Nähe, oder dort, wo Sie hinfahren.",
+    exploreWhatH: "Was auf dieser Karte steht",
+    exploreWhatBody: (t, p, c) => `${t} Bäume an ${p} Orten in ${c} Ländern, jeder einzelne an mindestens zwei unabhängigen Quellen geprüft, bevor er auf die Karte kam. Jede Markierung öffnet einen Baum mit seinem Alter, seiner Art, dem Grund, warum es sich lohnt, vor ihm zu stehen, und der Route von Ihrem Standort aus.`,
+    exploreWalksH: "Die kürzesten Runden",
+    exploreWalksBody: "Eine Karte mit verstreuten Markierungen ist eine Liste. Einen Nachmittag machen Bäume, die nah genug beieinander stehen, um zu Fuß von einem zum nächsten zu gehen, und das sind die Orte, an denen die ganze Reihe in einen Spaziergang passt:",
+    exploreIslandsH: "Inseln",
+    exploreIslandsBody: "Eine Insel ist ein Tag anderer Art. Die Bäume liegen eine Autofahrt statt eines Spaziergangs auseinander, und für die Strecke bekommen Sie einen Baum, der sonst nirgends wächst: Drachenbäume, Lorbeerwald, der die Eiszeit überdauert hat, Kiefern in Höhen, die das Festland nie erreicht.",
+    exploreNotH: "Was nicht darauf steht, und warum",
+    exploreNotBody: "Jede Markierung sagt, wie genau sie ist. Ein Baum, der als ungefähr gekennzeichnet ist, heißt: Wir kennen den Park, aber nicht den Stamm. Die Seite schreibt das, statt Sie an eine Stelle zu schicken, an der der Baum nicht steht. Bäume auf Privatgelände bleiben ganz außen vor, ebenso Bäume, deren eigenes Register die Position verbirgt, denn wer sie schützt, hat einen Grund dafür. Das hier ist kein Straßenbaumkataster: Ein Baum bekommt seine Markierung, weil er bemerkenswert ist, nicht weil er existiert.",
+    exploreBrowse: "Anders stöbern:",
+    homeTitle: "Ancient Trees: bemerkenswerte alte Bäume in Ihrer Nähe",
+    homeDescription: "Finden Sie die bemerkenswerten alten Bäume um Sie herum. Jeder geprüft, mit seiner Geschichte, seinem genauen Standort und der Route von Ihnen aus.",
+    homeHeroLead: "Bäume, die den Weg lohnen,",
+    homeHeroEm: "wo Sie auch sind.",
+    homeSub: "Für alle, die gern draußen sind. Finden Sie bemerkenswerte alte Bäume in der Nähe, sehen Sie sich an einem Nachmittag ein paar davon an, lesen Sie die Geschichte hinter jedem und haken Sie die ab, die Sie besuchen.",
+    homeFindH: "Die Bäume in Ihrer Nähe, gerade jetzt.",
+    homeFindBody: "Die Karte findet die bemerkenswerten alten Bäume, die Ihrem Standort am nächsten stehen, und zeigt Ihnen den nächstgelegenen, mit Gehzeit und Route aufs Telefon.",
+    homeWalkH: "Eine Route an den sehenswerten vorbei.",
+    homeWalkBody: "Nur die bemerkenswertesten, zu einem Spaziergang verbunden, den Sie an einem Nachmittag schaffen, jeder mit seiner Geschichte und dem Monat, in dem er am schönsten ist, damit Sie wissen, wann Sie hingehen.",
+    homeCollectH: "Haken Sie die ab, vor denen Sie gestanden haben.",
+    homeCollectBody: "Haken Sie den Baum vor Ort ab und sehen Sie Ihre Sammlung wachsen: Bäume, Städte, Arten. Seltenere und ältere Bäume zählen mehr, und Abzeichen für eine vollständige Stadt kommen bald.",
+    homeDirectoryH: "Alte Bäume überall",
+    homeMission: "Wir kartieren alle bemerkenswerten Bäume der Welt, und wir können Ihre Hilfe gebrauchen. Wenn Sie einen guten Baum kennen oder eine ganze Stadt kartieren wollen,",
+    homeMissionLink: "sagen Sie es uns",
+    mapFilterGroup: "Karte filtern",
+    mapFilterFav: "Favoriten",
+    mapFilterMine: "Meine Bäume",
+    mapFilterSpecies: "Art",
+    mapFilterFree: "Kostenlos",
     treeLabels: {
       "Youngest tree": "Jüngster Baum",
       "Urban curiosity": "Stadtkuriosität",
@@ -1023,11 +1245,44 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "In voller Größe ansehen",
   },
   pt: {
+    exploreWalkItem: (n, d) => `${n} árvores em ${d}`,
     citiesCrumb: "Cidades",
     citiesTitle: "Todas as cidades do mapa",
     citiesHeading: "Todas as cidades do mapa",
     citiesLead: (c, t) => `${c} cidades, ${t} árvores, cada uma investigada e verificada.`,
     citiesDescription: "Todas as cidades do mapa, por país: as árvores velhas e notáveis de cada uma, verificadas, com a sua história e o sítio exacto.",
+    exploreTitle: "Mapa de árvores antigas de todo o mundo",
+    exploreDescription: "O mapa interativo de todas as árvores antigas verificadas do site, cada marcador uma árvore diante da qual vale a pena estar.",
+    exploreHeading: "O mapa das árvores antigas",
+    exploreNote: "Cada marcador é uma árvore que vale a caminhada. Encontre uma perto de si, ou no sítio para onde vai.",
+    exploreWhatH: "O que está neste mapa",
+    exploreWhatBody: (t, p, c) => `${t} árvores em ${p} lugares de ${c} países, cada uma confirmada em pelo menos duas fontes independentes antes de entrar. Cada marcador abre uma árvore com a idade, a espécie, a razão por que vale a pena estar diante dela e o caminho a partir de onde está.`,
+    exploreWalksH: "Os percursos mais curtos",
+    exploreWalksBody: "Um mapa de marcadores dispersos é uma lista. O que faz uma tarde são árvores suficientemente perto umas das outras para ir a pé entre elas, por isso estes são os sítios onde o conjunto todo cabe num só passeio:",
+    exploreIslandsH: "Ilhas",
+    exploreIslandsBody: "Uma ilha é um dia de outro tipo. As árvores ficam a uma viagem de carro e não a um passeio, e o que ganha pela distância é uma árvore que não cresce em mais lado nenhum: dragoeiros, laurissilva que sobreviveu à era glaciar, pinheiros que atingem alturas que o continente nunca dá.",
+    exploreNotH: "O que não está, e porquê",
+    exploreNotBody: "Cada marcador diz o quão preciso é. Uma árvore marcada como aproximada quer dizer que conhecemos o parque mas não o tronco, e a página di-lo em vez de o mandar para um sítio onde a árvore não está. As árvores em terreno privado ficam de fora por completo, tal como aquelas cujo próprio registo esconde a posição, porque quem as protege tem uma razão. Isto não é um inventário do arvoredo das ruas: uma árvore ganha o seu marcador por ser notável, não por existir.",
+    exploreBrowse: "Explore de outra maneira:",
+    homeTitle: "Ancient Trees: árvores notáveis perto de si, no mapa",
+    homeDescription: "Encontre as árvores antigas à sua volta. Cada uma verificada, com a sua história, o sítio exacto e o caminho a partir de onde está.",
+    homeHeroLead: "Árvores que valem a caminhada,",
+    homeHeroEm: "esteja onde estiver.",
+    homeSub: "Feito para quem gosta de estar lá fora. Encontre árvores notáveis por perto, veja algumas numa tarde, leia a história de cada uma e vá marcando as que visita.",
+    homeFindH: "As árvores perto de si, agora.",
+    homeFindBody: "O mapa encontra as árvores antigas mais próximas do sítio onde está e aponta-lhe a mais perto, com o tempo a pé e o caminho no telemóvel.",
+    homeWalkH: "Um percurso pelas que valem a visita.",
+    homeWalkBody: "Só as mais notáveis, ligadas num passeio que faz numa tarde, cada uma com a sua história e o mês em que está no seu melhor, para saber quando ir.",
+    homeCollectH: "Marque aquelas diante das quais já esteve.",
+    homeCollectBody: "Marque a árvore quando estiver diante dela e veja a sua coleção crescer: árvores, cidades, espécies. As árvores mais raras e mais velhas contam mais, e os distintivos por uma cidade completa estão a caminho.",
+    homeDirectoryH: "Árvores antigas em qualquer lado",
+    homeMission: "Estamos a mapear todas as árvores notáveis do mundo, e a sua ajuda seria bem-vinda. Se conhece uma boa árvore, ou quer mapear uma cidade inteira,",
+    homeMissionLink: "diga-nos",
+    mapFilterGroup: "Filtrar o mapa",
+    mapFilterFav: "Favoritas",
+    mapFilterMine: "As minhas árvores",
+    mapFilterSpecies: "Espécie",
+    mapFilterFree: "Grátis",
     treeLabels: {
       "Youngest tree": "A mais nova",
       "Urban curiosity": "Curiosidade urbana",
@@ -1167,11 +1422,44 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Ver em tamanho real",
   },
   fr: {
+    exploreWalkItem: (n, d) => `${n} arbres sur ${d}`,
     citiesCrumb: "Villes",
     citiesTitle: "Toutes les villes de la carte",
     citiesHeading: "Toutes les villes de la carte",
     citiesLead: (c, t) => `${c} villes, ${t} arbres, chacun recherché et vérifié.`,
     citiesDescription: "Toutes les villes de la carte, par pays : les arbres anciens et remarquables de chacune, vérifiés, avec leur histoire et leur emplacement exact.",
+    exploreTitle: "Carte des arbres remarquables du monde",
+    exploreDescription: "La carte interactive de tous les arbres remarquables vérifiés du site, chaque point un arbre devant lequel il vaut la peine de s'arrêter.",
+    exploreHeading: "La carte des arbres remarquables",
+    exploreNote: "Chaque point est un arbre qui vaut le déplacement. Trouvez-en un près de vous, ou là où vous allez.",
+    exploreWhatH: "Ce qu'il y a sur cette carte",
+    exploreWhatBody: (t, p, c) => `${t} arbres dans ${p} lieux répartis sur ${c} pays, chacun recoupé avec au moins deux sources indépendantes avant d'y figurer. Chaque point ouvre un arbre avec son âge, son espèce, la raison pour laquelle il vaut le détour et l'itinéraire depuis l'endroit où vous êtes.`,
+    exploreWalksH: "Les parcours les plus courts",
+    exploreWalksBody: "Une carte de points éparpillés est une liste. Ce qui fait un après-midi, ce sont des arbres assez proches pour aller de l'un à l'autre à pied, et voici donc les endroits où l'ensemble tient dans une seule promenade :",
+    exploreIslandsH: "Îles",
+    exploreIslandsBody: "Une île, c'est une journée d'un autre genre. Les arbres sont séparés par une route plutôt que par une promenade, et ce que la distance vous rend, c'est un arbre qui ne pousse nulle part ailleurs : dragonniers, forêt de lauriers qui a survécu à la glaciation, pins qui atteignent des hauteurs que le continent n'atteint jamais.",
+    exploreNotH: "Ce qui n'y est pas, et pourquoi",
+    exploreNotBody: "Chaque point indique sa précision. Un arbre marqué approximatif veut dire que nous connaissons le parc mais pas le tronc, et la page le dit au lieu de vous envoyer à un endroit où l'arbre n'est pas. Les arbres sur terrain privé sont entièrement laissés de côté, comme ceux dont le registre lui-même cache la position, parce que ceux qui les protègent ont leurs raisons. Ceci n'est pas un inventaire des arbres de rue : un arbre gagne son point parce qu'il est remarquable, pas parce qu'il existe.",
+    exploreBrowse: "Parcourir autrement :",
+    homeTitle: "Ancient Trees : arbres remarquables près de vous",
+    homeDescription: "Trouvez les vieux arbres remarquables autour de vous. Chacun vérifié, avec son histoire, son emplacement exact et l'itinéraire depuis où vous êtes.",
+    homeHeroLead: "Des arbres qui valent le détour,",
+    homeHeroEm: "où que vous soyez.",
+    homeSub: "Fait pour ceux qui aiment être dehors. Trouvez des arbres remarquables à côté, allez en voir quelques-uns en un après-midi, lisez l'histoire de chacun et cochez ceux que vous visitez.",
+    homeFindH: "Les arbres près de vous, tout de suite.",
+    homeFindBody: "La carte trouve les vieux arbres remarquables les plus proches de l'endroit où vous vous tenez et vous indique le plus proche, avec le temps de marche et l'itinéraire sur votre téléphone.",
+    homeWalkH: "Un parcours qui passe par ceux qui comptent.",
+    homeWalkBody: "Seulement les plus remarquables, reliés en une promenade que vous faites en un après-midi, chacun avec son histoire et le mois où il est au mieux, pour savoir quand y aller.",
+    homeCollectH: "Cochez ceux devant lesquels vous vous êtes tenu.",
+    homeCollectBody: "Cochez l'arbre une fois sur place et regardez votre collection grandir : arbres, villes, espèces. Les arbres plus rares et plus vieux comptent davantage, et les badges pour une ville terminée arrivent bientôt.",
+    homeDirectoryH: "Des arbres remarquables partout",
+    homeMission: "Nous cartographions tous les arbres remarquables du monde, et votre aide nous serait utile. Si vous connaissez un bel arbre, ou si vous voulez cartographier une ville entière,",
+    homeMissionLink: "dites-le-nous",
+    mapFilterGroup: "Filtrer la carte",
+    mapFilterFav: "Favoris",
+    mapFilterMine: "Mes arbres",
+    mapFilterSpecies: "Espèce",
+    mapFilterFree: "Gratuit",
     treeLabels: {
       "Youngest tree": "Le plus jeune",
       "Urban curiosity": "Curiosité urbaine",
@@ -1311,11 +1599,44 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "La voir en taille réelle",
   },
   ja: {
+    exploreWalkItem: (n, d) => `${n}本、${d}以内`,
     citiesCrumb: "都市一覧",
     citiesTitle: "地図に載せたすべての都市",
     citiesHeading: "地図に載せたすべての都市",
     citiesLead: (c, t) => `${c}都市、${t}本。いずれも調べ、裏づけを取っています。`,
     citiesDescription: "地図に載せたすべての都市を国別に。各都市の古木と名木を、裏づけを取ったうえで、その由来と正確な場所とともに紹介します。",
+    exploreTitle: "古木の地図：見に行く価値のある木を一枚の地図に",
+    exploreDescription: "裏づけを取った古木と名木をすべて載せた地図です。ピンの一つひとつが、足を運んで見上げる価値のある木です。",
+    exploreHeading: "古木の地図",
+    exploreNote: "どのピンも、歩いて見に行く価値のある木です。近くの一本も、これから行く街の一本も探せます。",
+    exploreWhatH: "この地図に載っているもの",
+    exploreWhatBody: (t, p, c) => `${c}か国${p}か所の${t}本。どれも載せる前に、独立した二つ以上の資料で確認しています。ピンを開くと、その木の樹齢、樹種、見に行く価値のある理由、そして現在地からの行き方が出ます。`,
+    exploreWalksH: "まとめて歩ける場所",
+    exploreWalksBody: "ピンが散らばった地図は、ただの一覧です。午後の散歩になるのは、木と木が歩いて回れる距離にあるとき。全部を一度の散歩で回れるのは、次の場所です：",
+    exploreIslandsH: "島",
+    exploreIslandsBody: "島は、また別の一日です。木と木のあいだは歩きではなく車の距離になりますが、その分、ほかでは育たない木に会えます。竜血樹、氷河期を生き延びた照葉樹の森、本土では届かない高さまで伸びる松。",
+    exploreNotH: "載せていないもの、その理由",
+    exploreNotBody: "ピンにはどのくらい正確かを書いています。「おおよそ」の木は、公園までは分かっていて幹までは特定できていないという意味で、木のない場所へ送る代わりに、そう書いています。私有地の木は載せません。登録簿そのものが位置を伏せている木も同じで、守っている人たちには理由があります。ここは街路樹の全数調査ではありません。ピンがつくのは、その木が特別だからで、存在するからではありません。",
+    exploreBrowse: "別の探し方：",
+    homeTitle: "Ancient Trees：近くの古木と名木を地図で",
+    homeDescription: "身のまわりにある古木と名木を探せます。どれも裏づけを取り、由来、正確な場所、いまいる場所からの行き方をつけています。",
+    homeHeroLead: "どこにいても、",
+    homeHeroEm: "歩いて会いに行く価値のある木を。",
+    homeSub: "外を歩くのが好きな人のためにつくりました。近くの古木や名木を見つけ、午後のうちに何本かを回り、それぞれの由来を読み、訪れた木をチェックしていけます。",
+    homeFindH: "いまいる場所のすぐ近くの木。",
+    homeFindBody: "地図が、いま立っている場所にいちばん近い古木や名木を探して、最寄りの一本を示します。徒歩の所要時間と、そこまでの道順が手元に出ます。",
+    homeWalkH: "見る価値のある木をつないだ道。",
+    homeWalkBody: "選び抜いた木だけを、午後のうちに歩ける一本の散歩道につないでいます。それぞれに由来と、いちばん見ごろになる月をつけているので、行く時期も決められます。",
+    homeCollectH: "前に立った木をチェックする。",
+    homeCollectBody: "木の前に立ったらチェックを入れて、集まっていくのを眺めてください。木、街、樹種。珍しい木や古い木ほど重く数え、街を一つ回りきったときのバッジも近く出ます。",
+    homeDirectoryH: "世界中の古木",
+    homeMission: "世界中の名木を地図にしていきます。力を貸してもらえると助かります。いい木を知っている方、街ごと地図にしたい方は、",
+    homeMissionLink: "お知らせください",
+    mapFilterGroup: "地図をしぼり込む",
+    mapFilterFav: "お気に入り",
+    mapFilterMine: "訪れた木",
+    mapFilterSpecies: "樹種",
+    mapFilterFree: "無料",
     treeLabels: {
       "Youngest tree": "最も若い木",
       "Urban curiosity": "街の変わり種",

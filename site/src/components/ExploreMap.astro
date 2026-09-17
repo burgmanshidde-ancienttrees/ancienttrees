@@ -1,0 +1,229 @@
+---
+// One map, every tree (PRODUCT_IA follow-up, 2026-07-28). Ported from
+// build_explore_page(), build_site.py:4505-4813. GeoJSON circle layers with
+// native clustering: fast at 341 trees and at 3,000. Trees whose best_time
+// includes the build month render gold, the season made visible. The nav
+// item "Map" points here; the homepage hero stays the front door.
+//
+// The register layer (CLAUDE.md, approved 2026-07-29/30) renders as a
+// second, visually quieter source: small hollow grey dots, no clustering,
+// no link out since these carry no own page - see registers.ts and
+// assets/registers.json.ts, fetched client-side rather than inlined here.
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import { cityIsRenderable, slugify, distSpan, type CityEntry } from "../lib/trees";
+import { speciesCommon } from "../lib/species";
+import { cityFace, cityFaceSrcset } from "../lib/images";
+import { mapHead, exploreMapScript, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
+import { haversineKm } from "../lib/walks";
+import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
+import { BASE_URL } from "../lib/schema";
+import { byCityListOrderEntry } from "../lib/city-order";
+import { ui, translatedCities, cityTranslation, hreflangSet, translatedLanguages } from "../lib/i18n";
+import SignInModal from "./SignInModal.astro";
+import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
+import { SIGNIN_JS } from "../lib/signin-js";
+// My trees filters on the account's visited list, which this page did not
+// read until the chip row existed (2026-09-12).
+import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
+import { SHEET_JS } from "../lib/sheet-js";
+
+interface Props { lang?: string }
+const { lang = "en" } = Astro.props;
+const U = ui(lang);
+/** A link that stays in the reader's language where a translated page exists,
+ * and falls back to English where it does not. The cities index exists in
+ * every language; species, collections and parks do not yet. */
+const mine = lang === "en" ? null : new Set(translatedCities(lang));
+const cityHref = (slug: string) =>
+  mine && mine.has(slug) ? `/${lang}/${slug}` : `/${slug}`;
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+// city-list.json order before any of the three stable sorts below (city
+// rows by rank/count, tightest-walks by spread): main() always walks
+// `renderable` in that order first (build_site.py:5721-5726).
+const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
+
+const month = new Date().getMonth() + 1;
+const features: ExploreTreeFeature[] = [];
+// The species list the chip row picks from, and an index per tree. An index
+// rather than the name on every feature, because 3,055 copies of a dozen
+// common names is 45KB of the same words; the list ships once beside them.
+// Ordered by how many trees carry it, which is the only order that helps:
+// 521 species exist and twelve of them cover a third of the map.
+const speciesCount = new Map<string, number>();
+for (const entry of allCities) {
+  for (const t of entry.data.trees) {
+    const s = speciesCommon(t);
+    if (s) speciesCount.set(s, (speciesCount.get(s) ?? 0) + 1);
+  }
+}
+const speciesList = [...speciesCount.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  .map(([name]) => name);
+const speciesIndex = new Map(speciesList.map((s, i) => [s, i]));
+
+for (const entry of allCities) {
+  const cslug = entry.id;
+  for (const t of entry.data.trees) {
+    const loc = t.location;
+    const sp = speciesIndex.get(speciesCommon(t));
+    features.push({
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [loc.longitude ?? null, loc.latitude ?? null] },
+      properties: {
+        id: t.id,
+        name: t.name,
+        url: `${cslug}/${slugify(t.name)}`,
+        cs: cslug,
+        city: entry.data.city,
+        age: t.age_estimate ?? "",
+        now: 0 as 0 | 1,
+        ...(t.paid_entry ? { paid: 1 as 1 } : {}),
+        ...(sp === undefined ? {} : { sp }),
+      },
+    });
+  }
+}
+
+// The panel's city cards need a face and a rank: hero photo per the Cadiz
+// standard where set, favourites first (the homepage list), then tree
+// count. No counts in the page copy itself (Hidde, 2026-07-29): "je moet
+// nadenken dat alles wat je maakt ooit gaat bestaan uit miljoenen bomen."
+const FAVES = ["lisbon", "cadiz", "porto", "amsterdam", "kyoto", "rome", "palermo", "paris", "london", "barcelona"];
+const cityRows: ExploreCityRow[] = allCities
+  .filter((e) => e.data.trees.length > 0)
+  .map((e) => {
+    const trees = e.data.trees;
+    return {
+      city: e.data.city,
+      url: e.id,
+      country: e.data.country,
+      n: trees.length,
+      lat: trees.reduce((s, t) => s + (t.location.latitude ?? 0), 0) / trees.length,
+      lng: trees.reduce((s, t) => s + (t.location.longitude ?? 0), 0) / trees.length,
+      ph: cityFace(e.data, 172),
+      ph2: cityFaceSrcset(e.data, 86)?.srcset ?? null,
+      rank: FAVES.includes(e.id) ? FAVES.indexOf(e.id) : 99,
+    };
+  })
+  .sort((a, b) => a.rank - b.rank || b.n - a.n);
+
+// Islands, added 2026-08-17 with Tenerife, the first one (Hidde: "lijkt me ook
+// wel leuk om een eiland sectie in explore te hebben"). They are ordinary
+// places in the one queue and ship under the existing contracts; what earns
+// them their own line here is the thing a reader feels immediately, which is
+// that an island's trees are a drive apart rather than a walk, and that the
+// competition for writing about them in English is close to nothing.
+// The section renders ONLY when islands exist, so it can never be an empty
+// promise; today that is one place.
+const islandRows = allCities
+  .filter((e) => e.data.kind === "island" && e.data.trees.length > 0)
+  .map((e) => ({ slug: e.id, city: e.data.city, n: e.data.trees.length }))
+  .sort((a, b) => b.n - a.n);
+const islandsHtml = islandRows
+  .map((r) => `<a href="/${r.slug}">${r.city}</a> (${r.n})`)
+  .join(", ");
+const treeTotal = cityRows.reduce((s, r) => s + r.n, 0);
+const countries = [...new Set(allCities.filter((e) => e.data.trees.length > 0).map((e) => e.data.country))].sort((a, b) =>
+  a.localeCompare(b),
+);
+
+const tightest = allCities
+  .filter((e) => e.data.trees.length >= 5)
+  .map((e) => {
+    const trees = e.data.trees;
+    let spread = 0;
+    for (const a of trees) {
+      for (const b of trees) {
+        const d = haversineKm(
+          [a.location.latitude ?? 0, a.location.longitude ?? 0],
+          [b.location.latitude ?? 0, b.location.longitude ?? 0],
+        );
+        if (d > spread) spread = d;
+      }
+    }
+    return { city: e.data.city, slug: e.id, n: trees.length, spread };
+  })
+  .sort((a, b) => a.spread - b.spread)
+  .slice(0, 6);
+
+const cityLabel = (c: { city: string; slug: string }) =>
+  (lang !== "en" && cityTranslation(lang, c.slug)?.city) || c.city;
+
+const walksHtml = tightest
+  .map((c) =>
+    c.spread < 1
+      ? `<a href="${cityHref(c.slug)}">${esc(cityLabel(c))}</a> (${esc(U.exploreWalkItem(c.n, `${Math.round(c.spread * 1000)} m`))})`
+      : `<a href="${cityHref(c.slug)}">${esc(cityLabel(c))}</a> (${esc(U.exploreWalkItem(c.n, distSpan(c.spread)))})`,
+  )
+  .join(", ");
+
+const exploreProse = `
+  <section class="explore-prose">
+    <h2>${esc(U.exploreWhatH)}</h2>
+    <p>${esc(U.exploreWhatBody(treeTotal, cityRows.length, countries.length))}</p>
+    <h2>${esc(U.exploreWalksH)}</h2>
+    <p>${esc(U.exploreWalksBody)} ${walksHtml}.</p>
+    ${islandRows.length ? `<h2 id="islands">${esc(U.exploreIslandsH)}</h2>
+    <p>${esc(U.exploreIslandsBody)} ${islandsHtml}.</p>` : ``}
+    <h2>${esc(U.exploreNotH)}</h2>
+    <p>${esc(U.exploreNotBody)}</p>
+    <p class="explore-prose-more">${esc(U.exploreBrowse)} <a href="${lang === "en" ? "/cities" : `/${lang}/cities`}">${esc(U.citiesCrumb)}</a>${lang === "en" ? `,
+    <a href="/species">by species</a>, <a href="/collections">curated collections</a>, or
+    <a href="/parks">parks and gardens</a>` : ``}.</p>
+  </section>`;
+
+const canonical = lang === "en" ? `${BASE_URL}/explore` : `${BASE_URL}/${lang}/explore`;
+const title = U.exploreTitle;
+const description = U.exploreDescription;
+const exploreVariants: Record<string, string> = { en: "/explore" };
+for (const l of translatedLanguages()) exploreVariants[l] = `/${l}/explore`;
+
+const searchFormHtml = searchForm("explore", "ex-q", "ex-search");
+const mapScript = exploreMapScript(features, cityRows, speciesList);
+const scripts = mapScript + SEARCH_WIDGET_JS;
+---
+<Base title={title} description={description} canonical={canonical} lang={lang} headExtra={mapHead() + hreflangSet("/explore", exploreVariants)} footer={false}>
+  <div class="split">
+    <aside class="panel" id="sheet">
+      <div class="sheet-grab">
+        <div class="panel-head">
+          <h1>{U.exploreHeading}</h1>
+          <p class="sheet-note">{U.exploreNote}</p>
+          <Fragment set:html={searchFormHtml} />
+        </div>
+      </div>
+      <div class="sheet-body">
+        <div id="ex-panel" aria-live="polite"></div>
+        <div class="panel-foot">
+          <Fragment set:html={exploreProse} />
+        </div>
+      </div>
+    </aside>
+    <div class="stage">
+      {/* The chip row, over the map, the way Google Maps and our own app both
+          draw one. Four, because four is what the app's row carries today and
+          a row of eight is a Filters sheet wearing the wrong clothes. */}
+      <div class="map-filters" role="group" aria-label={U.mapFilterGroup}>
+        <button type="button" class="mf" data-f="fav" aria-pressed="false">{U.mapFilterFav}</button>
+        <button type="button" class="mf" data-f="mine" aria-pressed="false">{U.mapFilterMine}</button>
+        <select class="mf mf-select" id="mf-species" aria-label={U.mapFilterSpecies}>
+          <option value="">{U.mapFilterSpecies}</option>
+          {speciesList.map((s, i) => <option value={i}>{s}</option>)}
+        </select>
+        {/* Last, on Hidde's word (2026-09-12: "zet free to visit maar als
+            laatst"). It leaves the row in the app's own order, Favourites,
+            My trees, Species, with ours after it rather than in front of it. */}
+        <button type="button" class="mf" data-f="free" aria-pressed="false">{U.mapFilterFree}</button>
+        <span class="mf-count" id="mf-count" hidden></span>
+      </div>
+      <div id="map" class="map"></div>
+    </div>
+  </div>
+  <SignInModal />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS + scripts + SHEET_JS} />
+</Base>
