@@ -1,6 +1,56 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - The homepage duplication was fixed five days ago and never merged
+
+Hidde, with a screenshot of the homepage: "wat ik niet helemaal begrijp is dat
+er nog steeds een dubbele missie op home staat terwijl we het hier uitgebreid
+over hebben gehad, zijn er dingen niet gepusht?"
+
+They were pushed. The fix was written on 2026-09-12 and pushed to
+`claude/website-ux-audit-aji746`, where it sat for five days while he looked at
+the bug he had already reported. Merged into main today, conflicts resolved by
+keeping both sides:
+
+- **The homepage says the contribution ask once.** The `.mission` block above
+  the footer is gone; the footer carries the same sentence on all 5,400 pages,
+  and on the homepage the two stood one under the other inside a single screen.
+- **The species column is ranked by tree count**, not alphabetically. Under a
+  heading reading "Top species" it had been listing Aleppo Pine, American Elm,
+  American Sycamore, Amur Cork Tree, Bald Cypress, Baobab, Bishop Wood, Bitter
+  Orange. It now reads Pedunculate Oak, London Plane, Ginkgo, Horse Chestnut.
+- **Tree pages state each fact once**, English and translated: the facts list no
+  longer repeats the age the panel above already prints, and the note under the
+  map no longer repeats the transport sentence the "Getting there" row carries.
+  Main's Girth row and the WorthIt report block were added after that branch was
+  written and are kept.
+
+Verified: astro build 5,436 pages, qa.py passed on 9,234 pages, preflight 0
+problems, paritycheck clean, and the built index.html carries the mission
+sentence exactly once.
+
+**And the ratchet, because the bug was not the duplication.** The corpus got its
+merge ruling this morning and `handoffcheck.py` with it, which refuses a LOG.md
+line asking him for git plumbing. That catches the sentence. It does not catch
+the SILENCE, which is the shape this took and the more common one: a session
+finishes, pushes a branch, says nothing, and the work is gone. Twenty-six
+branches were unmerged when this was checked, six of them carrying site or app
+work.
+
+`work_stranded_on_branches()` in `scripts/brief.py` now names them at the top of
+the session brief, beside the broken gates, with their date and subject. It asks
+git rather than keeping a list, so a branch whose work landed some other way
+drops off by itself, and one that is genuinely abandoned has to be merged or
+deleted by somebody rather than left to a fetch. It reports only branches
+touching `site/` or `ios/`, because those are the ones a reader or a phone would
+notice.
+
+The six it names are the next thing to work through: `vigilant-thompson` (an app
+screenshot viewer), `multiple-images-per-tree`, `mobile-search-zoom-bug`,
+`hero-photo-ratio`, `emoji-icon-inconsistencies` and `boom-pagina-kop`. Each
+needs reading against a main that has moved before it is merged or deleted.
+
+
 ## 2026-09-17 - Alkmaar 7 -> 14, Eindhoven verify pass dispatched
 
 Resumed a window an earlier attempt had stopped in with two claims left

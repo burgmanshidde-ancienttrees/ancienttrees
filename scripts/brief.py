@@ -223,6 +223,51 @@ def photos_still_off_domain(out):
                 ""]
 
 
+def work_stranded_on_branches(out):
+    """Finished work pushed to a branch and never merged into main.
+
+    Hidde, 2026-09-17, on finding the duplicate mission paragraph still on the
+    homepage: "zijn er dingen niet gepusht?" They were pushed. The fix was
+    written on 2026-09-12, pushed to claude/website-ux-audit-aji746, and left
+    there. He saw the bug he had already reported, five days after it was
+    solved, and 25 other branches were in the same state behind it.
+
+    CLAUDE.md's ruling that same morning ("Merge maar ik wil niet mergen doe
+    dit zelf") is enforced by handoffcheck.py, which refuses a LOG.md line
+    asking him for git plumbing. That catches the sentence. Nothing caught the
+    SILENCE, which is the more common shape: a session finishes, pushes a
+    branch, says nothing, and the work is simply gone.
+
+    It names branches touching site/ or ios/ only, because those are the ones
+    a reader or a phone would notice, and it asks git rather than keeping a
+    list. A branch whose work has already landed some other way is merged by
+    content and drops off this list the moment its commits are in main; one
+    that is genuinely abandoned should be deleted, which is also a decision
+    somebody has to make rather than leave to a fetch.
+    """
+    branches = sh("git", "branch", "-r", "--no-merged", "origin/main").splitlines()
+    stranded = []
+    for b in branches:
+        b = b.strip()
+        if not b.startswith("origin/") or "->" in b:
+            continue
+        files = sh("git", "diff", "--name-only", f"origin/main...{b}")
+        if not any(f.startswith(("site/", "ios/")) for f in files.splitlines()):
+            continue
+        when = sh("git", "log", "-1", "--format=%cs", b)
+        subject = sh("git", "log", "-1", "--format=%s", b)
+        stranded.append((when, b[len("origin/"):], subject[:60]))
+    if not stranded:
+        return
+    stranded.sort(reverse=True)
+    out += [f"{len(stranded)} branch(es) carry site or app work that never reached main.",
+            "  Merge it or delete the branch; a branch is not a place work lives."]
+    out += [f"  {w}  {b}  {s}" for w, b, s in stranded[:6]]
+    if len(stranded) > 6:
+        out += [f"  ... and {len(stranded) - 6} more (git branch -r --no-merged origin/main)"]
+    out += [""]
+
+
 def bundled_catalogue_drift(out):
     """How far the copy inside the app binary has fallen behind this checkout.
 
@@ -257,6 +302,7 @@ def main():
     broken_gates(out)
     photos_still_off_domain(out)
     bundled_catalogue_drift(out)
+    work_stranded_on_branches(out)
 
     # Cities and trees
     try:
