@@ -89,7 +89,7 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
     <aside class="panel" id="sheet">
       <div class="sheet-grab">
       <div class="panel-head">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{U.home}</a> › <span>{tr.city}</span></nav>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href={`/${lang}/cities`}>{U.citiesCrumb}</a> › <span>{tr.city}</span></nav>
         <button type="button" class="sheet-back">{U.backToTrees(trees.length)}</button>
         <p class="eyebrow">{countryLabel}</p>
         <div class="page-head">
