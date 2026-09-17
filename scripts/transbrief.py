@@ -41,6 +41,14 @@ TREE_FIELDS = ["name", "species", "age_estimate", "access", "transport", "story"
 CITY_FIELDS = ["city", "title", "meta_description", "intro", "question_title",
                "question_meta", "question_answer", "question_context"]
 MEM_FIELDS = ["species", "access", "transport", "age_estimate"]
+# Two of these are NOT in the English city file: the build generates the page
+# title and the question title from the tree data, and no generator exists for
+# the target languages, so the overlay has to carry them written. i18ncheck
+# demands both. The first Leipzig brief did not ask for either, because it only
+# passed through English fields that exist, and the pass could not invent what
+# it was never shown. Asked for explicitly now, and refused on the way back.
+REQUIRED_CITY = ["city", "title", "meta_description", "intro",
+                 "question_title", "question_meta", "question_answer"]
 LANGS = ["es", "it", "nl", "de", "pt", "fr", "ja"]
 OUT = "out/translate"
 
@@ -79,15 +87,18 @@ def memory(lang, en=None):
 
 
 def sibling_convention(lang):
-    """The strings_note a previous overlay in this language already settled."""
+    """What a previous overlay in this language already settled: its note, and
+    its title and question_title as the PATTERN for two fields that have no
+    English original to translate."""
     for f in sorted(glob.glob(f"data/i18n/{lang}/*.json")):
         try:
             d = json.load(open(f, encoding="utf-8"))
         except (ValueError, OSError):
             continue
-        if d.get("strings_note"):
-            return d["strings_note"], os.path.basename(f)[:-5]
-    return None, None
+        if d.get("strings_note") and d.get("title"):
+            return (d["strings_note"], os.path.basename(f)[:-5],
+                    d.get("title"), d.get("question_title"))
+    return None, None, None, None
 
 
 def brief(lang, slug):
@@ -107,7 +118,7 @@ def brief(lang, slug):
     d = json.load(open(src, encoding="utf-8"))
     en = english_trees()
     mem = memory(lang, en)
-    note, from_city = sibling_convention(lang)
+    note, from_city, eg_title, eg_qtitle = sibling_convention(lang)
 
     trees = []
     hits = 0
@@ -145,12 +156,25 @@ def brief(lang, slug):
             "those strings exactly so one species does not get two names.",
             "The question page's own search phrase is fixed per language and is "
             "not yours to invent; it is recorded below.",
+            "WRITE title AND question_title. They are the only two fields with "
+            "no English original here, because the English build generates them "
+            "and no generator exists for your language. Follow the pattern in "
+            "write_these_two, using this city's own trees. They are page titles, "
+            "so they carry the city name and the thing that makes the page worth "
+            "opening, and they must not promise a tree count the city lacks.",
         ],
         "lang": lang,
         "slug": slug,
         "question_slug_note": f"URL segment for the question page is fixed in "
                               f"QUESTION_SLUG in site/src/lib/i18n.ts, do not translate it",
         "convention_from": from_city,
+        "write_these_two": {
+            "note": f"No English original exists for these. Pattern taken from "
+                    f"data/i18n/{lang}/{from_city}.json, which is a different "
+                    f"city: copy the SHAPE, never the facts.",
+            "title_example": eg_title,
+            "question_title_example": eg_qtitle,
+        },
         "strings_note": note,
         "city": {k: d[k] for k in CITY_FIELDS if isinstance(d.get(k), str)},
         "faq": d.get("faq") if isinstance(d.get("faq"), list) else [],
@@ -195,6 +219,19 @@ def apply(path):
     if extra:
         print(f"REFUSED: {len(extra)} id(s) not in {slug}: {', '.join(extra[:8])}")
         return 1
+
+    city = a.get("city") or {}
+    for k in ("title", "question_title"):
+        if isinstance(a.get(k), str) and a[k].strip():
+            city.setdefault(k, a[k])
+    lacking = [k for k in REQUIRED_CITY
+               if not isinstance(city.get(k), str) or not city[k].strip()]
+    if lacking:
+        print(f"REFUSED: overlay would be missing {', '.join(lacking)}.")
+        print("i18ncheck requires these and the build cannot generate them in "
+              "any language but English.")
+        return 1
+    a["city"] = city
 
     bad = []
     for tid, t in got.items():
