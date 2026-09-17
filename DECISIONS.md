@@ -108,6 +108,59 @@ page, because `.tree-photo.tree-hero img { height: 280px; object-fit: cover }`
 out-specifies `.pv-frame img` and the dialog lives inside that figure. No gate
 could see it, since the dialog exists, the image loads and the link works.
 Measuring the rendered box is what found it.
+## 2026-09-11 - Species recognition from the camera is a Plus feature, and it waits
+
+Hidde, asked how hard live species recognition in the camera would be and shown
+what it costs: "Onthou dat we dit als premium optie gaan bouwen nu geen tijd
+voor."
+
+**Two things settled, and the second is the one worth writing down.** It is
+PAID, on his own ruling, and it is NOT NOW, for time rather than for evidence.
+That second half matters because it is a different reason from the one this
+project usually parks things for. Nothing is waiting on a measurement here: the
+cost is known, the route is known, and the convention is looked up. It waits
+because his week is full, so the trigger is him saying go, never a number
+arriving.
+
+**It resolves the 2026-08-29 "guessing waits" into a date-less yes.** That entry
+said naming a species is a picker and guessing it from the photograph waits, on
+his "nog niet, alleen de kiezer". The picker shipped. This says what the waiting
+was for.
+
+**And it settles a genuine ambiguity in the launch freeze of 2026-08-26.** Rule
+5 there says every new feature defaults to Plus unless it feeds the flywheel by
+bringing in data or users, and recognition does both halves of that exception:
+14 of the 15 trees ever added through the app carry no species, and the field is
+what makes such a tree publishable. So it could honestly have gone either way,
+and he has chosen. Worth remembering when the next feature sits on that line,
+because the exception is narrower than it reads.
+
+**The route, decided by the convention rather than by taste.** Photograph first,
+answer from a server, per CONVENTIONS.md 2026-09-11: every product that has
+identification as a FEATURE does it that way, AllTrails included, and only the
+apps whose whole product is identification (Seek, Merlin) put a model on the
+phone. Live-in-the-viewfinder is therefore the expensive shape and not the
+convention, which is a happy coincidence rather than an argument.
+
+**What it costs, so nobody prices it again.** Roughly half a cent per
+identification on Haiku 4.5 and about a cent on Sonnet 5, for a photograph
+downscaled to about 1000 pixels. There is no fixed floor: the endpoint is a
+Supabase Edge Function, which is a provider we already have, and the site itself
+stays static on GitHub Pages. At any volume this product has ever seen it is
+under a euro a month; a hundred identifications a day is a tenner. Pl@ntNet is
+still ruled out for the same reason as in August, a EUR 1,000 Pro floor the
+moment we charge for anything, and we now would be. A per-account daily cap
+ships with it so a bug cannot run up a bill.
+
+**Two things this does NOT decide, both his.** Whether it sits inside Plus or is
+priced separately, and what anything costs, under hard rule 2. And the API
+account itself, since a run never opens an account in his name.
+
+**One flag for whoever builds it: a server call needs a network and Plus
+promises the outdoors.** AllTrails and PictureThis both answer this the same
+way, by queueing the scan and identifying it when the signal returns rather than
+failing. `SightingSync` already holds an unsent photograph, so we have the
+machinery; it just has to be the design from the start rather than a patch.
 
 ## 2026-09-08 - A tree needs a reason, not just an honest page
 
@@ -494,6 +547,8 @@ One dated entry per decision that shapes the product, newest first: what was dec
   3. **The Plus line: every tree free, the walks are Plus.** His hard line. The category precedent is GPSmyCity; the July interim-paywall paragraph always had routes on the paid list. Launching without walks means the later Plus introduction IS the walks launch, so nothing is ever taken away from an app user.
   4. **The whole season story is Plus, the fact included.** The split (fact free, chart paid) was proposed and he chose against it: "ik zeg eigenlijk ook gewoon wanneer die op zijn mooist is, dan weghalen. We moeten iets achterhouden voor plus." At launch preparation the web loses the year-curve chart, the at-its-best chip, the best_time blocks and the /in-season page. The DATA and machinery stay: nothing that Plus later needs is deleted, only hidden.
   5. **The freeze: the free app is finished at launch scope.** From launch day every new feature defaults to Plus unless it feeds the flywheel (brings in data or users). Log, badges, photo upload and collecting stay free forever-in-practice because they ARE the flywheel; no public forever-promise is printed, so the geography option (hometown free, world paid) stays open.
+
+  **Two things learned the first time a feature actually sat on this line, 2026-09-11 (species recognition), written here because this is the rule somebody reads when designing the next one.** The flywheel exception is NARROWER than it reads: recognition plainly feeds the flywheel (14 of the 15 trees ever added through the app carry no species, and species is the field that makes such a tree publishable), and Hidde still ruled it Plus. So feeding the flywheel makes a feature ARGUABLE as free, never automatically free, and the call stays his. And every Plus feature that needs a server has to answer what it does with NO SIGNAL before it is designed rather than after, because Plus sells being outdoors and that is exactly where the network is not: AllTrails and PictureThis both queue the request and answer when the signal returns, and `SightingSync` already holds an unsent photograph for us.
   6. **A feedback button in the profile**, general plus "tell us which features you would like": the open wishes are the material the next Plus features get designed from. Built the same day (kind `feedback`, page `app-profile`, account-gated per the Google Maps convention).
 
   What did NOT move: pricing and the paywall wiring stay his alone; content stays free on the web (SEO); the no-clawback contract is internal discipline, not printed copy; stats and year-recap stay in the drawer as garnish, not a driver. The revenue picture he accepted with the corner-fear arithmetic: the subscription is one leg of four (Plus, one-time trip purchases, the printed passport, B2B later).
