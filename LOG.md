@@ -1,6 +1,48 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - The map's filter chips are the app's chips now, down to the anatomy
+
+Hidde, with a screenshot of the map on his phone: "de filters zien er totaal
+slecht uit neem de app als voorbeeld en stop met dit soort slordigheden qua
+design."
+
+The row was built five days ago from the right convention and none of the
+detail. CONVENTIONS.md said "same capsules, same words, same order", and the
+words and the order were right while the capsules were nothing like the app's.
+What FilterChip.swift actually draws: an icon at the head of the label, 13pt
+MEDIUM, a 34-tall capsule on a hairline border, moss when it is on, sitting
+inside a 44-tall tap target. What the website drew: 44-tall white slabs, no
+icon anywhere, a 600-weight label, and a native <select> that Safari's 16px
+floor made visibly larger than the three buttons beside it. One row, two type
+sizes, four shapes that were not the app's.
+
+Live on /explore in all eight languages (one component):
+
+- Every chip is a 34-tall pill inside a 44-tall button, which is how the web
+  gets the app's two heights at once. The comment that used to sit in the CSS
+  said a web row "cannot do that for a select" and gave up at 44; a pill inside
+  the control does it for both kinds.
+- The four icons the app names, drawn as strokes at one weight so the row stops
+  looking assembled from parts: heart, checkmark.seal, leaf, ticket.
+- The species chip wears the species once you pick one, like the app's
+  (FilterChipLabel(label: filters.species ?? "Species")), truncated at 8.5rem.
+  The select is still the platform picker, now as the pill's invisible tap
+  layer, which is also what lets it hold the 16px that stops Safari zooming the
+  map in and never back out.
+- MapLibre's attribution (i) sits at the map's top-left, under the row. The old
+  slabs hid it completely and a 34-tall pill let it peek out as a smudge; it
+  now drops below the row, on maps that have a row.
+
+No app change: the app is the reference here and was already right.
+
+Measured on the built page rather than by eye: pill 34 in a 44 button, the
+species chip filling moss and reading "Pedunculate Oak" with "265 trees"
+beside it, clearing back to "Species", the longest name in the catalogue (66
+characters) truncating instead of pushing the row. Smoke test green at 375px
+including its tap-target and fits-a-phone gates, preflight 0 problems,
+paritycheck clean. Merged and pushed to main.
+
 ## 2026-09-17 (session) - Google leads the sign-in sheet, Apple moves behind More options
 
 Hidde: "Google hoort daar Apple is de optie die vertoond wordt als je more

@@ -118,7 +118,20 @@ reasons are recorded in MapTab.swift: at-their-best is a pulse on the pins
 rather than a filter, with-a-photo was doing the editorial order's job, and
 within-2-km was doing the distance-ordered list's job.
 
-Read from the products and from our own app, 2026-09-12.
+**And a chip has an ANATOMY, not just a shape (2026-09-17).** The row above was
+right about the pattern and wrong in every detail for five days, which Hidde
+named: "de filters zien er totaal slecht uit neem de app als voorbeeld." What
+FilterChip.swift actually draws, and what the website now copies: an icon at
+the head of the label, a 13pt MEDIUM weight (not bold), a 34-tall capsule,
+white on a hairline border with a soft shadow, moss when it is on, and all of
+that inside a 44-tall tap target. The website had 44-tall slabs with no icon, a
+600-weight label, and a native select that Safari's 16px floor blew up larger
+than the three buttons beside it. Two heights are the whole trick and the web
+needs a pill INSIDE the button to get them, including under a <select>, which
+becomes the chip's invisible tap layer rather than the chip itself.
+
+Read from the products and from our own app, 2026-09-12; the anatomy from
+FilterChip.swift, 2026-09-17.
 ## Porting a control to another language (2026-09-12)
 
 Not a new interaction, so no reference lookup was owed: the worth-it control's
