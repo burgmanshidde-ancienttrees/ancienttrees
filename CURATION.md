@@ -18,6 +18,49 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 9) - Houston and Vancouver: write pass on 5 bought-and-paid-for trees, city grows to 6 and 7
+
+A prior attempt this window stopped with two write claims still standing on
+data/in-flight.json (Vancouver, Houston) whose verify work had already landed
+(064ae72a). Released the stale claims, deleted the now-merged enschede-verified.json
+research file (its only entry, ens_013, was already published), then re-claimed
+both for a write pass.
+
+**5 fully verified register trees written and merged**: hou_005 (The Rienzi
+Yaupon, a yaupon holly grown to tree height in the Museum of Fine Arts' Rienzi
+garden, state champion class) and hou_006 (The Russ Pitman Mexican White Oak,
+Bellaire) from the Texas Big Tree Registry; van_005 (The Dunbar Street Beech),
+van_006 (The West 20th Avenue Sweet Chestnut) and van_007 (The Blenheim Street
+Oak) from Vancouver's Heritage Register cross-checked against the city's
+separate street-tree inventory. None has a documented age; all five say so
+plainly and ask the reader. Houston grows from 4 to 6 trees, Vancouver from 4
+to 7.
+
+Normalised 3 species-field collisions the write pass correctly left alone
+(verified fields): "Spanish Chestnut" -> "Sweet Chestnut" (Castanea sativa,
+matching 23 other published trees), "Mexican White Oak / Monterrey Oak" ->
+"Mexican White Oak" (matching 2 others), and van_007's multi-clause dispute
+field shortened to the existing convention "Oak (Quercus sp.)" (the dispute
+itself stays fully told in the story and how_to_recognise).
+
+Fixed the count-promise copy both cities' new trees broke (Houston's intro/
+meta_description/question_meta said "four"/"three more", Vancouver's said
+"Full list of 4"/"the four"/"All four"), rebuilt clean, qa.py and preflight.py
+both pass (0 problems).
+
+**Also fixed in passing: Houston was missing from data/city-list.json
+entirely**, since the city was first opened (0339be59), despite its page
+being live and built. This is why feed.xml.ts's `updateFirstSeen()` (which
+iterates city-list.json's `cities` array) had never stamped hou_001-004 into
+data/first-seen.json either, though the pages themselves built fine via a
+different, direct-directory-scan path. Added the missing entry (status
+published, trees 6) and corrected Vancouver's stale `trees: 4`. Also bumped
+united-states.json's meta_description tree count (249 -> 251) since the two
+new Houston trees pushed it stale immediately.
+
+Both claims released. Cost logged to data/agent-costs.json (write, 5 trees,
+133k tokens).
+
 ## 2026-09-17 (continuation 8) - Ischia settled to a leads verdict, Marthalen Oak photographed, two register-backed verify passes dispatched (Vancouver, Houston)
 
 **Ischia given the same leads-file treatment as Ravenna**: 3 MASAF candidates

@@ -8074,6 +8074,15 @@
         "note": "10 Texas Big Tree Registry leads checked; 3 turned out to be exact-coordinate duplicates of already-published hou_001/002/004 (caught by passcheck.py --pending before merging, not by the pass itself), 2 genuinely new trees verified (hou_005-006), 2 newly blocked as Spring Branch ISD private grounds, 1 (Inverness POA) left unresolved on access, 2 pre-existing blocks untouched.",
         "wasted": 0,
         "brief_wrong": true
+      },
+      {
+        "target": "Houston + Vancouver",
+        "kind": "write",
+        "tokens": 133243,
+        "trees": 5,
+        "note": "Write pass over 5 verified register-backed trees across two cities (hou_005-006, van_005-007): stories, recognition lines, 2 best_time from existing phenology files. All five carry honest hedges in prose (single-source registry entries in Houston, a one-house-number address discrepancy and a register-vs-inventory species conflict in Vancouver). No ages derived, none available. Normalised 3 species-name collisions during merge (Spanish Chestnut->Sweet Chestnut, Mexican White Oak/Monterrey Oak->Mexican White Oak, a multi-clause Quercus sp. field shortened) and fixed city/country page count-promise copy the new trees broke.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

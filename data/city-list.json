@@ -803,7 +803,7 @@
    "slug": "vancouver",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 4
+   "trees": 7
   },
   {
    "city": "Stockholm",
@@ -1959,6 +1959,14 @@
    "slug": "zehdenick",
    "status": "published",
    "trees": 1
+  },
+  {
+   "city": "Houston",
+   "country": "United States",
+   "slug": "houston",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
   }
  ]
 }
