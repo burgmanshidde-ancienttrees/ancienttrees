@@ -9,7 +9,10 @@
     10.88111
    ],
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "lat": 49.93171,
+   "lng": 10.88111,
+   "position_basis": "recovered from the lead's own `coords` field (field)"
   },
   {
    "register_id": "ND-03704",
@@ -18,7 +21,10 @@
    "coords": [
     49.89683,
     10.84263
-   ]
+   ],
+   "lat": 49.89683,
+   "lng": 10.84263,
+   "position_basis": "recovered from the lead's own `coords` field (field)"
   }
  ],
  "blocked": [

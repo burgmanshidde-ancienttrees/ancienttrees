@@ -251,6 +251,7 @@ def pipeline_status():
         print(f"  refilled          : skipped ({exc.__class__.__name__})")
 
     data_age()
+    fame_gap()
 
     try:
         import leads as _leads
@@ -266,10 +267,33 @@ def pipeline_status():
             # usually "no source", which genus-names.json cannot fix at all:
             # that needs an actual verify pass, not a word list.
             miss_counts = {}
+            # Count the leads that are ONE field away, not every mention of a
+            # field. The raw count answers the wrong question, because a lead
+            # missing name, position, species and source is a scrape rather
+            # than a lead and closing any one of its gaps buys nothing. On
+            # 2026-09-11 the raw count made "position" the dominant gap (527
+            # of it) while only 96 leads were actually one coordinate away,
+            # and 119 were one verify pass away.
+            #
+            # That mattered more than a wrong label. Neither branch below
+            # fires on "position", so the whole directive fell through and a
+            # run under the floor was told NOTHING: the shelf sat at 3 against
+            # a floor of 60 with the alarm silently doing nothing. An alarm
+            # with a hole in it is worse than no alarm, because the silence
+            # reads as "fine". Hence the else below: every gap now says
+            # something, whatever the dominant one turns out to be.
+            single = {}
             for _, _, miss in b["needs"]:
                 for m in miss:
                     miss_counts[m] = miss_counts.get(m, 0) + 1
-            top = max(miss_counts, key=miss_counts.get) if miss_counts else None
+                if len(miss) == 1:
+                    single[miss[0]] = single.get(miss[0], 0) + 1
+            top = max(single, key=single.get) if single else None
+            if top:
+                print("      one field away: "
+                      + ", ".join("%d on %s" % (n, k.split(" (")[0])
+                                  for k, n in sorted(single.items(),
+                                                     key=lambda kv: -kv[1])))
             if top and top.startswith("species"):
                 print(f"  *** the writable pile is under {READY_FLOOR}. Widening "
                       f"data/genus-names.json is the cheap way to refill it: every word "
@@ -285,9 +309,22 @@ def pipeline_status():
                 # cheapest rung on the ladder unavailable, so it outranks
                 # whatever else the run had in mind.
                 print(f"  *** REFILL THE SHELF FIRST: the writable pile is under "
-                      f"{READY_FLOOR} and {miss_counts[top]} leads are unsourced, a scrape "
-                      f"never looked at by a pass. No script fills that. Dispatch a verify "
-                      f"agent on the batch below BEFORE taking anything else off the "
+                      f"{READY_FLOOR} and {single[top]} leads need only a source, a scrape "
+                      f"never looked at by a pass ({miss_counts[top]} lack one in total, "
+                      f"the rest are short of more than one field). No script fills that. "
+                      f"Dispatch a verify agent on the batch below BEFORE taking anything "
+                      f"else off the ladder. ***")
+                for line in refill_batches(b):
+                    print(line)
+            else:
+                # Anything else: still a directive, still pointing at work.
+                # A verify pass is what turns a scraped lead into a writable
+                # one whatever field it happens to be short of, so the batches
+                # are worth printing here too.
+                print(f"  *** REFILL THE SHELF FIRST: the writable pile is under "
+                      f"{READY_FLOOR}. The nearest work is the {single[top]} lead(s) "
+                      f"one '{top.split(' (')[0]}' away. No script closes that gap; "
+                      f"dispatch a verify agent before taking anything else off the "
                       f"ladder. ***")
                 for line in refill_batches(b):
                     print(line)
@@ -295,6 +332,40 @@ def pipeline_status():
         print(f"  ready to write    : unknown ({exc.__class__.__name__})")
 
 
+
+
+def fame_gap():
+    """Famous-tree fame numbers that only a run with network can fetch.
+
+    /collections/famous-trees ranks on how many language Wikipedias wrote a
+    tree up, and the numbers come from data/famous-demand.json. Filling that
+    cache needs Wikidata and the pageviews API, which a sandboxed session
+    often cannot reach, so the work lands on whoever CAN: a night run, where
+    those hosts answer. It is a script rather than an agent task, so it costs
+    tokens for nothing but the two lines it takes to run.
+
+    Printed rather than remembered because the page is already live and grows
+    by itself: every lead resolved is another tree that appears on it, and
+    General Sherman is in the unresolved pile.
+    """
+    path = os.path.join(ROOT, "data", "famous-demand.json")
+    if not os.path.exists(path):
+        return
+    try:
+        cache = json.load(open(path, encoding="utf-8"))
+    except Exception as exc:                          # noqa: BLE001
+        print(f"  fame data         : unreadable ({exc.__class__.__name__})")
+        return
+    unresolved = sum(1 for e in cache.values() if not e.get("wikis"))
+    if not unresolved:
+        print("  fame data         : every cached famous lead is resolved")
+        return
+    print("  fame data         : %d of %d famous leads carry no fame number. "
+          "If this run has network:" % (unresolved, len(cache)))
+    print("      python3 scripts/famous_demand.py --resolve && "
+          "python3 scripts/famous_demand.py --count")
+    print("      python3 scripts/fame.py --apply    "
+          "# puts the newly resolved trees on /collections/famous-trees")
 
 
 def data_age():
@@ -374,10 +445,39 @@ def refill_batches(b, want=3):
 READY_FLOOR = 60
 
 
+def arm_the_hooks():
+    """Point git at scripts/hooks, because a hook nobody enables is no hook.
+
+    Written 2026-09-17, after a push went to main with a red gate on it. The
+    pre-push hook has carried eight checks since 27 August and it had never run
+    once in this clone: it needs `git config core.hooksPath scripts/hooks`, and
+    that is per clone, while every remote session starts from a clone made an
+    hour ago. So handoffcheck, paritycheck, crosscheck and pitchcheck were all
+    installed, all documented, and all dead on arrival in exactly the sessions
+    that most needed them.
+
+    prepare.py runs at the top of every run, which makes it the one place that
+    can fix a fresh clone before anything is pushed from it. It never overrides
+    a path somebody set deliberately.
+    """
+    import subprocess
+    try:
+        cur = subprocess.run(["git", "config", "core.hooksPath"], cwd=ROOT,
+                             capture_output=True, text=True, timeout=10).stdout.strip()
+        if cur:
+            return
+        subprocess.run(["git", "config", "core.hooksPath", "scripts/hooks"],
+                       cwd=ROOT, capture_output=True, timeout=10)
+        print("  armed the pre-push hooks (core.hooksPath was unset in this clone)")
+    except Exception:
+        pass  # never let a git quirk stop a run from starting
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--status", action="store_true")
     a = ap.parse_args()
+    arm_the_hooks()
     if a.status:
         pipeline_status()
         return 0
