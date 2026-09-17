@@ -12,6 +12,42 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-16 (continuation 3) - A new place: Perušić, Croatia, the largest common fir left in Europe
+
+Same window, continuing after Sremski Karlovci above, further down
+`famous_demand.py --gap`'s list. Xiangyang Famous Tree (Taiwan) was
+already a documented dead end (multi-day permit-gated trek, checked
+2026-09-08). Next candidate with a pin, Fir Tsar/**Jela Car** near
+Perušić, Croatia, had never been looked at: a Silver Fir 144 km from the
+nearest published tree (Trieste), so its own place under the
+single-famous-tree rule.
+
+Verified against Park prirode Velebit's own July 2025 conservation work
+(reported by multiple Croatian outlets: 42.5 m tall, 5.42 m round,
+removing mistletoe and dead branches) corroborated by Croatian Wikipedia
+and the Perušić Tourist Board's own page, both citing the same figures. A
+competing set of numbers (47.5 m / 5.9 m) circulates on other tourism
+sites with no stated measurement date or method, so the better-sourced
+figures are used and the discrepancy is named in the story.
+
+Age is genuinely unconfirmed: the managing nature park says so outright,
+so `age_estimate` uses "contested" rather than "unconfirmed" to trigger
+`ageToken()`'s own disputed-age guard in `tree-copy.ts` (the 2026-08-28
+BLOCKER fix). Caught this the hard way: the first draft ("unconfirmed;
+commonly said to be over 500 years") slipped past that guard because it
+matches only `disputed|contested`, and the built title read "Oldest 500
+Years" as fact until the wording was fixed and rebuilt. Worth flagging
+here since it is an easy trap for any future single-famous-tree page with
+a genuinely disputed age: say "contested" or "disputed", not
+"unconfirmed", "unknown" or similar synonyms, or the guard does not fire.
+
+Photo (CC BY-SA 3.0, Wikimedia Commons, three people linking hands around
+the trunk for scale) meets the Cadiz standard; a second photo (CC BY 3.0)
+showing the trunk beside its own identifying sign added to `photos` as a
+secondary image. Ran `city_names.py` for the new slug. Build (5740
+pages), `qa.py` (8882 pages) and `preflight.py` (609 cities, 0 problems)
+all clean.
+
 ## 2026-09-16 (continuation 2) - A new place: Sremski Karlovci, Serbia, the plane tree by the Lower Church
 
 Same window, continuing after the Montreal/iOS work above. `city_queue.py
