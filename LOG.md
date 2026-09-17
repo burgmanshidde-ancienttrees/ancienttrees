@@ -1,6 +1,36 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 - The sheet's second screen, from the reference's own
+
+Hidde sent the expanded state and said to build it "behalve de Facebook optie".
+
+**"More options" opens a list of routes, not a form.** Theirs replaces itself
+with every remaining provider as filled grey pills and offers the typed route
+as a BUTTON, "Verdergaan met e-mail"; the address is asked for only after that.
+Ours had dropped a text input straight into the sheet, which turns the second
+screen into a form with buttons stacked above it.
+
+So there are three steps now and one set of buttons between them: closed is
+continue-in-the-app, a rule, one provider and "More options"; opened reveals
+the rest and takes "More options" away; and the field appears only once
+somebody has chosen to type. Nothing is duplicated, visibility is all that
+moves, so the screens cannot drift apart.
+
+**One deliberate deviation.** Their order is Google, Facebook, Apple, email.
+Ours is Apple, Google, email. Facebook is out on his instruction and we have no
+such provider anyway; Apple leads because Apple's own guidelines ask that their
+button be shown no less prominently than the others, and a front screen
+offering Google while Apple waits behind a disclosure is what that forbids.
+Same weight and shape, order changed for a published rule rather than a
+preference.
+
+Also gone: "Get the app" at the foot of the last screen, which was the same
+offer as the loud button at the top of the first one.
+
+Photographed at all three steps under an iPhone user-agent. qa 8,584 pages,
+preflight 0 problems, parity and smoke pass.
+
 ## 2026-09-17 - Continue in the app, which is what that sheet was always for
 
 Hidde: "Nee ik wil dat je daadwerkelijk de open in app functie erin bouwt -

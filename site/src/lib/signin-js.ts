@@ -123,14 +123,22 @@ export const SIGNIN_JS = `
     // reference puts it: continue in the app, or, then the account routes. In
     // the markup it sits under the sign-in button, because without the app
     // button that is the only place it can go.
-    var rule = dlg.querySelector('.signin-rule');
-    if (rule && open.nextSibling !== rule) open.parentNode.insertBefore(rule, open.nextSibling);
+    var rule = document.getElementById('signin-rule');
+    if (rule) {
+      rule.hidden = false;
+      if (open.nextSibling !== rule) open.parentNode.insertBefore(rule, open.nextSibling);
+    }
     // And the subtitle goes, because the headline is no longer about signing
     // in and a line reading "Sign in to save X" under "works better in the
     // app" answers a question nobody asked. The reference carries no subtitle
     // at all here.
     var sb = document.getElementById('signin-sub');
     if (sb) sb.hidden = true;
+    // "Get the app" at the foot of the last screen is the same offer as the
+    // loud button at the top of the first one. One of them goes, and it is the
+    // quiet duplicate rather than the thing the sheet leads with.
+    var al = dlg.querySelector('.signin-applink');
+    if (al) al.hidden = true;
     // The headline becomes the offer the button makes, which is what the
     // reference leads with. The sign-in wording stays for every other surface.
     var t = document.getElementById('signin-title');
@@ -160,20 +168,40 @@ export const SIGNIN_JS = `
     // would otherwise remember a state the visitor did not choose this time.
     var rest = document.getElementById('signin-rest');
     var moreBtn = document.getElementById('signin-more');
-    if (rest && moreBtn) { rest.hidden = true; moreBtn.hidden = false; }
+    if (rest) rest.hidden = true;
+    if (moreBtn) moreBtn.hidden = false;
+    var eb = document.getElementById('signin-emailbtn');
+    if (eb) eb.hidden = true;
+    var gg = document.getElementById('signin-google');
+    // Google is the front-screen button only where there is no Apple to lead.
+    if (gg && document.getElementById('signin-apple')) gg.hidden = true;
     if (dlg.showModal) { dlg.showModal(); } else { location.href = '/account'; }
   };
   document.addEventListener('click', function(e) {
     var t = e.target.closest('[data-signin]');
     if (t) { e.preventDefault(); window.atOpenSignIn(); }
   });
-  // "More options" reveals the typed route in place and then gets out of the
-  // way, so the sheet never shows a control that has already done its job.
+  // THE SECOND SCREEN. "More options" reveals every remaining route and then
+  // gets out of the way, so the sheet never shows a control that has already
+  // done its job. It is one list with its visibility switched rather than a
+  // second copy of the same buttons, so the two screens cannot drift apart.
   var more = document.getElementById('signin-more');
   if (more) more.addEventListener('click', function() {
+    ['signin-google', 'signin-emailbtn'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.hidden = false;
+    });
+    more.hidden = true;
+  });
+
+  // And the address is asked for only once somebody has chosen to type one,
+  // which is the reference's third step and what makes the second screen a
+  // list of routes rather than a form with buttons above it.
+  var emailBtn = document.getElementById('signin-emailbtn');
+  if (emailBtn) emailBtn.addEventListener('click', function() {
     var rest = document.getElementById('signin-rest');
     if (rest) rest.hidden = false;
-    more.hidden = true;
+    emailBtn.hidden = true;
     var f = document.getElementById('signin-email');
     if (f) f.focus();
   });

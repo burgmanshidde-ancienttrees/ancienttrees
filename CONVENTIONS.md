@@ -283,6 +283,21 @@ layout, with our own Apple button in the loud slot, until Hidde said it plainly:
 "ik wil dat je daadwerkelijk de open in app functie erin bouwt". The rule
 separates continuing from signing in, not one provider from another.
 
+**IT IS TWO SCREENS, and the second one is a LIST OF ROUTES rather than a
+form.** Hidde's second photograph, 2026-09-17: "More options" replaces itself
+with every remaining provider, each a filled grey pill with the provider's mark
+at the leading edge, and the typed route is a BUTTON reading "Verdergaan met
+e-mail". The address is asked for only after that, on a step of its own. Our
+first attempt dropped a text input straight into the sheet, which makes the
+second screen a form with buttons stacked above it.
+
+Their expanded order is Google, Facebook, Apple, email. Ours is Apple, Google,
+email: Facebook is excluded (Hidde's instruction, and we have no such provider),
+and Apple leads because Apple's guidelines ask that their button be no less
+prominent than the others, which a front screen offering Google while Apple
+waits behind a disclosure would break. Same weight, same shape, order changed
+for a published rule rather than for taste.
+
 **What they actually do, top to bottom.** A close cross in a grey circle, top
 right. The app icon as a large rounded tile, roughly 104px, centred. A big bold
 headline over two balanced lines. ONE dark filled pill at full width, tall. A
