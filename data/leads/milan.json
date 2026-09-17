@@ -123,6 +123,30 @@
       ],
       "why_not_published": "RESOLVED 2026-08-23: delivered to data/research/milan-verified.json as mil_022, flagged (single register source only; no second source found despite three targeted searches this pass). The 2018 dead-tree risk noted below was weighed rather than resolved outright: the felled tree's reported girth (about 300 cm) is nearly half this register entry's 570 cm, which reads as a different, still-standing specimen, but no source gives an exact address for the felled tree, so location_precision is set approximate and curation_status flagged rather than clean. See verify_notes on mil_022 for the full reasoning.",
       "status": "resolved"
+    },
+    {
+      "name": "La Magnolia di Villa Ghirlanda",
+      "species": "Magnolia grandiflora",
+      "girth_cm": 160,
+      "height_m": 12,
+      "location": {
+        "latitude": 45.557619,
+        "longitude": 9.215286,
+        "address": "Parco di Villa Ghirlanda Silva, Via Giovanni Frova 10, Cinisello Balsamo"
+      },
+      "sources": [
+        "MASAF national register, sheet 01/C707/MI/03, Villa Ghirlanda - Via Frova 10, Cinisello Balsamo, girth 160 cm, height 12 m",
+        "it.wikipedia Villa Ghirlanda Silva article (fetched directly): a large specimen of Magnolia grandiflora in the Italian garden courtyard flowerbeds"
+      ],
+      "why_not_published": "2026-09-17 verify pass: has two independent sources like the bagolaro at the same villa (delivered this pass as mil_030), but at 160 cm girth and 12 m it is a modest specimen next to everything else on the Milan page (our smallest published girth is well over 300 cm) and reads as an attractive garden feature rather than a tree worth a special trip. Left as a lead rather than delivered; the villa is free and public so access is not the blocker. Worth reconsidering if Milan wants a denser Cinisello Balsamo stop, or if a better source turns up an age or a more striking description."
+    },
+    {
+      "name": "Near-centre MASAF register sweep, 2026-09-17 verify pass",
+      "species": "various",
+      "sources": [
+        "data/registers/italy-masaf.json, all rows within 2.3 km of the Duomo"
+      ],
+      "why_not_published": "Not a candidate, a bookkeeping note. passcheck --brief listed 10 unflagged-or-lightly-flagged register rows within 2.3 km (girths 3.9-8.3 m, various species). Checked every one by coordinate against data/cities/milan.json: all 10 are exact-location duplicates (0-15 m) of already-published trees (mil_002, mil_003, mil_012, mil_013, mil_017, mil_018, mil_020, mil_022, mil_023) or, for the one flagged nearby-Bagolaro at 45.47163/9.18889 (2.1 km, Noce del Caucaso girth 4.7 m), an exact-coordinate match for mil_011 that the brief's proximity flag missed (register coordinate 45.471111,9.188889 vs candidate 45.47111,9.18889, a rounding difference, not a different tree). A further two candidates at Villa Belgiojoso (45.471944/9.198444 platano and 45.47163/9.19867 bagolaro) match the already-BLOCKED children-only-garden entries exactly. The near-centre register pool is therefore fully accounted for: nothing left to mine within roughly 2.3 km without a site visit (see Villa Litta sheet 15 lead) or going out to the metropolitan-area tier, which is where this pass's one delivered tree (mil_030, Villa Ghirlanda, Cinisello Balsamo, ~8 km) came from."
     }
   ],
   "blocked": [

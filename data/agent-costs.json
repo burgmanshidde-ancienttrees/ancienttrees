@@ -8022,6 +8022,123 @@
   ],
   "2026-09-17": [
    {
+    "target": "Submissions #111, #112 (Taketa)",
+    "kind": "submission",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, not a dispatched pass; two GPS-only reader pins at Oka Castle checked against the Japan register and web search, neither verifies, filed as leads",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Milan",
+    "kind": "verify",
+    "tokens": 184692,
+    "trees": 1,
+    "note": "Near-centre MASAF register fully exhausted; delivered mil_030 (Villa Ghirlanda bagolaro, Cinisello Balsamo, 8km out), hitting the 30-tree target. Story written by session, merged, translated (it overlay), built and shipped same window.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Vilnius",
+    "kind": "verify",
+    "tokens": 182147,
+    "trees": 0,
+    "note": "Register fully mined by prior passes (40/41 candidates already judged); resolved 2 pending access judgement calls to blocked and closed 2 stale/duplicate leads, zero new candidates to ship.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Florence",
+    "kind": "verify",
+    "tokens": 172158,
+    "trees": 1,
+    "note": "Resolved the Piazza Vasari hackberry register-trap/felling question (1 tree, 3 register twins folded); confirmed 2 candidates as wrong-comune (Fiesole) and 10 as existing duplicates; Isolotto poplar candidate turned out to already be published as flo_026 (same MASAF sheet), missed by the pass's own search. Story written and merged by the session.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Vancouver",
+    "kind": "verify",
+    "tokens": 214735,
+    "trees": 3,
+    "note": "15 remaining City of Vancouver Heritage Register leads checked; 3 geocoded and verified via the City's separate public-trees street-tree dataset (van_005-007), 2 institutional sites (church, school) surfaced but left unresolved, 6 avenue/wide-range entries blocked, 2 private-yard entries newly blocked, 4 singles left as open leads.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Houston",
+    "kind": "verify",
+    "tokens": 204027,
+    "trees": 2,
+    "note": "10 Texas Big Tree Registry leads checked; 3 turned out to be exact-coordinate duplicates of already-published hou_001/002/004 (caught by passcheck.py --pending before merging, not by the pass itself), 2 genuinely new trees verified (hou_005-006), 2 newly blocked as Spring Branch ISD private grounds, 1 (Inverness POA) left unresolved on access, 2 pre-existing blocks untouched.",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "Houston + Vancouver",
+    "kind": "write",
+    "tokens": 133243,
+    "trees": 5,
+    "note": "Write pass over 5 verified register-backed trees across two cities (hou_005-006, van_005-007): stories, recognition lines, 2 best_time from existing phenology files. All five carry honest hedges in prose (single-source registry entries in Houston, a one-house-number address discrepancy and a register-vs-inventory species conflict in Vancouver). No ages derived, none available. Normalised 3 species-name collisions during merge (Spanish Chestnut->Sweet Chestnut, Mexican White Oak/Monterrey Oak->Mexican White Oak, a multi-clause Quercus sp. field shortened) and fixed city/country page count-promise copy the new trees broke.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "cagliari",
+    "kind": "verify",
+    "tokens": 189873,
+    "trees": 0,
+    "note": "all 8 unmined register rows confirmed duplicates of already-published trees or already-blocked private land (reconfirms a 2026-09-16 verdict); 2 open leads researched further, still unresolved",
+    "wasted": 189873,
+    "brief_wrong": true
+   },
+   {
+    "target": "Enschede, Helmond",
+    "kind": "write",
+    "tokens": 42000,
+    "trees": 3,
+    "note": "3 stories + recognition lines merged (ens_014, ens_015, hlm_019); fixed species name (Common Hornbeam -> Hornbeam) and city-count promises at merge time.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "alkmaar",
+    "kind": "verify",
+    "tokens": 241236,
+    "trees": 7,
+    "note": "Two new walkable clusters (Bolwerken/Grote Kerk + Westerhoutpark) from LRMB register + Alkmaar municipal 2017 PDF (hand-extracted); caught 2 dead register entries not flagged upstream (Storm Poly 2023, elm disease felling 2019); 4 leads recorded.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "alkmaar",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 7,
+    "note": "Finished a write claim an earlier attempt left with 5 of 7 stories drafted: wrote the last two (alk_013, alk_014) and merged all seven into the city file (7 -> 14). Session work, tokens not logged by an agent report.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "eindhoven",
+    "kind": "verify",
+    "tokens": 212576,
+    "trees": 5,
+    "note": "New Villapark cluster (~250m span), 3 of 5 double-sourced against the city's own street-tree inventory; 6 more candidates recorded as leads or blocked.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "eindhoven",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 5,
+    "note": "5 stories + recognition lines, distinguishing the two Prinsenhof trees and the two horse chestnuts from each other; merged into data/cities (eindhoven 16 -> 21), fixed count-promise copy. Session work, tokens not logged by an agent report.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
     "target": "de/leipzig",
     "kind": "translate",
     "tokens": 46000,

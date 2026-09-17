@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.17 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.18 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -87,6 +87,8 @@ a reader arriving at either wants the same thing.
 | Internal links (min) | 4 outgoing: city page, 2-3 nearby trees, city question page |
 
 ### Contract B — Question page  `/[city]/oldest-tree`
+
+**Which places get one, since v1.18: a place with at least two renderable trees.** A place holding ONE tree publishes no question page, because "what is the oldest tree here" is then a restatement of its only tree page rather than a question. The retired URLs keep resolving, landing on that tree (hard rule 3). The rule is keyed to the tree count and nowhere else, so a place that grows to a second tree gets its page back on the next build; there is no list to maintain and nothing for anyone to remember. `cityHasQuestionPage()` in site/src/lib/question-page.ts is the one implementation, read by the English route, the seven translated routes, the city and tree pages that link them, and redirect-map.ts.
 
 | Element | Specification |
 |---|---|
@@ -304,6 +306,8 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 ---
 
 ## CHANGELOG
+
+- **v1.18 (2026-09-17):** Contract B applies only to places with two or more trees. Approved by Hidde in session, on being shown the Search Console report of 36 pages crawled and not indexed: "ze verdienen ze niet - maar uiteindelijk komen er meer bomen in grote steden - in afgelegen plekken weghalen." The finding that forced it: for a place with one tree, /[city], /[city]/oldest-tree and the tree's own page are three URLs paraphrasing one tree. Lebec spent 87 words of intro, 139 of question_answer, 193 of question_context and 234 of story on one valley oak, every one of them naming the same grizzly, the same bark and the same entry fee. All of it passes P3, none of it is templated, and it still reads to a crawler as three pages about one thing; Google indexed one and filed the rest. 328 of 609 published places held exactly one tree that day, so the pattern was roughly 650 surplus URLs spending the crawl budget of a site with no backlinks (CLAUDE.md, "Reason from distribution first"). Two things do not change. The URLs keep resolving, per hard rule 3 and the same treatment /[city]/walks got in v1.16, landing on the tree page rather than the city page because that is the answer to the question the visitor asked. And the threshold is a data rule rather than a decision about any particular place: growth restores the page by itself, which is what his "uiteindelijk komen er meer bomen in grote steden" asks for. Enforced by check_one_tree_places_have_no_question_page() in scripts/qa.py, which refuses a built question page under the threshold, a retired URL that stops resolving, and a live link into one.
 
 - **v1.16 (2026-09-02):** Contract K retired: the website has no walks page any more, and every walk control on every page type opens the app overlay instead. Hidde's instruction in session, and the reasoning is the paywall line rather than the page: the walks are Plus (DECISIONS.md 2026-08-18), so a web page that hands out the route undercuts the thing being sold, and a web page that teases it half-delivers. "Fuck it, stuur ze maar gewoon naar de app. Dan kunnen we zien hoe vaak het wordt geklikt en gaan we dan maar snel die walks in de app maken." So the change is also the measurement: `walks-app` now counts every walk intention on the site instead of a fraction of them, and that number is what times the work in the app. Two things stay: `hasWalksPage()` still gates whether a page may say "walk" at all, so we never advertise a route that does not exist, and every `/[city]/walks` URL still resolves, landing on the city page, per hard rule 3.
 

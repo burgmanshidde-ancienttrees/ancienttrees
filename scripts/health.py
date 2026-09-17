@@ -480,6 +480,52 @@ def main():
                   f"checked {(mh.get('last_ok_at') or '?')[:16]}, "
                   f"last sent {(mh.get('last_sent_at') or 'never')[:16]}")
 
+    # APPLE'S WEB SECRET EXPIRES, and that is the whole reason this check
+    # exists. Sign in with Apple on the WEB authenticates us with a JWT we sign
+    # ourselves, and Apple caps its life at six months. The day it lapses the
+    # button stops for everyone with `invalid_client`, and nothing anywhere
+    # says so: no mail from Apple, no failed deploy, no red workflow. It is the
+    # quietest breakage this project has, so it gets the loudest warning we
+    # have, a fortnight ahead.
+    #
+    # The date is stored rather than derived because the secret itself never
+    # touches this repository, and it must not. Regenerate with
+    # scripts/apple_secret.py and write the new date here.
+    #
+    # The APP is unaffected and always will be: it signs in natively, where
+    # Apple takes the bundle id and asks for no secret at all.
+    apple_path = os.path.join(os.path.dirname(os.path.dirname(
+        os.path.abspath(__file__))), "data", "apple-secret.json")
+    if os.path.exists(apple_path):
+        try:
+            with open(apple_path, encoding="utf-8") as fh:
+                ap = json.load(fh)
+        except Exception:
+            ap = {}
+        expires = (ap.get("expires") or "").strip()
+        if expires:
+            try:
+                left = (datetime.date.fromisoformat(expires)
+                        - datetime.date.today()).days
+            except ValueError:
+                left = None
+            if left is None:
+                pass
+            elif left <= 14:
+                state = "EXPIRED" if left < 0 else "EXPIRES SOON"
+                print(f"  {'Apple web secret':20s} {state:10s} {expires}")
+                problems.append(
+                    "Apple's web sign-in secret %s on %s. Sign in with Apple on the "
+                    "WEBSITE stops with invalid_client and nothing announces it. "
+                    "Regenerate on a machine holding the .p8: python3 "
+                    "scripts/apple_secret.py --p8 <AuthKey_*.p8>, paste it into "
+                    "Supabase, Authentication, Providers, Apple, Secret Key (for "
+                    "OAuth), then update data/apple-secret.json. The app is not "
+                    "affected." % ("expired" if left < 0 else "expires", expires))
+            else:
+                print(f"  {'Apple web secret':20s} {'ok':10s} "
+                      f"{left} days left (expires {expires})")
+
     if unknown:
         print(f"\n  could not check: {', '.join(unknown)} "
               "(gh missing, unauthenticated, or the file is absent)")

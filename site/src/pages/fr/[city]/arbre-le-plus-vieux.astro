@@ -3,11 +3,11 @@
 // Routing only; TranslatedQuestionPage.astro is shared (Contract J v1.13).
 import { getCollection } from "astro:content";
 import TranslatedQuestionPage from "../../../components/TranslatedQuestionPage.astro";
-import { cityIsRenderable } from "../../../lib/trees";
+import { cityIsRenderable, renderableTrees } from "../../../lib/trees";
 import { allQuestionPathsFor } from "../../../lib/i18n";
 
 export async function getStaticPaths() {
-  return allQuestionPathsFor("fr", (await getCollection("cities")).filter(cityIsRenderable) as any);
+  return allQuestionPathsFor("fr", (await getCollection("cities")).filter(cityIsRenderable) as any, renderableTrees);
 }
 const { city, tr, fallback } = Astro.props as any;
 ---

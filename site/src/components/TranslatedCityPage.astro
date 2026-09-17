@@ -17,7 +17,7 @@ import Base from "../layouts/Base.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
-import { renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
+import { renderableTrees, treeSlugsForCity, hasQuestionPage, type CityEntry } from "../lib/trees";
 import { usablePhoto } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -98,6 +98,8 @@ const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
 const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
 
 const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
+// Contract B v1.18, in every language: a one-tree place has no question page.
+const cityHasQuestion = hasQuestionPage(city);
 ---
 <Base title={tr.title} description={tr.meta_description} canonical={canonical} headExtra={headExtra} footer={false} lang={lang}>
   <div class="split">
@@ -152,8 +154,12 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
               <dd>{f.a}</dd>
             </Fragment>
           ))}
-          <dt>{U.moreOnOldest}</dt>
-          <dd><a href={`/${lang}/${cslug}/${qslug}`}>{U.oldestQuestion(tr.city)}</a> {U.fullAnswer}</dd>
+          {cityHasQuestion && (
+            <Fragment>
+              <dt>{U.moreOnOldest}</dt>
+              <dd><a href={`/${lang}/${cslug}/${qslug}`}>{U.oldestQuestion(tr.city)}</a> {U.fullAnswer}</dd>
+            </Fragment>
+          )}
         </dl>
         <p class="suggest">{U.suggestTree} <a href="/contribute?kind=tree">{U.sendIt}</a>.</p>
       </div>
