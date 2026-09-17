@@ -1,6 +1,42 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 - The sign-in sheet, rebuilt on AllTrails' own shape
+
+Hidde, shown our sign-in screens beside theirs: "ik vind die van ons er weer
+bijzonder lelijk uitzien VS alltrails", then a photograph of their sheet and
+"bouw deze opzet maar volledig na zonder de sterren en redactie ding".
+
+**What was actually wrong**, and it was not one thing. Two filled buttons of
+equal weight, a black Apple and a green send, so nothing was the answer. A 28px
+EMOJI as the mark, first thing on the screen. An outline as a third button
+weight. Four lines of small print ending on an orphaned word. And our two own
+sign-in surfaces disagreed with each other, the dialog centred and /account
+left-aligned.
+
+**What it is now**, on their shape: the app icon at 104px, a balanced two-line
+headline, ONE dark pill, a rule with the word inside it, and filled grey for
+everything else. The typed route waits behind "More options" and discloses in
+place, which is what keeps the closed sheet at two choices. /account was
+brought to the same two weights and the same stacked shape, so the two surfaces
+are one act again.
+
+The small print stays and stays whole, which is the one thing their sheet does
+that ours cannot copy: it is our statement of what personal data we hold.
+
+**Three real bugs came out of looking rather than assuming.** "More options"
+did not disappear after being used, because `display:flex` on the button beats
+the `[hidden]` attribute. Two labels sat left-aligned because the centring rule
+targets a `span` and those buttons had bare text. And the headline broke with
+"device" alone on its second line.
+
+Gates: qa 8,583 pages, preflight 0 problems, parity, conventions, and the smoke
+test's 375px fit check all pass. Photographed in both states, with Apple on and
+with it off, and with the email route open and closed.
+
+**Nothing here is live.** APPLE_SIGNIN is still false and the branch is not
+merged, so the site a reader sees is unchanged.
+
 ## 2026-09-12 - Apple on the web, and the app's sign-in link finds its way home
 
 Hidde asked why Apple login is missing on mobile web, and said email sign-in

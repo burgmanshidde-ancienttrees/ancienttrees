@@ -114,11 +114,26 @@ export const SIGNIN_JS = `
         sub.textContent = tpl ? tpl.replace('%s', treeName) : sub.getAttribute('data-generic');
       }
     }
+    // Reset the disclosure, because a dialog is reopened on the same page and
+    // would otherwise remember a state the visitor did not choose this time.
+    var rest = document.getElementById('signin-rest');
+    var moreBtn = document.getElementById('signin-more');
+    if (rest && moreBtn) { rest.hidden = true; moreBtn.hidden = false; }
     if (dlg.showModal) { dlg.showModal(); } else { location.href = '/account'; }
   };
   document.addEventListener('click', function(e) {
     var t = e.target.closest('[data-signin]');
     if (t) { e.preventDefault(); window.atOpenSignIn(); }
+  });
+  // "More options" reveals the typed route in place and then gets out of the
+  // way, so the sheet never shows a control that has already done its job.
+  var more = document.getElementById('signin-more');
+  if (more) more.addEventListener('click', function() {
+    var rest = document.getElementById('signin-rest');
+    if (rest) rest.hidden = false;
+    more.hidden = true;
+    var f = document.getElementById('signin-email');
+    if (f) f.focus();
   });
   document.getElementById('signin-close').addEventListener('click', function() { dlg.close(); });
   dlg.addEventListener('click', function(e) { if (e.target === dlg) dlg.close(); });

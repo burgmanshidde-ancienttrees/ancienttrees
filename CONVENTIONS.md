@@ -247,6 +247,52 @@ that exists.
 
 ---
 
+## The shape of a sign-in sheet
+
+**Reference: AllTrails' own web sheet, 2026-09-17.** Hidde photographed it on
+his phone and told me to rebuild ours on it, after calling our version "weer
+bijzonder lelijk". The screenshot is the source: alltrails.com refuses
+ClaudeBot and Mobbin, Banani and PageFlows are all unreachable from here, so
+nothing about their screen is described from memory.
+
+**What they actually do, top to bottom.** A close cross in a grey circle, top
+right. The app icon as a large rounded tile, roughly 104px, centred. A big bold
+headline over two balanced lines. ONE dark filled pill at full width, tall. A
+hairline rule with the word "of" sitting inside it. Then two FILLED GREY pills:
+the provider, and "Meer opties" holding everything else. No small print at all.
+
+**The one rule worth carrying away: two weights, never three.** One loud
+button answers the question and everything else is the same quiet grey. Ours
+had a black Apple and a green send of equal weight, so the eye had no landing
+place, plus an outlined Google as a third weight. Filled grey is what lets a
+secondary sit there without competing, and it is why an outline is the wrong
+tool for it.
+
+**Three things ours does differently, each on purpose.**
+
+The small print STAYS. Their sheet carries none; our sentence about what
+personal data we hold is fixed by CLAUDE.md and may not be softened or
+shortened. It got quieter, not smaller in meaning.
+
+"More options" is back, and it is NOT the control removed on 2026-08-20. That
+one was a link to /account carrying the same single email form, a fork in a
+road somebody was already walking down. This one discloses in place and reveals
+something the sheet does not already show.
+
+**And it is CENTRED, which contradicts what the app chose two weeks earlier.**
+The entry below records Apple's WWDC25 move to leading alignment and Hidde
+picking it for the app sheet on 2026-09-01. This reference centres, and he
+picked the reference. The two surfaces now disagree because somebody decided,
+rather than because one of them was forgotten, and that is the only version of
+this disagreement worth having.
+
+The dark slot holds the strongest tap route available: Apple where it is
+switched on, Google where it is not. Both publish a dark button, so neither is
+restyled against its own guidelines, and Apple's rule that its button be at
+least as prominent as the others is met by it being the only filled one.
+
+---
+
 ## Sign in with Apple ON THE WEB, and why it is not the app's flow
 
 **Looked up 2026-09-12**, when Hidde asked why Apple login was missing on

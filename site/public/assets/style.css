@@ -1515,24 +1515,52 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 /* The one sign-in surface (SignInModal.astro), shaped like the modal every
    AllTrails gated tap lands on: centred card, mark on top, stacked pill
    buttons, the app darkest. */
-.signin-dialog { max-width: 24rem; text-align: center; padding: 2rem 1.6rem 1.4rem; }
-.signin-dialog h3 { margin: 0.4rem 0 0.4rem; }
-.signin-dialog p { font-size: 14px; color: var(--ink-light); margin: 0 0 1rem; }
-.signin-mark { font-size: 28px; margin: 0; }
-.signin-close { position: absolute; top: 0.7rem; right: 0.9rem; /* dialog is fixed, so absolute resolves against it */ border: none; background: none;
-  font-size: 15px; cursor: pointer; color: var(--ink-light); }
-.signin-form { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 0.6rem; }
-.signin-form input { font-family: inherit; font-size: 14px; padding: 0.7rem 0.9rem;
-  border: 1px solid var(--cream-dark); border-radius: 999px; text-align: center; }
-.signin-dialog .go-btn { display: block; width: 100%; text-align: center; border-radius: 999px; }
-.signin-more { margin-bottom: 0.2rem; }
-.signin-or { margin: 0.4rem 0 !important; }
+/* THE SIGN-IN SHEET, rebuilt 2026-09-17 on the shape Hidde photographed from
+   AllTrails' own web sheet ("bouw deze opzet maar volledig na"). What that
+   shape actually is, and why each part earns its place:
+
+   ONE loud button and everything else quiet. Ours had two of equal weight, a
+   black Apple and a green send, so the eye had no answer to land on. Theirs
+   has a single dark pill and two grey ones.
+
+   A real icon rather than an emoji, at about 104px. A 28px emoji reads as a
+   placeholder, and it was the first thing on the screen.
+
+   A rule with the word inside it, not a word floating in a gap.
+
+   Tall pills, full width, generous air. Theirs run near 72px; ours sit at 56,
+   which is the same gesture at our type size.
+
+   Centred, deliberately, and it contradicts what this project chose for the
+   APP on 2026-09-01. Apple's WWDC25 guidance moved onboarding to leading
+   alignment and the app followed; this reference centres and Hidde picked the
+   reference. The two surfaces disagree on purpose now rather than by neglect,
+   which is the part that matters. */
+.signin-dialog { max-width: 24rem; text-align: center; padding: 2.4rem 1.5rem 1.5rem; border-radius: 22px; max-height: calc(100vh - 2rem); overflow-y: auto; }
+.signin-dialog h3 { margin: 0 0 0.5rem; font-size: 1.6rem; line-height: 1.15; letter-spacing: -0.01em; text-wrap: balance; }
+.signin-dialog p { font-size: 14px; color: var(--ink-light); margin: 0 0 1.4rem; }
+.signin-icon { display: block; margin: 0 auto 1.1rem; width: 104px; height: 104px; border-radius: 24px; }
+/* A circular target the way every sheet draws it, at Apple's 44. It was a
+   15px glyph in a bordered box, which is both hard to hit and the loudest
+   piece of chrome on a screen whose job is a decision. */
+.signin-close { position: absolute; top: 0.9rem; right: 0.9rem; border: none;
+  width: 36px; height: 36px; border-radius: 999px; background: var(--cream-dark);
+  font-size: 14px; line-height: 1; cursor: pointer; color: var(--ink-mid); }
+.signin-close:hover { background: #e0ded5; }
+.signin-form { display: flex; flex-direction: column; gap: 0.5rem; margin: 0; }
+.signin-form input { font-family: inherit; font-size: 15px; padding: 1rem 1.1rem;
+  border: 1.5px solid var(--cream-dark); border-radius: 999px; text-align: center; }
+#signin-rest { margin-top: 0.5rem; }
+/* The rule, with the word sitting in it. */
+.signin-rule { display: flex; align-items: center; gap: 0.9rem; margin: 1rem 0 !important;
+  font-size: 14px; color: var(--ink-light); }
+.signin-rule::before, .signin-rule::after { content: ""; flex: 1 1 auto; height: 1px; background: var(--cream-dark); }
 .signin-app { background: #23261e; }
 /* The app is a different decision from signing in, so it stopped being a second
    filled button in the dialog on 2026-08-20 and became a plain link. One filled
    button, one job. */
-.signin-applink { display: inline-block; margin-top: 0.9rem; font-size: 14px; font-weight: 700;
-  color: var(--ink); text-decoration: underline; }
+.signin-applink { display: inline-block; margin-top: 0.8rem; font-size: 13px; font-weight: 700;
+  color: var(--ink-mid); text-decoration: underline; }
 /* The provider button. Deliberately NOT Google's coloured mark: their brand
    guidelines want the official asset or their exact spec, and a hand-drawn
    approximation of somebody else's logo is worse than none. Text until the real
@@ -1542,10 +1570,22 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    (its Google, Facebook and Apple buttons all carry the coloured mark on
    the left). Read 2026-09-02. */
 .oauth-btn { display: flex; align-items: center; gap: 0.6rem; width: 100%; border-radius: 999px;
-  font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
-  min-height: 44px; padding: 0.75rem 1.5rem; margin: 0.25rem 0 0.5rem;
+  font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+  min-height: 56px; padding: 0.9rem 1.4rem; margin: 0 0 0.6rem;
   background: var(--cream); color: var(--ink); border: 1.5px solid var(--cream-dark); }
 .oauth-btn:hover { border-color: var(--ink-light); }
+/* display:flex above beats the [hidden] attribute's UA rule, so hiding a
+   button by setting .hidden did nothing at all and "More options" stayed on
+   screen after it had been used. */
+.oauth-btn[hidden] { display: none; }
+/* TWO WEIGHTS AND ONLY TWO. Loud is the single dark pill that answers the
+   question; quiet is the filled grey everything else wears, which is how the
+   reference keeps a secondary from competing without resorting to an outline.
+   A third weight is what this sheet had and is what made it noisy. */
+.oauth-loud { background: #1B2416; color: #fff; border-color: #1B2416; }
+.oauth-loud:hover { background: #26301E; border-color: #26301E; }
+.oauth-quiet { background: var(--cream-dark); border-color: var(--cream-dark); color: var(--ink); }
+.oauth-quiet:hover { background: #e0ded5; border-color: #e0ded5; }
 .oauth-btn .oauth-mark { flex: 0 0 18px; }
 .oauth-btn > span { flex: 1 1 auto; text-align: center; }
 .account-page .oauth-btn { max-width: 22rem; }
@@ -1569,8 +1609,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 /* The dialog centres its own text, the account page does not, so the separator
    between the two ways in was hanging off to the left under a full-width
    button. */
-.account-page .signin-or { max-width: 22rem; text-align: center; }
-.signin-fine { font-size: 12px !important; margin-top: 0.9rem !important; }
+.account-page .signin-rule, .account-page .signin-form { max-width: 22rem; }
+.signin-fine { font-size: 11.5px !important; line-height: 1.5 !important; margin: 1.3rem 0 0 !important; color: var(--ink-light) !important; }
 .nav-group { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--ink-light); margin: 0.5rem 0 0.15rem; padding: 0 0.9rem; }
 .nav-drop-menu .nav-group:first-child { margin-top: 0.2rem; }
