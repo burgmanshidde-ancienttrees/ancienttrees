@@ -1,5 +1,104 @@
 # Decisions
 
+## 2026-09-17 - The translation strategy, fixed
+
+Hidde: "zet deze vertaal strategie vast en vind de meest token effectieve manier
+om het voor elkaar te krijgen", then "en seo sterke manier". Both halves are
+here because they pull against each other and the tension is the whole design.
+
+### Two engines, and they are not the same work
+
+**Coverage costs no tokens and earns no ranking.** Under the fallback model
+(his call, 2026-09-17, following the convention), every city, species, country
+and collection page exists at `/[lang]/...` whether or not it is translated.
+Where no overlay exists the frame is the reader's language and the content is
+English, carrying `rel=canonical` to the English URL. That is Google's own
+documented answer for the same language on a second URL, and it is not the
+scaled-content policy, which is about MACHINE TRANSLATION at scale. These pages
+are deliberately out of the sitemap and deliberately do not rank. They exist so
+a reader who lands on /es/cadiz can keep browsing without being thrown into
+English, which is what AllTrails and komoot both do.
+
+**Ranking costs tokens and is bought one page at a time.** Only a genuinely
+translated overlay competes in search, self-canonical with hreflang to its
+siblings. So the translation budget is never spent on coverage; it is spent
+where demand is already measured.
+
+Reading those two together: never translate to fill a gap. The gap is already
+filled, for free, by the fallback. Translate only to win a query.
+
+### Where the budget goes, on the measured numbers
+
+Mature overlays (live four weeks, robot-inflated English twins excluded) carry
+0.88 of their English twin's impressions, so a translation roughly doubles a
+city's reach when it works. Per language it is not close:
+
+| de 1.95 | es 1.15 | ja 1.13 | fr 0.95 | nl 0.74 | it 0.44 | pt 0.28 |
+
+The upside is larger than the average suggests, and it clusters where the local
+language IS the search language: Cadiz 4.26, Madrid 2.90, Zurich 2.89, Kyoto
+2.44. So the selection rule stands, and the order inside it is: a language that
+has passed its twin on two cities, then the city with the most English
+impressions in that language's own area.
+
+Two traps this file has already paid for. A new overlay needs about four weeks
+before its numbers mean anything, so an early reading is indexing lag wearing a
+verdict's clothes; every one of the thirteen newest read below 0.54 and none of
+them was a failure. And impressions that come from Google exact-phrase operator
+queries are robots: Brussels showed 739 of them, its French overlay earned 1,
+and `transplan.py --value` now skips those rows outright.
+
+### What is never translated
+
+The legal set, per DECISIONS.md 2026-09-17 above. And nothing is machine
+translated in bulk without curation, which is the one line Google's spam policy
+actually draws.
+
+**Said plainly, because it is his risk and not mine to reassure away: our
+translations ARE machine translations.** What stands between them and the
+policy is curation rather than a human reader, since nobody here reads Japanese:
+calibration on the existing set, i18ncheck, the length limits the build
+enforces, the banned-word scan, canonical species names per language, and a
+session reading the output. That is a long way from doorway pages and I believe
+it holds. It is not the same thing as a person having read it.
+
+### The cost model, measured rather than guessed
+
+A translation pass costs about **148k tokens before it translates anything** and
+**~2.4k per tree** after that. The fixed part is turns, each re-sending context,
+not payload. So batch size is nearly the whole lever:
+
+| 7 trees | 23,500/tree | 28 trees | 7,656/tree | 50 trees | 4,823/tree measured |
+
+Three passes predicted within 10% of the meter, so the model is usable for
+deciding whether a pass is worth running. What follows from it:
+
+- **Never run a pass under about ten trees.** Below that a translated tree
+  costs more than publishing a new one (~15k), and the answer is to wait until
+  the language has enough cities to fill a batch.
+- **One pass per language, many cities**, not one per city.
+- **Hand over only the translatable fields** (`transbrief.py --brief`): 35 to
+  45% of a city file is coordinates, photo blocks and licences a translator may
+  not touch.
+- **Inline the calibration.** Opening de/berlin.json to learn the register
+  costs 66k characters and a turn; two sample entries in the brief teach the
+  same thing.
+- **State every limit in the brief.** Titles are capped at 60 characters and
+  descriptions at 155, and a brief that omits them gets them back over the
+  limit in every language at once, because these languages run 10 to 20 percent
+  longer than English. Thirteen came back over, and the build finds them one
+  five-minute build at a time.
+- **Never trust a pass's own token estimate.** They were 2.5x under and 2.7x
+  over on the same day. Log the harness figure.
+
+### What refuses a breach
+
+`scripts/uistrings_check.py` (limits, in a second rather than a build),
+`i18ncheck.py` including `check_species_are_canonical_per_language()`,
+preflight's `check_overlay_coverage()`, qa.py's orphan check, and
+`transbrief.py --apply`, which refuses an answer missing a tree id or a
+required city field.
+
 ## 2026-09-17 - The legal pages stay English, in every language
 
 Hidde, asked whether the general pages should all be translated now that the
