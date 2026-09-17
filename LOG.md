@@ -1,6 +1,49 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (continuation 14) - Finished two stranded verify passes: Mishima folded into Atami, Zarzecze published standalone, Mielnik held
+
+An earlier attempt this same window verified two claimed batches
+(`_famous-japan`, `_famous-poland`) but stopped before writing, building or
+committing, leaving the output sitting in the working tree. Finished it
+rather than redoing it: wrote all three candidates directly in-session
+(too thin a batch for a dispatched write pass), rebuilt, and registered the
+new city in data/city-list.json (which only city_queue.py's rebuild_list
+updates, and only for rows already present, so a brand-new city needs
+adding by hand first).
+
+**Atami 2 -> 3 trees.** ata_003, the Kinmokusei of Mishima Taisha (National
+Natural Monument 1934, a documented double-bloom each September, an annual
+festival), folded in with Mishima's own honest address and transport, one
+JR stop from Atami and inside the day-trip boundary, matching the
+ata_002/Yugawara precedent already on that page.
+
+**Zarzecze published as a new standalone place**, zrz_001, a 5.6m-round
+London plane before the Dzieduszycki Palace in Podkarpackie, Poland:
+documented family folklore (a horse burial, harvest feasts, a schoolroom
+under its crown) and a 2017 national Tree of the Year contest entry. This
+was a closer call than most single-famous-tree exceptions: no nearby
+Polish city to fold it into, and the fame signal is real but not as loud
+as, say, Sliven's. Recording the call here per the mandate rather than
+treating it as automatic; revisit if it reads as wrong.
+
+**Mielnik's Sosna Mielnicka (Parasolka) held, not published.** Fully
+verified (register designation, a 2023 dendrologist health check finding
+it alive and sound), but its own verify_notes call it "not obviously a
+destination on its own merit" and nothing folds it in. Kept in
+data/research/famouspoland-verified.json for a future Podlasie cluster or
+a stronger fame signal, per the 2026-09-08 scarcity ruling: shipping it
+just because the research was already paid for would be the completeness
+that doctrine warns against.
+
+Also released a stale `trieste` claim from the same earlier attempt (a
+partial Il Piccolo fetch with no output): folded the extracted article
+text into data/research/trieste.md, two named candidates worth a future
+look (a hackberry in Piazza Hortis, a plane on Viale al Cacciatore).
+
+Build (11,731 pages), qa.py (15,543 pages) and preflight.py (611 cities, 0
+problems) clean. Both verify claims released.
+
 ## 2026-09-17 - Night run 2026-09-17 14:31 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 53.1 minutes of its 120 minute window, 423 turns, 28 commands refused by the allowlist, ended clean (success). 2 tree(s) reached data/cities across 2 city file(s), and the run still wrote no log entry of its own. Claims left behind: Niagara Falls, Wellington, Kilkenny, Izmir, Stirling, Evora, which block the top of the queue until they expire.

@@ -63,9 +63,10 @@
         "https://commons.wikimedia.org/wiki/File:Monumental_Platan_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Monumental_Platan_3.jpg"
       ],
-      "status": "lead",
-      "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "species": "London Plane (Platanus x hispanica)",
+      "resolved": "2026-09-17: verified, written and published as zrz_001, 'The Zarzecze Plane Tree', in data/cities/zarzecze.json, a new single-tree place under the 2026-08-31 exception (no nearby published city to fold into; judged to pass the destination test on its own folklore, size and 2017 national Tree of the Year contest entry, a close call recorded in LOG.md 2026-09-17).",
+      "delivered_id": "zrz_001"
     },
     {
       "name": "Platan Świadek, Wrocław",
@@ -101,9 +102,10 @@
         "https://commons.wikimedia.org/wiki/File:Pomnik_przyrody_dodan_okolice_mielnika_podlasie.jpg",
         "https://commons.wikimedia.org/wiki/File:Sosna_pomnik_przyrody_Mielnik_10.07.2009_p.jpg"
       ],
-      "status": "lead",
-      "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "held",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "resolved": "2026-09-17: fully verified (two independent sources, register designation, a 2023 tomograph health check), delivered as mln_001 in data/research/famouspoland-verified.json, but NOT published: its own verify_notes call it 'not obviously a destination on its own merit' and no nearby published city exists to fold it into honestly. Held rather than given a solo page, to keep the single-famous-tree bar meaningful; sibling candidate zrz_001 from the same batch was published on a stronger fame signal. Re-open if a Podlasie cluster emerges or a stronger fame signal turns up.",
+      "delivered_id": "mln_001"
     },
     {
       "name": "Sosna Rzepicha",

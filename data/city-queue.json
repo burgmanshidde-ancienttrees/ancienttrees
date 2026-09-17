@@ -534,14 +534,14 @@
    "walks": 4,
    "register": 129,
    "ready": 0,
-   "supply": 163,
+   "supply": 162,
    "target": 30,
    "impressions_10d": 161,
    "clicks_10d": 2,
    "ease": 1.5,
    "work_score": 54.82,
    "travel": 20126,
-   "wikidata": 34
+   "wikidata": 33
   },
   {
    "rank": 24,
@@ -1172,7 +1172,7 @@
   {
    "city": "Helmond",
    "country": "Netherlands",
-   "trees": 19,
+   "trees": 20,
    "note": "opened 2026-08-22 from the Dutch LRMB register",
    "status": "published",
    "photos": 0,
@@ -3574,8 +3574,8 @@
    "photos": 5,
    "walks": 2,
    "register": 18,
-   "ready": 2,
-   "supply": 118,
+   "ready": 0,
+   "supply": 116,
    "target": 20,
    "ease": 1.5,
    "work_score": 8.18,
@@ -6159,29 +6159,6 @@
   },
   {
    "rank": 266,
-   "city": "Heidelberg",
-   "country": "Germany",
-   "slug": "heidelberg",
-   "score": 2.72,
-   "demand": 75837,
-   "basis": "measured",
-   "status": "published",
-   "trees": 6,
-   "photos": 1,
-   "walks": 1,
-   "register": 0,
-   "ready": 1,
-   "supply": 7,
-   "target": 20,
-   "ease": 1.14,
-   "work_score": 3.1,
-   "impressions_10d": 12,
-   "clicks_10d": 1,
-   "travel": 2686,
-   "wikidata": 6
-  },
-  {
-   "rank": 267,
    "city": "Lucerne",
    "country": "Switzerland",
    "slug": "lucerne",
@@ -6204,7 +6181,7 @@
    "wikidata": 0
   },
   {
-   "rank": 268,
+   "rank": 267,
    "city": "Nagoya",
    "country": "Japan",
    "slug": "nagoya",
@@ -6227,7 +6204,7 @@
    "wikidata": 0
   },
   {
-   "rank": 269,
+   "rank": 268,
    "city": "Malmo",
    "country": "Sweden",
    "slug": "malmo",
@@ -6250,7 +6227,7 @@
    "wikidata": 0
   },
   {
-   "rank": 270,
+   "rank": 269,
    "city": "Lille",
    "country": "France",
    "slug": "lille",
@@ -6271,6 +6248,29 @@
    "clicks_10d": 0,
    "travel": 3064,
    "wikidata": 0
+  },
+  {
+   "rank": 270,
+   "city": "Heidelberg",
+   "country": "Germany",
+   "slug": "heidelberg",
+   "score": 2.72,
+   "demand": 75837,
+   "basis": "measured",
+   "status": "published",
+   "trees": 6,
+   "photos": 1,
+   "walks": 1,
+   "register": 0,
+   "ready": 0,
+   "supply": 6,
+   "target": 20,
+   "ease": 1.12,
+   "work_score": 3.05,
+   "impressions_10d": 12,
+   "clicks_10d": 1,
+   "travel": 2686,
+   "wikidata": 6
   },
   {
    "rank": 271,
@@ -8532,10 +8532,10 @@
    "photos": 4,
    "walks": 1,
    "register": 10,
-   "ready": 1,
-   "supply": 11,
+   "ready": 0,
+   "supply": 10,
    "target": 20,
-   "ease": 1.22,
+   "ease": 1.2,
    "work_score": 0.28,
    "impressions_10d": 1,
    "clicks_10d": 0,
@@ -9829,14 +9829,18 @@
    "walks": 0,
    "register": 0,
    "ready": 0,
-   "supply": 31,
+   "supply": 30,
    "target": 10,
    "ease": 1.5,
    "work_score": 0.0,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 0,
-   "wikidata": 31
+   "wikidata": 30,
+   "covered_by": {
+    "city": "Viroflay",
+    "trees": 1
+   }
   },
   {
    "city": "Wilmington",

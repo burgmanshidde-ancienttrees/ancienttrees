@@ -1,0 +1,65 @@
+{
+  "city": "Zarzecze",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Zarzecze holds one tree and one very large plane. In front of the Dzieduszycki family's 19th-century palace, a London plane has grown to 5.6 metres round, entered Poland's national Tree of the Year contest, and collected two centuries of village folklore along the way: harvest feasts held under its crown, horses said to be buried at its roots, a schoolroom of sewing and dancing lessons taught in its shade. The palace park is open to visitors, and the tree still stands exactly where the family planted it, roughly two centuries ago.",
+  "meta_description": "Zarzecze's plane tree, 5.6 metres round, stands before the Dzieduszycki palace: a national contest entrant carrying two centuries of village folklore.",
+  "question_meta": "Zarzecze's oldest tree is a London plane before the Dzieduszycki palace, entered in Poland's national Tree of the Year contest, free to visit in the park.",
+  "question_answer": "The oldest tree in Zarzecze is the Zarzecze Plane Tree (Platanus x hispanica), roughly 200 to 300 years old (sources disagree), standing in front of the Dzieduszycki Palace in the grounds of its historic park.",
+  "question_context": "Sources disagree on exactly how old the tree is: the palace park's own history gives about 300 years, a regional tourist-board article says 200, and neither is a ring count. What both agree on is the tree itself, 5.6 metres round and roughly 26 metres tall, growing dead centre of the romantic landscape park the Dzieduszycki family laid out around 1820. Local folklore ties it closely to the family: harvest feasts (dozynki) were reportedly held beneath its crown, horses that died on the estate are said to have been buried at its roots as feed for the tree, and village women are remembered learning to read, sew and dance in its shade. In 2017 it was entered into Poland's national Tree of the Year contest, one of relatively few trees in the country to reach that list. The palace itself, now run as a municipal museum, survived; its plane tree has outlived the family that planted it.",
+  "hero_tree_id": "zrz_001",
+  "oldest_tree_id": "zrz_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Zarzecze?",
+      "a": "The Zarzecze Plane Tree (Platanus x hispanica), standing in front of the Dzieduszycki Palace, estimated at roughly 200 to 300 years old (sources disagree on the exact figure)."
+    },
+    {
+      "q": "How big is it?",
+      "a": "About 5.6 metres round and roughly 26 metres tall. It was entered into Poland's national Tree of the Year contest in 2017."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the grounds of the Dzieduszycki Palace park, now run as a municipal museum and open to visitors."
+    },
+    {
+      "q": "What is the story behind it?",
+      "a": "Local folklore ties the tree closely to the Dzieduszycki family: harvest feasts were reportedly held beneath its crown, and village women are remembered learning to read, sew and dance in its shade."
+    }
+  ],
+  "trees": [
+    {
+      "id": "zrz_001",
+      "name": "The Zarzecze Plane Tree",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 200 to 300 years (sources disagree)",
+      "age_min": 200,
+      "age_max": 300,
+      "girth_cm": 560,
+      "height_m": 26,
+      "location": {
+        "address": "Zespol Palacowo-Parkowy w Zarzeczu (Dzieduszycki Palace park), in front of the palace entrance, Zarzecze, Przeworsk County, Podkarpackie Voivodeship, Poland",
+        "latitude": 49.98505278,
+        "longitude": 22.54146111,
+        "neighbourhood": "Zarzecze"
+      },
+      "verified_sources": [
+        "http://web.archive.org/web/20260218223734/https://zycie.pl/artykul/zarzecki-platan-walczy-n1061270",
+        "https://mojprzeworsk.pl/aktualnosci/powiat/powiat-przeworski-kraina-pomiedzy-pogorzem-dynowskim-a-kotlina-sandomierska/"
+      ],
+      "access": "Free. Stands in the grounds of the Dzieduszycki Palace park, now run by the municipality/museum (Muzeum w Przeworsku); the park is open to visitors.",
+      "transport": "No public transport data found; village of Zarzecze, drivable, within the palace grounds.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Local legend says horses that died on the Dzieduszycki estate were buried at the foot of this plane tree, feed for the roots of something that was already old when the story started. Whether that is true or simply the kind of thing a Polish village tells about its biggest tree, the plane itself needs no legend to earn its size: 5.6 metres round, roughly 26 metres tall, growing dead centre of the romantic landscape park the family laid out around 1820 in front of their palace.\n\nSources disagree on its age. The park's own history puts it near 300 years; a regional tourist board says 200. Neither is a ring count, so both stand on the page rather than one winning.\n\nWhat is better documented is what happened under it. Harvest feasts, dozynki, were reportedly held beneath the crown every year, and village women are remembered learning to read, sew and dance in its shade, an outdoor classroom nobody built on purpose. In 2017 the tree was entered into Poland's national Tree of the Year contest, a list that takes only a handful of trees a year.\n\nThe palace survives as a municipal museum. Its plane tree, whichever age is correct, has already outlived the family that planted it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by its size alone, 5.6 metres round, easily the largest tree in the park. It stands dead centre of the grounds, directly in front of the Dzieduszycki Palace entrance.",
+      "verify_notes": "Source 1 (Zycie Podkarpackie, 2017-06-15, live URL 403s, fetched via Wayback Machine): girth 5.6m, height ~26m, 'around 300 years old', entered into Poland's 2017 Tree of the Year contest; local folklore says horses that died on the estate were buried under it as feed for the tree, and Dzieduszycki family harvest feasts were held under its crown, village women reportedly learned reading/sewing/dancing in its shade. Source 2 (Powiat Przeworski tourist-board article): describes 'a 200-year-old plane tree preserved in front of the palace', conflicting on age; both figures recorded, no winner picked. DESTINATION CALL: published as a single-famous-tree place (2026-08-31 exception) on the strength of its own folklore, size and national contest entry, a close call recorded in LOG.md 2026-09-17. The same park reportedly also holds a large American tulip tree near the orangery, a possible second specimen worth checking for a future two-tree cluster; not verified this pass."
+    }
+  ]
+}
