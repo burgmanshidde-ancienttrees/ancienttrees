@@ -40,9 +40,17 @@ export const SUPABASE_KEY = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb";
 // What he has to do, once, in two consoles:
 //   1. developer.apple.com, Identifiers, new SERVICES ID (say
 //      app.ancienttrees.web). Enable Sign in with Apple, Configure, and give it
-//      ancienttrees.app as the domain and
+//      supabase.co,caimvxiyrtifilimlkqw.supabase.co as the domains and
 //      https://caimvxiyrtifilimlkqw.supabase.co/auth/v1/callback as the return
-//      URL.
+//      URL. THE DOMAIN IS SUPABASE'S, NOT OURS, and this comment said
+//      ancienttrees.app until 2026-09-17, when Hidde reached the screen and the
+//      claim was checked. Apple validates that a return URL's domain is one of
+//      the registered domains, and the return URL is on supabase.co because
+//      Supabase performs the OAuth; our own domain never appears in this flow
+//      and registering it satisfies nothing. Both entries are needed, the bare
+//      domain and the project subdomain, because Apple treats them as separate
+//      values. No domain verification file is involved, so nothing has to be
+//      hosted on our side.
 //   2. Keys, new key with Sign in with Apple enabled. Apple hands over the .p8
 //      ONCE and never again.
 //   3. Supabase, Authentication, Providers, Apple: the Services ID goes in
