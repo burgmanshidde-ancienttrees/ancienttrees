@@ -17,6 +17,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import unicodedata
 import urllib.error
 import urllib.parse
@@ -2045,11 +2046,17 @@ def _posthog(query, key, project):
     none: this is one HTTP POST of a JSON object, and a dependency that only
     ever formats a URL is a dependency that can break the digest.
     """
-    out = api(
-        "%s/api/projects/%s/query/" % (PH_BASE, project),
-        {"query": {"kind": "HogQLQuery", "query": query}},
-        token=key,
-    )
+    url = "%s/api/projects/%s/query/" % (PH_BASE, project)
+    body = {"query": {"kind": "HogQLQuery", "query": query}}
+    # One retry, because the observed failure is a read timeout rather than a
+    # refusal: on 2026-09-17 a single slow query took the whole app table with
+    # it. PostHog's EU cloud is occasionally slow and always answers the second
+    # time; a refusal still raises immediately, as it should.
+    try:
+        out = api(url, body, token=key)
+    except Exception:
+        time.sleep(3)
+        out = api(url, body, token=key)
     return out.get("results") or []
 
 
@@ -2220,9 +2227,23 @@ def app_section(today):
         out.append("- Tabs opened (14d): " + "; ".join(
             "%s %d" % (t[0] or "?", int(t[1])) for t in tabs))
 
-    out += app_store_downloads_lines()
-
     return "\n".join(out)
+
+
+def app_store_section(_today=None):
+    """App Store downloads as its OWN block, on Hidde's ruling of 2026-09-08
+    ("ik mis app downloads in deze lijst"): reported beside the app's event
+    table and never folded into it, because they answer different questions
+    and the gap between them is the interesting number.
+
+    It was folded in anyway, as lines appended to app_section, and on
+    2026-09-17 that cost exactly what the ruling was written to prevent: one
+    PostHog query timed out, block() caught it, and Apple's numbers went down
+    with a service they do not come from. The digest reported neither table
+    and the workflow went green. Apple and PostHog are separate failures now,
+    so one cannot silence the other."""
+    lines = app_store_downloads_lines()
+    return "\n".join(lines).strip() if lines else ""
 
 
 def app_store_downloads_lines():
@@ -2420,6 +2441,7 @@ def main():
     block(feedback_section, today)
     block(funnel_section, today, token)
     block(app_section, today)
+    block(app_store_section, today)
 
     gsc_latest = None
     gsc_data = None
