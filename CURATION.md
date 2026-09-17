@@ -18,6 +18,16 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 - Milan 29 -> 30, target reached; Vilnius register confirmed exhausted
+
+Two parallel verify passes on the depth-allowed roster (DATA.md 2026-09-15: alicante and krakow were already at/above target despite showing in the queue's "staged for verify" list, so picked the two below instead, both below target with real register supply).
+
+**Milan** delivered one tree, mil_030, Il Bagolaro di Villa Ghirlanda: a Celtis australis, 445cm girth, 34m tall, in the public park of Villa Ghirlanda Silva at Cinisello Balsamo (about 8km north of central Milan), where 19th-century garden theorist Ercole Silva first tried out the English-garden style he then wrote a book about. Two sources (MASAF register plus a directly-fetched 2023 local news piece on the comune's own sensory-map project). This closes Milan at its CITY_QUEUE.md target of 30; the near-centre register (10 rows within 2.3km) is fully exhausted, all duplicates or already-blocked. Story written and merged by the session (not a write-stories pass, since one tree does not clear the six-candidate batching floor); intro/meta_description/question_meta count references updated (29 -> 30), Italian overlay (data/i18n/it/milan.json) translated and updated in the same commit so the build's overlay-completeness gate did not go red. Build and qa.py both pass.
+
+**Vilnius** delivered zero new trees: the register (40 candidates within 20km) was already fully mined by three prior passes (08-16, 08-17, 08-31). This pass closed two open judgement calls instead: a maple circle in the P.Vileišis palace courtyard moved lead->blocked (the courtyard's own Lithuanian Wikipedia page says it's locked, inaccessible), and the Presidential park oaks moved lead->blocked (public park, but every visitor is searched by security at entry, hard rule 10's own "guard who checks: no" case). Two stale/duplicate leads closed. Vilnius stays at 14 trees; nothing left to mine there without a fresh register or a Hidde-named from-zero pass.
+
+Also processed 2 reader submissions (#111, #112) and logged both passes to data/agent-costs.json.
+
 ## 2026-09-17 - Submissions #111, #112 (Taketa): two more GPS-only pins at Oka Castle, same submitter as #110
 
 Same reader (user_id a8ca51da-...) who sent #110 from the Oguni/Taketa border
