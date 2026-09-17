@@ -1,6 +1,45 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-17 (session) - 44 trees got an age from their trunk, and the hug reached the form
+
+Third of the stranded branches Hidde asked for
+(claude/tree-age-species-trunk-size-u9u1yb, written 09-11, unmerged for six
+days).
+
+- **scripts/ages.py**, the script CLAUDE.md has asked for since 2026-08-16.
+  Mitchell's rule, 2.5 cm of girth a year open-grown and 1.5 in shade, so the
+  output is a band a factor of 1.7 wide and ships as one. 44 trees that had no
+  age now carry one; `--report` returns zero eligible and 199 refused, 192 of
+  them because their species falls outside the published rate.
+- **The hug on the add-a-tree form**, the Ancient Tree Inventory's unit, which
+  is the only measurement somebody standing at a trunk can take.
+- **-collect-describe**, so the screen carrying every field a contributor
+  types can be photographed. It went from one field to two on 2026-09-08 and
+  had never been looked at.
+
+**Two girth fields survive, not one, and that was the real merge decision.**
+Main built `girth_cm` in the meantime, a number typed against a tree we already
+map; the branch built the hug, what somebody answers while adding a tree they
+found. Different questions at different moments, so both stay, and the branch's
+column is renamed `girth` to `girth_hugs` everywhere, because `girth` beside
+`girth_cm` reads as one field with two units. Free, since that column has never
+been applied.
+
+Seven of the 44 came from running the script here, on trees main has added
+since the branch ran: Enschede, Florence, Milan twice, Rome, Vancouver,
+Xhoris. Birch, hackberry, almond, beech and lime, all well under the 6 m cap.
+
+Verified: build 11,710 pages, qa 15,508 pages, preflight 0 problems, netcheck
+and the screen lists clean.
+
+**Item 6 on this list was already done.** check_one_owner_per_event() and both
+un-doubled listeners are in main by another route, so
+claude/nostalgic-lewin-e2a29b and claude/project-display-chrome-macos-no73xi
+(Rome at 10 trees, against 31 today) carry nothing and should be deleted rather
+than merged. The stranded-branch check reads "not merged" and cannot read
+"landed another way", which is worth knowing before trusting its list.
+
 ## 2026-09-17 (session) - /cities lists cities, and the famous-tree collection is live
 
 Second of the stranded branches Hidde asked for, merged and deployed
