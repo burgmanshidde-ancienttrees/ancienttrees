@@ -57,8 +57,12 @@ const enPath = toEnglishPath(Astro.url.pathname, lang);
  * them, because this bar always said /explore. Only the two indexes that
  * exist in every language are switched; the rest stay English on purpose
  * until their own translated versions exist. */
-const L = (path: string) => (lang === "en" ? path : `/${lang}${path}`);
-const TRANSLATED_PATHS = new Set(["/explore", "/cities"]);
+const L = (path: string) =>
+  // "/" is the one member whose path IS a slash, so the plain concatenation
+  // would give "/es/" where every other link here is written without a
+  // trailing slash. qa.py resolves links literally, so the shapes must match.
+  lang === "en" ? path : path === "/" ? `/${lang}` : `/${lang}${path}`;
+const TRANSLATED_PATHS = new Set(["/", "/explore", "/cities"]);
 const nav = (path: string) => (TRANSLATED_PATHS.has(path) ? L(path) : path);
 
 if (title.length > TITLE_MAX) {
@@ -129,7 +133,7 @@ const year = new Date().getFullYear();
 </head>
 <body>
 <header class="bar">
-  <a href="/" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
+  <a href={nav("/")} class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
   {/* Below 800px the bar is the mark, the app pill and one menu button, and
       every DESTINATION lives in the panel: Map, the browse facets and the
       account (Hidde, 2026-08-20: "gooi dan alles onder het hamburger menu").
