@@ -106,6 +106,10 @@
   "phc_nSwWiqWesJZmLMypTZDaeR3MDpcpBwcMpWRy7eUSUpTm": {
    "verdict": "not a store",
    "why": "PostHog's project key, likewise a constant."
+  },
+  "saved.saves_are_hearts_v1": {
+   "verdict": "device",
+   "why": "The latch on the one-off saves-are-hearts repair of 2026-09-18 (CloudSync.repairSaves). Device rather than account on purpose: the repair identifies a stray row by asking THIS phone's own record of taps which entries are ticked-but-not-hearted, so a second device with a different local history has its own strays to clear. Syncing the latch would suppress a repair that device still needs. It is a bounded migration flag and carries no user data, so nothing is lost when the app is deleted."
   }
  }
 }

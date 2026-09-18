@@ -70,6 +70,15 @@ species pages (178 of them, 0.5% CTR, every title the same template), and
 that is blocked on the measurement in point 2 above existing for a few days
 first. It starts once DATA.md has the rows.
 
+**One thing picked up on the way in.** The merge with the night run's own
+work was blocked by the pre-push hook: `crossdevice.py` refused
+`saved.saves_are_hearts_v1`, the latch on this morning's one-off
+saves-are-hearts repair, which had reached main unregistered. Ruled it
+**device** and wrote the reasoning into data/cross-device.json: the repair
+asks THIS phone's own record of taps which entries are ticked-but-not-
+hearted, so a second device has its own strays to clear and syncing the
+latch would suppress a repair that device still needs.
+
 **FOR HIDDE.** Nothing blocking. One judgement that is yours because it
 spends a window: four curated collections are stale the same way the
 country one was, and the data to fix them is already on disk. Yews list 8,
