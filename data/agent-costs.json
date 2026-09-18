@@ -8343,9 +8343,9 @@
         "kind": "session",
         "tokens": 0,
         "trees": 0,
-        "note": "the prior write pass's 'trees: 7' was wrong: all 7 stories it wrote sit on trees within 0m of an already-published id under a different name (gif_001, yak_002, tok_022, ibg_001, iid_002, chk_001, mor_002). None ever reached data/cities. Removed from the verified.json research files and folded into each city's leads.json as duplicates_confirmed_already_live, so the shelf count stops overcounting them as writable.",
-        "wasted": 46000,
-        "brief_wrong": true
+        "note": "CORRECTION: the prior write pass's 'trees: 7' was right, not wasted; CURATION.md's 2026-09-18 (continuation 2) entry confirms all 7 (gif_001, yak_002, tok_022, ibg_001, iid_002, chk_001, mor_002) were properly merged into their city files. What this session found was just the leftover copies still sitting in the four batch-verified.json research files after that merge, which passcheck.py's duplicate-distance check correctly flagged as already-live. Cleared them and recorded pointers in each city's leads.json as duplicates_confirmed_already_live so the shelf count stops treating spent research inputs as still-writable.",
+        "wasted": 0,
+        "brief_wrong": false
       },
       {
         "target": "famous-tree fame resolution",
