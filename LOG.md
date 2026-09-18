@@ -2,6 +2,21 @@
 
 <!-- archive-index -->
 
+## 2026-09-18 (session 11, continuation) - Three cities' worth of translation: German, French, Japanese, 15 pages
+
+With `leads.py --ready` still empty after the earlier publishing work,
+moved to CLAUDE.md's cheapest supply rung: translating pages that already
+earn English impressions (`langcheck.py --next`). Three batches, dispatched
+in parallel: German (Regensburg, Cologne, Baldenhain), French (Bordeaux,
+Lyon, Venon, Lausanne, Nantes), Japanese (Takeo, Uda, Nagano, Yabu,
+Nagoya, Miyazaki, Otoyo). 15 cities, 68 trees, all merged and clean
+(`i18ncheck.py`: 82 overlays, 0 problems).
+
+Found and fixed a stale English count promise while merging the French
+pass: Lyon's `question_meta` said "eleven more" trees against an actual
+13, corrected to "twelve more" so both languages agree. Full local build
+(12,103 pages) and `qa.py` (16,031 pages) both clean before committing.
+
 ## 2026-09-18 (photo viewing pass) - One photograph approved, 49 verdicts recorded, and two tools fixed that were quietly wasting every pass
 
 Judged the demand-ranked shortlist (`photo_gaps.py --shortlist`): 20 rows
