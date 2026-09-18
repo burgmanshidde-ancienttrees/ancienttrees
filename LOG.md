@@ -1,6 +1,67 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 5) - My trees and Favourites were one list: the app was writing every ticked tree into the favourites table
+
+Hidde, on his own account page: "als ik klik op My Trees op Favorites, dan
+krijg ik dezelfde lijst. Dat, dat kan niet kloppen." He was right, and the
+website was innocent: it reads `saves` for Favourites and `visited` for My
+trees, which is exactly the app's own split. The polluter was
+`CloudSync.pushAll`, which mapped EVERY local entry into `saves`, ticked-only
+trees included. So `saves` had quietly stopped meaning "hearted" and started
+meaning "in your collection at all", which makes Favourites a superset of My
+trees, and for somebody who mostly ticks trees off in the app it makes them
+the same list.
+
+It was written that way for a reason that has since expired: when the cloud
+half shipped, `public.visited` did not exist, so pushing everything into
+`saves` was the only way a collection survived a new phone. The table exists
+now, so the shortcut had no argument left and only the cost.
+
+**What changed, all on the app side, because the contract is what was wrong:**
+
+| Where | Before | After |
+|---|---|---|
+| `CloudSync.pushAll` | every entry to `saves` | hearts only |
+| `CloudSync.push` | always upserts `saves` | upserts a heart, DELETES the row when the heart comes off and the visit stays |
+| `CloudSync.merge` (pull) | a `saves` row adopted only when new | always adopts the heart, so a save made on the website reaches the phone instead of being deleted by the next push |
+| `Saved.adopt` | every adopted row became a favourite | takes which list the row came from; a `visited` row no longer invents a heart |
+
+**The rows the old rule already left behind cannot be told apart in the
+database**, because `saves` carries no flag saying which kind it was. They can
+be told apart on the phone, which recorded every tap: an entry held with the
+heart off and a visit on is exactly the row that should never have been
+pushed. `CloudSync.repairStrayHearts` deletes those once per phone, in one
+request, before the first pull of the fixed version, and `savesRepaired` in
+UserDefaults makes sure it happens once. The honest cost is written into the
+code beside it: a tree hearted on the WEBSITE that the phone happens to hold
+as ticked-only goes with them, which is one tap to put back.
+
+So the web list stays as it is today until the fixed build runs on his phone
+and syncs; nothing on the website needed changing for the logic itself.
+
+**The ratchet**: three tests in `FailureTests` now hold the contract, replacing
+one that asserted the bug (it demanded a ticked-only tree appear in the saves
+body). Each tree to its own table, unhearting a collected tree deletes only the
+heart, and the repair runs once and never twice.
+
+**And the cards are the width of the phone again.** Same page, second
+complaint, and it is the 2026-09-17 one-left-edge fault one layer down:
+`.acct-lanes` set its own 24px padding while `.panel-head` above it uses
+`--gutter` (16px on a phone), and the tree cards inside it took
+`.panel .tree-card`'s `--gutter` side margins ON TOP of that, so the cards sat
+40px in from a 375px screen and the page showed three left edges. The lanes
+read `--gutter` now, cards inside them drop the panel margin, and the
+Distances switch (which was running flush to the panel wall) gets the same
+edge. Measured in headless Chrome at 375px with the signed-in shape forced:
+avatar, stat row, Add a tree, the lane picker, the card and the units heading
+all start at 16 and end at 359. One edge.
+
+Build clean, `preflight.py` 0 problems, `qa.py` green over 15,887 pages,
+paritycheck/crosscheck/englishcheck/netcheck/conventioncheck all green. The
+app half is written and pushed in the same change and is judged by `ios.yml`,
+since there is no Xcode here.
+
 ## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
 
 An earlier attempt this window stopped after 43 minutes having shipped

@@ -195,24 +195,98 @@ struct WithTheNetworkTakenAway {
         /// And the union goes back UP, which is what makes a collection survive a
         /// new phone. Asserted on what was actually posted rather than on a return
         /// value, because the return value cannot tell you the body was empty.
-        @Test func thePhonesOwnTreesArePushedToTheAccount() async {
+        ///
+        /// EACH TREE TO ITS OWN TABLE (2026-09-18). This test used to demand
+        /// that a ticked-only tree appear in the saves body, which is the bug
+        /// itself written down as an expectation: `saves` is the heart, so a
+        /// tree that was only ticked off belongs in `visited` and nowhere else.
+        /// Getting this wrong made the website's Favourites list a superset of
+        /// its My trees list, and the two lanes showed the same thing.
+        @Test func eachTreeIsPushedToTheListItActuallyBelongsTo() async {
             Faults.reset(); defer { Faults.reset() }
             let s = Scratch(); defer { s.clean() }
 
             let saved = Saved(defaults: s.defaults)
-            saved.toggleSaved("ams_001")
-            saved.toggleVisited("ams_002")
+            saved.toggleSaved("ams_001")                            // hearted only
+            saved.toggleVisited("ams_002")                          // ticked only
 
             Faults.stub("/rest/v1/saves", json: [])
             Faults.stub("/rest/v1/visited", json: [])
 
             await CloudSync.merge(account: signedIn(), saved: saved)
 
-            let pushed = Faults.sent(to: "/rest/v1/saves").filter { $0.method == "POST" }
-            #expect(pushed.count == 1, "nothing was pushed, so a new phone would start empty")
-            let body = pushed.first?.text ?? ""
-            #expect(body.contains("ams_001"))
-            #expect(body.contains("ams_002"))
+            let hearts = Faults.sent(to: "/rest/v1/saves").filter { $0.method == "POST" }
+            #expect(hearts.count == 1, "nothing was pushed, so a new phone would start empty")
+            let heartBody = hearts.first?.text ?? ""
+            #expect(heartBody.contains("ams_001"))
+            #expect(!heartBody.contains("ams_002"),
+                    "a tree nobody hearted was pushed into the favourites list")
+
+            let visits = Faults.sent(to: "/rest/v1/visited").filter { $0.method == "POST" }
+            let visitBody = visits.first?.text ?? ""
+            #expect(visitBody.contains("ams_002"), "the tick never reached the account")
+            #expect(!visitBody.contains("ams_001"),
+                    "a tree nobody stood in front of was logged as visited")
+        }
+
+        /// Taking the heart off a tree you have collected takes its saves row
+        /// with it and leaves the visit alone. Without the delete the website
+        /// would go on showing it under Favourites forever, because the phone
+        /// only ever upserted.
+        @Test func unheartingACollectedTreeRemovesOnlyTheHeart() async {
+            Faults.reset(); defer { Faults.reset() }
+            let s = Scratch(); defer { s.clean() }
+
+            let saved = Saved(defaults: s.defaults)
+            saved.toggleSaved("ams_003")
+            saved.toggleVisited("ams_003")
+            saved.toggleSaved("ams_003")                            // heart off, visit stays
+
+            // Stubbed rather than left bare: FaultProtocol only claims a
+            // request while something is armed, and an unarmed test talks to
+            // the live database.
+            Faults.stub("/rest/v1/saves", json: [])
+            Faults.stub("/rest/v1/visited", json: [])
+
+            await CloudSync.push(account: signedIn(), entry: saved.entries["ams_003"],
+                                 treeId: "ams_003")
+
+            let saveCalls = Faults.sent(to: "/rest/v1/saves")
+            #expect(saveCalls.contains { $0.method == "DELETE" },
+                    "the heart came off here and stayed on in the account")
+            #expect(!saveCalls.contains { $0.method == "POST" })
+            #expect(Faults.sent(to: "/rest/v1/visited").contains { $0.method == "POST" },
+                    "unhearting threw away the visit")
+        }
+
+        /// The one-off repair of 2026-09-18: the rows the old push rule left in
+        /// `saves` are deleted once, from the only copy that still knows they
+        /// were never hearts, and never again after that.
+        @Test func theStrayHeartsTheOldRuleLeftAreClearedOnce() async {
+            Faults.reset(); defer { Faults.reset() }
+            let s = Scratch(); defer { s.clean() }
+
+            let saved = Saved(defaults: s.defaults)
+            saved.toggleVisited("ams_004")                          // ticked, never hearted
+            saved.toggleSaved("ams_005")                            // a real heart
+
+            Faults.stub("/rest/v1/saves", json: [])
+            Faults.stub("/rest/v1/visited", json: [])
+
+            await CloudSync.merge(account: signedIn(), saved: saved)
+
+            let deleted = Faults.sent(to: "/rest/v1/saves").filter { $0.method == "DELETE" }
+            #expect(deleted.count == 1, "the stray row was not cleared")
+            #expect(deleted.first?.url.contains("ams_004") == true)
+            #expect(deleted.first?.url.contains("ams_005") == false,
+                    "the repair took a real heart with it")
+
+            Faults.reset()
+            Faults.stub("/rest/v1/saves", json: [])
+            Faults.stub("/rest/v1/visited", json: [])
+            await CloudSync.merge(account: signedIn(), saved: saved)
+            #expect(Faults.sent(to: "/rest/v1/saves").filter { $0.method == "DELETE" }.isEmpty,
+                    "a one-off repair ran a second time")
         }
 
         /// The phone is the copy that is already right. A sync that cannot reach
