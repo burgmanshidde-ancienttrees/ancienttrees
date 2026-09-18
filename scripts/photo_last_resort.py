@@ -54,14 +54,29 @@ ARCHIVAL = re.compile(r"\bcirca\s*1[89]|\b1[89]\d{2}\b", re.I)
 
 
 def near_files(lat, lng, radius_m):
-    """Every geotagged Commons file within radius_m, title unvetted."""
+    """Every geotagged Commons file within radius_m, title unvetted.
+
+    Returns None when Commons could not be REACHED, and [] when it answered
+    and holds nothing. The two used to be the same value, and the difference
+    is the whole meaning of this tool's output: [] is a verdict that the last
+    resort has been tried and found nothing, None is no verdict at all.
+
+    Found 2026-09-18 running this on Pamplona from a sandbox whose network
+    policy refuses commons.wikimedia.org (403 on CONNECT). All fourteen trees
+    printed "0 new" and all fourteen were stamped `last_resort` with the date,
+    so a total network failure had been written into the queue as an exhausted
+    hunt. Any later run reading that stamp would skip the one city on the site
+    with the most wasted demand, and nothing anywhere would say why. This
+    corpus keeps recording the same shape: a verdict that closed a door
+    outliving the fact that justified it.
+    """
     try:
         d = api({"action": "query", "list": "geosearch", "gsnamespace": 6,
                  "gscoord": f"{lat}|{lng}", "gsradius": max(radius_m, 10),
                  "gslimit": 40})
     except Exception as e:
         print(f"    geosearch failed: {e}", file=sys.stderr)
-        return []
+        return None
     return [g["title"] for g in d.get("query", {}).get("geosearch", [])]
 
 
@@ -116,6 +131,7 @@ def main():
     queue = json.load(open(QUEUE))
     entries = queue.setdefault("trees", {})
     lower = {c.lower() for c in cities}
+    unreachable = checked = 0
 
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
         doc = json.load(open(path))
@@ -128,6 +144,13 @@ def main():
             if loc.get("latitude") is None:
                 continue
             titles = near_files(loc["latitude"], loc["longitude"], radius)
+            if titles is None:
+                # NOT CHECKED, so nothing is written down about it. No stamp,
+                # no "0 new", and the count below makes the run's own verdict
+                # honest rather than leaving a caller to infer it from stderr.
+                print(f"  {tree['id']}  {tree['name'][:44]:44s}  unreachable")
+                unreachable += 1
+                continue
             if "--categories" in sys.argv:
                 # Off by default, and it earned that. A Commons category whose
                 # NAME resembles the tree's place is not the tree's place:
@@ -160,10 +183,21 @@ def main():
                 entry["candidates"].append(f)
                 added += 1
             entry["last_resort"] = time.strftime("%Y-%m-%d")
+            checked += 1
             print(f"  {tree['id']}  {tree['name'][:44]:44s}  {added} new")
             json.dump(queue, open(QUEUE, "w"), indent=1, ensure_ascii=False)
             time.sleep(1.0)
 
+    if unreachable:
+        print(f"\n  {unreachable} tree(s) could not be checked at all and carry "
+              f"no stamp: Commons was unreachable, not empty.", file=sys.stderr)
+        if not checked:
+            print("  Nothing was checked, so this run says nothing about these "
+                  "cities. Run it somewhere that can reach "
+                  "commons.wikimedia.org.", file=sys.stderr)
+            return 1
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main() or 0)

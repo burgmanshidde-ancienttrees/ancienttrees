@@ -104,6 +104,73 @@ live.
 
 Local `npx astro build` (12,035 pages), `preflight.py` (0 problems) and `qa.py` (15,963 pages) all ran clean before committing.
 
+## 2026-09-18 (later) Pamplona's Villava trio had the wrong distances, and the shortlist could never have named this city
+
+Two corrections to the entry below, both from measuring rather than reading.
+
+**The distances between the three Villava poplars were wrong in seven places**,
+across two access fields, two recognition lines and two stories. Measured from
+our own coordinates: pam_011 to pam_012 is **60 m** (we said 240), pam_011 to
+pam_013 is **181 m** (we said 400), pam_012 to pam_013 is 240 m (we said 400).
+The cardinal directions were right and only the figures were wrong, which is
+how it survived: pam_012 is the southernmost, pam_011 the middle, pam_013 the
+north end. All seven now carry the measured figure.
+
+This is worse than an ordinary slip because of which trees it was on. pam_012's
+own recognition line opens "You can recognise it by position and little else",
+and then gave the position as four times the real distance. A visitor pacing
+240 metres north for the broken-limbed poplar walks past it at 60 and ends up
+at the third tree. Position is the only thing separating these trunks, by our
+own admission, so on these three it is not a detail, it is the entry.
+
+**Item 1 of the list below (fold the Villava twins) should not be done on this
+evidence.** 60 m apart is not the Setubal case: those were separately
+registered trunks metres apart, distinguishable only by girth. pam_011 is
+distinguishable in its own right (three main limbs, one dead and bare, bark
+coming away) and pam_013 is a Lombardy poplar, a narrow column rather than a
+spreading crown. Only pam_012 is undistinguishable, and the shared 314 cm
+girth is not evidence of duplication either: three separate trees in this
+register carry exactly 314, which reads as a banded figure rather than a
+coincidence. Leaving all three, with the real distances, is the honest answer;
+folding one would delete a live page to make a thin one look tidier, which is
+the Leiden lesson pointing the wrong way.
+
+**Item 3 could not have happened as written.** It says Pamplona "belongs at
+the top of photo_gaps.py --shortlist", and the shortlist can only ever print a
+city that already has a candidate on file. Pamplona's queue is swept to sweep
+5 twice over, on 09-09 and 09-16, and 13 of its 14 trees came back with no
+candidate at all, so it appeared on no list anywhere and nothing routed it to
+the medicine this file already names. `photo_gaps.py --shortlist` now ends with
+a STARVED block: demand cities where every queued candidate is judged or none
+was ever found, worst waste first, with the right command per city (the last
+resort for a swept-and-empty city, the ordinary sweep for trees never queued,
+because sending one to the other burns a window on a question already
+answered). It names twelve cities holding 337 unphotographed trees between
+them, Pamplona at the top on 448 impressions, and not one of them has ever
+been through photo_last_resort.py.
+
+Not run here: this sandbox's network policy refuses commons.wikimedia.org
+outright (403 on CONNECT), so the last-resort sweep is a night run's job. The
+CI runner reaches Wikimedia fine, measured 2026-09-01.
+
+**And trying it found a worse bug than the one it was sent to fix.**
+`photo_last_resort.py` swallowed the network error, returned an empty list, and
+then stamped `last_resort` with today's date on all fourteen Pamplona trees.
+Every one printed "0 new". So a run that reached Commons not once had written
+into the queue that the last resort was tried here and found nothing, which is
+the exact verdict that would keep the site's most wasted city out of every
+future hunt. It also means any `last_resort` stamp written from a sandbox since
+this tool existed may be worth nothing, though the 181 stamps on file are all
+from cities a night run swept (Utrecht 28, Caserta 20, Deventer 12) and none of
+the twelve starved cities carries one.
+
+Fixed rather than worked around: `near_files()` returns None when Commons
+cannot be reached and [] when it answers and holds nothing, an unreachable tree
+is printed as `unreachable` and gets no stamp at all, and a run where nothing
+could be checked exits 1 saying so. The stamps this session wrote were
+reverted. `--shortlist`'s STARVED block now also reports a city whose trees are
+already through the last resort, so nobody spends a window asking twice.
+
 ## 2026-09-18 Pamplona is our best-placed page and our thinnest
 
 Search Console's newest ten days put /pamplona at average position 3.6 on 412
