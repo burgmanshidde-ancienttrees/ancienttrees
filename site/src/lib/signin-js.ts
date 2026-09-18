@@ -213,7 +213,7 @@ export const SIGNIN_JS = `
     var a = e.target.closest ? e.target.closest('a[href^="/account"]') : null;
     if (!a) return;
     if (document.documentElement.dataset.signedIn === '1') return;
-    if (location.pathname.replace(/\/+$/, '') === '/account') return;
+    if (location.pathname === '/account' || location.pathname === '/account/') return;
     e.preventDefault();
     var d = a.closest('details');
     if (d) d.open = false;
