@@ -1,0 +1,26 @@
+[
+  {
+    "id": "TBD_003",
+    "name": "The Weeping Cherry of Kega-kuyoto",
+    "species": "Weeping Cherry (Prunus sp.)",
+    "age_estimate": "roughly 350 years",
+    "age_min": 300,
+    "age_max": 400,
+    "girth_cm": 380,
+    "location": {
+      "address": "685 Kega, Iida, Nagano Prefecture, Japan, on the old Enshu Kaido road",
+      "latitude": 35.48764,
+      "longitude": 137.83950,
+      "neighbourhood": "Kega, Iida"
+    },
+    "verified_sources": [
+      "https://www.city.iida.lg.jp/site/bunkazai/kuyoto.html",
+      "https://bura-tabi.com/kegakuyotonoshidarezakura/"
+    ],
+    "access": "Free, standing beside the road (old Enshu Kaido) in Kega; no dedicated parking, night illumination during blossom season",
+    "transport": "10 minute walk from JR Kega Station (Iida Line), or 10 minutes by car from the Iida interchange",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources: Iida City's own official natural-monument register page (designated a municipal natural monument 22 November 2000; height ~15m, girth at breast height ~3.8m/380cm; address given as Kega 685) and bura-tabi.com, an independent Nagano travel site (corroborates age ~350 years, height 15m, girth 3.8m, and access directions). Species recorded generically as weeping cherry (shidarezakura) by both sources; neither gives a cultivar-level ID, so the page should say weeping cherry and invite a reader correction on the exact variety. Tradition holds it was planted by local residents during the Wakisaka clan's rule of Iida Castle (1617-1672), which is roughly consistent with the ~350-year age both sources state directly (do not sharpen beyond 'roughly 350 years'; the planting story is tradition, not a documentary record). Stands on the old Enshu Kaido highway; the name 'Kuyoto' is said to derive from a memorial tower (kuyoto, 供養塔) once at the site, tied to Sengoku-era place names nearby ('Jigai-zaka'). Cared for by local residents alongside two stone lanterns and an Akiba Shrine marker; a perpetual lamp is maintained there. Branches cascade dramatically down the roadside embankment. LOCATION: neither source gives a tree-level coordinate; the lat/lng recorded here is JR Kega Station (via OpenStreetMap/Nominatim), a ~10 minute walk from the tree per both sources, marked approximate rather than confirmed -- honest neighbourhood-level knowledge only. Flagged for the location precision and for species resting at the shidarezakura level rather than a specific cultivar."
+  }
+]

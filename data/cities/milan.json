@@ -996,7 +996,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "label": "August to September, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "mil_028",
@@ -1062,7 +1070,16 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "mil_030",

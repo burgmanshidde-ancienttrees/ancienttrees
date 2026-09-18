@@ -286,7 +286,15 @@
       },
       "how_to_recognise": "You can recognise it by the building: an old oak in the grove beside the guardhouse at A. Weizenbergi 26, now the park's museum and library, on the Weizenbergi street side of Kadriorg rather than in Tammesalu further in.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "tln_008",
@@ -316,7 +324,15 @@
       },
       "how_to_recognise": "You can recognise it by size and kind: the one big old oak by the children's playground opposite Pelguranna 13. The park's other notable trees are planted conifers and a weeping elm, none of them anywhere near it in age.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "tln_009",
@@ -348,7 +364,15 @@
       },
       "how_to_recognise": "Look along the grassy ridge above Rannamäe tee, on the inside curve of the old bastion: a row of tall lindens, two of them noticeably thicker in the trunk than their neighbours. Those two are the ones the 1999 tree-ring study dated oldest.",
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "July to August, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }
