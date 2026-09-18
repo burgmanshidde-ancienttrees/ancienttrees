@@ -223,6 +223,9 @@ def photos_still_off_domain(out):
                 ""]
 
 
+WATCHED = ("site/", "ios/", "scripts/")
+
+
 def work_stranded_on_branches(out):
     """Finished work pushed to a branch and never merged into main.
 
@@ -238,9 +241,15 @@ def work_stranded_on_branches(out):
     SILENCE, which is the more common shape: a session finishes, pushes a
     branch, says nothing, and the work is simply gone.
 
-    It names branches touching site/ or ios/ only, because those are the ones
-    a reader or a phone would notice, and it asks git rather than keeping a
-    list. A branch whose work has already landed some other way is merged by
+    It names branches touching site/, ios/ or scripts/, and that third one was
+    missing until 2026-09-18. The reasoning had been "what a reader or a phone
+    would notice", which is the wrong test: claude/zware-foto-zoektocht carried
+    a photo shortlist aiming at the wrong rule and a langcheck that ignored its
+    own verdict, both of them tools that decide what the machine works on next,
+    and it touched nothing under site/ or ios/, so this check never printed it.
+    Hidde found it by reading a sentence of mine rather than the list. A tool
+    that picks the work is worth as much as a page, and it asks git rather than
+    keeping a list. A branch whose work has already landed some other way is merged by
     content and drops off this list the moment its commits are in main; one
     that is genuinely abandoned should be deleted, which is also a decision
     somebody has to make rather than leave to a fetch.
@@ -261,7 +270,7 @@ def work_stranded_on_branches(out):
         if not b.startswith("origin/") or "->" in b:
             continue
         files = sh("git", "diff", "--name-only", f"origin/main...{b}")
-        if not any(f.startswith(("site/", "ios/")) for f in files.splitlines()):
+        if not any(f.startswith(WATCHED) for f in files.splitlines()):
             continue
         when = sh("git", "log", "-1", "--format=%cs", b)
         subject = sh("git", "log", "-1", "--format=%s", b)
@@ -269,7 +278,7 @@ def work_stranded_on_branches(out):
     if not stranded:
         return
     stranded.sort(reverse=True)
-    out += [f"{len(stranded)} branch(es) carry site or app work that never reached main.",
+    out += [f"{len(stranded)} branch(es) carry site, app or tooling work that never reached main.",
             "  Merge it or delete the branch; a branch is not a place work lives."]
     out += [f"  {w}  {b}  {s}" for w, b, s in stranded[:6]]
     if len(stranded) > 6:
