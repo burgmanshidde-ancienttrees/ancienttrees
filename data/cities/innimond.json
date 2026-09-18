@@ -1,0 +1,63 @@
+{
+  "city": "Innimond",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Innimond is a hilltop village in the Ain, roughly 900 metres up in the Bugey hills, and its lime tree stands on the church square beside the thousand-year-old Église Saint-Laurent. Tradition dates the planting to 1601, on the orders of Henri IV's minister Sully, the year the Treaty of Lyon brought the Bugey into France. Once a year the village takes its Fête-Dieu mass outside and holds it under the tree instead. Officially a Remarkable Tree of France since 2005, its hollow trunk still measures 5.8 metres round.",
+  "meta_description": "The Sully Lime of Innimond, a 5.8-metre hollow trunk tradition dates to 1601, still hosts an annual Fête-Dieu mass on the church square.",
+  "hero_tree_id": "inm_001",
+  "oldest_tree_id": "inm_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Innimond?",
+      "a": "The Sully Lime, on the church square beside the Église Saint-Laurent, traditionally dated to a planting around 1601."
+    },
+    {
+      "q": "Why is it called the Sully Lime?",
+      "a": "By local tradition it was planted on the orders of Henri IV's minister Sully around 1601. The tradition is widespread across France and contested by historians, so treat the date as what the village has always said rather than proven fact."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, on the open church square year-round. The tourism board notes the ground is uneven, so wheelchair access needs assistance."
+    },
+    {
+      "q": "How big is the tree?",
+      "a": "An arborist measured the hollow trunk at 5.8 metres round in September 2015."
+    }
+  ],
+  "trees": [
+    {
+      "name": "The Sully Lime of Innimond",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "traditionally dated to a 1601 planting, so roughly 425 years",
+      "age_min": 400,
+      "age_max": 425,
+      "girth_cm": 580,
+      "location": {
+        "address": "Rue du Prieure, Innimond, 01680, Ain (village square beside the Eglise Saint-Laurent)",
+        "latitude": 45.7796125,
+        "longitude": 5.5731209,
+        "neighbourhood": "Innimond village centre"
+      },
+      "verified_sources": [
+        "https://www.plainedelain-tourisme.com/en/sites-naturels/le-tilleul-de-sully-arbre-remarquable/",
+        "https://lestetardsarboricoles.fr/wordpress/2015/10/06/le-tilleul-dinnimond-ain-menace-par-un-projet-deoliennes/"
+      ],
+      "access": "Free, open all year, on the open church square beside the Eglise Saint-Laurent. The tourism board's own page notes wheelchair access 'requires assistance' (uneven ground), otherwise unrestricted.",
+      "transport": "Small Bugey hill village in Ain at roughly 909m altitude; no confirmed public transit, reachable by car; not verified further given the time box.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "id": "inm_001",
+      "story": "Once a year the village takes its Fete-Dieu mass out of the church and holds it under this lime instead. The church it stands beside, Saint-Laurent, is reckoned to be about a thousand years old, which makes the tree the younger of the pair by a wide margin.\n\nBy tradition it went in around 1601, on the orders of Henri IV's minister Sully, in the year the Treaty of Lyon attached the Bugey to France. Limes stand on church squares all over the country under exactly that story, and the French sources that record the tradition also record that it is contested: most surviving Sully limes cannot be shown to date from that campaign at all, however old they plainly are. So take 1601 as what Innimond has always said rather than as something anyone has proved.\n\nWhat has been measured is the trunk. In September 2015 an arborist put a tape around it at 5.80 metres at chest height and 5.72 a little higher, recorded the tree at 13.5 metres tall, and found it hollow through the middle and still viable. Four centuries of growth will do that to a lime, which is at least consistent with the date the village gives. The A.R.B.R.E.S. association labelled it a Remarkable Tree of France in 2005.\n\nNobody we have found names the species beyond lime. If you know whether it is small-leaved, large-leaved or a hybrid, tell us.",
+      "how_to_recognise": "You can recognise it by the hollow trunk, 5.80 metres round at chest height under a crown 13.5 metres tall. It stands on the church square beside the Eglise Saint-Laurent, on Rue du Prieure.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ],
+  "question_meta": "Innimond's one mapped tree is the Sully Lime, a 5.8-metre hollow trunk beside the church, tradition dates it to 1601.",
+  "question_answer": "Innimond's one mapped tree is the Sully Lime, on the church square beside the Église Saint-Laurent, traditionally dated to a planting around 1601 and measuring 5.8 metres round at chest height.",
+  "question_context": "By local tradition the lime went into the ground around 1601, on the orders of Henri IV's minister Sully, the year the Treaty of Lyon attached the Bugey to France. Limes stand on church squares all over the country under exactly that story, and French sources that record the tradition also record that it is contested: most surviving Sully limes cannot be shown to date from that campaign, however old they plainly are. So the date is best read as what Innimond has always said rather than something proven. What has been measured is the trunk. In September 2015 an arborist recorded it at 5.80 metres round at chest height, 13.5 metres tall, hollow through the middle and still viable. The Association A.R.B.R.E.S. labelled it a Remarkable Tree of France in 2005. Once a year the village takes its Fête-Dieu mass out of the church and holds it under the tree instead."
+}
