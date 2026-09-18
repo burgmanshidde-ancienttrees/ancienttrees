@@ -2,8 +2,8 @@
   "city": "Trieste",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Trieste holds the densest cluster of registered monumental trees in Italy, 48 by the city's own count. Four stand within three hundred metres in the park an Austrian archduke laid out on a limestone headland, planting Californian conifers to see whether they would take. Four more grow in a public garden a botanist mayor planted himself and along the road climbing out of it. Three, a bagolaro and two elms, stand across Citta Vecchia and San Vito. A pair of Aleppo pines share a hillside park at Villa Revoltella, and the last stands alone at Opicina.",
-  "meta_description": "Fourteen remarkable trees in Trieste across five walks: Maximilian's Californian conifers at Miramare, the oldest plane, and a hillside of Aleppo pines.",
+  "intro": "Trieste holds Italy's densest cluster of registered monumental trees, 48 by the city's own count. Six stand within three hundred metres in the park an archduke planted on a limestone headland, testing conifers from California and a holm oak from the Mediterranean. Four more grow in a public garden a botanist mayor planted himself. Four, two bagolari and two elms, stand across the old city and the hill of San Giusto. The rest stand alone or in pairs: Aleppo pines on a hillside, a sinkhole oak on the karst, a chestnut at Opicina, a maple and a lime at Basovizza.",
+  "meta_description": "Twenty remarkable trees in Trieste across seven walks: Maximilian's Californian conifers, a karst sinkhole oak, and a national memorial's maple.",
   "question_meta": "The oldest tree in Trieste is the London plane at the Boschetto roundabout on Viale al Cacciatore, over 200 years old and older than any park in the city.",
   "question_answer": "The oldest tree in Trieste is the London plane standing at the Boschetto roundabout on Viale al Cacciatore, which the municipality puts at over 200 years. That makes it older than every public garden in the city, including the Giardino Pubblico laid out in 1854 and the park at Miramare begun in 1856. It is five metres round the trunk and twenty-five metres tall. The largest tree in Trieste is a different plane, in the Giardino Pubblico, at 542 centimetres of girth and about 180 years old.",
   "question_context": "Nothing in Italy's official record of monumental trees will tell you a tree's age. The national MASAF register lists 47 protected trees in the comune of Trieste with species, girth, height and a coordinate, and the regional Friuli Venezia Giulia decree that feeds it adds a place name and the legal reason for each designation, but neither carries an age field or any note of whether a tree is still healthy. Every date on this page therefore comes from elsewhere: from the municipality's own survey of its 48 oldest trees, which puts the Viale al Cacciatore plane above 200 years and the great plane of the Giardino Pubblico near 180, and from the founding dates of the gardens themselves. Those dates are firm. Muzio de Tommasini, botanist and podesta, began the public garden in 1854 on land bought from Benedictine nuns and planted the planes himself. Archduke Maximilian of Habsburg started the Miramare park in the spring of 1856 and kept ordering plants for it even after he had left for Mexico. A tree in either place is as old as the garden around it or a little younger, which is the honest way to date most of this list.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "In five walks, not one. Four stand inside three hundred metres of each other in the Miramare park, eight kilometres up the coast. Four more are spread along about a kilometre from the Giardino Pubblico up Via Giulia to the Boschetto roundabout. A hackberry in Piazza Hortis, an elm in the Piazzale Rosmini garden and a second elm at the Civico Museo Sartorio stand within Citta Vecchia and San Vito. Two Aleppo pines share the hillside park at Villa Revoltella. The last, a horse chestnut, stands alone up on the karst plateau at Opicina, a tram ride from the centre."
+      "a": "In seven walks, not one. Six stand inside three hundred metres of each other in the Miramare park, eight kilometres up the coast: four conifers and, along the same paths, a holm oak and an Aleppo pine. Four more are spread along about a kilometre from the Giardino Pubblico up Via Giulia to the Boschetto roundabout. A hackberry in Piazza Hortis, an elm in the Piazzale Rosmini garden, a second elm at the Civico Museo Sartorio and a second hackberry up on the cathedral hill of San Giusto stand across Citta Vecchia, San Vito and San Giusto. Two Aleppo pines share the hillside park at Villa Revoltella. A Turkey oak stands alone over a sinkhole in the Percedol nature reserve on the karst plateau. A horse chestnut stands alone at Opicina, a tram ride from the centre. And a maple and a lime, a few hundred metres apart, stand in and beside the village of Basovizza near the Slovenian border."
     },
     {
       "q": "Do they cost anything to see?",
@@ -23,6 +23,10 @@
     {
       "q": "Why are there Californian trees at Miramare?",
       "a": "Because Maximilian treated the park as an experiment. He wanted to know which foreign species would survive on bare Adriatic limestone, and within ten years the garden had cedars from Lebanon, North Africa and the Himalaya, cypresses from California and Mexico, and the redwoods that are still the tallest things in it."
+    },
+    {
+      "q": "What is the Foiba di Basovizza?",
+      "a": "Italy's National Monument to the victims of the foibe, a disused mine shaft used in May 1945 for the execution of Italian civilians and soldiers by occupying Yugoslav troops, and the principal memorial for families of the deported. The grounds are free and open every day. A Montpellier maple that was already over a century old that spring still grows on the site."
     }
   ],
   "hero_tree_id": "tri_001",
@@ -545,6 +549,223 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "tri_015",
+      "name": "The Holm Oak of Miramare",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "about 145 years",
+      "age_min": 130,
+      "age_max": 160,
+      "girth_cm": 520,
+      "height_m": 25.0,
+      "location": {
+        "address": "Parco del Castello di Miramare, Viale Miramare, 34151 Trieste",
+        "latitude": 45.703794,
+        "longitude": 13.712881,
+        "neighbourhood": "Grignano"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental-tree register, sheet 02/L424/TS/06)",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPReg%20071-2025.PDF (FVG regional decree, same sheet, criteria a,b,e,f,g)",
+        "https://ilregistrodeglialberi.it/3846-leccio-trieste-ts-friuli-venezia-giulia (RAMI citizen register, same AMI code 02/L424/TS/06, independent field measurement dated 14/10/2021: circumference 5.20 m, height 25.00 m, estimated age 145 years, 'calcolato in base all'anno di nascita registrato' i.e. derived from a registered planting/birth year)"
+      ],
+      "access": "Free, the park is open daily. Only the castle charges admission (same as tri_001-004)",
+      "transport": "Bus 6 from Piazza Oberdan to Grignano, about 25 min, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two official surveys disagree about how many trunks this tree has. The regional decree's sheet records three stems, of 267, 230 and 250 centimetres round. An independent field measurement made in October 2021 for Italy's citizen tree register found a single trunk of 5.20 metres and noted specifically that it is not multi-stemmed. Nobody has been back to settle it, and the height is unsettled too, at 25 metres by one reading and 28 by the other.\n\nWhat is not in doubt is what it is doing here. Archduke Maximilian of Habsburg began this garden in 1856 on a limestone headland with almost no soil on it, had earth carted in, and filled it with conifers from California, Mexico, the Himalaya and Lebanon. The holm oak is the other kind of tree at Miramare: an evergreen broadleaf of the Mediterranean coast, small dark leaves held hard through the winter, no season in which it drops them. It is one of twelve protected trees standing within three hundred metres of each other.\n\nIts age is given as about 145 years, calculated from a registered planting year rather than from the wood, so take a decade either side. Maximilian sailed for Mexico to be crowned emperor and was shot by a firing squad in 1867. The park went on being planted without him, and this oak is part of what came after.",
+      "how_to_recognise": "You can recognise it by the trunk, about 5.2 metres round, and by small dark leaves it keeps all winter. It stands among the twelve protected trees of Miramare park; the park has other holm oaks, so the girth is what tells it apart.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "tri_016",
+      "name": "The Aleppo Pine of Miramare",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "about 130 years",
+      "age_min": 115,
+      "age_max": 145,
+      "girth_cm": 310,
+      "height_m": 19.0,
+      "location": {
+        "address": "Parco del Castello di Miramare, Viale Miramare, 34151 Trieste",
+        "latitude": 45.704542,
+        "longitude": 13.712017,
+        "neighbourhood": "Grignano"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental-tree register, sheet 22/L424/TS/06, girth 310cm, height 19m)",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPReg%20071-2025.PDF (FVG regional decree, same sheet)",
+        "https://ilregistrodeglialberi.it/3847-pino-daleppo-trieste-ts-friuli-venezia-giulia (RAMI citizen register, same AMI code 22/L424/TS/06, independent field measurement dated 14/10/2021: circumference 3.10 m matching the register, estimated age 130 years 'calcolato in base all'anno di nascita registrato')"
+      ],
+      "access": "Free, the park is open daily. Only the castle charges admission (same as tri_001-004)",
+      "transport": "Bus 6 from Piazza Oberdan to Grignano, about 25 min, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Six Aleppo pines in this park carry the same protection, all within three hundred metres of each other, and this is not the largest of them. The biggest measures 3.68 metres round the trunk; this one is 3.10. It is here because it is the only one of the six that anybody has put a date to: about 130 years, calculated by Italy's citizen tree register from a recorded planting year rather than from the wood, so read it as a decade either way.\n\nThat would make it a good forty years younger than the garden it stands in. Archduke Maximilian began Miramare in 1856 by carting soil onto bare limestone to find out which foreign species would hold on to Adriatic rock. The Aleppo pine needed no such help. It is the pine of the Mediterranean shoreline, at home on thin stony ground and salt air, with an open crown that lets the light through and cones that can stay shut on the branch for years, waiting for heat to open them.\n\nIt is 19 metres tall, and here is the honest part: at this coordinate you will find several trunks of much the same thickness, none of them separately named or described in any register we could find. Nobody has photographed this one closely enough to tell it from its neighbours. If you work out which is which, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 3.10 metres round under a 19 metre crown. Five other protected Aleppo pines stand within a few hundred metres, the largest of them 3.68 metres round, so a tape is the only thing that separates them.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "tri_017",
+      "name": "The Bagolaro of San Giusto",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "about 112 years, planted 29 March 1914",
+      "age_min": 111,
+      "age_max": 113,
+      "girth_cm": 377,
+      "height_m": null,
+      "location": {
+        "address": "Piazzale della Cattedrale, Colle di San Giusto, 34121 Trieste",
+        "latitude": 45.646445,
+        "longitude": 13.772121,
+        "neighbourhood": "San Giusto"
+      },
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/15992-il-bagolaro-di-san-giusto-bagolaro-trieste-ts-friuli-venezia-giulia (RAMI citizen register: circumference 3.77 m measured 28/12/2023, health 'sufficiente' with two large branch amputations noted, no official AMI/MASAF code assigned to this specimen)",
+        "https://www.triesteallnews.it/2020/03/lalbero-di-san-giusto-piu-di-centanni-fa-una-domenica-di-primavera/ (TRIESTE.news/triesteallnews.it: the tree was planted 29 March 1914 in a public ceremony, a procession of hundreds of students from the Ginnastica Triestina society carried it up to San Giusto, planted in the presence of vice-mayor engineer Costantino Doria; poet Riccardo Pitteri wrote 'Per l'albero di San Giusto' for the occasion)",
+        "https://www.ilpiccolo.it/cronaca/alberi-monumentali-di-trieste-enrico-8220-ricky8221-ramazzina-presenta-il-bagolaro-di-san-giusto-wbo68nfc (Il Piccolo, part of a civic project where named citizens 'present'/adopt one of the city's monumental trees each; confirms the tree's identity and location independently of RAMI)"
+      ],
+      "access": "Free, standing in the open public square in front of the cathedral, on the San Giusto hill; always accessible (the adjoining castle and museum charge admission separately, the square and cathedral forecourt do not)",
+      "transport": "About a 15 minute uphill walk from Piazza Unita d'Italia via Via Capitolina/Via della Cattedrale, or bus 24 to San Giusto",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Hundreds of schoolchildren carried this tree up the hill. On Sunday 29 March 1914 a procession from the Ginnastica Triestina gymnastic society walked a young hackberry to the top of the San Giusto hill and planted it in the square in front of the cathedral, watched by the vice-mayor, the engineer Costantino Doria. The poet Riccardo Pitteri wrote a piece for the day, Per l'albero di San Giusto. Trieste was then the Austro-Hungarian empire's great seaport. Four months later the empire was at war.\n\nThe citizen register that measured it says it replaced a tree felled in 1906 after storm damage, which no other source we found repeats, so treat that as one register's note rather than settled history. What is measured is the trunk: 3.77 metres round on 28 December 2023, with the same survey rating its health as fair rather than good and recording two large branches cut away. That is a reasonable state for a tree standing alone on an open hilltop in a city known for its wind.\n\nCeltis australis is what Italian towns plant where nothing else will hold, a species that takes drought, poor soil and limestone without complaint. This one has the best address in Trieste, on the square between the cathedral of San Giusto and the castle, with the whole gulf below it. It carries no national monument code. That is a gap in the paperwork rather than in the tree.",
+      "how_to_recognise": "You can recognise it by the trunk, 3.77 metres round, and by the two large branches that have been cut from its crown. It stands by itself on the open square in front of the cathedral of San Giusto, between the church and the castle.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "tri_018",
+      "name": "The Turkey Oak of Dolina Percedol",
+      "species": "Turkey Oak (Quercus cerris)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 310,
+      "height_m": 35.0,
+      "location": {
+        "address": "Dolina di Percedol nature reserve, Carso plateau, Trieste (near Trebiciano/Gropada)",
+        "latitude": 45.705769,
+        "longitude": 13.803553,
+        "neighbourhood": "Percedol, Carso"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental-tree register, sheet 04/L424/TS/06, girth 310cm, height 35m)",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPReg%20071-2025.PDF (FVG regional decree, same sheet)",
+        "https://ilregistrodeglialberi.it/3841-cerro-trieste-ts-friuli-venezia-giulia (RAMI citizen register, same AMI code 04/L424/TS/06, independent measurement dated 14/10/2021 confirms circumference 3.10 m and height 35.00 m exactly, altitude 300m a.s.l., own accessibility rating 'Accessibile')",
+        "https://www.informatrieste.eu/ts/blog/oasi-naturali-a-trieste-visitare-lo-stagno-di-percedol/ (informatrieste.eu, describes Percedol as an 'Oasi di protezione naturale', a marked path around the dolina lined with Turkey oaks)",
+        "https://museostorianaturaletrieste.it/wp-content/uploads/2017/11/4-Percedol.pdf (Trieste natural history museum's own description of the reserve)"
+      ],
+      "access": "Free, a marked public path circles the dolina inside a protected natural area (Oasi di protezione naturale di Percedol); no fee or gate reported by any source checked",
+      "transport": "On the Carso plateau above Trieste near Opicina/Trebiciano; reachable by car or local Carso bus lines from Opicina, roughly 20-30 minutes from the city centre. I have not verified an exact bus number or stop, so treat this as an approximate description rather than a checked route",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Trieste used to go skating here. The pond at the bottom of the Percedol dolina, a sinkhole in the limestone of the plateau above the city, lies deep enough in its own shade to hold ice through the winter, and in the 1800s and early 1900s that made it the city's rink. Turkey oaks ring the hollow. This is the one the state wrote down.\n\nThirty-five metres is a great deal of Quercus cerris. Three separate readings exist, from the national monumental register, the regional decree and an independent field visit in October 2021, and all three came back with the same two numbers: 3.10 metres round the trunk, 35 metres tall. That degree of agreement is rare in this work, and it describes a tall, straight tree rather than a broad one.\n\nNobody has dated it. Neither register carries an age for this oak, and no growth-rate estimate has been made from the girth, so the honest answer is that we do not know. If you know of a survey that dates the oaks of Percedol, tell us.\n\nThe setting carries the walk on its own. A dolina is a hollow where limestone has dissolved away beneath, and this is one of the best known on the Trieste Carso, with a marked path around its rim, a protected pond at the bottom and, in the shade below, what local sources call the finest Turkey oaks on the plateau.",
+      "how_to_recognise": "You can recognise it by its height, 35 metres on a trunk only 3.10 metres round, which is tall and narrow for a Turkey oak. It stands with the other oaks ringing the Percedol dolina, beside the marked path around the sinkhole.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "tri_019",
+      "name": "The Maple of the Foiba di Basovizza",
+      "species": "Montpellier Maple (Acer monspessulanum)",
+      "age_estimate": "about 205 years",
+      "age_min": 185,
+      "age_max": 225,
+      "girth_cm": 256,
+      "height_m": 13.0,
+      "location": {
+        "address": "Foiba di Basovizza - Monumento Nazionale, Strada Statale 14, Basovizza, 34016 Trieste",
+        "latitude": 45.639956,
+        "longitude": 13.857856,
+        "neighbourhood": "Basovizza"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental-tree register, sheet 47/L424/TS/06, girth 256cm, height 13m)",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPReg%20071-2025.PDF (FVG regional decree, same sheet, 'rilevanza regionale')",
+        "https://ilregistrodeglialberi.it/3839-acero-minore-trieste-ts-friuli-venezia-giulia (RAMI citizen register, same AMI code 47/L424/TS/06, independent field measurement dated 14/10/2021: circumference 2.35 m, height 14.00 m, estimated age approx 205 years 'calcolato in base all'anno di nascita registrato')",
+        "https://www.discover-trieste.it/vivi/arte-e-cultura/musei/foiba-di-basovizza-monumento-nazionale (official tourism board page on the memorial: declared National Monument 1992, free entry, always open, reached by bus 51 from Trieste Centrale or bus 39 from Cattinara, about 20 min by car from the station)"
+      ],
+      "access": "Free, always open with no restricted hours for the memorial grounds themselves; the on-site documentation centre keeps seasonal hours (10:00-18:00 March-June, 10:00-14:00 July-February, closed Wednesdays in the second period)",
+      "transport": "Bus 51 from Trieste Centrale station, or bus 39 from Cattinara hospital; about 20 minutes by car from the station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This maple was already well over a century old in May 1945, when the shaft it stands beside was used to kill people. The Foiba di Basovizza is a disused mine pit on the karst above Trieste. In the weeks after the German surrender, occupying Yugoslav troops threw Italian civilians and soldiers into it. Italy declared the site a national monument in 1992, and it is the principal place of mourning for those families and for the Triestines deported to camps in Yugoslavia in the same period. Entry is free and the grounds are open at any hour.\n\nThe tree is an Acer monspessulanum, the small three-lobed maple of dry Mediterranean limestone, a species that seldom grows large. This one has reached 13 metres, and its trunk measures either 2.56 metres round or 2.35, depending on which survey you read: the national register recorded the larger figure, an independent field visit in October 2021 the smaller. Its age is given as about 205 years, calculated from a registered birth year rather than from the wood, so read it as two decades either way.\n\nPeople come to Basovizza for the monument and not for a tree, and that is the right order. The maple is older than any of it, older than the memorial and older than what the memorial records. The documentation centre beside it keeps seasonal hours. The grounds, and the maple, do not close.",
+      "how_to_recognise": "You can recognise it by the leaves, small and blunt and in three lobes rather than the five most maples carry. It stands on the memorial grounds at the Foiba di Basovizza, 13 metres tall on a trunk about two and a half metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "tri_020",
+      "name": "The Lime of Basovizza",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "not documented, long called 'secolare' (centuries-old) locally",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 241,
+      "height_m": 11.0,
+      "location": {
+        "address": "Basovizza village centre, beside Trattoria Al Tiglio - Pri Lipi, Via Bonetti/Basovizza, 34016 Trieste",
+        "latitude": 45.642011,
+        "longitude": 13.863614,
+        "neighbourhood": "Basovizza"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental-tree register, sheet 69/L424/TS/06, species given as 'Tiglio selvatico'/Tilia cordata, girth 241cm, height 11m)",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPReg%20071-2025.PDF (FVG regional decree, same sheet)",
+        "https://ilregistrodeglialberi.it/16628-tiglio-di-brasovizza-tiglio-trieste-ts-friuli-venezia-giulia (RAMI citizen register, same AMI code 69/L424/TS/06, but recorded species only as 'Tilia sp.' and a conflicting circumference of approx 3.30 m measured 20/08/2024, health 'Buona', field note 'esemplare integro caratterizzato da una forma inconsueta' [a sound specimen with an unusual shape])",
+        "https://domenicale.diocesi.trieste.it/2024/10/26/basovizza-la-solidarieta-allombra-del-tiglio/ (Trieste diocese's parish newsletter, describes 'un tiglio secolare' (a centuries-old lime) shading the village square, and the trattoria that sits beneath it)",
+        "http://www.basovizza87.it/basovizza/territorio/ (local history page: the trattoria beside the tree dates to the mid-18th century, originally a postal station on the Trieste-Vienna road)"
+      ],
+      "access": "Free, stands in the open village square/roadside next to a public trattoria; always visible from the street, no gate reported",
+      "transport": "Bus 51 from Trieste Centrale (the same line that serves the Foiba di Basovizza memorial), about 20-25 minutes",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The inn beside it is named after it, in two languages. Trattoria Al Tiglio, Pri Lipi, which is Italian and Slovene for the same thing: at the lime tree. Basovizza is a Carso village above Trieste that has spoken both for a long time, and the building was a post station on the road from Trieste to Vienna in the middle of the eighteenth century, where travellers changed horses.\n\nHow old the lime is, nobody has written down. The parish newsletter calls it secolare, centuries-old, which is the word a village uses about a tree it has always had, and no survey has done better than that. The measurements are no tidier. The national monumental register lists it at 2.41 metres round and 11 metres tall; a field visit in August 2024 put the girth at about 3.30 metres. That gap is too wide to be carelessness with a tape, and the likeliest explanation is the trunk itself, which the same 2024 survey describes as sound but unusually shaped. Somebody put the tape somewhere else.\n\nThe good news from that visit is the health rating: good, as of August 2024. It is a small-leaved lime, which means that for a fortnight around midsummer the tree announces itself before you have seen it, and the tables underneath are the obvious place to be while it does.\n\nIf you have measured this trunk, tell us where you put the tape.",
+      "how_to_recognise": "You can recognise it by the shape, which the surveyors call unusual, and by the trattoria beneath it, Al Tiglio, Pri Lipi, named after the tree. It stands in the open in the middle of Basovizza village, 11 metres tall beside the road.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers and the scent reaches the road before the tree does"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
