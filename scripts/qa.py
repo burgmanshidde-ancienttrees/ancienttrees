@@ -641,23 +641,25 @@ def check_nothing_is_stored_locally():
     a person accumulates lives in the account. sessionStorage counts as storage
     and is refused for the same reason.
 
-    The deliberate exceptions are not named here any more, they are named in
-    `data/local-storage-allow.json`, one line of reason each. That file is
-    shared with `scripts/localcheck.py`, which asks the APP the same question
-    (2026-09-18, Hidde a third time: "stop saving stuff locally anywhere please
-    make sure this happens nowhere always account related"). It had to become
-    one list, because the rule was enforced on one surface and merely written
-    down for the other, and the app went on keeping every worth-it vote in
-    three UserDefaults keys per tree for sixteen days after the website
-    stopped. A key built from a variable is refused whatever it holds, because
-    the allowlist can only read literals; write the name out."""
+    The deliberate exceptions are not listed here any more. They are read from
+    `data/cross-device.json`, which since 2026-09-11 registers EVERY store on
+    either surface with a verdict: `device` means staying on the phone or in
+    the browser is correct, `account` means it hangs under the account. So the
+    browser may keep exactly the stores ruled `device`, and this check and
+    crossdevice.py cannot drift apart, because there is one register rather
+    than a list per script (2026-09-18: a session wrote a second list for the
+    app before noticing the first one existed, which is the duplication this
+    corpus keeps recording under another name).
+
+    A key built from a variable is refused whatever it holds, because a list
+    can only read literals; write the name out."""
     out = []
     root = Path(__file__).resolve().parent.parent
     src = root / "site" / "src"
     if not src.exists():
         return out
-    allow = root / "data" / "local-storage-allow.json"
-    allowed = set(json.loads(allow.read_text(encoding="utf-8")).get("web", {}))
+    register = json.loads((root / "data" / "cross-device.json").read_text(encoding="utf-8"))
+    allowed = {k for k, v in register["stores"].items() if v["verdict"] == "device"}
     offenders = []
     for f in sorted(list(src.rglob("*.ts")) + list(src.rglob("*.astro"))):
         text = f.read_text(encoding="utf-8")
