@@ -964,7 +964,8 @@
       },
       "photos": [],
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 500 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 500 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Height 27.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "height_m": 27.0
     },
     {
       "id": "mil_027",
@@ -1004,7 +1005,9 @@
         ],
         "label": "August to September, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "height_m": 18.0,
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_028",
@@ -1038,7 +1041,8 @@
       },
       "photos": [],
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 390 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 390 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "height_m": 22.0
     },
     {
       "id": "mil_029",
@@ -1079,7 +1083,9 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "height_m": 10.0,
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_030",
