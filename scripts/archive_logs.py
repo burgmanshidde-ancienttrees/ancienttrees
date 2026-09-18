@@ -63,9 +63,43 @@ def pointer_block(name, months):
             f"repeated waste.\n{POINTER_MARK}\n")
 
 
-def strip_pointer(header):
-    return re.sub(re.escape(POINTER_MARK) + r".*?" + re.escape(POINTER_MARK) + r"\n?",
-                  "", header, flags=re.S).rstrip() + "\n\n"
+# A pointer block, recognised by its own first sentence rather than by its
+# markers. Matching markers alone is what made this dangerous: see below.
+POINTER_RE = re.compile(
+    re.escape(POINTER_MARK)
+    + r"\s*\*\*Older entries live in the archive\*\*.*?repeated waste\.\n"
+    + r"(?:" + re.escape(POINTER_MARK) + r"\n?)?",
+    re.S)
+
+
+def strip_pointer(text, tail=""):
+    """Take every pointer block out, wherever in the file it sits.
+
+    It used to strip the HEADER only, and to find a block by pairing one marker
+    with the next. Both halves were wrong, and the second half is the dangerous
+    one.
+
+    The header limit breaks when a session inserts a new entry directly after
+    the OPENING marker instead of after the closing one. The entry then stands
+    between the two markers, the first `## ` heading moves above the block, and
+    everything after it stops counting as the header: the next run cannot see
+    the block, writes a second one at the top, and strands the old one in the
+    middle of the file. LOG.md had collected three that way by 2026-09-18.
+
+    Pairing markers then turns a stranded block into data loss. With five
+    markers scattered through a file, `MARK.*?MARK` pairs the first with the
+    second and the third with the fourth, and DELETES everything between them.
+    Run against that LOG.md it removed 114 entries, and only git had them. So a
+    block is now recognised by its own generated sentence, a match is refused
+    if it contains a `## ` heading, and a marker with no block is dropped on
+    its own. There is never a reason to keep a pointer block outside the
+    header: it is generated text saying where the archives are.
+    """
+    def drop(m):
+        return "" if "\n## " not in m.group(0) else m.group(0)
+    text = POINTER_RE.sub(drop, text)
+    text = re.sub(re.escape(POINTER_MARK) + r"\n?", "", text)
+    return text.rstrip() + "\n\n" + tail
 
 
 def archive_file(fname, cutoff, dry_run=False):
@@ -74,7 +108,20 @@ def archive_file(fname, cutoff, dry_run=False):
         return None
     name = fname[:-3]
     text = open(path, encoding="utf-8").read()
-    header, entries = split_entries(text)
+    # Clean the WHOLE file, not just the header, so a block stranded among the
+    # entries by an earlier bad insertion is swept up rather than kept forever.
+    cleaned = strip_pointer(text)
+    header, entries = split_entries(cleaned)
+    # NOTHING IS EVER LOST HERE. This file moves entries between files and has
+    # no business deleting one, so the count is checked rather than trusted: on
+    # 2026-09-18 a bad strip_pointer silently took 114 entries out of LOG.md
+    # and only git still had them. Refuse the whole run rather than write a
+    # short file, because the write is what makes it permanent.
+    before = len(ENTRY_RE.findall(text))
+    if len(entries) != before:
+        raise SystemExit(
+            f"{fname}: {before} entries before cleaning, {len(entries)} after. "
+            "Refusing to write. This is a bug in strip_pointer, not in the file.")
     if not entries:
         return None
 
@@ -96,7 +143,7 @@ def archive_file(fname, cutoff, dry_run=False):
 
     if not move and existing:
         # Nothing to move, but make sure the pointer is present and correct.
-        new_header = strip_pointer(header) + pointer_block(name, existing)
+        new_header = strip_pointer(header, pointer_block(name, existing))
         new_text = new_header + "".join(t for _, t in keep)
         if new_text != text and not dry_run:
             open(path, "w", encoding="utf-8").write(new_text)
@@ -121,7 +168,7 @@ def archive_file(fname, cutoff, dry_run=False):
             open(apath, "w", encoding="utf-8").write(out)
 
     months = existing | set(by_month)
-    new_text = strip_pointer(header) + pointer_block(name, months) + \
+    new_text = strip_pointer(header, pointer_block(name, months)) + \
         "".join(t for _, t in keep)
     if not dry_run:
         open(path, "w", encoding="utf-8").write(new_text)
