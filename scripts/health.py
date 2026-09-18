@@ -68,17 +68,77 @@ WATCHED = {
 BRANCH_SCOPED = {"ios.yml": "main"}
 
 
-def gh_latest(workflow):
-    """(conclusion, created_at) of the newest run, or None when gh cannot say."""
+# How far the SITE may fall behind main before it is worth saying so. Not an
+# absolute age: a quiet night pushes nothing, deploys nothing, and is perfectly
+# healthy. The question is whether newer commits are sitting undeployed.
+DEPLOY_LAG_HOURS = 4
+
+
+def gh_last_success(workflow):
+    """(when the newest successful run started, when the newest run started).
+
+    The second half of the 2026-09-17 lesson. gh_latest now finds a FAILURE
+    buried under cancellations; this finds the case where nothing failed and
+    nothing shipped either, because every run was cancelled by the next push.
+    Neither alarm can see the other's case: a starved pipeline has no failing
+    run to read, and a failing one may well have deployed an hour before.
+
+    Returns (None, None) when gh cannot say, so the caller stays quiet rather
+    than guessing.
+    """
     try:
-        # Five, not one, and then take the newest COMPLETED run. A run that is
+        cmd = ["gh", "run", "list", "--workflow", workflow, "-L", "40",
+               "--json", "conclusion,createdAt,status"]
+        branch = BRANCH_SCOPED.get(workflow)
+        if branch:
+            cmd += ["-b", branch]
+        out = subprocess.run(cmd, capture_output=True, text=True,
+                             timeout=60, cwd=ROOT)
+        if out.returncode != 0:
+            return None, None
+        rows = json.loads(out.stdout or "[]")
+
+        def when(r):
+            raw = (r.get("createdAt") or "").replace("Z", "+00:00")
+            return datetime.datetime.fromisoformat(raw) if raw else None
+
+        ok = [when(r) for r in rows if r.get("conclusion") == "success"]
+        ok = [w for w in ok if w]
+        newest = [when(r) for r in rows]
+        newest = [w for w in newest if w]
+        return (max(ok) if ok else None, max(newest) if newest else None)
+    except Exception:
+        return None, None
+
+
+def gh_latest(workflow):
+    """(conclusion, created_at) of the newest run that actually judged anything.
+
+    A CANCELLED run judged nothing, and on this repository cancellations are
+    the normal case rather than the exception: deploy.yml cancels a superseded
+    push on purpose, and a night run commits its claims and releases faster
+    than a build takes, so a claim storm can cancel a dozen runs in a row.
+    Taking the newest completed run therefore reported "cancelled", which the
+    caller correctly treats as no news, and a genuine FAILURE sitting one run
+    behind it went unseen. That is not hypothetical: on 2026-09-17 the deploy
+    failed at 10:59 on a split species name, eleven cancelled runs piled on top
+    of it, and this function would have answered "cancelled, 0h ago" to anybody
+    who asked while the site had not deployed for nearly two hours.
+
+    So it now skips cancelled runs and reports the newest run that reached a
+    verdict, falling back to the cancelled one only when there is nothing else
+    in the window. Twenty rather than five for the same reason: a claim storm
+    is longer than five runs.
+    """
+    try:
+        # Twenty, not one, and then take the newest COMPLETED run. A run that is
         # still going reports conclusion "", which the caller compared against
         # None and therefore read as a failure: on 2026-08-17 this told a night
         # run "Smoke test is  (its newest run, 0h ago). The site may be broken"
         # while the site was fine and the deploy was simply mid-flight. The
         # question this function answers is "did the last finished check pass",
         # and an unfinished run has not answered it either way.
-        cmd = ["gh", "run", "list", "--workflow", workflow, "-L", "5",
+        cmd = ["gh", "run", "list", "--workflow", workflow, "-L", "20",
                "--json", "conclusion,createdAt,status"]
         branch = BRANCH_SCOPED.get(workflow)
         if branch:
@@ -93,6 +153,9 @@ def gh_latest(workflow):
                 and r.get("conclusion")]
         if not done:
             return None
+        # The newest run that reached a verdict. Cancelled is not a verdict.
+        judged = [r for r in done if r.get("conclusion") != "cancelled"]
+        done = judged or done
         created = done[0].get("createdAt", "")
         when = datetime.datetime.fromisoformat(created.replace("Z", "+00:00"))
         return done[0].get("conclusion"), when
@@ -397,6 +460,28 @@ def main():
                             "anything else")
                 problems.append(f"{label} is {conclusion} (its newest run, "
                                 f"{hours:.0f}h ago). {what}.")
+        # THE SITE FELL BEHIND MAIN (2026-09-17). Only for the deploy, where
+        # "nothing shipped" has a plain meaning. A cancelled run is normal and
+        # right here, so the alarm is not about cancellations: it is about
+        # commits sitting on main that no successful build has carried out.
+        if wf == "deploy.yml":
+            ok_at, newest_at = gh_last_success(wf)
+            if newest_at and ok_at and ok_at < newest_at:
+                behind = (now - ok_at).total_seconds() / 3600
+                if behind > DEPLOY_LAG_HOURS:
+                    problems.append(
+                        f"{label} last SUCCEEDED {behind:.0f}h ago and there "
+                        f"have been pushes since, so main is ahead of the live "
+                        f"site. Runs cancelling each other is normal; this many "
+                        f"hours of it is not. Read the newest finished run, and "
+                        f"dispatch a build that cannot be cancelled: "
+                        f"gh workflow run deploy.yml")
+            elif newest_at and not ok_at:
+                problems.append(
+                    f"{label} has no successful run in its recent history at "
+                    f"all. The live site is whatever was last deployed before "
+                    f"that: gh workflow run deploy.yml")
+
         if max_age and age > max_age:
             problems.append(f"{label} has not run in {hours:.0f}h "
                             f"(threshold {max_age.total_seconds()/3600:.0f}h). "

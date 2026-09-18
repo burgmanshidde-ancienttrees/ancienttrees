@@ -2,6 +2,39 @@
 
 <!-- archive-index -->
 
+## 2026-09-18 (session) - health.py can now see a failure hiding under cancellations
+
+The translations are live; the dispatched build went through at 12:43 yesterday
+and the site has been deploying normally since. This is the loose end from it.
+
+**What was wrong.** `health.py` asked "did the newest finished run pass", and a
+CANCELLED run counts as finished while judging nothing. On this repository
+cancellations are the normal case rather than the exception: deploy.yml cancels
+a superseded push on purpose, and a night run commits its claims faster than a
+build takes, so a claim storm cancels a dozen runs in a row. Yesterday the
+deploy FAILED at 10:59 on a split species name and eleven cancelled runs piled
+on top of it. Anybody running health.py at 12:30 would have been told
+"cancelled, 0h ago" and nothing else, while the site had not deployed for two
+hours. The alarm was not ignored; it could not see.
+
+Two changes, because the two failure modes cannot see each other. A starved
+pipeline has no failing run to read, and a failing one may well have deployed
+an hour earlier.
+
+- `gh_latest()` skips cancelled runs and reports the newest run that actually
+  reached a verdict, over a window of twenty rather than five, because a claim
+  storm is longer than five runs.
+- `gh_last_success()` answers the other question: has anything SHIPPED. It
+  fires when the last successful deploy is more than four hours old AND there
+  have been pushes since, so a quiet night with nothing to deploy stays quiet.
+
+Tested against yesterday's own run history rather than in the abstract: the
+buried failure is now reported, six hours of pure starvation is reported, and
+neither a healthy afternoon full of cancellations nor a quiet night with no
+pushes says anything. gh is absent in a web session, so this was exercised with
+the real run list fed in directly.
+
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-09](archive/LOG-2026-09.md)
