@@ -111,9 +111,9 @@
       "id": "sal_003",
       "name": "The Etna Birch of Magazzeni",
       "species": "Etna Birch (Betula aetnensis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 75 to 150 years, judged from a trunk 2.05 m round",
+      "age_min": 75,
+      "age_max": 150,
       "girth_cm": 205,
       "height_m": 12,
       "location": {
@@ -137,7 +137,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 205 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     }
   ]
 }

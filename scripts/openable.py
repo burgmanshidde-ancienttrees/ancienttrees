@@ -87,6 +87,14 @@ def load_places():
     for c in queue:
         if not c.get("rank") or (c.get("trees") or 0):
             continue
+        if c.get("covered_by"):
+            # city_queue.py's own pin-density check already found our pins
+            # sitting in this town under another published city's name
+            # (the Funchal/Madeira mistake of 2026-09-02). Trust it rather
+            # than re-deriving coverage from a centroid distance, which is
+            # exactly what let Funchal print here again on 2026-09-17 with
+            # 6 "openable" candidates that were Madeira's all along.
+            continue
         p = coords.get(c["city"]) or coords.get(c["slug"])
         if not p:
             continue

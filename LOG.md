@@ -45,6 +45,264 @@ Verified after the real run: living plus archive is 910 entries for LOG and 637
 for CURATION, the same totals as before, and exactly one pointer block per
 file, in the header.
 
+## 2026-09-17 - Digest session: App Store downloads is its own block now, and the fold is a check
+
+Reported the daily digest. Two of the tables it contracts for were missing
+from this morning's entry: the app's own events, and App Store downloads. The
+first is honest bad luck, a PostHog read timeout. The second was structural
+and is fixed.
+
+`app_store_downloads_lines()` was being appended INSIDE `app_section`, so
+`block()` caught the PostHog exception and Apple's numbers, which come from
+Apple, died with it. The digest went green reporting neither. That is the
+exact thing the 2026-09-08 ruling forbids ("ik mis app downloads in deze
+lijst": its own table, beside the app's, never folded in), and it held in
+print while the wiring quietly had it folded.
+
+Live on main:
+- `app_store_section()` is its own `block()`, so the two fail apart.
+- `_posthog` retries once on a timeout, which is the failure that happened.
+- `check_app_downloads_are_their_own_block()` in qa.py refuses the fold
+  coming back. Second showing of one lesson, so a check rather than a third
+  sentence. Removing it needs Hidde.
+
+Verified by running the check against both shapes of the source: it fires on
+the folded one and passes on this one. qa.py's full suite needs a built site
+and this change does not touch the site, so it was not rebuilt here.
+
+Numbers, since tomorrow's digest will have moved on: Google's freshest day 37
+clicks on 2140 impressions, the window 387/18359 at 2.1%. Beacon 90 visits.
+Nothing from readers again: 50 of the 54 feedback rows in the fortnight are
+ours. Seven night runs, 453 minutes, 51 trees. Last known app numbers are
+09-15: 69 downloads over 12 days, 799 events ever.
+
+## 2026-09-17 - Night run 2026-09-17 22:31 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 43.8 minutes of its 120 minute window, 350 turns, 58 commands refused by the allowlist, ended clean (success). 10 tree(s) reached data/cities across 9 city file(s), and the run still wrote no log entry of its own. Claims left behind: _famous-japan, arnhem, krakow, geneva, utrecht, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-17 - Night run 2026-09-17 19:23 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 64.5 minutes of its 120 minute window, 280 turns, 16 commands refused by the allowlist, ended clean (success). 13 tree(s) reached data/cities across 140 city file(s), and the run still wrote no log entry of its own.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-17 (continuation 14) - Finished two stranded verify passes: Mishima folded into Atami, Zarzecze published standalone, Mielnik held
+
+An earlier attempt this same window verified two claimed batches
+(`_famous-japan`, `_famous-poland`) but stopped before writing, building or
+committing, leaving the output sitting in the working tree. Finished it
+rather than redoing it: wrote all three candidates directly in-session
+(too thin a batch for a dispatched write pass), rebuilt, and registered the
+new city in data/city-list.json (which only city_queue.py's rebuild_list
+updates, and only for rows already present, so a brand-new city needs
+adding by hand first).
+
+**Atami 2 -> 3 trees.** ata_003, the Kinmokusei of Mishima Taisha (National
+Natural Monument 1934, a documented double-bloom each September, an annual
+festival), folded in with Mishima's own honest address and transport, one
+JR stop from Atami and inside the day-trip boundary, matching the
+ata_002/Yugawara precedent already on that page.
+
+**Zarzecze published as a new standalone place**, zrz_001, a 5.6m-round
+London plane before the Dzieduszycki Palace in Podkarpackie, Poland:
+documented family folklore (a horse burial, harvest feasts, a schoolroom
+under its crown) and a 2017 national Tree of the Year contest entry. This
+was a closer call than most single-famous-tree exceptions: no nearby
+Polish city to fold it into, and the fame signal is real but not as loud
+as, say, Sliven's. Recording the call here per the mandate rather than
+treating it as automatic; revisit if it reads as wrong.
+
+**Mielnik's Sosna Mielnicka (Parasolka) held, not published.** Fully
+verified (register designation, a 2023 dendrologist health check finding
+it alive and sound), but its own verify_notes call it "not obviously a
+destination on its own merit" and nothing folds it in. Kept in
+data/research/famouspoland-verified.json for a future Podlasie cluster or
+a stronger fame signal, per the 2026-09-08 scarcity ruling: shipping it
+just because the research was already paid for would be the completeness
+that doctrine warns against.
+
+Also released a stale `trieste` claim from the same earlier attempt (a
+partial Il Piccolo fetch with no output): folded the extracted article
+text into data/research/trieste.md, two named candidates worth a future
+look (a hackberry in Piazza Hortis, a plane on Viale al Cacciatore).
+
+Build (11,731 pages), qa.py (15,543 pages) and preflight.py (611 cities, 0
+problems) clean. Both verify claims released.
+
+## 2026-09-17 - Night run 2026-09-17 14:31 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 53.1 minutes of its 120 minute window, 423 turns, 28 commands refused by the allowlist, ended clean (success). 2 tree(s) reached data/cities across 2 city file(s), and the run still wrote no log entry of its own. Claims left behind: Niagara Falls, Wellington, Kilkenny, Izmir, Stirling, Evora, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-17 (session) - The deploy was red on its first gate, and Graz argued with itself
+
+Found while pushing the alignment work: `i18ncheck.py` failed on main, and it
+is the FIRST step in deploy.yml, so nothing was reaching the site at all. Nine
+trees across six translated overlays had gained an English `age_estimate` from
+the derived-ages run and carried none in their own language: de/graz, es/girona,
+it/cagliari, it/florence, it/milan, it/rome. Filled, in the shape each language
+already uses, keeping the basis the estimate rests on ("stimati da un tronco di
+5 m di circonferenza"), because a derived age that does not say what it is
+derived from is a guess wearing an estimate's clothes.
+
+The same run left Graz contradicting itself on a published page. Its question
+answer said, of the two Panoramagasse oaks, that "converting a girth into a
+year needs a cited growth rate this page does not have in hand, so no number is
+guessed" while those two trees now carry exactly that number. Both sentences
+were true when written; ages.py is the cited growth rate that arrived in
+between. The page now gives the two bands, says the arithmetic puts the larger
+oak past the maple while the maple keeps the better paper trail, and says the
+bands are a century wide because that is the honest width. English and German
+together, one change.
+
+i18ncheck clean, preflight 0 problems. Merged and pushed to main.
+
+## 2026-09-17 (session) - One page container, so nothing jumps inward any more
+
+Hidde, with a screenshot of the homepage footer: "Het is raar dat de sectie
+footer en missie opeens verder naar binnen springen qua alignment. Kun je dit
+fixen en de site nalopen voor meer van dit soort design slordigheden en fixen
+niet vragen gewoon verbeteren."
+
+He found one jump and there were four. Measured on the built pages rather than
+guessed, left edge of the ink in each band of the homepage:
+
+| Band | Phone, was | Phone, now | 1280, was | 1280, now |
+|---|---|---|---|---|
+| Shelves (favourite cities, species, parks) | 16 | 16 | 72.5 | 122.5 |
+| Find / walk / collect | 24 | 16 | 136.5 | 122.5 |
+| The directory | 16 | 16 | 122.5 | 122.5 |
+| Footer and the mission block | 40 | 16 | 40 | 122.5 |
+
+The cause was one token short. 2026-08-20's "fix beide" gave the site a single
+`--gutter` and it fixed the CHROME: the bar, the map sheet, the cards. The
+page's own BANDS never joined it, so each went on carrying a number of its own,
+the footer at 2.5rem, the acts at 1.5rem and 1040 wide, the shelves at 2rem and
+74rem wide, the directory at 2.5rem and 1100 wide. They all read `--page-max`
+and `--page-pad` now; the reading column on a tree or city page keeps its own
+narrower measure on purpose, under `--content-max`.
+
+Three more of the same kind, found by walking the pages at both widths:
+
+- **The explore sheet's prose** sat 16px right of the cards above it on every
+  phone, because `.panel-foot` already sets the sheet's gutter and the prose
+  added a second one on top of it.
+- **The app landing card** hung 6px inboard of the footer on a phone and 14px
+  outboard of it on a desktop. Same container now.
+- **A city with no photograph** drew an empty beige rectangle on /cities, in
+  the translated indexes and in both map panels, which reads as a broken
+  image. The drawing those four wanted already existed and was used by every
+  other browse index: four call sites emitted `exc-noph`, which nothing
+  anywhere styled. One `NO_PHOTO_CARD` now, beside the drawing itself.
+
+**Why no gate caught the footer, which is the part worth keeping.** The smoke
+test has measured DRIFT since 2026-08-20, and it walks
+`querySelectorAll('body *')`: every DESCENDANT of the body and never the body
+itself, so the one column holding the page's bands was the one column never
+compared. And DRIFT only reports near misses, at most 11px, because a genuine
+nesting inset is deliberate and large. 24px looked deliberate.
+
+So BAND, the fifteenth ratchet check, asks the question DRIFT cannot: does this
+page have ONE left edge? It compares the body's stacked bands at any distance
+and fails on anything but one shared edge, exempting what is not a band in the
+column (a centred reading column under 60% of the viewport, a band whose ink is
+a painted box like the app page's floating card, full-bleed ink at the very
+edge, centred text). Verified by putting each fault back and watching it go
+red: "main.content-page starts at 16 (h1) but footer at 40 (p)". Removing it
+needs Hidde. body is now in DRIFT's loop as well.
+
+One unrelated bug fell out of running the gates in sequence: `smoke_test.py`
+wrote `__sheet.html` into dist and never deleted it, so a local smoke run left
+a file behind that then failed qa's orphan check. It cleans up after itself now.
+
+Not a new interaction, so no convention lookup: this is one existing token
+applied where it had never reached.
+
+qa 15,508 pages clean, smoke clean at 375 and 1280 across eight page types,
+preflight clean. Merged and pushed to main.
+
+## 2026-09-17 (session) - The map's filter chips are the app's chips now, down to the anatomy
+
+Hidde, with a screenshot of the map on his phone: "de filters zien er totaal
+slecht uit neem de app als voorbeeld en stop met dit soort slordigheden qua
+design."
+
+The row was built five days ago from the right convention and none of the
+detail. CONVENTIONS.md said "same capsules, same words, same order", and the
+words and the order were right while the capsules were nothing like the app's.
+What FilterChip.swift actually draws: an icon at the head of the label, 13pt
+MEDIUM, a 34-tall capsule on a hairline border, moss when it is on, sitting
+inside a 44-tall tap target. What the website drew: 44-tall white slabs, no
+icon anywhere, a 600-weight label, and a native <select> that Safari's 16px
+floor made visibly larger than the three buttons beside it. One row, two type
+sizes, four shapes that were not the app's.
+
+Live on /explore in all eight languages (one component):
+
+- Every chip is a 34-tall pill inside a 44-tall button, which is how the web
+  gets the app's two heights at once. The comment that used to sit in the CSS
+  said a web row "cannot do that for a select" and gave up at 44; a pill inside
+  the control does it for both kinds.
+- The four icons the app names, drawn as strokes at one weight so the row stops
+  looking assembled from parts: heart, checkmark.seal, leaf, ticket.
+- The species chip wears the species once you pick one, like the app's
+  (FilterChipLabel(label: filters.species ?? "Species")), truncated at 8.5rem.
+  The select is still the platform picker, now as the pill's invisible tap
+  layer, which is also what lets it hold the 16px that stops Safari zooming the
+  map in and never back out.
+- MapLibre's attribution (i) sits at the map's top-left, under the row. The old
+  slabs hid it completely and a 34-tall pill let it peek out as a smudge; it
+  now drops below the row, on maps that have a row.
+
+No app change: the app is the reference here and was already right.
+
+Measured on the built page rather than by eye: pill 34 in a 44 button, the
+species chip filling moss and reading "Pedunculate Oak" with "265 trees"
+beside it, clearing back to "Species", the longest name in the catalogue (66
+characters) truncating instead of pushing the row. Smoke test green at 375px
+including its tap-target and fits-a-phone gates, preflight 0 problems,
+paritycheck clean. Merged and pushed to main.
+## 2026-09-17 (session) - 44 trees got an age from their trunk, and the hug reached the form
+
+Third of the stranded branches Hidde asked for
+(claude/tree-age-species-trunk-size-u9u1yb, written 09-11, unmerged for six
+days).
+
+- **scripts/ages.py**, the script CLAUDE.md has asked for since 2026-08-16.
+  Mitchell's rule, 2.5 cm of girth a year open-grown and 1.5 in shade, so the
+  output is a band a factor of 1.7 wide and ships as one. 44 trees that had no
+  age now carry one; `--report` returns zero eligible and 199 refused, 192 of
+  them because their species falls outside the published rate.
+- **The hug on the add-a-tree form**, the Ancient Tree Inventory's unit, which
+  is the only measurement somebody standing at a trunk can take.
+- **-collect-describe**, so the screen carrying every field a contributor
+  types can be photographed. It went from one field to two on 2026-09-08 and
+  had never been looked at.
+
+**Two girth fields survive, not one, and that was the real merge decision.**
+Main built `girth_cm` in the meantime, a number typed against a tree we already
+map; the branch built the hug, what somebody answers while adding a tree they
+found. Different questions at different moments, so both stay, and the branch's
+column is renamed `girth` to `girth_hugs` everywhere, because `girth` beside
+`girth_cm` reads as one field with two units. Free, since that column has never
+been applied.
+
+Seven of the 44 came from running the script here, on trees main has added
+since the branch ran: Enschede, Florence, Milan twice, Rome, Vancouver,
+Xhoris. Birch, hackberry, almond, beech and lime, all well under the 6 m cap.
+
+Verified: build 11,710 pages, qa 15,508 pages, preflight 0 problems, netcheck
+and the screen lists clean.
+
+**Item 6 on this list was already done.** check_one_owner_per_event() and both
+un-doubled listeners are in main by another route, so
+claude/nostalgic-lewin-e2a29b and claude/project-display-chrome-macos-no73xi
+(Rome at 10 trees, against 31 today) carry nothing and should be deleted rather
+than merged. The stranded-branch check reads "not merged" and cannot read
+"landed another way", which is worth knowing before trusting its list.
 ## 2026-09-17 (session) - Sign in with Apple is live on the web
 
 Hidde opened /auth/v1/authorize?provider=apple and got Apple's own login page:
@@ -4116,6 +4374,61 @@ Hidde, from his phone: "Ik zou in de city lijst wel echt cities alleen tonen en 
 Build 5366 pages, qa.py clean (8368 pages), preflight 0 problems. Looked at the page rendered at 375px and 1280px, both sections. Recorded in DECISIONS.md and, for the convention question of how a directory treats a famous single thing, in CONVENTIONS.md.
 
 FOR HIDDE: one judgement call is yours to overrule in a sentence. Canberra stays on the list with its single tree because the queue ranks it as a city we are covering. If you would rather the grid held only places with something to walk between, say so and the queue clause comes out, which drops Canberra and ten others.
+## 2026-09-11 (session) - benchmarked the trunk control properly, and found the screen it lives on has never been photographed
+
+Hidde, on the field below: "heb je het mooi gemaakt en gebenchmarkt enzo?" The honest answer was half a no, and the half that was missing turned out to matter more than the control.
+
+**What I had benchmarked was the MEASUREMENT and not the CONTROL.** The hug is right and the sources are in CONVENTIONS.md. The thing holding it was a LazyVGrid with adaptive columns, chosen because it is the container SwiftUI ships rather than the one the convention asks for. Looked up properly now: a segmented control is for switching between views or modes and its segments are equal width; a choice chip is for picking a VALUE out of three to six options, sizes to its own text, and wraps. Ours answers a question, so it is chips, and the grid was a segmented control wearing capsules. Replaced with `FlowRow`, the Layout protocol doing the one thing it exists for, and the chips now hug their own text. Both lookups are in CONVENTIONS.md under a new entry so the next control does not repeat this.
+
+**And the bigger find: the screen has never been photographed, by anybody, ever.** appsweep.py's own header says a screen no argument can open is a screen that ships unseen, and the collect flow has arguments for place, identify, ticked and compare. It has never had one for DESCRIBE, which is the screen carrying every field a contributor types. It went from one field to two on 2026-09-08 and nobody has looked at it since, because nobody could: it sits behind a camera a simulator does not have. `-collect-describe` exists now, with entries in both screen lists, so CI photographs it and appfit measures it from this push on.
+
+So: no, I have not made it "mooi", and I cannot from here. What I have done is make it possible to SEE, which is the step that was actually missing.
+
+**CI verdict on the push, run 34560837349: green, all of it.** Build and every test passed, including the two new upgrade tests. `appfit` measured the new `collect-describe` screen on both phones and found nothing, which is a real verdict rather than a quiet pass: appfit exits 1 on any finding and that step carries no `|| true`. The refused walk and the screenshot sweep went green too.
+
+**And a limit on this environment worth writing down so nobody spends a window on it again: a web session cannot read a CI artifact.** GitHub's artifact API always redirects to `*.blob.core.windows.net`, and this container's egress proxy denies that host with a 403 (policy, not a transient failure). So the screenshot of `collect-describe` now EXISTS, for the first time ever, and I still cannot open it. Hidde can, in a browser, from the run page: Artifacts, `appsweep-34560837349`, `collect-describe.png`. That is the honest split this whole change produced: the machine half is measured and clean, the eyes half is now possible and is his.
+
+**Also made the sync survive Hidde not having run the SQL yet** (he said "ik kan nu niet supabase"). PostgREST refuses a whole row for a column it cannot find, and refusing the row loses the TREE. The trunk answer is the least valuable thing in that row, so a failed push now retries once without it. The key is only present when somebody answered, so nothing else ever takes the second call, and it retires itself the moment the column exists.
+
+## 2026-09-11 (session) - the app asks how thick the trunk is, in hugs
+
+Hidde, straight after the age script landed: "en bij het toevoegen van een boom een nieuw veld - girth". So the add-a-tree sheet has a third field, under the name and the reason, and it is optional like both of them.
+
+**It asks in HUGS, not centimetres, and that is the convention rather than an idea of ours.** The Ancient Tree Inventory has run fifteen years of citizen tree recording and hands anybody without a tape the hug: one adult hug is 1.5 m fingertip to fingertip, and they publish a threshold table per species. It is the only measurement available to somebody standing in a park holding a phone, and it sidesteps the metric-or-imperial question a number would force. Five capsules: less than 1, 1, 2, 3, 4 or more. Tapping the chosen one clears it, since there is no other way out of a single-choice row.
+
+**Why it earns a third field on a form we have twice cut down.** Girth is the only measurement an age can be DERIVED from rather than invented, which is this project's own rule since 2026-08-16 and became a script this morning. Nothing else somebody can give us in five seconds turns into a fact on a page. And the precision costs nothing, which is the finding from the same conversation: a hug is good to about 25 cm and a LiDAR scan to 3, and the growth rate makes the answer a band a factor of two wide either way.
+
+Three design calls, each with a more obvious wrong answer, all recorded in CONVENTIONS.md: a wrapping grid rather than a segmented control (Apple's guidance is short labels of roughly equal width, and five capsules do not fit one line at 375 points); the explanation ABOVE the chips rather than under them, because it defines the unit somebody is about to count in, which is what our own web contribute form already does with its hints; and the phone storing the answer as given ("<1", "2", "4+") with the conversion to metres living in `sightings_inbox.py`, so it can be corrected without an App Store release.
+
+End to end: `Sightings.Sighting.girth` (optional, so every file written before today still decodes), through `SightingSync` in both directions, into a `girth` column on the sightings table, out again in `sightings_inbox.py` where the judging screen prints it in plain words ("about two hugs, roughly 3 m round"). Two tests in `UpgradeTests.swift` hold the disk side: a tree saved before the field existed still opens, and an answer survives the round trip.
+
+On the web, one line added to "What helps most" on /contribute rather than a field, and the reason is real rather than a dodge: a hug is a measurement you take while standing at the trunk, and the web form is somebody at a desk remembering a tree.
+
+**FOR HIDDE, two things.** The SQL needs your paste, `supabase/sightings.sql` (it ends in a one-line `alter table ... add column if not exists girth text`, safe to run again); until then the app keeps the answer on the phone and the sync drops it. And I cannot build or look at the app from here, so the iOS CI run on this push is the first real verdict on whether it compiles and fits; nothing in it has been seen rendered.
+
+**One honest sentence about what this is worth today.** Nobody but you has ever added a tree, so this field collects from a population of one for now. It is right for the day that changes, and the bigger prize is the same question asked when somebody ticks off a tree we ALREADY map, because 1,610 of our published trees carry no girth and that is where a reader's answer turns straight into a published age. That one adds a question to the payoff screen, which CONVENTIONS.md warns about, so it is yours to call.
+
+## 2026-09-11 (session) - 37 pages that said nothing about age now say something, derived from the trunk
+
+Hidde asked whether the app asks a contributor for a trunk size, and whether species plus trunk size could give an approximate age. It does not ask, and the age half was already this project's own written rule since 2026-08-16 ("girth plus a published growth rate for that species is dendrology") with the condition attached that it becomes a script once a few hundred girths exist. There are 1,354. So this is that script, `scripts/ages.py`, the third sibling of girths.py and heights.py.
+
+**37 published trees that carried no age at all now carry a band**, across 22 places: Cologne, Krakow, Perugia, Trento, Portland, Girona, Graz, Brussels, Paris, Barcelona, Cagliari and more. The output looks like "roughly 150 to 250 years, judged from a trunk 3.75 m round". 219 trees were eligible by having a girth and no age; the other 182 are refused with a written reason in `data/research/ages-from-girth.json`, so the next run reads the no instead of rediscovering it.
+
+**The refusals are the point, not the leftovers.** The published rate covers temperate broadleaves and nothing else, so the allow list is closed rather than a default with exceptions: 177 refusals are species outside it. The biggest single group is the London Plane at twelve, which puts on girth far faster than the published rate, so dividing by that rate would have aged every one of them at several times its real years. Yews are refused for the opposite reason and are the species every guide to this method names as the one it cannot do. Also out: conifers, subtropicals (figs, camphor, rain trees), and two entries whose own names describe more than one trunk, where a girth belongs to one stem and the sum would have claimed it for the group.
+
+**We measured how often it is right rather than assuming.** Against the 300 published trees carrying BOTH a girth and an age somebody wrote down, the band contains their stated age 6 times in 10. The misses are systematic and worth knowing: a quarter are us being too YOUNG, and they crowd into the big trunks, because girth growth slows sharply in a genuinely old tree and a linear rule cannot see that. We under-age 6 to 23 percent of trees below 5 m round and 30 to 45 percent above 6 m. The Stelmuze Oak is the shape of it: 13 m round, the sum says 500 to 900 years, Lithuania says 1,500 to 2,000. So the script refuses any trunk over 6 m, which cost three trees (Girona's 9.7 m chestnut, Ronda's 7.2 m chestnut, Portland's 7 m beech) and is right.
+
+**The rate was not tuned to flatter that number.** Widening the slow end to 1 cm of girth a year takes agreement from 61 to 74 percent, and 1 cm a year is outside what the sources publish. Fitting our own data would have been the fabrication this script exists to avoid, particularly since a good few of the ages it is checked against were themselves derived from a girth by a register doing the same arithmetic. The rate comes from the literature, the cap comes from the evidence.
+
+**Three places say what the number is, none of them optional.** `age_basis: "girth"` is the machine-readable flag, and `ageToken()` in tree-copy.ts now refuses to quote a derived age as a flat number in a page title, the same way it already refuses a disputed one: otherwise Cologne's oak would have been titled "150 Year Old Pedunculate Oak", a fact we do not have from arithmetic that never claimed it. The age_estimate sentence carries the basis after the comma, which the tree page already renders correctly with no new code (the facts chip takes the part before the comma, the Age estimate row takes the whole thing). And verify_notes carries it for whoever works on the tree next.
+
+Five translated overlay entries (es Barcelona, fr Brussels x2, fr Paris, it Cagliari) got the same age in their own language, so no translated page shows an empty Age row where its English twin shows a band.
+
+Build 5366 pages, preflight 0 problems (and the young-tree NOTE held at 128, unchanged, because the script refuses any band topping out under a century), qa.py 8368 pages clean.
+
+Also recorded, before any of this was built: CONVENTIONS.md now carries the trunk-size lookup. The Ancient Tree Inventory asks amateurs for girth at 1.5 m and publishes the adult HUG as the tape-free unit (1.5 m fingertip to fingertip, with a per-species threshold table), and LiDAR DBH apps measure to an RMSE of 2.3 to 3.1 cm. The decision-shaped finding sits in that entry: because the growth rate sets the error and not the tape, a hug and a LiDAR scan produce very nearly the same band, so the expensive instrument buys precision the answer cannot use.
+
+FOR HIDDE: nothing blocking. The two remaining steps from that conversation are yours to call, and the cheap one is asking for the hug in the app.
 
 ## 2026-09-11 (continuation) - New city Hallstatt (4 trees, Austria's 7th), cleared two stale write claims
 

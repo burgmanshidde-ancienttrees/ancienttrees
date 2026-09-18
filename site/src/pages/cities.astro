@@ -7,7 +7,7 @@ import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees } from "../lib/trees";
 import { belongsInCityIndex, CITY_INDEX_FLOOR } from "../lib/city-index";
-import { cityFace } from "../lib/images";
+import { cityFace, NO_PHOTO_CARD } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
 import { byCityListOrderEntry } from "../lib/city-order";
@@ -61,7 +61,7 @@ const otherGroups = groupByCountry(others);
 function card(p: (typeof published)[number]): string {
   const ph = p.face
     ? `<span class="exc-ph"><img src="${esc(p.face)}" alt="" loading="lazy"></span>`
-    : '<span class="exc-ph exc-noph"></span>';
+    : NO_PHOTO_CARD;
   return `<a class="exc-card" href="/${p.slug}">${ph}<span class="exc-body"><b>${esc(p.city)}</b><span>${nTrees(p.count)}</span></span></a>`;
 }
 

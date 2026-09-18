@@ -157,6 +157,28 @@
       "latitude": 51.447177,
       "longitude": 5.685448,
       "reason": "Register entry covers a group of 5 oaks planted along the Zuid-Willemsvaart canal shortly after the canal's completion (register's own history: the trees were likely planted shortly after the canal's completion in 1822). A row of roadside/towpath trees strung along a stretch of canal is an avenue, not one collectible point with one obvious place to stand. No source found naming or distinguishing a single standout tree within the group. Would become publishable if a source identifies one specific tree as exceptional within the row."
+    },
+    {
+      "register_ids": [1693495, 1693496, 1693497, 1693498, 1693499, 1694350],
+      "name": "The 1910-1920 dendrological cluster of buitenplaats De Beemd (Dakspaaneik, Kastanjebladige eik, Bonte tamme kastanje, Bonte reuzenlevensboom, Bruine beuk, Wilgeik)",
+      "place": "Helmond, Aarle Rixtelseweg 101, buitenplaats \"De Beemd\"",
+      "latitude": 51.49974,
+      "longitude": 5.6449,
+      "reason": "Checked as the 2.1-2.2 km cluster flagged in the 2026-09-17 brief. All six register entries share one address, one owner_category (particulier) and one planted_band (1910-1920): a private country estate (buitenplaats De Beemd, laid out 1919 by dendrologist/garden architect Leonard Springer) rather than a municipal park. Critically, the register's OWN visitable field reads 'nee' for all six trees (visible is 'nee' for five of them and 'ja' only for the Dakspaaneik, which is still not visitable). This is squarely the private-estate case hard rule 10 excludes regardless of how remarkable the planting: a Springer-designed dendrological collection is genuinely interesting but not one the register itself says the public may enter. No independent source found offering public tours, open days or a public path crossing the grounds. Blocked as a whole cluster; would need a source establishing the estate opens to visitors (open days, guided tours) to reopen any of these."
+    },
+    {
+      "register_id": 1683261,
+      "name": "Zomerlinde",
+      "place": "Stiphout, Veedrift 2",
+      "latitude": 51.478342,
+      "longitude": 5.623333,
+      "reason": "Checked as part of the 2026-09-17 brief's promising cluster. Veedrift 2 is a private detached residential home (built 1962, largely rebuilt circa 2000, on a 1,670 sq m plot per Buitenstate/Huispedia listings), i.e. an ordinary private house and garden, not a public or institutional site. Register marks visitable=ja/visible=ja but per hard rule 10 a private home's own grounds stay out 'whatever the register says and however fine the tree'. No source found placing this lime on public ground or offering public access. Blocked."
+    },
+    {
+      "name": "The Copper Beech(es) of the Sint Lucia Churchyard",
+      "register_id": 1679427,
+      "status": "verified_delivered",
+      "reason": "Checked as part of the 2026-09-17 brief's promising cluster and it cleared the bar: delivered as hlm_020 in data/research/helmond-verified.json. Recorded here only so this register nr is not re-mined by a future pass; see that file for the full verify_notes."
     }
   ]
 }

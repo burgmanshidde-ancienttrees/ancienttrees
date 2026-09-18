@@ -2,11 +2,11 @@
   "city": "Kawazu",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Kawazu sits on the east coast of the Izu Peninsula, at the far end of the winding coastal line from Ito, and the reason to get off the train here is a single camphor tree. The great camphor of Sugihokowakenomikoto-jinja is fifteen metres round and twenty-four metres tall, tied for the second-thickest tree in Shizuoka prefecture, and it is the last survivor of seven great camphors that once stood in the old district. A sign at the shrine entrance exists to stop people admiring the wrong tree.",
-  "meta_description": "The great camphor of Sugihokowakenomikoto-jinja in Kawazu, Japan: fifteen metres round, a Natural Monument since 1936, last of the district's seven giants.",
+  "intro": "Kawazu sits on the east coast of the Izu Peninsula, and its two mapped trees stand about 600 metres apart, both reached from Kawazu Station. The great camphor of Sugihokowakenomikoto-jinja is fifteen metres round, the last survivor of seven great camphors that once stood in the old district. Beside the Odoriko Onsen bathhouse, the Great Cycad of Shinmachi spreads four branches from a ten-metre trunk.",
+  "meta_description": "Kawazu, Japan: a fifteen-metre camphor, last of the district's seven giants, and a Monument cycad near Kawazu Station.",
   "question_meta": "Kawazu's mapped tree is the great camphor of Sugihokowakenomikoto-jinja, fifteen metres round and cited at a thousand years or more.",
   "question_answer": "Kawazu's oldest and only mapped tree is the great camphor of Sugihokowakenomikoto-jinja, a Cinnamomum camphora standing behind and to the left of the main hall. It measures about fifteen metres round and twenty-four metres tall, and published sources put it at a thousand years or more.",
-  "question_context": "The thousand-year figure is tradition rather than a ring count, which is normal for a Japanese shrine camphor and worth saying plainly. The girth is not tradition. The Environment Ministry's giant-tree survey recorded fourteen metres in 1990, when the tree ranked nineteenth in the country, and fifteen metres in the 2001 round, by which point it had slipped to thirty-second because surveyors had found more giants elsewhere. Within Shizuoka it is tied for second, behind the camphor at Atami's Kinomiya-jinja. What sets it apart from the peninsula's other two famous camphors, at Atami and at Ito's Kuzumi-jinja, is that its trunk has not hollowed. Both of those have; this one has lost some large branches and nothing more. It was designated a national Natural Monument on 16 December 1936. Old Kawazu district was known for the Kawazu-go Nanakakae Nanakusu, seven great camphors, and by the middle of the Meiji era the other six had been felled. The shrine, locally called Kinomiya, signposts the way past two smaller camphors near the torii so visitors do not stop at the wrong trunk.",
+  "question_context": "The thousand-year figure for the camphor is tradition rather than a ring count. The girth is not: the Environment Ministry's giant-tree survey recorded fourteen metres in 1990, when the tree ranked nineteenth nationally, and fifteen in 2001. Within Shizuoka it is tied for second. Its trunk has not hollowed, unlike the peninsula's other two famous camphors at Atami and Ito. It was designated a national Natural Monument in 1936, the last of seven great camphors the district was once known for.\n\nAbout six hundred metres away, near the Odoriko Onsen Kaikan bathhouse, the Great Cycad of Shinmachi spreads four thick branches along the ground from a central trunk roughly ten metres tall, unusually tall for a cycad. The whole clump measures 7.76 metres around at the base, the combined mass of stem and limbs rather than one trunk's girth. Tradition places its age from six hundred to over a thousand years; it became a National Natural Monument in 1936, one of only ten individually designated cycads in Japan. Its vigour has declined somewhat in recent years.",
   "hero_tree_id": "kwz_001",
   "oldest_tree_id": "kwz_001",
   "faq": [
@@ -29,6 +29,10 @@
     {
       "q": "How do I get there?",
       "a": "Take the Izu Kyuko Line to Kawazu Station and walk about 12 to 15 minutes, or catch a bus from the station to the Kinomiyaguchi stop."
+    },
+    {
+      "q": "What is Kawazu's other mapped tree?",
+      "a": "The Great Cycad of Shinmachi, about 600 metres from the camphor near the Odoriko Onsen Kaikan bathhouse. A National Natural Monument since 1936, one of only ten individually designated cycads in Japan, with four branches sprawling along the ground from a ten-metre central trunk."
     }
   ],
   "trees": [
@@ -67,11 +71,39 @@
       },
       "fame": {
         "langs": 1,
-        "checked": "2026-09-11",
+        "checked": "2026-09-17",
         "source_name": "Sugihokowakenomikoto-jinja no Ōkusu",
         "qid": "Q60577358",
         "views": 36
       }
+    },
+    {
+      "id": "kwz_002",
+      "name": "The Great Cycad of Shinmachi",
+      "species": "Sago Palm (Cycas revoluta)",
+      "age_estimate": "600 to 1000+ years (tradition)",
+      "age_min": 600,
+      "age_max": 1000,
+      "girth_cm": 776,
+      "height_m": 10.0,
+      "location": {
+        "address": "465 Mine, Kawazu, Kamo District, Shizuoka 413-0595, Japan (beside the Mine Onsen bathhouse Odoriko Onsen Kaikan, between the Kawazu River cherry-blossom avenue and Mine Onsen Big Geyser Park)",
+        "latitude": 34.757944,
+        "longitude": 138.983389,
+        "neighbourhood": "Mine Onsen, Kawazu, east coast of the Izu Peninsula"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/新町の大ソテツ",
+        "https://kankou.town.kawazu.shizuoka.jp/attraction/207/",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/1343",
+        "https://wood.jp/8-jumoku/kyoju/shizuoka/2016-shinmachi-sotetu.html"
+      ],
+      "access": "Free (formerly a paid attraction, now open to the public at no charge). Stands on a plot Kawazu town has landscaped beside the Odoriko Onsen Kaikan bathhouse and nearby restaurants; free parking on site.",
+      "transport": "Izu Kyuko Line to Kawazu Station, then Tokai Bus toward Shuzenji Station, about 7 minutes to the Odoriko Onsen Kaikan stop, right there. About 60km / 90 minutes by car from the Numachi or Nagaizumi-Numazu expressway interchanges via the Izu-Judan Expressway and Route 414.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Four thick branches run along the ground from this cycad's base like the arms of something reaching rather than growing, described in Japanese sources as looking like a giant snake writhing. A central trunk rises about ten metres, unusually tall for a cycad, and the whole clump measures 7.76 metres around at the base, not a single trunk's girth but the combined mass of stem and limbs together.\n\nTradition places its age anywhere from six hundred to over a thousand years, tied to a story that the tree was already a splendid giant when O-Man, later a consort of Tokugawa Ieyasu and mother of the founders of the Kii and Mito Tokugawa branches, was born on this plot before 1607 to the Masaki family who owned the land. A fire damaged its eastern side in 1916; it recovered, and became a National Natural Monument in 1936, one of only ten individually designated cycads in the whole of Japan. Emperor Showa and Empress Kojun came to see it in June 1981.\n\nIts vigour has declined somewhat in recent years, which the record should say plainly rather than smooth over. It stands a few minutes' walk from Kawazu Station, beside the Odoriko Onsen Kaikan bathhouse and about six hundred metres from the Great Camphor already mapped here, free to see, once a private garden and now a public plot.",
+      "how_to_recognise": "You can recognise it by its shape, a low central trunk about ten metres tall with four thick branches sprawling along the ground in every direction. It stands beside the Odoriko Onsen Kaikan bathhouse."
     }
   ]
 }

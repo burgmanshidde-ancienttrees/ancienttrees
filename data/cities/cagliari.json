@@ -335,9 +335,9 @@
       "id": "cag_010",
       "name": "The Common Lime of Corongiu",
       "species": "Common Lime (Tilia x europaea)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 100 to 175 years, judged from a trunk 2.6 m round",
+      "age_min": 100,
+      "age_max": 175,
       "girth_cm": 260,
       "height_m": 18.0,
       "location": {
@@ -369,7 +369,9 @@
         "label": "May to June, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it by its trunk, 2.6 metres round and 18 metres tall, standing where the valley holds water and shelter both. It stands at the historic Corongiu dam site above Sinnai."
+      "how_to_recognise": "You can recognise it by its trunk, 2.6 metres round and 18 metres tall, standing where the valley holds water and shelter both. It stands at the historic Corongiu dam site above Sinnai.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 260 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "cag_011",
