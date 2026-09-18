@@ -57,7 +57,7 @@ edge. Measured in headless Chrome at 375px with the signed-in shape forced:
 avatar, stat row, Add a tree, the lane picker, the card and the units heading
 all start at 16 and end at 359. One edge.
 
-Build clean, `preflight.py` 0 problems, `qa.py` green over 15,887 pages,
+Build clean, `preflight.py` 0 problems, `qa.py` green over 15,893 pages,
 paritycheck/crosscheck/englishcheck/netcheck/conventioncheck all green. The
 app half is written and pushed in the same change and is judged by `ios.yml`,
 since there is no Xcode here.
