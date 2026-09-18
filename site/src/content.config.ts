@@ -278,8 +278,14 @@ const collectionPages = defineCollection({
     // what the rest of the world already published. See the mode in
     // pages/collections/[slug].astro and scripts/fame.py for where the number
     // comes from.
+    // "oldest_per_place" (2026-09-18) is the first mode whose unit is a PLACE
+    // rather than a tree: one row per city, the city's own oldest tree, banded
+    // by country. It indexes the question pages, which are the site's
+    // best-converting page type, and it replaces fifteen entries hand-picked
+    // when the map held fifteen countries.
     generated: z
-      .enum(["oldest", "thickest", "tallest", "autumn", "harvest", "famous"])
+      .enum(["oldest", "thickest", "tallest", "autumn", "harvest", "famous",
+             "oldest_per_place"])
       .optional(),
     entries: z.array(
       z.object({

@@ -49,8 +49,9 @@ COUNTRY_MIN_CITIES = 3
 # reported a park page gap that could never build: no tree there actually
 # groups under that name in the site's own parkKey()).
 PARKISH = re.compile(
-    r"park|garden|jardin|jardim|giardin|parc|parco|tuin|villa |orto|botanic|"
-    r"bois|hortus|schlosspark|stadtpark|retiro|arboret",
+    r"park|parque|garden|garten|jardin|jardim|giardin|parc|parco|tuin|plantsoen|"
+    r"villa |orto|botanic|bois|bosque|for[eê]t|floresta|hortus|schlosspark|"
+    r"stadtpark|retiro|arboret",
     re.I,
 )
 
@@ -59,6 +60,30 @@ def slugify(name):
     s = name.split("(")[0].strip().lower().replace("'", "")
     s = re.sub(r"[^a-z0-9]+", "-", s)
     return s.strip("-")
+
+
+def park_name_of(tree):
+    """The named park a tree stands in, or None.
+
+    Mirrors parkKey() in site/src/lib/parks.ts: neighbourhood first, address
+    second, first clause before a comma, parentheticals stripped. A mismatch
+    here reports a gap the site has already closed (Padua's Orto Botanico,
+    2026-08-15: neighbourhood said "Orto Botanico", the old address-only check
+    wanted "Orto Botanico di Padova", and the site had already built and
+    published the page under the neighbourhood-derived name).
+
+    It lives here rather than inline because park_demand.py needs the same
+    answer, and a rule written twice drifts: geo.py exists for exactly this
+    reason, after the haversine formula had been pasted six times.
+    """
+    loc = tree.get("location") or {}
+    for field in (loc.get("neighbourhood"), loc.get("address")):
+        head = (field or "").split(",")[0]
+        head = re.sub(r"\([^)]*\)?", "", head)
+        head = re.sub(r"\s+", " ", head).strip(" -/")
+        if len(head) >= 4 and PARKISH.search(head):
+            return head
+    return None
 
 
 def corpus():
@@ -72,22 +97,7 @@ def corpus():
         for t in d.get("trees") or []:
             if t.get("species"):
                 species[t["species"]] += 1
-            # Mirrors parkKey() in site/src/lib/parks.ts: neighbourhood first,
-            # address second, first clause before a comma, parentheticals
-            # stripped. A mismatch here reports a gap the site has already
-            # closed (Padua's Orto Botanico, 2026-08-15: neighbourhood said
-            # "Orto Botanico", this loop's old address-only check wanted
-            # "Orto Botanico di Padova", and the site had already built and
-            # published the page under the neighbourhood-derived name).
-            loc = t.get("location") or {}
-            park_name = None
-            for field in (loc.get("neighbourhood"), loc.get("address")):
-                head = (field or "").split(",")[0]
-                head = re.sub(r"\([^)]*\)?", "", head)
-                head = re.sub(r"\s+", " ", head).strip(" -/")
-                if len(head) >= 4 and PARKISH.search(head):
-                    park_name = head
-                    break
+            park_name = park_name_of(t)
             if park_name:
                 parks[(d.get("city"), park_name)] += 1
     return species, countries, parks
