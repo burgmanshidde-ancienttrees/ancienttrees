@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-09-18 - Night run 2026-09-18 20:07 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 46.1 minutes of its 120 minute window, 318 turns, 25 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-18 (session 11, continuation) - Three cities' worth of translation: German, French, Japanese, 15 pages
 
 With `leads.py --ready` still empty after the earlier publishing work,
