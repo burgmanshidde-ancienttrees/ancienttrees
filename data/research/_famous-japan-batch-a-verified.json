@@ -98,30 +98,5 @@
     "location_precision": "confirmed",
     "curation_status": "flagged",
     "verify_notes": "National Natural Monument since 1923-03-07 (Japan's Agency for Cultural Affairs heritage database, online.bunka.go.jp, and Ono town's own page both confirm); three more trees at the site were added to the designation in February 2009, bringing the total to four designated trees. The species is locally unique for a rare two-stage bloom: single and double flowers open at different times on the same tree, with a second flush of buds opening at the flower's centre as the first-stage petals wilt. IMPORTANT SUCCESSION HISTORY, all three sources agree: the original tree (girth about 3m) stood at Daizo-ji temple and was blown down in a storm in Tenpo/August 1833; a second-generation tree that sprouted from its stump (girth about 1.8m) died in 1934; the CURRENT trees are shoots that regrew from the same root system after 1934, so this is a living root-successor of a documented centuries-old specimen, not a fresh planting (same pattern this project already accepts for the Elm of Saint-Gervais). Because of this, age is genuinely unclear: a widely repeated web figure (walkerplus.com search result, not an official register) gives the current trunk as girth 160cm, height 8m, age 'roughly 140 years', but no official source states an age for the present growth, so age_estimate is kept broad and flagged rather than stated as fact; girth_cm 160 is recorded since it is at least a physical reading, though the source is not the register itself. Town of Ono manages a park with 86 additional cherry trees propagated (bunki, cutting-propagated) from the four designated originals, planted around them since 2012. Note for the writer: lead with the two-stage bloom and the storm-and-regrowth history rather than an age claim."
-  },
-  {
-    "id": "TBD_005",
-    "name": "The Great Cherry Tree of Isshingyo",
-    "species": "Yamazakura, mountain cherry (Cerasus jamasakura / Prunus jamasakura)",
-    "age_estimate": "over 400 years",
-    "age_min": 400,
-    "age_max": 450,
-    "girth_cm": 735,
-    "location": {
-      "address": "3226-1 Nakamatsu, Minamiaso-mura, Aso-gun, Kumamoto Prefecture (Isshingyo Park)",
-      "latitude": 32.834467,
-      "longitude": 131.045852,
-      "neighbourhood": "Nakamatsu, Minamiaso, Kumamoto"
-    },
-    "verified_sources": [
-      "https://ja.wikipedia.org/wiki/%E4%B8%80%E5%BF%83%E8%A1%8C%E3%81%AE%E5%A4%A7%E6%A1%9C",
-      "https://kumamoto.guide/en/spots/detail/10228",
-      "https://www.vill.minamiaso.lg.jp/dynamic/info/pub/detail.aspx?c_id=29&id=4"
-    ],
-    "access": "Normally free, open parkland (Isshingyo Park); FLAG: as of the 2026 blooming season, public viewing/entry has been restricted (16 March - 15 April 2026 confirmed, and the same restriction applied in 2025) while the tree undergoes medical treatment, and the village's own announcement says resumption of normal access depends on the tree's recovery and is not yet scheduled. Ship with an honest note; do not claim unrestricted access without checking the current season.",
-    "transport": "15 min walk (about 1.2km) from Nakamatsu Station on the Minami-Aso Railway Takachiho Line, or bus from JR Tateno Station to Nakamatsu Elementary School then 10 min walk; about 1 hour by car from Kumamoto",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Not a national or prefectural Natural Monument (no designation found in any source), but is one of the largest and most visited cherry trees in Kyushu: height 14m, trunk circumference 7.35m, canopy spread 21.3m east-west by 26m north-south, age over 400 years (all figures repeated consistently across Japanese Wikipedia, the official Kumamoto prefecture tourism site and the village's own facility page). Legend: planted by the widow and children of Hoki-no-kami Korefuyu, lord of Kakuyoku Castle, who died fighting the Shimazu clan in 1580, as a memorial and act of Buddhist devotion (isshingyo = single-minded practice), which is also the source of the tree's name. History of damage: lightning split the trunk into six sections in the early Showa era (1920s-30s), and 2004 typhoons further damaged the main limbs, changing its shape from a dome to an M-shape; it has been under restoration care by the Kumamoto Green Foundation. IMPORTANT AND RECENT (flag heavily): multiple 2026 sources (minamiaso.info's own village-magazine posts) report the tree is currently receiving medical treatment for weakened condition/disease, that the annual Sakura Festival was cancelled in both 2025 and 2026 specifically because of this, that park access was restricted 16 March-15 April 2026, and that the timing of any return to normal access or of a 2027 festival 'remains undetermined, contingent on the tree's recovery.' This is recent, dated, credible evidence the tree is ALIVE (receiving active treatment) but is currently unwell, so curation_status is flagged and access should be described honestly as currently restricted/uncertain rather than as open a all times; do not present this as a routine paid-entry or normal free-access case. Coordinate (32.834467, 131.045852) is corroborated independently by the exact same parcel address (3226-1 Nakamatsu) given by three separate sources (village government, kumamoto.guide, mt-torokko.com), so treated as confirmed rather than approximate. Attracts an estimated 200,000 visitors annually in a normal year, and is often shown alongside a surrounding field of rapeseed flowers blooming at the same time."
   }
 ]

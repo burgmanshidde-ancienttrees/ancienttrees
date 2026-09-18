@@ -1,20 +1,5 @@
 [
   {
-    "id": "TBD_001",
-    "name": "Sawatari no Kaya no Ki",
-    "species": "Japanese Torreya (Torreya nucifera)",
-    "age_estimate": "roughly 450 to 500 years",
-    "age_min": 450, "age_max": 500,
-    "girth_cm": 310,
-    "location": {"address": "Yoshida-Sawatari, Taiwa, Kurokawa District, Miyagi Prefecture, near the Hatasaka/Masuzawa trailhead for Mount Funagata", "latitude": 38.4575, "longitude": 140.6804, "neighbourhood": "Sawatari, Taiwa Town"},
-    "verified_sources": ["https://commons.wikimedia.org/wiki/File:SawatariFunagata.JPG", "https://www.town.taiwa.miyagi.jp/soshiki/machizukuriseisaku/machizukuri_suishin/mahorobahyakusen/777.html"],
-    "access": "Free, on a public roadside/trailhead area used for hiking Mount Funagata's Masuzawa course",
-    "transport": "No public transport; roughly 40 minutes by car from Yoshioka (Taiwa town centre)",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Torreya nucifera (kaya) said locally to have been planted in the Date clan era (Edo period) to mark distances along the old road connecting Yoshioka and Yamagata Prefecture, and to have served as a rest stop for travellers. Named tree #1 on Taiwa Town's own official 'Mahoroba Hyakusen' (100 Selections) heritage list, confirmed via the Wayback Machine (title exactly matches, snapshot 2024-08-23) though the live town URL now 404s (checked directly 2026-09-18, not just via search cache) -- record this as a source that has gone offline since designation, not as evidence against the designation. Figures for height (~16.0m), girth (~3.10m = 310cm) and age (450-500 years) come from the same town page, reproduced consistently across two independent search-engine snippets of it, but I could not re-fetch the live body text myself to see the number in context, so treat age/girth as single-sourced and flagged rather than fully independently confirmed. Second, genuinely independent confirmation is the Commons photograph (ToshiJapon, 9 May 2015, CC BY-SA 4.0), captioned in Japanese 'Sawatari's Torreya tree and Mount Funagata entry registration post', which confirms the tree exists, is named locally exactly as expected, stands beside the Mount Funagata trailhead register box in the Sawatari area, and was alive and photographed in 2015. No coordinate on the photo itself. Location pin uses Hatasaka Campground's published coordinates (the trailhead area for the same Masuzawa course, address Yoshida, Masuzawa, Taiwa) as the nearest fixed point; the tree itself is unpinned at tree level, hence approximate. No news of felling or death found. Species: Torreya nucifera is the standard match for 'kaya' (榧); not contradicted anywhere."
-  },
-  {
     "id": "TBD_003",
     "name": "Shidare Katsura of Ryugen-ji",
     "species": "Katsura (Cercidiphyllum japonicum), weeping form",
