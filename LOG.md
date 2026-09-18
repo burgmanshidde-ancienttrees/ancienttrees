@@ -1,6 +1,94 @@
 # LOG
 
 <!-- archive-index -->
+
+## 2026-09-18 (session 5) - Answered "how are the collections doing", rebuilt the stalest one, put the whole page type on the meter
+
+Hidde asked whether any collection scores on search volume, what we can
+learn from it, and whether better titles would get more out of the same
+database. Answering it took reading 53 daily entries by hand, which is the
+finding underneath the answer: **collections were never measured.**
+`city_demand_rows()` excludes them, which is right for the depth roster and
+was silently also excluding them from the learning loop, so a collection
+reached DATA.md only when it happened to make a top-five or a climbing list.
+
+**The read.** One collection works and it is not the biggest one.
+/collections/trees-older-than-400-years went from 89 impressions to 423 and
+from position 20 to 8.8 in three weeks, which would make it the third
+biggest page on the site. thickest-trees holds 904 trees, three times as
+many, and earns nothing. The difference is the QUERY, not the size: "400
+year old tree" is a list-shaped question, "thickest tree" and "tall trees"
+are record-holder and nursery questions, which BACKLOG.md predicted under
+"Never build" on 2026-08-04. Read the 423 down by about half: its biggest
+measured pair is `"400 years old as of 2023" tree`, the exact-phrase
+operator seolearn already proved nobody types.
+
+**What shipped.**
+
+1. **/collections/the-oldest-tree-in-every-country-we-map is generated.**
+   It held 15 entries picked by hand when the map covered 15 countries, and
+   its own meta description still said "the 15 countries this site covers"
+   while the map had grown to 46 countries and 626 places. That is a live
+   false claim, so it is rung 3. It now names all 626, one row per place,
+   banded by country in ranked order, 46 headings, 1,252 links. It asks
+   `oldestTree()` in trees.ts which tree is oldest rather than deciding for
+   itself, so this page and a city's own question page can never disagree.
+   The 15 hand-written notes survive, as generated collections are designed
+   to let them.
+
+   New mode `oldest_per_place`, the first whose unit is a PLACE rather than
+   a tree, which needed two optional hooks on RankMode: `rows` (the mode
+   builds its own rows, because "which of this city's trees is oldest"
+   cannot be expressed as a filter over every tree) and `groupBy` (named
+   bands in ranked order, because a country is not a numeric threshold).
+   One-tree places are included deliberately: gating on the question page
+   would have dropped Old Tjikko, the Llangernyw Yew and General Sherman
+   from a list of the oldest trees we map.
+
+2. **The digest now prints a grouping-pages table** (`grouped_pages_lines`
+   in daily_digest.py): collections, species pages, country pages and park
+   pages, one row each with clicks, impressions, CTR, position and the
+   index against what that position normally earns, plus a **bot** flag on
+   any page whose biggest query carries quotation marks. Added to
+   CLAUDE.md's digest table contract so it cannot quietly fall out the way
+   the night-shift table did on 2026-08-21.
+
+**What did NOT ship, and why, because it was the plan an hour ago.** The
+three collections BACKLOG.md ranked as unbuilt on 2026-08-04 (oldest
+olives, oldest camphors of Japan, oldest trees of London) are all **already
+served by a page type that did not exist when that research was written**:
+/species/olive lists 24 olive trees, /species/camphor-tree lists 64, and
+London has both a city page and a question page. Building them would have
+manufactured exactly the duplicate URLs that got 36 of our pages filed as
+"crawled and not indexed" on 2026-09-17, and hard rule 3 would then have
+made them permanent. FOR HIDDE below.
+
+**And the title test could not start, correctly.** copytest.py refuses a
+surface with fewer than 20 eligible pages; there are 18 collections and two
+of them have any demand at all. The surface that can carry a test is
+species pages (178 of them, 0.5% CTR, every title the same template), and
+that is blocked on the measurement in point 2 above existing for a few days
+first. It starts once DATA.md has the rows.
+
+**One thing picked up on the way in.** The merge with the night run's own
+work was blocked by the pre-push hook: `crossdevice.py` refused
+`saved.saves_are_hearts_v1`, the latch on this morning's one-off
+saves-are-hearts repair, which had reached main unregistered. Ruled it
+**device** and wrote the reasoning into data/cross-device.json: the repair
+asks THIS phone's own record of taps which entries are ticked-but-not-
+hearted, so a second device has its own strays to clear and syncing the
+latch would suppress a repair that device still needs.
+
+**FOR HIDDE.** Nothing blocking. One judgement that is yours because it
+spends a window: four curated collections are stale the same way the
+country one was, and the data to fix them is already on disk. Yews list 8,
+we map 61; ancient oaks list 8, we map 104 over 300 years; the great planes
+list 10, we map 299; Europe's most remarkable list 10, we map 115 over 500
+years. The yew page already earns 67 impressions at position 8.8 on its 8
+entries, so it is the clearest of the four. Making them generated needs a
+species-and-region filter on top of the existing `oldest` mode, which is
+roughly the work item 1 above took.
+
 ## 2026-09-18 Where the funnel actually leaks, and the page with the best placement on the site
 
 Hidde asked why sign-ins are so few and what would improve them. The answer is
@@ -4993,7 +5081,6 @@ desktop on /lisbon/ajuda-dragon-tree.
 control in any of the seven languages; the web thumb is a colour emoji where the
 app draws an outline symbol; copycheck flags "Tap one to see how to tell it
 apart." in CollectSheet.swift:636, in the reader-photo session's area.
-
 
 
 ## 2026-09-11 (session with Hidde) - The tree in the wrong-tree photograph gets its own page: the Twisted Muku of Omiya Gate
