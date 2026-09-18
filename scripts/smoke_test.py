@@ -437,7 +437,12 @@ f.addEventListener('load', function () {
       if (m) m.click();
       setTimeout(function () {
         try {
-          var dlg = d.querySelector('.signin-dialog'), out = [];
+          // BY ID, not by class. AppModal wears .signin-dialog too, on
+          // purpose (it is the same sheet shape), and once the sign-in sheet
+          // moved to the end of <body> on 2026-09-18 the class selector
+          // started returning the app dialog instead: closed, so nothing in it
+          // has a box, so this check reported zero buttons.
+          var dlg = d.getElementById('signin-dialog'), out = [];
           if (!dlg) { document.getElementById('r').textContent =
             'RESULT ' + JSON.stringify({error: 'no sheet'}); return; }
           var title = d.getElementById('signin-title');
