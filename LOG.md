@@ -1,6 +1,47 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session) - Your own photograph shows on your own tree, on the website too
+
+Fourth of the stranded branches (claude/foto-zichtbaarheid-eigen-boom-tz5y1s,
+written 09-11, unmerged for a week). Hidde's own report, from his account page,
+at a tree he had photographed in the app days earlier: "waarom zie ik hier niet
+de foto die ik heb gemaakt in de app bij m'n eigen boom."
+
+The photograph had travelled. Nothing showed it. A sighting taken while ticking
+off a tree we map carries that tree's id, and the website drew those rows as
+cards of their own under our card for the same tree, so the tree appeared twice
+and our card was the empty one.
+
+**The app half was already in main by another route, and is better**: heroOwnShot
+plus a "Your photographs" thumbnail row. Both app conflicts took main's side.
+What landed today is the web half:
+
+- A tree-linked photograph now sits ON that tree's card, labelled "Your
+  photograph". One tree, one card, counted once. Google Maps' rule as
+  CONVENTIONS.md records it: the place keeps its own picture and yours is
+  yours, so yours fills an empty slot and ours stays where we publish one.
+- Your own trees are on the profile map, which the app's Collect map has always
+  drawn.
+- scripts/crossdevice.py in the pre-push hook: every store either surface keeps
+  something in is named in data/cross-device.json with a verdict, account or
+  device, so a new one has to say which. 25 stores, all ruled on, 6 account and
+  14 device.
+
+**And the worse bug it turned up: the "it is on the site now" confirmation had
+never been sent, to anybody.** It carried no App Store link, mailcheck has
+required one on every letter since 2026-09-03, and a held mail only prints HOLD.
+Every reader whose tip we acted on heard nothing back.
+
+main and the branch had each grown a different fix for that, and both are kept:
+main appends the line, the branch declares "audience: app user" in the draft
+header so mailcheck stops asking. Joined so that somebody writing from inside
+the app gets neither, which is what Hidde asked for ("onder deze mail hoeft geen
+verwijzing naar de app"), and everybody else gets the line.
+
+Verified: build 11,842 pages, qa 15,687 pages, preflight 0 problems,
+crossdevice, netcheck, parity, conventions and the screen lists clean.
+
 
 ## 2026-09-17 - Digest session: App Store downloads is its own block now, and the fold is a check
 
