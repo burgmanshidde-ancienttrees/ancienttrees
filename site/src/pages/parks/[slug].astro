@@ -10,6 +10,8 @@ import { groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks"
 import { usablePhoto, imgSrcset } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
+import { checkParkCountPromises } from "../../lib/count-promises";
+import { TITLE_MAX } from "../../lib/site-config";
 import { byCityListOrder } from "../../lib/city-order";
 
 export async function getStaticPaths() {
@@ -47,6 +49,16 @@ const cityName = city.data.city;
 const cslug = city.id;
 const canonical = `${BASE_URL}/parks/${intro.data.slug}`;
 
+// A hand-written title over the cap used to be swallowed in silence:
+// fitTitle simply moved on to the generated fallback, so the Singapore and
+// Hobart intro files carried a title, and a tree count, that no page ever
+// printed. Say so instead, because a title nobody reads is the one place a
+// count can rot unseen (2026-09-18).
+if (intro.data.title && intro.data.title.length > TITLE_MAX) {
+  throw new Error(
+    `${canonical}: hand-written title is ${intro.data.title.length} chars, over ${TITLE_MAX}, so the page would quietly use a generated one: ${JSON.stringify(intro.data.title)}`,
+  );
+}
 const title = fitTitle([
   intro.data.title ?? "",
   `Ancient Trees in ${name}, ${cityName}`,
@@ -61,6 +73,7 @@ const crumbItems: [string, string | null][] = [
 ];
 
 const trees = [...rawTrees].sort((a, b) => (b.age_max ?? 0) - (a.age_max ?? 0));
+checkParkCountPromises(intro.data, trees.length, canonical);
 const tslugs = treeSlugsForCity(city);
 
 const listElements = trees.map((t, i) => ({
