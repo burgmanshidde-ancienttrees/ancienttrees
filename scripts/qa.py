@@ -641,18 +641,23 @@ def check_nothing_is_stored_locally():
     a person accumulates lives in the account. sessionStorage counts as storage
     and is refused for the same reason.
 
-    The two deliberate exceptions are named here rather than left implicit:
-    `at_notrack` is a privacy opt-out that would be pointless on a server, and
-    the contribute draft (`at_contribute_draft`) protects text somebody has
-    typed and not yet sent, which is not something they have saved to a
-    collection. A key built from a variable is refused whatever it holds,
-    because the allowlist can only read literals; write the name out."""
+    The deliberate exceptions are not named here any more, they are named in
+    `data/local-storage-allow.json`, one line of reason each. That file is
+    shared with `scripts/localcheck.py`, which asks the APP the same question
+    (2026-09-18, Hidde a third time: "stop saving stuff locally anywhere please
+    make sure this happens nowhere always account related"). It had to become
+    one list, because the rule was enforced on one surface and merely written
+    down for the other, and the app went on keeping every worth-it vote in
+    three UserDefaults keys per tree for sixteen days after the website
+    stopped. A key built from a variable is refused whatever it holds, because
+    the allowlist can only read literals; write the name out."""
     out = []
     root = Path(__file__).resolve().parent.parent
     src = root / "site" / "src"
     if not src.exists():
         return out
-    allowed = {"ancienttrees_session", "at_notrack", "at_contribute_draft"}
+    allow = root / "data" / "local-storage-allow.json"
+    allowed = set(json.loads(allow.read_text(encoding="utf-8")).get("web", {}))
     offenders = []
     for f in sorted(list(src.rglob("*.ts")) + list(src.rglob("*.astro"))):
         text = f.read_text(encoding="utf-8")

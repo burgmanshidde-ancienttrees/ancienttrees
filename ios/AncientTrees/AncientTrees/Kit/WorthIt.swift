@@ -27,21 +27,66 @@ final class MyVotes {
     /// same rows since the chips were built; the app only ever remembered them
     /// on the phone that tapped them, so a second phone offered the report
     /// again as though nothing had been said (2026-09-11).
-    private(set) var reported: Set<String> = []
+    /// Keyed by tree rather than a bare set, because the report's REASON picks
+    /// the follow-up question and that reason lives in the row's `why` too.
+    private(set) var reports: [String: String] = [:]
     private(set) var detailed: Set<String> = []
 
-    /// The `tree` column is written as "id (name)" by both surfaces, and the
-    /// key every view reads is the BARE id. Keying on the whole string meant
-    /// the votes restored at launch went into `at_worthit_kyo_016 (Sudajii of
-    /// Omiya Gate, Kyoto Gyoen)`, which nothing reads, so a vote cast on one
-    /// phone never appeared on another however faithfully it was stored.
+    // WHAT A VIEW ASKS. Until 2026-09-18 every one of them asked UserDefaults
+    // instead, off a mirror written at launch, which is the shape Hidde has
+    // now ruled against three times ("niks moet lokaal opgeslagen zijn",
+    // 2026-08-27; "alles wat wordt opgeslagen moet op je account zijn",
+    // 2026-09-02; "stop saving stuff locally anywhere", 2026-09-18). A mirror
+    // is a second source of truth: nothing cleared those keys on sign-out, so
+    // a signed-out phone still showed the last person's votes, and a key
+    // written per tree could never be enumerated to clear them.
+    func vote(_ treeId: String) -> String { byTree[treeId] ?? "" }
+    func hasReported(_ treeId: String) -> Bool { reports[treeId] != nil }
+    func reason(_ treeId: String) -> String { reports[treeId] ?? "" }
+    func hasDetailed(_ treeId: String) -> Bool { detailed.contains(treeId) }
+
+    /// Painted at once and sent straight after, the same way the heart works:
+    /// the account decides, the screen only reports. A failed send is corrected
+    /// by the next launch, which reloads from the account.
+    func setVote(_ treeId: String, _ value: String) {
+        if value.isEmpty { byTree[treeId] = nil } else { byTree[treeId] = value }
+    }
+    func markReported(_ treeId: String, reason: String) { reports[treeId] = reason }
+    func markDetailed(_ treeId: String) { detailed.insert(treeId) }
+
+    /// Signing out takes them off the screen, exactly as it takes the
+    /// collection off (CONVENTIONS.md, "What signing out takes with it"). They
+    /// live in the account and come straight back on the next sign-in.
+    func forgetLocally() { byTree = [:]; reports = [:]; detailed = [] }
+
+    /// Take the old per-tree keys off phones that already carry them.
+    ///
+    /// Unconditional rather than behind a migration flag, and idempotent: it
+    /// costs one pass over UserDefaults at launch, nothing writes these any
+    /// more, and a flag would be one more thing stored on the device to track
+    /// a thing being removed from the device. They cannot be enumerated any
+    /// other way, which is half of why keys built per tree were the wrong
+    /// shape to begin with.
+    static func clearTheOldMirror() {
+        let d = UserDefaults.standard
+        for key in d.dictionaryRepresentation().keys
+        where key.hasPrefix("at_worthit_") || key.hasPrefix("at_wrong_") {
+            d.removeObject(forKey: key)
+        }
+    }
+
+    /// The `tree` column is written as "id (name)" by both surfaces, and what
+    /// every view asks about is the BARE id. Keying on the whole string meant
+    /// a vote cast on one phone never appeared on another however faithfully
+    /// it was stored, because it was filed under "kyo_016 (Sudajii of Omiya
+    /// Gate, Kyoto Gyoen)" and looked up under "kyo_016".
     static func treeId(_ field: String) -> String {
         String(field.split(separator: " ", maxSplits: 1)[0])
     }
 
     func load(account: Account) async {
         guard let token = await account.freshToken() else {
-            byTree = [:]; reported = []; detailed = []; return
+            forgetLocally(); return
         }
         // OLDEST FIRST, because the loop below lets the last row on a tree win
         // and an undo only works if it arrives after the vote it cancels. The
@@ -52,7 +97,7 @@ final class MyVotes {
               let rows = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
         else { return }
         var found: [String: String] = [:]
-        var said: Set<String> = [], saidMore: Set<String> = []
+        var said: [String: String] = [:], saidMore: Set<String> = []
         for row in rows {
             guard let field = row["tree"] as? String, let why = row["why"] as? String else { continue }
             let tree = Self.treeId(field)
@@ -61,14 +106,29 @@ final class MyVotes {
             // the tree looking voted on the next launch, on a page whose thumb
             // down was removed on 2026-09-04.
             if why.hasPrefix("report detail") { saidMore.insert(tree); continue }
-            if why.hasPrefix("report") { said.insert(tree); continue }
+            if why.hasPrefix("report") {
+                // "report: wrong location" -> "wrong location", which is the
+                // key the follow-up question is looked up under.
+                said[tree] = why.contains(": ")
+                    ? String(why.split(separator: ":", maxSplits: 1)[1])
+                        .trimmingCharacters(in: .whitespaces)
+                    : ""
+                continue
+            }
             // An undo is a compensating row rather than a deletion, so the
             // last word on a tree is the one that counts.
             if why.hasPrefix("vote undone") { found[tree] = nil }
-            else if why.contains("worth it") { found[tree] = "up" }
+            // MATCHED WHOLE, never by contains: "not worth it" contains
+            // "worth it", so the payoff screen's thumbs DOWN came back as a
+            // green thumbs up on the tree page at the next launch. Found while
+            // moving these views off the device (2026-09-18); it could not
+            // have been found before, because nothing ever read this value
+            // back into the control that draws it.
+            else if why == "worth it" { found[tree] = "up" }
+            else if why == "not worth it" { found[tree] = "down" }
         }
         byTree = found
-        reported = said
+        reports = said
         detailed = saidMore
     }
 }
@@ -78,12 +138,13 @@ struct WorthItView: View {
 
     @Environment(Account.self) private var account
     @Environment(VoteCounts.self) private var counts
-    @AppStorage private var vote: String
+    @Environment(MyVotes.self) private var votes
     @State private var whyOpen = false
-    @State private var reported: Bool
     @State private var detail = ""
-    @State private var detailSent: Bool
     @State private var signingIn = false
+
+    private var reported: Bool { votes.hasReported(tree.id) }
+    private var detailSent: Bool { votes.hasDetailed(tree.id) }
 
     /// The one question whose answer lets a run close the case, per reason
     /// (Hidde, 2026-08-21: "i want them to tell us which of the two elms it
@@ -100,15 +161,6 @@ struct WorthItView: View {
         "something else": ("Tell us in a line.",
                            "What we got wrong, or what we are missing"),
     ]
-
-    init(tree: Tree) {
-        self.tree = tree
-        _vote = AppStorage(wrappedValue: "", "at_worthit_\(tree.id)")
-        _reported = State(initialValue:
-            UserDefaults.standard.string(forKey: "at_wrong_\(tree.id)") != nil)
-        _detailSent = State(initialValue:
-            UserDefaults.standard.bool(forKey: "at_wrong_detail_\(tree.id)"))
-    }
 
     /// Only the report entry lives here now. The vote is the compact thumb
     /// beside the place name (WorthItButton), since 2026-09-04, and the
@@ -153,8 +205,7 @@ struct WorthItView: View {
                         let text = detail.trimmingCharacters(in: .whitespacesAndNewlines)
                         guard !text.isEmpty else { return }
                         send("report detail", String(text.prefix(1000)))
-                        UserDefaults.standard.set(true, forKey: "at_wrong_detail_\(tree.id)")
-                        detailSent = true
+                        votes.markDetailed(tree.id)
                     }
                     .buttonStyle(.bordered).controlSize(.small)
                     .disabled(detail.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
@@ -176,15 +227,12 @@ struct WorthItView: View {
         }
     }
 
-    private var reason: String {
-        UserDefaults.standard.string(forKey: "at_wrong_\(tree.id)") ?? ""
-    }
+    private var reason: String { votes.reason(tree.id) }
 
     private func chip(_ label: String, _ reason: String) -> some View {
         Button(label) {
             guard account.isSignedIn else { signingIn = true; return }
-            UserDefaults.standard.set(reason, forKey: "at_wrong_\(tree.id)")
-            reported = true
+            votes.markReported(tree.id, reason: reason)
             whyOpen = false
             send("report", reason)
         }
@@ -217,7 +265,7 @@ struct WorthItView: View {
 }
 
 /// THE ONE VOTE, drawn twice on a tree page and always in step, because both
-/// copies read the same `at_worthit_<id>` key.
+/// copies read the same MyVotes, which is the account's own answer.
 ///
 /// One direction only (Hidde, 2026-09-04: "i agree that we dont need a thumb
 /// down"). Every reference offers a single positive act and routes the
@@ -237,15 +285,10 @@ struct WorthItButton: View {
 
     @Environment(Account.self) private var account
     @Environment(VoteCounts.self) private var counts
-    @AppStorage private var vote: String
+    @Environment(MyVotes.self) private var votes
     @State private var signingIn = false
 
-    init(tree: Tree, compact: Bool = false) {
-        self.tree = tree
-        self.compact = compact
-        _vote = AppStorage(wrappedValue: "", "at_worthit_\(tree.id)")
-    }
-
+    private var vote: String { votes.vote(tree.id) }
     private var cast: Bool { vote == "up" }
 
     var body: some View {
@@ -281,11 +324,11 @@ struct WorthItButton: View {
         if cast {
             send("vote undone", "worth it")
             counts.record(tree.id, from: "up", to: "")
-            vote = ""
+            votes.setVote(tree.id, "")
             return
         }
         counts.record(tree.id, from: vote, to: "up")
-        vote = "up"
+        votes.setVote(tree.id, "up")
         send("worth it", nil)
     }
 
@@ -376,13 +419,10 @@ struct WorthTheTripAsk: View {
 
     @Environment(Account.self) private var account
     @Environment(VoteCounts.self) private var counts
-    @AppStorage private var vote: String
+    @Environment(MyVotes.self) private var votes
     @State private var signingIn = false
 
-    init(tree: Tree) {
-        self.tree = tree
-        _vote = AppStorage(wrappedValue: "", "at_worthit_\(tree.id)")
-    }
+    private var vote: String { votes.vote(tree.id) }
 
     var body: some View {
         Group {
@@ -414,7 +454,7 @@ struct WorthTheTripAsk: View {
     private func thumb(_ icon: String, _ value: String, _ label: String) -> some View {
         Button {
             guard account.isSignedIn else { signingIn = true; return }
-            vote = value
+            votes.setVote(tree.id, value)
             if value == "up" { counts.record(tree.id, from: "", to: "up") }
             let why = value == "up" ? "worth it" : "not worth it"
             Task {
