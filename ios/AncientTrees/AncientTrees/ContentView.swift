@@ -325,14 +325,12 @@ struct ContentView: View {
         switch route {
         case .tree(let id):
             if let t = cat.tree(id) {
-                // YOUR OWN PHOTOGRAPH OF IT, when you ticked it off with one.
-                // `Sightings.forTree` had been written and never called, so a
-                // photograph taken at one of our trees went up to the account
-                // and appeared on no screen (2026-09-11). It fills the slot
-                // only where we have no picture of our own; see TreeDetail's
-                // `myShot`.
-                TreeDetail(tree: t, myPhoto: sightings.forTree(t.id),
-                           catalogue: cat, origin: origin)
+                // YOUR OWN PHOTOGRAPH OF IT, when you ticked it off with one,
+                // already handled inside TreeDetail via the `sightings`
+                // environment (Sightings.ofTree, see its own doc comment for
+                // the 2026-09-11 bug this fixed): `yourShots`/`heroOwnShot`
+                // fill the slot only where we have no picture of our own.
+                TreeDetail(tree: t, catalogue: cat, origin: origin)
             } else {
                 ContentUnavailableView("That tree is no longer on the map",
                                        systemImage: "tree",
@@ -415,8 +413,7 @@ struct ContentView: View {
                     // plus) and `checkmark.circle` for the ones ticked off.
                     stack(0, cat) {
                         if let id = debugTree, let t = cat.tree(id) {
-                            TreeDetail(tree: t, myPhoto: sightings.forTree(t.id),
-                                       catalogue: cat, origin: origin)
+                            TreeDetail(tree: t, catalogue: cat, origin: origin)
                         } else {
                             MapTab(catalogue: cat, origin: origin,
                                    located: location.coordinate != nil || debugOrigin != nil,
