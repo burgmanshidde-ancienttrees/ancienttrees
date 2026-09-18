@@ -6,19 +6,43 @@
 import type { CityEntry, Tree } from "./trees";
 import { treeIsRenderable } from "./trees";
 
+// Widened 2026-09-18 while measuring our coverage of the world's best-known
+// parks (scripts/park_demand.py). Six words were missing and the gap was
+// invisible because it fails silently: a tree whose address names no listed
+// word simply has no park, and no page is ever short of anything. What it cost:
+// "parque" is the Spanish and Portuguese word for park and was not here, so
+// Parque de Maria Luisa in Seville held ten mapped trees and could not become a
+// page, and "retiro" is in this list only because somebody patched that one
+// Madrid case rather than the word behind it. "garten" was missing while
+// "schlosspark" and "stadtpark" were present, which hid the Englischer Garten
+// and Nuremberg's Kontumazgarten. Adding them groups 147 trees that had no park
+// at all and takes three parks over Contract H's five-tree gate.
+//
+// Only words the data actually justifies are here: an unused word is a false
+// positive waiting to happen. Bare "forest" is deliberately left out, because
+// English street and district names are full of it (Forest Hills, Forest Road)
+// while "foret" and "floresta" are not. The same risk already lives in "park",
+// which reads a car park as a park; the fix for those is the address text.
 const PARK_WORDS = [
   "park",
+  "parque",
   "garden",
+  "garten",
   "jardin",
   "jardim",
   "giardin",
   "parc",
   "parco",
   "tuin",
+  "plantsoen",
   "villa ",
   "orto",
   "botanic",
   "bois",
+  "bosque",
+  "foret",
+  "forêt",
+  "floresta",
   "hortus",
   "schlosspark",
   "stadtpark",

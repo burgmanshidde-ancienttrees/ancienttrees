@@ -20,6 +20,21 @@ verdicts and a reason:
 Adding a store means adding a line. Getting the verdict wrong is still possible;
 forgetting the question is not.
 
+AND, since 2026-09-18, an `account` store that is also written to the device
+has to answer a second question in `off`: what takes it off a phone nobody is
+signed in to. That is the hole this register had, and it was not hypothetical.
+`at_worthit_`, `at_wrong_` and `at_wrong_detail_` were all correctly ruled
+`account` here, and all three were written to UserDefaults anyway, read by the
+views as the truth, and cleared by nothing at all. A signed-out phone went on
+showing the last person's votes for weeks with this check green, because the
+register asked whether anybody had ruled and never whether the code obeyed.
+
+`off` is prose, not a symbol, and "nothing, because ..." is a legitimate answer
+(a display preference is not somebody's data). The point is the same one
+conventioncheck.py makes: a script cannot judge the answer, only whether
+anybody was made to write one down. Hidde, 2026-09-18: "stop saving stuff
+locally anywhere please make sure this happens nowhere always account related."
+
     python3 scripts/crossdevice.py          # check
     python3 scripts/crossdevice.py --list   # what is registered, by verdict
 """
@@ -88,6 +103,12 @@ def main():
 
     missing = sorted(k for k in stores if k not in known)
     stale = sorted(k for k in known if k not in stores and not known[k].get("keep"))
+    # An account store the code writes to the device, with nobody named to take
+    # it off again when the account goes.
+    unswept = sorted(k for k in stores
+                     if k in known
+                     and known[k]["verdict"] == "account"
+                     and not known[k].get("off"))
 
     for key in missing:
         where = ", ".join(sorted(stores[key]))
@@ -96,10 +117,18 @@ def main():
               "the account (and which table carries it) or belongs to the device.")
     for key in stale:
         print(f"NOTE  {key} is registered and nothing writes it any more.")
+    for key in unswept:
+        where = ", ".join(sorted(stores[key]))
+        print(f"FAIL  {key}  (written in {where})")
+        print("      Ruled 'account' and written to the device with no \"off\". "
+              "Say what takes it off a phone nobody is signed in to, or say "
+              "\"nothing, because ...\".")
 
-    if missing:
-        print(f"\n{len(missing)} unregistered store(s). "
-              "A store nobody has ruled on is a store that does not travel.")
+    if missing or unswept:
+        print(f"\n{len(missing)} unregistered store(s), {len(unswept)} "
+              "account store(s) nothing is named to clear. A store nobody has "
+              "ruled on is a store that does not travel; an account store "
+              "nobody clears is the last person's data on this phone.")
         return 1
     print(f"cross-device: {len(stores)} stores, all ruled on "
           f"({sum(1 for k in stores if known[k]['verdict'] == 'account')} account, "

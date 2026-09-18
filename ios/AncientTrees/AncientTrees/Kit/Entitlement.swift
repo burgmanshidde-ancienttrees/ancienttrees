@@ -80,20 +80,18 @@ public final class Entitlement {
     /// which is the honest phase-1 move and the answer to hard rule 6: it puts
     /// a real price in front of a real intention and counts who says yes.
     public private(set) var isPlus = false
-    public private(set) var interestedIn: Set<String> = []
 
-    private let key = "entitlement.interest.v1"
-
-    public init() {
-        interestedIn = Set(UserDefaults.standard.stringArray(forKey: key) ?? [])
-    }
+    public init() {}
 
     public func allows(_ f: Feature) -> Bool { isPlus }
 
-    /// Recorded locally as well as sent, so the funnel is legible on the device
-    /// during testing and not only in the database.
+    /// SENT, never kept here (2026-09-18). This used to write the set of
+    /// features somebody had raised a hand for into UserDefaults as well, so
+    /// that "the funnel is legible on the device during testing". Nothing ever
+    /// read it back, `Waitlist.join` puts the same fact in the database with
+    /// the email beside it, and it is a record of what a person did, which by
+    /// Hidde's rule belongs to their account and nowhere else.
     public func registerInterest(_ f: Feature) {
-        interestedIn.insert(f.rawValue)
-        UserDefaults.standard.set(Array(interestedIn), forKey: key)
+        Measure.event("paywall_interest", ["feature": f.rawValue])
     }
 }
