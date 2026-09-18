@@ -125,6 +125,26 @@ fi
 # the other is refused here. Deliberate one-surface copy lives in
 # data/parity-allow.json with its reason. Runs on ANY change under ios/ or
 # site/src/, which the app gate below does not cover.
+# BRITISH ENGLISH, gating from 2026-09-18 rather than only printing. It could
+# not gate before, because it had been red for weeks on nine findings of which
+# every single one was a false positive: the phenology table's American lookup
+# KEYS (which exist to catch that spelling), "Open Database License" (a name),
+# and three sentences it had cut in half at an inline <a> or <strong>. A check
+# that is permanently red is a check nobody reads, which is the same lesson
+# ios.yml taught on 2026-08-25. It is quieter now and not weaker: every rule
+# still fires on a planted fault. 0.2s, so it belongs in the hook.
+if echo "$CHANGED" | grep -qE '^(ios/|site/src/)'; then
+    if ! out=$(python3 scripts/englishcheck.py 2>&1); then
+        echo ""
+        echo "pre-push: englishcheck says no"
+        echo "$out" | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. Fix the spelling, or read the shape findings"
+        echo "and rewrite; they are candidates for a human, never a bulk edit."
+        exit 1
+    fi
+fi
+
 if echo "$CHANGED" | grep -qE '^(ios/|site/src/)'; then
     if ! out=$(python3 scripts/paritycheck.py 2>&1); then
         echo ""
