@@ -10,7 +10,7 @@
     "location": {
       "address": "685 Kega, Iida, Nagano Prefecture, Japan, on the old Enshu Kaido road",
       "latitude": 35.48764,
-      "longitude": 137.83950,
+      "longitude": 137.8395,
       "neighbourhood": "Kega, Iida"
     },
     "verified_sources": [
@@ -21,6 +21,14 @@
     "transport": "10 minute walk from JR Kega Station (Iida Line), or 10 minutes by car from the Iida interchange",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Two independent sources: Iida City's own official natural-monument register page (designated a municipal natural monument 22 November 2000; height ~15m, girth at breast height ~3.8m/380cm; address given as Kega 685) and bura-tabi.com, an independent Nagano travel site (corroborates age ~350 years, height 15m, girth 3.8m, and access directions). Species recorded generically as weeping cherry (shidarezakura) by both sources; neither gives a cultivar-level ID, so the page should say weeping cherry and invite a reader correction on the exact variety. Tradition holds it was planted by local residents during the Wakisaka clan's rule of Iida Castle (1617-1672), which is roughly consistent with the ~350-year age both sources state directly (do not sharpen beyond 'roughly 350 years'; the planting story is tradition, not a documentary record). Stands on the old Enshu Kaido highway; the name 'Kuyoto' is said to derive from a memorial tower (kuyoto, 供養塔) once at the site, tied to Sengoku-era place names nearby ('Jigai-zaka'). Cared for by local residents alongside two stone lanterns and an Akiba Shrine marker; a perpetual lamp is maintained there. Branches cascade dramatically down the roadside embankment. LOCATION: neither source gives a tree-level coordinate; the lat/lng recorded here is JR Kega Station (via OpenStreetMap/Nominatim), a ~10 minute walk from the tree per both sources, marked approximate rather than confirmed -- honest neighbourhood-level knowledge only. Flagged for the location precision and for species resting at the shidarezakura level rather than a specific cultivar."
+    "story": "The tree is named for something that is no longer there. Kuyoto means a memorial tower, and one is said to have stood on this spot on the old Enshu Kaido, the highway running south out of Iida. The tower went. The name stayed, and so did the place names on the slope beside it, which date from the Sengoku wars.\n\nWhat stands there now is a weeping cherry fifteen metres tall with a trunk 3.8 metres round, its branches falling down the roadside embankment rather than out across the road. Iida made it a municipal natural monument on 22 November 2000. The city and an independent Nagano travel writer both put it at roughly 350 years, and tradition holds that people living here planted it while the Wakisaka clan held Iida Castle, between 1617 and 1672. That is a story kept locally rather than a record in an archive. It fits the age without proving it.\n\nNeighbours still look after the tree, along with two stone lanterns and an Akiba Shrine marker, and they keep a lamp burning there. In blossom season it is lit at night.\n\nTwo things we do not know. Neither source gives a coordinate for the trunk, so our pin marks Kega Station, about ten minutes' walk away. And neither names the cultivar, only shidarezakura, weeping cherry. If you can settle either, tell us.",
+    "how_to_recognise": "You can recognise it by the branches, which pour down the roadside embankment instead of over the road, and by the two stone lanterns and Akiba Shrine marker beside it. It stands on the old Enshu Kaido, ten minutes from Kega Station.",
+    "best_time": {
+      "months": [
+        4
+      ],
+      "kind": "flowers",
+      "label": "early April, when the whole cascade flowers and the tree is lit after dark"
+    }
   }
 ]

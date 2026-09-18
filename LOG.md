@@ -1,6 +1,53 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 3) - Finished a standing write claim: 7 trees, 3 new places, 8 more famous-japan duplicates found
+
+An earlier attempt this window stopped after 11 minutes shipping nothing,
+with a `_famous-japan` verify claim already standing. Picked it up instead
+of starting fresh research, per the run brief's own instruction to finish
+claims before anything else.
+
+**The claim's own verify output had more duplicates in it than the first
+pass caught.** A distance sweep against the whole published site, not just
+each tree's likely container city, found 8 of the original 17 candidates
+were already live under a different id, on approximate pins 12m to 22.7km
+off: two temple trees at Horaiji (one of them literally named "Kasa sugi",
+Japanese for the "Umbrella Cedar" the new pass had re-verified), a yew on
+Mount Sentsu, a ginkgo, a camphor, a zelkova pair, a pine, and a cherry
+whose story matched an existing entry down to a 2004 typhoon and a spring
+2026 closure. All 8 folded into `data/leads/_famous-japan.json` as
+duplicates rather than reaching a city file. 2 more real trees (a
+city-designated hackberry, a town-heritage-list torreya) were held as
+leads: sourced and alive, but neither clears the single-tree-destination
+bar without a festival, pilgrimage or record claim behind it.
+
+**7 trees were genuinely new and got written and merged:** Daio-sugi
+joined Yakushima (`yak_002`, the island's second-largest yakusugi), the
+Camphor Tree of Hongo Yumicho joined Tokyo (`tok_022`, Bunkyo Ward's
+biggest tree, on an ordinary street), the Weeping Cherry of Kega-kuyoto
+joined Iida (`iid_002`), and the Shidare Katsura of Ryugen-ji joined
+Morioka (`mor_002`, regrown from an 1824 stump). Three became new
+single-tree places under the 2026-08-31 exception: **Gifu** (the only
+known specimen of a rare double-flowered cherry, seeds once flown to the
+ISS), **Ibigawa** (a twice-blooming cherry that has regrown from its own
+root system twice), and **Chikubushima** (a tree with a documented 1602
+planting date, on a Lake Biwa island reached only by ferry).
+
+Updated the two cities that grew from one tree to two (Iida, Morioka) so
+their intro, meta description, FAQ and question-page copy stop promising a
+single tree, and fixed 2 species-name drifts preflight caught before they
+could split a species page in two ("Japanese Cedar" and "Cherry" are this
+site's one canonical name each; the write pass had produced descriptive
+variants). Dispatched a translate pass for the two Japanese overlays
+(Tokyo, Yakushima) that needed their new tree added to stay buildable.
+
+Also found substantial `best_time` work sitting uncommitted from before
+this window started, across 30 city files; committed it as its own step
+since it was real, additive, unrelated work nobody had shipped yet.
+
+`scripts/preflight.py` and `scripts/superlatives.py` clean. Build and QA
+still to run once the translate pass lands.
 ## 2026-09-18 (session 2) - New city: Higashi-Hiroshima (17 trees), 2 photos approved, 3 Slovak leads held, a city_names.py bug fixed
 
 visitors.py: 662 visits, 877 page views over 7 days (last full day 128/189,

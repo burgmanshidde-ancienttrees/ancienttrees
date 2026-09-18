@@ -25,8 +25,8 @@
       "a": "There is no entry ticket for the forest, but a voluntary mountain-area conservation fee is strongly requested on this route: 1,000 yen for a day visit and 2,000 yen if you stay overnight in the mountains, for middle-school age and up."
     },
     {
-      "q": "Why is only one tree listed for Yakushima?",
-      "a": "Because it is the one people travel for. The island has many famous yakusugi and we would rather add each one properly than list names we have not checked. If you know one that belongs here, tell us."
+      "q": "Is Jomon Sugi the only giant cedar on the route?",
+      "a": "No. Daio-sugi, on the same trail about forty-five minutes short of Jomon Sugi, was the largest known yakusugi on the island until Jomon Sugi was found and named. It measures 11.1 metres round and is estimated at more than 3,000 years old. The island has other famous yakusugi beyond these two, and we would rather add each one properly than list names we have not checked. If you know one that belongs here, tell us."
     }
   ],
   "trees": [
@@ -61,6 +61,38 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by its immense hollow trunk, 16.4 metres round, viewed from a wooden deck about ten metres off on three sides. It stands beside the Arakawa trail in the Yakushima wilderness."
+    },
+    {
+      "id": "yak_002",
+      "name": "Daio-sugi (Yakushima)",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "around 3,000 years",
+      "age_min": 2000,
+      "age_max": 3000,
+      "girth_cm": 1110,
+      "location": {
+        "address": "Ooyama Trail, en route to Jomon Sugi, Yakushima, Kumage District, Kagoshima Prefecture",
+        "latitude": 30.359903,
+        "longitude": 130.536347,
+        "neighbourhood": "Yakushima interior forest (Miyanoura)"
+      },
+      "verified_sources": [
+        "https://www.env.go.jp/nature/isan/worldheritage/en/yakushima/area/a05.html",
+        "https://bigtrees.life/daiou-japanese-cedar",
+        "https://commons.wikimedia.org/wiki/File:Dai-O-Sugi.jpg"
+      ],
+      "access": "Free, but reached only by a strenuous hike (about 4-5 hours one way from the Arakawa trailhead along the old tram road and Ooyama Trail) inside Yakushima's protected forest, part of the standard route to Jomon Sugi; the trailhead itself requires a pre-booked shuttle bus during peak season because private cars are restricted",
+      "transport": "Shuttle bus from Yakushima's Miyanoura/Anbo area to the Arakawa trailhead, then hike (~4h to Ooyama Trail entrance, ~45 min further to the tree)",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "For a while this was the largest cedar anybody knew of on Yakushima. Then Jomon Sugi was found and named, and the Daio-sugi dropped to second, which is not a demotion you feel standing under it. Japan's Ministry of the Environment measures it at 11.1 metres around at chest height and 24.7 metres tall, on a slope roughly 1,200 metres up in the island's interior forest. That is a trunk about the width of a small room.\n\nThe same ministry gives its age as more than 3,000 years. That is the government's own broad estimate rather than a ring count, and the phrasing matters: it is a floor, not a ceiling. A cedar standing here that long was already old before anything about Japan was written down.\n\nGetting there is the price and most of the point. The tree stands directly on the marked trail to Jomon Sugi, inside a World Heritage core zone, about four hours from the Arakawa trailhead along an old logging tram road and another forty-five minutes up the Ooyama Trail. Private cars cannot reach the trailhead in the busy season, so the day starts with a booked shuttle bus. Then you walk.\n\nNothing is fenced and nothing is charged. The trail simply passes it, signed, after four hours in which everything else has also been a cedar and none of them has been this one.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the size: 11.1 metres round at chest height and 24.7 metres tall, the largest cedar on the Jomon Sugi route apart from Jomon Sugi itself. It stands signed beside the Ooyama Trail, about 1,200 metres up."
     }
   ]
 }

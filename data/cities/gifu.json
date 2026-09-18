@@ -1,0 +1,71 @@
+{
+  "city": "Gifu",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Gifu maps one tree: the Chujohime Seigan Zakura, the only known specimen of a rare double-flowered cherry cultivar, in the grounds of Ganjo-ji temple. Where an ordinary mountain cherry opens five petals, this one opens twenty to thirty, and grafting was the only way to propagate it until 2008, when a few hundred of its seeds flew eight months aboard the International Space Station and at least one germinated. Legend ties its planting to the Nara-period princess Chujohime. Japan made it a National Natural Monument in 1929. Published alone here because the tree itself is the destination.",
+  "meta_description": "The Chujohime Seigan Zakura, Gifu: the only known specimen of a rare double-flowered cherry, its seeds once flown to the International Space Station.",
+  "question_meta": "Gifu's oldest and only mapped tree is the Chujohime Seigan Zakura, a rare double-flowered cherry at Ganjo-ji temple.",
+  "question_answer": "Gifu's only mapped tree, and its oldest, is the Chujohime Seigan Zakura, the sole known specimen of a rare double-flowered yamazakura cultivar, in the grounds of Ganjo-ji temple in Obora, Gifu. By legend it is roughly 1,200 years old, though nobody has dated the wood.",
+  "question_context": "Japan designated the tree a National Natural Monument on 2 April 1929, and it is genuinely unique: no other tree of this cultivar is known to exist. An ordinary yamazakura opens five petals; this one opens twenty to thirty, pale pink and doubled. Until 2008, grafting was the only way to propagate it. That year a few hundred of its seeds spent eight months aboard the International Space Station, part of a project gathering seeds from fourteen famous Japanese trees, and at least one germinated and later flowered, reported in Japan as a small sensation. Tradition holds that the Nara-period princess Chujohime, fleeing her stepmother's persecution, was healed after praying to Kannon at Ganjo-ji and planted the cherry in gratitude, the source of the roughly 1,200-year figure; that is legend rather than measurement. The trunk is modest for the reputation: city records give about nine metres tall and 31 centimetres through at chest height, a travel guide a much thicker 1.5 metres. The temple grounds are free, open 9:00 to 17:00 daily, reached by bus B74 from JR Gifu Station to the Korin Park entrance, then about a 10 minute walk.",
+  "hero_tree_id": "gif_001",
+  "oldest_tree_id": "gif_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Gifu?",
+      "a": "The Chujohime Seigan Zakura, the only known specimen of a rare double-flowered yamazakura cultivar, in the grounds of Ganjo-ji temple in Obora. By tradition it is roughly 1,200 years old, though the figure comes from legend rather than a measurement."
+    },
+    {
+      "q": "Why did its seeds go to space?",
+      "a": "Until 2008, grafting was the only reliable way to propagate this cultivar. That year a few hundred of its seeds spent eight months aboard the International Space Station, part of a project gathering seeds from fourteen famous Japanese trees, and at least one returned seed germinated and later flowered."
+    },
+    {
+      "q": "What makes its flowers unusual?",
+      "a": "An ordinary yamazakura (mountain cherry) opens five petals. This tree opens twenty to thirty, pale pink and doubled, in early April. No other tree of the cultivar is known to exist."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. Ganjo-ji temple's grounds are open 9:00 to 17:00 daily. Take bus B74 from JR Gifu Station or Meitetsu Gifu Station to the Korin Park entrance, then walk about 10 minutes."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gif_001",
+      "name": "Chujohime Seigan Zakura",
+      "species": "Yamazakura Cherry, rare double-flowered cultivar (Prunus jamasakura / Prunus itosakura)",
+      "age_estimate": "legendary origin, roughly 1200 years",
+      "age_min": 700,
+      "age_max": 1200,
+      "girth_cm": null,
+      "location": {
+        "address": "1-21-4 Obora, Gifu-shi, Gifu-ken (Ganjo-ji temple grounds)",
+        "latitude": 35.452583,
+        "longitude": 136.873083,
+        "neighbourhood": "Obora, Gifu"
+      },
+      "verified_sources": [
+        "https://www.city.gifu.lg.jp/kankoubunka/bunkazai/1005549/1021043/1018843/1018846.html",
+        "https://en.japantravel.com/gifu/princess-chujo-seigan-cherry-tree/1762",
+        "https://www.wikidata.org/wiki/Q11363887"
+      ],
+      "access": "Free, temple grounds open 9:00-17:00 daily; bus B74 from JR Gifu Station or Meitetsu Gifu Station to Korin Park entrance, then approx. 10 min walk",
+      "transport": "Bus B74 from JR Gifu Station (about 45 min, then 10 min walk)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In 2008 a few hundred of this tree's seeds spent eight months aboard the International Space Station. They went up with seeds from fourteen famous Japanese trees, and this one had more riding on it than most: until then, grafting had been the only reliable way to make another. At least one of the returned seeds germinated, grew and eventually flowered, which was reported in Japan as a small sensation.\n\nThe reason for the fuss is the flower. An ordinary yamazakura opens five petals. This one opens twenty to thirty, pale pink and doubled, and no other tree of the cultivar is known to exist. Japan made it a National Natural Monument on 2 April 1929.\n\nIts age is a story rather than a measurement. By tradition the Nara-period princess Chujohime, fleeing her stepmother's persecution, was healed after praying to Kannon here at Ganjo-ji and planted the cherry in gratitude. That legend is where the figure of roughly 1,200 years comes from. Nobody has dated the wood.\n\nThe trunk is an open question too. The city of Gifu records the tree at about nine metres tall with a trunk 31 centimetres through at chest height; a travel guide gives 8.1 metres and a full metre and a half. Those cannot both be right, so we quote neither as fact. What both agree on is that this is a slender tree for its reputation, kept going by careful hands rather than by bulk.",
+      "how_to_recognise": "You can recognise it by the flowers, twenty to thirty pale pink petals where every other mountain cherry opens five. It stands in the grounds of Ganjo-ji, slim and eight or nine metres tall rather than thick-trunked.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "early April, when the doubled flowers open, twenty to thirty petals apiece instead of the usual five"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

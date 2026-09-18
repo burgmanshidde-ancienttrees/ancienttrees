@@ -1,0 +1,64 @@
+{
+  "city": "Chikubushima",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Chikubushima maps one tree: the Mochi Tree of Hogon-ji, planted in 1602 by Katagiri Katsumoto to mark the completion of a large building project, moving the Kannon Hall, a covered bridge and the Chinese Gate, now a National Treasure, from Hideyoshi's own castle in Osaka onto this small island in Lake Biwa. Four centuries later the gate and the tree still stand together. The island is uninhabited, reached only by scheduled ferry, so this is a day trip with a timetable rather than a walk. Published alone because the tree is the destination.",
+  "meta_description": "The Mochi Tree of Hogon-ji, Chikubushima: planted 1602 beside a National Treasure gate moved from Hideyoshi's own Osaka Castle, on a Lake Biwa island.",
+  "question_meta": "Chikubushima's oldest and only mapped tree is the Mochi Tree of Hogon-ji, planted in 1602 beside the temple's National Treasure gate.",
+  "question_answer": "Chikubushima's only mapped tree, and its oldest, is the Mochi Tree of Hogon-ji, a Japanese holly planted in 1602 beside the temple's three-storey pagoda, on this small island in Lake Biwa.",
+  "question_context": "The tree carries a documented planting date rather than an estimate. In 1602, Katagiri Katsumoto, the Toyotomi clan's construction supervisor, relocated the Kannon Hall, a covered corridor bridge and the Chinese Gate (Karamon), the last now a National Treasure, from Toyotomi Hideyoshi's Osaka Castle onto Chikubushima. When the work was finished he planted a mochi tree, Ilex integra, beside the pagoda to mark it, and the gate and the tree still stand on the same terrace four centuries later. Two things are honestly uncertain. No source states the tree's scientific name outright; the identification rests on its common Japanese name, mochi-no-ki, which the photographic record also uses. And the most recent photographs found of it date to December 2016; Hogon-ji is an actively maintained National Treasure site with no report of loss, so there is every reason to think the tree stands, but no more recent proof. Chikubushima is uninhabited and reached only by a scheduled ferry from Nagahama, Hikone or Imazu, roughly 30 to 40 minutes depending on the port; the temple itself charges an entry fee once you have climbed the steps from the jetty.",
+  "hero_tree_id": "chk_001",
+  "oldest_tree_id": "chk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree on Chikubushima?",
+      "a": "The Mochi Tree of Hogon-ji, a Japanese holly (Ilex integra) planted in 1602 by Katagiri Katsumoto beside the temple's three-storey pagoda, to mark the completion of moving several structures, including today's National Treasure gate, from Osaka Castle."
+    },
+    {
+      "q": "How do you reach Chikubushima?",
+      "a": "By scheduled ferry only, from Nagahama, Hikone or Imazu on Lake Biwa, roughly 30 to 40 minutes depending on the port. The island is uninhabited, so this is a day trip with a timetable rather than a walk."
+    },
+    {
+      "q": "Is Hogon-ji free to visit?",
+      "a": "No. The temple charges an entry fee, in addition to the ferry fare, honestly stated rather than described as a free walk."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "The most recent photographs found of it date to December 2016. Hogon-ji is an actively maintained National Treasure site with no report of any loss, so there is good reason to think it stands, but no more recent confirmation. If you have been, tell us what you found."
+    }
+  ],
+  "trees": [
+    {
+      "id": "chk_001",
+      "name": "The Mochi Tree of Hogon-ji",
+      "species": "Japanese Holly (Ilex integra)",
+      "age_estimate": "about 420 years (planted 1602)",
+      "age_min": 420,
+      "age_max": 425,
+      "girth_cm": null,
+      "location": {
+        "address": "Hogon-ji Temple, Chikubushima Island, 1664 Hayazaki-cho, Nagahama, Shiga Prefecture (滋賀県長浜市早崎町1664), beside the three-story pagoda",
+        "latitude": 35.420636,
+        "longitude": 136.143557,
+        "neighbourhood": "Chikubushima (Chikubu Island), Lake Biwa"
+      },
+      "verified_sources": [
+        "https://www.chikubushima.jp/precincts/precincts8.html",
+        "https://commons.wikimedia.org/wiki/Category:Mochi_Tree,_H%C5%8Dgon-ji"
+      ],
+      "access": "Paid entry: Chikubushima is a small uninhabited island in Lake Biwa reached only by scheduled ferry from Nagahama, Hikone or Imazu; the temple grounds themselves also charge an entry fee. Not walkable from any city centre and needs a boat crossing and a schedule, honestly stated rather than described as a walk.",
+      "paid_entry": true,
+      "transport": "Ferry from Nagahama, Hikone or Imazu port (roughly 30-40 min crossing depending on port); the temple is a short climb of stone steps from the island jetty.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Most old trees carry an estimated age. This one carries a date. It was planted in 1602 by Katagiri Katsumoto to mark the end of a building job, and the job was a large one: Katsumoto, the Toyotomi clan's construction supervisor, had moved the Kannon Hall, the covered corridor bridge and the Chinese gate from Hideyoshi's Osaka Castle onto a small island in Lake Biwa. The gate is a National Treasure today. When the work was finished he planted a mochi tree beside the three-storey pagoda, and four centuries later the gate and the tree still stand on the same terrace.\n\nTwo honest notes, because this tree is short on paperwork. The species rests on its name: mochi-no-ki is the standard Japanese name for Ilex integra and the photographic record files this specimen that way, but no source states the scientific name outright. And the most recent photographs of it we can find were taken in December 2016. Hogon-ji is an actively maintained National Treasure site with no report of any loss, so there is every reason to think the tree is fine, and no recent proof of it. If you have been, tell us what you found.\n\nGetting there takes a timetable. Chikubushima is uninhabited, reached only by scheduled ferry from Nagahama, Hikone or Imazu, and the temple charges entry once you have climbed the steps from the jetty.",
+      "how_to_recognise": "You can recognise it by where it stands, on the terrace right beside the temple's three-storey pagoda. Hogon-ji has a second notable tree, a Japanese honey locust, so the mochi tree is the one at the pagoda rather than that one.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
