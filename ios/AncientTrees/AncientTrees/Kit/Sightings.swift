@@ -307,8 +307,6 @@ final class Sightings {
         newestFirst.filter { $0.treeId == nil && !$0.isUnsure }
     }
 
-    func forTree(_ id: String) -> Sighting? { all.first { $0.treeId == id } }
-
     /// Every photograph you took of one of OUR trees, newest first.
     ///
     /// Hidde, 2026-09-11, after a day photographing trees in Kyoto Gyoen: "ik

@@ -1229,6 +1229,46 @@ def all_photos(tree):
     return out
 
 
+def check_one_photograph_per_tree():
+    """No two trees may wear the same photograph.
+
+    The Cagliari case, recorded in CLAUDE.md: the sweep attached one file to
+    two different trees at once, and a viewing pass that judges candidates one
+    at a time cannot see it, because each one looks fine on its own. Copenhagen
+    is the same error at a distance, and Dublin and Nuremberg are where it is
+    waiting: measured 2026-09-10, 634 unjudged files in the queue are offered
+    to more than one tree, and 96 of them score above zero for more than one,
+    which is the set a viewing pass could plausibly approve twice.
+
+    A photograph showing two of our trees still illustrates ONE of them. The
+    other page is then telling a reader that the trunk in the picture is the
+    trunk they are walking to, and it is not, which is the promise this site
+    trades on. So the honest handling of a file that could be either is `held`
+    on both until somebody settles it, never approved on both.
+
+    It passes at zero today, which is the moment to write it: nothing has to be
+    unpicked, and the next sweep cannot introduce it quietly.
+    """
+    seen, out = {}, []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            photo = tree.get("photo") or {}
+            url = photo.get("url")
+            if not url or photo.get("status") == "held":
+                continue
+            first = seen.get(url)
+            if first:
+                out.append("%s: %s wears the same photograph as %s (%s). One file "
+                           "cannot be the portrait of two trees; hold it on both "
+                           "until somebody has looked and settled which trunk it is."
+                           % (path, tree.get("id"), first[0], url[:70]))
+            else:
+                seen[url] = (tree.get("id"), path)
+    return out
+
+
 def check_photos_are_not_the_lead_twice():
     """The same picture must not be both the lead and an extra.
 
@@ -1488,6 +1528,31 @@ def visible_text(body):
     return out
 
 
+def astro_template(src):
+    """Everything after an Astro component's frontmatter fence.
+
+    Was `src.split("---", 2)[2]`, which is wrong the moment three hyphens
+    appear inside the frontmatter, because the split cuts at the first two
+    occurrences wherever they fall. Two shapes in this repo break it, and both
+    surfaced on 2026-09-18 when HomePage.astro moved into components/:
+
+    - a section divider in a comment, `// --- Directory block ---`, which made
+      the "body" the rest of the FRONTMATTER, so every code comment in it was
+      reported as untranslated text a reader would see. 119 findings, none real.
+    - an opening fence with a comment glued to it, `---// The one translated...`,
+      which TranslatedQuestionPage.astro and TranslatedTreePage.astro both use.
+      Astro accepts it, so a check that assumes a bare fence reads the whole
+      file as template.
+
+    So: the opening fence is the file starting with `---`, and the closing one
+    is the first LATER line that is nothing but `---`.
+    """
+    if not src.startswith("---"):
+        return src
+    m = re.search(r"\n---[ \t]*(?:\n|$)", src)
+    return src[m.end():] if m else src
+
+
 def check_translated_components_have_no_typed_text():
     """A word typed into a component that renders in seven languages.
 
@@ -1509,8 +1574,7 @@ def check_translated_components_have_no_typed_text():
     """
     out = []
     for name, src in language_aware_components():
-        parts = src.split("---", 2)
-        body = parts[2] if len(parts) > 2 else src
+        body = astro_template(src)
         for text in visible_text(body):
             if text in ("Ancient Trees",):      # the brand is never translated
                 continue
@@ -2011,6 +2075,7 @@ def main():
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
                 + check_photos_are_not_the_lead_twice()
+                + check_one_photograph_per_tree()
                 + check_every_tree_names_a_source()
                 + check_a_tree_can_be_told_apart()
                 + check_story_length()
