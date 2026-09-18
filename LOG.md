@@ -1,6 +1,114 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session) - The photo shortlist aims at demand, and langcheck stops pointing at its weakest language
+
+Hidde, on being told two of the three leftover pieces were still unlanded:
+"kunnen we dit nog doen?" Cherry-picked from
+claude/zware-foto-zoektocht-kb1n3e rather than merged, because main has moved
+on every other file that branch touches. Its third piece, the SEO learning
+table, had already reached main by another route.
+
+**The shortlist had been serving the wrong rule, and it was invisible because
+only one of the two rules was ever written as code.** Coverage says one
+photograph per city; the 2026-08-12 course says photos go where there are
+readers. The tool's condition was `photos == 0`, and a city with readers has
+had its first photograph for weeks, so the demand rule addressed no city at
+all: the nine cities the digest allows depth on held 228 photo-less trees
+between them and none of them appeared.
+
+The two lanes do not compete, which is what made the switch free: of 54
+coverage cities 7 have a candidate worth viewing, of 176 demand cities 53 do,
+and the overlap is those same 7. The other 47 are blocked on supply. `--coverage`
+still prints the old list.
+
+**`--conflict` earned its place on the first run here.** The geotag used to
+score a flat +4 for existing; it is graded by distance now, and the new view
+asks where the filename and the pin disagree. Top row: a file called
+"Betteleiche im Winter" sitting 19.1 km from our pin for The Betteleiche, on a
+pin we call CONFIRMED. A wrong pin outranks every photo question on this site.
+
+**langcheck computed its verdict and ignored it eight lines later.** `--next`
+sorted on English impressions alone, so it pointed at the weakest language on
+the board. Proven areas rank first now: de, es and ja sit above Utrecht's 75
+impressions in Dutch, which runs at 50 percent of its twin and has not passed
+once.
+
+**And the check I wrote yesterday could not see any of this.** It filtered to
+branches touching `site/` or `ios/`, on the reasoning "what a reader or a phone
+would notice". That is the wrong test: this branch changed only `scripts/`, and
+a tool that decides what the machine works on next is worth as much as a page.
+Hidde found it by reading a sentence of mine rather than the list. It watches
+`scripts/` too now, and the list went from 5 branches to 7.
+
+## 2026-09-18 (session) - 27 spent branches cleared out, and what is genuinely left
+
+Hidde, after the fourth merge: "5 hoeft niet is de rest gedaan kunnen we
+archiveren?"
+
+**The list he was given is done.** The homepage duplication, the /cities split
+and the famous-tree collection, the girth-derived ages and the hug, and your
+own photograph on your own tree are all merged and live. Item 6 turned out to
+have landed by another route before the list was written. Item 5, the three
+mails, is his to send and stays where it is.
+
+**Two things on that list were never on it, and both carry real unlanded work.**
+Saying the rest is done would have been wrong:
+
+- `claude/apple-login-mobile-web-wv6fv1`, written 00:28 this morning, on his own
+  complaint that the sign-in sheet suggests you can swipe it away and cannot,
+  and that it takes you off the page you were on. The sheet was included by
+  hand in twelve files, so it existed on 58 percent of the site and the nav had
+  to NAVIGATE to /account to sign you in. It moves into Base.astro.
+- `claude/zware-foto-zoektocht-kb1n3e`. Its translation overlays and the App
+  Store download split are in main; the photo shortlist aimed at demand rather
+  than at coverage, langcheck's ranking of proven language areas, and the
+  digest's SEO learning table are not.
+
+**Cleared for deletion and NOT deleted**: this session's token can push a ref
+and not delete one, and `git push origin --delete` comes back 403 on every one
+of them, singly or together. So the verdict is recorded here and the refs are
+still on the remote. Deleting them is one command from a clone that has the
+rights, and nothing is lost either way, because every tip is written down:
+
+    git push origin --delete <branch>   # or tick them off in the GitHub UI
+
+Every commit below is present in main, or the work landed by another route and
+was checked by hand. The tips are recorded so nothing is unrecoverable even
+after deletion (`git checkout <sha>` brings any of them back):
+
+| branch | tip | why it can go |
+|---|---|---|
+| `app-permission-recovery` | `c8f90f7a` | every commit is in main |
+| `claude/affectionate-hamilton-07e1bc` | `04e6dfa6` | every commit is in main |
+| `claude/blissful-cray-9dppia` | `503a0ba6` | every commit is in main |
+| `claude/camera-photo-recognition-czgy6m` | `17f75c90` | every commit is in main |
+| `claude/city-list-cities-only-tvip1a` | `e56342d2` | every commit is in main |
+| `claude/daily-digest-ewqhcc` | `b44af1d8` | every commit is in main |
+| `claude/daily-digest-hmk4ke` | `a4677677` | every commit is in main |
+| `claude/emoji-icon-inconsistencies-f6j9z3` | `76dc08f1` | every commit is in main |
+| `claude/empty-collections-website-dscksa` | `1f1c4158` | every commit is in main |
+| `claude/epic-lovelace-kjjc03` | `64634625` | every commit is in main |
+| `claude/filter-design-improvement-ujknep` | `9d31ba12` | every commit is in main |
+| `claude/footer-missie-alignment-d7ku63` | `764762fa` | every commit is in main |
+| `claude/foto-zichtbaarheid-eigen-boom-tz5y1s` | `464a03c5` | every commit is in main |
+| `claude/hero-photo-ratio` | `ef1510ed` | every commit is in main |
+| `claude/kunnen-we-hier-wat-mee-0t7f8k` | `d880fe59` | every commit is in main |
+| `claude/mobile-search-zoom-bug-2uillb` | `27eebed6` | every commit is in main |
+| `claude/multiple-images-per-tree-gh0x14` | `07477818` | every commit is in main |
+| `claude/nieuwe-blacklinks-eocc8d` | `0e070c8d` | every commit is in main |
+| `claude/seo-results-performance-oqayxn` | `d0dc043d` | every commit is in main |
+| `claude/vigilant-thompson-omceg9` | `4ed17067` | every commit is in main |
+| `claude/website-ux-audit-aji746` | `d8a9e231` | every commit is in main |
+| `geo-distance-consolidation` | `fcc74489` | every commit is in main |
+| `maplibre-map-wip` | `fc700405` | every commit is in main |
+| `claude/tree-age-species-trunk-size-u9u1yb` | `2e13bbd4` | landed by content, verified |
+| `claude/boom-pagina-kop-h8zuv9` | `d61ef453` | landed by content, verified |
+| `claude/nostalgic-lewin-e2a29b` | `77abfbb5` | landed by content, verified |
+| `claude/project-display-chrome-macos-no73xi` | `14fcd2ea` | landed by content, verified |
+
+Kept: the three mail branches (item 5), the two above, and this session's own.
+
 ## 2026-09-18 (session) - Your own photograph shows on your own tree, on the website too
 
 Fourth of the stranded branches (claude/foto-zichtbaarheid-eigen-boom-tz5y1s,
