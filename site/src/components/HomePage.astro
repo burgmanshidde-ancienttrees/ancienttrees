@@ -1,0 +1,584 @@
+---
+// The homepage, shared by / and the seven /<lang>/ routes.
+//
+// Extracted from pages/index.astro on 2026-09-18, the same move ExploreMap
+// got: one implementation, one file per language route, so the two cannot
+// drift. Hidde had asked where the language bar was and the honest answer was
+// that the homepage was the one page with no translated version, so the picker
+// hid itself rather than offer a 404. It is the page carrying the value
+// proposition, which makes it the worst page on the site to have only in
+// English.
+//
+// LINKS ONLY GO WHERE A PAGE EXISTS, which is the whole discipline here. City
+// pages and /cities and /explore exist in all seven; /collections, /species,
+// /countries and /parks do not, so those links stay English on a translated
+// homepage rather than pointing at a 404. A tree page exists in a language
+// only where that city is genuinely translated, so it is asked per city.
+interface Props {
+  /** "en" for the canonical homepage, else one of the seven. */
+  lang?: string;
+}
+const { lang = "en" } = Astro.props as Props;
+/** The homepage genuinely exists in all seven, so unlike a fallback city page
+ * it may advertise every one of them to Google. */
+const homeVariants = Object.fromEntries(translatedLanguages().map((l) => [l, `/${l}`]));
+// Homepage. Ported from build_homepage(), build_site.py:4932-5240.
+//
+// Two things `live_cards`/`soon_cards` (build_site.py:4981-4994) were: dead
+// code. Computed in Python and never referenced by the body template -
+// verified by grepping the whole file for both names. Not ported here for
+// the same reason: matching real production output means matching what it
+// actually renders, not what an unused variable suggests it might.
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../lib/trees";
+import { usablePhoto, imgSrcset, imgSrcsetAttrs, photoWidth, MIN_CARD_PX } from "../lib/images";
+import { speciesCommon, COUNTRY_MIN_CITIES } from "../lib/species";
+import { belongsInCityIndex } from "../lib/city-index";
+import { groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../lib/parks";
+import { ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { byCityListOrderEntry } from "../lib/city-order";
+import { SPECIES_ICONS } from "../lib/species-icons";
+import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
+import { ui, languagesForCity, hreflangSet, translatedLanguages } from "../lib/i18n";
+
+const u = ui(lang);
+/** A page that exists in every language: the city pages, /cities, /explore. */
+const L = (path: string) => (lang === "en" ? path : `/${lang}${path}`);
+/** A tree page exists only where the city is genuinely translated. */
+const treeHref = (citySlug: string, treeSlug: string) =>
+  lang !== "en" && languagesForCity(citySlug).includes(lang)
+    ? `/${lang}/${citySlug}/${treeSlug}`
+    : `/${citySlug}/${treeSlug}`;
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function icon(k: string): string {
+  return `<svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">${SPECIES_ICONS[k]}</svg>`;
+}
+
+// Photo: Kevin Young, Unsplash. Free Unsplash License, which needs no visible
+// credit, so the overlay was removed on Hidde's instruction (DECISIONS.md
+// 2026-07-29). Attribution is recorded HERE because hard rule 4 says it must be
+// recorded somewhere, and the somewhere used to be build_site.py:80-83, which
+// was deleted on 2026-08-09 and took the photographer's name with it. This
+// comment used to be a pointer at that dead file.
+//
+// It is the FREE licence and not Unsplash+ (Hidde asked, 2026-08-29): the two
+// look alike on the site and are not. Unsplash+ needs a paid subscription and
+// is his call under hard rule 5, so nothing here uses one.
+const HERO_PHOTO_URL = "https://images.unsplash.com/photo-1422393682802-921122338109?q=80&w=2400&auto=format&fit=crop";
+
+const canonical = lang === "en" ? `${BASE_URL}/` : `${BASE_URL}/${lang}`;
+const title = u.homeTitle;
+const description = u.homeDescription;
+
+// city-list.json order before any sort, matching `renderable` in main()
+// (build_site.py:5721-5726): every sort below is Python's stable sort over
+// that walk order, so a tie (dozens of cities share a tree count) breaks
+// the same way only if the pre-sort order matches.
+const renderable = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
+const published = renderable.map((c) => ({ slug: c.id, city: c.data.city, country: c.data.country, count: renderableTrees(c).length }));
+
+const allCollections = await getCollection("collectionPages");
+const collections = allCollections.filter((c) => c.data.status !== "needs_curation");
+
+const speciesIntros = await getCollection("species");
+const speciesGroups = new Map<string, number>();
+for (const c of renderable) {
+  for (const t of renderableTrees(c)) {
+    const common = speciesCommon(t);
+    speciesGroups.set(common, (speciesGroups.get(common) ?? 0) + 1);
+  }
+}
+const SPECIES_MIN_TREES = 3;
+const introByCommon = new Map(speciesIntros.map((i) => [i.data.common_name, i]));
+const qualifying = [...speciesGroups.keys()].filter((c) => (speciesGroups.get(c) ?? 0) >= SPECIES_MIN_TREES && introByCommon.has(c));
+const speciesSlugs = [...qualifying].map((common) => [common, slugify(common)] as [string, string]).sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
+
+// --- Directory block (the four-column "anywhere" grid) ---
+const rankedCities = [...published].sort((a, b) => b.count - a.count);
+const citiesCol = rankedCities.slice(0, 10).map((p) => `<a href="${L(`/${p.slug}`)}" data-ev="home-dir-city" data-detail="${esc(p.slug)}">${esc(p.city)}</a>`).join("");
+// Ten, like every other column in this block. It used to print every
+// qualifying species, which was 30 when the site had 13 species pages and
+// would have been 84 the moment the catch-up batch landed: one column three
+// times the height of its neighbours, with the footer's own bottom edge
+// somewhere below the fold. Hidde, 2026-08-13: "it would make sense to cut off
+// the footer at about the same height."
+// Ranked by how many trees we map, because the heading says "Top species" and
+// the column was alphabetical: Aleppo Pine, American Elm, American Sycamore,
+// Amur Cork Tree, Atlas Cedar, Austrian Pine, Bald Cypress, Baobab, Bishop
+// Wood, Bitter Orange, ten A- and B-names presented as the top of the site
+// (Hidde, 2026-09-12). Every other column here is genuinely ranked, and the
+// Species SHELF further up this same page already sorts by tree count, so the
+// directory was the one place disagreeing with its own label. speciesSlugs
+// stays alphabetical: the shelf re-sorts it anyway and nothing else depends
+// on this order.
+const speciesRanked = [...speciesSlugs].sort((a, b) => (speciesGroups.get(b[0]) ?? 0) - (speciesGroups.get(a[0]) ?? 0));
+const speciesCol =
+  speciesRanked.slice(0, 10).map(([cn, sl]) => `<a href="/species/${sl}" data-ev="home-dir-species" data-detail="${esc(sl)}">${esc(cn)}</a>`).join("") +
+  `<a class="dir-morelink" href="/species">${u.homeAllSpecies(speciesSlugs.length)}</a>`;
+const collCol =
+  // Seven, not ten: these titles run to 48 characters and wrap, so seven of them
+  // already stand as tall as ten single-line entries beside them.
+  collections.slice(0, 7).map((c) => `<a href="/collections/${esc(c.data.slug)}" data-ev="home-dir-collection" data-detail="${esc(c.data.slug)}">${esc(c.data.title)}</a>`).join("") +
+  `<a class="dir-morelink" href="/collections">${u.homeAllCollections}</a>`;
+
+// Unfiltered trees (entry.data.trees, not renderableTrees), matching the
+// same pre-existing Python quirk kept in search-index.json.ts: build_site.py
+// 4960-4964 walks `entry["data"]["trees"]` directly.
+const oldest: { ageMax: number; name: string; citySlug: string; treeSlug: string }[] = [];
+for (const entry of renderable) {
+  for (const t of entry.data.trees) {
+    if (t.age_max) oldest.push({ ageMax: t.age_max, name: t.name, citySlug: entry.id, treeSlug: slugify(t.name) });
+  }
+}
+oldest.sort((a, b) => b.ageMax - a.ageMax);
+const treesCol = oldest.slice(0, 9).map((o) => `<a href="${treeHref(o.citySlug, o.treeSlug)}" data-ev="home-dir-tree" data-detail="${esc(o.citySlug)}/${esc(o.treeSlug)}">${esc(o.name)}</a>`).join("") +
+  `<a class="dir-morelink" href="/collections/trees-older-than-400-years">${u.homeOldestOfAll}</a>`;
+
+// One link out per column, no expander. A directory block is a signpost, not
+// a place to interact: every other column ends in a single "All X" link, and a
+// button that reveals ten more cities made this one behave differently for no
+// gain, since /cities is one click away and holds all of them. Hidde,
+// 2026-08-13: "die show 10 more is denk ik ook een rare knop."
+// Counts the cities /cities actually lists as cities, not every place file:
+// since 2026-09-11 that index keeps single famous trees in a section of their
+// own (../lib/city-index.ts), and a signpost promising a number the page it
+// points at does not show is the count-promise failure one level up.
+const cityCount = renderable.filter(belongsInCityIndex).length;
+const moreBlock = `<a class="dir-morelink" href="${L("/cities")}">${u.homeAllCities(cityCount)}</a>`;
+const directoryHtml =
+  '<div class="dir-cols">' +
+  `<div class="dir-group"><h3>${u.homeDirTopCities}</h3>${citiesCol}${moreBlock}</div>` +
+  `<div class="dir-group"><h3>${u.homeDirCollections}</h3>${collCol}</div>` +
+  `<div class="dir-group"><h3>${u.homeDirOldest}</h3>${treesCol}</div>` +
+  `<div class="dir-group"><h3>${u.homeDirTopSpecies}</h3>${speciesCol}</div>` +
+  "</div>";
+
+// One photograph appears once per page, whichever shelf claims it first
+// (favourites, then countries, species, parks): Airbnb, AllTrails and Google
+// Maps never repeat a thumbnail on one screen, and Hidde spotted the same
+// ginkgo standing in for a country, a species and a park (2026-08-21).
+const usedPhotos = new Set<string>();
+
+type AnyTree = CityEntry["data"]["trees"][number];
+const treeById = new Map<string, AnyTree>();
+for (const c of renderable) for (const t of c.data.trees) treeById.set(t.id, t);
+
+// A pinned face wins over any ranking, and is claimed before the shelves run
+// so no other shelf takes it first: only a person can see that a crown is bare
+// or that the parked cars are the subject (Hidde, 2026-08-21, on the London
+// Plane and Ginkgo cards). Set face_tree_id on the species file and the card
+// stops guessing.
+const pinnedSpeciesPhoto = new Map<string, string>();
+for (const intro of speciesIntros) {
+  const id = intro.data.face_tree_id;
+  const url = id ? usablePhoto(treeById.get(id) ?? ({} as AnyTree))?.url : null;
+  if (url) {
+    pinnedSpeciesPhoto.set(intro.data.common_name, url);
+    usedPhotos.add(url);
+  }
+}
+/** The best photograph in a set for a CARD, not the first one found.
+ *
+ * Two rules, both from what Hidde saw on 2026-08-21. Big enough first: a file
+ * narrower than MIN_CARD_PX is painted upscaled and looks soft, so it never
+ * fronts a shelf however good the picture is. Then landscape: a card is a 4:3
+ * letterbox, and a portrait shot of a stairway crops to a stairway, which is
+ * how the Oriental Plane came to be represented by steps. Widest wins the
+ * tie, because it survives the biggest box we have.
+ */
+function firstPhoto(trees: AnyTree[]): string | null {
+  const ranked = trees
+    .map((t) => usablePhoto(t))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p?.url) && !usedPhotos.has(p!.url))
+    .map((p) => {
+      const w = photoWidth(p);
+      const h = (p as { height?: number }).height ?? 0;
+      return { url: p.url, w, landscape: w > 0 && h > 0 && w >= h };
+    })
+    .sort((a, b) => {
+      // Big enough is the first sort key, not a filter: a set whose only
+      // photographs are small still shows one, because a real picture of the
+      // tree beats an empty card. It just never wins over a big one.
+      const abig = a.w === 0 || a.w >= MIN_CARD_PX;
+      const bbig = b.w === 0 || b.w >= MIN_CARD_PX;
+      return Number(bbig) - Number(abig)
+        || Number(b.landscape) - Number(a.landscape)
+        || b.w - a.w;
+    });
+  const pick = ranked[0];
+  if (!pick) return null;
+  usedPhotos.add(pick.url);
+  return pick.url;
+}
+/** The intrinsic width of a url we already picked, for the srcset cap. */
+const widthByUrl = new Map<string, number>();
+for (const c of renderable) {
+  for (const t of c.data.trees) {
+    const p = usablePhoto(t);
+    if (p?.url) widthByUrl.set(p.url, photoWidth(p));
+  }
+}
+function cardImg(url: string, sizes: string, widths = [400, 800]): string {
+  return imgSrcsetAttrs(url, widths, sizes, widthByUrl.get(url) ?? 0);
+}
+// A country is a set, and sets get the Spotify/Pinterest treatment: a 2x2
+// mosaic of four trees from four different cities, which reads as breadth
+// where one photo read as one tree.
+function mosaic(urls: string[]): string {
+  return `<span class="shelf-ph shelf-mosaic">` +
+    urls.map((u) => `<img ${cardImg(u, "(max-width: 800px) 36vw, 10vw", [400])} alt="" loading="lazy">`).join("") +
+    `</span>`;
+}
+// ev/detail feed the homepage click instrumentation (2026-09-03, Hidde:
+// "ik wil vooral zien of degene die er staan worden geklikt en dan testen
+// met andere"): before swapping or adding a shelf, know whether the one
+// there now gets clicked at all. Reuses the existing data-ev/data-detail
+// pipe (Base.astro), so this is an attribute, not a new tracking script.
+function shelfCard(href: string, photoUrl: string, title: string, meta: string, ev?: string, detail?: string): string {
+  const evAttrs = ev ? ` data-ev="${ev}" data-detail="${esc(detail ?? "")}"` : "";
+  return (
+    `<a class="shelf-card" href="${href}"${evAttrs}>` +
+    `<span class="shelf-ph"><img ${cardImg(photoUrl, "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
+    `<b>${esc(title)}</b>` +
+    `<span class="shelf-meta">${meta}</span></a>`
+  );
+}
+
+// --- The oldest trees we map ---
+// The app's own shelf (Home.swift), brought to the web because it is the one
+// row that shows what the database actually holds rather than a way of
+// slicing it. Same rule on both surfaces: rank by the LOW end of the range,
+// so a tree claiming 200 to 800 years does not outrank one solidly dated at
+// 900, and require a photograph, because a shelf about the most spectacular
+// thing we have cannot be a row of placeholders.
+//
+// It claims its photographs before every other shelf (only the species pins
+// come first), because a city card can be fronted by any of its trees while
+// a tree card can only be its own tree. That is why the favourites loop
+// below skips a picture this shelf has taken.
+function shortAge(t: AnyTree): string {
+  const lo = t.age_min ?? 0;
+  const hi = t.age_max ?? 0;
+  if (lo > 0) return hi > lo ? `${lo}-${hi} years` : `${lo} years`;
+  return "";
+}
+const oldestCards = renderable
+  .flatMap((c) => renderableTrees(c).map((t) => ({ t, city: c.data.city, slug: c.id })))
+  .filter((o) => (o.t.age_min ?? 0) > 0 && usablePhoto(o.t)?.url)
+  .sort((a, b) => (b.t.age_min ?? 0) - (a.t.age_min ?? 0))
+  // Ten, where the app shows twelve: every shelf on this page prints ten and
+  // wideShelf caps at ten anyway, so building twelve only claimed two
+  // photographs that were never rendered and took them from the shelves
+  // below. The ranking is the thing that has to match across the two
+  // surfaces, not the card count.
+  .slice(0, 10)
+  .map((o) => {
+    const url = usablePhoto(o.t)!.url;
+    usedPhotos.add(url);
+    return shelfCard(`/${o.slug}/${slugify(o.t.name)}`, url, o.t.name,
+      `${shortAge(o.t)} &middot; ${esc(o.city)}`, "home-oldest", o.t.id);
+  });
+const oldestShelf = wideShelf(u.homeOldestShelfH, "/collections/trees-older-than-400-years", u.homeOldestOfAll, oldestCards);
+
+// --- Our favourite tree cities shelf ---
+const FAVOURITE_CITIES = ["barcelona", "rome", "paris", "berlin", "amsterdam", "london", "new-york", "lisbon", "vienna", "edinburgh"];
+const bySlug = new Map(renderable.map((e) => [e.id, e]));
+const favCards: string[] = [];
+for (const cs of FAVOURITE_CITIES) {
+  const e = bySlug.get(cs);
+  if (!e) continue;
+  let photo: { url: string } | null = null;
+  const hero = e.data.hero_tree_id;
+  if (hero) {
+    const t = e.data.trees.find((t) => t.id === hero);
+    if (t) {
+      const p = usablePhoto(t);
+      // A pinned hero still loses to the oldest-trees shelf above, which is
+      // the only shelf whose cards cannot swap picture: London's face moves
+      // to another of its trees rather than printing the Totteridge Yew
+      // twice on one page.
+      if (p?.url && !usedPhotos.has(p.url)) photo = { url: p.url };
+    }
+  }
+  if (!photo) {
+    for (const t of e.data.trees) {
+      const p = usablePhoto(t);
+      if (p?.url && !usedPhotos.has(p.url)) {
+        photo = { url: p.url };
+        break;
+      }
+    }
+  }
+  if (!photo) continue;
+  usedPhotos.add(photo.url);
+  favCards.push(
+    `<a class="shelf-card" href="${L(`/${cs}`)}" data-ev="home-fav" data-detail="${esc(cs)}">` +
+      `<span class="shelf-ph"><img ${cardImg(photo.url, "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
+      `<b>${esc(e.data.city)}</b>` +
+      `<span class="shelf-meta">${esc(u.homeShelfMeta(e.data.trees.length, e.data.country))}</span></a>`,
+  );
+}
+const favShelf =
+  favCards.length >= 4
+    ? `<section class="shelf"><div class="shelf-head"><h2>${u.homeFavH}</h2>` +
+      `<a href="${L("/cities")}">${u.citiesCrumb}</a></div>` +
+      `<div class="shelf-row shelf-row-wide">${favCards.slice(0, 10).join("")}</div></section>`
+    : "";
+
+// --- Countries, species and parks shelves ---
+// Hidde, 2026-08-21: the favourites shelf (five across, scrolling) reads
+// better than the four-card grids below it, so every shelf below the fold is
+// built the same way, and the two that stood there (season, collections) are
+// replaced by the three entry points the data has already earned: countries,
+// species, parks. The season act block and /in-season left on 2026-08-26
+// (the season story is Plus, DECISIONS.md); collections
+// keep their directory column. One builder, so the shelves cannot drift
+// apart again.
+function wideShelf(heading: string, allHref: string, allLabel: string, cards: string[]): string {
+  return cards.length >= 4
+    ? `<section class="shelf"><div class="shelf-head"><h2>${heading}</h2>` +
+      `<a href="${allHref}">${allLabel}</a></div>` +
+      `<div class="shelf-row shelf-row-wide">${cards.slice(0, 10).join("")}</div></section>`
+    : "";
+}
+
+// Countries: the ones with a page (an intro and enough cities), biggest first.
+const countryIntros = await getCollection("countries");
+const citiesByCountry = new Map<string, CityEntry[]>();
+for (const c of renderable) {
+  if (!citiesByCountry.has(c.data.country)) citiesByCountry.set(c.data.country, []);
+  citiesByCountry.get(c.data.country)!.push(c);
+}
+const countryCards = countryIntros
+  .map((intro) => {
+    const cities = (citiesByCountry.get(intro.data.country) ?? [])
+      .slice()
+      .sort((x, y) => renderableTrees(y).length - renderableTrees(x).length);
+    if (cities.length < COUNTRY_MIN_CITIES) return null;
+    const trees = cities.reduce((n, c) => n + renderableTrees(c).length, 0);
+    // Four photographs from four different cities, biggest cities first; a
+    // country with fewer than four photographed cities shows one picture.
+    const urls: string[] = [];
+    for (const c of cities) {
+      const hero = c.data.hero_tree_id ? c.data.trees.find((t) => t.id === c.data.hero_tree_id) : undefined;
+      const u = firstPhoto(hero ? [hero, ...c.data.trees] : c.data.trees);
+      if (u) urls.push(u);
+      if (urls.length === 4) break;
+    }
+    if (urls.length === 0) return null;
+    const meta = `${cities.length} ${cities.length === 1 ? "city" : "cities"} &middot; ${trees} trees`;
+    const html = urls.length === 4
+      ? `<a class="shelf-card" href="/${esc(intro.data.slug)}" data-ev="home-country" data-detail="${esc(intro.data.slug)}">${mosaic(urls)}<b>${esc(intro.data.country)}</b><span class="shelf-meta">${meta}</span></a>`
+      : shelfCard(`/${esc(intro.data.slug)}`, urls[0], intro.data.country, meta, "home-country", intro.data.slug);
+    return { trees, html };
+  })
+  .filter((c): c is { trees: number; html: string } => c !== null)
+  .sort((x, y) => y.trees - x.trees)
+  .map((c) => c.html);
+const countriesShelf = wideShelf(u.homeCountriesH, "/countries", u.homeAllCountries, countryCards);
+
+// Species: the ones with a page, by how many trees we map of them.
+const treesBySpecies = new Map<string, AnyTree[]>();
+for (const c of renderable) {
+  for (const t of renderableTrees(c)) {
+    const key = speciesCommon(t);
+    if (!treesBySpecies.has(key)) treesBySpecies.set(key, []);
+    treesBySpecies.get(key)!.push(t);
+  }
+}
+const speciesCards = speciesSlugs
+  .map(([common, slug]) => {
+    const trees = treesBySpecies.get(common) ?? [];
+    const photo = pinnedSpeciesPhoto.get(common) ?? firstPhoto(trees);
+    if (!photo) return null;
+    return { n: trees.length, html: shelfCard(`/species/${slug}`, photo, common, `${trees.length} trees`, "home-species", slug) };
+  })
+  .filter((c): c is { n: number; html: string } => c !== null)
+  .sort((x, y) => y.n - x.n)
+  .map((c) => c.html);
+const speciesShelf = wideShelf(u.homeSpeciesH, "/species", u.homeAllSpecies(speciesSlugs.length), speciesCards);
+
+// Parks: the ones with a page, biggest first.
+const parkIntros = await getCollection("parks");
+const parkIntroByKey = new Map(parkIntros.map((i) => [parkGroupKey(i.data.city_slug, i.data.park), i]));
+const parkCards = [...groupTreesByPark(renderable).values()]
+  .map((g) => {
+    if (g.trees.length < PARK_MIN_TREES) return null;
+    const intro = parkIntroByKey.get(parkGroupKey(g.citySlug, g.parkName));
+    if (!intro) return null;
+    const photo = firstPhoto(g.trees);
+    if (!photo) return null;
+    return { n: g.trees.length, html: shelfCard(`/parks/${esc(intro.data.slug)}`, photo, intro.data.name || intro.data.park,
+      `${g.trees.length} trees &middot; ${esc(g.city.data.city)}`, "home-park", intro.data.slug) };
+  })
+  .filter((c): c is { n: number; html: string } => c !== null)
+  .sort((x, y) => y.n - x.n)
+  .map((c) => c.html);
+const parksShelf = wideShelf(u.homeParksH, "/parks", u.homeAllParks, parkCards);
+
+// --- The four static home-act illustrations ---
+const findPin1 = icon("plane");
+const findPin2 = icon("wingnut");
+const findPin3 = icon("broadleaf");
+const walkPin1 = icon("oak");
+const walkPin2 = icon("plane");
+const walkPin3 = icon("ginkgo");
+const walkPin4 = icon("yew");
+const radarIcon1 = icon("ginkgo");
+const radarIcon2 = icon("ginkgo");
+const radarIcon3 = icon("wisteria");
+const radarMonthVals = [0, 0, 0, 0.5, 0.5, 0, 0.5, 0.5, 0, 0.5, 1, 0];
+const radarMonths = radarMonthVals.map((v) => `<span class="${v === 1 ? "on" : v === 0.5 ? "half" : ""}"></span>`).join("");
+const lit = ["oak", "plane", "ginkgo", "yew", "cedar", "olive"];
+const dim = ["pine", "cypress", "fig", "wisteria"];
+const collectedSpecies = [...lit, ...dim]
+  .map((k) => `<span class="sp${lit.includes(k) ? "" : " dim"}">${icon(k)}${k === "ginkgo" ? '<span class="sp-name">Ginkgo</span>' : ""}</span>`)
+  .join("");
+
+const graph = SITE_SCHEMA;
+const headExtra = ldScript(graph);
+const heroImg = imgSrcset(HERO_PHOTO_URL, [1200, 2000, 2800], "100vw");
+const scripts = SEARCH_WIDGET_JS;
+---
+<Base title={title} description={description} canonical={canonical} lang={lang} ogType="website" headExtra={headExtra + "\n" + hreflangSet("/", homeVariants)}>
+<div class="home-hero poster">
+  <img class="hero-bg" id="hero-bg" {...heroImg} alt="">
+  <div class="hero-scrim"></div>
+  <div class="hero-center">
+    <h1>{u.homeHeroLead} <em>{u.homeHeroEm.replace(/\.$/, "")}</em>.</h1>
+    <Fragment set:html={searchForm("home", "city-q", "hero-search poster-search", true)} />
+    {/* The app is asked for IN THE HERO, not only from the bar (Hidde,
+        2026-09-04: "en inderdaad op de homepage ook meer naar voren laten
+        komen"). Convention: komoot's phone homepage is a headline and one
+        filled "Download de App" button over the photograph. This page keeps
+        the search field above it, because the map is the product.
+
+        ONE control under the search, not two (Hidde, same day: "maybe the
+        other button should just replace explore trees near you and be
+        centered"). The explore link stood beside it for half a day and he is
+        right that it made the row read as a choice; komoot's hero has one
+        button and AllTrails' has the search field. Nothing is lost: /explore
+        is the Map item in the bar at every width, and the footer carries it.
+
+        The SHAPE is Polarsteps', copied on purpose (Hidde, 2026-09-04: "kun je
+        precies het ontwerp van deze knop overnemen maar dan met ons app logo",
+        with their phone homepage beside it). Measured off that screenshot
+        rather than guessed: a white pill about 46 tall, the app icon 28 square
+        sitting close to the left edge, a small gap, then the label in 17px
+        bold near-black, and a soft shadow under the whole thing.
+
+        The picture is the REAL app icon, ios/.../AppIcon.png resized, and not
+        the site's own icon-512.png, which is an older drawing of the same tree.
+        This button's whole trick is showing the thing the reader will find on
+        their home screen afterwards, so it has to be that file.
+
+        This is not the App Store badge and does not pretend to be one; that
+        badge is Apple's artwork, is never redrawn, and lives on /app and in the
+        download dialog (CONVENTIONS.md 2026-09-03). A brand's own pill carrying
+        its own icon is a different control, which is exactly what Polarsteps,
+        komoot and AllTrails all put in their hero.
+
+        And it says "Get the app" while the bar says "Download the app" (Hidde:
+        "maybe say get the app so you dont say the same thing twice"). English
+        typed here rather than pulled from chrome(): this page exists in
+        English only, and inventing seven translations of a second label for a
+        page that has no translations would be copy nobody checked. The day a
+        translated homepage ships, this string moves to the table with the
+        rest. */}
+    <p class="hero-links">
+      <a class="hero-app" href="/app" data-app-download data-ev="app-cta">
+        <img src="/assets/app-icon.png" width="96" height="96" alt="" loading="eager" decoding="async">{u.getTheApp}</a>
+    </p>
+  </div>
+</div>
+<section class="hero-sub">
+  <p>{u.homeSub}</p>
+</section>
+<Fragment set:html={favShelf} />
+<section class="home-acts">
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">{u.homeVerbFind}</span>
+      <h2>{u.homeFindH}</h2>
+      <p>{u.homeFindBody}</p>
+    </div>
+    <figure class="home-act-visual hav-card">
+      <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M-10 80 L410 60" stroke="#E2DFD2" stroke-width="14"/>
+        <path d="M-10 190 L410 210" stroke="#E2DFD2" stroke-width="18"/>
+        <path d="M120 -10 L100 310" stroke="#E2DFD2" stroke-width="12"/>
+        <path d="M300 -10 L330 310" stroke="#E2DFD2" stroke-width="14"/>
+        <path d="M150 95 Q 220 70 290 110 Q 310 170 240 185 Q 160 195 145 150 Z" fill="#E4EAD5"/>
+        <path d="M-10 250 Q 120 235 410 265 L410 310 L-10 310 Z" fill="#DCE7EF"/>
+      </svg>
+      <span class="map-pin" style="left:30%;top:28%"><Fragment set:html={findPin1} /></span>
+      <span class="map-pin" style="left:63%;top:44%"><Fragment set:html={findPin2} /></span>
+      <span class="map-pin" style="left:44%;top:74%"><Fragment set:html={findPin3} /></span>
+      <span class="map-pin me" style="left:52%;top:58%"></span>
+      <figcaption class="hav-chip"><span class="hav-dot"></span>
+        <span><strong>{u.homeNearestChip}</strong>The Wertheimpark Wingnut &middot; {u.homeMinWalk(6)}</span></figcaption>
+    </figure>
+  </div>
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">{u.homeVerbWalk}</span>
+      <h2>{u.homeWalkH}</h2>
+      <p>{u.homeWalkBody}</p>
+    </div>
+    <figure class="home-act-visual hav-card">
+      <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M-10 120 L410 100" stroke="#E2DFD2" stroke-width="16"/>
+        <path d="M200 -10 L190 310" stroke="#E2DFD2" stroke-width="12"/>
+        <path d="M40 200 Q 140 240 300 215 Q 380 200 420 230" stroke="#E2DFD2" stroke-width="14" fill="none"/>
+        <path d="M250 40 Q 340 30 380 80 Q 370 140 290 130 Q 240 110 250 40 Z" fill="#E4EAD5"/>
+        <path d="M76 234 C 120 200 96 150 150 132 C 210 112 232 150 268 96 C 290 62 320 70 340 84"
+          stroke="#3D5C1E" stroke-width="3.5" fill="none" stroke-dasharray="1 9" stroke-linecap="round"/>
+      </svg>
+      <span class="map-pin" style="left:19%;top:78%"><Fragment set:html={walkPin1} /><span class="n">1</span></span>
+      <span class="map-pin" style="left:37.5%;top:44%"><Fragment set:html={walkPin2} /><span class="n">2</span></span>
+      <span class="map-pin" style="left:67%;top:32%"><Fragment set:html={walkPin3} /><span class="n">3</span></span>
+      <span class="map-pin" style="left:85%;top:28%"><Fragment set:html={walkPin4} /><span class="n">4</span></span>
+      <figcaption class="hav-chip"><span><strong>{u.homeWalkChip}</strong>{u.homeTreesCount(4)} &middot; <span class="dist" data-km="5.2000" data-metric="5.2 km">5.2 km</span> &middot; {u.homeAboutTime}</span></figcaption>
+    </figure>
+  </div>
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">{u.homeVerbCollect}</span>
+      <h2>{u.homeCollectH}</h2>
+      <p>{u.homeCollectBody}</p>
+    </div>
+    <div class="home-act-visual" style="background:none;border:none;box-shadow:none;padding:0">
+      <div class="hav-phone"><div class="hav-screen">
+        <h4>{u.homePhoneTitle}</h4>
+        <div class="stat-row">
+          <div class="stat"><b>23</b><span>{u.homeStatTrees}</span></div>
+          <div class="stat alt"><b>6</b><span>{u.homeStatCities}</span></div>
+          <div class="stat"><b>2000</b><span>{u.homeStatOldest}</span></div>
+        </div>
+        <h5>{u.homeCollectedSpecies}</h5>
+        <div class="sp-grid"><Fragment set:html={collectedSpecies} /></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<Fragment set:html={countriesShelf} />
+<Fragment set:html={speciesShelf} />
+<Fragment set:html={parksShelf} />
+<Fragment set:html={oldestShelf} />
+<main class="page">
+  <h2 class="section-heading" id="cities">{u.homeDirectoryH}</h2>
+  <Fragment set:html={directoryHtml} />
+  {/* No contribution block here. The footer carries the same ask on every
+      page of the site, and on the homepage the two sat one under the other,
+      saying the same sentence twice within one screen (Hidde, 2026-09-12,
+      with the screenshot). Removed here rather than in the footer because the
+      footer is the version that reaches all 5,500 pages. If the homepage ever
+      needs a stronger ask than the footer's, it goes ABOVE the directory and
+      says something the footer does not. */}
+</main>
+<Fragment slot="scripts" set:html={scripts} />
+</Base>

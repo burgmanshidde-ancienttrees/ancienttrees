@@ -356,6 +356,39 @@ export interface UIStrings {
    * translating them turned the English from "6 trees, 300 m apart" into
    * "6, 300 m", which is not a shorter sentence, it is a worse one. */
   exploreWalkItem: (trees: number, apart: string) => string;
+  /** The homepage's own strings. Added 2026-09-18 with the translated
+   * homepage: the 14 that existed covered the prose and none of the chrome,
+   * so a translated homepage would have shown Spanish paragraphs under
+   * English headings. */
+  homeVerbFind: string;
+  homeVerbWalk: string;
+  homeVerbCollect: string;
+  homeNearestChip: string;
+  homeMinWalk: (n: number) => string;
+  homeWalkChip: string;
+  homeTreesCount: (n: number) => string;
+  homeAboutTime: string;
+  homePhoneTitle: string;
+  homeStatTrees: string;
+  homeStatCities: string;
+  homeStatOldest: string;
+  homeCollectedSpecies: string;
+  homeDirTopCities: string;
+  homeDirCollections: string;
+  homeDirOldest: string;
+  homeDirTopSpecies: string;
+  homeAllCities: (n: number) => string;
+  homeAllCollections: string;
+  homeOldestOfAll: string;
+  homeAllSpecies: (n: number) => string;
+  homeFavH: string;
+  homeOldestShelfH: string;
+  homeCountriesH: string;
+  homeAllCountries: string;
+  homeSpeciesH: string;
+  homeParksH: string;
+  homeAllParks: string;
+  homeShelfMeta: (n: number, country: string) => string;
 }
 
 const EN: UIStrings = {
@@ -534,10 +567,68 @@ const EN: UIStrings = {
   mapFilterSpecies: "Species",
   mapFilterFree: "Free to visit",
   exploreWalkItem: (n, d) => `${n} trees, ${d} apart`,
+  homeVerbFind: "Find",
+  homeVerbWalk: "Walk",
+  homeVerbCollect: "Collect",
+  homeNearestChip: "Nearest to you",
+  homeMinWalk: (n) => `${n} min walk`,
+  homeWalkChip: "Afternoon walk",
+  homeTreesCount: (n) => `${n} trees`,
+  homeAboutTime: "about 1h 10m",
+  homePhoneTitle: "Your trees",
+  homeStatTrees: "trees",
+  homeStatCities: "cities",
+  homeStatOldest: "oldest, yrs",
+  homeCollectedSpecies: "Collected species",
+  homeDirTopCities: "Top cities",
+  homeDirCollections: "Collections",
+  homeDirOldest: "Oldest trees",
+  homeDirTopSpecies: "Top species",
+  homeAllCities: (n) => `All ${n} cities`,
+  homeAllCollections: "All collections",
+  homeOldestOfAll: "The oldest of all",
+  homeAllSpecies: (n) => `All ${n} species`,
+  homeFavH: "Our favourite tree cities",
+  homeOldestShelfH: "The oldest trees we map",
+  homeCountriesH: "Countries",
+  homeAllCountries: "All countries",
+  homeSpeciesH: "Species",
+  homeParksH: "Parks",
+  homeAllParks: "All parks",
+  homeShelfMeta: (n, country) => `${n} trees \u00b7 ${country}`,
 };
 
 const TABLE: Record<string, Partial<UIStrings>> = {
   es: {
+    homeVerbFind: "Encuentra",
+    homeVerbWalk: "Pasea",
+    homeVerbCollect: "Colecciona",
+    homeNearestChip: "El más cercano a ti",
+    homeMinWalk: (n) => `${n} min a pie`,
+    homeWalkChip: "Paseo de una tarde",
+    homeTreesCount: (n) => `${n} árboles`,
+    homeAboutTime: "unos 1h 10m",
+    homePhoneTitle: "Tus árboles",
+    homeStatTrees: "árboles",
+    homeStatCities: "ciudades",
+    homeStatOldest: "el más viejo, años",
+    homeCollectedSpecies: "Especies coleccionadas",
+    homeDirTopCities: "Ciudades destacadas",
+    homeDirCollections: "Colecciones",
+    homeDirOldest: "Los más viejos",
+    homeDirTopSpecies: "Especies destacadas",
+    homeAllCities: (n) => `Las ${n} ciudades`,
+    homeAllCollections: "Todas las colecciones",
+    homeOldestOfAll: "Los más viejos de todos",
+    homeAllSpecies: (n) => `Las ${n} especies`,
+    homeFavH: "Nuestras ciudades de árboles favoritas",
+    homeOldestShelfH: "Los árboles más viejos que cartografiamos",
+    homeCountriesH: "Países",
+    homeAllCountries: "Todos los países",
+    homeSpeciesH: "Especies",
+    homeParksH: "Parques",
+    homeAllParks: "Todos los parques",
+    homeShelfMeta: (n, country) => `${n} árboles \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} árboles en ${d}`,
     citiesCrumb: "Ciudades",
     citiesTitle: "Todas las ciudades del mapa",
@@ -715,6 +806,35 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Verla a tamaño completo",
   },
   it: {
+    homeVerbFind: "Trova",
+    homeVerbWalk: "Cammina",
+    homeVerbCollect: "Colleziona",
+    homeNearestChip: "Il più vicino a te",
+    homeMinWalk: (n) => `${n} min a piedi`,
+    homeWalkChip: "Passeggiata di un pomeriggio",
+    homeTreesCount: (n) => `${n} alberi`,
+    homeAboutTime: "circa 1h 10m",
+    homePhoneTitle: "I tuoi alberi",
+    homeStatTrees: "alberi",
+    homeStatCities: "città",
+    homeStatOldest: "il più vecchio, anni",
+    homeCollectedSpecies: "Specie collezionate",
+    homeDirTopCities: "Città principali",
+    homeDirCollections: "Collezioni",
+    homeDirOldest: "Gli alberi più vecchi",
+    homeDirTopSpecies: "Specie principali",
+    homeAllCities: (n) => `Tutte le ${n} città`,
+    homeAllCollections: "Tutte le collezioni",
+    homeOldestOfAll: "I più vecchi di tutti",
+    homeAllSpecies: (n) => `Tutte le ${n} specie`,
+    homeFavH: "Le nostre città di alberi preferite",
+    homeOldestShelfH: "Gli alberi più vecchi che mappiamo",
+    homeCountriesH: "Paesi",
+    homeAllCountries: "Tutti i paesi",
+    homeSpeciesH: "Specie",
+    homeParksH: "Parchi",
+    homeAllParks: "Tutti i parchi",
+    homeShelfMeta: (n, country) => `${n} alberi \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} alberi in ${d}`,
     citiesCrumb: "Città",
     citiesTitle: "Tutte le città sulla mappa",
@@ -892,6 +1012,35 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Vedila a dimensione intera",
   },
   nl: {
+    homeVerbFind: "Vind",
+    homeVerbWalk: "Wandel",
+    homeVerbCollect: "Verzamel",
+    homeNearestChip: "Dichtst bij jou",
+    homeMinWalk: (n) => `${n} min lopen`,
+    homeWalkChip: "Middagwandeling",
+    homeTreesCount: (n) => `${n} bomen`,
+    homeAboutTime: "ongeveer 1u 10m",
+    homePhoneTitle: "Jouw bomen",
+    homeStatTrees: "bomen",
+    homeStatCities: "steden",
+    homeStatOldest: "oudste, jaar",
+    homeCollectedSpecies: "Verzamelde soorten",
+    homeDirTopCities: "Belangrijkste steden",
+    homeDirCollections: "Collecties",
+    homeDirOldest: "Oudste bomen",
+    homeDirTopSpecies: "Belangrijkste soorten",
+    homeAllCities: (n) => `Alle ${n} steden`,
+    homeAllCollections: "Alle collecties",
+    homeOldestOfAll: "De oudste van allemaal",
+    homeAllSpecies: (n) => `Alle ${n} soorten`,
+    homeFavH: "Onze favoriete bomensteden",
+    homeOldestShelfH: "De oudste bomen die we in kaart brengen",
+    homeCountriesH: "Landen",
+    homeAllCountries: "Alle landen",
+    homeSpeciesH: "Soorten",
+    homeParksH: "Parken",
+    homeAllParks: "Alle parken",
+    homeShelfMeta: (n, country) => `${n} bomen \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} bomen binnen ${d}`,
     citiesCrumb: "Steden",
     citiesTitle: "Alle steden op de kaart",
@@ -1069,6 +1218,35 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Bekijk hem op volledige grootte",
   },
   de: {
+    homeVerbFind: "Finden",
+    homeVerbWalk: "Gehen",
+    homeVerbCollect: "Sammeln",
+    homeNearestChip: "Am nächsten bei dir",
+    homeMinWalk: (n) => `${n} Min zu Fuß`,
+    homeWalkChip: "Nachmittagsspaziergang",
+    homeTreesCount: (n) => `${n} Bäume`,
+    homeAboutTime: "etwa 1 Std 10 Min",
+    homePhoneTitle: "Deine Bäume",
+    homeStatTrees: "Bäume",
+    homeStatCities: "Städte",
+    homeStatOldest: "ältester, Jahre",
+    homeCollectedSpecies: "Gesammelte Arten",
+    homeDirTopCities: "Top-Städte",
+    homeDirCollections: "Sammlungen",
+    homeDirOldest: "Älteste Bäume",
+    homeDirTopSpecies: "Top-Arten",
+    homeAllCities: (n) => `Alle ${n} Städte`,
+    homeAllCollections: "Alle Sammlungen",
+    homeOldestOfAll: "Die ältesten von allen",
+    homeAllSpecies: (n) => `Alle ${n} Arten`,
+    homeFavH: "Unsere liebsten Baumstädte",
+    homeOldestShelfH: "Die ältesten Bäume, die wir kartieren",
+    homeCountriesH: "Länder",
+    homeAllCountries: "Alle Länder",
+    homeSpeciesH: "Arten",
+    homeParksH: "Parks",
+    homeAllParks: "Alle Parks",
+    homeShelfMeta: (n, country) => `${n} Bäume \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} Bäume auf ${d}`,
     citiesCrumb: "Städte",
     citiesTitle: "Alle Städte auf der Karte",
@@ -1246,6 +1424,35 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "In voller Größe ansehen",
   },
   pt: {
+    homeVerbFind: "Encontra",
+    homeVerbWalk: "Caminha",
+    homeVerbCollect: "Coleciona",
+    homeNearestChip: "O mais perto de ti",
+    homeMinWalk: (n) => `${n} min a pé`,
+    homeWalkChip: "Passeio de uma tarde",
+    homeTreesCount: (n) => `${n} árvores`,
+    homeAboutTime: "cerca de 1h 10m",
+    homePhoneTitle: "As tuas árvores",
+    homeStatTrees: "árvores",
+    homeStatCities: "cidades",
+    homeStatOldest: "a mais velha, anos",
+    homeCollectedSpecies: "Espécies colecionadas",
+    homeDirTopCities: "Cidades principais",
+    homeDirCollections: "Coleções",
+    homeDirOldest: "Árvores mais velhas",
+    homeDirTopSpecies: "Espécies principais",
+    homeAllCities: (n) => `Todas as ${n} cidades`,
+    homeAllCollections: "Todas as coleções",
+    homeOldestOfAll: "As mais velhas de todas",
+    homeAllSpecies: (n) => `Todas as ${n} espécies`,
+    homeFavH: "As nossas cidades de árvores preferidas",
+    homeOldestShelfH: "As árvores mais velhas que mapeamos",
+    homeCountriesH: "Países",
+    homeAllCountries: "Todos os países",
+    homeSpeciesH: "Espécies",
+    homeParksH: "Parques",
+    homeAllParks: "Todos os parques",
+    homeShelfMeta: (n, country) => `${n} árvores \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} árvores em ${d}`,
     citiesCrumb: "Cidades",
     citiesTitle: "Todas as cidades do mapa",
@@ -1423,6 +1630,35 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "Ver em tamanho real",
   },
   fr: {
+    homeVerbFind: "Trouve",
+    homeVerbWalk: "Marche",
+    homeVerbCollect: "Collectionne",
+    homeNearestChip: "Le plus proche de toi",
+    homeMinWalk: (n) => `${n} min à pied`,
+    homeWalkChip: "Balade d'un après-midi",
+    homeTreesCount: (n) => `${n} arbres`,
+    homeAboutTime: "environ 1h 10",
+    homePhoneTitle: "Tes arbres",
+    homeStatTrees: "arbres",
+    homeStatCities: "villes",
+    homeStatOldest: "le plus vieux, ans",
+    homeCollectedSpecies: "Espèces collectionnées",
+    homeDirTopCities: "Villes principales",
+    homeDirCollections: "Collections",
+    homeDirOldest: "Arbres les plus vieux",
+    homeDirTopSpecies: "Espèces principales",
+    homeAllCities: (n) => `Les ${n} villes`,
+    homeAllCollections: "Toutes les collections",
+    homeOldestOfAll: "Les plus vieux de tous",
+    homeAllSpecies: (n) => `Les ${n} espèces`,
+    homeFavH: "Nos villes d'arbres préférées",
+    homeOldestShelfH: "Les arbres les plus vieux que nous cartographions",
+    homeCountriesH: "Pays",
+    homeAllCountries: "Tous les pays",
+    homeSpeciesH: "Espèces",
+    homeParksH: "Parcs",
+    homeAllParks: "Tous les parcs",
+    homeShelfMeta: (n, country) => `${n} arbres \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} arbres sur ${d}`,
     citiesCrumb: "Villes",
     citiesTitle: "Toutes les villes de la carte",
@@ -1600,6 +1836,35 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoFull: "La voir en taille réelle",
   },
   ja: {
+    homeVerbFind: "見つける",
+    homeVerbWalk: "歩く",
+    homeVerbCollect: "集める",
+    homeNearestChip: "いちばん近い木",
+    homeMinWalk: (n) => `徒歩${n}分`,
+    homeWalkChip: "午後の散歩",
+    homeTreesCount: (n) => `${n}本`,
+    homeAboutTime: "約1時間10分",
+    homePhoneTitle: "あなたの木",
+    homeStatTrees: "本",
+    homeStatCities: "都市",
+    homeStatOldest: "最古、年",
+    homeCollectedSpecies: "集めた樹種",
+    homeDirTopCities: "主な都市",
+    homeDirCollections: "コレクション",
+    homeDirOldest: "最も古い木",
+    homeDirTopSpecies: "主な樹種",
+    homeAllCities: (n) => `${n}都市すべて`,
+    homeAllCollections: "コレクション一覧",
+    homeOldestOfAll: "すべての中で最も古い木",
+    homeAllSpecies: (n) => `${n}種すべて`,
+    homeFavH: "お気に入りの木の街",
+    homeOldestShelfH: "私たちが地図に載せた最も古い木",
+    homeCountriesH: "国",
+    homeAllCountries: "国一覧",
+    homeSpeciesH: "樹種",
+    homeParksH: "公園",
+    homeAllParks: "公園一覧",
+    homeShelfMeta: (n, country) => `${n}本 \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n}本、${d}以内`,
     citiesCrumb: "都市一覧",
     citiesTitle: "地図に載せたすべての都市",
@@ -1881,7 +2146,7 @@ export function toEnglishPath(pathname: string, lang: string): string {
  * "city" covers a city, its trees and its question page, which is why it is
  * matched last: those paths are one and two segments deep and would otherwise
  * swallow every standing page above them. */
-const TRANSLATED_STANDING = new Set(["/cities", "/explore"]);
+const TRANSLATED_STANDING = new Set(["/", "/cities", "/explore"]);
 
 /** Where this page lives in every language, for the PICKER.
  *
@@ -1902,7 +2167,10 @@ export function pathInEveryLanguage(enPath: string): Record<string, string> {
   const out: Record<string, string> = {};
 
   if (TRANSLATED_STANDING.has(clean)) {
-    for (const l of langs) out[l] = `/${l}${clean}`;
+    // The homepage is the one member whose clean path IS "/", so appending it
+    // would give "/es/" where every other link on the site is written without
+    // a trailing slash. qa.py resolves links literally, so the shapes match.
+    for (const l of langs) out[l] = clean === "/" ? `/${l}` : `/${l}${clean}`;
     return out;
   }
 
