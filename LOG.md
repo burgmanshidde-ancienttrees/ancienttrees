@@ -2,6 +2,46 @@
 
 <!-- archive-index -->
 
+## 2026-09-18 (digest session) - The grouping-pages table missed its own first digest by 22 minutes, and the weekly analysis is red
+
+Asked for the daily digest, so this session read it and reported it. Two
+things it found on the way are worth more than the numbers.
+
+**The collections table shipped 22 minutes too late to appear anywhere.**
+`grouped_pages_lines()` went in at 10:11 UTC (commit 240c951, answering
+Hidde's "hoe doen onze collecties uiteindelijk?"); the digest had already
+written today's entry at 09:49. So the check built to answer the question
+would have stayed invisible until tomorrow morning. Dispatched the digest
+with `--force`, which exists for exactly this case and was written for the
+same shape of accident on 2026-08-09. The entry for 09-17 is rewritten and
+now carries the four grouping families.
+
+What it says, first time of asking: **parks are the only grouping family
+that converts.** 83 impressions, 5 clicks, and every park page that took a
+click beats what its position normally earns. Collections took 2 clicks on
+622 impressions; species 2 on 613. And the collection that looked like it
+was winning is not: /collections/trees-older-than-400-years climbed +253 to
+416 impressions at position 8.7 and took **zero** clicks, its biggest query
+being `"400 years old as of 2023" tree`, Google's exact-phrase operator,
+which nobody types. The bot flag caught it, as designed.
+
+**FOR HIDDE, nothing to do tonight: the Weekly analysis has been red since
+2026-09-14** and no local check can see it. Its last scheduled run failed
+after 65 seconds with an empty `ANTHROPIC_API_KEY`, which is the same
+one-turn zero-cost death the workflow's own comment documents. GitHub also
+delayed that Monday 11:30 cron to 16:59, so the 11:30 slot chosen on
+2026-08-27 to dodge the night chain did not hold. `health.py` did not flag
+it (four days stale, under its eight-day threshold) and `brief.py` could
+not, because both reach the gates through `gh` and this sandbox has no
+authenticated `gh`. Next cron is Monday 2026-09-21. Left alone rather than
+dispatched by hand: it is a Claude Code Action run against your usage
+window, the week stands at 2570/5000 minutes, and it is three days from
+firing on its own.
+
+Rung 2 otherwise clear, checked through the GitHub API rather than
+`health.py`: smoke, deploy and iOS all green on their newest completed
+runs, fresh-eyes review green, REVIEW.md 0 BLOCKER.
+
 ## 2026-09-18 - Night run 2026-09-18 20:07 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 46.1 minutes of its 120 minute window, 318 turns, 25 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree.
