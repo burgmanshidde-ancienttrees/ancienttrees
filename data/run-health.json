@@ -14849,6 +14849,96 @@
    ],
    "trees": 10,
    "logged": false
+  },
+  {
+   "started": "2026-09-18T01:13:31+00:00",
+   "date": "2026-09-18",
+   "run_id": "35294422999",
+   "minutes": 102.4,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 367,
+   "denials": 42,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(ls), Bash(mkdir), Bash(pdftotext), Bash(printenv), Bash(python3), Bash(rm), Bash(until), Bash(wc), Bash(which), Bash(while)",
+   "ended": "success",
+   "tokens": 20264148,
+   "claims_held": [
+    "_famous-poland"
+   ],
+   "commits": 18,
+   "cities_touched": 17,
+   "cities": [
+    {
+     "city": "bulat-pestivien",
+     "trees": 1
+    },
+    {
+     "city": "crecy-en-ponthieu",
+     "trees": 1
+    },
+    {
+     "city": "fontaine-belfort",
+     "trees": 1
+    },
+    {
+     "city": "innimond",
+     "trees": 1
+    },
+    {
+     "city": "le-guerno",
+     "trees": 1
+    },
+    {
+     "city": "alishan",
+     "trees": 0
+    },
+    {
+     "city": "cagliari",
+     "trees": 0
+    },
+    {
+     "city": "cooper-creek",
+     "trees": 0
+    },
+    {
+     "city": "hiroshima",
+     "trees": 0
+    },
+    {
+     "city": "le-precheur",
+     "trees": 0
+    },
+    {
+     "city": "monterey",
+     "trees": 0
+    },
+    {
+     "city": "nara",
+     "trees": 0
+    },
+    {
+     "city": "pisa",
+     "trees": 0
+    },
+    {
+     "city": "poleski-national-park",
+     "trees": 0
+    },
+    {
+     "city": "priekule",
+     "trees": 0
+    },
+    {
+     "city": "santa-maria-del-tule",
+     "trees": 0
+    },
+    {
+     "city": "stelmuze",
+     "trees": 0
+    }
+   ],
+   "trees": 5,
+   "logged": true
   }
  ],
  "schedule_changes": [
