@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phone menu, three options</title>
+<meta name="description" content="Three proposals for the Ancient Trees phone navigation menu, drawn after the AllTrails mobile menu.">
+<style>
+  /* Our own font file, the same one the site self-hosts, sitting beside this
+     page. Not the Google Fonts link: the site stopped using that on 2026-08-16
+     and a mock-up that loads a face from a foreign host is not showing our
+     typography, it is showing theirs. */
+  @font-face {
+    font-family: 'Gabarito';
+    font-style: normal;
+    font-weight: 400 900;
+    font-display: swap;
+    src: url(gabarito-latin.woff2) format('woff2');
+  }
+  /* Tokens copied from site/public/assets/style.css so the mock-up is the real
+     palette and the real typeface, not an approximation of them. */
+  :root {
+    --cream: #FFFFFF; --cream-dark: #ECEAE3; --ink: #26301E; --ink-mid: #5C6350;
+    --ink-light: #8A8B80; --moss: #4A6B2A; --moss-light: #EDF3E3;
+    --surface: #F7F6F1; --gold: #D9A13F;
+    --sans: 'Gabarito', system-ui, -apple-system, sans-serif;
+    --gutter: 1rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #E9E7E0; color: var(--ink); font-family: var(--sans);
+    font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---- the harness around the three mock-ups (not part of any proposal) ---- */
+  .harness { padding: 0 var(--gutter) 3rem; }
+  .harness-head { max-width: 46rem; margin: 0 auto; padding: 1.75rem 0 1rem; }
+  .harness-head h1 { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.01em; }
+  .harness-head p { color: var(--ink-mid); font-size: 0.95rem; margin-top: 0.4rem; }
+  .switch {
+    position: sticky; top: 0; z-index: 30; display: flex; gap: 0.35rem;
+    background: #E9E7E0; padding: 0.6rem 0; margin: 0 auto 1rem; max-width: 46rem;
+  }
+  .switch button {
+    flex: 1; font: inherit; font-size: 0.85rem; font-weight: 700; cursor: pointer;
+    padding: 0.6rem 0.4rem; border-radius: 999px; border: 1px solid var(--cream-dark);
+    background: #fff; color: var(--ink-mid); min-height: 44px;
+  }
+  .switch button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+  /* Block on a phone, not a centred grid: an auto grid track sizes to the
+     max-content of the sheet inside it and overflows a 375px screen, which is
+     exactly what the site's own fit check refuses. */
+  .stage { display: block; }
+  .frame-wrap { max-width: 390px; margin: 0 auto 2rem; width: 100%; min-width: 0; }
+  .frame-label { font-size: 0.8rem; font-weight: 700; color: var(--ink-mid); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .frame-note { font-size: 0.85rem; color: var(--ink-mid); margin-top: 0.6rem; }
+  /* A fixed 720 tall window, because the honest question about a menu is what
+     fits on a screen before anybody scrolls. Roughly an iPhone 13 viewport
+     with Safari's own chrome taken off. The sheet scrolls inside it, exactly
+     as it would in the browser. */
+  .frame {
+    background: #fff; border-radius: 22px; overflow: hidden; height: 720px;
+    box-shadow: 0 2px 6px rgba(26,32,18,0.10), 0 18px 40px rgba(26,32,18,0.14);
+  }
+
+  /* ---- the sheet itself. This is the part that would become real CSS. ---- */
+  .sheet { display: flex; flex-direction: column; min-height: 100%; height: 100%; overflow-y: auto; padding: 0 var(--gutter) 1.25rem; background: #fff; }
+  .sheet-top { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .sheet-logo { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 800; font-size: 1.05rem; letter-spacing: 0.01em; color: var(--ink); text-decoration: none; }
+  .sheet-close {
+    width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--cream-dark);
+    background: var(--surface); color: var(--ink); display: inline-flex; align-items: center;
+    justify-content: center; cursor: pointer;
+  }
+  .sheet-close svg { width: 18px; height: 18px; }
+
+  /* The one full-width control at the top, AllTrails' "Ga verder in de app". */
+  .sheet-cta {
+    display: flex; align-items: center; justify-content: center; gap: 0.55rem;
+    min-height: 52px; border-radius: 999px; background: var(--ink); color: #fff;
+    font-weight: 700; font-size: 1rem; text-decoration: none; margin: 0.25rem 0 1.25rem;
+  }
+  .sheet-cta svg { width: 20px; height: 20px; }
+
+  /* A section: a heading that is a real heading, not a 12px grey label. */
+  .sec + .sec { border-top: 1px solid var(--cream-dark); margin-top: 0.5rem; padding-top: 0.5rem; }
+  .sec-head {
+    display: flex; align-items: center; justify-content: space-between; width: 100%;
+    background: none; border: 0; font: inherit; color: var(--ink); cursor: pointer;
+    padding: 0.7rem 0; min-height: 48px; text-align: left;
+  }
+  .sec-head span { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.015em; }
+  .sec-head svg { width: 20px; height: 20px; color: var(--ink); flex-shrink: 0; transition: transform 0.18s ease; }
+  .sec[data-open="false"] .sec-head svg { transform: rotate(180deg); }
+  .sec[data-open="false"] .sec-body { display: none; }
+  .sec-body { padding-bottom: 0.4rem; }
+
+  /* A row: 48 tall, a 34px tile, a 17px label. Measured off his screenshot,
+     scaled from its 919px width to 375pt. */
+  .row {
+    display: flex; align-items: center; gap: 0.8rem; min-height: 48px;
+    color: var(--ink); text-decoration: none; font-size: 1.0625rem; font-weight: 500;
+  }
+  .row .tile {
+    width: 34px; height: 34px; border-radius: 50%; background: var(--surface);
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--ink); flex-shrink: 0;
+  }
+  .row .tile svg { width: 18px; height: 18px; }
+  /* Sponsoring and saving both wanted a heart, and two identical glyphs in
+     one list is a list you have to read twice. The saved heart stays an
+     outline; the sponsor heart is filled and gold, which is what GitHub
+     Sponsors and Patreon both do to separate giving from keeping. */
+  .row .tile-gold { background: #FBF3E3; color: var(--gold); }
+  .row:active { opacity: 0.6; }
+
+  /* Flat variant: the heading stops being a button and shrinks. */
+  .sec.flat .sec-head { cursor: default; min-height: 0; padding: 0.9rem 0 0.35rem; }
+  .sec.flat .sec-head span { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-light); }
+
+  .sheet-foot { margin-top: auto; padding-top: 1.25rem; }
+  .pill {
+    display: flex; align-items: center; justify-content: center; min-height: 52px;
+    border-radius: 999px; background: var(--surface); border: 1px solid var(--cream-dark);
+    color: var(--ink); font-weight: 700; font-size: 1rem; text-decoration: none;
+  }
+  .pill + .pill { margin-top: 0.6rem; }
+  .pill-moss { background: var(--moss); border-color: var(--moss); color: #fff; }
+  .pill-ink { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .pill svg { width: 19px; height: 19px; margin-right: 0.5rem; }
+  .lang {
+    display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+    min-height: 44px; margin-top: 0.5rem; color: var(--ink-mid); font-size: 0.9rem;
+    font-weight: 600; text-decoration: none;
+  }
+  .lang svg { width: 16px; height: 16px; }
+
+  /* Option 3's action block. */
+  .acts { margin: 0.25rem 0 1.25rem; }
+  .acts .pill + .pill { margin-top: 0.55rem; }
+
+  @media (max-width: 899px) {
+    .stage > .frame-wrap { display: none; }
+    .stage > .frame-wrap.on { display: block; }
+  }
+  @media (min-width: 900px) {
+    .switch { display: none; }
+    .stage { display: grid; grid-template-columns: repeat(3, minmax(0, 360px)); gap: 2rem; justify-content: center; align-items: start; }
+    .harness-head, .switch { max-width: 1160px; }
+  }
+</style>
+</head>
+<body>
+<div class="harness">
+  <div class="harness-head">
+    <h1>Phone menu, three options</h1>
+    <p>Drawn after the AllTrails mobile menu, in our own palette, type and labels. Tap a section heading in option 1 to open it.</p>
+  </div>
+
+  <div class="switch" role="group" aria-label="Choose an option">
+    <button type="button" data-go="a" aria-pressed="true">1 &middot; Copied</button>
+    <button type="button" data-go="b" aria-pressed="false">2 &middot; Open</button>
+    <button type="button" data-go="c" aria-pressed="false">3 &middot; Action first</button>
+  </div>
+
+  <div class="stage">
+
+    <!-- ============================ OPTION 1 ============================ -->
+    <div class="frame-wrap on" data-pane="a">
+      <p class="frame-label">Option 1 &middot; copied</p>
+      <div class="frame">
+        <div class="sheet">
+          <div class="sheet-top">
+            <a class="sheet-logo" href="#"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
+            <button class="sheet-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+          </div>
+
+          <a class="sheet-cta" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Download the app</a>
+
+          <div class="sec" data-open="true">
+            <button class="sec-head" type="button"><span>Explore</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></button>
+            <div class="sec-body">
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>Map</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>Countries</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 12c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/></svg></span>Parks</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a>
+            </div>
+          </div>
+
+          <div class="sec" data-open="false">
+            <button class="sec-head" type="button"><span>Yours</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></button>
+            <div class="sec-body">
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span>Saved trees</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>Your account</a>
+            </div>
+          </div>
+
+          <div class="sec" data-open="false">
+            <button class="sec-head" type="button"><span>Take part</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></button>
+            <div class="sec-body">
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>
+              <a class="row" href="#"><span class="tile tile-gold"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>Sponsor this project</a>
+            </div>
+          </div>
+
+          <div class="sheet-foot">
+            <a class="pill" href="#">Sign in</a>
+            <a class="lang" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg>English</a>
+          </div>
+        </div>
+      </div>
+      <p class="frame-note">Their structure exactly: one dark control at the top, three folded sections with big headings, the account at the bottom. Two taps to a city.</p>
+    </div>
+
+    <!-- ============================ OPTION 2 ============================ -->
+    <div class="frame-wrap" data-pane="b">
+      <p class="frame-label">Option 2 &middot; open</p>
+      <div class="frame">
+        <div class="sheet">
+          <div class="sheet-top">
+            <a class="sheet-logo" href="#"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
+            <button class="sheet-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+          </div>
+
+          <a class="sheet-cta" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Download the app</a>
+
+          <div class="sec flat">
+            <div class="sec-head"><span>Explore</span></div>
+            <div class="sec-body">
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>Map</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>Countries</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 12c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/></svg></span>Parks</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a>
+            </div>
+          </div>
+
+          <div class="sec flat">
+            <div class="sec-head"><span>Yours</span></div>
+            <div class="sec-body">
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span>Saved trees</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>Your account</a>
+            </div>
+          </div>
+
+          <div class="sec flat">
+            <div class="sec-head"><span>Take part</span></div>
+            <div class="sec-body">
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>
+              <a class="row" href="#"><span class="tile tile-gold"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>Sponsor this project</a>
+            </div>
+          </div>
+
+          <div class="sheet-foot">
+            <a class="pill" href="#">Sign in</a>
+            <a class="lang" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg>English</a>
+          </div>
+        </div>
+      </div>
+      <p class="frame-note">Their look, ten destinations visible at once. One tap to anything, the headings become quiet labels because nothing folds.</p>
+    </div>
+
+    <!-- ============================ OPTION 3 ============================ -->
+    <div class="frame-wrap" data-pane="c">
+      <p class="frame-label">Option 3 &middot; action first</p>
+      <div class="frame">
+        <div class="sheet">
+          <div class="sheet-top">
+            <a class="sheet-logo" href="#"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
+            <button class="sheet-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+          </div>
+
+          <!-- ONE action, not two. The obvious second one would be the season
+               page, and /in-season has been a redirect since 2026-08-26 because
+               the whole season story is Plus. A menu row promising a page we
+               deliberately retired is the kind of copy this project refuses. -->
+          <div class="acts">
+            <a class="pill pill-moss" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8.5"/></svg>Trees near me</a>
+          </div>
+
+          <div class="sec flat">
+            <div class="sec-head"><span>Explore</span></div>
+            <div class="sec-body">
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>Map</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>Countries</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 12c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/></svg></span>Parks</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a>
+            </div>
+          </div>
+
+          <div class="sec flat">
+            <div class="sec-head"><span>Yours</span></div>
+            <div class="sec-body">
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span>Saved trees</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>Your account</a>
+              <a class="row" href="#"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>
+              <a class="row" href="#"><span class="tile tile-gold"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>Sponsor this project</a>
+            </div>
+          </div>
+
+          <div class="sheet-foot">
+            <a class="pill pill-ink" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Download the app</a>
+            <a class="pill" href="#">Sign in</a>
+            <a class="lang" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg>English</a>
+          </div>
+        </div>
+      </div>
+      <p class="frame-note">What somebody can do right now sits above the navigation, the way their own first Explore row is nearby routes. The app ask moves to the bottom, which is the cost: it is below the fold.</p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function show(go) {
+    document.querySelectorAll('.switch button').forEach(function (o) {
+      o.setAttribute('aria-pressed', String(o.getAttribute('data-go') === go));
+    });
+    document.querySelectorAll('.frame-wrap').forEach(function (p) {
+      p.classList.toggle('on', p.getAttribute('data-pane') === go);
+    });
+  }
+  /* #a / #b / #c so one option can be opened, and looked at, on its own. */
+  if (/^#[abc]$/.test(location.hash)) { show(location.hash.slice(1)); }
+  document.querySelectorAll('.switch button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      show(b.getAttribute('data-go'));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+  document.querySelectorAll('.sec:not(.flat) .sec-head').forEach(function (h) {
+    h.addEventListener('click', function () {
+      var sec = h.parentElement;
+      sec.setAttribute('data-open', sec.getAttribute('data-open') === 'true' ? 'false' : 'true');
+    });
+  });
+</script>
+</body>
+</html>
