@@ -1,0 +1,111 @@
+{
+ "_note": "Everywhere either surface keeps something, and whether it hangs under the account (so it must be on the server and reach every device) or belongs to this device. Hidde, 2026-09-11: \"alles moet cross device beschikbaar zijn wat onder je account hangt. Check of dit voor alles geldt.\" Checked by scripts/crossdevice.py, which refuses a store nobody has ruled on; it cannot tell whether the verdict is right.",
+ "written": "2026-09-11",
+ "stores": {
+  "saved.entries.v1": {
+   "verdict": "account",
+   "why": "Hearts and ticks. Tables saves and visited, merged as a union by CloudSync on launch and on sign-in; the website reads the same two tables."
+  },
+  "sightings (Documents/sightings)": {
+   "verdict": "account",
+   "why": "The trees you added and every photograph you took, including one taken while ticking off a tree of ours. Table sightings plus the private sightings bucket, pushed by SightingSync on every change and on launch. FILE STORE rather than UserDefaults, registered by hand.",
+   "keep": true
+  },
+  "at_worthit_": {
+   "verdict": "account",
+   "why": "Your worth-the-visit vote. Rows in submissions, kind feedback; MyVotes.load writes them back into these keys at launch. The website reads the same rows per tree."
+  },
+  "at_wrong_": {
+   "verdict": "account",
+   "why": "That you have already reported something about this tree. Same submissions rows (why starts with 'report'), restored at launch since 2026-09-11; the website has always read them."
+  },
+  "at_wrong_detail_": {
+   "verdict": "account",
+   "why": "That you also typed the follow-up detail on that report. Same rows, why starts with 'report detail'."
+  },
+  "blocked-accounts": {
+   "verdict": "account",
+   "why": "Who you have blocked. Table blocks; the local copy is an echo so a block holds with no network, and the server is the truth on a second phone."
+  },
+  "distanceUnit": {
+   "verdict": "account",
+   "why": "Kilometres or miles. Column units on profiles, written by Units.sync and read back at launch."
+  },
+  "ancienttrees_session": {
+   "verdict": "device",
+   "why": "The browser's own sign-in session. A session is what identifies the device; carrying it between devices is the one thing it must never do."
+  },
+  "ancienttrees.last_fix": {
+   "verdict": "device",
+   "why": "Where this phone last had a fix, so a cold start opens on your own trees rather than on Dam square. A property of the device, and stale on any other."
+  },
+  "directions.app": {
+   "verdict": "device",
+   "why": "Which maps app to hand a route to. Depends on what is installed on THIS phone, so copying it to another one would point at an app that is not there."
+  },
+  "at_contribute_draft": {
+   "verdict": "device",
+   "why": "An unsent contribute form, kept so a reload does not lose what somebody typed. It stops existing the moment it is sent."
+  },
+  "at_notrack": {
+   "verdict": "device",
+   "why": "This browser's opt-out of the cookieless beacon. The convention everywhere is per-browser, and an account-wide copy would mean storing a preference against a person we deliberately do not profile."
+  },
+  "entitlement.interest.v1": {
+   "verdict": "device",
+   "why": "Which paid features you tapped interest in, kept so the funnel is legible on the device during testing. The interest itself is already an event on the server; this copy is the echo."
+  },
+  "hero.index.v1": {
+   "verdict": "device",
+   "why": "Which hero picture was shown last, so the next launch shows a different one."
+  },
+  "measure.install.v1": {
+   "verdict": "device",
+   "why": "The analytics install id. It identifies an INSTALL on purpose and must not follow a person between devices."
+  },
+  "measure.queue.v1": {
+   "verdict": "device",
+   "why": "Events waiting for a network. Emptied as soon as they send."
+  },
+  "nudge.fired.v1": {
+   "verdict": "device",
+   "why": "Which nudges this phone has already used."
+  },
+  "nudge.last.v1": {
+   "verdict": "device",
+   "why": "When this phone last nudged, so it cannot nudge twice in a day."
+  },
+  "reviewPrompt.fired.v2": {
+   "verdict": "device",
+   "why": "Whether the App Store review prompt has fired here. Apple's own rule is per install."
+  },
+  "reviewPrompt.last.v2": {
+   "verdict": "device",
+   "why": "When it last fired on this install."
+  },
+  "reviewPrompt.seen.v1": {
+   "verdict": "device",
+   "why": "Which trees this install saw before asking."
+  },
+  "at_id": {
+   "verdict": "not a store",
+   "why": "A MapLibre feature property name, not persistence."
+  },
+  "at_count": {
+   "verdict": "not a store",
+   "why": "A MapLibre feature property name."
+  },
+  "at_kind": {
+   "verdict": "not a store",
+   "why": "A MapLibre feature property name."
+  },
+  "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb": {
+   "verdict": "not a store",
+   "why": "Supabase's publishable key, which is a constant and not something we keep for anybody."
+  },
+  "phc_nSwWiqWesJZmLMypTZDaeR3MDpcpBwcMpWRy7eUSUpTm": {
+   "verdict": "not a store",
+   "why": "PostHog's project key, likewise a constant."
+  }
+ }
+}
