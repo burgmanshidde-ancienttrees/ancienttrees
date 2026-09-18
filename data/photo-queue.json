@@ -5888,7 +5888,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Giardini Pubblici Indro Montanelli Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-03-08 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Milan",
      "source": "wikidata/Q55741802",
      "judged": "reject",
-     "verdict": "Genuine plane bark, but a bare-winter view looking up the trunk with the crown unreadable, and 329 m from our pin in a garden holding several big planes."
+     "verdict": "geotagged 328m from our pin (45.475833,9.2 vs 45.473612,9.197206); generic 'platano comune' caption; Giardini Montanelli holds several large plane trees and this cannot be confirmed as this one"
     },
     {
      "title": "File:Albero secolare nei giardini di Milano.jpg",
@@ -22605,7 +22605,7 @@
      "lng": null,
      "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Canon Digital IXUS 105 Category:Verdaguer metrostation",
      "judged": "reject",
-     "verdict": "Metro station platform, unrelated to the tree"
+     "verdict": "photo is of the Verdaguer metro station platform, no tree at all (filename false positive)"
     },
     {
      "title": "iNat obs 249401941 (Ginkgo biloba)",
@@ -29974,7 +29974,7 @@
      "lng": 153.029862,
      "cats": "Category:CC-BY-SA-3.0-AU Category:Ficus religiosa, City Botanic Gardens, Brisbane Category:Ficus religiosa (leaves) Category:Files with coordinates missing SDC location of creation Category:Photographs by Craig Franklin Category:Plant species in City Botanic Gardens, Brisbane Category:Supported by Wikimedia Australia Category:Taken with Canon Digital IXUS 130",
      "judged": "reject",
-     "verdict": "extreme leaf close-up, wrong species (Ficus religiosa vs benjamina), fails the Cadiz standard regardless"
+     "verdict": "macro close-up of a single leaf, no tree visible, fails the Cadiz standard"
     },
     {
      "title": "File:Christmas tree at Abian Botanic Gardens, Brisbane, Queensland, 2019.jpg",
@@ -66150,7 +66150,9 @@
      "author": "A. Wijnantz",
      "lat": null,
      "lng": null,
-     "cats": "Category:Angerenstein (Arnhem) Category:Arnhem in the 1840s Category:Artworks with known accession number Category:Artworks without Wikidata item Category:Augustus Wijnantz Category:Author died more than 70 years ago public domain images Category:CC-PD-Mark Category:Media from Erfgoedcentrum Rozet Category:Uploaded with pattypan"
+     "cats": "Category:Angerenstein (Arnhem) Category:Arnhem in the 1840s Category:Artworks with known accession number Category:Artworks without Wikidata item Category:Augustus Wijnantz Category:Author died more than 70 years ago public domain images Category:CC-PD-Mark Category:Media from Erfgoedcentrum Rozet Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "19th-century engraving of the estate, archival and not a photograph, and not of any one tree"
     },
     {
      "title": "File:Arnhem- Angerenstein, anoniem, 1850-1854 Erfgoedcentrum Rozet GDC007000003.jpg",
@@ -66208,7 +66210,9 @@
      "author": "A. Wijnantz",
      "lat": null,
      "lng": null,
-     "cats": "Category:Angerenstein (Arnhem) Category:Arnhem in the 1840s Category:Artworks with known accession number Category:Artworks without Wikidata item Category:Augustus Wijnantz Category:Author died more than 70 years ago public domain images Category:CC-PD-Mark Category:Media from Erfgoedcentrum Rozet Category:Uploaded with pattypan"
+     "cats": "Category:Angerenstein (Arnhem) Category:Arnhem in the 1840s Category:Artworks with known accession number Category:Artworks without Wikidata item Category:Augustus Wijnantz Category:Author died more than 70 years ago public domain images Category:CC-PD-Mark Category:Media from Erfgoedcentrum Rozet Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "same archival engraving as arn_034, not a photograph of any one tree"
     },
     {
      "title": "File:Arnhem- Angerenstein, anoniem, 1850-1854 Erfgoedcentrum Rozet GDC007000003.jpg",
@@ -66314,7 +66318,9 @@
      "author": "A. Wijnantz",
      "lat": null,
      "lng": null,
-     "cats": "Category:Angerenstein (Arnhem) Category:Arnhem in the 1840s Category:Artworks with known accession number Category:Artworks without Wikidata item Category:Augustus Wijnantz Category:Author died more than 70 years ago public domain images Category:CC-PD-Mark Category:Media from Erfgoedcentrum Rozet Category:Uploaded with pattypan"
+     "cats": "Category:Angerenstein (Arnhem) Category:Arnhem in the 1840s Category:Artworks with known accession number Category:Artworks without Wikidata item Category:Augustus Wijnantz Category:Author died more than 70 years ago public domain images Category:CC-PD-Mark Category:Media from Erfgoedcentrum Rozet Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "same archival engraving as arn_034, not a photograph of any one tree"
     },
     {
      "title": "File:Arnhem- Angerenstein, anoniem, 1850-1854 Erfgoedcentrum Rozet GDC007000003.jpg",
@@ -92033,7 +92039,7 @@
      "lng": 103.81582,
      "cats": "Category:Banyans in Singapore Category:Branches Category:CC-BY-SA-4.0 Category:Commons featured widescreen desktop backgrounds Category:Featured pictures by Basile Morin Category:Featured pictures of Rosales Category:Featured pictures of Singapore Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, Persian Category:Ficus kurzii Category:Ficus leaves Category:Files with coordinates missing SDC location of creation Category:Photographs by Basile Morin Category:Quality images Category:Quality images by Basile Morin Category:Quality images by Basile Morin/Plants Category:Quality images of Ficus Category:Quality images of nature in Singapore Category:Quality images of water reflections Category:Reflections in lakes Category:Self-published work Category:Singapore photographs taken on 2018-06-11 Category:Swan Lake, Singapore Botanic Gardens Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-70mm F2.8L II USM Category:Water reflections in Singapore Category:Water reflections of trees",
      "judged": "reject",
-     "verdict": "Detail of branches and aerial roots over the lake, no tree"
+     "verdict": "close-up of hanging aerial roots over water, no trunk or whole-tree view"
     },
     {
      "title": "File:Ficus fistulosa 313736389.jpg",
@@ -92102,7 +92108,9 @@
      "author": "Basile Morin",
      "lat": 1.310548,
      "lng": 103.816173,
-     "cats": "Category:Bandstands in Singapore Category:Blue sky in Singapore Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gazebos in Singapore Category:Pavilions in the Singapore Botanic Gardens Category:Photographs by Basile Morin Category:Published photographs by Basile Morin Category:Quality images Category:Quality images by Basile Morin Category:Quality images by Basile Morin/Architecture Category:Quality images of bandstands Category:Quality images of buildings in Singapore Category:Self-published work Category:Singapore photographs taken on 2018-06-11 Category:Taken with Canon EOS 5D Mark IV and Canon EF 11-24mm F4L USM"
+     "cats": "Category:Bandstands in Singapore Category:Blue sky in Singapore Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gazebos in Singapore Category:Pavilions in the Singapore Botanic Gardens Category:Photographs by Basile Morin Category:Published photographs by Basile Morin Category:Quality images Category:Quality images by Basile Morin Category:Quality images by Basile Morin/Architecture Category:Quality images of bandstands Category:Quality images of buildings in Singapore Category:Self-published work Category:Singapore photographs taken on 2018-06-11 Category:Taken with Canon EOS 5D Mark IV and Canon EF 11-24mm F4L USM",
+     "judged": "reject",
+     "verdict": "photo is of the bandstand pavilion, no single tree is the subject"
     }
    ]
   },
@@ -92120,7 +92128,9 @@
      "author": "Basile Morin",
      "lat": 1.310548,
      "lng": 103.816173,
-     "cats": "Category:Bandstands in Singapore Category:Blue sky in Singapore Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gazebos in Singapore Category:Pavilions in the Singapore Botanic Gardens Category:Photographs by Basile Morin Category:Published photographs by Basile Morin Category:Quality images Category:Quality images by Basile Morin Category:Quality images by Basile Morin/Architecture Category:Quality images of bandstands Category:Quality images of buildings in Singapore Category:Self-published work Category:Singapore photographs taken on 2018-06-11 Category:Taken with Canon EOS 5D Mark IV and Canon EF 11-24mm F4L USM"
+     "cats": "Category:Bandstands in Singapore Category:Blue sky in Singapore Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gazebos in Singapore Category:Pavilions in the Singapore Botanic Gardens Category:Photographs by Basile Morin Category:Published photographs by Basile Morin Category:Quality images Category:Quality images by Basile Morin Category:Quality images by Basile Morin/Architecture Category:Quality images of bandstands Category:Quality images of buildings in Singapore Category:Self-published work Category:Singapore photographs taken on 2018-06-11 Category:Taken with Canon EOS 5D Mark IV and Canon EF 11-24mm F4L USM",
+     "judged": "reject",
+     "verdict": "same bandstand photo as sgp_016, no single tree is the subject"
     }
    ]
   },
@@ -92164,7 +92174,9 @@
      "author": "ZKang123",
      "lat": 1.308408,
      "lng": 103.816011,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Tembusu tree at Lawn E, Singapore Botanic Gardens"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Tembusu tree at Lawn E, Singapore Botanic Gardens",
+     "judged": "reject",
+     "verdict": "this is the famous Tembusu of Lawn E (sgp_001, already photographed), not the Teak of the Botany Centre"
     },
     {
      "title": "File:Tembusu tree at Lawn E, Singapore Botanic Gardens 20240210 182417.jpg",
@@ -92192,7 +92204,9 @@
      "author": "Basile Morin",
      "lat": 1.310548,
      "lng": 103.816173,
-     "cats": "Category:Bandstands in Singapore Category:Blue sky in Singapore Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gazebos in Singapore Category:Pavilions in the Singapore Botanic Gardens Category:Photographs by Basile Morin Category:Published photographs by Basile Morin Category:Quality images Category:Quality images by Basile Morin Category:Quality images by Basile Morin/Architecture Category:Quality images of bandstands Category:Quality images of buildings in Singapore Category:Self-published work Category:Singapore photographs taken on 2018-06-11 Category:Taken with Canon EOS 5D Mark IV and Canon EF 11-24mm F4L USM"
+     "cats": "Category:Bandstands in Singapore Category:Blue sky in Singapore Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gazebos in Singapore Category:Pavilions in the Singapore Botanic Gardens Category:Photographs by Basile Morin Category:Published photographs by Basile Morin Category:Quality images Category:Quality images by Basile Morin Category:Quality images by Basile Morin/Architecture Category:Quality images of bandstands Category:Quality images of buildings in Singapore Category:Self-published work Category:Singapore photographs taken on 2018-06-11 Category:Taken with Canon EOS 5D Mark IV and Canon EF 11-24mm F4L USM",
+     "judged": "reject",
+     "verdict": "same bandstand photo as sgp_016, no single tree is the subject"
     },
     {
      "title": "iNat obs 340534792 (Rubroshorea ovalis)",
@@ -92312,7 +92326,9 @@
      "author": "ZKang123",
      "lat": 1.308408,
      "lng": 103.816011,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Tembusu tree at Lawn E, Singapore Botanic Gardens"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Tembusu tree at Lawn E, Singapore Botanic Gardens",
+     "judged": "reject",
+     "verdict": "same Tembusu of Lawn E enclosure (sgp_001), not the Temak of Main Gate Road"
     },
     {
      "title": "File:Tembusu tree at Lawn E, Singapore Botanic Gardens 20240210 182417.jpg",
@@ -92340,7 +92356,9 @@
      "author": "ZKang123",
      "lat": 1.307826,
      "lng": 103.815287,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Tembusu tree at Lawn E, Singapore Botanic Gardens"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Tembusu tree at Lawn E, Singapore Botanic Gardens",
+     "judged": "reject",
+     "verdict": "same Tembusu of Lawn E enclosure (sgp_001), not the Snake Tree of Main Gate Road"
     },
     {
      "title": "File:Tembusu tree at Lawn E, Singapore Botanic Gardens 20240210 182325.jpg",
@@ -106096,7 +106114,7 @@
      "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work",
      "source": "wikidata/Q60466476",
      "judged": "reject",
-     "verdict": "crown visible but trunk hidden behind an autumn hedge in the foreground"
+     "verdict": "only the crown shows above a hedge, no trunk visible, fails the Cadiz standard"
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Königliche Gärtnerlehranstalt Berlin 2024-11-02 04.jpg",
