@@ -1,6 +1,87 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 5) - Researched the world's most-searched parks: 6 of 128 were ours, and our own keyword list was hiding three pages
+
+Hidde asked for a study of the world's best-known parks, the ones people
+search for on Google, and whether we already hold them: "ik wil gewoon
+zoekvolume winnen." A park does not have to sit in a big city to qualify.
+
+**The demand source is Google's own.** Its Year in Search publishes the most
+searched parks on Google Maps, which is the closest thing to search volume
+anybody gives away free. The 2023 top nine, in order: Park Guell, Central
+Park, Hyde Park, the Retiro, Villa Borghese, Nara Park, Cubbon Park, Red
+Rocks, Ibirapuera. The 2024 top five: Central Park, Rizal Park, Odori Park,
+Ohori Park, Park Guell. `data/famous-parks.json` holds 128 parks with that
+evidence per park, press-reported footfall where there is any, and a
+coordinate; `scripts/park_demand.py` crosses each against our own trees BY
+DISTANCE, never by name, and says what it needs next.
+
+**The answer to his question: 6 of the 128 have a park page.** Nara Park, the
+Retiro, Central Park, Villa Borghese, Schlosspark Nymphenburg, and Parque de
+Maria Luisa as of today. Of Google's 2023 top six we now hold four. 50 more
+famous parks hold between one and four of our trees, 41 sit empty in a city
+we already publish, and 8 are outside our coverage entirely.
+
+**The largest blocker was not research, it was our own keyword list.** A park
+is not a field on a tree here: `parkKey()` derives it from the address text
+matching a word list, and "parque" was not on that list. Spanish and
+Portuguese for park, absent, while "retiro" sat there as a single-case patch
+for the one Madrid park somebody noticed. "garten" was missing too, with
+"schlosspark" and "stadtpark" present. Six words added (parque, garten,
+plantsoen, bosque, foret, floresta): **147 trees gained a park they were
+always standing in, and three parks crossed Contract H's five-tree gate.**
+It also retired three false parks, because "Parking du Grand Canton" and
+"Tane Mahuta Walk car park" had been reading as parks all along.
+
+Three park pages written and live from that, no new research and no new
+trees: **Parque de Maria Luisa, Seville** (10 trees, and Seville's own 2022
+survey puts three of the city's biggest trees inside it), **Oosterplantsoen,
+Hoorn** (7), **Kontumazgarten, Nuremberg** (6). `pagegaps.py` reported zero
+park gaps before this and three after, which is the same tool answering
+honestly once it could see.
+
+**Eight park pages were live promising a tree count they did not have.**
+Singapore Botanic Gardens said eight and maps twenty-four, the Parc d'Egmont
+said six and maps sixteen, Caserta said seven and maps sixteen, plus Brisbane,
+Padua, Naples, Valencia, Milan and Park Sonsbeek. Fixed, titles and meta
+descriptions and the intro sentences that state the page's own count; subset
+sentences ("six of them are on the monumental register") were left alone
+because they are not the page count and I cannot re-verify them cheaply.
+Three titles also sat over Contract H's 60-character cap, where `fitTitle`
+was silently dropping them for a generated fallback, so Singapore and Hobart
+had a hand-written title and count that no page has ever printed.
+
+Three build checks so none of this can come back, all refusing a push: park
+count promises in `count-promises.ts` (the city version has existed since
+Florence went to fifteen still saying ten, and parks were never covered,
+because a park grows when a tree gains an address rather than when a city
+grows); a hand-written park title over the cap now failing the build instead
+of being swallowed; and `check_park_words_match()` in preflight, because the
+keyword list lives in two places that have each claimed for months to mirror
+the other exactly and nothing compared them. Tested all three against a
+deliberate regression rather than trusting a green build, which is how the
+first version of the count check was caught rejecting the very title it was
+written to protect. Per the ratchet, removing any of them needs Hidde.
+
+**What is worth doing next, cheapest first.** Park Guell, the most searched
+park on Google Maps in 2023, maps four of our trees and needs ONE more for a
+page; Barcelona's register has 61 trees within reach. Parc de la Tete d'Or in
+Lyon is also one tree short, with four already groupable. Vondelpark maps one
+tree while Amsterdam's own register holds 145 designated trees within 600
+metres of its centre, which is a verify pass rather than a hunt. And Margaret
+Island in Budapest has five trees whose addresses all say "Margaret Island",
+groupable by no keyword that would be safe to add, so it needs an explicit
+park-name list rather than a wider regex: that is the one piece of this I
+have not built.
+
+`--views` (Wikipedia pageviews per park, the proxy demand.py uses for cities)
+could not run: this session's network policy blocks every Wikimedia host, so
+the ranking is Google's published lists plus footfall rather than a measured
+number per park. A night run can fill it in one pass.
+
+Build clean, `qa.py` green, `preflight.py` 626 places and 0 problems.
+
 ## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
 
 An earlier attempt this window stopped after 43 minutes having shipped
