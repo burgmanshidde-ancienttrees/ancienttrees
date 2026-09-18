@@ -12,8 +12,9 @@ de thread dat is. Twee dingen zijn van mij:
 - **De vraag of hij de app al in de App Store had gezien**, die jij vroeg. Staat
   voor het belverzoek, want hij is dan warm en het antwoord bepaalt half waar
   het gesprek over gaat.
-- **Engels voor het gesprek.** Anders staat er straks een call gepland in het
-  Portugees omdat onze mails dat zijn.
+- **De vraag of hij Engels spreekt**, jouw idee, met het alternatief er meteen
+  bij. Anders staat er straks een call gepland in het Portugees omdat onze
+  mails dat zijn, en dan ontdek je dat in de eerste minuut.
 
 Wat eruit ging, en waarom het er niet meer in hoort: een alinea van mij met de
 route (elf bomen op een lijn, Campo Santana naar Jardim da Parada), de 22 bomen
@@ -40,7 +41,7 @@ https://apps.apple.com/pt/app/ancient-trees/id6806177833
 
 Moro em Amesterdao e estou de ferias no Japao, que tambem tem arvores extraordinarias. Mesmo assim parece-me melhor falarmos para ver o que e possivel, porque gostava de pensar convosco em que funcionalidades podemos ter prontas para apoiar estas primeiras caminhadas. E estou muito curioso por saber do que precisas na aplicacao durante a caminhada.
 
-Podemos marcar uma reuniao online? Diz-me o que te da jeito. Pelo fuso horario, de manha hora de Lisboa e o mais pratico, e em ingles se nao houver problema.
+Podemos marcar uma reuniao online? Diz-me o que te da jeito. Pelo fuso horario, de manha hora de Lisboa e o mais pratico. E falas ingles? A conversa teria de ser em ingles, senao talvez seja mais pratico continuarmos por email.
 
 Fico a espera.
 
@@ -60,7 +61,7 @@ https://apps.apple.com/pt/app/ancient-trees/id6806177833
 
 Ik woon in Amsterdam en ben op vakantie in Japan, waar ze trouwens ook prachtige bomen hebben. Toch lijkt het me het handigste om even te bellen om door te nemen wat mogelijk is, want ik denk graag met jullie mee welke features we klaar kunnen hebben om deze eerste wandelingen te ondersteunen. En ik ben heel benieuwd waar je precies behoefte aan hebt in de app tijdens de wandeling.
 
-Kunnen we een online meeting inplannen? Geef maar aan wat jou schikt. Qua tijdverschil is de ochtend Lissabonse tijd het handigst, en in het Engels als dat geen probleem is.
+Kunnen we een online meeting inplannen? Geef maar aan wat jou schikt. Qua tijdverschil is de ochtend Lissabonse tijd het handigst. En spreek je Engels? Het gesprek zou in het Engels moeten, anders is mailen misschien handiger.
 
 Ik kijk ernaar uit.
 
