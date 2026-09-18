@@ -35,26 +35,124 @@ thumbs UP on the tree page at the next launch. It could not be seen before
 because no control ever read that value back; it only ever wrote. Matched
 whole now, with a test.
 
-**The mechanism, which is the part he actually asked for.**
-`data/local-storage-allow.json` is one audited list for both surfaces: 3 web
-keys, 14 app keys, one line of reason each, plus the two file stores named so
-the audit is complete. `scripts/qa.py` checks the website against it (it had
-its own hard-coded set) and the new `scripts/localcheck.py` checks the app, in
-the pre-push hook. Both refuse a key that is not listed and a key built from a
-variable, whatever it holds: such a key cannot be enumerated, so it cannot be
-cleared, and a list cannot read what is not a literal. Verified by planting
-both shapes and watching it fail, then removing them.
+**The mechanism, and the first version of it was a mistake worth recording.**
+I wrote a new list and a new script for the app before noticing that
+`data/cross-device.json` and `scripts/crossdevice.py` have registered every
+store on BOTH surfaces since 2026-09-11, with a verdict on each. A second list
+answering nearly the same question is the duplication this corpus keeps
+recording under other names, so both were deleted unshipped.
 
-Reading that file tells you in a minute what either surface keeps and why.
-The honest summary of what is left: the session token and a privacy opt-out
-and an unsent draft on the web; on the app an anonymous analytics id that must
-NOT be the account, unsent analytics events, Apple's per-install review
-bookkeeping, per-device screen bookkeeping, which maps app is installed, and
-four echoes whose truth is the server (units, blocks, the collection, and a
-one-off migration flag).
+What the existing register was missing is the actual hole, and it is worth
+more than the list I nearly added: it asked whether anybody had RULED on a
+store and never whether the code OBEYED the ruling. `at_worthit_`, `at_wrong_`
+and `at_wrong_detail_` were all correctly ruled `account` in that file, all
+three were written to UserDefaults anyway, and the check was green the whole
+time.
+
+So `crossdevice.py` now asks an `account` store a second question, in a new
+`off` field: what takes this off a phone nobody is signed in to.
+"Nothing, because ..." is a legitimate answer and two stores give it (a units
+preference is how a screen reads, not somebody's data; a block should not
+lapse when a session expires). The point is the one conventioncheck.py makes:
+a script cannot judge the answer, only whether anybody was made to write one
+down. It fired on three real stores the moment it existed. `qa.py`'s web half
+now reads the same register instead of its own hard-coded set, so there is one
+register and no list can drift from another. Verified by planting a violation
+of each half and watching both fail, then removing them.
+
+The four retired keys are out of the register, and it now reads: 22 stores, 3
+account, 14 device, 5 not a store.
 
 Five tests in `VotesTests` hold it. The app half is judged by `ios.yml`, since
 there is no Xcode here.
+
+
+## 2026-09-18 (session 5) - Answered "how are the collections doing", rebuilt the stalest one, put the whole page type on the meter
+
+Hidde asked whether any collection scores on search volume, what we can
+learn from it, and whether better titles would get more out of the same
+database. Answering it took reading 53 daily entries by hand, which is the
+finding underneath the answer: **collections were never measured.**
+`city_demand_rows()` excludes them, which is right for the depth roster and
+was silently also excluding them from the learning loop, so a collection
+reached DATA.md only when it happened to make a top-five or a climbing list.
+
+**The read.** One collection works and it is not the biggest one.
+/collections/trees-older-than-400-years went from 89 impressions to 423 and
+from position 20 to 8.8 in three weeks, which would make it the third
+biggest page on the site. thickest-trees holds 904 trees, three times as
+many, and earns nothing. The difference is the QUERY, not the size: "400
+year old tree" is a list-shaped question, "thickest tree" and "tall trees"
+are record-holder and nursery questions, which BACKLOG.md predicted under
+"Never build" on 2026-08-04. Read the 423 down by about half: its biggest
+measured pair is `"400 years old as of 2023" tree`, the exact-phrase
+operator seolearn already proved nobody types.
+
+**What shipped.**
+
+1. **/collections/the-oldest-tree-in-every-country-we-map is generated.**
+   It held 15 entries picked by hand when the map covered 15 countries, and
+   its own meta description still said "the 15 countries this site covers"
+   while the map had grown to 46 countries and 626 places. That is a live
+   false claim, so it is rung 3. It now names all 626, one row per place,
+   banded by country in ranked order, 46 headings, 1,252 links. It asks
+   `oldestTree()` in trees.ts which tree is oldest rather than deciding for
+   itself, so this page and a city's own question page can never disagree.
+   The 15 hand-written notes survive, as generated collections are designed
+   to let them.
+
+   New mode `oldest_per_place`, the first whose unit is a PLACE rather than
+   a tree, which needed two optional hooks on RankMode: `rows` (the mode
+   builds its own rows, because "which of this city's trees is oldest"
+   cannot be expressed as a filter over every tree) and `groupBy` (named
+   bands in ranked order, because a country is not a numeric threshold).
+   One-tree places are included deliberately: gating on the question page
+   would have dropped Old Tjikko, the Llangernyw Yew and General Sherman
+   from a list of the oldest trees we map.
+
+2. **The digest now prints a grouping-pages table** (`grouped_pages_lines`
+   in daily_digest.py): collections, species pages, country pages and park
+   pages, one row each with clicks, impressions, CTR, position and the
+   index against what that position normally earns, plus a **bot** flag on
+   any page whose biggest query carries quotation marks. Added to
+   CLAUDE.md's digest table contract so it cannot quietly fall out the way
+   the night-shift table did on 2026-08-21.
+
+**What did NOT ship, and why, because it was the plan an hour ago.** The
+three collections BACKLOG.md ranked as unbuilt on 2026-08-04 (oldest
+olives, oldest camphors of Japan, oldest trees of London) are all **already
+served by a page type that did not exist when that research was written**:
+/species/olive lists 24 olive trees, /species/camphor-tree lists 64, and
+London has both a city page and a question page. Building them would have
+manufactured exactly the duplicate URLs that got 36 of our pages filed as
+"crawled and not indexed" on 2026-09-17, and hard rule 3 would then have
+made them permanent. FOR HIDDE below.
+
+**And the title test could not start, correctly.** copytest.py refuses a
+surface with fewer than 20 eligible pages; there are 18 collections and two
+of them have any demand at all. The surface that can carry a test is
+species pages (178 of them, 0.5% CTR, every title the same template), and
+that is blocked on the measurement in point 2 above existing for a few days
+first. It starts once DATA.md has the rows.
+
+**One thing picked up on the way in.** The merge with the night run's own
+work was blocked by the pre-push hook: `crossdevice.py` refused
+`saved.saves_are_hearts_v1`, the latch on this morning's one-off
+saves-are-hearts repair, which had reached main unregistered. Ruled it
+**device** and wrote the reasoning into data/cross-device.json: the repair
+asks THIS phone's own record of taps which entries are ticked-but-not-
+hearted, so a second device has its own strays to clear and syncing the
+latch would suppress a repair that device still needs.
+
+**FOR HIDDE.** Nothing blocking. One judgement that is yours because it
+spends a window: four curated collections are stale the same way the
+country one was, and the data to fix them is already on disk. Yews list 8,
+we map 61; ancient oaks list 8, we map 104 over 300 years; the great planes
+list 10, we map 299; Europe's most remarkable list 10, we map 115 over 500
+years. The yew page already earns 67 impressions at position 8.8 on its 8
+entries, so it is the clearest of the four. Making them generated needs a
+species-and-region filter on top of the existing `oldest` mode, which is
+roughly the work item 1 above took.
 
 ## 2026-09-18 Where the funnel actually leaks, and the page with the best placement on the site
 
@@ -4955,7 +5053,6 @@ desktop on /lisbon/ajuda-dragon-tree.
 control in any of the seven languages; the web thumb is a colour emoji where the
 app draws an outline symbol; copycheck flags "Tap one to see how to tell it
 apart." in CollectSheet.swift:636, in the reader-photo session's area.
-
 
 
 ## 2026-09-11 (session with Hidde) - The tree in the wrong-tree photograph gets its own page: the Twisted Muku of Omiya Gate
