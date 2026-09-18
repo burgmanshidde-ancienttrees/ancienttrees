@@ -1,0 +1,17 @@
+{
+  "place": "Radava",
+  "country": "Slovakia",
+  "place_slug": "radava",
+  "note": "A small rural village, Nove Zamky district, with no published place nearby. Verified 2026-09-18 from a famous-slovakia verify pass, only one genuinely fetched source, and the reported measurements are unconfirmed. Full verified record in data/research/famous-slovakia-batch1-verified.json.",
+  "leads": [
+    {
+      "name": "The Lindens of Radava",
+      "species": "Small-leaved Lime (Tilia cordata), an ensemble of 9 trees",
+      "lat": 48.10,
+      "lng": 18.30,
+      "status": "lead",
+      "why": "Nine small-leaved limes growing together in Radava's village cemetery, treated as one collectible point (a compact ensemble with one obvious place to stand, not nine separate entries). Confirmed to exist via sk.wikipedia's national protected-trees list (entry S430, cadastral territory recorded as neighbouring Hul, which shares a joint territorial plan with Radava; every other source places the trees in Radava's own cemetery). That is the ONLY genuinely fetched source: this project's own Slovak register import does not contain the entry despite covering 1199 other trees nationally (a gap worth flagging), and the village's own site (radava.sk) 404'd on both pages tried, apparently restructured. Multiple WebSearch summaries (not independently fetched, so not treated as sources) repeat: over a quarter-millennium old, girths 210-400cm, heights 6-21m, protected since 30 June 1993, pruned in 2018 at municipal expense. Location is village-level only (approximate); the cemetery's own pin still needs finding, likely via an OSM graveyard node. Left as a lead: one source, unconfirmed figures, and no published place nearby to fold it into."
+    }
+  ],
+  "blocked": []
+}

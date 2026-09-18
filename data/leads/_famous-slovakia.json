@@ -39,7 +39,7 @@
         "https://commons.wikimedia.org/wiki/File:Star%C3%BD_Smokovec_16_Slovakia1.jpg",
         "https://commons.wikimedia.org/wiki/File:Star%C3%BD_Smokovec_16_Slovakia3.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: already published as sms_001 (Stary Smokovec).",
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -100,7 +100,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2015_Mulberry_tree_in_Senica_SK.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: already published as sen_001 (Senica).",
       "species": "Mulberry (Morus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -200,7 +200,7 @@
         "https://commons.wikimedia.org/wiki/File:Oksovske_duby_002.jpg",
         "https://commons.wikimedia.org/wiki/File:Oksovske_duby_003.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: the protected area was officially discontinued 1 Jan 2020 (absencia prirodnych hodnot, i.e. it no longer qualifies). Also a plural nature-reserve ensemble rather than one collectible point. Rejected, not moved to a lead file.",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -227,7 +227,7 @@
         "https://commons.wikimedia.org/wiki/File:BielaSamotaBW.jpg",
         "https://commons.wikimedia.org/wiki/File:BielaSamotaTab.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-18: confirmed to be a row/avenue of 24 lime trees along a road, an explicit hard-block (an avenue is not one collectible point). Rejected, not moved to a lead file."
     },
     {
       "name": "Hrochoťská lipa",
@@ -276,7 +276,7 @@
         "https://commons.wikimedia.org/wiki/File:V%C3%A1gsellye_v%C3%A9dett_fa.JPG",
         "https://commons.wikimedia.org/wiki/File:V%C3%A1gsellye_v%C3%A9dett_fa_2.JPG"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: verified to exist (register id 163 + sk.wikipedia list S163) but age/girth unconfirmed and access uncertain (courtyard of a former nursery/creche). Delivered as sal_001 in data/research/famous-slovakia-batch1-verified.json, held as a lead in data/leads/sala.json pending a fetched source and an access check.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -316,7 +316,7 @@
         "https://commons.wikimedia.org/wiki/File:LipyPriRadaveDutinaPoOdrezanomKonari.jpg",
         "https://commons.wikimedia.org/wiki/File:LipyPriRadaveDutineVKmeni.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: verified as a 9-tree ensemble (sk.wikipedia list S430) but only one fetched source and reported figures unconfirmed. Delivered as rad_001 in data/research/famous-slovakia-batch1-verified.json, held as a lead in data/leads/radava.json, no nearby container.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -341,7 +341,7 @@
         "https://commons.wikimedia.org/wiki/File:Lipa_slovenskej_%C5%A1t%C3%A1tnosti,_Doln%C3%BD_Kub%C3%ADn,_Slovensko_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Lipa_slovenskej_%C5%A1t%C3%A1tnosti,_Doln%C3%BD_Kub%C3%ADn,_Slovensko_03.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: real and verified (planted 1 Sept 1992, coords confirmed via Commons geodata), but an ordinary 34-year-old civic commemorative planting with no register entry, does not clear the genuinely-old/spectacular/historically-significant bar. Rejected, not moved to a lead file.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -354,7 +354,7 @@
         "https://commons.wikimedia.org/wiki/File:The_Lime_of_the_World%27s_Waters_in_Doln%C3%BD_Kub%C3%ADn,_Slovakia_02.jpg",
         "https://commons.wikimedia.org/wiki/File:The_Lime_of_the_World%27s_Waters_in_Doln%C3%BD_Kub%C3%ADn,_Slovakia_03.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: real and verified (planted 2009, roughly 17 years old, a civic project watered with water from world rivers), fails the qualifying bar on age, spectacle and historical weight. Rejected, not moved to a lead file.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -482,7 +482,7 @@
         "https://commons.wikimedia.org/wiki/File:Ko%C5%A1ice_-_Topo%C4%BE_biely_-_a.jpg",
         "https://commons.wikimedia.org/wiki/File:Ko%C5%A1ice_-_Topo%C4%BE_biely_-_b.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-18: verified (Kosice register id 406 + sk.wikipedia + teraz.sk), delivered as kos_001 (The White Poplar of the City Park) in data/research/famous-slovakia-batch1-verified.json, NOT published: single tree, no Kosice city file yet, does not clear the four-tree floor. Landed as a lead in data/leads/kosice.json to seed a future Kosice page."
     },
     {
       "name": "Biela samota",
@@ -493,7 +493,7 @@
         "https://commons.wikimedia.org/wiki/File:BielaSamotaBW.jpg",
         "https://commons.wikimedia.org/wiki/File:BielaSamotaTab.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-18: confirmed to be a row/avenue of 24 lime trees along a road, an explicit hard-block (an avenue is not one collectible point). Rejected, not moved to a lead file."
     },
     {
       "name": "Lipa malolistá v Šali",
@@ -504,7 +504,7 @@
         "https://commons.wikimedia.org/wiki/File:V%C3%A1gsellye_v%C3%A9dett_fa.JPG",
         "https://commons.wikimedia.org/wiki/File:V%C3%A1gsellye_v%C3%A9dett_fa_2.JPG"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: verified to exist (register id 163 + sk.wikipedia list S163) but age/girth unconfirmed and access uncertain (courtyard of a former nursery/creche). Delivered as sal_001 in data/research/famous-slovakia-batch1-verified.json, held as a lead in data/leads/sala.json pending a fetched source and an access check.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -517,7 +517,7 @@
         "https://commons.wikimedia.org/wiki/File:LipyPriRadaveDutinaPoOdrezanomKonari.jpg",
         "https://commons.wikimedia.org/wiki/File:LipyPriRadaveDutineVKmeni.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: verified as a 9-tree ensemble (sk.wikipedia list S430) but only one fetched source and reported figures unconfirmed. Delivered as rad_001 in data/research/famous-slovakia-batch1-verified.json, held as a lead in data/leads/radava.json, no nearby container.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -556,7 +556,7 @@
         "https://commons.wikimedia.org/wiki/File:Star%C3%BD_Smokovec_16_Slovakia1.jpg",
         "https://commons.wikimedia.org/wiki/File:Star%C3%BD_Smokovec_16_Slovakia3.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: already published as sms_001 (Stary Smokovec).",
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -621,7 +621,7 @@
         "https://commons.wikimedia.org/wiki/File:Oksovske_duby_002.jpg",
         "https://commons.wikimedia.org/wiki/File:Oksovske_duby_003.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: the protected area was officially discontinued 1 Jan 2020 (absencia prirodnych hodnot, i.e. it no longer qualifies). Also a plural nature-reserve ensemble rather than one collectible point. Rejected, not moved to a lead file.",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -696,7 +696,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2015_Mulberry_tree_in_Senica_SK.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: already published as sen_001 (Senica).",
       "species": "Mulberry (Morus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -786,7 +786,7 @@
         "https://commons.wikimedia.org/wiki/File:Lipa_slovenskej_%C5%A1t%C3%A1tnosti,_Doln%C3%BD_Kub%C3%ADn,_Slovensko_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Lipa_slovenskej_%C5%A1t%C3%A1tnosti,_Doln%C3%BD_Kub%C3%ADn,_Slovensko_03.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: real and verified (planted 1 Sept 1992, coords confirmed via Commons geodata), but an ordinary 34-year-old civic commemorative planting with no register entry, does not clear the genuinely-old/spectacular/historically-significant bar. Rejected, not moved to a lead file.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
@@ -799,7 +799,7 @@
         "https://commons.wikimedia.org/wiki/File:The_Lime_of_the_World%27s_Waters_in_Doln%C3%BD_Kub%C3%ADn,_Slovakia_02.jpg",
         "https://commons.wikimedia.org/wiki/File:The_Lime_of_the_World%27s_Waters_in_Doln%C3%BD_Kub%C3%ADn,_Slovakia_03.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18: real and verified (planted 2009, roughly 17 years old, a civic project watered with water from world rivers), fails the qualifying bar on age, spectacle and historical weight. Rejected, not moved to a lead file.",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     }
