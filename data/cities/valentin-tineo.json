@@ -1,0 +1,65 @@
+{
+  "city": "Valentin",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Valentin is a small rural village in the parish of Tineo, in the hills of western Asturias, and its oak has been remarked on since before Columbus sailed. The Carbayon de Valentin stands alone beside a small chapel, a pedunculate oak so wide at the base that two sources both measured its trunk at ten metres round, and is generally held to be the oldest oak in Asturias.",
+  "meta_description": "The Carbayon de Valentin: an oak documented before 1492, a 10-metre trunk, and Asturias's own Natural Monument since 1995. Free, no gate, no ticket.",
+  "question_meta": "Valentin's notable tree is the Carbayon de Valentin. Its age, its huge trunk, and how to reach the village.",
+  "question_answer": "The tree at Valentin is the Carbayon de Valentin, a pedunculate oak standing in the open Prado de San Pedro beside the chapel of San Pedro, in the parish of Tineo in western Asturias. It is documented in writing before 1492, generally held to be the oldest oak in Asturias, and its trunk has been measured by two independent sources at roughly ten metres round.",
+  "question_context": "Two sources, Spanish Wikipedia and Asturias's own protected-areas register, agree closely on the tree's numbers: sixteen metres tall, a crown twenty metres across, and a trunk girth of ten metres, an extreme figure flagged here rather than silently repeated, since ancient carbayones swell hugely at the base and the tape likely went round there rather than at standard chest height. An English tourism translation renders the same figure as a ten-metre diameter, almost certainly a slip rather than an independent measurement, so the Spanish sources are used. Documented in writing before 1492, the oak is credited with five centuries at minimum and often more than seven, though nobody has published a ring count. Asturias declared it a Natural Monument by decree in 1995, protecting the Prado de San Pedro around it, and it has since been named Giant Tree of the year by Bosques sin Fronteras and included in the Fundacion Biodiversidad's hundred most singular trees of Spain. It stands in the open, beside a small rural chapel, with no gate or ticket in any source. Valentin has no rail connection.",
+  "faq": [
+    {
+      "q": "How old is the Carbayon de Valentin?",
+      "a": "Documented in writing before 1492, which puts its age at five centuries or more, and sources often say over seven hundred years. Nobody has published a ring count, so treat the figure as a well-documented estimate rather than a measurement."
+    },
+    {
+      "q": "How wide is the trunk really?",
+      "a": "Two independent sources put the girth at roughly ten metres round. That is an extreme figure for a pedunculate oak, likely measured near the swollen base rather than at chest height, and an English tourism page's rendering of it as a ten-metre diameter is a translation error."
+    },
+    {
+      "q": "Can you visit the tree at Valentin?",
+      "a": "Yes, free and open. It stands on common ground in the Prado de San Pedro beside the village chapel, with no gate or fee mentioned in any source."
+    },
+    {
+      "q": "How do you get to Valentin?",
+      "a": "By road. Valentin is a small rural village in the municipality of Tineo, in western Asturias, with no rail connection."
+    }
+  ],
+  "hero_tree_id": "cbv_001",
+  "oldest_tree_id": "cbv_001",
+  "trees": [
+    {
+      "id": "cbv_001",
+      "name": "Carbayon de Valentin",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 500 years, possibly over 700",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 1000,
+      "location": {
+        "address": "Prado de San Pedro, beside the chapel of San Pedro, Valentin, Tineo, Asturias",
+        "latitude": 43.304325,
+        "longitude": -6.520509,
+        "neighbourhood": "Valentin (parish of Tineo)"
+      },
+      "story": "Somebody wrote this oak down before 1492. That is the documented floor under its age, and it is why the sources credit the Carbayon de Valentin with five centuries at least and frequently more than seven. Nobody has counted its rings, so the range stays a range.\n\n'Carbayon' is the Asturian word for a big old oak, and this one is generally held to be the oldest in Asturias. The measurements do the arguing. Sixteen metres tall, a crown twenty metres across, and a trunk that two independent sources put at ten metres round. That last figure is enormous for a pedunculate oak and is worth reading carefully: ancient carbayones swell at the base, and the tape may have gone round there rather than at chest height. An English tourism page renders it as a ten metre diameter, which it plainly is not.\n\nThe state caught up in 1995, when Asturias declared the tree a Natural Monument by decree and put the Prado de San Pedro around it under the same protection. In 2008 the NGO Bosques sin Fronteras named it Giant Tree of the year, and it sits on the Fundacion Biodiversidad's list of the hundred most singular trees in Spain. It stands out in the open beside the small chapel of San Pedro, on common ground with no gate and no ticket.",
+      "how_to_recognise": "You can recognise it by the trunk, put at ten metres round by the region's own register, carrying a crown about twenty metres across. It stands in the open Prado de San Pedro, beside the small chapel of San Pedro.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Carbay%C3%B3n_de_Valent%C3%ADn",
+        "https://naturalezadeasturias.es/espacios/accede/protegidos/monumentos-naturales/MN-carbayon-de-valentin.html",
+        "https://www.turismoasturias.es/en/descubre/naturaleza/espacios-protegidos/carbayon-de-valentin"
+      ],
+      "access": "Free, standing on open common ground (the Prado de San Pedro) beside a small rural chapel in the village of Valentin; no gate or ticket in any source",
+      "transport": "Rural village of Valentin, Tineo municipality, western Asturias; no rail, reached by road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -18,6 +18,19 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 (session 11) - Finished an earlier attempt's uncommitted work: two single-tree place pages, two more register giants for Higashi-Hiroshima
+
+Resumed an earlier attempt in this window that had stopped after 23
+minutes with 97 minutes of budget left, having shipped nothing to a
+commit despite the work being done. All of it verified clean and is now
+live.
+
+**Two new single-famous-tree place pages from `data/leads/_famous-spain.json`, published under the 2026-08-31 exception (would somebody travel specifically for THIS ONE TREE).** `data/cities/guernica.json` (grk_001, Gernikako Arbola): the standing oak is young, planted 2015, fifth in a documented dynasty; the page says so plainly and the destination is the ground itself, where Basque self-government was sworn for centuries and where the third tree survived the 1937 bombing a few dozen metres away. `data/cities/valentin-tineo.json` (cbv_001, Carbayon de Valentin): documented in writing before 1492, generally held to be the oldest oak in Asturias, a 10-metre girth flagged in the prose as likely measured at the swollen base rather than chest height. Both flagged (single-sourced age ranges), both `location_precision: confirmed`, both no photo. Marked resolved in `_famous-spain.json` with pointers to the published ids so a future famous-tree pass does not re-surface them.
+
+**Two more register giants added to the already-published `higashi-hiroshima.json`, taking it from 17 to 19 trees**: hgh_018 (the Ginkgo of Genko-ji, Kurose-cho, 3.16m girth) and hgh_019 (the Black Pine of Tokuzen-ji, Toyosaka-cho, 3.30m girth), both registry-only (Ministry of Environment giant-tree survey, 2000) with no second source naming the specific tree, both flagged for that reason, both `location_precision: approximate` since the register's own coordinate resolves to the temple site rather than the trunk. Updated the city's count promises (intro, meta_description, question_context) from seventeen to nineteen; `check_count_promises` and the rest of preflight/qa stayed clean. Released the standing `higashi-hiroshima` claim.
+
+Local `npx astro build` (12,035 pages), `preflight.py` (0 problems) and `qa.py` (15,963 pages) all ran clean before committing.
+
 ## 2026-09-18 Pamplona is our best-placed page and our thinnest
 
 Search Console's newest ten days put /pamplona at average position 3.6 on 412

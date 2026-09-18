@@ -2,6 +2,41 @@
 
 <!-- archive-index -->
 
+## 2026-09-18 (session 11) - Finished an earlier attempt's uncommitted work: 2 new places, 2 more trees for Higashi-Hiroshima
+
+This window's first attempt had stopped after 23 minutes with 97 of 120
+minutes still unspent, having done real work and shipped none of it: no
+commit, no LOG entry. Found it sitting in the working tree, verified it,
+finished it, committed it.
+
+**Two new single-tree place pages published**, both under the 2026-08-31
+exception (a solitary famous tree may open its own page when the question
+"would somebody travel specifically for THIS ONE TREE" is genuinely yes):
+Guernica's Gernikako Arbola, the Tree of Gernika, whose page says plainly
+that the standing oak is young (planted 2015, fifth in a documented line)
+and that the destination is the ground itself, where Basque
+self-government was sworn for centuries; and Valentin de Tineo's
+Carbayon de Valentin, documented in writing before 1492 and generally
+held the oldest oak in Asturias. Both came from `_famous-spain.json`'s
+lead pile and are now marked resolved there.
+
+**Higashi-Hiroshima grew from 17 to 19 trees**: two more registry-only
+giants (a ginkgo at Genko-ji, a black pine at Tokuzen-ji), both flagged
+since only the national giant-tree survey names them specifically. The
+earlier attempt had left the verify pass finished but the write step and
+merge undone, and a standing claim on the city with 135 minutes still on
+its clock; wrote both stories, merged them in, updated the city's count
+promises (17 to 19 in the intro, meta description and question context),
+and released the claim.
+
+Verified all of it before committing: local `astro build` (12,035
+pages), `preflight.py` (0 problems), `qa.py` (15,963 pages, clean) all
+green. `leads.py --ready` was empty going in and stayed empty; no other
+claims were standing. Left for a future window: the clock still has time
+on it most nights, per CLAUDE.md's capacity doctrine, so the next run
+should pick up Step 0's ladder fresh rather than assume this one used
+the whole budget.
+
 ## 2026-09-18 (session 10) - Released a stale claim, closed a scouting-ledger gap, and cleared two housekeeping flags
 
 Resumed an earlier attempt in this window that had stopped early with

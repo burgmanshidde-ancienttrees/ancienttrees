@@ -25,7 +25,7 @@
     "https://commons.wikimedia.org/wiki/File:Kisulabeko_haritza_-_Jauntsarats_02.jpg",
     "https://commons.wikimedia.org/wiki/File:Kisulabeko_haritza_-_Jauntsarats_03.jpg"
    ],
-   "status": "lead",
+   "status": "RESOLVED 2026-09-18, already published as data/cities/pamplona.json pam_004 (\"The Oaks of Jauntsarats\"); coordinates match to five decimal places and the tree's own fame record on pam_004 names its source as \"Kisulabe oak\" (Wikidata Q106862688)",
    "species": "Oak (Quercus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
@@ -57,14 +57,18 @@
   },
   {
    "name": "Carbayón de Valentín",
-   "lat": null,
-   "lng": null,
+   "lat": 43.304325,
+   "lng": -6.520509,
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Carbayon_de_Valentin_02.JPG",
     "https://commons.wikimedia.org/wiki/File:Carbay%C3%B3n_de_Valent%C3%ADn.JPG",
     "https://commons.wikimedia.org/wiki/File:Detalle_tronco_carbay%C3%B3n_Valent%C3%ADn.JPG"
    ],
-   "status": "lead"
+   "status": "RESOLVED 2026-09-18, published as data/cities/valentin-tineo.json cbv_001 (single-tree place page, Carbayon de Valentin)",
+   "verified_id": "cbv_001",
+   "verified_file": "data/research/_famous-spain-verified.json",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "verify_note": "2026-09-18 verification pass: Asturias Natural Monument since 1995, documented before 1492, believed oldest oak in Asturias, one of Spain's Fundacion Biodiversidad '100 most singular trees'. 10m girth flagged as extreme but agreed by two sources. No cluster nearby (rural western Asturias); reads as a solitary single-tree candidate on its own historical/champion-tree merit."
   },
   {
    "name": "Carrasca milenaria de Lecina",
@@ -133,7 +137,11 @@
     "https://commons.wikimedia.org/wiki/File:Arbol_de_Gernika_d%C3%ADa.jpg",
     "https://commons.wikimedia.org/wiki/File:Arbol_de_Gernika_y_La_Tribuna._Casa_de_Juntas_de_Gernika-Gernikako_Batzarretxea._Gernika-Lumo,_Vizcaya-Bizkaia..JPG"
    ],
-   "status": "lead"
+   "status": "RESOLVED 2026-09-18, published as data/cities/guernica.json grk_001 (single-tree place page, Gernikako Arbola; page states plainly the standing trunk is young, planted 2015, fifth in a documented line)",
+   "verified_id": "grk_001",
+   "verified_file": "data/research/_famous-spain-verified.json",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "verify_note": "2026-09-18 verification pass: this is a single-tree destination on fame/legend, not on trunk age -- the living oak is the fifth of a documented dynasty, planted 2015, standing in the Casa de Juntas garden in Gernika-Lumo where Basque self-government was sworn for centuries and where the third tree famously survived the 1937 bombing. Recommend its own small place page (like cabeza-del-buey.json, mendaza.json, muxika.json), clearly stating the current trunk's youth, rather than folding it into Bilbao (too far, ~35km) or any cluster."
   },
   {
    "name": "Mesto de las Rozas",
