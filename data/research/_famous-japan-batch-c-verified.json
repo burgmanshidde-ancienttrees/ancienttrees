@@ -1,29 +1,5 @@
 [
   {
-    "id": "TBD_001",
-    "name": "Mineyama Jinya Enoki",
-    "species": "Japanese Hackberry (Celtis sinensis var. japonica)",
-    "age_estimate": "roughly 250 to 300 years",
-    "age_min": 250,
-    "age_max": 300,
-    "girth_cm": 443,
-    "location": {
-      "address": "Yoshihara 97-2, Mineyama-cho, Kyotango-shi, Kyoto Prefecture (峰山町吉原97-2), at the Mineyama Jinya ruins",
-      "latitude": 35.631389,
-      "longitude": 135.053472,
-      "neighbourhood": "Mineyama, Kyotango"
-    },
-    "verified_sources": [
-      "https://www.city.kyotango.lg.jp/top/soshiki/kyoikuiinkai/bunkazaihogo/3/1/3334.html",
-      "https://ja.wikipedia.org/wiki/%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD"
-    ],
-    "access": "Free; stands in the open ground of the former Mineyama Jinya (Edo-period administrative post) ruins beside the Mineyama Town First District community hall. No gate or entry fee found in any source; not explicitly confirmed as open at all hours.",
-    "transport": "Central Kyotango, Mineyama district; nearest station is Kyoto Tango Railway Mineyama Station, roughly 15-20 min walk (not independently confirmed, estimated from address).",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Designated a Kyotango City natural monument on 8 July 2008 (city cultural-properties register, entry in the designated list at bunkazaihogo/3/1/3334.html). Species Celtis sinensis var. japonica per dedicated Japanese Wikipedia article and Commons category description. Height approx 15m, trunk girth at breast height 4.43m (443cm), former canopy spread approx 1000 sqm. Grows beside the stone steps of the jinya (the administrative base of the Kyogoku clan from 1622), likely planted after the jinya was established rather than a wild tree that predates it -- so its age (250-300yr est.) roughly tracks the site history but this is the Wikipedia article's own inference, not an independent bridge I am making. Damaged in 2015: heavy snow broke one of two primary trunks near the base; canopy now about two-thirds its former size but tree is described as vigorous with no major decay, still a local community symbol. Coordinates 35 37 53.0N 135 3 12.5E from the dedicated Wikipedia article, converted to decimal. Transport time to nearest station is my own estimate from the address, not sourced -- flag this specifically, do not treat as verified."
-  },
-  {
     "id": "TBD_002",
     "name": "The Mochi Tree of Hogon-ji",
     "species": "Japanese Holly (Ilex integra)",
