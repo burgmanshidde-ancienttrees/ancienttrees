@@ -177,7 +177,7 @@ if echo "$CHANGED" | grep -qE '^(ios/|site/src/)'; then
     fi
 fi
 
-echo "$CHANGED" | grep -qE '^(ios/|site/src/|site/public/assets/map-style|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|crossdevice|darkcheck|map_style_dark|pluralcheck))' || exit 0
+echo "$CHANGED" | grep -qE '^(ios/|site/src/|site/public/assets/map-style|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|crossdevice|darkcheck|map_style_dark|pluralcheck|localcheck))|^data/local-storage-allow' || exit 0
 
 fail=0
 for check in \
@@ -189,7 +189,8 @@ for check in \
     "scripts/darkcheck.py" \
     "scripts/standingpoint.py" \
     "scripts/map_style_dark.py --check" \
-    "scripts/pluralcheck.py"
+    "scripts/pluralcheck.py" \
+    "scripts/localcheck.py"
 do
     # shellcheck disable=SC2086
     if ! out=$(python3 $check 2>&1); then

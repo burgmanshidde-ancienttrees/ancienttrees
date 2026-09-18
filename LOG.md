@@ -1,6 +1,61 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 6) - Nothing lives on the device that belongs to an account, and the rule is now a check on BOTH surfaces
+
+Hidde: "Stop saving stuff locally anywhere please make sure this happens
+nowhere always account related." The third time he has given this rule, on
+three different days (2026-08-27 "niks moet lokaal opgeslagen zijn",
+2026-09-02 "alles wat wordt opgeslagen moet op je account zijn", today). By
+this file's own ratchet the second time should have produced a check on both
+surfaces and it produced one: `qa.py` has refused an unlisted localStorage key
+on the WEBSITE since 2026-09-02, and nothing ever asked the APP the same
+question. So the fault went on living there, which is exactly what an audit
+found.
+
+**What the app was still keeping, and what happened to it:**
+
+| What | Was | Now |
+|---|---|---|
+| Every worth-it vote and report | three UserDefaults keys PER TREE, written from the account at launch and then read by the views as the truth | the views read `MyVotes`, which is the account's own answer, and nothing is written to the device |
+| Paywall interest (`entitlement.interest.v1`) | a set of features written to the device that nothing ever read | sent as an event; `Waitlist.join` already put the same fact in the database |
+
+The mirror was not harmless. **Nothing cleared those keys on sign-out**, so a
+signed-out phone went on showing the last person's votes, and a key written
+per tree cannot be enumerated, so it could not have been cleared even
+deliberately. `MyVotes.clearTheOldMirror()` sweeps them off phones that
+already carry them, unconditionally and idempotently, because a flag to track
+the removal of something from the device is one more thing stored on the
+device.
+
+**And it surfaced a bug that was invisible while the mirror existed:** the
+reader matched a vote with `why.contains("worth it")`, and "not worth it"
+contains "worth it", so the payoff screen's thumbs DOWN came back as a green
+thumbs UP on the tree page at the next launch. It could not be seen before
+because no control ever read that value back; it only ever wrote. Matched
+whole now, with a test.
+
+**The mechanism, which is the part he actually asked for.**
+`data/local-storage-allow.json` is one audited list for both surfaces: 3 web
+keys, 14 app keys, one line of reason each, plus the two file stores named so
+the audit is complete. `scripts/qa.py` checks the website against it (it had
+its own hard-coded set) and the new `scripts/localcheck.py` checks the app, in
+the pre-push hook. Both refuse a key that is not listed and a key built from a
+variable, whatever it holds: such a key cannot be enumerated, so it cannot be
+cleared, and a list cannot read what is not a literal. Verified by planting
+both shapes and watching it fail, then removing them.
+
+Reading that file tells you in a minute what either surface keeps and why.
+The honest summary of what is left: the session token and a privacy opt-out
+and an unsent draft on the web; on the app an anonymous analytics id that must
+NOT be the account, unsent analytics events, Apple's per-install review
+bookkeeping, per-device screen bookkeeping, which maps app is installed, and
+four echoes whose truth is the server (units, blocks, the collection, and a
+one-off migration flag).
+
+Five tests in `VotesTests` hold it. The app half is judged by `ios.yml`, since
+there is no Xcode here.
+
 ## 2026-09-18 (session 5) - My trees and Favourites were one list: the app was writing every ticked tree into the favourites table
 
 Hidde, on his own account page: "als ik klik op My Trees op Favorites, dan
