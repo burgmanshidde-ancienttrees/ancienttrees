@@ -124,6 +124,26 @@ def translated():
             for f in glob.glob(os.path.join(root, "*", "*.json"))}
 
 
+def languages_proven():
+    """Which language areas have passed the test on two cities or more.
+
+    Lifted out of the report on 2026-09-11 because `--next` ranked on English
+    impressions alone and therefore pointed runs at the weakest area on the
+    board. On the day it was written the top five rows it printed were all
+    Dutch, which sits at 50 percent of its twin with 0 of 3 cities past, while
+    Spanish at 124 percent with 4 of 5 was four rows down. One command was
+    computing the verdict and ignoring it eight lines later.
+
+    Returns the set of languages with two or more passes, which is the same
+    bar the by-language table calls ROLL OUT.
+    """
+    by_lang = {}
+    for (lang, _city), row in latest_language_table().items():
+        en = row.get("en_impressions") or 0
+        by_lang.setdefault(lang, []).append(bool(row["impressions"] > en and en > 0))
+    return {l for l, res in by_lang.items() if sum(res) >= 2}
+
+
 def show_next():
     """The highest-impression untranslated city per language area.
 
@@ -151,11 +171,21 @@ def show_next():
             continue
         clicks, impressions = imps.get(slug, (0, 0))
         rows.append((impressions, clicks, lang, slug, len(city.get("trees", []))))
-    rows.sort(reverse=True)
+    # A PROVEN LANGUAGE FIRST, then impressions. The precondition of this rung
+    # is that translating multiplies something that already works, and a
+    # language area is as much a part of "already works" as the page is: 24
+    # impressions in German, which runs at 135 percent of its twin, is worth
+    # more than 56 in Dutch, which runs at 50 and has not passed once.
+    proven = languages_proven()
+    rows.sort(key=lambda r: (r[2] in proven, r[0], r[1]), reverse=True)
 
     print("Translate next: the untranslated city with the most English impressions,")
-    print("per language area. The precondition is the whole rung: a page nobody")
-    print("finds in English becomes a page nobody finds in two languages.\n")
+    print("per language area, PROVEN LANGUAGE AREAS FIRST. The precondition is the")
+    print("whole rung: a page nobody finds in English becomes a page nobody finds")
+    print("in two languages, and a language nobody clicks in is the same mistake")
+    print("one layer up.")
+    print("Proven today (two or more cities past their English twin): %s\n"
+          % (", ".join(sorted(proven)) if proven else "none yet"))
     print("| Lang | City | English impressions | Clicks | Trees |")
     print("|---|---|---:|---:|---:|")
     seen = set()
@@ -169,8 +199,9 @@ def show_next():
     for impressions, clicks, lang, slug, trees in rows[:15]:
         if impressions == 0:
             continue
-        print("  %-3s %-20s %4d impressions  %2d clicks  %2d trees"
-              % (lang, slug, impressions, clicks, trees))
+        print("  %-3s %-20s %4d impressions  %2d clicks  %2d trees%s"
+              % (lang, slug, impressions, clicks, trees,
+                 "" if lang in proven else "   (language unproven)"))
     under = [r for r in rows if r[0] == 0]
     print("\n%d more cities in these language areas sit under 10 impressions in\n"
           "English and are not worth translating yet." % len(under))
