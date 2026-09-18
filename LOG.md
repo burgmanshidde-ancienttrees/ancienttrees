@@ -1,6 +1,62 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 5) - /sources keeps the names and stops publishing the endpoints
+
+Hidde asked whether listing every source on /sources is smart, since it also
+helps competitors. Short answer: the names have to stay and cost us almost
+nothing, but the page was publishing something else alongside them that
+nobody is owed.
+
+**The names are not optional and are not the moat.** 38 of the 55 registers
+name attribution in the licence itself, and a dozen more government terms
+carry it in prose, which is
+why the page was built on 2026-09-03 in the first place; withholding them
+would be a licence breach rather than a strategy. And a competitor learns
+little: these are government registers, findable by searching "alberi
+monumentali" in each language. What is expensive here is what the corpus
+already measures, roughly 19k tokens a tree researched from zero against
+0.4k with a register in hand: the verification, the clustering, the pins,
+the stories, the photographs. MonumentalTrees holds more trees than we ever
+will and it does not matter.
+
+**What was actually leaking was our scouting, not our sources.** The page
+rendered the raw `endpoint` field as each link, which meant the exact
+request we make: query strings, layer names, and the notes an import pass
+wrote down after working it out (Flanders caps a page at 50 whatever
+`per_pagina` says, Bavaria wants `startIndex` paged, Poland serves lon,lat).
+No licence asks for that. It was also producing links that resolve nowhere,
+because an href carrying `(ArcGIS FeatureServer, GeoJSON, EPSG:4326)` or
+`startIndex=<n>` is not a url, so the page was failing the one promise it
+makes a reader, that they can check us.
+
+`publicSourceUrl()` in `site/src/lib/sources.ts` now prefers a catalogue
+page where a register recorded one and otherwise strips the endpoint back
+to the publisher's own portal. 51 of 55 entries link somewhere a person can
+read; the remaining 4 are hosted on Esri tenants (`services3.arcgis.com/<id>`),
+where the stripped url credits nobody, so they list the authority and the
+licence with no link. Nothing else on the page changed: names, licences,
+share-alike notice and per-register counts all stay.
+
+**One thing found while in there, same class of problem.** Spokane's licence
+is recorded as a 493-character internal note, and all of it was rendering on
+the public page, naming CLAUDE.md, "layer-2 bulk register-dot import" and
+which other US registers it resembles. The public line is now the two words
+that are true, "none stated", and the reasoning stays in the register file.
+Also gave Spokane its country, so it no longer sits alone under "Other".
+
+Build clean (11,993 pages), `preflight.py` 0 problems, `qa.py` green.
+
+**FOR HIDDE: the real exposure is not /sources, it is the repository.**
+`github.com/burgmanshidde-ancienttrees/ancienttrees` is public, so CLAUDE.md,
+CITY_QUEUE.md, OPEN_DATA_SURVEY.md, DATA.md's Search Console numbers, the
+cost meters and every register file's endpoint and caveat are already
+readable by anyone, in far more useful form than the credits page ever was.
+That is a bigger decision than a page and it is yours: the site deploys from
+this repo via GitHub Pages, which on a private repo needs a paid plan (hard
+rule 5) or a move to another host. Say the word and I will price the move;
+I have changed nothing about it.
+
 ## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
 
 An earlier attempt this window stopped after 43 minutes having shipped
