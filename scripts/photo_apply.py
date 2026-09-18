@@ -68,8 +68,15 @@ def clean_author(raw):
     a private email address is the one thing this project never does with a
     person's details, licence or no licence, and it takes the first line only,
     then removes any address or url that survives on it.
+
+    A Flickr-sourced Commons import carries its Artist field as raw HTML, e.g.
+    '<a rel="nofollow" ... href="...">Teresa Grau Ros</a> from Barce[lona]', and
+    without stripping the tag first every other rule here runs on the markup
+    instead of the name, producing a credit that is literally an HTML fragment
+    (caught live on Barcelona's bcn_013, 2026-09-18).
     """
     first = (raw or "").strip().splitlines()[0] if (raw or "").strip() else ""
+    first = re.sub(r"<[^>]+>", "", first)
     first = re.sub(r"\S+@\S+", "", first)
     first = re.sub(r"https?://\S+", "", first)
     # iNaturalist hands back a whole sentence: "(c) Skjold Sondergaard, some
@@ -81,6 +88,8 @@ def clean_author(raw):
     first = re.sub(r"\s*\((?:CC[^)]*|public domain|pd)\)\s*$", "", first, flags=re.I)
     # A username qualified by the wiki it came from is still just the username.
     first = re.sub(r"\s+at\s+\w+\s+Wikipedia\s*$", "", first, flags=re.I)
+    # Flickr appends the uploader's stated location: "Name from City, Country".
+    first = re.sub(r"\s+from\s+\S.*$", "", first, flags=re.I)
     # A name does not contain a sentence. If a first line still runs on, keep
     # the part before the first clause break rather than printing an essay.
     first = re.split(r"\s+[-–|,]\s+|\s{2,}", first)[0]
