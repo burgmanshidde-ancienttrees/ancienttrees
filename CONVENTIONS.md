@@ -843,6 +843,43 @@ So the copy says what somebody GETS and never how, and never how much.
 Recorded from our own corpus, 2026-08-29. No source URL captured; the wording
 of each app is described from use.
 
+## One account, two surfaces, different sign-in buttons (2026-09-11)
+
+The situation: the website offers Google and a magic link; the app offers Apple
+and Google, with its typed-email route hidden behind `Launch.emailSignIn` since
+2026-08-30. Hidde asked the right question of that gap: "als je hier met e-mail
+kan inloggen maar niet in de app hoe gaat dat."
+
+**What Supabase does, looked up 2026-09-11** (docs at
+supabase.com/docs/guides/auth/auth-identity-linking, read through search because
+this session cannot reach the domain): identities are **linked automatically
+when the email address is the same and verified**. "When a new user signs in
+with OAuth, Supabase Auth will attempt to look for an existing user that uses
+the same email address. If a match is found, the new identity is linked to the
+user." So a magic link to somebody@gmail.com on the website and Continue with
+Google on the same address in the app are ONE account, and nothing has to be
+built for that.
+
+**Two cases it does not cover**, and both are silent:
+
+1. **Apple's Hide My Email** hands over a relay address, which is a different
+   email, so it makes a SECOND account with an empty collection. Nothing in the
+   app says so; the only clue is the address on the account screen.
+2. **A website account on an address that is neither your Apple nor your Google
+   one.** There is no way into it from the app at all while the typed route is
+   hidden.
+
+**What the references do about it: they do not have the problem.** AllTrails,
+Strava, Airbnb and Google Maps offer the SAME identity buttons on every surface,
+and where a collision still happens they say which method you used at the moment
+you try ("an account already exists with that email"). We cannot draw that
+error, because the app has no field to type an address into.
+
+**So the fix is parity of the buttons, not a sentence explaining the gap.** A
+sign-in sheet says what you get and never how it works (the entry above,
+2026-08-29), so an explanatory line about which button to pick would break that
+rule and still leave the trap in place.
+
 ## App Store screenshots (2026-08-29)
 
 **Looked up:** AllTrails (id405075943), komoot (id447374873), PictureThis
@@ -2180,3 +2217,35 @@ Read 2026-09-11:
 - https://developer.apple.com/documentation/swiftui/pickerstyle/segmented
 - https://medium.com/tap-to-dismiss/select-to-proceed-996d19c8a7a4
 - https://www.createwithswift.com/mastering-forms-in-swiftui-selecting-information/
+## Your own photograph of a place somebody else maps (2026-09-11)
+
+The situation: you tick off one of our trees and photograph it. The tree has a
+page of ours, with our own picture or, for two thousand of them, none at all.
+Whose picture does the page show?
+
+What the references do, read 2026-09-11:
+
+- **Google Maps.** A place keeps its own cover photo, chosen by Google. Yours
+  lands in the place's photo set and in "Your contributions", labelled as
+  yours, and it can become the cover only through their ranking, never by
+  arriving. https://support.google.com/maps/answer/7013631
+- **iNaturalist.** Your photograph belongs to your OBSERVATION, which is your
+  record of standing there. The taxon page keeps its own curated images and
+  only promotes a photograph through a separate community step.
+  https://www.inaturalist.org/pages/help
+- **AllTrails and Strava.** The photograph belongs to your activity or review
+  and shows there; the trail keeps its own hero.
+
+The shared rule: **the place keeps its own picture, and yours is yours,
+labelled.** Nobody's snapshot silently replaces the curated image, and nobody's
+snapshot is thrown away either.
+
+Ours, and where it differs: most of our trees have NO picture, which is not a
+state Google Maps is ever in. An empty slot is not a curated choice, so yours
+fills it, with the label "Your photograph" so the two are never confused. Where
+we publish one, ours stays and yours stays yours. Same rule on both surfaces:
+`TreeDetail.myShot` in the app, `my-trees-js.ts` on the website.
+
+What this is NOT: publishing. A photograph on the page for everybody is a
+separate decision made by a viewing pass (CLAUDE.md, Step 0b), and it needs
+somebody to look at the pixels first.

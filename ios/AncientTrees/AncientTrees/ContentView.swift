@@ -325,6 +325,11 @@ struct ContentView: View {
         switch route {
         case .tree(let id):
             if let t = cat.tree(id) {
+                // YOUR OWN PHOTOGRAPH OF IT, when you ticked it off with one,
+                // already handled inside TreeDetail via the `sightings`
+                // environment (Sightings.ofTree, see its own doc comment for
+                // the 2026-09-11 bug this fixed): `yourShots`/`heroOwnShot`
+                // fill the slot only where we have no picture of our own.
                 TreeDetail(tree: t, catalogue: cat, origin: origin)
             } else {
                 ContentUnavailableView("That tree is no longer on the map",
@@ -886,6 +891,17 @@ struct ContentView: View {
                 await myVotes.load(account: account)
                 for (tree, vote) in myVotes.byTree {
                     UserDefaults.standard.set(vote, forKey: "at_worthit_\(tree)")
+                }
+                // And what this account has already REPORTED, for the same
+                // reason: the report entry on a tree page reads these two keys
+                // and, until 2026-09-11, only ever found what this phone had
+                // tapped. The website has read them off the same rows all
+                // along, so the two surfaces disagreed on a second device.
+                for tree in myVotes.reported {
+                    UserDefaults.standard.set("reported", forKey: "at_wrong_\(tree)")
+                }
+                for tree in myVotes.detailed {
+                    UserDefaults.standard.set(true, forKey: "at_wrong_detail_\(tree)")
                 }
                 if let remote = profiles.me?.units {
                     units.unit = remote == "mi" ? .imperial : .metric

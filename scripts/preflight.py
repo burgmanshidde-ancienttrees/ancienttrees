@@ -599,12 +599,41 @@ def check_country_counts():
         re.compile(r"across\s+(?P<cities>%s)\s+mapped\s+cities\b" % _NUM_RX, re.I),
     ]
 
+    # A literal count in this sentence is the fault now, not just a drifted
+    # one (2026-09-18). All 24 country intros froze a number into the meta
+    # description, the text Google prints in the result, and a night run adding
+    # one tree made it wrong; three had already drifted when this was found.
+    # /[country].astro fills {trees}, {cities} and {places} from the data, so
+    # the number cannot go stale and the fix is mechanical.
+    # Up to two words may sit between the number and the noun ("95 mapped
+    # places"), and the number may be spelled out ("Six places"): both forms
+    # were in the files and both escaped the first version of this rule.
+    # The tens come FIRST in the alternation and carry their own optional
+    # hyphenated unit, so "Twenty-six" matches whole instead of the regex
+    # finding "six" on its tail and reporting the wrong number.
+    _TENS = r"(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)(?:-[a-z]+)?"
+    _UNITS = (r"one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|"
+              r"thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen")
+    _COUNT = r"(?:\d[\d.,]*|%s|%s|dozens?|scores?|hundreds?|thousands?)" % (_TENS, _UNITS)
+    # (?<![-\w]) rather than \b, or "Twenty-six cities" matches on its own tail
+    # and reports a count of six where the copy says twenty-six. My own new
+    # check cried wolf within the hour of being written, which is the thing
+    # this session spent its morning taking out of englishcheck.
+    frozen = re.compile(r"(?<![-\w])%s\s+(?:\w+\s+){0,2}?(?:trees|cities|places)\b"
+                        % _COUNT, re.I)
+
     out = []
     for f in sorted(glob.glob("data/countries/*.json")):
         with open(f, encoding="utf-8") as fh:
             d = json.load(fh)
         country = d.get("country")
         meta = d.get("meta_description") or ""
+        hit = frozen.search(meta)
+        if hit:
+            out.append("%s: meta_description freezes a count (\"%s\"). Use "
+                       "{trees}, {cities} or {places}; the page fills them from "
+                       "the data (%s)"
+                       % (country, hit.group(0), os.path.basename(f)))
         if country not in real:
             continue
         real_cities, real_trees = real[country]
@@ -1200,6 +1229,46 @@ def all_photos(tree):
     return out
 
 
+def check_one_photograph_per_tree():
+    """No two trees may wear the same photograph.
+
+    The Cagliari case, recorded in CLAUDE.md: the sweep attached one file to
+    two different trees at once, and a viewing pass that judges candidates one
+    at a time cannot see it, because each one looks fine on its own. Copenhagen
+    is the same error at a distance, and Dublin and Nuremberg are where it is
+    waiting: measured 2026-09-10, 634 unjudged files in the queue are offered
+    to more than one tree, and 96 of them score above zero for more than one,
+    which is the set a viewing pass could plausibly approve twice.
+
+    A photograph showing two of our trees still illustrates ONE of them. The
+    other page is then telling a reader that the trunk in the picture is the
+    trunk they are walking to, and it is not, which is the promise this site
+    trades on. So the honest handling of a file that could be either is `held`
+    on both until somebody settles it, never approved on both.
+
+    It passes at zero today, which is the moment to write it: nothing has to be
+    unpicked, and the next sweep cannot introduce it quietly.
+    """
+    seen, out = {}, []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            photo = tree.get("photo") or {}
+            url = photo.get("url")
+            if not url or photo.get("status") == "held":
+                continue
+            first = seen.get(url)
+            if first:
+                out.append("%s: %s wears the same photograph as %s (%s). One file "
+                           "cannot be the portrait of two trees; hold it on both "
+                           "until somebody has looked and settled which trunk it is."
+                           % (path, tree.get("id"), first[0], url[:70]))
+            else:
+                seen[url] = (tree.get("id"), path)
+    return out
+
+
 def check_photos_are_not_the_lead_twice():
     """The same picture must not be both the lead and an extra.
 
@@ -1459,6 +1528,31 @@ def visible_text(body):
     return out
 
 
+def astro_template(src):
+    """Everything after an Astro component's frontmatter fence.
+
+    Was `src.split("---", 2)[2]`, which is wrong the moment three hyphens
+    appear inside the frontmatter, because the split cuts at the first two
+    occurrences wherever they fall. Two shapes in this repo break it, and both
+    surfaced on 2026-09-18 when HomePage.astro moved into components/:
+
+    - a section divider in a comment, `// --- Directory block ---`, which made
+      the "body" the rest of the FRONTMATTER, so every code comment in it was
+      reported as untranslated text a reader would see. 119 findings, none real.
+    - an opening fence with a comment glued to it, `---// The one translated...`,
+      which TranslatedQuestionPage.astro and TranslatedTreePage.astro both use.
+      Astro accepts it, so a check that assumes a bare fence reads the whole
+      file as template.
+
+    So: the opening fence is the file starting with `---`, and the closing one
+    is the first LATER line that is nothing but `---`.
+    """
+    if not src.startswith("---"):
+        return src
+    m = re.search(r"\n---[ \t]*(?:\n|$)", src)
+    return src[m.end():] if m else src
+
+
 def check_translated_components_have_no_typed_text():
     """A word typed into a component that renders in seven languages.
 
@@ -1480,8 +1574,7 @@ def check_translated_components_have_no_typed_text():
     """
     out = []
     for name, src in language_aware_components():
-        parts = src.split("---", 2)
-        body = parts[2] if len(parts) > 2 else src
+        body = astro_template(src)
         for text in visible_text(body):
             if text in ("Ancient Trees",):      # the brand is never translated
                 continue
@@ -1982,6 +2075,7 @@ def main():
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
                 + check_photos_are_not_the_lead_twice()
+                + check_one_photograph_per_tree()
                 + check_every_tree_names_a_source()
                 + check_a_tree_can_be_told_apart()
                 + check_story_length()

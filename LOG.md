@@ -1,6 +1,235 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session) - The photo shortlist aims at demand, and langcheck stops pointing at its weakest language
+
+Hidde, on being told two of the three leftover pieces were still unlanded:
+"kunnen we dit nog doen?" Cherry-picked from
+claude/zware-foto-zoektocht-kb1n3e rather than merged, because main has moved
+on every other file that branch touches. Its third piece, the SEO learning
+table, had already reached main by another route.
+
+**The shortlist had been serving the wrong rule, and it was invisible because
+only one of the two rules was ever written as code.** Coverage says one
+photograph per city; the 2026-08-12 course says photos go where there are
+readers. The tool's condition was `photos == 0`, and a city with readers has
+had its first photograph for weeks, so the demand rule addressed no city at
+all: the nine cities the digest allows depth on held 228 photo-less trees
+between them and none of them appeared.
+
+The two lanes do not compete, which is what made the switch free: of 54
+coverage cities 7 have a candidate worth viewing, of 176 demand cities 53 do,
+and the overlap is those same 7. The other 47 are blocked on supply. `--coverage`
+still prints the old list.
+
+**`--conflict` earned its place on the first run here.** The geotag used to
+score a flat +4 for existing; it is graded by distance now, and the new view
+asks where the filename and the pin disagree. Top row: a file called
+"Betteleiche im Winter" sitting 19.1 km from our pin for The Betteleiche, on a
+pin we call CONFIRMED. A wrong pin outranks every photo question on this site.
+
+**langcheck computed its verdict and ignored it eight lines later.** `--next`
+sorted on English impressions alone, so it pointed at the weakest language on
+the board. Proven areas rank first now: de, es and ja sit above Utrecht's 75
+impressions in Dutch, which runs at 50 percent of its twin and has not passed
+once.
+
+**And the check I wrote yesterday could not see any of this.** It filtered to
+branches touching `site/` or `ios/`, on the reasoning "what a reader or a phone
+would notice". That is the wrong test: this branch changed only `scripts/`, and
+a tool that decides what the machine works on next is worth as much as a page.
+Hidde found it by reading a sentence of mine rather than the list. It watches
+`scripts/` too now, and the list went from 5 branches to 7.
+
+## 2026-09-18 (session) - 27 spent branches cleared out, and what is genuinely left
+
+Hidde, after the fourth merge: "5 hoeft niet is de rest gedaan kunnen we
+archiveren?"
+
+**The list he was given is done.** The homepage duplication, the /cities split
+and the famous-tree collection, the girth-derived ages and the hug, and your
+own photograph on your own tree are all merged and live. Item 6 turned out to
+have landed by another route before the list was written. Item 5, the three
+mails, is his to send and stays where it is.
+
+**Two things on that list were never on it, and both carry real unlanded work.**
+Saying the rest is done would have been wrong:
+
+- `claude/apple-login-mobile-web-wv6fv1`, written 00:28 this morning, on his own
+  complaint that the sign-in sheet suggests you can swipe it away and cannot,
+  and that it takes you off the page you were on. The sheet was included by
+  hand in twelve files, so it existed on 58 percent of the site and the nav had
+  to NAVIGATE to /account to sign you in. It moves into Base.astro.
+- `claude/zware-foto-zoektocht-kb1n3e`. Its translation overlays and the App
+  Store download split are in main; the photo shortlist aimed at demand rather
+  than at coverage, langcheck's ranking of proven language areas, and the
+  digest's SEO learning table are not.
+
+**Cleared for deletion and NOT deleted**: this session's token can push a ref
+and not delete one, and `git push origin --delete` comes back 403 on every one
+of them, singly or together. So the verdict is recorded here and the refs are
+still on the remote. Deleting them is one command from a clone that has the
+rights, and nothing is lost either way, because every tip is written down:
+
+    git push origin --delete <branch>   # or tick them off in the GitHub UI
+
+Every commit below is present in main, or the work landed by another route and
+was checked by hand. The tips are recorded so nothing is unrecoverable even
+after deletion (`git checkout <sha>` brings any of them back):
+
+| branch | tip | why it can go |
+|---|---|---|
+| `app-permission-recovery` | `c8f90f7a` | every commit is in main |
+| `claude/affectionate-hamilton-07e1bc` | `04e6dfa6` | every commit is in main |
+| `claude/blissful-cray-9dppia` | `503a0ba6` | every commit is in main |
+| `claude/camera-photo-recognition-czgy6m` | `17f75c90` | every commit is in main |
+| `claude/city-list-cities-only-tvip1a` | `e56342d2` | every commit is in main |
+| `claude/daily-digest-ewqhcc` | `b44af1d8` | every commit is in main |
+| `claude/daily-digest-hmk4ke` | `a4677677` | every commit is in main |
+| `claude/emoji-icon-inconsistencies-f6j9z3` | `76dc08f1` | every commit is in main |
+| `claude/empty-collections-website-dscksa` | `1f1c4158` | every commit is in main |
+| `claude/epic-lovelace-kjjc03` | `64634625` | every commit is in main |
+| `claude/filter-design-improvement-ujknep` | `9d31ba12` | every commit is in main |
+| `claude/footer-missie-alignment-d7ku63` | `764762fa` | every commit is in main |
+| `claude/foto-zichtbaarheid-eigen-boom-tz5y1s` | `464a03c5` | every commit is in main |
+| `claude/hero-photo-ratio` | `ef1510ed` | every commit is in main |
+| `claude/kunnen-we-hier-wat-mee-0t7f8k` | `d880fe59` | every commit is in main |
+| `claude/mobile-search-zoom-bug-2uillb` | `27eebed6` | every commit is in main |
+| `claude/multiple-images-per-tree-gh0x14` | `07477818` | every commit is in main |
+| `claude/nieuwe-blacklinks-eocc8d` | `0e070c8d` | every commit is in main |
+| `claude/seo-results-performance-oqayxn` | `d0dc043d` | every commit is in main |
+| `claude/vigilant-thompson-omceg9` | `4ed17067` | every commit is in main |
+| `claude/website-ux-audit-aji746` | `d8a9e231` | every commit is in main |
+| `geo-distance-consolidation` | `fcc74489` | every commit is in main |
+| `maplibre-map-wip` | `fc700405` | every commit is in main |
+| `claude/tree-age-species-trunk-size-u9u1yb` | `2e13bbd4` | landed by content, verified |
+| `claude/boom-pagina-kop-h8zuv9` | `d61ef453` | landed by content, verified |
+| `claude/nostalgic-lewin-e2a29b` | `77abfbb5` | landed by content, verified |
+| `claude/project-display-chrome-macos-no73xi` | `14fcd2ea` | landed by content, verified |
+
+Kept: the three mail branches (item 5), the two above, and this session's own.
+
+## 2026-09-18 (session) - Your own photograph shows on your own tree, on the website too
+
+Fourth of the stranded branches (claude/foto-zichtbaarheid-eigen-boom-tz5y1s,
+written 09-11, unmerged for a week). Hidde's own report, from his account page,
+at a tree he had photographed in the app days earlier: "waarom zie ik hier niet
+de foto die ik heb gemaakt in de app bij m'n eigen boom."
+
+The photograph had travelled. Nothing showed it. A sighting taken while ticking
+off a tree we map carries that tree's id, and the website drew those rows as
+cards of their own under our card for the same tree, so the tree appeared twice
+and our card was the empty one.
+
+**The app half was already in main by another route, and is better**: heroOwnShot
+plus a "Your photographs" thumbnail row. Both app conflicts took main's side.
+What landed today is the web half:
+
+- A tree-linked photograph now sits ON that tree's card, labelled "Your
+  photograph". One tree, one card, counted once. Google Maps' rule as
+  CONVENTIONS.md records it: the place keeps its own picture and yours is
+  yours, so yours fills an empty slot and ours stays where we publish one.
+- Your own trees are on the profile map, which the app's Collect map has always
+  drawn.
+- scripts/crossdevice.py in the pre-push hook: every store either surface keeps
+  something in is named in data/cross-device.json with a verdict, account or
+  device, so a new one has to say which. 25 stores, all ruled on, 6 account and
+  14 device.
+
+**And the worse bug it turned up: the "it is on the site now" confirmation had
+never been sent, to anybody.** It carried no App Store link, mailcheck has
+required one on every letter since 2026-09-03, and a held mail only prints HOLD.
+Every reader whose tip we acted on heard nothing back.
+
+main and the branch had each grown a different fix for that, and both are kept:
+main appends the line, the branch declares "audience: app user" in the draft
+header so mailcheck stops asking. Joined so that somebody writing from inside
+the app gets neither, which is what Hidde asked for ("onder deze mail hoeft geen
+verwijzing naar de app"), and everybody else gets the line.
+
+Verified: build 11,842 pages, qa 15,687 pages, preflight 0 problems,
+crossdevice, netcheck, parity, conventions and the screen lists clean.
+
+
+## 2026-09-18 (session) - Two faults were hiding behind NOTEs, and one deriver was about to make things worse
+
+Hidde: "nog dingen te fixen? zijn we klaar?" Rung 2 was clear and every page
+type was clean, so the honest place left to look was preflight's NOTE list,
+which nothing fails on. Two real faults were sitting in it.
+
+**Eleven ticketed trees were being shown as free.** Their `access` prose says
+"Paid entry", "Admission charged", "around NT$300", and `paid_entry` was unset
+on all of them. That flag is not decoration: the map marks a paid pin from it,
+the app feed carries it, the tree page draws the ticket band from it, and
+`freeTrees()` filters on it, so eleven trees behind a till were in the free
+list and on the walks.
+
+**And the script that fixes that was about to make it worse.** `paid_entry.py`
+derives the flag from the prose, and its matcher knew four currencies and six
+phrasings. Run as it stood it would have written 19 and REMOVED 7, and the
+seven were a 180 Kc monastery, a booked Menorca boat tour twice over, a castle
+charging admission, and a cross-reference to another paid entry. Unsetting a
+true flag tells a reader something ticketed is free, which is the expensive
+direction of this mistake. Two changes: the vocabulary now knows the
+currencies our own access lines actually quote, and the deriver is ADD ONLY.
+A flag it cannot re-confirm is printed for a person to read, never cleared;
+two are, both genuinely paid and both unmatchable by any regex. 20 written, 0
+removed, and preflight's eleven notes are gone.
+
+**All 24 country pages froze a tree count into their meta description**, which
+is the text Google prints in the result. Preflight compared the number against
+the data and reported the drift as a NOTE, so three were already known wrong;
+what it could not see is that the other 21 were only wrong-in-waiting, since
+one night run adding one tree invalidates them. Japan was 11 trees stale and
+five places short and had escaped even the drift check, because its phrasing
+did not match the anchored patterns.
+
+So the number comes from the data now: the intros carry `{trees}`, `{cities}`
+and `{places}`, and /[country].astro fills them from the same two values its
+title has always used. Preflight refuses a literal count outright rather than
+waiting for it to drift, which is the difference between a check that finds
+this class and one that finds today's three instances of it.
+
+Two rounds of my own false positives on the way there, both fixed and both
+worth recording because they are the same failure this session spent its
+morning removing from englishcheck: the first regex read "95 mapped places" as
+no count at all, and the second read "Twenty-six cities" as six.
+
+qa 15,687 pages, smoke clean, preflight 0 problems, 617 cities. Merged and
+pushed to main.
+
+## 2026-09-18 (session) - health.py can now see a failure hiding under cancellations
+
+The translations are live; the dispatched build went through at 12:43 yesterday
+and the site has been deploying normally since. This is the loose end from it.
+
+**What was wrong.** `health.py` asked "did the newest finished run pass", and a
+CANCELLED run counts as finished while judging nothing. On this repository
+cancellations are the normal case rather than the exception: deploy.yml cancels
+a superseded push on purpose, and a night run commits its claims faster than a
+build takes, so a claim storm cancels a dozen runs in a row. Yesterday the
+deploy FAILED at 10:59 on a split species name and eleven cancelled runs piled
+on top of it. Anybody running health.py at 12:30 would have been told
+"cancelled, 0h ago" and nothing else, while the site had not deployed for two
+hours. The alarm was not ignored; it could not see.
+
+Two changes, because the two failure modes cannot see each other. A starved
+pipeline has no failing run to read, and a failing one may well have deployed
+an hour earlier.
+
+- `gh_latest()` skips cancelled runs and reports the newest run that actually
+  reached a verdict, over a window of twenty rather than five, because a claim
+  storm is longer than five runs.
+- `gh_last_success()` answers the other question: has anything SHIPPED. It
+  fires when the last successful deploy is more than four hours old AND there
+  have been pushes since, so a quiet night with nothing to deploy stays quiet.
+
+Tested against yesterday's own run history rather than in the abstract: the
+buried failure is now reported, six hours of pure starvation is reported, and
+neither a healthy afternoon full of cancellations nor a quiet night with no
+pushes says anything. gh is absent in a web session, so this was exercised with
+the real run list fed in directly.
+
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
@@ -60,6 +289,55 @@ follows the finger, closes on release, springs back from a nudge, transform
 cleared for the next open, and the nav opens in place at every width. qa
 15,687 pages, preflight 0 problems, parity, cross and smoke clean. Merged and
 pushed to main.
+## 2026-09-18 (session) - Swept every page type for the footer's fault and found none, and the English check stops crying wolf
+
+Hidde: "Alles live kunnen we archiveren nog meer van dit soort foutjes op de
+site gezien?"
+
+**Archived**, by the night run's own fixed archiver rather than by mine: a
+session ran the OLD one twenty minutes earlier, and the same hour another
+session found that it could eat an entry and rewrote it. Their version won the
+merge wholesale. Checked rather than assumed afterwards: all 207 entries that
+stood in LOG.md before either run are present now, in the living file or in
+archive/LOG-2026-09.md. 460 to 300 KB.
+
+**Swept, and the honest answer to "nog meer van dit soort foutjes" is no.** The
+BAND check built yesterday ran over 27 page TYPES rather than the eight in the
+gate, at 375 and 1280, together with the fit, drift and tap-target checks:
+homepage, explore, all six indexes, the seven standing pages, 404, the app
+landing, account, and a city, tree, question, country, species, collection and
+park page, plus a Spanish and a Japanese city page. Every one clean.
+
+One thing I reported yesterday was wrong and is corrected here rather than left
+standing. I said the tree page's thumb sat a couple of pixels below its own
+meta line. Measured: the place link's optical middle is 449.8, the dot's 448.8,
+the thumb's 450.4, a spread of 1.6px, and the eye was inventing it. The
+dangling middot beside it is the app's own row shape (2026-09-04), not a fault.
+
+**What was actually broken was a check.** `englishcheck.py` had been red for
+weeks on nine findings, every one a false positive:
+
+| Finding | What it really was |
+|---|---|
+| 3x "color" in phenology.ts | lookup KEYS mapping the American spelling onto our "autumn colour", so flagging them asked us to break the thing that fixes the problem |
+| "license" in sources.astro | "Open Database License", which is what the ODbL is called |
+| 2x "ends on a conjunction" | one sentence each on /privacy and /support, cut in half by the check itself at an inline `<strong>` and `<a>` |
+| "informations" | correct French, in the French block of the shared table |
+| 2x "opening with Also" | "Also included" and "Also here:", a heading and a pointer |
+
+A permanently red check is one nobody reads, which is exactly what ios.yml
+taught on 2026-08-25, so this is the same lesson twice and therefore a gate
+rather than a third note. Five narrow exemptions: a quoted string followed by a
+colon is a key, a fragment followed by an inline tag is not the end of a
+sentence, a line carrying BOTH spellings is a mapping table, a Title Case name
+is not ours to respell, and the seven non-English blocks are not English copy.
+
+Quieter, not weaker, and proved rather than assumed: with five faults planted
+in one paragraph it caught six spellings and all five shape rules, including
+the two that were exempted. It now runs in the pre-push hook on any change
+under site/src or ios, at 0.2 seconds.
+
+Merged and pushed to main.
 
 ## 2026-09-18 (session) - The weekly archive ran, and it nearly ate LOG.md
 
@@ -4498,6 +4776,99 @@ Result: **Pisa** (4 trees, all from the Orto Botanico di Pisa, founded 1544 and 
 Dispatched a write pass on the 8 Pisa+Pittsburgh trees only, skipping the 9 below-floor trees this time (week budget was tight, 4603/5000 minutes; writing trees that cannot ship yet was worth doing once for Busan/Sao Paulo above but not worth repeating at this volume). Fixed Italy's and United States' country page counts (39→40 cities/343→347 trees; 49→50/215→219) and ran `city_names.py` for both new cities. Build (5378 pages), preflight (0 problems, after two question_context word-count fixes and one count-promise wording fix in Pittsburgh's intro), qa.py (8390 pages, clean) and superlatives.py (360 claims, no collisions) all clean. Released both claims.
 
 Net for the whole window: 3 new cities (Hallstatt, Pisa, Pittsburgh), 12 trees shipped, 9 more banked verified-and-written or verified-only below floor across 4 cities (Busan, Sao Paulo, Monterey, Spokane, Boise, Indianapolis).
+## 2026-09-11 (session) - The photograph you take in the app now shows on the tree, and everything under the account was audited for it
+
+**Hidde, on his own account page: "waarom zie ik hier niet de foto die ik heb gemaakt in de app bij m'n eigen boom, alles moet cross device beschikbaar zijn wat onder je account hangt. Check of dit voor alles geldt."**
+
+**What was wrong, and it was not the sync.** The photograph had reached the
+account days earlier, file and all. Ticking off a tree WE map writes a sighting
+carrying that tree's id, and nothing ever showed those rows: the app filters
+them out of your list by design (`Sightings.yoursOnly` keeps `treeId == nil`)
+and `Sightings.forTree`, written for exactly this, had no caller anywhere; the
+website drew them as cards of their OWN, below our card for the same tree, which
+showed no photograph at all, and counted that tree twice in the numbers at the
+top. So the picture existed on the server and on no screen.
+
+**Fixed on both surfaces, to the references' rule** (Google Maps, iNaturalist,
+AllTrails, recorded in CONVENTIONS.md): the place keeps its own picture and
+yours is yours, labelled. Ours has 2,000-odd trees with no picture at all, which
+is not a state Google Maps is ever in, so **your photograph fills an empty slot,
+marked "Your photograph", and where we publish one, ours stays.**
+`TreeDetail.myShot` in the app, `my-trees-js.ts` on the website. One tree, one
+card, counted once. Rendered and LOOKED at, at 375px and desktop, against a
+stubbed account holding exactly his case.
+
+**Your own trees are on the profile map now too.** The app's Collect map has
+always drawn them beside the ticked ones; the website drew only ours.
+
+**The audit found two more, both in the same corner.** (1) **Votes never
+travelled in the app**: `MyVotes.load` keyed them on the submissions row's
+`tree` column, written as "id (name)", while every view reads `at_worthit_<id>`,
+so the restore at launch wrote a key nothing reads. The website, which matches
+on the id prefix, was right all along. (2) **A report was read back as a vote**:
+everything that was not "worth it" counted as a thumb down, including "report:
+wrong location", on a page whose thumb down was removed on 2026-09-04. Both
+fixed; reports now travel as reports. Everything else came back clean: saves,
+ticks, sightings, display name and avatar, blocks, units, follows.
+
+**And a check, because "everything" is the kind of promise that rots.**
+`scripts/crossdevice.py` refuses a store nobody has ruled on: every key the app
+writes to UserDefaults and the website to localStorage has to be named in
+`data/cross-device.json` as `account` (and which table carries it) or `device`
+(and why staying here is right). Same move as conventioncheck: it cannot judge
+the answer, only whether anybody asked. In the pre-push hook. 25 stores, 6
+account, 14 device.
+
+Build clean (5360 pages), qa clean (8357 pages), preflight 0 problems.
+
+**Later the same session, two mail fixes.** Hidde, on the thank-you he got for a
+tree he had added in the app, which closed by pointing him at the App Store:
+"onder deze mail hoeft geen verwijzing naar de app." Right, and it is the rule
+this file already followed for a published photograph: a link to the thing in
+your hand is not an invitation. A thank-you to somebody writing from inside the
+app now ends without it; everybody else still gets his standing 2026-09-03 line.
+
+**FOR HIDDE, parked on his own word ("kom later terug op a ik kan dit nu niet
+vanaf m'n tel doen"): sign-in, option A.** The website offers a magic link and
+the app cannot, because its typed route is hidden behind `Launch.emailSignIn`
+since 2026-08-30: Supabase's default mail sends a link rather than a code and
+the template needs custom SMTP. The objection that killed it then has expired,
+because this project already sends mail over SMTP (`OUTREACH_SMTP_*`, the Gmail
+app password) for reader replies, the weekly mail and the photo thank-yous. So
+it is a setting, not a new dependency.
+
+Three steps, all in his dashboard, ten minutes at a desk:
+
+1. Supabase, Auth, SMTP Settings: the same host, port, user, password and
+   sender that `OUTREACH_SMTP_*` already carries.
+2. Auth, Email Templates, Magic Link: put `{{ .Token }}` in it, so the mail
+   carries the six digits the app asks for. Template editing only unlocks once
+   step 1 is done.
+3. Tell me, and I flip `Launch.emailSignIn` and check both surfaces land on one
+   account.
+
+Worth a look while he is in there, because it may be worse than a missing app
+route: Auth, Users, the provider column. Supabase's built-in mail service
+delivers only to team addresses and is capped at a couple of messages an hour
+project-wide, so if all 12 accounts came in through Google, the site's own
+"Email me a sign-in link" has never reached a stranger. The full reasoning is
+CONVENTIONS.md, "One account, two surfaces, different sign-in buttons".
+
+**And the bug that fix uncovered: the "it is on the site now" mail has never been
+sent, not once, since 2026-09-03.** The auto-composed change confirmation
+carried no App Store link, mailcheck has required one on every letter since that
+morning, and the run prints HOLD and moves on, so a reader whose tip we acted on
+heard nothing. It carries the line now, and an app user's copy declares
+`audience: app user` in the draft header the way sightings_publish.py does, so
+the check passes without inviting somebody to an app they are holding. Both
+variants verified against mailcheck.
+
+**FOR HIDDE:** the app half is written but NOT built or swept: no Mac in this
+session, so Xcode never ran. The website half is verified. The app changes are
+small and mechanical (one new optional property on TreeDetail, one extra hero
+branch, two call sites, the MyVotes keying), and `ios.yml` will build and
+measure them on its next scheduled run. Worth a look on your own phone at a tree
+you have photographed: the picture should now be at the top of its page.
 
 ## 2026-09-11 - New city Tulsa (1 tree), 159 trees got a real best_time for free, 13 country pages' stale counts fixed, and a batched verify pass cleared 5 thin cities
 
