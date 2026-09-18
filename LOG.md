@@ -10,6 +10,57 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 (session) - The sign-in sheet is everywhere now, and it can be swiped away
+
+Hidde: "de slider op het inlog scherm suggereert dat je het weg kan sliden.
+dat moet kunnen. daarnaast moet hij zich vertonen over de pagina waar je bent
+zodat je terug kan naar waar je was."
+
+Both complaints had one cause. The sheet was included by hand in twelve files,
+so it existed on 58 percent of the site, and the nav therefore had to NAVIGATE
+to /account to sign anybody in. What he saw there was the MAP page's bottom
+sheet, whose handle drags between detents and can never dismiss.
+
+- SignInModal and SIGNIN_JS moved into Base.astro, out of the twelve places
+  that each had to remember them. That is the lesson already written at the
+  foot of that file about the units script.
+- Signed out, the nav's account links open the sheet where you stand. Signed
+  in they still go to /account, which is then a real page with your trees.
+- The sheet has a drag handle and drag-to-dismiss on phone widths. Convention
+  rather than invention: Material 3 settles a modal bottom sheet to a detent
+  or to hidden, and Apple's sheets take the same gesture.
+
+**And it nearly shipped completely dead.** A regex written into a TypeScript
+template literal lost a backslash on the way out, so the page carried
+replace(//+$/, ''). A browser refuses the WHOLE script tag on a parse error,
+so the entire sign-in script was gone on 11,836 pages: no atOpenSignIn, no
+save funnel, no magic-link catcher. Build, qa, preflight, parity, cross and
+smoke were all green, because a dropped script is silent and the page renders
+perfectly without it. It was found by trying the gesture in a browser.
+
+The eighth ratchet check answers it: scripts/inline_scripts.js compiles every
+inline script in the build with node's vm without running any of it, 158,073
+scripts on 15,687 pages in 24 seconds, so every page is checked rather than a
+sample. A first attempt spawned node per page, took seven minutes and still
+only sampled; thrown away. Proven to fire on the live fault before trusting
+it.
+
+Two more found by measuring rather than reading:
+
+- The handle was invisible on the only width that has one. The base rule sat
+  below the media query at equal specificity, so display:none won everywhere.
+  Third time a plain cascade order has cost a visible fault here. Old order
+  measures 0px, new order 38px.
+- The smoke test's sheet harness selected .signin-dialog by CLASS, which
+  AppModal wears too. Once the sheet moved to the end of body that returned
+  the app dialog, closed, so the check reported zero buttons. By id now.
+
+Measured at 375, 402 and 1200: handle shown on phones and absent on desktop,
+follows the finger, closes on release, springs back from a nudge, transform
+cleared for the next open, and the nav opens in place at every width. qa
+15,687 pages, preflight 0 problems, parity, cross and smoke clean. Merged and
+pushed to main.
+
 ## 2026-09-18 (session) - The weekly archive ran, and it nearly ate LOG.md
 
 Hidde: "kunnen we archiveren?" LOG.md was 432 KB and every run reads it. 70
