@@ -1,7 +1,7 @@
 # LOG
 
 <!-- archive-index -->
-## 2026-09-18 (session) - 27 spent branches archived, and what is genuinely left
+## 2026-09-18 (session) - 27 spent branches cleared out, and what is genuinely left
 
 Hidde, after the fourth merge: "5 hoeft niet is de rest gedaan kunnen we
 archiveren?"
@@ -25,9 +25,17 @@ Saying the rest is done would have been wrong:
   than at coverage, langcheck's ranking of proven language areas, and the
   digest's SEO learning table are not.
 
-**Archived**, every commit verified present in main or the work verified landed
-by another route, tips recorded here so nothing is unrecoverable
-(`git checkout <sha>` brings any of them back):
+**Cleared for deletion and NOT deleted**: this session's token can push a ref
+and not delete one, and `git push origin --delete` comes back 403 on every one
+of them, singly or together. So the verdict is recorded here and the refs are
+still on the remote. Deleting them is one command from a clone that has the
+rights, and nothing is lost either way, because every tip is written down:
+
+    git push origin --delete <branch>   # or tick them off in the GitHub UI
+
+Every commit below is present in main, or the work landed by another route and
+was checked by hand. The tips are recorded so nothing is unrecoverable even
+after deletion (`git checkout <sha>` brings any of them back):
 
 | branch | tip | why it can go |
 |---|---|---|
