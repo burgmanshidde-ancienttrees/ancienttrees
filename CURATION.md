@@ -18,6 +18,33 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 Pamplona is our best-placed page and our thinnest
+
+Search Console's newest ten days put /pamplona at average position 3.6 on 412
+impressions, the best placement any city page has, and it took 5 clicks
+(index 0.13, the worst on the site). The page explains why: 14 trees, ONE of
+which carries an age, not one photograph, and seven black poplars among them,
+two of which are "The Poplar of Villava (south)" and "(north)". That is a
+register dump wearing a city page's title, and the demand for it already
+exists, which is the rare and expensive half.
+
+Six of the poplars carry a girth (471, 393, 377, 314, 314, 314 cm) and no age.
+scripts/ages.py refuses all six because Populus nigra is outside its published
+rate table, so the ages are one sourced growth rate away from being free.
+
+The work, in order, whenever a window can take it:
+1. Fold the Villava twins, and check Erripagana and Zabaldika for the same
+   (the Setubal twin rule: a register counts two trunks, a visitor sees one).
+2. A sourced girth-increment rate for Populus nigra and Platanus x acerifolia
+   into scripts/ages.py, which unblocks 24 trees site-wide, six of them here.
+3. Photographs: 0 of 14, and the city clears both the five-tree floor and the
+   demand rule, so it belongs at the top of photo_gaps.py --shortlist.
+
+The meta description was rewritten today: it led with "Fourteen trees near
+Pamplona" and ended on "eight riverside poplars along the Arga", which sells
+the weakest thing on the page in the one line a searcher reads. It now leads
+with the palace sequoia and the oak Navarra calls millenary.
+
 ## 2026-09-18 (continuation 2) - Finished the standing `_famous-japan` write claim: 4 trees join existing cities, 3 new single-tree places, 4 more duplicates found and folded into leads
 
 An earlier attempt this window stopped after 11 minutes having shipped
