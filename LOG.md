@@ -2,6 +2,52 @@
 
 <!-- archive-index -->
 
+## 2026-09-18 (session 9) - A viewing pass on the queued photo backlog, and a lesson about checking what a tree already has
+
+Resumed an earlier attempt in the same window that had stopped early with
+budget unspent. First committed its finished, uncommitted work: photographs
+for Będomin's Wybicki Oak and Hel's Helena the poplar, both CC BY-SA 4.0 and
+already judged against the Cadiz standard.
+
+**Then a viewing pass on data/photo-queue.json's unjudged candidates, scoped
+to cities DATA.md already lists as clearing the demand bar (Milan, Barcelona,
+Prague, Singapore, Berlin, Rome, Seville, Palermo, Paris, Valencia, Los
+Angeles).** Milan's Villa Litta plane (mil_024) got its first photograph, and
+27 other candidates across those cities were rejected on inspection: leaf and
+bark close-ups, a bald cypress captioned as such next to the tree it was
+supposed to show, garden ornaments and a subway platform queued against
+Berlin's designated trees, wrong-tree mismatches (a Tembusu at Lawn E queued
+against Singapore's Burmese Banyan at Swan Lake, a Rubroshorea species
+mismatch), ivy-hidden trunks, hedge-blocked crowns with no trunk visible, and
+three portraits of people at a Prague tree-planting ceremony.
+
+**The mistake, caught before it shipped: several "unjudged" candidates
+belonged to trees that already had a perfectly good approved or held photo
+from an earlier pass, sitting at a different, lower index in the same
+candidate list.** Treating every unjudged entry as an empty gap led to
+approving six replacement photos (Seville's Judas tree, Valencia's First
+Ficus of the Glorieta, Barcelona's Judas tree of Placa Joanic and its Osage
+Orange, and LA's oldest palm) that were regressions against, or exact
+duplicates of, work already on file. Caught by diffing each touched city
+file against its pre-session state before pushing; all six reverted, and the
+queue corrected to reject the superseded candidates instead so they do not
+resurface. Net new photographs from this whole pass: Milan's Villa Litta
+plane only. The rest of the "approved" count in the commit history is
+bookkeeping, not new coverage.
+
+**A real bug found in the process:** `clean_author()` in scripts/photo_apply.py
+never stripped HTML tags, so a Flickr-sourced Commons import could ship a raw
+`<a href=...>` fragment as the on-page photo credit. Caught live on
+Barcelona's bcn_013 (Osage Orange) mid-pass, fixed in the script (strips tags
+and Flickr's trailing "from <city>"), and the one live instance corrected by
+hand. Worth checking other Flickr-sourced credits already on file if anyone
+has a spare pass; this session did not have time to sweep for more.
+
+Every candidate in data/photo-queue.json is now judged; the twelve trees with
+no usable candidate at all (Berlin's four, Singapore's three, Prague's,
+Milan's other two, Barcelona's other two) are marked exhausted so a future
+sweep does not re-judge the same dead ends.
+
 ## 2026-09-18 (session 8) - Benchmarked the sign in / sign out flow, which never had been, and fixed what it found
 
 Hidde asked whether the whole sign in / sign out flow had ever been
