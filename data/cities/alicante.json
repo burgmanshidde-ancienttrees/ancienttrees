@@ -639,7 +639,16 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 310
+      "girth_cm": 310,
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest: the whole grove is netted and the fruit comes down, and the tree turns from green to black as it goes",
+        "kind": "fruit"
+      }
     },
     {
       "id": "ali_020",

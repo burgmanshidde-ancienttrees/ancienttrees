@@ -1,0 +1,71 @@
+{
+  "city": "Ibigawa",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Ibigawa maps one tree: the Ibi Nido-zakura, a cherry that flowers twice without finishing the first bloom, single petals opening and then, as they wilt, a second doubled flush at the same flower centre. A National Natural Monument since 1923, the tree standing today is a root-successor: the original fell in an 1833 storm, its replacement died in 1934, and everything flowering now grew from the same surviving root system. The town built a park around it in 2012 and has since propagated 86 more cherries from cuttings. Published alone here because the tree itself is the destination.",
+  "meta_description": "The Ibi Nido-zakura, Ibigawa: a National Natural Monument cherry that flowers twice in one bloom, regrown from a stump after two earlier deaths.",
+  "question_meta": "Ibigawa's oldest and only mapped tree is the Ibi Nido-zakura, a twice-blooming cherry in its own dedicated park.",
+  "question_answer": "Ibigawa's only mapped tree, and its oldest, is the Ibi Nido-zakura, a rare two-stage-flowering cherry cultivar in Nidozakura Park, on the former grounds of Daizo-ji temple. Its age is not reliably documented for the present growth; a commonly cited local figure is roughly 140 years.",
+  "question_context": "The name comes from its bloom: single flowers open, and as their petals wilt, a second flush of doubled buds opens at the centre of the same flower. Japan designated it a National Natural Monument on 7 March 1923, expanded in February 2009 to cover three more shoots from the same root system, four trees in total. What grows here is a survivor twice over. The original, trunk about three metres round, grew at Daizo-ji temple until an 1833 storm brought it down. A second tree rose from the stump, reached 1.8 metres round, and died in 1934. Every stem now visible sprouted from the same root system afterward. No official register states an age for the present growth; a widely repeated but unofficial figure gives the trunk as 160 centimetres round, 8 metres tall, roughly 140 years old. The town of Ono, now part of Ibigawa, built Nidozakura Park around the four designated trees in 2012 and has since planted 86 further cherries from cuttings. The park is free, reached by bus from JR Ogaki Station via the Ono Bus Center to the Minamikata stop.",
+  "hero_tree_id": "ibg_001",
+  "oldest_tree_id": "ibg_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Ibigawa?",
+      "a": "The Ibi Nido-zakura, a rare two-stage-flowering cherry in Nidozakura Park. No official source gives an age for the present growth; a widely repeated but unofficial figure suggests roughly 140 years."
+    },
+    {
+      "q": "Why is it called the twice-blooming cherry?",
+      "a": "Single flowers open first, and as their petals begin to wilt, a second flush of doubled buds opens at the centre of the same flower, giving the impression of blooming twice."
+    },
+    {
+      "q": "Is this the original tree from 1923?",
+      "a": "No. The original, at Daizo-ji temple, fell in an 1833 storm. A tree that sprouted from its stump died in 1934. What stands now grew from the same surviving root system, so it is the same living organism as the 1923-designated tree, not a fresh planting."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. Nidozakura Park, built by the town in 2012 around the four designated trees, is open and free, reached by bus from JR Ogaki Station via the Ono Bus Center to the Minamikata stop."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ibg_001",
+      "name": "Ibi Nido-zakura (the Ibi Twice-Blooming Cherry)",
+      "species": "Cherry, a rare two-stage-flowering cultivar (Prunus sp., 'nido-zakura')",
+      "age_estimate": "not reliably documented; a commonly cited local figure is roughly 140 years for the current above-ground trunk",
+      "age_min": 90,
+      "age_max": 140,
+      "girth_cm": 160,
+      "location": {
+        "address": "184-1/184-2 Nidozakura, Minamikata, Ono-cho, Ibi-gun, Gifu Prefecture (Nidozakura Park, former Daizo-ji temple site)",
+        "latitude": 35.452778,
+        "longitude": 136.622222,
+        "neighbourhood": "Minamikata, Ono-cho, Ibi District, Gifu"
+      },
+      "verified_sources": [
+        "https://online.bunka.go.jp/heritages/detail/216489",
+        "https://www.town-ono.jp/0000000842.html",
+        "https://ja.wikipedia.org/wiki/%E6%8F%96%E6%96%90%E4%BA%8C%E5%BA%A6%E6%A1%9C"
+      ],
+      "access": "Free, public park (Nidozakura Park, completed March 2012) built specifically around the designated trees",
+      "transport": "Bus from JR Ogaki Station to Ono Bus Center, then the town-office-bound bus to the 'Minamikata' stop, short walk from there",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This cherry flowers twice without finishing the first flowering. Single blooms open, and as their petals begin to wilt a second flush of buds opens at the centre of the same flower, doubled this time. The habit gave the tree its name, nido-zakura, the twice-blooming cherry, and won it National Natural Monument status on 7 March 1923.\n\nWhat stands in the park today has survived two deaths. The original grew at Daizo-ji temple with a trunk about three metres round, and a storm brought it down in 1833. A second tree rose from that stump, reached about 1.8 metres round, and died in 1934. Everything flowering here now is shoots off the same root system, which outlived both trunks. In 2009 three of those shoots were added to the 1923 designation, so four trees carry it between them.\n\nNobody has published an age for the present growth. A figure repeated widely online gives the trunk as 160 centimetres round, eight metres tall and roughly 140 years old, but it appears in no official register, and we would rather say that than quote it as fact. If you know of a dated measurement, tell us.\n\nThe town of Ono built the park around the four designated trees in 2012 and has since planted 86 more cherries beside them, every one raised from cuttings off the originals. The rarity is being propagated rather than merely fenced.",
+      "how_to_recognise": "You can recognise it by the flowers, which open in two stages: single blooms first, then a doubled second flush from the centre of the same flower. It stands in Nidozakura Park with three designated sister trees around it.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "early April, when the first petals wilt and a second, doubled flush opens at the centre of the same flower"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

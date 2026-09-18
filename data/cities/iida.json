@@ -2,11 +2,11 @@
   "city": "Iida",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Iida maps one tree: a cherry over 450 years old that carries a twenty-metre crown on no supports at all, which both records of it single out as remarkable. About three metres up, the trunk splits into five limbs spread like a broom. Officially it is the Osahime Edo higan; everybody calls it the Yasutomi cherry, after the retainer family whose residence once stood on this ground. It flowers just after the spring equinox, is lit at night while it blooms, and stands free in the art museum's grounds.",
-  "meta_description": "The Yasutomi Cherry, Iida: over 450 years old, twenty metres tall on no props, flowering in late March in the art museum grounds.",
-  "question_meta": "Iida's oldest and only mapped tree is the Yasutomi Cherry, an Edo higan over 450 years old, free in the art museum grounds.",
-  "question_answer": "Iida's only mapped tree, and its oldest, is the Yasutomi Cherry, an Edo higan put at over 450 years old. It stands in the grounds of the Iida City Art Museum on Otemachi, free to walk up to, about sixteen minutes on foot from Iida Station.",
-  "question_context": "Iida City's cultural property record and the art museum's own pages agree on the figures: over 450 years, about 5.4 metres round at chest height, roughly twenty metres tall. Both single out the same thing about it, which is that it holds that height with no props or braces under it, unusual for a cherry of this age. The trunk divides about three metres up into five major limbs arranged like a broom, and the whole crown rides on them. Its formal name is Osahime no Edohigan. The common name comes from the ground it stands on, the former residence of the Yasutomi family, chief retainers to the Hori clan who held the Iida domain; the residence and the domain are gone and the city art museum occupies the site. Nagano Prefecture made the tree a prefectural natural monument on 22 May 1967. It opens slightly after the spring equinox, which in Iida usually means the last days of March into early April, and the city runs a public bloom tracker and lights the tree at night while it flowers.",
+  "intro": "Iida maps two cherries, both centuries old and both flowering within days of each other each spring. The Yasutomi Cherry, over 450 years old, carries a twenty metre crown on five broom-like limbs with no supports, in the art museum grounds. Two kilometres south on the old Enshu Kaido, the Weeping Cherry of Kega-kuyoto pours down a roadside embankment, its trunk 3.8 metres round beside two stone lanterns and a shrine marker. Neither tree has a documented planting date; both are kept going by neighbours rather than a museum staff.",
+  "meta_description": "Iida maps two ancient cherries: the unsupported Yasutomi Cherry and the cascading Weeping Cherry of Kega-kuyoto, both blooming in late March.",
+  "question_meta": "Iida's oldest tree is the Yasutomi Cherry, an Edo higan over 450 years old, free in the art museum grounds, with one more cherry nearby.",
+  "question_answer": "Iida's oldest mapped tree is the Yasutomi Cherry, an Edo higan put at over 450 years old. It stands in the grounds of the Iida City Art Museum on Otemachi, free to walk up to, about sixteen minutes on foot from Iida Station.",
+  "question_context": "Iida City's cultural property record and the art museum's own pages agree: over 450 years, about 5.4 metres round at chest height, roughly twenty metres tall, and unusual for its age in holding that height with no props or braces. The trunk divides about three metres up into five major limbs arranged like a broom, and the crown rides on them. Its formal name is Osahime no Edohigan; the common name comes from the ground it stands on, the former residence of the Yasutomi family, chief retainers to the Hori clan who held the Iida domain, now the site of the city art museum. Nagano Prefecture made it a prefectural natural monument on 22 May 1967. It opens slightly after the spring equinox, usually the last days of March into early April, and the city runs a bloom tracker and lights it at night while it flowers. About 2.85 kilometres south, on the old Enshu Kaido, a second and younger cherry, the Weeping Cherry of Kega-kuyoto, flowers in the same window.",
   "hero_tree_id": "iid_001",
   "oldest_tree_id": "iid_001",
   "faq": [
@@ -16,15 +16,19 @@
     },
     {
       "q": "When does it flower?",
-      "a": "Slightly after the spring equinox, which in Iida usually falls in the last days of March or the first days of April. The city publishes a bloom tracker through the season and lights the tree at night while it is out."
+      "a": "Slightly after the spring equinox, which in Iida usually falls in the last days of March or the first days of April. The city publishes a bloom tracker through the season and lights the tree at night while it is out. The Weeping Cherry of Kega-kuyoto, across town, opens in the same window."
     },
     {
       "q": "Why is it called the Yasutomi cherry?",
       "a": "Its official name is Osahime no Edohigan. The common name comes from the Yasutomi family, chief retainers to the Hori lords of Iida domain, whose residence once stood on this ground."
     },
     {
-      "q": "Is it free to visit?",
-      "a": "Yes. It stands in the open grounds of the Iida City Art Museum, three minutes' walk from the Prefectural Joint Government Building bus stop or sixteen minutes from Iida Station."
+      "q": "Is there a second old cherry in Iida?",
+      "a": "Yes, about 2.85 kilometres south on the old Enshu Kaido: the Weeping Cherry of Kega-kuyoto, roughly 350 years old, its branches cascading down a roadside embankment rather than out over the road."
+    },
+    {
+      "q": "Are Iida's cherries free to visit?",
+      "a": "Yes, both. The Yasutomi Cherry stands in the open grounds of the Iida City Art Museum, three minutes' walk from the Prefectural Joint Government Building bus stop or sixteen minutes from Iida Station. The Kega-kuyoto cherry stands by the roadside near Kega Station with no gate or fee."
     }
   ],
   "trees": [
@@ -64,6 +68,44 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "iid_002",
+      "name": "The Weeping Cherry of Kega-kuyoto",
+      "species": "Cherry (Prunus sp.)",
+      "age_estimate": "roughly 350 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 380,
+      "location": {
+        "address": "685 Kega, Iida, Nagano Prefecture, Japan, on the old Enshu Kaido road",
+        "latitude": 35.48764,
+        "longitude": 137.8395,
+        "neighbourhood": "Kega, Iida"
+      },
+      "verified_sources": [
+        "https://www.city.iida.lg.jp/site/bunkazai/kuyoto.html",
+        "https://bura-tabi.com/kegakuyotonoshidarezakura/"
+      ],
+      "access": "Free, standing beside the road (old Enshu Kaido) in Kega; no dedicated parking, night illumination during blossom season",
+      "transport": "10 minute walk from JR Kega Station (Iida Line), or 10 minutes by car from the Iida interchange",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The tree is named for something that is no longer there. Kuyoto means a memorial tower, and one is said to have stood on this spot on the old Enshu Kaido, the highway running south out of Iida. The tower went. The name stayed, and so did the place names on the slope beside it, which date from the Sengoku wars.\n\nWhat stands there now is a weeping cherry fifteen metres tall with a trunk 3.8 metres round, its branches falling down the roadside embankment rather than out across the road. Iida made it a municipal natural monument on 22 November 2000. The city and an independent Nagano travel writer both put it at roughly 350 years, and tradition holds that people living here planted it while the Wakisaka clan held Iida Castle, between 1617 and 1672. That is a story kept locally rather than a record in an archive. It fits the age without proving it.\n\nNeighbours still look after the tree, along with two stone lanterns and an Akiba Shrine marker, and they keep a lamp burning there. In blossom season it is lit at night.\n\nTwo things we do not know. Neither source gives a coordinate for the trunk, so our pin marks Kega Station, about ten minutes' walk away. And neither names the cultivar, only shidarezakura, weeping cherry. If you can settle either, tell us.",
+      "how_to_recognise": "You can recognise it by the branches, which pour down the roadside embankment instead of over the road, and by the two stone lanterns and Akiba Shrine marker beside it. It stands on the old Enshu Kaido, ten minutes from Kega Station.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "early April, when the whole cascade flowers and the tree is lit after dark"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

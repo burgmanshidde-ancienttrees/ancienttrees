@@ -3,63 +3,94 @@
     {
       "name": "Gyokurin-ji no Shii (Castanopsis at Gyokurin-ji Temple)",
       "species": "Japanese Chinquapin (Castanopsis sieboldii)",
-      "location": { "latitude": 35.71997, "longitude": 139.767098, "address": "Gyokurin-ji, 1-7-15 Yanaka, Taito-ku, Tokyo" },
+      "location": {
+        "latitude": 35.71997,
+        "longitude": 139.767098,
+        "address": "Gyokurin-ji, 1-7-15 Yanaka, Taito-ku, Tokyo"
+      },
       "source": "data/registers/tokyo.json (Tokyo Metropolitan Natural Monument, designated 1965-03-31)",
       "reason": "Not researched this pass (four-candidate limit reached). Sits about 190m from our live tok_012 (Himalayan Cedar of Yanaka) and roughly 600m from tok_003 (Ueno Toshogu Camphor) -- a different tree from both, not a duplicate, but worth checking Yanaka's temple cluster together in one future pass since three of our candidates now sit within a few hundred metres of each other there."
     },
     {
       "name": "Enmei-in no Shii (Castanopsis at Enmei-in Temple)",
       "species": "Japanese Chinquapin (Castanopsis sieboldii)",
-      "location": { "latitude": 35.72818, "longitude": 139.767723, "address": "Enmei-in, 3-10-1 Nishi-Nippori, Arakawa-ku, Tokyo" },
+      "location": {
+        "latitude": 35.72818,
+        "longitude": 139.767723,
+        "address": "Enmei-in, 3-10-1 Nishi-Nippori, Arakawa-ku, Tokyo"
+      },
       "source": "data/registers/tokyo.json (Tokyo Metropolitan Natural Monument, designated 1930-05)",
       "reason": "Not researched this pass (four-candidate limit reached). About 725m from Gyokurin-ji no Shii above -- same Yanaka/Nishi-Nippori temple district, candidate for the same future cluster pass."
     },
     {
       "name": "Kuhonbutsu no Kaya (Torreya nucifera)",
       "species": "Japanese Nutmeg-yew (Torreya nucifera)",
-      "location": { "latitude": 35.608276, "longitude": 139.661386, "address": "Kuhonbutsu (Joshin-ji), 7-41-3 Okusawa, Setagaya-ku, Tokyo" },
+      "location": {
+        "latitude": 35.608276,
+        "longitude": 139.661386,
+        "address": "Kuhonbutsu (Joshin-ji), 7-41-3 Okusawa, Setagaya-ku, Tokyo"
+      },
       "source": "data/registers/tokyo.json (Tokyo Metropolitan Natural Monument, designated 1952-11-03)",
       "reason": "Not researched this pass. Kuhonbutsu is a well-known temple (Joshinji) with three Amida halls; worth a dedicated look since two designated trees (this Kaya and the Icho below) sit at the same address and may fold into one entry or ship as two distinct specimens -- needs eyes on which."
     },
     {
       "name": "Kuhonbutsu no Icho (Ginkgo)",
       "species": "Ginkgo (Ginkgo biloba)",
-      "location": { "latitude": 35.608276, "longitude": 139.661386, "address": "Kuhonbutsu (Joshin-ji), 7-41-3 Okusawa, Setagaya-ku, Tokyo" },
+      "location": {
+        "latitude": 35.608276,
+        "longitude": 139.661386,
+        "address": "Kuhonbutsu (Joshin-ji), 7-41-3 Okusawa, Setagaya-ku, Tokyo"
+      },
       "source": "data/registers/tokyo.json (Tokyo Metropolitan Natural Monument, designated 1963-03-19)",
       "reason": "Not researched this pass. Same coordinate as Kuhonbutsu no Kaya above (register gives both the identical lat/lon, which is a site-level coordinate rather than two separately pinned trunks) -- check on the ground/via imagery whether these read as one visitable specimen pair or should fold into a single entry, per the register-twins rule."
     },
     {
       "name": "Ogyo no Matsu",
       "species": "Japanese Black Pine (Pinus thunbergii), unconfirmed",
-      "location": { "latitude": 35.72544, "longitude": 139.78206 },
+      "location": {
+        "latitude": 35.72544,
+        "longitude": 139.78206
+      },
       "source": "Wikidata Q11489319 (CC0, has image)",
       "reason": "Not researched this pass. Has a Wikidata image; needs a second independent source and an age/girth check before it can be verified."
     },
     {
       "name": "Hongo-yumimachi no Kusu",
       "species": "Camphor Tree (Cinnamomum camphora), unconfirmed",
-      "location": { "latitude": 35.70656, "longitude": 139.75728 },
+      "location": {
+        "latitude": 35.70656,
+        "longitude": 139.75728
+      },
       "source": "Wikidata Q11520877 (CC0, has image)",
       "reason": "Not researched this pass. Has a Wikidata image; needs a second independent source and an age/girth check before it can be verified."
     },
     {
       "name": "Otori-jinja oak (Quercus acuta var. megaphylla)",
       "species": "Japanese Evergreen Oak (Quercus acuta), unconfirmed variety",
-      "location": { "latitude": 35.63214, "longitude": 139.70814 },
+      "location": {
+        "latitude": 35.63214,
+        "longitude": 139.70814
+      },
       "source": "Wikidata Q24876991 (no image)",
       "reason": "Not researched this pass. No image on record; needs full verification from scratch."
     },
     {
       "name": "Wikidata Q30930366 (unlabeled)",
       "species": "unknown, has image",
-      "location": { "latitude": 35.59672, "longitude": 139.71072 },
+      "location": {
+        "latitude": 35.59672,
+        "longitude": 139.71072
+      },
       "source": "Wikidata Q30930366 (has image, no readable label)",
       "reason": "Not researched this pass. Needs the label/description resolved and identity confirmed before anything else can be done with it."
     },
     {
       "name": "Castanopsis sieboldii of Meiji Park",
       "species": "Japanese Chinquapin (Castanopsis sieboldii)",
-      "location": { "latitude": 35.67878, "longitude": 139.71764 },
+      "location": {
+        "latitude": 35.67878,
+        "longitude": 139.71764
+      },
       "source": "Wikidata Q21019707 (no image)",
       "reason": "Not researched this pass. Sits about 530m from our live tok_009 (Meiji Jingu Gaien Ginkgo Avenue), same general Meiji Jingu/Meiji Park district -- worth checking together with that area in a future pass. No image and no second source found yet."
     }
@@ -67,13 +98,21 @@
   "blocked": [
     {
       "name": "Kishimojin Daimon Keyaki Namiki (Avenue of Japanese Zelkovas)",
-      "location": { "latitude": 35.721176, "longitude": 139.714283, "address": "Kishimojin Daimon approach, Zoshigaya 3-16/19, Toshima-ku, Tokyo" },
+      "location": {
+        "latitude": 35.721176,
+        "longitude": 139.714283,
+        "address": "Kishimojin Daimon approach, Zoshigaya 3-16/19, Toshima-ku, Tokyo"
+      },
       "source": "data/registers/tokyo.json (Tokyo Metropolitan Natural Monument, designated 1940-04-18)",
       "reason": "Not a single collectible point. It is a roughly 200m processional avenue that held 18 large zelkovas in 1937; several of the old trees have since died and been replaced with young saplings by a preservation society, so there is no longer one obvious specimen or even a uniformly aged row to stand at. This project's own Zoshigaya Kishimojin Ginkgo (verified this pass as tok_021, roughly 60m away at the same temple) is the genuinely worth-the-visit single tree at this site, and it ships instead. The avenue itself is left blocked rather than shipped as an ensemble, unlike Meiji Jingu Gaien (tok_009): that avenue is famous specifically as a uniform, photographed whole; this one is a patchwork of old and new after losses."
     },
     {
       "name": "Sakura shogakko no Oakagashi (Big Quercus Acuta at Sakura Elementary School)",
-      "location": { "latitude": 35.643036, "longitude": 139.645231, "address": "Sakura Elementary School, 2-4-15 Setagaya, Setagaya-ku, Tokyo" },
+      "location": {
+        "latitude": 35.643036,
+        "longitude": 139.645231,
+        "address": "Sakura Elementary School, 2-4-15 Setagaya, Setagaya-ku, Tokyo"
+      },
       "source": "data/registers/tokyo.json (Tokyo Metropolitan Natural Monument, designated 1972-04-19)",
       "reason": "Sits on a working elementary school's grounds. No evidence found in a brief search that the schoolyard is genuinely open to the public (no public path through it, no stated weekend opening). Per hard rule 10's school exception, this stays blocked absent that evidence rather than sending adult strangers onto school property during unknown hours. A future pass could check the school's own site or call to ask, or look for OSM access tags on the grounds."
     }
@@ -81,18 +120,35 @@
   "duplicates_confirmed_already_live": [
     {
       "register_name": "ShibaToshogu no Icho (Ginkgo Tree at Shiba Tosho-gu Shrine)",
-      "register_coords": [35.655104, 139.748602],
+      "register_coords": [
+        35.655104,
+        139.748602
+      ],
       "matches": "tok_005 (The Shiba Toshogu Ginkgo), same coordinate within 3 metres"
     },
     {
       "register_name": "善福寺のイチョウ (Zenpuku-ji Ginkgo)",
-      "register_coords": [35.65325, 139.73325],
+      "register_coords": [
+        35.65325,
+        139.73325
+      ],
       "matches": "tok_001 (The Zenpukuji Ginkgo), same National Natural Monument designation date (1926-10-20) and same coordinate within 50 metres"
     },
     {
       "register_name": "Kyu Hosokawa-tei no Shii (Castanopsis at the Former Residence of HOSOKAWA Family)",
-      "register_coords": [35.641949, 139.734104],
+      "register_coords": [
+        35.641949,
+        139.734104
+      ],
       "matches": "tok_011 (Kyu-Hosokawa-tei no Shii), same coordinate within 55 metres, same name"
+    },
+    {
+      "register_name": "The Camphor Tree of Hongo Yumicho",
+      "register_coords": [
+        35.706556,
+        139.757278
+      ],
+      "matches": "tok_022 (The Camphor Tree of Hongo Yumicho), same coordinate (0m away), confirmed duplicate found in famous-trees research pass 2026-09-18"
     }
   ]
 }

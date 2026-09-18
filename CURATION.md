@@ -18,6 +18,191 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 (continuation 2) - Finished the standing `_famous-japan` write claim: 4 trees join existing cities, 3 new single-tree places, 4 more duplicates found and folded into leads
+
+An earlier attempt this window stopped after 11 minutes having shipped
+nothing, with a `_famous-japan` verify claim already standing from a prior
+run. Picked that claim up rather than starting fresh research: 4 verified
+batch files (`_famous-japan-batch-{a,b,c,d}-verified.json`, 17 candidates
+total) were sitting on disk with no story pass ever dispatched.
+
+**Before dispatching a write pass, a distance sweep against the full
+published set (not just each candidate's likely container city) found 7
+more duplicates than the original verify pass caught**, all on approximate
+pins 12m to 22.7km from a match, which is why they slipped past a
+50m-only check: The Great Ginkgo of Jonichiji = `him_002` (Himi), The Great
+Camphor of Kozaki = `kzk_001` (Kozaki), The Great Zelkova Pair of Negoya
+Shrine = `hok_004` (Hokuto), Nento-Hiramatsu = `ihy_001` (Iheya),
+Sentsuzan no Ichii = `ntt_001` (Nichinan, Tottori), The Umbrella Cedar of
+Horaiji = `hrj_001` "Kasa sugi" (Horaiji, same Japanese word for umbrella
+cedar), Nezu no ki of Horaiji = `hrj_002` (same name, same city), and The
+Great Cherry Tree of Isshingyo = `msa_001` Isshingyo-no-Ozakura (Minamiaso,
+same story down to the 2004 typhoon damage and the spring 2026 closure).
+All 8 folded into `data/leads/_famous-japan.json` as duplicates. 2 more
+real, sourced trees (Mineyama Jinya Enoki, Sawatari no Kaya no Ki) were
+held as leads rather than published alone: both carry only local/town-level
+recognition with no festival, pilgrimage or record-holder claim, so neither
+clearly clears the single-tree-destination bar.
+
+That left 7 genuinely new trees for a write pass (dispatched to
+write-stories, ~46k tokens, 0 wasted): **Daio-sugi** joined Yakushima as
+`yak_002` (the island's second-largest yakusugi, on the Jomon Sugi trail),
+**The Camphor Tree of Hongo Yumicho** joined Tokyo as `tok_022` (Bunkyo
+Ward's largest tree, on an ordinary street), **The Weeping Cherry of
+Kega-kuyoto** joined Iida as `iid_002` (2.85km from the existing Yasutomi
+Cherry), and **Shidare Katsura of Ryugen-ji** joined Morioka as `mor_002`
+(12km out, a National Natural Monument regrown from an 1824 stump). Three
+became new single-tree places under the 2026-08-31 exception: **Gifu**
+(`gif_001`, Chujohime Seigan Zakura, the only known specimen of a rare
+double-flowered cherry cultivar, seeds once flown to the ISS), **Ibigawa**
+(`ibg_001`, Ibi Nido-zakura, a two-stage-flowering cherry regrown twice
+after an 1833 storm and a 1934 death), and **Chikubushima** (`chk_001`,
+The Mochi Tree of Hogon-ji, planted 1602 beside a National Treasure gate
+moved from Hideyoshi's Osaka Castle, reached only by scheduled ferry).
+
+Updated the 4 grown cities' intro/meta/FAQ/question fields to stop
+promising one tree where there are now two (Iida, Morioka) and fixed 2
+species-name drift issues preflight caught (a verify pass's "Japanese Cedar
+/ Yakusugi" and "Weeping Cherry" needed folding into this site's one
+canonical name per species, "Japanese Cedar" and "Cherry"). Two new ja
+overlays (tokyo, yakushima) needed the new trees translated to keep the
+build green; dispatched to a translate pass.
+
+Logged the write-stories cost to `data/agent-costs.json`. Ran
+`scripts/city_names.py` for the 3 new places, `scripts/city_queue.py` to
+regenerate `data/city-list.json`, and `scripts/preflight.py` /
+`scripts/superlatives.py` clean beyond the translation gap.
+## 2026-09-18 - Slovakia's 9 cold famous-tree leads verified; 3 held famouspoland trees given a container decision
+
+Claimed and verified `_famous-slovakia`'s 9 leads that had never been looked
+at (the rest of that file's 63 leads already carried a `note_verify` from an
+earlier pass). 3 verified: **kos_001, The White Poplar of the City Park**
+(Kosice, register-protected 1991, girth conflicts between sk.wikipedia and a
+2021 teraz.sk piece on a wood-decay fungus found on the trunk, still alive
+and monitored), **sly_001, The Lime of Saľa** (register + sk.wikipedia agree
+it exists, no age or girth in any fetched source, access uncertain: the
+register locality reads "courtyard of a former nursery/creche"), and
+**rdv_001, The Lindens of Radava** (a 9-tree ensemble in a village cemetery,
+one collectible point, but only one genuinely fetched source and the
+reported figures unconfirmed). None clears the four-tree floor or the
+single-famous-tree destination test alone, so all three landed as leads
+(`data/leads/kosice.json`, `sala.json`, `radava.json`) rather than pages.
+Fixed an id collision in the delivery file: the agent's `sal_001`/`rad_001`
+already belonged to live Santalfio/Radomsko trees; reassigned to
+`sly_001`/`rdv_001` before anything touched data/cities.
+
+2 of the 9 turned out already published (Stary Smokovec's beech as
+`sms_001`, Senica's mulberry as `sen_001`) and 4 rejected: Oksovske duby's
+protected status was discontinued in 2020, Biela samota is a 24-tree avenue
+(not one collectible point), and Dolny Kubin's two civic-planting limes
+(34 and 17 years old) don't clear the genuinely-old/spectacular/significant
+bar. All recorded in `_famous-slovakia.json`.
+
+Separately, weighed the 3 famouspoland-batch4 trees a 2026-09-17 pass had
+fully written but left "for a session to weigh": the Madej and Pietrek
+Oaks (Lubiechow Dolny, two village oaks 100m apart, local nicknames only)
+and the Jeremi Oak (Bydgoszcz, a real civic tree-of-the-year win with
+932 votes and a Napoleon legend, but unconfirmed and not a national
+superlative). None clears the destination test alone and none reaches four
+trees, so all three are held as leads (`data/leads/lubiechow-dolny.json`,
+`bydgoszcz.json`, the latter seeding a future Bydgoszcz page) with their
+full prose preserved rather than discarded. Same judgement as the
+Fontenay/Mielnik precedent (2026-09-05/17).
+
+Also dispatched a verify pass on `higashi-hiroshima` (32 register leads
+split out of Hiroshima prefecture's giant-tree database on 2026-09-07,
+never mined): 17 verified across shrine/temple clusters (Fukujo-ji,
+Uneyama Shrine, Hongu Hachiman Shrine, Fukutomi-cho, plus two standalone
+finds), now in a write pass alongside the 3 Slovakia trees. To be continued
+once stories land and a city page is assembled.
+
+Ran `famous_demand.py --resolve` and `fame.py --apply` (free, deterministic)
+and `photo_hunt.py --recheck` (free API sweep, new candidates for several
+Alkmaar trees among others). Build (11895 pages), preflight and qa clean
+throughout.
+
+## 2026-09-18 (continuation 1) - Higashi-Hiroshima published (17 trees), a photo shortlist judged, city_names.py's search fallback fixed
+
+Continuing from the entry above: the `higashi-hiroshima` verify pass came
+back with 17 of 32 leads confirmed (facility clusters at Fukujo-ji,
+Uneyama Shrine, Hongu Hachiman Shrine, a Fukutomi pair, plus the standalone
+Renko-ji ginkgo and Renkyo-ji hiba). A write pass turned those 17 plus the
+3 Slovak trees from the previous entry into 20 stories in one context.
+
+**Published as a new city, `data/cities/higashi-hiroshima.json`, 17 trees.**
+Hero and oldest: the Great Ginkgo of Renko-ji, roughly 400 years, 5.2 to 5.3
+metres round, two minutes from Akitsu Station on the JR Kure Line, the only
+one of the seventeen reachable without a car. The intro and question page
+say plainly that this is not one walk: a temple trio above Saijo (Fukujo-ji,
+three registered giants sharing one precinct), a nine-tree afternoon around
+Toyosaka (Renkyo-ji, Uneyama Shrine's five-tree grove, Hongu Hachiman's
+three), a Fukutomi pair of shrines 3.5km apart, and the standalone coastal
+ginkgo 25km further south. Uneyama's five trees and Hongu Hachiman's three
+sit on oaza-level (sub-district) pins rather than site-level, honestly
+marked approximate: no coordinate exists anywhere in the source, the
+register's own coordinate_trap note already flagged this. Preflight caught
+three real issues before they shipped: two hard rule 9 species-name
+collisions (this batch's plain "Hinoki Cypress" and "Hiba" against Boston's
+stray "Hinoki Cypress bonsai" and Kanagi's "Hiba", fixed by normalising
+Boston's mistaken qualifier and dropping my own "/ Asunaro" addition) and a
+meta_description that miscounted the tree total by two.
+
+**A demand-ranked photo shortlist (`photo_gaps.py --shortlist`) judged: 40
+candidates across Milan, Barcelona, Tenerife, Singapore, Berlin and Arnhem,
+2 approved, 38 rejected.** Both approvals are Tenerife (`tfe_003` Pino de
+las Dos Pernadas, `tfe_004` El Gran Ficus). The reject pile is worth a
+general note: 13 were filename false positives with no tree as the subject
+at all (Arnhem's `arn_018` candidates are photographs of an oyster-mushroom
+infestation on a chestnut due to be felled; three Barcelona candidates are
+the Palau Castanyer building, matched on "Castanyer" being a surname rather
+than the Catalan word for chestnut; Milan's `mil_008` is the cathedral
+spire, matched on "Madonnina" street name), and a further several were the
+WRONG SPECIES at the right address (three Berlin candidates for a Swiss
+stone pine were actually the garden's separate Thuja plicata Naturdenkmal,
+two Singapore candidates for one dipterocarp were a different one).
+
+**Found and fixed a real bug in `scripts/city_names.py` while chasing why
+Higashi-Hiroshima's language aliases came out wrong.** The resolver's
+direct-title lookup 404's on "Higashi-Hiroshima" (English Wikipedia's own
+title drops the hyphen, "Higashihiroshima"), so it fell to the fuzzy
+search fallback, which has NO title-similarity check at all, only a
+distance check, and it accepted the nearest article within 40km: plain
+"Hiroshima", 25km away and a different, far more famous city, writing
+Hiroshima's own language aliases into Higashi-Hiroshima's entry. Fixed by
+trying a dehyphenated, correctly-cased title as a direct candidate before
+the fallback is ever reached (`city[0] + city[1:].replace("-", "").lower()`),
+which only adds a new resolution path and cannot change any city that
+already resolves correctly through the existing ones. Verified both ways:
+resolves to "Higashihiroshima" now, and reverting the fix reproduces the
+"Hiroshima" mismatch exactly.
+
+**That fallback bug is not limited to this one city, and the rest is left
+for a dedicated pass rather than patched blind.** A quick audit of all 573
+already-resolved `wikipedia_titles` for slug/title overlap found at least
+two more confirmed wrong matches from the same loose fallback:
+`minamialps` -> "Akaishi Mountains" (a mountain range, not the city; the
+real article is "Minami-Alps, Yamanashi", disambiguated by prefecture
+rather than country, a different fix than the hyphen one) and `velp` ->
+"Arnhem Centraal railway station" (Velp's own Wikipedia title is a
+disambiguation page, since two Dutch villages share the name, so it fell
+through to search and landed on a railway station instead of either
+village). Checked and cleared as legitimate on the same pass: `kotel` ->
+"Osecna" is a genuine village-to-parent-municipality match (our Kotel has
+no article of its own; Osecna is its containing municipality), which is
+the same acceptable pattern as `bracon` -> "Arbois" or `collm` ->
+"Wermsdorf" elsewhere in the file. The distinction between a legitimate
+parent-municipality fallback and a wrong unrelated match needs per-case
+judgement, which is why this is recorded rather than mass-corrected.
+
+Also folded the 3 Slovak trees' finished stories back into their lead
+files (`kosice.json`, `sala.json`, `radava.json`) alongside the shorter
+`why` summaries already there, so the prose is not lost if a container
+opens later. `data/agent-costs.json` carries both the write pass (20
+trees, 158,686 tokens) and the photo pass (40 judged, 195,572 tokens).
+
+Build, preflight and qa clean throughout; released the `higashi-hiroshima`
+claim.
+
 ## 2026-09-17 (continuation 15) - Alkmaar's photo hunt is an exhausted, documented gap
 
 `photo_hunt.py --recheck` restocked candidates for Alkmaar (14 trees, zero

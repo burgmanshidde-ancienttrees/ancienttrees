@@ -20,10 +20,8 @@ import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 import { BASE_URL } from "../lib/schema";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { ui, translatedCities, cityTranslation, hreflangSet, translatedLanguages } from "../lib/i18n";
-import SignInModal from "./SignInModal.astro";
 import LanguagePicker from "./LanguagePicker.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
-import { SIGNIN_JS } from "../lib/signin-js";
 // My trees filters on the account's visited list, which this page did not
 // read until the chip row existed (2026-09-12).
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
@@ -274,6 +272,5 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
       <div id="map" class="map"></div>
     </div>
   </div>
-  <SignInModal />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS + scripts + SHEET_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + scripts + SHEET_JS} />
 </Base>

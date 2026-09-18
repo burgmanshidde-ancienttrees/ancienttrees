@@ -44,6 +44,14 @@ const { lang = "en" } = Astro.props as Props;
 const T = signInCopy(lang);
 ---
 <dialog id="signin-dialog" class="collect-dialog signin-dialog">
+  {/* The drag handle, and it has to MEAN something: Material 3 gives a modal
+      bottom sheet a handle and lets it settle to a detent or to hidden, so a
+      downward swipe is a dismissal, and Apple's sheets take the same gesture.
+      Ours drew the handle on /account and honoured nothing, which Hidde caught
+      on 2026-09-18: "de slider op het inlog scherm suggereert dat je het weg
+      kan sliden. dat moet kunnen." Phone only, because above 600px this is a
+      centred dialog and nothing about it invites a drag. */}
+  <div class="signin-grab" id="signin-grab" aria-hidden="true"></div>
   <button type="button" class="signin-close" id="signin-close" aria-label={T.close}>&#10005;</button>
   <div id="signin-ask">
     <SignInPanel lang={lang} prefix="signin" />

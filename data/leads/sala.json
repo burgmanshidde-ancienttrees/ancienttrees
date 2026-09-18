@@ -1,0 +1,38 @@
+{
+  "city": "Šaľa",
+  "country": "Slovakia",
+  "city_slug": "sala",
+  "note": "Sala has no published city page and this single tree is not close to shippable: no confirmed age or girth, and access is uncertain. Verified 2026-09-18 from a famous-slovakia verify pass. Full verified record in data/research/famous-slovakia-batch1-verified.json.",
+  "leads": [
+    {
+      "name": "The Lime of Šaľa (Šalianska lipa)",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "lat": 48.1566,
+      "lng": 17.8701,
+      "status": "lead",
+      "why": "Register-protected (data/registers/slovakia-chranene-stromy.json register_id 163) for its 'mighty growth and health', and independently listed by sk.wikipedia's national protected-trees list (entry S163), which is the second source for existence and species. No age or girth in either fetched source: a WebSearch AI summary claimed girth 521cm, height 30m and 150+ years, but per this project's rule a search summary is a lead and not a source, so those figures are NOT recorded as fact. ACCESS UNRESOLVED: the register locality reads 'courtyard of a former nursery/creche (jasle)' on the Sidlisko Vah housing estate, which is often fenced and not freely walk-in; not confirmed either way. Needs both a fetched source for age/girth and an access check before this could ever ship.",
+      "id": "sly_001",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Courtyard of a former nursery/creche (jasle), Sídlisko Váh housing estate, Šaľa",
+        "latitude": 48.1566,
+        "longitude": 17.8701,
+        "neighbourhood": "Sídlisko Váh, Šaľa"
+      },
+      "verified_sources": [
+        "data/registers/slovakia-chranene-stromy.json (register_id 163, name_sk 'Šalianska lipa')",
+        "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku (entry S 163, confirms Tilia cordata Mill., district Saľa, cadastral Saľa)"
+      ],
+      "access": "UNCERTAIN, flag for the writer: the register locality text reads 'vo dvore jaslí na sídlisku váh v Šali' (in the courtyard of a nursery/creche on the Váh housing estate). A creche/nursery courtyard is often fenced and not freely walk-in accessible the way a park or churchyard is. Could not confirm from OSM or a source whether the tree is visible/reachable from the public street. Needs a access check (OSM access tags, streetview, or a local source) before shipping; do not mark 'Free' without that check.",
+      "transport": "Sídlisko Váh housing estate, Šaľa town; served by local town buses. No exact walking time confirmed.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Slovakia's register of protected trees files this lime under an address that is not where protected trees usually end up: the courtyard of a former creche, in the middle of the Váh housing estate in Šaľa. The state's reason for protecting it is set out in the register in plain words. It stands out for its mighty growth and its health, and it is valued for the local microclimate, for its seed and for how it looks. What the register does not carry is a number. No girth, no height, no age, which is true of most entries on that list. Figures for this tree circulate online and none of them traces back to a page solid enough to print, so this page stays empty rather than confident. Slovak Wikipedia's national list of protected trees carries the same entry, S 163, and confirms the species as Tilia cordata. Small-leaved lime is the tree of central European squares and courtyards, planted for shade and for the flowers, which open in the second half of June and make the whole crown audible with bees for a fortnight. One thing to know before you go: a creche courtyard is not a park. It may be fenced, and no source settles whether you can walk in or only look from the pavement. Anyone in Šaľa could settle it in one message.",
+      "how_to_recognise": "You can recognise it by the leaves, small hearts with rusty tufts in the vein angles beneath. It stands in the courtyard of the former creche on the Váh estate, protected for its size, so look for the biggest crown there."
+    }
+  ],
+  "blocked": []
+}

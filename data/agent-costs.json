@@ -8219,6 +8219,143 @@
         "wasted": 0,
         "brief_wrong": false
       }
+    ],
+    "2026-09-18": [
+      {
+        "target": "iOS build fix (ContentView.swift myPhoto argument)",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "rung 2: ios.yml red since 00:32 UTC on a compile error (extra argument), fixed and pushed",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Ryukyu Pine species page",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "pagegaps.py's one species gap, 3 trees behind it, intro written from their own stories",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-france refill, batch Forest (Senonches/Réno-Valdieu)",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 0,
+        "note": "4 candidates, all verified as facts but held: two forest clusters of 2 trees each, below the 4-tree floor",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-france refill, batch A",
+        "kind": "verify",
+        "tokens": 61000,
+        "trees": 1,
+        "note": "4 candidates: Platane de Branféré verified, 1 blocked (not a living tree), 2 leads",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-france refill, batch B",
+        "kind": "verify",
+        "tokens": 65000,
+        "trees": 0,
+        "note": "4 candidates: 2 blocked (dead/access), 2 leads, zero verified",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-france refill, batch C",
+        "kind": "verify",
+        "tokens": 175000,
+        "trees": 2,
+        "note": "3 candidates: Ramolleux and Tronjoly verified, Chêne des Partisans blocked (fell 1926)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-france refill, batch D",
+        "kind": "verify",
+        "tokens": 44000,
+        "trees": 2,
+        "note": "2 candidates, both verified: Turenne Lime (in Fontaine, corrected from the lead's wrong village) and Sully Lime of Innimond",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "5 French single-tree destinations (write pass)",
+        "kind": "write",
+        "tokens": 42000,
+        "trees": 5,
+        "note": "stories + recognition lines for trj_001/fte_001/inm_001/crc_001/brf_001",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "5 new French places (session: containers, question fields, merge, build, QA)",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 5,
+        "note": "bulat-pestivien, fontaine-belfort, innimond, crecy-en-ponthieu, le-guerno published as single-tree places; destination-test judgement made in session against the Fontenay/Jeremi Oak precedent",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-slovakia batch1 (9 cold leads)",
+        "kind": "verify",
+        "tokens": 201082,
+        "trees": 3,
+        "note": "kos_001 (Kosice, no city yet), sal_001 (Sala, access unresolved), rad_001 (Radava, 9-tree ensemble, one source) all delivered as leads, no container; 2 turned out already published (Stary Smokovec, Senica); 4 rejected (discontinued reserve, an avenue, two thin civic plantings in Dolny Kubin)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "higashihiroshima + famous-slovakia-batch1",
+        "kind": "write",
+        "tokens": 158686,
+        "trees": 20,
+        "note": "20 stories and recognition lines in one context (17 Higashi-Hiroshima + 3 Slovakia); 4 best_time set; honest hedging on girth disagreements and unconfirmed figures carried into prose",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "milan/barcelona/tenerife/singapore/berlin/arnhem photo shortlist",
+        "kind": "photo",
+        "tokens": 195572,
+        "trees": 0,
+        "note": "40 candidates viewed, 2 approved (both Tenerife: tfe_003, tfe_004), 38 rejected; heavy filename-false-positive rate (mushroom montages, building facades, a cathedral spire, wrong-species Naturdenkmal specimens)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-japan batches a-d",
+        "kind": "write",
+        "tokens": 46000,
+        "trees": 7,
+        "note": "7 famous-Japan stories plus recognition lines; 3 best_time set (cherries only); disputes on Chujohime trunk size, Ibi age, Hogon-ji last sighting kept explicit in prose",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "_famous-japan batches a-d cleanup",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "CORRECTION: the prior write pass's 'trees: 7' was right, not wasted; CURATION.md's 2026-09-18 (continuation 2) entry confirms all 7 (gif_001, yak_002, tok_022, ibg_001, iid_002, chk_001, mor_002) were properly merged into their city files. What this session found was just the leftover copies still sitting in the four batch-verified.json research files after that merge, which passcheck.py's duplicate-distance check correctly flagged as already-live. Cleared them and recorded pointers in each city's leads.json as duplicates_confirmed_already_live so the shelf count stops treating spent research inputs as still-writable.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "famous-tree fame resolution",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "famous_demand.py --resolve (7 leads) and fame.py --apply (1 match, nichinan-tottori.json): free deterministic scripts, no tokens",
+        "wasted": 0,
+        "brief_wrong": false
+      }
     ]
   }
 }

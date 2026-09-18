@@ -32,12 +32,10 @@ import { fitTitle } from "../../lib/title";
 import { ageToken, metaForTree, submitLink, locationIsApproximate, girthLabel } from "../../lib/tree-copy";
 import { treeSources } from "../../lib/tree-sources";
 import WorthIt from "../../components/WorthIt.astro";
-import SignInModal from "../../components/SignInModal.astro";
 import SaveHeart from "../../components/SaveHeart.astro";
 import SeenButton from "../../components/SeenButton.astro";
 import ShareButton from "../../components/ShareButton.astro";
 import { SHARE_JS } from "../../lib/share-js";
-import { SIGNIN_JS } from "../../lib/signin-js";
 import { WORTHIT_JS } from "../../lib/worthit-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { VISITED_SYNC_JS } from "../../lib/visited-sync-js";
@@ -235,7 +233,7 @@ const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
 const sources = treeSources(tree);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS + SHARE_JS;
+const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SHARE_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <main class="content-page has-tree-bar">
@@ -486,7 +484,6 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <a class="report-btn" href={submitLink("correction", cityName, tree.name)}>Correct a detail on this page</a>
       <a class="report-btn" href={submitLink("tree", cityName)}>Suggest another tree</a>
     </div>
-    <SignInModal />
   </main>
   <Fragment slot="scripts" set:html={scripts} />
 </Base>

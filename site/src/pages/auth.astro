@@ -38,8 +38,6 @@
 // which is what lets a page nothing links to exist on purpose.
 import Base from "../layouts/Base.astro";
 import { BASE_URL } from "../lib/schema";
-import SignInModal from "../components/SignInModal.astro";
-import { SIGNIN_JS } from "../lib/signin-js";
 import { APP_STORE_URL } from "../lib/site-config";
 
 const canonical = `${BASE_URL}/auth`;
@@ -60,8 +58,6 @@ const canonical = `${BASE_URL}/auth`;
     <p class="signin-fine">Signing in on your phone instead? <a href={APP_STORE_URL}>Get the app</a>.</p>
   </div>
 </main>
-<SignInModal />
-<Fragment set:html={SIGNIN_JS} />
 <script is:inline>
 // signin-js has already stored the session and cleaned the URL by the time
 // this runs, so the question here is only which sentence to show. Reading the
