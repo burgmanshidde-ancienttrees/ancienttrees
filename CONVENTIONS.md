@@ -25,6 +25,56 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## The navigation menu on a phone (2026-09-18, measured)
+
+**Reference: AllTrails' own mobile web menu**, from the screenshot Hidde sent on
+2026-09-18 ("dit is het mobile app menu van alltrails en vind ik veel beter"),
+read alongside the phone-header table in "Sending a mobile visitor to the app"
+below, which was gathered from komoot, AllTrails, Airbnb and Booking on
+2026-09-03.
+
+**What AllTrails does**, measured off that screenshot rather than remembered
+(it is 919px wide for a 375pt screen, so every figure below is the pixel
+divided by 2.45):
+
+| Part | What it is |
+|---|---|
+| The panel | a full-screen white sheet, not a dropdown. It covers the page and scrolls. |
+| Top row | their wordmark on the left, a 35pt circled X on the right |
+| First control | one full-width dark pill about 47 tall, "Ga verder in de app", with a phone glyph |
+| Sections | three, each a ~23pt bold heading with a chevron on the far right; Verkennen open, Opgeslagen and Winkel folded |
+| Rows | about 45 tall: a 32pt light grey circle holding a stroke icon, then a ~17pt label |
+| Dividers | one hairline between sections, nothing between rows |
+| The account | at the very bottom, as full-width grey pills (Aanmelden, and a second one below it) |
+
+**Three things in that which are the convention rather than their taste**, and
+which Airbnb and Booking do the same way: the menu is a full sheet with an
+explicit close, the account sits at the BOTTOM and browsing at the top, and
+every row carries an icon in a tile so the list is scanned rather than read.
+What is theirs alone is the folding: they have roughly twenty-five
+destinations, so sections that fold are the only way that list fits. Ours has
+ten.
+
+**The one trap in this entry, because a later reader will hit it.** The
+2026-09-03 entry below says we refuse "the full-screen sheet from the same
+screenshot", and that is about a DIFFERENT sheet: the app-download interstitial
+AllTrails throws over the page on arrival from search, which Google names as an
+intrusive interstitial and penalises. A menu the reader opened by tapping the
+menu button is not an interstitial in that sense and never was. Nothing about
+copying their menu reopens that decision.
+
+**What we do not copy: their row order.** Their Explore section opens on
+"Routes in de omgeving", which is nearby routes, because that is what somebody
+holding a phone outdoors wants first. Ours opens on Map for the same reason,
+and `/explore#near` already exists and already triggers the locate control
+(site/src/lib/map.ts), so a "Trees near me" row is a real destination rather
+than a thing to build.
+
+Source: Hidde's screenshot of alltrails.com in Safari, 2026-09-18, kept with
+the proposal in drafts/menu-options.html.
+
+---
+
 ## A my-location control over a bottom sheet (2026-09-13)
 
 Written because this one control has been reported four times and fixed three
