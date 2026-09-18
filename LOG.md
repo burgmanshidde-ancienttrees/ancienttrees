@@ -4422,6 +4422,99 @@ Result: **Pisa** (4 trees, all from the Orto Botanico di Pisa, founded 1544 and 
 Dispatched a write pass on the 8 Pisa+Pittsburgh trees only, skipping the 9 below-floor trees this time (week budget was tight, 4603/5000 minutes; writing trees that cannot ship yet was worth doing once for Busan/Sao Paulo above but not worth repeating at this volume). Fixed Italy's and United States' country page counts (39→40 cities/343→347 trees; 49→50/215→219) and ran `city_names.py` for both new cities. Build (5378 pages), preflight (0 problems, after two question_context word-count fixes and one count-promise wording fix in Pittsburgh's intro), qa.py (8390 pages, clean) and superlatives.py (360 claims, no collisions) all clean. Released both claims.
 
 Net for the whole window: 3 new cities (Hallstatt, Pisa, Pittsburgh), 12 trees shipped, 9 more banked verified-and-written or verified-only below floor across 4 cities (Busan, Sao Paulo, Monterey, Spokane, Boise, Indianapolis).
+## 2026-09-11 (session) - The photograph you take in the app now shows on the tree, and everything under the account was audited for it
+
+**Hidde, on his own account page: "waarom zie ik hier niet de foto die ik heb gemaakt in de app bij m'n eigen boom, alles moet cross device beschikbaar zijn wat onder je account hangt. Check of dit voor alles geldt."**
+
+**What was wrong, and it was not the sync.** The photograph had reached the
+account days earlier, file and all. Ticking off a tree WE map writes a sighting
+carrying that tree's id, and nothing ever showed those rows: the app filters
+them out of your list by design (`Sightings.yoursOnly` keeps `treeId == nil`)
+and `Sightings.forTree`, written for exactly this, had no caller anywhere; the
+website drew them as cards of their OWN, below our card for the same tree, which
+showed no photograph at all, and counted that tree twice in the numbers at the
+top. So the picture existed on the server and on no screen.
+
+**Fixed on both surfaces, to the references' rule** (Google Maps, iNaturalist,
+AllTrails, recorded in CONVENTIONS.md): the place keeps its own picture and
+yours is yours, labelled. Ours has 2,000-odd trees with no picture at all, which
+is not a state Google Maps is ever in, so **your photograph fills an empty slot,
+marked "Your photograph", and where we publish one, ours stays.**
+`TreeDetail.myShot` in the app, `my-trees-js.ts` on the website. One tree, one
+card, counted once. Rendered and LOOKED at, at 375px and desktop, against a
+stubbed account holding exactly his case.
+
+**Your own trees are on the profile map now too.** The app's Collect map has
+always drawn them beside the ticked ones; the website drew only ours.
+
+**The audit found two more, both in the same corner.** (1) **Votes never
+travelled in the app**: `MyVotes.load` keyed them on the submissions row's
+`tree` column, written as "id (name)", while every view reads `at_worthit_<id>`,
+so the restore at launch wrote a key nothing reads. The website, which matches
+on the id prefix, was right all along. (2) **A report was read back as a vote**:
+everything that was not "worth it" counted as a thumb down, including "report:
+wrong location", on a page whose thumb down was removed on 2026-09-04. Both
+fixed; reports now travel as reports. Everything else came back clean: saves,
+ticks, sightings, display name and avatar, blocks, units, follows.
+
+**And a check, because "everything" is the kind of promise that rots.**
+`scripts/crossdevice.py` refuses a store nobody has ruled on: every key the app
+writes to UserDefaults and the website to localStorage has to be named in
+`data/cross-device.json` as `account` (and which table carries it) or `device`
+(and why staying here is right). Same move as conventioncheck: it cannot judge
+the answer, only whether anybody asked. In the pre-push hook. 25 stores, 6
+account, 14 device.
+
+Build clean (5360 pages), qa clean (8357 pages), preflight 0 problems.
+
+**Later the same session, two mail fixes.** Hidde, on the thank-you he got for a
+tree he had added in the app, which closed by pointing him at the App Store:
+"onder deze mail hoeft geen verwijzing naar de app." Right, and it is the rule
+this file already followed for a published photograph: a link to the thing in
+your hand is not an invitation. A thank-you to somebody writing from inside the
+app now ends without it; everybody else still gets his standing 2026-09-03 line.
+
+**FOR HIDDE, parked on his own word ("kom later terug op a ik kan dit nu niet
+vanaf m'n tel doen"): sign-in, option A.** The website offers a magic link and
+the app cannot, because its typed route is hidden behind `Launch.emailSignIn`
+since 2026-08-30: Supabase's default mail sends a link rather than a code and
+the template needs custom SMTP. The objection that killed it then has expired,
+because this project already sends mail over SMTP (`OUTREACH_SMTP_*`, the Gmail
+app password) for reader replies, the weekly mail and the photo thank-yous. So
+it is a setting, not a new dependency.
+
+Three steps, all in his dashboard, ten minutes at a desk:
+
+1. Supabase, Auth, SMTP Settings: the same host, port, user, password and
+   sender that `OUTREACH_SMTP_*` already carries.
+2. Auth, Email Templates, Magic Link: put `{{ .Token }}` in it, so the mail
+   carries the six digits the app asks for. Template editing only unlocks once
+   step 1 is done.
+3. Tell me, and I flip `Launch.emailSignIn` and check both surfaces land on one
+   account.
+
+Worth a look while he is in there, because it may be worse than a missing app
+route: Auth, Users, the provider column. Supabase's built-in mail service
+delivers only to team addresses and is capped at a couple of messages an hour
+project-wide, so if all 12 accounts came in through Google, the site's own
+"Email me a sign-in link" has never reached a stranger. The full reasoning is
+CONVENTIONS.md, "One account, two surfaces, different sign-in buttons".
+
+**And the bug that fix uncovered: the "it is on the site now" mail has never been
+sent, not once, since 2026-09-03.** The auto-composed change confirmation
+carried no App Store link, mailcheck has required one on every letter since that
+morning, and the run prints HOLD and moves on, so a reader whose tip we acted on
+heard nothing. It carries the line now, and an app user's copy declares
+`audience: app user` in the draft header the way sightings_publish.py does, so
+the check passes without inviting somebody to an app they are holding. Both
+variants verified against mailcheck.
+
+**FOR HIDDE:** the app half is written but NOT built or swept: no Mac in this
+session, so Xcode never ran. The website half is verified. The app changes are
+small and mechanical (one new optional property on TreeDetail, one extra hero
+branch, two call sites, the MyVotes keying), and `ios.yml` will build and
+measure them on its next scheduled run. Worth a look on your own phone at a tree
+you have photographed: the picture should now be at the top of its page.
 
 ## 2026-09-11 - New city Tulsa (1 tree), 159 trees got a real best_time for free, 13 country pages' stale counts fixed, and a batched verify pass cleared 5 thin cities
 
