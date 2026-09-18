@@ -21,6 +21,9 @@ import re
 import sys
 import unicodedata
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import pagegaps          # for the park word list, compared below
+
 DESC_MAX = 155          # site/src/lib/site-config.ts
 INTRO_MIN, INTRO_MAX = 60, 100   # Contract C, site/src/pages/[city].astro
 
@@ -2061,6 +2064,52 @@ def check_a_by_licence_names_its_author():
     return out
 
 
+def check_park_words_match():
+    """The park keyword list says the same thing in Python and in TypeScript.
+
+    A park is not a field on a tree: both site/src/lib/parks.ts and
+    scripts/pagegaps.py derive it from the address text matching a word list,
+    and each has claimed for months to mirror the other exactly. Nothing
+    checked. The lists were widened together on 2026-09-18 (parque, garten,
+    plantsoen, bosque, foret, floresta, after "parque" turned out to be missing
+    while ten of our Seville trees stood in the Parque de Maria Luisa), which
+    doubles the chance of the next edit landing in one of them only.
+
+    Drift is silent in both directions and neither is loud: a word only in the
+    TypeScript builds a park page that pagegaps never reports as earned, and a
+    word only in the Python reports a gap that can never be filled, which is
+    the Padua false positive this file already records once.
+    """
+    ts = os.path.join("site", "src", "lib", "parks.ts")
+    try:
+        with open(ts, encoding="utf-8") as fh:
+            src = fh.read()
+    except OSError:
+        return ["%s is missing, so the park word list cannot be compared" % ts]
+    m = re.search(r"const PARK_WORDS = \[(.*?)\];", src, re.S)
+    if not m:
+        return ["%s: cannot find PARK_WORDS, so the two park word lists are unchecked" % ts]
+    theirs = set(re.findall(r'"([^"]+)"', m.group(1)))
+    # The Python side is one regex rather than a list, and two of its branches
+    # are character classes covering an accent ("for[ee]t"), which the word
+    # list spells out as two entries. Expand them rather than comparing text.
+    ours = set()
+    for word in pagegaps.PARKISH.pattern.split("|"):
+        cls = re.match(r"^([a-z ]*)\[([^\]]+)\]([a-z ]*)$", word)
+        if cls:
+            ours |= {cls.group(1) + ch + cls.group(3) for ch in cls.group(2)}
+        else:
+            ours.add(word)
+    out = []
+    for word in sorted(ours - theirs):
+        out.append("park word %r is in pagegaps.py and not in parks.ts, so it "
+                   "reports park pages the site cannot build" % word)
+    for word in sorted(theirs - ours):
+        out.append("park word %r is in parks.ts and not in pagegaps.py, so a park "
+                   "page it can build is never reported as earned" % word)
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
@@ -2080,7 +2129,8 @@ def main():
                 + check_a_tree_can_be_told_apart()
                 + check_story_length()
                 + check_one_common_name_per_species()
-                + check_register_says_the_tree_is_gone())
+                + check_register_says_the_tree_is_gone()
+                + check_park_words_match())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)

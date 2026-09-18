@@ -259,6 +259,9 @@ struct ContentView: View {
         guard !account.isSignedIn else { return }
         saved.forgetLocally()
         profiles.forgetLocally()
+        // And the votes, for the reason the other two go: they are the
+        // account's answer, not this phone's.
+        myVotes.forgetLocally()
         // AND THE TREES SOMEBODY ADDED THEMSELVES (Hidde, 2026-08-29: "als je
         // uitlogt moeten de bomen die je hebt toegevoegd niet meer zichtbaar
         // zijn op de kaart en in de lijsten", and "ik kan ook een boom removen
@@ -884,25 +887,19 @@ struct ContentView: View {
                                              userId: uid, token: t)
                 }
             }
-            // And the votes this account has already cast, written into the
-            // same place the tree pages already read, so the local copy becomes
-            // a cache of the account rather than the only copy there is.
+            // And the votes and reports this account has already made. They go
+            // nowhere near the device: every control that draws one reads
+            // MyVotes directly (2026-09-18, Hidde: "stop saving stuff locally
+            // anywhere ... always account related"). This used to copy them
+            // into three UserDefaults keys per tree, which the views then read
+            // as truth. Nothing cleared those keys on sign-out, so a
+            // signed-out phone kept showing the last person's votes, and a key
+            // written per tree cannot be enumerated to clear them.
+            // Whatever the old mirror left on this phone goes, signed in or
+            // out, and it is the signed-OUT case that needed it most.
+            MyVotes.clearTheOldMirror()
             if account.isSignedIn {
                 await myVotes.load(account: account)
-                for (tree, vote) in myVotes.byTree {
-                    UserDefaults.standard.set(vote, forKey: "at_worthit_\(tree)")
-                }
-                // And what this account has already REPORTED, for the same
-                // reason: the report entry on a tree page reads these two keys
-                // and, until 2026-09-11, only ever found what this phone had
-                // tapped. The website has read them off the same rows all
-                // along, so the two surfaces disagreed on a second device.
-                for tree in myVotes.reported {
-                    UserDefaults.standard.set("reported", forKey: "at_wrong_\(tree)")
-                }
-                for tree in myVotes.detailed {
-                    UserDefaults.standard.set(true, forKey: "at_wrong_detail_\(tree)")
-                }
                 if let remote = profiles.me?.units {
                     units.unit = remote == "mi" ? .imperial : .metric
                 }
@@ -1022,6 +1019,7 @@ extension View {
             .environment(root.units)
             .environment(root.sightings)
             .environment(root.voteCounts)
+            .environment(root.myVotes)
             .environment(root.profiles)
             .environment(root.moderation)
     }

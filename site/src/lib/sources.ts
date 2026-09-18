@@ -44,6 +44,7 @@ const COUNTRY_BY_FILE: Record<string, string> = {
   "hongkong-ovt": "Hong Kong",
   "singapore-heritage-trees": "Singapore",
   "portland-heritage-trees": "United States",
+  "spokane-heritage-trees": "United States",
   "massachusetts-dcr-legacy-trees": "United States",
   "quebec-city-arbres-remarquables": "Canada",
 };
@@ -69,6 +70,81 @@ function countOf(d: Raw): number {
   }
   const n = d.count ?? d.record_count;
   return typeof n === "number" ? n : 0;
+}
+
+/** What we link to is the register's own page, never the request we make of it.
+ *
+ *  Written 2026-09-18, on Hidde asking whether naming every source helps
+ *  competitors. The names cannot be withheld and should not be: 38 of these 55
+ *  licences name attribution outright, and a government register is public by
+ *  definition. What was being published alongside them was a different thing
+ *  entirely, and nothing asks for it: the exact endpoint we call, with its
+ *  query string, its layer names and the parenthetical notes an import pass
+ *  wrote down after working out that Flanders caps a page at 50 whatever
+ *  per_pagina says, that Bavaria wants startIndex paged, that Poland serves
+ *  lon,lat. That is our scouting, which this project measures as the work that
+ *  compounds, and no licence is owed it.
+ *
+ *  It was also producing broken links, which is the honest reason to fix it
+ *  today rather than file it: an href carrying "(ArcGIS FeatureServer, GeoJSON,
+ *  EPSG:4326)" or "startIndex=<n>" resolves nowhere, so the page failed the one
+ *  thing it promises a reader, that they can check us. The landing page keeps
+ *  that promise better than a WFS GetFeature ever did. */
+export function publicSourceUrl(raw: string | null): string | null {
+  if (!raw) return null;
+  // An import note travels after the url, in brackets or after a semicolon.
+  const bare = raw.split(/[\s(;]/)[0];
+  let u: URL;
+  try {
+    u = new URL(bare);
+  } catch {
+    return null;
+  }
+  // A tile or page template is a request shape, not an address.
+  if (/[<>{}]/.test(u.pathname)) return null;
+  // Esri's hosting tenants are not a publisher's page: stripped back, the url
+  // is an account id on somebody else's server, which credits nobody and helps
+  // no reader. Better no link than a link to that; the authority is named in
+  // the attribution line beside it either way.
+  if (/^services\d*\.arcgis\.com$/i.test(u.hostname)) return null;
+  // Cut where the machine interface starts, so what is left is the publisher's
+  // own page or portal. Order matters: the first match wins, so the more
+  // specific prefix is listed first ("/services/wfs" before "/wfs", which
+  // would otherwise leave a bare "/services" behind).
+  const MACHINE = [
+    "/api/explore", "/arcgis/rest", "/geoserveis/rest", "/geoserver",
+    "/services/wfs", "/inspire/", "/tiles/", "/ws", "/wfs", "/ows",
+  ];
+  const lower = u.pathname.toLowerCase();
+  for (const marker of MACHINE) {
+    const i = lower.indexOf(marker);
+    if (i >= 0) {
+      u.pathname = u.pathname.slice(0, i);
+      break;
+    }
+  }
+  u.search = "";
+  u.hash = "";
+  return u.toString();
+}
+
+/** The licence as a reader needs it, never our working note about it.
+ *
+ *  Same pass, same cause. A licence is recorded verbatim at import time and
+ *  that is right, but one of those records is a paragraph of our own reasoning
+ *  (which registers it resembles, that it is "NOT cleared for a layer-2 bulk
+ *  register-dot import under CLAUDE.md's register-layer licence rule"), and it
+ *  was rendering word for word on a public page. Public copy does not explain
+ *  our publishing rules to a reader, which is already a build check elsewhere
+ *  in this repo; it says what is there.
+ *
+ *  So where a register records no licence, the public line is the two words
+ *  that are true, and the reasoning stays in the file where it is useful. The
+ *  entry is still listed, because having checked and found nothing stated is
+ *  worth saying. */
+export function publicLicence(licence: string): string {
+  const l = licence.trim();
+  return /^none\b/i.test(l) ? "none stated" : l;
 }
 
 /** Share-alike is the one licence property that constrains what we may build,
@@ -99,9 +175,12 @@ export function sourceCredits(): SourceCredit[] {
     out.push({
       name,
       attribution: first(d.attribution, nested.publisher, d.authority),
-      licence,
-      url: first(d.endpoint, d.source_url, d.metadata_url, d.dataset_catalog_url,
-        nested.dataset_page, d.download_url, d.wfs),
+      licence: publicLicence(licence),
+      // A catalogue entry first, because that is the page a publisher wrote for
+      // people; the endpoint is the fallback and gets stripped back to one.
+      url: publicSourceUrl(first(d.metadata_url, d.dataset_catalog_url,
+        nested.dataset_page, d.catalogue, d.source_url, d.download_url,
+        d.endpoint, d.wfs)),
       country: first(d.country, nested.country) ?? COUNTRY_BY_FILE[slug] ?? "Other",
       count: countOf(d),
       shareAlike: isShareAlike(licence),
