@@ -193,6 +193,31 @@ Amsterdam trees pulled, Park Guell's access corrected, the cedar photograph
 live. "Fixed, here it is" is worth more than any paragraph of intent.
 
 
+## Do not brief the expert who wrote to you (Hidde, 2026-09-18)
+
+Hugo Verissimo of Quercus Lisboa, an arborist, wrote that he would pick a zone
+of Lisbon where trees are already mapped, photograph them for us and share the
+walk on their channels. My draft handed him a route out of our own walk planner
+(eleven trees on a line, Campo Santana to the Jardim da Parada, 4.5 km), the
+22 Lisbon trees without a photograph, and a yes to the promotion. His verdict:
+**"dit hele stuk hoeft niet - dat weet hij beter dan ons."**
+
+Two separate faults, and the first is the one I keep making. **Facts we hold
+are not automatically a gift.** He lives there, he does this for a living, and
+he had already said he would choose the zone with care; our route is then not
+help, it is a stranger marking his homework, and it is the longest paragraph in
+the letter. The test before any paragraph of ours: does he know this better
+than we do?
+
+And the second: **do not confirm what somebody already told you they would
+do.** He said he would photograph and promote. Writing "yes please" to that
+adds nothing and reads as though it needed our permission.
+
+What this does NOT retire: giving before asking. His own mails still open with
+where he lives and what he has already done. The difference is that those are
+facts about US, which the reader cannot have, rather than facts about THEIR
+city, which they already hold.
+
 ## The app is live, so say so (Hidde, 2026-09-03)
 
 "onze app staat live dus vertel dat en we zijn beniewud wat ie er van vindt",
