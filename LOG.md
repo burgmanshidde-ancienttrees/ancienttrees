@@ -1,6 +1,46 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
+
+An earlier attempt this window stopped after 43 minutes having shipped
+nothing, even though session 3's `_famous-japan` write-claim work (7 trees,
+3 new places, see below) was sitting complete and uncommitted, with build
+and QA both still to run. Ran them, both clean (11987 pages, `qa.py` green),
+released the claim, and committed and pushed it.
+
+**The pre-push hook then caught what the build had not:** `question_meta`
+in `data/i18n/ja/tokyo.json` still promised 20 more trees on a page that
+had just grown from 21 to 22. `preflight.py`'s English check tolerates an
+off-by-one either way, so it stayed quiet; `i18ncheck.py`'s Japanese check
+does not. Fixed both the Japanese overlay and the English source, which
+was carrying the same staleness inside its tolerance ("twenty more" on 22
+trees should read twenty-one). Rebuilt, re-ran QA, committed and pushed.
+
+**With the leads-ready queue empty and rungs 4, 5, 7 and 8 of the research
+ladder all exhausted** (`scout_next.py --target` says every ranked city
+either has supply or a written verdict; the OPENABLE-TODAY cities all carry
+1-2 thin Wikidata leads, below the four-tree floor; `recognise.py --stuck`
+found nothing, every one of 3,246 trees already carries a `how_to_recognise`
+line; `pagegaps.py` found no earned species/country/park page missing an
+intro), moved to rung 6: `photo_gaps.py --shortlist`'s demand-ranked list.
+
+Fetched and looked at all 14 candidates it surfaced (Milan, Barcelona x2,
+Singapore x8, Berlin, Arnhem x3, Brisbane), and rejected every one on the
+pixels: a metro station platform, a leaf macro, a 19th-century estate
+engraving reused across three different Arnhem trees, a bandstand pavilion
+reused across three different Singapore trees, three Singapore candidates
+that turned out to be the already-photographed Tembusu of Lawn E filed
+under the wrong tree three times, a Berlin juniper candidate showing only
+its crown above a hedge, and a Milan plane tree candidate that geotags
+328 metres from our pin in a park that holds several large planes. All 14
+recorded as rejected in `data/photo-queue.json` so the same filename false
+positives do not cost a future sweep another look.
+
+`preflight.py` clean throughout. No trees published this attempt; the
+window went to landing already-verified work and one honest, empty-handed
+viewing pass.
+
 ## 2026-09-18 (session 3) - Finished a standing write claim: 7 trees, 3 new places, 8 more famous-japan duplicates found
 
 An earlier attempt this window stopped after 11 minutes shipping nothing,
