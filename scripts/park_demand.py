@@ -260,8 +260,16 @@ def verdict(r):
     """
     if r["out_of_focus"]:
         return "out of focus"
-    if r["page"]:
+    if r["page"] and r["grouped"] >= PARK_MIN_TREES:
         return "page"
+    if r["page"]:
+        # Contract H needs five trees AND an intro, so an intro on a group of
+        # four is prose nobody can read: the page does not render at all. This
+        # said "page" until Nara Park was checked against the built site, which
+        # is the one number in this tool worth disbelieving, because an intro
+        # file existing looks exactly like a page from the data side. It is also
+        # the cheapest work on the whole list, one verified tree for a page.
+        return "one short"
     if r["grouped"] >= PARK_MIN_TREES:
         return "intro"                      # groupable, gate cleared, no page
     if r["trees"] >= PARK_MIN_TREES:
@@ -275,8 +283,8 @@ def verdict(r):
     return "no coverage"
 
 
-ORDER = {"intro": 0, "check": 1, "supply": 2, "thin": 3, "empty": 4,
-         "no coverage": 5, "page": 6, "out of focus": 7}
+ORDER = {"one short": 0, "intro": 1, "check": 2, "supply": 3, "thin": 4,
+         "empty": 5, "no coverage": 6, "page": 7, "out of focus": 8}
 
 
 def rank(r, views):
@@ -483,7 +491,7 @@ def main():
     rows.sort(key=lambda r: rank(r, views))
 
     if args.check:
-        free = [r for r in rows if verdict(r) == "intro"]
+        free = [r for r in rows if verdict(r) in ("intro", "one short")]
         for r in free:
             print("%s (%s): %d trees mapped, %d groupable, no page" % (
                 r["park"], r["city"], r["trees"], r["grouped"]))

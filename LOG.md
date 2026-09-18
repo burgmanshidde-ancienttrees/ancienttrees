@@ -17,11 +17,23 @@ evidence per park, press-reported footfall where there is any, and a
 coordinate; `scripts/park_demand.py` crosses each against our own trees BY
 DISTANCE, never by name, and says what it needs next.
 
-**The answer to his question: 6 of the 128 have a park page.** Nara Park, the
-Retiro, Central Park, Villa Borghese, Schlosspark Nymphenburg, and Parque de
-Maria Luisa as of today. Of Google's 2023 top six we now hold four. 50 more
-famous parks hold between one and four of our trees, 41 sit empty in a city
-we already publish, and 8 are outside our coverage entirely.
+**The answer to his question: 5 of the 128 have a park page.** The Retiro,
+Central Park, Villa Borghese, Schlosspark Nymphenburg, and Parque de Maria
+Luisa as of today. 50 more famous parks hold between one and four of our
+trees, 41 sit empty in a city we already publish, and 8 are outside our
+coverage entirely.
+
+**It said 6 until the tool was checked against the built site, and Nara Park
+is the correction worth keeping.** An intro file existing looks exactly like a
+published page from the data side, and Contract H needs five trees AND an
+intro: Nara Park has the intro, written prose, and four trees, so its page has
+never rendered at all. Google's sixth most searched park of 2023, one verified
+tree away, with 17 register rows and leads inside its radius. The tool now
+calls that state "one short" and ranks it above everything else, because prose
+already written is the cheapest work on the list. The other one in that state
+is the Hortus Botanicus in Amsterdam, at two trees, which is what his own
+paid-entry ruling of 2026-08-23 left behind when ten ticketed Amsterdam trees
+came off the map.
 
 **The largest blocker was not research, it was our own keyword list.** A park
 is not a field on a tree here: `parkKey()` derives it from the address text
