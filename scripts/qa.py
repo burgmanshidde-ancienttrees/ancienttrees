@@ -641,18 +641,38 @@ def check_nothing_is_stored_locally():
     a person accumulates lives in the account. sessionStorage counts as storage
     and is refused for the same reason.
 
-    The two deliberate exceptions are named here rather than left implicit:
+    The three deliberate exceptions are named here rather than left implicit:
     `at_notrack` is a privacy opt-out that would be pointless on a server, and
     the contribute draft (`at_contribute_draft`) protects text somebody has
     typed and not yet sent, which is not something they have saved to a
     collection. A key built from a variable is refused whatever it holds,
-    because the allowlist can only read literals; write the name out."""
+    because the allowlist can only read literals; write the name out.
+
+    The third, `ancienttrees_pending`, was added on 2026-09-18 and this check
+    caught it being written, which is the check doing its job. It holds what
+    somebody was doing at the moment they were asked to sign in, so that the
+    save survives the round trip through Google or an inbox and is finished
+    when they land back. It is the contribute draft's category exactly: an act
+    begun and not yet completed, not a thing a person has accumulated. It is
+    thrown away on use and expires in half an hour, where the draft may sit for
+    days.
+
+    And the argument that actually settles it: the rule is that anything stored
+    belongs on the account, and at the moment this is written THERE IS NO
+    ACCOUNT. That is the whole situation it exists for. Putting it on the
+    server instead would mean identifying somebody who has not signed in, which
+    is worse on every axis this project cares about, privacy first.
+
+    What has NOT changed: nothing a person keeps may live in the browser. A
+    save, a tick, a vote, a collection still belong to the account and this
+    check still refuses every one of them."""
     out = []
     root = Path(__file__).resolve().parent.parent
     src = root / "site" / "src"
     if not src.exists():
         return out
-    allowed = {"ancienttrees_session", "at_notrack", "at_contribute_draft"}
+    allowed = {"ancienttrees_session", "at_notrack", "at_contribute_draft",
+               "ancienttrees_pending"}
     offenders = []
     for f in sorted(list(src.rglob("*.ts")) + list(src.rglob("*.astro"))):
         text = f.read_text(encoding="utf-8")

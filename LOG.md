@@ -56,6 +56,20 @@ exact subtlety that masked this. Removing it needs Hidde. The convention is
 written up in CONVENTIONS.md with its references, so the next session does not
 repeat the search.
 
+**FOR HIDDE, one line, because it touches a ratchet check.** `qa.py`'s
+`check_nothing_is_stored_locally()` (your 2026-09-02 rule, "alles wat wordt
+opgeslagen, moet op je account zijn") refused this change, correctly, because
+carrying the act across the round trip means writing one key in the browser.
+I have named it as a third allowed exception rather than weakened the check,
+with the reason written into the check itself. The argument, in short: it is
+the contribute draft's category, an act begun and not finished rather than a
+thing kept, thrown away on use and expiring in half an hour; and at the moment
+it is written there is no account to put it on, which is the entire situation
+it exists for. Storing it server-side would mean identifying somebody who has
+not signed in. Nothing a person KEEPS may still live in the browser and the
+check still refuses every one of those. Say the word and I will take it out
+and accept that the save is lost across the sign-in.
+
 **Left alone, deliberately.** WalkMode's tick leads into a camera flow, so
 replaying it would open a camera unexpectedly. The OAuth redirect_to still
 drops the query string: ?kind= on /contribute survives anyway because the
