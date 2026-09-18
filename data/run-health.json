@@ -14939,6 +14939,602 @@
    ],
    "trees": 5,
    "logged": true
+  },
+  {
+   "started": "2026-09-18T02:57:13+00:00",
+   "date": "2026-09-18",
+   "run_id": "35297824059",
+   "minutes": 112.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 523,
+   "denials": 40,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(find), Bash(for), Bash(git), Bash(grep), Bash(iconv), Bash(jobs), Bash(ls), Bash(mkdir), Bash(ps), Bash(python3), Bash(rm), Bash(until)",
+   "ended": "success",
+   "tokens": 22170029,
+   "claims_held": [],
+   "commits": 16,
+   "cities_touched": 144,
+   "cities": [
+    {
+     "city": "higashi-hiroshima",
+     "trees": 17
+    },
+    {
+     "city": "bulat-pestivien",
+     "trees": 1
+    },
+    {
+     "city": "crecy-en-ponthieu",
+     "trees": 1
+    },
+    {
+     "city": "fontaine-belfort",
+     "trees": 1
+    },
+    {
+     "city": "innimond",
+     "trees": 1
+    },
+    {
+     "city": "le-guerno",
+     "trees": 1
+    },
+    {
+     "city": "aguas-de-moura",
+     "trees": 0
+    },
+    {
+     "city": "amersfoort",
+     "trees": 0
+    },
+    {
+     "city": "aosta",
+     "trees": 0
+    },
+    {
+     "city": "bad-blumau",
+     "trees": 0
+    },
+    {
+     "city": "bansko",
+     "trees": 0
+    },
+    {
+     "city": "beijing",
+     "trees": 0
+    },
+    {
+     "city": "bojnice",
+     "trees": 0
+    },
+    {
+     "city": "boston",
+     "trees": 0
+    },
+    {
+     "city": "bratislava",
+     "trees": 0
+    },
+    {
+     "city": "brielow",
+     "trees": 0
+    },
+    {
+     "city": "brzoza",
+     "trees": 0
+    },
+    {
+     "city": "cabeza-del-buey",
+     "trees": 0
+    },
+    {
+     "city": "canberra",
+     "trees": 0
+    },
+    {
+     "city": "casta",
+     "trees": 0
+    },
+    {
+     "city": "chiapa-de-corzo",
+     "trees": 0
+    },
+    {
+     "city": "cinovec",
+     "trees": 0
+    },
+    {
+     "city": "concoret",
+     "trees": 0
+    },
+    {
+     "city": "cooper-creek",
+     "trees": 0
+    },
+    {
+     "city": "copenhagen",
+     "trees": 0
+    },
+    {
+     "city": "crete",
+     "trees": 0
+    },
+    {
+     "city": "debina",
+     "trees": 0
+    },
+    {
+     "city": "degsne",
+     "trees": 0
+    },
+    {
+     "city": "derby",
+     "trees": 0
+    },
+    {
+     "city": "edinburgh",
+     "trees": 0
+    },
+    {
+     "city": "ekero",
+     "trees": 0
+    },
+    {
+     "city": "fleringen",
+     "trees": 0
+    },
+    {
+     "city": "flinders-ranges",
+     "trees": 0
+    },
+    {
+     "city": "fortingall",
+     "trees": 0
+    },
+    {
+     "city": "fribourg",
+     "trees": 0
+    },
+    {
+     "city": "frydlant",
+     "trees": 0
+    },
+    {
+     "city": "galenbeck",
+     "trees": 0
+    },
+    {
+     "city": "glastonbury",
+     "trees": 0
+    },
+    {
+     "city": "gliniak",
+     "trees": 0
+    },
+    {
+     "city": "gojaus-miskas",
+     "trees": 0
+    },
+    {
+     "city": "gornja-stubica",
+     "trees": 0
+    },
+    {
+     "city": "grybiskes",
+     "trees": 0
+    },
+    {
+     "city": "gumeli",
+     "trees": 0
+    },
+    {
+     "city": "hampton-virginia",
+     "trees": 0
+    },
+    {
+     "city": "helsinki",
+     "trees": 0
+    },
+    {
+     "city": "henrykow-lubanski",
+     "trees": 0
+    },
+    {
+     "city": "higashimiyoshi",
+     "trees": 0
+    },
+    {
+     "city": "higashiomi",
+     "trees": 0
+    },
+    {
+     "city": "hinode",
+     "trees": 0
+    },
+    {
+     "city": "hniszow",
+     "trees": 0
+    },
+    {
+     "city": "hobart",
+     "trees": 0
+    },
+    {
+     "city": "hokuto",
+     "trees": 0
+    },
+    {
+     "city": "hronsek",
+     "trees": 0
+    },
+    {
+     "city": "ichinohe",
+     "trees": 0
+    },
+    {
+     "city": "iwata",
+     "trees": 0
+    },
+    {
+     "city": "jaegerspris-nordskov",
+     "trees": 0
+    },
+    {
+     "city": "jalhay",
+     "trees": 0
+    },
+    {
+     "city": "jihlava",
+     "trees": 0
+    },
+    {
+     "city": "kagoshima",
+     "trees": 0
+    },
+    {
+     "city": "kaunas",
+     "trees": 0
+    },
+    {
+     "city": "kawazu",
+     "trees": 0
+    },
+    {
+     "city": "kintai",
+     "trees": 0
+    },
+    {
+     "city": "kitamoto",
+     "trees": 0
+    },
+    {
+     "city": "ksiaz",
+     "trees": 0
+    },
+    {
+     "city": "kybarciai",
+     "trees": 0
+    },
+    {
+     "city": "lazy-cheb",
+     "trees": 0
+    },
+    {
+     "city": "lecina",
+     "trees": 0
+    },
+    {
+     "city": "liskiava",
+     "trees": 0
+    },
+    {
+     "city": "llangernyw",
+     "trees": 0
+    },
+    {
+     "city": "lodz",
+     "trees": 0
+    },
+    {
+     "city": "lohja",
+     "trees": 0
+    },
+    {
+     "city": "lue",
+     "trees": 0
+    },
+    {
+     "city": "lukavice",
+     "trees": 0
+    },
+    {
+     "city": "machov",
+     "trees": 0
+    },
+    {
+     "city": "maibara",
+     "trees": 0
+    },
+    {
+     "city": "maui",
+     "trees": 0
+    },
+    {
+     "city": "mendaza",
+     "trees": 0
+    },
+    {
+     "city": "miriam-vale",
+     "trees": 0
+    },
+    {
+     "city": "mito",
+     "trees": 0
+    },
+    {
+     "city": "morioka",
+     "trees": 0
+    },
+    {
+     "city": "mrakotin",
+     "trees": 0
+    },
+    {
+     "city": "muxika",
+     "trees": 0
+    },
+    {
+     "city": "myjava",
+     "trees": 0
+    },
+    {
+     "city": "nagai",
+     "trees": 0
+    },
+    {
+     "city": "nago",
+     "trees": 0
+    },
+    {
+     "city": "nagoya",
+     "trees": 0
+    },
+    {
+     "city": "novi-ligure",
+     "trees": 0
+    },
+    {
+     "city": "nyingchi",
+     "trees": 0
+    },
+    {
+     "city": "oahu",
+     "trees": 0
+    },
+    {
+     "city": "pagramantis-regional-park",
+     "trees": 0
+    },
+    {
+     "city": "palo-alto",
+     "trees": 0
+    },
+    {
+     "city": "pamplona",
+     "trees": 0
+    },
+    {
+     "city": "pemberton",
+     "trees": 0
+    },
+    {
+     "city": "perouges",
+     "trees": 0
+    },
+    {
+     "city": "perusic",
+     "trees": 0
+    },
+    {
+     "city": "plauginiai-forest",
+     "trees": 0
+    },
+    {
+     "city": "plunge",
+     "trees": 0
+    },
+    {
+     "city": "port-renfrew",
+     "trees": 0
+    },
+    {
+     "city": "portalegre",
+     "trees": 0
+    },
+    {
+     "city": "priekule",
+     "trees": 0
+    },
+    {
+     "city": "princeton-new-jersey",
+     "trees": 0
+    },
+    {
+     "city": "rambynas",
+     "trees": 0
+    },
+    {
+     "city": "raudone",
+     "trees": 0
+    },
+    {
+     "city": "renavas",
+     "trees": 0
+    },
+    {
+     "city": "rhenen",
+     "trees": 0
+    },
+    {
+     "city": "rudy",
+     "trees": 0
+    },
+    {
+     "city": "rumskulla",
+     "trees": 0
+    },
+    {
+     "city": "runnymede",
+     "trees": 0
+    },
+    {
+     "city": "sachsenbrunn",
+     "trees": 0
+    },
+    {
+     "city": "samoens",
+     "trees": 0
+    },
+    {
+     "city": "santa-maria-del-tule",
+     "trees": 0
+    },
+    {
+     "city": "shingu",
+     "trees": 0
+    },
+    {
+     "city": "simsbury",
+     "trees": 0
+    },
+    {
+     "city": "sliven",
+     "trees": 0
+    },
+    {
+     "city": "sremski-karlovci",
+     "trees": 0
+    },
+    {
+     "city": "stelmuze",
+     "trees": 0
+    },
+    {
+     "city": "stockholm",
+     "trees": 0
+    },
+    {
+     "city": "sulechow",
+     "trees": 0
+    },
+    {
+     "city": "sunderland-massachusetts",
+     "trees": 0
+    },
+    {
+     "city": "sydney",
+     "trees": 0
+    },
+    {
+     "city": "taasinge",
+     "trees": 0
+    },
+    {
+     "city": "telgte",
+     "trees": 0
+    },
+    {
+     "city": "tenerife",
+     "trees": 0
+    },
+    {
+     "city": "tokyo",
+     "trees": 0
+    },
+    {
+     "city": "tolpuddle",
+     "trees": 0
+    },
+    {
+     "city": "trainiskis",
+     "trees": 0
+    },
+    {
+     "city": "trencianske-stankovce",
+     "trees": 0
+    },
+    {
+     "city": "trollskogen",
+     "trees": 0
+    },
+    {
+     "city": "turku",
+     "trees": 0
+    },
+    {
+     "city": "vainiai",
+     "trees": 0
+    },
+    {
+     "city": "vassununga",
+     "trees": 0
+    },
+    {
+     "city": "villeneuve",
+     "trees": 0
+    },
+    {
+     "city": "vir",
+     "trees": 0
+    },
+    {
+     "city": "viroflay",
+     "trees": 0
+    },
+    {
+     "city": "vytogala",
+     "trees": 0
+    },
+    {
+     "city": "waipoua-forest",
+     "trees": 0
+    },
+    {
+     "city": "wessobrunn",
+     "trees": 0
+    },
+    {
+     "city": "wroclaw",
+     "trees": 0
+    },
+    {
+     "city": "wye-mills-maryland",
+     "trees": 0
+    },
+    {
+     "city": "yoshida",
+     "trees": 0
+    },
+    {
+     "city": "zalgiriai",
+     "trees": 0
+    },
+    {
+     "city": "zilina",
+     "trees": 0
+    },
+    {
+     "city": "zurich",
+     "trees": 0
+    },
+    {
+     "city": "zywiec",
+     "trees": 0
+    }
+   ],
+   "trees": 22,
+   "logged": true
   }
  ],
  "schedule_changes": [
