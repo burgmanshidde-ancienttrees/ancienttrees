@@ -1,6 +1,7 @@
 # LOG
 
 <!-- archive-index -->
+
 ## 2026-09-18 (session 5) - Answered "how are the collections doing", rebuilt the stalest one, put the whole page type on the meter
 
 Hidde asked whether any collection scores on search volume, what we can
@@ -78,6 +79,88 @@ years. The yew page already earns 67 impressions at position 8.8 on its 8
 entries, so it is the clearest of the four. Making them generated needs a
 species-and-region filter on top of the existing `oldest` mode, which is
 roughly the work item 1 above took.
+
+## 2026-09-18 Where the funnel actually leaks, and the page with the best placement on the site
+
+Hidde asked why sign-ins are so few and what would improve them. The answer is
+that sign-in is not the leak. Ten days of Search Console: 18,359 impressions,
+387 clicks, and clicks are up 26 percent across the window while CTR is flat,
+so the growth is coming from position and indexation rather than from copy.
+The running city-title copy test agrees: -0.03 index points at day 7.
+
+seolearn's own buckets say the same thing more usefully. Photographs, pins,
+ages, seasonal peaks, story length, number of trees: every bucket converts
+between index 0.40 and 0.66 and the site-wide figure is 0.48. Nothing on the
+page explains the gap, because it is uniform. Roughly a fifth of impressions
+are not people at all (queries built with Google's exact-phrase operator).
+
+The one page where the gap is a page problem rather than a SERP problem is
+Pamplona: position 3.6, the best placement we hold anywhere, 412 impressions,
+5 clicks. Its page is 14 trees with one age, no photographs and seven black
+poplars, two of them "(south)" and "(north)" of the same place. Written up in
+CURATION.md with the three cheap steps, and its meta description is fixed
+today: it led with a count and ended on the poplars.
+
+## 2026-09-18 (session 5) - My trees and Favourites were one list: the app was writing every ticked tree into the favourites table
+
+Hidde, on his own account page: "als ik klik op My Trees op Favorites, dan
+krijg ik dezelfde lijst. Dat, dat kan niet kloppen." He was right, and the
+website was innocent: it reads `saves` for Favourites and `visited` for My
+trees, which is exactly the app's own split. The polluter was
+`CloudSync.pushAll`, which mapped EVERY local entry into `saves`, ticked-only
+trees included. So `saves` had quietly stopped meaning "hearted" and started
+meaning "in your collection at all", which makes Favourites a superset of My
+trees, and for somebody who mostly ticks trees off in the app it makes them
+the same list.
+
+It was written that way for a reason that has since expired: when the cloud
+half shipped, `public.visited` did not exist, so pushing everything into
+`saves` was the only way a collection survived a new phone. The table exists
+now, so the shortcut had no argument left and only the cost.
+
+**What changed, all on the app side, because the contract is what was wrong:**
+
+| Where | Before | After |
+|---|---|---|
+| `CloudSync.pushAll` | every entry to `saves` | hearts only |
+| `CloudSync.push` | always upserts `saves` | upserts a heart, DELETES the row when the heart comes off and the visit stays |
+| `CloudSync.merge` (pull) | a `saves` row adopted only when new | always adopts the heart, so a save made on the website reaches the phone instead of being deleted by the next push |
+| `Saved.adopt` | every adopted row became a favourite | takes which list the row came from; a `visited` row no longer invents a heart |
+
+**The rows the old rule already left behind cannot be told apart in the
+database**, because `saves` carries no flag saying which kind it was. They can
+be told apart on the phone, which recorded every tap: an entry held with the
+heart off and a visit on is exactly the row that should never have been
+pushed. `CloudSync.repairStrayHearts` deletes those once per phone, in one
+request, before the first pull of the fixed version, and `savesRepaired` in
+UserDefaults makes sure it happens once. The honest cost is written into the
+code beside it: a tree hearted on the WEBSITE that the phone happens to hold
+as ticked-only goes with them, which is one tap to put back.
+
+So the web list stays as it is today until the fixed build runs on his phone
+and syncs; nothing on the website needed changing for the logic itself.
+
+**The ratchet**: three tests in `FailureTests` now hold the contract, replacing
+one that asserted the bug (it demanded a ticked-only tree appear in the saves
+body). Each tree to its own table, unhearting a collected tree deletes only the
+heart, and the repair runs once and never twice.
+
+**And the cards are the width of the phone again.** Same page, second
+complaint, and it is the 2026-09-17 one-left-edge fault one layer down:
+`.acct-lanes` set its own 24px padding while `.panel-head` above it uses
+`--gutter` (16px on a phone), and the tree cards inside it took
+`.panel .tree-card`'s `--gutter` side margins ON TOP of that, so the cards sat
+40px in from a 375px screen and the page showed three left edges. The lanes
+read `--gutter` now, cards inside them drop the panel margin, and the
+Distances switch (which was running flush to the panel wall) gets the same
+edge. Measured in headless Chrome at 375px with the signed-in shape forced:
+avatar, stat row, Add a tree, the lane picker, the card and the units heading
+all start at 16 and end at 359. One edge.
+
+Build clean, `preflight.py` 0 problems, `qa.py` green over 15,893 pages,
+paritycheck/crosscheck/englishcheck/netcheck/conventioncheck all green. The
+app half is written and pushed in the same change and is judged by `ios.yml`,
+since there is no Xcode here.
 
 ## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
 
@@ -350,6 +433,46 @@ would notice". That is the wrong test: this branch changed only `scripts/`, and
 a tool that decides what the machine works on next is worth as much as a page.
 Hidde found it by reading a sentence of mine rather than the list. It watches
 `scripts/` too now, and the list went from 5 branches to 7.
+
+## 2026-09-18 (session) - The sign-in funnel measured nothing at the two steps that matter
+
+Hidde: "ik vind het toch vreemd dat er zo weinig inlogsessies zijn klopt dit en
+waar ligt het aan denk je?"
+
+The number is right and the diagnosis was unavailable, because the funnel is
+instrumented at exactly one point and it is the last one. `atOpenSignIn()`,
+which puts the dialog on the screen, emitted nothing. `atOAuth()`, the Google
+and Apple buttons, emitted nothing. The only event on the whole path is
+`signin-link-sent` on the email form, and the digest says it has fired **0
+times ever** since the funnel was repaired on 2026-08-01, while **12 accounts
+exist**. So every account on this site arrived by a route nothing recorded, and
+"few people sign in" could not be told apart from "few people are ever asked
+to", which are opposite problems with opposite fixes.
+
+Two events now, in the same shape as every other one on the site:
+
+| Event | Fires when | Detail |
+|---|---|---|
+| `signin-open` | the dialog opens | what asked: `save`, `feedback` or `direct` |
+| `signin-oauth` | Google or Apple is tapped | the provider |
+
+That closes it end to end: asked, route chosen, link sent. Within a week the
+question has a number instead of a guess.
+
+**What the data DOES already say, and it is worth reading beside the answer.**
+2,850 visits since 2026-08-20 at 1.5 pages per visit, 8.3 percent of visits
+doing anything at all. `save` is the main gated action and it has fired 12
+times ever, 0 in the last 14 days. So the honest hypothesis is that almost
+nobody reaches the point where signing in is proposed, rather than that the
+dialog is failing. The new events are what will confirm or kill that.
+
+Also answered from the record, for the same question's first half: of 112
+processed submissions, 11 are from real readers (3 trees, 8 feedback) and the
+rest are ours. Every one of the 21 app sightings on file is from one account
+and `ours.is_ours()` says it is our own.
+
+Build 11,849 pages, smoke clean, the rest of the gates clean. Merged and pushed
+to main.
 
 ## 2026-09-18 (session) - 27 spent branches cleared out, and what is genuinely left
 
@@ -4856,7 +4979,6 @@ desktop on /lisbon/ajuda-dragon-tree.
 control in any of the seven languages; the web thumb is a colour emoji where the
 app draws an outline symbol; copycheck flags "Tap one to see how to tell it
 apart." in CollectSheet.swift:636, in the reader-photo session's area.
-
 
 
 ## 2026-09-11 (session with Hidde) - The tree in the wrong-tree photograph gets its own page: the Twisted Muku of Omiya Gate

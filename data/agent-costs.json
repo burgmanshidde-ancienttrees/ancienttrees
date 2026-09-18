@@ -8355,6 +8355,15 @@
         "note": "famous_demand.py --resolve (7 leads) and fame.py --apply (1 match, nichinan-tottori.json): free deterministic scripts, no tokens",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Trieste",
+        "kind": "write",
+        "tokens": 46000,
+        "trees": 6,
+        "note": "6 stories + recognition lines from trieste-verified.json (tri_015-020); 1 best_time; flagged and fixed an Acer monspessulanum common-name clash with krakow.json",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

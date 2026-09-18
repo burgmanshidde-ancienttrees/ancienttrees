@@ -732,8 +732,23 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 /* The lanes sit in .sheet-body, which carries no padding of its own: on the
    city page every child brings its own, so a block that does not brings none
    and runs flush to the panel edge. Found by looking at the rendered page,
-   which is the only layer that can see it. */
-.acct-lanes { margin-top: 1.4rem; padding: 0 24px 24px; }
+   which is the only layer that can see it.
+
+   ONE LEFT EDGE, corrected 2026-09-18 (Hidde: "de kaarten zijn niet de
+   breedte van mijn telefoon"). This block used to set its own 24px while
+   .panel-head above it uses --gutter (16px on a phone), and the tree cards
+   inside it took .panel .tree-card's --gutter margins ON TOP of that padding,
+   so one screen showed three left edges and the cards sat 40px in from a
+   375px phone. That is the same fault the footer had on 2026-09-17, one layer
+   down: a band inventing its own inset instead of reading the page's. The
+   lanes now read --gutter like everything else, and the cards inside them
+   drop the panel margin because this block already carries it. */
+.acct-lanes { margin-top: 1.4rem; padding: 0 var(--gutter) var(--gutter); }
+.acct-lanes .tree-card { margin-left: 0; margin-right: 0; }
+/* And the same edge for anything else this page drops straight into the
+   sheet body, which is the Distances switch: it was running flush to the
+   panel wall for the reason the comment above gives. */
+.sheet-body > .acct-card { padding: 0 var(--gutter) var(--gutter); }
 .lane-picker { display: flex; gap: 4px; background: var(--cream); border: 1px solid var(--cream-dark);
   border-radius: 999px; padding: 4px; margin-bottom: 1.1rem; }
 .lane { flex: 1; min-height: 44px; border: none; background: none; border-radius: 999px;
