@@ -89,9 +89,9 @@
         "https://commons.wikimedia.org/wiki/File:Torun_pomnik_przyrody_sosny_%22Trzy_Zorze%22_(01).jpg",
         "https://commons.wikimedia.org/wiki/File:Torun_pomnik_przyrody_sosny_%22Trzy_Zorze%22_(02).jpg"
       ],
-      "status": "lead",
-      "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "RESOLVED 2026-09-18, verified and delivered to data/leads/torun.json (no Torun city page exists yet)",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "species_basis": "confirmed by Torun's own register (Uchwala nr 812/18) and PTTK's walking-route writeup"
     },
     {
       "name": "Sosna mielnicka",
@@ -140,7 +140,9 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Witomi%C5%84skie_S%C5%82o%C5%84ca_(4x_je%C5%99%C3%A1b_prost%C5%99edn%C3%AD_-_Sorbus_intermedia),_Gdynia_-_Witomino,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Polsko_2026.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-18, verified and delivered to data/leads/gdynia.json (no Gdynia city page exists yet)",
+      "species": "Swedish Whitebeam (Sorbus intermedia)",
+      "species_basis": "confirmed by Gdynia council's own designation (Uchwala nr LIV/1660/23) and sozosfera.pl"
     },
     {
       "name": "Wszebora (pine)",
@@ -164,9 +166,9 @@
         "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_czerwiec_2024_,_032.jpg",
         "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_czerwiec_2024_,_037.jpg"
       ],
-      "status": "lead",
-      "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "RESOLVED 2026-09-18, verified and delivered to data/leads/sosnowiec.json (no coordinate found, no Sosnowiec city page exists yet)",
+      "species": "Balkan Pine (Pinus peuce)",
+      "species_basis": "confirmed by Sosnowiec city council's own designation post and a corroborating local nature blog"
     },
     {
       "name": "Dąb Bartek (Bydgoszcz)",
