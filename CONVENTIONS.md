@@ -93,8 +93,10 @@ crosses devices. And nobody puts a unit toggle next to a distance on the page,
 which was the shape I would have reached for first.
 
 **What we built from it.** units-js.ts converts from the reader's region with
-nothing stored; the switch on /account writes profiles.units, the same column
-the app already writes.
+nothing stored; the switch writes profiles.units, the same column the app
+already writes. It stood on /account until 2026-09-18, which is the profile
+rather than the settings; it is a row on /account/settings now, beside the
+app's own Distances row and where all three references keep theirs.
 
 ---
 

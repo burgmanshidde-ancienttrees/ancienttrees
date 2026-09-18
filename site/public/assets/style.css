@@ -647,9 +647,14 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
    small uppercase headers, one row shape, destructive action a layer in. */
 .acct-identity { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.1rem; }
 .acct-identity strong { font-family: var(--sans); font-size: 1.05rem; color: var(--ink); }
+/* NO INSET, which is the fault the app fixed on itself and the website kept
+   (Screens/Profile.swift: "It put SETTINGS and ABOUT at 20 while every card
+   under them sits at 16, which appfit reads as a drift and a reader reads as
+   sloppy without being able to name it"). The same four points were here, and
+   smoke_test's own alignment harness reads them the same way. */
 .acct-group { font-family: var(--sans); font-size: 12px; font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light);
-  margin: 1.6rem 0 0.5rem 0.25rem; }
+  margin: 1.6rem 0 0.5rem; }
 .acct-rows { border: 1px solid var(--cream-dark); border-radius: 12px; overflow: hidden; background: #fff; }
 .acct-row { padding: 0.9rem 1rem; border-bottom: 1px solid var(--cream-dark); }
 .acct-rows > *:last-child { border-bottom: none; }
@@ -677,14 +682,30 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
   border: 1.5px solid var(--cream-dark); font-size: 14px; border-radius: 999px; }
 .acct-name-row .go-btn:hover { background: #e0ded5; border-color: #e0ded5; }
 .acct-rows + .acct-rows { margin-top: 0.8rem; }
+/* A ROW'S TITLE, in the app's weight: sentence case at reading size, the way
+   Distances and Your name and picture read on Screens/Profile.swift, not a
+   second tier of uppercase under the group header. */
+.acct-rows .acct-row > label { display: block; font-family: var(--sans);
+  font-size: 15px; color: var(--ink); margin-bottom: 0.35rem; }
+/* The email, said plainly and at reading size. It used to be a sentence of
+   fine print explaining what an address is for; the app simply prints it
+   (Screens/Profile.swift's identity row). */
+.acct-email { font-family: var(--sans); font-size: 15px; color: var(--ink);
+  margin: 0.3rem 0 0; overflow-wrap: anywhere; }
+/* The unit buttons sit inside a settings row here, so they need no top margin
+   fighting the row's own padding. */
+.acct-row .unit-pick { margin: 0.45rem 0 0; }
 /* The app prints its catalogue size under the cards and above the two
    destructive rows, quiet and small. */
-.acct-version { font-size: 12px; color: var(--ink-light); margin: 1.4rem 0 0 0.25rem; }
+.acct-version { font-size: 12px; color: var(--ink-light); margin: 1.4rem 0 0; }
 .acct-danger-body { margin-top: 0.8rem; padding: 1rem; border: 1px solid #e3cfc9;
   border-radius: 12px; background: #fdf7f5; }
 .acct-danger-body label { display: block; font-size: 13px; font-weight: 700;
   margin: 0.8rem 0 0.4rem; }
-.acct-danger-body input { font-family: var(--sans); font-size: 15px; padding: 0.7rem 0.9rem;
+/* 16px, the floor smoke_test measures: anything under it makes Safari zoom the
+   page in when a thumb lands in the field and leave it there, and this is the
+   one field somebody types in under pressure. */
+.acct-danger-body input { font-family: var(--sans); font-size: 16px; padding: 0.7rem 0.9rem;
   border: 1.5px solid var(--cream-dark); border-radius: 999px; width: 100%; max-width: 14rem; }
 .go-btn.danger { background: #9c3f2f; margin-top: 0.9rem; }
 .go-btn.danger:disabled { opacity: 0.45; cursor: not-allowed; }

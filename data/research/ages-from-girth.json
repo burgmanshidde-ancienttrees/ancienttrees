@@ -2,337 +2,13 @@
   "method": "Mitchell's rule, 2.5 to 1.5 cm of girth a year",
   "written": [
     {
-      "id": "bcn_048",
-      "city": "Barcelona",
-      "name": "The Hackberry of Jardins dels Drets Humans",
-      "species": "Mediterranean Hackberry (Celtis australis)",
-      "girth_cm": 290,
-      "age_min": 100,
-      "age_max": 200
-    },
-    {
-      "id": "bru_023",
-      "city": "Brussels",
-      "name": "The Turkish Hazel of the Grand Sablon",
-      "species": "Turkish Hazel (Corylus colurna)",
-      "girth_cm": 208,
-      "age_min": 75,
-      "age_max": 150
-    },
-    {
-      "id": "bru_024",
-      "city": "Brussels",
-      "name": "The Pedunculate Oak of Mont des Arts",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "girth_cm": 166,
-      "age_min": 50,
-      "age_max": 125
-    },
-    {
-      "id": "cag_010",
-      "city": "Cagliari",
-      "name": "The Common Lime of Corongiu",
-      "species": "Common Lime (Tilia x europaea)",
-      "girth_cm": 260,
-      "age_min": 100,
-      "age_max": 175
-    },
-    {
-      "id": "kol_003",
-      "city": "Cologne",
-      "name": "The Hohenlind Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "girth_cm": 375,
-      "age_min": 150,
-      "age_max": 250
-    },
-    {
-      "id": "com_009",
-      "city": "Como",
-      "name": "The Horse Chestnut of Quarcino",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "girth_cm": 335,
-      "age_min": 125,
-      "age_max": 250
-    },
-    {
-      "id": "ftw_004",
-      "city": "Fort Worth",
-      "name": "The Pioneers Rest Texas Ash",
-      "species": "Texas Ash (Fraxinus texensis)",
-      "girth_cm": 213,
-      "age_min": 75,
-      "age_max": 150
-    },
-    {
-      "id": "fry_001",
-      "city": "Frydlant",
-      "name": "Buk u vodojemu",
-      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-      "girth_cm": 422,
+      "id": "hgh_002",
+      "city": "Higashi-Hiroshima",
+      "name": "The Horse Chestnut of Fukujo-ji",
+      "species": "Japanese Horse Chestnut (Aesculus turbinata)",
+      "girth_cm": 400,
       "age_min": 150,
       "age_max": 300
-    },
-    {
-      "id": "gir_001",
-      "city": "Girona",
-      "name": "The Great Oak of Ca n'Iglesies",
-      "species": "Sessile Oak (Quercus petraea)",
-      "girth_cm": 475,
-      "age_min": 175,
-      "age_max": 350
-    },
-    {
-      "id": "gir_003",
-      "city": "Girona",
-      "name": "The Ash of L'Aulet",
-      "species": "Narrow-Leaved Ash (Fraxinus angustifolia)",
-      "girth_cm": 590,
-      "age_min": 200,
-      "age_max": 400
-    },
-    {
-      "id": "grz_007",
-      "city": "Graz",
-      "name": "The Panoramagasse Oak (No. 54)",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "girth_cm": 280,
-      "age_min": 100,
-      "age_max": 200
-    },
-    {
-      "id": "grz_008",
-      "city": "Graz",
-      "name": "The Panoramagasse Oak (No. 56)",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "girth_cm": 490,
-      "age_min": 175,
-      "age_max": 350
-    },
-    {
-      "id": "iwk_001",
-      "city": "Iwaki",
-      "name": "Nakakamado no Shidare Momiji",
-      "species": "Japanese Maple (Acer palmatum)",
-      "girth_cm": 350,
-      "age_min": 125,
-      "age_max": 250
-    },
-    {
-      "id": "kan_002",
-      "city": "Kanazawa",
-      "name": "The Cherry of Shogetsuji",
-      "species": "Japanese Mountain Cherry (Prunus jamasakura)",
-      "girth_cm": 350,
-      "age_min": 125,
-      "age_max": 250
-    },
-    {
-      "id": "kra_010",
-      "city": "Krakow",
-      "name": "The Basztowa Turkish Hazel",
-      "species": "Turkish Hazel (Corylus colurna)",
-      "girth_cm": 165,
-      "age_min": 50,
-      "age_max": 125
-    },
-    {
-      "id": "kra_014",
-      "city": "Krakow",
-      "name": "The Sikorskiego Square Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "girth_cm": 263,
-      "age_min": 100,
-      "age_max": 200
-    },
-    {
-      "id": "kra_027",
-      "city": "Krakow",
-      "name": "The Karmelicka Elm",
-      "species": "European White Elm (Ulmus laevis)",
-      "girth_cm": 290,
-      "age_min": 100,
-      "age_max": 200
-    },
-    {
-      "id": "kra_028",
-      "city": "Krakow",
-      "name": "The Morawskiego Elm",
-      "species": "European White Elm (Ulmus laevis)",
-      "girth_cm": 399,
-      "age_min": 150,
-      "age_max": 300
-    },
-    {
-      "id": "kra_031",
-      "city": "Krakow",
-      "name": "The Wola Justowska Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "girth_cm": 351,
-      "age_min": 125,
-      "age_max": 250
-    },
-    {
-      "id": "kra_032",
-      "city": "Krakow",
-      "name": "The Botanical Garden Hungarian Oak",
-      "species": "Hungarian Oak (Quercus frainetto)",
-      "girth_cm": 462,
-      "age_min": 175,
-      "age_max": 350
-    },
-    {
-      "id": "mce_001",
-      "city": "Mcely",
-      "name": "Buk v Podlesí",
-      "species": "European Beech (Fagus sylvatica)",
-      "girth_cm": 415,
-      "age_min": 150,
-      "age_max": 300
-    },
-    {
-      "id": "paj_001",
-      "city": "Pajūris",
-      "name": "The Akmenynė Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "girth_cm": 445,
-      "age_min": 175,
-      "age_max": 300
-    },
-    {
-      "id": "par_033",
-      "city": "Paris",
-      "name": "The Turkey Oak of Square Rene-Le Gall",
-      "species": "Turkey Oak (Quercus cerris)",
-      "girth_cm": 190,
-      "age_min": 75,
-      "age_max": 150
-    },
-    {
-      "id": "pgi_005",
-      "city": "Perugia",
-      "name": "The Hackberry of Via Fiume",
-      "species": "Mediterranean Hackberry (Celtis australis)",
-      "girth_cm": 445,
-      "age_min": 175,
-      "age_max": 300
-    },
-    {
-      "id": "pgi_009",
-      "city": "Perugia",
-      "name": "The North Oak of Strada del Gioco",
-      "species": "Downy Oak (Quercus pubescens)",
-      "girth_cm": 430,
-      "age_min": 150,
-      "age_max": 300
-    },
-    {
-      "id": "pgi_010",
-      "city": "Perugia",
-      "name": "The South Oak of Strada del Gioco",
-      "species": "Downy Oak (Quercus pubescens)",
-      "girth_cm": 422,
-      "age_min": 150,
-      "age_max": 300
-    },
-    {
-      "id": "pgi_011",
-      "city": "Perugia",
-      "name": "The Downy Oak of Strada dei Conservoni",
-      "species": "Downy Oak (Quercus pubescens)",
-      "girth_cm": 427,
-      "age_min": 150,
-      "age_max": 300
-    },
-    {
-      "id": "ptl_016",
-      "city": "Portland",
-      "name": "The Irvington Elm",
-      "species": "Field Elm (Ulmus minor)",
-      "girth_cm": 454,
-      "age_min": 175,
-      "age_max": 350
-    },
-    {
-      "id": "ptl_017",
-      "city": "Portland",
-      "name": "The Thompson Street Horsechestnut",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "girth_cm": 436,
-      "age_min": 150,
-      "age_max": 300
-    },
-    {
-      "id": "ppj_001",
-      "city": "Prosec pod Jestedem",
-      "name": "Buk lesní v Proseči pod Ještědem",
-      "species": "European Beech (Fagus sylvatica)",
-      "girth_cm": 500,
-      "age_min": 200,
-      "age_max": 350
-    },
-    {
-      "id": "sal_003",
-      "city": "Sant'Alfio",
-      "name": "The Etna Birch of Magazzeni",
-      "species": "Etna Birch (Betula aetnensis)",
-      "girth_cm": 205,
-      "age_min": 75,
-      "age_max": 150
-    },
-    {
-      "id": "tgn_004",
-      "city": "Tarragona",
-      "name": "The Wild Pear of El Cisterer",
-      "species": "Almond-leaved Pear (Pyrus spinosa)",
-      "girth_cm": 197,
-      "age_min": 75,
-      "age_max": 150
-    },
-    {
-      "id": "tre_005",
-      "city": "Trento",
-      "name": "The Elm of Maso Ginocchio",
-      "species": "Field Elm (Ulmus minor)",
-      "girth_cm": 393,
-      "age_min": 150,
-      "age_max": 300
-    },
-    {
-      "id": "tre_007",
-      "city": "Trento",
-      "name": "The Chestnut of Sardagna",
-      "species": "Sweet Chestnut (Castanea sativa)",
-      "girth_cm": 550,
-      "age_min": 200,
-      "age_max": 400
-    },
-    {
-      "id": "tre_009",
-      "city": "Trento",
-      "name": "The Beech of Malga Brigolina",
-      "species": "European Beech (Fagus sylvatica)",
-      "girth_cm": 465,
-      "age_min": 175,
-      "age_max": 350
-    },
-    {
-      "id": "tre_010",
-      "city": "Trento",
-      "name": "The Wild Cherry of Passo del Cimirlo",
-      "species": "Wild Cherry (Prunus avium)",
-      "girth_cm": 359,
-      "age_min": 125,
-      "age_max": 250
-    },
-    {
-      "id": "war_014",
-      "city": "Warsaw",
-      "name": "The Puławska Street Pear",
-      "species": "European Pear (Pyrus communis)",
-      "girth_cm": 153,
-      "age_min": 50,
-      "age_max": 125
     }
   ],
   "refused": [
@@ -385,6 +61,11 @@
       "id": "bgm_006",
       "city": "Bergamo",
       "why": "species outside the published rate: Cedrus deodara"
+    },
+    {
+      "id": "bnr_001",
+      "city": "Bonnerue",
+      "why": "girth 715 cm is past where the linear rule holds; we measurably under-age trunks this size"
     },
     {
       "id": "bdx_001",
@@ -455,6 +136,11 @@
       "id": "bru_027",
       "city": "Brussels",
       "why": "species outside the published rate: Ilex aquifolium 'Pyramidalis'"
+    },
+    {
+      "id": "bru_031",
+      "city": "Brussels",
+      "why": "species outside the published rate: Ailanthus altissima"
     },
     {
       "id": "bsc_011",
@@ -547,6 +233,16 @@
       "why": "species outside the published rate: Cupressus sempervirens"
     },
     {
+      "id": "flo_024",
+      "city": "Florence",
+      "why": "species outside the published rate: Pinus pinea"
+    },
+    {
+      "id": "flo_026",
+      "city": "Florence",
+      "why": "species outside the published rate: Populus nigra"
+    },
+    {
       "id": "ftl_001",
       "city": "Fort Lauderdale",
       "why": "species outside the published rate: Enterolobium cyclocarpum"
@@ -605,6 +301,11 @@
       "id": "gnv_013",
       "city": "Genoa",
       "why": "species outside the published rate: Jubaea chilensis"
+    },
+    {
+      "id": "gnt_008",
+      "city": "Ghent",
+      "why": "species outside the published rate: Platanus x acerifolia"
     },
     {
       "id": "gir_002",
@@ -690,6 +391,76 @@
       "id": "hel_012",
       "city": "Helsinki",
       "why": "species outside the published rate: Pinus sylvestris f. gibberosa"
+    },
+    {
+      "id": "hgh_003",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Ilex rotunda"
+    },
+    {
+      "id": "hgh_004",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Thujopsis dolabrata"
+    },
+    {
+      "id": "hgh_010",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Quercus sessilifolia"
+    },
+    {
+      "id": "hgh_011",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Cryptomeria japonica"
+    },
+    {
+      "id": "hgh_012",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Sciadopitys verticillata"
+    },
+    {
+      "id": "hgh_013",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Chamaecyparis obtusa"
+    },
+    {
+      "id": "hgh_014",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Abies firma"
+    },
+    {
+      "id": "hgh_015",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Abies firma"
+    },
+    {
+      "id": "hgh_016",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Pinus densiflora"
+    },
+    {
+      "id": "hgh_017",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Quercus sessilifolia"
+    },
+    {
+      "id": "hgh_006",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Cryptomeria japonica"
+    },
+    {
+      "id": "hgh_007",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Cryptomeria japonica"
+    },
+    {
+      "id": "hgh_008",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Quercus salicina"
+    },
+    {
+      "id": "hgh_009",
+      "city": "Higashi-Hiroshima",
+      "why": "species outside the published rate: Abies firma"
     },
     {
       "id": "hbi_004",
@@ -782,6 +553,21 @@
       "why": "species outside the published rate: Phoenix canariensis"
     },
     {
+      "id": "kyo_016",
+      "city": "Kyoto",
+      "why": "species outside the published rate: Castanopsis sieboldii"
+    },
+    {
+      "id": "kyo_018",
+      "city": "Kyoto",
+      "why": "species outside the published rate: Ginkgo biloba"
+    },
+    {
+      "id": "kyo_017",
+      "city": "Kyoto",
+      "why": "species outside the published rate: Cinnamomum camphora"
+    },
+    {
       "id": "lvn_004",
       "city": "Leuven",
       "why": "species outside the published rate: Platanus x acerifolia"
@@ -845,6 +631,11 @@
       "id": "mil_022",
       "city": "Milan",
       "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "mil_029",
+      "city": "Milan",
+      "why": "species outside the published rate: Taxus baccata"
     },
     {
       "id": "myz_003",
@@ -975,6 +766,36 @@
       "id": "pal_021",
       "city": "Palermo",
       "why": "species outside the published rate: Araucaria heterophylla"
+    },
+    {
+      "id": "pam_007",
+      "city": "Pamplona",
+      "why": "species outside the published rate: Populus nigra"
+    },
+    {
+      "id": "pam_008",
+      "city": "Pamplona",
+      "why": "species outside the published rate: Populus nigra"
+    },
+    {
+      "id": "pam_009",
+      "city": "Pamplona",
+      "why": "species outside the published rate: Platanus x acerifolia"
+    },
+    {
+      "id": "pam_010",
+      "city": "Pamplona",
+      "why": "species outside the published rate: Populus nigra"
+    },
+    {
+      "id": "pam_011",
+      "city": "Pamplona",
+      "why": "species outside the published rate: Populus nigra"
+    },
+    {
+      "id": "pam_012",
+      "city": "Pamplona",
+      "why": "species outside the published rate: Populus nigra"
     },
     {
       "id": "pgi_007",
@@ -1230,6 +1051,16 @@
       "id": "vlc_032",
       "city": "Valencia",
       "why": "species outside the published rate: Ficus macrophylla"
+    },
+    {
+      "id": "van_006",
+      "city": "Vancouver",
+      "why": "entry describes more than one trunk"
+    },
+    {
+      "id": "van_007",
+      "city": "Vancouver",
+      "why": "species outside the published rate: Quercus sp."
     },
     {
       "id": "vln_014",
