@@ -1,0 +1,71 @@
+{
+  "city": "Fontaine",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Fontaine is a small village in the Territoire de Belfort, and its lime tree on the Place de Turenne carries the only classification the whole department has ever given a tree. Marshal de Turenne stopped here on 29 December 1674, took his officers' reports under its branches, and left the village his name a week before winning the Battle of Turckheim; he was dead within the year. The lime, already old that night, still stands over 700 years later beside the town hall, its trunk more than 8 metres round.",
+  "meta_description": "The Turenne Lime: the only classified tree in the Territoire de Belfort, over 700 years old, where a marshal took his officers' report in 1674.",
+  "hero_tree_id": "fte_001",
+  "oldest_tree_id": "fte_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Fontaine?",
+      "a": "The Turenne Lime, on the Place de Turenne beside the town hall, over 700 years old and the only tree the Territoire de Belfort has ever classified."
+    },
+    {
+      "q": "Why is it called the Turenne Lime?",
+      "a": "Marshal de Turenne stopped in Fontaine on 29 December 1674 and took his officers' reports under it, a week before winning the Battle of Turckheim. He was killed in action the following July, and the tree kept his name."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the open village square with no gate or ticket."
+    },
+    {
+      "q": "How big is the tree?",
+      "a": "Both sources that measured it put the trunk at more than 8 metres round, under a crown about 20 metres tall."
+    }
+  ],
+  "trees": [
+    {
+      "name": "The Turenne Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "over 700 years",
+      "age_min": 700,
+      "age_max": 900,
+      "girth_cm": 800,
+      "location": {
+        "address": "Place de Turenne, Fontaine, 90150, Territoire de Belfort",
+        "latitude": 47.6570977,
+        "longitude": 6.9970718,
+        "neighbourhood": "Fontaine village centre, beside the town hall"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Tilleul_de_Turenne",
+        "https://www.ici.fr/emissions/c-est-arrive-pres-de-chez-vous/y-a-t-il-un-rapport-entre-turenne-un-militaire-du-17-eme-et-le-tilleul-de-turenne-qui-se-trouve-a-fontaine-3578609"
+      ],
+      "access": "Free. Stands on the open village square (Place de Turenne) beside Fontaine's town hall; no gate, no ticket.",
+      "transport": "Rural village in Territoire de Belfort, roughly 15 minutes by car from Belfort; no confirmed public transit stop at the village, not verified further given the time box.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "id": "fte_001",
+      "story": "On 29 December 1674 the Marshal de Turenne stopped at Fontaine and took his officers' reports under this lime, with the village turning out to pay its respects. A week later he won the battle of Turckheim. By the following July he had been killed in action, and the tree kept his name.\n\nIt still stands on the square that carries it too, beside Fontaine's town hall, about 20 metres tall over a base both of its sources put at more than 8 metres round. That figure is given as a floor rather than a measurement, and so is the age: over 700 years, with nobody offering anything tighter. It was already an old tree on the night the marshal halted here.\n\nFrance classified it on 15 April 1911, on artistic grounds rather than botanical ones, and as late as 2006 it was still the only tree in the whole Territoire de Belfort with that protection. The A.R.B.R.E.S. association lists it among the Remarkable Trees of France. It has needed looking after. Ice and storms tore at it in 1978, and in September 1985 a specialist, Francois Tarvenier, treated the roots, cleaned out the trunk, pruned it selectively and reinforced the structure.\n\nThat restoration is the last published account of its condition we can find. If you pass through Fontaine, tell us how it looks now.",
+      "how_to_recognise": "You can recognise it by the base, more than 8 metres round, under a crown some 20 metres tall. It stands on the Place de Turenne, the village square beside Fontaine's town hall.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
+    }
+  ],
+  "question_meta": "Fontaine's one mapped tree is the Turenne Lime, over 700 years old and the only classified tree in the Territoire de Belfort.",
+  "question_answer": "Fontaine's one mapped tree is the Turenne Lime, on the Place de Turenne beside the town hall, over 700 years old and the only tree the Territoire de Belfort has ever classified, its trunk more than 8 metres round.",
+  "question_context": "The lime takes its name from Marshal de Turenne, who stopped in Fontaine on 29 December 1674 and took his officers' reports under it while the village turned out to pay its respects, a week before he won the Battle of Turckheim. He was killed in action the following July, and the tree kept his name. France classified it on 15 April 1911 on artistic grounds, and as late as 2006 it was still the only tree in the whole department with that protection. It has needed looking after: ice and storms tore at it in 1978, and in September 1985 a specialist treated the roots, cleaned out the trunk, pruned it selectively and reinforced the structure. That restoration is the last published account of its condition. Both sources that measured it put the trunk at more than 8 metres round, and its age at over 700 years, each figure given as a floor rather than a precise measurement."
+}

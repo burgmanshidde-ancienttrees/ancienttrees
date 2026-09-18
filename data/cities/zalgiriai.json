@@ -72,7 +72,7 @@
       },
       "fame": {
         "langs": 2,
-        "checked": "2026-09-17",
+        "checked": "2026-09-18",
         "source_name": "Oak of Hermanas Zudermanas, Žalgiriai",
         "qid": "Q12656469",
         "views": 13
@@ -110,10 +110,18 @@
       },
       "fame": {
         "langs": 1,
-        "checked": "2026-09-17",
+        "checked": "2026-09-18",
         "source_name": "Pagryniai oak",
         "qid": "Q61386081",
         "views": 12
+      },
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
       }
     }
   ]

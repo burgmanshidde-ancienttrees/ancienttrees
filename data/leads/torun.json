@@ -1,0 +1,17 @@
+{
+  "city": "Torun",
+  "country": "Poland",
+  "city_slug": "torun",
+  "note": "Torun has no published city page yet. First candidate from a 2026-09-18 verify pass on data/leads/_famous-poland.json's 'Scots pines Three Auroras' lead, full verified facts kept in data/research/famouspoland-refill-verified.json. Nothing published; this is a starting point for a future Torun research pass.",
+  "leads": [
+    {
+      "name": "Trzy Zorze (The Three Auroras)",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "lat": 53.051256,
+      "lng": 18.569115,
+      "status": "lead",
+      "why": "Officially protected as a single nature-monument entry (Uchwala nr 812/18 Rady Miasta Torunia, 22 lutego 2018), a group of three Scots pines with one popular name, one street address (ul. Pawia, Wrzosy forestry district) and one shared coordinate. Girths corroborated identically by two independent sources: pl.wikipedia's 'Pomniki przyrody w Toruniu' (reproducing the city's own register) and PTTK's own walking-route writeup, both giving 320, 195 and 210 cm. No age recorded anywhere; left empty rather than guessed. Passes the ensemble test (one register entry, one name, one place to stand), on a forest road PTTK runs organised walks past, beside a 403cm protected pedunculate oak and the 'Monument to the Polish Mother' (1933) noted by the same sources as worth researching alongside it for a future Torun cluster. Full verified record in data/research/famouspoland-refill-verified.json."
+    }
+  ],
+  "blocked": []
+}

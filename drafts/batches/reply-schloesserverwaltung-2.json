@@ -1,7 +1,7 @@
 {
  "batch": "reply-schloesserverwaltung-2",
  "note": "Nudge on the photographs Vera Wesinger offered on 2026-08-26 for 'Mitte oder Ende September'. The window is now. Last contact 2026-09-07 was the generic app-launch mail and did not mention the photographs. The three trees named are still photo-less in munich.json (muc_020, muc_022, muc_014).",
- "status": "draft",
+ "status": "sent_complete",
  "mails": [
   {
    "to": "Vera.Wesinger@bsv.bayern.de",
@@ -10,5 +10,6 @@
    "body": "Sehr geehrte Frau Wesinger,\n\neine kurze Nachfrage, ganz ohne Eile: Sie hatten im August angeboten, Mitte oder Ende September Fotos der alten Bäume im Englischen Garten und im Schlosspark Nymphenburg zu schicken. Falls das noch passt, freue ich mich sehr darauf.\n\nOhne Bild sind unverändert die Linde und die Winterlinde im Englischen Garten und die Trauerbuche an der Schwanenbrücke.\n\nUnd falls es gerade untergeht, ist das überhaupt kein Problem. Dann melde ich mich im Frühjahr noch einmal.\n\nÜbrigens gibt es die App inzwischen auch fürs iPhone, mit Ihren Bäumen darin:\nhttps://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB\n\nMit freundlichen Grüßen,\nHidde\nhttps://ancienttrees.app/munich",
    "resend_reason": "She offered photographs for mid or late September; this asks whether that still suits, and gives an easy way out."
   }
- ]
+ ],
+ "approved": "2026-09-18, in session: \"Stuur mail\""
 }

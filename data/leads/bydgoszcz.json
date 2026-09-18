@@ -1,0 +1,35 @@
+{
+  "city": "Bydgoszcz",
+  "country": "Poland",
+  "city_slug": "bydgoszcz",
+  "note": "Bydgoszcz has no published city page yet. This tree, verified and fully written (story + how_to_recognise) 2026-09-17 in data/research/famouspoland-batch4-verified.json, is held rather than published 2026-09-18: a city civic-vote win and a local nickname is real local significance but not a national or legendary superlative on its own, and one tree does not clear the four-tree floor. Held as the seed for a future Bydgoszcz page; data/leads/_famous-poland.json also carries an unverified 'Dab Bartek (Bydgoszcz)' lead that could become a second Bydgoszcz tree. The full written prose is kept here so a later pass can ship it unchanged once enough Bydgoszcz trees exist.",
+  "leads": [
+    {
+      "id": "bdg_001",
+      "name": "The Jeremi Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "girth_cm": 305,
+      "lat": 53.16261639,
+      "lng": 18.150855,
+      "status": "lead",
+      "location": {
+        "address": "On Zbocze Fordońskie (the Fordoń escarpment) near the Tatrzańskie housing estate, Fordon district, Bydgoszcz, Kuyavian-Pomeranian Voivodeship, Poland",
+        "neighbourhood": "Fordon"
+      },
+      "verified_sources": [
+        "https://www.modrzew.org.pl/laudacja-na-czesc-debu-jeremiego/",
+        "https://metropoliabydgoska.pl/bydgoskie-drzewo-roku-2023-oznaczone-to-fordonski-dab-napoleona/"
+      ],
+      "access": "Free. Stands in open ground on the Fordoń escarpment, on the public walking trail named after Jeremi Przybora (Szlak im. Jeremiego Przybory, which connects Fordon to the Myslecinek forest park); no permission needed.",
+      "transport": "In the Fordon district of Bydgoszcz, on the hillside above the Vistula near the Tatrzańskie estate; reachable by city bus to Fordon then a short uphill walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Bydgoszcz voted an oak into first place before it named anything else that year. The city's own 'Tree of the Year' poll gave 932 votes, a local record, to a pedunculate oak on the escarpment above the Vistula in Fordon.\n\nThe tree already had three names before that vote. The council itself calls it Jeremi, in a 2011 protection order honouring Jeremi Przybora, the poet and co-founder of the satirical Kabaret Starszych Panow, who grew up on a nearby estate and never lost his attachment to the hillside. Locals call it something darker, Wisielec, the Hanged Man, and something grander, Dab Napoleona, Napoleon's Oak, on the strength of a story that the emperor watched his own troops cross the river from beneath its crown during the 1812 campaign into Russia. Nobody has dated the tree to say whether it could have stood that long ago; that is tradition, not a fact this page can confirm. Archaeologists do think the hillside was once a medieval motte-and-bailey fortress.\n\nThe trunk is a modest 305 centimetres round, well short of the 600 centimetre oaks the region protects elsewhere, which puts only a broad band on it, a century and a half to two and a half centuries, and no narrower. The crown reads windswept rather than tidy, shaped by the open ground it stands on.\n\nIt stands on a public trail named for Przybora himself, connecting Fordon to the Myslecinek forest, free to reach by city bus and a short climb.",
+      "how_to_recognise": "You can recognise it by the windswept, ragged crown atop a 305cm trunk, standing alone in open ground on the Fordon escarpment above the Vistula, on the walking trail named for Jeremi Przybora near the Tatrzanskie estate."
+    }
+  ],
+  "blocked": []
+}

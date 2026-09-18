@@ -235,7 +235,16 @@
       },
       "how_to_recognise": "The more sheltered of Breda's two registered wingnuts, multi-stemmed from the base, on the Vijverstraat corner of the park.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          7,
+          8,
+          9
+        ],
+        "label": "July to September: long green catkins of winged nutlets hang from every branch",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bre_007",
@@ -300,7 +309,15 @@
       },
       "how_to_recognise": "The plain green-leaved beech among the park's copper and weeping forms, along the Paul Withausenweg.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "bre_009",
@@ -329,7 +346,15 @@
       },
       "how_to_recognise": "The register's own tallest pedunculate oak in the park, standing above the surrounding tree line near the J.F. Kennedylaan.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bre_010",

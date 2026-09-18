@@ -11,11 +11,9 @@
 // ui(lang) supplies the chrome labels with English fallback per key.
 import TreeCard from "./TreeCard.astro";
 import LanguagePicker from "./LanguagePicker.astro";
-import SignInModal from "./SignInModal.astro";
 import ShareButton from "./ShareButton.astro";
 import Base from "../layouts/Base.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
-import { SIGNIN_JS } from "../lib/signin-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { renderableTrees, treeSlugsForCity, hasQuestionPage, type CityEntry } from "../lib/trees";
 import { usablePhoto } from "../lib/images";
@@ -181,6 +179,5 @@ const cityHasQuestion = hasQuestionPage(city);
       </div>
     </div>
   </div>
-  <SignInModal lang={lang} />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS + SHARE_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS + SHARE_JS} />
 </Base>

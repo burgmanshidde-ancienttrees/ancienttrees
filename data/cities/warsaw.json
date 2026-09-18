@@ -963,7 +963,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by six trunks rising from one base, the thickest just 73 centimetres round, standing beside the pressure tower on the Water Filters' guided-tour route."
+      "how_to_recognise": "You can recognise it by six trunks rising from one base, the thickest just 73 centimetres round, standing beside the pressure tower on the Water Filters' guided-tour route.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "war_030",
@@ -995,6 +1004,14 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
       }
     },
     {

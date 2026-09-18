@@ -1,0 +1,62 @@
+{
+  "place": "Lubiechów Dolny",
+  "country": "Poland",
+  "place_slug": "lubiechow-dolny",
+  "note": "A small village near Cedynia, West Pomerania, roughly 60km from Szczecin (outside any published city's day-trip boundary). Two named, council-protected oaks stand 100m apart on the village road. Verified and fully written (story + how_to_recognise) 2026-09-17 in data/research/famouspoland-batch4-verified.json, held rather than published 2026-09-18: neither tree carries a legendary or national angle (unlike Rogalin's Lech/Rus or Napoleon associations elsewhere in this batch), just local nicknames, so the pair does not clearly pass the single-famous-tree destination test (would somebody travel specifically for THIS). Two trees also falls short of the four-tree floor. The full written prose is kept here rather than discarded, so a later pass can ship it unchanged if a third tree turns up nearby or a stronger fame signal is found.",
+  "leads": [
+    {
+      "id": "lud_001",
+      "name": "The Madej Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 350 years",
+      "age_min": 250,
+      "age_max": 450,
+      "girth_cm": 599,
+      "lat": 52.9186094,
+      "lng": 14.2048403,
+      "status": "lead",
+      "location": {
+        "address": "Roadside on the road to Bielinek/Piasek (route 125/126), upper part of Lubiechów Dolny, gmina Cedynia, Gryfino County, West Pomeranian Voivodeship, Poland",
+        "neighbourhood": "Lubiechów Dolny"
+      },
+      "verified_sources": [
+        "https://www.pomniki-przyrody.pl/?p=17418",
+        "http://www.pomeranica.pl/wiki/Lubiech%C3%B3w_Dolny"
+      ],
+      "access": "Free. Stands right beside a public road in the village, no permission needed; the retaining wall it grows from is visible from the roadside.",
+      "transport": "No public transport nearby; rural village reached by car, roughly 60km from Szczecin (well outside the day-trip boundary of any city we currently publish).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Somebody built a brick wall to stop this oak sliding downhill. When the road through the upper end of Lubiechow Dolny was widened, before the Second World War, the slope beneath the tree was cut away, and the roadmen laid up a retaining wall of clinker brick to hold the ground the trunk was standing on. It worked, and the oak is now slowly taking the wall back: the base of the trunk has begun to grow over the brickwork and close around it.\n\nThe trunk measured 599 centimetres round in 2021, under a crown twenty-two metres up. Nobody has dated it, and girth is the only basis there is, which makes the honest band a wide one. A listed pedunculate oak of 580 centimetres elsewhere in the region is officially described as over 250 years old; the measured recent growth of the oak a hundred metres down the same road, about a centimetre and a half a year, would put a trunk this size nearer 400. Somewhere in there.\n\nThe road was a German road when the wall went up. In 1945 the border moved to the Oder a few kilometres west of here and everyone in the village was replaced. Cedynia's council protected this oak and its neighbour in November 2013 and gave neither of them a name. Madej and Pietrek are what the people living here call them.",
+      "how_to_recognise": "You can recognise it by the clinker-brick retaining wall at its foot, which the base of the trunk is growing over. It stands at the top end of the village, a hundred metres above the Pietrek Oak, and is 5.99 metres round."
+    },
+    {
+      "id": "lud_002",
+      "name": "The Pietrek Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 350 years",
+      "age_min": 250,
+      "age_max": 450,
+      "girth_cm": 618,
+      "lat": 52.917582,
+      "lng": 14.204373,
+      "status": "lead",
+      "location": {
+        "address": "Roadside on the road to Bielinek/Piasek (route 125/126), about 100m below the Madej Oak, Lubiechów Dolny, gmina Cedynia, Gryfino County, West Pomeranian Voivodeship, Poland",
+        "neighbourhood": "Lubiechów Dolny"
+      },
+      "verified_sources": [
+        "https://www.pomniki-przyrody.pl/?p=17418",
+        "https://lenartpawel.pl/pomnikowy-dab-szypulkowy-pietrek-z-lubiechowa-dolnego.html",
+        "http://www.pomeranica.pl/wiki/Lubiech%C3%B3w_Dolny"
+      ],
+      "access": "Free. Grows about half a metre from a public road, right of way, no permission needed.",
+      "transport": "No public transport nearby; rural village reached by car, roughly 60km from Szczecin (well outside the day-trip boundary of any city we currently publish).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A lorry hit this oak, and the damage is still the first thing you see. It grows about half a metre from the edge of a public road on a ravine slope that tilts toward the tarmac, which is a poor address for a trunk 618 centimetres round, and the collision left a large dead patch on the north-west face. There is old tree surgery on it. The oak is still putting on wood regardless: the same trunk was 608 centimetres in 2013 and 618 when it was measured in October 2021, a centimetre and a half a year.\n\nTwenty metres tall, ten metres of crown, and the thicker of the two protected oaks in this village by nineteen centimetres. Cedynia's council gave both of them monument status in November 2013 without naming either. Pietrek is the village's own name for this one. Nobody has dated it, and girth is the only basis anyone has, which puts it somewhere between 250 and 450 years old and no narrower than that.\n\nThree nature reserves lie within five hundred metres. One of them, Bielinek above the Oder, holds the only stand of downy oak in Poland, a dry southern species with no business this far north, growing a short walk from two ordinary Polish oaks that have outlasted a border change.",
+      "how_to_recognise": "You can recognise it by the large dead patch on the north-west side of the trunk where a lorry struck it, and by the trunk itself, 6.18 metres round. It stands half a metre from the road, a hundred metres below the Madej Oak."
+    }
+  ],
+  "blocked": []
+}

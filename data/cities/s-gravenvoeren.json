@@ -58,7 +58,14 @@
       "photos": [],
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the nails, at least eighty of them driven into the dead back of the trunk. It stands where two hollow roads cross at the Heuvelke, about 350 metres southwest of the Sint-Lambertuskerk."
+      "how_to_recognise": "You can recognise it by the nails, at least eighty of them driven into the dead back of the trunk. It stands where two hollow roads cross at the Heuvelke, about 350 metres southwest of the Sint-Lambertuskerk.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }

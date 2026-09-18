@@ -89,9 +89,9 @@
         "https://commons.wikimedia.org/wiki/File:Torun_pomnik_przyrody_sosny_%22Trzy_Zorze%22_(01).jpg",
         "https://commons.wikimedia.org/wiki/File:Torun_pomnik_przyrody_sosny_%22Trzy_Zorze%22_(02).jpg"
       ],
-      "status": "lead",
-      "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "RESOLVED 2026-09-18, verified and delivered to data/leads/torun.json (no Torun city page exists yet)",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "species_basis": "confirmed by Torun's own register (Uchwala nr 812/18) and PTTK's walking-route writeup"
     },
     {
       "name": "Sosna mielnicka",
@@ -140,7 +140,9 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Witomi%C5%84skie_S%C5%82o%C5%84ca_(4x_je%C5%99%C3%A1b_prost%C5%99edn%C3%AD_-_Sorbus_intermedia),_Gdynia_-_Witomino,_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD,_Polsko_2026.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-18, verified and delivered to data/leads/gdynia.json (no Gdynia city page exists yet)",
+      "species": "Swedish Whitebeam (Sorbus intermedia)",
+      "species_basis": "confirmed by Gdynia council's own designation (Uchwala nr LIV/1660/23) and sozosfera.pl"
     },
     {
       "name": "Wszebora (pine)",
@@ -164,9 +166,9 @@
         "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_czerwiec_2024_,_032.jpg",
         "https://commons.wikimedia.org/wiki/File:Bursztywnoa_Dama_-_sosna_rumelijska_-_drzewo_pomnikowe_w_Parku_Dietla_w_Sosnowcu,_PL.ZIPOP.1393.PP.2475011.1798,_czerwiec_2024_,_037.jpg"
       ],
-      "status": "lead",
-      "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "RESOLVED 2026-09-18, verified and delivered to data/leads/sosnowiec.json (no coordinate found, no Sosnowiec city page exists yet)",
+      "species": "Balkan Pine (Pinus peuce)",
+      "species_basis": "confirmed by Sosnowiec city council's own designation post and a corroborating local nature blog"
     },
     {
       "name": "Dąb Bartek (Bydgoszcz)",
@@ -308,7 +310,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Madej_(D%C4%85b_Lubiechowski_N),_Lubiech%C3%B3w_Dolny,_gmina_Cedynia,_okres_Gryfino.jpg"
       ],
-      "status": "VERIFIED AND WRITTEN 2026-09-17, story and how_to_recognise complete as lud_001 (The Madej Oak) in data/research/famouspoland-batch4-verified.json, not yet published: paired with lud_002 (Pietrek, 100m away), two named village oaks with no legendary or national angle (unlike Rogalin's Lech/Rus), a weaker single-tree-exception case held for a session to weigh rather than shipped on this pass's own judgement",
+      "status": "HELD 2026-09-18: judged in session against the single-famous-tree destination test, does not clear it (local nicknames only, no legendary/national angle) and stays below the four-tree floor. Full verified record and written story kept in data/leads/lubiechow-dolny.json.",
       "species": "Pedunculate Oak (Quercus robur)",
       "species_basis": "confirmed by pomniki-przyrody.pl and lenartpawel.pl, both naming it dab szypulkowy"
     },
@@ -341,7 +343,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pietrek_(D%C4%85b_Lubiechowski_S),_Lubiech%C3%B3w_Dolny,_gmina_Cedynia,_okres_Gryfino.jpg"
       ],
-      "status": "VERIFIED AND WRITTEN 2026-09-17, story and how_to_recognise complete as lud_002 (The Pietrek Oak) in data/research/famouspoland-batch4-verified.json, not yet published: see lud_001's note, same 'lubiechow-dolny' pairing held for a container decision",
+      "status": "HELD 2026-09-18: same judgement as its neighbour lud_001. Full verified record and written story kept in data/leads/lubiechow-dolny.json.",
       "species": "Pedunculate Oak (Quercus robur)",
       "species_basis": "confirmed by pomniki-przyrody.pl and lenartpawel.pl, both naming it dab szypulkowy"
     },
@@ -387,7 +389,7 @@
         "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_6_5-2015.jpg",
         "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_7_5-2015.jpg"
       ],
-      "status": "VERIFIED AND WRITTEN 2026-09-17, story and how_to_recognise complete as bdg_001 (The Jeremi Oak) in data/research/famouspoland-batch4-verified.json, not yet published: a city civic vote and a local nickname, not a national or legendary superlative, so held rather than shipped as a solo place; seeds a future Bydgoszcz city file once three more Bydgoszcz trees turn up",
+      "status": "HELD 2026-09-18: judged in session against the single-famous-tree destination test, a real civic-vote win and local nickname but not a national or legendary superlative on its own, and one tree does not clear the four-tree floor. Full verified record and written story kept in data/leads/bydgoszcz.json, seeding a future Bydgoszcz page.",
       "species": "Pedunculate Oak (Quercus robur)",
       "species_basis": "confirmed by modrzew.org.pl, a dedicated tribute piece naming it explicitly"
     },
