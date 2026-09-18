@@ -257,7 +257,7 @@
         "https://commons.wikimedia.org/wiki/File:Cyklotrasa_330Z,_%C5%BBytna,_gmina_Lyski,_okres_Rybn%C3%ADk,_Polsko_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Cyklotrasa_330Z,_%C5%BBytna,_gmina_Lyski,_okres_Rybn%C3%ADk,_Polsko_02.jpg"
       ],
-      "status": "lead"
+      "status": "HELD 2026-09-18: fully verified (see data/research/famouspoland-southA-verified.json) but the pass's own judgement is it does not clear the single-famous-tree destination test (no register standing above others, no independently confirmed legend, no age) and there are no other candidates nearby to cluster with. Stays a lead until a companion tree or stronger fame evidence turns up."
     },
     {
       "name": "Dąb Franciszek, Castle park in Żywiec",
@@ -378,7 +378,7 @@
         "https://commons.wikimedia.org/wiki/File:B%C4%99domin_(12).JPG",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Wybickiego_w_B%C4%99dominie.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-18, delivered as bed_001 (The Wybicki Oak) in a new place 'bedomin', published under the single-famous-tree exception (national Tree of the Year 2013, 3rd in European Tree of the Year 2014)"
     },
     {
       "name": "Jeremi Przybora oak in Bydgoszcz",
@@ -679,7 +679,7 @@
         "https://commons.wikimedia.org/wiki/File:B%C4%99domin_(12).JPG",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Wybickiego_w_B%C4%99dominie.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-18, delivered as bed_001 (The Wybicki Oak) in a new place 'bedomin', published under the single-famous-tree exception (national Tree of the Year 2013, 3rd in European Tree of the Year 2014)"
     },
     {
       "name": "Josef Oak",
@@ -749,7 +749,7 @@
         "https://commons.wikimedia.org/wiki/File:Hel_Topola_Helena.jpg",
         "https://commons.wikimedia.org/wiki/File:Hel_Topola_Helena_2.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-18, delivered as hlp_001 (Helena the Poplar) in a new place 'hel', published under the single-famous-tree exception (national Tree of the Year 2017); the id prefix 'hel' was already taken by Helsinki so this place uses 'hlp'",
       "species": "Poplar (Populus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     }
