@@ -10,27 +10,120 @@
 // 3. The inline email flow, same OTP endpoint the account page uses.
 import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
 
-export const SIGNIN_JS = `
+// THE TOKEN IS CAUGHT IN THE HEAD, BEFORE ANY PAGE SCRIPT ASKS WHO YOU ARE.
+//
+// Hidde, 2026-09-18, on the whole flow: it is clunky which pages you land on.
+// One cause was invisible and underneath most of it. A magic link and a Google
+// return both come back as an ORDINARY PAGE LOAD with the tokens in the
+// fragment, and this token was parsed at the FOOT of the body. Every script
+// that asks C.session() runs earlier than that: the hearts (tree-actions-js),
+// the ticks (visited-sync-js), the worth-it vote, the settings page. All of
+// them asked before the answer existed, got null, and painted the page as
+// signed out. So you came back from Google onto the tree you were reading and
+// your own saves were invisible, the tick was blank and /account/settings said
+// you were not signed in, until you reloaded by hand.
+//
+// It was hidden by the two pages that happened to be fine. /account parses the
+// fragment itself, and the nav's "Account" swap is a type="module" script,
+// which the browser defers until after everything else, so those two were
+// right while the rest of the site was wrong.
+//
+// Parsing it here fixes the class rather than the cases: whatever a page asks,
+// it now gets the right answer on the first ask. It is deliberately the
+// smallest thing that can run this early, with no dependency on anything.
+export const SIGNIN_CATCH_JS = `
 <script>
 (function() {
-  var SB = '${SUPABASE_URL}';
-  var SBK = '${SUPABASE_KEY}';
-  // 1. catch a returning magic link on any page
   var h = {};
   location.hash.slice(1).split('&').forEach(function(kv) {
     var p = kv.split('=');
     if (p[0]) h[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || '');
   });
-  if (h.access_token) {
-    try {
-      localStorage.setItem('ancienttrees_session', JSON.stringify({
-        access_token: h.access_token,
-        refresh_token: h.refresh_token || '',
-        expires_at: Math.floor(Date.now() / 1000) + parseInt(h.expires_in || '3600', 10)
-      }));
-    } catch (e) {}
-    history.replaceState(null, '', location.pathname);
+  if (!h.access_token) return;
+  try {
+    localStorage.setItem('ancienttrees_session', JSON.stringify({
+      access_token: h.access_token,
+      refresh_token: h.refresh_token || '',
+      expires_at: Math.floor(Date.now() / 1000) + parseInt(h.expires_in || '3600', 10)
+    }));
+  } catch (e) {}
+  history.replaceState(null, '', location.pathname + location.search);
+  document.documentElement.dataset.signedIn = '1';
+  // What they were doing when they were asked to sign in, read here and handed
+  // to the foot of the page, which is where the code that can finish it lives.
+  var want = null;
+  try {
+    want = JSON.parse(localStorage.getItem('ancienttrees_pending') || 'null');
+    localStorage.removeItem('ancienttrees_pending');
+  } catch (e) {}
+  // Half an hour, because a magic link is read in another app and sometimes on
+  // another device, and replaying a press from yesterday is a surprise.
+  if (!want || !want.at || Date.now() - want.at > 1800000) want = {};
+  window.atJustSignedIn = want;
+})();
+</script>
+`;
+
+export const SIGNIN_JS = `
+<script>
+(function() {
+  var SB = '${SUPABASE_URL}';
+  var SBK = '${SUPABASE_KEY}';
+  // 1. the returning magic link is caught in the HEAD now, by SIGNIN_CATCH_JS
+  //    at the top of this file, for the reason written there. What is left
+  //    here is the half that needs the rest of the page: finishing the act
+  //    that asked for the sign-in.
+  if (window.atJustSignedIn) landed();
+
+  // WHAT HAPPENS ON THE PAGE YOU LAND ON (2026-09-18). Hidde: signing in and
+  // out is clunky about which pages you land on. Two halves were missing. The
+  // first is fixed in the head (SIGNIN_CATCH_JS): the page now knows you are
+  // signed in before any of its own scripts ask. This is the second.
+  //
+  // THE ACT THAT ASKED FOR THE SIGN-IN WAS DROPPED. You press Save, the sheet
+  // says "Sign in to save the Totteridge Yew", you sign in, and the tree is not
+  // saved: you are returned to the page you were on and have to press it again.
+  // The convention is not ours to invent and we already record it
+  // (CONVENTIONS.md, landing after you have added something): you land on the
+  // thing, and its state is written ON it and stays there while it is true. So
+  // the save is finished and the heart says Saved, which IS the
+  // acknowledgement. Our own app has always worked this way, dismissing its
+  // sheet back onto the tree; only the website lost the thread.
+  //
+  // A vote is deliberately NOT replayed. A save and a tick are one press and
+  // the account was the only thing in the way; an opinion is not something to
+  // post on somebody's behalf because they signed in afterwards.
+  function landed() {
+    var want = window.atJustSignedIn;
+    // The END of the funnel, which had no event: signin-open and
+    // signin-link-sent said who was asked and who typed an address, and nothing
+    // said who arrived back signed in.
+    try { at.track('signin-done', want.kind || 'direct'); } catch (e) {}
+    if (!want.tree) return;
+    if (!document.querySelector('[data-tree="' + want.tree + '"]')) return;
+    // The account's answer FIRST. Both lists were fetched by their own scripts
+    // a moment ago and neither hands back a handle to wait on, so this asks
+    // again: two requests, only on the sign-in landing, only when there is an
+    // act to finish. Replaying ahead of them would be painted straight back off
+    // by the answer landing after it, and atPushVisited does nothing at all
+    // until the visited list has arrived.
+    var jobs = [];
+    if (window.atSyncSaves) jobs.push(Promise.resolve(window.atSyncSaves()));
+    if (window.atSyncVisited) jobs.push(Promise.resolve(window.atSyncVisited()));
+    Promise.all(jobs).then(function() {
+      if (want.kind === 'save' && window.atSaveTree) {
+        window.atSaveTree(want.tree, true);
+      } else if (want.kind === 'visit' && window.atPushVisited) {
+        if (!(window.atHasVisited && window.atHasVisited(want.tree))) {
+          window.atPushVisited(want.tree, true);
+          try { at.track('visit'); } catch (e) {}
+        }
+        if (window.atPaintSeen) window.atPaintSeen();
+        if (window.atPaintPassport) window.atPaintPassport();
+      }
+    }).catch(function() {});
   }
+
   // Keep the session alive. Supabase hands out an access token that lasts an
   // hour and a refresh token that lasts far longer, and until 2026-08-18
   // nothing ever used the second one. So an hour after signing in, session()
@@ -166,7 +259,18 @@ export const SIGNIN_JS = `
 
   var dlg = document.getElementById('signin-dialog');
   if (!dlg) return;
-  window.atOpenSignIn = function(treeName, reason) {
+  window.atOpenSignIn = function(treeName, reason, want) {
+    // What the person was trying to DO, kept for the page they come back to.
+    // Written here rather than at each gate so a new gate cannot forget it, and
+    // cleared below the moment they dismiss the sheet instead of signing in.
+    try {
+      if (want && want.tree) {
+        localStorage.setItem('ancienttrees_pending',
+          JSON.stringify({ kind: want.kind, tree: want.tree, at: Date.now() }));
+      } else {
+        localStorage.removeItem('ancienttrees_pending');
+      }
+    } catch (e) {}
     // Name the tree that was just saved. A 'feedback' reason (the gated
     // vote/report/contribute flows) swaps both lines: nothing was saved, so the
     // save wording would be a lie. On a phone the headline is already the app
@@ -229,6 +333,18 @@ export const SIGNIN_JS = `
     var d = a.closest('details');
     if (d) d.open = false;
     window.atOpenSignIn();
+  });
+  // CLOSING IT IS A NO. Every dismissal ends here (the corner, the backdrop,
+  // Escape, and the swipe below all call close()), so the act it was going to
+  // finish is dropped in one place rather than in four.
+  dlg.addEventListener('close', function() {
+    // Unless a link is already in their inbox. That sheet is CLOSED on purpose
+    // by somebody going off to read their mail, often on the other device, and
+    // the save they asked for should still be waiting when the link brings them
+    // back.
+    var sent = document.getElementById('signin-sent');
+    if (sent && !sent.hidden) return;
+    try { localStorage.removeItem('ancienttrees_pending'); } catch (e) {}
   });
   document.getElementById('signin-close').addEventListener('click', function() { dlg.close(); });
   dlg.addEventListener('click', function(e) { if (e.target === dlg) dlg.close(); });
