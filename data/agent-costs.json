@@ -8382,6 +8382,16 @@
     "note": "Resumed an earlier attempt that left this window's higashi-hiroshima verify pass uncommitted (hgh_018 the Ginkgo of Genko-ji, hgh_019 the Black Pine of Tokuzen-ji, both registry-only, no age). This session wrote both stories from the verified fields and merged them; the verify pass's own token cost was never logged and is unrecoverable. Released the standing claim on higashi-hiroshima and updated the city's 17->19 count promises (intro, meta_description, question_context).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "photo shortlist: milan, prague, singapore, berlin, arnhem",
+    "kind": "photo-judge",
+    "tokens": 118000,
+    "trees": 0,
+    "photos": 1,
+    "note": "20 shortlist rows, 49 candidate verdicts, 1 approved (Milan's Platano di Indro, on the Wikidata item's own coordinate at 14m, overturning an earlier geotag-based reject). Found two tool defects and fixed both: the shortlist offered 7 trees that already had photographs, and photo_apply.py's approve overwrites photo, so the list could have destroyed a lead; and measure() ignored EXIF orientation, recording portrait files as landscape.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

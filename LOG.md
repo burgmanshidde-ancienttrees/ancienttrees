@@ -2,6 +2,75 @@
 
 <!-- archive-index -->
 
+## 2026-09-18 (photo viewing pass) - One photograph approved, 49 verdicts recorded, and two tools fixed that were quietly wasting every pass
+
+Judged the demand-ranked shortlist (`photo_gaps.py --shortlist`): 20 rows
+across Milan, Prague, Singapore, Berlin and Arnhem. **One approved, none
+held, 48 candidates rejected.**
+
+**Milan's Platano di Indro now has a photograph**, and the interesting part
+is that yesterday's pass had already rejected this exact file. It rejected
+it on the file's EXIF geotag, 45.475833 / 9.2, which sits 328 metres from
+our pin in a garden holding several large planes. That geotag is rounded to
+one decimal and is not where the tree is. The file is the P18 image of
+Wikidata Q55741802, a *pianta monumentale* whose own coordinate is
+45.473481 / 9.197203, **14 metres from our confirmed pin**, and the next
+registered plane in those gardens is 260 metres away. Looked at the pixels:
+an unmistakable veteran plane, camouflage bark, a deeply fluted trunk
+filling the frame and opening into five limbs each thick enough to be a
+trunk, which is exactly the vase our own recognition line describes.
+Daylight, well exposed, colour. Bare (8 March), which is a tiebreaker and
+there was no leafy candidate to prefer.
+
+**Nothing else on the list was a photograph of our tree.** Singapore's three
+were all frames from one 2024 shoot of the famous Tembusu of Lawn E, which
+is `sgp_001` and already photographed, offered for a Teak, a Temak and a
+Snake Tree. Arnhem's were the fungus false positives again (oyster mushroom
+gills, beefsteak brackets, honey-fungus rhizomorphs, all on chestnuts and
+beeches that are not our trees), plus a grey street junction, two
+Rijksmonument house facades, a 1954 wall relief, a wall poem, stained glass,
+an 1850s print, two 1961 building surveys, a 1900 photochrome, a muddy
+streambed, and a gatekeeper sculpture in Zaltbommel 30 km away. All are
+recorded with verdicts so no pass pays for them again.
+
+**Two tool defects found, both fixed, and the first could have destroyed
+work.** `photo_gaps.py --shortlist` filters cities on `trees > photos`,
+which is a CITY test, so every queued tree in a part-photographed city
+reached the list whether or not it already had its picture: 7 of the 20 rows
+were trees already served, and what they were offered was the next frame of
+the same shoot. That is not merely wasted viewing, because
+`photo_apply.py`'s `approve` OVERWRITES `tree["photo"]`, so a pass trusting
+the list and liking a second frame would have silently replaced a lead
+photograph somebody had already judged. It now skips trees that carry a
+photograph, and skips a duplicate candidate row whose identical url was
+already judged on that same tree, which is the other reason Milan came back
+a day after being decided. The shortlist that used to be four cities deep is
+now sixteen.
+
+Second: `measure()` in `photo_apply.py` read the JPEG frame header and never
+the EXIF orientation tag, so any photograph taken sideways was recorded
+transposed. Milan's is 3096x4128 everywhere a renderer shows it and was
+written down as 4128x3096. `photoDims()` puts those numbers on the `<img>`
+to reserve space before the file lands, and its own docstring says zeros are
+the honest fallback because "then the markup says nothing rather than
+something wrong": a transposed ratio is something wrong, and it produces the
+exact Cumulative Layout Shift the field was added to prevent.
+`photo_res.py`, the other writer of that pair, asks the Commons API for
+`size`, which is already orientation-corrected, so the two disagreed with
+each other until now. Verified the fix against Commons on three files, one
+rotated and two upright; the upright pair is unchanged.
+
+**FOR A LATER PASS, not done here:** every photograph approved through
+`photo_apply.py` before today may carry transposed dimensions if its file is
+EXIF-rotated. `photo_res.py` reads the correct numbers from the API and the
+daily digest runs it, so this should already be self-healing; worth one
+check that it actually overwrites rather than only filling blanks.
+
+`photo_light.py` could not run this session: the sandbox has no Pillow and
+installing it is not permitted here. Exposure was judged by eye, which the
+standard still allows; a run with Pillow available should be preferred for
+borderline light.
+
 ## 2026-09-18 (session 11) - Finished an earlier attempt's uncommitted work: 2 new places, 2 more trees for Higashi-Hiroshima
 
 This window's first attempt had stopped after 23 minutes with 97 of 120

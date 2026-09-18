@@ -85,13 +85,15 @@
       "access": "Free, public park (opening hours vary by season)",
       "transport": "5 min walk from Porta Venezia (M1)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Albero_secolare_nei_giardini_di_Milano.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ugodiamante, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3096,
+        "height": 4128
       },
       "curation_status": "flagged",
-      "notes": "No planting date or age documented anywhere found; age range is a wide, honest estimate from trunk girth alone, bounded loosely by the park's 1784 founding. A candidate Commons photo (Platano_secolare_ai_Giardini_Montanelli.jpg) was viewed and rejected: its caption identifies it only as 'a centuries-old plane tree' in the gardens generally, and the park holds several large planes, so it could not be confirmed as this specific, individually surveyed specimen.",
+      "notes": "No planting date or age documented anywhere found; age range is a wide, honest estimate from trunk girth alone, bounded loosely by the park's 1784 founding. A candidate Commons photo (Platano_secolare_ai_Giardini_Montanelli.jpg) was viewed and rejected: its caption identifies it only as 'a centuries-old plane tree' in the gardens generally, and the park holds several large planes, so it could not be confirmed as this specific, individually surveyed specimen. The photograph now on the page is a different file (Albero_secolare_nei_giardini_di_Milano.jpg) and it is attached to this tree by evidence rather than by caption: it is the image of Wikidata Q55741802, a pianta monumentale whose own coordinate sits 14 m from our pin, with the next registered plane in the gardens 260 m away.",
       "location_precision": "confirmed",
       "how_to_recognise": "About fifty metres from the Montanelli statue: a deeply fluted base 8.36 metres round that splits almost at ground level into five limbs, opening like a vase rather than rising as a column."
     },
