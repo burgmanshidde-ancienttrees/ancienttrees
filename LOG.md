@@ -2,7 +2,7 @@
 
 <!-- archive-index -->
 
-## 2026-09-18 (session 5) - Benchmarked the sign in / sign out flow, which never had been, and fixed what it found
+## 2026-09-18 (session 8) - Benchmarked the sign in / sign out flow, which never had been, and fixed what it found
 
 Hidde asked whether the whole sign in / sign out flow had ever been
 benchmarked, saying it feels clunky which pages he lands on. **It had not.**
@@ -56,19 +56,18 @@ exact subtlety that masked this. Removing it needs Hidde. The convention is
 written up in CONVENTIONS.md with its references, so the next session does not
 repeat the search.
 
-**FOR HIDDE, one line, because it touches a ratchet check.** `qa.py`'s
-`check_nothing_is_stored_locally()` (your 2026-09-02 rule, "alles wat wordt
-opgeslagen, moet op je account zijn") refused this change, correctly, because
-carrying the act across the round trip means writing one key in the browser.
-I have named it as a third allowed exception rather than weakened the check,
-with the reason written into the check itself. The argument, in short: it is
-the contribute draft's category, an act begun and not finished rather than a
-thing kept, thrown away on use and expiring in half an hour; and at the moment
-it is written there is no account to put it on, which is the entire situation
-it exists for. Storing it server-side would mean identifying somebody who has
-not signed in. Nothing a person KEEPS may still live in the browser and the
-check still refuses every one of those. Say the word and I will take it out
-and accept that the save is lost across the sign-in.
+**One store registered, and session 6 of the same day had just built the
+right place to register it.** Carrying the act across the round trip means
+writing one key in the browser, and `check_nothing_is_stored_locally()` refused
+it, correctly. Session 6 had meanwhile replaced that check's inline allowlist
+with `data/cross-device.json`, where every store on either surface carries a
+verdict. `ancienttrees_pending` is recorded there as `device`, beside the
+contribute draft, whose category it shares: an act begun and not finished
+rather than a thing a person has accumulated, thrown away on use and ignored
+after half an hour. The argument that settles it is that at the moment it is
+written THERE IS NO ACCOUNT to hang it on, which is the whole situation it
+exists for; the server-side alternative means identifying somebody who has not
+signed in. Nothing a person KEEPS has moved off the account.
 
 **Left alone, deliberately.** WalkMode's tick leads into a camera flow, so
 replaying it would open a camera unexpectedly. The OAuth redirect_to still
@@ -77,6 +76,389 @@ draft carries sg-kind, and widening it means touching the Supabase redirect
 allow-list, which cannot be tested from here. The app half is written and
 pushed in the same change, per the cross-platform default, and is compiled only
 by ios.yml: this sandbox has no Xcode.
+## 2026-09-18 (session 7) - /sources keeps the names and stops publishing the endpoints
+
+Hidde asked whether listing every source on /sources is smart, since it also
+helps competitors. Short answer: the names have to stay and cost us almost
+nothing, but the page was publishing something else alongside them that
+nobody is owed.
+
+**The names are not optional and are not the moat.** 38 of the 55 registers
+name attribution in the licence itself, and a dozen more government terms
+carry it in prose, which is
+why the page was built on 2026-09-03 in the first place; withholding them
+would be a licence breach rather than a strategy. And a competitor learns
+little: these are government registers, findable by searching "alberi
+monumentali" in each language. What is expensive here is what the corpus
+already measures, roughly 19k tokens a tree researched from zero against
+0.4k with a register in hand: the verification, the clustering, the pins,
+the stories, the photographs. MonumentalTrees holds more trees than we ever
+will and it does not matter.
+
+**What was actually leaking was our scouting, not our sources.** The page
+rendered the raw `endpoint` field as each link, which meant the exact
+request we make: query strings, layer names, and the notes an import pass
+wrote down after working it out (Flanders caps a page at 50 whatever
+`per_pagina` says, Bavaria wants `startIndex` paged, Poland serves lon,lat).
+No licence asks for that. It was also producing links that resolve nowhere,
+because an href carrying `(ArcGIS FeatureServer, GeoJSON, EPSG:4326)` or
+`startIndex=<n>` is not a url, so the page was failing the one promise it
+makes a reader, that they can check us.
+
+`publicSourceUrl()` in `site/src/lib/sources.ts` now prefers a catalogue
+page where a register recorded one and otherwise strips the endpoint back
+to the publisher's own portal. 51 of 55 entries link somewhere a person can
+read; the remaining 4 are hosted on Esri tenants (`services3.arcgis.com/<id>`),
+where the stripped url credits nobody, so they list the authority and the
+licence with no link. Nothing else on the page changed: names, licences,
+share-alike notice and per-register counts all stay.
+
+**One thing found while in there, same class of problem.** Spokane's licence
+is recorded as a 493-character internal note, and all of it was rendering on
+the public page, naming CLAUDE.md, "layer-2 bulk register-dot import" and
+which other US registers it resembles. The public line is now the two words
+that are true, "none stated", and the reasoning stays in the register file.
+Also gave Spokane its country, so it no longer sits alone under "Other".
+
+Build clean (11,993 pages), `preflight.py` 0 problems, `qa.py` green.
+
+**FOR HIDDE: the real exposure is not /sources, it is the repository.**
+`github.com/burgmanshidde-ancienttrees/ancienttrees` is public, so CLAUDE.md,
+CITY_QUEUE.md, OPEN_DATA_SURVEY.md, DATA.md's Search Console numbers, the
+cost meters and every register file's endpoint and caveat are already
+readable by anyone, in far more useful form than the credits page ever was.
+That is a bigger decision than a page and it is yours: the site deploys from
+this repo via GitHub Pages, which on a private repo needs a paid plan (hard
+rule 5) or a move to another host. Say the word and I will price the move;
+I have changed nothing about it.
+
+## 2026-09-18 (session 6) - Nothing lives on the device that belongs to an account, and the rule is now a check on BOTH surfaces
+
+Hidde: "Stop saving stuff locally anywhere please make sure this happens
+nowhere always account related." The third time he has given this rule, on
+three different days (2026-08-27 "niks moet lokaal opgeslagen zijn",
+2026-09-02 "alles wat wordt opgeslagen moet op je account zijn", today). By
+this file's own ratchet the second time should have produced a check on both
+surfaces and it produced one: `qa.py` has refused an unlisted localStorage key
+on the WEBSITE since 2026-09-02, and nothing ever asked the APP the same
+question. So the fault went on living there, which is exactly what an audit
+found.
+
+**What the app was still keeping, and what happened to it:**
+
+| What | Was | Now |
+|---|---|---|
+| Every worth-it vote and report | three UserDefaults keys PER TREE, written from the account at launch and then read by the views as the truth | the views read `MyVotes`, which is the account's own answer, and nothing is written to the device |
+| Paywall interest (`entitlement.interest.v1`) | a set of features written to the device that nothing ever read | sent as an event; `Waitlist.join` already put the same fact in the database |
+
+The mirror was not harmless. **Nothing cleared those keys on sign-out**, so a
+signed-out phone went on showing the last person's votes, and a key written
+per tree cannot be enumerated, so it could not have been cleared even
+deliberately. `MyVotes.clearTheOldMirror()` sweeps them off phones that
+already carry them, unconditionally and idempotently, because a flag to track
+the removal of something from the device is one more thing stored on the
+device.
+
+**And it surfaced a bug that was invisible while the mirror existed:** the
+reader matched a vote with `why.contains("worth it")`, and "not worth it"
+contains "worth it", so the payoff screen's thumbs DOWN came back as a green
+thumbs UP on the tree page at the next launch. It could not be seen before
+because no control ever read that value back; it only ever wrote. Matched
+whole now, with a test.
+
+**The mechanism, and the first version of it was a mistake worth recording.**
+I wrote a new list and a new script for the app before noticing that
+`data/cross-device.json` and `scripts/crossdevice.py` have registered every
+store on BOTH surfaces since 2026-09-11, with a verdict on each. A second list
+answering nearly the same question is the duplication this corpus keeps
+recording under other names, so both were deleted unshipped.
+
+What the existing register was missing is the actual hole, and it is worth
+more than the list I nearly added: it asked whether anybody had RULED on a
+store and never whether the code OBEYED the ruling. `at_worthit_`, `at_wrong_`
+and `at_wrong_detail_` were all correctly ruled `account` in that file, all
+three were written to UserDefaults anyway, and the check was green the whole
+time.
+
+So `crossdevice.py` now asks an `account` store a second question, in a new
+`off` field: what takes this off a phone nobody is signed in to.
+"Nothing, because ..." is a legitimate answer and two stores give it (a units
+preference is how a screen reads, not somebody's data; a block should not
+lapse when a session expires). The point is the one conventioncheck.py makes:
+a script cannot judge the answer, only whether anybody was made to write one
+down. It fired on three real stores the moment it existed. `qa.py`'s web half
+now reads the same register instead of its own hard-coded set, so there is one
+register and no list can drift from another. Verified by planting a violation
+of each half and watching both fail, then removing them.
+
+The four retired keys are out of the register, and it now reads: 22 stores, 3
+account, 14 device, 5 not a store.
+
+Five tests in `VotesTests` hold it. The app half is judged by `ios.yml`, since
+there is no Xcode here.
+
+
+## 2026-09-18 (session 5) - Answered "how are the collections doing", rebuilt the stalest one, put the whole page type on the meter
+
+Hidde asked whether any collection scores on search volume, what we can
+learn from it, and whether better titles would get more out of the same
+database. Answering it took reading 53 daily entries by hand, which is the
+finding underneath the answer: **collections were never measured.**
+`city_demand_rows()` excludes them, which is right for the depth roster and
+was silently also excluding them from the learning loop, so a collection
+reached DATA.md only when it happened to make a top-five or a climbing list.
+
+**The read.** One collection works and it is not the biggest one.
+/collections/trees-older-than-400-years went from 89 impressions to 423 and
+from position 20 to 8.8 in three weeks, which would make it the third
+biggest page on the site. thickest-trees holds 904 trees, three times as
+many, and earns nothing. The difference is the QUERY, not the size: "400
+year old tree" is a list-shaped question, "thickest tree" and "tall trees"
+are record-holder and nursery questions, which BACKLOG.md predicted under
+"Never build" on 2026-08-04. Read the 423 down by about half: its biggest
+measured pair is `"400 years old as of 2023" tree`, the exact-phrase
+operator seolearn already proved nobody types.
+
+**What shipped.**
+
+1. **/collections/the-oldest-tree-in-every-country-we-map is generated.**
+   It held 15 entries picked by hand when the map covered 15 countries, and
+   its own meta description still said "the 15 countries this site covers"
+   while the map had grown to 46 countries and 626 places. That is a live
+   false claim, so it is rung 3. It now names all 626, one row per place,
+   banded by country in ranked order, 46 headings, 1,252 links. It asks
+   `oldestTree()` in trees.ts which tree is oldest rather than deciding for
+   itself, so this page and a city's own question page can never disagree.
+   The 15 hand-written notes survive, as generated collections are designed
+   to let them.
+
+   New mode `oldest_per_place`, the first whose unit is a PLACE rather than
+   a tree, which needed two optional hooks on RankMode: `rows` (the mode
+   builds its own rows, because "which of this city's trees is oldest"
+   cannot be expressed as a filter over every tree) and `groupBy` (named
+   bands in ranked order, because a country is not a numeric threshold).
+   One-tree places are included deliberately: gating on the question page
+   would have dropped Old Tjikko, the Llangernyw Yew and General Sherman
+   from a list of the oldest trees we map.
+
+2. **The digest now prints a grouping-pages table** (`grouped_pages_lines`
+   in daily_digest.py): collections, species pages, country pages and park
+   pages, one row each with clicks, impressions, CTR, position and the
+   index against what that position normally earns, plus a **bot** flag on
+   any page whose biggest query carries quotation marks. Added to
+   CLAUDE.md's digest table contract so it cannot quietly fall out the way
+   the night-shift table did on 2026-08-21.
+
+**What did NOT ship, and why, because it was the plan an hour ago.** The
+three collections BACKLOG.md ranked as unbuilt on 2026-08-04 (oldest
+olives, oldest camphors of Japan, oldest trees of London) are all **already
+served by a page type that did not exist when that research was written**:
+/species/olive lists 24 olive trees, /species/camphor-tree lists 64, and
+London has both a city page and a question page. Building them would have
+manufactured exactly the duplicate URLs that got 36 of our pages filed as
+"crawled and not indexed" on 2026-09-17, and hard rule 3 would then have
+made them permanent. FOR HIDDE below.
+
+**And the title test could not start, correctly.** copytest.py refuses a
+surface with fewer than 20 eligible pages; there are 18 collections and two
+of them have any demand at all. The surface that can carry a test is
+species pages (178 of them, 0.5% CTR, every title the same template), and
+that is blocked on the measurement in point 2 above existing for a few days
+first. It starts once DATA.md has the rows.
+
+**One thing picked up on the way in.** The merge with the night run's own
+work was blocked by the pre-push hook: `crossdevice.py` refused
+`saved.saves_are_hearts_v1`, the latch on this morning's one-off
+saves-are-hearts repair, which had reached main unregistered. Ruled it
+**device** and wrote the reasoning into data/cross-device.json: the repair
+asks THIS phone's own record of taps which entries are ticked-but-not-
+hearted, so a second device has its own strays to clear and syncing the
+latch would suppress a repair that device still needs.
+
+**FOR HIDDE.** Nothing blocking. One judgement that is yours because it
+spends a window: four curated collections are stale the same way the
+country one was, and the data to fix them is already on disk. Yews list 8,
+we map 61; ancient oaks list 8, we map 104 over 300 years; the great planes
+list 10, we map 299; Europe's most remarkable list 10, we map 115 over 500
+years. The yew page already earns 67 impressions at position 8.8 on its 8
+entries, so it is the clearest of the four. Making them generated needs a
+species-and-region filter on top of the existing `oldest` mode, which is
+roughly the work item 1 above took.
+
+## 2026-09-18 Where the funnel actually leaks, and the page with the best placement on the site
+
+Hidde asked why sign-ins are so few and what would improve them. The answer is
+that sign-in is not the leak. Ten days of Search Console: 18,359 impressions,
+387 clicks, and clicks are up 26 percent across the window while CTR is flat,
+so the growth is coming from position and indexation rather than from copy.
+The running city-title copy test agrees: -0.03 index points at day 7.
+
+seolearn's own buckets say the same thing more usefully. Photographs, pins,
+ages, seasonal peaks, story length, number of trees: every bucket converts
+between index 0.40 and 0.66 and the site-wide figure is 0.48. Nothing on the
+page explains the gap, because it is uniform. Roughly a fifth of impressions
+are not people at all (queries built with Google's exact-phrase operator).
+
+The one page where the gap is a page problem rather than a SERP problem is
+Pamplona: position 3.6, the best placement we hold anywhere, 412 impressions,
+5 clicks. Its page is 14 trees with one age, no photographs and seven black
+poplars, two of them "(south)" and "(north)" of the same place. Written up in
+CURATION.md with the three cheap steps, and its meta description is fixed
+today: it led with a count and ended on the poplars.
+
+## 2026-09-18 (session 5) - My trees and Favourites were one list: the app was writing every ticked tree into the favourites table
+
+Hidde, on his own account page: "als ik klik op My Trees op Favorites, dan
+krijg ik dezelfde lijst. Dat, dat kan niet kloppen." He was right, and the
+website was innocent: it reads `saves` for Favourites and `visited` for My
+trees, which is exactly the app's own split. The polluter was
+`CloudSync.pushAll`, which mapped EVERY local entry into `saves`, ticked-only
+trees included. So `saves` had quietly stopped meaning "hearted" and started
+meaning "in your collection at all", which makes Favourites a superset of My
+trees, and for somebody who mostly ticks trees off in the app it makes them
+the same list.
+
+It was written that way for a reason that has since expired: when the cloud
+half shipped, `public.visited` did not exist, so pushing everything into
+`saves` was the only way a collection survived a new phone. The table exists
+now, so the shortcut had no argument left and only the cost.
+
+**What changed, all on the app side, because the contract is what was wrong:**
+
+| Where | Before | After |
+|---|---|---|
+| `CloudSync.pushAll` | every entry to `saves` | hearts only |
+| `CloudSync.push` | always upserts `saves` | upserts a heart, DELETES the row when the heart comes off and the visit stays |
+| `CloudSync.merge` (pull) | a `saves` row adopted only when new | always adopts the heart, so a save made on the website reaches the phone instead of being deleted by the next push |
+| `Saved.adopt` | every adopted row became a favourite | takes which list the row came from; a `visited` row no longer invents a heart |
+
+**The rows the old rule already left behind cannot be told apart in the
+database**, because `saves` carries no flag saying which kind it was. They can
+be told apart on the phone, which recorded every tap: an entry held with the
+heart off and a visit on is exactly the row that should never have been
+pushed. `CloudSync.repairStrayHearts` deletes those once per phone, in one
+request, before the first pull of the fixed version, and `savesRepaired` in
+UserDefaults makes sure it happens once. The honest cost is written into the
+code beside it: a tree hearted on the WEBSITE that the phone happens to hold
+as ticked-only goes with them, which is one tap to put back.
+
+So the web list stays as it is today until the fixed build runs on his phone
+and syncs; nothing on the website needed changing for the logic itself.
+
+**The ratchet**: three tests in `FailureTests` now hold the contract, replacing
+one that asserted the bug (it demanded a ticked-only tree appear in the saves
+body). Each tree to its own table, unhearting a collected tree deletes only the
+heart, and the repair runs once and never twice.
+
+**And the cards are the width of the phone again.** Same page, second
+complaint, and it is the 2026-09-17 one-left-edge fault one layer down:
+`.acct-lanes` set its own 24px padding while `.panel-head` above it uses
+`--gutter` (16px on a phone), and the tree cards inside it took
+`.panel .tree-card`'s `--gutter` side margins ON TOP of that, so the cards sat
+40px in from a 375px screen and the page showed three left edges. The lanes
+read `--gutter` now, cards inside them drop the panel margin, and the
+Distances switch (which was running flush to the panel wall) gets the same
+edge. Measured in headless Chrome at 375px with the signed-in shape forced:
+avatar, stat row, Add a tree, the lane picker, the card and the units heading
+all start at 16 and end at 359. One edge.
+
+Build clean, `preflight.py` 0 problems, `qa.py` green over 15,893 pages,
+paritycheck/crosscheck/englishcheck/netcheck/conventioncheck all green. The
+app half is written and pushed in the same change and is judged by `ios.yml`,
+since there is no Xcode here.
+
+## 2026-09-18 (session 5) - Researched the world's most-searched parks: 5 of 128 were ours, and our own keyword list was hiding three pages
+
+Hidde asked for a study of the world's best-known parks, the ones people
+search for on Google, and whether we already hold them: "ik wil gewoon
+zoekvolume winnen." A park does not have to sit in a big city to qualify.
+
+**The demand source is Google's own.** Its Year in Search publishes the most
+searched parks on Google Maps, which is the closest thing to search volume
+anybody gives away free. The 2023 top nine, in order: Park Guell, Central
+Park, Hyde Park, the Retiro, Villa Borghese, Nara Park, Cubbon Park, Red
+Rocks, Ibirapuera. The 2024 top five: Central Park, Rizal Park, Odori Park,
+Ohori Park, Park Guell. `data/famous-parks.json` holds 128 parks with that
+evidence per park, press-reported footfall where there is any, and a
+coordinate; `scripts/park_demand.py` crosses each against our own trees BY
+DISTANCE, never by name, and says what it needs next.
+
+**The answer to his question: 5 of the 128 have a park page.** The Retiro,
+Central Park, Villa Borghese, Schlosspark Nymphenburg, and Parque de Maria
+Luisa as of today. 50 more famous parks hold between one and four of our
+trees, 41 sit empty in a city we already publish, and 8 are outside our
+coverage entirely.
+
+**It said 6 until the tool was checked against the built site, and Nara Park
+is the correction worth keeping.** An intro file existing looks exactly like a
+published page from the data side, and Contract H needs five trees AND an
+intro: Nara Park has the intro, written prose, and four trees, so its page has
+never rendered at all. Google's sixth most searched park of 2023, one verified
+tree away, with 17 register rows and leads inside its radius. The tool now
+calls that state "one short" and ranks it above everything else, because prose
+already written is the cheapest work on the list. The other one in that state
+is the Hortus Botanicus in Amsterdam, at two trees, which is what his own
+paid-entry ruling of 2026-08-23 left behind when ten ticketed Amsterdam trees
+came off the map.
+
+**The largest blocker was not research, it was our own keyword list.** A park
+is not a field on a tree here: `parkKey()` derives it from the address text
+matching a word list, and "parque" was not on that list. Spanish and
+Portuguese for park, absent, while "retiro" sat there as a single-case patch
+for the one Madrid park somebody noticed. "garten" was missing too, with
+"schlosspark" and "stadtpark" present. Six words added (parque, garten,
+plantsoen, bosque, foret, floresta): **147 trees gained a park they were
+always standing in, and three parks crossed Contract H's five-tree gate.**
+It also retired three false parks, because "Parking du Grand Canton" and
+"Tane Mahuta Walk car park" had been reading as parks all along.
+
+Three park pages written and live from that, no new research and no new
+trees: **Parque de Maria Luisa, Seville** (10 trees, and Seville's own 2022
+survey puts three of the city's biggest trees inside it), **Oosterplantsoen,
+Hoorn** (7), **Kontumazgarten, Nuremberg** (6). `pagegaps.py` reported zero
+park gaps before this and three after, which is the same tool answering
+honestly once it could see.
+
+**Eight park pages were live promising a tree count they did not have.**
+Singapore Botanic Gardens said eight and maps twenty-four, the Parc d'Egmont
+said six and maps sixteen, Caserta said seven and maps sixteen, plus Brisbane,
+Padua, Naples, Valencia, Milan and Park Sonsbeek. Fixed, titles and meta
+descriptions and the intro sentences that state the page's own count; subset
+sentences ("six of them are on the monumental register") were left alone
+because they are not the page count and I cannot re-verify them cheaply.
+Three titles also sat over Contract H's 60-character cap, where `fitTitle`
+was silently dropping them for a generated fallback, so Singapore and Hobart
+had a hand-written title and count that no page has ever printed.
+
+Three build checks so none of this can come back, all refusing a push: park
+count promises in `count-promises.ts` (the city version has existed since
+Florence went to fifteen still saying ten, and parks were never covered,
+because a park grows when a tree gains an address rather than when a city
+grows); a hand-written park title over the cap now failing the build instead
+of being swallowed; and `check_park_words_match()` in preflight, because the
+keyword list lives in two places that have each claimed for months to mirror
+the other exactly and nothing compared them. Tested all three against a
+deliberate regression rather than trusting a green build, which is how the
+first version of the count check was caught rejecting the very title it was
+written to protect. Per the ratchet, removing any of them needs Hidde.
+
+**What is worth doing next, cheapest first.** Park Guell, the most searched
+park on Google Maps in 2023, maps four of our trees and needs ONE more for a
+page; Barcelona's register has 61 trees within reach. Parc de la Tete d'Or in
+Lyon is also one tree short, with four already groupable. Vondelpark maps one
+tree while Amsterdam's own register holds 145 designated trees within 600
+metres of its centre, which is a verify pass rather than a hunt. And Margaret
+Island in Budapest has five trees whose addresses all say "Margaret Island",
+groupable by no keyword that would be safe to add, so it needs an explicit
+park-name list rather than a wider regex: that is the one piece of this I
+have not built.
+
+`--views` (Wikipedia pageviews per park, the proxy demand.py uses for cities)
+could not run: this session's network policy blocks every Wikimedia host, so
+the ranking is Google's published lists plus footfall rather than a measured
+number per park. A night run can fill it in one pass.
+
+Build clean, `qa.py` green, `preflight.py` 626 places and 0 problems.
 
 ## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
 
@@ -4895,7 +5277,6 @@ desktop on /lisbon/ajuda-dragon-tree.
 control in any of the seven languages; the web thumb is a colour emoji where the
 app draws an outline symbol; copycheck flags "Tap one to see how to tell it
 apart." in CollectSheet.swift:636, in the reader-photo session's area.
-
 
 
 ## 2026-09-11 (session with Hidde) - The tree in the wrong-tree photograph gets its own page: the Twisted Muku of Omiya Gate

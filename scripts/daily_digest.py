@@ -481,6 +481,116 @@ def city_demand_rows(pages, pairs=None):
     return out
 
 
+def _head_matches(h, head):
+    """`head` is a path prefix ("collections") or a set of root slugs (countries)."""
+    return (h in head) if isinstance(head, (set, frozenset)) else (h == head)
+
+
+def _group_slug(path, head):
+    """The page's own name inside its group. A root-slug group IS its slug."""
+    if isinstance(head, (set, frozenset)):
+        return path.split("/")[0]
+    return path.split("/")[1] if "/" in path else "(index)"
+
+
+def grouped_page_rows(pages, pairs=None, head="collections"):
+    """One row per collection page, the numbers the depth roster gives a city.
+
+    Written 2026-09-18 on Hidde's question "hoe doen onze collecties
+    uiteindelijk, is er eentje die goed scoort op zoekvolume". Answering it
+    took a session reading 53 daily entries by hand, because collections
+    appeared in this file only when they happened to reach a top-five or a
+    climbing list, and city_demand_rows() excludes the type outright. That is
+    the right call for the DEPTH roster, which decides where photos and pins
+    go and has nothing to say about a page holding no trees of its own. It is
+    the wrong call for measurement, and the two had been conflated.
+
+    What it found the day it was written: /collections/trees-older-than-400-years
+    had grown from 89 impressions to 423 and from position 20 to 8.8 in three
+    weeks, which would make it the third biggest page on the site, and nothing
+    in this file said so in one place.
+
+    The bot column is not decoration. Roughly half that page's measured pairs
+    were '"400 years old as of 2023" tree', Google's exact-phrase operator,
+    which BOT_QUERY in seolearn.py already proved nobody types. A collection
+    that looks like it is winning on a quoted query is not winning.
+    """
+    if not pages:
+        return []
+    by_coll = {}
+    for r in pages:
+        path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
+        lang, h = split_path(path)
+        if lang != "en" or not _head_matches(h, head):
+            continue
+        slug = _group_slug(path, head)
+        c, i, wp = by_coll.get(slug, (0, 0, 0.0))
+        by_coll[slug] = (c + r["clicks"], i + r["impressions"],
+                         wp + r.get("position", 0) * r["impressions"])
+    if not by_coll:
+        return []
+    top_q = {}
+    for r in (pairs or []):
+        path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
+        lang, h = split_path(path)
+        if lang != "en" or not _head_matches(h, head):
+            continue
+        slug = _group_slug(path, head)
+        cur = top_q.get(slug)
+        if cur is None or r["impressions"] > cur[1]:
+            top_q[slug] = (r["keys"][1], r["impressions"], r.get("position", 0))
+    out = []
+    for slug, (cl, im, wp) in by_coll.items():
+        pos = (wp / im) if im else 0
+        q = top_q.get(slug)
+        exp = expected_ctr(pos)
+        ctr = 100.0 * cl / im if im else 0.0
+        out.append({
+            "slug": slug, "clicks": cl, "impressions": im, "position": pos,
+            "ctr": ctr, "expected": exp,
+            "index": (ctr / exp) if exp else 0.0,
+            "query": ("%s (i%d, p%.0f)" % (clean_query(q[0]), q[1], q[2])) if q else "-",
+            "bot": bool(q) and ('"' in q[0] or "\u201c" in q[0] or "\u201d" in q[0]),
+        })
+    return sorted(out, key=lambda r: -r["impressions"])
+
+
+def grouped_pages_lines(pages, pairs=None):
+    """The collections table for the daily entry.
+
+    Its own table rather than a sentence, for the reason every other table on
+    this list has one: collections are an SEO bet whose whole question is
+    whether any of them converts, and a number folded into prose is a number
+    nobody acts on.
+    """
+    out = []
+    # Country pages live at the ROOT (/netherlands), not under a /countries/
+    # prefix, so they are found by slug rather than by path head. Everything
+    # else on this list has a prefix of its own.
+    country_slugs = {os.path.basename(p)[:-5]
+                     for p in glob.glob(os.path.join(ROOT, "data/countries/*.json"))}
+    for head, label in (("collections", "collections"), ("species", "species pages"),
+                        ("parks", "park pages"), (country_slugs, "country pages")):
+        rows = [r for r in grouped_page_rows(pages, pairs, head) if r["impressions"] >= 10]
+        if not rows:
+            continue
+        if not out:
+            out = ["", "**How the grouping pages are doing** (10 days, 10+ impressions)."
+                       " Index 1.00 means the page converts exactly as its position"
+                       " normally does; a query in quotation marks is Google's"
+                       " exact-phrase operator, so read those impressions as nobody:"]
+        out += ["", "*%s*" % label, "",
+                "| Page | Clicks | Impressions | CTR | Position | Index | Biggest query |",
+                "|---|---:|---:|---:|---:|---:|---|"]
+        for r in rows[:15]:
+            out.append("| %s | %d | %d | %.1f%% | %.1f | %.2f | %s%s |" % (
+                r["slug"], r["clicks"], r["impressions"], r["ctr"], r["position"],
+                r["index"], r["query"], " **bot**" if r["bot"] else ""))
+        if len(rows) > 15:
+            out.append("- and %d more %s over 10 impressions" % (len(rows) - 15, label))
+    return out
+
+
 def copy_test_lines():
     """Where the running copy test stands, every morning.
 
@@ -728,6 +838,7 @@ def gsc_section(gsc):
         gap_line,
         *demand_lines(pages, pairs),
         *learning_lines(pages, pairs),
+        *grouped_pages_lines(pages, pairs),
         *copy_test_lines(),
         *language_lines(pages),
         *zero_click_queries(pages, pairs),
