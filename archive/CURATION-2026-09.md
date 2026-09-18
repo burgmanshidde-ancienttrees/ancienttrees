@@ -888,7 +888,6 @@ oldest_tree_id, and two FAQ entries. This is rung-3 work (something
 published being imprecise), found as a byproduct of rung-4 work.
 
 Preflight and the Astro build both clean after all of it.
-<!-- archive-index -->
 ## 2026-09-08 (continuation 3) - 8 new single-tree French places from the famous-trees batch
 
 Refilled the shelf with two verify passes on `_famous-france`'s remaining

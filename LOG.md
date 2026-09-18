@@ -1,57 +1,6 @@
 # LOG
 
 <!-- archive-index -->
-## 2026-09-18 (session) - Swept every page type for the footer's fault and found none, and the English check stops crying wolf
-
-Hidde: "Alles live kunnen we archiveren nog meer van dit soort foutjes op de
-site gezien?"
-
-**Archived.** LOG.md 459 to 299 KB, CURATION.md 186 to 89 KB, 114 entries into
-archive/LOG-2026-09.md and archive/CURATION-2026-09.md. Nothing deleted, which
-is the whole point of that script: CURATION.md is where dead ends live and a
-lost record costs a research window later.
-
-**Swept, and the honest answer is no.** The BAND check built yesterday ran over
-27 page TYPES rather than the eight in the gate, at 375 and 1280, together with
-the fit, drift and tap-target checks: homepage, explore, all six indexes, the
-seven standing pages, 404, the app landing, account, and a city, tree,
-question, country, species, collection and park page, plus a Spanish and a
-Japanese city page. Every one clean.
-
-One thing I reported yesterday turned out to be wrong and is corrected here
-rather than left standing. I said the tree page's thumb sat a couple of pixels
-below its own meta line. Measured: the place link's optical middle is 449.8,
-the dot's 448.8, the thumb's 450.4, so the spread is 1.6px and the eye was
-inventing it. The dangling middot beside it is the app's own row shape
-(2026-09-04) and not a fault either.
-
-**What was actually broken was a check.** `englishcheck.py` had been red for
-weeks on nine findings, and every single one was a false positive:
-
-| Finding | What it really was |
-|---|---|
-| 3x "color" in phenology.ts | lookup KEYS mapping the American spelling onto our "autumn colour", so flagging them asked us to break the thing that fixes the problem |
-| "license" in sources.astro | "Open Database License", which is what the ODbL is called |
-| 2x "ends on a conjunction" | one sentence each on /privacy and /support, cut in half by the check at an inline `<strong>` and `<a>` |
-| "informations" | correct French, in the French block of the shared table |
-| 2x "opening with Also" | "Also included" and "Also here:", a heading and a pointer |
-
-A check that is permanently red is a check nobody reads, which is exactly what
-ios.yml taught on 2026-08-25, so this is the same lesson twice and therefore a
-gate rather than a third note. Five narrow exemptions: a quoted string followed
-by a colon is a key, a fragment followed by an inline tag is not the end of a
-sentence, a line carrying BOTH spellings is a mapping table, a Title Case name
-is not ours to respell, and the seven non-English blocks are not English copy.
-
-Quieter, not weaker, and proved so rather than assumed: with five faults
-planted in one paragraph it caught six spellings and all five shape rules,
-including the two that were exempted. It now runs in the pre-push hook on any
-change under site/src or ios, at 0.2 seconds.
-
-Merged and pushed to main.
-
-
-<!-- archive-index -->
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
@@ -61,6 +10,91 @@ Merged and pushed to main.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 (session) - Swept every page type for the footer's fault and found none, and the English check stops crying wolf
+
+Hidde: "Alles live kunnen we archiveren nog meer van dit soort foutjes op de
+site gezien?"
+
+**Archived**, by the night run's own fixed archiver rather than by mine: a
+session ran the OLD one twenty minutes earlier, and the same hour another
+session found that it could eat an entry and rewrote it. Their version won the
+merge wholesale. Checked rather than assumed afterwards: all 207 entries that
+stood in LOG.md before either run are present now, in the living file or in
+archive/LOG-2026-09.md. 460 to 300 KB.
+
+**Swept, and the honest answer to "nog meer van dit soort foutjes" is no.** The
+BAND check built yesterday ran over 27 page TYPES rather than the eight in the
+gate, at 375 and 1280, together with the fit, drift and tap-target checks:
+homepage, explore, all six indexes, the seven standing pages, 404, the app
+landing, account, and a city, tree, question, country, species, collection and
+park page, plus a Spanish and a Japanese city page. Every one clean.
+
+One thing I reported yesterday was wrong and is corrected here rather than left
+standing. I said the tree page's thumb sat a couple of pixels below its own
+meta line. Measured: the place link's optical middle is 449.8, the dot's 448.8,
+the thumb's 450.4, a spread of 1.6px, and the eye was inventing it. The
+dangling middot beside it is the app's own row shape (2026-09-04), not a fault.
+
+**What was actually broken was a check.** `englishcheck.py` had been red for
+weeks on nine findings, every one a false positive:
+
+| Finding | What it really was |
+|---|---|
+| 3x "color" in phenology.ts | lookup KEYS mapping the American spelling onto our "autumn colour", so flagging them asked us to break the thing that fixes the problem |
+| "license" in sources.astro | "Open Database License", which is what the ODbL is called |
+| 2x "ends on a conjunction" | one sentence each on /privacy and /support, cut in half by the check itself at an inline `<strong>` and `<a>` |
+| "informations" | correct French, in the French block of the shared table |
+| 2x "opening with Also" | "Also included" and "Also here:", a heading and a pointer |
+
+A permanently red check is one nobody reads, which is exactly what ios.yml
+taught on 2026-08-25, so this is the same lesson twice and therefore a gate
+rather than a third note. Five narrow exemptions: a quoted string followed by a
+colon is a key, a fragment followed by an inline tag is not the end of a
+sentence, a line carrying BOTH spellings is a mapping table, a Title Case name
+is not ours to respell, and the seven non-English blocks are not English copy.
+
+Quieter, not weaker, and proved rather than assumed: with five faults planted
+in one paragraph it caught six spellings and all five shape rules, including
+the two that were exempted. It now runs in the pre-push hook on any change
+under site/src or ios, at 0.2 seconds.
+
+Merged and pushed to main.
+
+## 2026-09-18 (session) - The weekly archive ran, and it nearly ate LOG.md
+
+Hidde: "kunnen we archiveren?" LOG.md was 432 KB and every run reads it. 70
+entries moved to archive/LOG-2026-09.md and 44 to the CURATION one, nothing
+deleted: 432 KB -> 270 and 182 -> 86.
+
+The run also exposed a bug I had walked into myself an hour earlier. A session
+writing a new LOG entry inserts it after the archive-index marker,
+and I had inserted mine after the OPENING one, so my entry stood between the
+two markers. Everything after the first `## ` stops counting as the header, so
+strip_pointer could no longer see the pointer block, wrote a second one at the
+top, and stranded the old one mid-file. LOG.md had collected three that way.
+
+The dangerous half was the repair, not the mess. strip_pointer found a block by
+pairing one marker with the next, `MARK.*?MARK` with DOTALL. With five markers
+scattered through a file that pairs the first with the second and the third
+with the fourth and DELETES everything in between: it took 114 entries out of
+LOG.md in one pass, and only git still had them. Restored from HEAD, all 195
+back.
+
+Fixed, and the fix is two things rather than one:
+
+- A pointer block is recognised by its own generated sentence, never by its
+  markers, a match carrying a `## ` heading is refused, and a lone marker is
+  dropped on its own. Stripping now runs over the WHOLE file, so a stranded
+  block heals itself on the next run instead of living there forever.
+- **The count is checked rather than trusted.** This script moves entries
+  between files and has no business deleting one, so it compares the entry
+  count before and after cleaning and refuses the whole run on a mismatch. The
+  write is what makes a loss permanent, so that is where the refusal sits.
+
+Verified after the real run: living plus archive is 910 entries for LOG and 637
+for CURATION, the same totals as before, and exactly one pointer block per
+file, in the header.
+
 ## 2026-09-17 - Digest session: App Store downloads is its own block now, and the fold is a check
 
 Reported the daily digest. Two of the tables it contracts for were missing
@@ -932,16 +966,6 @@ On his "punt 2 doe dat maar": sighting 84ebae36 moved from kyo_016 (the Sudajii)
 The photograph-versus-tick split stays open: Hidde wants to think about it longer.
 
 
-<!-- archive-index -->
-
-**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
-
-- [2026-09](archive/LOG-2026-09.md)
-- [2026-08](archive/LOG-2026-08.md)
-- [2026-07](archive/LOG-2026-07.md)
-
-So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-<!-- archive-index -->
 ## 2026-09-17 - Five translated city sets, and the brief/merge pair that made them cheaper
 
 Hidde's call: keep translating only the pages that already score, and look
@@ -4245,14 +4269,6 @@ app draws an outline symbol; copycheck flags "Tap one to see how to tell it
 apart." in CollectSheet.swift:636, in the reader-photo session's area.
 
 
-<!-- archive-index -->
-
-**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
-
-- [2026-08](archive/LOG-2026-08.md)
-- [2026-07](archive/LOG-2026-07.md)
-
-So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 ## 2026-09-11 (session with Hidde) - The tree in the wrong-tree photograph gets its own page: the Twisted Muku of Omiya Gate
 
