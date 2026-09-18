@@ -1,0 +1,17 @@
+{
+  "city": "Šaľa",
+  "country": "Slovakia",
+  "city_slug": "sala",
+  "note": "Sala has no published city page and this single tree is not close to shippable: no confirmed age or girth, and access is uncertain. Verified 2026-09-18 from a famous-slovakia verify pass. Full verified record in data/research/famous-slovakia-batch1-verified.json.",
+  "leads": [
+    {
+      "name": "The Lime of Šaľa (Šalianska lipa)",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "lat": 48.1566,
+      "lng": 17.8701,
+      "status": "lead",
+      "why": "Register-protected (data/registers/slovakia-chranene-stromy.json register_id 163) for its 'mighty growth and health', and independently listed by sk.wikipedia's national protected-trees list (entry S163), which is the second source for existence and species. No age or girth in either fetched source: a WebSearch AI summary claimed girth 521cm, height 30m and 150+ years, but per this project's rule a search summary is a lead and not a source, so those figures are NOT recorded as fact. ACCESS UNRESOLVED: the register locality reads 'courtyard of a former nursery/creche (jasle)' on the Sidlisko Vah housing estate, which is often fenced and not freely walk-in; not confirmed either way. Needs both a fetched source for age/girth and an access check before this could ever ship."
+    }
+  ],
+  "blocked": []
+}
