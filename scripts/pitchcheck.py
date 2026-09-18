@@ -166,15 +166,42 @@ OWNER_NAME = re.compile(r"\b(hidde|burgmans)\b", re.I)
 SIGNATURE = re.compile(r"^\s*(hidde|burgmans)[\s,.!-]*$", re.I | re.M)
 
 
+# A sign-off is the line above the name: "Groet,", "Um abraco,", "Best wishes,".
+# Every language writes it with a trailing comma, which is what makes this
+# cheap to recognise and what a sentence about him never looks like.
+SIGN_OFF = re.compile(r"^\s*\S[^.!?]{0,40},\s*$")
+
+
 def without_signature(text):
-    """Drop a trailing sign-off line so a signed letter is not read as a pitch."""
+    """Drop a sign-off so a signed letter is not read as a pitch.
+
+    Widened 2026-09-18: it only looked at the last few lines, so a reply
+    carrying TWO language versions in one file (the Portuguese letter, then
+    "Wat er staat (Nederlands)" under it) had its first signature read as
+    prose. Same class as the Stockholm reply of 2026-09-08 that produced this
+    exception, one layer out, and the same cost if left: every future push
+    touching those drafts needs --no-verify, and a check routinely bypassed is
+    a check nobody has.
+
+    Still deliberately narrow. A name alone on its line counts as a signature
+    only at the very end, or directly under a sign-off line. His name inside a
+    sentence still fires wherever it stands.
+    """
     lines = text.rstrip().splitlines()
     keep = len(lines)
     for i in range(len(lines) - 1, max(-1, len(lines) - 4), -1):
         if SIGNATURE.match(lines[i]):
             keep = i
             break
-    return "\n".join(lines[:keep])
+    kept = lines[:keep]
+    out = []
+    for i, line in enumerate(kept):
+        if SIGNATURE.match(line):
+            above = [l for l in kept[max(0, i - 2):i] if l.strip()]
+            if above and SIGN_OFF.match(above[-1]):
+                continue          # a signature, not a sentence about him
+        out.append(line)
+    return "\n".join(out)
 
 
 def body_of(text):
