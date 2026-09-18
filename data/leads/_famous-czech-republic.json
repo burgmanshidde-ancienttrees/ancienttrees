@@ -290,9 +290,10 @@
         "https://commons.wikimedia.org/wiki/File:Vltavot%C3%BDnsk%C3%BD_buk_%C4%8Derven%C3%BD_(2021)_(2).jpg",
         "https://commons.wikimedia.org/wiki/File:Vltavot%C3%BDnsk%C3%BD_buk_%C4%8Derven%C3%BD_(2021)_(3).jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "why": "duplicate of the blocked entry of the same name below (line ~466): ACCESS BLOCKED under hard rule 10. That verdict's status was never mirrored here, so this row kept surfacing as an unresolved lead."
     },
     {
       "name": "Buk červený (Vodice)",
@@ -433,7 +434,8 @@
         "https://commons.wikimedia.org/wiki/File:Kvasice,_o%C5%99e%C5%A1%C3%A1k_(1).jpg",
         "https://commons.wikimedia.org/wiki/File:Kvasice,_o%C5%99e%C5%A1%C3%A1k_(10).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "why": "duplicate of the blocked entry of the same name below: DEAD, knocked down by a windstorm in August 2024 (confirmed via cs.wikipedia.org and Denik.cz). That verdict's status was never mirrored here, so this row kept surfacing as an unresolved lead."
     },
     {
       "name": "Šestikmenná lípa v Zámrsku",
