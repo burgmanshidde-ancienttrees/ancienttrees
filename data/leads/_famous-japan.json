@@ -30,31 +30,6 @@
       "reason": "Confirmed 2026-09-04 to be exactly what 'Namiki' (avenue) suggests: a National Natural Monument (designated 1933-04-01) cedar avenue along the old Nakasendo road in Haraichi, Annaka City, Gunma Prefecture, not a single tree. Once numbered 732 trees (1844 count); only 13 survive today per Tokyo Shimbun (2020s health survey of the 13 remaining) and ja.wikipedia. Not a single collectible point; blocked as an avenue per BRIEF_RESEARCH.md's hard limits. Sources: ja.wikipedia.org/wiki/安中原市のスギ並木, tokyo-np.co.jp/article/276168."
     },
     {
-      "name": "Chujohimeseigan Zakura",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Ganjoji-Gifu06.JPG",
-        "https://commons.wikimedia.org/wiki/File:Ganjoji-Gifu2008-3.jpg"
-      ],
-      "status": "lead",
-      "species": "Cherry (Prunus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Daio sugi",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Dai-O-Sugi.jpg",
-        "https://commons.wikimedia.org/wiki/File:Daio_Sugi_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Daio_Sugi_02.jpg"
-      ],
-      "status": "lead",
-      "species": "Japanese Cedar (Cryptomeria sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "Futami no Omuku",
       "lat": 34.34428,
       "lng": 135.686578,
@@ -90,30 +65,6 @@
       ],
       "status": "blocked",
       "reason": "Confirmed dead: the prefecturally-designated Horutonoki (Elaeocarpus sylvestris) at Hihayo-Ten Shrine, Ito, Shizuoka, fell after years of insect damage and its designation was formally removed in January 2024. Source: ja.wikipedia.org/wiki/比波預天神社 (\"長年の虫害による倒木によって2024年1月に指定解除\")."
-    },
-    {
-      "name": "Hongō-yumimachi no Kusu",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Camphor_tree_in_Hong%C5%8D,_Tokyo_201504_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Camphor_tree_in_Hong%C5%8D,_Tokyo_201504_02.jpg"
-      ],
-      "status": "lead",
-      "species": "Camphor Tree (Camphora sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Ibi Nido Zakura",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Ibi_Nido_Zakura2008-1.jpg",
-        "https://commons.wikimedia.org/wiki/File:Ibi_Nido_Zakura2008-2.jpg"
-      ],
-      "status": "lead",
-      "species": "Cherry (Prunus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
       "name": "Isazawa no Kubo zakura",
@@ -156,19 +107,6 @@
       "species": "Cherry (Prunus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as mor_001 (Ishiwari-zakura (The Rock-Splitting Cherry)) in morioka.json. No new work needed; kept here as a record so a future pass does not re-research it."
-    },
-    {
-      "name": "Isshingyō-no-Ōzakura",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Isshingyo_big_cherry_tree_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Isshingyo_big_cherry_tree_02.jpg",
-        "https://commons.wikimedia.org/wiki/File:Isshingyo_big_cherry_tree_03.jpg"
-      ],
-      "status": "lead",
-      "species": "Cherry (Prunus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
       "name": "Itoshiro no ōsugi",
@@ -214,19 +152,6 @@
       "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as ich_002 (Jissoji no Icho) in ichinohe.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
-      "name": "Jonichiji no Icho",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Aginkgo_tree_of_Zy%C3%B4nitizi.jpg",
-        "https://commons.wikimedia.org/wiki/File:Ginkgo_at_Jyonichiji_temple.JPG",
-        "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E6%97%A5%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6_(4989225413).jpg"
-      ],
-      "status": "lead",
-      "species": "Ginkgo (Ginkgo sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "Kamo-no-Okusu",
       "lat": 34.040836,
       "lng": 133.93203,
@@ -257,32 +182,6 @@
       "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as kag_010 (The Great Camphor of Kamo) in kagoshima.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
-      "name": "Kasa sugi",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_Kasasugi.jpg",
-        "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_Kasasugi_s2.jpg",
-        "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_Kasasugi_s3.jpg"
-      ],
-      "status": "lead",
-      "species": "Japanese Cedar (Cryptomeria sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Kega-Kuyoto-no-Shidarezakura",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Kega-Kutoyo-no-Shidarezakura_ac_(1).jpg",
-        "https://commons.wikimedia.org/wiki/File:Kega-Kutoyo-no-Shidarezakura_ac_(2).jpg",
-        "https://commons.wikimedia.org/wiki/File:Kega-Kutoyo-no-Shidarezakura_ac_(3).jpg"
-      ],
-      "status": "lead",
-      "species": "Cherry (Prunus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "Kenchō-ji no Byakushin",
       "lat": 35.331167,
       "lng": 139.5545,
@@ -311,19 +210,6 @@
       "species": "Maple (Acer sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as hga_002 (Kitahanazawa no Hananoki) in higashiomi.json. No new work needed; kept here as a record so a future pass does not re-research it."
-    },
-    {
-      "name": "Kozaki no Okusu",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2024-kasai_Kozaki_Shrine_and_Kozaki_no_O-kusu_Katori-JPN.jpg",
-        "https://commons.wikimedia.org/wiki/File:2024-kasai_Kozaki_no_O-kusu_from_the_east_Katori-JPN.jpg",
-        "https://commons.wikimedia.org/wiki/File:2024-kasai_Kozaki_no_O-kusu_from_the_south_Katori-JPN.jpg"
-      ],
-      "status": "lead",
-      "species": "Camphor Tree (Camphora sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
       "name": "Kumano Hayatama Jinja no Nagi",
@@ -365,19 +251,6 @@
       "resolved_note": "2026-09-05 dedup check (coordinate + name cross-check against data/cities): already published as hga_001 (Minamihanazawa no Hananoki) in higashiomi.json. No new work needed; kept here as a record so a future pass does not re-research it."
     },
     {
-      "name": "Mineyama Jinya Enoki",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD10.jpg",
-        "https://commons.wikimedia.org/wiki/File:%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD11.jpg",
-        "https://commons.wikimedia.org/wiki/File:%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD%EF%BC%91.jpg"
-      ],
-      "status": "lead",
-      "species": "Hackberry (Celtis sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "Mishimajinja no Kinmokusei",
       "lat": null,
       "lng": null,
@@ -390,17 +263,6 @@
       "species": "Sweet Osmanthus (Osmanthus fragrans var. thunbergii)",
       "resolved": "2026-09-17: verified, written and published as ata_003, 'The Kinmokusei of Mishima Taisha', in data/cities/atami.json. Container decided in favour of joining Atami (one JR Tokaido Line stop away, well within the day-trip boundary, honestly labelled with Mishima's own address and transport per the day-trip rule), matching the precedent already set by ata_002 (Yugawara). National Natural Monument since 1934, estimated 1,200+ years by tradition, a documented annual community festival (Mokusei no Yuu) at peak bloom.",
       "delivered_id": "ata_003"
-    },
-    {
-      "name": "Mochi Tree, Hōgon-ji",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Chikubu_Island_Hougonji_DSCN1926.jpg",
-        "https://commons.wikimedia.org/wiki/File:Chikubu_Island_Hougonji_DSCN1928.jpg",
-        "https://commons.wikimedia.org/wiki/File:Chikubu_Island_Hougonji_DSCN1929.jpg"
-      ],
-      "status": "lead"
     },
     {
       "name": "Myokoku-Ji no Sotetsu",
@@ -460,42 +322,6 @@
       "resolved": "2026-09-05: duplicate. Already published as kan_004 The Raised-Root Pine (Japanese Black Pine) at 36.561667,136.663333 in data/cities/kanazawa.json, about 90m from this candidate coordinate. Raised-Root Pine is the English name already in use for Neagari-no-matsu, Kenrokuen's single famous root-raised pine. Not delivered.",
       "delivered_id": "kan_004",
       "delivered_city": "kanazawa"
-    },
-    {
-      "name": "Negoya Jinja no Okeyaki",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E6%8C%87%E5%AE%9A%E5%A4%A9%E7%84%B6%E8%A8%98%E5%BF%B5%E7%89%A9_%E7%94%B0%E6%9C%A8.JPG",
-        "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E6%8C%87%E5%AE%9A%E5%A4%A9%E7%84%B6%E8%A8%98%E5%BF%B5%E7%89%A9_%E7%95%91%E6%9C%A8.JPG",
-        "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E6%8C%87%E5%AE%9A%E5%A4%A9%E7%84%B6%E8%A8%98%E5%BF%B5%E7%89%A9_%E7%95%91%E6%9C%A82.JPG"
-      ],
-      "status": "lead",
-      "species": "Zelkova (Zelkova sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Nento-Hiramatsu Pine Tree",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Nento-Hiramatsu_Park_202603_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Nento-Hiramatsu_Park_202603_02.jpg",
-        "https://commons.wikimedia.org/wiki/File:Nento-Hiramatsu_Park_202603_03.jpg"
-      ],
-      "status": "lead",
-      "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Nezu no ki",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Juniperus_rigida_Nezunoki.jpg",
-        "https://commons.wikimedia.org/wiki/File:Juniperus_rigida_Nezunoki_2021-07-31.jpg"
-      ],
-      "status": "lead"
     },
     {
       "name": "Nishiuchi no Shidareguri Jiseichi",
@@ -607,19 +433,6 @@
       "delivered_city": "hinode"
     },
     {
-      "name": "Sawatari no Kaya no Ki",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:SawatariFunagata.JPG",
-        "https://commons.wikimedia.org/wiki/File:Sawatarinokayanokiyoshida.JPG",
-        "https://commons.wikimedia.org/wiki/File:Swatarinokayanoki.JPG"
-      ],
-      "status": "lead",
-      "species": "Japanese Torreya (Torreya sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "Sennen Bodaiju",
       "lat": 35.13103861,
       "lng": 136.27235389,
@@ -629,30 +442,6 @@
       ],
       "status": "done",
       "resolve_2026-09-06": "SHIPPED 2026-09-06 as hga_003, merged into data/cities/higashiomi.json; page copy (intro, meta_description, question fields, FAQ) updated to describe three trees and the new oldest-tree claim. Species is Tilia miqueliana (Miquel's Linden), confirmed against a search-summary error that mislabeled it Ficus religiosa. Roughly 1,000 years old per temple tradition, girth about 500cm, survived Oda Nobunaga's 1573 burning of the temple (scorched trunk, resprouted from the base) which the temple's own 2024 autumn material still references, the most recent dated evidence of the tree's continued presence. Coordinates confirmed tree-level from a geotagged 2012 Commons photo captioned with the tree's own name. No tree-specific Natural Monument designation found (the temple grounds as a whole carry National Historic Site status), so delivered flagged rather than register-backed. Sources: ja.wikipedia.org, biwako-visitors.jp (official Shiga tourism, access/hours/fee), mikawanoyasou.org (species ID). Ready to write and merge into data/cities/higashiomi.json."
-    },
-    {
-      "name": "Sentsuzan no Ichii",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Nichinan_ichi_tree.jpg",
-        "https://commons.wikimedia.org/wiki/File:%E8%88%B9%E9%80%9A%E5%B1%B1%E3%81%AE%E3%82%A4%E3%83%81%E3%82%A401.jpg",
-        "https://commons.wikimedia.org/wiki/File:%E8%88%B9%E9%80%9A%E5%B1%B1%E3%81%AE%E3%82%A4%E3%83%81%E3%82%A402.jpg"
-      ],
-      "status": "lead"
-    },
-    {
-      "name": "Shidare Katsura",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Shidarekatsura2_Takigenji.jpg",
-        "https://commons.wikimedia.org/wiki/File:Shidarekatsura_Kado.jpg",
-        "https://commons.wikimedia.org/wiki/File:Shidarekatsura_Takigenji.jpg"
-      ],
-      "status": "lead",
-      "species": "Katsura (Cercidiphyllum sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
       "name": "Shimo'ōse-no-Ōkatsura",
@@ -1009,14 +798,6 @@
       "resolve_2026-09-06": "SHIPPED 2026-09-06 as tok_017, merged into data/cities/tokyo.json; question_meta tree-count fixed at the same time. Straight-line distance to Tokyo's nearest published tree (tok_014/tok_016, Yogo no Matsu, Edogawa Ward) is only 3.4km, not the ~15.9km figure measured against Tokyo's centroid; both sit on the JR Sobu Line, one stop / 6 minutes apart with no transfer, plus a short walk each end. Confirmed alive via a dated 2024-11-29/30 shrine/city light-up event (maruchiba.jp). Two independent sources beyond the shrine's own site: ja.wikipedia.org and city.ichikawa.lg.jp, agreeing on 1931 National Natural Monument designation, ~1,200-year estimated age, 22m height, 10.8m girth at breast height. Full facts in verify_notes on the delivered record; ready to write and merge into data/cities/tokyo.json, with its true place name (Ichikawa, Chiba) stated honestly per the day-trip rule."
     },
     {
-      "name": "The Kaya of Sawatari",
-      "lat": 38.473194,
-      "lng": 140.780609,
-      "species": "Japanese Torreya (Torreya nucifera)",
-      "status": "lead",
-      "resolved": "2026-09-17: verified (Taiwa Town's own Mahoroba Hyakusen page, archived, plus ja.wikipedia's Taiwa-cho article) but held rather than published. Torreya nucifera, town-designated highlight (not a National or Prefectural Natural Monument), roughly 450-500 years by the town's own figures, girth ~310cm, height ~16m. A good local history (a Date-era distance-marker tree, a travellers' rest stop on the old Yoshioka-Yamagata road) but no festival, no national designation and no record-holder claim, so the verifying pass's own honest read is that it does not clear the single-tree-destination bar the 2026-08-31 exception requires. No nearby published Ancient Trees city exists in Miyagi or Yamagata to join either. Coordinate is a nearby bus-stop approximation (location_precision would be approximate), not a tree-level pin. Keep as a lead; publish if a future pass finds stronger fame evidence or a Sendai-area/Taiwa page opens that it can join."
-    },
-    {
       "name": "The Great Ginkgo of Jonichiji",
       "lat": 36.85298,
       "lng": 136.98304,
@@ -1084,7 +865,7 @@
       "lat": 38.4575,
       "lng": 140.6804,
       "status": "held",
-      "reason": "Verified 2026-09-18 (famous-japan-batch-d, id TBD_001): real, named tree #1 on Taiwa Town's own 'Mahoroba Hyakusen' heritage list, but town-level recognition only (no national or prefectural Natural Monument), age/girth single-sourced to a now-offline town page, reached only by a 40-minute car ride with no public transport. Held rather than published as its own single-tree place: no festival, no record-holder claim, no strong legend beyond a Date-era distance marker. Does not clearly clear the single-tree-destination bar on the evidence found."
+      "reason": "Verified 2026-09-18 (famous-japan-batch-d, id TBD_001): real, named tree #1 on Taiwa Town's own 'Mahoroba Hyakusen' heritage list, but town-level recognition only (no national or prefectural Natural Monument), age/girth single-sourced to a now-offline town page, reached only by a 40-minute car ride with no public transport. Held rather than published as its own single-tree place: no festival, no record-holder claim, no strong legend beyond a Date-era distance marker. Does not clearly clear the single-tree-destination bar on the evidence found. Earlier pass (2026-09-17) on this same tree, then filed under \"The Kaya of Sawatari\": roughly 450-500 years by the town's own figures, girth ~310cm, height ~16m; a Date-era distance-marker tree and travellers' rest stop on the old Yoshioka-Yamagata road. Same verdict both times: held, not published."
     }
   ],
   "blocked": [
