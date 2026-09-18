@@ -433,10 +433,19 @@ def check_reply_length(path, body):
     The threshold is 200 rather than 150, because a genuinely point-by-point
     answer exists (Bomenstichting Amsterdam sent eight numbered comments) and
     a check that fires on good work is a check nobody reads. Only files named
-    drafts/reply-*.md are measured: a batch mail is a different animal."""
+    drafts/reply-*.md are measured: a batch mail is a different animal.
+
+    A bilingual draft is measured on the half that is actually sent. These
+    files carry the letter under "## Te versturen" and a Dutch back-translation
+    under "## Wat er staat" for Hidde to read, so counting the whole body
+    doubles every one of them: drafts/reply-quercus-lisboa.md, which he sent,
+    reads 220 words this way and is 120. A check that fires on work he already
+    approved is a check nobody reads, which is the thing this file warns about
+    everywhere else."""
     if "reply-" not in os.path.basename(path):
         return []
-    n = len(body.split())
+    send = re.split(r"^##\s*Wat er staat", body, maxsplit=1, flags=re.M)[0]
+    n = len(send.split())
     if n <= 200:
         return []
     return [("TOO LONG FOR A REPLY", "%d words" % n,
