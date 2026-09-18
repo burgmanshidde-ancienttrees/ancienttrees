@@ -19,6 +19,9 @@ uit onze eigen data die hem werk uit handen nemen:
   kent de stad beter.
 - **22 van de 36 hebben geen foto** (20 missing, 2 held). Hij bood aan te
   fotograferen, dus dit is zijn aanbod concreet maken, geen tweede verzoek.
+- **Japan krijgt een halve zin mee** (jouw toevoeging): waar hij nu staat en
+  wat hij daar ziet. Dat is de geef-eerst-beweging uit HIS_VOICE, en voor een
+  arborist is het het enige stukje persoonlijke informatie in de mail.
 - **Engels voor het gesprek.** Anders staat er straks een call gepland in het
   Portugees omdat onze mails dat zijn.
 
@@ -37,13 +40,13 @@ mail neemt zijn aanbod aan en maakt het concreet
 
 Ola Hugo,
 
-Muito prazer, e obrigado pelo entusiasmo. Uma caminhada experimental com um grupo e exatamente o que eu esperava para por a aplicacao a prova no terreno.
+Muito prazer, e obrigado pelo entusiasmo. Uma caminhada experimental com um grupo e exatamente o que eu esperava para testar a aplicacao no terreno.
 
 Foi em Lisboa que ganhei o gosto por estas arvores, por isso fico contente que seja a primeira cidade a fazer isto.
 
-Se ajudar na escolha da zona: das 36 arvores que publicamos em Lisboa, onze ficam praticamente em fila, de Campo Santana ao Jardim da Parada, passando pela Praca da Alegria, Principe Real, Sao Bento e Estrela. Sao 4,5 km de caminho, uma manha inteira com paragens. E 22 das 36 ainda nao tem fotografia, portanto as que tirarem podem ir diretamente para o site. A divulgacao nas vossas redes e no vosso site seria otima.
+Se ajudar na escolha da zona: das 36 arvores que publicamos em Lisboa, onze ficam quase em fila, de Campo Santana ao Jardim da Parada, passando pelo Principe Real, Sao Bento e Estrela. Sao 4,5 km, uma manha inteira com paragens. E 22 das 36 ainda nao tem fotografia, portanto as que tirarem vao direto para o site. A divulgacao nas vossas redes e no vosso site seria otima.
 
-Moro em Amesterdao e estou de ferias no Japao. Gostava na mesma de falar convosco antes da caminhada, para saber o que vos e util na aplicacao nesse dia e deixar isso pronto a tempo. Uma reuniao online, de manha hora de Lisboa, em ingles?
+Moro em Amesterdao e estou de ferias no Japao, que tambem tem arvores extraordinarias, ando a ver criptomerias e canforeiras com muitos seculos. Gostava na mesma de falar convosco antes da caminhada, para saber o que vos e util na aplicacao nesse dia e deixar isso pronto a tempo. Uma reuniao online, de manha hora de Lisboa, em ingles?
 
 A aplicacao ja esta na App Store, e fico curioso pelo que acharem dela:
 https://apps.apple.com/pt/app/ancient-trees/id6806177833
@@ -55,13 +58,13 @@ Hidde
 
 Hoi Hugo,
 
-Aangenaam, en dank voor het enthousiasme. Een proefwandeling met een groep is precies wat ik hoopte om de app in het veld op de proef te stellen.
+Aangenaam, en dank voor het enthousiasme. Een proefwandeling met een groep is precies wat ik hoopte om de app in het veld te testen.
 
 In Lissabon heb ik de liefde voor deze bomen gekregen, dus ik vind het mooi dat dit de eerste stad is die dit oppakt.
 
-Als het helpt bij het kiezen van de zone: van de 36 bomen die we in Lissabon publiceren staan er elf vrijwel op een lijn, van Campo Santana naar het Jardim da Parada, via Praca da Alegria, Principe Real, Sao Bento en Estrela. Dat is 4,5 km lopen, een hele ochtend met stops. En 22 van de 36 hebben nog geen foto, dus wat jullie fotograferen kan direct op de site. De divulgatie op jullie kanalen en site zou geweldig zijn.
+Als het helpt bij het kiezen van de zone: van de 36 bomen die we in Lissabon publiceren staan er elf bijna op een lijn, van Campo Santana naar het Jardim da Parada, via Principe Real, Sao Bento en Estrela. Dat is 4,5 km, een hele ochtend met stops. En 22 van de 36 hebben nog geen foto, dus wat jullie fotograferen gaat direct de site op. De divulgatie op jullie kanalen en site zou geweldig zijn.
 
-Ik woon in Amsterdam en ben op vakantie in Japan. Ik zou toch graag voor de wandeling even spreken, om te horen wat jullie die dag nodig hebben in de app en dat op tijd klaar te zetten. Een online meeting, in de ochtend Lissabonse tijd, in het Engels?
+Ik woon in Amsterdam en ben op vakantie in Japan, waar ze trouwens ook prachtige bomen hebben, ik loop hier langs cryptomeria's en kamferbomen van vele eeuwen. Ik zou toch graag voor de wandeling even spreken, om te horen wat jullie die dag nodig hebben in de app en dat op tijd klaar te zetten. Een online meeting, in de ochtend Lissabonse tijd, in het Engels?
 
 De app staat in de App Store en ik ben benieuwd wat jullie ervan vinden:
 https://apps.apple.com/pt/app/ancient-trees/id6806177833
