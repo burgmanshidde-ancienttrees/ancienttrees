@@ -77,6 +77,11 @@ export const SIGNIN_JS = `
   // catches on whatever page they were on. Nothing else to wire.
   window.atOAuth = function(provider) {
     var back = location.origin + location.pathname;
+    // Measured, because until 2026-09-18 this route emitted nothing and the
+    // email route below was the funnel's only event. It had fired ZERO times
+    // ever while twelve accounts existed, so every account on the site had
+    // arrived by a path nothing recorded and nobody could say which.
+    try { at.track('signin-oauth', provider); } catch (e) {}
     location.href = SB + '/auth/v1/authorize?provider=' + provider
       + '&redirect_to=' + encodeURIComponent(back);
   };
@@ -192,6 +197,12 @@ export const SIGNIN_JS = `
     var ap = document.getElementById('signin-apple');
     if (ap) ap.hidden = true;
     if (dlg.showModal) { dlg.showModal(); } else { location.href = '/account'; }
+    // The TOP of the funnel, and the number that decides what the low account
+    // count means (2026-09-18). Without it, "few people sign in" cannot be
+    // told apart from "few people are ever asked to", which are opposite
+    // problems with opposite fixes. The detail says what asked: a save, a
+    // gated vote or report, or the plain sign-in link in the bar.
+    try { at.track('signin-open', reason || (treeName ? 'save' : 'direct')); } catch (e) {}
   };
   document.addEventListener('click', function(e) {
     var t = e.target.closest('[data-signin]');
