@@ -112,6 +112,24 @@ def queue():
     return trees if isinstance(trees, dict) else {t.get("id"): t for t in trees}
 
 
+_IDS = {}
+
+
+def tree_ids(slug):
+    """Every tree id a city publishes, by city slug.
+
+    starved() needs to tell "swept and came back empty" apart from "never
+    asked about", and the queue can only answer the first: a tree with no
+    queue entry is invisible there by definition.
+    """
+    if not _IDS:
+        for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+            doc = json.load(open(path, encoding="utf-8"))
+            _IDS[os.path.basename(path)[:-5]] = [
+                t.get("id") for t in doc.get("trees") or []]
+    return _IDS.get(slug, [])
+
+
 _PINS = {}
 
 
@@ -444,6 +462,76 @@ def shortlist(limit, demand=True):
 
 
 
+def starved(limit=12):
+    """Demand cities the shortlist CANNOT see, and the command that helps them.
+
+    The shortlist only ever prints a city that already has a candidate on file,
+    which is correct for its own job and means the cities with the worst supply
+    are exactly the ones it never names. Nothing routed them anywhere, so the
+    medicine the docstring above names (photo_last_resort.py) was a sentence in
+    a comment rather than a thing a run is told to do.
+
+    Found 2026-09-18 on Pamplona, which is the sharpest case the site has:
+    448 impressions in the ten-day window at average position 3.6, the biggest
+    wasted demand anywhere on seolearn's own EARNED AND WASTED list at index
+    0.14, and 0 of its 14 trees photographed. Its queue had been swept to
+    sweep 5 twice, on 09-09 and 09-16, and 13 of the 14 came back with no
+    candidate at all, so it appeared on no shortlist and in no coverage list,
+    and a session asking "what do we do about Pamplona" got no answer from
+    any tool. photo_last_resort.py had never been run on it.
+
+    Ordered by impressions, because that is what the waste is measured in. The
+    per-tree sweep count comes from the queue itself, so a city that was never
+    swept at all is named as such rather than lumped in with an exhausted one:
+    those two need opposite commands and only the queue knows which is which.
+    """
+    want = {slugify_city(c): i for c, i in demand_cities()}
+    q = queue()
+    served = photographed()
+    by_city = {}
+    for tid, entry in q.items():
+        slug = (entry.get("city") or "").lower().replace(" ", "-")
+        by_city.setdefault(slug, []).append((tid, entry))
+    rows = []
+    for c in cities():
+        slug = c["slug"]
+        if slug not in want or c["trees"] <= c["photos"]:
+            continue
+        entries = by_city.get(slug, [])
+        # An unphotographed tree with nothing left to look at: either no
+        # candidate was ever found, or every one on file already has a verdict.
+        # Both mean the shortlist has nothing to offer this city.
+        open_rows = 0
+        for tid, entry in entries:
+            if tid in served:
+                continue
+            if any(not cand.get("judged") for cand in (entry.get("candidates") or [])):
+                open_rows += 1
+        if open_rows:
+            continue
+        # WHICH COMMAND depends on why the city is empty, and the two are
+        # opposite mistakes. A tree swept to sweep 5 with nothing found needs
+        # the plant filter taken off (photo_last_resort.py). A tree with no
+        # queue entry at all was never asked about, and needs the ordinary
+        # sweep first (photo_hunt.py). Sending the second to the last resort
+        # burns a window on the wrong question, which is the waste this whole
+        # list exists to stop, so count them separately rather than reporting
+        # the minimum sweep over a mixed bag.
+        queued_ids = {tid for tid, _ in entries}
+        unseen = [t for t in tree_ids(slug)
+                  if t not in served and t not in queued_ids]
+        swept = [e.get("sweep") or 0 for tid, e in entries if tid not in served]
+        # Already through the last resort, so do not send it there twice. The
+        # stamp only means something because photo_last_resort.py stopped
+        # writing one when Commons was merely unreachable (2026-09-18).
+        tried = sum(1 for tid, e in entries
+                    if tid not in served and e.get("last_resort"))
+        rows.append((want[slug], slug, c["trees"], c["photos"],
+                     len(unseen), min(swept) if swept else None, tried))
+    rows.sort(key=lambda r: -r[0])
+    return rows[:limit]
+
+
 def famous_near(limit, photo_only=False, per_city=3):
     """Famous trees WITH a photograph, near a city we already publish.
 
@@ -691,6 +779,45 @@ def main():
     for score, trees, slug, tid, name, title, lic in rows:
         print("  [%3.0f] %-22s %-30s %s  %s"
               % (score, "%s (%d)" % (slug, trees), name[:30], title[:52], lic or ""))
+    starving = starved()
+    if starving and not a.coverage:
+        print("\nSTARVED, and invisible to the list above: cities with readers where")
+        print("every queued candidate is judged or none was ever found. The shortlist")
+        print("cannot name these, so nothing did. Worst waste first:\n")
+        print("  %-9s %-22s %-11s %s" % ("impr", "city", "photos", "why it is empty"))
+        exhausted, unasked, done = [], [], []
+        for impr, slug, trees, photos, unseen, sweep, tried in starving:
+            gap = trees - photos
+            if tried >= gap and gap:
+                why, bucket = "last resort tried too, %d tree(s)" % tried, done
+            elif sweep is None:
+                why, bucket = "no queue entry at all", unasked
+            elif unseen:
+                why = "%d swept to %d, %d never queued" % (
+                    gap - unseen, sweep, unseen)
+                bucket = unasked
+            else:
+                why, bucket = "swept to %d, nothing found" % sweep, exhausted
+            bucket.append(slug)
+            print("  %6d    %-22s %2d of %-5d %s" % (impr, slug, photos, trees, why))
+        # Three different answers, and sending a city to the wrong one wastes a
+        # window on a question already answered.
+        if exhausted:
+            print("\n  Swept and empty, so take the plant-word filter off:")
+            print("  python3 scripts/photo_last_resort.py %s --radius 120"
+                  % " ".join(exhausted[:3]))
+        if unasked:
+            print("\n  Trees nobody ever asked about, so sweep them first:")
+            print("  python3 scripts/photo_hunt.py --city %s" % unasked[0])
+        if done:
+            print("\n  Both sweeps spent on %s. Nothing here is a photo hunt any"
+                  % ", ".join(done[:4]))
+            print("  more: the supply is the problem, so add a tree that arrives")
+            print("  WITH a photograph rather than hunting one for a trunk")
+            print("  nobody has photographed.")
+        print("\n  Then scripts/famous_trees.py --country <name> for trees that")
+        print("  arrive carrying a photograph instead of needing one hunted.")
+
     print("\n  For each: fetch it, run photo_light.py, LOOK at it, and check it is")
     print("  THIS tree and not another one in the same park. A geotag settles that")
     print("  when the file has one; without a geotag and with two similar trees")
