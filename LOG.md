@@ -151,6 +151,53 @@ Verified: build 11,842 pages, qa 15,687 pages, preflight 0 problems,
 crossdevice, netcheck, parity, conventions and the screen lists clean.
 
 
+## 2026-09-18 (session) - Two faults were hiding behind NOTEs, and one deriver was about to make things worse
+
+Hidde: "nog dingen te fixen? zijn we klaar?" Rung 2 was clear and every page
+type was clean, so the honest place left to look was preflight's NOTE list,
+which nothing fails on. Two real faults were sitting in it.
+
+**Eleven ticketed trees were being shown as free.** Their `access` prose says
+"Paid entry", "Admission charged", "around NT$300", and `paid_entry` was unset
+on all of them. That flag is not decoration: the map marks a paid pin from it,
+the app feed carries it, the tree page draws the ticket band from it, and
+`freeTrees()` filters on it, so eleven trees behind a till were in the free
+list and on the walks.
+
+**And the script that fixes that was about to make it worse.** `paid_entry.py`
+derives the flag from the prose, and its matcher knew four currencies and six
+phrasings. Run as it stood it would have written 19 and REMOVED 7, and the
+seven were a 180 Kc monastery, a booked Menorca boat tour twice over, a castle
+charging admission, and a cross-reference to another paid entry. Unsetting a
+true flag tells a reader something ticketed is free, which is the expensive
+direction of this mistake. Two changes: the vocabulary now knows the
+currencies our own access lines actually quote, and the deriver is ADD ONLY.
+A flag it cannot re-confirm is printed for a person to read, never cleared;
+two are, both genuinely paid and both unmatchable by any regex. 20 written, 0
+removed, and preflight's eleven notes are gone.
+
+**All 24 country pages froze a tree count into their meta description**, which
+is the text Google prints in the result. Preflight compared the number against
+the data and reported the drift as a NOTE, so three were already known wrong;
+what it could not see is that the other 21 were only wrong-in-waiting, since
+one night run adding one tree invalidates them. Japan was 11 trees stale and
+five places short and had escaped even the drift check, because its phrasing
+did not match the anchored patterns.
+
+So the number comes from the data now: the intros carry `{trees}`, `{cities}`
+and `{places}`, and /[country].astro fills them from the same two values its
+title has always used. Preflight refuses a literal count outright rather than
+waiting for it to drift, which is the difference between a check that finds
+this class and one that finds today's three instances of it.
+
+Two rounds of my own false positives on the way there, both fixed and both
+worth recording because they are the same failure this session spent its
+morning removing from englishcheck: the first regex read "95 mapped places" as
+no count at all, and the second read "Twenty-six cities" as six.
+
+qa 15,687 pages, smoke clean, preflight 0 problems, 617 cities. Merged and
+pushed to main.
+
 ## 2026-09-18 (session) - health.py can now see a failure hiding under cancellations
 
 The translations are live; the dispatched build went through at 12:43 yesterday

@@ -599,12 +599,41 @@ def check_country_counts():
         re.compile(r"across\s+(?P<cities>%s)\s+mapped\s+cities\b" % _NUM_RX, re.I),
     ]
 
+    # A literal count in this sentence is the fault now, not just a drifted
+    # one (2026-09-18). All 24 country intros froze a number into the meta
+    # description, the text Google prints in the result, and a night run adding
+    # one tree made it wrong; three had already drifted when this was found.
+    # /[country].astro fills {trees}, {cities} and {places} from the data, so
+    # the number cannot go stale and the fix is mechanical.
+    # Up to two words may sit between the number and the noun ("95 mapped
+    # places"), and the number may be spelled out ("Six places"): both forms
+    # were in the files and both escaped the first version of this rule.
+    # The tens come FIRST in the alternation and carry their own optional
+    # hyphenated unit, so "Twenty-six" matches whole instead of the regex
+    # finding "six" on its tail and reporting the wrong number.
+    _TENS = r"(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)(?:-[a-z]+)?"
+    _UNITS = (r"one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|"
+              r"thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen")
+    _COUNT = r"(?:\d[\d.,]*|%s|%s|dozens?|scores?|hundreds?|thousands?)" % (_TENS, _UNITS)
+    # (?<![-\w]) rather than \b, or "Twenty-six cities" matches on its own tail
+    # and reports a count of six where the copy says twenty-six. My own new
+    # check cried wolf within the hour of being written, which is the thing
+    # this session spent its morning taking out of englishcheck.
+    frozen = re.compile(r"(?<![-\w])%s\s+(?:\w+\s+){0,2}?(?:trees|cities|places)\b"
+                        % _COUNT, re.I)
+
     out = []
     for f in sorted(glob.glob("data/countries/*.json")):
         with open(f, encoding="utf-8") as fh:
             d = json.load(fh)
         country = d.get("country")
         meta = d.get("meta_description") or ""
+        hit = frozen.search(meta)
+        if hit:
+            out.append("%s: meta_description freezes a count (\"%s\"). Use "
+                       "{trees}, {cities} or {places}; the page fills them from "
+                       "the data (%s)"
+                       % (country, hit.group(0), os.path.basename(f)))
         if country not in real:
             continue
         real_cities, real_trees = real[country]
