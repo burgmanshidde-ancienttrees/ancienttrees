@@ -13,7 +13,8 @@
 // module what a collection holds instead of reading the file's own array. A
 // curated collection still answers with its hand-written entries; nothing about
 // those changes.
-import { treeSlugsForCity, type CityEntry } from "./trees";
+import { treeSlugsForCity, renderableTrees, oldestTree,
+         type CityEntry } from "./trees";
 
 export interface RankMode {
   qualifies: (t: any) => boolean;
@@ -22,6 +23,19 @@ export interface RankMode {
   bands: { min: number; heading: string }[];
   band: (t: any) => number;
   note: (t: any) => string;
+  /**
+   * A mode whose unit is a PLACE rather than a tree builds its own rows here,
+   * and the per-tree walk above is skipped. One row per city cannot be
+   * expressed as a filter over every tree, because the question it asks
+   * ("which of this city's trees is the oldest") is answered per city.
+   */
+  rows?: (citiesBySlug: Map<string, CityEntry>, curatedNote: Map<string, string>) => RankRow[];
+  /**
+   * Non-numeric banding. Returns the heading a row belongs under; the bands
+   * print in the order their first row appears, so the ranking itself decides
+   * which country leads rather than an alphabet.
+   */
+  groupBy?: (r: RankRow) => string;
 }
 
 function n(x: number): string {
@@ -192,6 +206,73 @@ export const MODES: Record<string, RankMode> = {
         : `${wrote}.`;
     },
   },
+  // One row per PLACE rather than per tree, added 2026-09-18. It is the index
+  // of the site's own best-converting page type: /[city]/oldest-tree answers
+  // "oldest tree in X", Google completes that phrase for every city tested
+  // (BACKLOG.md, 2026-08-04), and nothing gathered those answers in one place.
+  //
+  // What it replaces is the reason it exists. The page was fifteen entries
+  // picked by hand when the site mapped fifteen countries, and its own meta
+  // description still said "the 15 countries this site covers" while the map
+  // had grown to 46 countries and 626 places. That is the exact staleness
+  // v1.13 introduced generated collections to end, applied to the collection
+  // that had most to gain from it.
+  //
+  // It asks trees.ts which tree is oldest rather than deciding for itself, so
+  // this page and the city's own question page can never name different trees.
+  // The bands are countries, in ranked order, so the country holding the
+  // oldest tree leads.
+  oldest_per_place: {
+    // Never reached: rows() below replaces the per-tree walk entirely.
+    qualifies: () => false,
+    keys: (t) => [t.age_max ?? 0, t.age_min ?? 0],
+    band: (t) => t.age_max ?? 0,
+    bands: [],
+    note: (t) => {
+      const lo = t.age_min ?? 0, hi = t.age_max ?? 0;
+      if (lo && hi && hi > lo) return `Roughly ${n(lo)} to ${n(hi)} years old.`;
+      if (hi) return `About ${n(hi)} years old.`;
+      const est = (t.age_estimate ?? "").trim();
+      // No age is not a gap to hide. It is the publish-and-ask rule of
+      // 2026-08-13: say we do not know and the reader with a tape measure
+      // can tell us, which is worth more than a number we guessed.
+      return est || "Age not established. Tell us if you know it.";
+    },
+    groupBy: (r) => r.country ?? "Elsewhere",
+    rows: (citiesBySlug, curatedNote) => {
+      const out: (RankRow & { keys: number[] })[] = [];
+      for (const [cslug, city] of citiesBySlug) {
+        // Every place, including the one-tree ones. Its oldest tree is its
+        // only tree, which is still the answer to "the oldest tree in X", and
+        // gating on the question page would drop Old Tjikko, the Llangernyw
+        // Yew and General Sherman from a list of the oldest trees we map.
+        // Rows link to the TREE page in every case, so nothing here depends
+        // on whether the place also publishes a question page.
+        const trees = renderableTrees(city);
+        if (!trees.length) continue;
+        const t = oldestTree(trees, city.data);
+        const slug = treeSlugsForCity(city)[t.id];
+        if (!slug) continue;
+        const mode = MODES.oldest_per_place;
+        out.push({
+          tree: t, citySlug: cslug, city: city.data.city, slug,
+          country: city.data.country,
+          note: curatedNote.get(t.id) ?? mode.note(t),
+          keys: mode.keys(t),
+        });
+      }
+      // Oldest first within the whole list. rankedBands then cuts it by
+      // country in first-appearance order, so both the countries and the
+      // cities inside them come out oldest first from this one sort.
+      out.sort((a, b) => {
+        for (let i = 0; i < a.keys.length; i += 1) {
+          if (b.keys[i] !== a.keys[i]) return b.keys[i] - a.keys[i];
+        }
+        return a.city.localeCompare(b.city);
+      });
+      return out;
+    },
+  },
 };
 
 export interface RankRow {
@@ -200,6 +281,8 @@ export interface RankRow {
   city: string;
   slug: string;
   note: string;
+  /** Set by a place-based mode, which bands by it. */
+  country?: string;
 }
 
 export interface CollectionLike {
@@ -230,6 +313,12 @@ export function rankedRows(
   if (hit) return hit;
 
   const curatedNote = new Map(coll.data.entries.map((e) => [e.tree_id, e.note]));
+  // A place-based mode builds its own rows: its unit is a city, not a tree.
+  if (mode.rows) {
+    const rows = mode.rows(citiesBySlug, curatedNote);
+    cache.set(coll.data.slug, rows);
+    return rows;
+  }
   const all: (RankRow & { keys: number[] })[] = [];
   for (const [cslug, city] of citiesBySlug) {
     const tslugs = treeSlugsForCity(city);
@@ -260,6 +349,19 @@ export function rankedBands(
   if (!mode) return [];
   const all = rankedRows(coll, citiesBySlug);
   const out: { heading: string; rows: RankRow[] }[] = [];
+  // Named bands, in the order the ranking puts them: the band holding the
+  // top row leads. Used by the place-based mode, where the heading is a
+  // country and no numeric threshold could produce it.
+  if (mode.groupBy) {
+    const byKey = new Map<string, RankRow[]>();
+    for (const r of all) {
+      const k = mode.groupBy(r);
+      if (!byKey.has(k)) byKey.set(k, []);
+      byKey.get(k)!.push(r);
+    }
+    for (const [k, rows] of byKey) out.push({ heading: `${k} (${rows.length})`, rows });
+    return out;
+  }
   let above = Infinity;
   for (const b of mode.bands) {
     const rows = all.filter((r) => mode.band(r.tree) >= b.min && mode.band(r.tree) < above);
