@@ -10,10 +10,8 @@ import Base from "../layouts/Base.astro";
 import SaveHeart from "./SaveHeart.astro";
 import SeenButton from "./SeenButton.astro";
 import WorthIt from "./WorthIt.astro";
-import SignInModal from "./SignInModal.astro";
 import ShareButton from "./ShareButton.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
-import { SIGNIN_JS } from "../lib/signin-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { SHARE_JS } from "../lib/share-js";
 import { WORTHIT_JS } from "../lib/worthit-js";
@@ -124,8 +122,10 @@ const sources = treeSources(tree);
 // and did nothing, in seven languages. Found 2026-09-12 while wiring the tick,
 // the same hour another session found the vote and the share button inert for
 // the same reason. Both halves are here: the list is now the English page's.
+// SIGNIN_JS left this list on 2026-09-18: the sheet and its script are Base's
+// now, on every page, so there is no list to forget it from.
 const scripts = singlePinScript(loc.latitude!, loc.longitude!)
-  + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SIGNIN_JS;
+  + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS;
 // The bare number, and a cap on the prose fallback. Same rule as the English
 // page: the label carries the unit, and an age_estimate that runs to a
 // sentence is cut at its first clause, because everything after the comma is
@@ -299,7 +299,6 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
       <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">{U.takeMeThere}</a>
       <a class="tb-link" href={`/${lang}/${cslug}`}>{U.moreTrees}</a>
     </div>
-    <SignInModal lang={lang} />
 </main>
   <Fragment slot="scripts" set:html={scripts} />
 </Base>

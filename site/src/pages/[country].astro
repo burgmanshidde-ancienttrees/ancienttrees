@@ -17,8 +17,6 @@ import { mapHead, countryMapScript, countryName } from "../lib/map";
 // The shared tree card carries a save heart, and a heart is a no-op without
 // the delegated handler and the sign-in dialog behind it. qa.py enforces the
 // pairing; this is the page paying it.
-import SignInModal from "../components/SignInModal.astro";
-import { SIGNIN_JS } from "../lib/signin-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 
 function esc(s: string): string {
@@ -80,7 +78,16 @@ const title = fitTitle([
   intro.data.title ?? "",
   `Ancient Trees in ${country}`,
 ]);
-const description = intro.data.meta_description ?? "";
+// The count comes from the DATA, never from the sentence (2026-09-18). All 24
+// country intros used to freeze a number into the meta description, which is
+// the text Google prints in the result, and a night run adding one tree made
+// it a lie. Three had already drifted when this was found: Italy said 360 of
+// 364, Poland 128 of 133 and 23 places of 24. The title beside it has always
+// used the live count; only this line was carrying a snapshot.
+const description = (intro.data.meta_description ?? "")
+  .replace(/\{trees\}/g, String(total))
+  .replace(/\{cities\}/g, String(countryCities.length))
+  .replace(/\{places\}/g, String(countryCities.length));
 const crumbItems: [string, string | null][] = [
   ["Home", BASE_URL],
   [country, null],
@@ -247,6 +254,5 @@ const mapScript = countryMapScript(
     )}
     <p class="suggest" set:html={`${collLine}See <a href="/cities">every city on the map</a>, or <a href="/explore">open the map</a> to find what is near you.`} />
   </main>
-  <SignInModal />
 </Base>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + mapScript} />
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + mapScript} />

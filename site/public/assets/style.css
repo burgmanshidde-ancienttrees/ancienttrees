@@ -1732,10 +1732,32 @@ footer { border-top: 1px solid var(--cream-dark); }
 .signin-dialog--page .oauth-btn, .signin-dialog--page .signin-rule,
 .signin-dialog--page .signin-form { max-width: 22rem; margin-left: auto; margin-right: auto; }
 
+/* THE HANDLE, and the transform it drives. A sheet that draws this must be
+   draggable away (CONVENTIONS.md, the sign-in sheet entry): Material 3 settles
+   a modal bottom sheet to a detent or to hidden, and ours has one stop, so the
+   only settle is open or gone. The transition is what makes a release read as
+   a spring rather than a jump; is-dragging takes it off so the sheet tracks
+   the finger exactly. */
+/* AND IT SITS ABOVE THE MEDIA QUERY ON PURPOSE. These selectors have equal
+   specificity, so the LAST one wins and a media query does not change that:
+   with this block underneath, display:none landed after display:block and the
+   handle was invisible on the only width that has one. Third time a plain
+   cascade order has cost this project a visible fault, after display:flex
+   beating [hidden] twice. */
+.signin-grab { display: none; position: absolute; top: 0; left: 0; right: 0;
+  height: 2.4rem; touch-action: none; cursor: grab; }
+.signin-grab::before { content: ""; display: block; width: 2.25rem; height: 4px;
+  border-radius: 2px; background: var(--cream-dark); margin: 0.75rem auto 0; }
+.signin-dialog { transition: transform 0.26s cubic-bezier(0.22, 0.61, 0.36, 1); }
+.signin-dialog.is-dragging { transition: none; }
+@media (prefers-reduced-motion: reduce) { .signin-dialog { transition: none; } }
 @media (max-width: 600px) {
   .signin-dialog { margin: auto auto 0; width: 100%; max-width: none;
     border-radius: 28px 28px 0 0; padding: 3.5rem 1.5rem 2rem; max-height: 92vh; }
+  /* The handle only exists where the sheet exists. */
+  .signin-grab { display: block; }
 }
+
 /* A circular target the way every sheet draws it, at Apple's 44. It was a
    15px glyph in a bordered box, which is both hard to hit and the loudest
    piece of chrome on a screen whose job is a decision. */
