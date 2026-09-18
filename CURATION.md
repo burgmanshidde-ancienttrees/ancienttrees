@@ -18,6 +18,55 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 - Slovakia's 9 cold famous-tree leads verified; 3 held famouspoland trees given a container decision
+
+Claimed and verified `_famous-slovakia`'s 9 leads that had never been looked
+at (the rest of that file's 63 leads already carried a `note_verify` from an
+earlier pass). 3 verified: **kos_001, The White Poplar of the City Park**
+(Kosice, register-protected 1991, girth conflicts between sk.wikipedia and a
+2021 teraz.sk piece on a wood-decay fungus found on the trunk, still alive
+and monitored), **sly_001, The Lime of Saľa** (register + sk.wikipedia agree
+it exists, no age or girth in any fetched source, access uncertain: the
+register locality reads "courtyard of a former nursery/creche"), and
+**rdv_001, The Lindens of Radava** (a 9-tree ensemble in a village cemetery,
+one collectible point, but only one genuinely fetched source and the
+reported figures unconfirmed). None clears the four-tree floor or the
+single-famous-tree destination test alone, so all three landed as leads
+(`data/leads/kosice.json`, `sala.json`, `radava.json`) rather than pages.
+Fixed an id collision in the delivery file: the agent's `sal_001`/`rad_001`
+already belonged to live Santalfio/Radomsko trees; reassigned to
+`sly_001`/`rdv_001` before anything touched data/cities.
+
+2 of the 9 turned out already published (Stary Smokovec's beech as
+`sms_001`, Senica's mulberry as `sen_001`) and 4 rejected: Oksovske duby's
+protected status was discontinued in 2020, Biela samota is a 24-tree avenue
+(not one collectible point), and Dolny Kubin's two civic-planting limes
+(34 and 17 years old) don't clear the genuinely-old/spectacular/significant
+bar. All recorded in `_famous-slovakia.json`.
+
+Separately, weighed the 3 famouspoland-batch4 trees a 2026-09-17 pass had
+fully written but left "for a session to weigh": the Madej and Pietrek
+Oaks (Lubiechow Dolny, two village oaks 100m apart, local nicknames only)
+and the Jeremi Oak (Bydgoszcz, a real civic tree-of-the-year win with
+932 votes and a Napoleon legend, but unconfirmed and not a national
+superlative). None clears the destination test alone and none reaches four
+trees, so all three are held as leads (`data/leads/lubiechow-dolny.json`,
+`bydgoszcz.json`, the latter seeding a future Bydgoszcz page) with their
+full prose preserved rather than discarded. Same judgement as the
+Fontenay/Mielnik precedent (2026-09-05/17).
+
+Also dispatched a verify pass on `higashi-hiroshima` (32 register leads
+split out of Hiroshima prefecture's giant-tree database on 2026-09-07,
+never mined): 17 verified across shrine/temple clusters (Fukujo-ji,
+Uneyama Shrine, Hongu Hachiman Shrine, Fukutomi-cho, plus two standalone
+finds), now in a write pass alongside the 3 Slovakia trees. To be continued
+once stories land and a city page is assembled.
+
+Ran `famous_demand.py --resolve` and `fame.py --apply` (free, deterministic)
+and `photo_hunt.py --recheck` (free API sweep, new candidates for several
+Alkmaar trees among others). Build (11895 pages), preflight and qa clean
+throughout.
+
 ## 2026-09-17 (continuation 15) - Alkmaar's photo hunt is an exhausted, documented gap
 
 `photo_hunt.py --recheck` restocked candidates for Alkmaar (14 trees, zero
