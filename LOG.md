@@ -1,6 +1,66 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session) - 27 spent branches archived, and what is genuinely left
+
+Hidde, after the fourth merge: "5 hoeft niet is de rest gedaan kunnen we
+archiveren?"
+
+**The list he was given is done.** The homepage duplication, the /cities split
+and the famous-tree collection, the girth-derived ages and the hug, and your
+own photograph on your own tree are all merged and live. Item 6 turned out to
+have landed by another route before the list was written. Item 5, the three
+mails, is his to send and stays where it is.
+
+**Two things on that list were never on it, and both carry real unlanded work.**
+Saying the rest is done would have been wrong:
+
+- `claude/apple-login-mobile-web-wv6fv1`, written 00:28 this morning, on his own
+  complaint that the sign-in sheet suggests you can swipe it away and cannot,
+  and that it takes you off the page you were on. The sheet was included by
+  hand in twelve files, so it existed on 58 percent of the site and the nav had
+  to NAVIGATE to /account to sign you in. It moves into Base.astro.
+- `claude/zware-foto-zoektocht-kb1n3e`. Its translation overlays and the App
+  Store download split are in main; the photo shortlist aimed at demand rather
+  than at coverage, langcheck's ranking of proven language areas, and the
+  digest's SEO learning table are not.
+
+**Archived**, every commit verified present in main or the work verified landed
+by another route, tips recorded here so nothing is unrecoverable
+(`git checkout <sha>` brings any of them back):
+
+| branch | tip | why it can go |
+|---|---|---|
+| `app-permission-recovery` | `c8f90f7a` | every commit is in main |
+| `claude/affectionate-hamilton-07e1bc` | `04e6dfa6` | every commit is in main |
+| `claude/blissful-cray-9dppia` | `503a0ba6` | every commit is in main |
+| `claude/camera-photo-recognition-czgy6m` | `17f75c90` | every commit is in main |
+| `claude/city-list-cities-only-tvip1a` | `e56342d2` | every commit is in main |
+| `claude/daily-digest-ewqhcc` | `b44af1d8` | every commit is in main |
+| `claude/daily-digest-hmk4ke` | `a4677677` | every commit is in main |
+| `claude/emoji-icon-inconsistencies-f6j9z3` | `76dc08f1` | every commit is in main |
+| `claude/empty-collections-website-dscksa` | `1f1c4158` | every commit is in main |
+| `claude/epic-lovelace-kjjc03` | `64634625` | every commit is in main |
+| `claude/filter-design-improvement-ujknep` | `9d31ba12` | every commit is in main |
+| `claude/footer-missie-alignment-d7ku63` | `764762fa` | every commit is in main |
+| `claude/foto-zichtbaarheid-eigen-boom-tz5y1s` | `464a03c5` | every commit is in main |
+| `claude/hero-photo-ratio` | `ef1510ed` | every commit is in main |
+| `claude/kunnen-we-hier-wat-mee-0t7f8k` | `d880fe59` | every commit is in main |
+| `claude/mobile-search-zoom-bug-2uillb` | `27eebed6` | every commit is in main |
+| `claude/multiple-images-per-tree-gh0x14` | `07477818` | every commit is in main |
+| `claude/nieuwe-blacklinks-eocc8d` | `0e070c8d` | every commit is in main |
+| `claude/seo-results-performance-oqayxn` | `d0dc043d` | every commit is in main |
+| `claude/vigilant-thompson-omceg9` | `4ed17067` | every commit is in main |
+| `claude/website-ux-audit-aji746` | `d8a9e231` | every commit is in main |
+| `geo-distance-consolidation` | `fcc74489` | every commit is in main |
+| `maplibre-map-wip` | `fc700405` | every commit is in main |
+| `claude/tree-age-species-trunk-size-u9u1yb` | `2e13bbd4` | landed by content, verified |
+| `claude/boom-pagina-kop-h8zuv9` | `d61ef453` | landed by content, verified |
+| `claude/nostalgic-lewin-e2a29b` | `77abfbb5` | landed by content, verified |
+| `claude/project-display-chrome-macos-no73xi` | `14fcd2ea` | landed by content, verified |
+
+Kept: the three mail branches (item 5), the two above, and this session's own.
+
 ## 2026-09-18 (session) - Your own photograph shows on your own tree, on the website too
 
 Fourth of the stranded branches (claude/foto-zichtbaarheid-eigen-boom-tz5y1s,
