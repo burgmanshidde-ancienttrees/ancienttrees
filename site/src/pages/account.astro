@@ -28,9 +28,7 @@ import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { PROFILE_JS } from "../lib/profile-js";
 import { MY_TREES_JS } from "../lib/my-trees-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
-import SignInModal from "../components/SignInModal.astro";
 import SignInPanel from "../components/SignInPanel.astro";
-import { SIGNIN_JS } from "../lib/signin-js";
 import { myTreesMapScript, mapHead } from "../lib/map";
 import { SHEET_JS } from "../lib/sheet-js";
 
@@ -155,8 +153,7 @@ const canonical = `${BASE_URL}/account`;
     <div id="map" class="map"></div>
   </div>
 </div>
-<SignInModal />
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + myTreesMapScript() + PROFILE_JS + MY_TREES_JS + SHEET_JS + `
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + myTreesMapScript() + PROFILE_JS + MY_TREES_JS + SHEET_JS + `
 <script>
 (function() {
   var SB = "${SUPABASE_URL}";
