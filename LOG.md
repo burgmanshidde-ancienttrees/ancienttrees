@@ -380,6 +380,13 @@ Cuenta into "Account" on every translated page; and nothing could ever swap it
 back, so an in-place sign-out would have left a bar still claiming you were
 signed in. One painter now does both directions in the page's own language.
 
+**LIVE.** Merged to main as 1446b5f and deployed: deploy runs 4992 (18:31)
+and 4995 (20:52) both succeeded on commits descending from it. My own push's
+deploy run was cancelled 19 seconds in by a night run, which is ordinary here
+and not a failure; the next completed run carried the code. Note for whoever
+checks next: this sandbox's egress proxy refuses ancienttrees.app, so the live
+HTML cannot be read from a run, and the deploy conclusion is the evidence.
+
 **The ratchet.** check_the_session_is_known_before_anything_asks() in qa.py
 refuses a build where anything reads the session before the head catches the
 token, and refuses a catch written as a type="module" script, which is the
