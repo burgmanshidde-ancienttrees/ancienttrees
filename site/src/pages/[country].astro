@@ -80,7 +80,16 @@ const title = fitTitle([
   intro.data.title ?? "",
   `Ancient Trees in ${country}`,
 ]);
-const description = intro.data.meta_description ?? "";
+// The count comes from the DATA, never from the sentence (2026-09-18). All 24
+// country intros used to freeze a number into the meta description, which is
+// the text Google prints in the result, and a night run adding one tree made
+// it a lie. Three had already drifted when this was found: Italy said 360 of
+// 364, Poland 128 of 133 and 23 places of 24. The title beside it has always
+// used the live count; only this line was carrying a snapshot.
+const description = (intro.data.meta_description ?? "")
+  .replace(/\{trees\}/g, String(total))
+  .replace(/\{cities\}/g, String(countryCities.length))
+  .replace(/\{places\}/g, String(countryCities.length));
 const crumbItems: [string, string | null][] = [
   ["Home", BASE_URL],
   [country, null],
