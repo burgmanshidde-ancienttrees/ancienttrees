@@ -8419,6 +8419,24 @@
     "note": "7 Japanese overlays in one pass, 24 trees, all ids present; no new facts",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "_famous-austria",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 1,
+    "note": "1 verified (Linde im Gries, well-documented legendary lime with 10m girth); 3 of 4 worked candidates failed on access-unclear or single-source, 1 blocked as not-a-tree (Rehberger Kreuz is a wayside cross)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "_famous-austria (container mapping + Wiener ND 276)",
+    "kind": "session",
+    "tokens": 45000,
+    "trees": 0,
+    "note": "Continued a standing claim: ran famous_map.py to find containers by distance, not name. Verified Wiener Naturdenkmal 276 (Stadtpark pagoda tree) in full, including viewing both a bare and a leafed Commons photo, before discovering it duplicates the already-published vie_016 (same coordinates, same photo file); reverted the draft addition and marked the lead published instead of shipping a duplicate. Decided Friedenslaerche does not join Salzburg: 18.6km straight line but ~50-55 min real transit, past the day-trip norm, kept as a lead for a future Oberndorf bei Salzburg page. Blocked two more famous_trees.py false positives (a young 2015-planted Christuskirche lime mismatched by genus, a wayside-shrine tree with no fetchable source). No cluster of 4+ exists anywhere in this leads file; nothing ships from it today. Releasing the claim.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
