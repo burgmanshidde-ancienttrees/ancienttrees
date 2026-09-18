@@ -1,0 +1,54 @@
+[
+  {
+    "id": "grk_001",
+    "name": "Gernikako Arbola, the Tree of Gernika",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "young descendant, planted 2015",
+    "age_min": 10,
+    "age_max": 12,
+    "girth_cm": null,
+    "location": {
+      "address": "Casa de Juntas de Gernika, Allende Salazar Kalea, 48300 Gernika-Lumo, Biscay",
+      "latitude": 43.313189,
+      "longitude": -2.679757,
+      "neighbourhood": "Gernika-Lumo town centre"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Gernikako_Arbola",
+      "https://orain.eus/es/actualidad/sociedad/2015/01/15/arbol-gernika--muere-arbol-gernika-sustituiran-retono/",
+      "https://www.visitbiscay.eus/es/casa-juntas-arbol-gernika"
+    ],
+    "access": "Free entry to the gardened grounds of the Casa de Juntas (roughly 10:00-14:00 and 16:00-18:00/19:00 daily), closed when the assembly is sitting; one tourism page describes it as a free, walk-in visit while another notes limited capacity",
+    "transport": "Central Gernika-Lumo, a few minutes' walk from Gernika railway station (Euskotren)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "The oak everyone comes to see was planted in 2015. That is the arrangement rather than a disappointment: the Tree of Gernika is a dynasty, and this is the fifth trunk to hold the post. It was raised from a sapling born in 2000 in the Arratia valley, in the direct line of its predecessors, and went into the ground in March 2015 after the fourth tree died in 2005 of poor drainage.\n\nWhat this ground has witnessed is the reason to stand here. Under oaks on this spot the Lords of Biscay swore to respect the fueros, the charters of Basque self-government, from the Middle Ages onward, and Castilian kings and Carlist pretenders took the same oath. The third tree, which stood from 1858 to 2004, was a few dozen metres away when the Luftwaffe bombed Gernika in 1937, and it survived. Afterwards Carlist volunteers guarded it against Falangists who wanted the symbol destroyed. Honey fungus, not a bomb, finally killed it.\n\nThe name travelled further than any of the trees did. 'Gernikako Arbola' is the Basque anthem, and the oak stands in the coat of arms of Bizkaia. A slice of an earlier trunk and a stone cross cut from another are kept nearby, so the old wood is a few steps from the young tree.",
+    "how_to_recognise": "You can recognise it by its youth, a young oak barely a decade old rather than the veteran visitors expect. It stands in the garden of the Casa de Juntas, near the preserved trunk slice of an earlier Tree of Gernika."
+  },
+  {
+    "id": "cbv_001",
+    "name": "Carbayon de Valentin",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "over 500 years, possibly over 700",
+    "age_min": 500,
+    "age_max": 700,
+    "girth_cm": 1000,
+    "location": {
+      "address": "Prado de San Pedro, beside the chapel of San Pedro, Valentin, Tineo, Asturias",
+      "latitude": 43.304325,
+      "longitude": -6.520509,
+      "neighbourhood": "Valentin (parish of Tineo)"
+    },
+    "verified_sources": [
+      "https://es.wikipedia.org/wiki/Carbay%C3%B3n_de_Valent%C3%ADn",
+      "https://naturalezadeasturias.es/espacios/accede/protegidos/monumentos-naturales/MN-carbayon-de-valentin.html",
+      "https://www.turismoasturias.es/en/descubre/naturaleza/espacios-protegidos/carbayon-de-valentin"
+    ],
+    "access": "Free, standing on open common ground (the Prado de San Pedro) beside a small rural chapel in the village of Valentin; no gate or ticket in any source",
+    "transport": "Rural village of Valentin, Tineo municipality, western Asturias; no rail, reached by road",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "Somebody wrote this oak down before 1492. That is the documented floor under its age, and it is why the sources credit the Carbayon de Valentin with five centuries at least and frequently more than seven. Nobody has counted its rings, so the range stays a range.\n\n'Carbayon' is the Asturian word for a big old oak, and this one is generally held to be the oldest in Asturias. The measurements do the arguing. Sixteen metres tall, a crown twenty metres across, and a trunk that two independent sources put at ten metres round. That last figure is enormous for a pedunculate oak and is worth reading carefully: ancient carbayones swell at the base, and the tape may have gone round there rather than at chest height. An English tourism page renders it as a ten metre diameter, which it plainly is not.\n\nThe state caught up in 1995, when Asturias declared the tree a Natural Monument by decree and put the Prado de San Pedro around it under the same protection. In 2008 the NGO Bosques sin Fronteras named it Giant Tree of the year, and it sits on the Fundacion Biodiversidad's list of the hundred most singular trees in Spain. It stands out in the open beside the small chapel of San Pedro, on common ground with no gate and no ticket.",
+    "how_to_recognise": "You can recognise it by the trunk, put at ten metres round by the region's own register, carrying a crown about twenty metres across. It stands in the open Prado de San Pedro, beside the small chapel of San Pedro."
+  }
+]

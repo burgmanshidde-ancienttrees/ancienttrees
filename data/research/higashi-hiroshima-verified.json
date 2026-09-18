@@ -1,0 +1,50 @@
+[
+  {
+    "id": "hgh_018",
+    "name": "The Ginkgo of Genko-ji",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 316,
+    "location": {
+      "address": "Genko-ji, Kotada, Kurose-cho, Higashi-Hiroshima, Hiroshima Prefecture",
+      "latitude": 34.3383478,
+      "longitude": 132.7210318,
+      "neighbourhood": "Kurose-cho Kotada"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53617&branch_number=1",
+      "https://www.e-ohaka.com/temple_detail/id046419.html"
+    ],
+    "access": "Free. Temple grounds in Kurose-cho Kotada, presumed open in daylight hours like the area's other temples; no gate or restriction found.",
+    "transport": "No train station in Kurose-cho; reachable by car, roughly 30-40 minutes south of central Saijo.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Report ID 53617, Ministry of Environment giant-tree register, surveyed 2000: girth 3.16m, health good, no age band recorded (不明). Register's own geocoding note calls the coordinate site-level, resolved to the temple itself (Nominatim on facility name), not the trunk, so location_precision stays approximate. Only the register names this specific tree; a second source (e-ohaka.com temple directory) independently confirms Genko-ji exists at this address in Kurose-cho, Kotada 618, but says nothing about a ginkgo. Flagged for that reason: existence and address of the temple are corroborated, the tree itself is registry-only. Web search for a second description of the tree (city bunkazai lists, Hiroshima prefectural greening centre, giant-tree blogs) found nothing. No news or recent survey found confirming it still stands past the 2000 survey; nothing found suggesting it has fallen either. Girth of 3.16m is a genuinely large ginkgo trunk, well clear of the register's 3m floor, and worth recording even without a second voice."
+  },
+  {
+    "id": "hgh_019",
+    "name": "The Black Pine of Tokuzen-ji",
+    "species": "Japanese Black Pine (Pinus thunbergii)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 330,
+    "location": {
+      "address": "Tokuzen-ji, Nora, Toyosaka-cho, Higashi-Hiroshima, Hiroshima Prefecture",
+      "latitude": 34.5429828,
+      "longitude": 132.8376949,
+      "neighbourhood": "Toyosaka-cho Nora"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53642&branch_number=1",
+      "https://www.mapion.co.jp/phonebook/M06005/34212/L0730869/"
+    ],
+    "access": "Free. Temple grounds in Toyosaka-cho Nora, presumed open in daylight hours; no gate or restriction found.",
+    "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Report ID 53642, Ministry of Environment giant-tree register, surveyed 2000: girth 3.30m, health good, no age band recorded. Register's own geocoding note calls the coordinate site-level, resolved to the temple itself, not the trunk, so location_precision stays approximate. Only the register names this specific tree; a directory listing (Mapion) independently confirms Tokuzen-ji exists at Toyosaka-cho Nora 289, but says nothing about a pine. Flagged for that reason. Checked the city's Toyosaka-cho cultural-properties page (city.higashihiroshima.lg.jp/.../town/toyosaka/), which lists the town's designated properties (Hongu Hachiman's 1701 hall, the Renkyo-ji Asunaro) and does not mention this pine, so it is registered nationally without a local designation. No news or recent survey found either confirming continued life past 2000 or reporting it felled. Girth of 3.30m is well clear of the register's 3m floor for a black pine, a species usually shaped and tended rather than left to grow wild, which is itself a small sign of a cared-for tree on temple ground."
+  }
+]
