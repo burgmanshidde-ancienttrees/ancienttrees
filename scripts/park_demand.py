@@ -491,11 +491,19 @@ def main():
     rows.sort(key=lambda r: rank(r, views))
 
     if args.check:
-        free = [r for r in rows if verdict(r) in ("intro", "one short")]
+        # Red only for what could ship today: five groupable trees and nobody
+        # has written the intro. "one short" is a tree short, which is research
+        # and cannot be closed on demand, and a check that stays red whatever
+        # you do is a check everybody learns to walk past.
+        free = [r for r in rows if verdict(r) == "intro"]
         for r in free:
-            print("%s (%s): %d trees mapped, %d groupable, no page" % (
+            print("%s (%s): %d trees mapped, %d groupable, no intro written" % (
                 r["park"], r["city"], r["trees"], r["grouped"]))
-        print("\n%d famous parks clear the five-tree gate with no page." % len(free))
+        print("%d famous parks clear the five-tree gate with no page." % len(free))
+        short = [r for r in rows if verdict(r) == "one short"]
+        for r in short:
+            print("  (%s, %s has an intro and %d of the five trees, so its page "
+                  "renders nothing yet)" % (r["park"], r["city"], r["grouped"]))
         return 1 if free else 0
 
     if args.gaps:
