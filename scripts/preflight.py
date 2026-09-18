@@ -1499,6 +1499,31 @@ def visible_text(body):
     return out
 
 
+def astro_template(src):
+    """Everything after an Astro component's frontmatter fence.
+
+    Was `src.split("---", 2)[2]`, which is wrong the moment three hyphens
+    appear inside the frontmatter, because the split cuts at the first two
+    occurrences wherever they fall. Two shapes in this repo break it, and both
+    surfaced on 2026-09-18 when HomePage.astro moved into components/:
+
+    - a section divider in a comment, `// --- Directory block ---`, which made
+      the "body" the rest of the FRONTMATTER, so every code comment in it was
+      reported as untranslated text a reader would see. 119 findings, none real.
+    - an opening fence with a comment glued to it, `---// The one translated...`,
+      which TranslatedQuestionPage.astro and TranslatedTreePage.astro both use.
+      Astro accepts it, so a check that assumes a bare fence reads the whole
+      file as template.
+
+    So: the opening fence is the file starting with `---`, and the closing one
+    is the first LATER line that is nothing but `---`.
+    """
+    if not src.startswith("---"):
+        return src
+    m = re.search(r"\n---[ \t]*(?:\n|$)", src)
+    return src[m.end():] if m else src
+
+
 def check_translated_components_have_no_typed_text():
     """A word typed into a component that renders in seven languages.
 
@@ -1520,8 +1545,7 @@ def check_translated_components_have_no_typed_text():
     """
     out = []
     for name, src in language_aware_components():
-        parts = src.split("---", 2)
-        body = parts[2] if len(parts) > 2 else src
+        body = astro_template(src)
         for text in visible_text(body):
             if text in ("Ancient Trees",):      # the brand is never translated
                 continue
