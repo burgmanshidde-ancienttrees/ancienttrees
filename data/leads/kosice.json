@@ -10,7 +10,28 @@
       "lat": 48.724027,
       "lng": 21.264918,
       "status": "lead",
-      "why": "Stands in Kosice's Mestsky park (City Park), opposite the main railway station. Register-protected since 2 October 1991 (UZP Kosice 238/91-Bb) for scientific, educational and cultural value. Two independent sources agree it exists and confirm the species (sk.wikipedia's dedicated article and a 2021 teraz.sk news piece on a wood-decay fungus found on the trunk, under acoustic-tomography monitoring but not felled), but they conflict on measurement: sk.wikipedia gives girth 661cm/height 24m, teraz.sk gives 710cm/27m. Age recorded loosely as roughly 150 years. Free and open, a one to two minute walk from the station. Held as a lead rather than published alone: one tree does not meet the four-tree floor, and a solitary park poplar is not an obvious single-tree destination. Would seed a Kosice city page once more Slovak register/famous-tree leads land nearby."
+      "why": "Stands in Kosice's Mestsky park (City Park), opposite the main railway station. Register-protected since 2 October 1991 (UZP Kosice 238/91-Bb) for scientific, educational and cultural value. Two independent sources agree it exists and confirm the species (sk.wikipedia's dedicated article and a 2021 teraz.sk news piece on a wood-decay fungus found on the trunk, under acoustic-tomography monitoring but not felled), but they conflict on measurement: sk.wikipedia gives girth 661cm/height 24m, teraz.sk gives 710cm/27m. Age recorded loosely as roughly 150 years. Free and open, a one to two minute walk from the station. Held as a lead rather than published alone: one tree does not meet the four-tree floor, and a solitary park poplar is not an obvious single-tree destination. Would seed a Kosice city page once more Slovak register/famous-tree leads land nearby.",
+      "id": "kos_001",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 165,
+      "girth_cm": 661,
+      "location": {
+        "address": "Mestský park (City Park), opposite the main railway station, Košice",
+        "latitude": 48.724027,
+        "longitude": 21.264918,
+        "neighbourhood": "Mestský park, Košice"
+      },
+      "verified_sources": [
+        "https://sk.wikipedia.org/wiki/Topo%C4%BE_v_mestskom_parku",
+        "https://www.teraz.sk/regiony/kosice-odbornici-strom-topol/198580-clanok.html"
+      ],
+      "access": "Free; stands in the public City Park directly opposite the railway station, no restriction.",
+      "transport": "A one to two minute walk from Košice's main railway station; also served by city buses/trams to the park.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In 2021 specialists scanned the inside of this poplar with sound. A wood-destroying fungus had been found on the double trunk, and acoustic tomography is how you look for a hollow without opening anything: send a pulse through the wood, time how long it takes to come out the far side, and rot shows up as the slow patch. The tree stayed. It is monitored rather than condemned, and it is still standing in the city park across the road from Košice's main railway station, which makes it one of the easiest old trees in Slovakia to reach. Step off a train and you are two minutes away. The measurements depend on who took them: the Slovak record gives 6.61 metres of girth and 24 metres of height, while the 2021 coverage of the fungus reported 7.1 metres and 27. Either way it is a great deal of poplar, roughly a century and a half old, protected by the state since October 1991 for its scientific and educational value. White poplars are not built for this. They are fast, soft-wooded riverside trees that usually come apart well before 150, which is precisely why this one was protected and why somebody is listening to its trunk.",
+      "how_to_recognise": "You can recognise it by the double trunk, 6.6 to 7.1 metres round depending on who measured it, and by the leaves, dark above and felted white underneath. It stands in the city park opposite the main railway station."
     }
   ],
   "blocked": []

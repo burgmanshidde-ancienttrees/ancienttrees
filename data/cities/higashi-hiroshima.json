@@ -1,0 +1,603 @@
+{
+  "city": "Higashi-Hiroshima",
+  "country": "Japan",
+  "status": "published",
+  "intro": "Higashi-Hiroshima's seventeen registered giants are spread the way the city itself is: thirty kilometres from sake breweries to coast. A cedar pair shares a mountain-summit temple above Saijo. Five trees crowd one grove that Hiroshima Prefecture declared a natural monument in 1987, above Toyosaka. A lone ginkgo stands two minutes from a train platform at Akitsu. This is not one walk, it is several, and almost none of it has been written about in English before.",
+  "meta_description": "Higashi-Hiroshima's oldest tree is a 400-year ginkgo by Renko-ji, two minutes from Akitsu station. That, a mountain cedar, and fifteen more.",
+  "question_meta": "Higashi-Hiroshima's oldest tree is the Great Ginkgo of Renko-ji, roughly 400 years old and 5.2 metres round, two minutes from Akitsu Station.",
+  "question_answer": "The oldest tree in Higashi-Hiroshima is the Great Ginkgo of Renko-ji, estimated at roughly 400 years old and measured at 5.2 to 5.3 metres round, standing in the temple precinct in Akitsu, on the city's southern coast. It is free to visit and a two-minute walk from Akitsu Station on the JR Kure Line.",
+  "question_context": "The age is an estimate rather than a measurement, the same honest gap that applies to almost every giant ginkgo in Japan: no register anywhere carries a planting date for this tree, so the figure comes from its size and from local accounts that put it at around four centuries. Its closest rival for the title is the Meoto-sugi, a named husband-and-wife cedar pair on the summit of Mount Fukujo-ji above Saijo's sake breweries, dated only as \"over three hundred years\" in the same 1988 national giant-tree survey that measured the ginkgo. Both readings rest on girth rather than a ring count. What sets the ginkgo apart is how easy it is to reach: most of Higashi-Hiroshima's seventeen registered giants stand in shrine groves reachable only by car, spread across the hills above Toyosaka and Fukutomi, while this one is a short walk from a JR platform on the coast at Akitsu. See all seventeen remarkable trees of Higashi-Hiroshima.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Higashi-Hiroshima?",
+      "a": "The Great Ginkgo of Renko-ji, in Akitsu, estimated at roughly 400 years and 5.2 to 5.3 metres round. Free to visit, a two-minute walk from Akitsu Station."
+    },
+    {
+      "q": "Where is the biggest cluster of old trees?",
+      "a": "Uneyama Shrine in Toyosaka-cho, where five separate giants, an oak, a cedar, an umbrella pine, a cypress and a fir, share one grove that Hiroshima Prefecture designated a natural monument in 1987."
+    },
+    {
+      "q": "When should I visit for autumn colour?",
+      "a": "November, when the Great Ginkgo of Renko-ji turns gold and the Kurogane Holly at Fukujo-ji reddens with berries."
+    },
+    {
+      "q": "Do I need a car?",
+      "a": "For most of these, yes. Only the Renko-ji ginkgo is reachable by train; the rest stand in shrine and temple grounds across Saijo, Toyosaka and Fukutomi that only a road reaches."
+    }
+  ],
+  "hero_tree_id": "hgh_005",
+  "oldest_tree_id": "hgh_005",
+  "trees": [
+    {
+      "id": "hgh_005",
+      "name": "The Great Ginkgo of Renko-ji",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 300,
+      "age_max": 450,
+      "girth_cm": 530,
+      "location": {
+        "address": "Renko-ji, Mitsu, Akitsu-cho, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.3221476,
+        "longitude": 132.818961,
+        "neighbourhood": "Akitsu-cho Mitsu"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53664&branch_number=1",
+        "http://www.hitozato-kyoboku.com/hiroshimaken.htm",
+        "https://tonari.gozaru.jp/taiju/icho_renkoji.html"
+      ],
+      "access": "Free. Temple grounds in Akitsu-cho Mitsu; the tree stands centrally in the temple precinct.",
+      "transport": "Akitsu is on the JR Kure Line; the temple is a walk from Akitsu station (exact walk time not confirmed this pass).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The fire took the buildings. The ginkgo stayed, and local accounts of Renko-ji have carried that ever since. It is the kind of thing ginkgos are known for: wet, heavy wood and a habit of coming back, so the tree outlasts what stands next to it. Higashi-Hiroshima lists it as a city natural monument. The national giant-tree survey recorded 5.3 metres of girth and good health; an independent Japanese catalogue of village giants gives the same 5.3 metres, and a page devoted to this tree alone gives 5.2 metres and a height of 25. Three sources within ten centimetres of each other is as close to settled as a tree measurement gets. The age is looser. The register says over three hundred years and local accounts say about four hundred, so the band on this page stays wide rather than tidy. Renko-ji is the temple of the Akitsu sake brewer Miura Senzaburo, and it sits a walk from Akitsu station on the JR Kure Line, which makes this the only one of the city's registered giants you can reach without a car. In late November it does what ginkgos do everywhere, turns the colour of brass and then drops the lot in about a week.",
+      "how_to_recognise": "You can recognise it by the fan-shaped leaves, split down the middle and gold in November, and by the trunk, measured at 5.2 to 5.3 metres round. It stands centrally in the temple precinct.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late November, when it goes gold and then drops the lot in a week"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_001",
+      "name": "The Meoto-sugi of Fukujo-ji",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 460,
+      "location": {
+        "address": "Fukujo-ji, Shimominaga, Saijo-cho, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.3780958,
+        "longitude": 132.7749804,
+        "neighbourhood": "Saijo-cho Shimominaga (Mount Fukujo-ji, 509m)"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53212&branch_number=1",
+        "https://ja.wikipedia.org/wiki/%E7%A6%8F%E6%88%90%E5%AF%BA_(%E6%9D%B1%E5%BA%83%E5%B3%B6%E5%B8%82)",
+        "https://higashihiroshima-kanko.jp/spot/fukujouji/"
+      ],
+      "access": "Free. Temple grounds on the summit of Mount Fukujo-ji, reached by a mountain road; open to visitors year-round, famous locally for its spring azaleas.",
+      "transport": "No train or bus stop nearby; reached by car via the temple's own mountain access road, roughly 15-20 minutes from central Saijo.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Locals do not count this cedar on its own. It is half of a meoto-sugi, a husband-and-wife pair, and the pairing is how the trees on this summit have been named for generations. Fukujo-ji sits at 509 metres on the mountain that carries its name, above the Saijo basin and its sake breweries, and temple tradition dates the founding to 726. The cedar came through Japan's national giant-tree survey in 1988 with a trunk 4.6 metres round and a health grade of good. Hiroshima Prefecture lists the temple's great cedars among its natural monuments, and both the city's tourism office and the Japanese record of the temple describe them as roughly 40 metres tall and several centuries old, which is why the age here is written as a band of three to five hundred years rather than a figure. Most people who drive up the mountain road come for the azaleas, around sixty varieties of them, and meet the cedars on the way to the hall. Two other registered giants stand on the same ground, a Japanese horse chestnut and a kurogane holly, so the walk from the car park is short and the reward is three trees rather than one. The pin marks the precinct, not the trunk.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.6 metres round, and by its twin: these two cedars are named as a husband-and-wife pair and stand around 40 metres tall on the temple's summit ground.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_002",
+      "name": "The Horse Chestnut of Fukujo-ji",
+      "species": "Japanese Horse Chestnut (Aesculus turbinata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 400,
+      "location": {
+        "address": "Fukujo-ji, Shimominaga, Saijo-cho, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.3780958,
+        "longitude": 132.7749804,
+        "neighbourhood": "Saijo-cho Shimominaga (Mount Fukujo-ji, 509m)"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53213&branch_number=1",
+        "https://ja.wikipedia.org/wiki/%E7%A6%8F%E6%88%90%E5%AF%BA_(%E6%9D%B1%E5%BA%83%E5%B3%B6%E5%B8%82)"
+      ],
+      "access": "Free. Temple grounds on the summit of Mount Fukujo-ji, open to visitors year-round.",
+      "transport": "No train or bus stop nearby; reached by car via the temple's own mountain access road, roughly 15-20 minutes from central Saijo.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The national survey that measured this tree in 1988 also wrote down that part of it was already dying. Partial dieback, the register says, on a trunk four metres round. That was thirty-eight years ago and nothing published since reports how it is doing, so treat it as the least certain tree on this mountain: it is in the register, the Japanese record of Fukujo-ji names a Japanese horse chestnut among the temple's designated giants, and nobody has published anything to say it came down. Tochinoki, as the species is called here, is a tree of wet mountain ground and cool air, which is what 509 metres above the Saijo basin provides. Its nuts were famine food before they were a delicacy, leached of their bitterness over days and pounded into tochi-mochi, still sold across the mountains of western Japan. Nobody has dated this one. If you climb the temple road and find it, or find it gone, tell us, because that is the fastest way this page gets better. It stands with two other registered giants on the same ground, a pair of cedars and a kurogane holly, which makes the stop worth the drive whatever condition you find this trunk in.",
+      "how_to_recognise": "You can recognise it by the leaves, five to seven big leaflets spread from one stalk like a hand, unlike anything else on the summit, and by the trunk, four metres round with dead wood in the crown.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "late September and October, when the tochi nuts drop"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_003",
+      "name": "The Kurogane Holly of Fukujo-ji",
+      "species": "Kurogane Holly (Ilex rotunda)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 310,
+      "location": {
+        "address": "Fukujo-ji, Shimominaga, Saijo-cho, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.3780958,
+        "longitude": 132.7749804,
+        "neighbourhood": "Saijo-cho Shimominaga (Mount Fukujo-ji, 509m)"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53214&branch_number=1",
+        "https://ja.wikipedia.org/wiki/%E7%A6%8F%E6%88%90%E5%AF%BA_(%E6%9D%B1%E5%BA%83%E5%B3%B6%E5%B8%82)"
+      ],
+      "access": "Free. Temple grounds on the summit of Mount Fukujo-ji, open to visitors year-round.",
+      "transport": "No train or bus stop nearby; reached by car via the temple's own mountain access road, roughly 15-20 minutes from central Saijo.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Japan's national giant-tree register takes nothing under three metres of girth, which is why it is full of cedars and thin on hollies. This one measures 3.1 metres and went into the register from the 1988 survey with its health recorded as good. Kurogane holly is a warm-country evergreen of southern Japan, glossy-leaved and slow, carrying a crop of small red berries through the winter; a trunk of this size represents a long time standing on the summit of Mount Fukujo-ji, though nobody has published an age for it. The temple below it claims a founding of 726 and sits at 509 metres, and the holly is part of the reason the grounds are designated at all: the cedars, the Japanese horse chestnut and this tree are counted together as the temple's giants rather than singly. Most visitors arrive in spring, when around sixty varieties of azalea are out, and walk past this trunk without a second look. The better month is November, when the berries come on and the horse chestnut beside it has dropped its leaves. The coordinate on this page covers the whole precinct, which is honest rather than precise: the three registered trees here share one pin and you will sort them out by eye.",
+      "how_to_recognise": "You can recognise it by the leaves, small, leathery and glossy where its neighbours are needled or deciduous, and by the red berries in winter. Its trunk is 3.1 metres round, the slimmest of the temple's registered giants.",
+      "best_time": {
+        "months": [
+          11,
+          12
+        ],
+        "kind": "fruit",
+        "label": "November and December, when the red berries come on"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_004",
+      "name": "The Hiba of Renkyo-ji",
+      "species": "Hiba (Thujopsis dolabrata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 330,
+      "location": {
+        "address": "Renkyo-ji, Toyosaka-cho Kiyotake 2577, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.581714,
+        "longitude": 132.8257263,
+        "neighbourhood": "Toyosaka-cho Kiyotake"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53634&branch_number=1",
+        "https://www.city.higashihiroshima.lg.jp/soshiki/kyoikuiinkaishogaigakushu/3/11/bunkazai/town/toyosaka/index.html"
+      ],
+      "access": "Free. Temple grounds, presumed open in daylight hours like the area's other Buddhist temples; no gate or entry restriction found.",
+      "transport": "No train or bus stop nearby; reachable by car, in rural Toyosaka-cho in the north of the city.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The Japanese name of this species is a joke at its own expense. Asunaro means roughly tomorrow I will be, as in tomorrow I will be a hinoki cypress, the timber tree it resembles and never quite equals. Higashi-Hiroshima made this particular asunaro a city natural monument, listed on the council's own cultural-properties register for Toyosaka-cho as the Asunaro of Renkyo-ji. The national giant-tree survey measured it at 3.3 metres round in 1988 and graded its health as partial dieback, so parts of the crown were already going then. No age has ever been published for it. The tree stands in the grounds of a small Buddhist temple in Kiyotake, deep in the farmland of the city's northern half, where the registered giants are otherwise almost all cedars around shrines. A designated asunaro is a different sort of entry, protected for what it is rather than for how big it got. Its foliage is the tell, flat sprays of scale leaves with broad chalk-white markings underneath, far bolder than the fine white lines a hinoki carries. There is no station and no bus. You drive, and you park at a temple that sees few visitors from outside the valley.",
+      "how_to_recognise": "You can recognise it by the foliage, flat sprays of scale leaves with broad chalk-white marks underneath, unlike anything else in the temple grounds. Its trunk is 3.3 metres round and the crown carries dead wood.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_010",
+      "name": "The Great Tsukubane Oak of Uneyama Shrine",
+      "species": "Tsukubane Oak (Quercus sessilifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 520,
+      "location": {
+        "address": "Uneyama Jinja, Toyosaka-cho Kiyotake 787, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.597764,
+        "longitude": 132.810724,
+        "neighbourhood": "Toyosaka-cho Kiyotake"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53636&branch_number=1",
+        "https://www.pref.hiroshima.lg.jp/site/bunkazai/bunkazai-data-206141080.html",
+        "http://www.hitozato-kyoboku.com/hiroshimaken.htm"
+      ],
+      "access": "Free. Shrine grounds on a low hill in Toyosaka-cho Kiyotake, open to visitors.",
+      "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "In 1991 a typhoon went through this grove, brought down several of the giant trees it had been protected for four years earlier and wrecked the shrine hall of 1930. The parish rebuilt. Hiroshima Prefecture designated the giant trees of Uneyama Shrine a natural monument on 21 December 1987, counting eight specimens across five species, and the prefecture's own record calls the tsukubane oak here the largest in Hiroshima: two stems, 5.8 metres and 5.0. The national giant-tree survey lists a 5.2 metre trunk at this shrine in 2000, most likely the smaller of those stems, and an independent catalogue of village giants repeats the 5.8 and 5.0 pair. Tsukubane oak is one of the Japanese oaks that keeps its leaves all year, and a tree this size takes centuries, though no source puts a number on this one. Four more registered giants stand with it: a cedar, a hinoki cypress, an umbrella pine and a fir. The honest weak point is the pin. Neither the register nor OpenStreetMap holds a coordinate for this shrine, so the marker sits on the centre of the district, and finding the low hill in Kiyotake is part of the trip.",
+      "how_to_recognise": "You can recognise it by the two stems, 5.8 and 5.0 metres round, which the prefecture calls the largest tsukubane oak in Hiroshima. It is an evergreen oak, in the protected grove around the shrine hall.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_011",
+      "name": "The Great Cedar of Uneyama Shrine",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 620,
+      "location": {
+        "address": "Uneyama Jinja, Toyosaka-cho Kiyotake 787, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.597764,
+        "longitude": 132.810724,
+        "neighbourhood": "Toyosaka-cho Kiyotake"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53637&branch_number=1",
+        "https://www.pref.hiroshima.lg.jp/site/bunkazai/bunkazai-data-206141080.html",
+        "http://www.hitozato-kyoboku.com/hiroshimaken.htm"
+      ],
+      "access": "Free. Shrine grounds on a low hill in Toyosaka-cho Kiyotake, open to visitors.",
+      "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "At 6.2 metres round this is the thickest trunk in Higashi-Hiroshima's register, and a separate Japanese catalogue of village giants makes it thicker still at 6.5. Neither figure is recent. The national survey took its measurement in 2000 and graded the tree partial dieback at the same time, meaning parts of the crown were dying then; a cedar can carry that for a very long time, and the shrine has kept the tree. It stands in the grove that Hiroshima Prefecture declared a natural monument in December 1987, eight giant trees of five species around the hall of Uneyama Shrine, on a low hill in the farmland of Kiyotake. The grove was hit hard by the typhoon of 1991, which felled several of its protected trees and damaged the shrine building. The survey that measured this trunk came nine years after that storm, so this one came through. Sugi around a shrine are rarely accidental. They are planted at a founding or spared at a clearing and then tended by a parish, and the ones that reach six metres have been looked after by generations of people who wrote none of it down, which is why the register holds a girth for this tree and no age at all.",
+      "how_to_recognise": "You can recognise it by the trunk, 6.2 metres round in the national survey and 6.5 in an independent catalogue, the thickest in the grove, with dead wood in the crown. It stands in the protected grove around the shrine.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_012",
+      "name": "The Japanese Umbrella Pine of Uneyama Shrine",
+      "species": "Japanese Umbrella Pine (Sciadopitys verticillata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 320,
+      "location": {
+        "address": "Uneyama Jinja, Toyosaka-cho Kiyotake 787, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.597764,
+        "longitude": 132.810724,
+        "neighbourhood": "Toyosaka-cho Kiyotake"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53638&branch_number=1",
+        "https://www.pref.hiroshima.lg.jp/site/bunkazai/bunkazai-data-206141080.html"
+      ],
+      "access": "Free. Shrine grounds on a low hill in Toyosaka-cho Kiyotake, open to visitors.",
+      "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Koyamaki has no relatives. Sciadopitys verticillata is the only living species in its family, the last of a lineage that turns up in fossils across the northern hemisphere and now grows wild nowhere but Japan. This one is 3.2 metres round and was recorded in good health in the national giant-tree survey of 2000. It is also one of only two species the prefecture names outright in the record that protected this grove: the giant trees of Uneyama Shrine became a Hiroshima Prefecture natural monument on 21 December 1987, eight specimens of five species around the hall. Look at what passes for its needles and the oddity is plain. They are not needles but flattened green shoots, thick and slightly rubbery, set in whorls like the ribs of an umbrella, which is what the Japanese name describes. The wood resists water and was used for coffins and boat hulls, and the tree grows slowly enough that 3.2 metres of trunk represents a great deal of patience. Nobody has published an age. The grove lost several trees to a typhoon in 1991 and this one is still in it. The pin covers the district; the shrine sits on a low hill in Kiyotake and takes some finding.",
+      "how_to_recognise": "You can recognise it by the foliage, thick rubbery green blades in whorls like umbrella ribs rather than true needles, unlike anything else in the grove. Its trunk is 3.2 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_013",
+      "name": "The Hinoki Cypress of Uneyama Shrine",
+      "species": "Hinoki Cypress (Chamaecyparis obtusa)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 315,
+      "location": {
+        "address": "Uneyama Jinja, Toyosaka-cho Kiyotake 787, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.597764,
+        "longitude": 132.810724,
+        "neighbourhood": "Toyosaka-cho Kiyotake"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53640&branch_number=1",
+        "https://www.pref.hiroshima.lg.jp/site/bunkazai/bunkazai-data-206141080.html"
+      ],
+      "access": "Free. Shrine grounds on a low hill in Toyosaka-cho Kiyotake, open to visitors.",
+      "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Hinoki is the wood the shrines are made of. Japan has rebuilt its sanctuaries in Chamaecyparis obtusa for more than a thousand years, which is why old hinoki are scarce outside protected ground and unremarkable inside it: a tree on shrine land is not for cutting. This one is 3.15 metres round and stands in the grove that Hiroshima Prefecture made a natural monument in 1987, on the hill at Uneyama in Kiyotake, in the narrow clearing near the kagura hall where the sacred dances are performed. The national survey measured it in 2000. Its health grade is missing from that record, so unlike every neighbour it has no condition on file at all, good or bad, and this page will not invent one. No age either. What hinoki does carry is a smell, lemon and resin, the scent of a Japanese bath, which is the reason the timber has been prized for as long as anyone here has written things down. The typhoon of 1991 took several of this grove's protected trees. Five registered giants still stand on the hill, this among them, and you will see all five without walking more than a couple of minutes.",
+      "how_to_recognise": "You can recognise it by the foliage, flat sprays of scale leaves with white Y-shaped marks underneath, and by where it stands, the narrow clearing near the kagura hall. Its trunk is 3.15 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_014",
+      "name": "The Fir of Uneyama Shrine",
+      "species": "Japanese Fir / Momi (Abies firma)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 340,
+      "location": {
+        "address": "Uneyama Jinja, Toyosaka-cho Kiyotake 787, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.597764,
+        "longitude": 132.810724,
+        "neighbourhood": "Toyosaka-cho Kiyotake"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53641&branch_number=1",
+        "https://www.pref.hiroshima.lg.jp/site/bunkazai/bunkazai-data-206141080.html"
+      ],
+      "access": "Free. Shrine grounds on a low hill in Toyosaka-cho Kiyotake, open to visitors.",
+      "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Every written account of this grove names the same species, and none of them names this one. The prefecture's designation record and the local descriptions of Uneyama Shrine list tsukubane oak, cedar, hinoki, koyamaki, urajiro oak and black pine. The national giant-tree register adds a Japanese fir, 3.4 metres round, health good at the survey of 2000. That is a gap rather than a contradiction: the written accounts are summaries, the prefecture counted eight specimens of five species in 1987, and a fir at the back of a precinct is exactly what a summary leaves out. It is still the only tree in this grove that a single source describes, and the entry is flagged for it. Momi is the fir of warm-temperate Japan, dark and straight, often the tallest thing on a shrine hill, and fussy about heat in a way the cool upland of Kiyotake suits. The grove was designated in December 1987 and lost trees to a typhoon four years later. Nobody has dated anything up here. If you climb the hill and count what is standing, we would like to hear it, because the last measurements on this site are a quarter of a century old.",
+      "how_to_recognise": "You can recognise it by the needles, flat and dark green in two ranks, the only fir among the grove's oaks, cedar, cypress and umbrella pine. Its trunk is 3.4 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_015",
+      "name": "The Fir of Hongu Hachiman Shrine",
+      "species": "Japanese Fir / Momi (Abies firma)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 340,
+      "location": {
+        "address": "Hongu Hachiman Jinja, Toyosaka-cho Nomi 2998, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.560116,
+        "longitude": 132.810013,
+        "neighbourhood": "Toyosaka-cho Nomi"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53645&branch_number=1",
+        "https://www.city.higashihiroshima.lg.jp/soshiki/kyoikuiinkaishogaigakushu/3/11/bunkazai/town/toyosaka/39733.html"
+      ],
+      "access": "Free. Shrine on a hill roughly 400m elevation in southern Toyosaka-cho, open to visitors.",
+      "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "The hall at the centre of this grove was built in 1701 and is still standing, listed by Higashi-Hiroshima as an important cultural property. The trees around it are protected separately, as a Hiroshima Prefecture natural monument: fir, cedar, cypress and two evergreen oaks, with cedars by the dozen over three metres round. Hongu Hachiman sits at about 400 metres on a hill in Nomi, high enough that the air stays cool, which is what Abies firma wants, a warm-temperate country with an upland to escape into. The national giant-tree survey measured this trunk at 3.4 metres in 2000 and recorded good health. No age, as usual here. Three of the shrine's trees are in the register and all three stand on the one hilltop, so the walk from the car is short and the grove does the rest of the work. What this page cannot give you is a tight pin: the register supplied no coordinate for the site at all, so the marker sits on the centre of the Nomi district and you will be looking for a hilltop torii rather than a trunk. A visitor with a phone and a satellite view could fix that in one message.",
+      "how_to_recognise": "You can recognise it by the needles, flat and dark green in two ranks, among a hilltop grove that is mostly cedar. Its trunk is 3.4 metres round, in the protected grove around the shrine hall of 1701.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_016",
+      "name": "The Red Pine of Hongu Hachiman Shrine",
+      "species": "Japanese Red Pine (Pinus densiflora)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 310,
+      "location": {
+        "address": "Hongu Hachiman Jinja, Toyosaka-cho Nomi 2998, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.560116,
+        "longitude": 132.810013,
+        "neighbourhood": "Toyosaka-cho Nomi"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53646&branch_number=1",
+        "https://www.city.higashihiroshima.lg.jp/soshiki/kyoikuiinkaishogaigakushu/3/11/bunkazai/town/toyosaka/39733.html"
+      ],
+      "access": "Free. Shrine on a hill roughly 400m elevation in southern Toyosaka-cho, open to visitors.",
+      "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Matsutake grow under trees like this one. Japan's most expensive mushroom forms almost exclusively on the roots of red pine, which is one reason akamatsu hillsides have been watched, weeded and argued over for centuries. This particular pine is 3.1 metres round, recorded in good health in the national giant-tree survey of 2000, which puts it barely over the register's three-metre threshold. It grows in the protected grove at Hongu Hachiman, a shrine at around 400 metres in Nomi whose worship hall dates from 1701 and whose grove is a prefecture natural monument. The descriptions of that grove name fir, cedar and cypress and do not single out a red pine, so this entry leans on the register more heavily than its two shrine-mates do, and it is flagged accordingly. You will not mistake it if it is there. Red pine bark breaks into plates that are genuinely orange-red high on the trunk, brighter the further up you look, where the cedars beside it are grey-brown and fibrous. No age has been published. The pin marks the centre of the district rather than the shrine, because no coordinate for this site exists in the register.",
+      "how_to_recognise": "You can recognise it by the bark, breaking into plates that turn orange-red high up the trunk where the cedars beside it stay grey and fibrous. Its trunk is 3.1 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_017",
+      "name": "The Tsukubane Oak of Hongu Hachiman Shrine",
+      "species": "Tsukubane Oak (Quercus sessilifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 320,
+      "location": {
+        "address": "Hongu Hachiman Jinja, Toyosaka-cho Nomi 2998, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.560116,
+        "longitude": 132.810013,
+        "neighbourhood": "Toyosaka-cho Nomi"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53647&branch_number=1",
+        "https://www.city.higashihiroshima.lg.jp/soshiki/kyoikuiinkaishogaigakushu/3/11/bunkazai/town/toyosaka/39733.html"
+      ],
+      "access": "Free. Shrine on a hill roughly 400m elevation in southern Toyosaka-cho, open to visitors.",
+      "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Three of this shrine's trees are in Japan's national giant-tree register and this is the only broadleaf among them. Tsukubanegashi is an evergreen oak, so it holds a full dark crown through a Hiroshima winter while everything deciduous off the hill goes bare, and its leaves are narrow, leathery and toothed towards the tip. The national survey measured this trunk at 3.2 metres round in 2000 and recorded good health. It is one of the species the shrine's own account of its grove names, which for a register entry counts as corroboration rather than coincidence. Hongu Hachiman stands at around 400 metres in Nomi, in the upland north of the city, and it is an unusually complete site: a worship hall from 1701 listed by the council, a grove of fir, cedar, cypress and evergreen oaks protected by the prefecture, and three registered giants within a couple of minutes of each other. Nobody has put an age on any of them, which is the register's habit; it records what a tape can settle. Come by car. There is no station and no bus stop within reach, and the pin marks the district rather than the hilltop, so the last stretch is navigation by eye.",
+      "how_to_recognise": "You can recognise it by the leaves, narrow, leathery and evergreen, the only broadleaf among the three registered giants on this hill. Its trunk is 3.2 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_006",
+      "name": "The Great Cedar of Okayama Hachiman Shrine",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 555,
+      "location": {
+        "address": "Okayama Hachiman Jinja precinct, Fukutomi-cho Kuba, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.550281,
+        "longitude": 132.78119,
+        "neighbourhood": "Fukutomi-cho Kuba"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53623&branch_number=1",
+        "http://www.hitozato-kyoboku.com/hiroshimaken.htm"
+      ],
+      "access": "Free. Shrine grounds, presumed open, no restriction found.",
+      "transport": "No train or bus stop nearby; reachable by car in rural Fukutomi-cho.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Two catalogues have measured this cedar and they disagree by a quarter of a metre. The Ministry of Environment's giant-tree register, surveying in 2000, wrote down 5.55 metres of girth and health good. A long-running Japanese catalogue of village giants lists the same tree at the same shrine at 5.8 metres. Both are honest figures taken at different moments by different people around a trunk that is not a cylinder, and neither has been checked since, so this page gives both rather than picking one. Nobody has published an age. What is not in dispute is where it grows: the precinct of Okayama Hachiman, a farm-country shrine in Fukutomi-cho, where the cedar stands as shrine cedars stand all over western Japan, planted or spared for the god rather than for timber and then left alone. Fukutomi is high, cold ground by Hiroshima standards, thinly populated and largely without buses. The pin is honest about its own limits: the register's own coordinate landed on the road through the district rather than on the shrine, so expect to find the torii first and walk in from there. A second registered cedar of almost exactly the same girth stands about three and a half kilometres away.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.55 metres round in the national register and 5.8 in an independent catalogue. It stands in the precinct of Okayama Hachiman; the pin sits out on the district road, so walk in from the torii.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_007",
+      "name": "The Great Cedar of Kyuu Hachiman Shrine",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 556,
+      "location": {
+        "address": "Kyuu Hachiman Jinja precinct, Fukutomi-cho Shimotakeni, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.5328642,
+        "longitude": 132.7487963,
+        "neighbourhood": "Fukutomi-cho Shimotakeni"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53625&branch_number=1",
+        "http://www.hitozato-kyoboku.com/hiroshimaken.htm"
+      ],
+      "access": "Free. Shrine grounds, presumed open, no restriction found.",
+      "transport": "No train or bus stop nearby; reachable by car in rural Fukutomi-cho.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Two shrines in this one farming district hold cedars whose measured girths differ by a single centimetre: 5.56 metres here, 5.55 up the road at Okayama Hachiman. Nothing connects them except the habit that produced both, which is the oldest reason large trees survive in Japan. Shrine ground is not cleared, not thinned and not sold for timber, so the trees on it keep whatever start they were given while the hillside around them is cut on a cycle of decades. This cedar came through the national giant-tree survey of 2000 in good health, and an independent catalogue of village giants lists it at 5.6 metres, near enough to count as confirmation rather than argument. No age has ever been published for it, which is normal here: the register measures what a tape can settle and leaves the years alone. Kyuu Hachiman stands in Shimotakeni, in the cold upland half of Higashi-Hiroshima, with no station and no bus stop within reach. The coordinate comes from the register itself and lands on the district rather than the precinct, so treat the pin as a neighbourhood, find the shrine approach, and the tree is the one you cannot miss once you are through it.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.56 metres round in the national survey and 5.6 in an independent catalogue. It stands in the precinct of Kyuu Hachiman in Shimotakeni; the pin is district-level, so look for the shrine approach.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_008",
+      "name": "The Urajiro Oak of Morimasa Shrine",
+      "species": "Urajiro Oak (Quercus salicina)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 350,
+      "location": {
+        "address": "Morimasa Jinja precinct, Fukutomi-cho Kamitakeni, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.529455,
+        "longitude": 132.714514,
+        "neighbourhood": "Fukutomi-cho Kamitakeni"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53627&branch_number=1",
+        "https://jinja-jpn.com/121093-2/"
+      ],
+      "access": "Free. Small shrine grounds, presumed open, no restriction found.",
+      "transport": "No train or bus stop nearby; reachable by car in rural Fukutomi-cho.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Urajiro means white-backed, and the name is a fair description. Turn a leaf of this oak over and the underside is a waxy silver-white, so a breeze through the crown changes the colour of the tree. Quercus salicina is one of Japan's evergreen oaks, a tree of warm hillsides that holds its leaves through winter and lets them go in spring as the new set pushes through. This one stands in the precinct of Morimasa, a small shrine in Kamitakeni, and was measured at 3.5 metres round in the national giant-tree survey of 2000, its health recorded then as partial dieback. That survey is the only source that describes the tree itself. The shrine is confirmed twice over, by a shrine directory and by the national corporate registry, but the oak is on one list and one list only, which is why this entry is flagged and why anyone who goes ought to tell us what they find. A second registered giant, a Japanese fir, stands behind the same shrine, so the stop is two trees in one small precinct. No source pins either trunk: the geocode landed on the district rather than the shrine, and the pin says so.",
+      "how_to_recognise": "You can recognise it by the leaves, waxy silver-white underneath so the crown changes colour in a breeze, and by the trunk, 3.5 metres round. It stands in the shrine precinct itself; the registered fir is behind the building.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hgh_009",
+      "name": "The Fir Behind Morimasa Shrine",
+      "species": "Japanese Fir / Momi (Abies firma)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 300,
+      "location": {
+        "address": "Behind Morimasa Jinja, Fukutomi-cho Kamitakeni, Higashi-Hiroshima, Hiroshima Prefecture",
+        "latitude": 34.529455,
+        "longitude": 132.714514,
+        "neighbourhood": "Fukutomi-cho Kamitakeni"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53628&branch_number=1",
+        "https://jinja-jpn.com/121093-2/"
+      ],
+      "access": "Free. Behind the small shrine grounds, presumed open, no restriction found.",
+      "transport": "No train or bus stop nearby; reachable by car in rural Fukutomi-cho.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Japan's giant-tree register takes nothing under three metres of girth. This fir measured exactly three metres in the survey of 2000, which is to say it got in by nothing at all. Momi is the fir of warm-temperate Japan and a common shrine tree, tall and straight, and it has a habit of standing at the back of a precinct where little else does well. That is precisely where the register found this one: its own entry names the place as behind Morimasa Shrine, which is how it stays distinct from the urajiro oak recorded in the precinct in front. Two trunks, one small shrine, one stop. The survey graded it partial dieback twenty-six years ago and nothing has been published about it since, so it is the least corroborated tree on this page and the flag says as much. Momi dislikes heat and does well in the cool uplands of Fukutomi-cho, which is farm country with no station, no bus stop and few reasons for a stranger to be there beyond these two trees and the shrine they belong to. Nobody has dated it. If you get up there, tell us what is standing.",
+      "how_to_recognise": "You can recognise it by the needles, flat and dark green in two ranks along the shoot, on a straight trunk exactly three metres round. It stands behind the shrine building rather than in the precinct in front of it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}
