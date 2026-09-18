@@ -86,12 +86,21 @@ public final class Saved {
     /// Take a row that came back from the account. Deliberately does NOT fire
     /// onMutate: this is the server telling us something, and echoing it
     /// straight back would be a write for no reason.
-    public func adopt(treeId: String, visitedAt: Date?, savedAt: Date) {
+    ///
+    /// `favourite` says which list the row arrived from, and until 2026-09-18
+    /// it could not be said at all: every adopted row became a favourite,
+    /// because the only table that existed when this was written was `saves`.
+    /// A row from `saves` IS a heart and passes true; a row from `visited` is
+    /// a tree somebody stood in front of and passes nil, which keeps whatever
+    /// this phone already knew and makes a brand new row a plain visit. Pass
+    /// nil rather than false to leave the heart alone.
+    public func adopt(treeId: String, visitedAt: Date?, savedAt: Date,
+                      favourite: Bool? = nil) {
         let existing = entries[treeId]
         entries[treeId] = Entry(treeId: treeId,
                                 visitedAt: visitedAt ?? existing?.visitedAt,
                                 savedAt: min(savedAt, existing?.savedAt ?? savedAt),
-                                favourite: existing?.favourite ?? true)
+                                favourite: favourite ?? existing?.favourite ?? false)
         persist()
     }
 
@@ -124,6 +133,36 @@ public final class Saved {
     public var collected: [Entry] {
         entries.values.filter { $0.visitedAt != nil }
             .sorted { ($0.visitedAt ?? .distantPast) > ($1.visitedAt ?? .distantPast) }
+    }
+
+    /// THE ONE-OFF REPAIR of 2026-09-18, and the only place the truth about it
+    /// still exists. CloudSync used to push EVERY entry to `saves`, ticked
+    /// ones included, so that table stopped meaning "hearted" and started
+    /// meaning "in your collection at all". The website reads it for the
+    /// Favourites list, so Favourites became a superset of My trees and the
+    /// two lanes showed one list twice (Hidde, 2026-09-18: "als ik klik op My
+    /// Trees op Favorites, dan krijg ik dezelfde lijst").
+    ///
+    /// A stray row cannot be told from a real heart in the database, because
+    /// `saves` carries no flag saying which it was. It CAN be told apart here:
+    /// this phone recorded every tap, so an entry it holds with the heart off
+    /// and a visit on is exactly the row that should never have been pushed.
+    /// Those rows are deleted once, before the first pull of the fixed
+    /// version, and the flag below makes sure it happens once and never again.
+    ///
+    /// The honest cost, written down rather than glossed: a tree hearted on
+    /// the WEBSITE that this phone happens to hold as ticked-only is deleted
+    /// with them. That is one tap to put back and it is bounded to this one
+    /// migration, against a Favourites list that is otherwise wrong forever.
+    public var strayHearts: [Entry] {
+        entries.values.filter { !$0.favourite && $0.visitedAt != nil }
+    }
+
+    private let repairKey = "saved.saves_are_hearts_v1"
+
+    public var savesRepaired: Bool {
+        get { defaults.bool(forKey: repairKey) }
+        set { defaults.set(newValue, forKey: repairKey) }
     }
 
     /// The heart, and ONLY the heart. Taking it off a tree you have collected
