@@ -28,10 +28,18 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-MONEY = re.compile(r'[€£$]\s?\d|\b\d+(?:[.,]\d+)?\s?(?:euro|eur|pound|dollar)\b', re.I)
-PAID = re.compile(r'\b(paid entry|entry fee|admission fee|admission charge|'
+# Money in the currencies our own access lines actually quote. The first
+# version read four of them and called the rest free, which is how a 180 Kc
+# monastery and a NT$300 forest park came to look like a walk in the park
+# (2026-09-18).
+MONEY = re.compile(
+    r'[€£$]\s?\d|\bNT\$\s?\d|\b\d+(?:[.,]\d+)?\s?'
+    r'(?:euro|eur|pound|dollar|kc|czk|zl|pln|kr|dkk|sek|nok|chf|ft|huf|lei|ron|'
+    r'yen|jpy|rmb|cny|twd|kn|lv|bgn)\b', re.I)
+PAID = re.compile(r'\b(paid entry|paid ticket|paid tour|paid (?:national )?heritage site|'
+                  r'entry fee|admission fee|admission charge[ds]?|admission is charged|'
                   r'ticket(?:ed)? (?:required|needed|entry)|requires a ticket|'
-                  r'entrance fee)\b', re.I)
+                  r'buy a ticket|entrance fee|entry costs|entry is charged)\b', re.I)
 FREE = re.compile(r'^\s*free\b|\bfree (?:entry|access|to enter|and open)\b|'
                   r'\bno charge\b|\bgratis\b', re.I)
 
@@ -53,6 +61,7 @@ def main():
     args = ap.parse_args()
 
     paid, ambiguous, changed, files = 0, [], 0, 0
+    unconfirmed = []
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
         with open(path, encoding="utf-8") as fh:
             d = json.load(fh)
@@ -66,13 +75,19 @@ def main():
                 paid += 1
             # bool(), or every free tree counts as a change: a missing
             # field reads as None and None != False.
-            if bool(t.get("paid_entry")) != v:
-                if v:
-                    t["paid_entry"] = True
-                else:
-                    t.pop("paid_entry", None)
+            # ADD ONLY. A flag already on the tree was put there by somebody
+            # who read the prose, and this regex failing to re-derive it is not
+            # evidence that it is wrong. Unsetting it was: it would have told a
+            # reader that a 180 Kc monastery, a booked boat tour and a castle
+            # charging admission were free, and dropped all three into the
+            # free-tree filter and the walks (2026-09-18). The ones it cannot
+            # confirm are printed for a person, like the ambiguous ones.
+            if v and not t.get("paid_entry"):
+                t["paid_entry"] = True
                 changed += 1
                 touched = True
+            elif not v and t.get("paid_entry"):
+                unconfirmed.append((t["id"], (t.get("access") or "")[:100]))
         if touched and args.write:
             files += 1
             with open(path, "w", encoding="utf-8") as fh:
@@ -91,6 +106,14 @@ def main():
         print("python3 scripts/paid_entry.py --write")
     if ambiguous:
         print("python3 scripts/paid_entry.py --review   # the %d nobody may guess" % len(ambiguous))
+    # The flags this could not re-derive. Never unset, always shown: a wrong
+    # one here tells a reader something ticketed is free, which is the
+    # expensive direction of this mistake.
+    if unconfirmed:
+        print("\n%d carry the flag and the prose no longer confirms it. "
+              "Read these, never bulk-clear them:" % len(unconfirmed))
+        for i, a in unconfirmed:
+            print("  %-10s %s" % (i, a))
     return 0
 
 
