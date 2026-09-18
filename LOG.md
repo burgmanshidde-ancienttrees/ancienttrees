@@ -1,6 +1,54 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 6) - The profile pages say what the app says, and stop saying the rest
+
+Hidde, on /account/settings: "There is a lot of random copy on the profile
+page on web that's not in app delete it and follow app design and copy
+example", quoting the two paragraphs that have no counterpart on the phone.
+
+**Both gone.** "Set a name and people can find you in the app to follow your
+trees. Leave it empty and nobody can." was the website explaining what a name
+is for; ProfileEditor.swift says "Any name you like. It does not have to be
+your real one." and stops. "Your trees are kept under this address. To move
+your collection to another one, write to info@..." answered a question nobody
+asks while looking at their own name: the app keeps that sentence on the
+delete screen, and so does this page now.
+
+**What the page says instead is the app's own strings**, field for field:
+"Your name" over the box, "The name people see" inside it, and Profile.swift's
+three delete sentences word for word. Save is dead while the box is empty, as
+the app's Save is, rather than a sentence afterwards about 1 to 40 characters,
+and what a save has to say gets its own line instead of eating the one under
+the field. The button says "Delete account", as the app's does.
+
+**Distances moved to where the app keeps it.** It was a card on /account,
+which is the profile, on a page whose own header says settings sit behind the
+gear; it is a row on /account/settings now, and the note saying which way it
+was following is gone, because the two buttons say that. CONVENTIONS.md's
+units entry (AllTrails, komoot and Google Maps all keep the switch in account
+settings) is updated to match what we actually built.
+
+**The two empty lists** use Collect.swift's lines now. The web's My trees line
+keeps the method it actually has, a form rather than a camera.
+
+**And the alignment fault the app fixed on itself in August was still here.**
+Running smoke_test's own harness against the rebuilt page found ACCOUNT,
+CONTRIBUTE and ABOUT starting at 20 while every card under them sits at 16,
+which is the drift Profile.swift records fixing on the phone ("a reader reads
+it as sloppy without being able to name it"). Both are at 16 now. The same
+pass found the delete-confirmation field at 15px, under the 16px floor that
+stops Safari zooming the page in when a thumb lands in it; it is the one field
+somebody types in under pressure.
+
+Build clean (11,993 pages), `qa.py` green (15,893 pages), preflight,
+paritycheck, crosscheck, i18ncheck and conventioncheck all clean, and both
+pages measure with no overflow and no drift at 375. Looked at at 375 and on a
+desktop.
+
+One gap left, named rather than built: the app's editor sets a profile
+PICTURE and the website only ever reads one. Nothing on the web can upload an
+avatar yet.
 ## 2026-09-18 Where the funnel actually leaks, and the page with the best placement on the site
 
 Hidde asked why sign-ins are so few and what would improve them. The answer is
