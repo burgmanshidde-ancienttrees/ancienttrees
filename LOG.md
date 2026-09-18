@@ -151,6 +151,53 @@ Verified: build 11,842 pages, qa 15,687 pages, preflight 0 problems,
 crossdevice, netcheck, parity, conventions and the screen lists clean.
 
 
+## 2026-09-18 (session) - Two faults were hiding behind NOTEs, and one deriver was about to make things worse
+
+Hidde: "nog dingen te fixen? zijn we klaar?" Rung 2 was clear and every page
+type was clean, so the honest place left to look was preflight's NOTE list,
+which nothing fails on. Two real faults were sitting in it.
+
+**Eleven ticketed trees were being shown as free.** Their `access` prose says
+"Paid entry", "Admission charged", "around NT$300", and `paid_entry` was unset
+on all of them. That flag is not decoration: the map marks a paid pin from it,
+the app feed carries it, the tree page draws the ticket band from it, and
+`freeTrees()` filters on it, so eleven trees behind a till were in the free
+list and on the walks.
+
+**And the script that fixes that was about to make it worse.** `paid_entry.py`
+derives the flag from the prose, and its matcher knew four currencies and six
+phrasings. Run as it stood it would have written 19 and REMOVED 7, and the
+seven were a 180 Kc monastery, a booked Menorca boat tour twice over, a castle
+charging admission, and a cross-reference to another paid entry. Unsetting a
+true flag tells a reader something ticketed is free, which is the expensive
+direction of this mistake. Two changes: the vocabulary now knows the
+currencies our own access lines actually quote, and the deriver is ADD ONLY.
+A flag it cannot re-confirm is printed for a person to read, never cleared;
+two are, both genuinely paid and both unmatchable by any regex. 20 written, 0
+removed, and preflight's eleven notes are gone.
+
+**All 24 country pages froze a tree count into their meta description**, which
+is the text Google prints in the result. Preflight compared the number against
+the data and reported the drift as a NOTE, so three were already known wrong;
+what it could not see is that the other 21 were only wrong-in-waiting, since
+one night run adding one tree invalidates them. Japan was 11 trees stale and
+five places short and had escaped even the drift check, because its phrasing
+did not match the anchored patterns.
+
+So the number comes from the data now: the intros carry `{trees}`, `{cities}`
+and `{places}`, and /[country].astro fills them from the same two values its
+title has always used. Preflight refuses a literal count outright rather than
+waiting for it to drift, which is the difference between a check that finds
+this class and one that finds today's three instances of it.
+
+Two rounds of my own false positives on the way there, both fixed and both
+worth recording because they are the same failure this session spent its
+morning removing from englishcheck: the first regex read "95 mapped places" as
+no count at all, and the second read "Twenty-six cities" as six.
+
+qa 15,687 pages, smoke clean, preflight 0 problems, 617 cities. Merged and
+pushed to main.
+
 ## 2026-09-18 (session) - health.py can now see a failure hiding under cancellations
 
 The translations are live; the dispatched build went through at 12:43 yesterday
@@ -192,6 +239,56 @@ the real run list fed in directly.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 (session) - The sign-in sheet is everywhere now, and it can be swiped away
+
+Hidde: "de slider op het inlog scherm suggereert dat je het weg kan sliden.
+dat moet kunnen. daarnaast moet hij zich vertonen over de pagina waar je bent
+zodat je terug kan naar waar je was."
+
+Both complaints had one cause. The sheet was included by hand in twelve files,
+so it existed on 58 percent of the site, and the nav therefore had to NAVIGATE
+to /account to sign anybody in. What he saw there was the MAP page's bottom
+sheet, whose handle drags between detents and can never dismiss.
+
+- SignInModal and SIGNIN_JS moved into Base.astro, out of the twelve places
+  that each had to remember them. That is the lesson already written at the
+  foot of that file about the units script.
+- Signed out, the nav's account links open the sheet where you stand. Signed
+  in they still go to /account, which is then a real page with your trees.
+- The sheet has a drag handle and drag-to-dismiss on phone widths. Convention
+  rather than invention: Material 3 settles a modal bottom sheet to a detent
+  or to hidden, and Apple's sheets take the same gesture.
+
+**And it nearly shipped completely dead.** A regex written into a TypeScript
+template literal lost a backslash on the way out, so the page carried
+replace(//+$/, ''). A browser refuses the WHOLE script tag on a parse error,
+so the entire sign-in script was gone on 11,836 pages: no atOpenSignIn, no
+save funnel, no magic-link catcher. Build, qa, preflight, parity, cross and
+smoke were all green, because a dropped script is silent and the page renders
+perfectly without it. It was found by trying the gesture in a browser.
+
+The eighth ratchet check answers it: scripts/inline_scripts.js compiles every
+inline script in the build with node's vm without running any of it, 158,073
+scripts on 15,687 pages in 24 seconds, so every page is checked rather than a
+sample. A first attempt spawned node per page, took seven minutes and still
+only sampled; thrown away. Proven to fire on the live fault before trusting
+it.
+
+Two more found by measuring rather than reading:
+
+- The handle was invisible on the only width that has one. The base rule sat
+  below the media query at equal specificity, so display:none won everywhere.
+  Third time a plain cascade order has cost a visible fault here. Old order
+  measures 0px, new order 38px.
+- The smoke test's sheet harness selected .signin-dialog by CLASS, which
+  AppModal wears too. Once the sheet moved to the end of body that returned
+  the app dialog, closed, so the check reported zero buttons. By id now.
+
+Measured at 375, 402 and 1200: handle shown on phones and absent on desktop,
+follows the finger, closes on release, springs back from a nudge, transform
+cleared for the next open, and the nav opens in place at every width. qa
+15,687 pages, preflight 0 problems, parity, cross and smoke clean. Merged and
+pushed to main.
 ## 2026-09-18 (session) - Swept every page type for the footer's fault and found none, and the English check stops crying wolf
 
 Hidde: "Alles live kunnen we archiveren nog meer van dit soort foutjes op de

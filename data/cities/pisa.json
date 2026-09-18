@@ -66,7 +66,8 @@
         ],
         "label": "November: the whole crown turns butter gold, then drops in a day or two",
         "kind": "autumn colour"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "psa_002",
@@ -107,7 +108,8 @@
         ],
         "label": "May to June, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "psa_003",
@@ -138,7 +140,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "psa_004",
@@ -169,7 +172,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     }
   ]
 }

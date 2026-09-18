@@ -3,8 +3,10 @@
 // the ux better", closing audit gap #2: AllTrails puts the heart on every
 // card in every list, ours lived on the tree page alone). One component, one
 // markup, painted and handled by TREE_ACTIONS_JS via delegation, so any page
-// that renders this must also include TREE_ACTIONS_JS + SignInModal +
-// SIGNIN_JS in its scripts.
+// that renders this must also include TREE_ACTIONS_JS in its scripts. The
+// sign-in sheet is no longer on that list: Base renders it on every page since
+// 2026-09-18, because a component twelve pages had to remember existed on 58
+// percent of the site.
 //
 // Labels ride on data attributes so the Spanish pages stay Spanish without a
 // second component (paint() reads data-l-save / data-l-saved).

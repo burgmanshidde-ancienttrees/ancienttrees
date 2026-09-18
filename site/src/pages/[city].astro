@@ -22,9 +22,7 @@ import { mapHead } from "../lib/map";
 import TreeCard from "../components/TreeCard.astro";
 import ShareButton from "../components/ShareButton.astro";
 import { SHARE_JS } from "../lib/share-js";
-import SignInModal from "../components/SignInModal.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
-import { SIGNIN_JS } from "../lib/signin-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { type WalkMarker } from "../lib/walks";
 import { cityMapScript } from "../lib/city-map-script";
@@ -373,6 +371,5 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       </div>
     </div>
   </div>
-  <SignInModal />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, otherCities, []) + SHEET_JS + SHARE_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, otherCities, []) + SHEET_JS + SHARE_JS} />
 </Base>
