@@ -334,6 +334,46 @@ a tool that decides what the machine works on next is worth as much as a page.
 Hidde found it by reading a sentence of mine rather than the list. It watches
 `scripts/` too now, and the list went from 5 branches to 7.
 
+## 2026-09-18 (session) - The sign-in funnel measured nothing at the two steps that matter
+
+Hidde: "ik vind het toch vreemd dat er zo weinig inlogsessies zijn klopt dit en
+waar ligt het aan denk je?"
+
+The number is right and the diagnosis was unavailable, because the funnel is
+instrumented at exactly one point and it is the last one. `atOpenSignIn()`,
+which puts the dialog on the screen, emitted nothing. `atOAuth()`, the Google
+and Apple buttons, emitted nothing. The only event on the whole path is
+`signin-link-sent` on the email form, and the digest says it has fired **0
+times ever** since the funnel was repaired on 2026-08-01, while **12 accounts
+exist**. So every account on this site arrived by a route nothing recorded, and
+"few people sign in" could not be told apart from "few people are ever asked
+to", which are opposite problems with opposite fixes.
+
+Two events now, in the same shape as every other one on the site:
+
+| Event | Fires when | Detail |
+|---|---|---|
+| `signin-open` | the dialog opens | what asked: `save`, `feedback` or `direct` |
+| `signin-oauth` | Google or Apple is tapped | the provider |
+
+That closes it end to end: asked, route chosen, link sent. Within a week the
+question has a number instead of a guess.
+
+**What the data DOES already say, and it is worth reading beside the answer.**
+2,850 visits since 2026-08-20 at 1.5 pages per visit, 8.3 percent of visits
+doing anything at all. `save` is the main gated action and it has fired 12
+times ever, 0 in the last 14 days. So the honest hypothesis is that almost
+nobody reaches the point where signing in is proposed, rather than that the
+dialog is failing. The new events are what will confirm or kill that.
+
+Also answered from the record, for the same question's first half: of 112
+processed submissions, 11 are from real readers (3 trees, 8 feedback) and the
+rest are ours. Every one of the 21 app sightings on file is from one account
+and `ours.is_ours()` says it is our own.
+
+Build 11,849 pages, smoke clean, the rest of the gates clean. Merged and pushed
+to main.
+
 ## 2026-09-18 (session) - 27 spent branches cleared out, and what is genuinely left
 
 Hidde, after the fourth merge: "5 hoeft niet is de rest gedaan kunnen we

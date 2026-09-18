@@ -1,6 +1,6 @@
 {
   "country": "Czech Republic",
-  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. Checked 2026-09-18 with famous_demand.py --resolve: the 14 remaining open leads score 0-19 Wikipedia views/month across at most 1 language, well below the fame bar the single-tree place exception needs (would somebody travel specifically for this). None sit within day-trip range (25km+) of a published Czech city either. 5 of the 14 (Hradecky dub, Buk u rybnicku, Buk v Jindrichovickem zameckem parku, Buk v Mokricich, Ceskolipsky buk lesni) were cross-matched against the AOPK CR Pamatne stromy register for coordinate and girth (see register_note on each), which is real, cheap, register-backed enrichment, but a second independent source (age, history) is still needed before any of them could be verified, and none currently has a path to publication under the fame or cluster rules. Leave as leads; do not re-run famous_demand on this country without new candidates.",
   "leads": [
     {
       "name": "Alej roku",
@@ -10,12 +10,13 @@
         "https://commons.wikimedia.org/wiki/File:Star%C3%A1_Hus%C3%AD_cesta_2019_(17).jpg",
         "https://commons.wikimedia.org/wiki/File:Star%C3%A1_Hus%C3%AD_cesta_2019_(18).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "why": "meta-category/competition name (Alley of the Year), not a single tree; photos show an avenue (Stara Husi cesta)"
     },
     {
       "name": "Hrádecký dub",
-      "lat": null,
-      "lng": null,
+      "lat": 49.26181896683315,
+      "lng": 13.495127014679188,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Hr%C3%A1deck%C3%BD_dub1.jpg",
         "https://commons.wikimedia.org/wiki/File:Hr%C3%A1deck%C3%BD_dub2.jpg",
@@ -23,7 +24,9 @@
       ],
       "status": "lead",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "girth_cm": 411,
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register (data/registers/czech-aopk-pamatne-stromy.json), which gives this coordinate and a 411cm girth. Independent of the Commons photo category; a second source (age, history) still needed before this could be verified."
     },
     {
       "name": "Memorable tree signs in the Czech Republic",
@@ -34,7 +37,8 @@
         "https://commons.wikimedia.org/wiki/File:24.7.20_Rimov_Kalvarie_008_(50149454747).jpg",
         "https://commons.wikimedia.org/wiki/File:Alej_od_st%C3%A1tn%C3%ADho_statku_Rokytnice_v_Orlick%C3%BDch_hor%C3%A1ch_k_Nov%C3%A9mu_dvoru_01.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "why": "generic Commons meta-category for tree signage nationwide, not a single tree"
     },
     {
       "name": "Skupina stromů v zámeckém parku Palvinov",
@@ -45,7 +49,8 @@
         "https://commons.wikimedia.org/wiki/File:Duby_letn%C3%AD_z%C3%A1mek_Palvinov.jpg",
         "https://commons.wikimedia.org/wiki/File:Jedle_b%C4%9Blokor%C3%A1_z%C3%A1mek_Palvinov.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "why": "a group/ensemble (skupina) of separate species (oak, oaks, fir) in a chateau park, not one collectible point"
     },
     {
       "name": "Svojsíkova lípa",
@@ -87,8 +92,8 @@
     },
     {
       "name": "Buk u rybníčku",
-      "lat": null,
-      "lng": null,
+      "lat": 49.84100809854185,
+      "lng": 14.26891464680929,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Buk_u_rybnicku-I-10-2020-nova_ves_pod_plesi.jpg",
         "https://commons.wikimedia.org/wiki/File:Buk_u_rybnicku-II-10-2020-nova_ves_pod_plesi.jpg",
@@ -96,7 +101,9 @@
       ],
       "status": "lead",
       "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "girth_cm": 308,
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 308cm girth from that source. The lead photo filenames reference nova_ves_pod_plesi (Nova Ves pod Plesi); not yet cross-checked that this is the same village as the register coordinate. A second independent source still needed."
     },
     {
       "name": "Buk u staré vrátnice (Fakultní nemocnice Olomouc)",
@@ -149,7 +156,9 @@
       ],
       "status": "lead",
       "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "girth_cm": 385,
+      "register_note": "Cross-checked: this lead's own coordinate sits 23m from AOPK CR Pamatne stromy register entry Buk lesni v Moskevske ulici v Ceske Lipe (385cm girth), a genuine independent match by location rather than name. A second independent source (age, history) still needed before this could be verified."
     },
     {
       "name": "Hraniční buk (Cínovec)",
@@ -193,8 +202,8 @@
     },
     {
       "name": "Buk v Jindřichovickém zámeckém parku",
-      "lat": null,
-      "lng": null,
+      "lat": 49.297071329153496,
+      "lng": 13.394486821709357,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Buk_v_Jind%C5%99ichovick%C3%A9m_z%C3%A1meck%C3%A9m_parku_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Buk_v_Jind%C5%99ichovick%C3%A9m_z%C3%A1meck%C3%A9m_parku_02.jpg",
@@ -202,7 +211,9 @@
       ],
       "status": "lead",
       "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "girth_cm": 295,
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 295cm girth from that source. The same chateau park also registers a lime and a silver maple nearby, so this is part of a small cluster rather than a lone tree. A second independent source still needed."
     },
     {
       "name": "Buk lesní v Koclířově",
@@ -243,15 +254,17 @@
     },
     {
       "name": "Buk v Mokřicích",
-      "lat": null,
-      "lng": null,
+      "lat": 49.575569336650446,
+      "lng": 14.268559667583151,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Buk_u_vrbice.jpg",
         "https://commons.wikimedia.org/wiki/File:Buk_u_vrbice_2.jpg"
       ],
       "status": "lead",
       "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "girth_cm": 410,
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 410cm girth from that source. A second independent source still needed."
     },
     {
       "name": "Pastýřský buk",
@@ -313,7 +326,8 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Sculptural_group_on_square_in_Volyne.JPG"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "why": "not a tree at all: the photo is a sculptural group/monument on a square in Volyne"
     },
     {
       "name": "Alej (Nové Dvory)",
@@ -324,7 +338,8 @@
         "https://commons.wikimedia.org/wiki/File:Alej_vedouc%C3%AD_k_Blanseku,_Nov%C3%A9_Dvory,_Suchdol,_Vav%C5%99inec,_okres_Blansko.jpg",
         "https://commons.wikimedia.org/wiki/File:Alej_vedouc%C3%AD_k_Blanseku,_Nov%C3%A9_Dvory,_Suchdol,_Vav%C5%99inec,_okres_Blansko_(03).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "why": "an avenue (Alej), not a single collectible point"
     },
     {
       "name": "Alej ve Skaličce",
@@ -333,7 +348,8 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2012_Alley_in_Skali%C4%8Dka_CZ.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "why": "an avenue (Alej), not a single collectible point"
     },
     {
       "name": "Buk v Jihlavě",
