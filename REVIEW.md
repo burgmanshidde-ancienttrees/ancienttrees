@@ -13,6 +13,75 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-18
+
+Reviewed commits since the last review (2026-09-17's entry, through the
+2026-09-17 BLOCKER on the Italian Jubaea chilensis species split) through
+15909dac: confirmed that BLOCKER is genuinely fixed. `9bdae21c` renamed
+Florence's `flo_021` from "Palma da vino cilena" to "Palma del Cile", matching
+Naples' `nap_017`, and `python3 scripts/i18ncheck.py` now exits 0 with no
+split-species warnings; `6a7d2843` recorded the answer in health's own
+ledger. `python3 scripts/health.py` confirms Build and deploy succeeded 1.4h
+ago, so the fix reached production. About 180 commits in the window: a
+resumed assembly line (Trieste +6 including a new Miramare park page,
+Miedzyzdroje expanded to a 5-oak cluster, Hoorn +4, 44 trees given a derived
+age from girth via the newly merged `scripts/ages.py`, several single-famous-
+tree places in Croatia/Serbia/France/Poland/Czechia), plus product work
+(votes and paywall-interest taken off the app's local storage entirely and
+onto the account, mirroring the website's existing localStorage discipline;
+three new park pages from a "world's most-searched parks" pass; the
+/sources credits page stopped leaking raw ArcGIS endpoint strings and an
+internal 493-character licence note; a generated oldest-tree-per-country
+collection replacing a stale 15-country hand list; a new digest table
+measuring collections/species/countries/parks against expected CTR).
+
+Checked the derived-age work against the 2026-08-16 estimating rule
+specifically, since it is exactly the kind of change that rule exists to
+police: sampled `bcn_048`, `bru_023`, `bru_024`, `cag_010` in the diff.
+Each carries a broad band (e.g. "roughly 100 to 200 years"), states its
+basis in `age_basis: "girth"`, and spells out the Mitchell's-rule arithmetic
+in `verify_notes`; none sharpens a vague source into a false-precise number.
+Conforms.
+
+Read the /sources fix directly in `site/dist/sources.html` rather than
+trusting the commit message: no `FeatureServer`, `startIndex=`, or other
+endpoint fragments render as link text, and Spokane's line now reads "none
+stated" rather than the internal note naming CLAUDE.md. Read the new
+Miramare park page (`site/dist/parks/parco-del-castello-di-miramare-trieste.html`):
+conforms to Contract H, states a real count (6), does not explain its own
+publish gate to the reader, no builder-speak. Read the generated
+oldest-tree-per-country collection: title and description are computed, no
+hand-typed count to go stale.
+
+Ran `python3 scripts/qa.py` (clean, no output) and `python3
+scripts/preflight.py` (626 cities, 0 problems, only standing NOTEs already
+known: shared-coordinate clusters, paid-entry ratios, a handful of
+duplicate-lead near-misses). No em dashes anywhere in `site/dist` (checked
+directly, not just via qa's own claim).
+
+Read the six rotated app screenshots (own-tree, paywall, people,
+photo-viewer, place-pin, profile-edit): all clean. Re-checked `paywall.png`'s
+"Plus is not open yet. We are building it, and this is the list." against
+TONE_OF_VOICE.md's builder-speak ban before writing this off, since the
+phrase is a close paraphrase of the explicitly-banned "still being built" —
+but this exact line was already raised as a WARN/FOR HIDDE finding on
+2026-09-07, and every review since (2026-09-08, 2026-09-16, 2026-09-17) has
+read it as Hidde's own deliberate copy (commit `1706026c`, "it just says it
+will come soon") rather than drift, so repeating it again would be exactly
+the "fifteen nitpicks" failure mode this file warns against. Not re-reported.
+`people.png`'s demo Marieke/Tom/Sofia list is the same previously-traced,
+launch-argument-gated fixture data (`Kit/DemoPeople.swift`).
+
+Did not re-report the iOS app CI failure `health.py` surfaces at rung 2: it
+is the already-diagnosed `testEveryFlowLeavesAWayBack` flake in
+`FlowWalk.swift`, documented in LOG.md as blocked on a `workflows`-scope
+push token only Hidde holds (`drafts/ios-floor-retry.patch`), most recently
+reconfirmed 2026-09-17. Nothing new about it today.
+
+Nothing found.
+
+---
+
 ## 2026-09-17
 
 Reviewed commits since the last review (14a16874 window continues; the last
