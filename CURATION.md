@@ -153,6 +153,29 @@ Not run here: this sandbox's network policy refuses commons.wikimedia.org
 outright (403 on CONNECT), so the last-resort sweep is a night run's job. The
 CI runner reaches Wikimedia fine, measured 2026-09-01.
 
+**A third thing, found by reading the rendered page rather than the data: 242
+live pages print an internal tree id to the reader.** Pamplona had seven of
+them, in access and transport lines like "the same path segment as pam_012
+(about 60m south)" and "about 1.4km beyond the Villava trio (pam_011/012/013)".
+All seven are gone here, replaced by what the reader can actually use ("the
+southernmost of the three", "the Lombardy poplar at the north end", "the
+pollarded poplar at Rochapea").
+
+The other 235 are across many cities (Warsaw, Alicante, Den Bosch, Brisbane,
+Deventer, Leeuwarden, Arnhem, Quebec City, Lausanne, Trieste and more; the list
+is reproducible by stripping script, style and head, then tags, from every file
+under site/dist and matching `[a-z]{3,4}_0\d\d` in what is left). It happens
+wherever a pass cross-referenced one tree from another's access or transport
+field, which is a sensible thing to write and the wrong place to leave a
+database key.
+
+**Deliberately NOT made a build check tonight.** A FAIL would refuse every
+deploy until all 235 are rewritten, which is self-inflicted breakage and the
+"gate that enforces polish" trap this corpus already names once. The rewrites
+are not mechanical either: each id has to become a phrase a visitor can follow,
+which is a judgement per sentence. It is worth a batch pass of its own, and the
+check belongs in the same change that empties the backlog.
+
 **And trying it found a worse bug than the one it was sent to fix.**
 `photo_last_resort.py` swallowed the network error, returned an empty list, and
 then stamped `last_resort` with today's date on all fourteen Pamplona trees.
