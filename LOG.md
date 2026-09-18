@@ -2,6 +2,51 @@
 
 <!-- archive-index -->
 
+## 2026-09-18 (session 10) - Released a stale claim, closed a scouting-ledger gap, and cleared two housekeeping flags
+
+Resumed an earlier attempt in this window that had stopped early with
+budget unspent, having shipped 2 trees. Its standing claim on florence
+had nothing left to finish behind it: the register-exhausted verdict was
+already committed in an earlier commit, so the claim was released rather
+than re-litigated. `leads.py --ready` was empty (0 writable leads), so
+this fell to Step 0's ladder. Submissions and sightings were both
+current (nothing new). Site health was clear (the failing weekly-analysis
+run is usage-allowance exhaustion, not breakage, per health.py's own
+read).
+
+**Register scouting: `scout_next.py --target` was pointing at Monterey
+(#70) as "no supply and no verdict", and that was wrong.** The register
+behind it, Cal Poly's California Big Trees API, was already found and
+stalled on licence on 2026-08-31, but recorded under the place name
+"California (statewide)", which does not equal its country field
+("United States"), so the ledger's country-level generalisation never
+applied it to individual cities. Re-fetched the API live (still no
+licence stated anywhere) and distance-checked the other ranked
+California cities with no entry of their own: Monterey, Santa Cruz, San
+Jose, Sacramento and Santa Barbara all sit within reach (1 to 23
+candidates within 30 km). Added them to the entry's `covers` list. Los
+Angeles, Long Beach, San Francisco, San Diego and Oakland already carry
+their own separate verdicts and were untouched. `scout_next.py --target`
+now reports BUILD instead of re-suggesting a scout of a register already
+on file. The rest of the queue's "openable today" list is genuinely thin
+(1-8 leads per city, all below the six-candidate floor for dispatching a
+pass, and several are COVERED cases that would deepen an existing city
+rather than open a new page), so nothing there was dispatched.
+
+**Two mechanical housekeeping items the session-start brief flagged,
+both cleared:** `vendor_photos.py` copied the three photographs session
+9 approved (Będomin's Wybicki Oak, Hel's Helena the poplar, Milan's
+Villa Litta plane) onto our own domain, which is what a fresh app
+install needs before Wikimedia's rate limit can bite it. `appdata.py`
+synced the app's bundled catalogue, which was 143 trees stale (3111 to
+3252).
+
+Left alone: eleven `scripts/_*.py` scratch files sitting untracked from
+an earlier session's photo-judging work (harmless, no permission to
+remove them this session), and the six branches the session-start brief
+named as carrying unmerged work, which needed more time than this
+window had left to review safely.
+
 ## 2026-09-18 (session 9) - A viewing pass on the queued photo backlog, and a lesson about checking what a tree already has
 
 Resumed an earlier attempt in the same window that had stopped early with
