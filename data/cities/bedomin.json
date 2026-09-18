@@ -1,0 +1,69 @@
+{
+  "city": "Będomin",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Będomin's oak stands where Poland's national anthem got its start: in the manor garden where Józef Wybicki, who wrote the anthem's words, was born in 1747 and, family tradition says, played beneath this very tree as a boy. Roughly four centuries old and voted Poland's Tree of the Year in 2013, it is now cabled and propped against storm damage, with a genetic clone planted alongside it in 2019 as insurance.",
+  "meta_description": "The Wybicki Oak in Będomin: a roughly 400-year-old oak where Poland's national anthem author grew up, voted the country's Tree of the Year 2013.",
+  "question_meta": "Będomin's tree is the Wybicki Oak, roughly 400 years old, growing in the National Anthem Museum's grounds.",
+  "question_answer": "The Wybicki Oak, a pedunculate oak in the grounds of the National Anthem Museum in Będomin, roughly 400 years old and about 6.8 metres round. It grows beside the manor where Józef Wybicki, author of the words to Poland's national anthem, was born in 1747.",
+  "question_context": "Family tradition, repeated by the regional tourism board, says the young Wybicki played beneath this oak's crown before he grew up to write the words of Mazurek Dąbrowskiego. The tree's own age is put at roughly 400 years, with one source suggesting 440; its girth is recorded between 635 and 680 centimetres depending on the survey. In 2013 it was voted Poland's Tree of the Year by Klub Gaja, then placed third in the European contest the following year with nearly 17,000 votes.\n\nA 2019 report found the oak weakened, its heaviest limbs held up with cables and steel supports, and conservators planted a genetic clone beside it the same year. No report since suggests it has since died or fallen. The manor is now the National Anthem Museum, a branch of the National Museum in Gdańsk, open Tuesday to Sunday with a small entry fee, free on Fridays and Saturdays.",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It grew up alongside Józef Wybicki, who wrote the words to Poland's national anthem in the manor here; family tradition says he played beneath it as a boy. It went on to win Poland's Tree of the Year 2013 and placed third in the European contest a year later."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 400 years, based on sources that vary between about 350 and 450. Girth is recorded between 635 and 680 centimetres depending on the survey."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "Yes, though weakened. A 2019 report found its heaviest limbs propped and cabled against storm damage, and conservators planted a genetic clone beside it the same year as insurance."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No. It stands in the grounds of the National Anthem Museum: a few złoty for entry, free on Fridays and Saturdays, closed Mondays."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Będomin is a small village 10 to 15 kilometres from Kościerzyna, reachable by PKS bus, with free parking at the museum."
+    }
+  ],
+  "hero_tree_id": "bed_001",
+  "oldest_tree_id": "bed_001",
+  "trees": [
+    {
+      "id": "bed_001",
+      "name": "The Wybicki Oak (Dąb Wybickiego)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": 680,
+      "location": {
+        "address": "Park of the National Anthem Museum, Będomin, Kościerzyna County, Pomeranian Voivodeship, Poland",
+        "latitude": 54.129672,
+        "longitude": 18.120768,
+        "neighbourhood": "Będomin"
+      },
+      "verified_sources": [
+        "https://dzieje.pl/rozmaitosci/dab-wybickiego-z-bedomina-drzewem-roku-2013",
+        "https://bazadrzew.pl/tree/view/1731",
+        "https://pomorskie.travel/artykuly/pomorskie-wedrowki-szlak-jozefa-wybickiego-przez-kaszuby-sladami-autora-polskiego-hymnu/",
+        "https://pl.wikipedia.org/wiki/B%C4%99domin"
+      ],
+      "access": "Paid entry to the National Anthem Museum grounds (branch of the National Museum in Gdańsk): 7 zł normal / 3 zł reduced / 15 zł family, free on Fridays and Saturdays; open Tuesday to Sunday, closed Mondays.",
+      "paid_entry": true,
+      "transport": "Rural village roughly 10-15 km from Kościerzyna; PKS bus connections run from Kościerzyna, no railway station in Będomin itself. Free parking at the museum.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Poland's national anthem was written by a boy who grew up under this oak, and Będomin has made a shrine of both.\n\nJózef Wybicki was born in the manor here in 1747, and family tradition, repeated by the regional tourism board, says he played beneath this tree's crown as a child, decades before he wrote the words that became Mazurek Dąbrowskiego. The oak was already old when he was young. It is put today at roughly 400 years, its trunk about 6.8 metres round, though the region's records disagree by close to half a metre depending on who held the tape.\n\nIn 2013 it was voted Poland's Tree of the Year. The following year it placed third in the European contest, drawing nearly 17,000 votes from a continent's worth of strangers who had never stood under it.\n\nAge has since caught up with it. A 2019 inspection found the oak weakened, its heaviest limbs now held up with cables and steel props, and conservators planted a genetic clone beside it the same year, insurance in wood for whenever the original finally gives out. It is still standing.\n\nThe manor is now the National Anthem Museum, run by the National Museum in Gdańsk, and the oak grows in its grounds: a few złoty for entry, less on Fridays and Saturdays, closed Mondays.",
+      "how_to_recognise": "You can recognise it by the steel cables and props holding up its heaviest limbs, and by the young cloned oak planted beside it in 2019. It grows in the museum grounds beside the manor house in Będomin.",
+      "best_time": {
+        "months": [9, 10],
+        "label": "September to October, when the acorns drop",
+        "kind": "fruit"
+      }
+    }
+  ]
+}
