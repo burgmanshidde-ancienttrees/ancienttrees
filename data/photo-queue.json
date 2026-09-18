@@ -390,7 +390,9 @@
      "author": "Havang(nl)",
      "lat": 51.98177972,
      "lng": 5.91312306,
-     "cats": "Category:2010 in Arnhem Category:Art Nouveau architecture in Arnhem Category:CC-Zero Category:De Gruyter Category:Houses in Arnhem Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-28 Category:Photographs by Henk van Gaal Category:Rijksmonumenten in Arnhem Category:Rijksmonumenten with known IDs Category:Roggestraat (Arnhem) Category:Self-published work Category:Shops in Arnhem Category:Taken with Sony DSC-HX5V"
+     "cats": "Category:2010 in Arnhem Category:Art Nouveau architecture in Arnhem Category:CC-Zero Category:De Gruyter Category:Houses in Arnhem Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-28 Category:Photographs by Henk van Gaal Category:Rijksmonumenten in Arnhem Category:Rijksmonumenten with known IDs Category:Roggestraat (Arnhem) Category:Self-published work Category:Shops in Arnhem Category:Taken with Sony DSC-HX5V",
+     "judged": "reject",
+     "verdict": "Shopping-street corner building (Musiskwartier entrance) with pedestrians. No tree in the frame."
     }
    ]
   },
@@ -5886,7 +5888,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Giardini Pubblici Indro Montanelli Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-03-08 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Milan",
      "source": "wikidata/Q55741802",
      "judged": "reject",
-     "verdict": "Upward view of a bare trunk, 329 m from pin under a generic title, identity unknowable"
+     "verdict": "Genuine plane bark, but a bare-winter view looking up the trunk with the crown unreadable, and 329 m from our pin in a garden holding several big planes."
     },
     {
      "title": "File:Albero secolare nei giardini di Milano.jpg",
@@ -5926,7 +5928,9 @@
      "author": "Julian Lupyan",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Cultural heritage monuments in Italy missing SDC location of creation Category:Cultural heritage monuments in Italy with known IDs Category:Duomo (Milan) - Madonnina Category:Images from Wiki Loves Monuments 2025 Category:Images from Wiki Loves Monuments 2025 in Italy Category:Images from Wiki Loves Monuments 2025 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2025 in Italy - Lombardy - traditional contest Category:Images from Wiki Loves Monuments 2025 in Italy - traditional contest Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Italian MiBAC disclaimer warning Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-Zero Category:Cultural heritage monuments in Italy missing SDC location of creation Category:Cultural heritage monuments in Italy with known IDs Category:Duomo (Milan) - Madonnina Category:Images from Wiki Loves Monuments 2025 Category:Images from Wiki Loves Monuments 2025 in Italy Category:Images from Wiki Loves Monuments 2025 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2025 in Italy - Lombardy - traditional contest Category:Images from Wiki Loves Monuments 2025 in Italy - traditional contest Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Italian MiBAC disclaimer warning Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Milan Cathedral's spire and gilt Madonnina under scaffolding. No tree in the frame; filename false positive on Via Madonnina."
     }
    ]
   },
@@ -17422,7 +17426,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Yael Ruiz, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.4735963,9.177383"
+     "obs_location": "45.4735963,9.177383",
+     "judged": "reject",
+     "verdict": "Grey overcast winter park scene, several bare planes leaning over a stream, no single tree as the subject."
     },
     {
      "title": "iNat obs 241163742 (Platanus orientalis)",
@@ -17431,7 +17437,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Yael Ruiz, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.4735963,9.177383"
+     "obs_location": "45.4735963,9.177383",
+     "judged": "reject",
+     "verdict": "Same winter stream scene from a step sideways: bare, flat light, no identifiable subject tree."
     },
     {
      "title": "iNat obs 218866639 (Platanus orientalis)",
@@ -17440,7 +17448,9 @@
      "licence": "CC BY-SA",
      "author": "(c) lejones417, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.4731611111,9.1769222222"
+     "obs_location": "45.4731611111,9.1769222222",
+     "judged": "reject",
+     "verdict": "In leaf and well lit, but the crown is cut off at the top of the frame and the tree shares it with a footbridge; 23 m from our pin in a park full of planes, so which trunk this is cannot be told."
     },
     {
      "title": "iNat obs 295949576 (Platanus orientalis)",
@@ -22523,7 +22533,7 @@
      "source": "inaturalist",
      "obs_location": "41.3718251,2.1565357",
      "judged": "reject",
-     "verdict": "Trunk hollow close-up (no crown) and a backlit foliage close-up; also species mismatch (Schinus molle vs our Schinus longifolia)"
+     "verdict": "Backlit pepper-tree foliage hanging against a rendered wall, near silhouette; neither trunk nor crown readable."
     },
     {
      "title": "iNat obs 9992331 (Schinus molle)",
@@ -22541,7 +22551,9 @@
      "licence": "CC BY",
      "author": "(c) John Palmer, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.3718251,2.1565357"
+     "obs_location": "41.3718251,2.1565357",
+     "judged": "reject",
+     "verdict": "Close-up of a burred trunk with a parked car behind it. Bark close-up, explicitly outside the standard."
     },
     {
      "title": "iNat obs 9992392 (Schinus molle)",
@@ -22550,7 +22562,9 @@
      "licence": "CC BY",
      "author": "(c) John Palmer, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.3718251,2.1565357"
+     "obs_location": "41.3718251,2.1565357",
+     "judged": "reject",
+     "verdict": "Dark upward view of two limbs against a pale sky with a building below; crown unreadable, and the observation sits 99 m from our already approximate pin."
     }
    ]
   },
@@ -22602,7 +22616,7 @@
      "source": "inaturalist",
      "obs_location": "41.3675868531,2.1652655303",
      "judged": "reject",
-     "verdict": "Fallen leaves on the ground, not the tree"
+     "verdict": "Fallen ginkgo leaves on grass. A leaf close-up, no tree in the frame."
     },
     {
      "title": "iNat obs 249401941 (Ginkgo biloba)",
@@ -37742,7 +37756,9 @@
      "author": "G.Th. Delemarre",
      "lat": null,
      "lng": null,
-     "cats": "Category:1961 in Arnhem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images with coordinates from RCE Category:Photographs by G.Th. Delemarre Category:Velperplein, Arnhem"
+     "cats": "Category:1961 in Arnhem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images with coordinates from RCE Category:Photographs by G.Th. Delemarre Category:Velperplein, Arnhem",
+     "judged": "reject",
+     "verdict": "Archival black-and-white RCE street photograph of shopfronts on the Velperplein. B&W archival imagery never ships, and there is no tree in it anyway."
     }
    ]
   },
@@ -43153,7 +43169,9 @@
      "author": "AndriySadivskyy",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia España in 2012 Category:CC-BY-SA-3.0-ES Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2012-09-27 Category:Taken with Canon EOS 500D"
+     "cats": "Category:All media supported by Wikimedia España in 2012 Category:CC-BY-SA-3.0-ES Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2012-09-27 Category:Taken with Canon EOS 500D",
+     "judged": "reject",
+     "verdict": "Facade of the Palau Castanyer in the Gothic Quarter, shutters and balconies. No tree; Castanyer here is a surname, not a chestnut."
     },
     {
      "title": "File:Palau Castanyer P1160645.JPG",
@@ -43163,7 +43181,9 @@
      "author": "Pere López",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia España in 2012 Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:La Mercè 2012 Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2012-09-23 Category:Taken with Panasonic Lumix DMC-FZ18"
+     "cats": "Category:All media supported by Wikimedia España in 2012 Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:La Mercè 2012 Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2012-09-23 Category:Taken with Panasonic Lumix DMC-FZ18",
+     "judged": "reject",
+     "verdict": "Street view of the same Palau Castanyer building with shoppers in the foreground. No tree."
     },
     {
      "title": "File:Palau Castanyer P1210194.jpg",
@@ -43173,7 +43193,9 @@
      "author": "pere prlpz",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia España in 2013 Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2013-09-24 Category:Taken with Panasonic Lumix DMC-FZ18 Category:Uploaded with VicuñaUploader"
+     "cats": "Category:All media supported by Wikimedia España in 2013 Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Spain missing SDC location of creation Category:Cultural heritage monuments in Spain with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Spain Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Palau Castanyer Category:Self-published work Category:Spain photographs taken on 2013-09-24 Category:Taken with Panasonic Lumix DMC-FZ18 Category:Uploaded with VicuñaUploader",
+     "judged": "reject",
+     "verdict": "Detail of a balcony and shop window of the Palau Castanyer building. No tree."
     }
    ]
   },
@@ -65526,7 +65548,9 @@
      "author": "Henk Monster",
      "lat": 51.986889,
      "lng": 5.903113,
-     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Fungi of Arnhem Category:Fungi of Gelderland in November Category:Netherlands photographs taken on 2014-11-17 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Photos from Panoramio ID 1100550 Category:Pleurotaceae in the Netherlands Category:Pleurotus ostreatus"
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Fungi of Arnhem Category:Fungi of Gelderland in November Category:Netherlands photographs taken on 2014-11-17 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Photos from Panoramio ID 1100550 Category:Pleurotaceae in the Netherlands Category:Pleurotus ostreatus",
+     "judged": "reject",
+     "verdict": "Nine-panel montage of oyster mushrooms on dying chestnut trunks. A fungus record, not a photograph of a lime."
     },
     {
      "title": "File:Pleurotus ostreatus (Oyster Mushroom, D= Austernseitling, F= Pleurote en forme d'huître ou P. en coquille, NL= Gewone oesterzwam) white spores and causes white rot at Zypendaalseweg Arnhem at a Chestnut tree - panoramio.jpg",
@@ -65536,7 +65560,9 @@
      "author": "Henk Monster",
      "lat": 51.986704,
      "lng": 5.903606,
-     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Fungi of Arnhem Category:Fungi of Gelderland in November Category:Netherlands photographs taken on 2015-11-17 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Photos from Panoramio ID 1100550 Category:Pleurotaceae in the Netherlands Category:Pleurotus ostreatus"
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Fungi of Arnhem Category:Fungi of Gelderland in November Category:Netherlands photographs taken on 2015-11-17 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Photos from Panoramio ID 1100550 Category:Pleurotaceae in the Netherlands Category:Pleurotus ostreatus",
+     "judged": "reject",
+     "verdict": "Three-panel montage of mushrooms on a rotting chestnut stem by the Zijpendaalseweg. Wrong species and the tree is dying, not our lime."
     },
     {
      "title": "File:The Chestnut trees are killed by several mushrooms (Pleurotus ostreatus, Chondostereum an Flammulina velutipes. The orange ring shows that they must cutted down. - panoramio.jpg",
@@ -65546,7 +65572,9 @@
      "author": "Henk Monster",
      "lat": 51.986743,
      "lng": 5.903113,
-     "cats": "Category:CC-BY-3.0 Category:Chondrostereum purpureum Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Flammulina velutipes Category:Fungi of Arnhem Category:Fungi of Gelderland in February Category:Montages of fungi Category:Netherlands photographs taken on 2015-02-03 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Photos from Panoramio ID 1100550 Category:Pleurotaceae in the Netherlands Category:Pleurotus ostreatus"
+     "cats": "Category:CC-BY-3.0 Category:Chondrostereum purpureum Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Flammulina velutipes Category:Fungi of Arnhem Category:Fungi of Gelderland in February Category:Montages of fungi Category:Netherlands photographs taken on 2015-02-03 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Photos from Panoramio ID 1100550 Category:Pleurotaceae in the Netherlands Category:Pleurotus ostreatus",
+     "judged": "reject",
+     "verdict": "Montage of fungi on chestnuts marked with an orange felling ring. The subject is decay on trees due to be cut down; nothing of our lime in it."
     }
    ]
   },
@@ -65811,7 +65839,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Sculptures Category:Peer Veneman Category:Sculptures in Arnhem Category:Self-published work Category:Velperweg, Arnhem"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Sculptures Category:Peer Veneman Category:Sculptures in Arnhem Category:Self-published work Category:Velperweg, Arnhem",
+     "judged": "reject",
+     "verdict": "Bronze sculpture on a lawn in front of a white office building. No tree."
     },
     {
      "title": "File:Woontoren High Park, Velperweg, Arnhem.jpg",
@@ -65821,7 +65851,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:2021 in Arnhem Category:Buildings in Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem Category:Netherlands photographs taken on 2021-07-20 Category:Self-published work Category:Velperweg, Arnhem"
+     "cats": "Category:2021 in Arnhem Category:Buildings in Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem Category:Netherlands photographs taken on 2021-07-20 Category:Self-published work Category:Velperweg, Arnhem",
+     "judged": "reject",
+     "verdict": "Apartment tower under construction on the Velperweg, street trees only as edge decoration. No copper beech as subject."
     }
    ]
   },
@@ -65985,7 +66017,9 @@
      "author": "Ben Bender",
      "lat": 51.990767,
      "lng": 5.902926,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Garden and park stairs in the Netherlands Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Photos from Panoramio ID 4678999 Category:Sonsbeekweg, Arnhem Category:Winter 2015-2016 in the Netherlands Category:Winter in Sonsbeek Park"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Garden and park stairs in the Netherlands Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Photos from Panoramio ID 4678999 Category:Sonsbeekweg, Arnhem Category:Winter 2015-2016 in the Netherlands Category:Winter in Sonsbeek Park",
+     "judged": "reject",
+     "verdict": "Snow-covered park steps with bare beeches behind; no subject tree, winter and 872 m from our pin."
     },
     {
      "title": "File:Sonsbeek, Zijpendaal, Arnhem, Netherlands - panoramio (57).jpg",
@@ -86930,7 +86964,9 @@
      "author": "Fontema",
      "lat": 45.474822,
      "lng": 9.20143,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fungi in October Category:Italy photographs taken on 2014-10-08 Category:Laetiporus sulphureus (habitat) Category:Laetiporus sulphureus in Italy Category:Quercus rubra in the Northern Hemisphere in October Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fungi in October Category:Italy photographs taken on 2014-10-08 Category:Laetiporus sulphureus (habitat) Category:Laetiporus sulphureus in Italy Category:Quercus rubra in the Northern Hemisphere in October Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Close-up of a trunk base with a bracket fungus as the subject; the foliage in frame is oak, not plane, and the file's own title says quercia."
     },
     {
      "title": "File:A tree in a Milan park on a sunny day.jpg",
@@ -86940,7 +86976,9 @@
      "author": "Fede lucy",
      "lat": 45.473167,
      "lng": 9.202049,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Giardini Pubblici Indro Montanelli Category:Science technology society and Wikipedia Doctorate course 2018 Category:Self-published work Category:Taken with Huawei P Smart Category:Unidentified trees in Italy"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Giardini Pubblici Indro Montanelli Category:Science technology society and Wikipedia Doctorate course 2018 Category:Self-published work Category:Taken with Huawei P Smart Category:Unidentified trees in Italy",
+     "judged": "reject",
+     "verdict": "Crown-only shot straight up into a sunlit canopy, no trunk at all and lobed leaves that read as oak rather than plane; could be any tree in any park."
     },
     {
      "title": "File:Cipresso calvo a primavera, altro dettaglio.jpg",
@@ -86950,7 +86988,9 @@
      "author": "Elbalabiot",
      "lat": 45.474628,
      "lng": 9.2,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-04-18 Category:Self-published work Category:Taxodium distichum - Cipresso calvo (Milano, Giardini Montanelli) Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-04-18 Category:Self-published work Category:Taxodium distichum - Cipresso calvo (Milano, Giardini Montanelli) Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Bald cypress (fibrous shredding bark, feathery foliage), not a London plane; also an upward trunk view with no readable crown."
     },
     {
      "title": "File:Cipresso calvo a primavera, dettaglio.jpg",
@@ -91954,7 +91994,7 @@
      "source": "inaturalist",
      "obs_location": "1.3191666667,103.8163888889",
      "judged": "reject",
-     "verdict": "A close-up of the garden's own identification plaque nailed to the trunk; the plaque is the photo's subject, not the tree."
+     "verdict": "Photograph of the garden's black plant label reading Myristica fragrans, screwed to a slim stem. A label, not a tree."
     },
     {
      "title": "iNat obs 40335111 (Myristica fragrans)",
@@ -92153,7 +92193,7 @@
      "source": "inaturalist",
      "obs_location": "1.3108970792,103.8164663315",
      "judged": "reject",
-     "verdict": "A hand holding a fallen leaf on the ground, not the tree, and the observation is Rubroshorea ovalis while our entry is Rubroshorea pauciflora, a different species."
+     "verdict": "A single fallen leaf held in a hand. Leaf close-up, and the observation is Rubroshorea ovalis 50 m away, a different species from our nemesu."
     },
     {
      "title": "iNat obs 340534792 (Rubroshorea ovalis)",
@@ -92173,7 +92213,7 @@
      "source": "inaturalist",
      "obs_location": "1.3109208776,103.8165394217",
      "judged": "reject",
-     "verdict": "Same wrong-species observation (Rubroshorea ovalis vs our Rubroshorea pauciflora)."
+     "verdict": "Second leaf-in-hand photograph from the same walk; same wrong species, no tree in frame."
     },
     {
      "title": "iNat obs 340534836 (Rubroshorea ovalis)",
@@ -94734,7 +94774,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Files by Fry72 from the Canary Islands/2024 Category:Files with coordinates missing SDC location of creation Category:Pino de las dos Pernadas, Vilaflor de Chasna Category:Self-published work",
      "source": "wikidata/Q125426611",
      "judged": "reject",
-     "verdict": "photo_light POOR, rejected without viewing"
+     "verdict": "Right tree, but shot into the sun: flare washes out the left half and the crown runs off the top of the frame. The same photographer's wider frame of this tree is approved instead."
     },
     {
      "title": "File:Huge Pinus canariensis.jpg",
@@ -94744,7 +94784,9 @@
      "author": "kallerna",
      "lat": 28.165,
      "lng": -16.63638889,
-     "cats": "Category:Files with coordinates missing SDC location of creation Category:Old pines in Spain Category:PD-self Category:Pinus canariensis Category:Pinus canariensis in Tenerife Category:Self-published work Category:Taken with Olympus FE-115 / X-715 Category:Vilaflor de Chasna"
+     "cats": "Category:Files with coordinates missing SDC location of creation Category:Old pines in Spain Category:PD-self Category:Pinus canariensis Category:Pinus canariensis in Tenerife Category:Self-published work Category:Taken with Olympus FE-115 / X-715 Category:Vilaflor de Chasna",
+     "judged": "reject",
+     "verdict": "Wrong tree of a famous pair: the file's own Commons geotag is 50 m from Pino Gordo (tfe_002, already photographed) and 173 m from this one, and the heavy low-limbed habit is Pino Gordo's, not the slim"
     },
     {
      "title": "File:Pino de las dos Pernadas, Vilaflor de Chasna, Tenerife 01.jpg",
@@ -94776,7 +94818,9 @@
      "author": "Fry72",
      "lat": 28.16601,
      "lng": -16.63698,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files by Fry72 from the Canary Islands/2024 Category:Files with coordinates missing SDC location of creation Category:Pino de las dos Pernadas, Vilaflor de Chasna Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by Fry72 from the Canary Islands/2024 Category:Files with coordinates missing SDC location of creation Category:Pino de las dos Pernadas, Vilaflor de Chasna Category:Self-published work",
+     "judged": "approve",
+     "verdict": "Canary pine, needled and evergreen, whole tree from the stone terrace wall to the crown, daylight and colour, tree centred so the card crop holds it. Geotag 47 m from our pin and the file names the tr"
     },
     {
      "title": "iNat obs 22404247 (Pinus canariensis)",
@@ -94802,7 +94846,9 @@
      "licence": "CC BY",
      "author": "(c) Codrin Bucur, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "28.4108905792,-16.5354804993"
+     "obs_location": "28.4108905792,-16.5354804993",
+     "judged": "reject",
+     "verdict": "Correct tree and species, but the crown is cut off and the light is harshly dappled through the canopy; the approved candidate shows the whole colonnade."
     },
     {
      "title": "iNat obs 142022577 (Ficus)",
@@ -94838,7 +94884,9 @@
      "licence": "CC BY",
      "author": "(c) Scott Shanks, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "28.4110133333,-16.53543"
+     "obs_location": "28.4110133333,-16.53543",
+     "judged": "approve",
+     "verdict": "Moreton Bay fig with the full colonnade of aerial-root columns, broad glossy leaves, even daylight, in leaf, tree filling the frame with the trunk mass dead centre so the wide crop holds. Observation "
     },
     {
      "title": "iNat obs 248913077 (Ficus macrophylla columnaris)",
@@ -94847,7 +94895,9 @@
      "licence": "CC BY",
      "author": "(c) Scott Shanks, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "28.4110133333,-16.53543"
+     "obs_location": "28.4110133333,-16.53543",
+     "judged": "reject",
+     "verdict": "Same tree and same observation, but a bed of bromeliads takes the lower third and the root columns are further off; weaker than the approved frame."
     }
    ]
   },
@@ -105625,7 +105675,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.45581001,
      "lng": 13.29874962,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Pinnate wingnut foliage is visible, but behind a hedge and mid-distance, with the trunk hidden and an autumn beech taking half the frame. Not the subject."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Königliche Gärtnerlehranstalt Berlin 2024-11-02 03.jpg",
@@ -105635,7 +105687,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.45583664,
      "lng": 13.29880286,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Crown of the wingnut seen over a hedge with no trunk at all; the centre band of the frame is hedge and sky."
     },
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Königliche Gärtnerlehranstalt Berlin 2024-11-02 04.jpg",
@@ -106052,7 +106106,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.45571048,
      "lng": 13.29933753,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "A clipped beech hedge fills the frame; the juniper is a small conifer top in the far background, neither trunk nor crown readable."
     },
     {
      "title": "File:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin 2024-11-02 02.jpg",
@@ -106062,7 +106118,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.45573008,
      "lng": 13.29935652,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same hedge, more sky: the tree is a distant silhouette above the hedge line and is not the subject of the photograph."
     },
     {
      "title": "File:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin 2024-11-02 03.jpg",
@@ -106072,7 +106130,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.45590698,
      "lng": 13.29929486,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Hedge and gravel path in autumn; the juniper is a background shape behind it. The tree cannot be made out at all."
     },
     {
      "title": "File:Naturdenkmal Zypressen-Wacholder Königliche Gärtnerlehranstalt Berlin 2024-11-02 04.jpg",
@@ -106340,7 +106400,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.45734431,
      "lng": 13.29975875,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Riesen-Lebensbaum Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Riesen-Lebensbaum Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Wrong species: flat drooping sprays of scale leaves and a dense conical habit, a Thuja plicata (the garden's Riesen-Lebensbaum monument), not the Swiss stone pine we record. Trunk hidden by foliage be"
     },
     {
      "title": "File:Naturdenkmal Riesen-Lebensbaum Königliche Gärtnerlehranstalt Berlin 2024-11-02 11.jpg",
@@ -106350,7 +106412,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.45734153,
      "lng": 13.29976711,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Riesen-Lebensbaum Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Riesen-Lebensbaum Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same Thuja plicata from a step back; scale foliage and no five-needle pine anywhere in frame, so it is a different natural monument in the same garden."
     },
     {
      "title": "File:Naturdenkmal Riesen-Lebensbaum Königliche Gärtnerlehranstalt Berlin 2024-11-02 13.jpg",
@@ -106360,7 +106424,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.45734037,
      "lng": 13.29968953,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Riesen-Lebensbaum Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Riesen-Lebensbaum Königliche Gärtnerlehranstalt Berlin Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Two arborvitae with a border in front; wrong species for this tree and no single subject."
     },
     {
      "title": "File:Naturdenkmal Zirbel-Kiefer Königliche Gärtnerlehranstalt Berlin 2024-11-02 01.jpg",

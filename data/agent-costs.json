@@ -8310,6 +8310,24 @@
         "note": "kos_001 (Kosice, no city yet), sal_001 (Sala, access unresolved), rad_001 (Radava, 9-tree ensemble, one source) all delivered as leads, no container; 2 turned out already published (Stary Smokovec, Senica); 4 rejected (discontinued reserve, an avenue, two thin civic plantings in Dolny Kubin)",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "higashihiroshima + famous-slovakia-batch1",
+        "kind": "write",
+        "tokens": 158686,
+        "trees": 20,
+        "note": "20 stories and recognition lines in one context (17 Higashi-Hiroshima + 3 Slovakia); 4 best_time set; honest hedging on girth disagreements and unconfirmed figures carried into prose",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "milan/barcelona/tenerife/singapore/berlin/arnhem photo shortlist",
+        "kind": "photo",
+        "tokens": 195572,
+        "trees": 0,
+        "note": "40 candidates viewed, 2 approved (both Tenerife: tfe_003, tfe_004), 38 rejected; heavy filename-false-positive rate (mushroom montages, building facades, a cathedral spire, wrong-species Naturdenkmal specimens)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

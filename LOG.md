@@ -1,6 +1,74 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 2) - New city: Higashi-Hiroshima (17 trees), 2 photos approved, 3 Slovak leads held, a city_names.py bug fixed
+
+visitors.py: 662 visits, 877 page views over 7 days (last full day 128/189,
+today only 12/16 so far). prepare.py said REFILL THE SHELF FIRST, no write
+pass was ready, so this run's first dispatch was two verify passes rather
+than a write pass, per the ladder.
+
+**Verify pass 1: 9 never-looked-at `_famous-slovakia` leads.** 3 verified
+(Kosice White Poplar, Sala Lime, Radava's 9-lime cemetery ensemble), none
+clearing the four-tree floor or the single-tree destination test alone, so
+all three landed as leads (`data/leads/kosice.json`, `sala.json`,
+`radava.json`) with full written stories preserved for whenever a container
+opens. 2 turned out already published, 4 rejected (a discontinued reserve,
+a 24-tree avenue, two thin civic plantings). Fixed an id collision in the
+delivery file before it went near data/cities (see CURATION.md for detail).
+
+**Verify pass 2 (the bigger one): `data/leads/higashi-hiroshima.json`, 32
+register leads split out of Hiroshima prefecture's giant-tree database on
+2026-09-07 and never mined.** 17 verified across shrine/temple clusters
+(Fukujo-ji, Uneyama Shrine, Hongu Hachiman, a Fukutomi pair, plus two
+standalone finds), then written (20 stories in one write pass alongside
+the 3 Slovak trees) and published as a new city, **Higashi-Hiroshima,
+Japan**, hero and oldest tree the Great Ginkgo of Renko-ji (roughly 400
+years, 2 minutes from a JR station). The city spans 30km and reads
+honestly as three separate outings rather than one walk: a temple trio
+above Saijo, a nine-tree afternoon around Toyosaka (car needed, one grove
+pin still only oaza-level), and the standalone coastal ginkgo. Also held
+3 already-written famouspoland-batch4 trees (Madej/Pietrek Oak, Jeremi
+Oak) as leads rather than pages, per the destination test.
+
+**Also weighed a photo shortlist**, demand-ranked (`photo_gaps.py
+--shortlist`): 40 candidates across Milan/Barcelona/Tenerife/Singapore/
+Berlin/Arnhem, 2 approved (both Tenerife: `tfe_003` Pino de las Dos
+Pernadas, `tfe_004` El Gran Ficus), 38 rejected. Heavy filename-false-
+positive rate worth flagging for anyone reading photo_hunt's queue by eye:
+mushroom-infestation photos misfiled under a chestnut's address, building
+facades and a cathedral spire matched by street name, and three Berlin
+Naturdenkmal photos of the wrong species at the same address.
+
+**Found and fixed a real bug in `scripts/city_names.py`.** Its Wikipedia
+resolver has no title-similarity check on its search-fallback branch, only
+a distance check, and Higashi-Hiroshima (whose actual English Wikipedia
+title, "Higashihiroshima", drops the hyphen our own romanisation uses)
+fell through to that fallback and got matched to plain "Hiroshima", a
+different, more famous city 25km away, writing Hiroshima's own language
+aliases into Higashi-Hiroshima's entry. Fixed by trying a dehyphenated,
+correctly-cased title as a direct candidate before ever reaching the fuzzy
+fallback (safe and additive, cannot change any city that already resolves
+correctly). Re-ran for higashi-hiroshima and confirmed correct.
+
+**The underlying fallback bug is real and not limited to this one city.**
+A quick audit of all 573 resolved `wikipedia_titles` for title/slug
+overlap turned up at least two more confirmed wrong matches from the same
+loose fallback: `minamialps` -> "Akaishi Mountains" (a mountain range,
+not the city) and `velp` -> "Arnhem Centraal railway station" (Velp's own
+article is a disambiguation page, so it fell through to search, which
+found a nearby railway station instead of a place). Left as found rather
+than patched blind: fixing these needs the same per-case checking Kosice's
+own near-miss ("Kotel" -> "Osecna", which turned out to be a correct
+village-to-parent-municipality match) required, which is a dedicated pass
+rather than a side effect of tonight's work. Recorded here so it is not
+rediscovered from zero.
+
+Build (11903 pages), preflight and qa clean throughout; caught and fixed
+two hard rule 9 species-name collisions (Chamaecyparis obtusa, Thujopsis
+dolabrata) and a meta_description tree-count mismatch before they reached
+the build gate. Full detail in CURATION.md.
+
 ## 2026-09-18 (session) - iOS build fix, refilled the famous-trees shelf, 5 new French places, one species page
 
 visitors.py: 656 visits, 870 page views over 7 days. prepare.py: 48 cities
