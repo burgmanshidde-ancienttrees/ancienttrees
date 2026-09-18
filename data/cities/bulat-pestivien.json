@@ -1,0 +1,65 @@
+{
+  "city": "Bulat-Pestivien",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Bulat-Pestivien is a small commune in the Côtes-d'Armor countryside, and the tree that brings anyone here stands alone on a working farm at the hamlet of Tronjoly. Locals call it Ar Ven Der, simply 'the oak tree', and it may hold the thickest trunk of any oak in continental Europe: measurements taken since 2008 put it at 12 to 13 metres round. A hermit reportedly lived inside its hollow trunk in the 1750s. The owner has kept it open to respectful visitors for over a decade, wooden barriers marking how close you may come.",
+  "meta_description": "Ar Ven Der, a Breton oak possibly the thickest trunk in continental Europe at 12 metres round, once home to a hermit. One tree mapped in Bulat-Pestivien.",
+  "hero_tree_id": "trj_001",
+  "oldest_tree_id": "trj_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Bulat-Pestivien?",
+      "a": "The only tree mapped here is Le Chêne de Tronjoly (Ar Ven Der), a pedunculate oak whose age is disputed: one reading puts it at 1300 to 1600 years, another nearer 900 to 1200. Either way it is one of the oldest oaks in France."
+    },
+    {
+      "q": "Why is it called Ar Ven Der?",
+      "a": "It is Breton for \"the oak tree\", used as though there were no others worth naming. Locals have called it that for generations."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "The tree stands on a working farm rather than a park. The owner has kept it open to respectful visitors for over a decade, with wooden barriers marking how close you may come and parking nearby."
+    },
+    {
+      "q": "How big is the trunk?",
+      "a": "About 12 metres round by the most recent measurement, among the largest oak trunks recorded anywhere in continental Europe."
+    }
+  ],
+  "trees": [
+    {
+      "name": "Le Chêne de Tronjoly (Ar Ven Der)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "many centuries old, sources disagree sharply (roughly 900 to 1600 years)",
+      "age_min": 900,
+      "age_max": 1600,
+      "girth_cm": 1250,
+      "location": {
+        "address": "Tronjoly hamlet, near the Bodeillo farm, Bulat-Pestivien, 22160 Côtes-d'Armor, Brittany, France",
+        "latitude": 48.4487,
+        "longitude": -3.3251,
+        "neighbourhood": "Tronjoly, Bulat-Pestivien (near Callac)"
+      },
+      "verified_sources": [
+        "https://krapooarboricole.wordpress.com/2008/04/25/chene-de-bulat-pestivien-22/",
+        "http://bulat.pestivien.free.fr/tronjoli.htm",
+        "https://lestetardsarboricoles.fr/wordpress/2015/02/12/nouvelles-du-chene-tronjoly-bulat-pestivien-cotes-darmor/",
+        "https://lasandalettedeplouha.lebonforum.com/t5048-le-chene-de-tronjoly-ar-ven-der-bulat-pestivien-22"
+      ],
+      "access": "On private land (a farm at Bodeillo), but the owner has stated publicly and repeatedly over at least a decade (2015-2016 sources) that the tree remains open to visitors as long as they are respectful and stay within the marked area: wooden barriers delimit the authorised viewing zone and there is streamside parking a short walk away. No booking, ticket or doorbell needed, but it is someone's working farm rather than a park, so state this plainly rather than calling it simply 'free'.",
+      "transport": "Rural and remote, 'deep in Brittany' per one source, a few km northeast of Callac. No public transport reaches the site; a car is required, with parking near the tree itself as described by visitors.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "id": "trj_001",
+      "story": "Around 1750 a hermit named Le Graet is said to have moved into this tree, keeping a bed, a table and a library inside the hollow trunk. That gives some idea of the space. The measurements agree on the scale and not much else: 12 metres round in 2008, 12.5 in 2015, and a reported 13 before the trunk split into a living half and a standing dead stub. Ted Green of the Ancient Tree Forum, quoted by the commune and by French dendrologists, reckons it may be the largest oak trunk in continental Europe.\n\nIts age depends on who you ask, and the gap is not a detail. That same reading puts it at 1300 to 1600 years. A 2015 account of the tree settles nearer 900 to 1200. Neither can be checked against the rings, because there is no longer enough trunk left to count.\n\nBretons call it Ar Ven Der, the oak tree, as though there were no others. It stands by itself where three slopes meet above a stream running down to the Leguer, classified an arbre remarquable since April 2004. In February 2015 oak beams, jointed by mortise and tenon, were set under the heaviest lower limbs to stop them tearing away. The land around it is a working farm rather than a park, and wooden barriers mark how close a visitor may go.",
+      "how_to_recognise": "You can recognise it by the trunk, about 12 metres round and split into a living half and a standing dead stub, with oak beams propping the lowest limbs. It stands alone beside a stream at Tronjoly, inside wooden barriers.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ],
+  "question_meta": "Bulat-Pestivien's one mapped tree is Ar Ven Der, a Breton oak possibly the thickest trunk in continental Europe, on a farm at the hamlet of Tronjoly.",
+  "question_answer": "Bulat-Pestivien's one mapped tree is Le Chêne de Tronjoly, known locally as Ar Ven Der, a pedunculate oak on a farm at the hamlet of Tronjoly whose trunk measures around 12 metres round, among the largest oak trunks recorded anywhere in continental Europe.",
+  "question_context": "Ar Ven Der means simply 'the oak tree' in Breton, as though naming it were unnecessary. Its trunk has been measured at 12 metres round in 2008, 12.5 in 2015, and reportedly 13 before it split into a living half and a standing dead stub, so the figures disagree without disagreeing about the scale. Its age is disputed too: one widely quoted reading gives 1300 to 1600 years, a 2015 account settles nearer 900 to 1200, and neither can be checked against the rings because too little trunk remains to count. Around 1750 a hermit named Le Graet reportedly moved into the hollow trunk with a bed, a table and a library. The tree stands alone where three slopes meet above a stream, on a working farm rather than a park, and the owner has kept it open to respectful visitors for over a decade, wooden barriers marking how close you may come."
+}

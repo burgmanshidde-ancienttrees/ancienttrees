@@ -1,0 +1,64 @@
+{
+  "city": "Le Guerno",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Le Guerno is a small Morbihan village built around the Parc animalier et botanique de Branféré, a zoo and botanical garden, and the plane tree at its centre is why some visitors come specifically. Planted roughly 300 years ago, its weeping branches sag to the ground, take root and grow back upward, so the tree has built itself a ring of living arches, the heaviest now resting on metal props. Officially classified a remarkable tree by the French forestry office, its trunk measures four and a half metres round.",
+  "meta_description": "The Weeping Plane of Branféré: a 300-year-old plane whose branches root and regrow, propped on metal crutches, in a Morbihan botanical park.",
+  "hero_tree_id": "brf_001",
+  "oldest_tree_id": "brf_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Le Guerno?",
+      "a": "The Weeping Plane of Branféré, inside the Parc animalier et botanique de Branféré, planted roughly 300 years ago."
+    },
+    {
+      "q": "Why do its branches touch the ground?",
+      "a": "It is a weeping oriental plane: the branches sag until they touch the ground, root where they land, and grow back upward, building the tree its own ring of arches. The heaviest limbs now rest on metal props."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No, it stands inside a paid zoo and botanical park, so a ticket and the park's opening hours sit between a visitor and the trunk."
+    },
+    {
+      "q": "How big is the tree?",
+      "a": "4.5 metres round, under a crown about 40 metres across."
+    }
+  ],
+  "trees": [
+    {
+      "name": "The Weeping Plane of Branféré",
+      "species": "Oriental Plane (Platanus orientalis), described in sources as \"platane pleureur d'Orient\" (weeping form)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 450,
+      "location": {
+        "address": "Parc animalier et botanique de Branféré, Kerouar, 56190 Le Guerno, Morbihan, France",
+        "latitude": 47.5957547,
+        "longitude": -2.3976637,
+        "neighbourhood": "Le Guerno"
+      },
+      "verified_sources": [
+        "https://krapooarboricole.wordpress.com/2008/12/05/platane-branfere-le-guerno-morbihan/",
+        "https://fr.wikipedia.org/wiki/Parc_animalier_et_botanique_de_Branf%C3%A9r%C3%A9",
+        "https://www.damgan-larochebernard-tourisme.com/jai-rencontre-le-platane-de-branfere/"
+      ],
+      "access": "Paid entry: the tree stands inside the Parc animalier et botanique de Branféré, a working zoo and botanical park in Le Guerno (Morbihan). A visitor needs a park ticket (adult and child pricing, seasonal hours per branfere.com; exact price not independently fetched so not quoted here) to reach it, which is the paid-entry case under hard rule 10, clearly stated rather than hidden.",
+      "transport": "Rural Morbihan, no rail; nearest towns are Muzillac and La Roche-Bernard, each a short drive away. A car is the realistic way to reach it; not walkable from a station.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "id": "brf_001",
+      "story": "The branches of this plane sag until they touch the ground, root where they land and grow back upward, so the tree has built itself a set of arches to stand in. The heaviest limbs have needed metal crutches under them all the same. The crown now spans about 40 metres and shades something like 700 square metres, which is an orchard's worth of cover from one trunk.\n\nIt is an oriental plane of the weeping form, put in during the 18th century and so roughly 300 years old, classified a remarkable tree by the French forestry office. The one figure worth a caveat is the trunk. The dendrologist who recorded it gives 4.50 metres circumference; a tourism account of visiting the tree calls 4.5 metres the diameter. A plane 4.5 metres thick would be extraordinary, 4.5 metres round is entirely ordinary at that age, and the circumference reading is the one taken here.\n\nThe tree stands inside the Parc animalier et botanique de Branfere, a zoo and botanical garden at Le Guerno, so a ticket and the park's opening hours sit between a visitor and the trunk. People go for it specifically regardless: the local tourist office publishes a piece that is simply somebody's account of setting out to find it. Photographs taken in August 2023 show it standing and in full leaf.",
+      "how_to_recognise": "You can recognise it by the weeping limbs that reach the ground, root there and grow back up, and by the metal props under the heaviest of them. It stands in the Branfere park at Le Guerno, under a crown about 40 metres across.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ],
+  "question_meta": "Le Guerno's one mapped tree is the Weeping Plane of Branféré, a 300-year-old plane in a paid botanical park.",
+  "question_answer": "Le Guerno's one mapped tree is the Weeping Plane of Branféré, inside the Parc animalier et botanique de Branféré, roughly 300 years old with a trunk 4.5 metres round and a crown about 40 metres across.",
+  "question_context": "This oriental plane grows in the weeping form: its branches sag until they touch the ground, root where they land, and grow back upward, so the tree has built itself a ring of self-supporting arches over three centuries. The heaviest limbs have needed metal props under them all the same. The French forestry office classifies it a remarkable tree, and the crown now shades something like 700 square metres, an orchard's worth of cover from one trunk. The one figure worth a caveat is the trunk itself: the dendrologist who recorded it gives 4.5 metres circumference, while a tourism account of visiting the tree calls the same 4.5 metres its diameter, which would be extraordinary for a plane this age; the circumference reading is the one used here. The tree stands inside the Parc animalier et botanique de Branféré, a zoo and botanical garden, so a ticket and the park's opening hours sit between a visitor and the trunk. People go for it specifically regardless: the local tourist office publishes a piece that is simply somebody's account of setting out to find it."
+}
