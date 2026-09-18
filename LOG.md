@@ -1,6 +1,71 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 6) - Nothing lives on the device that belongs to an account, and the rule is now a check on BOTH surfaces
+
+Hidde: "Stop saving stuff locally anywhere please make sure this happens
+nowhere always account related." The third time he has given this rule, on
+three different days (2026-08-27 "niks moet lokaal opgeslagen zijn",
+2026-09-02 "alles wat wordt opgeslagen moet op je account zijn", today). By
+this file's own ratchet the second time should have produced a check on both
+surfaces and it produced one: `qa.py` has refused an unlisted localStorage key
+on the WEBSITE since 2026-09-02, and nothing ever asked the APP the same
+question. So the fault went on living there, which is exactly what an audit
+found.
+
+**What the app was still keeping, and what happened to it:**
+
+| What | Was | Now |
+|---|---|---|
+| Every worth-it vote and report | three UserDefaults keys PER TREE, written from the account at launch and then read by the views as the truth | the views read `MyVotes`, which is the account's own answer, and nothing is written to the device |
+| Paywall interest (`entitlement.interest.v1`) | a set of features written to the device that nothing ever read | sent as an event; `Waitlist.join` already put the same fact in the database |
+
+The mirror was not harmless. **Nothing cleared those keys on sign-out**, so a
+signed-out phone went on showing the last person's votes, and a key written
+per tree cannot be enumerated, so it could not have been cleared even
+deliberately. `MyVotes.clearTheOldMirror()` sweeps them off phones that
+already carry them, unconditionally and idempotently, because a flag to track
+the removal of something from the device is one more thing stored on the
+device.
+
+**And it surfaced a bug that was invisible while the mirror existed:** the
+reader matched a vote with `why.contains("worth it")`, and "not worth it"
+contains "worth it", so the payoff screen's thumbs DOWN came back as a green
+thumbs UP on the tree page at the next launch. It could not be seen before
+because no control ever read that value back; it only ever wrote. Matched
+whole now, with a test.
+
+**The mechanism, and the first version of it was a mistake worth recording.**
+I wrote a new list and a new script for the app before noticing that
+`data/cross-device.json` and `scripts/crossdevice.py` have registered every
+store on BOTH surfaces since 2026-09-11, with a verdict on each. A second list
+answering nearly the same question is the duplication this corpus keeps
+recording under other names, so both were deleted unshipped.
+
+What the existing register was missing is the actual hole, and it is worth
+more than the list I nearly added: it asked whether anybody had RULED on a
+store and never whether the code OBEYED the ruling. `at_worthit_`, `at_wrong_`
+and `at_wrong_detail_` were all correctly ruled `account` in that file, all
+three were written to UserDefaults anyway, and the check was green the whole
+time.
+
+So `crossdevice.py` now asks an `account` store a second question, in a new
+`off` field: what takes this off a phone nobody is signed in to.
+"Nothing, because ..." is a legitimate answer and two stores give it (a units
+preference is how a screen reads, not somebody's data; a block should not
+lapse when a session expires). The point is the one conventioncheck.py makes:
+a script cannot judge the answer, only whether anybody was made to write one
+down. It fired on three real stores the moment it existed. `qa.py`'s web half
+now reads the same register instead of its own hard-coded set, so there is one
+register and no list can drift from another. Verified by planting a violation
+of each half and watching both fail, then removing them.
+
+The four retired keys are out of the register, and it now reads: 22 stores, 3
+account, 14 device, 5 not a store.
+
+Five tests in `VotesTests` hold it. The app half is judged by `ios.yml`, since
+there is no Xcode here.
+
 
 ## 2026-09-18 (session 5) - Answered "how are the collections doing", rebuilt the stalest one, put the whole page type on the meter
 
