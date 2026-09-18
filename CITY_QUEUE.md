@@ -210,7 +210,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 13 | Palermo | 39.95 | 124,310 | 21 | 9 | 1 | 37 | 20 | measured |
 | 14 | Seville | 51.30 | 170,545 | 43 | 9 | 2 | - | 20 | measured |
 | 15 | Berlin | 47.67 | 412,181 | 33 | 23 | 3 | 195 | 30 | measured |
-| 16 | Tokyo | 38.59 | 394,702 | 21 | 10 | 1 | 5 | 20 | measured |
+| 16 | Tokyo | 38.59 | 394,702 | 22 | 10 | 1 | 5 | 20 | measured |
 | 17 | Brisbane | 44.04 | 162,602 | 20 | 2 | 2 | 186 | 30 | measured |
 | 18 | Valencia | 32.01 | 162,209 | 31 | 4 | 2 | 350 | 30 | measured |
 | 19 | Los Angeles | 60.84 | 665,559 | 8 | 2 | - | - | 30 | measured |
@@ -349,7 +349,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 152 | Ann Arbor | 8.55 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 153 | Adelaide | 8.14 | 139,166 | - | - | - | - | 10 | predicted (travel demand) |
 | 154 | Luxembourg City | 5.45 | 64,851 | 10 | 5 | 2 | 18 | 20 | measured |
-| 155 | Yakushima | 4.99 | - | 1 | - | - | 1 | 20 | measured |
+| 155 | Yakushima | 4.99 | - | 2 | - | - | 1 | 20 | measured |
 | 156 | Albuquerque | 7.83 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 157 | Salzburg | 5.22 | 107,243 | 9 | 3 | 2 | 34 | 20 | measured |
 | 158 | Zurich | 7.49 | 140,788 | 6 | 1 | - | - | 20 | measured |

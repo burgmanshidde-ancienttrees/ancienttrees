@@ -4,14 +4,25 @@
     "name": "Shidare Katsura of Ryugen-ji",
     "species": "Katsura (Cercidiphyllum japonicum), weeping form",
     "age_estimate": "roughly 200 years",
-    "age_min": 190, "age_max": 220,
+    "age_min": 190,
+    "age_max": 220,
     "girth_cm": 350,
-    "location": {"address": "Ryugen-ji temple, Ohgayu, Morioka City, Iwate Prefecture", "latitude": 39.6134, "longitude": 141.2366, "neighbourhood": "Ohgayu, Morioka"},
-    "verified_sources": ["https://ja.wikipedia.org/wiki/%E7%80%A7%E6%BA%90%E5%AF%BA%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%82%AB%E3%83%84%E3%83%A9", "http://www.hitozato-kyoboku.com/ryuugenji-shidarekatsura.htm", "https://commons.wikimedia.org/wiki/File:Shidarekatsura2_Takigenji.jpg"],
+    "location": {
+      "address": "Ryugen-ji temple, Ohgayu, Morioka City, Iwate Prefecture",
+      "latitude": 39.6134,
+      "longitude": 141.2366,
+      "neighbourhood": "Ohgayu, Morioka"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E7%80%A7%E6%BA%90%E5%AF%BA%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%82%AB%E3%83%84%E3%83%A9",
+      "http://www.hitozato-kyoboku.com/ryuugenji-shidarekatsura.htm",
+      "https://commons.wikimedia.org/wiki/File:Shidarekatsura2_Takigenji.jpg"
+    ],
     "access": "Free, on temple grounds (behind the main hall, at the edge of the graveyard); Ryugen-ji is an ordinary working Soto Zen temple, grounds open, no gate or booking involved",
     "transport": "No station nearby; Ohgayu is a rural district outside central Morioka, reachable by car",
     "location_precision": "confirmed",
     "curation_status": "flagged",
-    "verify_notes": "A genuinely rare weeping-form variant of an ordinary katsura, which is why it and two clonal sister specimens elsewhere in Morioka (at 'Kado' and 'Sakanacho') were designated together as a single national Natural Monument (国指定天然記念物, simply named 'Shidarekatsura') on 9 December 1924 -- the designation covers three named individual trees, this one being at Ryugen-ji (瀧源寺, temple founded 1574, Soto Zen). History per the Morioka city board of education's own 1994 on-site sign (relayed on both ja.wikipedia and hitozato-kyoboku.com): the original weeping katsura was found wild in the mountains of Uchikawame, Ohasako (now part of Hanamaki), roughly 400 years ago, first transplanted to Myosen-ji temple, then moved again to Ryugen-ji by its founding priest. That original trunk grew to over 30m before being felled in 1824 (Bunsei 7) for timber to repair the main hall; the tree standing today grew from a sucker off the old stump, which is why its age (roughly 180 years per the 1994 signage, so by calculation nearer 200-215 years now in 2026) is much younger than the tree's own documented history. Height ~21m, girth (目通り幹囲, measured at breast height) ~3.5m/350cm per the same 1994 sign -- note this single physical measurement is what both Wikipedia and hitozato-kyoboku.com repeat, so treat it as one underlying data point cited twice rather than two separate measurements, though the tree's existence, species, location and designation are corroborated independently by the Commons photograph (Ty19080914, 4 May 2018, CC BY-SA 4.0, directly captioned 'Shidare Katsura of Takigenji'), which also confirms it was alive and in leaf in 2018. Exact coordinates (39.6134, 141.2366) come from hitozato-kyoboku.com's own stated lat/long, given to within a second of arc, matching a temple compound so treated as confirmed. A sister tree at 'Kado' in Morioka (22m, girth 3.3m, ~140 years, also 1924-designated) is shown in the second Commons photo for this candidate (File:Shidarekatsura_Kado.jpg) but I could not find its exact address within this pass's time budget -- flagging it in my report as a separate lead worth a short follow-up rather than pinning it speculatively here."
+    "story": "The tree standing here exists because the one before it was cut up for the roof. By 1824 the old weeping katsura at Ryugen-ji had passed thirty metres, and the temple felled it for timber to repair the main hall. A sucker came up off the stump. That sucker is what you walk to now, about twenty-one metres tall and 3.5 metres round at chest height, and the two centuries it has been growing are the shortest part of its story.\n\nThe rest runs backwards. A weeping katsura, a rare variant of an otherwise ordinary species, was found growing wild in the mountains of Uchikawame roughly four hundred years ago. It was moved first to Myosen-ji, then moved again to Ryugen-ji by the priest who founded the temple in 1574. In 1924 Japan designated it a national Natural Monument together with two clonal sisters elsewhere in Morioka, all three counted as one monument under one name.\n\nOne thing to know about the numbers. The height and girth above come from a Morioka board of education sign put up in 1994, and every later source quotes that sign. It is one measurement repeated, not two that agree. A photograph from May 2018 shows the tree alive and in full leaf.\n\nIt grows behind the main hall at the edge of the graveyard, on the grounds of a working Soto Zen temple. No gate, no fee, and no station: Ohgayu is rural, and you arrive by car.",
+    "how_to_recognise": "You can recognise it by the weeping habit, branches hanging where an ordinary katsura's would spread, about twenty-one metres tall and 3.5 metres round. It stands behind the temple's main hall, at the edge of the graveyard."
   }
 ]

@@ -18,6 +18,60 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 (continuation 2) - Finished the standing `_famous-japan` write claim: 4 trees join existing cities, 3 new single-tree places, 4 more duplicates found and folded into leads
+
+An earlier attempt this window stopped after 11 minutes having shipped
+nothing, with a `_famous-japan` verify claim already standing from a prior
+run. Picked that claim up rather than starting fresh research: 4 verified
+batch files (`_famous-japan-batch-{a,b,c,d}-verified.json`, 17 candidates
+total) were sitting on disk with no story pass ever dispatched.
+
+**Before dispatching a write pass, a distance sweep against the full
+published set (not just each candidate's likely container city) found 7
+more duplicates than the original verify pass caught**, all on approximate
+pins 12m to 22.7km from a match, which is why they slipped past a
+50m-only check: The Great Ginkgo of Jonichiji = `him_002` (Himi), The Great
+Camphor of Kozaki = `kzk_001` (Kozaki), The Great Zelkova Pair of Negoya
+Shrine = `hok_004` (Hokuto), Nento-Hiramatsu = `ihy_001` (Iheya),
+Sentsuzan no Ichii = `ntt_001` (Nichinan, Tottori), The Umbrella Cedar of
+Horaiji = `hrj_001` "Kasa sugi" (Horaiji, same Japanese word for umbrella
+cedar), Nezu no ki of Horaiji = `hrj_002` (same name, same city), and The
+Great Cherry Tree of Isshingyo = `msa_001` Isshingyo-no-Ozakura (Minamiaso,
+same story down to the 2004 typhoon damage and the spring 2026 closure).
+All 8 folded into `data/leads/_famous-japan.json` as duplicates. 2 more
+real, sourced trees (Mineyama Jinya Enoki, Sawatari no Kaya no Ki) were
+held as leads rather than published alone: both carry only local/town-level
+recognition with no festival, pilgrimage or record-holder claim, so neither
+clearly clears the single-tree-destination bar.
+
+That left 7 genuinely new trees for a write pass (dispatched to
+write-stories, ~46k tokens, 0 wasted): **Daio-sugi** joined Yakushima as
+`yak_002` (the island's second-largest yakusugi, on the Jomon Sugi trail),
+**The Camphor Tree of Hongo Yumicho** joined Tokyo as `tok_022` (Bunkyo
+Ward's largest tree, on an ordinary street), **The Weeping Cherry of
+Kega-kuyoto** joined Iida as `iid_002` (2.85km from the existing Yasutomi
+Cherry), and **Shidare Katsura of Ryugen-ji** joined Morioka as `mor_002`
+(12km out, a National Natural Monument regrown from an 1824 stump). Three
+became new single-tree places under the 2026-08-31 exception: **Gifu**
+(`gif_001`, Chujohime Seigan Zakura, the only known specimen of a rare
+double-flowered cherry cultivar, seeds once flown to the ISS), **Ibigawa**
+(`ibg_001`, Ibi Nido-zakura, a two-stage-flowering cherry regrown twice
+after an 1833 storm and a 1934 death), and **Chikubushima** (`chk_001`,
+The Mochi Tree of Hogon-ji, planted 1602 beside a National Treasure gate
+moved from Hideyoshi's Osaka Castle, reached only by scheduled ferry).
+
+Updated the 4 grown cities' intro/meta/FAQ/question fields to stop
+promising one tree where there are now two (Iida, Morioka) and fixed 2
+species-name drift issues preflight caught (a verify pass's "Japanese Cedar
+/ Yakusugi" and "Weeping Cherry" needed folding into this site's one
+canonical name per species, "Japanese Cedar" and "Cherry"). Two new ja
+overlays (tokyo, yakushima) needed the new trees translated to keep the
+build green; dispatched to a translate pass.
+
+Logged the write-stories cost to `data/agent-costs.json`. Ran
+`scripts/city_names.py` for the 3 new places, `scripts/city_queue.py` to
+regenerate `data/city-list.json`, and `scripts/preflight.py` /
+`scripts/superlatives.py` clean beyond the translation gap.
 ## 2026-09-18 - Slovakia's 9 cold famous-tree leads verified; 3 held famouspoland trees given a container decision
 
 Claimed and verified `_famous-slovakia`'s 9 leads that had never been looked

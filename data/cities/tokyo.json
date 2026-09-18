@@ -807,6 +807,38 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "tok_022",
+      "name": "The Camphor Tree of Hongo Yumicho",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 600 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 845,
+      "location": {
+        "address": "1-28-32 Hongo, Bunkyo-ku, Tokyo",
+        "latitude": 35.706556,
+        "longitude": 139.757278,
+        "neighbourhood": "Hongo, Bunkyo, Tokyo"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E6%9C%AC%E9%83%B7%E5%BC%93%E7%94%BA%E3%81%AE%E3%82%AF%E3%82%B9",
+        "https://b-kanko.jp/spot/226",
+        "https://commons.wikimedia.org/wiki/File:Camphor_tree_in_Hong%C5%8D,_Tokyo_201504_01.jpg"
+      ],
+      "access": "Free, stands beside a narrow public road in a dense residential/office block in Hongo; visible and reachable on foot from the street, no parking on site so walking from the station is recommended",
+      "transport": "5-10 min walk from Hongo-sanchome Station (Tokyo Metro Marunouchi / Toei Oedo lines), or 6 min from Kasuga Station (Toei Oedo / Mita lines)",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The biggest tree in Bunkyo Ward is not in a park. It stands on a narrow street in Hongo, houses and offices tight against it and restaurants across the road: a camphor twenty metres tall with a trunk between 8.4 and 8.5 metres round, depending on which of its two record-keepers you ask. Japanese Wikipedia gives the lower figure, the Bunkyo Tourism Association the higher, and ten centimetres is about what a tape does on a trunk that shape.\n\nBoth put it at roughly 600 years, an estimate rather than a planting date. Take it at face value and the tree was already mature before the Tokugawa shoguns made Edo their capital in 1603, and it has watched the block around it be rebuilt more times than anyone has counted.\n\nThe names here rhyme in a way nobody arranged. The district was once Goyumi-cho, named for the shogunal archery corps quartered in it, which is why the tree is called the old camphor of Yumicho. The ground later held the residence of the Kaisho family, said to descend from the medieval warrior Kusunoki Masashige, whose name means camphor.\n\nShiba Ryotaro wrote it into his travel serial Kaido wo Yuku in the early 1990s. Bunkyo Ward lists it as a protected tree, a municipal designation rather than a national one. There is no gate, no fee and nowhere to park: you walk up from Hongo-sanchome and it is simply there, in the way.",
+      "how_to_recognise": "You can recognise it by the trunk, about 8.4 metres round and twenty metres tall, easily the largest tree in Bunkyo Ward. It stands directly beside a narrow Hongo street, restaurants opposite, with no park or garden around it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "tok_001"
