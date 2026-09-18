@@ -9,6 +9,8 @@
 //     equivalent of build_site.py's ERRORS.append(), which collected and
 //     reported at the very end of the build instead).
 import { STYLE_HREF } from "../lib/asset-hash";
+import SignInModal from "../components/SignInModal.astro";
+import { SIGNIN_JS } from "../lib/signin-js";
 import { UNITS_JS } from "../lib/units-js";
 import LanguagePicker from "../components/LanguagePicker.astro";
 import { toEnglishPath } from "../lib/i18n";
@@ -406,5 +408,16 @@ document.addEventListener('click', function(e) {
     OUTSIDE the analytics block above, which is what the first version got
     wrong: it would have shipped only where a Cloudflare token is set. */}
 <Fragment set:html={UNITS_JS} />
+{/* THE SIGN-IN SHEET, on every page, for the reason the comment above gives
+    about units: a component every page has to remember to include is one a
+    page will forget. It had been included by hand in twelve places and so it
+    existed on 58 percent of the site, which is why signing in from the nav
+    had to NAVIGATE to /account instead of opening where you stand.
+
+    Hidde, 2026-09-18: "hij moet zich vertonen over de pagina waar je bent
+    zodat je terug kan naar waar je was." That is only true if the sheet is
+    everywhere, so it lives here now and nowhere else. */}
+<SignInModal lang={lang} />
+<Fragment set:html={SIGNIN_JS} />
 </body>
 </html>

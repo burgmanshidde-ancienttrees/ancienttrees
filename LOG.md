@@ -1,6 +1,151 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session 2) - New city: Higashi-Hiroshima (17 trees), 2 photos approved, 3 Slovak leads held, a city_names.py bug fixed
+
+visitors.py: 662 visits, 877 page views over 7 days (last full day 128/189,
+today only 12/16 so far). prepare.py said REFILL THE SHELF FIRST, no write
+pass was ready, so this run's first dispatch was two verify passes rather
+than a write pass, per the ladder.
+
+**Verify pass 1: 9 never-looked-at `_famous-slovakia` leads.** 3 verified
+(Kosice White Poplar, Sala Lime, Radava's 9-lime cemetery ensemble), none
+clearing the four-tree floor or the single-tree destination test alone, so
+all three landed as leads (`data/leads/kosice.json`, `sala.json`,
+`radava.json`) with full written stories preserved for whenever a container
+opens. 2 turned out already published, 4 rejected (a discontinued reserve,
+a 24-tree avenue, two thin civic plantings). Fixed an id collision in the
+delivery file before it went near data/cities (see CURATION.md for detail).
+
+**Verify pass 2 (the bigger one): `data/leads/higashi-hiroshima.json`, 32
+register leads split out of Hiroshima prefecture's giant-tree database on
+2026-09-07 and never mined.** 17 verified across shrine/temple clusters
+(Fukujo-ji, Uneyama Shrine, Hongu Hachiman, a Fukutomi pair, plus two
+standalone finds), then written (20 stories in one write pass alongside
+the 3 Slovak trees) and published as a new city, **Higashi-Hiroshima,
+Japan**, hero and oldest tree the Great Ginkgo of Renko-ji (roughly 400
+years, 2 minutes from a JR station). The city spans 30km and reads
+honestly as three separate outings rather than one walk: a temple trio
+above Saijo, a nine-tree afternoon around Toyosaka (car needed, one grove
+pin still only oaza-level), and the standalone coastal ginkgo. Also held
+3 already-written famouspoland-batch4 trees (Madej/Pietrek Oak, Jeremi
+Oak) as leads rather than pages, per the destination test.
+
+**Also weighed a photo shortlist**, demand-ranked (`photo_gaps.py
+--shortlist`): 40 candidates across Milan/Barcelona/Tenerife/Singapore/
+Berlin/Arnhem, 2 approved (both Tenerife: `tfe_003` Pino de las Dos
+Pernadas, `tfe_004` El Gran Ficus), 38 rejected. Heavy filename-false-
+positive rate worth flagging for anyone reading photo_hunt's queue by eye:
+mushroom-infestation photos misfiled under a chestnut's address, building
+facades and a cathedral spire matched by street name, and three Berlin
+Naturdenkmal photos of the wrong species at the same address.
+
+**Found and fixed a real bug in `scripts/city_names.py`.** Its Wikipedia
+resolver has no title-similarity check on its search-fallback branch, only
+a distance check, and Higashi-Hiroshima (whose actual English Wikipedia
+title, "Higashihiroshima", drops the hyphen our own romanisation uses)
+fell through to that fallback and got matched to plain "Hiroshima", a
+different, more famous city 25km away, writing Hiroshima's own language
+aliases into Higashi-Hiroshima's entry. Fixed by trying a dehyphenated,
+correctly-cased title as a direct candidate before ever reaching the fuzzy
+fallback (safe and additive, cannot change any city that already resolves
+correctly). Re-ran for higashi-hiroshima and confirmed correct.
+
+**The underlying fallback bug is real and not limited to this one city.**
+A quick audit of all 573 resolved `wikipedia_titles` for title/slug
+overlap turned up at least two more confirmed wrong matches from the same
+loose fallback: `minamialps` -> "Akaishi Mountains" (a mountain range,
+not the city) and `velp` -> "Arnhem Centraal railway station" (Velp's own
+article is a disambiguation page, so it fell through to search, which
+found a nearby railway station instead of a place). Left as found rather
+than patched blind: fixing these needs the same per-case checking Kosice's
+own near-miss ("Kotel" -> "Osecna", which turned out to be a correct
+village-to-parent-municipality match) required, which is a dedicated pass
+rather than a side effect of tonight's work. Recorded here so it is not
+rediscovered from zero.
+
+Build (11903 pages), preflight and qa clean throughout; caught and fixed
+two hard rule 9 species-name collisions (Chamaecyparis obtusa, Thujopsis
+dolabrata) and a meta_description tree-count mismatch before they reached
+the build gate. Full detail in CURATION.md.
+
+## 2026-09-18 (session) - iOS build fix, refilled the famous-trees shelf, 5 new French places, one species page
+
+visitors.py: 656 visits, 870 page views over 7 days. prepare.py: 48 cities
+staged for verify (untouched), 6 trees "awaiting a writer" that turned out to
+all be correctly held for container reasons (2 already-held single trees, and
+3 of the famouspoland-batch4 trees + 1 China lead all blocked on a container
+decision), REFILL THE SHELF FIRST on the famous-trees leads pile.
+
+**Rung 2 first: health.py showed ios.yml red since 00:32 UTC.** ContentView.swift
+called `TreeDetail(tree: t, myPhoto: sightings.forTree(t.id), ...)` at two call
+sites; TreeDetail had never gained a `myPhoto` parameter, so the app has not
+compiled since that landed. The feature the comment described (a reader's own
+photograph filling the hero slot when a tree has none) was already correctly
+built via `Sightings.ofTree` and TreeDetail's own `yourShots`/`heroOwnShot`,
+reading the `sightings` environment object directly; the `myPhoto` argument was
+a second, half-finished attempt at the same fix that broke the build instead of
+completing it. Removed the redundant argument from both call sites and the
+now-unused `Sightings.forTree`. Fixed and pushed as its own commit.
+
+**Then refilled the shelf per prepare.py's instruction: a verify pass on
+_famous-france's 17 remaining unsourced leads**, dispatched as 5 parallel
+verify agents (grouped to respect the 4-candidates-per-pass exposure rule, one
+group kept together because all 4 stood in the same two forest clusters).
+Result: 9 verified, 4 blocked (2 confirmed dead, 1 not a real living-tree
+candidate, 1 access-blocked private château grounds, reasons recorded in
+`data/leads/_famous-france.json`), 4 still leads needing a modern source.
+
+**5 of the 9 verified pass the single-famous-tree destination test and shipped
+as new places**, each judged against the Fontenay/Jeremi Oak precedent (a
+tree that is merely a nice feature of an already-famous site does not pass;
+a tree people specifically travel to, or that carries the department's only
+protection order, or a record-scale claim, does):
+- `bulat-pestivien`: Le Chêne de Tronjoly (Ar Ven Der), possibly the thickest
+  oak trunk in continental Europe (~12m round), a documented hermit legend.
+- `fontaine-belfort`: the Turenne Lime, the ONLY classified tree in the whole
+  Territoire de Belfort, 700+ years, where Marshal de Turenne took his
+  officers' reports in 1674 (the lead's brief wrongly assumed the village of
+  Turenne in Corrèze, 500km away; corrected during verification).
+- `innimond`: the Sully Lime, a nationally labelled Remarkable Tree of France
+  with a living annual Fête-Dieu tradition.
+- `crecy-en-ponthieu`: Le Chêne des Ramolleux, the largest oak in the Forêt de
+  Crécy, on a signed 20+ tree veteran-oak trail, legendary tie to the 1346
+  battle (age disputed and both readings kept rather than picked).
+- `le-guerno`: the Weeping Plane of Branféré, a self-layering propped plane
+  inside a paid zoo/botanical park, judged to pass because it is independently
+  sought out (a tourism piece is literally a visitor's account of finding it),
+  unlike Fontenay's plane.
+
+Verify pass -> write-stories pass (Opus, 5 trees, stories + recognition lines)
+-> session wrote the Contract A/B/C fields (intro, meta_description, FAQ,
+question_answer/context even though a 1-tree place gets no question page,
+per preflight's forward-looking rule) -> preflight clean -> build -> qa.py
+clean -> merged origin/main (63 files of unrelated concurrent work, no
+conflicts) -> rebuilt, qa.py clean again -> pushed.
+
+**4 more verified but held below the 4-tree floor**: two forest clusters,
+Senonches (Chêne Fauteuil + Les Trois Frères, ~2.5km apart) and Réno-Valdieu
+(Chêne de la Forestry Commission + Chêne d'Oxford, <1km apart), ~28-30km apart
+from each other so not one cluster. Both forests' own sources name 2 more
+named veteran trees each that a future pass could research to clear the
+floor; kept as full verified facts in `data/research/famousfrance-verified.json`
+rather than published, noted in the leads file.
+
+**Also closed pagegaps.py's one open species gap**: `data/species/ryukyu-pine.json`,
+written from the 3 trees that already carry the species (Iheya, Taipei,
+Kagoshima).
+
+Ran `python3 scripts/tree_index.py` and `python3 scripts/city_names.py`
+(resolved local names for 4 of the 5 new places; Fontaine's name is too
+ambiguous on Wikipedia to resolve automatically, left unresolved rather than
+guessed) after the new places landed.
+
+Git push hit an expired embedded token partway through (`git remote`'s
+`ghs_...` had aged out mid-session); `DEFAULT_WORKFLOW_TOKEN` from the
+environment was a live token for the same repo and re-authenticated the
+push without needing anything from Hidde.
+
 ## 2026-09-18 (session) - The photo shortlist aims at demand, and langcheck stops pointing at its weakest language
 
 Hidde, on being told two of the three leftover pieces were still unlanded:
@@ -239,6 +384,56 @@ the real run list fed in directly.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 (session) - The sign-in sheet is everywhere now, and it can be swiped away
+
+Hidde: "de slider op het inlog scherm suggereert dat je het weg kan sliden.
+dat moet kunnen. daarnaast moet hij zich vertonen over de pagina waar je bent
+zodat je terug kan naar waar je was."
+
+Both complaints had one cause. The sheet was included by hand in twelve files,
+so it existed on 58 percent of the site, and the nav therefore had to NAVIGATE
+to /account to sign anybody in. What he saw there was the MAP page's bottom
+sheet, whose handle drags between detents and can never dismiss.
+
+- SignInModal and SIGNIN_JS moved into Base.astro, out of the twelve places
+  that each had to remember them. That is the lesson already written at the
+  foot of that file about the units script.
+- Signed out, the nav's account links open the sheet where you stand. Signed
+  in they still go to /account, which is then a real page with your trees.
+- The sheet has a drag handle and drag-to-dismiss on phone widths. Convention
+  rather than invention: Material 3 settles a modal bottom sheet to a detent
+  or to hidden, and Apple's sheets take the same gesture.
+
+**And it nearly shipped completely dead.** A regex written into a TypeScript
+template literal lost a backslash on the way out, so the page carried
+replace(//+$/, ''). A browser refuses the WHOLE script tag on a parse error,
+so the entire sign-in script was gone on 11,836 pages: no atOpenSignIn, no
+save funnel, no magic-link catcher. Build, qa, preflight, parity, cross and
+smoke were all green, because a dropped script is silent and the page renders
+perfectly without it. It was found by trying the gesture in a browser.
+
+The eighth ratchet check answers it: scripts/inline_scripts.js compiles every
+inline script in the build with node's vm without running any of it, 158,073
+scripts on 15,687 pages in 24 seconds, so every page is checked rather than a
+sample. A first attempt spawned node per page, took seven minutes and still
+only sampled; thrown away. Proven to fire on the live fault before trusting
+it.
+
+Two more found by measuring rather than reading:
+
+- The handle was invisible on the only width that has one. The base rule sat
+  below the media query at equal specificity, so display:none won everywhere.
+  Third time a plain cascade order has cost a visible fault here. Old order
+  measures 0px, new order 38px.
+- The smoke test's sheet harness selected .signin-dialog by CLASS, which
+  AppModal wears too. Once the sheet moved to the end of body that returned
+  the app dialog, closed, so the check reported zero buttons. By id now.
+
+Measured at 375, 402 and 1200: handle shown on phones and absent on desktop,
+follows the finger, closes on release, springs back from a nudge, transform
+cleared for the next open, and the nav opens in place at every width. qa
+15,687 pages, preflight 0 problems, parity, cross and smoke clean. Merged and
+pushed to main.
 ## 2026-09-18 (session) - Swept every page type for the footer's fault and found none, and the English check stops crying wolf
 
 Hidde: "Alles live kunnen we archiveren nog meer van dit soort foutjes op de

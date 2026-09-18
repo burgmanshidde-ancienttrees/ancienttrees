@@ -1,0 +1,17 @@
+{
+  "city": "Sosnowiec",
+  "country": "Poland",
+  "city_slug": "sosnowiec",
+  "note": "Sosnowiec has no published city page. Single candidate from a 2026-09-18 verify pass on data/leads/_famous-poland.json's 'Pinus peuce, Bursztynowa Dama in Sosnowiec' lead. Kept here rather than in the famous-poland file because it names a place. Not enough on its own to ship (one tree, no confirmed coordinate) and no obvious cluster found yet.",
+  "leads": [
+    {
+      "name": "Bursztynowa Dama (The Amber Lady)",
+      "species": "Balkan Pine (Pinus peuce)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Officially designated a nature monument by Sosnowiec city council on 2022-01-28 (city's own news post, sosnowiec.pl, 'Nowe pomniki przyrody'), which calls it probably the only conifer of this species in the whole Silesian voivodeship holding monument status. Stands in Park Dietla (locally 'Park Zeromskiego'), a palace-and-park estate founded in 1901 by wool-mill owner Heinrich Dietel, beside a small pond ('przy oczku wodnym' per the city's post). A dedicated local-nature blog (przyrodadlasosnowca.wordpress.com, 'Bursztynowa Dama - rumelijska piekno w stolicy Zaglebia') independently corroborates the species, site and history in far more detail: gardener Robert Pietsch, brought to Sosnowiec in 1890 to lay out Dietel's grounds, travelled to Denmark, Sweden, Bremen, Berlin and Helgoland from 1908, and the blog's author speculates he brought back a Rumelian pine seedling from one of those trips, which would put the tree at up to 119 years old as of the post (dated 2020, so roughly 125 by 2026). That age is the AUTHOR'S OWN speculation tied to the mansion's completion date, not a measured or sourced fact, and should not be repeated as more than a guess if this is ever written. No girth or height found in either source. No coordinate confirmed either; Park Dietla / Park Zeromskiego would need a location fix before this could ship even as a single-tree exception. NOT attempted: the destination test. A locally rare, city-designated specimen in a historic palace park is a real story but not obviously a reason to travel on its own; better judged once Sosnowiec has other candidates to weigh it against. Two independent sources (city government + local nature blog) already satisfy the sourcing bar; what is missing is the coordinate and, if this is ever the only tree Sosnowiec has, a destination-test judgement."
+    }
+  ],
+  "blocked": []
+}

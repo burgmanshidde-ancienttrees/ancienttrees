@@ -1,0 +1,37 @@
+{
+  "place": "Radava",
+  "country": "Slovakia",
+  "place_slug": "radava",
+  "note": "A small rural village, Nove Zamky district, with no published place nearby. Verified 2026-09-18 from a famous-slovakia verify pass, only one genuinely fetched source, and the reported measurements are unconfirmed. Full verified record in data/research/famous-slovakia-batch1-verified.json.",
+  "leads": [
+    {
+      "name": "The Lindens of Radava",
+      "species": "Small-leaved Lime (Tilia cordata), an ensemble of 9 trees",
+      "lat": 48.1,
+      "lng": 18.3,
+      "status": "lead",
+      "why": "Nine small-leaved limes growing together in Radava's village cemetery, treated as one collectible point (a compact ensemble with one obvious place to stand, not nine separate entries). Confirmed to exist via sk.wikipedia's national protected-trees list (entry S430, cadastral territory recorded as neighbouring Hul, which shares a joint territorial plan with Radava; every other source places the trees in Radava's own cemetery). That is the ONLY genuinely fetched source: this project's own Slovak register import does not contain the entry despite covering 1199 other trees nationally (a gap worth flagging), and the village's own site (radava.sk) 404'd on both pages tried, apparently restructured. Multiple WebSearch summaries (not independently fetched, so not treated as sources) repeat: over a quarter-millennium old, girths 210-400cm, heights 6-21m, protected since 30 June 1993, pruned in 2018 at municipal expense. Location is village-level only (approximate); the cemetery's own pin still needs finding, likely via an OSM graveyard node. Left as a lead: one source, unconfirmed figures, and no published place nearby to fold it into.",
+      "id": "rdv_001",
+      "age_estimate": "over 250 years (reported; see caveat)",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Village cemetery, Radava, Nové Zámky district (cadastral territory of neighbouring Hul)",
+        "latitude": 48.1,
+        "longitude": 18.3,
+        "neighbourhood": "Radava"
+      },
+      "verified_sources": [
+        "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku (entry S 430, 'Lipy pri Radave', Tilia cordata Mill., Nitriansky region, Nove Zamky district, cadastral Hul)"
+      ],
+      "access": "Free, likely - a village cemetery is normally open during daylight hours, but this was not independently confirmed for Radava specifically.",
+      "transport": "Radava village, Nové Zámky district; no rail station, no confirmed bus stop distance. Reached by car; a rural village not near any published city.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Nine small-leaved limes stand over the graves in Radava, and the state files them under the next village along. Slovakia's list of protected trees carries them as entry S 430, in the cadastral territory of Hul, which is what happens when two villages share one territorial plan; the trees are in Radava's own cemetery, where everyone local knows exactly where they are. They were protected in 1993 by a decision of the environmental office in Nové Zámky. Accounts of them agree on the shape of the group: girths from roughly two to four metres, heights from six to twenty-one, and an age given as over a quarter of a millennium. Those numbers come from secondary accounts rather than any page that could be fetched and checked, so read them as reported rather than measured. The municipality paid for professional pruning in 2018, which is a small village spending its own money on nine old trees in a graveyard and tells you what they are worth locally. Lime is the classic tree of a central European churchyard, planted for shade over the dead and for the flowers, and nine of them in bloom over one small cemetery in late June is the reason to time the visit. The pin is the village rather than the gate; the cemetery is easy enough to find once you are there.",
+      "how_to_recognise": "You can recognise them by the number. Nine small-leaved limes stand together over Radava's village cemetery, their trunks reported at two to four metres round and their heights from six to twenty-one metres."
+    }
+  ],
+  "blocked": []
+}

@@ -9,8 +9,6 @@ import { fitTitle } from "../lib/title";
 import { submitLink } from "../lib/tree-copy";
 import { byCityListOrder } from "../lib/city-order";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
-import SignInModal from "../components/SignInModal.astro";
-import { SIGNIN_JS } from "../lib/signin-js";
 
 const canonical = `${BASE_URL}/contribute`;
 const title = fitTitle(["Become Your City's Tree Guide", "Map Your City's Ancient Trees"], canonical);
@@ -86,7 +84,6 @@ const headExtra = ldScript(graph);
     <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
   ))}</p>
 </main>
-<SignInModal />
 <Fragment slot="scripts" set:html={`
 <script>
 (function() {
@@ -202,6 +199,5 @@ const headExtra = ldScript(graph);
   });
 })();
 </script>
-${SIGNIN_JS}
 `} />
 </Base>

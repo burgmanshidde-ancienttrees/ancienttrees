@@ -205,7 +205,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 8 | Rome | 54.93 | 358,876 | 31 | 10 | 2 | 32 | 30 | measured |
 | 9 | Florence | 46.99 | 184,099 | 27 | 9 | 1 | 27 | 30 | measured |
 | 10 | Arnhem | 44.04 | 31,478 | 39 | 3 | 3 | 204 | 20 | measured |
-| 11 | Tenerife | 57.43 | - | 4 | 2 | - | - | 20 | measured |
+| 11 | Tenerife | 57.43 | - | 4 | 4 | - | - | 20 | measured |
 | 12 | Singapore | 56.75 | 967,821 | 34 | 6 | 3 | 165 | 30 | measured |
 | 13 | Palermo | 39.95 | 124,310 | 21 | 9 | 1 | 37 | 20 | measured |
 | 14 | Seville | 51.30 | 170,545 | 43 | 9 | 2 | - | 20 | measured |
@@ -275,7 +275,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 78 | Nice | 17.93 | 136,877 | 10 | 6 | 2 | - | 30 | measured |
 | 79 | Daytona Beach | 17.66 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 80 | Madrid | 10.90 | 274,553 | 17 | 11 | 2 | - | 20 | measured |
-| 81 | Hoorn | 8.63 | - | 8 | - | 1 | 52 | 20 | measured |
+| 81 | Hoorn | 8.63 | - | 12 | - | 2 | 52 | 20 | measured |
 | 82 | Monterey | 17.25 | - | 3 | 1 | - | - | 20 | measured |
 | 83 | Chicago | 16.80 | 485,769 | 6 | - | - | - | 30 | measured |
 | 84 | Tilburg | 8.40 | - | 20 | - | 3 | 87 | 20 | measured |
@@ -411,7 +411,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 214 | Hilversum | 2.27 | - | 6 | 1 | 1 | 122 | 20 | measured |
 | 215 | Maastricht | 2.27 | 47,763 | 19 | - | 2 | 135 | 20 | measured |
 | 216 | Naples | 2.27 | 198,913 | 24 | 3 | 3 | 46 | 20 | measured |
-| 217 | Pisa | 2.95 | 52,174 | 4 | - | 1 | - | 20 | measured |
+| 217 | Pisa | 2.95 | 52,174 | 4 | - | - | - | 20 | measured |
 | 218 | Split | 4.54 | 132,399 | 4 | - | 1 | - | 20 | measured |
 | 219 | Dresden | 2.95 | 113,624 | 5 | 5 | 1 | - | 20 | measured |
 | 220 | Tasmania | 4.41 | - | - | - | - | - | 10 | predicted (travel demand) |
@@ -472,13 +472,13 @@ so qa.py fails the deploy when the table and the json disagree.
 | 275 | Liverpool | 2.95 | 248,189 | 2 | 1 | - | - | 20 | measured |
 | 276 | Riga | 2.72 | 108,918 | 5 | 2 | - | - | 20 | measured |
 | 277 | Inverness | 2.76 | 92,195 | - | - | - | - | 10 | predicted (travel demand) |
-| 278 | Hiroshima | 1.82 | 129,791 | 17 | 5 | 3 | - | 20 | measured |
+| 278 | Hiroshima | 1.82 | 129,791 | 17 | 5 | 2 | - | 20 | measured |
 | 279 | Toulouse | 1.82 | 112,721 | 10 | - | 1 | 34 | 20 | measured |
 | 280 | Bergamo | 1.36 | 52,933 | 8 | 1 | 1 | 17 | 20 | measured |
 | 281 | Bled | 2.72 | 13,126 | - | - | - | - | 10 | predicted (travel demand) |
 | 282 | Lucca | 1.36 | 52,271 | 14 | 3 | 1 | 27 | 20 | measured |
 | 283 | Thessaloniki | 2.72 | 180,145 | 4 | - | 1 | - | 20 | measured |
-| 284 | Trieste | 1.36 | 117,233 | 10 | 1 | 2 | 43 | 20 | measured |
+| 284 | Trieste | 1.36 | 117,233 | 14 | 1 | 2 | 45 | 20 | measured |
 | 285 | Venlo | 1.36 | - | 7 | - | 1 | 144 | 20 | measured |
 | 286 | York | 2.72 | 118,066 | 6 | 2 | 1 | - | 20 | measured |
 | 287 | Corfu | 2.71 | 139,334 | - | - | - | - | 10 | predicted (travel demand) |

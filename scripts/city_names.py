@@ -165,7 +165,19 @@ def search_title(city, country):
 def resolve(city, country, here):
     """The article our trees actually stand in, or a reason it is unresolved."""
     tried = []
-    for title in [city, "%s, %s" % (city, country)]:
+    candidates = [city, "%s, %s" % (city, country)]
+    # Wikipedia's Japanese-city convention drops the hyphen our own romanised
+    # names carry (Higashihiroshima, not Higashi-Hiroshima). Without this, the
+    # direct lookup 404s and resolve() fell through to the fuzzy search
+    # fallback below, which accepts the nearest article within MAX_KM by
+    # COORDINATE ALONE with no title check: it matched Higashi-Hiroshima to
+    # plain "Hiroshima", a different city 25km away, and wrote Hiroshima's own
+    # language aliases into Higashi-Hiroshima's entry. Found and fixed
+    # 2026-09-18. Tried before the search fallback so a real title match still
+    # wins on its own coordinates rather than borrowing a neighbour's.
+    if "-" in city:
+        candidates.append(city[0] + city[1:].replace("-", "").lower())
+    for title in candidates:
         art = fetch_article(title)
         tried.append(title)
         if art and art["coord"]:

@@ -21,9 +21,13 @@ Exit 1 on any failure, so CI fails the deploy. Run: python3 scripts/qa.py
 """
 import argparse
 import json
+import os
 import re
+import shutil
 import struct
+import subprocess
 import sys
+import tempfile
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -1168,6 +1172,43 @@ def check_faces_travel_to_the_app():
     return out
 
 
+def check_inline_scripts_parse():
+    """Every inline script in the built pages must actually parse.
+
+    Written 2026-09-18, after the whole sign-in script was dead on every page
+    of the site and not one gate said so. A regex written into a TypeScript
+    template literal lost a backslash on its way out, so the emitted file
+    carried `replace(//+$/, '')`, the browser refused the entire <script>, and
+    with it went atOpenSignIn, the save heart's funnel, the drag-to-dismiss and
+    the magic-link catcher. 11,836 pages carried it. The build passed, qa
+    passed, preflight passed, the smoke test passed, because a broken inline
+    script is SILENT: the browser drops it and renders the page perfectly.
+
+    That is the gap this closes. qa already refuses script source LEAKING as
+    visible text (the 2026-07-29 bug class) and never asked whether the script
+    it cannot see is valid.
+
+    The work is scripts/inline_scripts.js, because node is the only thing in
+    this toolchain that can answer "would a browser accept this", and one node
+    process walking the whole tree costs 24 seconds where spawning one per page
+    costs seven minutes. So every page is checked and no sampling rule has to
+    be trusted.
+    """
+    out = []
+    node = shutil.which("node")
+    if not node:
+        return out  # CI has node; a machine without it is not the gate
+    helper = Path(__file__).resolve().parent / "inline_scripts.js"
+    r = subprocess.run([node, str(helper), str(DIST)],
+                       capture_output=True, text=True)
+    if r.returncode not in (0, 1):
+        return [f"inline script check could not run: {(r.stderr or '').strip()}"]
+    for line in (r.stdout or "").splitlines():
+        if line.strip():
+            out.append(line.strip())
+    return out
+
+
 def check_sheet_integrity():
     """The tenth ratchet check, from 2026-08-18.
 
@@ -1844,6 +1885,7 @@ def main():
     failures += check_save_flow_integrity()
     failures += check_tick_has_its_wiring()
     failures += check_sheet_integrity()
+    failures += check_inline_scripts_parse()
     failures += check_one_tree_card()
     failures += check_one_owner_per_event()
     failures += check_no_owner_name()

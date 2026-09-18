@@ -17,8 +17,6 @@ import { mapHead, countryMapScript, countryName } from "../lib/map";
 // The shared tree card carries a save heart, and a heart is a no-op without
 // the delegated handler and the sign-in dialog behind it. qa.py enforces the
 // pairing; this is the page paying it.
-import SignInModal from "../components/SignInModal.astro";
-import { SIGNIN_JS } from "../lib/signin-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 
 function esc(s: string): string {
@@ -256,6 +254,5 @@ const mapScript = countryMapScript(
     )}
     <p class="suggest" set:html={`${collLine}See <a href="/cities">every city on the map</a>, or <a href="/explore">open the map</a> to find what is near you.`} />
   </main>
-  <SignInModal />
 </Base>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + mapScript} />
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + mapScript} />
