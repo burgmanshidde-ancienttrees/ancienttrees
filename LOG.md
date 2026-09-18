@@ -1,6 +1,46 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session) - The photo shortlist aims at demand, and langcheck stops pointing at its weakest language
+
+Hidde, on being told two of the three leftover pieces were still unlanded:
+"kunnen we dit nog doen?" Cherry-picked from
+claude/zware-foto-zoektocht-kb1n3e rather than merged, because main has moved
+on every other file that branch touches. Its third piece, the SEO learning
+table, had already reached main by another route.
+
+**The shortlist had been serving the wrong rule, and it was invisible because
+only one of the two rules was ever written as code.** Coverage says one
+photograph per city; the 2026-08-12 course says photos go where there are
+readers. The tool's condition was `photos == 0`, and a city with readers has
+had its first photograph for weeks, so the demand rule addressed no city at
+all: the nine cities the digest allows depth on held 228 photo-less trees
+between them and none of them appeared.
+
+The two lanes do not compete, which is what made the switch free: of 54
+coverage cities 7 have a candidate worth viewing, of 176 demand cities 53 do,
+and the overlap is those same 7. The other 47 are blocked on supply. `--coverage`
+still prints the old list.
+
+**`--conflict` earned its place on the first run here.** The geotag used to
+score a flat +4 for existing; it is graded by distance now, and the new view
+asks where the filename and the pin disagree. Top row: a file called
+"Betteleiche im Winter" sitting 19.1 km from our pin for The Betteleiche, on a
+pin we call CONFIRMED. A wrong pin outranks every photo question on this site.
+
+**langcheck computed its verdict and ignored it eight lines later.** `--next`
+sorted on English impressions alone, so it pointed at the weakest language on
+the board. Proven areas rank first now: de, es and ja sit above Utrecht's 75
+impressions in Dutch, which runs at 50 percent of its twin and has not passed
+once.
+
+**And the check I wrote yesterday could not see any of this.** It filtered to
+branches touching `site/` or `ios/`, on the reasoning "what a reader or a phone
+would notice". That is the wrong test: this branch changed only `scripts/`, and
+a tool that decides what the machine works on next is worth as much as a page.
+Hidde found it by reading a sentence of mine rather than the list. It watches
+`scripts/` too now, and the list went from 5 branches to 7.
+
 ## 2026-09-18 (session) - 27 spent branches cleared out, and what is genuinely left
 
 Hidde, after the fourth merge: "5 hoeft niet is de rest gedaan kunnen we
