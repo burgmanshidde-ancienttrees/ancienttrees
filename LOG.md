@@ -41,6 +41,15 @@ waste first, with the right command per city. It names **twelve cities holding
 ever been through photo_last_resort.py. Lisbon (14 of 36), Barcelona (14 of
 56), Amsterdam, Singapore, Prague, Berlin and Rome are all on it.
 
+**And reading the rendered page rather than the data found a third thing: 242
+live pages print an internal tree id at the reader.** Pamplona had seven, in
+lines like "the same path segment as pam_012 (about 60m south)". Those are
+fixed, replaced by what a visitor can follow. The other 235 span many cities
+and happen wherever a pass cross-referenced one tree from another's access or
+transport field. Left as recorded work rather than made a build check: a FAIL
+would refuse every deploy until all 235 are rewritten, and each rewrite is a
+judgement per sentence rather than a substitution. Details in CURATION.md.
+
 **Trying that sweep found a worse bug than the one it was sent to fix.** This
 sandbox's network policy refuses commons.wikimedia.org, and
 `photo_last_resort.py` swallowed the error, printed "0 new" fourteen times and
