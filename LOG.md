@@ -1,6 +1,83 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 (session) - iOS build fix, refilled the famous-trees shelf, 5 new French places, one species page
+
+visitors.py: 656 visits, 870 page views over 7 days. prepare.py: 48 cities
+staged for verify (untouched), 6 trees "awaiting a writer" that turned out to
+all be correctly held for container reasons (2 already-held single trees, and
+3 of the famouspoland-batch4 trees + 1 China lead all blocked on a container
+decision), REFILL THE SHELF FIRST on the famous-trees leads pile.
+
+**Rung 2 first: health.py showed ios.yml red since 00:32 UTC.** ContentView.swift
+called `TreeDetail(tree: t, myPhoto: sightings.forTree(t.id), ...)` at two call
+sites; TreeDetail had never gained a `myPhoto` parameter, so the app has not
+compiled since that landed. The feature the comment described (a reader's own
+photograph filling the hero slot when a tree has none) was already correctly
+built via `Sightings.ofTree` and TreeDetail's own `yourShots`/`heroOwnShot`,
+reading the `sightings` environment object directly; the `myPhoto` argument was
+a second, half-finished attempt at the same fix that broke the build instead of
+completing it. Removed the redundant argument from both call sites and the
+now-unused `Sightings.forTree`. Fixed and pushed as its own commit.
+
+**Then refilled the shelf per prepare.py's instruction: a verify pass on
+_famous-france's 17 remaining unsourced leads**, dispatched as 5 parallel
+verify agents (grouped to respect the 4-candidates-per-pass exposure rule, one
+group kept together because all 4 stood in the same two forest clusters).
+Result: 9 verified, 4 blocked (2 confirmed dead, 1 not a real living-tree
+candidate, 1 access-blocked private château grounds, reasons recorded in
+`data/leads/_famous-france.json`), 4 still leads needing a modern source.
+
+**5 of the 9 verified pass the single-famous-tree destination test and shipped
+as new places**, each judged against the Fontenay/Jeremi Oak precedent (a
+tree that is merely a nice feature of an already-famous site does not pass;
+a tree people specifically travel to, or that carries the department's only
+protection order, or a record-scale claim, does):
+- `bulat-pestivien`: Le Chêne de Tronjoly (Ar Ven Der), possibly the thickest
+  oak trunk in continental Europe (~12m round), a documented hermit legend.
+- `fontaine-belfort`: the Turenne Lime, the ONLY classified tree in the whole
+  Territoire de Belfort, 700+ years, where Marshal de Turenne took his
+  officers' reports in 1674 (the lead's brief wrongly assumed the village of
+  Turenne in Corrèze, 500km away; corrected during verification).
+- `innimond`: the Sully Lime, a nationally labelled Remarkable Tree of France
+  with a living annual Fête-Dieu tradition.
+- `crecy-en-ponthieu`: Le Chêne des Ramolleux, the largest oak in the Forêt de
+  Crécy, on a signed 20+ tree veteran-oak trail, legendary tie to the 1346
+  battle (age disputed and both readings kept rather than picked).
+- `le-guerno`: the Weeping Plane of Branféré, a self-layering propped plane
+  inside a paid zoo/botanical park, judged to pass because it is independently
+  sought out (a tourism piece is literally a visitor's account of finding it),
+  unlike Fontenay's plane.
+
+Verify pass -> write-stories pass (Opus, 5 trees, stories + recognition lines)
+-> session wrote the Contract A/B/C fields (intro, meta_description, FAQ,
+question_answer/context even though a 1-tree place gets no question page,
+per preflight's forward-looking rule) -> preflight clean -> build -> qa.py
+clean -> merged origin/main (63 files of unrelated concurrent work, no
+conflicts) -> rebuilt, qa.py clean again -> pushed.
+
+**4 more verified but held below the 4-tree floor**: two forest clusters,
+Senonches (Chêne Fauteuil + Les Trois Frères, ~2.5km apart) and Réno-Valdieu
+(Chêne de la Forestry Commission + Chêne d'Oxford, <1km apart), ~28-30km apart
+from each other so not one cluster. Both forests' own sources name 2 more
+named veteran trees each that a future pass could research to clear the
+floor; kept as full verified facts in `data/research/famousfrance-verified.json`
+rather than published, noted in the leads file.
+
+**Also closed pagegaps.py's one open species gap**: `data/species/ryukyu-pine.json`,
+written from the 3 trees that already carry the species (Iheya, Taipei,
+Kagoshima).
+
+Ran `python3 scripts/tree_index.py` and `python3 scripts/city_names.py`
+(resolved local names for 4 of the 5 new places; Fontaine's name is too
+ambiguous on Wikipedia to resolve automatically, left unresolved rather than
+guessed) after the new places landed.
+
+Git push hit an expired embedded token partway through (`git remote`'s
+`ghs_...` had aged out mid-session); `DEFAULT_WORKFLOW_TOKEN` from the
+environment was a live token for the same repo and re-authenticated the
+push without needing anything from Hidde.
+
 ## 2026-09-18 (session) - The photo shortlist aims at demand, and langcheck stops pointing at its weakest language
 
 Hidde, on being told two of the three leftover pieces were still unlanded:

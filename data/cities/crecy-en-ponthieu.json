@@ -1,0 +1,64 @@
+{
+  "city": "Crécy-en-Ponthieu",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Crécy-en-Ponthieu gave its name to the 1346 battle fought in the countryside beside it, and the state forest that grew back afterwards holds the region's oldest surviving oaks. Le Chêne des Ramolleux, the largest of them, stands at the forest's northern edge opposite the Caumartin forester's lodge, on a signed trail linking twenty or more named veteran trees. Local tradition says it dates from the battle itself, six centuries ago; the dendrologist who last measured its 5.55-metre trunk thinks it is younger, though nobody has settled on how much.",
+  "meta_description": "Le Chêne des Ramolleux, the largest oak in the forest behind the 1346 Battle of Crécy, on a signed trail of veteran trees.",
+  "hero_tree_id": "crc_001",
+  "oldest_tree_id": "crc_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Crécy-en-Ponthieu?",
+      "a": "Le Chêne des Ramolleux, the largest oak in the Forêt de Crécy, on a signed trail at the forest's northern edge."
+    },
+    {
+      "q": "Is it really from the Battle of Crécy?",
+      "a": "That is the local tradition, which would make it about six centuries old. The dendrologist who last measured the trunk thinks it is younger, though he offers no replacement figure, so both readings stand unreconciled."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the state-owned Forêt de Crécy, reached on foot from parking near the Caumartin forester's lodge."
+    },
+    {
+      "q": "How big is the tree?",
+      "a": "5.55 metres round and 27 metres tall, the largest of more than twenty named veteran oaks on the forest's signed circuit."
+    }
+  ],
+  "trees": [
+    {
+      "name": "Le Chêne des Ramolleux",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "around 600 years (local tradition)",
+      "age_min": 300,
+      "age_max": 600,
+      "girth_cm": 555,
+      "location": {
+        "address": "Forêt domaniale de Crécy, opposite the Maison forestière de Caumartin, 80150 Crécy-en-Ponthieu, Somme, France",
+        "latitude": 50.262,
+        "longitude": 1.827,
+        "neighbourhood": "Caumartin, northern edge of the Forêt de Crécy"
+      },
+      "verified_sources": [
+        "https://krapooarboricole.wordpress.com/2009/05/15/chene-des-ramolleux-foret-de-crecy-somme/",
+        "https://fr.wikipedia.org/wiki/For%C3%AAt_de_Cr%C3%A9cy",
+        "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_des_Ramolleux_for%C3%AAt_de_Cr%C3%A9cy.JPG"
+      ],
+      "access": "Free, public. Stands in the state-owned Forêt domaniale de Crécy (ONF-managed), on the signed 'circuit des vieux chênes' walking route, at the forest's northern edge directly opposite the Caumartin forester's lodge. Since Nov 2019 the ONF has closed some forest roads to private vehicles near Forest-Montiers (local controversy over the closure), but the tree itself is reached on foot from marked parking regardless.",
+      "transport": "No direct public transport into the forest; nearest town Crécy-en-Ponthieu is about 5 km away. A car is the practical way in, with roadside/forest parking near the Caumartin lodge, then a short walk on the marked trail.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "id": "crc_001",
+      "story": "Somebody measured this oak at four metres round in 1936. Somebody measured it again around 2009 and got 5.55. Those seventy-odd years of growth are the hardest evidence anyone has about its age, and they sit awkwardly beside the local story, which is that the tree was planted after the Battle of Crecy in 1346 and is therefore six centuries old. The dendrologist who took the later measurement, having had his hands on the trunk, thinks it is somewhat younger than that. He offers no replacement figure. Both readings stand here unreconciled.\n\nEither way it is the largest oak in the Foret de Crecy, 27 metres tall, in a state forest known less for its timber than for the battle that took its name in 1346. The oaks around it are the reason to come: the forestry office has signed a circuit des vieux chenes linking twenty or more named trees, each with a panel, and this one is the biggest on the route. It stands at the northern edge of the forest, directly opposite the forester's lodge at Caumartin, which is about as findable as a tree in a wood ever gets.\n\nTwo photographs taken from the same spot fourteen years apart, in 2007 and in 2021, show the same full crown with no dead wood in it. Whatever its age, it was standing and healthy the last time anyone photographed it.",
+      "how_to_recognise": "You can recognise it by being the largest oak in the forest, 5.55 metres round and 27 metres tall. It stands at the northern edge opposite the Maison forestiere de Caumartin, on the signed circuit des vieux chenes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ],
+  "question_meta": "Crécy-en-Ponthieu's one mapped tree is Le Chêne des Ramolleux, the largest oak in the forest behind the 1346 battle.",
+  "question_answer": "Crécy-en-Ponthieu's one mapped tree is Le Chêne des Ramolleux, the largest oak in the Forêt de Crécy, 5.55 metres round and 27 metres tall, standing at the forest's northern edge opposite the Caumartin forester's lodge.",
+  "question_context": "The Forêt de Crécy takes its name from the battle fought here in 1346, and local tradition holds that this oak was planted afterwards, which would make it about six centuries old. Measurements complicate the story rather than confirming it: the trunk read four metres round in 1936 and 5.55 around 2009, seventy-odd years of growth that are the only hard evidence anyone has. The dendrologist who took the later measurement, having had his hands on the trunk, thinks it somewhat younger than the legend claims, though he offers no replacement figure, so both readings stand here unreconciled. Whatever its age, it is the largest oak on the Office National des Forêts' own signed circuit des vieux chênes, a trail linking twenty or more named veteran trees through the forest, each with its own interpretive panel. Two photographs taken from the same spot fourteen years apart, in 2007 and 2021, show the same full, healthy crown."
+}

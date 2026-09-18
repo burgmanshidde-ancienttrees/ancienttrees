@@ -1,0 +1,17 @@
+{
+  "city": "Gdynia",
+  "country": "Poland",
+  "city_slug": "gdynia",
+  "note": "Gdynia has no published city page yet. Two Gdynia Orlowo trees (gda_005, gda_006) are already published under Gdansk's city file, at 54.47/18.56, judged within its day-trip boundary; this candidate at 54.50/18.50 sits roughly 4-5km further north and inland, in Gdynia's own Witomino district, not yet checked against that boundary. A future pass should decide whether Gdynia stays its own city or folds into Gdansk before researching further. First candidate from a 2026-09-18 verify pass on data/leads/_famous-poland.json's 'Witominskie Slonca' lead, full verified facts kept in data/research/famouspoland-refill-verified.json.",
+  "leads": [
+    {
+      "name": "Witominskie Slonca (The Witomino Suns)",
+      "species": "Swedish Whitebeam (Sorbus intermedia)",
+      "lat": 54.497713,
+      "lng": 18.499974,
+      "status": "lead",
+      "why": "A group of four Swedish whitebeams beside ul. Sloneczna in Witomino, officially designated as one nature-monument entry by Gdynia city council (Uchwala nr LIV/1660/23, 28 czerwca 2023). Two independent sources corroborate: the city government's own news article (gdynia.pl) and sozosfera.pl, an independent environmental-news site, matching species, street, names and grouping. A genuinely wild, strictly-protected species along this stretch of Baltic coast per the city's own text, not an ornamental planting; two of the four carry the protected lichen Evernia prunastri. Girth is a documented floor only (the city states each measures 'over 200cm', the legal minimum for the species to qualify), not a precise figure. No age given anywhere. Passes the ensemble test on the same grounds as Torun's Trzy Zorze: one register entry, one shared name, one address, one coordinate (confirmed by reverse-geocoding the Commons photo's embedded GPS). Full verified record in data/research/famouspoland-refill-verified.json."
+    }
+  ],
+  "blocked": []
+}
