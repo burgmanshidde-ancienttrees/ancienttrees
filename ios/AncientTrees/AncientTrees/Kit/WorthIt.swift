@@ -22,24 +22,54 @@ import SwiftUI
 @Observable
 final class MyVotes {
     private(set) var byTree: [String: String] = [:]
+    /// The trees this account has already reported something about, and the
+    /// ones it also typed a detail for. The website has read these out of the
+    /// same rows since the chips were built; the app only ever remembered them
+    /// on the phone that tapped them, so a second phone offered the report
+    /// again as though nothing had been said (2026-09-11).
+    private(set) var reported: Set<String> = []
+    private(set) var detailed: Set<String> = []
+
+    /// The `tree` column is written as "id (name)" by both surfaces, and the
+    /// key every view reads is the BARE id. Keying on the whole string meant
+    /// the votes restored at launch went into `at_worthit_kyo_016 (Sudajii of
+    /// Omiya Gate, Kyoto Gyoen)`, which nothing reads, so a vote cast on one
+    /// phone never appeared on another however faithfully it was stored.
+    static func treeId(_ field: String) -> String {
+        String(field.split(separator: " ", maxSplits: 1)[0])
+    }
 
     func load(account: Account) async {
-        guard let token = await account.freshToken() else { byTree = [:]; return }
-        let r = Supa.request("/rest/v1/submissions?select=tree,kind,why&kind=eq.feedback",
-                             method: "GET", token: token)
+        guard let token = await account.freshToken() else {
+            byTree = [:]; reported = []; detailed = []; return
+        }
+        // OLDEST FIRST, because the loop below lets the last row on a tree win
+        // and an undo only works if it arrives after the vote it cancels. The
+        // order used to be whatever PostgREST felt like returning.
+        let r = Supa.request("/rest/v1/submissions?select=tree,kind,why&kind=eq.feedback"
+                             + "&order=created_at.asc", method: "GET", token: token)
         guard let (data, _) = try? await Net.data(for: r),
               let rows = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
         else { return }
         var found: [String: String] = [:]
+        var said: Set<String> = [], saidMore: Set<String> = []
         for row in rows {
-            guard let tree = row["tree"] as? String, let why = row["why"] as? String else { continue }
+            guard let field = row["tree"] as? String, let why = row["why"] as? String else { continue }
+            let tree = Self.treeId(field)
+            // A REPORT IS NOT A VOTE. Everything that was not "worth it" used
+            // to be read back as a thumb down, so reporting a wrong pin left
+            // the tree looking voted on the next launch, on a page whose thumb
+            // down was removed on 2026-09-04.
+            if why.hasPrefix("report detail") { saidMore.insert(tree); continue }
+            if why.hasPrefix("report") { said.insert(tree); continue }
             // An undo is a compensating row rather than a deletion, so the
             // last word on a tree is the one that counts.
             if why.hasPrefix("vote undone") { found[tree] = nil }
             else if why.contains("worth it") { found[tree] = "up" }
-            else { found[tree] = "down" }
         }
         byTree = found
+        reported = said
+        detailed = saidMore
     }
 }
 

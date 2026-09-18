@@ -661,6 +661,7 @@ which exists because batch 004 told Schoenbrunn it owned trees it does not.
 | 2026-08-16 | 6 Italian (Societa Botanica Italiana, ISA Italia, Italia Nostra, Carteinregola, Villa Ghigi, Amici del Parco Trotter) | idem | **sent** |
 | 2026-08-16 | 5 UK and Irish (Tree Council, Arboricultural Association, Ancient Tree Forum, Tree Council of Ireland, Kings Weston Action Group) | idem | **sent** |
 | 2026-08-21 | Reply to Quercus Lisboa (Silvia Moutinho), who wrote back offering to promote the platform at a field activity | Yes to the promotion, a mention on their site, photographs for the 23 Lisbon trees without one, and which tree we miss | **sent** |
+| 2026-09-17 | Quercus Lisboa came back through Hugo Verissimo (Direcao, arborist), who is organising a trial group walk with the app, will pick the zone and bring a biologist, will photograph the trees for us and offers promotion on their site and socials | Reply (drafts/reply-quercus-lisboa-2.md): Hidde's own text, warm, one ask, an online meeting before the walk to hear what they need in the app that day, plus whether he had already seen it in the App Store. My route and photo paragraph was cut: he is an arborist in Lisbon and knows the ground better than we do | **draft, awaiting Hidde** |
 
 Built by `scripts/build_batch_005.py`, which reads every tree count from the
 live city files at build time so no mail can quote a number that has moved.
