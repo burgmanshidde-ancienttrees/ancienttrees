@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sin_006",
+    "name": "The Queensland Kauri of Monserrate",
+    "species": "Queensland Kauri (Agathis robusta)",
+    "age_estimate": "not precisely documented; likely planted not long after Monserrate's mid-19th-century founding, roughly 150 to 170 years old",
+    "age_min": 145,
+    "age_max": 175,
+    "girth_cm": 713,
+    "location": {
+      "address": "Parque de Monserrate, 2710-405 Sintra",
+      "latitude": 38.79332,
+      "longitude": -9.421356,
+      "neighbourhood": "Galamares"
+    },
+    "verified_sources": [
+      "https://www.treesandshrubsonline.org/articles/agathis/agathis-robusta/",
+      "http://jardimformoso.blogspot.com/2009/03/conifers-at-monserrate.html"
+    ],
+    "access": "Paid entry (Parque e Palacio de Monserrate ticket)",
+    "transport": "Bus 435 (Monserrate Circuit) from Sintra train station, about 15 min",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Species: Agathis robusta, Queensland Kauri (a conifer, Araucariaceae, native to Queensland, Australia; not a true kauri (Agathis australis) but the closest large relative grown far outside its range, same botanical family as Monserrate's already-published Araucaria heterophylla, sin_004). Two independent sources, neither dependent on monumentaltrees.com: (1) treesandshrubsonline.org (International Dendrology Society / Bean's Trees and Shrubs, a serious dendrological reference, fetched directly) states 'It has done well in Portugal, particularly in Sintra, where fine specimens were planted in the Quinta de Monserrate, the largest reaching 27m x 127cm dbh in 1943 (Franco 1951)' -- Franco 1951 is a genuine Portuguese scientific paper, 'Especies do genero Agathis Salisb. cultivadas em Portugal', independent of Monumental Trees. The same page adds 'A large tree still survives there, 29.4m x 227cm dbh in 2017' (this later figure's ultimate source is less clear from the article's prose but the page separately cites the Monumental Trees website only for a disputed planting date, discussed below). (2) jardimformoso.blogspot.com (2009), a gardening blog quoting Gerald Luckhurst BY NAME -- Luckhurst is the landscape architect who has led Monserrate's own garden restoration, i.e. a genuinely independent, qualified first-hand witness, not a tourist blog -- states 'there are currently two large specimens of Agathis robusta at Monserrate... one has a trunk 6m in girth, about 190cm dbh', adding that this size is impressive even compared to specimens in New Zealand today.\n\nGirth: recorded here as 713cm, converted from the 2017 dbh figure (227cm x pi = 713cm), the most recent and largest documented measurement, from a trunk diameter rather than a directly taped girth, flagged accordingly. Luckhurst's 2009 figure (190cm dbh = ~597cm girth) is a smaller, earlier reading; growth from 190cm to 227cm dbh between 2009 and 2017 is physically plausible for this fast-growing species but not certain to be the SAME individual tree, since Luckhurst explicitly describes two large specimens rather than one. Flagged for this identity uncertainty: this entry describes 'the largest kauri at Monserrate' as tracked by the dendrological literature, not a single pin-certain individual distinguished from its neighbour.\n\nAge: no source gives a planting date for this specimen. treesandshrubsonline.org explicitly rejects Monumental Trees' claimed 'implausibly... around 1800' planting date and argues instead that 'it likely dates to not too many years after the species was first introduced; the botanic garden at Monserrate was founded in the 1850s' (citing European Route of Historic Gardens). Agathis robusta was formally described by Ferdinand von Mueller in 1860, so European cultivation before the 1850s founding is implausible on top of that; a planting sometime from the 1850s through the 1870s is the honest, broad estimate, giving roughly 150-170 years by 2026. Recorded as a derived, broad band per the estimating rules, not a precise figure.\n\nAlive now: last independently documented as standing in 2017 (treesandshrubsonline.org, 'a large tree STILL SURVIVES there'), 9 years old as evidence; no report of removal, felling or storm damage found in any source checked this pass. Agathis robusta is a long-lived, storm-resistant conifer and Monserrate's collection is actively maintained (paid, staffed public garden, same custodian as the already-published sin_004/sin_005). Flagged for the 2017 recency of the strongest measurement rather than for any doubt about survival.\n\nLocation: no source pins the tree to a specific corner of the 33-hectare garden (unlike sin_004's Araucaria, which official Parques de Sintra material places 'at the bottom of the lawn'). Uses Monserrate's general garden coordinate as an honest approximate pin, same convention as sin_005. Access and transport match sin_004/sin_005 exactly, same paid ticket and same bus.\n\nCollectible point: yes, a single named, individually measured specimen (or the larger of a named pair) standing in a garden that already publishes two other individual specimens on the same terms (sin_004 Araucaria, sin_005 Pohutukawa), not a stand or planting."
+  }
+]

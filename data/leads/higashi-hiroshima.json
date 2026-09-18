@@ -665,5 +665,57 @@
   ],
   "blocked": [],
   "coordinate_trap": "THE DETAIL PAGES DO NOT PUBLISH A PER-TREE COORDINATE, and they look as though they do. Each page's inline script sets mapLat and mapLon, and 80 of these 102 records carry the identical value 37.68,140.76, which is in Fukushima, about 600 km from Hiroshima. It is the site's default map centre. The remaining 22 set it to an empty string. Scraping that field would have put an entire city's worth of trees in the wrong prefecture. Checked 2026-08-16 across all 102 records. Position here comes from geocoding the facility name and the ministry's own address instead, and every geocoded record says which of the two it got.",
-  "enriched": "2026-08-16: all 102 detail pages fetched at 1.5s intervals. The list extract had missed four fields the pages carry: 樹齢（推定）, an estimated age band, on 25 of them; 所有者・管理者区分, the owner category, on all of them; 名称（施設名）, the facility name, on 73; and the street address on 69. The owner category is the valuable one, because it answers hard rule 10 from the register itself: 72 of 102 stand on shrine or temple ground, which is the sacred-ground pattern the search doctrine says to look for first, and 20 are private."
+  "enriched": "2026-08-16: all 102 detail pages fetched at 1.5s intervals. The list extract had missed four fields the pages carry: 樹齢（推定）, an estimated age band, on 25 of them; 所有者・管理者区分, the owner category, on all of them; 名称（施設名）, the facility name, on 73; and the street address on 69. The owner category is the valuable one, because it answers hard rule 10 from the register itself: 72 of 102 stand on shrine or temple ground, which is the sacred-ground pattern the search doctrine says to look for first, and 20 are private.",
+  "verify_pass_2026_09_18": {
+    "delivered_to": "data/research/higashi-hiroshima-verified.json",
+    "delivered_ids": [
+      "hgh_020",
+      "hgh_021",
+      "hgh_022",
+      "hgh_023",
+      "hgh_024",
+      "hgh_025",
+      "hgh_026",
+      "hgh_027",
+      "hgh_028",
+      "hgh_029",
+      "hgh_030",
+      "hgh_031"
+    ],
+    "report_ids_used": [
+      53212,
+      53213,
+      53214,
+      53636,
+      53637,
+      53638,
+      53640,
+      53645,
+      53646,
+      53647,
+      53634,
+      53622
+    ],
+    "report_ids_still_leads": {
+      "53216": "Kuromatsu at Chofuku-ji, girth 4.00m, health near-death (枝損死寸前) per 1988 survey, no coordinates resolved, no second source found this pass. Health concern means it may well be dead by now; needs a fresh check before spending more research time.",
+      "53217": "Tabu-noki at Ogura Shrine, girth 3.40m, health near-death per 1988 survey, no second source found. Same caution as above.",
+      "53219": "Keyaki at Nakahara Shrine, Shiwa-cho, girth 3.50m, good health. Nominatim resolved to a nearby road rather than the shrine, needs a real coordinate fix; found the shrine’s postal address (志和町志和東甲４６３０) but no second source describing the tree itself yet.",
+      "53220": "Momi at Omiya Hachiman Shrine, girth 3.00m, good health, no coordinates, not searched this pass.",
+      "53221": "Sugi at Omiya Hachiman Shrine, girth 3.30m, good health, no coordinates, not searched this pass.",
+      "53222": "Akagashi at Otani Hachiman Shrine, girth 5.20m (large), health near-death per 1988 survey. Searched but could not confidently identify the correct shrine (multiple similarly-named Hachiman shrines in the area, one candidate found was in a different prefecture). Needs a more careful identification pass plus a health recheck before publishing given the near-death flag.",
+      "53619": "Icho at Ota Setsukyodo (a Buddhist meeting hall), girth 3.34m, good health, owner other-public. No second source found, no coordinates.",
+      "53623": "Sugi at Okayama Hachiman Shrine precincts, girth 5.55m (very large), good health, address-level coordinate only. Searched; a superficially matching \"Hachiman Shrine great cedar\" record on bunka.go.jp turned out to be an unrelated tree in Kaga City, Ishikawa Prefecture, not this one. No genuine second source found this pass.",
+      "53625": "Sugi at Kyubu Hachiman Shrine precincts, girth 5.56m (very large), good health, address-level coordinate only. Same false-lead caution as 53623; no genuine second source found this pass.",
+      "53627": "Urajirogashi at Morimasa Shrine, girth 3.50m, partial dieback, address-level coordinate. No second source found.",
+      "53628": "Momi behind Morimasa Shrine, girth 3.00m, partial dieback, same site as 53627. No second source found.",
+      "53630": "Buna, part of a named beech grove (ブナの群生林) near the summit of Mt. Takanosu, girth 5.20m, partial dieback, age band 100-199 years, owner national land. No coordinates resolved; remote mountain-summit location, likely reached only by a hiking trail. Worth a dedicated pass: could be a genuine ensemble destination but needs coordinates and an access check first.",
+      "53631": "Momi, same beech grove near Mt. Takanosu summit as 53630, girth 3.10m, good health, age band 100-199 years. Same caveats.",
+      "53641": "Momi at Ayado (Asukabe) Hachiman Shrine, girth 3.40m, good health, no coordinates, not searched this pass.",
+      "53655": "Abemaki at a site called Tsurukameyama shrine grounds, girth 3.90m, partial dieback, address-level coordinate shared suspiciously with 53656 and 53657 (all three geocoded to the same point despite different facility names, which suggests a fallback postal centroid rather than a real match). Needs a coordinate recheck.",
+      "53656": "Hinoki at the same Tsurukameyama site as 53655, girth 3.00m, partial dieback. Same coordinate caveat.",
+      "53657": "Momi at Gundo Hachiman Shrine, girth 3.20m, good health, shares the same suspect coordinate as 53655/53656 despite being a different facility name. Needs a coordinate recheck.",
+      "53664": "Icho, girth 5.30m (very large), good health, age band 300+ years, no facility name recorded at all and no coordinates. The single biggest girth left unresolved in this leads file; worth a dedicated identification pass since the register gives almost nothing else to go on."
+    },
+    "note": "Health flags of 枝損死寸前 (near-death) on 53216, 53217 and 53222 are all from the 1988 survey, 38 years old; none were pursued to a second source this pass and none should be assumed alive without a fresh check."
+  }
 }
