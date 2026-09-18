@@ -5,7 +5,7 @@
   "intro": "Graz's city government keeps a live register of protected trees, and twelve ship here across three clusters: nine in the city centre, from a Schlossberg maple to a Volksgarten trio to two Panoramagasse oaks of very different girth to a plane on Elisabethstrasse, and three more on the western side, a paid-entry pine and copper beech inside Schlosspark Eggenberg plus a free oak in a nearby public park. Most carry no recorded age, an honest gap stated rather than guessed past.",
   "meta_description": "Graz's protected trees: a Volksgarten oak-and-plane cluster, two Panoramagasse oaks of very different girth, a pine and beech in the Eggenberg palace park.",
   "question_meta": "Graz's most solidly dated protected tree is a field maple in the Augarten, already recorded in a 1956 survey. Its story, and eleven more.",
-  "question_answer": "Graz's most solidly dated protected tree is the Augarten Field Maple, growing at the eastern edge of the Augarten park in the Jakomini district. Its formal legal protection dates to 1979, but Wikipedia's own record of Graz's protected trees cites an earlier source, a 1956 survey of the city's planted broadleaf trees, which already listed this exact maple as worth protecting. That gives it a documented floor of at least seventy years old, decades before most of Graz's other protected trees, whose designation dates cluster in 1979, 1990 and 2000 with no age ever published for the trees themselves. Two oaks on Panoramagasse, protected on the same day in July 1979, carry real 2015 field-measured girths (2.80 and 4.90 metres) that likely put at least the larger one older still, but converting a girth into a year needs a cited growth rate this page does not have in hand, so no number is guessed.",
+  "question_answer": "Graz's most solidly dated protected tree is the Augarten Field Maple, growing at the eastern edge of the Augarten park in the Jakomini district. Its formal legal protection dates to 1979, but Wikipedia's own record of Graz's protected trees cites an earlier source, a 1956 survey of the city's planted broadleaf trees, which already listed this exact maple as worth protecting. That gives it a documented floor of at least seventy years old, decades before most of Graz's other protected trees, whose designation dates cluster in 1979, 1990 and 2000 with no age ever published for the trees themselves. Two oaks on Panoramagasse, protected on the same day in July 1979, carry real 2015 field-measured girths (2.80 and 4.90 metres), and those measurements now date them: at the published growth rate for oak they come out at roughly 100 to 200 years and roughly 175 to 350, which puts the larger one older than the maple on the arithmetic while the maple keeps the better paper trail. Both are bands a century or more wide, because that is the honest width of a girth estimate.",
   "question_context": "This page is built on the City of Graz's own live Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), cross-checked tree by tree against Wikipedia's independently maintained 'Liste der Naturdenkmaler in Graz', which geocodes each entry separately and sometimes carries a real field measurement or historical citation the register itself lacks. This page publishes twelve trees that verified against two independent sources and pass the access test: nine around the city centre, spanning the Schlossberg hill, the Volksgarten park, the Augarten, Schillerplatz, Elisabethstrasse and the Panoramagasse hillside, and three more on the western side near Schlosspark Eggenberg, a UNESCO World Heritage palace park about 3.5km west, where a wider planting of ten designated trees yielded only one pine and one beech with documentation strong enough to publish, plus a free oak in a public park 900 metres from the palace gate. The remaining eight Eggenberg trees (five planes, three pines) share an address and a date but no individuating record, reading as one avenue rather than separate points. Several more candidates, a kindergarten Paulownia, a youth-care-home pair and a villa plane among them, were held back under this project's rule against sending visitors onto grounds without clear evidence they are open.",
   "faq": [
     {
@@ -240,9 +240,9 @@
       "id": "grz_007",
       "name": "The Panoramagasse Oak (No. 54)",
       "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 100 to 200 years, judged from a trunk 2.8 m round",
+      "age_min": 100,
+      "age_max": 200,
       "girth_cm": 280,
       "location": {
         "address": "Opposite Panoramagasse 54, 8010 Graz",
@@ -274,15 +274,17 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by being the smaller of two protected oaks on this hillside street, 2.80 metres round the trunk. It stands opposite house number 54 on Panoramagasse, forty metres below its larger neighbour."
+      "how_to_recognise": "You can recognise it by being the smaller of two protected oaks on this hillside street, 2.80 metres round the trunk. It stands opposite house number 54 on Panoramagasse, forty metres below its larger neighbour.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 280 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "grz_008",
       "name": "The Panoramagasse Oak (No. 56)",
       "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "roughly 175 to 350 years, judged from a trunk 4.9 m round",
+      "age_min": 175,
+      "age_max": 350,
       "girth_cm": 490,
       "location": {
         "address": "Opposite Panoramagasse 56, 8010 Graz",
@@ -314,7 +316,9 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by being the larger of the two Panoramagasse oaks, 4.90 metres round, nearly double its neighbour's girth. It stands opposite house number 56, a minute's walk up the hill from the smaller tree."
+      "how_to_recognise": "You can recognise it by being the larger of the two Panoramagasse oaks, 4.90 metres round, nearly double its neighbour's girth. It stands opposite house number 56, a minute's walk up the hill from the smaller tree.",
+      "age_basis": "girth",
+      "verify_notes": "Age derived from girth, not from a source: 490 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
     },
     {
       "id": "grz_009",

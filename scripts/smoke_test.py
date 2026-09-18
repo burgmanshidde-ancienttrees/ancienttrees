@@ -163,6 +163,29 @@ f.addEventListener('load', function() {
 #     check above.
 # Two gutters in one column that differ by more than SAME and at most DRIFT_MAX
 # are a fault. Bigger differences are deliberate insets and are left alone.
+#
+# BAND is the second rule here, added 2026-09-17, and it exists because DRIFT
+# could not see the fault Hidde found with his own eyes: the footer and the
+# mission block sitting 24px further in than the page above them, on all 5,500
+# pages of the site. Two things hid it. The loop below walks
+# querySelectorAll('body *'), which is every DESCENDANT of the body and never
+# the body itself, so the page's own top-level bands were the one column on the
+# page that was never compared; and 24px is past DRIFT_MAX, so even once body
+# is in the loop, DRIFT reads it as a deliberate inset rather than as four
+# bands that each invented their own gutter.
+#
+# So BAND asks the question DRIFT cannot: does this page have ONE left edge?
+# It compares the stacked bands of the body, at any distance, and anything but
+# one shared edge is a fault. What it leaves alone is what genuinely is not a
+# band in the column:
+#   * a band narrower than 60% of the viewport is a centred reading column
+#     (.content-page is 700px), and its gutter is a function of its measure.
+#   * a band whose ink is a PAINTED BOX is an object, and the eye lines up its
+#     edges rather than the page's gutter. The app landing page's white card is
+#     the case: it floats on a tinted background and nobody reads it as prose.
+#   * a band whose ink starts at the very edge is full bleed on purpose: the
+#     hero photograph, the map.
+#   * centred text, for the reason DRIFT already gives.
 ALIGN_HARNESS = """<!doctype html><meta charset="utf-8"><title>align</title>
 <style>html,body{margin:0}iframe{border:0;height:900px}</style>
 <iframe id="f"></iframe><pre id="r">pending</pre>
@@ -230,7 +253,7 @@ f.addEventListener('load', function() {
         return el.tagName.toLowerCase() + (el.id ? '#' + el.id : '') + c;
       }
       function gutter(el, stop) {
-        var best = null, who = null;
+        var best = null, who = null, box = false;
         (function walk(n) {
           if (n.namespaceURI !== HTML || !vis(n) || inScroller(n, stop) || centred(n)) return;
           // An inline run's left edge is set by the words in front of it, not by
@@ -246,9 +269,9 @@ f.addEventListener('load', function() {
             return;
           }
           var L = paints(n) ? n.getBoundingClientRect().left : contentLeft(n);
-          if (best === null || L < best - 0.01) { best = L; who = sel(n); }
+          if (best === null || L < best - 0.01) { best = L; who = sel(n); box = paints(n); }
         })(el);
-        return best === null ? null : {left: best, who: who};
+        return best === null ? null : {left: best, who: who, box: box};
       }
       function stacked(kids) {
         for (var i = 1; i < kids.length; i++) {
@@ -257,7 +280,10 @@ f.addEventListener('load', function() {
         }
         return true;
       }
-      var drift = [], seen = {}, all = d.querySelectorAll('body *');
+      // body FIRST: it is the column that holds the page's own bands, and
+      // querySelectorAll('body *') does not contain it. See BAND above.
+      var drift = [], seen = {}, all = [d.body].concat(
+        Array.prototype.slice.call(d.querySelectorAll('body *')));
       for (var i = 0; i < all.length; i++) {
         var col = all[i];
         if (col.namespaceURI !== HTML || !vis(col) || rowish(col)) continue;
@@ -283,6 +309,23 @@ f.addEventListener('load', function() {
                      + ' but ' + gs[b2].who + ' at ' + Math.round(gs[b2].left * 10) / 10
                      + ' (' + Math.round(gap * 10) / 10 + ' off)');
         }
+      }
+      // BAND: does the page have one left edge? See the note above the harness.
+      var band = [], edges = [], vw = d.documentElement.clientWidth;
+      for (var bi = 0; bi < d.body.children.length; bi++) {
+        var bd = d.body.children[bi];
+        if (bd.namespaceURI !== HTML || !vis(bd) || centred(bd)) continue;
+        var br = bd.getBoundingClientRect();
+        if (br.width < vw * 0.6) continue;
+        var bg = gutter(bd, bd);
+        if (!bg || bg.box || bg.left <= 4) continue;
+        edges.push({sel: sel(bd), left: bg.left, who: bg.who});
+      }
+      for (var e1 = 1; e1 < edges.length; e1++) {
+        if (Math.abs(edges[e1].left - edges[0].left) <= SAME) continue;
+        band.push(edges[0].sel + ' starts at ' + Math.round(edges[0].left * 10) / 10
+                  + ' (' + edges[0].who + ') but ' + edges[e1].sel + ' at '
+                  + Math.round(edges[e1].left * 10) / 10 + ' (' + edges[e1].who + ')');
       }
       // SMALL: a control the thumb cannot reliably hit. What counts as the
       // control is the TAP AREA and not the pixels, so an absolutely positioned
@@ -318,7 +361,8 @@ f.addEventListener('load', function() {
           small.push(sel(el) + ' ' + Math.round(b.w) + 'x' + Math.round(b.h));
       });
       document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({
-        drift: drift.slice(0, 6), nsmall: small.length, small: small.slice(0, 3)
+        drift: drift.slice(0, 6), band: band.slice(0, 6),
+        nsmall: small.length, small: small.slice(0, 3)
       });
     } catch (e) {
       document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({error: String(e)});
@@ -764,7 +808,10 @@ setTimeout(function(){
              (f"/{city.stem}/{tree.name}", "tree page"),
              ("/cities.html", "cities index"),
              ("/account.html", "account"),
-             ("/netherlands.html", "country page")]
+             ("/netherlands.html", "country page"),
+             # The one page that is a floating card rather than a column of
+             # bands, which is what keeps BAND's painted-box exemption honest.
+             ("/app.html", "app landing")]
     small_seen = []
     for page, label in pages:
         for width in (PHONE_W, 1280):
@@ -777,6 +824,8 @@ setTimeout(function(){
                 continue
             for d in r.get("drift", []):
                 failures.append(f"DRIFT {label} at {width}px: {d}")
+            for b in r.get("band", []):
+                failures.append(f"BAND {label} at {width}px: {b}")
             if width == PHONE_W and r.get("nsmall"):
                 small_seen.append((label, r["nsmall"], r.get("small", [])))
 
@@ -790,7 +839,9 @@ setTimeout(function(){
         failures.append("SMALL %s at %dpx: %d control(s) under %.0fx%.0f: %s"
                         % (label, PHONE_W, n, MIN_TAP, MIN_TAP, "; ".join(examples)))
 
-    for page in (fit_page, align_page):
+    # sheet_page too: it used to be left in dist, where qa.py's orphan check
+    # then failed the deploy on a file the smoke test itself had written.
+    for page in (fit_page, align_page, sheet_page):
         try:
             page.unlink()
         except OSError:

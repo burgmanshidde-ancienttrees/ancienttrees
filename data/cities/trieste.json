@@ -2,8 +2,8 @@
   "city": "Trieste",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Trieste holds the densest cluster of registered monumental trees in Italy, 48 by the city's own count, and this page covers three of its neighbourhoods. Four stand within three hundred metres of each other in the park an Austrian archduke laid out on a limestone headland, planting Californian conifers on the Adriatic to see whether they would take. Four more grow in the city, in a public garden a botanist mayor planted himself and along the road climbing out of it. The last two stand a short walk apart in Citta Vecchia.",
-  "meta_description": "Ten remarkable trees in Trieste in three walks: Maximilian's Californian conifers at Miramare, the city's oldest plane, and a fenced 180 year hackberry.",
+  "intro": "Trieste holds the densest cluster of registered monumental trees in Italy, 48 by the city's own count. Four stand within three hundred metres in the park an Austrian archduke laid out on a limestone headland, planting Californian conifers to see whether they would take. Four more grow in a public garden a botanist mayor planted himself and along the road climbing out of it. Three, a bagolaro and two elms, stand across Citta Vecchia and San Vito. A pair of Aleppo pines share a hillside park at Villa Revoltella, and the last stands alone at Opicina.",
+  "meta_description": "Fourteen remarkable trees in Trieste across five walks: Maximilian's Californian conifers at Miramare, the oldest plane, and a hillside of Aleppo pines.",
   "question_meta": "The oldest tree in Trieste is the London plane at the Boschetto roundabout on Viale al Cacciatore, over 200 years old and older than any park in the city.",
   "question_answer": "The oldest tree in Trieste is the London plane standing at the Boschetto roundabout on Viale al Cacciatore, which the municipality puts at over 200 years. That makes it older than every public garden in the city, including the Giardino Pubblico laid out in 1854 and the park at Miramare begun in 1856. It is five metres round the trunk and twenty-five metres tall. The largest tree in Trieste is a different plane, in the Giardino Pubblico, at 542 centimetres of girth and about 180 years old.",
   "question_context": "Nothing in Italy's official record of monumental trees will tell you a tree's age. The national MASAF register lists 47 protected trees in the comune of Trieste with species, girth, height and a coordinate, and the regional Friuli Venezia Giulia decree that feeds it adds a place name and the legal reason for each designation, but neither carries an age field or any note of whether a tree is still healthy. Every date on this page therefore comes from elsewhere: from the municipality's own survey of its 48 oldest trees, which puts the Viale al Cacciatore plane above 200 years and the great plane of the Giardino Pubblico near 180, and from the founding dates of the gardens themselves. Those dates are firm. Muzio de Tommasini, botanist and podesta, began the public garden in 1854 on land bought from Benedictine nuns and planted the planes himself. Archduke Maximilian of Habsburg started the Miramare park in the spring of 1856 and kept ordering plants for it even after he had left for Mexico. A tree in either place is as old as the garden around it or a little younger, which is the honest way to date most of this list.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "In three walks, not one. Four stand inside three hundred metres of each other in the Miramare park, eight kilometres up the coast. Four more are spread along about a kilometre from the Giardino Pubblico up Via Giulia to the Boschetto roundabout. The last two, a hackberry in Piazza Hortis and an elm in the Piazzale Rosmini garden, stand about 700 metres apart in Citta Vecchia."
+      "a": "In five walks, not one. Four stand inside three hundred metres of each other in the Miramare park, eight kilometres up the coast. Four more are spread along about a kilometre from the Giardino Pubblico up Via Giulia to the Boschetto roundabout. A hackberry in Piazza Hortis, an elm in the Piazzale Rosmini garden and a second elm at the Civico Museo Sartorio stand within Citta Vecchia and San Vito. Two Aleppo pines share the hillside park at Villa Revoltella. The last, a horse chestnut, stands alone up on the karst plateau at Opicina, a tram ride from the centre."
     },
     {
       "q": "Do they cost anything to see?",
@@ -396,6 +396,147 @@
       "height_m": 24.0,
       "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 358
+    },
+    {
+      "id": "tri_011",
+      "name": "The Aleppo Pine of Villa Revoltella",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "not individually documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 360,
+      "height_m": 18.0,
+      "location": {
+        "address": "Parco di Villa Revoltella, Via Fabio Severo, 34141 Trieste",
+        "latitude": 45.644047,
+        "longitude": 13.81525,
+        "neighbourhood": "Villa Revoltella"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF (sheet 05/L424/TS/06, girth 360cm, height 18.0m, criteria a/e/f)",
+        "https://www.ilpiccolo.it/cronaca/negli-alberi-monumentali-un-pezzo-di-storia-triestina-ecco-come-verranno-riscoperti-puqojvjg (photo captioned 'Parco di Villa Revoltella, Albero Monumentale, Pino d'Aleppo', Andrea Lasorte, independently naming and locating this tree)",
+        "https://www.scoprifvg.it/site/parco-villa-revoltella/ (park access and hours)"
+      ],
+      "access": "Free, the park is open daily (7:00-19:00 winter, 7:00-20:00 summer). Pasquale Revoltella willed the park to the city on condition it stay free and open",
+      "transport": "About a 20-25 min walk south of Piazza Unita d'Italia, or bus to Via Fabio Severo",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The park came with a condition attached to it. Pasquale Revoltella left his grounds above Via Fabio Severo to the city of Trieste on the terms that they stay free and stay open, and five hectares of hillside are still a municipal garden that charges nobody anything and unlocks its gates at seven in the morning. A national parks and gardens competition later voted it the most beautiful park in Italy.\n\nTwo Aleppo pines inside it hold Italy's monumental-tree protection, standing about fifty metres apart. This is the thicker of the pair and the shorter, 360 centimetres round the trunk and eighteen metres tall, where its neighbour is slimmer and carries four metres more height. Pinus halepensis is the pine of the dry Mediterranean, the species that takes bare limestone where nothing else will hold on, and the karst Trieste sits on is exactly that ground. Its cones are small, hard and slow, sitting closed on the branch for years at a time.\n\nNobody has put a number of years on either tree. The regional register measured this one in 2025 and left the age column empty, Il Piccolo photographed a monumental Aleppo pine here in 2018 without dating it, and girth on its own will not settle the question for this species in this climate. If you know of a figure with a real basis behind it, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 3.6 metres round, thicker than its neighbour and four metres shorter. It stands about fifty metres north of the park's other protected Aleppo pine, well inside the grounds.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tri_012",
+      "name": "The Second Aleppo Pine of Villa Revoltella",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "not individually documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 346,
+      "height_m": 22.0,
+      "location": {
+        "address": "Parco di Villa Revoltella, Via Fabio Severo, 34141 Trieste",
+        "latitude": 45.643678,
+        "longitude": 13.815608,
+        "neighbourhood": "Villa Revoltella"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF (sheet 61/L424/TS/06, girth 346cm, height 22.0m, criteria a/e)",
+        "https://www.ilpiccolo.it/cronaca/trieste-un-piano-antischianto-per-78-grandi-alberi-nh69hzbs (anti-collapse tree survey, gives a Villa Revoltella pine at 110cm diameter, about 346cm circumference, matching this tree's register girth)"
+      ],
+      "access": "Free, the park is open daily (7:00-19:00 winter, 7:00-20:00 summer). Pasquale Revoltella willed the park to the city on condition it stay free and open",
+      "transport": "About a 20-25 min walk south of Piazza Unita d'Italia, or bus to Via Fabio Severo",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Trieste keeps a plan for the day its biggest trees come down. Seventy-eight of them were surveyed one at a time for the risk of failure, and this pine is on that list, entered as a trunk 110 centimetres across in the park at Villa Revoltella. Convert it and you get 346 centimetres round, which is what the regional register measured here, and fourteen centimetres less than the other protected Aleppo pine standing fifty metres away. Two pines, two sets of figures. That arithmetic is the only thing proving this hillside holds a pair rather than one tree counted twice.\n\nThis is the taller of them by four metres, twenty-two to the top, and the slimmer. Pinus halepensis does not grow to order: it leans, forks low and carries its needles in loose tufts at the ends of long bare limbs, so an old one reads as an open, see-through tree rather than a column, and a slope exaggerates the habit further. The register protected it on size and on the character of the stand it belongs to.\n\nWhat the register gave no answer to is how old it is, and neither does anything else published about this park. A dated planting record for the Revoltella grounds would settle both pines at once, and somebody in Trieste may well have one.",
+      "how_to_recognise": "You can recognise it by being the taller and slimmer of the two, twenty-two metres up and 3.46 metres round. It stands about fifty metres south of the park's thicker, shorter Aleppo pine.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tri_013",
+      "name": "The Caucasian Elm of Villa Sartorio",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "not individually documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 353,
+      "height_m": 23.0,
+      "location": {
+        "address": "Giardino del Civico Museo Sartorio, Largo Papa Giovanni XXIII 1, 34123 Trieste",
+        "latitude": 45.637047,
+        "longitude": 13.80185,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF (sheet 12/L424/TS/06, 'Villa Sartorio - Via dei Modiano', girth 353cm, height 23.0m, and sheet 66/L424/TS/06, 'Giardino Sartorio', girth 350cm, height 20.0m, about 43m apart)",
+        "https://www.ilpiccolo.it/cronaca/quindici-pini-olmi-e-platani-nel-gruppo-degli-alberi-vip-jm8b46dd (names 'l'olmo del Caucaso di Villa Sartorio' as one of four monumental trees owned by the Comune di Trieste)",
+        "https://www.triesteprima.it/social/giardini-storici-trieste-villa-sartorio-2019.html (gives the same tree at 111cm trunk diameter, about 349cm circumference, and 22m height, consistent with the register figures)",
+        "https://museosartoriotrieste.it/civico-museo-sartorio/ (Museo Sartorio opening hours and free admission)"
+      ],
+      "access": "Free. The tree stands in the garden of the Civico Museo Sartorio, a municipal museum with free admission, open Monday to Friday 9:00-18:00 and Saturday 9:00-13:00",
+      "transport": "About a 12-15 min walk south-west of Piazza Unita d'Italia, near Piazza Hortis",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Italy's monumental-tree register holds this elm twice. One sheet calls it the tree of Villa Sartorio on Via dei Modiano and gives 353 centimetres of girth and 23 metres of height; another calls it the tree of the Giardino Sartorio and gives 350 and 20. The two records sit forty-three metres apart, which is the width of a garden rather than the distance between two trees, and every independent account of the place, the newspaper's, the museum's and the city's, describes exactly one Caucasian elm here. One tree, two files. It is also why the pin on this page is marked approximate: nobody can say which of the two readings lands closer to the trunk.\n\nThe Comune di Trieste owns only four monumental trees outright, and this is one of them. In 2026 all four went into a municipal programme of roughly 135,000 euros for survey and selective pruning, this elm alongside the two great planes of the Giardino Pubblico.\n\nZelkova carpinifolia comes from the Caucasus and the Caspian forests of northern Iran and reached European gardens in the eighteenth century. It is not a true elm, whatever the name says. Its leaves are small and evenly toothed, nearer a hornbeam's than an elm's, which is exactly what carpinifolia means. Nobody has published an age for it, so we offer none; if you know when it went into this garden, tell us.",
+      "how_to_recognise": "You can recognise it by the leaves, small and evenly toothed like a hornbeam's, on the only Caucasian elm in the garden. It stands behind the Civico Museo Sartorio near Piazza Hortis, and the pin is rough, so look for the tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tri_014",
+      "name": "The Horse Chestnut of Via Nazionale",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 324,
+      "height_m": 15.0,
+      "location": {
+        "address": "Via Nazionale 51, Opicina, 34151 Trieste",
+        "latitude": 45.687256,
+        "longitude": 13.788553,
+        "neighbourhood": "Opicina"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF (sheet 70/L424/TS/06, girth 324cm, height 15.0m, criterion a only)"
+      ],
+      "access": "Free to view; stands beside the public sidewalk on Via Nazionale (the SR58/E61 state road through Opicina). Caveat: no independent source confirms whether the trunk itself sits behind a private gate at no. 51, only that the frontage is a public street with a footway running past it",
+      "transport": "Opicina is reached by bus 39/42 or the Trieste-Opicina tram from Piazza Oberdan, then a short walk on Via Nazionale",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Trieste's protected trees stand in designed grounds: a Habsburg's experimental headland, the public garden a botanist mayor laid out, the wooded hill above it. This one stands on a state road. The horse chestnut at Via Nazionale 51 grows up on the karst plateau at Opicina, a tram ride out of Piazza Oberdan, with the SR58 running past it and a footway in between.\n\nIt is 324 centimetres round and fifteen metres tall, and the honest thing to say next is that we know nothing else about it. Neither of Il Piccolo's surveys of the city's old trees mentions an Opicina chestnut. No age has ever been published. The only document that names it is the protection order itself, issued nationally and republished by the region, which is one source wearing two covers rather than two sources. The frontage is public and has a pavement along it; whether the trunk itself sits just inside a gate at number 51 is the one thing we could not settle from here.\n\nCome in May. A horse chestnut in flower holds hundreds of white spikes upright at once and reads as a flowering tree from the far end of the street. By August most European ones are going brown, from a leaf-mining moth that crossed the continent in the 1990s, and the walk is worth less. If anybody up there knows this tree's age, or owns a tape measure, we would like to hear it.",
+      "how_to_recognise": "You can recognise it by the trunk, 3.24 metres round on a fifteen-metre tree, standing right at the roadside rather than in a park. It stands beside the pavement at Via Nazionale 51, on the state road through Opicina.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white flower spikes go up all over the crown"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

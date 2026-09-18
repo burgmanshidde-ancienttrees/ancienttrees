@@ -47,6 +47,25 @@
      own, so the bar, the sheet, the cards and the prose all start on the same
      line down the side of the screen. */
   --gutter: 1.5rem;
+  /* ONE page container, for the same reason and five weeks later (Hidde,
+     2026-09-17, with a screenshot of the footer sitting 24px further in than
+     the page above it: "het is raar dat de sectie footer en missie opeens
+     verder naar binnen springen qua alignment"). The gutter token above fixed
+     the CHROME, the bar and the sheet and the cards. Every full-width BAND
+     went on inventing its own: the footer at 2.5rem, the home acts at 1.5rem,
+     the shelves at 2rem and 74rem wide, the directory at 2.5rem and 1100 wide,
+     so a phone showed four different left edges down one page and a desktop
+     showed four more. A band measures from here now and never from a number of
+     its own.
+
+     --page-max is the OUTER width, padding included, which is how .page has
+     always read it; the ink lands at (viewport - page-max) / 2 + page-pad. The
+     reading column on a tree or city page is deliberately narrower and stays
+     so: --content-max, centred, the way every long-form page on the web sets
+     its measure. */
+  --page-max: 1100px;
+  --page-pad: 2.5rem;
+  --content-max: 700px;
   --heart-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z'/%3E%3C/svg%3E");
   --ink-light: #8A8B80; --moss: #4A6B2A; --moss-light: #EDF3E3; --surface: #F7F6F1; --shadow: 0 1px 3px rgba(26,32,18,0.08), 0 4px 14px rgba(26,32,18,0.05); --gold: #D9A13F;
   --serif: 'Gabarito', system-ui, sans-serif; --sans: 'Gabarito', system-ui, sans-serif;
@@ -287,7 +306,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .panel-foot .suggest { border-top: 1px solid var(--cream-dark); margin-top: 1.5rem; padding-top: 1.25rem; color: var(--ink-light); }
 
 /* ---- Content pages (tree, question, collection, about) ---- */
-.content-page { max-width: 700px; margin: 0 auto; padding: calc(var(--header-h) + 2.25rem) var(--gutter) 3.5rem; }
+.content-page { max-width: var(--content-max); margin: 0 auto; padding: calc(var(--header-h) + 2.25rem) var(--gutter) 3.5rem; }
 .crumbs { font-size: 12px; color: var(--ink-light); margin-bottom: 1.25rem; }
 .crumbs a { color: var(--ink-light); text-decoration: none; }
 .crumbs a:hover { color: var(--moss); }
@@ -429,7 +448,7 @@ dialog.photo-view .pv-frame img {
 @media (max-width: 800px) {
   /* 1rem on a phone, which is what iOS and Material both use for a layout
      margin, and what the bar already used before the other two disagreed. */
-  :root { --gutter: 1rem; }
+  :root { --gutter: 1rem; --page-pad: var(--gutter); }
   .bar-logo { font-size: 0.92rem; letter-spacing: 0.04em; white-space: nowrap; }
   .bar-logo svg { width: 20px; height: 18px; }
   .bar-links { display: flex; align-items: center; gap: 0.55rem; }
@@ -531,7 +550,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 /* Find / walk / collect: the product told as three acts, in our own skin.
    Validated by AllTrails and Polarsteps, both of which lead with three
    capability sections. See PRINCIPLES.md and COMPETITION.md. */
-.home-acts { max-width: 1040px; margin: 0 auto; padding: 2rem 1.5rem 0; }
+.home-acts { max-width: var(--page-max); margin: 0 auto; padding: 2rem var(--page-pad) 0; }
 .home-act { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; padding: 3rem 0; border-top: 1px solid var(--cream-dark); }
 .home-act:first-child { border-top: none; }
 .home-act:nth-child(even) .home-act-visual { order: -1; }
@@ -734,7 +753,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .sp-name { position: absolute; top: -9px; left: 50%; transform: translateX(-50%); background: var(--ink);
   color: #fff; font-size: 8.5px; font-weight: 600; padding: 1.5px 7px; border-radius: 999px; white-space: nowrap; }
 @media (max-width: 760px) { .home-act { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.25rem 0; } .home-act:nth-child(even) .home-act-visual { order: 0; } }
-.page { max-width: 1100px; margin: 0 auto; padding: 3rem 2.5rem; }
+.page { max-width: var(--page-max); margin: 0 auto; padding: 3rem var(--page-pad); }
 .section-heading { font-family: var(--sans); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 1.5rem; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
@@ -854,11 +873,15 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .explore-prose p { font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin-bottom: 0.5rem; }
 .explore-prose a { color: var(--moss); }
 .explore-prose-more { margin-top: 1.2rem; font-size: 13.5px; }
-@media (max-width: 800px) { .explore-prose { padding: 1.5rem var(--gutter) 2.5rem; } }
+/* No horizontal padding: .panel-foot around it already sets the sheet's
+   gutter, and adding a second one put this prose 16px further in than the
+   cards above it on every phone (2026-09-17, the same fault as the
+   footer's). Only the room under it is this rule's to give. */
+@media (max-width: 800px) { .explore-prose { padding: 1.5rem 0 2.5rem; } }
 .pop-now { background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 10px; border-radius: 999px; padding: 1px 8px; }
 .appland { position: relative; display: flex; align-items: center; justify-content: center; padding: 5rem 1rem; }
 .appland-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: brightness(0.82); }
-.appland-card { position: relative; z-index: 1; background: #fff; border-radius: 24px; box-shadow: 0 18px 60px rgba(0,0,0,0.3); max-width: 62rem; width: 100%; display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem; padding: 2.75rem 3rem; }
+.appland-card { position: relative; z-index: 1; background: #fff; border-radius: 24px; box-shadow: 0 18px 60px rgba(0,0,0,0.3); max-width: calc(var(--page-max) - 2 * var(--page-pad)); width: 100%; display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem; padding: 2.75rem 3rem; }
 .appland-left h1 { font-size: 2.1rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin: 0.9rem 0 0.6rem; }
 .appland-sub { font-size: 14.5px; color: var(--ink-mid); line-height: 1.6; margin-bottom: 1.4rem; }
 .appland-steps { list-style: none; padding: 0; margin: 0 0 1.6rem; }
@@ -942,11 +965,11 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
   /* The header is position:fixed, so every top-level page container has to
      reserve its height. This one did not, and on a phone the card's top
      (the 'Coming soon' chip) sat underneath the bar. */
-  .appland { padding: calc(var(--header-h) + 1rem) 0.6rem 1rem; }
+  .appland { padding: calc(var(--header-h) + 1rem) var(--page-pad) 1rem; }
   .appland-card { grid-template-columns: 1fr; padding: 1.6rem 1.3rem; gap: 1.4rem; border-radius: 20px; }
   .appland-left h1 { font-size: 1.6rem; }
 }
-.shelf { padding: 1.4rem 2rem 0.6rem; max-width: 74rem; margin: 0 auto; }
+.shelf { padding: 1.4rem var(--page-pad) 0.6rem; max-width: var(--page-max); margin: 0 auto; }
 .shelf-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.9rem; }
 .shelf-head h2 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.015em; }
 .shelf-head a { font-size: 13.5px; font-weight: 700; color: var(--moss); text-decoration: underline; text-underline-offset: 3px; }
@@ -964,7 +987,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .shelf-card b { display: block; font-size: 15px; font-weight: 800; line-height: 1.3; }
 .shelf-meta { display: block; font-size: 12.5px; color: var(--ink-mid); margin-top: 2px; }
 @media (max-width: 800px) {
-  .shelf { padding: 1.2rem 1rem 0.4rem; }
+  .shelf { padding: 1.2rem var(--page-pad) 0.4rem; }
   .shelf-head { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
   .shelf-head h2 { font-size: 1.25rem; }
   .shelf-row { display: flex; overflow-x: auto; gap: 12px; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; }
@@ -993,7 +1016,10 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .city-card-meta { font-size: 12px; color: var(--ink-light); }
 .city-card.soon { opacity: 0.55; }
 
-footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
+footer { border-top: 1px solid var(--cream-dark); }
+/* Same shape as .page, so the footer's columns start on the line the page
+   above them started on, at every width. See --page-max. */
+.footer-inner { max-width: var(--page-max); margin: 0 auto; padding: 2.5rem var(--page-pad) 2rem; }
 .footer-cols { display: flex; gap: 3rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
 .footer-about { max-width: 20rem; }
 .footer-about p { font-size: 13px; color: var(--ink-mid); line-height: 1.6; margin-top: 0.6rem; }
@@ -1066,7 +1092,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .footer-about a { color: var(--moss); }
 .footer-about p a { display: inline; margin: 0; }
 .report-line { font-size: 13px; font-weight: 300; color: var(--ink-mid); margin: 0.3rem 0 0.7rem; line-height: 1.6; }
-.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 62rem; margin: 0 auto; padding: 0.4rem 2rem 2.4rem; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: var(--page-max); margin: 0 auto; padding: 0.4rem var(--page-pad) 2.4rem; }
 .step { display: block; text-decoration: none; color: var(--ink); font-family: var(--sans); text-align: center; }
 .step-ico { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 50%; background: var(--moss-light); color: var(--moss); margin-bottom: 0.6rem; }
 .step-ico svg { width: 22px; height: 22px; }
@@ -1074,13 +1100,13 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .step span:last-child { display: block; font-size: 13.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.6; max-width: 19rem; margin: 0 auto; }
 .step:hover b { text-decoration: underline; }
 @media (max-width: 800px) {
-  .steps { grid-template-columns: 1fr; gap: 1.4rem; padding: 0.2rem 1.5rem 1.8rem; text-align: left; }
+  .steps { grid-template-columns: 1fr; gap: 1.4rem; padding: 0.2rem var(--page-pad) 1.8rem; text-align: left; }
   .step { display: grid; grid-template-columns: 46px 1fr; column-gap: 0.9rem; text-align: left; align-items: start; }
   .step-ico { grid-row: 1 / span 2; margin-bottom: 0; }
   .step b { margin-bottom: 0.1rem; }
   .step span:last-child { max-width: none; margin: 0; }
 }
-.hero-sub { padding: 1.6rem 2rem; text-align: center; }
+.hero-sub { max-width: var(--page-max); margin: 0 auto; padding: 1.6rem var(--page-pad); text-align: center; }
 .hero-sub p { max-width: 44rem; margin: 0 auto; font-size: 14.5px; color: var(--ink-mid); line-height: 1.65; }
 /* The account page's email field, which is the only .hero-search on the site
    that is not also an .at-search. Scoped on 2026-09-12, because unscoped it sat
@@ -1515,7 +1541,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
      bigger than it is; svh is what the visitor actually sees. */
   .home-hero.poster { height: min(56svh, 460px); min-height: 340px; }
   .hero-overlay { left: 1rem; right: 1rem; top: 1rem; max-width: none; padding: 1.25rem 1.5rem; }
-  .page { padding: 2rem var(--gutter); }
+  .page { padding: 2rem var(--page-pad); }
 
 }
 
@@ -2104,33 +2130,66 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
    left because MapLibre's own controls own the top right, and it scrolls
    sideways rather than wrapping, because a row that grows a second line pushes
    the map down every time somebody picks a long species name. */
-.map-filters { position: absolute; z-index: 3; top: 0.7rem; left: 0.7rem;
-  right: 3.2rem; display: flex; gap: 0.4rem; align-items: center;
-  overflow-x: auto; overflow-y: hidden; padding: 0.15rem 0.15rem 0.35rem;
-  scrollbar-width: none; }
+/* THE CHIP ROW OVER THE MAP, which is the app's chip row and not a second
+   design (Hidde, 2026-09-17: "de filters zien er totaal slecht uit neem de app
+   als voorbeeld"). FilterChip.swift is the reference and it is specific: a
+   34-tall capsule, an icon at the head of a 13pt MEDIUM label, white on a
+   hairline border with a shadow soft enough to lift it off the map, moss when
+   it is on, and the whole thing sitting inside a 44-tall target.
+
+   What was here instead: 44-tall slabs with no icon, a 600-weight label, and a
+   native <select> that Safari's 16px floor blew up to a size the three buttons
+   beside it did not have, so one control in a row of four was visibly larger
+   than its neighbours. That is the sloppiness, and it came from solving the
+   two-heights problem by giving up and drawing 44. A pill inside a button
+   solves it properly: 34 drawn, 44 hit, on both kinds of control. */
+.map-filters { position: absolute; z-index: 3; top: 0.6rem; left: 0.6rem;
+  right: 3.2rem; display: flex; gap: 0.35rem; align-items: center;
+  overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
 .map-filters::-webkit-scrollbar { display: none; }
-/* 44 tall, not the app's 34. SwiftUI can draw a 32 point capsule inside a 44
-   point target; a chip row on the web cannot do that for a <select>, and a row
-   where the buttons are 44 and the picker is 34 is worse than one that is
-   honestly 44 throughout. The smoke test's own tap-target gate caught this the
-   first time it ran. */
-.mf { flex: 0 0 auto; font-family: inherit; font-size: 13px; font-weight: 600;
-  line-height: 1; height: 44px; padding: 0 0.9rem; border-radius: 999px;
-  border: 1px solid var(--cream-dark); background: #fff; color: var(--ink);
-  cursor: pointer; box-shadow: 0 1px 3px rgba(26,26,20,0.14); white-space: nowrap; }
-.mf:hover { border-color: var(--moss); }
-.mf.is-on { background: var(--moss); border-color: var(--moss); color: #fff; box-shadow: none; }
+.mf { flex: 0 0 auto; position: relative; display: inline-flex; align-items: center;
+  height: 44px; padding: 0; border: 0; background: none; cursor: pointer;
+  font-family: inherit; -webkit-tap-highlight-color: transparent; }
+.mf-pill { display: inline-flex; align-items: center; gap: 5px; height: 34px;
+  padding: 0 0.7rem; border-radius: 999px; border: 1px solid var(--cream-dark);
+  background: #fff; color: var(--ink); font-size: 13px; font-weight: 500;
+  line-height: 1; white-space: nowrap; box-shadow: 0 1px 2px rgba(26,32,18,0.10);
+  transition: background 0.12s, border-color 0.12s, color 0.12s; }
+.mf-ic { width: 14px; height: 14px; flex: 0 0 auto; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.mf-caret { width: 12px; height: 12px; margin-left: 1px; opacity: 0.55; }
+.mf:hover .mf-pill { border-color: var(--moss); }
+.mf.is-on .mf-pill { background: var(--moss); border-color: var(--moss); color: #fff;
+  box-shadow: none; }
+.mf.is-on .mf-caret { opacity: 0.8; }
+.mf:focus-visible { outline: none; }
+.mf:focus-visible .mf-pill, .mf-species:focus-within .mf-pill {
+  outline: 2px solid var(--moss); outline-offset: 2px; }
 /* The species picker is a native select on purpose: 521 options is exactly
    what a platform picker is good at, and a hand-rolled listbox over a map is
-   the interaction nobody has been trained on. */
-.mf-select { max-width: 11rem; appearance: none; padding-right: 1.7rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2326301E' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E");
-  background-repeat: no-repeat; background-position: right 0.5rem center; background-size: 13px; }
-.mf-select.is-on { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E"); }
-.mf-count { flex: 0 0 auto; font-size: 12.5px; font-weight: 700; color: var(--ink);
-  background: #fff; border-radius: 999px; padding: 0.3rem 0.6rem;
-  box-shadow: 0 1px 3px rgba(26,26,20,0.14); white-space: nowrap; }
+   the interaction nobody has been trained on. So the select stays, invisible,
+   filling the chip as its tap layer, and we draw the capsule under it. Being
+   invisible is also what lets it hold the 16px Safari needs (a focused field
+   under 16px zooms the page in and never back out) without the row carrying
+   one word larger than the other three. */
+.mf-species .mf-select { position: absolute; inset: 0; width: 100%; height: 100%;
+  opacity: 0; appearance: none; -webkit-appearance: none; border: 0; padding: 0;
+  margin: 0; background: none; font-family: inherit; font-size: 16px; cursor: pointer; }
+.mf-label { overflow: hidden; text-overflow: ellipsis; max-width: 8.5rem; }
+/* A number only while a filter is on, so it is an answer rather than copy. It
+   is not a control, so it is quieter than the chips: no border, no shadow, the
+   softer ink. */
+.mf-count { flex: 0 0 auto; display: inline-flex; align-items: center; height: 34px;
+  padding: 0 0.55rem; border-radius: 999px; background: rgba(255,255,255,0.92);
+  color: var(--ink-mid); font-size: 12.5px; font-weight: 600; white-space: nowrap; }
 .mf-count[hidden] { display: none; }
+/* MapLibre puts its attribution at the map's top-left, which is where the chip
+   row stands. The old 44-tall slabs covered the (i) completely; a 34-tall pill
+   lets it peek out above and below, which reads as a smudge behind the first
+   chip. Neither is right: OpenFreeMap's terms are one line and attribution has
+   to be findable. So on a map that carries a chip row the attribution drops
+   below it, and only there (the selector needs the row to exist). */
+.map-filters ~ .map .maplibregl-ctrl-top-left { top: 44px; }
 @media (max-width: 900px) {
   /* On a phone the sheet covers the lower half, so the row keeps its place at
      the top of the map where it is still reachable with a thumb. The right
@@ -2179,9 +2238,10 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
   .worthit-detail textarea,
   /* The map's species picker, added to this floor the hour the row was built
      (2026-09-12): a chip reads at 13, a FIELD at 13 makes Safari zoom the map
-     in on tap and never back out. The other three chips are buttons and are
-     left alone, so the row carries one slightly larger word on a phone, which
-     is the cheaper of the two prices. */
+     in on tap and never back out. Since 2026-09-17 the select is the chip's
+     invisible tap layer rather than the chip itself, so it holds 16 at every
+     width and the price the row used to pay for that (one word larger than the
+     three beside it) is gone. Kept here as the floor it is. */
   .mf-select,
   .signin-form input { font-size: 16px; }
 }

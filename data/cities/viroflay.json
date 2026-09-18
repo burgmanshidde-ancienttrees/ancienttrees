@@ -1,0 +1,67 @@
+{
+  "city": "Viroflay",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Notre-Dame-du-Chêne, Viroflay's parish church, took its name from an oak rather than the other way round: a pedunculate oak already centuries old at the edge of the Forêt de Meudon when the church went up in 1966. A 2009 tape measure, 527 centimetres round, puts it somewhere between 450 and 550 years old. Through the cholera epidemics of the 1850s and 1870s people walked out to pray beside it and left ex-votos in its bark, and some still do. Free to reach, on the verge of a departmental road, no gate.",
+  "meta_description": "The Chene de la Vierge is a 450-550 year old pilgrimage oak in Viroflay, France, beside the Foret de Meudon. Free, no gate.",
+  "question_meta": "Viroflay's remarkable tree is the Chene de la Vierge, a centuries-old pilgrimage oak at the edge of the Foret de Meudon.",
+  "question_answer": "Viroflay's notable tree is the Chene de la Vierge, a Pedunculate Oak roughly 450 to 550 years old standing alone at the edge of the Foret de Meudon. It carries the label Arbre remarquable de France and has been a pilgrimage site, an arbre a clous, since the cholera epidemics of the 1850s and 1870s.",
+  "question_context": "The oak stands alone on the verge of the Route du Pave-de-Meudon, where the Foret de Meudon gives way to the road, and it gave its name to the church built nearby in 1966, Notre-Dame-du-Chene, rather than the other way round. Its age is derived rather than counted: a 2009 measurement put the girth at 527 centimetres, and applying a published growth rate for a slow-growing oak gives a range of 450 to 550 years, kept broad because nobody has cored it. Through the Paris region's cholera epidemics of the 1850s and 1870s, people walked out to the tree to pray and left objects in its bark, which is how it earned the names arbre a clous and arbre a loques, a nail tree and a rag tree; ex-votos are still attached today and it is still used as an open-air place of worship. France's Arbres remarquables register listed it in 2002, and the national forestry office (ONF) has since had it formally assessed for health. It also appears on Viroflay's own coat of arms.",
+  "hero_tree_id": "vir_001",
+  "oldest_tree_id": "vir_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Viroflay?",
+      "a": "The Chene de la Vierge, a Pedunculate Oak roughly 450 to 550 years old standing alone at the edge of the Foret de Meudon."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the open verge of a departmental road with no gate or entry restriction."
+    },
+    {
+      "q": "Why is it called the Chene de la Vierge?",
+      "a": "During the cholera epidemics of the 1850s and 1870s, people came to pray beside it and left ex-votos in its bark, a devotional practice that gave it the names arbre a clous and arbre a loques and continues today."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vir_001",
+      "name": "Chêne de la Vierge à Viroflay",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 450,
+      "age_max": 550,
+      "girth_cm": 527,
+      "location": {
+        "address": "Corner of Route du Pavé-de-Meudon and Rue du Chêne-de-la-Vierge, 78220 Viroflay, Yvelines",
+        "latitude": 48.7969207,
+        "longitude": 2.1753047,
+        "neighbourhood": "Gaillon, on the edge of the Forêt de Meudon"
+      },
+      "story": "The church is named after the tree, not the other way round. Notre-Dame-du-Chêne was built in 1966 and took its name from an oak that had been standing at the edge of the Forêt de Meudon for centuries before anyone laid its foundation stone. The same tree sits on Viroflay's coat of arms.\n\nNobody has counted its rings. What exists is a tape measure: 527 centimetres round when it was last recorded in 2009, a trunk 1.68 metres through, which at the rate a slow oak puts on wood works out at somewhere between 450 and 550 years. The sixteenth century, roughly, and the range is as tight as the method honestly allows.\n\nIts second life began with cholera. Through the epidemics that went through the Paris region in the 1850s and 1870s, people walked out here to ask for help and left something behind, which is how it became an arbre à clous and an arbre à loques, a nail tree and a rag tree. Ex-votos still hang on it, and it is still used as an open-air place of worship. A hundred and fifty years of visitors, for a reason that has nothing to do with its girth.\n\nFrance's Arbres remarquables register added it in 2002, and the national forestry office has since had its health formally assessed. Thirty metres tall, alone on a road verge, out of the wood it once belonged to.",
+      "how_to_recognise": "You can recognise it by the ex-votos left on its bark and by the trunk, 527 centimetres round. It stands alone on the verge of the Route du Pavé-de-Meudon, out in the open where the Forêt de Meudon ends.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Ch%C3%AAne_de_la_Vierge_%C3%A0_Viroflay",
+        "https://www.cartophilie-viroflay.org/article.php?id_article=111"
+      ],
+      "access": "Free. Stands isolated beside a busy departmental road at the edge of the Forêt de Meudon, a public pilgrimage and walking site with no gate or entry restriction.",
+      "transport": "Viroflay Rive Gauche station (Transilien), about 600m, roughly a 10-12 minute walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-17",
+        "source_name": "Chêne de la Vierge à Viroflay",
+        "qid": "Q116480992",
+        "views": 71
+      }
+    }
+  ]
+}

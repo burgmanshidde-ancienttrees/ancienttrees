@@ -1,0 +1,69 @@
+{
+  "city": "Minamiaso",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Minamiaso maps one tree: Isshingyo-no-Ozakura, a wild cherry split by lightning into six trunk sections before 1945 and still flowering, a fifteen-minute walk from Nakamatsu Station. Its crown reads as a lopsided M since two of its four main limbs broke in the 2004 typhoons. Local memory ties it to a sixteenth-century battle: the wife and children of a fallen lord are said to have planted saplings over the graves of the dead with one heart, which is what Isshingyo means. Published alone here because the tree itself is the destination, not because Minamiaso's research is finished.",
+  "meta_description": "Isshingyo-no-Ozakura, Minamiaso: a lightning-split, 400-year-old wild cherry planted over a battle grave, free, 15 minutes from Nakamatsu Station.",
+  "question_meta": "Minamiaso's oldest and only mapped tree is Isshingyo-no-Ozakura, a wild cherry over 400 years old, planted by tradition over a battle grave.",
+  "question_answer": "Minamiaso's only mapped tree, and its oldest, is Isshingyo-no-Ozakura, a wild cherry (yamazakura) traditionally dated at over 400 years. It stands alone in Isshingyo Park, on a public park golf course, a fifteen-minute walk from Nakamatsu Station on the Minami-Aso Railway.",
+  "question_context": "Lightning split the trunk into six sections sometime before 1945, and the tree kept flowering; two typhoons in 2004 then broke two of its four main limbs, leaving a crown people here now describe as an M. The trunk still measures 7.35 metres round and the branches reach 26 metres north to south. Local memory ties it to a battle: Nakamura Korefuyu, lord of Yazaki Castle, is said to have died fighting the Shimazu clan in 1580, and his wife and children to have planted saplings over the graves of the fallen with one heart, which is what Isshingyo, the name of both tree and park, means.\n\nNo national or prefectural designation covers it; village and prefectural arborists keep it going instead. The park closed from 16 March to 15 April 2026 and the village cancelled its cherry festival so the tree could be treated; it flowered that spring anyway. It stands a fifteen-minute walk from Nakamatsu Station, free, with parking for the roughly hour-long drive from Kumamoto City.",
+  "hero_tree_id": "msa_001",
+  "oldest_tree_id": "msa_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Lightning split its trunk into six sections before 1945, and two 2004 typhoons broke two of its four main limbs, leaving a crown that reads as an M. It grows on ground local legend says was planted over the graves of a sixteenth-century battle's dead."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Traditionally over 400 years. No national or prefectural designation covers it, and no dating method backs the figure."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in the public Isshingyo Park, on a park golf course, with no ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "A fifteen-minute walk (about 1.2km) from Nakamatsu Station on the Minami-Aso Railway, or about an hour by car from central Kumamoto City."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "Late March into April, when the wild cherry flowers. The park has closed for treatment in some recent springs, so check before visiting in blossom season."
+    }
+  ],
+  "trees": [
+    {
+      "id": "msa_001",
+      "name": "Isshingyo-no-Ozakura",
+      "species": "Wild Cherry / Yamazakura (Cerasus jamasakura)",
+      "age_estimate": "over 400 years",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": 735,
+      "location": {
+        "address": "Nakamatsu 3226-1, Minamiaso, Aso District, Kumamoto Prefecture, Japan (in Isshingyo Park, on the grounds of a park golf course)",
+        "latitude": 32.83575,
+        "longitude": 131.05081,
+        "neighbourhood": "Isshingyo Park, Minamiaso"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/一心行の大桜",
+        "https://kumamoto.guide/en/spots/detail/10228"
+      ],
+      "access": "Free, standing inside Isshingyo Park (on a public park golf course) in Minamiaso village. Open year round with on-site parking, but note the tree itself is currently under arboricultural treatment: the park was closed to visitors 16 March to 15 April 2026 specifically to protect the tree during care, and the village cancelled its own long-running cherry blossom festival the same spring for the same reason. Confirm the tree is not mid-treatment-closure before a same-day visit in early spring.",
+      "transport": "Minami-Aso Railway, Nakamatsu Station, 15 minute walk (about 1.2 km). About an hour by car from central Kumamoto City; no direct public transport link makes it a same-day car or rail trip rather than a walk from any city we publish.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Lightning split this cherry's trunk into six sections sometime before 1945, and it went on flowering. In 2004 two typhoons broke two of its four main limbs, turning a domed crown into what people here now describe as an M. The trunk still measures 7.35 metres round, and the branches reach 26 metres from north to south.\n\nIt is a yamazakura, a wild cherry, traditionally dated at over 400 years, and it grows on a grave. The story told in Minamiaso is that Nakamura Korefuyu, lord of Yazaki Castle, died fighting the Shimazu clan of Satsuma in 1580, and that his wife and children planted saplings over the graves of the fallen with one heart. Isshingyo, the name of both the tree and the park around it, means roughly that: one heart's practice.\n\nFor a tree this famous the paperwork is thin. No national or prefectural Natural Monument designation covers it. It is kept going instead by village and prefectural arborists, and that care is currently intensive: the village closed the park from 16 March to 15 April 2026 and cancelled its own cherry festival so the tree could be treated, with the 2027 festival still undecided. It flowered that spring anyway.",
+      "how_to_recognise": "You can recognise it by the crown, split into an M since typhoons took two of its four main limbs in 2004, and by branches reaching 26 metres north to south. It stands on its own in Isshingyo Park, on the park golf course.",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "kind": "flowers",
+        "label": "late March into April, when the wild cherry flowers"
+      }
+    }
+  ]
+}

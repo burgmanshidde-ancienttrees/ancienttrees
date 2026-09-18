@@ -19,6 +19,7 @@
 // us a hand-kept copy of the haversine formula until 2026-09-12, when the
 // proximity check that needed it went; there is no duplicate of it left here.
 import {MAP_STYLE, MAP_CREDIT} from "./site-config";
+import { NO_PHOTO_CARD } from "./images";
 import { mapScript } from "./map";
 import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
@@ -124,7 +125,10 @@ function ensureChooserBox() {
   return chooserBox;
 }
 function chooserCard(c) {
-  var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '" alt="" loading="lazy"></span>' : '<span class="exc-ph exc-noph"></span>';
+// The no-photo drawing is interpolated at BUILD time, so the script text that
+// ships still carries no import: one drawing for every card on the site, rather
+// than the empty beige rectangle this line used to emit (2026-09-17).
+  var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '" alt="" loading="lazy"></span>' : '${NO_PHOTO_CARD}';
   return '<a class="exc-card" href="/' + c.url + '">' + ph +
          '<span class="exc-body"><b>' + c.city + '</b>' +
          '<span>' + c.n + ' trees &middot; ' + c.country + '</span></span></a>';

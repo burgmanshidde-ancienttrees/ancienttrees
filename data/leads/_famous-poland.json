@@ -63,9 +63,10 @@
         "https://commons.wikimedia.org/wiki/File:Monumental_Platan_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Monumental_Platan_3.jpg"
       ],
-      "status": "lead",
-      "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "species": "London Plane (Platanus x hispanica)",
+      "resolved": "2026-09-17: verified, written and published as zrz_001, 'The Zarzecze Plane Tree', in data/cities/zarzecze.json, a new single-tree place under the 2026-08-31 exception (no nearby published city to fold into; judged to pass the destination test on its own folklore, size and 2017 national Tree of the Year contest entry, a close call recorded in LOG.md 2026-09-17).",
+      "delivered_id": "zrz_001"
     },
     {
       "name": "Platan Świadek, Wrocław",
@@ -101,9 +102,10 @@
         "https://commons.wikimedia.org/wiki/File:Pomnik_przyrody_dodan_okolice_mielnika_podlasie.jpg",
         "https://commons.wikimedia.org/wiki/File:Sosna_pomnik_przyrody_Mielnik_10.07.2009_p.jpg"
       ],
-      "status": "lead",
-      "species": "Pine (Pinus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "held",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "resolved": "2026-09-17: fully verified (two independent sources, register designation, a 2023 tomograph health check), delivered as mln_001 in data/research/famouspoland-verified.json, but NOT published: its own verify_notes call it 'not obviously a destination on its own merit' and no nearby published city exists to fold it into honestly. Held rather than given a solo page, to keep the single-famous-tree bar meaningful; sibling candidate zrz_001 from the same batch was published on a stronger fame signal. Re-open if a Podlasie cluster emerges or a stronger fame signal turns up.",
+      "delivered_id": "mln_001"
     },
     {
       "name": "Sosna Rzepicha",
@@ -306,7 +308,9 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Madej_(D%C4%85b_Lubiechowski_N),_Lubiech%C3%B3w_Dolny,_gmina_Cedynia,_okres_Gryfino.jpg"
       ],
-      "status": "lead"
+      "status": "VERIFIED AND WRITTEN 2026-09-17, story and how_to_recognise complete as lud_001 (The Madej Oak) in data/research/famouspoland-batch4-verified.json, not yet published: paired with lud_002 (Pietrek, 100m away), two named village oaks with no legendary or national angle (unlike Rogalin's Lech/Rus), a weaker single-tree-exception case held for a session to weigh rather than shipped on this pass's own judgement",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "confirmed by pomniki-przyrody.pl and lenartpawel.pl, both naming it dab szypulkowy"
     },
     {
       "name": "Dąb Marysieńki, Gdyně - Orłowo",
@@ -337,7 +341,9 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pietrek_(D%C4%85b_Lubiechowski_S),_Lubiech%C3%B3w_Dolny,_gmina_Cedynia,_okres_Gryfino.jpg"
       ],
-      "status": "lead"
+      "status": "VERIFIED AND WRITTEN 2026-09-17, story and how_to_recognise complete as lud_002 (The Pietrek Oak) in data/research/famouspoland-batch4-verified.json, not yet published: see lud_001's note, same 'lubiechow-dolny' pairing held for a container decision",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "confirmed by pomniki-przyrody.pl and lenartpawel.pl, both naming it dab szypulkowy"
     },
     {
       "name": "Dąb Rus",
@@ -381,9 +387,9 @@
         "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_6_5-2015.jpg",
         "https://commons.wikimedia.org/wiki/File:Bdg_DabJP_view_7_5-2015.jpg"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "VERIFIED AND WRITTEN 2026-09-17, story and how_to_recognise complete as bdg_001 (The Jeremi Oak) in data/research/famouspoland-batch4-verified.json, not yet published: a city civic vote and a local nickname, not a national or legendary superlative, so held rather than shipped as a solo place; seeds a future Bydgoszcz city file once three more Bydgoszcz trees turn up",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "confirmed by modrzew.org.pl, a dedicated tribute piece naming it explicitly"
     },
     {
       "name": "Josef Oak",
@@ -419,9 +425,9 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_regalinda_mi%C4%99dzyzdroje_1.jpg",
         "https://commons.wikimedia.org/wiki/File:Zakr%C4%99t_kolejowej_z_regalind%C4%85.jpg"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "PUBLISHED 2026-09-17 as mzd_001 (The Regalinda Oak) in a new place 'miedzyzdroje'. CORRECTED same day: an earlier pass here judged Regalinda alone against the single-famous-tree exception ('a fine oak in a village' is the rule's own negative example, and this is exactly that shape) and shipped it as a solo page. Reopened rather than accepted: the town's own Wikipedia register (pl.wikipedia.org/wiki/Pomniki_przyrody_w_Miedzyzdrojach, citing CRFOP and a 2010 regional survey) lists 29 more named, addressed, measured monumental oaks in the same town, four of them (Bolko, Storrada, Barnim, Apostoł) within 400m of Regalinda on Kolejowa and Lipowa streets. Added as mzd_002 to mzd_005, all with photos found on Commons (CC BY-SA, viewed and approved against the Cadiz standard), clearing the real four-tree floor as a genuine walkable cluster rather than the exception. Access flag on Regalinda (shares an address with the Zlota Regalinda aparthotel) still followed up and shipped with an honest caveat.",
+      "species": "Sessile Oak (Quercus petraea)",
+      "species_basis": "confirmed by rowery.wzp.pl and the Miedzyzdroje town's own monumental-trees trail page, both naming it dab bezszypulkowy"
     },
     {
       "name": "Trzy Dęby, Kędzierzyn-Koźle",
@@ -445,7 +451,8 @@
       ],
       "status": "lead",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Checked 2026-09-17, does not yet clear the two-independent-source bar. The Commons photo (coordinate matches to within ~0.2km) is titled 'pomnik przyrody' and comes from Wikimedia Polska's 2014 'Wikiexpedition', a project that specifically photographed designated nature monuments in the Zamość region, so it is credible but is only ONE thin source (a filename, no written description) rather than two. The Zwierzyniec Forest District's own list of its 7 monuments (fetched directly) does NOT include a tree by this name, so it sits under a different authority; a search result independently states the town of Zwierzyniec plus the village of Obrocz have 10 municipally-designated pomniki przyrody, which this tree is plausibly one of, but no source names it individually. UNCONFIRMED LEAD for a future pass: Zdzisław Kotuła was the first director of Roztoczanski Park Narodowy (1974-2006, 32 years, a record among Polish national park directors per roztocze.net), which raises the possibility the oak is named after him, matching the pattern of Bydgoszcz's 'Jeremi' oak named after a local notable; this is a hypothesis only, found nowhere stated about this specific tree, and must not be written as fact without a source that actually connects the two. roztocze.net itself 403'd on direct fetch (worth flagging for the blocklist), so its articles could only be read via search summaries, which are leads not sources per BRIEF_RESEARCH.md. Next step: try the Zwierzyniec town council's own resolutions/BIP page or the gmina's environmental protection programme (Program Ochrony Srodowiska), which typically tables every municipal pomnik przyrody by name, species and girth."
     },
     {
       "name": "Święty Franciszek (oak in Hel)",

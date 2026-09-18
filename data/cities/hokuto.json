@@ -2,11 +2,11 @@
   "city": "Hokuto",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Hokuto's hero tree is Jindai-zakura, the oldest of Japan's Three Great Cherry Trees and, by tradition, the oldest cherry in the country: somewhere between 1,800 and 2,000 years old, named a National Natural Monument in 1922. A second cherry, Shinden no Oitozakura, stands alone in a rice paddy 7.5km away and once told farmers when to plant. A third tree, a designated wild azalea near the summit of Mt Utsukushimori, hides among a much larger, undesignated blaze of colour that draws most of the crowd past it.",
-  "meta_description": "Hokuto's three mapped trees: Jindai-zakura, by tradition Japan's oldest cherry, a paddy-field cherry, and a National Monument azalea on Mt Utsukushimori.",
+  "intro": "Hokuto's hero tree is Jindai-zakura, by tradition the oldest cherry in Japan at up to 2,000 years, a National Natural Monument since 1922. A second cherry once told farmers when to plant a rice paddy 7.5km away. A third is a designated azalea hiding among a larger undesignated bloom on Mt Utsukushimori. A fourth stop is two ten-metre zelkovas flanking Negoya Shrine.",
+  "meta_description": "Hokuto's mapped trees: Jindai-zakura, by tradition Japan's oldest cherry, a paddy cherry, a Monument azalea, and paired zelkovas at Negoya Shrine.",
   "question_answer": "Hokuto's oldest mapped tree is Jindai-zakura, an Edo-higan cherry at Jisso-ji Temple traditionally estimated at 1,800 to 2,000 years old, which would make it the oldest cherry tree in Japan. The figure rests on a legend that the warrior prince Yamato Takeru planted it, repeated by tourism boards and government publications but backed by no dating method, so read it as tradition rather than measurement.",
   "question_meta": "Jindai-zakura in Hokuto is traditionally called Japan's oldest cherry tree, at up to 2,000 years. One of the Three Great Cherry Trees.",
-  "question_context": "Jindai-zakura grows on the grounds of Jisso-ji Temple in Yamataka, a hamlet in the city of Hokuto at the foot of the Southern Japan Alps. In October 1922 the Japanese government named its first National Natural Monuments, and this cherry was one of only five individual trees on that inaugural list, alongside Miharu Takizakura and Usuzumi-zakura, the two trees it is now always grouped with as the Three Great Cherry Trees of Japan. The traditional age, 1,800 to 2,000 years, comes from a legend that the warrior prince Yamato Takeru planted it on his way through the region; no dating method backs the figure, and the trunk is too hollow and knotted to read reliably. What can be measured is the base, a root flare given as 11.8 to 13.5 metres round beneath a tree only about 10 metres tall, spreading outward rather than climbing. Bloom forecasters track it individually every spring, and seeds from it have reportedly been flown into space and grown on in gardens abroad.",
+  "question_context": "Jindai-zakura grows at Jisso-ji Temple in Yamataka, at the foot of the Southern Japan Alps. In October 1922 it was named one of Japan's first five individual National Natural Monuments, now always grouped with Miharu Takizakura and Usuzumi-zakura as the Three Great Cherry Trees. Legend credits the warrior prince Yamato Takeru with planting it, which gives its traditional age of 1,800 to 2,000 years; the hollow trunk cannot be read reliably. The measurable base, a root flare, runs 11.8 to 13.5 metres round beneath a tree only about 10 metres tall.\n\nA fourth stop, Negoya Shrine, is a car trip like the others rather than a walk between them. Two zelkovas, Tagi and Hatagi, flank its approach, both past ten metres round, a joint National Natural Monument since 1958. Takeda Shingen is said to have passed between them about five hundred years ago; a 1968 fire damaged both, and repair work roughly a decade ago restored them.",
   "faq": [
     {
       "q": "What is the oldest tree in Hokuto?",
@@ -31,6 +31,10 @@
     {
       "q": "What is the third tree Hokuto maps?",
       "a": "Utsukushimori no Oyamatsutsuji, a single National Natural Monument azalea near the summit of Mt Utsukushimori, distinct from the much larger undesignated blaze of wild azaleas covering the same hillside."
+    },
+    {
+      "q": "What is the fourth tree Hokuto maps?",
+      "a": "The paired zelkovas Tagi and Hatagi, flanking the approach to Negoya Shrine in Sutama-cho, each over ten metres round and a jointly designated National Natural Monument since 1958."
     }
   ],
   "trees": [
@@ -69,7 +73,7 @@
       "how_to_recognise": "You can recognise it by its huge flared base, nearly 12m round, holding up a tree only about 10m tall that has grown outward rather than upward. It stands on the grounds of Jisso-ji Temple.",
       "fame": {
         "langs": 4,
-        "checked": "2026-09-11",
+        "checked": "2026-09-17",
         "source_name": "Jindai-zakura, Hokuto",
         "qid": "Q10860801",
         "views": 97
@@ -149,6 +153,32 @@
         "height": 3000
       },
       "how_to_recognise": "You can recognise it by the dozen or more stems splitting at ground level off one root crown, 2.7 metres round taken together, under a crown about six metres across. Most people walk straight past it."
+    },
+    {
+      "id": "hok_004",
+      "name": "The Great Zelkovas of Negoya Shrine",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "estimated 800 to 1,000 years",
+      "age_min": 800,
+      "age_max": 1000,
+      "girth_cm": 1223,
+      "location": {
+        "address": "Negoya Shrine, 5336 Egusa, Sutama-cho, Hokuto-shi, Yamanashi Prefecture, Japan",
+        "latitude": 35.82,
+        "longitude": 138.4634,
+        "neighbourhood": "Egusa, Sutama-cho, Hokuto City, Yamanashi Prefecture"
+      },
+      "verified_sources": [
+        "https://www.pref.yamanashi.jp/bunka/bunkazaihogo/bunkazai_data/yamanashinobunkazai_nb0028.html",
+        "https://www.nippon.com/en/views/b05309/season-of-renewal-three-old-growth-trees-in-early-spring.html",
+        "https://ja.wikipedia.org/wiki/根古屋神社の大ケヤキ"
+      ],
+      "access": "Free, on open shrine grounds; the pair flanks the sando (approach walkway) to the haiden. Reached by car, about 15 minutes from Sutama IC on the Chuo Expressway; parking sits across the road from the shrine but is unsignposted. No train station or bus route found nearby.",
+      "transport": "No rail or bus access found; nearest access is by car, ~15 min from Sutama IC (Chuo Expressway). Nearest published Hokuto trees (hok_002, hok_003) are also car/day-trip stops rather than a walking cluster.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Two zelkovas flank the path to Negoya Shrine, Tagi on the rice-field side and Hatagi on the dry-field side, and Hokuto's farmers still read their spring in the order the pair comes into leaf: Hatagi first favours a good year for the dry fields, Tagi first favours the rice. Both trunks run past ten metres round, among the largest zelkovas recorded anywhere in Japan, though the two sources that measured them disagree by close to two metres and neither figure is picked as the winner here.\n\nTakeda Shingen, the Sengoku-period warlord whose clan held a castle nearby, is said to have passed between the pair about five hundred years ago on his way to pray at the shrine, when they were already old. A 1968 fire hollowed both trunks and snapped a bole; tree surgery roughly a decade ago brought them back from it, and a scatter of ancient boulders at the base of each marks the ground as sacred well before either the fire or the shrine.\n\nThe prefecture's own record gives no age at all. Tourist pages and a 2025 visitor's account put it somewhere between eight hundred and a thousand years, which is tradition rather than measurement, and worth taking as such.",
+      "how_to_recognise": "You can recognise them as the paired giants flanking the sando, Tagi on the rice-field side, Hatagi on the dry-field side, each over ten metres round. They stand at Negoya Shrine's approach."
     }
   ],
   "oldest_tree_id": "hok_001"

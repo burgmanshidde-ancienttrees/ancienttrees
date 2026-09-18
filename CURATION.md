@@ -18,6 +18,70 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-17 (continuation 15) - Alkmaar's photo hunt is an exhausted, documented gap
+
+`photo_hunt.py --recheck` restocked candidates for Alkmaar (14 trees, zero
+photos, well clear of the 5-tree floor for the standing one-photo-per-city
+aim): 8 new candidates across alk_009, alk_010 and alk_012. Fetched and
+viewed all 8 against the Cadiz standard. None qualify: two are archival
+black-and-white building-facade photos misfiled under the street address,
+three are wide winter canal/park views with no single tree as the subject,
+two are frozen-canal scenery with a tree only as a framing element, one is
+a building with no tree visible at all. All 8 recorded as `reject` via
+`photo_verdicts.py`. Alkmaar stays photo-less; do not re-run this hunt
+without a genuinely new source (a reader submission, or Wikimedia gaining
+new uploads for these specific addresses).
+
+## 2026-09-17 (continuation 14) - Finished two stranded verify passes: Mishima folded into Atami, Zarzecze published standalone, Mielnik held
+
+Two verify claims (`_famous-japan`, `_famous-poland`) sat finished but
+unwritten from an earlier attempt: `data/research/famousjapan-verified.json`
+(1 tree) and `famouspoland-verified.json` (2 trees). Too thin a batch for a
+dispatched write pass, so wrote all three directly in-session per the Ottawa
+precedent (2026-09-XX).
+
+**mis_001, the Kinmokusei of Mishima Taisha** (National Natural Monument
+1934, a documented annual festival, blooms twice each September): folded
+into `data/cities/atami.json` as **ata_003**, honestly labelled with
+Mishima's own address and transport, one JR stop from Atami and well inside
+the day-trip boundary, matching the ata_002/Yugawara precedent already on
+that page. Atami 2 -> 3 trees; fixed the now-stale "two trees" language in
+its intro, meta_description and question_answer.
+
+**zrz_001, the Zarzecze Plane Tree** (5.6m round, Dzieduszycki Palace park,
+Podkarpackie, Poland; documented family folklore, entered Poland's 2017
+national Tree of the Year contest): published as a new single-tree place,
+`data/cities/zarzecze.json`, under the 2026-08-31 single-famous-tree
+exception. No nearby published Polish city exists to fold it into. This was
+a close call, recorded here per the mandate: the tree's own size, its
+specific attributed folklore (harvest feasts, a horse burial, women taught
+under its crown) and its national contest entry were judged sufficient to
+clear "would somebody travel specifically for this one tree", but it is a
+weaker signal than, say, Sliven's coin-and-award tree. Revisit if this reads
+as wrong.
+
+**mln_001, Sosna Mielnicka (Parasolka)** (a Podlasie roadside pine, register-
+designated 1996, re-examined by a dendrologist in 2023): held, not
+published. Its own verify_notes call it "not obviously a destination on its
+own merit", no festival, record-claim or notable figure attaches to it, and
+no nearby published city exists to fold it into. Kept fully verified in
+`data/research/famouspoland-verified.json` for a future pass (a Podlasie
+cluster, or a stronger fame signal). Recorded in both `_famous-poland.json`
+leads and here rather than silently dropped, per the scarcity ruling of
+2026-09-08: shipping it just because the research was already paid for
+would be exactly the completeness the doctrine warns against.
+
+Released a stale `trieste` verify claim from the same earlier attempt
+(a partial fetch of Il Piccolo's 48-monumental-trees survey sat in
+`tmp_verify/`, no output produced): folded the extracted article text into
+`data/research/trieste.md` for whoever picks it up next (two named
+candidates worth checking, a hackberry in Piazza Hortis and a plane on
+Viale al Cacciatore, Trieste currently at 10/20 trees), rather than losing
+the fetch.
+
+Build (5900+ pages), qa.py and preflight.py clean throughout. Both claims
+released.
+
 ## 2026-09-17 (continuation 13) - Eindhoven verify pass merged, a species-page gap the Alkmaar fix earned
 
 The Eindhoven verify pass dispatched in continuation 12 came back with 5
