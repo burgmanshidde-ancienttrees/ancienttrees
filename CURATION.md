@@ -18,6 +18,51 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 (photo viewing pass) - Milan's plane approved; Arnhem's photo queue is now an honest, documented dead end
+
+20 shortlist rows judged, 49 candidate verdicts written, 1 approved.
+
+**mil_002, Platano di Indro: approved.** The file had been rejected the day
+before on its EXIF geotag (328 m away, in a garden with several large
+planes). That geotag is rounded to one decimal and is not the tree. The file
+is the P18 image of Wikidata Q55741802, a *pianta monumentale* whose own
+coordinate sits 14 m from our confirmed pin, with the next registered plane
+260 m off. Viewed: a veteran plane, fluted trunk filling the frame, opening
+into the five-limb vase our recognition line describes. Bare (March), a
+tiebreaker with no leafy alternative on offer.
+
+**Arnhem is exhausted for these ten trees and the reason is worth recording
+rather than rediscovering.** Its queue is dominated by one prolific local
+photographer's FUNGUS series: oyster mushrooms and beefsteak brackets
+photographed on chestnuts and beeches along Zijpendaalseweg and in Park
+Angerenstein. The filenames name a host tree species and a street, so they
+score well on a filename match and are photographs of mushrooms. Beside them
+sit house facades, a wall poem, stained glass, a 1954 relief, an 1850s
+print, 1961 Rijksdienst building surveys, a 1900 photochrome, and a
+gatekeeper sculpture in Zaltbommel that matched on the tree's name "De
+Poortwachters". Ten Arnhem trees were offered and none had a photograph of
+itself anywhere in the queue. Nobody has photographed these trunks; the
+medicine is a reader or a new source, not another sweep.
+
+**Singapore sgp_020, sgp_023 and sgp_024: all three were offered frames of
+the same tree, and it is a fourth tree we already publish.** Every remaining
+candidate came from one 2024-02-10 shoot in Commons' "Tembusu tree at Lawn
+E" category, i.e. sgp_001, offered as a Teak, a Temak and a Snake Tree.
+
+**Prague and Berlin were on the list by mistake and the mistake is fixed.**
+prg_013, prg_022, prg_023, prg_025, ber_028, ber_032 and arn_001 all had
+approved photographs already; the shortlist filters cities, not trees, so
+they were served their own shoot's second frames as "what to view next".
+Because `photo_apply.py`'s approve overwrites `tree["photo"]`, that list
+could have replaced a judged lead photograph with an unjudged sibling.
+`photo_gaps.py` now skips a tree that carries a photograph, and skips a
+duplicate candidate row whose url was judged on another row of the same
+tree. The shortlist went from 4 cities to 16.
+
+**`photo_light.py` is unavailable in this sandbox** (no Pillow, install not
+permitted), so exposure was judged by eye. Worth having on the image for any
+borderline-light candidate.
+
 ## 2026-09-18 (session 11) - Finished an earlier attempt's uncommitted work: two single-tree place pages, two more register giants for Higashi-Hiroshima
 
 Resumed an earlier attempt in this window that had stopped after 23

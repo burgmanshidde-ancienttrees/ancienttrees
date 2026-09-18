@@ -120,6 +120,24 @@ def measure(url):
     wrote no dimensions, and the site did not deploy again until somebody read
     the failure. The header is a few kilobytes, so this costs one request.
 
+    THE ORIENTATION TAG DECIDES WHICH WAY ROUND THE PAIR GOES, and reading the
+    frame header alone gets it backwards on every photograph taken sideways. The
+    SOF marker records the pixels as the sensor wrote them; EXIF Orientation 5
+    to 8 then tells every renderer to turn the image a quarter turn, so Commons,
+    a browser and the app all show 3096x4128 where this function used to read
+    4128x3096. Caught 2026-09-18 on Milan's Platano di Indro, whose file is
+    portrait everywhere and was recorded here as landscape.
+
+    It matters more than a swapped pair of numbers suggests. photoDims() in
+    site/src/lib/images.ts puts these on the <img> to reserve the space before
+    the file arrives, and its own docstring says zeros are the honest fallback
+    because "then the markup says nothing rather than something wrong". A
+    transposed ratio is exactly something wrong: it reserves a landscape box for
+    a portrait photograph and produces the Cumulative Layout Shift the field was
+    added to prevent. scripts/photo_res.py asks the Commons API for `size`,
+    which is already orientation-corrected, so the two writers of this same pair
+    disagreed with each other until now.
+
     Returns (None, None) rather than raising. A photo with no dimensions still
     should not ship, so the caller says so out loud instead of writing silence.
     """
@@ -132,6 +150,7 @@ def measure(url):
     if raw[:8] == b"\x89PNG\r\n\x1a\n":
         w, h = struct.unpack(">II", raw[16:24])
         return int(w), int(h)
+    size, turned = None, False
     i = 2
     while i < len(raw) - 9:
         if raw[i] != 0xFF:
@@ -140,12 +159,41 @@ def measure(url):
         marker = raw[i + 1]
         if marker in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB):
             h, w = struct.unpack(">HH", raw[i + 5:i + 9])
-            return int(w), int(h)
+            size = (int(w), int(h))
+            break
+        if marker == 0xE1 and raw[i + 4:i + 10] == b"Exif\x00\x00":
+            seg = raw[i + 4:i + 2 + struct.unpack(">H", raw[i + 2:i + 4])[0]]
+            turned = _exif_turns(seg)
         if marker in (0xD8, 0x01) or 0xD0 <= marker <= 0xD7:
             i += 2
             continue
         i += 2 + struct.unpack(">H", raw[i + 2:i + 4])[0]
-    return None, None
+    if size is None:
+        return None, None
+    return (size[1], size[0]) if turned else size
+
+
+def _exif_turns(seg):
+    """True when the EXIF Orientation tag rotates the image a quarter turn.
+
+    `seg` is the APP1 payload starting at the "Exif\\0\\0" identifier. Values 5
+    to 8 are the four quarter-turn cases; 1 to 4 are upright and mirrored, which
+    leave width and height alone.
+    """
+    import struct
+    try:
+        tiff = seg[6:]
+        endian = ">" if tiff[:2] == b"MM" else "<"
+        offset = struct.unpack(endian + "I", tiff[4:8])[0]
+        count = struct.unpack(endian + "H", tiff[offset:offset + 2])[0]
+        for n in range(count):
+            at = offset + 2 + n * 12
+            tag = struct.unpack(endian + "H", tiff[at:at + 2])[0]
+            if tag == 0x0112:
+                return struct.unpack(endian + "H", tiff[at + 8:at + 10])[0] in (5, 6, 7, 8)
+    except Exception:
+        return False
+    return False
 
 
 def photo_block(cand, status, note=None):

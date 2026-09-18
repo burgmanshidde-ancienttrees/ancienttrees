@@ -136,6 +136,27 @@ def pins():
     return _PINS
 
 
+_SERVED = None
+
+
+def photographed():
+    """Tree ids that already carry a photograph the site would render.
+
+    `held` does not count, because a held photograph is deliberately kept off
+    the page and the tree still has a gap somebody could close.
+    """
+    global _SERVED
+    if _SERVED is None:
+        _SERVED = set()
+        for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+            doc = json.load(open(path, encoding="utf-8"))
+            for t in doc.get("trees") or []:
+                p = t.get("photo") or {}
+                if p.get("url") and p.get("status") != "held":
+                    _SERVED.add(t.get("id"))
+    return _SERVED
+
+
 def names_match(tree, cand, pin=None):
     """How likely this file actually shows THIS tree. 0 means look last.
 
@@ -352,13 +373,38 @@ def shortlist(limit, demand=True):
         need = {c["slug"]: c for c in cities()
                 if c["photos"] == 0 and c["trees"] >= PHOTO_FLOOR}
     rows = []
+    served = photographed()
     for tid, entry in q.items():
         slug = (entry.get("city") or "").lower().replace(" ", "-")
         city = need.get(slug)
         if not city:
             continue
+        # A TREE THAT ALREADY HAS ITS PHOTOGRAPH IS NOT A GAP. The city filter
+        # above is a CITY test (trees > photos), so every queued tree in a
+        # part-photographed city reached this list, photographed or not: 7 of
+        # the 20 rows on the 2026-09-18 shortlist were trees already served,
+        # and their offered candidates were simply the next frame of the same
+        # shoot. That is not only wasted viewing. photo_apply.py's `approve`
+        # OVERWRITES tree["photo"], so a pass trusting this list and liking a
+        # second frame would silently replace a lead photograph that had
+        # already been judged, which is a worse outcome than the empty gap
+        # this tool exists to close. Extra photographs are a real thing since
+        # 2026-09-12, but they go in `photos` beside the lead and no shortlist
+        # asks for them.
+        if tid in served:
+            continue
         best = None
+        judged_urls = {c.get("url") for c in (entry.get("candidates") or [])
+                       if c.get("judged") and c.get("url")}
         for cand in (entry.get("candidates") or []):
+            # THE SAME FILE TWICE IS STILL ONE VERDICT. A tree's candidates can
+            # carry the same Commons url on two rows, one from the Wikidata
+            # sweep and one from the geosearch, and photo_apply.py writes the
+            # verdict onto the first row it matches. The other row stays
+            # unjudged and comes back forever: Milan's Platano was re-served on
+            # 2026-09-18 with a verdict already on file from the day before.
+            if cand.get("url") in judged_urls and not cand.get("judged"):
+                continue
             # SKIP ANYTHING ALREADY JUDGED. Found 2026-08-30: this loop scored
             # every candidate by filename match alone and never read `judged`,
             # so a candidate rejected weeks ago (with a verdict already on
