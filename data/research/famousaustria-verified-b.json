@@ -1,0 +1,50 @@
+[
+  {
+    "id": null,
+    "name": "Friedenslärche",
+    "species": "European Larch (Larix decidua)",
+    "age_estimate": "about 108 years, planted in 1918",
+    "age_min": 106,
+    "age_max": 110,
+    "location": {
+      "address": "Maria Bühel-Straße, on the pilgrimage path below the Wallfahrtskirche Maria Bühel (near the Wasserkapelle Maria Bühel), Oberndorf bei Salzburg",
+      "latitude": 47.9474478,
+      "longitude": 12.9277328,
+      "neighbourhood": "Maria Bühel, Oberndorf bei Salzburg"
+    },
+    "verified_sources": [
+      "https://wiki.sn.at/wiki/Tettenbacher_Friedensl%C3%A4rche",
+      "https://www.meinbezirk.at/flachgau/c-regionauten-community/wallfahrtskirche-maria-buehel-oberndorf_a7215209",
+      "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-1.jpg"
+    ],
+    "access": "Free, standing beside the public pilgrimage path/street (Maria-Bühel-Straße) that leads up to the Wallfahrtskirche Maria Bühel. Open, no permission or ticket needed.",
+    "transport": "S-Bahn/regional train from Salzburg Hauptbahnhof to Oberndorf Bahnhof, about 25 minutes, then an uphill walk of roughly 25-30 minutes via the Kalvarienbergstiege pilgrimage path to Maria Bühel. Total one-way journey from central Salzburg is closer to 50-55 minutes door to tree, not the ~30 minutes the day-trip boundary asks for.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "SALZBURGWIKI's own dedicated article (as 'Tettenbacher Friedenslärche') and a meinbezirk.at Regionauten piece agree independently: a larch planted in 1918 by a local farmer ('vom Tettenbacher Bauer') out of gratitude for returning safely home from the First World War ('zum Dank fuer seine glueckliche Heimkehr aus dem Ersten Weltkrieg'). It stands on the pilgrimage path (Maria-Buehel-Strasse) that climbs from Oberndorf's Stille-Nacht-Platz up to the Wallfahrtskirche Maria Buehel, near the Wasserkapelle Maria Buehel which itself sits 'a few hundred meters below' the church. Species is given only as 'Laerche' (larch) in both sources, not to exact species; European Larch (Larix decidua) is the overwhelmingly likely native larch in this region and is used here as a reasonable default, not a confirmed identification -- worth a reader question on the page. SALZBURGWIKI's broader 'Kleindenkmaeler und Kunstwerke in Oberndorf' page lists it among small MONUMENTS (Kleindenkmal), not among the separate Naturdenkmal (protected natural monument) category; a WebSearch AI summary claimed Naturdenkmal status but that word does not appear on either page actually fetched, so it is dropped per the search-summary-is-a-lead-never-a-source rule. No girth or height figure exists in any source found. Alive: the only dated evidence is a Commons photograph taken 2026-04-21 (well, dated 2022-04-21 per the file's own EXIF/upload metadata) captioned 'die 1918 gepflanzte Friedenslaerche in Maria Buehel', by Rufus46, CC BY-SA 4.0, on Maria-Buehel-Strasse -- no coordinates embedded in the file itself. Location is APPROXIMATE: no source gives tree-level coordinates; the point recorded here is a road segment of Maria-Buehel-Strasse between Oberndorf's town centre and the church, in the stretch where the Wasserkapelle and the tree are described as standing, not a confirmed trunk position. DISTANCE/TRANSPORT finding for the container question (not decided here): straight-line distance from Oberndorf Bahnhof (47.9417, 12.9441) to the Wallfahrtskirche Maria Buehel (47.9500, 12.9262) is about 1.6 km, uphill via stairs (Kalvarienbergstiege); combined with the 25-minute train ride from Salzburg Hauptbahnhof, the one-way journey from central Salzburg runs to roughly 50-55 minutes door to tree, meaningfully past the ~30-minute day-trip boundary in CLAUDE.md. Historically significant (a private WWI peace/homecoming memorial tree) rather than notably old or large; ordinary in size as far as any source says."
+  },
+  {
+    "id": "aut_002",
+    "name": "Linde im Gries",
+    "species": "Summer Lime (Tilia platyphyllos)",
+    "age_estimate": "roughly 900 years, local tradition dates planting to 1114",
+    "age_min": 700,
+    "age_max": 1000,
+    "girth_cm": 1000,
+    "location": {
+      "address": "A small park on Attergaustrasse beside the Duerre Ager riverbank, near the site of the former Hotel Goldenes Schiff and the Ager bridge, St. Georgen im Attergau",
+      "latitude": 47.936844,
+      "longitude": 13.484372,
+      "neighbourhood": "Gries, St. Georgen im Attergau"
+    },
+    "verified_sources": [
+      "https://www.atterwiki.at/index.php?title=Tausendj%C3%A4hrige_Linde",
+      "https://www.baumkunde.de/baumregister/1709-1000jaehrige_linde_im_griesin_sankt_georgen_attersee/"
+    ],
+    "access": "Free, standing in a small public park on Attergaustrasse beside the river, no permission or ticket needed.",
+    "transport": "In the centre of the village of St. Georgen im Attergau; no rail station in the village itself, reachable by regional bus (Vöcklabruck-Attersee line) or a short walk from anywhere in the village centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree closely: AtterWiki's own dedicated article ('Tausendjaehrige Linde') and baumkunde.de's dendrology register entry (last updated 23.10.2024). AGE is a local legend, not a document: AtterWiki states 'Die Linde soll im Jahr 1114 gepflanzt worden sein' (the linden IS SAID TO HAVE BEEN planted in 1114), explicitly hedged rather than dated proof, and repeated here as a broad band (700-1000 years) rather than sharpened to a single figure, per the age-estimate rules; the huge measured girth (10m/1000cm per AtterWiki's 'Stammumfang von 10 Meter') is real corroborating evidence for extreme age even without the legend. Species: baumkunde gives the exact species as Tilia platyphyllos (Sommer-Linde/Summer Lime); AtterWiki just says 'Linde'. HEIGHT: AtterWiki gives 'etwa 16 Meter'; baumkunde's entry did not state a height. COORDINATES cross-check: baumkunde's own coordinate (E13d28.957m N47d56.129m, i.e. approx 47.935483, 13.482617) sits within about 150m of the lead's recorded coordinate (47.936844, 13.484372), both pointing at the same small riverside park, so location_precision is set CONFIRMED: this is a single, individually identifiable landmark tree with an information pavilion beside it (built 2006), not a guess at a park's general area. STATUS: it was DELISTED as an official Naturdenkmal by the state of Upper Austria (AtterWiki: 'wurde vom Land OO als Naturdenkmal geloescht') but AtterWiki calls it plainly 'der bekannteste Baum im Attergau' (the best-known tree in the Attergau) and it remains under general nature protection as the village's landmark; delisting here is administrative rather than a sign the tree is gone. ALIVE: baumkunde's dendrology register lists its condition as 'vital' as of its most recent listed update (23.10.2024), the most recent dated evidence found. HISTORY for the writer: served as a Gerichtslinde (a linden under which legal disputes/court proceedings were held) until the 16th century; nearly destroyed by the Bartholomae storm of 1911; underwent restoration/preservation work in 1912 and again in 1947 after internal fire damage; an information pavilion was added beside it in 2006. Clears the bar: alive, two independent sources for species/age/location, one collectible point, confirmed pin, publicly reachable and free. Only soft point is the legendary rather than documented age, handled by the broad band and by flagging."
+  }
+]
