@@ -1045,7 +1045,15 @@
       "access": "Free, inside Čimický háj, a public recreational forest between Bohnice, Kobylisy and Čimice used year-round for walking, running and cycling. The tree stands a short way past a fence behind the Čimická hájovna (a working forestry lodge), which prazskestromy.cz's own access note does not flag as restricted; the lodge area carries information boards as a marked point of interest. No source states the tree itself is closed to visitors.",
       "transport": "Bus stop \"Čimický háj\" (lines 102, 144, 152, 177, 200), on the forest edge",
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "prg_029",
@@ -1069,7 +1077,15 @@
       "access": "Free, stands beside the public street Pod Labuťkou in Libeň, on the site of a former children's playground below a vegetated slope. An ordinary street tree, not inside any park or private grounds.",
       "transport": "In Libeň, Praha 8; nearest tram/bus stops are in the surrounding Libeň streets (not pinned down to a single stop this pass)",
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "prg_030",
@@ -1101,6 +1117,14 @@
         "status": "approved",
         "width": 2304,
         "height": 3072
+      },
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
       }
     }
   ]

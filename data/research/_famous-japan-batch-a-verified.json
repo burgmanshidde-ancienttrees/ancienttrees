@@ -1,0 +1,127 @@
+[
+  {
+    "id": "TBD_001",
+    "name": "Chujohime Seigan Zakura",
+    "species": "Yamazakura Cherry, rare double-flowered cultivar (Prunus jamasakura / Prunus itosakura)",
+    "age_estimate": "legendary origin, roughly 1200 years",
+    "age_min": 700,
+    "age_max": 1200,
+    "girth_cm": null,
+    "location": {
+      "address": "1-21-4 Obora, Gifu-shi, Gifu-ken (Ganjo-ji temple grounds)",
+      "latitude": 35.452583,
+      "longitude": 136.873083,
+      "neighbourhood": "Obora, Gifu"
+    },
+    "verified_sources": [
+      "https://www.city.gifu.lg.jp/kankoubunka/bunkazai/1005549/1021043/1018843/1018846.html",
+      "https://en.japantravel.com/gifu/princess-chujo-seigan-cherry-tree/1762",
+      "https://www.wikidata.org/wiki/Q11363887"
+    ],
+    "access": "Free, temple grounds open 9:00-17:00 daily; bus B74 from JR Gifu Station or Meitetsu Gifu Station to Korin Park entrance, then approx. 10 min walk",
+    "transport": "Bus B74 from JR Gifu Station (about 45 min, then 10 min walk)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "National Natural Monument since 1929-04-02 (city of Gifu's own designation page). Considered the ONLY known specimen of this yamazakura cultivar: double flowers of 20-30 pale pink petals versus the ordinary yamazakura's five. Legend: Nara-period Princess Chujohime, fleeing persecution by her stepmother, was healed after praying to Kannon at Ganjo-ji and planted the tree in gratitude; this is the source of the ~1200-year figure, which is a legendary/traditional age rather than a scientifically dated one, so kept broad and flagged. In 2008, 248-265 seeds were sent to the ISS for 8 months (project gathering seeds from 14 famous trees nationwide); grafting had previously been the only way to propagate it, but at least one space-flown seed germinated and later flowered, which was reported as a minor sensation in Japan (phys.org, Bangkok Post, Soranews24 all covered it 2014). SOURCE DISAGREEMENT on trunk size: the Gifu city official page gives height ~9m and trunk diameter ~31cm at breast height; japantravel.com gives height 8.1m and trunk diameter 1.5m. These are very different (31cm vs 150cm), so girth_cm left null rather than guessing; flag for writer to note only height (~8-9m) and mention the tree is slender for its reputed age, consistent with a rare cultivar rather than a massive specimen. Wikidata's coordinate (35.452583, 136.873083) sits inside the Ganjo-ji temple grounds address, so treated as tree-level/confirmed."
+  },
+  {
+    "id": "TBD_002",
+    "name": "Daio-sugi (Yakushima)",
+    "species": "Japanese Cedar / Yakusugi (Cryptomeria japonica)",
+    "age_estimate": "around 3,000 years",
+    "age_min": 2000,
+    "age_max": 3000,
+    "girth_cm": 1110,
+    "location": {
+      "address": "Ooyama Trail, en route to Jomon Sugi, Yakushima, Kumage District, Kagoshima Prefecture",
+      "latitude": 30.359903,
+      "longitude": 130.536347,
+      "neighbourhood": "Yakushima interior forest (Miyanoura)"
+    },
+    "verified_sources": [
+      "https://www.env.go.jp/nature/isan/worldheritage/en/yakushima/area/a05.html",
+      "https://bigtrees.life/daiou-japanese-cedar",
+      "https://commons.wikimedia.org/wiki/File:Dai-O-Sugi.jpg"
+    ],
+    "access": "Free, but reached only by a strenuous hike (about 4-5 hours one way from the Arakawa trailhead along the old tram road and Ooyama Trail) inside Yakushima's protected forest, part of the standard route to Jomon Sugi; the trailhead itself requires a pre-booked shuttle bus during peak season because private cars are restricted",
+    "transport": "Shuttle bus from Yakushima's Miyanoura/Anbo area to the Arakawa trailhead, then hike (~4h to Ooyama Trail entrance, ~45 min further to the tree)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Ministry of the Environment's own Yakushima World Heritage page (env.go.jp) gives circumference 11.1m at 1.3m height, tree height 24.7m, age 'more than 3,000 years'; bigtrees.life corroborates with the same circumference/height figures and adds elevation ~1,190-1,211m on the Ooyama Trail. Long known as the second-largest yakusugi (giant cedar) on Yakushima after Jomon Sugi, and was considered the largest yakusugi before Jomon Sugi's discovery/naming. The Commons file (Dai-O-Sugi.jpg, photographed 2008 by Chris 73) explicitly matches this identification ('the second largest known sugi tree on Yakushima after Jomon sugi'). It stands directly on the well-marked, heavily trafficked trail to Jomon Sugi (part of a UNESCO World Heritage core zone), so it is unambiguously a single named, signed waypoint rather than an area guess; coordinate cross-checked between a trail-data search result and the general trail description in bigtrees.life. Age is the government's own broad estimate ('more than 3,000 years'), kept as a floor-to-ceiling band rather than sharpened. Girth 1110cm recorded directly from the 11.1m circumference figure, not derived from diameter."
+  },
+  {
+    "id": "TBD_003",
+    "name": "The Camphor Tree of Hongo Yumicho",
+    "species": "Camphor Tree (Cinnamomum camphora)",
+    "age_estimate": "about 600 years",
+    "age_min": 400,
+    "age_max": 600,
+    "girth_cm": 845,
+    "location": {
+      "address": "1-28-32 Hongo, Bunkyo-ku, Tokyo",
+      "latitude": 35.706556,
+      "longitude": 139.757278,
+      "neighbourhood": "Hongo, Bunkyo, Tokyo"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E6%9C%AC%E9%83%B7%E5%BC%93%E7%94%BA%E3%81%AE%E3%82%AF%E3%82%B9",
+      "https://b-kanko.jp/spot/226",
+      "https://commons.wikimedia.org/wiki/File:Camphor_tree_in_Hong%C5%8D,_Tokyo_201504_01.jpg"
+    ],
+    "access": "Free, stands beside a narrow public road in a dense residential/office block in Hongo; visible and reachable on foot from the street, no parking on site so walking from the station is recommended",
+    "transport": "5-10 min walk from Hongo-sanchome Station (Tokyo Metro Marunouchi / Toei Oedo lines), or 6 min from Kasuga Station (Toei Oedo / Mita lines)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree closely: Japanese Wikipedia gives height 20m, trunk circumference 8.4m, estimated age 600 years, at 1-28-32 Hongo with coordinate 35°42'23.6\"N 139°45'26.2\"E (converted: 35.706556, 139.757278); Bunkyo Tourism Association (b-kanko.jp) gives circumference 'about 8.5m' at 1.5m height and the same 600-year estimate and address. Designated a Bunkyo Ward protected tree ('文京区保護樹木'), not a national Natural Monument. Locally known by the nicknames 'Kusutei no Oikusu' and 'Yumicho no Oikusu'; the neighbourhood itself was named Goyumi-cho (御弓町) after the shogunal archery corps who once lived there, and the site was later a residence of the Kaisho family, said to descend from the medieval warrior Kusunoki Masashige (whose name means 'camphor'). Featured in novelist Shiba Ryotaro's serialized travel essay 'Kaido wo Yuku' (1991-92). A Japanese travel blog (tokyo-trip.org search snippet) confirms it stands visibly beside the street walking from the Hongo-3-chome intersection toward Korakuen, with restaurants opposite; treated as street-visible and genuinely open, not gated private land. Considered the largest tree in Bunkyo Ward. Girth recorded as 845cm, the midpoint of the two sources' 8.4m/8.5m readings."
+  },
+  {
+    "id": "TBD_004",
+    "name": "Ibi Nido-zakura (the Ibi Twice-Blooming Cherry)",
+    "species": "Cherry, a rare two-stage-flowering cultivar (Prunus sp., 'nido-zakura')",
+    "age_estimate": "not reliably documented; a commonly cited local figure is roughly 140 years for the current above-ground trunk",
+    "age_min": 90,
+    "age_max": 140,
+    "girth_cm": 160,
+    "location": {
+      "address": "184-1/184-2 Nidozakura, Minamikata, Ono-cho, Ibi-gun, Gifu Prefecture (Nidozakura Park, former Daizo-ji temple site)",
+      "latitude": 35.452778,
+      "longitude": 136.622222,
+      "neighbourhood": "Minamikata, Ono-cho, Ibi District, Gifu"
+    },
+    "verified_sources": [
+      "https://online.bunka.go.jp/heritages/detail/216489",
+      "https://www.town-ono.jp/0000000842.html",
+      "https://ja.wikipedia.org/wiki/%E6%8F%96%E6%96%90%E4%BA%8C%E5%BA%A6%E6%A1%9C"
+    ],
+    "access": "Free, public park (Nidozakura Park, completed March 2012) built specifically around the designated trees",
+    "transport": "Bus from JR Ogaki Station to Ono Bus Center, then the town-office-bound bus to the 'Minamikata' stop, short walk from there",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "National Natural Monument since 1923-03-07 (Japan's Agency for Cultural Affairs heritage database, online.bunka.go.jp, and Ono town's own page both confirm); three more trees at the site were added to the designation in February 2009, bringing the total to four designated trees. The species is locally unique for a rare two-stage bloom: single and double flowers open at different times on the same tree, with a second flush of buds opening at the flower's centre as the first-stage petals wilt. IMPORTANT SUCCESSION HISTORY, all three sources agree: the original tree (girth about 3m) stood at Daizo-ji temple and was blown down in a storm in Tenpo/August 1833; a second-generation tree that sprouted from its stump (girth about 1.8m) died in 1934; the CURRENT trees are shoots that regrew from the same root system after 1934, so this is a living root-successor of a documented centuries-old specimen, not a fresh planting (same pattern this project already accepts for the Elm of Saint-Gervais). Because of this, age is genuinely unclear: a widely repeated web figure (walkerplus.com search result, not an official register) gives the current trunk as girth 160cm, height 8m, age 'roughly 140 years', but no official source states an age for the present growth, so age_estimate is kept broad and flagged rather than stated as fact; girth_cm 160 is recorded since it is at least a physical reading, though the source is not the register itself. Town of Ono manages a park with 86 additional cherry trees propagated (bunki, cutting-propagated) from the four designated originals, planted around them since 2012. Note for the writer: lead with the two-stage bloom and the storm-and-regrowth history rather than an age claim."
+  },
+  {
+    "id": "TBD_005",
+    "name": "The Great Cherry Tree of Isshingyo",
+    "species": "Yamazakura, mountain cherry (Cerasus jamasakura / Prunus jamasakura)",
+    "age_estimate": "over 400 years",
+    "age_min": 400,
+    "age_max": 450,
+    "girth_cm": 735,
+    "location": {
+      "address": "3226-1 Nakamatsu, Minamiaso-mura, Aso-gun, Kumamoto Prefecture (Isshingyo Park)",
+      "latitude": 32.834467,
+      "longitude": 131.045852,
+      "neighbourhood": "Nakamatsu, Minamiaso, Kumamoto"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E4%B8%80%E5%BF%83%E8%A1%8C%E3%81%AE%E5%A4%A7%E6%A1%9C",
+      "https://kumamoto.guide/en/spots/detail/10228",
+      "https://www.vill.minamiaso.lg.jp/dynamic/info/pub/detail.aspx?c_id=29&id=4"
+    ],
+    "access": "Normally free, open parkland (Isshingyo Park); FLAG: as of the 2026 blooming season, public viewing/entry has been restricted (16 March - 15 April 2026 confirmed, and the same restriction applied in 2025) while the tree undergoes medical treatment, and the village's own announcement says resumption of normal access depends on the tree's recovery and is not yet scheduled. Ship with an honest note; do not claim unrestricted access without checking the current season.",
+    "transport": "15 min walk (about 1.2km) from Nakamatsu Station on the Minami-Aso Railway Takachiho Line, or bus from JR Tateno Station to Nakamatsu Elementary School then 10 min walk; about 1 hour by car from Kumamoto",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Not a national or prefectural Natural Monument (no designation found in any source), but is one of the largest and most visited cherry trees in Kyushu: height 14m, trunk circumference 7.35m, canopy spread 21.3m east-west by 26m north-south, age over 400 years (all figures repeated consistently across Japanese Wikipedia, the official Kumamoto prefecture tourism site and the village's own facility page). Legend: planted by the widow and children of Hoki-no-kami Korefuyu, lord of Kakuyoku Castle, who died fighting the Shimazu clan in 1580, as a memorial and act of Buddhist devotion (isshingyo = single-minded practice), which is also the source of the tree's name. History of damage: lightning split the trunk into six sections in the early Showa era (1920s-30s), and 2004 typhoons further damaged the main limbs, changing its shape from a dome to an M-shape; it has been under restoration care by the Kumamoto Green Foundation. IMPORTANT AND RECENT (flag heavily): multiple 2026 sources (minamiaso.info's own village-magazine posts) report the tree is currently receiving medical treatment for weakened condition/disease, that the annual Sakura Festival was cancelled in both 2025 and 2026 specifically because of this, that park access was restricted 16 March-15 April 2026, and that the timing of any return to normal access or of a 2027 festival 'remains undetermined, contingent on the tree's recovery.' This is recent, dated, credible evidence the tree is ALIVE (receiving active treatment) but is currently unwell, so curation_status is flagged and access should be described honestly as currently restricted/uncertain rather than as open a all times; do not present this as a routine paid-entry or normal free-access case. Coordinate (32.834467, 131.045852) is corroborated independently by the exact same parcel address (3226-1 Nakamatsu) given by three separate sources (village government, kumamoto.guide, mt-torokko.com), so treated as confirmed rather than approximate. Attracts an estimated 200,000 visitors annually in a normal year, and is often shown alongside a surrounding field of rapeseed flowers blooming at the same time."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "TBD_001",
+    "name": "Sawatari no Kaya no Ki",
+    "species": "Japanese Torreya (Torreya nucifera)",
+    "age_estimate": "roughly 450 to 500 years",
+    "age_min": 450, "age_max": 500,
+    "girth_cm": 310,
+    "location": {"address": "Yoshida-Sawatari, Taiwa, Kurokawa District, Miyagi Prefecture, near the Hatasaka/Masuzawa trailhead for Mount Funagata", "latitude": 38.4575, "longitude": 140.6804, "neighbourhood": "Sawatari, Taiwa Town"},
+    "verified_sources": ["https://commons.wikimedia.org/wiki/File:SawatariFunagata.JPG", "https://www.town.taiwa.miyagi.jp/soshiki/machizukuriseisaku/machizukuri_suishin/mahorobahyakusen/777.html"],
+    "access": "Free, on a public roadside/trailhead area used for hiking Mount Funagata's Masuzawa course",
+    "transport": "No public transport; roughly 40 minutes by car from Yoshioka (Taiwa town centre)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Torreya nucifera (kaya) said locally to have been planted in the Date clan era (Edo period) to mark distances along the old road connecting Yoshioka and Yamagata Prefecture, and to have served as a rest stop for travellers. Named tree #1 on Taiwa Town's own official 'Mahoroba Hyakusen' (100 Selections) heritage list, confirmed via the Wayback Machine (title exactly matches, snapshot 2024-08-23) though the live town URL now 404s (checked directly 2026-09-18, not just via search cache) -- record this as a source that has gone offline since designation, not as evidence against the designation. Figures for height (~16.0m), girth (~3.10m = 310cm) and age (450-500 years) come from the same town page, reproduced consistently across two independent search-engine snippets of it, but I could not re-fetch the live body text myself to see the number in context, so treat age/girth as single-sourced and flagged rather than fully independently confirmed. Second, genuinely independent confirmation is the Commons photograph (ToshiJapon, 9 May 2015, CC BY-SA 4.0), captioned in Japanese 'Sawatari's Torreya tree and Mount Funagata entry registration post', which confirms the tree exists, is named locally exactly as expected, stands beside the Mount Funagata trailhead register box in the Sawatari area, and was alive and photographed in 2015. No coordinate on the photo itself. Location pin uses Hatasaka Campground's published coordinates (the trailhead area for the same Masuzawa course, address Yoshida, Masuzawa, Taiwa) as the nearest fixed point; the tree itself is unpinned at tree level, hence approximate. No news of felling or death found. Species: Torreya nucifera is the standard match for 'kaya' (榧); not contradicted anywhere."
+  },
+  {
+    "id": "TBD_003",
+    "name": "Shidare Katsura of Ryugen-ji",
+    "species": "Katsura (Cercidiphyllum japonicum), weeping form",
+    "age_estimate": "roughly 200 years",
+    "age_min": 190, "age_max": 220,
+    "girth_cm": 350,
+    "location": {"address": "Ryugen-ji temple, Ohgayu, Morioka City, Iwate Prefecture", "latitude": 39.6134, "longitude": 141.2366, "neighbourhood": "Ohgayu, Morioka"},
+    "verified_sources": ["https://ja.wikipedia.org/wiki/%E7%80%A7%E6%BA%90%E5%AF%BA%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%82%AB%E3%83%84%E3%83%A9", "http://www.hitozato-kyoboku.com/ryuugenji-shidarekatsura.htm", "https://commons.wikimedia.org/wiki/File:Shidarekatsura2_Takigenji.jpg"],
+    "access": "Free, on temple grounds (behind the main hall, at the edge of the graveyard); Ryugen-ji is an ordinary working Soto Zen temple, grounds open, no gate or booking involved",
+    "transport": "No station nearby; Ohgayu is a rural district outside central Morioka, reachable by car",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A genuinely rare weeping-form variant of an ordinary katsura, which is why it and two clonal sister specimens elsewhere in Morioka (at 'Kado' and 'Sakanacho') were designated together as a single national Natural Monument (国指定天然記念物, simply named 'Shidarekatsura') on 9 December 1924 -- the designation covers three named individual trees, this one being at Ryugen-ji (瀧源寺, temple founded 1574, Soto Zen). History per the Morioka city board of education's own 1994 on-site sign (relayed on both ja.wikipedia and hitozato-kyoboku.com): the original weeping katsura was found wild in the mountains of Uchikawame, Ohasako (now part of Hanamaki), roughly 400 years ago, first transplanted to Myosen-ji temple, then moved again to Ryugen-ji by its founding priest. That original trunk grew to over 30m before being felled in 1824 (Bunsei 7) for timber to repair the main hall; the tree standing today grew from a sucker off the old stump, which is why its age (roughly 180 years per the 1994 signage, so by calculation nearer 200-215 years now in 2026) is much younger than the tree's own documented history. Height ~21m, girth (目通り幹囲, measured at breast height) ~3.5m/350cm per the same 1994 sign -- note this single physical measurement is what both Wikipedia and hitozato-kyoboku.com repeat, so treat it as one underlying data point cited twice rather than two separate measurements, though the tree's existence, species, location and designation are corroborated independently by the Commons photograph (Ty19080914, 4 May 2018, CC BY-SA 4.0, directly captioned 'Shidare Katsura of Takigenji'), which also confirms it was alive and in leaf in 2018. Exact coordinates (39.6134, 141.2366) come from hitozato-kyoboku.com's own stated lat/long, given to within a second of arc, matching a temple compound so treated as confirmed. A sister tree at 'Kado' in Morioka (22m, girth 3.3m, ~140 years, also 1924-designated) is shown in the second Commons photo for this candidate (File:Shidarekatsura_Kado.jpg) but I could not find its exact address within this pass's time budget -- flagging it in my report as a separate lead worth a short follow-up rather than pinning it speculatively here."
+  }
+]
