@@ -197,8 +197,80 @@ export const SIGNIN_JS = `
     var t = e.target.closest('[data-signin]');
     if (t) { e.preventDefault(); window.atOpenSignIn(); }
   });
+
+  // SIGNING IN NEVER TAKES YOU OFF YOUR PAGE. Hidde, 2026-09-18: "hij moet
+  // zich vertonen over de pagina waar je bent zodat je terug kan naar waar je
+  // was." The nav's account entries pointed at /account, so signing in from a
+  // tree page meant leaving it, and the only way back was the back button.
+  // The heart has opened this sheet in place since the day it was built; the
+  // nav simply never did, because for most of the site there was no sheet to
+  // open (it is Base's now, which is the other half of this change).
+  //
+  // Signed IN they still go to /account, because then it is a real page with
+  // your trees on it rather than a sign-in form. On /account itself there is
+  // nothing to open a sheet over, so those links are left alone.
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest ? e.target.closest('a[href^="/account"]') : null;
+    if (!a) return;
+    if (document.documentElement.dataset.signedIn === '1') return;
+    if (location.pathname.replace(/\/+$/, '') === '/account') return;
+    e.preventDefault();
+    var d = a.closest('details');
+    if (d) d.open = false;
+    window.atOpenSignIn();
+  });
   document.getElementById('signin-close').addEventListener('click', function() { dlg.close(); });
   dlg.addEventListener('click', function(e) { if (e.target === dlg) dlg.close(); });
+
+  // SWIPE IT AWAY. The handle has been drawing a promise since the sheet took
+  // this shape and nothing honoured it (Hidde, 2026-09-18). Material 3 settles
+  // a modal bottom sheet to a detent or to hidden, so a downward drag is a
+  // dismissal; ours has one stop, so it is open or gone. Apple's sheets are
+  // the same gesture, which is why no invention was needed here.
+  //
+  // Phone only. Above 600px this is a centred dialog and a drag would mean
+  // nothing; the close button, the backdrop and Escape work at every width.
+  (function() {
+    var mq = window.matchMedia('(max-width: 600px)');
+    var y0 = 0, dy = 0, t0 = 0, active = false;
+    function rest() { dlg.classList.remove('is-dragging'); dlg.style.transform = ''; }
+    dlg.addEventListener('touchstart', function(e) {
+      if (!mq.matches || e.touches.length !== 1) return;
+      // A finger landing on a scrolled sheet scrolls it. Only a sheet already
+      // at its top can be dragged away, which is the map sheet's rule too and
+      // is what stops the two gestures fighting.
+      if (dlg.scrollTop > 0) return;
+      active = true; y0 = e.touches[0].clientY; dy = 0; t0 = Date.now();
+      dlg.classList.add('is-dragging');
+    }, { passive: true });
+    dlg.addEventListener('touchmove', function(e) {
+      if (!active) return;
+      dy = e.touches[0].clientY - y0;
+      // Down only: there is nothing above this sheet to drag it into.
+      if (dy <= 0) { dy = 0; dlg.style.transform = ''; return; }
+      e.preventDefault();
+      dlg.style.transform = 'translateY(' + dy + 'px)';
+    }, { passive: false });
+    function release() {
+      if (!active) return;
+      active = false;
+      dlg.classList.remove('is-dragging');
+      // Far enough, or a flick. The flick matters: a short fast swipe is how
+      // people actually dismiss a sheet, and distance alone refuses it.
+      var far = dy > dlg.offsetHeight * 0.25;
+      var flick = dy > 40 && (Date.now() - t0) < 300;
+      if (far || flick) {
+        dlg.style.transform = 'translateY(100%)';
+        setTimeout(function() { dlg.close(); }, 220);
+      } else {
+        dlg.style.transform = '';
+      }
+    }
+    dlg.addEventListener('touchend', release);
+    dlg.addEventListener('touchcancel', release);
+    // A reopened sheet must not inherit where the last drag left it.
+    dlg.addEventListener('close', rest);
+  })();
   document.getElementById('signin-form').addEventListener('submit', function(ev) {
     ev.preventDefault();
     var email = document.getElementById('signin-email').value.trim();
