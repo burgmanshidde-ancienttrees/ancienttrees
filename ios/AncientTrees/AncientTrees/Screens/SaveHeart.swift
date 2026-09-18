@@ -56,7 +56,12 @@ struct SaveHeart: View {
 
     private func tap() {
         guard account.isSignedIn else {
-            nudge.require(.keepTree(tree.name))
+            // Replayed only if it is not already there. Signing in merges what
+            // the account holds, which can include this very tree kept on
+            // another device, and a blind toggle would then UN-save it.
+            nudge.require(.keepTree(tree.name)) {
+                if !saved.isSaved(tree.id) { saved.toggleSaved(tree.id) }
+            }
             return
         }
         if isSaved {

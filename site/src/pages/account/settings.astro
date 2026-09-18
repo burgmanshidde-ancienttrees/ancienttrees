@@ -98,6 +98,18 @@ const crumbItems: [string, string | null][] = [
         disclosure triangle. */}
     <div class="acct-rows acct-rows-sep">
       <button type="button" id="signout" class="acct-row acct-linkrow acct-rowbtn">Sign out</button>
+      {/* ASKED FIRST, as the app asks (Screens/Profile.swift, Hidde 2026-08-24:
+          "dit is raar" about signing out on one tap). It matters more here than
+          the word suggests: what it looks like you are about to lose is your
+          collection. The app draws it as a confirmation dialog on the button
+          and this page draws it as the panel the delete row beside it already
+          uses, which is the both-surfaces rule read correctly: the behaviour
+          matches, the design is each surface's own. */}
+      <div id="out-panel" class="acct-danger-body" hidden>
+        <p class="acct-fine">Your trees stay on your account. Signing in again on any device brings them back.</p>
+        <button type="button" id="out-yes" class="go-btn">Sign out</button>
+        <button type="button" id="out-no" class="acct-link">Stay signed in</button>
+      </div>
     </div>
     <div class="acct-rows">
       <button type="button" id="del-open" class="acct-row acct-linkrow acct-rowbtn danger">Delete account</button>
@@ -184,14 +196,41 @@ const crumbItems: [string, string | null][] = [
     });
   });
 
-  document.getElementById("signout").addEventListener("click", function() {
+  var outBtn = document.getElementById("signout");
+  var outPanel = document.getElementById("out-panel");
+  outBtn.addEventListener("click", function() {
+    outPanel.hidden = false; outBtn.hidden = true;
+    document.getElementById("out-yes").focus();
+  });
+  document.getElementById("out-no").addEventListener("click", function() {
+    outPanel.hidden = true; outBtn.hidden = false; outBtn.focus();
+  });
+  document.getElementById("out-yes").addEventListener("click", function() {
     var cur = session();
     if (cur) fetch(SB + "/auth/v1/logout", { method: "POST",
       headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token } }).catch(function() {});
     try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
     // Signing out takes everything off the screen, because everything lives in
     // the account now: there is nothing left on the device to clear.
-    location.href = "/account";
+    //
+    // AND IT LEAVES YOU WHERE YOU ARE (2026-09-18). It used to send you to
+    // /account, which for somebody who has just signed out is the sign-in form:
+    // the last thing signing out did was ask you to sign in again. Our own app
+    // does the conventional thing already, swapping the row under your finger
+    // to "Sign in" and leaving you on the screen you were reading, and this is
+    // that. The change of state IS the acknowledgement, which is the pattern
+    // this project uses everywhere rather than a toast (CONVENTIONS.md,
+    // landing after you have added something).
+    outPanel.hidden = true; outBtn.hidden = false;
+    var out = document.getElementById("set-out");
+    out.innerHTML = 'You are signed out. <a href="/account">Sign in</a> to get your trees back.';
+    signedOut();
+    // The bar swapped itself on load and nothing has reloaded, so it would
+    // still be claiming you are signed in. Base owns that painting in both
+    // directions, so this asks rather than repeating it.
+    if (window.atPaintNav) window.atPaintNav(false);
+    try { localStorage.removeItem("ancienttrees_pending"); } catch (e) {}
+    try { at.track("signout"); } catch (e) {}
   });
 
   // Account deletion: calls the delete_user() SECURITY DEFINER function in
@@ -222,7 +261,14 @@ const crumbItems: [string, string | null][] = [
       .then(function(r) {
         if (r.ok) {
           try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
-          location.href = "/account";
+          // IN PLACE, for the same reason signing out is (above): sending
+          // somebody who has just deleted their account to the sign-in form is
+          // the wrong last word, and it is the same page they would have to
+          // read to understand what happened.
+          var gone = document.getElementById("set-out");
+          gone.textContent = "Your account is deleted, with everything it held. Nothing of yours is left here.";
+          signedOut();
+          if (window.atPaintNav) window.atPaintNav(false);
         } else {
           delBtn.textContent = "Deletion failed. Try again, or email us via the privacy page.";
         }

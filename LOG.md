@@ -1,6 +1,69 @@
 # LOG
 
 <!-- archive-index -->
+
+## 2026-09-18 (session 5) - Benchmarked the sign in / sign out flow, which never had been, and fixed what it found
+
+Hidde asked whether the whole sign in / sign out flow had ever been
+benchmarked, saying it feels clunky which pages he lands on. **It had not.**
+CONVENTIONS.md carries five entries on the sign-in SHEET (its shape, Google in
+front and Apple behind More options, what it says, why web and app draw
+different buttons) and every one of them is about the moment of ASKING.
+Nothing anywhere covered the moment after, which is where the flow was broken.
+
+**Three faults, all verified against the built output rather than by reading
+source.**
+
+1. **The page you land on painted itself SIGNED OUT.** Your own saves
+   invisible, the tick blank, /account/settings saying you are not signed in,
+   until you reloaded by hand.
+2. **The act that asked for the sign-in was dropped.** Press Save, sign in,
+   land back on the tree with it unsaved. The app had the same hole.
+3. **Signing out sent you to /account**, which for somebody who has just
+   signed out is the sign-in form. The last thing signing out did was ask you
+   to sign in.
+
+**The cause of (1) was one thing in the wrong place, and it explains why it
+survived so long.** A magic link and a Google return come back as an ORDINARY
+PAGE LOAD with the tokens in the url fragment, and that fragment was parsed at
+the FOOT of the body. Every script that asks who you are runs earlier: the
+hearts, the ticks, the worth-it vote, the settings page. All of them asked
+before the answer existed. It hid because the two surfaces anybody checks were
+the two that happened to be fine: /account parses the fragment itself, and the
+nav's "Account" swap is a type="module" script, which the browser defers until
+after every classic script, so it was right by accident of deferral.
+
+**What changed.** SIGNIN_CATCH_JS now catches the token in the HEAD, so
+whatever a page asks it gets the right answer on the first ask. What the person
+was doing is carried across the round trip and replayed once the account's
+lists have landed, idempotently, so a tree already saved on another device is
+never toggled back off. A save and a tick are replayed; a VOTE is deliberately
+not, because an opinion is not something to post on somebody's behalf because
+they signed in afterwards. Sign-out and account deletion both land in place
+with the state around them swapped, and sign-out is asked once first, as the
+app already asks. Nudge.finish does the replay half in the app.
+
+**Two things found on the way.** The nav's signed-in swap was typed in English
+and this bar renders in eight languages, so signing in turned Konto, Compte and
+Cuenta into "Account" on every translated page; and nothing could ever swap it
+back, so an in-place sign-out would have left a bar still claiming you were
+signed in. One painter now does both directions in the page's own language.
+
+**The ratchet.** check_the_session_is_known_before_anything_asks() in qa.py
+refuses a build where anything reads the session before the head catches the
+token, and refuses a catch written as a type="module" script, which is the
+exact subtlety that masked this. Removing it needs Hidde. The convention is
+written up in CONVENTIONS.md with its references, so the next session does not
+repeat the search.
+
+**Left alone, deliberately.** WalkMode's tick leads into a camera flow, so
+replaying it would open a camera unexpectedly. The OAuth redirect_to still
+drops the query string: ?kind= on /contribute survives anyway because the
+draft carries sg-kind, and widening it means touching the Supabase redirect
+allow-list, which cannot be tested from here. The app half is written and
+pushed in the same change, per the cross-platform default, and is compiled only
+by ios.yml: this sandbox has no Xcode.
+
 ## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
 
 An earlier attempt this window stopped after 43 minutes having shipped

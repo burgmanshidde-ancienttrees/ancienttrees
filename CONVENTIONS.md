@@ -2249,3 +2249,74 @@ we publish one, ours stays and yours stays yours. Same rule on both surfaces:
 What this is NOT: publishing. A photograph on the page for everybody is a
 separate decision made by a viewing pass (CLAUDE.md, Step 0b), and it needs
 somebody to look at the pixels first.
+
+---
+
+## Where you land after signing in and after signing out (2026-09-18)
+
+**Looked up because Hidde asked whether the sign in / sign out flow had ever
+been benchmarked and said it feels clunky about which pages he ends up on. It
+had not.** This file already carries five entries on the sign-in SHEET: its
+shape, its button order, Google in front and Apple behind More options, what it
+says, and why the web and the app draw different buttons. Every one of them is
+about the moment of asking. Nothing anywhere covered the moment after, which is
+where the flow was actually broken.
+
+**Reference: the pattern already in this file, "Landing after you have added
+something" (2026-09-01).** It was written about adding a tree and it transfers
+whole, because signing in is the same shape of act: you land on the THING, it
+is acknowledged at the moment it happens without a modal, and its state is
+written ON it and stays there while it is true. A toast is not the
+acknowledgement; the state is.
+
+**Reference: our own app, which had it right.** `SignInSheet` is a sheet over
+whatever screen you were on. Signing in shows a spinner and dismisses back onto
+that screen. You never go anywhere. Signing out from Settings leaves you on
+Settings with the identity row swapped to "Sign in" and your collection safely
+in the account. The website did neither.
+
+**Reference: Material 3, snackbar and acknowledgement.** An acknowledgement is
+one line, non-interruptive, and never a screen. Which is the argument for NOT
+building a toast here: our house answer is the same one WorthIt.swift and
+`TreeDetail.mineStatus` already give, that a toast leaves no trace for somebody
+coming back an hour later, so the lasting state does the job instead.
+https://m3.material.io/components/snackbar/guidelines
+https://m2.material.io/design/communication/confirmation-acknowledgement.html
+
+**Reference: OAuth's own return leg.** The provider hands the person back to a
+redirect URI, and sending them on from there to where they started is the
+CLIENT's job, not the provider's. Ours passes the current path as `redirect_to`
+and so returns to the right URL; what it did not do is make the page work when
+it arrived.
+https://auth0.com/docs/authenticate/login/redirect-users-after-login
+
+**So the rule, in three parts.**
+
+1. **Signing in never moves you.** You come back to the page you were on, and
+   that page shows you signed in on its FIRST paint, not after a reload.
+2. **The act that asked for the sign-in is finished.** A gate turns one press
+   into a sign-in; pressing it a second time afterwards is the person doing our
+   bookkeeping. This binds a GATE (a save, a tick: one press, the account was
+   the only thing in the way) and never an opinion. A vote or a report is not
+   posted on somebody's behalf because they signed in afterwards.
+3. **Signing out leaves you where you are**, with the state around you swapped,
+   and never on a sign-in form. Landing somebody on a sign-in form is the last
+   thing signing out should do.
+
+**What ours was doing, all three wrong, and why nothing caught it.** The token
+coming back in the URL fragment was parsed at the FOOT of the body, and every
+script that asks who you are runs earlier: the hearts, the ticks, the vote,
+/account/settings. All of them asked before the answer existed and painted the
+page signed out, so you returned from Google onto your tree with your own saves
+invisible. It was masked by the only two surfaces that happened to be fine:
+/account parses the fragment itself, and the nav's "Account" swap is a
+`type="module"` script, which the browser defers until last. The save you
+pressed was dropped entirely, on the website and in the app alike. And signing
+out sent you to /account, which for somebody who has just signed out is the
+sign-in form.
+
+The fix is structural rather than per page: `SIGNIN_CATCH_JS` in the head, so
+whatever a page asks it gets the right answer on the first ask; a pending act
+carried across the round trip and replayed once the account's lists have
+landed; `Nudge.finish` doing the same job in the app; and sign-out swapping the
+page in place.
