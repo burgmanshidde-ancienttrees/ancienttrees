@@ -1,6 +1,27 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-18 Where the funnel actually leaks, and the page with the best placement on the site
+
+Hidde asked why sign-ins are so few and what would improve them. The answer is
+that sign-in is not the leak. Ten days of Search Console: 18,359 impressions,
+387 clicks, and clicks are up 26 percent across the window while CTR is flat,
+so the growth is coming from position and indexation rather than from copy.
+The running city-title copy test agrees: -0.03 index points at day 7.
+
+seolearn's own buckets say the same thing more usefully. Photographs, pins,
+ages, seasonal peaks, story length, number of trees: every bucket converts
+between index 0.40 and 0.66 and the site-wide figure is 0.48. Nothing on the
+page explains the gap, because it is uniform. Roughly a fifth of impressions
+are not people at all (queries built with Google's exact-phrase operator).
+
+The one page where the gap is a page problem rather than a SERP problem is
+Pamplona: position 3.6, the best placement we hold anywhere, 412 impressions,
+5 clicks. Its page is 14 trees with one age, no photographs and seven black
+poplars, two of them "(south)" and "(north)" of the same place. Written up in
+CURATION.md with the three cheap steps, and its meta description is fixed
+today: it led with a count and ended on the poplars.
+
 ## 2026-09-18 (session 5) - My trees and Favourites were one list: the app was writing every ticked tree into the favourites table
 
 Hidde, on his own account page: "als ik klik op My Trees op Favorites, dan
