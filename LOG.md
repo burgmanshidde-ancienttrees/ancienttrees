@@ -2,6 +2,72 @@
 
 <!-- archive-index -->
 
+## 2026-09-18 (digest session, continuation) - Pamplona: the wrong distances on the three trees that have nothing but position, and the list that could never have named this city
+
+Asked to fix Pamplona, our best-placed and worst-converting page (448
+impressions at average position 3.6, index 0.14, the biggest wasted demand on
+the site). An earlier session today had already diagnosed it and rewritten its
+meta description, so this went looking for what that entry left open. Two real
+faults, neither of them the one I expected.
+
+**The three Villava poplars carried the wrong distances, in seven places.**
+Measured from our own coordinates: pam_011 to pam_012 is 60 metres and we said
+240; pam_011 to pam_013 is 181 and we said 400. The compass directions were
+right, which is how it survived a read. All seven now carry the measured
+figure, across two access fields, two recognition lines and two stories.
+
+Why it mattered more than an ordinary slip: pam_012's recognition line opens
+"You can recognise it by position and little else", and then gave a position
+four times out. Position is the whole of what separates those three trunks, by
+our own admission, so on these trees the distance IS the entry. Somebody pacing
+240 metres for the broken-limbed poplar walks past it at 60.
+
+**And the fold suggested this morning should not happen.** 60 metres apart is
+not the Setubal twin case; pam_011 has three limbs with one dead and bare,
+pam_013 is a narrow Lombardy column, and the shared 314 cm girth is a banded
+register figure that three separate trees here carry. Only pam_012 is
+genuinely undistinguishable. Leaving all three with honest distances beats
+deleting a live page to tidy a thin one.
+
+**The photo fix could not have reached Pamplona, and now can.** This morning's
+note says the city "belongs at the top of photo_gaps.py --shortlist". It never
+could: the shortlist only prints a city that already has a candidate on file,
+and Pamplona's queue was swept to sweep 5 twice with 13 of 14 trees returning
+nothing, so it showed up on no list at all and nothing routed it to the
+medicine CLAUDE.md already names. `--shortlist` now ends with a STARVED block:
+demand cities where every candidate is judged or none was ever found, worst
+waste first, with the right command per city. It names **twelve cities holding
+337 unphotographed trees**, Pamplona top on 448 impressions, and not one has
+ever been through photo_last_resort.py. Lisbon (14 of 36), Barcelona (14 of
+56), Amsterdam, Singapore, Prague, Berlin and Rome are all on it.
+
+**Trying that sweep found a worse bug than the one it was sent to fix.** This
+sandbox's network policy refuses commons.wikimedia.org, and
+`photo_last_resort.py` swallowed the error, printed "0 new" fourteen times and
+stamped `last_resort` with today's date on every Pamplona tree. A run that never
+reached Commons once had recorded that the last resort was tried here and found
+nothing, which is precisely the verdict that would keep the site's most wasted
+city out of every future hunt. `near_files()` now separates unreachable from
+empty, an unreachable tree gets no stamp, and a run that checked nothing exits 1
+saying so. The false stamps were reverted.
+
+Still not done, and this is the honest limit: no sweep and no viewing pass can
+run from here at all. The CI runner reaches Wikimedia fine, so the next night
+run at rung 6 gets the list and the command. This morning's other open item, a
+sourced girth-increment rate for Populus nigra to unblock six ages here and 24
+site-wide, also needs a source I cannot fetch from here.
+
+**One digest line added while answering a question of his about the same data:**
+`sighting_recorded` is the collect verb firing in the app, and the table could
+not say which half happened. Sightings.record() has always sent `known_tree`
+and nothing read it, so the digest now prints the split, with the reason the
+count can run ahead of what we receive: a sighting reaches our database only
+through SightingSync.push, which returns immediately without an account
+session, so somebody collecting trees signed out is a tap we count and a tree
+we never see.
+
+Full build (12,103 pages) and qa.py clean before committing.
+
 ## 2026-09-18 (digest session) - The grouping-pages table missed its own first digest by 22 minutes, and the weekly analysis is red
 
 Asked for the daily digest, so this session read it and reported it. Two
