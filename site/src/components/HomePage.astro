@@ -1,6 +1,15 @@
 ---
 // The homepage, shared by / and the seven /<lang>/ routes.
 //
+// Convention: none NEW. This file invents no interaction; it is pages/index.astro
+// moved so seven routes can share one implementation. The interactions it holds
+// were each looked up when they were built and their references stay recorded
+// beside them below: the hero's single filled app button is komoot's phone
+// homepage, the button's shape is Polarsteps', the search field above it is
+// AllTrails', and the language bar in the footer is AllTrails and komoot both
+// (autonyms, no flags, no Accept-Language redirect, LanguagePicker.astro and
+// CONVENTIONS.md 2026-08-22).
+//
 // Extracted from pages/index.astro on 2026-09-18, the same move ExploreMap
 // got: one implementation, one file per language route, so the two cannot
 // drift. Hidde had asked where the language bar was and the honest answer was
