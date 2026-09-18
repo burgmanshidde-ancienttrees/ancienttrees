@@ -8392,6 +8392,33 @@
     "note": "20 shortlist rows, 49 candidate verdicts, 1 approved (Milan's Platano di Indro, on the Wikidata item's own coordinate at 14m, overturning an earlier geotag-based reject). Found two tool defects and fixed both: the shortlist offered 7 trees that already had photographs, and photo_apply.py's approve overwrites photo, so the list could have destroyed a lead; and measure() ignored EXIF orientation, recording portrait files as landscape.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "de-batch (regensburg, cologne, baldenhain)",
+    "kind": "translate",
+    "tokens": 61000,
+    "trees": 11,
+    "note": "German overlay, 3 cities, 11 trees plus 3 city copy sets and 12 FAQ answers, one pass, no rework",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "fr-batch (bordeaux, lyon, venon, lausanne, nantes)",
+    "kind": "translate",
+    "tokens": 232000,
+    "trees": 33,
+    "note": "7 city copy sets + FAQ + 33 stories into French, one pass; 0 species splits, all ids present. Caught a stale English count promise on lyon.json's question_meta ('eleven more' against 13 actual trees); French written with the true count, English fixed to match in the same session.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "ja-batch (takeo, uda, nagano, yabu, nagoya, miyazaki, otoyo)",
+    "kind": "translate",
+    "tokens": 105000,
+    "trees": 24,
+    "note": "7 Japanese overlays in one pass, 24 trees, all ids present; no new facts",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

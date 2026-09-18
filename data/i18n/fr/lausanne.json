@@ -1,0 +1,96 @@
+{
+ "_note": "fr overlay for lausanne, written 2026-09-18 from data/cities/lausanne.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Lausanne",
+ "title": "Arbres remarquables de Lausanne : les 8 plus beaux",
+ "meta_description": "Un chêne daté par ADN lié à une légende napoléonienne, un séquoia géant au-dessus d'Ouchy, un hêtre pleureur devenu bosquet : 8 arbres.",
+ "intro": "Lausanne tient un registre officiel de ses plus beaux arbres, et huit se groupent autour des parcs du bord du lac et du campus universitaire plutôt que dans les hauteurs. Un chêne daté par ADN et lié à une légende napoléonienne pousse sur le campus ouvert de l'UNIL ; un séquoia géant et un ginkgo, fossile vivant, partagent un parc au-dessus d'Ouchy ; un hêtre pleureur de l'Hermitage est devenu un bosquet de ses propres branches enracinées après une tempête qui a rompu son tronc en 2021. La plupart sont à quelques minutes de la gare, gratuits, et poussent toujours.",
+ "question_title": "Quel est le plus vieil arbre de Lausanne ? (1778)",
+ "question_meta": "Le plus vieil arbre cartographié de Lausanne est le Chêne de Napoléon, à l'UNIL, daté par ADN en 2017 d'une germination vers 1778, environ 248 ans.",
+ "question_answer": "Le plus vieil arbre cartographié de Lausanne est le Chêne de Napoléon, sur le campus de Dorigny de l'Université de Lausanne, un chêne pédonculé dont le bois a été daté en 2017 par analyse des cernes et du génome d'une germination vers 1778, ce qui lui donne environ 248 ans.",
+ "question_context": "La datation est inhabituellement solide pour un arbre de ville : des chercheurs ont séquencé le bois même du chêne en 2017 plutôt que de s'en remettre à la légende locale selon laquelle Étienne-François-Louis de Loys l'aurait planté en 1800 pour marquer la revue de 40 000 soldats passée par Napoléon Bonaparte non loin de là. L'analyse ADN donne à l'arbre environ 22 ans au moment de cette visite : ou bien il a poussé sur place à partir d'une graine une génération avant l'arrivée de Napoléon, ou bien il a été transplanté déjà âgé de deux décennies, et les deux lectures sont imprimées sur sa page plutôt que l'une choisie au détriment de l'autre. Ce n'est pas le seul arbre lausannois de cet âge : le cèdre du Liban du parc de Denantou est donné pour environ 250 ans par le même registre municipal, et le tilleul de Bon-Abri est peut-être plus vieux encore, 260 ans selon le chiffre du registre, même si la promenade de l'office du tourisme donne ce même arbre pour 160 ans seulement, sans que les deux aient jamais été conciliés. La méthode de datation du chêne est la plus rigoureuse des trois, et c'est pourquoi il détient le titre ici.",
+ "faq": [
+  {
+   "q": "Quel est le plus vieil arbre de Lausanne ?",
+   "a": "Le Chêne de Napoléon, sur le campus de Dorigny de l'UNIL, daté en 2017 par analyse des cernes et du génome d'une germination vers 1778, soit environ 248 ans. Deux autres arbres de cette liste, un cèdre du Liban et un tilleul contesté, ont peut-être le même âge ou davantage, mais aucun n'est daté aussi précisément."
+  },
+  {
+   "q": "Les arbres remarquables de Lausanne sont-ils gratuits à voir ?",
+   "a": "Oui, tous les huit poussent dans des parcs publics ou sur le campus universitaire ouvert, et aucun ne fait payer l'entrée. Le musée de la Fondation de l'Hermitage, à côté du hêtre pleureur, est payant, mais le parc lui-même est gratuit."
+  },
+  {
+   "q": "Pourquoi Lausanne compte-t-elle autant d'arbres notables autour de ses parcs ?",
+   "a": "La ville tient un registre officiel du patrimoine arboré qui suit ses plus beaux sujets depuis 1912 au moins, quand Henri Badoux a catalogué les arbres notables du canton, dont plusieurs sont toujours debout et toujours sur la liste."
+  },
+  {
+   "q": "Peut-on relier à pied les vieux arbres de Lausanne ?",
+   "a": "La plupart se groupent au bord du lac : le parc de Mon Repos abrite à la fois le séquoia géant et le ginkgo, le parc de Denantou et l'Hermitage sont chacun un peu plus loin, et le chêne du Musée Olympique comme le tilleul de Bon-Abri restent à portée du même bord de lac, à pied ou en métro depuis la gare."
+  }
+ ],
+ "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+ "trees": {
+  "lsn_001": {
+   "name": "Le Chêne de Napoléon",
+   "species": "Chêne pédonculé (Quercus robur)",
+   "age_estimate": "environ 245 à 250 ans, germination datée par dendrochronologie vers 1778",
+   "access": "Gratuit. Se dresse sur le campus ouvert et accessible au public de l'Université de Lausanne (UNIL) à Dorigny.",
+   "transport": "Métro de Lausanne (M1) jusqu'à UNIL-Dorigny ou UNIL-Sorge, à l'ouest de la ville.",
+   "story": "La légende dit que ce chêne a été planté pour Napoléon. Son bois dit qu'il était déjà là. En 2017, des chercheurs ont daté sa germination des environs de 1778 par analyse des cernes et du génome, ce qui lui donne environ 22 ans le 12 mai 1800, jour où Bonaparte a passé en revue 40 000 soldats à Saint-Sulpice, à quelques kilomètres le long du lac.\n\nLe récit local, que personne n'a retiré, veut qu'Étienne-François-Louis de Loys, alors propriétaire du domaine de Dorigny, ait planté l'arbre cette année-là pour marquer l'occasion. Selon cette tradition, il est arrivé sous forme de jeune sujet transplanté, déjà vieux de deux décennies et épais d'une quinzaine de centimètres, ce qui n'est pas impossible et ne ressemble guère à ce qu'on imagine en entendant qu'un arbre a été planté pour Napoléon. Les deux versions cohabitent et nous les laissons là.\n\nDans les deux cas il a germé avant la Révolution française et il pousse encore. Wikipédia en français note 35 mètres de hauteur et 6,75 mètres de circonférence ; une partie de la presse de 2017 arrondit à 30 mètres et environ 7, et personne n'a concilié les chiffres.\n\nCe qu'on ne peut pas manquer, c'est la quincaillerie. Environ 140 mètres de câbles de haubanage traversent aujourd'hui le houppier pour retenir les branches contre leur propre poids. Le chêne se dresse sur le campus ouvert de l'Université de Lausanne, qui en a fait une sorte d'emblème, et le métro vous laisse à quelques minutes."
+  },
+  "lsn_002": {
+   "name": "Le Séquoia géant du parc de Mon Repos",
+   "species": "Séquoia géant (Sequoiadendron giganteum)",
+   "age_estimate": "environ 160 ans",
+   "access": "Gratuit. Parc historique public du centre de Lausanne.",
+   "transport": "Centre de Lausanne, à quelques minutes à pied de Lausanne-Gare (gare principale).",
+   "story": "Ce séquoia méritait déjà qu'on écrive sur lui en 1912, quand Henri Badoux a catalogué les arbres notables du canton et l'a mis dans son livre. Il a poussé un siècle de plus depuis. Lausanne le note aujourd'hui à 34 mètres de haut et 7,2 mètres de tour, environ 160 ans, ce qui place sa plantation dans les décennies où les domaines européens rivalisaient pour élever le séquoia géant fraîchement importé, sans que personne n'ait la moindre idée de ce que ces arbres feraient dans un sol suisse.\n\nIl pousse près du haut de l'amphithéâtre du parc de Mon Repos, avec un ginkgo pour voisin. Le domaine est celui où Pierre de Coubertin s'est installé en 1922, quelques années après avoir fondé le mouvement olympique moderne, et le parc est à quelques minutes de la gare, ce qui en fait un arbre géant particulièrement facile à aller voir de près.\n\nLa ville le classe parmi les arbres remarquables et une fondation naturaliste locale en fait le plus beau séquoia géant de Lausanne, même si toutes les mesures remontent au relevé municipal plutôt qu'à deux mètres rubans indépendants.\n\nEn Europe, tous les séquoias géants sont des débutants. L'espèce a atteint le continent dans les années 1850, si bien que les plus vieux ont moins de deux siècles, quand ceux qui tiennent encore dans la Sierra Nevada dépassent les deux mille ans. Celui-ci a l'essentiel de sa vie devant lui."
+  },
+  "lsn_003": {
+   "name": "Le Hêtre pleureur de l'Hermitage",
+   "species": "Hêtre pleureur (Fagus sylvatica 'Pendula')",
+   "age_estimate": "plus de 170 ans",
+   "access": "Gratuit. Parc historique public (le musée de la Fondation de l'Hermitage a sa propre billetterie, mais le parc est ouvert).",
+   "transport": "Centre de Lausanne, au-dessus du bord du lac, à environ 15 à 20 minutes à pied de la gare ou accessible en bus.",
+   "story": "Le tronc avec lequel cet arbre avait commencé s'est rompu dans la nuit du 20 juin 2021, pendant une tempête. L'arbre n'est pas mort, parce qu'il avait passé les 170 années précédentes à se planter lui-même, tranquillement. Un hêtre pleureur laisse ses branches tomber jusqu'au sol, et là où elles touchent et restent, elles s'enracinent. Bien avant la tempête, le sujet d'origine avait dressé une couronne de tiges filles sorties de ses propres branches retombantes, génétiquement le même individu, et le relevé de la Ville de Lausanne dit clairement que ce sont elles qui perpétuent aujourd'hui son existence.\n\nCe qui se dresse au sommet du parc de l'Hermitage tient donc moins d'un sujet que d'une pièce. Les vieux hêtres pleureurs font une grotte vivante : un rideau de branches jusqu'au sol, un creux sombre à l'intérieur, et des générations d'enfants qui découvrent qu'on peut y entrer. Celui-ci a été planté vers 1851 et a atteint 4,4 mètres de tour, le point de repère du haut du parc.\n\nUne seule source porte tout cela, la page du patrimoine arboré de la ville, et il faut dire que nous n'avons trouvé aucun second récit ni photographie récente montrant comment se portent les rejets. Si vous montez là-haut, nous aimerions savoir ce que vous avez vu.\n\nLe parc est gratuit. Le musée installé dans la maison voisine est payant."
+  },
+  "lsn_004": {
+   "name": "Le Chêne du Musée Olympique",
+   "species": "Chêne pédonculé (Quercus robur)",
+   "age_estimate": "environ 200 ans",
+   "access": "Gratuit. Se dresse dans les jardins publics du Musée Olympique (Parc Olympique), sur les quais d'Ouchy ; le bâtiment du musée est payant, mais ses jardins sont ouverts.",
+   "transport": "Métro M2 jusqu'à Ouchy-Olympique, puis quelques minutes à pied le long du lac.",
+   "story": "C'est le bâtiment qui a bougé, pas l'arbre. Quand le Musée Olympique s'est construit sur les quais d'Ouchy, le projet prévoyait d'abattre ce chêne, et Juan Antonio Samaranch, alors président du Comité international olympique, est intervenu personnellement pour faire redessiner le plan autour de lui.\n\nLe registre du patrimoine arboré de la Ville de Lausanne et Lausanne Tourisme s'accordent sur le reste : un chêne pédonculé d'environ deux siècles, 29 mètres de haut, 4,62 mètres de tour de tronc. Cela situe sa germination quelque part dans les années 1820 : il était donc déjà adulte lors des premiers Jeux modernes en 1896, et il tenait ce terrain depuis bien plus d'un siècle avant que quiconque songe à installer le musée du mouvement olympique sur cette rive.\n\nCe qu'il n'est pas, c'est théâtral. Les deux sources font la même observation, à savoir que de loin le chêne se fond dans la verdure générale du parc et y disparaît, et qu'une fois repéré il devient le point focal du lieu. Un chêne pédonculé fait cela : des branches basses lourdes, un large houppier, rien de vertical pour accrocher l'œil tant qu'on n'est pas dessous.\n\nIl pousse au nord du musée, près de l'entrée du Tom Café. Les jardins sont gratuits et ouverts ; le bâtiment est payant. Le métro M2 jusqu'à Ouchy-Olympique vous laisse à quelques minutes."
+  },
+  "lsn_005": {
+   "name": "Le Cèdre du Liban du parc Denantou",
+   "species": "Cèdre du Liban (Cedrus libani)",
+   "age_estimate": "environ 250 ans",
+   "access": "Gratuit. Parc public au bord du lac.",
+   "transport": "Secteur centre de Lausanne / Ouchy, accessible à pied depuis la promenade du bord du lac.",
+   "story": "Sept mètres et demi de tour, et dix-huit mètres de haut seulement. Les arbres aussi épais sont d'ordinaire bien plus hauts, et celui-ci ne l'est pas : il a passé deux siècles et demi à aller vers l'extérieur plutôt que vers le haut, ce que fait un cèdre du Liban une fois qu'il cesse de courir. La flèche s'aplatit, les branches partent à l'horizontale, et le houppier s'assemble en étages, une table vert sombre empilée sur l'autre.\n\nLe registre du patrimoine arboré de la Ville de Lausanne et Lausanne Tourisme donnent les mêmes chiffres : environ 250 ans, 18 mètres de hauteur, 7,40 mètres de circonférence. Une germination dans les années 1770 rend l'arbre plus vieux que le canton de Vaud lui-même, qui n'est né qu'en 1803.\n\nLa foudre l'a frappé en 2003 et lui a emporté une branche. Il a continué. Les deux sources le notent en bonne santé depuis, avec un tronc dont on attend encore qu'il s'épaississe, ce qui ne se dit pas de tous les arbres de 250 ans inscrits à un registre municipal.\n\nLes cèdres dont descend cette espèce poussent sur les montagnes du Liban et de Syrie, où les plus vieux sont les survivants dispersés de forêts exploitées depuis l'Antiquité. Le parc de Denantou est gratuit, ouvert et plat, à quelques minutes de la promenade du bord du lac."
+  },
+  "lsn_006": {
+   "name": "Le Ginkgo du parc de Mon Repos",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "environ 160 ans",
+   "access": "Gratuit. Parc historique public du centre de Lausanne, le même parc que le Séquoia géant déjà publié (lsn_002).",
+   "transport": "Centre de Lausanne, à quelques minutes à pied de Lausanne-Gare (gare principale).",
+   "story": "Toutes les autres espèces de l'ordre du ginkgo sont des fossiles. Ginkgo biloba est celle qui est encore là, à peu près inchangée depuis une époque antérieure aux arbres à fleurs, et c'est pourquoi les botanistes sortent l'expression de fossile vivant chaque fois qu'il en pousse un dans un parc.\n\nCelui-ci se dresse au parc de Mon Repos depuis environ 160 ans. Il fait aujourd'hui 25 mètres de haut, avec un tronc de 3,70 mètres de tour, et il méritait déjà d'être consigné en 1912, quand Henri Badoux a catalogué les arbres notables du canton et l'a inscrit à côté du séquoia géant qui pousse à quelques pas dans le même parc. Le nom français de l'espèce est l'arbre aux quarante écus, et c'est ainsi que Lausanne appelle cet arbre. Le relevé de la ville ajoute qu'il a inspiré le romancier Bernard Clavel.\n\nVenez début novembre. Les feuilles du ginkgo sont des éventails plats, fendus au milieu et sans nervure centrale, et elles virent à l'or sur tout le houppier à quelques jours d'intervalle, puis tombent presque d'un coup. La ville comme Lausanne Tourisme désignent cette quinzaine comme le moment d'aller voir cet arbre précis.\n\nIl pousse derrière la Campagne de Mon-Repos, la maison qui a autrefois abrité le Comité international olympique. Le parc est gratuit et à quelques minutes de la gare."
+  },
+  "lsn_007": {
+   "name": "Le Tilleul de Bon-Abri",
+   "species": "Tilleul à grandes feuilles (Tilia platyphyllos)",
+   "age_estimate": "environ 160 à 260 ans (les sources divergent)",
+   "access": "Gratuit. Se dresse au bord d'un chemin public et d'un belvédère, sur le chemin de Bon-Abri.",
+   "transport": "Secteur de la colline du Languedoc, au-dessus du centre de Lausanne ; accessible à pied ou par les bus locaux.",
+   "story": "Le registre des arbres de la ville et son office du tourisme se contredisent de cent ans sur ce tilleul. La liste du patrimoine lausannois lui donne 260 ans. La promenade de Lausanne Tourisme, qui décrit le même tronc au même angle de rue, dit 160.\n\nSur tout le reste ils concordent, et c'est ainsi qu'on sait qu'il s'agit d'un seul arbre et non de deux : un tilleul à grandes feuilles, 16 mètres de haut, un tronc de 5,52 mètres de tour selon le mètre de la ville et de 550 centimètres selon celui de l'office, à l'endroit où le chemin du Languedoc rejoint le chemin de Bon-Abri. Personne n'a comblé l'écart. Dans une lecture, cet arbre était déjà grand quand le Pays de Vaud était encore terre bernoise ; dans l'autre, il a été planté à peu près quand le chemin de fer est arrivé. Nous imprimons les deux chiffres plutôt que de choisir le plus flatteur.\n\nCe qu'aucune version ne conteste, c'est le tronc lui-même, creux, ramassé, presque replié sur lui-même. La description de la ville en fait un vétéran qui se fait discret, ce qui est juste : pas de clôture, pas de plaque, pas de chemin tracé jusqu'à lui.\n\nIl y a un banc, en revanche, et une vue. L'arbre se dresse sur un belvédère avec le Léman devant lui sans rien qui coupe, panorama que l'office classe parmi les meilleurs de Lausanne. Si vous savez quelque chose qui date ce tilleul, dites-le-nous."
+  },
+  "lsn_008": {
+   "name": "Le Noyer noir de la Campagne Rohner",
+   "species": "Noyer noir (Juglans nigra)",
+   "age_estimate": "environ 150 ans",
+   "access": "Gratuit. Se dresse dans un espace vert urbain à quelques minutes à pied de la place de la Navigation, sur le bord du lac Ouchy/Rhodanie.",
+   "transport": "Métro M2 jusqu'à Ouchy, ou bus jusqu'à la place de la Navigation ; courte marche le long du lac.",
+   "story": "La promenade que Lausanne consacre à ses plus beaux arbres finit sur un arbre venu du mauvais continent. Le noyer noir est une espèce de l'est de l'Amérique du Nord, et celui-ci domine le bord du lac d'Ouchy depuis environ 150 ans.\n\nIl est grand pour une espèce qui en a rarement l'occasion ici. Le registre du patrimoine arboré de la ville mesure le tronc à 3,46 mètres de tour et l'arbre à 27 mètres de haut. Lausanne Tourisme, qui en a fait la cinquième et dernière étape de sa promenade arborée, donne 3,50 mètres et 25 mètres. C'est l'écart ordinaire entre deux personnes munies d'un mètre et d'un clinomètre, et les deux s'accordent sur l'âge.\n\nLe distinguer du noyer commun que tout le monde connaît demande un deuxième regard. La description de la ville pointe les folioles, plus étroites que celles de Juglans regia, et une écorce bâtie sur un autre dessin. L'office du tourisme ajoute qu'un noyer de cette taille en pleine ville est rare en soi.\n\nUne réserve, et elle nous appartient plutôt qu'à l'arbre. La ville nomme le lieu Campagne Rohner ; l'office appelle le même carré de verdure parc de Rhodanie. L'espèce, l'âge et la circonférence concordent d'assez près pour qu'il s'agisse presque certainement d'un seul arbre décrit deux fois, mais nous n'avons pas pu confirmer que les deux noms couvrent exactement le même terrain : le point marque donc les environs de la place de la Navigation plutôt que le tronc lui-même."
+  }
+ }
+}

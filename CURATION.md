@@ -18,6 +18,34 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-18 (session 11, continuation) - Three translation batches: German, French, Japanese, 15 cities
+
+`langcheck.py --next` named the top untranslated city per proven language
+area (de, es, fr, ja all past their English twin per city). Batched the
+three with more than one candidate worth a pass: `transbrief.py --brief de
+regensburg cologne baldenhain` (3 cities, 11 trees), `--brief fr bordeaux
+lyon venon lausanne nantes` (5 cities, 33 trees), `--brief ja takeo uda
+nagano yabu nagoya miyazaki otoyo` (7 cities, 24 trees). Dispatched all
+three as translate passes in parallel (Opus, per the agent's own model
+pin), applied each answer with `transbrief.py --apply`, fixed two overlong
+meta fields the German pass produced (baldenhain's meta_description,
+regensburg's question_meta, both over the 155-char cap), and confirmed
+`i18ncheck.py` clean at 82 overlays (was 67 going in).
+
+**The French pass caught a real bug in the English source while
+translating it**: `data/cities/lyon.json`'s `question_meta` said "eleven
+more" trees where Lyon holds 13 (1 named + 11 = 12, not 13), stale since
+some earlier growth pass added a tree without updating this line. Fixed
+the English to "twelve more" in the same session so both languages agree;
+the French overlay already had the correct count because the translator
+wrote what was true rather than what the English said.
+
+Verified with a full local `astro build` (12,103 pages) and `qa.py`
+(16,031 pages, clean) before committing. Nothing else was found broken;
+one lesson recorded for future translation batches: pick by measured
+impressions per city per CLAUDE.md's rung 0b correction, not by fame, and
+`langcheck.py --next` already does that.
+
 ## 2026-09-18 (photo viewing pass) - Milan's plane approved; Arnhem's photo queue is now an honest, documented dead end
 
 20 shortlist rows judged, 49 candidate verdicts written, 1 approved.
