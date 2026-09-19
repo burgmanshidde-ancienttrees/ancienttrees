@@ -15837,6 +15837,38 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-18T23:12:43+00:00",
+   "date": "2026-09-19",
+   "run_id": "35404768130",
+   "minutes": 92.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 429,
+   "denials": 27,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(git), Bash(grep), Bash(if), Bash(jobs), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(which)",
+   "ended": "success",
+   "tokens": 40540599,
+   "claims_held": [],
+   "commits": 7,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "reno-valdieu",
+     "trees": 4
+    },
+    {
+     "city": "senonches",
+     "trees": 4
+    },
+    {
+     "city": "pamplona",
+     "trees": 0
+    }
+   ],
+   "trees": 8,
+   "logged": true
   }
  ],
  "schedule_changes": [
