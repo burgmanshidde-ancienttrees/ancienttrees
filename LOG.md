@@ -2,6 +2,56 @@
 
 <!-- archive-index -->
 
+## 2026-09-19 (night run, continuation) - Two French forest pages an earlier attempt left uncommitted, plus two photos and two ONF-panel ages found while finishing them
+
+Resumed a window that had stopped after 54 minutes with 66 unspent, having
+shipped nothing to a commit despite the work being done: `data/cities/
+senonches.json` and `data/cities/reno-valdieu.json` (4 trees each, from the
+Perche region, already verified in `data/research/famousfrance-verified.json`
+and staged in `data/leads/_famous-france.json`) sat finished and uncommitted.
+Both are honest, well-sourced pages and are now live.
+
+**Senonches** (Chêne Fauteuil, Les Trois Frères, a chestnut, a ring of 1854
+sequoias) clears the four-tree floor on its own waymarked "venerable trees"
+loop, all free, all well documented with girths and a specific age for the
+two named oaks.
+
+**Réno-Valdieu**, 28-30km away, is the "série artistique de la Gautrie": four
+oaks dedicated to Oxford, Aberdeen, the Forestry Commission and a forestry
+congress, at Carrefour Degraine, and it stayed honest about what it did not
+know: no individual girth or age for two of the four, sources disagreeing on
+the whole série's age (200-300 vs ~350), and no source settling which
+physical trunk carries which name.
+
+**Then found something the earlier pass had not looked at: the leads file's
+own candidate photo list named two on-site ONF panels, not just tree
+photos.** Fetched and viewed all six candidates. Two are genuine photos of
+the trees (now `approved`, CC BY-SA, Le Passant via Wikimedia Commons):
+sno_001, sno_002, rvd_001, rvd_002. The other two, at Réno-Valdieu, turned
+out to be photographs of the ONF's own interpretive panels for the Forestry
+Commission and Oxford oaks, each giving a real forestry survey figure: 360
+years in 2006 (about 380 today), a girth (3.83m and 3.43m) and a height
+(43m each). That is a much better number than the série-wide "200 to 350,
+sources disagree" both trees carried, so rvd_001 and rvd_002 now carry their
+own derived age, girth and height, with the panel photo added as a source.
+
+The same two panels carry identical wording naming the fourth oak "le Xème
+Congrès Forestier Mondial", the tenth, which settles (per ONF, who manages
+the forest and wrote the signs) a numbering dispute our own story had left
+open against a hiking-route page calling it the eleventh. Renamed rvd_004
+from "Chêne du Congrès (Xe or XIe Congrès Forestier)" to "Chêne du Xe
+Congrès Forestier" and said so in the story, plainly, including the
+disagreement. rvd_003 (Aberdeen) still has no panel and stays at 200-350.
+
+Updated reno-valdieu.json's intro, meta_description, question fields and
+FAQ to reflect that two of the four trees now carry individual ages rather
+than only the grove-wide range; trimmed several fields back under
+SEO_GEO_BLUEPRINT's length caps after the edits pushed them over
+(`preflight.py` caught all seven, now 0 problems).
+
+Local `npx astro build` and `preflight.py` both ran clean before committing;
+released both standing claims.
+
 ## 2026-09-18 (digest session, continuation) - Pamplona: the wrong distances on the three trees that have nothing but position, and the list that could never have named this city
 
 Asked to fix Pamplona, our best-placed and worst-converting page (448

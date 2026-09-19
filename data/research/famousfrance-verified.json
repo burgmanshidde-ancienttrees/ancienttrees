@@ -1,120 +1,25 @@
 [
- {
-  "name": "The Plane Tree of Fontenay Abbey",
-  "species": "London Plane (Platanus x hispanica)",
-  "age_estimate": "planted 1780, about 245 years",
-  "age_min": 240,
-  "age_max": 250,
-  "girth_cm": 600,
-  "location": {
-   "address": "Abbaye de Fontenay, 21500 Marmagne, Cote-d'Or, Burgundy",
-   "latitude": 47.639731,
-   "longitude": 4.388587,
-   "neighbourhood": "Grands Jardins (formal gardens) courtyard, Abbaye de Fontenay"
-  },
-  "verified_sources": [
-   "https://www.abbayedefontenay.com/decouvrir-fontenay/l-abbaye-et-ses-jardins/les-nouveaux-jardins",
-   "https://www.parcsetjardins.fr/jardins/1377-jardin-de-l-abbaye-de-fontenay"
-  ],
-  "access": "Paid entry: the Abbey of Fontenay (a UNESCO World Heritage Site) charges admission to enter the grounds and gardens where the tree stands.",
-  "transport": "Nearest station is Montbard (TGV stop), about 6km away; the abbey is not reachable on foot from a town centre and normally needs a short taxi/drive or the seasonal shuttle from Montbard.",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "Continuing an earlier pass's note (2026-09-05) rather than replacing it: found the second independent source it asked for (parcsetjardins.fr, the official Comite des Parcs et Jardins de France listing, independent of the abbey's own site), which corroborates an 18th-century plane tree among the garden's 'arbres centenaires'. The abbey's own site gives planting year 1780 and height ~40m; a girth of 6m (600cm) appears only in Alamy stock-photo captions describing the same tree, not in either primary source, so treat girth_cm as weaker-sourced and flag it as such for the writer. Planting date 1780 is a documented date FOR THIS SPECIMEN (not a bridge claim from the garden's own history), so the ~245-year age is a real estimate, not an invention. THE DESTINATION CALL asked for in the brief: this tree does NOT pass the single-famous-tree-destination test. The Abbaye de Fontenay is a UNESCO World Heritage Site and one of Europe's best-preserved Cistercian abbeys; visitors clearly travel for the abbey itself (its Romanesque church, cloister, forge, history), and the plane tree is one incidental feature among the abbey's 'Jardin Remarquable'-labelled grounds, not why anyone makes the trip. Recommend NOT treating this as a standalone single-tree exception entry; instead consider it only if a Marmagne/Fontenay-area page is ever built with enough OTHER independently-remarkable trees to clear the normal four-tree floor, or otherwise leave as a lead. Delivering the verified facts regardless per 'publish what verifies, the container decision is not mine to force.' RE-CONFIRMED 2026-09-07: still held, no container exists. Not written into a story; kept here as fully-verified research for whenever Marmagne/Fontenay earns other trees."
- },
- {
-  "name": "Chêne Fauteuil",
-  "species": "Sessile Oak (Quercus petraea)",
-  "age_estimate": "over 300 years",
-  "age_min": 300,
-  "age_max": 340,
-  "girth_cm": 680,
-  "location": {
-   "address": "Forêt domaniale de Senonches, near the Rond de Condé (between Rond de Condé, Rond de Monsieur and Rond des Ruelles), Senonches, Eure-et-Loir",
-   "latitude": 48.5457743,
-   "longitude": 1.01528,
-   "neighbourhood": "Forêt de Senonches"
-  },
-  "verified_sources": [
-   "https://fr.wikipedia.org/wiki/For%C3%AAt_de_Senonches",
-   "https://krapooarboricole.wordpress.com/2011/01/29/le-chene-fauteuil-foret-de-senonches-eure-et-loir/",
-   "https://www.visorando.com/en/walk-les-arbres-venerables-de-la-foret-de-sen/"
-  ],
-  "access": "Free, no permission needed. State forest (forêt domaniale de Senonches, part of the Parc naturel régional du Perche), reached on foot from the Rond de Monsieur parking area along a marked forest path; part of an official 'venerable trees' waymarked walking loop. A small delimited safety zone is marked around the trunk itself because of falling deadwood, so visitors view it from just outside that perimeter rather than approaching the trunk.",
-  "transport": "No public transport realistically reaches the forest interior; park at Rond de Monsieur (car) and walk roughly 10-15 minutes on forest tracks to Rond de Condé. Nearest town is Senonches.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "French Wikipedia's 'Forêt de Senonches' article: multi-stem (5 trunks/cépée) sessile oak, 'rouvre', 285 years old in 1980 (so roughly 330 years as of 2026), circumference 6.8m, standing between rond de Condé, rond de Monsieur and rond des Ruelles, hollows between stems formed a natural seat, hence 'Fauteuil' (armchair). The krapooarboricole blog (visited 2011, direct fetch) independently corroborates: an on-site plaque gives roughly 310 years, circumference measured at 1.30m height as 6.80m (matches Wikipedia's 6.8m almost exactly, the two figures are the same convention described two ways), five trunks, armchair-shaped hollow, called 'King of the Forest'; also notes visible decline (dead branchwood, holes) and a marked safety perimeter, and mentions a ring of century-old sequoias/cedar at the adjacent Rond de Monsieur parking area (not itself one of my candidates). The visorando walking-route page (direct fetch, an actively maintained hiking-route listing) independently lists 'Chêne Fauteuil' as a waypoint near Rond de Condé on an official venerable-trees loop, consistent with both other sources on name, location and character, and confirms the tree is still a live, promoted stop on a current public walking route. Ages from the two written sources (285y in 1980; ~310y per a plaque seen in 2011) both point to a planting date around 1695-1701, so they corroborate rather than conflict; I widened the age range slightly (300-340) to cover both readings as of 2026. All three photographic sources I found on Commons for this tree were uploaded 2014 by the same photographer ('Le Passant'), so my direct alive-evidence is a ~12-year-old photo plus the tree's current listing on an active hiking-route site; no 2020s-dated sighting found, so I flagged curation_status rather than marking this fully solid. CLUSTER NOTE: this tree sits roughly 2.5km (via the Rond de Condé / Rond d'Angoulême road junctions) from 'Chêne sessile Les trois frères' below, both inside the same Forêt de Senonches walking loop (an 11.6km waymarked circuit visiting both plus a sequoia/cedar circle at Rond de Monsieur and a remarkable chestnut at Rond de Condé). Two trees alone are below the 4-tree floor; the same walk documents at least two more named/remarkable specimens (the Rond de Monsieur conifers, a chestnut at Rond de Condé) that were not in my candidate list and could bring Senonches to four in a future pass. WORTH THE VISIT read: a genuinely large, structurally strange multi-trunk veteran oak you can sit inside, on an official waymarked 'venerable trees' loop; reads as a real destination rather than an ordinary old oak."
- },
- {
-  "name": "Les Trois Frères",
-  "species": "Sessile Oak (Quercus petraea)",
-  "age_estimate": "roughly 340 years",
-  "age_min": 320,
-  "age_max": 345,
-  "girth_cm": 550,
-  "location": {
-   "address": "Forêt domaniale de Senonches, near the Rond d'Angoulême, bordering the D941, Senonches, Eure-et-Loir",
-   "latitude": 48.5364806,
-   "longitude": 1.0457403,
-   "neighbourhood": "Forêt de Senonches"
-  },
-  "verified_sources": [
-   "https://fr.wikipedia.org/wiki/For%C3%AAt_de_Senonches",
-   "https://www.visorando.com/en/walk-les-arbres-venerables-de-la-foret-de-sen/"
-  ],
-  "access": "Free, no permission needed. State forest (forêt domaniale de Senonches, Parc naturel régional du Perche), stands by the Rond d'Angoulême near the D941 departmental road, on the same official waymarked 'venerable trees' walking loop as the Chêne Fauteuil.",
-  "transport": "No public transport to the forest interior; reachable on the marked forest loop from Rond de Monsieur or Rond de Battenberg parking. Nearest town is Senonches.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "French Wikipedia's 'Forêt de Senonches' article (direct fetch): a cépée (clustered growth) of three sessile-oak stems ('Les Trois Frères' = 'The Three Brothers'), measured in 2010 at 325 years old, 32m tall, 1.75m diameter at 1.30m height, 5.5m circumference; stands near rond d'Angoulême bordering the D941. The visorando walking-route page (direct fetch, currently live hiking-route listing) independently names 'The Three Brothers' as a waypoint at Rond d'Angoulême, listed as an official 'Remarkable Tree', and describes it as 'approaching their 340th birthday', which is consistent with the 325-years-in-2010 figure aged forward to today (roughly 341 in 2026); no real conflict between the two sources, so I used the Wikipedia figure aged forward as the anchor. Girth 5.5m/550cm comes directly from the Wikipedia circumference figure (its 1.75m diameter figure would give roughly the same via pi, so the two numbers on the page are internally consistent). Photo evidence on Commons for this tree (two files) is dated 2014, same photographer as the Fauteuil photos; no more recent dated sighting found, hence flagged. CLUSTER NOTE: see the Chêne Fauteuil entry above for the walkable-cluster read (roughly 2.5km apart via the two named road junctions, same 11.6km waymarked loop). WORTH THE VISIT read: an officially designated 'Remarkable Tree', a three-stemmed veteran roughly 340 years old and 32m tall directly beside a public road junction on a signed loop; a genuine destination tree, not merely old-and-present."
- },
- {
-  "name": "Chêne de la Forestry Commission",
-  "species": "Sessile Oak (Quercus petraea)",
-  "age_estimate": "roughly 200 to 350 years (sources disagree)",
-  "age_min": 200,
-  "age_max": 350,
-  "girth_cm": 0,
-  "location": {
-   "address": "Forêt domaniale de Réno-Valdieu, 'série artistique de la Gautrie', near Carrefour Degraine / Route Forestière de la Gautrie, Feings / Saint-Mard-de-Réno, Orne",
-   "latitude": 48.5271576,
-   "longitude": 0.6625329,
-   "neighbourhood": "Forêt de Réno-Valdieu"
-  },
-  "verified_sources": [
-   "https://www.onf.fr/vivre-la-foret/forets-de-france/+/176c::foret-domaniale-de-reno-valdieu.html?lang=fr",
-   "http://web.archive.org/web/20231002100108/https://defeings.etdailleurs.pagesperso-orange.fr/arbresgautrie.html",
-   "https://rando-perche.fr/trek/12485-Les-vieux-arbres"
-  ],
-  "access": "Free, no permission needed. State forest (forêt domaniale de Réno-Valdieu, Parc naturel régional du Perche), reached on public forest tracks; the GR22 long-distance trail crosses the forest, and the 'Les vieux arbres' waymarked loop (10.5km) passes through the same 'série artistique de la Gautrie' grove via Carrefour Degraine.",
-  "transport": "No public transport to the forest interior; reachable on foot from Carrefour Degraine or the Chartreuse du Val-Dieu trailhead, both car-accessible. Nearest towns are Feings and Saint-Mard-de-Réno (Mortagne-au-Perche is the nearest larger town).",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "ONF's own forest page (direct fetch) confirms an 'artistic series' (série artistique) of roughly 350-year-old oaks and beeches, sessile-oak-dominant 'cathedral' stands, designated for their beauty under Louis XIV, publicly reachable via forest trails including the GR22. An archived 2023 snapshot of a local hobbyist site (defeings.etdailleurs, direct fetch via Wayback Machine after the live pagesperso-orange host redirected nowhere) names this specific tree, 'Chêne de la Forestry Commission', as one of four named oaks in the 'série artistique de la Gautrie' (alongside oaks dedicated to Aberdeen University, Oxford University and a 'Congrès mondial forestier'/World Forestry Congress), and puts the whole série at 200-300 years old, which is LOWER than and in tension with ONF's ~350-year figure for the same series; both figures are recorded rather than one being picked, and I widened the range to 200-350 to cover both. A WebSearch AI-overview (not a fetched page) offered specific numbers for this tree, 350 years, 42m tall, 1.2m diameter; per the search-summary-is-a-lead-not-a-source rule I tried to confirm these on an actual page and could not (the archived sub-page for this tree, forestry.html, is only a photo caption with no measurements), so those numbers are DISCARDED and not recorded here; girth_cm left at 0/unrecorded rather than reporting an unconfirmed figure. The exact tree-level position within the Gautrie grove was not separately confirmed; the pin is placed at Carrefour Degraine, the nearest confirmed public waypoint through which this grove is reached on the waymarked walk, so this is grove-level rather than tree-level precision. Alive-now evidence is thin: the sole Commons photo is dated 2014 (uploader 'Le Passant', same campaign as the Senonches photos), and no dated sighting from the 2020s was found; the grove itself is still actively described as extant and visited by ONF's current page and the currently-listed 'Les vieux arbres' hiking route, which is reassuring but not tree-specific, hence flagged. CLUSTER NOTE: this tree and the Chêne d'Oxford below both belong to the same 'série artistique de la Gautrie' and are very close together (well under 1km, both reached via the same Carrefour Degraine waypoint); the same série also includes named Aberdeen and 'Congrès' oaks that were not in my candidate list and, if verified, would bring this forest to a 4-tree floor on its own. Réno-Valdieu is a separate forest roughly 28-30km from the Forêt de Senonches pair above (different département, Orne vs Eure-et-Loir), so this is a second, independent cluster rather than part of the same walk. WORTH THE VISIT read: the naming tradition itself (a French state forest with 17th-century-rooted oaks individually dedicated to a British forestry body, Oxford, Aberdeen and a world forestry congress) is the unusual, tell-worthy fact here, on top of a genuine veteran-oak cathedral stand; I would lean on that oddity for the story rather than on unconfirmed measurements."
- },
- {
-  "name": "Chêne d'Oxford",
-  "species": "Sessile Oak (Quercus petraea)",
-  "age_estimate": "roughly 200 to 350 years (sources disagree)",
-  "age_min": 200,
-  "age_max": 350,
-  "girth_cm": 0,
-  "location": {
-   "address": "Forêt domaniale de Réno-Valdieu, 'série artistique de la Gautrie', at Carrefour Degraine, Feings / Saint-Mard-de-Réno, Orne",
-   "latitude": 48.5271576,
-   "longitude": 0.6625329,
-   "neighbourhood": "Forêt de Réno-Valdieu"
-  },
-  "verified_sources": [
-   "https://rando-perche.fr/trek/12485-Les-vieux-arbres",
-   "http://web.archive.org/web/20231002100108/https://defeings.etdailleurs.pagesperso-orange.fr/arbresgautrie.html",
-   "https://www.onf.fr/vivre-la-foret/forets-de-france/+/176c::foret-domaniale-de-reno-valdieu.html?lang=fr"
-  ],
-  "access": "Free, no permission needed. State forest (forêt domaniale de Réno-Valdieu), directly on the waymarked 'Les vieux arbres' loop (10.5km) at the Carrefour Degraine waypoint, which also has picnic tables and ONF information panels.",
-  "transport": "No public transport to the forest interior; Carrefour Degraine is reached on forest tracks from the Chartreuse du Val-Dieu trailhead (car-accessible). Nearest towns are Feings and Saint-Mard-de-Réno.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "rando-perche.fr's own waymarked-route page (direct fetch, currently listed hiking route) places 'Chêne d'Oxford' specifically at Carrefour Degraine, alongside a 'Chêne du XIème Congrès' at the same waypoint, both described as 'survivants de la grande futaie après la tempête de 1999' (survivors of the great [1999] storm that felled much of the surrounding stand), which is a meaningful, checkable historical fact rather than a vague claim. The archived defeings.etdailleurs page (direct fetch via Wayback Machine) independently confirms 'Chêne d'Oxford' as one of the named oaks of the 'série artistique de la Gautrie', 'dédié à l'université d'Oxford' (dedicated to the University of Oxford), alongside Aberdeen, Congrès and Forestry Commission oaks; two independent sources for existence/naming/species (sessile oak per the Commons filenames and the surrounding série's documented species) and rough age band (série stated as 200-300 years by this source, ~350 by ONF, both direct fetches, widened range recorded as with the Forestry Commission entry above rather than picking one). No individual girth/height figure was found on any directly-fetched page for this specific tree; a WebSearch AI-overview separately claimed it is one of 'two Grand Trees' but gave no measurements, so nothing numeric beyond age is recorded. Carrefour Degraine (48.5271576, 0.6625329) is a confirmed public waypoint the tree stands at/near per rando-perche's own route description, so this is closer to tree-level than the Forestry Commission entry, but I still marked it approximate rather than confirmed because no source gives a tree-specific coordinate or photo-matched pin, only 'at Carrefour Degraine'. Photo evidence on Commons (two files) again dates to 2014 (photographer 'Le Passant'); no 2020s sighting found, hence flagged, though the currently-live rando-perche.fr route listing is reassuring that the tree and waypoint are still an active, promoted stop. CLUSTER NOTE: same as the Forestry Commission entry, essentially the same grove/waypoint, well under 1km apart; see that entry for the full cluster and 4-tree-floor note. WORTH THE VISIT read: same naming-tradition oddity as the Forestry Commission oak, plus the specific, checkable '1999 storm survivor' fact, which is a genuinely interesting hook for a story ('the oak that outlived the storm that took the rest of the stand')."
- }
+  {
+    "name": "The Plane Tree of Fontenay Abbey",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "planted 1780, about 245 years",
+    "age_min": 240,
+    "age_max": 250,
+    "girth_cm": 600,
+    "location": {
+      "address": "Abbaye de Fontenay, 21500 Marmagne, Cote-d'Or, Burgundy",
+      "latitude": 47.639731,
+      "longitude": 4.388587,
+      "neighbourhood": "Grands Jardins (formal gardens) courtyard, Abbaye de Fontenay"
+    },
+    "verified_sources": [
+      "https://www.abbayedefontenay.com/decouvrir-fontenay/l-abbaye-et-ses-jardins/les-nouveaux-jardins",
+      "https://www.parcsetjardins.fr/jardins/1377-jardin-de-l-abbaye-de-fontenay"
+    ],
+    "access": "Paid entry: the Abbey of Fontenay (a UNESCO World Heritage Site) charges admission to enter the grounds and gardens where the tree stands.",
+    "transport": "Nearest station is Montbard (TGV stop), about 6km away; the abbey is not reachable on foot from a town centre and normally needs a short taxi/drive or the seasonal shuttle from Montbard.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Continuing an earlier pass's note (2026-09-05) rather than replacing it: found the second independent source it asked for (parcsetjardins.fr, the official Comite des Parcs et Jardins de France listing, independent of the abbey's own site), which corroborates an 18th-century plane tree among the garden's 'arbres centenaires'. The abbey's own site gives planting year 1780 and height ~40m; a girth of 6m (600cm) appears only in Alamy stock-photo captions describing the same tree, not in either primary source, so treat girth_cm as weaker-sourced and flag it as such for the writer. Planting date 1780 is a documented date FOR THIS SPECIMEN (not a bridge claim from the garden's own history), so the ~245-year age is a real estimate, not an invention. THE DESTINATION CALL asked for in the brief: this tree does NOT pass the single-famous-tree-destination test. The Abbaye de Fontenay is a UNESCO World Heritage Site and one of Europe's best-preserved Cistercian abbeys; visitors clearly travel for the abbey itself (its Romanesque church, cloister, forge, history), and the plane tree is one incidental feature among the abbey's 'Jardin Remarquable'-labelled grounds, not why anyone makes the trip. Recommend NOT treating this as a standalone single-tree exception entry; instead consider it only if a Marmagne/Fontenay-area page is ever built with enough OTHER independently-remarkable trees to clear the normal four-tree floor, or otherwise leave as a lead. Delivering the verified facts regardless per 'publish what verifies, the container decision is not mine to force.' RE-CONFIRMED 2026-09-07: still held, no container exists. Not written into a story; kept here as fully-verified research for whenever Marmagne/Fontenay earns other trees."
+  }
 ]

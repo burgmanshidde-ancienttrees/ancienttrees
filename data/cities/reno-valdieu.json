@@ -1,0 +1,172 @@
+{
+  "city": "Réno-Valdieu",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Four sessile oaks stand together in the Forêt de Réno-Valdieu, near Senonches, each named for a foreign forestry institution: Oxford, Aberdeen, the British Forestry Commission and a Congress ONF's own panels call the tenth. Two carry their own on-site ONF panels dating them at about 380 years, with a measured girth and height each; the other two are known only as part of the wider grove, put at 200 to 350 years. Two survived the December 1999 storm that flattened the stand around them.",
+  "meta_description": "Réno-Valdieu's Gautrie grove: four oak veterans dedicated to Oxford, Aberdeen, the Forestry Commission and a Congress, two dated at 380 years.",
+  "question_meta": "Two of Réno-Valdieu's four Gautrie oaks are dated at 380 years by their own ONF panels; the other two are known only from the wider grove.",
+  "question_answer": "Two of the four oaks in the Forêt de Réno-Valdieu carry a documented age of their own. ONF's own on-site panels for the Chêne d'Oxford and the Chêne de la Forestry Commission both give 360 years as measured in 2006, roughly 380 today, plus a girth of 3.43 and 3.83 metres and a height of 43 metres each. The other two, dedicated to Aberdeen and to a forestry congress ONF's own panels call the tenth, are dated only as part of the wider série artistique de la Gautrie: France's national forest office puts the grove at around 350 years, a local survey at 200 to 300. Two of the four, the Oxford and Congrès oaks, are recorded as the survivors of a taller stand the December 1999 storms brought down around them. All stand at or near the Carrefour Degraine.",
+  "question_context": "All four oaks stand at or near the Carrefour Degraine, a crossroads with picnic tables and forest office information panels, on the 10.5 kilometre Les Vieux Arbres loop the Parc naturel régional du Perche waymarks through the forest. The GR22 long distance path crosses the same ground. The Oxford and Forestry Commission oaks each carry an on-site ONF panel giving their own age, girth and height; the Aberdeen and Congrès oaks carry only the grove's collective figures, and Aberdeen is documented by a single photograph and nothing else. Two of the oaks, dedicated to Oxford and to the forestry congress, are named on-site as survivors of a taller stand the December 1999 storms brought down around them. No source records which physical trunk carries which dedication beyond what the panels at the crossroads say, so read them there rather than here. The grove sits some thirty kilometres from the Senonches walk, inside the same regional park, reached by car; there is no public transport to the forest interior, and the nearest towns are Feings and Saint-Mard-de-Réno.",
+  "faq": [
+    {
+      "q": "How old are the Gautrie oaks at Réno-Valdieu?",
+      "a": "Two of the four have their own answer: ONF's on-site panels date the Chêne d'Oxford and the Chêne de la Forestry Commission at 360 years in 2006, roughly 380 today. The Aberdeen and Congrès oaks are dated only as part of the wider grove, which France's national forest office puts at around 350 years and a local survey at 200 to 300, so read those two as 200 to 350 years."
+    },
+    {
+      "q": "Why are they named after Oxford and Aberdeen?",
+      "a": "No source explains the dedications. Four oaks in the série artistique de la Gautrie carry the names of foreign forestry institutions, Oxford, Aberdeen, the British Forestry Commission and a forestry congress, and none of the sources we found say who chose them or when."
+    },
+    {
+      "q": "What happened in the storm of 1999?",
+      "a": "The December 1999 storms flattened the tall stand of forest growing around the grove. Two of the four named oaks, dedicated to Oxford and to the forestry congress, are recorded as having survived it."
+    },
+    {
+      "q": "Is the Forêt de Réno-Valdieu free to visit?",
+      "a": "Yes. It is state forest with no entry fee, reached on foot from the Carrefour Degraine or the Chartreuse du Val-Dieu trailhead; there is no public transport to the forest interior."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rvd_001",
+      "name": "Chêne de la Forestry Commission",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "about 380 years (ONF's own on-site panel dated it 360 in 2006)",
+      "age_min": 375,
+      "age_max": 385,
+      "girth_cm": 383,
+      "height_m": 43.0,
+      "location": {
+        "address": "Forêt domaniale de Réno-Valdieu, 'série artistique de la Gautrie', near Carrefour Degraine / Route Forestière de la Gautrie, Feings / Saint-Mard-de-Réno, Orne",
+        "latitude": 48.5271576,
+        "longitude": 0.6625329,
+        "neighbourhood": "Forêt de Réno-Valdieu"
+      },
+      "verified_sources": [
+        "https://www.onf.fr/vivre-la-foret/forets-de-france/+/176c::foret-domaniale-de-reno-valdieu.html?lang=fr",
+        "http://web.archive.org/web/20231002100108/https://defeings.etdailleurs.pagesperso-orange.fr/arbresgautrie.html",
+        "https://rando-perche.fr/trek/12485-Les-vieux-arbres",
+        "https://commons.wikimedia.org/wiki/File:Plaque_Ch%C3%AAne_de_la_Forestry_Commission,_for%C3%AAt_de_R%C3%A9no-Valdieu,_Orne_(France).JPG"
+      ],
+      "access": "Free, no permission needed. State forest (forêt domaniale de Réno-Valdieu, Parc naturel régional du Perche), reached on public forest tracks; the GR22 long-distance trail crosses the forest, and the 'Les vieux arbres' waymarked loop (10.5km) passes through the same 'série artistique de la Gautrie' grove via Carrefour Degraine.",
+      "transport": "No public transport to the forest interior; reachable on foot from Carrefour Degraine or the Chartreuse du Val-Dieu trailhead, both car-accessible. Nearest towns are Feings and Saint-Mard-de-Réno (Mortagne-au-Perche is the nearest larger town).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Somebody in this French state forest named an oak after the British Forestry Commission. Three of its neighbours carry the names of the University of Oxford, the University of Aberdeen and a world forestry congress, all four standing in the same grove: the série artistique de la Gautrie, a stand set aside for how it looks rather than for what it would cut into. The grove's age is argued over in general terms: France's national forest office describes the artistic series as oaks and beeches of around 350 years, designated for their beauty in the reign of Louis XIV, while a local survey of the same four named trees puts the série at 200 to 300. This particular oak carries better evidence than that spread suggests. ONF's own on-site interpretive panel, photographed and dated 2010, gives this specific tree 360 years as measured in 2006, a girth of 3.83 metres at chest height and a total height of 43 metres, roughly 380 years today. The character of the place is not in doubt either way. Gautrie is a cathedral stand: sessile oak grown tall and clean, which is the shape foresters travel to see and presumably the reason these dedications landed here at all. The GR22 long distance path crosses the forest, and the 10.5 kilometre loop the Perche signs as Les vieux arbres, the old trees, comes through the grove by way of the Carrefour Degraine. Our pin is that crossroads rather than the trunk.",
+      "how_to_recognise": "One of four named oaks at the Carrefour Degraine; this one stands 43 metres tall with a 3.83 metre girth per its own ONF panel, though which trunk carries which plaque is only settled by reading the panel on site.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Ch%C3%AAne_sessile_de_la_Forestry_Commission%2C_Quercus_petrae%2C_for%C3%AAt_de_R%C3%A9no-Valdieu%2C_Orne_%28France%29.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Le Passant, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2448,
+        "height": 3264
+      },
+      "photos": []
+    },
+    {
+      "id": "rvd_002",
+      "name": "Chêne d'Oxford",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "about 380 years (ONF's own on-site panel dated it 360 in 2006)",
+      "age_min": 375,
+      "age_max": 385,
+      "girth_cm": 343,
+      "height_m": 43.0,
+      "location": {
+        "address": "Forêt domaniale de Réno-Valdieu, 'série artistique de la Gautrie', at Carrefour Degraine, Feings / Saint-Mard-de-Réno, Orne",
+        "latitude": 48.5271576,
+        "longitude": 0.6625329,
+        "neighbourhood": "Forêt de Réno-Valdieu"
+      },
+      "verified_sources": [
+        "https://rando-perche.fr/trek/12485-Les-vieux-arbres",
+        "http://web.archive.org/web/20231002100108/https://defeings.etdailleurs.pagesperso-orange.fr/arbresgautrie.html",
+        "https://www.onf.fr/vivre-la-foret/forets-de-france/+/176c::foret-domaniale-de-reno-valdieu.html?lang=fr",
+        "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_d%27Oxford,_For%C3%AAt_de_R%C3%A9no-Valdieu,_Orne_(France).JPG"
+      ],
+      "access": "Free, no permission needed. State forest (forêt domaniale de Réno-Valdieu), directly on the waymarked 'Les vieux arbres' loop (10.5km) at the Carrefour Degraine waypoint, which also has picnic tables and ONF information panels.",
+      "transport": "No public transport to the forest interior; Carrefour Degraine is reached on forest tracks from the Chartreuse du Val-Dieu trailhead (car-accessible). Nearest towns are Feings and Saint-Mard-de-Réno.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The storms of December 1999 took down the tall stand around this oak and left it standing. The waymarked route through the forest names it and one neighbour, the Congrès oak, as the survivors of the grande futaie, the high forest that used to fill this corner of the Gautrie. Everything that made those two remarkable before the storm is still true, and now they are also the last of their cohort. The name came from further off. This is the Chêne d'Oxford, dedicated to the university, one of four oaks in the série artistique de la Gautrie carrying the names of foreign institutions: Oxford, Aberdeen, the British Forestry Commission and a world forestry congress. The grove was set aside for its looks rather than its timber, and France's national forest office traces that designation to the reign of Louis XIV. This tree's own on-site ONF panel, photographed in 2010, is more specific than the série-wide figures: 360 years as measured in 2006, a girth of 3.43 metres and a total height of 43 metres, putting it at roughly 380 years today. It is the easiest of the four to reach. It stands at the Carrefour Degraine itself, which has picnic tables and the forest office's information panels, directly on the 10.5 kilometre Les vieux arbres loop.",
+      "how_to_recognise": "One of the two big oaks at the Carrefour Degraine, left standing after the 1999 storm: this one carries a 3.43 metre girth and 43 metres of height per its own ONF panel, though which of the pair it belongs to is settled only on site.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ch%C3%AAne_sessile_d%27Oxford%2C_Quercus_petrae%2C_for%C3%AAt_de_R%C3%A9no-Valdieu%2C_Orne_%28France%29.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Le Passant, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2448,
+        "height": 3264
+      },
+      "photos": []
+    },
+    {
+      "id": "rvd_003",
+      "name": "Chêne d'Aberdeen",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 200 to 350 years (sources disagree)",
+      "age_min": 200,
+      "age_max": 350,
+      "girth_cm": 0,
+      "location": {
+        "address": "Forêt domaniale de Réno-Valdieu, 'série artistique de la Gautrie', near Carrefour Degraine, Feings / Saint-Mard-de-Réno, Orne",
+        "latitude": 48.5271576,
+        "longitude": 0.6625329,
+        "neighbourhood": "Forêt de Réno-Valdieu"
+      },
+      "verified_sources": [
+        "http://web.archive.org/web/20231002100108/https://defeings.etdailleurs.pagesperso-orange.fr/arbresgautrie.html",
+        "http://web.archive.org/web/20231001234238/http://defeings.etdailleurs.pagesperso-orange.fr/forets/arbres/aberdeen.html",
+        "https://www.onf.fr/vivre-la-foret/forets-de-france/+/176c::foret-domaniale-de-reno-valdieu.html?lang=fr"
+      ],
+      "access": "Free, no permission needed. State forest (forêt domaniale de Réno-Valdieu, Parc naturel régional du Perche), part of the 'série artistique de la Gautrie', reached via the same waymarked 'Les vieux arbres' loop and Carrefour Degraine waypoint as the already-verified Chêne de la Forestry Commission and Chêne d'Oxford.",
+      "transport": "No public transport to the forest interior; reachable on foot from Carrefour Degraine or the Chartreuse du Val-Dieu trailhead, both car-accessible. Nearest towns are Feings and Saint-Mard-de-Réno.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Two oaks in this grove were dedicated to universities, one to Oxford and one to Aberdeen, and this is the Scottish one. That sentence is close to everything anyone has written down about it. The evidence here is thinner than for its neighbours, and it is worth saying so plainly. A single local website records the dedication and carries a photograph captioned Chêne d'Aberdeen. No second source names the tree, no register gives it a girth or a height, and there is no photograph of it on Wikimedia Commons. What is solidly documented is the grove around it. The série artistique de la Gautrie, in the state forest of Réno-Valdieu, is a stand of sessile oak and beech set aside for how it looks, which France's national forest office says was designated in the reign of Louis XIV and puts at around 350 years; the same local survey that names this oak says 200 to 300 for the series. So: an oak of somewhere between 200 and 350 years, in a grove that is certainly old, with a Scottish name nobody has explained. That last part is the open question, and it is a good one. No source we can find records who made these four dedications, or when, or why a forest in the Orne settled on Aberdeen, Oxford, the British Forestry Commission and a forestry congress. If you know, or if you stand in front of this oak and photograph it, tell us.",
+      "how_to_recognise": "You cannot pick this one out by sight and we will not pretend otherwise: it is one of four named oaks of the Gautrie series near the Carrefour Degraine, and the only record of which trunk is one captioned photograph on a local site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "rvd_004",
+      "name": "Chêne du Xe Congrès Forestier",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 200 to 350 years (sources disagree)",
+      "age_min": 200,
+      "age_max": 350,
+      "girth_cm": 0,
+      "location": {
+        "address": "Forêt domaniale de Réno-Valdieu, 'série artistique de la Gautrie', at Carrefour Degraine, Feings / Saint-Mard-de-Réno, Orne",
+        "latitude": 48.5271576,
+        "longitude": 0.6625329,
+        "neighbourhood": "Forêt de Réno-Valdieu"
+      },
+      "verified_sources": [
+        "https://rando-perche.fr/trek/12485-Les-vieux-arbres",
+        "http://web.archive.org/web/20231002100108/https://defeings.etdailleurs.pagesperso-orange.fr/arbresgautrie.html",
+        "http://web.archive.org/web/20231001234257/http://defeings.etdailleurs.pagesperso-orange.fr/forets/arbres/congres.html",
+        "https://www.onf.fr/vivre-la-foret/forets-de-france/+/176c::foret-domaniale-de-reno-valdieu.html?lang=fr",
+        "https://commons.wikimedia.org/wiki/File:Plaque_Ch%C3%AAne_de_la_Forestry_Commission,_for%C3%AAt_de_R%C3%A9no-Valdieu,_Orne_(France).JPG"
+      ],
+      "access": "Free, no permission needed. State forest (forêt domaniale de Réno-Valdieu), directly on the waymarked 'Les vieux arbres' loop (10.5km) at the Carrefour Degraine waypoint, which also has picnic tables and ONF information panels, same spot as the already-verified Chêne d'Oxford.",
+      "transport": "No public transport to the forest interior; Carrefour Degraine is reached on forest tracks from the Chartreuse du Val-Dieu trailhead (car-accessible). Nearest towns are Feings and Saint-Mard-de-Réno.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Nobody agrees which forestry congress this oak commemorates. The waymarked route through the forest calls it the Chêne du XIe Congrès, the eleventh. ONF's own on-site panels, photographed at two of this grove's other three trees, both describe the série in the same wording and both call it the Xème, the tenth; since ONF wrote the panels, that is the name we lead with, though the discrepancy is worth knowing before you look for a number on the ground. What it did is better recorded than what it is called. The December 1999 storms took down the high forest around this corner of the Gautrie, and this oak and the Oxford oak are the two that were left, which is why the route describes them as survivors of the grande futaie. Both belong to the série artistique de la Gautrie, four oaks carrying dedications to foreign institutions in a grove France's national forest office says was set aside for its beauty under Louis XIV. The age is a band rather than a number for this trunk: two neighbours carry their own ONF panels giving 360 years in 2006, roughly 380 today, but no panel for this one has turned up, so read it as 200 to 350 years until somebody photographs its plaque. Both trees stand at the crossroads, with picnic tables and forest office panels, on the 10.5 kilometre Les vieux arbres loop.",
+      "how_to_recognise": "Recognise it by its companion: this oak and the Chêne d'Oxford are the pair left standing at the Carrefour Degraine after the 1999 storm. No source says which trunk is which; ONF's own panels call this one the Xe Congrès.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}
