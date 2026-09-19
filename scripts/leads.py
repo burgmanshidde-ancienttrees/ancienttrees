@@ -324,6 +324,9 @@ NOT_READY_MARKER = re.compile(
     r"second source not found|sources conflict|do not ship on the register alone|"
     r"leave for a future pass|does not clear the .{0,40}bar on its own|"
     r"even the register.{0,20}own location is marked uncertain|"
+    r"cannot clear the two.?independent.?sources? bar|"
+    r"needing (?:both )?a second source|"
+    r"open access question|"
     r"still a lead|reading as padding)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)

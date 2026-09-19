@@ -1,9 +1,9 @@
 {
- "note": "The world's best-known parks, as a demand list to check our coverage against. Written 2026-09-18 on Hidde's ask: \"zou je een onderzoek kunnen doen naar de bekendste parken in de wereld waar het meest voor wordt gezocht op Google. En of we die al in onze database hebben.\" Read by scripts/park_demand.py, which crosses each one against our published trees BY DISTANCE (never by name, per CLAUDE.md) and says what we have. A park earns a Contract H page at five mapped trees plus a written intro.",
+ "note": "The world's best-known parks, as a demand list to check our coverage against. Written 2026-09-18 on Hidde's ask: \"zou je een onderzoek kunnen doen naar de bekendste parken in de wereld waar het meest voor wordt gezocht op Google. En of we die al in onze database hebben.\" Read by scripts/park_demand.py, which crosses each one against our published trees BY DISTANCE (never by name, per CLAUDE.md) and says what we have. A park earns a Contract H page at five mapped trees plus a written intro. Widened 2026-09-19 with the ranking Hidde brought: the visitor top ten, the largest urban parks by area, and the Dutch and Belgian top, which is the half that matters most here, because a Dutch or Belgian park name is exactly the low-competition term our own Search Console shows us ranking 4th to 11th on.",
  "coordinates": "Centroids, and they are APPROXIMATE: written from knowledge, not fetched, because this session's network policy blocks every Wikimedia host. They are used only to ask which of our trees stand near a park, with a per-park radius, so a few hundred metres of error changes nothing. `python3 scripts/park_demand.py --coords` replaces them with Wikipedia's own coordinates on any machine that can reach the API, and prints what moved.",
  "evidence": "google maps ... = Google's own Year in Search ranking of the most searched parks on Google Maps, which is the closest thing to search volume anybody publishes for free. visitors/yr = press-reported footfall. hand-seeded = on the list because it is world-famous, with fame still to be measured by --views (Wikipedia pageviews, the same proxy demand.py uses for cities).",
  "out_of_focus": "Kirstenbosch, Gorky Park and HaYarkon Park sit in regions Hidde ruled out of focus on 2026-08-16, and Cubbon Park is in India. They stay listed so the world list is honest and the script skips them, exactly as scout_next.py does. The regions come from data/register-scouting.json, never from a second copy here.",
- "updated": "2026-09-18",
+ "updated": "2026-09-19",
  "parks": [
   {
    "name": "Park Guell",
@@ -1284,6 +1284,146 @@
    "radius_km": 2.0,
    "wikipedia": "HaYarkon Park",
    "evidence": "hand-seeded"
+  },
+  {
+   "name": "Chugach State Park",
+   "city": "Anchorage",
+   "country": "United States",
+   "lat": 61.1,
+   "lng": -149.3,
+   "radius_km": 8.0,
+   "wikipedia": "Chugach State Park",
+   "evidence": "largest urban park in the world, 200,400 ha (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Margalla Hills",
+   "city": "Islamabad",
+   "country": "Pakistan",
+   "lat": 33.74,
+   "lng": 73.05,
+   "radius_km": 5.0,
+   "wikipedia": "Margalla Hills National Park",
+   "evidence": "17,386 ha inside the capital (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Pedra Branca",
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "lat": -22.933,
+   "lng": -43.45,
+   "radius_km": 5.0,
+   "wikipedia": "Pedra Branca State Park",
+   "evidence": "12,394 ha inside the city (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Bukhansan",
+   "city": "Seoul",
+   "country": "South Korea",
+   "lat": 37.659,
+   "lng": 126.977,
+   "radius_km": 4.0,
+   "wikipedia": "Bukhansan National Park",
+   "evidence": "7,992 ha inside the metropolis (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Kralingse Bos",
+   "city": "Rotterdam",
+   "country": "Netherlands",
+   "lat": 51.94,
+   "lng": 4.515,
+   "radius_km": 1.5,
+   "wikipedia": "Kralingse Bos",
+   "evidence": "the Netherlands' second park by use after the Vondelpark (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Park Sonsbeek",
+   "city": "Arnhem",
+   "country": "Netherlands",
+   "lat": 51.988,
+   "lng": 5.893,
+   "radius_km": 1.2,
+   "wikipedia": "Sonsbeek",
+   "evidence": "historic landscape park with waterfalls (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Zuiderpark",
+   "city": "The Hague",
+   "country": "Netherlands",
+   "lat": 52.058,
+   "lng": 4.265,
+   "radius_km": 1.0,
+   "wikipedia": "Zuiderpark (The Hague)",
+   "evidence": "the city's main park and event ground (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Jubelpark",
+   "city": "Brussels",
+   "country": "Belgium",
+   "lat": 50.84,
+   "lng": 4.393,
+   "radius_km": 0.6,
+   "wikipedia": "Cinquantenaire Park",
+   "evidence": "Brussels' principal historic park (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Park van Brussel",
+   "city": "Brussels",
+   "country": "Belgium",
+   "lat": 50.846,
+   "lng": 4.364,
+   "radius_km": 0.4,
+   "wikipedia": "Warandepark",
+   "evidence": "Brussels' principal historic park (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Rivierenhof",
+   "city": "Antwerp",
+   "country": "Belgium",
+   "lat": 51.213,
+   "lng": 4.455,
+   "radius_km": 1.0,
+   "wikipedia": "Rivierenhof",
+   "evidence": "the most visited green space in Antwerp (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Minnewaterpark",
+   "city": "Bruges",
+   "country": "Belgium",
+   "lat": 51.2,
+   "lng": 3.225,
+   "radius_km": 0.4,
+   "wikipedia": "Minnewater",
+   "evidence": "iconic small city park (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Table Mountain",
+   "city": "Cape Town",
+   "country": "South Africa",
+   "lat": -33.96,
+   "lng": 18.41,
+   "radius_km": 6.0,
+   "wikipedia": "Table Mountain National Park",
+   "evidence": "22,100 ha (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Losiny Ostrov",
+   "city": "Moscow",
+   "country": "Russia",
+   "lat": 55.87,
+   "lng": 37.75,
+   "radius_km": 5.0,
+   "wikipedia": "Losiny Ostrov National Park",
+   "evidence": "11,600 ha (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Sanjay Gandhi",
+   "city": "Mumbai",
+   "country": "India",
+   "lat": 19.22,
+   "lng": 72.91,
+   "radius_km": 5.0,
+   "wikipedia": "Sanjay Gandhi National Park",
+   "evidence": "10,384 ha (from Hidde's own ranking, 2026-09-19)"
   }
  ]
 }

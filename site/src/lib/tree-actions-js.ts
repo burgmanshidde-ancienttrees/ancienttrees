@@ -51,9 +51,27 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     if (window.atRefilterMap) window.atRefilterMap();
   }
   window.atHasSaved = function(id) { return Boolean(mine && mine[id]); };
+  // ONE SAVE, TWO CALLERS: the finger, and a sign-in landing back on this page
+  // replaying the save that asked for it (2026-09-18). It was inline in the
+  // click handler, which is why signing in to save a tree signed you in and did
+  // not save the tree. \`want\` forces the direction rather than toggling, so a
+  // replay cannot un-save a tree the account already holds.
+  window.atSaveTree = function(id, want) {
+    if (!id) return;
+    if (!mine) mine = {};
+    var on = (want === undefined) ? !mine[id] : Boolean(want);
+    if (on === Boolean(mine[id])) { paint(); return; }
+    // Painted first and written second, so the heart answers the finger at
+    // once. If the write fails the next page load tells the truth, which is
+    // the right way round: the account decides, the screen only reports.
+    if (on) { mine[id] = true; try { at.track('save'); } catch (err) {} }
+    else { delete mine[id]; }
+    paint();
+    C.save(id, on);
+  };
   function load() {
-    if (!C.session()) { mine = {}; paint(); return; }
-    C.saves().then(function(list) {
+    if (!C.session()) { mine = {}; paint(); return Promise.resolve(); }
+    return C.saves().then(function(list) {
       mine = {};
       list.forEach(function(id) { mine[id] = true; });
       paint();
@@ -93,7 +111,9 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     // The same gate the heart carries, for the same reason: a log that lives
     // in a browser is not a log (PRINCIPLES.md #12, and 2026-09-02).
     if (!C.session()) {
-      if (window.atOpenSignIn) window.atOpenSignIn(s.dataset.name);
+      if (window.atOpenSignIn) {
+        window.atOpenSignIn(s.dataset.name, null, { kind: 'visit', tree: s.dataset.tree });
+      }
       return;
     }
     // NO PROXIMITY CHECK. DECISIONS.md 2026-08-20: "GPS proximity is a BONUS,
@@ -116,18 +136,12 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     // visit, because it is a gate rather than a nudge and a gate that gives up
     // is not a gate. AllTrails blocks the save the same way.
     if (!C.session()) {
-      if (window.atOpenSignIn) window.atOpenSignIn(b.dataset.name);
+      if (window.atOpenSignIn) {
+        window.atOpenSignIn(b.dataset.name, null, { kind: 'save', tree: b.dataset.tree });
+      }
       return;
     }
-    if (!mine) mine = {};
-    var id = b.dataset.tree, on = !mine[id];
-    // Painted first and written second, so the heart answers the finger at
-    // once. If the write fails the next page load tells the truth, which is
-    // the right way round: the account decides, the screen only reports.
-    if (on) { mine[id] = true; try { at.track('save'); } catch (err) {} }
-    else { delete mine[id]; }
-    paint();
-    C.save(id, on);
+    window.atSaveTree(b.dataset.tree);
   });
 })();
 </script>

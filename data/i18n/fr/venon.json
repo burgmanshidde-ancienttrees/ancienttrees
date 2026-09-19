@@ -1,0 +1,40 @@
+{
+ "_note": "fr overlay for venon, written 2026-09-18 from data/cities/venon.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Venon",
+ "title": "Le Chêne de Venon : arbre remarquable près de Grenoble",
+ "meta_description": "Le Chêne de Venon : un chêne solitaire au-dessus de Grenoble, visible de toute la vallée, Arbre remarquable de France depuis 2017.",
+ "intro": "Venon est un petit village au-dessus de Grenoble, et son unique arbre cartographié est la raison pour laquelle on connaît son nom ailleurs. Le chêne se dresse seul sur une croupe dégagée, visible depuis toute la vallée du Grésivaudan et la cuvette grenobloise, marque sombre sur la ligne d'horizon pour des gens qui ne sont jamais montés jusqu'à lui. La France l'a labellisé Arbre remarquable en 2017, et il a survécu à une tempête qui lui a arraché l'une de ses trois charpentières en 2024. Gratuit, accessible à pied depuis le village.",
+ "question_title": "Quel est le plus vieil arbre de Venon ? (300 à 400 ans)",
+ "question_meta": "Le plus vieil arbre de Venon est le Chêne de Venon, un chêne solitaire de 300 à 400 ans sur une hauteur au-dessus de Grenoble.",
+ "question_answer": "Le plus vieil arbre de Venon est le Chêne de Venon, un chêne d'environ 300 à 400 ans qui se dresse seul sur un pâturage ouvert, sur une hauteur au-dessus du village, face à la vallée du Grésivaudan et à la cuvette grenobloise. La France l'a reconnu Arbre remarquable en avril 2017.",
+ "question_context": "L'espèce exacte du chêne n'a été tranchée par aucune des sources que nous avons trouvées : toutes disent simplement un chêne et s'arrêtent là. Les pédoncules des glands régleraient la question en un après-midi, si bien qu'un visiteur attentif peut nous en apprendre plus qu'aucun registre n'en a consigné. Ce qui est établi, c'est son état : une tempête de fin novembre 2024 lui a arraché l'une de ses trois charpentières, et un arboriste qui a examiné la plaie six mois plus tard a jugé l'arbre en très bonne santé, avec des siècles encore devant lui. Il pousse entièrement seul sur le versant, ce qui le rend visible de toutes les directions depuis le fond de la vallée, et une centaine de personnes sont montées jusqu'à lui pour la cérémonie de reconnaissance de 2017. Un panneau d'information avec un QR code se tient désormais à son pied. Des visiteurs gravent leurs initiales dans l'écorce, ce qui ouvre le bois aux champignons chez un arbre qui a déjà perdu une charpentière ; laissez-le tranquille.",
+ "faq": [
+  {
+   "q": "Quel est le plus vieil arbre de Venon ?",
+   "a": "Le Chêne de Venon, un chêne d'environ 300 à 400 ans qui se dresse seul sur une hauteur au-dessus du village. La France l'a reconnu Arbre remarquable en 2017."
+  },
+  {
+   "q": "De quelle espèce de chêne s'agit-il ?",
+   "a": "Personne ne l'a consigné. Toutes les sources que nous avons trouvées disent simplement un chêne et s'arrêtent là. Si vous y allez et regardez les pédoncules des glands, dites-le-nous et nous mettrons la page à jour."
+  },
+  {
+   "q": "La visite est-elle gratuite ?",
+   "a": "Oui, l'arbre se dresse sur un pâturage ouvert au-dessus de Venon, sans portail ni billet, accessible à pied depuis le village."
+  },
+  {
+   "q": "L'arbre est-il en bonne santé ?",
+   "a": "Oui. Une tempête lui a arraché l'une de ses trois charpentières fin novembre 2024, mais un arboriste qui l'a examiné en 2025 l'a jugé en très bonne santé, avec des siècles encore devant lui."
+  }
+ ],
+ "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+ "trees": {
+  "vno_001": {
+   "name": "Le Chêne de Venon",
+   "species": "Chêne (Quercus sp.)",
+   "age_estimate": "environ 300 à 400 ans",
+   "access": "Gratuit, se dresse seul sur un versant ouvert de pâturage au-dessus de Venon ; accessible à pied depuis le village. Un panneau d'information et un QR code ont été installés sur place.",
+   "transport": "Pas de gare à Venon même ; la plus proche est Grenoble, puis une route ou une montée à pied jusqu'au versant au-dessus du village (environ 10 km depuis le centre de Grenoble).",
+   "story": "Une tempête de fin novembre 2024 lui a arraché l'une de ses trois charpentières. Six mois plus tard, un arboriste a regardé la plaie et a jugé l'arbre en très bonne santé, avec des siècles encore devant lui.\n\nLe chêne se dresse seul sur une hauteur au-dessus du village de Venon, sur un pâturage ouvert, sans rien d'aussi haut que lui alentour. Vu du fond de la vallée, c'est une marque sombre unique sur la ligne d'horizon, lisible de toutes les directions depuis la cuvette grenobloise et le Grésivaudan, et c'est ainsi qu'il est devenu un repère pour des gens qui ne sont jamais montés jusqu'à lui. Dix-huit mètres de haut, cinq mètres de tour, et quelque part entre 300 et 400 ans.\n\nLa France l'a labellisé Arbre remarquable en avril 2017, et une centaine de personnes ont monté la côte pour la cérémonie, ce qui fait une belle affluence pour un arbre dans un pré. Il y a maintenant un panneau d'information à son pied, avec un QR code.\n\nToutes les sources que nous avons trouvées disent un chêne et s'arrêtent là. Personne ne dit lequel, et les pédoncules des glands régleraient la question en un après-midi : si vous montez et que vous regardez, dites-nous ce que vous voyez.\n\nUn dernier point. Des visiteurs gravent leurs initiales dans l'écorce, et chaque entaille ouvre le bois aux champignons chez un arbre qui a déjà traversé une tempête. Laissez le couteau dans la voiture."
+  }
+ }
+}

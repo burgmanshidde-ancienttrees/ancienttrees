@@ -1,0 +1,71 @@
+{
+ "_note": "de overlay for regensburg, written 2026-09-18 from data/cities/regensburg.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Regensburg",
+ "title": "Alte Bäume in Regensburg: 5 bemerkenswerte Exemplare",
+ "meta_description": "Fünf geschützte Bäume in Regensburg: eine Platane am mittelalterlichen Torturm, eine auf einem römischen Marktplatz, zwei Kastaniengruppen in Stadtamhof.",
+ "intro": "Regensburg schützt seine Bäume einzeln und mit Nummer, und heraus kommt dabei eine Reihe von Bäumen der Innenstadt statt Riesen auf dem Land. Eine Platane im Herzogspark teilt sich die Wiese mit einem mittelalterlichen Torturm, eine zweite hält eine Straßenecke in Prebrunn, und eine dritte wächst auf einem Marktplatz, den die Römer um 175 n. Chr. angelegt haben. Jenseits der Steinernen Brücke, der ältesten Steinbrücke Deutschlands, stehen zwei geschützte Kastaniengruppen wenige Häuser voneinander entfernt an derselben Straße in Stadtamhof. Alle fünf sind kostenlos, und die ganze Runde ist ein Nachmittag zu Fuß.",
+ "question_title": "Was ist der älteste Baum Regensburgs? Eine Platane",
+ "question_meta": "Der älteste Baum ist die Platane im Herzogspark, etwa 200 Jahre, der einzige der fünf geschützten Bäume mit einer Altersangabe.",
+ "question_answer": "Der älteste Baum auf dieser Regensburger Seite ist die Platane im Herzogspark, angegeben mit etwa 200 Jahren, in der öffentlichen Grünanlage am nordwestlichen Rand der Altstadt neben dem mittelalterlichen Prebrunnturm. Sie ist zugleich die Einzige dieser fünf Bäume, an der überhaupt ein Alter hängt, und diese Zahl stammt aus der Bildunterschrift eines Fotografen, die 2022 vor Ort geschrieben wurde, nicht aus einer Erhebung oder einer Ringzählung; lesen Sie sie also als Schätzung einer einzelnen Person. Die anderen vier, zwei weitere Platanen und zwei Kastaniengruppen, stehen ohne ein einziges Datum unter städtischem Schutz: Das Regensburger Naturdenkmalregister hält fest, was ausgewiesen ist und wann es ausgewiesen wurde, nie, wie alt es ist. Jeder der vier undatierten Bäume könnte älter sein, und nachgesehen hat es niemand. Wenn Sie eine Umfangmessung oder einen Pflanznachweis für einen von ihnen kennen, sagen Sie es uns, und diese Seite ändert sich.",
+ "question_context": "Regensburg ist eine Stadt, die einzelne Bäume schützt, statt sie zu datieren. Ihre Naturdenkmalverordnung gibt jedem geschützten Baum und jeder Gruppe eine Nummer, eine Straße und ein Datum der Ausweisung, und kein Alter, weshalb vier der fünf Bäume hier keine Zahl tragen und die etwa 200 Jahre des fünften auf der Bildunterschrift eines Fotografen beruhen statt auf einer Messung.\n\nWas die Stadt bietet, sind Bäume, die ungewöhnlich leicht in einem Zug zu sehen sind. Die Platane im Herzogspark und die Eckplatane Am Singrün liegen in Prebrunn am westlichen Rand der Altstadt etwa fünf Minuten auseinander. Die Platane am Alten Kornmarkt steht mitten im UNESCO-gelisteten Zentrum, auf einem Platz, der seit römischer Zeit als Handelsgrund in Gebrauch ist. Die beiden Kastaniengruppen stehen jenseits der Steinernen Brücke in Stadtamhof, wenige Häuser voneinander entfernt an derselben Straße, unter getrennten Nummern geschützt, die ein Jahr auseinanderliegen.\n\nAlle fünf sind kostenlos und vom Regensburger Hauptbahnhof zu Fuß erreichbar. Wenn Sie einen von ihnen datieren können, sagen Sie es uns.",
+ "faq": [
+  {
+   "q": "Was ist der älteste Baum in Regensburg?",
+   "a": "Von den fünf geschützten Bäumen auf dieser Seite hat nur die Platane im Herzogspark überhaupt ein Alter, angegeben mit etwa 200 Jahren aus der Bildunterschrift eines Fotografen vor Ort und nicht aus einer Erhebung. Die anderen vier sind undatiert, einer von ihnen könnte also durchaus älter sein."
+  },
+  {
+   "q": "Sind Regensburgs geschützte Bäume kostenlos zu besuchen?",
+   "a": "Alle fünf sind kostenlos. Drei stehen an öffentlichen Straßen und Plätzen und sind zu jeder Stunde erreichbar; die Platane im Herzogspark steht in einer städtischen Grünanlage, die bei Tageslicht geöffnet ist. Ein Ticket braucht es auf dieser Liste nirgends."
+  },
+  {
+   "q": "Kann man alle fünf in einem Spaziergang sehen?",
+   "a": "Ja, an einem Nachmittag. Drei liegen auf der Altstadtseite, zwei davon fünf Minuten auseinander in Prebrunn und eine am Alten Kornmarkt, und die beiden Kastaniengruppen stehen jenseits der Steinernen Brücke in Stadtamhof, wenige Häuser voneinander entfernt Am Gries."
+  },
+  {
+   "q": "Stirbt eine der Kastanien Am Gries?",
+   "a": "Eine aus der Gruppe war sichtbar am Absterben, als ein Fotograf sie am 29. August 2022 aufnahm, die übrigen standen. Eine neuere öffentliche Aussage zu ihrem Zustand gibt es nicht. Wenn Sie sehen, wie es ihnen heute geht, sagen Sie es uns."
+  }
+ ],
+ "trees": {
+  "rgb_001": {
+   "name": "Die Platane im Herzogspark",
+   "species": "Ahornblättrige Platane (Platanus x acerifolia)",
+   "age_estimate": "etwa 200 Jahre",
+   "access": "Kostenlos. Im Herzogspark, einer öffentlichen städtischen Grünanlage am nordwestlichen Rand der Altstadt, täglich bei Tageslicht geöffnet.",
+   "transport": "Regensburg Hauptbahnhof, dann etwa 15 bis 20 Minuten zu Fuß, oder mit dem Bus bis Prebrunn/Herzogspark, 5 Gehminuten.",
+   "story": "Diese Platane teilt sich eine Wiese mit einem mittelalterlichen Torturm und ist von beiden um Jahrhunderte die Jüngere. Der Prebrunnturm hält die nordwestliche Ecke der Regensburger Altstadt, und der Boden unter Baum und Turm war eine Bastion der Stadtmauer, lange bevor hier irgendetwas gepflanzt wurde.\n\nDer Garten kam 1804, privat angelegt für Georg Friedrich von Müller auf dem Gelände dieser alten Bastion. 1843 übernahm ihn die Familie Thurn und Taxis, 1935 kaufte ihn die Stadt, und zwischen 1950 und 1952 öffnete er als Herzogspark für die Öffentlichkeit.\n\nWo die Platane in dieser Abfolge steht, ist nirgends festgehalten. Das einzige veröffentlichte Alter sind etwa 200 Jahre, und es stammt aus der Bildunterschrift eines Fotografen, die 2022 vor Ort geschrieben wurde, nicht aus einer Erhebung oder einer Ringzählung; nehmen Sie es also als die Schätzung einer einzelnen Person. Auch verbindet nichts diesen Baum mit der ursprünglichen Pflanzung von 1804. Das Gründungsjahr des Parks und das Alter des Baums sind zwei getrennte Tatsachen.\n\nDokumentiert ist der Schutz. Der Baum steht als Nummer 10 auf der städtischen Liste der Naturdenkmäler, einer von wenigen Regensburger Bäumen, die einzeln und nicht als Teil einer Anlage ausgewiesen sind. Wenn Sie wissen, wann er in die Erde kam, sagen Sie es uns."
+  },
+  "rgb_002": {
+   "name": "Die Kastanien Am Gries",
+   "species": "Rosskastanie (Aesculus hippocastanum)",
+   "age_estimate": "nicht dokumentiert; ausgewachsene Exemplare, eines 2022 sichtbar im Absterben",
+   "access": "Kostenlos. Straßenbäume Am Gries in Stadtamhof, von der öffentlichen Straße aus sichtbar und erreichbar.",
+   "transport": "Über die Steinerne Brücke von der Altstadt aus, dann etwa 5 Gehminuten Am Gries entlang.",
+   "story": "Eine dieser Kastanien stirbt, und der letzte öffentliche Blick auf die Gruppe liegt vier Jahre zurück. Der Fotograf, der sie am 29. August 2022 aufnahm, beschriftete das Bild mit der absterbenden Kastanie im Vordergrund, und das ist bis heute die einzige veröffentlichte Aussage über ihren Zustand. Der Rest der Gruppe stand.\n\nZwei verschiedene Stellen schützen sie, was für eine Reihe Straßenbäume ungewöhnlich ist. Die Regensburger Naturdenkmalverordnung führt sie als Nummer 52, die Kastanien Am Gries, ausgewiesen am 28. März 1996. Das bayerische Landesregister führt dieselbe Gruppe unabhängig davon als ND-03369. Zusammen belegen sie Art, Standort und Schutzstatus. Ein Alter verzeichnet keines von beiden, was für fast jeden Baum auf dieser Seite gilt.\n\nSie stehen Am Gries in Stadtamhof, am anderen Donauufer, etwa fünf Gehminuten vom Ende der Steinernen Brücke entfernt. Diese Überquerung ist der Grund, die beiden Kastanieneinträge zusammen mit denen der Altstadt zu machen und nicht an einem anderen Tag.\n\nWer davor steht, liest als Erstes den Zustand der Gruppe ab. Wenn die kranke Kastanie seit 2022 verschwunden ist oder die anderen ihr gefolgt sind, sagen Sie es uns."
+  },
+  "rgb_003": {
+   "name": "Die Kastanien am Goldenen Löwen",
+   "species": "Rosskastanie (Aesculus hippocastanum)",
+   "age_estimate": "nicht dokumentiert",
+   "access": "Kostenlos. Straßenbäume Am Gries 30 in Stadtamhof, von der öffentlichen Straße aus sichtbar und erreichbar; benannt nach dem früheren Gasthaus Zum Goldenen Löwen auf demselben Grundstück.",
+   "transport": "Über die Steinerne Brücke von der Altstadt aus, dann etwa 5 Gehminuten Am Gries entlang.",
+   "story": "Der Schutz gilt hier einer Rosskastanie und einem Torso. So steht es im Register: Eintrag Nummer 53 der Regensburger Naturdenkmalliste, ausgewiesen am 11. Juni 1997, schützt eine einzelne stehende Kastanie und den Rest einer zweiten, deutlich weniger, als der Plural im Namen vermuten lässt.\n\nDer Name gehört dem Gebäude und nicht den Bäumen. Zum Goldenen Löwen war ein Gasthaus auf diesem Grundstück Am Gries 30, und die Kastanie behielt den Namen, nachdem das Gasthaus geschlossen hatte.\n\nSie steht wenige Häuser von den Kastanien Am Gries entfernt, und die beiden sind tatsächlich getrennte Ausweisungen, ein Jahr auseinander und unter verschiedenen Nummern, nicht eine doppelt gezählte Gruppe. Vor Ort ist der Unterschied leicht: ein Bündel Stämme vor Nummer 18, eine einzelne Krone und die Überreste ihres Nachbarn vor Nummer 30.\n\nDatiert hat keinen von beiden jemand. Eine städtische Verordnung von 1997 und ein Foto vom August 2022 sind der gesamte dokumentierte Bestand zu diesem Baum, und das Foto ist zugleich die letzte Bestätigung, dass er steht. Wenn Sie das Pflanzjahr kennen oder fünf Minuten und ein Maßband haben, sagen Sie es uns."
+  },
+  "rgb_004": {
+   "name": "Die Platane am Alten Kornmarkt",
+   "species": "Ahornblättrige Platane (Platanus x acerifolia)",
+   "age_estimate": "nicht dokumentiert",
+   "access": "Kostenlos. Am oder neben dem Alten Kornmarkt, einem öffentlichen Platz in der historischen Altstadt, auf dem samstags ein Gemüsemarkt stattfindet; jederzeit zugänglich.",
+   "transport": "In der Altstadt, etwa 10 Gehminuten vom Regensburger Hauptbahnhof, neben dem römerzeitlichen Römerturm und dem Herzogshof.",
+   "story": "Diese Platane wächst auf einem Marktplatz, den die Römer um 175 n. Chr. angelegt haben. Der Alte Kornmarkt ist ein fast quadratischer Platz im Herzen der UNESCO-gelisteten Altstadt, umstellt vom Herzogshof, vom Römerturm und vom Karmelitenkloster, und er ist die meiste Zeit seither Handelsgrund geblieben: Samstagvormittags übernimmt ihn noch immer ein Gemüsemarkt.\n\nDer Baum ist Nummer 34 auf der städtischen Liste der Naturdenkmäler, eingetragen schlicht als Platane am Alten Kornmarkt. Der Eintrag nennt keine Hausnummer und keine Koordinate. Die Beschreibung des Platzes erwähnt eine Baumreihe an der Südseite, die den freistehenden Glockenturm der Alten Kapelle teilweise verdeckt, und dort beginnt man am ehesten zu suchen, auch wenn keine Quelle diesen Baum tatsächlich in diese Reihe stellt. Die Markierung steht hier auf dem Platz und nicht auf einem Stamm, rechnen Sie also mit einer Minute, um herauszufinden, welche Krone gemeint ist.\n\nEin Foto vom 11. August 2024 zeigt ihn stehend. Ein Alter ist nie festgehalten worden, was üblich ist für einen Baum, den die Stadt über einen Straßennamen und sonst nichts schützt. Wenn Sie ihn datieren oder auf den genauen Stamm zeigen können, sagen Sie es uns."
+  },
+  "rgb_005": {
+   "name": "Die Platane an der Ecke Am Singrün",
+   "species": "Ahornblättrige Platane (Platanus x acerifolia)",
+   "age_estimate": "nicht dokumentiert",
+   "access": "Kostenlos. An einer öffentlichen Straßenecke im Stadtteil Prebrunn, jederzeit sichtbar und erreichbar.",
+   "transport": "Etwa 10 bis 15 Gehminuten vom Regensburger Hauptbahnhof; 5 Gehminuten von der Platane im Herzogspark (rgb_001), auf derselben Seite der Altstadt.",
+   "story": "Der Eintrag, der diesen Baum schützt, nennt keine Adresse, nur eine Ecke. Nummer 43 der Regensburger Naturdenkmalliste ist eine Platane an der Ecke Prebrunnstraße und Am Singrün, und mehr Standort hat nie jemand veröffentlicht: keine Hausnummer, keine Koordinate, und auch keine GPS-Angabe am Foto des Baums. Die Markierung steht hier auf der Ecke, was Sie an die richtige Kreuzung bringt und nicht an den genauen Stamm.\n\nAhornblättrige Platanen kamen zu Tausenden in europäische Straßen, weil sie verdichteten Boden und Stadtluft vertragen, und fast alle bleiben namenlos. Diese steht auf der Schutzliste, in Prebrunn am westlichen Rand der Altstadt, fünf Gehminuten von der Platane im Herzogspark. Diese Nähe macht aus den beiden einen einzigen Halt statt zweier, was vor der Planung des Nachmittags zu wissen sich lohnt.\n\nDas jüngste Foto stammt vom 15. September 2024, womit dieser Baum der am besten bestätigte der fünf hier ist: Die anderen wurden zuletzt 2022 oder 2024 festgehalten. Datiert hat ihn niemand, und ein Maßband hat auch niemand um ihn gelegt. Wenn Sie eines von beidem können, sagen Sie es uns."
+  }
+ }
+}
