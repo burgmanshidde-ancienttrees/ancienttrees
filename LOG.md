@@ -2,6 +2,73 @@
 
 <!-- archive-index -->
 
+## 2026-09-19 (night run, continuation 2) - A silently dead reader-photo pipeline fixed, three deepen passes dispatched, three stale branches cleared
+
+Resumed a window that had stopped after 28 minutes with 92 unspent, having
+shipped nine trees and nothing left urgent on its own account. `--ready`
+showed only 3 leads, and all three turned out to be misclassified: each
+carries a `why` explicitly saying it cannot ship yet (one source only, or an
+unresolved schoolyard-access question on a Bregenz Naturdenkmal), but the
+phrasing didn't match any pattern in `leads.py`'s `NOT_READY_MARKER`, so a
+write pass would have written stories for unverified trees. Widened the
+regex; `--ready` now correctly shows 0.
+
+**Found and fixed a real production break: the reader-photo pipeline has
+been reading nothing since 2026-09-17.** `sightings_inbox.py`'s SELECT names
+`girth_hugs`, a column added to the table IN CODE by the girth/hug rename
+(commit c52f380e, merged 2026-09-17) but never applied to the live Supabase
+table, because that needs Hidde's paste of `supabase/sightings.sql` and a run
+cannot run DDL against production. PostgREST 400s the WHOLE query when one
+selected column is missing, so every knock since the merge silently read
+zero sightings on rung 1 of Step 0, the single highest-priority item on the
+list, and the exception was swallowed with no alarm. Checked the damage: 28
+rows exist, all 28 already marked done before the column was ever referenced,
+so nothing sent in the two-day gap was lost, but the next reader photograph
+would have been. Made the query fall back to the pre-rename column set on
+exactly that PostgREST error, so the pipeline works now and picks the field
+up for free the moment the migration is pasted.
+
+**Vendored 5 approved photographs onto our own domain** (mil_002, rvd_001,
+rvd_002, sno_001, sno_002) that were still pointing at Wikimedia.
+
+**Cleared three of the six stranded branches the session-start brief
+flagged**, after checking each against a proper `git merge-base` diff rather
+than trusting the raw "not merged" flag: `claude/boom-pagina-kop-h8zuv9`,
+`claude/tree-age-species-trunk-size-u9u1yb` and `claude/nostalgic-lewin-e2a29b`
+each turned out to be fully superseded, their real content already landed on
+main via a manual squash/cherry-pick under a different commit (the same
+"landed another way" blind spot the 2026-09-18 entry already named). Verified
+by diffing against merge-base and grepping main for the branch's own unique
+function/comment text before deleting; in one case (the meta-lead preposition
+fix) main's own commit 83d4aa44 carries word-for-word the same prose as the
+branch. Deleted all three. The other three
+(`claude/zware-foto-zoektocht-kb1n3e`, `claude/waitlist-app-launch-email-9szzt4`,
+`claude/draft-reply-daniel-9g4c90`) are NOT safe to fast-clear: zware-foto is
+a genuine mix of superseded translation data (all 12 city sets already exist
+on main under different commits) and real unmerged script work (two new
+qa.py/preflight.py checks, `check_dist_is_newer_than_the_source()` among
+them, that do not exist anywhere on main and would need a careful
+cherry-pick rather than a raw merge); waitlist and draft-reply are mail to
+real people, one of them 9 days stale (new signups since won't be on the
+list), and belong to a session with time to re-verify the list before
+anything is sent, not a fast clear.
+
+**Dispatched three parallel verify passes on cities with real, unmined
+register supply**, per the register-first course: Hiroshima (24 of 46
+Environment Ministry giant-tree leads never looked at, no coordinates in the
+register so each needs geocoding from the shrine/temple name), Melbourne (two
+genuine CC-BY "Significant Tree" designation registers, Yarra and Boroondara,
+518 unmined rows combined, hard rule 10 live on the Boroondara set which
+itself flags "Front garden" position values), and Hoorn (304 unmined Dutch
+LRMB rows, most within 300m of the existing 1km-wide cluster, real demand at
+40 impressions/10 days and 12 of a 20 target). All three claimed via
+passcheck before dispatch. Results not back yet at the time of this entry.
+
+FOR HIDDE: nothing blocking. The zware-foto/waitlist/draft-reply branches
+are the one thing worth your eyes if you have a spare five minutes — not
+urgent, just don't let them rot further; the mail ones need a fresh
+send-list check before anyone fires them.
+
 ## 2026-09-19 (night run, continuation) - Two French forest pages an earlier attempt left uncommitted, plus two photos and two ONF-panel ages found while finishing them
 
 Resumed a window that had stopped after 54 minutes with 66 unspent, having
