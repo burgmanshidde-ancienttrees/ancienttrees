@@ -25,6 +25,44 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Setting a profile picture on the WEB (2026-09-19)
+
+The app has had this since the profile editor shipped: a PhotosPicker, a
+64 point circle, and one Save in the toolbar that sends the picture and the
+name together (Screens/ProfileEditor.swift). The website could read an avatar
+and never set one, so anybody who had not installed the app had no way to
+have a face at all. PhotosPicker has no web equivalent, so the question is
+what a website does instead.
+
+**iNaturalist.** The profile icon is a field on the Account Settings page,
+beside the name and the about text, and ONE "Save Settings" button at the top
+right saves the picture along with everything else on the page.
+Read 2026-09-19, iNaturalist "Tech Tip Tuesday: Editing Profiles" and the
+account-settings redesign thread on their forum.
+
+**AllTrails.** The route is the profile image in the top right, then Settings
+from the menu, then the picture in profile settings. Same shape: it lives in
+settings rather than on the profile itself.
+Read 2026-09-19 via AllTrails Help, "How to change your profile picture" (the
+help page itself is blocked from this network; the steps are its own summary).
+
+**What they agree on, and it is the part worth copying.** The picture is a
+FIELD ON A SETTINGS PAGE, never a control on the public profile. Picking a
+file only stages it; a Save writes it, with the name, in one act. And the
+control is a file input behind a button, because that is the only picker a
+browser has.
+
+**What we built from it.** A "Your picture" row at the top of the Account card
+on /account/settings, the app's own circle beside a "Choose a photo" button
+that becomes "Change photo", and the page's existing Save doing both fields.
+Underneath, nothing is re-decided: 512px on the long edge, JPEG at quality
+0.8, POSTed to avatars/<user-id>/avatar.jpg with x-upsert, then the same
+profiles upsert the app makes. EXIF orientation is applied rather than
+assumed, because a phone leaves the pixels sideways and writes the rotation
+in a tag.
+
+---
+
 ## A my-location control over a bottom sheet (2026-09-13)
 
 Written because this one control has been reported four times and fixed three
