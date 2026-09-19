@@ -2,6 +2,72 @@
 
 <!-- archive-index -->
 
+## 2026-09-19 - Every country page now names its ten oldest trees, not one
+
+Hidde asked whether we should make a top 10 of remarkable trees per country.
+Two corrections to the idea, then it shipped.
+
+**Oldest, not remarkable.** Remarkable is a taste judgement and hard rule 8
+lives there. Every national query in Search Console is shaped "oldest tree in
+X" or "trees in X"; nobody searched for remarkable. He agreed.
+
+**A block, not 46 new pages.** The country page already targets the country
+and already ranks (netherlands i99 p8.2, germany i65, south-korea i64). A
+second country-level URL would put two of our own pages against each other on
+one intent, which is the 2026-09-17 lesson: ~650 surplus URLs left 36 pages
+filed as crawled-and-not-indexed.
+
+**The gap was real and the demand is landing on the wrong pages.** /netherlands
+holds 602 trees and named exactly ONE. Its three sections were a city
+directory, a species list and a single tree. Meanwhile "oldest tree in the
+netherlands" reaches /nijmegen and /eindhoven at position 4, and "oldest tree
+in switzerland" reaches /cremines, a village page of 15 impressions, at
+position 6. National questions answered by whatever city page Google could
+find.
+
+**And BACKLOG.md's "never build" on this is out of date, which is why the idea
+looked wrong at first glance.** It says national superlatives are a trap
+because "the record holder is usually rural and not ours". That was written
+2026-08-04 at ~80 cities. At 626 places the rural record holders ARE ours:
+Fortingall and Llangernyw for the UK, Schenklengsfeld for Germany, Cremines
+for Switzerland, Den Hout for the Netherlands. Another verdict that outlived
+its fact, like the Dutch register licence and the Wikimedia proxy.
+
+**What shipped.** `[country].astro` ranks every aged tree in the country and
+renders the top ten as TreeCards with a city link, reusing the collection
+page's own row form (the Top-N form BACKLOG.md already named as the design
+language for Contract G). The age sentence comes from `MODES.oldest.note()`
+rather than a second wording, so this page and
+/collections/trees-older-than-400-years cannot say the same fact two ways. The
+sort key is this page's own long-standing one, lower bound first, so the tree
+at number one is the same tree the single-tree block showed yesterday and no
+published answer flipped. 29 of 32 country pages carry it; Ireland, Turkey and
+Hungary have hand-written intros but no page at all, sitting under Contract
+G's 3-city floor, which is pre-existing.
+
+**One thing I broke and caught.** The first build headed the block "The 6
+oldest trees in Taiwan", dropping the word "mapped" the old heading carried.
+Taiwan's list runs down to a 90 year old tree, so that is a claim about Taiwan
+that somebody in Taiwan knows is wrong. It reads "the N oldest trees we map in
+X" now, the same honesty as never presenting a register count as a count of
+what exists.
+
+Country pages are English-only, so no translation work: the seven languages
+cover cities, the city index, explore and home.
+
+Build clean (11,993 pages), preflight 0 problems, QA green on 15,893.
+
+**FOR HIDDE.** One ask, because it is hard rule 7 and therefore yours. The
+country page's title is `Ancient Trees in [Country]: [N] Cities to Explore`,
+fixed in Contract G. It is a CITIES title on a page whose measured demand is
+tree-shaped, and that mismatch is probably why "oldest tree in the netherlands"
+prefers /nijmegen over /netherlands. I cannot test my way to the answer either:
+copytest needs 20 eligible pages and only 7 country pages clear 10 impressions.
+So it needs either your yes on a Contract G title change plus a version bump,
+or it stays as it is. My proposal: `Ancient Trees in [Country]: the Oldest [N]
+to Visit`, or keep the cities count and add the trees count.
+
+
 ## 2026-09-18 (session 5) - Answered "how are the collections doing", rebuilt the stalest one, put the whole page type on the meter
 
 Hidde asked whether any collection scores on search volume, what we can
