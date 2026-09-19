@@ -1,0 +1,75 @@
+{
+  "city": "Hel",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Hel's most famous tree is a black poplar on a street corner, not anything on the beach the peninsula is known for. Roughly 220 years old and named Helena after winning Poland's national Tree of the Year competition in 2017, it lost a twin to a windstorm years ago; the carved trunk of that twin, now a sculpture of fishermen hauling nets, still stands nearby. The town holds a name-day street party for it every 22 May.",
+  "meta_description": "Helena the Poplar in Hel: a roughly 220-year-old black poplar, Poland's Tree of the Year 2017, free to see on a street corner in town.",
+  "question_meta": "Hel's tree is Helena the Poplar, roughly 220 years old, on a street corner in the town centre.",
+  "question_answer": "Helena the Poplar, a black poplar at the corner of ul. Bałtycka, ul. Wiejska and ul. Kuracyjna in central Hel, roughly 220 years old, 30 metres tall and just over four metres round. Free to see, a short walk from Hel's railway station.",
+  "question_context": "The tree was protected as a natural monument by the Gdańsk provincial council in 1973, decades before it had a name. It became Helena in 2017 after winning Poland's national Tree of the Year competition, named for Helena Przybyszewska, said to be the wife of the naval commander who led the thirty-two day defence of the Hel Peninsula in September 1939. Two independent sources agree on the age, height, girth and the 1973 designation.\n\nIt once grew beside a twin poplar of the same age. When that twin fell in a windstorm, local woodcarvers turned its trunk into a sculpture of fishermen hauling in their nets, referencing the town's fishing history; it still stands near Helena today, a monument to the poplar that did not survive. The town has celebrated the tree's name day every 22 May since, with a street party built around it, and Helena has her own Facebook page kept by locals who consider her the town's best-known resident, tree or otherwise.\n\nHel itself draws visitors mainly for its beach, so Helena is a detour worth making rather than the reason most people arrive, a short walk from the narrow-gauge railway station.",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It won Poland's national Tree of the Year competition in 2017 and has been the town's best-loved tree ever since, with its own annual name-day street party every 22 May."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 220 years, based on two independent sources; it stands 30 metres tall and about four metres round."
+    },
+    {
+      "q": "Why is it called Helena?",
+      "a": "After Helena Przybyszewska, said to be the wife of the naval commander who led the thirty-two day defence of the Hel Peninsula in September 1939. It only received the name when it won Poland's 2017 Tree of the Year competition."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on a public street corner in the centre of Hel."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "A short walk from Hel's narrow-gauge railway station, at the end of the line along the Hel Peninsula."
+    }
+  ],
+  "hero_tree_id": "hlp_001",
+  "oldest_tree_id": "hlp_001",
+  "trees": [
+    {
+      "id": "hlp_001",
+      "name": "Helena the Poplar (Topola Helena)",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "roughly 220 years",
+      "age_min": 200,
+      "age_max": 240,
+      "girth_cm": 405,
+      "height_m": 30,
+      "location": {
+        "address": "Corner of ul. Bałtycka, ul. Wiejska and ul. Kuracyjna, Hel, Puck County, Pomeranian Voivodeship, Poland",
+        "latitude": 54.60135,
+        "longitude": 18.80557,
+        "neighbourhood": "Hel town centre"
+      },
+      "verified_sources": [
+        "https://dzieje.pl/rozmaitosci/ok-220-letnia-topola-helena-drzewem-roku-2017",
+        "https://nadmorski24.pl/aktualnosci/48217-najslynniejsze-drzewo-polnocy-topola-helena-z-helu"
+      ],
+      "access": "Free, on a public street corner in the middle of town.",
+      "transport": "Central Hel, short walk from Hel railway station (the narrow-gauge line along the Hel Peninsula terminates in the town).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Hel_Topola_Helena.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Tomek Siudak, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3120,
+        "height": 4160
+      },
+      "story": "Hel's best-loved tree survived a storm that killed its twin, and got a name-day party out of it.\n\nThis black poplar has stood at a street corner in the middle of town since around the early 19th century, roughly 220 years old, 30 metres tall and just over four metres round. It once grew beside a second poplar of the same age. When that twin fell in a windstorm, the town's woodcarvers turned its trunk into a sculpture of fishermen hauling in their nets, which still stands near Helena today, a monument to the tree that did not make it.\n\nThe Gdańsk provincial council protected it as a natural monument in 1973, but it only got its name decades later. In 2017 it won Poland's national Tree of the Year competition as Helena, named for Helena Przybyszewska, said to be the wife of the naval commander who led the thirty-two day defence of the Hel Peninsula in September 1939. The town has celebrated its name day every 22 May since, with a street party built around a tree.\n\nIt stands free to see on a public corner where ul. Bałtycka meets ul. Wiejska and ul. Kuracyjna, a short walk from the narrow-gauge railway that ends its line in Hel.",
+      "how_to_recognise": "You can recognise it by the carved wooden sculpture of fishermen hauling nets standing near it, made from the trunk of its twin poplar that fell in a storm. It grows at the corner of ul. Bałtycka, ul. Wiejska and ul. Kuracyjna.",
+      "best_time": {
+        "months": [10],
+        "label": "October, when the leaves turn gold",
+        "kind": "autumn colour"
+      }
+    }
+  ]
+}

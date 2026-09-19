@@ -18,6 +18,227 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-19 (night run, continuation) - Finished an earlier attempt's uncommitted work: Senonches and Réno-Valdieu, plus two photos and two ONF-panel ages found while finishing them
+
+Resumed a window that had stopped after 54 minutes with 66 unspent, having
+shipped nothing despite the work being done. `data/cities/senonches.json`
+(4 trees) and `data/cities/reno-valdieu.json` (4 trees), both flagged
+`needs_curation`, both drawn from `data/research/famousfrance-verified.json`
+and `data/leads/_famous-france.json`, are now live and verified clean.
+
+**Senonches**: Chêne Fauteuil (5-stem oak, 300-340y, 680cm girth, safety
+perimeter for falling deadwood), Les Trois Frères (3-stem oak, ~340y,
+550cm), a sweet chestnut at Rond de Condé (undated, flagged), and a ring of
+seven 1854-seed giant sequoias plus a cedar at Rond de Monsieur. All free,
+all on one official waymarked "venerable trees" loop.
+
+**Réno-Valdieu**, 28-30km away: four oaks in the "série artistique de la
+Gautrie" dedicated to Oxford, Aberdeen, the Forestry Commission and a
+forestry congress, at Carrefour Degraine, all four sharing one pin
+(honest: nothing in any source separates the trunks) and all flagged.
+
+**Photo hunt on the leads file's own candidate list found two tree photos
+and, unexpectedly, two ONF interpretive panels.** All six candidates
+fetched and viewed against the Cadiz standard. Approved (CC BY-SA, Le
+Passant, via Wikimedia Commons): sno_001, sno_002, rvd_001, rvd_002.
+
+The two panel photos, at Réno-Valdieu, were not usable as tree photos but
+were usable as sources: each gives a real forestry-survey figure for one
+named oak, 360 years in 2006 (about 380 today), a girth (383cm Forestry
+Commission, 343cm Oxford) and a height (43m both). Both trees had been
+carrying only the série-wide "200 to 350, sources disagree"; they now
+carry their own derived age, girth and height, sourced to the panel photo.
+
+**The same two panels, worded identically, name the fourth oak "le Xème
+Congrès Forestier Mondial."** ONF manages the forest and wrote the signs,
+which settles a numbering dispute the story had left open against a hiking
+site calling it the eleventh. Renamed rvd_004 to "Chêne du Xe Congrès
+Forestier" and said so plainly in the story, disagreement included.
+rvd_003 (Aberdeen) has no panel and stays at 200-350, flagged.
+
+Updated reno-valdieu.json's intro, meta_description, question fields and
+FAQ for the two now-individually-dated trees, then trimmed seven fields
+(`preflight.py` catches length caps; the edits pushed intro, both meta
+fields, and three `how_to_recognise` lines over SEO_GEO_BLUEPRINT's
+limits). `preflight.py`: 0 problems. Local `npx astro build`: clean.
+Released both standing claims (senonches, reno-valdieu).
+
+## 2026-09-18 (session 11, continuation) - Three translation batches: German, French, Japanese, 15 cities
+
+`langcheck.py --next` named the top untranslated city per proven language
+area (de, es, fr, ja all past their English twin per city). Batched the
+three with more than one candidate worth a pass: `transbrief.py --brief de
+regensburg cologne baldenhain` (3 cities, 11 trees), `--brief fr bordeaux
+lyon venon lausanne nantes` (5 cities, 33 trees), `--brief ja takeo uda
+nagano yabu nagoya miyazaki otoyo` (7 cities, 24 trees). Dispatched all
+three as translate passes in parallel (Opus, per the agent's own model
+pin), applied each answer with `transbrief.py --apply`, fixed two overlong
+meta fields the German pass produced (baldenhain's meta_description,
+regensburg's question_meta, both over the 155-char cap), and confirmed
+`i18ncheck.py` clean at 82 overlays (was 67 going in).
+
+**The French pass caught a real bug in the English source while
+translating it**: `data/cities/lyon.json`'s `question_meta` said "eleven
+more" trees where Lyon holds 13 (1 named + 11 = 12, not 13), stale since
+some earlier growth pass added a tree without updating this line. Fixed
+the English to "twelve more" in the same session so both languages agree;
+the French overlay already had the correct count because the translator
+wrote what was true rather than what the English said.
+
+Verified with a full local `astro build` (12,103 pages) and `qa.py`
+(16,031 pages, clean) before committing. Nothing else was found broken;
+one lesson recorded for future translation batches: pick by measured
+impressions per city per CLAUDE.md's rung 0b correction, not by fame, and
+`langcheck.py --next` already does that.
+
+## 2026-09-18 (photo viewing pass) - Milan's plane approved; Arnhem's photo queue is now an honest, documented dead end
+
+20 shortlist rows judged, 49 candidate verdicts written, 1 approved.
+
+**mil_002, Platano di Indro: approved.** The file had been rejected the day
+before on its EXIF geotag (328 m away, in a garden with several large
+planes). That geotag is rounded to one decimal and is not the tree. The file
+is the P18 image of Wikidata Q55741802, a *pianta monumentale* whose own
+coordinate sits 14 m from our confirmed pin, with the next registered plane
+260 m off. Viewed: a veteran plane, fluted trunk filling the frame, opening
+into the five-limb vase our recognition line describes. Bare (March), a
+tiebreaker with no leafy alternative on offer.
+
+**Arnhem is exhausted for these ten trees and the reason is worth recording
+rather than rediscovering.** Its queue is dominated by one prolific local
+photographer's FUNGUS series: oyster mushrooms and beefsteak brackets
+photographed on chestnuts and beeches along Zijpendaalseweg and in Park
+Angerenstein. The filenames name a host tree species and a street, so they
+score well on a filename match and are photographs of mushrooms. Beside them
+sit house facades, a wall poem, stained glass, a 1954 relief, an 1850s
+print, 1961 Rijksdienst building surveys, a 1900 photochrome, and a
+gatekeeper sculpture in Zaltbommel that matched on the tree's name "De
+Poortwachters". Ten Arnhem trees were offered and none had a photograph of
+itself anywhere in the queue. Nobody has photographed these trunks; the
+medicine is a reader or a new source, not another sweep.
+
+**Singapore sgp_020, sgp_023 and sgp_024: all three were offered frames of
+the same tree, and it is a fourth tree we already publish.** Every remaining
+candidate came from one 2024-02-10 shoot in Commons' "Tembusu tree at Lawn
+E" category, i.e. sgp_001, offered as a Teak, a Temak and a Snake Tree.
+
+**Prague and Berlin were on the list by mistake and the mistake is fixed.**
+prg_013, prg_022, prg_023, prg_025, ber_028, ber_032 and arn_001 all had
+approved photographs already; the shortlist filters cities, not trees, so
+they were served their own shoot's second frames as "what to view next".
+Because `photo_apply.py`'s approve overwrites `tree["photo"]`, that list
+could have replaced a judged lead photograph with an unjudged sibling.
+`photo_gaps.py` now skips a tree that carries a photograph, and skips a
+duplicate candidate row whose url was judged on another row of the same
+tree. The shortlist went from 4 cities to 16.
+
+**`photo_light.py` is unavailable in this sandbox** (no Pillow, install not
+permitted), so exposure was judged by eye. Worth having on the image for any
+borderline-light candidate.
+
+## 2026-09-18 (session 11) - Finished an earlier attempt's uncommitted work: two single-tree place pages, two more register giants for Higashi-Hiroshima
+
+Resumed an earlier attempt in this window that had stopped after 23
+minutes with 97 minutes of budget left, having shipped nothing to a
+commit despite the work being done. All of it verified clean and is now
+live.
+
+**Two new single-famous-tree place pages from `data/leads/_famous-spain.json`, published under the 2026-08-31 exception (would somebody travel specifically for THIS ONE TREE).** `data/cities/guernica.json` (grk_001, Gernikako Arbola): the standing oak is young, planted 2015, fifth in a documented dynasty; the page says so plainly and the destination is the ground itself, where Basque self-government was sworn for centuries and where the third tree survived the 1937 bombing a few dozen metres away. `data/cities/valentin-tineo.json` (cbv_001, Carbayon de Valentin): documented in writing before 1492, generally held to be the oldest oak in Asturias, a 10-metre girth flagged in the prose as likely measured at the swollen base rather than chest height. Both flagged (single-sourced age ranges), both `location_precision: confirmed`, both no photo. Marked resolved in `_famous-spain.json` with pointers to the published ids so a future famous-tree pass does not re-surface them.
+
+**Two more register giants added to the already-published `higashi-hiroshima.json`, taking it from 17 to 19 trees**: hgh_018 (the Ginkgo of Genko-ji, Kurose-cho, 3.16m girth) and hgh_019 (the Black Pine of Tokuzen-ji, Toyosaka-cho, 3.30m girth), both registry-only (Ministry of Environment giant-tree survey, 2000) with no second source naming the specific tree, both flagged for that reason, both `location_precision: approximate` since the register's own coordinate resolves to the temple site rather than the trunk. Updated the city's count promises (intro, meta_description, question_context) from seventeen to nineteen; `check_count_promises` and the rest of preflight/qa stayed clean. Released the standing `higashi-hiroshima` claim.
+
+Local `npx astro build` (12,035 pages), `preflight.py` (0 problems) and `qa.py` (15,963 pages) all ran clean before committing.
+
+## 2026-09-18 (later) Pamplona's Villava trio had the wrong distances, and the shortlist could never have named this city
+
+Two corrections to the entry below, both from measuring rather than reading.
+
+**The distances between the three Villava poplars were wrong in seven places**,
+across two access fields, two recognition lines and two stories. Measured from
+our own coordinates: pam_011 to pam_012 is **60 m** (we said 240), pam_011 to
+pam_013 is **181 m** (we said 400), pam_012 to pam_013 is 240 m (we said 400).
+The cardinal directions were right and only the figures were wrong, which is
+how it survived: pam_012 is the southernmost, pam_011 the middle, pam_013 the
+north end. All seven now carry the measured figure.
+
+This is worse than an ordinary slip because of which trees it was on. pam_012's
+own recognition line opens "You can recognise it by position and little else",
+and then gave the position as four times the real distance. A visitor pacing
+240 metres north for the broken-limbed poplar walks past it at 60 and ends up
+at the third tree. Position is the only thing separating these trunks, by our
+own admission, so on these three it is not a detail, it is the entry.
+
+**Item 1 of the list below (fold the Villava twins) should not be done on this
+evidence.** 60 m apart is not the Setubal case: those were separately
+registered trunks metres apart, distinguishable only by girth. pam_011 is
+distinguishable in its own right (three main limbs, one dead and bare, bark
+coming away) and pam_013 is a Lombardy poplar, a narrow column rather than a
+spreading crown. Only pam_012 is undistinguishable, and the shared 314 cm
+girth is not evidence of duplication either: three separate trees in this
+register carry exactly 314, which reads as a banded figure rather than a
+coincidence. Leaving all three, with the real distances, is the honest answer;
+folding one would delete a live page to make a thin one look tidier, which is
+the Leiden lesson pointing the wrong way.
+
+**Item 3 could not have happened as written.** It says Pamplona "belongs at
+the top of photo_gaps.py --shortlist", and the shortlist can only ever print a
+city that already has a candidate on file. Pamplona's queue is swept to sweep
+5 twice over, on 09-09 and 09-16, and 13 of its 14 trees came back with no
+candidate at all, so it appeared on no list anywhere and nothing routed it to
+the medicine this file already names. `photo_gaps.py --shortlist` now ends with
+a STARVED block: demand cities where every queued candidate is judged or none
+was ever found, worst waste first, with the right command per city (the last
+resort for a swept-and-empty city, the ordinary sweep for trees never queued,
+because sending one to the other burns a window on a question already
+answered). It names twelve cities holding 337 unphotographed trees between
+them, Pamplona at the top on 448 impressions, and not one of them has ever
+been through photo_last_resort.py.
+
+Not run here: this sandbox's network policy refuses commons.wikimedia.org
+outright (403 on CONNECT), so the last-resort sweep is a night run's job. The
+CI runner reaches Wikimedia fine, measured 2026-09-01.
+
+**A third thing, found by reading the rendered page rather than the data: 242
+live pages print an internal tree id to the reader.** Pamplona had seven of
+them, in access and transport lines like "the same path segment as pam_012
+(about 60m south)" and "about 1.4km beyond the Villava trio (pam_011/012/013)".
+All seven are gone here, replaced by what the reader can actually use ("the
+southernmost of the three", "the Lombardy poplar at the north end", "the
+pollarded poplar at Rochapea").
+
+The other 235 are across many cities (Warsaw, Alicante, Den Bosch, Brisbane,
+Deventer, Leeuwarden, Arnhem, Quebec City, Lausanne, Trieste and more; the list
+is reproducible by stripping script, style and head, then tags, from every file
+under site/dist and matching `[a-z]{3,4}_0\d\d` in what is left). It happens
+wherever a pass cross-referenced one tree from another's access or transport
+field, which is a sensible thing to write and the wrong place to leave a
+database key.
+
+**Deliberately NOT made a build check tonight.** A FAIL would refuse every
+deploy until all 235 are rewritten, which is self-inflicted breakage and the
+"gate that enforces polish" trap this corpus already names once. The rewrites
+are not mechanical either: each id has to become a phrase a visitor can follow,
+which is a judgement per sentence. It is worth a batch pass of its own, and the
+check belongs in the same change that empties the backlog.
+
+**And trying it found a worse bug than the one it was sent to fix.**
+`photo_last_resort.py` swallowed the network error, returned an empty list, and
+then stamped `last_resort` with today's date on all fourteen Pamplona trees.
+Every one printed "0 new". So a run that reached Commons not once had written
+into the queue that the last resort was tried here and found nothing, which is
+the exact verdict that would keep the site's most wasted city out of every
+future hunt. It also means any `last_resort` stamp written from a sandbox since
+this tool existed may be worth nothing, though the 181 stamps on file are all
+from cities a night run swept (Utrecht 28, Caserta 20, Deventer 12) and none of
+the twelve starved cities carries one.
+
+Fixed rather than worked around: `near_files()` returns None when Commons
+cannot be reached and [] when it answers and holds nothing, an unreachable tree
+is printed as `unreachable` and gets no stamp at all, and a run where nothing
+could be checked exits 1 saying so. The stamps this session wrote were
+reverted. `--shortlist`'s STARVED block now also reports a city whose trees are
+already through the last resort, so nobody spends a window asking twice.
+
 ## 2026-09-18 Pamplona is our best-placed page and our thinnest
 
 Search Console's newest ten days put /pamplona at average position 3.6 on 412

@@ -43,6 +43,7 @@ missing.
     python3 scripts/park_demand.py                 # the coverage table
     python3 scripts/park_demand.py --next 15       # the batch to work next
     python3 scripts/park_demand.py --gaps          # famous parks we map nothing in
+    python3 scripts/park_demand.py --onetree       # one tree short, candidate on hand
     python3 scripts/park_demand.py --views         # fill the demand cache (network)
     python3 scripts/park_demand.py --coords        # refresh coordinates (network)
     python3 scripts/park_demand.py --check         # exit 1 if a page is sitting free
@@ -245,6 +246,82 @@ def assess(seed, places, groups, intros, leads, regs, skip_countries):
             "out_of_focus": p["country"] in skip_countries,
         })
     return rows
+
+
+def registers_without_coordinates():
+    """Registers on disk whose rows carry no coordinate, so SUP cannot see them.
+
+    Added 2026-09-19, because the column was reading as an absence when it meant
+    an inability. The Flanders inventory holds 2,336 individually listed heritage
+    trees with a municipality, a description carrying girth and height, and no
+    latitude anywhere, so every distance check in this project treats Belgium as
+    empty ground. Den Brandt Park in Antwerp is the case that exposed it: it is
+    the one park with measured demand and no page of ours, and "no supply" was
+    the wrong reading of what we hold.
+    """
+    out = []
+    for path in sorted(glob.glob(os.path.join(ROOT, "data", "registers", "*.json"))):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        rows = (d.get("trees") if isinstance(d, dict) else d) or []
+        if len(rows) < 50:
+            continue
+        placed = sum(1 for r in rows if isinstance(r, dict) and _coord(r))
+        if not placed:
+            out.append((os.path.basename(path)[:-5], len(rows)))
+    return out
+
+
+def one_tree_short(places, intros):
+    """Park groups sitting at PARK_MIN_TREES - 1, with a candidate already on hand.
+
+    Hidde, 2026-09-19, asking the sharp version of the park question: "welke
+    hebben volume en hebben wij nog niet?" Measured against our own Search
+    Console, the honest answer is that there is no pile of high-volume parks
+    missing: the whole history holds 34 park-shaped queries a person typed, the
+    biggest at 12 impressions, and we already rank 4th to 11th on most of them.
+    Park demand is a long tail of single-digit terms, so the work that pays is
+    not opening famous parks, it is the cheap end: a park with four mapped trees
+    and a fifth already sitting in a register or a lead, which costs one verify
+    and no research at all.
+
+    350 metres from the group centroid, deliberately tight: a candidate further
+    out than that is a tree near the park rather than in it, and the whole point
+    of this list is that nobody has to go looking.
+    """
+    groups = park_groups(places)
+    demand_cities = {p["slug"] for p in places}
+    out = []
+    for (slug, name), g in groups.items():
+        if len(g["trees"]) != PARK_MIN_TREES - 1:
+            continue
+        if intros.get((slug, name.strip().lower())):
+            has_intro = True
+        else:
+            has_intro = False
+        near = 0
+        for kind, pt in _supply_points():
+            if geo.km(g["centroid"], pt) <= 0.35:
+                near += 1
+        if near:
+            out.append({"city": slug, "park": name, "supply": near,
+                        "intro": has_intro, "trees": len(g["trees"])})
+    return sorted(out, key=lambda r: (-r["intro"], -r["supply"]))
+
+
+_SUPPLY_CACHE = None
+
+
+def _supply_points():
+    """Every register row and open lead as (kind, point), read once."""
+    global _SUPPLY_CACHE
+    if _SUPPLY_CACHE is None:
+        leads, regs = supply()
+        _SUPPLY_CACHE = [("lead", c) for c in leads] + [("register", c) for c in regs]
+    return _SUPPLY_CACHE
 
 
 def verdict(r):
@@ -471,6 +548,8 @@ def main():
     ap.add_argument("--coords", action="store_true", help="refresh coordinates (network)")
     ap.add_argument("--check", action="store_true",
                     help="exit 1 when a park page is sitting free")
+    ap.add_argument("--onetree", action="store_true",
+                    help="parks one tree from a page, with the tree already on hand")
     args = ap.parse_args()
 
     seed = load_seed()
@@ -489,6 +568,17 @@ def main():
     rows = assess(seed, places, groups, written_parks(), *supply(),
                   skip_countries=out_of_focus_countries())
     rows.sort(key=lambda r: rank(r, views))
+
+    if args.onetree:
+        rows = one_tree_short(places, written_parks())
+        print("PARKS ONE TREE FROM A CONTRACT H PAGE, CANDIDATE ALREADY ON HAND\n")
+        print("%-36s %-14s %6s  %s" % ("PARK", "CITY", "SUPPLY", "INTRO"))
+        for r in rows:
+            print("%-36s %-14s %6d  %s" % (r["park"][:36], r["city"], r["supply"],
+                                           "written already" if r["intro"] else ""))
+        print("\n%d parks. One verified tree each, from a register row or a lead "
+              "within 350 m. No research." % len(rows))
+        return 0
 
     if args.check:
         # Red only for what could ship today: five groupable trees and nobody
@@ -534,6 +624,12 @@ def main():
             len(rows), len(seed["parks"])))
     print("\nVIEWS = English Wikipedia pageviews, 3 months, demand not search volume. "
           "GRP = trees the site can group into a park page. SUP = leads and register rows.")
+    blind = registers_without_coordinates()
+    if blind:
+        print("SUP cannot see %s: %s. Rows on disk, no coordinate in them, so a zero "
+              "there means unplaceable rather than absent."
+              % ("one register" if len(blind) == 1 else "%d registers" % len(blind),
+                 ", ".join("%s (%d rows)" % (n, c) for n, c in blind)))
     if done:
         print("page = %d already written under Contract H." % done)
     return 0

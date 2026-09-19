@@ -85,13 +85,15 @@
       "access": "Free, public park (opening hours vary by season)",
       "transport": "5 min walk from Porta Venezia (M1)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Albero_secolare_nei_giardini_di_Milano.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ugodiamante, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3096,
+        "height": 4128
       },
       "curation_status": "flagged",
-      "notes": "No planting date or age documented anywhere found; age range is a wide, honest estimate from trunk girth alone, bounded loosely by the park's 1784 founding. A candidate Commons photo (Platano_secolare_ai_Giardini_Montanelli.jpg) was viewed and rejected: its caption identifies it only as 'a centuries-old plane tree' in the gardens generally, and the park holds several large planes, so it could not be confirmed as this specific, individually surveyed specimen.",
+      "notes": "No planting date or age documented anywhere found; age range is a wide, honest estimate from trunk girth alone, bounded loosely by the park's 1784 founding. A candidate Commons photo (Platano_secolare_ai_Giardini_Montanelli.jpg) was viewed and rejected: its caption identifies it only as 'a centuries-old plane tree' in the gardens generally, and the park holds several large planes, so it could not be confirmed as this specific, individually surveyed specimen. The photograph now on the page is a different file (Albero_secolare_nei_giardini_di_Milano.jpg) and it is attached to this tree by evidence rather than by caption: it is the image of Wikidata Q55741802, a pianta monumentale whose own coordinate sits 14 m from our pin, with the next registered plane in the gardens 260 m away.",
       "location_precision": "confirmed",
       "how_to_recognise": "About fifty metres from the Montanelli statue: a deeply fluted base 8.36 metres round that splits almost at ground level into five limbs, opening like a vase rather than rising as a column."
     },
@@ -893,10 +895,12 @@
       "story": "Two plane trees stand twelve metres apart in Villa Litta Modignani park, and Italy's national monumental-tree register puts the larger at 43 metres, which would make it the tallest tree on this page by five metres. Read that carefully rather than as a settled fact: a differently dated citation of the same government dataset gives smaller figures for planes at this same park, and nothing independent of the original register has come along to referee between the two versions.\n\nWhat both accounts agree on is that these are big trees. The register's own measurement puts the larger of the pair at 5.5 metres round, the smaller at 4.8 metres, either alone worth the detour. They stand about 150 metres from the park's own fused Siamese pair, two planes grown so close together their trunks merged into one, and 340 metres from La Pianta di Affori, the plane a persistent local story ties to Napoleon. Three separate plane-tree stories inside one Affori park.\n\nNobody has published when either tree was planted. Italy's monumental register has no age field for any entry it holds, a gap that runs through the whole dataset rather than this tree in particular, so treat the absence as the register's limit rather than a fact about the tree.\n\nThe park is free and open daily, an eight-minute walk from Affori's own metro stop.",
       "how_to_recognise": "You can recognise the pair by size alone: two planes twelve metres apart, the larger a full 5.5 metres round. They stand in Villa Litta Modignani park, about 150 metres from the fused Siamese pair.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Platano_comune_a03.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Alberto Panzani, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4003,
+        "height": 5188
       }
     },
     {
@@ -964,7 +968,8 @@
       },
       "photos": [],
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 500 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 500 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Height 27.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "height_m": 27.0
     },
     {
       "id": "mil_027",
@@ -1004,7 +1009,9 @@
         ],
         "label": "August to September, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "height_m": 18.0,
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_028",
@@ -1038,7 +1045,8 @@
       },
       "photos": [],
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 390 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 390 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "height_m": 22.0
     },
     {
       "id": "mil_029",
@@ -1079,7 +1087,9 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "height_m": 10.0,
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_030",

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "mel_013",
+    "name": "The Southern Mahogany of Edinburgh Gardens",
+    "species": "Southern Mahogany (Eucalyptus botryoides)",
+    "age_estimate": "over 110 years",
+    "age_min": 110,
+    "age_max": 140,
+    "girth_cm": 434,
+    "height_m": 25,
+    "location": {
+      "address": "Edinburgh Gardens, off Alfred Crescent, Fitzroy North VIC 3068",
+      "latitude": -37.7858366053,
+      "longitude": 144.9844884312,
+      "neighbourhood": "Fitzroy North"
+    },
+    "verified_sources": [
+      "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 102), CC BY 4.0, surveyed dbh 138cm, height 25m, age_estimate '100+ years' as at last update 2012-09-20",
+      "Victorian Heritage Database place 103220, Edinburgh Gardens (statement of significance describes the gardens' notable numbers of mature specimen trees planted since the park's 1862-64 establishment; does not name this individual tree, corroborates the park's tree-planting history rather than the specimen itself)"
+    ],
+    "access": "Free, always open. Public City of Yarra park, 24 hectares, unrestricted access, same park as the already-published mel_001 (Holm Oak) and mel_002 (River Red Gum), about 0.1km from mel_002.",
+    "transport": "Rushall railway station (Mernda line) is about a 3 minute walk from the gardens; tram route 11/112 runs along nearby St Georges Road.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register-surveyed dbh 138cm (girth converted via pi: ~434cm), height 25m, at Alfred Crescent within Edinburgh Gardens, about 100m from the already-published mel_002 River Red Gum (ref 104) and part of the same cluster of large trees along Alfred Crescent (17 more significant-tree entries sit in this same stretch of the park per an earlier pass's leads file, not individually verified). Register age_estimate is '100+ years' as measured in 2012, so now (2026) at least ~114 years; stated broadly as 'over 110 years'. Significance tags: Particularly Old, Outstanding Size, Location of Landscape Context. Southern Mahogany (E. botryoides) is native to coastal SE Australia, not naturally occurring this far inland; its presence here reflects Victorian-era ornamental and native planting in the gardens (opened as a public park 1862-64). Flagged: only one dedicated source (the register) directly names this individual tree; the VHD heritage citation corroborates the park's historic tree collection in general terms ('many mature trees... a reminder of Richmond Council's vigorous policy of planting both native and exotic trees') but does not name this specimen. No felling, storm-damage or removal reports found in a news search (WebSearch, 2026-09-19); register itself carries no vitality field. This would be the third individually-verified tree from the Edinburgh Gardens/Alfred Crescent cluster (with mel_001 and mel_002), all within about 250m of each other."
+  },
+  {
+    "id": "mel_014",
+    "name": "The Hoop Pine of Yarra Boulevard",
+    "species": "Hoop Pine (Araucaria cunninghamii)",
+    "age_estimate": "over 110 years",
+    "age_min": 110,
+    "age_max": 150,
+    "girth_cm": 346,
+    "height_m": 22,
+    "location": {
+      "address": "Yarra Boulevard, Yarra Bend Park / Richmond Park, Burnley VIC 3121",
+      "latitude": -37.8295587721,
+      "longitude": 145.024796279,
+      "neighbourhood": "Burnley"
+    },
+    "verified_sources": [
+      "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 206), CC BY 4.0, surveyed dbh 110cm, height 22m, age_estimate '100+ years' as at last update 2012-10-04",
+      "Victorian Heritage Database place 71661, Richmond Park (National Trust citation): confirms this stretch of parkland along Yarra Boulevard has been public parkland in continuous use since 1862, heritage-listed for its historic tree collection, though it names elms, palms, sugar gums and river red gums specifically rather than this conifer"
+    ],
+    "access": "Free, always open. Public parkland along Yarra Boulevard, part of Yarra Bend Park / the Boulevard Parklands (Victorian Heritage Register place 71661), the same corridor as the already-published mel_007 (Osage Orange, about 260m away) and mel_008 (River Red Gum).",
+    "transport": "No tram or train stop immediately adjacent. Reachable via the Yarra River shared path or Yarra Boulevard itself; the nearest railway stations (Burnley, Victoria Park, or East Richmond) are roughly 2km away by path.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register-surveyed dbh 110cm (girth converted via pi: ~346cm), height 22m, on Yarra Boulevard about 260m from the already-published mel_007 (Osage Orange) and roughly 550m from mel_008 (River Red Gum), extending the existing 2-tree Yarra Boulevard walk. Significance tags: Particularly Old, Outstanding Size, Location of Landscape Context. Register age_estimate '100+ years' as measured in 2012 (now ~114+ years), stated broadly as 'over 110 years'. Worth noting for the writer: Hoop Pine (Araucaria cunninghamii) is native to NSW/Queensland rainforest, not to Victoria; if genuinely 100+ years old as of 2012 (i.e. planted before c.1912), it would predate the Yarra Boulevard itself, which the VHR citation for Richmond Park (place 71661) says was built in the 1930s Depression by sustenance labourers. That means this tree is likely a survivor of an earlier planting phase at Richmond Park (the VHR citation describes 'Richmond Council's vigorous policy of planting both native and exotic trees' going back to the 19th century), predating the road that now runs past it, rather than part of the Boulevard's own avenue planting scheme. This is a fact from two named sources (register age, VHR's Boulevard construction date) stated as two facts, not bridged into a single claim, since no source explicitly says this specific tree predates the road. Flagged: only the register names this individual specimen directly; no felling/storm-damage reports found in a news search (WebSearch, 2026-09-19)."
+  },
+  {
+    "id": "mel_015",
+    "name": "The Peppercorn Tree of Madden Grove",
+    "species": "Peppercorn Tree (Schinus molle)",
+    "age_estimate": "over 110 years",
+    "age_min": 110,
+    "age_max": 150,
+    "girth_cm": 355,
+    "height_m": 16,
+    "location": {
+      "address": "Madden Grove, Richmond Park, Richmond VIC 3121",
+      "latitude": -37.8292729836,
+      "longitude": 145.0006998966,
+      "neighbourhood": "Richmond"
+    },
+    "verified_sources": [
+      "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 27), CC BY 4.0, surveyed dbh 113cm, height 16m, age_estimate '100+ years' as at last update 2012-08-27",
+      "Victorian Heritage Database place 71661, Richmond Park (National Trust citation): confirms Madden Grove sits within Richmond Park, reserved as a public park since 1862 (originally set aside as the Survey Paddock in 1836-37), heritage-listed for its historic tree collection and continuous public use; does not name this individual tree"
+    ],
+    "access": "Free, always open. Public parkland within Richmond Park (Victorian Heritage Register place 71661), a riverside public reserve in continuous use since 1862 with sporting ovals and informal parkland. About 1.9km from the existing Yarra Boulevard cluster (mel_007/mel_008) along the Yarra River shared path, extending that walk into a second stop.",
+    "transport": "Burnley railway station is roughly a 10 minute walk; also reachable via the Yarra River shared path from the Yarra Boulevard cluster.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register-surveyed dbh 113cm (girth converted via pi: ~355cm), height 16m, in Madden Grove within Richmond Park. Significance tags: Particularly Old, Aesthetic Value, Outstanding Size, Location of Landscape Context, the fullest tag set of the four Madden Grove candidates checked this pass. Register age_estimate '100+ years' as measured in 2012 (now ~114+ years), stated broadly as 'over 110 years'. A second Peppercorn Tree sits about 200m away (register ref 28, dbh 114cm, same tags) and is a lead for a future pass rather than delivered here. Peppercorn Tree (Schinus molle) is South American in origin and was widely planted in 19th-century colonial Australia, especially along old roads, rail lines and farm boundaries; Richmond Park's own VHR citation notes the site was reserved as the 'Survey Paddock' as early as 1836-37, one of the earliest public land reservations in Melbourne's history, and records 'Richmond Council's vigorous policy of planting both native and exotic trees' without dating specific plantings. This tree, plus the Lemon-scented Gum (mel_016, this same delivery) verified about 250m away, form a small second stop that with the existing Yarra Boulevard/Burnley Gardens cluster (mel_007-012) gives Melbourne a two-walk structure: a central Fitzroy North/Clifton Hill/Carlton North walk, and a Yarra River walk from Burnley Gardens through Yarra Bend Park to Richmond Park/Madden Grove (roughly 2.5km end to end along the river path). Flagged: only the register names this individual specimen; no felling/storm-damage reports found in a news search (WebSearch, 2026-09-19)."
+  },
+  {
+    "id": "mel_016",
+    "name": "The Lemon-scented Gum of Madden Grove",
+    "species": "Lemon-scented Gum (Corymbia citriodora)",
+    "age_estimate": "roughly a century",
+    "age_min": 95,
+    "age_max": 115,
+    "girth_cm": 324,
+    "height_m": 21,
+    "location": {
+      "address": "Madden Grove, Richmond Park, Richmond VIC 3121",
+      "latitude": -37.8294630398,
+      "longitude": 145.0016531905,
+      "neighbourhood": "Richmond"
+    },
+    "verified_sources": [
+      "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 31), CC BY 4.0, surveyed dbh 103cm, height 21m, age_estimate '81-100 years' as at last update 2012-08-27",
+      "Victorian Heritage Database place 71661, Richmond Park (National Trust citation): confirms Madden Grove sits within Richmond Park, reserved as a public park since 1862, heritage-listed for its historic tree collection; does not name this individual tree"
+    ],
+    "access": "Free, always open. Public parkland within Richmond Park (Victorian Heritage Register place 71661). About 250m from mel_015 (Peppercorn Tree, this same delivery) and about 1.9km from the existing Yarra Boulevard cluster (mel_007/mel_008) along the Yarra River shared path.",
+    "transport": "Burnley railway station is roughly a 10 minute walk; also reachable via the Yarra River shared path from the Yarra Boulevard cluster.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register-surveyed dbh 103cm (girth converted via pi: ~324cm), height 21m, in Madden Grove within Richmond Park, about 250m from mel_015. Significance tags: Outstanding Size, Particularly Old. Register age_estimate was '81-100 years' as measured in 2012, so now (2026) roughly 95-114 years; stated broadly as 'roughly a century' with age_min/age_max widened to reflect the 14 years since the register's survey date. Lemon-scented Gum (Corymbia citriodora) is native to inland north Queensland, an ornamental specimen tree prized for its smooth pale trunk and citronella-scented leaves, planted well outside its natural range here as part of the same 19th/early-20th century ornamental planting programme the VHR citation for Richmond Park describes. Flagged: only the register names this individual specimen; no felling/storm-damage reports found in a news search (WebSearch, 2026-09-19)."
+  }
+]

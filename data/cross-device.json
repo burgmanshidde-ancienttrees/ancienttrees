@@ -39,6 +39,11 @@
       "verdict": "device",
       "why": "An unsent contribute form, kept so a reload does not lose what somebody typed. It stops existing the moment it is sent."
     },
+    "ancienttrees_pending": {
+      "verdict": "device",
+      "why": "What somebody was doing at the moment they were asked to sign in, so the save survives the round trip through Google or an inbox and is finished when they land back (2026-09-18). The contribute draft's category exactly: an act begun and not finished rather than a thing a person has accumulated. At the moment it is written THERE IS NO ACCOUNT to hang it on, which is the whole situation it exists for; putting it on the server would mean identifying somebody who has not signed in.",
+      "off": "Itself. Read and removed by SIGNIN_CATCH_JS the moment it is used, dropped when the sheet is dismissed without signing in, and ignored after half an hour."
+    },
     "at_notrack": {
       "verdict": "device",
       "why": "This browser's opt-out of the cookieless beacon. The convention everywhere is per-browser, and an account-wide copy would mean storing a preference against a person we deliberately do not profile."

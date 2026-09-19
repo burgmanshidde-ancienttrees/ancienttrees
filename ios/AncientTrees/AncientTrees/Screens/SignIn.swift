@@ -31,6 +31,7 @@ struct SignInSheet: View {
 
     @Environment(Account.self) private var account
     @Environment(Saved.self) private var saved
+    @Environment(Nudge.self) private var nudge
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var scheme
 
@@ -76,6 +77,11 @@ struct SignInSheet: View {
             }
             .accessibilityLabel("Close")
         }
+        // A CLOSED SHEET LEAVES NOTHING ARMED. Swiping this away is an answer,
+        // and the save it was going to finish should not land on the next
+        // sign-in an hour later. `done` has already settled and cleared by the
+        // time this runs, so the two cannot both fire.
+        .onDisappear { nudge.settle(ranThrough: false) }
         .scrollBounceBehavior(.basedOnSize)
         // 660 was measured against a sheet carrying the typed email route as
         // well. With that hidden for 1.0 (Launch.emailSignIn) the same height
@@ -250,6 +256,10 @@ struct SignInSheet: View {
         }
         .task {
             await finishIfSignedIn()
+            // AND THEN THE THING THEY CAME HERE TO DO. A gate turns a tap into
+            // a sign-in, and until now it swallowed the tap: press the heart
+            // signed out, sign in, and land back on the tree with it unsaved.
+            nudge.settle(ranThrough: true)
             dismiss()
         }
     }
