@@ -15929,6 +15929,28 @@
    ],
    "trees": 20,
    "logged": true
+  },
+  {
+   "started": "2026-09-19T06:02:44+00:00",
+   "date": "2026-09-19",
+   "run_id": "35425537169",
+   "minutes": 50.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 364,
+   "denials": 35,
+   "denials_source": "permission_denials: Bash(? && echo || echo), Bash(cd && for ; do ; ls ...), Bash(curl ; ? ; out ; ? ...), Bash(curl ; Intel ; grep | ? ...), Bash(curl ; Win64 ; ? ; grep ...), Bash(curl ; cat), Bash(exit), Bash(for ; do ; ? ; ? ...), Bash(for ; do ; curl ; Intel ...), Bash(for ; do ; grep | sort ...), Bash(for ; do ; python3 ; import ...), Bash(grep | ? | head), Bash(grep | head ; grep | sort), Bash(kill ; echo), Bash(kill ; sleep ; ps | grep ...), Bash(kill), Bash(ls | head && cat | head), Bash(ls | head), Bash(ls | while ; do | sed ...), Bash(mkdir && python3 ; import ; ? ...), Bash(pgrep ; echo ; ls | head ...), Bash(ps), Bash(python3 ; import ; d ; ? ...), Bash(python3 ; import ; def ; return ...), Bash(python3 ; import ; def ; with ...), Bash(python3 ; import ; for ; register ...), Bash(python3 ; import ; path ; if ...), Bash(python3 ; import ; tree ; root ...), Bash(python3 ; import ; verified ; leads ...), Bash(rm && git | head), Bash(rm && git), Bash(rm && python3 | head), Bash(rm), Bash(subshell echo && cat || echo && echo ...), Bash(until | grep ; do ; done ...)",
+   "ended": "success",
+   "tokens": 7277284,
+   "claims_held": [
+    "trieste",
+    "florence"
+   ],
+   "commits": 9,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
