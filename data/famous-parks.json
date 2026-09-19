@@ -1,0 +1,1429 @@
+{
+ "note": "The world's best-known parks, as a demand list to check our coverage against. Written 2026-09-18 on Hidde's ask: \"zou je een onderzoek kunnen doen naar de bekendste parken in de wereld waar het meest voor wordt gezocht op Google. En of we die al in onze database hebben.\" Read by scripts/park_demand.py, which crosses each one against our published trees BY DISTANCE (never by name, per CLAUDE.md) and says what we have. A park earns a Contract H page at five mapped trees plus a written intro. Widened 2026-09-19 with the ranking Hidde brought: the visitor top ten, the largest urban parks by area, and the Dutch and Belgian top, which is the half that matters most here, because a Dutch or Belgian park name is exactly the low-competition term our own Search Console shows us ranking 4th to 11th on.",
+ "coordinates": "Centroids, and they are APPROXIMATE: written from knowledge, not fetched, because this session's network policy blocks every Wikimedia host. They are used only to ask which of our trees stand near a park, with a per-park radius, so a few hundred metres of error changes nothing. `python3 scripts/park_demand.py --coords` replaces them with Wikipedia's own coordinates on any machine that can reach the API, and prints what moved.",
+ "evidence": "google maps ... = Google's own Year in Search ranking of the most searched parks on Google Maps, which is the closest thing to search volume anybody publishes for free. visitors/yr = press-reported footfall. hand-seeded = on the list because it is world-famous, with fame still to be measured by --views (Wikipedia pageviews, the same proxy demand.py uses for cities).",
+ "out_of_focus": "Kirstenbosch, Gorky Park and HaYarkon Park sit in regions Hidde ruled out of focus on 2026-08-16, and Cubbon Park is in India. They stay listed so the world list is honest and the script skips them, exactly as scout_next.py does. The regions come from data/register-scouting.json, never from a second copy here.",
+ "updated": "2026-09-19",
+ "parks": [
+  {
+   "name": "Park Guell",
+   "city": "Barcelona",
+   "country": "Spain",
+   "lat": 41.4145,
+   "lng": 2.1527,
+   "radius_km": 1.0,
+   "wikipedia": "Park Güell",
+   "evidence": "google maps most-searched park 2023 #1; top five 2024"
+  },
+  {
+   "name": "Central Park",
+   "city": "New York",
+   "country": "United States",
+   "lat": 40.7829,
+   "lng": -73.9654,
+   "radius_km": 2.0,
+   "wikipedia": "Central Park",
+   "evidence": "google maps most-searched park 2023 #2, 2024 #1; ~42M visitors/yr"
+  },
+  {
+   "name": "Hyde Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.5073,
+   "lng": -0.1657,
+   "radius_km": 1.2,
+   "wikipedia": "Hyde Park, London",
+   "evidence": "google maps most-searched park 2023 #3"
+  },
+  {
+   "name": "Parque del Retiro",
+   "city": "Madrid",
+   "country": "Spain",
+   "lat": 40.4153,
+   "lng": -3.6844,
+   "radius_km": 1.2,
+   "wikipedia": "Buen Retiro Park",
+   "evidence": "google maps most-searched park 2023 #4"
+  },
+  {
+   "name": "Villa Borghese",
+   "city": "Rome",
+   "country": "Italy",
+   "lat": 41.9137,
+   "lng": 12.4853,
+   "radius_km": 1.2,
+   "wikipedia": "Villa Borghese gardens",
+   "evidence": "google maps most-searched park 2023 #5"
+  },
+  {
+   "name": "Nara Park",
+   "city": "Nara",
+   "country": "Japan",
+   "lat": 34.6851,
+   "lng": 135.843,
+   "radius_km": 1.5,
+   "wikipedia": "Nara Park",
+   "evidence": "google maps most-searched park 2023 #6"
+  },
+  {
+   "name": "Cubbon Park",
+   "city": "Bengaluru",
+   "country": "India",
+   "lat": 12.9763,
+   "lng": 77.5929,
+   "radius_km": 1.0,
+   "wikipedia": "Cubbon Park",
+   "evidence": "google maps most-searched park 2023 #7"
+  },
+  {
+   "name": "Red Rocks Park",
+   "city": "Morrison",
+   "country": "United States",
+   "lat": 39.6654,
+   "lng": -105.2057,
+   "radius_km": 1.5,
+   "wikipedia": "Red Rocks Amphitheatre",
+   "evidence": "google maps most-searched park 2023 #8"
+  },
+  {
+   "name": "Ibirapuera Park",
+   "city": "Sao Paulo",
+   "country": "Brazil",
+   "lat": -23.5874,
+   "lng": -46.6576,
+   "radius_km": 1.2,
+   "wikipedia": "Ibirapuera Park",
+   "evidence": "google maps most-searched park 2023 #9; most visited urban park in South America"
+  },
+  {
+   "name": "Rizal Park",
+   "city": "Manila",
+   "country": "Philippines",
+   "lat": 14.5826,
+   "lng": 120.9787,
+   "radius_km": 1.0,
+   "wikipedia": "Rizal Park",
+   "evidence": "google maps most-searched park 2024 top five"
+  },
+  {
+   "name": "Odori Park",
+   "city": "Sapporo",
+   "country": "Japan",
+   "lat": 43.059,
+   "lng": 141.3468,
+   "radius_km": 1.0,
+   "wikipedia": "Ōdōri Park",
+   "evidence": "google maps most-searched park 2024 top five"
+  },
+  {
+   "name": "Ohori Park",
+   "city": "Fukuoka",
+   "country": "Japan",
+   "lat": 33.586,
+   "lng": 130.38,
+   "radius_km": 1.0,
+   "wikipedia": "Ōhori Park",
+   "evidence": "google maps most-searched park 2024 top five"
+  },
+  {
+   "name": "Chapultepec",
+   "city": "Mexico City",
+   "country": "Mexico",
+   "lat": 19.4204,
+   "lng": -99.1817,
+   "radius_km": 3.0,
+   "wikipedia": "Chapultepec",
+   "evidence": "~20M visitors/yr"
+  },
+  {
+   "name": "Ueno Park",
+   "city": "Tokyo",
+   "country": "Japan",
+   "lat": 35.7156,
+   "lng": 139.7745,
+   "radius_km": 1.0,
+   "wikipedia": "Ueno Park",
+   "evidence": "Japan's most visited park, >10M/yr"
+  },
+  {
+   "name": "Vondelpark",
+   "city": "Amsterdam",
+   "country": "Netherlands",
+   "lat": 52.358,
+   "lng": 4.8686,
+   "radius_km": 1.2,
+   "wikipedia": "Vondelpark",
+   "evidence": ">10M visitors/yr, best known park in the Netherlands"
+  },
+  {
+   "name": "Golden Gate Park",
+   "city": "San Francisco",
+   "country": "United States",
+   "lat": 37.7694,
+   "lng": -122.4862,
+   "radius_km": 2.0,
+   "wikipedia": "Golden Gate Park",
+   "evidence": "~24M visitors/yr, 3rd most visited US urban park"
+  },
+  {
+   "name": "Grosser Tiergarten",
+   "city": "Berlin",
+   "country": "Germany",
+   "lat": 52.5145,
+   "lng": 13.3501,
+   "radius_km": 1.5,
+   "wikipedia": "Großer Tiergarten",
+   "evidence": "Berlin's central park"
+  },
+  {
+   "name": "Kew Gardens",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.4787,
+   "lng": -0.2956,
+   "radius_km": 1.2,
+   "wikipedia": "Kew Gardens",
+   "evidence": "hand-seeded: world's best known botanic garden, UNESCO"
+  },
+  {
+   "name": "Regents Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.5313,
+   "lng": -0.157,
+   "radius_km": 1.2,
+   "wikipedia": "Regent's Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Kensington Gardens",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.5068,
+   "lng": -0.1786,
+   "radius_km": 1.0,
+   "wikipedia": "Kensington Gardens",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "St Jamess Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.5027,
+   "lng": -0.134,
+   "radius_km": 0.8,
+   "wikipedia": "St James's Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Green Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.5044,
+   "lng": -0.1425,
+   "radius_km": 0.8,
+   "wikipedia": "Green Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Greenwich Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.4769,
+   "lng": 0.0005,
+   "radius_km": 1.2,
+   "wikipedia": "Greenwich Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Richmond Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.4427,
+   "lng": -0.2731,
+   "radius_km": 2.5,
+   "wikipedia": "Richmond Park",
+   "evidence": "hand-seeded: largest royal park"
+  },
+  {
+   "name": "Hampstead Heath",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.5608,
+   "lng": -0.1629,
+   "radius_km": 1.5,
+   "wikipedia": "Hampstead Heath",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Holland Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.502,
+   "lng": -0.203,
+   "radius_km": 0.7,
+   "wikipedia": "Holland Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Victoria Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.5362,
+   "lng": -0.04,
+   "radius_km": 1.2,
+   "wikipedia": "Victoria Park, London",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Battersea Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.479,
+   "lng": -0.157,
+   "radius_km": 0.8,
+   "wikipedia": "Battersea Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Bushy Park",
+   "city": "London",
+   "country": "United Kingdom",
+   "lat": 51.41,
+   "lng": -0.335,
+   "radius_km": 1.8,
+   "wikipedia": "Bushy Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Jardin du Luxembourg",
+   "city": "Paris",
+   "country": "France",
+   "lat": 48.8462,
+   "lng": 2.3372,
+   "radius_km": 0.7,
+   "wikipedia": "Luxembourg Garden",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Jardin des Tuileries",
+   "city": "Paris",
+   "country": "France",
+   "lat": 48.8635,
+   "lng": 2.3265,
+   "radius_km": 0.8,
+   "wikipedia": "Tuileries Garden",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Jardin des Plantes",
+   "city": "Paris",
+   "country": "France",
+   "lat": 48.844,
+   "lng": 2.3597,
+   "radius_km": 0.7,
+   "wikipedia": "Jardin des plantes",
+   "evidence": "hand-seeded: oldest trees in Paris stand here"
+  },
+  {
+   "name": "Parc des Buttes-Chaumont",
+   "city": "Paris",
+   "country": "France",
+   "lat": 48.8767,
+   "lng": 2.3829,
+   "radius_km": 0.8,
+   "wikipedia": "Parc des Buttes-Chaumont",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Bois de Boulogne",
+   "city": "Paris",
+   "country": "France",
+   "lat": 48.862,
+   "lng": 2.2487,
+   "radius_km": 2.5,
+   "wikipedia": "Bois de Boulogne",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Bois de Vincennes",
+   "city": "Paris",
+   "country": "France",
+   "lat": 48.8286,
+   "lng": 2.4348,
+   "radius_km": 2.5,
+   "wikipedia": "Bois de Vincennes",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Parc Monceau",
+   "city": "Paris",
+   "country": "France",
+   "lat": 48.88,
+   "lng": 2.309,
+   "radius_km": 0.6,
+   "wikipedia": "Parc Monceau",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Parc de Sceaux",
+   "city": "Paris",
+   "country": "France",
+   "lat": 48.777,
+   "lng": 2.298,
+   "radius_km": 1.2,
+   "wikipedia": "Parc de Sceaux",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Gardens of Versailles",
+   "city": "Versailles",
+   "country": "France",
+   "lat": 48.8049,
+   "lng": 2.1204,
+   "radius_km": 1.8,
+   "wikipedia": "Gardens of Versailles",
+   "evidence": "hand-seeded: UNESCO"
+  },
+  {
+   "name": "Parc de la Tete dOr",
+   "city": "Lyon",
+   "country": "France",
+   "lat": 45.778,
+   "lng": 4.853,
+   "radius_km": 1.2,
+   "wikipedia": "Parc de la Tête d'Or",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Jardin public",
+   "city": "Bordeaux",
+   "country": "France",
+   "lat": 44.845,
+   "lng": -0.576,
+   "radius_km": 0.6,
+   "wikipedia": "Jardin public (Bordeaux)",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Keukenhof",
+   "city": "Lisse",
+   "country": "Netherlands",
+   "lat": 52.2697,
+   "lng": 4.5465,
+   "radius_km": 0.8,
+   "wikipedia": "Keukenhof",
+   "evidence": "hand-seeded: 1.4M visitors in eight weeks"
+  },
+  {
+   "name": "Amsterdamse Bos",
+   "city": "Amsterdam",
+   "country": "Netherlands",
+   "lat": 52.32,
+   "lng": 4.83,
+   "radius_km": 2.0,
+   "wikipedia": "Amsterdamse Bos",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Englischer Garten",
+   "city": "Munich",
+   "country": "Germany",
+   "lat": 48.1642,
+   "lng": 11.6025,
+   "radius_km": 2.0,
+   "wikipedia": "Englischer Garten",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Schlosspark Nymphenburg",
+   "city": "Munich",
+   "country": "Germany",
+   "lat": 48.158,
+   "lng": 11.503,
+   "radius_km": 1.2,
+   "wikipedia": "Nymphenburg Palace",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Tempelhofer Feld",
+   "city": "Berlin",
+   "country": "Germany",
+   "lat": 52.475,
+   "lng": 13.402,
+   "radius_km": 1.5,
+   "wikipedia": "Tempelhofer Feld",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Park Sanssouci",
+   "city": "Potsdam",
+   "country": "Germany",
+   "lat": 52.4007,
+   "lng": 13.038,
+   "radius_km": 1.5,
+   "wikipedia": "Sanssouci Park",
+   "evidence": "hand-seeded: UNESCO"
+  },
+  {
+   "name": "Grosser Garten",
+   "city": "Dresden",
+   "country": "Germany",
+   "lat": 51.038,
+   "lng": 13.766,
+   "radius_km": 1.2,
+   "wikipedia": "Großer Garten",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Planten un Blomen",
+   "city": "Hamburg",
+   "country": "Germany",
+   "lat": 53.561,
+   "lng": 9.98,
+   "radius_km": 0.8,
+   "wikipedia": "Planten un Blomen",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Prater",
+   "city": "Vienna",
+   "country": "Austria",
+   "lat": 48.2167,
+   "lng": 16.4,
+   "radius_km": 2.0,
+   "wikipedia": "Prater",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Schonbrunn gardens",
+   "city": "Vienna",
+   "country": "Austria",
+   "lat": 48.1839,
+   "lng": 16.312,
+   "radius_km": 1.2,
+   "wikipedia": "Schönbrunn Palace",
+   "evidence": "hand-seeded: UNESCO"
+  },
+  {
+   "name": "Stadtpark",
+   "city": "Vienna",
+   "country": "Austria",
+   "lat": 48.205,
+   "lng": 16.38,
+   "radius_km": 0.6,
+   "wikipedia": "Stadtpark (Vienna)",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Tivoli Gardens",
+   "city": "Copenhagen",
+   "country": "Denmark",
+   "lat": 55.6736,
+   "lng": 12.5681,
+   "radius_km": 0.5,
+   "wikipedia": "Tivoli Gardens",
+   "evidence": "hand-seeded: fame is the funfair, not the trees"
+  },
+  {
+   "name": "Kongens Have",
+   "city": "Copenhagen",
+   "country": "Denmark",
+   "lat": 55.685,
+   "lng": 12.58,
+   "radius_km": 0.6,
+   "wikipedia": "Rosenborg Castle Gardens",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Frogner Park",
+   "city": "Oslo",
+   "country": "Norway",
+   "lat": 59.927,
+   "lng": 10.7,
+   "radius_km": 1.0,
+   "wikipedia": "Frogner Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Djurgarden",
+   "city": "Stockholm",
+   "country": "Sweden",
+   "lat": 59.326,
+   "lng": 18.09,
+   "radius_km": 2.0,
+   "wikipedia": "Djurgården",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Hagaparken",
+   "city": "Stockholm",
+   "country": "Sweden",
+   "lat": 59.366,
+   "lng": 18.043,
+   "radius_km": 1.2,
+   "wikipedia": "Hagaparken",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Kaivopuisto",
+   "city": "Helsinki",
+   "country": "Finland",
+   "lat": 60.157,
+   "lng": 24.95,
+   "radius_km": 0.7,
+   "wikipedia": "Kaivopuisto",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Lazienki Park",
+   "city": "Warsaw",
+   "country": "Poland",
+   "lat": 52.215,
+   "lng": 21.035,
+   "radius_km": 1.0,
+   "wikipedia": "Royal Baths Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Planty",
+   "city": "Krakow",
+   "country": "Poland",
+   "lat": 50.062,
+   "lng": 19.937,
+   "radius_km": 1.2,
+   "wikipedia": "Planty Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Petrin",
+   "city": "Prague",
+   "country": "Czechia",
+   "lat": 50.0835,
+   "lng": 14.3959,
+   "radius_km": 1.0,
+   "wikipedia": "Petřín",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Letna",
+   "city": "Prague",
+   "country": "Czechia",
+   "lat": 50.097,
+   "lng": 14.415,
+   "radius_km": 1.0,
+   "wikipedia": "Letná",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Margaret Island",
+   "city": "Budapest",
+   "country": "Hungary",
+   "lat": 47.527,
+   "lng": 19.049,
+   "radius_km": 1.2,
+   "wikipedia": "Margaret Island",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Varosliget",
+   "city": "Budapest",
+   "country": "Hungary",
+   "lat": 47.515,
+   "lng": 19.082,
+   "radius_km": 1.2,
+   "wikipedia": "City Park (Budapest)",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Maksimir",
+   "city": "Zagreb",
+   "country": "Croatia",
+   "lat": 45.825,
+   "lng": 16.018,
+   "radius_km": 1.2,
+   "wikipedia": "Maksimir",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Parque de Maria Luisa",
+   "city": "Seville",
+   "country": "Spain",
+   "lat": 37.3737,
+   "lng": -5.988,
+   "radius_km": 0.8,
+   "wikipedia": "Parque de María Luisa",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Alcazar gardens",
+   "city": "Seville",
+   "country": "Spain",
+   "lat": 37.384,
+   "lng": -5.991,
+   "radius_km": 0.5,
+   "wikipedia": "Alcázar of Seville",
+   "evidence": "hand-seeded: UNESCO"
+  },
+  {
+   "name": "Generalife",
+   "city": "Granada",
+   "country": "Spain",
+   "lat": 37.1771,
+   "lng": -3.588,
+   "radius_km": 0.7,
+   "wikipedia": "Generalife",
+   "evidence": "hand-seeded: UNESCO"
+  },
+  {
+   "name": "Montjuic",
+   "city": "Barcelona",
+   "country": "Spain",
+   "lat": 41.364,
+   "lng": 2.158,
+   "radius_km": 1.5,
+   "wikipedia": "Montjuïc",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Casa de Campo",
+   "city": "Madrid",
+   "country": "Spain",
+   "lat": 40.419,
+   "lng": -3.74,
+   "radius_km": 2.5,
+   "wikipedia": "Casa de Campo",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Real Jardin Botanico",
+   "city": "Madrid",
+   "country": "Spain",
+   "lat": 40.411,
+   "lng": -3.69,
+   "radius_km": 0.4,
+   "wikipedia": "Royal Botanical Garden of Madrid",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Giardino di Boboli",
+   "city": "Florence",
+   "country": "Italy",
+   "lat": 43.7626,
+   "lng": 11.248,
+   "radius_km": 0.8,
+   "wikipedia": "Boboli Gardens",
+   "evidence": "hand-seeded: UNESCO"
+  },
+  {
+   "name": "Parco Sempione",
+   "city": "Milan",
+   "country": "Italy",
+   "lat": 45.4726,
+   "lng": 9.177,
+   "radius_km": 0.8,
+   "wikipedia": "Parco Sempione",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Villa Doria Pamphili",
+   "city": "Rome",
+   "country": "Italy",
+   "lat": 41.885,
+   "lng": 12.449,
+   "radius_km": 1.5,
+   "wikipedia": "Villa Doria Pamphili",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Villa Ada",
+   "city": "Rome",
+   "country": "Italy",
+   "lat": 41.93,
+   "lng": 12.506,
+   "radius_km": 1.2,
+   "wikipedia": "Villa Ada",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Parco della Favorita",
+   "city": "Palermo",
+   "country": "Italy",
+   "lat": 38.169,
+   "lng": 13.356,
+   "radius_km": 1.5,
+   "wikipedia": "Parco della Favorita",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Giardino Bellini",
+   "city": "Catania",
+   "country": "Italy",
+   "lat": 37.506,
+   "lng": 15.081,
+   "radius_km": 0.6,
+   "wikipedia": "Villa Bellini",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Jardim da Estrela",
+   "city": "Lisbon",
+   "country": "Portugal",
+   "lat": 38.7146,
+   "lng": -9.1601,
+   "radius_km": 0.5,
+   "wikipedia": "Jardim da Estrela",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Parque Eduardo VII",
+   "city": "Lisbon",
+   "country": "Portugal",
+   "lat": 38.7273,
+   "lng": -9.15,
+   "radius_km": 0.8,
+   "wikipedia": "Parque Eduardo VII",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Pena Park",
+   "city": "Sintra",
+   "country": "Portugal",
+   "lat": 38.7876,
+   "lng": -9.3904,
+   "radius_km": 1.2,
+   "wikipedia": "Park and National Palace of Pena",
+   "evidence": "hand-seeded: UNESCO"
+  },
+  {
+   "name": "Parque de Serralves",
+   "city": "Porto",
+   "country": "Portugal",
+   "lat": 41.159,
+   "lng": -8.659,
+   "radius_km": 0.8,
+   "wikipedia": "Serralves",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Jardins do Palacio de Cristal",
+   "city": "Porto",
+   "country": "Portugal",
+   "lat": 41.147,
+   "lng": -8.625,
+   "radius_km": 0.6,
+   "wikipedia": "Jardins do Palácio de Cristal",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Phoenix Park",
+   "city": "Dublin",
+   "country": "Ireland",
+   "lat": 53.3559,
+   "lng": -6.3298,
+   "radius_km": 2.0,
+   "wikipedia": "Phoenix Park",
+   "evidence": "hand-seeded: largest walled city park in Europe"
+  },
+  {
+   "name": "St Stephens Green",
+   "city": "Dublin",
+   "country": "Ireland",
+   "lat": 53.3382,
+   "lng": -6.2591,
+   "radius_km": 0.5,
+   "wikipedia": "St Stephen's Green",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Royal Botanic Garden Edinburgh",
+   "city": "Edinburgh",
+   "country": "United Kingdom",
+   "lat": 55.9653,
+   "lng": -3.2094,
+   "radius_km": 0.7,
+   "wikipedia": "Royal Botanic Garden Edinburgh",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Holyrood Park",
+   "city": "Edinburgh",
+   "country": "United Kingdom",
+   "lat": 55.9464,
+   "lng": -3.1537,
+   "radius_km": 1.5,
+   "wikipedia": "Holyrood Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Princes Street Gardens",
+   "city": "Edinburgh",
+   "country": "United Kingdom",
+   "lat": 55.951,
+   "lng": -3.196,
+   "radius_km": 0.7,
+   "wikipedia": "Princes Street Gardens",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Kelvingrove Park",
+   "city": "Glasgow",
+   "country": "United Kingdom",
+   "lat": 55.8695,
+   "lng": -4.286,
+   "radius_km": 0.8,
+   "wikipedia": "Kelvingrove Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Sefton Park",
+   "city": "Liverpool",
+   "country": "United Kingdom",
+   "lat": 53.381,
+   "lng": -2.932,
+   "radius_km": 1.0,
+   "wikipedia": "Sefton Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Heaton Park",
+   "city": "Manchester",
+   "country": "United Kingdom",
+   "lat": 53.539,
+   "lng": -2.262,
+   "radius_km": 1.2,
+   "wikipedia": "Heaton Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Prospect Park",
+   "city": "New York",
+   "country": "United States",
+   "lat": 40.6602,
+   "lng": -73.969,
+   "radius_km": 1.5,
+   "wikipedia": "Prospect Park (Brooklyn)",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "New York Botanical Garden",
+   "city": "New York",
+   "country": "United States",
+   "lat": 40.8623,
+   "lng": -73.877,
+   "radius_km": 1.0,
+   "wikipedia": "New York Botanical Garden",
+   "evidence": "hand-seeded: old-growth forest inside the city"
+  },
+  {
+   "name": "Brooklyn Botanic Garden",
+   "city": "New York",
+   "country": "United States",
+   "lat": 40.6694,
+   "lng": -73.9626,
+   "radius_km": 0.6,
+   "wikipedia": "Brooklyn Botanic Garden",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Griffith Park",
+   "city": "Los Angeles",
+   "country": "United States",
+   "lat": 34.1365,
+   "lng": -118.294,
+   "radius_km": 3.0,
+   "wikipedia": "Griffith Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Balboa Park",
+   "city": "San Diego",
+   "country": "United States",
+   "lat": 32.7341,
+   "lng": -117.1446,
+   "radius_km": 1.5,
+   "wikipedia": "Balboa Park (San Diego)",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Grant Park",
+   "city": "Chicago",
+   "country": "United States",
+   "lat": 41.8761,
+   "lng": -87.6199,
+   "radius_km": 1.2,
+   "wikipedia": "Grant Park (Chicago)",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Lincoln Park",
+   "city": "Chicago",
+   "country": "United States",
+   "lat": 41.9214,
+   "lng": -87.6337,
+   "radius_km": 2.0,
+   "wikipedia": "Lincoln Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Boston Common",
+   "city": "Boston",
+   "country": "United States",
+   "lat": 42.355,
+   "lng": -71.0656,
+   "radius_km": 0.6,
+   "wikipedia": "Boston Common",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Boston Public Garden",
+   "city": "Boston",
+   "country": "United States",
+   "lat": 42.3541,
+   "lng": -71.0704,
+   "radius_km": 0.4,
+   "wikipedia": "Boston Public Garden",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Fairmount Park",
+   "city": "Philadelphia",
+   "country": "United States",
+   "lat": 39.99,
+   "lng": -75.2,
+   "radius_km": 3.0,
+   "wikipedia": "Fairmount Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Longwood Gardens",
+   "city": "Kennett Square",
+   "country": "United States",
+   "lat": 39.87,
+   "lng": -75.674,
+   "radius_km": 1.2,
+   "wikipedia": "Longwood Gardens",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "National Mall",
+   "city": "Washington DC",
+   "country": "United States",
+   "lat": 38.8895,
+   "lng": -77.023,
+   "radius_km": 1.5,
+   "wikipedia": "National Mall",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "United States National Arboretum",
+   "city": "Washington DC",
+   "country": "United States",
+   "lat": 38.912,
+   "lng": -76.968,
+   "radius_km": 1.2,
+   "wikipedia": "United States National Arboretum",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Piedmont Park",
+   "city": "Atlanta",
+   "country": "United States",
+   "lat": 33.786,
+   "lng": -84.373,
+   "radius_km": 1.0,
+   "wikipedia": "Piedmont Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Stanley Park",
+   "city": "Vancouver",
+   "country": "Canada",
+   "lat": 49.3017,
+   "lng": -123.1417,
+   "radius_km": 1.8,
+   "wikipedia": "Stanley Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "The Butchart Gardens",
+   "city": "Victoria",
+   "country": "Canada",
+   "lat": 48.5637,
+   "lng": -123.47,
+   "radius_km": 0.6,
+   "wikipedia": "The Butchart Gardens",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "High Park",
+   "city": "Toronto",
+   "country": "Canada",
+   "lat": 43.6465,
+   "lng": -79.4637,
+   "radius_km": 1.0,
+   "wikipedia": "High Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Mount Royal",
+   "city": "Montreal",
+   "country": "Canada",
+   "lat": 45.504,
+   "lng": -73.587,
+   "radius_km": 1.5,
+   "wikipedia": "Mount Royal",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Parque Tres de Febrero",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "lat": -34.5715,
+   "lng": -58.416,
+   "radius_km": 1.5,
+   "wikipedia": "Parque Tres de Febrero",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Jardim Botanico",
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "lat": -22.968,
+   "lng": -43.224,
+   "radius_km": 0.8,
+   "wikipedia": "Rio de Janeiro Botanical Garden",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Parque Metropolitano",
+   "city": "Santiago",
+   "country": "Chile",
+   "lat": -33.426,
+   "lng": -70.632,
+   "radius_km": 2.5,
+   "wikipedia": "Parque Metropolitano de Santiago",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Royal Botanic Garden Sydney",
+   "city": "Sydney",
+   "country": "Australia",
+   "lat": -33.8642,
+   "lng": 151.2166,
+   "radius_km": 0.8,
+   "wikipedia": "Royal Botanic Garden, Sydney",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Hyde Park Sydney",
+   "city": "Sydney",
+   "country": "Australia",
+   "lat": -33.8737,
+   "lng": 151.211,
+   "radius_km": 0.6,
+   "wikipedia": "Hyde Park, Sydney",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Royal Botanic Gardens Melbourne",
+   "city": "Melbourne",
+   "country": "Australia",
+   "lat": -37.8304,
+   "lng": 144.9796,
+   "radius_km": 0.8,
+   "wikipedia": "Royal Botanic Gardens, Melbourne",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Fitzroy Gardens",
+   "city": "Melbourne",
+   "country": "Australia",
+   "lat": -37.813,
+   "lng": 144.98,
+   "radius_km": 0.5,
+   "wikipedia": "Fitzroy Gardens",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Auckland Domain",
+   "city": "Auckland",
+   "country": "New Zealand",
+   "lat": -36.86,
+   "lng": 174.777,
+   "radius_km": 1.0,
+   "wikipedia": "Auckland Domain",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Christchurch Botanic Gardens",
+   "city": "Christchurch",
+   "country": "New Zealand",
+   "lat": -43.531,
+   "lng": 172.62,
+   "radius_km": 0.8,
+   "wikipedia": "Christchurch Botanic Gardens",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Gardens by the Bay",
+   "city": "Singapore",
+   "country": "Singapore",
+   "lat": 1.2816,
+   "lng": 103.8636,
+   "radius_km": 1.0,
+   "wikipedia": "Gardens by the Bay",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Lumphini Park",
+   "city": "Bangkok",
+   "country": "Thailand",
+   "lat": 13.7307,
+   "lng": 100.5418,
+   "radius_km": 0.8,
+   "wikipedia": "Lumphini Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Hong Kong Park",
+   "city": "Hong Kong",
+   "country": "China",
+   "lat": 22.2773,
+   "lng": 114.162,
+   "radius_km": 0.5,
+   "wikipedia": "Hong Kong Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Kowloon Park",
+   "city": "Hong Kong",
+   "country": "China",
+   "lat": 22.301,
+   "lng": 114.17,
+   "radius_km": 0.5,
+   "wikipedia": "Kowloon Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Beihai Park",
+   "city": "Beijing",
+   "country": "China",
+   "lat": 39.925,
+   "lng": 116.383,
+   "radius_km": 0.8,
+   "wikipedia": "Beihai Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Summer Palace",
+   "city": "Beijing",
+   "country": "China",
+   "lat": 39.999,
+   "lng": 116.275,
+   "radius_km": 1.5,
+   "wikipedia": "Summer Palace",
+   "evidence": "hand-seeded: UNESCO"
+  },
+  {
+   "name": "Temple of Heaven",
+   "city": "Beijing",
+   "country": "China",
+   "lat": 39.8822,
+   "lng": 116.4066,
+   "radius_km": 1.0,
+   "wikipedia": "Temple of Heaven",
+   "evidence": "hand-seeded: UNESCO, ancient cypresses"
+  },
+  {
+   "name": "Bogor Botanical Gardens",
+   "city": "Bogor",
+   "country": "Indonesia",
+   "lat": -6.598,
+   "lng": 106.799,
+   "radius_km": 0.8,
+   "wikipedia": "Bogor Botanical Gardens",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Royal Botanical Gardens Peradeniya",
+   "city": "Kandy",
+   "country": "Sri Lanka",
+   "lat": 7.268,
+   "lng": 80.596,
+   "radius_km": 0.8,
+   "wikipedia": "Royal Botanical Gardens, Peradeniya",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Kirstenbosch",
+   "city": "Cape Town",
+   "country": "South Africa",
+   "lat": -33.988,
+   "lng": 18.432,
+   "radius_km": 1.0,
+   "wikipedia": "Kirstenbosch National Botanical Garden",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Gorky Park",
+   "city": "Moscow",
+   "country": "Russia",
+   "lat": 55.7305,
+   "lng": 37.6013,
+   "radius_km": 1.2,
+   "wikipedia": "Gorky Park (Moscow)",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "HaYarkon Park",
+   "city": "Tel Aviv",
+   "country": "Israel",
+   "lat": 32.1,
+   "lng": 34.81,
+   "radius_km": 2.0,
+   "wikipedia": "HaYarkon Park",
+   "evidence": "hand-seeded"
+  },
+  {
+   "name": "Chugach State Park",
+   "city": "Anchorage",
+   "country": "United States",
+   "lat": 61.1,
+   "lng": -149.3,
+   "radius_km": 8.0,
+   "wikipedia": "Chugach State Park",
+   "evidence": "largest urban park in the world, 200,400 ha (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Margalla Hills",
+   "city": "Islamabad",
+   "country": "Pakistan",
+   "lat": 33.74,
+   "lng": 73.05,
+   "radius_km": 5.0,
+   "wikipedia": "Margalla Hills National Park",
+   "evidence": "17,386 ha inside the capital (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Pedra Branca",
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "lat": -22.933,
+   "lng": -43.45,
+   "radius_km": 5.0,
+   "wikipedia": "Pedra Branca State Park",
+   "evidence": "12,394 ha inside the city (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Bukhansan",
+   "city": "Seoul",
+   "country": "South Korea",
+   "lat": 37.659,
+   "lng": 126.977,
+   "radius_km": 4.0,
+   "wikipedia": "Bukhansan National Park",
+   "evidence": "7,992 ha inside the metropolis (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Kralingse Bos",
+   "city": "Rotterdam",
+   "country": "Netherlands",
+   "lat": 51.94,
+   "lng": 4.515,
+   "radius_km": 1.5,
+   "wikipedia": "Kralingse Bos",
+   "evidence": "the Netherlands' second park by use after the Vondelpark (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Park Sonsbeek",
+   "city": "Arnhem",
+   "country": "Netherlands",
+   "lat": 51.988,
+   "lng": 5.893,
+   "radius_km": 1.2,
+   "wikipedia": "Sonsbeek",
+   "evidence": "historic landscape park with waterfalls (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Zuiderpark",
+   "city": "The Hague",
+   "country": "Netherlands",
+   "lat": 52.058,
+   "lng": 4.265,
+   "radius_km": 1.0,
+   "wikipedia": "Zuiderpark (The Hague)",
+   "evidence": "the city's main park and event ground (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Jubelpark",
+   "city": "Brussels",
+   "country": "Belgium",
+   "lat": 50.84,
+   "lng": 4.393,
+   "radius_km": 0.6,
+   "wikipedia": "Cinquantenaire Park",
+   "evidence": "Brussels' principal historic park (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Park van Brussel",
+   "city": "Brussels",
+   "country": "Belgium",
+   "lat": 50.846,
+   "lng": 4.364,
+   "radius_km": 0.4,
+   "wikipedia": "Warandepark",
+   "evidence": "Brussels' principal historic park (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Rivierenhof",
+   "city": "Antwerp",
+   "country": "Belgium",
+   "lat": 51.213,
+   "lng": 4.455,
+   "radius_km": 1.0,
+   "wikipedia": "Rivierenhof",
+   "evidence": "the most visited green space in Antwerp (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Minnewaterpark",
+   "city": "Bruges",
+   "country": "Belgium",
+   "lat": 51.2,
+   "lng": 3.225,
+   "radius_km": 0.4,
+   "wikipedia": "Minnewater",
+   "evidence": "iconic small city park (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Table Mountain",
+   "city": "Cape Town",
+   "country": "South Africa",
+   "lat": -33.96,
+   "lng": 18.41,
+   "radius_km": 6.0,
+   "wikipedia": "Table Mountain National Park",
+   "evidence": "22,100 ha (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Losiny Ostrov",
+   "city": "Moscow",
+   "country": "Russia",
+   "lat": 55.87,
+   "lng": 37.75,
+   "radius_km": 5.0,
+   "wikipedia": "Losiny Ostrov National Park",
+   "evidence": "11,600 ha (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Sanjay Gandhi",
+   "city": "Mumbai",
+   "country": "India",
+   "lat": 19.22,
+   "lng": 72.91,
+   "radius_km": 5.0,
+   "wikipedia": "Sanjay Gandhi National Park",
+   "evidence": "10,384 ha (from Hidde's own ranking, 2026-09-19)"
+  }
+ ]
+}

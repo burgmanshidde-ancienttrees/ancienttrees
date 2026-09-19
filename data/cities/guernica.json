@@ -1,0 +1,65 @@
+{
+  "city": "Guernica",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Guernica is a small Basque town whose name is inseparable from a single tree. The oak growing today in the garden of the Casa de Juntas is young, planted in 2015 as the fifth in a documented line, but the ground beneath it has heard Basque self-government sworn since the Middle Ages and survived the 1937 bombing that made the town's name known worldwide.",
+  "meta_description": "The Tree of Gernika: a young oak planted in 2015, fifth in a line stretching back centuries, on the ground where Basque self-government was sworn.",
+  "question_meta": "Guernica's notable tree is the Gernikako Arbola. Why the standing oak is young, what came before it, and how to visit.",
+  "question_answer": "The tree at Guernica is the Gernikako Arbola, the Tree of Gernika, growing in the garden of the Casa de Juntas in the Basque town of Gernika-Lumo, Biscay. The oak standing there today is young, planted in March 2015, the fifth tree in a documented line reaching back centuries as the symbol of Basque self-government.",
+  "question_context": "Every source agrees on the arrangement: this is a dynasty rather than a single ancient trunk. The current oak was raised from a sapling born in 2000 in the Arratia valley, from the same lineage as its predecessors, and planted in March 2015 after the fourth tree died in 2005 of poor drainage. What makes the spot matter is what happened under earlier trees on this ground. The Lords of Biscay swore to respect the fueros, the Basque charters of self-government, here from the Middle Ages onward, an oath later taken by Castilian kings and Carlist pretenders alike. The third tree, standing from 1858 to 2004, survived the 1937 Luftwaffe bombing of Gernika a few dozen metres away and was later guarded by Carlist volunteers against Falangists who wanted the symbol destroyed; it was eventually killed by honey fungus rather than a bomb. The tree's name became the Basque anthem, Gernikako Arbola, and it appears on the coat of arms of Biscay. A trunk slice of an earlier tree and a stone cross cut from another are preserved nearby, a few steps from the young oak.",
+  "faq": [
+    {
+      "q": "Why is the Tree of Gernika described as young if it is so famous?",
+      "a": "Because the fame belongs to the symbol and the spot, not to this trunk. The current oak was planted in March 2015, the fifth tree in a documented line going back centuries, after the fourth tree died in 2005."
+    },
+    {
+      "q": "What happened to the earlier trees?",
+      "a": "The third tree, which stood from 1858 to 2004, survived the 1937 bombing of Gernika a few dozen metres away and was guarded afterwards against those who wanted it destroyed. It was eventually killed by honey fungus. The fourth died of poor drainage in 2005."
+    },
+    {
+      "q": "Can you visit the Tree of Gernika?",
+      "a": "Yes, free entry to the garden of the Casa de Juntas, roughly 10:00 to 14:00 and 16:00 to 18:00 or 19:00 daily, closed when the assembly is sitting. A few minutes' walk from Gernika railway station."
+    },
+    {
+      "q": "Why is the tree important to the Basque Country?",
+      "a": "Under oaks on this ground the Lords of Biscay swore to respect Basque self-government from the Middle Ages onward. The tree's name is the Basque anthem, Gernikako Arbola, and it appears on the coat of arms of Biscay."
+    }
+  ],
+  "hero_tree_id": "grk_001",
+  "oldest_tree_id": "grk_001",
+  "trees": [
+    {
+      "id": "grk_001",
+      "name": "Gernikako Arbola, the Tree of Gernika",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "young descendant, planted 2015",
+      "age_min": 10,
+      "age_max": 12,
+      "girth_cm": null,
+      "location": {
+        "address": "Casa de Juntas de Gernika, Allende Salazar Kalea, 48300 Gernika-Lumo, Biscay",
+        "latitude": 43.313189,
+        "longitude": -2.679757,
+        "neighbourhood": "Gernika-Lumo town centre"
+      },
+      "story": "The oak everyone comes to see was planted in 2015. That is the arrangement rather than a disappointment: the Tree of Gernika is a dynasty, and this is the fifth trunk to hold the post. It was raised from a sapling born in 2000 in the Arratia valley, in the direct line of its predecessors, and went into the ground in March 2015 after the fourth tree died in 2005 of poor drainage.\n\nWhat this ground has witnessed is the reason to stand here. Under oaks on this spot the Lords of Biscay swore to respect the fueros, the charters of Basque self-government, from the Middle Ages onward, and Castilian kings and Carlist pretenders took the same oath. The third tree, which stood from 1858 to 2004, was a few dozen metres away when the Luftwaffe bombed Gernika in 1937, and it survived. Afterwards Carlist volunteers guarded it against Falangists who wanted the symbol destroyed. Honey fungus, not a bomb, finally killed it.\n\nThe name travelled further than any of the trees did. 'Gernikako Arbola' is the Basque anthem, and the oak stands in the coat of arms of Bizkaia. A slice of an earlier trunk and a stone cross cut from another are kept nearby, so the old wood is a few steps from the young tree.",
+      "how_to_recognise": "You can recognise it by its youth, a young oak barely a decade old rather than the veteran visitors expect. It stands in the garden of the Casa de Juntas, near the preserved trunk slice of an earlier Tree of Gernika.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Gernikako_Arbola",
+        "https://orain.eus/es/actualidad/sociedad/2015/01/15/arbol-gernika--muere-arbol-gernika-sustituiran-retono/",
+        "https://www.visitbiscay.eus/es/casa-juntas-arbol-gernika"
+      ],
+      "access": "Free entry to the gardened grounds of the Casa de Juntas (roughly 10:00-14:00 and 16:00-18:00/19:00 daily), closed when the assembly is sitting; one tourism page describes it as a free, walk-in visit while another notes limited capacity",
+      "transport": "Central Gernika-Lumo, a few minutes' walk from Gernika railway station (Euskotren)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

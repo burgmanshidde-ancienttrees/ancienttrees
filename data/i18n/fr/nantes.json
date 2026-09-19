@@ -1,0 +1,40 @@
+{
+ "_note": "fr overlay for nantes, written 2026-09-18 from data/cities/nantes.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Nantes",
+ "title": "Châtaignier de l'Éraudière : le doyen des arbres nantais",
+ "meta_description": "Le Châtaignier de l'Éraudière : le plus vieil arbre de Loire-Atlantique, un châtaignier de 800 à 1200 ans qui a son square à Nantes.",
+ "intro": "Un seul arbre de Nantes est cartographié ici pour l'instant, et c'est le plus vieux de toute la Loire-Atlantique. Le Châtaignier de l'Éraudière est un châtaignier de 800 à 1200 ans, plus de dix mètres de tour, avec deux énormes charpentières qui partent à l'horizontale d'un tronc torsadé et creusé. Il se dressait autrefois dans le parc privé du château de l'Éraudière ; la ville s'est étendue vers l'est et l'a avalé, et l'arbre a maintenant un square public à lui seul, au bord du busway, où il continue de lâcher ses châtaignes chaque automne.",
+ "question_title": "Quel est le plus vieil arbre de Nantes ? (800 à 1200 ans)",
+ "question_meta": "Le plus vieil arbre de Nantes est le Châtaignier de l'Éraudière, un châtaignier de 800 à 1200 ans, dans le square de la Mée.",
+ "question_answer": "Le plus vieil arbre de Nantes est le Châtaignier de l'Éraudière, un châtaignier estimé entre 800 et 1200 ans et considéré comme le plus vieil arbre de toute la Loire-Atlantique, dans le square de la Mée, au quartier de l'Éraudière.",
+ "question_context": "La tradition locale met ce châtaignier en terre en l'an 756. Le service des espaces verts de la ville est plus prudent et parle d'environ 800 ans, tandis que la description officielle nantaise donne 800 à 1200 selon les sources. Personne n'a tranché, et en tout point de cette fourchette il est le plus vieil arbre de Loire-Atlantique. Il se dressait autrefois dans le parc privé du château de l'Éraudière. Nantes s'est étendue vers l'est et a avalé ce parc, et l'arbre s'est retrouvé avec un square public à lui, le square de la Mée, dessiné autour de lui, avec une clôture basse qui tient les pieds à l'écart des racines plutôt que les visiteurs à distance. Il fait quinze mètres de haut et douze de large, avec un tronc de plus de dix mètres de tour qui s'est vrillé en spirale en se creusant, et deux énormes charpentières qui partent à l'horizontale, ce que la ville entend quand elle parle d'une sculpture vivante. Il fructifie toujours chaque année, et le busway C6 s'arrête à côté.",
+ "faq": [
+  {
+   "q": "Quel est le plus vieil arbre de Nantes ?",
+   "a": "Le Châtaignier de l'Éraudière, un châtaignier de 800 à 1200 ans dans le square de la Mée, considéré comme le plus vieil arbre de tout le département de la Loire-Atlantique."
+  },
+  {
+   "q": "A-t-il vraiment été planté en 756 ?",
+   "a": "C'est la tradition populaire, ce qui lui ferait environ 1270 ans. Le service des espaces verts de la ville le situe plutôt vers 800 ans, et Nantes Métropole publie la fourchette de 800 à 1200 plutôt qu'un chiffre unique."
+  },
+  {
+   "q": "Pourquoi est-il clôturé ?",
+   "a": "La clôture basse tient le piétinement à l'écart du plateau racinaire, elle ne met pas les visiteurs dehors. L'arbre se voit entièrement et le square est ouvert en permanence."
+  },
+  {
+   "q": "Comment y aller ?",
+   "a": "Le busway C6 s'arrête à Éraudière, juste à côté du square de la Mée, rue du Château de l'Éraudière, à environ quatre kilomètres au nord-est du centre-ville."
+  }
+ ],
+ "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+ "trees": {
+  "erd_001": {
+   "name": "Le Châtaignier de l'Éraudière",
+   "species": "Châtaignier (Castanea sativa)",
+   "age_estimate": "800 à 1200 ans (la tradition locale le dit planté en 756)",
+   "access": "Gratuit, dans un square public ouvert (square de la Mée) ; l'arbre lui-même est entouré d'une clôture basse de protection contre le piétinement des racines, mais il se voit entièrement et le square est ouvert en permanence",
+   "transport": "Busway/tram ligne C6, arrêt Éraudière, juste à côté du square",
+   "story": "La tradition locale met ce châtaignier en terre en l'an 756. Le service des espaces verts de la ville est plus prudent et parle d'environ 800 ans ; la description officielle nantaise donne 800 à 1200, selon la source que l'on suit. Personne n'a tranché. En tout point de cette fourchette, il est le plus vieil arbre de Loire-Atlantique.\n\nIl se dressait autrefois dans le parc privé du château de l'Éraudière. Nantes s'est étendue vers l'est et a avalé ce parc, et l'arbre en est sorti avec un square public à lui, le square de la Mée, dessiné autour du tronc. La clôture basse qui l'entoure est là pour tenir les pieds à l'écart du plateau racinaire plutôt que pour maintenir quiconque à distance.\n\nQuinze mètres de haut, douze de large, un tronc de plus de dix mètres de tour qui s'est vrillé en spirale en se creusant. Deux énormes charpentières en partent à l'horizontale, ce que la ville entend quand elle parle d'une sculpture vivante. Un guide local a un jour passé un mètre autour du tronc à un mètre du sol et a trouvé 11,70 mètres, tout en admettant que la méthode était approximative.\n\nEt il fructifie encore. Chaque automne, un arbre que la mémoire locale fait remonter aux Carolingiens lâche ses châtaignes sur un square du nord-est nantais, avec le busway qui s'arrête à la porte."
+  }
+ }
+}

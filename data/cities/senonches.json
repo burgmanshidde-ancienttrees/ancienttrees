@@ -1,0 +1,179 @@
+{
+  "city": "Senonches",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Forêt de Senonches, an oak and beech state forest in the Perche regional park, waymarks its own venerable trees on an 11.6 kilometre loop between four named road junctions. Two of the stops are oaks that grew stranger with age: a five-stemmed ‘armchair’ with a seat in the hollow between its trunks, and three sessile stems rising from one stool that foresters call the Three Brothers. A sweet chestnut planted by a forester’s family and a ring of giant sequoias, their seed brought from America in 1854, complete a walk built around oaks that ends with neither.",
+  "meta_description": "Senonches: a waymarked forest loop past a five-trunked armchair oak, the three-stemmed Trois Frères, a century-old chestnut and a ring of giant sequoias.",
+  "question_meta": "Senonches' oldest tree is Les Trois Frères, three sessile oak stems put at roughly 340 years, on the forest's waymarked venerable-trees loop.",
+  "question_answer": "The oldest tree in the Forêt de Senonches is Les Trois Frères, three sessile oak stems from a single stool that a 2010 survey measured at 325 years old, 32 metres tall and 5.5 metres round, putting it at roughly 340 today. It stands right at the Rond d'Angoulême, on the edge of the D941. A few hundred metres into the trees, the five-trunked Chêne Fauteuil follows close behind at 300 to 340 years, with an armchair-shaped hollow between its stems.",
+  "question_context": "Both old oaks and the two younger attractions sit on the same 11.6 kilometre waymarked loop, the itinéraire des arbres vénérables, which the forest signs from the Rond de Monsieur car park on the road to La Loupe. That car park is itself a stop: seven giant sequoias and a cedar ring the junction, grown from seed brought to France in 1854 and planted here roughly a century ago. A short walk from there, at the Rond de Condé, a sweet chestnut planted by a forester's family stands out in a forest that runs mostly oak and beech, its exact age never recorded beyond more than a century. Les Trois Frères stands directly on the road at the Rond d'Angoulême, reachable within minutes of parking. The Chêne Fauteuil takes another ten to fifteen minutes on forest tracks from Rond de Monsieur to Rond de Condé, and a marked safety perimeter keeps visitors a few metres back from its trunk, which is shedding deadwood. All of it is state forest, free and open, with no public transport to the interior.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Senonches?",
+      "a": "Les Trois Frères, three sessile oak stems from a single stool, measured in 2010 at 325 years, 32 metres tall and 5.5 metres round, putting it at roughly 340 today. The five-trunked Chêne Fauteuil nearby is close behind at 300 to 340 years."
+    },
+    {
+      "q": "Why does the Chêne Fauteuil have a safety perimeter?",
+      "a": "The tree is visibly declining, with dead branchwood in the crown and open holes in its five stems. A marked zone on the ground keeps visitors a few metres back from falling deadwood."
+    },
+    {
+      "q": "Where do the giant sequoias at Rond de Monsieur come from?",
+      "a": "Their seed was brought to France from America in 1854. The seven trees ringing the junction, plus a cedar grown tight against one of them, are reckoned roughly 85 to 115 years old, planted well after that seed arrived."
+    },
+    {
+      "q": "Is the Forêt de Senonches free to visit?",
+      "a": "Yes. It is state forest with no entry fee, reached by the Rond de Monsieur car park; there is no public transport to the forest interior."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sno_001",
+      "name": "Chêne Fauteuil",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 340,
+      "girth_cm": 680,
+      "location": {
+        "address": "Forêt domaniale de Senonches, near the Rond de Condé (between Rond de Condé, Rond de Monsieur and Rond des Ruelles), Senonches, Eure-et-Loir",
+        "latitude": 48.5457743,
+        "longitude": 1.01528,
+        "neighbourhood": "Forêt de Senonches"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/For%C3%AAt_de_Senonches",
+        "https://krapooarboricole.wordpress.com/2011/01/29/le-chene-fauteuil-foret-de-senonches-eure-et-loir/",
+        "https://www.visorando.com/en/walk-les-arbres-venerables-de-la-foret-de-sen/"
+      ],
+      "access": "Free, no permission needed. State forest (forêt domaniale de Senonches, part of the Parc naturel régional du Perche), reached on foot from the Rond de Monsieur parking area along a marked forest path; part of an official 'venerable trees' waymarked walking loop. A small delimited safety zone is marked around the trunk itself because of falling deadwood, so visitors view it from just outside that perimeter rather than approaching the trunk.",
+      "transport": "No public transport realistically reaches the forest interior; park at Rond de Monsieur (car) and walk roughly 10-15 minutes on forest tracks to Rond de Condé. Nearest town is Senonches.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This oak grew its own armchair. Five trunks rise from a single stool, and the hollows between them make a seat, which is how the Chêne Fauteuil got its name. The foresters here call it the King of the Forest. The measurements hold the nickname up. The cluster runs 6.8 metres round at chest height, and the tree was recorded at 285 years old in 1980, which puts its first season somewhere around 1695, in the closing years of Louis XIV. A plaque read on site in 2011 gave roughly 310 years. The two readings agree within a decade, so call it 300 to 340 years old today. It is not ageing quietly. There is dead branchwood in the crown, open holes in the stems, and a marked safety zone on the ground around the base, which visitors are asked to stay outside because pieces come down. You look at this one from a few metres back rather than sitting in the chair. It stands in state forest between three named road junctions, the Rond de Condé, the Rond de Monsieur and the Rond des Ruelles, on the 11.6 kilometre loop the forest signs as its venerable trees. The same walk takes in a three-stemmed oak by the D941, a lone sweet chestnut and a ring of Californian sequoias. Park at the Rond de Monsieur and give it ten to fifteen minutes on forest tracks.",
+      "how_to_recognise": "You can recognise it by the five trunks rising from one stool, 6.8 metres round together, with the armchair hollow between them and a marked safety perimeter on the ground. It stands between the Rond de Condé and the Rond des Ruelles.",
+      "best_time": {
+        "months": [
+          1
+        ],
+        "kind": "bare silhouette",
+        "label": "January, when the leaves are off and all five trunks read at once"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Le_Ch%C3%AAne_Fauteuil_rond_de_Cond%C3%A9_for%C3%AAt_de_Senonches_Eure-et-Loir_%28France%29.JPG",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Le Passant, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3264,
+        "height": 2448
+      },
+      "photos": []
+    },
+    {
+      "id": "sno_002",
+      "name": "Les Trois Frères",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 340 years",
+      "age_min": 320,
+      "age_max": 345,
+      "girth_cm": 550,
+      "location": {
+        "address": "Forêt domaniale de Senonches, near the Rond d'Angoulême, bordering the D941, Senonches, Eure-et-Loir",
+        "latitude": 48.5364806,
+        "longitude": 1.0457403,
+        "neighbourhood": "Forêt de Senonches"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/For%C3%AAt_de_Senonches",
+        "https://www.visorando.com/en/walk-les-arbres-venerables-de-la-foret-de-sen/"
+      ],
+      "access": "Free, no permission needed. State forest (forêt domaniale de Senonches, Parc naturel régional du Perche), stands by the Rond d'Angoulême near the D941 departmental road, on the same official waymarked 'venerable trees' walking loop as the Chêne Fauteuil.",
+      "transport": "No public transport to the forest interior; reachable on the marked forest loop from Rond de Monsieur or Rond de Battenberg parking. Nearest town is Senonches.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Officially there is one tree here. It looks like three. Les Trois Frères is a cépée, three sessile oak stems rising from a single stool, and France lists it as a Remarkable Tree on that strength. The figures were taken in 2010: 325 years old, 32 metres tall, 5.5 metres round at chest height, 1.75 metres through. Age that forward and the brothers are coming up on 340, which puts their first season in the 1680s, while the court was still moving into Versailles. The forest around them is roughly three quarters sessile oak and a fifth beech, and these three stems are among the handful of trees in it that the foresters name individually. They are also the cheap one on this walk. Where the five-trunked Chêne Fauteuil sits ten minutes into the trees behind a safety perimeter, the Three Brothers stand at the Rond d'Angoulême, a junction on the edge of the D941, so you can be looking up 32 metres of oak a minute after leaving the car. The waymarked venerable-trees loop through the Forêt de Senonches runs past them and on to the Fauteuil, a ring of giant sequoias at the Rond de Monsieur and a solitary sweet chestnut at the Rond de Condé: 11.6 kilometres, four stops, and this is the one to start with if you only have an hour.",
+      "how_to_recognise": "You can recognise them by the three oak stems growing out of one stool, 5.5 metres round together and 32 metres tall, the tallest thing at the junction. They stand right at the Rond d'Angoulême, beside the D941.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Ch%C3%AAne_Les_trois_fr%C3%A8res_rond_d%27Angoul%C3%AAme_Senonches_Eure-et-Loir_%28France%29.JPG",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Le Passant, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2448,
+        "height": 3264
+      },
+      "photos": []
+    },
+    {
+      "id": "sno_003",
+      "name": "Le Châtaignier du Rond de Condé",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 150,
+      "girth_cm": 355,
+      "location": {
+        "address": "Forêt domaniale de Senonches, Rond de Condé (parcelle 155), Senonches, Eure-et-Loir",
+        "latitude": 48.54632,
+        "longitude": 1.0149,
+        "neighbourhood": "Forêt de Senonches"
+      },
+      "verified_sources": [
+        "https://amisforetsenonches.com/?da_image=513",
+        "https://www.visorando.com/en/walk-les-arbres-venerables-de-la-foret-de-sen/"
+      ],
+      "access": "Free, no permission needed. State forest (forêt domaniale de Senonches, Parc naturel régional du Perche), stands at the Rond de Condé picnic area, on the same official waymarked 'venerable trees' loop as the Chêne Fauteuil (a short walk further along the same circuit).",
+      "transport": "No public transport to the forest interior; reachable on foot from the Rond de Monsieur parking area via the marked forest loop, or by the gravelled track direct to Rond de Condé. Nearest town is Senonches.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The people who planted this tree lived in a forester's house at the Rond de Condé. The house is gone. Their chestnut is 22.3 metres tall. It is also an outsider here. The Forêt de Senonches runs roughly three quarters sessile oak and a fifth beech, and sweet chestnut barely features: the local forest association, which keeps the map of the forest's remarkable trees, calls this one of very few chestnuts in the whole forest. Its trunk measures 1.13 metres across, about 3.55 metres round. Nobody has dated it. The association's own entry says only that it was probably planted more than a century ago, by the people in that vanished house, and puts no number on it. Its neighbours on this walk both carry ages to the year, so the gap is conspicuous rather than typical. If you know when it went in, tell us. October is when it earns the detour. Sweet chestnut drops spined burrs, they split on the ground, and the tree stands at the picnic area at the Rond de Condé rather than off in the timber, so the harvest lands where people sit. The waymarked venerable-trees loop comes through here, and the five-trunked Chêne Fauteuil is a short walk away at the same junction. Most visitors come for the oaks and find this instead.",
+      "how_to_recognise": "You can recognise it by the species: the only sweet chestnut at this junction in a forest of oak and beech, long toothed leaves, spined burrs underneath in autumn. It stands 22 metres tall at the Rond de Condé picnic area.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the burrs split open across the picnic area"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "sno_004",
+      "name": "Les Séquoias et le Cèdre du Rond de Monsieur",
+      "species": "Giant Sequoia (Sequoiadendron giganteum) and Atlas or Lebanon Cedar (Cedrus sp.)",
+      "age_estimate": "roughly 90 to 100 years",
+      "age_min": 85,
+      "age_max": 115,
+      "girth_cm": 559,
+      "location": {
+        "address": "Forêt domaniale de Senonches, Rond de Monsieur (parcelle 183), on the road between Senonches and La Loupe, Senonches, Eure-et-Loir",
+        "latitude": 48.5414,
+        "longitude": 1.02938,
+        "neighbourhood": "Forêt de Senonches"
+      },
+      "verified_sources": [
+        "https://amisforetsenonches.com/?da_image=513",
+        "https://www.visorando.com/en/walk-les-arbres-venerables-de-la-foret-de-sen/",
+        "https://krapooarboricole.wordpress.com/2011/01/29/le-chene-fauteuil-foret-de-senonches-eure-et-loir/",
+        "http://sequoias.eu/Pages/Locations/senonches.htm"
+      ],
+      "access": "Free, no permission needed. State forest (forêt domaniale de Senonches, Parc naturel régional du Perche); the trees ring the Rond de Monsieur road junction, the main parking area for the venerable-trees walking loop, crossed by the road linking Senonches and La Loupe (the D25 per visorando's route directions).",
+      "transport": "No public transport to the forest interior; Rond de Monsieur is the car park most visitors use for the whole Senonches venerable-trees walk. Nearest town is Senonches.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Seven giant sequoias ring a single road junction in a French forest of oak and beech. The local forest association, which keeps the map of the forest's remarkable trees, records that the seed for France's first sequoias was imported from America in 1854, and calls this ring unique in the Forêt de Senonches. One cedar grows tight against a neighbouring sequoia, so close that the association describes the two as a pair. A specialist survey of French sequoias counts eight trunks at the Rond and may well be counting that cedar among them, which is a forgivable error at this size. Sizes vary trunk to trunk. Measured circumferences at chest height run from 2.8 to 5.5 metres, so the 5.59 metres often quoted for this site belongs to one representative tree rather than to all of them. The tallest sequoia comes in at 34.2 metres, the cedar at 29.7. The age is less settled than the origin. The association put them at 90 years in 2024; a visitor writing in 2011 described a circle of sequoias about a century old. Somewhere between 85 and 115 years, then, and the 1854 date belongs to the seed reaching France rather than to the day these particular trees went in. This is also where the walk starts. The Rond de Monsieur is the car park for the whole venerable-trees loop, and there is an interpretive panel on site.",
+      "how_to_recognise": "You can recognise the group by the ring of conifer trunks around the junction itself, seven giant sequoias and one cedar pressed up against one of them, the biggest 5.5 metres round and 34 metres tall. They stand at the Rond de Monsieur.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}

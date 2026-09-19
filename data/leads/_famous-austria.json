@@ -31,7 +31,8 @@
         "https://commons.wikimedia.org/wiki/File:Deutsch_Minihof_1.JPG",
         "https://commons.wikimedia.org/wiki/File:Deutsch_Minihof_2.JPG"
       ],
-      "status": "lead"
+      "status": "lead",
+      "why": "A WebSearch AI summary claims a linden several hundred years old stands beside this wayside shrine (Bildstock) on the L416 in Deutsch Minihof, Burgenland, but no page actually fetched (the Commons file itself, meinbezirk.at, best-of-burgenland.com) names the tree, gives an age or a coordinate; per the search-summary-is-a-lead-never-a-source rule this is not enough to verify. No second source found this pass. Needs a fetchable primary source with real facts, or stays a lead."
     },
     {
       "name": "Birnbaum auf dem Walserfeld",
@@ -59,14 +60,22 @@
     },
     {
       "name": "Friedenslärche",
-      "lat": null,
-      "lng": null,
+      "lat": 47.9474478,
+      "lng": 12.9277328,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-1.jpg",
         "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-2.jpg",
         "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-3.jpg"
       ],
-      "status": "lead"
+      "status": "lead",
+      "species": "European Larch (Larix decidua)",
+      "location_precision": "approximate",
+      "why": "SALZBURGWIKI's own dedicated article (as 'Tettenbacher Friedenslärche') and a meinbezirk.at Regionauten piece agree independently: a larch planted in 1918 by a local farmer ('vom Tettenbacher Bauer') out of gratitude for returning safely home from the First World War ('zum Dank fuer seine glueckliche Heimkehr aus dem Ersten Weltkrieg'). It stands on the pilgrimage path (Maria-Buehel-Strasse) that climbs from Oberndorf's Stille-Nacht-Platz up to the Wallfahrtskirche Maria Buehel, near the Wasserkapelle Maria Buehel which itself sits a few hundred metres below the church. Species is given only as 'Laerche' (larch) in both sources, not to exact species; European Larch (Larix decidua) is the overwhelmingly likely native larch in this region and is used here as a reasonable default, not a confirmed identification, worth a reader question on the page. SALZBURGWIKI's broader 'Kleindenkmaeler und Kunstwerke in Oberndorf' page lists it among small monuments (Kleindenkmal), not among the separate Naturdenkmal category; a WebSearch AI summary claimed Naturdenkmal status but that word does not appear on either page actually fetched, so it is dropped per the search-summary-is-a-lead-never-a-source rule. No girth or height figure exists in any source found; age is well documented instead (planted 1918, so roughly 108 years old as of 2026), so age_estimate is set from the planting date rather than derived from girth. Alive: a Commons photograph dated 2022-04-21 (Rufus46, CC BY-SA 4.0) shows it standing and captioned as the 1918-planted peace larch; no coordinates embedded in the file. Location is APPROXIMATE: no source gives tree-level coordinates, only the stretch of Maria-Buehel-Strasse where the Wasserkapelle and tree stand, between the town centre and the church. Access: free, beside the public pilgrimage path/street, no permission or ticket needed. TRANSPORT NOTE for whoever decides its container later: straight-line distance from Oberndorf Bahnhof (47.9417, 12.9441) to the Wallfahrtskirche Maria Buehel (47.9500, 12.9262) is about 1.6km uphill via the Kalvarienbergstiege stairs; combined with the roughly 25-minute S-Bahn/regional train from Salzburg Hauptbahnhof, the one-way journey from central Salzburg runs to roughly 50-55 minutes door to tree, meaningfully past the project's ~30-minute day-trip boundary, so this reads as historically significant (a private WWI homecoming memorial) rather than a Salzburg-city entry; not my call to resolve, just recording it honestly. Clears the bar: alive, documented planting date giving a real age, two independent sources for existence/history, one collectible point, publicly reachable; the only soft points are the approximate pin and the unconfirmed exact species. Sources: https://wiki.sn.at/wiki/Tettenbacher_Friedensl%C3%A4rche ; https://www.meinbezirk.at/flachgau/c-regionauten-community/wallfahrtskirche-maria-buehel-oberndorf_a7215209 ; https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-1.jpg",
+      "age_estimate": "about 108 years, planted in 1918",
+      "age_min": 106,
+      "age_max": 110,
+      "curation_status": "flagged",
+      "container_decision": "Decided 2026-09-18: NOT added to Salzburg. famous_map.py places it 18.6km straight-line from the city, but the verify pass measured the real one-way transit as roughly 50-55 minutes door to tree, well past the roughly-30-minute day-trip norm CLAUDE.md uses elsewhere (Blarney/Fota for Cork are 15-20 min). Kept as a fully-verified lead for a future Oberndorf bei Salzburg page (the Silent Night town) once more trees are found nearby it; do not re-add to Salzburg without new transit evidence."
     },
     {
       "name": "Kaiserbuche, Haunsberg",
@@ -91,7 +100,10 @@
         "https://commons.wikimedia.org/wiki/File:Nonnenbuche,_Gutenstein_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Nonnenbuche,_Gutenstein_03.jpg"
       ],
-      "status": "lead"
+      "status": "lead",
+      "species": "European Beech (Fagus sylvatica)",
+      "species_basis": "confirmed by both Commons photo descriptions ('Rotbuche')",
+      "why": "Not enough to verify: only ONE real source exists so far, restated across three photo description pages rather than independent. All three Commons file pages (01, 02, checked directly) agree on the same single fact: an ordinary European beech carries a memorial plaque reading 'Hier sind 4 brave Nonnen mit Gottes Hilf dem Tod entronnen. 1966' (here 4 good nuns escaped death with God's help, 1966), photographed 2016-07-23 for WikiDaheim 2017, at approx 47.8763/15.8940 (the two photo pages give slightly different coordinates 30m apart, both near the lead's point). No age, girth, height, Naturdenkmal ID, or any account of WHAT actually happened in 1966 (what the nuns escaped, why this specific tree) was found anywhere: two WebSearches (general history, hiking-trail context) turned up nothing beyond the plaque text itself. Without a second, independent account of the 1966 event or any register/measurement data, this cannot clear the two-independent-sources bar for existence+history, and it is also unclear the tree itself (rather than the plaque) is the destination, since nothing suggests unusual age or size. Leaving as a lead rather than blocking outright: the plaque and photos are real, it just needs a local history source (Gutenstein municipality, a Wieneralpen/Bucklige Welt hiking guide, or a Niederoesterreich Naturdenkmal list) that a future pass has not yet found."
     },
     {
       "name": "Rehberger Kreuz, Hofamt Priel",
@@ -102,7 +114,8 @@
         "https://commons.wikimedia.org/wiki/File:Rehberger_Kreuz_02,_Hofamt_Priel.jpg",
         "https://commons.wikimedia.org/wiki/File:Rehberger_Kreuz_03,_Hofamt_Priel.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "blocked_reason": "Not a tree. Checked two of the three Commons file pages (01 and 03) directly: 'Das Rehberger Kreuz' is a wayside CROSS/shrine standing on the Wachaustrasse B3 at the Hofamt Priel/Persenbeug-Gottsdorf municipal boundary (coordinates 48d11'25.81\"N 15d5'54.48\"E, matching the lead's point), a former execution site of the regional court per one search snippet. Neither photo description, category list, nor structured data mentions any tree at all, species, age or size. This is a famous_trees.py false positive, almost certainly matched on the word 'Kreuz' or the surrounding Commons category rather than any tree content. Blocked as not a collectible tree entry; a future pass should not re-check this same candidate without new evidence a tree is actually involved."
     },
     {
       "name": "Tree near Völlegg 49b, Reith",
@@ -138,8 +151,9 @@
         "https://commons.wikimedia.org/wiki/File:Hasenguetl_in_Leonstein_mit_Linde_2.jpg"
       ],
       "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "species_basis": "confirmed exact species by the Commons file's own categories ('Tilia platyphyllos in Austria')",
+      "why": "Checked the lead photo's Commons page directly: it names the tree's address as Heindlmuehlstrasse 1, Leonstein (Gemeinde Gruenburg), standing at the 'Bauernhof Hasenguetl (auch Buehler, Hoechtl)', a working FARM, which raises hard-rule-10 access questions the way the Rehberger/Kaiserbuche cases already show up in this file: no source found says whether the tree stands on the public road frontage or inside the farmyard proper. No age, girth or height figure exists on the Commons page and two WebSearches (a direct German search and a baumkunde.de-targeted search) found no baumkunde entry, register listing or news piece giving a second independent source for age/history at all -- only the one Commons description, restated across three photo filenames. Recorded as a lead needing both a second source and an access answer before it can verify; a future pass could try the OO Naturdenkmal list for Kirchdorf district or an OSM check on Heindlmuehlstrasse's road/farmyard boundary."
     },
     {
       "name": "Friedhofslinde Wiesen, Burgenland",
@@ -174,9 +188,10 @@
         "https://commons.wikimedia.org/wiki/File:Salzburg_-_Altstadt_-_Schwarzstra%C3%9Fe_Christuskirchen-Linde_-_2020_08_31-2.jpg",
         "https://commons.wikimedia.org/wiki/File:Salzburg_-_Altstadt_-_Schwarzstra%C3%9Fe_Christuskirchen-Linde_-_2020_08_31-3.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "blocked_reason": "Not an ancient or remarkable tree: the Commons category for this specimen states it was planted in 2015 (about 11 years old), a young ornamental lime beside the Christuskirche on Schwarzstrasse. Not in Wien Naturdenkmaeler-style Salzburg city Naturdenkmal list either (checked de.wikipedia Liste der Naturdenkmaeler in Salzburg, no match). famous_trees.py category-matching false positive: grouped under Famous Tilia in Austria by genus alone, not by merit."
     },
     {
       "name": "Linde Hochosterwitz",
@@ -219,16 +234,17 @@
     },
     {
       "name": "Japanischer Schnurbaum, Bregenz",
-      "lat": null,
-      "lng": null,
+      "lat": 47.4922093135,
+      "lng": 9.7241185644,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum,_Bregenz.jpg",
         "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_2016.jpg",
         "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_One_Minute.jpg"
       ],
       "status": "lead",
-      "species": "Pagoda Tree (Styphnolobium sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "species_basis": "confirmed exact species by VOL.AT news article, which gives the latin synonym 'Styphnolobium japonicum' directly",
+      "why": "Two independent sources agree on the facts but NOT verified because ACCESS is unresolved, which is the one thing that stops this shipping. Vorarlberg's own 'Liste der Naturdenkmaeler im Bezirk Bregenz' (de.wikipedia, fetched as wikitext) lists it as ND-213, Gemeinde Bregenz, coordinates 47.4922093135/9.7241185644 (recorded above). VOL.AT (vol.at/japanischer-schnurbaum-jetzt-naturdenkmal/1730404, published 2010-07-02) independently confirms: declared a local Naturdenkmal by Bregenz's Stadtvertretung on 1 July 2010; planted 'vor 60 Jahren' (about 60 years before 2010, so roughly planted 1950, ~76 years old as of 2026); trunk 86cm thick (diameter, not girth: circumference is roughly pi*86 = 270cm), height 12.5m, crown diameter 26m; condition in 2010 was 'schwach geschaedigt, aber vital' (11-25% leaf loss, weakly damaged but vital) with traffic safety confirmed. A 2016 Wiki Loves Earth photograph (commons, CC BY-SA 4.0, dated 2016-05-30) is a second, more recent alive-confirmation. THE BLOCKER: both sources place it 'am Johann-Joerg-Weg beim Pausenhof der HS Rieden-Vorkloster', i.e. on/by the schoolyard of a Hauptschule (Rieden-Vorkloster). Hard rule 10's school exception requires real evidence the grounds are genuinely open (a public path crossing them, or the site bordering rather than being inside school grounds); the phrasing 'am Johann-Joerg-Weg' (ON the Weg/path) suggests the tree may stand on the path bordering the yard rather than inside a fenced enclosure, but no source states this plainly and two attempts to check via OpenStreetMap Overpass (overpass-api.de returned HTTP 406 twice, a kumi.systems mirror returned nothing within the timeout) did not settle it. A WebSearch on public accessibility returned no decisive answer either. Recorded here as an open access question rather than blocked outright, since inconvenience/uncertainty is not the same as confirmed harm: a future pass should check a street-level map or aerial image to see whether Johann-Joerg-Weg runs along the school's public side or through its fenced yard before deciding ship or block."
     },
     {
       "name": "Naturdenkmal OÖ 665 (4 Schnurbäume in Linz)",
@@ -245,14 +261,15 @@
     },
     {
       "name": "Wiener Naturdenkmal 276 (Wien-Innere Stadt)",
-      "lat": null,
-      "lng": null,
+      "lat": 48.203656,
+      "lng": 16.379124,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:GuentherZ_Naturdenkmal_276_2010-02-27_0138_Wien01_Stadtpark_Japanischer_Schnurbaum.jpg",
         "https://commons.wikimedia.org/wiki/File:GuentherZ_Naturdenkmal_276_2010-02-27_0139_Wien01_Stadtpark_Japanischer_Schnurbaum_Plakette.jpg",
         "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum1.jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "why": "Already published as vie_016, The Pagoda Tree of the Stadtpark (Naturdenkmal 276, same Sophora japonica in the Stadtpark, same coordinates to within a few metres, same photo already in use). Confirmed by cross-checking de.wikipedia Liste der Naturdenkmaeler in Wien/Innere Stadt and baumkunde.de against the published entry before writing a duplicate; preflight also independently caught the photo collision. Nothing more to do here."
     }
   ]
 }
