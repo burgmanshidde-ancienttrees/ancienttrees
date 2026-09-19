@@ -2,6 +2,55 @@
 
 <!-- archive-index -->
 
+## 2026-09-19 (session) - A profile picture can be set on the website, and deleting an account from the web now really takes the files
+
+Hidde, on being told the app's editor sets a picture and the website only ever
+read one: "Add it the same way as the app does it."
+
+**The row is the app's** (Screens/ProfileEditor.swift): a circle, a Choose a
+photo button that becomes Change photo, and its own single line, "Optional.
+People who follow you see it beside your name." Picking only stages the file,
+as the app's editor does, and the page's existing Save sends the picture and
+the name in one act, the upload first so a failed picture never leaves a url in
+the database pointing at nothing.
+
+Nothing underneath is re-decided, which is the rule that keeps two surfaces
+from drifting: 512 on the long edge, JPEG at quality 0.8, POSTed to
+avatars/<user-id>/avatar.jpg with x-upsert, then the same profiles upsert
+Profiles.save makes. EXIF orientation is applied rather than assumed, because a
+phone leaves the pixels sideways and writes the rotation in a tag, which is the
+same trap sightings_publish.py rotates out of reader photographs.
+
+**And the deletion promise, which this would otherwise have broken.** The app
+deletes the stored files through the Storage API in the moment before
+delete_user(), because storage.objects cannot cascade and Supabase refuses a
+delete against it from SQL outright (supabase/delete-user.sql records the hour
+that lesson cost). The website called the function straight.
+
+That was survivable while the web could not make an avatar. It was also already
+leaking something real: photographs taken in the APP sit in the sightings
+bucket under the account's own folder, and deleting that account from the
+WEBSITE left every one of them there, publicly readable, while /privacy
+promised otherwise. Both buckets are purged first now, unguarded, on the app's
+own reasoning that an orphaned image is a tidy-up job and an account that will
+not delete is a broken promise.
+
+Convention looked up and recorded rather than invented: iNaturalist keeps the
+profile icon as a field on the account settings page with one Save covering it
+and the name, AllTrails keeps it behind the profile menu in settings, and
+neither uploads on pick.
+
+Build clean (11,997 pages), qa.py green (15,897), preflight, paritycheck,
+crosscheck, i18ncheck and conventioncheck clean, and /account/settings measures
+no overflow, no drift and no sub-16px field at 375. Looked at at 375 and on a
+desktop.
+
+**FOR HIDDE, and it is a database job rather than a code one:** none of this
+can work until the avatars bucket exists with the two policies in
+supabase/profiles.sql and the two in supabase/avatars-policy.sql. If the app
+has been saving pictures, they are already there and nothing is owed. If it has
+not, a save here will say "That did not save. The picture would not upload."
+
 ## 2026-09-19 (night run, continuation 2) - A silently dead reader-photo pipeline fixed, three deepen passes dispatched, three stale branches cleared
 
 Resumed a window that had stopped after 28 minutes with 92 unspent, having
