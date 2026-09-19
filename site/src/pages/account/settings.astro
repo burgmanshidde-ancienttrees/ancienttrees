@@ -71,6 +71,25 @@ const crumbItems: [string, string | null][] = [
         somebody asks the question it answers. */}
     <p class="acct-group">Account</p>
     <div class="acct-rows">
+      {/* YOUR PICTURE, the app's own row (Screens/ProfileEditor.swift), which
+          the website could read and never set: somebody who had never opened
+          the app had no way to have one at all.
+
+          Convention: the app uses PhotosPicker, which has no web equivalent,
+          so this is the file-input-behind-a-button every site uses for the
+          same job (GitHub's "Edit" on the avatar, Strava's "Change photo",
+          Airbnb's "Upload"). CONVENTIONS.md carries the entry. What does NOT
+          differ is everything underneath: the same 512px JPEG at quality 0.8,
+          the same avatars/<user-id>/avatar.jpg, the same profiles row. */}
+      <div class="acct-row">
+        <label for="pic-pick">Your picture</label>
+        <div class="acct-pic-row">
+          <span class="profile-avatar acct-pic" id="pic-preview" aria-hidden="true"></span>
+          <button type="button" id="pic-pick" class="go-btn">Choose a photo</button>
+          <input id="in-pic" type="file" accept="image/*" hidden />
+        </div>
+        <p class="acct-fine">Optional. People who follow you see it beside your name.</p>
+      </div>
       <div class="acct-row">
         <label for="in-name">Your name</label>
         <div class="acct-name-row">
@@ -180,7 +199,12 @@ const crumbItems: [string, string | null][] = [
     .then(function(r) { return r.ok ? r.json() : null; })
     .then(function(u) {
       if (!u) return;
-      if (u.email) document.getElementById("set-email").textContent = u.email;
+      if (u.email) {
+        document.getElementById("set-email").textContent = u.email;
+        // A letter rather than an empty circle while we find out whether
+        // there is a picture, which is what the profile head already does.
+        initial(u.email);
+      }
       if (!u.id) return;
       myId = u.id;
       // The name they already chose, wherever they chose it. An empty box on a
@@ -189,7 +213,7 @@ const crumbItems: [string, string | null][] = [
       //
       // Units ride along on the same row rather than a second request: the app
       // reads and writes the one profiles row and so does this page.
-      fetch(SB + "/rest/v1/profiles?select=display_name,units&user_id=eq." + encodeURIComponent(u.id),
+      fetch(SB + "/rest/v1/profiles?select=display_name,avatar_url,units&user_id=eq." + encodeURIComponent(u.id),
             { headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } })
         .then(function(r) { return r.ok ? r.json() : null; })
         .then(function(rows) {
@@ -197,6 +221,11 @@ const crumbItems: [string, string | null][] = [
           if (rows[0] && rows[0].display_name) {
             document.getElementById("in-name").value = rows[0].display_name;
             document.getElementById("save-name").disabled = false;
+            initial(rows[0].display_name);
+          }
+          if (rows[0] && rows[0].avatar_url) {
+            myAvatar = rows[0].avatar_url;
+            showPicture(myAvatar);
           }
           units(rows[0] ? rows[0].units : null);
         }).catch(function() {});
@@ -236,6 +265,85 @@ const crumbItems: [string, string | null][] = [
     });
   }
 
+  // YOUR PICTURE, on the app's own terms (Screens/ProfileEditor.swift and its
+  // Avatars.upload). The numbers are not re-decided here: 512 on the long
+  // edge, JPEG at quality 0.8, posted to avatars/<user-id>/avatar.jpg with
+  // x-upsert, so one person owns one file and deleting the account leaves
+  // nothing pointing at it (supabase/profiles.sql).
+  //
+  // Nothing is uploaded on picking. The app's editor stages the picture and
+  // sends it when Save is pressed, so a person who changes their mind simply
+  // leaves, and that is what this does.
+  var picked = null;                  // the JPEG a Save will send
+  var myAvatar = null;                // what the account already has
+  var picBtn = document.getElementById("pic-pick");
+  var picFile = document.getElementById("in-pic");
+  var picPrev = document.getElementById("pic-preview");
+
+  function initial(name) {
+    if (!picPrev.style.backgroundImage) picPrev.textContent = (name || "?").charAt(0).toUpperCase();
+  }
+  function showPicture(url) {
+    picPrev.textContent = "";
+    picPrev.style.backgroundImage = "url(" + String(url).replace(/[()'"]/g, "") + ")";
+    picBtn.textContent = "Change photo";
+  }
+
+  // UPRIGHT, asked for rather than hoped for. A phone writes the orientation
+  // in EXIF and leaves the pixels sideways, which is the same trap
+  // sightings_publish.py rotates out of reader photographs; createImageBitmap
+  // is told to apply it, and the <img> fallback is only for a browser that
+  // has no createImageBitmap at all.
+  function downsized(file, done) {
+    function draw(src, w, h, release) {
+      var side = Math.max(w, h), scale = side > 512 ? 512 / side : 1;
+      var c = document.createElement("canvas");
+      c.width = Math.round(w * scale);
+      c.height = Math.round(h * scale);
+      c.getContext("2d").drawImage(src, 0, 0, c.width, c.height);
+      if (release) release();
+      c.toBlob(function(b) { done(b); }, "image/jpeg", 0.8);
+    }
+    if (window.createImageBitmap) {
+      createImageBitmap(file, { imageOrientation: "from-image" })
+        .then(function(bm) { draw(bm, bm.width, bm.height, function() { bm.close(); }); })
+        .catch(function() { done(null); });
+      return;
+    }
+    var img = new Image(), url = URL.createObjectURL(file);
+    img.onload = function() {
+      draw(img, img.naturalWidth, img.naturalHeight, function() { URL.revokeObjectURL(url); });
+    };
+    img.onerror = function() { URL.revokeObjectURL(url); done(null); };
+    img.src = url;
+  }
+
+  picBtn.addEventListener("click", function() { picFile.click(); });
+  picFile.addEventListener("change", function() {
+    var f = picFile.files && picFile.files[0];
+    if (!f) return;
+    downsized(f, function(blob) {
+      if (!blob) { say("That picture could not be read. Try another one."); return; }
+      picked = blob;
+      showPicture(URL.createObjectURL(blob));
+      say("Press Save to keep it.");
+    });
+  });
+
+  // The upload itself, and it runs before the row is written so a failed
+  // picture never leaves a url in the database pointing at nothing.
+  function sendPicture(token, cb) {
+    if (!picked) { cb(true, myAvatar); return; }
+    fetch(SB + "/storage/v1/object/avatars/" + encodeURIComponent(myId) + "/avatar.jpg", {
+      method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + token,
+                 "Content-Type": "image/jpeg", "x-upsert": "true" },
+      body: picked
+    }).then(function(r) {
+      cb(r.ok, r.ok ? SB + "/storage/v1/object/public/avatars/" + encodeURIComponent(myId) + "/avatar.jpg" : null);
+    }).catch(function() { cb(false, null); });
+  }
+
   // The SAME upsert the app makes (profiles?on_conflict=user_id with
   // resolution=merge-duplicates), so setting a name here and setting one in the
   // app are one operation against one row rather than two paths that can
@@ -256,6 +364,10 @@ const crumbItems: [string, string | null][] = [
     n.textContent = msg;
     n.hidden = false;
   }
+  //
+  // ONE SAVE FOR BOTH, as the app's editor has: its Save uploads the picture
+  // and then writes the row, and a person setting both should not have to
+  // press two buttons in an order nobody told them.
   nameBtn.addEventListener("click", function() {
     var box = nameBox;
     var v = box.value.trim();
@@ -264,17 +376,30 @@ const crumbItems: [string, string | null][] = [
     if (v.length < 1) return;
     nameBtn.disabled = true;
     say("Saving.");
-    fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
-      method: "POST",
-      headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
-                 "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates" },
-      body: JSON.stringify([{ user_id: myId, display_name: v }])
-    }).then(function(r) {
-      nameBtn.disabled = false;
-      say(r.ok ? "Saved." : "That did not save. Try again in a moment.");
-    }).catch(function() {
-      nameBtn.disabled = false;
-      say("That did not save. Try again in a moment.");
+    sendPicture(cur.access_token, function(ok, url) {
+      if (!ok) {
+        nameBtn.disabled = false;
+        say("That did not save. The picture would not upload.");
+        return;
+      }
+      // avatar_url only travels when we KNOW one, because PostgREST writes
+      // the columns it is given: sending a null we merely failed to read
+      // would take somebody's picture off on a save that was about a name.
+      var row = { user_id: myId, display_name: v };
+      if (url) row.avatar_url = url;
+      fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
+        method: "POST",
+        headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                   "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates" },
+        body: JSON.stringify([row])
+      }).then(function(r) {
+        nameBtn.disabled = false;
+        if (r.ok && url) { myAvatar = url; picked = null; }
+        say(r.ok ? "Saved." : "That did not save. Try again in a moment.");
+      }).catch(function() {
+        nameBtn.disabled = false;
+        say("That did not save. Try again in a moment.");
+      });
     });
   });
 
@@ -333,10 +458,56 @@ const crumbItems: [string, string | null][] = [
   delConfirm.addEventListener("input", function() {
     delBtn.disabled = delConfirm.value.trim().toUpperCase() !== "DELETE";
   });
+  // THE FILES FIRST, from here rather than from the SQL, which is the app's own
+  // order and its reason (Account.deleteAccount, supabase/delete-user.sql):
+  // everything in the database cascades off auth.users, and a file in storage
+  // does not, because Supabase refuses a delete against storage.objects from
+  // SQL outright. So the client removes them through the Storage API, as the
+  // account itself, in the moment before the row goes.
+  //
+  // Never guarded, deliberately, and the app says why: an orphaned image is a
+  // tidy-up job, an account that will not delete is a broken promise.
+  //
+  // The avatar half is new work, because until today the website could not
+  // make an avatar. The sightings half was a real gap: photographs taken in the
+  // app sat under the account's own folder, and deleting that account from the
+  // WEBSITE left every one of them in the bucket while /privacy promised
+  // otherwise. Same promise, same handler, so it is closed here too.
+  function purgeFiles(token, done) {
+    if (!myId) { done(); return; }
+    var uid = encodeURIComponent(myId);
+    var head = { "apikey": KEY, "Authorization": "Bearer " + token };
+    function drop(bucket, path) {
+      return fetch(SB + "/storage/v1/object/" + bucket + "/" + path,
+                   { method: "DELETE", headers: head }).catch(function() {});
+    }
+    fetch(SB + "/storage/v1/object/list/sightings", {
+      method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + token,
+                 "Content-Type": "application/json" },
+      body: JSON.stringify({ prefix: myId, limit: 200 })
+    }).then(function(r) { return r.ok ? r.json() : []; })
+      .catch(function() { return []; })
+      .then(function(rows) {
+        var jobs = [drop("avatars", uid + "/avatar.jpg")];
+        (rows || []).forEach(function(row) {
+          // The name is passed through as the app passes it, because it is a
+          // path inside the folder and encoding a slash would break it.
+          if (row && row.name) jobs.push(drop("sightings", uid + "/" + row.name));
+        });
+        Promise.all(jobs).then(done, done);
+      });
+  }
+
   delBtn.addEventListener("click", function() {
     if (delConfirm.value.trim().toUpperCase() !== "DELETE") return;
     var cur = session();
     if (!cur) { location.href = "/account"; return; }
+    delBtn.disabled = true;
+    purgeFiles(cur.access_token, function() { deleteAccount(cur); });
+  });
+
+  function deleteAccount(cur) {
     fetch(SB + "/rest/v1/rpc/delete_user", { method: "POST",
       headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
                  "Content-Type": "application/json" }, body: "{}" })
@@ -352,11 +523,15 @@ const crumbItems: [string, string | null][] = [
           signedOut();
           if (window.atPaintNav) window.atPaintNav(false);
         } else {
+          delBtn.disabled = false;
           delBtn.textContent = "Deletion failed. Try again, or email us via the privacy page.";
         }
       })
-      .catch(function() { delBtn.textContent = "Deletion failed (network). Try again."; });
-  });
+      .catch(function() {
+        delBtn.disabled = false;
+        delBtn.textContent = "Deletion failed (network). Try again.";
+      });
+  }
 })();
 </script>
 `} />
