@@ -1,6 +1,61 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-19 (continuation) - Finished a stalled write claim (Hiroshima +16, Melbourne +4), then found and closed the leaked-id backlog, plus one real Pamplona photo
+
+An earlier attempt in this window stopped after 31 minutes having shipped
+nothing, with hiroshima and melbourne write claims already standing and
+fully-written work sitting uncommitted. Verified it (build, QA, preflight
+all clean), fixed two small issues in it, and shipped it rather than
+redoing the research: **Hiroshima gains 16 giant-tree register veterans
+(hir_018-033) and Melbourne 4 Yarra significant-tree entries (mel_013-016)**,
+all with honest gaps on undocumented ages.
+
+**Caught my own regression before it shipped separately.** Two of the new
+Hiroshima trees and all four new Melbourne trees named a sibling tree by
+its raw database id ("same site as hir_022") instead of its name, in the
+`access` field. Fixed those two cities immediately, which led to checking
+whether this was a wider problem.
+
+**It was: 118 instances across 36 cities, the same bug CURATION.md
+documented on 2026-09-18 and deliberately did not turn into a build check
+yet** ("the check belongs in the same change that empties the backlog").
+Wrote the detection script, fixed the 52 safe mechanical cases myself, then
+split the remaining 66 across three parallel agents by city (each doing
+real sentence-by-sentence rewrites, not blind substitution, since a crude
+first attempt at automating this produced garbage like "the Julia Davis
+Park Bur Oak, the Julia Davis Park Bur Oak"). All three finished clean:
+zero leaked ids left anywhere, preflight and the full site build both
+green. `check_no_leaked_tree_ids()` is now a FAIL in preflight.py rather
+than a NOTE, since the precondition for turning it on (empty backlog) is
+now met.
+
+**Also chased down whether a "sourced growth rate" for Populus nigra and
+Platanus x acerifolia (flagged 2026-09-18 as unblocking 24 trees) actually
+exists.** Checked the real Forestry Commission source (White 1998, FCIN12)
+behind `scripts/ages.py`'s method rather than assuming: poplar has NO entry
+in it at all (pioneer species are explicitly excluded from the three-phase
+model, for the same structural reason as yew), and plane's entry needs
+White's full two-phase calculation rather than the existing linear formula,
+or it would systematically under-age old planes. Recorded in CURATION.md
+with the actual table data, so nobody re-finds this PDF or force-fits a
+number that isn't there.
+
+**One real photograph, from Pamplona, our best-placed page and thinnest
+(CLAUDE.md rung 2's demand rule): position 3.6 on 412 impressions, 0 of 14
+trees photographed.** `photo_last_resort.py --radius 120` found a handful
+of candidates for three of its trees; a photo-judge pass on those (plus
+parallel passes on Barcelona and Lisbon's own STARVED queues) came back
+with one approval, pam_004's Kisulabe Oak, a genuinely striking pollard
+found in the tree's own Commons category rather than the sweep's Wikidata
+list. Barcelona (41 viewed) and Lisbon (~70 viewed) came back with honest
+zeros: the widened, plant-filter-off sweep returns street and building
+photographs in dense cities, not trees. Worth recording so the next pass
+does not re-run the same sweep on the same three: the medicine for those
+two is reader photographs or `famous_trees.py`, not another radius sweep.
+
+Nothing FOR HIDDE. All work merged to main and pushed.
+
 ## 2026-09-19 - Which parks have volume: measured, and it is a long tail. Plus three pages no keyword could see
 
 Hidde asked the sharp version of yesterday's question: which parks have
