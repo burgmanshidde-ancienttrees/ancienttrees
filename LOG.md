@@ -2,6 +2,59 @@
 
 <!-- archive-index -->
 
+## 2026-09-19 (session) - One turn in eleven was a refused command, and the record had been naming the wrong word for a month
+
+Hidde asked whether runs are getting slower and whether the corpus is the
+cause. Measured across all 293 runs in `data/run-health.json`, he is right that
+they are slower: seconds per turn went 7.2 to 11.0 since mid-August, and minutes
+per shipped commit doubled, 2.4 to 4.8. Tokens per tree did not rise, so this is
+wall clock rather than thinking.
+
+The corpus is the third cause, not the first. The first is this:
+
+**1,394 of 14,692 turns in seven days were commands the allowlist refused**, one
+in eleven, each costing the turn plus a retry. It was zero in mid-August and has
+grown every week since. Nothing added it up: run-health recorded a count per run,
+the digest never read it, and a run cannot see its own refusals.
+
+The reason two earlier widenings bought nothing is that `_denial_label` recorded
+the FIRST WORD of a refused command, and the allowlist matches the WHOLE command
+string. So `python3 x.py && git commit` is refused although both binaries are
+allowed, and got logged as `Bash(python3)`. That label was top of the board in
+39 of the last 39 runs while `Bash(python3:*)` sat on the allowlist the whole
+time. The record was pointing at the one word that was never the problem, and
+the August note "guessing which binaries to add has now been tried once and did
+not work" was the sound of exactly that.
+
+Four things shipped, no allowlist entries among them:
+
+- `command_shape()` in run_health.py records the whole shape, argument-free as
+  before: `python3 && git`, `python3 | head`, `subshell cd && npm`. 18 unit
+  tests in `scripts/test_run_health.py`, half of them asserting that a path, a
+  URL or an environment value cannot survive into a file this public.
+- `run_health.py --denials` names the wall, worst first, with the rate.
+- The nightly prompt now says ONE COMMAND PER BASH CALL, with the alternative
+  (do loops and pipelines in Python, which is allowed and is what this project
+  uses anyway). The prompt is the fix that has ever worked here: changing
+  `(cd site && ...)` to `npm --prefix site` is what brought the runs back in
+  August.
+- The tenth ratchet check, `check_run_prompt_forbids_compound_commands` in
+  qa.py, refuses a prompt that drops the rule. Verified to fail when it does.
+
+Worth knowing before anyone widens the list: `env` and `printenv` are refused
+CORRECTLY, because they read this job's secrets, and `bash` is excluded on
+purpose. `pdftotext` refusals are a knowledge gap rather than a list gap, since
+`scripts/pdf_text.py` already exists and is allowed.
+
+What this does not fix, in order of size. The site build is 22 to 28 minutes in
+CI and does not finish locally at all (~70 pages a minute against 12,000 pages),
+so a run can no longer verify its own work before pushing; that is most of why
+minutes per commit doubled. And CLAUDE.md is 231 KB, about 64,000 tokens, in the
+context of all ~400 turns of every run. Splitting it by reader (the research
+workflow is 126 KB of it and is all a night run needs; the mandate and QA
+sections are 74 KB and are for sessions) would roughly halve what a run carries
+per turn and delete nothing. Both are Hidde's call on sequencing.
+
 ## 2026-09-18 - Night run 2026-09-18 20:07 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 46.1 minutes of its 120 minute window, 318 turns, 25 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree.

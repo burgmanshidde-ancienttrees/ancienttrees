@@ -512,6 +512,24 @@ jobs:
               build`. Both start with npm on purpose: a parenthesised subshell
               like `(cd site && ...)` matches no entry on the tool allowlist and
               is what silently stopped every night run for a day.
+            - ONE COMMAND PER BASH CALL. No `&&`, no `;`, no pipes into a binary
+              that is not itself on the list, no `(subshell)`, and no `for`,
+              `while`, `until` or `if` loops. The allowlist matches the WHOLE
+              command string, so a chain is refused even when every binary in it
+              is allowed, and a shell keyword matches nothing at all. This is not
+              a style note, it is the largest avoidable cost in the window:
+              measured 2026-09-19 over 39 runs in 7 days, 1,394 of 14,692 turns
+              were refused commands, one in eleven, and `for` appeared in 37 of
+              those 39 runs. Each refusal costs the turn plus the retry.
+              When you need a loop, a pipeline or several steps, do it in Python
+              instead: `python3 -c "..."`, `python3 -` with a heredoc, or a small
+              script under scripts/. All three are one command starting with
+              python3, which is what the list matches on, and Python is what the
+              rest of this project already uses for exactly this.
+              If a single uncompounded command is still refused, say which one in
+              LOG.md. That is now a fact worth reporting rather than noise: since
+              2026-09-19 the record names the whole shape, so a refusal with no
+              chain in it means the list itself is short a binary.
             - Every fetch gets a hard timeout (`curl -m 20`). A host that hangs
               costs the whole window; data/fetch-blocklist.json lists the known
               ones and passcheck.py prints it.
