@@ -4,6 +4,363 @@ Entries moved out of CURATION.md by scripts/archive_logs.py to keep the living
 file small enough to read cheaply. Nothing here is edited or summarised: it is
 the original text, newest first. CURATION.md links back to this file.
 
+## 2026-09-11 (continuation 8) - Prague 27 -> 30: three Praha 8 oaks from the AOPK register
+
+Finished a standing verify claim on Prague left by the previous attempt in
+this window (claimed, never researched). Mined the unmined AOPK register
+rows 5-7km northeast of the centre: prg_028 The Oak Behind the Ranger's
+Lodge, Cimicky haj (Bohnice, girth 381cm, deliberately the living half of a
+once-paired oak whose bigger, more famous neighbour is confirmed dead per
+Czech Wikipedia's own extinct-oaks category), prg_029 The Oak of Pod
+Labutkou Street (Liben, girth 314cm, an ordinary street oak with an
+unusually intact ground-level crown), prg_030 The Oak of Kobylisy
+(Sidliste Dablice, girth 436cm, the largest tree in a housing-estate park
+on the site of a former military range). All three register+cs.wikipedia
+sourced, flagged rather than confirmed on two fully independent sources,
+all free and unrestricted. One new lead added: Cedr atlasky Na Balkane
+(Atlas cedar, Prague's only protected one), inside a tennis club whose
+public-facing offer does not settle whether the tree itself is reachable
+without booking a court.
+
+The write pass had transliterated every Czech place name to plain ASCII
+(Cimicky haj, Pod Labutkou, Strelnicna, Liben, Dablice); restored proper
+diacritics before merging, checked directly against the register's own
+name_cz field (Cimicky haj, Pod Labutkou, Strelnicna, Libe, Dablice) rather
+than from memory. Also fixed two stale tree-count mentions in the city's
+own copy (meta_description and question_meta both still said 27).
+
+**A qa.py failure fixed along the way, unrelated to Prague**: two orphaned
+Lisbon photo files (lis_005's `-500`/`-1000` sized copies, saved under a
+slug with an extra "the-" that matched neither the tree's own photo.url nor
+photo-manifest.json). Confirmed no reference anywhere in data, scripts or
+site/src, deleted them, qa.py clean again.
+
+**A photo viewing pass on Tilburg's one fetchable candidate** (biggest gap
+on `photo_gaps.py --shortlist`) rejected on sight: the matched file was a
+fallen Ginkgo leaf in the grass, not til_018's Flowering Ash. Recorded via
+photo_verdicts.py.
+
+**REVIEW.md's two open WARNs from today's fresh-eyes review turned out
+already fixed**, just not rebuilt: the broken empty `<figcaption>Photo:
+</figcaption>` on reader-app photos with no attribution, and the three
+self-repeating tree-page titles ("The X: X in City"). Read the current
+source for both (PhotoFigure.astro/images.ts, and `[city]/[tree].astro`'s
+`nameEchoesSpecies` guard) and confirmed the fixes are in place and the
+built site is clean; nothing further to do.
+
+**Taormina and Ravenna checked and passed over for new coverage.**
+Taormina's register is a documented dead end (all in-town candidates
+blocked on hotel-grounds access, confirmed again by re-reading its own
+leads file rather than re-researching). Ravenna's four register candidates
+are 17-19km apart with no walkable cluster and only one close to the
+centre, below the six-candidate minimum for a pass. Claimed Rome instead
+(30 trees, the single highest-impression depth-allowed city per the latest
+digest) for a verify pass on its own unmined near-centre register
+candidates; see the next entry for the result.
+
+## 2026-09-11 (continuation) - Milan 23 -> 24 trees; Alicante's register confirmed exhausted; Finch Arboretum park page
+
+Dispatched two parallel verify passes (isolated worktrees) on Alicante and
+Milan, both deepen targets with real Search Console demand and register
+supply that `passcheck.py --brief` reported as substantially unmined.
+
+**Both briefs turned out to be stale.** Alicante's "43 unmined" candidates
+all cross-matched by coordinate to leads already resolved by five prior
+passes (published, held, or blocked); the register there is genuinely
+exhausted, confirmed independently a third time. Milan's "52 unmined"
+candidates likewise all resolved to duplicates, already-blocked entries
+(the children-only Villa Belgiojoso garden), or one already-published
+tree, except for one genuinely open pair. `passcheck.py`'s "unmined" count
+does not currently discount leads a prior pass has already resolved by
+coordinate; both agents caught this themselves rather than trusting the
+brief, cross-checked the full register against `data/leads/` before
+reporting, and left sharper notes behind so a future brief-reader does not
+repeat the check. Worth a fix in `passcheck.py --brief` itself: whoever
+next touches it should have it subtract resolved leads from the "unmined"
+count before printing it, so the number means what it says.
+
+**Milan, 23 -> 24 trees.** mil_024, "I Platani di Villa Litta Modignani":
+two more MASAF-registered planes in the same park as the already-published
+Siamese pair (mil_015) and La Pianta di Affori (mil_009), folded into one
+entry per the register-twins rule (12m apart). Single-sourced and flagged;
+the register puts the larger at 43m, which the story flags honestly as
+possibly the tallest tree on the page rather than asserting it, since a
+differently-dated citation of the same underlying MASAF dataset (an
+it.wikipedia rescrape) gives smaller, disagreeing figures for the same
+park and neither is silently preferred. Wrote the story and its Italian
+overlay translation in-session (Milan ships in Italian; the build refuses
+an incomplete overlay). Fixed two Contract C overruns preflight caught
+(question_meta length, a stale "twenty-three" count in the FAQ paid-entry
+answer). Build, qa.py, i18ncheck.py and preflight.py all clean.
+
+**Alicante, unchanged at 16.** No new trees; the one open lead (a possible
+third fig near the Castillo de Santa Barbara elevator entrance, referenced
+in a single 2026-08-04 news event) had its coordinates sharpened via
+Overpass but still fails the two-source bar. Left as a lead for a future
+pass with photo-comparison tooling.
+
+**New park page**, earned by this session's earlier Spokane write pass
+pushing Finch Arboretum's tree count to 6: `data/parks/john-a-finch-
+arboretum-spokane.json` (Contract H). `pagegaps.py` clean afterward.
+
+Both agent cost lines logged in `data/agent-costs.json`. Both claims
+released.
+
+## 2026-09-11 (continuation) - Spokane deepened to 13; four other claimed READY leads declined after reading them
+
+`leads.py --ready` listed 8 trees across five cities (spokane 4, hallstatt 1,
+lagos-pt 1, genoa 1, prague 1) as needing only a story. Claimed all five, then
+read every underlying lead in `data/leads/` before writing anything, since the
+tool's own docstring warns it is a proxy (any pass leaving prose counts as
+"source evidence", not a guarantee the tree should ship). Four of the five
+turned out not to be ready on inspection; writing them as-is would have shipped
+either a non-tree, a padding risk the previous pass had already flagged, or a
+hard-rule-10 access question three prior attempts had failed to settle.
+
+**Spokane, 9 -> 13 trees**, the only city whose leads genuinely needed only
+prose. All four are Spokane Heritage Tree Register entries, single-sourced and
+flagged per Step 2's rule that one source ships rather than holds a tree back:
+spk_011 The Towering Norwegian (Norway spruce, ~123ft, register's own second-
+tallest-in-the-city claim), spk_012 Powerful Pine (Mexican pinyon, one of the
+state's largest, an odd transplant for the Inland Northwest), spk_013 Chief
+Garry Park Champion (sycamore, a state size candidate, its own story
+distinguishing it from a different variegated sycamore maple HistoryLink names
+in Browne's Addition so the two are never merged), spk_014 The Littleleaf
+Linden (Moore-Turner Heritage Gardens cluster, ~110 years, species left
+genuinely open on the page because the register's own record contradicts
+itself, title says littleleaf, description says American). Fixed a species-
+naming collision before merging (spk_013 had drafted as "Sycamore Maple",
+hard rule 9 wants the one name ~20 other cities already use, "Sycamore") and
+two Contract C overruns (intro, meta_description) plus one how_to_recognise
+overrun (spk_014) that preflight caught. Build, qa.py, superlatives.py and
+preflight.py all clean. Claim released.
+
+**Hallstatt, declined.** The one READY lead, a copper beech (Blutbuche) near
+the Gosau forestry office, is 9km from Hallstatt centre in a different village,
+with no age or girth, and the pass that found it explicitly deferred all three
+Gosau candidates (this beech plus a wych elm and a school linden, all within
+100m of each other) for "a future pass that covers Gosau" as its own cluster.
+It only surfaced as READY because its "not pursued this pass" phrasing sits
+mid-sentence rather than at the start, which is what `leads.py`'s
+NOT_READY_MARKER regex actually matches (worth a look for whoever next touches
+that script; not fixed here). Shipping one third of a deferred three-tree
+cluster alone, under the wrong city, would pre-empt that future pass for no
+gain. Left as a lead.
+
+**Lagos (PT), declined.** The single "READY" entry is not a tree: it is the
+previous pass's own negative-result note ("No further register or named
+candidates found in Lagos town itself"), with `species: "n/a"`. It cleared
+`leads.py`'s readiness check only because the note itself counts as source
+evidence and nothing checks that `species` is a real species. Nothing to
+write; the note already records where a future pass should look next
+(the named parish churches, Ponta da Piedade, a direct approach to Camara
+Municipal de Lagos).
+
+**Genoa, declined.** The one READY lead is a second Cinnamomum glanduliferum
+at Villa Durazzo Pallavicini, and the lead's own text already argues against
+shipping it: the park already holds one Cinnamomum-family tree (gnv_009) and
+a second one of the same genus stands nearby (gnv_004), so a third this close
+together "risks reading as padding rather than a distinct entry unless it's
+visibly a different, separately worthwhile specimen." No new evidence this
+pass that it is. Left as a lead pending a reason to treat it as distinct.
+
+**Prague, declined.** The one READY lead, an oak at the Dejvice sports ground
+(Dub na sportovisti v Dejvicich), has been checked for public access three
+times across three separate passes (2026-09-10 x2, plus the Czech Wikipedia
+read) and every attempt came back the same way: it stands at a fence between
+a kindergarten and a sports ground, no source establishes a public path
+reaches that specific edge, and hard rule 10 says leave it out on a guess.
+Its own `why` field documents this in full and ends "Leave as a lead until a
+street-level photo or map shows a public way actually touching that NE
+fence." Shipping it now would have overridden that finding on no new
+evidence. Left as a lead; needs a street-level photo, not another search.
+
+Claims released for all five cities. Logged spokane's pass in
+`data/agent-costs.json`.
+
+## 2026-09-11 (continuation) - Baltimore and Boise open at 4 trees each
+
+Committing verify+write work an earlier attempt in this window had already staged
+but not merged (city files sat untracked, claims still held). Checked both files
+against the research standard before shipping rather than trusting the claim:
+both clear the four-tree floor, every tree has honest sourcing (two of Baltimore's
+four and one of Boise's four are single-sourced and flagged accordingly, per
+Step 2's rule that a single source ships rather than holds a tree back), and
+location_precision is set honestly (confirmed where a source gives a trunk-level
+fix, approximate everywhere else).
+
+**Baltimore, 4 trees.** The Ruxton Liberty Tree (bal_001), a 350-380 year old
+white oak on private land, viewable from the public road at Dunlora Road and
+Bellona Avenue, its owners paying for 5,000 gallons of weekly watering to keep it
+alive; the Frederick Douglass Elm (bal_002) near Camden Yards, an undated English
+elm carrying an unproven but honestly-labelled local tradition that Douglass
+planted it as an enslaved child; and two Cylburn Arboretum champions, a cockspur
+hawthorn (bal_003, single-sourced, flagged) and a paperbark maple (bal_004,
+two sources). Both arboretum trees carry only park-level coordinates
+(location_precision: approximate) since neither this pass nor the Maryland Big
+Tree Program's JS-rendered database gave an exact spot; a future pass with a
+JS-capable fetch could tighten both. Photos missing on all four, an honest gap.
+
+**Boise, 4 trees.** Three Idaho state/city champions from the University of
+Idaho's Big Tree Program register (largest bur oak, largest Kentucky coffeetree,
+both in Julia Davis Park; largest giant sequoia, moved a quarter mile by flatbed
+in 2017 so St. Luke's Hospital could expand without felling it) plus a horse
+chestnut sapling grafted from the Amsterdam tree Anne Frank watched from the
+annex window, one of only eleven such grafts in the US, now older than the storm-
+felled 2010 parent. None of the three champions carry a documented age (Idaho's
+register measures size, not years, stated honestly on the page rather than
+guessed). Photos missing on all four.
+
+Also ran, since both cities had never been resolved in other languages:
+`scripts/city_names.py` (found local-name variants for both, no action needed
+beyond the alias file update), `scripts/city_queue.py` (re-ranked, rebuilt
+CITY_QUEUE.md and LEDGER.html), `scripts/tree_index.py` (67,610 trees indexed),
+`scripts/superlatives.py` (364 claims, no collisions), full Astro build and
+`scripts/qa.py` (8550 pages, clean). Both claims released. Note: city-list.json's
+rebuild only updates rows already present in the file and does not add new ones,
+so Baltimore and Boise do not yet appear there; harmless since nothing but
+brief.py reads city/status from it and CITY_QUEUE.md (the actual order) carries
+both correctly, but worth a look if a future session is touching that script.
+
+## 2026-09-11 (continuation) - Tallinn deepened to 6: the Tammesalu Oak, Tallinn's thickest tree
+
+Verify pass on Tallinn (5 trees, rank 109, real demand: 36 impressions in the
+10-day window) found the Kadriorg register candidates were mostly already-leaded
+ornamental cultivars on residential streets, but a dendrologist's press ranking
+(Postimees 2017, corroborated by Loodusajakiri 2024 and Kadriorg Park's own site)
+named Tallinn's single thickest tree: an oak in the old Tammesalu grove, already
+substantial when Peter the Great bought the land in 1714, predating both Kadriorg
+Palace and the park built around it. Two measurements eight years apart (637cm
+2016, 648cm 2024) give a consistent, well-sourced girth-based age estimate of
+300-400 years. Shipped as tln_006, `location_precision: approximate` (no source
+gives a trunk-level GPS fix, only "the grove's northeastern part, by Kirdetiik
+pond"). Wrote the story in-session and updated the city's intro, meta description,
+question page and FAQ, all of which hard-coded "five trees" and needed the count
+bumped to six; preflight caught the resulting word-count overruns (intro, story,
+question_context) and a stale "three more" in question_meta, all fixed before
+commit. Three more single-sourced leads (2 candidate oldest-tree oaks, 1
+cemetery-park oak) banked in `data/leads/tallinn.json` for a future pass. Build,
+qa.py and preflight.py all clean. Claim released, logged in
+`data/agent-costs.json`.
+
+## 2026-09-11 (continuation) - Sorrento deepen pass: register confirmed exhausted, 0 trees
+
+Dispatched a verify pass on Sorrento (7 trees live, rank 111, real demand: 27
+impressions/2 clicks in the 10-day window) since the MASAF register still showed
+"31 unmined" candidates in passcheck's brief. Cross-referencing every candidate by
+coordinate and MASAF sheet_id (rather than by name, the method that let these keep
+resurfacing as "unmined") found every close-in row is either already published or
+already blocked under a different name in `data/leads/sorrento.json` (the Antico
+Parco del Principe trio, the Grand Hotel Parco dei Principi grounds, the Via Carlo
+Amalfi cedar, the Villa Thuja eucalyptus), and every distant row belongs to a
+different comune (Vico Equense, Castellammare di Stabia, Agerola, Pompei, Ravello).
+Independently confirms the 2026-09-09 deepen pass's identical finding: this
+register is exhausted at Sorrento's radius. The one open lead, a pine on Via
+Bagnulo with a disputed August 2026 collapse report, stays unresolved after a
+second independent check (a Positanonews AI search summary fabricated a sentence
+not in the actual article; the real 2020 piece raises the risk prior without
+settling which tree fell). Two new wrong-container leads recorded for a future
+Vico Equense page. Claim released, no trees added. Logged in `data/agent-costs.json`.
+
+## 2026-09-11 (continuation) - Two unprocessed submissions (100, 101): a third GPS-only Kyoto lead, a plain worth-it vote
+
+Submission #100 (kind `tree`, `page: app:collect`, same account as 98/99): another
+bare GPS pin near Kyoto Gyoen with no name, species or photo, 914m from the nearest
+published tree (kyo_016/kyo_019, Omiya Gate). Same shape as the two already recorded
+2026-09-10, so recorded the same way: added as a thin lead to `data/leads/kyoto.json`,
+`outcome: open_question` set on the row, and this time a `reply_text` was actually
+composed (the account is answerable and the prior two were left without one), asking
+for a name, species or photo. Submission #101 (kind `feedback`, `why: "worth it"`) on
+Tamba's tmb_001: a plain positive vote, no free-text complaint, nothing to check
+against sources. Set `outcome: holds`, no reply needed, matching the standing pattern
+(Utrecht #63, Amsterdam #40, Sardinia #39, Rome). Both ids added to
+`data/submissions-processed.json`.
+
+## 2026-09-11 (continuation) - Lausanne, Minneapolis, Salamanca, Spokane opened; Monterey deepened to 3
+
+Merged the results of a verify pass an earlier attempt this window left
+uncommitted: Lausanne 8 trees flagged (7 approximate pins, 1 confirmed;
+several with disputed ages between the city's own register and its tourist
+office, printed as disagreements rather than resolved), Salamanca 4 (1 with
+no age at all, stated plainly), Minneapolis 4 (mostly city-park champions
+with thin single-newspaper sourcing, flagged), Spokane 6 (3 old-growth
+Douglas firs resting on one 2019 newspaper feature, flagged; 3 more from the
+city's own Heritage Tree Registry cross-checked against a 2012 HistoryLink
+survey). Wrote the 5 stories the verify pass had left undone via a
+write-stories agent, then wrote each city's page-level content (intro,
+meta_description, the oldest-tree question page, FAQ) from the same verified
+facts and merged all four into `data/cities/`.
+
+Also added mty_002 (Old Veteran of Point Lobos) and mty_003 (Moon Tree of
+Friendly Plaza) to the already-published Monterey, previously trimmed to
+just the Lone Cypress by a prior continuation the same day pending "a 4th
+tree or an independent fame case." Treated this as ordinary city growth
+(Monterey already has a page) rather than a new below-floor decision;
+flagged in LOG.md as a judgement call in case Hidde reads the close call
+differently.
+
+Released the Boise and Baltimore claims: both still sit at 2 verified trees
+with nothing that clearly clears the "would someone travel for this one
+tree" bar (Boise's moved sequoia and Baltimore's Liberty Tree are good local
+stories, not obviously destination-tier), so both stay banked in their
+research files rather than shipping padded or under a stretched exception.
+Lagos-PT (1 tree, unconfirmed public access) stays banked too.
+
+## 2026-09-11 (continuation 4) - 4 stranded verify passes shipped under the single-famous-tree exception: Indianapolis, Sao Paulo, Busan, Monterey
+
+Continuing the same window's earlier finding (6 cities banked below the 4-tree
+floor with finished stories, logged in the prior LOG.md entry). Re-checked
+`passcheck.py --pending` and found 4 more sitting in the same state that the
+prior continuation had not resolved: Indianapolis (1), Sao Paulo (1), Busan
+(2) and Monterey (3), all fully verified and written, none merged because
+none reaches four.
+
+Rather than leave these banked again, applied the 2026-08-31 single-famous-tree
+exception (DECISIONS.md) to each on its own merits, following the precedent of
+Kasukabe/Aguas de Moura/Rumskulla (single trees) and Zilina (a 3-tree page
+shipped whole under the same exception):
+
+- **Indianapolis** (ind_001, the Kile Oak): largest bur oak in the metro,
+  protected by one family's promise since 1928, an international visitor
+  guestbook kept since then. Ships alone.
+- **Sao Paulo** (spa_001, Figueira das Lagrimas): reportedly the oldest
+  documented tree in a city of 12 million, heritage-listed since 1989, real
+  historical weight (soldiers and students said goodbye here). Ships alone.
+- **Busan** (bsn_001/002): both independently designated South Korean Natural
+  Monuments (No. 168 and No. 270), not a hero-plus-filler page; each one
+  clears the fame bar on its own. Fixed a hard-rule-9 collision on the way in
+  (bsn_002's species said "Black Pine / Japanese Black Pine", two names for
+  Pinus thunbergii; corrected to the one already used for Hiroshima and
+  Kagoshima's designated pines).
+- **Monterey**: trimmed from 3 candidates to just mty_001, the Lone Cypress,
+  a registered trademark and (by any account) the most photographed tree on
+  the California coast, comfortably the clearest single-tree case of the
+  four. Held mty_002 (Old Veteran of Point Lobos) and mty_003 (Moon Tree) back
+  in `data/research/monterey-verified.json`, already written, for a future
+  pass to add once the city has a 4th tree or its own independent fame case.
+
+This is a judgement call, flagged as such because it is a close one: the
+exception's worked examples (Angel Oak, Castagno dei Cento Cavalli, Bartram's
+Ginkgo) are solitary trees, and Busan bends that to two independently-famous
+trees at two different sites in the same city rather than one ensemble. The
+Zilina precedent (a hero plus two companions) suggests this is within the
+exception's intended range rather than outside it, but it is Hidde's to
+overrule if he reads it differently.
+
+Left Baltimore (2), Boise (2), Lausanne (3), Minneapolis (3), Salamanca (3),
+Spokane (3) and Lagos-PT (1) banked as before: none of their hero trees read
+as clearly "would somebody travel specifically for this" (Boise's moved
+sequoia and Baltimore's Liberty Tree are good local stories but not
+obviously destination-tier), and Lagos-PT's cork oak additionally has
+unconfirmed public access, which would need resolving before it could ship
+under any rule. A future pass should either find each of these a tree to
+close the floor, or make an explicit fame case the way this entry did.
+
+Regenerated `data/tree-index.json`, ran `preflight.py` (0 problems after
+fixing the Busan species name and a stale Zwolle tree-count/meta_description
+left over from the Zwolle merge in the next entry), `superlatives.py` (no
+collisions), full `astro build` and `qa.py`.
+
 ## 2026-09-10 (continuation 8, photo follow-up)
 
 Ran `photo_hunt.py`'s free API sweep against the 40 oldest photo-less trees; five of the day's new single-tree places (Lecina, Mendaza, Cabeza del Buey, Muxika, Cerro Veronese) turned up candidates. Fetched and looked at all 15 images by eye against the Cadiz standard. **5 approved**, all CC BY-SA with named authors: Lecina (a wide shot with people for scale, matches the platform/wall setting), Mendaza (shows the hollow trunk and buttresses precisely), Cabeza del Buey (the elm grove in leaf with support props visible), Muxika (the low-branching crown structure), Cerro Veronese (crown and trunk in the piazza). 1 held (Lecina's second candidate, a good wide crown shot, kept as backup rather than shipped since one photo per tree ships). 3 rejected: two of Cabeza del Buey's candidates were an interpretive sign and a commemorative plaque, not the tree; one of Muxika's was a leaf close-up.
