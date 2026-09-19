@@ -48,6 +48,7 @@ COUNTRY_MIN_CITIES = 3
 # "Sevilla" but not "villa " with a space, and matching without the space
 # reported a park page gap that could never build: no tree there actually
 # groups under that name in the site's own parkKey()).
+_EXPLICIT = None
 PARKISH = re.compile(
     r"park|parque|garden|garten|jardin|jardim|giardin|parc|parco|tuin|plantsoen|"
     r"villa |orto|botanic|bois|bosque|for[eê]t|floresta|hortus|schlosspark|"
@@ -77,13 +78,34 @@ def park_name_of(tree):
     reason, after the haversine formula had been pasted six times.
     """
     loc = tree.get("location") or {}
+    heads = []
     for field in (loc.get("neighbourhood"), loc.get("address")):
         head = (field or "").split(",")[0]
         head = re.sub(r"\([^)]*\)?", "", head)
         head = re.sub(r"\s+", " ", head).strip(" -/")
-        if len(head) >= 4 and PARKISH.search(head):
+        if len(head) < 4:
+            continue
+        if PARKISH.search(head):
+            return head
+        heads.append(head)
+    # Mirrors explicitParks() in parks.ts: only when no keyword matched, exact.
+    explicit = explicit_parks()
+    for head in heads:
+        if head.lower() in explicit:
             return head
     return None
+
+
+def explicit_parks():
+    """Lowercased names from data/park-names.json, the parks no keyword sees."""
+    global _EXPLICIT
+    if _EXPLICIT is None:
+        try:
+            with open(os.path.join(ROOT, "data", "park-names.json"), encoding="utf-8") as fh:
+                _EXPLICIT = {k.lower() for k in (json.load(fh).get("parks") or {})}
+        except (OSError, ValueError):
+            _EXPLICIT = set()
+    return _EXPLICIT
 
 
 def corpus():
