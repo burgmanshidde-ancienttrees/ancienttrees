@@ -3560,3 +3560,98 @@ the scouting itself. No trees delivered (scouting only). Two hosts returned
 404/unusable content rather than hanging (`data.nola.gov`'s dataset and API
 metadata pages); `gis.nola.gov`'s ArcGIS REST endpoint failed with a TLS
 certificate verification error from this sandbox, not confirmed as a hang.
+
+## The tree-of-the-year contests, scouted 2026-09-19 (Hidde asked, and the answer is "not a database, but the best nomination list in Europe")
+
+His question was whether the tree of the year contest is a database we can
+use. Scouted on his "run scout see if this is worth it".
+
+**Verdict: NOT A REGISTER, and worth doing anyway.** There is no file, no
+API, no coordinate field and no licence block on any of these sites. The
+photographs are contest entries belonging to the people who took them, so
+none of them is a photo source under hard rule 4, and a tree found this way
+still needs its picture hunted from Commons or Wikidata like any other. What
+a contest IS, is a nomination list: somebody stood in front of that tree,
+wrote down why it mattered, and thousands of people then voted for it. That
+is the closest thing to the reader validation ruled on 2026-09-08 that exists
+before this site has readers, and it is the one kind of evidence we cannot
+manufacture.
+
+**We have been living off it without ever saying so.** 104 published trees
+across 93 places already cite a tree-of-the-year award, found one at a time,
+usually as a sentence inside somebody else's article. Two countries are
+mostly this source: 15 of our 27 Slovak trees and 18 of our 66 Czech ones.
+No run has ever read one of these archives as a list.
+
+**The pool is the national contests, not the European final.** The European
+one is 12 to 16 finalists a year since 2011, roughly 200 trees, and we hold a
+good share of the famous ones already. Behind it sit the national contests
+that feed it, 10 to 16 finalists a year, the Czech one running since 2002,
+and most of those finalists have never been written about in English. That is
+the distribution argument in its cleanest form: nobody else writes those
+pages.
+
+**The trap, which cost nothing this time only because it was caught during
+the scout:** several countries run TWO contests under almost the same name
+and only one of them names a tree. Hungary's `Az Ev Faja` (Okotars, since
+2011) names a tree; `az ev fafaja` (Orszagos Erdeszeti Egyesulet, since 1996)
+names a SPECIES. Latvia's `Gada koks` is a species award (pine 2001, juniper
+2002, rowan 2003, ash 2004). Germany's `Baum des Jahres` is a species award.
+A species award points at a taxon, not at a trunk somebody can walk to, and
+is worth nothing here. The verdicts live in `data/toty-contests.json` so the
+question is a lookup rather than a rediscovery.
+
+**The free half needs no fetching at all.** Two European Tree of the Year
+WINNERS are sitting open in our own leads with photographs and coordinates
+already attached, unwritten: the Almond Tree of Pecs (European winner 2019)
+and the Lime of Felsomocsolad (European winner 2012), both in
+`data/leads/_famous-hungary.json`. Estonia's Orissaare oak, which won the
+European title in 2015 on 60,000 votes and grows inside a football pitch, is
+in no file of ours at all, and neither is Romania's lime of Leliceni, the
+first European winner. Romania has no leads file whatsoever and we map four
+of its trees.
+
+**Per-country state, and what is established versus what is guessed:**
+
+| Country | Contest | Kind | Archive | State |
+|---|---|---|---|---|
+| Europe | European Tree of the Year | individual | treeoftheyear.org/previous-years/{year} | url pattern seen, unfetched |
+| Hungary | Az Ev Faja | individual | evfaja.hu/scoreboard/{year} | url pattern seen for 2011, 2014, 2017, unfetched |
+| Bulgaria | Darvo s koren | individual | bepf-bg.org winners-{year} | url pattern seen for 2012, unfetched |
+| Slovenia | Drevo in drevored leta | city (Ljubljana) | ljubljana.si news pages | winners named in search results, no archive page found |
+| Romania | Arborele Anului | individual | not established | exists, 12 finalists a year, partly on Facebook |
+| Estonia | Aasta puu | individual | not established | exists, organiser not identified |
+| Czech Republic | Strom roku | individual | not established | since 2002, never scouted |
+| Slovakia | Strom roka | individual | not established | since 2003, never scouted |
+| Poland | Drzewo Roku | individual | not established | since 2011, never scouted |
+| France | Arbre de l'Annee | individual | not established | regional finalists, never scouted |
+| Latvia | Gada koks | SPECIES | n/a | excluded, do not scout again |
+| Germany | Baum des Jahres | SPECIES | n/a | excluded, do not scout again |
+
+**Licence: UNREAD, deliberately.** This session had no outbound network at
+all: the egress proxy refused `treeoftheyear.org`, `en.wikipedia.org`,
+`www.wikidata.org` and `evfaja.hu` alike, so the scout ran on web search plus
+our own data and not one terms page was opened. No licence verdict is
+recorded here, because a verdict is evidence with a date on it and the Dutch
+register already taught this project what an unchecked NO costs. The night
+runs are NOT under this restriction (the CI runner reaches the open web), so
+the fetching half belongs to them.
+
+**The structured mirror, which is the actual answer to "is it a database".**
+The contests are not, but their results are largely mirrored in Wikidata,
+which models these awards as items (`Tree of the Year (Estonia)` is Q12358134)
+and carries coordinates, species and a Commons image under CC0. That is
+importable where the contest sites are not, and it is the first thing to try
+from a session that has network.
+
+**Next step, in order:** write up the two Hungarian winners already on disk;
+`python3 scripts/toty_scout.py --fetch hungary` and `--fetch bulgaria` from
+anywhere with egress, then read what it saved and write leads by hand;
+establish the Czech, Slovak, Polish and French archive URLs, which is where
+the volume is.
+
+### Cost
+
+One session, web search only, no agent dispatch, no fetches (all refused).
+No trees delivered. Produced `data/toty-contests.json` and
+`scripts/toty_scout.py`.
