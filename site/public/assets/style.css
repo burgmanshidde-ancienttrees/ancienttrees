@@ -687,6 +687,16 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
    second tier of uppercase under the group header. */
 .acct-rows .acct-row > label { display: block; font-family: var(--sans);
   font-size: 15px; color: var(--ink); margin-bottom: 0.35rem; }
+/* YOUR PICTURE, the app's editor row drawn for a page (ProfileEditor.swift's
+   64 point circle beside its picker button). The circle is the same
+   .profile-avatar the profile head uses, so one person wears one face across
+   the website. */
+.acct-pic-row { display: flex; align-items: center; gap: 0.9rem; margin: 0.2rem 0 0; }
+.acct-pic { width: 64px; height: 64px; font-size: 1.5rem; }
+.acct-pic-row .go-btn { background: var(--cream-dark); color: var(--ink);
+  border: 1.5px solid var(--cream-dark); font-size: 14px; border-radius: 999px;
+  min-height: 44px; white-space: nowrap; }
+.acct-pic-row .go-btn:hover { background: #e0ded5; border-color: #e0ded5; }
 /* The email, said plainly and at reading size. It used to be a sentence of
    fine print explaining what an address is for; the app simply prints it
    (Screens/Profile.swift's identity row). */
