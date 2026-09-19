@@ -1,0 +1,397 @@
+[
+  {
+    "id": "hir_018",
+    "name": "The Tabu Tree of Ato Myojin Shrine",
+    "species": "Machilus Tree (Machilus thunbergii)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 373,
+    "height_m": null,
+    "location": {
+      "address": "Ato Myojin Shrine, Numata-cho Ato, Asaminami-ku, Hiroshima (near 914 Ato, Numata-cho)",
+      "latitude": 34.4955412,
+      "longitude": 132.3699094,
+      "neighbourhood": "Numata-cho Ato, Asaminami-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69346&branch_number=1",
+      "https://www.hiroshima-navi.or.jp/post/006006.html",
+      "https://www.mogurin.or.jp/maibun/bunkazai/atomyoujin.htm"
+    ],
+    "access": "Free. The shrine grove is a city-designated natural monument on ordinary shrine grounds, open in the way shrine precincts generally are.",
+    "transport": "Rural Asaminami-ku; reachable by bus toward Numata-cho Ato, about a 2 minute walk from the Kamihara stop per local sources. No detailed transit timetable confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69346, surveyed 2000): girth 373cm, health good, owner category shrine/temple (社寺), facility 阿刀明神社 (Ato Myojin Shrine), Numata-cho Oaza Ato Aza Tonoyama, Asaminami-ku. Second, independent source: the shrine's grove (社叢) was designated a Hiroshima City natural monument on 1974-02-18 (per hiroshima-navi.or.jp and mogurin.or.jp, the city's own cultural-property record), which separately names a tabu tree (タブノキ) at 3.62m girth as 'the representative large tree of the area' (though the tabu itself is not formally part of the 1974 designation), alongside a sugi/cedar at 3.41m (see hir_019) and a koyamaki/umbrella pine at 2.57m and 2.20m (not in the ministry register, not published here). The two figures for the tabu (3.62m in 1974 vs 3.73m in the 2000 ministry survey) are consistent with modest growth over 26 years and are treated as the same tree. Shrine founding is traditionally dated to 852 AD (per omairi.club and hiroshima-navi), reorganised in 1837 when the old Ato Myojin merged with a Hachiman shrine; various trees (cedar, hinoki, ginkgo) are said to have been planted around that reorganisation, but no source ties this specific tabu to a planting date, so no age is claimed (avoiding a bridge claim). No evidence found of felling, damage or death; a separate old blog post title referencing 'a giant cedar that used to be there' at this shrine could not be fetched (403), so it is flagged rather than ignored, see hir_019 notes. Location: town-level geocode only (the shrine's own coordinates could not be resolved via Nominatim or Overpass); the shrine's street address is reported elsewhere as Numata-cho Ato 914, Asaminami-ku. Two independent sources satisfied for existence and species; age genuinely undocumented, page should ask the reader for a precise measurement/date if they have one."
+  },
+  {
+    "id": "hir_019",
+    "name": "The Cedar of Ato Myojin Shrine",
+    "species": "Japanese Cedar (Cryptomeria japonica)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 410,
+    "height_m": null,
+    "location": {
+      "address": "Ato Myojin Shrine, Numata-cho Ato, Asaminami-ku, Hiroshima (near 914 Ato, Numata-cho)",
+      "latitude": 34.4955412,
+      "longitude": 132.3699094,
+      "neighbourhood": "Numata-cho Ato, Asaminami-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69347&branch_number=1",
+      "https://www.hiroshima-navi.or.jp/post/006006.html",
+      "https://www.mogurin.or.jp/maibun/bunkazai/atomyoujin.htm"
+    ],
+    "access": "Free. Same city-designated natural monument grove as hir_018 (the Tabu Tree of Ato Myojin Shrine), on ordinary shrine grounds.",
+    "transport": "Rural Asaminami-ku; reachable by bus toward Numata-cho Ato, about a 2 minute walk from the Kamihara stop per local sources.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69347, surveyed 2000): girth 410cm, health good, same shrine and grove as hir_018. Second source: the shrine grove's 1974 city natural-monument designation names a sugi/cedar at 3.41m girth (hiroshima-navi.or.jp, mogurin.or.jp); the growth from 3.41m (1974) to 4.10m (2000 ministry survey) is a plausible 26-year increase for a large cedar and is treated as the same individual, though this is an inference rather than a stated identity. A blog post titled '...and the story of a giant cedar that used to be there' (gikou2.seesaa.net/article/490310343.html) exists about this exact shrine grove and could not be fetched (403 Forbidden on two attempts); it may describe a DIFFERENT, now-dead cedar rather than this one, since the surviving cedar is independently documented in the 1974 and 2000 records above, but this should be checked by a future pass before treating the surviving cedar's continued presence as fully settled. Grove founding traditionally 852 AD, reorganised 1837; no source dates this specific cedar's planting, so no age is claimed. Location is town-level (shrine's own coordinates not resolved); reported street address elsewhere is Numata-cho Ato 914, Asaminami-ku."
+  },
+  {
+    "id": "hir_020",
+    "name": "The Cedar of Matsukasa Kannon's Inner Sanctuary",
+    "species": "Japanese Cedar (Cryptomeria japonica)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 480,
+    "height_m": null,
+    "location": {
+      "address": "Matsukasa Kannon-ji Oku-no-in (inner sanctuary), Mount Matsukasa (374m), Kuchita-minami-cho, Asakita-ku, Hiroshima",
+      "latitude": 34.4334988,
+      "longitude": 132.4902632,
+      "neighbourhood": "Kuchita-minami-cho, Asakita-ku (Mount Matsukasa)"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69363&branch_number=1",
+      "http://www.arukurumen.com/01_otera_kobetsu_matukasakannonji-hrsm.html",
+      "https://matsukasakanonji.jimdofree.com/"
+    ],
+    "access": "Free, but a genuine hike: the temple's inner sanctuary sits on the summit area of Mount Matsukasa (374.3m), reached by a marked hiking trail from JR Tosaka Station (climbed and photographed as recently as 2019 per a hiking blog, though a 2018 landslide closed part of the original route and a detour is in use).",
+    "transport": "JR Tosaka Station, then a hiking trail up Mount Matsukasa; no public transport reaches the temple itself.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69363, surveyed 2000): girth 480cm, health good, owner category shrine/temple, facility 松笠観音 (Matsukasa Kannon), Koyo-cho Oda-Iwatsubo, Asakita-ku. Cross-checked: the temple has two parts, a main hall (Honin) in Tosaka Yamane, Higashi-ku, and an inner sanctuary (Oku-no-in) on Mount Matsukasa itself in Kuchita-minami-cho, Asakita-ku (confirmed via a 2019 hiking blog, arukurumen.com, and the temple's own Jimdo site, matsukasakanonji.jimdofree.com, Shingon sect, founded 1530); the register's town name (Koyo-cho Oda-Iwatsubo) and the confirmed Oku-no-in site (Kuchita-minami-cho) are both Asakita-ku localities close to the same mountain, so this is treated as the same site, but the exact match between the register's address text and the confirmed hiking-trail location is not textually perfect and a future pass should double check no separate 松笠観音 exists nearby. The hiking blog confirms the site is open, actively visited (2019, with a 2018 landslide detour still passable) and describes the temple buildings (Mizuko Kannon, Kobo Daishi's well, Shaka-do) but the excerpt fetched did not itself describe this specific cedar; no second source names the tree directly, so this is register-plus-site-corroboration rather than a tree-specific second source, and is flagged accordingly. A second registered tree at the same site, an Abemaki oak (Quercus variabilis) at 310cm girth, report_id 69364, is left as a lead (see leads file) rather than published separately, as a companion specimen at the same small mountaintop site. No evidence of felling or death found for either tree. Location is site-level only (OSM tags a 松笠観音寺 place-of-worship node here, but not tree-level), never confirmed."
+  },
+  {
+    "id": "hir_021",
+    "name": "The Muku Tree of Kirihata Shrine",
+    "species": "Muku Tree (Aphananthe aspera)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 300,
+    "height_m": null,
+    "location": {
+      "address": "Kirihata Shrine, Nakano-higashi 7-chome, Aki-ku, Hiroshima",
+      "latitude": 34.412333,
+      "longitude": 132.586333,
+      "neighbourhood": "Nakano-higashi, Aki-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69374&branch_number=1",
+      "http://www.hitozato-kyoboku.com/kirihatajinja-keyaki.htm"
+    ],
+    "access": "Free. Shrine grounds on a hillside about 100m east of Route 2, between JR Seno and Nakano-higashi stations; hitozato-kyoboku.com's own visit (2017) describes ordinary shrine access.",
+    "transport": "Between JR Sanyo Main Line's Seno and Nakano-higashi stations; roughly a 10 to 15 minute walk from either.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69374, surveyed 2000): species Muku (Aphananthe aspera), girth 300cm, health not recorded ('--'), owner category shrine/temple, facility 切幡神社 (Kirihata Shrine), Nakano-higashi 7-chome, Aki-ku. Second source found for the SHRINE but not this specific tree: hitozato-kyoboku.com's giant-tree catalogue documents a DIFFERENT tree at the same shrine, a great zelkova (大ケヤキ), 5.6m girth and 28m tall, designated together with the shii-forest grove behind the shrine as a Hiroshima City Natural Monument on 1974-02-18 under the name 'Kirihata Shrine's Great Zelkova and Shii Forest', with precise coordinates (34.41233N 132.58633E, converted from the page's degree-minute-second figures) matching the register's address exactly (Nakano-higashi 7-chome). This firmly confirms the shrine's existence, public designation and location, but the zelkova is a different, larger, separately-registered tree (not part of this pass's 24 target report_ids; NOTE FOR A FUTURE PASS: this zelkova appears to be an uncaptured lead worth adding, official measurements 5.6m girth / 28m height / natural monument since 1974, coordinates above). No independent source specifically describes the muku. No evidence of felling or death for the muku. Coordinates used are the shrine's own surveyed location (from the zelkova's natural-monument record), so site-level, not tree-level for the muku itself."
+  },
+  {
+    "id": "hir_022",
+    "name": "The Cedar of Omori Hachiman Shrine",
+    "species": "Japanese Cedar (Cryptomeria japonica)",
+    "age_estimate": "over 300 years",
+    "age_min": 300,
+    "age_max": 400,
+    "girth_cm": 580,
+    "height_m": null,
+    "location": {
+      "address": "Omori Hachiman Shrine, near Fushidani-ko 1498, Yuki-cho, Saeki-ku, Hiroshima (near the Omori bus stop)",
+      "latitude": 34.4588770,
+      "longitude": 132.2874560,
+      "neighbourhood": "Yuki-cho Fushidani, Saeki-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53307&branch_number=1",
+      "https://omairi.club/spots/100316",
+      "https://yaokami.jp/1340263/"
+    ],
+    "access": "Free, ordinary shrine grounds. Per omairi.club, about a 2 minute walk from the Omori bus stop.",
+    "transport": "Bus to the Omori stop (湯来町), then about a 2 minute walk. Roughly 50 minutes from central Hiroshima by car/bus per general Yuki-cho travel times.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 53307, surveyed 1988): girth 580cm, age band 300+ years, health good, owner category shrine/temple, town 湯来町大森 (Yuki-cho Omori), Saeki-ku, no facility name given in the register itself. Second, independent source: omairi.club and yaokami.jp (shrine directory sites) both document Omori Hachiman Shrine (大森八幡神社) at 湯来町伏谷甲1498 (Fushidani-ko), Saeki-ku, 2 minutes from the Omori bus stop, per the old Saeki-gun gazetteer founded in the Yomei-era legend from Usa Hachimangu; 'Omori' is the local/bus-stop name for the Fushidani address, which matches the register's town field closely enough (a bus-stop-level place name versus the formal Oaza) to be treated as the same shrine, though this identification is inferential rather than a direct textual match and should be rechecked. No source specifically names this cedar, but the register's own 300+ year age band is repeated as 'over 300 years' since it comes from the register itself (one source) rather than being derived by us. No evidence of felling or death found. A second tree from the same register facility, a 330cm Kashiwa (see hir_023), stands at the same shrine. Location is town-level (Fushidani Oaza centroid), not the shrine's own coordinates."
+  },
+  {
+    "id": "hir_023",
+    "name": "The Daimyo Oak of Omori Hachiman Shrine",
+    "species": "Daimyo Oak (Quercus dentata)",
+    "age_estimate": "over 300 years",
+    "age_min": 300,
+    "age_max": 400,
+    "girth_cm": 330,
+    "height_m": null,
+    "location": {
+      "address": "Omori Hachiman Shrine, near Fushidani-ko 1498, Yuki-cho, Saeki-ku, Hiroshima (near the Omori bus stop)",
+      "latitude": 34.4588770,
+      "longitude": 132.2874560,
+      "neighbourhood": "Yuki-cho Fushidani, Saeki-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53308&branch_number=1",
+      "https://omairi.club/spots/100316",
+      "https://yaokami.jp/1340263/"
+    ],
+    "access": "Free, ordinary shrine grounds, same site as hir_022 (the Cedar of Omori Hachiman Shrine).",
+    "transport": "Bus to the Omori stop (湯来町), then about a 2 minute walk.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 53308, surveyed 1988): species Kashiwa (Quercus dentata, Daimyo Oak), girth 330cm, age band 300+ years, health good, same town (湯来町大森) and same inferred shrine (Omori Hachiman) as hir_022; see hir_022 for the shrine identification and its caveat. A Kashiwa of this girth is a genuinely large specimen of a species that rarely reaches such size, which is itself worth noting for the writer. No source specifically names this individual tree beyond the register; no evidence of felling or death found. Location is town-level, not tree-specific."
+  },
+  {
+    "id": "hir_024",
+    "name": "The Cypress of Yunoyama Myojin Shrine",
+    "species": "Hinoki Cypress (Chamaecyparis obtusa)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 340,
+    "height_m": null,
+    "location": {
+      "address": "Yunoyama Myojin Shrine, next to Yunoyama Onsen-kan, Yuki-cho Oaza Wada, Saeki-ku, Hiroshima",
+      "latitude": 34.4969677,
+      "longitude": 132.2831224,
+      "neighbourhood": "Yuki-cho Yunoyama, Saeki-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53309&branch_number=1"
+    ],
+    "access": "Free. General web sources describe a torii for Yunoyama Myojin Shrine standing beside the Yunoyama Onsen-kan bathhouse, on ordinary, publicly reachable ground next to a working hot-spring facility.",
+    "transport": "By car, roughly 50 minutes from central Hiroshima via Route 433 to Yuki-cho; the shrine sits beside the Yunoyama Onsen-kan.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 53309, surveyed 1988): girth 340cm, health good, owner category shrine/temple, town 湯来町湯ノ山 (Yuki-cho Yunoyama), Saeki-ku, no facility name given in the register. A general web search confirms a 'Yunoyama Myojin' shrine torii stands beside the Yunoyama Onsen-kan bath house in this area (per a general search summary; a specific hiroshima-bunka.jp page nominally about 'Yunoyama Myojin old hot-spring resort' could not be usefully fetched, garbled encoding on two attempts), which is treated as locating the register's unnamed facility but is NOT an independent tree-specific source, so this remains single-sourced from the register and is flagged accordingly. No evidence of felling or death found. Location used is the Onsen-kan building itself (geocoded), not the shrine's own coordinates, so genuinely approximate; a future pass should try to pin the shrine torii itself."
+  },
+  {
+    "id": "hir_025",
+    "name": "The Hackberry of Ato Kojin Shrine",
+    "species": "Chinese Hackberry (Celtis sinensis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 380,
+    "height_m": null,
+    "location": {
+      "address": "Ato Kojin Shrine, Kunikusa, Ato-cho, Aki-ku, Hiroshima",
+      "latitude": 34.3732493,
+      "longitude": 132.6240374,
+      "neighbourhood": "Ato-cho Kunikusa, Aki-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69379&branch_number=1"
+    ],
+    "access": "Free. Owner category in the register is shrine/temple (社寺); no evidence found that this small rural shrine is anything other than ordinary open shrine ground, consistent with the shrine/temple convention for this project.",
+    "transport": "Rural Aki-ku, Ato-cho; no public transport details confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69379, surveyed 2000): species Enoki/Chinese Hackberry, girth 380cm, health good, owner category shrine/temple, facility 阿戸荒神社 (Ato Kojin Shrine), Ato-cho Kunikusa, Aki-ku. Two web searches for a second source ('阿戸荒神社' plus town name) returned nothing about this specific shrine; it is register-only. Delivered per this pass's instruction that a register-only tree is fine to publish flagged rather than withheld, since the owner category is explicitly shrine/temple (not private) and no doubt was found about it being alive or accessible. Location is address-level (Nominatim resolved a nearby road/area, not the shrine itself, from an earlier pass's geocoding), never the shrine's own coordinates."
+  },
+  {
+    "id": "hir_026",
+    "name": "The Zelkova of Masukoshi Shrine",
+    "species": "Zelkova (Zelkova serrata)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 329,
+    "height_m": null,
+    "location": {
+      "address": "Masukoshi Shrine, Ato-cho Masukoshi, Aki-ku, Hiroshima",
+      "latitude": 34.4013016,
+      "longitude": 132.6112331,
+      "neighbourhood": "Ato-cho Masukoshi, Aki-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69378&branch_number=1"
+    ],
+    "access": "Free. Owner category in the register is shrine/temple (社寺); treated as ordinary open shrine ground.",
+    "transport": "Rural Aki-ku, Ato-cho; no public transport details confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69378, surveyed 2000): species Keyaki/Zelkova, girth 329cm, health 'partly withered' (一部枯損, meaning some dieback but alive), owner category shrine/temple, facility 升越神社 (Masukoshi Shrine), Ato-cho Masukoshi, Aki-ku. Two web searches found only general Ato-cho tourism pages, nothing naming this shrine specifically; register-only, delivered flagged per this pass's brief. The 'partly withered' health note is carried into the record honestly rather than smoothed over; it means the tree shows some dieback but was recorded alive and standing at the 2000 survey. Location is address-level (a prior pass's Nominatim geocode named the shrine in its display_name string but flagged the match as address- rather than site-level)."
+  },
+  {
+    "id": "hir_027",
+    "name": "The Muku Tree of Furosaki Shrine",
+    "species": "Muku Tree (Aphananthe aspera)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 339,
+    "height_m": null,
+    "location": {
+      "address": "Furosaki Shrine, Katsugi Nakagouchi, Kabe-cho, Asakita-ku, Hiroshima",
+      "latitude": 34.5224552,
+      "longitude": 132.4485569,
+      "neighbourhood": "Kabe-cho Katsugi Nakagouchi, Asakita-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69357&branch_number=1"
+    ],
+    "access": "Free. Owner category in the register is shrine/temple (社寺); a public bus stop is named directly for this shrine (see notes), which is itself evidence of public awareness of the site.",
+    "transport": "Hiroden bus stop 'Furosaki Jinja-mae' (風呂崎神社前), directly outside the shrine.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69357, surveyed 2000): species Muku/Aphananthe aspera, girth 339cm, health not recorded ('--'), owner category shrine/temple, facility 風呂崎神社 (Furosaki Shrine), Kabe-cho Katsugi Nakagouchi, Asakita-ku. No source describing the tree itself was found in two searches, but OpenStreetMap/Overpass carries a public bus stop named 'Furosaki Jinja-mae' (in front of Furosaki Shrine) operated by Hiroshima Kotsu at this exact coordinate, which independently confirms the shrine's real-world existence and public visibility (used here as the tree's approximate location, since the bus stop sits right outside it) though it is not a source for the tree itself. Register-only for the tree; delivered flagged per this pass's brief."
+  },
+  {
+    "id": "hir_028",
+    "name": "The Ginkgo of Tamanawa Shrine",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 327,
+    "height_m": null,
+    "location": {
+      "address": "Tamanawa Shrine, Kabe-cho Katsugi, Asakita-ku, Hiroshima",
+      "latitude": 34.5350178,
+      "longitude": 132.46927,
+      "neighbourhood": "Kabe-cho Katsugi, Asakita-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69358&branch_number=1"
+    ],
+    "access": "Free. Owner category in the register is shrine/temple (社寺); treated as ordinary open shrine ground.",
+    "transport": "Kabe-cho Katsugi, Asakita-ku; near Kameyama-nishi. No detailed transit confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69358, surveyed 2000): species Ginkgo, girth 327cm, health good, owner category shrine/temple, facility 玉縄神社 (Tamanawa Shrine), Kabe-cho Katsugi, Asakita-ku. Two web searches found nothing specifically about this shrine beyond generic Kabe-area tourism listings; register-only, delivered flagged. A prior pass's Nominatim geocode named the shrine itself in its result (site-level), which is used here. No evidence of felling or death found."
+  },
+  {
+    "id": "hir_029",
+    "name": "The Kaya Tree of Shiraki Kojin Shrine",
+    "species": "Japanese Torreya (Torreya nucifera)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 324,
+    "height_m": null,
+    "location": {
+      "address": "Shiraki Kojin Shrine, Shiraki-cho Odera, Asakita-ku, Hiroshima",
+      "latitude": 34.5717382,
+      "longitude": 132.6651981,
+      "neighbourhood": "Shiraki-cho Odera, Asakita-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69365&branch_number=1"
+    ],
+    "access": "Free. Owner category in the register is shrine/temple (社寺); treated as ordinary open shrine ground. The Shiraki area is a known hiking/tourism district (Mount Shiraki) per the city's own Shiraki-cho sightseeing map.",
+    "transport": "Shiraki-cho, Asakita-ku, a rural district near Mount Shiraki. No detailed transit confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69365, surveyed 2000): species Kaya/Japanese Torreya, girth 324cm, health 'partly withered' (一部枯損, some dieback but alive at survey), owner category shrine/temple, facility 白木荒神社 (Shiraki Kojin Shrine), Shiraki-cho Odera, Asakita-ku. Two searches found only general Shiraki-cho municipal tourism pages (the city's own Shiraki sightseeing map), nothing naming this shrine specifically; register-only, delivered flagged. Location is address-level (a prior pass's Nominatim geocode resolved a nearby road/area, not the shrine itself)."
+  },
+  {
+    "id": "hir_030",
+    "name": "The Machilus Tree of Tsutsuse Hachiman Shrine",
+    "species": "Machilus Tree (Machilus thunbergii)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 310,
+    "height_m": null,
+    "location": {
+      "address": "Tsutsuse Hachiman Shrine, Asa-cho Tsutsuse, Asakita-ku, Hiroshima",
+      "latitude": 34.494123,
+      "longitude": 132.467587,
+      "neighbourhood": "Asa-cho Tsutsuse, Asakita-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69370&branch_number=1"
+    ],
+    "access": "Free. Owner category in the register is shrine/temple (社寺); treated as ordinary open shrine ground.",
+    "transport": "Asa-cho Tsutsuse, Asakita-ku. No detailed transit confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69370, surveyed 2000): species Tabu/Machilus thunbergii, girth 310cm, health good, owner category shrine/temple, facility 筒瀬八幡神社 (Tsutsuse Hachiman Shrine), Asa-cho Tsutsuse, Asakita-ku. Two web searches (including an exact-phrase search) returned nothing about this shrine; register-only, delivered flagged. Location is address-level (a prior pass's Nominatim geocode resolved the general Oaza area, not the shrine itself)."
+  },
+  {
+    "id": "hir_031",
+    "name": "The Machilus Tree of Ono Hachiman Shrine",
+    "species": "Machilus Tree (Machilus thunbergii)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 460,
+    "height_m": null,
+    "location": {
+      "address": "Ono Hachiman Shrine, Kabe-cho Katsugi, Asakita-ku, Hiroshima",
+      "latitude": 34.5333640,
+      "longitude": 132.4654510,
+      "neighbourhood": "Kabe-cho Katsugi, Asakita-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69354&branch_number=1"
+    ],
+    "access": "Free. Owner category in the register is shrine/temple (社寺); treated as ordinary open shrine ground.",
+    "transport": "Kabe-cho Katsugi, Asakita-ku. No detailed transit confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69354, surveyed 2000): species Tabu/Machilus thunbergii, girth 460cm, health not recorded ('--'), owner category shrine/temple, facility 大野八幡神社 (Ono Hachiman Shrine), Kabe-cho Katsugi, Asakita-ku. This is the largest of three trees the register lists at the same shrine (see also 69355, a 380cm black pine, and 69356, a 307cm ginkgo, both left as leads/companions rather than published separately). No web source naming this shrine was found in two attempts; a prior pass's geocode had wrongly resolved to a nearby park (Katsugidai Park) rather than the shrine, so this entry uses the town (Oaza Katsugi) centroid instead, which is a coarser but more honest approximate fix. Register-only for the tree itself; delivered flagged per this pass's brief."
+  },
+  {
+    "id": "hir_032",
+    "name": "The Zelkova of Miyano Hachiman Shrine",
+    "species": "Zelkova (Zelkova serrata)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 457,
+    "height_m": null,
+    "location": {
+      "address": "Miyano Hachiman Shrine, Asa-cho Miyano, Asakita-ku, Hiroshima",
+      "latitude": 34.5195680,
+      "longitude": 132.4660014,
+      "neighbourhood": "Asa-cho Miyano, Asakita-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69369&branch_number=1"
+    ],
+    "access": "Free. Owner category in the register is shrine/temple (社寺); treated as ordinary open shrine ground.",
+    "transport": "Asa-cho Miyano, Asakita-ku, near the Miyano community hall. No detailed transit confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69369, surveyed 2000): species Keyaki/Zelkova, girth 457cm, health 'partly withered' (一部枯損, some dieback but alive at survey), owner category shrine/temple, facility 宮野八幡神社 (Miyano Hachiman Shrine), Asa-cho Miyano, Asakita-ku. This is the larger of two trees the register lists at the same shrine (see also 69368, a 440cm hackberry/Enoki, left as a lead/companion). Two web searches found nothing about this shrine beyond postal-code listings; a nearby community hall (宮野集会所) geocoded via Nominatim is used as the approximate location. Register-only for the tree itself; delivered flagged per this pass's brief."
+  },
+  {
+    "id": "hir_033",
+    "name": "The Machilus Tree of Nokanmuri Shrine",
+    "species": "Machilus Tree (Machilus thunbergii)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 528,
+    "height_m": null,
+    "location": {
+      "address": "Nokanmuri Shrine, Asa-cho Nokanmuri (Kuji area), Asakita-ku, Hiroshima",
+      "latitude": 34.5233020,
+      "longitude": 132.4081180,
+      "neighbourhood": "Asa-cho Nokanmuri, Asakita-ku"
+    },
+    "verified_sources": [
+      "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69371&branch_number=1"
+    ],
+    "access": "Free. Owner category in the register is shrine/temple (社寺); treated as ordinary open shrine ground.",
+    "transport": "Asa-cho Nokanmuri, Asakita-ku, a rural hamlet near Kuji. No detailed transit confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Environment Ministry giant-tree survey (report_id 69371, surveyed 2000): species Tabu/Machilus thunbergii, girth 528cm, health good, owner category shrine/temple, facility 野冠神社 (Nokanmuri Shrine), Asa-cho Nokanmuri, Asakita-ku. At 528cm this is one of the largest girths in this whole batch. A second, smaller Tabu at the same shrine (69372, 331cm) is left as a lead/companion rather than published separately. Two web searches found nothing about this shrine by name; Nokanmuri appears to be a small hamlet within the broader Oaza Kuji area, so the Kuji Oaza centroid is used as a coarse approximate location pending a better fix. No evidence of felling or death found. Register-only for the tree itself; delivered flagged per this pass's brief."
+  }
+]
