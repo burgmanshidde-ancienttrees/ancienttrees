@@ -1,6 +1,123 @@
 # LOG
 
 <!-- archive-index -->
+
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-09](archive/LOG-2026-09.md)
+- [2026-08](archive/LOG-2026-08.md)
+- [2026-07](archive/LOG-2026-07.md)
+
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+<!-- archive-index -->
+## 2026-09-19 (session) - One turn in eleven was a refused command, and the record had been naming the wrong word for a month
+
+Hidde asked whether runs are getting slower and whether the corpus is the
+cause. Measured across all 293 runs in `data/run-health.json`, he is right that
+they are slower: seconds per turn went 7.2 to 11.0 since mid-August, and minutes
+per shipped commit doubled, 2.4 to 4.8. Tokens per tree did not rise, so this is
+wall clock rather than thinking.
+
+The corpus is the third cause, not the first. The first is this:
+
+**1,394 of 14,692 turns in seven days were commands the allowlist refused**, one
+in eleven, each costing the turn plus a retry. It was zero in mid-August and has
+grown every week since. Nothing added it up: run-health recorded a count per run,
+the digest never read it, and a run cannot see its own refusals.
+
+The reason two earlier widenings bought nothing is that `_denial_label` recorded
+the FIRST WORD of a refused command, and the allowlist matches the WHOLE command
+string. So `python3 x.py && git commit` is refused although both binaries are
+allowed, and got logged as `Bash(python3)`. That label was top of the board in
+39 of the last 39 runs while `Bash(python3:*)` sat on the allowlist the whole
+time. The record was pointing at the one word that was never the problem, and
+the August note "guessing which binaries to add has now been tried once and did
+not work" was the sound of exactly that.
+
+Four things shipped, no allowlist entries among them:
+
+- `command_shape()` in run_health.py records the whole shape, argument-free as
+  before: `python3 && git`, `python3 | head`, `subshell cd && npm`. 18 unit
+  tests in `scripts/test_run_health.py`, half of them asserting that a path, a
+  URL or an environment value cannot survive into a file this public.
+- `run_health.py --denials` names the wall, worst first, with the rate.
+- The nightly prompt now says ONE COMMAND PER BASH CALL, with the alternative
+  (do loops and pipelines in Python, which is allowed and is what this project
+  uses anyway). The prompt is the fix that has ever worked here: changing
+  `(cd site && ...)` to `npm --prefix site` is what brought the runs back in
+  August.
+- The tenth ratchet check, `check_run_prompt_forbids_compound_commands` in
+  qa.py, refuses a prompt that drops the rule. Verified to fail when it does.
+
+Worth knowing before anyone widens the list: `env` and `printenv` are refused
+CORRECTLY, because they read this job's secrets, and `bash` is excluded on
+purpose. `pdftotext` refusals are a knowledge gap rather than a list gap, since
+`scripts/pdf_text.py` already exists and is allowed.
+
+What this does not fix, in order of size. The site build is 22 to 28 minutes in
+CI and does not finish locally at all (~70 pages a minute against 12,000 pages),
+so a run can no longer verify its own work before pushing; that is most of why
+minutes per commit doubled. And CLAUDE.md is 231 KB, about 64,000 tokens, in the
+context of all ~400 turns of every run. Splitting it by reader (the research
+workflow is 126 KB of it and is all a night run needs; the mandate and QA
+sections are 74 KB and are for sessions) would roughly halve what a run carries
+per turn and delete nothing. Both are Hidde's call on sequencing.
+
+## 2026-09-19 (continuation) - Finished a stalled write claim (Hiroshima +16, Melbourne +4), then found and closed the leaked-id backlog, plus one real Pamplona photo
+
+An earlier attempt in this window stopped after 31 minutes having shipped
+nothing, with hiroshima and melbourne write claims already standing and
+fully-written work sitting uncommitted. Verified it (build, QA, preflight
+all clean), fixed two small issues in it, and shipped it rather than
+redoing the research: **Hiroshima gains 16 giant-tree register veterans
+(hir_018-033) and Melbourne 4 Yarra significant-tree entries (mel_013-016)**,
+all with honest gaps on undocumented ages.
+
+**Caught my own regression before it shipped separately.** Two of the new
+Hiroshima trees and all four new Melbourne trees named a sibling tree by
+its raw database id ("same site as hir_022") instead of its name, in the
+`access` field. Fixed those two cities immediately, which led to checking
+whether this was a wider problem.
+
+**It was: 118 instances across 36 cities, the same bug CURATION.md
+documented on 2026-09-18 and deliberately did not turn into a build check
+yet** ("the check belongs in the same change that empties the backlog").
+Wrote the detection script, fixed the 52 safe mechanical cases myself, then
+split the remaining 66 across three parallel agents by city (each doing
+real sentence-by-sentence rewrites, not blind substitution, since a crude
+first attempt at automating this produced garbage like "the Julia Davis
+Park Bur Oak, the Julia Davis Park Bur Oak"). All three finished clean:
+zero leaked ids left anywhere, preflight and the full site build both
+green. `check_no_leaked_tree_ids()` is now a FAIL in preflight.py rather
+than a NOTE, since the precondition for turning it on (empty backlog) is
+now met.
+
+**Also chased down whether a "sourced growth rate" for Populus nigra and
+Platanus x acerifolia (flagged 2026-09-18 as unblocking 24 trees) actually
+exists.** Checked the real Forestry Commission source (White 1998, FCIN12)
+behind `scripts/ages.py`'s method rather than assuming: poplar has NO entry
+in it at all (pioneer species are explicitly excluded from the three-phase
+model, for the same structural reason as yew), and plane's entry needs
+White's full two-phase calculation rather than the existing linear formula,
+or it would systematically under-age old planes. Recorded in CURATION.md
+with the actual table data, so nobody re-finds this PDF or force-fits a
+number that isn't there.
+
+**One real photograph, from Pamplona, our best-placed page and thinnest
+(CLAUDE.md rung 2's demand rule): position 3.6 on 412 impressions, 0 of 14
+trees photographed.** `photo_last_resort.py --radius 120` found a handful
+of candidates for three of its trees; a photo-judge pass on those (plus
+parallel passes on Barcelona and Lisbon's own STARVED queues) came back
+with one approval, pam_004's Kisulabe Oak, a genuinely striking pollard
+found in the tree's own Commons category rather than the sweep's Wikidata
+list. Barcelona (41 viewed) and Lisbon (~70 viewed) came back with honest
+zeros: the widened, plant-filter-off sweep returns street and building
+photographs in dense cities, not trees. Worth recording so the next pass
+does not re-run the same sweep on the same three: the medicine for those
+two is reader photographs or `famous_trees.py`, not another radius sweep.
+
+Nothing FOR HIDDE. All work merged to main and pushed.
+
 ## 2026-09-19 - Which parks have volume: measured, and it is a long tail. Plus three pages no keyword could see
 
 Hidde asked the sharp version of yesterday's question: which parks have
@@ -196,11 +313,11 @@ crosscheck, i18ncheck and conventioncheck clean, and /account/settings measures
 no overflow, no drift and no sub-16px field at 375. Looked at at 375 and on a
 desktop.
 
-**FOR HIDDE, and it is a database job rather than a code one:** none of this
-can work until the avatars bucket exists with the two policies in
-supabase/profiles.sql and the two in supabase/avatars-policy.sql. If the app
-has been saving pictures, they are already there and nothing is owed. If it has
-not, a save here will say "That did not save. The picture would not upload."
+Nothing is owed on the database side: this needs the avatars bucket and its
+four policies, and Hidde confirmed the same day that the app saves profile
+pictures, which is the one thing that can only be true if they are already
+there. The website writes the same path as the same account, so it meets the
+same policies.
 
 ## 2026-09-19 (night run, continuation 2) - A silently dead reader-photo pipeline fixed, three deepen passes dispatched, three stale branches cleared
 
@@ -433,6 +550,59 @@ firing on its own.
 Rung 2 otherwise clear, checked through the GitHub API rather than
 `health.py`: smoke, deploy and iOS all green on their newest completed
 runs, fresh-eyes review green, REVIEW.md 0 BLOCKER.
+
+## 2026-09-19 (session) - Scouted the tree-of-the-year contests: not a database, and the best nomination list in Europe
+
+Hidde asked whether the tree of the year contest is a database we can use,
+then asked for the scout. Answer: no as a register, yes as supply, and we
+have been quietly living off it for months without a single file saying so.
+
+**What it is not.** No file, no API, no coordinates, no licence block on any
+of these sites, and the photographs belong to the people who entered them, so
+nothing there is a photo source under hard rule 4.
+
+**What it is.** A nomination list, and a national vote is the closest thing to
+the reader validation of 2026-09-08 that exists before we have readers.
+Measured: **104 published trees across 93 places already cite a
+tree-of-the-year award**, every one of them found by hand. 15 of our 27
+Slovak trees and 18 of our 66 Czech ones came in this way. Nobody has ever
+read one of these archives as a list.
+
+**The volume is national, not European.** The European final is 12 to 16
+finalists a year since 2011 and we hold a good share of the famous ones. The
+national contests behind it run 10 to 16 finalists a year, the Czech one
+since 2002, mostly never written about in English.
+
+**The trap, caught during the scout rather than after a wasted window:**
+several countries run two contests under almost the same name and only one
+names a tree. Hungary's `Az Ev Faja` names a tree, `az ev fafaja` names a
+species. Latvia's `Gada koks` and Germany's `Baum des Jahres` are species
+awards, so both are excluded and recorded as such.
+
+**The free half needs no fetching at all:** two European WINNERS are sitting
+open in our own leads with photographs and coordinates attached and have
+never been written up, the Almond Tree of Pecs (2019) and the Lime of
+Felsomocsolad (2012). Estonia's Orissaare oak (2015, the one inside a
+football pitch, 60,000 votes) and Romania's lime of Leliceni (the first
+European winner) are in no file of ours; Romania has no leads file at all.
+
+**Shipped:** `data/toty-contests.json`, twelve contests with kind, archive
+pattern and verdict, and `scripts/toty_scout.py` with three commands.
+`--list` and `--gap` run offline and answer "what do we already hold here";
+`--fetch <country>` saves each year's page as readable text into
+`data/research/toty/` and deliberately parses nothing, because a scraper
+written against a page nobody has looked at is a scraper that invents trees.
+The run reads what it saved and writes the leads itself, the same split as a
+photo viewing pass.
+
+**What this session could not do, stated plainly:** it had no outbound
+network at all. The egress proxy refused treeoftheyear.org, Wikipedia,
+Wikidata and evfaja.hu alike, so the scout ran on web search plus our own
+data, no terms page was opened and **no licence verdict is recorded**. The
+fetching half belongs to a run with egress, which the CI runner has. The text
+extractor was tested against a fixture; the network path has never been run
+green.
+
 
 ## 2026-09-18 - Night run 2026-09-18 20:07 UTC ended without saying anything
 
@@ -1672,7 +1842,6 @@ the real run list fed in directly.
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-<!-- archive-index -->
 ## 2026-09-18 (session) - The sign-in sheet is everywhere now, and it can be swiped away
 
 Hidde: "de slider op het inlog scherm suggereert dat je het weg kan sliden.
@@ -5670,650 +5839,4 @@ Committed and pushed as one commit; both claims released. Week budget was
 at 4790/5000 minutes by the end of this attempt, which is why this run
 stops here rather than opening new coverage: the ceiling that matters is
 weekly, not this window's remaining 60-odd minutes.
-
-## 2026-09-11 (continuation 9, previous attempt stopped after 64 min with 56 min unspent) - Finished inherited Rome/Hallstatt work, fixed a live iOS layout bug
-
-Inherited a standing Rome verify claim and uncommitted work in both Rome and
-Hallstatt from the previous attempt in this window. Finished rather than
-re-did: wrote the story for rom_031 (The Almond of Villa di Faonte, the
-Mandorlo di Nerone, already fully verified against three independent
-sources including the park's April 2026 reopening), added its Italian
-translation to the it/rome overlay and fixed the four now-stale tree-count
-mentions there (30 -> 31). Hallstatt's hst_005 (a Gosau copper beech) had
-already been written with a full story but left two preflight FAILs
-uncommitted (meta_description over 155 chars, hst_005's how_to_recognise
-over 240); shortened both. Build, qa.py, superlatives.py all clean.
-Committed and released the Rome claim.
-
-`health.py` flagged the iOS app workflow as broken (its newest run, the
-19:27 UTC schedule, failing on the iOS-18 floor job). Traced it: the
-"search" screen's appfit dump showed both MapSearch's own content and
-MapTab's search button/filter chips underneath it, misaligned relative to
-each other. No ios/ commit between the last GREEN floor run (09:27) and the
-failure touched MapTab or MapSearch, so this was a latent bug (a
-fullScreenCover does not remove the presenting view from the accessibility
-tree by itself) that the floor job simply hadn't run against recently,
-since it only fires on schedule/dispatch, never on push. Added
-`.accessibilityHidden(searching)` to MapTab so it drops out of the
-accessibility tree (and therefore out of both VoiceOver and appfit's
-element queries) while the search sheet covers it. netcheck, appsweep
---check-lists and conventioncheck all pass; this sandbox has no Xcode, so
-the actual layout verdict needs the next scheduled/dispatched run (workflow
-dispatch was refused: HTTP 403, this bot's token cannot dispatch). Pushed;
-smoke test and deploy were still in progress at the end of this window,
-triggered by the same push.
-
-Checked REVIEW.md's two 2026-09-11 WARNs (empty reader-photo credit caption,
-three self-repeating tree-page titles): both were already fixed by an
-earlier attempt in this window (commit ef66e113a, 12:43 UTC), confirmed by
-reading the diff rather than re-fixing.
-
-Looked at new-coverage options before stopping: the OPENABLE-TODAY city list
-is thin and mostly documented dead ends (Taormina, Ravenna, Trier all
-previously exhausted; Trier's "9 register + 4 wikidata candidates near it"
-turn out to all be Luxembourg trees 10-20km away, not Trier's own).
-`famous_demand.py --next` surfaced a Lithuania batch worth a future pass:
-~10 named oaks/lindens (Bagrenas linden, Gaure oak, two Sitkunai oaks,
-Kiaunupis oak, Pagryniai oak, Dauksa oak, Galiunas oak, Nevezio dvilypis
-oak, Butinge oak, the last one possibly its own place) that would join
-already-published Kaunas, Zalgiriai, Vainiai, Degsne and Plauginiai Forest,
-plus two avenue candidates that fail the collectible-point test. Not
-dispatched: `run_health.py --week` showed 4817-4881/5000 minutes spent this
-week with the daily/weekly digests still to run, too tight a margin to
-start a fresh multi-city verify pass this session. Left for the next run
-with enough budget: candidates and sources are in `famous_demand.py --next
---country Lithuania`, no claim taken.
-
-## 2026-09-11 (continuation 8, previous attempt stopped after 16 min with 104 min unspent) - Prague 27 -> 30, one QA bug fixed, one bad photo rejected
-
-Inherited a standing Prague verify claim from the previous attempt in this
-window, which had claimed but not researched anything. Finished it rather
-than releasing it: a verify pass mined the unmined AOPK register rows
-5-7km northeast of the centre (Bohnice/Kobylisy/Liben) and found 3 genuinely
-new, publicly accessible oaks (one of them deliberately the living half of a
-once-famous pair whose bigger, dead neighbour is still protected). A write
-pass turned them into stories; before merging I restored the Czech
-diacritics the write pass had flattened to ASCII (Cimicky haj -> Cimicky
-haj, Pod Labutkou, Strelnicna, Liben, Dablice), checked against the
-register's own name_cz fields, and fixed two stale tree-count mentions
-(meta_description, question_meta, 27 -> 30). Build, preflight, superlatives,
-qa all clean. Claim released.
-
-Along the way, `qa.py` was failing on two orphaned Lisbon photo files
-(lis_005's sized copies saved under a slug nothing referenced); confirmed
-no reference anywhere and deleted them. Checked REVIEW.md's two open WARNs
-(a broken empty photo-credit figcaption on reader-app photos, and three
-self-repeating tree-page titles) against the current source: both fixes
-were already in the codebase from an earlier pass today, just never
-rebuilt/verified, so nothing to do there beyond confirming the build is
-clean.
-
-Also ran a small photo viewing pass on Tilburg's one fetchable candidate
-(the site's `photo_gaps.py --shortlist`): rejected it on sight, it was a
-photo of a fallen Ginkgo leaf in the grass, not the Flowering Ash tree it
-was matched to by filename/category. Recorded via `photo_verdicts.py` so
-nobody re-judges it.
-
-Checked the "OPENABLE TODAY" new-city list before chasing new coverage:
-Taormina's register is a documented dead end (all in-town candidates
-blocked on hotel-grounds access), Ravenna's four candidates are scattered
-17-19km apart with no cluster, so neither was worth a pass. Instead claimed
-Rome (30 trees, 560 impressions in the latest search window, the single
-biggest depth-allowed city) for a verify pass on its own unmined register
-candidates near the centre; result not yet in as this entry is written.
-
-## 2026-09-11 (continuation 5) - Milan +1 (24), Alicante's register confirmed exhausted, Finch Arboretum gets a park page
-
-Dispatched parallel verify agents on Alicante and Milan, both real-demand
-deepen targets with register supply passcheck reported as mostly unmined.
-Both briefs were stale: every "unmined" candidate in Alicante and all but
-one pair in Milan resolved to leads five/three prior passes had already
-settled. Both agents caught this themselves and cross-checked before
-reporting rather than taking the brief's count at face value.
-
-Milan gained mil_024, two more MASAF planes in the same Affori park as two
-already-published trees, written and merged in-session along with its
-Italian translation (Milan ships bilingual). Its story is honest about a
-disagreeing citation of the same register rather than picking a number.
-Alicante stays at 16; its one open lead needs photo comparison, not more
-searching.
-
-Also wrote `data/parks/john-a-finch-arboretum-spokane.json`, a park page
-earned by this session's earlier Spokane write pass. Build, qa.py,
-i18ncheck.py and preflight.py all clean throughout.
-
-**Worth a look next time someone is in passcheck.py:** its "unmined"
-candidate count doesn't currently subtract leads a prior pass already
-resolved by coordinate, so the brief overstates what's actually open.
-Full detail in CURATION.md.
-
-## 2026-09-11 (continuation 4) - Spokane 9 -> 13 from READY leads; four other "READY" leads read and declined
-
-`leads.py --ready` said 8 trees across 5 cities needed only a story. Claimed all
-five, read every lead's actual text before writing (the tool's own docstring
-warns readiness is a proxy), and only Spokane's four held up. Wrote them
-in-session rather than dispatching an agent, since all four facts were already
-in the register text and no new research was needed.
-
-**Spokane, 9 -> 13 trees:** a Norway spruce (register's own second-tallest-
-in-the-city claim), a Mexican pinyon pine (a state-size claim, an odd species
-for the Inland Northwest), a sycamore state-size candidate in Chief Garry Park
-(story explicitly distinguishes it from a different variegated sycamore maple
-elsewhere in the city so the two never get merged), and a linden in the
-Moore-Turner gardens whose species the register's own record cannot settle
-(title says littleleaf, description says American; left open on the page for
-a reader who can read a leaf). All four single-sourced and flagged per Step 2.
-Fixed a species-naming collision (hard rule 9: "Sycamore" not "Sycamore Maple",
-matching ~20 other cities) and three Contract C length overruns preflight
-caught. Build, qa.py, preflight.py all clean.
-
-**The other four claims released with nothing shipped, on purpose:**
-Hallstatt's one lead is a third of a Gosau cluster a prior pass deliberately
-deferred for its own future pass; Lagos (PT)'s "lead" was a negative-result
-note, not a tree; Genoa's was flagged as a padding risk by the pass that found
-it; Prague's has failed a hard-rule-10 access check three times running. Full
-reasoning for each in CURATION.md, so nobody re-derives it from the same thin
-signal `leads.py --ready` gave this run.
-
-**For whoever next touches leads.py:** its NOT_READY_MARKER regex only
-catches "not pursued"-style phrasing at the start of a sentence, so Hallstatt's
-Blutbuche slipped through as READY while its two sibling leads, declined in
-near-identical wording mid-sentence, correctly did not. Not fixed here.
-
-## 2026-09-11 (continuation 3) - Shipped Baltimore and Boise: two new cities, 8 trees, both stopped earlier attempts left staged
-
-The wake-up brief said the prior attempt stopped after 31 minutes having shipped
-zero trees with 89 minutes still unspent. What it had actually done was the real
-work and not the commit: two verify passes had already produced complete,
-research-standard city files for Baltimore and Boise (4 trees each) plus a
-finished Dutch overlay for Haarlem, all sitting untracked, with both claims still
-held. Nothing was wrong with the work, only the last step.
-
-Checked both city files line by line against Step 2's bar (sources, sourcing
-flags, honest location_precision) before trusting the claim message and shipping:
-both hold up. Ran the full pipeline before committing: `city_names.py` (both
-cities had never been resolved in other languages), `city_queue.py` (re-ranked
-CITY_QUEUE.md/LEDGER.html), `tree_index.py`, `superlatives.py` (no collisions),
-`preflight.py` (0 problems), Astro build (5483 pages) and `qa.py` (8550 pages,
-clean). Released both claims. Full detail in CURATION.md.
-
-**Baltimore, new city, 4 trees.** The Ruxton Liberty Tree, a 350-380 year white
-oak on private land visible from Bellona Avenue; the Frederick Douglass Elm near
-Camden Yards, carrying an honestly-labelled unproven tradition; two Cylburn
-Arboretum state/city champions (a cockspur hawthorn, a paperbark maple).
-
-**Boise, new city, 4 trees.** Three Idaho Big Tree Program state/city champions
-(bur oak, Kentucky coffeetree, and a giant sequoia moved a quarter mile by
-flatbed in 2017 to save it from a hospital expansion) plus a horse chestnut
-sapling grafted from the Amsterdam tree Anne Frank watched from her window, one
-of only eleven such grafts in the US.
-
-Also committed the already-finished Haarlem Dutch overlay (21 trees, full
-coverage) that was sitting untracked alongside the city files.
-
-**For the next run:** city-list.json's rebuild only updates rows already present
-in the file, so it never picked up Baltimore or Boise as new entries even after
-`city_queue.py` ran. Not urgent (CITY_QUEUE.md, the actual order, has both
-correctly), but worth a fix if a session is in that script anyway.
-
-## 2026-09-11 (continuation 2) - Finished a stalled write pass, scouted two registers, added 3 trees
-
-The previous attempt this window stopped after 44 minutes with 76 minutes
-still unspent, leaving one claim standing (cagliari, verify) and a partly
-written batch file. Picked that up first per the wake-up brief.
-
-**Finished the banked write pass** (`data/research/batch-writes-20260911.json`):
-cag_014's story was already written; wrote stories and recognise lines for
-spk_007 (Dwight's Linden) and spk_008 (The Massive Miyabe), merged all three
-into `data/cities/`. Cagliari's argan (cag_014) sits 14m from the already-
-published cag_011 by a shared garden-centre placeholder pin; checked by
-hand, confirmed not a duplicate (different species, no shared register id,
-preflight's own duplicate check agreed). Fixed a pre-existing stale-count
-bug in Cagliari's English and Italian copy while updating for the 14th tree
-(the walkable-cluster count had been wrong since before this pass; recomputed
-from actual coordinates: 10 of 14, not the old 8/9-of-13). Released the
-cagliari claim.
-
-**Scouted two cities named by `scout_next.py --target`.** Granada (#56):
-no city-specific register beyond the already-imported Andalusian one; found
-a 2020 local-press survey naming 12 trees, 8 already published, checked the
-other 4 (a 1998 pomegranate, a dead elm, a confirmed-dead legendary Generalife
-cypress, and a thin Science Campus pinsapo lead with no measurements yet).
-Recorded EMPTY in `register-scouting.json`, two new leads filed.
-
-Spokane (#66): traced the Heritage Tree Register everyone had been quoting
-by name for two passes to its actual ArcGIS endpoint, saved all 19 entries
-to `data/registers/spokane-heritage-trees.json` (no licence stated, usable
-as a layer-1 source, not a layer-2 import). Cross-checking the full register
-against our data found two entries already published under different names
-(no action needed) and one new one, the Treaty Tree, a Ponderosa Pine tied
-to an 1858/1887 treaty story and the Baptiste Peone homestead. It got a real
-second source (HistoryLink Essay 10030) but stays a lead: no confirmed
-public access to what was private homestead land, and the two sources
-disagree on the treaty date. Claimed and released spokane for a verify pass;
-delivered spk_010, the Saw-leaf Zelkova of Webster Park, on the register plus
-an independent HistoryLink photo credit (species name corrected from
-"Japanese Zelkova" to the site's canonical "Saw-leaf Zelkova", caught by
-preflight's hard-rule-9 check). Spokane now has 9 trees.
-
-Nothing FOR HIDDE. All work merged, built, QA'd and pushed; no BLOCKER in
-REVIEW.md, health.py rung 2 was clear at the start of this window.
-
-## 2026-09-11 (continuation) - Finished and merged 4 banked cities: Lausanne, Minneapolis, Salamanca, Spokane; deepened Monterey
-
-An earlier attempt this window claimed Lausanne, Salamanca, Spokane, Boise,
-Minneapolis and Baltimore for a verify pass, did real work (Lausanne to 8
-trees, Salamanca and Minneapolis to 4, Spokane to 6) and stopped without
-merging or releasing anything. Picked that up rather than starting new
-research, per the wake-up brief's instruction to finish rather than reorient.
-
-Five trees still needed a story (mnp_004, slm_004, spk_004-006); dispatched a
-write-stories agent for exactly those, batched, nothing else touched. Then
-built full Contract C/B page content (intro, meta_description, question
-page, FAQ) for all four cities and merged them into `data/cities/`:
-
-- **Lausanne** (8): a DNA-dated oak tied to a Napoleon legend, a weeping
-  beech that turned into a grove of its own rooted branches, a giant sequoia
-  and living-fossil ginkgo sharing one lakeside park.
-- **Salamanca** (4): a coast redwood in the university cloister since 1870,
-  a giant sequoia planted facing the cathedral in 1976, the park's own
-  disputed "grandfather" cedar, and a yew with no age at all, stated plainly.
-- **Minneapolis** (4): a tornado-scarred ~300-year bur oak, the Shoe Tree
-  (students have hung shoes in a hackberry since the 1990s for no agreed
-  reason), the state's champion basswood, and an Endangered-species hemlock
-  planted by the wildflower garden's own founder.
-- **Spokane** (6): three ~400-year-old Douglas firs whose roots hold a
-  canyon rim together, plus the only three trees on the city's own Heritage
-  Tree Registry as of a 2012 survey, all three in one small park.
-- **Monterey** (+2, now 3): added the Old Veteran of Point Lobos (a cliffside
-  cypress painted since 1879) and the Moon Tree of Friendly Plaza (a coast
-  redwood grown from a seed that flew around Apollo 14 in 1971) alongside
-  the Lone Cypress. **Flagged as a judgement call**: a prior continuation
-  this same window had deliberately trimmed Monterey back to just the Lone
-  Cypress, holding these two back for "a 4th tree or an independent fame
-  case." Reconsidered because Monterey already has a live page (this is
-  normal growth, not opening a new page below the floor, and "a city may
-  grow past its target... is normal work, not an exception to argue for"),
-  and both additions are honestly sourced and genuinely distinct rather than
-  filler. Hidde's to overrule if he reads the close call differently.
-
-Released all 6 stale claims (Boise and Baltimore included, both still below
-the 4-tree floor with nothing destination-tier to justify the single-tree
-exception; left banked in their research files for a future pass or an
-explicit fame case). Re-ran `city_queue.py` to sync ranks/status/trees from
-the actual data (it had been carrying Lausanne etc. at 0 trees). `preflight.py`
-(593 cities, 0 problems), `superlatives.py` (no collisions) and a full
-`astro build` (5442 pages) all clean; `qa.py` running.
-
-Left for a future pass: Boise (2), Baltimore (2) and Lagos-PT (1, cork oak
-with unconfirmed public access) still need either a 4th tree or an explicit
-single-tree fame case before they can ship.
-
-## 2026-09-11 (session) - The website tree page matches the app's, and a push now refuses one that does not
-
-**Hidde found "Exact location. The pin marks the trunk." still on the website**, a
-week after he had it taken out of the app, and asked for the page to match the
-app and for this not to happen again. Both done, and verified live at 375px and
-desktop on /lisbon/ajuda-dragon-tree.
-
-- **The page.** No exact-location line (English markup and `locExact` in all eight
-  languages). One thumb beside the place name, where the app has drawn it since
-  2026-09-04; no "Been here? Worth the visit?", no thumbs-down, no "Thanks,
-  counted". "Something's wrong" and its chips moved under the map. One component
-  with a `part`, so the two halves cannot drift.
-- **The mechanism.** `scripts/paritycheck.py`, in the pre-push hook for any change
-  under ios/ or site/src/: copy removed from one surface that still stands word
-  for word on the other is refused. Deliberate one-surface copy lives in
-  `data/parity-allow.json` with its reason. On its first real push it refused my
-  own commit: the app still carried the "Worth the visit?" heading as dead code
-  behind a switch; removed. A 21-day sweep is clean.
-- **Deploys.** Four push deploys in a row were cancelled by other pushes, then all
-  of them failed QA on an orphaned kyo_016 photo from the reader-photo session,
-  fixed by that session (f2da220a). When pushes keep cancelling each other,
-  `gh workflow run deploy.yml --ref main` is the documented route: the manual
-  group cannot be cancelled.
-- **getLISBON.** Their São Bento tipu photograph (sent 2026-09-06, which a check of
-  mine first missed as an attachment) is live on lis_005 with credit getLISBON,
-  and the thank-you went out on his word.
-
-**Left open, named so they are not lost:** the translated tree pages have no vote
-control in any of the seven languages; the web thumb is a colour emoji where the
-app draws an outline symbol; copycheck flags "Tap one to see how to tell it
-apart." in CollectSheet.swift:636, in the reader-photo session's area.
-
-
-## 2026-09-11 (session with Hidde) - The tree in the wrong-tree photograph gets its own page: the Twisted Muku of Omiya Gate
-
-Hidde's photograph sent as kyo_016, the Sudajii of Omiya Gate, was held this morning on a species check. Compared this afternoon against the ward's own Sudajii photograph (a broad dome on open gravel) and the Gyoen office's photograph of the named muku 大宮家の椋 (a tall tree on open lawn): it is neither. It is a pale, twisting, burled trunk on the stone wall at the park's edge, most likely a muku (Aphananthe aspera). Hidde: "voeg m maar gewoon toe ik vind hem vet", and it stands at kyo_016's spot on the edge of the park.
-
-- **kyo_019 live**, English and Japanese, with his photograph, `why_go`, a recognition line, `approximate` on kyo_016's gate-area pin, `flagged`. The one source documents the SETTING (the Gyoen office on the outer woodland's giant muku, enoki and keyaki), not this trunk, and verify_notes says so. The page asks readers for the species and a girth.
-- kyo_016 photo back to `missing`. Kyoto FAQ and meta counts moved to eighteen in both languages; preflight and i18ncheck clean.
-- **App bug found, not fixed:** ticking a tree from the list records OUR pin as the sighting's coordinate (`CollectSheet.swift:544`, `t.lat, t.lng`), not the phone's fix, so every app-matched photograph reads distance 0 and a wrong-trunk photograph cannot be placed. The inbox now keeps the row's coordinate for matched sightings too, ready for the day the app sends the real one. Offered to Hidde as a small change for the next build.
-- Unchecked: where 大宮御門 actually is. kyo_016's pin sits in the southwest corner of the park, while the Omiya palace compound is in the southeast; worth a pin pass before relying on either pin.
-
-## 2026-09-11 (session with Hidde) - Your own photographs come back, reader photographs actually reach the site, and a species check that cannot be skipped
-
-Hidde spent the day in Kyoto Gyoen with the App Store build and could not find any photograph he had taken of a tree we already map. Nothing was lost: all 29 of his sightings sit in Supabase with their photographs. Three separate faults, all fixed here.
-
-**1. The app never showed your photograph of one of OUR trees.** The tree page only looked for a photograph when the tree was yours alone, and your own list skips a sighting that carries our tree's id. Now: a "Your photographs" row with dates on the tree page (tap opens the full-screen viewer), your photograph as the hero when we have none, and your picture on the card in My trees. Looked at on the SE and a Pro Max through the new `-mine-of=<tree id>` launch argument; unit tests pass.
-
-**2. Every reader photograph ever published was invisible, on the site and in the app.** `usablePhoto()` required an attribution and reader photographs have none on purpose since 2026-09-04. Six trees (brn_001, brn_002, kyo_006, kyo_011, kyo_016, kyo_018); kyo_006 had its working iNaturalist picture replaced and so showed nothing at all. Fixed in images.ts, and `check_approved_photos_reach_the_feed()` in qa.py now fails the deploy when an approved photograph does not reach /api/trees.json. Simulated against the live feed first: it fires on exactly those six and nothing else.
-
-**3. The morning's viewing pass judged light and composition and never asked what tree it was looking at.** The Sudajii of Omiya Gate photograph shows a pale, smooth trunk, not a Castanopsis, so kyo_016 is now `held`. `sightings_publish.py` refuses an approval without `species_seen` and `species_match: yes`, and photo-judge.md makes the comparison a named step. The Hackberry photograph is plausible but not certain; left live, and asked of Hidde.
-
-Also: the camera now keeps a copy in Photos with date and place (add-only permission, the iNaturalist default, CONVENTIONS.md), and /terms says that a photograph should be of the tree, that people in it are fine, that the sender makes sure a recognisable person is happy to be there, and that anybody recognisable can ask for it to come off (the convention across Google Maps, Commons, iNaturalist, AllTrails and Tripadvisor).
-
-Still open: the app changes need a TestFlight build, which is what Hidde asked for next. Nine stale git worktrees sit beside the repo (Xcode showed him two projects); all their commits are in main, but `at-pin` holds 17 uncommitted changes, so nothing is deleted without a look.
-
-## 2026-09-11 (session) - Girth is a data point readers can send, in the app and on /contribute
-
-Hidde: "we zouden girth toevoegen als data punt". Girth plus a species is how every register dates a tree, and roughly half our trees carry none, so a reader standing at the trunk is the cheapest source of the one number that turns an age guess into an estimate.
-
-- **Database:** `supabase/girth.sql` adds `girth_cm` (whole centimetres, 10 to 5000) to `sightings` and `submissions`, and to the `shared_trees` view. A fact about a tree, no personal data. Needs pasting in the SQL editor; handed to Hidde in session.
-- **App:** your own tree's page gets "Girth" beside "Age", with the species under both at full width (three attempts the same hour: a row labelled "Around the trunk", then a third column on Hidde's "kan girth niet gewoon als derde optie op dezelfde rij", which broke "Pedunculate Oak" mid-word at this type size; he chose the stacked version from screenshots). Add when empty, and "Change the girth" in its menu. The field asks in metres with the Ancient Tree Inventory's method under it ("In metres, at chest height. One hug is about 1.5 m."), on a decimal keypad. It syncs as `girth_cm`, sent only when set, so a phone that meets a database without the column keeps syncing everything else. The app feed now sends `girth_cm` for our own trees too (1,365 carry one; rounded to whole centimetres because 38 register values have a decimal and the app decodes an Int), so they show Girth the same way.
-- **Web:** /contribute has the same optional field, same parsing rule, sent only when filled in.
-- **Pipeline:** `sightings_inbox.py` carries `girth_cm` into the queue and the leads, so a run can fill a missing `girth_cm` from a reader's measurement, recorded as a reader's measurement in `verify_notes`.
-- **Checks:** `GirthTests` (4 cases, all passing: every way of typing one trunk, nonsense refused, metres read back, an old saved file still decoding) and the web parser against the same 12 cases through JavaScriptCore. CONVENTIONS.md has the entry.
-
-Also fixed in passing: the thumb beside the place name sat centred in its 44-point target, leaving twice the gap after the dot; it is leading-aligned now.
-
-## 2026-09-11 (continuation 4) - Cardiff published, Zwolle deepened to 14, and 4 stranded passes shipped under the single-famous-tree exception
-
-An earlier attempt in this same window stopped after 54 minutes having shipped
-0 trees, 66 minutes still unspent, no error or usage-limit death. Ran
-`git pull --rebase --autostash`, then `passcheck.py --claims`: two standing
-write claims, Cardiff (136 min left) and Zwolle (142 min left), both with
-finished output already sitting uncommitted.
-
-**Cardiff**: the working tree already held a complete 4-tree city file (all
-4 flagged, approximate pins), a UK country-page count fix (24->25 places,
-99->103 trees) and a London species-name fix (Ravenscourt Park Baobab Plane
-corrected to the canonical London Plane, Platanus x acerifolia, matching
-hard rule 9). Verified it (preflight 0 problems, full build, qa.py clean at
-8404 pages), committed, pushed, released the claim.
-
-**Zwolle**: 7 new register-backed trees (zwo_008-014) had verified facts but
-no stories. Dispatched a write-stories agent (BRIEF_WRITING.md); it returned
-all 7 written and cost-logged (62k tokens). Merged into `data/cities/zwolle.json`
-(7 -> 14 trees), fixed the meta_description's stale "Seven remarkable trees"
-and a question_context sentence that no longer described the full set, and
-trimmed a rewrite that briefly ran over Contract B's 150-200 word limit.
-Released the claim.
-
-**Then found 4 more stranded verify-and-write passes** the prior
-continuation had logged as banked-below-floor and left there: Indianapolis
-(1 tree), Sao Paulo (1), Busan (2) and Monterey (3). Rather than re-bank them
-again, applied the 2026-08-31 single-famous-tree exception on each one's own
-merits (Indianapolis' Kile Oak, Sao Paulo's Figueira das Lagrimas, Busan's two
-independently-designated National Monuments, and Monterey trimmed to just the
-Lone Cypress, holding its other two candidates back for a future pass). Full
-reasoning and the precedent it follows (Kasukabe/Aguas de Moura/Rumskulla,
-Zilina) is in today's CURATION.md entry; flagged there as a close call for
-Hidde to overrule if he reads the exception more narrowly than this run did.
-Fixed a hard-rule-9 species collision found in Busan along the way (Japanese
-Black Pine had two names on the site).
-
-Regenerated `data/tree-index.json`, ran `preflight.py` (0 problems),
-`superlatives.py` (no collisions), a full `astro build` (5407 pages) and
-`qa.py`. Logged both passes to `data/agent-costs.json`.
-
-**Left banked, unchanged from the prior continuation**: Baltimore (2),
-Boise (2), Lausanne (3), Minneapolis (3), Salamanca (3), Spokane (3) and
-Lagos-PT (1), none of which read as clearly destination-tier on their own,
-plus Lagos-PT's additional unconfirmed-access problem.
-
-A pile of untracked scratch files from this and earlier attempts this window
-could not be removed (`rm` and `git clean` both denied by this session's
-permissions): `tmp_cvdr.html`, `tmp_cvdr_text.txt`, `tmp_mt.html`,
-`tmp_story.json`, `tmp_update_leads.py`, `tmp_update_leads2.py`,
-`tmp_zwolle_bomenlijst.pdf`, `tmp_zwolle_raw.txt`, `tmp_zwolle_text.txt`,
-`scripts/_fetch_leads.py`, `scripts/_resolve_conflict.py`, `scripts/_wc.py`,
-`scripts/_wstory.py`, and this continuation's own `scripts/_merge_cities.py`,
-`scripts/_merge_zwolle.py` and `scripts/_append_cost.py`. None are referenced
-by anything or staged for commit; safe for the next run or Hidde to delete.
-
-## 2026-09-11 (continuation 3) - Write pass finishes 6 stranded verify claims, all banked below the 4-tree floor
-
-An earlier attempt this window stopped after 93 minutes having shipped 2 trees, with 27 minutes still unspent and no error or usage-limit death; nothing wrong, it just called itself done early. Picked up where it left off: 6 standing claims (salamanca, minneapolis, baltimore, lagos, cardiff, lausanne, all `verify`, ~2 hours old) with their verify output already sitting uncommitted in `data/research/*-verified.json` and `data/leads/*.json`, 15 trees total (Baltimore 2, Cardiff 3, Lagos-PT 1, Lausanne 3, Minneapolis 3, Salamanca 3), none yet written.
-
-Dispatched one batched write-stories pass across all 15 (within the 15-20/pass batch size), per the prompt's own instruction to finish bought-and-paid-for verify work before anything else. All 15 came back with `story` (150-250 words), `how_to_recognise` (the fixed "You can recognise it by... It stands..." shape, all under 240 chars), and `best_time` where a real peak existed (3 of 15: Cardiff's sweet chestnut in October, Lausanne's weeping beech in May, Minneapolis's basswood in late June); `verify_notes` removed as BRIEF_WRITING.md specifies. Hedged phrasing kept honest throughout: Baltimore's Lincoln sighting and Douglass planting stay explicitly legend, Lausanne's Napoleon-oak date sits beside a conflicting dendro estimate with both stated, Salamanca's newspaper donation story is not bridged to a specific register entry it never named. No bridge claims anywhere (ages stay derived-and-labelled, never sharpened).
-
-**None of the 6 cities cross the 4-tree floor** (Baltimore 2, Cardiff 3, Lausanne 3, Minneapolis 3, Salamanca 3, Lagos-PT 1), so nothing merges into `data/cities` this pass, same shape as the Boise/Indianapolis/Monterey/Spokane/Busan/Sao Paulo entries already banked from earlier passes. The stories now sit finished in the research files, ready to ship the moment each city's gap closes (Baltimore needs 2 more, Cardiff and Lausanne and Minneapolis need 1 each, Salamanca needs 1, Lagos-PT needs 3) without re-verifying anything already done.
-
-Released all 6 claims. Logged the pass (66k tokens, 15 trees banked, ~4.4k/tree against the 15k target, cheap because six cities batched in one write context). Two stray untracked scratch files from an even earlier attempt (`scripts/_tmp_build_verdicts.py`, and this run's own `scripts/_tmp_append_cost.py`) are left in the working tree uncommitted; this session's Bash permissions refused `rm` on them, so they're for the next run or Hidde to clear.
-
-## 2026-09-11 (continuation 2) - Write pass on 5 stranded verified cities, Prague deepened to 27, photo shortlist staged for a viewing pass
-
-7-day visits (`visitors.py`): 1069 visits, 1335 page views, still trending down (223 on 09-05 to 7 partial-day on 09-11). `prepare.py`: shelf already stocked (49 files staged for verify), 16 trees awaiting a writer across boise/busan/indianapolis/monterey/prague/saopaulo/spokane/_famous-china/famousfrance, 3 READY leads.
-
-Per the prompt's "first dispatch is a write pass" rule, claimed and dispatched a batched write-stories pass on the 11 trees still needing a story (skipped busan and saopaulo, already written and unmergeable below floor per the prior run): prg_026/027, boi_001/002, ind_001, mty_001/002/003, spk_001/002/003. All 11 came back written and clean (150-250 words, recognition lines, no bridge claims; `best_time` set only on spk_003's dawn redwood autumn colour). Merged Prague's 2 into `data/cities/prague.json` (25 to 27 trees); the other 9 stay banked in their `*-verified.json` files, still below the 4-tree floor (Boise 2, Indianapolis 1, Monterey 3, Spokane 3). Fixed Prague's and Czech Republic's stale count promises (meta_description, question_meta, country intro). Build (5381 pages), qa.py (8393 pages, clean) and superlatives.py (360 claims, no collisions) all clean. Logged cost (61k tokens, 11 trees, ~5.5k/tree against the 15k target).
-
-**Free work alongside it, since the write pass ran as a background agent**: `python3 scripts/photo_hunt.py --recheck` refreshed the whole 2522-tree API sweep queue. `python3 scripts/photo_gaps.py --shortlist` named 7 photo-less, depth-allowed cities (checked each against DATA.md's 2026-09-09 roster: Leeuwarden, Tilburg, Helmond, Maastricht, Eindhoven, Budapest, Kamakura all qualify); ran `photo_fetch.py` to download their candidates into `photo-pass/` (gitignored) for a viewing pass. Budapest had nothing left to fetch. On a first look at the manifests most titles read as likely misses (Maastricht's top hits are Stolpersteine and city-wall remains, Leeuwarden pulled in an unrelated Amsterdam park and a Zutphen monument by filename coincidence) rather than genuine tree photographs; did not get to the actual pixel-by-pixel judging this window, so nothing was approved or rejected. That is next window's or a photo-judge pass's job.
-
-Checked `health.py` (rung 2 clear, no BLOCKER; one APP-tagged WARN in REVIEW.md about a "1 trees" pluralization bug in MapSearch.swift, correctly left alone per its own note that night runs don't touch app UI Swift), `sightings_inbox.py --status` (nothing waiting) and `recognise.py --stuck` (backlog still at zero) before starting.
-## 2026-09-11 (session) - The empty-shelf alarm had a hole in it, and 43 leads were holding a pin nobody read
-
-Chasing why the writable pile stood at 3 against its own floor of 60.
-
-**The alarm was silent, and that is why nobody fixed it.** prepare.py picks its directive from the DOMINANT missing field, and it has a branch for "species" and a branch for "source" and nothing else. The dominant gap had become "position" (527 mentions), so neither branch fired and a run under the floor was told nothing at all. Hidde's own ruling of 2026-09-01 ("de schrijfplank moet ook autonoom gevuld worden als die leeg raakt") has therefore not been reaching any run for some time. An alarm with a hole is worse than no alarm, because the silence reads as fine.
-
-Two fixes, both in prepare.py. It now counts the leads that are ONE field away rather than every mention of a field, because a lead missing four things is a scrape and closing one of its gaps buys nothing: the real picture is 119 on source, 91 on position, 41 on verification, 23 on name, 12 on species, against raw counts that made position look like the problem. And there is an else, so every gap now produces a directive whatever the dominant one turns out to be.
-
-**New: `scripts/repin.py`, the sibling of refill.py.** refill.py recovers a missing species from the tree's own name; this recovers a missing POSITION from a coordinate the lead was already holding under a key nothing reads (`coordinates`, `coords`, `coordinate`). 43 leads across 9 files, recovered for no tokens and no network.
-
-**Five of those 43 were lat/lng SWAPPED, and catching them is the point of the script rather than a detail.** Luxembourg's five carry `coordinates` as [lng, lat], so copying them as written would have put five pins in the Indian Ocean. The check is evidence rather than a hunch: a recovered pin is accepted only when it lands within 120 km of where that file's trees actually are, a swap only when the pair as written lands nowhere near and the swapped pair lands on it, and anything else is refused and left without a position. Nothing was refused today.
-
-**The honest result: the shelf went from 3 to 7, and scripts are now exhausted.** refill.py has nothing left to fill (0 leads), repin.py has nothing left to recover. The 119 leads that need only a source cannot be closed by any script, by definition: they are scrapes no pass has ever looked at. Refilling the shelf from here costs a verify pass, which the meter puts at 45k to 245k tokens for 0 to 7 trees, 37.8k per tree across 351 recorded passes. The batches prepare.py names are _famous-czech-republic (27 unsourced, all 27 with a photograph already attached), _famous-poland (the same), and trieste (27, no photographs).
-
-FOR HIDDE: that verify pass is the one thing standing between the night runs and an empty writing shelf, and it is your budget. Standing instruction says a run refills autonomously; I did not spend it inside a session with you sitting there without saying the number first.
-
-## 2026-09-11 (session) - A famous-tree collection, ranked by what the world already wrote
-
-Hidde: "Moeten we een famous tree collectie maken?" Yes, and it follows straight on from the city-list change in the entry below: the 341 places that left the city grid are mostly single famous trees, and they needed a front door.
-
-**/collections/famous-trees is live, 60 trees in four bands.** Generated rather than curated (Contract D, the pattern the thickest and tallest rankings already use), so it re-ranks itself on every build and no new famous tree can be forgotten. No blueprint change and no new page type.
-
-**What it ranks on, and this is the whole quality of the page: measured fame, not felt fame.** The number of language Wikipedias that carry an article on the tree, with their summed monthly reads breaking ties. Ranking by what I have heard of is the error CLAUDE.md already records twice, once for which city to open and once for which page to translate. The floor is two languages: one article usually means a local historian did their job, two means the tree travelled. El Árbol del Tule leads with 26, the Fortingall Yew 20, the Stelmuže Oak 19.
-
-**New: `scripts/fame.py`.** The fame chain already existed for LEADS in famous_demand.py and its answers sit in data/famous-demand.json; what was missing was the join to the trees we actually publish. fame.py does that join BY DISTANCE, never by name (150 m, the same number famous_map.py uses), and writes a `fame` block onto the tree carrying the Wikidata qid and the lead name beside the number, so the next run can check it rather than trust it. 147 trees got a number; 60 clear the two-language floor.
-
-**The honest gap, and it is filled by a script rather than by remembering.** 429 of the 938 cached leads have never been resolved, General Sherman among them, and resolving needs Wikidata and the pageviews API, which this sandbox cannot reach. `prepare.py` now prints the gap and the two lines that close it at the top of every run, so the first night run with network fills it and those trees appear on the page by themselves.
-
-Build 5367 pages, qa clean (8369), preflight 0 problems, superlatives no collisions. Looked at the page rendered at 375px and 1280px.
-
-Noted in passing, not acted on: prepare.py says the writable lead pile is down to **3**, far under its own floor of 60. The night runs will run out of stories to write within one pass.
-
-## 2026-09-11 (session) - /cities lists cities again: 241 of them, and the other 341 places get a section of their own
-
-Hidde, from his phone: "Ik zou in de city lijst wel echt cities alleen tonen en niet bomen die random in een park staan." He was looking at Australia, where Cooper Creek, Derby and the Flinders Ranges each sat with one tree in a card the same size as Brisbane's twenty.
-
-**What was wrong.** Blueprint v1.15 already said only cities appear on /cities, and it could not be obeyed: `kind` was declared twice in the same object in site/src/content.config.ts, so the second declaration won and the enum in force was `["city", "island"]`. A place could not be a region, a park or a forest even though that was approved on 2026-08-28. Fixed to one declaration. And the real cause was elsewhere anyway: the places breaking the list are single famous trees given a home under the floor exception of 2026-08-31, which are `kind: city` files and always will be.
-
-**The line, in site/src/lib/city-index.ts.** A place appears in the city grid when it calls itself a city AND either holds four trees or is a ranked city in data/city-queue.json. Mechanical both ways, no per-village judgement. 241 cities in the grid; the queue clause is what keeps Canberra, Nantes, Liverpool, Philadelphia and Turku there at one or two trees, because a ranked city we are deliberately opening is often two trees old for weeks.
-
-**The other 341 are still on the page**, under "Places with fewer than 4 trees", as plain text links grouped by country rather than photo cards, with a line saying what they are. Nothing is hidden, no URL moved, and that section is what keeps the five places whose country has no country page from being orphaned (Luxembourg, Mexico, New Zealand, South Korea, Turkey). The homepage's "All N cities" signpost now counts the same 241 rather than every place file. The country page heading reads "Every place we map in X" rather than "Every mapped city", which the Flinders Ranges never were.
-
-Build 5366 pages, qa.py clean (8368 pages), preflight 0 problems. Looked at the page rendered at 375px and 1280px, both sections. Recorded in DECISIONS.md and, for the convention question of how a directory treats a famous single thing, in CONVENTIONS.md.
-
-FOR HIDDE: one judgement call is yours to overrule in a sentence. Canberra stays on the list with its single tree because the queue ranks it as a city we are covering. If you would rather the grid held only places with something to walk between, say so and the queue clause comes out, which drops Canberra and ten others.
-## 2026-09-11 (session) - benchmarked the trunk control properly, and found the screen it lives on has never been photographed
-
-Hidde, on the field below: "heb je het mooi gemaakt en gebenchmarkt enzo?" The honest answer was half a no, and the half that was missing turned out to matter more than the control.
-
-**What I had benchmarked was the MEASUREMENT and not the CONTROL.** The hug is right and the sources are in CONVENTIONS.md. The thing holding it was a LazyVGrid with adaptive columns, chosen because it is the container SwiftUI ships rather than the one the convention asks for. Looked up properly now: a segmented control is for switching between views or modes and its segments are equal width; a choice chip is for picking a VALUE out of three to six options, sizes to its own text, and wraps. Ours answers a question, so it is chips, and the grid was a segmented control wearing capsules. Replaced with `FlowRow`, the Layout protocol doing the one thing it exists for, and the chips now hug their own text. Both lookups are in CONVENTIONS.md under a new entry so the next control does not repeat this.
-
-**And the bigger find: the screen has never been photographed, by anybody, ever.** appsweep.py's own header says a screen no argument can open is a screen that ships unseen, and the collect flow has arguments for place, identify, ticked and compare. It has never had one for DESCRIBE, which is the screen carrying every field a contributor types. It went from one field to two on 2026-09-08 and nobody has looked at it since, because nobody could: it sits behind a camera a simulator does not have. `-collect-describe` exists now, with entries in both screen lists, so CI photographs it and appfit measures it from this push on.
-
-So: no, I have not made it "mooi", and I cannot from here. What I have done is make it possible to SEE, which is the step that was actually missing.
-
-**CI verdict on the push, run 34560837349: green, all of it.** Build and every test passed, including the two new upgrade tests. `appfit` measured the new `collect-describe` screen on both phones and found nothing, which is a real verdict rather than a quiet pass: appfit exits 1 on any finding and that step carries no `|| true`. The refused walk and the screenshot sweep went green too.
-
-**And a limit on this environment worth writing down so nobody spends a window on it again: a web session cannot read a CI artifact.** GitHub's artifact API always redirects to `*.blob.core.windows.net`, and this container's egress proxy denies that host with a 403 (policy, not a transient failure). So the screenshot of `collect-describe` now EXISTS, for the first time ever, and I still cannot open it. Hidde can, in a browser, from the run page: Artifacts, `appsweep-34560837349`, `collect-describe.png`. That is the honest split this whole change produced: the machine half is measured and clean, the eyes half is now possible and is his.
-
-**Also made the sync survive Hidde not having run the SQL yet** (he said "ik kan nu niet supabase"). PostgREST refuses a whole row for a column it cannot find, and refusing the row loses the TREE. The trunk answer is the least valuable thing in that row, so a failed push now retries once without it. The key is only present when somebody answered, so nothing else ever takes the second call, and it retires itself the moment the column exists.
-
-## 2026-09-11 (session) - the app asks how thick the trunk is, in hugs
-
-Hidde, straight after the age script landed: "en bij het toevoegen van een boom een nieuw veld - girth". So the add-a-tree sheet has a third field, under the name and the reason, and it is optional like both of them.
-
-**It asks in HUGS, not centimetres, and that is the convention rather than an idea of ours.** The Ancient Tree Inventory has run fifteen years of citizen tree recording and hands anybody without a tape the hug: one adult hug is 1.5 m fingertip to fingertip, and they publish a threshold table per species. It is the only measurement available to somebody standing in a park holding a phone, and it sidesteps the metric-or-imperial question a number would force. Five capsules: less than 1, 1, 2, 3, 4 or more. Tapping the chosen one clears it, since there is no other way out of a single-choice row.
-
-**Why it earns a third field on a form we have twice cut down.** Girth is the only measurement an age can be DERIVED from rather than invented, which is this project's own rule since 2026-08-16 and became a script this morning. Nothing else somebody can give us in five seconds turns into a fact on a page. And the precision costs nothing, which is the finding from the same conversation: a hug is good to about 25 cm and a LiDAR scan to 3, and the growth rate makes the answer a band a factor of two wide either way.
-
-Three design calls, each with a more obvious wrong answer, all recorded in CONVENTIONS.md: a wrapping grid rather than a segmented control (Apple's guidance is short labels of roughly equal width, and five capsules do not fit one line at 375 points); the explanation ABOVE the chips rather than under them, because it defines the unit somebody is about to count in, which is what our own web contribute form already does with its hints; and the phone storing the answer as given ("<1", "2", "4+") with the conversion to metres living in `sightings_inbox.py`, so it can be corrected without an App Store release.
-
-End to end: `Sightings.Sighting.girth` (optional, so every file written before today still decodes), through `SightingSync` in both directions, into a `girth` column on the sightings table, out again in `sightings_inbox.py` where the judging screen prints it in plain words ("about two hugs, roughly 3 m round"). Two tests in `UpgradeTests.swift` hold the disk side: a tree saved before the field existed still opens, and an answer survives the round trip.
-
-On the web, one line added to "What helps most" on /contribute rather than a field, and the reason is real rather than a dodge: a hug is a measurement you take while standing at the trunk, and the web form is somebody at a desk remembering a tree.
-
-**FOR HIDDE, two things.** The SQL needs your paste, `supabase/sightings.sql` (it ends in a one-line `alter table ... add column if not exists girth text`, safe to run again); until then the app keeps the answer on the phone and the sync drops it. And I cannot build or look at the app from here, so the iOS CI run on this push is the first real verdict on whether it compiles and fits; nothing in it has been seen rendered.
-
-**One honest sentence about what this is worth today.** Nobody but you has ever added a tree, so this field collects from a population of one for now. It is right for the day that changes, and the bigger prize is the same question asked when somebody ticks off a tree we ALREADY map, because 1,610 of our published trees carry no girth and that is where a reader's answer turns straight into a published age. That one adds a question to the payoff screen, which CONVENTIONS.md warns about, so it is yours to call.
-
-## 2026-09-11 (session) - 37 pages that said nothing about age now say something, derived from the trunk
-
-Hidde asked whether the app asks a contributor for a trunk size, and whether species plus trunk size could give an approximate age. It does not ask, and the age half was already this project's own written rule since 2026-08-16 ("girth plus a published growth rate for that species is dendrology") with the condition attached that it becomes a script once a few hundred girths exist. There are 1,354. So this is that script, `scripts/ages.py`, the third sibling of girths.py and heights.py.
-
-**37 published trees that carried no age at all now carry a band**, across 22 places: Cologne, Krakow, Perugia, Trento, Portland, Girona, Graz, Brussels, Paris, Barcelona, Cagliari and more. The output looks like "roughly 150 to 250 years, judged from a trunk 3.75 m round". 219 trees were eligible by having a girth and no age; the other 182 are refused with a written reason in `data/research/ages-from-girth.json`, so the next run reads the no instead of rediscovering it.
-
-**The refusals are the point, not the leftovers.** The published rate covers temperate broadleaves and nothing else, so the allow list is closed rather than a default with exceptions: 177 refusals are species outside it. The biggest single group is the London Plane at twelve, which puts on girth far faster than the published rate, so dividing by that rate would have aged every one of them at several times its real years. Yews are refused for the opposite reason and are the species every guide to this method names as the one it cannot do. Also out: conifers, subtropicals (figs, camphor, rain trees), and two entries whose own names describe more than one trunk, where a girth belongs to one stem and the sum would have claimed it for the group.
-
-**We measured how often it is right rather than assuming.** Against the 300 published trees carrying BOTH a girth and an age somebody wrote down, the band contains their stated age 6 times in 10. The misses are systematic and worth knowing: a quarter are us being too YOUNG, and they crowd into the big trunks, because girth growth slows sharply in a genuinely old tree and a linear rule cannot see that. We under-age 6 to 23 percent of trees below 5 m round and 30 to 45 percent above 6 m. The Stelmuze Oak is the shape of it: 13 m round, the sum says 500 to 900 years, Lithuania says 1,500 to 2,000. So the script refuses any trunk over 6 m, which cost three trees (Girona's 9.7 m chestnut, Ronda's 7.2 m chestnut, Portland's 7 m beech) and is right.
-
-**The rate was not tuned to flatter that number.** Widening the slow end to 1 cm of girth a year takes agreement from 61 to 74 percent, and 1 cm a year is outside what the sources publish. Fitting our own data would have been the fabrication this script exists to avoid, particularly since a good few of the ages it is checked against were themselves derived from a girth by a register doing the same arithmetic. The rate comes from the literature, the cap comes from the evidence.
-
-**Three places say what the number is, none of them optional.** `age_basis: "girth"` is the machine-readable flag, and `ageToken()` in tree-copy.ts now refuses to quote a derived age as a flat number in a page title, the same way it already refuses a disputed one: otherwise Cologne's oak would have been titled "150 Year Old Pedunculate Oak", a fact we do not have from arithmetic that never claimed it. The age_estimate sentence carries the basis after the comma, which the tree page already renders correctly with no new code (the facts chip takes the part before the comma, the Age estimate row takes the whole thing). And verify_notes carries it for whoever works on the tree next.
-
-Five translated overlay entries (es Barcelona, fr Brussels x2, fr Paris, it Cagliari) got the same age in their own language, so no translated page shows an empty Age row where its English twin shows a band.
-
-Build 5366 pages, preflight 0 problems (and the young-tree NOTE held at 128, unchanged, because the script refuses any band topping out under a century), qa.py 8368 pages clean.
-
-Also recorded, before any of this was built: CONVENTIONS.md now carries the trunk-size lookup. The Ancient Tree Inventory asks amateurs for girth at 1.5 m and publishes the adult HUG as the tape-free unit (1.5 m fingertip to fingertip, with a per-species threshold table), and LiDAR DBH apps measure to an RMSE of 2.3 to 3.1 cm. The decision-shaped finding sits in that entry: because the growth rate sets the error and not the tape, a hug and a LiDAR scan produce very nearly the same band, so the expensive instrument buys precision the answer cannot use.
-
-FOR HIDDE: nothing blocking. The two remaining steps from that conversation are yours to call, and the cheap one is asking for the hug in the app.
-
-## 2026-09-11 (continuation) - New city Hallstatt (4 trees, Austria's 7th), cleared two stale write claims
-
-An earlier attempt in this window stopped after 24 minutes with 96 unspent, having already released cleanly (no half-finished work behind it). Started from three standing claims left by attempts before that: `hallstatt` (verify, already finished, 4 trees sitting uncommitted), `busan` and `saopaulo` (write, but both cities are below the 4-tree floor with their register/Wikidata supply already exhausted, so nothing productive to write toward publication). Released busan and saopaulo's stale write claims rather than force research that CLAUDE.md itself rules out (from-zero web research on an unnamed city).
-
-**Shipped Hallstatt as a new one-city page, Austria's seventh.** The already-completed verify pass found 4 yews via Upper Austria's official Naturdenkmal register (Genisys), all flagged `curation_status: flagged` because every source traces back to the same official designation (the live register plus its own Wikipedia mirror), no independent second source found for any of the four. Per Step 2's honesty rule that is the correct outcome, not a blocker: one official register counts as a source, and the flag carries the honesty into the page. Dispatched a batched write-stories pass across all 7 pending verified trees (4 Hallstatt + 2 Busan + 1 Sao Paulo, meeting the 6-candidate minimum for a pass) so the sunk verification cost on Busan and Sao Paulo isn't wasted either: both now have finished stories sitting in `data/research/*-verified.json`, ready to ship the moment more candidates close their gap (2 more for Busan, 3 more for Sao Paulo), rather than needing a second write pass later.
-
-The four: a yew at Hallstatt's own boat landing the register calls "defining for the landscape" (girth-only, no age), Obertraun's Dorfeibe (~200+ years, the only one of the four with a stated age basis), a lone meadow yew above Untersee whose own sources disagree on which hamlet it belongs to (Untersee vs Obersee, both recorded honestly), and a churchyard-entrance yew in Bad Goisern. Fixed Austria's country page meta_description and intro, which went stale the moment this shipped (56→60 trees, 6→7 cities).
-
-Build (5366 pages), preflight (0 problems, after fixing question_context from 127 to the required 150-200 words), qa.py (8368 pages, clean) and superlatives.py (358 claims, no collisions) all clean. Cost logged to `data/agent-costs.json`. Released all three claims.
-
-**Same window, second batch: two more new cities, Pisa (Italy) and Pittsburgh (United States).** `city_queue.py --next` showed 36 OPENABLE-today cities (ranked, below target, already carrying Wikidata/register supply) with a claimed-but-abandoned batch sitting unclaimed again: Boise, Indianapolis, Spokane, Pittsburgh, Monterey, Pisa, each with only 1-6 Wikidata leads. Claimed all six for a verify pass with a wider brief than usual (do a real web sweep per city rather than relying on the thin Wikidata cluster alone, since none of these six had ever been researched).
-
-Result: **Pisa** (4 trees, all from the Orto Botanico di Pisa, founded 1544 and the oldest university botanical garden still on its original site: a 1787 ginkgo and magnolia planted by the same director in the same season, a disputed-species 1808 plane, an 1829 Virginia live oak) and **Pittsburgh** (4 trees, all from the city's own official Remarkable Trees program, first list published March 2023 from 44 resident nominations: three Mellon Park specimens plus a single-sourced Phillips Park white oak) both reached the 4-tree floor and shipped. Monterey (3), Spokane (3), Boise (2) and Indianapolis (1) stayed below floor; several of their best sources (remarkabletreespgh.com, historicspokane.org, city-of-trees.webflow.io, a Monterey city ordinance PDF) are JS-rendered or blocked and returned nothing to curl/WebFetch, worth a browser-rendering pass rather than a repeat of this technique. Released those four claims rather than force it.
-
-Dispatched a write pass on the 8 Pisa+Pittsburgh trees only, skipping the 9 below-floor trees this time (week budget was tight, 4603/5000 minutes; writing trees that cannot ship yet was worth doing once for Busan/Sao Paulo above but not worth repeating at this volume). Fixed Italy's and United States' country page counts (39→40 cities/343→347 trees; 49→50/215→219) and ran `city_names.py` for both new cities. Build (5378 pages), preflight (0 problems, after two question_context word-count fixes and one count-promise wording fix in Pittsburgh's intro), qa.py (8390 pages, clean) and superlatives.py (360 claims, no collisions) all clean. Released both claims.
-
-Net for the whole window: 3 new cities (Hallstatt, Pisa, Pittsburgh), 12 trees shipped, 9 more banked verified-and-written or verified-only below floor across 4 cities (Busan, Sao Paulo, Monterey, Spokane, Boise, Indianapolis).
-## 2026-09-11 (session) - The photograph you take in the app now shows on the tree, and everything under the account was audited for it
-
-**Hidde, on his own account page: "waarom zie ik hier niet de foto die ik heb gemaakt in de app bij m'n eigen boom, alles moet cross device beschikbaar zijn wat onder je account hangt. Check of dit voor alles geldt."**
-
-**What was wrong, and it was not the sync.** The photograph had reached the
-account days earlier, file and all. Ticking off a tree WE map writes a sighting
-carrying that tree's id, and nothing ever showed those rows: the app filters
-them out of your list by design (`Sightings.yoursOnly` keeps `treeId == nil`)
-and `Sightings.forTree`, written for exactly this, had no caller anywhere; the
-website drew them as cards of their OWN, below our card for the same tree, which
-showed no photograph at all, and counted that tree twice in the numbers at the
-top. So the picture existed on the server and on no screen.
-
-**Fixed on both surfaces, to the references' rule** (Google Maps, iNaturalist,
-AllTrails, recorded in CONVENTIONS.md): the place keeps its own picture and
-yours is yours, labelled. Ours has 2,000-odd trees with no picture at all, which
-is not a state Google Maps is ever in, so **your photograph fills an empty slot,
-marked "Your photograph", and where we publish one, ours stays.**
-`TreeDetail.myShot` in the app, `my-trees-js.ts` on the website. One tree, one
-card, counted once. Rendered and LOOKED at, at 375px and desktop, against a
-stubbed account holding exactly his case.
-
-**Your own trees are on the profile map now too.** The app's Collect map has
-always drawn them beside the ticked ones; the website drew only ours.
-
-**The audit found two more, both in the same corner.** (1) **Votes never
-travelled in the app**: `MyVotes.load` keyed them on the submissions row's
-`tree` column, written as "id (name)", while every view reads `at_worthit_<id>`,
-so the restore at launch wrote a key nothing reads. The website, which matches
-on the id prefix, was right all along. (2) **A report was read back as a vote**:
-everything that was not "worth it" counted as a thumb down, including "report:
-wrong location", on a page whose thumb down was removed on 2026-09-04. Both
-fixed; reports now travel as reports. Everything else came back clean: saves,
-ticks, sightings, display name and avatar, blocks, units, follows.
-
-**And a check, because "everything" is the kind of promise that rots.**
-`scripts/crossdevice.py` refuses a store nobody has ruled on: every key the app
-writes to UserDefaults and the website to localStorage has to be named in
-`data/cross-device.json` as `account` (and which table carries it) or `device`
-(and why staying here is right). Same move as conventioncheck: it cannot judge
-the answer, only whether anybody asked. In the pre-push hook. 25 stores, 6
-account, 14 device.
-
-Build clean (5360 pages), qa clean (8357 pages), preflight 0 problems.
-
-**Later the same session, two mail fixes.** Hidde, on the thank-you he got for a
-tree he had added in the app, which closed by pointing him at the App Store:
-"onder deze mail hoeft geen verwijzing naar de app." Right, and it is the rule
-this file already followed for a published photograph: a link to the thing in
-your hand is not an invitation. A thank-you to somebody writing from inside the
-app now ends without it; everybody else still gets his standing 2026-09-03 line.
-
-**FOR HIDDE, parked on his own word ("kom later terug op a ik kan dit nu niet
-vanaf m'n tel doen"): sign-in, option A.** The website offers a magic link and
-the app cannot, because its typed route is hidden behind `Launch.emailSignIn`
-since 2026-08-30: Supabase's default mail sends a link rather than a code and
-the template needs custom SMTP. The objection that killed it then has expired,
-because this project already sends mail over SMTP (`OUTREACH_SMTP_*`, the Gmail
-app password) for reader replies, the weekly mail and the photo thank-yous. So
-it is a setting, not a new dependency.
-
-Three steps, all in his dashboard, ten minutes at a desk:
-
-1. Supabase, Auth, SMTP Settings: the same host, port, user, password and
-   sender that `OUTREACH_SMTP_*` already carries.
-2. Auth, Email Templates, Magic Link: put `{{ .Token }}` in it, so the mail
-   carries the six digits the app asks for. Template editing only unlocks once
-   step 1 is done.
-3. Tell me, and I flip `Launch.emailSignIn` and check both surfaces land on one
-   account.
-
-Worth a look while he is in there, because it may be worse than a missing app
-route: Auth, Users, the provider column. Supabase's built-in mail service
-delivers only to team addresses and is capped at a couple of messages an hour
-project-wide, so if all 12 accounts came in through Google, the site's own
-"Email me a sign-in link" has never reached a stranger. The full reasoning is
-CONVENTIONS.md, "One account, two surfaces, different sign-in buttons".
-
-**And the bug that fix uncovered: the "it is on the site now" mail has never been
-sent, not once, since 2026-09-03.** The auto-composed change confirmation
-carried no App Store link, mailcheck has required one on every letter since that
-morning, and the run prints HOLD and moves on, so a reader whose tip we acted on
-heard nothing. It carries the line now, and an app user's copy declares
-`audience: app user` in the draft header the way sightings_publish.py does, so
-the check passes without inviting somebody to an app they are holding. Both
-variants verified against mailcheck.
-
-**FOR HIDDE:** the app half is written but NOT built or swept: no Mac in this
-session, so Xcode never ran. The website half is verified. The app changes are
-small and mechanical (one new optional property on TreeDetail, one extra hero
-branch, two call sites, the MyVotes keying), and `ios.yml` will build and
-measure them on its next scheduled run. Worth a look on your own phone at a tree
-you have photographed: the picture should now be at the top of its page.
-
-## 2026-09-11 - New city Tulsa (1 tree), 159 trees got a real best_time for free, 13 country pages' stale counts fixed, and a batched verify pass cleared 5 thin cities
-
-7-day visits (`visitors.py`): 1264 visits, 1593 page views, trending down day over day (202 on 09-03 to 83 on 09-10).
-
-**Step 0 rung 4, `city_queue.py --next`'s "open the unopened" rule.** Genoa and Prague's two READY leads turned out to be false positives on inspection: Genoa's third Cinnamomum at Villa Durazzo Pallavicini was already correctly declined as padding risk by a concurrent run minutes earlier, and Prague's Dejvice oak's own Czech Wikipedia article says it grows at the fence *between* a kindergarten and a private sports club, which is worse access evidence than the lead file had, not better. Released both claims without shipping either.
-
-**Dispatched a batched verify pass on 5 unopened OPENABLE-today cities too thin to research alone (Adelaide, Busan, Zagreb, Sao Paulo, Tulsa, 9 candidates total from the global Wikidata sweep plus one Croatian register lead).** Result: 4 trees verified alive, 5 dead ends. Adelaide's "Old Gum Tree" has been a concrete-encased dead husk since 1963; Zagreb's "Dedek" oak fell in a May 2026 storm and its register lead ("Lipa na Medvednici") turned out to be a protected landscape around a place called Lipa, not a tree; two of Sao Paulo's three leads are dead or belong to a neighbouring municipality's register. Busan (2 trees) and Sao Paulo (1 tree) are held verified-but-unpublished below the 4-tree floor. **Tulsa's Creek Council Oak Tree clears the 2026-08-31 single-famous-tree exception outright**: the site where the Lochapoka Creek (Muscogee) Nation ended their 1836 forced removal and founded what became the city, National Register listed since 1976, still alive, ownership recently returned to the Nation. Wrote it up (species and two ownership dates left as open disagreements rather than resolved) and shipped it as a new one-tree place.
-
-**Free, zero-research work while the verify pass ran in the background:** `season_backfill.py` set a real `best_time` on 159 trees across 118 cities, derived only from species phenology files that already exist and already carry a genuine 'striking' or 'worth the trip' moment (553 left silent because their species has none, 6 because they're too close to the equator). `photo_hunt.py --recheck` refreshed the API sweep queue (2522 trees swept, new candidates surfaced for Alicante, Amerongen and Amersfoort, none judged, that's a viewing pass's job). Also fixed 13 country pages (`preflight.py`'s `check_country_counts()` flagged 12; a manual read of each one's own intro closing sentence, which that check never reads, found the same staleness repeated in 6 of them) — pure number corrections against real data/cities counts, no new claims. Had to fix United States again after Tulsa shipped and moved its own count.
-
-**Checked and found clear:** reader submissions (all 99 rows already carry an outcome), the sightings/photo inbox (0 waiting), site health (`health.py` rung 2: iOS app CI failed on its newest scheduled run, "Failed to terminate app" in `testBeginWalksTheWalk`, but this token can't dispatch a re-run to confirm and the failure matches an established pattern of scheduled-run-only simulator flakiness already documented twice this week for different tests/assertions; recorded rather than blind-fixed, since the project's own precedent requires repeat failures on the *same* assertion before touching a timeout), REVIEW.md's one WARN (app pluralization bug, explicitly marked as waiting for a session rather than a night run), page gaps (0), recognition-line backlog (100% coverage, both `--stuck` and `--gaps`), superlatives (357 claims, no collisions).
-
-Build (5360 pages), preflight (0 problems) and qa.py (8357 pages) clean throughout. Cost logged to `data/agent-costs.json` under 2026-09-11.
 
