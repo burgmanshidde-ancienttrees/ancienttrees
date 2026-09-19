@@ -314,6 +314,9 @@
       "Ba",
       "Bat"
     ],
+    "bedomin": [
+      "Bãdomino"
+    ],
     "beijing": [
       "Peking",
       "Pékin",
@@ -1276,6 +1279,12 @@
       "Groningo",
       "Grunnen",
       "Grunneng"
+    ],
+    "guernica": [
+      "Gernika-Lumo",
+      "Gernika",
+      "Guernica y Luno",
+      "Gerniko"
     ],
     "guimaraes": [
       "Gimarainsas",
@@ -2955,6 +2964,9 @@
       "Szenice",
       "Senitsa"
     ],
+    "senonches": [
+      "Senonciae"
+    ],
     "seoul": [
       "Seoel",
       "Seúl",
@@ -3083,6 +3095,9 @@
       "Carloviț",
       "Karlofça",
       "Carolovicia"
+    ],
+    "st-georgen-im-attergau": [
+      "Sankt Georgen im Attergau"
     ],
     "stary-smokovec": [
       "Stary Smokowiec",
@@ -3711,6 +3726,7 @@
     "bari": "Bari",
     "bataszek": "Bátaszék",
     "bath": "Bath, Somerset",
+    "bedomin": "Będomin",
     "beijing": "Beijing",
     "belfast": "Belfast",
     "belgrade": "Belgrade",
@@ -3832,7 +3848,6 @@
     "geneva": "Geneva",
     "genoa": "Genoa",
     "gent": "Ghent",
-    "gernika-lumo": "Guernica",
     "ghent": "Ghent",
     "ghisonaccia": "Ghisonaccia",
     "giessen": "Giessen",
@@ -3852,6 +3867,7 @@
     "groningen": "Groningen",
     "groton": "Groton, Suffolk",
     "guerneville": "Guerneville, California",
+    "guernica": "Guernica",
     "guimaraes": "Guimarães",
     "gumeli": "Gümeli",
     "gutau": "Gutau",
@@ -4130,6 +4146,7 @@
     "seattle": "Seattle",
     "segovia": "Segovia",
     "senica": "Senica",
+    "senonches": "Senonches",
     "seoul": "Seoul",
     "sequoia-national-park": "Sequoia National Park",
     "setubal": "Setúbal",
@@ -4151,6 +4168,7 @@
     "split": "Split, Croatia",
     "spokane": "Spokane, Washington",
     "sremski-karlovci": "Sremski Karlovci",
+    "st-georgen-im-attergau": "Sankt Georgen im Attergau",
     "stary-smokovec": "Starý Smokovec",
     "stelmuze": "Stelmužė",
     "stockholm": "Stockholm",
@@ -4203,6 +4221,7 @@
     "utrecht": "Utrecht",
     "uzovska-panica": "Uzovská Panica",
     "valencia": "Valencia",
+    "valentin-tineo": "Valentin",
     "vancouver": "Vancouver",
     "vassununga": "Vassununga State Park",
     "velke-borove": "Veľké Borové",
@@ -4329,6 +4348,7 @@
     "trollskogen": "Trollskogen",
     "ueki": "Ueki, Kumamoto",
     "untermerzbach": "Untermerzbach",
+    "valentin-tineo": "Valentin",
     "velke-opatovice": "Velké Opatovice",
     "vir": "Vír",
     "vorden": "Vorden",
@@ -4384,6 +4404,7 @@
     "plauginiai-forest": "no article within 40 km, tried Plauginiai Forest; Plauginiai Forest, Lithuania",
     "prosec-pod-jestedem": "no article within 40 km, tried Prosec pod Jestedem; Prosec pod Jestedem, Czech Republic; search: List of German names for places in the Czech Republic; search: List of municipalities in the Czech Republic; search: Surname inflection",
     "reinborn": "no article within 40 km, tried Reinborn; Reinborn, Germany; search: List of mountains and hills of the Taunus",
+    "reno-valdieu": "no article within 40 km, tried Réno-Valdieu; Réno-Valdieu, France; Rénovaldieu",
     "stokaiciai": "wrong match removed 2026-09-08: city_names.py matched the containing district (Tauragė District Municipality) rather than the village itself, which has no standalone Wikipedia article; kept unresolved rather than alias a one-tree page to a whole district's search terms.",
     "takahama": "no article within 40 km, tried Takahama (Takahama, no coordinates, disambiguation page); Takahama, Japan; search: Japan Air Lines Flight 123; search: Takahama, Aichi; search: Kyoshi Takahama",
     "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess.",

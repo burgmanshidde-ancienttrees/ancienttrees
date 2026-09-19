@@ -151,3 +151,83 @@ export function checkCountPromises(cityData: CountPromiseCity, canonical: string
     }
   }
 }
+
+interface CountPromisePark {
+  title?: string;
+  meta_description?: string;
+  intro?: string;
+}
+
+// A park page's own count promises, added 2026-09-18. The city version above
+// has guarded cities since Florence went to fifteen still saying ten; park
+// pages were never covered, and the same drift was live on eight of them,
+// found while measuring our coverage of the world's best-known parks
+// (scripts/park_demand.py). Singapore Botanic Gardens said eight and mapped
+// twenty-four, the Parc d'Egmont said six and mapped sixteen, Caserta said
+// seven and mapped sixteen. Nothing was watching, because a park page's count
+// is not a city's: the park grows when a tree in that city gains an address
+// naming the park, which no city-level check can see.
+//
+// The title is checked here and is not for cities, because a city title is
+// generated and corrects itself while a park's is hand-written, and the title
+// is the line Google prints.
+const PARK_TITLE: PromisePattern[] = [
+  // "…: 13 to Find", "…: 7 Worth Finding", "…: 16 Giants"
+  {
+    rx: new RegExp(`${NOT_MID_WORD}(${N})\\s+(?:to Find|Worth Finding|Giants|to Visit)\\b`, "gi"),
+    allowed: (n) => new Set([n]),
+    scope: new Set(["title"]),
+  },
+  // "The Oldest Tree in Park Sonsbeek, and 7 More to Find": one tree is named
+  // in the title, so the page holds the number in the text plus that one.
+  // (allowed() is handed the number FOUND in the copy and returns the tree
+  // counts that number would be honest about, which is the opposite direction
+  // from the one it reads like. Writing it backwards here made the check
+  // reject the corrected title it was written to protect.)
+  {
+    rx: new RegExp(`\\band\\s+${NOT_MID_WORD}(${N})\\s+More\\b`, "gi"),
+    allowed: (n) => new Set([n + 1]),
+    scope: new Set(["title"]),
+  },
+  // "Ten of the trees we map stand here." The standard park intro closer, and
+  // where this drift actually lived: Brisbane, Valencia, Padua and Brussels
+  // each had it naming the old count. The city patterns above miss it, because
+  // they match "of the ten trees" with the number after "of the", not before.
+  {
+    rx: new RegExp(`${NOT_MID_WORD}(${N})\\s+of the trees we map\\b`, "gi"),
+    allowed: (n) => new Set([n]),
+    scope: new Set(["title", "meta_description", "intro"]),
+  },
+];
+
+export function checkParkCountPromises(park: CountPromisePark, n: number, canonical: string): void {
+  const fields: [string, string][] = [
+    ["title", park.title ?? ""],
+    ["meta_description", park.meta_description ?? ""],
+    ["intro", park.intro ?? ""],
+  ];
+  // Every pattern against every field, with scope deciding, rather than one
+  // list per field: the first version handed the title to PARK_TITLE and the
+  // prose to PROMISE, so a pattern scoped to all three fields still only ever
+  // ran on the title, and the park intro closer it was written for went
+  // unchecked. A park title counts as summary copy for the city patterns,
+  // which is what the meta_description fallback below says.
+  const patterns = [...PROMISE, ...PARK_TITLE];
+  for (const [key, text] of fields) {
+    if (!text) continue;
+    for (const { rx, allowed, scope } of patterns) {
+      if (!scope.has(key) && !(key === "title" && scope.has("meta_description"))) continue;
+      rx.lastIndex = 0;
+      let m: RegExpExecArray | null;
+      while ((m = rx.exec(text))) {
+        const word = m[1].toLowerCase();
+        const claims = allowed(/^\d+$/.test(word) ? parseInt(word, 10) : NUMBER_WORDS[word]);
+        if (Math.min(...claims) < 4 || claims.has(n)) continue;
+        const claimsStr = [...claims].sort((a, b) => a - b).join("/");
+        throw new Error(
+          `${canonical}: ${key} still promises ${claimsStr} trees but the park has ${n} (${JSON.stringify(m[0])})`,
+        );
+      }
+    }
+  }
+}

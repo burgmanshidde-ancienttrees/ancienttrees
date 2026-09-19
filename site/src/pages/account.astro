@@ -121,32 +121,24 @@ const canonical = `${BASE_URL}/account`;
     <div id="pane-mine" role="tabpanel" aria-labelledby="lane-mine">
       <ul id="visited-list" class="saved-list" hidden></ul>
       <ul id="mine-list" class="saved-list" hidden></ul>
-      <p id="mine-empty" hidden>Nothing here yet. Check in at a tree when you are standing in front of it, or add one of your own. <a href="/explore">Find a tree near you</a>.</p>
+      {/* THE APP'S OWN EMPTY LINES (Collect.swift), one sentence each, rather
+          than the three-clause versions this page had written for itself. The
+          method differs by surface and only the method: a laptop has no camera
+          in a park, so the web says the form. */}
+      <p id="mine-empty" hidden>You add a tree here by photographing it in the app, or by <a href="/contribute?kind=tree">telling us about one</a>.</p>
     </div>
 
     <div id="pane-saved" role="tabpanel" aria-labelledby="lane-saved" hidden>
       <ul id="saved-list" class="saved-list" hidden></ul>
-      <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
+      <p id="saved-empty" hidden>No favourites yet. Tap a heart anywhere to keep a tree here.</p>
     </div>
   </section>
 
-  <!-- UNITS (2026-09-12). The convention, looked up rather than remembered:
-       AllTrails and komoot both keep one Units switch in account settings and
-       apply it to web and app alike, and Google Maps decides from your region
-       by default with the override in settings. Nobody puts a unit toggle
-       beside a distance on the page.
-       It writes the same profiles.units the app writes, so the switch follows
-       you between the phone and the laptop rather than being set twice. It
-       stays hidden until that column answers, because a control that cannot
-       store anything is worse than no control. -->
-  <section class="acct-card" id="st-units" hidden>
-    <h2>Distances</h2>
-    <div class="unit-pick" role="group" aria-label="Distance units">
-      <button type="button" class="unit-btn" data-unit="km">Kilometers</button>
-      <button type="button" class="unit-btn" data-unit="mi">Miles</button>
-    </div>
-    <p class="acct-fine" id="unit-note">Following where you are. It applies on the app too.</p>
-  </section>
+  <!-- UNITS lived here until 2026-09-18 and is in /account/settings now, which
+       is where the app keeps it (Screens/Profile.swift) and what this page's
+       own rule above says: settings are not on the profile, they sit behind
+       the gear. Same convention as AllTrails and komoot, which keep one Units
+       switch in account settings and apply it to web and app alike. -->
   </div>
   </aside>
   <div class="stage">

@@ -641,18 +641,25 @@ def check_nothing_is_stored_locally():
     a person accumulates lives in the account. sessionStorage counts as storage
     and is refused for the same reason.
 
-    The two deliberate exceptions are named here rather than left implicit:
-    `at_notrack` is a privacy opt-out that would be pointless on a server, and
-    the contribute draft (`at_contribute_draft`) protects text somebody has
-    typed and not yet sent, which is not something they have saved to a
-    collection. A key built from a variable is refused whatever it holds,
-    because the allowlist can only read literals; write the name out."""
+    The deliberate exceptions are not listed here any more. They are read from
+    `data/cross-device.json`, which since 2026-09-11 registers EVERY store on
+    either surface with a verdict: `device` means staying on the phone or in
+    the browser is correct, `account` means it hangs under the account. So the
+    browser may keep exactly the stores ruled `device`, and this check and
+    crossdevice.py cannot drift apart, because there is one register rather
+    than a list per script (2026-09-18: a session wrote a second list for the
+    app before noticing the first one existed, which is the duplication this
+    corpus keeps recording under another name).
+
+    A key built from a variable is refused whatever it holds, because a list
+    can only read literals; write the name out."""
     out = []
     root = Path(__file__).resolve().parent.parent
     src = root / "site" / "src"
     if not src.exists():
         return out
-    allowed = {"ancienttrees_session", "at_notrack", "at_contribute_draft"}
+    register = json.loads((root / "data" / "cross-device.json").read_text(encoding="utf-8"))
+    allowed = {k for k, v in register["stores"].items() if v["verdict"] == "device"}
     offenders = []
     for f in sorted(list(src.rglob("*.ts")) + list(src.rglob("*.astro"))):
         text = f.read_text(encoding="utf-8")
@@ -1860,6 +1867,74 @@ def check_every_language_gets_the_same_controls():
     return out
 
 
+def check_the_session_is_known_before_anything_asks():
+    """The nineteenth ratchet check, from 2026-09-18.
+
+    Hidde, on the whole sign-in flow: it is clunky which pages you land on. One
+    cause was underneath most of it and invisible to every gate we had. A magic
+    link and a Google return come back as an ORDINARY PAGE LOAD with the tokens
+    in the URL fragment, and that fragment was parsed at the FOOT of the body.
+    Every script that asks who you are runs earlier: the hearts
+    (tree-actions-js), the ticks (visited-sync-js), the worth-it vote,
+    /account/settings. All of them asked before the answer existed, got null,
+    and painted the page as signed out. You came back from Google onto the tree
+    you were reading with your own saves invisible until you reloaded by hand.
+
+    It hid for as long as it did because the two surfaces anybody checks were
+    the two that happened to be fine: /account parses the fragment itself, and
+    the nav's "Account" swap is a type="module" script, which the browser defers
+    until after every classic script, so it was right by accident of deferral.
+
+    So the check is the ordering itself, read off the built page rather than
+    trusted to whoever next moves an import: whatever reads the session must
+    read it AFTER the head has had the chance to write it."""
+    out = []
+    late = []
+    missing = []
+    deferred = []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        reads = [i for i in (html.find("getItem('ancienttrees_session')"),
+                             html.find('getItem("ancienttrees_session")'))
+                 if i != -1]
+        if not reads:
+            continue
+        caught = html.find("window.atJustSignedIn =")
+        if caught == -1:
+            missing.append(str(page.relative_to(DIST)))
+            continue
+        if caught > min(reads):
+            late.append(str(page.relative_to(DIST)))
+            continue
+        # BEING FIRST IN THE DOCUMENT IS NOT BEING FIRST TO RUN, which is the
+        # subtlety that hid the original bug: the nav's own signed-in swap is a
+        # type="module" script and the browser defers those until every classic
+        # script has run, so it was right by accident while the rest of the page
+        # was wrong. A module here would put the catch last however early it is
+        # written, and the position check above could not tell.
+        tag = html.rfind("<script", 0, caught)
+        if tag != -1 and "module" in html[tag:html.find(">", tag) + 1]:
+            deferred.append(str(page.relative_to(DIST)))
+    if missing:
+        out.append("%d page(s) read the stored session and never catch the "
+                   "sign-in token at all (SIGNIN_CATCH_JS is missing from the "
+                   "head), e.g. %s"
+                   % (len(missing), ", ".join(missing[:5])))
+    if late:
+        out.append("%d page(s) read the stored session BEFORE the head catches "
+                   "the token from the url fragment, so landing there from a "
+                   "magic link or a Google return paints the page signed out "
+                   "(the 2026-09-18 landing bug), e.g. %s"
+                   % (len(late), ", ".join(late[:5])))
+    if deferred:
+        out.append("%d page(s) catch the sign-in token in a type=\"module\" "
+                   "script, which the browser defers until after every classic "
+                   "script, so it runs too late however early it is written, "
+                   "e.g. %s"
+                   % (len(deferred), ", ".join(deferred[:5])))
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -1883,6 +1958,7 @@ def main():
     failures += check_photo_orientation()
     failures += check_photo_resolution()
     failures += check_save_flow_integrity()
+    failures += check_the_session_is_known_before_anything_asks()
     failures += check_tick_has_its_wiring()
     failures += check_sheet_integrity()
     failures += check_inline_scripts_parse()

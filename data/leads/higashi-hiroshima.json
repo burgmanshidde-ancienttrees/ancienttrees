@@ -10,7 +10,7 @@
   "city_filter": "東広島市",
   "scope": "32 rows split out of data/leads/hiroshima.json on 2026-09-07: the ministry register export for Hiroshima prefecture (place_filter around Hiroshima city) included Higashi-Hiroshima rows, a separate incorporated city roughly 25-40km east of central Hiroshima with its own eventual city page. Never researched as Hiroshima entries; unmined.",
   "caveat": "NO COORDINATES. The database gives prefecture, municipality and an address line, never a lat/lon, and its schema carries a position-disclosure field with a reason-for-withholding beside it. So this is a lead list: it says which trees exist and how big they are, and every pin is a separate job. Girth is the survey figure at 確認年月日, often 2000, so add the years since. Hard rule 10 still applies per tree.",
-  "count": 32,
+  "count": 27,
   "leads": [
     {
       "report_id": 53212,
@@ -302,52 +302,6 @@
       "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
     },
     {
-      "report_id": 53627,
-      "branch_number": 1,
-      "species_ja": "ウラジロガシ",
-      "name_ja": null,
-      "girth_cm": 350.0,
-      "height_m": null,
-      "health_ja": "一部枯損",
-      "alive_hint": true,
-      "prefecture_ja": "広島県",
-      "municipality_ja": "東広島市",
-      "surveyed": "2000年",
-      "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53627&branch_number=1",
-      "age_band_ja": "不明",
-      "owner_category_ja": "社寺",
-      "facility_ja": "森政神社境内",
-      "town_ja": "福富町上竹仁",
-      "latitude": 34.529455,
-      "longitude": 132.714514,
-      "geocode_display_name": "福富町上竹仁, 東広島市, 広島県, 739-2302, 日本",
-      "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
-    },
-    {
-      "report_id": 53628,
-      "branch_number": 1,
-      "species_ja": "モミ",
-      "name_ja": null,
-      "girth_cm": 300.0,
-      "height_m": null,
-      "health_ja": "一部枯損",
-      "alive_hint": true,
-      "prefecture_ja": "広島県",
-      "municipality_ja": "東広島市",
-      "surveyed": "2000年",
-      "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53628&branch_number=1",
-      "age_band_ja": "不明",
-      "owner_category_ja": "社寺",
-      "facility_ja": "森政神社裏",
-      "town_ja": "福富町上竹仁",
-      "latitude": 34.529455,
-      "longitude": 132.714514,
-      "geocode_display_name": "福富町上竹仁, 東広島市, 広島県, 739-2302, 日本",
-      "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
-    },
-    {
       "report_id": 53630,
       "branch_number": 1,
       "species_ja": "ブナ",
@@ -363,7 +317,8 @@
       "age_band_ja": "100～199年",
       "owner_category_ja": "国",
       "facility_ja": "鷹ノ巣山頂付近",
-      "town_ja": "福富町久芳"
+      "town_ja": "福富町久芳",
+      "verify_pass_note": "Verify pass 2026-09-19: confirmed this is a real, named, protected feature, not just a register address. Mt Takanosu (鷹ノ巣山, 922m) is Higashi-Hiroshima's highest point, straddling the border with Aki-Takada City. Its east summit slope carries a 4-hectare natural beech grove designated a Forestry Agency protected forest ('鷹ノ巣山ブナ・モミ希少個体群保護林'), recorded as one of the southern range limits for beech in Hiroshima Prefecture (rinya.maff.go.jp/kinki/keikaku/shinrin_keikaku/protected_cloister/protected/attach/takanosu.html). It is a real, documented hiking destination with multiple independent trail writeups (YAMAP, yamahack.com, higashihiroshima-kanko.jp). Access: trailhead is ~10 min on foot from Kenou-no-Mori campground (県央の森キャンプ場) in Fukutomi-cho, ~35 min by car from Saijo IC; summit is ~2.5 hours' hike from the trailhead. NOT resolved: exact coordinates for either tree, the trailhead itself, or even the campground (Nominatim returned nothing usable for any of them; two search attempts each). Judgement call, left as a lead rather than published: a 2.5-hour hike to an unpinned grove is not 'one obvious place to stand' in the way a shrine tree is, and the two register entries (a beech at 53630, a fir at 53631, both sharing the '鷹ノ巣山の群生林/ブナの群生林' facility label) read as two measurements inside one named natural feature rather than two separate collectible points. If this ever ships it should be ONE ensemble entry ('the beech grove near the summit of Mt Takanosu') pinned at the trailhead with the hike stated honestly as a hike, not a walk, per the island-clustering doctrine's spirit even though this isn't an island. Needs a dedicated pass with OSM/GPX trail data to get real coordinates before it can be judged as collectible."
     },
     {
       "report_id": 53631,
@@ -381,7 +336,8 @@
       "age_band_ja": "100～199年",
       "owner_category_ja": "国",
       "facility_ja": "鷹ノ巣山",
-      "town_ja": "福富町"
+      "town_ja": "福富町",
+      "verify_pass_note": "Verify pass 2026-09-19: confirmed this is a real, named, protected feature, not just a register address. Mt Takanosu (鷹ノ巣山, 922m) is Higashi-Hiroshima's highest point, straddling the border with Aki-Takada City. Its east summit slope carries a 4-hectare natural beech grove designated a Forestry Agency protected forest ('鷹ノ巣山ブナ・モミ希少個体群保護林'), recorded as one of the southern range limits for beech in Hiroshima Prefecture (rinya.maff.go.jp/kinki/keikaku/shinrin_keikaku/protected_cloister/protected/attach/takanosu.html). It is a real, documented hiking destination with multiple independent trail writeups (YAMAP, yamahack.com, higashihiroshima-kanko.jp). Access: trailhead is ~10 min on foot from Kenou-no-Mori campground (県央の森キャンプ場) in Fukutomi-cho, ~35 min by car from Saijo IC; summit is ~2.5 hours' hike from the trailhead. NOT resolved: exact coordinates for either tree, the trailhead itself, or even the campground (Nominatim returned nothing usable for any of them; two search attempts each). Judgement call, left as a lead rather than published: a 2.5-hour hike to an unpinned grove is not 'one obvious place to stand' in the way a shrine tree is, and the two register entries (a beech at 53630, a fir at 53631, both sharing the '鷹ノ巣山の群生林/ブナの群生林' facility label) read as two measurements inside one named natural feature rather than two separate collectible points. If this ever ships it should be ONE ensemble entry ('the beech grove near the summit of Mt Takanosu') pinned at the trailhead with the hike stated honestly as a hike, not a walk, per the island-clustering doctrine's spirit even though this isn't an island. Needs a dedicated pass with OSM/GPX trail data to get real coordinates before it can be judged as collectible."
     },
     {
       "report_id": 53634,
@@ -478,48 +434,6 @@
       "banchi_ja": "787"
     },
     {
-      "report_id": 53641,
-      "branch_number": 1,
-      "species_ja": "モミ",
-      "name_ja": null,
-      "girth_cm": 340.0,
-      "height_m": null,
-      "health_ja": "良好",
-      "alive_hint": true,
-      "prefecture_ja": "広島県",
-      "municipality_ja": "東広島市",
-      "surveyed": "2000年",
-      "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53641&branch_number=1",
-      "age_band_ja": "不明",
-      "owner_category_ja": "社寺",
-      "facility_ja": "安宿八幡神社",
-      "town_ja": "豊栄町安宿"
-    },
-    {
-      "report_id": 53642,
-      "branch_number": 1,
-      "species_ja": "クロマツ",
-      "name_ja": null,
-      "girth_cm": 330.0,
-      "height_m": null,
-      "health_ja": "良好",
-      "alive_hint": true,
-      "prefecture_ja": "広島県",
-      "municipality_ja": "東広島市",
-      "surveyed": "2000年",
-      "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53642&branch_number=1",
-      "age_band_ja": "不明",
-      "owner_category_ja": "社寺",
-      "facility_ja": "徳善寺",
-      "town_ja": "豊栄町能良",
-      "banchi_ja": "289",
-      "latitude": 34.5429828,
-      "longitude": 132.8376949,
-      "geocode_display_name": "徳善寺, 河戸豊栄線, 豊栄町能良, 東広島市, 広島県, 739-2316, 日本",
-      "location_precision_hint": "site",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk."
-    },
-    {
       "report_id": 53645,
       "branch_number": 1,
       "species_ja": "モミ",
@@ -597,7 +511,8 @@
       "longitude": 132.8360225,
       "geocode_display_name": "河内町, 東広島市, 広島県, 739-2204, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_pass_note": "Verify pass 2026-09-19: no second source and no usable coordinate found for the 河内町 (Kochi-cho) cluster despite repeated searches (鶴亀山 河内町, 郡戸八幡神社, the town's own cultural-properties page at city.higashihiroshima.lg.jp/.../town/kochi/, and the local residents' association site youaisunkouchi.com/localinformation, which names 杉森神社 and 竹林寺 as the town's notable religious sites but neither 鶴亀山 nor 郡戸八幡神社). Nominatim returned nothing for either facility name. The shared fallback coordinate already on this record (34.5150164, 132.8360225) is confirmed still a bare 河内町 postal-area centroid, not a real fix, per the existing geocode_note; did not improve on it and it should not be used to publish. Kochi-cho is a real place (JR Sanyo Main Line stations at Kochi and Irino) but these three trees remain unlocatable at better than town level. Leave as leads for a pass that can search the Japanese-language facility names directly against a local shrine registry (広島県神社庁 lists shrines by area but the site search did not surface either name) or find an aerial/OSM natural=tree node."
     },
     {
       "report_id": 53656,
@@ -620,7 +535,8 @@
       "longitude": 132.8360225,
       "geocode_display_name": "河内町, 東広島市, 広島県, 739-2204, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_pass_note": "Verify pass 2026-09-19: no second source and no usable coordinate found for the 河内町 (Kochi-cho) cluster despite repeated searches (鶴亀山 河内町, 郡戸八幡神社, the town's own cultural-properties page at city.higashihiroshima.lg.jp/.../town/kochi/, and the local residents' association site youaisunkouchi.com/localinformation, which names 杉森神社 and 竹林寺 as the town's notable religious sites but neither 鶴亀山 nor 郡戸八幡神社). Nominatim returned nothing for either facility name. The shared fallback coordinate already on this record (34.5150164, 132.8360225) is confirmed still a bare 河内町 postal-area centroid, not a real fix, per the existing geocode_note; did not improve on it and it should not be used to publish. Kochi-cho is a real place (JR Sanyo Main Line stations at Kochi and Irino) but these three trees remain unlocatable at better than town level. Leave as leads for a pass that can search the Japanese-language facility names directly against a local shrine registry (広島県神社庁 lists shrines by area but the site search did not surface either name) or find an aerial/OSM natural=tree node."
     },
     {
       "report_id": 53657,
@@ -643,27 +559,70 @@
       "longitude": 132.8360225,
       "geocode_display_name": "河内町, 東広島市, 広島県, 739-2204, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
-    },
-    {
-      "report_id": 53664,
-      "branch_number": 1,
-      "species_ja": "イチョウ",
-      "name_ja": null,
-      "girth_cm": 530.0,
-      "height_m": null,
-      "health_ja": "良好",
-      "alive_hint": true,
-      "prefecture_ja": "広島県",
-      "municipality_ja": "東広島市",
-      "surveyed": "1988年",
-      "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53664&branch_number=1",
-      "age_band_ja": "300年以上",
-      "owner_category_ja": "社寺",
-      "town_ja": "安芸津町"
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_pass_note": "Verify pass 2026-09-19: no second source and no usable coordinate found for the 河内町 (Kochi-cho) cluster despite repeated searches (鶴亀山 河内町, 郡戸八幡神社, the town's own cultural-properties page at city.higashihiroshima.lg.jp/.../town/kochi/, and the local residents' association site youaisunkouchi.com/localinformation, which names 杉森神社 and 竹林寺 as the town's notable religious sites but neither 鶴亀山 nor 郡戸八幡神社). Nominatim returned nothing for either facility name. The shared fallback coordinate already on this record (34.5150164, 132.8360225) is confirmed still a bare 河内町 postal-area centroid, not a real fix, per the existing geocode_note; did not improve on it and it should not be used to publish. Kochi-cho is a real place (JR Sanyo Main Line stations at Kochi and Irino) but these three trees remain unlocatable at better than town level. Leave as leads for a pass that can search the Japanese-language facility names directly against a local shrine registry (広島県神社庁 lists shrines by area but the site search did not surface either name) or find an aerial/OSM natural=tree node."
     }
   ],
   "blocked": [],
   "coordinate_trap": "THE DETAIL PAGES DO NOT PUBLISH A PER-TREE COORDINATE, and they look as though they do. Each page's inline script sets mapLat and mapLon, and 80 of these 102 records carry the identical value 37.68,140.76, which is in Fukushima, about 600 km from Hiroshima. It is the site's default map centre. The remaining 22 set it to an empty string. Scraping that field would have put an entire city's worth of trees in the wrong prefecture. Checked 2026-08-16 across all 102 records. Position here comes from geocoding the facility name and the ministry's own address instead, and every geocoded record says which of the two it got.",
-  "enriched": "2026-08-16: all 102 detail pages fetched at 1.5s intervals. The list extract had missed four fields the pages carry: 樹齢（推定）, an estimated age band, on 25 of them; 所有者・管理者区分, the owner category, on all of them; 名称（施設名）, the facility name, on 73; and the street address on 69. The owner category is the valuable one, because it answers hard rule 10 from the register itself: 72 of 102 stand on shrine or temple ground, which is the sacred-ground pattern the search doctrine says to look for first, and 20 are private."
+  "enriched": "2026-08-16: all 102 detail pages fetched at 1.5s intervals. The list extract had missed four fields the pages carry: 樹齢（推定）, an estimated age band, on 25 of them; 所有者・管理者区分, the owner category, on all of them; 名称（施設名）, the facility name, on 73; and the street address on 69. The owner category is the valuable one, because it answers hard rule 10 from the register itself: 72 of 102 stand on shrine or temple ground, which is the sacred-ground pattern the search doctrine says to look for first, and 20 are private.",
+  "verify_pass_2026_09_18": {
+    "delivered_to": "data/research/higashi-hiroshima-verified.json",
+    "delivered_ids": [
+      "hgh_020",
+      "hgh_021",
+      "hgh_022",
+      "hgh_023",
+      "hgh_024",
+      "hgh_025",
+      "hgh_026",
+      "hgh_027",
+      "hgh_028",
+      "hgh_029",
+      "hgh_030",
+      "hgh_031"
+    ],
+    "report_ids_used": [
+      53212,
+      53213,
+      53214,
+      53636,
+      53637,
+      53638,
+      53640,
+      53645,
+      53646,
+      53647,
+      53634,
+      53622
+    ],
+    "report_ids_still_leads": {
+      "53216": "Kuromatsu at Chofuku-ji, girth 4.00m, health near-death (枝損死寸前) per 1988 survey, no coordinates resolved, no second source found this pass. Health concern means it may well be dead by now; needs a fresh check before spending more research time.",
+      "53217": "Tabu-noki at Ogura Shrine, girth 3.40m, health near-death per 1988 survey, no second source found. Same caution as above.",
+      "53219": "Keyaki at Nakahara Shrine, Shiwa-cho, girth 3.50m, good health. Nominatim resolved to a nearby road rather than the shrine, needs a real coordinate fix; found the shrine’s postal address (志和町志和東甲４６３０) but no second source describing the tree itself yet.",
+      "53220": "Momi at Omiya Hachiman Shrine, girth 3.00m, good health, no coordinates, not searched this pass.",
+      "53221": "Sugi at Omiya Hachiman Shrine, girth 3.30m, good health, no coordinates, not searched this pass.",
+      "53222": "Akagashi at Otani Hachiman Shrine, girth 5.20m (large), health near-death per 1988 survey. Searched but could not confidently identify the correct shrine (multiple similarly-named Hachiman shrines in the area, one candidate found was in a different prefecture). Needs a more careful identification pass plus a health recheck before publishing given the near-death flag.",
+      "53619": "Icho at Ota Setsukyodo (a Buddhist meeting hall), girth 3.34m, good health, owner other-public. No second source found, no coordinates.",
+      "53623": "Sugi at Okayama Hachiman Shrine precincts, girth 5.55m (very large), good health, address-level coordinate only. Searched; a superficially matching \"Hachiman Shrine great cedar\" record on bunka.go.jp turned out to be an unrelated tree in Kaga City, Ishikawa Prefecture, not this one. No genuine second source found this pass.",
+      "53625": "Sugi at Kyubu Hachiman Shrine precincts, girth 5.56m (very large), good health, address-level coordinate only. Same false-lead caution as 53623; no genuine second source found this pass.",
+      "53627": "Urajirogashi at Morimasa Shrine, girth 3.50m, partial dieback, address-level coordinate. No second source found.",
+      "53628": "Momi behind Morimasa Shrine, girth 3.00m, partial dieback, same site as 53627. No second source found.",
+      "53630": "Buna, part of a named beech grove (ブナの群生林) near the summit of Mt. Takanosu, girth 5.20m, partial dieback, age band 100-199 years, owner national land. No coordinates resolved; remote mountain-summit location, likely reached only by a hiking trail. Worth a dedicated pass: could be a genuine ensemble destination but needs coordinates and an access check first.",
+      "53631": "Momi, same beech grove near Mt. Takanosu summit as 53630, girth 3.10m, good health, age band 100-199 years. Same caveats.",
+      "53641": "Momi at Ayado (Asukabe) Hachiman Shrine, girth 3.40m, good health, no coordinates, not searched this pass.",
+      "53655": "Abemaki at a site called Tsurukameyama shrine grounds, girth 3.90m, partial dieback, address-level coordinate shared suspiciously with 53656 and 53657 (all three geocoded to the same point despite different facility names, which suggests a fallback postal centroid rather than a real match). Needs a coordinate recheck.",
+      "53656": "Hinoki at the same Tsurukameyama site as 53655, girth 3.00m, partial dieback. Same coordinate caveat.",
+      "53657": "Momi at Gundo Hachiman Shrine, girth 3.20m, good health, shares the same suspect coordinate as 53655/53656 despite being a different facility name. Needs a coordinate recheck.",
+      "53664": "Icho, girth 5.30m (very large), good health, age band 300+ years, no facility name recorded at all and no coordinates. The single biggest girth left unresolved in this leads file; worth a dedicated identification pass since the register gives almost nothing else to go on."
+    },
+    "note": "Health flags of 枝損死寸前 (near-death) on 53216, 53217 and 53222 are all from the 1988 survey, 38 years old; none were pursued to a second source this pass and none should be assumed alive without a fresh check."
+  },
+  "published_out": [
+    53627,
+    53628,
+    53641,
+    53642,
+    53664
+  ]
 }

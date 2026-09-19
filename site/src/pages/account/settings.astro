@@ -58,20 +58,64 @@ const crumbItems: [string, string | null][] = [
   <p id="set-out" class="acct-sub" hidden>You are not signed in. <a href="/account">Sign in</a> to change anything here.</p>
 
   <section id="set-in" hidden>
+    {/* THE APP'S OWN WORDS, and only those (Hidde, 2026-09-18: "there is a lot
+        of random copy on the profile page on web that's not in app, delete it
+        and follow app design and copy example").
+
+        What stood here was two paragraphs the app has never said: one telling
+        you what a name is for ("people can find you in the app to follow your
+        trees, leave it empty and nobody can") and one explaining that your
+        trees are kept under your address and how to move them. The app's
+        editor carries a single line under each field, and the address
+        explanation lives on the delete screen, which is the only place
+        somebody asks the question it answers. */}
     <p class="acct-group">Account</p>
     <div class="acct-rows">
+      {/* YOUR PICTURE, the app's own row (Screens/ProfileEditor.swift), which
+          the website could read and never set: somebody who had never opened
+          the app had no way to have one at all.
+
+          Convention: the app uses PhotosPicker, which has no web equivalent,
+          so this is the file-input-behind-a-button every site uses for the
+          same job (GitHub's "Edit" on the avatar, Strava's "Change photo",
+          Airbnb's "Upload"). CONVENTIONS.md carries the entry. What does NOT
+          differ is everything underneath: the same 512px JPEG at quality 0.8,
+          the same avatars/<user-id>/avatar.jpg, the same profiles row. */}
       <div class="acct-row">
-        <label for="in-name">The name people see</label>
+        <label for="pic-pick">Your picture</label>
+        <div class="acct-pic-row">
+          <span class="profile-avatar acct-pic" id="pic-preview" aria-hidden="true"></span>
+          <button type="button" id="pic-pick" class="go-btn">Choose a photo</button>
+          <input id="in-pic" type="file" accept="image/*" hidden />
+        </div>
+        <p class="acct-fine">Optional. People who follow you see it beside your name.</p>
+      </div>
+      <div class="acct-row">
+        <label for="in-name">Your name</label>
         <div class="acct-name-row">
           <input id="in-name" type="text" maxlength="40" autocomplete="nickname"
-                 placeholder="Nobody sees this until you set it" />
+                 placeholder="The name people see" />
           <button type="button" id="save-name" class="go-btn">Save</button>
         </div>
-        <p class="acct-fine" id="name-note">Set a name and people can find you in the app to follow your trees. Leave it empty and nobody can.</p>
+        <p class="acct-fine" id="name-note">Any name you like. It does not have to be your real one.</p>
+        {/* The line under the field stays put, as the app's footer does, and
+            what a save had to say gets its own line rather than eating it. */}
+        <p class="acct-fine" id="name-status" role="status" hidden></p>
       </div>
       <div class="acct-row">
         <label>Signed in as</label>
-        <p class="acct-fine"><strong id="set-email"></strong>. Your trees are kept under this address. To move your collection to another one, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
+        <p class="acct-email" id="set-email"></p>
+      </div>
+      {/* DISTANCES, where the app keeps it (Screens/Profile.swift's settings
+          card). It sat on /account, which is the profile rather than the
+          settings, and carried a note saying which way it was following. The
+          buttons say that themselves. */}
+      <div class="acct-row" id="st-units" hidden>
+        <label>Distances</label>
+        <div class="unit-pick" role="group" aria-label="Distance units">
+          <button type="button" class="unit-btn" data-unit="km">Kilometers</button>
+          <button type="button" class="unit-btn" data-unit="mi">Miles</button>
+        </div>
       </div>
     </div>
 
@@ -98,6 +142,18 @@ const crumbItems: [string, string | null][] = [
         disclosure triangle. */}
     <div class="acct-rows acct-rows-sep">
       <button type="button" id="signout" class="acct-row acct-linkrow acct-rowbtn">Sign out</button>
+      {/* ASKED FIRST, as the app asks (Screens/Profile.swift, Hidde 2026-08-24:
+          "dit is raar" about signing out on one tap). It matters more here than
+          the word suggests: what it looks like you are about to lose is your
+          collection. The app draws it as a confirmation dialog on the button
+          and this page draws it as the panel the delete row beside it already
+          uses, which is the both-surfaces rule read correctly: the behaviour
+          matches, the design is each surface's own. */}
+      <div id="out-panel" class="acct-danger-body" hidden>
+        <p class="acct-fine">Your trees stay on your account. Signing in again on any device brings them back.</p>
+        <button type="button" id="out-yes" class="go-btn">Sign out</button>
+        <button type="button" id="out-no" class="acct-link">Stay signed in</button>
+      </div>
     </div>
     <div class="acct-rows">
       <button type="button" id="del-open" class="acct-row acct-linkrow acct-rowbtn danger">Delete account</button>
@@ -108,10 +164,15 @@ const crumbItems: [string, string | null][] = [
         zeker"). This page asked once, behind a disclosure triangle. A typed
         word is a real second act rather than a second tap in the same place. */}
     <div id="del-panel" class="acct-danger-body" hidden>
-      <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. Deleting your account removes all of it, and it cannot be undone.</p>
+      {/* The app's delete screen, sentence for sentence, including the one
+          about using a different address. That line used to sit at the top of
+          this page beside the email, where nobody was asking it. */}
+      <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. You can delete all of it from this screen.</p>
+      <p class="acct-fine">We delete your email address and your collection. This cannot be undone.</p>
+      <p class="acct-fine">To use a different address, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a> and we will move your collection across.</p>
       <label for="del-confirm">Type DELETE to confirm</label>
       <input id="del-confirm" type="text" autocomplete="off" autocapitalize="characters" placeholder="DELETE" />
-      <button type="button" id="del-acct" class="go-btn danger" disabled>Delete my account</button>
+      <button type="button" id="del-acct" class="go-btn danger" disabled>Delete account</button>
     </div>
   </section>
 </main>
@@ -138,60 +199,245 @@ const crumbItems: [string, string | null][] = [
     .then(function(r) { return r.ok ? r.json() : null; })
     .then(function(u) {
       if (!u) return;
-      if (u.email) document.getElementById("set-email").textContent = u.email;
+      if (u.email) {
+        document.getElementById("set-email").textContent = u.email;
+        // A letter rather than an empty circle while we find out whether
+        // there is a picture, which is what the profile head already does.
+        initial(u.email);
+      }
       if (!u.id) return;
       myId = u.id;
       // The name they already chose, wherever they chose it. An empty box on a
       // page that already knows the answer reads as data lost, and somebody who
       // set their name in the app would be looking at exactly that.
-      fetch(SB + "/rest/v1/profiles?select=display_name&user_id=eq." + encodeURIComponent(u.id),
+      //
+      // Units ride along on the same row rather than a second request: the app
+      // reads and writes the one profiles row and so does this page.
+      fetch(SB + "/rest/v1/profiles?select=display_name,avatar_url,units&user_id=eq." + encodeURIComponent(u.id),
             { headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } })
         .then(function(r) { return r.ok ? r.json() : null; })
         .then(function(rows) {
-          if (rows && rows[0] && rows[0].display_name) {
+          if (!rows) return;               // no column, no switch
+          if (rows[0] && rows[0].display_name) {
             document.getElementById("in-name").value = rows[0].display_name;
+            document.getElementById("save-name").disabled = false;
+            initial(rows[0].display_name);
           }
+          if (rows[0] && rows[0].avatar_url) {
+            myAvatar = rows[0].avatar_url;
+            showPicture(myAvatar);
+          }
+          units(rows[0] ? rows[0].units : null);
         }).catch(function() {});
     }).catch(function() {});
+
+  // KILOMETRES OR MILES, the same profiles.units the app writes, so the choice
+  // follows somebody between the phone and the laptop. The row stays hidden
+  // until that column answers: a control that looks like a setting and stores
+  // nothing is worse than no control, and the site still reads in the right
+  // units meanwhile because units-js decides from where the reader is.
+  function units(now) {
+    var box = document.getElementById("st-units");
+    if (!box) return;
+    box.hidden = false;
+    paintUnits(now);
+    box.querySelectorAll(".unit-btn").forEach(function(b) {
+      b.addEventListener("click", function() {
+        var want = b.dataset.unit, cur = session();
+        if (!cur || !myId) return;
+        paintUnits(want);
+        fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
+          method: "POST",
+          headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                     "Content-Type": "application/json",
+                     "Prefer": "resolution=merge-duplicates,return=minimal" },
+          body: JSON.stringify([{ user_id: myId, units: want }])
+        }).catch(function() {});
+      });
+    });
+  }
+
+  function paintUnits(now) {
+    document.querySelectorAll("#st-units .unit-btn").forEach(function(b) {
+      var on = b.dataset.unit === now;
+      b.classList.toggle("is-on", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
+  // YOUR PICTURE, on the app's own terms (Screens/ProfileEditor.swift and its
+  // Avatars.upload). The numbers are not re-decided here: 512 on the long
+  // edge, JPEG at quality 0.8, posted to avatars/<user-id>/avatar.jpg with
+  // x-upsert, so one person owns one file and deleting the account leaves
+  // nothing pointing at it (supabase/profiles.sql).
+  //
+  // Nothing is uploaded on picking. The app's editor stages the picture and
+  // sends it when Save is pressed, so a person who changes their mind simply
+  // leaves, and that is what this does.
+  var picked = null;                  // the JPEG a Save will send
+  var myAvatar = null;                // what the account already has
+  var picBtn = document.getElementById("pic-pick");
+  var picFile = document.getElementById("in-pic");
+  var picPrev = document.getElementById("pic-preview");
+
+  function initial(name) {
+    if (!picPrev.style.backgroundImage) picPrev.textContent = (name || "?").charAt(0).toUpperCase();
+  }
+  function showPicture(url) {
+    picPrev.textContent = "";
+    picPrev.style.backgroundImage = "url(" + String(url).replace(/[()'"]/g, "") + ")";
+    picBtn.textContent = "Change photo";
+  }
+
+  // UPRIGHT, asked for rather than hoped for. A phone writes the orientation
+  // in EXIF and leaves the pixels sideways, which is the same trap
+  // sightings_publish.py rotates out of reader photographs; createImageBitmap
+  // is told to apply it, and the <img> fallback is only for a browser that
+  // has no createImageBitmap at all.
+  function downsized(file, done) {
+    function draw(src, w, h, release) {
+      var side = Math.max(w, h), scale = side > 512 ? 512 / side : 1;
+      var c = document.createElement("canvas");
+      c.width = Math.round(w * scale);
+      c.height = Math.round(h * scale);
+      c.getContext("2d").drawImage(src, 0, 0, c.width, c.height);
+      if (release) release();
+      c.toBlob(function(b) { done(b); }, "image/jpeg", 0.8);
+    }
+    if (window.createImageBitmap) {
+      createImageBitmap(file, { imageOrientation: "from-image" })
+        .then(function(bm) { draw(bm, bm.width, bm.height, function() { bm.close(); }); })
+        .catch(function() { done(null); });
+      return;
+    }
+    var img = new Image(), url = URL.createObjectURL(file);
+    img.onload = function() {
+      draw(img, img.naturalWidth, img.naturalHeight, function() { URL.revokeObjectURL(url); });
+    };
+    img.onerror = function() { URL.revokeObjectURL(url); done(null); };
+    img.src = url;
+  }
+
+  picBtn.addEventListener("click", function() { picFile.click(); });
+  picFile.addEventListener("change", function() {
+    var f = picFile.files && picFile.files[0];
+    if (!f) return;
+    downsized(f, function(blob) {
+      if (!blob) { say("That picture could not be read. Try another one."); return; }
+      picked = blob;
+      showPicture(URL.createObjectURL(blob));
+      say("Press Save to keep it.");
+    });
+  });
+
+  // The upload itself, and it runs before the row is written so a failed
+  // picture never leaves a url in the database pointing at nothing.
+  function sendPicture(token, cb) {
+    if (!picked) { cb(true, myAvatar); return; }
+    fetch(SB + "/storage/v1/object/avatars/" + encodeURIComponent(myId) + "/avatar.jpg", {
+      method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + token,
+                 "Content-Type": "image/jpeg", "x-upsert": "true" },
+      body: picked
+    }).then(function(r) {
+      cb(r.ok, r.ok ? SB + "/storage/v1/object/public/avatars/" + encodeURIComponent(myId) + "/avatar.jpg" : null);
+    }).catch(function() { cb(false, null); });
+  }
 
   // The SAME upsert the app makes (profiles?on_conflict=user_id with
   // resolution=merge-duplicates), so setting a name here and setting one in the
   // app are one operation against one row rather than two paths that can
   // disagree. CLAUDE.md's both-surfaces rule: the decision travels.
+  //
+  // SAVE IS DEAD WHILE THE BOX IS EMPTY, which is what the app's editor does
+  // (Save is disabled on an empty name). It replaces a sentence telling you
+  // afterwards that a name is between 1 and 40 characters, and 40 is what the
+  // field already refuses to take.
   var nameBtn = document.getElementById("save-name");
+  var nameBox = document.getElementById("in-name");
+  nameBtn.disabled = true;
+  nameBox.addEventListener("input", function() {
+    nameBtn.disabled = nameBox.value.trim().length < 1;
+  });
+  function say(msg) {
+    var n = document.getElementById("name-status");
+    n.textContent = msg;
+    n.hidden = false;
+  }
+  //
+  // ONE SAVE FOR BOTH, as the app's editor has: its Save uploads the picture
+  // and then writes the row, and a person setting both should not have to
+  // press two buttons in an order nobody told them.
   nameBtn.addEventListener("click", function() {
-    var box = document.getElementById("in-name");
-    var note = document.getElementById("name-note");
+    var box = nameBox;
     var v = box.value.trim();
     var cur = session();
-    if (!cur || !myId) { note.textContent = "Sign in again and try once more."; return; }
-    if (v.length < 1 || v.length > 40) { note.textContent = "A name is between 1 and 40 characters."; return; }
+    if (!cur || !myId) { say("That did not save. Your sign-in has expired."); return; }
+    if (v.length < 1) return;
     nameBtn.disabled = true;
-    note.textContent = "Saving.";
-    fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
-      method: "POST",
-      headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
-                 "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates" },
-      body: JSON.stringify([{ user_id: myId, display_name: v }])
-    }).then(function(r) {
-      nameBtn.disabled = false;
-      note.textContent = r.ok
-        ? "Saved. People can find you as " + v + " in the app."
-        : "That did not save. Try again, or write to info@ancienttrees.app.";
-    }).catch(function() {
-      nameBtn.disabled = false;
-      note.textContent = "That did not save. Try again in a moment.";
+    say("Saving.");
+    sendPicture(cur.access_token, function(ok, url) {
+      if (!ok) {
+        nameBtn.disabled = false;
+        say("That did not save. The picture would not upload.");
+        return;
+      }
+      // avatar_url only travels when we KNOW one, because PostgREST writes
+      // the columns it is given: sending a null we merely failed to read
+      // would take somebody's picture off on a save that was about a name.
+      var row = { user_id: myId, display_name: v };
+      if (url) row.avatar_url = url;
+      fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
+        method: "POST",
+        headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                   "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates" },
+        body: JSON.stringify([row])
+      }).then(function(r) {
+        nameBtn.disabled = false;
+        if (r.ok && url) { myAvatar = url; picked = null; }
+        say(r.ok ? "Saved." : "That did not save. Try again in a moment.");
+      }).catch(function() {
+        nameBtn.disabled = false;
+        say("That did not save. Try again in a moment.");
+      });
     });
   });
 
-  document.getElementById("signout").addEventListener("click", function() {
+  var outBtn = document.getElementById("signout");
+  var outPanel = document.getElementById("out-panel");
+  outBtn.addEventListener("click", function() {
+    outPanel.hidden = false; outBtn.hidden = true;
+    document.getElementById("out-yes").focus();
+  });
+  document.getElementById("out-no").addEventListener("click", function() {
+    outPanel.hidden = true; outBtn.hidden = false; outBtn.focus();
+  });
+  document.getElementById("out-yes").addEventListener("click", function() {
     var cur = session();
     if (cur) fetch(SB + "/auth/v1/logout", { method: "POST",
       headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token } }).catch(function() {});
     try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
     // Signing out takes everything off the screen, because everything lives in
     // the account now: there is nothing left on the device to clear.
-    location.href = "/account";
+    //
+    // AND IT LEAVES YOU WHERE YOU ARE (2026-09-18). It used to send you to
+    // /account, which for somebody who has just signed out is the sign-in form:
+    // the last thing signing out did was ask you to sign in again. Our own app
+    // does the conventional thing already, swapping the row under your finger
+    // to "Sign in" and leaving you on the screen you were reading, and this is
+    // that. The change of state IS the acknowledgement, which is the pattern
+    // this project uses everywhere rather than a toast (CONVENTIONS.md,
+    // landing after you have added something).
+    outPanel.hidden = true; outBtn.hidden = false;
+    var out = document.getElementById("set-out");
+    out.innerHTML = 'You are signed out. <a href="/account">Sign in</a> to get your trees back.';
+    signedOut();
+    // The bar swapped itself on load and nothing has reloaded, so it would
+    // still be claiming you are signed in. Base owns that painting in both
+    // directions, so this asks rather than repeating it.
+    if (window.atPaintNav) window.atPaintNav(false);
+    try { localStorage.removeItem("ancienttrees_pending"); } catch (e) {}
+    try { at.track("signout"); } catch (e) {}
   });
 
   // Account deletion: calls the delete_user() SECURITY DEFINER function in
@@ -212,23 +458,80 @@ const crumbItems: [string, string | null][] = [
   delConfirm.addEventListener("input", function() {
     delBtn.disabled = delConfirm.value.trim().toUpperCase() !== "DELETE";
   });
+  // THE FILES FIRST, from here rather than from the SQL, which is the app's own
+  // order and its reason (Account.deleteAccount, supabase/delete-user.sql):
+  // everything in the database cascades off auth.users, and a file in storage
+  // does not, because Supabase refuses a delete against storage.objects from
+  // SQL outright. So the client removes them through the Storage API, as the
+  // account itself, in the moment before the row goes.
+  //
+  // Never guarded, deliberately, and the app says why: an orphaned image is a
+  // tidy-up job, an account that will not delete is a broken promise.
+  //
+  // The avatar half is new work, because until today the website could not
+  // make an avatar. The sightings half was a real gap: photographs taken in the
+  // app sat under the account's own folder, and deleting that account from the
+  // WEBSITE left every one of them in the bucket while /privacy promised
+  // otherwise. Same promise, same handler, so it is closed here too.
+  function purgeFiles(token, done) {
+    if (!myId) { done(); return; }
+    var uid = encodeURIComponent(myId);
+    var head = { "apikey": KEY, "Authorization": "Bearer " + token };
+    function drop(bucket, path) {
+      return fetch(SB + "/storage/v1/object/" + bucket + "/" + path,
+                   { method: "DELETE", headers: head }).catch(function() {});
+    }
+    fetch(SB + "/storage/v1/object/list/sightings", {
+      method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + token,
+                 "Content-Type": "application/json" },
+      body: JSON.stringify({ prefix: myId, limit: 200 })
+    }).then(function(r) { return r.ok ? r.json() : []; })
+      .catch(function() { return []; })
+      .then(function(rows) {
+        var jobs = [drop("avatars", uid + "/avatar.jpg")];
+        (rows || []).forEach(function(row) {
+          // The name is passed through as the app passes it, because it is a
+          // path inside the folder and encoding a slash would break it.
+          if (row && row.name) jobs.push(drop("sightings", uid + "/" + row.name));
+        });
+        Promise.all(jobs).then(done, done);
+      });
+  }
+
   delBtn.addEventListener("click", function() {
     if (delConfirm.value.trim().toUpperCase() !== "DELETE") return;
     var cur = session();
     if (!cur) { location.href = "/account"; return; }
+    delBtn.disabled = true;
+    purgeFiles(cur.access_token, function() { deleteAccount(cur); });
+  });
+
+  function deleteAccount(cur) {
     fetch(SB + "/rest/v1/rpc/delete_user", { method: "POST",
       headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
                  "Content-Type": "application/json" }, body: "{}" })
       .then(function(r) {
         if (r.ok) {
           try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
-          location.href = "/account";
+          // IN PLACE, for the same reason signing out is (above): sending
+          // somebody who has just deleted their account to the sign-in form is
+          // the wrong last word, and it is the same page they would have to
+          // read to understand what happened.
+          var gone = document.getElementById("set-out");
+          gone.textContent = "Your account is deleted, with everything it held. Nothing of yours is left here.";
+          signedOut();
+          if (window.atPaintNav) window.atPaintNav(false);
         } else {
+          delBtn.disabled = false;
           delBtn.textContent = "Deletion failed. Try again, or email us via the privacy page.";
         }
       })
-      .catch(function() { delBtn.textContent = "Deletion failed (network). Try again."; });
-  });
+      .catch(function() {
+        delBtn.disabled = false;
+        delBtn.textContent = "Deletion failed (network). Try again.";
+      });
+  }
 })();
 </script>
 `} />

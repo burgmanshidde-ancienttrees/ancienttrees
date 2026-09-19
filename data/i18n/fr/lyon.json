@@ -1,0 +1,135 @@
+{
+ "_note": "fr overlay for lyon, written 2026-09-18 from data/cities/lyon.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Lyon",
+ "title": "Arbres remarquables de Lyon : les 13 plus beaux",
+ "meta_description": "Lyon labellise ses arbres remarquables. Un pin chinois arrivé d'Europe par Kew en 1856, un marronnier géant, un cèdre sur une île de moines.",
+ "intro": "Lyon publie la liste de ses arbres remarquables : quatre portent le label national Arbre Remarquable, et un parc détient le label collectif Ensemble Arboré Remarquable pour ses 8 800 sujets. La Tête d'Or existe parce que les Lyonnais du XIXe siècle voulaient rivaliser avec le bois de Boulogne, et deux frères suisses le leur ont offert, avec des espèces de quatre continents. Ailleurs, c'est plus discret : un marronnier géant dans un parc à demi sauvage, un cèdre sur une île de la Saône jardinée par des moines, une collection de chênes plantée juste avant la Grande Guerre.",
+ "question_title": "Quel est le plus vieil arbre de Lyon ? (1856)",
+ "question_meta": "L'arbre remarquable le mieux daté de Lyon est un pin chinois de 1856, au parc de la Tête d'Or. Son histoire, son emplacement, et douze autres.",
+ "question_answer": "Lyon n'a pas d'arbre le plus vieux formellement documenté, mais son arbre remarquable le mieux daté est le Pin de Bunge, dit aussi Pin de Napoléon, au parc de la Tête d'Or, planté vers 1856 pendant la création du parc et donc âgé aujourd'hui d'environ 170 ans. Il porte le label national Arbre Remarquable de France, et l'association qui le décerne le décrit comme sans équivalent ailleurs dans le pays.",
+ "question_context": "Lyon fait partie des rares villes de cette liste à disposer d'un inventaire réellement publié : la municipalité tient la liste des Arbres Remarquables labellisés au niveau national par l'association A.R.B.R.E.S., et la Métropole publie en données ouvertes les arbres protégés du Grand Lyon. Cet inventaire privilégie la rareté de l'espèce, la taille et les circonstances de plantation documentées plutôt que le seul âge, et c'est pourquoi c'est le Pin de Bunge, espèce chinoise introduite en Europe au XIXe siècle par les jardins de Kew, qui ancre cette liste plutôt qu'un chêne ou un if. Il pousse le long de l'allée qui fait le tour de l'arboretum de la Tête d'Or, à cinq minutes à pied de l'entrée du boulevard des Belges, dans un parc qui détient lui-même le label Ensemble Arboré Remarquable pour toute sa collection. D'autres candidats plus âgés existent ailleurs dans la ville, ainsi un cèdre sur l'Île Barbe, sur la Saône, où des moines sont documentés comme jardiniers pendant plus de mille ans, mais aucun ne porte la date de plantation aussi précise que celle du Pin de Bunge.",
+ "faq": [
+  {
+   "q": "Quel est le plus vieil arbre de Lyon ?",
+   "a": "Aucun arbre lyonnais ne détient de titre de doyen formellement documenté. L'arbre remarquable le mieux daté est le Pin de Bunge, au parc de la Tête d'Or, planté vers 1856 pendant la création du parc, aujourd'hui âgé d'environ 170 ans."
+  },
+  {
+   "q": "Pourquoi le parc de la Tête d'Or compte-t-il autant d'arbres rares ?",
+   "a": "Il a été dessiné à partir de 1856 par les paysagistes suisses Eugène et Denis Bühler comme un véritable arboretum doublant un parc public, et il a absorbé en 1857 la collection de l'ancien jardin botanique de Lyon, d'où des espèces venues de quatre continents plutôt que le mélange local habituel."
+  },
+  {
+   "q": "Comment Lyon protège-t-elle ses arbres remarquables ?",
+   "a": "Par le label national Arbre Remarquable, décerné par l'association A.R.B.R.E.S., que portent actuellement quatre arbres lyonnais, et par le plan local d'urbanisme de la Métropole, qui signale arbres et espaces boisés protégés sur des cartes en données ouvertes."
+  },
+  {
+   "q": "Les arbres remarquables de Lyon sont-ils gratuits à voir ?",
+   "a": "Oui. Tous se voient gratuitement, sans billet, du jardin de l'Île Barbe, accessible à pied par une passerelle sur la Saône, jusqu'à un chêne rare à un coin de rue ordinaire de Villeurbanne."
+  }
+ ],
+ "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+ "trees": {
+  "lyo_001": {
+   "name": "Le Pin de Bunge, ou Pin de Napoléon",
+   "species": "Pin de Bunge (Pinus bungeana)",
+   "age_estimate": "environ 170 ans",
+   "access": "Gratuit, parc public",
+   "transport": "10 min à pied de la station de métro Masséna (ligne A)",
+   "story": "L'écorce de ce pin se desquame en plaques grises, vertes et crème à mesure qu'il vieillit, trait si caractéristique que l'espèce se reconnaît presque sans son nom latin. Pinus bungeana est originaire du centre de la Chine, documenté pour la science occidentale par le botaniste russe Alexander von Bunge en 1831 dans le jardin d'un temple de Pékin, et ce sujet a probablement été planté en 1856, l'année où ont commencé les travaux du parc de la Tête d'Or, ce qui en fait une plantation d'origine du parc et non un ajout postérieur. Le site de référence de l'International Dendrology Society le désigne directement comme le plus vieux Pinus bungeana cultivé d'Europe et parle d'un trésor national du jardin botanique lyonnais, affirmation précise plutôt que superlatif vague, et que ce projet tient pour crédible vu la source. Localement il porte le surnom de Pin de Napoléon, mais aucune source ne relie ce nom à un événement historique précis plutôt qu'à une association d'époque, donc ce lien n'est pas présenté ici comme un fait. Près de 170 ans plus tard, son tronc a développé cette mosaïque d'écorce pâle, presque blanche, qui ne vient qu'avec l'âge, le seul détail qui vaille de venir chercher ce pin parmi les milliers d'autres sujets de l'arboretum."
+  },
+  "lyo_002": {
+   "name": "L'Oranger des Osages de la Tête d'Or",
+   "species": "Oranger des Osages (Maclura pomifera)",
+   "age_estimate": "plus de 100 ans",
+   "access": "Gratuit, parc public",
+   "transport": "10 min à pied de la station de métro Masséna (ligne A)",
+   "story": "Les ancêtres américains de cet arbre ont été des armes avant d'être de l'ombre. Maclura pomifera doit son nom à la nation osage du centre des États-Unis, qui prisait son bois dense, souple et imputrescible pour les arcs de guerre et les flèches, au-dessus de presque tous les autres bois dont elle disposait. L'espèce a atteint l'Europe en 1823, et les pépiniéristes du sud de la France l'ont d'abord plantée non pour ses fruits bizarres, ridés et immangeables, mais comme clôture vivante et, brièvement, comme nourriture pour les vers à soie, avant que le mûrier ne se révèle plus pratique. Ce sujet de l'arboretum de la Tête d'Or a pris une allure d'arbre isolé plutôt que de haie : un relevé dendrologique donne 3,70 mètres de circonférence à un mètre du sol, avec un tronc décrit comme cannelé et creusé sur environ deux mètres de hauteur, ce qui se lit raisonnablement comme les marques d'un sujet vraiment âgé, de plus d'un siècle, et non d'une plantation récente à croissance rapide. L'oranger des Osages se marcotte aussi, enracinant toute branche basse qui touche le sol, si bien que ce qui ressemble à un arbre dans un bosquet dense peut par endroits être un seul individu génétique qui se répète."
+  },
+  "lyo_003": {
+   "name": "Le Cyprès chauve de la Tête d'Or",
+   "species": "Cyprès chauve (Taxodium distichum)",
+   "age_estimate": "non daté, sujet mature",
+   "access": "Gratuit, parc public",
+   "transport": "10 min à pied de la station de métro Masséna (ligne A)",
+   "story": "Cet arbre pousse comme s'il se souvenait des marécages de Louisiane d'où vient son espèce, à plus de huit mille kilomètres de là et sans une goutte d'eau stagnante. Taxodium distichum est l'un des rares conifères à perdre ses aiguilles chaque automne, et là où il pousse dans l'eau, il émet des pneumatophores, ces genoux ligneux qui percent la surface pour apporter de l'oxygène aux racines noyées, trait que ce sujet montre alors même qu'il n'a pas le sol inondé dont dépendent ses parents du golfe du Mexique. Un relevé dendrologique note 5,45 mètres de circonférence à un mètre du sol et une hauteur d'un peu plus de 30 mètres, parmi les plus grosses mesures relevées dans tout l'arboretum du parc, avec un tronc profondément cannelé et contrefort, en excellent état. Aucune source ne lui donne de date de plantation précise, donc son âge est estimé ici d'après la fondation du parc dans les années 1850 plutôt que documenté directement, mais un arbre de cette taille, dans une espèce qui n'est pas réputée pour une croissance exceptionnellement rapide, est un sérieux candidat au titre de plus ancienne plantation d'origine de l'arboretum."
+  },
+  "lyo_004": {
+   "name": "Le Marronnier géant du parc de la Garde",
+   "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+   "age_estimate": "non daté, décrit comme un sujet géant",
+   "access": "Gratuit, parc public",
+   "transport": "Bus jusqu'à l'arrêt Parc de la Garde, ou 15 min à pied depuis la gare de Gorge de Loup",
+   "story": "La plupart des visiteurs de ce parc viennent pour son côté sauvage plutôt que pour un arbre en particulier, mais le marronnier qui en occupe le centre est la raison pour laquelle les habitants prennent la peine de nommer l'endroit. Le parc de la Garde garde un caractère à demi forestier, inhabituel pour un parc lyonnais : sa moitié basse est réellement boisée, parcourue de sentes informelles, et abrite un petit pont de pierre qui portait autrefois l'ancienne ligne du tramway de Vaugneray à travers les bois, avant l'abandon du tracé. Le marronnier d'Inde qui pousse parmi ces arbres a été officiellement reconnu par le label national Arbre Remarquable de France, décrit localement comme un tronc énorme portant plusieurs grosses branches, une échelle qui le distingue même parmi les autres arbres mûrs du parc. Aucune source ne lui donne d'âge individuel ni de circonférence mesurée au-delà de cette description générale, donc tout chiffre avancé ici serait une estimation et non un relevé. C'est le label lui-même, plutôt qu'une histoire mouvementée, qui sépare ce sujet des milliers de marronniers ordinaires plantés dans les parcs français aux XIXe et XXe siècles."
+  },
+  "lyo_005": {
+   "name": "Le Sophora du Japon du parc de Gerland",
+   "species": "Sophora du Japon (Styphnolobium japonicum)",
+   "age_estimate": "non daté",
+   "access": "Gratuit, parc public",
+   "transport": "5 min à pied de l'arrêt de tram Stade de Gerland (T1)",
+   "story": "Gerland est l'un des grands parcs lyonnais les plus récents par le nom, aménagé au sud du centre sur d'anciens terrains industriels et marécageux et remanié à plusieurs reprises au XXe siècle : un arbre assez vieux pour porter un label national d'arbre remarquable y détonne par rapport à presque tout ce qui pousse autour de lui. En 2024, l'association A.R.B.R.E.S. a ajouté ce sophora du Japon à sa liste nationale, en le mesurant officiellement à 16 mètres de haut, 18 mètres d'envergure de houppier et 302 centimètres de tour de tronc à hauteur de poitrine, chiffres assez précis pour suivre toute croissance ou tout déclin futur. Malgré son nom courant, l'espèce vient de Chine et non du Japon. Elle a été introduite en Europe au XVIIIe siècle et appréciée depuis pour sa floraison tardive, en plein été, quand peu de grands arbres fleurissent encore, ce qui la rend précieuse pour les abeilles et les autres pollinisateurs une fois la vague du printemps passée. Aucune date de plantation individuelle n'est documentée, donc l'âge de l'arbre est estimé ici d'après sa taille mesurée plutôt que d'après un relevé vérifié, mais la reconnaissance du label suffit à en faire l'un des arbres les plus notables d'un parc de 40 hectares conçu surtout pour le sport et la détente."
+  },
+  "lyo_006": {
+   "name": "Le Cèdre de l'Atlas du parc de la Chapelle",
+   "species": "Cèdre de l'Atlas (Cedrus atlantica)",
+   "age_estimate": "500 ans selon une affirmation locale, contestée botaniquement",
+   "access": "Gratuit, parc public",
+   "transport": "10 min à pied de la gare de Gorge de Loup",
+   "story": "Ce cèdre est à peu près la raison pour laquelle le parc qui l'entoure a la forme qu'on lui connaît : une grande partie du parc de la Chapelle est organisée autour d'un seul sujet énorme, pelouse ouverte et allées disposées pour lui laisser de la place, et non l'inverse. Mesuré à 28 mètres de haut, 32 mètres d'envergure de houppier et 6,35 mètres de tour de tronc, il a reçu le label national Arbre Remarquable de France le 16 octobre 2024, et les sources municipales le disent pluricentenaire, certaines avançant directement un chiffre de 500 ans environ. Ce nombre s'accorde mal avec l'histoire de l'espèce : Cedrus atlantica, originaire des montagnes de l'Atlas au Maroc et en Algérie, n'a été introduit dans la culture française que dans les années 1840, ce qui rendrait difficile à concilier un sujet réellement âgé de 500 ans poussant dans un parc lyonnais avec la moindre plantation documentée. L'affirmation est donnée ici pour ce qu'elle est, un chiffre répété localement et non un fait établi, à côté de la taille réelle de l'arbre, confirmée de façon indépendante, et de son label national de 2024. Quel que soit son âge véritable, on le dit localement peut-être le plus gros cèdre de l'Atlas de Lyon, et ses branches abritent oiseaux et écureuils dans un coin résidentiel tranquille du 9e arrondissement."
+  },
+  "lyo_008": {
+   "name": "La Collection de chênes du parc de la Cerisaie",
+   "species": "Espèces variées (parc de coteau de 1913)",
+   "age_estimate": "non daté, parc dessiné en 1913",
+   "access": "Gratuit, parc public",
+   "transport": "10 min à pied de la station de métro Croix-Rousse (ligne C)",
+   "story": "Ce parc tient son nom d'un verger de cerisiers qui n'existe plus, remplacé juste avant la Première Guerre mondiale par un tout autre projet de plantation. Le paysagiste René-Édouard André, fils du plus célèbre Édouard André dont le style de jardin régulier a marqué des parcs dans toute la France et au-delà, a dessiné le parc de la Cerisaie en 1913 sur le coteau de la Croix-Rousse, en centrant la plantation d'environ 1 200 arbres sur une importante collection de chênes, accompagnée de bouleaux, d'ifs et de hêtres. Ce calendrier donne aux arbres fondateurs du parc un peu plus d'un siècle aujourd'hui, plantés l'année précédant la guerre qui allait remodeler le quartier et la ville autour d'eux. Aucun arbre de la collection ne porte d'âge ni de mesure documentés séparément, donc la fourchette donnée ici décrit la date de fondation du parc plutôt qu'un sujet nommé, comme ce projet traite les autres plantations collectives non datées. Ce qui subsiste tient moins à un arbre monumental unique qu'à un boisement du début du XXe siècle cohérent, délibérément dessiné, et resté étonnamment intact pour un aménagement civique centenaire."
+  },
+  "lyo_009": {
+   "name": "Les Arbres du jardin des Chartreux",
+   "species": "Espèces variées (jardin de coteau de la Croix-Rousse)",
+   "age_estimate": "non daté",
+   "access": "Gratuit, jardin public",
+   "transport": "15 min à pied (en montée) depuis les stations de métro Vaise ou Croix-Rousse",
+   "story": "Ce jardin occupe la pente raide entre le plateau de la Croix-Rousse et la Saône, sur un terrain jadis rattaché à un monastère de chartreux qui a donné son nom au quartier et qui a disparu, comme la plupart des maisons religieuses françaises de ce genre, à la Révolution. Ce qui reste aujourd'hui est un jardin public de larges pelouses et d'arbres mûrs, magnolia, cèdre et marronnier parmi les espèces citées dans les descriptions du site, disposés pour profiter d'une vue vraiment ample sur les quais de Saône et les collines de Fourvière sur l'autre rive. Aucun arbre pris isolément n'a ici de date de plantation ni de mesure documentée, et aucun sujet n'est distingué par son nom comme le sont les arbres labellisés ailleurs sur cette liste : cette entrée décrit donc le couvert arboré mûr du jardin comme un ensemble plutôt qu'elle ne revendique un champion nommé. Le terrain escarpé qui rend la vue intéressante garde aussi le jardin réellement calme, destination de quartier plutôt que de touristes, atteinte par une montée depuis la rivière que la plupart des visiteurs de Lyon ne font jamais."
+  },
+  "lyo_010": {
+   "name": "L'Érable de Cappadoce de la Tête d'Or",
+   "species": "Érable de Cappadoce (Acer cappadocicum)",
+   "age_estimate": "non daté, sujet mature",
+   "access": "Gratuit, parc public",
+   "transport": "10 min à pied de la station de métro Masséna (ligne A)",
+   "story": "Cet érable vient d'une région du monde à laquelle la plupart des visiteurs d'un parc municipal français n'ont jamais eu de raison de penser : les forêts de montagne qui courent du Caucase au nord de l'Iran et jusque vers l'Himalaya, où Acer cappadocicum pousse à l'état sauvage parmi les hêtres et les chênes. Le jardin botanique de Lyon, intégré à la Tête d'Or depuis 1857, a été construit pour tenir exactement cette amplitude géographique, avec des espèces choisies pour leur valeur scientifique et pédagogique autant que pour leur allure. Un relevé dendrologique du parc donne à ce sujet 3,20 mètres de circonférence à un mètre du sol et 26 mètres de hauteur, chiffres honorables plutôt que records à côté des plus gros sujets de l'arboretum, mais suffisants pour en faire un arbre réellement mûr et installé de longue date, et non une plantation récente. Aucune date de plantation individuelle n'est documentée, donc son âge est estimé ici d'après sa taille mesurée et la période de fondation de l'arboretum plutôt que d'après un relevé vérifié. En automne, son feuillage vire à un jaune net et uniforme, effet pour lequel les érables de Cappadoce sont précisément appréciés en culture, même si aucune source ne date assez précisément le pic de couleur de ce sujet pour annoncer ici une fenêtre fiable."
+  },
+  "lyo_011": {
+   "name": "Le Chêne pédonculé de la rue Viret",
+   "species": "Chêne pédonculé (Quercus robur)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, coin de rue public dans un quartier résidentiel, sans restriction",
+   "transport": "Station de métro Charpennes Charles Hernu (lignes A/B), environ 7 min à pied ; arrêt de tram Le Tonkin à environ 4 min à pied",
+   "story": "Le registre officiel des arbres de Villeurbanne qualifie ce chêne pédonculé de rare, et il le dit sans détour : les plantations d'alignement sont ici des platanes et des tilleuls, si bien qu'un Quercus robur adulte à un coin de rue résidentiel fait figure d'exception que la ville a elle-même signalée. Le relevé de 2017 qui l'a consigné note une bonne santé et une taille réelle, et rien d'autre : pas de date de plantation, pas d'âge mesuré, juste la mention qu'il méritait d'être suivi. Une enquête sur les arbres remarquables de Lyon l'a retrouvé en 2025, toujours debout au même angle de la rue Viret et de la rue Francis de Pressensé, huit ans après ce premier relevé. Il pousse à un quart d'heure à pied des immeubles Art déco des Gratte-Ciel, le grand projet de logements villeurbannais des années 1930, dans la trame de rues plus calmes juste à l'ouest. Personne n'a mesuré son tronc ni compté ses cernes, donc cette page ne proposera pas un chiffre inventé. Ce sur quoi deux relevés indépendants s'accordent est plus simple : un chêne devenu trop grand et trop vieux pour une rue ordinaire, toujours là, et qui vaut le détour depuis le parc de la Tête d'Or."
+  },
+  "lyo_012": {
+   "name": "Le Marronnier d'Anne Frank",
+   "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+   "age_estimate": "planté en décembre 2014, environ 12 ans",
+   "access": "Gratuit, place publique, ouverte en permanence",
+   "transport": "Courte marche depuis la station de métro Place Guichard - Bourse du Travail (ligne B), même rue (rue Moncey)",
+   "story": "Ce marronnier n'est pas vieux. Il a tout juste douze ans, planté au centre de la place Marc-Aron en décembre 2014 pour remplacer une statue nommée Renaissance que la rénovation de la place avait retirée. Ce qui justifie l'arrêt, c'est son origine : il vient d'une bouture du marronnier qu'Anne Frank voyait par la lucarne de sa cachette d'Amsterdam, l'arbre qu'elle décrit dans son journal comme l'une des seules choses la reliant au dehors.\n\nL'arbre d'origine est tombé lors d'une tempête le 23 août 2010. Avant sa chute, la Fondation Anne Frank en avait déjà prélevé environ 150 boutures et envoyé les jeunes plants à des institutions et des lieux publics du monde entier, Washington, Jérusalem et Paris parmi eux, si bien que l'arbre du journal a continué de pousser en dizaines d'endroits après la disparition de l'original. Celui de Lyon est arrivé rue Moncey lors d'une cérémonie publique et se dresse aujourd'hui sur une petite place à deux minutes de la station Place Guichard, signalé par rien d'autre que sa propre plantation.\n\nIl ne sera pas avant très longtemps l'arbre le plus vieux ni le plus grand de Lyon, peut-être jamais. Il est ici pour ce dont il descend plutôt que pour ce qu'il a vu lui-même, la seule entrée de cette liste dont toute l'histoire précède ses propres racines."
+  },
+  "lyo_013": {
+   "name": "Le Platane de la place Antoine-Rivoire",
+   "species": "Platane commun (Platanus x acerifolia)",
+   "age_estimate": "planté en 1894, environ 132 ans",
+   "access": "Gratuit, place publique, ouverte en permanence",
+   "transport": "Environ 5 min à pied de la station de métro Cordeliers (ligne A)",
+   "story": "La base de données des arbres d'alignement de Lyon compte plus de 100 000 enregistrements, et à peine plus de la moitié portent une date de plantation. Parmi ceux qui en ont une, ce platane est le plus ancien : mis en terre en 1894, au centre d'une place à peine plus grande qu'un court de tennis, en plein cœur de la Presqu'île. Un responsable des espaces verts de la ville dit clairement qu'aucun platane lyonnais n'atteint les trois ou quatre siècles de certains sujets régionaux : appelez donc celui-ci le plus vieil arbre daté des registres de la ville plutôt que son plus vieil arbre tout court.\n\nLa place elle-même a enterré plus d'histoire que l'arbre n'a d'années. Du XVIe siècle jusqu'à la Révolution, elle était le cimetière paroissial de Saint-Nizier, l'église qui se dresse toujours deux rues plus loin. La Révolution a vidé le cimetière, et la place qui l'a remplacé s'est appelée place de la Fromagerie jusqu'en 1934, avant d'être rebaptisée en l'honneur d'Antoine Rivoire, fondateur de la foire de Lyon et de son office du tourisme.\n\nLe platane s'y dresse seul aujourd'hui, au croisement de quatre petites rues, sur un sol qui a passé trois siècles en cimetière avant que quiconque n'y plante quoi que ce soit."
+  },
+  "lyo_014": {
+   "name": "Le Cèdre du square Gabrielle Dupond-Ebrard",
+   "species": "Cèdre du Liban (Cedrus libani)",
+   "access": "Gratuit, square municipal public, accès libre depuis la rue, aucun portail ni restriction d'entrée constatés.",
+   "transport": "Quartier du Point du Jour, Lyon 5e arrondissement ; desservi par les bus TCL du secteur.",
+   "story": "Celle qui a donné son nom au square cachait des gens de la Gestapo à deux rues d'ici. Gabrielle Dupond-Ebrard a vécu au 13 avenue du Point du Jour jusqu'en 1985, travaillant avec le réseau de résistance Combat sous les ordres de Pierre Guillain de Bénouville, et sa maison a servi de secrétariat et de refuge à des réfugiés pendant l'occupation allemande. Lyon a plus tard donné son nom à ce petit square, et le cèdre qui y pousse éclipse à peu près tout le reste de l'endroit : un guide des rues du quartier en fait simplement l'élément principal du square.\n\nPersonne ne l'a mesuré. Le registre municipal des arbres remarquables ne le mentionne que comme un très grand sujet, sans année de plantation ni circonférence au dossier, ce qui est inhabituel pour une espèce que son architecture rend d'ordinaire facile à dater. Le cèdre du Liban développe en vieillissant une structure de branches étagées, presque horizontales, chaque niveau plus large que celui du dessus, si bien que la taille que le registre note est au moins visible plutôt que devinée.\n\nLe square se trouve à environ 450 mètres du marronnier géant du parc de la Garde, déjà sur cette liste : les deux font une paire facile sur la même promenade dans le Point du Jour. Si vous savez quel âge a ce cèdre, ou si vous pouvez passer un mètre autour du tronc, dites-le-nous."
+  }
+ }
+}

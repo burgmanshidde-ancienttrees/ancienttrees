@@ -67,6 +67,753 @@ So it needs either your yes on a Contract G title change plus a version bump,
 or it stays as it is. My proposal: `Ancient Trees in [Country]: the Oldest [N]
 to Visit`, or keep the cities count and add the trees count.
 
+## 2026-09-19 (session) - A profile picture can be set on the website, and deleting an account from the web now really takes the files
+
+Hidde, on being told the app's editor sets a picture and the website only ever
+read one: "Add it the same way as the app does it."
+
+**The row is the app's** (Screens/ProfileEditor.swift): a circle, a Choose a
+photo button that becomes Change photo, and its own single line, "Optional.
+People who follow you see it beside your name." Picking only stages the file,
+as the app's editor does, and the page's existing Save sends the picture and
+the name in one act, the upload first so a failed picture never leaves a url in
+the database pointing at nothing.
+
+Nothing underneath is re-decided, which is the rule that keeps two surfaces
+from drifting: 512 on the long edge, JPEG at quality 0.8, POSTed to
+avatars/<user-id>/avatar.jpg with x-upsert, then the same profiles upsert
+Profiles.save makes. EXIF orientation is applied rather than assumed, because a
+phone leaves the pixels sideways and writes the rotation in a tag, which is the
+same trap sightings_publish.py rotates out of reader photographs.
+
+**And the deletion promise, which this would otherwise have broken.** The app
+deletes the stored files through the Storage API in the moment before
+delete_user(), because storage.objects cannot cascade and Supabase refuses a
+delete against it from SQL outright (supabase/delete-user.sql records the hour
+that lesson cost). The website called the function straight.
+
+That was survivable while the web could not make an avatar. It was also already
+leaking something real: photographs taken in the APP sit in the sightings
+bucket under the account's own folder, and deleting that account from the
+WEBSITE left every one of them there, publicly readable, while /privacy
+promised otherwise. Both buckets are purged first now, unguarded, on the app's
+own reasoning that an orphaned image is a tidy-up job and an account that will
+not delete is a broken promise.
+
+Convention looked up and recorded rather than invented: iNaturalist keeps the
+profile icon as a field on the account settings page with one Save covering it
+and the name, AllTrails keeps it behind the profile menu in settings, and
+neither uploads on pick.
+
+Build clean (11,997 pages), qa.py green (15,897), preflight, paritycheck,
+crosscheck, i18ncheck and conventioncheck clean, and /account/settings measures
+no overflow, no drift and no sub-16px field at 375. Looked at at 375 and on a
+desktop.
+
+**FOR HIDDE, and it is a database job rather than a code one:** none of this
+can work until the avatars bucket exists with the two policies in
+supabase/profiles.sql and the two in supabase/avatars-policy.sql. If the app
+has been saving pictures, they are already there and nothing is owed. If it has
+not, a save here will say "That did not save. The picture would not upload."
+
+## 2026-09-19 (night run, continuation 2) - A silently dead reader-photo pipeline fixed, three deepen passes dispatched, three stale branches cleared
+
+Resumed a window that had stopped after 28 minutes with 92 unspent, having
+shipped nine trees and nothing left urgent on its own account. `--ready`
+showed only 3 leads, and all three turned out to be misclassified: each
+carries a `why` explicitly saying it cannot ship yet (one source only, or an
+unresolved schoolyard-access question on a Bregenz Naturdenkmal), but the
+phrasing didn't match any pattern in `leads.py`'s `NOT_READY_MARKER`, so a
+write pass would have written stories for unverified trees. Widened the
+regex; `--ready` now correctly shows 0.
+
+**Found and fixed a real production break: the reader-photo pipeline has
+been reading nothing since 2026-09-17.** `sightings_inbox.py`'s SELECT names
+`girth_hugs`, a column added to the table IN CODE by the girth/hug rename
+(commit c52f380e, merged 2026-09-17) but never applied to the live Supabase
+table, because that needs Hidde's paste of `supabase/sightings.sql` and a run
+cannot run DDL against production. PostgREST 400s the WHOLE query when one
+selected column is missing, so every knock since the merge silently read
+zero sightings on rung 1 of Step 0, the single highest-priority item on the
+list, and the exception was swallowed with no alarm. Checked the damage: 28
+rows exist, all 28 already marked done before the column was ever referenced,
+so nothing sent in the two-day gap was lost, but the next reader photograph
+would have been. Made the query fall back to the pre-rename column set on
+exactly that PostgREST error, so the pipeline works now and picks the field
+up for free the moment the migration is pasted.
+
+**Vendored 5 approved photographs onto our own domain** (mil_002, rvd_001,
+rvd_002, sno_001, sno_002) that were still pointing at Wikimedia.
+
+**Cleared three of the six stranded branches the session-start brief
+flagged**, after checking each against a proper `git merge-base` diff rather
+than trusting the raw "not merged" flag: `claude/boom-pagina-kop-h8zuv9`,
+`claude/tree-age-species-trunk-size-u9u1yb` and `claude/nostalgic-lewin-e2a29b`
+each turned out to be fully superseded, their real content already landed on
+main via a manual squash/cherry-pick under a different commit (the same
+"landed another way" blind spot the 2026-09-18 entry already named). Verified
+by diffing against merge-base and grepping main for the branch's own unique
+function/comment text before deleting; in one case (the meta-lead preposition
+fix) main's own commit 83d4aa44 carries word-for-word the same prose as the
+branch. Deleted all three. The other three
+(`claude/zware-foto-zoektocht-kb1n3e`, `claude/waitlist-app-launch-email-9szzt4`,
+`claude/draft-reply-daniel-9g4c90`) are NOT safe to fast-clear: zware-foto is
+a genuine mix of superseded translation data (all 12 city sets already exist
+on main under different commits) and real unmerged script work (two new
+qa.py/preflight.py checks, `check_dist_is_newer_than_the_source()` among
+them, that do not exist anywhere on main and would need a careful
+cherry-pick rather than a raw merge); waitlist and draft-reply are mail to
+real people, one of them 9 days stale (new signups since won't be on the
+list), and belong to a session with time to re-verify the list before
+anything is sent, not a fast clear.
+
+**Dispatched three parallel verify passes on cities with real, unmined
+register supply**, per the register-first course: Hiroshima (24 of 46
+Environment Ministry giant-tree leads never looked at, no coordinates in the
+register so each needs geocoding from the shrine/temple name), Melbourne (two
+genuine CC-BY "Significant Tree" designation registers, Yarra and Boroondara,
+518 unmined rows combined, hard rule 10 live on the Boroondara set which
+itself flags "Front garden" position values), and Hoorn (304 unmined Dutch
+LRMB rows, most within 300m of the existing 1km-wide cluster, real demand at
+40 impressions/10 days and 12 of a 20 target). All three claimed via
+passcheck before dispatch. Results not back yet at the time of this entry.
+
+FOR HIDDE: nothing blocking. The zware-foto/waitlist/draft-reply branches
+are the one thing worth your eyes if you have a spare five minutes — not
+urgent, just don't let them rot further; the mail ones need a fresh
+send-list check before anyone fires them.
+
+## 2026-09-19 (night run, continuation) - Two French forest pages an earlier attempt left uncommitted, plus two photos and two ONF-panel ages found while finishing them
+
+Resumed a window that had stopped after 54 minutes with 66 unspent, having
+shipped nothing to a commit despite the work being done: `data/cities/
+senonches.json` and `data/cities/reno-valdieu.json` (4 trees each, from the
+Perche region, already verified in `data/research/famousfrance-verified.json`
+and staged in `data/leads/_famous-france.json`) sat finished and uncommitted.
+Both are honest, well-sourced pages and are now live.
+
+**Senonches** (Chêne Fauteuil, Les Trois Frères, a chestnut, a ring of 1854
+sequoias) clears the four-tree floor on its own waymarked "venerable trees"
+loop, all free, all well documented with girths and a specific age for the
+two named oaks.
+
+**Réno-Valdieu**, 28-30km away, is the "série artistique de la Gautrie": four
+oaks dedicated to Oxford, Aberdeen, the Forestry Commission and a forestry
+congress, at Carrefour Degraine, and it stayed honest about what it did not
+know: no individual girth or age for two of the four, sources disagreeing on
+the whole série's age (200-300 vs ~350), and no source settling which
+physical trunk carries which name.
+
+**Then found something the earlier pass had not looked at: the leads file's
+own candidate photo list named two on-site ONF panels, not just tree
+photos.** Fetched and viewed all six candidates. Two are genuine photos of
+the trees (now `approved`, CC BY-SA, Le Passant via Wikimedia Commons):
+sno_001, sno_002, rvd_001, rvd_002. The other two, at Réno-Valdieu, turned
+out to be photographs of the ONF's own interpretive panels for the Forestry
+Commission and Oxford oaks, each giving a real forestry survey figure: 360
+years in 2006 (about 380 today), a girth (3.83m and 3.43m) and a height
+(43m each). That is a much better number than the série-wide "200 to 350,
+sources disagree" both trees carried, so rvd_001 and rvd_002 now carry their
+own derived age, girth and height, with the panel photo added as a source.
+
+The same two panels carry identical wording naming the fourth oak "le Xème
+Congrès Forestier Mondial", the tenth, which settles (per ONF, who manages
+the forest and wrote the signs) a numbering dispute our own story had left
+open against a hiking-route page calling it the eleventh. Renamed rvd_004
+from "Chêne du Congrès (Xe or XIe Congrès Forestier)" to "Chêne du Xe
+Congrès Forestier" and said so in the story, plainly, including the
+disagreement. rvd_003 (Aberdeen) still has no panel and stays at 200-350.
+
+Updated reno-valdieu.json's intro, meta_description, question fields and
+FAQ to reflect that two of the four trees now carry individual ages rather
+than only the grove-wide range; trimmed several fields back under
+SEO_GEO_BLUEPRINT's length caps after the edits pushed them over
+(`preflight.py` caught all seven, now 0 problems).
+
+Local `npx astro build` and `preflight.py` both ran clean before committing;
+released both standing claims.
+
+## 2026-09-18 (digest session, continuation) - Pamplona: the wrong distances on the three trees that have nothing but position, and the list that could never have named this city
+
+Asked to fix Pamplona, our best-placed and worst-converting page (448
+impressions at average position 3.6, index 0.14, the biggest wasted demand on
+the site). An earlier session today had already diagnosed it and rewritten its
+meta description, so this went looking for what that entry left open. Two real
+faults, neither of them the one I expected.
+
+**The three Villava poplars carried the wrong distances, in seven places.**
+Measured from our own coordinates: pam_011 to pam_012 is 60 metres and we said
+240; pam_011 to pam_013 is 181 and we said 400. The compass directions were
+right, which is how it survived a read. All seven now carry the measured
+figure, across two access fields, two recognition lines and two stories.
+
+Why it mattered more than an ordinary slip: pam_012's recognition line opens
+"You can recognise it by position and little else", and then gave a position
+four times out. Position is the whole of what separates those three trunks, by
+our own admission, so on these trees the distance IS the entry. Somebody pacing
+240 metres for the broken-limbed poplar walks past it at 60.
+
+**And the fold suggested this morning should not happen.** 60 metres apart is
+not the Setubal twin case; pam_011 has three limbs with one dead and bare,
+pam_013 is a narrow Lombardy column, and the shared 314 cm girth is a banded
+register figure that three separate trees here carry. Only pam_012 is
+genuinely undistinguishable. Leaving all three with honest distances beats
+deleting a live page to tidy a thin one.
+
+**The photo fix could not have reached Pamplona, and now can.** This morning's
+note says the city "belongs at the top of photo_gaps.py --shortlist". It never
+could: the shortlist only prints a city that already has a candidate on file,
+and Pamplona's queue was swept to sweep 5 twice with 13 of 14 trees returning
+nothing, so it showed up on no list at all and nothing routed it to the
+medicine CLAUDE.md already names. `--shortlist` now ends with a STARVED block:
+demand cities where every candidate is judged or none was ever found, worst
+waste first, with the right command per city. It names **twelve cities holding
+337 unphotographed trees**, Pamplona top on 448 impressions, and not one has
+ever been through photo_last_resort.py. Lisbon (14 of 36), Barcelona (14 of
+56), Amsterdam, Singapore, Prague, Berlin and Rome are all on it.
+
+**And reading the rendered page rather than the data found a third thing: 242
+live pages print an internal tree id at the reader.** Pamplona had seven, in
+lines like "the same path segment as pam_012 (about 60m south)". Those are
+fixed, replaced by what a visitor can follow. The other 235 span many cities
+and happen wherever a pass cross-referenced one tree from another's access or
+transport field. Left as recorded work rather than made a build check: a FAIL
+would refuse every deploy until all 235 are rewritten, and each rewrite is a
+judgement per sentence rather than a substitution. Details in CURATION.md.
+
+**Trying that sweep found a worse bug than the one it was sent to fix.** This
+sandbox's network policy refuses commons.wikimedia.org, and
+`photo_last_resort.py` swallowed the error, printed "0 new" fourteen times and
+stamped `last_resort` with today's date on every Pamplona tree. A run that never
+reached Commons once had recorded that the last resort was tried here and found
+nothing, which is precisely the verdict that would keep the site's most wasted
+city out of every future hunt. `near_files()` now separates unreachable from
+empty, an unreachable tree gets no stamp, and a run that checked nothing exits 1
+saying so. The false stamps were reverted.
+
+Still not done, and this is the honest limit: no sweep and no viewing pass can
+run from here at all. The CI runner reaches Wikimedia fine, so the next night
+run at rung 6 gets the list and the command. This morning's other open item, a
+sourced girth-increment rate for Populus nigra to unblock six ages here and 24
+site-wide, also needs a source I cannot fetch from here.
+
+**One digest line added while answering a question of his about the same data:**
+`sighting_recorded` is the collect verb firing in the app, and the table could
+not say which half happened. Sightings.record() has always sent `known_tree`
+and nothing read it, so the digest now prints the split, with the reason the
+count can run ahead of what we receive: a sighting reaches our database only
+through SightingSync.push, which returns immediately without an account
+session, so somebody collecting trees signed out is a tap we count and a tree
+we never see.
+
+Full build (12,103 pages) and qa.py clean before committing.
+
+## 2026-09-18 (digest session) - The grouping-pages table missed its own first digest by 22 minutes, and the weekly analysis is red
+
+Asked for the daily digest, so this session read it and reported it. Two
+things it found on the way are worth more than the numbers.
+
+**The collections table shipped 22 minutes too late to appear anywhere.**
+`grouped_pages_lines()` went in at 10:11 UTC (commit 240c951, answering
+Hidde's "hoe doen onze collecties uiteindelijk?"); the digest had already
+written today's entry at 09:49. So the check built to answer the question
+would have stayed invisible until tomorrow morning. Dispatched the digest
+with `--force`, which exists for exactly this case and was written for the
+same shape of accident on 2026-08-09. The entry for 09-17 is rewritten and
+now carries the four grouping families.
+
+What it says, first time of asking: **parks are the only grouping family
+that converts.** 83 impressions, 5 clicks, and every park page that took a
+click beats what its position normally earns. Collections took 2 clicks on
+622 impressions; species 2 on 613. And the collection that looked like it
+was winning is not: /collections/trees-older-than-400-years climbed +253 to
+416 impressions at position 8.7 and took **zero** clicks, its biggest query
+being `"400 years old as of 2023" tree`, Google's exact-phrase operator,
+which nobody types. The bot flag caught it, as designed.
+
+**FOR HIDDE, nothing to do tonight: the Weekly analysis has been red since
+2026-09-14** and no local check can see it. Its last scheduled run failed
+after 65 seconds with an empty `ANTHROPIC_API_KEY`, which is the same
+one-turn zero-cost death the workflow's own comment documents. GitHub also
+delayed that Monday 11:30 cron to 16:59, so the 11:30 slot chosen on
+2026-08-27 to dodge the night chain did not hold. `health.py` did not flag
+it (four days stale, under its eight-day threshold) and `brief.py` could
+not, because both reach the gates through `gh` and this sandbox has no
+authenticated `gh`. Next cron is Monday 2026-09-21. Left alone rather than
+dispatched by hand: it is a Claude Code Action run against your usage
+window, the week stands at 2570/5000 minutes, and it is three days from
+firing on its own.
+
+Rung 2 otherwise clear, checked through the GitHub API rather than
+`health.py`: smoke, deploy and iOS all green on their newest completed
+runs, fresh-eyes review green, REVIEW.md 0 BLOCKER.
+
+## 2026-09-18 - Night run 2026-09-18 20:07 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 46.1 minutes of its 120 minute window, 318 turns, 25 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-18 (session 11, continuation) - Three cities' worth of translation: German, French, Japanese, 15 pages
+
+With `leads.py --ready` still empty after the earlier publishing work,
+moved to CLAUDE.md's cheapest supply rung: translating pages that already
+earn English impressions (`langcheck.py --next`). Three batches, dispatched
+in parallel: German (Regensburg, Cologne, Baldenhain), French (Bordeaux,
+Lyon, Venon, Lausanne, Nantes), Japanese (Takeo, Uda, Nagano, Yabu,
+Nagoya, Miyazaki, Otoyo). 15 cities, 68 trees, all merged and clean
+(`i18ncheck.py`: 82 overlays, 0 problems).
+
+Found and fixed a stale English count promise while merging the French
+pass: Lyon's `question_meta` said "eleven more" trees against an actual
+13, corrected to "twelve more" so both languages agree. Full local build
+(12,103 pages) and `qa.py` (16,031 pages) both clean before committing.
+
+## 2026-09-18 (photo viewing pass) - One photograph approved, 49 verdicts recorded, and two tools fixed that were quietly wasting every pass
+
+Judged the demand-ranked shortlist (`photo_gaps.py --shortlist`): 20 rows
+across Milan, Prague, Singapore, Berlin and Arnhem. **One approved, none
+held, 48 candidates rejected.**
+
+**Milan's Platano di Indro now has a photograph**, and the interesting part
+is that yesterday's pass had already rejected this exact file. It rejected
+it on the file's EXIF geotag, 45.475833 / 9.2, which sits 328 metres from
+our pin in a garden holding several large planes. That geotag is rounded to
+one decimal and is not where the tree is. The file is the P18 image of
+Wikidata Q55741802, a *pianta monumentale* whose own coordinate is
+45.473481 / 9.197203, **14 metres from our confirmed pin**, and the next
+registered plane in those gardens is 260 metres away. Looked at the pixels:
+an unmistakable veteran plane, camouflage bark, a deeply fluted trunk
+filling the frame and opening into five limbs each thick enough to be a
+trunk, which is exactly the vase our own recognition line describes.
+Daylight, well exposed, colour. Bare (8 March), which is a tiebreaker and
+there was no leafy candidate to prefer.
+
+**Nothing else on the list was a photograph of our tree.** Singapore's three
+were all frames from one 2024 shoot of the famous Tembusu of Lawn E, which
+is `sgp_001` and already photographed, offered for a Teak, a Temak and a
+Snake Tree. Arnhem's were the fungus false positives again (oyster mushroom
+gills, beefsteak brackets, honey-fungus rhizomorphs, all on chestnuts and
+beeches that are not our trees), plus a grey street junction, two
+Rijksmonument house facades, a 1954 wall relief, a wall poem, stained glass,
+an 1850s print, two 1961 building surveys, a 1900 photochrome, a muddy
+streambed, and a gatekeeper sculpture in Zaltbommel 30 km away. All are
+recorded with verdicts so no pass pays for them again.
+
+**Two tool defects found, both fixed, and the first could have destroyed
+work.** `photo_gaps.py --shortlist` filters cities on `trees > photos`,
+which is a CITY test, so every queued tree in a part-photographed city
+reached the list whether or not it already had its picture: 7 of the 20 rows
+were trees already served, and what they were offered was the next frame of
+the same shoot. That is not merely wasted viewing, because
+`photo_apply.py`'s `approve` OVERWRITES `tree["photo"]`, so a pass trusting
+the list and liking a second frame would have silently replaced a lead
+photograph somebody had already judged. It now skips trees that carry a
+photograph, and skips a duplicate candidate row whose identical url was
+already judged on that same tree, which is the other reason Milan came back
+a day after being decided. The shortlist that used to be four cities deep is
+now sixteen.
+
+Second: `measure()` in `photo_apply.py` read the JPEG frame header and never
+the EXIF orientation tag, so any photograph taken sideways was recorded
+transposed. Milan's is 3096x4128 everywhere a renderer shows it and was
+written down as 4128x3096. `photoDims()` puts those numbers on the `<img>`
+to reserve space before the file lands, and its own docstring says zeros are
+the honest fallback because "then the markup says nothing rather than
+something wrong": a transposed ratio is something wrong, and it produces the
+exact Cumulative Layout Shift the field was added to prevent.
+`photo_res.py`, the other writer of that pair, asks the Commons API for
+`size`, which is already orientation-corrected, so the two disagreed with
+each other until now. Verified the fix against Commons on three files, one
+rotated and two upright; the upright pair is unchanged.
+
+**FOR A LATER PASS, not done here:** every photograph approved through
+`photo_apply.py` before today may carry transposed dimensions if its file is
+EXIF-rotated. `photo_res.py` reads the correct numbers from the API and the
+daily digest runs it, so this should already be self-healing; worth one
+check that it actually overwrites rather than only filling blanks.
+
+`photo_light.py` could not run this session: the sandbox has no Pillow and
+installing it is not permitted here. Exposure was judged by eye, which the
+standard still allows; a run with Pillow available should be preferred for
+borderline light.
+
+## 2026-09-18 (session 11) - Finished an earlier attempt's uncommitted work: 2 new places, 2 more trees for Higashi-Hiroshima
+
+This window's first attempt had stopped after 23 minutes with 97 of 120
+minutes still unspent, having done real work and shipped none of it: no
+commit, no LOG entry. Found it sitting in the working tree, verified it,
+finished it, committed it.
+
+**Two new single-tree place pages published**, both under the 2026-08-31
+exception (a solitary famous tree may open its own page when the question
+"would somebody travel specifically for THIS ONE TREE" is genuinely yes):
+Guernica's Gernikako Arbola, the Tree of Gernika, whose page says plainly
+that the standing oak is young (planted 2015, fifth in a documented line)
+and that the destination is the ground itself, where Basque
+self-government was sworn for centuries; and Valentin de Tineo's
+Carbayon de Valentin, documented in writing before 1492 and generally
+held the oldest oak in Asturias. Both came from `_famous-spain.json`'s
+lead pile and are now marked resolved there.
+
+**Higashi-Hiroshima grew from 17 to 19 trees**: two more registry-only
+giants (a ginkgo at Genko-ji, a black pine at Tokuzen-ji), both flagged
+since only the national giant-tree survey names them specifically. The
+earlier attempt had left the verify pass finished but the write step and
+merge undone, and a standing claim on the city with 135 minutes still on
+its clock; wrote both stories, merged them in, updated the city's count
+promises (17 to 19 in the intro, meta description and question context),
+and released the claim.
+
+Verified all of it before committing: local `astro build` (12,035
+pages), `preflight.py` (0 problems), `qa.py` (15,963 pages, clean) all
+green. `leads.py --ready` was empty going in and stayed empty; no other
+claims were standing. Left for a future window: the clock still has time
+on it most nights, per CLAUDE.md's capacity doctrine, so the next run
+should pick up Step 0's ladder fresh rather than assume this one used
+the whole budget.
+
+## 2026-09-18 (session 10) - Released a stale claim, closed a scouting-ledger gap, and cleared two housekeeping flags
+
+Resumed an earlier attempt in this window that had stopped early with
+budget unspent, having shipped 2 trees. Its standing claim on florence
+had nothing left to finish behind it: the register-exhausted verdict was
+already committed in an earlier commit, so the claim was released rather
+than re-litigated. `leads.py --ready` was empty (0 writable leads), so
+this fell to Step 0's ladder. Submissions and sightings were both
+current (nothing new). Site health was clear (the failing weekly-analysis
+run is usage-allowance exhaustion, not breakage, per health.py's own
+read).
+
+**Register scouting: `scout_next.py --target` was pointing at Monterey
+(#70) as "no supply and no verdict", and that was wrong.** The register
+behind it, Cal Poly's California Big Trees API, was already found and
+stalled on licence on 2026-08-31, but recorded under the place name
+"California (statewide)", which does not equal its country field
+("United States"), so the ledger's country-level generalisation never
+applied it to individual cities. Re-fetched the API live (still no
+licence stated anywhere) and distance-checked the other ranked
+California cities with no entry of their own: Monterey, Santa Cruz, San
+Jose, Sacramento and Santa Barbara all sit within reach (1 to 23
+candidates within 30 km). Added them to the entry's `covers` list. Los
+Angeles, Long Beach, San Francisco, San Diego and Oakland already carry
+their own separate verdicts and were untouched. `scout_next.py --target`
+now reports BUILD instead of re-suggesting a scout of a register already
+on file. The rest of the queue's "openable today" list is genuinely thin
+(1-8 leads per city, all below the six-candidate floor for dispatching a
+pass, and several are COVERED cases that would deepen an existing city
+rather than open a new page), so nothing there was dispatched.
+
+**Two mechanical housekeeping items the session-start brief flagged,
+both cleared:** `vendor_photos.py` copied the three photographs session
+9 approved (Będomin's Wybicki Oak, Hel's Helena the poplar, Milan's
+Villa Litta plane) onto our own domain, which is what a fresh app
+install needs before Wikimedia's rate limit can bite it. `appdata.py`
+synced the app's bundled catalogue, which was 143 trees stale (3111 to
+3252).
+
+Left alone: eleven `scripts/_*.py` scratch files sitting untracked from
+an earlier session's photo-judging work (harmless, no permission to
+remove them this session), and the six branches the session-start brief
+named as carrying unmerged work, which needed more time than this
+window had left to review safely.
+
+## 2026-09-18 (session 9) - A viewing pass on the queued photo backlog, and a lesson about checking what a tree already has
+
+Resumed an earlier attempt in the same window that had stopped early with
+budget unspent. First committed its finished, uncommitted work: photographs
+for Będomin's Wybicki Oak and Hel's Helena the poplar, both CC BY-SA 4.0 and
+already judged against the Cadiz standard.
+
+**Then a viewing pass on data/photo-queue.json's unjudged candidates, scoped
+to cities DATA.md already lists as clearing the demand bar (Milan, Barcelona,
+Prague, Singapore, Berlin, Rome, Seville, Palermo, Paris, Valencia, Los
+Angeles).** Milan's Villa Litta plane (mil_024) got its first photograph, and
+27 other candidates across those cities were rejected on inspection: leaf and
+bark close-ups, a bald cypress captioned as such next to the tree it was
+supposed to show, garden ornaments and a subway platform queued against
+Berlin's designated trees, wrong-tree mismatches (a Tembusu at Lawn E queued
+against Singapore's Burmese Banyan at Swan Lake, a Rubroshorea species
+mismatch), ivy-hidden trunks, hedge-blocked crowns with no trunk visible, and
+three portraits of people at a Prague tree-planting ceremony.
+
+**The mistake, caught before it shipped: several "unjudged" candidates
+belonged to trees that already had a perfectly good approved or held photo
+from an earlier pass, sitting at a different, lower index in the same
+candidate list.** Treating every unjudged entry as an empty gap led to
+approving six replacement photos (Seville's Judas tree, Valencia's First
+Ficus of the Glorieta, Barcelona's Judas tree of Placa Joanic and its Osage
+Orange, and LA's oldest palm) that were regressions against, or exact
+duplicates of, work already on file. Caught by diffing each touched city
+file against its pre-session state before pushing; all six reverted, and the
+queue corrected to reject the superseded candidates instead so they do not
+resurface. Net new photographs from this whole pass: Milan's Villa Litta
+plane only. The rest of the "approved" count in the commit history is
+bookkeeping, not new coverage.
+
+**A real bug found in the process:** `clean_author()` in scripts/photo_apply.py
+never stripped HTML tags, so a Flickr-sourced Commons import could ship a raw
+`<a href=...>` fragment as the on-page photo credit. Caught live on
+Barcelona's bcn_013 (Osage Orange) mid-pass, fixed in the script (strips tags
+and Flickr's trailing "from <city>"), and the one live instance corrected by
+hand. Worth checking other Flickr-sourced credits already on file if anyone
+has a spare pass; this session did not have time to sweep for more.
+
+Every candidate in data/photo-queue.json is now judged; the twelve trees with
+no usable candidate at all (Berlin's four, Singapore's three, Prague's,
+Milan's other two, Barcelona's other two) are marked exhausted so a future
+sweep does not re-judge the same dead ends.
+
+## 2026-09-18 (session 8) - Benchmarked the sign in / sign out flow, which never had been, and fixed what it found
+
+Hidde asked whether the whole sign in / sign out flow had ever been
+benchmarked, saying it feels clunky which pages he lands on. **It had not.**
+CONVENTIONS.md carries five entries on the sign-in SHEET (its shape, Google in
+front and Apple behind More options, what it says, why web and app draw
+different buttons) and every one of them is about the moment of ASKING.
+Nothing anywhere covered the moment after, which is where the flow was broken.
+
+**Three faults, all verified against the built output rather than by reading
+source.**
+
+1. **The page you land on painted itself SIGNED OUT.** Your own saves
+   invisible, the tick blank, /account/settings saying you are not signed in,
+   until you reloaded by hand.
+2. **The act that asked for the sign-in was dropped.** Press Save, sign in,
+   land back on the tree with it unsaved. The app had the same hole.
+3. **Signing out sent you to /account**, which for somebody who has just
+   signed out is the sign-in form. The last thing signing out did was ask you
+   to sign in.
+
+**The cause of (1) was one thing in the wrong place, and it explains why it
+survived so long.** A magic link and a Google return come back as an ORDINARY
+PAGE LOAD with the tokens in the url fragment, and that fragment was parsed at
+the FOOT of the body. Every script that asks who you are runs earlier: the
+hearts, the ticks, the worth-it vote, the settings page. All of them asked
+before the answer existed. It hid because the two surfaces anybody checks were
+the two that happened to be fine: /account parses the fragment itself, and the
+nav's "Account" swap is a type="module" script, which the browser defers until
+after every classic script, so it was right by accident of deferral.
+
+**What changed.** SIGNIN_CATCH_JS now catches the token in the HEAD, so
+whatever a page asks it gets the right answer on the first ask. What the person
+was doing is carried across the round trip and replayed once the account's
+lists have landed, idempotently, so a tree already saved on another device is
+never toggled back off. A save and a tick are replayed; a VOTE is deliberately
+not, because an opinion is not something to post on somebody's behalf because
+they signed in afterwards. Sign-out and account deletion both land in place
+with the state around them swapped, and sign-out is asked once first, as the
+app already asks. Nudge.finish does the replay half in the app.
+
+**Two things found on the way.** The nav's signed-in swap was typed in English
+and this bar renders in eight languages, so signing in turned Konto, Compte and
+Cuenta into "Account" on every translated page; and nothing could ever swap it
+back, so an in-place sign-out would have left a bar still claiming you were
+signed in. One painter now does both directions in the page's own language.
+
+**LIVE.** Merged to main as 1446b5f and deployed: deploy runs 4992 (18:31)
+and 4995 (20:52) both succeeded on commits descending from it. My own push's
+deploy run was cancelled 19 seconds in by a night run, which is ordinary here
+and not a failure; the next completed run carried the code. Note for whoever
+checks next: this sandbox's egress proxy refuses ancienttrees.app, so the live
+HTML cannot be read from a run, and the deploy conclusion is the evidence.
+
+**The ratchet.** check_the_session_is_known_before_anything_asks() in qa.py
+refuses a build where anything reads the session before the head catches the
+token, and refuses a catch written as a type="module" script, which is the
+exact subtlety that masked this. Removing it needs Hidde. The convention is
+written up in CONVENTIONS.md with its references, so the next session does not
+repeat the search.
+
+**One store registered, and session 6 of the same day had just built the
+right place to register it.** Carrying the act across the round trip means
+writing one key in the browser, and `check_nothing_is_stored_locally()` refused
+it, correctly. Session 6 had meanwhile replaced that check's inline allowlist
+with `data/cross-device.json`, where every store on either surface carries a
+verdict. `ancienttrees_pending` is recorded there as `device`, beside the
+contribute draft, whose category it shares: an act begun and not finished
+rather than a thing a person has accumulated, thrown away on use and ignored
+after half an hour. The argument that settles it is that at the moment it is
+written THERE IS NO ACCOUNT to hang it on, which is the whole situation it
+exists for; the server-side alternative means identifying somebody who has not
+signed in. Nothing a person KEEPS has moved off the account.
+
+**Left alone, deliberately.** WalkMode's tick leads into a camera flow, so
+replaying it would open a camera unexpectedly. The OAuth redirect_to still
+drops the query string: ?kind= on /contribute survives anyway because the
+draft carries sg-kind, and widening it means touching the Supabase redirect
+allow-list, which cannot be tested from here. The app half is written and
+pushed in the same change, per the cross-platform default, and is compiled only
+by ios.yml: this sandbox has no Xcode.
+## 2026-09-18 (session 8) - The profile pages say what the app says, and stop saying the rest
+
+Hidde, on /account/settings: "There is a lot of random copy on the profile
+page on web that's not in app delete it and follow app design and copy
+example", quoting the two paragraphs that have no counterpart on the phone.
+
+**Both gone.** "Set a name and people can find you in the app to follow your
+trees. Leave it empty and nobody can." was the website explaining what a name
+is for; ProfileEditor.swift says "Any name you like. It does not have to be
+your real one." and stops. "Your trees are kept under this address. To move
+your collection to another one, write to info@..." answered a question nobody
+asks while looking at their own name: the app keeps that sentence on the
+delete screen, and so does this page now.
+
+**What the page says instead is the app's own strings**, field for field:
+"Your name" over the box, "The name people see" inside it, and Profile.swift's
+three delete sentences word for word. Save is dead while the box is empty, as
+the app's Save is, rather than a sentence afterwards about 1 to 40 characters,
+and what a save has to say gets its own line instead of eating the one under
+the field. The button says "Delete account", as the app's does.
+
+**Distances moved to where the app keeps it.** It was a card on /account,
+which is the profile, on a page whose own header says settings sit behind the
+gear; it is a row on /account/settings now, and the note saying which way it
+was following is gone, because the two buttons say that. CONVENTIONS.md's
+units entry (AllTrails, komoot and Google Maps all keep the switch in account
+settings) is updated to match what we actually built.
+
+**The two empty lists** use Collect.swift's lines now. The web's My trees line
+keeps the method it actually has, a form rather than a camera.
+
+**And the alignment fault the app fixed on itself in August was still here.**
+Running smoke_test's own harness against the rebuilt page found ACCOUNT,
+CONTRIBUTE and ABOUT starting at 20 while every card under them sits at 16,
+which is the drift Profile.swift records fixing on the phone ("a reader reads
+it as sloppy without being able to name it"). Both are at 16 now. The same
+pass found the delete-confirmation field at 15px, under the 16px floor that
+stops Safari zooming the page in when a thumb lands in it; it is the one field
+somebody types in under pressure.
+
+Build clean (11,993 pages), `qa.py` green (15,893 pages), preflight,
+paritycheck, crosscheck, i18ncheck and conventioncheck all clean, and both
+pages measure with no overflow and no drift at 375. Looked at at 375 and on a
+desktop.
+
+One gap left, named rather than built: the app's editor sets a profile
+PICTURE and the website only ever reads one. Nothing on the web can upload an
+avatar yet.
+## 2026-09-18 (session 7) - /sources keeps the names and stops publishing the endpoints
+
+Hidde asked whether listing every source on /sources is smart, since it also
+helps competitors. Short answer: the names have to stay and cost us almost
+nothing, but the page was publishing something else alongside them that
+nobody is owed.
+
+**The names are not optional and are not the moat.** 38 of the 55 registers
+name attribution in the licence itself, and a dozen more government terms
+carry it in prose, which is
+why the page was built on 2026-09-03 in the first place; withholding them
+would be a licence breach rather than a strategy. And a competitor learns
+little: these are government registers, findable by searching "alberi
+monumentali" in each language. What is expensive here is what the corpus
+already measures, roughly 19k tokens a tree researched from zero against
+0.4k with a register in hand: the verification, the clustering, the pins,
+the stories, the photographs. MonumentalTrees holds more trees than we ever
+will and it does not matter.
+
+**What was actually leaking was our scouting, not our sources.** The page
+rendered the raw `endpoint` field as each link, which meant the exact
+request we make: query strings, layer names, and the notes an import pass
+wrote down after working it out (Flanders caps a page at 50 whatever
+`per_pagina` says, Bavaria wants `startIndex` paged, Poland serves lon,lat).
+No licence asks for that. It was also producing links that resolve nowhere,
+because an href carrying `(ArcGIS FeatureServer, GeoJSON, EPSG:4326)` or
+`startIndex=<n>` is not a url, so the page was failing the one promise it
+makes a reader, that they can check us.
+
+`publicSourceUrl()` in `site/src/lib/sources.ts` now prefers a catalogue
+page where a register recorded one and otherwise strips the endpoint back
+to the publisher's own portal. 51 of 55 entries link somewhere a person can
+read; the remaining 4 are hosted on Esri tenants (`services3.arcgis.com/<id>`),
+where the stripped url credits nobody, so they list the authority and the
+licence with no link. Nothing else on the page changed: names, licences,
+share-alike notice and per-register counts all stay.
+
+**One thing found while in there, same class of problem.** Spokane's licence
+is recorded as a 493-character internal note, and all of it was rendering on
+the public page, naming CLAUDE.md, "layer-2 bulk register-dot import" and
+which other US registers it resembles. The public line is now the two words
+that are true, "none stated", and the reasoning stays in the register file.
+Also gave Spokane its country, so it no longer sits alone under "Other".
+
+Build clean (11,993 pages), `preflight.py` 0 problems, `qa.py` green.
+
+**FOR HIDDE: the real exposure is not /sources, it is the repository.**
+`github.com/burgmanshidde-ancienttrees/ancienttrees` is public, so CLAUDE.md,
+CITY_QUEUE.md, OPEN_DATA_SURVEY.md, DATA.md's Search Console numbers, the
+cost meters and every register file's endpoint and caveat are already
+readable by anyone, in far more useful form than the credits page ever was.
+That is a bigger decision than a page and it is yours: the site deploys from
+this repo via GitHub Pages, which on a private repo needs a paid plan (hard
+rule 5) or a move to another host. Say the word and I will price the move;
+I have changed nothing about it.
+
+## 2026-09-18 (session 6) - Nothing lives on the device that belongs to an account, and the rule is now a check on BOTH surfaces
+
+Hidde: "Stop saving stuff locally anywhere please make sure this happens
+nowhere always account related." The third time he has given this rule, on
+three different days (2026-08-27 "niks moet lokaal opgeslagen zijn",
+2026-09-02 "alles wat wordt opgeslagen moet op je account zijn", today). By
+this file's own ratchet the second time should have produced a check on both
+surfaces and it produced one: `qa.py` has refused an unlisted localStorage key
+on the WEBSITE since 2026-09-02, and nothing ever asked the APP the same
+question. So the fault went on living there, which is exactly what an audit
+found.
+
+**What the app was still keeping, and what happened to it:**
+
+| What | Was | Now |
+|---|---|---|
+| Every worth-it vote and report | three UserDefaults keys PER TREE, written from the account at launch and then read by the views as the truth | the views read `MyVotes`, which is the account's own answer, and nothing is written to the device |
+| Paywall interest (`entitlement.interest.v1`) | a set of features written to the device that nothing ever read | sent as an event; `Waitlist.join` already put the same fact in the database |
+
+The mirror was not harmless. **Nothing cleared those keys on sign-out**, so a
+signed-out phone went on showing the last person's votes, and a key written
+per tree cannot be enumerated, so it could not have been cleared even
+deliberately. `MyVotes.clearTheOldMirror()` sweeps them off phones that
+already carry them, unconditionally and idempotently, because a flag to track
+the removal of something from the device is one more thing stored on the
+device.
+
+**And it surfaced a bug that was invisible while the mirror existed:** the
+reader matched a vote with `why.contains("worth it")`, and "not worth it"
+contains "worth it", so the payoff screen's thumbs DOWN came back as a green
+thumbs UP on the tree page at the next launch. It could not be seen before
+because no control ever read that value back; it only ever wrote. Matched
+whole now, with a test.
+
+**The mechanism, and the first version of it was a mistake worth recording.**
+I wrote a new list and a new script for the app before noticing that
+`data/cross-device.json` and `scripts/crossdevice.py` have registered every
+store on BOTH surfaces since 2026-09-11, with a verdict on each. A second list
+answering nearly the same question is the duplication this corpus keeps
+recording under other names, so both were deleted unshipped.
+
+What the existing register was missing is the actual hole, and it is worth
+more than the list I nearly added: it asked whether anybody had RULED on a
+store and never whether the code OBEYED the ruling. `at_worthit_`, `at_wrong_`
+and `at_wrong_detail_` were all correctly ruled `account` in that file, all
+three were written to UserDefaults anyway, and the check was green the whole
+time.
+
+So `crossdevice.py` now asks an `account` store a second question, in a new
+`off` field: what takes this off a phone nobody is signed in to.
+"Nothing, because ..." is a legitimate answer and two stores give it (a units
+preference is how a screen reads, not somebody's data; a block should not
+lapse when a session expires). The point is the one conventioncheck.py makes:
+a script cannot judge the answer, only whether anybody was made to write one
+down. It fired on three real stores the moment it existed. `qa.py`'s web half
+now reads the same register instead of its own hard-coded set, so there is one
+register and no list can drift from another. Verified by planting a violation
+of each half and watching both fail, then removing them.
+
+The four retired keys are out of the register, and it now reads: 22 stores, 3
+account, 14 device, 5 not a store.
+
+Five tests in `VotesTests` hold it. The app half is judged by `ios.yml`, since
+there is no Xcode here.
+
 
 ## 2026-09-18 (session 5) - Answered "how are the collections doing", rebuilt the stalest one, put the whole page type on the meter
 
@@ -236,6 +983,99 @@ Build clean, `preflight.py` 0 problems, `qa.py` green over 15,893 pages,
 paritycheck/crosscheck/englishcheck/netcheck/conventioncheck all green. The
 app half is written and pushed in the same change and is judged by `ios.yml`,
 since there is no Xcode here.
+
+## 2026-09-18 (session 5) - Researched the world's most-searched parks: 5 of 128 were ours, and our own keyword list was hiding three pages
+
+Hidde asked for a study of the world's best-known parks, the ones people
+search for on Google, and whether we already hold them: "ik wil gewoon
+zoekvolume winnen." A park does not have to sit in a big city to qualify.
+
+**The demand source is Google's own.** Its Year in Search publishes the most
+searched parks on Google Maps, which is the closest thing to search volume
+anybody gives away free. The 2023 top nine, in order: Park Guell, Central
+Park, Hyde Park, the Retiro, Villa Borghese, Nara Park, Cubbon Park, Red
+Rocks, Ibirapuera. The 2024 top five: Central Park, Rizal Park, Odori Park,
+Ohori Park, Park Guell. `data/famous-parks.json` holds 128 parks with that
+evidence per park, press-reported footfall where there is any, and a
+coordinate; `scripts/park_demand.py` crosses each against our own trees BY
+DISTANCE, never by name, and says what it needs next.
+
+**The answer to his question: 5 of the 128 have a park page.** The Retiro,
+Central Park, Villa Borghese, Schlosspark Nymphenburg, and Parque de Maria
+Luisa as of today. 50 more famous parks hold between one and four of our
+trees, 41 sit empty in a city we already publish, and 8 are outside our
+coverage entirely.
+
+**It said 6 until the tool was checked against the built site, and Nara Park
+is the correction worth keeping.** An intro file existing looks exactly like a
+published page from the data side, and Contract H needs five trees AND an
+intro: Nara Park has the intro, written prose, and four trees, so its page has
+never rendered at all. Google's sixth most searched park of 2023, one verified
+tree away, with 17 register rows and leads inside its radius. The tool now
+calls that state "one short" and ranks it above everything else, because prose
+already written is the cheapest work on the list. The other one in that state
+is the Hortus Botanicus in Amsterdam, at two trees, which is what his own
+paid-entry ruling of 2026-08-23 left behind when ten ticketed Amsterdam trees
+came off the map.
+
+**The largest blocker was not research, it was our own keyword list.** A park
+is not a field on a tree here: `parkKey()` derives it from the address text
+matching a word list, and "parque" was not on that list. Spanish and
+Portuguese for park, absent, while "retiro" sat there as a single-case patch
+for the one Madrid park somebody noticed. "garten" was missing too, with
+"schlosspark" and "stadtpark" present. Six words added (parque, garten,
+plantsoen, bosque, foret, floresta): **147 trees gained a park they were
+always standing in, and three parks crossed Contract H's five-tree gate.**
+It also retired three false parks, because "Parking du Grand Canton" and
+"Tane Mahuta Walk car park" had been reading as parks all along.
+
+Three park pages written and live from that, no new research and no new
+trees: **Parque de Maria Luisa, Seville** (10 trees, and Seville's own 2022
+survey puts three of the city's biggest trees inside it), **Oosterplantsoen,
+Hoorn** (7), **Kontumazgarten, Nuremberg** (6). `pagegaps.py` reported zero
+park gaps before this and three after, which is the same tool answering
+honestly once it could see.
+
+**Eight park pages were live promising a tree count they did not have.**
+Singapore Botanic Gardens said eight and maps twenty-four, the Parc d'Egmont
+said six and maps sixteen, Caserta said seven and maps sixteen, plus Brisbane,
+Padua, Naples, Valencia, Milan and Park Sonsbeek. Fixed, titles and meta
+descriptions and the intro sentences that state the page's own count; subset
+sentences ("six of them are on the monumental register") were left alone
+because they are not the page count and I cannot re-verify them cheaply.
+Three titles also sat over Contract H's 60-character cap, where `fitTitle`
+was silently dropping them for a generated fallback, so Singapore and Hobart
+had a hand-written title and count that no page has ever printed.
+
+Three build checks so none of this can come back, all refusing a push: park
+count promises in `count-promises.ts` (the city version has existed since
+Florence went to fifteen still saying ten, and parks were never covered,
+because a park grows when a tree gains an address rather than when a city
+grows); a hand-written park title over the cap now failing the build instead
+of being swallowed; and `check_park_words_match()` in preflight, because the
+keyword list lives in two places that have each claimed for months to mirror
+the other exactly and nothing compared them. Tested all three against a
+deliberate regression rather than trusting a green build, which is how the
+first version of the count check was caught rejecting the very title it was
+written to protect. Per the ratchet, removing any of them needs Hidde.
+
+**What is worth doing next, cheapest first.** Park Guell, the most searched
+park on Google Maps in 2023, maps four of our trees and needs ONE more for a
+page; Barcelona's register has 61 trees within reach. Parc de la Tete d'Or in
+Lyon is also one tree short, with four already groupable. Vondelpark maps one
+tree while Amsterdam's own register holds 145 designated trees within 600
+metres of its centre, which is a verify pass rather than a hunt. And Margaret
+Island in Budapest has five trees whose addresses all say "Margaret Island",
+groupable by no keyword that would be safe to add, so it needs an explicit
+park-name list rather than a wider regex: that is the one piece of this I
+have not built.
+
+`--views` (Wikipedia pageviews per park, the proxy demand.py uses for cities)
+could not run: this session's network policy blocks every Wikimedia host, so
+the ranking is Google's published lists plus footfall rather than a measured
+number per park. A night run can fill it in one pass.
+
+Build clean, `qa.py` green, `preflight.py` 626 places and 0 problems.
 
 ## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
 

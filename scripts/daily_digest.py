@@ -2338,6 +2338,35 @@ def app_section(today):
         out.append("- Tabs opened (14d): " + "; ".join(
             "%s %d" % (t[0] or "?", int(t[1])) for t in tabs))
 
+    # TICKING OFF OUR TREE, OR ADDING THEIR OWN. The second breakdown worth a
+    # query, because sighting_recorded is the collect verb firing and the row
+    # above cannot say which half of it happened. Sightings.record() sends
+    # `known_tree` for exactly this and nothing read it.
+    #
+    # It is also the only thing that can explain this table's strangest number.
+    # PostHog counts the EVENT from the phone, keyed to an install id, while a
+    # sighting only reaches our database through SightingSync.push, which
+    # returns immediately without an account session. So a signed-out person
+    # collects trees, we count the tap and never see the tree, and the
+    # account-linked side of the digest reports zero reader trees on the same
+    # day this row reports dozens. Neither number is wrong and the gap is the
+    # finding.
+    kinds = _posthog(
+        """
+        SELECT properties.known_tree, count()
+        FROM events
+        WHERE event = 'sighting_recorded'
+              AND timestamp >= now() - INTERVAL 14 DAY %s
+        GROUP BY 1 ORDER BY 2 DESC
+        """ % and_ours, key, project)
+    if kinds:
+        say = {"yes": "a tree we map", "no": "a tree we do not"}
+        out.append("- Trees recorded (14d): " + "; ".join(
+            "%s %d" % (say.get(str(k[0]), "unsaid"), int(k[1])) for k in kinds))
+        out.append("  A sighting reaches our database only through an account. "
+                   "Signed out it stays on the phone, so this count can run "
+                   "ahead of the trees and photographs we actually receive.")
+
     return "\n".join(out)
 
 
