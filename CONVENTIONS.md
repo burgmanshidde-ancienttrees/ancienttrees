@@ -70,6 +70,20 @@ and `/explore#near` already exists and already triggers the locate control
 (site/src/lib/map.ts), so a "Trees near me" row is a real destination rather
 than a thing to build.
 
+**What shipped, 2026-09-19.** Three drafts went to him in
+drafts/menu-options.html and he picked the flat one ("let's do 2"): their
+sheet, their rows, their tiles, their loud control at the top and their
+account at the bottom, with every section open. Below 800px `.nav-drop-menu`
+is now that sheet; above it the dropdown is untouched.
+
+Two details worth keeping, because both cost time to find. The bar sets
+`backdrop-filter`, and a filtered ancestor is the containing block for its
+fixed children, so `inset: 0` on the sheet resolves against the 56px BAR and
+not the viewport; explicit top/left plus width and height is what survives
+either way. And the language row that the drafts put at the foot was dropped:
+the picker is a row of autonyms and it already lives in the footer, which is
+where AllTrails and komoot put theirs (LanguagePicker.astro, 2026-08-22).
+
 Source: Hidde's screenshot of alltrails.com in Safari, 2026-09-18, kept with
 the proposal in drafts/menu-options.html.
 

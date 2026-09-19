@@ -1,6 +1,42 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-19 (session 1) - The phone menu is a sheet now, drawn after AllTrails
+
+Hidde sent AllTrails' mobile menu, said he likes it much better than ours,
+and asked for three versions of it. They went to him as a rendered mock-up
+at phone width (`drafts/menu-options.html`, his screenshot kept beside it)
+and he picked the flat one: their sheet and their rows, with every section
+open rather than folded, because they have about twenty-five destinations
+and we have ten.
+
+**What the phone menu is now.** A full-screen white sheet with its own mark
+and a circled X, one dark "Download the app" pill at the top, three open
+groups (Browse, Yours, Take part) with a hairline between them, 48px rows
+carrying a 34px icon tile, and a Sign in pill at the foot that disappears
+once you are signed in. Desktop is untouched and still a dropdown. The
+measurements come from his screenshot rather than from taste, and both the
+numbers and what we deliberately did not copy are in CONVENTIONS.md.
+
+**Two things found while building it, both worth more than the menu.** The
+nav's whole script (menus closing each other, click-outside, Escape, and the
+swap that tells the bar who you are) sat inside the `{ANALYTICS_TOKEN && ...}`
+block, so it shipped only where a Cloudflare token is set. That was a lost
+nicety while this was a dropdown; with a sheet that covers the bar and the
+button that opened it, a tokenless build would have trapped the reader on a
+full-screen menu with no way out. It is outside that block now, which is the
+same correction the units script records from a week ago. And `header.bar`
+sets `backdrop-filter`, which makes it the containing block for its own fixed
+children, so the obvious `inset: 0` would have drawn the sheet inside a 56px
+letterbox.
+
+Three new strings (Take part, Sign in, Close) in all eight languages, so the
+sheet arrived translated rather than in English with seven holes. Checked by
+looking at it: Cadiz and /nl/cadiz at 375px with the menu open, the foot of
+the sheet, and the desktop dropdown. Build clean at 11,993 pages, `qa.py`
+green, preflight 0 problems, paritycheck, crosscheck, conventioncheck and
+pluralcheck all green. Merged to main and live.
+
 ## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
 
 An earlier attempt this window stopped after 43 minutes having shipped
