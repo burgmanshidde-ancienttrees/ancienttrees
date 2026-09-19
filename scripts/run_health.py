@@ -92,6 +92,101 @@ DENIAL_KEYS = ("permission_denials_count", "permission_denials",
                "tool_permission_denials", "blocked_tool_uses")
 
 
+# A bare command name: letters, digits, dash, underscore, dot. Anything that
+# does not match is reported as "?" rather than truncated, because a guess at
+# where an argument starts is how a path leaks.
+_BARE_NAME = re.compile(r"[A-Za-z0-9._-]{1,20}")
+# The operators that chain one command to the next. Captured, not discarded:
+# which operator joined two segments is half of what makes a shape readable.
+_CHAIN = re.compile(r"(&&|\|\||;|\||\n)")
+# How many segments a label carries before it gives up and says "more". Four is
+# enough to see the shape and short enough to read in a table.
+_MAX_SEGMENTS = 4
+
+
+def _segment_head(segment):
+    """The command name at the head of one segment, and whether it opened a
+    subshell. Redaction-safe: only a bare command name is ever returned."""
+    s = segment.strip()
+    opened = False
+    # A parenthesised subshell is the shape that silently stopped every night
+    # run for a day in August, so it is worth naming rather than stripping.
+    while s[:1] in ("(", "{", "!"):
+        opened = opened or s[0] == "("
+        s = s[1:].lstrip()
+    words = s.split()
+    # FOO=bar cmd: the assignment is not the command, and it can carry a value.
+    while words and "=" in words[0] and not words[0].startswith("="):
+        words.pop(0)
+    if not words:
+        return None, opened
+    first = words[0]
+    return (first if _BARE_NAME.fullmatch(first) else "?"), opened
+
+
+def command_shape(cmd):
+    """The SHAPE of a shell command: the head word of every segment, joined by
+    the operators that chained them, and nothing else.
+
+    Why the shape rather than the first word. Until 2026-09-19 this recorded the
+    first word alone, on the reasoning that the allowlist is a list of binaries
+    so the binary is the whole question. That reasoning was wrong in a way the
+    record itself could not show: the allowlist matches the WHOLE command
+    string, so `python3 x.py && git commit` is refused although `python3` and
+    `git` are both on the list, and it was logged as `Bash(python3)`. For a
+    month the record named the one word that was never the problem. Measured
+    over the last 60 runs, `Bash(python3)` was the most-refused label on the
+    board, appearing in 43 of them, while `Bash(python3:*)` sat on the
+    allowlist the whole time.
+
+    That is also why the 2026-08-20 widening bought nothing: binaries were added
+    from first words that were already allowed. Guessing which to add has now
+    been tried twice, so what changes again is the record, this time at the
+    level the matcher actually works on.
+
+    The privacy rule is unchanged and is what bounds this: only bare command
+    names ever leave here, one per segment, never an argument. `python3 x.py |
+    head -5` becomes `python3 | head`, and a path, a URL or a reader's
+    submission cannot survive that.
+    """
+    if not cmd or not cmd.strip():
+        return None
+    parts = _CHAIN.split(cmd)
+    out, subshell, truncated = [], False, False
+    for i, part in enumerate(parts):
+        if i % 2:                                   # an operator
+            if len(out) >= _MAX_SEGMENTS * 2 - 1:
+                truncated = True
+                continue
+            out.append("&&" if part == "&&" else
+                       "||" if part == "||" else
+                       "|" if part == "|" else ";")
+            continue
+        head, opened = _segment_head(part)
+        subshell = subshell or opened
+        if head is None:
+            # An empty segment: a trailing operator, or a split inside quotes.
+            if out and out[-1] in ("&&", "||", "|", ";"):
+                out.pop()
+            continue
+        if len([x for x in out if x not in ("&&", "||", "|", ";")]) >= _MAX_SEGMENTS:
+            truncated = True
+            continue
+        out.append(head)
+    while out and out[-1] in ("&&", "||", "|", ";"):
+        out.pop()
+    while out and out[0] in ("&&", "||", "|", ";"):
+        out.pop(0)
+    if not out:
+        return None
+    shape = " ".join(out)
+    if truncated:
+        shape += " ..."
+    if subshell:
+        shape = "subshell " + shape
+    return shape
+
+
 def _denial_label(d):
     """What was refused, in the smallest form that is still useful.
 
@@ -99,23 +194,16 @@ def _denial_label(d):
     denied command can carry a URL or a path from a reader submission and this
     file is public. The reasoning is right and the result was useless: every
     night reported "Bash" and nothing else, so 123 refusals across six runs told
-    us the wall was made of shell and never which wall.
-
-    So take the first word of the command, the binary, and nothing after it.
-    `rm`, `xargs`, `chmod`, `swiftc`, `bash` carry no URL, no path and no
-    reader data, and the binary is the entire question: the allowlist is a list
-    of binaries. Anything that does not look like a bare command name is
-    dropped rather than truncated, because a guess at where an argument starts
-    is how a path leaks.
+    us the wall was made of shell and never which wall. The second version took
+    the first word, which named a wall that was not there; see command_shape.
     """
     tool = str(d.get("tool_name") or d.get("tool") or d.get("name") or "?")[:24]
     inp = d.get("tool_input") or d.get("input") or {}
     cmd = inp.get("command") if isinstance(inp, dict) else None
     if tool == "Bash" and isinstance(cmd, str):
-        first = cmd.strip().split()[0] if cmd.strip() else ""
-        # A bare binary name only: letters, digits, dash, underscore, dot.
-        if first and re.fullmatch(r"[A-Za-z0-9._-]{1,20}", first):
-            return "Bash(%s)" % first
+        shape = command_shape(cmd)
+        if shape:
+            return "Bash(%s)" % shape
     return tool
 
 
@@ -565,6 +653,48 @@ def day_minutes(path=HEALTH, now=None):
     return spent_minutes(1, path, now)
 
 
+def denial_report(days=7, path=HEALTH, now=None):
+    """Which walls the runs hit, and how much of the window they cost.
+
+    Measured 2026-09-19 across the 25 most recent working runs: 892 refusals in
+    9,612 turns, 9.3 percent, one turn in eleven, and each one usually costs a
+    retry as well. It was zero in mid-August and has grown every week since.
+    That is the largest single piece of a night window this project can buy back
+    without changing anything about how the work is done.
+
+    Counts are RUNS a shape appeared in, not times it was refused: the record
+    carries a set per run, deliberately, because the full list would be long and
+    would repeat. So a shape in 40 of 60 runs is a standing wall, and one in 2 is
+    a run improvising.
+    """
+    try:
+        with open(path, encoding="utf-8") as fh:
+            records = json.load(fh).get("runs") or []
+    except (OSError, ValueError):
+        return None
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    cutoff = (now - datetime.timedelta(days=days)).date().isoformat()
+    shapes, runs, turns, denials = {}, 0, 0, 0
+    for r in records:
+        if not isinstance(r, dict) or str(r.get("date") or "") < cutoff:
+            continue
+        if (r.get("minutes") or 0) <= 1:        # a knock the limit killed
+            continue
+        runs += 1
+        turns += r.get("turns") or 0
+        denials += r.get("denials") or 0
+        source = r.get("denials_source") or ""
+        if ":" not in source:
+            continue
+        for name in source.split(":", 1)[1].split(","):
+            name = name.strip()
+            if name and name != "no names in the record":
+                shapes[name] = shapes.get(name, 0) + 1
+    return {"days": days, "runs": runs, "turns": turns, "denials": denials,
+            "rate": (denials / turns) if turns else 0.0,
+            "shapes": sorted(shapes.items(), key=lambda kv: -kv[1])}
+
+
 def probe(result, changed, minutes, elapsed=None, spent_week=None, spent_day=None,
           deaths=None):
     """(should_continue, one-line reason). Never raises: unknown means no.
@@ -630,7 +760,32 @@ def main():
     ap.add_argument("--probe", action="store_true",
                     help="judge only: should this window get one more attempt? "
                          "Writes continue=yes|no to GITHUB_OUTPUT, records nothing.")
+    ap.add_argument("--denials", action="store_true",
+                    help="print which commands the allowlist refused, worst "
+                         "first, and what share of every turn they cost.")
+    ap.add_argument("--days", type=int, default=7,
+                    help="the window --denials reads (default 7).")
     args = ap.parse_args()
+
+    if args.denials:
+        rep = denial_report(args.days)
+        if not rep or not rep["runs"]:
+            print("no run history readable")
+            return 0
+        print("%d working runs in %d days: %d of %d turns refused (%.1f%%)"
+              % (rep["runs"], rep["days"], rep["denials"], rep["turns"],
+                 rep["rate"] * 100))
+        if not rep["shapes"]:
+            print("no shapes recorded yet; the record carries counts only")
+            return 0
+        print("\n%-44s %s" % ("refused command shape", "runs it appeared in"))
+        for name, n in rep["shapes"][:25]:
+            print("%-44s %3d of %d" % (name[:44], n, rep["runs"]))
+        print("\nA shape naming one binary is a binary to consider allowing. A "
+              "shape naming\nseveral is a COMPOUND command, and no allowlist "
+              "entry can ever match one:\nthe fix for those is to type them as "
+              "separate calls.")
+        return 0
 
     if args.week:
         spent, today = week_minutes(), day_minutes()
