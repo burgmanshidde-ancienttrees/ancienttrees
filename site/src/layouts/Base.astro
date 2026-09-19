@@ -10,7 +10,7 @@
 //     reported at the very end of the build instead).
 import { STYLE_HREF } from "../lib/asset-hash";
 import SignInModal from "../components/SignInModal.astro";
-import { SIGNIN_JS } from "../lib/signin-js";
+import { SIGNIN_JS, SIGNIN_CATCH_JS } from "../lib/signin-js";
 import { UNITS_JS } from "../lib/units-js";
 import LanguagePicker from "../components/LanguagePicker.astro";
 import { toEnglishPath } from "../lib/i18n";
@@ -132,6 +132,14 @@ const year = new Date().getFullYear();
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href={STYLE_HREF}>
 <Fragment set:html={headExtra} />
+{/* WHO YOU ARE, ANSWERED BEFORE ANY PAGE SCRIPT ASKS (2026-09-18). It is in
+    the head rather than beside the sheet at the foot of the body because a
+    magic link and a Google return arrive as an ordinary page load carrying the
+    tokens in the fragment, and every script that paints a heart, a tick or a
+    signed-in panel runs before the foot of the body does. signin-js says the
+    rest. Last in the head, so a page's own headExtra cannot be pushed behind
+    it, and first of all the scripts. */}
+<Fragment set:html={SIGNIN_CATCH_JS} />
 </head>
 <body>
 <header class="bar">
@@ -325,7 +333,7 @@ document.addEventListener("click", function (e) {
 </script>
 <slot name="scripts" />
 {ANALYTICS_TOKEN && (
-  <script define:vars={{ token: ANALYTICS_TOKEN }}>
+  <script define:vars={{ token: ANALYTICS_TOKEN, accountWord: t.account }}>
     (function () {
       try {
         if (location.hostname !== "ancienttrees.app") { return; }
@@ -384,16 +392,35 @@ document.addEventListener('click', function(e) {
     if (e.key === 'Escape') drops.forEach(function(d) { d.open = false; });
   });
 })();
+// ONE PAINTER, BOTH DIRECTIONS (2026-09-18). It used to swap the word on load
+// and nothing could ever swap it back, so signing out without a page load left
+// a bar still claiming you were signed in. Signing out is in place now
+// (account/settings.astro), so it calls this instead of keeping a second copy
+// of the same querySelectorAll, which is how the two would drift.
+//
+// IN THE PAGE'S OWN LANGUAGE, too. The word was typed in English and this bar
+// renders in eight, so signing in turned Konto, Compte and Cuenta into
+// "Account" on every translated page. It is the fault CLAUDE.md records about
+// typed text in translated components, living in a script rather than in
+// markup, which is why no check saw it.
+window.atPaintNav = function(inNow) {
+  try {
+    document.querySelectorAll('#bar-login, .nav-drop-menu a[href="/account"]').forEach(function(a) {
+      var label = a.querySelector('span:not(.mi)') || a;
+      // What the page rendered, kept the first time we touch it, so signing out
+      // restores the real word rather than a second guess at it.
+      if (a.dataset.outWord === undefined) { a.dataset.outWord = label.textContent; }
+      label.textContent = inNow ? accountWord : a.dataset.outWord;
+    });
+    if (inNow) { document.documentElement.dataset.signedIn = '1'; }
+    else { delete document.documentElement.dataset.signedIn; }
+  } catch (e) {}
+};
 (function() {
   try {
     var s = JSON.parse(localStorage.getItem('ancienttrees_session'));
     if (!s || s.expires_at <= Date.now() / 1000) return;
-    document.querySelectorAll('#bar-login, .nav-drop-menu a[href="/account"]').forEach(function(a) {
-      var label = a.querySelector('span:not(.mi)') || a;
-      if (label === a) { a.textContent = 'Account'; }
-      else { label.textContent = 'Account'; }
-    });
-    document.documentElement.dataset.signedIn = '1';
+    window.atPaintNav(true);
   } catch (e) {}
 })();
 </script>

@@ -58,20 +58,45 @@ const crumbItems: [string, string | null][] = [
   <p id="set-out" class="acct-sub" hidden>You are not signed in. <a href="/account">Sign in</a> to change anything here.</p>
 
   <section id="set-in" hidden>
+    {/* THE APP'S OWN WORDS, and only those (Hidde, 2026-09-18: "there is a lot
+        of random copy on the profile page on web that's not in app, delete it
+        and follow app design and copy example").
+
+        What stood here was two paragraphs the app has never said: one telling
+        you what a name is for ("people can find you in the app to follow your
+        trees, leave it empty and nobody can") and one explaining that your
+        trees are kept under your address and how to move them. The app's
+        editor carries a single line under each field, and the address
+        explanation lives on the delete screen, which is the only place
+        somebody asks the question it answers. */}
     <p class="acct-group">Account</p>
     <div class="acct-rows">
       <div class="acct-row">
-        <label for="in-name">The name people see</label>
+        <label for="in-name">Your name</label>
         <div class="acct-name-row">
           <input id="in-name" type="text" maxlength="40" autocomplete="nickname"
-                 placeholder="Nobody sees this until you set it" />
+                 placeholder="The name people see" />
           <button type="button" id="save-name" class="go-btn">Save</button>
         </div>
-        <p class="acct-fine" id="name-note">Set a name and people can find you in the app to follow your trees. Leave it empty and nobody can.</p>
+        <p class="acct-fine" id="name-note">Any name you like. It does not have to be your real one.</p>
+        {/* The line under the field stays put, as the app's footer does, and
+            what a save had to say gets its own line rather than eating it. */}
+        <p class="acct-fine" id="name-status" role="status" hidden></p>
       </div>
       <div class="acct-row">
         <label>Signed in as</label>
-        <p class="acct-fine"><strong id="set-email"></strong>. Your trees are kept under this address. To move your collection to another one, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
+        <p class="acct-email" id="set-email"></p>
+      </div>
+      {/* DISTANCES, where the app keeps it (Screens/Profile.swift's settings
+          card). It sat on /account, which is the profile rather than the
+          settings, and carried a note saying which way it was following. The
+          buttons say that themselves. */}
+      <div class="acct-row" id="st-units" hidden>
+        <label>Distances</label>
+        <div class="unit-pick" role="group" aria-label="Distance units">
+          <button type="button" class="unit-btn" data-unit="km">Kilometers</button>
+          <button type="button" class="unit-btn" data-unit="mi">Miles</button>
+        </div>
       </div>
     </div>
 
@@ -98,6 +123,18 @@ const crumbItems: [string, string | null][] = [
         disclosure triangle. */}
     <div class="acct-rows acct-rows-sep">
       <button type="button" id="signout" class="acct-row acct-linkrow acct-rowbtn">Sign out</button>
+      {/* ASKED FIRST, as the app asks (Screens/Profile.swift, Hidde 2026-08-24:
+          "dit is raar" about signing out on one tap). It matters more here than
+          the word suggests: what it looks like you are about to lose is your
+          collection. The app draws it as a confirmation dialog on the button
+          and this page draws it as the panel the delete row beside it already
+          uses, which is the both-surfaces rule read correctly: the behaviour
+          matches, the design is each surface's own. */}
+      <div id="out-panel" class="acct-danger-body" hidden>
+        <p class="acct-fine">Your trees stay on your account. Signing in again on any device brings them back.</p>
+        <button type="button" id="out-yes" class="go-btn">Sign out</button>
+        <button type="button" id="out-no" class="acct-link">Stay signed in</button>
+      </div>
     </div>
     <div class="acct-rows">
       <button type="button" id="del-open" class="acct-row acct-linkrow acct-rowbtn danger">Delete account</button>
@@ -108,10 +145,15 @@ const crumbItems: [string, string | null][] = [
         zeker"). This page asked once, behind a disclosure triangle. A typed
         word is a real second act rather than a second tap in the same place. */}
     <div id="del-panel" class="acct-danger-body" hidden>
-      <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. Deleting your account removes all of it, and it cannot be undone.</p>
+      {/* The app's delete screen, sentence for sentence, including the one
+          about using a different address. That line used to sit at the top of
+          this page beside the email, where nobody was asking it. */}
+      <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. You can delete all of it from this screen.</p>
+      <p class="acct-fine">We delete your email address and your collection. This cannot be undone.</p>
+      <p class="acct-fine">To use a different address, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a> and we will move your collection across.</p>
       <label for="del-confirm">Type DELETE to confirm</label>
       <input id="del-confirm" type="text" autocomplete="off" autocapitalize="characters" placeholder="DELETE" />
-      <button type="button" id="del-acct" class="go-btn danger" disabled>Delete my account</button>
+      <button type="button" id="del-acct" class="go-btn danger" disabled>Delete account</button>
     </div>
   </section>
 </main>
@@ -144,30 +186,84 @@ const crumbItems: [string, string | null][] = [
       // The name they already chose, wherever they chose it. An empty box on a
       // page that already knows the answer reads as data lost, and somebody who
       // set their name in the app would be looking at exactly that.
-      fetch(SB + "/rest/v1/profiles?select=display_name&user_id=eq." + encodeURIComponent(u.id),
+      //
+      // Units ride along on the same row rather than a second request: the app
+      // reads and writes the one profiles row and so does this page.
+      fetch(SB + "/rest/v1/profiles?select=display_name,units&user_id=eq." + encodeURIComponent(u.id),
             { headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } })
         .then(function(r) { return r.ok ? r.json() : null; })
         .then(function(rows) {
-          if (rows && rows[0] && rows[0].display_name) {
+          if (!rows) return;               // no column, no switch
+          if (rows[0] && rows[0].display_name) {
             document.getElementById("in-name").value = rows[0].display_name;
+            document.getElementById("save-name").disabled = false;
           }
+          units(rows[0] ? rows[0].units : null);
         }).catch(function() {});
     }).catch(function() {});
+
+  // KILOMETRES OR MILES, the same profiles.units the app writes, so the choice
+  // follows somebody between the phone and the laptop. The row stays hidden
+  // until that column answers: a control that looks like a setting and stores
+  // nothing is worse than no control, and the site still reads in the right
+  // units meanwhile because units-js decides from where the reader is.
+  function units(now) {
+    var box = document.getElementById("st-units");
+    if (!box) return;
+    box.hidden = false;
+    paintUnits(now);
+    box.querySelectorAll(".unit-btn").forEach(function(b) {
+      b.addEventListener("click", function() {
+        var want = b.dataset.unit, cur = session();
+        if (!cur || !myId) return;
+        paintUnits(want);
+        fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
+          method: "POST",
+          headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                     "Content-Type": "application/json",
+                     "Prefer": "resolution=merge-duplicates,return=minimal" },
+          body: JSON.stringify([{ user_id: myId, units: want }])
+        }).catch(function() {});
+      });
+    });
+  }
+
+  function paintUnits(now) {
+    document.querySelectorAll("#st-units .unit-btn").forEach(function(b) {
+      var on = b.dataset.unit === now;
+      b.classList.toggle("is-on", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
 
   // The SAME upsert the app makes (profiles?on_conflict=user_id with
   // resolution=merge-duplicates), so setting a name here and setting one in the
   // app are one operation against one row rather than two paths that can
   // disagree. CLAUDE.md's both-surfaces rule: the decision travels.
+  //
+  // SAVE IS DEAD WHILE THE BOX IS EMPTY, which is what the app's editor does
+  // (Save is disabled on an empty name). It replaces a sentence telling you
+  // afterwards that a name is between 1 and 40 characters, and 40 is what the
+  // field already refuses to take.
   var nameBtn = document.getElementById("save-name");
+  var nameBox = document.getElementById("in-name");
+  nameBtn.disabled = true;
+  nameBox.addEventListener("input", function() {
+    nameBtn.disabled = nameBox.value.trim().length < 1;
+  });
+  function say(msg) {
+    var n = document.getElementById("name-status");
+    n.textContent = msg;
+    n.hidden = false;
+  }
   nameBtn.addEventListener("click", function() {
-    var box = document.getElementById("in-name");
-    var note = document.getElementById("name-note");
+    var box = nameBox;
     var v = box.value.trim();
     var cur = session();
-    if (!cur || !myId) { note.textContent = "Sign in again and try once more."; return; }
-    if (v.length < 1 || v.length > 40) { note.textContent = "A name is between 1 and 40 characters."; return; }
+    if (!cur || !myId) { say("That did not save. Your sign-in has expired."); return; }
+    if (v.length < 1) return;
     nameBtn.disabled = true;
-    note.textContent = "Saving.";
+    say("Saving.");
     fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
       method: "POST",
       headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
@@ -175,23 +271,48 @@ const crumbItems: [string, string | null][] = [
       body: JSON.stringify([{ user_id: myId, display_name: v }])
     }).then(function(r) {
       nameBtn.disabled = false;
-      note.textContent = r.ok
-        ? "Saved. People can find you as " + v + " in the app."
-        : "That did not save. Try again, or write to info@ancienttrees.app.";
+      say(r.ok ? "Saved." : "That did not save. Try again in a moment.");
     }).catch(function() {
       nameBtn.disabled = false;
-      note.textContent = "That did not save. Try again in a moment.";
+      say("That did not save. Try again in a moment.");
     });
   });
 
-  document.getElementById("signout").addEventListener("click", function() {
+  var outBtn = document.getElementById("signout");
+  var outPanel = document.getElementById("out-panel");
+  outBtn.addEventListener("click", function() {
+    outPanel.hidden = false; outBtn.hidden = true;
+    document.getElementById("out-yes").focus();
+  });
+  document.getElementById("out-no").addEventListener("click", function() {
+    outPanel.hidden = true; outBtn.hidden = false; outBtn.focus();
+  });
+  document.getElementById("out-yes").addEventListener("click", function() {
     var cur = session();
     if (cur) fetch(SB + "/auth/v1/logout", { method: "POST",
       headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token } }).catch(function() {});
     try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
     // Signing out takes everything off the screen, because everything lives in
     // the account now: there is nothing left on the device to clear.
-    location.href = "/account";
+    //
+    // AND IT LEAVES YOU WHERE YOU ARE (2026-09-18). It used to send you to
+    // /account, which for somebody who has just signed out is the sign-in form:
+    // the last thing signing out did was ask you to sign in again. Our own app
+    // does the conventional thing already, swapping the row under your finger
+    // to "Sign in" and leaving you on the screen you were reading, and this is
+    // that. The change of state IS the acknowledgement, which is the pattern
+    // this project uses everywhere rather than a toast (CONVENTIONS.md,
+    // landing after you have added something).
+    outPanel.hidden = true; outBtn.hidden = false;
+    var out = document.getElementById("set-out");
+    out.innerHTML = 'You are signed out. <a href="/account">Sign in</a> to get your trees back.';
+    signedOut();
+    // The bar swapped itself on load and nothing has reloaded, so it would
+    // still be claiming you are signed in. Base owns that painting in both
+    // directions, so this asks rather than repeating it.
+    if (window.atPaintNav) window.atPaintNav(false);
+    try { localStorage.removeItem("ancienttrees_pending"); } catch (e) {}
+    try { at.track("signout"); } catch (e) {}
   });
 
   // Account deletion: calls the delete_user() SECURITY DEFINER function in
@@ -222,7 +343,14 @@ const crumbItems: [string, string | null][] = [
       .then(function(r) {
         if (r.ok) {
           try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
-          location.href = "/account";
+          // IN PLACE, for the same reason signing out is (above): sending
+          // somebody who has just deleted their account to the sign-in form is
+          // the wrong last word, and it is the same page they would have to
+          // read to understand what happened.
+          var gone = document.getElementById("set-out");
+          gone.textContent = "Your account is deleted, with everything it held. Nothing of yours is left here.";
+          signedOut();
+          if (window.atPaintNav) window.atPaintNav(false);
         } else {
           delBtn.textContent = "Deletion failed. Try again, or email us via the privacy page.";
         }
