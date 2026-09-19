@@ -18,6 +18,59 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-19 (continuation) - The Pamplona poplar/plane growth rate does not exist for one of the two species, checked against the actual Forestry Commission source
+
+The 2026-09-18 Pamplona entry below said a sourced girth-increment rate for
+Populus nigra and Platanus x acerifolia "unblocks 24 trees site-wide" and
+called it "one sourced growth rate away from being free." Checked properly
+against John White's 1998 Forestry Commission paper (FCIN12, "Estimating
+the Age of Large and Veteran Trees in Britain"), the actual source behind
+`scripts/ages.py`'s own method: this is true for only one of the two species.
+
+**Poplar has no entry at all.** White's Table 1a, the core-development growth
+table for 20 named genera (oak, beech, chestnut, plane, lime, sycamore and so
+on), does not include Populus in any form. Paragraph 5 says why: "Pioneers
+such as poplar, willow and alder frequently have a productive but short
+formative period and then go straight into senescence," skipping the
+mature-state CAI phase the whole method depends on. Poplar is not a species
+missing a rate by oversight, it is a species the method's own author
+considers unsuited to it, for the same structural reason yew is (paragraph 5
+again), just at the opposite end of the growth-speed scale. Forcing a linear
+rate onto it would not be finding a sourced number, it would be inventing a
+method the source itself declines to offer.
+
+**Plane does have an entry, and it does not fit ages.py's model either.**
+Table 1a gives Plane, "average site, garden, parkland" (the closest match to
+a register specimen), as 70 years core age at a 5mm annual ring width. That
+is a RADIAL figure: converted to girth (2 x pi x ring width), it is about
+3.14 cm/year during the core phase, which is higher than the generic
+"fast, open-grown" ceiling (2.5 cm/year) `ages.py` currently uses as its
+refusal threshold for plane, confirming the refusal is correctly calibrated.
+But White's method is not a constant rate: after the core phase, ring WIDTH
+narrows as the tree thickens because ring AREA (not width) stays constant,
+so a mature plane's true average girth rate is well under 3.14 cm/year and
+falls further with age. Plugging 3.14 into `ages.py`'s existing simple
+girth/rate formula would systematically UNDER-estimate old planes' ages,
+the same direction of error the script's own retrospective already measured
+for its existing rate on big trunks generally.
+
+Doing this properly means implementing White's actual two-phase calculation
+(core basal area at the table's rate, then remaining basal area divided by
+the mature-state CAI from Table 2), not extending the existing linear model
+with a third number. That is real, worthwhile engineering, but it is a
+method change to a script whose current 6-in-10 accuracy is measured and
+trusted, and it deserves the same validation-against-300-known-ages rigor
+`ages.py`'s header describes, which a research pass should not skip to
+close out one city's photo/age checklist. Filed here rather than attempted
+half-built. The source PDF (Forestry Commission FCIN12, November 1998, Crown
+copyright, ISBN 0-85538-383-6) is at
+https://www.ancienttreeforum.co.uk/wp-content/uploads/2015/03/John-White-estimating-file-pdf.pdf
+should curl fail on it again (it 403s to a plain user agent; WebFetch's
+browser path gets through). Table 1a's Plane row, all site categories, for
+whoever picks this up: champion tree potential 100/6mm, good/open/sheltered
+60/6mm, average/garden/parkland 70/5mm, churchyard 70/5mm; no entry for
+poor ground, woodland-boundary pollard or inside-woodland categories.
+
 ## 2026-09-19 (night run, continuation) - Finished an earlier attempt's uncommitted work: Senonches and Réno-Valdieu, plus two photos and two ONF-panel ages found while finishing them
 
 Resumed a window that had stopped after 54 minutes with 66 unspent, having
