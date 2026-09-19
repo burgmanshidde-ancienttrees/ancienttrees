@@ -1,0 +1,16 @@
+{
+ "note": "Parks no keyword can see. site/src/lib/parks.ts derives the park a tree stands in from its address text matching a word list, which is the right mechanism for the thousands of Parks, Jardins, Giardini and Plantsoenen and cannot work for a place whose name says nothing about being one. Written 2026-09-19, after the fifth such place turned up in a week: Margaret Island in Budapest holds five of our trees whose addresses all begin 'Margaret Island', and no word that would catch it is safe to add, because 'island' is a substring of Islandbridge and 'mall' of Smallbrook Street.",
+ "how_it_matches": "EXACT, case-insensitive, on the head clause the address or neighbourhood already produces, and only when NEITHER field yields a keyword match. Exact rather than substring because the near misses are real: 'Pfaueninsel ferry landing' is not the Pfaueninsel and 'Kalopanagiotis village' in Cyprus is not Hawaii's Kalopa. Last rather than first because a keyword match is more specific: a Montjuic tree whose address names the Jardi Botanic Historic belongs to that garden, not to the hill, and this list must never move a tree out of a group it already has.",
+ "the_bar": "A name goes in only when the place is genuinely a park, garden or protected landscape somebody spends an afternoon in. Neighbourhoods stay out, and they are the overwhelming majority of what the keyword list misses: City centre, Binnenstad, Santa Cruz, Mokotow, Norrebro, Dahlem. A district is not a park, and a park page wearing a district's name would be the thin page Contract H's five-tree gate exists to prevent.",
+ "parks": {
+  "Montjuic": {"city": "barcelona", "why": "the Parc de Montjuic, a hill of public gardens above the city"},
+  "Kalopa State Recreation Area": {"city": "hawaii", "why": "a state park on Hamakua, native forest with a trail system"},
+  "Margaret Island": {"city": "budapest", "why": "Margitsziget, a public park island in the Danube"},
+  "La Granja de San Ildefonso": {"city": "segovia", "why": "the royal palace gardens, UNESCO listed, open to visitors"},
+  "Pfaueninsel": {"city": "berlin", "why": "a UNESCO listed park island in the Havel, reached by ferry"},
+  "Alhambra": {"city": "granada", "why": "the Alhambra and Generalife gardens, UNESCO listed"},
+  "Kyoto Gyoen": {"city": "kyoto", "why": "the national garden around the imperial palace, free and open daily"},
+  "Square Louise Michel": {"city": "paris", "why": "the public garden below Sacre-Coeur on Montmartre"},
+  "National Mall": {"city": "washington-dc", "why": "the Mall itself, whose American elms are a documented collection"}
+ }
+}

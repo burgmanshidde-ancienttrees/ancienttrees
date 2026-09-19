@@ -2107,6 +2107,53 @@ def check_park_words_match():
     for word in sorted(theirs - ours):
         out.append("park word %r is in parks.ts and not in pagegaps.py, so a park "
                    "page it can build is never reported as earned" % word)
+    out += _check_explicit_park_names(src)
+    return out
+
+
+def _check_explicit_park_names(parks_ts_source):
+    """Every name in data/park-names.json is read by both sides and matches a tree.
+
+    Two ways that file can be silent, and silence is its whole failure mode: the
+    TypeScript stops reading it, or a name is spelled differently from the head
+    clause our own addresses produce. The second is the likely one, because the
+    head is derived rather than typed: "Pfaueninsel ferry landing" is not
+    "Pfaueninsel", and a name matching nothing sits there looking like a
+    decision forever. Added 2026-09-19 with the list itself.
+    """
+    out = []
+    f = os.path.join("data", "park-names.json")
+    try:
+        with open(f, encoding="utf-8") as fh:
+            names = json.load(fh).get("parks") or {}
+    except OSError:
+        return []
+    except ValueError as exc:
+        return ["%s does not parse (%s), so every explicit park is silently off" % (f, exc)]
+    if names and "park-names.json" not in parks_ts_source:
+        out.append("site/src/lib/parks.ts no longer reads data/park-names.json, so its "
+                   "%d explicit parks are silently off" % len(names))
+    heads = collections.Counter()
+    for path in glob.glob("data/cities/*.json"):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        slug = os.path.basename(path)[:-5]
+        for t in d.get("trees") or []:
+            loc = t.get("location") or {}
+            for field in (loc.get("neighbourhood"), loc.get("address")):
+                head = (field or "").split(",")[0]
+                head = re.sub(r"\([^)]*\)?", "", head)
+                head = re.sub(r"\s+", " ", head).strip(" -/")
+                if len(head) >= 4:
+                    heads[(slug, head.lower())] += 1
+    for name, meta in sorted(names.items()):
+        city = (meta or {}).get("city") or ""
+        if not heads.get((city, name.lower())):
+            out.append("%s names %r in %r and no tree there has that as its address head, "
+                       "so the entry does nothing" % (f, name, city))
     return out
 
 
