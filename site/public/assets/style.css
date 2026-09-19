@@ -140,6 +140,10 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .nav-drop-menu a { display: flex; align-items: center; gap: 0.65rem; padding: 0.5rem 0.9rem; margin: 0; font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.2; }
 .nav-drop-menu .mi { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; color: var(--ink-light); flex-shrink: 0; }
 .nav-drop-menu .mi svg { width: 17px; height: 17px; }
+/* The sponsor heart is filled where the saved heart is an outline, and gold at
+   both widths: the mobile block adds the tile behind it, the colour belongs
+   here so the dropdown does not draw the same mark in two colours. */
+.nav-drop-menu .mi-gold { color: var(--gold); }
 /* A secondary action belongs below a rule, not under the Browse heading as
    though suggesting a tree were a category to browse. */
 .nav-drop-menu a.nav-aside { border-top: 1px solid var(--cream-dark); margin-top: 0.35rem; padding-top: 0.6rem; color: var(--ink-mid); font-weight: 500; }
@@ -496,11 +500,90 @@ dialog.photo-view .pv-frame img {
   /* A phone panel, not a desktop dropdown squeezed onto a phone: full width
      inside the margins, 44px rows, and it scrolls rather than running off the
      bottom of a short screen. */
-  .nav-drop-menu { position: fixed; left: auto; right: 0.75rem; top: calc(var(--header-h) + 0.5rem);
-    width: calc(100% - 1.5rem); min-width: 0; max-width: 22rem;
-    max-height: calc(100vh - var(--header-h) - 1.5rem); overflow-y: auto; padding: 0.5rem 0; }
-  .nav-drop-menu a { padding: 0.65rem 1rem; font-size: 15px; }
-  .nav-drop-menu .nav-group { padding: 0 1rem; }
+  /* THE PHONE MENU IS A SHEET (2026-09-19). Hidde sent AllTrails' own mobile
+     menu, said it is much better than ours, and picked the version that keeps
+     their look and folds nothing: "let's do 2". What was here was a 22rem card
+     hanging under the hamburger with 15px rows, which is a desktop dropdown
+     made narrow. Measured off his screenshot and written down in
+     CONVENTIONS.md: a full screen, a 32pt icon tile per row, ~45pt rows, a
+     ~17pt label, one loud control at the top and the account at the bottom.
+
+     POSITIONING, and this is the trap: header.bar sets backdrop-filter, and a
+     filtered ancestor becomes the containing block for its fixed children. So
+     `inset: 0` here would resolve against the 56px-tall BAR, not the viewport,
+     and the sheet would be a letterbox. The header's padding box starts at the
+     viewport origin because the bar itself is fixed at top 0, so top/left 0
+     with an explicit width and height lands correctly either way. Tidying
+     these four lines into `inset: 0` breaks the sheet on every phone. */
+  .nav-drop-menu { position: fixed; top: 0; left: 0; right: auto; bottom: auto;
+    width: 100%; height: 100dvh; max-width: none; min-width: 0; max-height: none;
+    border-radius: 0; box-shadow: none; overflow-y: auto; z-index: 60;
+    overscroll-behavior: contain;
+    padding: 0 var(--gutter) calc(1.25rem + env(safe-area-inset-bottom, 0px)); }
+  /* 48 drawn against their 45, because 44 is Apple's minimum and a row that
+     only just clears it leaves nothing for the eye. */
+  .nav-drop-menu a { min-height: 48px; padding: 0; font-size: 17px; font-weight: 500;
+    gap: 0.8rem; }
+  .nav-drop-menu a:hover { background: none; }
+  /* The icon becomes a tile. On the dropdown it is a bare 17px stroke in
+     --ink-light, which disappears at this size and against this much white. */
+  .nav-drop-menu .mi { width: 34px; height: 34px; border-radius: 50%;
+    background: var(--surface); color: var(--ink); }
+  .nav-drop-menu .mi svg { width: 18px; height: 18px; }
+  .nav-drop-menu .mi-gold { background: #FBF3E3; color: var(--gold); }
+  /* A quiet label, not a heading: the sections are open, so the label only has
+     to say which group this is while the eye runs down the rows. */
+  .nav-drop-menu .nav-group { padding: 0.9rem 0 0.35rem; font-size: 0.8rem;
+    font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-light); }
+  /* One hairline per section, above its label, and none between rows. The
+     dropdown draws this rule on the first aside instead, which is the same
+     divider in the place the dropdown wanted it. */
+  .nav-drop-menu .nav-group + a { margin-top: 0; }
+  .nav-drop-menu .nav-group.only-mobile { border-top: 1px solid var(--cream-dark); }
+  .nav-drop-menu a.nav-aside { border-top: none; margin-top: 0; padding-top: 0;
+    color: var(--ink); font-weight: 500; }
+  .nav-drop-menu a.nav-aside + a.nav-aside { padding-top: 0; }
+  /* The sheet's own top row. It exists because the sheet covers the bar, so
+     the mark and the way out have to travel with it. */
+  .nav-drop-menu .sheet-top { display: flex; align-items: center;
+    justify-content: space-between; height: var(--header-h); }
+  .nav-drop-menu .sheet-mark { display: inline-flex; align-items: center; gap: 0.5rem;
+    font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; color: var(--ink); }
+  .sheet-mark svg { width: 20px; height: 18px; }
+  .nav-drop-menu .sheet-x { display: inline-flex; align-items: center; justify-content: center;
+    position: relative; width: 40px; height: 40px; border-radius: 50%;
+    background: var(--surface); border: 1px solid var(--cream-dark);
+    color: var(--ink); cursor: pointer; padding: 0; }
+  /* 40 drawn, 48 tapped, the same trade the hamburger it replaces already
+     makes, and the same pseudo-element the smoke test knows how to measure. */
+  .sheet-x::before { content: ""; position: absolute; inset: -4px; }
+  .sheet-x svg { display: block; width: 18px; height: 18px; }
+  /* Their "Ga verder in de app": one full-width dark pill, and the only loud
+     thing on the screen. */
+  .nav-drop-menu a.sheet-cta { display: flex; align-items: center; justify-content: center;
+    min-height: 52px; border-radius: 999px; background: var(--ink); color: #fff;
+    font-weight: 700; font-size: 1rem; margin: 0.25rem 0 0.5rem; }
+  /* The foot FOLLOWS the last row rather than being pinned to the bottom of
+     the screen, which is what their sheet does: the Aanmelden pill sits
+     directly under the last section. The sheet is a scroll container, so the
+     ordinary flow reaches it and nothing has to be pushed anywhere. */
+  .nav-drop-menu .sheet-foot { margin-top: 1.5rem; }
+  /* --cream-dark rather than --surface, which is the fill every other quiet
+     control here uses. On the white of the sheet --surface is a 1.5% step and
+     the pill read as a label with a hairline round it; theirs is plainly a
+     grey button. The icon tiles keep --surface because an icon sits in them. */
+  .nav-drop-menu a.sheet-signin { display: flex; align-items: center;
+    justify-content: center; min-height: 52px; border-radius: 999px;
+    background: var(--cream-dark); border: none;
+    color: var(--ink); font-weight: 700; font-size: 1rem; }
+  /* Signed in, the pill has nothing to offer: Your account sits two rows up in
+     the Yours group. The attribute is the one signin-js already sets. */
+  html[data-signed-in="1"] .sheet-foot { display: none; }
+  /* The page must not scroll under the sheet. Scoped to the phone because on
+     desktop this panel is a dropdown and locking the page behind it would be
+     a bug rather than a courtesy. */
+  html.nav-open, html.nav-open body { overflow: hidden; }
   /* The app pill sits in the bar on a phone too (2026-09-04). Narrower and
      shorter than on desktop, because the mark, the pill and the menu button
      share a 375px row, and because at a full 44 it read as a banner rather than
