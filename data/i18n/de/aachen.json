@@ -1,0 +1,40 @@
+{
+ "_note": "de overlay for aachen, written 2026-09-18 from data/cities/aachen.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Aachen",
+ "title": "Alte Bäume in Aachen: die tausendjährige Forster Linde",
+ "meta_description": "Die Forster Linde in Aachen-Forst ist rund 1.000 Jahre alt und war Gerichtsbaum eines Hofgerichts. Kostenlos, öffentliche Straße, eingezäunt und sichtbar.",
+ "intro": "Aachens ältester Baum hat einmal mitentschieden, wer stirbt. Die Forster Linde, eine Winterlinde im Stadtteil Forst, war bis 1390 Gerichtsstätte eines Hofgerichts, in ihrem Schatten wurden Urteile gesprochen, auch Todesurteile, und die Verurteilten danach zu einem Galgenfeld in der Nähe geführt. Auf rund tausend Jahre geschätzt, mit einem Stamm von knapp zehn Metern Umfang, steht sie eingezäunt und doch gut sichtbar an einer öffentlichen Straße, neben dem mittelalterlichen Schöffenhaus, dem sie einst diente. Kostenlos, kein Ticket, mit dem Bus vom Hauptbahnhof erreichbar.",
+ "question_title": "Was ist der älteste Baum Aachens? Die Forster Linde",
+ "question_meta": "Aachens ältester Baum ist die Forster Linde, eine Winterlinde von schätzungsweise rund 1.000 Jahren. Wo sie steht und wie man hinkommt.",
+ "question_answer": "Der älteste Baum Aachens ist die Forster Linde, eine Winterlinde (Tilia cordata) an der nach ihr benannten Straße im Stadtteil Forst. Ein dokumentiertes Pflanzdatum ist nicht erhalten: 1852 beurteilte der Gartenarchitekt Fürst Pückler-Muskau sie bei einem Besuch als „mehr als 800 Jahre alt“, und jeder Bericht seither hat diese Schätzung weitergetragen, was sie heute auf rund 1.000 Jahre bringt. Ihr Stamm misst am Fuß knapp 10 Meter im Umfang. Sie ist kostenlos zu sehen, zum Schutz der Wurzeln eingezäunt und mit dem Bus vom Aachener Hauptbahnhof erreichbar.",
+ "question_context": "Das Alter ist eine übernommene Schätzung und keine Messung: Pückler-Muskaus Beurteilung von 1852, „mehr als 800 Jahre“, ist die einzige Zahl, die beide Quellen nennen, und beide addieren einfach die Jahre seither, um auf rund tausend zu kommen. Die städtische Seite Aachens gibt einen Stammumfang von etwa 10 Metern an; die deutsche Wikipedia nennt 9,5 Meter am Fuß, ein Unterschied, der klein genug ist, um eine andere Messhöhe zu sein und keine echte Uneinigkeit. Vor etwa drei Jahrhunderten brach der ursprüngliche Stamm hoch in der Krone weg, und aus dem Rest steigen heute fünf starke Äste nach oben, jeder dick genug, um als eigener Stamm durchzugehen. Der Baum diente der Herrschaft Schönforst als Gerichtslinde: In seinem Schatten wurden bis 1390 Urteile gesprochen, auch Todesurteile, und die Verurteilten wurden zu einem Galgenfeld geführt, das örtlich Galgenpley heißt. Ein restauriertes mittelalterliches Schöffenhaus steht noch neben ihm. Ausbesserungen nach dem Krieg füllten seine Höhlungen mit Beton, ein Verfahren, das heute als schädlicher denn hilfreich gilt; heute halten Seile die Krone zusammen. Seit mehr als dreißig Jahren ist er ein geschütztes Naturdenkmal.",
+ "faq": [
+  {
+   "q": "Was ist der älteste Baum Aachens?",
+   "a": "Die Forster Linde, eine Winterlinde im Stadtteil Forst, auf rund 1.000 Jahre geschätzt, auf Grundlage einer Beurteilung von 1852, die „mehr als 800 Jahre“ nannte."
+  },
+  {
+   "q": "Stimmt es, dass an dem Baum einmal Hinrichtungen stattfanden?",
+   "a": "An ihm tagte ein Hofgericht, das bis 1390 Urteile sprach, auch Todesurteile. Die Verurteilten wurden danach zu einem Galgenfeld in der Nähe geführt, dem Galgenpley, und nicht unter dem Baum selbst hingerichtet."
+  },
+  {
+   "q": "Ist der Besuch kostenlos?",
+   "a": "Ja. Sie steht an einer öffentlichen Straße, zum Schutz der Wurzeln eingezäunt, aber vollständig sichtbar, ohne Ticket und ohne Anmeldung."
+  },
+  {
+   "q": "Wie komme ich hin?",
+   "a": "Sie steht in Aachen-Forst, etwa 15 bis 20 Minuten mit dem Bus vom Aachener Hauptbahnhof."
+  }
+ ],
+ "strings_note": "Felder pro Baum: name, species (deutscher Artname, gleiche lateinische Bezeichnung), age_estimate, access, transport, story. Stories 150-250 Wörter, gleiche Messlatte wie im Englischen, keine Gedankenstriche.",
+ "trees": {
+  "aac_001": {
+   "name": "Die Forster Linde",
+   "species": "Winterlinde (Tilia cordata)",
+   "age_estimate": "rund 1.000 Jahre",
+   "access": "Kostenlos. Steht an einer öffentlichen Straße (Forster Linde) im Aachener Stadtteil Forst, neben einer Kirche und einem früheren Gerichtshaus; zum Schutz der Wurzeln eingezäunt, aber sichtbar und zu Fuß erreichbar, kein Ticket und keine Anmeldung nötig.",
+   "transport": "Aachen-Forst, etwa 15 bis 20 Minuten mit dem Bus vom Aachener Hauptbahnhof (genaue Haltestelle nicht verifiziert).",
+   "story": "Aachens ältester Baum hat einmal mitentschieden, wer stirbt. Bis 1390 tagte unter der Forster Linde ein Hofgericht, in ihrem Schatten wurden Urteile gesprochen, auch Todesurteile, und die Verurteilten wurden danach zu einem Galgenfeld in der Nähe geführt, das Galgenpley hieß. Das restaurierte mittelalterliche Schöffenhaus, dem sie einst diente, steht noch neben ihr.\n\nEine genaue Zahl für ihr Alter hat nie jemand genannt. 1852 beurteilte der Gartenarchitekt Fürst Pückler-Muskau den Baum bei einem Besuch als „mehr als 800 Jahre alt“, und jeder Bericht seither hat diese Schätzung einfach weitergetragen, was heute auf rund tausend Jahre führt. Ihr Stamm misst am Fuß knapp zehn Meter im Umfang, und vor etwa drei Jahrhunderten brach der ursprüngliche Stamm hoch in der Krone weg; fünf starke Äste steigen seitdem aus dem Rest nach oben, jeder inzwischen dick genug, um als eigener Baum durchzugehen.\n\nMit den Wunden ist nicht immer freundlich umgegangen worden. Nach dem Krieg füllten Baumpfleger ihre Höhlungen mit Beton, ein Verfahren, das man vor Jahrzehnten aufgegeben hat, weil es mehr schadet als die Fäule, die es aufhalten sollte. Heute halten Seile die Krone zusammen. Seit über dreißig Jahren ist sie als Naturdenkmal geschützt, an den Wurzeln eingezäunt, im Übrigen offen für jeden, der die Straße entlanggeht, die ihren Namen trägt."
+  }
+ }
+}
