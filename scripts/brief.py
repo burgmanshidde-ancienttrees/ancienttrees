@@ -9,6 +9,7 @@ import datetime
 import json
 import re
 import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -314,10 +315,42 @@ def bundled_catalogue_drift(out):
                 ""]
 
 
+def window_lost_to_refusals(out):
+    """How much of the machine's week went into commands the allowlist refused.
+
+    Not a gate, and deliberately quiet below a threshold: a few refusals a night
+    is a run improvising and costs nothing worth a line. What this is here to
+    catch is the shape the number had on 2026-09-19, when it had grown every
+    week since mid-August without anybody noticing: 1,394 of 14,692 turns across
+    seven days, one turn in eleven, each costing the turn plus a retry.
+
+    It went unseen because nothing added it up. run-health.json recorded a count
+    per run, the digest never read it, and a run cannot see its own refusals at
+    all. So the number lived in a file nobody totalled, which is the same
+    failure as the dead sendBeacon and the truncated Search Console readback:
+    an instrument reading, and no reader.
+    """
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from run_health import denial_report
+        rep = denial_report(7)
+    except Exception:
+        return
+    if not rep or not rep["turns"] or rep["rate"] < 0.05:
+        return
+    worst = ", ".join(name for name, _ in rep["shapes"][:3]) or "unnamed"
+    out += [f"{rep['rate'] * 100:.0f}% of the machine's turns were refused "
+            f"commands this week ({rep['denials']} of {rep['turns']}).",
+            f"  Worst: {worst}",
+            "  python3 scripts/run_health.py --denials",
+            ""]
+
+
 def main():
     out = ["ANCIENT TREES — state at session start", ""]
     since_last_visit(out)
     broken_gates(out)
+    window_lost_to_refusals(out)
     photos_still_off_domain(out)
     bundled_catalogue_drift(out)
     work_stranded_on_branches(out)
