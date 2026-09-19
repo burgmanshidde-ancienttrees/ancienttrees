@@ -1,6 +1,92 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-19 - Which parks have volume: measured, and it is a long tail. Plus three pages no keyword could see
+
+Hidde asked the sharp version of yesterday's question: which parks have
+search volume that we do not have, or is that already done? Measured
+against our own Search Console rather than a proxy, and the answer is not
+the one the famous-parks list implies.
+
+**There is no pile of high-volume parks missing.** The whole of DATA.md
+holds 34 park-shaped queries a person typed, the biggest at 12 impressions
+(`den brandt park`, Antwerp, position 70), and we already rank 4th to 11th
+on most of the rest: bednarski park, dronningparken, sapiegos park,
+hartmannshofer park, parco caprotti, wijngaardtuin haarlem. Half of what
+looks like park demand at first glance is a bot: queries carrying Google's
+exact-phrase operator, which nobody types, on seolearn's own rule. So park
+demand is a long tail of single-digit terms where we already rank, not a
+few big terms we are missing, and a park research programme would be aimed
+at nothing. The value is in the COUNT of park pages, not in any one.
+
+**Two supply findings, and the first is a correction of my own.** I told
+him twice that the Dutch national register was not imported and that Dutch
+parks had nothing on hand. Wrong both times: `netherlands-lrmb.json` has
+been on disk since 18 August with 16,094 trees, coordinates, planting
+bands and the visitable/visible fields that answer hard rule 10 from the
+data. `park_demand.py` could not see it, because it read a register's rows
+from `trees` alone and that file keeps them under `entries`. Every other
+script here already reads the several keys, so it was one script's
+assumption. Fixed, and the parks sitting one tree from a page with the
+candidate already on hand went from 11 to 22, most of the new ones Dutch:
+Kenaupark in Haarlem has a white horse chestnut from 1860-1870, visitable
+and visible, 47 metres from the group and matching nothing we map.
+`--onetree PARK` now prints those candidates, with duplicates flagged by
+SPECIES rather than by distance, because the first version called a ginkgo
+"already ours" for standing eleven metres from our wingnut.
+
+Second: the Flanders inventory holds 2,336 heritage trees with a
+municipality, a description carrying girth and height, and no coordinate
+anywhere, so every distance check here reads Belgium as empty ground. The
+table now names any register in that state underneath itself, because a
+zero that means two different things is exactly the silent wrongness this
+corpus ratchets on. Den Brandt, the one park with measured demand and no
+page of ours, appears in that file only as a single umbrella
+"Nachtegalenpark" row, so it needs real research rather than a verify.
+
+**And the piece yesterday left unbuilt: parks no keyword can see.**
+Contract H derives a park from address text matching a word list, and that
+cannot work for Margaret Island, the Pfaueninsel, Montjuic or the National
+Mall; no word that would catch them is safe to add, since "island" is a
+substring of Islandbridge and "mall" of Smallbrook Street. Five such
+places in a week is a mechanism by the ratchet, so `data/park-names.json`
+holds nine, read by both parks.ts and pagegaps.py.
+
+Three clear the gate and are live, written from their own trees: **Kalopa
+State Recreation Area** on Hawaii (6 trees in a hundred acres of native
+rainforest that was never cleared), **Margaret Island** in Budapest (5,
+three of them older than the park around them, dated by FŐKERT's 2020
+survey) and **the gardens of La Granja** in Segovia (5, whose tallest
+sequoia took a lightning strike in 1991 and has grown three and a half
+metres since 2006). Montjuic, the Pfaueninsel, the Alhambra, Kyoto Gyoen,
+Square Louise Michel and the National Mall sit under five and are named on
+the /parks index only.
+
+It matches exactly and only when no field named a park by keyword, so
+"Pfaueninsel ferry landing" and Cyprus's "Kalopanagiotis village" stay
+out and nothing moved: 751 groups became 760 and not one lost a tree.
+`_check_explicit_park_names()` in preflight refuses a name no tree in the
+named city carries, and refuses the file being dropped by parks.ts.
+
+**His two rankings are absorbed**, the world visitor top ten and the US
+one, taking the seed to 147. Park Sonsbeek, third on his Dutch list,
+already had a page with eight trees. Two entries are in for completeness
+rather than as work: Mission Bay Park is water recreation and the San
+Antonio River Walk is a walkway, which fails the collectible-point test
+the same way a kilometre of planes on La Rambla does. City Park in New
+Orleans is the one to want, 12 million visitors and the largest stand of
+mature live oaks anywhere: we map three of its oaks, including the
+McDonogh, so it is two trees from a page.
+
+Build clean, `qa.py` green on 16,095 pages, `preflight.py` 632 places and
+0 problems. Live on main.
+
+What is still owed and cannot be done from this sandbox: the verify passes
+themselves, and the global pageview ranking per park. Every host outside
+the allowlist answers 403 on organisation policy, including
+monumentalebomen.nl and inventaris.onroerenderfgoed.be, so geocoding
+Flanders and confirming a tree is alive both need a machine with network.
+
 
 ## 2026-09-19 - Every country page now names its ten oldest trees, not one
 
