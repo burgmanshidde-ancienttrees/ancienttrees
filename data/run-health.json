@@ -15901,6 +15901,34 @@
    ],
    "trees": 9,
    "logged": true
+  },
+  {
+   "started": "2026-09-19T02:08:11+00:00",
+   "date": "2026-09-19",
+   "run_id": "35414750681",
+   "minutes": 89.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 450,
+   "denials": 46,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(command), Bash(cp), Bash(for), Bash(if), Bash(ls), Bash(mkdir), Bash(nohup), Bash(pip), Bash(printenv), Bash(ps), Bash(python3), Bash(rm), Bash(tail), Bash(wait)",
+   "ended": "success",
+   "tokens": 3694818,
+   "claims_held": [],
+   "commits": 12,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "hiroshima",
+     "trees": 16
+    },
+    {
+     "city": "melbourne",
+     "trees": 4
+    }
+   ],
+   "trees": 20,
+   "logged": true
   }
  ],
  "schedule_changes": [
