@@ -112,6 +112,24 @@ def queue():
     return trees if isinstance(trees, dict) else {t.get("id"): t for t in trees}
 
 
+_IDS = {}
+
+
+def tree_ids(slug):
+    """Every tree id a city publishes, by city slug.
+
+    starved() needs to tell "swept and came back empty" apart from "never
+    asked about", and the queue can only answer the first: a tree with no
+    queue entry is invisible there by definition.
+    """
+    if not _IDS:
+        for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+            doc = json.load(open(path, encoding="utf-8"))
+            _IDS[os.path.basename(path)[:-5]] = [
+                t.get("id") for t in doc.get("trees") or []]
+    return _IDS.get(slug, [])
+
+
 _PINS = {}
 
 
@@ -134,6 +152,27 @@ def pins():
                     _PINS[t.get("id")] = (loc["latitude"], loc["longitude"],
                                           t.get("location_precision"))
     return _PINS
+
+
+_SERVED = None
+
+
+def photographed():
+    """Tree ids that already carry a photograph the site would render.
+
+    `held` does not count, because a held photograph is deliberately kept off
+    the page and the tree still has a gap somebody could close.
+    """
+    global _SERVED
+    if _SERVED is None:
+        _SERVED = set()
+        for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+            doc = json.load(open(path, encoding="utf-8"))
+            for t in doc.get("trees") or []:
+                p = t.get("photo") or {}
+                if p.get("url") and p.get("status") != "held":
+                    _SERVED.add(t.get("id"))
+    return _SERVED
 
 
 def names_match(tree, cand, pin=None):
@@ -352,13 +391,38 @@ def shortlist(limit, demand=True):
         need = {c["slug"]: c for c in cities()
                 if c["photos"] == 0 and c["trees"] >= PHOTO_FLOOR}
     rows = []
+    served = photographed()
     for tid, entry in q.items():
         slug = (entry.get("city") or "").lower().replace(" ", "-")
         city = need.get(slug)
         if not city:
             continue
+        # A TREE THAT ALREADY HAS ITS PHOTOGRAPH IS NOT A GAP. The city filter
+        # above is a CITY test (trees > photos), so every queued tree in a
+        # part-photographed city reached this list, photographed or not: 7 of
+        # the 20 rows on the 2026-09-18 shortlist were trees already served,
+        # and their offered candidates were simply the next frame of the same
+        # shoot. That is not only wasted viewing. photo_apply.py's `approve`
+        # OVERWRITES tree["photo"], so a pass trusting this list and liking a
+        # second frame would silently replace a lead photograph that had
+        # already been judged, which is a worse outcome than the empty gap
+        # this tool exists to close. Extra photographs are a real thing since
+        # 2026-09-12, but they go in `photos` beside the lead and no shortlist
+        # asks for them.
+        if tid in served:
+            continue
         best = None
+        judged_urls = {c.get("url") for c in (entry.get("candidates") or [])
+                       if c.get("judged") and c.get("url")}
         for cand in (entry.get("candidates") or []):
+            # THE SAME FILE TWICE IS STILL ONE VERDICT. A tree's candidates can
+            # carry the same Commons url on two rows, one from the Wikidata
+            # sweep and one from the geosearch, and photo_apply.py writes the
+            # verdict onto the first row it matches. The other row stays
+            # unjudged and comes back forever: Milan's Platano was re-served on
+            # 2026-09-18 with a verdict already on file from the day before.
+            if cand.get("url") in judged_urls and not cand.get("judged"):
+                continue
             # SKIP ANYTHING ALREADY JUDGED. Found 2026-08-30: this loop scored
             # every candidate by filename match alone and never read `judged`,
             # so a candidate rejected weeks ago (with a verdict already on
@@ -396,6 +460,76 @@ def shortlist(limit, demand=True):
         out.append(r)
     return out[:limit]
 
+
+
+def starved(limit=12):
+    """Demand cities the shortlist CANNOT see, and the command that helps them.
+
+    The shortlist only ever prints a city that already has a candidate on file,
+    which is correct for its own job and means the cities with the worst supply
+    are exactly the ones it never names. Nothing routed them anywhere, so the
+    medicine the docstring above names (photo_last_resort.py) was a sentence in
+    a comment rather than a thing a run is told to do.
+
+    Found 2026-09-18 on Pamplona, which is the sharpest case the site has:
+    448 impressions in the ten-day window at average position 3.6, the biggest
+    wasted demand anywhere on seolearn's own EARNED AND WASTED list at index
+    0.14, and 0 of its 14 trees photographed. Its queue had been swept to
+    sweep 5 twice, on 09-09 and 09-16, and 13 of the 14 came back with no
+    candidate at all, so it appeared on no shortlist and in no coverage list,
+    and a session asking "what do we do about Pamplona" got no answer from
+    any tool. photo_last_resort.py had never been run on it.
+
+    Ordered by impressions, because that is what the waste is measured in. The
+    per-tree sweep count comes from the queue itself, so a city that was never
+    swept at all is named as such rather than lumped in with an exhausted one:
+    those two need opposite commands and only the queue knows which is which.
+    """
+    want = {slugify_city(c): i for c, i in demand_cities()}
+    q = queue()
+    served = photographed()
+    by_city = {}
+    for tid, entry in q.items():
+        slug = (entry.get("city") or "").lower().replace(" ", "-")
+        by_city.setdefault(slug, []).append((tid, entry))
+    rows = []
+    for c in cities():
+        slug = c["slug"]
+        if slug not in want or c["trees"] <= c["photos"]:
+            continue
+        entries = by_city.get(slug, [])
+        # An unphotographed tree with nothing left to look at: either no
+        # candidate was ever found, or every one on file already has a verdict.
+        # Both mean the shortlist has nothing to offer this city.
+        open_rows = 0
+        for tid, entry in entries:
+            if tid in served:
+                continue
+            if any(not cand.get("judged") for cand in (entry.get("candidates") or [])):
+                open_rows += 1
+        if open_rows:
+            continue
+        # WHICH COMMAND depends on why the city is empty, and the two are
+        # opposite mistakes. A tree swept to sweep 5 with nothing found needs
+        # the plant filter taken off (photo_last_resort.py). A tree with no
+        # queue entry at all was never asked about, and needs the ordinary
+        # sweep first (photo_hunt.py). Sending the second to the last resort
+        # burns a window on the wrong question, which is the waste this whole
+        # list exists to stop, so count them separately rather than reporting
+        # the minimum sweep over a mixed bag.
+        queued_ids = {tid for tid, _ in entries}
+        unseen = [t for t in tree_ids(slug)
+                  if t not in served and t not in queued_ids]
+        swept = [e.get("sweep") or 0 for tid, e in entries if tid not in served]
+        # Already through the last resort, so do not send it there twice. The
+        # stamp only means something because photo_last_resort.py stopped
+        # writing one when Commons was merely unreachable (2026-09-18).
+        tried = sum(1 for tid, e in entries
+                    if tid not in served and e.get("last_resort"))
+        rows.append((want[slug], slug, c["trees"], c["photos"],
+                     len(unseen), min(swept) if swept else None, tried))
+    rows.sort(key=lambda r: -r[0])
+    return rows[:limit]
 
 
 def famous_near(limit, photo_only=False, per_city=3):
@@ -645,6 +779,45 @@ def main():
     for score, trees, slug, tid, name, title, lic in rows:
         print("  [%3.0f] %-22s %-30s %s  %s"
               % (score, "%s (%d)" % (slug, trees), name[:30], title[:52], lic or ""))
+    starving = starved()
+    if starving and not a.coverage:
+        print("\nSTARVED, and invisible to the list above: cities with readers where")
+        print("every queued candidate is judged or none was ever found. The shortlist")
+        print("cannot name these, so nothing did. Worst waste first:\n")
+        print("  %-9s %-22s %-11s %s" % ("impr", "city", "photos", "why it is empty"))
+        exhausted, unasked, done = [], [], []
+        for impr, slug, trees, photos, unseen, sweep, tried in starving:
+            gap = trees - photos
+            if tried >= gap and gap:
+                why, bucket = "last resort tried too, %d tree(s)" % tried, done
+            elif sweep is None:
+                why, bucket = "no queue entry at all", unasked
+            elif unseen:
+                why = "%d swept to %d, %d never queued" % (
+                    gap - unseen, sweep, unseen)
+                bucket = unasked
+            else:
+                why, bucket = "swept to %d, nothing found" % sweep, exhausted
+            bucket.append(slug)
+            print("  %6d    %-22s %2d of %-5d %s" % (impr, slug, photos, trees, why))
+        # Three different answers, and sending a city to the wrong one wastes a
+        # window on a question already answered.
+        if exhausted:
+            print("\n  Swept and empty, so take the plant-word filter off:")
+            print("  python3 scripts/photo_last_resort.py %s --radius 120"
+                  % " ".join(exhausted[:3]))
+        if unasked:
+            print("\n  Trees nobody ever asked about, so sweep them first:")
+            print("  python3 scripts/photo_hunt.py --city %s" % unasked[0])
+        if done:
+            print("\n  Both sweeps spent on %s. Nothing here is a photo hunt any"
+                  % ", ".join(done[:4]))
+            print("  more: the supply is the problem, so add a tree that arrives")
+            print("  WITH a photograph rather than hunting one for a trunk")
+            print("  nobody has photographed.")
+        print("\n  Then scripts/famous_trees.py --country <name> for trees that")
+        print("  arrive carrying a photograph instead of needing one hunted.")
+
     print("\n  For each: fetch it, run photo_light.py, LOOK at it, and check it is")
     print("  THIS tree and not another one in the same park. A geotag settles that")
     print("  when the file has one; without a geotag and with two similar trees")

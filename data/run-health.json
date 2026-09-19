@@ -15742,6 +15742,133 @@
    ],
    "trees": 6,
    "logged": true
+  },
+  {
+   "started": "2026-09-18T11:05:20+00:00",
+   "date": "2026-09-18",
+   "run_id": "35337850103",
+   "minutes": 91.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 524,
+   "denials": 41,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(curl), Bash(echo), Bash(for), Bash(git), Bash(grep), Bash(if), Bash(jobs), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(while)",
+   "ended": "success",
+   "tokens": 9484467,
+   "claims_held": [],
+   "commits": 32,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "bedomin",
+     "trees": 1
+    },
+    {
+     "city": "hel",
+     "trees": 1
+    },
+    {
+     "city": "higashi-hiroshima",
+     "trees": 0
+    },
+    {
+     "city": "milan",
+     "trees": 0
+    }
+   ],
+   "trees": 2,
+   "logged": true
+  },
+  {
+   "started": "2026-09-18T13:57:29+00:00",
+   "date": "2026-09-18",
+   "run_id": "35353251881",
+   "minutes": 21.6,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 175,
+   "denials": 8,
+   "denials_source": "permission_denials: Bash(curl), Bash(mkdir), Bash(printf), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 12283939,
+   "claims_held": [],
+   "commits": 8,
+   "cities_touched": 5,
+   "cities": [
+    {
+     "city": "higashi-hiroshima",
+     "trees": 2
+    },
+    {
+     "city": "guernica",
+     "trees": 1
+    },
+    {
+     "city": "valentin-tineo",
+     "trees": 1
+    },
+    {
+     "city": "lyon",
+     "trees": 0
+    },
+    {
+     "city": "milan",
+     "trees": 0
+    }
+   ],
+   "trees": 4,
+   "logged": true
+  },
+  {
+   "started": "2026-09-18T20:07:21+00:00",
+   "date": "2026-09-18",
+   "run_id": "35389691793",
+   "minutes": 46.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 318,
+   "denials": 25,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(curl), Bash(echo), Bash(for), Bash(git), Bash(grep), Bash(ls), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 4733794,
+   "claims_held": [],
+   "commits": 4,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-09-18T23:12:43+00:00",
+   "date": "2026-09-19",
+   "run_id": "35404768130",
+   "minutes": 92.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 429,
+   "denials": 27,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(git), Bash(grep), Bash(if), Bash(jobs), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(which)",
+   "ended": "success",
+   "tokens": 40540599,
+   "claims_held": [],
+   "commits": 7,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "reno-valdieu",
+     "trees": 4
+    },
+    {
+     "city": "senonches",
+     "trees": 4
+    },
+    {
+     "city": "pamplona",
+     "trees": 0
+    }
+   ],
+   "trees": 8,
+   "logged": true
   }
  ],
  "schedule_changes": [

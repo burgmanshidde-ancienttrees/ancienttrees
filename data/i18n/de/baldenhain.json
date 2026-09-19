@@ -1,0 +1,39 @@
+{
+ "_note": "de overlay for baldenhain, written 2026-09-18 from data/cities/baldenhain.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Baldenhain",
+ "title": "Die Tanzlinde von Baldenhain: 8,5 Meter Stammumfang",
+ "meta_description": "Die Tanzlinde von Baldenhain: 8,5 Meter Umfang, eine der dicksten Tanzlinden Deutschlands, deren flache Krone einst als Schankplattform diente.",
+ "intro": "Baldenhain ist ein kleines Dorf auf der thüringischen Seite des Vogtlands mit einer Tanzlinde, die die Kinder des Ortes zum Klettergerüst gemacht haben. Um 1900 schenkte das Gasthaus gegenüber von einer Plattform aus, die in ihr ausladendes Astwerk gebaut war; die Plattform ist weg, die flache, kelchförmige Krone, die sie trug, steht noch. Mit 8,5 Metern Umfang ist sie eine der dicksten und vollständigsten Tanzlinden, die in Deutschland noch stehen, und sie wird weiterhin aktiv gepflegt.",
+ "question_title": "Wie alt ist die Tanzlinde von Baldenhain?",
+ "question_meta": "Die Tanzlinde von Baldenhain ist mit 8,5 Metern Umfang eine der dicksten Tanzlinden Deutschlands, geschätzt auf 400 bis 600 Jahre.",
+ "question_answer": "Die Tanzlinde von Baldenhain steht gegenüber dem Feuerwehrhaus mitten im Dorf, auf offenem Grund, ohne dass etwas zu bezahlen oder jemand zu fragen wäre. Sowohl das regionale Schutzregister als auch eine dendrologische Erhebung nennen sie eine der dicksten und vollständigsten Tanzlinden, die in Deutschland noch stehen, im April 2024 mit 8,5 Metern Umfang gemessen und in vitalem Zustand. Um 1900 schenkte das Gasthaus gegenüber von einer Plattform aus, die in das flache Astwerk des Baums gebaut war; die Plattform ist weg, die Form ist geblieben, und die Kinder des Dorfes haben sie sich als Kletterstelle genommen.",
+ "question_context": "Der Stamm ist hohl und an einer Seite offen und geht in drei schwere Äste über, die sich wie ein Kelch ausbreiten und auf Holzstützen ruhen, die klassische Form einer Tanzlinde, über Generationen so erzogen, dass sie benutzt und nicht bloß bewundert wird. Ihr Alter wird mit 400 bis 600 Jahren angegeben, eine Schätzung aus dem Umfang statt einer Ringzählung, die einzige Möglichkeit bei einem Stamm ohne Mitte. Jemand kümmert sich um sie: Die Krone wird von Stahlseilen und Textilgurten zusammengehalten und regelmäßig gepflegt, und seit 1978 steht sie als Naturdenkmal unter Schutz. Baldenhain ist ein kleines Dorf in Langenwolschendorf, im Landkreis Greiz auf der thüringischen Seite der Vogtlandgrenze, praktisch nur mit dem Auto erreichbar. Sie steht gegenüber dem Feuerwehrhaus des Dorfes auf gewöhnlichem offenem Grund, ohne dass für Besucher etwas darum herum gebaut wäre, außer der erzogenen Form des Baums selbst und den Stützen, die seine Äste tragen.",
+ "faq": [
+  {
+   "q": "Wie alt ist die Tanzlinde von Baldenhain?",
+   "a": "Geschätzt 400 bis 600 Jahre, auf Grundlage ihres Umfangs von 8,5 Metern und nicht einer Ringzählung, da der hohle Stamm sich nicht direkt zählen lässt."
+  },
+  {
+   "q": "Wofür wurde die Plattform im Baum genutzt?",
+   "a": "Um 1900 schenkte das Gasthaus gegenüber von einer Plattform aus, die in das flache, ausladende Astwerk des Baums gebaut war. Die Plattform ist weg, aber die Kinder des Ortes klettern heute auf denselben Ästen."
+  },
+  {
+   "q": "Ist der Besuch kostenlos?",
+   "a": "Ja. Der Baum steht gegenüber dem Feuerwehrhaus im offenen Ortskern, ohne Tor und ohne Gebühr."
+  },
+  {
+   "q": "Wie komme ich hin?",
+   "a": "Baldenhain ist ein Ortsteil von Langenwolschendorf im Landkreis Greiz, auf der thüringischen Seite der Vogtlandgrenze. Praktisch kommt man mit dem Auto hin."
+  }
+ ],
+ "trees": {
+  "bdh_001": {
+   "name": "Tanzlinde (Baldenhain)",
+   "species": "Sommerlinde (Tilia platyphyllos)",
+   "age_estimate": "etwa 400 bis 600 Jahre",
+   "access": "Kostenlos, öffentlich. Steht im offenen Ortskern.",
+   "transport": "Kleines Dorf (Baldenhain, Langenwolschendorf) an der thüringisch-sächsischen Vogtlandgrenze, Landkreis Greiz; praktisch kommt man mit dem Auto hin.",
+   "story": "Um 1900 schenkte das Gasthaus gegenüber von einer Plattform aus, die in diesen Baum hineingebaut war. Das flache Astwerk, das sie trug, ist noch da, und die Kinder des Dorfes haben es sich als Kletterstelle genommen, was gut zusammenfasst, wozu eine Tanzlinde da ist: ein Baum, der zum Gebrauch erzogen wurde. Sowohl das regionale Schutzregister als auch die dendrologische Erhebung nennen sie eine der dicksten und vollständigsten Tanzlinden, die in Deutschland noch stehen. Der Stamm maß im April 2024 8,5 Meter im Umfang und war in vitalem Zustand; er ist hohl, an einer Seite offen und geht in drei schwere Äste über, die sich wie ein Kelch ausbreiten und auf Stützen ruhen. Das Alter wird mit 400 bis 600 Jahren angegeben, eine Schätzung aus dem Umfang und keine Ringzählung, was bei einem Stamm ohne Mitte die einzige Möglichkeit ist. Jemand kümmert sich. Die Krone wird von Stahlseilen und Textilgurten gehalten und regelmäßig versorgt, und der Baum steht seit 1978 als Naturdenkmal unter Schutz. Sie finden ihn mitten in Baldenhain, einem kleinen Dorf auf der thüringischen Seite des Vogtlands, gegenüber dem Feuerwehrhaus auf offenem Grund, ohne dass etwas zu bezahlen oder jemand zu fragen wäre."
+  }
+ }
+}

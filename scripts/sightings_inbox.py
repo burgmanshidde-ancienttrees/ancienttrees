@@ -419,10 +419,36 @@ def main():
     if not KEY:
         print("sightings inbox: SUPABASE_SERVICE_KEY absent, nothing read")
         return 0
+    # girth_hugs was renamed onto this table in code on 2026-09-17 (commit
+    # c52f380e) but the matching supabase/sightings.sql paste is still FOR
+    # HIDDE: this project cannot run DDL against production, only he can
+    # paste a migration into the SQL editor. Selecting a column that is not
+    # there yet makes PostgREST 400 the WHOLE query, which silently emptied
+    # every knock's reader-photo read (rung 1, the highest-priority item on
+    # Step 0) for two days with nothing to show for it but a swallowed
+    # exception. Try with it, and fall back without it the moment it is
+    # actually the missing-column error, so the pipeline keeps working
+    # before the paste and picks the field up for free the moment after.
+    select_cols = ("user_id,id,tree_id,name,note,species,age,girth_cm,girth_hugs,"
+                   "lat,lng,taken_at,status,photo,shared,updated_at")
+    query = ("/rest/v1/sightings?select=" + select_cols +
+             "&photo=not.is.null&shared=eq.true&order=updated_at.asc")
     try:
-        rows = supa("/rest/v1/sightings?select=user_id,id,tree_id,name,note,species,age,girth_cm,girth_hugs,"
-                    "lat,lng,taken_at,status,photo,shared,updated_at"
-                    "&photo=not.is.null&shared=eq.true&order=updated_at.asc") or []
+        rows = supa(query) or []
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace") if hasattr(e, "read") else ""
+        if e.code == 400 and "girth_hugs" in body and "does not exist" in body:
+            print("sightings inbox: girth_hugs column not migrated yet "
+                  "(supabase/sightings.sql is FOR HIDDE), reading without it")
+            query = query.replace("age,girth_cm,girth_hugs,", "age,girth_cm,")
+            try:
+                rows = supa(query) or []
+            except Exception as e2:
+                print(f"sightings inbox: could not read sightings ({e2.__class__.__name__}: {str(e2)[:80]})")
+                return 0
+        else:
+            print(f"sightings inbox: could not read sightings (HTTPError: {str(e)[:80]})")
+            return 0
     except Exception as e:
         print(f"sightings inbox: could not read sightings ({e.__class__.__name__}: {str(e)[:80]})")
         return 0

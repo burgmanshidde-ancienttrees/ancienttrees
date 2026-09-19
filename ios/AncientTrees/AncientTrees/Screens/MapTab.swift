@@ -672,7 +672,9 @@ struct MapTab: View {
                 // available when you sign in"). Gating the heart and leaving
                 // this open would be the same bug with a different button.
                 guard account.isSignedIn else {
-                    nudge.require(.keepTree(t.name))
+                    nudge.require(.keepTree(t.name)) {
+                        if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
+                    }
                     return
                 }
                 saved.toggleVisited(t.id)

@@ -51,6 +51,20 @@ public final class Nudge {
     /// Set when a moment qualifies; the view presents a sheet off it.
     public var pending: SignInReason?
 
+    /// WHAT THEY WERE DOING WHEN THEY WERE ASKED (2026-09-18), kept here rather
+    /// than on the reason because the view clears `pending` the instant it
+    /// raises the sheet and this has to outlive that.
+    ///
+    /// `require` is a GATE: the tap did not go through, so somebody pressed
+    /// Save, signed in, and landed back on the tree with it still unsaved.
+    /// Pressing it a second time is the person doing our bookkeeping. The
+    /// website had the same hole and is fixed in the same change; see
+    /// CONVENTIONS.md, "Where you land after signing in and signing out".
+    ///
+    /// Only a gate carries one. A nudge (`ticked`, `saved`) fires AFTER the act
+    /// has already gone through, so there is nothing left to finish.
+    public var finish: (() -> Void)?
+
     public init() {
         // -reset-collection wipes Saved and Sightings, and until 2026-08-23 it
         // left THIS behind, which made every test that ticks a tree depend on
@@ -112,8 +126,17 @@ public final class Nudge {
     /// The comment at the top of this file is the argument he overruled. It is
     /// left standing because it is still the reasoning, and if signups fall
     /// after this it is the first thing to read.
-    public func require(_ reason: SignInReason) {
+    public func require(_ reason: SignInReason, then: (() -> Void)? = nil) {
         pending = reason
+        finish = then
+    }
+
+    /// Called by the sign-in sheet once the account is real, and by its
+    /// dismissal so a closed sheet leaves nothing armed behind it.
+    public func settle(ranThrough: Bool) {
+        let job = finish
+        finish = nil
+        if ranThrough { job?() }
     }
 
     private func mark(_ moment: String) {

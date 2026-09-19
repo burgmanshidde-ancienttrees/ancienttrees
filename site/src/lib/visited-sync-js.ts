@@ -63,9 +63,9 @@ export const VISITED_SYNC_JS = `
     if (!C.session()) {
       seen = [];
       repaint();
-      return;
+      return Promise.resolve();
     }
-    C.visited().then(function(list) {
+    return C.visited().then(function(list) {
       seen = list;
       repaint();
     });
