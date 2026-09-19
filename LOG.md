@@ -2,6 +2,59 @@
 
 <!-- archive-index -->
 
+## 2026-09-19 (session) - Scouted the tree-of-the-year contests: not a database, and the best nomination list in Europe
+
+Hidde asked whether the tree of the year contest is a database we can use,
+then asked for the scout. Answer: no as a register, yes as supply, and we
+have been quietly living off it for months without a single file saying so.
+
+**What it is not.** No file, no API, no coordinates, no licence block on any
+of these sites, and the photographs belong to the people who entered them, so
+nothing there is a photo source under hard rule 4.
+
+**What it is.** A nomination list, and a national vote is the closest thing to
+the reader validation of 2026-09-08 that exists before we have readers.
+Measured: **104 published trees across 93 places already cite a
+tree-of-the-year award**, every one of them found by hand. 15 of our 27
+Slovak trees and 18 of our 66 Czech ones came in this way. Nobody has ever
+read one of these archives as a list.
+
+**The volume is national, not European.** The European final is 12 to 16
+finalists a year since 2011 and we hold a good share of the famous ones. The
+national contests behind it run 10 to 16 finalists a year, the Czech one
+since 2002, mostly never written about in English.
+
+**The trap, caught during the scout rather than after a wasted window:**
+several countries run two contests under almost the same name and only one
+names a tree. Hungary's `Az Ev Faja` names a tree, `az ev fafaja` names a
+species. Latvia's `Gada koks` and Germany's `Baum des Jahres` are species
+awards, so both are excluded and recorded as such.
+
+**The free half needs no fetching at all:** two European WINNERS are sitting
+open in our own leads with photographs and coordinates attached and have
+never been written up, the Almond Tree of Pecs (2019) and the Lime of
+Felsomocsolad (2012). Estonia's Orissaare oak (2015, the one inside a
+football pitch, 60,000 votes) and Romania's lime of Leliceni (the first
+European winner) are in no file of ours; Romania has no leads file at all.
+
+**Shipped:** `data/toty-contests.json`, twelve contests with kind, archive
+pattern and verdict, and `scripts/toty_scout.py` with three commands.
+`--list` and `--gap` run offline and answer "what do we already hold here";
+`--fetch <country>` saves each year's page as readable text into
+`data/research/toty/` and deliberately parses nothing, because a scraper
+written against a page nobody has looked at is a scraper that invents trees.
+The run reads what it saved and writes the leads itself, the same split as a
+photo viewing pass.
+
+**What this session could not do, stated plainly:** it had no outbound
+network at all. The egress proxy refused treeoftheyear.org, Wikipedia,
+Wikidata and evfaja.hu alike, so the scout ran on web search plus our own
+data, no terms page was opened and **no licence verdict is recorded**. The
+fetching half belongs to a run with egress, which the CI runner has. The text
+extractor was tested against a fixture; the network path has never been run
+green.
+
+
 ## 2026-09-18 - Night run 2026-09-18 20:07 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 46.1 minutes of its 120 minute window, 318 turns, 25 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree.
