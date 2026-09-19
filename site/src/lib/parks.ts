@@ -3,6 +3,9 @@
 // address text matching a keyword list, which is why the intro file's
 // "park" value must match this function's output exactly (load_park_intros
 // keys itself on (city_slug, park), build_site.py:3904).
+import fs from "node:fs";
+import path from "node:path";
+import { DATA } from "./data-dir";
 import type { CityEntry, Tree } from "./trees";
 import { treeIsRenderable } from "./trees";
 
@@ -50,6 +53,35 @@ const PARK_WORDS = [
   "arboret",
 ];
 
+/** Parks no keyword can see, from data/park-names.json.
+ *
+ * The word list above is the right mechanism for the thousands of places whose
+ * name says they are a park, and it cannot work for a place whose name does
+ * not: Margaret Island, the Pfaueninsel, Montjuic, the National Mall. No word
+ * that would catch those is safe to add, because "island" is a substring of
+ * Islandbridge and "mall" of Smallbrook Street.
+ *
+ * Read once per build. The file carries the bar a name has to clear and why
+ * each one is in; scripts/pagegaps.py reads the same file and
+ * check_park_words_match() in preflight compares the two. */
+let EXPLICIT: Set<string> | null = null;
+
+function explicitParks(): Set<string> {
+  if (EXPLICIT) return EXPLICIT;
+  EXPLICIT = new Set<string>();
+  try {
+    const f = path.join(DATA, "park-names.json");
+    if (fs.existsSync(f)) {
+      const d = JSON.parse(fs.readFileSync(f, "utf-8"));
+      for (const name of Object.keys(d.parks ?? {})) EXPLICIT.add(name.toLowerCase());
+    }
+  } catch {
+    // A missing or broken file means no explicit parks, never a failed build:
+    // the keyword list is the mechanism and this is the supplement.
+  }
+  return EXPLICIT;
+}
+
 export const PARK_MIN_TREES = 5;
 
 /** The named park a tree stands in, or null. Reads neighbourhood first,
@@ -57,13 +89,23 @@ export const PARK_MIN_TREES = 5;
  * stripped. */
 export function parkKey(tree: Tree): string | null {
   const loc = tree.location ?? {};
+  const heads: string[] = [];
   for (const field of [loc.neighbourhood, loc.address]) {
     let head = String(field ?? "").split(",")[0];
     head = head.replace(/\([^)]*\)?/g, "");
     head = head.replace(/\s+/g, " ").trim().replace(/^[-/\s]+|[-/\s]+$/g, "");
-    if (head.length >= 4 && PARK_WORDS.some((w) => head.toLowerCase().includes(w))) {
-      return head;
-    }
+    if (head.length < 4) continue;
+    if (PARK_WORDS.some((w) => head.toLowerCase().includes(w))) return head;
+    heads.push(head);
+  }
+  // Only once no field named a park by a keyword, because a keyword match is
+  // the more specific answer: a Montjuic tree whose address names the Jardi
+  // Botanic Historic belongs to that garden and not to the hill. Exact match,
+  // since the near misses are real places of their own ("Pfaueninsel ferry
+  // landing", "Kalopanagiotis village").
+  const explicit = explicitParks();
+  for (const head of heads) {
+    if (explicit.has(head.toLowerCase())) return head;
   }
   return null;
 }

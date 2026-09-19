@@ -1,0 +1,156 @@
+{
+  "note": "The tree-of-the-year contests, one entry per country, scouted 2026-09-19. Read by scripts/toty_scout.py. This is NOT a register ledger (data/register-scouting.json is), because a contest is not a register: no file, no API, no coordinates, no open licence, and the contest photographs belong to the people who entered them, so nothing here is a photo source under hard rule 4. What it is, is a nomination list, and a national vote is the closest thing to the reader validation ruled on 2026-09-08 that exists before we have readers. Each finalist arrives with a name, a place, a story and a search term of its own.",
+  "the_trap": "Several countries run TWO contests under almost the same name, and only one of them is about an individual tree. Hungary's 'Az Ev Faja' (Okotars, since 2011) names a tree; 'az ev fafaja' (Orszagos Erdeszeti Egyesulet, since 1996) names a SPECIES. Latvia's 'Gada koks' names a species. Germany's 'Baum des Jahres' names a species. A species award is worth nothing to us: it points at a taxon, not at a trunk somebody can walk to. Check which kind a contest is before spending a window on it, and record the answer here.",
+  "licence": "UNREAD as of 2026-09-19. This session had no outbound network (the egress proxy refused treeoftheyear.org, Wikipedia and Wikidata alike), so no terms page was opened and no licence verdict is recorded. Do not treat absence of a verdict as permission. What is already settled without reading anything: contest photographs are entrants' own work and are not ours to publish, so a tree found this way still needs its photograph from Commons, Wikidata or a fresh open-licence hunt.",
+  "kinds": {
+    "individual": "names one tree. Usable as a lead source.",
+    "species": "names a species. Useless to us, recorded so nobody scouts it twice.",
+    "city": "a municipal contest rather than a national one. Usable, and unusually good, because every entry sits inside one walkable city."
+  },
+  "contests": [
+    {
+      "country": "Europe",
+      "contest": "European Tree of the Year",
+      "organiser": "Environmental Partnership Association",
+      "kind": "individual",
+      "since": 2011,
+      "per_year": "12 to 16, one national winner per country",
+      "archive": "https://www.treeoftheyear.org/previous-years",
+      "year_url": "https://www.treeoftheyear.org/previous-years/{year}",
+      "status": "unfetched",
+      "note": "The final, not the pool. Roughly 200 finalists across 16 editions and we already hold a good share of the famous ones. Worth a single sweep for completeness; the volume is in the national archives below."
+    },
+    {
+      "country": "Hungary",
+      "contest": "Az Ev Faja",
+      "organiser": "Okotars Alapitvany",
+      "kind": "individual",
+      "since": 2011,
+      "per_year": "7 to 12 finalists",
+      "archive": "https://evfaja.hu/scoreboard",
+      "year_url": "https://evfaja.hu/scoreboard/{year}",
+      "status": "unfetched",
+      "note": "Per-year scoreboard pages seen in search results for 2011 and 2014, plus evfaja.okotars.hu/scoreboard/2017 and evfaja.okotars.hu/galeria/2013 on the older host, so the archive is enumerable and the host has moved at least once. Two of its winners are already sitting OPEN in data/leads/_famous-hungary.json with photographs and coordinates attached: the Almond Tree of Pecs (European winner 2019) and the Lime of Felsomocsolad (European winner 2012). Do NOT confuse with 'az ev fafaja', the species award."
+    },
+    {
+      "country": "Bulgaria",
+      "contest": "Darvo s koren",
+      "organiser": "EcoObshtnost Foundation (bepf-bg.org)",
+      "kind": "individual",
+      "since": 2010,
+      "per_year": "around 10 nominees",
+      "archive": "https://bepf-bg.org/darvo-s-koren/pobeditelite-dosega/",
+      "year_url": "https://bepf-bg.org/darvo-s-koren/pobeditelite-dosega/winners-{year}/",
+      "status": "unfetched",
+      "note": "'Winners so far' archive with per-year pages; the 2012 page URL was seen directly in search results, so the pattern is real for at least that year. The contest is explicitly about trees with a story rather than the oldest or the biggest, which is both the appeal and the caution: a winner can be a young tree. We publish 7 Bulgarian trees."
+    },
+    {
+      "country": "Romania",
+      "contest": "Arborele Anului",
+      "organiser": "Asociatia MaiMultVerde",
+      "kind": "individual",
+      "since": 2010,
+      "per_year": "12 finalists",
+      "archive": null,
+      "year_url": null,
+      "status": "url_not_established",
+      "note": "Confirmed to exist and to run a 12-finalist national shortlist (Adevarul, 'Romania a ales 12 finalisti'), and its 2010 winner, the lime of Leliceni, went on to win the first European title in 2011. We map 4 Romanian trees and have NO leads file for the country at all. The archive lives partly on per-year Facebook pages, which is the worst shape a source can take; find the association's own list first."
+    },
+    {
+      "country": "Slovenia",
+      "contest": "Drevo in drevored leta",
+      "organiser": "Mestna obcina Ljubljana",
+      "kind": "city",
+      "since": null,
+      "per_year": "one tree and one avenue",
+      "archive": "https://www.ljubljana.si/sl/aktualno/novice/razglasili-smo-drevo-in-drevored-leta-2025",
+      "year_url": null,
+      "status": "unfetched",
+      "note": "A city contest, which is the best shape of all: every winner is in one walkable city. Past winners named in one page of search results alone include a plane on the corner of Streliska and Strossmayerjeva, a weeping beech on Vodnikova, a Caucasian wingnut on Linhartova, a Persian beech on Slajmerjeva and a ginkgo in Valvasor Park, each with a street address already. We publish 4 Slovenian trees."
+    },
+    {
+      "country": "Latvia",
+      "contest": "Gada koks",
+      "organiser": "Latvian dendrology association",
+      "kind": "species",
+      "since": 2001,
+      "per_year": null,
+      "archive": "https://lv.wikipedia.org/wiki/Gada_koks_Latvija",
+      "year_url": null,
+      "status": "excluded",
+      "note": "SPECIES award (pine 2001, juniper 2002, rowan 2003, ash 2004). Names a taxon, not a trunk. Do not scout again. Latvia's European entries come from somewhere else and that route is still unscouted."
+    },
+    {
+      "country": "Germany",
+      "contest": "Baum des Jahres",
+      "organiser": "Baum des Jahres Stiftung",
+      "kind": "species",
+      "since": 1989,
+      "per_year": null,
+      "archive": null,
+      "year_url": null,
+      "status": "excluded",
+      "note": "SPECIES award. Recorded here only so the name stops looking like supply."
+    },
+    {
+      "country": "Estonia",
+      "contest": "Aasta puu",
+      "organiser": null,
+      "kind": "individual",
+      "since": null,
+      "per_year": null,
+      "archive": null,
+      "year_url": null,
+      "status": "url_not_established",
+      "note": "Estonia entered the European contest in 2015 and won it outright with the Orissaare oak, the one standing inside a football pitch, on 60,000 votes. We do not map that tree and it is in no leads file of ours. Organiser and archive not established this pass."
+    },
+    {
+      "country": "Czech Republic",
+      "contest": "Strom roku",
+      "organiser": "Nadace Partnerstvi",
+      "kind": "individual",
+      "since": 2002,
+      "per_year": "12 finalists",
+      "archive": null,
+      "year_url": null,
+      "status": "unscouted",
+      "note": "The oldest of these contests and the home of the European one. Our own pages already cite it 17 times, so it has been mined by hand and never as a list."
+    },
+    {
+      "country": "Slovakia",
+      "contest": "Strom roka",
+      "organiser": "Nadacia Ekopolis",
+      "kind": "individual",
+      "since": 2003,
+      "per_year": "around 12 finalists",
+      "archive": null,
+      "year_url": null,
+      "status": "unscouted",
+      "note": "Cited 14 times across our published trees, never read as an archive."
+    },
+    {
+      "country": "Poland",
+      "contest": "Drzewo Roku",
+      "organiser": "Klub Gaja",
+      "kind": "individual",
+      "since": 2011,
+      "per_year": "around 16 nominees",
+      "archive": null,
+      "year_url": null,
+      "status": "unscouted",
+      "note": "Poland has won the European title repeatedly and we already publish 10 of its award trees, which is evidence the lane works rather than evidence it is finished."
+    },
+    {
+      "country": "France",
+      "contest": "Arbre de l'Annee",
+      "organiser": "Terre Sauvage and the Office National des Forets",
+      "kind": "individual",
+      "since": 2011,
+      "per_year": "one per region, around 14",
+      "archive": null,
+      "year_url": null,
+      "status": "unscouted",
+      "note": "Regional finalists, which spreads them usefully across the country. We publish 4 French award trees."
+    }
+  ]
+}

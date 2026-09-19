@@ -8,7 +8,7 @@ import Base from "../layouts/Base.astro";
 import TreeCard from "../components/TreeCard.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
-import { collectionEntries } from "../lib/collection-rank";
+import { collectionEntries, MODES } from "../lib/collection-rank";
 import { COUNTRY_MIN_CITIES, GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific, speciesPageSlugs } from "../lib/species";
 import { usablePhoto, imgSrcset, cityFace, NO_PHOTO_SVG } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -96,18 +96,46 @@ const crumbItems: [string, string | null][] = [
 const ranked = [...cityStats].sort((a, b) => b.count - a.count || a.cityName.localeCompare(b.cityName));
 
 // Highest lower bound wins, so a wide guess never outranks a documented age.
-let oldest: (typeof countryCities)[number]["data"]["trees"][number] | null = null;
-let oldestCityStat: (typeof cityStats)[number] | null = null;
-for (const stat of cityStats) {
-  for (const t of renderableTrees(stat.city)) {
-    const key: [number, number] = [t.age_min ?? 0, t.age_max ?? 0];
-    const curKey: [number, number] = oldest ? [oldest.age_min ?? 0, oldest.age_max ?? 0] : [-1, -1];
-    if (!oldest || key[0] > curKey[0] || (key[0] === curKey[0] && key[1] > curKey[1])) {
-      oldest = t;
-      oldestCityStat = stat;
-    }
-  }
-}
+// THE COUNTRY'S OLDEST TREES, ten of them (2026-09-19, Hidde: "moeten we niet
+// voor elk land een top 10 maken"). It used to be one tree, which is what a
+// page holding 602 of them in the Netherlands had to say about trees.
+//
+// It is a block here rather than a collection page per country, which was the
+// shape of his question. The country page already targets this country and
+// already ranks, so a second country-level URL would put two of our own pages
+// against each other on one intent: the 2026-09-17 lesson, where ~650 surplus
+// URLs left 36 pages filed as crawled-and-not-indexed.
+//
+// The demand is measured and it currently lands on the wrong page. Search
+// Console, 10 days: "oldest tree in the netherlands" reaches /nijmegen and
+// /eindhoven at position 4, and "oldest tree in switzerland" reaches
+// /cremines, a village page, at 6. Those are national questions answered by
+// whatever city page Google could find.
+//
+// OLDEST, not "most remarkable": remarkable is a taste judgement and hard rule
+// 8 lives there, while every national query in the data is shaped "oldest tree
+// in X" or "trees in X". Ranked on the LOWER bound first, which is this page's
+// own long-standing rule and the conservative one: a wide guess never outranks
+// a documented age.
+const COUNTRY_TOP_N = 10;
+const agedTrees = cityStats
+  .flatMap((stat) => renderableTrees(stat.city).map((t) => ({ tree: t, stat })))
+  .filter((r) => (r.tree.age_min ?? 0) > 0 || (r.tree.age_max ?? 0) > 0)
+  .sort((a, b) =>
+    (b.tree.age_min ?? 0) - (a.tree.age_min ?? 0) ||
+    (b.tree.age_max ?? 0) - (a.tree.age_max ?? 0) ||
+    a.tree.name.localeCompare(b.tree.name));
+const oldestTrees = agedTrees.slice(0, COUNTRY_TOP_N).map(({ tree, stat }) => ({
+  tree,
+  stat,
+  tslug: treeSlugsForCity(stat.city)[tree.id],
+  // The age sentence comes from the collection ranking's own note(), so this
+  // page and /collections/trees-older-than-400-years cannot word the same
+  // fact two ways.
+  note: MODES.oldest.note(tree),
+})).filter((r) => r.tslug);
+const oldest = oldestTrees.length ? oldestTrees[0].tree : null;
+const oldestCityStat = oldestTrees.length ? oldestTrees[0].stat : null;
 
 const rows = ranked.map((c, i) => {
   const face = cityFace(c.city.data, 300);
@@ -182,7 +210,7 @@ const oldestLine =
     ? ` The oldest of them is ${oldest.name} in ${oldestCityStat.cityName}, at ${oldest.age_estimate ?? "an uncertain age"}.`
     : "";
 
-const oldestTslug = oldest && oldestCityStat ? treeSlugsForCity(oldestCityStat.city)[oldest.id] : null;
+const oldestTslug = oldestTrees.length ? oldestTrees[0].tslug : null;
 const oldestPhoto = oldest ? usablePhoto(oldest) : null;
 
 const listElements = ranked.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.cityName, url: `${BASE_URL}/${c.slug}` }));
@@ -243,10 +271,25 @@ const mapScript = countryMapScript(
         ))}
       </section>
     )}
-    {oldest && oldestCityStat && (
+    {oldestTrees.length > 0 && (
       <Fragment>
-        <h2>The oldest tree mapped in {disp}</h2>
-        <TreeCard tree={oldest} citySlug={oldestCityStat.slug} treeSlug={oldestTslug} />
+        {/* "we map", never a bare "the oldest trees in X". The heading this
+            replaced already said "mapped" and dropping it would have been a
+            claim about the COUNTRY rather than about our map: Taiwan's list
+            runs down to a 90 year old tree, and somebody in Taiwan knows
+            better. Same rule as never presenting a register count as a count
+            of what exists, and the same wording the global list uses. */}
+        <h2>
+          {oldestTrees.length === 1
+            ? `The oldest tree we map in ${disp}`
+            : `The ${oldestTrees.length} oldest trees we map in ${disp}`}
+        </h2>
+        {oldestTrees.map((r) => (
+          <Fragment>
+            <TreeCard tree={r.tree} citySlug={r.stat.slug} treeSlug={r.tslug} note={r.note} />
+            <p class="coll-citycta"><a href={`/${r.stat.slug}`}>{r.stat.cityName} &rarr;</a></p>
+          </Fragment>
+        ))}
       </Fragment>
     )}
     {intro.data.register_note && (

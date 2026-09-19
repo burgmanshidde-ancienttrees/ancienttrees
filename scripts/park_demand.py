@@ -53,6 +53,7 @@ import datetime
 import glob
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -161,6 +162,23 @@ def _coord(row):
     return None
 
 
+def _rows(doc):
+    """A register's rows, whatever the importer called them.
+
+    The same several keys cluster_register.py, girths.py, heights.py,
+    pin_upgrade.py and passcheck.py all read. A single-key read is how
+    netherlands-lrmb.json sat on disk, 16,094 trees with coordinates, and
+    counted as zero here for a day.
+    """
+    if isinstance(doc, list):
+        return doc
+    for k in ("entries", "trees", "rows", "data"):
+        v = doc.get(k)
+        if isinstance(v, list):
+            return v
+    return []
+
+
 def supply():
     """Every lead and register row that carries a coordinate, as flat points.
 
@@ -186,7 +204,14 @@ def supply():
                 d = json.load(fh)
         except (OSError, ValueError):
             continue
-        rows = d.get("trees") if isinstance(d, dict) else d
+        # Every other script here reads a register through the same several
+        # keys, and this one read "trees" alone, which made the richest register
+        # we hold invisible: netherlands-lrmb.json keeps its 16,094 rows under
+        # "entries", so every Dutch park in this table reported no supply when
+        # what it meant was that nothing had been read. Found 2026-09-19 while
+        # answering which parks are missing, after telling Hidde twice that
+        # Dutch parks had nothing on hand.
+        rows = _rows(d)
         for row in rows or []:
             if not isinstance(row, dict):
                 continue
@@ -275,6 +300,130 @@ def registers_without_coordinates():
     return out
 
 
+_BINOMIAL = re.compile(r"\b([A-Z][a-z]{2,})\s+([a-z]{3,})\b")
+
+
+def _same_species(ours, theirs):
+    """Do two species strings name the same tree?
+
+    Compared on the latin binomial, because the common names are in different
+    languages: the register says "Boomhazelaar" where we say "Turkish Hazel
+    (Corylus colurna)". Returns None when neither side offers a binomial, which
+    is a different answer from no: unknown.
+    """
+    a = _BINOMIAL.search(ours or "")
+    b = _BINOMIAL.search(theirs or "")
+    if not a or not b:
+        return None
+    return (a.group(1).lower(), a.group(2).lower()) == (b.group(1).lower(), b.group(2).lower())
+
+
+def supply_rows():
+    """Supply as (kind, point, row), so a candidate can be PRINTED rather than
+    counted. The counting version stays, because the table only needs a number
+    and this one holds 30,000 dicts in memory."""
+    out = []
+    for path in glob.glob(os.path.join(ROOT, "data", "leads", "*.json")):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        for row in (d.get("leads") or []) if isinstance(d, dict) else []:
+            c = _coord(row)
+            if c:
+                out.append(("lead", c, row))
+    for path in glob.glob(os.path.join(ROOT, "data", "registers", "*.json")):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        name = os.path.basename(path)[:-5]
+        for row in _rows(d):
+            if not isinstance(row, dict):
+                continue
+            c = _coord(row)
+            if c:
+                r = dict(row)
+                r["_register"] = name
+                out.append(("register", c, r))
+    return out
+
+
+def one_tree_detail(places, needle):
+    """The candidates inside one park, nearest first, ready to verify.
+
+    The fifth tree of a four-tree park is the cheapest work this project has,
+    and it was still a lookup: find the group, find its centroid, then grep
+    30,000 register rows by hand. This prints what a verify pass needs and
+    nothing else.
+    """
+    groups = park_groups(places)
+    hits = [(k, g) for k, g in groups.items()
+            if needle.lower() in k[1].lower() and len(g["trees"]) < PARK_MIN_TREES]
+    if not hits:
+        print("No park group under %d trees matching %r." % (PARK_MIN_TREES, needle))
+        return 1
+    for (slug, name), g in hits:
+        print("%s, %s  %d mapped trees, %d short of a page" % (
+            name, slug, len(g["trees"]), PARK_MIN_TREES - len(g["trees"])))
+        print("  already mapped: %s\n" % ", ".join(
+            (t.get("name") or "?") for t in g["trees"]))
+        near = sorted(((geo.km(g["centroid"], pt), kind, row, pt)
+                       for kind, pt, row in _supply_points()
+                       if geo.km(g["centroid"], pt) <= 0.35), key=lambda r: r[0])
+        # A register row 30 m from a tree we already publish is that tree, and
+        # this list would otherwise read as a free fifth tree. Wertheimpark is
+        # the case: it sits against the Hortus Botanicus on the Plantage, so its
+        # nearest candidates are the Hortus's own Turkish hazel and ginkgos,
+        # already mapped and behind paid entry. Never match by name here either,
+        # for the reason CLAUDE.md gives: distance is the thing no spelling can
+        # fool.
+        published = [(t, la, lo) for place in places for t, la, lo in place["trees"]]
+        for d_km, kind, row, pt in near[:12]:
+            # Distance alone cannot settle this in a park where trees stand ten
+            # metres apart: the first version called a ginkgo "already ours"
+            # because our wingnut was eleven metres away. So the species decides,
+            # and where neither side names a binomial the answer is a caution
+            # rather than a verdict.
+            dup, caution = None, None
+            for t, la, lo in published:
+                if geo.km(pt, (la, lo)) > 0.03:
+                    continue
+                same = _same_species(t.get("species"),
+                                     row.get("species") or row.get("species_latin") or row.get("name"))
+                if same:
+                    dup = t
+                    break
+                if same is None and caution is None:
+                    caution = t
+            bits = [str(row.get(k)) for k in ("species", "species_latin", "planted_band",
+                                              "plant_year", "girth_cm", "trunk_girth")
+                    if row.get(k)]
+            flags = [k for k in ("visitable", "visible") if row.get(k)]
+            print("  %4.0f m  %-34s %-26s %s%s%s" % (
+                d_km * 1000,
+                str(row.get("name") or row.get("register_id") or "?")[:34],
+                ", ".join(bits)[:26],
+                row.get("_register", kind),
+                "  " + "/".join(flags) if flags else "",
+                ("  ALREADY OURS: %s" % (dup.get("name") or "?")) if dup else
+                ("  30 m from our %s, species unclear" % (caution.get("name") or "?")) if caution else ""))
+        fresh = 0
+        for _d, _k, r, pt in near:
+            hit = False
+            for t, la, lo in published:
+                if geo.km(pt, (la, lo)) <= 0.03 and _same_species(
+                        t.get("species"), r.get("species") or r.get("species_latin") or r.get("name")):
+                    hit = True
+                    break
+            fresh += 0 if hit else 1
+        print("\n  %d candidates within 350 m, %d of them not already a tree of ours. "
+              "Verify one, write it, and the page exists.\n" % (len(near), fresh))
+    return 0
+
+
 def one_tree_short(places, intros):
     """Park groups sitting at PARK_MIN_TREES - 1, with a candidate already on hand.
 
@@ -303,7 +452,7 @@ def one_tree_short(places, intros):
         else:
             has_intro = False
         near = 0
-        for kind, pt in _supply_points():
+        for kind, pt, _row in _supply_points():
             if geo.km(g["centroid"], pt) <= 0.35:
                 near += 1
         if near:
@@ -316,11 +465,10 @@ _SUPPLY_CACHE = None
 
 
 def _supply_points():
-    """Every register row and open lead as (kind, point), read once."""
+    """Every register row and open lead as (kind, point, row), read once."""
     global _SUPPLY_CACHE
     if _SUPPLY_CACHE is None:
-        leads, regs = supply()
-        _SUPPLY_CACHE = [("lead", c) for c in leads] + [("register", c) for c in regs]
+        _SUPPLY_CACHE = supply_rows()
     return _SUPPLY_CACHE
 
 
@@ -548,8 +696,8 @@ def main():
     ap.add_argument("--coords", action="store_true", help="refresh coordinates (network)")
     ap.add_argument("--check", action="store_true",
                     help="exit 1 when a park page is sitting free")
-    ap.add_argument("--onetree", action="store_true",
-                    help="parks one tree from a page, with the tree already on hand")
+    ap.add_argument("--onetree", nargs="?", const=True, metavar="PARK",
+                    help="parks one tree from a page; with a park name, its candidates")
     args = ap.parse_args()
 
     seed = load_seed()
@@ -569,6 +717,8 @@ def main():
                   skip_countries=out_of_focus_countries())
     rows.sort(key=lambda r: rank(r, views))
 
+    if args.onetree and args.onetree is not True:
+        return one_tree_detail(places, args.onetree)
     if args.onetree:
         rows = one_tree_short(places, written_parks())
         print("PARKS ONE TREE FROM A CONTRACT H PAGE, CANDIDATE ALREADY ON HAND\n")

@@ -1,5 +1,5 @@
 {
- "note": "The world's best-known parks, as a demand list to check our coverage against. Written 2026-09-18 on Hidde's ask: \"zou je een onderzoek kunnen doen naar de bekendste parken in de wereld waar het meest voor wordt gezocht op Google. En of we die al in onze database hebben.\" Read by scripts/park_demand.py, which crosses each one against our published trees BY DISTANCE (never by name, per CLAUDE.md) and says what we have. A park earns a Contract H page at five mapped trees plus a written intro. Widened 2026-09-19 with the ranking Hidde brought: the visitor top ten, the largest urban parks by area, and the Dutch and Belgian top, which is the half that matters most here, because a Dutch or Belgian park name is exactly the low-competition term our own Search Console shows us ranking 4th to 11th on.",
+ "note": "The world's best-known parks, as a demand list to check our coverage against. Written 2026-09-18 on Hidde's ask: \"zou je een onderzoek kunnen doen naar de bekendste parken in de wereld waar het meest voor wordt gezocht op Google. En of we die al in onze database hebben.\" Read by scripts/park_demand.py, which crosses each one against our published trees BY DISTANCE (never by name, per CLAUDE.md) and says what we have. A park earns a Contract H page at five mapped trees plus a written intro. Widened 2026-09-19 with the ranking Hidde brought: the visitor top ten, the largest urban parks by area, and the Dutch and Belgian top, which is the half that matters most here, because a Dutch or Belgian park name is exactly the low-competition term our own Search Console shows us ranking 4th to 11th on. The US visitor top ten followed on the same day. Two of its entries are on this list for completeness rather than as work: Mission Bay Park is water recreation and the San Antonio River Walk is a walkway, and a route along a river fails the collectible-point test the same way a kilometre of planes on La Rambla does.",
  "coordinates": "Centroids, and they are APPROXIMATE: written from knowledge, not fetched, because this session's network policy blocks every Wikimedia host. They are used only to ask which of our trees stand near a park, with a per-park radius, so a few hundred metres of error changes nothing. `python3 scripts/park_demand.py --coords` replaces them with Wikipedia's own coordinates on any machine that can reach the API, and prints what moved.",
  "evidence": "google maps ... = Google's own Year in Search ranking of the most searched parks on Google Maps, which is the closest thing to search volume anybody publishes for free. visitors/yr = press-reported footfall. hand-seeded = on the list because it is world-famous, with fame still to be measured by --views (Wikipedia pageviews, the same proxy demand.py uses for cities).",
  "out_of_focus": "Kirstenbosch, Gorky Park and HaYarkon Park sit in regions Hidde ruled out of focus on 2026-08-16, and Cubbon Park is in India. They stay listed so the world list is honest and the script skips them, exactly as scout_next.py does. The regions come from data/register-scouting.json, never from a second copy here.",
@@ -1424,6 +1424,56 @@
    "radius_km": 5.0,
    "wikipedia": "Sanjay Gandhi National Park",
    "evidence": "10,384 ha (from Hidde's own ranking, 2026-09-19)"
+  },
+  {
+   "name": "Mission Bay Park",
+   "city": "San Diego",
+   "country": "United States",
+   "lat": 32.78,
+   "lng": -117.22,
+   "radius_km": 2.5,
+   "wikipedia": "Mission Bay Park",
+   "evidence": "~17-18M visitors/yr (Hidde's US ranking, 2026-09-19). Water recreation rather than trees: on this list for completeness, not as a tree destination"
+  },
+  {
+   "name": "Forest Park",
+   "city": "St. Louis",
+   "country": "United States",
+   "lat": 38.636,
+   "lng": -90.285,
+   "radius_km": 2.0,
+   "wikipedia": "Forest Park (St. Louis)",
+   "evidence": "~10-15M visitors/yr (Hidde's US ranking, 2026-09-19), larger than Central Park"
+  },
+  {
+   "name": "San Antonio River Walk",
+   "city": "San Antonio",
+   "country": "United States",
+   "lat": 29.424,
+   "lng": -98.489,
+   "radius_km": 2.0,
+   "wikipedia": "San Antonio River Walk",
+   "evidence": "~11.5M visitors/yr (Hidde's US ranking, 2026-09-19). A walkway rather than a park, and an avenue is not a collectible point"
+  },
+  {
+   "name": "City Park",
+   "city": "New Orleans",
+   "country": "United States",
+   "lat": 29.993,
+   "lng": -90.096,
+   "radius_km": 2.0,
+   "wikipedia": "City Park (New Orleans)",
+   "evidence": "~12M visitors/yr (Hidde's US ranking, 2026-09-19), and the largest stand of mature live oaks anywhere"
+  },
+  {
+   "name": "Chain of Lakes",
+   "city": "Minneapolis",
+   "country": "United States",
+   "lat": 44.945,
+   "lng": -93.31,
+   "radius_km": 2.5,
+   "wikipedia": "Chain of Lakes (Minneapolis)",
+   "evidence": "~8M visitors/yr (Hidde's US ranking, 2026-09-19). Lakes and paths rather than a tree collection"
   }
  ]
 }
