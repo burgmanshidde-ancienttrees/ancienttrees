@@ -45,11 +45,11 @@ crosscheck, i18ncheck and conventioncheck clean, and /account/settings measures
 no overflow, no drift and no sub-16px field at 375. Looked at at 375 and on a
 desktop.
 
-**FOR HIDDE, and it is a database job rather than a code one:** none of this
-can work until the avatars bucket exists with the two policies in
-supabase/profiles.sql and the two in supabase/avatars-policy.sql. If the app
-has been saving pictures, they are already there and nothing is owed. If it has
-not, a save here will say "That did not save. The picture would not upload."
+Nothing is owed on the database side: this needs the avatars bucket and its
+four policies, and Hidde confirmed the same day that the app saves profile
+pictures, which is the one thing that can only be true if they are already
+there. The website writes the same path as the same account, so it meets the
+same policies.
 
 ## 2026-09-19 (night run, continuation 2) - A silently dead reader-photo pipeline fixed, three deepen passes dispatched, three stale branches cleared
 
