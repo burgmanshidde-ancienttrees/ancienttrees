@@ -248,6 +248,33 @@ def assess(seed, places, groups, intros, leads, regs, skip_countries):
     return rows
 
 
+def registers_without_coordinates():
+    """Registers on disk whose rows carry no coordinate, so SUP cannot see them.
+
+    Added 2026-09-19, because the column was reading as an absence when it meant
+    an inability. The Flanders inventory holds 2,336 individually listed heritage
+    trees with a municipality, a description carrying girth and height, and no
+    latitude anywhere, so every distance check in this project treats Belgium as
+    empty ground. Den Brandt Park in Antwerp is the case that exposed it: it is
+    the one park with measured demand and no page of ours, and "no supply" was
+    the wrong reading of what we hold.
+    """
+    out = []
+    for path in sorted(glob.glob(os.path.join(ROOT, "data", "registers", "*.json"))):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        rows = (d.get("trees") if isinstance(d, dict) else d) or []
+        if len(rows) < 50:
+            continue
+        placed = sum(1 for r in rows if isinstance(r, dict) and _coord(r))
+        if not placed:
+            out.append((os.path.basename(path)[:-5], len(rows)))
+    return out
+
+
 def one_tree_short(places, intros):
     """Park groups sitting at PARK_MIN_TREES - 1, with a candidate already on hand.
 
@@ -597,6 +624,12 @@ def main():
             len(rows), len(seed["parks"])))
     print("\nVIEWS = English Wikipedia pageviews, 3 months, demand not search volume. "
           "GRP = trees the site can group into a park page. SUP = leads and register rows.")
+    blind = registers_without_coordinates()
+    if blind:
+        print("SUP cannot see %s: %s. Rows on disk, no coordinate in them, so a zero "
+              "there means unplaceable rather than absent."
+              % ("one register" if len(blind) == 1 else "%d registers" % len(blind),
+                 ", ".join("%s (%d rows)" % (n, c) for n, c in blind)))
     if done:
         print("page = %d already written under Contract H." % done)
     return 0
