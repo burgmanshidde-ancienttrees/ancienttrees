@@ -16521,6 +16521,25 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-22T20:38:00+00:00",
+   "date": "2026-09-22",
+   "run_id": "35781503078",
+   "minutes": 0.2,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 1,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
