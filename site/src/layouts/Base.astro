@@ -247,25 +247,26 @@ const year = new Date().getFullYear();
       <a href={nav("/cities")}>{t.cities}</a>
       <a href="/countries">{t.countries}</a>
       <a href="/species">{t.species}</a>
+      <a href="/parks">{t.parks}</a>
       <a href="/collections">{t.collections}</a>
     </div>
+    {/* Seven links split into two columns of four and three rather than one
+        of seven, because the grid below wants four columns of one width and
+        because the product links and the credits answer different questions.
+        The heading used to read "Ancient Trees", which put the brand name
+        twice in one footer beside the wordmark. */}
     <div class="footer-col">
-      <h4>Ancient Trees</h4>
+      <h4>{t.theProject}</h4>
       <a href="/app" data-app-download data-ev="app-cta">{t.theApp}</a>
       <a href="/contribute">{t.suggestTree}</a>
       {SPONSOR_URL ? <a href="/sponsor">{t.sponsor}</a> : null}
       <a href="/support">{t.support}</a>
+    </div>
+    <div class="footer-col">
+      <h4>{t.theData}</h4>
+      <a href="/sources">{t.sources}</a>
       <a href="/privacy">{t.privacy}</a>
       <a href="/terms">{t.terms}</a>
-      <a href="/sources">{t.sources}</a>
-    </div>
-    {/* Last item in the footer, which is where both references put it:
-        komoot as a plain line at the very bottom, AllTrails as a select in
-        its own footer block. Autonyms, no flags, no redirect. It renders
-        itself away on a page type with no translated route, so nothing here
-        has to know which pages those are. */}
-    <div class="footer-col footer-lang">
-      <LanguagePicker current={lang} enPath={enPath} />
     </div>
   </div>
   {/* The map and routing credits live one level down, on /sources, which the
@@ -281,7 +282,19 @@ const year = new Date().getFullYear();
       Valhalla and FOSSGIS included, sits under "Maps and routes" on /sources.
       Photograph credits were never here either: each one is printed beside its
       own picture. */}
-  <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app.</span>
+  {/* The bottom bar: the copyright on the left, the languages hard against
+      the right edge. That is where both references put the language control
+      (AllTrails a select at x=1148 of a 1440 viewport, komoot a line at
+      x=1056, both measured 2026-09-23), and it is not a column: ours was
+      declared as the fourth one and is 489px wide, so it never fitted and
+      flex-wrapped onto a row of its own between the columns and the
+      copyright. Autonyms, no flags, no redirect. It renders itself away on a
+      page type with no translated route, so nothing here has to know which
+      pages those are. */}
+  <div class="footer-bar">
+    <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app.</span>
+    <LanguagePicker current={lang} enPath={enPath} />
+  </div>
   </div>
 </footer>
 )}

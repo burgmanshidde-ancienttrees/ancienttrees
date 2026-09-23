@@ -1,6 +1,6 @@
 {
  "place": "Bad Homburg",
- "note": "2026-09-23. Opened from a reader submission (row 116, the oak at the bridge). The park's big trees were catalogued by Rainer Lippert in 2021 and published on the baumkunde.de forum; four went live, the rest are here. Nothing below has a second source or an age, which is the only reason they are leads rather than trees.",
+ "note": "2026-09-23. Opened from a reader submission (row 116, the oak at the bridge). The park's big trees were catalogued by Rainer Lippert in 2021 and published on the baumkunde.de forum; four went live, the rest are here. Nothing below has a second source or an age, which is the only reason they are leads rather than trees. The 4.94m oak by the lake left this file on the same day and is live as bhg_005: the reader's 'about 5 metres' falls between the two park oaks, so both are published rather than one being guessed at.",
  "leads": [
   {
    "id": "bhg_l01",
@@ -17,23 +17,6 @@
    ],
    "location_precision": "approximate",
    "verify_notes": "The smaller of the pair planted in 1822, described by the city but never measured separately in any source we found. Published as part of bhg_001 rather than as its own entry, because the pair is one place to stand. Kept here in case a measurement turns up."
-  },
-  {
-   "id": "bhg_l02",
-   "name": "The oak by the lake",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "girth_cm": 494,
-   "location": {
-    "address": "Schlosspark, Bad Homburg, Hessen, Germany",
-    "latitude": 50.225917,
-    "longitude": 8.607167,
-    "neighbourhood": "Schlosspark, by the lake"
-   },
-   "verified_sources": [
-    "https://www.baumkunde.de/forum/viewtopic.php?t=24267"
-   ],
-   "location_precision": "confirmed",
-   "verify_notes": "4.94m girth, measured 12 August 2021. Second-thickest oak in the park after bhg_003. No age, no second source, no photograph."
   },
   {
    "id": "bhg_l03",
