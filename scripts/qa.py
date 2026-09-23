@@ -1125,6 +1125,48 @@ def check_no_collection_is_empty():
     return out
 
 
+def check_a_thumbnail_is_actually_a_thumbnail():
+    """A file named -500 that is 5431 pixels wide is not a thumbnail.
+
+    scripts/vendor_photos.py fetches Wikimedia's OWN rendering at each width,
+    which is right and is why it re-encodes nothing. For every other source
+    there is no such rendering, so it fell back to the ORIGINAL url and wrote
+    the master verbatim into the -500 file. Nothing looked wrong: the page
+    renders, the picture is correct, and the browser scales it down.
+
+    Measured 2026-09-24, after Hidde asked for a Danish register's photographs
+    to go live: 94 files, 93.6 MB between them, the largest 4.9 MB at 5431 px,
+    every one of them served to a phone as a card thumbnail. Cadiz, the
+    photograph calibration city, held six of them. After the fix, 8.2 MB.
+
+    This is the cheapest check on the list and it guards the thing no other
+    layer measures: not whether the page is right, but whether it is heavy.
+    """
+    import re as _re
+    out = []
+    try:
+        from PIL import Image
+    except ImportError:
+        return []
+    photos = os.path.join(ROOT, "site", "public", "photos")
+    for name in sorted(os.listdir(photos)) if os.path.isdir(photos) else []:
+        m = _re.search(r"-(\d+)\.jpg$", name)
+        if not m:
+            continue
+        want = int(m.group(1))
+        path = os.path.join(photos, name)
+        try:
+            with Image.open(path) as im:
+                w = im.width
+        except Exception:
+            continue
+        if w > want * 1.15:
+            out.append("%s is %d pixels wide in a -%d file (%.0f KB). "
+                       "vendor_photos.py downscales a master; re-run it or resize the file."
+                       % (name, w, want, os.path.getsize(path) / 1000.0))
+    return out
+
+
 def check_faces_travel_to_the_app():
     """The thirteenth ratchet check, from 2026-08-25.
 
@@ -2222,6 +2264,7 @@ def main():
     failures += check_tree_photo_dimensions(pages)
     failures += check_species_face_is_chosen()
     failures += check_faces_travel_to_the_app()
+    failures += check_a_thumbnail_is_actually_a_thumbnail()
     failures += check_every_feed_is_in_the_version()
     failures += check_park_key_is_one_function()
     failures += check_vendored_photos_are_served()

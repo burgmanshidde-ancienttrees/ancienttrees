@@ -98,6 +98,41 @@ def may_rehost(lic):
     return False, "licence not recognised: %s" % lic
 
 
+def fit(blob, width):
+    """Downscale when the source had no rendering of its own at this width.
+
+    The comment above is right about WIKIMEDIA: fetching its own 500px beats
+    re-compressing its 960, and that is why nothing is re-encoded there. It was
+    silently wrong about every other source, because the fallback is the
+    ORIGINAL url, so a photograph from a society register or a botanic garden
+    was written verbatim into a file named -500.
+
+    Measured 2026-09-24: 94 such files, 93.6 MB between them, one of them 5431
+    pixels wide and 4.9 MB, every one of them served to a phone as a card
+    thumbnail. Cadiz, the calibration city, held six.
+
+    A re-encode is worse than a source rendering and enormously better than
+    shipping the master, so it applies only where the master is what we got.
+    """
+    try:
+        from PIL import Image, ImageOps
+    except ImportError:
+        return blob
+    try:
+        im = Image.open(io.BytesIO(blob))
+        if im.width <= width * 1.15:
+            return blob
+        im = ImageOps.exif_transpose(im)
+        if im.mode != "RGB":
+            im = im.convert("RGB")
+        im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=82, optimize=True)
+        return buf.getvalue()
+    except Exception:
+        return blob
+
+
 def slugify(s):
     s = re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
     return s[:48]
@@ -236,6 +271,7 @@ def main():
             if not blob or len(blob) < 1000:
                 print("  %-9s FETCH FAILED w=%d %s" % (tid, w, str(src)[:60]), flush=True)
                 continue
+            blob = fit(blob, w)
             with open(out, "wb") as fh:
                 fh.write(blob)
             got += 1
