@@ -1995,6 +1995,14 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
 .lang-cur { color: var(--ink); font-weight: 600; }
 .lang-sep { color: var(--ink-light); }
 
+/* The picker as the last line of a sheet, on the three page types that have
+   no footer to put it in: the two city pages and the map. komoot's is a plain
+   line at the very bottom and this is ours (Hidde, 2026-09-19: the row of
+   seven language names had been sitting between a city's intro and its first
+   tree, which is the most valuable line on the page). */
+.panel-lang { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--cream-dark); }
+.panel-lang .lang-pick { margin: 0; }
+
 /* The share control, and the row it sits in.
    Both references (AllTrails, komoot) put share top-right of a hero photo. Our
    page types do not all have a hero, so the one placement that is the same
