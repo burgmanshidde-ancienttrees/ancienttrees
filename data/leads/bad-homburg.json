@@ -1,0 +1,107 @@
+{
+ "place": "Bad Homburg",
+ "note": "2026-09-23. Opened from a reader submission (row 116, the oak at the bridge). The park's big trees were catalogued by Rainer Lippert in 2021 and published on the baumkunde.de forum; four went live, the rest are here. Nothing below has a second source or an age, which is the only reason they are leads rather than trees.",
+ "leads": [
+  {
+   "id": "bhg_l01",
+   "name": "The second cedar at the Konigsflugel",
+   "species": "Cedar (Cedrus sp.; see bhg_001 for the species dispute)",
+   "location": {
+    "address": "In front of the Konigsflugel, Schlosspark, Bad Homburg, Hessen, Germany",
+    "latitude": 50.227533,
+    "longitude": 8.610833,
+    "neighbourhood": "Schlosspark"
+   },
+   "verified_sources": [
+    "https://www.bad-homburg.de/de/erleben/entdecken/schloss/zeder"
+   ],
+   "location_precision": "approximate",
+   "verify_notes": "The smaller of the pair planted in 1822, described by the city but never measured separately in any source we found. Published as part of bhg_001 rather than as its own entry, because the pair is one place to stand. Kept here in case a measurement turns up."
+  },
+  {
+   "id": "bhg_l02",
+   "name": "The oak by the lake",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "girth_cm": 494,
+   "location": {
+    "address": "Schlosspark, Bad Homburg, Hessen, Germany",
+    "latitude": 50.225917,
+    "longitude": 8.607167,
+    "neighbourhood": "Schlosspark, by the lake"
+   },
+   "verified_sources": [
+    "https://www.baumkunde.de/forum/viewtopic.php?t=24267"
+   ],
+   "location_precision": "confirmed",
+   "verify_notes": "4.94m girth, measured 12 August 2021. Second-thickest oak in the park after bhg_003. No age, no second source, no photograph."
+  },
+  {
+   "id": "bhg_l03",
+   "name": "The giant thuja",
+   "species": "Western Red Cedar (Thuja plicata)",
+   "girth_cm": 472,
+   "location": {
+    "address": "Schlosspark, Bad Homburg, Hessen, Germany",
+    "latitude": 50.2275,
+    "longitude": 8.6095,
+    "neighbourhood": "Schlosspark"
+   },
+   "verified_sources": [
+    "https://www.baumkunde.de/forum/viewtopic.php?t=24267"
+   ],
+   "location_precision": "approximate",
+   "verify_notes": "4.72m girth, measured 1 November 2021. No exact coordinate in the source, so the pin is the park. Species named as 'Riesen-Thuja' in the source."
+  },
+  {
+   "id": "bhg_l04",
+   "name": "The ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "girth_cm": 274,
+   "location": {
+    "address": "Schlosspark, Bad Homburg, Hessen, Germany",
+    "latitude": 50.226167,
+    "longitude": 8.609333,
+    "neighbourhood": "Schlosspark"
+   },
+   "verified_sources": [
+    "https://www.baumkunde.de/forum/viewtopic.php?t=24267"
+   ],
+   "location_precision": "confirmed",
+   "verify_notes": "2.74m girth. Below the bar on its own, but a ginkgo in a park of this date is usually a nineteenth-century planting and worth a second look if the park is ever deepened."
+  },
+  {
+   "id": "bhg_l05",
+   "name": "The black pine",
+   "species": "Black Pine (Pinus nigra)",
+   "girth_cm": 370,
+   "location": {
+    "address": "Schlosspark, Bad Homburg, Hessen, Germany",
+    "latitude": 50.2275,
+    "longitude": 8.6095,
+    "neighbourhood": "Schlosspark"
+   },
+   "verified_sources": [
+    "https://www.baumkunde.de/forum/viewtopic.php?t=24267"
+   ],
+   "location_precision": "approximate",
+   "verify_notes": "3.7m girth, measured 1 November 2021. No exact coordinate in the source."
+  },
+  {
+   "id": "bhg_l06",
+   "name": "The Eiche am Forellenteich",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "girth_cm": 430,
+   "location": {
+    "address": "Tannenwaldweg 11, Dornholzhausen, Bad Homburg, Hessen, Germany",
+    "latitude": 50.2405,
+    "longitude": 8.580111,
+    "neighbourhood": "Dornholzhausen"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Bad_Homburg_vor_der_H%C3%B6he"
+   ],
+   "location_precision": "confirmed",
+   "verify_notes": "Naturdenkmal no. 78, an old oak with a sprawling, bizarre crown at the eastern edge of the former bathing pond, 4.30m girth. NOT the tree published as bhg_003: this one is 2.5 km west of the Schlosspark in Dornholzhausen, and the two were briefly confused while researching the reader's submission. A real candidate for a second Bad Homburg walk, and it carries an official designation the Schlosspark trees do not."
+  }
+ ]
+}
