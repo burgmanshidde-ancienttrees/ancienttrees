@@ -10,6 +10,53 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-23 (evening) - The footer's columns are the browse block's columns
+
+Hidde, on a screenshot: "de footer is qua alignment en design heel raar
+opgebouwd." He was right on every page, and the numbers say how. At 1440 the
+browse block above the footer draws four columns of 231px at
+x=210/473/736/999; the footer drew three of 320, 64 and 114 at x=210/578/690,
+because it was a flex row with no widths and every column came out as wide as
+its longest word. Nothing lined up with anything above it and the last link
+stopped at 42 percent of the band, with 426px of empty page to its right. The
+fourth column existed only in the markup: the language picker was declared as
+one and is 489px wide, so it never fitted and wrapped onto a row of its own.
+
+Benchmarked rather than guessed, all three measured on the day and written into
+CONVENTIONS.md under "The site footer": AllTrails runs four equal 310px columns
+across its whole band, komoot four on a 307px rhythm, and both park the
+language control in a bottom bar hard right, opposite the copyright.
+iNaturalist does what we did, ragged and clustered left, and it is the one of
+the three that reads as old. Hidde was shown both shapes rendered with the real
+stylesheet and picked the four-column one.
+
+It uses the same 200px track minimum `.dir-cols` uses, so the two break at the
+same widths instead of only agreeing on a wide screen. Verified live at 1440,
+1100, 860 and 375: the footer's column edges are the browse block's column
+edges, at 860 both drop to three together, 375 is one column with no overflow,
+and /nl/cities carries it in Dutch.
+
+Two things came out of building it. The middle column was headed "Ancient
+Trees", hard-coded and untranslated, which printed the brand name twice in one
+footer beside the wordmark; it is two columns now, "The project" and "The
+data", in all eight languages, and Parks joined Explore because it was in the
+navigation and not below. And on a phone the copyright rendered CENTRED while
+every other line started at 16: the phone overrides were written into the big
+`max-width: 800px` block at line 600 while the base rule sits at line 1200, so
+the later rule won and two of the three phone declarations were doing nothing.
+Found by looking at a 375px screen, which is the one class of fault the fit
+check cannot see, because a centred line overflows nothing.
+
+FOR HIDDE, and it is not a request, just something to know: a second Claude
+session was working in this same checkout and committed my working tree into
+its own commits twice while I was still measuring, so the markup and the
+eight-language strings sit in 3c3bd2b9 ("Both Schlosspark oaks") and the
+benchmark in ad6fd837 ("The account check reads the table name"). Everything is
+live and correct; only the history lies about what is where. CLAUDE.md already
+recorded this class for the app side on 2026-08-23, so by the ratchet it wants
+a check, and that check would refuse commits in other sessions, which is his
+call rather than mine.
+
 ## 2026-09-23 (afternoon) - The site takes photographs now, and had not deployed since the 19th
 
 Two things came out of walking the first outside contributor's trail.
