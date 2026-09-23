@@ -1,18 +1,39 @@
 {
+ "aarhus": {
+  "population": null
+ },
  "adelaide": {
   "country_checked": "Australia",
   "population": 1225235,
   "qid": "Q5112"
+ },
+ "agra": {
+  "population": null
+ },
+ "aix-en-provence": {
+  "population": null
  },
  "albuquerque": {
   "country_checked": "United States",
   "population": 3785,
   "qid": "Q34804"
  },
+ "alexandria": {
+  "population": null
+ },
  "alicante": {
   "country_checked": "Spain",
   "population": 335050,
   "qid": "Q11959"
+ },
+ "alice-springs": {
+  "population": null
+ },
+ "alkmaar": {
+  "population": null
+ },
+ "allentown": {
+  "population": null
  },
  "amersfoort": {
   "country_checked": "Netherlands",
@@ -34,6 +55,21 @@
   "population": 5097,
   "qid": "Q485172"
  },
+ "annecy": {
+  "population": null
+ },
+ "antalya": {
+  "population": null
+ },
+ "antwerp": {
+  "population": null
+ },
+ "anuradhapura": {
+  "population": null
+ },
+ "apeldoorn": {
+  "population": null
+ },
  "arnhem": {
   "country_checked": "Netherlands",
   "population": 153864,
@@ -43,6 +79,12 @@
   "country_checked": "United States",
   "population": 89121,
   "qid": "Q648501"
+ },
+ "assen": {
+  "population": null
+ },
+ "assisi": {
+  "population": null
  },
  "athens": {
   "country_checked": "Greece",
@@ -54,15 +96,42 @@
   "population": 447841,
   "qid": "Q23556"
  },
+ "auckland": {
+  "population": null
+ },
  "austin": {
   "country_checked": "United States",
   "population": 912791,
   "qid": "Q16559"
  },
+ "aveiro": {
+  "population": null
+ },
+ "avignon": {
+  "population": null
+ },
+ "azores": {
+  "population": null
+ },
+ "baarn": {
+  "population": null
+ },
  "bali": {
   "country_checked": "Indonesia",
   "population": 4230051,
   "qid": "Q3125978"
+ },
+ "baltimore": {
+  "population": null
+ },
+ "bamberg": {
+  "population": null
+ },
+ "banff": {
+  "population": null
+ },
+ "bangkok": {
+  "population": null
  },
  "barcelona": {
   "country_checked": "Spain",
@@ -74,10 +143,27 @@
   "population": 326344,
   "qid": "Q3519"
  },
+ "basel": {
+  "population": null
+ },
  "bath": {
   "country_checked": "United Kingdom",
   "population": 88180,
   "qid": "Q22889"
+ },
+ "beijing": {
+  "country_checked": "People's Republic of China",
+  "population": 19612368,
+  "qid": "Q956"
+ },
+ "belfast": {
+  "population": null
+ },
+ "belgrade": {
+  "population": null
+ },
+ "bergamo": {
+  "population": null
  },
  "bergen": {
   "country_checked": "Norway",
@@ -87,15 +173,38 @@
  "berlin": {
   "population": null
  },
+ "bern": {
+  "population": null
+ },
+ "big-island": {
+  "population": null
+ },
+ "bilbao": {
+  "population": null
+ },
  "birmingham": {
   "country_checked": "United States",
   "population": 212237,
   "qid": "Q79867"
  },
+ "bled": {
+  "population": null
+ },
+ "bodrum": {
+  "population": null
+ },
+ "bogota": {
+  "country_checked": "Colombia",
+  "population": 7200000,
+  "qid": "Q2841"
+ },
  "boise": {
   "country_checked": "United States",
   "population": 205671,
   "qid": "Q35775"
+ },
+ "bologna": {
+  "population": null
  },
  "bordeaux": {
   "country_checked": "France",
@@ -107,20 +216,64 @@
   "population": 10567,
   "qid": "Q100"
  },
+ "boulder": {
+  "population": null
+ },
+ "bowling-green": {
+  "population": null
+ },
+ "braga": {
+  "population": null
+ },
+ "bratislava": {
+  "population": null
+ },
+ "breda": {
+  "population": null
+ },
+ "brighton": {
+  "population": null
+ },
  "brisbane": {
   "country_checked": "Australia",
   "population": 2706966,
   "qid": "Q34932"
+ },
+ "bristol": {
+  "country_checked": "United Kingdom",
+  "population": 535907,
+  "qid": "Q23154"
+ },
+ "brno": {
+  "population": null
+ },
+ "bruges": {
+  "population": null
  },
  "brussels": {
   "country_checked": "Belgium",
   "population": 176545,
   "qid": "Q239"
  },
+ "bucaco": {
+  "population": null
+ },
+ "bucharest": {
+  "population": null
+ },
  "budapest": {
   "country_checked": "Hungary",
   "population": 1744665,
   "qid": "Q1781"
+ },
+ "buenos-aires": {
+  "population": null
+ },
+ "buffalo": {
+  "population": null
+ },
+ "busan": {
+  "population": null
  },
  "cadiz": {
   "country_checked": "Spain",
@@ -132,20 +285,55 @@
   "population": 154411,
   "qid": "Q1897"
  },
+ "cairo": {
+  "population": null
+ },
  "cambridge": {
   "country_checked": "United Kingdom",
   "population": 123867,
   "qid": "Q350"
+ },
+ "canberra": {
+  "population": null
+ },
+ "canterbury": {
+  "population": null
+ },
+ "cape-town": {
+  "population": null
+ },
+ "capri": {
+  "population": null
+ },
+ "cardiff": {
+  "population": null
+ },
+ "cartagena": {
+  "population": null
+ },
+ "caserta": {
+  "country_checked": "Italy",
+  "population": 76257,
+  "qid": "Q1906"
  },
  "catania": {
   "country_checked": "Italy",
   "population": 311584,
   "qid": "Q1903"
  },
+ "cesky-krumlov": {
+  "population": null
+ },
+ "chania": {
+  "population": null
+ },
  "charleston": {
   "country_checked": "United States",
   "population": 120083,
   "qid": "Q47716"
+ },
+ "charlotte": {
+  "population": null
  },
  "chattanooga": {
   "country_checked": "United States",
@@ -162,6 +350,9 @@
   "population": 350,
   "qid": "Q1297"
  },
+ "christchurch": {
+  "population": null
+ },
  "cincinnati": {
   "country_checked": "United States",
   "population": 331285,
@@ -177,20 +368,44 @@
   "population": 140816,
   "qid": "Q45412"
  },
+ "colmar": {
+  "population": null
+ },
+ "cologne": {
+  "population": null
+ },
+ "colombo": {
+  "population": null
+ },
+ "como": {
+  "population": null
+ },
  "copenhagen": {
   "country_checked": "Denmark",
   "population": 602481,
   "qid": "Q1748"
+ },
+ "cordoba": {
+  "population": null
+ },
+ "corfu": {
+  "population": null
  },
  "cork": {
   "country_checked": "Ireland",
   "population": 198582,
   "qid": "Q36647"
  },
+ "corsica": {
+  "population": null
+ },
  "crete": {
   "country_checked": "Greece",
   "population": 623065,
   "qid": "Q34374"
+ },
+ "cusco": {
+  "population": null
  },
  "cyprus": {
   "country_checked": "Cyprus",
@@ -207,6 +422,18 @@
   "population": 61005,
   "qid": "Q490595"
  },
+ "delft": {
+  "population": null
+ },
+ "delhi": {
+  "population": null
+ },
+ "den-bosch": {
+  "population": null
+ },
+ "denpasar": {
+  "population": null
+ },
  "denver": {
   "country_checked": "United States",
   "population": 603421,
@@ -222,10 +449,19 @@
   "population": 680250,
   "qid": "Q12439"
  },
+ "deventer": {
+  "population": null
+ },
+ "dijon": {
+  "population": null
+ },
  "dordrecht": {
   "country_checked": "Netherlands",
   "population": 118730,
   "qid": "Q26421"
+ },
+ "dresden": {
+  "population": null
  },
  "dubai": {
   "country_checked": "United Arab Emirates",
@@ -241,6 +477,9 @@
   "country_checked": "Croatia",
   "population": 42615,
   "qid": "Q1722"
+ },
+ "ede": {
+  "population": null
  },
  "edinburgh": {
   "country_checked": "United Kingdom",
@@ -262,35 +501,96 @@
   "population": 682669,
   "qid": "Q16562"
  },
+ "emmen": {
+  "population": null
+ },
  "enschede": {
   "country_checked": "Netherlands",
   "population": 158629,
   "qid": "Q10002"
+ },
+ "evora": {
+  "population": null
+ },
+ "faro": {
+  "population": null
+ },
+ "ferrara": {
+  "population": null
+ },
+ "fes": {
+  "population": null
  },
  "florence": {
   "country_checked": "Kingdom of Italy",
   "population": 377207,
   "qid": "Q2044"
  },
+ "fort-lauderdale": {
+  "population": null
+ },
+ "fort-worth": {
+  "population": null
+ },
+ "frankfurt": {
+  "population": null
+ },
+ "freiburg": {
+  "population": null
+ },
  "fukuoka": {
   "country_checked": "Japan",
   "population": 1603043,
   "qid": "Q26600"
+ },
+ "funchal": {
+  "country_checked": "Portugal",
+  "population": 105782,
+  "qid": "Q25444"
+ },
+ "galway": {
+  "population": null
+ },
+ "gdansk": {
+  "population": null
  },
  "geneva": {
   "country_checked": "Switzerland",
   "population": 157322,
   "qid": "Q71"
  },
+ "genoa": {
+  "population": null
+ },
+ "george-town": {
+  "population": null
+ },
+ "ghent": {
+  "population": null
+ },
+ "girona": {
+  "country_checked": "Spain",
+  "population": 98255,
+  "qid": "Q7038"
+ },
  "glasgow": {
   "country_checked": "United Kingdom",
   "population": 598830,
   "qid": "Q4093"
  },
+ "gothenburg": {
+  "population": null
+ },
+ "gran-canaria": {
+  "population": null
+ },
  "granada": {
   "country_checked": "Spain",
   "population": 237818,
   "qid": "Q8810"
+ },
+ "graz": {
+  "population": null
  },
  "groningen": {
   "country_checked": "Netherlands",
@@ -312,10 +612,31 @@
   "population": 157232,
   "qid": "Q9920"
  },
+ "haarlemmermeer": {
+  "population": null
+ },
+ "halifax": {
+  "population": null
+ },
+ "hallstatt": {
+  "population": null
+ },
+ "hamburg": {
+  "population": null
+ },
+ "hanoi": {
+  "population": null
+ },
  "hawaii": {
   "country_checked": "United States",
   "population": 1404054,
   "qid": "Q782"
+ },
+ "heerlen": {
+  "population": null
+ },
+ "heidelberg": {
+  "population": null
  },
  "helmond": {
   "country_checked": "Netherlands",
@@ -327,10 +648,31 @@
   "population": 23000,
   "qid": "Q1757"
  },
+ "heraklion": {
+  "population": null
+ },
+ "hilo": {
+  "population": null
+ },
+ "hilversum": {
+  "population": null
+ },
+ "hiroshima": {
+  "population": null
+ },
+ "ho-chi-minh-city": {
+  "population": null
+ },
  "hobart": {
   "country_checked": "Australia",
   "population": 222356,
   "qid": "Q40191"
+ },
+ "hoi-an": {
+  "population": null
+ },
+ "hong-kong": {
+  "population": null
  },
  "hoorn": {
   "country_checked": "Netherlands",
@@ -352,15 +694,39 @@
   "population": 50401,
   "qid": "Q473914"
  },
+ "indianapolis": {
+  "population": null
+ },
+ "innsbruck": {
+  "population": null
+ },
+ "interlaken": {
+  "population": null
+ },
+ "inverness": {
+  "population": null
+ },
+ "ischia": {
+  "population": null
+ },
  "istanbul": {
   "country_checked": "Turkey",
   "population": 15655924,
   "qid": "Q406"
  },
+ "izmir": {
+  "population": null
+ },
  "jacksonville": {
   "country_checked": "United States",
   "population": 903000,
   "qid": "Q16568"
+ },
+ "jaipur": {
+  "population": null
+ },
+ "jakarta": {
+  "population": null
  },
  "jersey-city": {
   "country_checked": "United States",
@@ -370,25 +736,67 @@
  "jerusalem": {
   "population": null
  },
+ "kamakura": {
+  "population": null
+ },
  "kanazawa": {
   "country_checked": "Japan",
   "population": 462479,
   "qid": "Q191130"
+ },
+ "kandy": {
+  "population": null
+ },
+ "kansas-city": {
+  "population": null
+ },
+ "kathmandu": {
+  "population": null
+ },
+ "kauai": {
+  "population": null
  },
  "key-west": {
   "country_checked": "United States",
   "population": 22682,
   "qid": "Q485186"
  },
+ "kilkenny": {
+  "population": null
+ },
+ "killarney": {
+  "population": null
+ },
+ "kobe": {
+  "population": null
+ },
+ "kotor": {
+  "population": null
+ },
  "krakow": {
   "country_checked": "Poland",
   "population": 761900,
   "qid": "Q31487"
  },
+ "kuala-lumpur": {
+  "population": null
+ },
  "kyoto": {
   "country_checked": "Japan",
   "population": 1448964,
   "qid": "Q34600"
+ },
+ "la-gomera": {
+  "population": null
+ },
+ "la-palma": {
+  "population": null
+ },
+ "lagos": {
+  "population": null
+ },
+ "lancaster": {
+  "population": null
  },
  "lansing": {
   "country_checked": "United States",
@@ -399,6 +807,9 @@
   "country_checked": "United States",
   "population": 648224,
   "qid": "Q23768"
+ },
+ "lausanne": {
+  "population": null
  },
  "leeuwarden": {
   "country_checked": "Netherlands",
@@ -425,6 +836,15 @@
   "population": 108000,
   "qid": "Q49241"
  },
+ "lille": {
+  "population": null
+ },
+ "lima": {
+  "population": null
+ },
+ "limerick": {
+  "population": null
+ },
  "lisbon": {
   "country_checked": "Portugal",
   "population": 547733,
@@ -434,6 +854,12 @@
   "country_checked": "United States",
   "population": 193524,
   "qid": "Q33405"
+ },
+ "liverpool": {
+  "population": null
+ },
+ "ljubljana": {
+  "population": null
  },
  "london": {
   "population": null
@@ -452,6 +878,23 @@
   "country_checked": "Laos",
   "population": 53792,
   "qid": "Q190165"
+ },
+ "lucca": {
+  "population": null
+ },
+ "lucerne": {
+  "population": null
+ },
+ "lund": {
+  "population": null
+ },
+ "luxembourg-city": {
+  "population": null
+ },
+ "lyon": {
+  "country_checked": "France",
+  "population": 500716,
+  "qid": "Q456"
  },
  "maastricht": {
   "country_checked": "Netherlands",
@@ -473,20 +916,59 @@
   "population": 567433,
   "qid": "Q8851"
  },
+ "malmo": {
+  "population": null
+ },
+ "malta": {
+  "population": null
+ },
+ "manchester": {
+  "population": null
+ },
+ "manila": {
+  "population": null
+ },
+ "marrakech": {
+  "population": null
+ },
+ "marseille": {
+  "population": null
+ },
+ "matera": {
+  "population": null
+ },
+ "maui": {
+  "population": null
+ },
+ "mechelen": {
+  "population": null
+ },
  "melbourne": {
   "country_checked": "Australia",
   "population": 4347955,
   "qid": "Q3141"
+ },
+ "memphis": {
+  "population": null
  },
  "menorca": {
   "country_checked": "Spain",
   "population": 94383,
   "qid": "Q52636"
  },
+ "merida": {
+  "population": null
+ },
+ "mexico-city": {
+  "population": null
+ },
  "miami": {
   "country_checked": "United States",
   "population": 1681,
   "qid": "Q8652"
+ },
+ "middletown": {
+  "population": null
  },
  "milan": {
   "country_checked": "Italy",
@@ -498,25 +980,55 @@
   "population": 600155,
   "qid": "Q37836"
  },
+ "minneapolis": {
+  "population": null
+ },
+ "modena": {
+  "population": null
+ },
  "monterey": {
   "country_checked": "United States",
   "population": 961,
   "qid": "Q2887479"
+ },
+ "montpellier": {
+  "population": null
  },
  "montreal": {
   "country_checked": "Canada",
   "population": 1649519,
   "qid": "Q340"
  },
+ "mostar": {
+  "population": null
+ },
+ "mumbai": {
+  "population": null
+ },
  "munich": {
   "country_checked": "Germany",
   "population": 1185421,
   "qid": "Q1726"
  },
+ "nafplio": {
+  "population": null
+ },
+ "nagoya": {
+  "population": null
+ },
+ "naha": {
+  "population": null
+ },
+ "nantes": {
+  "population": null
+ },
  "naples": {
   "country_checked": "Italy",
   "population": 975260,
   "qid": "Q2634"
+ },
+ "nara": {
+  "population": null
  },
  "nashville": {
   "country_checked": "United States",
@@ -533,6 +1045,12 @@
   "population": 19378102,
   "qid": "Q1384"
  },
+ "newark": {
+  "population": null
+ },
+ "niagara-falls": {
+  "population": null
+ },
  "nice": {
   "country_checked": "France",
   "population": 342295,
@@ -542,6 +1060,12 @@
   "country_checked": "Netherlands",
   "population": 172063,
   "qid": "Q47887"
+ },
+ "nikko": {
+  "population": null
+ },
+ "nuremberg": {
+  "population": null
  },
  "oahu": {
   "country_checked": "United States",
@@ -553,15 +1077,36 @@
   "population": 1543,
   "qid": "Q17042"
  },
+ "oaxaca": {
+  "population": null
+ },
+ "obidos": {
+  "population": null
+ },
+ "orlando": {
+  "population": null
+ },
  "osaka": {
   "country_checked": "Japan",
   "population": 2751862,
   "qid": "Q35765"
  },
+ "oslo": {
+  "population": null
+ },
+ "oss": {
+  "population": null
+ },
  "ottawa": {
   "country_checked": "Canada",
   "population": 934243,
   "qid": "Q1930"
+ },
+ "oxford": {
+  "population": null
+ },
+ "padua": {
+  "population": null
  },
  "palermo": {
   "country_checked": "Italy",
@@ -588,10 +1133,28 @@
   "population": 194152,
   "qid": "Q2683"
  },
+ "perth": {
+  "population": null
+ },
+ "perugia": {
+  "population": null
+ },
  "philadelphia": {
   "country_checked": "United States",
   "population": 1560297,
   "qid": "Q1345"
+ },
+ "phoenix": {
+  "population": null
+ },
+ "phuket": {
+  "population": null
+ },
+ "pine-city": {
+  "population": null
+ },
+ "pisa": {
+  "population": null
  },
  "pittsburgh": {
   "country_checked": "United States",
@@ -613,20 +1176,35 @@
   "population": 159456,
   "qid": "Q1711"
  },
+ "poznan": {
+  "population": null
+ },
  "prague": {
   "country_checked": "Czech Republic",
   "population": 29499,
   "qid": "Q973974"
+ },
+ "providence": {
+  "population": null
  },
  "quebec-city": {
   "country_checked": "Canada",
   "population": 516622,
   "qid": "Q2145"
  },
+ "queenstown": {
+  "population": null
+ },
  "raleigh": {
   "country_checked": "United States",
   "population": 439896,
   "qid": "Q41087"
+ },
+ "ravenna": {
+  "population": null
+ },
+ "regensburg": {
+  "population": null
  },
  "reno": {
   "country_checked": "United States",
@@ -638,10 +1216,40 @@
   "population": 6667,
   "qid": "Q1764"
  },
+ "rhodes": {
+  "population": null
+ },
+ "riga": {
+  "population": null
+ },
+ "rio-de-janeiro": {
+  "population": null
+ },
+ "rochester": {
+  "population": null
+ },
  "rome": {
   "country_checked": "Italy",
   "population": 35000,
   "qid": "Q220"
+ },
+ "ronda": {
+  "population": null
+ },
+ "roosendaal": {
+  "population": null
+ },
+ "rothenburg-ob-der-tauber": {
+  "population": null
+ },
+ "rotterdam": {
+  "population": null
+ },
+ "rouen": {
+  "population": null
+ },
+ "rovaniemi": {
+  "population": null
  },
  "sacramento": {
   "country_checked": "United States",
@@ -653,10 +1261,22 @@
   "population": 253693,
   "qid": "Q49236"
  },
+ "salamanca": {
+  "population": null
+ },
  "salt-lake-city": {
   "country_checked": "United States",
   "population": 186440,
   "qid": "Q23337"
+ },
+ "salzburg": {
+  "population": null
+ },
+ "san-antonio": {
+  "population": null
+ },
+ "san-diego": {
+  "population": null
  },
  "san-francisco": {
   "country_checked": "United States",
@@ -668,7 +1288,22 @@
   "population": 1000536,
   "qid": "Q16553"
  },
+ "san-juan": {
+  "population": null
+ },
+ "san-sebastian": {
+  "population": null
+ },
+ "santa-barbara": {
+  "population": null
+ },
  "santa-cruz": {
+  "population": null
+ },
+ "santa-fe": {
+  "population": null
+ },
+ "santiago": {
   "population": null
  },
  "santiago-de-compostela": {
@@ -686,6 +1321,14 @@
   "population": 11895893,
   "qid": "Q174"
  },
+ "sapporo": {
+  "country_checked": "Japan",
+  "population": 1959313,
+  "qid": "Q37951"
+ },
+ "sarajevo": {
+  "population": null
+ },
  "saratoga-springs": {
   "country_checked": "United States",
   "population": 26586,
@@ -700,6 +1343,9 @@
   "country_checked": "United States",
   "population": 142772,
   "qid": "Q83813"
+ },
+ "scottsdale": {
+  "population": null
  },
  "seattle": {
   "country_checked": "United States",
@@ -716,10 +1362,21 @@
   "population": 9668465,
   "qid": "Q8684"
  },
+ "setubal": {
+  "population": null
+ },
  "seville": {
   "country_checked": "Spain",
   "population": 700169,
   "qid": "Q8717"
+ },
+ "shanghai": {
+  "country_checked": "People's Republic of China",
+  "population": 23390000,
+  "qid": "Q8686"
+ },
+ "siem-reap": {
+  "population": null
  },
  "siena": {
   "country_checked": "Italy",
@@ -736,10 +1393,19 @@
   "population": 385606,
   "qid": "Q190187"
  },
+ "sittard-geleen": {
+  "population": null
+ },
+ "sofia": {
+  "population": null
+ },
  "sorrento": {
   "country_checked": "Italy",
   "population": 16405,
   "qid": "Q72672"
+ },
+ "split": {
+  "population": null
  },
  "spokane": {
   "country_checked": "United States",
@@ -751,6 +1417,9 @@
   "population": 1600,
   "qid": "Q38022"
  },
+ "stirling": {
+  "population": null
+ },
  "stockholm": {
   "country_checked": null,
   "population": 975819,
@@ -761,10 +1430,28 @@
   "population": 284677,
   "qid": "Q6602"
  },
+ "stratford-upon-avon": {
+  "population": null
+ },
+ "stuttgart": {
+  "population": null
+ },
  "sydney": {
   "country_checked": "Australia",
   "population": 98538,
   "qid": "Q5356001"
+ },
+ "syracuse": {
+  "population": null
+ },
+ "tacoma": {
+  "population": null
+ },
+ "taipei": {
+  "population": null
+ },
+ "takayama": {
+  "population": null
  },
  "tallinn": {
   "country_checked": "Estonia",
@@ -781,6 +1468,18 @@
   "population": 220701,
   "qid": "Q40840"
  },
+ "taormina": {
+  "population": null
+ },
+ "tarragona": {
+  "population": null
+ },
+ "tasmania": {
+  "population": null
+ },
+ "tel-aviv": {
+  "population": null
+ },
  "tenerife": {
   "country_checked": "Spain",
   "population": 931646,
@@ -790,6 +1489,9 @@
   "country_checked": "Netherlands",
   "population": 515880,
   "qid": "Q36600"
+ },
+ "thessaloniki": {
+  "population": null
  },
  "tilburg": {
   "country_checked": "Netherlands",
@@ -801,10 +1503,37 @@
   "population": 9272565,
   "qid": "Q7473516"
  },
+ "toledo": {
+  "population": null
+ },
  "toronto": {
   "country_checked": "Canada",
   "population": 44821,
   "qid": "Q172"
+ },
+ "toulouse": {
+  "population": null
+ },
+ "trento": {
+  "population": null
+ },
+ "trier": {
+  "population": null
+ },
+ "trieste": {
+  "population": null
+ },
+ "tulsa": {
+  "population": null
+ },
+ "turin": {
+  "population": null
+ },
+ "turku": {
+  "population": null
+ },
+ "ubud": {
+  "population": null
  },
  "utrecht": {
   "country_checked": "Netherlands",
@@ -816,10 +1545,27 @@
   "population": 792303,
   "qid": "Q8818"
  },
+ "valletta": {
+  "population": null
+ },
+ "vancouver": {
+  "population": null
+ },
  "venice": {
   "country_checked": "Italy",
   "population": 264579,
   "qid": "Q641"
+ },
+ "venlo": {
+  "population": null
+ },
+ "verona": {
+  "country_checked": "Italy",
+  "population": 86443,
+  "qid": "Q2028"
+ },
+ "versailles": {
+  "population": null
  },
  "vienna": {
   "country_checked": null,
@@ -841,29 +1587,59 @@
   "population": 8144,
   "qid": "Q61"
  },
+ "wellington": {
+  "population": null
+ },
  "west-palm-beach": {
   "country_checked": "United States",
   "population": 99919,
   "qid": "Q163749"
+ },
+ "wilmington": {
+  "population": null
+ },
+ "windsor": {
+  "population": null
  },
  "winnipeg": {
   "country_checked": "Canada",
   "population": 663617,
   "qid": "Q2135"
  },
+ "wroclaw": {
+  "population": null
+ },
  "yakushima": {
   "country_checked": "Japan",
   "population": 13178,
   "qid": "Q242176"
+ },
+ "yogyakarta": {
+  "population": null
+ },
+ "york": {
+  "population": null
+ },
+ "zaanstad": {
+  "population": null
+ },
+ "zadar": {
+  "population": null
  },
  "zagreb": {
   "country_checked": "Croatia",
   "population": 790017,
   "qid": "Q1435"
  },
+ "zaragoza": {
+  "population": null
+ },
  "zurich": {
   "country_checked": "Switzerland",
   "population": 5675,
   "qid": "Q72"
+ },
+ "zwolle": {
+  "population": null
  }
 }
