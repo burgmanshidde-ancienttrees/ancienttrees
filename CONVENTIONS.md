@@ -1400,12 +1400,28 @@ now checked.
 **Both emit `hreflang` for every locale of the page**, including
 `x-default`, which we also already do.
 
-**What we do that they do not, and it is defensible.** Our language link is
-inline on the page itself ("Esta página también está disponible"), written in
-the target language, rather than a site-wide control in the footer. That serves
-a reader who landed on the English page from Google and would prefer their own,
-which is our actual traffic pattern. The two are not exclusive and the footer
-control is the one we lack.
+**What we did that they do not, and it was NOT defensible. Corrected
+2026-09-19.** This paragraph used to argue for an inline language link on the
+page itself, on the ground that a reader who landed on the English page from
+Google would prefer their own. The reasoning was fine and the PLACEMENT was
+not: on a city page it sat directly under the intro, above the first tree, so
+seven language names in six alphabets took the line between the lede and the
+first photograph. Hidde, seeing it on /rome: "I don't think it makes sense to
+give the translations this prime spot, that's not conventional."
+
+He is right, and this entry had already said so two paragraphs up: neither
+reference puts it above the content, in the header, or anywhere but last. The
+inline argument survives only in the sense that the control must EXIST on the
+page, which `hreflang` alone does not give a human.
+
+**So: last item in the footer everywhere, and on a page with no footer, last
+item in the sheet.** Three page types set `footer={false}` because the split
+map layout has no room for one (`/[city]`, the translated city page, and
+`/explore`), and on those the bottom of the sheet IS the footer. That is the
+`.panel-lang` block. The old exception ("the map has no footer, so it sits
+inline here, the same exception the city pages already make") is deleted rather
+than narrowed: an exception that reproduced itself across three page types was
+a default wearing an exception's clothes.
 
 **The gap this lookup was done for.** A translated page of ours sits inside an
 English frame: on `/es/seville` the navigation still reads Map, Cities,
@@ -2421,3 +2437,41 @@ whatever a page asks it gets the right answer on the first ask; a pending act
 carried across the round trip and replayed once the account's lists have
 landed; `Nudge.finish` doing the same job in the app; and sign-out swapping the
 page in place.
+
+## The site footer
+
+Read 2026-09-23, after Hidde, on a screenshot: "de footer is qua alignment en
+design heel raar opgebouwd." Measured rather than remembered, all three at a
+1440 viewport on the day.
+
+| | column grid | language control |
+|---|---|---|
+| AllTrails | four equal columns, 310px each, x=100/410/720/1030 | bottom bar, hard right, x=1148 |
+| komoot | four equal columns, x=120/427/734/1041, a 307px rhythm | bottom bar, hard right, x=1056 |
+| iNaturalist | ragged, content-width: x=150/287/443/579, right half empty | none |
+
+Two things both references agree on, and they are the two ours got wrong.
+
+**Columns get one width and fill the band.** Neither lets a column shrink to
+its longest word. Ours was `display:flex` with no widths, so the three columns
+came out 320, 64 and 114 wide, nothing lined up with the browse block directly
+above it (four columns of 231 at x=210/473/736/999), and the last link stopped
+at 42 percent of the band with 426px of empty page to its right. iNaturalist
+does exactly this and is the one of the three that reads as old.
+
+**The language control is not a column.** Both park it in the bottom bar,
+right, opposite the copyright. Ours was declared as the fourth column and is
+489px wide, so it never fitted: it flex-wrapped onto a row of its own between
+the columns and the copyright, and the four-column layout the markup describes
+was never once drawn on a screen.
+
+The fix is `repeat(auto-fit, minmax(200px, 1fr))`, which is the same track
+minimum `.dir-cols` uses, so the footer and the browse block break at the same
+widths instead of only agreeing on a wide screen. Verified at 1440, 1100, 860
+and 375: at every one of them the footer's column edges are the browse block's
+column edges, and at 860 both drop to three columns together.
+
+A fifth heading came out of it: the middle column was headed "Ancient Trees",
+hard-coded and untranslated, which printed the brand name twice in one footer
+beside the wordmark. It is two columns now, "The project" and "The data", both
+in all eight languages.

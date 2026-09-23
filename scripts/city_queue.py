@@ -234,34 +234,66 @@ def near(pts, lat, lng, km=5.0):
     return sum(1 for a, b in pts if abs(a - lat) < dlat and abs(b - lng) < dlng)
 
 
-def target_for(demand, measured, impressions=0, travel=0):
-    """How far a city goes. Three numbers, and 50 is not one of them.
+_POP = None
 
-    Hidde, 2026-08-19, correcting the version written an hour earlier: "we
-    willen helemaal geen 50 bomen in bath mss max 20. kunnen we vanaf nu gewoon
-    voor 30 grote bomen streven bij grote stad en bevestigd."
 
-        not confirmed by Search Console       10
-        confirmed, ordinary city              20
-        confirmed, big city                   30
+def _population(slug):
+    """Inhabitants per place, cached by scripts/city_size.py from Wikidata."""
+    global _POP
+    if _POP is None:
+        try:
+            with open(os.path.join(ROOT, "data", "city-population.json"), encoding="utf-8") as fh:
+                _POP = json.load(fh)
+        except (OSError, ValueError):
+            _POP = {}
+    return (_POP.get(slug) or {}).get("population")
 
-    **The 50 tier is gone entirely**, not narrowed. It survived about an hour
-    and he was right to kill it: thirty remarkable trees is already a lot of
-    city, and a page that needs fifty is a page padded past the point where
-    every entry deserves its spot. Exclusivity is the product (CLAUDE.md), so a
-    higher ceiling buys nothing and risks the one thing that makes collecting
-    work.
 
-    The 20/30 split is city size, and size is travel demand, the term the queue
-    already ranks by. Bath is the worked example he named: it ranks well, which
-    is why the impressions-only version handed it 50, but it is a small city and
-    tops out at 20. Rome and Amsterdam carry 30.
+def target_for(demand, measured, impressions=0, travel=0, slug=None):
+    """How far a city goes. Size sets the ceiling, and nothing else does.
 
-    Unchanged and load-bearing: an unconfirmed city stops at 10, the floor is
-    four verified trees or no page, and the 80/20 rule ends any city the moment
-    its next tree gets hard to find. A target is a ceiling and a stopping point,
-    never a quota. Cadiz at 5 is finished work.
+    Hidde, 2026-09-23: "kijk naar hoe groot een stad is en stel daar het
+    plafond op, ik denk dat het zo simpel is." It is, and the reason it was not
+    already this is that we did not hold the number. The version before this
+    one keyed on `travel`, a tourism proxy that reads 1,928 for Tokyo and
+    20,920 for Aarhus, so the largest city on earth sat in the same bucket as
+    Cadiz. His three own points set the cutoffs exactly: Baarn 24,528 -> 10,
+    Copenhagen 602,481 -> 30, Tokyo 14,047,594 -> 100.
+
+        under 50,000          10
+        50,000 to 250,000     20
+        250,000 to 1m         30
+        1m to 5m              60
+        over 5m              100
+
+    **The Search Console gate is gone from the ceiling** (same ruling). A city
+    nobody has searched for yet used to stop at 10 however large it was, which
+    confused two different jobs: the ceiling says how many trees a place could
+    hold, the queue's `score` says where the next hour goes, and only the
+    second should care about measured demand. A big unknown city now has room
+    and still gets no run until it earns one.
+
+    Unchanged and load-bearing: a target is a CEILING and a stopping point,
+    never a quota and never a floor. A city that runs out of trees clearing the
+    bar is finished below it (Cadiz at 5), a city above it is finished with
+    nothing removed (Barcelona at 56), and the 80/20 rule ends any city the
+    moment its next tree gets hard to find. The floor is four verified trees or
+    no page, with the single-famous-tree exception.
+
+    Known wobble: Wikidata gives the municipality rather than the agglomeration
+    and municipal boundaries are drawn differently per country, so Paris counts
+    2.1m inside the peripherique and lands on 60 where London's 8.8m lands on
+    100. Worth sharpening with urban-area figures one day, not worth waiting for.
+
+    A place whose population we could not resolve keeps the old behaviour, so
+    an unresolved row never silently drops to 10.
     """
+    pop = _population(slug) if slug else None
+    if pop:
+        for floor, n in ((5_000_000, 100), (1_000_000, 60), (250_000, 30), (50_000, 20)):
+            if pop >= floor:
+                return n
+        return 10
     if not measured:
         return 10
     return 30 if (travel or 0) >= 8000 else 20
@@ -436,7 +468,7 @@ def enrich(doc, live):
             c.update(status="published", trees=info["trees"], photos=info["photos"],
                      walks=info["walks"], register=info["register"],
                      ready=info["ready"], wikidata=info["wikidata"], supply=supply,
-                     target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel")))
+                     target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel"), c.get("slug")))
         else:
             # An unpublished city still has register supply around it; it just
             # has no trees to average a centre from. Look the city itself up.
@@ -460,7 +492,7 @@ def enrich(doc, live):
                 c.pop("settled", None)
             c.update(status="pending", trees=0, photos=0, walks=0,
                      register=reg, ready=0, wikidata=wd, supply=supply,
-                     target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel")))
+                     target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel"), c.get("slug")))
         c["ease"] = round(ease_for(c.get("country", ""), supply), 2)
         c["work_score"] = round((c.get("score") or 0) * c["ease"], 2)
     ranked = sorted([c for c in doc["cities"] if c.get("score") is not None],

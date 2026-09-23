@@ -70,6 +70,40 @@ sourcing bar.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-23 (session) - The language picker moved to the bottom of the sheet, where the references put it
+
+Hidde, on the Rome page on his phone: "I don't think it makes sense to give the
+translations this prime spot, that's not conventional." He is right, and the
+awkward part is that CONVENTIONS.md had said the same thing since 2026-09-02,
+in the entry written for this exact control: komoot puts a plain line at the
+very bottom, AllTrails a select in its footer block, neither of them above the
+content.
+
+What it looked like: on a city page the row of seven language names sat
+directly under the intro and above the first tree, so the line between the lede
+and the first photograph went to six alphabets most readers cannot read.
+
+How it got there, which is the part worth keeping. The picker IS in the footer
+everywhere Base.astro draws one. Three page types set `footer={false}` because
+the split map layout has no room for one, and on each of them somebody put the
+control inline instead and wrote a comment calling it an exception. The third
+one's comment says so outright: "the same exception the city pages already
+make". An exception that copies itself across three page types is a default
+wearing an exception's clothes.
+
+Fixed on all three (`/[city]`, the translated city page, `/explore`): the
+picker is now the last block in the sheet, under the suggest line, as
+`.panel-lang`. On a footerless page the bottom of the sheet is the footer.
+Nothing was removed and no link was lost, so the translated pages keep their
+inbound link and their `hreflang` set is untouched; it is 2,000 pages of
+placement, not of content.
+
+CONVENTIONS.md's "what we do that they do not, and it is defensible" paragraph
+is rewritten rather than deleted: the inline ARGUMENT was fine (a reader who
+landed on the English page from Google wants a way across, which hreflang alone
+does not give a human), the PLACEMENT was not.
+
+
 ## 2026-09-23 - The first contributor from outside, and the form that told him nothing
 
 Somebody who is not Hidde sent us trees. Leon, signed up through Google on

@@ -1,5 +1,3798 @@
 {
+ "age_genera": {
+  "Abies": {
+   "max": 630.0,
+   "n": 6,
+   "p90": 550.0,
+   "reference": 630.0,
+   "thin": true
+  },
+  "Acca": {
+   "max": 110.0,
+   "n": 1,
+   "p90": 110.0,
+   "reference": 110.0,
+   "thin": true
+  },
+  "Acer": {
+   "max": 550.0,
+   "n": 59,
+   "p90": 270.0,
+   "reference": 270.0,
+   "thin": false
+  },
+  "Adansonia": {
+   "max": 2000.0,
+   "n": 6,
+   "p90": 500.0,
+   "reference": 2000.0,
+   "thin": true
+  },
+  "Adenanthera": {
+   "max": 145.0,
+   "n": 1,
+   "p90": 145.0,
+   "reference": 145.0,
+   "thin": true
+  },
+  "Aesculus": {
+   "max": 1000.0,
+   "n": 69,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": false
+  },
+  "Agathis": {
+   "max": 4000.0,
+   "n": 3,
+   "p90": 4000.0,
+   "reference": 4000.0,
+   "thin": true
+  },
+  "Ailanthus": {
+   "max": 167.0,
+   "n": 5,
+   "p90": 167.0,
+   "reference": 167.0,
+   "thin": true
+  },
+  "Albizia": {
+   "max": 135.0,
+   "n": 1,
+   "p90": 135.0,
+   "reference": 135.0,
+   "thin": true
+  },
+  "Alnus": {
+   "max": 150.0,
+   "n": 2,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Alstonia": {
+   "max": 160.0,
+   "n": 1,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Anacardium": {
+   "max": 140.0,
+   "n": 1,
+   "p90": 140.0,
+   "reference": 140.0,
+   "thin": true
+  },
+  "Anthoshorea": {
+   "max": 61.0,
+   "n": 1,
+   "p90": 61.0,
+   "reference": 61.0,
+   "thin": true
+  },
+  "Araucaria": {
+   "max": 225.0,
+   "n": 19,
+   "p90": 185.0,
+   "reference": 185.0,
+   "thin": false
+  },
+  "Arbutus": {
+   "max": 172.0,
+   "n": 5,
+   "p90": 172.0,
+   "reference": 172.0,
+   "thin": true
+  },
+  "Betula": {
+   "max": 175.0,
+   "n": 5,
+   "p90": 175.0,
+   "reference": 175.0,
+   "thin": true
+  },
+  "Bischofia": {
+   "max": 450.0,
+   "n": 4,
+   "p90": 450.0,
+   "reference": 450.0,
+   "thin": true
+  },
+  "Brachychiton": {
+   "max": 200.0,
+   "n": 3,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Buxus": {
+   "max": 155.0,
+   "n": 1,
+   "p90": 155.0,
+   "reference": 155.0,
+   "thin": true
+  },
+  "Calocedrus": {
+   "max": 175.0,
+   "n": 1,
+   "p90": 175.0,
+   "reference": 175.0,
+   "thin": true
+  },
+  "Calophyllum": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Camellia": {
+   "max": 800.0,
+   "n": 5,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Camphora": {
+   "max": 1400.0,
+   "n": 1,
+   "p90": 1400.0,
+   "reference": 1400.0,
+   "thin": true
+  },
+  "Cariniana": {
+   "max": 3000.0,
+   "n": 1,
+   "p90": 3000.0,
+   "reference": 3000.0,
+   "thin": true
+  },
+  "Carpinus": {
+   "max": 200.0,
+   "n": 9,
+   "p90": 176.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Carya": {
+   "max": 190.0,
+   "n": 5,
+   "p90": 190.0,
+   "reference": 190.0,
+   "thin": true
+  },
+  "Cassia": {
+   "max": 80.0,
+   "n": 1,
+   "p90": 80.0,
+   "reference": 80.0,
+   "thin": true
+  },
+  "Castanea": {
+   "max": 4000.0,
+   "n": 21,
+   "p90": 1200.0,
+   "reference": 1200.0,
+   "thin": false
+  },
+  "Castanopsis": {
+   "max": 1100.0,
+   "n": 1,
+   "p90": 1100.0,
+   "reference": 1100.0,
+   "thin": true
+  },
+  "Castanospermum": {
+   "max": 90.0,
+   "n": 1,
+   "p90": 90.0,
+   "reference": 90.0,
+   "thin": true
+  },
+  "Casuarina": {
+   "max": 135.0,
+   "n": 1,
+   "p90": 135.0,
+   "reference": 135.0,
+   "thin": true
+  },
+  "Catalpa": {
+   "max": 206.0,
+   "n": 16,
+   "p90": 175.0,
+   "reference": 175.0,
+   "thin": false
+  },
+  "Cavanillesia": {
+   "max": 98.0,
+   "n": 1,
+   "p90": 98.0,
+   "reference": 98.0,
+   "thin": true
+  },
+  "Cedrus": {
+   "max": 500.0,
+   "n": 65,
+   "p90": 270.0,
+   "reference": 270.0,
+   "thin": false
+  },
+  "Ceiba": {
+   "max": 600.0,
+   "n": 8,
+   "p90": 200.0,
+   "reference": 600.0,
+   "thin": true
+  },
+  "Celtis": {
+   "max": 400.0,
+   "n": 24,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": false
+  },
+  "Cerasus": {
+   "max": 1300.0,
+   "n": 5,
+   "p90": 1300.0,
+   "reference": 1300.0,
+   "thin": true
+  },
+  "Ceratonia": {
+   "max": 135.0,
+   "n": 2,
+   "p90": 135.0,
+   "reference": 135.0,
+   "thin": true
+  },
+  "Cercidiphyllum": {
+   "max": 2000.0,
+   "n": 9,
+   "p90": 1500.0,
+   "reference": 2000.0,
+   "thin": true
+  },
+  "Cercis": {
+   "max": 240.0,
+   "n": 4,
+   "p90": 240.0,
+   "reference": 240.0,
+   "thin": true
+  },
+  "Chamaecyparis": {
+   "max": 2300.0,
+   "n": 2,
+   "p90": 2300.0,
+   "reference": 2300.0,
+   "thin": true
+  },
+  "Chamaerops": {
+   "max": 460.0,
+   "n": 1,
+   "p90": 460.0,
+   "reference": 460.0,
+   "thin": true
+  },
+  "Chrysophyllum": {
+   "max": 160.0,
+   "n": 1,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Cinnamomum": {
+   "max": 3500.0,
+   "n": 51,
+   "p90": 1600.0,
+   "reference": 1600.0,
+   "thin": false
+  },
+  "Citrus": {
+   "max": 210.0,
+   "n": 3,
+   "p90": 210.0,
+   "reference": 210.0,
+   "thin": true
+  },
+  "Cladrastis": {
+   "max": 76.0,
+   "n": 1,
+   "p90": 76.0,
+   "reference": 76.0,
+   "thin": true
+  },
+  "Cornus": {
+   "max": 300.0,
+   "n": 2,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Corylus": {
+   "max": 235.0,
+   "n": 8,
+   "p90": 175.0,
+   "reference": 235.0,
+   "thin": true
+  },
+  "Corymbia": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Couroupita": {
+   "max": 96.0,
+   "n": 1,
+   "p90": 96.0,
+   "reference": 96.0,
+   "thin": true
+  },
+  "Crataegus": {
+   "max": 116.0,
+   "n": 3,
+   "p90": 116.0,
+   "reference": 116.0,
+   "thin": true
+  },
+  "Croix-Rousse": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Cryptomeria": {
+   "max": 3600.0,
+   "n": 24,
+   "p90": 3000.0,
+   "reference": 3000.0,
+   "thin": false
+  },
+  "Cunninghamia": {
+   "max": 3300.0,
+   "n": 1,
+   "p90": 3300.0,
+   "reference": 3300.0,
+   "thin": true
+  },
+  "Cupressus": {
+   "max": 3200.0,
+   "n": 33,
+   "p90": 400.0,
+   "reference": 400.0,
+   "thin": false
+  },
+  "Cycas": {
+   "max": 1300.0,
+   "n": 6,
+   "p90": 1300.0,
+   "reference": 1300.0,
+   "thin": true
+  },
+  "Cyrtophyllum": {
+   "max": 230.0,
+   "n": 1,
+   "p90": 230.0,
+   "reference": 230.0,
+   "thin": true
+  },
+  "Dacrycarpus": {
+   "max": 71.0,
+   "n": 1,
+   "p90": 71.0,
+   "reference": 71.0,
+   "thin": true
+  },
+  "Dalbergia": {
+   "max": 125.0,
+   "n": 1,
+   "p90": 125.0,
+   "reference": 125.0,
+   "thin": true
+  },
+  "Davidia": {
+   "max": 100.0,
+   "n": 3,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Dioon": {
+   "max": 186.0,
+   "n": 1,
+   "p90": 186.0,
+   "reference": 186.0,
+   "thin": true
+  },
+  "Diospyros": {
+   "max": 326.0,
+   "n": 2,
+   "p90": 326.0,
+   "reference": 326.0,
+   "thin": true
+  },
+  "Dracaena": {
+   "max": 1000.0,
+   "n": 10,
+   "p90": 400.0,
+   "reference": 400.0,
+   "thin": false
+  },
+  "Dryobalanops": {
+   "max": 86.0,
+   "n": 1,
+   "p90": 86.0,
+   "reference": 86.0,
+   "thin": true
+  },
+  "Ehretia": {
+   "max": 800.0,
+   "n": 1,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Elaeagnus": {
+   "max": 80.0,
+   "n": 1,
+   "p90": 80.0,
+   "reference": 80.0,
+   "thin": true
+  },
+  "Encephalartos": {
+   "max": 320.0,
+   "n": 1,
+   "p90": 320.0,
+   "reference": 320.0,
+   "thin": true
+  },
+  "English": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Erythrina": {
+   "max": 106.0,
+   "n": 2,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Eucalyptus": {
+   "max": 800.0,
+   "n": 24,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": false
+  },
+  "Eucommia": {
+   "max": 55.0,
+   "n": 1,
+   "p90": 55.0,
+   "reference": 55.0,
+   "thin": true
+  },
+  "Fagus": {
+   "max": 450.0,
+   "n": 134,
+   "p90": 276.0,
+   "reference": 276.0,
+   "thin": false
+  },
+  "Ficus": {
+   "max": 1500.0,
+   "n": 96,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": false
+  },
+  "Firmiana": {
+   "max": 81.0,
+   "n": 1,
+   "p90": 81.0,
+   "reference": 81.0,
+   "thin": true
+  },
+  "Flindersia": {
+   "max": 200.0,
+   "n": 3,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Franklinia": {
+   "max": 122.0,
+   "n": 1,
+   "p90": 122.0,
+   "reference": 122.0,
+   "thin": true
+  },
+  "Fraxinus": {
+   "max": 400.0,
+   "n": 25,
+   "p90": 330.0,
+   "reference": 330.0,
+   "thin": false
+  },
+  "Ginkgo": {
+   "max": 1700.0,
+   "n": 94,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": false
+  },
+  "Gleditsia": {
+   "max": 180.0,
+   "n": 5,
+   "p90": 180.0,
+   "reference": 180.0,
+   "thin": true
+  },
+  "Grevillea": {
+   "max": 150.0,
+   "n": 3,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Gymnocladus": {
+   "max": 130.0,
+   "n": 2,
+   "p90": 130.0,
+   "reference": 130.0,
+   "thin": true
+  },
+  "Hippophae": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Hopea": {
+   "max": 244.0,
+   "n": 1,
+   "p90": 244.0,
+   "reference": 244.0,
+   "thin": true
+  },
+  "Ilex": {
+   "max": 425.0,
+   "n": 5,
+   "p90": 425.0,
+   "reference": 425.0,
+   "thin": true
+  },
+  "Jacaranda": {
+   "max": 215.0,
+   "n": 3,
+   "p90": 215.0,
+   "reference": 215.0,
+   "thin": true
+  },
+  "Jubaea": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Juglans": {
+   "max": 230.0,
+   "n": 9,
+   "p90": 206.0,
+   "reference": 230.0,
+   "thin": true
+  },
+  "Juniperus": {
+   "max": 1400.0,
+   "n": 8,
+   "p90": 800.0,
+   "reference": 1400.0,
+   "thin": true
+  },
+  "Khaya": {
+   "max": 47.0,
+   "n": 1,
+   "p90": 47.0,
+   "reference": 47.0,
+   "thin": true
+  },
+  "Kigelia": {
+   "max": 96.0,
+   "n": 1,
+   "p90": 96.0,
+   "reference": 96.0,
+   "thin": true
+  },
+  "Koelreuteria": {
+   "max": 106.0,
+   "n": 1,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Laburnum": {
+   "max": 310.0,
+   "n": 1,
+   "p90": 310.0,
+   "reference": 310.0,
+   "thin": true
+  },
+  "Lagerstroemia": {
+   "max": 900.0,
+   "n": 2,
+   "p90": 900.0,
+   "reference": 900.0,
+   "thin": true
+  },
+  "Lagunaria": {
+   "max": 106.0,
+   "n": 2,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Larix": {
+   "max": 180.0,
+   "n": 2,
+   "p90": 180.0,
+   "reference": 180.0,
+   "thin": true
+  },
+  "Laurus": {
+   "max": 1000.0,
+   "n": 1,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Liquidambar": {
+   "max": 106.0,
+   "n": 2,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Liriodendron": {
+   "max": 450.0,
+   "n": 22,
+   "p90": 350.0,
+   "reference": 350.0,
+   "thin": false
+  },
+  "Macadamia": {
+   "max": 170.0,
+   "n": 1,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Maclura": {
+   "max": 220.0,
+   "n": 5,
+   "p90": 220.0,
+   "reference": 220.0,
+   "thin": true
+  },
+  "Magnolia": {
+   "max": 300.0,
+   "n": 18,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": false
+  },
+  "Malus": {
+   "max": 140.0,
+   "n": 3,
+   "p90": 140.0,
+   "reference": 140.0,
+   "thin": true
+  },
+  "Mediterranean": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Melaleuca": {
+   "max": 190.0,
+   "n": 3,
+   "p90": 190.0,
+   "reference": 190.0,
+   "thin": true
+  },
+  "Melia": {
+   "max": 250.0,
+   "n": 3,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Metasequoia": {
+   "max": 117.0,
+   "n": 12,
+   "p90": 80.0,
+   "reference": 80.0,
+   "thin": false
+  },
+  "Metrosideros": {
+   "max": 275.0,
+   "n": 5,
+   "p90": 275.0,
+   "reference": 275.0,
+   "thin": true
+  },
+  "Morus": {
+   "max": 1500.0,
+   "n": 21,
+   "p90": 480.0,
+   "reference": 480.0,
+   "thin": false
+  },
+  "Myrica": {
+   "max": 1000.0,
+   "n": 2,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Nageia": {
+   "max": 1100.0,
+   "n": 2,
+   "p90": 1100.0,
+   "reference": 1100.0,
+   "thin": true
+  },
+  "Napoleonic": {
+   "max": 216.0,
+   "n": 1,
+   "p90": 216.0,
+   "reference": 216.0,
+   "thin": true
+  },
+  "Nyssa": {
+   "max": 170.0,
+   "n": 1,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Ocotea": {
+   "max": 600.0,
+   "n": 1,
+   "p90": 600.0,
+   "reference": 600.0,
+   "thin": true
+  },
+  "Olea": {
+   "max": 4000.0,
+   "n": 26,
+   "p90": 3000.0,
+   "reference": 3000.0,
+   "thin": false
+  },
+  "Osmanthus": {
+   "max": 1200.0,
+   "n": 4,
+   "p90": 1200.0,
+   "reference": 1200.0,
+   "thin": true
+  },
+  "Ostrya": {
+   "max": 170.0,
+   "n": 1,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Parrotia": {
+   "max": 116.0,
+   "n": 2,
+   "p90": 116.0,
+   "reference": 116.0,
+   "thin": true
+  },
+  "Paulownia": {
+   "max": 90.0,
+   "n": 1,
+   "p90": 90.0,
+   "reference": 90.0,
+   "thin": true
+  },
+  "Peltophorum": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Pentadesma": {
+   "max": 140.0,
+   "n": 1,
+   "p90": 140.0,
+   "reference": 140.0,
+   "thin": true
+  },
+  "Persea": {
+   "max": 85.0,
+   "n": 2,
+   "p90": 85.0,
+   "reference": 85.0,
+   "thin": true
+  },
+  "Phellodendron": {
+   "max": 110.0,
+   "n": 2,
+   "p90": 110.0,
+   "reference": 110.0,
+   "thin": true
+  },
+  "Phoenix": {
+   "max": 250.0,
+   "n": 10,
+   "p90": 163.0,
+   "reference": 163.0,
+   "thin": false
+  },
+  "Phyllocladus": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Phytolacca": {
+   "max": 500.0,
+   "n": 11,
+   "p90": 210.0,
+   "reference": 210.0,
+   "thin": false
+  },
+  "Picea": {
+   "max": 300.0,
+   "n": 8,
+   "p90": 235.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Pinus": {
+   "max": 1400.0,
+   "n": 64,
+   "p90": 620.0,
+   "reference": 620.0,
+   "thin": false
+  },
+  "Pistacia": {
+   "max": 1000.0,
+   "n": 3,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Platanus": {
+   "max": 1400.0,
+   "n": 256,
+   "p90": 310.0,
+   "reference": 310.0,
+   "thin": false
+  },
+  "Platycladus": {
+   "max": 1100.0,
+   "n": 2,
+   "p90": 1100.0,
+   "reference": 1100.0,
+   "thin": true
+  },
+  "Podocarpus": {
+   "max": 130.0,
+   "n": 2,
+   "p90": 130.0,
+   "reference": 130.0,
+   "thin": true
+  },
+  "Populus": {
+   "max": 276.0,
+   "n": 33,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": false
+  },
+  "Prosopis": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Prunus": {
+   "max": 2000.0,
+   "n": 32,
+   "p90": 1300.0,
+   "reference": 1300.0,
+   "thin": false
+  },
+  "Pseudobombax": {
+   "max": 170.0,
+   "n": 1,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Pseudotsuga": {
+   "max": 1200.0,
+   "n": 11,
+   "p90": 1200.0,
+   "reference": 1200.0,
+   "thin": false
+  },
+  "Pterocarya": {
+   "max": 205.0,
+   "n": 25,
+   "p90": 168.0,
+   "reference": 168.0,
+   "thin": false
+  },
+  "Pyrus": {
+   "max": 220.0,
+   "n": 10,
+   "p90": 220.0,
+   "reference": 220.0,
+   "thin": false
+  },
+  "Quercus": {
+   "max": 2000.0,
+   "n": 422,
+   "p90": 700.0,
+   "reference": 700.0,
+   "thin": false
+  },
+  "Robinia": {
+   "max": 430.0,
+   "n": 15,
+   "p90": 395.0,
+   "reference": 395.0,
+   "thin": false
+  },
+  "Salix": {
+   "max": 300.0,
+   "n": 12,
+   "p90": 226.0,
+   "reference": 226.0,
+   "thin": false
+  },
+  "Samanea": {
+   "max": 350.0,
+   "n": 4,
+   "p90": 350.0,
+   "reference": 350.0,
+   "thin": true
+  },
+  "Sapindus": {
+   "max": 300.0,
+   "n": 1,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Sassafras": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Schinus": {
+   "max": 150.0,
+   "n": 5,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Sequoia": {
+   "max": 1600.0,
+   "n": 16,
+   "p90": 1500.0,
+   "reference": 1500.0,
+   "thin": false
+  },
+  "Sequoiadendron": {
+   "max": 3200.0,
+   "n": 34,
+   "p90": 173.0,
+   "reference": 173.0,
+   "thin": false
+  },
+  "Sorbus": {
+   "max": 280.0,
+   "n": 7,
+   "p90": 145.0,
+   "reference": 280.0,
+   "thin": true
+  },
+  "Stereospermum": {
+   "max": 90.0,
+   "n": 1,
+   "p90": 90.0,
+   "reference": 90.0,
+   "thin": true
+  },
+  "Styphnolobium": {
+   "max": 1300.0,
+   "n": 19,
+   "p90": 270.0,
+   "reference": 270.0,
+   "thin": false
+  },
+  "Swietenia": {
+   "max": 170.0,
+   "n": 2,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Tamarindus": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Taxodium": {
+   "max": 3000.0,
+   "n": 26,
+   "p90": 500.0,
+   "reference": 500.0,
+   "thin": false
+  },
+  "Taxus": {
+   "max": 5000.0,
+   "n": 50,
+   "p90": 2000.0,
+   "reference": 2000.0,
+   "thin": false
+  },
+  "Tectona": {
+   "max": 145.0,
+   "n": 1,
+   "p90": 145.0,
+   "reference": 145.0,
+   "thin": true
+  },
+  "Terminalia": {
+   "max": 230.0,
+   "n": 2,
+   "p90": 230.0,
+   "reference": 230.0,
+   "thin": true
+  },
+  "Tetraclinis": {
+   "max": 106.0,
+   "n": 1,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Thuja": {
+   "max": 1200.0,
+   "n": 7,
+   "p90": 160.0,
+   "reference": 1200.0,
+   "thin": true
+  },
+  "Thujopsis": {
+   "max": 800.0,
+   "n": 1,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Tilia": {
+   "max": 1300.0,
+   "n": 200,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": false
+  },
+  "Tipuana": {
+   "max": 155.0,
+   "n": 6,
+   "p90": 125.0,
+   "reference": 155.0,
+   "thin": true
+  },
+  "Torreya": {
+   "max": 1000.0,
+   "n": 6,
+   "p90": 900.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Tsuga": {
+   "max": 115.0,
+   "n": 1,
+   "p90": 115.0,
+   "reference": 115.0,
+   "thin": true
+  },
+  "Ulmus": {
+   "max": 1100.0,
+   "n": 63,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": false
+  },
+  "Washingtonia": {
+   "max": 170.0,
+   "n": 9,
+   "p90": 165.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Wisteria": {
+   "max": 1300.0,
+   "n": 4,
+   "p90": 1300.0,
+   "reference": 1300.0,
+   "thin": true
+  },
+  "Xanthorrhoea": {
+   "max": 450.0,
+   "n": 1,
+   "p90": 450.0,
+   "reference": 450.0,
+   "thin": true
+  },
+  "Zelkova": {
+   "max": 1900.0,
+   "n": 23,
+   "p90": 1200.0,
+   "reference": 1200.0,
+   "thin": false
+  },
+  "Ziziphus": {
+   "max": 70.0,
+   "n": 1,
+   "p90": 70.0,
+   "reference": 70.0,
+   "thin": true
+  }
+ },
+ "age_species": {
+  "Abies alba": {
+   "max": 630.0,
+   "n": 2,
+   "p90": 630.0,
+   "reference": 630.0,
+   "thin": true
+  },
+  "Abies grandis": {
+   "max": 250.0,
+   "n": 2,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Abies nordmanniana": {
+   "max": 106.0,
+   "n": 1,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Abies pinsapo": {
+   "max": 550.0,
+   "n": 1,
+   "p90": 550.0,
+   "reference": 550.0,
+   "thin": true
+  },
+  "Acca sellowiana": {
+   "max": 110.0,
+   "n": 1,
+   "p90": 110.0,
+   "reference": 110.0,
+   "thin": true
+  },
+  "Acer campestre": {
+   "max": 220.0,
+   "n": 4,
+   "p90": 220.0,
+   "reference": 220.0,
+   "thin": true
+  },
+  "Acer cappadocicum": {
+   "max": 168.0,
+   "n": 3,
+   "p90": 168.0,
+   "reference": 168.0,
+   "thin": true
+  },
+  "Acer griseum": {
+   "max": 120.0,
+   "n": 1,
+   "p90": 120.0,
+   "reference": 120.0,
+   "thin": true
+  },
+  "Acer miyabei": {
+   "max": 65.0,
+   "n": 1,
+   "p90": 65.0,
+   "reference": 65.0,
+   "thin": true
+  },
+  "Acer monspessulanum": {
+   "max": 225.0,
+   "n": 1,
+   "p90": 225.0,
+   "reference": 225.0,
+   "thin": true
+  },
+  "Acer negundo": {
+   "max": 125.0,
+   "n": 3,
+   "p90": 125.0,
+   "reference": 125.0,
+   "thin": true
+  },
+  "Acer palmatum": {
+   "max": 250.0,
+   "n": 3,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Acer platanoides": {
+   "max": 160.0,
+   "n": 4,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Acer pseudoplatanus": {
+   "max": 550.0,
+   "n": 21,
+   "p90": 360.0,
+   "reference": 360.0,
+   "thin": false
+  },
+  "Acer pycnanthum": {
+   "max": 450.0,
+   "n": 2,
+   "p90": 450.0,
+   "reference": 450.0,
+   "thin": true
+  },
+  "Acer saccharinum": {
+   "max": 166.0,
+   "n": 14,
+   "p90": 166.0,
+   "reference": 166.0,
+   "thin": false
+  },
+  "Acer saccharum": {
+   "max": 541.0,
+   "n": 1,
+   "p90": 541.0,
+   "reference": 541.0,
+   "thin": true
+  },
+  "Adansonia digitata": {
+   "max": 100.0,
+   "n": 3,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Adansonia gregorii": {
+   "max": 2000.0,
+   "n": 2,
+   "p90": 2000.0,
+   "reference": 2000.0,
+   "thin": true
+  },
+  "Adenanthera pavonina": {
+   "max": 145.0,
+   "n": 1,
+   "p90": 145.0,
+   "reference": 145.0,
+   "thin": true
+  },
+  "Aesculus carnea": {
+   "max": 180.0,
+   "n": 4,
+   "p90": 180.0,
+   "reference": 180.0,
+   "thin": true
+  },
+  "Aesculus hippocastanum": {
+   "max": 300.0,
+   "n": 63,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": false
+  },
+  "Aesculus turbinata": {
+   "max": 1000.0,
+   "n": 2,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Agathis australis": {
+   "max": 4000.0,
+   "n": 2,
+   "p90": 4000.0,
+   "reference": 4000.0,
+   "thin": true
+  },
+  "Agathis robusta": {
+   "max": 180.0,
+   "n": 1,
+   "p90": 180.0,
+   "reference": 180.0,
+   "thin": true
+  },
+  "Ailanthus altissima": {
+   "max": 167.0,
+   "n": 5,
+   "p90": 167.0,
+   "reference": 167.0,
+   "thin": true
+  },
+  "Albizia julibrissin": {
+   "max": 135.0,
+   "n": 1,
+   "p90": 135.0,
+   "reference": 135.0,
+   "thin": true
+  },
+  "Alnus glutinosa": {
+   "max": 150.0,
+   "n": 2,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Alstonia pneumatophora": {
+   "max": 160.0,
+   "n": 1,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Anacardium occidentale": {
+   "max": 140.0,
+   "n": 1,
+   "p90": 140.0,
+   "reference": 140.0,
+   "thin": true
+  },
+  "Anthoshorea roxburghii": {
+   "max": 61.0,
+   "n": 1,
+   "p90": 61.0,
+   "reference": 61.0,
+   "thin": true
+  },
+  "Araucaria araucana": {
+   "max": 225.0,
+   "n": 3,
+   "p90": 225.0,
+   "reference": 225.0,
+   "thin": true
+  },
+  "Araucaria bidwillii": {
+   "max": 175.0,
+   "n": 7,
+   "p90": 175.0,
+   "reference": 175.0,
+   "thin": true
+  },
+  "Araucaria columnaris": {
+   "max": 160.0,
+   "n": 3,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Araucaria cunninghamii": {
+   "max": 150.0,
+   "n": 2,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Araucaria heterophylla": {
+   "max": 200.0,
+   "n": 4,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Arbutus andrachne": {
+   "max": 172.0,
+   "n": 1,
+   "p90": 172.0,
+   "reference": 172.0,
+   "thin": true
+  },
+  "Arbutus andrachnoides": {
+   "max": 167.0,
+   "n": 1,
+   "p90": 167.0,
+   "reference": 167.0,
+   "thin": true
+  },
+  "Arbutus unedo": {
+   "max": 150.0,
+   "n": 2,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Arbutus xalapensis": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Betula aetnensis": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Betula lenta": {
+   "max": 175.0,
+   "n": 1,
+   "p90": 175.0,
+   "reference": 175.0,
+   "thin": true
+  },
+  "Betula medwediewii": {
+   "max": 76.0,
+   "n": 1,
+   "p90": 76.0,
+   "reference": 76.0,
+   "thin": true
+  },
+  "Betula papyrifera": {
+   "max": 85.0,
+   "n": 1,
+   "p90": 85.0,
+   "reference": 85.0,
+   "thin": true
+  },
+  "Betula pendula": {
+   "max": 165.0,
+   "n": 1,
+   "p90": 165.0,
+   "reference": 165.0,
+   "thin": true
+  },
+  "Bischofia javanica": {
+   "max": 450.0,
+   "n": 4,
+   "p90": 450.0,
+   "reference": 450.0,
+   "thin": true
+  },
+  "Brachychiton acerifolius": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Brachychiton populneus": {
+   "max": 200.0,
+   "n": 2,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Buxus balearica": {
+   "max": 155.0,
+   "n": 1,
+   "p90": 155.0,
+   "reference": 155.0,
+   "thin": true
+  },
+  "Calocedrus decurrens": {
+   "max": 175.0,
+   "n": 1,
+   "p90": 175.0,
+   "reference": 175.0,
+   "thin": true
+  },
+  "Calophyllum inophyllum": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Camellia japonica": {
+   "max": 800.0,
+   "n": 5,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Camphora officinarum": {
+   "max": 1400.0,
+   "n": 1,
+   "p90": 1400.0,
+   "reference": 1400.0,
+   "thin": true
+  },
+  "Cariniana legalis": {
+   "max": 3000.0,
+   "n": 1,
+   "p90": 3000.0,
+   "reference": 3000.0,
+   "thin": true
+  },
+  "Carpinus betulus": {
+   "max": 176.0,
+   "n": 8,
+   "p90": 150.0,
+   "reference": 176.0,
+   "thin": true
+  },
+  "Carpinus laxiflora": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Carya cordiformis": {
+   "max": 140.0,
+   "n": 1,
+   "p90": 140.0,
+   "reference": 140.0,
+   "thin": true
+  },
+  "Carya illinoinensis": {
+   "max": 190.0,
+   "n": 4,
+   "p90": 190.0,
+   "reference": 190.0,
+   "thin": true
+  },
+  "Cassia nealiae": {
+   "max": 80.0,
+   "n": 1,
+   "p90": 80.0,
+   "reference": 80.0,
+   "thin": true
+  },
+  "Castanea sativa": {
+   "max": 4000.0,
+   "n": 21,
+   "p90": 1200.0,
+   "reference": 1200.0,
+   "thin": false
+  },
+  "Castanopsis sieboldii": {
+   "max": 1100.0,
+   "n": 1,
+   "p90": 1100.0,
+   "reference": 1100.0,
+   "thin": true
+  },
+  "Castanospermum australe": {
+   "max": 90.0,
+   "n": 1,
+   "p90": 90.0,
+   "reference": 90.0,
+   "thin": true
+  },
+  "Casuarina cunninghamiana": {
+   "max": 135.0,
+   "n": 1,
+   "p90": 135.0,
+   "reference": 135.0,
+   "thin": true
+  },
+  "Catalpa bignonioides": {
+   "max": 175.0,
+   "n": 14,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": false
+  },
+  "Cavanillesia platanifolia": {
+   "max": 98.0,
+   "n": 1,
+   "p90": 98.0,
+   "reference": 98.0,
+   "thin": true
+  },
+  "Cedrus atlantica": {
+   "max": 500.0,
+   "n": 11,
+   "p90": 185.0,
+   "reference": 185.0,
+   "thin": false
+  },
+  "Cedrus deodara": {
+   "max": 205.0,
+   "n": 18,
+   "p90": 165.0,
+   "reference": 165.0,
+   "thin": false
+  },
+  "Cedrus libani": {
+   "max": 320.0,
+   "n": 36,
+   "p90": 295.0,
+   "reference": 295.0,
+   "thin": false
+  },
+  "Ceiba chodatii": {
+   "max": 120.0,
+   "n": 1,
+   "p90": 120.0,
+   "reference": 120.0,
+   "thin": true
+  },
+  "Ceiba crispiflora": {
+   "max": 105.0,
+   "n": 1,
+   "p90": 105.0,
+   "reference": 105.0,
+   "thin": true
+  },
+  "Ceiba pentandra": {
+   "max": 600.0,
+   "n": 2,
+   "p90": 600.0,
+   "reference": 600.0,
+   "thin": true
+  },
+  "Ceiba speciosa": {
+   "max": 200.0,
+   "n": 4,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Celtis australis": {
+   "max": 400.0,
+   "n": 23,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": false
+  },
+  "Celtis sinensis": {
+   "max": 299.0,
+   "n": 1,
+   "p90": 299.0,
+   "reference": 299.0,
+   "thin": true
+  },
+  "Cerasus itosakura": {
+   "max": 1300.0,
+   "n": 2,
+   "p90": 1300.0,
+   "reference": 1300.0,
+   "thin": true
+  },
+  "Cerasus jamasakura": {
+   "max": 500.0,
+   "n": 1,
+   "p90": 500.0,
+   "reference": 500.0,
+   "thin": true
+  },
+  "Cerasus kabazakura": {
+   "max": 850.0,
+   "n": 1,
+   "p90": 850.0,
+   "reference": 850.0,
+   "thin": true
+  },
+  "Ceratonia siliqua": {
+   "max": 135.0,
+   "n": 2,
+   "p90": 135.0,
+   "reference": 135.0,
+   "thin": true
+  },
+  "Cercidiphyllum japonicum": {
+   "max": 2000.0,
+   "n": 9,
+   "p90": 1500.0,
+   "reference": 2000.0,
+   "thin": true
+  },
+  "Cercis siliquastrum": {
+   "max": 240.0,
+   "n": 4,
+   "p90": 240.0,
+   "reference": 240.0,
+   "thin": true
+  },
+  "Chamaecyparis formosensis": {
+   "max": 2300.0,
+   "n": 1,
+   "p90": 2300.0,
+   "reference": 2300.0,
+   "thin": true
+  },
+  "Chamaecyparis obtusa": {
+   "max": 290.0,
+   "n": 1,
+   "p90": 290.0,
+   "reference": 290.0,
+   "thin": true
+  },
+  "Chamaerops humilis": {
+   "max": 460.0,
+   "n": 1,
+   "p90": 460.0,
+   "reference": 460.0,
+   "thin": true
+  },
+  "Chrysophyllum imperiale": {
+   "max": 160.0,
+   "n": 1,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Cinnamomum camphora": {
+   "max": 3500.0,
+   "n": 50,
+   "p90": 1600.0,
+   "reference": 1600.0,
+   "thin": false
+  },
+  "Cinnamomum glanduliferum": {
+   "max": 250.0,
+   "n": 1,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Citrus aurantium": {
+   "max": 120.0,
+   "n": 2,
+   "p90": 120.0,
+   "reference": 120.0,
+   "thin": true
+  },
+  "Citrus deliciosa": {
+   "max": 210.0,
+   "n": 1,
+   "p90": 210.0,
+   "reference": 210.0,
+   "thin": true
+  },
+  "Cladrastis kentukea": {
+   "max": 76.0,
+   "n": 1,
+   "p90": 76.0,
+   "reference": 76.0,
+   "thin": true
+  },
+  "Cornus mas": {
+   "max": 300.0,
+   "n": 2,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Corylus colurna": {
+   "max": 235.0,
+   "n": 8,
+   "p90": 175.0,
+   "reference": 235.0,
+   "thin": true
+  },
+  "Corymbia ficifolia": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Couroupita guianensis": {
+   "max": 96.0,
+   "n": 1,
+   "p90": 96.0,
+   "reference": 96.0,
+   "thin": true
+  },
+  "Crataegus coccinioides": {
+   "max": 116.0,
+   "n": 1,
+   "p90": 116.0,
+   "reference": 116.0,
+   "thin": true
+  },
+  "Crataegus lavallei": {
+   "max": 62.0,
+   "n": 1,
+   "p90": 62.0,
+   "reference": 62.0,
+   "thin": true
+  },
+  "Crataegus monogyna": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Croix-Rousse hillside": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Cryptomeria japonica": {
+   "max": 3600.0,
+   "n": 24,
+   "p90": 3000.0,
+   "reference": 3000.0,
+   "thin": false
+  },
+  "Cunninghamia konishii": {
+   "max": 3300.0,
+   "n": 1,
+   "p90": 3300.0,
+   "reference": 3300.0,
+   "thin": true
+  },
+  "Cupressus cashmeriana": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Cupressus gigantea": {
+   "max": 3200.0,
+   "n": 1,
+   "p90": 3200.0,
+   "reference": 3200.0,
+   "thin": true
+  },
+  "Cupressus guadalupensis": {
+   "max": 136.0,
+   "n": 1,
+   "p90": 136.0,
+   "reference": 136.0,
+   "thin": true
+  },
+  "Cupressus lusitanica": {
+   "max": 444.0,
+   "n": 5,
+   "p90": 444.0,
+   "reference": 444.0,
+   "thin": true
+  },
+  "Cupressus macrocarpa": {
+   "max": 300.0,
+   "n": 6,
+   "p90": 250.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Cupressus sempervirens": {
+   "max": 440.0,
+   "n": 18,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": false
+  },
+  "Cupressus torulosa": {
+   "max": 180.0,
+   "n": 1,
+   "p90": 180.0,
+   "reference": 180.0,
+   "thin": true
+  },
+  "Cycas circinalis": {
+   "max": 162.0,
+   "n": 1,
+   "p90": 162.0,
+   "reference": 162.0,
+   "thin": true
+  },
+  "Cycas revoluta": {
+   "max": 1300.0,
+   "n": 5,
+   "p90": 1300.0,
+   "reference": 1300.0,
+   "thin": true
+  },
+  "Cyrtophyllum fragrans": {
+   "max": 230.0,
+   "n": 1,
+   "p90": 230.0,
+   "reference": 230.0,
+   "thin": true
+  },
+  "Dacrycarpus imbricatus": {
+   "max": 71.0,
+   "n": 1,
+   "p90": 71.0,
+   "reference": 71.0,
+   "thin": true
+  },
+  "Dalbergia oliveri": {
+   "max": 125.0,
+   "n": 1,
+   "p90": 125.0,
+   "reference": 125.0,
+   "thin": true
+  },
+  "Davidia involucrata": {
+   "max": 100.0,
+   "n": 3,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Dioon edule": {
+   "max": 186.0,
+   "n": 1,
+   "p90": 186.0,
+   "reference": 186.0,
+   "thin": true
+  },
+  "Diospyros kaki": {
+   "max": 81.0,
+   "n": 1,
+   "p90": 81.0,
+   "reference": 81.0,
+   "thin": true
+  },
+  "Diospyros lotus": {
+   "max": 326.0,
+   "n": 1,
+   "p90": 326.0,
+   "reference": 326.0,
+   "thin": true
+  },
+  "Dracaena draco": {
+   "max": 1000.0,
+   "n": 10,
+   "p90": 400.0,
+   "reference": 400.0,
+   "thin": false
+  },
+  "Dryobalanops aromatica": {
+   "max": 86.0,
+   "n": 1,
+   "p90": 86.0,
+   "reference": 86.0,
+   "thin": true
+  },
+  "Ehretia macrophylla": {
+   "max": 800.0,
+   "n": 1,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Elaeagnus angustifolia": {
+   "max": 80.0,
+   "n": 1,
+   "p90": 80.0,
+   "reference": 80.0,
+   "thin": true
+  },
+  "Encephalartos altensteinii": {
+   "max": 320.0,
+   "n": 1,
+   "p90": 320.0,
+   "reference": 320.0,
+   "thin": true
+  },
+  "English landscape": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Erythrina corallodendron": {
+   "max": 106.0,
+   "n": 1,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Erythrina crista-galli": {
+   "max": 105.0,
+   "n": 1,
+   "p90": 105.0,
+   "reference": 105.0,
+   "thin": true
+  },
+  "Eucalyptus botryoides": {
+   "max": 140.0,
+   "n": 1,
+   "p90": 140.0,
+   "reference": 140.0,
+   "thin": true
+  },
+  "Eucalyptus camaldulensis": {
+   "max": 200.0,
+   "n": 6,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Eucalyptus citriodora": {
+   "max": 115.0,
+   "n": 1,
+   "p90": 115.0,
+   "reference": 115.0,
+   "thin": true
+  },
+  "Eucalyptus cladocalyx": {
+   "max": 160.0,
+   "n": 1,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Eucalyptus cornuta": {
+   "max": 120.0,
+   "n": 1,
+   "p90": 120.0,
+   "reference": 120.0,
+   "thin": true
+  },
+  "Eucalyptus diversicolor": {
+   "max": 250.0,
+   "n": 2,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Eucalyptus globulus": {
+   "max": 200.0,
+   "n": 7,
+   "p90": 165.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Eucalyptus marginata": {
+   "max": 800.0,
+   "n": 1,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Eucalyptus microtheca": {
+   "max": 250.0,
+   "n": 1,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Eucalyptus regnans": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Eucalyptus robusta": {
+   "max": 200.0,
+   "n": 2,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Eucommia ulmoides": {
+   "max": 55.0,
+   "n": 1,
+   "p90": 55.0,
+   "reference": 55.0,
+   "thin": true
+  },
+  "Fagus crenata": {
+   "max": 400.0,
+   "n": 1,
+   "p90": 400.0,
+   "reference": 400.0,
+   "thin": true
+  },
+  "Fagus engleriana": {
+   "max": 106.0,
+   "n": 1,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Fagus grandifolia": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Fagus sylvatica": {
+   "max": 450.0,
+   "n": 131,
+   "p90": 276.0,
+   "reference": 276.0,
+   "thin": false
+  },
+  "Ficus benghalensis": {
+   "max": 176.0,
+   "n": 9,
+   "p90": 160.0,
+   "reference": 176.0,
+   "thin": true
+  },
+  "Ficus benjamina": {
+   "max": 160.0,
+   "n": 3,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Ficus carica": {
+   "max": 300.0,
+   "n": 2,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Ficus concinna": {
+   "max": 1500.0,
+   "n": 1,
+   "p90": 1500.0,
+   "reference": 1500.0,
+   "thin": true
+  },
+  "Ficus elastica": {
+   "max": 55.0,
+   "n": 2,
+   "p90": 55.0,
+   "reference": 55.0,
+   "thin": true
+  },
+  "Ficus kurzii": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Ficus macrophylla": {
+   "max": 310.0,
+   "n": 50,
+   "p90": 195.0,
+   "reference": 195.0,
+   "thin": false
+  },
+  "Ficus microcarpa": {
+   "max": 450.0,
+   "n": 11,
+   "p90": 180.0,
+   "reference": 180.0,
+   "thin": false
+  },
+  "Ficus organensis": {
+   "max": 300.0,
+   "n": 1,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Ficus religiosa": {
+   "max": 208.0,
+   "n": 6,
+   "p90": 162.0,
+   "reference": 208.0,
+   "thin": true
+  },
+  "Ficus rubiginosa": {
+   "max": 172.0,
+   "n": 2,
+   "p90": 172.0,
+   "reference": 172.0,
+   "thin": true
+  },
+  "Ficus superba": {
+   "max": 1000.0,
+   "n": 4,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Ficus virens": {
+   "max": 300.0,
+   "n": 2,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Firmiana simplex": {
+   "max": 81.0,
+   "n": 1,
+   "p90": 81.0,
+   "reference": 81.0,
+   "thin": true
+  },
+  "Flindersia australis": {
+   "max": 200.0,
+   "n": 3,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Franklinia alatamaha": {
+   "max": 122.0,
+   "n": 1,
+   "p90": 122.0,
+   "reference": 122.0,
+   "thin": true
+  },
+  "Fraxinus americana": {
+   "max": 156.0,
+   "n": 1,
+   "p90": 156.0,
+   "reference": 156.0,
+   "thin": true
+  },
+  "Fraxinus angustifolia": {
+   "max": 400.0,
+   "n": 3,
+   "p90": 400.0,
+   "reference": 400.0,
+   "thin": true
+  },
+  "Fraxinus excelsior": {
+   "max": 350.0,
+   "n": 17,
+   "p90": 320.0,
+   "reference": 320.0,
+   "thin": false
+  },
+  "Fraxinus ornus": {
+   "max": 136.0,
+   "n": 1,
+   "p90": 136.0,
+   "reference": 136.0,
+   "thin": true
+  },
+  "Fraxinus pennsylvanica": {
+   "max": 135.0,
+   "n": 2,
+   "p90": 135.0,
+   "reference": 135.0,
+   "thin": true
+  },
+  "Fraxinus texensis": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Ginkgo and": {
+   "max": 130.0,
+   "n": 1,
+   "p90": 130.0,
+   "reference": 130.0,
+   "thin": true
+  },
+  "Ginkgo biloba": {
+   "max": 1700.0,
+   "n": 93,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": false
+  },
+  "Gleditsia triacanthos": {
+   "max": 180.0,
+   "n": 5,
+   "p90": 180.0,
+   "reference": 180.0,
+   "thin": true
+  },
+  "Grevillea robusta": {
+   "max": 150.0,
+   "n": 3,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Gymnocladus dioica": {
+   "max": 130.0,
+   "n": 2,
+   "p90": 130.0,
+   "reference": 130.0,
+   "thin": true
+  },
+  "Hippophae rhamnoides": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Hopea odorata": {
+   "max": 244.0,
+   "n": 1,
+   "p90": 244.0,
+   "reference": 244.0,
+   "thin": true
+  },
+  "Ilex aquifolium": {
+   "max": 86.0,
+   "n": 1,
+   "p90": 86.0,
+   "reference": 86.0,
+   "thin": true
+  },
+  "Ilex integra": {
+   "max": 425.0,
+   "n": 1,
+   "p90": 425.0,
+   "reference": 425.0,
+   "thin": true
+  },
+  "Ilex rotunda": {
+   "max": 200.0,
+   "n": 2,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Jacaranda mimosifolia": {
+   "max": 215.0,
+   "n": 3,
+   "p90": 215.0,
+   "reference": 215.0,
+   "thin": true
+  },
+  "Jubaea chilensis": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Juglans nigra": {
+   "max": 230.0,
+   "n": 9,
+   "p90": 206.0,
+   "reference": 230.0,
+   "thin": true
+  },
+  "Juniperus chinensis": {
+   "max": 800.0,
+   "n": 6,
+   "p90": 750.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Juniperus phoenicea": {
+   "max": 500.0,
+   "n": 1,
+   "p90": 500.0,
+   "reference": 500.0,
+   "thin": true
+  },
+  "Juniperus rigida": {
+   "max": 1400.0,
+   "n": 1,
+   "p90": 1400.0,
+   "reference": 1400.0,
+   "thin": true
+  },
+  "Khaya senegalensis": {
+   "max": 47.0,
+   "n": 1,
+   "p90": 47.0,
+   "reference": 47.0,
+   "thin": true
+  },
+  "Kigelia africana": {
+   "max": 96.0,
+   "n": 1,
+   "p90": 96.0,
+   "reference": 96.0,
+   "thin": true
+  },
+  "Koelreuteria paniculata": {
+   "max": 106.0,
+   "n": 1,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Laburnum anagyroides": {
+   "max": 310.0,
+   "n": 1,
+   "p90": 310.0,
+   "reference": 310.0,
+   "thin": true
+  },
+  "Lagerstroemia indica": {
+   "max": 900.0,
+   "n": 1,
+   "p90": 900.0,
+   "reference": 900.0,
+   "thin": true
+  },
+  "Lagerstroemia speciosa": {
+   "max": 190.0,
+   "n": 1,
+   "p90": 190.0,
+   "reference": 190.0,
+   "thin": true
+  },
+  "Lagunaria patersonii": {
+   "max": 106.0,
+   "n": 2,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Larix decidua": {
+   "max": 180.0,
+   "n": 2,
+   "p90": 180.0,
+   "reference": 180.0,
+   "thin": true
+  },
+  "Laurus nobilis": {
+   "max": 1000.0,
+   "n": 1,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Liquidambar styraciflua": {
+   "max": 106.0,
+   "n": 2,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Liriodendron tulipifera": {
+   "max": 450.0,
+   "n": 22,
+   "p90": 350.0,
+   "reference": 350.0,
+   "thin": false
+  },
+  "Macadamia integrifolia": {
+   "max": 170.0,
+   "n": 1,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Maclura pomifera": {
+   "max": 220.0,
+   "n": 5,
+   "p90": 220.0,
+   "reference": 220.0,
+   "thin": true
+  },
+  "Magnolia campbellii": {
+   "max": 160.0,
+   "n": 1,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Magnolia compressa": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Magnolia grandiflora": {
+   "max": 300.0,
+   "n": 14,
+   "p90": 260.0,
+   "reference": 260.0,
+   "thin": false
+  },
+  "Magnolia soulangeana": {
+   "max": 118.0,
+   "n": 1,
+   "p90": 118.0,
+   "reference": 118.0,
+   "thin": true
+  },
+  "Malus domestica": {
+   "max": 140.0,
+   "n": 3,
+   "p90": 140.0,
+   "reference": 140.0,
+   "thin": true
+  },
+  "Mediterranean hillside": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Melaleuca armillaris": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Melaleuca styphelioides": {
+   "max": 190.0,
+   "n": 2,
+   "p90": 190.0,
+   "reference": 190.0,
+   "thin": true
+  },
+  "Melia azedarach": {
+   "max": 250.0,
+   "n": 3,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Metasequoia glyptostroboides": {
+   "max": 117.0,
+   "n": 12,
+   "p90": 80.0,
+   "reference": 80.0,
+   "thin": false
+  },
+  "Metrosideros excelsa": {
+   "max": 275.0,
+   "n": 5,
+   "p90": 275.0,
+   "reference": 275.0,
+   "thin": true
+  },
+  "Morus alba": {
+   "max": 650.0,
+   "n": 10,
+   "p90": 420.0,
+   "reference": 420.0,
+   "thin": false
+  },
+  "Morus bombycis": {
+   "max": 1500.0,
+   "n": 1,
+   "p90": 1500.0,
+   "reference": 1500.0,
+   "thin": true
+  },
+  "Morus nigra": {
+   "max": 480.0,
+   "n": 10,
+   "p90": 420.0,
+   "reference": 420.0,
+   "thin": false
+  },
+  "Myrica rubra": {
+   "max": 1000.0,
+   "n": 2,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Nageia nagi": {
+   "max": 1100.0,
+   "n": 2,
+   "p90": 1100.0,
+   "reference": 1100.0,
+   "thin": true
+  },
+  "Napoleonic public": {
+   "max": 216.0,
+   "n": 1,
+   "p90": 216.0,
+   "reference": 216.0,
+   "thin": true
+  },
+  "Nyssa sylvatica": {
+   "max": 170.0,
+   "n": 1,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Ocotea foetens": {
+   "max": 600.0,
+   "n": 1,
+   "p90": 600.0,
+   "reference": 600.0,
+   "thin": true
+  },
+  "Olea europaea": {
+   "max": 4000.0,
+   "n": 26,
+   "p90": 3000.0,
+   "reference": 3000.0,
+   "thin": false
+  },
+  "Osmanthus fragrans": {
+   "max": 1200.0,
+   "n": 4,
+   "p90": 1200.0,
+   "reference": 1200.0,
+   "thin": true
+  },
+  "Ostrya carpinifolia": {
+   "max": 170.0,
+   "n": 1,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Parrotia persica": {
+   "max": 116.0,
+   "n": 2,
+   "p90": 116.0,
+   "reference": 116.0,
+   "thin": true
+  },
+  "Paulownia tomentosa": {
+   "max": 90.0,
+   "n": 1,
+   "p90": 90.0,
+   "reference": 90.0,
+   "thin": true
+  },
+  "Peltophorum dubium": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Pentadesma butyracea": {
+   "max": 140.0,
+   "n": 1,
+   "p90": 140.0,
+   "reference": 140.0,
+   "thin": true
+  },
+  "Persea americana": {
+   "max": 85.0,
+   "n": 2,
+   "p90": 85.0,
+   "reference": 85.0,
+   "thin": true
+  },
+  "Phellodendron amurense": {
+   "max": 110.0,
+   "n": 2,
+   "p90": 110.0,
+   "reference": 110.0,
+   "thin": true
+  },
+  "Phoenix canariensis": {
+   "max": 250.0,
+   "n": 6,
+   "p90": 163.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Phoenix dactylifera": {
+   "max": 155.0,
+   "n": 2,
+   "p90": 155.0,
+   "reference": 155.0,
+   "thin": true
+  },
+  "Phoenix theophrasti": {
+   "max": 150.0,
+   "n": 2,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Phyllocladus trichomanoides": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Phytolacca dioica": {
+   "max": 500.0,
+   "n": 11,
+   "p90": 210.0,
+   "reference": 210.0,
+   "thin": false
+  },
+  "Picea abies": {
+   "max": 180.0,
+   "n": 6,
+   "p90": 170.0,
+   "reference": 180.0,
+   "thin": true
+  },
+  "Picea sitchensis": {
+   "max": 300.0,
+   "n": 1,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Picea smithiana": {
+   "max": 235.0,
+   "n": 1,
+   "p90": 235.0,
+   "reference": 235.0,
+   "thin": true
+  },
+  "Pinus ayacahuite": {
+   "max": 130.0,
+   "n": 1,
+   "p90": 130.0,
+   "reference": 130.0,
+   "thin": true
+  },
+  "Pinus banksiana": {
+   "max": 110.0,
+   "n": 1,
+   "p90": 110.0,
+   "reference": 110.0,
+   "thin": true
+  },
+  "Pinus brutia": {
+   "max": 150.0,
+   "n": 2,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Pinus bungeana": {
+   "max": 600.0,
+   "n": 2,
+   "p90": 600.0,
+   "reference": 600.0,
+   "thin": true
+  },
+  "Pinus canariensis": {
+   "max": 800.0,
+   "n": 2,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Pinus cembra": {
+   "max": 800.0,
+   "n": 2,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Pinus densiflora": {
+   "max": 350.0,
+   "n": 1,
+   "p90": 350.0,
+   "reference": 350.0,
+   "thin": true
+  },
+  "Pinus gerardiana": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Pinus halepensis": {
+   "max": 180.0,
+   "n": 11,
+   "p90": 164.0,
+   "reference": 164.0,
+   "thin": false
+  },
+  "Pinus heldreichii": {
+   "max": 1400.0,
+   "n": 1,
+   "p90": 1400.0,
+   "reference": 1400.0,
+   "thin": true
+  },
+  "Pinus luchuensis": {
+   "max": 310.0,
+   "n": 2,
+   "p90": 310.0,
+   "reference": 310.0,
+   "thin": true
+  },
+  "Pinus nigra": {
+   "max": 270.0,
+   "n": 4,
+   "p90": 270.0,
+   "reference": 270.0,
+   "thin": true
+  },
+  "Pinus parviflora": {
+   "max": 710.0,
+   "n": 3,
+   "p90": 710.0,
+   "reference": 710.0,
+   "thin": true
+  },
+  "Pinus pinea": {
+   "max": 400.0,
+   "n": 12,
+   "p90": 240.0,
+   "reference": 240.0,
+   "thin": false
+  },
+  "Pinus radiata": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Pinus resinosa": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Pinus roxburghii": {
+   "max": 200.0,
+   "n": 2,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Pinus sabiniana": {
+   "max": 172.0,
+   "n": 1,
+   "p90": 172.0,
+   "reference": 172.0,
+   "thin": true
+  },
+  "Pinus strobus": {
+   "max": 130.0,
+   "n": 1,
+   "p90": 130.0,
+   "reference": 130.0,
+   "thin": true
+  },
+  "Pinus sylvestris": {
+   "max": 500.0,
+   "n": 6,
+   "p90": 400.0,
+   "reference": 500.0,
+   "thin": true
+  },
+  "Pinus thunbergii": {
+   "max": 700.0,
+   "n": 7,
+   "p90": 450.0,
+   "reference": 700.0,
+   "thin": true
+  },
+  "Pistacia lentiscus": {
+   "max": 1000.0,
+   "n": 3,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Platanus acerifolia": {
+   "max": 390.0,
+   "n": 192,
+   "p90": 260.0,
+   "reference": 260.0,
+   "thin": false
+  },
+  "Platanus hispanica": {
+   "max": 115.0,
+   "n": 1,
+   "p90": 115.0,
+   "reference": 115.0,
+   "thin": true
+  },
+  "Platanus mexicana": {
+   "max": 45.0,
+   "n": 1,
+   "p90": 45.0,
+   "reference": 45.0,
+   "thin": true
+  },
+  "Platanus occidentalis": {
+   "max": 450.0,
+   "n": 6,
+   "p90": 400.0,
+   "reference": 450.0,
+   "thin": true
+  },
+  "Platanus orientalis": {
+   "max": 1400.0,
+   "n": 51,
+   "p90": 580.0,
+   "reference": 580.0,
+   "thin": false
+  },
+  "Platycladus orientalis": {
+   "max": 1100.0,
+   "n": 2,
+   "p90": 1100.0,
+   "reference": 1100.0,
+   "thin": true
+  },
+  "Podocarpus neriifolius": {
+   "max": 130.0,
+   "n": 2,
+   "p90": 130.0,
+   "reference": 130.0,
+   "thin": true
+  },
+  "Populus alba": {
+   "max": 166.0,
+   "n": 2,
+   "p90": 166.0,
+   "reference": 166.0,
+   "thin": true
+  },
+  "Populus balsamifera": {
+   "max": 100.0,
+   "n": 1,
+   "p90": 100.0,
+   "reference": 100.0,
+   "thin": true
+  },
+  "Populus berolinensis": {
+   "max": 96.0,
+   "n": 1,
+   "p90": 96.0,
+   "reference": 96.0,
+   "thin": true
+  },
+  "Populus canadensis": {
+   "max": 276.0,
+   "n": 13,
+   "p90": 166.0,
+   "reference": 166.0,
+   "thin": false
+  },
+  "Populus canescens": {
+   "max": 180.0,
+   "n": 5,
+   "p90": 180.0,
+   "reference": 180.0,
+   "thin": true
+  },
+  "Populus nigra": {
+   "max": 240.0,
+   "n": 8,
+   "p90": 200.0,
+   "reference": 240.0,
+   "thin": true
+  },
+  "Prosopis torquata": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Prunus armeniaca": {
+   "max": 125.0,
+   "n": 1,
+   "p90": 125.0,
+   "reference": 125.0,
+   "thin": true
+  },
+  "Prunus avium": {
+   "max": 250.0,
+   "n": 2,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Prunus dulcis": {
+   "max": 250.0,
+   "n": 1,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Prunus itosakura": {
+   "max": 1400.0,
+   "n": 7,
+   "p90": 1300.0,
+   "reference": 1400.0,
+   "thin": true
+  },
+  "Prunus jamasakura": {
+   "max": 1200.0,
+   "n": 2,
+   "p90": 1200.0,
+   "reference": 1200.0,
+   "thin": true
+  },
+  "Prunus mahaleb": {
+   "max": 270.0,
+   "n": 2,
+   "p90": 270.0,
+   "reference": 270.0,
+   "thin": true
+  },
+  "Prunus mume": {
+   "max": 1125.0,
+   "n": 1,
+   "p90": 1125.0,
+   "reference": 1125.0,
+   "thin": true
+  },
+  "Prunus subhirtella": {
+   "max": 2000.0,
+   "n": 9,
+   "p90": 1500.0,
+   "reference": 2000.0,
+   "thin": true
+  },
+  "Prunus yedoensis": {
+   "max": 118.0,
+   "n": 2,
+   "p90": 118.0,
+   "reference": 118.0,
+   "thin": true
+  },
+  "Pseudobombax ellipticum": {
+   "max": 170.0,
+   "n": 1,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Pseudotsuga menziesii": {
+   "max": 1200.0,
+   "n": 11,
+   "p90": 1200.0,
+   "reference": 1200.0,
+   "thin": false
+  },
+  "Pterocarya fraxinifolia": {
+   "max": 205.0,
+   "n": 24,
+   "p90": 168.0,
+   "reference": 168.0,
+   "thin": false
+  },
+  "Pterocarya rehderiana": {
+   "max": 106.0,
+   "n": 1,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Pyrus communis": {
+   "max": 220.0,
+   "n": 8,
+   "p90": 220.0,
+   "reference": 220.0,
+   "thin": true
+  },
+  "Pyrus elaeagrifolia": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Pyrus spinosa": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Quercus agrifolia": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Quercus alba": {
+   "max": 650.0,
+   "n": 6,
+   "p90": 380.0,
+   "reference": 650.0,
+   "thin": true
+  },
+  "Quercus buckleyi": {
+   "max": 300.0,
+   "n": 1,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Quercus canariensis": {
+   "max": 110.0,
+   "n": 1,
+   "p90": 110.0,
+   "reference": 110.0,
+   "thin": true
+  },
+  "Quercus cerris": {
+   "max": 200.0,
+   "n": 8,
+   "p90": 191.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Quercus coccifera": {
+   "max": 700.0,
+   "n": 1,
+   "p90": 700.0,
+   "reference": 700.0,
+   "thin": true
+  },
+  "Quercus coccinea": {
+   "max": 126.0,
+   "n": 1,
+   "p90": 126.0,
+   "reference": 126.0,
+   "thin": true
+  },
+  "Quercus crenata": {
+   "max": 400.0,
+   "n": 2,
+   "p90": 400.0,
+   "reference": 400.0,
+   "thin": true
+  },
+  "Quercus dentata": {
+   "max": 400.0,
+   "n": 2,
+   "p90": 400.0,
+   "reference": 400.0,
+   "thin": true
+  },
+  "Quercus frainetto": {
+   "max": 350.0,
+   "n": 8,
+   "p90": 180.0,
+   "reference": 350.0,
+   "thin": true
+  },
+  "Quercus fusiformis": {
+   "max": 600.0,
+   "n": 2,
+   "p90": 600.0,
+   "reference": 600.0,
+   "thin": true
+  },
+  "Quercus ilex": {
+   "max": 1400.0,
+   "n": 35,
+   "p90": 550.0,
+   "reference": 550.0,
+   "thin": false
+  },
+  "Quercus ithaburensis": {
+   "max": 900.0,
+   "n": 2,
+   "p90": 900.0,
+   "reference": 900.0,
+   "thin": true
+  },
+  "Quercus lyrata": {
+   "max": 135.0,
+   "n": 1,
+   "p90": 135.0,
+   "reference": 135.0,
+   "thin": true
+  },
+  "Quercus macrocarpa": {
+   "max": 500.0,
+   "n": 10,
+   "p90": 400.0,
+   "reference": 400.0,
+   "thin": false
+  },
+  "Quercus montana": {
+   "max": 250.0,
+   "n": 1,
+   "p90": 250.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Quercus palustris": {
+   "max": 190.0,
+   "n": 4,
+   "p90": 190.0,
+   "reference": 190.0,
+   "thin": true
+  },
+  "Quercus petraea": {
+   "max": 1000.0,
+   "n": 27,
+   "p90": 400.0,
+   "reference": 400.0,
+   "thin": false
+  },
+  "Quercus phellos": {
+   "max": 160.0,
+   "n": 2,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Quercus polymorpha": {
+   "max": 142.0,
+   "n": 1,
+   "p90": 142.0,
+   "reference": 142.0,
+   "thin": true
+  },
+  "Quercus pontica": {
+   "max": 56.0,
+   "n": 1,
+   "p90": 56.0,
+   "reference": 56.0,
+   "thin": true
+  },
+  "Quercus pubescens": {
+   "max": 300.0,
+   "n": 4,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Quercus robur": {
+   "max": 2000.0,
+   "n": 229,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": false
+  },
+  "Quercus rubra": {
+   "max": 320.0,
+   "n": 22,
+   "p90": 260.0,
+   "reference": 260.0,
+   "thin": false
+  },
+  "Quercus shumardii": {
+   "max": 65.0,
+   "n": 1,
+   "p90": 65.0,
+   "reference": 65.0,
+   "thin": true
+  },
+  "Quercus species": {
+   "max": 350.0,
+   "n": 1,
+   "p90": 350.0,
+   "reference": 350.0,
+   "thin": true
+  },
+  "Quercus stellata": {
+   "max": 190.0,
+   "n": 1,
+   "p90": 190.0,
+   "reference": 190.0,
+   "thin": true
+  },
+  "Quercus suber": {
+   "max": 370.0,
+   "n": 7,
+   "p90": 250.0,
+   "reference": 370.0,
+   "thin": true
+  },
+  "Quercus turneri": {
+   "max": 161.0,
+   "n": 2,
+   "p90": 161.0,
+   "reference": 161.0,
+   "thin": true
+  },
+  "Quercus variabilis": {
+   "max": 450.0,
+   "n": 2,
+   "p90": 450.0,
+   "reference": 450.0,
+   "thin": true
+  },
+  "Quercus virgiliana": {
+   "max": 330.0,
+   "n": 2,
+   "p90": 330.0,
+   "reference": 330.0,
+   "thin": true
+  },
+  "Quercus virginiana": {
+   "max": 900.0,
+   "n": 17,
+   "p90": 900.0,
+   "reference": 900.0,
+   "thin": false
+  },
+  "Quercus warburgii": {
+   "max": 153.0,
+   "n": 1,
+   "p90": 153.0,
+   "reference": 153.0,
+   "thin": true
+  },
+  "Robinia pseudoacacia": {
+   "max": 430.0,
+   "n": 15,
+   "p90": 395.0,
+   "reference": 395.0,
+   "thin": false
+  },
+  "Salix alba": {
+   "max": 226.0,
+   "n": 5,
+   "p90": 226.0,
+   "reference": 226.0,
+   "thin": true
+  },
+  "Salix babylonica": {
+   "max": 126.0,
+   "n": 3,
+   "p90": 126.0,
+   "reference": 126.0,
+   "thin": true
+  },
+  "Salix fragilis": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Salix pendulina": {
+   "max": 17.0,
+   "n": 1,
+   "p90": 17.0,
+   "reference": 17.0,
+   "thin": true
+  },
+  "Salix rorida": {
+   "max": 300.0,
+   "n": 1,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Salix sepulcralis": {
+   "max": 130.0,
+   "n": 1,
+   "p90": 130.0,
+   "reference": 130.0,
+   "thin": true
+  },
+  "Samanea saman": {
+   "max": 350.0,
+   "n": 4,
+   "p90": 350.0,
+   "reference": 350.0,
+   "thin": true
+  },
+  "Sapindus mukorossi": {
+   "max": 300.0,
+   "n": 1,
+   "p90": 300.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Sassafras albidum": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Schinus longifolia": {
+   "max": 112.0,
+   "n": 1,
+   "p90": 112.0,
+   "reference": 112.0,
+   "thin": true
+  },
+  "Schinus molle": {
+   "max": 150.0,
+   "n": 3,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Schinus terebinthifolius": {
+   "max": 90.0,
+   "n": 1,
+   "p90": 90.0,
+   "reference": 90.0,
+   "thin": true
+  },
+  "Sequoia sempervirens": {
+   "max": 1600.0,
+   "n": 16,
+   "p90": 1500.0,
+   "reference": 1500.0,
+   "thin": false
+  },
+  "Sequoiadendron giganteum": {
+   "max": 3200.0,
+   "n": 34,
+   "p90": 173.0,
+   "reference": 173.0,
+   "thin": false
+  },
+  "Sorbus aucuparia": {
+   "max": 99.0,
+   "n": 1,
+   "p90": 99.0,
+   "reference": 99.0,
+   "thin": true
+  },
+  "Sorbus domestica": {
+   "max": 280.0,
+   "n": 2,
+   "p90": 280.0,
+   "reference": 280.0,
+   "thin": true
+  },
+  "Sorbus hemsleyi": {
+   "max": 50.0,
+   "n": 1,
+   "p90": 50.0,
+   "reference": 50.0,
+   "thin": true
+  },
+  "Sorbus intermedia": {
+   "max": 144.0,
+   "n": 1,
+   "p90": 144.0,
+   "reference": 144.0,
+   "thin": true
+  },
+  "Sorbus pseudomeinichii": {
+   "max": 20.0,
+   "n": 1,
+   "p90": 20.0,
+   "reference": 20.0,
+   "thin": true
+  },
+  "Sorbus torminalis": {
+   "max": 145.0,
+   "n": 1,
+   "p90": 145.0,
+   "reference": 145.0,
+   "thin": true
+  },
+  "Stereospermum fimbriatum": {
+   "max": 90.0,
+   "n": 1,
+   "p90": 90.0,
+   "reference": 90.0,
+   "thin": true
+  },
+  "Styphnolobium japonicum": {
+   "max": 1300.0,
+   "n": 19,
+   "p90": 270.0,
+   "reference": 270.0,
+   "thin": false
+  },
+  "Swietenia macrophylla": {
+   "max": 160.0,
+   "n": 1,
+   "p90": 160.0,
+   "reference": 160.0,
+   "thin": true
+  },
+  "Swietenia mahagoni": {
+   "max": 170.0,
+   "n": 1,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Tamarindus indica": {
+   "max": 200.0,
+   "n": 1,
+   "p90": 200.0,
+   "reference": 200.0,
+   "thin": true
+  },
+  "Taxodium ascendens": {
+   "max": 136.0,
+   "n": 1,
+   "p90": 136.0,
+   "reference": 136.0,
+   "thin": true
+  },
+  "Taxodium distichum": {
+   "max": 600.0,
+   "n": 17,
+   "p90": 210.0,
+   "reference": 210.0,
+   "thin": false
+  },
+  "Taxodium mucronatum": {
+   "max": 3000.0,
+   "n": 8,
+   "p90": 700.0,
+   "reference": 3000.0,
+   "thin": true
+  },
+  "Taxus baccata": {
+   "max": 5000.0,
+   "n": 48,
+   "p90": 1800.0,
+   "reference": 1800.0,
+   "thin": false
+  },
+  "Taxus cuspidata": {
+   "max": 3000.0,
+   "n": 2,
+   "p90": 3000.0,
+   "reference": 3000.0,
+   "thin": true
+  },
+  "Tectona grandis": {
+   "max": 145.0,
+   "n": 1,
+   "p90": 145.0,
+   "reference": 145.0,
+   "thin": true
+  },
+  "Terminalia catappa": {
+   "max": 230.0,
+   "n": 2,
+   "p90": 230.0,
+   "reference": 230.0,
+   "thin": true
+  },
+  "Tetraclinis articulata": {
+   "max": 106.0,
+   "n": 1,
+   "p90": 106.0,
+   "reference": 106.0,
+   "thin": true
+  },
+  "Thuja plicata": {
+   "max": 1200.0,
+   "n": 7,
+   "p90": 160.0,
+   "reference": 1200.0,
+   "thin": true
+  },
+  "Thujopsis dolabrata": {
+   "max": 800.0,
+   "n": 1,
+   "p90": 800.0,
+   "reference": 800.0,
+   "thin": true
+  },
+  "Tilia cordata": {
+   "max": 1050.0,
+   "n": 46,
+   "p90": 700.0,
+   "reference": 700.0,
+   "thin": false
+  },
+  "Tilia euchlora": {
+   "max": 130.0,
+   "n": 2,
+   "p90": 130.0,
+   "reference": 130.0,
+   "thin": true
+  },
+  "Tilia europaea": {
+   "max": 500.0,
+   "n": 43,
+   "p90": 420.0,
+   "reference": 420.0,
+   "thin": false
+  },
+  "Tilia juranyana": {
+   "max": 110.0,
+   "n": 1,
+   "p90": 110.0,
+   "reference": 110.0,
+   "thin": true
+  },
+  "Tilia mandshurica": {
+   "max": 150.0,
+   "n": 1,
+   "p90": 150.0,
+   "reference": 150.0,
+   "thin": true
+  },
+  "Tilia miqueliana": {
+   "max": 1200.0,
+   "n": 2,
+   "p90": 1200.0,
+   "reference": 1200.0,
+   "thin": true
+  },
+  "Tilia platyphyllos": {
+   "max": 1300.0,
+   "n": 59,
+   "p90": 1000.0,
+   "reference": 1000.0,
+   "thin": false
+  },
+  "Tilia tomentosa": {
+   "max": 196.0,
+   "n": 18,
+   "p90": 190.0,
+   "reference": 190.0,
+   "thin": false
+  },
+  "Tipuana tipu": {
+   "max": 155.0,
+   "n": 6,
+   "p90": 125.0,
+   "reference": 155.0,
+   "thin": true
+  },
+  "Torreya nucifera": {
+   "max": 1000.0,
+   "n": 6,
+   "p90": 900.0,
+   "reference": 1000.0,
+   "thin": true
+  },
+  "Tsuga canadensis": {
+   "max": 115.0,
+   "n": 1,
+   "p90": 115.0,
+   "reference": 115.0,
+   "thin": true
+  },
+  "Ulmus americana": {
+   "max": 226.0,
+   "n": 9,
+   "p90": 210.0,
+   "reference": 226.0,
+   "thin": true
+  },
+  "Ulmus glabra": {
+   "max": 300.0,
+   "n": 14,
+   "p90": 220.0,
+   "reference": 220.0,
+   "thin": false
+  },
+  "Ulmus hollandica": {
+   "max": 196.0,
+   "n": 16,
+   "p90": 175.0,
+   "reference": 175.0,
+   "thin": false
+  },
+  "Ulmus laevis": {
+   "max": 300.0,
+   "n": 8,
+   "p90": 270.0,
+   "reference": 300.0,
+   "thin": true
+  },
+  "Ulmus minor": {
+   "max": 1100.0,
+   "n": 8,
+   "p90": 350.0,
+   "reference": 1100.0,
+   "thin": true
+  },
+  "Ulmus procera": {
+   "max": 420.0,
+   "n": 6,
+   "p90": 346.0,
+   "reference": 420.0,
+   "thin": true
+  },
+  "Ulmus thomasii": {
+   "max": 60.0,
+   "n": 1,
+   "p90": 60.0,
+   "reference": 60.0,
+   "thin": true
+  },
+  "Washingtonia filifera": {
+   "max": 170.0,
+   "n": 4,
+   "p90": 170.0,
+   "reference": 170.0,
+   "thin": true
+  },
+  "Washingtonia robusta": {
+   "max": 165.0,
+   "n": 5,
+   "p90": 165.0,
+   "reference": 165.0,
+   "thin": true
+  },
+  "Wisteria floribunda": {
+   "max": 1300.0,
+   "n": 4,
+   "p90": 1300.0,
+   "reference": 1300.0,
+   "thin": true
+  },
+  "Xanthorrhoea preissii": {
+   "max": 450.0,
+   "n": 1,
+   "p90": 450.0,
+   "reference": 450.0,
+   "thin": true
+  },
+  "Zelkova carpinifolia": {
+   "max": 250.0,
+   "n": 9,
+   "p90": 217.0,
+   "reference": 250.0,
+   "thin": true
+  },
+  "Zelkova serrata": {
+   "max": 1900.0,
+   "n": 14,
+   "p90": 1500.0,
+   "reference": 1500.0,
+   "thin": false
+  },
+  "Ziziphus jujuba": {
+   "max": 70.0,
+   "n": 1,
+   "p90": 70.0,
+   "reference": 70.0,
+   "thin": true
+  }
+ },
  "built_from": {
+  "age_records": 2531,
+  "age_species": 372,
   "genera": 239,
   "records": 8096,
   "species": 504
