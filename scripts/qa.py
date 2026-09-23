@@ -2037,9 +2037,14 @@ def check_every_tree_you_gave_us_comes_back():
         return ["site/dist/account/index.html is missing: the account page did "
                 "not build, so nobody can see the trees they added"]
     html = page.read_text(encoding="utf-8")
+    # The table NAME only, never the whole query string. These urls are built
+    # by concatenation in the source, so "/rest/v1/submissions" + "?select=..."
+    # never appears contiguously in the built page, and a check that asked for
+    # the whole thing would fail on a page that is perfectly correct. Caught
+    # before the first build that ran it, which is luckier than it deserved.
     for table, what in (("sightings", "trees added with the app's camera"),
                         ("submissions", "trees sent through the website's form")):
-        if "/rest/v1/%s?select=" % table not in html:
+        if "/rest/v1/%s" % table not in html:
             out.append("/account never reads the %s table, so %s are invisible "
                        "to the person who added them (the 2026-09-23 loop: the "
                        "thank-you mail sends them to a page that shows nothing)"

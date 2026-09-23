@@ -1108,11 +1108,13 @@ footer { border-top: 1px solid var(--cream-dark); }
    rhythm. iNaturalist does what we did, ragged and clustered left, and it is
    the one of the three that reads as old.
 
-   auto-fit rather than a fixed four, so the tablet band between 800 and about
-   1000 drops to three and then two instead of squeezing four columns of
-   nothing. The left edge stays on --page-max either way, which is the 2026-09-17
-   fix and is not this rule's to touch. */
-.footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+   auto-fit on the SAME 200px track minimum .dir-cols uses, so the two grids
+   break at the same widths rather than only agreeing on a wide screen: both
+   hold four columns down to about 950 and both drop to three below it. A fixed
+   four would have kept four in the footer while the block above went to three.
+   The left edge stays on --page-max either way, which is the 2026-09-17 fix and
+   is not this rule's to touch. */
+.footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                gap: 2rem; align-items: start; margin-bottom: 1.75rem; }
 .footer-about { max-width: none; }
 /* The copyright left, the languages hard right, on one line under a hairline. */
