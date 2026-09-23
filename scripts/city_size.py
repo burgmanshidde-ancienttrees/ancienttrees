@@ -65,13 +65,32 @@ def entity(qid):
 
 
 def claim_value(ent, prop):
-    for c in ent.get("claims", {}).get(prop, []):
+    """The CURRENT value, not the first one written down.
+
+    Wikidata keeps every census a place has ever had, as separate P1082
+    statements qualified with P585, point in time. Taking the first one handed
+    Berlin a population of 1,200 (a medieval figure), London 1,011,157 and Hong
+    Kong 3.1 million. So: prefer the statement Wikidata itself marks preferred,
+    otherwise the one with the latest point in time.
+    """
+    claims = ent.get("claims", {}).get(prop, [])
+    best = None
+    for c in claims:
         v = c.get("mainsnak", {}).get("datavalue", {}).get("value")
-        if isinstance(v, dict) and "amount" in v:
-            return abs(float(v["amount"]))
         if isinstance(v, dict) and "id" in v:
             return v["id"]
-    return None
+        if not (isinstance(v, dict) and "amount" in v):
+            continue
+        when = ""
+        for q in c.get("qualifiers", {}).get("P585", []):
+            t = q.get("datavalue", {}).get("value", {}).get("time")
+            if t:
+                when = max(when, t)
+        rank = 2 if c.get("rank") == "preferred" else (0 if c.get("rank") == "deprecated" else 1)
+        key = (rank, when)
+        if best is None or key > best[0]:
+            best = (key, abs(float(v["amount"])))
+    return best[1] if best else None
 
 
 def country_label(qid):
@@ -79,6 +98,37 @@ def country_label(qid):
         return entity(qid).get("labels", {}).get("en", {}).get("value")
     except Exception:
         return None
+
+
+# English Wikipedia titles that are not the place we mean. "New York" is the
+# STATE there, which handed the city 19.4 million people and the wrong tier.
+ALIAS = {"New York": "New York City", "Washington DC": "Washington, D.C.",
+         "Mexico City": "Mexico City", "Quebec": "Quebec City",
+         "Luxembourg": "Luxembourg City", "Kuwait": "Kuwait City",
+         "Panama": "Panama City", "Guatemala": "Guatemala City"}
+
+
+def by_wikipedia(name):
+    """Resolve through the English Wikipedia article of that exact name.
+
+    This is the accurate route and it should have been the first one: the
+    queue's own `demand` column is English Wikipedia pageviews, so the article
+    that measures a place's attention is the article that should give its size.
+    Searching by label instead handed Albuquerque a population of 3,785 (a
+    village in Spain), New York the population of the STATE, and found nothing
+    at all for Aarhus, Antwerp or Auckland.
+    """
+    name = ALIAS.get(name, name)
+    q = urllib.parse.urlencode({"action": "wbgetentities", "sites": "enwiki", "titles": name,
+                                "format": "json", "props": "claims|labels", "languages": "en"})
+    ents = get(f"{API}?{q}").get("entities", {})
+    for qid, ent in ents.items():
+        if qid.startswith("-") or "missing" in ent:
+            continue
+        pop = claim_value(ent, "P1082")
+        if pop:
+            return {"qid": qid, "population": int(pop), "via": "enwiki"}
+    return None
 
 
 def resolve(name, country, countries):
@@ -142,7 +192,7 @@ def main():
     print(f"{len(cache)} cached, {len(todo)} to resolve")
     for i, c in enumerate(todo, 1):
         try:
-            hit = resolve(c["city"], c.get("country") or "", countries)
+            hit = by_wikipedia(c["city"]) or resolve(c["city"], c.get("country") or "", countries)
         except Exception as e:
             print(f"  {c['city']}: {e}")
             hit = None

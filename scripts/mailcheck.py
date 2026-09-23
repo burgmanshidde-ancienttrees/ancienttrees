@@ -52,6 +52,7 @@ rather than rules about them, and imitate by proximity.
 """
 import glob
 import os
+import pathlib
 import re
 import sys
 
@@ -338,6 +339,7 @@ def check(path):
     body = body_of(text)
     hits = list(check_reply_length(path, body))
     hits += check_app_link(path, text, body)
+    hits += check_no_unshipped_feature(path, body)
     for label, patterns in CHECKS:
         for pat in patterns:
             for m in re.finditer(pat, body, re.I):
@@ -419,6 +421,54 @@ def lowercase_hits(body):
         return [("LOWER-CASE SENTENCES", "%d sentence(s)" % len(bad),
                  "%s ... capitals, per his 2026-08-12 ruling" % bad[0])]
     return []
+
+
+def check_no_unshipped_feature(path, body):
+    """A mail must not offer a feature the app deliberately hides.
+
+    Hidde, 2026-09-24, on a reply that had already gone out: "dont mention
+    walks in the mail - they are not available yet and dont untill they are."
+    The sentence was "so Bad Homburg is a walk", meant as "those trees are
+    within strolling distance of each other" and read, correctly, as the
+    product feature of that name.
+
+    It is not a slip about a word. Kit/Launch.swift hides walks, the season
+    story and every Plus label at launch, deliberately, because what is held
+    back is what Plus later introduces. A letter naming one of them promises a
+    stranger something they will open the app and fail to find, which is the
+    corpus rule about never promising what is not there, arriving in the one
+    register that had no check for it.
+
+    The list is READ from Launch.swift rather than typed here, so the day a
+    flag flips the word is allowed again with no edit to this file. That is the
+    whole point: a hand-kept list of forbidden words would still be forbidding
+    walks a year after they shipped.
+    """
+    root = pathlib.Path(__file__).resolve().parent.parent
+    launch = root / "ios" / "AncientTrees" / "AncientTrees" / "Kit" / "Launch.swift"
+    try:
+        src = launch.read_text(encoding="utf-8")
+    except Exception:
+        return []
+    # `public static let walks = ...contains("-show-walks")` means hidden unless
+    # a debug argument is passed, which no real phone ever passes.
+    hidden = re.findall(r"public static let (\w+) = ProcessInfo\.processInfo"
+                        r"\.arguments\.contains\("-show-[\w-]+"\)", src)
+    WORDS = {"walks": [r"\bwalks?\b"],
+             "season": [r"\bseason radar\b", r"\bseason story\b"],
+             "plus": [r"\bAncient Trees Plus\b"]}
+    out = []
+    for flag in hidden:
+        for pat in WORDS.get(flag, []):
+            m = re.search(pat, body, re.I)
+            if m:
+                line = [l for l in body.splitlines() if m.group(0).lower() in l.lower()]
+                out.append(("UNSHIPPED FEATURE (Kit/Launch.swift hides %s)" % flag,
+                            m.group(0),
+                            (line[0].strip() if line else "")[:140] +
+                            " -- the app does not show this to anybody yet, so a "
+                            "reader is being promised something they cannot find."))
+    return out
 
 
 def check_reply_length(path, body):
