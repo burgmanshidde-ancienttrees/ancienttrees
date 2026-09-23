@@ -2,9 +2,9 @@
   "city": "New Orleans",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Three of these four stand within six hundred metres of each other in City Park, on a strip between City Park Avenue and Bayou Metairie that never flooded, not even in 2005. The bayou spent centuries dropping silt and raised the land a metre above the rest of the park, which is why the city's oldest live oaks are the ones on the high ground. Two are reckoned between seven and nine hundred years old and one stands on wooden crutches. The fourth is uptown by the zoo, and joined a society whose members are all trees in 1934.",
-  "meta_description": "Four remarkable oaks in New Orleans: a 700-year live oak on crutches, the last of the duelling oaks, and the Tree of Life beside the zoo.",
-  "question_meta": "New Orleans's oldest tree is the McDonogh Oak in City Park, reckoned at 700 to 800 years. Where it stands, and three more worth the walk.",
+  "intro": "Five of these six stand in City Park, which holds more registered live oaks than any other place on earth, and the three oldest sit on a strip between City Park Avenue and Bayou Metairie that never flooded, not even in 2005. The bayou spent centuries dropping silt and raised that ground a metre above the rest of the park, which is why the city's oldest oaks are the ones on the high ground. Two are reckoned between seven and nine hundred years old and one stands on wooden crutches. The sixth is uptown by the zoo.",
+  "meta_description": "Six remarkable trees in New Orleans: a 700-year live oak on crutches, the last duelling oak, an oak hung with wind chimes, and the Tree of Life.",
+  "question_meta": "New Orleans's oldest tree is the McDonogh Oak in City Park, reckoned at 700 to 800 years. Where it stands, and five more worth the walk.",
   "question_answer": "The oldest tree in New Orleans is the McDonogh Oak, a southern live oak in the Old Grove of City Park, between City Park Avenue and Bayou Metairie. City Park puts it at 700 to 800 years and other accounts stretch to 900, which would make it older than the city by five centuries. The trunk is over eight metres round and the crown reaches about forty six metres across, wide enough that the longest branches now rest on wooden crutches. The Anseman Oak, a few hundred metres west in the same grove, is given the same range and by some accounts is the older of the two. Nobody has cored either, so the honest answer is that they are the two oldest and the order between them is not settled.",
   "question_context": "Ages here are estimates from City Park and from the Old-Growth Forest Network, which added this grove in 2018 as the first site in Louisiana. None comes from a core sample. Live oak is difficult to date because it grows fast when young, slows unpredictably and often hollows, so a range of two centuries is the honest width. Girths are firmer: the trunk figures come from measured surveys and from the Live Oak Society, which has registered live oaks since 1934 and now lists over ten thousand across fourteen states. Two hundred and forty nine of them stand in City Park, more registered live oaks than anywhere else on earth. That society is a garden club rather than a government body, so it is used here to find and cross-check trees rather than as a register in its own right. Where a pin is marked approximate it means the street or the grove is known and the trunk is not, which in a grove of hundreds of old oaks is worth saying plainly.",
   "hero_tree_id": "nol_001",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are these free to visit?",
-      "a": "Yes, all four. City Park and Audubon Park are both open public parks with no entry charge. The Tree of Life stands outside the zoo fence, so you do not need a zoo ticket to reach it."
+      "a": "Yes, all six. City Park and Audubon Park are both open public parks with no entry charge. The Tree of Life stands outside the zoo fence, so you do not need a zoo ticket to reach it."
     }
   ],
   "trees": [
@@ -154,6 +154,72 @@
       "how_to_recognise": "An enormous low live oak with limbs running horizontally to the ground and back up again, right against the zoo fence.",
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "nol_005",
+      "name": "The Suicide Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "City Park, on Victory Avenue near Marconi Drive",
+        "latitude": 29.9885,
+        "longitude": -90.101,
+        "neighbourhood": "City Park"
+      },
+      "story": "The name is the reason most people come and it is worth stating plainly: sixteen men took their own lives under this tree over about twelve years, from the 1890s into the 1900s, when this corner of the park was a quiet distance from the city. The newspapers named it and the name stuck.\n\nWhat you stand in front of is one of three named survivors of the forest that covered this ground before New Orleans existed, the others being the McDonogh Oak and the Anseman Oak a few hundred metres south. One low branch does the thing live oaks do when nobody prunes them. It leaves the trunk, bends the whole way down to the grass, frames the walkway and rises again on the far side. Two giant limbs came off in the 1980s and one of them still lies underneath.\n\nNobody publishes an age for this one. The accounts that group it with the McDonogh and the Anseman put those two somewhere between seven and nine hundred years, and we have found no measurement of this trunk at all, so the honest answer is that it is old and undated. If you know a girth figure, or a survey that covers it, tell us and it goes on the page.",
+      "verified_sources": [
+        "https://www.theadvocate.com/gambit/new_orleans/news/blake_pontchartrain/article_4f2e2e10-c820-5d29-8cb1-61499d8f962a.html (Gambit / The Advocate, Blake Pontchartrain, answering where the Dueling Oaks and the Suicide Oak stand: Victory Avenue near Marconi Drive)",
+        "https://www.theadvocate.com/baton_rouge/sports/outdoors/10-spots-to-see-majestic-live-oaks-in-the-new-orleans-area/article_55e0cf23-03cd-5109-9804-bc313aff3592.html (The Advocate, guide to the area's live oaks: same location, and the low branch that frames the walkway)",
+        "https://www.myneworleans.com/old-and-magnificent/ (New Orleans Magazine, 'Old and Magnificent': names it with the McDonogh and Anseman oaks as remnants of the forest that predates the city, and records the two limbs lost in the 1980s)",
+        "https://nolahistoryguy.com/suicide-oak-city-park/ (NOLA History Guy, Edward Branley, on the sixteen deaths over roughly twelve years)"
+      ],
+      "access": "Free. Public city park, open daily.",
+      "transport": "City Park, about 6 km north of the French Quarter. Canal Streetcar to City Park / Museum, then twenty minutes northwest through the park, or park on Victory Avenue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the one low branch that leaves the trunk, bends to the ground across the walkway and rises again on the far side. It stands on Victory Avenue near Marconi Drive, in the west of the park.",
+      "verify_notes": "Added 2026-09-23. Location is the junction two Advocate pieces name, Victory Avenue by Marconi Drive, not a coordinate: nobody publishes one, so the pin is placed at that junction and marked approximate. No age and no girth found in any source; left empty rather than derived, because there is nothing to derive from. Species is City Park's own live oak and the sources call it one; no binomial is published for this individual. Sources were read through search result summaries: this sandbox cannot fetch the pages themselves, so a later pass should open all four and tighten the pin."
+    },
+    {
+      "id": "nol_006",
+      "name": "The Singing Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "about 125 years",
+      "age_min": 115,
+      "age_max": 135,
+      "location": {
+        "address": "City Park, east side of Big Lake, a short walk from the New Orleans Museum of Art",
+        "latitude": 29.9867,
+        "longitude": -90.0948,
+        "neighbourhood": "City Park"
+      },
+      "story": "Seven sets of wind chimes hang in this oak, the longest of them over four metres, and they are tuned so that the wind cannot play a wrong note. The scale is pentatonic, the five notes behind West African music, early jazz and gospel, which in this city is a deliberate choice rather than a musical convenience. They are painted black to disappear into the shadow of the branches, so most people hear the tree a while before they find it.\n\nThe chimes are Jim Hart's, hung as part of the Big Lake project that rebuilt this corner of the park after 2005. The oak itself is reckoned at about 125 years, which makes it the youngest tree we map in New Orleans by four centuries. It earns the walk the way a live oak does: a low wide crown reaching out over the grass on the lake's east side, with enough shade under it for an afternoon.\n\nA plaque at the foot asks the wind to bring you a melody, a smile and a sense of peace and nature. Nobody has published a girth for it, so if you carry a tape measure, we would like the number.",
+      "verified_sources": [
+        "https://neworleanscitypark.org/visit-city-park/big-lake/ (New Orleans City Park's own Big Lake page, on the Singing Oak and the Big Lake project)",
+        "https://www.atlasobscura.com/places/the-singing-oak-new-orleans-louisiana (Atlas Obscura: the chimes, the pentatonic tuning, the position beside the lake)",
+        "https://matadornetwork.com/read/the-singing-oak/ (Matador Network: 125 years, seven instruments, the longest 14 feet, painted black)",
+        "https://www.verylocal.com/video-meet-the-artist-behind-city-parks-singing-oak-tree/12905/ (Very Local, filmed interview with Jim Hart, the artist who hung them)"
+      ],
+      "access": "Free. Public city park, open daily.",
+      "transport": "City Park, beside the New Orleans Museum of Art. Canal Streetcar to City Park / Museum, then five minutes northwest to Big Lake.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the wind chimes hanging in its branches, seven sets of them, all painted black and the longest over four metres. It is the tree you can hear, on the east side of Big Lake.",
+      "verify_notes": "Added 2026-09-23. Age is the 125 years that several accounts give, widened to a band because none says who measured it. No girth published. Species: every source calls it an oak and the park's mature oaks are southern live oaks, and the low spreading form matches, but no source gives the binomial for this individual, so it is flagged. Pin is the east shore of Big Lake near the museum, from the descriptions, and marked approximate; the chimes settle which tree it is on arrival. Sources were read through search result summaries, this sandbox cannot fetch pages."
     }
   ]
 }
