@@ -208,10 +208,6 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
         <div class="panel-head">
           <h1>{U.exploreHeading}</h1>
           <p class="sheet-note">{U.exploreNote}</p>
-          {/* The map has no footer to put this in (footer={false}: the split
-              panel has no room), so it sits inline here, the same exception
-              the city pages already make. */}
-          <LanguagePicker current={lang} enPath="/explore" />
           <Fragment set:html={searchFormHtml} />
         </div>
       </div>
@@ -219,6 +215,12 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
         <div id="ex-panel" aria-live="polite"></div>
         <div class="panel-foot">
           <Fragment set:html={exploreProse} />
+          {/* The map has no footer (footer={false}), so the bottom of the
+              sheet is the footer, which is where komoot and AllTrails both
+              put this. It used to sit directly under the heading, above the
+              search field, which gave the language list the most valuable
+              line on the page. */}
+          <div class="panel-lang"><LanguagePicker current={lang} enPath="/explore" /></div>
         </div>
       </div>
     </aside>

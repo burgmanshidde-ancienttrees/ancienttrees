@@ -17,6 +17,10 @@ https://ancienttrees.app/bad-homburg/oak-at-the-bridge
 The Hammundeseiche has Friedewald to itself. The Schlosspark oak brought three
 more trees with it, so Bad Homburg is a walk.
 
+One question. The park has two big oaks, 5.39 m at the bridge and 4.94 m by the
+lake, and your 5 m sits between them. Both are on the map. Which one did you
+measure?
+
 I can see you sent the Hammundeseiche fourteen times, and that was our form
 rather than you. The button kept saying "Sending..." with your text still in
 it, so nothing told you it had worked. They all arrived. It is fixed as of

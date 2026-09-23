@@ -85,6 +85,35 @@ def cm(v):
     return f if 20 <= f <= 5000 else None
 
 
+def collect_ages():
+    """Ages, which we have MORE of than girths: 77 percent of published trees
+    carry one against 47 percent with a measurement.
+
+    Age is a second axis rather than the same one twice. Across species the two
+    are not interchangeable at all, because growth rate varies fourteenfold in
+    our own data, from 60 cm of girth per century for an olive or a yew to 836
+    for an ombu. Within a species they mostly agree, and where they disagree
+    the girth is the one that lies: a holm oak of a thousand years at 200 cm,
+    an 800 year yew at 292, a Scots pine of five centuries at 188. Every one of
+    those is under-ranked by thickness alone.
+
+    So the two are combined by taking the BETTER of the two, never by adding
+    them. Adding would count one fact twice for the ordinary tree, where the
+    age was calculated from the girth in the first place.
+    """
+    recs = []
+    for f in glob.glob("data/cities/*.json"):
+        for t in json.load(open(f)).get("trees", []):
+            a = t.get("age_max") or t.get("age_min")
+            try:
+                a = float(a)
+            except (TypeError, ValueError):
+                continue
+            if 10 <= a <= 6000:
+                recs.append((a, latin_from_our_species(t.get("species")), "published"))
+    return recs
+
+
 def collect():
     recs = []                                    # (cm, latin, source)
     for f in glob.glob("data/cities/*.json"):
@@ -134,8 +163,7 @@ def pct(vals, p):
     return vals[i]
 
 
-def build():
-    recs = collect()
+def bucket(recs):
     species, genera = {}, {}
     for g, lat, src in recs:
         b, gen = binomial(lat)
@@ -143,6 +171,14 @@ def build():
             species.setdefault(b, []).append(g)
         if gen:
             genera.setdefault(gen, []).append(g)
+    return species, genera
+
+
+def build():
+    recs = collect()
+    species, genera = bucket(recs)
+    arecs = collect_ages()
+    aspecies, agenera = bucket(arecs)
 
     def summarise(d):
         out = {}
@@ -157,12 +193,16 @@ def build():
         return out
 
     doc = {
-        "built_from": {"records": len(recs), "species": len(species), "genera": len(genera)},
+        "built_from": {"records": len(recs), "species": len(species), "genera": len(genera),
+                       "age_records": len(arecs), "age_species": len(aspecies)},
         "species": summarise(species),
         "genera": summarise(genera),
+        "age_species": summarise(aspecies),
+        "age_genera": summarise(agenera),
     }
     json.dump(doc, open(OUT, "w"), ensure_ascii=False, indent=1, sort_keys=True)
     print(f"{len(recs)} girth records -> {len(species)} species, {len(genera)} genera")
+    print(f"{len(arecs)} age records   -> {len(aspecies)} species, {len(agenera)} genera")
     print(f"written to {OUT}")
     return doc
 
@@ -171,18 +211,37 @@ def load():
     return json.load(open(OUT))
 
 
-def rel(name, girth_cm):
-    doc = load()
+def _rel(doc, skey, gkey, name, value, unit):
     b, gen = binomial(name)
-    row = doc["species"].get(b or "") or doc["genera"].get(gen or "")
-    level = "species" if (b and b in doc["species"]) else ("genus" if gen in doc["genera"] else None)
-    if not row:
+    row = doc[skey].get(b or "") or doc[gkey].get(gen or "")
+    level = "species" if (b and b in doc[skey]) else ("genus" if gen in doc[gkey] else None)
+    if not row or not value:
         return None, f"nothing known about {name}"
-    r = float(girth_cm) / row["reference"]
-    note = f"{r:.0%} of the {level} reference ({row['reference']:.0f} cm, n={row['n']}, max {row['max']:.0f})"
+    r = float(value) / row["reference"]
+    note = f"{r:.0%} of the {level} reference ({row['reference']:.0f} {unit}, n={row['n']}, max {row['max']:.0f})"
     if row["thin"]:
         note += "  THIN: fewer than ten records, treat as a hint"
     return r, note
+
+
+def rel(name, girth_cm):
+    return _rel(load(), "species", "genera", name, girth_cm, "cm")
+
+
+def rel_age(name, years):
+    return _rel(load(), "age_species", "age_genera", name, years, "yr")
+
+
+def remarkable(name, girth_cm=None, years=None):
+    """The better of the two, never the sum. Returns (score, which, note)."""
+    doc = load()
+    g, gn = _rel(doc, "species", "genera", name, girth_cm, "cm") if girth_cm else (None, None)
+    a, an = _rel(doc, "age_species", "age_genera", name, years, "yr") if years else (None, None)
+    if g is None and a is None:
+        return None, None, f"nothing measurable about {name}"
+    if a is None or (g is not None and g >= a):
+        return g, "girth", gn
+    return a, "age", an
 
 
 if __name__ == "__main__":
@@ -192,6 +251,9 @@ if __name__ == "__main__":
     elif a[0] == "--rel":
         r, note = rel(a[1], a[2])
         print(f"{a[1]} at {a[2]} cm: {note}")
+    elif a[0] == "--age":
+        r, note = rel_age(a[1], a[2])
+        print(f"{a[1]} at {a[2]} yr: {note}")
     elif a[0] == "--top":
         doc = load()
         rows = sorted(doc["species"].items(), key=lambda kv: -kv[1]["n"])[: int(a[1]) if len(a) > 1 else 20]
