@@ -16659,6 +16659,25 @@
    ],
    "trees": 26,
    "logged": true
+  },
+  {
+   "started": "2026-09-23T16:46:52+00:00",
+   "date": "2026-09-23",
+   "run_id": "35891073325",
+   "minutes": 75.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 451,
+   "denials": 14,
+   "denials_source": "permission_denials: Bash(cd && until && kill | head ...), Bash(find), Bash(for ; do ; gh | grep ...), Bash(jobs ; ps | grep | grep), Bash(ls | head ; echo ; cat ...), Bash(npx ; echo), Bash(npx), Bash(rm && echo), Bash(rm && git), Bash(rm && npx ; echo), Bash(subshell cd && cd && npx | tee ...), Bash(until ; do ; done ; echo)",
+   "ended": "success",
+   "tokens": 6164076,
+   "claims_held": [],
+   "commits": 2,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
