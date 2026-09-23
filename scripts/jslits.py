@@ -51,6 +51,39 @@ def check(path):
             out.append("%s:%d: a backtick inside the template literal ends it "
                        "early, so everything after is parsed as TypeScript and "
                        "the whole site fails to build: %s" % (path, line, snippet))
+            continue
+        out += lone_backslashes(path, text[m.end():end],
+                                text.count("\n", 0, m.end()) + 1)
+    return out
+
+
+def lone_backslashes(path, body, first_line):
+    """A backslash that the template literal eats on its way out.
+
+    The second half of the same trap, and a quieter one. These literals hold
+    JavaScript, so `\\n` in the source is what puts `\n` in the emitted string.
+    Write one backslash and the literal turns it into a real newline, in the
+    middle of a string, and the browser refuses the whole script. Nothing goes
+    red: the page builds, renders perfectly, and every function in that script
+    is simply missing.
+
+    That is how it happened on 2026-09-23: a patch script wrote `split('\n')`
+    into my-trees-js.ts, the account page's whole script died, and the only
+    thing that noticed was qa's own node-based parser, in CI, twenty-five
+    minutes into a build.
+
+    Measured over all 52 literals on the day it was written: not one lone
+    backslash, so this is a rule the codebase already keeps and now cannot
+    break by accident.
+    """
+    out = []
+    for n, line in enumerate(body.split("\n"), first_line):
+        for m in re.finditer(r"\\+", line):
+            if len(m.group()) % 2 == 1:
+                out.append("%s:%d: a lone backslash inside the template literal. "
+                           "The literal eats it, so what reaches the browser is "
+                           "not what is written here and the whole script may "
+                           "stop parsing: %s" % (path, n, line.strip()[:70]))
     return out
 
 

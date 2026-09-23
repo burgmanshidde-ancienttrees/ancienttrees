@@ -2032,10 +2032,13 @@ def check_every_tree_you_gave_us_comes_back():
     A third channel added later belongs on this list the day it is built.
     """
     out = []
-    page = DIST / "account" / "index.html"
-    if not page.exists():
-        return ["site/dist/account/index.html is missing: the account page did "
-                "not build, so nobody can see the trees they added"]
+    # This build writes account.html, not account/index.html. Written the wrong
+    # way round first and caught by the build that ran it.
+    page = next((p for p in (DIST / "account.html", DIST / "account" / "index.html")
+                 if p.exists()), None)
+    if page is None:
+        return ["the account page did not build (no account.html and no "
+                "account/index.html), so nobody can see the trees they added"]
     html = page.read_text(encoding="utf-8")
     # The table NAME only, never the whole query string. These urls are built
     # by concatenation in the source, so "/rest/v1/submissions" + "?select=..."
