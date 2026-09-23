@@ -30,6 +30,7 @@ import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -75,6 +76,55 @@ def ask(table, column):
         return True
 
 
+ANON = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb"
+
+
+def anon_can_post_a_tree():
+    """Try, with the key a stranger has. True means the door is open.
+
+    A column either exists or it does not and PostgREST will say so. A POLICY
+    answers no question at all; the only way to know whether the postbox is
+    shut is to push something through it. So this posts one marked row with the
+    publishable key and no session, and deletes it again with the service key
+    when it lands, because a door that turned out to be open has just been
+    walked through by this check.
+
+    Hidde, 2026-09-23: "i can suggest a tree without logging in". The rule that
+    it needs an account was set on 2026-08-21 and lived only in the form's
+    JavaScript, which is a courtesy to the person using it and never a
+    boundary. A check that reads our own source could not have found this; it
+    had to be asked of the database.
+    """
+    marker = "sqlcheck anon probe"
+    req = urllib.request.Request(
+        f"{SUPA}/rest/v1/submissions", method="POST",
+        data=json.dumps({"kind": "tree", "city": marker, "tree": "probe",
+                         "why": "automated probe, deleted immediately"}).encode(),
+        headers={"apikey": ANON, "Content-Type": "application/json",
+                 "Prefer": "return=minimal"})
+    try:
+        urllib.request.urlopen(req, timeout=20).read()
+    except urllib.error.HTTPError as e:
+        if e.code in (401, 403):
+            return False
+        print(f"sqlcheck: the anonymous probe answered {e.code}, not a verdict")
+        return False
+    except Exception as e:
+        print(f"sqlcheck: could not run the anonymous probe ({e.__class__.__name__})")
+        return False
+    # It landed. Take it straight back out.
+    gone = urllib.request.Request(
+        f"{SUPA}/rest/v1/submissions?city=eq.{urllib.parse.quote(marker)}",
+        method="DELETE",
+        headers={"apikey": KEY, "Authorization": "Bearer " + KEY})
+    try:
+        urllib.request.urlopen(gone, timeout=20).read()
+    except Exception:
+        print("sqlcheck: the probe row could NOT be deleted, remove it by hand: "
+              f"submissions where city = '{marker}'")
+    return True
+
+
 def main():
     if not KEY:
         print("sqlcheck: SUPABASE_SERVICE_KEY absent, nothing checked")
@@ -87,9 +137,21 @@ def main():
         seen.add(key)
         if not ask(table, column):
             missing.append((fname, table, column))
-    if not missing:
-        print(f"sqlcheck: {len(seen)} object(s), every migration is applied")
+    doors = []
+    if anon_can_post_a_tree():
+        doors.append("anybody can post a tree to submissions with no account at "
+                     "all (the publishable key alone). The form's own sign-in "
+                     "gate is JavaScript and is not a boundary. An anonymous row "
+                     "can never reach the sender's account page and can never be "
+                     "answered: supabase/postbox-needs-an-account.sql")
+    if not missing and not doors:
+        print(f"sqlcheck: {len(seen)} object(s), every migration is applied, "
+              f"and the postbox needs an account")
         return 0
+    for d in doors:
+        print("sqlcheck: " + d)
+    if not missing:
+        return 1
     print(f"sqlcheck: {len(missing)} migration(s) never pasted. "
           f"The code degrades quietly around these, which is why nothing else "
           f"says so:")
