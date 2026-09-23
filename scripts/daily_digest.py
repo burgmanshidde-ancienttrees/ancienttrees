@@ -591,6 +591,48 @@ def grouped_pages_lines(pages, pairs=None):
     return out
 
 
+def judgement_lines():
+    """What was sent in, and what we decided about it, every morning.
+
+    Hidde, 2026-09-23: "bij de daily digest voeg je toe welke beslissingen je
+    hebt gemaakt zodat ik ze kan controleren en evt het systeem verbeteren."
+    That last clause is the whole reason it is here rather than in a file he
+    would have to go and open. The rule for which trees earn a page
+    (DECISIONS.md 2026-09-23) is a first draft of somebody's taste, and the
+    only thing that improves it is him disagreeing with a specific verdict on a
+    specific tree. A decision he never sees cannot be corrected.
+
+    It scans first, so a submission that arrived overnight appears here the
+    same morning with its size score already computed, marked open."""
+    try:
+        import judgement
+    except ImportError:
+        return []
+    try:
+        judgement.scan()
+        doc = judgement.load()
+    except Exception as exc:          # a submission must never take the digest down
+        return ["", "**Submissions:** reading failed (%s)" % exc]
+    rows = doc.get("judgements", [])[:15]
+    if not rows:
+        return []
+    open_n = sum(1 for j in doc.get("judgements", []) if not j.get("verdict"))
+    out = ["", "**What was sent in, and what we decided**", "",
+           "| seen | what | where | size for its species | ours | Hidde |",
+           "|---|---|---|---|---|---|"]
+    for j in rows:
+        m = j.get("measure") or {}
+        sz = ("%.0f%% %s" % (m["score"] * 100, m.get("via") or "")
+              if m.get("score") is not None else "-")
+        out.append("| %s | %s | %s | %s | %s | %s |" % (
+            j.get("seen") or "-", (j.get("tree") or j.get("kind") or "-")[:38],
+            j.get("city") or "-", sz, j.get("verdict") or "open", j.get("hidde") or "-"))
+    out += ["", "%d waiting for a verdict. Disagree with one and the rule changes: "
+                "`python3 scripts/judgement.py --feedback <id> \"...\"`, and "
+                "`--learn` prints every verdict he has overruled." % open_n]
+    return out
+
+
 def copy_test_lines():
     """Where the running copy test stands, every morning.
 
@@ -840,6 +882,7 @@ def gsc_section(gsc):
         *learning_lines(pages, pairs),
         *grouped_pages_lines(pages, pairs),
         *copy_test_lines(),
+        *judgement_lines(),
         *language_lines(pages),
         *zero_click_queries(pages, pairs),
         *leak_lines,
