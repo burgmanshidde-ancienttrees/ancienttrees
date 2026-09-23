@@ -10,6 +10,45 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-23 (evening) - Copenhagen goes from 16 trees to 42, on one mail from the Danish tree register
+
+Hans Erik Lund, who runs the Dansk Traeregister, answered our August outreach on
+20 September with two things: written permission to use his photographs, credit
+required, and a hand-typed list of about sixty big Copenhagen trees with a
+register link, species, girth and height for each one.
+
+**What shipped.** 26 new trees, cop_017 to cop_042, every pin confirmed against
+a position the register itself verified with a date. 20 of them carry one of
+Lund's photographs, 5 carry a second one beside it. Six keep an honest gap
+because he photographs veterans by walking up to the bole, so the register holds
+superb trunk studies and no portrait. Copenhagen now has 42 trees and 28
+photographs, against 16 and 8 this morning.
+
+**Two corrections to trees that were already live.** cop_001 is a BLACK mulberry,
+Morus nigra, not a white one; the old reading was a bridge claim from the silk
+story, since silkworms are fed on white mulberry, and Lund's photograph of the
+fruit settles it. Its pin moved 76 m and the story was rewritten to say the silk
+link is a story Copenhagen tells rather than a proved fact. cop_005's pin moved
+146 m, confirmed by the register's own note about the stone mound our story
+already described.
+
+**The register was read rather than copied**, and its own legends corrected four
+headline numbers. Trepileegen ships at 890 cm, measured at chest height in 2017,
+not the 965 cm headline taken elsewhere on the trunk. Grondalsparken's hornbeam
+is four or five stems, so it claims nothing. The Caucasian oak carries two
+contradictory figures and the story says where the tape goes.
+
+**One tree failed on access and one photograph on provenance.** The Catalpa of
+Kuglegarden is a lead: a former naval courtyard now leased to private tenants,
+with sources disagreeing about whether the public may walk in, and hard rule 10
+says we do not guess. And two candidate photographs turned out not to be Lund's
+at all, one credited to GT and one to Knud Ib Christensen; the register hosts
+other photographers in the same directories. Both were caught before publication
+and a check now refuses the next one.
+
+FOR HIDDE: nothing is blocked. His three loose tips are recorded as leads with
+what each still needs, and the tallest beech in Denmark is one of them.
+
 ## 2026-09-23 (evening) - The footer's columns are the browse block's columns
 
 Hidde, on a screenshot: "de footer is qua alignment en design heel raar
