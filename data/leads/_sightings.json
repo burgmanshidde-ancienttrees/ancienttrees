@@ -400,7 +400,7 @@
     "nearest": []
    },
    "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "why": "LOOKED at 2026-09-23: a multi-stemmed broadleaf tree rooted directly into the stone rampart beside the East Gate ruins (東門跡) of Oka Castle (岡城跡) in Taketa, Oita, a nationally designated historic site (the castle behind \"Kojo no Tsuki\"). Genuinely striking, self-seeded on the ishigaki wall itself. corroborate.py finds no register entry within 100m and no encyclopaedia article about a tree here. Not yet species-identified (broadleaf, opposite branching, could be a zelkova or hackberry) and no source names this specific tree. Needs species ID and a second source before a page; the castle's own site (okajou.jp) or Taketa city's cultural-property list is the next place to check.",
    "seen": "2026-09-20"
   },
   {
@@ -424,8 +424,8 @@
     "nearest": []
    },
    "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
-   "seen": "2026-09-20"
+   "why": "LOOKED at 2026-09-23: a large tree standing alone on shrine ground 330m from acd2ee12 (same day, Taketa, Oita), beside a stone torii, lantern and a small offering marker, next to National Route 502. Reads as a shrine's sacred tree (shide/rope visible low on the trunk) but the shrine has no name in OSM (mapped only as an unnamed place_of_worship node) and corroborate.py finds no register entry within 100m and no encyclopaedia article. Checked Taketa's known designated tree (城原八幡社's sugi avenue, a city natural monument since 1974) and it sits 7km away, a different site. Needs the shrine's name before it can be researched further.",
+   "seen": "2026-09-22"
   },
   {
    "sighting_id": "8230d205-81b7-498a-b1ca-c70bfc009b95",
@@ -448,7 +448,7 @@
     "nearest": []
    },
    "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "why": "LOOKED at 2026-09-23: a genuinely large Japanese cedar (sugi), single straight bole well over a metre through, towering above a house and a bamboo stand at a shrine roughly 9km north of the other two Taketa sightings (a different site, in a separate part of the same city). A white interpretive signboard and a stone marker reading \"納色\" (offering) stand at its foot, the kind a shrine or municipality uses for a designated tree, and a torii is visible behind it. Nobody has transcribed the sign yet. No shrine name in OSM at this coordinate and corroborate.py finds no register entry within 100m and no encyclopaedia article. Strongest candidate of the Taketa batch: worth a return pass to read the sign or search Taketa city's own cultural-property list (竹田市内指定文化財等一覧表).",
    "seen": "2026-09-22"
   },
   {
@@ -472,7 +472,7 @@
     "nearest": []
    },
    "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "why": "LOOKED at 2026-09-23: a backlit, twin-trunked broadleaf tree in Kawaminami, Koyu district, Miyazaki, standing in semi-wild ground beside a small outbuilding roof, no shrine, plaque or tended setting visible. The reader's own name and girth (400cm) are self-reported, not a source, and \"kamfer\" (camphor) is unconfirmed from the photo alone: backlighting hides the leaves. corroborate.py finds no register entry within 100m and no encyclopaedia article. The least distinctive of this batch: no context marks it out from an ordinary roadside tree. Needs species confirmation and a real source before it is more than a lead.",
    "seen": "2026-09-22"
   },
   {
@@ -480,7 +480,7 @@
    "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
    "mine": true,
    "name": "Fig?",
-   "species": null,
+   "species": "Fig (Ficus sp.)",
    "age": null,
    "girth_cm": null,
    "girth_hugs": null,
@@ -496,8 +496,9 @@
     "nearest": []
    },
    "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
-   "seen": "2026-09-22"
+   "why": "LOOKED at 2026-09-23: a wide banyan-type fig with aerial roots and a strangler-like multi-stemmed base, beside a staked young windmill palm, in landscaped grounds at Aoshima (青島), Miyazaki City, a resort islet with its own subtropical plant garden (青島亜熱帯植物園). Reads as tended, garden ground rather than a wild site (mown lawn, stroller and playground path in frame). corroborate.py finds no register entry within 100m and no encyclopaedia article. Could be a genuine garden specimen or an ordinary planting; needs the garden's own records checked before it is more than a lead.",
+   "seen": "2026-09-22",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "sighting_id": "48129024-139c-4b61-9136-2a2bd746b52e",
@@ -520,7 +521,7 @@
     "nearest": []
    },
    "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "why": "LOOKED at 2026-09-23: an Araucaria (likely a bunya or hoop pine) on manicured resort lawn beside a restaurant building at Aoshima, Miyazaki, 110m from 12168ca4, with landscape lighting fixtures and palms in view. Reads as a planted ornamental specimen in a maintained garden setting rather than a remarkable or ancient tree: healthy, unremarkable girth for its species, no plaque or distinguishing feature. corroborate.py finds no register entry within 100m and no encyclopaedia article. Unlikely to clear the bar; kept as a lead rather than pursued further.",
    "seen": "2026-09-22"
   }
  ]
