@@ -18,7 +18,6 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-
 ## 2026-09-23 - Friedewald and Bad Homburg, from reader submissions
 
 **Friedewald: 1 tree, 0 flagged, 0 photos missing.** The Hammundeseiche,
@@ -965,3 +964,4 @@ verify beyond the coordinate. Filed as a lead rather than published (kept in
 mind for a future Taketa pass if more evidence ever turns up), outcome set to
 `open_question` on the submissions row, reply asks for a photo or the species.
 Row 110 marked processed.
+
