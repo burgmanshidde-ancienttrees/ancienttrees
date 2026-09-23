@@ -91,15 +91,26 @@ export const PARK_MIN_TREES = 5;
  * later wearing his approval. */
 export const PARK_WAIVER_MIN = 3;
 
-/** May this park have a page? Five trees, or a waiver in its own intro file.
+/** May this park have a page? Contract H's gate, both halves of it.
  *
- * Contract H (blueprint v1.20) gates a park page at five trees because below
- * that it is a thin page wearing a park's name. The waiver is per park, lives
- * in the data rather than in this code, and carries who approved it: an
- * exception nobody can trace is indistinguishable from the gate rotting. */
+ * Contract H (blueprint v1.20) asks for five trees AND a hand-written intro:
+ * "Both, or no page." Five trees because below that it is a thin page wearing
+ * a park's name; an intro because a park page nobody wrote is the thin page the
+ * gate exists to stop. The waiver lowers the FIRST half to three for one named
+ * park, never the second, and it lives in the data rather than in this code,
+ * carrying who approved it: an exception nobody can trace is indistinguishable
+ * from the gate rotting.
+ *
+ * The missing intro is not a caller's problem to remember. The first version of
+ * this function answered only the tree half and took the intro as optional, so
+ * /parks filtered on it, found a five-tree park with no intro, and died on
+ * `intro.data` while rendering. The whole build failed on one page. So a park
+ * with no intro is refused here, and every call site is correct by passing what
+ * it has. */
 export function parkPageIsAllowed(treeCount: number, intro?: { below_gate?: unknown } | null): boolean {
+  if (!intro) return false;
   if (treeCount >= PARK_MIN_TREES) return true;
-  return treeCount >= PARK_WAIVER_MIN && Boolean(intro?.below_gate);
+  return treeCount >= PARK_WAIVER_MIN && Boolean(intro.below_gate);
 }
 
 /** The named park a tree stands in, or null. Reads neighbourhood first,
