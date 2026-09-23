@@ -285,10 +285,7 @@ const year = new Date().getFullYear();
       <a href="/parks">{t.parks}</a>
       <a href="/collections">{t.collections}</a>
     </div>
-    {/* Seven links split into two columns of four and three rather than one
-        of seven, because the grid below wants four columns of one width and
-        because the product links and the credits answer different questions.
-        The heading used to read "Ancient Trees", which put the brand name
+    {/* The heading used to read "Ancient Trees", which put the brand name
         twice in one footer beside the wordmark. */}
     <div class="footer-col">
       <h4>{t.theProject}</h4>
@@ -296,12 +293,6 @@ const year = new Date().getFullYear();
       <a href="/contribute">{t.suggestTree}</a>
       {SPONSOR_URL ? <a href="/sponsor">{t.sponsor}</a> : null}
       <a href="/support">{t.support}</a>
-    </div>
-    <div class="footer-col">
-      <h4>{t.theData}</h4>
-      <a href="/sources">{t.sources}</a>
-      <a href="/privacy">{t.privacy}</a>
-      <a href="/terms">{t.terms}</a>
     </div>
   </div>
   {/* The map and routing credits live one level down, on /sources, which the
@@ -327,7 +318,23 @@ const year = new Date().getFullYear();
       page type with no translated route, so nothing here has to know which
       pages those are. */}
   <div class="footer-bar">
-    <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app.</span>
+    {/* Sources, privacy and terms are not a group and never were. They stood
+        in a column of their own under a heading I invented for them, which
+        Hidde read straight through: "the data is een beetje een raar cluster
+        term." Neither reference has such a column, measured 2026-09-24:
+        komoot prints Privacy Policy, Terms of Service, Community guidelines
+        and Imprint as small links beside its copyright at the very bottom,
+        and AllTrails puts Privacy Policy, Terms and Cookie Policy in a legal
+        strip well below its four columns. Sources belongs with them rather
+        than in the browse columns: forty of our registers are published under
+        a licence that obliges attribution, so it is an obligation you consult
+        and not a place to look around. */}
+    <div class="footer-legal">
+      <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app.</span>
+      <a href="/privacy">{t.privacy}</a>
+      <a href="/terms">{t.terms}</a>
+      <a href="/sources">{t.sources}</a>
+    </div>
     <LanguagePicker current={lang} enPath={enPath} />
   </div>
   </div>
