@@ -216,6 +216,10 @@ const parks = defineCollection({
     intro: z.string(),
     official_name: z.string().optional(),
     official_url: z.string().optional(),
+    // Contract H's five-tree gate, waived for this one park. Carries who
+    // said so and in whose words, because an exception without a name on it
+    // reads later as the gate having quietly moved (blueprint v1.19).
+    below_gate: z.object({ approved: z.string(), quote: z.string() }).optional(),
   }),
 });
 

@@ -11,6 +11,22 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-09-23 - The National Mall is live at four trees, on his waiver
+
+Hidde, told it sat one short of Contract H's gate: "gooi national mall ook
+maar live prima 3 voor n keer". So it is live, with the Jefferson Elm, the
+mulberry on its steel crutch, the Survey Lodge catalpas and the Smithsonian
+Witness Elm, and the page says four rather than pretending to five.
+
+The gate is now waivable per park down to three, blueprint v1.19. The
+waiver lives in the park's own intro file with his name and his words on
+it, not as a smaller number in the code, because an exception nobody can
+trace reads later as the gate having quietly rotted. `parkPageIsAllowed()`
+is the single place the page, the index, the home shelf and the tree-page
+link all ask, which they previously each answered with their own copy of
+the threshold.
+
+
 ## 2026-09-23 - The cheapest park on his American list is live. City Park, New Orleans, and why the National Mall is still one short
 
 Hidde's ask, after the US top ten: put the cheapest parks on that list
