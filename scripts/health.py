@@ -302,6 +302,26 @@ def failure_evidence(workflow):
         informative = [ln for ln in errors
                        if not any(m in ln.lower() for m in GENERIC_WRAPPER_MARKERS)]
         if not informative:
+            # Only the generic is_error wrapper fired, which names the SHAPE
+            # of the failure and nothing about its cause (see
+            # GENERIC_WRAPPER_MARKERS above). The SDK's own result JSON is
+            # still sitting in this same log, printed as plain
+            # `"duration_ms": N,` / `"num_turns": N,` lines (distinct from the
+            # `##[end-action ...;duration_ms=N]` action-timing lines, which
+            # have no quotes and use `=`), and it is a far sharper allowance
+            # fingerprint than the whole JOB's wall clock: a real allowance
+            # death is the Claude STEP dying in well under a second on its
+            # first turn, whatever npm ci and astro build in front of it cost.
+            # Written 2026-09-23 per REVIEW.md's WARN the same day: looks_
+            # starved()'s whole-job timestamps misclassified three straight
+            # review.yml allowance deaths as genuine breaks, because that
+            # workflow's own build-and-screenshot steps alone run 9-13
+            # minutes, comfortably over STARVED_SECONDS, before Claude ever
+            # gets a turn.
+            ms = re.search(r'"duration_ms":\s*(\d+)', log.stdout)
+            turns = re.search(r'"num_turns":\s*(\d+)', log.stdout)
+            if ms and turns and int(ms.group(1)) < 5000 and int(turns.group(1)) <= 2:
+                return "allowance", f'duration_ms {ms.group(1)}, num_turns {turns.group(1)}'
             return None
         return "broken", informative[0][:200]
     except Exception:
