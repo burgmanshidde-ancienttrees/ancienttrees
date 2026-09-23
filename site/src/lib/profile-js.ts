@@ -174,7 +174,7 @@ export const PROFILE_JS = `
       setText('n-species', Object.keys(species).length);
       setText('n-countries', Object.keys(countries).length);
       var mineEmpty = el('mine-empty');
-      if (mineEmpty) mineEmpty.hidden = Boolean(visited.length || window.atMineCount);
+      if (mineEmpty) mineEmpty.hidden = Boolean(visited.length || window.atMineCount || window.atSentCount);
     });
   }
 
@@ -183,9 +183,24 @@ export const PROFILE_JS = `
   window.atMineCounted = function(n) {
     window.atMineCount = n;
     setText('n-trees', (window.atVisitedCount || 0) + n);
-    var mineEmpty = el('mine-empty');
-    if (mineEmpty) mineEmpty.hidden = Boolean((window.atVisitedCount || 0) + n);
+    hideEmptyIfAnything();
   };
+
+  // A tree you have SENT us is not yet a tree you have, so it stays out of the
+  // Trees count, and it is very much something on this lane, so it takes the
+  // empty line off. Those are two different questions and this page answered
+  // both with one number until 2026-09-23.
+  window.atSentCounted = function(n) {
+    window.atSentCount = n;
+    hideEmptyIfAnything();
+  };
+
+  function hideEmptyIfAnything() {
+    var mineEmpty = el('mine-empty');
+    if (!mineEmpty) return;
+    mineEmpty.hidden = Boolean((window.atVisitedCount || 0) + (window.atMineCount || 0)
+                               + (window.atSentCount || 0));
+  }
 
   window.atLoadProfile = load;
   var s = C.session();

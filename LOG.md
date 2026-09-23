@@ -70,6 +70,124 @@ sourcing bar.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-09-23 - The first contributor from outside, and the form that told him nothing
+
+Somebody who is not Hidde sent us trees. Leon, signed up through Google on
+20 September, sixteen rows between then and the 22nd: two oaks and a
+worth-it vote on the Reinborn linde. Fourteen of the sixteen rows are the
+same oak.
+
+**Both trees are live.** [Friedewald](https://ancienttrees.app/friedewald)
+holds the **Hammundeseiche**, the thickest oak in Hessen at 8.65m round and
+25m tall, standing alone in a forest clearing where a village stood until
+1312; it publishes below the four-tree floor under the single-famous-tree
+exception. [Bad Homburg](https://ancienttrees.app/bad-homburg) is a
+four-tree walk in the Schlosspark built around his oak: the cedar in front
+of the royal wing (6.40m, planted 1822 from Kew seed, the city calls it the
+thickest and oldest of its kind in Germany), a 5.8m dawn redwood, his 5.39m
+oak and a 5.66m plane. Six more park trees kept as leads.
+
+**Why he sent one oak fourteen times, which is the part worth reading.**
+Two faults, both ours, both invisible to every gate we have.
+
+The **contribute form never hid itself**. `hidden` is display:none from the
+browser's own sheet and `.suggest-form` carries `display: flex`, which beats
+it. So after a successful send the button sat on "Sending..." with every
+field still full, under a thank-you line. The row had been saved. Nothing on
+screen said so. Hidde walked into the same thing this afternoon while we
+were reading Leon's rows, which is how it was found. This exact collision
+has now cost four visible faults and three of them were already written into
+style.css as comments beside per-class fixes; it is one global rule now, and
+`check_hidden_means_hidden()` refuses a stylesheet without it.
+
+And **/account did not read the submissions table**. The app's camera writes
+to `sightings`, the website's form writes to `submissions`, and My trees
+read the first only. The thank-you mail meanwhile says "you can see the
+trees you added on your account". Ten of his sixteen arrivals at the form
+came from /account: he was told to go and look, looked, saw the empty line
+with Add a tree under it, and sent the oak again. It now lists what you
+sent, one card per tree rather than per row, with the status and our answer
+on it. `check_every_tree_you_gave_us_comes_back()` names both tables.
+
+**FOR HIDDE.** The reply to Leon is drafted at
+`drafts/reply-leon-hessen.md`, mailcheck clean, and asks him what the form
+looked like from his side. It goes out on row 131 through the usual
+contributor pipeline. The app half of the account change is NOT built: a
+tree sent through the website still does not appear in the app's My trees,
+which is a cross-platform gap I opened deliberately to get the web fix in
+front of a live contributor today, and it is the next thing.
+
+## 2026-09-23 - The cheapest park on his American list is live. City Park, New Orleans, and why the National Mall is still one short
+
+Hidde's ask, after the US top ten: put the cheapest parks on that list
+live. Measured against Contract H's five-tree gate, two were within reach
+and the rest need three to five new trees each. City Park is live. The
+National Mall gained a tree and is one short, and the reason is worth
+writing down rather than working around.
+
+**City Park, New Orleans, is a park page at five trees.** Two went in, both
+of them trees people already walk to. The **Suicide Oak** on Victory Avenue
+is one of the three named survivors of the forest that stood here before
+the city did, along with the McDonogh and the Anseman we already map, and
+its name is the reason most people find it: sixteen men took their own
+lives under it between the 1890s and the 1900s. The **Singing Oak** on the
+east side of Big Lake carries seven sets of wind chimes hung by Jim Hart,
+tuned to a pentatonic scale so the wind cannot play a wrong note, and at
+about 125 years it is the youngest tree we map in New Orleans by four
+centuries. It earns the walk on what it does rather than on its age, which
+is the test this corpus applies.
+
+Both pins say `approximate` and both say so for the same honest reason:
+nobody publishes a coordinate for either, so the pin sits on the junction
+or the shore the sources name and the recognition line does the rest. The
+Singing Oak's is easy, it is the tree you can hear. The Suicide Oak's is
+the one low branch that leaves the trunk, bends to the grass across the
+walkway and rises again on the far side.
+
+**The National Mall is at four and I could not honestly make it five.** The
+new tree is the **Smithsonian Witness Elm**, accession number 1 in the
+Smithsonian Gardens Tree Collection, five and a half metres round with a
+crown thirty five metres across, standing at 9th and Constitution since
+long before the museum behind it opened in 1910. Its age is an open
+question we publish as one: the marker at its foot and the Smithsonian's
+own magazine say planted around 1850, Smithsonian Gardens says 200 or more
+years, and a planting record and a growth estimate disagreeing by half a
+century is not something to average.
+
+The fifth tree does not exist yet at our bar. What does exist, and what I
+refused, are two ways of faking it. Union Square's bur oak and Botanic
+Garden elm sit 700 metres from the Mall's group and belong to no park in
+our data; relabelling them would have taken the page over the gate in one
+edit, and they are Capitol Grounds rather than Mall. The second mulberry
+beside the witness mulberry is a separate trunk and our own entry already
+describes the pair, so splitting it in two is padding with extra steps.
+The Mall's remaining candidates are the 1930s elm rows, which are an
+avenue rather than a point, so this waits for a tree rather than for an
+argument.
+
+**What the hunt turned up on the side.** A Chinese hackberry at the
+Reynolds Center, planted 1900-1910 and called one of the oldest and
+largest of its species in the district by Smithsonian Gardens, is now a
+lead in `data/leads/washington-dc.json`: not on the Mall, single-sourced,
+and the first Celtis we would map in the US. And the Washington Monument
+witness mulberry came up in a search headline reading as a fallen tree,
+which is rung-3 work if true. It is not: it fell in May 2019, the Park
+Service propped it and it was standing on its crutch at the last on-site
+account we can cite. Our page already says exactly that.
+
+Counts corrected on both city pages while adding, because the check that
+catches this only catches the patterns it knows: New Orleans said four
+throughout, Washington said fourteen in its intro and **ten** in its
+access FAQ, which had been stale since the city passed ten trees.
+
+This sandbox reaches no source at all, so every fact above came from search
+result summaries and is recorded as such in each tree's `verify_notes`,
+with the pins to tighten. WebFetch, Wikimedia, Nominatim, Overpass and
+Wikidata all return 403 CONNECT here; the CI runner does not have that
+limit, so a night run can open all eight pages and tighten three pins
+cheaply.
+
 ## 2026-09-23 - Night run 2026-09-23 08:54 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
