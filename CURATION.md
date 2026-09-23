@@ -41,6 +41,20 @@ mostly overcast, and the rule that a POOR score ends the matter meant the
 measure was quietly rejecting the good whole-tree photographs of exactly the
 veterans we most want.
 
+## 2026-09-23 (late) - Copenhagen: 26 trees, 19 flagged, 26 photos missing
+
+Second write pass on Copenhagen, finishing a claim an earlier attempt in
+this window left uncommitted: cop_017 through cop_042. Five are Dyrehave
+veteran oaks 11-13km north of the city (day-trip, like the three already
+published); the rest sit inside Copenhagen itself, in J.C. Jacobsens Have,
+Bispebjerg and Vestre cemeteries, Landbohojskolens Have and street trees.
+19 of 26 flagged, mostly single-sourced or an approximate pin; none dead,
+none fabricated, all alive and publicly accessible. All 26 still need a
+photo. Rewrote the city intro, question_context and two FAQ answers that
+had gone stale: the thickest-tree claim now correctly names the London
+Plane of Landbohojskolens Have (6.71m, inside the city) rather than a tree
+that predates this batch.
+
 ## 2026-09-23 - Friedewald and Bad Homburg, from reader submissions
 
 **Friedewald: 1 tree, 0 flagged, 0 photos missing.** The Hammundeseiche,

@@ -8466,6 +8466,33 @@
     "note": "84 Hans Erik Lund candidates over 26 trees: 20 leads, 5 extras, 2 held, 57 rejected, ~12.9k per approved photograph against the 72k a Commons hunt used to cost. Found two files that were not his, credited to GT and to Knud Ib Christensen, which would have shipped under his permission.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Copenhagen (cop_017-029)",
+    "kind": "write",
+    "tokens": 75000,
+    "trees": 13,
+    "note": "13 Copenhagen stories plus recognition lines, 2,791 words, 3 best_time set from documented peaks (2 backed by existing phenology files). Followed two measurement corrections from verify_notes (cop_018 890cm not 965, cop_021 848cm/16.5m not 841/16.8) and kept cop_022's 416cm labelled as a 4-5 stem clump rather than a trunk. Finished a claim (write, Copenhagen) an earlier attempt in this window had made and not completed.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Copenhagen (cop_030-042)",
+    "kind": "write",
+    "tokens": 76000,
+    "trees": 13,
+    "note": "13 Copenhagen stories plus recognition lines, 2,810 words, 4 best_time set from existing sourced species files. Ran concurrently with the batch above on the same file; no collisions, both merged. cop_032 (Zelkova, 49m from published cop_005) hand-checked and confirmed a different species, not a duplicate.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Copenhagen merge + FAQ upkeep",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 26,
+    "note": "Merged both write passes into data/cities/copenhagen.json (16 to 42 trees). Rewrote the city's intro, question_context and two FAQ answers that quoted stale counts and a since-broken thickest-tree comparison (5 of the 26 new trees are Dyrehave veteran oaks outside the city, day-trip like the existing 3; the London Plane of Landbohojskolens Have, 6.71m single stem, is now the thickest tree actually inside the city). preflight.py and superlatives.py both clean. Also found and fixed a live break: the smoke test's off-screen-element check was tripping on a closed <details>'s phantom layout box (.nav-drop-menu), which had been failing scripts/smoke_test.py in CI on every push since the sheet styles landed; a fix already sat uncommitted in the working tree from an earlier attempt in this window, verified against a full rebuild and committed.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
