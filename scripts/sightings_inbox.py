@@ -411,6 +411,73 @@ def status():
     return 0
 
 
+
+def tips_with_photographs():
+    """Photographs sent with a TIP, shaped like sightings so nothing else changes.
+
+    Added 2026-09-23 with the contribute form's photo field. The two cameras
+    write to different tables for a reason that is not arbitrary: a photograph
+    taken on a tree's own page knows which tree and where it stands, so it is a
+    sighting; a photograph sent with a tip is about a tree we do not map, so
+    there is no coordinate at all and a browser cannot invent one.
+
+    They are converted here rather than read separately, because the whole of
+    this file downstream is about looking at a photograph and deciding, and
+    that judgement does not change with the table it arrived in. With no lat
+    and no lng, match() returns none and the tip becomes a lead, which is
+    exactly what a tree we do not map is.
+
+    THE REASON THIS EXISTS AT ALL, and it is the day's own lesson: the form was
+    given a photo field this morning, and a field nothing reads is the trap
+    that had just cost us a contributor. He was told to look at his account and
+    the account read the wrong table.
+    """
+    cols = "id,user_id,kind,city,tree,why,girth_cm,photo,created_at"
+    q = ("/rest/v1/submissions?select=" + cols +
+         "&photo=not.is.null&kind=in.(tree,city)&order=created_at.asc")
+    try:
+        rows = supa(q) or []
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace") if hasattr(e, "read") else ""
+        if e.code == 400 and "photo" in body and "does not exist" in body:
+            # supabase/submission-photos.sql is FOR HIDDE. Before the paste
+            # there are no such rows to read, and saying so once is better than
+            # a swallowed exception, which is how the girth column hid for two
+            # days.
+            print("sightings inbox: submissions.photo not migrated yet "
+                  "(supabase/submission-photos.sql is FOR HIDDE), no tips read")
+            return []
+        print(f"sightings inbox: could not read tips (HTTPError: {str(e)[:80]})")
+        return []
+    except Exception as e:
+        print(f"sightings inbox: could not read tips ({e.__class__.__name__}: {str(e)[:80]})")
+        return []
+    out = []
+    for r in rows:
+        out.append({
+            "user_id": r.get("user_id"),
+            # Stable and distinct from a sighting's uuid, so `done` can never
+            # confuse the two.
+            "id": "tip-%s" % r["id"],
+            "tree_id": None,
+            "name": (r.get("tree") or r.get("city") or "").strip(),
+            "note": (r.get("why") or "").strip(),
+            "species": None,
+            "age": None,
+            "girth_cm": r.get("girth_cm"),
+            "lat": None,
+            "lng": None,
+            "photo": r.get("photo"),
+            "shared": True,
+            "status": "sent",
+            "taken_at": r.get("created_at"),
+            "updated_at": r.get("created_at"),
+            "from_tip": True,
+            "city": (r.get("city") or "").strip(),
+        })
+    return out
+
+
 def main():
     if "--status" in sys.argv:
         return status()
@@ -452,6 +519,12 @@ def main():
     except Exception as e:
         print(f"sightings inbox: could not read sightings ({e.__class__.__name__}: {str(e)[:80]})")
         return 0
+    # AND THE PHOTOGRAPHS SENT WITH A TIP, which arrive in another table and
+    # are the same job once they are on disk.
+    tips = tips_with_photographs()
+    if tips:
+        print("sightings inbox: %d tip(s) carry a photograph" % len(tips))
+    rows = list(rows) + tips
     try:
         profiles = {p["user_id"]: p.get("display_name") or ""
                     for p in (supa("/rest/v1/profiles?select=user_id,display_name") or [])}

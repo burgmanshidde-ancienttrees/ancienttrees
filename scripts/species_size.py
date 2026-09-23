@@ -114,6 +114,54 @@ def collect_ages():
     return recs
 
 
+def collect_heights():
+    """Heights, the third axis (Hidde, 2026-09-23: "laten we inderdaad hoogte
+    meenemen, als derde as").
+
+    It was missing and the gap had a name: Hans Erik Lund's own mail points at
+    the tallest beech in Denmark, about 45 m, and under a rule that measures
+    only girth and age that tree scores nothing at all. The tallest of a species
+    in a whole country is unmistakably big for its species, and height is the
+    one dimension a visitor can see from a distance.
+
+    Units are checked rather than trusted, which is the ICNF lesson: Hawaii
+    publishes height_ft and everything else metres, so a 150 ft banyan would
+    read as taller than any tree on earth if the column name were believed.
+    """
+    recs = []
+    for f in glob.glob("data/cities/*.json"):
+        for t in json.load(open(f)).get("trees", []):
+            h = metres(t.get("height_m"))
+            if h:
+                recs.append((h, latin_from_our_species(t.get("species")), "published"))
+    for f in glob.glob("data/registers/*.json"):
+        try:
+            d = json.load(open(f))
+        except (ValueError, OSError):
+            continue
+        rows = d.get("trees") or d.get("rows") or (d if isinstance(d, list) else [])
+        if not isinstance(rows, list):
+            continue
+        for r in rows:
+            if not isinstance(r, dict):
+                continue
+            h = metres(r.get("height_m"))
+            if not h and r.get("height_ft"):
+                h = metres(r.get("height_ft"), factor=0.3048)
+            if h:
+                lat = r.get("latin") or r.get("species_latin") or r.get("species") or r.get("specie")
+                recs.append((h, lat, os.path.basename(f)))
+    return recs
+
+
+def metres(v, factor=1.0):
+    try:
+        f = float(re.sub(r"[^\d.,]", "", str(v)).replace(",", ".")) * factor
+    except (TypeError, ValueError):
+        return None
+    return f if 2 <= f <= 120 else None
+
+
 def collect():
     recs = []                                    # (cm, latin, source)
     for f in glob.glob("data/cities/*.json"):
@@ -179,6 +227,8 @@ def build():
     species, genera = bucket(recs)
     arecs = collect_ages()
     aspecies, agenera = bucket(arecs)
+    hrecs = collect_heights()
+    hspecies, hgenera = bucket(hrecs)
 
     def summarise(d):
         out = {}
@@ -194,15 +244,19 @@ def build():
 
     doc = {
         "built_from": {"records": len(recs), "species": len(species), "genera": len(genera),
-                       "age_records": len(arecs), "age_species": len(aspecies)},
+                       "age_records": len(arecs), "age_species": len(aspecies),
+                       "height_records": len(hrecs), "height_species": len(hspecies)},
         "species": summarise(species),
         "genera": summarise(genera),
         "age_species": summarise(aspecies),
         "age_genera": summarise(agenera),
+        "height_species": summarise(hspecies),
+        "height_genera": summarise(hgenera),
     }
     json.dump(doc, open(OUT, "w"), ensure_ascii=False, indent=1, sort_keys=True)
     print(f"{len(recs)} girth records -> {len(species)} species, {len(genera)} genera")
     print(f"{len(arecs)} age records   -> {len(aspecies)} species, {len(agenera)} genera")
+    print(f"{len(hrecs)} height records-> {len(hspecies)} species, {len(hgenera)} genera")
     print(f"written to {OUT}")
     return doc
 
@@ -232,16 +286,35 @@ def rel_age(name, years):
     return _rel(load(), "age_species", "age_genera", name, years, "yr")
 
 
-def remarkable(name, girth_cm=None, years=None):
-    """The better of the two, never the sum. Returns (score, which, note)."""
+def rel_height(name, height_m):
+    return _rel(load(), "height_species", "height_genera", name, height_m, "m")
+
+
+def remarkable(name, girth_cm=None, years=None, height_m=None):
+    """The BEST of the three, never the sum. Returns (score, which, note).
+
+    Three axes, because a tree can be remarkable in three ways and our data
+    carries all three: thick, old, tall. Adding them would count one fact twice
+    for the ordinary tree, whose age was calculated from its girth and whose
+    height follows its age. Taking the best rescues the cases where one axis
+    lies: the thousand-year holm oak with a two-metre trunk, and the tallest
+    beech in Denmark, which is not especially thick at all.
+    """
     doc = load()
-    g, gn = _rel(doc, "species", "genera", name, girth_cm, "cm") if girth_cm else (None, None)
-    a, an = _rel(doc, "age_species", "age_genera", name, years, "yr") if years else (None, None)
-    if g is None and a is None:
+    out = []
+    if girth_cm:
+        out.append((_rel(doc, "species", "genera", name, girth_cm, "cm"), "girth"))
+    if years:
+        out.append((_rel(doc, "age_species", "age_genera", name, years, "yr"), "age"))
+    if height_m:
+        out.append((_rel(doc, "height_species", "height_genera", name, height_m, "m"), "height"))
+    best = None
+    for (score, note), which in out:
+        if score is not None and (best is None or score > best[0]):
+            best = (score, which, note)
+    if best is None:
         return None, None, f"nothing measurable about {name}"
-    if a is None or (g is not None and g >= a):
-        return g, "girth", gn
-    return a, "age", an
+    return best
 
 
 if __name__ == "__main__":
@@ -251,6 +324,9 @@ if __name__ == "__main__":
     elif a[0] == "--rel":
         r, note = rel(a[1], a[2])
         print(f"{a[1]} at {a[2]} cm: {note}")
+    elif a[0] == "--height":
+        r, note = rel_height(a[1], a[2])
+        print(f"{a[1]} at {a[2]} m: {note}")
     elif a[0] == "--age":
         r, note = rel_age(a[1], a[2])
         print(f"{a[1]} at {a[2]} yr: {note}")

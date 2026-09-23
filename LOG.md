@@ -2,6 +2,53 @@
 
 <!-- archive-index -->
 
+## 2026-09-23 (afternoon) - The site takes photographs now, and had not deployed since the 19th
+
+Two things came out of walking the first outside contributor's trail.
+
+**THE SITE HAD NOT DEPLOYED FOR FOUR DAYS.** ancienttrees.app was serving
+commit 352b5c0 exactly, 3287 trees and 632 city files, which is what main
+held on 19 September. Not broken, not failing: `deploy.yml` simply was not
+being called. A push made with GITHUB_TOKEN never triggers another workflow
+and the night runs push with exactly that, so the site deploys only when
+somebody pushes from a laptop, and nobody did between the 19th and this
+morning. health.py has watched for this since 09-17 and could not see it,
+because it asks whether a RUN came after the last successful one and there
+were no runs at all; it reads main's own newest commit now. deploy.yml has a
+three-hourly cron, a scheduled build is no longer cancellable by a push, and
+/build.txt carries the commit the live site was built from, because
+/api/version.json hashes feed CONTENT and cannot answer "is this current".
+
+**THE WEBSITE CAN TAKE A PHOTOGRAPH OF A TREE.** Hidde: "het gaat er vooral
+op dat de contribute pagina wel fotos gaat aannemen toch?" It could not, and
+its own "What helps most" list has asked for "A photo you took yourself"
+since it was written. Two paths, because they are two cases (CONVENTIONS.md,
+"Taking a photograph of a place ON THE WEB"). On a tree we map, a control on
+that tree's page writing the same sightings row the app writes, so the whole
+existing pipeline works unchanged; the photo-less figure used to say "Send us
+yours" and link to a form with no file field, on 2,400 pages. On a tree we do
+not map, a field on the form, with the file hanging off the SUBMISSION,
+because no coordinate exists and a browser cannot invent one.
+sightings_inbox.py reads both, which is the morning's own lesson applied
+before it could bite again.
+
+**Also: both Schlosspark oaks are live rather than one.** The reader's tip
+said about five metres and the park's survey holds a 5.39 and a 4.94; we were
+about to attach his tip to one of them on no evidence. The reply asks which.
+
+**FOR HIDDE.** One line of SQL: `supabase/submission-photos.sql`. Until it is
+pasted, a tip with a photograph is retried without the photograph rather than
+lost, and the inbox says the column is missing rather than swallowing it.
+
+**What went wrong on my side, recorded because it is the useful part.** Four
+builds failed before one landed: night runs cancelling them, a backtick in a
+comment that ended a template literal, and a lone backslash that the literal
+ate, which killed the account page's entire script silently. My own first
+reproduction of that one said the script was FINE, because it simulated the
+template literal by halving double backslashes and nothing else. Both are
+checks now (scripts/jslits.py, in the pre-push hook), measured first: not one
+of the 52 literals carries a lone backslash today.
+
 ## 2026-09-23 - Country titles now name trees (blueprint v1.19), and a famous-tree pass that could not fetch anything
 
 **Live: Contract G's title.** It read `Ancient Trees in [Country]: [N] Cities

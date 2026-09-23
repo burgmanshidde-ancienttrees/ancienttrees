@@ -2032,20 +2032,13 @@ def check_every_tree_you_gave_us_comes_back():
     A third channel added later belongs on this list the day it is built.
     """
     out = []
-    # account.astro emits account.html, not account/index.html: this build
-    # writes flat files, which is why every other check here names a .html
-    # path directly. Asking for the directory form failed the deploy on a page
-    # that had built perfectly, the day after the same check had to be
-    # corrected for asking for a url the source builds by concatenation. Both
-    # halves were written against a guess about the output instead of a look
-    # at it. The fallback keeps it honest if the build format ever changes.
-    page = DIST / "account.html"
-    if not page.exists():
-        page = DIST / "account" / "index.html"
-    if not page.exists():
-        return ["the account page did not build (neither site/dist/account.html "
-                "nor site/dist/account/index.html exists), so nobody can see "
-                "the trees they added"]
+    # This build writes account.html, not account/index.html. Written the wrong
+    # way round first and caught by the build that ran it.
+    page = next((p for p in (DIST / "account.html", DIST / "account" / "index.html")
+                 if p.exists()), None)
+    if page is None:
+        return ["the account page did not build (no account.html and no "
+                "account/index.html), so nobody can see the trees they added"]
     html = page.read_text(encoding="utf-8")
     # The table NAME only, never the whole query string. These urls are built
     # by concatenation in the source, so "/rest/v1/submissions" + "?select=..."
