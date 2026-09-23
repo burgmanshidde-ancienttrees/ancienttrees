@@ -22,11 +22,26 @@ const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.da
 
 // main()'s iteration order: qualifying groups (park_groups sorted by tree
 // count, descending) that also have a hand-written intro, build_site.py:5818-5822.
+// The intro is REQUIRED here, which the comment above has always said and the
+// filter did not enforce: parkPageIsAllowed() returns true on tree count alone,
+// so a park that crossed five trees without an intro file passed the filter and
+// then met a non-null assertion on the next line. It took a while to happen and
+// then happened on its own: Bad Homburg's Schlosspark reached five when its
+// second oak went live on 2026-09-23, and the whole build died rendering
+// /parks, so nothing could deploy. A park with no intro yet simply is not
+// listed; pagegaps.py already reports it as a page the data has earned.
+// flatMap rather than filter-then-map, so the missing intro is handled where
+// it is discovered and the rest of the body can read `intro` without an
+// assertion. A filter cannot narrow the type for the map that follows it,
+// which is how the assertion got there in the first place.
 const cards = [...groups.values()]
-  .filter((g) => parkPageIsAllowed(g.trees.length, introByKey.get(parkGroupKey(g.citySlug, g.parkName))?.data))
-  .sort((a, b) => b.trees.length - a.trees.length)
-  .map((g) => {
-    const intro = introByKey.get(parkGroupKey(g.citySlug, g.parkName))!;
+  .flatMap((g) => {
+    const intro = introByKey.get(parkGroupKey(g.citySlug, g.parkName));
+    if (!intro || !parkPageIsAllowed(g.trees.length, intro.data)) return [];
+    return [{ g, intro }];
+  })
+  .sort((a, b) => b.g.trees.length - a.g.trees.length)
+  .map(({ g, intro }) => {
     // The same helper the feed uses, so the app's park card cannot show a
     // different picture from this one.
     const faceTree = parkFaceTree(g.trees);
