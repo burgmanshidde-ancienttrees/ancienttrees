@@ -23,7 +23,7 @@ const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.da
 // main()'s iteration order: qualifying groups (park_groups sorted by tree
 // count, descending) that also have a hand-written intro, build_site.py:5818-5822.
 const cards = [...groups.values()]
-  .filter((g) => parkPageIsAllowed(g.trees.length, introByKey.get(parkGroupKey(g.citySlug, g.parkName))?.data))
+  .filter((g) => parkPageIsAllowed(g.trees.length, introByKey.get(parkGroupKey(g.citySlug, g.parkName))?.data ?? null))
   .sort((a, b) => b.trees.length - a.trees.length)
   .map((g) => {
     const intro = introByKey.get(parkGroupKey(g.citySlug, g.parkName))!;
