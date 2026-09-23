@@ -25,7 +25,7 @@ the map, no page, not collectible, honestly labelled. All 733 may be dots.
 
 One of three is enough:
 
-- big or old for its species,
+- big, tall or old for its species,
 - a story of one sentence, with a source,
 - spectacle that is visible in a photograph.
 
@@ -58,7 +58,7 @@ trees are modest still publishes its best; a city with heavy competition drops
 the same tree. Nothing has to be lowered anywhere, because the competition
 lives in the ranking and not in the yardstick.
 
-### 3. Age is the second axis, and the BETTER of the two counts, never the sum
+### 3. Age and height are the other two axes, and the BEST of the three counts, never the sum
 
 Hidde asked for it and the data says he is right twice over. We have more ages
 than girths: 77 percent of published trees carry an age against 47 percent with
@@ -75,6 +75,8 @@ the trip: a holm oak of a thousand years at 200 cm, a Scots pine of five
 centuries at 188, a yew of 800 years at 292. `remarkable()` returns the higher
 of the two and names which one carried it. The holm oak of St Francis scores 49
 percent on thickness and 182 on age.
+
+**Height joined the same day**, on Hidde's "laten we inderdaad hoogte meenemen, als derde as". The gap had a name: Lund's own mail points at the tallest beech in Denmark, about 45 m, and under girth and age alone that tree scored nothing. It scores 141 percent on height, above anything we know of, from 1,803 height records over 329 species. Units are checked rather than trusted, because Hawaii publishes feet and everything else metres.
 
 **The circularity guard: an age we computed ourselves from a girth is not new
 evidence.** Only a sourced age or a documented planting date counts on the age
