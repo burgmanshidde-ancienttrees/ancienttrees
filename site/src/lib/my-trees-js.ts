@@ -185,8 +185,14 @@ export const MY_TREES_JS = `
   function loadSent(token) {
     if (!sentList) return;
     if (!token) { clearSent(); return; }
+    // NOT the rows the app's own camera writes beside a sighting. Adding a
+    // tree in the app posts a submissions row carrying that sighting's uuid
+    // (CollectSheet.swift, `from: "app:collect"`), so counting it here
+    // would put every photographed tree on this lane twice, which is the
+    // exact duplication the 2026-09-11 fix took out. `page` starting with
+    // app is the same discriminator contributor_reply.py uses.
     fetch(SB + '/rest/v1/submissions'
-          + '?select=id,kind,city,tree,outcome,reply_text,created_at'
+          + '?select=id,kind,city,tree,outcome,reply_text,created_at,page'
           + '&kind=in.(tree,city)&order=created_at.desc',
       { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
       .then(function(r) { return r.ok ? r.json() : null; })
@@ -194,6 +200,7 @@ export const MY_TREES_JS = `
         if (!rows) return;
         var order = [], byKey = {};
         rows.forEach(function(r) {
+          if ((r.page || '').indexOf('app') === 0) return;
           var key = ((r.tree || '') + '|' + (r.city || ''))
             .toLowerCase().replace(/[^a-z0-9|]/g, '');
           if (!byKey[key]) { byKey[key] = { newest: r, count: 0 }; order.push(key); }
