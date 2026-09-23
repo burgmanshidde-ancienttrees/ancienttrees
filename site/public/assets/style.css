@@ -1205,11 +1205,25 @@ footer { border-top: 1px solid var(--cream-dark); }
    is not this rule's to touch. */
 .footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                gap: 2rem; align-items: start; margin-bottom: 1.75rem; }
-.footer-about { max-width: none; }
+/* The mission block takes TWO tracks, which is what keeps the link columns on
+   the browse block's own rhythm now that the legal links have left the grid.
+   With three items in four tracks auto-fit would collapse one and hand out
+   three fat columns landing on 210/561/911, agreeing with nothing above them;
+   spanning two fills all four, so Explore and The project sit on 736 and 999,
+   the same lines the browse block draws. The sentence also reads better at
+   494px than at 231. */
+.footer-about { max-width: none; grid-column: span 2; }
 /* The copyright left, the languages hard right, on one line under a hairline. */
 .footer-bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem;
               flex-wrap: wrap; border-top: 1px solid var(--cream-dark); padding-top: 1.1rem; }
 .footer-bar .lang-pick { margin: 0; }
+/* The legal links are small, quiet and on the copyright's own line, which is
+   what komoot does and what AllTrails does one strip lower. They are not a
+   browse column: nobody scans a footer looking for Terms, they go there
+   knowing the word. */
+.footer-legal { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem 1.1rem; }
+.footer-legal a { font-size: 12px; color: var(--ink-light); text-decoration: none; }
+.footer-legal a:hover { color: var(--moss); }
 /* The phone overrides live HERE, directly under the rules they override, and
    not in the big phone block higher up the file, which is where they were
    written first and where they silently lost. Same specificity and the base
@@ -1220,7 +1234,12 @@ footer { border-top: 1px solid var(--cream-dark); }
    nothing. */
 @media (max-width: 800px) {
   .footer-cols { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-about { grid-column: auto; }
   .footer-bar { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  /* The copyright takes its own line on a phone, so the three legal links sit
+     together on the next one instead of two beside it and the third orphaned
+     below. komoot's phone footer breaks in the same place. */
+  .footer-legal .footer-note { flex-basis: 100%; }
 }
 .footer-about p { font-size: 13px; color: var(--ink-mid); line-height: 1.6; margin-top: 0.6rem; }
 .footer-col h4 { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.6rem; }
