@@ -2,139 +2,434 @@
  "_note": "One verdict per reader submission. See DECISIONS.md 2026-09-23.",
  "judgements": [
   {
-   "id": "lead:4d6fb810-870d-40b1-92db-d5e3820bba06",
-   "seen": "2026-09-04",
-   "kind": "a tree we do not map",
-   "tree": "A tree I found",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/4D6FB810-870D-40B1-92DB-D5E3820BBA06.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": null,
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:e3fa3f6b-e016-42f5-999a-e01ce41e82a0",
-   "seen": "2026-09-04",
-   "kind": "a tree we do not map",
-   "tree": "A tree I found",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/E3FA3F6B-E016-42F5-999A-E01CE41E82A0.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": null,
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:9a4db707-9393-4c31-b7c1-5dfcf25cc155",
-   "seen": "2026-09-05",
-   "kind": "a tree we do not map",
-   "tree": "A tree I found",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/9A4DB707-9393-4C31-B7C1-5DFCF25CC155.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": null,
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:d09c4709-fd01-4476-889a-4d1b860aeacd",
-   "seen": "2026-09-05",
-   "kind": "a tree we do not map",
-   "tree": "A tree I found",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/D09C4709-FD01-4476-889A-4D1B860AEACD.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": null,
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:ff725d9a-9950-4f0f-a657-1cf19901c9c0",
-   "seen": "2026-09-05",
-   "kind": "a tree we do not map",
-   "tree": "Watercypres\n",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/FF725D9A-9950-4F0F-A657-1CF19901C9C0.jpg",
-   "reader_note": "Watercypres\n",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": null,
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "sight:22864b26-6a53-48f4-bb3c-2b52adc12e0a",
-   "seen": "2026-09-05",
+   "id": "sight:84ebae36-c683-4d39-86ac-a7db33d70910",
+   "seen": "before 2026-09-23",
    "kind": "photo of a tree we map",
-   "tree": "The Cantonspark Dawn Redwood",
-   "city": "Baarn",
-   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
-   "photo": "https://ancienttrees.app/photos/brn_001-the-cantonspark-dawn-redwood.jpg",
+   "tree": "The Twisted Muku of Omiya Gate, Kyoto Gyoen",
+   "city": "Kyoto",
+   "species": "Muku Tree (Aphananthe aspera)",
+   "photo": "https://ancienttrees.app/photos/kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
    "reader_note": "",
    "reader_girth_cm": null,
    "measure": null,
    "verdict": "publish",
-   "reason": "Recorded retroactively on 2026-09-23: Whole tree centered, blue sky, well exposed, in leaf",
+   "reason": "Recorded retroactively on 2026-09-23: approved by a viewing pass; reason in the photo note",
    "hidde": null,
    "agreed": null
   },
   {
-   "id": "sight:a6971e9a-593b-4718-8ff6-00e0c898c566",
-   "seen": "2026-09-05",
+   "id": "lead:12168ca4-f893-4296-a444-14bd9e2c4e09",
+   "seen": "2026-09-22",
+   "kind": "a tree we do not map",
+   "tree": "Fig?",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/12168CA4-F893-4296-A444-14BD9E2C4E09.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Banyan-type fig in the landscaped grounds at Aoshima resort, Miyazaki. Tended garden setting, not a wild site. No register hit, no source. Could be genuine or an ordinary planting; garden's own records not yet checked.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:48129024-139c-4b61-9136-2a2bd746b52e",
+   "seen": "2026-09-22",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/48129024-139C-4B61-9136-2A2BD746B52E.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Ornamental Araucaria on manicured resort lawn, Aoshima, Miyazaki, beside a restaurant. Planted specimen, unremarkable girth, no register hit. Unlikely to clear the bar.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:8230d205-81b7-498a-b1ca-c70bfc009b95",
+   "seen": "2026-09-22",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/8230D205-81B7-498A-B1CA-C70BFC009B95.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Genuinely large sugi at an unnamed shrine, Taketa, with an unread interpretive signboard at its base, the kind used for designated trees. Strongest of the Taketa batch but no shrine name, no register hit yet. Worth a return pass to read the sign.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:c920cf02-072d-492c-8b22-fc0495614270",
+   "seen": "2026-09-22",
+   "kind": "a tree we do not map",
+   "tree": "Kamfertree around 100 years old",
+   "city": null,
+   "species": "Camphor Tree",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/C920CF02-072D-492C-8B22-FC0495614270.jpg",
+   "reader_note": "",
+   "reader_girth_cm": 400,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": 1.0,
+    "via": "girth",
+    "note": "100% of the genus reference (400 cm, n=1, max 400)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": "lead",
+   "reason": "Ordinary-looking tree in semi-wild ground, Kawaminami, Miyazaki. Reader's name, age and girth are self-reported, not a source. No shrine, plaque or register hit. Least distinctive of this batch.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:5d23ad5d-ee3b-449e-91bf-12956befbb8c",
+   "seen": "2026-09-20",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/5D23AD5D-EE3B-449E-91BF-12956BEFBB8C.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Tree at an unnamed shrine near Oka Castle, Taketa, 330m from acd2ee12. Shrine has no name in OSM, no register hit. Needs the shrine's name before further research.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:acd2ee12-76dd-412d-9fe0-f2f0bdefb000",
+   "seen": "2026-09-20",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/ACD2EE12-76DD-412D-9FE0-F2F0BDEFB000.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Striking self-seeded tree on the ishigaki wall of Oka Castle (nationally designated historic site), Taketa. No register hit, no source naming this specific tree, species not yet identified. Needs ID and a source before it clears the bar.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:01c07566-c1a7-48ee-a9a7-c9053bb506a5",
+   "seen": "2026-09-16",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/01C07566-C1A7-48EE-A9A7-C9053BB506A5.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:d0e24fa3-7097-47b1-b108-ac1dc932c287",
+   "seen": "2026-09-13",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/D0E24FA3-7097-47B1-B108-AC1DC932C287.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:4f9e3110-5807-4226-951e-537c61658dee",
+   "seen": "2026-09-13",
    "kind": "photo of a tree we map",
-   "tree": "The Cantonspark Giant Sequoia",
-   "city": "Baarn",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "photo": "https://ancienttrees.app/photos/brn_002-the-cantonspark-giant-sequoia.jpg",
+   "tree": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
+   "city": "Kyoto",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "https://ancienttrees.app/photos/kyo_017-camphor-of-shimodachiuri-gate-kyoto-gyoen.jpg",
    "reader_note": "",
    "reader_girth_cm": null,
    "measure": null,
    "verdict": "publish",
-   "reason": "Recorded retroactively on 2026-09-23: Whole tree in frame, crown to base, good daylight, in leaf, unmistakably the sequoia",
+   "reason": "Recorded retroactively on 2026-09-23: Closes a photo gap on kyo_017, which had none",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:84ebae36-c683-4d39-86ac-a7db33d70910",
+   "seen": "2026-09-11",
+   "kind": "a tree we do not map",
+   "tree": "Twisted pale-trunked tree by the Omiya gate, Kyoto Gyoen",
+   "city": null,
+   "species": "probably Muku (Aphananthe aspera), unconfirmed",
+   "photo": "site/public/photos/kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about probably Muku (Aphananthe aspera), unconfirmed"
+   },
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:9c414769-c025-4ec6-b707-55c981c22855",
+   "seen": "2026-09-11",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/9C414769-C025-4EC6-B707-55C981C22855.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:a90d9031-8708-45ed-a717-7ce1678173a2",
+   "seen": "2026-09-11",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/A90D9031-8708-45ED-A717-7CE1678173A2.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:c8842af2-e25c-403a-a0a0-8f3b4e6b37a5",
+   "seen": "2026-09-11",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/C8842AF2-E25C-403A-A0A0-8F3B4E6B37A5.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:5d5debc9-0545-40a6-88a1-79f40b62cbd1",
+   "seen": "2026-09-11",
+   "kind": "photo of a tree we map",
+   "tree": "Ginkgo of Inui Gate, Kyoto Gyoen",
+   "city": "Kyoto",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "photo": "https://ancienttrees.app/photos/kyo_018-ginkgo-of-inui-gate-kyoto-gyoen.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: kyo_018 had no photo",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:aec13148-46f8-49c4-8735-7d8a2c7c3c28",
+   "seen": "2026-09-11",
+   "kind": "photo of a tree we map",
+   "tree": "The Camphor of Munakata Shrine",
+   "city": "Kyoto",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "https://ancienttrees.app/photos/kyo_006-the-camphor-of-munakata-shrine.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: kyo_006's current photo (iNaturalist) is a tight crop of moss-covered branches with no trunk or ground visible",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:b77fcaee-e20e-4722-9b42-5d60aca6a3cc",
+   "seen": "2026-09-11",
+   "kind": "photo of a tree we map",
+   "tree": "The Hackberry of Demizu-guchi",
+   "city": "Kyoto",
+   "species": "Chinese Hackberry (Celtis sinensis)",
+   "photo": "https://ancienttrees.app/photos/kyo_011-the-hackberry-of-demizu-guchi.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: kyo_011 had no photo",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:0c00d472-ba14-4cf4-b53d-a1d407d2c2e4",
+   "seen": "2026-09-08",
+   "kind": "a tree we do not map",
+   "tree": "The Veteran Cedar above the Nigatsu-do Steps",
+   "city": null,
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/0C00D472-BA14-4CF4-B53D-A1D407D2C2E4.jpg",
+   "reader_note": "Reader wrote \"I am not sure which one it is\"",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Japanese Cedar (Cryptomeria japonica)"
+   },
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:fe5c2523-a0b1-4a4d-b9ad-10f3d5c8a1cc",
+   "seen": "2026-09-08",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/FE5C2523-A0B1-4A4D-B9AD-10F3D5C8A1CC.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
    "hidde": null,
    "agreed": null
   },
@@ -307,62 +602,13 @@
    "agreed": null
   },
   {
-   "id": "lead:0c00d472-ba14-4cf4-b53d-a1d407d2c2e4",
-   "seen": "2026-09-08",
-   "kind": "a tree we do not map",
-   "tree": "The Veteran Cedar above the Nigatsu-do Steps",
-   "city": null,
-   "species": "Japanese Cedar (Cryptomeria japonica)",
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/0C00D472-BA14-4CF4-B53D-A1D407D2C2E4.jpg",
-   "reader_note": "Reader wrote \"I am not sure which one it is\"",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": null,
-   "measure": {
-    "score": null,
-    "note": "nothing measurable about Japanese Cedar (Cryptomeria japonica)"
-   },
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:fe5c2523-a0b1-4a4d-b9ad-10f3d5c8a1cc",
-   "seen": "2026-09-08",
+   "id": "lead:9a4db707-9393-4c31-b7c1-5dfcf25cc155",
+   "seen": "2026-09-05",
    "kind": "a tree we do not map",
    "tree": "A tree I found",
    "city": null,
    "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/FE5C2523-A0B1-4A4D-B9AD-10F3D5C8A1CC.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:84ebae36-c683-4d39-86ac-a7db33d70910",
-   "seen": "2026-09-11",
-   "kind": "a tree we do not map",
-   "tree": "Twisted pale-trunked tree by the Omiya gate, Kyoto Gyoen",
-   "city": null,
-   "species": "probably Muku (Aphananthe aspera), unconfirmed",
-   "photo": "site/public/photos/kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/9A4DB707-9393-4C31-B7C1-5DFCF25CC155.jpg",
    "reader_note": "",
    "reader_girth_cm": null,
    "coords": [
@@ -370,34 +616,6 @@
     null
    ],
    "register": null,
-   "measure": {
-    "score": null,
-    "note": "nothing measurable about probably Muku (Aphananthe aspera), unconfirmed"
-   },
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:9c414769-c025-4ec6-b707-55c981c22855",
-   "seen": "2026-09-11",
-   "kind": "a tree we do not map",
-   "tree": "A tree I found",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/9C414769-C025-4EC6-B707-55C981C22855.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
    "measure": null,
    "verdict": null,
    "reason": null,
@@ -405,24 +623,20 @@
    "agreed": null
   },
   {
-   "id": "lead:a90d9031-8708-45ed-a717-7ce1678173a2",
-   "seen": "2026-09-11",
+   "id": "lead:d09c4709-fd01-4476-889a-4d1b860aeacd",
+   "seen": "2026-09-05",
    "kind": "a tree we do not map",
    "tree": "A tree I found",
    "city": null,
    "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/A90D9031-8708-45ED-A717-7CE1678173A2.jpg",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/D09C4709-FD01-4476-889A-4D1B860AEACD.jpg",
    "reader_note": "",
    "reader_girth_cm": null,
    "coords": [
     null,
     null
    ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
+   "register": null,
    "measure": null,
    "verdict": null,
    "reason": null,
@@ -430,24 +644,20 @@
    "agreed": null
   },
   {
-   "id": "lead:c8842af2-e25c-403a-a0a0-8f3b4e6b37a5",
-   "seen": "2026-09-11",
+   "id": "lead:ff725d9a-9950-4f0f-a657-1cf19901c9c0",
+   "seen": "2026-09-05",
    "kind": "a tree we do not map",
-   "tree": "A tree I found",
+   "tree": "Watercypres\n",
    "city": null,
    "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/C8842AF2-E25C-403A-A0A0-8F3B4E6B37A5.jpg",
-   "reader_note": "",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/FF725D9A-9950-4F0F-A657-1CF19901C9C0.jpg",
+   "reader_note": "Watercypres\n",
    "reader_girth_cm": null,
    "coords": [
     null,
     null
    ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
+   "register": null,
    "measure": null,
    "verdict": null,
    "reason": null,
@@ -455,72 +665,52 @@
    "agreed": null
   },
   {
-   "id": "sight:5d5debc9-0545-40a6-88a1-79f40b62cbd1",
-   "seen": "2026-09-11",
+   "id": "sight:22864b26-6a53-48f4-bb3c-2b52adc12e0a",
+   "seen": "2026-09-05",
    "kind": "photo of a tree we map",
-   "tree": "Ginkgo of Inui Gate, Kyoto Gyoen",
-   "city": "Kyoto",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "photo": "https://ancienttrees.app/photos/kyo_018-ginkgo-of-inui-gate-kyoto-gyoen.jpg",
+   "tree": "The Cantonspark Dawn Redwood",
+   "city": "Baarn",
+   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+   "photo": "https://ancienttrees.app/photos/brn_001-the-cantonspark-dawn-redwood.jpg",
    "reader_note": "",
    "reader_girth_cm": null,
    "measure": null,
    "verdict": "publish",
-   "reason": "Recorded retroactively on 2026-09-23: kyo_018 had no photo",
+   "reason": "Recorded retroactively on 2026-09-23: Whole tree centered, blue sky, well exposed, in leaf",
    "hidde": null,
    "agreed": null
   },
   {
-   "id": "sight:aec13148-46f8-49c4-8735-7d8a2c7c3c28",
-   "seen": "2026-09-11",
+   "id": "sight:a6971e9a-593b-4718-8ff6-00e0c898c566",
+   "seen": "2026-09-05",
    "kind": "photo of a tree we map",
-   "tree": "The Camphor of Munakata Shrine",
-   "city": "Kyoto",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "photo": "https://ancienttrees.app/photos/kyo_006-the-camphor-of-munakata-shrine.jpg",
+   "tree": "The Cantonspark Giant Sequoia",
+   "city": "Baarn",
+   "species": "Giant Sequoia (Sequoiadendron giganteum)",
+   "photo": "https://ancienttrees.app/photos/brn_002-the-cantonspark-giant-sequoia.jpg",
    "reader_note": "",
    "reader_girth_cm": null,
    "measure": null,
    "verdict": "publish",
-   "reason": "Recorded retroactively on 2026-09-23: kyo_006's current photo (iNaturalist) is a tight crop of moss-covered branches with no trunk or ground visible",
+   "reason": "Recorded retroactively on 2026-09-23: Whole tree in frame, crown to base, good daylight, in leaf, unmistakably the sequoia",
    "hidde": null,
    "agreed": null
   },
   {
-   "id": "sight:b77fcaee-e20e-4722-9b42-5d60aca6a3cc",
-   "seen": "2026-09-11",
-   "kind": "photo of a tree we map",
-   "tree": "The Hackberry of Demizu-guchi",
-   "city": "Kyoto",
-   "species": "Chinese Hackberry (Celtis sinensis)",
-   "photo": "https://ancienttrees.app/photos/kyo_011-the-hackberry-of-demizu-guchi.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "measure": null,
-   "verdict": "publish",
-   "reason": "Recorded retroactively on 2026-09-23: kyo_011 had no photo",
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:d0e24fa3-7097-47b1-b108-ac1dc932c287",
-   "seen": "2026-09-13",
+   "id": "lead:4d6fb810-870d-40b1-92db-d5e3820bba06",
+   "seen": "2026-09-04",
    "kind": "a tree we do not map",
    "tree": "A tree I found",
    "city": null,
    "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/D0E24FA3-7097-47B1-B108-AC1DC932C287.jpg",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/4D6FB810-870D-40B1-92DB-D5E3820BBA06.jpg",
    "reader_note": "",
    "reader_girth_cm": null,
    "coords": [
     null,
     null
    ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
+   "register": null,
    "measure": null,
    "verdict": null,
    "reason": null,
@@ -528,213 +718,23 @@
    "agreed": null
   },
   {
-   "id": "sight:4f9e3110-5807-4226-951e-537c61658dee",
-   "seen": "2026-09-13",
-   "kind": "photo of a tree we map",
-   "tree": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
-   "city": "Kyoto",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "photo": "https://ancienttrees.app/photos/kyo_017-camphor-of-shimodachiuri-gate-kyoto-gyoen.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "measure": null,
-   "verdict": "publish",
-   "reason": "Recorded retroactively on 2026-09-23: Closes a photo gap on kyo_017, which had none",
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:01c07566-c1a7-48ee-a9a7-c9053bb506a5",
-   "seen": "2026-09-16",
+   "id": "lead:e3fa3f6b-e016-42f5-999a-e01ce41e82a0",
+   "seen": "2026-09-04",
    "kind": "a tree we do not map",
    "tree": "A tree I found",
    "city": null,
    "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/01C07566-C1A7-48EE-A9A7-C9053BB506A5.jpg",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/E3FA3F6B-E016-42F5-999A-E01CE41E82A0.jpg",
    "reader_note": "",
    "reader_girth_cm": null,
    "coords": [
     null,
     null
    ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
+   "register": null,
    "measure": null,
    "verdict": null,
    "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:5d23ad5d-ee3b-449e-91bf-12956befbb8c",
-   "seen": "2026-09-20",
-   "kind": "a tree we do not map",
-   "tree": "A tree I found",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/5D23AD5D-EE3B-449E-91BF-12956BEFBB8C.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:acd2ee12-76dd-412d-9fe0-f2f0bdefb000",
-   "seen": "2026-09-20",
-   "kind": "a tree we do not map",
-   "tree": "A tree I found",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/ACD2EE12-76DD-412D-9FE0-F2F0BDEFB000.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:12168ca4-f893-4296-a444-14bd9e2c4e09",
-   "seen": "2026-09-22",
-   "kind": "a tree we do not map",
-   "tree": "Fig?",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/12168CA4-F893-4296-A444-14BD9E2C4E09.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:48129024-139c-4b61-9136-2a2bd746b52e",
-   "seen": "2026-09-22",
-   "kind": "a tree we do not map",
-   "tree": "A tree I found",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/48129024-139C-4B61-9136-2A2BD746B52E.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:8230d205-81b7-498a-b1ca-c70bfc009b95",
-   "seen": "2026-09-22",
-   "kind": "a tree we do not map",
-   "tree": "A tree I found",
-   "city": null,
-   "species": null,
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/8230D205-81B7-498A-B1CA-C70BFC009B95.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "coords": [
-    null,
-    null
-   ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
-   "measure": null,
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "lead:c920cf02-072d-492c-8b22-fc0495614270",
-   "seen": "2026-09-22",
-   "kind": "a tree we do not map",
-   "tree": "Kamfertree around 100 years old",
-   "city": null,
-   "species": "Camphor Tree",
-   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/C920CF02-072D-492C-8B22-FC0495614270.jpg",
-   "reader_note": "",
-   "reader_girth_cm": 400,
-   "coords": [
-    null,
-    null
-   ],
-   "register": {
-    "verdict": "unlisted",
-    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-    "nearest": []
-   },
-   "measure": {
-    "score": 1.0,
-    "via": "girth",
-    "note": "100% of the genus reference (400 cm, n=1, max 400)  THIN: fewer than ten records, treat as a hint"
-   },
-   "verdict": null,
-   "reason": null,
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "sight:84ebae36-c683-4d39-86ac-a7db33d70910",
-   "seen": "before 2026-09-23",
-   "kind": "photo of a tree we map",
-   "tree": "The Twisted Muku of Omiya Gate, Kyoto Gyoen",
-   "city": "Kyoto",
-   "species": "Muku Tree (Aphananthe aspera)",
-   "photo": "https://ancienttrees.app/photos/kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
-   "reader_note": "",
-   "reader_girth_cm": null,
-   "measure": null,
-   "verdict": "publish",
-   "reason": "Recorded retroactively on 2026-09-23: approved by a viewing pass; reason in the photo note",
    "hidde": null,
    "agreed": null
   }
