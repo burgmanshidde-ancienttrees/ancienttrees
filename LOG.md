@@ -10,6 +10,49 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-23 (late) - Finished a stranded Copenhagen claim, fixed the smoke test, and a health.py false positive
+
+An earlier attempt this window had already done the real work and stopped
+before committing it: two write passes on Copenhagen (26 trees, cop_017-042)
+were merged into the city file, the intro/FAQ rewritten to drop stale counts,
+and a real smoke-test bug fixed, all sitting uncommitted. Verified all of it
+(preflight, superlatives, a full rebuild, the smoke test) before shipping:
+nothing was wrong, it just hadn't been pushed. Committed and pushed as three
+pieces: the Copenhagen data, the smoke-test fix (a closed `<details>` panel
+leaves a small phantom layout box Chromium's own layout engine still
+generates, which the off-screen check was reading as a clipped element; it
+had been failing CI on every push since the nav sheet styles landed), and a
+health.py fix.
+
+**The BLOCKER from this morning is resolved and answered.** `deploy.yml` is
+confirmed green on current HEAD; the account page's escaped-backslash break
+was fixed hours ago in `8fee850b`/`3dc8df4a`. Recorded via `health.py
+--answer` so it stops re-surfacing.
+
+**health.py fix, from today's WARN:** `looks_starved()` was measuring a
+whole JOB's wall clock to guess whether a Claude workflow died on the usage
+allowance, which works for `nightly.yml` but not `review.yml`, whose build
+step alone runs 9-13 minutes before Claude gets a turn. Three straight
+allowance deaths there were being reported as genuine breaks. Fixed to read
+the SDK's own `duration_ms`/`num_turns` straight out of the log instead, and
+verified against all four runs the WARN cited.
+
+**FOR HIDDE:** could not push a one-line bump to `review.yml`'s `--max-turns`
+(160 to ~220): this session's GitHub App token has no `workflows`
+permission, so any push touching `.github/workflows/*.yml` is rejected by
+GitHub itself. Today's newest review run finished a real, successful review
+at 184 turns and was failed anyway for exceeding the old ceiling. Small fix,
+just needs a human's push.
+
+Also dispatched a scouting pass on São Paulo (Brazil's #60, `scout_next.py`'s
+top pick): verdict is empty. The 1989 "immune from cutting" decree protects
+by place, not by named specimen, GeoSampa's vegetation layer is a bulk
+polygon cover layer with no clear licence, and neither the city's open-data
+portal nor state/federal forestry data holds a monumental-tree register.
+Recorded in OPEN_DATA_SURVEY.md and data/register-scouting.json so nobody
+re-scouts it without a new angle; São Paulo's next step is ordinary from-zero
+research off the decree's named parks.
+
 ## 2026-09-23 (evening) - The footer's columns are the browse block's columns
 
 Hidde, on a screenshot: "de footer is qua alignment en design heel raar
