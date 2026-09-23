@@ -45,6 +45,11 @@ struct CollectView: View {
     /// and the trees that are yours are the ones you photographed; a list of
     /// things you have not seen yet is the second question, not the first.
     @State private var lane: Lane = .seen
+    /// Trees this account sent us through the website's form. The app's camera
+    /// writes to sightings; the form writes to submissions, and until
+    /// 2026-09-23 neither surface read the second one back (see
+    /// Submission.mine).
+    @State private var sent: [Submission.Sent] = []
     /// Debug scaffolding, the same family as -tab and -contribute: the sweep
     /// cannot tap a gear, and a screen no argument can open is a screen that
     /// ships unlooked at.
@@ -160,6 +165,7 @@ struct CollectView: View {
         .toolbar(.hidden, for: .navigationBar)
         .task {
             if openSettings { openSettings = false; navigator.push = .profile }
+            sent = await Submission.mine(token: account.freshToken())
         }
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
         .sheet(isPresented: $findingPeople) { PeopleView() }
@@ -559,6 +565,12 @@ struct CollectView: View {
                 ForEach(sightings.yoursOnly) { s in
                     SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
                 }
+            }
+            // AND WHAT YOU SENT US IN WORDS, from either surface. No photograph
+            // and no page of its own yet, so it is a card that says where it
+            // stands rather than a link to nowhere.
+            if lane == .seen, !sent.isEmpty {
+                ForEach(sent) { SentCard(sent: $0) }
             }
             let list = lane == .want ? wishlist : visited
             if list.isEmpty {
