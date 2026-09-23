@@ -11,6 +11,53 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-09-23 - The first contributor from outside, and the form that told him nothing
+
+Somebody who is not Hidde sent us trees. Leon, signed up through Google on
+20 September, sixteen rows between then and the 22nd: two oaks and a
+worth-it vote on the Reinborn linde. Fourteen of the sixteen rows are the
+same oak.
+
+**Both trees are live.** [Friedewald](https://ancienttrees.app/friedewald)
+holds the **Hammundeseiche**, the thickest oak in Hessen at 8.65m round and
+25m tall, standing alone in a forest clearing where a village stood until
+1312; it publishes below the four-tree floor under the single-famous-tree
+exception. [Bad Homburg](https://ancienttrees.app/bad-homburg) is a
+four-tree walk in the Schlosspark built around his oak: the cedar in front
+of the royal wing (6.40m, planted 1822 from Kew seed, the city calls it the
+thickest and oldest of its kind in Germany), a 5.8m dawn redwood, his 5.39m
+oak and a 5.66m plane. Six more park trees kept as leads.
+
+**Why he sent one oak fourteen times, which is the part worth reading.**
+Two faults, both ours, both invisible to every gate we have.
+
+The **contribute form never hid itself**. `hidden` is display:none from the
+browser's own sheet and `.suggest-form` carries `display: flex`, which beats
+it. So after a successful send the button sat on "Sending..." with every
+field still full, under a thank-you line. The row had been saved. Nothing on
+screen said so. Hidde walked into the same thing this afternoon while we
+were reading Leon's rows, which is how it was found. This exact collision
+has now cost four visible faults and three of them were already written into
+style.css as comments beside per-class fixes; it is one global rule now, and
+`check_hidden_means_hidden()` refuses a stylesheet without it.
+
+And **/account did not read the submissions table**. The app's camera writes
+to `sightings`, the website's form writes to `submissions`, and My trees
+read the first only. The thank-you mail meanwhile says "you can see the
+trees you added on your account". Ten of his sixteen arrivals at the form
+came from /account: he was told to go and look, looked, saw the empty line
+with Add a tree under it, and sent the oak again. It now lists what you
+sent, one card per tree rather than per row, with the status and our answer
+on it. `check_every_tree_you_gave_us_comes_back()` names both tables.
+
+**FOR HIDDE.** The reply to Leon is drafted at
+`drafts/reply-leon-hessen.md`, mailcheck clean, and asks him what the form
+looked like from his side. It goes out on row 131 through the usual
+contributor pipeline. The app half of the account change is NOT built: a
+tree sent through the website still does not appear in the app's My trees,
+which is a cross-platform gap I opened deliberately to get the web fix in
+front of a live contributor today, and it is the next thing.
+
 ## 2026-09-23 - The cheapest park on his American list is live. City Park, New Orleans, and why the National Mall is still one short
 
 Hidde's ask, after the US top ten: put the cheapest parks on that list
