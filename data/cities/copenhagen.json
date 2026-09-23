@@ -38,32 +38,36 @@
     {
       "id": "cop_001",
       "name": "The Mulberry of Proviantgarden",
-      "species": "White Mulberry (Morus alba)",
+      "species": "Black Mulberry (Morus nigra)",
       "age_estimate": "350-420 years",
       "age_min": 350,
       "age_max": 420,
       "location": {
-        "address": "Proviantgarden, Slotsholmen, Copenhagen",
-        "latitude": 55.674873,
-        "longitude": 12.582236,
+        "address": "Against the south-eastern gable of Proviantgarden, opposite the Royal Library, Slotsholmen, Copenhagen",
+        "latitude": 55.6743,
+        "longitude": 12.5829,
         "neighbourhood": "Slotsholmen"
       },
-      "story": "King Christian IV tried to build a Danish silk industry the way his contemporaries elsewhere in Europe were doing it, by planting mulberry trees to feed silkworms, and this is the one tree from that entire royal venture that anyone can still point to. It stands today at Proviantgarden, part of the naval arsenal Christian IV built on Slotsholmen from 1603 to supply his warships, on ground that once fronted a working harbor basin where vessels docked to be provisioned and armed. Tradition credits a sailor who brought it home from Asia rather than a court gardener, and it has stood long enough to have watched those same tall ships come and go for provisions centuries before Slotsholmen became the seat of Denmark's parliament and courts. The Danish silk venture itself mostly failed; Copenhagen's climate never suited silkworms the way Christian IV hoped, and the street name Silkegade nearby is now the closest most Copenhageners get to the story. This tree is the exception, a specimen one detailed historical account describes as having remarkable vitality, still leafing out every spring in a courtyard surrounded by 17th-century naval buildings that have long since changed jobs, now government offices rather than stores for rope and ships' biscuit.",
+      "story": "King Christian IV tried to build a Danish silk industry the way his contemporaries elsewhere in Europe were doing it, by planting mulberry trees to feed silkworms, and Copenhagen has pointed at this tree as the survivor of that venture ever since. The Danish tree register records it as a black mulberry, Morus nigra, which is the fruiting mulberry rather than the white one silkworms are raised on, so read the silk connection as a story the city tells rather than a fact anybody has proved. Tradition credits a sailor who brought it home from Asia rather than a court gardener.\n\nWhat the register does state is its age: one of the oldest mulberry trees in Denmark. It stands against the south-eastern gable of Proviantgarden, the naval arsenal Christian IV began in 1603 to supply his warships, facing the Royal Library, on ground that once fronted a working harbour basin where vessels docked to be provisioned and armed. It is five metres tall and grows the way old black mulberries do, leaning and sprawling rather than standing up straight. The silk venture itself mostly failed, Copenhagen's climate never suited silkworms the way Christian IV hoped, and the street name Silkegade nearby is the closest most Copenhageners now get to the story.",
       "verified_sources": [
         "https://www.trae.dk/artikel/kortlaegning-af-vaerdifulde-koebenhavnske-traeer/",
-        "https://www.hovedstadshistorie.dk/slotsholmen/proviantgaarden/"
+        "https://www.hovedstadshistorie.dk/slotsholmen/proviantgaarden/",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1901"
       ],
       "access": "Free, open access, public courtyard on Slotsholmen",
       "transport": "Christianshavn metro station or Copenhagen Central Station, short walk across Slotsholmen",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://www.dendron.dk/dtr/photos/2023/Morb%E6r_Proviant_HEL_20230726_IMG_3505.JPG",
+        "license": "Used with permission from Hans Erik Lund, Dansk Dendrologisk Forening; credit required",
+        "attribution": "Hans Erik Lund",
+        "status": "approved",
+        "width": 2000,
+        "height": 1333,
+        "note": "Photographed by Hans Erik Lund, who runs the Dansk Traeregister, and given to us by mail on 2026-09-20 in answer to our own request: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Looked at before approving on 2026-09-23. The tree against the Proviantgarden gable, exactly where the register places it. Low and sprawling, which is what an old black mulberry does. photo_light OK. Danish Tree Register id 1901."
       },
       "curation_status": "flagged",
       "notes": "The Christian IV silk-industry origin and the tree's location and vitality are described consistently across Trae.dk's detailed feature on Copenhagen's valuable trees and a local heritage site's history of Proviantgarden, though both ultimately appear to draw on the same underlying historical account rather than fully independent research. No source names the exact species; White Mulberry (Morus alba) is given here because it is the species historically used for silkworm cultivation, which the sources' own silk-industry framing implies, but this is inference rather than a directly sourced identification. No precise planting date exists, only the association with Christian IV's reign (1588-1648), hence the wide age range.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           6,
@@ -72,7 +76,21 @@
         "label": "June into July, when the mulberries ripen and drop",
         "kind": "fruit"
       },
-      "how_to_recognise": "The one mulberry in the Proviantgarden courtyard, closed in on all sides by Christian IV's naval storehouses, which are government offices now."
+      "how_to_recognise": "The one mulberry in the Proviantgarden courtyard, closed in on all sides by Christian IV's naval storehouses, which are government offices now.",
+      "photos": [
+        {
+          "url": "https://www.dendron.dk/dtr/photos/2023/Morb%E6r_Proviant_HEL_20230726_IMG_3508.JPG",
+          "license": "Used with permission from Hans Erik Lund, Dansk Dendrologisk Forening; credit required",
+          "attribution": "Hans Erik Lund",
+          "status": "approved",
+          "width": 2000,
+          "height": 1333,
+          "note": "Photographed by Hans Erik Lund, who runs the Dansk Traeregister, and given to us by mail on 2026-09-20 in answer to our own request: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Looked at before approving on 2026-09-23. The fruit in July: dark, almost stalkless, on thick rough leaves. This is the evidence for the species correction."
+        }
+      ],
+      "height_m": 5,
+      "age_basis": "source",
+      "verify_notes": "2026-09-23: species CORRECTED from White Mulberry (Morus alba) to Black Mulberry (Morus nigra) on the Dansk Traeregister (id 1901, reported by Hans Erik Lund, position verified 26-07-2013) and on Lund's own photograph of the fruit, which is dark and almost stalkless on thick rough leaves. The old species reading looks like a bridge claim from the silk story: silkworms are fed on white mulberry, so a white mulberry was assumed. The story was rewritten to say so rather than to repeat it. Pin moved 76 m to the register's verified coordinate and raised to confirmed. Register also records: height 5 m, growth form shrub, 'one of the oldest mulberry trees in Denmark', regionally remarkable, alive."
     },
     {
       "id": "cop_002",
@@ -189,9 +207,9 @@
       "age_min": 135,
       "age_max": 150,
       "location": {
-        "address": "Landbohøjskolens Have (Fakultetets Fredede Have), entrance at Bülowsvej / Thorvaldsensvej, Frederiksberg",
-        "latitude": 55.679517,
-        "longitude": 12.542583,
+        "address": "On the stone mound at the centre of Landbohojskolens Have (Fakultetets Fredede Have), Frederiksberg",
+        "latitude": 55.68083,
+        "longitude": 12.54243,
         "neighbourhood": "Frederiksberg C"
       },
       "story": "This ginkgo is male, and the female it pollinates lives on the other side of the street. The two trees have never touched. The university library, writing up the garden's own history, calls it the largest ginkgo in the collection and gives 1883 as its planting year, which would make it about 143. That date comes from that one source and nowhere else, so read it as the garden's account rather than a measured fact.\n\nIt is planted in the middle of a large stone mound, which is a strange thing to do to a tree and suits this one. Ginkgo biloba is the last surviving member of a lineage older than flowering plants, and the Danish name for it, tempeltræet, points at the temple courtyards in China and Japan where the final populations were kept alive by monks while the wild ones disappeared. The garden around it was laid out in 1858 for the Royal Veterinary and Agricultural College and has been legally protected since 1965.\n\nProtection is not immortality. The blood beech planted the year the garden opened, which the official heritage listing still describes as the thickest tree here, was felled in 2018. Nothing suggests the ginkgo has gone the same way and the species is famously hard to kill, but the newest dated confirmation we could find of this one is not recent. The garden is free and open from sunrise to sunset.",
@@ -205,7 +223,8 @@
       },
       "verified_sources": [
         "https://kub.ku.dk/biblioteker/frederiksberg/landbohoejskolens-historie/life150/haven/ginka_balboa/",
-        "https://www.fredninger.dk/fredning/landbohoejskolens-have/"
+        "https://www.fredninger.dk/fredning/landbohoejskolens-have/",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1998"
       ],
       "access": "Free, open to the public sunrise to sunset (university garden, protected since 1965)",
       "transport": "Frederiksberg metro station, roughly 5-8 minute walk",
@@ -216,8 +235,12 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "Planted in the middle of a large stone mound, the largest ginkgo in the garden, and male, so it never carries fruit."
+      "location_precision": "confirmed",
+      "how_to_recognise": "Planted in the middle of a large stone mound, the largest ginkgo in the garden, and male, so it never carries fruit.",
+      "girth_cm": 365,
+      "height_m": 20,
+      "age_basis": "source",
+      "verify_notes": "2026-09-23: pin moved 146 m to the Dansk Traeregister's verified coordinate (id 1998, position verified 19-03-2024) and raised to confirmed. The register's own note, 'Stenhojen centralt i Landbohojskolens Have', matches the stone mound our story already described, which is what settles that this is the same tree. It adds girth 3.65 m, height 20 m and the same 1883 planting the university library gives, so the age now has a second source. No photograph: Lund's four are a shot of the name plate and three backlit frames that photo_light scores POOR."
     },
     {
       "id": "cop_006",
@@ -277,14 +300,30 @@
       "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
       "transport": "Nørrebros Runddel metro station (M3 Cityringen) or the Kapelvej main entrance, roughly 5-10 minute walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://www.dendron.dk/dtr/photos/2019/H%E6ngeb%F8g_Assistens_HEL_MG_4294.JPG",
+        "license": "Used with permission from Hans Erik Lund, Dansk Dendrologisk Forening; credit required",
+        "attribution": "Hans Erik Lund",
+        "status": "approved",
+        "width": 1000,
+        "height": 1500,
+        "note": "Photographed by Hans Erik Lund, who runs the Dansk Traeregister, and given to us by mail on 2026-09-20 in answer to our own request: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Looked at before approving on 2026-09-23. The whole weeping frame, bare, which is when this tree is at its most legible. photo_light OK. Danish Tree Register id 1467."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "Section B, just right of the Kapelvej entrance. Look for the graft union about a metre up where the trunk steps outward, and the large wound at its base."
+      "how_to_recognise": "Section B, just right of the Kapelvej entrance. Look for the graft union about a metre up where the trunk steps outward, and the large wound at its base.",
+      "photos": [
+        {
+          "url": "https://www.dendron.dk/dtr/photos/2019/H%E6ngeb%F8g_Assistens_HEL_MG_4297.JPG",
+          "license": "Used with permission from Hans Erik Lund, Dansk Dendrologisk Forening; credit required",
+          "attribution": "Hans Erik Lund",
+          "status": "approved",
+          "width": 1500,
+          "height": 1000,
+          "note": "Photographed by Hans Erik Lund, who runs the Dansk Traeregister, and given to us by mail on 2026-09-20 in answer to our own request: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Looked at before approving on 2026-09-23. The trunk close up, showing the burrs and the root flare."
+        }
+      ],
+      "girth_cm": 329,
+      "height_m": 15
     },
     {
       "id": "cop_008",
@@ -307,10 +346,13 @@
       "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
       "transport": "Nørrebros Runddel metro station (M3 Cityringen), roughly 10 minute walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://www.dendron.dk/dtr/photos/2019/Ahorn_Assistens_HEL_MG_4340.JPG",
+        "license": "Used with permission from Hans Erik Lund, Dansk Dendrologisk Forening; credit required",
+        "attribution": "Hans Erik Lund",
+        "status": "approved",
+        "width": 1000,
+        "height": 1500,
+        "note": "Photographed by Hans Erik Lund, who runs the Dansk Traeregister, and given to us by mail on 2026-09-20 in answer to our own request: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Looked at before approving on 2026-09-23. Twin stems against a bright sky, the trunk fully legible from base to fork, cemetery setting. photo_light WEAK on the backlight, and the best of the three. Danish Tree Register id 1477."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -322,7 +364,9 @@
         "label": "September to October: winged seeds that spin down in pairs",
         "kind": "fruit"
       },
-      "how_to_recognise": "Section C, the thickest trunk in the cemetery at 4.19 metres, one stem to about two metres up and then a fork into two."
+      "how_to_recognise": "Section C, the thickest trunk in the cemetery at 4.19 metres, one stem to about two metres up and then a fork into two.",
+      "girth_cm": 419,
+      "height_m": 22.5
     },
     {
       "id": "cop_009",
@@ -383,10 +427,13 @@
       "access": "Free, open access; Frederiksberg Have is a public park, protected (fredet) under Danish nature conservation law",
       "transport": "Frederiksberg Alle metro station (M1/M2/M3), roughly 10-15 minute walk via Frederiksberg Runddel, the garden's main entrance",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://www.dendron.dk/dtr/photos/Eg_Frederiksberg_Have_HEL_MG_2866.JPG",
+        "license": "Used with permission from Hans Erik Lund, Dansk Dendrologisk Forening; credit required",
+        "attribution": "Hans Erik Lund",
+        "status": "approved",
+        "width": 1000,
+        "height": 1500,
+        "note": "Photographed by Hans Erik Lund, who runs the Dansk Traeregister, and given to us by mail on 2026-09-20 in answer to our own request: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Looked at before approving on 2026-09-23. The whole tree in leaf, trunk and crown both readable, daylight, path for scale. photo_light OK. Danish Tree Register id 839."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -398,7 +445,9 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "Growing in the open with room on every side, 4.95 metres round and nearly 29 metres tall, the thickest trunk on this page inside the city itself."
+      "how_to_recognise": "Growing in the open with room on every side, 4.95 metres round and nearly 29 metres tall, the thickest trunk on this page inside the city itself.",
+      "girth_cm": 495,
+      "height_m": 28.8
     },
     {
       "id": "cop_011",
@@ -458,10 +507,13 @@
       "access": "Free, open access; Frederiksberg Have is a public park, protected (fredet) under Danish nature conservation law",
       "transport": "Frederiksberg Alle metro station (M1/M2/M3), roughly 10-12 minute walk via Frederiksberg Runddel, the garden's main entrance",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://www.dendron.dk/dtr/photos/Suttetr%E6et_Frederiksberg_Have_HEL_MG_2875.JPG",
+        "license": "Used with permission from Hans Erik Lund, Dansk Dendrologisk Forening; credit required",
+        "attribution": "Hans Erik Lund",
+        "status": "approved",
+        "width": 1500,
+        "height": 683,
+        "note": "Photographed by Hans Erik Lund, who runs the Dansk Traeregister, and given to us by mail on 2026-09-20 in answer to our own request: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Looked at before approving on 2026-09-23. In full leaf and hung with hundreds of dummies, which is the whole reason the tree has its name. Bench for scale, daylight. photo_light OK. Danish Tree Register id 842."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -488,14 +540,19 @@
       "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
       "transport": "Nørrebros Runddel metro station (M3 Cityringen), roughly 5-7 minute walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://www.dendron.dk/dtr/photos/2019/Skyr%E6kker_Assistens_HEL_MG_4322.JPG",
+        "license": "Used with permission from Hans Erik Lund, Dansk Dendrologisk Forening; credit required",
+        "attribution": "Hans Erik Lund",
+        "status": "approved",
+        "width": 1000,
+        "height": 1500,
+        "note": "Photographed by Hans Erik Lund, who runs the Dansk Traeregister, and given to us by mail on 2026-09-20 in answer to our own request: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Looked at before approving on 2026-09-23. The trunk and fork, daylight, unmistakably this tree. The crown is out of frame, so it is a trunk portrait rather than a portrait of the whole tree; the alternative was a cluttered distant view with a wire across it. A better photograph replaces this one when it turns up. Danish Tree Register id 1474."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "Section F in the north field, 4.01 metres round with severe bark scraping low on its western side, and the only tree of heaven in the cemetery."
+      "how_to_recognise": "Section F in the north field, 4.01 metres round with severe bark scraping low on its western side, and the only tree of heaven in the cemetery.",
+      "girth_cm": 401,
+      "height_m": 15.5
     },
     {
       "id": "cop_014",
