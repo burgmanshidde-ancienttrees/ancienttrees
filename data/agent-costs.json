@@ -8438,6 +8438,35 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-09-23": [
+   {
+    "target": "Copenhagen",
+    "kind": "verify",
+    "tokens": 240162,
+    "trees": 26,
+    "note": "Register-led: the 27 Danish Tree Register rows were already on disk, so the pass only hunted second sources, access, transport and English names. 26 delivered, 1 dropped on access (Kuglegarden).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Copenhagen",
+    "kind": "write",
+    "tokens": 205966,
+    "trees": 26,
+    "note": "26 stories plus recognition lines, 3 best_time. ~7.9k per tree against the 15k target. Every correction from the register's own legends landed in the prose rather than being copied.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Copenhagen photo queue",
+    "kind": "photo-judge",
+    "tokens": 258156,
+    "trees": 0,
+    "note": "84 Hans Erik Lund candidates over 26 trees: 20 leads, 5 extras, 2 held, 57 rejected, ~12.9k per approved photograph against the 72k a Commons hunt used to cost. Found two files that were not his, credited to GT and to Knud Ib Christensen, which would have shipped under his permission.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
   ]
  }
 }
