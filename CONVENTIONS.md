@@ -25,6 +25,54 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Taking a photograph of a place ON THE WEB (2026-09-23)
+
+The app half is above, under "Adding a photograph of a place, and saying you
+were there". This is the website, which had no way to accept a photograph of a
+tree at all while its own tree pages said "Send us yours and it goes on this
+page" and linked to a form with no file field. It could set a profile picture
+and nothing else.
+
+**Google Maps.** Add a photo is a contribution on the PLACE: it sits on the
+place's own page beside the other contribution controls, separately from
+checking in, and the two are counted separately. A photo of a place you cannot
+find on the map is added through the "add a missing place" flow instead, with
+the picture attached to that submission.
+
+**iNaturalist.** The web uploader takes the file first and the identification
+second; a photograph with no location is still a valid observation, and the
+site asks rather than inventing a coordinate.
+
+**What they agree on, and it decided our shape.** WHERE the photograph goes
+depends on whether the place is already on the map, and nothing invents a
+position. So we have two paths and they are not the same path:
+
+- On a tree we map, the control is on the tree's page and writes the sighting
+  the app writes, carrying that tree's id and its published coordinate. It does
+  NOT tick the tree off: the person may be at a laptop, and the app's own rule
+  already refuses to read "they stood there" out of "they have a picture".
+- On a tree we do not map, the control is a field on the contribute form and
+  the file hangs off the SUBMISSION, because there is no coordinate and a
+  browser cannot supply one.
+
+**The part worth writing down rather than rediscovering.** A browser has no
+GPS worth trusting for this, so the row on a tree page carries OUR pin, and
+that is a trap: CLAUDE.md lets a reader's fix upgrade a pin we have marked
+approximate, and a pin confirmed from a copy of itself is exactly the circular
+evidence the bridge-claim rule exists to stop. The row says in words where its
+coordinate came from.
+
+And the file input is a button with the input hidden behind it, the same shape
+as the profile picture, because a bare file input is ugly on every platform and
+it is what both references draw.
+
+Read 2026-09-23:
+- https://support.google.com/maps/answer/2622947
+- https://support.google.com/maps/answer/6320846
+- https://help.inaturalist.org/en/support/solutions/articles/151000192921-how-to-make-an-observation
+
+---
+
 ## Setting a profile picture on the WEB (2026-09-19)
 
 The app has had this since the profile editor shipped: a PhotosPicker, a
@@ -60,6 +108,67 @@ Underneath, nothing is re-decided: 512px on the long edge, JPEG at quality
 profiles upsert the app makes. EXIF orientation is applied rather than
 assumed, because a phone leaves the pixels sideways and writes the rotation
 in a tag.
+## The navigation menu on a phone (2026-09-18, measured)
+
+**Reference: AllTrails' own mobile web menu**, from the screenshot Hidde sent on
+2026-09-18 ("dit is het mobile app menu van alltrails en vind ik veel beter"),
+read alongside the phone-header table in "Sending a mobile visitor to the app"
+below, which was gathered from komoot, AllTrails, Airbnb and Booking on
+2026-09-03.
+
+**What AllTrails does**, measured off that screenshot rather than remembered
+(it is 919px wide for a 375pt screen, so every figure below is the pixel
+divided by 2.45):
+
+| Part | What it is |
+|---|---|
+| The panel | a full-screen white sheet, not a dropdown. It covers the page and scrolls. |
+| Top row | their wordmark on the left, a 35pt circled X on the right |
+| First control | one full-width dark pill about 47 tall, "Ga verder in de app", with a phone glyph |
+| Sections | three, each a ~23pt bold heading with a chevron on the far right; Verkennen open, Opgeslagen and Winkel folded |
+| Rows | about 45 tall: a 32pt light grey circle holding a stroke icon, then a ~17pt label |
+| Dividers | one hairline between sections, nothing between rows |
+| The account | at the very bottom, as full-width grey pills (Aanmelden, and a second one below it) |
+
+**Three things in that which are the convention rather than their taste**, and
+which Airbnb and Booking do the same way: the menu is a full sheet with an
+explicit close, the account sits at the BOTTOM and browsing at the top, and
+every row carries an icon in a tile so the list is scanned rather than read.
+What is theirs alone is the folding: they have roughly twenty-five
+destinations, so sections that fold are the only way that list fits. Ours has
+ten.
+
+**The one trap in this entry, because a later reader will hit it.** The
+2026-09-03 entry below says we refuse "the full-screen sheet from the same
+screenshot", and that is about a DIFFERENT sheet: the app-download interstitial
+AllTrails throws over the page on arrival from search, which Google names as an
+intrusive interstitial and penalises. A menu the reader opened by tapping the
+menu button is not an interstitial in that sense and never was. Nothing about
+copying their menu reopens that decision.
+
+**What we do not copy: their row order.** Their Explore section opens on
+"Routes in de omgeving", which is nearby routes, because that is what somebody
+holding a phone outdoors wants first. Ours opens on Map for the same reason,
+and `/explore#near` already exists and already triggers the locate control
+(site/src/lib/map.ts), so a "Trees near me" row is a real destination rather
+than a thing to build.
+
+**What shipped, 2026-09-19.** Three drafts went to him in
+drafts/menu-options.html and he picked the flat one ("let's do 2"): their
+sheet, their rows, their tiles, their loud control at the top and their
+account at the bottom, with every section open. Below 800px `.nav-drop-menu`
+is now that sheet; above it the dropdown is untouched.
+
+Two details worth keeping, because both cost time to find. The bar sets
+`backdrop-filter`, and a filtered ancestor is the containing block for its
+fixed children, so `inset: 0` on the sheet resolves against the 56px BAR and
+not the viewport; explicit top/left plus width and height is what survives
+either way. And the language row that the drafts put at the foot was dropped:
+the picker is a row of autonyms and it already lives in the footer, which is
+where AllTrails and komoot put theirs (LanguagePicker.astro, 2026-08-22).
+
+Source: Hidde's screenshot of alltrails.com in Safari, 2026-09-18, kept with
+the proposal in drafts/menu-options.html.
 
 ---
 
@@ -1339,12 +1448,28 @@ now checked.
 **Both emit `hreflang` for every locale of the page**, including
 `x-default`, which we also already do.
 
-**What we do that they do not, and it is defensible.** Our language link is
-inline on the page itself ("Esta página también está disponible"), written in
-the target language, rather than a site-wide control in the footer. That serves
-a reader who landed on the English page from Google and would prefer their own,
-which is our actual traffic pattern. The two are not exclusive and the footer
-control is the one we lack.
+**What we did that they do not, and it was NOT defensible. Corrected
+2026-09-19.** This paragraph used to argue for an inline language link on the
+page itself, on the ground that a reader who landed on the English page from
+Google would prefer their own. The reasoning was fine and the PLACEMENT was
+not: on a city page it sat directly under the intro, above the first tree, so
+seven language names in six alphabets took the line between the lede and the
+first photograph. Hidde, seeing it on /rome: "I don't think it makes sense to
+give the translations this prime spot, that's not conventional."
+
+He is right, and this entry had already said so two paragraphs up: neither
+reference puts it above the content, in the header, or anywhere but last. The
+inline argument survives only in the sense that the control must EXIST on the
+page, which `hreflang` alone does not give a human.
+
+**So: last item in the footer everywhere, and on a page with no footer, last
+item in the sheet.** Three page types set `footer={false}` because the split
+map layout has no room for one (`/[city]`, the translated city page, and
+`/explore`), and on those the bottom of the sheet IS the footer. That is the
+`.panel-lang` block. The old exception ("the map has no footer, so it sits
+inline here, the same exception the city pages already make") is deleted rather
+than narrowed: an exception that reproduced itself across three page types was
+a default wearing an exception's clothes.
 
 **The gap this lookup was done for.** A translated page of ours sits inside an
 English frame: on `/es/seville` the navigation still reads Map, Cities,
@@ -2360,3 +2485,41 @@ whatever a page asks it gets the right answer on the first ask; a pending act
 carried across the round trip and replayed once the account's lists have
 landed; `Nudge.finish` doing the same job in the app; and sign-out swapping the
 page in place.
+
+## The site footer
+
+Read 2026-09-23, after Hidde, on a screenshot: "de footer is qua alignment en
+design heel raar opgebouwd." Measured rather than remembered, all three at a
+1440 viewport on the day.
+
+| | column grid | language control |
+|---|---|---|
+| AllTrails | four equal columns, 310px each, x=100/410/720/1030 | bottom bar, hard right, x=1148 |
+| komoot | four equal columns, x=120/427/734/1041, a 307px rhythm | bottom bar, hard right, x=1056 |
+| iNaturalist | ragged, content-width: x=150/287/443/579, right half empty | none |
+
+Two things both references agree on, and they are the two ours got wrong.
+
+**Columns get one width and fill the band.** Neither lets a column shrink to
+its longest word. Ours was `display:flex` with no widths, so the three columns
+came out 320, 64 and 114 wide, nothing lined up with the browse block directly
+above it (four columns of 231 at x=210/473/736/999), and the last link stopped
+at 42 percent of the band with 426px of empty page to its right. iNaturalist
+does exactly this and is the one of the three that reads as old.
+
+**The language control is not a column.** Both park it in the bottom bar,
+right, opposite the copyright. Ours was declared as the fourth column and is
+489px wide, so it never fitted: it flex-wrapped onto a row of its own between
+the columns and the copyright, and the four-column layout the markup describes
+was never once drawn on a screen.
+
+The fix is `repeat(auto-fit, minmax(200px, 1fr))`, which is the same track
+minimum `.dir-cols` uses, so the footer and the browse block break at the same
+widths instead of only agreeing on a wide screen. Verified at 1440, 1100, 860
+and 375: at every one of them the footer's column edges are the browse block's
+column edges, and at 860 both drop to three columns together.
+
+A fifth heading came out of it: the middle column was headed "Ancient Trees",
+hard-coded and untranslated, which printed the brand name twice in one footer
+beside the wordmark. It is two columns now, "The project" and "The data", both
+in all eight languages.

@@ -93,7 +93,7 @@ export const PARK_WAIVER_MIN = 3;
 
 /** May this park have a page? Five trees, or a waiver in its own intro file.
  *
- * Contract H (blueprint v1.19) gates a park page at five trees because below
+ * Contract H (blueprint v1.20) gates a park page at five trees because below
  * that it is a thin page wearing a park's name. The waiver is per park, lives
  * in the data rather than in this code, and carries who approved it: an
  * exception nobody can trace is indistinguishable from the gate rotting. */

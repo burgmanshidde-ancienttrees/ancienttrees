@@ -72,9 +72,24 @@ const cityStats = countryCities.map((c) => ({
 }));
 const total = cityStats.reduce((s, c) => s + c.count, 0);
 
+// Blueprint v1.19 (2026-09-19, Hidde's yes): the tail names TREES rather than
+// cities. It was a cities title on a page whose measured demand is
+// tree-shaped: "oldest tree in the netherlands" reaches /nijmegen and
+// /eindhoven at position 4 and "oldest tree in switzerland" reaches
+// /cremines, a village page, at 6, while /netherlands ranks for "netherlands
+// national tree" and little else.
+//
+// The head phrase is untouched, so what the page ranks for does not move.
+//
+// And it never says "the oldest trees in [Country]" flat, which was the first
+// draft and was wrong for the reason yesterday's heading was corrected: that
+// is a claim about the COUNTRY, and Taiwan's list runs down to a 90 year old
+// tree. "Oldest First" describes what the page does, which is true on every
+// one of them, and the count is trees we actually hold.
 const title = fitTitle([
-  `Ancient Trees in ${disp}: ${countryCities.length} Cities to Explore`,
-  `Ancient Trees in ${disp}: ${countryCities.length} Cities`,
+  `Ancient Trees in ${disp}: ${total} to Visit, Oldest First`,
+  `Ancient Trees in ${disp}, Oldest First`,
+  `Ancient Trees in ${disp}: ${total} to Visit`,
   intro.data.title ?? "",
   `Ancient Trees in ${country}`,
 ]);

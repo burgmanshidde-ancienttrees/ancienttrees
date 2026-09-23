@@ -22,6 +22,7 @@ import datetime
 import json
 import os
 import re
+import pathlib
 import subprocess
 import sys
 
@@ -72,6 +73,27 @@ BRANCH_SCOPED = {"ios.yml": "main"}
 # absolute age: a quiet night pushes nothing, deploys nothing, and is perfectly
 # healthy. The question is whether newer commits are sitting undeployed.
 DEPLOY_LAG_HOURS = 4
+
+
+def newest_commit_on_main():
+    """When main last moved, straight from git. None when it cannot be read.
+
+    Read rather than inferred from workflow runs, because the 2026-09-23 gap
+    was exactly the case where main moved and no run existed to notice: a push
+    made with GITHUB_TOKEN never triggers another workflow, and the night runs
+    push with that token, so deploy.yml fires only when a person pushes from a
+    laptop. Four days of trees, translations and a blueprint change sat in main
+    while the site served the 19th, and every alarm here was green because it
+    was comparing runs with runs.
+    """
+    try:
+        subprocess.run(["git", "fetch", "-q", "origin", "main"],
+                       capture_output=True, timeout=60)
+        out = subprocess.run(["git", "log", "-1", "--format=%cI", "origin/main"],
+                             capture_output=True, text=True, timeout=20).stdout.strip()
+        return datetime.datetime.fromisoformat(out) if out else None
+    except Exception:
+        return None
 
 
 def gh_last_success(workflow):
@@ -466,16 +488,25 @@ def main():
         # commits sitting on main that no successful build has carried out.
         if wf == "deploy.yml":
             ok_at, newest_at = gh_last_success(wf)
-            if newest_at and ok_at and ok_at < newest_at:
+            # MAIN, not the run list. Asking whether a run came after the last
+            # success cannot see the gap where NO run came at all, which is
+            # what happened for four days in September 2026 and is the more
+            # dangerous of the two: a starved pipeline at least leaves
+            # cancellations behind, and this leaves nothing.
+            main_at = newest_commit_on_main()
+            ahead = bool(main_at and ok_at and ok_at < main_at)
+            if ok_at and (ahead or (newest_at and ok_at < newest_at)):
                 behind = (now - ok_at).total_seconds() / 3600
                 if behind > DEPLOY_LAG_HOURS:
+                    why = ("main has moved since and no build has carried it "
+                           "out" if ahead else "there have been pushes since")
                     problems.append(
-                        f"{label} last SUCCEEDED {behind:.0f}h ago and there "
-                        f"have been pushes since, so main is ahead of the live "
-                        f"site. Runs cancelling each other is normal; this many "
-                        f"hours of it is not. Read the newest finished run, and "
-                        f"dispatch a build that cannot be cancelled: "
-                        f"gh workflow run deploy.yml")
+                        f"{label} last SUCCEEDED {behind:.0f}h ago and {why}, "
+                        f"so the live site is behind main. A push from CI never "
+                        f"triggers this workflow (GITHUB_TOKEN does not start "
+                        f"another run), so it only fires on a push from a "
+                        f"laptop or on its own schedule. Dispatch a build that "
+                        f"cannot be cancelled: gh workflow run deploy.yml")
             elif newest_at and not ok_at:
                 problems.append(
                     f"{label} has no successful run in its recent history at "
@@ -499,6 +530,30 @@ def main():
                      f"Nothing to fix. If a run still does 0.0 minutes after "
                      f"the window has reset, then it is not the allowance and "
                      f"its log is worth reading.")
+
+    # MIGRATIONS THAT NEVER GOT PASTED (2026-09-23). sightings.girth_hugs had
+    # been waiting twelve days: the app asks a reader how thick the trunk is,
+    # posts the answer, and PostgREST drops it. Every gate was green, because
+    # the code is written to degrade quietly around a missing column, and the
+    # price of degrading quietly is that nobody ever finds out.
+    try:
+        r = subprocess.run([sys.executable,
+                            str(pathlib.Path(__file__).resolve().parent / "sqlcheck.py")],
+                           capture_output=True, text=True, timeout=120)
+        line = (r.stdout or "").strip().splitlines()
+        if r.returncode == 1 and line:
+            names = ", ".join(x.split()[0] for x in line[1:])
+            print(f"  {'Migrations':20s} {len(line) - 1} not pasted")
+            problems.append(
+                f"{len(line) - 1} migration(s) in supabase/ were never pasted "
+                f"into the database: {names}. Nothing else reports these, "
+                f"because the code degrades quietly around a missing column, "
+                f"so the only symptom is a field that is always empty. "
+                f"python3 scripts/sqlcheck.py names the file for each.")
+        elif line:
+            print(f"  {'Migrations':20s} {line[0].split(':', 1)[-1].strip()}")
+    except Exception as e:
+        unknown.append(f"migrations ({e.__class__.__name__})")
 
     fired = knocks_fired()
     if fired is None:

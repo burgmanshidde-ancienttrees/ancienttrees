@@ -28,7 +28,7 @@ export async function getStaticPaths() {
       const intro = introByKey.get(parkGroupKey(g.citySlug, g.parkName));
       if (!intro) return null;
       // The gate is read AFTER the intro, because a waived park carries its
-      // waiver in that file (blueprint v1.19).
+      // waiver in that file (blueprint v1.20).
       if (!parkPageIsAllowed(g.trees.length, intro.data)) return null;
       return {
         params: { slug: intro.data.slug },

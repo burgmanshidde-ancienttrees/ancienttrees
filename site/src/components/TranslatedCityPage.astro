@@ -118,7 +118,6 @@ const cityHasQuestion = hasQuestionPage(city);
       <div class="city-intro">
         <p class="lede">{tr.intro}</p>
         <button type="button" class="city-intro-more">{U.readMore}</button>
-        <LanguagePicker current={lang} enPath={`/${cslug}`} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
           <span class="passport-total" id="passport-total"></span>
@@ -160,6 +159,12 @@ const cityHasQuestion = hasQuestionPage(city);
           )}
         </dl>
         <p class="suggest">{U.suggestTree} <a href="/contribute?kind=tree">{U.sendIt}</a>.</p>
+        {/* Bottom of the sheet, the same position as the English city page
+            (Hidde, 2026-09-19). It matters more here than there: a reader on
+            /ja/rome already has the language they wanted, so the row of other
+            languages is the last thing they need and it was the first thing
+            they got. */}
+        <div class="panel-lang"><LanguagePicker current={lang} enPath={`/${cslug}`} /></div>
       </div>
       </div>
     </aside>

@@ -13,6 +13,160 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-23
+
+**BLOCKER — the live deploy is currently red and has been since `ae739735`
+(19:40 local time in the commit trail), so nothing pushed since then,
+including today's whole batch of fixes, has reached ancienttrees.app.** `gh
+run list --workflow=deploy.yml` shows real `failure` conclusions (not
+`cancelled`) on the `ad6fd837` dispatch run (35854428898, which the new
+never-cancelled-when-dispatched rule from `3c3bd2b9` let run to completion)
+and on the `22bc376f` push run, both failing at the same "QA the built site"
+step for the same two reasons, and the newest run against `3bac46aa`
+(35856765096, in progress as this review was written) touches neither file
+below and will almost certainly fail the same way:
+
+1. `check_every_tree_you_gave_us_comes_back()` (scripts/qa.py:2035) checks for
+   `site/dist/account/index.html`, which Astro never builds: every top-level
+   page in this project's output is a flat file (`account.html`,
+   `contribute.html`, `sponsor.html`, confirmed by listing `site/dist`
+   directly), never a directory index. So this check has failed on every
+   build since it was added in `ae739735`, regardless of whether the content
+   it actually cares about (the two REST calls) is present or correct. `ad6fd837`
+   fixed this function's OTHER bug (matching the whole query string instead of
+   the table name) the same day without noticing this one, because the
+   function returns two kinds of failure and only the second was tested
+   against a real build.
+2. **A genuine broken inline script, the same failure shape `2aca5a9e` fixed
+   hours earlier, in a different line of the same file.** `site/src/lib/
+   my-trees-js.ts:176` (added in `ae739735`) reads
+   `r.reply_text.split('\n')[0]` inside the `MY_TREES_JS` template literal.
+   `\n` inside a backtick template literal is a real TypeScript/JS escape, so
+   the build resolves it to an actual newline character before the string
+   ever reaches the browser, and the emitted `<script>` on `account.html`
+   contains a single-quoted string broken across two lines by a literal line
+   break. Reproduced directly: `node --check` on the extracted script body
+   fails at exactly that line with "Invalid or unexpected token"; running
+   `python3 scripts/qa.py` locally against the current build confirms it as
+   the one broken page in the whole site (`node scripts/inline_scripts.js
+   site/dist`: "1 broken"). The fix is the same shape as `2aca5a9e`'s own
+   fix, escaping the backslash (`'\\n'`) so the CLIENT script keeps a real
+   `\n` to call `.split()` on. Because this breaks the WHOLE `MY_TREES_JS`
+   script silently (browsers drop the entire tag on a parse error, per
+   `2aca5a9e`'s own reasoning), `/account` currently loads with none of its
+   own JavaScript running at all: no saved-trees list, no sent-tree list
+   (the very feature `ae739735`/`be4f9044` were written for today), no
+   photograph painting, on production right now, because the last thing that
+   DID deploy predates all of it.
+
+Both are one-line fixes once found; neither is fixable by this reviewer, who
+finds and never fixes. `python3 scripts/qa.py` reproduces both locally in
+seconds against the already-built `site/dist`.
+
+**Update, same session, minutes later: a fix landed on main while this entry
+was being written, `8fee850b` ("Fix the lone backslash that killed the account
+page's script, and refuse the next").** Read directly rather than trusted: it
+escapes both `\n` literals in `my-trees-js.ts` to `\\n` (the reply-text split
+above, and a middle-dot join a few lines up carrying the same trap), widens
+`check_every_tree_you_gave_us_comes_back()` to accept either `account.html` or
+`account/index.html`, and adds a `lone_backslashes()` pass to `scripts/
+jslits.py` so a single backslash inside one of these literals fails the
+pre-push hook the way an early-closing backtick already does. The source diff
+addresses both root causes exactly as described above. Not yet confirmed
+green: the dispatched build for `8fee850b` (run 35857470829) was still
+`in_progress` when this was written, and a further commit (`3dc8df4a`) had
+already landed on top of it, so whether THAT push's own build passes is for
+the next review or the next run's `python3 scripts/health.py` to confirm
+rather than something to claim here.
+
+Reviewed commits since the last review entry (2026-09-18) through the session
+window: roughly 30 commits in the last 24 hours plus one that landed live
+while this review was running (`3bac46aa`, pulled in and reviewed too).
+Substantial work: the assembly line resumed (Bad Homburg and Friedewald added
+from the first outside contributor's tips, City Park New Orleans opened as a
+park page, a Washington DC elm), a real deploy-pipeline gap fixed (`3c3bd2b9`:
+the site had been serving the 19th's build for four days because a
+GITHUB_TOKEN push never re-triggers `deploy.yml`, now given a three-hourly
+cron), a build-breaking backtick caught and given its own check (`2aca5a9e`),
+the footer's column grid and language-picker placement corrected against the
+AllTrails/komoot references, and the account page taught to read the
+`submissions` table so a contributor's own tips show up under their account
+(`ae739735`/`22bc376f`, web and app in the same change, per the
+cross-platform-by-default rule). Spot-checked the new Bad Homburg and
+Friedewald trees against Step 2/3: derived facts state their basis, bridge
+claims are avoided on purpose (the park's 1680/18th-century dates are not
+joined to the undated oak and plane), the ambiguous reader tip is handled by
+publishing both candidate oaks rather than guessing (`3c3bd2b9`). Ran
+`python3 scripts/preflight.py` (634 cities, 0 problems, only pre-existing
+NOTEs), `python3 scripts/i18ncheck.py` (86 overlays, 0 problems) and `python3
+scripts/superlatives.py` (387 claims, no collisions). Read the six rotated app
+screenshots (contribute, directions, explore, feedback, map-full, map): all
+clean, no contradicted promises, no builder-speak; the floating "Map" pill
+overlapping a card in `map.png` matches its own documented, previously-fixed
+design (`TreeMap.swift`, `MapTab.swift` comments) rather than a new fault.
+
+**WARN — `scripts/health.py`'s starvation check cannot see a usage-limit
+refusal in `review.yml`, so every one gets reported as "the site may be
+broken" instead of "nothing to do, wait for the window", which is very
+likely the whole of why the SessionStart brief says Fresh-eyes review has
+failed three runs running "even though running it by hand works" (it just
+did, in this session).** `looks_starved()` (scripts/health.py:201) asks
+whether the newest failed runs' wall-clock `updatedAt - startedAt` was under
+`STARVED_SECONDS` (120s). For `nightly.yml` that is a fair proxy for "did the
+agent get a turn". For `review.yml` it is not: the job runs `npm ci`, `npx
+astro build` and a screenshot-artifact fetch unconditionally before the
+Claude step ever starts (`.github/workflows/review.yml` lines ~66-98), so the
+whole job takes 9-13 minutes even when Claude itself dies on the very first
+turn. Checked directly against the last four completed failures
+(`gh run list --workflow=review.yml`, IDs 35758557243/35721658664/
+35637169113/35522393259): all four show the exact allowance fingerprint
+inside their own logs (`"is_error": true, "duration_ms": ~300-450,
+"num_turns": 1, "total_cost_usd": 0`), which is precisely the signature
+CLAUDE.md's capacity doctrine and `run_health.py`'s `recent_limit_deaths()`
+both name. But `gh run list`'s own `startedAt`/`updatedAt` for those same four
+runs are 543s, 767s, 716s and 748s, all comfortably over the 120s floor, so
+`looks_starved()` returns `False` and `failure_evidence()` (which correctly
+excludes the generic `is_error` wrapper text via `GENERIC_WRAPPER_MARKERS`,
+confirmed by running it directly) falls through to `starved=False` and the
+run gets classified as a genuine break. `python3 scripts/health.py` right now
+still prints "Fresh-eyes review is failure (its newest run, 19h ago). The
+site may be broken; read the failing log before anything else" as a rung-2
+item, which sends the next run to read a log that says nothing is wrong. This
+is the same class of false positive `GENERIC_WRAPPER_MARKERS` was written to
+fix on 2026-09-16, one layer up: the fix corrected what counts as evidence,
+but the fallback heuristic under it was never checked against a workflow
+whose job has real work before the Claude step. Worth a narrow fix (measure
+the Claude step's own duration from the log's `duration_ms`, which is already
+being read for `evidence`, rather than the whole job's timestamps) rather
+than raising `STARVED_SECONDS`, since a higher floor would just as easily
+hide a genuine `review.yml` break behind a slow build.
+
+**WARN — the new "add a photograph" feature shipped English-only, and the
+existing cross-language ratchet check would not catch it even after a
+rebuild.** `3bac46aa` ("The website takes photographs now...") gives the
+English tree page a real `AddPhoto` control (`site/src/pages/[city]/[tree]
+.astro`, `site/src/components/AddPhoto.astro`) and gives `/contribute` a file
+field, replacing a dead end the page had carried since it was written ("Send
+us yours" linking to a form with no way to send anything). Neither reached
+`site/src/components/TranslatedTreePage.astro`, the one template all seven
+translated tree-page languages share: it still renders the pre-fix copy
+(`U.sendYours` / `U.willAppear`, line ~160) linking to the English
+`/contribute`, with no `AddPhoto` import or control anywhere in the file
+(confirmed against `origin/main`, since this landed mid-review and the local
+`site/dist` predates it). This is exactly the gap CLAUDE.md's "cross-platform
+is the default" section (2026-09-12) and `check_every_language_gets_the_same_
+controls()` exist to catch, but that check compares a fixed marker list
+(`PARTS` in scripts/qa.py, currently `worthit-btn`/`save-btn`/`share-btn`/
+`report-btn`/`dir-link`/`app-pitch`/`which-one`/`best-now-inline`) against the
+built pages, and nothing in this commit added an `addphoto`/`addphoto-btn`
+marker to that list. So even the next full build-and-push will not turn this
+red; the check is silent by construction for a control it has never been told
+to look for. A reader of a translated tree page today has strictly less
+ability to contribute a photograph than an English reader, on a page that
+still promises "it goes on this page" with no way to make that true.
+
+---
+
 ## 2026-09-18
 
 Reviewed commits since the last review (2026-09-17's entry, through the

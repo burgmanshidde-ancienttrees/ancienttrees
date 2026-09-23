@@ -10,6 +10,200 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-23 (afternoon) - The site takes photographs now, and had not deployed since the 19th
+
+Two things came out of walking the first outside contributor's trail.
+
+**THE SITE HAD NOT DEPLOYED FOR FOUR DAYS.** ancienttrees.app was serving
+commit 352b5c0 exactly, 3287 trees and 632 city files, which is what main
+held on 19 September. Not broken, not failing: `deploy.yml` simply was not
+being called. A push made with GITHUB_TOKEN never triggers another workflow
+and the night runs push with exactly that, so the site deploys only when
+somebody pushes from a laptop, and nobody did between the 19th and this
+morning. health.py has watched for this since 09-17 and could not see it,
+because it asks whether a RUN came after the last successful one and there
+were no runs at all; it reads main's own newest commit now. deploy.yml has a
+three-hourly cron, a scheduled build is no longer cancellable by a push, and
+/build.txt carries the commit the live site was built from, because
+/api/version.json hashes feed CONTENT and cannot answer "is this current".
+
+**THE WEBSITE CAN TAKE A PHOTOGRAPH OF A TREE.** Hidde: "het gaat er vooral
+op dat de contribute pagina wel fotos gaat aannemen toch?" It could not, and
+its own "What helps most" list has asked for "A photo you took yourself"
+since it was written. Two paths, because they are two cases (CONVENTIONS.md,
+"Taking a photograph of a place ON THE WEB"). On a tree we map, a control on
+that tree's page writing the same sightings row the app writes, so the whole
+existing pipeline works unchanged; the photo-less figure used to say "Send us
+yours" and link to a form with no file field, on 2,400 pages. On a tree we do
+not map, a field on the form, with the file hanging off the SUBMISSION,
+because no coordinate exists and a browser cannot invent one.
+sightings_inbox.py reads both, which is the morning's own lesson applied
+before it could bite again.
+
+**Also: both Schlosspark oaks are live rather than one.** The reader's tip
+said about five metres and the park's survey holds a 5.39 and a 4.94; we were
+about to attach his tip to one of them on no evidence. The reply asks which.
+
+**FOR HIDDE.** One line of SQL: `supabase/submission-photos.sql`. Until it is
+pasted, a tip with a photograph is retried without the photograph rather than
+lost, and the inbox says the column is missing rather than swallowing it.
+
+**What went wrong on my side, recorded because it is the useful part.** Four
+builds failed before one landed: night runs cancelling them, a backtick in a
+comment that ended a template literal, and a lone backslash that the literal
+ate, which killed the account page's entire script silently. My own first
+reproduction of that one said the script was FINE, because it simulated the
+template literal by halving double backslashes and nothing else. Both are
+checks now (scripts/jslits.py, in the pre-push hook), measured first: not one
+of the 52 literals carries a lone backslash today.
+
+## 2026-09-23 - Country titles now name trees (blueprint v1.19), and a famous-tree pass that could not fetch anything
+
+**Live: Contract G's title.** It read `Ancient Trees in [Country]: [N] Cities
+to Explore` on a page whose measured demand is tree-shaped, and now reads
+`Ancient Trees in [Country]: [N] to Visit, Oldest First`, N being the TREE
+count, falling back to `Ancient Trees in [Country], Oldest First` over 60
+characters. Hidde's yes on 2026-09-19 ("als je denkt dat dat beter is doe
+het"), blueprint bumped to v1.19 with the changelog entry hard rule 7 asks
+for. The head phrase does not move, so what the page ranks for is unchanged.
+
+The measurement behind it: country pages carried 410 impressions and FIVE
+clicks in ten days across the eight clearing ten impressions, while "oldest
+tree in the netherlands" reached /nijmegen and /eindhoven at position 4 and
+"oldest tree in switzerland" reached /cremines, a village page, at 6.
+
+It never says "the oldest trees in [Country]" flat. That was my own first
+draft and it reintroduces the claim the H2 was corrected for the day before:
+Taiwan's list runs down to a ninety year old tree, so it is a claim about
+Taiwan rather than about our map.
+
+**The famous-tree batch produced RESEARCH, not trees, and cannot ship as it
+stands.** The verify pass ran with all outbound HTTP blocked by the
+environment's network policy: WebFetch and curl refused at the proxy for
+every host tried, Wikipedia and Commons and Wikidata included, still true
+from this session today. Only WebSearch worked, and BRIEF_RESEARCH.md's own
+rule is that a WebSearch summary is a lead and never a source. So every
+figure in `data/research/famous-batch-2026-09-19.md` is single-channel and
+none of it meets the two-independent-sources bar. The agent said so itself at
+the top of its own findings, which is the right call; a pass that can fetch
+re-verifies every number before any of it reaches a city file.
+
+What it did find is worth the window even so:
+
+| Verdict | Trees |
+|---|---|
+| Reads as verifying, needs re-checking with a real fetch | Najevnik Linden (Slovenia), Oak of Bataszek (Hungary), Araucaria Madre (Chile), Zlatolist Plane (Bulgaria), Tilleul de Turenne (France), Rotomanty (Finland), Lulin Sacred Tree (Taiwan, thin) |
+| **DEAD, blocked** | Okuteshinmeijinja no osugi (Japan), TV-eken (Sweden) |
+| **Already published** | Figueira das Lagrimas, live as spa_001 in Sao Paulo |
+| Not reached before the pass died | Xiangyang Famous Tree (Taiwan) |
+
+Two dead trees caught before they shipped, and a second already-mapped tree
+after La Pochota. That one is a gap in my own check rather than bad luck: the
+distance dedupe cannot see a lead with no coordinate, and that lead has none.
+Both belong on the leads files as resolved.
+
+The pass ended on the weekly usage limit rather than on a decision, so it is
+unfinished rather than concluded. Claims on chishang and lohja expired on
+their own and are released.
+
+**FOR HIDDE.** The environment's network policy denied every outbound host
+this session tried, which is what stopped the verification. You change it
+under Network access in the environment's settings, from the cloud
+environment menu in the session title bar, then Edit: either a broader access
+level or wikipedia.org, wikimedia.org and wikidata.org added to the allowed
+domains. The levels are described at
+https://code.claude.com/docs/en/claude-code-on-the-web. Until then any
+research pass here is limited to WebSearch, which cannot meet our own
+sourcing bar.
+
+
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-09](archive/LOG-2026-09.md)
+- [2026-08](archive/LOG-2026-08.md)
+- [2026-07](archive/LOG-2026-07.md)
+
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+## 2026-09-23 (session) - The language picker moved to the bottom of the sheet, where the references put it
+
+Hidde, on the Rome page on his phone: "I don't think it makes sense to give the
+translations this prime spot, that's not conventional." He is right, and the
+awkward part is that CONVENTIONS.md had said the same thing since 2026-09-02,
+in the entry written for this exact control: komoot puts a plain line at the
+very bottom, AllTrails a select in its footer block, neither of them above the
+content.
+
+What it looked like: on a city page the row of seven language names sat
+directly under the intro and above the first tree, so the line between the lede
+and the first photograph went to six alphabets most readers cannot read.
+
+How it got there, which is the part worth keeping. The picker IS in the footer
+everywhere Base.astro draws one. Three page types set `footer={false}` because
+the split map layout has no room for one, and on each of them somebody put the
+control inline instead and wrote a comment calling it an exception. The third
+one's comment says so outright: "the same exception the city pages already
+make". An exception that copies itself across three page types is a default
+wearing an exception's clothes.
+
+Fixed on all three (`/[city]`, the translated city page, `/explore`): the
+picker is now the last block in the sheet, under the suggest line, as
+`.panel-lang`. On a footerless page the bottom of the sheet is the footer.
+Nothing was removed and no link was lost, so the translated pages keep their
+inbound link and their `hreflang` set is untouched; it is 2,000 pages of
+placement, not of content.
+
+CONVENTIONS.md's "what we do that they do not, and it is defensible" paragraph
+is rewritten rather than deleted: the inline ARGUMENT was fine (a reader who
+landed on the English page from Google wants a way across, which hreflang alone
+does not give a human), the PLACEMENT was not.
+
+
+## 2026-09-23 - The first contributor from outside, and the form that told him nothing
+
+Somebody who is not Hidde sent us trees. Leon, signed up through Google on
+20 September, sixteen rows between then and the 22nd: two oaks and a
+worth-it vote on the Reinborn linde. Fourteen of the sixteen rows are the
+same oak.
+
+**Both trees are live.** [Friedewald](https://ancienttrees.app/friedewald)
+holds the **Hammundeseiche**, the thickest oak in Hessen at 8.65m round and
+25m tall, standing alone in a forest clearing where a village stood until
+1312; it publishes below the four-tree floor under the single-famous-tree
+exception. [Bad Homburg](https://ancienttrees.app/bad-homburg) is a
+four-tree walk in the Schlosspark built around his oak: the cedar in front
+of the royal wing (6.40m, planted 1822 from Kew seed, the city calls it the
+thickest and oldest of its kind in Germany), a 5.8m dawn redwood, his 5.39m
+oak and a 5.66m plane. Six more park trees kept as leads.
+
+**Why he sent one oak fourteen times, which is the part worth reading.**
+Two faults, both ours, both invisible to every gate we have.
+
+The **contribute form never hid itself**. `hidden` is display:none from the
+browser's own sheet and `.suggest-form` carries `display: flex`, which beats
+it. So after a successful send the button sat on "Sending..." with every
+field still full, under a thank-you line. The row had been saved. Nothing on
+screen said so. Hidde walked into the same thing this afternoon while we
+were reading Leon's rows, which is how it was found. This exact collision
+has now cost four visible faults and three of them were already written into
+style.css as comments beside per-class fixes; it is one global rule now, and
+`check_hidden_means_hidden()` refuses a stylesheet without it.
+
+And **/account did not read the submissions table**. The app's camera writes
+to `sightings`, the website's form writes to `submissions`, and My trees
+read the first only. The thank-you mail meanwhile says "you can see the
+trees you added on your account". Ten of his sixteen arrivals at the form
+came from /account: he was told to go and look, looked, saw the empty line
+with Add a tree under it, and sent the oak again. It now lists what you
+sent, one card per tree rather than per row, with the status and our answer
+on it. `check_every_tree_you_gave_us_comes_back()` names both tables.
+
+**FOR HIDDE.** The reply to Leon is drafted at
+`drafts/reply-leon-hessen.md`, mailcheck clean, and asks him what the form
+looked like from his side. It goes out on row 131 through the usual
+contributor pipeline. The app half of the account change is NOT built: a
+tree sent through the website still does not appear in the app's My trees,
+which is a cross-platform gap I opened deliberately to get the web fix in
+front of a live contributor today, and it is the next thing.
 
 ## 2026-09-23 - The National Mall is live at four trees, on his waiver
 
@@ -18,7 +212,7 @@ maar live prima 3 voor n keer". So it is live, with the Jefferson Elm, the
 mulberry on its steel crutch, the Survey Lodge catalpas and the Smithsonian
 Witness Elm, and the page says four rather than pretending to five.
 
-The gate is now waivable per park down to three, blueprint v1.19. The
+The gate is now waivable per park down to three, blueprint v1.20. The
 waiver lives in the park's own intro file with his name and his words on
 it, not as a smaller number in the code, because an exception nobody can
 trace reads later as the gate having quietly rotted. `parkPageIsAllowed()`
@@ -312,6 +506,42 @@ This entry exists because the run wrote none. The prompt asks every run to log e
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
 
 This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
+## 2026-09-19 (session) - The phone menu is a sheet now, drawn after AllTrails
+
+Hidde sent AllTrails' mobile menu, said he likes it much better than ours,
+and asked for three versions of it. They went to him as a rendered mock-up
+at phone width (`drafts/menu-options.html`, his screenshot kept beside it)
+and he picked the flat one: their sheet and their rows, with every section
+open rather than folded, because they have about twenty-five destinations
+and we have ten.
+
+**What the phone menu is now.** A full-screen white sheet with its own mark
+and a circled X, one dark "Download the app" pill at the top, three open
+groups (Browse, Yours, Take part) with a hairline between them, 48px rows
+carrying a 34px icon tile, and a Sign in pill at the foot that disappears
+once you are signed in. Desktop is untouched and still a dropdown. The
+measurements come from his screenshot rather than from taste, and both the
+numbers and what we deliberately did not copy are in CONVENTIONS.md.
+
+**Two things found while building it, both worth more than the menu.** The
+nav's whole script (menus closing each other, click-outside, Escape, and the
+swap that tells the bar who you are) sat inside the `{ANALYTICS_TOKEN && ...}`
+block, so it shipped only where a Cloudflare token is set. That was a lost
+nicety while this was a dropdown; with a sheet that covers the bar and the
+button that opened it, a tokenless build would have trapped the reader on a
+full-screen menu with no way out. It is outside that block now, which is the
+same correction the units script records from a week ago. And `header.bar`
+sets `backdrop-filter`, which makes it the containing block for its own fixed
+children, so the obvious `inset: 0` would have drawn the sheet inside a 56px
+letterbox.
+
+Three new strings (Take part, Sign in, Close) in all eight languages, so the
+sheet arrived translated rather than in English with seven holes. Checked by
+looking at it: Cadiz and /nl/cadiz at 375px with the menu open, the foot of
+the sheet, and the desktop dropdown. Build clean at 11,993 pages, `qa.py`
+green, preflight 0 problems, paritycheck, crosscheck, conventioncheck and
+pluralcheck all green. Merged to main and live.
 
 ## 2026-09-19 (session) - One turn in eleven was a refused command, and the record had been naming the wrong word for a month
 
@@ -1635,7 +1865,6 @@ the ranking is Google's published lists plus footfall rather than a measured
 number per park. A night run can fill it in one pass.
 
 Build clean, `qa.py` green, `preflight.py` 626 places and 0 problems.
-
 ## 2026-09-18 (session 4) - Landed session 3's write claim, fixed a stale Tokyo count, viewed 14 photo candidates (0 approved)
 
 An earlier attempt this window stopped after 43 minutes having shipped
@@ -3519,96 +3748,6 @@ This entry exists because the run wrote none. The prompt asks every run to log e
 ## 2026-09-16 - Night run 2026-09-16 02:13 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 1 commit(s), none of them a published tree.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 23:48 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.2 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 20:36 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 17:49 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 12:58 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 1 commit(s), none of them a published tree.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 06:56 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 04:44 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 00:04 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.1 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). 1 commit(s), none of them a published tree.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 23:49 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 21:09 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.1 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 20:53 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 16:02 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 09:21 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 05:28 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 1 commit(s), none of them a published tree.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 02:14 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 00:28 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 36.1 minutes of its 120 minute window, 214 turns, 15 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: eindhoven, berlin, which block the top of the queue until they expire.
 
 This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
 

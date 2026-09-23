@@ -1978,6 +1978,86 @@ def check_the_session_is_known_before_anything_asks():
     return out
 
 
+def check_hidden_means_hidden():
+    """The fourth time one cascade rule cost a visible fault, so now it is a check.
+
+    The `hidden` attribute is display:none from the browser's own stylesheet,
+    which any class in ours carrying its own `display` beats on source order.
+    It has hidden nothing four times: the waitlist form sitting on top of its
+    own confirmation, two sign-in dialog rules, and on 2026-09-23 the
+    contribute form, where a tree tip that HAD been saved left the button
+    reading "Sending..." for ever with every field still full. The first
+    contributor from outside met that one and sent the same oak fourteen times.
+
+    Each of the first three was fixed for the one class that got caught. This
+    refuses a stylesheet without the single rule that fixes all of them, and
+    refuses any later rule that makes a hidden element visible again.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    css = (root / "site" / "public" / "assets" / "style.css").read_text(encoding="utf-8")
+    flat = re.sub(r"\s+", " ", css)
+    if not re.search(r"\[hidden\]\s*\{[^}]*display:\s*none\s*!important", flat):
+        out.append("style.css has no global `[hidden] { display: none !important; }`, "
+                   "so any class with its own display beats the hidden attribute and "
+                   "an element the page thinks it has hidden stays on screen (the "
+                   "2026-09-23 contribute form, and three before it)")
+    for m in re.finditer(r"([^{}]*\[hidden\][^{}]*)\{([^}]*)\}", css):
+        body = m.group(2)
+        d = re.search(r"display:\s*([a-z-]+)", body)
+        if d and d.group(1) != "none":
+            out.append("style.css: `%s` sets display:%s on a hidden element, which "
+                       "puts back the bug the global rule exists to stop"
+                       % (m.group(1).strip()[:60], d.group(1)))
+    return out
+
+
+def check_every_tree_you_gave_us_comes_back():
+    """The account page must read BOTH channels a person can add a tree through.
+
+    Hidde, 2026-09-23, after reading what the first outside contributor did:
+    "zorg dat de bomen vanaf nu dus wel zichtbaar zijn in je account."
+
+    There are two write paths and there have been since the app shipped. The
+    app's camera writes a row to `sightings`. The website's form writes a row
+    to `submissions`. /account read the first and not the second, so a tree
+    somebody typed into the form arrived nowhere they could see, while the
+    thank-you mail told them to go and look at their account. One contributor
+    sent the same oak fourteen times over three evenings, ten of those visits
+    arriving at the form from /account.
+
+    Nothing could catch that: the page built, the fetch it did make worked, and
+    the lane showed its ordinary empty line. So this check names the two tables
+    and refuses a build where the account page has stopped reading one of them.
+    A third channel added later belongs on this list the day it is built.
+    """
+    out = []
+    # This build writes account.html, not account/index.html. Written the wrong
+    # way round first and caught by the build that ran it.
+    page = next((p for p in (DIST / "account.html", DIST / "account" / "index.html")
+                 if p.exists()), None)
+    if page is None:
+        return ["the account page did not build (no account.html and no "
+                "account/index.html), so nobody can see the trees they added"]
+    html = page.read_text(encoding="utf-8")
+    # The table NAME only, never the whole query string. These urls are built
+    # by concatenation in the source, so "/rest/v1/submissions" + "?select=..."
+    # never appears contiguously in the built page, and a check that asked for
+    # the whole thing would fail on a page that is perfectly correct. Caught
+    # before the first build that ran it, which is luckier than it deserved.
+    for table, what in (("sightings", "trees added with the app's camera"),
+                        ("submissions", "trees sent through the website's form")):
+        if "/rest/v1/%s" % table not in html:
+            out.append("/account never reads the %s table, so %s are invisible "
+                       "to the person who added them (the 2026-09-23 loop: the "
+                       "thank-you mail sends them to a page that shows nothing)"
+                       % (table, what))
+    if 'id="sent-list"' not in html:
+        out.append("/account has no sent-list, so trees sent through the form "
+                   "have nowhere to render even if they are fetched")
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -2003,6 +2083,8 @@ def main():
     failures += check_save_flow_integrity()
     failures += check_the_session_is_known_before_anything_asks()
     failures += check_tick_has_its_wiring()
+    failures += check_every_tree_you_gave_us_comes_back()
+    failures += check_hidden_means_hidden()
     failures += check_sheet_integrity()
     failures += check_inline_scripts_parse()
     failures += check_one_tree_card()

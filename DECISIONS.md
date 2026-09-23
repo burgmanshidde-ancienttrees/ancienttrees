@@ -25,7 +25,134 @@ waived park is one somebody wrote about rather than one that met a number.
 The title still states the count it actually holds, which
 `checkParkCountPromises()` enforces, so the page says four.
 
-Blueprint v1.19.
+Blueprint v1.20.
+
+## 2026-09-23 - Which trees get a page: the meetlat is the species, the snee is the city
+
+Hidde, on being shown that a mail from the Danish tree register put 733
+Copenhagen trees within reach: "hier moeten we ooit met een duurzame regel voor
+komen, welke bomen accepteren we wel en niet, welke bomen zijn remarkable trees
+worth a visit." Then, correcting the first draft twice: "het gaat denk ik niet
+echt om land, eerder om stad", and "je moet niet meten binnen deze lijst van 60
+maar binnen wat er bekend is in de hele database over de soort", and "is naast
+groot voor zn soort oud voor zn soort niet ook belangrijk?"
+
+### The problem this closes
+
+A register can hand us thousands. Scarcity is the product (2026-09-08, "een
+beetje schaarste is beter dan alles"), so something has to decide which of them
+get a page, and it has to be a rule rather than a mood, because the next
+register arrives next week.
+
+Everything below is about LAYER 1 only, the trees that get a page and can be
+collected. Layer 2 is unchanged: one official register is enough for a dot on
+the map, no page, not collectible, honestly labelled. All 733 may be dots.
+
+### 1. The floor: a reason somebody standing there can see
+
+One of three is enough:
+
+- big, tall or old for its species,
+- a story of one sentence, with a source,
+- spectacle that is visible in a photograph.
+
+What is NOT a reason: protected, registered, designated, or ninth in the queue.
+Those are properties of the paperwork. This is the 2026-08-10 rule restated for
+supply rather than for a single tree: a judgement call never blocks a tree, but
+the absence of any reason at all means it is a LEAD, not a page.
+
+### 2. The yardstick is the species, worldwide; the cut is the city
+
+Two different things, and conflating them was the first draft's error.
+
+**The yardstick** is girth, or age, measured against everything this project
+knows about that species. Never absolute girth: a Turkish hazel of 2.10 m is
+close to the thickest in Denmark, an oak of 4.62 m is a park oak, and absolute
+size picks the wrong one of those two every time. `scripts/species_size.py`
+builds the reference from every measurement we hold, 8,096 girths over 504
+species and 2,531 ages over 372, out of published trees, imported registers and
+leads. It scores against the 90th percentile once a species has ten records and
+against the maximum below that, and says THIN when it is the second, because a
+reference resting on three trees is a guess with arithmetic on top.
+
+Measuring inside the batch at hand is exactly the trap Hidde caught: a snake
+spruce of 1.22 m read as the biggest of its species because it was the only one
+in a 60-tree list. Against the whole database it is 23 percent.
+
+**The cut** is the city. Rank a place's candidates and take the top N, with N
+the target already computed per city in `data/city-queue.json`. A city whose
+trees are modest still publishes its best; a city with heavy competition drops
+the same tree. Nothing has to be lowered anywhere, because the competition
+lives in the ranking and not in the yardstick.
+
+### 3. Age and height are the other two axes, and the BEST of the three counts, never the sum
+
+Hidde asked for it and the data says he is right twice over. We have more ages
+than girths: 77 percent of published trees carry an age against 47 percent with
+a measurement, so the first draft built its yardstick on the scarcer field.
+
+Across species the two are not interchangeable, because growth rate varies
+fourteenfold in our own data, from 60 cm of girth per century for an olive or a
+yew to 836 for an ombu. Within a species they mostly agree, because the age was
+usually calculated FROM the girth, which is why adding them would count one
+fact twice.
+
+Where they disagree, the girth is the one that lies, and those trees are worth
+the trip: a holm oak of a thousand years at 200 cm, a Scots pine of five
+centuries at 188, a yew of 800 years at 292. `remarkable()` returns the higher
+of the two and names which one carried it. The holm oak of St Francis scores 49
+percent on thickness and 182 on age.
+
+**Height joined the same day**, on Hidde's "laten we inderdaad hoogte meenemen, als derde as". The gap had a name: Lund's own mail points at the tallest beech in Denmark, about 45 m, and under girth and age alone that tree scored nothing. It scores 141 percent on height, above anything we know of, from 1,803 height records over 329 species. Units are checked rather than trusted, because Hawaii publishes feet and everything else metres.
+
+**The circularity guard: an age we computed ourselves from a girth is not new
+evidence.** Only a sourced age or a documented planting date counts on the age
+axis. That distinction lived in prose (a derived age states its basis in
+`verify_notes`, 2026-08-16) where no script can read it, so `age_basis` is now
+a field on the tree: `source`, `derived`, or absent. Only `source` scores.
+
+### 4. Outside a place there is no slot, so the destination test applies
+
+Inside the day-trip boundary a tree competes in that place's ranking. Outside
+it there is no list to compete in, so it has to be the reason for the trip on
+its own, which is the single-famous-tree test of 2026-08-31 unchanged. Hidde:
+"bomen buiten steden moeten echt van goede huizen komen."
+
+### 5. People are a source, and a heavier one than a register row
+
+| What | Verdict |
+|---|---|
+| Two accounts adding the same tree within 30 m | add |
+| One contributor plus a source that describes the tree by name | add |
+| One contributor, no source, but visibly big for its species | add, and ask the page's reader for the girth |
+| One contributor, no source, nothing that sets it apart from its neighbours | lead |
+
+The third row is Hidde's, the same day: "wat als het een overtuigende boom is,
+voor nu zou ik wanneer we zien dat het duidelijk een grote voor zn soort is
+gewoon toevoegen." The photograph is the measurement when no tape exists, and
+what we cannot measure the page asks the reader, which is the publish-and-ask
+rule of 2026-08-13 applied to size.
+
+The fourth row is Nara, and the reason it failed is worth keeping straight,
+because the first draft of this rule got it wrong. Nara did not fail on the
+missing source. It failed because the trees were ordinary, a slope holding
+cedars like that by the dozen. Hidde: "in nara hebben we allerlei niet echt
+bijzondere bomen online gezet en terecht niet toegelaten." Those two happened
+to coincide there, and the wrong one nearly became the rule.
+
+### What this does not touch
+
+The hard rules, the four-tree floor with its single-tree exception, the
+never-cuttable list, and the rule that nothing else stops a tree going live: a
+missing age, a missing girth, one source or a thin reference are all reasons to
+publish and flag, never to wait.
+
+### The honest weaknesses
+
+The reference is only as good as the girths and ages we hold, so a species we
+barely know gets a lat that is too low or too high; every register import makes
+it better. And the age axis is only as honest as `age_basis`, which is empty on
+every tree written before today.
 
 ## 2026-09-17 - The translation strategy, fixed
 

@@ -18,6 +18,45 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-23 - Friedewald and Bad Homburg, from reader submissions
+
+**Friedewald: 1 tree, 0 flagged, 0 photos missing.** The Hammundeseiche,
+8.65m girth (2015, breast height) and 8.77m at 1m (2001), 25m tall, crown
+20m, estimated 350-440 years by Kuhn & Kuhn (2007) and Frohlich (2000) via
+de.wikipedia; second source kuppenrhoen.de for the deserted village, the
+1141 first mention, the 1312 abandonment and the walking route. Pin
+confirmed: Wikidata Q1573933, de.wikipedia and the submitter's own
+coordinate agree within about 10m. Two photographs, both looked at.
+
+NOT USED: kuppenrhoen.de says Mercator's 1592 map marks a notable tree at
+this place, which the 350-440 estimate cannot easily be squared with. Left
+as two facts rather than joined. An older 1000-year claim is called
+unreliable by its own source and is not repeated. The best whole-tree
+photograph otherwise available (Hammundeseiche,2.jpg, public domain) scores
+POOR on photo_light.py, backlit with a blown sky, and was rejected for the
+2009 panoramio shot at 800x600.
+
+**Bad Homburg: 4 trees, 4 flagged, 3 photos missing.** All in the
+Schlosspark. Three of the four rest on one source, the baumkunde.de forum
+thread carrying Rainer Lippert's 2021 survey of the park, hence the flags.
+
+Two gaps published as gaps rather than guessed:
+- The cedar's SPECIES. The city of Bad Homburg's page is titled
+  "Libanonzeder" and its own text calls the tree an Atlaszeder; baumkunde
+  registers it as Libanon Zeder. The page says disputed and asks.
+- The AGE of the oak and the plane. Both are wider than the dated cedar and
+  neither has ever been dated. The park's own dates (a garden from 1441,
+  baroque from 1680, English landscape from the later 18th century) are not
+  attached to any particular trunk by any source, so they are not attached
+  here. The page asks.
+
+Also checked and kept apart: the Naturdenkmal "Eiche am Forellenteich" is a
+different oak, 4.30m, 2.5km west in Dornholzhausen. In leads.
+
+monumentaltrees.com returned 403 to WebFetch on the Schlosspark page, so the
+cross-check of the forum's measurements against a second measurer could not
+be done.
+
 ## 2026-09-19 (continuation) - The Pamplona poplar/plane growth rate does not exist for one of the two species, checked against the actual Forestry Commission source
 
 The 2026-09-18 Pamplona entry below said a sourced girth-increment rate for
