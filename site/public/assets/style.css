@@ -1,3 +1,15 @@
+/* HIDDEN MEANS HIDDEN, and it has to be said with !important.
+   The `hidden` attribute is display:none from the browser's own sheet, which
+   any class here with its own `display` beats. That has now cost four visible
+   faults: the waitlist form sitting under its own confirmation, two dialog
+   rules, and on 2026-09-23 the contribute form, where a tree tip that had in
+   fact been saved left the button reading "Sending..." for ever with every
+   field still full. The first outside contributor met that one, and sent the
+   same oak fourteen times.
+   So it is fixed once, here, for every element on the site rather than for the
+   class that happened to be caught. An element that must stay visible while
+   carrying the attribute does not exist; use a class. */
+[hidden] { display: none !important; }
 /* Gabarito, served from our own origin instead of fonts.googleapis.com.
    Until 2026-08-16 Base.astro carried the Google Fonts <link>, which is a
    render-blocking stylesheet on a host that is not ours: the browser had to
@@ -140,6 +152,10 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .nav-drop-menu a { display: flex; align-items: center; gap: 0.65rem; padding: 0.5rem 0.9rem; margin: 0; font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.2; }
 .nav-drop-menu .mi { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; color: var(--ink-light); flex-shrink: 0; }
 .nav-drop-menu .mi svg { width: 17px; height: 17px; }
+/* The sponsor heart is filled where the saved heart is an outline, and gold at
+   both widths: the mobile block adds the tile behind it, the colour belongs
+   here so the dropdown does not draw the same mark in two colours. */
+.nav-drop-menu .mi-gold { color: var(--gold); }
 /* A secondary action belongs below a rule, not under the Browse heading as
    though suggesting a tree were a category to browse. */
 .nav-drop-menu a.nav-aside { border-top: 1px solid var(--cream-dark); margin-top: 0.35rem; padding-top: 0.6rem; color: var(--ink-mid); font-weight: 500; }
@@ -496,11 +512,90 @@ dialog.photo-view .pv-frame img {
   /* A phone panel, not a desktop dropdown squeezed onto a phone: full width
      inside the margins, 44px rows, and it scrolls rather than running off the
      bottom of a short screen. */
-  .nav-drop-menu { position: fixed; left: auto; right: 0.75rem; top: calc(var(--header-h) + 0.5rem);
-    width: calc(100% - 1.5rem); min-width: 0; max-width: 22rem;
-    max-height: calc(100vh - var(--header-h) - 1.5rem); overflow-y: auto; padding: 0.5rem 0; }
-  .nav-drop-menu a { padding: 0.65rem 1rem; font-size: 15px; }
-  .nav-drop-menu .nav-group { padding: 0 1rem; }
+  /* THE PHONE MENU IS A SHEET (2026-09-19). Hidde sent AllTrails' own mobile
+     menu, said it is much better than ours, and picked the version that keeps
+     their look and folds nothing: "let's do 2". What was here was a 22rem card
+     hanging under the hamburger with 15px rows, which is a desktop dropdown
+     made narrow. Measured off his screenshot and written down in
+     CONVENTIONS.md: a full screen, a 32pt icon tile per row, ~45pt rows, a
+     ~17pt label, one loud control at the top and the account at the bottom.
+
+     POSITIONING, and this is the trap: header.bar sets backdrop-filter, and a
+     filtered ancestor becomes the containing block for its fixed children. So
+     `inset: 0` here would resolve against the 56px-tall BAR, not the viewport,
+     and the sheet would be a letterbox. The header's padding box starts at the
+     viewport origin because the bar itself is fixed at top 0, so top/left 0
+     with an explicit width and height lands correctly either way. Tidying
+     these four lines into `inset: 0` breaks the sheet on every phone. */
+  .nav-drop-menu { position: fixed; top: 0; left: 0; right: auto; bottom: auto;
+    width: 100%; height: 100dvh; max-width: none; min-width: 0; max-height: none;
+    border-radius: 0; box-shadow: none; overflow-y: auto; z-index: 60;
+    overscroll-behavior: contain;
+    padding: 0 var(--gutter) calc(1.25rem + env(safe-area-inset-bottom, 0px)); }
+  /* 48 drawn against their 45, because 44 is Apple's minimum and a row that
+     only just clears it leaves nothing for the eye. */
+  .nav-drop-menu a { min-height: 48px; padding: 0; font-size: 17px; font-weight: 500;
+    gap: 0.8rem; }
+  .nav-drop-menu a:hover { background: none; }
+  /* The icon becomes a tile. On the dropdown it is a bare 17px stroke in
+     --ink-light, which disappears at this size and against this much white. */
+  .nav-drop-menu .mi { width: 34px; height: 34px; border-radius: 50%;
+    background: var(--surface); color: var(--ink); }
+  .nav-drop-menu .mi svg { width: 18px; height: 18px; }
+  .nav-drop-menu .mi-gold { background: #FBF3E3; color: var(--gold); }
+  /* A quiet label, not a heading: the sections are open, so the label only has
+     to say which group this is while the eye runs down the rows. */
+  .nav-drop-menu .nav-group { padding: 0.9rem 0 0.35rem; font-size: 0.8rem;
+    font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-light); }
+  /* One hairline per section, above its label, and none between rows. The
+     dropdown draws this rule on the first aside instead, which is the same
+     divider in the place the dropdown wanted it. */
+  .nav-drop-menu .nav-group + a { margin-top: 0; }
+  .nav-drop-menu .nav-group.only-mobile { border-top: 1px solid var(--cream-dark); }
+  .nav-drop-menu a.nav-aside { border-top: none; margin-top: 0; padding-top: 0;
+    color: var(--ink); font-weight: 500; }
+  .nav-drop-menu a.nav-aside + a.nav-aside { padding-top: 0; }
+  /* The sheet's own top row. It exists because the sheet covers the bar, so
+     the mark and the way out have to travel with it. */
+  .nav-drop-menu .sheet-top { display: flex; align-items: center;
+    justify-content: space-between; height: var(--header-h); }
+  .nav-drop-menu .sheet-mark { display: inline-flex; align-items: center; gap: 0.5rem;
+    font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; color: var(--ink); }
+  .sheet-mark svg { width: 20px; height: 18px; }
+  .nav-drop-menu .sheet-x { display: inline-flex; align-items: center; justify-content: center;
+    position: relative; width: 40px; height: 40px; border-radius: 50%;
+    background: var(--surface); border: 1px solid var(--cream-dark);
+    color: var(--ink); cursor: pointer; padding: 0; }
+  /* 40 drawn, 48 tapped, the same trade the hamburger it replaces already
+     makes, and the same pseudo-element the smoke test knows how to measure. */
+  .sheet-x::before { content: ""; position: absolute; inset: -4px; }
+  .sheet-x svg { display: block; width: 18px; height: 18px; }
+  /* Their "Ga verder in de app": one full-width dark pill, and the only loud
+     thing on the screen. */
+  .nav-drop-menu a.sheet-cta { display: flex; align-items: center; justify-content: center;
+    min-height: 52px; border-radius: 999px; background: var(--ink); color: #fff;
+    font-weight: 700; font-size: 1rem; margin: 0.25rem 0 0.5rem; }
+  /* The foot FOLLOWS the last row rather than being pinned to the bottom of
+     the screen, which is what their sheet does: the Aanmelden pill sits
+     directly under the last section. The sheet is a scroll container, so the
+     ordinary flow reaches it and nothing has to be pushed anywhere. */
+  .nav-drop-menu .sheet-foot { margin-top: 1.5rem; }
+  /* --cream-dark rather than --surface, which is the fill every other quiet
+     control here uses. On the white of the sheet --surface is a 1.5% step and
+     the pill read as a label with a hairline round it; theirs is plainly a
+     grey button. The icon tiles keep --surface because an icon sits in them. */
+  .nav-drop-menu a.sheet-signin { display: flex; align-items: center;
+    justify-content: center; min-height: 52px; border-radius: 999px;
+    background: var(--cream-dark); border: none;
+    color: var(--ink); font-weight: 700; font-size: 1rem; }
+  /* Signed in, the pill has nothing to offer: Your account sits two rows up in
+     the Yours group. The attribute is the one signin-js already sets. */
+  html[data-signed-in="1"] .sheet-foot { display: none; }
+  /* The page must not scroll under the sheet. Scoped to the phone because on
+     desktop this panel is a dropdown and locking the page behind it would be
+     a bug rather than a courtesy. */
+  html.nav-open, html.nav-open body { overflow: hidden; }
   /* The app pill sits in the bar on a phone too (2026-09-04). Narrower and
      shorter than on desktop, because the mark, the pill and the menu button
      share a 375px row, and because at a full 44 it read as a banner rather than
@@ -526,7 +621,11 @@ dialog.photo-view .pv-frame img {
      tab order still reaches the menu before the ad for our own app. */
   .bar-links a.bar-cta { position: relative; height: 36px; padding: 0 0.75rem; font-size: 12.5px; order: -1; }
   .bar-links a.bar-cta::before { content: ""; position: absolute; inset: -4px; }
-  .footer-cols { flex-direction: column; gap: 1.5rem; }
+  /* One column on a phone, which is what it already did, and the bottom bar
+     stacks with it rather than putting a 489px language line beside a
+     copyright on a 375px screen. */
+  .footer-cols { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-bar { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
   .action-row .go-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
 
   .entry.has-thumb { grid-template-columns: 72px 1fr; gap: 0.8rem; }
@@ -789,6 +888,21 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .mine-state { display: flex; align-items: center; gap: 7px; margin: 0.35rem 0 0;
   font-family: var(--sans); font-size: 12.5px; color: var(--ink-mid); }
 .mine-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--moss); flex: none; }
+/* The answer we wrote back about a tree somebody sent us, on the card for that
+   tree. A four-state label says where it stands; this says what happened. */
+/* Add a photo, on the tree's own page. Google Maps' shape: a contribution
+   offered on the place, not a form somewhere else. */
+.addphoto { margin-top: 0.6rem; }
+.addphoto-btn { min-height: 44px; padding: 0.6rem 1.1rem; border: none; border-radius: 999px;
+  background: var(--moss); color: #fff; font-family: var(--sans); font-size: 14px;
+  font-weight: 600; cursor: pointer; }
+.addphoto-btn.quiet { background: none; color: var(--moss); border: 1px solid var(--cream-dark);
+  padding: 0.55rem 1rem; }
+.addphoto-btn[disabled] { opacity: 0.6; cursor: default; }
+.addphoto-note { margin: 0.5rem 0 0; font-family: var(--sans); font-size: 13px;
+  line-height: 1.45; color: var(--ink-mid); }
+.mine-reply { margin: 0.35rem 0 0; font-family: var(--sans); font-size: 13px;
+  line-height: 1.45; color: var(--ink-mid); }
 .acct-name { margin-top: 1.4rem; }
 .acct-name label { display: block; font-family: var(--sans); font-size: 12px;
   text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); margin-bottom: 0.4rem; }
@@ -1075,8 +1189,32 @@ footer { border-top: 1px solid var(--cream-dark); }
 /* Same shape as .page, so the footer's columns start on the line the page
    above them started on, at every width. See --page-max. */
 .footer-inner { max-width: var(--page-max); margin: 0 auto; padding: 2.5rem var(--page-pad) 2rem; }
-.footer-cols { display: flex; gap: 3rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
-.footer-about { max-width: 20rem; }
+/* Four columns of ONE width, which is the same grid the browse block above
+   the footer draws: measured on the live site at 1440, both now land on
+   210/473/736/999 at 231px each. It used to be a flex row with no widths, so
+   every column was as wide as its longest word (320, 64, 114), nothing lined
+   up with anything above it, and the last link stopped at 42% of the band with
+   426px of empty page to its right. Hidde, 2026-09-23: "de footer is qua
+   alignment en design heel raar opgebouwd."
+
+   Convention rather than taste, measured the same day: AllTrails runs four
+   equal 310px columns across its whole footer band, komoot four on a 307px
+   rhythm. iNaturalist does what we did, ragged and clustered left, and it is
+   the one of the three that reads as old.
+
+   auto-fit on the SAME 200px track minimum .dir-cols uses, so the two grids
+   break at the same widths rather than only agreeing on a wide screen: both
+   hold four columns down to about 950 and both drop to three below it. A fixed
+   four would have kept four in the footer while the block above went to three.
+   The left edge stays on --page-max either way, which is the 2026-09-17 fix and
+   is not this rule's to touch. */
+.footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+               gap: 2rem; align-items: start; margin-bottom: 1.75rem; }
+.footer-about { max-width: none; }
+/* The copyright left, the languages hard right, on one line under a hairline. */
+.footer-bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+              flex-wrap: wrap; border-top: 1px solid var(--cream-dark); padding-top: 1.1rem; }
+.footer-bar .lang-pick { margin: 0; }
 .footer-about p { font-size: 13px; color: var(--ink-mid); line-height: 1.6; margin-top: 0.6rem; }
 .footer-col h4 { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.6rem; }
 .footer-col a { display: block; font-size: 13px; color: var(--ink-mid); text-decoration: none; padding: 0.2rem 0; }
@@ -1434,7 +1572,26 @@ footer { border-top: 1px solid var(--cream-dark); }
 .suggest-form input, .suggest-form select, .suggest-form textarea { font-family: var(--sans); font-size: 14px; padding: 0.65rem 0.85rem; border: 1px solid var(--cream-dark); border-radius: 10px; background: #fff; }
 .suggest-form input:focus, .suggest-form select:focus, .suggest-form textarea:focus { outline: 2px solid var(--moss); outline-offset: 1px; }
 .suggest-form .go-btn { align-self: flex-start; cursor: pointer; border: none; font-family: inherit; }
+/* The photo row, which has to read as one of the form's fields rather than as
+   loose text with a system button under it. Same shape as .suggest-form label,
+   which it cannot be, because a label wrapping a hidden input is not clickable
+   in the way this control needs. */
+.sg-photo { display: flex; flex-direction: column; align-items: flex-start;
+  gap: 0.35rem; font-size: 13.5px; font-weight: 700; }
+.sg-photo-label { font-weight: 700; }
+.sg-photo .sg-hint { display: block; font-weight: 400; }
+.sg-pic-btn { min-height: 44px; align-self: flex-start; padding: 0.6rem 1.1rem;
+  border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff;
+  color: var(--moss); font-family: var(--sans); font-size: 14px; font-weight: 600;
+  cursor: pointer; }
+.sg-pic-btn:hover { border-color: var(--moss); }
+#sg-pic-name { font-weight: 400; }
 .sg-note { font-size: 13px; color: var(--ink-mid); min-height: 1em; }
+/* The thank-you, which takes the form's place rather than sitting under it. */
+.sg-done { font-family: var(--sans); font-size: 15px; line-height: 1.5;
+  color: var(--ink); background: var(--cream-dark); border-radius: 12px;
+  padding: 1rem 1.1rem; margin: 1.5rem 0; max-width: 34rem; }
+.sg-done a { color: var(--moss); }
 .report-btn { display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; margin: 4px 6px 0 0; padding: 5px 12px; border: 1px solid var(--cream-dark); border-radius: 999px; font-size: 12.5px; color: var(--ink-mid); text-decoration: none; }
 .report-btn:hover { border-color: var(--moss); color: var(--moss); }
 .subtle-suggest { font-size: 13px; color: var(--ink-light); }
@@ -1973,6 +2130,14 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
 .lang-pick a:hover { color: var(--moss); }
 .lang-cur { color: var(--ink); font-weight: 600; }
 .lang-sep { color: var(--ink-light); }
+
+/* The picker as the last line of a sheet, on the three page types that have
+   no footer to put it in: the two city pages and the map. komoot's is a plain
+   line at the very bottom and this is ours (Hidde, 2026-09-19: the row of
+   seven language names had been sitting between a city's intro and its first
+   tree, which is the most valuable line on the page). */
+.panel-lang { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--cream-dark); }
+.panel-lang .lang-pick { margin: 0; }
 
 /* The share control, and the row it sits in.
    Both references (AllTrails, komoot) put share top-right of a hero photo. Our

@@ -3,6 +3,16 @@ name: Build and deploy site
 on:
   push:
     branches: [main]
+  # A CLOCK, BECAUSE A PUSH IS NOT ENOUGH (2026-09-23). A push made with
+  # GITHUB_TOKEN never triggers another workflow, which is documented GitHub
+  # behaviour and not a fault here, and the night runs push with exactly that.
+  # So this workflow fires only when a person pushes from a laptop. Between
+  # 19 and 23 September nobody did, and the site served the 19th for four days
+  # while trees, translations and a blueprint change sat in main. Every three
+  # hours costs one eight-minute build and makes the machine's own work reach
+  # readers without waiting for somebody to open a terminal.
+  schedule:
+    - cron: "20 */3 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -24,9 +34,12 @@ permissions:
 # next commit. A dispatched run gets a group of its own and is never cancelled,
 # so a person (or an agent that has just pushed something it needs to verify)
 # can always get an answer: gh workflow run deploy.yml
+# A scheduled build counts as a dispatched one here: it is the build that
+# nobody is standing over, so cancelling it is how the four-day gap happens
+# again on a busy afternoon.
 concurrency:
-  group: pages-${{ github.event_name == 'workflow_dispatch' && 'manual' || 'push' }}
-  cancel-in-progress: ${{ github.event_name != 'workflow_dispatch' }}
+  group: pages-${{ github.event_name == 'push' && 'push' || 'manual' }}
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 
 jobs:
   build:

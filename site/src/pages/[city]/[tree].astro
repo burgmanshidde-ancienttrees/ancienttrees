@@ -26,6 +26,7 @@ import { speciesCommon, speciesPageSlugs } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, parkPageIsAllowed } from "../../lib/parks";
 import { usablePhotos, metaImageUrls, ogImageUrl } from "../../lib/images";
 import PhotoFigure from "../../components/PhotoFigure.astro";
+import AddPhoto from "../../components/AddPhoto.astro";
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
@@ -37,6 +38,8 @@ import SeenButton from "../../components/SeenButton.astro";
 import ShareButton from "../../components/ShareButton.astro";
 import { SHARE_JS } from "../../lib/share-js";
 import { WORTHIT_JS } from "../../lib/worthit-js";
+import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
+import { ADD_PHOTO_JS } from "../../lib/add-photo-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { VISITED_SYNC_JS } from "../../lib/visited-sync-js";
 import { seasonBlock } from "../../lib/phenology";
@@ -233,7 +236,8 @@ const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
 const sources = treeSources(tree);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SHARE_JS;
+const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SHARE_JS
+  + DOWNSIZE_JS + ADD_PHOTO_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <main class="content-page has-tree-bar">
@@ -268,8 +272,11 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
         <figcaption>
           <b>{spCommon}</b>
-          <span>Nobody has published a photograph of this tree under a licence we can use.{" "}
-          <a href="/contribute">Send us yours</a> and it goes on this page.</span>
+          {/* This used to point at /contribute, which has no file field of any
+              kind, so the page asked for a photograph and offered nowhere to
+              put one. Fixed 2026-09-23 with a control that actually takes it. */}
+          <span>Nobody has published a photograph of this tree under a licence we can use. If you have one you took yourself, it can go here.</span>
+          <AddPhoto treeId={tree.id} treeName={tree.name} lat={loc.latitude!} lng={loc.longitude!} />
         </figcaption>
       </figure>
     )}
@@ -472,6 +479,18 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <p>Ticking this one off, walks past several more, and your collection growing city by city: that is the Ancient Trees app.</p>
       <a class="go-btn" href="/app" data-app-modal data-ev="app-cta">Get the app</a>
     </div>
+    {/* AND ON A PAGE THAT ALREADY HAS ONE, quietly. Hidde, 2026-09-02: "ook
+        als de boom er al is en geen foto heeft of de foto van de gebruiker is
+        beter gaan we die gebruiken." Ours is usually a stranger's from Commons
+        taken years ago; somebody standing there today may well have better.
+        Only one AddPhoto per page, because the control is addressed by id. */}
+    {photo && photo.url && (
+      <div class="report">
+        <strong>Have you photographed this tree?</strong>
+        <p class="report-line">If yours shows it better than the picture above, it can take its place, or stand beside it.</p>
+        <AddPhoto treeId={tree.id} treeName={tree.name} lat={loc.latitude!} lng={loc.longitude!} quiet />
+      </div>
+    )}
     <div class="report">
       <strong>We could use your help.</strong>
       <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not: the species, the age, the size, whether the photo shows the right tree, or that it is gone. Every field on this page can be corrected.</p>

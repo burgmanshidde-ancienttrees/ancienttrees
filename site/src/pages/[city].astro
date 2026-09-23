@@ -277,7 +277,6 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="city-intro">
         <p class="lede">{intro}</p>
         <button type="button" class="city-intro-more">Read more</button>
-        <LanguagePicker current="en" enPath={`/${cslug}`} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
           <span class="passport-total" id="passport-total"></span>
@@ -348,6 +347,17 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
           )}
         </dl>
         <p class="suggest">Know a tree that belongs on this list? <a href={submitLink("tree")}>Send it in</a>. Suggestions feed curation; the list itself stays editorial.</p>
+        {/* Last thing in the sheet, which on a footerless split page is the
+            footer (Hidde, 2026-09-19, on seeing seven language names sitting
+            between the intro and the first tree: "I don't think it makes
+            sense to give the translations this prime spot, that's not
+            conventional"). He is right and CONVENTIONS.md already said so:
+            komoot puts a plain line at the very bottom, AllTrails a select in
+            its footer block, neither of them above the content. A reader who
+            wants another language goes looking for it; a reader who does not
+            was being shown a row of words in six languages they cannot read,
+            before the first photograph. */}
+        <div class="panel-lang"><LanguagePicker current="en" enPath={`/${cslug}`} /></div>
       </div>
       </div>
     </aside>

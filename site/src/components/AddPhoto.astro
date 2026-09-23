@@ -1,0 +1,27 @@
+---
+// Convention: Google Maps, "Add a photo" as a contribution ON the place rather
+// than in a separate form (CONVENTIONS.md, "Adding a photograph of a place, and
+// saying you were there", read 2026-09-12). The behaviour is in
+// lib/add-photo-js.ts; this is the markup and nothing else.
+//
+// A button with a hidden file input behind it, because a file input is the only
+// picker a browser has and the naked one is ugly on every platform. Same shape
+// as the profile picture on /account/settings.
+interface Props {
+  treeId: string;
+  treeName: string;
+  lat: number;
+  lng: number;
+  /** The page already shows a photograph, so this is an offer, not a gap. */
+  quiet?: boolean;
+}
+const { treeId, treeName, lat, lng, quiet = false } = Astro.props;
+---
+<div class="addphoto" id="addphoto" data-tree-id={treeId} data-tree-name={treeName}
+     data-lat={String(lat)} data-lng={String(lng)}>
+  <button type="button" id="addphoto-btn" class={quiet ? "addphoto-btn quiet" : "addphoto-btn"}>
+    {quiet ? "Add your own photo" : "Add a photo"}
+  </button>
+  <input id="addphoto-file" type="file" accept="image/*" hidden />
+  <p class="addphoto-note" id="addphoto-note" hidden></p>
+</div>

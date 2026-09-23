@@ -158,6 +158,26 @@ const year = new Date().getFullYear();
     <details class="nav-drop">
       <summary aria-label={t.menu}><span class="sum-desktop">{t.explore}</span><span class="sum-mobile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span></summary>
       <div class="nav-drop-menu">
+        {/* Below 800px this panel is a full-screen sheet rather than a
+            dropdown, copied from AllTrails' own phone menu (CONVENTIONS.md
+            2026-09-18, measured off the screenshot Hidde sent). A sheet covers
+            the bar, so it brings its own mark, its own way out and its own app
+            pill; all three carry .only-mobile and the desktop dropdown is
+            untouched.
+
+            What we did NOT copy is their folding. They have about
+            twenty-five destinations and fold three sections to fit; we have
+            ten, which fit on one screen, so a fold would buy tidiness with a
+            tap on every journey (Hidde, 2026-09-18: "let's do 2"). */}
+        <div class="sheet-top only-mobile">
+          <span class="sheet-mark" aria-hidden="true"><svg width="25" height="22" viewBox="0 0 68 64" fill="none"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></span>
+          <button type="button" class="sheet-x" data-nav-close aria-label={t.close}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        </div>
+        {/* The bar's own pill is behind the sheet while it is open, so the ask
+            is restated here as the one loud control, which is where AllTrails
+            puts "Ga verder in de app". Same href and same event name as the
+            bar's, so the funnel counts one thing. */}
+        <a href="/app" class="sheet-cta only-mobile" data-app-download data-ev="app-cta">{t.getApp}</a>
         <p class="nav-group">{t.browse}</p>
         <a href={nav("/explore")} class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>{t.map}</a>
         <a href={nav("/cities")}><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>{t.cities}</a>
@@ -172,11 +192,26 @@ const year = new Date().getFullYear();
             <a href="/account" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>{t.yourAccount}</span></a>
           </Fragment>
         )}
+        <p class="nav-group only-mobile">{t.takePart}</p>
         <a href="/contribute" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>{t.suggestTree}</a>
         {/* Directly under it and in the same shape (Hidde, 2026-08-26). The two
             belong together: they are the two ways somebody who likes this can
             do something about it, one with a tree and one with money. */}
-        {SPONSOR_URL ? <a href="/sponsor" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>{t.sponsor}</a> : null}
+        {/* A FILLED heart, and gold, because Saved trees two rows up is an
+            outline heart and two identical glyphs in one list is a list you
+            have to read twice. Giving and keeping are drawn apart the way
+            GitHub Sponsors and Patreon draw them apart. */}
+        {SPONSOR_URL ? <a href="/sponsor" class="nav-aside"><span class="mi mi-gold"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>{t.sponsor}</a> : null}
+        {/* The account closes the sheet, which is where AllTrails, Airbnb and
+            Booking all put it. The href does the work: signin-js opens the
+            sign-in sheet in place when signed out and lets the link navigate
+            when signed in, and CSS drops this pill once signed in, because
+            the Yours group above already carries the account. */}
+        {AUTH_ENABLED && (
+          <div class="sheet-foot only-mobile">
+            <a href="/account" class="sheet-signin">{t.signIn}</a>
+          </div>
+        )}
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
@@ -247,25 +282,26 @@ const year = new Date().getFullYear();
       <a href={nav("/cities")}>{t.cities}</a>
       <a href="/countries">{t.countries}</a>
       <a href="/species">{t.species}</a>
+      <a href="/parks">{t.parks}</a>
       <a href="/collections">{t.collections}</a>
     </div>
+    {/* Seven links split into two columns of four and three rather than one
+        of seven, because the grid below wants four columns of one width and
+        because the product links and the credits answer different questions.
+        The heading used to read "Ancient Trees", which put the brand name
+        twice in one footer beside the wordmark. */}
     <div class="footer-col">
-      <h4>Ancient Trees</h4>
+      <h4>{t.theProject}</h4>
       <a href="/app" data-app-download data-ev="app-cta">{t.theApp}</a>
       <a href="/contribute">{t.suggestTree}</a>
       {SPONSOR_URL ? <a href="/sponsor">{t.sponsor}</a> : null}
       <a href="/support">{t.support}</a>
+    </div>
+    <div class="footer-col">
+      <h4>{t.theData}</h4>
+      <a href="/sources">{t.sources}</a>
       <a href="/privacy">{t.privacy}</a>
       <a href="/terms">{t.terms}</a>
-      <a href="/sources">{t.sources}</a>
-    </div>
-    {/* Last item in the footer, which is where both references put it:
-        komoot as a plain line at the very bottom, AllTrails as a select in
-        its own footer block. Autonyms, no flags, no redirect. It renders
-        itself away on a page type with no translated route, so nothing here
-        has to know which pages those are. */}
-    <div class="footer-col footer-lang">
-      <LanguagePicker current={lang} enPath={enPath} />
     </div>
   </div>
   {/* The map and routing credits live one level down, on /sources, which the
@@ -281,7 +317,19 @@ const year = new Date().getFullYear();
       Valhalla and FOSSGIS included, sits under "Maps and routes" on /sources.
       Photograph credits were never here either: each one is printed beside its
       own picture. */}
-  <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app.</span>
+  {/* The bottom bar: the copyright on the left, the languages hard against
+      the right edge. That is where both references put the language control
+      (AllTrails a select at x=1148 of a 1440 viewport, komoot a line at
+      x=1056, both measured 2026-09-23), and it is not a column: ours was
+      declared as the fourth one and is 489px wide, so it never fitted and
+      flex-wrapped onto a row of its own between the columns and the
+      copyright. Autonyms, no flags, no redirect. It renders itself away on a
+      page type with no translated route, so nothing here has to know which
+      pages those are. */}
+  <div class="footer-bar">
+    <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app.</span>
+    <LanguagePicker current={lang} enPath={enPath} />
+  </div>
   </div>
 </footer>
 )}
@@ -367,6 +415,33 @@ document.addEventListener('click', function(e) {
   var t = e.target.closest('[data-ev]');
   if (t) { try { at.track(t.getAttribute('data-ev'), t.getAttribute('data-detail')); } catch (err) {} }
 });
+</script>
+
+)}
+{/* Kilometres or miles, decided from the reader's own region (2026-09-12).
+    Here rather than per page because a distance can appear on any page type
+    and a script every one of them has to remember to include is a script one
+    of them will forget, which is the lesson of the hearts and the sign-in
+    dialog. It returns on its first line when a page holds no distance.
+
+    OUTSIDE the analytics block above, which is what the first version got
+    wrong: it would have shipped only where a Cloudflare token is set. */}
+<Fragment set:html={UNITS_JS} />
+{/* THE NAV'S OWN SCRIPT, outside the analytics block on purpose (2026-09-19).
+    It sat inside it, so every line below shipped only where a Cloudflare token
+    is set: menus closing each other, click-outside, Escape, and the swap that
+    tells the bar who you are. That was a lost nicety while this was a
+    dropdown. With the phone sheet it is not, because the sheet covers the bar
+    and the button that opened it, so the close button below is the way out and
+    a tokenless build would trap the reader on a full-screen menu.
+
+    It is the same mistake, in the same file, that the units script's own
+    comment records being corrected a week ago.
+
+    is:inline, because an Astro <script> without it is bundled into a module
+    file and fetched separately. This code was inline before the move and the
+    move is about WHEN it ships, not how. */}
+<script is:inline>
 // The nav must know who you are (2026-08-14 consistency pass): AllTrails
 // swaps Log in for your avatar; ours swaps the word, which is the honest
 // minimum for a site without profile pictures. Session shape is the one
@@ -378,11 +453,25 @@ document.addEventListener('click', function(e) {
 // convention.
 (function() {
   var drops = document.querySelectorAll('header.bar details.nav-drop');
+  // The phone panel is a full-screen sheet (2026-09-19), so two things follow
+  // that a dropdown never needed. The page behind it must not scroll under it,
+  // which is the class below and a media query in style.css, because on a
+  // desktop dropdown locking the page would be wrong. And the sheet covers the
+  // bar including the button that opened it, so it carries its own close.
+  function sync() {
+    var open = false;
+    drops.forEach(function(d) { if (d.open) open = true; });
+    document.documentElement.classList.toggle('nav-open', open);
+  }
   drops.forEach(function(d) {
     d.addEventListener('toggle', function() {
-      if (!d.open) return;
-      drops.forEach(function(o) { if (o !== d) o.open = false; });
+      if (d.open) drops.forEach(function(o) { if (o !== d) o.open = false; });
+      sync();
     });
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest || !e.target.closest('[data-nav-close]')) return;
+    drops.forEach(function(d) { d.open = false; });
   });
   document.addEventListener('click', function(e) {
     if (e.target.closest('header.bar details.nav-drop')) return;
@@ -424,17 +513,6 @@ window.atPaintNav = function(inNow) {
   } catch (e) {}
 })();
 </script>
-
-)}
-{/* Kilometres or miles, decided from the reader's own region (2026-09-12).
-    Here rather than per page because a distance can appear on any page type
-    and a script every one of them has to remember to include is a script one
-    of them will forget, which is the lesson of the hearts and the sign-in
-    dialog. It returns on its first line when a page holds no distance.
-
-    OUTSIDE the analytics block above, which is what the first version got
-    wrong: it would have shipped only where a Cloudflare token is set. */}
-<Fragment set:html={UNITS_JS} />
 {/* THE SIGN-IN SHEET, on every page, for the reason the comment above gives
     about units: a component every page has to remember to include is one a
     page will forget. It had been included by hand in twelve places and so it

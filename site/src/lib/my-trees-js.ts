@@ -1,4 +1,13 @@
-// The trees somebody added themselves, on the website.
+// The trees somebody added themselves, on the website, through EITHER channel.
+//
+// Two of them exist and this file read one of them until 2026-09-23. The app's
+// camera writes to sightings; the website's form writes to submissions, which
+// is a postbox nothing on this page had ever opened. The first contributor who
+// was not Hidde found that gap by walking into it: one oak in Hessen, sent
+// fourteen times across three evenings, ten of those arrivals coming from
+// /account, because the thank-you mail says "you can see the trees you added
+// on your account" and the account said nothing was there.
+//
 //
 // Hidde, 2026-09-02, asked whether the person can reach their own tree at all:
 // "de gebruiker zelf kan er ook bij toch?" They could not. A sighting lived on
@@ -43,6 +52,7 @@ export const MY_TREES_JS = `
 (function() {
   var SB = "${SUPABASE_URL}", KEY = "${SUPABASE_KEY}";
   var list = document.getElementById('mine-list');
+  var sentList = document.getElementById('sent-list');
   var empty = document.getElementById('mine-empty');
   if (!list) return;
 
@@ -95,6 +105,7 @@ export const MY_TREES_JS = `
   var yours = {};
 
   function clear() {
+    clearSent();
     list.innerHTML = '';
     list.hidden = true;
     if (empty) empty.hidden = true;
@@ -130,8 +141,97 @@ export const MY_TREES_JS = `
     });
   }
 
+  // WHAT YOU SENT US THROUGH THE FORM. A row in submissions rather than in
+  // sightings, so nothing on this page had ever read it: the form is a postbox
+  // on the website and the account page only knew about the app's camera.
+  //
+  // Read with the person's own session and RLS does the rest: the policy on
+  // submissions is "auth.uid() = user_id" (supabase/own-data.sql) and there is
+  // none for anybody else, so this returns your rows and nobody else's.
+  //
+  // ONE CARD PER TREE, not per row. Somebody correcting their own tip has no
+  // way to edit it, so refining means sending it again, and fourteen rows for
+  // one oak would read as fourteen trees. The count goes on the card instead,
+  // because it is the honest thing to say and it is what tells somebody the
+  // earlier ones did arrive.
+  var SENT_STATE = { changed: 'published', open_question: 'checking',
+                     holds: 'checking' };
+
+  function sentCard(g) {
+    var r = g.newest;
+    // A city tip has no tree name, so the city becomes the heading and must
+    // not then be repeated as its own subtitle.
+    var title = r.tree || r.city || 'A tree you told us about';
+    var bits = [title === r.city ? '' : r.city, when(r.created_at)];
+    if (g.count > 1) bits.push('sent ' + g.count + ' times');
+    var meta = bits.filter(Boolean).join(' \\u00b7 ');
+    var label = LABEL[SENT_STATE[r.outcome] || 'sent'];
+    return '<article class="tree-card tree-card-nonum mine-card">'
+      + '<div class="tree-card-top"><h3 class="tree-name">' + esc(title) + '</h3></div>'
+      + (meta ? '<p class="tree-meta">' + esc(meta) + '</p>' : '')
+      + '<p class="mine-state"><span class="mine-dot"></span>' + esc(label) + '</p>'
+      // The answer we wrote back, where there is one. A label says which of
+      // four states it is in; this says what actually happened to the tree,
+      // and it is already on the row the person is allowed to read.
+      // The split argument is written with a DOUBLED backslash. This whole
+      // file is one TypeScript template literal, so a single one is consumed
+      // here and the page receives a real newline inside a string literal,
+      // which is a syntax error, and a browser drops the entire script tag on
+      // one. check_inline_scripts_parse was written for that on 2026-09-18.
+      // This comment carries no escape sequence of its own on purpose: the
+      // first version of it explained the trap using the broken spelling and
+      // fell into it, which the same check caught.
+      + (r.reply_text ? '<p class="mine-reply">' + esc(r.reply_text.split('\\n')[0]) + '</p>' : '')
+      + '</article>';
+  }
+
+  function clearSent() {
+    if (sentList) { sentList.innerHTML = ''; sentList.hidden = true; }
+    if (window.atSentCounted) window.atSentCounted(0);
+  }
+
+  function loadSent(token) {
+    if (!sentList) return;
+    if (!token) { clearSent(); return; }
+    // NOT the rows the app's own camera writes beside a sighting. Adding a
+    // tree in the app posts a submissions row carrying that sighting's uuid
+    // (CollectSheet.swift, from: "app:collect"), so counting it here
+    // would put every photographed tree on this lane twice, which is the
+    // exact duplication the 2026-09-11 fix took out. "page" starting with
+    // app is the same discriminator contributor_reply.py uses.
+    fetch(SB + '/rest/v1/submissions'
+          + '?select=id,kind,city,tree,outcome,reply_text,created_at,page'
+          + '&kind=in.(tree,city)&order=created_at.desc',
+      { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(rows) {
+        if (!rows) return;
+        var order = [], byKey = {};
+        rows.forEach(function(r) {
+          if ((r.page || '').indexOf('app') === 0) return;
+          var key = ((r.tree || '') + '|' + (r.city || ''))
+            .toLowerCase().replace(/[^a-z0-9|]/g, '');
+          if (!byKey[key]) { byKey[key] = { newest: r, count: 0 }; order.push(key); }
+          byKey[key].count += 1;
+          // The newest row carries the best version of what they typed, and
+          // the only outcome we ever set is on one of them, so an answered
+          // tip keeps its answer whichever row we answered.
+          if (r.outcome && !byKey[key].newest.outcome) byKey[key].newest = r;
+        });
+        var groups = order.map(function(k) { return byKey[k]; });
+        if (window.atSentCounted) window.atSentCounted(groups.length);
+        if (!groups.length) { sentList.innerHTML = ''; sentList.hidden = true; return; }
+        sentList.innerHTML = groups.map(function(g) {
+          return '<li>' + sentCard(g) + '</li>';
+        }).join('');
+        sentList.hidden = false;
+      })
+      .catch(function() {});
+  }
+
   function load(token) {
     if (!token) { clear(); return; }
+    loadSent(token);
     var cards = window.atCollection ? window.atCollection.catalogue()
                                     : Promise.resolve({});
     var rows = fetch(SB + '/rest/v1/sightings?select=id,tree_id,name,species,status,photo,lat,lng,shared,taken_at'

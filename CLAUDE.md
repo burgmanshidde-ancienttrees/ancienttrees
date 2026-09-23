@@ -58,6 +58,7 @@ Every city file follows this exact structure (see data/cities/london.json for th
       "age_estimate": "2000 years",
       "age_min": 1000,
       "age_max": 2000,
+      "age_basis": "source | derived",
       "location": {
         "address": "...",
         "latitude": 51.6323,
@@ -106,7 +107,7 @@ Each run, do exactly this, in order:
 
 Read `/data/city-queue.json` (the source file: every city's rank, score, tree target and measured state) and the published city files, then take the first item on this ladder that applies. Do one thing per run and do it properly; a half-researched city is worse than none.
 
-1. **Unprocessed submissions, and the photographs readers sent through the app** (see Step 0b). Someone cared enough to send something, that outranks everything. `python3 scripts/sightings_inbox.py --status` prints the photo queue; judging it is the run's own work, not an agent's to dispatch.
+1. **Unprocessed submissions, and the photographs readers sent through the app** (see Step 0b). Someone cared enough to send something, that outranks everything. `python3 scripts/sightings_inbox.py --status` prints the photo queue; judging it is the run's own work, not an agent's to dispatch. Every verdict is written down with `python3 scripts/judgement.py`, so Hidde can read it and overrule it (see "Which trees get a page" below).
 2. **The site is broken. Ask with one command: `python3 scripts/health.py`.** It answers the whole rung, exit 0 for clear and 1 for something to deal with: the newest Smoke test and deploy conclusions, whether the Data digest or Fresh-eyes review has gone past 26 hours or the Weekly analysis past 8 days (GitHub drops schedules silently, and the digest's own watchdog cannot report a digest that never ran), and whether REVIEW.md's newest entry holds a BLOCKER. It prints the `gh workflow run` line to fix a stale one. Written 2026-08-17 because doing this by hand is four `gh` calls plus three thresholds held in your head, and a check that costs that much gets skipped on a short window.
 
    A BLOCKER outranks all new coverage, and it is answered rather than obeyed: read the finding, then check its evidence before acting on it, because the reviewer can only see what we published and a finding built on our own invented sentence inherits the invention. The worked example is the same day this rung was scripted: a BLOCKER said Milan's Archdevil stood in a courtyard of a dwelling, and the courtyard was a bridge claim in our own story. The comune's own page says park, and grants gate access. Retiring the tree would have obeyed the BLOCKER and lost a good entry.
@@ -160,6 +161,8 @@ Read `/data/city-queue.json` (the source file: every city's rank, score, tree ta
 9. **Product work, when everything above is satisfied.** Draw the top unblocked item from `PRODUCT_TODO.md` and finish it completely. That lane exists because runs used to be allowed only to research trees while the product itself waited for a human session; Hidde closed that gap on 2026-07-26. Its rules live in the file and are strict, because a CI run cannot see the page it changes: reversible only, contracts must validate, every item verified by build output or grep rather than eyes, no visual-taste work and nothing from the hard list.
 
 **Report a digest in TABLES, never in prose (Hidde, 2026-08-12: "kun je je digest vanaf nu altijd in tabellen geven dit is onleesbaar").** DATA.md is already written as tables; re-narrating those numbers into paragraphs is how a readable file becomes an unreadable summary. So a session reporting the daily or weekly numbers gives: one table for the search window, one for the pages that win and lose, one for the product funnel, **one for the people who signed up**, **one for what people typed into our own search**, **one for what happened on the site itself** (Cloudflare's beacon: visits, pageviews, the pages they looked at, where they came from), **one for what the night shift did**, **one for what people did in the APP**, **one for App Store downloads**, **one for the grouping pages** (collections, species, countries, parks), and at most two sentences of reading underneath.
+
+**What was sent in, and what we made of it, is a table too (Hidde, 2026-09-23).** `python3 scripts/judgement.py --report` prints it: each reader submission, its size score against its own species, our verdict and his answer where he has given one. It sits beside the signup table because it measures the same thing from the other end: a signup is somebody arriving, a submitted tree is somebody giving.
 
 **App Store downloads are their own table (Hidde, 2026-09-08: "ik mis app downloads in deze lijst").** They had been on the list of things the digest writes since the app went live and kept arriving in a session's report as a sentence under the app table, which is where a number goes to be skimmed past. It is the only figure we have that counts PEOPLE DECIDING, rather than people arriving: an impression is Google's choice, a visit is often an accident, a download is somebody who read the page and pressed the button. It also has to be fetched rather than remembered, because Apple's Analytics lag and the digest is written before the day is in: `python3 scripts/asc_downloads.py` prints it straight from Apple and found a day the digest did not have on the morning this rule was written.
 
@@ -833,6 +836,29 @@ This corrects `check_every_tree_names_a_source()`, written the same morning afte
 **4. Scarcity is a feature, not a shortfall: "we willen geen complete dataset, een beetje schaarste is beter dan alles."** This is the oldest line in the project restated at a new layer. It already governs the count (a city ships the trees that clear the bar, never a number filled to look finished) and photographs (better nothing than a random picture). It now governs USER SUPPLY, which is the layer where the pressure will actually come from: the moment readers add trees at any volume, the tempting move is to publish them all, because supply feels like progress and every one of them is somebody's gift.
 
 It is not progress. MonumentalTrees has more trees than this project ever will and it does not matter, because a list where everything is on it tells you nothing. A collector wants every entry to deserve its spot. So the answer to a reader whose tree does not make it is never a quiet no: it is kept as a lead, it is theirs to ask about, and it goes live the day something says it is worth the walk.
+
+## Which trees get a page, ruled by Hidde 2026-09-23
+
+A register can hand us thousands at once, and scarcity is the product, so this is the rule that decides which of them earn a page. It covers LAYER 1 only: the trees with a page that can be collected. Layer 2 is untouched, one official register is still enough for an honestly labelled dot. The full record, including the two corrections Hidde made while it was being written, is DECISIONS.md 2026-09-23.
+
+**The floor: a reason somebody standing there can see.** One of three is enough, and the absence of all three makes it a LEAD rather than a refusal.
+- big, tall or old for its species,
+- a story of one sentence, with a source,
+- spectacle that is visible in a photograph.
+
+Not reasons, because they are properties of the paperwork rather than of the tree: protected, registered, designated, or ninth in the queue.
+
+**The yardstick is the species worldwide, the cut is the city, and conflating those two is the mistake this rule exists to stop.** `python3 scripts/species_size.py` builds the reference from every measurement this project holds (8,096 girths over 504 species, 2,531 ages over 372, 1,803 heights over 329, out of published trees, registers and leads) and `remarkable()` scores a candidate against it. Never absolute girth: a Turkish hazel of 2.10 m is close to the thickest in Denmark and an oak of 4.62 m is a park oak. Never inside the batch at hand either, which is the trap Hidde caught: a snake spruce read as the biggest of its species because it was the only one in a 60-tree list, and 23 percent against the whole database. The reference is the 90th percentile once a species has ten records and the maximum below that, where it prints THIN.
+
+The CUT is the city: rank a place's candidates, take the top N, with N the target already computed in `data/city-queue.json`. A city with modest trees still publishes its best; a city with heavy competition drops the same tree. Nothing anywhere has to be lowered, because the competition lives in the ranking rather than in the yardstick.
+
+**Age and height are the second and third axes, and the BEST of the three counts, never the sum** (height added the same day, on Hidde's "laten we inderdaad hoogte meenemen, als derde as"; the gap had a name, because the tallest beech in Denmark scored nothing at all under girth and age alone). We hold more ages than girths (77 percent of published trees against 47), growth rate varies fourteenfold across species, and within a species the age was usually calculated FROM the girth, which is why adding them counts one fact twice. Where they disagree the girth is the one that lies, and those are trees worth the trip: a holm oak of a thousand years at 200 cm, a Scots pine of five centuries at 188. **An age we derived ourselves is not new evidence**, so only `age_basis: "source"` scores on the age axis. Heights come from a survey or a plaque and never from our own prose, and units are checked rather than trusted, which is the ICNF lesson: Hawaii publishes feet.
+
+**Outside a place there is no slot**, so the single-famous-tree test of 2026-08-31 applies unchanged. Inside the day-trip boundary a tree competes in that place's ranking.
+
+**People are a source, and a heavier one than a register row.** Two accounts within 30 m, or one contributor plus a source naming the tree, or one contributor whose photograph shows a tree visibly big for its species (publish, and ask the reader for the girth). Only the fourth case is a lead: one contributor, no source, and nothing that sets the tree apart from its neighbours. That is Nara, and the reason Nara failed is the ordinariness rather than the missing source.
+
+**Every reader submission gets a written verdict that Hidde can overrule** (his ask, same day: "elke keer als er een boom wordt ingestuurd mij vertellen wat je oordeel is en dat ik het kan inzien, zodat ik voorlopig feedback kan geven zodat we het aanscherpen"). `python3 scripts/judgement.py --scan` stubs each new one with the size score and the city's free slots already filled in, the run writes its call with `--verdict <id> publish|lead|hold "why"` after looking at the photograph, and `--open` prints what he has not answered. `--learn` prints only the ones he overruled, which is the list this rule gets sharpened from. The rule above is a first draft of somebody's taste written down, and a verdict that lives in a chat cannot be disagreed with a week later.
 
 ## Quality gate: the research standard, not Hidde
 
