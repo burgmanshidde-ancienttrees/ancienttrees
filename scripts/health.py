@@ -22,6 +22,7 @@ import datetime
 import json
 import os
 import re
+import pathlib
 import subprocess
 import sys
 
@@ -529,6 +530,30 @@ def main():
                      f"Nothing to fix. If a run still does 0.0 minutes after "
                      f"the window has reset, then it is not the allowance and "
                      f"its log is worth reading.")
+
+    # MIGRATIONS THAT NEVER GOT PASTED (2026-09-23). sightings.girth_hugs had
+    # been waiting twelve days: the app asks a reader how thick the trunk is,
+    # posts the answer, and PostgREST drops it. Every gate was green, because
+    # the code is written to degrade quietly around a missing column, and the
+    # price of degrading quietly is that nobody ever finds out.
+    try:
+        r = subprocess.run([sys.executable,
+                            str(pathlib.Path(__file__).resolve().parent / "sqlcheck.py")],
+                           capture_output=True, text=True, timeout=120)
+        line = (r.stdout or "").strip().splitlines()
+        if r.returncode == 1 and line:
+            names = ", ".join(x.split()[0] for x in line[1:])
+            print(f"  {'Migrations':20s} {len(line) - 1} not pasted")
+            problems.append(
+                f"{len(line) - 1} migration(s) in supabase/ were never pasted "
+                f"into the database: {names}. Nothing else reports these, "
+                f"because the code degrades quietly around a missing column, "
+                f"so the only symptom is a field that is always empty. "
+                f"python3 scripts/sqlcheck.py names the file for each.")
+        elif line:
+            print(f"  {'Migrations':20s} {line[0].split(':', 1)[-1].strip()}")
+    except Exception as e:
+        unknown.append(f"migrations ({e.__class__.__name__})")
 
     fired = knocks_fired()
     if fired is None:

@@ -1301,6 +1301,68 @@ def check_photos_are_not_the_lead_twice():
     return out
 
 
+def check_every_submission_got_a_verdict():
+    """A tree somebody sent in gets a written verdict, and Hidde can overrule it.
+
+    Hidde, 2026-09-23, once the rule for which trees earn a page was settled:
+    "de logica die wij hebben bepaalt of een boom op de pagina komt, ik neem aan
+    dat je die opslaat en toepast vanaf nu op elke inzending, dit is cruciale
+    kennis." Saving it was the easy half. This is the half that makes it hold,
+    because a rule nobody is forced to apply is a rule that survives exactly as
+    long as the session that wrote it.
+
+    Two severities, on purpose.
+
+    FAIL when a tree carries a contributor's photograph and no judgement was
+    ever written for that sighting. That is a submission that reached a page
+    without anybody saying out loud why it deserved one, which is the Nara
+    failure with a photograph attached.
+
+    NOTE for a submission still waiting. That is a queue, not a fault, and the
+    queue is where the rule gets sharpened: `python3 scripts/judgement.py --open`
+    prints what he has not answered, and `--learn` prints only the ones he
+    overruled.
+    """
+    out = []
+    try:
+        with open("data/judgements.json", encoding="utf-8") as fh:
+            doc = json.load(fh)
+    except (OSError, ValueError):
+        return ["data/judgements.json is missing or unreadable: every reader "
+                "submission needs a written verdict (scripts/judgement.py --scan)"]
+    judged = {j["id"]: j for j in doc.get("judgements", [])}
+
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for t in d.get("trees", []):
+            for p in [t.get("photo") or {}] + (t.get("photos") or []):
+                sid = p.get("sighting_id")
+                if not sid:
+                    continue
+                j = judged.get("sight:" + str(sid))
+                if not j or not j.get("verdict"):
+                    out.append("%s/%s carries a contributor photograph (sighting %s) with no "
+                               "written verdict. Run scripts/judgement.py --scan, look at it, then "
+                               "--verdict sight:%s publish|lead|hold \"why\"."
+                               % (d.get("city"), t.get("id"), sid, sid))
+    return out
+
+
+def note_submissions_waiting_for_a_verdict():
+    """The queue, which is where the rule gets sharpened rather than broken."""
+    try:
+        with open("data/judgements.json", encoding="utf-8") as fh:
+            doc = json.load(fh)
+    except (OSError, ValueError):
+        return []
+    waiting = [j for j in doc.get("judgements", []) if not j.get("verdict")]
+    if not waiting:
+        return []
+    return ["%d reader submission(s) have no written verdict yet. "
+            "python3 scripts/judgement.py --open" % len(waiting)]
+
+
 def check_contributor_photos_are_traceable():
     """A reader's photograph must carry the account that sent it.
 
@@ -2170,6 +2232,7 @@ def main():
                 + check_no_two_language_switch()
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
+                + check_every_submission_got_a_verdict()
                 + check_photos_are_not_the_lead_twice()
                 + check_one_photograph_per_tree()
                 + check_every_tree_names_a_source()
@@ -2192,7 +2255,8 @@ def main():
                  + check_tree_labels_are_translated() + check_city_indent()
                  + check_a_by_licence_names_its_author()
                  + note_a_reader_photograph_is_not_a_reason()
-                 + note_a_young_tree_is_not_ancient()):
+                 + note_a_young_tree_is_not_ancient()
+                 + note_submissions_waiting_for_a_verdict()):
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0
