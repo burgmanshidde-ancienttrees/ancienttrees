@@ -102,6 +102,16 @@ f.addEventListener('load', function() {
         return false;
       }
       d.querySelectorAll('body *').forEach(function(el) {
+        // A closed <details> hides its non-summary content the way the SMALL
+        // check below already knows: Chromium still gives that content a box
+        // (unlike display:none) but skips laying it out, so it settles into a
+        // small phantom rect (measured 32 wide, anchored near wherever the
+        // summary sits) that no visitor can ever see, tap or scroll to. That
+        // phantom tripped this check the day .nav-drop-menu's sheet styles
+        // landed: closed, on every page, off the right edge by exactly the
+        // gutter's worth of padding. Opening the <details> and re-measuring
+        // confirms it, at 360/360, dead on the viewport.
+        if (el.closest('details:not([open])') && el.tagName !== 'SUMMARY') return;
         var r = el.getBoundingClientRect();
         if (!r.width && !r.height) return;
         var cs = w.getComputedStyle(el);
