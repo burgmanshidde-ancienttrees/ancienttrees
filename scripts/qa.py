@@ -1978,6 +1978,44 @@ def check_the_session_is_known_before_anything_asks():
     return out
 
 
+def check_every_tree_you_gave_us_comes_back():
+    """The account page must read BOTH channels a person can add a tree through.
+
+    Hidde, 2026-09-23, after reading what the first outside contributor did:
+    "zorg dat de bomen vanaf nu dus wel zichtbaar zijn in je account."
+
+    There are two write paths and there have been since the app shipped. The
+    app's camera writes a row to `sightings`. The website's form writes a row
+    to `submissions`. /account read the first and not the second, so a tree
+    somebody typed into the form arrived nowhere they could see, while the
+    thank-you mail told them to go and look at their account. One contributor
+    sent the same oak fourteen times over three evenings, ten of those visits
+    arriving at the form from /account.
+
+    Nothing could catch that: the page built, the fetch it did make worked, and
+    the lane showed its ordinary empty line. So this check names the two tables
+    and refuses a build where the account page has stopped reading one of them.
+    A third channel added later belongs on this list the day it is built.
+    """
+    out = []
+    page = DIST / "account" / "index.html"
+    if not page.exists():
+        return ["site/dist/account/index.html is missing: the account page did "
+                "not build, so nobody can see the trees they added"]
+    html = page.read_text(encoding="utf-8")
+    for table, what in (("sightings", "trees added with the app's camera"),
+                        ("submissions", "trees sent through the website's form")):
+        if "/rest/v1/%s?select=" % table not in html:
+            out.append("/account never reads the %s table, so %s are invisible "
+                       "to the person who added them (the 2026-09-23 loop: the "
+                       "thank-you mail sends them to a page that shows nothing)"
+                       % (table, what))
+    if 'id="sent-list"' not in html:
+        out.append("/account has no sent-list, so trees sent through the form "
+                   "have nowhere to render even if they are fetched")
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -2003,6 +2041,7 @@ def main():
     failures += check_save_flow_integrity()
     failures += check_the_session_is_known_before_anything_asks()
     failures += check_tick_has_its_wiring()
+    failures += check_every_tree_you_gave_us_comes_back()
     failures += check_sheet_integrity()
     failures += check_inline_scripts_parse()
     failures += check_one_tree_card()

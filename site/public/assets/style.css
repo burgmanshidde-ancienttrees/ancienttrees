@@ -789,6 +789,10 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .mine-state { display: flex; align-items: center; gap: 7px; margin: 0.35rem 0 0;
   font-family: var(--sans); font-size: 12.5px; color: var(--ink-mid); }
 .mine-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--moss); flex: none; }
+/* The answer we wrote back about a tree somebody sent us, on the card for that
+   tree. A four-state label says where it stands; this says what happened. */
+.mine-reply { margin: 0.35rem 0 0; font-family: var(--sans); font-size: 13px;
+  line-height: 1.45; color: var(--ink-mid); }
 .acct-name { margin-top: 1.4rem; }
 .acct-name label { display: block; font-family: var(--sans); font-size: 12px;
   text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); margin-bottom: 0.4rem; }
