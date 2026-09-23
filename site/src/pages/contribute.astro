@@ -9,6 +9,7 @@ import { fitTitle } from "../lib/title";
 import { submitLink } from "../lib/tree-copy";
 import { byCityListOrder } from "../lib/city-order";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import { DOWNSIZE_JS } from "../lib/image-downsize-js";
 
 const canonical = `${BASE_URL}/contribute`;
 const title = fitTitle(["Become Your City's Tree Guide", "Map Your City's Ancient Trees"], canonical);
@@ -57,6 +58,18 @@ const headExtra = ldScript(graph);
     <label>How far round is the trunk? <span class="sg-hint">Optional. In metres, at chest height. One hug is about 1.5 m.</span>
       <input type="text" inputmode="decimal" id="sg-girth" placeholder="4.2">
     </label>
+    {/* A PHOTOGRAPH, which this page has asked for since it was written and had
+        nowhere to put (2026-09-23). A button with a hidden file input behind
+        it, the same shape as the profile picture on /account/settings, because
+        a bare file input is ugly on every platform and a button is what both
+        references draw. */}
+    <div class="sg-photo">
+      <span class="sg-photo-label">A photo you took yourself</span>
+      <span class="sg-hint">Optional. It has to be your own picture, not one from a website.</span>
+      <button type="button" id="sg-pic-btn" class="sg-pic-btn">Choose a photo</button>
+      <input id="sg-pic" type="file" accept="image/*" hidden />
+      <span id="sg-pic-name" class="sg-hint"></span>
+    </div>
     <label>Your name <span class="sg-hint">Optional. Never shown on the site.</span>
       <input type="text" id="sg-name" placeholder="First name is fine">
     </label>
@@ -143,6 +156,55 @@ const headExtra = ldScript(graph);
   } catch (e) {}
   var btn = f.querySelector('button[type="submit"]');
   var inFlight = false;
+
+  // THE PHOTOGRAPH. Staged on choosing and sent on submit, so nothing is
+  // uploaded by somebody who changes their mind, and the tip still lands if
+  // the picture does not: a tree we did not know about is worth more than an
+  // image, and losing the words because a file failed would be the wrong way
+  // round.
+  var picked = null;
+  var picBtn = document.getElementById('sg-pic-btn');
+  var picFile = document.getElementById('sg-pic');
+  var picName = document.getElementById('sg-pic-name');
+  picBtn.addEventListener('click', function() { picFile.click(); });
+  picFile.addEventListener('change', function() {
+    var pf = picFile.files && picFile.files[0];
+    if (!pf) return;
+    picName.textContent = 'Reading it...';
+    window.atDownsize(pf, 1600, function(blob) {
+      picked = blob;
+      picName.textContent = blob ? pf.name : 'That picture could not be read. Try another one.';
+      if (blob) picBtn.textContent = 'Change photo';
+    });
+  });
+
+  function uuid() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0;
+      return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+    });
+  }
+
+  // Into the sightings bucket, under the folder the person already owns, so
+  // there is no second bucket and no second policy. Returns the stored path,
+  // or null, and a null is not an error anybody is told about: the words are
+  // the tip.
+  function sendPhoto(s, done) {
+    if (!picked || !s) { done(null); return; }
+    var uid = (s.user && s.user.id) ? s.user.id : s.user_id;
+    if (!uid) { done(null); return; }
+    var file = uuid() + '.jpg';
+    var path = uid + '/' + file;
+    fetch('${SUPABASE_URL}/storage/v1/object/sightings/'
+          + encodeURIComponent(uid) + '/' + file, {
+      method: 'POST',
+      headers: { 'apikey': '${SUPABASE_KEY}', 'Authorization': 'Bearer ' + s.access_token,
+                 'Content-Type': 'image/jpeg', 'x-upsert': 'true' },
+      body: picked
+    }).then(function(r) { done(r.ok ? path : null); })
+      .catch(function() { done(null); });
+  }
   f.addEventListener('submit', function(e) {
     e.preventDefault();
     if (inFlight) return;
@@ -182,11 +244,28 @@ const headExtra = ldScript(graph);
     // refuse the whole row, and the tree matters more than the number.
     var girth = girthCm(document.getElementById('sg-girth').value);
     if (girth) body.girth_cm = girth;
-    fetch('${SUPABASE_URL}/rest/v1/submissions', {
-      method: 'POST',
-      headers: headers,
-      body: JSON.stringify(body)
-    }).then(function(r) {
+
+    // THE PICTURE FIRST, then the row, so a row never points at a file that
+    // failed to arrive. And the tip goes either way: if the upload fails, or
+    // the photo column is not there yet, the words still land. A tree we did
+    // not know about is worth more than an image of it.
+    function post(b2) {
+      return fetch('${SUPABASE_URL}/rest/v1/submissions', {
+        method: 'POST', headers: headers, body: JSON.stringify(b2)
+      });
+    }
+    sendPhoto(s, function(path) {
+      if (path) body.photo = path;
+      post(body).then(function(r) {
+        if (!r.ok && body.photo) {
+          // The database has not been taught this column yet. The same defence
+          // the girth field already carries, and a retry rather than a guess
+          // because PostgREST refuses the WHOLE row over one unknown key.
+          delete body.photo;
+          return post(body);
+        }
+        return r;
+      }).then(function(r) {
       if (r.ok) {
         f.hidden = true;
         try { localStorage.removeItem('at_contribute_draft'); } catch (e) {}
@@ -210,12 +289,14 @@ const headExtra = ldScript(graph);
         inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
         note.textContent = 'That did not go through. Try again in a moment.';
       }
-    }).catch(function() {
-      inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
-      note.textContent = 'No connection. Try again in a moment.';
+      }).catch(function() {
+        inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
+        note.textContent = 'No connection. Try again in a moment.';
+      });
     });
   });
 })();
 </script>
+${DOWNSIZE_JS}
 `} />
 </Base>

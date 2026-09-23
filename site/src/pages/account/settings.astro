@@ -21,6 +21,7 @@
 import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { BASE_URL } from "../../lib/schema";
+import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
 import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
 import { getCollection } from "astro:content";
 import { cityIsRenderable, renderableTrees } from "../../lib/trees";
@@ -289,34 +290,10 @@ const crumbItems: [string, string | null][] = [
     picBtn.textContent = "Change photo";
   }
 
-  // UPRIGHT, asked for rather than hoped for. A phone writes the orientation
-  // in EXIF and leaves the pixels sideways, which is the same trap
-  // sightings_publish.py rotates out of reader photographs; createImageBitmap
-  // is told to apply it, and the <img> fallback is only for a browser that
-  // has no createImageBitmap at all.
-  function downsized(file, done) {
-    function draw(src, w, h, release) {
-      var side = Math.max(w, h), scale = side > 512 ? 512 / side : 1;
-      var c = document.createElement("canvas");
-      c.width = Math.round(w * scale);
-      c.height = Math.round(h * scale);
-      c.getContext("2d").drawImage(src, 0, 0, c.width, c.height);
-      if (release) release();
-      c.toBlob(function(b) { done(b); }, "image/jpeg", 0.8);
-    }
-    if (window.createImageBitmap) {
-      createImageBitmap(file, { imageOrientation: "from-image" })
-        .then(function(bm) { draw(bm, bm.width, bm.height, function() { bm.close(); }); })
-        .catch(function() { done(null); });
-      return;
-    }
-    var img = new Image(), url = URL.createObjectURL(file);
-    img.onload = function() {
-      draw(img, img.naturalWidth, img.naturalHeight, function() { URL.revokeObjectURL(url); });
-    };
-    img.onerror = function() { URL.revokeObjectURL(url); done(null); };
-    img.src = url;
-  }
+  // The downsizer lives in lib/image-downsize-js.ts since 2026-09-23, when a
+  // reader adding a photograph of a tree needed the same twenty lines. One
+  // copy, called with the edge this page wants.
+  function downsized(file, done) { window.atDownsize(file, 512, done); }
 
   picBtn.addEventListener("click", function() { picFile.click(); });
   picFile.addEventListener("change", function() {

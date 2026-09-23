@@ -25,6 +25,54 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Taking a photograph of a place ON THE WEB (2026-09-23)
+
+The app half is above, under "Adding a photograph of a place, and saying you
+were there". This is the website, which had no way to accept a photograph of a
+tree at all while its own tree pages said "Send us yours and it goes on this
+page" and linked to a form with no file field. It could set a profile picture
+and nothing else.
+
+**Google Maps.** Add a photo is a contribution on the PLACE: it sits on the
+place's own page beside the other contribution controls, separately from
+checking in, and the two are counted separately. A photo of a place you cannot
+find on the map is added through the "add a missing place" flow instead, with
+the picture attached to that submission.
+
+**iNaturalist.** The web uploader takes the file first and the identification
+second; a photograph with no location is still a valid observation, and the
+site asks rather than inventing a coordinate.
+
+**What they agree on, and it decided our shape.** WHERE the photograph goes
+depends on whether the place is already on the map, and nothing invents a
+position. So we have two paths and they are not the same path:
+
+- On a tree we map, the control is on the tree's page and writes the sighting
+  the app writes, carrying that tree's id and its published coordinate. It does
+  NOT tick the tree off: the person may be at a laptop, and the app's own rule
+  already refuses to read "they stood there" out of "they have a picture".
+- On a tree we do not map, the control is a field on the contribute form and
+  the file hangs off the SUBMISSION, because there is no coordinate and a
+  browser cannot supply one.
+
+**The part worth writing down rather than rediscovering.** A browser has no
+GPS worth trusting for this, so the row on a tree page carries OUR pin, and
+that is a trap: CLAUDE.md lets a reader's fix upgrade a pin we have marked
+approximate, and a pin confirmed from a copy of itself is exactly the circular
+evidence the bridge-claim rule exists to stop. The row says in words where its
+coordinate came from.
+
+And the file input is a button with the input hidden behind it, the same shape
+as the profile picture, because a bare file input is ugly on every platform and
+it is what both references draw.
+
+Read 2026-09-23:
+- https://support.google.com/maps/answer/2622947
+- https://support.google.com/maps/answer/6320846
+- https://help.inaturalist.org/en/support/solutions/articles/151000192921-how-to-make-an-observation
+
+---
+
 ## Setting a profile picture on the WEB (2026-09-19)
 
 The app has had this since the profile editor shipped: a PhotosPicker, a

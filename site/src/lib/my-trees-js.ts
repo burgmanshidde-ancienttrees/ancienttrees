@@ -164,7 +164,7 @@ export const MY_TREES_JS = `
     var title = r.tree || r.city || 'A tree you told us about';
     var bits = [title === r.city ? '' : r.city, when(r.created_at)];
     if (g.count > 1) bits.push('sent ' + g.count + ' times');
-    var meta = bits.filter(Boolean).join(' \u00b7 ');
+    var meta = bits.filter(Boolean).join(' \\u00b7 ');
     var label = LABEL[SENT_STATE[r.outcome] || 'sent'];
     return '<article class="tree-card tree-card-nonum mine-card">'
       + '<div class="tree-card-top"><h3 class="tree-name">' + esc(title) + '</h3></div>'
