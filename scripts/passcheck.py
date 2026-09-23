@@ -875,7 +875,50 @@ def do_claim(target, kind, by):
     return 0
 
 
-def do_release(target):
+def unmerged_research(target):
+    """Trees sitting in data/research/<place>-verified.json that never reached
+    data/cities. Returns (path, how many) or None.
+
+    Why this guards the release: on 2026-09-23 a session released Copenhagen
+    the moment its VERIFICATION pass came back, while its write and photo
+    passes were still to run. A night run read the verified file, wrote the
+    same 26 stories itself and published them, so the batch was written twice
+    for about 200k tokens. Nothing was lost and nothing was wrong on the site;
+    the money was.
+
+    The rule was already right and already printed by --claim: release it when
+    the output is MERGED. A rule that was written down and skipped once is
+    exactly what this project turns into a check.
+    """
+    slug = re.sub(r"[^a-z0-9]+", "-", target.lower()).strip("-")
+    path = os.path.join(ROOT, "data", "research", f"{slug}-verified.json")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+        rows = doc.get("trees") if isinstance(doc, dict) else doc
+        city = os.path.join(ROOT, "data", "cities", f"{slug}.json")
+        with open(city, encoding="utf-8") as fh:
+            live_ids = {t["id"] for t in json.load(fh).get("trees", [])}
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
+    missing = [r.get("id") for r in rows if isinstance(r, dict) and r.get("id") not in live_ids]
+    return (path, missing) if missing else None
+
+
+def do_release(target, force=False):
+    pending = unmerged_research(target)
+    if pending and not force:
+        path, missing = pending
+        print(f"REFUSED: {len(missing)} verified tree(s) for {target} are not in data/cities yet.")
+        print(f"  {os.path.relpath(path, ROOT)} holds {', '.join(missing[:6])}"
+              + (" ..." if len(missing) > 6 else ""))
+        print("  A claim is released when the output is MERGED, not when a pass reports back.")
+        print("  Releasing now hands the same trees to a night run, which writes them again:")
+        print("  that happened to Copenhagen on 2026-09-23 and cost about 200k tokens.")
+        print(f"  Merge them first, or --release {target} --force if this pass really is dead.")
+        return 1
     doc, live = load_inflight()
     keep = [c for c in live if c not in claims_for(target, live)]
     if len(keep) == len(live):
@@ -1291,7 +1334,10 @@ def main():
         if not args:
             print("usage: passcheck.py --release <place>")
             return 1
-        return do_release(" ".join(args))
+        force = "--force" in args
+        if force:
+            args.remove("--force")
+        return do_release(" ".join(args), force=force)
     if not args:
         print(__doc__)
         return 1
