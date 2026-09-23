@@ -1,0 +1,85 @@
+{
+  "city": "Friedewald",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "The thickest oak in Hessen stands in the middle of a village that has been gone since 1312. The Hammundeseiche is 8.65 metres round and 25 metres tall, alone in a clearing in the Seulingswald with a rebuilt village well and a small pond beside it. The settlement was deserted three centuries before this acorn landed, which is why the tree grew wide and freestanding instead of drawn up thin in a wood. Free, open forest, about 600 metres on foot from the Nadelohr crossing.",
+  "meta_description": "The Hammundeseiche is the thickest oak in Hessen, 8.65 metres round, alone in a clearing where a village stood until 1312. Free to visit.",
+  "question_meta": "Friedewald's oldest tree is the Hammundeseiche, a pedunculate oak of 350 to 440 years and 8.65 metres round, the thickest oak in Hessen.",
+  "question_answer": "The oldest tree in Friedewald is the Hammundeseiche, a pedunculate oak (Quercus robur) estimated at 350 to 440 years old, with a girth of 8.65 metres at chest height and 8.77 metres at a metre up. It is the thickest oak in Hessen and one of the thickest single-stemmed oaks in Germany. It stands 25 metres tall in a clearing in the Seulingswald about 3 km northeast of the village, on the site of the settlement of Hammundeseiche, deserted since 1312. It is a protected natural monument, free to visit, reached on a forest track that the Lutherweg 1521 also follows.",
+  "question_context": "The age estimate of 350 to 440 years comes from recent German dendrological literature cited by de.wikipedia, Kuhn & Kuhn's Deutschlands alte Baume (2007) and Frohlich's Alte liebenswerte Baume in Deutschland (2000). An older source putting the tree at 1000 years is described there as unreliable and is not repeated here. The girth figures are dated: 8.77 metres measured at one metre in 2001, 8.65 metres at breast height in 2015, so the difference is measuring height rather than shrinkage. The settlement itself is first recorded in 1141 as Hahmundeseich and was abandoned by 1312; its church foundations, an altar block and graves were excavated in 1969, and a village well has been rebuilt beside the tree. The regional heritage site kuppenrhoen.de notes that Johannes Mercator's map of 1592 marks a notable tree at this spot, which the current age estimate cannot easily be squared with, so the two are recorded side by side rather than joined: if the estimate holds, the tree on the map was an earlier one. Until about 1905 the oak was known as the Eiche am Nadelohr, after the forest crossing; the village's name transferred to it only in the last century.",
+  "hero_tree_id": "fwd_001",
+  "oldest_tree_id": "fwd_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Friedewald?",
+      "a": "The Hammundeseiche, a pedunculate oak estimated at 350 to 440 years old and 8.65 metres round. It is the thickest oak in Hessen."
+    },
+    {
+      "q": "Why does a tree stand where a village used to be?",
+      "a": "The settlement of Hammundeseiche was abandoned by 1312, three centuries before this oak started growing. It grew up in the open space the village left, which is why it is so wide and freestanding rather than drawn up thin in a wood."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in open forest with no gate and no ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About 3 km northeast of Friedewald in the Hersfeld-Rotenburg district of Hessen. From the Nadelohr crossing a forest track runs roughly 600 metres southeast to the clearing; the Lutherweg 1521 long-distance path passes it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fwd_001",
+      "name": "The Hammundeseiche",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "350 to 440 years",
+      "age_min": 350,
+      "age_max": 440,
+      "girth_cm": 865,
+      "height_m": 25,
+      "location": {
+        "address": "Wustung Hammundeseiche, Seulingswald, about 3 km northeast of Friedewald, 36289 Friedewald, Hessen, Germany",
+        "latitude": 50.90472,
+        "longitude": 9.89056,
+        "neighbourhood": "Seulingswald, the deserted village of Hammundeseiche"
+      },
+      "story": "The thickest oak in Hessen stands in the middle of a village that has been gone since 1312. Hammundeseiche was a real place, a settlement with a church, first recorded in 1141 and abandoned within two centuries; excavations in 1969 turned up the church foundations, an altar block and graves. What is left above ground is a clearing in the Seulingswald, a reconstructed village well, a small pond, and this oak.\n\nIt measures 8.65 metres round at chest height and 8.77 metres a metre up, which makes it the thickest oak in the state and one of the thickest single-stemmed oaks in Germany. It stands 25 metres tall under a crown 20 metres across, on a clear trunk that runs branch-free for a good height and is pocked with holes where limbs tore out.\n\nThe dates are worth doing. Recent literature puts the tree at 350 to 440 years, so the village had already been deserted for three centuries before this acorn landed. It grew up alone in the space a settlement left behind, which is why it is freestanding and vast rather than drawn up thin in a wood. Until about 1905 people called it the oak at the Nadelohr. The name it carries now is the village's.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Hammundeseiche_(Baum)",
+        "https://www.kuppenrhoen.de/kultur-entdecken/hammundeseiche-friedewald"
+      ],
+      "access": "Free, in open forest. A forest track runs from the Nadelohr crossing about 600 metres southeast to the clearing, and the Lutherweg 1521 long-distance path passes it.",
+      "transport": "About 3 km northeast of Friedewald in the Hersfeld-Rotenburg district, reached by road and then on foot along the forest track from Nadelohr.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Die_Hammundeseiche_im_Seulingswald_%28Sommer_2009%29_-_panoramio.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Alexander Nowak, via Wikimedia Commons, CC BY 3.0",
+        "status": "approved",
+        "width": 800,
+        "height": 600
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hammundeseiche%2C_1.jpg",
+          "license": "Public domain",
+          "attribution": "Rainer Lippert, via Wikimedia Commons, public domain",
+          "status": "approved",
+          "width": 2250,
+          "height": 3000,
+          "caption": "The trunk close up, with the holes where limbs tore out."
+        }
+      ],
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the acorns drop in the clearing",
+        "kind": "fruit"
+      },
+      "verify_notes": "Reader submission, 2026-09-20/22 (16 rows, same tree, rows 117-131), which is how it reached us; the facts below are ours. Two independent sources: de.wikipedia's Hammundeseiche (Baum), which cites Kuhn & Kuhn, Deutschlands alte Baume (2007) and Frohlich, Alte liebenswerte Baume in Deutschland (2000) for the 350-440 year estimate, and kuppenrhoen.de, the regional heritage/tourism site, which independently documents the deserted village, the 1141 first mention, the 1312 abandonment and the walking route. Girth 8.77m at 1m (2001) and 8.65m at breast height (2015); height 25m, crown 20m. Named a Naturdenkmal. Coordinates agree across three sources within about 10m (Wikidata Q1573933 50.90470/9.89056, de.wikipedia 50 54 17 N / 9 53 26 O, and the submitter's own 50 54 16.92 N / 9 53 26.52 E), so the pin is confirmed.\nNOT USED, deliberately: kuppenrhoen.de says Johannes Mercator's 1592 map marks a notable tree at this place. That cannot be this oak if the 350-440 estimate holds, since the tree would then have been a sapling or not yet standing, so the two are left as two facts rather than joined into a claim neither source makes. An older source claiming 1000 years is called unreliable by de.wikipedia and is not repeated.\nPhoto: the lead is the 2009 panoramio shot, viewed directly, whole tree in leaf, daylight, colour, trunk and crown both readable, photo_light.py OK (brightness 89.7, blown 0.008). The best whole-tree shot otherwise available (Hammundeseiche,2.jpg, public domain) scores POOR, backlit with a blown sky, so it was rejected. The second photograph is the public-domain trunk portrait, which is the point of this tree and what the wide shot cannot show.",
+      "how_to_recognise": "You can recognise it by the ring of lost-limb holes up a trunk that carries no branches for its first few metres, and by the rebuilt round stone village well beside it. It is the only large freestanding tree in the clearing."
+    }
+  ]
+}
