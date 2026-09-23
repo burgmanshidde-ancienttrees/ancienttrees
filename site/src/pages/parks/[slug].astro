@@ -6,7 +6,7 @@ import TreeCard from "../../components/TreeCard.astro";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, treeSlugsForCity, type CityEntry, type Tree } from "../../lib/trees";
-import { groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
+import { groupTreesByPark, parkGroupKey, parkPageIsAllowed } from "../../lib/parks";
 import { usablePhoto, imgSrcset } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
@@ -24,10 +24,12 @@ export async function getStaticPaths() {
   const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
 
   return [...groups.values()]
-    .filter((g) => g.trees.length >= PARK_MIN_TREES)
     .map((g) => {
       const intro = introByKey.get(parkGroupKey(g.citySlug, g.parkName));
       if (!intro) return null;
+      // The gate is read AFTER the intro, because a waived park carries its
+      // waiver in that file (blueprint v1.20).
+      if (!parkPageIsAllowed(g.trees.length, intro.data)) return null;
       return {
         params: { slug: intro.data.slug },
         props: { intro, city: g.city, trees: g.trees, published },

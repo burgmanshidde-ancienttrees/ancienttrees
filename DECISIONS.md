@@ -1,5 +1,32 @@
 # Decisions
 
+## 2026-09-23 - The park gate is waivable, one park at a time, down to three
+
+Hidde, on being told the National Mall stood at four trees and Contract H
+wants five: "gooi national mall ook maar live prima 3 voor n keer".
+
+**What he decided.** The Mall gets a page at four. Three is the floor for
+any waiver, in his own number, and the waiver is per park rather than a
+lowered gate: "voor n keer" is an exception, not a change of mind about
+thin park pages, and the contract's reasoning for five is untouched.
+
+**How it is built, and the shape is the decision.** The waiver lives in the
+park's own intro file as a `below_gate` block carrying who approved it and
+his exact words, never as a smaller constant in the code. An exception
+nobody can trace is indistinguishable from the gate having quietly rotted,
+which is the failure this corpus has already recorded for licence verdicts
+and for stale counts. `parkPageIsAllowed()` in site/src/lib/parks.ts is the
+one place the four render sites ask, because the page, the index, the home
+shelf and the tree-page link each had their own copy of the threshold and a
+disagreement between them builds a link to a page that does not exist.
+
+**What does not move.** The hand-written intro is still required, so a
+waived park is one somebody wrote about rather than one that met a number.
+The title still states the count it actually holds, which
+`checkParkCountPromises()` enforces, so the page says four.
+
+Blueprint v1.20.
+
 ## 2026-09-23 - Which trees get a page: the meetlat is the species, the snee is the city
 
 Hidde, on being shown that a mail from the Danish tree register put 733

@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-09](archive/LOG-2026-09.md)
+- [2026-08](archive/LOG-2026-08.md)
+- [2026-07](archive/LOG-2026-07.md)
+
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+<!-- archive-index -->
 ## 2026-09-23 (afternoon) - The site takes photographs now, and had not deployed since the 19th
 
 Two things came out of walking the first outside contributor's trail.
@@ -116,7 +124,6 @@ sourcing bar.
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-<!-- archive-index -->
 ## 2026-09-23 (session) - The language picker moved to the bottom of the sheet, where the references put it
 
 Hidde, on the Rome page on his phone: "I don't think it makes sense to give the
@@ -197,6 +204,22 @@ contributor pipeline. The app half of the account change is NOT built: a
 tree sent through the website still does not appear in the app's My trees,
 which is a cross-platform gap I opened deliberately to get the web fix in
 front of a live contributor today, and it is the next thing.
+
+## 2026-09-23 - The National Mall is live at four trees, on his waiver
+
+Hidde, told it sat one short of Contract H's gate: "gooi national mall ook
+maar live prima 3 voor n keer". So it is live, with the Jefferson Elm, the
+mulberry on its steel crutch, the Survey Lodge catalpas and the Smithsonian
+Witness Elm, and the page says four rather than pretending to five.
+
+The gate is now waivable per park down to three, blueprint v1.20. The
+waiver lives in the park's own intro file with his name and his words on
+it, not as a smaller number in the code, because an exception nobody can
+trace reads later as the gate having quietly rotted. `parkPageIsAllowed()`
+is the single place the page, the index, the home shelf and the tree-page
+link all ask, which they previously each answered with their own copy of
+the threshold.
+
 
 ## 2026-09-23 - The cheapest park on his American list is live. City Park, New Orleans, and why the National Mall is still one short
 
@@ -3725,96 +3748,6 @@ This entry exists because the run wrote none. The prompt asks every run to log e
 ## 2026-09-16 - Night run 2026-09-16 02:13 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 1 commit(s), none of them a published tree.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 23:48 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.2 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 20:36 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 17:49 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 12:58 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 1 commit(s), none of them a published tree.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 06:56 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 04:44 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-15 - Night run 2026-09-15 00:04 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.1 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). 1 commit(s), none of them a published tree.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 23:49 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 21:09 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.1 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 20:53 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 16:02 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 09:21 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 05:28 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 1 commit(s), none of them a published tree.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 02:14 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
-
-## 2026-09-14 - Night run 2026-09-14 00:28 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 36.1 minutes of its 120 minute window, 214 turns, 15 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: eindhoven, berlin, which block the top of the queue until they expire.
 
 This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
 

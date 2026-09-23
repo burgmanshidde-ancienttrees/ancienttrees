@@ -23,7 +23,7 @@ import { haversineKm } from "../../lib/walks";
 import { pageWalksFor, hasWalksPage } from "../../lib/city-walks";
 import { cityHasQuestionPage } from "../../lib/question-page";
 import { speciesCommon, speciesPageSlugs } from "../../lib/species";
-import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
+import { parkKey, groupTreesByPark, parkGroupKey, parkPageIsAllowed } from "../../lib/parks";
 import { usablePhotos, metaImageUrls, ogImageUrl } from "../../lib/images";
 import PhotoFigure from "../../components/PhotoFigure.astro";
 import AddPhoto from "../../components/AddPhoto.astro";
@@ -74,7 +74,7 @@ export async function getStaticPaths() {
   const parkGroups = groupTreesByPark(allCities);
   const parkPages = new Map(
     parkIntros
-      .filter((i) => (parkGroups.get(parkGroupKey(i.data.city_slug, i.data.park))?.trees.length ?? 0) >= PARK_MIN_TREES)
+      .filter((i) => parkPageIsAllowed(parkGroups.get(parkGroupKey(i.data.city_slug, i.data.park))?.trees.length ?? 0, i.data))
       .map((i) => [parkGroupKey(i.data.city_slug, i.data.park), i.data]),
   );
 
