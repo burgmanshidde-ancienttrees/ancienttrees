@@ -84,6 +84,24 @@ function explicitParks(): Set<string> {
 
 export const PARK_MIN_TREES = 5;
 
+/** The floor a waived park still has to clear. Hidde, 2026-09-23, on the
+ * National Mall sitting at four: "gooi national mall ook maar live prima 3
+ * voor n keer". Three is his number and it is written here rather than left
+ * open, because a waiver with no floor is how a one-tree park page arrives
+ * later wearing his approval. */
+export const PARK_WAIVER_MIN = 3;
+
+/** May this park have a page? Five trees, or a waiver in its own intro file.
+ *
+ * Contract H (blueprint v1.20) gates a park page at five trees because below
+ * that it is a thin page wearing a park's name. The waiver is per park, lives
+ * in the data rather than in this code, and carries who approved it: an
+ * exception nobody can trace is indistinguishable from the gate rotting. */
+export function parkPageIsAllowed(treeCount: number, intro?: { below_gate?: unknown } | null): boolean {
+  if (treeCount >= PARK_MIN_TREES) return true;
+  return treeCount >= PARK_WAIVER_MIN && Boolean(intro?.below_gate);
+}
+
 /** The named park a tree stands in, or null. Reads neighbourhood first,
  * address second: the clause before the first comma, parentheticals
  * stripped. */
