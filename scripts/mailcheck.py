@@ -452,9 +452,14 @@ def check_no_unshipped_feature(path, body):
         return []
     # `public static let walks = ...contains("-show-walks")` means hidden unless
     # a debug argument is passed, which no real phone ever passes.
+<<<<<<< Updated upstream
     pat = (r'public static let (\w+) = ProcessInfo\.processInfo'
            r'\.arguments\.contains\("-show-[\w-]+"\)')
     hidden = re.findall(pat, src)
+=======
+    hidden = re.findall(r'public static let (\w+) = ProcessInfo\.processInfo'
+                        r'\.arguments\.contains\("-show-[\w-]+"\)', src)
+>>>>>>> Stashed changes
     WORDS = {"walks": [r"\bwalks?\b"],
              "season": [r"\bseason radar\b", r"\bseason story\b"],
              "plus": [r"\bAncient Trees Plus\b"]}
