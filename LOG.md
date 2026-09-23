@@ -2,6 +2,66 @@
 
 <!-- archive-index -->
 
+## 2026-09-23 - Country titles now name trees (blueprint v1.19), and a famous-tree pass that could not fetch anything
+
+**Live: Contract G's title.** It read `Ancient Trees in [Country]: [N] Cities
+to Explore` on a page whose measured demand is tree-shaped, and now reads
+`Ancient Trees in [Country]: [N] to Visit, Oldest First`, N being the TREE
+count, falling back to `Ancient Trees in [Country], Oldest First` over 60
+characters. Hidde's yes on 2026-09-19 ("als je denkt dat dat beter is doe
+het"), blueprint bumped to v1.19 with the changelog entry hard rule 7 asks
+for. The head phrase does not move, so what the page ranks for is unchanged.
+
+The measurement behind it: country pages carried 410 impressions and FIVE
+clicks in ten days across the eight clearing ten impressions, while "oldest
+tree in the netherlands" reached /nijmegen and /eindhoven at position 4 and
+"oldest tree in switzerland" reached /cremines, a village page, at 6.
+
+It never says "the oldest trees in [Country]" flat. That was my own first
+draft and it reintroduces the claim the H2 was corrected for the day before:
+Taiwan's list runs down to a ninety year old tree, so it is a claim about
+Taiwan rather than about our map.
+
+**The famous-tree batch produced RESEARCH, not trees, and cannot ship as it
+stands.** The verify pass ran with all outbound HTTP blocked by the
+environment's network policy: WebFetch and curl refused at the proxy for
+every host tried, Wikipedia and Commons and Wikidata included, still true
+from this session today. Only WebSearch worked, and BRIEF_RESEARCH.md's own
+rule is that a WebSearch summary is a lead and never a source. So every
+figure in `data/research/famous-batch-2026-09-19.md` is single-channel and
+none of it meets the two-independent-sources bar. The agent said so itself at
+the top of its own findings, which is the right call; a pass that can fetch
+re-verifies every number before any of it reaches a city file.
+
+What it did find is worth the window even so:
+
+| Verdict | Trees |
+|---|---|
+| Reads as verifying, needs re-checking with a real fetch | Najevnik Linden (Slovenia), Oak of Bataszek (Hungary), Araucaria Madre (Chile), Zlatolist Plane (Bulgaria), Tilleul de Turenne (France), Rotomanty (Finland), Lulin Sacred Tree (Taiwan, thin) |
+| **DEAD, blocked** | Okuteshinmeijinja no osugi (Japan), TV-eken (Sweden) |
+| **Already published** | Figueira das Lagrimas, live as spa_001 in Sao Paulo |
+| Not reached before the pass died | Xiangyang Famous Tree (Taiwan) |
+
+Two dead trees caught before they shipped, and a second already-mapped tree
+after La Pochota. That one is a gap in my own check rather than bad luck: the
+distance dedupe cannot see a lead with no coordinate, and that lead has none.
+Both belong on the leads files as resolved.
+
+The pass ended on the weekly usage limit rather than on a decision, so it is
+unfinished rather than concluded. Claims on chishang and lohja expired on
+their own and are released.
+
+**FOR HIDDE.** The environment's network policy denied every outbound host
+this session tried, which is what stopped the verification. You change it
+under Network access in the environment's settings, from the cloud
+environment menu in the session title bar, then Edit: either a broader access
+level or wikipedia.org, wikimedia.org and wikidata.org added to the allowed
+domains. The levels are described at
+https://code.claude.com/docs/en/claude-code-on-the-web. Until then any
+research pass here is limited to WebSearch, which cannot meet our own
+sourcing bar.
+
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-09](archive/LOG-2026-09.md)
