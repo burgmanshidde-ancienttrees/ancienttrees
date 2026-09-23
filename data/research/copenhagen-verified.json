@@ -1,0 +1,592 @@
+[
+  {
+    "id": "cop_017",
+    "name": "The Hawthorn of Nordpolen",
+    "species": "Hawthorn (Crataegus sp.)",
+    "girth_cm": 221,
+    "height_m": 8.5,
+    "location": {
+      "address": "Nordpolen, the wild green corner of De Gamles By, north of Norre Alle, facing Tagensvej, Norrebro",
+      "latitude": 55.69601,
+      "longitude": 12.56057,
+      "neighbourhood": "Norrebro"
+    },
+    "verified_sources": [
+      "Dansk Traeregister (Danish Tree Register), id 1108, position verified 10-09-2018: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1108",
+      "Red Byens Traeer (a citizen blog documenting Norrebro's green spaces, independent of the register's own citation), which names this specific old crooked hawthorn at Nordpolen and describes it as older than Norrebro itself: http://redbyenstraeer.blogspot.com/2019/01/nordpolen-og-de-gamles-by-del-1.html and http://redbyenstraeer.blogspot.com/2019/02/nordpolen-og-de-gamles-by-del-2.html"
+    ],
+    "access": "Free, open green area; a public path crosses Nordpolen near De Gamles By, and the hawthorn stands beside it.",
+    "transport": "Norrebro station (S-train) or bus 6A/350S along Tagensvej, then roughly 15-20 minutes on foot to De Gamles By.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "One of the last remnants of an old common/heath (overdrev) that predates the surrounding Norrebro neighbourhood, per both the register and the Red Byens Traeer blog, which independently calls it 'the magical white hawthorn, older than Norrebro itself' and documents a local campaign that kept a planned school/diabetes-centre building project off Nordpolen specifically to protect the green corner and this tree (building plans were paused as of August 2018 per the register's own legend). Species is unresolved to exact Crataegus species in the register (Crataegus sp.), so the page should ask the reader. Growth form: gnarled/twisted (forvredet-forkroblet), which matches an old hedgerow-relict hawthorn rather than a planted specimen. Register position verified 10-09-2018."
+  },
+  {
+    "id": "cop_018",
+    "name": "Trepileegen, the Three-Willow Oak of Dyrehaven",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 350 to 550 years",
+    "age_min": 350,
+    "age_max": 550,
+    "age_basis": "derived",
+    "girth_cm": 890,
+    "height_m": 21.3,
+    "location": {
+      "address": "Jaegersborg Dyrehave (the royal deer park), Lyngby-Taarbaek Kommune, near the park's cluster of named veteran oaks",
+      "latitude": 55.79392,
+      "longitude": 12.58747,
+      "neighbourhood": "Jaegersborg Dyrehave"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 981, position verified 09-05-2008: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=981",
+      "Linda's netsted, an independent Danish hiking blog describing a walk past Dyrehaven's named giant oaks, which identifies Trepileegen by name and describes it as enormous, with a natural step-like base that makes it climbable: https://lindasnetsted.wordpress.com/2017/05/06/koebenhavn-egetraeer-i-dyrehaven/"
+    ],
+    "access": "Free, open daily; Jaegersborg Dyrehave is a public royal deer park (free-roaming red, sika and fallow deer share the park, keep a respectful distance).",
+    "transport": "Klampenborg station (S-train, line C), then roughly a 30-40 minute walk into the deer park; the park is large (about 11 square kilometres) and has no closer station.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "IMPORTANT correction: the register's headline girth of 9.65 m is measured at a different trunk height than its own legend, which states the circumference was 8.90 m at 1.30 m above ground in March 2017. Use 890 cm, not 965, as the comparable trunk figure. Two-stemmed/multi-stemmed growth form per the register. Age is DERIVED, not sourced: girth 890 cm gives a diameter of about 283 cm; applying the standard open-grown oak ageing multiplier (roughly 1.25 to 2.0 years per cm of diameter, the low end for a pasture-grown oak with unrestricted growth, the high end for a more constrained one) gives a band of roughly 350 to 570 years, rounded here to 350-550. This is a calculation, not a measured age; state the basis on the page. Name meaning: 'Trepileegen' is not confidently explained by any source found; render the gloss as given in the brief ('Three-Willow Oak') but do not assert a false etymology in the story."
+  },
+  {
+    "id": "cop_019",
+    "name": "The Field Maple of Hans Tavsens Park",
+    "species": "Field Maple (Acer campestre)",
+    "girth_cm": 403,
+    "height_m": 12,
+    "location": {
+      "address": "Hans Tavsens Park, opposite Jesper Brochmands Gade, Norrebro",
+      "latitude": 55.68872,
+      "longitude": 12.54829,
+      "neighbourhood": "Norrebro"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1396, position verified 06-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1396"
+    ],
+    "access": "Free, open public park (Hans Tavsens Park), adjacent to Assistens Cemetery.",
+    "transport": "Norrebro station (S-train), about 15 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: only the register carries this tree; no independent second source found describing this specific specimen (general pages about Hans Tavsens Park exist but do not mention it). The register's own claim is strong and worth using with attribution: it is currently Denmark's third-thickest field maple, though two field maples in Dragsholm Park are noted as two registrations of the same tree, which affects the ranking's arithmetic. Several larger branches have been sawn off the crown and some smaller branches are dry, per the register's legend, so the tree shows some decline; nothing suggests it is not alive."
+  },
+  {
+    "id": "cop_020",
+    "name": "Kuppelegen, the Dome Oak of Dyrehaven",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 350 to 550 years",
+    "age_min": 350,
+    "age_max": 550,
+    "age_basis": "derived",
+    "girth_cm": 863,
+    "height_m": 17.2,
+    "location": {
+      "address": "Jaegersborg Dyrehave (the royal deer park), Lyngby-Taarbaek Kommune, about 100 metres from Trepileegen",
+      "latitude": 55.79382,
+      "longitude": 12.58612,
+      "neighbourhood": "Jaegersborg Dyrehave"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 980, position verified 09-05-2008: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=980",
+      "Linda's netsted hiking blog, which names Kuppelegen among Dyrehaven's giant oaks, though the author notes uncertainty telling it apart from a neighbouring oak (Stokkerupegen) in the same cluster: https://lindasnetsted.wordpress.com/2017/05/06/koebenhavn-egetraeer-i-dyrehaven/"
+    ],
+    "access": "Free, open daily; Jaegersborg Dyrehave is a public royal deer park.",
+    "transport": "Klampenborg station (S-train, line C), then roughly a 30-40 minute walk into the deer park.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED for identification: the independent hiking blog found as a second source names Kuppelegen but its author admits uncertainty distinguishing it from a similar neighbouring oak in the same cluster (Stokkerupegen), so treat the second source as supportive rather than fully independent confirmation. The register's own position (verified 2008) is the reliable part. 'Kuppel' means dome/cupola, describing the crown shape. Age DERIVED from girth 863 cm (diameter about 275 cm) using the open-grown oak multiplier of roughly 1.25-2.0 years/cm, giving approximately 340-550 years, rounded to 350-550."
+  },
+  {
+    "id": "cop_021",
+    "name": "Vorteegen, the Wart Oak of Dyrehaven",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 325 to 550 years",
+    "age_min": 325,
+    "age_max": 550,
+    "age_basis": "derived",
+    "girth_cm": 848,
+    "height_m": 16.5,
+    "location": {
+      "address": "Jaegersborg Dyrehave (the royal deer park), Lyngby-Taarbaek Kommune, on the open prairie-like grassland area",
+      "latitude": 55.7868,
+      "longitude": 12.56868,
+      "neighbourhood": "Jaegersborg Dyrehave"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1000, position verified 16-05-2008: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1000",
+      "Linda's netsted hiking blog, which names Vorteegen on the park's open grassland and notes it did not visibly show the wart-like growths its name suggests: https://lindasnetsted.wordpress.com/2017/05/06/koebenhavn-egetraeer-i-dyrehaven/"
+    ],
+    "access": "Free, open daily; Jaegersborg Dyrehave is a public royal deer park.",
+    "transport": "Klampenborg station (S-train, line C), then roughly a 30-40 minute walk into the deer park.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "IMPORTANT correction: use the register's legend figures, not its headline ones. In March 2017 the girth was measured at 8.48 m and the height at 16.5 m; the headline figures (8.41 m girth, 16.8 m height) are the earlier measurement. 'Vorteegen' means 'the Wart Oak', referring to wart-like burrs on the bark; single-stemmed. Age DERIVED from girth 848 cm (diameter about 270 cm) using the open-grown oak multiplier of roughly 1.25-2.0 years/cm, giving approximately 335-540 years, rounded to 325-550."
+  },
+  {
+    "id": "cop_022",
+    "name": "The Hornbeam of Grondalsparken",
+    "species": "Hornbeam (Carpinus betulus)",
+    "girth_cm": 416,
+    "height_m": 16.5,
+    "location": {
+      "address": "Grondalsparken, about 100 metres southwest of Grondal station, east of the path",
+      "latitude": 55.68974,
+      "longitude": 12.51422,
+      "neighbourhood": "Vanlose"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1460, position verified 24-11-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1460"
+    ],
+    "access": "Free, open public park (Grondalsparken), which runs as a green corridor along the railway between Damhussoen and Borups Alle.",
+    "transport": "Grondal station (S-train), about 100 metres, a couple of minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: register-only, no independent second source found for this individual tree; general histories of Grondalsparken (laid out 1930-1939 by city gardener Fabricius-Hansen) exist but do not name it. IMPORTANT caveat on the measurement: the register's own legend says the tree has 4 to 5 stems ('4-5 stammer'), so 416 cm is a multi-stem measurement, NOT a single trunk girth. Do not present it as a thickest-trunk figure; describe it as a wide multi-stemmed hornbeam instead. Alive and healthy per the register (Levende, sund)."
+  },
+  {
+    "id": "cop_023",
+    "name": "Raunkiaer's Oak, the Burnt Oak of Dyrehaven",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 325 to 525 years",
+    "age_min": 325,
+    "age_max": 525,
+    "age_basis": "derived",
+    "girth_cm": 820,
+    "height_m": 21,
+    "location": {
+      "address": "Jaegersborg Dyrehave (the royal deer park), Lyngby-Taarbaek Kommune, on the oak between Dalvej and Chausseen",
+      "latitude": 55.79055,
+      "longitude": 12.57793,
+      "neighbourhood": "Jaegersborg Dyrehave"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 40, position verified 24-11-2008: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=40",
+      "N.E. Holten, 'Kaempeege i Danmark: En beskrivelse af de 30 tykkeste traeer', Dansk Dendrologisk Aarsskrift, bind 16, 1998, pages 25-111 (a published survey of Denmark's 30 thickest oaks, cited by the register as the origin of this tree's 1998 measurements; a genuinely separate authored source from the register's own personal-observation citations)."
+    ],
+    "access": "Free, open daily; Jaegersborg Dyrehave is a public royal deer park.",
+    "transport": "Klampenborg station (S-train, line C), then roughly a 30-40 minute walk into the deer park.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Carries two alternative names in the register besides its formal one: 'Den Braendte Eg' (The Burnt Oak) and 'Raunkiaers Eg' (Raunkiaer's Oak, after the Danish botanist Christen C. Raunkiaer, known for his work on plant life-forms, who studied Dyrehaven's ancient oaks). Measurements (820 cm girth, 21 m height) are explicitly from 1998 per the register's own comment, so the tree is likely a little larger today; state the measurement date. Single-stemmed. Age DERIVED from the 1998 girth (diameter about 261 cm) using the open-grown oak multiplier of roughly 1.25-2.0 years/cm, giving approximately 325-525 years as of that measurement."
+  },
+  {
+    "id": "cop_024",
+    "name": "The Weeping Silver Lime of J.C. Jacobsens Have",
+    "species": "Weeping Silver Lime (Tilia tomentosa 'Petiolaris')",
+    "girth_cm": 477,
+    "height_m": 27.5,
+    "location": {
+      "address": "J.C. Jacobsens Have, Carlsberg Byen, at the southern end by the path around the southwest lawn",
+      "latitude": 55.66387,
+      "longitude": 12.53283,
+      "neighbourhood": "Carlsberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1357, position verified 02-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1357",
+      "Carlsberg Byen's own account of J.C. Jacobsens Have, which confirms the garden (laid out 1848 by landscape architect Rudolph Rothe as J.C. Jacobsen's private garden, opened to the public in 2009, now a protected monument) as the historic planting ground for trees the brewer brought home from his travels: https://www.carlsbergbyen.dk/om-carlsberg-byen/byrum-i-carlsberg-byen/jc-jacobsens-have"
+    ],
+    "access": "Free, open public park (J.C. Jacobsens Have), part of Carlsberg Byen.",
+    "transport": "Carlsberg station (S-train), about 10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: the Carlsberg Byen source confirms the garden's history and its collection of travel-brought trees in general, but does not independently name this specific weeping silver lime, so treat the second source as strong context rather than a dedicated confirmation. Several main branches are held together with wires per the register's legend, suggesting some structural weakness/decline being managed. Danish common name given in the register is 'Ungarsk Solvlind' (Hungarian Silver Lime), a colloquial name for this weeping form of Tilia tomentosa; the register itself flags the translation as unauthorised."
+  },
+  {
+    "id": "cop_025",
+    "name": "The Field Maple of Kaerholmen",
+    "species": "Field Maple (Acer campestre)",
+    "girth_cm": 360,
+    "height_m": 15.5,
+    "location": {
+      "address": "Grondalsparken, facing the building at Kaerholmen",
+      "latitude": 55.67998,
+      "longitude": 12.49032,
+      "neighbourhood": "Vanlose"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1465, position verified 24-11-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1465"
+    ],
+    "access": "Free, open public park (Grondalsparken).",
+    "transport": "Grondal station (S-train), about 10 minutes on foot along the park.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: register-only, no independent second source found. A different individual from cop_022's hornbeam and from cop_019's field maple; the register numbers it 'Navr 2' to distinguish it from the Hans Tavsens Park specimen. Solitary tree, multi-stemmed or multi-branched from about 1 metre height per the register's legend. Alive and healthy (Levende, sund)."
+  },
+  {
+    "id": "cop_026",
+    "name": "The Fern-leaved Beech of the National Gallery",
+    "species": "Fern-leaved Beech (Fagus sylvatica 'Laciniata')",
+    "girth_cm": 437,
+    "height_m": 18,
+    "location": {
+      "address": "Statens Museum for Kunst (the National Gallery of Denmark), by the northeastern gable of the museum, facing Oster Anlaeg",
+      "latitude": 55.68897,
+      "longitude": 12.57985,
+      "neighbourhood": "Oster Anlaeg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1531, position verified 16-12-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1531",
+      "Dansk Arkitektur Center on the museum's garden (Museumshaven), confirming it was reopened in 2014 as a space fully open toward Oster Voldgade and Solvgade, inviting passers-by in directly, and functions as public space around the clock: https://dac.dk/magazine/steder/museumshaven-ved-statens-museum-for-kunst-337"
+    ],
+    "access": "Free, the museum's own grounds are open to the public around the clock as part of Oster Anlaeg; no ticket needed to reach the tree (a ticket is only needed to enter the museum building itself).",
+    "transport": "Osterport station (S-train and regional trains), about 10 minutes on foot through Oster Anlaeg.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: the DAC source confirms the museum garden's open, public character but does not name this specific tree, so treat as access confirmation rather than a dedicated second source for the tree itself. Many root-sprung branches, several oddly sawn from the trunk for reasons the register's own recorder could not explain, per its legend. 'Bregnebog' (fern-leaved beech) has deeply cut, fern-like leaves, a distinct beech cultivar."
+  },
+  {
+    "id": "cop_027",
+    "name": "The Oriental Plane of J.C. Jacobsens Have",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "girth_cm": 580,
+    "height_m": 22,
+    "location": {
+      "address": "J.C. Jacobsens Have, Carlsberg Byen, on the round lawn to the west, about 20 metres from the honorary residence",
+      "latitude": 55.66404,
+      "longitude": 12.53264,
+      "neighbourhood": "Carlsberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1355, position verified 02-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1355",
+      "Carlsberg Byen's own account of J.C. Jacobsens Have and its history as brewer J.C. Jacobsen's private collection of trees brought home from his travels: https://www.carlsbergbyen.dk/om-carlsberg-byen/byrum-i-carlsberg-byen/jc-jacobsens-have"
+    ],
+    "access": "Free, open public park (J.C. Jacobsens Have), part of Carlsberg Byen.",
+    "transport": "Carlsberg station (S-train), about 10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: as with the garden's other Carlsberg trees, the Carlsberg Byen source confirms the garden's general history but not this specific plane by name; treat as context. Very uneven bark low on the trunk per the register's legend. Single-stemmed, healthy (Levende, sund)."
+  },
+  {
+    "id": "cop_028",
+    "name": "The Beech of Holmens Kirkegard",
+    "species": "European Beech (Fagus sylvatica)",
+    "girth_cm": 540,
+    "height_m": 19.5,
+    "location": {
+      "address": "Holmens Kirkegard, by the western path, about 50 metres from the northern corner",
+      "latitude": 55.695,
+      "longitude": 12.57987,
+      "neighbourhood": "Holmen"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1181, position verified 03-12-2018: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1181",
+      "Hovedstadshistorie.dk's history of Holmens Kirkegard, confirming it as Copenhagen's oldest cemetery still in use (consecrated 1666, the navy's own burial ground, also called Skovkirkegard/Badsmandskirkegard) and open to visitors: https://www.hovedstadshistorie.dk/oestervold-2/holmens-kirkegaard/"
+    ],
+    "access": "Free, the cemetery is a working burial ground open to the public in daylight hours.",
+    "transport": "Poul Henningsens Plads (Copenhagen Metro, Cityringen M3) or Osterport station, about 10-15 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: the cemetery-history source confirms the site and its public access but does not name this specific beech, so it stands as access/context rather than a dedicated second source. Large root buttresses, described in the register's legend as 'almost an elephant's foot half a metre up the trunk'. Single-stemmed, healthy."
+  },
+  {
+    "id": "cop_029",
+    "name": "The Japanese Pagoda Tree of Rolighedsvej",
+    "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+    "girth_cm": 315,
+    "height_m": 12,
+    "location": {
+      "address": "Immediately east of Sankt Thomas Kirke, at the junction of Rolighedsvej and L.I. Brandes Alle, Frederiksberg",
+      "latitude": 55.68427,
+      "longitude": 12.54204,
+      "neighbourhood": "Frederiksberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1781, position verified 11-06-2022: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1781"
+    ],
+    "access": "Free, stands on public ground at a street corner beside Sankt Thomas Kirke.",
+    "transport": "Fasanvej station (Copenhagen Metro, M1/M2), about 10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: register-only, no independent second source found. Was heavily pruned a few years before the 2022 survey and carries large bark wounds on its south and east sides over the lowest 2 metres, per the register's legend, so it has visible past damage though it is recorded as alive."
+  },
+  {
+    "id": "cop_030",
+    "name": "The Caucasian Wingnut of Allegade",
+    "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+    "girth_cm": 390,
+    "height_m": 20,
+    "location": {
+      "address": "A park by Allegade 17, Frederiksberg (Allegade runs along the east side of Frederiksberg Have and holds a public rose garden entered from Allegade 20; our sources describe the tree as standing in 'the park at Allegade' but do not name the exact plot)",
+      "latitude": 55.67661,
+      "longitude": 12.53238,
+      "neighbourhood": "Frederiksberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 827, position verified 05-09-2016: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=827"
+    ],
+    "access": "Likely free and open (Allegade holds a public rose garden, Rosenhaven, entered from number 20), but our sources do not confirm this exact tree sits on that public plot rather than an adjoining private one; treat as needing a reader's confirmation before treating access as fully settled.",
+    "transport": "Frederiksberg station (Metro M1/M2 and S-train) or Fasanvej station, about 10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED, access uncertain: a Frederiksberg municipality news item was found by search describing 'one of the municipality's oldest trees, a winged walnut about 200 years old' at Allegade, which would match this tree closely, but the page returned a 404 when fetched directly and the figure could not be confirmed on the source itself, so it is NOT used as a sourced age here per the search-summary caution rule. Do not add an age to this tree until the claim is confirmed on an actual page. Register-only for existence/species/position. Single-stemmed."
+  },
+  {
+    "id": "cop_031",
+    "name": "The London Plane of Landbohojskolens Have",
+    "species": "London Plane (Platanus x acerifolia)",
+    "girth_cm": 671,
+    "height_m": 25.7,
+    "location": {
+      "address": "Landbohojskolens Have (the Royal Veterinary and Agricultural University's garden, now University of Copenhagen Frederiksberg Campus), behind the former auditorium VII (now the festival auditorium)",
+      "latitude": 55.67971,
+      "longitude": 12.54097,
+      "neighbourhood": "Frederiksberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1509, position verified 21-10-2011: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1509",
+      "University of Copenhagen's own history of the garden's old trees, confirming it was inaugurated in 1858 and holds trees that have stood for over 150 years, including large multi-stemmed specimens: https://kub.ku.dk/biblioteker/frederiksberg/landbohoejskolens-historie/life150/haven/de_gamle_trer/"
+    ],
+    "access": "Free, open public garden (Landbohojskolens Have), part of the University of Copenhagen's Frederiksberg Campus.",
+    "transport": "Fasanvej station (Copenhagen Metro, M1/M2), about 10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: the university's own garden-history page confirms the garden and its old trees in general (naming zelkovas, a golden weeping ash, ash and chestnut collections) but does not specifically name this plane tree, so treat as strong context rather than a dedicated second source. Single-stemmed, healthy (Levende, sund)."
+  },
+  {
+    "id": "cop_032",
+    "name": "The Zelkova of Landbohojskolens Have",
+    "species": "Saw-leaf Zelkova (Zelkova serrata)",
+    "girth_cm": 755,
+    "height_m": 17,
+    "location": {
+      "address": "Landbohojskolens Have, about 50 metres south of the garden's northeastern corner",
+      "latitude": 55.6808,
+      "longitude": 12.54321,
+      "neighbourhood": "Frederiksberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1782, position verified 11-06-2022: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1782",
+      "University of Copenhagen's own history of the garden's old trees, which specifically describes large zelkovas along Bulowsvej where several trunks have grown together into one crown, matching this tree's own record of four fused stems: https://kub.ku.dk/biblioteker/frederiksberg/landbohoejskolens-historie/life150/haven/de_gamle_trer/"
+    ],
+    "access": "Free, open public garden (Landbohojskolens Have), part of the University of Copenhagen's Frederiksberg Campus.",
+    "transport": "Fasanvej station (Copenhagen Metro, M1/M2), about 10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "The register notes the tree consists of 4 stems, with fungal infection at the southeast stem; 755 cm is therefore a multi-stem/crown measurement rather than a single trunk, matching the university source's description of zelkovas here whose several trunks fused into one crown when multiple saplings were planted together, a known 19th-century planting practice at this garden."
+  },
+  {
+    "id": "cop_033",
+    "name": "The Plane Tree of Rosenvaenget",
+    "species": "London Plane (Platanus x acerifolia)",
+    "girth_cm": 578,
+    "height_m": 27,
+    "location": {
+      "address": "Pavement outside Rosenvaengets Alle 30, at the corner of Rosenvaengets Alle and Saabyesvej, Osterbro",
+      "latitude": 55.69958,
+      "longitude": 12.58298,
+      "neighbourhood": "Osterbro"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1259, position verified 26-08-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1259",
+      "Danske Landskabsarkitekter (the Danish landscape architects' association), a dedicated feature article on this specific tree, 'Mere end et trae - Rosenvaengets platan', describing it as possibly one of Denmark's oldest surviving plane trees, as tall as the surrounding five-storey buildings, and formally protected as a valuable tree within the Rosenvaenget neighbourhood plan: https://www.landskabsarkitekter.dk/Aktuelt/mere-end-et-trae-rosenvaengets-platan/"
+    ],
+    "access": "Free, stands on the public pavement; visible and reachable at any time.",
+    "transport": "Poul Henningsens Plads (Copenhagen Metro, Cityringen M3), about 10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Genuinely well-documented by a dedicated feature article, independent of the register. That article states its exact age is not known, nor is it clear how old a London plane can become in this climate, so do not assign an age; the article's own honesty about the uncertainty should carry into the story. Crown reaches over the roof of the nearest apartment building; healthy per the register."
+  },
+  {
+    "id": "cop_034",
+    "name": "The Lanceleaf Cottonwood of Bispebjerg Kirkegard",
+    "species": "Lanceleaf Cottonwood (Populus acuminata)",
+    "girth_cm": 236,
+    "height_m": 20,
+    "location": {
+      "address": "Bispebjerg Kirkegard, on the lawn between Nordre and Sondre Kapel, nearest the northern one",
+      "latitude": 55.71424,
+      "longitude": 12.52297,
+      "neighbourhood": "Bispebjerg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 964, position verified 05-07-2017: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=964",
+      "Kobenhavns Kommune's own page on Bispebjerg Kirkegard confirming it is open to the public and describing its avenues of poplar, pine, ash, hornbeam and Japanese cherry trees: https://www.kk.dk/brug-byen/natur-og-groenne-omraader/koebenhavns-kirkegaarde/bispebjerg-kirkegaard"
+    ],
+    "access": "Free, the cemetery is open to the public in daylight hours.",
+    "transport": "Norrebro station (S-train), about 20 minutes on foot, or bus 6A/350S to the cemetery gate on Frederikssundsvej.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: the municipal cemetery page confirms poplar avenues exist at Bispebjerg generally and confirms public access, but does not name this specific tree/species, so it stands as context. This individual is the northernmost of a group of three trees; the register's own legend notes some variation in leaf length-to-width ratio within the group and that there is no official Danish name for this poplar species (Populus acuminata is a North American hybrid cottonwood, not native to Denmark). Ask the reader if this identification looks right, since the register itself flags it with question marks in its Danish name field."
+  },
+  {
+    "id": "cop_035",
+    "name": "The Catalpa of Haveselskabets Have",
+    "species": "Southern Catalpa (Catalpa bignonioides)",
+    "girth_cm": 217,
+    "height_m": 12,
+    "location": {
+      "address": "Haveselskabets Have, Frederiksberg, just inside the entrance",
+      "latitude": 55.67446,
+      "longitude": 12.53134,
+      "neighbourhood": "Frederiksberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1881, position verified 20-09-2023: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1881",
+      "Visit Copenhagen's own listing for Haveselskabets Have, confirming it as a free public park in Frederiksberg, open year-round: https://www.visitcopenhagen.com/copenhagen/planning/haveselskabets-have-gdk1137394"
+    ],
+    "access": "Free, open public park (Haveselskabets Have, run by the Danish Horticultural Society), open year-round, roughly 06:00 to 17:00-22:00 depending on the season.",
+    "transport": "Frederiksberg Alle station (Copenhagen Metro, M1/M2), a couple of minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: the Visit Copenhagen source confirms the park and its public access but does not name this specific catalpa, so it stands as access context. Forked from about 2 metres up per the register's legend. Healthy, single main stem below the fork."
+  },
+  {
+    "id": "cop_036",
+    "name": "The Tulip Tree of J.C. Jacobsens Have",
+    "species": "Tulip Tree (Liriodendron tulipifera)",
+    "girth_cm": 392,
+    "height_m": 26.5,
+    "location": {
+      "address": "J.C. Jacobsens Have, Carlsberg Byen, on the western lawn toward the northwest",
+      "latitude": 55.66433,
+      "longitude": 12.53272,
+      "neighbourhood": "Carlsberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1359, position verified 02-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1359",
+      "Carlsberg Byen's own account of J.C. Jacobsens Have as J.C. Jacobsen's historic private tree collection, opened to the public in 2009: https://www.carlsbergbyen.dk/om-carlsberg-byen/byrum-i-carlsberg-byen/jc-jacobsens-have"
+    ],
+    "access": "Free, open public park (J.C. Jacobsens Have), part of Carlsberg Byen.",
+    "transport": "Carlsberg station (S-train), about 10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: as with the garden's other Carlsberg trees, the second source confirms the garden's general history but not this specific tulip tree by name. Single-stemmed, healthy (Levende, sund). At 26.5 m one of the taller trees in this batch, notable for the tulip-shaped flowers in early summer, though no source here confirms bloom timing for this specimen so best_time is left unset."
+  },
+  {
+    "id": "cop_037",
+    "name": "Fortunegen, the Fortune Oak of Dyrehaven",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 225 to 375 years",
+    "age_min": 225,
+    "age_max": 375,
+    "age_basis": "derived",
+    "girth_cm": 580,
+    "height_m": 24,
+    "location": {
+      "address": "Jaegersborg Dyrehave (the royal deer park), Lyngby-Taarbaek Kommune, east of Fortunporthuset gatehouse, north of Fortunvej",
+      "latitude": 55.77555,
+      "longitude": 12.54489,
+      "neighbourhood": "Jaegersborg Dyrehave"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 998, position verified 23-10-2010: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=998"
+    ],
+    "access": "Free, open daily; Jaegersborg Dyrehave is a public royal deer park.",
+    "transport": "Jaegersborg station (Naerumbanen), then about a 10-15 minute walk to the Fortunporten gate, which is much closer than Klampenborg for this particular oak on the park's western side.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: register-only, no independent second source found; the hiking blog used for Trepileegen/Kuppelegen/Vorteegen does not mention Fortunegen. Named for its position near Fortunporten, one of the deer park's historic gates. Crown very asymmetric, squeezed on the north side, per the register's legend. Age DERIVED from girth 580 cm (diameter about 185 cm) using the open-grown oak multiplier of roughly 1.25-2.0 years/cm, giving approximately 230-370 years, notably younger than the four other named Dyrehaven oaks in this batch, consistent with its smaller girth."
+  },
+  {
+    "id": "cop_038",
+    "name": "The Black Locust of Lindevangsparken",
+    "species": "Black Locust (Robinia pseudoacacia)",
+    "girth_cm": 292,
+    "height_m": 21.5,
+    "location": {
+      "address": "Lindevangsparken, southeastern corner, Frederiksberg",
+      "latitude": 55.67983,
+      "longitude": 12.5117,
+      "neighbourhood": "Frederiksberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1861, position verified 12-06-2023: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1861"
+    ],
+    "access": "Free, open public park (Lindevangsparken).",
+    "transport": "Peter Bangs Vej station (Copenhagen Metro, M1/M2), about 5-10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: register-only, no independent second source found for this individual tree. Large bark wound on the south side per the register's legend. Single-stemmed."
+  },
+  {
+    "id": "cop_039",
+    "name": "The Cherry Avenue of Bispebjerg Kirkegard",
+    "species": "Japanese Flowering Cherry 'Accolade' (Prunus 'Accolade')",
+    "age_estimate": "planted 1992, so about 34 years old",
+    "age_min": 30,
+    "age_max": 36,
+    "age_basis": "source",
+    "location": {
+      "address": "Bispebjerg Kirkegard, the cherry avenue (Kirsebaeralleen)",
+      "latitude": 55.71259,
+      "longitude": 12.52271,
+      "neighbourhood": "Bispebjerg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 889, position verified 21-04-2016: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=889",
+      "Kristeligt Dagblad, reporting that thousands visit the cherry avenue at Bispebjerg each spring: https://www.kristeligt-dagblad.dk/bagsiden/tusinder-besoeger-kirsebaeralleen-paa-bispebjerg",
+      "TV 2 Kosmopol, reporting the avenue drew an expected 150,000 visitors during its 2026 bloom: https://www.tv2kosmopol.dk/koebenhavn/se-billederne-kirsebaertraeer-blomstrer-paa-bispebjerg-forventer-150000-besoegende",
+      "migogkbh.dk, which gives the avenue's planting history: replaced in 1992 an earlier elm avenue lost to Dutch elm disease, and today comprises around 43 Prunus 'Accolade' trees: https://migogkbh.dk/nu-springer-kirsebaeralleen-ud/"
+    ],
+    "access": "Free, the cemetery is open to the public in daylight hours; the avenue draws very large crowds during its bloom and is best visited outside peak bloom weekends if a quiet walk is wanted.",
+    "transport": "Norrebro station (S-train), about 20 minutes on foot, or bus 6A/350S to the cemetery gate on Frederikssundsvej.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "SHIPS AS AN ENSEMBLE, not a single trunk: about 43 Prunus 'Accolade' trees planted together in 1992 as a formal avenue, replacing an earlier elm avenue killed by Dutch elm disease. This passes the compact-famous-ensemble test: it is a single continuous avenue with one obvious place to stand (walking its length), it is famous specifically for being exactly this (an avenue, not individual trees), and it draws well-documented crowds (100,000-150,000 visitors during peak bloom weeks per press). No trunk girth or height applies to an avenue entry; do not invent one. Ornamental cultivar, does not fruit. Blooms normally in the second half of April per the register; press sources say mid-April. best_time set to April flowering."
+  },
+  {
+    "id": "cop_040",
+    "name": "The Caucasian Oak of Vestre Kirkegard",
+    "species": "Caucasian Oak (Quercus macranthera)",
+    "girth_cm": 298,
+    "height_m": 20.5,
+    "location": {
+      "address": "Vestre Kirkegard, section I (afsnit I)",
+      "latitude": 55.66069,
+      "longitude": 12.53135,
+      "neighbourhood": "Valby"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1369, position verified 06-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1369",
+      "Wonderful Copenhagen's cemetery map and guide to Vestre Kirkegard's selected graves and botany, marking this tree as tree number 2 on its own overview map, an independent published guide to the cemetery's notable specimens: https://wonderfulcphdotcom.files.wordpress.com/2013/10/kort-over-vestre-kirkegaard-1.pdf",
+      "Kobenhavns Kommune's own page on Vestre Kirkegard, confirming it is open to the public year-round (07:00-19:00 in winter, 07:00-22:00 in summer) and welcomes recreational use: https://www.kk.dk/brug-byen/byens-groenne-oaser/koebenhavns-kirkegaarde/vestre-kirkegaard"
+    ],
+    "access": "Free, the cemetery is open to the public daily, 07:00-19:00 in winter (October-March) and 07:00-22:00 in summer (April-September).",
+    "transport": "Sjaelor station (S-train), a short walk along the cemetery's southern edge, or Valby station a little further to the north-west.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED on the measurement, not on existence: the register's headline girth is 2.98 m, but its own legend notes the tree is grafted onto a pedunculate oak rootstock and has a number of epicormic growth pads (vanrispuder) low on the trunk, which push the circumference at 1.3 m height to about 4.0 m at that irregular point. 298 cm is used here as the more representative clear-trunk figure; say in the story that the true grafted union is thicker and knobbly. Named tree number 2 on Wonderful Copenhagen's own botanical map of the cemetery, a genuinely independent guide."
+  },
+  {
+    "id": "cop_041",
+    "name": "The Service Tree of J.C. Jacobsens Have",
+    "species": "Service Tree (Sorbus domestica)",
+    "girth_cm": 318,
+    "height_m": 16,
+    "location": {
+      "address": "J.C. Jacobsens Have, Carlsberg Byen, 40 metres due north of the fountain",
+      "latitude": 55.66456,
+      "longitude": 12.53354,
+      "neighbourhood": "Carlsberg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 1360, position verified 02-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1360",
+      "Carlsberg Byen's own account of J.C. Jacobsens Have as J.C. Jacobsen's historic tree collection, opened to the public in 2009: https://www.carlsbergbyen.dk/om-carlsberg-byen/byrum-i-carlsberg-byen/jc-jacobsens-have"
+    ],
+    "access": "Free, open public park (J.C. Jacobsens Have), part of Carlsberg Byen.",
+    "transport": "Carlsberg station (S-train), about 10 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: as with the garden's other Carlsberg trees, the second source confirms the garden's general history but not this specific tree by name. Service tree (Sorbus domestica) is a genuine rarity in Denmark, a wild relative of the rowan that bears small pear- or apple-shaped fruit; the register's own legend simply calls it 'a large and beautiful tree'. Single-stemmed, healthy."
+  },
+  {
+    "id": "cop_042",
+    "name": "The Hungarian Oak of Bispebjerg Kirkegard",
+    "species": "Hungarian Oak (Quercus frainetto)",
+    "girth_cm": 419,
+    "height_m": 23.5,
+    "location": {
+      "address": "Bispebjerg Kirkegard, about 90 metres northwest of Nordre Kapel",
+      "latitude": 55.71527,
+      "longitude": 12.52195,
+      "neighbourhood": "Bispebjerg"
+    },
+    "verified_sources": [
+      "Dansk Traeregister, id 940, position verified 05-07-2017: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=940",
+      "Kobenhavns Kommune's own page on Bispebjerg Kirkegard, confirming public access and the cemetery's varied tree avenues: https://www.kk.dk/brug-byen/natur-og-groenne-omraader/koebenhavns-kirkegaarde/bispebjerg-kirkegaard"
+    ],
+    "access": "Free, the cemetery is open to the public in daylight hours.",
+    "transport": "Norrebro station (S-train), about 20 minutes on foot, or bus 6A/350S to the cemetery gate on Frederikssundsvej.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: the municipal cemetery page confirms general access but does not name this specific oak. Free-standing with a full, healthy crown per the register's legend (fritstaende og fuldkronet, sund). A different species from the register's several Pedunculate Oaks in this batch; Quercus frainetto is native to southeastern Europe, not Denmark, so this is a planted ornamental rather than a native survivor."
+  }
+]
