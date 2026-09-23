@@ -306,7 +306,7 @@
    "slug": "new-orleans",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 4
+   "trees": 6
   },
   {
    "city": "Cork",
@@ -398,13 +398,6 @@
    "trees": 20
   },
   {
-   "city": "Copenhagen",
-   "country": "Denmark",
-   "slug": "copenhagen",
-   "status": "published",
-   "trees": 16
-  },
-  {
    "city": "Coimbra",
    "country": "Portugal",
    "slug": "coimbra",
@@ -418,6 +411,13 @@
    "slug": "madrid",
    "status": "published",
    "trees": 17
+  },
+  {
+   "city": "Copenhagen",
+   "country": "Denmark",
+   "slug": "copenhagen",
+   "status": "published",
+   "trees": 42
   },
   {
    "city": "Warsaw",
@@ -479,7 +479,7 @@
    "country": "United States",
    "slug": "washington-dc",
    "status": "published",
-   "trees": 14
+   "trees": 15
   },
   {
    "city": "Tilburg",
@@ -1460,6 +1460,13 @@
    "trees": 1
   },
   {
+   "city": "Bad Homburg",
+   "country": "Germany",
+   "slug": "bad-homburg",
+   "status": "published",
+   "trees": 5
+  },
+  {
    "city": "Bansko",
    "country": "Bulgaria",
    "slug": "bansko",
@@ -1628,6 +1635,13 @@
    "city": "Fribourg",
    "country": "Switzerland",
    "slug": "fribourg",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Friedewald",
+   "country": "Germany",
+   "slug": "friedewald",
    "status": "published",
    "trees": 1
   },
@@ -1974,20 +1988,6 @@
    "slug": "zehdenick",
    "status": "published",
    "trees": 1
-  },
-  {
-   "city": "Friedewald",
-   "country": "Germany",
-   "slug": "friedewald",
-   "status": "published",
-   "trees": 1
-  },
-  {
-   "city": "Bad Homburg",
-   "country": "Germany",
-   "slug": "bad-homburg",
-   "status": "published",
-   "trees": 5
   }
  ]
 }
