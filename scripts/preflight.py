@@ -1301,6 +1301,44 @@ def check_photos_are_not_the_lead_twice():
     return out
 
 
+def check_a_permission_covers_the_photographer_it_names():
+    """A register hosts several photographers, and a permission covers one.
+
+    Hans Erik Lund gave us his own photographs on 2026-09-20, in those words:
+    "my pictures (c) Hans Erik Lund in www.dendron.dk/dtr". The Danish Tree
+    Register hosts other people's files in the same directories, credited on
+    the page and marked in the filename: HEL is his, GT and others are not. A
+    viewing pass on 2026-09-23 approved two photographs that were not his, one
+    credited to GT and one to Knud Ib Christensen, both of which would have
+    shipped under his name and his permission. Nothing would have gone red.
+
+    So: a photograph whose licence names a person must come from a file that
+    carries that person's marker, where the source marks it. Today that is
+    dendron.dk and the HEL marker, and the check is written to be widened
+    rather than to be clever, because the failure generalises. Any register
+    that hosts more than one photographer can do this to us, and the credit
+    line is the one thing a licence cannot be sloppy about (hard rule 4).
+
+    Removing this check needs Hidde.
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for t in d.get("trees", []):
+            for p in [t.get("photo") or {}] + (t.get("photos") or []):
+                url = p.get("url") or ""
+                lic = (p.get("license") or "") + " " + (p.get("attribution") or "")
+                if "dendron.dk" not in url:
+                    continue
+                if "hans erik lund" in lic.lower() and "HEL" not in url:
+                    out.append("%s/%s: the licence credits Hans Erik Lund but the file is not one of "
+                               "his (%s carries no HEL marker). The Danish register hosts other "
+                               "photographers; check the page's own 'Billede:' credit before using it."
+                               % (d.get("city"), t.get("id"), url.rsplit("/", 1)[-1]))
+    return out
+
+
 def check_every_submission_got_a_verdict():
     """A tree somebody sent in gets a written verdict, and Hidde can overrule it.
 
@@ -2233,6 +2271,7 @@ def main():
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
                 + check_every_submission_got_a_verdict()
+                + check_a_permission_covers_the_photographer_it_names()
                 + check_photos_are_not_the_lead_twice()
                 + check_one_photograph_per_tree()
                 + check_every_tree_names_a_source()

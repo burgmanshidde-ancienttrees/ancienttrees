@@ -18,6 +18,29 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-23 - photo_light called a well-lit oak backlit, and the fix is to measure the subject
+
+The Vorteegen of Dyrehaven, Hans Erik Lund's whole-tree photograph of an 8.5
+metre oak standing alone on grassland in leaf, scored POOR with "backlit: the
+sky is blown out and the subject is a silhouette". It is nothing of the kind.
+A third of that frame is flat white Danish overcast, which drags the
+whole-frame mean saturation to 0.136, while the oak itself is evenly lit and
+holds its autumn colour.
+
+The measure could not tell the two cases apart because both have a blown sky
+and both lose saturation to it. What separates them is the rest of the frame:
+in a real silhouette it is dark, under overcast it is not. `score()` now also
+returns `subject` and `subject_colour`, the mean luma and saturation of the
+pixels that are NOT blown, and the backlit verdict requires one of them to be
+low. Checked both ways on a synthetic pair: a black shape against white sky
+still reads POOR at subject luma 48, a mid-green tree against the same sky does
+not.
+
+This was never going to be a one-off. Northern European tree photography is
+mostly overcast, and the rule that a POOR score ends the matter meant the
+measure was quietly rejecting the good whole-tree photographs of exactly the
+veterans we most want.
+
 ## 2026-09-23 - Friedewald and Bad Homburg, from reader submissions
 
 **Friedewald: 1 tree, 0 flagged, 0 photos missing.** The Hammundeseiche,

@@ -134,12 +134,30 @@ def score(path):
             dark += 1
     mean = sum(lumas) / n
     var = sum((y - mean) ** 2 for y in lumas) / n
+    # The SUBJECT, meaning everything that is not sky: the mean luma and the
+    # mean saturation of the pixels that are not blown out. This is what tells
+    # a real backlit silhouette from a tree photographed under a flat white
+    # overcast, and without it the two are indistinguishable. Both have a
+    # blown sky, and in both the sky drags the whole-frame saturation down.
+    # In a silhouette the rest of the frame is dark; under overcast it is not.
+    #
+    # Written 2026-09-23 after the measure called Vorteegen POOR. A third of
+    # that frame is white Danish sky, so colour read 0.136, while the oak
+    # itself stood in even light with its autumn colour intact. Rejecting it
+    # would have cost us the only whole-tree photograph of an 8.5 metre oak,
+    # and northern European tree photography is mostly overcast, so this was
+    # never going to be a one-off.
+    keep = [(y, sa) for y, sa in zip(lumas, sats) if y <= 245]
+    subject = sum(y for y, _ in keep) / len(keep) if keep else 0.0
+    subject_colour = sum(sa for _, sa in keep) / len(keep) if keep else 0.0
     return {
         "brightness": round(mean, 1),
         "contrast": round(var ** 0.5, 1),
         "colour": round(sum(sats) / n, 3),
         "blown": round(blown / n, 3),
         "dark": round(dark / n, 3),
+        "subject": round(subject, 1),
+        "subject_colour": round(subject_colour, 3),
     }
 
 
@@ -148,7 +166,8 @@ def verdict(s):
     bad = []
     if s["colour"] < GREY_COLOUR:
         bad.append("almost colourless, reads as black and white")
-    if s["blown"] > BLOWN_SHARE and s["colour"] < 0.18:
+    if (s["blown"] > BLOWN_SHARE and s["colour"] < 0.18
+            and (s.get("subject", 0) < 90 or s.get("subject_colour", 0) < 0.12)):
         bad.append("backlit: the sky is blown out and the subject is a silhouette")
     if s["brightness"] < DIM_BRIGHTNESS:
         bad.append("underexposed")
@@ -190,8 +209,9 @@ def main():
         finally:
             if tmp:
                 os.unlink(tmp)
-        print("%-58s brightness %5.1f  contrast %5.1f  colour %.3f  blown %.3f"
-              % (a[-58:], s["brightness"], s["contrast"], s["colour"], s["blown"]))
+        print("%-58s brightness %5.1f  contrast %5.1f  colour %.3f  blown %.3f  subject %5.1f/%.3f"
+              % (a[-58:], s["brightness"], s["contrast"], s["colour"], s["blown"],
+                 s.get("subject", 0), s.get("subject_colour", 0)))
         print("    %s" % v)
         worst = max(worst, 2 if v.startswith("POOR") else 1 if v.startswith("WEAK") else 0)
     return worst
