@@ -890,6 +890,17 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .mine-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--moss); flex: none; }
 /* The answer we wrote back about a tree somebody sent us, on the card for that
    tree. A four-state label says where it stands; this says what happened. */
+/* Add a photo, on the tree's own page. Google Maps' shape: a contribution
+   offered on the place, not a form somewhere else. */
+.addphoto { margin-top: 0.6rem; }
+.addphoto-btn { min-height: 44px; padding: 0.6rem 1.1rem; border: none; border-radius: 999px;
+  background: var(--moss); color: #fff; font-family: var(--sans); font-size: 14px;
+  font-weight: 600; cursor: pointer; }
+.addphoto-btn.quiet { background: none; color: var(--moss); border: 1px solid var(--cream-dark);
+  padding: 0.55rem 1rem; }
+.addphoto-btn[disabled] { opacity: 0.6; cursor: default; }
+.addphoto-note { margin: 0.5rem 0 0; font-family: var(--sans); font-size: 13px;
+  line-height: 1.45; color: var(--ink-mid); }
 .mine-reply { margin: 0.35rem 0 0; font-family: var(--sans); font-size: 13px;
   line-height: 1.45; color: var(--ink-mid); }
 .acct-name { margin-top: 1.4rem; }
@@ -1561,6 +1572,20 @@ footer { border-top: 1px solid var(--cream-dark); }
 .suggest-form input, .suggest-form select, .suggest-form textarea { font-family: var(--sans); font-size: 14px; padding: 0.65rem 0.85rem; border: 1px solid var(--cream-dark); border-radius: 10px; background: #fff; }
 .suggest-form input:focus, .suggest-form select:focus, .suggest-form textarea:focus { outline: 2px solid var(--moss); outline-offset: 1px; }
 .suggest-form .go-btn { align-self: flex-start; cursor: pointer; border: none; font-family: inherit; }
+/* The photo row, which has to read as one of the form's fields rather than as
+   loose text with a system button under it. Same shape as .suggest-form label,
+   which it cannot be, because a label wrapping a hidden input is not clickable
+   in the way this control needs. */
+.sg-photo { display: flex; flex-direction: column; align-items: flex-start;
+  gap: 0.35rem; font-size: 13.5px; font-weight: 700; }
+.sg-photo-label { font-weight: 700; }
+.sg-photo .sg-hint { display: block; font-weight: 400; }
+.sg-pic-btn { min-height: 44px; align-self: flex-start; padding: 0.6rem 1.1rem;
+  border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff;
+  color: var(--moss); font-family: var(--sans); font-size: 14px; font-weight: 600;
+  cursor: pointer; }
+.sg-pic-btn:hover { border-color: var(--moss); }
+#sg-pic-name { font-weight: 400; }
 .sg-note { font-size: 13px; color: var(--ink-mid); min-height: 1em; }
 /* The thank-you, which takes the form's place rather than sitting under it. */
 .sg-done { font-family: var(--sans); font-size: 15px; line-height: 1.5;
