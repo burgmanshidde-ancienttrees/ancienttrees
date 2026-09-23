@@ -1,6 +1,76 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-23 - The cheapest park on his American list is live. City Park, New Orleans, and why the National Mall is still one short
+
+Hidde's ask, after the US top ten: put the cheapest parks on that list
+live. Measured against Contract H's five-tree gate, two were within reach
+and the rest need three to five new trees each. City Park is live. The
+National Mall gained a tree and is one short, and the reason is worth
+writing down rather than working around.
+
+**City Park, New Orleans, is a park page at five trees.** Two went in, both
+of them trees people already walk to. The **Suicide Oak** on Victory Avenue
+is one of the three named survivors of the forest that stood here before
+the city did, along with the McDonogh and the Anseman we already map, and
+its name is the reason most people find it: sixteen men took their own
+lives under it between the 1890s and the 1900s. The **Singing Oak** on the
+east side of Big Lake carries seven sets of wind chimes hung by Jim Hart,
+tuned to a pentatonic scale so the wind cannot play a wrong note, and at
+about 125 years it is the youngest tree we map in New Orleans by four
+centuries. It earns the walk on what it does rather than on its age, which
+is the test this corpus applies.
+
+Both pins say `approximate` and both say so for the same honest reason:
+nobody publishes a coordinate for either, so the pin sits on the junction
+or the shore the sources name and the recognition line does the rest. The
+Singing Oak's is easy, it is the tree you can hear. The Suicide Oak's is
+the one low branch that leaves the trunk, bends to the grass across the
+walkway and rises again on the far side.
+
+**The National Mall is at four and I could not honestly make it five.** The
+new tree is the **Smithsonian Witness Elm**, accession number 1 in the
+Smithsonian Gardens Tree Collection, five and a half metres round with a
+crown thirty five metres across, standing at 9th and Constitution since
+long before the museum behind it opened in 1910. Its age is an open
+question we publish as one: the marker at its foot and the Smithsonian's
+own magazine say planted around 1850, Smithsonian Gardens says 200 or more
+years, and a planting record and a growth estimate disagreeing by half a
+century is not something to average.
+
+The fifth tree does not exist yet at our bar. What does exist, and what I
+refused, are two ways of faking it. Union Square's bur oak and Botanic
+Garden elm sit 700 metres from the Mall's group and belong to no park in
+our data; relabelling them would have taken the page over the gate in one
+edit, and they are Capitol Grounds rather than Mall. The second mulberry
+beside the witness mulberry is a separate trunk and our own entry already
+describes the pair, so splitting it in two is padding with extra steps.
+The Mall's remaining candidates are the 1930s elm rows, which are an
+avenue rather than a point, so this waits for a tree rather than for an
+argument.
+
+**What the hunt turned up on the side.** A Chinese hackberry at the
+Reynolds Center, planted 1900-1910 and called one of the oldest and
+largest of its species in the district by Smithsonian Gardens, is now a
+lead in `data/leads/washington-dc.json`: not on the Mall, single-sourced,
+and the first Celtis we would map in the US. And the Washington Monument
+witness mulberry came up in a search headline reading as a fallen tree,
+which is rung-3 work if true. It is not: it fell in May 2019, the Park
+Service propped it and it was standing on its crutch at the last on-site
+account we can cite. Our page already says exactly that.
+
+Counts corrected on both city pages while adding, because the check that
+catches this only catches the patterns it knows: New Orleans said four
+throughout, Washington said fourteen in its intro and **ten** in its
+access FAQ, which had been stale since the city passed ten trees.
+
+This sandbox reaches no source at all, so every fact above came from search
+result summaries and is recorded as such in each tree's `verify_notes`,
+with the pins to tighten. WebFetch, Wikimedia, Nominatim, Overpass and
+Wikidata all return 403 CONNECT here; the CI runner does not have that
+limit, so a night run can open all eight pages and tighten three pins
+cheaply.
+
 ## 2026-09-19 - Which parks have volume: measured, and it is a long tail. Plus three pages no keyword could see
 
 Hidde asked the sharp version of yesterday's question: which parks have
