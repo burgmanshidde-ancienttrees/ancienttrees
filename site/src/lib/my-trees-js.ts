@@ -187,9 +187,9 @@ export const MY_TREES_JS = `
     if (!token) { clearSent(); return; }
     // NOT the rows the app's own camera writes beside a sighting. Adding a
     // tree in the app posts a submissions row carrying that sighting's uuid
-    // (CollectSheet.swift, `from: "app:collect"`), so counting it here
+    // (CollectSheet.swift, from: "app:collect"), so counting it here
     // would put every photographed tree on this lane twice, which is the
-    // exact duplication the 2026-09-11 fix took out. `page` starting with
+    // exact duplication the 2026-09-11 fix took out. "page" starting with
     // app is the same discriminator contributor_reply.py uses.
     fetch(SB + '/rest/v1/submissions'
           + '?select=id,kind,city,tree,outcome,reply_text,created_at,page'
