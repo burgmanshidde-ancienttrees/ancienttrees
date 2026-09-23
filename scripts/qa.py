@@ -137,6 +137,49 @@ STRATEGY_IN_WORKFLOW = [
 ]
 
 
+def check_run_prompt_forbids_compound_commands():
+    """The night-run prompt must keep telling runs to send one command per Bash
+    call.
+
+    The ratchet, on the third showing of one lesson. The tool allowlist matches
+    the WHOLE command string, so a chain is refused even when every binary in it
+    is allowed, and a shell keyword matches nothing at all. This has now cost
+    three separate rounds of work: the 2026-08-13 widening, the 2026-08-20
+    widening that explicitly recorded "guessing which binaries to add has now
+    been tried once and did not work", and 2026-09-19, when the record was found
+    to have been naming the wrong word for a month. Measured that day: 1,394 of
+    14,692 turns across seven days were refused commands, one in eleven, and
+    `for` appeared in 37 of the 39 runs.
+
+    The fix that has ever worked here is the prompt, not the list: in August,
+    changing `(cd site && ...)` to `npm --prefix site` is what brought the night
+    runs back. So what this refuses is that instruction going missing again,
+    which is the documented failure mode for anything living in a workflow
+    prompt (CLAUDE.md's own note on the 2026-08-11 city order still being
+    executed on 08-12).
+
+    A presence check on purpose. Flagging compound commands by pattern would
+    fire on the prompt's own worked examples of what not to type, and a check
+    that cries wolf on its own documentation is a check somebody deletes.
+
+    Removing this needs Hidde."""
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    path = root / ".github" / "workflows" / "nightly.yml"
+    if not path.is_file():
+        return out
+    low = path.read_text(encoding="utf-8").lower()
+    if "one command per bash call" not in low:
+        out.append(
+            ".github/workflows/nightly.yml: the prompt no longer tells runs to "
+            "send ONE COMMAND PER BASH CALL. The allowlist matches the whole "
+            "command string, so a chain is refused even when every binary in it "
+            "is allowed; on 2026-09-19 that was one turn in eleven. Put the rule "
+            "back, or change this check with Hidde."
+        )
+    return out
+
+
 def check_no_strategy_in_workflows():
     out = []
     wf = Path(__file__).resolve().parent.parent / ".github" / "workflows"
@@ -2086,6 +2129,7 @@ def main():
         failures.append(f"{page.relative_to(DIST)}: orphan, no page on the site links to it")
 
     failures += check_no_strategy_in_workflows()
+    failures += check_run_prompt_forbids_compound_commands()
     failures += check_app_downloads_are_their_own_block()
     failures += check_one_city_order()
     failures += check_copy_test_renders()
