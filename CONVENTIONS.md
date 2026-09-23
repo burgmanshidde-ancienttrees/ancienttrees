@@ -1339,12 +1339,28 @@ now checked.
 **Both emit `hreflang` for every locale of the page**, including
 `x-default`, which we also already do.
 
-**What we do that they do not, and it is defensible.** Our language link is
-inline on the page itself ("Esta página también está disponible"), written in
-the target language, rather than a site-wide control in the footer. That serves
-a reader who landed on the English page from Google and would prefer their own,
-which is our actual traffic pattern. The two are not exclusive and the footer
-control is the one we lack.
+**What we did that they do not, and it was NOT defensible. Corrected
+2026-09-19.** This paragraph used to argue for an inline language link on the
+page itself, on the ground that a reader who landed on the English page from
+Google would prefer their own. The reasoning was fine and the PLACEMENT was
+not: on a city page it sat directly under the intro, above the first tree, so
+seven language names in six alphabets took the line between the lede and the
+first photograph. Hidde, seeing it on /rome: "I don't think it makes sense to
+give the translations this prime spot, that's not conventional."
+
+He is right, and this entry had already said so two paragraphs up: neither
+reference puts it above the content, in the header, or anywhere but last. The
+inline argument survives only in the sense that the control must EXIST on the
+page, which `hreflang` alone does not give a human.
+
+**So: last item in the footer everywhere, and on a page with no footer, last
+item in the sheet.** Three page types set `footer={false}` because the split
+map layout has no room for one (`/[city]`, the translated city page, and
+`/explore`), and on those the bottom of the sheet IS the footer. That is the
+`.panel-lang` block. The old exception ("the map has no footer, so it sits
+inline here, the same exception the city pages already make") is deleted rather
+than narrowed: an exception that reproduced itself across three page types was
+a default wearing an exception's clothes.
 
 **The gap this lookup was done for.** A translated page of ours sits inside an
 English frame: on `/es/seville` the navigation still reads Map, Cities,
