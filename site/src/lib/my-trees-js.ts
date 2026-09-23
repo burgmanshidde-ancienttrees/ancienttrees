@@ -173,7 +173,13 @@ export const MY_TREES_JS = `
       // The answer we wrote back, where there is one. A label says which of
       // four states it is in; this says what actually happened to the tree,
       // and it is already on the row the person is allowed to read.
-      + (r.reply_text ? '<p class="mine-reply">' + esc(r.reply_text.split('\n')[0]) + '</p>' : '')
+      // '\\n' and not '\n': this whole file is ONE TypeScript template
+      // literal, so a single backslash is consumed here and the page receives
+      // a real newline inside a string literal, which is a syntax error that
+      // makes the browser drop the entire script tag. That is the fault
+      // check_inline_scripts_parse was written for on 2026-09-18, caught here
+      // by that check before it reached anybody.
+      + (r.reply_text ? '<p class="mine-reply">' + esc(r.reply_text.split('\\n')[0]) + '</p>' : '')
       + '</article>';
   }
 
