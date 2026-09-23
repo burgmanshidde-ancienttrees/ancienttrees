@@ -16678,6 +16678,25 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-23T19:18:29+00:00",
+   "date": "2026-09-23",
+   "run_id": "35908399385",
+   "minutes": 44.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 398,
+   "denials": 14,
+   "denials_source": "permission_denials: Bash(? ; while ; do ; ? ...), Bash(cat ; echo ; env | grep ...), Bash(date ; ps), Bash(env | grep | sed), Bash(for ; do ; import ; d ...), Bash(for ; do ; then ; break ...), Bash(free ; echo ; ps | head), Bash(grep | grep | head ; echo ...), Bash(grep | xargs ; python3 ; import ...), Bash(ls | head && cat | head), Bash(ps), Bash(python3 ; echo ; cat)",
+   "ended": "success",
+   "tokens": 18879005,
+   "claims_held": [],
+   "commits": 1,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
