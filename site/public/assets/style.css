@@ -1,3 +1,15 @@
+/* HIDDEN MEANS HIDDEN, and it has to be said with !important.
+   The `hidden` attribute is display:none from the browser's own sheet, which
+   any class here with its own `display` beats. That has now cost four visible
+   faults: the waitlist form sitting under its own confirmation, two dialog
+   rules, and on 2026-09-23 the contribute form, where a tree tip that had in
+   fact been saved left the button reading "Sending..." for ever with every
+   field still full. The first outside contributor met that one, and sent the
+   same oak fourteen times.
+   So it is fixed once, here, for every element on the site rather than for the
+   class that happened to be caught. An element that must stay visible while
+   carrying the attribute does not exist; use a class. */
+[hidden] { display: none !important; }
 /* Gabarito, served from our own origin instead of fonts.googleapis.com.
    Until 2026-08-16 Base.astro carried the Google Fonts <link>, which is a
    render-blocking stylesheet on a host that is not ours: the browser had to
@@ -789,6 +801,10 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .mine-state { display: flex; align-items: center; gap: 7px; margin: 0.35rem 0 0;
   font-family: var(--sans); font-size: 12.5px; color: var(--ink-mid); }
 .mine-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--moss); flex: none; }
+/* The answer we wrote back about a tree somebody sent us, on the card for that
+   tree. A four-state label says where it stands; this says what happened. */
+.mine-reply { margin: 0.35rem 0 0; font-family: var(--sans); font-size: 13px;
+  line-height: 1.45; color: var(--ink-mid); }
 .acct-name { margin-top: 1.4rem; }
 .acct-name label { display: block; font-family: var(--sans); font-size: 12px;
   text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); margin-bottom: 0.4rem; }
@@ -1435,6 +1451,11 @@ footer { border-top: 1px solid var(--cream-dark); }
 .suggest-form input:focus, .suggest-form select:focus, .suggest-form textarea:focus { outline: 2px solid var(--moss); outline-offset: 1px; }
 .suggest-form .go-btn { align-self: flex-start; cursor: pointer; border: none; font-family: inherit; }
 .sg-note { font-size: 13px; color: var(--ink-mid); min-height: 1em; }
+/* The thank-you, which takes the form's place rather than sitting under it. */
+.sg-done { font-family: var(--sans); font-size: 15px; line-height: 1.5;
+  color: var(--ink); background: var(--cream-dark); border-radius: 12px;
+  padding: 1rem 1.1rem; margin: 1.5rem 0; max-width: 34rem; }
+.sg-done a { color: var(--moss); }
 .report-btn { display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; margin: 4px 6px 0 0; padding: 5px 12px; border: 1px solid var(--cream-dark); border-radius: 999px; font-size: 12.5px; color: var(--ink-mid); text-decoration: none; }
 .report-btn:hover { border-color: var(--moss); color: var(--moss); }
 .subtle-suggest { font-size: 13px; color: var(--ink-light); }

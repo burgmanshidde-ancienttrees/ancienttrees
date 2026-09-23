@@ -64,6 +64,10 @@ const headExtra = ldScript(graph);
     <p class="sg-note" id="sg-note"></p>
     <p class="sg-fine">Sending needs a free account, so we can thank you, ask a question if we need to, and tell you what your tip changed. Privacy requests need no account.</p>
   </form>
+  <!-- THE CONFIRMATION LIVES OUTSIDE THE FORM, because the form is what gets
+       hidden. #sg-note sits inside it and is for the messages that belong
+       beside the button while the form is still on screen. -->
+  <p class="sg-done" id="sg-done" hidden></p>
 
   <p class="sg-fine">Writing about us? The numbers, image licences and caveats live on the <a href="/press">press page</a>.</p>
 
@@ -88,6 +92,7 @@ const headExtra = ldScript(graph);
 <script>
 (function() {
   var f = document.getElementById('suggest'), note = document.getElementById('sg-note');
+  var done = document.getElementById('sg-done');
   if (!f) return;
   var FIELDS = ['sg-kind', 'sg-city', 'sg-tree', 'sg-where', 'sg-why', 'sg-girth', 'sg-name'];
   // "4.2", "4,2", "4.2 m" and "420 cm" are the same trunk; a bare number under
@@ -185,9 +190,22 @@ const headExtra = ldScript(graph);
       if (r.ok) {
         f.hidden = true;
         try { localStorage.removeItem('at_contribute_draft'); } catch (e) {}
-        note.textContent = kindNow === 'privacy'
+        note.textContent = '';
+        // AND SAY WHERE IT WENT. Until 2026-09-23 this said only thank you,
+        // and the person had nowhere to go and look, which is half of why the
+        // first outside contributor sent one oak fourteen times. Their own
+        // account now lists what they sent and what happened to it, which is
+        // the iNaturalist and Google Maps pattern: you land on the list that
+        // holds the thing you just made (CONVENTIONS.md, "Landing after you
+        // have added something").
+        done.innerHTML = kindNow === 'privacy'
           ? 'Received. It reaches the people who run this site.'
-          : 'Thank you. Everything sent in is verified against independent sources; confirmed trees go live, and you will hear what your tip changed.';
+          : 'Thank you. We check every tip against independent sources before '
+            + 'anything goes live. You can follow this one on '
+            + '<a href="/account">your account</a>, and we will write to you '
+            + 'when it changes something.';
+        done.hidden = false;
+        done.scrollIntoView({ block: 'center', behavior: 'smooth' });
       } else {
         inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
         note.textContent = 'That did not go through. Try again in a moment.';

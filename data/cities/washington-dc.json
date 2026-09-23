@@ -2,9 +2,9 @@
   "city": "Washington DC",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Washington is a planned city, and its remarkable trees were planned with it, which means they come with paperwork most cities can only envy. The National Park Service keeps a register of witness trees, individuals that stood through history, and the Architect of the Capitol records plantings to the year. The fourteen below run from the two original 1912 cherry trees that started the Tidal Basin tradition to a bur oak older than the memorial it shades. Nine sit on or near the Mall and Capitol grounds, one walk apart; all fourteen are free.",
+  "intro": "Washington is a planned city, and its remarkable trees were planned with it, which means they come with paperwork most cities can only envy. The National Park Service keeps a register of witness trees, individuals that stood through history, and the Architect of the Capitol records plantings to the year. The fifteen below run from the two original 1912 cherry trees that started the Tidal Basin tradition to a bur oak older than the memorial it shades. Ten sit on or near the Mall and Capitol grounds, one walk apart; all fifteen are free.",
   "meta_description": "Washington DC's remarkable trees keep federal paperwork: the two original 1912 Tidal Basin cherries, a bur oak at the Grant Memorial, and more, mapped.",
-  "question_meta": "The oldest documented tree in Washington DC is the Grant Memorial Bur Oak on the Capitol grounds. Its story, and thirteen more remarkable trees nearby.",
+  "question_meta": "The oldest documented tree in Washington DC is the Grant Memorial Bur Oak on the Capitol grounds. Its story, and fourteen more remarkable trees nearby.",
   "question_answer": "The oldest documented tree in central Washington DC is the Grant Memorial Bur Oak in Union Square, at the foot of the Capitol, which predates the memorial landscape laid out around it. The city's biggest tree, and possibly its oldest overall, is the champion chestnut oak in Battery Kemble Park.",
   "question_context": "Age and documentation are different things in Washington, and the distinction shapes this whole list. Most cities on this site guess at their oldest tree from girth and legend; Washington can often simply look it up. The Architect of the Capitol has recorded plantings on the Capitol grounds since the Olmsted landscape was laid out, which is how the Grant Memorial Bur Oak's seniority over its own memorial is a matter of record rather than estimate. The National Park Service goes further and keeps a formal register of witness trees, individuals that stood through documented history, from the mulberry that predates the Washington Monument's completion to the elm whose cuttings became the disease-resistant Jefferson cultivar planted across the country. Even the champion chestnut oak in Battery Kemble Park, the city's largest tree, carries an official co-champion designation with measurements behind it. None of these trees rivals a European yew for age. What they offer instead is certainty, and for a project built on verification, a 150-year-old tree with a planting ledger can be a better tree than a 500-year-old one with a story.",
   "faq": [
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Washington DC's remarkable trees free to visit?",
-      "a": "All ten on this list are free. Eight stand on public federal ground on or near the National Mall and Capitol grounds; the champion chestnut oak stands in Battery Kemble Park, a free city park in the northwest."
+      "a": "All fifteen on this list are free. Ten stand on public federal ground on or near the National Mall, the Capitol grounds and the Tidal Basin. The rest are in the National Arboretum, Battery Kemble Park, Montrose Park, Dumbarton Oaks Park and the grounds of Frederick Douglass's house, none of which charges to walk in."
     },
     {
       "q": "When should I visit the Tidal Basin cherries?",
@@ -514,6 +514,41 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by two acres of smooth grey beech trunks you walk through before the park proper starts. It stands at the Lovers' Lane entrance gate, in the northeast corner of Dumbarton Oaks Park."
+    },
+    {
+      "id": "wdc_015",
+      "name": "The Smithsonian Witness Elm",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "somewhere between 175 and 210 years, depending which account you take",
+      "age_min": 175,
+      "age_max": 210,
+      "location": {
+        "address": "National Museum of Natural History grounds, north end of the Butterfly Habitat Garden, 9th Street and Constitution Avenue NW, Washington, DC",
+        "latitude": 38.89255,
+        "longitude": -77.02435,
+        "neighbourhood": "National Mall (Natural History Museum grounds)"
+      },
+      "story": "The Smithsonian catalogues this tree the way it catalogues everything else. It is accession number 1 in the Smithsonian Gardens Tree Collection, the first of roughly 1,900 living specimens held as museum objects, and it stood on this corner long before the museum behind it opened in 1910.\n\nThe measurements are why it holds that number. Five and a half metres round, about twenty six metres up, and a crown thirty five metres across, on a species that the century after its planting nearly wiped out. Dutch elm disease reached Washington in 1950 and took most of the American elms on the Mall over the following forty years. This one kept going, and the Smithsonian's gardeners call it the Witness Elm for everything that has passed it on its way between the White House and the Capitol.\n\nIts age is an open question, and the two answers come from different kinds of evidence. The sign at its foot and the Smithsonian's own magazine both say planted around 1850. Smithsonian Gardens, which owns it, calls it more than two hundred years old, which would have it here before the British burned the city in 1814. A planting record and a growth estimate disagree by half a century and we have not resolved it, so the page gives both.",
+      "verified_sources": [
+        "https://gardens.si.edu/collections/plants/trees/ (Smithsonian Gardens Tree Collection: tree #1, at 9th Street and Constitution Avenue at the north end of the Butterfly Habitat Garden, 68 inches diameter, 17.75 feet circumference, 85 feet tall, estimated 200+ years)",
+        "https://www.smithsonianmag.com/blogs/national-museum-of-natural-history/2022/04/28/how-a-historic-smithsonian-elm-thrives-over-150-years-after-its-planting/ (Smithsonian Magazine, 2022: planted around 1850, before the museum opened in 1910, and the Witness Elm name)",
+        "https://www.hmdb.org/m.asp?m=113994 (the marker standing at the tree, 'The American Elm that Grew Along with America')",
+        "https://caseytrees.org/2022/11/witness-trees-that-are-living-history/ (Casey Trees, independent write-up: trunk circumference 17.75 feet, crown spread 116.5 feet, and the tree's place among the city's witness trees)"
+      ],
+      "access": "Free, fully public. Stands in the Butterfly Habitat Garden along Constitution Avenue, open ground beside the museum, no ticket and no gate.",
+      "transport": "About 8 min walk from Federal Triangle or Archives Metro; the museum's Constitution Avenue side, at the 9th Street corner.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "girth_cm": 541,
+      "height_m": 26,
+      "how_to_recognise": "You can recognise it by the size: a trunk five and a half metres round under a crown thirty five metres wide, far bigger than anything near it. It stands at the 9th Street corner of the Butterfly Habitat Garden.",
+      "verify_notes": "Added 2026-09-23. Age is left as a band because the sources genuinely disagree: the marker and Smithsonian Magazine say planted around 1850, Smithsonian Gardens says 200+ years. Girth 17.75 ft and diameter 68 in are Smithsonian Gardens' own figures; height is given as 85 ft by them and 80 ft by Casey Trees, recorded here as about 26 m. Pin is the named street corner rather than a published coordinate, so it is marked approximate. Sources were read through search result summaries: this sandbox cannot fetch pages, so a later pass should open all four."
     }
   ]
 }
