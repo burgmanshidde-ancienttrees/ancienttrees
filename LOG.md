@@ -10,6 +10,41 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-24 (session) - The contribute flow asks for the account first, and the postbox is shut
+
+**The sign-in overlay opens by itself.** Anybody reaching the add-a-tree flow
+without an account now meets it under "You need an account to add a tree", on
+the website and in the app. Hidde's call ("dramatic approach"), and it takes
+the Google Maps convention whole: that product will not show a signed-out
+person the Contribute tab at all, and iNaturalist makes signing up step one.
+It SUPERSEDES the softer half of the 2026-08-21 ruling, which was that the
+form is fillable by anybody and only sending needs the account. The form still
+stands behind the overlay and the overlay still closes, and a privacy request
+never triggers it. The first attempt moved the SENTENCE to the top of the form
+instead; his answer was the useful one, "that one sentence noone will read".
+
+**The postbox needs an account in the DATABASE now, not in JavaScript.** He
+found it: "i can suggest a tree without logging in." The rule had stood since
+2026-08-21 and lived only in the form's script, so the publishable key posted
+rows all along. It took two passes, because RLS policies are permissive and OR
+together: the open one was made in the dashboard in July under a name no file
+here knows, so the first policy changed nothing. The SQL drops every policy on
+that table that can permit an insert, by shape, then creates ours. Verified
+against production: anonymous tree 401, anonymous privacy request 201, forged
+user_id 401.
+
+**Two checks on the English a reader sees**, which had none of any kind.
+scripts/spellcheck.py refuses a push on a misspelt word, in the pre-push hook
+and never in CI (779 false alarms on its first run, 0 after scoping it to
+English, teaching it inflections, and one honest pass over the 25 left).
+review.yml gains a Monday reading duty for what no script can see, which is
+the error that started it: "ask a question if we need one" is five correctly
+spelled words. Both boundaries were measured rather than claimed.
+
+**And the first outside contributor got his answer**, plus a follow-up asking
+whether the form behaves for him now. A mail may no longer offer a feature
+Kit/Launch.swift hides, after one of mine promised him a walk.
+
 ## 2026-09-24 - Trieste to 36 trees, 21 submissions judged, a cross-language gap closed, and a stuck-halfway rung-2 fix
 
 **Rung 1, submissions.** Judged 21 backlogged reader-submission leads with no written verdict (2 stale ones plus 19 more that `preflight.py` flagged), all photos looked at directly. Two are worth chasing: a veteran tree with its own interpretive signboard (no location yet) and a heavily iron-braced temple tree in what looks like the Nigatsu-do precinct (reader couldn't say which tree it was, the exact recognition-line problem CLAUDE.md already documents). Several turned out to be the same visit as the already-resolved Cantonspark, Baarn pin correction, and two were not trees at all (accidental sends). All verdicts are in `data/judgements.json` for Hidde to disagree with.
