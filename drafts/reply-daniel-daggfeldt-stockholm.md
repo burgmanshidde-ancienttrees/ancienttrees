@@ -23,11 +23,19 @@ address.
 - **Both his corrections are applied** and the story is back under 250 words.
   He says he found nothing else wrong on the page, which is the first time
   anybody has audited one of ours.
-- **He has not been to Prague yet.** "A trip coming up in a couple of weeks",
-  so he planned with it rather than walked with it. The question is worded to
-  say so; asking how he experienced the city would read as not having listened.
-  Prague is 21 trees, 24th deepest of 565 places, so what he finds missing
-  there is worth more than a compliment.
+- **He HAS been to Prague by now.** He wrote on 7 September that the trip was
+  "coming up in a couple of weeks", so the wording changed on 2026-09-24: the
+  earlier draft asked how the planning went, and asking that now would read as
+  not having listened the other way round. Prague is 30 trees with 21
+  photographs, so what he found missing there is worth more than a compliment.
+- **The app invitation is folded into that question rather than added as a
+  second ask** (Hidde, 2026-09-24: "lets encourage him to use the app to add
+  photos and learn from his experience"). It is honest to ask now and it was
+  not in early September: CollectSheet says "Your photograph can appear on the
+  tree's page", so a photograph he sends is covered by what he was told when he
+  sent it. He is a VETcert arborist walking a foreign city with our map open,
+  which is the exact person the four verbs were written for, and what he says
+  about that walk is worth more than the photographs.
 - **Tina Axelsson is worth more than the tree.** She has photographed all of
   these and Stockholm has three photographs across six trees. Nothing ships
   from her until there is a licence we can record: either she names one, or she
@@ -52,11 +60,10 @@ Thanks, this is the mail I hoped for. Valkasken is live and both your
 corrections to the Prince Eugen oak are in:
 https://ancienttrees.app/stockholm/valkasken
 
-Good to hear you used it to plan Prague. What did you think of it, and was
-anything missing?
-
-We put the app on the App Store a week ago and I would like to hear what you
-make of that as well:
+You will have been to Prague by now. How did that go, and did you find trees
+we are missing there? The app went on the App Store in the meantime, and you
+can add a tree to the map straight from it with a photograph, which is the
+quickest way to get anything you found onto the page:
 https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
 
 Tina, Daniel says you have photographed most of these. I would love to put a
