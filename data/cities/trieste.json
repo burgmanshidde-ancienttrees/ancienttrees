@@ -2,8 +2,8 @@
   "city": "Trieste",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Trieste holds Italy's densest cluster of registered monumental trees, 48 by the city's own count. Six stand within three hundred metres in the park an archduke planted on a limestone headland, testing conifers from California and a holm oak from the Mediterranean. Four more grow in a public garden a botanist mayor planted himself. Four, two bagolari and two elms, stand across the old city and the hill of San Giusto. The rest stand alone or in pairs: Aleppo pines on a hillside, a sinkhole oak on the karst, a chestnut at Opicina, a maple and a lime at Basovizza.",
-  "meta_description": "Twenty remarkable trees in Trieste across seven walks: Maximilian's Californian conifers, a karst sinkhole oak, and a national memorial's maple.",
+  "intro": "Trieste holds Italy's densest cluster of registered monumental trees, 48 by the city's own count. Twelve stand within three hundred metres of each other in the park an archduke planted on a limestone headland, testing conifers from California. Twelve more, mostly London planes, grow in a public garden a botanist mayor planted in 1854. Four, two bagolari and two elms, stand across the old city and San Giusto. The rest stand alone or in pairs: pines, a sinkhole oak, a chestnut at Opicina, a maple and lime at Basovizza, a university oak, a plane on the road to Miramare.",
+  "meta_description": "Thirty-six remarkable trees in Trieste: Maximilian's Californian conifers, a botanist mayor's planes, and a karst sinkhole oak.",
   "question_meta": "The oldest tree in Trieste is the London plane at the Boschetto roundabout on Viale al Cacciatore, over 200 years old and older than any park in the city.",
   "question_answer": "The oldest tree in Trieste is the London plane standing at the Boschetto roundabout on Viale al Cacciatore, which the municipality puts at over 200 years. That makes it older than every public garden in the city, including the Giardino Pubblico laid out in 1854 and the park at Miramare begun in 1856. It is five metres round the trunk and twenty-five metres tall. The largest tree in Trieste is a different plane, in the Giardino Pubblico, at 542 centimetres of girth and about 180 years old.",
   "question_context": "Nothing in Italy's official record of monumental trees will tell you a tree's age. The national MASAF register lists 47 protected trees in the comune of Trieste with species, girth, height and a coordinate, and the regional Friuli Venezia Giulia decree that feeds it adds a place name and the legal reason for each designation, but neither carries an age field or any note of whether a tree is still healthy. Every date on this page therefore comes from elsewhere: from the municipality's own survey of its 48 oldest trees, which puts the Viale al Cacciatore plane above 200 years and the great plane of the Giardino Pubblico near 180, and from the founding dates of the gardens themselves. Those dates are firm. Muzio de Tommasini, botanist and podesta, began the public garden in 1854 on land bought from Benedictine nuns and planted the planes himself. Archduke Maximilian of Habsburg started the Miramare park in the spring of 1856 and kept ordering plants for it even after he had left for Mexico. A tree in either place is as old as the garden around it or a little younger, which is the honest way to date most of this list.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "In seven walks, not one. Six stand inside three hundred metres of each other in the Miramare park, eight kilometres up the coast: four conifers and, along the same paths, a holm oak and an Aleppo pine. Four more are spread along about a kilometre from the Giardino Pubblico up Via Giulia to the Boschetto roundabout. A hackberry in Piazza Hortis, an elm in the Piazzale Rosmini garden, a second elm at the Civico Museo Sartorio and a second hackberry up on the cathedral hill of San Giusto stand across Citta Vecchia, San Vito and San Giusto. Two Aleppo pines share the hillside park at Villa Revoltella. A Turkey oak stands alone over a sinkhole in the Percedol nature reserve on the karst plateau. A horse chestnut stands alone at Opicina, a tram ride from the centre. And a maple and a lime, a few hundred metres apart, stand in and beside the village of Basovizza near the Slovenian border."
+      "a": "In eight walks, not one. Twelve trees stand inside three hundred metres of each other in the Miramare park, eight kilometres up the coast: the castle's conifers, a holm oak and six Aleppo pines share the same paths. Twelve more, mostly London planes, cluster around the Giardino Pubblico off Via Giulia, the garden its own 1854 founder planted. A hackberry in Piazza Hortis, an elm in the Piazzale Rosmini garden, a second elm at the Civico Museo Sartorio and a second hackberry up on the cathedral hill of San Giusto stand across Citta Vecchia, San Vito and San Giusto. Two Aleppo pines share the hillside park at Villa Revoltella. A Turkey oak stands alone over a sinkhole in the Percedol nature reserve on the karst plateau. A horse chestnut stands alone at Opicina, a tram ride from the centre. A maple and a lime, a few hundred metres apart, stand in and beside the village of Basovizza near the Slovenian border. And two more stand alone: a downy oak on the university campus, and a plane on the road up to Miramare."
     },
     {
       "q": "Do they cost anything to see?",
@@ -766,6 +766,593 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "tri_021",
+      "name": "The Downy Oak of the University Campus",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 150,
+      "girth_cm": 315,
+      "location": {
+        "address": "Via Licio Giorgieri, Giardini dell'Universita degli Studi di Trieste, 34127 Trieste",
+        "latitude": 45.660894,
+        "longitude": 13.796789,
+        "neighbourhood": "San Giovanni"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://www.ilpiccolo.it/cronaca/alberi-antichi-trieste-tutela-gootn505",
+        "https://ilregistrodeglialberi.it/3845-roverella-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, on the grounds of the University of Trieste's engineering campus (Via Licio Giorgieri). The campus streets and gardens are open, unfenced public ground; no gate or ticket",
+      "transport": "About 20 min by bus from Piazza Oberdan toward San Giovanni, then a short walk into the campus",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Of the forty-eight trees Trieste protects as monumental, one belongs to a university. Il Piccolo's survey of the list noted it in a single line, that the University of Trieste also owns a century-old oak, and that is still more or less all anybody has written about it. The tree is a downy oak, the native oak of the karst plateau that rises behind the city, and it stands in the grounds of the engineering campus off Via Licio Giorgieri in San Giovanni, on university land rather than in a public park.\n\nIt is bigger than the setting suggests. Italy's citizen tree register sent someone with a tape in October 2021, who measured the trunk at 3.15 metres round and the crown at fifteen metres tall, at exactly the point where the national and regional registers place it. For a species that usually grows as a scrubby, twisted tree on thin limestone soil, that is a serious girth.\n\nHow old it is, nobody has pinned down. \"Secolare\" is the only word on record, meaning over a century, and it is kept that loose here because the source keeps it that loose. If you know when it was planted, or what stood on this hillside before the campus, tell us.\n\nThis is working university ground, not a park: the campus streets are open and unfenced, so walk in, and treat it as the university's tree rather than a city garden's.",
+      "how_to_recognise": "You can recognise it by the trunk, 3.15 metres round on a fifteen-metre oak, the only oak on the university grounds that any register names. It stands on the engineering campus off Via Licio Giorgieri.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 15.0,
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_022",
+      "name": "The Second Redwood of Miramare",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "about 170 years, planted after 1856",
+      "age_min": 155,
+      "age_max": 172,
+      "girth_cm": 401,
+      "location": {
+        "address": "Parco del Castello di Miramare, Viale Miramare, 34151 Trieste",
+        "latitude": 45.703811,
+        "longitude": 13.712831,
+        "neighbourhood": "Grignano"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://cultura.gov.it/evento/i-giganti-verdi-del-parco-storico-di-miramare",
+        "https://ilregistrodeglialberi.it/3859-sequoia-sempreverde-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, the park is open daily. Only the castle charges admission",
+      "transport": "Bus 6 from Piazza Oberdan to Grignano, about 25 min, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Miramare has two protected coast redwoods, and this is the one that loses the argument. It measures 4.01 metres round and twenty-seven metres tall; its neighbour sixty-odd metres to the northeast, the park's headline redwood, is 4.25 metres round and thirty metres tall. Both were measured again in October 2021 by Italy's citizen tree register, which found this trunk at exactly the figure the national register gives.\n\nThey are here because of one experiment. When Archduke Maximilian of Habsburg began the park in the spring of 1856 on a bare limestone headland, he wanted to see which foreign trees would take to the Adriatic, and within its first decade the planting included conifers from the fog belt of northern California. Nobody dated this trunk individually, so its age of roughly 170 years is an inference from that campaign rather than a measurement, and it may be a little younger.\n\nWhat it has outlived is the man. Maximilian left Miramare to become Emperor of Mexico and was shot there in 1867, while redwoods that can live for two thousand years were barely taller than the castle's gardeners.\n\nStand between the two redwoods and compare the bark: soft, fibrous and red-brown on both, but this is the slimmer trunk and the lower crown.",
+      "how_to_recognise": "You can recognise it by the soft, fibrous bark of the smaller of Miramare's two redwoods, 4.01 metres round and 27 metres tall. It stands about four metres from the park's protected holm oak.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 27.0,
+      "verify_notes": "Height 27.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_023",
+      "name": "The Second Aleppo Pine of Miramare",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "about 130 years, planted after 1856",
+      "age_min": 115,
+      "age_max": 172,
+      "girth_cm": 368,
+      "location": {
+        "address": "Parco del Castello di Miramare, Viale Miramare, 34151 Trieste",
+        "latitude": 45.705078,
+        "longitude": 13.714186,
+        "neighbourhood": "Grignano"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://cultura.gov.it/evento/i-giganti-verdi-del-parco-storico-di-miramare",
+        "https://ilregistrodeglialberi.it/3854-pino-daleppo-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, the park is open daily. Only the castle charges admission",
+      "transport": "Bus 6 from Piazza Oberdan to Grignano, about 25 min, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The biggest of Miramare's six protected Aleppo pines is also the one nobody has put a date on. It measures 3.68 metres round the trunk and twenty-five metres tall, figures the national register gives and Italy's citizen tree register confirmed with its own tape in October 2021. The only pine of the six with a recorded age is a smaller one, 3.10 metres round, which that citizen register calculated at about 130 years. So the largest pine in the grove is dated here by its sibling and by the park itself: planted some time after the spring of 1856, when Archduke Maximilian began laying out Miramare on a bare limestone point, which puts it somewhere between about 115 and 170 years.\n\nAleppo pine is the Mediterranean's own survival specialist, named after the Syrian city and built for heat, salt wind and almost no soil, which is roughly what Maximilian's gardeners had to offer before they carted earth onto the rock. It has done well on it. The six stand within a few hundred metres of each other and a stranger would struggle to rank them by eye.\n\nThis one sits about fifteen metres from the second largest, and between them they make the grove's heaviest pair. Look for the thickest trunk and the tallest crown in that corner of the park.",
+      "how_to_recognise": "You can recognise it by the thickest trunk of Miramare's six protected Aleppo pines, 3.68 metres round under a 25-metre crown. It stands about fifteen metres east of a second pine, 3.34 metres round and noticeably lower.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 25.0,
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_024",
+      "name": "The Third Aleppo Pine of Miramare",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "about 130 years, planted after 1856",
+      "age_min": 115,
+      "age_max": 172,
+      "girth_cm": 334,
+      "location": {
+        "address": "Parco del Castello di Miramare, Viale Miramare, 34151 Trieste",
+        "latitude": 45.705094,
+        "longitude": 13.713994,
+        "neighbourhood": "Grignano"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://cultura.gov.it/evento/i-giganti-verdi-del-parco-storico-di-miramare",
+        "https://ilregistrodeglialberi.it/3855-pino-daleppo-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, the park is open daily. Only the castle charges admission",
+      "transport": "Bus 6 from Piazza Oberdan to Grignano, about 25 min, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Fifteen metres from the largest Aleppo pine at Miramare stands the second largest, and the gap between them is 34 centimetres of girth and five metres of height. This one measures 3.34 metres round and twenty metres tall. Those are the national register's figures, and Italy's citizen tree register found the same trunk at the same point in October 2021, which is as close to certainty as a measurement of a living tree gets.\n\nIt belongs to a protected group of six pines in the park, and the group is the point. Archduke Maximilian of Habsburg started Miramare in 1856 as a test of what would grow on a bare limestone promontory above the Adriatic, and a pine built for drought, salt wind and thin soil was the obvious answer to the question he was asking. None of the six is dated individually except a smaller sibling put at about 130 years, so this one is placed somewhere between roughly 115 and 170 years by that sibling and by the park's own start date. Maximilian never saw it grown: he left for Mexico and was shot there in 1867.\n\nIf you want to stand between the two heaviest pines in the grove, this is the western half of the pair.",
+      "how_to_recognise": "You can recognise it by the trunk, 3.34 metres round under a 20-metre crown, next to a heavier and taller pine. It stands about fifteen metres west of Miramare's largest protected Aleppo pine, 3.68 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 20.0,
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_025",
+      "name": "The Fourth Aleppo Pine of Miramare",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "about 130 years, planted after 1856",
+      "age_min": 115,
+      "age_max": 172,
+      "girth_cm": 324,
+      "location": {
+        "address": "Parco del Castello di Miramare, Viale Miramare, 34151 Trieste",
+        "latitude": 45.705911,
+        "longitude": 13.714283,
+        "neighbourhood": "Grignano"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://cultura.gov.it/evento/i-giganti-verdi-del-parco-storico-di-miramare",
+        "https://ilregistrodeglialberi.it/3856-pino-daleppo-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, the park is open daily. Only the castle charges admission",
+      "transport": "Bus 6 from Piazza Oberdan to Grignano, about 25 min, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This pine is thicker than three of its protected neighbours and lower than all but one of them. The trunk measures 3.24 metres round; the crown stops at sixteen metres, where a slimmer pine in the same grove reaches twenty-five. The national register gives both figures and Italy's citizen tree register checked them on the ground in October 2021 and found the same numbers at the same point. Neither register says why it grew wide rather than tall, and it is not our place to guess.\n\nIt is one of six Aleppo pines at Miramare protected together, all within a few hundred metres, all planted into the park that Archduke Maximilian of Habsburg began carving out of a bare limestone headland in 1856. Soil had to be brought in before anything could grow here. Aleppo pine, named after the Syrian city and native to the dry Mediterranean coast, was one of the trees that needed the least of it. No record dates this trunk; by its dated sibling, about 130 years old, and the park's own start, it falls somewhere between about 115 and 170 years.\n\nIt stands at the northern end of the grove with the smallest of the six a few paces away, which makes it the easier of that pair to pick out: the thicker one.",
+      "how_to_recognise": "You can recognise it by a broad trunk, 3.24 metres round, under a low 16-metre crown. It stands at the northern end of Miramare's pine grove, about thirteen metres from the smallest of the six protected pines.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 16.0,
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_026",
+      "name": "The Fifth Aleppo Pine of Miramare",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "about 130 years, planted after 1856",
+      "age_min": 115,
+      "age_max": 172,
+      "girth_cm": 305,
+      "location": {
+        "address": "Parco del Castello di Miramare, Viale Miramare, 34151 Trieste",
+        "latitude": 45.704828,
+        "longitude": 13.715275,
+        "neighbourhood": "Grignano"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://cultura.gov.it/evento/i-giganti-verdi-del-parco-storico-di-miramare",
+        "https://ilregistrodeglialberi.it/3853-pino-daleppo-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, the park is open daily. Only the castle charges admission",
+      "transport": "Bus 6 from Piazza Oberdan to Grignano, about 25 min, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The slimmest of Miramare's five big Aleppo pines is as tall as the fattest. It measures 3.05 metres round the trunk and twenty-five metres to the top, the same height as the grove's heaviest pine, which carries more than sixty centimetres of extra girth to get there. The national register holds those figures and Italy's citizen tree register confirmed them in person in October 2021.\n\nIt also stands a little apart. Four of the other protected pines stand in two close pairs; this one is about ninety metres southeast of the largest, on its own. All six are protected as a group, part of the planting Archduke Maximilian of Habsburg started in 1856 when he set out to make a garden on a promontory of bare Karst limestone with the sea on three sides. Aleppo pine was a natural choice: a tree of the dry Mediterranean coast that asks for very little soil and tolerates salt. Its age is not recorded; by the one dated pine in the grove, about 130 years, and the park's start date, it lies somewhere between about 115 and 170 years.\n\nIt has watched the park turn from a Habsburg's private experiment into a free public garden where only the castle charges for entry.",
+      "how_to_recognise": "You can recognise it by a tall, slim pine, 3.05 metres round and 25 metres high, standing on its own. It is the southeastern outlier of Miramare's protected pines, about ninety metres from the largest of them.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 25.0,
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_027",
+      "name": "The Sixth Aleppo Pine of Miramare",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "about 130 years, planted after 1856",
+      "age_min": 115,
+      "age_max": 172,
+      "girth_cm": 213,
+      "location": {
+        "address": "Parco del Castello di Miramare, Viale Miramare, 34151 Trieste",
+        "latitude": 45.705792,
+        "longitude": 13.714303,
+        "neighbourhood": "Grignano"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://cultura.gov.it/evento/i-giganti-verdi-del-parco-storico-di-miramare",
+        "https://ilregistrodeglialberi.it/3857-pino-daleppo-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, the park is open daily. Only the castle charges admission",
+      "transport": "Bus 6 from Piazza Oberdan to Grignano, about 25 min, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The smallest tree in Miramare's protected pine grove is barely a third of the height of the park's redwoods. It measures 2.13 metres round the trunk and ten metres tall, well below its five siblings, which run from 3.05 to 3.68 metres round and up to twenty-five metres high. The national register gives those figures and Italy's citizen tree register confirmed them at the same spot in October 2021.\n\nIt is protected because the grove is. The six Aleppo pines at Miramare are listed as one designated group, and a group listing takes the modest members with the grand ones, which is how a ten-metre pine ends up on the same national register as the largest plane in Trieste. That is not a mistake. A grove planted together reads as a grove, and this is the tree that shows how much the others have grown.\n\nWhen it went in is unknown. The park itself dates from 1856, when Archduke Maximilian of Habsburg began turning a bare limestone point into a garden, and the grove's one dated pine is put at about 130 years; a smaller trunk does not have to mean a younger tree, so this one gets the same broad span, somewhere between about 115 and 170 years. If you know its history, tell us.",
+      "how_to_recognise": "You can recognise it by its size: the smallest of Miramare's six protected Aleppo pines, 2.13 metres round and only ten metres tall. It stands about thirteen metres from a much broader pine, 3.24 metres round, at the grove's north end.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 10.0,
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_028",
+      "name": "The Second Plane of the Giardino Pubblico",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 160 to 180 years, planted with the garden from 1854",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 525,
+      "location": {
+        "address": "Giardino Pubblico Muzio de Tommasini, Via Giulia, 34126 Trieste",
+        "latitude": 45.654069,
+        "longitude": 13.784306,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://verdepubblico.comune.trieste.it/giardini-storici/giardino-pubblico-muzio-de-tommasini/",
+        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447",
+        "https://ilregistrodeglialberi.it/3843-platano-comune-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, public park open daily",
+      "transport": "About 15 min walk east from Piazza Unita, or any bus along Via Giulia",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Seventeen centimetres of girth separate this plane from the garden's biggest. It measures 5.25 metres round the trunk and thirty-one metres tall; the garden's great plane, about fifty-five metres to the east, is 5.42 metres and thirty-four. That makes this the runner-up in the Giardino Pubblico and, on the national register's numbers, one of the thickest trees in the city. Italy's citizen tree register measured it again in October 2021 and found the register's figure exactly.\n\nThe garden was begun in 1854 by Muzio de Tommasini, a botanist who was also the city's podesta, on ground bought from Benedictine nuns, and the city's own parks service records that he planted its avenue of planes himself. Nobody has dated this trunk on its own, but a plane of this size in this garden is the obvious candidate for his planting, which would make it somewhere around 160 to 180 years old. Since then the garden has filled with roughly 320 big trees and the bronze heads of Triestine writers, and Italo Svevo walked its paths often enough to write it into his books.\n\nSecond place in a city of old trees is a long way from ordinary. Nine planes in this garden carry national protection, and this one comes within a hand's width of the largest.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.25 metres round, second only to the great plane about fifty-five metres to the east. It stands in the Giardino Pubblico, some twenty metres northeast of a third giant plane, 5.20 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 31.0,
+      "verify_notes": "Height 31.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_029",
+      "name": "The Third Plane of the Giardino Pubblico",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 160 to 180 years, planted with the garden from 1854",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 520,
+      "location": {
+        "address": "Giardino Pubblico Muzio de Tommasini, Via Giulia, 34126 Trieste",
+        "latitude": 45.653925,
+        "longitude": 13.784094,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://verdepubblico.comune.trieste.it/giardini-storici/giardino-pubblico-muzio-de-tommasini/",
+        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447",
+        "https://ilregistrodeglialberi.it/3842-platano-comune-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, public park open daily",
+      "transport": "About 15 min walk east from Piazza Unita, or any bus along Via Giulia",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Two of the thickest trees in Trieste stand about twenty metres apart in this garden, and this is the smaller by five centimetres. It measures 5.20 metres round the trunk and twenty-eight metres tall. Its neighbour to the northeast is 5.25 metres; the great plane beyond both is 5.42. At that size five centimetres is a rounding error, and Italy's citizen tree register, which checked both in October 2021, found the national register's numbers held for each.\n\nThe man responsible was an unusual kind of mayor. Muzio de Tommasini ran Trieste as its podesta and spent the rest of his time as a working botanist, and when the city opened this public garden in 1854 on land bought from Benedictine nuns, he planted its plane avenue himself, according to the municipality's own account. No record dates this particular tree, but a trunk this size in that avenue is most likely one of his, which would put it at roughly 160 to 180 years.\n\nThose years have covered the whole modern history of the city: a Habsburg free port, the First World War, a change of flag after 1918 and another fight over its border after 1945. The plane has simply got wider through all of it, one annual ring at a time.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.20 metres round, one of a pair of giant planes about twenty metres apart. It is the southwestern one; its twin, 5.25 metres round, stands to the northeast in the same garden.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 28.0,
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_030",
+      "name": "The Fourth Plane of the Giardino Pubblico",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 160 to 180 years, planted with the garden from 1854",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 460,
+      "location": {
+        "address": "Giardino Pubblico Muzio de Tommasini, Via Giulia, 34126 Trieste",
+        "latitude": 45.654586,
+        "longitude": 13.784,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://verdepubblico.comune.trieste.it/giardini-storici/giardino-pubblico-muzio-de-tommasini/",
+        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447",
+        "https://ilregistrodeglialberi.it/3844-platano-comune-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, public park open daily",
+      "transport": "About 15 min walk east from Piazza Unita, or any bus along Via Giulia",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This plane stands among the garden's horse chestnuts rather than with the heavyweights of its own kind. It measures 4.60 metres round the trunk and twenty-seven metres tall, figures from the national register that Italy's citizen tree register confirmed on the ground in October 2021, and its nearest protected neighbours are the twin chestnuts about thirty-five metres to the southeast, measured identical to the centimetre.\n\nIn any other city a plane this size would lead the page. Here it is one of nine on Italy's monumental register inside three hectares, which says more about the garden than about the tree. Muzio de Tommasini, botanist and podesta, laid the Giardino Pubblico out from 1854 and planted its planes himself, according to the city's parks service. This one is not individually dated, but its size fits that planting, which would make it somewhere around 160 to 180 years old.\n\nThe garden is a literary one as much as a botanical one. Busts of Trieste's writers line its paths, and Italo Svevo, whose novels are set in this city, walked here often. The plane has stood through all of it, through the port's Habsburg century and its Italian one, without anyone writing a word about this particular trunk until a register gave it a number.",
+      "how_to_recognise": "You can recognise it by a plane trunk 4.60 metres round standing among horse chestnuts rather than planes. It is about thirty-five metres northwest of the twin chestnuts, and some twenty-five metres from a slimmer, taller plane.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 27.0,
+      "verify_notes": "Height 27.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_031",
+      "name": "The Fifth Plane of the Giardino Pubblico",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 160 to 180 years, planted with the garden from 1854",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 465,
+      "location": {
+        "address": "Giardino Pubblico Muzio de Tommasini, Via Giulia, 34126 Trieste",
+        "latitude": 45.653936,
+        "longitude": 13.78355,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://verdepubblico.comune.trieste.it/giardini-storici/giardino-pubblico-muzio-de-tommasini/",
+        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447"
+      ],
+      "access": "Free, public park open daily",
+      "transport": "About 15 min walk east from Piazza Unita, or any bus along Via Giulia",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "On the regional register's figures, the tallest tree in the Giardino Pubblico is not its biggest. This plane is listed at thirty-five metres, a metre higher than the great plane that holds the girth record for all of Trieste, on a trunk of 4.65 metres round, nearly eighty centimetres slimmer. If the numbers hold, it has put its growth into height where its neighbour put it into bulk.\n\nThe caveat is real. This tree's sheet appears in the national and regional registers but not in Italy's citizen tree register, which re-measured most of its siblings in 2021, so nobody has published an independent check of this trunk. The register is the only witness, and a height taken on a thirty-metre crown is harder to get right than a girth taken with a tape at chest height.\n\nIt belongs to the garden Muzio de Tommasini, botanist and podesta, laid out from 1854 on land bought from Benedictine nuns, where by the city's own account he planted the planes himself. No source dates this tree individually; its size puts it plausibly in that first planting, around 160 to 180 years.\n\nIf you stand under it with a rangefinder, or know the story of this corner of the garden, tell us. A tree this tall deserves a second measurement.",
+      "how_to_recognise": "You can recognise it by the height: listed at 35 metres on a 4.65-metre trunk, taller and slimmer than the great plane. It stands about forty metres west of the garden's pair of giant planes, 5.20 and 5.25 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 35.0,
+      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_032",
+      "name": "The Sixth Plane of the Giardino Pubblico",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 160 to 180 years, planted with the garden from 1854",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 437,
+      "location": {
+        "address": "Giardino Pubblico Muzio de Tommasini, Via Giulia, 34126 Trieste",
+        "latitude": 45.653725,
+        "longitude": 13.782808,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://verdepubblico.comune.trieste.it/giardini-storici/giardino-pubblico-muzio-de-tommasini/",
+        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447"
+      ],
+      "access": "Free, public park open daily",
+      "transport": "About 15 min walk east from Piazza Unita, or any bus along Via Giulia",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The ground under this plane was meant for a church. Before it was a garden, the plot on Via Giulia was earmarked for a church and housing, and when that plan was dropped the land was bought from Benedictine nuns. From 1854 Muzio de Tommasini, a botanist who was also Trieste's podesta, turned it into the Giardino Pubblico, and by the city's own account he planted its planes himself.\n\nThis one stands at the western end of that planting, the farthest of them all from the great plane that holds the city's girth record. The regional register lists it at 4.37 metres round the trunk and thirty metres tall. That register is our only source for this particular tree: Italy's citizen tree register, which re-measured most of the garden's protected planes in 2021, has no entry for this sheet, so these figures have not been independently checked. They are plausible for the company it keeps, but they are one witness.\n\nNobody has dated it on its own. Its size fits de Tommasini's planting, which would make it around 160 to 180 years old, and that is an inference rather than a record. The garden around it has grown to some 320 large trees, and a church was never built.\n\nIf you measure it, or know more about this end of the garden, tell us.",
+      "how_to_recognise": "You can recognise it by position: the westernmost of the garden's protected planes, listed at 4.37 metres round and 30 metres tall. It stands about sixty metres west-southwest of a slimmer, taller plane listed at 35 metres.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 30.0,
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_033",
+      "name": "The Seventh Plane of the Giardino Pubblico",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 160 to 180 years, planted with the garden from 1854",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 408,
+      "location": {
+        "address": "Giardino Pubblico Muzio de Tommasini, Via Giulia, 34126 Trieste",
+        "latitude": 45.654686,
+        "longitude": 13.784314,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://verdepubblico.comune.trieste.it/giardini-storici/giardino-pubblico-muzio-de-tommasini/",
+        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447"
+      ],
+      "access": "Free, public park open daily",
+      "transport": "About 15 min walk east from Piazza Unita, or any bus along Via Giulia",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This plane is more than a metre slimmer than the garden's runner-up and two metres taller. The regional register lists it at 4.08 metres round the trunk and thirty-three metres high, which makes it one of the tallest trees recorded in the Giardino Pubblico on a trunk that, by this garden's standards, is modest. It has spent its life reaching up past the horse chestnuts around it rather than filling out.\n\nThose figures come from the register alone. Italy's citizen tree register, which went round most of this garden's protected planes with a tape in October 2021, has no entry for this sheet, so no independent measurement of this tree has been published, and a thirty-three-metre height is exactly the kind of number that benefits from a second look.\n\nThe garden it stands in was laid out from 1854 by Muzio de Tommasini, the botanist who happened also to be Trieste's podesta, and he planted the planes himself according to the city's parks service. This tree has no date of its own; its place in that planting would make it roughly 160 to 180 years old, which is a reasonable inference and not a measurement. Through those years the city changed hands, the garden gained its busts of Triestine writers, and this plane kept climbing.",
+      "how_to_recognise": "You can recognise it by a tall, relatively slim plane, listed at 4.08 metres round and 33 metres high. It stands about thirty metres north of the twin horse chestnuts, some twenty-five metres from a stouter plane, 4.60 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 33.0,
+      "verify_notes": "Height 33.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_034",
+      "name": "The Eighth Plane of the Giardino Pubblico",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 160 to 180 years, planted with the garden from 1854",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 402,
+      "location": {
+        "address": "Giardino Pubblico Muzio de Tommasini, Via Giulia, 34126 Trieste",
+        "latitude": 45.654244,
+        "longitude": 13.784803,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://verdepubblico.comune.trieste.it/giardini-storici/giardino-pubblico-muzio-de-tommasini/",
+        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447"
+      ],
+      "access": "Free, public park open daily",
+      "transport": "About 15 min walk east from Piazza Unita, or any bus along Via Giulia",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Nineteen metres from the garden's biggest plane stands this one, and it spends its life being compared. It is listed at 4.02 metres round the trunk and thirty-one metres tall, which would lead the page in most cities. Next to the great plane of the Giardino Pubblico, 5.42 metres round and thirty-four tall, it looks like the younger brother, although nothing says it is younger.\n\nThe figures come from the regional register alone. Italy's citizen tree register re-measured most of the garden's protected planes in 2021 but has no entry for this sheet, so no independent check of this tree has been published. It is one of nine planes in the garden on the national list, and among the eight we map it is the slimmest.\n\nIt shares its history with its big neighbour. Muzio de Tommasini, botanist and podesta, opened the garden from 1854 on land bought from Benedictine nuns and planted its planes himself, according to the city's parks service. This tree carries no date of its own, but standing this close to the great plane in that planting, it is plausibly of the same generation, around 160 to 180 years.\n\nStand between the two and the difference in the trunks is the whole lesson in what 140 centimetres of girth looks like.",
+      "how_to_recognise": "You can recognise it by standing next to the great plane: this is the slimmer plane about nineteen metres to its west, listed at 4.02 metres round against the great plane's 5.42.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 31.0,
+      "verify_notes": "Height 31.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_035",
+      "name": "The Third Horse Chestnut of the Giardino Pubblico",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 160 to 180 years, planted with the garden from 1854",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 317,
+      "location": {
+        "address": "Giardino Pubblico Muzio de Tommasini, Via Giulia, 34126 Trieste",
+        "latitude": 45.655286,
+        "longitude": 13.784811,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://verdepubblico.comune.trieste.it/giardini-storici/giardino-pubblico-muzio-de-tommasini/",
+        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447",
+        "https://ilregistrodeglialberi.it/3840-ippocastano-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021, record last updated per site)"
+      ],
+      "access": "Free, public park open daily",
+      "transport": "About 15 min walk east from Piazza Unita, or any bus along Via Giulia",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Two registers measured this horse chestnut and they cannot both be right. Italy's national and regional registers list it at 3.17 metres round the trunk and twenty-two metres tall. The citizen tree register, citing the same official sheet number, recorded a trunk of 2.10 metres and a height of ten metres in October 2021, at a point about thirty-five metres from the register's own coordinate. That is not a rounding difference. It is a different-sized tree.\n\nNobody has settled which figure belongs to which chestnut. The citizen measurement may have been taken on a neighbouring tree, the sheet number may have been attached to the wrong record, or the register may be wrong. We have not picked a winner, and the pin on this page marks the register's position, which may be a few dozen metres out.\n\nWhat is not in dispute is the setting. It stands about a hundred metres north of the garden's twin horse chestnuts, identical to the centimetre at 3.35 metres, in the public garden Muzio de Tommasini began in 1854. No source dates this tree on its own; if it belongs to that first planting, it is somewhere around 160 to 180 years old.\n\nIf you find it and put a tape round it, tell us which number is right.",
+      "how_to_recognise": "You can recognise it as a horse chestnut about a hundred metres north of the garden's twin chestnuts, listed at 3.17 metres round. The registers disagree on its size and spot, so if yours is nearer 2.10 metres, tell us.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when the conkers drop"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 22.0,
+      "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "tri_036",
+      "name": "The Plane of Via San Lazzaro",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 360,
+      "location": {
+        "address": "Via San Lazzaro / Salita Madonna di Gretta, 34136 Trieste",
+        "latitude": 45.668647,
+        "longitude": 13.762883,
+        "neighbourhood": "Barcola-Gretta"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
+        "https://ilregistrodeglialberi.it/3863-platano-comune-trieste-ts-friuli-venezia-giulia (RAMI citizen tree register, independent field measurement 14/10/2021)"
+      ],
+      "access": "Free, stands beside a public street on the road up from Barcola toward Miramare",
+      "transport": "About 10 min walk uphill from the Barcola seafront tram/bus stops",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Two registers agree on this plane to the centimetre and disagree about which street it stands on. Italy's national and regional registers put it on Salita Madonna di Gretta; the citizen tree register, citing the same official sheet, gives its address as Via San Lazzaro 16. Both give the same coordinate, the same trunk of 3.60 metres round and the same height of twenty-five metres, so this is one tree with two labels rather than two trees, and the pin is the part to trust.\n\nIt stands alone. Nine of Trieste's protected planes share the three hectares of the Giardino Pubblico; this one is by the roadside on the slope between the Barcola seafront and Gretta, belonging to no garden and no grove. That makes it a useful stop on the way out toward Miramare, where the park's pines and redwoods wait.\n\nNobody has dated it. There is no planting record, no survey age and no story attached to it in any source we found, only the measurements, which the citizen register confirmed on the ground in October 2021. If you know when it was planted, or why this one was kept, tell us.",
+      "how_to_recognise": "You can recognise it by a lone roadside plane, 3.60 metres round and 25 metres tall, away from any park. It stands on the road up from Barcola, at the spot the registers call Via San Lazzaro and Salita Madonna di Gretta.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "height_m": 25.0,
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }
