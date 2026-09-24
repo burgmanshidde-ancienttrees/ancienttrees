@@ -17857,6 +17857,38 @@
    ],
    "trees": 17,
    "logged": true
+  },
+  {
+   "started": "2026-09-24T03:19:07+00:00",
+   "date": "2026-09-24",
+   "run_id": "35945801448",
+   "minutes": 7.1,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 84,
+   "denials": 14,
+   "denials_source": "permission_denials: Bash(curl && wc && grep | head), Bash(curl ; wc ; grep | head), Bash(curl ; wc), Bash(grep | head), Bash(ls ; echo ; for ; do ...), Bash(mkdir && python3 ; echo), Bash(mkdir && python3), Bash(python3 ; echo), Bash(python3 ; import ; html ; ? ...), Bash(python3 ; import ; html ; text ...), Bash(python3 ; wc), Bash(python3), Bash(subshell python3 || mkdir && python3)",
+   "ended": "success",
+   "tokens": 13405962,
+   "claims_held": [
+    "_famous-poland",
+    "coimbra",
+    "utrecht"
+   ],
+   "commits": 31,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "trieste",
+     "trees": 16
+    },
+    {
+     "city": "copenhagen",
+     "trees": 0
+    }
+   ],
+   "trees": 16,
+   "logged": true
   }
  ],
  "schedule_changes": [
