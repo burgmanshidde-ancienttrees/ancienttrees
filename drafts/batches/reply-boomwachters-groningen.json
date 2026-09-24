@@ -1,0 +1,15 @@
+{
+ "batch": "reply-boomwachters-groningen",
+ "note": "Reply to Marinel Pleij, who answered the app-launch mail of 2026-09-05 on behalf of Boomwachters Groningen. She offers to share the link with their Facebook followers if the app speaks Dutch and the trees carry photographs. Both answered honestly: the website's Dutch pages are live and linked, the app's localisation is stated as later because it does not exist, and the photo gap is answered with the app's own contribution flow, which takes new trees as well as photographs.",
+ "status": "awaiting_address_confirmation",
+ "mails": [
+  {
+   "to": "info@boomwachtersgroningen.nl",
+   "outlet": "Boomwachters Groningen (reply)",
+   "subject": "Re: De Ancient Trees-app is er",
+   "body": "Hoi Marinel,\n\nDank voor je bericht, leuk dat jullie gekeken hebben.\n\nAllebei je punten zijn precies waar ik mee bezig ben. De vertalingen lopen al, een aantal steden staan in het Nederlands live, bijvoorbeeld deze: https://ancienttrees.app/nl/amsterdam. Groningen komt eraan. De app is nu nog Engels, die volgt later.\n\nDe foto's zijn inderdaad het grootste gat. Daar is de app juist voor gemaakt: mensen kunnen zelf een foto toevoegen, en ook een boom die er nog niet op staat. In mijn eentje krijg ik dit nooit gevuld. Wat er binnenkomt bekijk ik zelf en de goede komen op de site.\n\nIk ben benieuwd wat je van de Groningse bomen vindt. Mis je er bomen? En heb je zelf mooie foto's? Die zet ik er graag bij, met je naam erbij als je dat wilt.\n\nDe bomenkaart van de gemeente ken ik nog niet, die ga ik bekijken. Dank voor de tip.\n\nGroet,\nHidde",
+   "resend_reason": "They wrote to us first: Marinel Pleij's reply to our app-launch mail of 2026-09-05, asking for Dutch and for photographs before they share the link with their followers."
+  }
+ ],
+ "held_because": "Hidde said send. Two things are unconfirmed, and both are irreversible once a mail leaves: the address is inferred from the app-launch mail of 2026-09-05 rather than read off her reply, and he has not yet chosen between this route and pasting it from his own mailbox, which keeps the mail in the thread. Flip this to approved_by_hidde to let outreach_continue.py send it on the next knock."
+}
