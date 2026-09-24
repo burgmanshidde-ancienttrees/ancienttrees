@@ -88,7 +88,8 @@ export interface CountryMapCity {
 /** One green dot per mapped city, click goes to its page. Deliberately the
  * simplest map on the site: at country zoom the job is orientation, not
  * detail. */
-export function countryMapScript(cities: CountryMapCity[]): string {
+export function countryMapScript(cities: CountryMapCity[],
+                                 frame?: [[number, number], [number, number]]): string {
   const centre = (c: CountryMapCity): [number, number] => [
     c.markers.reduce((s, m) => s + m.lng, 0) / c.markers.length,
     c.markers.reduce((s, m) => s + m.lat, 0) / c.markers.length,
@@ -112,6 +113,10 @@ map.addControl(new maplibregl.AttributionControl({compact: true, customAttributi
 map.addControl(new maplibregl.NavigationControl());
 var b = new maplibregl.LngLatBounds();
 CITIES.features.forEach(function(f) { b.extend(f.geometry.coordinates); });
+// A country whose cities all hug one border names extra ground to show
+// (map_frame in data/countries), so Canada's map is not centred on the US.
+var FRAME = ${JSON.stringify(frame ?? null)};
+if (FRAME) { b.extend(FRAME[0]); b.extend(FRAME[1]); }
 var touched = false;
 function fit() { if (!touched) { map.fitBounds(b, { padding: 48, maxZoom: 9, duration: 0 }); } }
 map.on('dragstart', function() { touched = true; });

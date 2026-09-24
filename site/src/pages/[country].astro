@@ -242,7 +242,8 @@ const mapScript = countryMapScript(
     city: c.cityName,
     count: c.count,
     markers: renderableTrees(c.city).map((t) => ({ lat: t.location.latitude!, lng: t.location.longitude! })),
-  }))
+  })),
+  intro.data.map_frame
 );
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
