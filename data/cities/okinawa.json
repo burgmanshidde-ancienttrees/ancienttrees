@@ -1,24 +1,25 @@
 {
-  "city": "Naha",
+  "city": "Okinawa",
   "country": "Japan",
+  "kind": "island",
   "status": "needs_curation",
   "intro": "Almost every old tree on Okinawa died in three months of 1945. The Battle of Okinawa burned Shuri and most of what grew on it, and the prefecture's own note on its most famous grove says so plainly: before the war there were many great akagi around the castle, and now there are a handful. So these trees are not simply old, they are the ones that were not hit. Every one is on the prefectural register of a hundred notable trees, and several are looked after by the neighbourhood association rather than by anybody official.",
-  "meta_description": "Naha's surviving trees: a grove of bishop wood that came through the Battle of Okinawa, and a strangler fig on limestone measuring 19 metres round.",
-  "question_answer": "The oldest tree near Naha is the great akagi of Uchima in Urasoe, which Okinawa's register of notable trees puts at about 400 years. It is 18 metres tall with a trunk 4.25 metres round, it stood over the village well, and it is one of the few large trees in the area that came through the Battle of Okinawa.",
-  "question_meta": "The 400 year old akagi of Uchima is the oldest tree near Naha. What survived 1945 and what did not, and 5 more on the prefectural register.",
-  "question_context": "Okinawa's register answers this better than most, because it publishes an estimated age alongside the height and girth for each of its hundred notable trees. The oldest near Naha is the akagi at Uchima in Urasoe at about 400 years, ahead of the Shuri Kinjo grove at over 200 and the banyan at Takara at 150. But the more useful thing the register records is what happened in 1945. The Battle of Okinawa destroyed Shuri and its castle almost completely, and the prefecture's note on the Shuri Kinjo akagi says that before the war many trees of that size grew around the castle and that nearly all of them burned, leaving only a few. The Uchima entry says the same thing about that tree in one line: it is one of those that survived the ravages of the war. So an old tree in Naha is a survivor first and an old tree second, and the honest reading of the age column here is that it counts the years a tree lived through rather than the years it simply grew. Getting to Uchima: about 8 km north of central Naha in Urasoe.",
+  "meta_description": "Okinawa's surviving trees: a grove of bishop wood that came through the 1945 battle, and a strangler fig on limestone measuring 19 metres round.",
+  "question_answer": "The oldest tree we map on Okinawa is the great akagi of Uchima in Urasoe, which the prefecture's register of notable trees puts at about 400 years. It is 18 metres tall with a trunk 4.25 metres round, it stood over the village well, and it is one of the few large trees in the south of the island that came through the Battle of Okinawa.",
+  "question_meta": "The 400 year old akagi of Uchima is the oldest tree we map on Okinawa. What survived 1945 and what did not, and 5 more on the prefectural register.",
+  "question_context": "Okinawa's register answers this better than most, because it publishes an estimated age alongside the height and girth for each of its hundred notable trees. The oldest of the six here is the akagi at Uchima in Urasoe at about 400 years, ahead of the Shuri Kinjo grove at over 200 and the banyan at Takara at 150. But the more useful thing the register records is what happened in 1945. The Battle of Okinawa destroyed Shuri and its castle almost completely, and the prefecture's note on the Shuri Kinjo akagi says that before the war many trees of that size grew around the castle and that nearly all of them burned, leaving only a few. The Uchima entry says the same thing about that tree in one line: it is one of those that survived the ravages of the war. So an old tree in southern Okinawa is a survivor first and an old tree second, and the honest reading of the age column here is that it counts the years a tree lived through rather than the years it simply grew. Getting to Uchima: about 8 km north of central Naha in Urasoe.",
   "oldest_tree_id": "nah_005",
   "faq": [
     {
-      "q": "What is the oldest tree in Naha?",
-      "a": "The great akagi of Uchima in Urasoe, at about 400 years by Okinawa's register of notable trees. Inside Naha itself the oldest is the Shuri Kinjo grove, put at over 200 years."
+      "q": "What is the oldest tree on Okinawa?",
+      "a": "Of the trees on this page, the great akagi of Uchima in Urasoe, at about 400 years by the prefecture's register of notable trees. Inside Naha itself the oldest is the Shuri Kinjo grove, put at over 200 years."
     },
     {
       "q": "What is an akagi?",
       "a": "Bischofia javanica, called bishop wood in English and akagi in Japanese, a tree of the Ryukyus, tropical Asia, Polynesia and Australia. Its timber was sent to the imperial court as tribute in the Heian period for sword hilts, combs and the legs of zithers, and later used for windbreaks, oil presses and sugar mill carriages."
     },
     {
-      "q": "Did any of Naha's old trees survive the war?",
+      "q": "Did any of Okinawa's old trees survive the war?",
       "a": "These did, and that is why they are here. The Battle of Okinawa destroyed Shuri almost completely and the prefecture records that nearly all the great akagi around the castle burned. The grove at Shuri Kinjo and the akagi at Uchima are both described in the official record as survivors."
     },
     {
@@ -27,7 +28,11 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "Not really. The four in Naha are spread across the city from Shuri in the east to Amaku on the north shore and Takara in the south, each a bus or tram ride apart. Uchima is 8 kilometres north in Urasoe and Tomari 14 kilometres east in Nakagusuku."
+      "a": "Not really. Four are in Naha, spread from Shuri in the east to Amaku on the north shore and Takara in the south, each a bus or monorail ride apart. Uchima is 8 kilometres north in Urasoe and Tomari 14 kilometres east in Nakagusuku."
+    },
+    {
+      "q": "Where is the Hinpun Gajumaru?",
+      "a": "In central Nago, about 85 minutes north of Naha Airport by car, which is why it has a page of its own rather than a place in this list. All six trees here stand in the south of the island, around Naha."
     }
   ],
   "trees": [
