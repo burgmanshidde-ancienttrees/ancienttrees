@@ -17929,6 +17929,27 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-24T19:35:59+00:00",
+   "date": "2026-09-24",
+   "run_id": "36049211342",
+   "minutes": 34.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 254,
+   "denials": 18,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat ; import ; def ; for ...), Bash(cd && npx ; echo), Bash(cd && npx | tee | tail), Bash(cd && python3 ; import ; from ...), Bash(chmod && ?), Bash(for ; do ; echo ; grep ...), Bash(python3 ; import ; d ; close ...), Bash(python3 ; import ; d ; leads ...), Bash(rm), Bash(subshell cd && npx ; echo), Bash(subshell python3 ; import ; ? ; names ...), Bash(until && ps ; do ; done ...), Bash(while ; do ; -l ; if ...), Bash(while ; do ; if ; then ...)",
+   "ended": "success",
+   "tokens": 2283893,
+   "claims_held": [
+    "christchurch"
+   ],
+   "commits": 6,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
