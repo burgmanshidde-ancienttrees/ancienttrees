@@ -14,6 +14,90 @@ roughly double the real number, and do not compare one across that date.
 because those point at /app and the listener matched the href. Every other
 event on the list is unaffected.
 
+## Weekly analysis 2026-09-24
+
+Eighth weekly analysis. The scheduled runs for 09-14 and 09-21 didn't happen
+(the last one on file is 09-07), so this covers the two-plus weeks since,
+comparing the 10-day Search Console window ending 2026-09-22 against the one
+ending 2026-09-12 (both read straight from the daily entries), plus the
+beacon's own 8-day windows for the same two boundaries.
+
+**Scorecard**
+
+| Week ending | Impressions | Clicks | CTR | Avg position | Visits (beacon, 8d) | Pageviews (beacon, 8d) | Directions (14d) | App-CTA (14d) | Waitlist total | Submissions total |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-12 | 16,398 | 339 | 2.1% | 9.4 | 920 | 1,250 | 35 | 40 | 17 | 11 |
+| 2026-09-22 | 21,163 (still settling) | 466 (still settling) | 2.2% | 7.9 | 1,130 | 1,660 | 39 | 50 | 19 | 25 |
+
+**What moved:**
+1. Night runs went completely dark for four days. Every knock from 09-19
+   21:21 to 09-22 23:54 (roughly 28 attempts) ended with the usage-limit
+   fingerprint CLAUDE.md describes (1 turn, 0.0 minutes, subtype success),
+   while daytime sessions kept working the whole stretch. 09-16 to 09-18
+   alone had produced 150 trees across ~1,460 machine-minutes; the four
+   dead days produced zero. Work resumed hard on 09-23/09-24 (Copenhagen
+   16 to 42 trees, Trieste 20 to 36), and today's session reset the night
+   budget from 5,000/900 minutes back to 1,800/260, on the finding that the
+   raised ceiling bought roughly the same trees per minute worse, not
+   better (11.2 min/tree this week against 6.6 before the raise).
+2. Search kept growing: impressions 16,398 to 21,163 (+29%), clicks 339 to
+   466 (+37%), CTR 2.1% to 2.2%, average daily position improved 9.4 to
+   7.9. Beacon visits rose 920 to 1,130 (+23%) and pageviews 1,250 to
+   1,660 (+33%) across matching 8-day windows. Singapore is now the
+   largest beacon country (170 to 380 visits, overtaking the US), and
+   mobile overtook desktop for the first time (570/600 to 860/790); the
+   beacon is cookieless so this is a lead on where the growth comes from,
+   not yet a reading.
+3. `seolearn.py` now explicitly flags 7 pages as NOT_DEMAND (1,476
+   impressions, 12% of the sample): their biggest query uses Google's
+   exact-phrase operator, which nobody types. Milan, Berlin, Prague,
+   London, Leiden and Boston are on that list, every one of them a city
+   this analysis (or an earlier one) has previously named as a "stuck at
+   0% CTR" title/meta problem across five-plus straight weeks. Their
+   apparent impressions were mostly never real demand; chasing a title fix
+   there was chasing a ghost.
+4. App Store downloads have been frozen on the exact same table (ending
+   2026-09-17, 72 over 14 days) across all seven daily digests from 09-16
+   through 09-22. `asc_downloads.py` appears to have stopped returning
+   fresh data for a week; there is currently no visibility into app
+   installs for that whole window.
+5. Reader submissions rose 11 to 25 (+13 trees sent), but the daily entry
+   itself flags that 16 of the last 16 non-"us" rows came from one account
+   (ebde), repeatedly sending the same tree ("Hammundeseiche"). Read as one
+   very engaged person, not a broadening base.
+
+**Suggestions, ranked:**
+1. **[sessie]** Diagnose `scripts/asc_downloads.py`. It has returned the
+   identical 09-17 snapshot for 7 consecutive daily digests, which reads
+   as a dead credential or a silently failing fetch rather than a quiet
+   week. This is the only KPI on the whole page that measures someone
+   deciding rather than arriving (CLAUDE.md's own framing for it), and it
+   has been blind for a week.
+2. **[run]** Hunt photos for Pamplona first. It is the single worst
+   earned-and-wasted page this window: 525 impressions at position 3.7,
+   only 6 clicks (index 0.13), 0 of 14 trees photographed, an estimated
+   40 lost clicks per 10 days, more than every other page on the list
+   combined. Arnhem (3/39 photos, 0 clicks on 221 impressions) and
+   Sao Paulo (0/1 photos, 0 clicks on 214 impressions) are next, each
+   losing an estimated 8 clicks/10d.
+3. **[run]** Stop pointing title/meta fixes at Milan, Berlin, Prague,
+   London, Leiden or Boston; `seolearn.py` now names all seven NOT_DEMAND,
+   meaning their impressions are mostly exact-phrase bot queries. Direct
+   that attention at item 2's earned-and-wasted list instead, where the
+   demand is real and the loss is measured.
+4. **[run]** Look into what actually killed the 09-19 to 09-22 night-run
+   stretch (recent_limit_deaths() / run_health.py's own denial log), since
+   four fully dead days is a bigger gap than a single busy week should
+   produce even against the old 1,000-1,400 min/week budget. Confirm
+   whether today's reset to 1,800/260 minutes is enough to stop it
+   recurring, or whether the cause was something else (a refused-command
+   wall, a dead cron) that the budget reset doesn't touch.
+
+**Watch next week:** whether the reset night-run budget (1,800/260) avoids
+another multi-day stall, whether Pamplona's photo gap closes and its CTR
+moves off 0.13, and whether App Store downloads reporting comes back to
+life.
+
 ## 2026-09-22 (previous UTC day)
 
 **Today: 1 tree submission arrived yesterday (25 total); the machine produced nothing across all 11 knocks in the last 24h (0.5 real minutes total, 0 trees), not a quiet night.**
