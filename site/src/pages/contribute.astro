@@ -208,12 +208,20 @@ const headExtra = ldScript(graph);
   //
   // A privacy request never triggers it: asking for your own data back can
   // never require making an account first.
-  if (!gate.hidden && window.atOpenSignIn) {
-    // After the paint, so the person sees what page they are on behind it
-    // rather than a dialog over a blank screen.
-    requestAnimationFrame(function() {
-      requestAnimationFrame(function() { window.atOpenSignIn(null, 'contribute'); });
-    });
+  //
+  // ON LOAD, and that word is the whole fix. The first version guarded with
+  // `&& window.atOpenSignIn` and ran at parse time, where that helper does not
+  // exist yet: Base renders SIGNIN_JS after this page's own scripts, so the
+  // guard was false and the block skipped itself in silence. It shipped and
+  // did nothing. My harness could not see it either, because the stub in the
+  // harness was defined ABOVE the script under test, which is kinder than the
+  // real page. `load` fires once every inline script has run.
+  if (!gate.hidden) {
+    var openGate = function() {
+      if (window.atOpenSignIn) window.atOpenSignIn(null, 'contribute');
+    };
+    if (document.readyState === 'complete') openGate();
+    else window.addEventListener('load', openGate);
   }
 
   var btn = f.querySelector('button[type="submit"]');
