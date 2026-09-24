@@ -35,6 +35,47 @@ export interface OtherCity {
   lng: number;
 }
 
+/** Where the map opens: the trees that actually cluster, not every outlier
+ * (Hidde, 2026-09-24: Singapore opened zoomed far out because one tree, the
+ * mangrove apples at Chek Jawa on Pulau Ubin, stands 24 km from the other
+ * 33). Every pin still goes on the map and every card stays in the list; only
+ * the opening frame ignores a tree that stands far from the rest.
+ *
+ * The rule, deliberately conservative so a small city is never cropped to
+ * three trees: measure each tree's distance from the median point, keep the
+ * ones within four times the median of those distances or 10 km, whichever is
+ * larger, and only use that core when it drops no more than a quarter of the
+ * trees. 10 km is the floor because anything that close already fits a city
+ * map at zoom 11. Measured over every published city on the day it was
+ * written, it changes the opening frame of 39 of them (Singapore, Hobart,
+ * Osaka, London among them) and crops none to fewer
+ * than three quarters of its trees.
+ *
+ * Computed at build time and shipped as two corners, so the inline script
+ * does no arithmetic and the city page and the translated city page open on
+ * the same frame. Returns null when there is nothing to fit. */
+export function homeBounds(markers: { lat: number; lng: number }[]): [[number, number], [number, number]] | null {
+  if (markers.length < 2) return null;
+  const median = (xs: number[]): number => {
+    const s = [...xs].sort((a, b) => a - b);
+    const m = Math.floor(s.length / 2);
+    return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+  };
+  const mLat = median(markers.map((m) => m.lat));
+  const mLng = median(markers.map((m) => m.lng));
+  const km = (m: { lat: number; lng: number }): number => {
+    const x = (m.lng - mLng) * Math.cos(((m.lat + mLat) / 2) * Math.PI / 180);
+    return 111.32 * Math.hypot(x, m.lat - mLat);
+  };
+  const dists = markers.map(km);
+  const limit = Math.max(4 * median(dists), 10);
+  let core = markers.filter((_, i) => dists[i] <= limit);
+  if (core.length < 2 || markers.length - core.length > markers.length * 0.25) core = markers;
+  const lats = core.map((m) => m.lat);
+  const lngs = core.map((m) => m.lng);
+  return [[Math.min(...lngs), Math.min(...lats)], [Math.max(...lngs), Math.max(...lats)]];
+}
+
 export function cityMapScript(
   markers: WalkMarker[],
   center: [number, number],
@@ -70,8 +111,12 @@ export function cityMapScript(
     ranked.map((c) => ({ url: c.slug, city: c.city, country: c.country, n: c.n, ph: c.ph, lat: c.lat, lng: c.lng }))
   );
 
+  const home = homeBounds(markers);
+
   return mapScript(`
 var markers = ${data};
+// The opening frame: the cluster, not every outlier. See homeBounds().
+var HOME = ${JSON.stringify(home)};
 var map = new maplibregl.Map({
   container: 'map',
   style: '${MAP_STYLE}',
@@ -156,8 +201,7 @@ function updatePanelMode() {
   }
 }
 if (markers.length > 1) {
-  var _b = new maplibregl.LngLatBounds();
-  markers.forEach(function(m) { _b.extend([m.lng, m.lat]); });
+  var _b = new maplibregl.LngLatBounds(HOME[0], HOME[1]);
   var _el = document.getElementById('map');
   var _pad = Math.max(30, Math.min(90, Math.floor(Math.min(_el.clientWidth, _el.clientHeight) * 0.16)));
   map.fitBounds(_b, { padding: _pad, maxZoom: 14.5, duration: 0 });
@@ -266,7 +310,7 @@ markers.forEach(function(m, idx) {
   pins.push(el);
   bounds.extend([m.lng, m.lat]);
 });
-if (markers.length > 1) { map.fitBounds(bounds, { padding: 70, maxZoom: 13 }); }
+if (markers.length > 1) { map.fitBounds(HOME, { padding: 70, maxZoom: 13 }); }
 
 document.querySelectorAll('.tree-card').forEach(function(card, idx) {
   card.addEventListener('click', function(e) {
@@ -425,7 +469,7 @@ function showWholeCity() {
     var nm = document.querySelector('.route-name');
     if (nm) { nm.textContent = w0.name; nm.hidden = !w0.name; }
   }
-  if (markers.length > 1) { map.fitBounds(bounds, { padding: 70, maxZoom: 13 }); }
+  if (markers.length > 1) { map.fitBounds(HOME, { padding: 70, maxZoom: 13 }); }
 }
 document.querySelectorAll('.walk-pick').forEach(function(btn) {
   btn.addEventListener('click', function() {
