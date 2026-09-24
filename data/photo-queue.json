@@ -13266,7 +13266,9 @@
      "author": "Maarten Heerlien from Voorschoten, The Netherlands",
      "lat": 35.714066,
      "lng": 139.795577,
-     "cats": "Category:2013 in Asakusa Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Five-storied Pagoda, Sensoji Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Maarten Heerlien Category:Tokyo Skytree in 2013 Category:Tokyo photographs taken on 2013-04-08 Category:Views of Tokyo Skytree from Sensoji"
+     "cats": "Category:2013 in Asakusa Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Five-storied Pagoda, Sensoji Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Maarten Heerlien Category:Tokyo Skytree in 2013 Category:Tokyo photographs taken on 2013-04-08 Category:Views of Tokyo Skytree from Sensoji",
+     "judged": "reject",
+     "verdict": "Sensoji pagoda and Skytree only. No tree in frame."
     }
    ]
   },
@@ -14875,7 +14877,7 @@
      "source": "inaturalist",
      "obs_location": "48.1991348056,16.3701553333",
      "judged": "reject",
-     "verdict": "iNat bark macro / leaf-only lens flare, no crown, Cadiz standard fail"
+     "verdict": "Backlit upward close-up of leaves. The obs is ~10 m from the pin, but there is no trunk or crown, and the entry is a pair."
     },
     {
      "title": "iNat obs 312171005 (Corylus colurna)",
@@ -17211,7 +17213,9 @@
      "author": "Txllxt TxllxT",
      "lat": 51.514297,
      "lng": -0.098347,
-     "cats": "Category:CC-BY-SA-4.0 Category:Exterior of St. Paul's Cathedral Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:London photographs taken on 2011-06-20 Category:Photographs of London by Txllxt TxllxT Category:Self-published work Category:St. Paul's Cathedral in 2011 Category:St. Paul's Churchyard, London (street) Category:The Blitz"
+     "cats": "Category:CC-BY-SA-4.0 Category:Exterior of St. Paul's Cathedral Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:London photographs taken on 2011-06-20 Category:Photographs of London by Txllxt TxllxT Category:Self-published work Category:St. Paul's Cathedral in 2011 Category:St. Paul's Churchyard, London (street) Category:The Blitz",
+     "judged": "reject",
+     "verdict": "-1 is St Paul's facade with the Blitz memorial disc under an overcast sky, and the planes are not the subject. -2 is a rooftop skyline view."
     },
     {
      "title": "File:North of St Paul's, London EC2 - geograph.org.uk - 1089216.jpg",
@@ -17470,7 +17474,9 @@
      "author": "Hopefully Acceptable Username",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus orientalis Category:Self-published work Category:Victoria Embankment Category:Victoria Embankment Gardens"
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Platanus orientalis Category:Self-published work Category:Victoria Embankment Category:Victoria Embankment Gardens",
+     "judged": "approve",
+     "verdict": "The file is titled 'The Embankment Plane (2)'. Its Commons description names it one of the Great Trees of London, and it is categorised Platanus orientalis / Victoria Embankment Gardens. A low-angle v"
     },
     {
      "title": "File:The Embankment Plane (4).jpg",
@@ -20634,7 +20640,9 @@
      "author": "Christine Matthews",
      "lat": 51.52532847,
      "lng": -0.09086308,
-     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Streets in the London Borough of Islington"
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Streets in the London Borough of Islington",
+     "judged": "reject",
+     "verdict": "All three are geograph street views of Bath and Cayton Street, 132 m from the pin. Street trees at most, not the Quaker Gardens planes."
     },
     {
      "title": "File:Cayton Street, London, EC1 - geograph.org.uk - 3408195.jpg",
@@ -26936,7 +26944,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Luitpoldpark (München) Category:Photographs by User:Rufus46 Category:Trees in Munich"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Luitpoldpark (München) Category:Photographs by User:Rufus46 Category:Trees in Munich",
+     "judged": "reject",
+     "verdict": "General Luitpoldpark lawn with a row of trees. No hackberry is identifiable as the subject."
     },
     {
      "title": "File:Luitpoldpark Muenchen-35.jpg",
@@ -26984,7 +26994,9 @@
      "author": "Flocci Nivis",
      "lat": 48.16932,
      "lng": 11.56731,
-     "cats": "Category:CC-BY-4.0 Category:Images by User:FlocciNivis Category:Luitpoldpark (München) Category:Munich photographs taken on 2020-08-06 Category:Self-published work Category:Stone benches in Munich Category:Sunsets of Munich"
+     "cats": "Category:CC-BY-4.0 Category:Images by User:FlocciNivis Category:Luitpoldpark (München) Category:Munich photographs taken on 2020-08-06 Category:Self-published work Category:Stone benches in Munich Category:Sunsets of Munich",
+     "judged": "reject",
+     "verdict": "The stone bench of the Baeckerlinde (a lime) against the sun. Wrong tree and backlit."
     },
     {
      "title": "File:Aerial image of Luitpoldpark in Munich (view from the southwest).jpg",
@@ -27158,7 +27170,9 @@
      "author": "Achim Lammerts (Syntaxys)",
      "lat": 48.1067,
      "lng": 11.552633,
-     "cats": "Category:CC-BY-SA-4.0 Category:Flaucher in 2013 Category:Information field template with formatting Category:Munich photographs taken on 2013-04-25 Category:Protected areas with known WDPA-ID Category:Self-published work Category:Syntaxys/Alle Bilder (chronologisch) Category:Syntaxys/Entlang der Isar Category:Syntaxys/Natur/LSG Isarauen Category:Taken with AF-S DX Zoom-Nikkor 18-70mm/3.5-4.5G IF-ED Category:Taken with Nikon D300 Category:User custom license tags"
+     "cats": "Category:CC-BY-SA-4.0 Category:Flaucher in 2013 Category:Information field template with formatting Category:Munich photographs taken on 2013-04-25 Category:Protected areas with known WDPA-ID Category:Self-published work Category:Syntaxys/Alle Bilder (chronologisch) Category:Syntaxys/Entlang der Isar Category:Syntaxys/Natur/LSG Isarauen Category:Taken with AF-S DX Zoom-Nikkor 18-70mm/3.5-4.5G IF-ED Category:Taken with Nikon D300 Category:User custom license tags",
+     "judged": "reject",
+     "verdict": "All three (-3, -4, -5) are Isar river landscapes 257-315 m from the pin. No birch is the subject."
     },
     {
      "title": "File:2015-10-24 D300-3666 Achim-Lammerts Munich-Isar-Flaucher.jpg",
@@ -28934,7 +28948,9 @@
      "author": "acediscovery",
      "lat": 38.343056,
      "lng": -0.484444,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Paseo de la Explanada de España (Alicante) Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Paseo de la Explanada de España (Alicante) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Palms on the Explanada silhouetted against the sky. Not a fig, wrong subject."
     }
    ]
   },
@@ -29076,7 +29092,9 @@
      "author": "Superchilum",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Ficus macrophylla in the Land of Valencia Category:Parque de Canalejas, Alicante Category:Photographs taken on 2014-10-31 Category:Self-published work Category:Trees in Alacant"
+     "cats": "Category:CC-BY-SA-4.0 Category:Ficus macrophylla in the Land of Valencia Category:Parque de Canalejas, Alicante Category:Photographs taken on 2014-10-31 Category:Self-published work Category:Trees in Alacant",
+     "judged": "hold",
+     "verdict": "Good daylight shots of a big Moreton Bay fig. -2 is in Canalejas park: sandy avenue, lion pedestal, buttress roots in a tiled planter. But the park is a whole row of near-identical figs, and none of t"
     },
     {
      "title": "File:Alicante big tree 4.JPG",
@@ -29648,7 +29666,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "-27.47655,153.0294805"
+     "obs_location": "-27.47655,153.0294805",
+     "judged": "reject",
+     "verdict": "The observer identified this as Ficus microcarpa, not our F. macrophylla, and the obs sits ~45 m from the pin. It is also a trunk and root close-up with no crown."
     },
     {
      "title": "iNat obs 263548029 (Ficus microcarpa)",
@@ -29686,7 +29706,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "-27.4776966667,153.0312195"
+     "obs_location": "-27.4776966667,153.0312195",
+     "judged": "reject",
+     "verdict": "The obs is ~35 m from the pin. -7 is a dark, sun-flared shot looking up into the rainforest canopy. -8 is a lower-trunk close-up. Neither reads as a whole tree."
     },
     {
      "title": "iNat obs 263647303 (Macadamia integrifolia)",
@@ -29743,7 +29765,9 @@
      "author": "Lenny K Photography from Sydney, Australia",
      "lat": -27.475762,
      "lng": 153.030038,
-     "cats": "Category:Brisbane Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2"
+     "cats": "Category:Brisbane Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2",
+     "judged": "reject",
+     "verdict": "A graffiti-carved bamboo culm close-up. Not a banyan."
     },
     {
      "title": "iNat obs 263547839 (Ficus benghalensis)",
@@ -29821,7 +29845,9 @@
      "author": "Kgbo",
      "lat": -27.474892,
      "lng": 153.027589,
-     "cats": "Category:Australia photographs taken on 2020-01-07 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:Files with coordinates missing SDC location of creation Category:January 2020 in Brisbane Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2020 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max"
+     "cats": "Category:Australia photographs taken on 2020-01-07 Category:CC-BY-SA-4.0 Category:Christmas 2019 in Australia Category:Christmas in Brisbane Category:Christmas trees in 2019 Category:Christmas trees in Brisbane Category:Files with coordinates missing SDC location of creation Category:January 2020 in Brisbane Category:Parliament House, Brisbane Category:Photographs by Kgbo taken in 2020 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone XS Max",
+     "judged": "reject",
+     "verdict": "Parliament House facade with a Christmas tree. No Cook pine as the subject."
     },
     {
      "title": "File:Parliament House, Brisbane, Queensland with Christmas tree in 2019, 02.jpg",
@@ -39643,7 +39669,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Hartmannshofer Bach Category:Landschaftsschutzgebiet Kapuzinerhölzl und Hartmannshofer Wald Category:Photographs by User:Rufus46 Category:Protected areas with known WDPA-ID"
+     "cats": "Category:CC-BY-SA-3.0 Category:Hartmannshofer Bach Category:Landschaftsschutzgebiet Kapuzinerhölzl und Hartmannshofer Wald Category:Photographs by User:Rufus46 Category:Protected areas with known WDPA-ID",
+     "judged": "reject",
+     "verdict": "All three (-6, -7, -8) are winter views of the Hartmannshofer Bach through ordinary woodland. No red oak is the subject."
     },
     {
      "title": "File:Hartmannshofer Bach im Hartmannshofer Park Muenchen-12.jpg",
@@ -43659,7 +43687,9 @@
      "author": "Birkett83",
      "lat": -27.442292,
      "lng": 153.047136,
-     "cats": "Category:Australia photographs taken on 2024-09-04 Category:Australian–American Memorial, Newstead, Brisbane Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:September 2024 in Brisbane"
+     "cats": "Category:Australia photographs taken on 2024-09-04 Category:Australian–American Memorial, Newstead, Brisbane Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:September 2024 in Brisbane",
+     "judged": "reject",
+     "verdict": "All three (-3, -4, -5) are the Australian-American Memorial column. The trees in frame are Norfolk pines and a sausage tree, not a crow's ash."
     },
     {
      "title": "File:Australian–American Memorial 02.jpg",
@@ -83806,7 +83836,9 @@
      "licence": "CC BY",
      "author": "(c) Floyd A. Reed, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "21.299359,-157.817852"
+     "obs_location": "21.299359,-157.817852",
+     "judged": "approve",
+     "verdict": "iNat obs 2557562 is within about 5 m of our pin (checked via API, accuracy 15 m). Whole baobab in leaf: a swollen grey trunk pressed against a modernist concrete building on pilotis, which is exactly "
     },
     {
      "title": "iNat obs 2557562 (Adansonia digitata)",
@@ -83841,7 +83873,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "21.2978666667,-157.8206305556"
+     "obs_location": "21.2978666667,-157.8206305556",
+     "judged": "reject",
+     "verdict": "Close-up of a single cannonball flower. The obs is at Sinclair Circle, so it is the right tree, but no crown or trunk is shown (fails standard 2)."
     }
    ]
   },
@@ -87376,7 +87410,9 @@
      "author": "Cliff from Arlington, Virginia, USA",
      "lat": 21.271766,
      "lng": -157.820999,
-     "cats": "Category:CC-BY-2.0 Category:Elephas maximus in Honolulu Zoo Category:Elephas maximus indicus in zoos Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Photographs by Carl Clifford Category:Taken with Canon EOS 5D Category:United States photographs taken on 2007-11-29"
+     "cats": "Category:CC-BY-2.0 Category:Elephas maximus in Honolulu Zoo Category:Elephas maximus indicus in zoos Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Photographs by Carl Clifford Category:Taken with Canon EOS 5D Category:United States photographs taken on 2007-11-29",
+     "judged": "reject",
+     "verdict": "Both candidates are zoo animal photos (an elephant and a peafowl) with no banyan in frame."
     },
     {
      "title": "File:Indian Peafowl (Pavo cristatus) (2855058812).jpg",
@@ -97513,7 +97549,9 @@
      "lat": 35.64166667,
      "lng": 139.73461111,
      "cats": "Category:CC-BY-SA-3.0-migrated-with-disclaimers Category:Files with coordinates missing SDC location of creation Category:GFDL-en Category:Kyu-Hosokawa-tei no Shii Category:License migration completed",
-     "source": "wikidata/Q11511121"
+     "source": "wikidata/Q11511121",
+     "judged": "approve",
+     "verdict": "The Wikidata-linked file for this tree (Q11511121), 0 m from pin. A squat, barrel-thick trunk under a dense evergreen dome that fills the frame. The Takanawa fire-station sign fits the location. Dayli"
     },
     {
      "title": "iNat obs 44451642 (Castanopsis sieboldii)",
@@ -97631,7 +97669,9 @@
      "author": "Sakaori (talk)",
      "lat": 35.595395,
      "lng": 139.65885,
-     "cats": "Category:Akiba no Kuromatsu Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Sony HDR-CX550"
+     "cats": "Category:Akiba no Kuromatsu Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Sony HDR-CX550",
+     "judged": "approve",
+     "verdict": "The file is named for this tree ('Pinus thunbergii of Akiba') and sits 0 m from the pin. Straight trunk to about 7 m, then an umbrella crown, exactly as the story says. Clear blue-sky daylight and cen"
     },
     {
      "title": "File:Pinus thunbergii of Akiba.B.JPG",
@@ -97686,7 +97726,9 @@
      "author": "さかおり",
      "lat": 35.872163,
      "lng": 139.626907,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Yono no Okaya"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Yono no Okaya",
+     "judged": "approve",
+     "verdict": "The file is named for the tree ('Yono no Okaya Torreya Nucifera B'), 23 m from pin. A tall, dense conifer fills the centre, with a temple building at left and a stone-post fence at its foot. Blue-sky "
     },
     {
      "title": "File:Yono no Okaya Torreya Nucifera C.jpg",
@@ -97733,7 +97775,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-2.0 Category:Flickr images uploaded by Flickr upload bot Category:Yougou no Matsu",
-     "source": "wikidata/Q11488086"
+     "source": "wikidata/Q11488086",
+     "judged": "reject",
+     "verdict": "Identity is right (Wikidata Q11488086; a propped, sprawling pine at Zenyoji). But it is an under-canopy upward shot of branches and support poles, silhouetted against a white overcast sky, with no rea"
     }
    ]
   },
@@ -98736,7 +98780,9 @@
      "author": "Daniel Ramirez from Honolulu, USA",
      "lat": 21.274972,
      "lng": -157.824823,
-     "cats": "Category:Banyans in Hawaii Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Waikiki"
+     "cats": "Category:Banyans in Hawaii Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Waikiki",
+     "judged": "approve",
+     "verdict": "Geotag 0 m from pin. Daylight fisheye shot of a banyan: a fused mass of aerial-root pillars under a broad glossy crown beside Kalakaua Ave, with a bike lane and hotels behind. That fits the 40 m regis"
     },
     {
      "title": "iNat obs 100619312 (Ficus benghalensis)",
@@ -104040,7 +104086,9 @@
      "author": "Asanagi",
      "lat": 35.722072,
      "lng": 139.713958,
-     "cats": "Category:CC-Zero Category:Creative Commons CC0 1.0 Universal Public Domain Dedication missing SDC copyright license Category:Famous Ginkgo biloba in Japan Category:Files with coordinates missing SDC location of creation Category:Homyo-ji (Toshima, Tokyo) Category:Self-published work Category:Self-published work missing SDC copyright license"
+     "cats": "Category:CC-Zero Category:Creative Commons CC0 1.0 Universal Public Domain Dedication missing SDC copyright license Category:Famous Ginkgo biloba in Japan Category:Files with coordinates missing SDC location of creation Category:Homyo-ji (Toshima, Tokyo) Category:Self-published work Category:Self-published work missing SDC copyright license",
+     "judged": "approve",
+     "verdict": "'Homyo-ji Ginkgo tree' (Homyo-ji is the Kishimojin temple), 35 m from pin, May 2026. A very tall ginkgo in full leaf behind a shimenawa-hung fence, with an explanation board and red Inari torii at its"
     }
    ]
   },
@@ -105187,7 +105235,9 @@
      "author": "Gugerell",
      "lat": 48.22669183,
      "lng": 16.334795,
-     "cats": "Category:CC-Zero Category:Ebner-Eschenbach-Park Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Ebner-Eschenbach-Park Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work",
+     "judged": "reject",
+     "verdict": "All three Gugerell files (-4, -6, -7) are general park and playground views. No pine is the subject, and in -6 and -7 none can be picked out."
     },
     {
      "title": "File:Wien 18 Ebner-Eschenbach-Park d.jpg",
@@ -105305,7 +105355,9 @@
      "author": "GuentherZ",
      "lat": 48.19242833,
      "lng": 16.42857,
-     "cats": "Category:Austria photographs taken on 2014-03-20 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)"
+     "cats": "Category:Austria photographs taken on 2014-03-20 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 818 (Wien-Leopoldstadt)",
+     "judged": "approve",
+     "verdict": "GuentherZ's documented series for Naturdenkmal 818 (Belvedereallee Traubeneiche), 14 m from pin. The whole oak stands in sun on the allee edge, with a huge spreading crown and people on a bench for sc"
     },
     {
      "title": "File:Naturdenkmal 818 2014-03-20 (13) Wien02 Belvedereallee Traubeneiche GuentherZ.JPG",
@@ -105343,7 +105395,9 @@
      "author": "GuentherZ",
      "lat": 48.20388,
      "lng": 16.35407833,
-     "cats": "Category:Austria photographs taken on 2014-05-14 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 820 (Wien-Neubau)"
+     "cats": "Category:Austria photographs taken on 2014-05-14 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Photographs by GuentherZ/Wien Category:Self-published work Category:Taken with Nikon D5200 Category:Uploaded via Campaign:wle-at-nd Category:Wiener Naturdenkmal 820 (Wien-Neubau)",
+     "judged": "reject",
+     "verdict": "Shows two trees flanking a garage door. The centre band is building, not tree (fails the card crop), and nothing shows which of the pair is 'the elder'."
     }
    ]
   },
