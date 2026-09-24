@@ -10,6 +10,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-24 (session) - A second photograph when adding a tree: the sign beside it
+
+Hidde: "vaak staat er een bordje bij een oude boom dus is het best handig om naar een extra foto te vragen". A sign names the species, often the age and the tree itself, so it settles which trunk somebody means and is the cheapest second source a lead can have.
+
+- **App**: the add-a-tree form now asks "Is there a sign by the tree?" under the trunk question, with one quiet "Photograph the sign" button (camera, or the library where there is no camera). It shows a thumbnail with Remove once taken. Optional, and it adds no step. The file is stored as `<id>-sign.jpg`, synced to `sightings.sign_photo` in the private bucket only, never copied to the shared bucket behind the private page, and removed with the tree or the account.
+- **Web**: /contribute asks the same question with "Add a photo of the sign". The strings are in UIStrings for all seven languages. The file hangs off the submission as `sign_photo`.
+- **Queue**: `sightings_inbox.py` downloads the sign to `out/sightings/<id>-sign.jpg` and puts it on queue entries and leads. `--judge` prints `SIGN:` so a judge can read it. It is evidence and never published: `sightings_publish.py` only ever publishes the tree's file. The tips query tested for "photo" in a missing-column error, and "sign_photo" contains that word, so an optional column is now dropped by name.
+- Convention: iNaturalist (more photos on one observation, never required). The entry is in CONVENTIONS.md. Offered when adding a tree only, not when ticking off one we map.
+- Looked at: the describe form on iPhone 17 Pro (the row sits under the hug chips, same capsule style). appfit found 0 findings on 72 screens. The web script parses and preflight, parity, copy and net checks are clean. Not seen: the thumbnail state after a sign is taken, because the simulator has no camera and no launch argument stages one.
+
+FOR HIDDE: paste `supabase/PENDING.sql` (one line, `submissions.sign_photo`). The live API confirms the column is missing. Until you paste it, the website form drops the sign and still sends the tip. The app is unaffected because `sightings.sign_photo` is already live.
+
 ## 2026-09-24 (session) - The tree page is the app's, on every tree in eight languages
 
 Hidde: "look at the design of the detail tree page of the app and literally translate that to web", approved as a mockup at phone and desktop width, with his own change: the big button is **Open in the app** (`/open?tree=`, opens the tree in the app or goes to the App Store).
