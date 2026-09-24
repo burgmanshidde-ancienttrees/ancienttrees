@@ -1,53 +1,62 @@
-## HIDDE'S HOLIDAY LIST, triaged 2026-09-24
+## HIDDE'S HOLIDAY LIST, triaged 2026-09-24, then judged
 
-Hidde handed over his own list from Japan and asked for the least input
-possible: a session sorts it, does what it can alone, and batches the rest into
-one message of numbered yes/no questions. Order below is effect over effort.
-Strike an item by deleting it and saying so in LOG.md. Items marked SESSION
-need eyes or the app toolchain and are not for a night run (rung 9 rules).
+Hidde's own list from Japan. His framing, 2026-09-24: these are thoughts, not
+decisions, "niet wetende of het het product beter maakt", so every item carries
+a verdict and the reason, and a session is expected to argue with them rather
+than execute them. Order is effect over effort. Delete an item when done and say
+so in LOG.md. SESSION = needs eyes or the app toolchain, not a night run.
 
-### Already done or already ruled (told him, nothing to build)
+**The finding that ranks half of this list (DATA.md, measured 2026-09-24):** the
+query shape that brings people is "oldest tree in <place>" (Lisbon 52, Singapore
+43, Iceland 30, Netherlands 25, Seattle 24 impressions). The collections that
+climb are the GENERATED superlatives (trees-older-than-400-years at 179 and
+position 13.6, tallest-trees at 75); the hand-themed ones (autumn colour,
+planted by kings) take close to nothing. So: superlative and place pages yes,
+themed and seasonal lists no.
+
+### Already done or already ruled
 - Vote button on translated tree pages: live in all seven languages since 2026-09-12.
-- why_go: removed everywhere 2026-09-12; only code comments mention it.
-- Reader GPS vs our pin: ruled 2026-09-08. A reader's fix beats a pin that says approximate, never one that says confirmed.
-- Roadtrip trees outside cities: ruled 2026-08-31 (single-famous-tree place) and 2026-09-03 (rung 0c); the famous-trees lane is running.
-- Tree of the Year: scouted, verdict "not a register, worth it as a lead list" (OPEN_DATA_SURVEY.md). The build step is below.
+- why_go: removed everywhere 2026-09-12.
+- Reader GPS vs our pin: ruled 2026-09-08. A reader's fix beats an approximate pin, never a confirmed one.
+- Roadtrip trees outside cities: ruled 2026-08-31 and 2026-09-03 (rung 0c), running.
+- Tree of the Year: scouted, "not a register, worth it as a lead list" (OPEN_DATA_SURVEY.md).
 
-### A session or run does it, no input needed
-1. Canada search shows a map of mostly the US. Bug. SESSION.
-2. copycheck flags "Tap one to see how to tell it apart." (CollectSheet.swift). Trivial.
-3. A reader's tree with no name falls back to "A tree I found"; use species + place instead ("Oak near Nara Park"). Trivial, app.
-4. Photo added to an EXISTING tree gives no feedback and does not show in My trees. App + web. SESSION.
-5. Reader-added trees do not join the map's numbered clusters when zoomed out, and their pin is not the size of the photo pins. App + web. SESSION.
-6. Mobile web filters look bad. SESSION, needs eyes at 375px.
-7. Place labels as clickable chips on a tree page, both surfaces: city AND country (Sydney / Australia), US states (Kentucky, Hawaii), island groups (Azores, Martinique) beside their country. Needs a region field in the feed (answer, not rule).
-8. "I have seen this one" behaves differently on web than in the app; find out what and match the app. SESSION.
-9. Poland country page has no cover photo; check og:image on country pages so Search shows a picture.
-10. Coverage steer, Hidde named these so rule 1(d) is lifted for them: New Zealand beyond Auckland; more islands and Australia (they catch on in Search); US and UK, where most clicks come from and coverage is thin.
-11. Okinawa: Search demand is probably "okinawa", not "naha". Check the queries, then rename the place to Okinawa with Naha redirected (hard rule 3), if demand says so. Same test for other small islands.
-12. Tree of the Year: import winners and nominees as LEADS (not trees) per the scouting table; each still meets the two-source bar. Start with the two European winners already in leads (Pecs almond 2019, Felsomocsolad lime 2012).
-13. Better collections (his words). First: the ten most remarkable trees of Japan (Contract D, fits). Then more collections led by the grouping-pages table, where trees-older-than-400-years is the one climbing.
-14. Oldest trees per country: country pages exist; check they lead with the oldest trees and that search finds them.
-15. Welcome mail on account creation: benchmark (AllTrails, komoot, Strava), draft per PRODUCT_COPY/PITCH_VOICE. Wiring may need his Supabase/mail settings; if so that one step goes to him.
-16. Photos without rights: add one line at upload ("only photographs you took yourself") on both surfaces; the takedown path already exists.
-17. Sign-in parity web vs app: compare the two flows against CONVENTIONS.md 2026-09-18 and align. SESSION.
-18. Homepage: put the real map in the hero instead of three drawings (his own note: the app IS the map, the site is a brochure about it). SESSION, visual.
-19. Singapore: a far-away tree zooms the city map out until it is useless. Fit the map to the walkable cluster, not to every outlier. Check other cities for the same. SESSION.
-20. Singapore gets a lot of visits: depth is allowed there (rule two), so a photo pass on its trees.
-21. The list of cities at the foot of a city page grows with every city opened. Replace it with nearby cities plus a link to /cities. Both languages' pages.
-22. Search always within reach, the AllTrails way (a search field on every screen, not only on the map). Convention check first. Both surfaces.
-23. Menu: sign in and sign up must not sit below the fold on a phone.
-24. Adding a tree: old trees often have a sign beside them. Offer an optional second photo "of the sign, if there is one"; it is free verification. Both surfaces.
-25. Magic-link mail looks bad: benchmark and restyle together with item 15 (same template work).
+### DO: clear value
+1. Broken: Canada search shows a map of mostly the US. Singapore's map zoomed out by one far tree (fit to the cluster, check other cities). Weekly analysis failing since 09-21. SESSION.
+2. Photo added to an EXISTING tree: no feedback, not in My trees. CONVENTIONS.md "Landing after you have added something" already has the answer (land on the thing, one-line acknowledgement, state written on it); the existing-tree path never got it. Both surfaces. SESSION.
+3. "Oldest tree in <country/city>" answered on every country and city page, first sentence, and findable in search. The biggest query class we have.
+4. Optional second photo "of the sign, if there is one" when adding a tree. A sign often names species, age and the tree itself: it answers "which trunk" and verifies in one tap. Both surfaces.
+5. One line at upload: "Only photographs you took yourself." Legal floor; takedown path already exists.
+6. City list at the foot of a city page: replace with nearby cities plus a link to /cities. Grows with every city and dilutes internal links.
+7. Singapore photo pass (rule two allows depth there).
+8. Japan: "the ten most remarkable trees of Japan" as a generated-style superlative collection, not a themed one.
+9. Okinawa vs Naha: read the queries; if people search the island, rename the place (Naha redirects, hard rule 3). Same test for other small islands. No new page type needed: the place container can be an island already.
+10. Tree of the Year winners and nominees as LEADS. A public vote is exactly the "people say it is worth the visit" evidence of 2026-09-08. Facts only, never their photos.
+11. Magic-link mail restyle: every sign-in sees it and an ugly one reads as spam. Benchmark first.
+12. Trivial: copycheck line in CollectSheet.swift; "A tree I found" fallback becomes species + place.
 
-### Waiting on one answer from Hidde
-- Season and month collections ("best trees in May"): the 2026-08-26 decision made the season story Plus and retired /in-season. Public month pages would reverse that.
-- Satellite view (Polarsteps): a new map tile provider is a product dependency (hard rule 5) and good imagery usually costs money.
-- Province / island-group pages (Kyushu): a new page type needs a contract in SEO_GEO_BLUEPRINT.md (hard rule 7).
-- My trees vs Seen: one list with a filter, or two tabs.
+### MAYBE: look first, then decide
+13. Coverage steer to US, UK, NZ, islands, Australia. Right instinct, but read the queries first: US and UK clicks may be coming for famous trees we already have, and London is gated (Woodland Trust). Islands "catching on" is 11 to 55 impressions a page, too thin to steer on alone.
+14. Mobile web filters "lelijk": look at 375px, fix against CONVENTIONS.md "Filters over a map".
+15. Sign in above the fold in the menu: CONVENTIONS.md 2026-09-18 measured the phone menu; check whether it drifted.
+16. Search always within reach (AllTrails): AllTrails puts it on Explore, not on every screen. Check where ours is missing before building.
+17. Sign-in parity web vs app: benchmarked 2026-09-18; list the actual differences, most may be the deliberate ones recorded there.
+18. Clickable labels (Sydney / Australia, US states, Azores): the app half (city and country chips on a tree page) is cheap and consistent. State and island-group PAGES are a new page type, and nobody searches "trees in Kentucky" at volume. Chips yes, pages no.
+19. "I have seen this one" behaves differently on web: find out what.
+20. Poland cover photo and og:image on country pages: cheap, small effect (sharing, not ranking).
+21. Welcome mail after sign-up: nice, low effect at today's volume (a handful of sign-ups). After item 11, reusing its template.
+22. Reader trees joining the map clusters and pin size: low effect, they are your own trees on your own map. Only if trivial.
 
-### Not now
-- Translating every species page: rung 0b translates pages whose English twin already earns impressions; species pages mostly do not.
+### DON'T, with the reason
+- Season and month collections: themed lists do not pull (see the finding above), and the 2026-08-26 decision put the season story in Plus.
+- Satellite view: a new paid tile provider (hard rule 5) for something a photo and a recognition line do better, which is telling which trunk.
+- Province pages (Kyushu): new page type, no search demand visible. Island names go in the place container instead (item 9).
+- Translating every species page: they earn few impressions in English (rung 0b).
+- More collections for their own sake: improve the ones that climb instead.
+- Homepage redesign: PARKED by Hidde 2026-09-24, "wacht daar sws maar mee". Nobody knows yet what it should be.
+
+### Open for Hidde, no rush
+- My trees vs Seen: AllTrails keeps Lists (want to go) and Completed (been) apart, because they are two intents, plan and trophy. Check the current app (the 09-18 fix split My trees and Favourites) before proposing anything.
 
 ## TRANSLATION: WHAT IS STILL OPEN (written 2026-09-17, after the seven-language rollout)
 
