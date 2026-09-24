@@ -325,10 +325,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2847650/large.jpg",
+        "license": "CC BY",
+        "attribution": "Floyd A. Reed, via iNaturalist",
+        "status": "approved",
+        "width": 615,
+        "height": 1024
       },
       "verify_notes": "Register: Hawaii Exceptional Trees list, id 1294, species Adansonia digitata, locality 'UHM campus near Art building', vitality Excellent, no girth/height recorded in that row. UH's own 2023 arboretum news piece says UH Manoa is home to 'the largest Baobab tree in the United States', located at the Art Building, 2535 McCarthy Mall, and that the building was designed around the then-30-year-old tree when Gilmore Hall (built 1935) was demolished in 1973, implying the tree predates 1943 and was already established by 1935. ilind.net (2019, local Honolulu civic blogger) independently corroborates: a photo from around 1972 shows the tree already mature beside old Gilmore Hall before demolition; UH art faculty and students insisted the tree be saved and the new building built around it. edohawaii.com gives a tree-specific coordinate (21.2994, -157.81798) and photos of people at the base for scale. Age: 'the then 30-year-old tree' in 1973 is UH's own figure via secondary sources, not a planting record; treated loosely as circa-1943 planting giving roughly 80-90 years by 2026, kept broad rather than sharpened. No measured girth found in any source. Distinct from the Ala Moana Beach Park baobab grove (an ensemble with no single standout specimen, set aside as not a collectible point) and from Foster Botanical Garden's baobab (already published as hnl_001). Alive-now evidence: UH's own arboretum feature, published 2023-04-21, describes the tree in the present tense as a current campus landmark.",
       "story": "When the University of Hawaii tore down Gilmore Hall in 1973, one thing did not move. Art faculty and students had grown fond of the baobab already standing beside the old building, and when its replacement went up, the tree stayed exactly where it was and the new Art Building was built around it. More than fifty years later it still stands pressed against the exterior wall, close enough that photographs make it look almost part of the structure.\n\nThe University calls it the largest baobab in the United States, and the claim is plausible: baobabs are native to Africa and Madagascar and rarely reach this size far outside the tropics they evolved in, let alone on a university campus in the middle of the Pacific. The tree was already about 30 years old when the building rose around it, which puts its planting somewhere in the early 1940s, before Hawaii became a state.\n\nNobody has taped its girth for the record, and no register lists one. What survives instead is the story everyone on campus already knows: a tree stubborn enough, and loved enough, that an entire building changed shape to keep it standing.",
@@ -613,10 +615,12 @@
       "story": "The register puts forty metres of circumference around this tree, and not one centimetre of it is a trunk.\n\nBanyans grow sideways and downward. The limbs throw out aerial roots, the roots reach the sand and thicken into pillars, and the pillars fuse into a mass that a tape measure has to treat as one object because there is no honest way to treat it as several. Honolulu's exceptional tree register, set up under a 1975 state law that let the counties protect individual trees by name, records this one at 4,053.8 centimetres around and about 21 metres tall, vitality good. That circumference is the whole fused base rather than a stem, and it cannot be turned into an age: growth rate dating assumes a single trunk, and nothing about a banyan is single.\n\nSo nobody knows how old it is. No planting date has surfaced anywhere, which is a strange gap for a tree with a stage underneath it.\n\nThe Hula Mound sits directly beneath the crown, on Kuhio Beach, and on Saturday evenings the free hula and music shows run there with the banyan as the roof. The Duke Kahanamoku statue stands about sixty metres up the sand. No gate, no ticket, no closing time.\n\nIf anyone has a date for it, we will take it.",
       "how_to_recognise": "You can recognise it by the aerial roots dropping from the limbs and thickening into extra trunks, forty metres round the fused base. It stands over the Kuhio Beach Hula Mound, sixty metres from the Duke Kahanamoku statue.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Looking_up_the_banyan_tree_in_Waikiki_%2829411145821%29.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Daniel Ramirez, via Wikimedia Commons",
+        "status": "approved",
+        "width": 6000,
+        "height": 4000
       },
       "age_min": null,
       "age_max": null
