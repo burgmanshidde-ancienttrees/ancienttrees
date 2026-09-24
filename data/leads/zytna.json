@@ -1,0 +1,33 @@
+{
+  "city": "Zytna",
+  "country": "Poland",
+  "city_slug": "zytna",
+  "note": "Dab Eliasz (zyt_001), verified 2026-09 in data/research/famouspoland-southA-verified.json, is held rather than published: the verifying pass itself flagged that this solitary forest oak would not pass the single-famous-tree destination test on its own merits (no register standing above others, no independently-confirmed legend, no crowd of secondary coverage), and it does not clear the four-tree floor alone. Kept here as a seed for a future pass, either finding nearby companions in gmina Lyski or folding it into a wider Rybnik County register cluster.",
+  "leads": [
+    {
+      "id": "zyt_001",
+      "name": "Dab Eliasz",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 460,
+      "lat": 50.10075,
+      "lng": 18.32982,
+      "status": "lead",
+      "location": {
+        "address": "Las Zyczynski (Zyczynski Forest), beside a dirt forest road, right side, about 600m from the forester's lodge, Zytna, gmina Lyski, Rybnik County, Slaskie Voivodeship, Poland",
+        "neighbourhood": "Zytna, gmina Lyski"
+      },
+      "verified_sources": [
+        "https://www.lyski.pl/p,95,pomniki-przyrody",
+        "https://commons.wikimedia.org/wiki/File:Cyklotrasa_330Z,_%C5%BBytna,_gmina_Lyski,_okres_Rybn%C3%ADk,_Polsko_01.jpg"
+      ],
+      "access": "Free; stands on a dirt forest road in Las Zyczynski, a public State Forest (Lasy Panstwowe) tract. No gate or restriction noted in the source.",
+      "transport": "Rural forest location outside the village of Zytna; no public transport reaches the road, best reached by car or bicycle (it sits on marked cycle route 330Z).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "TWO SOURCES: (1) the Gmina Lyski official municipal website's own pomniki przyrody register page (lyski.pl/p,95), fetched and read directly (not a search summary) - this is a primary official record, functionally equivalent to a municipal register entry, giving: name Dab Eliasz, designated as a natural monument 2017-10-20 by Uchwala Nr RG.0007.73.2017 of the Gmina Lyski council (28 September 2017), species Dab szypulkowy / Quercus robur, height 28m, DBH (piersnica) 146cm, girth (obwod) 460cm. Located in Las Zyczynski forest, beside a dirt forest road, on the right side, about 600m from the forester's lodge. Notable feature: a fist-sized stone is grown into the trunk at 3.5m height, just below an oval hollow, giving it a one-eyed-Cyclops appearance -- locals reportedly also call it 'the oak with an eye'. (2) The Wikimedia Commons photo category 'Dab Eliasz w Zytnej' (File:Cyklotrasa_330Z... by Fry72, CC BY-SA 4.0, taken 2024), whose camera-location EXIF/geodata (50.100750, 18.329820) matches the register's description and the brief's coordinate almost exactly, and whose category name independently names this specific tree -- this both corroborates the tree's existence/location and gives recent (2024) photographic evidence it is alive. CAUTION FLAGGED: an unrelated WebSearch AI summary claimed a 'Dab Eliasz' burned down completely in vandalism in November 2010; that claim traces to search snippets that appear to conflate this tree (Zytna, gmina Lyski, Slaskie) with an unrelated place spelled similarly (gmina Zytno, Lodzkie voivodeship, which turned up in the same search). Per the search-summary-is-a-lead-never-a-source rule, this was NOT used, and no fetched primary source anywhere mentions fire or destruction -- the tree was formally designated a monument in 2017, seven years AFTER the alleged 2010 fire, which itself argues against the two events being the same tree. A second WebSearch summary also independently reported a folk legend (named for the prophet Elijah after supposedly surviving being set alight by Soviet soldiers in WWII, then 'reviving') and a 'Tree of the Year 2011' (Drzewo Roku 2011) nomination with a slightly different girth (452cm vs the register's 460cm, plausibly a different measurement year) -- this legend/measurement could not be confirmed on a primary page (swietodrzewa.pl returned a raw JPEG, not parseable text, on two attempts) so it is recorded here as UNVERIFIED COLOUR for a future writer to use with caution or drop, not as a sourced fact. No age given by any source; do not estimate one, as no growth-rate basis was found for this specimen. DESTINATION TEST: this is a solitary village/forest tree with no other remarkable trees nearby (nearest other candidate in this pass, Raciborz, is about 20km away) -- would NOT pass the single-famous-tree-destination test on its own merits (no register standing above others, no major legend confirmed independently, no crowd of secondary coverage). Held as a lead rather than published, 2026-09-24."
+    }
+  ]
+}

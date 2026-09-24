@@ -18,6 +18,18 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-24 - Christchurch published (6 trees) and 4 Polish Tree of the Year winners each shipped as their own place
+
+Finished two claims an earlier attempt this window left standing.
+
+**Christchurch, New Zealand: new city, 6 trees.** A write pass had already turned 4 of 6 verified trees in `data/research/christchurch-verified.json` into stories before the attempt stopped; finished the remaining two (chc_005, Latimer Square, triaged the injured after the 2011 earthquake; chc_006, Victoria Square, six years inside the Red Zone) and merged all six into `data/cities/christchurch.json`. All register-sourced (CCC District Plan schedule of significant trees, CC BY 4.0), all approximate pins, no photos yet (photo hunting is a separate pass). Oldest documented: the Albert Edward Oak, planted 1863 for a royal wedding.
+
+**Four Polish Tree of the Year winners, each its own place**, from `data/research/famouspoland-batch5-verified.json` (fully verified, awaiting only stories): Deblin's Grot Oak (Poland's first-ever Drzewo Roku winner, 2011), Krasnystaw's Kneeling Tree (a 65-year Box Elder that won on fame rather than age, 2018), Wojslawice's Serce Ogrodu (a copper beech that won Poland 2023 and the European Tree of the Year 2024 outright), and Kozy's Platan Klonolistny (2012 winner among the palace park's roughly 480 trees). Each ships solo under the 2026-08-31 single-famous-tree exception on a real, sourced contest win rather than age or size. A fifth verified tree in the same batch, zyt_001 (Dab Eliasz, a forest oak near Zytna, gmina Lyski), was held as a lead in `data/leads/zytna.json`: the verifying pass itself flagged that it would not pass the destination test alone, and it does not clear the four-tree floor.
+
+Caught by preflight and fixed before merging: a duplicate common name for Acer negundo (now "Box Elder" everywhere, matching Chicago and Eindhoven) and a duplicate scientific name for London Plane (now Platanus x acerifolia everywhere, not x hispanica). Also caught by hand, since nothing scripted checks it: `scripts/city_names.py` matched "Wojslawice" to the wrong Polish town, Klodzko, roughly 60km from the actual village in gmina Niemcza where the arboretum stands; corrected the alias and local name by hand rather than trust the script's disambiguation on a second, differently-located Wojslawice.
+
+Released two other stranded claims, ottawa (verify) and utrecht (translate), rather than start either cold this late in the day's budget: both had only a raw register export or translate brief on disk, no actual pass output to finish.
+
 ## 2026-09-23 - photo_light called a well-lit oak backlit, and the fix is to measure the subject
 
 The Vorteegen of Dyrehaven, Hans Erik Lund's whole-tree photograph of an 8.5
