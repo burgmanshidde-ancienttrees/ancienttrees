@@ -943,3 +943,11 @@ of this reply: a green hawthorn (Crataegus viridis) at Red Mountain Park,
 newly named state champion (Nov 2025, per jeffcogreenways.org and
 bhamnow.com), which is close enough to Birmingham to verify as a normal
 two-source lead whatever the licence answer turns out to be.
+
+## The waitlist mail, 2026-09-24: the app is out
+
+| Date | Who | Ask | Status |
+|---|---|---|---|
+| 2026-09-24 | 11 waitlist signups from before the Android rename (2026-08-07 to 08-31), batch waitlist-app-live | "Ancient Trees is out": the iOS link, thanks for subscribing, what do you miss or dislike, Android later. Hidde's own text of 2026-09-10 | **sent** |
+
+Approved on 09-10 and never sent, because it lived on a branch nobody merged. Before sending, Gmail's sent box was searched for each address and for the subject: nothing. The later signups (after 2026-09-03) were promised a mail when Android exists and did not get this one.

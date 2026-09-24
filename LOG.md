@@ -16,11 +16,9 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 **Nine unmerged branches, all dealt with.** Six were already on main via other commits (boom-pagina-kop, tree-age-species-trunk-size, nostalgic-lewin, tree-of-year-contest-db, draft-reply-daniel, the July Rome branch) and are deleted. zware-foto-zoektocht still carried five commits of real script work, now cherry-picked onto main: the brief says how stale its counts are, App Store downloads split into first-time and redownload, the app table's concentration line, `check_translations_have_no_stray_script()` in preflight and `check_dist_is_newer_than_the_source()` in qa. Main's translation files were kept where the branch had older copies. Preflight is clean afterwards.
 
-**Two mails came onto main and neither is sent.** The waitlist mail (11 addresses, approved by Hidde on 09-10, never sent) now sits in drafts/batches as `held_for_hidde`, because with the approved status outreach_continue.py would have mailed it on the next knock, two weeks late and with text that says "a week late". The Boomwachters Groningen reply to Marinel Pleij keeps its own hold, `awaiting_address_confirmation`.
+**The waitlist mail is sent, two weeks late.** Approved by Hidde on 09-10 and never sent, because it lived on an unmerged branch. It first came onto main held, since with the approved status outreach_continue.py would have mailed it unseen on the next knock. Gmail's sent box was checked for all 11 addresses and the subject (nothing), Hidde said "verstuur", and all 11 went out on 09-24. The Boomwachters Groningen reply to Marinel Pleij keeps its own hold, `awaiting_address_confirmation`.
 
 **Local checkout:** a 09-09 autostash had been popped onto today's main, leaving conflict markers in eight data files (six cities, agent-costs, photo-queue). Every change in it was already on main, so main's version was restored. The stash itself is still in `git stash list`.
-
-**FOR HIDDE:** the waitlist mail. Re-read drafts/waitlist-app-live.md, then either set its batch to `approved_by_hidde` or tell a session what to change.
 
 ## 2026-09-24 (session) - The contribute flow asks for the account first, and the postbox is shut
 
