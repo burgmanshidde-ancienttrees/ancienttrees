@@ -261,10 +261,10 @@
    "workaround": "it held precise laser measurements for New Orleans City Park's oaks. Those figures survive in search snippets and on neworleanscitypark.org, which is what this page used."
   },
   "overpass-api.de": {
-   "behaviour": "NOT down, it rate-limits hard. A burst of is_in queries sent without a User-Agent returned HTTP 406, and after that the host refused connections for the rest of the session and took the overpass.kumi.systems mirror down with it",
-   "seen": "2026-08-20",
-   "cost": "a pin-containment check on 24 New York and Washington trees, abandoned",
-   "workaround": "send a User-Agent, keep to one query every few seconds, and treat Overpass as scarce rather than looping over it. Nominatim took the same pace without complaint once a User-Agent was set."
+   "behaviour": "returns HTTP 406 Not Acceptable to every query attempted (a trivial two-node bbox query, and real queries), both via curl -X POST with a Content-Type header and via GET with --data-urlencode. Confirmed the API server itself is reachable (Apache serves a proper 406 error page) but something about this environment's requests is rejected before Overpass QL is even evaluated.",
+   "seen": "2026-09-24",
+   "cost": "4 attempts during the famous-poland batch5 verify pass, all wasted, trying to geocode a Bydgoszcz street address to tree-level precision",
+   "workaround": "Nominatim (nominatim.openstreetmap.org/search) works fine for street/address-level geocoding and was used instead, though it cannot answer natural=tree node queries the way Overpass can. Untested this pass: a different Overpass mirror (e.g. overpass.kumi.systems) might not have the same block."
   },
   "reliwiki.nl": {
    "behaviour": "hangs past the TCP/TLS connect, no response at all (curl -m 20 -A browser-UA, exit 28 both times)",
@@ -498,6 +498,36 @@
    "seen": "2026-09-11",
    "cost": "two fetch attempts during a batched Adelaide/Busan/Zagreb/Sao Paulo/Tulsa verify pass",
    "workaround": "Wikipedia, MVSKOKE Media (mvskokemedia.com) and a dated 2026 KOSU public-radio piece covered the same tree independently and loaded fine; not chased further per the two-attempts-then-move-on rule."
+  },
+  "zwierzyniec.e-biuletyn.pl": {
+   "behaviour": "hangs; curl -m 20 times out (HTTP 000) on the gmina's own 'Raport o stanie gminy' PDF documents.",
+   "seen": "2026-09-24",
+   "cost": "one fetch attempt (20s) during the famous-poland batch5 verify pass, chasing the unresolved Zdzislaw Oak (Zwierzyniec) lead",
+   "workaround": "none found this pass; the gmina's own BIP/council resolutions might be reachable through a different host."
+  },
+  "kozy.vot.pl": {
+   "behaviour": "hangs; curl -m 20 times out (HTTP 000) on an old (2011) news post about the Kozy plane tree.",
+   "seen": "2026-09-24",
+   "cost": "one fetch attempt (20s) during the famous-poland batch5 verify pass; not chased further since pl.wikipedia and fotopolska.eu independently cleared the tree",
+   "workaround": "pl.wikipedia's own article on the Czecz Palace (Palac Czeczow w Kozach) cites the same underlying facts (Klub Gaja's 2012 contest result) and loads fine directly."
+  },
+  "kozy.pl": {
+   "behaviour": "403s to curl with a browser user agent (the gmina's own official page about the Czecz Palace and park).",
+   "seen": "2026-09-24",
+   "cost": "one fetch attempt during the famous-poland batch5 verify pass",
+   "workaround": "pl.wikipedia's article on the same palace/park cites kozy.pl as a source and reproduces the key facts, so it substitutes fine."
+  },
+  "gazetalubuska.pl": {
+   "behaviour": "403s behind a Cloudflare JS challenge (chl_page) to curl, even with a browser user agent.",
+   "seen": "2026-09-24",
+   "cost": "one fetch attempt during the famous-poland batch5 verify pass, chasing detail on Zielona Gora's 'Lubuszan' oak",
+   "workaround": "the article's own headline/existence (returned by a search) is still usable as weak corroborating evidence, but its body text is unreachable; look for the same facts on a non-Cloudflare-protected local outlet instead (pomniki-przyrody.pl and ruchmiejski.zgora.pl both worked fine for the same tree)."
+  },
+  "lubiehrubie.pl": {
+   "behaviour": "403s to curl with a browser user agent (a regional culture/history blog).",
+   "seen": "2026-09-24",
+   "cost": "one fetch attempt during the famous-poland batch5 verify pass, chasing detail on Deblin's 'Grot' oak",
+   "workaround": "the Wayback Machine had no snapshot checked this pass (untested); a live Dziennik Wschodni article on the same tree (also 404 live but recoverable via Wayback) supplied the primary facts instead."
   }
  }
 }

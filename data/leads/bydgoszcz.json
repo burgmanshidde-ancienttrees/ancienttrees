@@ -2,7 +2,7 @@
   "city": "Bydgoszcz",
   "country": "Poland",
   "city_slug": "bydgoszcz",
-  "note": "Bydgoszcz has no published city page yet. This tree, verified and fully written (story + how_to_recognise) 2026-09-17 in data/research/famouspoland-batch4-verified.json, is held rather than published 2026-09-18: a city civic-vote win and a local nickname is real local significance but not a national or legendary superlative on its own, and one tree does not clear the four-tree floor. Held as the seed for a future Bydgoszcz page; data/leads/_famous-poland.json also carries an unverified 'Dab Bartek (Bydgoszcz)' lead that could become a second Bydgoszcz tree. The full written prose is kept here so a later pass can ship it unchanged once enough Bydgoszcz trees exist.",
+  "note": "Bydgoszcz has no published city page yet. bdg_001 (the Jeremi Oak), verified and fully written (story + how_to_recognise) 2026-09-17 in data/research/famouspoland-batch4-verified.json, is held rather than published 2026-09-18: a city civic-vote win and a local nickname is real local significance but not a national or legendary superlative on its own, and one tree does not clear the four-tree floor. bdg_002 (Bartek) was added 2026-09-24 (famous-poland batch5 verify pass), fully verified but also held rather than shipped solo, since Bydgoszcz's own register (pl.wikipedia's Pomniki przyrody w Bydgoszczy) names several more individually distinguished monument trees not yet checked by any pass. Both are kept here as seeds for a future dedicated Bydgoszcz register pass aimed at a real 4+ tree walkable cluster rather than scattered solo exception pages.",
   "leads": [
     {
       "id": "bdg_001",
@@ -29,6 +29,33 @@
       "curation_status": "flagged",
       "story": "Bydgoszcz voted an oak into first place before it named anything else that year. The city's own 'Tree of the Year' poll gave 932 votes, a local record, to a pedunculate oak on the escarpment above the Vistula in Fordon.\n\nThe tree already had three names before that vote. The council itself calls it Jeremi, in a 2011 protection order honouring Jeremi Przybora, the poet and co-founder of the satirical Kabaret Starszych Panow, who grew up on a nearby estate and never lost his attachment to the hillside. Locals call it something darker, Wisielec, the Hanged Man, and something grander, Dab Napoleona, Napoleon's Oak, on the strength of a story that the emperor watched his own troops cross the river from beneath its crown during the 1812 campaign into Russia. Nobody has dated the tree to say whether it could have stood that long ago; that is tradition, not a fact this page can confirm. Archaeologists do think the hillside was once a medieval motte-and-bailey fortress.\n\nThe trunk is a modest 305 centimetres round, well short of the 600 centimetre oaks the region protects elsewhere, which puts only a broad band on it, a century and a half to two and a half centuries, and no narrower. The crown reads windswept rather than tidy, shaped by the open ground it stands on.\n\nIt stands on a public trail named for Przybora himself, connecting Fordon to the Myslecinek forest, free to reach by city bus and a short climb.",
       "how_to_recognise": "You can recognise it by the windswept, ragged crown atop a 305cm trunk, standing alone in open ground on the Fordon escarpment above the Vistula, on the walking trail named for Jeremi Przybora near the Tatrzanskie estate."
+    },
+    {
+      "id": "bdg_002",
+      "name": "Bartek (Bydgoszcz oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "confirmed as \"dab szypulkowy\" (Quercus robur) by both pl.wikipedia's register table and the 2013 pomniki-przyrody.blogspot.com writeup",
+      "age_estimate": "over 500 years",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 662,
+      "lat": 53.1195,
+      "lng": 18.0865,
+      "status": "held",
+      "location": {
+        "address": "ul. Torunska 302, east of the junction with ul. Sporna, Zimne Wody district, Bydgoszcz, Kuyavian-Pomeranian Voivodeship, Poland",
+        "neighbourhood": "Zimne Wody"
+      },
+      "location_precision": "approximate",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Bydgoszczy",
+        "https://bydgoszczinformuje.pl/najszerszy-najwiekszy-najstarszy-bydgoskie-pomniki-przyrody-na-pamiatke-napoleona-i-marcina-lutra/ (dated 2023-02-07)",
+        "http://pomniki-przyrody.blogspot.com/2013/03/bydgoski-bartek.html"
+      ],
+      "access": "Likely free, roadside at a street address on ul. Torunska (a public road); a geocache (GC6CHDV, \"Bydgoski Dab Bartek\") is placed near it, which is weak supporting evidence it is reachable without trespassing. Not independently confirmed against OSM access tags this pass; check before shipping.",
+      "transport": "Zimne Wody district, eastern Bydgoszcz, on ul. Torunska near its junction with ul. Sporna.",
+      "curation_status": "flagged",
+      "verify_notes": "NOT the world-famous 'Bartek' oak of Zagnansk near Kielce (Swietokrzyskie, ~670 years, the one with a dedicated RDOS webcam and English Wikipedia article 'Bartek (tree)') -- that is a different, unrelated tree roughly 250km away. This is a separate, smaller, purely local oak in Bydgoszcz named after the famous one. Do not conflate the two; the candidate's own photos (Bdg_-prefixed filenames) are of the Bydgoszcz tree. Bydgoszcz's own sources call it 'the most magnificent tree in Bydgoszcz' (Najokazalszym drzewem w Bydgoszczy) and the oldest tree in the city, and the largest-girth registered monument tree in the city (662cm at 130cm height per pl.wikipedia's register table and the 2023 bydgoszczinformuje.pl piece; an older 2013 source/photo caption gives 625cm, plausible growth over a decade, not a conflict worth flagging further). Age cannot be tree-ring dated: the trunk has a large hollow (chimney-like cavity) that has been filled with a concrete plug to keep the tree standing, so '500+ years' is an estimate from growth-rate and girth, stated exactly as vaguely as the source gives it (no narrower band available, so age_min/age_max left null rather than invented). Carries a local legend that Napoleon rested beneath it during the 1812 campaign toward Moscow (bydgoszczinformuje.pl). Alive: the 2023-02-07 article describes it in the present tense as a standing city landmark; no death report found. Location: address-level (Torunska 302) but no house-number-precise coordinate found this pass (Nominatim, Overpass and Commons geotags all came up short; overpass-api.de returned HTTP 406 to every query this pass, worth flagging for the blocklist); coordinate here is a reasonable centroid for 'east of the Torunska/Sporna junction, Zimne Wody' and should be tightened by a future pass or a reader's GPS pin. HELD rather than shipped solo under the single-famous-tree exception: it has real size-record and legend evidence and could plausibly clear that bar alone, but Bydgoszcz already holds one other verified-but-held named tree (bdg_001, the Jeremi Oak) plus pl.wikipedia's own register lists several more individually named Bydgoszcz monument trees not yet checked by any pass (Dab Marcina Lutra outside a since-demolished Lutheran church, a beech named 'Marek' after a former provincial nature conservator, a lime named 'Czatownia Wiesawa' where a local ornithologist watched birds, four monumental Platanus by the old railway Dyrekcja building, a 400-year cluster of oaks near the Kartodrom). Given that much raw material, a dedicated Bydgoszcz register pass has a real shot at a genuine 4+ tree walkable cluster rather than another scattered solo exception page, which is the better outcome per the project's own scarcity doctrine. Kept here as the second seed."
     }
   ],
   "blocked": []
