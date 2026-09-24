@@ -661,7 +661,7 @@ struct CollectSheet: View {
             // Said once here rather than repeated on every row: the rows are
             // already carrying a name, a species, a distance, a direction and
             // sometimes four lines telling the tree from its neighbours.
-            Text("Tap one to see how to tell it apart.")
+            Text("You can tell them apart by opening each one.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
             // Tapping a candidate OPENS it rather than claiming it (Hidde,
             // 2026-09-07, sketching the flow he wanted: "dan als je op de boom
