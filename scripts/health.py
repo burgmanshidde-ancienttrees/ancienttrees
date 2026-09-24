@@ -560,18 +560,42 @@ def main():
         r = subprocess.run([sys.executable,
                             str(pathlib.Path(__file__).resolve().parent / "sqlcheck.py")],
                            capture_output=True, text=True, timeout=120)
-        line = (r.stdout or "").strip().splitlines()
-        if r.returncode == 1 and line:
-            names = ", ".join(x.split()[0] for x in line[1:])
-            print(f"  {'Migrations':20s} {len(line) - 1} not pasted")
+        out_lines = (r.stdout or "").strip().splitlines()
+        if r.returncode == 1 and out_lines:
+            # sqlcheck prints two different shapes on exit 1: a header line
+            # ("N migration(s) never pasted...") followed by one detail line
+            # per column/table, OR one or more standalone "sqlcheck: <door>"
+            # sentences for a policy that never reached the database (no
+            # header, since a door isn't counted the same way a column is).
+            # The old code assumed only the first shape existed, so a door
+            # (like the 2026-09-23 open-submissions policy) was misread as
+            # "0 migration(s)" with an empty name list.
+            migration_lines, door_lines, in_header = [], [], False
+            for ln in out_lines:
+                if re.match(r"^sqlcheck: \d+ migration\(s\) never pasted", ln):
+                    in_header = True
+                    continue
+                if in_header:
+                    migration_lines.append(ln.strip())
+                elif ln.startswith("sqlcheck: "):
+                    door_lines.append(ln[len("sqlcheck: "):])
+                else:
+                    door_lines.append(ln)
+            parts = []
+            if migration_lines:
+                names = ", ".join(x.split()[0] for x in migration_lines)
+                parts.append(f"{len(migration_lines)} migration(s) never pasted "
+                             f"into the database: {names}")
+            parts.extend(door_lines)
+            total = len(migration_lines) + len(door_lines)
+            print(f"  {'Migrations':20s} {total} issue(s) not pasted/applied")
             problems.append(
-                f"{len(line) - 1} migration(s) in supabase/ were never pasted "
-                f"into the database: {names}. Nothing else reports these, "
-                f"because the code degrades quietly around a missing column, "
-                f"so the only symptom is a field that is always empty. "
-                f"python3 scripts/sqlcheck.py names the file for each.")
-        elif line:
-            print(f"  {'Migrations':20s} {line[0].split(':', 1)[-1].strip()}")
+                "; ".join(parts) + ". Nothing else reports these, because the "
+                "code degrades quietly around a missing column or an unapplied "
+                "policy, so the only symptom is silent. "
+                "python3 scripts/sqlcheck.py names the detail for each.")
+        elif out_lines:
+            print(f"  {'Migrations':20s} {out_lines[0].split(':', 1)[-1].strip()}")
     except Exception as e:
         unknown.append(f"migrations ({e.__class__.__name__})")
 
