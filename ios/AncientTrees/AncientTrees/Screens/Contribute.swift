@@ -159,6 +159,18 @@ struct ContributeView: View {
                     draft.kind = .correction
                 }
                 if let opening, draft.why.isEmpty { draft.why = opening + "\n" }
+                // AND THE SHEET ASKS BEFORE THE TYPING (Hidde, 2026-09-24:
+                // "just open the login overlay if people go to the 'add tree
+                // flow' from all direction", and about the line above it,
+                // "that one sentence noone will read"). The website does the
+                // same on arrival, which is the Google Maps convention taken
+                // whole: the gate is at the entrance rather than at the send
+                // button. The form stays behind it and the sheet is
+                // dismissible, so nothing is hidden and nobody is trapped.
+                //
+                // A privacy request is not reachable from this screen, so
+                // there is no exception to make here; on the website there is.
+                if !account.isSignedIn { signingIn = true }
             }
             .sheet(isPresented: $signingIn) {
                 SignInSheet(reason: .feedback, localCount: 0)

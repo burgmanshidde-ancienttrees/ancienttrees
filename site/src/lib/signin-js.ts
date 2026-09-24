@@ -280,10 +280,13 @@ export const SIGNIN_JS = `
     var appMode = !!document.querySelector('#signin-openapp:not([hidden])');
     if (title && !appMode) {
       title.textContent = title.getAttribute(
-        reason === 'feedback' ? 'data-feedback' : 'data-generic') || title.textContent;
+        reason === 'contribute' ? 'data-contribute'
+        : reason === 'feedback' ? 'data-feedback' : 'data-generic') || title.textContent;
     }
     if (sub && !appMode) {
-      if (reason === 'feedback') {
+      if (reason === 'contribute') {
+        sub.textContent = sub.getAttribute('data-contribute') || sub.getAttribute('data-generic');
+      } else if (reason === 'feedback') {
         sub.textContent = sub.getAttribute('data-feedback') || sub.getAttribute('data-generic');
       } else {
         var tpl = treeName ? sub.getAttribute('data-named') : null;

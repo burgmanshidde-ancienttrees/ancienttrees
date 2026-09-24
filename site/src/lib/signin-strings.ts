@@ -39,6 +39,11 @@ export interface SignInStrings {
   /** The heading when the dialog opens from a vote, correction or report. */
   titleFeedback: string;
   subFeedback: string;
+  /** The heading when the dialog opens BY ITSELF on the contribute flow, which
+   *  it does for anybody not signed in (2026-09-24). It has to say what the
+   *  person came to do, because they did not press anything to get here. */
+  titleContribute: string;
+  subContribute: string;
   /** An example address, in the local convention. */
   placeholder: string;
   send: string;
@@ -81,6 +86,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subNamed: "Sign in to save %s. An account keeps what you collect, on every device you use.",
     titleFeedback: "Sign in to have your say",
     subFeedback: "Every vote, correction and tip gets checked and answered, and your account is how the answer reaches you.",
+    titleContribute: "You need an account to add a tree",
+    subContribute: "It is how we thank you, ask a question if we need one, and tell you what your tip changed.",
     placeholder: "you@example.com",
     send: "Email me a sign-in link",
     google: "Continue with Google",
@@ -108,6 +115,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subNamed: "Inicia sesión para guardar %s. Una cuenta gratuita, un email, sin contraseña, y tus árboles te siguen a todas partes.",
     titleFeedback: "Inicia sesión para opinar",
     subFeedback: "Cada voto, corrección y sugerencia se comprueba y se responde, y tu cuenta es como te llega la respuesta.",
+    titleContribute: "Necesitas una cuenta para añadir un árbol",
+    subContribute: "Así podemos darte las gracias, preguntarte algo si hace falta y contarte qué cambió tu aviso.",
     placeholder: "tu@ejemplo.com",
     send: "Envíame un enlace de acceso",
     google: "Continuar con Google",
@@ -134,6 +143,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subNamed: "Accedi per salvare %s. Un account conserva quello che raccogli, su ogni dispositivo che usi.",
     titleFeedback: "Accedi per dire la tua",
     subFeedback: "Controlliamo e rispondiamo a ogni voto, correzione e segnalazione, e la risposta ti arriva sul tuo account.",
+    titleContribute: "Serve un account per aggiungere un albero",
+    subContribute: "È così che possiamo ringraziarti, farti una domanda se serve e dirti che cosa ha cambiato la tua segnalazione.",
     placeholder: "tu@esempio.com",
     send: "Inviami un link di accesso",
     google: "Continua con Google",
@@ -157,6 +168,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subNamed: "Log in om %s te bewaren. Met een account houd je wat je verzamelt, op elk apparaat dat je gebruikt.",
     titleFeedback: "Log in om je mening te geven",
     subFeedback: "We controleren en beantwoorden elke stem, correctie en tip, en via je account krijg je het antwoord.",
+    titleContribute: "Je hebt een account nodig om een boom toe te voegen",
+    subContribute: "Zo kunnen we je bedanken, iets vragen als dat nodig is, en je vertellen wat je tip heeft veranderd.",
     placeholder: "jij@voorbeeld.nl",
     send: "Mail me een inloglink",
     google: "Doorgaan met Google",
@@ -180,6 +193,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subNamed: "Melde dich an, um %s zu speichern. Ein Konto behält, was du sammelst, auf jedem Gerät, das du benutzt.",
     titleFeedback: "Melde dich an, um mitzureden",
     subFeedback: "Wir prüfen und beantworten jede Stimme, jede Korrektur und jeden Hinweis, und über dein Konto erreicht dich die Antwort.",
+    titleContribute: "Für einen neuen Baum brauchst du ein Konto",
+    subContribute: "So können wir dir danken, nachfragen, wenn wir etwas wissen müssen, und dir sagen, was dein Hinweis verändert hat.",
     placeholder: "du@beispiel.de",
     send: "Schick mir einen Anmeldelink",
     google: "Weiter mit Google",
@@ -203,6 +218,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subNamed: "Inicia sessão para guardar %s. Uma conta mantém o que colecionas, em todos os dispositivos que usas.",
     titleFeedback: "Inicia sessão para dar a tua opinião",
     subFeedback: "Verificamos e respondemos a cada voto, correção e sugestão, e a resposta chega-te através da tua conta.",
+    titleContribute: "Precisa de uma conta para adicionar uma árvore",
+    subContribute: "É assim que podemos agradecer-lhe, fazer uma pergunta se for preciso e dizer-lhe o que a sua dica mudou.",
     placeholder: "tu@exemplo.com",
     send: "Envia-me um link de acesso",
     google: "Continuar com Google",
@@ -226,6 +243,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subNamed: "Connectez-vous pour enregistrer %s. Un compte conserve ce que vous collectionnez, sur tous les appareils que vous utilisez.",
     titleFeedback: "Connectez-vous pour donner votre avis",
     subFeedback: "Nous vérifions et répondons à chaque vote, correction et suggestion, et la réponse vous parvient par votre compte.",
+    titleContribute: "Il vous faut un compte pour ajouter un arbre",
+    subContribute: "C'est ainsi que nous pouvons vous remercier, vous poser une question si besoin et vous dire ce que votre signalement a changé.",
     placeholder: "vous@exemple.com",
     send: "Envoyez-moi un lien de connexion",
     google: "Continuer avec Google",
@@ -249,6 +268,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subNamed: "サインインすると%sを保存できる。アカウントがあれば、集めた木は使うどの端末にも残る。",
     titleFeedback: "サインインして意見を伝える",
     subFeedback: "投票も訂正も情報も、すべて確認して返事をする。返事はアカウントに届く。",
+    titleContribute: "木を追加するにはアカウントが必要です",
+    subContribute: "お礼をお伝えしたり、必要なときにお尋ねしたり、その情報で何が変わったかをお知らせするためです。",
     placeholder: "sample@example.com",
     send: "サインインのリンクを送る",
     google: "Googleで続ける",
