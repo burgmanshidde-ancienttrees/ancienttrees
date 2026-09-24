@@ -8513,6 +8513,51 @@
     "note": "Judged 19 backlogged reader-submission leads, fixed a health.py migration-reporting bug, shipped AddPhoto cross-language localisation (7 languages), refreshed fame-collection check dates. Tokens not logged: session-level work, not an agent dispatch.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "holiday-list web",
+    "kind": "product",
+    "tokens": 370743,
+    "trees": 0,
+    "note": "Canada map frame, Singapore outlier framing, nearby-cities foot, oldest-tree answers fixed on Lisbon/NL/FR, og:image on country pages",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "holiday-list app",
+    "kind": "product",
+    "tokens": 415761,
+    "trees": 0,
+    "note": "copycheck line, species+place fallback name, photo-on-existing-tree state in My trees (app+web), own-photos line; clustering already worked",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "holiday-list data",
+    "kind": "research",
+    "tokens": 501651,
+    "trees": 0,
+    "note": "Naha->Okinawa, Le Precheur->Martinique, Palma kept on evidence, Japan collection, 203 Tree of the Year finalists as leads (135 open)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "singapore",
+    "kind": "photo",
+    "tokens": 183190,
+    "trees": 0,
+    "note": "queued candidates already judged; last-resort sweep 34 viewed, 0 approved, 1 held",
+    "wasted": 183190,
+    "brief_wrong": true
+   },
+   {
+    "target": "new zealand",
+    "kind": "scout",
+    "tokens": 297587,
+    "trees": 0,
+    "note": "Christchurch (787) and Auckland (3600) imported CC BY 4.0; Wellington, Dunedin, NZ Notable Trees Trust need permission",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

@@ -10,6 +10,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-24 (session) - Hidde's holiday list: triaged, judged, and most of the DO list shipped
+
+Hidde sent his own list from Japan (38 thoughts) and asked for as little input as possible. It is triaged in PRODUCT_TODO.md with a verdict and a reason per item (DO / MAYBE / DON'T); the finding that sorted half of it is that "oldest tree in <place>" is the query shape that brings people, and the generated superlative collections climb while themed ones take nothing. Season and month collections and satellite view are off on that evidence and his word; the homepage is parked by him.
+
+Shipped today, with the web, app and data agents' own LOG entries below for detail: the weekly analysis died on the allowance two Mondays running and now retries Tuesday and Wednesday; a failed sign-in link (expired, used twice) opens the sheet saying so instead of landing the visitor signed out in silence; Sign in sticks to the bottom of the phone menu; both account mails are live through custom SMTP, which Hidde set up (drafts/auth-mails.md), and deliberately carry no code; country maps with a frame slide north on a phone so Canada is not half US; New Zealand scouted, Christchurch and Auckland imported as supply.
+
+FOR HIDDE, when at a desk: paste supabase/PENDING.sql in the SQL editor (girth answers from the app are being dropped until it runs), and say whether the sign-in link now signs you in or shows the expired sheet.
+
 ## 2026-09-24 (session) - Okinawa and Martinique renamed, a Japan collection, and 203 Tree of the Year leads
 
 **Two places now carry their island's name** (islands first, PRODUCT_TODO 9a). Naha is now /okinawa: the page already held trees in Urasoe and Nakagusuku, opened with the Battle of Okinawa and was built from the prefecture's register, and in Search Console no query ever named Naha. Le Precheur is now /martinique, a one-tree place nobody searches by its commune. Both are kind island, and every old URL redirects (RENAMED_CITY_SLUGS). Nago keeps its own page, and the Okinawa FAQ says where the Hinpun Gajumaru is.
