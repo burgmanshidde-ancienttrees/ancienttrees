@@ -3671,3 +3671,105 @@ Found while `scout_next.py --target` named Sao Paulo (#60) as no supply, no verd
 **State and federal sources are scoped to forests, not city trees.** Fundacao Florestal, CETESB and the national SNIF/IFN forest inventory cover state Conservation Units and native vegetation cover surveys, not individually designated urban monumental trees inside Sao Paulo city.
 
 **Verdict: BLOCKED for bulk import, EMPTY as a register for this city.** No coordinate-bearing, species-and-age dataset of individually designated remarkable trees exists for Sao Paulo, under any of the names this project's rule anticipates (arvores notaveis, arvores imunes ao corte, tombamento). The decree text itself is real evidence and is usable as a hand-mined LEAD source (the Article 16 isolated-specimen list, plus the named parks and plazas as places worth searching under Step 1's own instructions), exactly the way a city with no register is handled everywhere else in this project. Do not re-scout Sao Paulo's register without a new angle; the next city pass should go straight to normal web research (Step 1: named parks/gardens first, Article 16 species/addresses as a checklist, then the generic sweep), not to another open-data hunt.
+
+## New Zealand: the district-plan notable-tree schedules, scouted city by city (2026-09-24)
+
+The 2026-08-13 English-speaking-block pass left New Zealand UNSCANNED apart
+from one inconclusive Auckland read. This pass resolved every source it named,
+through the ArcGIS Online search API (every council publishes its district plan
+there) and the ArcGIS Hub dataset API, which returns a machine-readable
+`structuredLicense` per layer. Two usable, four need permission.
+
+| Source | Rows | Verdict |
+|---|---|---|
+| Christchurch City Council, DP Tree Protection | 1,960 (787 kept) | USABLE, imported |
+| Auckland Council, Unitary Plan Schedule 10 Notable Trees | 3,600 | USABLE, imported |
+| Wellington City Council, 2024 District Plan SCHED6 Notable Trees | 224 | PERMISSION NEEDED |
+| Dunedin City Council, 2GP scheduled trees | 1,378 | PERMISSION NEEDED |
+| Queenstown Lakes DC, Operative District Plan Protected Tree | 202 | PERMISSION NEEDED (and no species) |
+| NZ Notable Trees Trust, NZ Tree Register (treeregister.nz) | n/a | PERMISSION NEEDED |
+
+**Christchurch: USABLE, and the best-shaped register this project has found in
+the southern hemisphere.** Layer
+`gis.ccc.govt.nz/server/rest/services/OpenData/DistrictPlanB/FeatureServer/54`
+(ArcGIS item 4ba27f529fd34359b465e7492a15bb77). Licence, verbatim from the
+item: "CCC - Open Data - Use of this dataset is permitted in accordance with the
+Creative Commons Attribution 4.0 International (CC BY 4.0) License". The Hub API
+agrees (CC-BY-4.0). Semantic filter passes on the layer's own description: "a
+tree specimen that is deemed worthy of preservation in the District Plan due to
+its scenic, recreational, scientific, historical and or other value. (It is
+commonly referred to as a Heritage or Notable tree)." The protection points
+carry only a schedule reference, but each has a `TreeSpecimenID` that joins
+exactly (1,960 of 1,960) to the council's Tree asset layer (same CC BY 4.0
+sentence, item 0c557c04453e435ba1e50389db0ede90). The join brings species,
+DBH, height, crown spread, site name, `ServiceStatus` (Current / Removed / Stump)
+and `Ownership` (Private / CCC / NZTA). **That last field answers hard rule 10
+from the data**: 1,119 private-ownership points were dropped at import, and the
+vitality field dropped 54 more (35 Removed, 19 Stump). Only the scheduled
+specimens were pulled from the asset layer, never the 182,817-tree inventory
+itself. Unit check: `DiameterAtBreastHeight` is METRES (2.76 on a 35 m
+Wellingtonia), so `girth_cm` is derived as pi x dbh and labelled as derived; a
+few values (an Alpine ash at 3.71 m diameter) look like multi-stem
+measurements and want checking before any page quotes them.
+
+**Auckland: USABLE, reversing the 08-13 not-recommended.** That pass could only
+resolve the Plan Change 78 variant. The operative layer is
+`services1.arcgis.com/n4yPwebTjJCmXB6W/arcgis/rest/services/Notable_Trees_Overlay/FeatureServer/0`
+(item 583f5e99290b4adb9f7cc1196451f1e7, owner OpenDataUser, i.e. the council's
+own open-data portal). Its licence text reads, verbatim: "This website and
+datasets are provided by Auckland Council as a public service and may be used
+for personal and business purposes. They are provided under the Creative Commons
+Attribution 4.0 International licence." and the Hub API returns
+structuredLicense CC-BY-4.0. The same text continues: "You are not permitted to
+copy or republish any substantial amount of the information from this website
+without the prior written consent of Auckland Council." Read as a website
+clause sitting beside an express dataset grant: the datasets are named as CC BY
+4.0 in the sentence before and in the structured field. Recorded here so the
+reading can be revisited if Auckland ever objects. Semantic filter: Schedule 10
+is the statutory notable-tree schedule. Only the individual-tree overlay was
+imported; the Notable Group of Trees overlay was not, because a group is rarely
+a collectible point. **Caveat that matters: no ownership or access field**, and
+Schedule 10 includes many trees on private residential sections, so hard rule 10
+is NOT applied by the data and every Auckland candidate needs a per-tree access
+check. It also carries only a common name, no measurements, and its own
+position flag (TYPE: 2,945 verified positions, 655 unverified).
+
+**Wellington: PERMISSION NEEDED.** The operative layer is Notable Trees
+(SCHED6), 2024 District Plan,
+`gis.wcc.govt.nz/arcgis/rest/services/2024DistrictPlan/2024DistrictPlan/MapServer/78`,
+224 trees, and it is rich: address, botanical name, condition, and flags for
+amenity and historic/scientific notability. But its licence field, verbatim:
+"This feature layer has been created for the District Plan of Wellington City
+Council. If you require something beyond this purpose, please contact the WCC
+District Planning team (District.Plan@wcc.govt.nz) or the WCC City Insight GIS
+(cityinsightsgis@wcc.govt.nz) team for further assistance." That is a purpose
+limitation, not a licence, while WCC's other layers (tree canopy, 3D buildings)
+carry CC BY 4.0 explicitly, so the absence is deliberate enough not to assume.
+The older operative-plan "Heritage Trees" layer (155 points, in the
+DistrictPlan_RuBRIC map service) is labelled only "Creative Commons 3.0 (NZ)"
+with no variant named, and is superseded; not usable on that. Next: a licence
+ask to District.Plan@wcc.govt.nz, which is Hidde's to send.
+
+**Dunedin: PERMISSION NEEDED.** Scheduled trees sit at
+`apps.dunedin.govt.nz/arcgis/rest/services/Public/SecondGenerationPlan_ScheduledItems/MapServer/2`
+(1,378 points, plus tree groups at layer 3). The service carries no copyright
+text and no licence, and no DCC open-data item for it was found. Next: ask DCC.
+
+**Queenstown Lakes: PERMISSION NEEDED, and thin.** Operative District Plan
+FeatureServer layer 2 "Protected Tree", 202 points, carries only a reference
+number and no species; the item has no licence text and the Hub API returns
+type none. Even with permission it needs the district plan's schedule to be
+useful. The Proposed District Plan 2015 service has no tree layer by name.
+
+**NZ Notable Trees Trust register: PERMISSION NEEDED.**
+register.notabletrees.org.nz now redirects to www.treeregister.nz, whose only
+statement is "Copyright (c) NZ Notable Trees Trust 2025"; no licence, no terms
+page, no export. It is a charity, so this is the Perth pattern: a permission
+ask, and meanwhile a research list for finding and cross-checking trees (never
+copied from).
+
+Not scouted this pass, noted for a later one: Kapiti Coast heritage trees
+(item on the Greater Wellington server says "not able to be passed on to third
+parties", so blocked), and the Taupo (CC BY 4.0), Hastings, Rangitikei,
+Waimakariri and Far North notable-tree layers the search surfaced, none of them
+near a ranked city.
