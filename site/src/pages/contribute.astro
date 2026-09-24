@@ -10,6 +10,11 @@ import { submitLink } from "../lib/tree-copy";
 import { byCityListOrder } from "../lib/city-order";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { DOWNSIZE_JS } from "../lib/image-downsize-js";
+import { ui } from "../lib/i18n";
+// English today; the sign strings are looked up rather than typed so the day
+// this page gets a translation they come with it (every change covers every
+// language, 2026-09-02).
+const U = ui("en");
 
 const canonical = `${BASE_URL}/contribute`;
 const title = fitTitle(["Become Your City's Tree Guide", "Map Your City's Ancient Trees"], canonical);
@@ -86,6 +91,20 @@ const headExtra = ldScript(graph);
       <button type="button" id="sg-pic-btn" class="sg-pic-btn">Choose a photo</button>
       <input id="sg-pic" type="file" accept="image/*" hidden />
       <span id="sg-pic-name" class="sg-hint"></span>
+    </div>
+    {/* THE SIGN, a second photograph and an optional one (Hidde, 2026-09-24:
+        "vaak staat er een bordje bij een oude boom"). A sign names the
+        species, often the age and the tree itself, which settles which trunk
+        this is. Convention: iNaturalist lets you add more photographs to one
+        observation and never asks for them (CONVENTIONS.md, "A photograph of
+        the sign beside a tree"). Evidence for whoever checks the tip, never
+        published. The app's describe form asks the same question. */}
+    <div class="sg-photo">
+      <span class="sg-photo-label">{U.signPhotoLabel}</span>
+      <span class="sg-hint">{U.signPhotoHint}</span>
+      <button type="button" id="sg-sign-btn" class="sg-pic-btn">{U.signPhotoBtn}</button>
+      <input id="sg-sign" type="file" accept="image/*" hidden />
+      <span id="sg-sign-name" class="sg-hint"></span>
     </div>
     <label>Your name <span class="sg-hint">Optional. Never shown on the site.</span>
       <input type="text" id="sg-name" placeholder="First name is fine">
@@ -244,21 +263,26 @@ const headExtra = ldScript(graph);
   // the picture does not: a tree we did not know about is worth more than an
   // image, and losing the words because a file failed would be the wrong way
   // round.
-  var picked = null;
-  var picBtn = document.getElementById('sg-pic-btn');
-  var picFile = document.getElementById('sg-pic');
-  var picName = document.getElementById('sg-pic-name');
-  picBtn.addEventListener('click', function() { picFile.click(); });
-  picFile.addEventListener('change', function() {
-    var pf = picFile.files && picFile.files[0];
-    if (!pf) return;
-    picName.textContent = 'Reading it...';
-    window.atDownsize(pf, 1600, function(blob) {
-      picked = blob;
-      picName.textContent = blob ? pf.name : 'That picture could not be read. Try another one.';
-      if (blob) picBtn.textContent = 'Change photo';
+  // Two pickers of the same shape: the tree, and the sign beside it.
+  var staged = { tree: null, sign: null };
+  function picker(key, btnId, fileId, nameId) {
+    var pb = document.getElementById(btnId);
+    var pfile = document.getElementById(fileId);
+    var pname = document.getElementById(nameId);
+    pb.addEventListener('click', function() { pfile.click(); });
+    pfile.addEventListener('change', function() {
+      var pf = pfile.files && pfile.files[0];
+      if (!pf) return;
+      pname.textContent = 'Reading it...';
+      window.atDownsize(pf, 1600, function(blob) {
+        staged[key] = blob;
+        pname.textContent = blob ? pf.name : 'That picture could not be read. Try another one.';
+        if (blob) pb.textContent = 'Change photo';
+      });
     });
-  });
+  }
+  picker('tree', 'sg-pic-btn', 'sg-pic', 'sg-pic-name');
+  picker('sign', 'sg-sign-btn', 'sg-sign', 'sg-sign-name');
 
   function uuid() {
     if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
@@ -272,7 +296,7 @@ const headExtra = ldScript(graph);
   // there is no second bucket and no second policy. Returns the stored path,
   // or null, and a null is not an error anybody is told about: the words are
   // the tip.
-  function sendPhoto(s, done) {
+  function sendPhoto(s, picked, done) {
     if (!picked || !s) { done(null); return; }
     var uid = (s.user && s.user.id) ? s.user.id : s.user_id;
     if (!uid) { done(null); return; }
@@ -336,14 +360,18 @@ const headExtra = ldScript(graph);
         method: 'POST', headers: headers, body: JSON.stringify(b2)
       });
     }
-    sendPhoto(s, function(path) {
+    sendPhoto(s, staged.tree, function(path) {
       if (path) body.photo = path;
+      sendPhoto(s, staged.sign, function(signPath) {
+      if (signPath) body.sign_photo = signPath;
       post(body).then(function(r) {
-        if (!r.ok && body.photo) {
-          // The database has not been taught this column yet. The same defence
+        if (!r.ok && (body.photo || body.sign_photo)) {
+          // The database has not been taught a column yet. The same defence
           // the girth field already carries, and a retry rather than a guess
           // because PostgREST refuses the WHOLE row over one unknown key.
+          // submissions.sign_photo is in supabase/PENDING.sql until pasted.
           delete body.photo;
+          delete body.sign_photo;
           return post(body);
         }
         return r;
@@ -374,6 +402,7 @@ const headExtra = ldScript(graph);
       }).catch(function() {
         inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
         note.textContent = 'No connection. Try again in a moment.';
+      });
       });
     });
   });

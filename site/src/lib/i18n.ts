@@ -321,6 +321,12 @@ export interface UIStrings {
   addPhotoOnPage: string;
   /** The link from the acknowledgement to where the photograph now lives. */
   addPhotoSeeMine: string;
+  /** The optional second photograph when somebody adds a tree: the sign
+   *  beside it, which names the species, often the age and the tree itself
+   *  (Hidde, 2026-09-24). Same words as the app's describe form. */
+  signPhotoLabel: string;
+  signPhotoHint: string;
+  signPhotoBtn: string;
   havePhotographed: string;
   havePhotographedLine: string;
   goNote: string;
@@ -597,6 +603,9 @@ const EN: UIStrings = {
   addPhotoWaiting: "Your photo, waiting for a look",
   addPhotoOnPage: "Your photo is on this page",
   addPhotoSeeMine: "See it in My trees",
+  signPhotoLabel: "Is there a sign by the tree?",
+  signPhotoHint: "Optional. You can add a photo of the sign as well. It often names the tree, the species and its age.",
+  signPhotoBtn: "Add a photo of the sign",
   havePhotographed: "Have you photographed this tree?",
   havePhotographedLine: "If yours shows it better than the picture above, it can take its place, or stand beside it.",
   goNote: "The button above opens directions in your maps app.",
@@ -846,6 +855,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoWaiting: "Tu foto, pendiente de revisión",
     addPhotoOnPage: "Tu foto está en esta página",
     addPhotoSeeMine: "Verla en Mis árboles",
+    signPhotoLabel: "¿Hay un letrero junto al árbol?",
+    signPhotoHint: "Opcional. También puedes añadir una foto del letrero. Suele indicar el nombre del árbol, la especie y su edad.",
+    signPhotoBtn: "Añade una foto del letrero",
     havePhotographed: "¿Has fotografiado este árbol?",
     havePhotographedLine: "Si la tuya lo muestra mejor que la foto de arriba, puede ocupar su lugar, o aparecer junto a ella.",
     goNote: "El botón de arriba abre las indicaciones en tu aplicación de mapas.",
@@ -1082,6 +1094,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoWaiting: "La tua foto, in attesa di essere vista",
     addPhotoOnPage: "La tua foto è su questa pagina",
     addPhotoSeeMine: "Vedila in I miei alberi",
+    signPhotoLabel: "C'è un cartello accanto all'albero?",
+    signPhotoHint: "Facoltativo. Puoi aggiungere anche una foto del cartello. Spesso indica il nome dell'albero, la specie e l'età.",
+    signPhotoBtn: "Aggiungi una foto del cartello",
     havePhotographed: "Hai fotografato questo albero?",
     havePhotographedLine: "Se la tua foto lo mostra meglio di quella qui sopra, può prenderne il posto, o comparire accanto ad essa.",
     goNote: "Il pulsante qui sopra apre le indicazioni nella tua app di mappe.",
@@ -1318,6 +1333,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoWaiting: "Je foto, wacht op een blik",
     addPhotoOnPage: "Je foto staat op deze pagina",
     addPhotoSeeMine: "Bekijk hem bij Mijn bomen",
+    signPhotoLabel: "Staat er een bordje bij de boom?",
+    signPhotoHint: "Niet verplicht. Je kunt ook een foto van het bordje toevoegen. Vaak staan de naam van de boom, de soort en de leeftijd erop.",
+    signPhotoBtn: "Voeg een foto van het bordje toe",
     havePhotographed: "Heb je deze boom gefotografeerd?",
     havePhotographedLine: "Als jouw foto hem beter laat zien dan de foto hierboven, kan die de plek innemen, of ernaast komen te staan.",
     goNote: "De knop hierboven opent de route in je kaartenapp.",
@@ -1554,6 +1572,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoWaiting: "Dein Foto, wartet auf einen Blick",
     addPhotoOnPage: "Dein Foto ist auf dieser Seite",
     addPhotoSeeMine: "In Meine Bäume ansehen",
+    signPhotoLabel: "Steht ein Schild am Baum?",
+    signPhotoHint: "Freiwillig. Du kannst auch ein Foto des Schilds hinzufügen. Oft stehen darauf der Name des Baums, die Art und sein Alter.",
+    signPhotoBtn: "Foto des Schilds hinzufügen",
     havePhotographed: "Hast du diesen Baum fotografiert?",
     havePhotographedLine: "Wenn dein Foto ihn besser zeigt als das oben, kann es dessen Platz einnehmen oder daneben stehen.",
     goNote: "Der Knopf oben öffnet die Route in Ihrer Karten-App.",
@@ -1790,6 +1811,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoWaiting: "A sua foto, à espera de ser vista",
     addPhotoOnPage: "A sua foto está nesta página",
     addPhotoSeeMine: "Ver em As minhas árvores",
+    signPhotoLabel: "Há uma placa junto à árvore?",
+    signPhotoHint: "Opcional. Também pode adicionar uma foto da placa. Muitas vezes indica o nome da árvore, a espécie e a idade.",
+    signPhotoBtn: "Adicione uma foto da placa",
     havePhotographed: "Fotografou esta árvore?",
     havePhotographedLine: "Se a sua mostrar melhor do que a foto acima, pode ocupar o lugar dela, ou aparecer ao lado.",
     goNote: "O botão acima abre as indicações na sua aplicação de mapas.",
@@ -2026,6 +2050,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoWaiting: "Votre photo, en attente d'un regard",
     addPhotoOnPage: "Votre photo est sur cette page",
     addPhotoSeeMine: "La voir dans Mes arbres",
+    signPhotoLabel: "Y a-t-il un panneau près de l'arbre ?",
+    signPhotoHint: "Facultatif. Vous pouvez aussi ajouter une photo du panneau. Il indique souvent le nom de l'arbre, l'espèce et son âge.",
+    signPhotoBtn: "Ajoutez une photo du panneau",
     havePhotographed: "Avez-vous photographié cet arbre ?",
     havePhotographedLine: "Si la vôtre le montre mieux que la photo ci-dessus, elle peut prendre sa place, ou apparaître à côté.",
     goNote: "Le bouton ci-dessus ouvre l'itinéraire dans votre application de cartes.",
@@ -2261,6 +2288,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoWaiting: "あなたの写真は確認待ちです",
     addPhotoOnPage: "あなたの写真はこのページに掲載されています",
     addPhotoSeeMine: "アカウントで見る",
+    signPhotoLabel: "木のそばに案内板はありますか?",
+    signPhotoHint: "任意です。案内板の写真も追加できます。木の名前、樹種、樹齢が書かれていることがよくあります。",
+    signPhotoBtn: "案内板の写真を追加",
     havePhotographed: "この木を撮影しましたか?",
     havePhotographedLine: "上の写真より良く撮れていれば、それに差し替えるか、並べて掲載します。",
     goNote: "上のボタンで、地図アプリの経路案内が開く。",
