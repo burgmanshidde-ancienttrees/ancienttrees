@@ -118,7 +118,21 @@ CITIES.features.forEach(function(f) { b.extend(f.geometry.coordinates); });
 var FRAME = ${JSON.stringify(frame ?? null)};
 if (FRAME) { b.extend(FRAME[0]); b.extend(FRAME[1]); }
 var touched = false;
-function fit() { if (!touched) { map.fitBounds(b, { padding: 48, maxZoom: 9, duration: 0 }); } }
+function fit() {
+  if (touched) return;
+  map.fitBounds(b, { padding: 48, maxZoom: 9, duration: 0 });
+  // On a phone held upright the width decides the zoom, so the frame sits in
+  // the middle with a band of neighbour above and below it: for Canada that
+  // lower band was the US and Mexico (Hidde, 2026-09-24). Slide the view north
+  // until the frame's southern edge meets the bottom, so the spare height
+  // shows more of the country instead of its neighbour.
+  if (FRAME) {
+    var h = map.getContainer().clientHeight;
+    var y = map.project([FRAME[0][0], Math.min(FRAME[0][1], FRAME[1][1])]).y;
+    var dy = y - (h - 48);
+    if (dy < 0) { map.panBy([0, dy], { duration: 0 }); }
+  }
+}
 map.on('dragstart', function() { touched = true; });
 map.on('zoomstart', function(e) { if (e.originalEvent) { touched = true; } });
 new ResizeObserver(function() { map.resize(); fit(); }).observe(document.getElementById('map'));
