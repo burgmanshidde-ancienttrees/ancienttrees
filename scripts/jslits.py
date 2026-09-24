@@ -87,16 +87,61 @@ def lone_backslashes(path, body, first_line):
     return out
 
 
+def astro_literals(path):
+    """The same trap, in a .astro page: set:html={`...`}.
+
+    Added 2026-09-24, the day after this file was written, because it only ever
+    read site/src/lib/*.ts and a page carries exactly the same construct. A
+    backtick in a comment inside contribute.astro's script fragment ended the
+    literal, Astro's compiler said "Expected } but found Identifier", and the
+    whole site failed to build. The check written to stop that was blind to
+    half the places it happens.
+    """
+    out = []
+    text = path.read_text(encoding="utf-8")
+    OPEN = "set:html={`"
+    i = text.find(OPEN)
+    while i >= 0:
+        start = i + len(OPEN)
+        end = text.find("`", start)
+        if end < 0:
+            out.append("%s: a set:html template literal is never closed" % path)
+            break
+        rest = text[end + 1:].lstrip()
+        line = text.count("\n", 0, end) + 1
+        if not rest.startswith("}"):
+            snippet = text[max(0, end - 60):end + 20].split("\n")[-1].strip()
+            out.append("%s:%d: a backtick inside a set:html template literal ends "
+                       "it early, and Astro then fails to compile the page: %s"
+                       % (path, line, snippet))
+        else:
+            out += lone_backslashes(path, text[start:end],
+                                    text.count("\n", 0, start) + 1)
+        i = text.find(OPEN, end + 1)
+    return out
+
+
 def main(argv):
-    files = [Path(a) for a in argv] or sorted((ROOT / "site" / "src" / "lib").glob("*.ts"))
+    files = [Path(a) for a in argv]
+    astro = []
+    if not files:
+        files = sorted((ROOT / "site" / "src" / "lib").glob("*.ts"))
+        astro = sorted((ROOT / "site" / "src").rglob("*.astro"))
+    else:
+        astro = [f for f in files if f.suffix == ".astro"]
+        files = [f for f in files if f.suffix != ".astro"]
     bad = []
+    for f in astro:
+        if f.exists():
+            bad += astro_literals(f)
     for f in files:
         if f.exists():
             bad += check(f)
     for b in bad:
         print(b)
     if not bad:
-        print("js literals: %d file(s), no backtick closes one early" % len(files))
+        print("js literals: %d file(s), no backtick closes one early"
+              % (len(files) + len(astro)))
     return 1 if bad else 0
 
 
