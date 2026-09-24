@@ -95,21 +95,29 @@ and the second overrides the first, so read them in order.
    the 80/20 rule hard: a city that will not give up four good trees cheaply is
    not a city to grind on.
 
-2. **Then deepen, to these targets.** The 50 tier lasted about an hour and he
-   killed it: "we willen helemaal geen 50 bomen in bath mss max 20. kunnen we
-   vanaf nu gewoon voor 30 grote bomen streven bij grote stad en bevestigd."
+2. **Then deepen, to these targets.** Superseded again on 2026-09-23: Hidde
+   said "kijk naar hoe groot een stad is en stel daar het plafond op, ik denk
+   dat het zo simpel is", and it is. The ceiling is population, not whether
+   Search Console has confirmed the city yet; confirmation now only moves the
+   queue's *order* (via `score`), never the *ceiling*. `target_for()` in
+   scripts/city_queue.py is the one place this number is computed:
 
-   | state | target |
+   | population | target |
    |---|---:|
-   | new city or village, not confirmed by Search Console | 10 |
-   | confirmed city | 20 |
-   | confirmed BIG city (8,000+ travel demand) | 30 |
+   | under 50,000 | 10 |
+   | 50,000 to 250,000 | 20 |
+   | 250,000 to 1m | 30 |
+   | 1m to 5m | 60 |
+   | over 5m | 100 |
 
-   Thirty remarkable trees is already a lot of city. A page that needs fifty is
-   a page padded past the point where every entry deserves its spot, and
-   exclusivity is the product. Bath is the worked example: it ranks well, which
-   is why an impressions-only rule briefly handed it 50, but it is a small city
-   and stops at 20.
+   His three calibration points: Baarn (24,528) stops at 10, Copenhagen
+   (602,481) at 30, Tokyo (14,047,594) at 100. A city whose population could
+   not be resolved keeps the prior behaviour rather than silently dropping to
+   10. This retires the prior state-keyed table (new/unconfirmed -> 10,
+   confirmed -> 20, confirmed BIG -> 30), which read a big city that Search
+   Console had not yet confirmed as capped at 10: that conflated two
+   different questions, how many trees a place could hold and where the next
+   hour of work goes, and only the second should key off measured demand.
 
 3. **The 80/20 rule governs everything above** (his words: "eeuwig tokens
    gebruiken tot deze max te halen is niet de strategie... als het er wat
