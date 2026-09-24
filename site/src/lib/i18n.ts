@@ -117,6 +117,9 @@ export interface UIStrings {
   worksOffline: string;
   faqHeading: string;
   moreOnOldest: string;
+  /** City page foot: the eight closest cities, then a link to /cities. */
+  nearbyCities: string;
+  allCities: string;
   oldestQuestion: (city: string) => string;
   fullAnswer: string;
   suggestTree: string;
@@ -419,6 +422,8 @@ const EN: UIStrings = {
   worksOffline: "as a map file and open it in Google Maps, Organic Maps or any hiking app. It works offline.",
   faqHeading: "Frequently asked questions",
   moreOnOldest: "More on the oldest tree",
+  nearbyCities: "Ancient trees in nearby cities",
+  allCities: "Every city on the map",
   oldestQuestion: (city) => `What is the oldest tree in ${city}?`,
   fullAnswer: "The full answer, with a map and how to get there.",
   suggestTree: "Know a tree that belongs on this list?",
@@ -789,6 +794,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worksOffline: "como archivo de mapa y \u00e1brelo en Google Maps, Organic Maps o cualquier aplicaci\u00f3n de senderismo. Funciona sin conexi\u00f3n.",
     faqHeading: "Preguntas frecuentes",
     moreOnOldest: "M\u00e1s sobre el \u00e1rbol m\u00e1s antiguo",
+    nearbyCities: "Árboles antiguos en ciudades cercanas",
+    allCities: "Todas las ciudades del mapa",
     oldestQuestion: (city) => `\u00bfCu\u00e1l es el \u00e1rbol m\u00e1s antiguo de ${city}?`,
     fullAnswer: "La respuesta completa, con mapa y c\u00f3mo llegar.",
     suggestTree: "\u00bfConoces un \u00e1rbol que merezca estar en esta lista?",
@@ -1001,6 +1008,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worksOffline: "come file di mappa e aprilo in Google Maps, Organic Maps o in qualsiasi app da escursionismo. Funziona anche offline.",
     faqHeading: "Domande frequenti",
     moreOnOldest: "Altro sull'albero pi\u00f9 antico",
+    nearbyCities: "Alberi antichi nelle città vicine",
+    allCities: "Tutte le città sulla mappa",
     oldestQuestion: (city) => `Qual \u00e8 l'albero pi\u00f9 antico di ${city}?`,
     fullAnswer: "La risposta completa, con mappa e indicazioni.",
     suggestTree: "Conosci un albero che merita di stare in questo elenco?",
@@ -1213,6 +1222,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worksOffline: "als kaartbestand en open het in Google Maps, Organic Maps of een wandelapp naar keuze. Werkt ook zonder internet.",
     faqHeading: "Veelgestelde vragen",
     moreOnOldest: "Meer over de oudste boom",
+    nearbyCities: "Oude bomen in steden in de buurt",
+    allCities: "Alle steden op de kaart",
     oldestQuestion: (city) => `Wat is de oudste boom van ${city}?`,
     fullAnswer: "Het volledige antwoord, met kaart en route.",
     suggestTree: "Ken je een boom die in deze lijst thuishoort?",
@@ -1425,6 +1436,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worksOffline: "als Kartendatei und \u00f6ffnen Sie sie in Google Maps, Organic Maps oder einer Wander-App. Funktioniert auch offline.",
     faqHeading: "H\u00e4ufige Fragen",
     moreOnOldest: "Mehr zum \u00e4ltesten Baum",
+    nearbyCities: "Alte Bäume in Städten in der Nähe",
+    allCities: "Alle Städte auf der Karte",
     oldestQuestion: (city) => `Welcher ist der \u00e4lteste Baum in ${city}?`,
     fullAnswer: "Die vollst\u00e4ndige Antwort, mit Karte und Anfahrt.",
     suggestTree: "Kennen Sie einen Baum, der auf diese Liste geh\u00f6rt?",
@@ -1637,6 +1650,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worksOffline: "como ficheiro de mapa e abra-o no Google Maps, Organic Maps ou em qualquer aplica\u00e7\u00e3o de caminhadas. Funciona sem liga\u00e7\u00e3o.",
     faqHeading: "Perguntas frequentes",
     moreOnOldest: "Mais sobre a \u00e1rvore mais antiga",
+    nearbyCities: "Árvores antigas em cidades próximas",
+    allCities: "Todas as cidades do mapa",
     oldestQuestion: (city) => `Qual \u00e9 a \u00e1rvore mais antiga de ${city}?`,
     fullAnswer: "A resposta completa, com mapa e como chegar.",
     suggestTree: "Conhece uma \u00e1rvore que mere\u00e7a estar nesta lista?",
@@ -1849,6 +1864,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worksOffline: "comme fichier de carte et ouvrez-le dans Google Maps, Organic Maps ou n'importe quelle application de randonn\u00e9e. Fonctionne hors ligne.",
     faqHeading: "Questions fr\u00e9quentes",
     moreOnOldest: "En savoir plus sur l'arbre le plus vieux",
+    nearbyCities: "Arbres anciens dans les villes voisines",
+    allCities: "Toutes les villes de la carte",
     oldestQuestion: (city) => `Quel est l'arbre le plus vieux de ${city} ?`,
     fullAnswer: "La r\u00e9ponse compl\u00e8te, avec une carte et l'acc\u00e8s.",
     suggestTree: "Vous connaissez un arbre qui a sa place dans cette liste ?",
@@ -2060,6 +2077,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worksOffline: "\u5730\u56f3\u30d5\u30a1\u30a4\u30eb\u3068\u3057\u3066\u3001Google Maps\u3084Organic Maps\u306a\u3069\u3067\u958b\u3051\u307e\u3059\u3002\u30aa\u30d5\u30e9\u30a4\u30f3\u3067\u3082\u4f7f\u3048\u307e\u3059\u3002",
     faqHeading: "\u3088\u304f\u3042\u308b\u8cea\u554f",
     moreOnOldest: "\u6700\u3082\u53e4\u3044\u6a39\u6728\u306b\u3064\u3044\u3066",
+    nearbyCities: "近くの都市の古木",
+    allCities: "地図上のすべての都市",
     oldestQuestion: (city) => `${city}\u3067\u6700\u3082\u53e4\u3044\u6a39\u6728\u306f\u3069\u308c\u3067\u3059\u304b\u3002`,
     fullAnswer: "\u5730\u56f3\u3068\u884c\u304d\u65b9\u3092\u542b\u3080\u5b8c\u5168\u306a\u56de\u7b54\u3067\u3059\u3002",
     suggestTree: "\u3053\u306e\u30ea\u30b9\u30c8\u306b\u5165\u308b\u3079\u304d\u6a39\u6728\u3092\u3054\u5b58\u3058\u3067\u3059\u304b\u3002",
