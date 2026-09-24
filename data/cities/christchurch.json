@@ -1,0 +1,197 @@
+{
+  "city": "Christchurch",
+  "country": "New Zealand",
+  "status": "needs_curation",
+  "intro": "Christchurch calls itself the Garden City, and its old trees are why: an Alpine Ash so wide it needed a viewing platform, an oak planted for a royal wedding in 1863, plane trees ringing squares surveyed in 1850. The 2011 earthquake runs through half of them. Latimer Square triaged the injured under its own canopy. Victoria Square sat fenced inside the Red Zone for six years. Cranmer Square lost the buildings around it, not the trees. These are the survivors, still standing over a city that rebuilt itself from the ground up.",
+  "meta_description": "Christchurch's remarkable trees: an Alpine Ash needing a viewing platform, an 1863 royal oak, and the plane that stood over the 2011 earthquake triage.",
+  "oldest_tree_id": "chc_002",
+  "question_meta": "Christchurch's oldest documented tree is the Albert Edward Oak, planted in 1863 for a royal wedding. Full list of 6.",
+  "question_answer": "Christchurch's oldest tree with a documented planting date is the Albert Edward Oak in the Christchurch Botanic Gardens, put into the ground on 9 July 1863 to mark the royal wedding of the future King Edward VII. It stands close to the Avon River, south west of the Archery Lawn, and is roughly 163 years old.",
+  "question_context": "The Albert Edward Oak is Christchurch's oldest documented tree, planted on 9 July 1863 in what was then the Government Domain, to mark the marriage of Albert Edward, Prince of Wales, to Princess Alexandra of Denmark. It was the first tree planted in the grounds that became the Christchurch Botanic Gardens, and every other tree in the gardens came after it. A second oak went into the ground the same day at Ferry Road and East Belt, planted by four prominent colonial wives; that one has since been lost, leaving this the survivor of the pair. Nobody has published its exact girth or a precise modern coordinate, so the pin marks the likeliest candidate near the Archery Lawn rather than a certainty, and a plaque at the site names the planting. Other contenders for oldest come close but fall short of a documented date: the Botanic Gardens' huge Alpine Ash is estimated at a century or more, and the Avon River poplars date only to the 1920s. All are free to visit.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Christchurch?",
+      "a": "The Albert Edward Oak in the Christchurch Botanic Gardens, planted on 9 July 1863 to mark a royal wedding. It is roughly 163 years old and the oldest tree in the gardens, planted before any other tree there."
+    },
+    {
+      "q": "What is the biggest tree in Christchurch?",
+      "a": "The Alpine Ash in the Botanic Gardens, known locally as the twisted gum. The city's register gives its trunk as 11.66 metres round; other measurements put it as high as 12.3 metres, reported as the largest of its species anywhere."
+    },
+    {
+      "q": "Why do so many of Christchurch's old trees connect to the 2011 earthquake?",
+      "a": "The quake reshaped the whole central city, and its old trees stood through it while buildings around them did not. Latimer Square triaged the injured under its own canopy, Victoria Square sat fenced inside the Red Zone for six years, and Cranmer Square kept its trees while losing the buildings beside them."
+    },
+    {
+      "q": "Are Christchurch's remarkable trees free to see?",
+      "a": "Yes. All six stand in free public parks, squares and gardens open at all times, with no entry fee anywhere on this list."
+    }
+  ],
+  "trees": [
+    {
+      "id": "chc_001",
+      "name": "The Alpine Ash of the Botanic Gardens",
+      "species": "Alpine Ash (Eucalyptus delegatensis)",
+      "age_estimate": "roughly a century old, possibly more",
+      "age_min": 100,
+      "age_max": 140,
+      "girth_cm": 1166,
+      "location": {
+        "address": "Christchurch Botanic Gardens, Hagley Park, Christchurch",
+        "latitude": -43.531214,
+        "longitude": 172.620332,
+        "neighbourhood": "Hagley Park / Botanic Gardens"
+      },
+      "story": "One of the most photographed trees in Christchurch has a trunk that looks wrung out and left to dry. Locals call this Alpine Ash the twisted gum, and the name is exact: the trunk corkscrews and leans, then carries a crown to 34.5 metres.\n\nThe measurements are enormous. The city's register gives the trunk as 11.66 metres round. The Australian Plants Society, citing material from the Friends of the Christchurch Botanic Gardens, reports 12.30 metres measured in 2016 and says the New Zealand Tree Register lists it as the largest of its species; some go further and call it a world record. Different years, different tapes, the same giant.\n\nWhen it went in is disputed. One account says around 1916, another around 1885. What is certain is that it already looked well established in a photograph printed in 1927 in a book by J.H. Simmonds, so it is at least a century old and possibly a good deal more.\n\nIts fame nearly cost it. By 2020 the crown had thinned, with dieback and sparse leaves, and the soil over its roots had been packed hard by admirers. The gardens answered with a layer of eucalyptus mulch over the root plate, bollards and chains to keep feet off it, and a raised viewing platform so people can still get close. The platform is the point: stand on it, not on the roots, and the tree gets to keep going.",
+      "verified_sources": [
+        "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG10, girth 1166 cm / dbh 3.71 m, height 34.5 m)",
+        "https://resources.austplants.com.au/stories/the-twisted-gum-an-alpine-ash-in-new-zealand/ (Australian Plants Society, independent article)"
+      ],
+      "access": "Free. Christchurch Botanic Gardens, open daily, no entry fee.",
+      "transport": "Central Christchurch, short walk from Cathedral Square / Christchurch city centre (Rolleston Ave entrance); on the central city bus network.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the twisted, leaning trunk, more than 11 metres round, ringed by bollards and chains with a raised viewing platform beside it. It stands in the Christchurch Botanic Gardens."
+    },
+    {
+      "id": "chc_002",
+      "name": "The Albert Edward Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "planted 1863",
+      "age_min": 163,
+      "age_max": 163,
+      "age_basis": "source",
+      "girth_cm": null,
+      "location": {
+        "address": "Christchurch Botanic Gardens, near the Archery Lawn and the Avon River, Rolleston Avenue, Christchurch",
+        "latitude": -43.531673,
+        "longitude": 172.622315,
+        "neighbourhood": "Hagley Park / Botanic Gardens"
+      },
+      "story": "The Christchurch Botanic Gardens began with a royal wedding. On 9 July 1863 this oak went into the ground of what was then the Government Domain, planted to mark the marriage of Albert Edward, Prince of Wales, the future Edward VII, to Princess Alexandra of Denmark. It was the first tree of the gardens, and it is still the oldest in them.\n\nWho actually held the spade is a small local argument. Christchurch City Libraries credits the government gardener, Enoch Barker. Another local history account credits William \"Cabbage\" Wilson, nurseryman and later mayor. Both agree Wilson gave the tree to the city, so he earns a share of the credit either way.\n\nIt was not the only oak planted that day. A second went in at Ferry Road and East Belt, planted by four prominent colonial wives. That one is gone. This is the survivor of the pair, and every other tree in the gardens was planted after it.\n\nThere is a plaque at the tree. That matters, because the gardens hold more than one big old oak, and nobody has published a girth or an exact position for this one. The pin marks the likeliest candidate rather than a certainty. If you stand at the plaque and can tell us the trunk's size, we would like to hear it.",
+      "verified_sources": [
+        "https://www.peelingbackhistory.co.nz/first-tree-planted-in-christchurchs-botanical-gardens/",
+        "https://my.christchurchcitylibraries.com/hagley-park-and-the-christchurch-botanic-gardens/"
+      ],
+      "access": "Free. Christchurch Botanic Gardens, open daily, no entry fee.",
+      "transport": "Central Christchurch, short walk from Cathedral Square via Rolleston Avenue; on the central city bus network.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the plaque at the tree naming the 1863 royal wedding planting; without it, it is one of two big oaks here. It stands south west of the Archery Lawn, close to the Avon."
+    },
+    {
+      "id": "chc_003",
+      "name": "The Avon River Poplars",
+      "species": "Lombardy Poplar (Populus nigra 'Italica')",
+      "age_estimate": "about a century old, planted in the late 1920s",
+      "age_min": 95,
+      "age_max": 105,
+      "age_basis": "source",
+      "girth_cm": 600,
+      "location": {
+        "address": "Otakaro Avon River bank, between Madras and Manchester Streets, central Christchurch",
+        "latitude": -43.528117,
+        "longitude": 172.63982,
+        "neighbourhood": "Avon River / Margaret Mahy Playground, Central City"
+      },
+      "story": "The tallest of these poplars reaches 38 metres, and it was planted on purpose to make Christchurch look like somewhere else. The row stands along the Otakaro Avon River between Madras and Manchester Streets, beside the Margaret Mahy Playground.\n\nThat somewhere was England. The poplars went in during the late 1920s, when the nearby Rotunda and Clock Tower were being built, as part of a beautification programme begun by the Christchurch Beautifying Society. Samuel Delabere Barker had founded the society in 1897, and its aim was to give the central city an English riverside. Lombardy Poplars, narrow and upright as a row of steeples along the bank, were the look.\n\nA century on, the row is heritage protected, and it is ageing out one trunk at a time. The city register counts 23 poplars at this site; this entry marks the largest, 600 centimetres round and classed as a veteran. In the 2020s two of the stand were felled after testing found decay at the base, and young poplars were planted in their place. That is how a row like this survives: not all at once, but by quiet substitution.\n\nWe cannot promise the exact trunk marked here is one of the healthy ones, which is one reason the pin is approximate. The row itself is impossible to miss.",
+      "verified_sources": [
+        "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG6, girth 600 cm, height 38 m, age class Veteran)",
+        "https://www.odt.co.nz/star-news/star-christchurch/mature-christchurch-poplar-trees-get-axe"
+      ],
+      "access": "Free. Public riverbank reserve, open at all times.",
+      "transport": "Central Christchurch, short walk from Cathedral Square along the Avon River, next to Margaret Mahy Playground.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the biggest trunk, about 6 metres round, in the row of tall, narrow poplars along the Avon. It stands on the riverbank between Madras and Manchester Streets, next to the Margaret Mahy Playground."
+    },
+    {
+      "id": "chc_004",
+      "name": "The Cranmer Square London Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented; the square has been landscaped with perimeter trees since the 19th century",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 506,
+      "location": {
+        "address": "Cranmer Square, central Christchurch",
+        "latitude": -43.527567,
+        "longitude": 172.63012,
+        "neighbourhood": "Cranmer Square, Central City"
+      },
+      "story": "In 2011 the earthquakes took the buildings around Cranmer Square and left the trees. Cranmer Courts, the former Normal School on the square's edge, was among the historic buildings destroyed or badly damaged. The square itself, and the ring of old trees around it, came through.\n\nThis London Plane is the biggest of them. The city's register counts 24 large planes and ashes at this site, and this one has the thickest trunk, 506 centimetres round, under a crown about 19 metres high.\n\nThe ground it stands on is as old as Christchurch. Cranmer Square was surveyed in 1849 and 1850 as one of the four original squares of the central city, and it has been ringed with deciduous trees for a very long time. How long this particular tree has been part of that ring is another matter. Nobody has published a planting date for it, and the register classes it as mature rather than veteran, which suggests decades rather than centuries.\n\nSo the honest version is this: a big plane, on the oldest kind of ground the city has, on a square that outlasted its own skyline. If you know when it went in, tell us.",
+      "verified_sources": [
+        "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG16, girth 506 cm, height 19 m, age class Mature)",
+        "https://en.wikipedia.org/wiki/Cranmer_Square"
+      ],
+      "access": "Free. Public square, open at all times.",
+      "transport": "Central Christchurch, about 800 m northwest of Cathedral Square, on foot or the central city bus network.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the trunk, about 5 metres round, the thickest among the planes and ashes that ring the square. It stands in Cranmer Square, about 800 metres northwest of Cathedral Square."
+    },
+    {
+      "id": "chc_005",
+      "name": "The Latimer Square London Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented; a mature specimen among the trees ringing one of Christchurchs original 1850 squares",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 503,
+      "location": {
+        "address": "Latimer Square, central Christchurch",
+        "latitude": -43.530827,
+        "longitude": 172.643011,
+        "neighbourhood": "Latimer Square, Central City"
+      },
+      "story": "After the earth shook on 22 February 2011, Latimer Square became a field hospital under its own trees. The quake killed 185 people, New Zealand's deadliest disaster in decades, and the injured were triaged here in the minutes after. This London Plane, the widest trunk in the square's ring at 503 centimetres round, stood over all of it.\n\nLatimer Square is one of Christchurch's four original squares, surveyed in 1849 and 1850 and planted since with a ring of deciduous trees. The city's register counts 28 plane and elm candidates at this site; this one carries the largest girth, a fraction over five metres round, under a crown 19 metres high, and it is classed as a veteran, the register's top age band.\n\nNobody has published a planting date for it. That is not unusual for a square this old: the trees were part of the landscaping rather than individual gifts, so no single ceremony marks when any one of them went in. What the record shows instead is what the tree stood over rather than when it started, an emergency rather than a beginning. If you know its age, tell us.",
+      "verified_sources": [
+        "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG28, girth 503 cm, height 19 m, age class Veteran)",
+        "https://en.wikipedia.org/wiki/Latimer_Square"
+      ],
+      "access": "Free. Public square, open at all times.",
+      "transport": "Central Christchurch, about 500 m east of Cathedral Square, on foot or the central city bus network.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the widest trunk in the ring of planes and elms around the square, just over five metres round. It stands in Latimer Square, about 500 metres east of Cathedral Square."
+    },
+    {
+      "id": "chc_006",
+      "name": "The Victoria Square London Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented; the square was laid out as a park in 1896-97 for Queen Victorias Diamond Jubilee",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 534,
+      "location": {
+        "address": "Victoria Square, central Christchurch",
+        "latitude": -43.527753,
+        "longitude": 172.634963,
+        "neighbourhood": "Victoria Square, Central City"
+      },
+      "story": "Victoria Square used to be Christchurch's market place before it became a park for a queen's anniversary. The city laid it out in 1896 and 1897 to mark Queen Victoria's Diamond Jubilee, and this London Plane, 534 centimetres round, is the only one of its kind the register lists here.\n\nThe square lived through the 2011 earthquake as a casualty rather than a shelter. It sat inside the Central City Red Zone, closed off entirely, and did not reopen to the public until stages beginning in November 2012, with restoration finished only in 2018. The tree waited out six years of fencing and rebuilding before anyone could stand under it again.\n\nIt has neighbours with their own stories nearby, without being one of them: a row of weeping willows along the Avon grown from cuttings the early settler Francois Le Lievre brought to New Zealand, and a stand of limes planted by Dr James Irving in the 1880s known locally as The Limes. This plane, 20 metres tall and classed a veteran by the city, is the square's own answer, the widest trunk on its own ground rather than a cutting from somewhere else.\n\nNo planting date survives for it either. If you can find one, tell us.",
+      "verified_sources": [
+        "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG60, girth 534 cm, height 20 m, age class Veteran)",
+        "https://en.wikipedia.org/wiki/Victoria_Square,_Christchurch"
+      ],
+      "access": "Free. Public square, open at all times.",
+      "transport": "Central Christchurch, adjacent to the Town Hall and the Bridge of Remembrance, short walk from Cathedral Square.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the only London Plane the register lists at this site, its trunk over five metres round. It stands in Victoria Square, beside the Town Hall and the Bridge of Remembrance."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": "Krasnystaw",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Krasnystaw's most photographed tree is barely older than the people who vote for it. A boxelder maple in the town's market square grows almost flat to the ground before curving back up, a shape distinctive enough to have earned it a name, a plaque and, in 2018, Poland's national tree of the year title over trees many times its age.",
+  "meta_description": "Krasnystaw's kneeling maple, bent almost flat to the ground, won Poland's Tree of the Year 2018 and reached Europe's shortlist in 2019.",
+  "question_meta": "Krasnystaw's notable tree is Klekace Drzewo, the kneeling maple on its market square, Poland's Tree of the Year 2018.",
+  "question_answer": "Klekace Drzewo, the kneeling tree, stands on Krasnystaw's market square (Rynek) in front of the town hall. It is a boxelder maple around 65 years old, 182 centimetres round and 9 metres tall, named for a trunk that leans almost to the ground before curving back up. It won Poland's national Drzewo Roku contest in 2018.",
+  "question_context": "Klekace Drzewo is not old by this site's usual standard, a boxelder maple planted around the 1950s or 1960s, and it ships here on fame rather than age. An on-site plaque, whose wording gave the tree its name, describes the shape that makes it recognisable: a trunk grown near-horizontal before curving back upright, coined from a poet's words. Nominated by the local Krasnystaw Ecological Movement Viridis, it won the 2018 Drzewo Roku contest with 4,131 public votes, beating Krakow's Dab Henryka, the Ustrobniak Oak of Podkarpackie and a rival Dab Bartek from Wielkopolskie. It went on to the European Tree of the Year 2019 shortlist, competing against twelve other national champions; one search summary reported it placed sixth in that contest, a figure this site has not independently confirmed. The town has adopted it as a civic symbol, printing it on a small run of postal stamps. It grows on the Rynek, Krasnystaw's central market square, beside the town hall and a fountain, fully open and free to see at any time.",
+  "faq": [
+    {
+      "q": "What is the Kneeling Tree in Krasnystaw?",
+      "a": "Klekace Drzewo is a boxelder maple on the town's market square whose trunk bends almost to the ground before curving back up. It won Poland's Tree of the Year in 2018."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Around 65 years, young for this site. It is included for its shape and its contest wins rather than its age."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on Krasnystaw's Rynek, the central market square, open at all times with no fee."
+    }
+  ],
+  "oldest_tree_id": "krs_001",
+  "trees": [
+    {
+      "id": "krs_001",
+      "name": "The Kneeling Tree (Klekace Drzewo)",
+      "species": "Box Elder (Acer negundo)",
+      "age_estimate": "roughly 65 years",
+      "age_min": 55,
+      "age_max": 75,
+      "age_basis": "source",
+      "girth_cm": 182,
+      "height_m": 9,
+      "location": {
+        "address": "Rynek (market square), Krasnystaw, Lubelskie Voivodeship, Poland",
+        "latitude": 50.98366,
+        "longitude": 23.17364,
+        "neighbourhood": "Town centre"
+      },
+      "verified_sources": [
+        "https://50ok.pl/krasnystaw-kleczace-drzewo-na-rynku/ (2024, quotes the tree's own on-site interpretive plaque verbatim)",
+        "https://lublin.tvp.pl/42024815/kleczace-drzewo-z-krasnegostawu-na-europejskiej-liscie (confirms it reached the European Tree of the Year shortlist)"
+      ],
+      "access": "Free. Stands in the open on Krasnystaw's town market square (Rynek), beside the town hall and a fountain; a public square, no permission needed.",
+      "transport": "Central Krasnystaw, on the market square (Rynek).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Krasnystaw, Lubelskie Voivodeship"
+      },
+      "story": "This maple grows sideways. Its trunk leans down almost to the ground before curving back up, a shape distinctive enough that Krasnystaw gave it a name, Klekace Drzewo, the kneeling tree, coined from a poet's words and printed on the plaque now standing beside it. Locals just call it the bent tree.\n\nIt is not old by this site's usual standard, a boxelder maple of around 65 years, 182 centimetres round and 9 metres tall. What it has instead is a following. Nominated by the local Krasnystaw Ecological Movement Viridis, it won Poland's national Drzewo Roku contest in 2018 with 4,131 public votes, beating Krakow's Dab Henryka, the Ustrobniak Oak of Podkarpackie and a rival Dab Bartek from Wielkopolskie. It went on to the European Tree of the Year 2019 shortlist against twelve other national champions.\n\nThe town has taken to it: it has appeared on a postal stamp in a small Krasnystaw series and is treated as one of the town's civic symbols. It grows right on the market square, the Rynek, beside the town hall and a fountain, which is as public a spot as a tree gets. What makes it worth a look is not its age but its shape, and a plaque telling you why it kneels.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photos": [],
+      "how_to_recognise": "You can recognise it by the trunk bent almost to the ground before curving back up, unlike any other tree here. It stands on Krasnystaw's market square (Rynek), beside the town hall and a fountain."
+    }
+  ]
+}

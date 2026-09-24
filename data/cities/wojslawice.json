@@ -1,0 +1,66 @@
+{
+  "city": "Wojslawice",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Wojslawice is a village arboretum outside Wroclaw, and in 2024 one of its beeches became the best tree in Europe. Serce Ogrodu, the Heart of the Garden, had already won Poland's own contest in 2023 before taking the continental title the year after, a coppery-leaved beech grafted onto ordinary green rootstock and planted around two centuries ago under the estate's old owners.",
+  "meta_description": "Serce Ogrodu, a copper beech in Arboretum Wojslawice, won Poland's Tree of the Year 2023 and the European title outright in 2024.",
+  "question_meta": "Wojslawice's notable tree is Serce Ogrodu, a copper beech and Europe's Tree of the Year 2024.",
+  "question_answer": "Serce Ogrodu, the Heart of the Garden, stands in the centre of Arboretum Wojslawice, a botanical garden roughly 30 kilometres southwest of Wroclaw. It is a copper beech about 200 years old, 452 centimetres round and 14 metres tall. It won Poland's Drzewo Roku contest in 2023 and the European Tree of the Year title outright in 2024.",
+  "question_context": "Serce Ogrodu is a graft rather than a natural mutation: an ordinary green-leaved common beech serves as the fast-growing rootstock, with the slower, copper-red Fagus sylvatica 'Atropunicea' grafted on as the crown, a technique used to establish the colour reliably. Its leaves shift through the season, dark purple in spring, rust-green by summer, yellow-orange in autumn. It was likely planted around the turn of the 19th century, when the Wojslawice estate belonged to the von Pritwitz family; the arboretum itself took its current form after 1880 under a later owner, Fritz von Oheimb, and became a branch of the University of Wroclaw's Botanical Garden. The garden's own caretakers named it Serce Ogrodu, the Heart of the Garden, sometime in the early 1990s. In 2023 it won Poland's national Drzewo Roku contest with 6,643 public votes, ahead of an oak pair in Warsaw and another in Olsztyn, and the following year it won the European Tree of the Year outright. The arboretum charges admission and opens seasonally, mid-April to late October.",
+  "faq": [
+    {
+      "q": "What is Serce Ogrodu?",
+      "a": "A copper beech in Arboretum Wojslawice, about 200 years old, that won Poland's Tree of the Year 2023 and the European title in 2024."
+    },
+    {
+      "q": "Why is it two colours through the year?",
+      "a": "It is a graft: ordinary green beech as rootstock, with the slower copper-red Atropunicea variety grafted on as the crown. Its leaves run dark purple in spring, rust-green in summer and yellow-orange in autumn."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No. Arboretum Wojslawice charges admission and opens seasonally, from mid-April to late October."
+    }
+  ],
+  "oldest_tree_id": "wsl_001",
+  "trees": [
+    {
+      "id": "wsl_001",
+      "name": "Serce Ogrodu (Heart of the Garden)",
+      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "age_estimate": "roughly 200 years",
+      "age_min": 180,
+      "age_max": 230,
+      "age_basis": "source",
+      "girth_cm": 452,
+      "height_m": 14,
+      "location": {
+        "address": "Arboretum Wojslawice (University of Wroclaw Botanical Garden branch), Wojslawice, gmina Niemcza, Dzierzoniow County, Lower Silesian Voivodeship, Poland",
+        "latitude": 50.71167,
+        "longitude": 16.86071,
+        "neighbourhood": "Arboretum Wojslawice"
+      },
+      "verified_sources": [
+        "https://www.wroclaw.pl/zielony-wroclaw/buk-serce-ogrodu-ktory-rosnie-w-arboretum-wojslawice-zostal-drzewem-roku-2023 (quotes Klub Gaja's own 2023 contest results verbatim)",
+        "https://www.rmf24.pl/regiony/wroclaw/news-buk-z-wojslawic-europejskim-drzewem-roku,nId,7402100 (headline confirms the European Tree of the Year title)"
+      ],
+      "access": "Paid entry. Arboretum Wojslawice is a ticketed botanical garden (a branch of the University of Wroclaw Botanical Garden), open daily 09:00-18:00 in season (mid-April to late October); tickets at the gate or online. The beech stands in the centre of the historic park, a short walk from the entrance.",
+      "paid_entry": true,
+      "transport": "Wojslawice village, gmina Niemcza, Dzierzoniow County, Lower Silesian Voivodeship; a rural arboretum reached by car, roughly 30km southwest of Wroclaw.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Wojslawice, Lower Silesian Voivodeship"
+      },
+      "story": "In 2024 a beech from a small Silesian arboretum became Europe's tree of the year, beating every other national champion on the continent. Serce Ogrodu, the Heart of the Garden, had already won Poland's own Drzewo Roku contest in 2023 with 6,643 votes, ahead of a pair of oaks in Warsaw and another in Olsztyn, before going on to take the European title outright the following year.\n\nIt earns its colour from a graft rather than a mutation: ordinary green-leaved beech as the fast-growing rootstock, with the slower, copper-red Atropunicea variety grafted on as the crown. The leaves shift through the season, dark purple in spring, rust-green by summer, yellow-orange in autumn, a tree that changes its mind three or four times a year.\n\nIt was likely planted around the turn of the 19th century, when the Wojslawice estate belonged to the von Pritwitz family; the arboretum itself took shape after 1880 under a later owner, Fritz von Oheimb. The garden's caretakers gave it its name sometime in the early 1990s, decades before the votes started coming in.\n\nThe beech stands at 452 centimetres round and 14 metres tall, in the centre of a ticketed botanical garden open in season from mid-April to late October. A continental champion, reachable for the price of admission.",
+      "best_time": {
+        "months": [10],
+        "kind": "autumn colour",
+        "label": "October, when the coppery leaves turn yellow-orange before falling"
+      },
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photos": [],
+      "how_to_recognise": "You can recognise it by the copper-red leaves of a grafted Atropunicea beech, in the centre of the historic park. It stands in Arboretum Wojslawice, a short walk from the entrance."
+    }
+  ]
+}

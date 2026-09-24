@@ -1,0 +1,60 @@
+{
+  "city": "Kozy",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Kozy's palace park holds roughly 480 trees, and one plane beat every other one of them to become Poland's tree of the year in 2012. It stands older than the family whose name the palace carries, laid out when the grounds were remade in the English style in 1839 and left standing through a war, decades of neglect and a full restoration finished in 2015.",
+  "meta_description": "The Kozy Plane, over 200 years old and 482 centimetres round, won Poland's Tree of the Year 2012 among the palace park's 480 trees.",
+  "question_meta": "Kozy's notable tree is a 200-year-old plane in the Czecz Palace park, Poland's Tree of the Year 2012.",
+  "question_answer": "The Kozy Plane Tree stands in the Czecz Palace park (Park Dworski) on ul. Bielska in Kozy. It is a London Plane over 200 years old, 482 centimetres round and 16 metres tall, and it won Poland's national Drzewo Roku contest in 2012, chosen from among the park's roughly 480 trees.",
+  "question_context": "The Czecz Palace park was laid out in the English style following the palace's 1839 rebuilding, and from 1880 until the end of the Second World War the whole estate belonged to the Czecz de Lindenwald family. The park held roughly 480 trees by the time Klub Gaja, the group behind Poland's national tree contest, crowned this plane Drzewa Roku in 2012, its win credited to the tree's size and age among so much competition. One search summary reports it went on to place second in the European Tree of the Year 2013, a claim this site has not independently confirmed and repeats only as unconfirmed colour. The park fell quiet for decades after the war before a full restoration between 2011 and 2015 returned it to public use, and it now hosts open-air cultural events. The plane stands over 200 years old, 482 centimetres round and 16 metres tall, close to the palace outbuildings, a public library and a chapel that share the same grounds. The park is free and open on ul. Bielska.",
+  "faq": [
+    {
+      "q": "What is the Kozy Plane Tree?",
+      "a": "A London Plane over 200 years old in the Czecz Palace park, chosen Poland's Tree of the Year in 2012 from among the park's roughly 480 trees."
+    },
+    {
+      "q": "Is the Czecz Palace park open to the public?",
+      "a": "Yes. It is a public park used for recreation and cultural events, restored between 2011 and 2015, with no fee to enter."
+    },
+    {
+      "q": "How big is the tree?",
+      "a": "482 centimetres round and 16 metres tall, the largest of the park's roughly 480 trees."
+    }
+  ],
+  "oldest_tree_id": "koz_001",
+  "trees": [
+    {
+      "id": "koz_001",
+      "name": "The Kozy Plane Tree (Platan Klonolistny)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 250,
+      "age_basis": "source",
+      "girth_cm": 482,
+      "height_m": 16,
+      "location": {
+        "address": "Park przy Palacu Czeczow (the Czecz Palace park), ul. Bielska, Kozy, Bielsko County, Silesian Voivodeship, Poland",
+        "latitude": 49.84587,
+        "longitude": 19.1427,
+        "neighbourhood": "Czecz Palace park"
+      },
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Czecz%C3%B3w_w_Kozach (citing Godek 2019 and Klub Gaja for the tree and its 2012 contest win)",
+        "https://fotopolska.eu/Platan_klonolistny_Kozy (confirms location on ul. Bielska beside the palace outbuildings, library and chapel)"
+      ],
+      "access": "Free. Stands in the Czecz Palace park (Park Dworski), a roughly 2-hectare English-style park in Kozy generally open to the public for recreation, renovated 2011-2015 for cultural use and hosting open-air events; no permission needed.",
+      "transport": "Kozy village, Bielsko County, Silesian Voivodeship, in the Czecz Palace park off ul. Bielska.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Kozy, Silesian Voivodeship"
+      },
+      "story": "One tree beat out roughly 480 others growing right beside it to become Poland's tree of the year. In 2012 the ecological group Klub Gaja crowned this plane the winner of its national Drzewo Roku contest, picked from the crowded grounds of the Czecz Palace park in Kozy. It has been called Platan Klonolistny since, plane leaved like a maple, though most visitors just point at the biggest tree in the park.\n\nIt has stood here since before the palace took its current shape. The grounds were laid out in the English style following the building's 1839 rebuilding, and from 1880 until the end of the Second World War the whole estate belonged to the Czecz de Lindenwald family. The park fell quiet for decades afterward and was restored between 2011 and 2015, and it now hosts open-air cultural events among its hundreds of trees.\n\nAt over 200 years old, 482 centimetres round and 16 metres tall, the plane predates the family that gave the palace its name and has outgrown every one of its four-hundred-odd neighbours. The park is free and open, on ul. Bielska, and the tree stands close to the palace outbuildings, the library and the chapel.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photos": [],
+      "how_to_recognise": "You can recognise it as the largest tree among roughly 480 in the park, over 4.8 metres round. It stands in the Czecz Palace park (Park Dworski) near the outbuildings, library and chapel, off ul. Bielska."
+    }
+  ]
+}
