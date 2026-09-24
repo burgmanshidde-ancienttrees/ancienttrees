@@ -133,6 +133,50 @@ def body_of(msg, limit=4000):
         return "(unreadable)"
 
 
+def sync_sent(answered):
+    """Write the mails Hidde sent BY HAND into data/outreach-sent.json.
+
+    Hidde, 2026-09-24: "weet je zeker dat we hem nooit geantwoord hebben." We
+    had. A draft file had carried "not sent yet" for two weeks because it
+    checked outreach-sent.json, which only records what scripts/outreach_send.py
+    sends. He answers plenty of people himself, straight from Gmail, and none of
+    that ever reached the log. So every later draft, and mailcheck's own ASKING
+    TWICE check, were reasoning from a file that knew half the story.
+
+    The fix is the data rather than another instruction: this writes what the
+    mailbox already proves. It reads HEADERS only, never a body, which is the
+    same boundary the rest of this script keeps.
+
+    Run it with --list --sync. It is additive and never rewrites a row.
+    """
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "outreach-sent.json")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+    except (OSError, ValueError):
+        print("(outreach-sent.json unreadable, nothing synced)")
+        return
+    rows = doc.setdefault("sent", [])
+    seen = {((r.get("to") or "").lower(), (r.get("date") or "")[:10])
+            for r in rows if isinstance(r, dict)}
+    added = 0
+    for to, (when, subj) in sorted(answered.items(), key=lambda kv: kv[1][0]):
+        key = (to, when.strftime("%Y-%m-%d"))
+        if key in seen:
+            continue
+        rows.append({"date": when.strftime("%Y-%m-%d"), "to": to,
+                     "outlet": "reply", "subject": subj,
+                     "batch": "sent by hand from Gmail, recorded by outreach_inbox --sync"})
+        seen.add(key)
+        added += 1
+    if added:
+        with open(path, "w", encoding="utf-8") as fh:
+            json.dump(doc, fh, ensure_ascii=False, indent=1)
+    print(f"--sync: {added} hand-sent repl{'y' if added == 1 else 'ies'} written "
+          f"into data/outreach-sent.json ({len(rows)} rows now)")
+
+
 def main():
     read_bodies = "--read" in sys.argv
     since = FIRST_BATCH
@@ -271,6 +315,9 @@ def main():
         for to, (t, subj) in sorted(answered.items(), key=lambda kv: kv[1][0]):
             print(f"  {to:44} {t:%Y-%m-%d %H:%M}  {subj[:44]}")
         print()
+    if "--sync" in sys.argv:
+        sync_sent(answered)
+
     owed = sorted(set(incoming) - set(answered), key=lambda a: incoming[a])
     if owed:
         print("NO REPLY FROM HIM YET:")

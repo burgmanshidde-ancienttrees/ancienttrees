@@ -194,6 +194,26 @@ jobs:
                DECISIONS.md, and instructions no run can still execute. Write
                each as a NOTE with a concrete removal or move suggestion.
                Suggest only; corpus edits are decided in session.
+            6b. On Mondays (UTC), a second extra duty, and it is a READING
+               rather than a checking (Hidde, 2026-09-24: "hoe zorgen we dat je
+               nooit meer spelfouten maakt als je copy live zet... het gaat non
+               stop fout", and on the cadence, "elke nacht is mss wat veel 1
+               keer per week copy check ok"). scripts/spellcheck.py catches a
+               MISSPELLED word in the pre-push hook and can catch nothing else:
+               the mistake that prompted this was "ask a question if we need
+               one", five correctly spelled words in the wrong idiom, and no
+               script here will ever see that.
+               So: read the ENGLISH a reader meets, changed in the last seven
+               days. `git log --since=7.days -p -- site/src/lib/i18n.ts
+               site/src/lib/signin-strings.ts 'site/src/pages/**' \
+               'site/src/components/**' 'ios/AncientTrees/AncientTrees/Screens/**'`
+               and judge only the added strings, as a native reader who owes us
+               nothing: is it grammatical, is it idiomatic, does it say what it
+               means. Write each as a WARN with the file, the sentence and a
+               replacement, and nothing about taste. PRODUCT_COPY.md governs
+               the register and copycheck.py already greps for its five habits,
+               so do not repeat those; this duty is about the English itself.
+               If it all reads well, say so in one line.
             7. Commit ONLY REVIEW.md with the message
                "Fresh-eyes review: <n> finding(s)" and push. Twice, per 4b:
                once for the web half and once when the app findings join it.
