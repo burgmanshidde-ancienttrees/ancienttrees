@@ -13,6 +13,97 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-24
+
+Reviewed commits since the last review (a4ec782e) through HEAD (0119ed4e),
+roughly 65 commits: the assembly line (Trieste 20->36 with a new Giardino
+Pubblico park page, Copenhagen 16->42 from a full Danish Tree Register import
+across three overlapping passes, two places from the project's first outside
+contributor), the "which trees get a page" scoring rule shipped as code
+(species_size.py, height added as a third axis, matching DECISIONS.md
+2026-09-23), the National Mall park-page waiver (Contract H v1.20), two
+build-breaking bugs caught and fixed same-day (a bare backtick, a missing
+park intro crashing `/parks`), the account-before-typing convention change on
+both web and app, and the review/night-shift scheduling race fixed in the
+final commit. Confirmed the 2026-09-23 BLOCKER (the broken account-page
+script) is genuinely fixed: `node scripts/inline_scripts.js site/dist`
+reports the built site clean, and the WARN about AddPhoto being English-only
+is genuinely closed (`d0fe64a0`): checked directly in `site/dist`, 1,188
+translated tree pages now carry the `addphoto-btn` marker and `addphoto-btn`
+was added to qa.py's cross-language `PARTS` list so a regression would be
+caught. Ran `python3 scripts/preflight.py`: 634 cities, 0 problems, only
+pre-existing NOTEs. `scripts/qa.py` timed out in this sandbox both times it
+was run (no network egress to verify against); not treated as a finding
+either way since it couldn't be observed to fail, only to not finish.
+
+**WARN — CITY_QUEUE.md's own target table is now wrong about how big cities
+are allowed to get, and CLAUDE.md names this file as the one place that
+question is answered.** `scripts/city_queue.py`'s `target_for()` was rewritten
+in `3c3bd2b9` (bundled into a commit titled about Schlosspark oaks and a
+deploy cron, not about targets) to a population-based ceiling per Hidde's
+2026-09-23 "kijk naar hoe groot een stad is en stel daar het plafond op":
+under 50k -> 10, 50k-250k -> 20, 250k-1m -> 30, 1m-5m -> 60, over 5m -> 100.
+The generated table in CITY_QUEUE.md itself now carries these numbers
+(Singapore, Tokyo, New York and Sao Paulo all read 100; Rome and Prague read
+10; Barcelona reads 60), confirmed by diffing `7c528970`'s regenerated table
+against the prior one. But CITY_QUEUE.md's own PROSE, the "Then deepen, to
+these targets" section with its 10/20/30 table keyed on Search-Console
+confirmation state ("confirmed city" -> 20, "confirmed BIG city (8,000+
+travel demand)" -> 30), was never touched: `git log 3c3bd2b9..HEAD --
+CITY_QUEUE.md` shows only the auto-generated table changing, never the
+prose. A run reading this file, which CLAUDE.md says wins over every other
+source when there is a disagreement ("if this file and CITY_QUEUE.md ever
+disagree, that one wins and this paragraph is the stale copy"), would
+conclude Tokyo tops out at 30 and stop a fifth of the way to the ceiling the
+code and the data both already use. This is the same shape CLAUDE.md's own
+ratchet is written to catch elsewhere (a sentence that outlived its fact),
+just not yet applied to this file.
+
+**WARN — a broken script sat on `main` for about four hours today with
+nothing to notice, and there is still no check that would catch the next
+one.** `5259e750` (07:48 JST) committed `scripts/mailcheck.py` with literal
+unresolved git conflict markers in it (`<<<<<<< Updated upstream` /
+`=======` / `>>>>>>> Stashed changes`), left by a stash pop that was never
+finished. The commit's own message says this "took contributor_reply.py down
+with it": since that script imports mailcheck.py, no contributor reply could
+have been sent through the normal pipeline in that window. It was self-caught
+and fixed in `92bb59d5` (11:38 JST), so nothing is broken now, and both sides
+of the conflict were the same regex so no logic was lost. What is still true:
+there is no `py_compile`/`ast.parse` check anywhere in qa.py or the pre-push
+hook for `scripts/*.py`, the equivalent of the `inline_scripts.js` check this
+corpus already built for the site's own TypeScript template literals after a
+bare backtick took the whole build down. The class of failure (a local git
+operation leaves marker text in a tracked file) is generic and not
+mail-specific, so the next occurrence could land in any script, including one
+with no import-time symptom to reveal it.
+
+**NOTE — the new migration-drift detector does not cover the kind of
+migration shipped today.** `scripts/sqlcheck.py`, built yesterday
+specifically because `sightings.girth_hugs` sat unapplied for twelve days
+with every gate green, checks that tables and columns declared in
+`supabase/*.sql` exist in the live database. `supabase/postbox-needs-an-
+account.sql` (`bb13e035`, today) is a different shape: it drops and
+recreates a ROW LEVEL SECURITY POLICY, not a column, closing the hole where
+an anonymous visitor could insert a submission row with no account to hang a
+reply or a deletion promise on. Nothing in this repo can currently tell
+whether that policy has been pasted into the Supabase SQL editor the way
+`sqlcheck.py` can tell for a missing column, so this migration can silently
+not be applied for as long as `girth_hugs` was, with no gate reporting it.
+
+Read the six rotated app screenshots (own-tree, paywall, people,
+photo-viewer, place-pin, profile-edit): nothing new. `paywall.png`'s "Plus is
+not open yet" line and `people.png`'s Marieke/Tom/Sofia list are the same
+previously-traced items (2026-09-07 FOR HIDDE, confirmed deliberate; and
+launch-argument-gated fixture data respectively), not re-reported per the
+fifteen-nitpicks rule. `photo-viewer.png` shows a mid-load spinner over a
+correct CC BY-SA credit line, consistent with no network egress in this
+sandbox rather than an app fault. `place-pin.png`'s account-gating copy
+("Sending needs a free account, so we can tell you what your correction
+changed") is consistent with today's web-side account-before-typing change.
+No contradicted promises, no builder-speak, nothing cropped or mislabelled.
+
+---
+
 ## 2026-09-23
 
 **BLOCKER — the live deploy is currently red and has been since `ae739735`
