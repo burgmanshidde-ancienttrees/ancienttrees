@@ -10,7 +10,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
 import { collectionEntries, MODES } from "../lib/collection-rank";
 import { COUNTRY_MIN_CITIES, GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific, speciesPageSlugs } from "../lib/species";
-import { usablePhoto, imgSrcset, cityFace, NO_PHOTO_SVG } from "../lib/images";
+import { usablePhoto, imgSrcset, cityFace, cityFaceTree, metaImageUrls, ogImageUrl, NO_PHOTO_SVG } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
 import { mapHead, countryMapScript, countryName } from "../lib/map";
@@ -229,13 +229,28 @@ const oldestTslug = oldestTrees.length ? oldestTrees[0].tslug : null;
 const oldestPhoto = oldest ? usablePhoto(oldest) : null;
 
 const listElements = ranked.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.cityName, url: `${BASE_URL}/${c.slug}` }));
+// The country's face in a shared link and in Google: the biggest city's face,
+// exactly the tree /countries and /api/browse.json front the country with
+// (2026-09-24). Country pages carried no og:image at all, so every one of
+// them, Poland included, shared as the site logo while its card had a photo.
+const countryFacePhotoUrl = (() => {
+  for (const c of ranked) {
+    const t = cityFaceTree({ hero_tree_id: c.city.data.hero_tree_id, trees: renderableTrees(c.city) });
+    const url = t ? usablePhoto(t)?.url : null;
+    if (url) return url;
+  }
+  return null;
+})();
+const countryOgImage = countryFacePhotoUrl
+  ? `\n<meta property="og:image" content="${esc(ogImageUrl(countryFacePhotoUrl))}">` : "";
 const graph = [
   ...SITE_SCHEMA,
-  { "@type": "CollectionPage", name: `Ancient trees in ${disp}`, description, url: canonical },
+  { "@type": "CollectionPage", name: `Ancient trees in ${disp}`, description, url: canonical,
+    ...(countryFacePhotoUrl ? { image: metaImageUrls(countryFacePhotoUrl) } : {}) },
   { "@type": "ItemList", name: `Cities in ${disp}`, itemListElement: listElements },
   breadcrumbSchema(crumbItems, canonical),
 ];
-const headExtra = mapHead() + "\n" + ldScript(graph);
+const headExtra = mapHead() + countryOgImage + "\n" + ldScript(graph);
 const mapScript = countryMapScript(
   ranked.map((c) => ({
     slug: c.slug,
