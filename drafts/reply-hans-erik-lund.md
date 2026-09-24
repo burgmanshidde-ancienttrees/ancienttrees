@@ -12,11 +12,8 @@ https://ancienttrees.app/copenhagen
 
 The Dyrehaven oaks are all up, Trepileegen, Kuppelegen, Vorteegen and
 Fortunegen, and so are the Zelkova at Landbohoejskolen, the pagoda tree on
-Rolighedsvej and the cherry avenue at Bispebjerg. I put Trepileegen at 8.90 m
-rather than the 9.65 in the heading, because your own note gives the 2017
-measurement at 1.30 m and that is the figure people can compare with other
-oaks. The rest of your list is in our database as well, with your measurements,
-waiting for a reason to go up.
+Rolighedsvej and the cherry avenue at Bispebjerg. We used all of your data, so
+your whole list is in our database with your measurements.
 
 If you have more of these, in Copenhagen or anywhere else in Denmark, I would
 be very glad of them.
