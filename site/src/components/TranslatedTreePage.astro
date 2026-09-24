@@ -19,6 +19,8 @@ import { cityIsRenderable, renderableTrees, treeSlugsForCity, distSpanBetween, t
 import { haversineKm } from "../lib/walks";
 import { usablePhotos, thumbUrl } from "../lib/images";
 import PhotoFigure from "./PhotoFigure.astro";
+import AddPhoto from "./AddPhoto.astro";
+import { ADD_PHOTO_JS } from "../lib/add-photo-js";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { locationIsApproximate, metaForTree, girthLabel } from "../lib/tree-copy";
@@ -125,7 +127,7 @@ const sources = treeSources(tree);
 // SIGNIN_JS left this list on 2026-09-18: the sheet and its script are Base's
 // now, on every page, so there is no list to forget it from.
 const scripts = singlePinScript(loc.latitude!, loc.longitude!)
-  + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS;
+  + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + ADD_PHOTO_JS;
 // The bare number, and a cap on the prose fallback. Same rule as the English
 // page: the label carries the unit, and an age_estimate that runs to a
 // sentence is cut at its first clause, because everything after the comma is
@@ -156,8 +158,8 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
               any channel, ruled 2026-08-11; the English page never promised it
               and this one did. A photographer's credit is a different thing and
               is owed by the licence, not by us. */}
-          <span>{U.noPhotoLicence}{" "}
-          <a href="/contribute">{U.sendYours}</a> {U.willAppear}</span>
+          <span>{U.noPhotoLicence} {U.photoCanGoHere}</span>
+          <AddPhoto treeId={tree.id} treeName={x.name} lat={loc.latitude!} lng={loc.longitude!} lang={lang} />
         </figcaption>
       </figure>
     )}
@@ -279,6 +281,18 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
       <p>{U.appPitchTreeBody}</p>
       <a class="go-btn" href="/app" data-app-modal data-ev="app-cta">{U.getTheApp}</a>
     </div>
+    {/* AND ON A PAGE THAT ALREADY HAS ONE, quietly, the same offer the English
+        page makes (2026-09-23). Ported here the same day it was found missing
+        (REVIEW.md 2026-09-23 WARN): the control existed only on the English
+        tree page, so a reader of any translated page had strictly less way to
+        contribute a photograph than an English one. */}
+    {photo && photo.url && (
+      <div class="report">
+        <strong>{U.havePhotographed}</strong>
+        <p class="report-line">{U.havePhotographedLine}</p>
+        <AddPhoto treeId={tree.id} treeName={x.name} lat={loc.latitude!} lng={loc.longitude!} lang={lang} quiet />
+      </div>
+    )}
     <div class="report">
       <strong>{U.couldUseHelp}</strong>
       <p class="report-line">{U.researchedRemotely}</p>

@@ -46,6 +46,20 @@ export const ADD_PHOTO_JS = `
   var lat = parseFloat(box.getAttribute('data-lat'));
   var lng = parseFloat(box.getAttribute('data-lng'));
   var busy = false;
+  // Looked up once, in this language, by AddPhoto.astro (same pattern as
+  // WORTHIT_JS's data-thanks-detail): this script is shared by all seven
+  // languages and must never hardcode a sentence, which is exactly how the
+  // control shipped English-only on every translated tree page (REVIEW.md
+  // 2026-09-23 WARN).
+  var msgSignIn = box.getAttribute('data-msg-signin') || 'Sign in first, then choose your photograph.';
+  var msgSending = box.getAttribute('data-msg-sending') || 'Sending...';
+  var msgBadFile = box.getAttribute('data-msg-badfile') || 'That picture could not be read. Try another one.';
+  var msgThanks = box.getAttribute('data-msg-thanks') || 'Thank you. We look at every photograph before it goes on a page, and you will hear what happened to yours.';
+  var msgFailed = box.getAttribute('data-msg-failed') || 'That did not go through. Try again in a moment.';
+  // The button's own label, in whichever language rendered it (quiet or not),
+  // read back from the DOM rather than guessed, so resetting it after a busy
+  // or failed state never reverts to the English default on a translated page.
+  var originalLabel = btn.textContent;
 
   function session() {
     try {
@@ -73,7 +87,7 @@ export const ADD_PHOTO_JS = `
     // deletion promise hangs on.
     if (!session()) {
       if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback');
-      say('Sign in first, then choose your photograph.');
+      say(msgSignIn);
       return;
     }
     file.click();
@@ -83,13 +97,13 @@ export const ADD_PHOTO_JS = `
     var f = file.files && file.files[0];
     if (!f || busy) return;
     var s = session();
-    if (!s) { say('Sign in first, then choose your photograph.'); return; }
-    busy = true; btn.disabled = true; btn.textContent = 'Sending...';
+    if (!s) { say(msgSignIn); return; }
+    busy = true; btn.disabled = true; btn.textContent = msgSending;
     say('');
     window.atDownsize(f, 1600, function(blob) {
       if (!blob) {
-        busy = false; btn.disabled = false; btn.textContent = 'Add a photo';
-        say('That picture could not be read. Try another one.');
+        busy = false; btn.disabled = false; btn.textContent = originalLabel;
+        say(msgBadFile);
         return;
       }
       var id = uuid();
@@ -120,12 +134,11 @@ export const ADD_PHOTO_JS = `
         if (!r || !r.ok) throw new Error('row');
         btn.hidden = true;
         file.value = '';
-        say('Thank you. We look at every photograph before it goes on a page, '
-            + 'and you will hear what happened to yours.');
+        say(msgThanks);
         if (window.at) at.track('tree-photo-sent');
       }).catch(function() {
-        busy = false; btn.disabled = false; btn.textContent = 'Add a photo';
-        say('That did not go through. Try again in a moment.');
+        busy = false; btn.disabled = false; btn.textContent = originalLabel;
+        say(msgFailed);
       });
     });
   });
