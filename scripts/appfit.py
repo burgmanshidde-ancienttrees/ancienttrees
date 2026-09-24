@@ -375,7 +375,8 @@ def check(screen):
     for el in els:
         if (el.w <= 0 or el.h <= 0 or el.ident in SYSTEM_IDS
                 or el.label in SYSTEM_LABELS
-                or el.label in FRAMEWORK_CONTROLS):
+                or el.label in FRAMEWORK_CONTROLS
+                or map_annotation(el)):
             continue
         if el.type not in VISIBLE or inside(el, NOT_OURS, NOT_OURS_IDS):
             continue
@@ -448,7 +449,7 @@ def check(screen):
         # and SMALL and reported for DRIFT, so the search screen's finding was
         # the "Next keyboard" key (2026-08-25). One list of what is not ours.
         if el.ident in SYSTEM_IDS or el.label in SYSTEM_LABELS \
-                or el.label in FRAMEWORK_CONTROLS:
+                or el.label in FRAMEWORK_CONTROLS or map_annotation(el):
             continue
         # WIDER THAN A TOUCH TARGET. 48, not 40.
         #
@@ -629,6 +630,43 @@ FRAMEWORK_CONTROLS = {"Compass", "About this map",
                       # search screen was measured on anything but the SE).
                       "Next keyboard", "Dictate", "dictation", "shift",
                       "delete", "Emoji", "space", "return", "more"}
+
+
+# THE BLUE DOT IS NOT A CONTROL. MapLibre draws the user's location as a 30 by
+# 30 annotation view inside the map, labelled 'You Are Here', placed by the map
+# rather than by us: the frame follows the coordinate and the dot is centred on
+# it, so the moment the simulated location sits off the visible region its left
+# edge reads as minus half its width. That is a CLIPPED and a SMALL on every
+# screen holding a map, about something nobody taps and nobody laid out.
+#
+# Only ever seen on a desk, which is the worst shape a finding can have. UI
+# tests launch with `-at=`, so CoreLocation is never asked and the dot never
+# renders: the CI floor job saw 2 findings across 136 screens on 2026-09-08,
+# while a simulator here with location granted reported 22 across 34 the next
+# morning. A check that fires only where the fix would be made, about a fault
+# that is not one, is the crying wolf this file keeps guarding against.
+#
+# Matched by ANCESTRY as well as by label, so a control of OURS that happens to
+# say "You Are Here" is still measured.
+USER_LOCATION = "You Are Here"
+
+
+def map_annotation(el):
+    """True for MapLibre's own user-location dot, inside MapLibre's own map.
+
+    The map view reports as an anonymous `Other` carrying the label 'Map',
+    never as anything of type Map, which is why NOT_OURS (a list of TYPES)
+    has never matched it and why the compass and the credit button above had
+    to be exempted by label instead of by where they sit.
+    """
+    if el.label != USER_LOCATION:
+        return False
+    p = el.parent
+    while p is not None:
+        if p.label == "Map" and p.type in INVISIBLE:
+            return True
+        p = p.parent
+    return False
 
 
 def check_double_padding():
