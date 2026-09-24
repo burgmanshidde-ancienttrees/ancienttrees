@@ -1455,7 +1455,14 @@ def product_section(today):
         # named here and the down-vote was not. The comment above says the
         # point of this list is that a never-fired action still gets a line;
         # half a control was missing from it.
-        for name in ("directions", "walk-open", "walk-start", "save",
+        # walk-open and walk-start left this list on 2026-09-24. Walks left
+        # the website on 2026-09-02 (DECISIONS.md): every walk control opens
+        # the app overlay and is counted as walks-app, so these two can never
+        # fire again. Named here they printed "0, never" every morning, and a
+        # session read that as a product gap and told Hidde nobody starts a
+        # walk. His answer: "We don't offer walks dude remember that". A
+        # never-fired line is only a signal for an action the site still has.
+        for name in ("directions", "save",
                      "worthit-worth it", "worthit-not worth it",
                      "signin-link-sent", "app-cta", "waitlist-submit"):
             last.setdefault(name, None)
