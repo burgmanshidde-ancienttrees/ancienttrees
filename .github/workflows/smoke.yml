@@ -30,7 +30,10 @@ concurrency:
 jobs:
   smoke:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # 30 since 2026-09-24: the build this job runs takes 11 to 17 minutes at
+    # 16,000 pages, so a 15 minute ceiling cancelled nearly every run that
+    # morning during "Build site", before a single page was opened.
+    timeout-minutes: 30
     env:
       ASTRO_TELEMETRY_DISABLED: "1"
     steps:
