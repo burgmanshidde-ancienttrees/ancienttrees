@@ -29,6 +29,32 @@
 -- PlacePin), and the website's only ungated path is the privacy request,
 -- which the second clause allows.
 
+-- FIRST, TAKE AWAY THE POLICY THAT SAYS YES. Added 2026-09-24, after Hidde
+-- ran the version below and the anonymous probe still went through with HTTP
+-- 201. RLS policies are PERMISSIVE and OR together: one that permits is enough,
+-- however many refuse. The open one was made in the Supabase dashboard when
+-- this form was built, so it is in no file here and nothing in this repo knows
+-- its name.
+--
+-- So it is dropped by SHAPE rather than by name: every policy on this table
+-- that can permit an insert, which is cmd INSERT and cmd ALL. The select policy
+-- from own-data.sql is cmd SELECT and is deliberately untouched, because
+-- reading your own submissions is what puts them on your account page.
+do $$
+declare p record;
+begin
+  for p in
+    select policyname
+      from pg_policies
+     where schemaname = 'public'
+       and tablename = 'submissions'
+       and cmd in ('INSERT', 'ALL')
+  loop
+    raise notice 'dropping insert policy %', p.policyname;
+    execute format('drop policy %I on public.submissions', p.policyname);
+  end loop;
+end $$;
+
 drop policy if exists "sending needs an account" on public.submissions;
 create policy "sending needs an account" on public.submissions
   for insert
