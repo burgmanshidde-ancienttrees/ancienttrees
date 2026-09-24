@@ -31,7 +31,6 @@ import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
 import { ageToken, metaForTree, submitLink, locationIsApproximate, girthLabel } from "../../lib/tree-copy";
-import { treeSources } from "../../lib/tree-sources";
 import WorthIt from "../../components/WorthIt.astro";
 import SaveHeart from "../../components/SaveHeart.astro";
 import SeenButton from "../../components/SeenButton.astro";
@@ -235,7 +234,6 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "see the story" : (ageText 
 const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
-const sources = treeSources(tree);
 const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SHARE_JS
   + DOWNSIZE_JS + ADD_PHOTO_JS;
 ---
@@ -429,17 +427,6 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         most reports are about. Its vote half sits beside the place name; the
         two were one block under the story until 2026-09-11. */}
     <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} part="report" />
-    {sources.length > 0 && (
-      <section class="tree-sources">
-        <h2>Sources</h2>
-        <p>Where the facts on this page come from.</p>
-        <ul>
-          {sources.map((s) => (
-            <li>{s.href ? <a href={s.href} target="_blank" rel="noopener">{s.label}</a> : <span>{s.label}</span>}</li>
-          ))}
-        </ul>
-      </section>
-    )}
     {nearby.length > 0 && (
       <Fragment>
         <h2>Trees nearby</h2>

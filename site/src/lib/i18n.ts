@@ -221,8 +221,6 @@ export interface UIStrings {
   pinExact: string;
   pinApproximate: string;
   discoverMore: string;
-  sourcesHeading: string;
-  sourcesLine: string;
   takeMeThere: string;
   seenIt: string;
   worthItAsk: (name: string) => string;
@@ -496,8 +494,6 @@ const EN: UIStrings = {
   pinExact: "Exact",
   pinApproximate: "Approximate",
   discoverMore: "Discover more",
-  sourcesHeading: "Sources",
-  sourcesLine: "Where the facts on this page come from.",
   takeMeThere: "Take me there",
   seenIt: "I have seen this one",
   worthItAsk: (n) => `Yes, ${n} was worth the visit`,
@@ -725,8 +721,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinExact: "Exacta",
     pinApproximate: "Aproximada",
     discoverMore: "Descubre más",
-    sourcesHeading: "Fuentes",
-    sourcesLine: "De dónde salen los datos de esta página.",
     takeMeThere: "Cómo llegar",
     seenIt: "Ya he visto este",
     worthItAsk: (n) => `Sí, ${n} mereció la visita`,
@@ -939,8 +933,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinExact: "Esatta",
     pinApproximate: "Approssimativa",
     discoverMore: "Scopri di più",
-    sourcesHeading: "Fonti",
-    sourcesLine: "Da dove vengono i dati di questa pagina.",
     takeMeThere: "Portami lì",
     seenIt: "L'ho già visto",
     worthItAsk: (n) => `Sì, ${n} valeva la visita`,
@@ -1153,8 +1145,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinExact: "Exact",
     pinApproximate: "Bij benadering",
     discoverMore: "Ontdek meer",
-    sourcesHeading: "Bronnen",
-    sourcesLine: "Waar de gegevens op deze pagina vandaan komen.",
     takeMeThere: "Breng me erheen",
     seenIt: "Deze heb ik gezien",
     worthItAsk: (n) => `Ja, ${n} was de moeite waard`,
@@ -1367,8 +1357,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinExact: "Genau",
     pinApproximate: "Ungefähr",
     discoverMore: "Mehr entdecken",
-    sourcesHeading: "Quellen",
-    sourcesLine: "Woher die Angaben auf dieser Seite stammen.",
     takeMeThere: "Route planen",
     seenIt: "Diesen habe ich gesehen",
     worthItAsk: (n) => `Ja, ${n} war den Besuch wert`,
@@ -1581,8 +1569,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinExact: "Exacta",
     pinApproximate: "Aproximada",
     discoverMore: "Descobrir mais",
-    sourcesHeading: "Fontes",
-    sourcesLine: "De onde vêm os dados desta página.",
     takeMeThere: "Como chegar",
     seenIt: "Já vi esta",
     worthItAsk: (n) => `Sim, ${n} valeu a visita`,
@@ -1795,8 +1781,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinExact: "Exacte",
     pinApproximate: "Approximative",
     discoverMore: "Découvrir plus",
-    sourcesHeading: "Sources",
-    sourcesLine: "D’où viennent les informations de cette page.",
     takeMeThere: "M'y emmener",
     seenIt: "Je l'ai déjà vu",
     worthItAsk: (n) => `Oui, ${n} valait le détour`,
@@ -2008,8 +1992,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinExact: "正確",
     pinApproximate: "おおよそ",
     discoverMore: "もっと見る",
-    sourcesHeading: "出典",
-    sourcesLine: "このページの情報の出どころ。",
     takeMeThere: "ここへ行く",
     seenIt: "この木は見ました",
     worthItAsk: (n) => `はい、${n}は行く価値がありました`,

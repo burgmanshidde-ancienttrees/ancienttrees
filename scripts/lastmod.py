@@ -65,12 +65,14 @@ TREE_ONLY = {"story", "verify_notes", "verified_sources", "curation_status",
              "how_to_recognise", "submitted_by"}
 
 # Of TREE_ONLY, the subset TranslatedTreePage.astro actually reads (story via
-# the English fallback, verified_sources via treeSources()). how_to_recognise,
+# the English fallback). verified_sources rendered on both tree pages until
+# 2026-09-24, when Hidde removed the Sources block as noise; /sources credits
+# every register, so the field is data only and dates no page. how_to_recognise,
 # curation_status and submitted_by render on the English tree page only, so a
 # change to them must not restamp the translated tree page's lastmod: it did
 # not change. Found 2026-09-08 when 23 how_to_recognise-only edits to Seville
 # restamped 184 sitemap entries (8 language variants apiece) instead of 23.
-TRANSLATED_TREE_UNUSED = TREE_ONLY - {"story", "verified_sources"}
+TRANSLATED_TREE_UNUSED = TREE_ONLY - {"story"}
 
 
 def h(obj):
