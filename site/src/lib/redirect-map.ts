@@ -45,6 +45,9 @@ const RENAMED_CITY_SLUGS: [string, string][] = [
   // island. Naha's page held trees in Urasoe and Nakagusuku too, framed itself
   // around Okinawa, and no search query ever named Naha.
   ["naha", "okinawa"],
+  // Same day: a one-tree place on Martinique, named after its commune. The
+  // island is what a reader looks for and where the next tree there will go.
+  ["le-precheur", "martinique"],
 ];
 
 // A tree that gets renamed keeps its old URL resolving.
