@@ -38,7 +38,11 @@ permissions:
 # nobody is standing over, so cancelling it is how the four-day gap happens
 # again on a busy afternoon.
 concurrency:
-  group: pages-${{ github.event_name == 'push' && 'push' || 'manual' }}
+  # A run dispatched on a branch builds and runs QA, and the github-pages
+  # environment refuses its deploy (main only). It gets a group of its own so a
+  # scheduled or manual run of main never replaces it while it waits, and it
+  # never holds up main's (2026-09-24, a branch check was cancelled twice).
+  group: pages-${{ github.event_name == 'push' && 'push' || (github.ref == 'refs/heads/main' && 'manual' || github.ref) }}
   cancel-in-progress: ${{ github.event_name == 'push' }}
 
 jobs:
