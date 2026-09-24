@@ -363,7 +363,7 @@ def fame_gap():
     print("  fame data         : %d of %d famous leads carry no fame number. "
           "If this run has network:" % (unresolved, len(cache)))
     print("      python3 scripts/famous_demand.py --resolve && "
-          "python3 scripts/famous_demand.py --count")
+          "python3 scripts/famous_demand.py")
     print("      python3 scripts/fame.py --apply    "
           "# puts the newly resolved trees on /collections/famous-trees")
 
