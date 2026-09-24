@@ -10,6 +10,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-24 (session) - Five web fixes from the holiday list
+
+- **Canada's map shows Canada.** Searching Canada lands on /canada, whose map fitted to seven cities strung along the 49th parallel, so it was centred on the United States. Country intros can now carry `map_frame` (extra ground the map must show); Canada's reaches to 57N.
+- **City maps open on the cluster.** Singapore opened zoomed out because one tree (Chek Jawa, Pulau Ubin) stands 24 km from the other 33. `homeBounds()` in city-map-script.ts fits the opening frame to trees within four times the median distance from the median point (10 km floor), only when that drops at most a quarter of the trees. Every pin stays on the map and in the list. 39 cities open tighter, Hobart, Osaka and London among them. English and translated city pages share it.
+- **City page foot: the eight nearest cities, then every city.** It listed all 228 others. Translated city pages get the same foot in their own language (two new UIStrings keys in all seven languages). /cities still lists every place, so nothing is orphaned.
+- **Oldest-tree answers agree with their own page.** Lisbon's intro and FAQ still called the Santo Amaro olives (457 years) the oldest while the title and question page named the Santa Iria olive (about 2,850, in Loures); both now give the day-trip olive first and the oldest inside the city second, English and Portuguese. The Netherlands meta named a 1638 pear as oldest while the page ranks the Wodanseiken first; France's meta called Paris's 1601 Robinier France's oldest. City pages answer the question in the FAQ and on the question page; country pages in sentence three and the ranked-ten block, which is what Contract G asks.
+- **Country pages share with a photograph.** No country page set og:image, so every one (Poland included) previewed as the site logo while its /countries card had a photo. It now uses the same face as /countries and the app feed. Poland had approved photographs all along; the gap was the page, not the data.
+
+Built nowhere locally (no Node here): preflight clean, the deploy and smoke runs judge the build. Live after the deploy.
 ## 2026-09-24 (session) - Sources block off every tree page
 
 Hidde: "dit hele blok vermelden we toch ook nergens in de app - en hoeft legally niet? verwijder maar is ruis." Removed from the English tree page and all seven translated ones (template, i18n strings, CSS, lib/tree-sources.ts). Legally sound: /sources credits every register with its licence, and CC BY allows attribution through a central credits page. The one sentence there promising per-tree sources is gone. `verified_sources` stays in the data as provenance; lastmod.py no longer counts it as rendered. Live after the deploy.
