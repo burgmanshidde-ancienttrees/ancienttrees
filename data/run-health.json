@@ -17908,6 +17908,27 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-24T17:02:44+00:00",
+   "date": "2026-09-24",
+   "run_id": "36031519657",
+   "minutes": 64.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 412,
+   "denials": 29,
+   "denials_source": "permission_denials: Bash(? ; curl && ? ; file), Bash(? ; for ; do ; -c ...), Bash(bash), Bash(cat | head), Bash(cp && python3 ; content ; lines ...), Bash(cp ; ls), Bash(cp), Bash(curl ; wc), Bash(for ; do ; cat ; echo ...), Bash(for ; do ; echo ; curl ...), Bash(for ; do ; python3 ; import ...), Bash(grep | ? | ? | head), Bash(mkdir && cd && ? ; curl ...), Bash(mkdir), Bash(ps || echo), Bash(ps), Bash(python3 ; import ; d ; leads ...), Bash(python3 ; import ; headers ; contact ...), Bash(python3 ; import ; path ; d ...), Bash(python3 ; import ; titles ; headers ...), Bash(rm && git | head), Bash(rm && python3 ; import ; path ...), Bash(rm), Bash(sh && echo), Bash(sh), Bash(until ; do ; done ; echo), Bash(while && ? ; do ; done ...), Bash(while ; do ; done ; echo)",
+   "ended": "success",
+   "tokens": 11113103,
+   "claims_held": [
+    "_tree-of-the-year"
+   ],
+   "commits": 4,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
