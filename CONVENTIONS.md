@@ -57,11 +57,18 @@ account, on both surfaces, under a heading that says what they came to do:
 This supersedes the softer half of our 2026-08-21 ruling, which was that the
 form is fillable by anybody and only sending needs the account.
 
-Two things we still do not copy, deliberately. The form stays VISIBLE behind
-the overlay and the overlay is dismissible, so nothing is hidden and nobody is
-trapped; Google Maps simply refuses the tab. And a privacy request never
-triggers it, because asking for your own data back can never require making an
-account first.
+**And then the form went behind it too**, on his "loop alle ingangen naar het
+formulier langs en zet dicht". Every entrance was already gated and the overlay
+opened on all of them, measured one by one: the bare menu link, kind=tree with
+and without a city, city, correction from a tree page, press, and a nonsense
+kind that falls back to tree. What stayed open was that dismissing the overlay
+left a form anybody could fill and send, which was my own softer reading rather
+than anything the references do. A signed-out person now gets the page saying
+what it is for and one button, which is the Google Maps shape exactly.
+
+One deliberate difference remains: a privacy request never triggers the overlay
+and its form stays open to anybody, because asking for your own data back can
+never require making an account first.
 
 What is still unsolved, honestly: after signing in you press Send once more,
 because every route into a session leaves the page and comes back. Both
