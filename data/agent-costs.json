@@ -8558,6 +8558,15 @@
     "note": "Christchurch (787) and Auckland (3600) imported CC BY 4.0; Wellington, Dunedin, NZ Notable Trees Trust need permission",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "alicante",
+    "kind": "verify",
+    "tokens": 193000,
+    "trees": 0,
+    "note": "Register confirmed exhausted again via exact coordinate join against all 39 unmined candidates (all already published/blocked/leaded); 4 fresh off-register angles tried and exhausted",
+    "wasted": 193000,
+    "brief_wrong": true
    }
   ]
  }

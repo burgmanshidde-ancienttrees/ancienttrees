@@ -196,10 +196,24 @@ def resolve(city, country, here):
                 return art, None
             tried[-1] += " (%s, no coordinates%s)" % (
                 art["title"], ", disambiguation page" if art["disambiguation"] else "")
+    # The same coordinate-alone trap the comment above names for
+    # Higashi-Hiroshima, reproduced 2026-09-24 on Wojslawice: the direct
+    # candidates above all missed (the slug drops the L with a stroke that
+    # the API's title lookup wants), so this fuzzy fallback ran and accepted
+    # its top hit purely because a nearby unrelated place, Klodzko, happened
+    # to fall within MAX_KM of the same tree. No title check guarded this
+    # loop at all. A folded-title match is required now, same as the strict
+    # path above; a genuine spelling variant still passes (fold() strips
+    # accents), an unrelated nearby town no longer does.
+    city_folded = fold(city)
     for title in search_title(city, country):
         art = fetch_article(title)
         if art and art["coord"] and haversine(here, art["coord"]) <= MAX_KM:
-            return art, None
+            hit_folded = fold(strip_qualifier(art["title"]))
+            if city_folded in hit_folded or hit_folded in city_folded:
+                return art, None
+            tried.append("search: %s (%s, title does not match)" % (title, art["title"]))
+            continue
         tried.append("search: " + title)
     return None, "; ".join(tried)
 
