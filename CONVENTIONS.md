@@ -2608,3 +2608,10 @@ A fifth heading came out of it: the middle column was headed "Ancient Trees",
 hard-coded and untranslated, which printed the brand name twice in one footer
 beside the wordmark. It is two columns now, "The project" and "The data", both
 in all eight languages.
+
+## The top of a detail page on mobile web (2026-09-24)
+
+**Reference: AllTrails' trail page on mobile web** (alltrails.com/trail/us/california/mist-trail, read at 390px on 2026-09-24).
+Breadcrumbs sit in one thin line under the site header, visible on a phone. Then the photograph, full width, carrying its controls as round buttons ON it: a back arrow top-left, the actions (download, invite, completed, save) top-right, the map inset bottom-right. There is no separate bar between header and photograph. Share lives in the pinned bottom bar.
+
+**What we took:** the same. Our app's tree page puts share and report in a toolbar row above the photo because iOS has a navigation bar with a back button there; on the web that row was a white strip holding two icons (Hidde: "logisch op app want terug knop maar niet logisch op web"). So on the web: breadcrumbs line, then the photograph with back (top-left), share and report (top-right) and the map inset (bottom-right). Back returns to the previous page when it was one of ours and to the city page otherwise.

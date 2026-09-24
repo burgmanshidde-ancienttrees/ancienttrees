@@ -2561,12 +2561,19 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 
 /* The top row: where you are on the left, share and report on the right, as
    the app's toolbar sits above its picture. */
-.td-top { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
-  margin: 0 0 0.75rem; min-height: 44px; }
-.td-top .crumbs { margin: 0; min-width: 0; }
-.td-tools { display: flex; gap: 10px; margin-left: auto; position: relative; }
+.td-top { margin: 0 0 0.6rem; }
+/* Visible on a phone too, one line, the way AllTrails prints its trail path;
+   the sitewide rule hides .crumbs under 800px. */
+.td-top .crumbs { display: block; margin: 0; font-size: 13px; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis; }
+/* Share and report ride on the photograph's top-right corner. */
+.td-tools { position: absolute; top: 10px; right: 10px; z-index: 5; display: flex; gap: 8px; }
+.td-back { position: absolute; top: 10px; left: 10px; z-index: 5; width: 44px; height: 44px;
+  border-radius: 50%; background: rgba(255,255,255,0.92); box-shadow: 0 1px 6px rgba(26,32,18,0.18);
+  display: inline-flex; align-items: center; justify-content: center; color: var(--ink); }
+.td-back svg.ic { width: 21px; height: 21px; }
 .td-tools .share-btn, .tree-flag { width: 44px; height: 44px; border-radius: 50%; margin: 0;
-  background: #fff; border: 0; box-shadow: 0 1px 6px rgba(26,32,18,0.12);
+  background: rgba(255,255,255,0.92); border: 0; box-shadow: 0 1px 6px rgba(26,32,18,0.18);
   display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
 .tree-flag svg.ic { width: 21px; height: 21px; color: var(--moss); }
 .worthit.worthit-flag { display: block; margin: 0; }
@@ -2604,6 +2611,7 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 .td-show-map .td-inset { right: 0; bottom: 0; width: 100%; height: 100%; border: 0;
   border-radius: 10px; box-shadow: none; }
 .td-show-map .td-inset .maplibregl-ctrl-attrib { display: block; }
+.td-show-map .td-inset .maplibregl-ctrl-top-left { top: 56px; left: 56px; }
 .td-show-map .td-inset-hit { display: none; }
 .td-show-map .td-photo-back { display: block; position: absolute; right: 10px; bottom: 10px;
   z-index: 4; width: 72px; height: 72px; padding: 0; border-radius: 10px; overflow: hidden;
@@ -2611,7 +2619,7 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
   background: var(--surface); cursor: pointer; }
 .td-photo-back img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .td-photo-back-art svg.ic { width: 28px; height: 28px; color: var(--ink-light); }
-.td-show-map .td-expand { display: inline-flex; position: absolute; right: 10px; top: 10px; z-index: 4;
+.td-show-map .td-expand { display: inline-flex; position: absolute; left: 10px; bottom: 10px; z-index: 4;
   width: 44px; height: 44px; border-radius: 50%; align-items: center; justify-content: center;
   background: rgba(255,255,255,0.92); color: var(--ink); font-size: 15px; }
 
