@@ -7,27 +7,21 @@
 // labels are English); the collect dialog is translated but points at the
 // same English /app page, which is where the product actually is.
 import Base from "../layouts/Base.astro";
-import SaveHeart from "./SaveHeart.astro";
-import SeenButton from "./SeenButton.astro";
-import WorthIt from "./WorthIt.astro";
-import ShareButton from "./ShareButton.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
-import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { SHARE_JS } from "../lib/share-js";
 import { WORTHIT_JS } from "../lib/worthit-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distSpanBetween, type CityEntry, type Tree } from "../lib/trees";
 import { haversineKm } from "../lib/walks";
 import { usablePhotos, thumbUrl } from "../lib/images";
-import PhotoFigure from "./PhotoFigure.astro";
-import AddPhoto from "./AddPhoto.astro";
 import { ADD_PHOTO_JS } from "../lib/add-photo-js";
-import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
-import { locationIsApproximate, metaForTree, girthLabel } from "../lib/tree-copy";
-import { mapHead, singlePinScript } from "../lib/map";
+import { metaForTree, girthLabel } from "../lib/tree-copy";
+import { mapHead } from "../lib/map";
+import { treePageScript } from "../lib/tree-page-js";
+import { DOWNSIZE_JS } from "../lib/image-downsize-js";
+import TreeDetail from "./TreeDetail.astro";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation, type TreeTranslation } from "../lib/i18n";
 import { cityHasQuestionPage } from "../lib/question-page";
-import { hasWalksPage } from "../lib/city-walks";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -49,16 +43,6 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
 const cityHasQuestion = cityHasQuestionPage(allTrees.length);
 
 const cslug = city.id;
-// The walk link opens the app overlay, since 2026-09-02 (Hidde: "stuur ze
-// maar gewoon naar de app"), the same as its English twin. AppModal renders
-// from Base.astro in this page's own language, so the dialog it opens is
-// translated even though this link is not a page any more.
-//
-// The sticky bar's second link used to go to /[city]/walks as well while
-// reading "More trees", which was two mistakes in one: it is not a walk
-// promise, and it pointed at a page that no longer exists. It goes to the
-// city page, which is where more trees actually are.
-const cityHasWalksPage = hasWalksPage(city);
 const tslugs = treeSlugsForCity(city);
 const tslug = tslugs[tree.id];
 const loc = tree.location;
@@ -99,7 +83,6 @@ const photo = shots[0] ?? null;
 let ogImage = "";
 if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(thumbUrl(photo.url, 1200))}">`;
 
-const isApprox = locationIsApproximate(tree);
 const girth = girthLabel((tree as any).girth_cm);
 const graph = [
   ...SITE_SCHEMA,
@@ -121,8 +104,21 @@ const headExtra = mapHead() + ogImage + (fallback ? "" : "\n" + hreflangForCity(
 // the same reason. Both halves are here: the list is now the English page's.
 // SIGNIN_JS left this list on 2026-09-18: the sheet and its script are Base's
 // now, on every page, so there is no list to forget it from.
-const scripts = singlePinScript(loc.latitude!, loc.longitude!)
-  + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + ADD_PHOTO_JS;
+// VISITED_SYNC_JS left with the tick (2026-09-24): collecting is the app's.
+const scripts = treePageScript(loc.latitude!, loc.longitude!)
+  + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + DOWNSIZE_JS + ADD_PHOTO_JS;
+const nearbyCards = nearby.map((t) => ({
+  name: tr.trees[t.id].name,
+  url: `/${lang}/${cslug}/${tslugs[t.id]}`,
+  photo: usablePhotos(t)[0]?.url ?? null,
+  meta: U.distanceAway(distSpanBetween(
+    { latitude: loc.latitude!, longitude: loc.longitude! },
+    { latitude: t.location.latitude!, longitude: t.location.longitude! })),
+}));
+const chips = [
+  { href: `/${lang}/${cslug}`, label: U.allTreesLink(allTrees.length, tr.city), icon: "buildings" },
+  ...(cityHasQuestion ? [{ href: `/${lang}/${cslug}/${qslug}`, label: U.whichIsOldest(tr.city), icon: "stack" }] : []),
+];
 // The bare number, and a cap on the prose fallback. Same rule as the English
 // page: the label carries the unit, and an age_estimate that runs to a
 // sentence is cut at its first clause, because everything after the comma is
@@ -136,167 +132,13 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
 
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra} lang={lang}>
-  <main class="content-page has-tree-bar">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{U.home}</a> › <a href={`/${lang}/${cslug}`}>{tr.city}</a> › <span>{x.name}</span></nav>
-    {/* The app's tree page, ported 2026-09-04, identical to its English twin:
-        picture first and full bleed, facts in one card, the closing paragraph
-        as chips. Only the labels are looked up; the shape is the shape. */}
-    {photo && photo.url ? (
-      <PhotoFigure photo={photo} photos={shots} alt={x.name} lang={lang} variant="hero"
-        widths={[700, 1100, 1600]} sizes="(max-width: 760px) 100vw, 760px" />
-    ) : (
-      <figure class="tree-noph tree-hero">
-        <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
-        <figcaption>
-          <b>{x.species}</b>
-          {/* Never "con tu nombre". We do not publish a submitter's name, on
-              any channel, ruled 2026-08-11; the English page never promised it
-              and this one did. A photographer's credit is a different thing and
-              is owed by the licence, not by us. */}
-          <span>{U.noPhotoLicence} {U.photoCanGoHere}</span>
-          <AddPhoto treeId={tree.id} treeName={x.name} lat={loc.latitude!} lng={loc.longitude!} lang={lang} />
-        </figcaption>
-      </figure>
-    )}
-    <div class="tree-head">
-      <div class="page-head">
-        <h1>{x.name}</h1>
-        <ShareButton url={canonical} title={x.name} label={U.share} copied={U.shareCopied} />
-      </div>
-      {/* The species caption is gone: it named the species a second time, a
-          centimetre above the block that names it (2026-09-04). */}
-      {/* The place, a dot and the thumb, the same row the English page and the
-          app draw. It arrived here on 2026-09-12, three months after the app
-          and a day after the English page: Hidde, "zet het op de vertaalde
-          pagina's alles consistent". */}
-      <div class="tree-place-row">
-        <p class="tree-place"><a href={`/${lang}/${cslug}`}>{[loc.neighbourhood, tr.city].filter(Boolean).join(", ")}</a></p>
-        <span class="tree-place-dot" aria-hidden="true">·</span>
-        <WorthIt treeId={x.id} city={tr.city} treeName={x.name} part="vote" lang={lang} />
-      </div>
-    </div>
-    {/* The same block the English page carries, in this language. Two columns
-        for the facts that are short, then the lines that need words. Every
-        string comes from UIStrings: a label typed into markup here is not one
-        mistake but seven (2026-09-02). */}
-    <div class="tree-block">
-      <div class="tb-cols">
-        <div class="tb-col tb-age"><span>{ageLabel}</span><b>{ageValue}</b></div>
-        <div class="tb-col tb-species"><span>{U.labelSpecies}</span><b>{x.species}</b></div>
-      </div>
-      {/* NOTHING WHEN THE PIN IS EXACT, the same as the app since 2026-09-04
-          (Hidde: "die hele tekst mag weg, mensen moeten er vanuit gaan dat het
-          sowieso helemaal goed is en alleen als we niet zeker zijn staat er een
-          waarschuwing"). The app lost this line that day and the website kept
-          it for a week, which he caught on 2026-09-11. The report control is
-          still on every page for anybody who finds the pin wrong. */}
-      {isApprox && (
-        <p class="tb-loc tb-loc-approx"><b>{U.locApprox}</b></p>
-      )}
-      {tree.paid_entry && (
-        <p class="tb-ticket">
-          <svg class="tb-ticket-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 7.5A1.5 1.5 0 0 1 4.5 6h15A1.5 1.5 0 0 1 21 7.5V10a2 2 0 0 0 0 4v2.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5V14a2 2 0 0 0 0-4V7.5Z"/><path d="M8.5 7.6v8.8" stroke="#E8EEF6" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 2.4"/></svg>
-          <span class="tb-ticket-txt"><b>{U.ticketNeeded}</b><span>{x.access ?? ""}</span></span>
-        </p>
-      )}
-    </div>
-    <div class="action-row">
-      <a class="go-btn" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">{U.takeMeThere}</a>
-      {cityHasWalksPage && (
-        <a class="action-link" href="/app" data-app-modal data-ev="walks-app">{U.walkMoreTrees(tr.city)} {U.inTheApp}</a>
-      )}
-    </div>
-    <div class="prose-block"><p>{x.story}</p></div>
-    {/* THE DETAIL LIST, and only the details, the same trim as the English
-        page (2026-09-12). The panel above arrived with the app's design on
-        2026-09-04 and took over age, species and the ticket; this list was
-        never trimmed to match, so every translated tree page stated them
-        twice.
-
-        Species goes entirely here, where the English page keeps it: the panel
-        on a translated page prints the whole string, scientific name and all
-        ("Araucaria de Norfolk (Araucaria heterophylla)"), so this row was
-        character for character the panel one screen higher. Contract A's
-        common AND scientific is answered above the fold, which is where the
-        contract asks for it. */}
-    <dl class="facts">
-      {!ageNumber && (<><dt>{U.labelAge}</dt><dd>{x.age_estimate}</dd></>)}
-      {/* A measurement, so it is the same on every page in every language:
-          it comes from the canonical city file, never from the overlay. */}
-      {girth && <Fragment><dt>{U.labelGirth}</dt><dd>{girth}</dd></Fragment>}
-      <dt>{U.labelLocation}</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
-      {!tree.paid_entry && (<><dt>{U.labelAccess}</dt><dd>{x.access}</dd></>)}
-      <dt>{U.labelGettingThere}</dt><dd>{x.transport}</dd>
-    </dl>
-    <div class="map-embed"><div id="map" class="map"></div></div>
-    {/* The transport sentence used to be repeated here, one screen under the
-        row that already says it. The note is about the BUTTON. */}
-    <p class="go-note">{U.goNote}</p>
-    {/* "Something's wrong", low on the page and under the map, which is what
-        most reports are about. Its vote half sits beside the place name. */}
-    <WorthIt treeId={x.id} city={tr.city} treeName={x.name} part="report" lang={lang} />
-    {isApprox && (
-      <p class="approx-note">
-        {U.approxNote}{" "}
-        <a href="/contribute?kind=correction">{U.knowExactly}</a>
-      </p>
-    )}
-    <h2>{U.nearbyTrees}</h2>
-    <div class="near-cards">
-      {nearby.map((t) => (
-        <a class="near-card" href={`/${lang}/${cslug}/${tslugs[t.id]}`}>
-          <b>{tr.trees[t.id].name}</b>
-          <span set:html={`${tr.trees[t.id].age_estimate} &middot; ${U.distanceAway(distSpanBetween({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! }))}`} />
-        </a>
-      ))}
-    </div>
-    <section class="discover-more">
-      <h2>{U.discoverMore}</h2>
-      <div class="dm-chips">
-        <a class="dm-chip" href={`/${lang}/${cslug}`}>{U.allTreesLink(allTrees.length, tr.city)}</a>
-        {cityHasQuestion && <a class="dm-chip" href={`/${lang}/${cslug}/${qslug}`}>{U.whichIsOldest(tr.city)}</a>}
-      </div>
-    </section>
-    {/* The app block, in this language since 2026-09-12. It was the one
-        paragraph on a fully translated page that still spoke English, and it
-        is the paragraph that asks the reader for something. */}
-    <div class="app-pitch">
-      <strong>{U.appPitchTreeTitle}</strong>
-      <p>{U.appPitchTreeBody}</p>
-      <a class="go-btn" href="/app" data-app-modal data-ev="app-cta">{U.getTheApp}</a>
-    </div>
-    {/* AND ON A PAGE THAT ALREADY HAS ONE, quietly, the same offer the English
-        page makes (2026-09-23). Ported here the same day it was found missing
-        (REVIEW.md 2026-09-23 WARN): the control existed only on the English
-        tree page, so a reader of any translated page had strictly less way to
-        contribute a photograph than an English one. */}
-    {photo && photo.url && (
-      <div class="report">
-        <strong>{U.havePhotographed}</strong>
-        <p class="report-line">{U.havePhotographedLine}</p>
-        <AddPhoto treeId={tree.id} treeName={x.name} lat={loc.latitude!} lng={loc.longitude!} lang={lang} quiet />
-      </div>
-    )}
-    <div class="report">
-      <strong>{U.couldUseHelp}</strong>
-      <p class="report-line">{U.researchedRemotely}</p>
-      <a class="report-btn" href="/contribute?kind=correction">{U.correctDetail}</a>
-      <a class="report-btn" href="/contribute?kind=tree">{U.suggestAnother}</a>
-    </div>
-    {/* THE TICK, the web's answer to the camera button in the app's own tree
-        bar (2026-09-12). In the app, photographing a tree ticks it off, which
-        is why its tree page carries a collect action at all; the website has
-        no camera flow, so the collect action here is the tick itself. Under
-        the facts rather than in the floating bar: the bar is already three
-        controls wide and truncates its last one at 375 points. */}
-    <p class="tree-tick"><SeenButton treeId={x.id} treeName={x.name}
-        labelSeen={U.seenIt} labelDone={U.seenItDone} /></p>
-
-    <div class="tree-bar" aria-label={U.actions}>
-      <SaveHeart treeId={x.id} treeName={x.name} labelSave={U.cardSave} labelSaved={U.cardSaved} />
-      <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">{U.takeMeThere}</a>
-      <a class="tb-link" href={`/${lang}/${cslug}`}>{U.moreTrees}</a>
-    </div>
-</main>
+  <TreeDetail
+    lang={lang} tree={tree} name={x.name} species={x.species} speciesUrl={null}
+    story={x.story} access={x.access ?? ""} transport={x.transport ?? ""}
+    ageLabel={ageLabel} ageValue={ageValue} girth={girth} girthLabel={U.labelGirth}
+    recognise={null} address={loc.address ?? null}
+    place={[loc.neighbourhood, tr.city].filter(Boolean).join(", ")}
+    cityName={tr.city} cityUrl={`/${lang}/${cslug}`} crumbs={crumbItems} canonical={canonical}
+    shots={shots} nearby={nearbyCards} chips={chips} />
   <Fragment slot="scripts" set:html={scripts} />
 </Base>

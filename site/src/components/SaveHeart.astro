@@ -1,4 +1,5 @@
 ---
+import { icon } from "../lib/icons";
 // The save heart, everywhere a tree renders (Hidde, 2026-08-14: "please make
 // the ux better", closing audit gap #2: AllTrails puts the heart on every
 // card in every list, ours lived on the tree page alone). One component, one
@@ -28,12 +29,21 @@ interface Props {
   treeUrl?: string;
   photo?: string;
   meta?: string;
+  /** "round" is the app's bar circle (SaveHeart.swift, look .inBar): 52pt,
+   *  hairline border, glyph only. The label stays in the markup, visually
+   *  hidden, because the paint script writes Save/Saved into it and a screen
+   *  reader still needs a word. */
+  look?: "pill" | "round";
 }
 const { treeId, treeName, compact = false, labelSave = "Save", labelSaved = "Saved",
-        treeUrl, photo, meta } = Astro.props;
+        treeUrl, photo, meta, look = "pill" } = Astro.props;
+// Phosphor's outline and filled hearts, the app's heart / heart.fill pair
+// (2026-09-24: no hand-drawn icons). CSS shows one or the other on aria-pressed.
+const off = icon("heart", "bold", "heart hi-off");
+const on = icon("heart", "fill", "heart hi-on");
 ---
 <button
-  class={`save-btn heart-btn${compact ? " heart-compact" : ""}`}
+  class={`save-btn heart-btn${compact ? " heart-compact" : ""}${look === "round" ? " heart-round" : ""}`}
   type="button"
   data-tree={treeId}
   data-name={treeName}
@@ -45,6 +55,6 @@ const { treeId, treeName, compact = false, labelSave = "Save", labelSaved = "Sav
   aria-pressed="false"
   aria-label={`${labelSave} ${treeName}`}
 >
-  <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>
-  <span>{labelSave}</span>
+  <Fragment set:html={off + on} />
+  <span class={look === "round" ? "sr-only" : undefined}>{labelSave}</span>
 </button>

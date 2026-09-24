@@ -2524,3 +2524,219 @@ main.content-page.has-tree-bar .map-embed { margin-top: 1.75rem; margin-bottom: 
   .mf-select,
   .signin-form input { font-size: 16px; }
 }
+
+/* =====================================================================
+   THE TREE PAGE, THE APP'S (2026-09-24). TreeDetail.astro, taken from
+   TreeDetail.swift and approved by Hidde as a mockup the same day. Values are
+   the app's own (Style.swift, BrandButtonStyle, MapInset.swift): 28 between
+   sections, 8 inside a group, a 54 tall primary with radius 12, 52 point
+   circles, a 72 point map inset with radius 10 and a 2 point white rim.
+   ===================================================================== */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+svg.ic { width: 1em; height: 1em; flex: 0 0 auto; fill: currentColor; }
+
+/* Phosphor pairs, outline and filled, replacing the drawn heart and thumb.
+   Scoped to the new classes: the two hearts drawn by map.ts and
+   collection-js.ts still use the old stroke rules until they are replaced. */
+.heart-btn svg.hi-off, .heart-btn svg.hi-on { fill: currentColor; stroke: none; }
+.heart-btn svg.hi-on { display: none; }
+.heart-btn[aria-pressed="true"] svg.hi-off { display: none; }
+.heart-btn[aria-pressed="true"] svg.hi-on { display: inline-block; fill: var(--moss); }
+.tree-bar:not(.walk-bar) .heart-btn[aria-pressed="true"] svg.hi-on { fill: #1a1c12; }
+.worthit-btn svg.th-off, .worthit-btn svg.th-on { fill: currentColor; stroke: none; }
+.worthit-btn svg.th-on { display: none; }
+.worthit-btn.is-on svg.th-off { display: none; }
+.worthit-btn.is-on svg.th-on { display: block; }
+.share-btn svg.ic { width: 21px; height: 21px; color: var(--moss); }
+
+/* Nothing in the header competes with the page's own Open in the app. */
+body:has(.td-page) .bar-links a.bar-cta { display: none; }
+
+main.content-page.td-page { padding-bottom: 7rem; }
+
+/* The top row: where you are on the left, share and report on the right, as
+   the app's toolbar sits above its picture. */
+.td-top { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
+  margin: 0 0 0.75rem; min-height: 44px; }
+.td-top .crumbs { margin: 0; min-width: 0; }
+.td-tools { display: flex; gap: 10px; margin-left: auto; position: relative; }
+.td-tools .share-btn, .tree-flag { width: 44px; height: 44px; border-radius: 50%; margin: 0;
+  background: #fff; border: 0; box-shadow: 0 1px 6px rgba(26,32,18,0.12);
+  display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.tree-flag svg.ic { width: 21px; height: 21px; color: var(--moss); }
+.worthit.worthit-flag { display: block; margin: 0; }
+.worthit-flag .worthit-row { gap: 0; }
+/* The reasons drop down under the flag, the way the app's menu opens. */
+.worthit-flag .worthit-why, .worthit-flag .worthit-thanks, .worthit-flag .worthit-detail {
+  position: absolute; right: 0; top: 52px; z-index: 30; width: min(20rem, calc(100vw - 2 * var(--gutter)));
+  background: #fff; border-radius: 14px; padding: 0.75rem;
+  box-shadow: 0 8px 28px rgba(26,32,18,0.18); }
+.worthit-flag .worthit-why:not([hidden]) { display: flex; flex-direction: column; align-items: stretch; gap: 0.35rem; }
+.worthit-flag .worthit-chip { text-align: left; }
+.worthit-flag .worthit-thanks:not([hidden]) { display: block; font-size: 14px; }
+
+/* The hero. The stage is the photograph; everything on it is positioned
+   against it, never against the credit or the strip underneath. */
+.photo-stage { position: relative; }
+.td-hero .tree-photo.tree-hero, .td-hero .tree-noph.tree-hero { margin-bottom: 0; }
+.td-hero .tree-noph .photo-stage { aspect-ratio: 3 / 2; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 0.5rem; background: var(--surface); border-radius: 10px; }
+.td-hero .tree-noph-art { height: auto; }
+.td-nophoto { font-size: 14px; color: var(--ink-light); }
+.td-addphoto { position: absolute; left: 10px; top: 10px; }
+.td-inset { position: absolute; right: 10px; bottom: 10px; width: 72px; height: 72px;
+  border-radius: 10px; overflow: hidden; border: 2px solid rgba(255,255,255,0.9);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18); background: #EEF0E8; z-index: 2;
+  transition: all 0.22s ease; }
+.td-inset .td-map { position: absolute; inset: 0; width: 100%; height: 100%; }
+.td-inset .maplibregl-ctrl-attrib { display: none; }
+.td-inset-hit { position: absolute; right: 10px; bottom: 10px; width: 72px; height: 72px;
+  z-index: 3; background: transparent; border: 0; padding: 0; cursor: pointer; border-radius: 10px; }
+.td-photo-back, .td-expand { display: none; }
+/* Swapped: the map fills the stage, the photograph takes the corner, and the
+   expand button opens the city map on this tree. */
+.td-show-map .td-inset { right: 0; bottom: 0; width: 100%; height: 100%; border: 0;
+  border-radius: 10px; box-shadow: none; }
+.td-show-map .td-inset .maplibregl-ctrl-attrib { display: block; }
+.td-show-map .td-inset-hit { display: none; }
+.td-show-map .td-photo-back { display: block; position: absolute; right: 10px; bottom: 10px;
+  z-index: 4; width: 72px; height: 72px; padding: 0; border-radius: 10px; overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.9); box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+  background: var(--surface); cursor: pointer; }
+.td-photo-back img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.td-photo-back-art svg.ic { width: 28px; height: 28px; color: var(--ink-light); }
+.td-show-map .td-expand { display: inline-flex; position: absolute; right: 10px; top: 10px; z-index: 4;
+  width: 44px; height: 44px; border-radius: 50%; align-items: center; justify-content: center;
+  background: rgba(255,255,255,0.92); color: var(--ink); font-size: 15px; }
+
+/* The name group, at 8. */
+.td-group { margin-top: 1.25rem; }
+.td-group > * + * { margin-top: 8px; }
+.td-page h1 { font-weight: 800; font-size: 30px; line-height: 1.12; letter-spacing: -0.005em; margin: 0; }
+.td-page .tree-place-row { min-height: 44px; display: flex; align-items: center; flex-wrap: wrap; }
+.td-page .tree-place { font-size: 15px; }
+.td-page .tree-place a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.td-page .tree-block { margin: 8px 0 0; }
+.td-page .worthit-inline .worthit-btn svg.thumb { width: 21px; height: 21px; color: var(--ink-mid); }
+.td-page .worthit-inline .worthit-btn.is-on svg.thumb { color: var(--moss); }
+/* The card: two columns, value under label, as the app draws it. */
+.td-page .tb-cols { padding: 0.8rem 1rem 0.7rem; }
+.td-page .tb-col > span, .td-page .tb-row > span { font-size: 13px; color: var(--ink-mid); }
+.td-page .tb-age > b, .td-page .tb-girth > b { font-size: 19px; }
+.td-page .tb-age { flex: 1 1 50%; border-right: 1px solid rgba(0,0,0,0.10); }
+.td-page .tb-species, .td-page .tb-girth { flex: 1 1 50%; min-width: 0; }
+.td-page .tb-species > b { display: inline-flex; align-items: center; gap: 3px; }
+.td-page svg.fact-go { width: 10px; height: 10px; color: var(--moss); }
+.tb-latin { display: block; font-size: 12.5px; color: var(--ink-light); font-style: italic; margin-top: 1px; }
+.tb-row { display: block; padding: 0.6rem 1rem 0.7rem; border-top: 1px solid rgba(0,0,0,0.10); text-decoration: none; }
+.tb-row > b { display: flex; align-items: center; gap: 3px; font-size: 16px; color: var(--moss); }
+.td-pin-open { font: inherit; background: none; border: 0; padding: 0; color: var(--moss);
+  text-decoration: underline; cursor: pointer; min-height: 44px; }
+.td-page .tb-loc-approx { display: flex; flex-wrap: wrap; align-items: center; gap: 0 0.35rem; padding-top: 0; padding-bottom: 0; }
+.td-page svg.tb-ticket-ic { width: 17px; height: 17px; color: #2E6BA8; margin-top: 2px; }
+
+/* The story, at the app's body size. */
+.td-story { margin-top: 1.75rem; }
+.td-story p { font-size: 17px; line-height: 1.55; }
+
+/* How to get in, how to get there: footnote, secondary, a glyph each. */
+.td-access { margin-top: 1.75rem; display: grid; gap: 10px; }
+.td-access p { display: flex; gap: 8px; margin: 0; font-size: 14.5px; line-height: 1.45; color: var(--ink-light); }
+.td-access svg.ic { width: 17px; height: 17px; margin-top: 2px; color: var(--ink-light); }
+.td-access .which-one { display: inline; background: none; padding: 0; margin: 0; font-size: inherit; color: var(--ink-mid); border: 0; }
+.td-page > .td-grid .worthit:not(.worthit-inline):not(.worthit-flag) { margin-top: 1.25rem; }
+
+.td-section { margin-top: 2rem; }
+.td-section h2 { font-size: 18px; font-weight: 700; margin: 0 0 10px; }
+.td-near { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.td-near::-webkit-scrollbar { display: none; }
+.td-near-card { flex: 0 0 180px; display: block; text-decoration: none; color: var(--ink);
+  border: 1px solid rgba(0,0,0,0.10); border-radius: 12px; overflow: hidden; background: #fff; }
+.td-near-ph { display: flex; align-items: center; justify-content: center; height: 110px; background: var(--surface); }
+.td-near-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.td-near-ph svg.ic { width: 34px; height: 34px; color: var(--ink-light); }
+.td-near-card b { display: block; padding: 8px 10px 0; font-size: 14px; line-height: 1.3; }
+.td-near-meta { display: block; padding: 2px 10px 10px; font-size: 13px; color: var(--ink-light); }
+.td-page .dm-chip { gap: 6px; font-size: 14.5px; }
+.td-page .dm-chip svg.ic { width: 14px; height: 14px; }
+
+/* The loud button and its two circles. */
+.td-open { display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 54px; border-radius: 12px; background: var(--moss); color: #fff; font-weight: 600;
+  font-size: 16px; text-decoration: none; padding: 0 1rem; }
+.td-open:hover { background: #3f5c23; color: #fff; }
+.td-open svg.ic { width: 21px; height: 21px; }
+.td-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: flex; gap: 10px;
+  padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom)); background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.08); }
+.td-bar .td-open { flex: 1 1 auto; min-width: 0; }
+.td-round, .td-bar .heart-btn { flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.10); background: #fff; color: var(--moss); padding: 0;
+  display: inline-flex; align-items: center; justify-content: center; font-size: 24px; }
+.td-bar .heart-btn svg.heart { width: 24px; height: 24px; }
+.td-bar .heart-btn[aria-pressed="true"] { border-color: var(--moss); }
+.td-side { display: none; }
+
+/* The two dialogs. */
+.dir-pick { border: 0; border-radius: 16px; padding: 1rem; width: min(20rem, 90vw); }
+.dir-pick::backdrop { background: rgba(26,32,18,0.35); }
+.dir-pick-title { font-weight: 700; margin: 0 0 0.6rem; text-align: center; }
+.dir-pick button { display: block; width: 100%; min-height: 48px; margin: 0 0 0.5rem; border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.12); background: #fff; font: inherit; font-weight: 600; color: var(--moss); cursor: pointer; }
+.dir-pick .dir-pick-cancel { color: var(--ink-light); border: 0; margin-bottom: 0; }
+.pin-dlg { position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none;
+  margin: 0; padding: 0; border: 0; background: #EEF0E8; }
+.pin-dlg[open] { display: block; }
+.pin-head { position: absolute; left: 0; right: 0; top: 0; z-index: 3; display: flex; align-items: center;
+  gap: 0.75rem; padding: 0.5rem var(--gutter); background: rgba(255,255,255,0.95); min-height: 52px; }
+.pin-cancel { font: inherit; background: none; border: 0; color: var(--moss); min-height: 44px; cursor: pointer; padding: 0; }
+.pin-map { position: absolute; inset: 0; }
+.pin-target { position: absolute; left: 50%; top: 50%; z-index: 2; width: 18px; height: 18px;
+  margin: -9px 0 0 -9px; border-radius: 50%; background: var(--moss); border: 3px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.35); pointer-events: none; }
+.pin-card { position: absolute; left: var(--gutter); right: var(--gutter); bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 3; background: #fff; border-radius: 18px; padding: 16px; box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  max-width: 28rem; margin: 0 auto; }
+.pin-card p { margin: 0 0 0.4rem; font-size: 15px; }
+.pin-moved, .pin-acct { font-size: 13px !important; color: var(--ink-light); }
+.pin-send { display: block; width: 100%; height: 48px; margin-top: 0.5rem; border-radius: 999px; border: 0;
+  background: var(--moss); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.pin-send:disabled { opacity: 0.45; cursor: default; }
+.pin-dlg.is-sent .pin-help, .pin-dlg.is-sent .pin-moved, .pin-dlg.is-sent .pin-send, .pin-dlg.is-sent .pin-acct { display: none; }
+.pin-note { font-weight: 600; }
+
+@media (max-width: 760px) {
+  .td-hero .tree-noph .photo-stage { border-radius: 0; }
+  .td-show-map .td-inset { border-radius: 0; }
+}
+
+/* DESKTOP: the listing layout (Airbnb, AllTrails). Picture on top, then the
+   story on the left and a card on the right that holds what the phone's bar
+   holds, with the map in it. The page takes the site's band width so its left
+   edge is the header's. */
+@media (min-width: 900px) {
+  main.content-page.td-page { max-width: var(--page-max); padding-left: var(--page-pad);
+    padding-right: var(--page-pad); padding-bottom: 4rem; }
+  .td-hero .tree-photo.tree-hero img, .td-hero .tree-noph .photo-stage { aspect-ratio: 16 / 7; border-radius: 16px; }
+  .td-hero .td-inset, .td-hero .td-inset-hit { display: none; }
+  .td-grid { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 48px; margin-top: 1.5rem; }
+  .td-group { margin-top: 0; }
+  .td-page h1 { font-size: 36px; }
+  .td-bar { display: none; }
+  .td-side { display: block; }
+  .td-stick { position: sticky; top: calc(var(--header-h) + 1.25rem); }
+  .td-stick .td-open { width: 100%; }
+  .td-sec { display: flex; gap: 10px; margin-top: 10px; }
+  .td-sec > a, .td-sec > .heart-btn { flex: 1 1 0; height: 46px; border-radius: 12px; margin: 0;
+    border: 1px solid rgba(0,0,0,0.12); background: #fff; color: var(--ink); font-size: 15px; font-weight: 600;
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; padding: 0 0.75rem; }
+  .td-sec svg.ic { width: 19px; height: 19px; color: var(--moss); }
+  .td-sec .heart-btn::after { display: none; }
+  .td-side-map { position: relative; margin-top: 14px; height: 240px; border-radius: 14px; overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.10); }
+  .td-side-map .td-map { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .td-near { display: grid; grid-template-columns: repeat(3, 1fr); overflow: visible; }
+  .td-near-card { flex: none; }
+  .td-page .dm-chips { flex-wrap: wrap; overflow: visible; }
+}

@@ -543,6 +543,21 @@ if (location.hash.indexOf('#trees=') === 0) {
 
 paintPassport();
 
+// OPEN ON ONE TREE (2026-09-24). A tree page's map, expanded, lands here with
+// #tree=<id>, the web's version of the app's full-map button on its tree page:
+// the whole city around it, with this tree selected rather than a map that
+// forgets which tree you came from.
+if (location.hash.indexOf('#tree=') === 0) {
+  var wantTree = decodeURIComponent(location.hash.slice(6));
+  for (var ti = 0; ti < markers.length; ti++) {
+    var tcard = document.getElementById('tree-' + (ti + 1));
+    if (tcard && tcard.dataset.treeId === wantTree) {
+      map.once('load', (function(i) { return function() { setActive(i, true, false); }; })(ti));
+      break;
+    }
+  }
+}
+
 var gpsBtn = document.getElementById('gps-btn');
 var meMarker = null, watchId = null;
 if (gpsBtn && navigator.geolocation) {

@@ -81,10 +81,17 @@ const shots = set.map((p, i) => {
 const leadCredit = shots[0].credit;
 ---
 <figure class={variant === "hero" ? "tree-photo tree-hero" : "tree-photo"}>
-  <button type="button" class="photo-open" aria-label={t.photoOpen} data-i="0">
-    <img {...imgSrcset(lead.url, widths, sizes, shots[0].dims.width, shots[0].dims.height)}
-         alt={alt} loading="lazy" />
-  </button>
+  {/* The stage holds the picture and whatever sits ON it. The tree page puts
+      the app's map inset in the corner here (2026-09-24), which has to be
+      positioned against the photograph rather than against the whole figure,
+      since the credit and the strip run underneath. Empty everywhere else. */}
+  <div class="photo-stage">
+    <button type="button" class="photo-open" aria-label={t.photoOpen} data-i="0">
+      <img {...imgSrcset(lead.url, widths, sizes, shots[0].dims.width, shots[0].dims.height)}
+           alt={alt} loading="lazy" />
+    </button>
+    <slot name="overlay" />
+  </div>
   {leadCredit && <figcaption>{leadCredit}</figcaption>}
 
   {many && (

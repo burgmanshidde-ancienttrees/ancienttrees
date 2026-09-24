@@ -713,7 +713,10 @@ setTimeout(function(){
             # Collect left the mobile web on Hidde's ruling of 2026-08-14
             # ("op mobiel totaal onlogisch... lekkermakertje voor de app");
             # the bar and the save heart are what must exist now.
-            ('class="tree-bar"', "the hanging action bar (AllTrails funnel, 2026-08-14)"),
+            # The app's tree page since 2026-09-24: the bar is Open in the app
+            # plus two circles, and the map sits in the photograph's corner.
+            ('class="td-bar"', "the pinned action bar, the app's actionBar"),
+            ('class="td-open"', "Open in the app, the loud button (Hidde, 2026-09-24)"),
             ("save-btn", "the save heart (local, no account)"),
             ("Take me there", "directions, the primary action"),
             ("maplibregl-canvas", "map canvas (JS on this page executed)"),

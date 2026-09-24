@@ -35,6 +35,10 @@
       "verdict": "device",
       "why": "Which maps app to hand a route to. Depends on what is installed on THIS phone, so copying it to another one would point at an app that is not there."
     },
+    "at_maps_app": {
+      "verdict": "device",
+      "why": "The website's twin of directions.app (2026-09-24): which maps app an iPhone hands a route to. What is installed on this phone, so it stays on this phone."
+    },
     "at_contribute_draft": {
       "verdict": "device",
       "why": "An unsent contribute form, kept so a reload does not lose what somebody typed. It stops existing the moment it is sent."
