@@ -157,6 +157,13 @@ final class Sightings {
         var unsureOf: [String]?
         var isUnsure: Bool { !(unsureOf ?? []).isEmpty }
 
+        /// Where it stands, as a phrase ready to follow a species: "in Nara",
+        /// "near Nara". Only ever used to NAME a tree nobody named, and kept
+        /// on the phone rather than sent, because the coordinate already
+        /// travels and this is our guess from it. Optional, so a file written
+        /// before 2026-09-24 still decodes.
+        var place: String?
+
         /// The id this sighting wears wherever the app talks about TREES: the
         /// heart on its page saves under it, so anything asking whether you
         /// hearted your own tree has to ask with this exact string. Written
@@ -172,6 +179,37 @@ final class Sightings {
     }
 
     private(set) var all: [Sighting] = []
+
+    /// The name of last resort, for a tree whose species and place we both do
+    /// not know. Until 2026-09-24 it was the ONLY fallback, so a tree added
+    /// unnamed in Nara Park read "A tree I found" even after its species was
+    /// filled in (Hidde asked for "Oak in Nara" instead).
+    nonisolated static let unnamed = "A tree I found"
+
+    /// What an unnamed tree is called: its species and where it stands when
+    /// we know them, "A tree I found" only when we know neither. Built from
+    /// what the reader told us and where the phone was, never guessed beyond.
+    nonisolated static func fallbackName(species: String?, place: String?) -> String {
+        let kind = species.map { Tree.commonName(of: $0) }?
+            .trimmingCharacters(in: .whitespaces) ?? ""
+        let at = place?.trimmingCharacters(in: .whitespaces) ?? ""
+        switch (kind.isEmpty, at.isEmpty) {
+        case (false, false): return "\(kind) \(at)"
+        case (false, true): return kind
+        case (true, false): return "A tree \(at)"
+        case (true, true): return unnamed
+        }
+    }
+
+    /// "in Nara" within five kilometres of one of our trees in Nara, "near
+    /// Nara" within thirty, which is the day-trip boundary the site already
+    /// uses, and nothing further out than that.
+    nonisolated static func placePhrase(nearestCity city: String?, km: Double?) -> String? {
+        guard let city, !city.isEmpty, let km else { return nil }
+        if km <= 5 { return "in \(city)" }
+        if km <= 30 { return "near \(city)" }
+        return nil
+    }
 
     /// Where a change goes after it has been written here. Set once by the root
     /// (ContentView), which is the only place that knows about an account, so
@@ -388,7 +426,17 @@ final class Sightings {
         guard let i = all.firstIndex(where: { $0.id == id }) else { return }
         if let status { all[i].status = status }
         if let name, !name.isEmpty { all[i].name = name }
-        if let species { all[i].species = species.isEmpty ? nil : species }
+        if let species {
+            // A name WE made up follows the species when it changes: "A tree
+            // in Nara" becomes "Oak in Nara". A name somebody typed is theirs
+            // and is never touched.
+            let madeUp = all[i].name == Self.unnamed
+                || all[i].name == Self.fallbackName(species: all[i].species, place: all[i].place)
+            all[i].species = species.isEmpty ? nil : species
+            if madeUp && name == nil {
+                all[i].name = Self.fallbackName(species: all[i].species, place: all[i].place)
+            }
+        }
         if let age { all[i].age = age.isEmpty ? nil : age }
         // Zero means "clear it", the same way an empty string does for age.
         if let girthCm { all[i].girthCm = girthCm > 0 ? girthCm : nil }
@@ -501,10 +549,12 @@ final class Sightings {
     func record(treeId: String?, name: String, note: String = "",
                 lat: Double, lng: Double, image: UIImage?,
                 date: Date = Date(), status: Status = .mine,
-                unsureOf: [String]? = nil, girthHugs: String? = nil) -> Sighting {
+                unsureOf: [String]? = nil, girthHugs: String? = nil,
+                place: String? = nil) -> Sighting {
         var s = Sighting(treeId: treeId, name: Self.oneLine(name), note: note,
                          lat: lat, lng: lng, date: date, photo: nil, status: status)
         s.unsureOf = unsureOf
+        s.place = place
         s.girthHugs = girthHugs
         // Shared from the start (see the property's own comment): the mail
         // that thanks somebody for this tree links straight to it, and that

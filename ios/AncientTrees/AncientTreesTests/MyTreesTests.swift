@@ -1015,3 +1015,38 @@ struct AnOwnTreesNameFitsOnOneLine {
         #expect(Sightings.oneLine("") == "")
     }
 }
+
+/// An unnamed tree is named from what we know: its species and where it
+/// stands. "A tree I found" only when we know neither (2026-09-24).
+@MainActor
+@Suite(.serialized)
+struct AnUnnamedTreeIsNamedFromWhatWeKnow {
+
+    @Test func speciesAndPlaceMakeTheName() {
+        #expect(Sightings.fallbackName(species: "Oak (Quercus sp.)", place: "in Nara") == "Oak in Nara")
+        #expect(Sightings.fallbackName(species: nil, place: "near Nara") == "A tree near Nara")
+        #expect(Sightings.fallbackName(species: "Oak", place: nil) == "Oak")
+        #expect(Sightings.fallbackName(species: nil, place: nil) == "A tree I found")
+    }
+
+    @Test func thePlaceIsInCloseAndNearFurtherOutAndNothingBeyond() {
+        #expect(Sightings.placePhrase(nearestCity: "Nara", km: 1.2) == "in Nara")
+        #expect(Sightings.placePhrase(nearestCity: "Nara", km: 12) == "near Nara")
+        #expect(Sightings.placePhrase(nearestCity: "Nara", km: 80) == nil)
+        #expect(Sightings.placePhrase(nearestCity: nil, km: 1) == nil)
+    }
+
+    /// Filling in the species renames a tree WE named, and never one they named.
+    @Test func aSpeciesRenamesOnlyAMadeUpName() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let ours = s.record(treeId: nil, name: "A tree in Nara", lat: 34.68, lng: 135.84,
+                            image: nil, place: "in Nara")
+        let theirs = s.record(treeId: nil, name: "The big one", lat: 34.68, lng: 135.84,
+                              image: nil, place: "in Nara")
+        s.update(ours.id, species: "Oak (Quercus sp.)")
+        s.update(theirs.id, species: "Oak (Quercus sp.)")
+        #expect(s.all.first { $0.id == ours.id }?.name == "Oak in Nara")
+        #expect(s.all.first { $0.id == theirs.id }?.name == "The big one")
+    }
+}

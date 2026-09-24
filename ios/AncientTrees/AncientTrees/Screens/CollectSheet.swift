@@ -1322,14 +1322,20 @@ struct CollectSheet: View {
         }
         let here = at ?? origin
         // The name is its own field now, so the note is never silently promoted
-        // into a title. "A tree I found" survives only as the last resort, for
-        // somebody who fills in neither, and it is honest there: we genuinely
-        // do not know what it is called and neither did they.
+        // into a title. Left empty, the tree is named from what we DO know,
+        // "A tree in Nara", which becomes "Oak in Nara" the moment a species
+        // is filled in on its page (Sightings.fallbackName). "A tree I found"
+        // survives only for somebody far from every tree we map, where we
+        // genuinely know neither.
         let named = callsIt.trimmingCharacters(in: .whitespacesAndNewlines)
+        let nearest = catalogue.nearest(to: here.lat, here.lng, limit: 1, withinKm: 30).first
+        let place = Sightings.placePhrase(nearestCity: nearest?.tree.city, km: nearest?.km)
         let s = sightings.record(treeId: nil,
-                                 name: named.isEmpty ? "A tree I found" : String(named.prefix(60)),
+                                 name: named.isEmpty
+                                    ? Sightings.fallbackName(species: nil, place: place)
+                                    : String(named.prefix(60)),
                                  note: why, lat: here.lat, lng: here.lng, image: shot,
-                                 date: taken ?? Date(), girthHugs: hugs)
+                                 date: taken ?? Date(), girthHugs: hugs, place: place)
         shot = nil
         // The payoff beat this path was missing (Hidde, 2026-09-03: "ik mis
         // ook een vink bevestiging na het nemen van de foto dat de tree is
