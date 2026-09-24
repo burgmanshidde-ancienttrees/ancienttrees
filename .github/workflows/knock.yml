@@ -67,8 +67,82 @@ jobs:
             echo "room=no" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Dispatch a night run when the cron dropped one
+      # THE DAILY REVIEW COMES BEFORE NEW COVERAGE, and this step is why the
+      # fresh-eyes review failed on eight of its nine scheduled attempts
+      # between 19 and 23 September and left four days with no entry at all.
+      #
+      # The failures were not broken code. Eight of them are the fingerprint
+      # this corpus already names for a night run that meets a spent
+      # allowance: one turn, zero dollars, subtype success with is_error true,
+      # the agent having started, asked and been refused. review.yml's own
+      # comment says its second cron sits in "the only window the night chain
+      # leaves alone (it fires every two hours from 18:00 to 10:00 UTC)". That
+      # stopped being true on 2026-08-28, when the knocks went to twelve a day
+      # round the clock and this watchdog started making sure they arrive.
+      # There is no quiet window any more, so the review was competing with
+      # the night shift for the same allowance twice a day and losing.
+      #
+      # The ordering is CLAUDE.md's own: a broken site is rung 2 and new
+      # coverage is rung 4. So on a day with no review yet, this dispatches
+      # one and does NOT dispatch a night run in the same cycle, which is the
+      # half that actually frees the allowance. A dispatch is also never
+      # dropped, so it fixes the delivery half at the same time.
+      #
+      # Two bounds, because a rule that yields forever is a rule that stops
+      # the machine: nothing before the review's own first slot, and at most
+      # six attempts a day, after which the night shift resumes and the review
+      # waits for tomorrow rather than eating the week.
+      - name: The day's review goes before the night shift
+        id: review
         if: steps.week.outputs.room == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          TODAY=$(date -u +%F)
+          if grep -qE "^## $TODAY" REVIEW.md 2>/dev/null; then
+            echo "today is already reviewed"; exit 0
+          fi
+          if [ "$(date -u +%-H)" -lt 7 ]; then
+            echo "before the review's own 06:10 slot; leaving it to the cron"; exit 0
+          fi
+
+          RUNS=$(gh api "repos/${{ github.repository }}/actions/workflows/review.yml/runs?per_page=20" 2>/dev/null || echo "")
+          if [ -z "$RUNS" ]; then echo "no review history readable; nothing to do"; exit 0; fi
+
+          INFLIGHT=$(echo "$RUNS" | jq '[.workflow_runs[] | select(.status != "completed")] | length')
+          if [ "$INFLIGHT" -gt 0 ]; then
+            echo "a review is in flight; holding the night shift back"
+            echo "yield=yes" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+
+          SINCE=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          TRIED=$(echo "$RUNS" | jq "[.workflow_runs[] | select(.created_at > \"$SINCE\")] | length")
+          echo "$TRIED review attempts in the last 24h"
+          if [ "$TRIED" -ge 6 ]; then
+            echo "six attempts is enough for one day; the night shift resumes"; exit 0
+          fi
+
+          LAST=$(echo "$RUNS" | jq -r '.workflow_runs[0].created_at // empty')
+          if [ -n "$LAST" ]; then
+            AGE=$(( $(date -u +%s) - $(date -u -d "$LAST" +%s) ))
+            echo "last review attempt $(( AGE / 60 ))m ago"
+            # An attempt refused on the allowance needs the allowance to come
+            # back, and that takes hours rather than minutes. Retrying sooner
+            # buys nothing and spends the day's six attempts before lunch.
+            if [ "$AGE" -lt 5400 ]; then
+              echo "inside the ninety-minute spacing; holding the night shift back"
+              echo "yield=yes" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+          fi
+
+          echo "no review for today; dispatching one and standing the night shift down"
+          gh workflow run review.yml -R "${{ github.repository }}" \
+            && echo "yield=yes" >> "$GITHUB_OUTPUT" \
+            || echo "dispatch failed; the night shift may go ahead"
+
+      - name: Dispatch a night run when the cron dropped one
+        if: steps.week.outputs.room == 'yes' && steps.review.outputs.yield != 'yes'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

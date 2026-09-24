@@ -15,11 +15,22 @@ on:
     # spent rather than of broken code. Nothing noticed, because running it by
     # hand later in the day worked and left a green run behind.
     - cron: "10 6 * * *"
-    # The second attempt, in the only window the night chain leaves alone
-    # (it fires every two hours from 18:00 to 10:00 UTC). It does nothing at all
-    # when the morning one succeeded, so on an ordinary day this costs a few
-    # seconds. Hidde still gets the review with his coffee when there is room
-    # for it, and gets it in the afternoon instead of never when there is not.
+    # A second attempt, which does nothing at all when the morning one
+    # succeeded, so on an ordinary day it costs a few seconds. Hidde still
+    # gets the review with his coffee when there is room for it, and gets it
+    # in the afternoon instead of never when there is not.
+    #
+    # This used to say it sat "in the only window the night chain leaves
+    # alone (it fires every two hours from 18:00 to 10:00 UTC)". That stopped
+    # being true on 2026-08-28, when the knocks went to twelve a day round the
+    # clock, and the sentence outlived the fact for four weeks. There is no
+    # quiet window now, so both crons were competing with the night shift for
+    # one allowance: eight of nine scheduled attempts between 19 and 23
+    # September died in one turn for zero dollars, and four days carry no
+    # review entry at all. What actually fixes it is knock.yml standing the
+    # night shift down on a day with no review yet, because only the thing
+    # SPENDING the allowance can give it back. These crons stay as the floor
+    # for the case where the watchdog itself is starved.
     - cron: "30 12 * * *"
   workflow_dispatch: {}
 
@@ -159,6 +170,15 @@ jobs:
                run may not fix visual work on the app (CLAUDE.md: runs do no
                visual-taste work) and needs to know at a glance that this one is
                for a session.
+            4b. COMMIT THE WEB HALF BEFORE YOU LOOK AT THE APP. Do steps 5
+               and 7 for what you have found so far, then come back and add
+               the app findings to the same dated entry in a second commit.
+               One run on 2026-09-23 reported success after 184 turns against
+               a cap of 160, and everything it had found went nowhere because
+               nothing had been written down yet. This is the rule CLAUDE.md
+               already gives a research pass, in the one place it had never
+               been applied: write findings as you find them, so a run that
+               dies late leaves half a review rather than none.
             5. Write your findings to the TOP of REVIEW.md, under a heading
                `## YYYY-MM-DD` (today, UTC). Each finding: one line of
                severity BLOCKER / WARN / NOTE, what and where (file or URL),
@@ -175,14 +195,22 @@ jobs:
                each as a NOTE with a concrete removal or move suggestion.
                Suggest only; corpus edits are decided in session.
             7. Commit ONLY REVIEW.md with the message
-               "Fresh-eyes review: <n> finding(s)" and push. Touch no other
-               file, fix nothing, however tempting.
+               "Fresh-eyes review: <n> finding(s)" and push. Twice, per 4b:
+               once for the web half and once when the app findings join it.
+               Touch no other file, fix nothing, however tempting. This repo
+               takes commits all day, so if a push is rejected because main
+               moved, `git pull --rebase` and push again; your entry goes at
+               the top of a file nobody else edits, so it rebases cleanly.
 
             Research runs pick BLOCKERs up as rung-2 work (the site is
             broken) and WARNs as rung-3. You flag FOR HIDDE inside your
             REVIEW.md entry only for judgment calls no run may make alone
             (pricing, brand, blueprint changes, anything on the hard list).
-          # 160 turns since 2026-08-25: six screenshots to open and judge on top
-          # of the web half. Read already covers images, which is the whole
-          # reason the app's half can live in this job at all.
-          claude_args: "--max-turns 160 --allowedTools \"Bash(git:*),Bash(python3:*),Bash(cat:*),Read,Write,Edit,Glob,Grep\""
+          # 220 turns since 2026-09-24, raised from the 160 set on 2026-08-25
+          # for the six screenshots. The site has grown a third of its pages
+          # since, and a real review of a busy day now runs past the old cap:
+          # 2026-09-23 finished its work in 184 and the action failed it for
+          # overshooting. The commit-the-web-half-first rule above is the part
+          # that matters, because a cap is a cap and one day will be busier
+          # than this one.
+          claude_args: "--max-turns 220 --allowedTools \"Bash(git:*),Bash(python3:*),Bash(cat:*),Read,Write,Edit,Glob,Grep\""

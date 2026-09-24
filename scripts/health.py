@@ -624,6 +624,22 @@ def main():
         blockers, warns = headings("BLOCKER"), headings("WARN")
         print(f"  {'REVIEW.md':20s} {date:10s} "
               f"{len(blockers)} BLOCKER, {len(warns)} WARN")
+        # A GREEN RUN IS NOT A REVIEW, and until 2026-09-24 nothing here asked
+        # the difference. The run-based check above goes red when review.yml
+        # fails, and it goes quiet again the moment one run succeeds: on
+        # 2026-09-23 the afternoon attempt went green and every gate fell
+        # silent while 19, 20, 21 and 22 September carried no entry at all.
+        # Eight attempts had died in one turn on the usage allowance, which is
+        # a workflow FAILING, and one more had reported success after writing
+        # nothing. The file itself is the only honest witness to whether the
+        # review happened, so ask it rather than the runs.
+        stale = (datetime.date.today() - datetime.date.fromisoformat(date)).days
+        if stale >= 2:
+            problems.append(
+                f"REVIEW.md's newest entry is {date}, {stale} days old, whatever "
+                f"colour the runs are. Nothing has reviewed the last {stale} days "
+                f"of work. Dispatch one: gh workflow run review.yml")
+
         already = answered().get("answered", {}).get(date)
         if blockers and already:
             print(f"  {'':20s} {'':10s} its BLOCKER is recorded as answered: "
