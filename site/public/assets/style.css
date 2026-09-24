@@ -896,6 +896,9 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .addphoto-btn[disabled] { opacity: 0.6; cursor: default; }
 .addphoto-note { margin: 0.5rem 0 0; font-family: var(--sans); font-size: 13px;
   line-height: 1.45; color: var(--ink-mid); }
+/* Whose photographs we can use, said once under the button (2026-09-24). */
+.addphoto-own { margin: 0.4rem 0 0; font-family: var(--sans); font-size: 12px;
+  line-height: 1.45; color: var(--ink-mid); }
 .mine-reply { margin: 0.35rem 0 0; font-family: var(--sans); font-size: 13px;
   line-height: 1.45; color: var(--ink-mid); }
 .acct-name { margin-top: 1.4rem; }

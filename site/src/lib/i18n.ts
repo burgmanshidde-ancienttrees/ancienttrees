@@ -290,6 +290,16 @@ export interface UIStrings {
   addPhotoBadFile: string;
   addPhotoThanks: string;
   addPhotoFailed: string;
+  /** One line under the button: only the reader's own photographs (2026-09-24). */
+  addPhotoOwnOnly: string;
+  /** The lasting state of a photograph somebody sent of this tree, written
+   *  beside the control on every later visit (CONVENTIONS.md, "Landing after
+   *  you have added something"): waiting, or on the page. Same words as the
+   *  app's Sighting.photoState. */
+  addPhotoWaiting: string;
+  addPhotoOnPage: string;
+  /** The link from the acknowledgement to where the photograph now lives. */
+  addPhotoSeeMine: string;
   havePhotographed: string;
   havePhotographedLine: string;
   goNote: string;
@@ -544,6 +554,10 @@ const EN: UIStrings = {
   addPhotoBadFile: "That picture could not be read. Try another one.",
   addPhotoThanks: "Thank you. We look at every photograph before it goes on a page, and you will hear what happened to yours.",
   addPhotoFailed: "That did not go through. Try again in a moment.",
+  addPhotoOwnOnly: "We can only use photographs you took yourself.",
+  addPhotoWaiting: "Your photo, waiting for a look",
+  addPhotoOnPage: "Your photo is on this page",
+  addPhotoSeeMine: "See it in My trees",
   havePhotographed: "Have you photographed this tree?",
   havePhotographedLine: "If yours shows it better than the picture above, it can take its place, or stand beside it.",
   goNote: "The button above opens directions in your maps app.",
@@ -771,6 +785,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoBadFile: "No se pudo leer esa imagen. Prueba con otra.",
     addPhotoThanks: "Gracias. Revisamos cada fotografía antes de publicarla, y te diremos qué pasó con la tuya.",
     addPhotoFailed: "Eso no se pudo enviar. Inténtalo de nuevo en un momento.",
+    addPhotoOwnOnly: "Solo podemos usar fotografías que hayas hecho tú.",
+    addPhotoWaiting: "Tu foto, pendiente de revisión",
+    addPhotoOnPage: "Tu foto está en esta página",
+    addPhotoSeeMine: "Verla en Mis árboles",
     havePhotographed: "¿Has fotografiado este árbol?",
     havePhotographedLine: "Si la tuya lo muestra mejor que la foto de arriba, puede ocupar su lugar, o aparecer junto a ella.",
     goNote: "El botón de arriba abre las indicaciones en tu aplicación de mapas.",
@@ -985,6 +1003,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoBadFile: "Non è stato possibile leggere questa immagine. Prova con un'altra.",
     addPhotoThanks: "Grazie. Guardiamo ogni fotografia prima che venga pubblicata, e ti diremo cosa ne è stato della tua.",
     addPhotoFailed: "L'invio non è andato a buon fine. Riprova tra poco.",
+    addPhotoOwnOnly: "Possiamo usare solo fotografie scattate da te.",
+    addPhotoWaiting: "La tua foto, in attesa di essere vista",
+    addPhotoOnPage: "La tua foto è su questa pagina",
+    addPhotoSeeMine: "Vedila in I miei alberi",
     havePhotographed: "Hai fotografato questo albero?",
     havePhotographedLine: "Se la tua foto lo mostra meglio di quella qui sopra, può prenderne il posto, o comparire accanto ad essa.",
     goNote: "Il pulsante qui sopra apre le indicazioni nella tua app di mappe.",
@@ -1199,6 +1221,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoBadFile: "Die foto kon niet worden gelezen. Probeer een andere.",
     addPhotoThanks: "Dank je. We bekijken elke foto voordat hij op een pagina komt, en je hoort wat ermee is gebeurd.",
     addPhotoFailed: "Dat is niet gelukt. Probeer het zo weer.",
+    addPhotoOwnOnly: "We kunnen alleen foto's gebruiken die je zelf hebt gemaakt.",
+    addPhotoWaiting: "Je foto, wacht op een blik",
+    addPhotoOnPage: "Je foto staat op deze pagina",
+    addPhotoSeeMine: "Bekijk hem bij Mijn bomen",
     havePhotographed: "Heb je deze boom gefotografeerd?",
     havePhotographedLine: "Als jouw foto hem beter laat zien dan de foto hierboven, kan die de plek innemen, of ernaast komen te staan.",
     goNote: "De knop hierboven opent de route in je kaartenapp.",
@@ -1413,6 +1439,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoBadFile: "Dieses Bild konnte nicht gelesen werden. Versuch ein anderes.",
     addPhotoThanks: "Danke. Wir sehen uns jedes Foto an, bevor es auf einer Seite erscheint, und du erfährst, was aus deinem geworden ist.",
     addPhotoFailed: "Das hat nicht geklappt. Versuch es gleich noch einmal.",
+    addPhotoOwnOnly: "Wir können nur Fotos verwenden, die du selbst gemacht hast.",
+    addPhotoWaiting: "Dein Foto, wartet auf einen Blick",
+    addPhotoOnPage: "Dein Foto ist auf dieser Seite",
+    addPhotoSeeMine: "In Meine Bäume ansehen",
     havePhotographed: "Hast du diesen Baum fotografiert?",
     havePhotographedLine: "Wenn dein Foto ihn besser zeigt als das oben, kann es dessen Platz einnehmen oder daneben stehen.",
     goNote: "Der Knopf oben öffnet die Route in Ihrer Karten-App.",
@@ -1627,6 +1657,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoBadFile: "Não foi possível ler essa imagem. Experimente outra.",
     addPhotoThanks: "Obrigado. Vemos cada fotografia antes de ela ser publicada, e saberá o que aconteceu com a sua.",
     addPhotoFailed: "Isso não foi enviado. Tente novamente daqui a pouco.",
+    addPhotoOwnOnly: "Só podemos usar fotografias tiradas por si.",
+    addPhotoWaiting: "A sua foto, à espera de ser vista",
+    addPhotoOnPage: "A sua foto está nesta página",
+    addPhotoSeeMine: "Ver em As minhas árvores",
     havePhotographed: "Fotografou esta árvore?",
     havePhotographedLine: "Se a sua mostrar melhor do que a foto acima, pode ocupar o lugar dela, ou aparecer ao lado.",
     goNote: "O botão acima abre as indicações na sua aplicação de mapas.",
@@ -1841,6 +1875,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoBadFile: "Cette image n'a pas pu être lue. Essayez-en une autre.",
     addPhotoThanks: "Merci. Nous regardons chaque photo avant qu'elle ne soit publiée, et vous saurez ce qu'il est advenu de la vôtre.",
     addPhotoFailed: "Cela n'a pas fonctionné. Réessayez dans un instant.",
+    addPhotoOwnOnly: "Nous ne pouvons utiliser que des photos que vous avez prises vous-même.",
+    addPhotoWaiting: "Votre photo, en attente d'un regard",
+    addPhotoOnPage: "Votre photo est sur cette page",
+    addPhotoSeeMine: "La voir dans Mes arbres",
     havePhotographed: "Avez-vous photographié cet arbre ?",
     havePhotographedLine: "Si la vôtre le montre mieux que la photo ci-dessus, elle peut prendre sa place, ou apparaître à côté.",
     goNote: "Le bouton ci-dessus ouvre l'itinéraire dans votre application de cartes.",
@@ -2054,6 +2092,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoBadFile: "その画像を読み込めませんでした。別の画像でお試しください。",
     addPhotoThanks: "ありがとうございます。掲載前にすべての写真を確認し、その後どうなったかをお知らせします。",
     addPhotoFailed: "送信できませんでした。少し経ってからもう一度お試しください。",
+    addPhotoOwnOnly: "使えるのは、ご自身で撮った写真だけです。",
+    addPhotoWaiting: "あなたの写真は確認待ちです",
+    addPhotoOnPage: "あなたの写真はこのページに掲載されています",
+    addPhotoSeeMine: "アカウントで見る",
     havePhotographed: "この木を撮影しましたか?",
     havePhotographedLine: "上の写真より良く撮れていれば、それに差し替えるか、並べて掲載します。",
     goNote: "上のボタンで、地図アプリの経路案内が開く。",
