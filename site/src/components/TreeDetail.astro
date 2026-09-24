@@ -76,11 +76,11 @@ const loc = tree.location;
 const photo = p.shots[0] ?? null;
 const isApprox = locationIsApproximate(tree);
 
-// "Moreton Bay Fig (Ficus macrophylla)" -> the name a reader knows, and the
-// one a botanist searches for. The card shows the first and whispers the second.
+// "Moreton Bay Fig (Ficus macrophylla)" -> the name a reader knows. The card
+// shows only that, exactly as the app's card does (Hidde, 2026-09-24: "maak
+// het zoals app"); the scientific name is in the story and the species page.
 const m = /^(.*?)\s*\(([^)]+)\)\s*$/.exec(p.species || "");
 const spCommon = m ? m[1] : p.species;
-const spLatin = m ? m[2] : "";
 
 const openUrl = `/open?tree=${encodeURIComponent(tree.id)}`;
 const google = `https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}&travelmode=walking`;
@@ -162,15 +162,15 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
             ) : (
               <Fragment>
                 {p.speciesUrl ? (
-                  <a class="tb-col tb-species" href={p.speciesUrl}><span>{U.labelSpecies}</span><b>{spCommon}<Fragment set:html={icon("caret-right", "bold", "ic fact-go")} /></b>{spLatin && <i class="tb-latin">{spLatin}</i>}</a>
+                  <a class="tb-col tb-species" href={p.speciesUrl}><span>{U.labelSpecies}</span><b>{spCommon}<Fragment set:html={icon("caret-right", "bold", "ic fact-go")} /></b></a>
                 ) : (
-                  <div class="tb-col tb-species"><span>{U.labelSpecies}</span><b>{spCommon}</b>{spLatin && <i class="tb-latin">{spLatin}</i>}</div>
+                  <div class="tb-col tb-species"><span>{U.labelSpecies}</span><b>{spCommon}</b></div>
                 )}
               </Fragment>
             )}
           </div>
-          {p.girth && p.speciesUrl && <a class="tb-row tb-species" href={p.speciesUrl}><span>{U.labelSpecies}</span><b>{spCommon}<Fragment set:html={icon("caret-right", "bold", "ic fact-go")} /></b>{spLatin && <i class="tb-latin">{spLatin}</i>}</a>}
-          {p.girth && !p.speciesUrl && <div class="tb-row tb-species"><span>{U.labelSpecies}</span><b>{spCommon}</b>{spLatin && <i class="tb-latin">{spLatin}</i>}</div>}
+          {p.girth && p.speciesUrl && <a class="tb-row tb-species" href={p.speciesUrl}><span>{U.labelSpecies}</span><b>{spCommon}<Fragment set:html={icon("caret-right", "bold", "ic fact-go")} /></b></a>}
+          {p.girth && !p.speciesUrl && <div class="tb-row tb-species"><span>{U.labelSpecies}</span><b>{spCommon}</b></div>}
           {isApprox && (
             <p class="tb-loc tb-loc-approx">
               <b>{U.locApprox}</b>{" "}
