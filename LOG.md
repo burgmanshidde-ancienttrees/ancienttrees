@@ -10,6 +10,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-24 (session) - Sources block off every tree page
+
+Hidde: "dit hele blok vermelden we toch ook nergens in de app - en hoeft legally niet? verwijder maar is ruis." Removed from the English tree page and all seven translated ones (template, i18n strings, CSS, lib/tree-sources.ts). Legally sound: /sources credits every register with its licence, and CC BY allows attribution through a central credits page. The one sentence there promising per-tree sources is gone. `verified_sources` stays in the data as provenance; lastmod.py no longer counts it as rendered. Live after the deploy.
 ## 2026-09-24 (session) - Run budget back to 1800/260, and the nine stray branches cleared
 
 **The night runs' budget is back to 1,800 minutes a week and 260 a day** (Hidde: "zet het budget maar terug"). The raise to 5000/900 for the Japan absence bought about three times the minutes and did not buy three times the trees: 5.4 minutes per tree in its first week, 9.1 in its second, 11.2 this week, against 6.6 before it. It also drained the shared subscription he uses himself. Do not raise it again without his yes and a trees-per-minute figure beside the ask.
