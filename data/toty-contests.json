@@ -17,8 +17,10 @@
       "per_year": "12 to 16, one national winner per country",
       "archive": "https://www.treeoftheyear.org/previous-years",
       "year_url": "https://www.treeoftheyear.org/previous-years/{year}",
-      "status": "unfetched",
-      "note": "The final, not the pool. Roughly 200 finalists across 16 editions and we already hold a good share of the famous ones. Worth a single sweep for completeness; the volume is in the national archives below."
+      "status": "fetched",
+      "note": "The final, not the pool. Roughly 200 finalists across 16 editions and we already hold a good share of the famous ones. Worth a single sweep for completeness; the volume is in the national archives below. FETCHED 2026-09-24: all 203 finalists 2011 to 2026 read off their own contest pages (species, age, region and GPS are published per nominee), written as leads; 66 we already map, 2 blocked as felled, 135 open.",
+      "fetched": "2026-09-24",
+      "leads_file": "data/leads/_tree-of-the-year.json"
     },
     {
       "country": "Hungary",
