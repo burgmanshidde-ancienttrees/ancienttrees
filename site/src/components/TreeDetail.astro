@@ -119,9 +119,10 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
         <div class="photo-stage">
           <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
           <span class="td-nophoto">{U.noPhotoYet}</span>
-          {/* The app's camera in the top corner of an empty hero
-              (addPhotoButton, camera.fill), which on the web is the control
-              that takes a photograph of a tree we have none of. */}
+          {/* The app's camera on an empty hero (addPhotoButton, camera.fill):
+              on the web it is the control that takes a photograph of a tree we
+              have none of. Under the drawing rather than in the corner, because
+              the web's control carries a sentence the app's icon does not. */}
           <div class="td-addphoto">
             <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} />
           </div>

@@ -2022,6 +2022,42 @@ def check_the_session_is_known_before_anything_asks():
     return out
 
 
+def check_css_braces_balance():
+    """A block left open swallows every rule after it (2026-09-24).
+
+    On 2026-09-12 a `@media (max-width: 900px) {` in style.css went unclosed,
+    and the browser did what CSS says: every rule below it, some three hundred
+    lines added by later sessions, applied to screens up to 900px and to no
+    desktop at all. Nothing noticed for twelve days, because every check here
+    looks at a phone width and the rules worked perfectly there. Found while
+    building the tree page, whose desktop layout would never have appeared.
+    Counting braces outside comments is the whole check.
+    """
+    css = (Path(__file__).resolve().parent.parent / "site" / "public" / "assets" / "style.css").read_text(encoding="utf-8")
+    depth, line, opened, i = 0, 1, [], 0
+    while i < len(css):
+        if css.startswith("/*", i):
+            j = css.find("*/", i + 2)
+            j = len(css) if j < 0 else j
+            line += css.count("\n", i, j)
+            i = j + 2
+            continue
+        c = css[i]
+        if c == "\n":
+            line += 1
+        elif c == "{":
+            opened.append(line)
+        elif c == "}":
+            if not opened:
+                return ["style.css: a `}` at line %d closes nothing" % line]
+            opened.pop()
+        i += 1
+    if opened:
+        return ["style.css: the block opened at line %d is never closed, so every rule "
+                "after it is nested inside it (the 2026-09-12 fault)" % opened[-1]]
+    return []
+
+
 def check_hidden_means_hidden():
     """The fourth time one cascade rule cost a visible fault, so now it is a check.
 
@@ -2173,6 +2209,7 @@ def main():
     failures += check_tick_has_its_wiring()
     failures += check_every_tree_you_gave_us_comes_back()
     failures += check_hidden_means_hidden()
+    failures += check_css_braces_balance()
     failures += check_sheet_integrity()
     failures += check_inline_scripts_parse()
     failures += check_one_tree_card()

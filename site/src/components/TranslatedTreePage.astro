@@ -115,9 +115,12 @@ const nearbyCards = nearby.map((t) => ({
     { latitude: loc.latitude!, longitude: loc.longitude! },
     { latitude: t.location.latitude!, longitude: t.location.longitude! })),
 }));
+// Both labels were written to sit mid-sentence ("los 5 árboles..."), so a
+// chip, which starts a line, takes a capital.
+const cap = (t: string) => t.charAt(0).toLocaleUpperCase(lang) + t.slice(1);
 const chips = [
-  { href: `/${lang}/${cslug}`, label: U.allTreesLink(allTrees.length, tr.city), icon: "buildings" },
-  ...(cityHasQuestion ? [{ href: `/${lang}/${cslug}/${qslug}`, label: U.whichIsOldest(tr.city), icon: "stack" }] : []),
+  { href: `/${lang}/${cslug}`, label: cap(U.allTreesLink(allTrees.length, tr.city)), icon: "buildings" },
+  ...(cityHasQuestion ? [{ href: `/${lang}/${cslug}/${qslug}`, label: cap(U.whichIsOldest(tr.city)), icon: "stack" }] : []),
 ];
 // The bare number, and a cap on the prose fallback. Same rule as the English
 // page: the label carries the unit, and an age_estimate that runs to a
