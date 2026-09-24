@@ -1,0 +1,272 @@
+---
+// THE TREE PAGE, ONE BODY FOR EIGHT LANGUAGES (2026-09-24).
+//
+// Convention: our own app's tree page, TreeDetail.swift, taken literally (Hidde,
+// 2026-09-24: "look at the design of the detail tree page of the app and
+// literally translate that to web - there are so much more not needed info on
+// the web page that can be deleted and the design of the app is better"). He
+// approved the mockup of this layout the same day, with one change of his own:
+// the big button is Open in the app, not Take me there.
+//
+// Top to bottom, as the app draws it: share and report above the picture; the
+// picture full bleed with the map in its corner; the name, the place and the
+// thumb; one card for age and species; the story; how to get in and how to get
+// there; Something's wrong; Discover more; and a bar pinned to the bottom.
+//
+// What the web keeps that the app does not have, and why, so nobody tidies it
+// away: the breadcrumbs and "Trees nearby" (Contract A's internal links, which
+// are how Google finds the rest of a city), the scientific name under the
+// common one (Contract A's fact block), the address and recognition line in
+// the getting-there block (the recognition line is how somebody standing in a
+// park tells our tree from its neighbours), and the season chart on English
+// pages, which is one of the four verbs.
+//
+// What went, because it was on the web only and said nothing the page did not
+// already say: the duplicate facts list, the note under the map, the walk link,
+// the app pitch, the two help boxes at the foot, the Sources list, and the tick.
+// Collecting is the app's (the camera in its bar); the web's answer to it is the
+// Open-in-the-app button.
+//
+// Both tree templates build their data and hand it here, so a control added to
+// this file reaches every language by construction, which is the fault
+// check_every_language_gets_the_same_controls() in qa.py exists to catch.
+import Breadcrumbs from "./Breadcrumbs.astro";
+import PhotoFigure from "./PhotoFigure.astro";
+import AddPhoto from "./AddPhoto.astro";
+import WorthIt from "./WorthIt.astro";
+import SaveHeart from "./SaveHeart.astro";
+import ShareButton from "./ShareButton.astro";
+import { speciesIcon } from "../lib/species-icons";
+import { imgSrcset } from "../lib/images";
+import { locationIsApproximate } from "../lib/tree-copy";
+import { icon } from "../lib/icons";
+import { ui } from "../lib/i18n";
+import type { Tree } from "../lib/trees";
+
+interface Props {
+  lang: string;
+  tree: Tree;
+  name: string;
+  /** The species as stored, "Common (Scientific)". */
+  species: string;
+  speciesUrl?: string | null;
+  story: string;
+  access: string;
+  transport: string;
+  ageLabel: string;
+  ageValue: string;
+  girth?: string | null;
+  girthLabel: string;
+  recognise?: string | null;
+  address?: string | null;
+  place: string;
+  cityName: string;
+  cityUrl: string;
+  crumbs: [string, string | null][];
+  canonical: string;
+  shots: any[];
+  nearby: { name: string; url: string; meta: string; photo?: string | null }[];
+  chips: { href: string; label: string; icon: string }[];
+  seasonHtml?: string;
+}
+const p = Astro.props as Props;
+const U = ui(p.lang);
+const tree = p.tree;
+const loc = tree.location;
+const photo = p.shots[0] ?? null;
+const isApprox = locationIsApproximate(tree);
+
+// "Moreton Bay Fig (Ficus macrophylla)" -> the name a reader knows, and the
+// one a botanist searches for. The card shows the first and whispers the second.
+const m = /^(.*?)\s*\(([^)]+)\)\s*$/.exec(p.species || "");
+const spCommon = m ? m[1] : p.species;
+const spLatin = m ? m[2] : "";
+
+const openUrl = `/open?tree=${encodeURIComponent(tree.id)}`;
+const google = `https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}&travelmode=walking`;
+const expandUrl = `${p.cityUrl}#tree=${encodeURIComponent(tree.id)}`;
+const movedTemplate = U.pinMoved(987654).replace("987654", "{m}");
+const visibleCrumbs = p.crumbs.slice(0, -1);
+---
+<main class="content-page td-page">
+  <div class="td-top">
+    <Breadcrumbs items={visibleCrumbs} />
+    <div class="td-tools">
+      <ShareButton url={p.canonical} title={p.name} label={U.share} copied={U.shareCopied} />
+      <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="flag" lang={p.lang} />
+    </div>
+  </div>
+
+  {/* THE PICTURE, full bleed, and the map in its corner (TreeDetail.swift
+      `hero`, MapInset.swift: 72 points, radius 10, a 2 point white rim). The
+      #map element is moved into the side card on a desktop by
+      tree-page-js.ts, so there is only ever one map on the page. */}
+  <div class="td-hero">
+    {photo && photo.url ? (
+      <PhotoFigure photo={photo} photos={p.shots} alt={p.name} lang={p.lang} variant="hero"
+        widths={[700, 1100, 1600]} sizes="(max-width: 900px) 100vw, 720px">
+        <Fragment slot="overlay">
+          <div class="td-inset"><div id="map" class="map td-map"></div></div>
+          <button type="button" class="td-inset-hit" aria-label={U.showOnMap}></button>
+          <button type="button" class="td-photo-back" aria-label={U.showPhoto}>
+            <img {...imgSrcset(photo.url, [250], "72px")} alt="" loading="lazy" />
+          </button>
+          <a class="td-expand" href={expandUrl} aria-label={U.openFullMap} title={U.openFullMap}><Fragment set:html={icon("arrows-out-simple")} /></a>
+        </Fragment>
+      </PhotoFigure>
+    ) : (
+      <figure class="tree-noph tree-hero">
+        <div class="photo-stage">
+          <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
+          <span class="td-nophoto">{U.noPhotoYet}</span>
+          {/* The app's camera in the top corner of an empty hero
+              (addPhotoButton, camera.fill), which on the web is the control
+              that takes a photograph of a tree we have none of. */}
+          <div class="td-addphoto">
+            <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} />
+          </div>
+          <div class="td-inset"><div id="map" class="map td-map"></div></div>
+          <button type="button" class="td-inset-hit" aria-label={U.showOnMap}></button>
+          <button type="button" class="td-photo-back td-photo-back-art" aria-label={U.showPhoto}><Fragment set:html={icon("image")} /></button>
+          <a class="td-expand" href={expandUrl} aria-label={U.openFullMap} title={U.openFullMap}><Fragment set:html={icon("arrows-out-simple")} /></a>
+        </div>
+      </figure>
+    )}
+  </div>
+
+  <div class="td-grid">
+    <div class="td-body">
+      {/* ONE GROUP at 8: what this tree IS. */}
+      <div class="td-group">
+        <h1>{p.name}{(tree as any).label && <span class="tree-label">{(tree as any).label}</span>}</h1>
+        <div class="tree-place-row">
+          <p class="tree-place"><a href={p.cityUrl}>{p.place}</a></p>
+          <span class="tree-place-dot" aria-hidden="true">·</span>
+          <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="vote" lang={p.lang} />
+        </div>
+        <div class="tree-block">
+          <div class="tb-cols">
+            <div class="tb-col tb-age"><span>{p.ageLabel}</span><b>{p.ageValue}</b></div>
+            {p.girth ? (
+              <div class="tb-col tb-girth"><span>{p.girthLabel}</span><b>{p.girth}</b></div>
+            ) : (
+              <Fragment>
+                {p.speciesUrl ? (
+                  <a class="tb-col tb-species" href={p.speciesUrl}><span>{U.labelSpecies}</span><b>{spCommon}<Fragment set:html={icon("caret-right", "bold", "ic fact-go")} /></b>{spLatin && <i class="tb-latin">{spLatin}</i>}</a>
+                ) : (
+                  <div class="tb-col tb-species"><span>{U.labelSpecies}</span><b>{spCommon}</b>{spLatin && <i class="tb-latin">{spLatin}</i>}</div>
+                )}
+              </Fragment>
+            )}
+          </div>
+          {p.girth && p.speciesUrl && <a class="tb-row tb-species" href={p.speciesUrl}><span>{U.labelSpecies}</span><b>{spCommon}<Fragment set:html={icon("caret-right", "bold", "ic fact-go")} /></b>{spLatin && <i class="tb-latin">{spLatin}</i>}</a>}
+          {p.girth && !p.speciesUrl && <div class="tb-row tb-species"><span>{U.labelSpecies}</span><b>{spCommon}</b>{spLatin && <i class="tb-latin">{spLatin}</i>}</div>}
+          {isApprox && (
+            <p class="tb-loc tb-loc-approx">
+              <b>{U.locApprox}</b>{" "}
+              <button type="button" class="td-pin-open">{U.pinShowUs}</button>
+            </p>
+          )}
+          {tree.paid_entry && (
+            <p class="tb-ticket">
+              <Fragment set:html={icon("ticket", "fill", "ic tb-ticket-ic")} />
+              <span class="tb-ticket-txt"><b>{U.ticketNeeded}</b><span>{p.access}</span></span>
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div class="prose-block td-story"><p>{p.story}</p></div>
+      {p.seasonHtml && <Fragment set:html={p.seasonHtml} />}
+
+      {/* HOW TO GET IN AND HOW TO GET THERE (accessBlock: figure.walk and
+          tram.fill, footnote, secondary). The address line leads on the web
+          because the web has no map sheet to carry it. */}
+      <div class="td-access">
+        {(p.address || p.recognise) && (
+          <p><Fragment set:html={icon("map-pin")} /><span>{p.address}{p.recognise && <span class="which-one"> {p.recognise}</span>}</span></p>
+        )}
+        {!tree.paid_entry && p.access && <p><Fragment set:html={icon("person-simple-walk")} /><span>{p.access}</span></p>}
+        {p.transport && <p><Fragment set:html={icon("train-simple")} /><span>{p.transport}</span></p>}
+      </div>
+
+      <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="report" lang={p.lang} />
+
+      {p.nearby.length > 0 && (
+        <section class="td-section">
+          <h2>{U.nearbyTrees}</h2>
+          <div class="td-near">
+            {p.nearby.map((n) => (
+              <a class="td-near-card" href={n.url}>
+                <span class="td-near-ph">
+                  {n.photo
+                    ? <img {...imgSrcset(n.photo, [330, 500], "200px")} alt="" loading="lazy" />
+                    : <Fragment set:html={icon("tree")} />}
+                </span>
+                <b>{n.name}</b>
+                <span class="td-near-meta" set:html={n.meta} />
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section class="td-section discover-more">
+        <h2>{U.discoverMore}</h2>
+        <div class="dm-chips">
+          {p.chips.map((c) => (
+            <a class="dm-chip" href={c.href}><Fragment set:html={icon(c.icon)} />{c.label}</a>
+          ))}
+        </div>
+      </section>
+    </div>
+
+    {/* THE SIDE CARD on a desktop holds what the phone's pinned bar holds. */}
+    <aside class="td-side">
+      <div class="td-stick">
+        <a class="td-open" href={openUrl} data-ev="app-open"><Fragment set:html={icon("device-mobile")} />{U.openInApp}</a>
+        <div class="td-sec">
+          <a class="dir-link" href={google} target="_blank" rel="noopener"><Fragment set:html={icon("arrow-bend-up-right")} />{U.takeMeThere}</a>
+          <SaveHeart treeId={tree.id} treeName={p.name} labelSave={U.cardSave} labelSaved={U.cardSaved} />
+        </div>
+        <div class="td-side-map"></div>
+      </div>
+    </aside>
+  </div>
+
+  {/* THE BAR (actionBar): the loud button, then two 52 point circles. */}
+  <div class="td-bar" aria-label={U.actions}>
+    <a class="td-open" href={openUrl} data-ev="app-open"><Fragment set:html={icon("device-mobile")} />{U.openInApp}</a>
+    <a class="dir-link td-round" href={google} target="_blank" rel="noopener" aria-label={U.takeMeThere} title={U.takeMeThere}><Fragment set:html={icon("arrow-bend-up-right")} /></a>
+    <SaveHeart treeId={tree.id} treeName={p.name} labelSave={U.cardSave} labelSaved={U.cardSaved} look="round" />
+  </div>
+
+  {/* Which maps app, asked once on an iPhone (DirectionsAsk). */}
+  <dialog class="dir-pick" aria-label={U.dirTitle}>
+    <p class="dir-pick-title">{U.dirTitle}</p>
+    <button type="button" value="apple">{U.appleMaps}</button>
+    <button type="button" value="google">{U.googleMaps}</button>
+    <button type="button" value="cancel" class="dir-pick-cancel">{U.cancel}</button>
+  </dialog>
+
+  {isApprox && (
+    <dialog class="pin-dlg" aria-label={U.pinTitle}
+      data-tree={tree.id} data-name={p.name} data-city={p.cityName}
+      data-zoom={U.pinZoom} data-moved={movedTemplate} data-send={U.pinSend}
+      data-sending={U.pinSending} data-done={U.pinDone} data-failed={U.pinFailed}>
+      <div class="pin-head">
+        <button type="button" class="pin-cancel">{U.cancel}</button>
+        <b>{U.pinTitle}</b>
+      </div>
+      <div class="pin-map"></div>
+      <span class="pin-target" aria-hidden="true"></span>
+      <div class="pin-card">
+        <p class="pin-help">{U.pinHelp}</p>
+        <p class="pin-moved">{U.pinZoom}</p>
+        <button type="button" class="pin-send" disabled>{U.pinSend}</button>
+        <p class="pin-note" role="status"></p>
+        <p class="pin-acct" hidden>{U.pinNeedsAccount}</p>
+      </div>
+    </dialog>
+  )}
+</main>

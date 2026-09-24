@@ -2,47 +2,24 @@
 // Contract A — Tree page. Ported from build_tree_page(), build_site.py:3127-3312.
 import { getCollection, type CollectionEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distSpanBetween, type CityEntry, type Tree } from "../../lib/trees";
 import { haversineKm } from "../../lib/walks";
-// THE LINK UNDER THE ACTION BAR POINTED AT A PROMOTION, and did it on every
-// tree page on the site.
-//
-// It read "See the walking route past X's other trees" and went to `/x#walk`.
-// That anchor was the city page's walk picker until 2026-08-18, when the walks
-// came off the web; the same anchor now holds the block that says walking
-// routes are in the app. So the sentence promised a route on this website and
-// delivered an advertisement, and on a city with no walk at all it promised one
-// that has never existed. Hidde found it on Oahu (2026-08-28).
-//
-// Contract K put the walks back on the web on 2026-08-24 at /[city]/walks, and
-// took them off again on 2026-09-02: the walks are the Plus product and every
-// walk control on the website now opens the app overlay. The line stays, says
-// plainly that the route is in the app, counts the walks from the same helper
-// that feeds the app, and says nothing at all when a city has no walk.
-import { pageWalksFor, hasWalksPage } from "../../lib/city-walks";
 import { cityHasQuestionPage } from "../../lib/question-page";
 import { speciesCommon, speciesPageSlugs } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, parkPageIsAllowed } from "../../lib/parks";
 import { usablePhotos, metaImageUrls, ogImageUrl } from "../../lib/images";
-import PhotoFigure from "../../components/PhotoFigure.astro";
-import AddPhoto from "../../components/AddPhoto.astro";
-import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
-import { ageToken, metaForTree, submitLink, locationIsApproximate, girthLabel } from "../../lib/tree-copy";
-import WorthIt from "../../components/WorthIt.astro";
-import SaveHeart from "../../components/SaveHeart.astro";
-import SeenButton from "../../components/SeenButton.astro";
-import ShareButton from "../../components/ShareButton.astro";
+import { ageToken, metaForTree, girthLabel } from "../../lib/tree-copy";
 import { SHARE_JS } from "../../lib/share-js";
 import { WORTHIT_JS } from "../../lib/worthit-js";
 import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
 import { ADD_PHOTO_JS } from "../../lib/add-photo-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
-import { VISITED_SYNC_JS } from "../../lib/visited-sync-js";
 import { seasonBlock } from "../../lib/phenology";
-import { mapHead, singlePinScript } from "../../lib/map";
+import { mapHead } from "../../lib/map";
+import { treePageScript } from "../../lib/tree-page-js";
+import TreeDetail from "../../components/TreeDetail.astro";
 import { hreflangForCity, ui } from "../../lib/i18n";
 
 function esc(s: string): string {
@@ -111,17 +88,10 @@ const parkPage = parkName ? (parkPages as Map<string, any>).get(parkGroupKey(cit
 const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
-// Whether this city has walks worth mentioning at all: the same
-// WALKS_PAGE_MIN_TREES test that used to decide whether /[city]/walks got
-// built, kept after that page was retired because it is still the honest gate
-// on saying the word "walk" to a reader. cityWalkCount (the number of walks,
-// not trees) only picks the wording once that gate has already passed.
-const cityHasWalksPage = hasWalksPage(city);
 // Contract B v1.18. This chip has been gated on `allTrees.length > 1` since
 // long before the rule was written down, which is the same line; it reads it
 // from lib/question-page.ts now so the two cannot drift.
 const cityHasQuestion = cityHasQuestionPage(allTrees.length);
-const cityWalkCount = pageWalksFor(city).length;
 const tslugs = treeSlugsForCity(city);
 const tslug = tslugs[tree.id];
 const loc = tree.location;
@@ -181,7 +151,6 @@ const spCommon = speciesCommon(tree);
 const spSlug = speciesPages.get(spCommon);
 
 const seasonHtml = seasonBlock(tree, loc.latitude!);
-const isApprox = locationIsApproximate(tree);
 const girth = girthLabel((tree as any).girth_cm);
 
 const graph = [
@@ -231,265 +200,42 @@ const ageLabel = ageNumber ? "Years old" : "Age";
 // provenance belongs in the story where the sentence has room.
 const ageText = (tree.age_estimate || "").split(/[,;(]/)[0].trim();
 const ageValue = ageNumber ?? (ageText.length > 24 ? "see the story" : (ageText || "not recorded"));
+// The three nearest, as the cards the component draws: a picture where the
+// tree has one, the distance, and a link. Contract A's 2-3 nearby links.
+const nearbyCards = nearby.map((t) => ({
+  name: t.name,
+  url: `/${cslug}/${tslugs[t.id]}`,
+  photo: usablePhotos(t)[0]?.url ?? null,
+  meta: ui("en").distanceAway(distSpanBetween(
+    { latitude: loc.latitude!, longitude: loc.longitude! },
+    { latitude: t.location.latitude!, longitude: t.location.longitude! })),
+}));
+// Discover more, the app's closing chips (building.2, square.stack, globe),
+// plus the species and park facets the web has pages for. Contract A's city
+// and question-page links live here.
+const chips = [
+  { href: `/${cslug}`, label: allTrees.length > 1 ? `All ${allTrees.length} trees in ${cityName}` : cityName, icon: "buildings" },
+  ...(cityHasQuestion ? [{ href: `/${cslug}/oldest-tree`, label: `The oldest tree in ${cityName}`, icon: "stack" }] : []),
+  ...(spSlug ? [{ href: `/species/${spSlug}`, label: `Every ${spCommon.toLowerCase()}`, icon: "leaf" }] : []),
+  ...(parkPage ? [{ href: `/parks/${parkPage.slug}`, label: parkPage.name || parkPage.park, icon: "tree" }] : []),
+  ...(countryUrl ? [{ href: `/${countryPages.get(country)}`, label: country, icon: "globe-hemisphere-east" }] : []),
+];
 const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SHARE_JS
+// VISITED_SYNC_JS left with the tick (2026-09-24): collecting is the app's.
+const scripts = treePageScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + SHARE_JS
   + DOWNSIZE_JS + ADD_PHOTO_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
-  <main class="content-page has-tree-bar">
-    <Breadcrumbs items={crumbItems} />
-    {/* THE APP'S TREE PAGE, PORTED (Hidde, 2026-09-04: "import the design of
-        the detail tree page of the app we just finalised"). The app version
-        had the convention pass this one never got, and the order it arrived at
-        is better on three counts that are visible in one screenshot.
-
-        The picture comes FIRST and runs edge to edge. It used to sit after the
-        title and two chips, inset, so on a 375 point phone the one thing that
-        decides whether somebody sets off was the third block down. Every
-        reference (Airbnb's listing, AllTrails' trail, Apple Maps' place) opens
-        with the image at full bleed and no margin.
-
-        The facts became a CARD, high, instead of chips: age, species and pin
-        honesty are the same kind of answer and belong together, and the
-        species is the door to its own page. This also brings the page closer
-        to Contract A, which asks for a scannable fact block above the fold;
-        the detail list (location, access, transport) keeps its place below and
-        now sits above the map rather than under it.
-
-        And the spacing is a RHYTHM rather than one gap repeated: 28px between
-        sections, 10px inside a group. A page where everything is equally far
-        apart has no hierarchy, which was Hidde's complaint about the app on
-        2026-08-26 and was equally true here. */}
-    {photo && photo.url ? (
-      <PhotoFigure photo={photo} photos={shots} alt={tree.name} lang="en" variant="hero"
-        widths={[700, 1100, 1600]} sizes="(max-width: 760px) 100vw, 760px" />
-    ) : (
-      <figure class="tree-noph tree-hero">
-        <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
-        <figcaption>
-          <b>{spCommon}</b>
-          {/* This used to point at /contribute, which has no file field of any
-              kind, so the page asked for a photograph and offered nowhere to
-              put one. Fixed 2026-09-23 with a control that actually takes it. */}
-          <span>Nobody has published a photograph of this tree under a licence we can use. If you have one you took yourself, it can go here.</span>
-          <AddPhoto treeId={tree.id} treeName={tree.name} lat={loc.latitude!} lng={loc.longitude!} />
-        </figcaption>
-      </figure>
-    )}
-    <div class="tree-head">
-      <div class="page-head">
-        <h1>{tree.name}{tree.label && <span class="tree-label">{tree.label}</span>}</h1>
-        <ShareButton url={canonical} title={tree.name} />
-      </div>
-      {/* ONE SMALL LINE OF LINKS, the way AllTrails opens a trail page and
-          the way the app does since 2026-09-04. The species caption that stood
-          here is gone: it named the species a second time, a centimetre above
-          the card that names it, and on this tree it read "Moreton Bay Fig
-          (Ficus macrophylla)" over "Moreton Bay Fig". A fact belongs in one
-          place per page. */}
-      {/* The place, a dot and the thumb: the same row the app draws under a
-          tree's name since 2026-09-04, and on the website since 2026-09-11
-          (Hidde: "zorg dat deze pagina gelijk wordt getrokken met de app"). */}
-      <div class="tree-place-row">
-        <p class="tree-place"><a href={`/${cslug}`}>{[loc.neighbourhood, cityName].filter(Boolean).join(", ")}</a></p>
-        <span class="tree-place-dot" aria-hidden="true">·</span>
-        <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} part="vote" />
-      </div>
-    </div>
-    {/* EVERYTHING SOMEBODY NEEDS BEFORE SETTING OFF, in one block: two
-        columns for the facts that are short, then a line for the location and
-        a band for the ticket, both of which need words. Ported from the app,
-        2026-09-04, with the amendments Hidde made while looking at eight
-        drawings of it at real phone size.
-
-        Two columns rather than three is arithmetic and not taste: at 375px
-        "Approximate" leaves the species barely 40px, which is what made the
-        old three-column card wrap its age over five lines and push its own
-        label down. So the location became the line that carries words, and it
-        carries the ask with it.
-
-        The rule the whole block follows: a column states a short value, a line
-        carries words, a panel is for something that decides whether you set
-        off at all, and a fact appears exactly once per page. */}
-    <div class="tree-block">
-      <div class="tb-cols">
-        <div class="tb-col tb-age"><span>{ageLabel}</span><b>{ageValue}</b></div>
-        {spSlug ? (
-          <a class="tb-col tb-species" href={`/species/${spSlug}`}><span>Species</span><b>{spCommon} <span class="fact-go" aria-hidden="true">›</span></b></a>
-        ) : (
-          <div class="tb-col tb-species"><span>Species</span><b>{spCommon}</b></div>
-        )}
-      </div>
-      {/* NOTHING WHEN THE PIN IS EXACT, the same as the app since 2026-09-04
-          (Hidde: "die hele tekst mag weg, mensen moeten er vanuit gaan dat het
-          sowieso helemaal goed is en alleen als we niet zeker zijn staat er een
-          waarschuwing"). The app lost this line that day and the website kept
-          it for a week, which he caught on 2026-09-11. The report control is
-          still on every page for anybody who finds the pin wrong. */}
-      {isApprox && (
-        <p class="tb-loc tb-loc-approx">
-          <b>Approximate location.</b>{" "}
-          <a href={submitLink("correction", cityName, tree.name)}>Show us where it is</a>
-        </p>
-      )}
-      {tree.paid_entry && (
-        <p class="tb-ticket">
-          <svg class="tb-ticket-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 7.5A1.5 1.5 0 0 1 4.5 6h15A1.5 1.5 0 0 1 21 7.5V10a2 2 0 0 0 0 4v2.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5V14a2 2 0 0 0 0-4V7.5Z"/><path d="M8.5 7.6v8.8" stroke="#E8EEF6" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 2.4"/></svg>
-          <span class="tb-ticket-txt"><b>You need a ticket to see this tree</b><span>{tree.access}</span></span>
-        </p>
-      )}
-    </div>
-
-    {/* THE TICK, the web's answer to the camera button in the app's own tree
-        bar (2026-09-12). In the app, photographing a tree ticks it off, which
-        is why its tree page carries a collect action at all; the website has
-        no camera flow, so the collect action here is the tick itself. Under
-        the facts rather than in the floating bar: the bar is already three
-        controls wide and truncates its last one at 375 points. */}
-    <p class="tree-tick"><SeenButton treeId={tree.id} treeName={tree.name} /></p>
-
-    <div class="tree-bar" aria-label="Actions">
-      <SaveHeart treeId={tree.id} treeName={tree.name} />
-      <a class="tb-primary dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
-      <a class="tb-secondary" href="/app" data-app-modal data-ev="app-cta">Get the app</a>
-    </div>
-    {/* Opens the app overlay rather than a page, since 2026-09-02 (Hidde:
-        "stuur ze maar gewoon naar de app"). The count stays, because it says
-        what is actually there and is read off the same walks the app serves;
-        what changed is that the website stops promising to show the route.
-        Still gated on hasWalksPage(), so we only mention a walk in a city that
-        has one. */}
-    {cityHasWalksPage && (
-      <p class="under-bar-link"><a href="/app" data-app-modal data-ev="walks-app">
-        {cityWalkCount === 1
-          ? `See the walk past ${cityName}'s other trees in the app →`
-          : `See the ${cityWalkCount} walks past ${cityName}'s other trees in the app →`}
-      </a></p>
-    )}
-    {/* WHY GO is gone (2026-09-12). It printed the story's own opening a
-        centimetre above the story: read beside each other, all three of the
-        first trees carrying one said the same thing twice. Step 3 already
-        requires a story to lead with the most surprising fact, so a second
-        field asking for exactly that is the duplication the whole-page check
-        of 2026-08-04 exists to catch, and it shipped anyway. Hidde, on being
-        shown the three pairs: "precies haal weg". The failure it was invented
-        for (Nara, four trees whose own stories argued against their pages) is
-        not a missing field and a field cannot fix it: the four-tree floor and
-        "would somebody travel for THIS ONE TREE" are what answer it. */}
-    {tree.how_to_recognise && (
-      <p class="which-one"><b>How do I find it?</b> {tree.how_to_recognise}</p>
-    )}
-    <div class="prose-block"><p>{tree.story}</p></div>
-    <Fragment set:html={seasonHtml} />
-    {/* THE DETAIL LIST, and only the details. This block predates the panel
-        above, which arrived with the app's design on 2026-09-04 and took over
-        age, species and the ticket; nobody trimmed the list underneath it, so
-        the page had been stating the same facts twice ever since (Hidde,
-        2026-09-12, having caught the same fault on the homepage).
-
-        Measured over 500 tree pages before the fix: 307 printed an age in
-        both places and 283 of those printed two DIFFERENT forms of it, a
-        computed band up top ("260-285") against the written estimate down
-        here ("275 years"), which reads as the page disagreeing with itself.
-        25 repeated the access sentence word for word.
-
-        So each row now renders only where the panel is not already carrying
-        it. The rule is the one written above the panel and above ageValue:
-        a fact belongs in one place per page.
-
-        Species stays, unlike the translated pages, and the reason is not
-        style: the panel there prints the whole string, scientific name and
-        all, while the panel here prints only the common name, so this row is
-        the one place an English page names Quercus robur. Contract A asks
-        for common AND scientific in the fact block, so it cannot go until
-        the panel carries it. */}
-    <dl class="facts">
-      <dt>Species</dt><dd>{tree.species ?? ""}</dd>
-      {!ageNumber && (<><dt>Age estimate</dt><dd>{tree.age_estimate ?? "unknown"}</dd></>)}
-      {/* THE TRUNK (2026-09-12). The app has printed the girth on its own tree
-          page since it had one, and this page printed it nowhere, while
-          /collections/thickest-trees ranked trees on exactly this number. It
-          is also the fact that makes a tree impressive without needing an age,
-          which is the case for a third of what we publish. */}
-      {girth && <Fragment><dt>Girth</dt><dd>{girth}</dd></Fragment>}
-      <dt>Location</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
-      {!tree.paid_entry && (<><dt>Access</dt><dd>{tree.access ?? ""}</dd></>)}
-      <dt>Getting there</dt><dd>{tree.transport ?? ""}</dd>
-    </dl>
-    <div class="map-embed"><div id="map" class="map"></div></div>
-    {/* The transport sentence used to be repeated here, one screen under the
-        "Getting there" row that already says it. The note is about the
-        BUTTON, so that is all it says now. */}
-    <p class="go-note">The button above opens directions in your maps app.</p>
-    {/* "Something's wrong", low on the page and under the map, which is what
-        most reports are about. Its vote half sits beside the place name; the
-        two were one block under the story until 2026-09-11. */}
-    <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} part="report" />
-    {nearby.length > 0 && (
-      <Fragment>
-        <h2>Trees nearby</h2>
-        <div class="near-cards">
-          {nearby.map((t) => (
-            <a class="near-card" href={`/${cslug}/${tslugs[t.id]}`}>
-              <b>{t.name}</b>
-              <span set:html={`${t.age_estimate ?? ""} &middot; ${distSpanBetween({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! })} away`} />
-            </a>
-          ))}
-        </div>
-      </Fragment>
-    )}
-    {/* WHERE TO GO NEXT, as chips rather than a paragraph, which is what the
-        app closes a tree with (Hidde, 2026-08-26: "onderaan de boom detail
-        pagina discover more in city, park or country, verschillende knoppen").
-        AllTrails closes a trail with its own facet pills and Google Maps with
-        "More places nearby"; a reading page that simply stops is a dead end.
-        Every link Contract A requires is still here (city page, question page,
-        nearby trees above), now as targets rather than as a sentence. */}
-    <section class="discover-more">
-      <h2>Discover more</h2>
-      <div class="dm-chips">
-        <a class="dm-chip" href={`/${cslug}`}>{allTrees.length > 1 ? `All ${allTrees.length} trees in ${cityName}` : `${cityName}`}</a>
-        {cityHasQuestion && <a class="dm-chip" href={`/${cslug}/oldest-tree`}>The oldest tree in {cityName}</a>}
-        {spSlug && <a class="dm-chip" href={`/species/${spSlug}`}>Every {spCommon.toLowerCase()}</a>}
-        {parkPage && <a class="dm-chip" href={`/parks/${parkPage.slug}`}>{parkPage.name || parkPage.park}</a>}
-        {/* No country chip: country pages live at /[country] and only exist
-            once an intro is written and three cities qualify, so linking one
-            from here would need that whole check and can otherwise ship a dead
-            link, which qa.py rightly refuses. The app carries a country chip
-            because it has no park facet; this page has four already. */}
-      </div>
-    </section>
-    <div class="app-pitch">
-      <strong>Collect the trees you stand in front of</strong>
-      <p>Ticking this one off, walks past several more, and your collection growing city by city: that is the Ancient Trees app.</p>
-      <a class="go-btn" href="/app" data-app-modal data-ev="app-cta">Get the app</a>
-    </div>
-    {/* AND ON A PAGE THAT ALREADY HAS ONE, quietly. Hidde, 2026-09-02: "ook
-        als de boom er al is en geen foto heeft of de foto van de gebruiker is
-        beter gaan we die gebruiken." Ours is usually a stranger's from Commons
-        taken years ago; somebody standing there today may well have better.
-        Only one AddPhoto per page, because the control is addressed by id. */}
-    {photo && photo.url && (
-      <div class="report">
-        <strong>Have you photographed this tree?</strong>
-        <p class="report-line">If yours shows it better than the picture above, it can take its place, or stand beside it.</p>
-        <AddPhoto treeId={tree.id} treeName={tree.name} lat={loc.latitude!} lng={loc.longitude!} quiet />
-      </div>
-    )}
-    <div class="report">
-      <strong>We could use your help.</strong>
-      <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not: the species, the age, the size, whether the photo shows the right tree, or that it is gone. Every field on this page can be corrected.</p>
-      {/* "Something is wrong here" used to sit here as well, directly under the
-          vote control's own nested version of the same question: three
-          overlapping correction paths in one box. The chips on the control
-          above now do this in one tap, and their "Something else" chip still
-          reaches this form, so the duplicate link is gone rather than repeated
-          (one entry point per intent). */}
-      <a class="report-btn" href={submitLink("correction", cityName, tree.name)}>Correct a detail on this page</a>
-      <a class="report-btn" href={submitLink("tree", cityName)}>Suggest another tree</a>
-    </div>
-  </main>
+  <TreeDetail
+    lang="en" tree={tree} name={tree.name} species={tree.species ?? spCommon}
+    speciesUrl={spSlug ? `/species/${spSlug}` : null}
+    story={tree.story ?? ""} access={tree.access ?? ""} transport={tree.transport ?? ""}
+    ageLabel={ageLabel} ageValue={ageValue} girth={girth} girthLabel="Girth"
+    recognise={tree.how_to_recognise ?? null} address={loc.address ?? null}
+    place={[loc.neighbourhood, cityName].filter(Boolean).join(", ")}
+    cityName={cityName} cityUrl={`/${cslug}`} crumbs={crumbItems} canonical={canonical}
+    shots={shots} nearby={nearbyCards} chips={chips} seasonHtml={seasonHtml} />
   <Fragment slot="scripts" set:html={scripts} />
 </Base>
