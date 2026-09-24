@@ -21,3 +21,13 @@ alter table public.sightings add column if not exists girth_hugs text;
 alter table public.submissions
   add column if not exists photo text
   check (photo is null or char_length(photo) <= 300);
+
+-- 3. A SECOND PHOTOGRAPH, OF THE SIGN, when an old tree has one. Hidde's list,
+--    2026-09-24: "vaak staat er een bordje bij een oude boom dus is het best
+--    handig om naar een extra foto te vragen". A sign names the species, often
+--    the age and the tree itself, so it settles "which trunk" and verifies in
+--    one photograph. Optional in the flow; the file goes into the same bucket
+--    and folder as the tree's photograph, so no storage policy changes.
+alter table public.sightings
+  add column if not exists sign_photo text
+  check (sign_photo is null or char_length(sign_photo) <= 300);
