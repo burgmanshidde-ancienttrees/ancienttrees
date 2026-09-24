@@ -33,6 +33,8 @@
 #               cannot drift while nobody looks at the dark one in daylight
 #   crosscheck  a feed field the website sends is decoded by the app, and the
 #               reverse, so a FEATURE cannot reach one surface only (2026-09-12)
+#   iconcheck   no hand-drawn SVG icon added under site/src; icons come from
+#               Phosphor's own files (Hidde, 2026-09-24)
 #   pluralcheck a count interpolated into a string with the plural hardcoded
 #               on it, which reads fine until the count is exactly 1 and
 #               nobody tests with exactly 1 (recurred three times, 2026-09-12)
@@ -192,6 +194,19 @@ if echo "$CHANGED" | grep -qE '^(ios/|site/src/)'; then
         echo ""
         echo "Nothing was pushed. Fix the spelling, or read the shape findings"
         echo "and rewrite; they are candidates for a human, never a bulk edit."
+        exit 1
+    fi
+fi
+
+# No hand-drawn icons (Hidde, 2026-09-24: "never ever draw icons by hand").
+# Every icon comes from Phosphor's own files in site/src/icons/phosphor/.
+if echo "$CHANGED" | grep -qE '^site/src/'; then
+    if ! out=$(python3 scripts/iconcheck.py 2>&1); then
+        echo ""
+        echo "pre-push: iconcheck says no"
+        echo "$out" | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed."
         exit 1
     fi
 fi
