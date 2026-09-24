@@ -78,10 +78,16 @@ enum SightingSync {
                let data = await download(file, token: s.accessToken) {
                 picture = UIImage(data: data)
             }
+            // And the sign, on the same terms: only when this phone has none.
+            var sign: UIImage? = nil
+            if known?.signPhoto == nil, let file = row["sign_photo"] as? String,
+               let data = await download(file, token: s.accessToken) {
+                sign = UIImage(data: data)
+            }
             if known == nil {
-                sightings.adopt(made, image: picture)
+                sightings.adopt(made, image: picture, sign: sign)
             } else {
-                sightings.absorb(made, image: picture)
+                sightings.absorb(made, image: picture, sign: sign)
             }
         }
 
@@ -171,6 +177,18 @@ enum SightingSync {
             }
         }
 
+        // THE SIGN, when there is one, into the PRIVATE bucket only. It is
+        // evidence for whoever checks the tree (it names the species, often
+        // the age, and which trunk this is) and never the tree's picture, so
+        // unlike the photograph above it is not copied to the shared bucket
+        // that the unlisted page reads.
+        var signStored: String? = nil
+        if let sign = sightings.signImage(sighting),
+           let data = Sightings.downsized(sign) {
+            let path = "\(s.userId)/\(Sightings.signFile(sighting.id))"
+            if await upload(path, data: data, token: s.accessToken) { signStored = path }
+        }
+
         var row: [String: Any] = [
             "user_id": s.userId,
             "id": sighting.id.uuidString,
@@ -197,6 +215,8 @@ enum SightingSync {
         if let g = sighting.girthCm { row["girth_cm"] = g }
         if let h = sighting.girthHugs { row["girth_hugs"] = h }
         row["photo"] = stored
+        // Only when there is one, for the same reason as girth_hugs above.
+        if let signStored { row["sign_photo"] = signStored }
         // Explicit, like every other field here, rather than left to the
         // column's own default: the LOCAL value is the one somebody may have
         // just changed by tapping "Stop sharing the link", and omitting the
@@ -217,8 +237,12 @@ enum SightingSync {
         // Cheap and self-retiring: the key is only present when somebody
         // answered, so nothing else ever takes the second call, and once the
         // column exists the first call lands and this never runs again.
-        if !landed, row["girth_hugs"] != nil {
+        //
+        // `sign_photo` (2026-09-24) takes the same retry for the same reason:
+        // the sign is the least valuable thing in the row, never worth the tree.
+        if !landed, row["girth_hugs"] != nil || row["sign_photo"] != nil {
             row["girth_hugs"] = nil
+            row["sign_photo"] = nil
             landed = await Supa.post("/rest/v1/sightings?on_conflict=user_id,id",
                                      token: s.accessToken, body: [row])
         }
@@ -226,7 +250,10 @@ enum SightingSync {
         // its picture is not a copy of this sighting, and treating it as one
         // is how somebody signs out and loses the photograph while keeping the
         // pin.
-        if landed, stored != nil || sightings.image(sighting) == nil {
+        // The sign counts too: a sign-out deletes the local file of anything
+        // marked synced, and a sign that never arrived would go with it.
+        if landed, stored != nil || sightings.image(sighting) == nil,
+           signStored != nil || sightings.signImage(sighting) == nil {
             await MainActor.run { sightings.markSynced(sighting.id) }
         }
     }
@@ -237,6 +264,7 @@ enum SightingSync {
     static func remove(account: Account, id: UUID) async {
         guard let s = await account.freshSession() else { return }
         await deleteObject("\(s.userId)/\(id.uuidString).jpg", token: s.accessToken)
+        await deleteObject("\(s.userId)/\(Sightings.signFile(id))", token: s.accessToken)
         await Supa.delete("/rest/v1/sightings?id=eq.\(id.uuidString)", token: s.accessToken)
     }
 
