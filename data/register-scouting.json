@@ -672,6 +672,36 @@
    "country": "Brazil",
    "status": "empty",
    "note": "SCOUTED 2026-09-23, on scout_next.py --target naming Sao Paulo (#60) as no supply and no verdict, the first Brazil scout of any kind (nothing in this file or OPEN_DATA_SURVEY.md previously). Decreto Estadual 30.443/1989 (\"arvores imunes ao corte\") is a real designating instrument but protects almost entirely by named place (parks, plazas, streets) rather than by specimen, with only a short Article 16 list of individual trees, no coordinates and no structured dataset. GeoSampa maps the decree as \"Vegetacao Significativa\", a polygon landcover layer (44.42% of the municipality), not a point layer of individually designated remarkable trees, so it fails the semantic-filter test; its own metadata also gives no clear licence (\"direitos de propriedade intelectual aplicam-se\", no CC variant named), inconsistent with the site-wide footer CC claim. dados.prefeitura.sp.gov.br (CKAN) has only pruning/removal/planting management datasets, nothing semantically filtered. State/federal forestry sources (Fundacao Florestal, CETESB, SNIF/IFN) are rural forest inventories, not urban monumental-tree registers. EMPTY for a register; the decree text and its Article 16 specimen list are recorded as a hand-mine lead in OPEN_DATA_SURVEY.md. Do not re-scout without a new angle; next step for Sao Paulo is normal from-zero web research (Step 1), not another open-data hunt."
+  },
+  {
+   "place": "Christchurch",
+   "country": "New Zealand",
+   "status": "imported",
+   "note": "SCOUTED AND IMPORTED 2026-09-24 to data/registers/christchurch-district-plan-trees.json. CCC District Plan Tree Protection layer (gis.ccc.govt.nz OpenData/DistrictPlanB/FeatureServer/54), CC BY 4.0 stated verbatim on the item and in the Hub structured licence, joined by TreeSpecimenID to the CCC Tree asset layer for species, DBH (metres), height, ServiceStatus and Ownership. 1,960 scheduled points; 1,119 Ownership Private and 54 Removed/Stump dropped, 787 kept (19 Scheduled Significant Tree, the rest trees in scheduled park and street groups). 17 walkable clusters, the largest 166 trees around Hagley Park and the Botanic Gardens, the second 125 at Akaroa. Detail in OPEN_DATA_SURVEY.md 'New Zealand' 2026-09-24."
+  },
+  {
+   "place": "Auckland",
+   "country": "New Zealand",
+   "status": "imported",
+   "note": "IMPORTED 2026-09-24 to data/registers/auckland-notable-trees.json, reversing the 08-13 not-recommended (that pass only resolved the Plan Change 78 variant). Operative Unitary Plan Schedule 10 Notable Trees Overlay, item 583f5e99290b4adb9f7cc1196451f1e7, 3,600 points: 'They are provided under the Creative Commons Attribution 4.0 International licence', Hub structured licence CC-BY-4.0; a following website clause forbids republishing a substantial amount of the website without consent, read as a website clause and recorded for revisiting. NO ownership or access field and many trees are on private sections, so every candidate needs a per-tree access check (hard rule 10). Common name only, no measurements. 78 walkable clusters."
+  },
+  {
+   "place": "Wellington",
+   "country": "New Zealand",
+   "status": "stalled",
+   "note": "SCOUTED 2026-09-24. 2024 District Plan SCHED6 Notable Trees (gis.wcc.govt.nz 2024DistrictPlan MapServer/78), 224 trees with address, botanical name, condition and notability flags. Licence field is a purpose limitation, not a licence: 'This feature layer has been created for the District Plan of Wellington City Council. If you require something beyond this purpose, please contact the WCC District Planning team (District.Plan@wcc.govt.nz)'. PERMISSION NEEDED; the ask to District.Plan@wcc.govt.nz is Hidde's to send. The superseded RuBRIC 'Heritage Trees' layer (155) says only 'Creative Commons 3.0 (NZ)' with no variant."
+  },
+  {
+   "place": "Dunedin",
+   "country": "New Zealand",
+   "status": "stalled",
+   "note": "SCOUTED 2026-09-24. 2GP scheduled trees at apps.dunedin.govt.nz Public/SecondGenerationPlan_ScheduledItems/MapServer/2, 1,378 points, no copyright text or licence anywhere and no open-data item. PERMISSION NEEDED from DCC."
+  },
+  {
+   "place": "Queenstown",
+   "country": "New Zealand",
+   "status": "stalled",
+   "note": "SCOUTED 2026-09-24. QLDC Operative District Plan FeatureServer layer 2 'Protected Tree', 202 points, reference number only (no species), no licence (Hub type none). PERMISSION NEEDED and even then the plan schedule is needed to name species. Queenstown is a from-zero research city unless QLDC grants use. The NZ Notable Trees Trust register (treeregister.nz, 'Copyright (c) NZ Notable Trees Trust 2025', no licence) is a find-and-cross-check list here, never a source to copy."
   }
  ],
  "out_of_focus": {
