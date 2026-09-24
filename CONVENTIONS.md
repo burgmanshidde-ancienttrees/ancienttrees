@@ -25,6 +25,35 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## A photograph of the sign beside a tree (2026-09-24)
+
+Hidde: "vaak staat er een bordje bij een oude boom dus is het best handig om
+naar een extra foto te vragen als [iemand een boom] toevoegt". A sign names the
+species, often the age and the tree itself, which settles which trunk this is.
+
+**iNaturalist.** One observation takes several photographs, added as more
+evidence beside the first, and none beyond the first is ever asked for. The
+extra pictures are there to help whoever identifies it, not to decorate it.
+
+**Google Maps.** "Add a missing place" takes an optional photo and asks for
+nothing else to justify the place (see "Asking somebody why a place is worth
+visiting").
+
+**What we do.** One quiet, optional control on the add-a-tree form, under the
+trunk question, never a step of its own: "Is there a sign by the tree?", a
+line saying what a sign usually tells, and "Photograph the sign" (app) or "Add
+a photo of the sign" (web). Once taken it shows as a small thumbnail with
+Remove. It is EVIDENCE, not the tree's picture: stored as
+`<id>-sign.jpg` beside the photograph in the private bucket, never copied to
+the shared bucket, never published, and read by the viewing pass from
+out/sightings/. Web: the file hangs off the submission as `sign_photo`.
+
+Offered on ADDING a tree only, on both surfaces. A tree we already map has a
+known species and pin, so a sign is worth less there and would add a control to
+the tick-off moment, which is the one screen that must stay one tap.
+
+---
+
 ## Contributing when you are not signed in (2026-09-24)
 
 Hidde: "het gaat er vooral om dat in de front end van de website in de flow je
