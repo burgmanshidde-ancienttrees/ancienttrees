@@ -119,8 +119,11 @@ export const ADD_PHOTO_JS = `
     // see it, sending needs the account that lets us write back and that the
     // deletion promise hangs on.
     if (!session()) {
+      // The sign-in sheet is the whole answer; a sentence under the button
+      // saying the same thing was clutter (Hidde, 2026-09-24). Only where the
+      // sheet is missing does the page say it in words.
       if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback');
-      say(msgSignIn);
+      else say(msgSignIn);
       return;
     }
     file.click();

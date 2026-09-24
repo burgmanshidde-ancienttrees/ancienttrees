@@ -2589,7 +2589,6 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 .td-hero .tree-noph.tree-hero .tree-noph-art { height: auto; }
 .td-nophoto { font-size: 14px; color: var(--ink-light); }
 .td-addphoto { text-align: center; padding: 0 5.5rem; }
-.td-addphoto .addphoto-own { font-size: 12px; margin: 0.35rem 0 0; color: var(--ink-light); }
 .td-hero .tree-noph-art svg { width: 84px; height: 84px; }
 .td-inset { position: absolute; right: 10px; bottom: 10px; width: 72px; height: 72px;
   border-radius: 10px; overflow: hidden; border: 2px solid rgba(255,255,255,0.9);
