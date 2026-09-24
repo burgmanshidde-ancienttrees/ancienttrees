@@ -37,5 +37,9 @@ const U = ui(lang);
     {quiet ? U.addPhotoBtnQuiet : U.addPhotoBtn}
   </button>
   <input id="addphoto-file" type="file" accept="image/*" hidden />
+  {/* Said at the moment of choosing, on both surfaces (the app's CollectIntro
+      carries the same sentence): a picture from a website is not ours to
+      publish, and asking afterwards is too late. */}
+  <p class="addphoto-own" id="addphoto-own">{U.addPhotoOwnOnly}</p>
   <p class="addphoto-note" id="addphoto-note" hidden></p>
 </div>

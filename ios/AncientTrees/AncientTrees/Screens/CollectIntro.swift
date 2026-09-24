@@ -115,6 +115,16 @@ struct CollectIntro: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("add-library")
+
+                // Said where somebody chooses a picture, and in the same words
+                // as the website's own photo control: a picture saved from a
+                // website is not ours to publish, and the camera roll is where
+                // those live beside your own (2026-09-24).
+                Text("We can only use photographs you took yourself.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
         .frame(maxHeight: .infinity, alignment: .top)
