@@ -184,6 +184,54 @@ def fetch_photo(path, dest):
     return True
 
 
+def read_optional(path_fmt, cols, optional, label):
+    """supa() over `cols`, dropping an OPTIONAL column the database lacks.
+
+    A hand-applied migration can lag the code by days (girth_hugs did, and
+    submissions.sign_photo does as this is written), and PostgREST refuses the
+    WHOLE query over one unknown column. So the column the error names is
+    dropped and the query tried again, once per optional column, and anything
+    else is raised as before. Matching the NAME in the error matters: the tips
+    query used to test for "photo" in the body, which "sign_photo" contains.
+    """
+    cols = list(cols)
+    while True:
+        try:
+            return supa(path_fmt % ",".join(cols)) or []
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", "replace") if hasattr(e, "read") else ""
+            gone = [c for c in optional if c in cols and "does not exist" in body
+                    and ("." + c + " ") in (body + " ")]
+            if e.code != 400 or not gone:
+                import io
+                raise urllib.error.HTTPError(e.url, e.code, str(e), e.headers,
+                                             io.BytesIO(body.encode("utf-8")))
+            print(f"sightings inbox: {label}.{gone[0]} not migrated yet "
+                  f"(supabase/PENDING.sql), reading without it")
+            cols.remove(gone[0])
+
+
+def sign_file(sid):
+    """Where a row's sign photograph lands on disk, beside the tree's."""
+    return os.path.join(OUT, f"{sid}-sign.jpg")
+
+
+def fetch_sign(row):
+    """Download the SIGN photograph, when the row has one, for a judge to READ.
+
+    Hidde, 2026-09-24: a sign beside an old tree names its species, often its
+    age and the tree itself, so it settles which trunk this is and it is the
+    cheapest second source there is. It is EVIDENCE and never the tree's
+    picture: nothing here or in sightings_publish.py ever publishes it.
+    Returns the path relative to the repo, or None.
+    """
+    path = row.get("sign_photo")
+    if not path:
+        return None
+    dest = sign_file(row["id"])
+    return os.path.relpath(dest, ROOT) if fetch_photo(path, dest) else None
+
+
 _REGISTERS = None
 
 
@@ -365,6 +413,10 @@ def judge():
             print(f"      they wrote: {l['note'].strip()[:90]}")
         if l.get("girth_hugs"):
             print(f"      trunk: {HUGS.get(l['girth_hugs'], l['girth_hugs'])}")
+        if l.get("sign_file"):
+            print(f"      SIGN: {l['sign_file']}  (read it: species, age, name)")
+        elif l.get("sign_photo"):
+            print(f"      sign photographed, not downloaded yet: {l['sign_photo']}")
         if lat is None:
             print("      no coordinate, so nothing can be checked against it\n")
             continue
@@ -398,7 +450,8 @@ def status():
                  if l.get("latitude") is not None else "no coordinate")
         print(f"  {str(l.get('sighting_id'))[:8]}  NOT ON THE MAP  "
               f"{(l.get('name') or 'unnamed')[:34]}  {where}"
-              + (f"  note: {l['note'].strip()[:40]}" if (l.get("note") or "").strip() else ""))
+              + (f"  note: {l['note'].strip()[:40]}" if (l.get("note") or "").strip() else "")
+              + ("  +sign" if l.get("sign_photo") else ""))
     if leads:
         print("  ^ these need the normal bar, not a page. Check each with:")
         print("      python3 scripts/corroborate.py <lat> <lng> --country <country>")
@@ -407,7 +460,8 @@ def status():
         print(f"  {e['sighting_id'][:8]}  {e.get('tree_id') or 'NO MATCH'}  "
               f"{(e.get('tree_name') or e.get('name') or '')[:40]}  "
               f"match={e['match']}  has_photo={e['current_photo']}  light={(e.get('light') or {}).get('verdict', 'unmeasured')}\n"
-              f"      {e.get('worth', '')}")
+              f"      {e.get('worth', '')}"
+              + (f"\n      SIGN: {e['sign_file']}" if e.get("sign_file") else ""))
     return 0
 
 
@@ -432,11 +486,16 @@ def tips_with_photographs():
     that had just cost us a contributor. He was told to look at his account and
     the account read the wrong table.
     """
-    cols = "id,user_id,kind,city,tree,why,girth_cm,photo,created_at"
-    q = ("/rest/v1/submissions?select=" + cols +
+    cols = ["id", "user_id", "kind", "city", "tree", "why", "girth_cm", "photo",
+            "sign_photo", "created_at"]
+    q = ("/rest/v1/submissions?select=%s"
          "&photo=not.is.null&kind=in.(tree,city)&order=created_at.asc")
     try:
-        rows = supa(q) or []
+        # sign_photo is optional: it is in supabase/PENDING.sql until pasted.
+        # NOTE a tip carrying ONLY a sign is not read, because the filter is
+        # on photo; a sign alone is not a picture of the tree and the words
+        # of such a tip reach Step 0b through the submissions table anyway.
+        rows = read_optional(q, cols, ["sign_photo"], "submissions")
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", "replace") if hasattr(e, "read") else ""
         if e.code == 400 and "photo" in body and "does not exist" in body:
@@ -468,6 +527,7 @@ def tips_with_photographs():
             "lat": None,
             "lng": None,
             "photo": r.get("photo"),
+            "sign_photo": r.get("sign_photo"),
             "shared": True,
             "status": "sent",
             "taken_at": r.get("created_at"),
@@ -496,26 +556,18 @@ def main():
     # exception. Try with it, and fall back without it the moment it is
     # actually the missing-column error, so the pipeline keeps working
     # before the paste and picks the field up for free the moment after.
-    select_cols = ("user_id,id,tree_id,name,note,species,age,girth_cm,girth_hugs,"
-                   "lat,lng,taken_at,status,photo,shared,updated_at")
-    query = ("/rest/v1/sightings?select=" + select_cols +
+    #
+    # sign_photo (2026-09-24) takes the same path: optional, dropped if absent.
+    select_cols = ["user_id", "id", "tree_id", "name", "note", "species", "age",
+                   "girth_cm", "girth_hugs", "lat", "lng", "taken_at", "status",
+                   "photo", "sign_photo", "shared", "updated_at"]
+    query = ("/rest/v1/sightings?select=%s"
              "&photo=not.is.null&shared=eq.true&order=updated_at.asc")
     try:
-        rows = supa(query) or []
+        rows = read_optional(query, select_cols, ["girth_hugs", "sign_photo"], "sightings")
     except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", "replace") if hasattr(e, "read") else ""
-        if e.code == 400 and "girth_hugs" in body and "does not exist" in body:
-            print("sightings inbox: girth_hugs column not migrated yet "
-                  "(supabase/sightings.sql is FOR HIDDE), reading without it")
-            query = query.replace("age,girth_cm,girth_hugs,", "age,girth_cm,")
-            try:
-                rows = supa(query) or []
-            except Exception as e2:
-                print(f"sightings inbox: could not read sightings ({e2.__class__.__name__}: {str(e2)[:80]})")
-                return 0
-        else:
-            print(f"sightings inbox: could not read sightings (HTTPError: {str(e)[:80]})")
-            return 0
+        print(f"sightings inbox: could not read sightings (HTTPError: {str(e)[:80]})")
+        return 0
     except Exception as e:
         print(f"sightings inbox: could not read sightings ({e.__class__.__name__}: {str(e)[:80]})")
         return 0
@@ -624,6 +676,11 @@ def main():
                     "note": (row.get("note") or "")[:500],
                     "latitude": row.get("lat"), "longitude": row.get("lng"),
                     "taken_at": row.get("taken_at"), "photo": row.get("photo"),
+                    # THE SIGN beside it, when they photographed one: the
+                    # cheapest second source a lead can have. Downloaded so a
+                    # judge can read it; evidence only, never published.
+                    "sign_photo": row.get("sign_photo"),
+                    "sign_file": fetch_sign(row),
                     "nearest_published_m": dist,
                     # HAS ANYBODY OFFICIAL ALREADY SAID THIS IS REMARKABLE
                     # (2026-09-07, Hidde: "in the end we want trees people find
@@ -666,6 +723,9 @@ def main():
             "girth_hugs": row.get("girth_hugs"),
             "note": (row.get("note") or "")[:300],
             "taken_at": row.get("taken_at"), "photo_path": row["photo"],
+            # The sign, for READING (species, age, which tree), never for the
+            # page: sightings_publish.py publishes photo_path and nothing else.
+            "sign_path": row.get("sign_photo"), "sign_file": fetch_sign(row),
             # The row's coordinate (2026-09-11), kept for a tree picked from the
             # list too, not only for a lead. CAUTION: until the app records the
             # phone's own fix on that path, CollectSheet writes OUR pin here
@@ -702,7 +762,8 @@ def main():
     for e in queue:
         print(f"  {e['sighting_id'][:8]}  {e['tree_id']}  {e['tree_name'][:40]}  "
               f"match={e['match']}{'' if e['distance_m'] is None else ' ' + str(e['distance_m']) + 'm'}  "
-              f"has_photo={e['current_photo']}  light={(e.get('light') or {}).get('verdict', 'unmeasured')}")
+              f"has_photo={e['current_photo']}  light={(e.get('light') or {}).get('verdict', 'unmeasured')}"
+              + ("  +sign" if e.get("sign_file") else ""))
     return 0
 
 
