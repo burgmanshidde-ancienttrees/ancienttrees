@@ -812,6 +812,11 @@ struct TreeDetail: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text(shots.count == 1 ? "Your photograph" : "Your photographs")
                     .font(.shelfTitle).foregroundStyle(Brand.ink)
+                if let state = shots.first?.photoState(onItsPage: true) {
+                    Text(state)
+                        .font(.footnote).foregroundStyle(Brand.inkSoft)
+                        .accessibilityIdentifier("tree-your-photo-state")
+                }
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 10) {
                         ForEach(shots) { s in

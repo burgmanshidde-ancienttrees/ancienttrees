@@ -283,6 +283,35 @@ def address_of(user_id):
         return None
 
 
+# WHAT THE READER SEES ON THEIR OWN PHOTOGRAPH, written back onto their row.
+# Their app and the website's My trees print "Your photo, waiting for a look"
+# while the row says mine or sent, and "Your photo is on the tree's page" once
+# it says published (Sightings.Sighting.photoState, my-trees-js). Without this
+# the state could never change, because nothing else ever touches a sighting
+# row after the phone writes it. Nothing is written on a dry run, like the mail.
+VERDICT_STATUS = {"approve": "published", "add": "published",
+                  "reject": "declined", "hold": "checking"}
+
+
+def mark_status(sighting_id, verdict, really):
+    status = VERDICT_STATUS.get(verdict)
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if not status or not really or not key or str(sighting_id).startswith("tip-"):
+        return
+    import urllib.request
+    body = json.dumps({"status": status,
+                       "updated_at": datetime.datetime.utcnow().isoformat() + "Z"}).encode()
+    req = urllib.request.Request(f"{SUPA}/rest/v1/sightings?id=eq.{sighting_id}", data=body,
+                                 method="PATCH",
+                                 headers={"apikey": key, "Authorization": "Bearer " + key,
+                                          "Content-Type": "application/json",
+                                          "Prefer": "return=minimal"})
+    try:
+        urllib.request.urlopen(req, timeout=30).close()
+    except Exception as e:
+        print(f"  {sighting_id}: status not written back ({e.__class__.__name__})")
+
+
 def send_mail(addr, subject, body, really, sighting_id):
     sent_log = load(SENT_PATH, {"sent": []})
     dnc = {a.lower().strip() for a in sent_log.get("do_not_contact", [])}
@@ -349,6 +378,7 @@ def main():
             done[sid] = {"outcome": "held" if verdict == "hold" else "rejected",
                          "date": today, "tree_id": entry["tree_id"], "reason": reason[:300]}
             counts[verdict] += 1
+            mark_status(sid, verdict, really)
             print(f"  {verdict.upper():7} {entry['tree_id']} {entry['tree_name'][:40]}: {reason[:80]}")
             continue
         seen = (r.get("species_seen") or "").strip()
@@ -386,6 +416,7 @@ def main():
         done[sid] = {"outcome": "added" if extra else "published", "date": today,
                      "tree_id": entry["tree_id"], "file": fname, "reason": reason[:300]}
         counts["add" if extra else "approve"] += 1
+        mark_status(sid, verdict, really)
         published.append(entry)
         print(f"  {'ADDED' if extra else 'PUBLISHED'} {entry['tree_id']} {entry['tree_name'][:40]}: {fname} {w}x{h}"
               f"{f', replaced {old_url}' if old_url else ''}{f' ({dropped} vendored file(s) removed)' if dropped else ''}")

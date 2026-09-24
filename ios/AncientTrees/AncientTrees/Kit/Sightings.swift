@@ -164,6 +164,25 @@ final class Sightings {
         /// before 2026-09-24 still decodes.
         var place: String?
 
+        /// Where a photograph of one of OUR trees stands, in words, for as
+        /// long as it is true (CONVENTIONS.md, "Landing after you have added
+        /// something": the state is written ON the thing, because a moment's
+        /// acknowledgement leaves no trace for somebody coming back an hour
+        /// later). Nil for a tree only you have, which carries its own status,
+        /// and for a photograph we did not use, which needs no verdict on it.
+        /// The website's tree page and My trees say the same words.
+        func photoState(onItsPage: Bool) -> String? {
+            guard treeId != nil, photo != nil else { return nil }
+            switch status {
+            case .published:
+                return onItsPage ? "Your photo is on this page" : "Your photo is on the tree's page"
+            case .declined:
+                return nil
+            case .mine, .sent, .checking:
+                return "Your photo, waiting for a look"
+            }
+        }
+
         /// The id this sighting wears wherever the app talks about TREES: the
         /// heart on its page saves under it, so anything asking whether you
         /// hearted your own tree has to ask with this exact string. Written

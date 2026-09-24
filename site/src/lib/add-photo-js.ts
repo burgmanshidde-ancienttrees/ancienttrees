@@ -56,6 +56,9 @@ export const ADD_PHOTO_JS = `
   var msgBadFile = box.getAttribute('data-msg-badfile') || 'That picture could not be read. Try another one.';
   var msgThanks = box.getAttribute('data-msg-thanks') || 'Thank you. We look at every photograph before it goes on a page, and you will hear what happened to yours.';
   var msgFailed = box.getAttribute('data-msg-failed') || 'That did not go through. Try again in a moment.';
+  var msgWaiting = box.getAttribute('data-msg-waiting') || 'Your photo, waiting for a look';
+  var msgOnPage = box.getAttribute('data-msg-onpage') || 'Your photo is on this page';
+  var msgSeeMine = box.getAttribute('data-msg-seemine') || 'See it in My trees';
   // The button's own label, in whichever language rendered it (quiet or not),
   // read back from the DOM rather than guessed, so resetting it after a busy
   // or failed state never reverts to the English default on a translated page.
@@ -69,6 +72,36 @@ export const ADD_PHOTO_JS = `
   }
 
   function say(t) { note.textContent = t; note.hidden = !t; }
+
+  // The acknowledgement plus the way to the list that now holds it: one line,
+  // beside the control, never a dialog (CONVENTIONS.md, "Landing after you
+  // have added something").
+  function sayWithLink(t) {
+    say(t + ' ');
+    var a = document.createElement('a');
+    a.href = '/account';
+    a.textContent = msgSeeMine;
+    note.appendChild(a);
+  }
+
+  // AND THE STATE, on every later visit. A photograph you sent of this tree
+  // is written here while it waits and once it is on the page, which is what
+  // the app's tree page says under your photographs. Your own rows only: the
+  // policy on sightings is auth.uid() = user_id.
+  (function state() {
+    var s = session();
+    if (!s || !treeId) return;
+    fetch(SB + '/rest/v1/sightings?select=status&photo=not.is.null&tree_id=eq.'
+          + encodeURIComponent(treeId) + '&order=taken_at.desc&limit=1',
+      { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token } })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(rows) {
+        if (!rows || !rows.length || busy || !note.hidden) return;
+        var st = rows[0].status;
+        if (st === 'declined') return;
+        sayWithLink(st === 'published' ? msgOnPage : msgWaiting);
+      }).catch(function() {});
+  })();
 
   // A uuid, because the sightings table is keyed on the id the CLIENT gives a
   // sighting, so the same one arriving twice is one row rather than two.
@@ -134,7 +167,7 @@ export const ADD_PHOTO_JS = `
         if (!r || !r.ok) throw new Error('row');
         btn.hidden = true;
         file.value = '';
-        say(msgThanks);
+        sayWithLink(msgThanks);
         if (window.at) at.track('tree-photo-sent');
       }).catch(function() {
         busy = false; btn.disabled = false; btn.textContent = originalLabel;

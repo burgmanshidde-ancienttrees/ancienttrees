@@ -22,6 +22,9 @@ struct TreeCard: View {
     /// in your own collection (2026-09-11): a list of the trees you stood in
     /// front of should show the trees as you saw them.
     var ownPhoto: UIImage? = nil
+    /// Where your photograph of this tree stands, when you sent one
+    /// (Sightings.Sighting.photoState). One line under the facts.
+    var ownState: String? = nil
     /// ONE HEIGHT FOR EVERY CARD IN A ROW, for a card that sits in a
     /// horizontal shelf.
     ///
@@ -58,6 +61,14 @@ struct TreeCard: View {
                 Text(tree.name).font(.cardTitle).foregroundStyle(Brand.ink)
                     .lineLimit(uniformTitle ? 2 : 3, reservesSpace: uniformTitle)
                 meta
+                if let ownState {
+                    HStack(spacing: 6) {
+                        Circle().fill(Brand.moss).frame(width: 7, height: 7)
+                        Text(ownState)
+                    }
+                    .font(.caption).foregroundStyle(Brand.inkSoft)
+                    .accessibilityIdentifier("tree-card-own-state")
+                }
             }
             .padding(.horizontal, 12).padding(.vertical, 10)
         }

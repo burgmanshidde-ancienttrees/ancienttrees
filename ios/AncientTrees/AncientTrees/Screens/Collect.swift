@@ -86,6 +86,20 @@ struct CollectView: View {
     /// what made the heart and the collection look like one list in two
     /// states: photograph a tree you had hearted and it silently left your
     /// favourites.
+    /// Trees of ours you photographed without ticking them off, which is what
+    /// the website's "Add a photo" does: it sends a picture and claims nothing
+    /// about standing there. Without this they reached your account and
+    /// appeared nowhere in it. Newest first, and never a tree already in the
+    /// collected list, so one tree is one card.
+    private var photographedOnly: [Tree] {
+        var seen = Set<String>()
+        return sightings.newestFirst.compactMap { s -> Tree? in
+            guard let id = s.treeId, s.photo != nil, !saved.isVisited(id),
+                  seen.insert(id).inserted else { return nil }
+            return catalogue.tree(id)
+        }
+    }
+
     private var wishlist: [Tree] {
         saved.favourites.compactMap { catalogue.tree($0.treeId) }
     }
@@ -572,8 +586,11 @@ struct CollectView: View {
             if lane == .seen, !sent.isEmpty {
                 ForEach(sent) { SentCard(sent: $0) }
             }
+            if lane == .seen {
+                ForEach(photographedOnly) { card($0) }
+            }
             let list = lane == .want ? wishlist : visited
-            if list.isEmpty {
+            if list.isEmpty && (lane == .want || photographedOnly.isEmpty) {
                 Text(lane == .want
                      ? "No favourites yet. Tap a heart anywhere to keep a tree here."
                      : "You add a tree here by photographing it. Tap the camera and stand in front of one.")
@@ -1028,7 +1045,8 @@ struct CollectView: View {
         // raising the sheet. See BottomSheet.swift.
         SheetLink(route: .tree(t.id)) {
             TreeCard(tree: t, showHeart: heart,
-                     ownPhoto: sightings.ofTree(t.id).first.flatMap { sightings.image($0) })
+                     ownPhoto: sightings.ofTree(t.id).first.flatMap { sightings.image($0) },
+                     ownState: sightings.ofTree(t.id).first?.photoState(onItsPage: false))
         }
         .accessibilityIdentifier("tree-card")
         // NO context menu. It carried two tidy-up actions and it cost the tap:

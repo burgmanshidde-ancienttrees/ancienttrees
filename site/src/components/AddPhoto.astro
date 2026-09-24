@@ -32,7 +32,8 @@ const U = ui(lang);
      data-lat={String(lat)} data-lng={String(lng)}
      data-msg-signin={U.addPhotoSignIn} data-msg-sending={U.addPhotoSending}
      data-msg-badfile={U.addPhotoBadFile} data-msg-thanks={U.addPhotoThanks}
-     data-msg-failed={U.addPhotoFailed}>
+     data-msg-failed={U.addPhotoFailed} data-msg-waiting={U.addPhotoWaiting}
+     data-msg-onpage={U.addPhotoOnPage} data-msg-seemine={U.addPhotoSeeMine}>
   <button type="button" id="addphoto-btn" class={quiet ? "addphoto-btn quiet" : "addphoto-btn"}>
     {quiet ? U.addPhotoBtnQuiet : U.addPhotoBtn}
   </button>
