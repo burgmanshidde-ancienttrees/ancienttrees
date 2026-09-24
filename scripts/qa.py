@@ -1878,6 +1878,7 @@ PARTS = {
     "app-pitch": "the app block",
     "which-one": "the recognition line",
     "best-now-inline": "the season chip",
+    "addphoto-btn": "the add-a-photo control",
 }
 # A question page's slug is translated, so its twin cannot be found by path.
 QUESTION_SLUGS = {

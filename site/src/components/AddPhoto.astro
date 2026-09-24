@@ -7,6 +7,15 @@
 // A button with a hidden file input behind it, because a file input is the only
 // picker a browser has and the naked one is ugly on every platform. Same shape
 // as the profile picture on /account/settings.
+//
+// lang is read here rather than assumed, because ADD_PHOTO_JS is the one
+// shared script for every language (same pattern as WORTHIT_JS): the button
+// text and every status message it prints are looked up ONCE, in this
+// component, and handed to the script as data-msg-* attributes, so the script
+// itself stays free of any hardcoded language (REVIEW.md 2026-09-23 WARN: the
+// control had shipped with the English sentences baked into the script,
+// invisible to every translated page).
+import { ui } from "../lib/i18n";
 interface Props {
   treeId: string;
   treeName: string;
@@ -14,13 +23,18 @@ interface Props {
   lng: number;
   /** The page already shows a photograph, so this is an offer, not a gap. */
   quiet?: boolean;
+  lang?: string;
 }
-const { treeId, treeName, lat, lng, quiet = false } = Astro.props;
+const { treeId, treeName, lat, lng, quiet = false, lang = "en" } = Astro.props;
+const U = ui(lang);
 ---
 <div class="addphoto" id="addphoto" data-tree-id={treeId} data-tree-name={treeName}
-     data-lat={String(lat)} data-lng={String(lng)}>
+     data-lat={String(lat)} data-lng={String(lng)}
+     data-msg-signin={U.addPhotoSignIn} data-msg-sending={U.addPhotoSending}
+     data-msg-badfile={U.addPhotoBadFile} data-msg-thanks={U.addPhotoThanks}
+     data-msg-failed={U.addPhotoFailed}>
   <button type="button" id="addphoto-btn" class={quiet ? "addphoto-btn quiet" : "addphoto-btn"}>
-    {quiet ? "Add your own photo" : "Add a photo"}
+    {quiet ? U.addPhotoBtnQuiet : U.addPhotoBtn}
   </button>
   <input id="addphoto-file" type="file" accept="image/*" hidden />
   <p class="addphoto-note" id="addphoto-note" hidden></p>
