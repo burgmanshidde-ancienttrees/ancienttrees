@@ -26,12 +26,19 @@ need eyes or the app toolchain and are not for a night run (rung 9 rules).
 10. Coverage steer, Hidde named these so rule 1(d) is lifted for them: New Zealand beyond Auckland; more islands and Australia (they catch on in Search); US and UK, where most clicks come from and coverage is thin.
 11. Okinawa: Search demand is probably "okinawa", not "naha". Check the queries, then rename the place to Okinawa with Naha redirected (hard rule 3), if demand says so. Same test for other small islands.
 12. Tree of the Year: import winners and nominees as LEADS (not trees) per the scouting table; each still meets the two-source bar. Start with the two European winners already in leads (Pecs almond 2019, Felsomocsolad lime 2012).
-13. Collection: the ten most remarkable trees of Japan (Contract D, fits). Then more collections led by the grouping-pages table, where trees-older-than-400-years is the one climbing.
+13. Better collections (his words). First: the ten most remarkable trees of Japan (Contract D, fits). Then more collections led by the grouping-pages table, where trees-older-than-400-years is the one climbing.
 14. Oldest trees per country: country pages exist; check they lead with the oldest trees and that search finds them.
 15. Welcome mail on account creation: benchmark (AllTrails, komoot, Strava), draft per PRODUCT_COPY/PITCH_VOICE. Wiring may need his Supabase/mail settings; if so that one step goes to him.
 16. Photos without rights: add one line at upload ("only photographs you took yourself") on both surfaces; the takedown path already exists.
 17. Sign-in parity web vs app: compare the two flows against CONVENTIONS.md 2026-09-18 and align. SESSION.
 18. Homepage: put the real map in the hero instead of three drawings (his own note: the app IS the map, the site is a brochure about it). SESSION, visual.
+19. Singapore: a far-away tree zooms the city map out until it is useless. Fit the map to the walkable cluster, not to every outlier. Check other cities for the same. SESSION.
+20. Singapore gets a lot of visits: depth is allowed there (rule two), so a photo pass on its trees.
+21. The list of cities at the foot of a city page grows with every city opened. Replace it with nearby cities plus a link to /cities. Both languages' pages.
+22. Search always within reach, the AllTrails way (a search field on every screen, not only on the map). Convention check first. Both surfaces.
+23. Menu: sign in and sign up must not sit below the fold on a phone.
+24. Adding a tree: old trees often have a sign beside them. Offer an optional second photo "of the sign, if there is one"; it is free verification. Both surfaces.
+25. Magic-link mail looks bad: benchmark and restyle together with item 15 (same template work).
 
 ### Waiting on one answer from Hidde
 - Season and month collections ("best trees in May"): the 2026-08-26 decision made the season story Plus and retired /in-season. Public month pages would reverse that.
