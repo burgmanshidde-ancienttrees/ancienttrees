@@ -10,6 +10,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-24 (session) - Run budget back to 1800/260, and the nine stray branches cleared
+
+**The night runs' budget is back to 1,800 minutes a week and 260 a day** (Hidde: "zet het budget maar terug"). The raise to 5000/900 for the Japan absence bought about three times the minutes and did not buy three times the trees: 5.4 minutes per tree in its first week, 9.1 in its second, 11.2 this week, against 6.6 before it. It also drained the shared subscription he uses himself. Do not raise it again without his yes and a trees-per-minute figure beside the ask.
+
+**Nine unmerged branches, all dealt with.** Six were already on main via other commits (boom-pagina-kop, tree-age-species-trunk-size, nostalgic-lewin, tree-of-year-contest-db, draft-reply-daniel, the July Rome branch) and are deleted. zware-foto-zoektocht still carried five commits of real script work, now cherry-picked onto main: the brief says how stale its counts are, App Store downloads split into first-time and redownload, the app table's concentration line, `check_translations_have_no_stray_script()` in preflight and `check_dist_is_newer_than_the_source()` in qa. Main's translation files were kept where the branch had older copies. Preflight is clean afterwards.
+
+**Two mails came onto main and neither is sent.** The waitlist mail (11 addresses, approved by Hidde on 09-10, never sent) now sits in drafts/batches as `held_for_hidde`, because with the approved status outreach_continue.py would have mailed it on the next knock, two weeks late and with text that says "a week late". The Boomwachters Groningen reply to Marinel Pleij keeps its own hold, `awaiting_address_confirmation`.
+
+**Local checkout:** a 09-09 autostash had been popped onto today's main, leaving conflict markers in eight data files (six cities, agent-costs, photo-queue). Every change in it was already on main, so main's version was restored. The stash itself is still in `git stash list`.
+
+**FOR HIDDE:** the waitlist mail. Re-read drafts/waitlist-app-live.md, then either set its batch to `approved_by_hidde` or tell a session what to change.
+
 ## 2026-09-24 (session) - The contribute flow asks for the account first, and the postbox is shut
 
 **The sign-in overlay opens by itself.** Anybody reaching the add-a-tree flow
