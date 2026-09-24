@@ -25,3 +25,10 @@
 alter table public.submissions
   add column if not exists photo text
   check (photo is null or char_length(photo) <= 300);
+
+-- A SECOND photograph, of the sign beside the tree when there is one (Hidde,
+-- 2026-09-24). Same bucket and folder as `photo`. Evidence for whoever checks
+-- the tip, never published.
+alter table public.submissions
+  add column if not exists sign_photo text
+  check (sign_photo is null or char_length(sign_photo) <= 300);
