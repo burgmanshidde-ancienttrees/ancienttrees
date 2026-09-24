@@ -2572,9 +2572,9 @@ main.content-page.td-page { padding-bottom: 7rem; }
   position: absolute; right: 0; top: 52px; z-index: 30; width: min(20rem, calc(100vw - 2 * var(--gutter)));
   background: #fff; border-radius: 14px; padding: 0.75rem;
   box-shadow: 0 8px 28px rgba(26,32,18,0.18); }
-.worthit-flag .worthit-why:not([hidden]) { display: flex; flex-direction: column; align-items: stretch; gap: 0.35rem; }
+.worthit-flag .worthit-why { display: flex; flex-direction: column; align-items: stretch; gap: 0.35rem; }
 .worthit-flag .worthit-chip { text-align: left; }
-.worthit-flag .worthit-thanks:not([hidden]) { display: block; font-size: 14px; }
+.worthit-flag .worthit-thanks { display: block; font-size: 14px; }
 
 /* The hero. The stage is the photograph; everything on it is positioned
    against it, never against the credit or the strip underneath. */
