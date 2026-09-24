@@ -71,8 +71,15 @@ function swap(toMap) {
   if (!hero) return;
   hero.classList.toggle('td-show-map', toMap);
   interactive(toMap);
-  setTimeout(function () { if (map) { map.resize(); map.jumpTo({ center: [LNG, LAT] }); } }, 30);
+  // Redraw once the 0.22s grow has finished, and once more when the browser
+  // says it has: a map redrawn mid-transition keeps the 72px frame's centre,
+  // which parks the pin in the top-left corner of the big map.
+  setTimeout(recentre, 260);
 }
+function recentre() { if (map) { map.resize(); map.jumpTo({ center: [LNG, LAT] }); } }
+if (insetHost) insetHost.addEventListener('transitionend', function (e) {
+  if (e.propertyName === 'width') recentre();
+});
 var insetBtn = document.querySelector('.td-inset-hit');
 if (insetBtn) insetBtn.addEventListener('click', function () { swap(true); });
 var backBtn = document.querySelector('.td-photo-back');
