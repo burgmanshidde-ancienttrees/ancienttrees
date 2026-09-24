@@ -2677,6 +2677,7 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
    sideways (Hidde, 2026-09-24: "niet een slider maar onder elkaar responsive
    stapelen"). */
 .td-page .dm-chips { flex-wrap: wrap; overflow: visible; padding-bottom: 0; }
+.td-page .dm-chip { white-space: normal; max-width: 100%; line-height: 1.25; padding-top: 0.45rem; padding-bottom: 0.45rem; }
 /* "Something's wrong" is a line of underlined footnote text in the app
    (WorthItView), not a pill. */
 .td-page .worthit:not(.worthit-flag):not(.worthit-inline) .worthit-report {

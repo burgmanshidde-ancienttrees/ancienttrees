@@ -46,6 +46,18 @@ export async function getStaticPaths() {
   // PARK_MIN_TREES (Amsterdam's Hortus, 2026-08-23) while the intro file
   // stays on disk, and this map must agree with parks/[slug].astro's own
   // filter or a tree links to a park page that never builds.
+  // Which published collections hold each tree, for the Discover more chips
+  // (the app's collectionsWithThisTree). Drafts are never linked (Contract D).
+  const inCollections = new Map<string, { slug: string; title: string }[]>();
+  for (const c of await getCollection("collectionPages")) {
+    if ((c.data as any).status === "needs_curation") continue;
+    for (const e of ((c.data as any).entries ?? [])) {
+      if (!e?.tree_id) continue;
+      const list = inCollections.get(e.tree_id) ?? [];
+      list.push({ slug: c.data.slug, title: c.data.title });
+      inCollections.set(e.tree_id, list);
+    }
+  }
   const parkIntros = await getCollection("parks");
   const parkGroups = groupTreesByPark(allCities);
   const parkPages = new Map(
@@ -65,7 +77,7 @@ export async function getStaticPaths() {
       }
       paths.push({
         params: { city: city.id, tree: tslugs[tree.id] },
-        props: { city, tree, allTrees: trees, countryPages, speciesPages, parkPages },
+        props: { city, tree, allTrees: trees, countryPages, speciesPages, parkPages, collections: inCollections.get(tree.id) ?? [] },
       });
     }
   }
@@ -79,8 +91,9 @@ interface Props {
   countryPages: Map<string, string>;
   speciesPages: Map<string, string>;
   parkPages: Map<string, any>;
+  collections: { slug: string; title: string }[];
 }
-const { city, tree, allTrees, countryPages, speciesPages, parkPages } = Astro.props as Props;
+const { city, tree, allTrees, countryPages, speciesPages, parkPages, collections } = Astro.props as Props;
 // The park this tree stands in, when we publish a page about it.
 const parkName = parkKey(tree);
 const parkPage = parkName ? (parkPages as Map<string, any>).get(parkGroupKey(city.id, parkName)) ?? null : null;
@@ -214,11 +227,16 @@ const nearbyCards = nearby.map((t) => ({
 // plus the species and park facets the web has pages for. Contract A's city
 // and question-page links live here.
 const chips = [
-  { href: `/${cslug}`, label: allTrees.length > 1 ? `All ${allTrees.length} trees in ${cityName}` : cityName, icon: "buildings" },
-  ...(cityHasQuestion ? [{ href: `/${cslug}/oldest-tree`, label: `The oldest tree in ${cityName}`, icon: "stack" }] : []),
-  ...(spSlug ? [{ href: `/species/${spSlug}`, label: `Every ${spCommon.toLowerCase()}`, icon: "leaf" }] : []),
+  // Names only, the app's discoverChip labels (Hidde, 2026-09-24: "or use the
+  // same short labels"): the city, the collections this tree is in, the
+  // country; plus the species, the park and the question page, which the web
+  // has pages for and Contract A links to.
+  { href: `/${cslug}`, label: cityName, icon: "buildings" },
+  ...collections.map((c) => ({ href: `/collections/${c.slug}`, label: c.title, icon: "stack" })),
+  ...(spSlug ? [{ href: `/species/${spSlug}`, label: spCommon, icon: "leaf" }] : []),
   ...(parkPage ? [{ href: `/parks/${parkPage.slug}`, label: parkPage.name || parkPage.park, icon: "tree" }] : []),
   ...(countryUrl ? [{ href: `/${countryPages.get(country)}`, label: country, icon: "globe-hemisphere-east" }] : []),
+  ...(cityHasQuestion ? [{ href: `/${cslug}/oldest-tree`, label: ui("en").chipOldest, icon: "hourglass" }] : []),
 ];
 const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
