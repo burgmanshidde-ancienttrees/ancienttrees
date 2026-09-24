@@ -20,6 +20,7 @@ Checks, all deterministic, no network:
 Exit 1 on any failure, so CI fails the deploy. Run: python3 scripts/qa.py
 """
 import argparse
+import ast
 import json
 import os
 import re
@@ -177,6 +178,45 @@ def check_run_prompt_forbids_compound_commands():
             "is allowed; on 2026-09-19 that was one turn in eleven. Put the rule "
             "back, or change this check with Hidde."
         )
+    return out
+
+
+def check_scripts_are_valid_python():
+    """Every tracked scripts/*.py must at least parse.
+
+    Written 2026-09-24, the REVIEW.md WARN of the same day: `5259e750`
+    committed scripts/mailcheck.py with a stash pop's unresolved conflict
+    markers still in it (`<<<<<<< Updated upstream`) and it sat on main for
+    about four hours, taking contributor_reply.py down with it (that script
+    imports mailcheck.py), before it was self-caught. Nothing anywhere would
+    have caught the next one: qa.py checks the built site, not the toolchain
+    that builds it, and there is no py_compile/ast.parse gate for scripts/
+    at all. This is the same class of failure check_inline_scripts_parse()
+    and check_css_braces_balance() already close for the site's own
+    TypeScript and CSS, one language later.
+
+    ast.parse is enough: a conflict marker, a bare backtick's Python
+    equivalent, or any other local-git accident that leaves broken text in a
+    tracked file is a SyntaxError, and that is the only thing this needs to
+    catch. It does not run the scripts or check that they behave, only that
+    they are valid Python.
+    """
+    out = []
+    root = Path(__file__).resolve().parent
+    for path in sorted(root.glob("*.py")):
+        try:
+            src = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError as e:
+            out.append(f"scripts/{path.name}: cannot read as utf-8 ({e})")
+            continue
+        try:
+            ast.parse(src, filename=str(path))
+        except SyntaxError as e:
+            out.append(
+                f"scripts/{path.name}: does not parse as Python (line "
+                f"{e.lineno}: {e.msg}). A stash pop or a merge that left "
+                "conflict markers in a tracked file is the usual cause."
+            )
     return out
 
 
@@ -2200,6 +2240,7 @@ def main():
         return 1
 
     failures = []
+    failures += check_scripts_are_valid_python()
     failures += check_auth_corpus_agreement()
     failures += check_icons_are_drawn()
     failures += check_photo_orientation()

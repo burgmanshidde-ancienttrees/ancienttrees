@@ -4783,7 +4783,7 @@
    "name": "Ancient Ginkgo of St-Hilaire",
    "country": "France",
    "place": null,
-   "species": null,
+   "species": "Ginkgo (Ginkgo sp.)",
    "age_stated": null,
    "contest": "European Tree of the Year",
    "year": 2026,
@@ -4793,7 +4793,8 @@
    "lng": null,
    "source_url": "https://www.treeoftheyear.org/previous-years/2026/ancient-ginkgo-of-st-hilaire",
    "status": "lead",
-   "note": "Its contest page returned no content on 2026-09-24; name, country, rank and result are from the 2026 results listing. Place and pin still to find."
+   "note": "Its contest page returned no content on 2026-09-24; name, country, rank and result are from the 2026 results listing. Place and pin still to find.",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Ledeboerpark Giant Sequoia",
