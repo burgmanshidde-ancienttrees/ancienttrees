@@ -39,6 +39,16 @@ export const SIGNIN_CATCH_JS = `
     var p = kv.split('=');
     if (p[0]) h[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || '');
   });
+  // A link that failed comes back as #error=...&error_code=otp_expired (used
+  // twice, older than the hour, or opened by a mail scanner first). It used to
+  // be dropped in silence: the visitor landed on the page signed out with no
+  // word why (Hidde, 2026-09-24). Clean the url and let the foot of the page
+  // open the sheet saying so.
+  if (!h.access_token && (h.error || h.error_code)) {
+    history.replaceState(null, '', location.pathname + location.search);
+    window.atSignInFailed = h.error_code || h.error;
+    return;
+  }
   if (!h.access_token) return;
   try {
     localStorage.setItem('ancienttrees_session', JSON.stringify({
@@ -281,11 +291,14 @@ export const SIGNIN_JS = `
     if (title && !appMode) {
       title.textContent = title.getAttribute(
         reason === 'contribute' ? 'data-contribute'
-        : reason === 'feedback' ? 'data-feedback' : 'data-generic') || title.textContent;
+        : reason === 'feedback' ? 'data-feedback'
+        : reason === 'expired' ? 'data-expired' : 'data-generic') || title.textContent;
     }
     if (sub && !appMode) {
       if (reason === 'contribute') {
         sub.textContent = sub.getAttribute('data-contribute') || sub.getAttribute('data-generic');
+      } else if (reason === 'expired') {
+        sub.textContent = sub.getAttribute('data-expired') || sub.getAttribute('data-generic');
       } else if (reason === 'feedback') {
         sub.textContent = sub.getAttribute('data-feedback') || sub.getAttribute('data-generic');
       } else {
@@ -327,6 +340,12 @@ export const SIGNIN_JS = `
   // Signed IN they still go to /account, because then it is a real page with
   // your trees on it rather than a sign-in form. On /account itself there is
   // nothing to open a sheet over, so those links are left alone.
+  // A sign-in link that failed (caught in the head, see SIGNIN_CATCH_JS):
+  // open the sheet saying the link expired, with the way to a new one on it.
+  if (window.atSignInFailed) {
+    window.atSignInFailed = null;
+    window.atOpenSignIn(null, 'expired');
+  }
   document.addEventListener('click', function(e) {
     var a = e.target.closest ? e.target.closest('a[href^="/account"]') : null;
     if (!a) return;
