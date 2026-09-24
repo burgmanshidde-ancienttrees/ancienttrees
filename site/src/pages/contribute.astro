@@ -157,7 +157,19 @@ const headExtra = ldScript(graph);
     var priv = document.getElementById('sg-kind').value === 'privacy';
     // A privacy request may always be anonymous, so telling that person to
     // sign in would be wrong as well as unwelcoming.
-    gate.hidden = signedIn || priv;
+    var gated = !signedIn && !priv;
+    gate.hidden = !gated;
+    // AND THE FIELDS GO WITH IT (Hidde, 2026-09-24: "loop alle ingangen naar
+    // het formulier langs en zet dicht"). Every entrance was already gated and
+    // the overlay opened on all of them; what stayed open was that dismissing
+    // it left a form anybody could fill and send. That was my own softer
+    // reading of the 2026-08-21 ruling and it is what he is closing.
+    //
+    // This is now the Google Maps shape exactly: a signed-out person does not
+    // get the contribute surface. What they get instead is the page saying
+    // what it is for, and one button.
+    f.hidden = gated;
+    if (done) done.hidden = true;
   }
   gateBtn.addEventListener('click', function() {
     if (window.atOpenSignIn) window.atOpenSignIn(null, 'contribute');

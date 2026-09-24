@@ -55,6 +55,13 @@ struct ContributeView: View {
                                 .font(.callout.weight(.semibold))
                         }
                     }
+                    // AND THE FIELDS GO WITH IT (Hidde, 2026-09-24: "loop alle
+                    // ingangen naar het formulier langs en zet dicht"). The sheet
+                    // already opened the sign-in sheet on arrival; what stayed open
+                    // was that dismissing it left a form anybody could fill. Google
+                    // Maps does not hand a signed-out person the contribute surface
+                    // at all, and this is that shape: the reason, and one button.
+                    if account.isSignedIn {
                     // OPENED FROM A TREE: no picker and no blank Where. We
                     // know which tree, the kind is a correction by definition,
                     // and asking the two questions we can already answer is
@@ -135,6 +142,7 @@ struct ContributeView: View {
                             Text("That did not go through. Try again in a moment.")
                                 .font(.footnote).foregroundStyle(.red)
                         }
+                    }
                     }
                 }
             }
