@@ -30,7 +30,7 @@ themed and seasonal lists no.
 6. City list at the foot of a city page: replace with nearby cities plus a link to /cities. Grows with every city and dilutes internal links.
 7. Singapore photo pass (rule two allows depth there).
 8. Japan: "the ten most remarkable trees of Japan" as a generated-style superlative collection, not a themed one.
-9. Okinawa vs Naha: read the queries; if people search the island, rename the place (Naha redirects, hard rule 3). Same test for other small islands. No new page type needed: the place container can be an island already.
+9. Islands first, provinces later (Hidde, 2026-09-24: "mss eerst alle eilanden afmaken voor we naar provincies gaan"). Ten islands already live as places (Tenerife, Sardinia, Madeira, Crete, Menorca, Oahu, Kauai, Maui, Hawaii, Yakushima) and recur in the digests more than most cities; queries like "mallorca trees" and "trees on maui" arrive. So: (a) small islands where the city IS the island get renamed to the island, old slug redirected (hard rule 3): Naha -> Okinawa, Palma de Mallorca -> Mallorca, after reading the queries; (b) open islands that already have supply (Azores, Martinique, others via city_queue.py --next). No new page type. (c) Big islands holding several city pages (Sicily over Palermo and Catania) and provinces (Kyushu) are a grouping page = new page type = a blueprint contract for Hidde; only once the islands are done AND Search shows the queries.
 10. Tree of the Year winners and nominees as LEADS. A public vote is exactly the "people say it is worth the visit" evidence of 2026-09-08. Facts only, never their photos.
 11. Magic-link mail restyle: every sign-in sees it and an ugly one reads as spam. Benchmark first.
 12. Trivial: copycheck line in CollectSheet.swift; "A tree I found" fallback becomes species + place.
@@ -50,7 +50,6 @@ themed and seasonal lists no.
 ### DON'T, with the reason
 - Season and month collections: themed lists do not pull (see the finding above), and the 2026-08-26 decision put the season story in Plus.
 - Satellite view: a new paid tile provider (hard rule 5) for something a photo and a recognition line do better, which is telling which trunk.
-- Province pages (Kyushu): new page type, no search demand visible. Island names go in the place container instead (item 9).
 - Translating every species page: they earn few impressions in English (rung 0b).
 - More collections for their own sake: improve the ones that climb instead.
 - Homepage redesign: PARKED by Hidde 2026-09-24, "wacht daar sws maar mee". Nobody knows yet what it should be.
