@@ -251,6 +251,11 @@ const countries = defineCollection({
     meta_description: z.string().optional(),
     intro: z.string(),
     register_note: z.string().optional(),
+    // Extra ground the country map must show beside its cities, as
+    // [[west, south], [east, north]]. For a country whose mapped cities all
+    // hug one border: Canada's sit along the 49th parallel, so a frame fitted
+    // to them alone was centred on the United States (2026-09-24).
+    map_frame: z.tuple([z.tuple([z.number(), z.number()]), z.tuple([z.number(), z.number()])]).optional(),
   }),
 });
 
