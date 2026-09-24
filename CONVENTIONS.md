@@ -46,17 +46,26 @@ sentence explaining it sat under the send button on the website and in a
 Section footer under the button in the app, which is where it is read
 afterwards, if at all.
 
-**What we do, and the one deliberate deviation.** The form stays visible and
-fillable to anybody, which is our own 2026-08-21 ruling and a softer gate than
-either reference, because a form nobody can see is a contributor nobody gets.
-What moved is the SENTENCE: it is now the first thing on the form, with the
-sign-in button beside it, on both surfaces. A privacy request never sees it,
-because that one may always be anonymous.
+**What we do, after one round of doing it by halves.** The first attempt moved
+the SENTENCE to the top of the form, and Hidde's answer was the useful one:
+"that one sentence noone will read." He is right, and it is the whole reason
+the references open a door rather than print a line. So the sign-in overlay
+now opens BY ITSELF for anybody arriving at the contribute flow without an
+account, on both surfaces, under a heading that says what they came to do:
+"You need an account to add a tree."
 
-What is NOT copied from the references: hiding the form. And what still is not
-solved, honestly: after signing in you press Send once more, because every
-route into a session leaves the page and comes back. Both references have the
-same shape, since there you sign in first and then act once.
+This supersedes the softer half of our 2026-08-21 ruling, which was that the
+form is fillable by anybody and only sending needs the account.
+
+Two things we still do not copy, deliberately. The form stays VISIBLE behind
+the overlay and the overlay is dismissible, so nothing is hidden and nobody is
+trapped; Google Maps simply refuses the tab. And a privacy request never
+triggers it, because asking for your own data back can never require making an
+account first.
+
+What is still unsolved, honestly: after signing in you press Send once more,
+because every route into a session leaves the page and comes back. Both
+references have the same shape, since there you sign in first and act once.
 
 Read 2026-09-24:
 - https://support.google.com/maps/answer/6320846

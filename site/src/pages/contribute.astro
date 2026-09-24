@@ -160,7 +160,7 @@ const headExtra = ldScript(graph);
     gate.hidden = signedIn || priv;
   }
   gateBtn.addEventListener('click', function() {
-    if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback');
+    if (window.atOpenSignIn) window.atOpenSignIn(null, 'contribute');
   });
   // No listener for "they just signed in", and none is needed: every route
   // into a session leaves this page and comes back to it. The magic link
@@ -191,6 +191,30 @@ const headExtra = ldScript(graph);
     });
   } catch (e) {}
   drawGate();
+
+  // AND IT OPENS BY ITSELF (Hidde, 2026-09-24: "dramatic approach just open
+  // the login overlay if people go to the 'add tree flow' from all direction
+  // and put the header like - to add a tree you need to login", then, about
+  // the line above: "that one sentence noone will read"). He is right on both
+  // counts, and this is the Google Maps convention adopted whole rather than
+  // softened: the gate is at the entrance, and a person arriving here with no
+  // account meets it before the first field instead of after the sixth.
+  //
+  // It supersedes the softer half of the 2026-08-21 ruling, which was that the
+  // form is fillable by anybody and sending is what needs the account. The
+  // form is still VISIBLE and the dialog is still dismissible, so nothing is
+  // hidden and nobody is trapped; what changed is that the requirement is
+  // announced rather than discovered.
+  //
+  // A privacy request never triggers it: asking for your own data back can
+  // never require making an account first.
+  if (!gate.hidden && window.atOpenSignIn) {
+    // After the paint, so the person sees what page they are on behind it
+    // rather than a dialog over a blank screen.
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() { window.atOpenSignIn(null, 'contribute'); });
+    });
+  }
 
   var btn = f.querySelector('button[type="submit"]');
   var inFlight = false;

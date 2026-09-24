@@ -28,8 +28,8 @@ const p = prefix;
 const Heading = p === "signin" ? "h3" : "h1";
 ---
 <img class="signin-icon" src="/assets/app-icon.png" alt="" width="56" height="56" loading="lazy" />
-<Heading id={`${p}-title`} data-generic={T.title} data-feedback={T.titleFeedback} data-app={T.appTitle}>{T.title}</Heading>
-<p id={`${p}-sub`} class="signin-sub" data-generic={T.sub} data-named={T.subNamed} data-feedback={T.subFeedback}>{T.sub}</p>
+<Heading id={`${p}-title`} data-generic={T.title} data-feedback={T.titleFeedback} data-contribute={T.titleContribute} data-app={T.appTitle}>{T.title}</Heading>
+<p id={`${p}-sub`} class="signin-sub" data-generic={T.sub} data-named={T.subNamed} data-feedback={T.subFeedback} data-contribute={T.subContribute}>{T.sub}</p>
 
 {/* Continue in the app: the loud slot on a phone, hidden everywhere else,
     revealed by signin-js. A laptop cannot honour it. */}
