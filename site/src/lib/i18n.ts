@@ -247,6 +247,8 @@ export interface UIStrings {
   appleMaps: string;
   /** The back arrow on a tree page's photograph (AllTrails' mobile web). */
   goBack: string;
+  /** The Discover more chip to a city's question page, a name like the others. */
+  chipOldest: string;
   googleMaps: string;
   seenIt: string;
   worthItAsk: (name: string) => string;
@@ -557,6 +559,7 @@ const EN: UIStrings = {
   cancel: "Cancel",
   appleMaps: "Apple Maps",
   goBack: "Back",
+  chipOldest: "Oldest tree",
   googleMaps: "Google Maps",
   seenIt: "I have seen this one",
   worthItAsk: (n) => `Yes, ${n} was worth the visit`,
@@ -810,6 +813,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cancel: "Cancelar",
     appleMaps: "Apple Maps",
     goBack: "Atrás",
+    chipOldest: "Árbol más antiguo",
     googleMaps: "Google Maps",
     seenIt: "Ya he visto este",
     worthItAsk: (n) => `Sí, ${n} mereció la visita`,
@@ -1050,6 +1054,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cancel: "Annulla",
     appleMaps: "Apple Maps",
     goBack: "Indietro",
+    chipOldest: "Albero più antico",
     googleMaps: "Google Maps",
     seenIt: "L'ho già visto",
     worthItAsk: (n) => `Sì, ${n} valeva la visita`,
@@ -1290,6 +1295,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cancel: "Annuleren",
     appleMaps: "Apple Maps",
     goBack: "Terug",
+    chipOldest: "Oudste boom",
     googleMaps: "Google Maps",
     seenIt: "Deze heb ik gezien",
     worthItAsk: (n) => `Ja, ${n} was de moeite waard`,
@@ -1530,6 +1536,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cancel: "Abbrechen",
     appleMaps: "Apple Maps",
     goBack: "Zurück",
+    chipOldest: "Ältester Baum",
     googleMaps: "Google Maps",
     seenIt: "Diesen habe ich gesehen",
     worthItAsk: (n) => `Ja, ${n} war den Besuch wert`,
@@ -1770,6 +1777,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cancel: "Cancelar",
     appleMaps: "Apple Maps",
     goBack: "Voltar",
+    chipOldest: "Árvore mais antiga",
     googleMaps: "Google Maps",
     seenIt: "Já vi esta",
     worthItAsk: (n) => `Sim, ${n} valeu a visita`,
@@ -2010,6 +2018,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cancel: "Annuler",
     appleMaps: "Apple Maps",
     goBack: "Retour",
+    chipOldest: "Arbre le plus vieux",
     googleMaps: "Google Maps",
     seenIt: "Je l'ai déjà vu",
     worthItAsk: (n) => `Oui, ${n} valait le détour`,
@@ -2249,6 +2258,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cancel: "キャンセル",
     appleMaps: "Apple マップ",
     goBack: "戻る",
+    chipOldest: "最古の木",
     googleMaps: "Google マップ",
     seenIt: "この木は見ました",
     worthItAsk: (n) => `はい、${n}は行く価値がありました`,
