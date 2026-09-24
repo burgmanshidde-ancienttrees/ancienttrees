@@ -36,3 +36,31 @@ export function otherCitiesFor(currentSlug: string, allCities: CityEntry[]): Oth
       lng: e.data.trees.reduce((s, t) => s + (t.location.longitude ?? 0), 0) / e.data.trees.length,
     }));
 }
+
+/** The cities at the foot of a city page: the closest few, not all of them
+ * (2026-09-24). That list used to be every other city in city-list order,
+ * which was 228 links on every city page and grew with every city opened.
+ * Somebody finishing Utrecht wants Amersfoort and Arnhem, not Auckland; the
+ * full list lives at /cities, which the foot links to, so no city loses its
+ * way in. Distance is measured between the average positions of each city's
+ * trees, the same centre the map's city dots use. */
+export const NEARBY_CITIES_N = 8;
+export function nearbyCitiesFor<T extends { lat: number; lng: number }>(
+  centre: { lat: number; lng: number }, others: T[], n = NEARBY_CITIES_N,
+): T[] {
+  const km = (a: { lat: number; lng: number }, b: { lat: number; lng: number }): number => {
+    const x = (a.lng - b.lng) * Math.cos(((a.lat + b.lat) / 2) * Math.PI / 180);
+    return 111.32 * Math.hypot(x, a.lat - b.lat);
+  };
+  return [...others].sort((a, b) => km(centre, a) - km(centre, b)).slice(0, n);
+}
+
+/** The average position of a city's trees, the centre nearbyCitiesFor() and
+ * otherCitiesFor() both measure from. */
+export function cityCentre(d: CityEntry["data"]): { lat: number; lng: number } {
+  const n = d.trees.length || 1;
+  return {
+    lat: d.trees.reduce((s, t) => s + (t.location.latitude ?? 0), 0) / n,
+    lng: d.trees.reduce((s, t) => s + (t.location.longitude ?? 0), 0) / n,
+  };
+}

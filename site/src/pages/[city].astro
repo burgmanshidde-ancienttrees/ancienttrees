@@ -27,8 +27,7 @@ import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { type WalkMarker } from "../lib/walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
-import { otherCitiesFor } from "../lib/other-cities";
-import { byCityListOrder } from "../lib/city-order";
+import { otherCitiesFor, nearbyCitiesFor, cityCentre } from "../lib/other-cities";
 import { hreflangForCity } from "../lib/i18n";
 import LanguagePicker from "../components/LanguagePicker.astro";
 
@@ -190,13 +189,12 @@ if (coll) {
 }
 
 const otherCities = otherCitiesFor(cslug, allCities);
-// The visible "more cities" link list uses data/city-list.json's declared
-// order (unsorted, unlimited), matching build_city_page's other_cities
-// param directly (build_site.py:3502-3506). The favourites/tree-count rank
-// sort is a DIFFERENT list, used only by the map's zoom-out chooser overlay
-// inside cityMapScript (build_site.py:1561, "_ranked"); conflating the two
-// was a real bug caught by diffing against the real build.
-const moreCitiesList = byCityListOrder(otherCities.map((c) => ({ ...c, slug: c.slug })));
+// The visible "more cities" links at the foot: the eight CLOSEST cities and a
+// link to /cities, not every city (2026-09-24, Hidde's list: it had grown to
+// 228 links on every page). /cities lists every place, so none is orphaned.
+// The favourites/tree-count rank sort is a DIFFERENT list, used only by the
+// map's zoom-out chooser overlay inside cityMapScript; keep the two apart.
+const moreCitiesList = nearbyCitiesFor(cityCentre(city.data), otherCities);
 
 const speciesHere = new Map<string, number>();
 for (const t of trees) speciesHere.set(speciesCommon(t), (speciesHere.get(speciesCommon(t)) ?? 0) + 1);
@@ -334,14 +332,14 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
           </dd>
           {moreCitiesList.length > 0 && (
             <Fragment>
-              <dt>Ancient trees in more cities</dt>
+              <dt>Ancient trees in nearby cities</dt>
               <dd>
-                {moreCitiesList.map((c, i) => (
+                {moreCitiesList.map((c) => (
                   <Fragment>
-                    {i > 0 && " · "}
-                    <a href={`/${c.slug}`}>{c.city}</a>
+                    <a href={`/${c.slug}`}>{c.city}</a>{" · "}
                   </Fragment>
                 ))}
+                <a href="/cities">Every city on the map</a>
               </dd>
             </Fragment>
           )}
