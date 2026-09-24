@@ -36,8 +36,8 @@ mail is the one place a picture and a single "go outside" nudge belong.
 2. Auth, Email Templates, **Magic Link**: paste template 1.
 3. Auth, Email Templates, **Confirm signup**: paste template 2. This mail goes
    to every new account once, so it IS the first mail; no extra sender needed.
-4. Say "SMTP staat" and a session flips `Launch.emailSignIn` so the app can
-   take the six digits, and checks both surfaces land on one account.
+4. No code in either mail, on Hidde's word (2026-09-24: "liever geen code"):
+   the link signs you in on the web and opens the app, as chosen 2026-09-12.
 
 ## Template 1: Magic Link
 
@@ -50,9 +50,7 @@ Subject: `Your Ancient Trees sign-in link`
   <p style="margin:0 0 24px">
     <a href="{{ .ConfirmationURL }}" style="display:inline-block;background:#4A6B2A;color:#ffffff;text-decoration:none;font-size:16px;font-weight:600;padding:14px 28px;border-radius:999px">Sign in</a>
   </p>
-  <p style="margin:0 0 8px;font-size:15px;line-height:1.5">In the app, you can type this code instead:</p>
-  <p style="margin:0 0 24px;font-size:28px;letter-spacing:6px;font-weight:700;color:#3A5222">{{ .Token }}</p>
-  <p style="margin:0;font-size:13px;line-height:1.5;color:#6b6b60">The link and the code work once and expire within the hour. If you did not ask to sign in, you can ignore this mail.</p>
+  <p style="margin:0;font-size:13px;line-height:1.5;color:#6b6b60">The link works once and expires after a short while. If you did not ask to sign in, you can ignore this mail.</p>
 </div>
 ```
 
@@ -68,8 +66,6 @@ Subject: `Welcome to Ancient Trees`
   <p style="margin:0 0 28px">
     <a href="{{ .ConfirmationURL }}" style="display:inline-block;background:#4A6B2A;color:#ffffff;text-decoration:none;font-size:16px;font-weight:600;padding:14px 28px;border-radius:999px">Confirm my email</a>
   </p>
-  <p style="margin:0 0 8px;font-size:15px;line-height:1.5">Or type this code in the app:</p>
-  <p style="margin:0 0 28px;font-size:28px;letter-spacing:6px;font-weight:700;color:#3A5222">{{ .Token }}</p>
   <p style="margin:0 0 24px;font-size:15px;line-height:1.5">Then open the map and see which old trees stand near you.</p>
   <p style="margin:0;font-size:13px;line-height:1.5;color:#6b6b60">If you did not create an account, you can ignore this mail.</p>
 </div>
