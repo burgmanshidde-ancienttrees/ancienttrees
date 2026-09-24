@@ -8494,6 +8494,26 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-09-24": [
+   {
+    "target": "trieste",
+    "kind": "verify",
+    "tokens": 248925,
+    "trees": 16,
+    "note": "Deepen pass; found RAMI (ilregistrodeglialberi.it) as a second independent source covering most of Trieste register, resolved 5 stale duplicate leads already published under different ids, flagged one register-vs-citizen-register measurement conflict (tri_035)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "session",
+    "kind": "research",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Judged 19 backlogged reader-submission leads, fixed a health.py migration-reporting bug, shipped AddPhoto cross-language localisation (7 languages), refreshed fame-collection check dates. Tokens not logged: session-level work, not an agent dispatch.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
   ]
  }
 }
