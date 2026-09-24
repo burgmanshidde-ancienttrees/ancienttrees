@@ -5,8 +5,8 @@ Subject: Re: SV: Your yearbook archive is why Copenhagen has a page at all
 Hi Hans Erik,
 
 Thank you, that list did more for us than anything anybody has sent so far.
-Copenhagen went from sixteen trees to forty-two this week, and forty-two of
-your photographs are now on the site with your name under them.
+Copenhagen went from sixteen trees to forty-two this week, and thirty-two of
+them now carry one of your photographs with your name under it.
 
 https://ancienttrees.app/copenhagen
 
@@ -15,7 +15,7 @@ Fortunegen, and so are the Zelkova at Landbohoejskolen, the pagoda tree on
 Rolighedsvej and the cherry avenue at Bispebjerg. We used all of your data, so
 your whole list is in our database with your measurements.
 
-If you have more of these, in Copenhagen or anywhere else in Denmark, I would
+If you have more of these, in Denmark or anywhere else in the world, I would
 be very glad of them.
 
 Our app is live too. If you visit another city, take it with you and tell me
