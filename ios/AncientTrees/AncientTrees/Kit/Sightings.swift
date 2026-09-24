@@ -112,6 +112,14 @@ final class Sightings {
         /// A file in Documents/sightings. Not a path: a phone's container
         /// moves between launches and an absolute path goes stale.
         var photo: String?
+        /// A second file, of the sign beside the tree, when there was one
+        /// (Hidde, 2026-09-24: "vaak staat er een bordje bij een oude boom").
+        /// A sign names the species, often the age and the tree itself, so it
+        /// settles which trunk this is. EVIDENCE, never the tree's picture:
+        /// it does not go to the private page's public bucket and is never
+        /// published. Named `<id>-sign.jpg` beside the photograph. Optional
+        /// so a file written before it existed still decodes.
+        var signPhoto: String?
         var status: Status = .mine
 
         /// When the account last took a copy of this, photograph and all.
@@ -385,14 +393,16 @@ final class Sightings {
     /// Take a sighting that came back from the account, with its photograph if
     /// the account had one. Deliberately does NOT push: this is the way in, and
     /// a pull that wrote straight back would be a loop.
-    func adopt(_ sighting: Sighting, image: UIImage?) {
+    func adopt(_ sighting: Sighting, image: UIImage?, sign: UIImage? = nil) {
         guard !has(sighting.id) else { return }
         var made = sighting
+        made.signPhoto = nil
         if let image, let data = Self.downsized(image) {
             let file = made.id.uuidString + ".jpg"
             try? data.write(to: folder.appendingPathComponent(file))
             made.photo = file
         }
+        if let sign { made.signPhoto = writeSign(sign, for: made.id) }
         all.append(made)
         persist()
     }
@@ -413,11 +423,14 @@ final class Sightings {
     /// The photograph is kept rather than replaced when the phone already has
     /// one. It is the same picture, and the local file is the original while
     /// the download is a copy of a downsized copy.
-    func absorb(_ remote: Sighting, image: UIImage?) {
+    func absorb(_ remote: Sighting, image: UIImage?, sign: UIImage? = nil) {
         guard let i = all.firstIndex(where: { $0.id == remote.id }) else { return }
         let kept = all[i].photo
+        let keptSign = all[i].signPhoto
         all[i] = remote
         all[i].photo = kept
+        all[i].signPhoto = keptSign
+        if keptSign == nil, let sign { all[i].signPhoto = writeSign(sign, for: remote.id) }
         if kept == nil, let image, let data = Self.downsized(image) {
             let file = remote.id.uuidString + ".jpg"
             try? data.write(to: folder.appendingPathComponent(file))
@@ -429,6 +442,23 @@ final class Sightings {
     func image(_ s: Sighting) -> UIImage? {
         guard let f = s.photo else { return nil }
         return UIImage(contentsOfFile: folder.appendingPathComponent(f).path)
+    }
+
+    /// The photograph of the sign, when somebody took one.
+    func signImage(_ s: Sighting) -> UIImage? {
+        guard let f = s.signPhoto else { return nil }
+        return UIImage(contentsOfFile: folder.appendingPathComponent(f).path)
+    }
+
+    /// The file name of a sign photograph, here and in the account's bucket.
+    /// One place, because the sync, the removal and the orphan count all have
+    /// to agree on it.
+    nonisolated static func signFile(_ id: UUID) -> String { id.uuidString + "-sign.jpg" }
+
+    private func writeSign(_ image: UIImage, for id: UUID) -> String? {
+        guard let data = Self.downsized(image) else { return nil }
+        let file = Self.signFile(id)
+        return (try? data.write(to: folder.appendingPathComponent(file))) != nil ? file : nil
     }
 
     // MARK: - editing
@@ -569,7 +599,7 @@ final class Sightings {
                 lat: Double, lng: Double, image: UIImage?,
                 date: Date = Date(), status: Status = .mine,
                 unsureOf: [String]? = nil, girthHugs: String? = nil,
-                place: String? = nil) -> Sighting {
+                place: String? = nil, sign: UIImage? = nil) -> Sighting {
         var s = Sighting(treeId: treeId, name: Self.oneLine(name), note: note,
                          lat: lat, lng: lng, date: date, photo: nil, status: status)
         s.unsureOf = unsureOf
@@ -584,6 +614,7 @@ final class Sightings {
             try? data.write(to: folder.appendingPathComponent(file))
             s.photo = file
         }
+        if let sign { s.signPhoto = writeSign(sign, for: s.id) }
         all.append(s)
         persist()
         // The NAME, NOTE and COORDINATES of somebody's own tree are deliberately
@@ -648,7 +679,7 @@ final class Sightings {
         guard !all.isEmpty else { return }
         let unsent = all.filter { $0.syncedAt == nil }
         for s in all where s.syncedAt != nil {
-            if let f = s.photo {
+            for f in [s.photo, s.signPhoto].compactMap({ $0 }) {
                 try? FileManager.default.removeItem(at: folder.appendingPathComponent(f))
             }
         }
@@ -685,7 +716,7 @@ final class Sightings {
 
     func remove(_ id: UUID) {
         guard let i = all.firstIndex(where: { $0.id == id }) else { return }
-        if let f = all[i].photo {
+        for f in [all[i].photo, all[i].signPhoto].compactMap({ $0 }) {
             try? FileManager.default.removeItem(at: folder.appendingPathComponent(f))
         }
         let gone = all[i].id
@@ -832,6 +863,7 @@ final class Sightings {
             s.age = r["age"] as? String
             s.girthCm = r["girthCm"] as? Int
             s.photo = r["photo"] as? String
+            s.signPhoto = r["signPhoto"] as? String
             // Dates have been written two ways by JSONEncoder over this app's
             // life, as a number of seconds and as a string, and a salvage pass
             // that only understood one of them would date half the collection
@@ -848,7 +880,9 @@ final class Sightings {
     /// this app, and an index that lost track of it is our fault rather than
     /// theirs.
     private func findOrphans() {
-        let known = Set(all.compactMap(\.photo))
+        // The sign photographs are known files too, or every one of them
+        // would be counted as a lost picture of a tree.
+        let known = Set(all.compactMap(\.photo) + all.compactMap(\.signPhoto))
         let files = (try? FileManager.default.contentsOfDirectory(atPath: folder.path)) ?? []
         orphanPhotos = files.filter { $0.hasSuffix(".jpg") && !known.contains($0) }.sorted()
     }

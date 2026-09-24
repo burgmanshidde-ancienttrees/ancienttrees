@@ -131,6 +131,14 @@ struct CollectSheet: View {
     /// How many adult hugs around the trunk is, when they answered. See the
     /// note over HugRow at the bottom of this file.
     @State private var hugs: String?
+    /// A photograph of the sign beside the tree, when there is one and they
+    /// took it. Optional, and never the tree's picture. See the note over
+    /// the sign row in the form below.
+    @State private var signShot: UIImage?
+    /// Which photograph the camera or library is open for: the tree's own
+    /// (false) or the sign's (true). One flag rather than a second pair of
+    /// covers, so the permission recovery and the pickers stay one path.
+    @State private var forSign = false
     @State private var sending = false
     @State private var signingIn = false
     /// Leaving with a photograph in hand asks first. See closeRow.
@@ -275,16 +283,20 @@ struct CollectSheet: View {
             Text("You will lose the photograph and what you have filled in.")
         }
         .fullScreenCover(isPresented: $camera) {
-            CameraPicker { resolve($0) }.ignoresSafeArea()
+            CameraPicker { image in
+                if forSign { if let image { signShot = image } } else { resolve(image) }
+            }.ignoresSafeArea()
         }
         .sheet(item: $refused) { which in
             // The camera's second button is the route on rather than a refusal,
             // so declining here opens the library and the task still finishes.
             PermissionRecovery(permission: which,
-                               onDecline: which == .camera ? { openLibrary() } : nil)
+                               onDecline: which == .camera ? { openLibrary(forSign: forSign) } : nil)
         }
         .fullScreenCover(isPresented: $library) {
-            LibraryPicker { picked($0) }.ignoresSafeArea()
+            LibraryPicker { p in
+                if forSign { if let p { signShot = p.image } } else { picked(p) }
+            }.ignoresSafeArea()
         }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .feedback, localCount: saved.savedCount)
@@ -534,11 +546,13 @@ struct CollectSheet: View {
             : "Your photograph does not say where it was taken, so drag the map until the pin sits on the tree."
     }
 
-    private func openCamera() {
+    private func openCamera(forSign: Bool = false) {
+        self.forSign = forSign
         if CameraPicker.isRefused { refused = .camera } else { camera = true }
     }
 
-    private func openLibrary() {
+    private func openLibrary(forSign: Bool = false) {
+        self.forSign = forSign
         Task {
             // The prompt belongs to the tap, so it is asked here rather than
             // inside the picker. Refused is not a dead end: the picker still
@@ -1227,6 +1241,61 @@ struct CollectSheet: View {
                 HugRow(picked: $hugs)
             }
 
+            // THE SIGN, a second photograph and an optional one (Hidde,
+            // 2026-09-24: "vaak staat er een bordje bij een oude boom dus is
+            // het best handig om naar een extra foto te vragen"). A sign names
+            // the species, often the age and the tree itself, which is exactly
+            // what settles which trunk somebody photographed and what a check
+            // would otherwise have to find in two sources.
+            //
+            // Convention: iNaturalist lets you add more photographs to one
+            // observation, as extra evidence beside the first, and never asks
+            // for them. So this is one quiet button that can be ignored, and
+            // no step of its own (CONVENTIONS.md, "A photograph of the sign
+            // beside a tree"). It is evidence and not the tree's picture: it is
+            // never published and never goes to the private page.
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Is there a sign by the tree?")
+                    .font(.brand(15, .bold))
+                    .foregroundStyle(Brand.ink)
+                Text("You can add a photo of the sign as well. It often names the tree, the species and its age.")
+                    .font(.footnote)
+                    .foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                if let signShot {
+                    HStack(spacing: 12) {
+                        Image(uiImage: signShot)
+                            .resizable().aspectRatio(contentMode: .fill)
+                            .frame(width: 56, height: 56)
+                            .clipShape(.rect(cornerRadius: 10))
+                            .accessibilityHidden(true)
+                        Text("Photo of the sign")
+                            .font(.subheadline)
+                            .foregroundStyle(Brand.ink)
+                        Spacer(minLength: 8)
+                        Button("Remove") { self.signShot = nil }
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(Brand.moss)
+                            .frame(minHeight: 44)
+                            .accessibilityLabel("Remove the photo of the sign")
+                    }
+                    .accessibilityIdentifier("sign-photo-taken")
+                } else {
+                    Button { openCamera(forSign: true) } label: {
+                        Label("Photograph the sign", systemImage: "camera")
+                            .font(.brand(15, .semibold, relativeTo: .subheadline))
+                            .foregroundStyle(Brand.ink)
+                            .padding(.horizontal, 16)
+                            .frame(height: 44)
+                            .background(Brand.surface, in: .capsule)
+                            .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                            .contentShape(.rect)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("sign-photo")
+                }
+            }
+
             HStack(spacing: 8) {
                 Image(systemName: "leaf")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
@@ -1335,8 +1404,10 @@ struct CollectSheet: View {
                                     ? Sightings.fallbackName(species: nil, place: place)
                                     : String(named.prefix(60)),
                                  note: why, lat: here.lat, lng: here.lng, image: shot,
-                                 date: taken ?? Date(), girthHugs: hugs, place: place)
+                                 date: taken ?? Date(), girthHugs: hugs, place: place,
+                                 sign: signShot)
         shot = nil
+        signShot = nil
         // The payoff beat this path was missing (Hidde, 2026-09-03: "ik mis
         // ook een vink bevestiging na het nemen van de foto dat de tree is
         // toegevoegd"). tickedState already gives the matched-tree path a
