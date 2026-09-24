@@ -1,3 +1,47 @@
+## HIDDE'S HOLIDAY LIST, triaged 2026-09-24
+
+Hidde handed over his own list from Japan and asked for the least input
+possible: a session sorts it, does what it can alone, and batches the rest into
+one message of numbered yes/no questions. Order below is effect over effort.
+Strike an item by deleting it and saying so in LOG.md. Items marked SESSION
+need eyes or the app toolchain and are not for a night run (rung 9 rules).
+
+### Already done or already ruled (told him, nothing to build)
+- Vote button on translated tree pages: live in all seven languages since 2026-09-12.
+- why_go: removed everywhere 2026-09-12; only code comments mention it.
+- Reader GPS vs our pin: ruled 2026-09-08. A reader's fix beats a pin that says approximate, never one that says confirmed.
+- Roadtrip trees outside cities: ruled 2026-08-31 (single-famous-tree place) and 2026-09-03 (rung 0c); the famous-trees lane is running.
+- Tree of the Year: scouted, verdict "not a register, worth it as a lead list" (OPEN_DATA_SURVEY.md). The build step is below.
+
+### A session or run does it, no input needed
+1. Canada search shows a map of mostly the US. Bug. SESSION.
+2. copycheck flags "Tap one to see how to tell it apart." (CollectSheet.swift). Trivial.
+3. A reader's tree with no name falls back to "A tree I found"; use species + place instead ("Oak near Nara Park"). Trivial, app.
+4. Photo added to an EXISTING tree gives no feedback and does not show in My trees. App + web. SESSION.
+5. Reader-added trees do not join the map's numbered clusters when zoomed out, and their pin is not the size of the photo pins. App + web. SESSION.
+6. Mobile web filters look bad. SESSION, needs eyes at 375px.
+7. Place labels as clickable chips on a tree page, both surfaces: city AND country (Sydney / Australia), US states (Kentucky, Hawaii), island groups (Azores, Martinique) beside their country. Needs a region field in the feed (answer, not rule).
+8. "I have seen this one" behaves differently on web than in the app; find out what and match the app. SESSION.
+9. Poland country page has no cover photo; check og:image on country pages so Search shows a picture.
+10. Coverage steer, Hidde named these so rule 1(d) is lifted for them: New Zealand beyond Auckland; more islands and Australia (they catch on in Search); US and UK, where most clicks come from and coverage is thin.
+11. Okinawa: Search demand is probably "okinawa", not "naha". Check the queries, then rename the place to Okinawa with Naha redirected (hard rule 3), if demand says so. Same test for other small islands.
+12. Tree of the Year: import winners and nominees as LEADS (not trees) per the scouting table; each still meets the two-source bar. Start with the two European winners already in leads (Pecs almond 2019, Felsomocsolad lime 2012).
+13. Collection: the ten most remarkable trees of Japan (Contract D, fits). Then more collections led by the grouping-pages table, where trees-older-than-400-years is the one climbing.
+14. Oldest trees per country: country pages exist; check they lead with the oldest trees and that search finds them.
+15. Welcome mail on account creation: benchmark (AllTrails, komoot, Strava), draft per PRODUCT_COPY/PITCH_VOICE. Wiring may need his Supabase/mail settings; if so that one step goes to him.
+16. Photos without rights: add one line at upload ("only photographs you took yourself") on both surfaces; the takedown path already exists.
+17. Sign-in parity web vs app: compare the two flows against CONVENTIONS.md 2026-09-18 and align. SESSION.
+18. Homepage: put the real map in the hero instead of three drawings (his own note: the app IS the map, the site is a brochure about it). SESSION, visual.
+
+### Waiting on one answer from Hidde
+- Season and month collections ("best trees in May"): the 2026-08-26 decision made the season story Plus and retired /in-season. Public month pages would reverse that.
+- Satellite view (Polarsteps): a new map tile provider is a product dependency (hard rule 5) and good imagery usually costs money.
+- Province / island-group pages (Kyushu): a new page type needs a contract in SEO_GEO_BLUEPRINT.md (hard rule 7).
+- My trees vs Seen: one list with a filter, or two tabs.
+
+### Not now
+- Translating every species page: rung 0b translates pages whose English twin already earns impressions; species pages mostly do not.
+
 ## TRANSLATION: WHAT IS STILL OPEN (written 2026-09-17, after the seven-language rollout)
 
 67 overlays are live across es (18), de (12), it (10), ja (10), nl (7), pt (5),
