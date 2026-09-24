@@ -81,3 +81,9 @@ create policy "own sighting photos" on storage.objects
 -- exists` above does nothing on a live deployment. Added 2026-09-11 with the
 -- trunk-size field in the add-a-tree flow. Safe to run again.
 alter table public.sightings add column if not exists girth_hugs text;
+
+-- A second photograph, of the sign beside the tree when there is one
+-- (Hidde, 2026-09-24). Optional; same bucket and folder as `photo`.
+alter table public.sightings
+  add column if not exists sign_photo text
+  check (sign_photo is null or char_length(sign_photo) <= 300);
