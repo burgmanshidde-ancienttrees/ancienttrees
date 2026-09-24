@@ -21,31 +21,22 @@ themed and seasonal lists no.
 - Roadtrip trees outside cities: ruled 2026-08-31 and 2026-09-03 (rung 0c), running.
 - Tree of the Year: scouted, "not a register, worth it as a lead list" (OPEN_DATA_SURVEY.md).
 
-### DO: clear value
-1. Broken: Canada search shows a map of mostly the US. Singapore's map zoomed out by one far tree (fit to the cluster, check other cities). Weekly analysis failing since 09-21. SESSION.
-2. Photo added to an EXISTING tree: no feedback, not in My trees. CONVENTIONS.md "Landing after you have added something" already has the answer (land on the thing, one-line acknowledgement, state written on it); the existing-tree path never got it. Both surfaces. SESSION.
-3. "Oldest tree in <country/city>" answered on every country and city page, first sentence, and findable in search. The biggest query class we have.
-4. Optional second photo "of the sign, if there is one" when adding a tree. A sign often names species, age and the tree itself: it answers "which trunk" and verifies in one tap. Both surfaces.
-5. One line at upload: "Only photographs you took yourself." Legal floor; takedown path already exists.
-6. City list at the foot of a city page: replace with nearby cities plus a link to /cities. Grows with every city and dilutes internal links.
-7. Singapore photo pass (rule two allows depth there).
-8. Japan: "the ten most remarkable trees of Japan" as a generated-style superlative collection, not a themed one.
-9. Islands first, provinces later (Hidde, 2026-09-24: "mss eerst alle eilanden afmaken voor we naar provincies gaan"). Ten islands already live as places (Tenerife, Sardinia, Madeira, Crete, Menorca, Oahu, Kauai, Maui, Hawaii, Yakushima) and recur in the digests more than most cities; queries like "mallorca trees" and "trees on maui" arrive. So: (a) small islands where the city IS the island get renamed to the island, old slug redirected (hard rule 3): Naha -> Okinawa, Palma de Mallorca -> Mallorca, after reading the queries; (b) open islands that already have supply (Azores, Martinique, others via city_queue.py --next). No new page type. (c) Big islands get BOTH an island page and their city pages (Hidde, 2026-09-24: "het een hoeft het ander niet uit te sluiten"). An island page is a country page one level down: it groups trees that keep their one canonical tree URL, so nothing is duplicated. Contract: extend Contract G to regions (islands first; provinces like Kyushu the same pattern later), version bump, Hidde said yes to the idea on 2026-09-24. Start with Sicily (Palermo, Catania) once (a) and (b) are done.
-10. Tree of the Year winners and nominees as LEADS. A public vote is exactly the "people say it is worth the visit" evidence of 2026-09-08. Facts only, never their photos.
-11. Magic-link mail restyle: every sign-in sees it and an ugly one reads as spam. Benchmark first.
-12. Trivial: copycheck line in CollectSheet.swift; "A tree I found" fallback becomes species + place.
+### DONE 2026-09-24 (live and checked unless marked)
+Weekly analysis retries Tue/Wed; Canada map (phone slide-north awaiting deploy); Singapore framing; photo on an existing tree shows its state; "oldest tree in" fixed on Lisbon, NL, FR; own-photos line; nearby cities at the foot; Singapore photo pass (0 usable on Commons); Japan collection; Okinawa and Martinique renamed, Palma kept on evidence; Tree of the Year: 203 finalists as leads, 135 open; both account mails live via SMTP; expired sign-in link now says so; copycheck line; species + place fallback name; Sign in sticks in the phone menu; og:image on country pages; New Zealand scouted (Christchurch 787, Auckland 3,600 as supply).
+
+### DO: still open
+4. Optional second photo "of the sign" when adding a tree, both surfaces. Column is in supabase/PENDING.sql; build after Hidde pastes it.
+9b. Islands with supply and no page: Mallorca island page beside Palma (50 Balears rows), Texel (20 LRMB), Ibiza deepen, Gran Canaria, Malta. Then Sicily as the first big-island page (contract extension of G, approved in principle 2026-09-24).
+10b. Tree of the Year: 135 open leads to verify and write, famous-tree lane (rung 0c).
+13b. US: titles and ranking on pages that already take impressions (CTR 1.0% on 13,723).
 
 ### MAYBE: look first, then decide
 13. Coverage steer, READ 2026-09-24 (28 days of Search Console): the US is 30% of impressions (13,723) at CTR 1.0%, the UK 3,588 at 2.6%. We publish 56 US places / 254 trees and 25 UK places / 103 trees, so the US is a CTR and position problem, not a coverage one: the next US work is titles and ranking on the pages that already take impressions, not more cities. New Zealand is the real gap (2 places, 7 trees): its register was never scouted, scout dispatched 2026-09-24. UK outside London (Liverpool at 2, Stirling, Canterbury, Stratford with one lead each) waits on supply. Australia: Adelaide and Canberra hold one lead each.
 14. Mobile web filters "lelijk": look at 375px, fix against CONVENTIONS.md "Filters over a map".
-15. Sign in above the fold in the menu: CONVENTIONS.md 2026-09-18 measured the phone menu; check whether it drifted.
 16. Search always within reach (AllTrails): AllTrails puts it on Explore, not on every screen. Check where ours is missing before building.
 17. Sign-in parity web vs app: benchmarked 2026-09-18; list the actual differences, most may be the deliberate ones recorded there.
 18. Clickable labels (Sydney / Australia, US states, Azores): the app half (city and country chips on a tree page) is cheap and consistent. State and island-group PAGES are a new page type, and nobody searches "trees in Kentucky" at volume. Chips yes, pages no.
 19. "I have seen this one" behaves differently on web: find out what.
-20. Poland cover photo and og:image on country pages: cheap, small effect (sharing, not ranking).
-21. Welcome mail after sign-up: nice, low effect at today's volume (a handful of sign-ups). After item 11, reusing its template.
-22. Reader trees joining the map clusters and pin size: low effect, they are your own trees on your own map. Only if trivial.
 
 ### DON'T, with the reason
 - Season and month collections: themed lists do not pull (see the finding above), and the 2026-08-26 decision put the season story in Plus.
