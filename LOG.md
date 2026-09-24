@@ -10,6 +10,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-24 (session) - Okinawa and Martinique renamed, a Japan collection, and 203 Tree of the Year leads
+
+**Two places now carry their island's name** (islands first, PRODUCT_TODO 9a). Naha is now /okinawa: the page already held trees in Urasoe and Nakagusuku, opened with the Battle of Okinawa and was built from the prefecture's register, and in Search Console no query ever named Naha. Le Precheur is now /martinique, a one-tree place nobody searches by its commune. Both are kind island, and every old URL redirects (RENAMED_CITY_SLUGS). Nago keeps its own page, and the Okinawa FAQ says where the Hinpun Gajumaru is.
+
+**Palma de Mallorca was NOT renamed.** The queries name Palma ("oldest olive tree in palma" on 8 days, "placa de cort palma olive tree", "olivera de cort") against a single "mallorca trees", and all five trees stand in Palma. Mallorca is the big-island case (c): it gets an island page next to Palma, with 50 rows of the Balears register on the island to build from.
+
+**Islands with supply and no page yet**, best first: Mallorca (50 Balears register rows, several of them private), Texel (20 LRMB rows), Ibiza (a page with 1 tree, and 7 register rows to deepen it), Gran Canaria (2 Wikidata, queue #284), La Palma (1 Wikidata, #348), Malta (1 famous lead with a photograph), Shodoshima (1 Bunkacho monument). The Azores (#230) have nothing on hand: the DRRF register is still unscouted in data/register-scouting.json.
+
+**/collections/japans-most-remarkable-trees**: ten of our Japanese trees, ranked by age where a source gives one, by girth and height, and by fame. Jomon Sugi comes first and the Hiroshima willow nearest the hypocentre comes last. superlatives.py is clean.
+
+**European Tree of the Year, all 203 finalists from 2011 to 2026, are now leads** in data/leads/_tree-of-the-year.json. Each record holds only the facts on its own contest page: species, age, region, GPS, rank and result. No text and no photographs were taken. 66 were already mapped (matched by distance, or by our page citing the award, with the doubtful ones checked by hand), 2 are blocked because they were felled (Sycamore Gap, Cubbington Pear), and 135 are open, every one with a pin except the St-Hilaire ginkgo. The raw listing is in data/research/toty/europe.md.
+
 ## 2026-09-24 (session) - Five web fixes from the holiday list
 
 - **Canada's map shows Canada.** Searching Canada lands on /canada, whose map fitted to seven cities strung along the 49th parallel, so it was centred on the United States. Country intros can now carry `map_frame` (extra ground the map must show); Canada's reaches to 57N.
