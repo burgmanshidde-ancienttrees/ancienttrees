@@ -39,7 +39,13 @@ export interface RedirectStub {
 
 // A city published under the wrong name keeps its old URL resolving.
 // Mirrors RENAMED_CITY_SLUGS, build_site.py:5298.
-const RENAMED_CITY_SLUGS: [string, string][] = [["padova", "padua"]];
+const RENAMED_CITY_SLUGS: [string, string][] = [
+  ["padova", "padua"],
+  // 2026-09-24, islands first (PRODUCT_TODO 9a): the place was always the
+  // island. Naha's page held trees in Urasoe and Nakagusuku too, framed itself
+  // around Okinawa, and no search query ever named Naha.
+  ["naha", "okinawa"],
+];
 
 // A tree that gets renamed keeps its old URL resolving.
 // Mirrors RENAMED_TREE_SLUGS, build_site.py:5276.
