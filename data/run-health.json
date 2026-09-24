@@ -17950,6 +17950,77 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-24T22:48:51+00:00",
+   "date": "2026-09-24",
+   "run_id": "36069472196",
+   "minutes": 64.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 552,
+   "denials": 67,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat ; import ; ? ; fields ...), Bash(cd && curl ; ls), Bash(cd && for ; do ; curl ...), Bash(cd && ls | head && for ...), Bash(cd && npx ; tail), Bash(cd && npx), Bash(cd && python3 ; import ; html ...), Bash(cd && python3 | sed), Bash(cd && python3), Bash(cd ; ? ; for ; do ...), Bash(curl ; Intel ; wc ; head), Bash(curl ; Intel ; wc), Bash(curl ; ls), Bash(curl ; wc), Bash(echo && grep | head ; echo ...), Bash(for ; do ; ? && echo ...), Bash(for ; do ; echo ; curl ...), Bash(for ; do ; grep | wc ...), Bash(for ; do ; import ; d ...), Bash(for ; do ; python3 ; ? ...), Bash(for | grep | angel-oak | ? ...), Bash(git && python3 ; import ; old ...), Bash(git ; python3 ; ? && echo), Bash(grep | ? | ? | ? ...), Bash(grep | Italica | ? | sort ...), Bash(grep | xargs ; ?), Bash(ls ; echo ; find | head), Bash(ls | head && echo && cat ...), Bash(ls), Bash(pip | tail ; python3 ; ?), Bash(pip), Bash(python3 && git && rm), Bash(python3 && rm && python3 ; ? ...), Bash(python3 ; ? ; ? ; ? ...), Bash(python3 ; import ; ? ; if ...), Bash(python3 ; import ; cands ; city ...), Bash(python3 ; import ; d ; entries ...), Bash(python3 ; import ; forbidden ; ? ...), Bash(python3 ; import ; html ; text ...), Bash(python3 ; import ; params ; ? ...), Bash(python3 ; import ; params ; url ...), Bash(python3 ; import ; path ; d ...), Bash(python3 ; import ; path ; with ...), Bash(python3 ; import ; q ; ? ...), Bash(python3 ; import ; with ; new_trees ...), Bash(python3 ; stories ; ? ; The ...), Bash(python3 | sed ; ls), Bash(rm && echo), Bash(rm && git), Bash(rm && python3 | tail), Bash(rm ; echo), Bash(rm ; ls), Bash(rm ; python3 ; import ; ? ...), Bash(rm), Bash(set ; echo ; curl | python3 ...), Bash(subshell cat ; ? ; ? ; out ...), Bash(subshell cd && curl && ls && pdftotext ...), Bash(subshell cd && npx | tail), Bash(until | grep ; do ; done ...), Bash(which && pdftotext && grep | head)",
+   "ended": "success",
+   "tokens": 14607897,
+   "claims_held": [
+    "portland",
+    "brussels"
+   ],
+   "commits": 17,
+   "cities_touched": 12,
+   "cities": [
+    {
+     "city": "christchurch",
+     "trees": 6
+    },
+    {
+     "city": "deblin",
+     "trees": 1
+    },
+    {
+     "city": "kozy",
+     "trees": 1
+    },
+    {
+     "city": "krasnystaw",
+     "trees": 1
+    },
+    {
+     "city": "wojslawice",
+     "trees": 1
+    },
+    {
+     "city": "alicante",
+     "trees": 0
+    },
+    {
+     "city": "hawaii",
+     "trees": 0
+    },
+    {
+     "city": "london",
+     "trees": 0
+    },
+    {
+     "city": "manchester",
+     "trees": 0
+    },
+    {
+     "city": "oahu",
+     "trees": 0
+    },
+    {
+     "city": "tokyo",
+     "trees": 0
+    },
+    {
+     "city": "vienna",
+     "trees": 0
+    }
+   ],
+   "trees": 10,
+   "logged": false
   }
  ],
  "schedule_changes": [
