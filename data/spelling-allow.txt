@@ -1,0 +1,43 @@
+# Words a reader sees that /usr/share/dict/words does not hold.
+#
+# Read by scripts/spellcheck.py. One per line, case does not matter, anything
+# after a # is a note. Everything here was looked at once and is a real word or
+# a real name, which is the whole point: the list is what stops the check
+# crying wolf, and a wolf-crying check gets bypassed within a week.
+#
+# What does NOT belong here: a word you are not sure about. Look it up instead.
+
+# Our own nouns
+ancienttrees
+sp                  # "Quercus sp.", the genus when the species is not settled
+
+# British spellings, which this site uses throughout
+favourite
+favourites
+licence
+metre
+metres
+neighbours
+
+# Ordinary modern English the 1990s word list predates
+app
+email
+inbox
+info
+offline
+website
+verified
+
+# Compounds and hyphenations the list has no entry for
+sign-in
+street-tree
+hop-hornbeam
+vowel-initial
+year-old
+mainland
+
+# Names and fragments
+google
+com
+cm
+couldn't
