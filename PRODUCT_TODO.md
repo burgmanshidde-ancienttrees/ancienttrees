@@ -36,7 +36,7 @@ themed and seasonal lists no.
 12. Trivial: copycheck line in CollectSheet.swift; "A tree I found" fallback becomes species + place.
 
 ### MAYBE: look first, then decide
-13. Coverage steer to US, UK, NZ, islands, Australia. Right instinct, but read the queries first: US and UK clicks may be coming for famous trees we already have, and London is gated (Woodland Trust). Islands "catching on" is 11 to 55 impressions a page, too thin to steer on alone.
+13. Coverage steer, READ 2026-09-24 (28 days of Search Console): the US is 30% of impressions (13,723) at CTR 1.0%, the UK 3,588 at 2.6%. We publish 56 US places / 254 trees and 25 UK places / 103 trees, so the US is a CTR and position problem, not a coverage one: the next US work is titles and ranking on the pages that already take impressions, not more cities. New Zealand is the real gap (2 places, 7 trees): its register was never scouted, scout dispatched 2026-09-24. UK outside London (Liverpool at 2, Stirling, Canterbury, Stratford with one lead each) waits on supply. Australia: Adelaide and Canberra hold one lead each.
 14. Mobile web filters "lelijk": look at 375px, fix against CONVENTIONS.md "Filters over a map".
 15. Sign in above the fold in the menu: CONVENTIONS.md 2026-09-18 measured the phone menu; check whether it drifted.
 16. Search always within reach (AllTrails): AllTrails puts it on Explore, not on every screen. Check where ours is missing before building.
