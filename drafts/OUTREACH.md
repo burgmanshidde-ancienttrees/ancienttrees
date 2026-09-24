@@ -28,6 +28,12 @@ actually clicked) and links to the Links report for a manual read.
 | 2026-09-24 | ines.sequeira@wilder.pt | Ines Sequeira, Wilder | reply | sent | Confirms interview 15 Oct 10:00 Lisbon (11:00 NL); asks for the real Meet link. |
 | 2026-09-24 | woelfie@gmx.de | Wolfgang Schurmann, Baumkunde.de | reply | sent | Thanks for forum post and register-data permission (photos per photographer); asks his Munster favourite. |
 | 2026-09-24 | knnv@knnv.nl | Ingeborg Schreuder, KNNV | reply | sent | Thanks for forwarding to the Zeist tree group; asks for their favourite tree. |
+| 2026-09-24 | tviragh@xs4all.nl | Tessa Viragh, Bomenbond Rijnland | thanks | sent | Short thank-you, asks for a missing tree. |
+| 2026-09-24 | info@tradforeningen.org | Markus Pettersson, Svenska Tradforeningen | thanks | sent | Short thank-you, asks for a missing tree. |
+| 2026-09-24 | info@dopark.org | Sara Carlson, Dumbarton Oaks Park Conservancy | thanks | sent | Short thank-you, asks for a missing tree. |
+| 2026-09-24 | giulia.torta@unifi.it | Giulia Torta, Orto botanico Firenze | thanks | sent | Short thank-you, asks for a missing tree. |
+| 2026-09-24 | prazskestromy@seznam.cz | Ales Rudl, Prazske stromy | thanks | sent | Short thank-you, asks for a missing tree. |
+| 2026-09-24 | contact@getlisbon.com | Gracinda, getlisbon | thanks | sent | Short thank-you, asks for a missing tree. |
 | 2026-09-08 | batch-011-uk-ie, nine UK and Irish institutions | OPW, Dublin City Council, South Dublin CC, National Botanic Gardens Glasnevin, City of London Corporation, Oxford Botanic Garden, National Trust Prior Park, Hammersmith and Fulham, York Museums Trust. Each holds trees we publish, each asked for a photograph of the specific ones we lack, plus a correction if anything is wrong and which tree they would send a visitor to. Glasnevin is the biggest prize: six Dublin trees, none photographed. | Sent, the last of the scouted pool. |
 | 2026-09-08 | Trees and Shrubs Online (info@treesandshrubsonline.org) | Their Franklinia page gave us Boston's Franklin Tree, the largest known specimen anywhere. Asks whether they would point a visitor at a specimen in Boston, Cambridge, Dublin, Edinburgh, London, Lyon or Oxford, and for a mention. | Sent, batch-010. |
 | 2026-09-08 | Pestbuda (pestbuda@pestbuda.hu) | Nine of Budapest's twelve trees lean on their articles, verified in verified_sources before sending. Asks which Budapest tree they would point a visitor to, and for a mention. | Sent, batch-010. |
