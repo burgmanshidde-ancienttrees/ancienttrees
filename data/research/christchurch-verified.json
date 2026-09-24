@@ -1,0 +1,151 @@
+[
+  {
+    "id": "chc_001",
+    "name": "The Alpine Ash of the Botanic Gardens",
+    "species": "Alpine Ash (Eucalyptus delegatensis)",
+    "age_estimate": "roughly a century old, possibly more",
+    "age_min": 100,
+    "age_max": 140,
+    "girth_cm": 1166,
+    "location": {
+      "address": "Christchurch Botanic Gardens, Hagley Park, Christchurch",
+      "latitude": -43.531214,
+      "longitude": 172.620332,
+      "neighbourhood": "Hagley Park / Botanic Gardens"
+    },
+    "verified_sources": [
+      "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG10, girth 1166 cm / dbh 3.71 m, height 34.5 m)",
+      "https://resources.austplants.com.au/stories/the-twisted-gum-an-alpine-ash-in-new-zealand/ (Australian Plants Society, independent article)"
+    ],
+    "access": "Free. Christchurch Botanic Gardens, open daily, no entry fee.",
+    "transport": "Central Christchurch, short walk from Cathedral Square / Christchurch city centre (Rolleston Ave entrance); on the central city bus network.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "Christchurch's most photographed tree has a trunk that looks wrung out and left to dry. Locals call this Alpine Ash the twisted gum, and the name is exact: the trunk corkscrews and leans, then carries a crown to 34.5 metres.\n\nThe measurements are enormous. The city's register gives the trunk as 11.66 metres round. The Australian Plants Society, citing material from the Friends of the Christchurch Botanic Gardens, reports 12.30 metres measured in 2016 and says the New Zealand Tree Register lists it as the largest of its species; some go further and call it a world record. Different years, different tapes, the same giant.\n\nWhen it went in is disputed. One account says around 1916, another around 1885. What is certain is that it already looked well established in a photograph printed in 1927 in a book by J.H. Simmonds, so it is at least a century old and possibly a good deal more.\n\nIts fame nearly cost it. By 2020 the crown had thinned, with dieback and sparse leaves, and the soil over its roots had been packed hard by admirers. The gardens answered with a layer of eucalyptus mulch over the root plate, bollards and chains to keep feet off it, and a raised viewing platform so people can still get close. The platform is the point: stand on it, not on the roots, and the tree gets to keep going.",
+    "how_to_recognise": "You can recognise it by the twisted, leaning trunk, more than 11 metres round, ringed by bollards and chains with a raised viewing platform beside it. It stands in the Christchurch Botanic Gardens."
+  },
+  {
+    "id": "chc_002",
+    "name": "The Albert Edward Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "planted 1863",
+    "age_min": 163,
+    "age_max": 163,
+    "age_basis": "source",
+    "girth_cm": null,
+    "location": {
+      "address": "Christchurch Botanic Gardens, near the Archery Lawn and the Avon River, Rolleston Avenue, Christchurch",
+      "latitude": -43.531673,
+      "longitude": 172.622315,
+      "neighbourhood": "Hagley Park / Botanic Gardens"
+    },
+    "verified_sources": [
+      "https://www.peelingbackhistory.co.nz/first-tree-planted-in-christchurchs-botanical-gardens/",
+      "https://my.christchurchcitylibraries.com/hagley-park-and-the-christchurch-botanic-gardens/"
+    ],
+    "access": "Free. Christchurch Botanic Gardens, open daily, no entry fee.",
+    "transport": "Central Christchurch, short walk from Cathedral Square via Rolleston Avenue; on the central city bus network.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "The founding tree of the Christchurch Botanic Gardens: planted 9 July 1863 in what was then the Government Domain, to mark the marriage of Albert Edward, Prince of Wales (later King Edward VII), to Princess Alexandra of Denmark. Both sources agree on the date, occasion and that it is still the oldest tree in the gardens today; they differ on who physically planted it (Christchurch City Libraries says government gardener Enoch Barker; peelingbackhistory.co.nz says nurseryman and future mayor William \"Cabbage\" Wilson, who is agreed by both to have GIFTED the tree to the city). A second oak was planted the same day at Ferry Road/East Belt by four notable colonial wives; that tree no longer survives, so this is the only survivor of the pair. Christchurch City Libraries places it \"south west of the Archery Lawn, close to the Avon\" within the gardens; no source gave exact coordinates or a current girth measurement, and I could not confirm with certainty which of the register two large Quercus robur specimens in the Botanic Gardens (christchurch-district-plan-trees.json: ccc_3500, 474 cm girth, -43.531673/172.622315; ccc_3502, 424 cm girth, -43.53091/172.622021) is this specific historic tree, so girth is left blank rather than guessed and the pin uses the larger, closer-to-Archery-Lawn candidate coordinate as an approximate marker only, not an identity claim. A plaque exists at the tree per Christchurch City Libraries local history photo collection (canterburystories.nz, ccl-cs-3239, page blocked 403 to fetch but its existence and caption are referenced independently by the search index). Worth the visit as the single oldest, most historically anchored tree in the gardens (163 years, tied to a specific royal-wedding planting ceremony) even without a register girth figure; a reader visiting could confirm the exact trunk from the plaque and report back."
+  },
+  {
+    "id": "chc_003",
+    "name": "The Avon River Poplars",
+    "species": "Lombardy Poplar (Populus nigra 'Italica')",
+    "age_estimate": "about a century old, planted in the late 1920s",
+    "age_min": 95,
+    "age_max": 105,
+    "age_basis": "source",
+    "girth_cm": 600,
+    "location": {
+      "address": "Otakaro Avon River bank, between Madras and Manchester Streets, central Christchurch",
+      "latitude": -43.528117,
+      "longitude": 172.63982,
+      "neighbourhood": "Avon River / Margaret Mahy Playground, Central City"
+    },
+    "verified_sources": [
+      "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG6, girth 600 cm, height 38 m, age class Veteran)",
+      "https://www.odt.co.nz/star-news/star-christchurch/mature-christchurch-poplar-trees-get-axe"
+    ],
+    "access": "Free. Public riverbank reserve, open at all times.",
+    "transport": "Central Christchurch, short walk from Cathedral Square along the Avon River, next to Margaret Mahy Playground.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A row of large Lombardy Poplars planted along the Otakaro Avon River in the late 1920s, at the time the nearby Rotunda and Clock Tower were built, part of the beautification programme started by the Christchurch Beautifying Society (founded 1897 by Samuel Delabere Barker) to give the central city an English riverside look. The stand runs between Madras and Manchester Streets next to Margaret Mahy Playground and carries heritage protection. A 2020s Star/ODT news report confirms two of the stand were being felled after testing found base decay, with young poplars planted to replace them, which is itself evidence the council treats individual trees in this stand as ageing out on a case by case basis rather than a fixed date for the whole row. The register lists 23 Lombardy Poplar candidates at this site (christchurch-district-plan-trees.json, site_name Avon Riverbank Central City); this entry uses the single largest, ccc_4456, girth 600 cm, height 38 m, age class Veteran. Cannot independently confirm this exact specimen is not one already earmarked for removal versus a healthy one; location_precision stays approximate for that reason as well as the register's own Approximate XY certainty. A search-engine summary (not independently confirmed by a working fetch) attributed similar facts to a Press/Stuff article (thepress.co.nz) which could not be loaded directly and is NOT used as a source per the search-summary-is-a-lead rule; only the odt.co.nz article, which loaded in full, is cited."
+  },
+  {
+    "id": "chc_004",
+    "name": "The Cranmer Square London Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented; the square has been landscaped with perimeter trees since the 19th century",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 506,
+    "location": {
+      "address": "Cranmer Square, central Christchurch",
+      "latitude": -43.527567,
+      "longitude": 172.63012,
+      "neighbourhood": "Cranmer Square, Central City"
+    },
+    "verified_sources": [
+      "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG16, girth 506 cm, height 19 m, age class Mature)",
+      "https://en.wikipedia.org/wiki/Cranmer_Square"
+    ],
+    "access": "Free. Public square, open at all times.",
+    "transport": "Central Christchurch, about 800 m northwest of Cathedral Square, on foot or the central city bus network.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Cranmer Square was surveyed as one of Christchurch central citys four original squares in 1849-1850 and is described by Wikipedia as ringed by mature exotic deciduous trees; it is a heritage survivor, since a number of the historic buildings around it (including Cranmer Courts, the former Normal School) were destroyed or badly damaged in the 2011 Canterbury earthquakes while the square itself and its old trees remained. No source gives an individual planting date for this specific plane; the register (PTG16 schedule) lists 24 large plane/ash trees at this site and this entry uses the largest, 506 cm girth. Register age class Mature (not Veteran), so treat the age as multi-decade rather than assume centuries; left undocumented rather than guessed. location_certainty in register is Approximate XY."
+  },
+  {
+    "id": "chc_005",
+    "name": "The Latimer Square London Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented; a mature specimen among the trees ringing one of Christchurchs original 1850 squares",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 503,
+    "location": {
+      "address": "Latimer Square, central Christchurch",
+      "latitude": -43.530827,
+      "longitude": 172.643011,
+      "neighbourhood": "Latimer Square, Central City"
+    },
+    "verified_sources": [
+      "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG28, girth 503 cm, height 19 m, age class Veteran)",
+      "https://en.wikipedia.org/wiki/Latimer_Square"
+    ],
+    "access": "Free. Public square, open at all times.",
+    "transport": "Central Christchurch, about 500 m east of Cathedral Square, on foot or the central city bus network.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Latimer Square is one of Christchurchs four original squares, surveyed 1849-1850, ringed by mature deciduous trees. Its most significant modern moment: Wikipedia states plainly that Latimer Square was used to triage the injured after the 22 February 2011 Christchurch earthquake, New Zealands deadliest natural disaster in decades (185 dead); other sources found by search (not independently fetched, so not cited as sources here) describe it going on to house an international Urban Search and Rescue (USAR) camp in the weeks after. So this tree, register age class Veteran, stood over one of the citys most consequential recent events. No source gives an individual planting date; the register (PTG28 schedule) lists 28 plane/elm candidates at this site and this entry uses the largest, ccc_4101, girth 503 cm, height 19 m. location_certainty in register is Approximate XY."
+  },
+  {
+    "id": "chc_006",
+    "name": "The Victoria Square London Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented; the square was laid out as a park in 1896-97 for Queen Victorias Diamond Jubilee",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 534,
+    "location": {
+      "address": "Victoria Square, central Christchurch",
+      "latitude": -43.527753,
+      "longitude": 172.634963,
+      "neighbourhood": "Victoria Square, Central City"
+    },
+    "verified_sources": [
+      "data/registers/christchurch-district-plan-trees.json (CCC District Plan schedule of significant trees, CC BY 4.0, schedule ref PTG60, girth 534 cm, height 20 m, age class Veteran)",
+      "https://en.wikipedia.org/wiki/Victoria_Square,_Christchurch"
+    ],
+    "access": "Free. Public square, open at all times.",
+    "transport": "Central Christchurch, adjacent to the Town Hall and the Bridge of Remembrance, short walk from Cathedral Square.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Victoria Square was the citys original market place before being landscaped into an urban park in 1896-97 to mark Queen Victorias Diamond Jubilee. It was inside the Central City Red Zone after the February 2011 earthquake, closed to the public, reopened in stages from November 2012, with full restoration completed 2018, per Wikipedia. This is a single register-listed London Plane, girth 534 cm, the largest recorded at this site (only one plane candidate at Victoria Square in the register, schedule ref PTG60); age class Veteran. Wikipedia separately notes a row of weeping willows along the nearby Avon grown from cuttings brought to NZ by early French settler Francois Le Lievre, and lime trees planted by Dr James Irving in the 1880s nearby (\"The Limes\"), neither of which is this plane, recorded here only as context, not attached to this trees history. No individual planting date found for the plane itself. location_certainty in register is Approximate XY."
+  }
+]

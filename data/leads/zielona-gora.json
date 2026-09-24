@@ -1,0 +1,36 @@
+{
+  "city": "Zielona Gora",
+  "country": "Poland",
+  "city_slug": "zielona-gora",
+  "note": "Zielona Gora (pop. ~140,000) has no published city page yet. Found and fully verified 2026-09-24 (famous-poland batch5 verify pass) while checking a single candidate from data/leads/_famous-poland.json ('Dab Lubuszan'). HELD rather than shipped solo under the single-famous-tree exception: the tree clearly clears that bar on its own (a sourced national superlative, a maintained city-square landmark), but this pass's own sources turned up strong hints of at least three more individually distinguished monument trees in the same city -- a monumental Ginkgo biloba, bald cypresses (one growing into a building wall on ul. Moniuszki), and what may be the single biggest pedunculate oak in the city at over 6m girth in the former village of Jeleniow (now part of the city) -- none of which this pass had time to verify. A real 4+ tree Zielona Gora cluster looks genuinely reachable with a dedicated register pass, which is the better outcome than a solo exception page for one tree when the city likely has more. Kept here as the seed.",
+  "leads": [
+    {
+      "id": "zgr_001",
+      "name": "Lubuszan (the Hungarian Oak of Zielona Gora)",
+      "species": "Hungarian Oak (Quercus frainetto)",
+      "species_basis": "confirmed by pomniki-przyrody.pl, a dedicated writeup with a photo of the tree and its own on-trunk species plaque",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "girth_cm": 537,
+      "height_m": 24,
+      "lat": 51.94294,
+      "lng": 15.50953,
+      "status": "held",
+      "location": {
+        "address": "Plac Bohaterow, next to the Zielona Gora Fountain (Fontanna Zielonogorska), central Zielona Gora, Lubusz Voivodeship, Poland",
+        "neighbourhood": "City centre"
+      },
+      "location_precision": "confirmed",
+      "verified_sources": [
+        "https://www.pomniki-przyrody.pl/?p=16918",
+        "https://ruchmiejski.zgora.pl/wielkie-drzewa-wielcy-ludzie-zielony-potencjal-miasta/"
+      ],
+      "access": "Free. Stands in the open in Plac Bohaterow, a central public square next to the city fountain; ringed by a low metal fence with benches set beneath the crown for visitors. No permission needed.",
+      "transport": "Central Zielona Gora, Plac Bohaterow, next to the Zielona Gora Fountain, a short walk from the city centre.",
+      "curation_status": "flagged",
+      "verify_notes": "Two independent fetched sources agree this is probably the thickest Hungarian oak (Quercus frainetto) in Poland: pomniki-przyrody.pl (dedicated writeup, GPS 51 56'34.6\"N 15 30'34.3\"E, which converts to 51.94294,15.50953 and matches the candidate's given coordinate almost exactly) gives a June 2022 girth measurement of 537cm (up from 488cm measured in 2013, a plausible ~5cm/year growth rate, not a genuine conflict); ruchmiejski.zgora.pl, an independent opinion piece about the city's 'green capital', separately calls it 'one of the most impressive Hungarian oaks in the country' with a girth of 513cm (an earlier, uncited measurement date, consistent with the growth trend). Height 24m, age estimated at roughly 200 years (vague source figure, kept as given). Protected as a pomnik przyrody since 1977. In 'satisfactory health' per the 2022 writeup, no visible decay, some cable bracing in the crown for branch support. A WebSearch AI summary separately surfaced a gazetalubuska.pl headline calling it 'Krol zielonogorskich drzew' (King of Zielona Gora's trees) and reporting a pest attack; that article 403'd to direct fetch (Cloudflare challenge) so its specific claims (exact pest, current severity) are NOT used per the search-summary-is-a-lead-not-a-source rule, but the headline itself is corroborating evidence of the tree's local fame. The tree likely originates from Prussian-era plantings on the former Kaiser Wilhelm Platz (now Plac Bohaterow), per search summary only, not confirmed on a fetched page. Alive: actively maintained with benches, fencing and interpretive plaques per the 2022 fetched source, no death report found. HELD rather than published solo: see the city-level note above -- this pass found strong hints (not yet verified) of at least three more distinguished Zielona Gora monument trees (a monumental Ginkgo biloba, bald cypresses including one growing into a building wall on ul. Moniuszki, and a pedunculate oak of over 6m girth in the former village of Jeleniow, now part of the city) worth a dedicated register pass before deciding whether this ships solo or as part of a real cluster."
+    }
+  ],
+  "blocked": []
+}

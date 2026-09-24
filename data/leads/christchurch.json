@@ -1,0 +1,65 @@
+{
+  "leads": [
+    {
+      "id": "ccc_4524",
+      "name": null,
+      "species": "English Oak (Quercus robur)",
+      "site_name": "Barbadoes Cemetery",
+      "girth_cm": 283,
+      "latitude": -43.523237,
+      "longitude": 172.645431,
+      "reason": "Christchurchs oldest cemetery (opened 1851, six former mayors buried there, damaged by liquefaction in the 2011 earthquake per Wikipedia), genuinely significant ground, but no source found ties an individual planting date, name or story to this specific oak versus the cemeterys other exotic plantings (Wikipedia and the CCL history PDF describe general 19th/20th century planting overlays, not named trees). Register girth 283 cm, age class Veteran. Worth a second look with more time (the CCL history PDF, ~10 MB, could not be text-extracted in this pass, no pdftotext/pypdf available in this environment) or a Papers Past search for the cemeterys own planting records."
+    },
+    {
+      "id": "ccc_4079",
+      "name": null,
+      "species": "Common Lime (Tilia x europaea)",
+      "site_name": "Godley Statue Reserve",
+      "girth_cm": 229,
+      "latitude": -43.530867,
+      "longitude": 172.636131,
+      "reason": "Only 229 cm girth, Mature (not Veteran). Confirmed Four Ships Court lime trees exist in Christchurch (planted to commemorate the first four Canterbury settlement ships) but could not confirm this specific reserve/tree is part of that planting; Godley Statue Reserve itself is named for the John Robert Godley statue (unveiled 1867, moved twice, damaged in the 2011 earthquake) which stands nearby in Cathedral Square rather than at this reserve, so the connection is unclear. Lower priority per the brief; not pursued further this pass."
+    },
+    {
+      "id": "ccc_3499",
+      "name": null,
+      "species": "Kauri (Agathis australis)",
+      "site_name": "Botanic Gardens",
+      "girth_cm": 217,
+      "latitude": -43.531177,
+      "longitude": 172.624868,
+      "reason": "A New Zealand native conifer growing well south of its natural North Island range, potentially a good story (kauri can live 600+ years, but this specimen is planted and juvenile by kauri standards). No source found documenting this individual specimens planting date or history; general searches returned only generic kauri-species information, nothing Christchurch-specific. Worth chasing with a Friends of the Botanic Gardens newsletter search (friendschchbotanicgardens.org.nz has a newsletter archive, not checked this pass) or the gardens own conifer collection history."
+    },
+    {
+      "id": "ccc_3502",
+      "name": null,
+      "species": "English Oak (Quercus robur)",
+      "site_name": "Botanic Gardens",
+      "girth_cm": 424,
+      "latitude": -43.53091,
+      "longitude": 172.622021,
+      "reason": "Second large oak in the Botanic Gardens register cluster; may or may not be the historic Albert Edward Oak (chc_002 uses the neighbouring, larger ccc_3500 as an approximate, unconfirmed pin for that tree instead). Kept as a lead rather than a second oak entry to avoid publishing two register rows that could be the same physical tree seen twice."
+    },
+    {
+      "id": "multiple",
+      "name": null,
+      "species": "Populus nigra Italica (Lombardy Poplar)",
+      "site_name": "Poplars Reserve",
+      "girth_cm": 496,
+      "latitude": -43.527367,
+      "longitude": 172.642091,
+      "reason": "Roughly 200 m from the Avon Riverbank Central City poplar cluster already published as chc_003 (The Avon River Poplars), part of the same 1920s Poplar Crescent planting scheme along the same stretch of the Otakaro Avon between Manchester and Madras Streets. Treated as the same collectible walk/experience as chc_003 rather than a second entry, per the register-twins folding rule; a visitor would see this as one thing, not two."
+    },
+    {
+      "id": "various",
+      "name": null,
+      "species": "various",
+      "site_name": "St James Park, Mona Vale, Abberley Park, Woodham Park, Sunnyside Heritage Garden, Dudley Street, Risingholme Park, Linden Grove, Rutherford Cemetery, and other outer sites",
+      "girth_cm": null,
+      "latitude": null,
+      "longitude": null,
+      "reason": "These sites carry the bulk of the remaining 582 unresearched register rows (St James Park 67, Mona Vale 35, Abberley Park 33, Woodham Park 32, Sunnyside Heritage Garden 25, Dudley Street 24, Risingholme Park 17, etc). None were researched this pass; the brief specified the CENTRAL CITY cluster (Botanic Gardens / Avon riverbank / the historic squares / Barbadoes Cemetery / Godley Statue Reserve) as the priority for Christchurchs opening walk. These are candidates for a second Christchurch cluster (several, e.g. Mona Vale, are themselves historic estate gardens likely to be walkable clusters in their own right) in a future pass."
+    }
+  ],
+  "blocked": []
+}

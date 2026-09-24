@@ -179,7 +179,8 @@
         "https://commons.wikimedia.org/wiki/File:Bdg_Torunskastreet1_10-2014.jpg",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Bartek_Bydgoszcz.jpg"
       ],
-      "status": "lead"
+      "status": "held",
+      "note": "Checked 2026-09-24 (famous-poland batch5 verify pass): confirmed as a DIFFERENT tree from the world-famous Bartek of Zagnansk (Swietokrzyskie) -- this is a separate, smaller, local oak on ul. Torunska 302, Zimne Wody, Bydgoszcz. Fully verified (species, girth 662cm, age >500yrs estimated, legend of Napoleon resting beneath it in 1812) with two independent fetched sources plus a corroborating 2013 blog. Held rather than shipped solo: full record and reasoning in data/leads/bydgoszcz.json as bdg_002, seeding a future Bydgoszcz cluster page alongside bdg_001 (the Jeremi Oak)."
     },
     {
       "name": "Dąb 500-lecia, Zielona Góra - Nowe Miasto",
@@ -334,7 +335,10 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pawe%C5%82_(dub_Pavel),_Czarnocin,_gmina_Stepnica,_okres_Goleni%C3%B3w,_Z%C3%A1padopomo%C5%99ansk%C3%A9_vojvodstv%C3%AD_02.jpg",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Pawe%C5%82_w_Czarnocinie_kz01.jpg"
       ],
-      "status": "lead"
+      "status": "held",
+      "species": "Sessile Oak (Quercus petraea)",
+      "species_basis": "confirmed by pomorzezachodnie.travel and the CRFOP register entry",
+      "note": "Checked 2026-09-24 (famous-poland batch5). Confirmed real: designated a natural monument by Stepnica municipal council resolution XXXV/311/06 (28 April 2006), CRFOP register id PL.ZIPOP.1393.PP.2005022.319. 21m tall, 425cm girth. Named 'Pawel' after Pawel Jedrzejczyk, founder of a local activity/holiday school (Frajda), not a historical or legendary figure. No tree-of-the-year contest entry found, no legend, and its size (425cm girth) is unremarkable for a Polish oak, well below the national record-holders in this same batch. Does not clear the single-famous-tree destination test: a designated, named, locally-loved oak, but nothing that would make a stranger travel for it specifically. Held as a lead rather than blocked, in case a future pass finds contest or legend evidence this one missed."
     },
     {
       "name": "Dąb Pietrek, Lubiechów Dolny",
@@ -454,7 +458,7 @@
       "status": "lead",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Checked 2026-09-17, does not yet clear the two-independent-source bar. The Commons photo (coordinate matches to within ~0.2km) is titled 'pomnik przyrody' and comes from Wikimedia Polska's 2014 'Wikiexpedition', a project that specifically photographed designated nature monuments in the Zamość region, so it is credible but is only ONE thin source (a filename, no written description) rather than two. The Zwierzyniec Forest District's own list of its 7 monuments (fetched directly) does NOT include a tree by this name, so it sits under a different authority; a search result independently states the town of Zwierzyniec plus the village of Obrocz have 10 municipally-designated pomniki przyrody, which this tree is plausibly one of, but no source names it individually. UNCONFIRMED LEAD for a future pass: Zdzisław Kotuła was the first director of Roztoczanski Park Narodowy (1974-2006, 32 years, a record among Polish national park directors per roztocze.net), which raises the possibility the oak is named after him, matching the pattern of Bydgoszcz's 'Jeremi' oak named after a local notable; this is a hypothesis only, found nowhere stated about this specific tree, and must not be written as fact without a source that actually connects the two. roztocze.net itself 403'd on direct fetch (worth flagging for the blocklist), so its articles could only be read via search summaries, which are leads not sources per BRIEF_RESEARCH.md. Next step: try the Zwierzyniec town council's own resolutions/BIP page or the gmina's environmental protection programme (Program Ochrony Srodowiska), which typically tables every municipal pomnik przyrody by name, species and girth."
+      "note": "Checked 2026-09-17, does not yet clear the two-independent-source bar. The Commons photo (coordinate matches to within ~0.2km) is titled 'pomnik przyrody' and comes from Wikimedia Polska's 2014 'Wikiexpedition', a project that specifically photographed designated nature monuments in the Zamość region, so it is credible but is only ONE thin source (a filename, no written description) rather than two. The Zwierzyniec Forest District's own list of its 7 monuments (fetched directly) does NOT include a tree by this name, so it sits under a different authority; a search result independently states the town of Zwierzyniec plus the village of Obrocz have 10 municipally-designated pomniki przyrody, which this tree is plausibly one of, but no source names it individually. UNCONFIRMED LEAD for a future pass: Zdzisław Kotuła was the first director of Roztoczanski Park Narodowy (1974-2006, 32 years, a record among Polish national park directors per roztocze.net), which raises the possibility the oak is named after him, matching the pattern of Bydgoszcz's 'Jeremi' oak named after a local notable; this is a hypothesis only, found nowhere stated about this specific tree, and must not be written as fact without a source that actually connects the two. roztocze.net itself 403'd on direct fetch (worth flagging for the blocklist), so its articles could only be read via search summaries, which are leads not sources per BRIEF_RESEARCH.md. Next step: try the Zwierzyniec town council's own resolutions/BIP page or the gmina's environmental protection programme (Program Ochrony Srodowiska), which typically tables every municipal pomnik przyrody by name, species and girth. CHECKED AGAIN 2026-09-24 (famous-poland batch5): the Zwierzyniec Forest District's own 7-monument list still does not include it (reconfirmed). Found by search that a DIFFERENT, unrelated 'Dab Zdzislaw' exists in Gmina Pulawy (22m, 548cm girth, named for Prof. Zdzislaw Zabielski) -- a naming collision, not this tree; do not conflate them. Tried the gmina Zwierzyniec's own 2023/2024 'Raport o stanie gminy' PDFs as a possible register source: zwierzyniec.e-biuletyn.pl did not respond (curl -m 20, HTTP 000) on both attempts, worth flagging for the blocklist. Still an unconfirmed lead; two independent sources not yet found."
     },
     {
       "name": "Święty Franciszek (oak in Hel)",
@@ -465,10 +469,10 @@
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_%C5%9Bw_franciszek_hel.JPG",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_%C5%9Bw_franciszek_p%C5%82ot.JPG"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Checked 2026-09-18: also called Dąb Franciszek, a pedunculate oak growing before the main entrance to the Franciscan monastery (Klasztor Franciszkanów) at ul. Wiejska 46, Hel, since roughly the 17th century (Polish Wikipedia). Designated a natural monument in 1973, nominated (not confirmed winner) for Tree of the Year 2014. A search summary gives height 28m, girth 380cm, age ~250 years, but that figure is UNVERIFIED (found only via search snippet, not a fetched primary source, so treat as a lead not a source per BRIEF_RESEARCH.md). ACCESS UNRESOLVED: the monastery is a functioning Franciscan house and parish office, not confirmed open ground; the oak stands \"before the main entrance\" which may mean street-visible or may mean inside the gate. Needs a source that says which before this ships, per hard rule 10's caution on monasteries that are not clearly public. Would pair with hlp_001 (Helena the Poplar, 0.5km away) into a small Hel walk if it clears."
+      "note": "Checked 2026-09-18: also called Dąb Franciszek, a pedunculate oak growing before the main entrance to the Franciscan monastery (Klasztor Franciszkanów) at ul. Wiejska 46, Hel, since roughly the 17th century (Polish Wikipedia). Designated a natural monument in 1973, nominated (not confirmed winner) for Tree of the Year 2014. A search summary gives height 28m, girth 380cm, age ~250 years, but that figure is UNVERIFIED (found only via search snippet, not a fetched primary source, so treat as a lead not a source per BRIEF_RESEARCH.md). ACCESS UNRESOLVED: the monastery is a functioning Franciscan house and parish office, not confirmed open ground; the oak stands \"before the main entrance\" which may mean street-visible or may mean inside the gate. Needs a source that says which before this ships, per hard rule 10's caution on monasteries that are not clearly public. Would pair with hlp_001 (Helena the Poplar, 0.5km away) into a small Hel walk if it clears. ACCESS CHECKED 2026-09-24 (famous-poland batch5): nadmorski24.pl (2018, a local news report on the tree's own name-day party) states plainly 'Dab rosnie na posesji Klasztoru Franciszkanow' (the oak grows ON THE PROPERTY of the Franciscan Monastery), i.e. within the monastery grounds rather than on public street frontage. That is the opposite of the hoped-for 'before the main entrance = street visible' reading, and matches this project's own caution on monastery/convent grounds (closed unless a source says otherwise). The 2018 event was a specific organised open day with schoolchildren, not evidence of everyday public access. HELD on access grounds rather than shipped: a functioning monastery's premises is not the same as the churchyards and cathedral closes hard rule 10 treats as open by default. Would need a source stating the oak/monastery grounds are open to casual visitors before this can ship; the pairing with hlp_001 (Helena the Poplar, 0.5km away in Hel) is therefore also on hold."
     },
     {
       "name": "Cis Bolko",
@@ -506,9 +510,10 @@
         "https://commons.wikimedia.org/wiki/File:Grupa_Dw%C3%B3ch_Drzew_Cis_Pospolity_NR_346,_Racib%C3%B3rz,_okres_Ratibo%C5%99,_Slezsk%C3%A9_vojvodstv%C3%AD,_Polsko_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Grupa_Dw%C3%B3ch_Drzew_Cis_Pospolity_NR_346,_Racib%C3%B3rz,_okres_Ratibo%C5%99,_Slezsk%C3%A9_vojvodstv%C3%AD,_Polsko_02.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Yew (Taxus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Checked 2026-09-24 (famous-poland batch5). Confirmed by Raciborz's own official register (raciborz.pl/.../pomniki_przyrody_raciborza, citing Uchwala Nr XXVI/379/2008): 'CIS POSPOLITY - Taxus baccata - nr 346', address 'Teren klasztoru Franciszkanow przy ul. Sudeckiej, na terenie dzialki nr 1165' (grounds of the Franciscan monastery), coordinate 50 05'06.18\"N 18 13'59.12\"E which converts to 50.08505, 18.23309 -- within 15m of the candidate's given coordinate, confirming this is the tree. That register entry is ONE source (the city's own designation record); a second independent source describing these specific yews individually (age, girth, any legend) was not found this pass. ACCESS UNRESOLVED: the address is monastery grounds (Klasztor Franciszkanow pw. sw. Paschalisa, an active parish church, not merely a private cloister), which is ambiguous under hard rule 10's caution on monastery/convent gardens -- a working parish forecourt is often open, an enclosed cloister garden is not, and no source found this pass says which this is. HELD on both fame and access grounds: no legend, contest or individually-distinguishing evidence found beyond bare designation, and access to the specific spot is unconfirmed. A future pass could try OSM access tags on plot 1165, or phone/write to the parish (032 415 24 12) per hard rule 10's own suggested technique."
     },
     {
       "name": "Ginkgo biloba in Opole Voivodeship",
@@ -519,9 +524,10 @@
         "https://commons.wikimedia.org/wiki/File:Bierdzany_-_ko%C5%9Bci%C3%B3%C5%82_pod_wezwaniem_%C5%9Bw._Jadwigi_-_jerzy_m23.jpg",
         "https://commons.wikimedia.org/wiki/File:Bierdzany_-_zabytkowy_ko%C5%9Bci%C3%B3%C5%82.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Ginkgo (Ginkgo sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Checked 2026-09-24 (famous-poland batch5). Gmina Turawa's own official register of its 12 designated pomniki przyrody (turawa.pl/6393/pomniki-przyrody.html, fetched directly) lists Bierdzany's monument trees explicitly: 4 pedunculate oaks (nr rej. 238), a small-leaved lime 277cm/19m (nr rej. 240), a pedunculate oak 264cm/24m plus 4 small-leaved limes 374cm (nr rej. 323). No Ginkgo biloba appears anywhere in that list, for Bierdzany or any other village in the gmina. monumentaltrees.com's Poland ginkgo page 403'd automated fetch as expected (known behaviour, verification-only source anyway) and no other source naming a Bierdzany ginkgo was found. The candidate's own photos are of the wooden Church of St Hedwig (kosciol sw. Jadwigi) itself, not clearly of a tree at all. HELD as an unresolved lead: existence as a designated or individually notable tree is not established, so it does not clear even the basic verification bar, let alone the fame bar. A future pass could try photographing/observing the church grounds directly or asking the parish, since ginkgos are sometimes planted at Polish churches without formal pomnik przyrody status."
     },
     {
       "name": "Cis pospolity, Park w Strzelcach Opolskich",
@@ -557,7 +563,8 @@
         "https://commons.wikimedia.org/wiki/File:Zielona_Gora_Dab_Lubuszan_03.JPG",
         "https://commons.wikimedia.org/wiki/File:Zielona_Gora_Dab_Lubuszan_04.JPG"
       ],
-      "status": "lead"
+      "status": "held",
+      "note": "Verified in full 2026-09-24 (famous-poland batch5). Clears the fame bar clearly (probably the thickest Hungarian oak in Poland, a maintained city-square landmark since 1977) but held rather than shipped solo: full record and reasoning in data/leads/zielona-gora.json as zgr_001, seeding a future Zielona Gora cluster page (this pass's own sources hinted at 3+ more distinguished monument trees in the same city, unverified)."
     },
     {
       "name": "Dąb Bartek (Bydgoszcz)",
@@ -568,7 +575,8 @@
         "https://commons.wikimedia.org/wiki/File:Bdg_Torunskastreet1_10-2014.jpg",
         "https://commons.wikimedia.org/wiki/File:D%C4%85b_Bartek_Bydgoszcz.jpg"
       ],
-      "status": "lead"
+      "status": "held",
+      "note": "Checked 2026-09-24 (famous-poland batch5 verify pass): confirmed as a DIFFERENT tree from the world-famous Bartek of Zagnansk (Swietokrzyskie) -- this is a separate, smaller, local oak on ul. Torunska 302, Zimne Wody, Bydgoszcz. Fully verified (species, girth 662cm, age >500yrs estimated, legend of Napoleon resting beneath it in 1812) with two independent fetched sources plus a corroborating 2013 blog. Held rather than shipped solo: full record and reasoning in data/leads/bydgoszcz.json as bdg_002, seeding a future Bydgoszcz cluster page alongside bdg_001 (the Jeremi Oak)."
     },
     {
       "name": "Cielętniki Lime Tree",
@@ -659,7 +667,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2012_The_Oak_Grot_in_D%C4%99blin_PL.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-24, delivered as deb_001 (Dab Grot) in data/research/famouspoland-batch5-verified.json, a new single-tree place ('deblin') under the 2026-08-31 exception: won Poland's first Drzewo Roku (Tree of the Year) contest in 2011 and represented Poland in the 2012 European Tree of the Year."
     },
     {
       "name": "Dąb Słowianin",
@@ -702,7 +710,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2019_Kneeling_tree_PL.jpg"
       ],
-      "status": "lead"
+      "status": "RESOLVED 2026-09-24, delivered as krs_001 (The Kneeling Tree) in data/research/famouspoland-batch5-verified.json, a new single-tree place ('krasnystaw') under the 2026-08-31 exception: won Poland's Drzewo Roku (Tree of the Year) 2018 and reached the European Tree of the Year 2019 shortlist."
     },
     {
       "name": "Oak \"Fabrykant\" (Park Klepacza in Łódź)",
@@ -737,7 +745,7 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Wojs%C5%82awice_~24ilarba.jpg"
       ],
-      "status": "lead",
+      "status": "RESOLVED 2026-09-24, delivered as wsl_001 (Serce Ogrodu) in data/research/famouspoland-batch5-verified.json, a new single-tree place ('wojslawice') under the 2026-08-31 exception: won Poland's Drzewo Roku 2023 AND the European Tree of the Year 2024 outright, the strongest fame credential in the whole batch.",
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
