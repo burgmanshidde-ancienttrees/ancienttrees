@@ -1612,6 +1612,16 @@ footer { border-top: 1px solid var(--cream-dark); }
   cursor: pointer; }
 .sg-pic-btn:hover { border-color: var(--moss); }
 #sg-pic-name { font-weight: 400; }
+/* The account line, at the top of the form where it is met before the typing
+   rather than under the send button where it was read afterwards. */
+.sg-gate { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem;
+  margin: 1.5rem 0 0; max-width: 34rem; padding: 0.9rem 1rem;
+  background: var(--cream-dark); border-radius: 12px;
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.5; color: var(--ink); }
+.sg-gate span { flex: 1 1 16rem; min-width: 0; }
+.sg-gate-btn { min-height: 44px; flex: none; padding: 0.6rem 1.2rem; border: none;
+  border-radius: 999px; background: var(--moss); color: #fff;
+  font-family: var(--sans); font-size: 14px; font-weight: 600; cursor: pointer; }
 .sg-note { font-size: 13px; color: var(--ink-mid); min-height: 1em; }
 /* The thank-you, which takes the form's place rather than sitting under it. */
 .sg-done { font-family: var(--sans); font-size: 15px; line-height: 1.5;

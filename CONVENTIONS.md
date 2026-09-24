@@ -25,6 +25,46 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Contributing when you are not signed in (2026-09-24)
+
+Hidde: "het gaat er vooral om dat in de front end van de website in de flow je
+naar het inloggen wordt gestuurd en dat dat wordt uitgelegd dat dat moet." Our
+own earlier entry on this, below, says the options are visible to everyone and
+acting needs sign-in, and it was recorded from this corpus rather than looked
+up, so it never said WHEN the person is told.
+
+**Google Maps.** The gate is at the entrance: a signed-out person is not shown
+the Contribute tab at all, and adding a missing place asks for the Google
+account before the form. Read 2026-09-24.
+
+**iNaturalist.** An account is needed to post any observation, and the help
+puts signing up as step one, before the observation form. Read 2026-09-24.
+
+**So both put the account BEFORE the typing, and neither makes somebody fill a
+form and discover the requirement at submit.** Ours did exactly that: the
+sentence explaining it sat under the send button on the website and in a
+Section footer under the button in the app, which is where it is read
+afterwards, if at all.
+
+**What we do, and the one deliberate deviation.** The form stays visible and
+fillable to anybody, which is our own 2026-08-21 ruling and a softer gate than
+either reference, because a form nobody can see is a contributor nobody gets.
+What moved is the SENTENCE: it is now the first thing on the form, with the
+sign-in button beside it, on both surfaces. A privacy request never sees it,
+because that one may always be anonymous.
+
+What is NOT copied from the references: hiding the form. And what still is not
+solved, honestly: after signing in you press Send once more, because every
+route into a session leaves the page and comes back. Both references have the
+same shape, since there you sign in first and then act once.
+
+Read 2026-09-24:
+- https://support.google.com/maps/answer/6320846
+- https://support.google.com/maps/answer/9678350
+- https://help.inaturalist.org/en/support/solutions/articles/151000195690-how-to-sign-up-for-an-inaturalist-account
+
+---
+
 ## Taking a photograph of a place ON THE WEB (2026-09-23)
 
 The app half is above, under "Adding a photograph of a place, and saying you

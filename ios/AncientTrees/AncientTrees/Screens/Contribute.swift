@@ -33,6 +33,28 @@ struct ContributeView: View {
                             .font(.footnote).foregroundStyle(.secondary)
                     }
                 } else {
+                    // THE ACCOUNT IS ASKED FOR BEFORE THE TYPING (2026-09-24).
+                    // Hidde, about the website and true here word for word:
+                    // the person should be sent to sign in and told that they
+                    // have to, in the flow rather than afterwards. This same
+                    // sentence sat in a Section footer UNDER the send button,
+                    // which is read after six fields, if at all.
+                    //
+                    // Google Maps will not show a signed-out person the
+                    // Contribute tab at all and iNaturalist asks you to sign
+                    // up before it hands you the observation form
+                    // (CONVENTIONS.md, "Contributing when you are not signed
+                    // in"). We keep the softer gate our own 2026-08-21 ruling
+                    // chose, the form visible to anybody, and move the
+                    // sentence to where it is met first.
+                    if !account.isSignedIn {
+                        Section {
+                            Text("Sending needs a free account. It is how we thank you, ask a question if we need one, and tell you what your tip changed.")
+                                .font(.footnote).foregroundStyle(Brand.inkSoft)
+                            Button("Sign in") { signingIn = true }
+                                .font(.callout.weight(.semibold))
+                        }
+                    }
                     // OPENED FROM A TREE: no picker and no blank Where. We
                     // know which tree, the kind is a correction by definition,
                     // and asking the two questions we can already answer is
@@ -112,10 +134,6 @@ struct ContributeView: View {
                         if failed {
                             Text("That did not go through. Try again in a moment.")
                                 .font(.footnote).foregroundStyle(.red)
-                        }
-                    } footer: {
-                        if !account.isSignedIn {
-                            Text("Sending needs a free account, so we can thank you, ask a question if we need to, and tell you what your tip changed.")
                         }
                     }
                 }

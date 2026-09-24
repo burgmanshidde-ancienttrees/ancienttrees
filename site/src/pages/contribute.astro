@@ -33,6 +33,23 @@ const headExtra = ldScript(graph);
     <p>Everything sent in gets checked against independent sources, and the location gets verified, because a wrong pin is worse than a missing tree. Confirmed trees get their own page. What cannot be confirmed waits instead of going live half-true. We do not publish your name anywhere on the site, and we do not need it to accept a tree.</p>
   </div>
 
+  {/* THE ACCOUNT IS ASKED FOR BEFORE THE TYPING, not after it (2026-09-24).
+      Hidde: "het gaat er vooral om dat in de front end van de website in de
+      flow je naar het inloggen wordt gestuurd en dat dat wordt uitgelegd dat
+      dat moet." It was explained in a grey line UNDER the send button, which
+      somebody reads after filling in six fields, if at all.
+
+      Both references put the gate at the entrance: Google Maps will not show
+      the Contribute tab to a signed-out person at all, and iNaturalist asks
+      you to sign up before it gives you the observation form (CONVENTIONS.md,
+      "Contributing when you are not signed in"). We keep the softer version
+      our own 2026-08-21 ruling chose, the form visible and fillable to
+      anybody, and move the SENTENCE to where they meet it first. */}
+  <p class="sg-gate" id="sg-gate" hidden>
+    <span>Sending needs a free account. It is how we thank you, ask a question if we need one, and tell you what your tip changed.</span>
+    <button type="button" id="sg-gate-btn" class="sg-gate-btn">Sign in</button>
+  </p>
+
   <form id="suggest" class="suggest-form" autocomplete="off">
     <!-- The "what are you sending" dropdown is gone (Hidde, 2026-08-21:
          "isnt this first question useless - i dont need press inquiries here
@@ -75,7 +92,6 @@ const headExtra = ldScript(graph);
     </label>
     <button type="submit" class="go-btn">Send it in</button>
     <p class="sg-note" id="sg-note"></p>
-    <p class="sg-fine">Sending needs a free account, so we can thank you, ask a question if we need to, and tell you what your tip changed. Privacy requests need no account.</p>
   </form>
   <!-- THE CONFIRMATION LIVES OUTSIDE THE FORM, because the form is what gets
        hidden. #sg-note sits inside it and is for the messages that belong
@@ -131,6 +147,26 @@ const headExtra = ldScript(graph);
       return (s && s.expires_at > Date.now() / 1000) ? s : null;
     } catch (e) { return null; }
   }
+  // The gate is drawn by script rather than server-side, because the page is
+  // static and cached: the HTML is the same for everybody and only the browser
+  // knows who is holding it.
+  var gate = document.getElementById('sg-gate');
+  var gateBtn = document.getElementById('sg-gate-btn');
+  function drawGate() {
+    var signedIn = !!session();
+    var priv = document.getElementById('sg-kind').value === 'privacy';
+    // A privacy request may always be anonymous, so telling that person to
+    // sign in would be wrong as well as unwelcoming.
+    gate.hidden = signedIn || priv;
+  }
+  gateBtn.addEventListener('click', function() {
+    if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback');
+  });
+  // No listener for "they just signed in", and none is needed: every route
+  // into a session leaves this page and comes back to it. The magic link
+  // reloads it and Google redirects to it, and Base's head script stores the
+  // token before any of this runs, so drawGate below already sees the answer.
+
   var params = new URLSearchParams(location.search);
   var kind = params.get('kind');
   var map = {tree: 'tree', city: 'city', home: 'city', correction: 'correction', privacy: 'privacy'};
@@ -154,6 +190,8 @@ const headExtra = ldScript(graph);
       if (el && d[id] && !el.value) el.value = d[id];
     });
   } catch (e) {}
+  drawGate();
+
   var btn = f.querySelector('button[type="submit"]');
   var inFlight = false;
 
@@ -220,7 +258,7 @@ const headExtra = ldScript(graph);
       var draft = {};
       FIELDS.forEach(function(id) { draft[id] = document.getElementById(id).value; });
       try { localStorage.setItem('at_contribute_draft', JSON.stringify(draft)); } catch (e) {}
-      note.textContent = 'Almost there: sign in and press send again. What you typed is kept.';
+      note.textContent = 'Sending needs an account. Sign in and press send again; what you typed is kept.';
       if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback');
       return;
     }
