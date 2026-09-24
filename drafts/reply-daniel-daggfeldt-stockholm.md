@@ -35,6 +35,11 @@ thing that has changed, which is that the Prague trip has happened.
   earlier draft asked how the planning went, and asking that now would read as
   not having listened the other way round. Prague is 30 trees with 21
   photographs, so what he found missing there is worth more than a compliment.
+- **The question is the APP, not the trees** (Hidde, 2026-09-24: "vraag daniel
+  maar vooral of die de app nog heeft gebruikt en nog ervaring wil delen"). He
+  is the only person on record who took this into a city he did not know, so
+  what he says about that walk is worth more than any tree he might name. The
+  trees come second in the mail for the same reason.
 - **The app invitation is folded into that question rather than added as a
   second ask** (Hidde, 2026-09-24: "lets encourage him to use the app to add
   photos and learn from his experience"). It is honest to ask now and it was
@@ -87,10 +92,11 @@ Hidde
 
 Hi Daniel,
 
-You will have been to Prague by now. How was it, and did you find trees we
-are missing there?
+You will have been to Prague by now. Did you use the app while you were there?
+I would really like to hear how it went, good or bad. You are the first person
+I know of who took it into a city they did not know.
 
-If you did, you can put them on the map from the app yourself, photograph and
-all, which beats me typing them in from a description.
+If you found trees we are missing, you can add them from the app yourself,
+photograph and all.
 
 Hidde
