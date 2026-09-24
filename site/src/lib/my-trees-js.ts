@@ -71,13 +71,23 @@ export const MY_TREES_JS = `
     return d.toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
   }
 
+  // What a tree nobody named is called: its species when we know it, the same
+  // rule the app applies (Sightings.fallbackName), and the old line only when
+  // we know nothing. The species arrives as "Oak (Quercus sp.)" and a heading
+  // wants the common half.
+  function titleOf(row) {
+    if (row.name) return row.name;
+    var sp = String(row.species || '').split('(')[0].trim();
+    return sp || 'A tree you photographed';
+  }
+
   function card(row) {
     var meta = [row.species, when(row.taken_at)].filter(Boolean).join(' \\u00b7 ');
     var label = LABEL[row.status] || LABEL.mine;
     return '<article class="tree-card tree-card-nonum mine-card" data-id="' + esc(row.id) + '">'
       + '<div class="tree-card-photo mine-photo"' + (row.photo ? '' : ' hidden') + '>'
-        + '<img alt="' + esc(row.name) + '" loading="lazy"></div>'
-      + '<div class="tree-card-top"><h3 class="tree-name">' + esc(row.name || 'A tree you photographed') + '</h3></div>'
+        + '<img alt="' + esc(titleOf(row)) + '" loading="lazy"></div>'
+      + '<div class="tree-card-top"><h3 class="tree-name">' + esc(titleOf(row)) + '</h3></div>'
       + (meta ? '<p class="tree-meta">' + esc(meta) + '</p>' : '')
       + '<p class="mine-state"><span class="mine-dot"></span>' + esc(label) + '</p>'
       + '</article>';
@@ -161,8 +171,10 @@ export const MY_TREES_JS = `
     var r = g.newest;
     // A city tip has no tree name, so the city becomes the heading and must
     // not then be repeated as its own subtitle.
-    var title = r.tree || r.city || 'A tree you told us about';
-    var bits = [title === r.city ? '' : r.city, when(r.created_at)];
+    // Unnamed, it is named from where it stands, "A tree in Utrecht", the
+    // same rule the app applies to a tree nobody named (2026-09-24).
+    var title = r.tree || (r.city ? 'A tree in ' + r.city : 'A tree you told us about');
+    var bits = [r.tree ? r.city : '', when(r.created_at)];
     if (g.count > 1) bits.push('sent ' + g.count + ' times');
     var meta = bits.filter(Boolean).join(' \\u00b7 ');
     var label = LABEL[SENT_STATE[r.outcome] || 'sent'];
@@ -271,7 +283,7 @@ export const MY_TREES_JS = `
         }).map(function(row) {
           return { type: 'Feature',
                    geometry: { type: 'Point', coordinates: [row.lng, row.lat] },
-                   properties: { name: row.name || 'A tree you photographed',
+                   properties: { name: titleOf(row),
                                  city: 'A tree only you have',
                                  // Its own unlisted page, when there is one.
                                  // A sighting somebody unshared has none, and
