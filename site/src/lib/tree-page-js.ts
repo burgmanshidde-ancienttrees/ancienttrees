@@ -85,6 +85,19 @@ if (insetBtn) insetBtn.addEventListener('click', function () { swap(true); });
 var backBtn = document.querySelector('.td-photo-back');
 if (backBtn) backBtn.addEventListener('click', function () { swap(false); });
 
+// Back, the arrow on the photograph. The link is the city page, which is the
+// honest destination for somebody who arrived from a search engine; when they
+// came from a page of ours, back means the page they came from, as it does in
+// the app and on AllTrails.
+var backA = document.querySelector('.td-back');
+if (backA) backA.addEventListener('click', function (e) {
+  var ref = document.referrer;
+  if (ref && ref.indexOf(location.origin) === 0 && history.length > 1) {
+    e.preventDefault();
+    history.back();
+  }
+});
+
 // Take me there. iOS detection is the one signin-js.ts already uses, iPadOS
 // included (it reports itself as a Mac with touch).
 var ua = navigator.userAgent || '';

@@ -89,13 +89,12 @@ const movedTemplate = U.pinMoved(987654).replace("987654", "{m}");
 const visibleCrumbs = p.crumbs.slice(0, -1);
 ---
 <main class="content-page td-page">
-  <div class="td-top">
-    <Breadcrumbs items={visibleCrumbs} />
-    <div class="td-tools">
-      <ShareButton url={p.canonical} title={p.name} label={U.share} copied={U.shareCopied} />
-      <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="flag" lang={p.lang} />
-    </div>
-  </div>
+  {/* WHERE YOU ARE, a thin row, and nothing else (Hidde, 2026-09-24: the
+      white bar holding share "is logical in the app because of the back
+      button, not on the web"). AllTrails' trail page on mobile web, read the
+      same day: breadcrumbs under the header, then the photograph carrying its
+      actions as round buttons in its top-right corner. */}
+  <div class="td-top"><Breadcrumbs items={visibleCrumbs} /></div>
 
   {/* THE PICTURE, full bleed, and the map in its corner (TreeDetail.swift
       `hero`, MapInset.swift: 72 points, radius 10, a 2 point white rim). The
@@ -106,6 +105,11 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
       <PhotoFigure photo={photo} photos={p.shots} alt={p.name} lang={p.lang} variant="hero"
         widths={[700, 1100, 1600]} sizes="(max-width: 900px) 100vw, 720px">
         <Fragment slot="overlay">
+          <a class="td-back" href={p.cityUrl} aria-label={U.goBack} title={U.goBack}><Fragment set:html={icon("arrow-left")} /></a>
+          <div class="td-tools">
+            <ShareButton url={p.canonical} title={p.name} label={U.share} copied={U.shareCopied} />
+            <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="flag" lang={p.lang} />
+          </div>
           <div class="td-inset"><div id="map" class="map td-map"></div></div>
           <button type="button" class="td-inset-hit" aria-label={U.showOnMap}></button>
           <button type="button" class="td-photo-back" aria-label={U.showPhoto}>
@@ -123,6 +127,11 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
               on the web it is the control that takes a photograph of a tree we
               have none of. Under the drawing rather than in the corner, because
               the web's control carries a sentence the app's icon does not. */}
+<a class="td-back" href={p.cityUrl} aria-label={U.goBack} title={U.goBack}><Fragment set:html={icon("arrow-left")} /></a>
+          <div class="td-tools">
+            <ShareButton url={p.canonical} title={p.name} label={U.share} copied={U.shareCopied} />
+            <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="flag" lang={p.lang} />
+          </div>
           <div class="td-addphoto">
             <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} />
           </div>

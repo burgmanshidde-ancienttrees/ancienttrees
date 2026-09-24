@@ -245,6 +245,8 @@ export interface UIStrings {
   cancel: string;
   /** The two maps apps by the names each language's store gives them. */
   appleMaps: string;
+  /** The back arrow on a tree page's photograph (AllTrails' mobile web). */
+  goBack: string;
   googleMaps: string;
   seenIt: string;
   worthItAsk: (name: string) => string;
@@ -554,6 +556,7 @@ const EN: UIStrings = {
   pinNeedsAccount: "Sending needs a free account, so we can tell you what your correction changed.",
   cancel: "Cancel",
   appleMaps: "Apple Maps",
+  goBack: "Back",
   googleMaps: "Google Maps",
   seenIt: "I have seen this one",
   worthItAsk: (n) => `Yes, ${n} was worth the visit`,
@@ -806,6 +809,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinNeedsAccount: "Para enviar necesitas una cuenta gratuita, así podemos contarte qué ha cambiado con tu corrección.",
     cancel: "Cancelar",
     appleMaps: "Apple Maps",
+    goBack: "Atrás",
     googleMaps: "Google Maps",
     seenIt: "Ya he visto este",
     worthItAsk: (n) => `Sí, ${n} mereció la visita`,
@@ -1045,6 +1049,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinNeedsAccount: "Per inviare serve un account gratuito, così possiamo dirti cosa ha cambiato la tua correzione.",
     cancel: "Annulla",
     appleMaps: "Apple Maps",
+    goBack: "Indietro",
     googleMaps: "Google Maps",
     seenIt: "L'ho già visto",
     worthItAsk: (n) => `Sì, ${n} valeva la visita`,
@@ -1284,6 +1289,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinNeedsAccount: "Versturen kan met een gratis account, zodat we je kunnen laten weten wat je correctie heeft veranderd.",
     cancel: "Annuleren",
     appleMaps: "Apple Maps",
+    goBack: "Terug",
     googleMaps: "Google Maps",
     seenIt: "Deze heb ik gezien",
     worthItAsk: (n) => `Ja, ${n} was de moeite waard`,
@@ -1523,6 +1529,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinNeedsAccount: "Zum Senden brauchst du ein kostenloses Konto, damit wir dir sagen können, was deine Korrektur geändert hat.",
     cancel: "Abbrechen",
     appleMaps: "Apple Maps",
+    goBack: "Zurück",
     googleMaps: "Google Maps",
     seenIt: "Diesen habe ich gesehen",
     worthItAsk: (n) => `Ja, ${n} war den Besuch wert`,
@@ -1762,6 +1769,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinNeedsAccount: "Para enviar precisa de uma conta gratuita, para lhe podermos dizer o que a sua correção mudou.",
     cancel: "Cancelar",
     appleMaps: "Apple Maps",
+    goBack: "Voltar",
     googleMaps: "Google Maps",
     seenIt: "Já vi esta",
     worthItAsk: (n) => `Sim, ${n} valeu a visita`,
@@ -2001,6 +2009,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinNeedsAccount: "L'envoi demande un compte gratuit, pour que nous puissions vous dire ce que votre correction a changé.",
     cancel: "Annuler",
     appleMaps: "Apple Maps",
+    goBack: "Retour",
     googleMaps: "Google Maps",
     seenIt: "Je l'ai déjà vu",
     worthItAsk: (n) => `Oui, ${n} valait le détour`,
@@ -2239,6 +2248,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinNeedsAccount: "送信には無料アカウントが必要です。修正で何が変わったかをお知らせするためです。",
     cancel: "キャンセル",
     appleMaps: "Apple マップ",
+    goBack: "戻る",
     googleMaps: "Google マップ",
     seenIt: "この木は見ました",
     worthItAsk: (n) => `はい、${n}は行く価値がありました`,
