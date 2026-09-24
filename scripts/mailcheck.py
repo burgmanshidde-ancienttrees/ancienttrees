@@ -458,12 +458,29 @@ def check_no_unshipped_feature(path, body):
     WORDS = {"walks": [r"\bwalks?\b"],
              "season": [r"\bseason radar\b", r"\bseason story\b"],
              "plus": [r"\bAncient Trees Plus\b"]}
+    # A sentence that says we are GOING TO BUILD something cannot send anybody
+    # looking for it, which is the only harm this check exists to stop. Added
+    # 2026-09-24, when Hidde asked a mail to tell Hans Erik Lund that walks are
+    # coming and that we would like to come back to him about them: true, not a
+    # promise of anything he can open today, and the honest thing to say to
+    # somebody whose data those walks will be built from. The wording has to be
+    # explicitly future and explicitly about intent; anything claiming the app
+    # HAS the feature still fails, and that half is checked below.
+    LATER = re.compile(r"\b(later on|one day|in time|eventually|we want to build|"
+                       r"we plan to|we are going to build|will build|hope to build|"
+                       r"are working towards)\b", re.I)
     out = []
     for flag in hidden:
         for pat in WORDS.get(flag, []):
             m = re.search(pat, body, re.I)
             if m:
                 line = [l for l in body.splitlines() if m.group(0).lower() in l.lower()]
+                # the sentence the word sits in, not the wrapped line
+                start = body.rfind(".", 0, m.start()) + 1
+                end = body.find(".", m.end())
+                sentence = body[start:end if end > 0 else len(body)]
+                if LATER.search(sentence):
+                    continue
                 out.append(("UNSHIPPED FEATURE (Kit/Launch.swift hides %s)" % flag,
                             m.group(0),
                             (line[0].strip() if line else "")[:140] +

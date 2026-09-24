@@ -6,10 +6,17 @@ proceed"). A separate mail to somebody who was cc'd reads as going round the
 person who introduced her, and it splits a thread that is currently one
 conversation. Hence the single line addressed to her at the bottom.
 
-**Not sent yet.** Drafted 2026-09-08, cut to the bone 2026-09-10 on Hidde's
-steer: "just ask him for feedback, and don't dwell on the tree details". What
-changed on the pages is one line and a link; the question is the mail. Nothing in data/outreach-sent.json for this
-address.
+**THE FIRST MAIL WAS SENT**, on 2026-09-10 at 12:09, by Hidde himself from his
+own Gmail, word for word as drafted here, cc Svenska Traedfoereningen and Tina
+Axelsson. This file said "not sent yet" for two weeks because it was checking
+data/outreach-sent.json, which only records what scripts/outreach_send.py sends
+and knows nothing about the mails he writes by hand. Hidde caught it on
+2026-09-24 by asking the right question: "weet je zeker dat we hem nooit
+geantwoord hebben".
+
+Neither Daniel nor Tina has answered. So what follows is a SECOND mail and is
+written as one: short, no repeat of what the first said, and turning on the one
+thing that has changed, which is that the Prague trip has happened.
 
 - **Valkasken is live and verified**, two independent sources: Swedish
   Wikipedia and Lansstyrelsen Stockholm's 2016 survey of sarskilt skyddsvarda
@@ -54,19 +61,36 @@ address.
 
 ---
 
+## The first mail, sent 2026-09-10
+
 Hi Daniel,
 
 Thanks, this is the mail I hoped for. Valkasken is live and both your
 corrections to the Prince Eugen oak are in:
 https://ancienttrees.app/stockholm/valkasken
 
-You will have been to Prague by now. How did that go, and did you find trees
-we are missing there? The app went on the App Store in the meantime, and you
-can add a tree to the map straight from it with a photograph, which is the
-quickest way to get anything you found onto the page:
+Good to hear you used it to plan Prague. What did you think of it, and was
+anything missing?
+
+We put the app on the App Store a week ago and I would like to hear what you
+make of that as well:
 https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
 
 Tina, Daniel says you have photographed most of these. I would love to put a
 few of them on the tree pages with your name under them.
+
+Hidde
+
+---
+
+## The follow-up, not sent
+
+Hi Daniel,
+
+You will have been to Prague by now. How was it, and did you find trees we
+are missing there?
+
+If you did, you can put them on the map from the app yourself, photograph and
+all, which beats me typing them in from a description.
 
 Hidde
