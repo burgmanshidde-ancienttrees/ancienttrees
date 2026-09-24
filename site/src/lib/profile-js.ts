@@ -174,7 +174,8 @@ export const PROFILE_JS = `
       setText('n-species', Object.keys(species).length);
       setText('n-countries', Object.keys(countries).length);
       var mineEmpty = el('mine-empty');
-      if (mineEmpty) mineEmpty.hidden = Boolean(visited.length || window.atMineCount || window.atSentCount);
+      if (mineEmpty) mineEmpty.hidden = Boolean(visited.length || window.atMineCount || window.atSentCount
+                                                || window.atPhotographedCount);
     });
   }
 
@@ -199,8 +200,16 @@ export const PROFILE_JS = `
     var mineEmpty = el('mine-empty');
     if (!mineEmpty) return;
     mineEmpty.hidden = Boolean((window.atVisitedCount || 0) + (window.atMineCount || 0)
-                               + (window.atSentCount || 0));
+                               + (window.atSentCount || 0) + (window.atPhotographedCount || 0));
   }
+
+  // my-trees-js calls this with the trees of ours you photographed without
+  // ticking off. They are on this lane, so the empty line goes, and they are
+  // not trees you stood in front of, so the Trees count stays as it was.
+  window.atPhotographedCounted = function(n) {
+    window.atPhotographedCount = n;
+    hideEmptyIfAnything();
+  };
 
   window.atLoadProfile = load;
   var s = C.session();

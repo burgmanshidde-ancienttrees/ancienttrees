@@ -113,6 +113,15 @@ export const MY_TREES_JS = `
   // cards are on the screen now and again whenever the profile redraws them,
   // because the two lists arrive from two requests and either can land first.
   var yours = {};
+  // tree id -> the words for where your photograph of it stands. The app's
+  // Sighting.photoState, word for word, so one photograph reads the same on
+  // both surfaces.
+  var yourState = {};
+  function photoState(status) {
+    if (status === 'published') return "Your photo is on the tree's page";
+    if (status === 'declined') return '';
+    return 'Your photo, waiting for a look';
+  }
 
   function clear() {
     clearSent();
@@ -120,8 +129,10 @@ export const MY_TREES_JS = `
     list.hidden = true;
     if (empty) empty.hidden = true;
     yours = {};
+    yourState = {};
     paintYours();
     if (window.atMineCounted) window.atMineCounted(0);
+    if (window.atPhotographedCounted) window.atPhotographedCounted(0);
     if (window.atAddMyPins) window.atAddMyPins([]);
   }
 
@@ -147,6 +158,25 @@ export const MY_TREES_JS = `
         box.appendChild(img);
         box.appendChild(tag);
         art.insertBefore(box, art.firstChild);
+      });
+    });
+    // The state goes on every card of that tree, ours-photographed or not,
+    // once, and stays there while it is true (CONVENTIONS.md, "Landing after
+    // you have added something").
+    Object.keys(yourState).forEach(function(id) {
+      var words = yourState[id];
+      if (!words) return;
+      var cards = document.querySelectorAll('[data-tree-id="' + id.replace(/[^A-Za-z0-9_-]/g, '') + '"]');
+      Array.prototype.forEach.call(cards, function(art) {
+        if (art.querySelector('.mine-state')) return;
+        var p = document.createElement('p');
+        p.className = 'mine-state';
+        var dot = document.createElement('span');
+        dot.className = 'mine-dot';
+        p.appendChild(dot);
+        p.appendChild(document.createTextNode(words));
+        var more = art.querySelector('.tree-more');
+        if (more) art.insertBefore(p, more); else art.appendChild(p);
       });
     });
   }
@@ -251,9 +281,11 @@ export const MY_TREES_JS = `
       { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
       .then(function(r) { return r.ok ? r.json() : null; })
       .catch(function() { return null; });
+    var ticked = window.atCollection ? window.atCollection.visited()
+                                     : Promise.resolve([]);
 
-    Promise.all([rows, cards]).then(function(r) {
-      var all = r[0], known = r[1] || {};
+    Promise.all([rows, cards, ticked]).then(function(r) {
+      var all = r[0], known = r[1] || {}, visitedIds = r[2] || [];
       if (!all) return;
       // A row belongs to one of our trees only when we still map that tree.
       // One we have since retired keeps a card of its own rather than
@@ -262,9 +294,11 @@ export const MY_TREES_JS = `
       var own = all.filter(function(row) { return linked.indexOf(row) === -1; });
 
       yours = {};
+      yourState = {};
       linked.forEach(function(row) {
-        if (!row.photo || yours[row.tree_id]) return;
+        if (!row.photo || yours[row.tree_id] !== undefined) return;
         yours[row.tree_id] = '';
+        yourState[row.tree_id] = photoState(row.status);
         sign(token, row.photo, function(url) {
           yours[row.tree_id] = url;
           paintYours();
@@ -294,9 +328,28 @@ export const MY_TREES_JS = `
         }));
       }
 
-      if (!own.length) { list.innerHTML = ''; list.hidden = true; return; }
-      list.innerHTML = own.map(function(row) { return '<li>' + card(row) + '</li>'; }).join('');
+      // A photograph of one of our trees that you never ticked off, which is
+      // what the tree page's Add a photo sends, has no card in the visited
+      // list to land on. It gets our card for that tree here instead, so the
+      // photograph you just sent is in My trees rather than nowhere.
+      var isTicked = {};
+      visitedIds.forEach(function(id) { isTicked[id] = true; });
+      var photographed = [];
+      linked.forEach(function(row) {
+        if (!row.photo || isTicked[row.tree_id] || photographed.indexOf(row.tree_id) !== -1) return;
+        photographed.push(row.tree_id);
+      });
+      var ours = photographed.map(function(id) {
+        return '<li>' + window.atCollection.card(id, known[id], false, false) + '</li>';
+      });
+
+      if (window.atPhotographedCounted) window.atPhotographedCounted(ours.length);
+      if (!own.length && !ours.length) { list.innerHTML = ''; list.hidden = true; return; }
+      list.innerHTML = ours.join('')
+        + own.map(function(row) { return '<li>' + card(row) + '</li>'; }).join('');
       list.hidden = false;
+      paintYours();
+      if (window.atPaintSaves) window.atPaintSaves();
       own.forEach(function(row) {
         if (!row.photo) return;
         var el = list.querySelector('[data-id="' + row.id + '"] img');
