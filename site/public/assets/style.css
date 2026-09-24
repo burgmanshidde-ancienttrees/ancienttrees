@@ -581,6 +581,15 @@ dialog.photo-view .pv-frame img {
      directly under the last section. The sheet is a scroll container, so the
      ordinary flow reaches it and nothing has to be pushed anywhere. */
   .nav-drop-menu .sheet-foot { margin-top: 1.5rem; }
+  /* ...until the list is taller than the phone, and then it sticks to the
+     bottom edge (Hidde, 2026-09-24: "menu waar inloggen en aanmelden niet
+     onder de fold zitten?"). Measured: at 375x812 the pill was cut in half by
+     the screen edge and on an SE it sat wholly below it, because our sections
+     are all open where AllTrails folds theirs. Sticky keeps their placement
+     when there is room and only pins when there is not. The white band and
+     the padding stop rows scrolling visibly through it. */
+  .nav-drop-menu .sheet-foot { position: sticky; bottom: 0; z-index: 1;
+    background: #fff; padding: 0.75rem 0 calc(0.75rem + env(safe-area-inset-bottom)); }
   /* --cream-dark rather than --surface, which is the fill every other quiet
      control here uses. On the white of the sheet --surface is a 1.5% step and
      the pill read as a label with a hairline round it; theirs is plainly a
