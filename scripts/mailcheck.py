@@ -286,6 +286,7 @@ APP_STORE_URL = "https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-G
 # list only when the person says otherwise.
 NO_APP_LINK = {
     "dias.com.arvores@sapo.pt": "has no smartphone, said so on 2026-09-02",
+    "woelfie@gmx.de": "has no iPhone, said so on 2026-09-20",
 }
 
 
