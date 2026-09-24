@@ -10,6 +10,17 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-24 (session) - The tree page is the app's, on every tree in eight languages
+
+Hidde: "look at the design of the detail tree page of the app and literally translate that to web", approved as a mockup at phone and desktop width, with his own change: the big button is **Open in the app** (`/open?tree=`, opens the tree in the app or goes to the App Store).
+
+- **One shared component**, `site/src/components/TreeDetail.astro`, used by the English and all seven translated tree pages. Share and a report flag above the photo; the photo full bleed with a live map in its corner (tap swaps map and photo, expand opens the city map on this tree via `#tree=`); name, place and thumb; a two-column card (age, species with the scientific name under it, or girth); the story; the getting-there block; Something's wrong; nearby trees as photo cards; Discover more chips; a pinned bar. Desktop is two columns with a sticky side card holding the same actions and the map.
+- **Behaviour matched to the app:** Take me there asks Apple or Google Maps once on an iPhone and remembers it; "Show us where it is" on an approximate pin opens a drag-the-map screen and sends the same correction row the app's PlacePin sends.
+- **Removed:** the duplicate facts list, the map note, the walk link, the app pitch, both help boxes, the Sources list (earlier today) and the web tick. Collecting is the app's now.
+- **Icons are Phosphor** (his pick, MIT) through `site/src/lib/icons.ts`; `scripts/iconcheck.py` refuses new hand-drawn icons on push ("never ever draw icons by hand"). Still hand-drawn and to replace: the heart in map.ts and collection-js.ts, and about 50 icons on other pages.
+- **Found and fixed on the way:** a `@media (max-width: 900px)` block in style.css left open since 2026-09-12, so every rule after it never applied on desktop. qa.py now counts braces (`check_css_braces_balance`). Branch builds get their own concurrency group in deploy.yml.
+- Contract A is v1.21 in SEO_GEO_BLUEPRINT.md. Verified on the CI build, locally at 390px and 1280px: swap, flag menu, pin screen (signed out opens sign-in, nothing sent), Spanish labels. The iPhone maps choice is untested on a real phone.
+
 ## 2026-09-24 (session) - Hidde's holiday list: triaged, judged, and most of the DO list shipped
 
 Hidde sent his own list from Japan (38 thoughts) and asked for as little input as possible. It is triaged in PRODUCT_TODO.md with a verdict and a reason per item (DO / MAYBE / DON'T); the finding that sorted half of it is that "oldest tree in <place>" is the query shape that brings people, and the generated superlative collections climb while themed ones take nothing. Season and month collections and satellite view are off on that evidence and his word; the homepage is parked by him.
