@@ -198,11 +198,27 @@ def main():
                            f"re-run tomorrow")
             continue
         if not really:
-            results.append(f"DRY   {label}: would send {m['subject']!r} to {to}")
+            _cc = (m.get("cc") or "").strip()
+            results.append(f"DRY   {label}: would send {m['subject']!r} to {to}"
+                           + (f" (cc {_cc})" if _cc else ""))
             continue
         msg = EmailMessage()
         msg["From"] = creds["FROM"]
         msg["To"] = to
+        # A reply often has to go to the people already in the thread. Added
+        # 2026-09-24 for the answer to Hans Erik Lund, whose thread Peter
+        # Hoffmann started by forwarding our question to him: sending only to
+        # Lund would silently drop the man who made the introduction. A cc is
+        # NOT a second recipient in the sense the guards care about, so it is
+        # not logged as a send and not counted against the daily cap; it is a
+        # copy of one mail. The do-not-contact list still applies to it, which
+        # is the one way a cc could do harm.
+        cc = [a.strip() for a in (m.get("cc") or "").split(",") if a.strip()]
+        cc = [a for a in cc
+              if a.lower() not in dnc
+              and ("@" + a.lower().split("@")[-1]) not in dnc]
+        if cc:
+            msg["Cc"] = ", ".join(cc)
         msg["Subject"] = m["subject"]
         msg.set_content(m["body"])
         if server is None:
