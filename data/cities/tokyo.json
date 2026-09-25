@@ -126,10 +126,12 @@
       "access": "Free to view; a 500 yen fee applies only if you also want to enter the shrine's inner hall precinct by the karamon gate",
       "transport": "10 min walk from Ueno Station (JR/Ginza/Hibiya lines)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/271440441/medium.jpg",
+        "license": "CC BY",
+        "attribution": "stephen, via iNaturalist",
+        "status": "approved",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "ai_generated",
       "notes": "Sourcing is the shrine's own site plus travel-review corroboration rather than an independent registry; a stronger third source would be worth finding in a future pass.",
