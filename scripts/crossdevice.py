@@ -57,6 +57,15 @@ SWIFT_PATTERNS = [
     re.compile(r'AppStorage\((?:wrappedValue:[^,]+,\s*)?"([^"]+)"'),
     re.compile(r'(?:let|var)\s+\w*[Kk]ey\w*\s*(?::\s*String\s*)?=\s*"([^"]+)"'),
 ]
+# A Swift file that writes into Documents or Application Support is a store as
+# well, and the patterns above cannot see it because it has no key, only a
+# path. It registers as "file:<Name>.swift". Added 2026-09-26 after a check of
+# "is everything on the account" found MyWalks.swift keeping walks in
+# Documents/my-walks.json with no register entry and no sync: dead code that
+# day, and a phone-only store the moment anybody wired it up. The temporary
+# directory is not a store, the OS empties it.
+FILE_STORE = re.compile(r'\.(?:documentDirectory|applicationSupportDirectory)\b')
+
 WEB_PATTERN = re.compile(r'(?:localStorage|sessionStorage)\.\w+Item\(\s*[\'"]([^\'"]+)[\'"]')
 
 
@@ -81,6 +90,9 @@ def found():
                 if not key:
                     continue
                 out.setdefault(key, set()).add(os.path.relpath(path, ROOT))
+        if FILE_STORE.search(text):
+            out.setdefault("file:" + os.path.basename(path), set()).add(
+                os.path.relpath(path, ROOT))
     for path in walk(WEB, (".ts", ".astro", ".js")):
         text = open(path, encoding="utf-8", errors="ignore").read()
         for key in WEB_PATTERN.findall(text):

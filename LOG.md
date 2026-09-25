@@ -10,6 +10,25 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 (session) - Audit: is everything a person does on the account?
+
+Hidde asked for a last check that nothing a user does lives only on the device.
+It holds, with one hole found and closed. Every heart, tick, photograph, added
+tree, worth-it vote, block and unit choice is gated behind sign-in on both
+surfaces and lands in Supabase (saves, visited, sightings, submissions, blocks,
+profiles), and a signed-out app launch empties the phone's copies. What stays
+on the device is deliberate and registered in data/cross-device.json: the
+session token, the half-typed contribute form, the action to finish after
+sign-in, which maps app this phone has, the beacon opt-out, analytics and
+nudge bookkeeping, and the offline catalogue.
+
+The hole: Kit/MyWalks.swift kept "walks you made" in Documents/my-walks.json,
+phone only, and crossdevice.py could not see it because it only read
+UserDefaults keys. It was never wired into any screen, so no data was lost; it
+is deleted. crossdevice.py now also treats any Swift file writing to Documents
+or Application Support as a store that needs a verdict, and fails on
+MyWalks.swift if it comes back.
+
 ## 2026-09-26 (session) - The 3D globe is out; My trees draws the flat map
 
 Hidde, after trying yesterday's Polarsteps globe on his phone: "haal de hele 3d
