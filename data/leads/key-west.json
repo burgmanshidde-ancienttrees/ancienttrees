@@ -1,0 +1,67 @@
+{
+  "city": "Key West",
+  "leads": [
+    {
+      "name": "Saffron Plum",
+      "species": "Saffron Plum (Sideroxylon celastrinum)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island (Parking Lot area)",
+      "reason": "Garden's own 2024 post-Irma status page lists it 'OK' and its photo caption calls it 'Challenger'. No second independent source found this pass: Wikipedia's current (2026-08-23) garden article names seven champions/challengers plus one honorable mention and does not include Saffron Plum at all, so the champion claim is unconfirmed rather than corroborated. Would clear the bar with a second source naming the title (Florida Division of Forestry list, American Forests, or local press)."
+    },
+    {
+      "name": "Cinnamon Bark",
+      "species": "Cinnamon Bark (Canella winterana)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island (West Loop)",
+      "reason": "Garden's own 2024 page lists it 'OK' among the native champions/legacy section, but does not itself state a champion title for it, and Wikipedia's garden article mentions it only as one of many species present, not among the seven named champions/challengers. No independent source confirms a title or measurement. Needs a source that actually states the designation before it clears the two-source bar."
+    },
+    {
+      "name": "Sausage Tree",
+      "species": "Sausage Tree (Kigelia africana)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island (Parking Lot)",
+      "reason": "Garden's own 2024 page lists it 'OK' among Historic Legacy Trees; visually distinctive (huge sausage-shaped fruit hanging over a parking lot). Not in Wikipedia's champion list and no independent second source found this pass confirming any title, age or measurement. Only one source at present."
+    },
+    {
+      "name": "Canary Date Palm",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island (Desbiens Pond)",
+      "reason": "Garden's own 2024 page lists it 'OK'; Wikipedia mentions the species as present in the garden but not as a champion or with any distinguishing size/age claim. Palms are an accepted entry type on this site (precedent: Los Angeles, Hilo, several Spanish/Italian cities), but this one currently has no hook beyond being on a list of survivors. Would need an age, girth or a size claim from a second source to be worth the walk on its own."
+    },
+    {
+      "name": "African Tulip Tree",
+      "species": "African Tulip Tree (Spathodea campanulata)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island (Boardwalk)",
+      "reason": "Garden's own 2024 page: 'Broken at about 20 feet but alive and growing suckers'. Genuinely alive per the source's own words but severely storm-damaged and not a champion/challenger. Judgement call: left as a lead rather than published, since the standing trunk is a 20-foot stub rather than the tree's original form, and no independent second source exists."
+    },
+    {
+      "name": "Royal Poinciana",
+      "species": "Royal Poinciana (Delonix regia)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island (exact area not found)",
+      "reason": "Wikipedia's garden article (2026-08-23) names it 'Honorable Mention' in the same champion/challenger list as the published trees, but neither Wikipedia nor the garden's 2024 gallery-of-champions page (which predates this apparently more recent designation) gives its location within the garden. No coordinate or area name found this pass; needs a location before it can be verified further."
+    },
+    {
+      "name": "Pongam",
+      "species": "Pongam / Indian Beech (Pongamia pinnata)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island (exact area not found)",
+      "reason": "Wikipedia's garden article (2026-08-23) lists it as a current Florida Challenger, one of seven named champions/challengers. Not mentioned at all in the garden's own 2024 'gallery of champions' status page (which focuses on Irma-affected native/legacy trees), so this may be a newer or previously uncatalogued designation. No location within the garden and no second source found this pass."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Milkbark",
+      "species": "Milkbark (Drypetes diversifolia)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden (West Loop)",
+      "reason": "National Champion, but the garden's own 2024 post-Irma status page says 'Down but seedlings growing from roots': the original champion trunk is down and only root suckers survive. Same shape as the never-dead-tree rule; not a living collectible specimen as things stand. DO NOT PUBLISH unless a fresher source shows a standing trunk again."
+    },
+    {
+      "name": "Pigeon Plum",
+      "species": "Pigeon Plum (Coccoloba diversifolia)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden (Northside pond)",
+      "reason": "National Champion, destroyed by Hurricane Irma (Sept 2017) per the garden's own summary ('Hurricane Irma destroyed one Champion tree, the Pigeon Plum') and its 2024 status page ('Destroyed'). Dead. DO NOT PUBLISH."
+    },
+    {
+      "name": "Black Olive",
+      "species": "Black Olive (Bucida buceras)",
+      "location_hint": "Key West Tropical Forest & Botanical Garden (Boardwalk)",
+      "reason": "Florida Challenger, but the garden's own 2024 post-Irma status page says 'Down but growing suckers' (photo caption: 'Challenger | Damaged'), the same shape as Milkbark: the champion trunk itself is down and what remains is regrowth from the base, not a standing specimen. Wikipedia's garden article (2026-08-23) still lists it as a current Florida Challenger with no damage noted, which conflicts with the garden's own firsthand account and may mean it has recovered; no fresher primary-source status was found this pass (Wayback CDX shows no capture newer than 2024-07-21, live site blocked by a bot-challenge). Left blocked rather than published on the more cautious, firsthand source; worth rechecking if a newer garden status page ever becomes available."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "eyw_001",
+    "name": "The Cuban Lignum Vitae",
+    "species": "Cuban Lignum Vitae (Guaiacum officinale)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island, Key West, FL 33040 (Boardwalk section)",
+      "latitude": 24.57374,
+      "longitude": -81.74931,
+      "neighbourhood": "Stock Island"
+    },
+    "verified_sources": [
+      "http://web.archive.org/web/20240721221529/https://www.keywest.garden/our-gallery-of-champions/",
+      "https://en.wikipedia.org/wiki/Key_West_Tropical_Forest_%26_Botanical_Garden"
+    ],
+    "access": "Paid admission (nominal fee; free for Key West/Monroe County locals on the first Sunday of every month); open daily. Stands within the garden's public grounds on the Boardwalk.",
+    "transport": "No direct city bus to the garden gate; the Lower Keys Shuttle (city of Key West) stops at US 1 / College Road on Stock Island, a short walk away. By car, about 4 km / 10 minutes from Old Town Key West, with on-site parking.",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "Florida (State) Champion Guaiacum officinale, on the garden's Boardwalk. Two independent sources agree: the garden's own 2024 post-Hurricane-Irma status page lists it 'OK' (undamaged, one of the few champions the storm spared), and Wikipedia's article on the garden (last edited 2026-08-23) independently lists it as Florida Champion. No live snapshot newer than 2024-07-21 exists in the Wayback CDX index as of 2026-09-25 (checked directly), and the garden's own site returns a bot-challenge to automated fetches, so 2024 is the newest status available; nothing found since suggests a change. No age or girth published anywhere found. Lignum vitae (ironwood) is one of the densest, slowest-growing timbers in the world, which is itself the reason a specimen this size holds a state title; worth a line for the writer. Garden founded 1936 as a WPA hardwood-hammock project (ArbNet), but no source ties this specific tree to that planting date, so no age should be inferred from it."
+  },
+  {
+    "id": "eyw_002",
+    "name": "The Barringtonia",
+    "species": "Fish Poison Tree (Barringtonia asiatica)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island, Key West, FL 33040 (Boardwalk section)",
+      "latitude": 24.57374,
+      "longitude": -81.74931,
+      "neighbourhood": "Stock Island"
+    },
+    "verified_sources": [
+      "http://web.archive.org/web/20240721221529/https://www.keywest.garden/our-gallery-of-champions/",
+      "https://en.wikipedia.org/wiki/Key_West_Tropical_Forest_%26_Botanical_Garden"
+    ],
+    "access": "Paid admission (nominal fee; free for Key West/Monroe County locals on the first Sunday of every month); open daily. Stands within the garden's public grounds on the Boardwalk.",
+    "transport": "No direct city bus to the garden gate; the Lower Keys Shuttle (city of Key West) stops at US 1 / College Road on Stock Island, a short walk away. By car, about 4 km / 10 minutes from Old Town Key West, with on-site parking.",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "Florida Champion Barringtonia asiatica, on the Boardwalk. Two independent sources agree: garden's own 2024 post-Irma status page lists it 'OK', Wikipedia's garden article (edited 2026-08-23) independently lists it as Florida Champion. Species is native to Indo-Pacific shorelines, not Florida; its large white-and-pink powderpuff flowers open at night and its fibrous, angular fruit (the 'box fruit' or fish-poison fruit, used traditionally to stun fish) floats and disperses by sea, which is a good visual/story hook. No age or girth published anywhere found. Newest available status is the 2024-07-21 Wayback snapshot; no newer capture exists and the live site blocks automated fetches with a bot-challenge."
+  },
+  {
+    "id": "eyw_003",
+    "name": "The Locustberry",
+    "species": "Long Key Locustberry (Byrsonima lucida)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island, Key West, FL 33040 (Western Loop)",
+      "latitude": 24.57374,
+      "longitude": -81.74931,
+      "neighbourhood": "Stock Island"
+    },
+    "verified_sources": [
+      "http://web.archive.org/web/20240721221529/https://www.keywest.garden/our-gallery-of-champions/",
+      "https://en.wikipedia.org/wiki/Key_West_Tropical_Forest_%26_Botanical_Garden"
+    ],
+    "access": "Paid admission (nominal fee; free for Key West/Monroe County locals on the first Sunday of every month); open daily. Stands within the garden's public grounds on the Western Loop.",
+    "transport": "No direct city bus to the garden gate; the Lower Keys Shuttle (city of Key West) stops at US 1 / College Road on Stock Island, a short walk away. By car, about 4 km / 10 minutes from Old Town Key West, with on-site parking.",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "National Champion Byrsonima lucida, on the Western Loop. Two independent sources agree: garden's own 2024 post-Irma status page lists it 'OK', Wikipedia's garden article (edited 2026-08-23) independently lists it as National Champion. American Forests' own tree page for this exact specimen (americanforests.org/tree/long-key-locustberry-fl/) could not be read directly this pass either by WebFetch (served unrelated generic Champion Tree Program content, apparently a JS-rendered page that doesn't return real content to a plain fetch) or by curl with a browser user-agent (page loaded, 439KB, but the word 'locustberry' does not appear anywhere in the raw HTML, confirming it's client-rendered). A search-engine AI summary reported circumference 57in, height 17ft, crown spread 17ft, 78 total points, crowned 2014, but per this project's rule that a search summary is a lead and never a source, those specific figures are NOT included here as verified and should not be used until someone can actually load that page (or the American Forests national register PDF, which downloaded but is client-rendered/compressed and could not be text-extracted in this pass either). Locustberry is normally a shrubby small tree to about 15ft; a National Champion specimen at 17ft is already notable for the species, which is a usable fact once someone confirms it on the primary page. No age or girth confirmed to this project's standard."
+  },
+  {
+    "id": "eyw_004",
+    "name": "The Arjan Almond",
+    "species": "Arjun (Terminalia arjuna)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island, Key West, FL 33040 (Boardwalk section)",
+      "latitude": 24.57374,
+      "longitude": -81.74931,
+      "neighbourhood": "Stock Island"
+    },
+    "verified_sources": [
+      "http://web.archive.org/web/20240721221529/https://www.keywest.garden/our-gallery-of-champions/",
+      "https://en.wikipedia.org/wiki/Key_West_Tropical_Forest_%26_Botanical_Garden"
+    ],
+    "access": "Paid admission (nominal fee; free for Key West/Monroe County locals on the first Sunday of every month); open daily. Stands within the garden's public grounds on the Boardwalk.",
+    "transport": "No direct city bus to the garden gate; the Lower Keys Shuttle (city of Key West) stops at US 1 / College Road on Stock Island, a short walk away. By car, about 4 km / 10 minutes from Old Town Key West, with on-site parking.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "SOURCES DISAGREE ON TITLE, both alive, neither says damaged: the garden's own 2024 gallery page calls it a 'Former Champion' status 'OK' among its 'Historic Legacy Trees' (a group it associates with the 1936 WPA planting, though no source names this individual tree's planting date, so no age should be inferred); Wikipedia's garden article (2026-08-23) instead lists it as a current 'Florida Challenger', one of the seven named champions/challengers in its list, with no mention of it being a lapsed or former title. Report both in the story rather than picking a winner: it holds or once held a Florida-level Terminalia arjuna title. Species is an Indian riverine tree (arjuna in Ayurvedic medicine, sacred in some traditions), an unusual planting for a Florida Keys garden and a decent hook. No age or girth found."
+  },
+  {
+    "id": "eyw_005",
+    "name": "The Wild Dilly",
+    "species": "Wild Dilly (Manilkara bahamensis)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island, Key West, FL 33040 (West Loop)",
+      "latitude": 24.57374,
+      "longitude": -81.74931,
+      "neighbourhood": "Stock Island"
+    },
+    "verified_sources": [
+      "http://web.archive.org/web/20240721221529/https://www.keywest.garden/our-gallery-of-champions/",
+      "https://en.wikipedia.org/wiki/Key_West_Tropical_Forest_%26_Botanical_Garden"
+    ],
+    "access": "Paid admission (nominal fee; free for Key West/Monroe County locals on the first Sunday of every month); open daily. Stands within the garden's public grounds on the West Loop.",
+    "transport": "No direct city bus to the garden gate; the Lower Keys Shuttle (city of Key West) stops at US 1 / College Road on Stock Island, a short walk away. By car, about 4 km / 10 minutes from Old Town Key West, with on-site parking.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "ALIVE, but storm-damaged and sources disagree on current title, so flagged rather than presented as an intact champion. The garden's own 2024 post-Hurricane-Irma status page (Sept 2017 storm) is explicit and in its own words: 'Wild Dilly (West Loop) - Partially down but still alive', listed as 'Former National Champion | Damaged' in its photo captions. The Key West Botanical Garden Society's own 2017 damage report to the American Public Gardens Association independently corroborates that this hurricane badly hit the garden's specimen trees generally (major wind damage across the grounds, most of the 81-year-old canopy affected). Wikipedia's garden article, last edited 2026-08-23, by contrast lists it plainly as a current 'National Champion' with no damage noted, which may mean it has recovered enough to keep the title, or may simply be an incomplete update; no fresher primary-source status than the 2024 garden page was found (checked Wayback CDX through today, no capture newer than 2024-07-21; the live site blocks automated fetches with a bot-challenge). Write it honestly as storm-damaged but alive, per the source's own words, rather than as a pristine champion. No age or girth found."
+  }
+]
