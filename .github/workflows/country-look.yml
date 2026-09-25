@@ -1,0 +1,22 @@
+# Who are the visitors from a country: pages, referrers, browsers, OS, per day.
+# Manual only. Written 2026-09-26 to answer where Singapore's traffic comes from.
+name: Country look
+on:
+  workflow_dispatch:
+    inputs:
+      countries:
+        description: "Country codes, space separated"
+        default: "SG US DE"
+permissions:
+  contents: read
+jobs:
+  look:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ask Cloudflare
+        env:
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          COUNTRIES: ${{ inputs.countries }}
+        run: python3 scripts/country_look.py $COUNTRIES
