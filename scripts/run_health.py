@@ -602,7 +602,11 @@ PROBE_MIN_TURNS = 5         # below this it never really started: usage limit, n
 # Back to 1800 / 260 on 2026-09-24 (Hidde: "zet het budget maar terug"): the
 # raised budget cost about twice the minutes per tree by its second week
 # (5.4 -> 9.1) and the shared subscription ran dry for his own sessions.
-WEEK_BUDGET_MINUTES = 1800  # backstop only; the death brake is the real governor
+# Week to 3000 on 2026-09-26: Hidde's own usage meter moved only 5% over a
+# day of ~250 machine minutes, so 1800 was leaving most of the week unused.
+# Minutes are a proxy for tokens and a poor one; his meter is the truth, and
+# the limit-death brake still yields the moment the real wall is felt.
+WEEK_BUDGET_MINUTES = 3000  # backstop only; the death brake is the real governor
 # And the week has to be spread, not raced. A weekly budget alone front-loads:
 # the loop would spend all thousand minutes by Wednesday and leave the back half
 # of the week with a machine that starts and dies in seconds, which is the same
