@@ -18153,6 +18153,30 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-25T17:21:33+00:00",
+   "date": "2026-09-25",
+   "run_id": "36166582367",
+   "minutes": 56.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 310,
+   "denials": 14,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; for ...), Bash(cat ; import ; path ; d ...), Bash(cd && for ; do ; cat ...), Bash(cd ; for ; do ; python3 ...), Bash(curl | python3 ; import ; html ...), Bash(env | grep | sed), Bash(for ; do ; python3 | head ...), Bash(for ; do ; python3 | tail ...), Bash(python3 ; import ; d ; leads ...), Bash(python3 ; import ; d ; rows ...), Bash(rm && echo), Bash(subshell python3 ; import ; pairs ; ? ...), Bash(tail | xxd)",
+   "ended": "success",
+   "tokens": 18585306,
+   "claims_held": [],
+   "commits": 5,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "seville",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [

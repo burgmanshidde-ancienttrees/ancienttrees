@@ -10,6 +10,19 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-25 - Night run 2026-09-25 17:21 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 56.8 minutes of its 120 minute window, 310 turns, 14 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: The site build and the higashi-hiroshima verify agent are both running in the background — I'll get notified when each completes. Pausing here rather than polling further.
+- Attempt 2: That scheduling tool was the wrong mechanism for this session (it's for `/loop`, not this night-run harness) — cancelled it. The background verify-pass agent will notify me automatically when it finishes; I'll pick up the write/merge/commit work then.
+- Attempt 3: This will notify me when the astro build process ends. I'll wait for that.
+- Attempt 4: The site build is running in the background — I'll wait for it to finish rather than poll.
+
 ## 2026-09-25 - Night run 2026-09-25 14:50 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.2 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). 2 commit(s), none of them a published tree.
