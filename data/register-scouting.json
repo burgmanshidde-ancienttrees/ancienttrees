@@ -9,6 +9,12 @@
  },
  "places": [
   {
+   "place": "Chattanooga",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-09-25, on scout_next.py --target naming Chattanooga (#75) as no supply/no verdict. The city runs a 'Notable Trees Program' (Tree Commission, chattanooga.gov), but it is a nomination-and-review process, not a published register: the criteria and permit-to-publish PDFs describe how a tree gets proposed and approved, and no downloadable list, map or ArcGIS layer of the trees actually designated could be found (searched the city's own GIS hub, chattadata-chattgis.hub.arcgis.com, and arcgis.com's public item search for 'notable tree chattanooga': no matching dataset). The statewide Tennessee Urban Forestry Council 'Landmark, Historic & Heritage Tree Registry' (tufc.com) is a real semantically-filtered directory with names, categories and county, but it names only ONE Hamilton County / Chattanooga entry (the Bonny Oaks Willow Oak) and carries no coordinates on any entry, no licence statement, and no measurements; it is a lead source for a from-zero pass, not supply on its own, and one tree does not clear the four-tree floor. PERMISSION/DIRECT CONTACT is the only route to the city's own list: ask the Tree Commission (423-643-6311) whether the Notable Tree register can be shared, which is Hidde's to send under hard rule 4. Do not re-scout without that answer or a new angle."
+  },
+  {
    "place": "Netherlands",
    "country": "Netherlands",
    "status": "imported",
@@ -232,6 +238,12 @@
    "country": "",
    "status": "imported",
    "note": "Portugal ICNF (arvoredo de interesse publico) is imported nationally and covers Sintra. Not a scouting gap, a ledger gap: the tool read it as unscouted because nobody had written the line."
+  },
+  {
+   "place": "Portugal",
+   "country": "Portugal",
+   "status": "imported",
+   "note": "ICNF's national arvoredo de interesse publico register is imported whole-country to data/registers/portugal-icnf.json (555 entries). The Sintra row above already said this but never generalised, because scout_next.py only reads a country-wide verdict from an entry where place equals country; Sintra's own note calls that a ledger gap and this entry is the fix, found 2026-09-25 when --target sent Coimbra to be re-scouted despite the register already covering it (Coimbra's own supply is thin regardless: the nearest ICNF rows are Mealhada/Bucaco and Cantanhede/Penacova, 15-20km out, not within the city's own radius). A city below target with no register rows now reads as answered rather than unscouted; further Portuguese supply is a writing or municipal-register question, not a national rescout."
   },
   {
    "place": "Cadiz",
