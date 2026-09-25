@@ -1,0 +1,91 @@
+{
+  "city": "Mallorca",
+  "leads": [
+    {
+      "name": "EUCALIPTUS DE SA BASTIDA",
+      "note": "Register lists ownership as Publica CAIB, Alaro, but independent web search described it as standing on a private property near the old Sa Bastida fountain orchard, and gave a modest age (75-100 years, not remarkable for the species). Ownership conflict not resolved this pass; register page URL guessed incorrectly and not refetched. Needs a direct register page fetch and an access check before it can ship."
+    },
+    {
+      "name": "PLATANERS DE S ESCORXADOR",
+      "note": "Ensemble of 6 plane trees, Alaro, Publica AJUNTAMENT D ALARO, at the old municipal slaughterhouse (s escorxador). Not chased this pass; worth checking whether it reads as one compact collectible ensemble (a plaza/courtyard) under the ensemble rule."
+    },
+    {
+      "name": "PINS DE PLANICIA",
+      "note": "Ensemble register entry, Banyalbufar, Publica CAIB, originally 4 pines, register already records 2 dead of 4. Not chased this pass; would need current-status check on the surviving two before publishing as an ensemble."
+    },
+    {
+      "name": "ALADERNS DE MINER",
+      "note": "Ensemble of 6 Phyllirea latifolia, Escorca, Publica CAIB. Not chased this pass, unusual/obscure species for a lead page."
+    },
+    {
+      "name": "ARAUCARIES DE LA PUNTA",
+      "note": "Ensemble of 2 Araucaria heterophylla, Pollenca, Publica CIMa, on the road near Es Moll / towards Formentor. Not chased this pass beyond a first search; worth a dedicated look given the Pollenca/Formentor day-trip appeal CLAUDE.md flags for this island."
+    },
+    {
+      "name": "ELS ESTANCA-SANGS",
+      "note": "Register entry (not a single tree; 3 ash trees originally catalogued, register already records 2 dead of 3), Santa Maria del Cami, Publica CIMA. Not chased this pass; the one survivor would need its own current-status check."
+    },
+    {
+      "name": "PLATER DE LA FONT DE VALELLA",
+      "note": "Plane tree at a public fountain/spring in Selva. Register page URL could not be found this pass (guessed URLs 404d); ajselva.net has a PDF (fontsdecamarataidevalella.pdf) about the fountains that was not fetched. Looks like a solid public-fountain candidate for a future pass."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "LLEDONER DE SOR CLARA ANDREU",
+      "reason": "access uncertain. Register id 431, stands in the cloister of the Jeronimas convent (Monestir de Sant Bartomeu, Inca), which has been a cloistered (clausura) community since 1534. Only access mention found is a 2013 newspaper snippet about a monthly (last Thursday) exhibition opening, not confirmed current. Two good sources exist for the tree itself (CAIB register, es.wikipedia), so if a current, reliable access confirmation turns up this is otherwise publishable."
+    },
+    {
+      "name": "GINEBRO DE SON CURT",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Alaro, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "PI DE CA DON JAUME OLIVER",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Alcudia, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "ARBRE DE LA TRAPA",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Andratx, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "OLIVERA SA TRONA DE CA NA MARCA",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Binissalem, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "ALZINA DE SES TRUGES",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Escorca, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "PI DE SA CAPELLETA",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Felanitx (Bisbat de Mallorca land), no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "CEDRE DE MASSANELLA",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Mancor de la Vall, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "GARROVER DE SON MORA",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Porreres, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "LLEDONERS DE SA CAMPANETA",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Puigpunyent, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "REURES DE SA RIERA",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Puigpunyent, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "CASETA DE SES ALZINES",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Sencelles, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "MATA DE SON JOAN ARNAU",
+      "reason": "BLOCKED, private land. Balears register (island Mallorca): ownership Privada, holder particular. Sineu, no evidence found this pass of public access; never ship unless a source shows it is genuinely open to visitors."
+    },
+    {
+      "name": "OLIVERA DE SON MUNTANER (NA CAPITANA)",
+      "reason": "BLOCKED, private land, on the Son Muntaner golf course, Valldemossa (also recorded in data/leads/palma-de-mallorca.json). Never ship."
+    }
+  ]
+}
