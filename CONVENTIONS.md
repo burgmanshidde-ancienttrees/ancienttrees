@@ -2615,3 +2615,10 @@ in all eight languages.
 Breadcrumbs sit in one thin line under the site header, visible on a phone. Then the photograph, full width, carrying its controls as round buttons ON it: a back arrow top-left, the actions (download, invite, completed, save) top-right, the map inset bottom-right. There is no separate bar between header and photograph. Share lives in the pinned bottom bar.
 
 **What we took:** the same. Our app's tree page puts share and report in a toolbar row above the photo because iOS has a navigation bar with a back button there; on the web that row was a white strip holding two icons (Hidde: "logisch op app want terug knop maar niet logisch op web"). So on the web: breadcrumbs line, then the photograph with back (top-left), share and report (top-right) and the map inset (bottom-right). Back returns to the previous page when it was one of ours and to the city page otherwise.
+
+## The globe on a profile (2026-09-25)
+
+**Reference: Polarsteps' profile globe** (Hidde's own profile in the app, the reference he named: "doe gewoon Polarsteps na, mensen kunnen inzoomen als ze willen").
+The whole sphere floats on black space in the room above the profile sheet, never cut by it. It is a control, not a picture: a finger spins it and a pinch zooms in down to the ground.
+
+**What we took:** the same. `GlobeCover` sizes the MapKit view to the part of the screen the sheet does not cover and below the status bar, so the full planet shows on every phone. Pan and pinch are on, turning and tilting off, so north stays up. The slow drift stops at the first touch and never fights a finger. What it fixed: the globe used to fill the screen and centre on the sheet's edge, so half the Earth, and with it any collection in the southern hemisphere, sat under the sheet.
