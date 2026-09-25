@@ -13,6 +13,64 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-25
+
+Reviewed roughly 100 commits since the last review (2026-09-24) through
+`7e3a5626` (HEAD): a busy day for the assembly line (Belfast, Budapest,
+Coimbra, Glasgow gained Tree-of-the-Year winners; Mallorca opened at six
+trees; Key West verified, Christchurch, Rotterdam, Salzburg, Utrecht, Zwolle,
+Graz all deepened), several self-caught corrections (a Hiroshima verify pass
+caught its own duplicate before it could overwrite hir_018; two 2026-09-24
+WARNs, CITY_QUEUE.md's stale target table and the mailcheck.py conflict-marker
+incident, both answered with real fixes and a new build-time gate,
+`check_scripts_are_valid_python()`, plus a pre-push `py_compile` check), and
+several web/app pairs shipped together (city/country as two links on the tree
+page, the sign-in-bar-says-Sign-in-after-renewal fix, app sign-out now
+revoking the server session as the web already did). Confirmed rather than
+trusted: `python3 scripts/preflight.py` (640 cities, 0 new problems, only
+pre-existing NOTEs), `python3 scripts/superlatives.py` (396 claims, no
+collisions), and a from-scratch parse of every `scripts/*.py` file (172
+files, 0 SyntaxErrors), matching what `check_scripts_are_valid_python()`
+claims to guard. `scripts/jslits.py` reports clean. `scripts/qa.py` could not
+be run to completion in this sandbox (no network egress), same as previous
+reviews. Spot-read the new Belfast, Budapest and Mallorca stories against
+Step 2/3: no banned words, no em dashes, ages state their basis, no bridge
+claims found, access lines pass the three-test hard-rule-10 check honestly
+(paid/booked/open-gate all stated plainly). Read the built
+`belfast/peace-tree-of-woodvale-park.html` (today's newest tree page) in
+full: inline scripts parse, the age chip matches `age_min`/`age_max`, the
+place line correctly omits the country link because a neighbourhood is
+present (matches `placeParts()`'s own rule). Read the six rotated app
+screenshots (profile, profile-signed-in, refused, search, signin,
+signin-email): all clean, no contradicted promises, no builder-speak, "Add a
+tree" copy still reads as the reader-is-the-subject register PRODUCT_COPY.md
+asks for.
+
+**NOTE — `place-line.ts`'s own comment names a debt this corpus has paid for
+twice already, and it is worth a second look rather than a re-park.**
+`26dfdc6b` (today) ports the app's `TreeDetail.placeParts` district-truncation
+rule into a new `site/src/lib/place-line.ts`, and its header comment says so
+outright: "Kept in step with the Swift copy by hand for now; the better home
+is a field in /api/trees.json that the app reads." Compared line by line
+against `ios/AncientTrees/AncientTrees/Screens/TreeDetail.swift:999-1013`,
+the two are currently identical (same 28-character cutoff, same
+bracket-stripping, same case-insensitive contains check), so nothing is
+broken today. But this is exactly the shape CLAUDE.md's 2026-08-25 decision
+("is this an ANSWER or a RULE?") was written to stop: a threshold and a
+join decision is a RULE, and CLAUDE.md already lists three cases where
+hand-porting one into Swift silently drifted (the photo thumbnail buckets,
+which photograph fronts a card, and whether a licence obliges a credit). The
+author here saw the trap and named it in a comment rather than avoiding it,
+which is better than the three prior cases, but a comment is prose and this
+corpus's own ratchet says a lesson that appears more than once becomes a
+check rather than a note. Worth deciding deliberately rather than letting a
+fourth hand-ported rule sit on the shelf next to the three that already
+drifted: either move the district line to `/api/trees.json` now while the
+two copies are still identical (cheapest possible moment to do it), or add
+`crosscheck.py`-style coverage for this specific rule.
+
+---
+
 ## 2026-09-24
 
 Reviewed commits since the last review (a4ec782e) through HEAD (0119ed4e),
