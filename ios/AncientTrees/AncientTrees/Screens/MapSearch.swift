@@ -212,7 +212,10 @@ struct MapSearch: View {
         }
         for c in biggestCities {
             let n = Self.fold(c.name)
-            if Self.startsAWord(n, q) || Self.fold(c.country).hasPrefix(q) || n.contains(q) {
+            // Sevilla finds Seville: the other-language names travel in
+            // browse.json, the same list the website's search reads.
+            let other = catalogue.facets.aka(city: c.slug).contains { Self.startsAWord(Self.fold($0), q) }
+            if Self.startsAWord(n, q) || Self.fold(c.country).hasPrefix(q) || n.contains(q) || other {
                 places.append(Place(id: "c:" + c.slug, name: c.name,
                                     sub: "\(c.country) · \(treesLabel(c.count))",
                                     icon: "building.2",
