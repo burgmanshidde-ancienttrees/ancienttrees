@@ -206,6 +206,25 @@ def main():
         print("reading the feeds from %s (a local build, not the live site)\n"
               % args.source)
 
+    # The live site can be BEHIND this checkout: the machine commits trees and
+    # the deploy takes minutes. Refreshing from it then writes an older bundle
+    # over a newer one, which checkouts.py --fix did on 2026-09-25 (3374 trees
+    # to 3348, while the deploy of the newer data was still running). So a
+    # live trees feed smaller than what this checkout publishes is refused.
+    if not args.source and not args.check:
+        _, published = local_drift()
+        try:
+            n_live, _ = counted(fetch("trees", None))
+        except Exception:
+            n_live = None
+        if published and n_live is not None and n_live < published:
+            print("the live site publishes %d trees and this checkout %d, so it "
+                  "has not deployed yet; nothing written." % (n_live, published))
+            print("Wait for the deploy, or read a local build:")
+            print("  cd site && npx astro build && cd .. && "
+                  "python3 scripts/appdata.py --from site/dist/api")
+            return 1
+
     drift = 0
     unreachable = []
     for name in FEEDS:
