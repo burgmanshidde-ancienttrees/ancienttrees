@@ -17,7 +17,7 @@ import sys
 import urllib.request
 
 API = "https://api.cloudflare.com/client/v4/graphql"
-FALLBACK_TAG = "3c5f7c8dd0e00e8d3ba0d0a4d1a3c5e2"
+FALLBACK_TAG = "949aa102070e5f296c9cc0d5bc1e1891"  # the one daily_digest.py uses
 DAYS = 8
 CUTS = [("pages", "requestPath", 20), ("referrers", "refererHost", 10),
         ("browsers", "userAgentBrowser", 8), ("os", "userAgentOS", 8),
