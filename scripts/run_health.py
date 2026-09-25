@@ -610,10 +610,11 @@ WEEK_BUDGET_MINUTES = 1800  # backstop only; the death brake is the real governo
 # it running every day, and a seventh is still one full 120-minute window plus
 # change, which is the shape the numbers want (a tree every 2.4 minutes in a
 # 40-to-70 minute run against every 25 minutes in a run under 20).
-# Day raised 50% to 390 on 2026-09-26 (Hidde: "vergroot de dagrem maar ...
-# laten we m met 50% vergroten"), the week left at 1800: on 09-25 two knocks
-# died in seconds on the day's share while the week stood at 1075 of 1800.
-DAY_BUDGET_MINUTES = 390   # was 260, a seventh of the week
+# Day doubled to 520 on 2026-09-26 (Hidde: "hij stopte na 3 runs dus maak
+# maar 2 keer zo groot"), the week left at 1800: on 09-25 two knocks died in
+# seconds on the day's share while the week stood at 1075 of 1800. At 520 a
+# day the week can run out before Sunday; that is the intended backstop.
+DAY_BUDGET_MINUTES = 520   # was 260, a seventh of the week
 LIMIT_DEATH_WINDOW_HOURS = 6   # how far back to look for "the window is shut right now"
 LIMIT_DEATHS_TO_BACK_OFF = 2   # one can be a blip; two in six hours is the wall
 PROBE_MINUTES = 20          # kept for the older callers that read it
