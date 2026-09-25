@@ -1,0 +1,77 @@
+[
+  {
+    "id": "kcy_001",
+    "name": "General Grant Tree",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "roughly 1,650 years",
+    "age_min": 1500,
+    "age_max": 1800,
+    "girth_cm": 3280,
+    "height_m": 81.5,
+    "location": {
+      "address": "General Grant Grove, Kings Canyon National Park, Fresno County, California",
+      "latitude": 36.7488,
+      "longitude": -118.9709,
+      "neighbourhood": "Grant Grove, on the paved General Grant Tree Trail loop"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/General_Grant_(tree)",
+      "https://www.nps.gov/places/000/general-grant-tree.htm"
+    ],
+    "access": "Paid entry (Kings Canyon National Park entrance fee, shared with Sequoia NP); short paved accessible loop trail from the Grant Grove parking area, benches and audio description available.",
+    "transport": "No public transit; reached via Highway 180 from Fresno, about 1.5 hours' drive.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Second-largest giant sequoia by trunk volume alone (46,608 cu ft / 1,320 m3), after General Sherman; NPS notes it drops to third if branch volume is counted with the President Tree's trunk volume, so the exact rank depends on the measure used, not a source disagreement to hide. Proclaimed the 'Nation's Christmas Tree' by President Coolidge in 1926 and declared a 'National Shrine' by President Eisenhower in 1956, a war memorial and the only living object with that designation. Named in 1867 for Ulysses S. Grant. Age estimate 'roughly 1,650 years' per Wikipedia's cited recent estimate; NPS gave no age figure, so this is single-sourced and flagged accordingly."
+  },
+  {
+    "id": "kcy_002",
+    "name": "Robert E. Lee Tree",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 2690,
+    "height_m": 77.6,
+    "location": {
+      "address": "General Grant Grove, Kings Canyon National Park, Fresno County, California",
+      "latitude": 36.74806,
+      "longitude": -118.97111,
+      "neighbourhood": "Grant Grove, near the General Grant Tree Trail"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Robert_E._Lee_Tree",
+      "https://sequoiaquest.com/robert-e-lee.html"
+    ],
+    "access": "Paid entry (Kings Canyon National Park entrance fee); Grant Grove.",
+    "transport": "No public transit; reached via Highway 180 from Fresno, about 1.5 hours' drive.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Second-largest sequoia in Grant Grove and 11th largest known in the world (Wikipedia's rank) or 10th by Sequoia Quest's count; both sources agree on the same 1985 Wendell Flint/Mike Law measurements (height 254.7ft/77.6m, volume ~40,102 cu ft/1,135.6 m3). Named around 1875 by Richard Field, a former Confederate lieutenant, for Robert E. Lee. In 2020 the park removed references to the name from official interpretive materials, though the formal name itself can only be changed by Congress or NPS, so it still appears here as the tree's documented name. No age estimate found in either source."
+  },
+  {
+    "id": "kcy_003",
+    "name": "Boole Tree",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "over 2,000 years",
+    "age_min": 2000,
+    "age_max": 2500,
+    "girth_cm": 3440,
+    "height_m": 81.9,
+    "location": {
+      "address": "Converse Basin Grove, Giant Sequoia National Monument, Sequoia National Forest, Fresno County, California",
+      "latitude": 36.82389,
+      "longitude": -118.94917,
+      "neighbourhood": "Converse Basin, reached via the Boole Tree Trail loop off Forest Road 13S55, about 4 miles north of Grant Grove Village on Highway 180"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Boole_Tree",
+      "https://www.altaonline.com/dispatches/a7183/boole-sequoia-tree-matt-jaffe/"
+    ],
+    "access": "Free (no park entrance fee inside the National Forest/Monument); reached by a roughly 2.2-3 mile loop trail with about 500-570 ft of elevation gain from the Boole Tree Trailhead on FS Road 13S55, which per the Forest Service's own current trail page is open seasonally (late spring to early fall) and not recommended for low-clearance vehicles. IMPORTANT: land manager is the U.S. Forest Service (Sequoia National Forest / Giant Sequoia National Monument, Hume Lake Ranger District), NOT the National Park Service, though it sits immediately beside Kings Canyon NP.",
+    "transport": "No public transit; reached via Highway 180 north of Grant Grove Village.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Largest giant sequoia by base circumference (113 ft / 34.4m, both sources agree this is the greatest of any sequoia), 6th largest by volume (43,931 cu ft / 1,244 m3), 8th tallest. Stands isolated above the Kings River in Converse Basin, once the largest sequoia grove in the world before 1897-1907 logging felled roughly 8,000 sequoias there; the Boole survived, with a disputed legend that logging supervisor Frank Boole himself spared it (his daughter denied this; one account credits Sierra Club negotiation, another says it was simply impractical to fell). John Muir measured the same tree in 1877 under the name 'Hugh Miller'. Coordinates are a general Converse Basin/trailhead-area estimate converted from the Wikipedia DMS coordinate (36 49 26 N, 118 56 57 W = 36.82389,-118.94917); marking approximate since no tree-level pin beyond that DMS figure was cross-checked against a second geocoded source. Access road closed to vehicles for a period after the 2015 Rough Fire, adding 5 miles to the hike; current Forest Service page (fs.usda.gov/r05/sequoia/recreation/trails/boole-tree-trail) describes normal seasonal vehicle access to the trailhead again, so this is current as of this pass."
+  }
+]

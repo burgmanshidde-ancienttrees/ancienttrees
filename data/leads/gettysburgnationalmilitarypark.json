@@ -1,0 +1,35 @@
+{
+  "leads": [
+    {
+      "name": "McMillan Woods witness trees (five trees)",
+      "species": "Unknown, mixed",
+      "note": "Civil War Cycling's witness-tree survey lists five trees along W. Confederate Avenue in McMillan Woods, all reported alive, but without species identification or individual coordinates. Worth a follow-up pass to identify species and pin at least one before it could be delivered.",
+      "sources": ["https://civilwarcycling.com/index/gettysburg-witness-trees/"]
+    },
+    {
+      "name": "South Cavalry Field witness tree",
+      "species": "Unknown",
+      "note": "Listed alive but storm-damaged, on S. Confederate Avenue. No species or coordinate found this pass.",
+      "sources": ["https://civilwarcycling.com/index/gettysburg-witness-trees/"]
+    },
+    {
+      "name": "Culp's Hill white oak",
+      "species": "White Oak (Quercus alba)",
+      "note": "On Slocum Ave. Civil War Cycling's 2025 update notes trees at this location have been cut; status uncertain, needs a fresh check before delivering either way.",
+      "sources": ["https://civilwarcycling.com/index/gettysburg-witness-trees/"]
+    },
+    {
+      "name": "Baltimore Street sycamores (two trees, in town)",
+      "species": "Sycamore (Platanus occidentalis)",
+      "note": "In the town of Gettysburg itself rather than the battlefield proper, reported alive. Not chased this pass; would need exact address and to confirm public accessibility (street trees vs private property).",
+      "sources": ["https://civilwarcycling.com/index/gettysburg-witness-trees/"]
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The Honey Locust Witness Tree, Soldiers' National Cemetery",
+      "species": "Honey Locust (Gleditsia triacanthos)",
+      "reason": "DEAD. This was the single most famous Gettysburg witness tree, standing about 150 feet from the platform where Lincoln delivered the Gettysburg Address, and it was explicitly listed on the task brief as a candidate. It was badly damaged by lightning/storm in August 2008 and an NPS 2017 notice confirms it was still alive and being cared for then ('will continue to be cared for by park staff', excluded from a hazardous-tree removal round). But Civil War Cycling's witness-tree survey (2024/2025-updated) reports it deceased circa 2024 and 'cut to a stump'. Never deliver a tree known to be dead; if a future pass finds a stronger, more current source contradicting this, re-check before publishing."
+    }
+  ]
+}

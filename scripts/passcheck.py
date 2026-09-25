@@ -870,7 +870,9 @@ def do_claim(target, kind, by, deepen=None):
     # and a reader's submission is the reason this exists for.
     if kind in ("verify", "write") and not deepen:
         match, _ = resolve(target, cities())
-        if match and match["n"] >= OPEN_FLOOR:
+        # Writing trees that are ALREADY VERIFIED is finishing work, not new
+        # deepening: refusing it would throw the verification away.
+        if match and match["n"] >= OPEN_FLOOR and not (kind == "write" and unmerged_research(match["slug"])):
             print(f"REFUSED: {match['city']} is already live with {match['n']} trees.")
             print("The work now is OPENING places, not deepening them (Hidde,")
             print("2026-09-26). Take a city at zero from `city_queue.py --next`, or a")

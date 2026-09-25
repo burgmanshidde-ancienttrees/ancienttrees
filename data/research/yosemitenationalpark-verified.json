@@ -1,0 +1,127 @@
+[
+  {
+    "id": "yos_001",
+    "name": "Grizzly Giant",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "roughly 2,995 years (plus or minus 250)",
+    "age_min": 2745,
+    "age_max": 3245,
+    "girth_cm": 2950,
+    "height_m": 63.7,
+    "location": {
+      "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+      "latitude": 37.5035139,
+      "longitude": -119.6006639,
+      "neighbourhood": "Lower Mariposa Grove, on the Grizzly Giant Loop Trail, about 1 mile from the Arrival Area"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Grizzly_Giant",
+      "https://home.nps.gov/yose/planyourvisit/mg.htm"
+    ],
+    "access": "Paid entry (Yosemite National Park entrance fee); reached via the free seasonal shuttle from the Mariposa Grove Welcome Plaza to the Arrival Area, then about 1 mile on the Grizzly Giant Loop Trail (or a 2-mile hike each way on the Washburn Trail/Mariposa Grove Road when the shuttle is not running). Visitors with disability placards may drive to the Grizzly Giant parking area.",
+    "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "The oldest tree in Mariposa Grove and NPS's own page calls it 'the 3,000-year-old Grizzly Giant', consistent with Wikipedia's more precise 2,995 years plus or minus 250. 26th-largest living giant sequoia as of a 1990 measurement. Notable for an 18-foot lean and having lost over 80% of its bark and sapwood to repeated fire over the centuries, yet it remains alive and is the anchor of the Grizzly Giant Loop Trail. Named 'Grizzled Giant' in 1859 by publisher James Hutchings, commonly 'Grizzly Giant' by 1888."
+  },
+  {
+    "id": "yos_002",
+    "name": "California Tunnel Tree",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+      "latitude": 37.5033,
+      "longitude": -119.6009,
+      "neighbourhood": "Lower Mariposa Grove, just past the Grizzly Giant on the Grizzly Giant Loop Trail"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Tunnel_tree",
+      "https://home.nps.gov/yose/planyourvisit/mg.htm"
+    ],
+    "access": "Paid entry (Yosemite National Park entrance fee); on foot only via the Grizzly Giant Loop Trail from the Arrival Area (the old road through the tree was closed to vehicles in 1932 and converted to footpath). Cars can no longer pass through it.",
+    "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "The LAST giant sequoia tunnel tree still standing anywhere: a passage was cut through its base in 1895 by the Yosemite Stage and Turnpike Company for horse-drawn stages, as a lower-elevation, less-snowbound alternative to the more famous Wawona Tunnel Tree (which fell in 1969). Vehicle traffic through it ended in 1932 when Mariposa Grove Road was rerouted away from the Grizzly Giant. Confirmed alive today (NPS lists it as a current stop on the Grizzly Giant Loop Trail). No height, girth or age figures found in either source; coordinates are an estimate just past the Grizzly Giant on the same loop, not independently pinned, so marked approximate."
+  },
+  {
+    "id": "yos_003",
+    "name": "Faithful Couple",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+      "latitude": 37.5065,
+      "longitude": -119.5985,
+      "neighbourhood": "Mariposa Grove, on the Mariposa Grove Trail toward the upper grove"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Mariposa_Grove",
+      "https://home.nps.gov/yose/planyourvisit/mg.htm"
+    ],
+    "access": "Paid entry (Yosemite National Park entrance fee); reached via the Mariposa Grove Trail (about 7 miles round trip if walked from the Arrival Area, and generally combined with the upper-grove loop rather than walked as an out-and-back).",
+    "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A rare example of two giant sequoias that have fused together at the base, a single collectible point rather than two separate trees. NPS's own visitor page confirms it as a named stop on the Mariposa Grove Trail toward the upper grove, alongside the Clothespin Tree. No height, girth or age data found for it in either source. Coordinates are an approximate placement along the upper Mariposa Grove Trail, not independently pinned."
+  },
+  {
+    "id": "yos_004",
+    "name": "Clothespin Tree",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+      "latitude": 37.507,
+      "longitude": -119.598,
+      "neighbourhood": "Mariposa Grove, on the Mariposa Grove Trail near the Faithful Couple"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Mariposa_Grove",
+      "https://home.nps.gov/yose/planyourvisit/mg.htm"
+    ],
+    "access": "Paid entry (Yosemite National Park entrance fee); on the Mariposa Grove Trail, same route as the Faithful Couple.",
+    "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Repeated fires have burned a natural opening through its trunk reported by Wikipedia as roughly 70 feet (21m) tall and 16 feet (4.9m) wide, visible from 50 yards away; a second, independent description (extranomical.com, via search snippet only, not directly fetched) describes a similar tunnel about 40 feet tall wide enough for a car, so the two accounts agree on the shape of the feature (a large fire-carved opening) but not on its exact size, and that size disagreement is flagged rather than resolved. Confirmed as a current named stop on NPS's own Mariposa Grove Trail description. A cubic-footage figure attributed to Wikipedia (266 cubic feet) reads as implausibly small for a giant sequoia's total volume and looks like a data error or a measurement of the opening/a component rather than the whole tree; not used here per the physical-sanity-check rule. Alive; no age or full-tree dimension data found."
+  },
+  {
+    "id": "yos_005",
+    "name": "Bachelor and Three Graces",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+      "latitude": 37.5045,
+      "longitude": -119.6001,
+      "neighbourhood": "Lower Mariposa Grove, on the Grizzly Giant Loop Trail"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Mariposa_Grove",
+      "https://home.nps.gov/yose/planyourvisit/mg.htm"
+    ],
+    "access": "Paid entry (Yosemite National Park entrance fee); on the Grizzly Giant Loop Trail from the Arrival Area, same route as the Grizzly Giant and California Tunnel Tree.",
+    "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A group of four giant sequoias, one (the Bachelor) standing slightly apart from three others (the Three Graces) that grow very close together; described by Wikipedia as having intertwined roots, meaning if one falls it is likely to bring the others down with it, which is the reason to treat this as ONE collectible ensemble point rather than four separate entries. NPS's own visitor page confirms it as a named stop on the Grizzly Giant Loop Trail. A height figure of '254 feet' and a volume of '254 cubic feet' attributed to Wikipedia look like a data artifact (the same number twice, in unrelated units, for what should be a group of large trees) and are NOT used here per the physical-sanity-check rule; flagged as an unresolved source oddity rather than repeated as fact. No age data found."
+  }
+]

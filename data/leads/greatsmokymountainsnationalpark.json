@@ -1,0 +1,29 @@
+{
+  "leads": [
+    {
+      "name": "Third, larger tulip poplar near the Roman Columns",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "note": "Reported by a trip-report source as 'nearby' the Roman Columns (gsm_002) at Ramsey Cascades mile 2.6 and 'even larger', but not separately measured or pinned. Follow up to see if it can be distinguished and given its own coordinate.",
+      "sources": ["blog search summary, not independently fetched this pass"]
+    },
+    {
+      "name": "Largest Ramsey Cascades tulip poplar, over 7ft diameter",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "note": "Multiple sources describe an unnamed tulip poplar on the Ramsey Cascades trail at over 7 feet in diameter (roughly 670cm circumference), 'the largest tree you will see', somewhere in the old-growth cove beyond the foot log crossing. No mile marker or coordinate found this pass; may or may not be one of the Roman Columns pair.",
+      "sources": ["https://www.cabinsusagatlinburg.com/smoky-mountains-information/post/0/45/163/ramsey-cascades-trail-.php"]
+    },
+    {
+      "name": "Albright Grove eastern hemlocks",
+      "species": "Eastern Hemlock (Tsuga canadensis)",
+      "note": "Multiple sources describe large old hemlocks (5+ ft wide trunks) at Albright Grove, but the hemlock woolly adelgid has killed enormous numbers of Smokies hemlocks since the 2000s and at least one source notes 'huge hemlocks splintered, fell, and remained where they lay' in this same grove. No specific currently-alive, individually locatable hemlock confirmed this pass; needs a recent (post-2020) source before any hemlock could be delivered as an entry.",
+      "sources": ["https://www.ilovetrees.net/albright-grove/", "https://appvoices.org/2019/10/11/giants-of-the-smokies/"]
+    },
+    {
+      "name": "Cove Hardwood Nature Trail old growth",
+      "species": "Mixed (tulip tree, eastern hemlock, others)",
+      "note": "A 0.75-mile self-guided loop at the Chimneys Picnic Area with a numbered-stop brochure and old-growth cove hardwood forest, but no individually named or measured giant tree found in the sources checked this pass, and no PDF of the self-guiding booklet located. Worth a follow-up pass specifically to find or request the brochure content.",
+      "sources": []
+    }
+  ],
+  "blocked": []
+}

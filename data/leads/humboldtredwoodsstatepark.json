@@ -1,0 +1,24 @@
+{
+  "country": "United States",
+  "note": "Verification pass 2026-09-26 (_us-parks-west batch). Delivered 1 tree (Founders Tree), well short of the 4-tree floor.",
+  "leads": [
+    {
+      "name": "Rockefeller Tree (the Tall Tree)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "reason": "Named specimen on the Big Trees Trail in Rockefeller Forest, held the world's-tallest-tree title 1957 onward per search summaries; could not find a second directly-fetched source with real figures within the time box (famousredwoods.com and redwoodhikes.com both returned no usable body text to the fetch tool; only search-summary-level facts were available, which BRIEF_RESEARCH.md rules out as a source). Worth a retry from a session that can reach those pages, or via monumentaltrees.com in a browser session."
+    },
+    {
+      "name": "Stratosphere Giant",
+      "status": "lead",
+      "reason": "4th-tallest measured living redwood (Wikipedia, 112.94m/370.5ft, measured 2004), somewhere in Rockefeller Forest. Not researched for a precise, publicly-accessible location this pass; some very tall redwoods have deliberately unpublicized locations to protect them from damage (per the Hyperion/Grove of Titans precedent), so its exact accessibility needs checking, not assuming, before treating as a candidate."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Dyerville Giant",
+      "reason": "Fell in 1991; dead. Never an entry per hard rule and the brief's explicit instruction."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "gsm_001",
+    "name": "The Albright Grove Tulip Tree",
+    "species": "Tulip Tree / Yellow Poplar (Liriodendron tulipifera)",
+    "age_estimate": "over 200 years",
+    "age_min": 200,
+    "age_max": 300,
+    "girth_cm": 770,
+    "height_m": 41,
+    "location": {
+      "address": "Albright Grove Loop Trail, off Maddron Bald Trail, Great Smoky Mountains National Park, Tennessee",
+      "latitude": 35.76939,
+      "longitude": -83.26667,
+      "neighbourhood": "Albright Grove, an old-growth pocket about 3 miles in on the Maddron Bald Trail then onto the 0.75-mile Albright Grove Loop; the tree sits on a short spur off the loop near where it begins its descent"
+    },
+    "verified_sources": [
+      "https://appvoices.org/2019/10/11/giants-of-the-smokies/",
+      "https://internetbrothers.org/2014/12/25/maddron-bald-trail-to-albright-grove-great-smoky-mountains-national-park/",
+      "https://www.hikingproject.com/trail/7008040/albright-grove-loop-trail"
+    ],
+    "access": "Free, within Great Smoky Mountains National Park; reached via a signed spur off the Albright Grove Loop Trail, about 3 miles from the Maddron Bald trailhead.",
+    "transport": "No public transit; the trailhead is on Laurel Springs Road off Highway 321/73 near Cosby, TN. Roadside/trailhead parking.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Widely described as the largest tree in Albright Grove, a pocket of old growth the loggers who clear-cut most of the surrounding Smokies never reached (the land was sold to the park before Champion Fibre logged it). Two independent hiking/nature sources (Appalachian Voices, a regional environmental nonprofit, and a long-running hiking trip-report blog) agree on a circumference of 25 feet 3 inches (770cm); note that one search-engine summary of a different source rendered this as a '25-foot diameter', which is physically absurd (that would make it far larger than any known Liriodendron and larger than General Sherman) -- almost certainly a garbled circumference figure, and NOT used here. Height given as 'nearly 150 feet' (about 41m), with Appalachian Voices noting the crown is now damaged, 'possibly by lightning', so the tree is shorter than it once stood; both sources describe it as alive today, one from a repeated-visits hiking blog. Trees in the grove generally are described as 200+ years old by multiple sources but no individual documented age for this specimen; estimate given here is broad and derived loosely from the grove's general age plus this tree's exceptional girth. Location precision: approximate, and honestly so -- the coordinate given is the Maddron Bald trailhead, about 3 miles from the actual tree; no GPS for the tree itself found this pass, only a description of a short spur trail near where the loop begins its descent. Also encountered in the same grove per multiple sources: large old eastern hemlocks, at least one 5+ feet wide; NOT delivered as a separate entry because the hemlock woolly adelgid has killed large numbers of Smokies hemlocks since the 2000s and no source checked this pass gives a specific, currently-alive, individually locatable hemlock at Albright Grove (see leads file)."
+  },
+  {
+    "id": "gsm_002",
+    "name": "The Roman Columns",
+    "species": "Tulip Tree / Yellow Poplar (Liriodendron tulipifera)",
+    "age_estimate": "hundreds of years",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": 30,
+    "location": {
+      "address": "Ramsey Cascades Trail, mile 2.6, Greenbrier area, Great Smoky Mountains National Park, Tennessee",
+      "latitude": 35.70273,
+      "longitude": -83.357599,
+      "neighbourhood": "Ramsey Cascades Trail, about 2.6 miles from the Greenbrier trailhead, on the left side of the trail; a third, even larger tulip poplar stands nearby"
+    },
+    "verified_sources": [
+      "https://virginiatrailguide.com/2015/07/18/ramsey-cascades/",
+      "https://hikinginthesmokymountains.com/blog/hiking-ramsey-cascades-trail/"
+    ],
+    "access": "Free, within Great Smoky Mountains National Park; directly beside the Ramsey Cascades Trail, an 8-mile round trip, rated strenuous, from the Greenbrier trailhead.",
+    "transport": "No public transit; the trailhead is in the Greenbrier area, a drive from Gatlinburg, TN. Trailhead parking.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A pair of giant tulip poplars standing together at the 2.6-mile mark of the Ramsey Cascades Trail, in the largest old-growth cove hardwood forest remaining in the park (this stretch escaped the logging that took most of the Smokies). Multiple independent hiking-guide sources give the same mile marker and describe them as locally nicknamed the Roman Columns, straight and columnar, towering over the surrounding forest; a third, even larger tulip poplar is reported nearby but not separately measured or pinned, so not delivered as its own entry (a lead). Ramsey Cascades is separately reported to hold the largest tulip poplars in the park, with an unnamed specimen elsewhere on the trail reported at over 7 feet in diameter, again not individually locatable this pass. No measured girth or precise age found for the Roman Columns themselves; sources describe trees on this trail generally as hundreds of years old. Location precision: approximate -- the coordinate given is the Greenbrier trailhead, and the mile-2.6 landmark is a repeatable trail position (consistent across at least two independent trip reports) rather than a GPS-pinned trunk. Alive: multiple recent hiking accounts describe the trees as currently standing and are the main visual highlight of the hike; no reports of loss or damage found."
+  }
+]

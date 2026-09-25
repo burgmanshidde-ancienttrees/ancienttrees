@@ -1,0 +1,52 @@
+[
+  {
+    "id": "cgr_001",
+    "name": "The Richland County Pine",
+    "species": "Loblolly Pine (Pinus taeda)",
+    "age_estimate": "over 250 years",
+    "age_min": 250,
+    "age_max": 320,
+    "girth_cm": null,
+    "location": {
+      "address": "Congaree National Park Boardwalk Loop, near Weston Lake, South Carolina",
+      "latitude": 33.8221,
+      "longitude": -80.8194,
+      "neighbourhood": "Boardwalk Loop Trail, self-guided tour stop 11, about 150 yards from where the Sims Trail meets the boardwalk"
+    },
+    "verified_sources": [
+      "https://www.nps.gov/places/congaree-self-guided-boardwalk-tour-stop-11.htm",
+      "https://friendsofcongaree.org/journals/john-cely-congaree-journal/essay-loblollies-and-cowpens/",
+      "https://friendsofcongaree.org/location/sims-trail-guide/"
+    ],
+    "access": "Free, within Congaree National Park; on the elevated Boardwalk Loop, a flat and fully accessible trail.",
+    "transport": "No public transit; the park is about 20 minutes by car from downtown Columbia, SC. Parking at the Harry Hampton Visitor Center.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "NPS's own self-guided boardwalk tour stop 11 (coordinates 33.8221,-80.8194) names this as a loblolly pine over 150 feet tall and a 'former state champion'. Friends of Congaree Swamp (independent nonprofit partner of the park) identifies the same tree by the name 'Richland County Pine', calling it 'the very large loblolly by the boardwalk at Weston Lake, the most famous tree in the park', and states it predates Richland County's 1785 founding, giving it a birth year around 1750 (i.e. over 250 years old as of the essay's writing) -- this is the essay's own estimate, not a measured age, so kept broad and flagged. NPS gives no age figure itself, only height (150+ ft) and former-champion status. No girth recorded by any source seen this pass; note the essay separately quotes 'fifteen feet in circumference' for a DIFFERENT tree, a still-standing national champion loblolly pine elsewhere in the park, and that figure must not be attached to this tree. Good story hook: a pine alive since before the county that contains it existed. Alive: both sources treat it as a current, standing, signed feature of the boardwalk; no fell/death reports found."
+  },
+  {
+    "id": "cgr_002",
+    "name": "The Harry Hampton Tree",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "several hundred years",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 724,
+    "height_m": 41,
+    "location": {
+      "address": "Oakridge Trail, near Hammond Gut and Bridge F, Congaree National Park, South Carolina",
+      "latitude": 33.829604,
+      "longitude": -80.823737,
+      "neighbourhood": "Oakridge Trail, several miles from the Harry Hampton Visitor Center trailhead; exact tree position along the trail not found this pass, coordinate given is the trailhead"
+    },
+    "verified_sources": [
+      "https://friendsofcongaree.org/location/oakridge-trail-guide/",
+      "https://friendsofcongaree.org/journals/john-cely-congaree-journal/essay-loblollies-and-cowpens/"
+    ],
+    "access": "Free, within Congaree National Park; reached via the Oakridge Trail, a 7.1-mile, difficult-rated backcountry trail (not the boardwalk), from the Harry Hampton Visitor Center.",
+    "transport": "No public transit; the park is about 20 minutes by car from downtown Columbia, SC. Parking at the Harry Hampton Visitor Center.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Named for Harry Hampton, the newspaper writer/conservationist whose campaign helped protect the swamp (the visitor center is also named for him). Friends of Congaree Swamp (the park's nonprofit partner, an independent named source) describes it as the largest bald cypress in a grove of other old-growth cypress, height 133 feet (40.5m), circumference 23 feet 9 inches (724 cm), sited near Hammond Gut close to Bridge F on the Oakridge Trail (their site 7-8 marker). A second Friends of Congaree essay separately corroborates a comparable state-champion-class bald cypress figure (nearly 28 ft circumference, 132 ft tall) at the park's east end, which may or may not be the same tree; treated as consistent rather than conflicting since both describe a champion-class cypress in the same general area, but this is not fully resolved. No precise on-trail coordinate found this pass (the pin given is the Oakridge trailhead, several miles from the actual tree); mark approximate. No age figure published anywhere found; bald cypress of this girth in a bottomland floodplain plausibly runs several centuries but no source states a number, so age is left as a vague estimate rather than derived. Alive: described in current trail guides as a standing feature of the Oakridge Trail with no reports of loss."
+  }
+]
