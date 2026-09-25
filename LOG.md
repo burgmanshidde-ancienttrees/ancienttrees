@@ -10,6 +10,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 - Session: Leon's oak live, reader gifts lead the digest
+
+- **The Schöne Eiche is live as [bhg_006](https://ancienttrees.app/bad-homburg).** Leon gave the spot yesterday; the night run still held it on the no-source check. Hidde: "luister naar leon". His submissions are now the recorded source (flagged, single source), Bad Homburg goes to six trees, intro, meta, question page and FAQ updated, and bhg_005's recognition line no longer puts it on the bank. No mail sent to Leon: setting the row to `changed` would auto-send one, and that is Hidde's call.
+- **Daily digest now opens with what readers gave that went live** (`readers_gave_section`). First entry will be the Seville photograph.
+
 ## 2026-09-26 (session) - FOR HIDDE: one paste, the walks table
 
 Your own walks now have their server half: supabase/walks.sql (record in
