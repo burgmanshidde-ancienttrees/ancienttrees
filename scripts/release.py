@@ -213,7 +213,18 @@ def main():
 
     print("\nrefreshing the bundled catalogue")
     r = sh(sys.executable, "scripts/appdata.py")
-    print("  " + (r.stdout.strip().splitlines() or ["(nothing to do)"])[-1])
+    for line in (r.stdout.strip().splitlines() or ["(nothing to do)"]):
+        print("  " + line)
+    if r.returncode != 0:
+        # Step 3 of the sequence at the top of this file. It used to print its
+        # own failure as progress and carry on, which is how an archive goes up
+        # carrying the bundle from the release before it: a fresh install then
+        # opens on a catalogue weeks old, in the first seconds where somebody
+        # decides whether the thing is any good.
+        die("the bundled catalogue did not refresh, so this archive would ship "
+            "the one from the last release.",
+            "fix the fetch, or build the feeds locally: cd site && npx astro "
+            "build && cd .. && python3 scripts/appdata.py --from site/dist/api")
 
     build = bump_build(args.build)
 

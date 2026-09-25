@@ -32,7 +32,18 @@ BASE = "https://ancienttrees.app/api"
 FEEDS = ["trees", "walks", "species", "browse"]
 
 
-def fetch(name):
+def fetch(name, source=None):
+    """The feed's bytes, from the live site or from a local build of it.
+
+    `source` exists because the sandbox a session runs in cannot reach
+    ancienttrees.app (the proxy answers 403), so the one machine that always
+    knows what the site publishes could not write the bundle. A local
+    `npx astro build` emits exactly the same endpoints under site/dist/api,
+    which is the SAME artefact the deploy uploads rather than a second
+    implementation of the contract.
+    """
+    if source:
+        return (pathlib.Path(source) / f"{name}.json").read_bytes()
     with urllib.request.urlopen(f"{BASE}/{name}.json", timeout=60) as r:
         return r.read()
 
@@ -64,7 +75,7 @@ DEMANDS = re.compile(r"^\s*(?:public\s+)?let\s+(\w+)\s*:\s*(String|Int|Double|Bo
 KEYMAP = re.compile(r"case\s+(\w+)\s*=\s*\"([^\"]+)\"")
 
 
-def verify():
+def verify(source=None):
     """Every field the app REFUSES to see as null, checked against the feed.
 
     Written 2026-08-24 after the whole catalogue stopped decoding on one null:
@@ -86,7 +97,7 @@ def verify():
     problems = []
     for name in FEEDS:
         try:
-            raw = fetch(name)
+            raw = fetch(name, source)
         except Exception as e:
             print("%s: could not fetch (%s)" % (name, e))
             continue
@@ -167,9 +178,15 @@ def main():
                     help="check the live feed against what the app's model demands")
     ap.add_argument("--local", action="store_true",
                     help="drift against this checkout's own data, no network")
+    ap.add_argument("--from", dest="source", metavar="DIR",
+                    help="read the feeds from a local build (site/dist/api) "
+                         "instead of the live site")
     args = ap.parse_args()
     if args.verify:
-        return verify()
+        # --from works here too: the question is whether the app's decoder
+        # survives these bytes, and a local build's bytes are the bytes that
+        # ship. Verifying the bundle I just wrote is the point.
+        return verify(args.source)
     if args.local:
         have, published = local_drift()
         if have is None or published is None:
@@ -179,14 +196,31 @@ def main():
               "%d behind" % (have, published, published - have))
         return 0
 
+    if args.source:
+        missing = [n for n in FEEDS
+                   if not (pathlib.Path(args.source) / f"{n}.json").exists()]
+        if missing:
+            print("that build has no %s: run `npx astro build` in site/ first"
+                  % ", ".join(f"{n}.json" for n in missing))
+            return 1
+        print("reading the feeds from %s (a local build, not the live site)\n"
+              % args.source)
+
     drift = 0
+    unreachable = []
     for name in FEEDS:
         path = DATA / f"{name}.json"
         old = path.read_bytes() if path.exists() else b""
         try:
-            new = fetch(name)
+            new = fetch(name, args.source)
         except Exception as e:
+            # A feed that cannot be fetched used to print one line and leave
+            # exit 0 behind, so release.py printed "could not fetch" as its
+            # progress message and archived anyway: an upload with whatever
+            # bundle the last release left, silently. Failing here is the
+            # whole point of a release step.
             print(f"{name}: could not fetch ({e})")
+            unreachable.append(name)
             continue
         n_old, v_old = counted(old)
         n_new, v_new = counted(new)
@@ -205,6 +239,13 @@ def main():
     if args.check and drift:
         print(f"\n{drift} of {len(FEEDS)} bundled feeds are behind the live site.")
         print("python3 scripts/appdata.py   # refresh them")
+        return 1
+    if unreachable:
+        print("\n%d of %d feeds could not be read, so the bundle is whatever "
+              "the last refresh left." % (len(unreachable), len(FEEDS)))
+        print("A local build answers the same question without the network:")
+        print("  cd site && npx astro build && cd .. && "
+              "python3 scripts/appdata.py --from site/dist/api")
         return 1
     return 0
 
