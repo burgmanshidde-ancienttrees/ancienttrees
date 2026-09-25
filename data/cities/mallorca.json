@@ -1,0 +1,228 @@
+{
+  "city": "Mallorca",
+  "country": "Spain",
+  "kind": "island",
+  "status": "needs_curation",
+  "intro": "These are Mallorca's old trees outside the capital; Palma's five, including the olive of five or six centuries in front of the town hall, have their own page, Palma de Mallorca. Three of the six stand within a few kilometres of each other in the Serra de Tramuntana around the monastery of Lluc: the hackberry that gave the sanctuary's square its name, and two holm oaks put at around five hundred years. The others are a stone pine the Deià road was widened around, a hackberry opposite Montuiri's cemetery, and an Aleppo pine outside a shopping centre in Marratxí.",
+  "meta_description": "Mallorca's old trees beyond Palma: two holm oaks of about 500 years near Lluc, the hackberry of the Lluc sanctuary, and a pine a road was widened around.",
+  "question_meta": "The oldest tree on this page is the Alzina dels Set Cimals near Lluc, a holm oak of 500 to 600 years. Palma's olive in Plaça de Cort shares that estimate.",
+  "question_answer": "The oldest tree on this page is the Alzina dels Set Cimals, a holm oak beside the Ma-10 near Lluc that the Balearic register puts at 500 to 600 years. The Alzina d'en Pere, another holm oak a few kilometres away on the public estate at Binifaldo, is given as about 500. On the island as a whole the Set Cimals shares the title with S'Olivera de Cort, the olive in front of Palma's town hall, which carries the same 500 to 600 year estimate and is on the Palma de Mallorca page.",
+  "question_context": "Every tree here comes from the Balearic government's catalogue of singular trees, which gives each entry a height, a trunk measurement and a crown, and an age only where somebody has been willing to estimate one. Four of the six have an age band and two have none. The two holm oaks near Lluc are the oldest, at 500 to 600 years for the Set Cimals and about 500 for the Alzina d'en Pere, and both are estimates rather than ring counts. The hackberry at Lluc is put at 150 to 350 years, a wide band that comes from old photographs already showing it at today's size a century ago. The stone pine at Sa Pedrissa is given 100 to 200. The hackberry at Montuiri and the Aleppo pine at Marratxí have no age at all; local reporting has the Montuiri tree at the cemetery gate since at least the early 1900s, and nobody has dated the pine. The Set Cimals lost three of its seven limbs to bark beetle and snow after 1999, and the register records real decline. Getting there: the three Lluc trees are about 50 minutes by car north of Palma.",
+  "oldest_tree_id": "mlc_004",
+  "faq": [
+    {
+      "q": "What is the oldest tree on Mallorca?",
+      "a": "Two trees share the estimate. The Alzina dels Set Cimals, a holm oak on the Ma-10 near Lluc, is put at 500 to 600 years by the Balearic register, and so is S'Olivera de Cort, the olive replanted in front of Palma's town hall in 1989, which is on the Palma de Mallorca page. Both figures are estimates rather than ring counts."
+    },
+    {
+      "q": "Where are Palma's trees?",
+      "a": "On their own page, Palma de Mallorca: five trees including S'Olivera de Cort, two giant Moreton Bay figs and a Norfolk Island hibiscus on the seafront by La Llotja. This page covers the rest of the island."
+    },
+    {
+      "q": "Do you need a car, and how far apart are these trees?",
+      "a": "For most of them, yes. The hackberry at Lluc and the two holm oaks stand within about three kilometres of each other on the Ma-10 in the Serra de Tramuntana, around 50 minutes' drive from Palma, with a seasonal bus on some days. The stone pine is on the same road further west, between Valldemossa and Deià. Montuiri is 25 kilometres east of Palma on the Manacor bus route. Only the Aleppo pine at Marratxí is an easy trip without a car, a 15 to 20 minute walk from Marratxí station."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes, all six. Two stand at the roadside, one on a public mountain estate, one in the monastery square at Lluc, one on a public path opposite a cemetery gate and one outside the entrance of a retail park. None has a gate or a ticket."
+    },
+    {
+      "q": "Is the Alzina dels Set Cimals still alive?",
+      "a": "Yes, as far as anybody has recorded. Bark beetles damaged three of its seven limbs in late 1999 and a heavy snowfall then snapped them. The register describes one limb as essentially dead and the foliage as thin. We found no newer report either way, so if you have seen it recently, tell us how it looks."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mlc_001",
+      "name": "The Lledoner de Lluc",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "roughly 150 to 350 years",
+      "age_min": 150,
+      "age_max": 350,
+      "girth_cm": 400,
+      "location": {
+        "address": "Plaça del Lledoner, Santuari de Lluc, Escorca",
+        "latitude": 39.822624,
+        "longitude": 2.883793,
+        "neighbourhood": "Santuari de Lluc, Serra de Tramuntana"
+      },
+      "story": "Photographs from a century ago already show this hackberry at roughly the size it is today, which is why the Balearic register will only put its age somewhere between 150 and 350 years. It stands in front of the monastery of Lluc, Mallorca's most visited pilgrimage site, and the square is named after it: Plaça del Lledoner, lledoner being the Catalan name for the tree. The sanctuary's religious and civic festivals are held here, in its shade.\n\nThe numbers are generous. About 16 metres tall, a trunk around four metres round, and a crown some 22 metres across, which makes it wider than it is high. When the register catalogued it in 2005 it rated its vitality as high and noted that it fruits well, so this is not a veteran hanging on but a tree in full working order.\n\nEvery pilgrim who has reached Lluc in the last hundred years has crossed its ground. From the square a paved path climbs to the spot where, by tradition, the figure of the Mare de Déu de Lluc was found, the story the whole sanctuary grew from. The tree makes no claim to be that old, and nobody should make it on its behalf. It simply stands where everyone arrives.\n\nLluc is high in the Serra de Tramuntana, about 50 minutes by car from Palma, and two old holm oaks on this page stand within a few kilometres along the same mountain road.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/n/lledoner_de_lluc-21591/",
+        "https://ajescorca.net/en/node/242"
+      ],
+      "access": "Free. Stands in the open plaza beside the monastery's main facade, open to the public daily; register ownership is listed as the Monestir de Lluc, which is Mallorca's most visited pilgrimage site and welcomes visitors freely.",
+      "transport": "No public transport reaches Lluc directly; it is a roughly 50-minute drive from Palma on the Ma-10, with a bus link (L330) on some days. Car is the realistic way to get there.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "CAIB register (catalogued 2005): height ~16m, trunk perimeter ~4m, crown diameter ~22m, high vitality with good fruit production, estimated 150-350 years old (old photos from a century ago already show it at this size). Gave its name to the Placa del Lledoner where religious and civic festivals are held; a paved path from the plaza climbs to the site tradition holds as the finding-place of the Mare de Deu de Lluc figure. Register coordinate is approximate (monastery plaza), not a mapped trunk position, hence approximate precision. Genuinely a destination tree: this is the courtyard everyone crosses to reach Mallorca's most important shrine.",
+      "how_to_recognise": "You can recognise it by its crown, about 22 metres across and wider than the tree is tall. It stands in the Plaça del Lledoner, the open square in front of the monastery's main facade."
+    },
+    {
+      "id": "mlc_002",
+      "name": "The Lledoner del Cementiri",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "over a century, exact age not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 560,
+      "location": {
+        "address": "Opposite the entrance of the Montuiri cemetery, Montuiri",
+        "latitude": 39.566466,
+        "longitude": 2.988742,
+        "neighbourhood": "Montuiri"
+      },
+      "story": "In Montuiri, anar al Lledoner, going to the Lledoner, is local shorthand for dying. The Lledoner is this hackberry, and it stands opposite the gate of the village cemetery, where local reporting says it has stood since at least the early 1900s.\n\nIt grew with nothing competing for its light, and it shows. The Balearic register, which catalogued it in 2005, describes an ideal form: 16 metres tall, a crown spreading 20 metres, all of it carried on five primary branches. The register gives the trunk as 5.6 metres in a field labelled diameter; on a tree of this height that is almost certainly the distance round rather than across, and it is recorded here as a girth.\n\nIt has not had an easy recent history. In 2011 Última Hora reported a serious disease in the tree, and in 2018 the same paper covered a special pruning carried out to treat it. The register's latest description has it in good health and good structure, so it appears to have come through. If you pass it and something looks wrong, we would like to know.\n\nNobody has published an age. Over a century is what the village can say with confidence, and the real figure may be well beyond that. If you know of a planting record or an old photograph, tell us.\n\nMontuiri sits on the Palma to Manacor road about 25 kilometres east of the capital, and the bus between the two stops in the village.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/es/n/lledoner_del_cementiri-21589es/",
+        "https://www.ultimahora.es/noticias/part-forana/2018/02/04/325235/poda-especial-para-emblematico-singular-lledoner-del-cementerio-montuiri.html"
+      ],
+      "access": "Free. Stands in the open, opposite the cemetery gate, on a public path; visible and reachable at any time the village is open, no ticket or appointment needed.",
+      "transport": "No rail; Montuiri is on the Ma-15A, about 25km east of Palma. TIB bus line 490/491 (Palma-Manacor) stops in the village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "CAIB register (catalogued 2005): height 16m, crown spread 20m, five primary branches, grew without competition into an ideal form, good fruiting; register field reads trunk_diameter 5.6m, which for a 16m tree is almost certainly a mislabeled PERIMETER, so recorded here as girth_cm 560 rather than a literal 5.6m diameter (register pitfall, unit/field confusion). Age undetermined by the register; local reporting says it has stood over the cemetery entrance since at least the early 1900s and the phrase anar al Lledoner (go to the Lledoner) is local shorthand for dying, so this is deeply woven into the village. A 2011 Ultima Hora piece reported a serious disease/infestation and a 2018 follow-up reported special pruning to treat it; the register text (most recent snapshot) describes it as currently in good health and structure, so treat the disease reports as a past episode rather than current status, and flag for the writer to mention the tree survived a health scare.",
+      "how_to_recognise": "You can recognise it by the five primary branches carrying a crown about 20 metres wide. It stands on its own on the public path directly opposite the gate of the Montuiri cemetery."
+    },
+    {
+      "id": "mlc_003",
+      "name": "The Pi de Sa Pedrissa",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "roughly 100 to 200 years",
+      "age_min": 100,
+      "age_max": 200,
+      "girth_cm": null,
+      "location": {
+        "address": "Roadside of the Valldemossa-Deia road (Ma-10), km 64.3, next to the Sa Pedrissa estate",
+        "latitude": 39.754053,
+        "longitude": 2.637286,
+        "neighbourhood": "Deia, Serra de Tramuntana"
+      },
+      "story": "When the road between Valldemossa and Deià was widened, this pine was in the way, and it stayed. The Balearic register records that it was deliberately kept for its stature, which is about as warm as a road-building project gets.\n\nIt is a stone pine, 18 metres tall, with the flat umbrella canopy the species is known for beginning some 16 metres up. The trunk is 109 centimetres across, a little over three metres round, and when the register catalogued it in 1993 it described the tree as in excellent and very regular condition. Three younger stone pines stand close by, and the register takes them to be its own offspring.\n\nThe land belongs to the Consell de Mallorca, so this is a public tree beside a public road, and it has become a landmark on this stretch of coast: a local walking route down to Cala Deià carries its name. The register puts its age at roughly 100 to 200 years. That is young by the standards of this island's olives and oaks, and it earns its place by shape rather than years, a single umbrella held high over the Ma-10.\n\nParking beside it is awkward. It is better met on foot, on that walking route, or seen from the window of the Palma to Sóller bus, which runs this road through Valldemossa and Deià.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/es/n/pi_de_sa_pedrissa-21506es/",
+        "https://serradetramuntana.eu/?excursio=cala-deia-y-el-pi-de-sa-pedrissa"
+      ],
+      "access": "Free, visible from the public Ma-10 road between Valldemossa and Deia and reachable on foot on a local hiking route; parking directly beside it is difficult, best seen while walking or driving past.",
+      "transport": "No rail on the island. The TIB bus line 210/200 (Palma-Soller via Valldemossa-Deia) passes this stretch of road. A hire car is the realistic way most visitors reach it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "CAIB register (catalogued 1993): 18m tall, trunk diameter 109cm (~342cm girth), umbrella-shaped canopy from 16m, in excellent, very regular condition; three younger pines of the same species stand nearby, likely its own offspring. Owned by the Consell Insular de Mallorca, i.e. public land, and was deliberately kept in place during a road-widening project for its stature, which is a nice concrete anecdote for the story. A local hiking-route page (Cala Deia i el Pi de Sa Pedrissa) independently treats it as a known waypoint, confirming it stands where the register says and is a real, walkable landmark rather than an obscure register entry.",
+      "how_to_recognise": "You can recognise it by the flat umbrella crown starting about 16 metres up; it is the big one of four stone pines here, the other three younger. It stands at the Ma-10 roadside near km 64.3, beside the Sa Pedrissa estate."
+    },
+    {
+      "id": "mlc_004",
+      "name": "The Alzina dels Set Cimals",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 500 to 600 years",
+      "age_min": 500,
+      "age_max": 600,
+      "girth_cm": 400,
+      "location": {
+        "address": "Roadside at the entrance to the Son Massip urbanisation, on the Ma-10 between Gorg Blau reservoir and Lluc",
+        "latitude": 39.821816,
+        "longitude": 2.869551,
+        "neighbourhood": "Escorca, Serra de Tramuntana"
+      },
+      "story": "Its name means the holm oak of seven tops, and it no longer has seven good ones. The single trunk divides into seven thick limbs, and in late 1999 bark beetles got into three of them. A heavy snowfall that followed snapped them.\n\nWhat is left is still a tree worth stopping for. The Balearic register, which catalogued it in 1993, puts it at 500 to 600 years old, 16 metres tall with a crown 18 metres across, and gives the combined perimeter as nearly four metres. It stands beside the Ma-10 at the entrance to Son Massip, on the mountain road between the Gorg Blau reservoir and Lluc, next to a path walkers once used for exactly the shade it gave.\n\nIt is only fair to be plain about its condition. The register, which is our most recent source, describes real decline: one limb essentially dead and thin foliage across the crown. We found nothing newer, no survey and no report, to say whether it has since recovered or got worse. So go expecting a five-century veteran that has visibly lost limbs and is still standing, and if you have been recently, tell us how it looks.\n\nThe sanctuary of Lluc and its hackberry are a little over a kilometre away, and the Alzina d'en Pere, a holm oak of about the same age, stands on the public estate at Binifaldo a few kilometres beyond.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/n/alzina_dels_set_cimals-21515/",
+        "https://www.centpercent.cat/la-tribu-de-lalzina/"
+      ],
+      "access": "Free, roadside on the Ma-10 mountain road between the Gorg Blau reservoir and Lluc, a stretch walked and driven by everyone heading to the monastery; no gate or ticket.",
+      "transport": "No rail. TIB bus line 330 (Palma-Lluc, seasonal) runs this stretch of the Ma-10; otherwise a hire car.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "CAIB register (catalogued 1993): its single trunk splits into seven thick limbs (the name means seven-topped), combined perimeter nearly 4m, crown 18m across, 16m tall, 500-600 years old. It stood beside a path historically used by walkers for its shade. FLAG for the writer: the register itself describes real decline, one limb essentially dead and thin foliage overall, after three of the seven limbs were damaged by bark beetle in late 1999 and then snapped in a subsequent heavy snowfall. No news or observation newer than the register was found confirming current condition, so this ships flagged rather than confidently described as thriving; the honest framing is a veteran tree that has visibly lost limbs but is still standing and identifiable by its distinctive seven-way split trunk.",
+      "how_to_recognise": "You can recognise it by the single trunk splitting into seven limbs, one of them dead and several broken. It stands at the Ma-10 roadside at the entrance to the Son Massip urbanisation, between Gorg Blau and Lluc."
+    },
+    {
+      "id": "mlc_005",
+      "name": "The Alzina d'en Pere",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 371,
+      "location": {
+        "address": "Finca publica de Binifaldo, off the Camí vell de Lluc a Pollença, near the Binifaldo houses",
+        "latitude": 39.841091,
+        "longitude": 2.909569,
+        "neighbourhood": "Escorca, Serra de Tramuntana"
+      },
+      "story": "This holm oak grew up alone, and its whole shape comes from that. With nothing crowding it, it built a crown the Balearic register calls well balanced, about 19 metres across on a tree 19 to 20 metres tall, over a trunk 118 centimetres thick at chest height, which is roughly 3.7 metres round.\n\nThe register puts it at about 500 years old, and the honest way to read that is somewhere between four and six centuries, because a figure like that is an estimate and not a count of rings. Holm oaks keep their leaves through the winter, so the dome you find in January is the same one you would find in July.\n\nIt stands on the Finca pública de Binifaldo, a 377-hectare public estate with signposted walking trails and a mountain refuge, near the Binifaldo houses and off the old road from Lluc to Pollença. The entrance is at kilometre 17.4 of the Ma-10. That makes it the easiest of the old trees around Lluc to turn into a proper walk rather than a roadside stop.\n\nIt belongs to a small cluster. The monastery of Lluc and its hackberry are about three kilometres away, and the seven-limbed Alzina dels Set Cimals a little further on the same road. A car, or the seasonal bus from Palma, is how most people will string the three together into one morning in the Serra de Tramuntana.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/n/alzina_den_pere_-21513",
+        "https://ca.wikipedia.org/wiki/Llista_d%27arbres_singulars_de_les_Illes_Balears"
+      ],
+      "access": "Free. Stands on the public Binifaldo estate (Finca publica de Binifaldo), a 377-hectare Consell de Mallorca property with signposted walking trails and a mountain refuge, reached from km 17.4 of the Ma-10 between Lluc and Pollença.",
+      "transport": "No rail. TIB bus line 330 (Palma-Lluc, seasonal) runs the Ma-10 past the estate entrance; otherwise a hire car.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "CAIB register: trunk diameter 118cm at 1.3m height (girth roughly 371cm by pi), 19-20m tall, about 500 years old, grew isolated so its crown is well balanced. Owned by the regional government (Balearic autonomous community), stands on the Binifaldo public estate. Wikipedia's list of Balearic singular trees independently gives matching figures (20m x 1.3m diameter x 19m crown), corroborating the register. Sits within a couple of kilometres of mlc_001 (Lledoner de Lluc) and mlc_004 (Alzina dels Set Cimals) along the same Ma-10 corridor near Lluc, so these three can be described as one Serra de Tramuntana driving/walking cluster.",
+      "how_to_recognise": "You can recognise it by its broad, even crown, about 19 metres across, on an oak standing by itself. It stands near the Binifaldo houses on the public estate, off the old road from Lluc to Pollença."
+    },
+    {
+      "id": "mlc_006",
+      "name": "The Pi des Caülls",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 400,
+      "location": {
+        "address": "Festival Park, in front of the main entrance, by the underpass bridge, Marratxi",
+        "latitude": 39.630312,
+        "longitude": 2.732178,
+        "neighbourhood": "Marratxi"
+      },
+      "story": "This Aleppo pine carries a lightning scar more than a hand wide along the base of its trunk, and that is not the strangest thing about it. The strangest is where it stands: in front of the main entrance of Festival Park, a retail and leisure complex in Marratxí, beside the underpass bridge.\n\nIt holds its own there. The Balearic register, which catalogued it in 2001, records a tree 15 metres tall with a trunk four metres round and a crown 30 metres across, twice as wide as the tree is high. At three metres up the trunk divides into four main limbs, and the lower branches sweep down almost to the ground.\n\nThose proportions are the point. Aleppo pines are the common pine of Mallorca's hillsides and most people drive past thousands of them without a second look. This one made the island's official catalogue of singular trees, and the Catalan Wikipedia's list of Balearic singular trees repeats the same height and crown.\n\nNobody has published an age for it. The register leaves that field empty and so do we. If you know when it was planted, or have an old photograph of this spot from before the shops, tell us.\n\nMarratxí's train station is a 15 to 20 minute walk away and several buses stop at Festival Park itself, which makes this the one tree on this page that needs no car at all.",
+      "verified_sources": [
+        "http://www.caib.es/sites/proteccioespecies/ca/n/pi_des_caulls-21547/",
+        "https://ca.wikipedia.org/wiki/Llista_d%27arbres_singulars_de_les_Illes_Balears"
+      ],
+      "access": "Free. Stands right by the main entrance of the Festival Park retail and leisure complex, a public outdoor area with no ticket needed to walk up to the tree.",
+      "transport": "Marratxi train station (SFM) is roughly a 15 to 20 minute walk; several city bus lines also serve Festival Park directly.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "CAIB register (catalogued 2001): 15m tall, trunk perimeter 4m (girth_cm 400), crown 30m across, splits into four main limbs at 3m height, lower branches sweep almost to the ground, and it carries an old lightning scar over a hand's width along the trunk base. Age undetermined by the register. Wikipedia's list of Balearic singular trees independently lists the same tree under Marratxi with matching height and crown figures. A pine this size surviving inside a modern retail park, with a visible lightning scar, is a good surprising-fact lead for the writer.",
+      "how_to_recognise": "You can recognise it by the crown, 30 metres across with lower branches sweeping almost to the ground, and by the lightning scar at the base of the trunk. It stands in front of Festival Park's main entrance, by the underpass bridge."
+    }
+  ]
+}

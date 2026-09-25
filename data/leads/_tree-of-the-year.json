@@ -1839,7 +1839,7 @@
       "lng": 36.583367,
       "gps_as_published": "N 50°32'0.1'', E 36°35'0.12''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2018/Dub-zvany-Staresina-Belgorodskeho-lesa",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "gry_001",
         "name": "Grybiškės Oak",
@@ -1884,13 +1884,14 @@
       "lng": 0.001064,
       "gps_as_published": "N 51°39'1.14'', E 0°0'3.83''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2018/Gilwellsky-dub",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "lon_017",
         "name": "The Valence Park Holm Oak",
         "place": "London",
         "km": 13.81
-      }
+      },
+      "note": "Same tree as Gilwell oak in data/leads/_famous-united-kingdom.json (id gil_001, data/research/famousuk-verified.json): blocked on hard rule 10, Scout Adventures requires reception sign-in at the Syd Kesseler Centre. Do not re-verify."
     },
     {
       "name": "Apple tree from Bošáca",
@@ -2134,7 +2135,7 @@
       "lng": 37.966686,
       "gps_as_published": "N 56°14'0.05'', E 37°58'0.07''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2019/Dub-z-vesnice-Abramtsevo",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "ste_001",
         "name": "The Stelmužė Oak",
@@ -2502,7 +2503,7 @@
       "lng": 44.011164,
       "gps_as_published": "N 46°16'49.8'', E 44°0'40.19''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2020/Osamely-topol",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "gum_001",
         "name": "The Gumeli Yew",
@@ -2891,7 +2892,7 @@
       "lng": 48.279556,
       "gps_as_published": "N 42°3'19.5'', E 48°16'46.4''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2021/Ancient-Sycamore-Tree",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "gum_001",
         "name": "The Gumeli Yew",
@@ -3535,7 +3536,7 @@
       "lng": 36.632581,
       "gps_as_published": "N 53°22'21.28'', E 36°37'57.29''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2022/The-Turgenev-oak",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "trn_001",
         "name": "Trainiškis Oak (successor)",
