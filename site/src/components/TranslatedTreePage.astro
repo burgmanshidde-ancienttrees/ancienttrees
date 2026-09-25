@@ -22,6 +22,7 @@ import { DOWNSIZE_JS } from "../lib/image-downsize-js";
 import TreeDetail from "./TreeDetail.astro";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation, type TreeTranslation } from "../lib/i18n";
 import { cityHasQuestionPage } from "../lib/question-page";
+import { placeParts } from "../lib/place-line";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -138,7 +139,7 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
     story={x.story} access={x.access ?? ""} transport={x.transport ?? ""}
     ageLabel={ageLabel} ageValue={ageValue} girth={girth} girthLabel={U.labelGirth}
     recognise={null} address={loc.address ?? null}
-    place={[loc.neighbourhood, tr.city].filter(Boolean).join(", ")}
+    place={placeParts(loc.neighbourhood, tr.city, null).place}
     cityName={tr.city} cityUrl={`/${lang}/${cslug}`} crumbs={crumbItems} canonical={canonical}
     shots={shots} nearby={nearbyCards} chips={chips} />
   <Fragment slot="scripts" set:html={scripts} />
