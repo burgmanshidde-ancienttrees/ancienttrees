@@ -8640,6 +8640,13 @@
    "tokens": 0,
    "trees": 0,
    "note": "Session work: deduplicated 13 of 27 leads against already-published trees (coordinate and facility+species matching) before dispatching a verify pass, no tokens spent."
+  },
+  {
+   "target": "bad-homburg",
+   "kind": "verify",
+   "tokens": 0,
+   "trees": 0,
+   "note": "Session work: processed reader submission 230 (Schone Eiche coordinate), converted DMS to decimal, updated the lead with a confirmed pin, checked preflight source requirement, replied asking for a baumkunde.de link or photo. No tokens spent on research (no network fetch cost beyond a few WebSearch/curl lookups that found nothing)."
   }
  ]
 }
