@@ -2616,9 +2616,6 @@ Breadcrumbs sit in one thin line under the site header, visible on a phone. Then
 
 **What we took:** the same. Our app's tree page puts share and report in a toolbar row above the photo because iOS has a navigation bar with a back button there; on the web that row was a white strip holding two icons (Hidde: "logisch op app want terug knop maar niet logisch op web"). So on the web: breadcrumbs line, then the photograph with back (top-left), share and report (top-right) and the map inset (bottom-right). Back returns to the previous page when it was one of ours and to the city page otherwise.
 
-## The globe on a profile (2026-09-25)
+## The globe on a profile (2026-09-25, withdrawn 2026-09-26)
 
-**Reference: Polarsteps' profile globe** (Hidde's own profile in the app, the reference he named: "doe gewoon Polarsteps na, mensen kunnen inzoomen als ze willen").
-The whole sphere floats on black space in the room above the profile sheet, never cut by it. It is a control, not a picture: a finger spins it and a pinch zooms in down to the ground.
-
-**What we took:** the same. `GlobeCover` sizes the MapKit view to the part of the screen the sheet does not cover and below the status bar, so the full planet shows on every phone. Pan and pinch are on, turning and tilting off, so north stays up. The slow drift stops at the first touch and never fights a finger. What it fixed: the globe used to fill the screen and centre on the sheet's edge, so half the Earth, and with it any collection in the southern hemisphere, sat under the sheet.
+**Reference: Polarsteps' profile globe**: the whole sphere on black space above the profile sheet, spun by a finger and pinched to zoom. We built it with MapKit's satellite flyover and took it out the next day on Hidde's word: "haal de hele 3d map er maar uit, die moet uitvoerig getest worden, val maar terug op de platte kaart die we overal gebruiken." A second map engine on one screen is a second thing to test on every phone and OS, for a view only collections spanning two countries ever reached. My trees draws the same flat map as every other screen; it already frames trees in several countries. Reopening the globe is his call, and starts from this entry rather than from zero.

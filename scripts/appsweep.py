@@ -274,11 +274,6 @@ def screens(sub):
         # once. Two screens with one name is the same failure as a screen no
         # argument can open, and the check below now refuses it.
         ("collection-tab", ["-tab=2"], 4),
-        # THE GLOBE, which no sweep had ever opened. It is drawn only for a
-        # signed-in collection spanning two countries, which a simulator
-        # cannot produce, so -globe forces the branch. 9 seconds: satellite
-        # imagery at planet scale is the slowest thing this app fetches.
-        ("collection-globe", ["-tab=2", "-signed-in", "-globe"], 9),
         ("profile",       ["-tab=2", "-settings"], 5),
         # THE SAME SCREEN SIGNED IN, and it is a different screen.
         #
