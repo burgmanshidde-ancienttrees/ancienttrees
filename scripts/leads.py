@@ -282,6 +282,13 @@ HELD_MARKER = re.compile(
 # ("No further register or named candidates found in Lagos town itself",
 # species "n/a") that has never named a real tree, so it is fixed in
 # readiness() below instead, on the species field, rather than here.
+# Widened a ninth time 2026-09-25, same methodology, same result: all 3
+# READY leads that day were declines in wording the pattern still missed.
+# _sightings' two Miyazaki reader photographs each end "before it is more
+# than a lead" (species unconfirmed from a backlit photo, or "needs the
+# garden's own records checked"); Rotterdam's Venijnboom ends "Worth
+# checking on a future pass" after finding only one source and no
+# independent second one for that specific tree. Three for three, again.
 NOT_READY_MARKER = re.compile(
     r"\[SKIPPED\b[^\]]*\]|\bdeclined at merge\b|"
     r"\bbelow the 4-tree floor\b|\bbelow the four-tree floor\b|"
@@ -327,7 +334,12 @@ NOT_READY_MARKER = re.compile(
     r"cannot clear the two.?independent.?sources? bar|"
     r"needing (?:both )?a second source|"
     r"open access question|"
-    r"still a lead|reading as padding)\b",
+    r"still a lead|reading as padding|"
+    r"before it is more than a lead|worth checking on a future pass|"
+    r"needs the garden.{0,10}s own records checked|"
+    r"no independent second source (?:names|found)|"
+    r"needs species confirmation|"
+    r"before resolving whether)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
