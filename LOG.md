@@ -48,6 +48,19 @@ draws the same MapLibre map as every other screen. Build and all 156 unit tests
 green; the sweep and layout lists agree. CONVENTIONS.md keeps the Polarsteps
 reference, marked withdrawn, so reopening it starts from there.
 
+## 2026-09-26 (session) - US push: ten state pages live, 39 US trees verified and waiting for a write pass
+
+**State pages (Contract L, blueprint v1.22, Hidde's yes in session).** /united-states/[state] for the ten states with 3+ trees in 2+ places: Hawaii, Texas, California, Oregon, Washington, Massachusetts, Pennsylvania, Missouri, Maryland, Georgia. Title "Oldest Trees in [State]: N to Visit", first sentence names the oldest tree we map there. /united-states lists them; US place pages carry the state in the breadcrumb. `data/us-states.json` maps every US place to its state, and preflight plus the build refuse a US place missing from it: **when you open a US place, add its line.**
+
+**39 US trees verified, NOT yet written** (three verify passes, ~800k tokens, four times the estimate). They sit in data/research/*-verified.json and `passcheck.py --pending` lists them. Write them; the decisions on containers are made:
+
+- **Publish as new places:** Kings Canyon National Park (3; General Grant alone passes the single-famous-tree test), Yosemite National Park (5, Mariposa Grove), Gettysburg (4 witness trees; the Copse of Trees page must say NPS itself dates none of today's trees to 1863), Ancient Bristlecone Pine Forest (1, the Patriarch Tree, largest bristlecone; in Patriarch Grove, NOT Schulman Grove). Add each to data/us-states.json.
+- **Deepen:** Sequoia National Park +5, Olympic National Park +3 (the Duncan Cedar stands on WA DNR land ~15 miles south of Forks, not in the park: label it honestly or leave it as a lead), Philadelphia +3 (reaches four), Seattle +2, San Diego +2, Savannah +1, Charleston +1. A write claim on these passes the new deepen gate because the verified research is waiting.
+- **Hold as leads until a place reaches four:** Redwood National Park (2), Humboldt Redwoods State Park (1), Congaree National Park (2), Great Smoky Mountains (2), Antietam (2). None has a single tree that clearly passes the single-famous-tree test alone.
+- Caught dead before shipping, never entries: the Gettysburg cemetery honey locust (Lincoln address, cut ~2024), the Quinault Big Cedar (collapsed 2016). Methuselah stays unpinned (location withheld by USFS).
+
+Also: the Baumkunde forum's moderator linked /copenhagen, /copenhagen/skovfogedegen and /rogalin/russ-oak unasked on 2026-09-21; both posts are in data/backlinks.json. Singapore's 420 "visits" are one desktop Chrome/Windows crawler with no referrer (scripts/country_look.py, run through the Country look workflow). Run budget raised to 5000/900 while Hidde stays out of sessions this week; back to 3000/520 when he returns.
+
 ## 2026-09-26 (session) - Correction: the "23 trees published" entry below is NOT true, nothing reached main
 
 The 19:40 run's second attempt did verify and write those 23 trees, then had its
