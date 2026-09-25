@@ -2541,6 +2541,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/2/21/The_Embankment_Plane_%282%29.jpg": {
+   "base": "lon_015-the-embankment-plane",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/6/6b/The_Brunswick_Plane_2024-10-20.jpg": {
    "base": "lon_016-the-great-plane-of-brunswick-square",
    "widths": [
@@ -2549,6 +2555,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/3/36/Ravenscourt_Park_%27baobab%27_Plane.jpg": {
    "base": "lon_018-the-ravenscourt-park-baobab-plane",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/700359590/medium.jpg": {
+   "base": "lon_019-the-fountain-court-mulberries",
    "widths": [
     500
    ]
@@ -3267,8 +3279,20 @@
     500
    ]
   },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/2847650/large.jpg": {
+   "base": "hnl_009-the-uh-manoa-art-building-baobab",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/c/cc/Banyan_Tree%2C_%E2%80%98Iolani_Palace%2C_King_Street%2C_Honolulu%2C_HI.jpg": {
    "base": "hnl_012-the-iolani-palace-banyan",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/84/Looking_up_the_banyan_tree_in_Waikiki_%2829411145821%29.jpg": {
+   "base": "hnl_019-the-kuhio-beach-hula-mound-banyan",
    "widths": [
     500
    ]
@@ -4484,6 +4508,12 @@
     500
    ]
   },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/271440441/medium.jpg": {
+   "base": "tok_003-the-ueno-toshogu-camphor",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/d/d9/20260418_Kubi-kake_ginkgo_tree.jpg": {
    "base": "tok_004-the-head-betting-ginkgo",
    "widths": [
@@ -4526,14 +4556,38 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kyu_Hosokawa_tei-no-shii_01.jpg": {
+   "base": "tok_011-kyu-hosokawa-tei-no-shii",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/e/eb/Himalayan_cedar_in_Yanaka%2C_Tokyo_-_Jun_23%2C_2011.jpg": {
    "base": "tok_012-the-himalayan-cedar-of-yanaka",
    "widths": [
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/8/88/Pinus_thunbergii_of_Akiba.A.JPG": {
+   "base": "tok_013-akiba-no-kuromatsu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/05/Yono_no_Okaya_Torreya_Nucifera_B.jpg": {
+   "base": "tok_015-yono-no-okaya",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/d/d3/Hakusan-jinja_zelkova_tree_2023-08-17.jpg": {
    "base": "tok_018-the-great-zelkova-of-nerima-hakusan-shrine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5f/Homyo-ji_Ginkgo_tree_2026-05-17.jpg": {
+   "base": "tok_021-the-child-rearing-ginkgo-of-zoshigaya-kishimojin",
    "widths": [
     500
    ]
@@ -4852,6 +4906,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/5/52/Naturdenkmal_566_GuentherZ_2010-08-25_0130_Wien01_Rathauspark_Platane.JPG": {
    "base": "vie_029-the-third-plane-of-rathauspark",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/70/Naturdenkmal_818_2014-03-20_%2812%29_Wien02_Belvedereallee_Traubeneiche_GuentherZ.JPG": {
+   "base": "vie_031-the-sessile-oak-of-belvedereallee",
    "widths": [
     500
    ]
