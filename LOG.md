@@ -39,6 +39,27 @@ folder, which is the stale one.
 FOR HIDDE: the folders are on your Mac and this container cannot reach it, so
 the deletion runs there. One line in either folder: `python3 scripts/checkouts.py --fix`.
 
+**Then the bundled catalogue, done here rather than left to him.** It was 87
+trees behind and the sandbox cannot reach ancienttrees.app (the proxy answers
+403), which is why it had been sitting there. It does not need the live site:
+`npx astro build` emits the same four endpoints under `site/dist/api`, the same
+artefact the deploy uploads, so `appdata.py --from site/dist/api` writes the
+bundle from a local build. Done: trees 3287 to 3374, walks 308 to 318, browse
+183 to 184, and `--verify --from` confirms every field the app's decoder demands
+is present on every row of what I wrote.
+
+**And the reason it could sit there unnoticed is now a refusal.** `appdata.py`
+printed "could not fetch" and exited 0, so release.py printed that line as
+progress and archived anyway: an upload carrying the bundle from the PREVIOUS
+release, silently, which a fresh install meets in the first seconds. Both ends
+fixed: appdata exits non-zero when a feed could not be read and names the local
+build as the way round it, and release.py stops there instead of archiving.
+
+What remains a Mac operation, honestly: the archive itself. `xcodebuild` does not
+exist on Linux, so `python3 scripts/release.py` runs there, bumps 14 to 15 and
+leaves it in the Organizer. Its catalogue step is now a no-op because the bundle
+is current in the repo.
+
  - Why night runs end silent: they will now say it themselves, and the one-hour push credential
 
 Hidde asked why the runs make few trees while usage runs hard. Two fixes from that reading.
