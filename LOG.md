@@ -11,6 +11,23 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-09-25 (session) - Mallorca opens as an island page, 6 trees beyond Palma
+
+New place `/mallorca` (kind island), beside Palma de Mallorca, which keeps its
+own five and is named and pointed to in the intro, the oldest-tree answer and
+an FAQ. Six trees from the Balearic singular-tree catalogue, each with a
+second source: the hackberry of the Lluc sanctuary square and two holm oaks
+of about 500 years within 3 km of it on the Ma-10 (one Serra de Tramuntana
+cluster), the Sa Pedrissa stone pine the Deià road was widened around, the
+Montuiri cemetery hackberry, and the Aleppo pine outside Festival Park in
+Marratxí. All free, all pins approximate, all flagged, no photographs, every
+tree has a recognition line. Honest gaps in the prose: the Set Cimals oak's
+1999 limb loss and register-recorded decline with nothing newer found, and no
+age for Montuiri or Marratxí (both ask the reader). Superlatives: the island's
+oldest is stated as shared between the Set Cimals oak and Palma's olive, both
+500 to 600 years. Queue, aliases (search names via city_names.py) and coords
+updated; the research file is merged and deleted.
+
 ## 2026-09-25 (session) - Leon's corrections, taken as true
 
 Hidde: "leon is echt een boom legend ik zou zijn tips als waar zien". Three
