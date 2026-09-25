@@ -504,6 +504,17 @@ public final class Account {
         state = .signedOut
     }
 
+    /// Tells the server the session is over, which is what the website's
+    /// sign-out has done all along (account/settings.astro posts the same
+    /// /auth/v1/logout). Clearing the Keychain alone left the refresh token
+    /// valid on the server. Best effort and never awaited by the person
+    /// leaving: a failure here costs nothing they can see.
+    public static func revoke(_ session: Session) async {
+        guard !session.accessToken.isEmpty else { return }
+        let r = Supa.request("/auth/v1/logout", token: session.accessToken)
+        _ = try? await Net.data(for: r)
+    }
+
     /// The promise that made accounts acceptable in the first place, so it calls
     /// the same delete_user() the website calls rather than a second path that
     /// could quietly drift out of step with it. The saves and visited tables

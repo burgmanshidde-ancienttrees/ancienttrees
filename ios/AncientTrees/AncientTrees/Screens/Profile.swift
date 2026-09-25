@@ -766,6 +766,9 @@ struct ProfileView: View {
                         if let session, session.isFresh {
                             await SightingSync.pushAll(session: session, sightings: sightings)
                         }
+                        // After the upload, never before it: the upload rides
+                        // on this same session.
+                        if let session { await Account.revoke(session) }
                         signingOut = false
                     }
                 }
