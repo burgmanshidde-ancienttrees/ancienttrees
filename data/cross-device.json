@@ -7,10 +7,9 @@
       "why": "Hearts and ticks. Tables saves and visited, merged as a union by CloudSync on launch and on sign-in; the website reads the same two tables.",
       "off": "Saved.forgetLocally(), called by ContentView.forgetIfSignedOut() at launch. It empties this phone only; the saves and visited tables keep the collection."
     },
-    "sightings (Documents/sightings)": {
+    "file:Sightings.swift": {
       "verdict": "account",
-      "why": "The trees you added and every photograph you took, including one taken while ticking off a tree of ours. Table sightings plus the private sightings bucket, pushed by SightingSync on every change and on launch. FILE STORE rather than UserDefaults, registered by hand.",
-      "keep": true,
+      "why": "The trees you added and every photograph you took, including one taken while ticking off a tree of ours. Table sightings plus the private sightings bucket, pushed by SightingSync on every change and on launch. FILE STORE rather than UserDefaults: Documents/sightings, found by the file-store scan.",
       "off": "Sightings.forgetLocally(), called by ContentView.forgetIfSignedOut(); only the ones the account already holds, so nothing unsent is thrown away."
     },
     "blocked-accounts": {
@@ -107,6 +106,10 @@
     "saved.saves_are_hearts_v1": {
       "verdict": "device",
       "why": "The latch on the one-off saves-are-hearts repair of 2026-09-18 (CloudSync.repairSaves). Device rather than account on purpose: the repair identifies a stray row by asking THIS phone's own record of taps which entries are ticked-but-not-hearted, so a second device with a different local history has its own strays to clear. Syncing the latch would suppress a repair that device still needs. It is a bounded migration flag and carries no user data, so nothing is lost when the app is deleted."
+    },
+    "file:CatalogueStore.swift": {
+      "verdict": "device",
+      "why": "The last downloaded copy of OUR catalogue (trees, walks, species, browse) in Application Support, so the app opens offline. Nobody's data, the same on every phone, replaced on the next refresh."
     }
   }
 }
