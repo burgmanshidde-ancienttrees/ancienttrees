@@ -178,6 +178,18 @@ def check_run_prompt_forbids_compound_commands():
             "is allowed; on 2026-09-19 that was one turn in eleven. Put the rule "
             "back, or change this check with Hidde."
         )
+    # Same ratchet, second rule (2026-09-26): an attempt that dispatches in
+    # the background and then stops talking loses the agent's whole result,
+    # because this runner has no notifications. Five attempts did exactly
+    # that on 2026-09-25.
+    if "run_in_background false" not in low:
+        out.append(
+            ".github/workflows/nightly.yml: the prompt no longer tells runs to "
+            "dispatch agents with RUN_IN_BACKGROUND FALSE. An attempt ends when "
+            "it stops producing turns and a background agent's result dies with "
+            "it; on 2026-09-25 that cost two whole runs. Put the rule back, or "
+            "change this check with Hidde."
+        )
     return out
 
 
