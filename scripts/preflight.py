@@ -2285,6 +2285,25 @@ def _check_explicit_park_names(parks_ts_source):
     return out
 
 
+def check_every_us_place_has_a_state():
+    """Contract L (blueprint v1.22, 2026-09-26): data/us-states.json names the
+    state of every published US place, and the build fails on one it does not
+    name. This says so BEFORE the push, so a run opening a new American place
+    adds the line instead of finding out from a red deploy."""
+    try:
+        m = json.load(open("data/us-states.json")).get("places", {})
+    except FileNotFoundError:
+        return []
+    out = []
+    for f in sorted(glob.glob("data/cities/*.json")):
+        d = json.load(open(f))
+        slug = os.path.basename(f)[:-5]
+        if d.get("country") == "United States" and d.get("trees") and slug not in m:
+            out.append(f"{slug}: US place missing from data/us-states.json; add "
+                       f'"{slug}": "<State>" (Contract L, the state page build fails without it)')
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
@@ -2308,7 +2327,8 @@ def main():
                 + check_story_length()
                 + check_one_common_name_per_species()
                 + check_register_says_the_tree_is_gone()
-                + check_park_words_match())
+                + check_park_words_match()
+                + check_every_us_place_has_a_state())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)

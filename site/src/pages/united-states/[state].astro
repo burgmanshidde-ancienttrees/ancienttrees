@@ -1,0 +1,225 @@
+---
+// Contract L — US state page, /united-states/[state] (blueprint v1.22,
+// 2026-09-26). Built on the country page's skeleton, Contract G, because it is
+// the same job one level down: a map of places, the species, and the oldest
+// trees we map there. What differs is the title and the first sentence, which
+// answer "oldest tree in [state]" directly, since that is how the queries
+// arrive ("oldest tree in ohio", "oldest tree in indiana").
+import { getCollection, type CollectionEntry } from "astro:content";
+import { nTrees } from "../../lib/tree-count";
+import Base from "../../layouts/Base.astro";
+import TreeCard from "../../components/TreeCard.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../../lib/trees";
+import { collectionEntries, MODES } from "../../lib/collection-rank";
+import { GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific, speciesPageSlugs } from "../../lib/species";
+import { usablePhoto, cityFace, cityFaceTree, metaImageUrls, ogImageUrl, NO_PHOTO_SVG } from "../../lib/images";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
+import { fitTitle } from "../../lib/title";
+import { mapHead, countryMapScript } from "../../lib/map";
+import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
+import { usStateOf, stateSlug, assertEveryUsPlaceHasAState, STATE_MIN_TREES, STATE_MIN_PLACES } from "../../lib/us-states";
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+export async function getStaticPaths() {
+  const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+  const intros = await getCollection("states");
+  const collections = await getCollection("collectionPages");
+  const usPlaces = allCities.filter((c) => c.data.country === "United States");
+  assertEveryUsPlaceHasAState(usPlaces.map((c) => c.id));
+  const stateOf = usStateOf();
+
+  return intros
+    .map((intro) => {
+      const places = usPlaces.filter((c) => stateOf[c.id] === intro.data.state);
+      if (intro.data.slug !== stateSlug(intro.data.state)) {
+        throw new Error(`data/states/${intro.data.slug}.json: slug should be ${stateSlug(intro.data.state)} (Contract L)`);
+      }
+      return { intro, places };
+    })
+    .filter(({ places }) =>
+      places.length >= STATE_MIN_PLACES &&
+      places.reduce((n, c) => n + renderableTrees(c).length, 0) >= STATE_MIN_TREES)
+    .map(({ intro, places }) => ({
+      params: { state: intro.data.slug },
+      props: { intro, places, collections, citiesBySlug: new Map(allCities.map((c) => [c.id, c])) },
+    }));
+}
+
+interface Props {
+  intro: CollectionEntry<"states">;
+  places: CityEntry[];
+  collections: CollectionEntry<"collectionPages">[];
+  citiesBySlug: Map<string, CityEntry>;
+}
+const { intro, places, collections, citiesBySlug } = Astro.props as Props;
+
+const state = intro.data.state;
+const canonical = `${BASE_URL}/united-states/${intro.data.slug}`;
+
+const stats = places.map((c) => ({ city: c, slug: c.id, name: c.data.city, count: renderableTrees(c).length }));
+const total = stats.reduce((s, c) => s + c.count, 0);
+
+const title = fitTitle([
+  `Oldest Trees in ${state}: ${total} to Visit`,
+  `Oldest Trees in ${state}`,
+]);
+const description = intro.data.meta_description
+  .replace(/\{trees\}/g, String(total))
+  .replace(/\{places\}/g, String(places.length));
+const crumbItems: [string, string | null][] = [
+  ["Home", BASE_URL],
+  ["United States", `${BASE_URL}/united-states`],
+  [state, null],
+];
+
+const ranked = [...stats].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+
+// Lower bound first, the country page's rule: a wide guess never outranks a
+// documented age.
+const TOP_N = 10;
+const oldestTrees = stats
+  .flatMap((stat) => renderableTrees(stat.city).map((t) => ({ tree: t, stat })))
+  .filter((r) => (r.tree.age_min ?? 0) > 0 || (r.tree.age_max ?? 0) > 0)
+  .sort((a, b) =>
+    (b.tree.age_min ?? 0) - (a.tree.age_min ?? 0) ||
+    (b.tree.age_max ?? 0) - (a.tree.age_max ?? 0) ||
+    a.tree.name.localeCompare(b.tree.name))
+  .slice(0, TOP_N)
+  .map(({ tree, stat }) => ({ tree, stat, tslug: treeSlugsForCity(stat.city)[tree.id], note: MODES.oldest.note(tree) }))
+  .filter((r) => r.tslug);
+const oldest = oldestTrees[0] ?? null;
+
+const rows = ranked.map((c, i) => {
+  const face = cityFace(c.city.data, 300);
+  const ph = face
+    ? `<span class="ctry-ph"><img src="${esc(face)}" alt="" loading="lazy"></span>`
+    : NO_PHOTO_SVG;
+  return { i: i + 1, slug: c.slug, name: c.name, ph, sub: nTrees(c.count) };
+});
+
+const speciesIntros = await getCollection("species");
+const speciesPageBy = speciesPageSlugs(
+  (await getCollection("cities")).filter(cityIsRenderable), speciesIntros);
+const speciesCount = new Map<string, { count: number; sci: string }>();
+for (const stat of stats) {
+  for (const t of renderableTrees(stat.city)) {
+    const common = speciesCommon(t);
+    if (!common || common.includes(",") || / and /.test(common)) continue;
+    const cur = speciesCount.get(common) ?? { count: 0, sci: speciesScientific(t.species ?? "") };
+    cur.count += 1;
+    speciesCount.set(common, cur);
+  }
+}
+const speciesSections = GROUP_ORDER.map((g) => ({
+  g,
+  items: [...speciesCount.entries()]
+    .filter(([, v]) => speciesGroup(v.sci) === g)
+    .sort((a, b) => b[1].count - a[1].count || a[0].localeCompare(b[0]))
+    .map(([common, v]) => ({ common, count: v.count, slug: speciesPageBy.get(common) ?? null })),
+})).filter((s) => s.items.length > 0);
+
+const placeSlugs = new Set(places.map((c) => c.id));
+const relColls = collections.filter((coll) =>
+  collectionEntries(coll, citiesBySlug).some((e) => placeSlugs.has(e.city_slug)));
+const collLine =
+  relColls.length > 0
+    ? `Trees from ${esc(state)} also appear in ${relColls
+        .slice(0, 3)
+        .map((c) => `<a href="/collections/${c.data.slug}">${esc(c.data.title)}</a>`)
+        .join(" · ")}. `
+    : "";
+
+// P2: the answer to "oldest tree in [state]" in the first sentence, from the
+// data, so it moves the day an older tree is published.
+const answer = oldest
+  ? `The oldest tree we map in ${state} is ${oldest.tree.name} in ${oldest.stat.name}, at ${oldest.tree.age_estimate ?? "an uncertain age"}.`
+  : `These are the remarkable trees we map in ${state}.`;
+const countLine = `We map ${nTrees(total)} across ${places.length} places in ${state}, each one researched and verified.`;
+
+const faceUrl = (() => {
+  for (const c of ranked) {
+    const t = cityFaceTree({ hero_tree_id: c.city.data.hero_tree_id, trees: renderableTrees(c.city) });
+    const url = t ? usablePhoto(t)?.url : null;
+    if (url) return url;
+  }
+  return null;
+})();
+const ogImage = faceUrl ? `\n<meta property="og:image" content="${esc(ogImageUrl(faceUrl))}">` : "";
+const graph = [
+  ...SITE_SCHEMA,
+  { "@type": "CollectionPage", name: `Oldest trees in ${state}`, description, url: canonical,
+    ...(faceUrl ? { image: metaImageUrls(faceUrl) } : {}) },
+  { "@type": "ItemList", name: `Places in ${state}`,
+    itemListElement: ranked.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, url: `${BASE_URL}/${c.slug}` })) },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = mapHead() + ogImage + "\n" + ldScript(graph);
+const mapScript = countryMapScript(
+  ranked.map((c) => ({
+    slug: c.slug,
+    city: c.name,
+    count: c.count,
+    markers: renderableTrees(c.city).map((t) => ({ lat: t.location.latitude!, lng: t.location.longitude! })),
+  })),
+  undefined
+);
+---
+<Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
+  <main class="content-page">
+    <Breadcrumbs items={crumbItems} />
+    <h1>Oldest trees in {state}</h1>
+    <p class="answer-first">{answer} {countLine}</p>
+    <div class="prose-block"><p>{intro.data.intro}</p></div>
+    <div class="map-embed"><div id="map" class="map"></div></div>
+    <h2>Every place we map in {state}</h2>
+    <div class="ctry-list">
+      {rows.map((r) => (
+        <a class="ctry-row" href={`/${r.slug}`}>
+          <span class="ctry-rank">{r.i}</span>
+          <Fragment set:html={r.ph} />
+          <span class="ctry-body"><b>{r.name}</b><span>{r.sub}</span></span>
+          <span class="ctry-chev" aria-hidden="true">›</span>
+        </a>
+      ))}
+    </div>
+    {speciesSections.length > 0 && (
+      <section class="ctry-species">
+        <h2>{speciesCount.size} species grow in {state}</h2>
+        {speciesSections.map((s) => (
+          <p class="ctry-species-row"><b>{s.g}</b>{" "}
+            {s.items.map((it, i) => (
+              <Fragment>
+                {i > 0 && <Fragment set:html=" &middot; " />}
+                {it.slug
+                  ? <a href={`/species/${it.slug}`}>{it.common}</a>
+                  : <span>{it.common}</span>}
+                <span class="ctry-species-n">{" "}{it.count}</span>
+              </Fragment>
+            ))}
+          </p>
+        ))}
+      </section>
+    )}
+    {oldestTrees.length > 0 && (
+      <Fragment>
+        <h2>
+          {oldestTrees.length === 1
+            ? `The oldest tree we map in ${state}`
+            : `The ${oldestTrees.length} oldest trees we map in ${state}`}
+        </h2>
+        {oldestTrees.map((r) => (
+          <Fragment>
+            <TreeCard tree={r.tree} citySlug={r.stat.slug} treeSlug={r.tslug} note={r.note} />
+            <p class="coll-citycta"><a href={`/${r.stat.slug}`}>{r.stat.name} &rarr;</a></p>
+          </Fragment>
+        ))}
+      </Fragment>
+    )}
+    <p class="suggest" set:html={`${collLine}See <a href="/united-states">every place we map in the United States</a>, or <a href="/explore">open the map</a> to find what is near you.`} />
+  </main>
+</Base>
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + mapScript} />

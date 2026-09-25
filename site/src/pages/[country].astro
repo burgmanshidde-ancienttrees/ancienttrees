@@ -18,6 +18,7 @@ import { mapHead, countryMapScript, countryName } from "../lib/map";
 // the delegated handler and the sign-in dialog behind it. qa.py enforces the
 // pairing; this is the page paying it.
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
+import { publishedStatePages, usStateOf } from "../lib/us-states";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -205,6 +206,17 @@ const speciesSections = GROUP_ORDER.map((g) => ({
 })).filter((s) => s.items.length > 0);
 const speciesTotal = speciesCount.size;
 
+// Contract L: the United States page lists its state pages, which is how they
+// are reached from above (the place pages' breadcrumbs reach them from below).
+const statePageBy = country === "United States"
+  ? publishedStatePages(countryCities, await getCollection("states"), (c) => renderableTrees(c).length)
+  : new Map<string, string>();
+const stateOfPlace = usStateOf();
+const stateRows = [...statePageBy.entries()].map(([st, slug]) => {
+  const inState = cityStats.filter((c) => stateOfPlace[c.slug] === st);
+  return { st, slug, trees: inState.reduce((n, c) => n + c.count, 0), places: inState.length };
+}).sort((a, b) => b.trees - a.trees || a.st.localeCompare(b.st));
+
 const countrySlugSet = new Set(countryCities.map((c) => c.id));
 // collectionEntries rather than coll.data.entries: a generated collection holds
 // an empty array on disk and ranks itself at build time.
@@ -270,6 +282,20 @@ const mapScript = countryMapScript(
     </p>
     <div class="prose-block"><p>{introRest}</p></div>
     <div class="map-embed"><div id="map" class="map"></div></div>
+    {stateRows.length > 0 && (
+      <Fragment>
+        <h2>Oldest trees by state</h2>
+        <div class="ctry-list">
+          {stateRows.map((r, i) => (
+            <a class="ctry-row" href={`/united-states/${r.slug}`}>
+              <span class="ctry-rank">{i + 1}</span>
+              <span class="ctry-body"><b>{r.st}</b><span>{nTrees(r.trees)} · {r.places} places</span></span>
+              <span class="ctry-chev" aria-hidden="true">›</span>
+            </a>
+          ))}
+        </div>
+      </Fragment>
+    )}
     {/* "Place", not "city": this list is where the single famous trees live
         now that /cities keeps them in a section of its own (2026-09-11), and
         the Flinders Ranges have never been a city. */}

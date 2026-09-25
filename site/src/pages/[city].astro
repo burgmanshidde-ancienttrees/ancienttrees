@@ -28,6 +28,7 @@ import { type WalkMarker } from "../lib/walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
 import { otherCitiesFor, nearbyCitiesFor, cityCentre } from "../lib/other-cities";
+import { publishedStatePages, usStateOf } from "../lib/us-states";
 import { hreflangForCity } from "../lib/i18n";
 import LanguagePicker from "../components/LanguagePicker.astro";
 
@@ -48,6 +49,9 @@ export async function getStaticPaths() {
     if ((byCountryCount.get(intro.data.country) ?? 0) >= 3) countryPages.set(intro.data.country, intro.data.slug);
   }
   const speciesPages = speciesPageSlugs(allCities, speciesIntros);
+  // Contract L: a US place in a state with a page gets the state as a crumb,
+  // which is also how every state page is reached from below.
+  const statePages = publishedStatePages(allCities, await getCollection("states"), (c) => renderableTrees(c).length);
 
   return allCities.map((city) => {
     const canonical = `${BASE_URL}/${city.id}`;
@@ -61,7 +65,7 @@ export async function getStaticPaths() {
     }
     return {
       params: { city: city.id },
-      props: { city, allCities, countryPages, speciesPages, collections },
+      props: { city, allCities, countryPages, speciesPages, collections, statePages },
     };
   });
 }
@@ -72,8 +76,9 @@ interface Props {
   countryPages: Map<string, string>;
   speciesPages: Map<string, string>;
   collections: CollectionEntry<"collectionPages">[];
+  statePages: Map<string, string>;
 }
-const { city, allCities, countryPages, speciesPages, collections } = Astro.props as Props;
+const { city, allCities, countryPages, speciesPages, collections, statePages } = Astro.props as Props;
 
 const cityName = city.data.city;
 const country = city.data.country;
@@ -151,9 +156,12 @@ const description =
 const intro = city.data.intro!;
 
 const countryUrl = countryPages.has(country) ? `${BASE_URL}/${countryPages.get(country)}` : null;
+const usState = country === "United States" ? usStateOf()[city.id] : undefined;
+const stateSlugHere = usState ? statePages.get(usState) : undefined;
 const crumbItems: [string, string | null][] = [
   ["Home", BASE_URL],
   [country, countryUrl],
+  ...(usState && stateSlugHere ? [[usState, `${BASE_URL}/united-states/${stateSlugHere}`] as [string, string]] : []),
   [cityName, null],
 ];
 
