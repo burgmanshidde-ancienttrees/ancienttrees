@@ -44,15 +44,64 @@
 //
 // It stops turning when it is off screen. A 3D map animating behind a page
 // nobody is looking at is a battery bill for nothing.
+//
+// THE WHOLE PLANET, ABOVE THE SHEET, AND YOURS TO TURN (Hidde, 2026-09-25:
+// "doe gewoon Polarsteps na, mensen kunnen inzoomen als ze willen"). It used
+// to fill the screen and centre on the middle of it, which is exactly where
+// the sheet starts, so half the Earth sat under the sheet. A collection in
+// the southern hemisphere was the half that went missing: the opening tree is
+// held at 35 degrees, which put Sydney on the sheet's edge and Hobart,
+// Christchurch or Patagonia underneath it. Polarsteps draws the whole sphere
+// in the space above its sheet and lets you spin and pinch it; so does this.
+// GlobeCover sizes the view to the part a person can see, and the first touch
+// stops the drift so it never fights a finger.
 
 import SwiftUI
 import MapKit
+import UIKit
+
+/// The globe framed to the part of the screen the sheet does not cover, on
+/// the dark of space, so the whole sphere is in view whatever the stop.
+struct GlobeCover: View {
+    let points: [(lat: Double, lng: Double)]
+    @Environment(\.sheetLift) private var lift
+
+    var body: some View {
+        GeometryReader { geo in
+            // The STOP, not the live drag: resizing a 3D map every frame of a
+            // drag stutters, and the globe only has to fit where it comes to rest.
+            let covered = (lift ?? .half).points(in: geo.size.height)
+            // Below the status bar as well, or the clock sits on the North
+            // Pole on a phone with a deep one. The map runs under the safe
+            // area (MapWithSheet), so the inset is read from the window.
+            let top = Self.statusBarDepth
+            let visible = max(geo.size.height - covered - top, 200)
+            ZStack(alignment: .top) {
+                Color.black
+                GlobeMap(points: points)
+                    .frame(width: geo.size.width, height: visible)
+                    .padding(.top, top)
+                    .animation(.easeInOut(duration: 0.25), value: visible)
+            }
+        }
+        .accessibilityIdentifier("globe")
+    }
+
+    private static var statusBarDepth: CGFloat {
+        UIApplication.shared.connectedScenes
+            .compactMap { ($0 as? UIWindowScene)?.keyWindow?.safeAreaInsets.top }
+            .first ?? 20
+    }
+}
 
 struct GlobeMap: UIViewRepresentable {
     let points: [(lat: Double, lng: Double)]
     /// Kilometres from the surface. Far enough that MapKit draws the planet
     /// rather than a country, which it will only do at all under the flyover
     /// configuration set below.
+    /// MapKit caps it: 40,000 and 60,000 km drew the same planet as this on
+    /// an iPhone SE (2026-09-25), so the size of the sphere is set by the
+    /// frame GlobeCover gives it, not by this number.
     private let altitude: CLLocationDistance = 26_000_000
 
     /// WHERE THE GLOBE STARTS TURNING FROM: the MEDIAN of your trees, never
@@ -99,7 +148,13 @@ struct GlobeMap: UIViewRepresentable {
 
     func makeUIView(context: Context) -> MKMapView {
         let map = MKMapView()
-        map.isUserInteractionEnabled = false      // a cover, not a control
+        // Spin it and pinch it, as on Polarsteps. Turning and tilting stay
+        // off: north stays up, and a tilted planet is a way to get lost.
+        map.isUserInteractionEnabled = true
+        map.isScrollEnabled = true
+        map.isZoomEnabled = true
+        map.isRotateEnabled = false
+        map.isPitchEnabled = false
         map.showsCompass = false
         map.showsScale = false
         map.pointOfInterestFilter = .excludingAll
@@ -114,6 +169,10 @@ struct GlobeMap: UIViewRepresentable {
         })
         map.delegate = context.coordinator
         context.coordinator.map = map
+        let touch = TouchDown(target: nil, action: nil)
+        touch.onTouch = { [weak coordinator = context.coordinator] in coordinator?.stop() }
+        touch.delegate = context.coordinator
+        map.addGestureRecognizer(touch)
         context.coordinator.start(from: points)
         return map
     }
@@ -126,7 +185,7 @@ struct GlobeMap: UIViewRepresentable {
 
     func makeCoordinator() -> Coordinator { Coordinator(altitude: altitude) }
 
-    final class Coordinator: NSObject, MKMapViewDelegate {
+    final class Coordinator: NSObject, MKMapViewDelegate, UIGestureRecognizerDelegate {
         weak var map: MKMapView?
         private var timer: Timer?
         private var longitude: Double = 0
@@ -157,6 +216,11 @@ struct GlobeMap: UIViewRepresentable {
         }
 
         func stop() { timer?.invalidate(); timer = nil }
+
+        /// The touch watcher runs beside MapKit's own pan and pinch, never
+        /// instead of them.
+        func gestureRecognizer(_ g: UIGestureRecognizer,
+                               shouldRecognizeSimultaneouslyWith other: UIGestureRecognizer) -> Bool { true }
 
         private func place() {
             guard let map else { return }
@@ -190,5 +254,23 @@ struct GlobeMap: UIViewRepresentable {
                 path.stroke()
             }
         }()
+    }
+}
+
+/// Reports the first finger on the globe and then gets out of the way: it
+/// fails at once, so it never claims a touch MapKit's own gestures need.
+private final class TouchDown: UIGestureRecognizer {
+    var onTouch: () -> Void = {}
+
+    override init(target: Any?, action: Selector?) {
+        super.init(target: target, action: action)
+        cancelsTouchesInView = false
+        delaysTouchesBegan = false
+        delaysTouchesEnded = false
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
+        onTouch()
+        state = .failed
     }
 }

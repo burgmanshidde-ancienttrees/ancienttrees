@@ -10,6 +10,22 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-25 (session) - The My trees globe, whole and turnable, as Polarsteps does it
+
+Hidde asked for the Polarsteps globe and what happens in the southern
+hemisphere. The honest answer was: it disappeared. The globe filled the screen
+and centred on the sheet's edge, so half the planet sat under the sheet, and a
+tree south of about 35 degrees (Hobart, Christchurch, Patagonia) could not be
+seen at all. Now the whole sphere sits above the sheet and below the status
+bar on every phone, a finger spins it and a pinch zooms in, and the slow drift
+stops at the first touch. Looked at on the SE and a large phone, iOS 18 and 26.
+MapKit caps the camera distance (40,000 and 60,000 km drew the same planet), so
+the frame, not the altitude, sets the size. CONVENTIONS.md has the entry.
+
+The rest of this release was tested before it: sweep of 144 screens looked at,
+appfit 0 findings on 4 phones, all 12 flows walked with a way back at every
+step, and the iOS CI run for the app code green.
+
 ## 2026-09-25 - Night run 2026-09-25 09:11 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.1 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). Nothing reached data/cities.

@@ -283,7 +283,7 @@ struct CollectView: View {
         // the real condition (signed in, trees ticked in two countries) is one
         // no simulator can reach. See Launch.globe.
         if Launch.globe || (countries > 1 && showsYourCollection) {
-            GlobeMap(points: points.isEmpty ? GlobeMap.somewhereToLookAt : points)
+            GlobeCover(points: points.isEmpty ? GlobeMap.somewhereToLookAt : points)
         } else {
             TreeMap(trees: visitedShown,
                     mine: mineShown.map {
