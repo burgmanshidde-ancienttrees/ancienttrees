@@ -2477,6 +2477,18 @@ main.content-page.has-tree-bar .map-embed { margin-top: 1.75rem; margin-bottom: 
      them. The row scrolls, so giving it less width costs nothing. */
   .map-filters { top: 0.5rem; left: 0.5rem; right: 3rem; }
 }
+/* On a phone the zoom buttons go, the way Google Maps and Apple Maps draw none
+   on a phone: pinch is how everybody zooms there. Hidde, 2026-09-24: "filters
+   op mobile web zijn helemaal lelijk". Measured at 375px, the chip row had to
+   stop 48px short of the edge to clear the + and compass, so Species sat
+   against them and Free to visit fell off the screen. With the group gone the
+   row takes the full width and scrolls, and the controls still standing
+   (locate, full screen) drop below the row instead of beside it. */
+@media (max-width: 600px) {
+  .maplibregl-ctrl-group:has(.maplibregl-ctrl-zoom-in) { display: none; }
+  .map-filters { right: 0.5rem; }
+  .map-filters ~ .map .maplibregl-ctrl-top-right { top: 44px; }
+}
 
 /* The map credit, as quiet as it may honestly be (2026-09-12, Hidde: "can we
    minimise it further"). What cannot change is that it exists and can be found:
