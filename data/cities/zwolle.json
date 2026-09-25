@@ -3,7 +3,7 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Zwolle pulled down its fortifications and made a ring of parks out of the earth, which is why almost every old tree in the city is standing on a seventeenth century rampart. The best of them is a plane on the Potgietersingel: 33.6 metres tall with a trunk 719 centimetres round, which are measured figures rather than estimates. The oldest is a beech in the grounds of a small country house outside town, where Rhijnvis Feith, poet and mayor of Zwolle, spent his free time writing and in 1799 published an ode to the place in 34 verses.",
-  "meta_description": "16 remarkable trees in Zwolle: a plane 33.6 metres tall on a 17th-century rampart, and a beech in the grounds a mayor wrote a 34-verse ode about.",
+  "meta_description": "20 remarkable trees in Zwolle: a plane 33.6 metres tall on a 17th-century rampart, and a beech in the grounds a mayor wrote a 34-verse ode about.",
   "question_meta": "Zwolle's oldest tree is a beech at Park Boschwijk, banded 1750 to 1800. The tallest is a 33.6 metre plane on the Potgietersingel.",
   "question_answer": "The oldest tree in Zwolle is a beech on the west side of the beech avenue in Park Boschwijk, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. Boschwijk is a small country house just outside the city, and its most famous owner was Rhijnvis Feith, who lived from 1753 to 1824 and was both a poet and mayor of Zwolle. He came here in his free time to write, and in 1799 he published an ode to Boschwijk running to 34 verses. The beech was already a young tree when he was writing, which makes it one of the very few things named in this city that Feith could plausibly have walked past.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements, and the beech at Boschwijk carries a band fifty years wide. The plane on the Potgietersingel is the exception: the register gives it a measured height of 33.6 metres and a trunk girth of 719 centimetres, and those two numbers are the firmest facts on this page. The register is the 2024 edition and is the single source for the first seven found here, which is why those are all flagged. A second batch of seven, cross-checked against the municipality's own protected-tree ordinance, mostly still carries a flag where the two disagree on age or exactly which tree is meant. The singels and Park Eekhout sit on the city's former defensive works, made ground rather than natural soil, which is why several pins there mark a row rather than a trunk. If you find one of these gone, tell us and it comes off the same day.",
@@ -567,6 +567,133 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "zwo_017",
+      "name": "The Silver Lime by the Bridge",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1905",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Near the footbridge in the southern part of Park 't Engelse Werk, Zwolle",
+        "latitude": 52.495508,
+        "longitude": 6.06876,
+        "neighbourhood": "Spoolde, Park 't Engelse Werk"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://lokaleregelgeving.overheid.nl/CVDR757712",
+        "https://nl.wikipedia.org/wiki/Engelse_Werk"
+      ],
+      "access": "Free. Park 't Engelse Werk is a 16-hectare public walking park owned by the municipality (gemeente Zwolle), open at all times; the national register itself records this tree as visitable (visitable: ja).",
+      "transport": "About 1.8 km southwest of Zwolle station, roughly 23 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Of the roughly two hundred trees Zwolle's council lists in Park 't Engelse Werk, one is a silver lime. The rest run to common limes and beeches by the dozen, which is what makes this one worth finding. Stand under it on a breezy day and the leaves flip to show their felted, silvery undersides, something none of its neighbours can do.\n\nThe national monumental tree register records a silver lime near the footbridge in the southern part of the park, planted between 1900 and 1910, which puts it at around 120 years old. The council's own list of special trees records a silver lime in the park planted in 1907. Since it is the only one on that list, it is very probably this tree, though the council gives no coordinate to prove it.\n\nThe park is much older than the lime. It was laid out between 1828 and 1830 in the English landscape style, probably by Hendrik van Lunteren, over the remains of 17th-century fortifications built on the advice of the military engineer Menno van Coehoorn. A brick tunnel from those works still survives in the grounds, and the whole park is now a national monument. It is Zwolle's oldest park and its busiest, running out to the Spoolderbos.\n\nNobody has published a girth or height for this tree yet. If you pass it with a tape measure, tell us what you find.",
+      "how_to_recognise": "You can recognise it by the leaves, silvery underneath, which flash pale when the wind turns them. It stands near the footbridge in the southern part of the park, about 45 metres from the copper beech by the water.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "zwo_018",
+      "name": "The Beech East of the Restaurant",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 130 years, from a registered planting date around 1895",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "East of the restaurant/pavilion, Park 't Engelse Werk, Zwolle",
+        "latitude": 52.496103,
+        "longitude": 6.066781,
+        "neighbourhood": "Spoolde, Park 't Engelse Werk"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://lokaleregelgeving.overheid.nl/CVDR757712",
+        "https://nl.wikipedia.org/wiki/Engelse_Werk"
+      ],
+      "access": "Free. Park 't Engelse Werk is a 16-hectare public walking park owned by the municipality, open at all times; the national register records this tree as visitable (visitable: ja).",
+      "transport": "About 1.9 km west-southwest of Zwolle station, roughly 24 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In a park where beeches were planted in almost every decade from the 1870s to the 1930s, the national monumental tree register picked this one. Zwolle's own list of special trees records beeches going into Park 't Engelse Werk in 1877, 1887, 1907, 1920, 1927 and 1930, among other years. The register singles out the beech standing east of the restaurant, planted between 1890 and 1900, which makes it around 130 years old and the oldest of the three register trees in this part of the park.\n\nBe clear about what that rests on. The register is the only source that names this particular tree. The council's list confirms that beeches of this age stand in the park, but it gives no locations, so it cannot say which is which.\n\nThe landmark it is named after has a longer story. The park has had a refreshment house near the dike since the 19th century, and it is very likely the same place the register means by the restaurant, though no source joins the two by name. When this beech went in, the park was already more than sixty years old: it was laid out between 1828 and 1830 in the English landscape style, and the big pond with its wooded islets had been added after 1874.\n\nNobody has published a girth or height for it. If you measure it, tell us, and help settle how it compares with its neighbours.",
+      "how_to_recognise": "You can recognise it as the big beech standing just east of the park restaurant. The silver lime and the copper beech of the register stand about 200 metres away, down by the water in the southern part of the park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "zwo_019",
+      "name": "The Copper Beech by the Water",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1905",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Southern part of Park 't Engelse Werk, by the water, Zwolle",
+        "latitude": 52.495357,
+        "longitude": 6.069373,
+        "neighbourhood": "Spoolde, Park 't Engelse Werk"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://lokaleregelgeving.overheid.nl/CVDR757712",
+        "https://nl.wikipedia.org/wiki/Engelse_Werk"
+      ],
+      "access": "Free. Park 't Engelse Werk is a 16-hectare public walking park owned by the municipality, open at all times; the national register records this tree as visitable (visitable: ja).",
+      "transport": "About 1.8 km southwest of Zwolle station, roughly 23 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A copper beech planted at the water's edge around the time the 20th century began, and still standing there: that is what the national monumental tree register records in the southern part of Park 't Engelse Werk. Its entry, filed under the Dutch name bruine beuk, gives a planting band of 1900 to 1910, which puts the tree at around 120 years old. That age is read from the band rather than from a record of the day it went in.\n\nThe water it stands beside is itself an addition. The park was laid out in 1828 to 1830 on the site of old fortifications, and the large pond with its wooded islets came later, after 1874. So the beech was planted into a landscape that had already been reshaped once.\n\nZwolle's council keeps its own list of special trees, and it records several copper beeches in this park, planted in 1887, 1927 and 1937 among other years. That confirms copper beeches of this generation grow here, but the list carries no locations, so it cannot tell us which entry is this tree. The register alone names this specimen, and we say so plainly.\n\nWhat you get on the ground is a small cluster: the park's silver lime stands about 45 metres away, and the register's beech by the restaurant about 200 metres off. Nobody has published a girth for this one. If you have a tape measure, send us the number.",
+      "how_to_recognise": "You can recognise it by the dark purple leaves of a copper beech, standing at the water's edge in the southern part of the park. The silver lime by the footbridge is about 45 metres away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "zwo_020",
+      "name": "The Weeping Beech of Park Boschwijk",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1905",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "In the lawn, Park Boschwijk, Heinoseweg, Zwolle",
+        "latitude": 52.499144,
+        "longitude": 6.137681,
+        "neighbourhood": "Boschwijk"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://rijksmonumenten.nl/monument/528225/boschwijk-historische-tuin-en-parkaanleg/zwolle/"
+      ],
+      "access": "Free. Park Boschwijk's landscape garden is open to the public (already established for zwo_002 and zwo_004, published trees in the same park); the register records this tree as visitable (visitable: ja), owner_category gemeente.",
+      "transport": "About 3.2 km east of Zwolle station, roughly 40 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The garden around this weeping beech was designed by a poet who was also the mayor of Zwolle. Rhijnvis Feith owned the Boschwijk estate and, after 1783, laid out its landscape garden on the southeast side of the house in the English style, with winding paths and water. The beech came more than a century after him. The national monumental tree register gives it a planting band of 1900 to 1910, which makes it around 120 years old, an age read from that band rather than from any planting record.\n\nWhat stands there now is a weeping beech in the lawn, the kind of tree whose branches hang down towards the grass rather than reaching out. The register says little more: its history field for this tree is blank. The national monument listing for Boschwijk's historic garden confirms the design, the protection and the public park, but does not mention this beech by name. So the tree rests on the register's word alone, and we flag it as such.\n\nIt is worth combining with two other register trees in the same park that are already on this map, the beech of the Boschwijk avenue and the red oak, which stands about 150 metres from here. Together they make a short loop through Feith's garden.\n\nNobody has published a girth or height for it. If you visit, a measurement sent to us would fill the gap.",
+      "how_to_recognise": "You can recognise it by its drooping branches, the habit of a weeping beech. It stands in the lawn of Park Boschwijk, about 150 metres from the park's red oak.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

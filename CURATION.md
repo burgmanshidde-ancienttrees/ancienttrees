@@ -18,6 +18,28 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-25 - Breda, Utrecht, Zwolle, Rotterdam and Salzburg deepened: 15 trees, all flagged (register-only sourcing), photos still missing on all but two
+
+Refilled the writable-lead shelf with two verify passes (Coimbra outer ICNF candidates, four European Tree of the Year finalists), then worked the register-backed deepen queue: Utrecht and Zwolle both reached their targets (30 and 20), Breda gained a Tree of the Year day-trip addition in Etten-Leur, and Rotterdam and Salzburg each opened a second walkable cluster (Arboretum Trompenburg, paid; Aigen/Morzg/Nonntal, free).
+
+**Breda 10 -> 11.** bre_011, the Moeierboom (Etten-Leur, 7 min by train), from the European Tree of the Year lead file. Rewrote the city's oldest-tree question page: the Moeierboom (345 years) now outages the De Nieuwe Veste mulberries (245 years) but stands in a different town, so the page says both plainly rather than crowning a tree that is not in Breda.
+
+**Utrecht 27 -> 30 (target reached).** Three LRMB register trees, one a folded pair of courthouse planes. One candidate resolved as the already-published Oude Hortus Ginkgo under a different register id; 4 dead register rows and one non-collectible bulk canal-tree-row caught and blocked; three stale leads.json entries that contradicted their own file's blocked-list record, fixed.
+
+**Zwolle 16 -> 20 (target reached).** Three trees from a Park 't Engelse Werk cluster plus one Boschwijk weeping beech, all LRMB, cross-checked against Zwolle's own 2024 municipal special-trees list. Two Genne farmland oaks caught as dead (uprooted in the January 2007 storm, per the register's own history text) and blocked before they could ship.
+
+**Rotterdam 12 -> 16, a new second stop.** Four LRMB trees in Arboretum Trompenburg (holm oak, weeping pear, Himalayan cedar, summer lime), a paid botanical garden about 3.2km from the existing walk, holding Dutch National Plant Collections. All flagged: only general garden sources corroborate the arboretum, not these individually accessioned specimens. `paid_entry` was set explicitly on all four (preflight had been silently failing this pattern elsewhere; see Le Guerno/brf_001's long-standing NOTE) and the "free to visit" FAQ answer now says which four need a ticket. Two more candidates (a yew, a bald cypress) held on unresolved access.
+
+**Salzburg 9 -> 12, a new second cluster.** Three Naturdenkmal register trees in Aigen/Morzg/Nonntal (hornbeam, two oaks), about 2km apart, south of the existing walk. Each corroborated by an independent geotagged Commons photograph; the hornbeam also by an independent Wikipedia district article giving the same vague "200+ years" age. One private-garden beech held as a lead: it may qualify as a view-only tree under the 2026-08-13 ruling, but nothing confirms the viewing spot is public, and Overpass (the usual way to settle this) is dead from this environment on all three routes (the primary host, its lz4 mirror, and the kumi.systems alternative all failed, recorded in the fetch blocklist).
+
+**Coimbra: zero trees shipped, real research kept.** Four outer ICNF candidates 4-11km from centre: one was the already-published cbr_004 under a different processo reference, the other three each gained a second source but stayed leads on an unresolved hard-rule-10 access question (rural Portuguese estates with no confirmed public path).
+
+**Photos: two approved, three held, on a demand-shortlist viewing pass.** tok_003 (Ueno Toshogu Camphor, Tokyo) and lon_019 (Fountain Court Mulberries, London) now ship. ali_006, hnl_015 (x2) held: right species, but the entry sits among several near-identical trees and nothing pins down which one. 43 of 48 candidates rejected, mostly filename-matched files that were never photographs of the named tree at all (a public toilet, a memorial column, river landscapes, a different species).
+
+**German translation of Salzburg brought current by hand**, since transbrief.py's brief() refuses to touch a live overlay: translated the 3 new trees, fixed the "9 trees" count promise in five fields (title, meta_description, intro, question_meta, two FAQ answers), verified clean with `i18ncheck.py`.
+
+Cost: ~635k tokens across 4 verify passes, 2 write passes and 1 photo-judge pass; logged in `data/agent-costs.json` under 2026-09-25.
+
 ## 2026-09-24 - Christchurch published (6 trees) and 4 Polish Tree of the Year winners each shipped as their own place
 
 Finished two claims an earlier attempt this window left standing.

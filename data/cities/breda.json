@@ -3,18 +3,18 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Breda's oldest trees survived by getting in the way of a building, not by being protected on purpose. A trio of mulberries stopped a 1995 library architect from building where he first planned to, a wingnut from the Caucasus outgrew the fashion that planted it, and a giant sequoia keeps growing beside a street named for the village it is not quite in. None of it is planned heritage. All of it is free to see, in a city better known for its Golden Triangle nightlife than for what is quietly growing behind it.",
-  "meta_description": "Breda's oldest trees are three 1780s mulberries a library was built around. Ten verified trees, real stories, how to reach each one.",
-  "question_answer": "Breda's oldest trees are three black mulberries in the inner courtyard of De Nieuwe Veste on Molenstraat, planted around 1780 in the garden of the manor house Huize Ocrum, roughly 245 years old. Architect Herman Hertzberger built the current library and cultural centre around them in 1995 rather than remove them.",
-  "question_meta": "Three 1780s mulberry trees, built around by a 1995 library, are Breda's oldest. Where to find them, and the city's other nine verified ancient trees.",
-  "question_context": "The mulberries' age comes from the property's own recorded history rather than a ring count: Huize Ocrum's garden is documented as the planting site around 1780, under its then-owner Gerrit Willem Motman, steward of the princely domains, and the trees survived as the surrounding estate was built up and eventually demolished around them over the following two centuries. When Herman Hertzberger designed the current De Nieuwe Veste library and cultural centre in the mid-1990s, the three trees were already old enough that removing them was never seriously considered. Instead the building folds around the courtyard they stand in, their canopy shaping the layout of the structure above rather than the other way round, an unusually literal case of architecture following an existing tree rather than clearing space for a new one. They are not the tallest or thickest trees in Breda; the courtyard is small and the trees have grown accordingly. Their claim to being the city's oldest rests on the documented planting date alone, which none of Breda's other candidate trees can currently match with the same specificity.",
+  "meta_description": "Breda's oldest trees are three 1780s mulberries a library was built around. 11 verified trees, real stories, how to reach each one.",
+  "question_answer": "The oldest documented tree on this page is the Moeierboom, a large-leaved lime planted around 1675, making it roughly 345 years old. It stands on the Markt in Etten-Leur, a seven-minute train ride from Breda, rather than in Breda itself; the oldest tree actually inside the city is the trio of black mulberries at De Nieuwe Veste, planted around 1780.",
+  "question_meta": "Breda's oldest tree is a 345-year-old clipped lime in Etten-Leur, a short trip away. The oldest tree in the city itself: 1780s mulberries at a library.",
+  "question_context": "The Moeierboom is not in Breda proper. It stands on the Markt in Etten-Leur, a separate town about ten kilometres away and seven minutes by train, and this page includes it under the project's day-trip rule: a tree close enough to reach easily belongs here, labelled honestly with its real place. Etten-Leur's own civic pride in the tree is well documented, from a national Tree of the Year win in 2020 to the crowdfunded lights it wears every winter, and its age rests on four independent sources rather than one.\n\nInside Breda's own borders, the oldest tree with a documented planting date is the trio of black mulberries at De Nieuwe Veste, planted around 1780 in the garden of a manor house that no longer stands. A 1995 library was built around them rather than through them. At roughly 245 years old they are a century younger than the Moeierboom, and unlike it, they have never needed clipping to survive: their small courtyard simply never demanded it.",
   "faq": [
     {
       "q": "What is the oldest tree in Breda?",
-      "a": "Three black mulberries in the courtyard of De Nieuwe Veste on Molenstraat, planted around 1780 in what was then the garden of Huize Ocrum, roughly 245 years old."
+      "a": "The Moeierboom, a 345-year-old clipped lime on the Markt in Etten-Leur, a short train ride from Breda. Inside Breda itself, the oldest is the roughly 245-year-old trio of black mulberries at De Nieuwe Veste."
     },
     {
       "q": "Are Breda's ancient trees free to visit?",
-      "a": "Yes, all ten are in public parks or a public library courtyard with free access during opening hours."
+      "a": "Yes, all eleven are in public parks or a public library courtyard with free access during opening hours."
     },
     {
       "q": "Why does a library in Breda have trees growing inside its courtyard?",
@@ -384,6 +384,40 @@
       "how_to_recognise": "The plane standing at the park's western edge, where Valkenberg gives way to the Willemstraat corner.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "bre_011",
+      "name": "The Moeierboom",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "about 345 years, planted 1675",
+      "age_min": 340,
+      "age_max": 350,
+      "girth_cm": 206,
+      "location": {
+        "address": "Markt 1, Etten-Leur, opposite the old town hall",
+        "latitude": 51.5696042,
+        "longitude": 4.635443,
+        "neighbourhood": "Etten-Leur town centre (day trip from Breda)"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2021/The-ancient-Mother-Tree",
+        "https://www.naturetoday.com/intl/nl/nature-reports/message/?msg=26816",
+        "https://www.etten-leurcityapp.nl/locaties/moeierboom-56abb759f6bf5072258b48b4",
+        "https://www.henrykuppen.nl/nl/home/bomen-om-blij-van-te-worden-moeierboom-van-etten-leur-verkozen-tot-nederlands-mooiste-boom"
+      ],
+      "access": "Free, standing in the open on the Markt (the town square) in the centre of Etten-Leur, fenced only temporarily during public events",
+      "transport": "Etten-Leur railway station, 7 minutes by train from Breda (NS), then about a 10 minute walk to the Markt",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Nearly three and a half centuries old, and barely two metres round: the Moeierboom is small on purpose. This large-leaved lime has been clipped into shape since it was planted, its side limbs trained flat at about 2.75 metres and its upward growth cut back once it climbs some three metres higher. The arborist Henry Kuppen calculates that the pruning held the trunk to about 0.8 centimetres of new girth a year, which is how a tree planted in 1675 measured 206 centimetres in 2019. An iron frame now carries its heavy limbs.\n\nThe name is dialect. Moeier comes from moeder, mother, and the lime earned it by producing offspring from branches rooted where they touched the ground. It stands on the Markt of Etten-Leur, opposite the old town hall, on the spot where justice was administered in the Middle Ages. Vincent van Gogh lived here from 1881 and is said to have passed it daily; some accounts say he painted it.\n\nThe date is not quite settled. A second plaque nearby says 1774, a century later, but the regional archive, the Brabants Historisch Informatie Centrum, rejects it, and most sources keep 1675.\n\nIn 2020 it was voted Dutch Tree of the Year, then placed sixth in Europe with 34,244 votes. Every winter the town crowdfunds the 7,500 or so lights it wears. It is seven minutes from Breda by train.",
+      "how_to_recognise": "You can recognise it by its shape: a clipped lime with its limbs trained flat at about 2.75 metres and propped on an iron frame. It stands in the open on the Markt in Etten-Leur, opposite the old town hall.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
