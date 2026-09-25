@@ -10,6 +10,26 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-09-25 (session) - Leon's corrections, taken as true
+
+Hidde: "leon is echt een boom legend ik zou zijn tips als waar zien". Three
+open rows from our one outside contributor, now readable from a session with
+`python3 scripts/inbox.py` (the words stay out of the repo).
+
+- **Bad Homburg, bhg_005: the pin was ours and wrong.** Leon said the 4.94m
+  oak does not stand at the lake. The survey we cite says 30m south-west of
+  it at 35.3" N; we had transcribed 33.3", about 60m south, and marked it
+  confirmed. Pin moved to the source coordinate, renamed The Oak South-West of
+  the Lake (old URL redirects), recognition line added.
+- **His Schöne Eiche is a third oak**, about 5m, near the Altstadt gate across
+  the meadow from the plane. Kept as lead bhg_l.. until he gives a spot: the
+  location is the one field a description cannot fill.
+- **Hammundeseiche, fwd_001: 350 to 700 years.** He dates it 500 to 700 from
+  hollow limbs, a century of crown retreat, deep bark and 400m altitude, and
+  the 1592 Mercator mark we had left unused. The story now states both
+  estimates and the map, and no longer claims the tree post-dates the village.
+
 ## 2026-09-24 - Night run 2026-09-24 22:48 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 64.5 minutes of its 120 minute window, 552 turns, 67 commands refused by the allowlist, ended clean (success). 10 tree(s) reached data/cities across 12 city file(s), and the run still wrote no log entry of its own. Claims left behind: portland, brussels, which block the top of the queue until they expire.
