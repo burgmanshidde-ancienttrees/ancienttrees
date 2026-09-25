@@ -237,6 +237,26 @@
   "d8ccd98d-702c-4e1e-8c23-bdb5a712b806": {
    "outcome": "lead",
    "date": "2026-09-25"
+  },
+  "27cb465f-fb1c-4e42-b241-bbd8fe7b196c": {
+   "outcome": "published",
+   "date": "2026-09-25",
+   "tree_id": "myz_004",
+   "file": "myz_004-the-akou-of-uchiumi.jpg",
+   "reason": "Wide shot in full leaf, daylight, well exposed, tree fills the frame. Massive aerial-root skirt poured over a low wall exactly as described, right beside the shrine's blue pedestrian sign. Tree currently has no photo at all. Species seen: Broadleaf evergreen with glossy elliptical leaves and a mass "
+  },
+  "16539189-abe6-4f04-a8a9-52ec0c3752db": {
+   "outcome": "published",
+   "date": "2026-09-25",
+   "tree_id": "kag_001",
+   "file": "kag_001-the-camphor-of-shiroyama.jpg",
+   "reason": "Upward shot showing the huge buttressed base (person for scale) and the identification plaque at the trunk, roped off from the path in Shiroyama Park. Daylight, dappled but well exposed, tree fills the frame. Tree currently has no photo at all. Species seen: Thick, deeply fissured bark, glossy everg"
+  },
+  "a1e5a82b-9ad7-480d-913b-d5e89b0c362b": {
+   "outcome": "rejected",
+   "date": "2026-09-25",
+   "tree_id": "kag_001",
+   "reason": "Byte-identical file to 16539189-abe6-4f04-a8a9-52ec0c3752db (same md5), the app's own tree-id match of the same shot already approved for kag_001. Nothing to add by shipping it twice."
   }
  }
 }

@@ -37,6 +37,175 @@
    "agreed": null
   },
   {
+   "id": "lead:01d9c8b8-147f-40d5-af0c-d81857c90f91",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/01D9C8B8-147F-40D5-AF0C-D81857C90F91.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Ordinary backlit street tree beside apartment blocks, no unusual girth or crown shape, no plaque legible, no register or write-up within 100m. Not pursued.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:b4b65fef-1ac7-4ebd-ae21-88200be2fb81",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/B4B65FEF-1AC7-4EBD-AE21-88200BE2FB81.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Striking solitary buttressed specimen (kapok/silk-floss type) on the lawn at Kagoshima honko waterfront by the Sakurajima ferry terminal, spectacle visible in the photograph, but no register entry and no web source names it (checked JP and EN). Worth a proper research pass on this exact spot before it clears the normal bar.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:9f1810d8-0bbf-4220-81f7-47c9177c974a",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/9F1810D8-0BBF-4220-81F7-47C9177C974A.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Duplicate of b4b65fef, same tree photographed 17 seconds later. See that verdict.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:1993a31d-f025-44d3-bcc1-6caa9cbba0eb",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/1993A31D-F025-44D3-BCC1-6CAA9CBBA0EB.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Canopy of large trees over a car park/gate 250m from kag_001, likely Shiroyama Park's own approach road. No single trunk stands out as a collectible point, no register or write-up within 100m.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:d8ccd98d-702c-4e1e-8c23-bdb5a712b806",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "Biggest of the park - 4m girth\n",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/D8CCD98D-702C-4E1E-8C23-BDB5A712B806.jpg",
+   "reader_note": "Biggest of the park - 4m girth\n",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Wide, well-balanced tree given its own circular brick planter in the centre of a city park plaza, reader notes 4m girth, no published tree nearby at all. Strongest of this batch, but no register entry or source found; needs a research pass to place the park before it clears the normal bar.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:16539189-abe6-4f04-a8a9-52ec0c3752db",
+   "seen": "2026-09-25",
+   "kind": "photo of a tree we map",
+   "tree": "The Camphor of Shiroyama",
+   "city": "Kagoshima",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "out/sightings/16539189-abe6-4f04-a8a9-52ec0c3752db.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "distance",
+   "distance_m": 12,
+   "current_photo": "none",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Camphor Tree (Cinnamomum camphora)"
+   },
+   "verdict": "publish",
+   "reason": "Tree had no photo at all (status missing). Distance-matched 12m to kag_001, the app also matched it directly by tree_id in a second identical submission. Species and description both checked yes: buttressed camphor base with identification plaque, roped off from the path in Shiroyama Park, matches the recognition line and story. Well lit forest shot, tree fills frame, person for scale shows the size. Published.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:27cb465f-fb1c-4e42-b241-bbd8fe7b196c",
+   "seen": "2026-09-25",
+   "kind": "photo of a tree we map",
+   "tree": "The Akou of Uchiumi",
+   "city": "Miyazaki",
+   "species": "Sea Fig (Ficus superba)",
+   "photo": "out/sightings/27cb465f-fb1c-4e42-b241-bbd8fe7b196c.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 40,
+   "current_photo": "none",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Sea Fig (Ficus superba)"
+   },
+   "verdict": "publish",
+   "reason": "Tree had no photo at all (status missing). App-matched (distance 40m). Species and description both checked yes: wild aerial-root fig mass poured over the wall and rock beside the shrine's approach sign, matching the recognition line's description of the wildest-looking akou fig. Daylight, well exposed, in leaf, tree fills the frame. Published.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
    "id": "lead:12168ca4-f893-4296-a444-14bd9e2c4e09",
    "seen": "2026-09-22",
    "kind": "a tree we do not map",
