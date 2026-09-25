@@ -10,6 +10,22 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-25 - Reader submission answered, three verify passes dispatched (Belgium/Lithuania famous-tree leads, Warsaw register cluster)
+
+7-day visits: 1256 visits, 1988 page views (climbing each day this week: 108 to 178).
+
+Rung 1: one open reader submission (row 230, Bad Homburg's "Schöne Eiche"). The same contributor Hidde has ruled trustworthy on this park gave exact GPS coordinates this time. Converted to decimal (50.229025, 8.6094, ~95m from the published plane tree, matching his own description), updated the lead (`data/leads/bad-homburg.json`, bhg_l07) to `location_precision: confirmed`. Did NOT publish as bhg_006 despite that: `check_every_tree_names_a_source()` in preflight.py refuses a city-page tree with an empty `verified_sources` array, and this tree has none beyond the contributor's own word (searched baumkunde.de's own register and search tool for the "Schöne Eiche" he says he registered there years ago; nothing found). Replied in German asking for his old baumkunde.de link or a trunk photo, outcome set to `open_question`. Logged in CURATION.md.
+
+Rung 2/3 clear: `health.py` all green, no BLOCKER/WARN, `preflight.py` 640 cities checked 0 problems (only pre-existing NOTEs), `superlatives.py` clean.
+
+`prepare.py` had nothing ready to write (0 READY leads; the 2 "awaiting a writer" trees, a Nanjing juniper and a Fontenay Abbey plane, both explicitly failed the single-tree destination test in their own verify notes and have no container to publish into) and said REFILL THE SHELF FIRST. Claimed and dispatched three verify passes in parallel, all still running as this run's window closed:
+
+- `_famous-belgium` (14 unsourced famous-tree leads from famous_trees.py, all with Commons photos already, several carrying Flemish heritage-register ids embedded in their photo filenames worth joining against id.erfgoed.net)
+- `_famous-lithuania` (15 unsourced oak leads, same source, told to check for duplicates against the ~77 other Lithuanian entries already in that file and to try the Wikipedia-registry-join technique)
+- `Warsaw` (register-backed deepen, 39/60 trees; pointed at the pre-filtered `warsaw-close-cluster-candidates.json` and the Polish-Wikipedia join technique BRIEF_RESEARCH.md already documents for this exact city; told to land 8-15 new trees within the existing walk radius, not to try to fill the whole gap in one pass)
+
+All three were claimed via passcheck.py and pushed before dispatch. Whichever run picks this back up: check `data/research/_famous-belgium-verified.json`, `data/research/_famous-lithuania-verified.json` and `data/research/warsaw-verified.json` for output, merge what clears the bar with a write pass, update the leads files for anything declined, then `python3 scripts/passcheck.py --release <name>` on each.
+
 ## 2026-09-25 - Night run 2026-09-25 17:21 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 56.8 minutes of its 120 minute window, 310 turns, 14 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree.
