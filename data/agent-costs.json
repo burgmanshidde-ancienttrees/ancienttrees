@@ -1096,7 +1096,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -8296,7 +8296,7 @@
     "brief_wrong": false
    },
    {
-    "target": "_famous-france refill, batch Forest (Senonches/Réno-Valdieu)",
+    "target": "_famous-france refill, batch Forest (Senonches/R\u00e9no-Valdieu)",
     "kind": "verify",
     "tokens": 95000,
     "trees": 0,
@@ -8309,7 +8309,7 @@
     "kind": "verify",
     "tokens": 61000,
     "trees": 1,
-    "note": "4 candidates: Platane de Branféré verified, 1 blocked (not a living tree), 2 leads",
+    "note": "4 candidates: Platane de Branf\u00e9r\u00e9 verified, 1 blocked (not a living tree), 2 leads",
     "wasted": 0,
     "brief_wrong": false
    },
@@ -8327,7 +8327,7 @@
     "kind": "verify",
     "tokens": 175000,
     "trees": 2,
-    "note": "3 candidates: Ramolleux and Tronjoly verified, Chêne des Partisans blocked (fell 1926)",
+    "note": "3 candidates: Ramolleux and Tronjoly verified, Ch\u00eane des Partisans blocked (fell 1926)",
     "wasted": 0,
     "brief_wrong": false
    },
@@ -8647,6 +8647,14 @@
    "tokens": 0,
    "trees": 0,
    "note": "Session work: processed reader submission 230 (Schone Eiche coordinate), converted DMS to decimal, updated the lead with a confirmed pin, checked preflight source requirement, replied asking for a baumkunde.de link or photo. No tokens spent on research (no network fetch cost beyond a few WebSearch/curl lookups that found nothing)."
+  },
+  {
+   "target": "oahu, munich, brisbane, alicante, glasgow, utrecht, warsaw (demand-city photo shortlist)",
+   "kind": "photo-judge",
+   "tokens": 55000,
+   "trees": 0,
+   "photos_approved": 8,
+   "note": "33 candidates fetched by photo_fetch.py, viewed and judged: 8 approved (Glasgow 1, Warsaw 7), 3 held on identity (Zoo Gate banyans x2, Canalejas twin fig), 22 rejected (mostly non-tree subjects, bark/canopy close-ups). Munich, Brisbane and Utrecht batches all rejected outright."
   }
  ],
  "2026-09-26": [
