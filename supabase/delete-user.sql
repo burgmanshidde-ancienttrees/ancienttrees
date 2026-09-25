@@ -13,8 +13,8 @@
 -- part a person would care most about, because it is their face.
 --
 -- Everything else still travels by cascade and is listed here so the promise
--- can be checked rather than trusted: saves, visited, profiles, follows in both
--- directions, blocks in both directions, and reports both made and received.
+-- can be checked rather than trusted: saves, visited, profiles, walks, follows in
+-- both directions, blocks in both directions, and reports both made and received.
 
 create or replace function public.delete_user() returns void
 language plpgsql security definer set search_path = public as $$
@@ -42,7 +42,7 @@ begin
   -- image is a tidy-up job, an account that will not delete is a broken
   -- promise and an App Store rejection.
   --
-  -- saves, visited, profiles, follows, blocks and reports all reference
+  -- saves, visited, profiles, walks, follows, blocks and reports all reference
   -- auth.users(id) on delete cascade, so the line below is what takes them,
   -- and adding a table with that foreign key is what keeps this function from
   -- ever needing to know about it.

@@ -1,5 +1,27 @@
 # Decisions
 
+## 2026-09-26 - Walks you make yourself get a table before they get a screen
+
+Hidde, after the cross-device audit found Kit/MyWalks.swift keeping walks in a
+file on the phone: "walks you made is for later - but just to be sure already
+set it up properly." That is his yes under hard rule 1 for one new table
+holding somebody's data, `walks`, and nothing wider.
+
+What was built: supabase/walks.sql. Owner-only RLS, cascade off auth.users so
+delete_user() takes it without knowing it exists (and account_delete_test.py
+now proves that), stops as jsonb in the Swift model's own keys with exactly one
+of treeId / sightingId per stop, a server-set updated_at so two devices resolve
+by the later write, and `shared` off by default. The `shared_walks` view is the
+unlisted link for later, and it strips the position from any stop that is a
+reader's own tree and drops the routed line of a walk carrying one: hard rule
+10 applies to a walk exactly as it does to shared_trees.
+
+What was NOT built: no screen and no client store. When one is, it writes this
+table from the first walk (never a phone-only file first), crossdevice.py
+refuses its file store until it is registered as `account` with an `off`, and
+the website shows a shared walk in the same change as the app (both-surfaces
+rule).
+
 ## 2026-09-23 - The park gate is waivable, one park at a time, down to three
 
 Hidde, on being told the National Mall stood at four trees and Contract H
