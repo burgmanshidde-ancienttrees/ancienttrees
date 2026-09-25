@@ -1675,6 +1675,74 @@ CHIPS = {"wrong location", "dead or gone", "could not reach it",
          "worth it", "not worth it"}
 
 
+def readers_gave_section(today):
+    """What a reader gave us that went live, first thing in the entry.
+
+    Hidde, 2026-09-26, on hearing that a stranger's photograph now fronts
+    Seville's El Gran Capitan, a tree that had none: "kun je dit soort dingen
+    bovenaan daily digest zetten dit is precies waar we het voor doen." A
+    reader giving something and it reaching a page is the loop this project
+    runs on, and until now it sat as one row among fifteen in the verdict
+    table, below the search numbers. So it opens the entry, and on a day
+    with nothing it prints nothing rather than an empty headline.
+
+    Two kinds, both counted from our own records rather than guessed:
+    photographs a reader sent that were published (sightings-processed.json,
+    by publish date; our own photographs never enter it as `published` for a
+    reader because judgement and inbox mark them `mine`), and submissions whose
+    outcome is `changed`, meaning a reader's correction altered a page. Tree
+    and city only, never who: DATA.md is public and a name is never printed."""
+    since = today - datetime.timedelta(days=2)
+    out = []
+    try:
+        with open(os.path.join(ROOT, "data", "sightings-processed.json")) as f:
+            done = json.load(f).get("done", {})
+    except (OSError, ValueError):
+        done = {}
+    names = {}
+    for sid, d in done.items():
+        if d.get("outcome") not in ("published", "added"):
+            continue
+        try:
+            day = datetime.date.fromisoformat(str(d.get("date"))[:10])
+        except ValueError:
+            continue
+        if day < since or d.get("mine"):
+            continue
+        tid = d.get("tree_id") or ""
+        if not names:
+            import glob
+            for fp in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+                try:
+                    c = json.load(open(fp))
+                except ValueError:
+                    continue
+                for t in c.get("trees", []):
+                    names[t.get("id")] = (t.get("name"), c.get("city"), t.get("photo") or {})
+        name, city, _ = names.get(tid, (tid, "?", {}))
+        what = "a reader's photograph, published" + (
+            " beside the one it had" if d.get("outcome") == "added" else "")
+        out.append("| %s | %s | %s | %s |" % (day.isoformat()[5:], name, city, what))
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if key:
+        try:
+            rows, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,city,tree,"
+                            "user_id,outcome&outcome=eq.changed&created_at=gte.%sT00:00:00"
+                            % since.isoformat(), key)
+            for r in rows or []:
+                if r.get("id") in TEST_SUBMISSION_IDS or is_ours(r.get("user_id")):
+                    continue
+                out.append("| %s | %s | %s | a reader's %s changed the page |" % (
+                    str(r.get("created_at"))[5:10], r.get("tree") or "-",
+                    r.get("city") or "-", r.get("kind") or "report"))
+        except Exception:
+            pass
+    if not out:
+        return None
+    return "\n".join(["**What readers gave us, and it went live**", "",
+                      "| Day | Tree | Where | What |", "|---|---|---|---|", *out])
+
+
 def feedback_section(today):
     """What readers actually told us, one line each, so the count can be judged.
 
@@ -2677,6 +2745,7 @@ def main():
         except Exception as e:
             blocks.append("%s: failed today (%s)." % (fn.__name__, str(e)[:90]))
 
+    block(readers_gave_section, today)
     block(product_section, today)
     block(feedback_section, today)
     block(funnel_section, today, token)
