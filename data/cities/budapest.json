@@ -470,6 +470,41 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it as the larger of the two yews by the Franciscan ruins, the one that still reads as a tree; the other is 4.5 metres tall under a crown 7 to 8 metres wide. It stands on the Lower Great Meadow."
+    },
+    {
+      "name": "The Plane Tree of Jászai Mari Square",
+      "species": "Plane (Platanus sp.)",
+      "story": "This plane tree was young when the Margit Bridge beside it was blown up in the Second World War, and it kept growing. It was almost certainly planted in the late 1930s, when Jászai Mari tér was still called Rudolf tér, and it is one of the last of the planes Budapest set along its streets in those years. Today it measures 250 centimetres round and about 25 metres tall.\n\nIt has had good neighbours. The widow of the poet Miklós Radnóti, known around the square as Fifi néni, watched it for decades from her flat nearby, and György Faludy, Margit Kovács and Pál Réz all lived beside the square. The tree has stood through the siege, the years after it and the steady traffic of trams 4 and 6 at the Pest end of the bridge, and it is still the landmark locals point to.\n\nIn 2016 Hungary voted it the country's Tree of the Year, and at the 2017 European final it came 13th with 5,132 votes.\n\nIts age comes from the contest's own application, which put it at 80 to 90 years in 2016; about 95 now is arithmetic on that, since nobody has measured it again. The sources say only that it is a plane, not which kind. If you can tell a London plane from an oriental one standing under it, tell us which this is.",
+      "how_to_recognise": "You can recognise it by the size: a plane about 25 metres tall with a trunk 250 centimetres round. It stands in the middle of Jászai Mari tér, at the Pest end of Margit Bridge beside the tram stop.",
+      "age_estimate": "about 95 years",
+      "age_min": 88,
+      "age_max": 100,
+      "age_basis": "source",
+      "girth_cm": 250,
+      "height_m": 25,
+      "location": {
+        "address": "Jászai Mari tér, District XIII, Budapest, Hungary",
+        "latitude": 47.514,
+        "longitude": 19.048,
+        "neighbourhood": "Jászai Mari tér, District XIII (Ujlipotvaros/Angyalfold border), Budapest"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2017/Nejkrasnejsi-platan-na-namesti-Jaszai-Mari",
+        "https://pestbuda.hu/cikk/20161108_generaciok_ota_platan_a_jaszain",
+        "https://welovebudapest.com/cikk/2024/08/29/budapest-platanfak-tortenete-jovoje-kornyezetvedelem-fokert"
+      ],
+      "curation_status": "flagged",
+      "access": "Free. Stands in the middle of Jászai Mari tér, a well-tended public square/park at the Pest end of Margit Bridge, open at all times.",
+      "transport": "Jászai Mari tér tram/bus stop (trams 4/6), right beside the square",
+      "location_precision": "approximate",
+      "id": "bud_013",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

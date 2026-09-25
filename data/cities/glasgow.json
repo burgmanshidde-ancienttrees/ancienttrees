@@ -3,7 +3,7 @@
   "country": "United Kingdom",
   "status": "needs_curation",
   "oldest_tree_id": "gla_001",
-  "intro": "Glasgow's remarkable trees are civic rather than wild. A 450-year-old sycamore survived a 2025 hurricane on the strength of its own name alone, an oak was planted in 1918 as a suffrage protest turned permanent, 88 yews still stand around a demolished merchant's mansion, and a pair of Californian redwoods went almost unrecorded until a National Trust survey rediscovered them. None grew up in ancient woodland. All four stand in public parks the city has kept free to enter for the better part of a century.",
+  "intro": "Glasgow's remarkable trees are civic rather than wild. A 450-year-old sycamore survived a 2025 hurricane on the strength of its own name alone, an oak was planted in 1918 as a suffrage protest turned permanent, 88 yews still stand around a demolished merchant's mansion, and a pair of Californian redwoods went almost unrecorded until a National Trust survey rediscovered them. The fifth, an ash on Argyle Street, arrived as a seed in the roots of some holiday primroses. All five are free to see.",
   "meta_description": "Glasgow's most remarkable trees: the storm-damaged Darnley Sycamore, King's Park's yew grove, the 1918 Suffragette Oak, and Holmwood's twin redwoods.",
   "question_answer": "Glasgow's oldest tree is the Darnley Sycamore, estimated at 450 to 500 years old, standing on the southern edge of the city near Darnley Primary School. Storm Eowyn tore away roughly half its crown in January 2025, but council inspectors found the trunk sound and expect it to survive for decades yet.",
   "question_meta": "The Darnley Sycamore, 450 to 500 years old and linked to Mary Queen of Scots, is Glasgow's oldest tree, its trunk still standing after 2025 storm damage.",
@@ -174,6 +174,39 @@
       "notes": "Both National Trust for Scotland 'PLANTS project' stories independently describe the two giant redwoods and the accompanying deodar cedar, discovered/catalogued during the project's site survey, and give the approximate age as about 100 years; no more precise planting date is recorded by the source. Coordinates are Holmwood House's general grounds point (5 acres), not a surveyed position for either specific tree within the garden.",
       "location_precision": "approximate",
       "how_to_recognise": "You are looking for two redwoods with a Himalayan cedar beside them, straight buttressed trunks in soft rope-like bark you can press a thumb into. They stand in Holmwood's parkland, younger than the house."
+    },
+    {
+      "name": "The Argyle Street Ash",
+      "species": "European Ash (Fraxinus excelsior)",
+      "story": "The only tree on Argyle Street arrived by accident, in the roots of a primrose. In the 1850s the first residents of a new tenement at Franklin Terrace came back from holiday with primroses for their scrap of front garden, and an ash seed came with them in the soil. Nobody wrote down the year, so its age of roughly 175 years is counted from that story rather than from a ring.\n\nBy 1951, when James Cowan described it in From Glasgow's Treasure Chest, it stood 75 feet tall, about 23 metres, and had outgrown the building that planted it without meaning to. It went on to become the first tree in Glasgow to receive a Tree Preservation Order. In 2025 it was voted the UK's Tree of the Year, and in 2026 it represented the country at the European final, finishing twelfth.\n\nThe better fact is that it is healthy. Ash dieback has been killing Britain's ash trees for years, and this one still carries more than three quarters of its canopy. The explanation usually given is loneliness: the nearest other ash is over 100 metres away, and a street of warm stone, dry paving and swept-up leaves is a poor home for the fungus. It is a street tree that survives partly because it is on a street. A local arborist, who nominated it for the contest, looks after it.",
+      "how_to_recognise": "You can recognise it by being the only tree on Argyle Street, an ash about 23 metres tall that rises above the tenement behind it. It stands in the small front garden strip outside 1223 Argyle Street, at Franklin Terrace.",
+      "age_estimate": "roughly 175 years",
+      "age_min": 150,
+      "age_max": 180,
+      "age_basis": "source",
+      "height_m": 23,
+      "location": {
+        "address": "Outside 1223 Argyle Street (Franklin Terrace), Finnieston, Glasgow, Scotland",
+        "latitude": 55.865667,
+        "longitude": -4.287583,
+        "neighbourhood": "Finnieston, Glasgow"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2026/argyle-street-ash",
+        "https://en.wikipedia.org/wiki/Argyle_Street_ash_tree"
+      ],
+      "access": "Free. Stands on Argyle Street itself, the only tree on the street, in the small front garden strip of a tenement building at Franklin Terrace; visible and reachable from the public pavement, no entry needed.",
+      "transport": "Kelvinhall or Exhibition Centre subway/rail stations, both under 10 minutes' walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "id": "gla_005",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

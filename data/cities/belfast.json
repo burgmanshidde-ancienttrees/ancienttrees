@@ -170,6 +170,39 @@
         "kind": "flowers",
         "label": "May, when a hawthorn turns white all over and the whole graveyard smells of it"
       }
+    },
+    {
+      "name": "The Peace Tree of Woodvale Park",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "story": "This oak was planted on Empire Day, 24 May 1919, for the men of Woodvale who did not come back from the First World War. For years it was where the veterans gathered. Then the veterans grew old, and the tree was forgotten.\n\nIt was rediscovered in 2006, the 90th anniversary of the Somme, and the council has since put a protective railing round it. In 2014 a European War Memorial was unveiled beside it, and that memorial remembers German, French, Belgian and British dead alike. A tree planted on Empire Day to honour one side now stands next to a monument to all of them, and it is hard to think of a better use for an oak.\n\nIn 2015 Northern Ireland voted it Tree of the Year, after the historian Bobby Foster and Sam Coulter nominated it, and at the 2016 European final it finished 13th with 628 votes.\n\nIts age is not an estimate. Count from 1919 and it is a little over a hundred years old, young by the standards of oaks and old by the standards of anyone who remembers why it was planted. Nobody has recorded its girth or height, so if you measure it, tell us.",
+      "how_to_recognise": "You can recognise it by the protective railing around it and the European War Memorial, unveiled in 2014, standing beside it. It stands in Woodvale Park, off Woodvale Road.",
+      "age_estimate": "about 105-110 years",
+      "age_min": 100,
+      "age_max": 115,
+      "age_basis": "source",
+      "location": {
+        "address": "Woodvale Park, Woodvale Road, Belfast, Northern Ireland, UK",
+        "latitude": 54.61,
+        "longitude": -5.9734,
+        "neighbourhood": "Woodvale, Belfast"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2016/Strom-miru",
+        "https://en.wikipedia.org/wiki/Woodvale_Park",
+        "https://strangfordlough.org/news/belfasts-peace-tree-prepares-for-europe/"
+      ],
+      "curation_status": "flagged",
+      "access": "Free. Stands in Woodvale Park, a Belfast City Council public park with a Green Flag Award; the park opens at 7:30am daily. Surrounded by a protective railing installed by the council, but visible and reachable on foot within the park.",
+      "transport": "On Woodvale Road; served by Belfast Metro bus routes into the Shankill/Woodvale area, roughly 25-30 minutes' walk or a short bus ride from the city centre",
+      "location_precision": "approximate",
+      "id": "bfs_005",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
