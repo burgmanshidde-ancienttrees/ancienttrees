@@ -18177,6 +18177,29 @@
    ],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-25T19:40:23+00:00",
+   "date": "2026-09-25",
+   "run_id": "36181073909",
+   "minutes": 56.8,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 331,
+   "denials": 54,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; if ...), Bash(cd && curl ; wc ; echo ...), Bash(cd && curl ; wc ; head), Bash(cd && for ; do ; cat ...), Bash(cd && python3 ; import ; the ...), Bash(cd ; ? ; for ; do ...), Bash(cd ; for ; do ; echo ...), Bash(cd ; python3 ; import ; queries ...), Bash(curl && wc && head), Bash(curl ; Intel ; grep | head ...), Bash(curl ; echo ; head), Bash(curl ; wc ; cat), Bash(curl ; wc ; echo ; cat), Bash(curl ; wc ; head), Bash(curl ; wc), Bash(curl | python3 ; import ; ? ...), Bash(for ; do ; ? ; ? ...), Bash(for ; do ; echo ; -c ...), Bash(for ; do ; echo ; curl ...), Bash(for ; do ; echo ; grep ...), Bash(for ; do ; if ; then ...), Bash(for ; do ; python3 | head ...), Bash(for ; do ; python3 | sed ...), Bash(grep | ? | ? | ? ...), Bash(ls | xargs | sed | sort), Bash(mkdir && python3 ; wc), Bash(python3 && rm), Bash(python3 ; import ; ? ; for ...), Bash(python3 ; import ; ? ; p ...), Bash(python3 ; import ; d ; ? ...), Bash(python3 ; import ; d ; single ...), Bash(python3 ; import ; for ; ? ...), Bash(python3 ; import ; html ; ? ...), Bash(python3 ; import ; queries ; ? ...), Bash(python3 ; wc), Bash(python3), Bash(rm && git && git ; Bad ...), Bash(rm && git), Bash(rm ; echo), Bash(rm ; python3 ; import ; files ...), Bash(rm), Bash(subshell cat ; import ; def ; e2 ...), Bash(wc && head), Bash(wc)",
+   "ended": "success",
+   "tokens": 49828867,
+   "claims_held": [
+    "_famous-belgium",
+    "_famous-lithuania",
+    "Warsaw"
+   ],
+   "commits": 7,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
