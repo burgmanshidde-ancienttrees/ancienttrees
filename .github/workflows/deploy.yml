@@ -43,7 +43,14 @@ concurrency:
   # scheduled or manual run of main never replaces it while it waits, and it
   # never holds up main's (2026-09-24, a branch check was cancelled twice).
   group: pages-${{ github.event_name == 'push' && 'push' || (github.ref == 'refs/heads/main' && 'manual' || github.ref) }}
-  cancel-in-progress: ${{ github.event_name == 'push' }}
+  # Never cancel a running build, pushes included (2026-09-26). A build takes
+  # longer than the gap between two pushes on a busy evening, so cancelling
+  # meant fifteen builds in a row were killed between 21:48 and 22:37 UTC and
+  # nothing reached the site for an hour, the US state pages among it. With
+  # this false a push WAITS behind the running build, and GitHub keeps only
+  # the newest waiting run, so it is never a queue: one finishes, then the
+  # latest commit deploys.
+  cancel-in-progress: false
 
 jobs:
   build:
