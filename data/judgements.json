@@ -18,6 +18,25 @@
    "agreed": null
   },
   {
+   "id": "sight:f0d60c06-022d-4a1d-afdc-37d66b3b6d4e",
+   "seen": "2026-09-25",
+   "kind": "photo of a tree we map",
+   "tree": "El Gran Capitán",
+   "city": "Seville",
+   "species": "River Red Gum (Eucalyptus camaldulensis)",
+   "photo": "out/sightings/f0d60c06-022d-4a1d-afdc-37d66b3b6d4e.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 0,
+   "current_photo": "none",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Tree had no photo (status missing). Exact GPS match (distance_m=0) from app. Species and description both checked yes: eucalyptus foliage/pale bark visible, clearly the tallest tree over the surrounding palms, matching the tallest-tree-in-Seville story. Well lit, colour, in leaf (photo_light.py OK). Published to site/public/photos.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
    "id": "lead:12168ca4-f893-4296-a444-14bd9e2c4e09",
    "seen": "2026-09-22",
    "kind": "a tree we do not map",

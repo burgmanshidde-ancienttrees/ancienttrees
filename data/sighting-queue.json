@@ -1,40 +1,5 @@
 {
  "_note": "Photographs readers sent through the app, matched to a tree we map, waiting for a viewing pass. Judge with the photo-judge agent and apply with scripts/sightings_publish.py. Rebuilt on every knock from the rows without a verdict.",
  "written": "2026-09-25",
- "queue": [
-  {
-   "sighting_id": "f0d60c06-022d-4a1d-afdc-37d66b3b6d4e",
-   "user_id": "01b4d9c0-3841-43bb-9bd0-37d3c904be29",
-   "display_name": "",
-   "tree_id": "sev_005",
-   "city_slug": "seville",
-   "city": "Seville",
-   "tree_name": "El Gran Capitán",
-   "match": "app",
-   "distance_m": 0,
-   "mine": false,
-   "current_photo": "none",
-   "current_source": null,
-   "tree_species": "River Red Gum (Eucalyptus camaldulensis)",
-   "recognise": "You can recognise it by its height, over 50 metres, the tallest tree in Seville, on a trunk close to five metres round. It stands at the edge of Jardines de Murillo, on Paseo de Catalina de Ribera.",
-   "tree_girth_cm": null,
-   "tree_height_m": null,
-   "story": "Seville's tallest tree is also one of its least visited, despite standing in the middle of the historic centre. This river red gum, known locally as El Gran Capitán, rises more than 50 metres above the Paseo de Catalina de Ribera at the edge of Jardines de Murillo, a five minute walk from the Real Alcázar's own walls, yet it rarely appears in a single guidebook or walking tour. Its trunk has grown close to five metres around, and in 2025 the city carried out a precision pruning operation specifically to reduce the risk of falling limbs, treating a tree this size with the same caution as a structural repair. Eucalyptus camaldulensis is native to Australian riverbanks, not Andalusian gardens, ",
-   "name": "El Gran Capitán",
-   "species": null,
-   "girth_cm": null,
-   "girth_hugs": null,
-   "note": "",
-   "taken_at": "2026-09-25T10:11:30+00:00",
-   "photo_path": "01b4d9c0-3841-43bb-9bd0-37d3c904be29/F0D60C06-022D-4A1D-AFDC-37D66B3B6D4E.jpg",
-   "sign_path": null,
-   "sign_file": null,
-   "latitude": 37.38219,
-   "longitude": -5.98876,
-   "file": "out/sightings/f0d60c06-022d-4a1d-afdc-37d66b3b6d4e.jpg",
-   "light": null,
-   "rank": 1,
-   "worth": "the tree already has one: ship this only if it is better"
-  }
- ]
+ "queue": []
 }

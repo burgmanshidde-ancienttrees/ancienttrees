@@ -192,10 +192,16 @@
       "access": "Free, public garden",
       "transport": "5 min walk from Puerta de Jerez tram stop (T1)",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/sev_005-el-gran-capit-n.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "01b4d9c0-3841-43bb-9bd0-37d3c904be29",
+        "sighting_id": "f0d60c06-022d-4a1d-afdc-37d66b3b6d4e",
+        "note": "Photographed by a reader and sent through the app (2026-09-25); a viewing pass approved it on 2026-09-25: GPS match at distance_m=0 from the app. Tree already carries photo status 'missing', so this is a gap-fill, not a comparison. The eucalyptus towers clearly above the surrounding palms and other trees, consistent with the 'tallest tree in Seville' story, with pale bark visible on the trunk between foreground fronds. Daylight, well exposed, in leaf; photo_light.py reads OK (brightness 123.3, colour 0.292, no blown highlights). Species seen: grey-green narrow eucalyptus crown with a pale, smooth-barked trunk visible through gaps in foreground palms, consistent with River Red Gum. Fits the description: the tree rises well above every palm and neighbouring tree in frame, matching the recorded height and 'tallest tree in Seville' claim; trunk section visible is pale and smooth as described.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "ai_generated",
       "notes": "Height (over 50 m, one source measuring closer to 60 m) and 'tallest tree in Seville' status confirmed by the city's own 2025 press release plus an independent news report; the two sources vary on exact height, so a range is given rather than a single figure. No planting record found; age is an estimate based on the species' introduction period, not a documented date. Pin resolved 2026-07-27 via Seville's own Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13, a new source found after sevilla.org's own catalogue stayed connection-refused again this pass): exactly one Eucalyptus camaldulensis recorded in the Jardines de Murillo/Santa Cruz area, 571cm circumference, close to this entry's own sourced 'close to five metres around.' Moved about 100m to the exact match. The inventory's own height field (26m) is well short of the two press sources' 50-60m and is not used to override them, kept here as a data-quality note rather than acted on.",
