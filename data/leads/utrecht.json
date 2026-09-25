@@ -90,17 +90,6 @@
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
-      "register_nr": 1688783,
-      "name": "Witte paardenkastanje (White Horse Chestnut)",
-      "latitude": 52.090038,
-      "longitude": 5.127723,
-      "place": "Naast brug Herenstraat/Lepelenburg, Utrecht",
-      "planted_band": "1910-1920",
-      "reason": "ALREADY PUBLISHED: written and merged into data/cities/utrecht.json as utr_035. Do not re-verify or re-publish; recorded here only so a future pass does not repeat the lookup.",
-      "species": "Horse Chestnut (Aesculus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "register_nr": 1693098,
       "name": "Zilverlinde (Silver Lime), row of 4",
       "latitude": 52.089634,
@@ -118,28 +107,6 @@
       "planted_band": "1880-1890",
       "reason": "gemeente-owned, visitable ja, Wilhelminapark cluster. Not verified this pass; good candidate for follow-up, only the general park-level Wikipedia/rijksmonument context was found, no tree-specific second source yet.",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "register_nr": 1678147,
-      "name": "Zilveresdoorn (Silver Maple), pair",
-      "latitude": 52.087817,
-      "longitude": 5.139382,
-      "place": "z-westen van Burgm.F.Andreamonument, Wilhelminapark, Utrecht",
-      "planted_band": "1880-1890",
-      "reason": "ALREADY PUBLISHED: written and merged into data/cities/utrecht.json as utr_036. Do not re-verify or re-publish; recorded here only so a future pass does not repeat the lookup.",
-      "species": "Maple (Acer sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "register_nr": 1688711,
-      "name": "Gewone haagbeuk (Common Hornbeam)",
-      "latitude": 52.086086,
-      "longitude": 5.128886,
-      "place": "Aan voetpad noordzijde Sterrenwacht, Servaasbolwerk, Utrecht",
-      "planted_band": "1830-1840",
-      "reason": "ALREADY PUBLISHED: written and merged into data/cities/utrecht.json as utr_037. Do not re-verify or re-publish; recorded here only so a future pass does not repeat the lookup.",
-      "species": "Hornbeam (Carpinus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
@@ -222,6 +189,11 @@
       "reason": "Checked this pass via kanokaartutrecht.nl (stop 18, fetched 2026-08-24): a Field Maple with an unusual bent, low growth habit hanging out over the water, the only maple genuinely native to the Netherlands. Height 13m, girth 160cm (a small tree; correctly modest numbers, sanity-checked). Gemeente-owned, visitable ja, visible ja. Distinctive story (growth form) but modest size; good follow-up candidate.",
       "species": "Maple (Acer sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "register_nr": null,
+      "name": "note on utr_035/036/037",
+      "reason": "CORRECTED 2026-09-25 (verify pass): three lead entries here previously said register nrs 1688783, 1678147 and 1688711 were 'ALREADY PUBLISHED... as utr_035/036/037, do not re-verify'. That was stale: this file's own blocked list already records that all three were re-imported under those same ids, found DEAD (LRMB status 5) and removed again on 2026-09-10. The stale entries have been deleted from this leads list so a future pass is not told to skip re-verifying live-looking rows that are actually dead. Those register numbers remain dead; do not re-import them. utr_035, 036 and 037 were free ids again as of this pass's brief (passcheck.py), and this pass used utr_035-037 for three unrelated, newly verified trees; see data/research/utrecht-verified.json."
     }
   ],
   "blocked": [
@@ -462,6 +434,46 @@
       "longitude": 5.128886,
       "place": "Voetpad noordzijde Sterrenwacht, Servaasbolwerk, Utrecht",
       "reason": "DEAD/FELLED. LRMB entry nr 1688711 is status 5 (Dood/geveld). Re-imported by a night run on 2026-09-09 hours after the same register row was removed as utr_030, the Hornbeam of the Old Observatory Path, because nothing read the status field. Removed again 2026-09-10, and check_register_says_the_tree_is_gone() in scripts/preflight.py now makes this unshippable."
+    },
+    {
+      "register_nr": 1688689,
+      "name": "Hollandse iep",
+      "latitude": 52.082911,
+      "longitude": 5.12622,
+      "place": "Manenburg/Achter Centraal Museum, Utrecht",
+      "reason": "DEAD/GONE. LRMB status 5. Register's own history field: 'Op 25-10-2024 blijkt de boom niet meer aanwezig' (on 25-10-2024 the tree turns out to be no longer present). Found this pass while checking a nearby candidate; never ship. Note this is a different register row from nr 1689046 'Ruwe iep' at the same Manenburg/Achter Centraal Museum location, which is the tree already known dead per RTV Utrecht/UStad reporting; both trees at this spot are gone."
+    },
+    {
+      "register_nr": 1689852,
+      "name": "Beuk",
+      "latitude": 52.08216,
+      "longitude": 5.125513,
+      "place": "Op heuvel zuidkant a/d speelweide, Manenburg, Utrecht",
+      "reason": "DEAD/FELLED. LRMB status 5. No further history text given. Found this pass; never ship."
+    },
+    {
+      "register_nr": 1678125,
+      "name": "Bruine beuk",
+      "latitude": 52.08436,
+      "longitude": 5.120289,
+      "place": "In tuin pastorie, Pelmolenweg, Utrecht",
+      "reason": "DEAD/FELLED. LRMB status 5. Also stands in a rectory garden (owner_category publiekrechtelijke organisatie, setting 'tuin'), which would have needed an access check even if alive. Found this pass; never ship."
+    },
+    {
+      "register_nr": 1688707,
+      "name": "Peer",
+      "latitude": 52.084728,
+      "longitude": 5.122015,
+      "place": "Oudegracht 333, Utrecht, achtertuin",
+      "reason": "DEAD (LRMB status 5) AND private: owner_category particulier, in a back garden (achtertuin), visitable/visible both 'onbekend'. Double-blocked; never ship. Distinct from the already-published utr_031 'Old Pear of the Geertebolwerk', a different pear tree (register nr 1678119) about 1.2 km away."
+    },
+    {
+      "register_nr": 1689907,
+      "name": "Diverse soorten",
+      "latitude": 52.086064,
+      "longitude": 5.122123,
+      "place": "Oude Gracht tussen Strosteeg en Bijlhouwerstraat, Utrecht",
+      "reason": "NOT A COLLECTIBLE POINT. The register's oldest planted_band in the whole Utrecht set (1750-1800), alive (status 3), gemeente-owned, visitable/visible 'ja', but the entry itself is a bulk designation of n_trees: 30 of mixed, unnamed species strung along a stretch of the Oudegracht between two side streets, not one tree or a compact ensemble with one obvious place to stand. Checked this pass: WebSearch confirms this stretch is an ordinary canal-side tree row (the municipality has felled and replanted trees along the same Oudegracht stretch in recent years, e.g. a 2022 felling between Jansbrug and Viebrug), not a named or singular feature. This is the avenue/whole-wood case BRIEF_RESEARCH.md blocks. Never ship as one entry; a future pass could in principle pick one individually distinctive specimen out of the 30 if one is ever singled out by a source, but none was found this pass."
     }
   ]
 }
