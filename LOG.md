@@ -10,6 +10,22 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-25 (session) - Xcode cleaned up; the cleanup nearly shipped an older catalogue
+
+Six stale agent worktrees and the detached `~/Documents/at-stack` removed with
+`checkouts.py --fix`. Three more stay: they are locked by another Claude session
+that is still open, and removing them would pull the floor from under it.
+
+The same `--fix` then refreshed the app's bundled catalogue from the LIVE site
+while the deploy of the newest data was still running, and wrote 3348 trees
+over the committed 3374. Reverted. `appdata.py` now refuses a live trees feed
+smaller than what this checkout publishes and says to wait for the deploy or
+read a local build, so neither `checkouts.py` nor `release.py` can do it again.
+
+`release.py --check`: current with origin/main, version 1.0.2 against 1.0.1 on
+sale, clear to archive. The last two scheduled iOS CI runs were green; the run
+for this morning's app changes (TreeDetail, Profile, Account) was still going.
+
 ## 2026-09-25 (session) - Which checkout to build in, answered by a script instead of by him
 
 Hidde's Xcode welcome window held two projects, `~/Documents/Ancienttrees/ios`
