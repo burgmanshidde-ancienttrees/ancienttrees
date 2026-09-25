@@ -87,6 +87,56 @@ def read_result(path):
     return {}
 
 
+# What a stopping attempt says is the one thing the stub could never tell: WHY.
+# The console hides the transcript (public repo), but the execution file holds
+# the agent's own closing message, which is written for a reader anyway. Found
+# 2026-09-25: three windows in a row ended "without saying anything" after four
+# attempts each, every one of them subtype success, and nothing on disk said
+# why any of the twelve attempts decided it was done.
+_SECRETISH = [
+    re.compile(r"https?://[^\s/@]+@"),                  # credentials in a url
+    re.compile(r"\beyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-.]+"),  # a JWT
+    re.compile(r"\b(?:gh[pousr]_|sk-|xox[abp]-)[A-Za-z0-9_\-]+"),
+    re.compile(r"[A-Za-z0-9+/_\-]{40,}={0,2}"),          # any long opaque token
+]
+CLOSING_CHARS = 700
+
+
+def closing_words(path):
+    """The attempt's last words to whoever reads the log, secrets scrubbed.
+
+    Prefers the result record's own text; falls back to the last assistant
+    message with text in it. Empty when there is nothing readable."""
+    if not path or not os.path.exists(path):
+        return ""
+    try:
+        doc = json.loads(open(path, errors="replace").read())
+    except Exception:
+        return ""
+    records = doc if isinstance(doc, list) else [doc]
+    text = ""
+    for rec in reversed(records):
+        if isinstance(rec, dict) and rec.get("type") == "result" and isinstance(rec.get("result"), str):
+            text = rec["result"]
+            break
+    if not text.strip():
+        for rec in reversed(records):
+            if not isinstance(rec, dict) or rec.get("type") != "assistant":
+                continue
+            content = (rec.get("message") or {}).get("content") or []
+            parts = [c.get("text", "") for c in content
+                     if isinstance(c, dict) and c.get("type") == "text"]
+            if any(p.strip() for p in parts):
+                text = "\n".join(parts)
+                break
+    for pat in _SECRETISH:
+        text = pat.sub("[redacted]", text)
+    text = " ".join(text.split())
+    if len(text) > CLOSING_CHARS:
+        text = text[:CLOSING_CHARS].rsplit(" ", 1)[0] + " ..."
+    return text
+
+
 DENIAL_KEYS = ("permission_denials_count", "permission_denials",
                "num_permission_denials", "denied_tool_uses",
                "tool_permission_denials", "blocked_tool_uses")
@@ -436,6 +486,16 @@ def stub_entry(record):
                 ", which block the top of the queue until they expire.")
 
     ended = record.get("ended") or "unknown"
+    said = [w for w in record.get("closing_words") or [] if w]
+    if said:
+        why = ("What each attempt said as it stopped, in its own words (secrets "
+               "scrubbed):\n\n" + "\n".join(
+                   f"- Attempt {i}: {w}" for i, w in
+                   enumerate(record["closing_words"], 1) if w) + "\n")
+    else:
+        why = ("What it cannot tell you is WHY the run stopped: no attempt left "
+               "closing words on disk. If this shape repeats, the two things "
+               "worth suspecting are the usage window and the refused commands.\n")
     return (
         f"## {record['date']} - Night run {started} UTC ended without saying anything\n"
         "\n"
@@ -445,9 +505,9 @@ def stub_entry(record):
         "This entry exists because the run wrote none. The prompt asks every run to "
         "log even when it ships nothing, and a run that gives up is exactly the one "
         "that skips that instruction, so the count above is measured rather than "
-        "reported. What it cannot tell you is WHY the run stopped: the transcript is "
-        "hidden on purpose, the repo being public. If this shape repeats, the two "
-        "things worth suspecting are the usage window and the refused commands.\n"
+        "reported.\n"
+        "\n"
+        + why
     )
 
 
@@ -809,11 +869,14 @@ def main():
             return 1
         return 0
 
+    attempt_paths = []
     if args.execution_files and not args.probe:
         result = {}
         for path in args.execution_files:
             result = merge_results(result, read_result(path))
+        attempt_paths = list(args.execution_files)
     else:
+        attempt_paths = [p for p in (args.execution_file, args.execution_file_2) if p]
         result = read_result(args.execution_file)
         if not args.probe and args.execution_file_2 and args.execution_file_2 != args.execution_file:
             result = merge_results(result, read_result(args.execution_file_2))
@@ -906,17 +969,21 @@ def main():
         record["logged"] = None
 
     silent = changed is not None and not changed["logged"]
+    # Only for the stub, and kept out of run-health.json: a run that logged
+    # itself already said why, and the meter file is numbers.
+    said = ([closing_words(p) for p in dict.fromkeys(attempt_paths)]
+            if silent else [])
 
     if args.dry_run:
         print(json.dumps(record, indent=1))
         if silent:
             print("\n--- would prepend to LOG.md ---\n")
-            print(stub_entry(record))
+            print(stub_entry(dict(record, closing_words=said)))
         return 0
 
     append_health(record)
     freed = release_claims(args.by)
-    wrote_stub = prepend_log(stub_entry(record)) if silent else False
+    wrote_stub = prepend_log(stub_entry(dict(record, closing_words=said))) if silent else False
     print(f"run health: {record['minutes']}min, {record['turns']} turns, "
           f"{record['denials']} refused, trees {record.get('trees')}, "
           f"logged={record.get('logged')}")
