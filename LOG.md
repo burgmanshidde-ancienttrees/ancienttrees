@@ -10,6 +10,20 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-25 - 12 new places, 6 cities deepened: finishing the claims four prior attempts abandoned mid-wait
+
+The last four attempts in this window each dispatched a verify pass and then stopped talking, saying they'd wait for the background notification. That doesn't work here: a night-run attempt ends the moment it stops producing turns, so the background agent's result was lost every time and only a `data/in-flight.json` claim survived, 109-144 minutes still standing on 9 places when this attempt started. This attempt finished them for real, running each verify and write pass in the foreground so the result landed inside this same run instead of evaporating with it.
+
+**23 trees published.** Nine verify passes ran (Belgium and Lithuanian famous-tree leads, Warsaw's register cluster, and six small Lithuanian towns), yielding 24 verified trees; one, a "Clawé Fawe" in Jalhay, turned out to be the exact same tree (same coordinate, same Wikidata QID) as the already-published gos_001 and was caught and dropped before writing. Two write passes turned the rest into stories. Merged into:
+
+- **12 new single-tree places** under the 2026-08-31 single-famous-tree exception: **Lo** (Belgium, the Caesarsboom yew, Caesar legend and all) and eleven Lithuanian veterans — **Alkai, Gastilionys, Ilguva, Jurgaičiai, Laumenai, Linkaičiai, Naujamiestis, Plokščiai, Pundžiai, Vepriai, Žadeikoniai**. Each got a full Contract C page (intro, meta description, FAQ) and Contract B question fields, the latter required by preflight even for a one-tree page that builds no question page today, so a second tree arriving later never breaks a deploy nobody's watching for it.
+- **6 deepened cities**: Warsaw (39→40), Pajūris (1→3), Kybarčiai (1→3), Kaunas (9→11), Priekulė (5→7). Fixed two stale count-promise breaks the build caught (Kaunas's FAQ still said "all nine", Warsaw's said "the 39"), and rewrote Priekulė's, Pajūris's and Kybarčiai's intro/FAQ/question copy properly rather than just swapping the number: each of those three gained a tree 6.5-10.5km outside its original single walkable cluster, so the old "N trees, one afternoon" framing would have been wrong, not just outdated.
+- Caught one species-grouping bug before it shipped: a verified tree's species field read "Scots Pine, twin fused trunks (Pinus sylvestris)", which `speciesCommon()` splits on the first `" ("` and so would have grouped as a different species from every other Scots Pine on the site. Trimmed to the canonical name; the descriptive detail was already in the story.
+
+**Two trees held rather than published**: a Merkinė Oak and a Kurmiškė Oak with a Hole, fully verified and written, sit in `data/research/liskiava-verified.json` unmerged. They're 12.4km from Liškiava (too far to honestly call part of that place) and only two trees, below the four-tree floor, and neither passes the single-famous-tree test alone. Same shape as the standing Nanjing/Fontenay Abbey holds: `passcheck.py --pending` will keep surfacing them for whoever finds a third.
+
+`preflight.py`: 652 cities, 0 problems. `superlatives.py`: 398 claims, no collisions. `npx astro build`: clean. Full detail in CURATION.md.
+
 ## 2026-09-25 - Reader submission answered, three verify passes dispatched (Belgium/Lithuania famous-tree leads, Warsaw register cluster)
 
 7-day visits: 1256 visits, 1988 page views (climbing each day this week: 108 to 178).
