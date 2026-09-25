@@ -10,6 +10,45 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-25 (night run, continuation) - Deploy was red; found and fixed, then two sightings shipped
+
+An earlier attempt this window stopped after 13 minutes with the clock nowhere
+near out. Picked up from there per the standing instructions: no orphaned
+claims, no READY leads to write, so went to Step 0 and found `health.py`
+reporting the build broken.
+
+- **Fixed the broken deploy.** bhg_006 (the Schöne Eiche) had shipped with its
+  recognition line keyed as `recognise` instead of `how_to_recognise`, the
+  field every other tree in the corpus uses and the one the app feed reads
+  straight through. feedshape.py caught it (a null where the feed had never
+  had one) and blocked every deploy since. A concurrent session fixed bhg_006
+  itself and added a preflight check for the class of bug while I was mid-fix;
+  rebased on top of it and cleaned up a leftover duplicate `recognise` key on
+  bhg_005 that neither of us had caught. `preflight.py` is 0 problems again.
+- **Two reader photographs went live**, a completed viewing pass from the
+  earlier attempt that had never been committed: the Camphor of Shiroyama
+  (kag_001, Kagoshima) and the Akou of Uchiumi (myz_004, Miyazaki), both
+  previously photo-missing, species and description checked against each
+  tree's own record before shipping. Five other reader photos matched no tree
+  we map; kept as leads, one a possibly-remarkable buttressed tree at the
+  Kagoshima honko waterfront worth a proper research pass on its own.
+- **Recognition lines and page gaps are both fully closed**: 0 of 3,375
+  published trees lack `how_to_recognise`, and `pagegaps.py` finds no earned
+  species/country/park page still unwritten. Rungs 4 (new coverage) and 5
+  (register layer) are thin right now: 18 unopened ranked cities have any
+  supply at all, and every one of them tops out at 1-2 Wikidata leads, below
+  the four-tree floor without from-zero research, which stays off outside
+  Hidde's named 17.
+- **Dispatched a photo-judge pass** on the demand-city photo shortlist
+  (`photo_gaps.py --shortlist`, Search-Console-backed): 33 candidates fetched
+  across oahu, munich, brisbane, alicante, glasgow, utrecht and warsaw,
+  judging in progress.
+- iOS app's floor job (iOS 18, scheduled/dispatch only) failed 3h ago on a
+  known, already-documented flake (`xcodebuild test hung past 20 minutes and
+  was killed` while creating simulators) — see archive/LOG-2026-09.md for the
+  same failure mode recurring. Not a push-blocking gate and not a code issue;
+  left for its own next scheduled run.
+
 ## 2026-09-26 - Session: the app finds Sevilla
 
 - **App search now finds a city under its other names** (Sevilla, Firenze, Wien, Den Haag). The website has done this since 2026-08-18; the app never got the list. It now travels as `aka` on the cities in /api/browse.json and MapSearch matches on it. Checked in the simulator: "Sevilla" returns Seville. Reaches phones after this deploy, and the bundled browse.json carries it too. `ios/refresh-data.sh` also refreshes browse.json now, which it never did.
