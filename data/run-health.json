@@ -18093,6 +18093,28 @@
    ],
    "trees": 26,
    "logged": true
+  },
+  {
+   "started": "2026-09-25T06:37:41+00:00",
+   "date": "2026-09-25",
+   "run_id": "36103696527",
+   "minutes": 40.7,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 230,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash(cd && ls && for ; do ...), Bash(cd ; cat ; import ; rk_story ...), Bash(cd ; python3 ; import ; about ...), Bash(curl ; wc), Bash(find ; find), Bash(find), Bash(git && rm && python3 | tail), Bash(ls | grep ; echo ; git ...), Bash(ls | grep ; git | grep ...), Bash(mkdir && python3), Bash(pip | tail ; cd && python3 ...), Bash(pip), Bash(python3 ; import ; ? ; ? ...), Bash(python3 ; import ; path ; if ...), Bash(python3 ; import ; t ; t ...), Bash(python3), Bash(rm ; python3 | tail), Bash(rm)",
+   "ended": "success",
+   "tokens": 8495283,
+   "claims_held": [
+    "Rukai",
+    "Peruc"
+   ],
+   "commits": 5,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
