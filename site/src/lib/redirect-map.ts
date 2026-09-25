@@ -53,6 +53,9 @@ const RENAMED_CITY_SLUGS: [string, string][] = [
 // A tree that gets renamed keeps its old URL resolving.
 // Mirrors RENAMED_TREE_SLUGS, build_site.py:5276.
 const RENAMED_TREE_SLUGS: [string, string, string][] = [
+  // bhg_005 (2026-09-25): "by the lake" was our transcription error; the
+  // survey puts it 30 m south-west of the lake, as a reader pointed out.
+  ["bad-homburg", "oak-by-the-lake", "bhg_005"],
   // kyo_016 (2026-08-27): named "Chinkapin oak" while its own species field
   // said Japanese Chinquapin, Castanopsis sieboldii. Chinkapin oak is Quercus
   // muehlenbergii, a North American oak, and Castanopsis is not an oak at all,
