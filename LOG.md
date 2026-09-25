@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 - Session: the app finds Sevilla
+
+- **App search now finds a city under its other names** (Sevilla, Firenze, Wien, Den Haag). The website has done this since 2026-08-18; the app never got the list. It now travels as `aka` on the cities in /api/browse.json and MapSearch matches on it. Checked in the simulator: "Sevilla" returns Seville. Reaches phones after this deploy, and the bundled browse.json carries it too. `ios/refresh-data.sh` also refreshes browse.json now, which it never did.
+
 ## 2026-09-26 - Session: Leon's oak live, reader gifts lead the digest
 
 - **The Schöne Eiche is live as [bhg_006](https://ancienttrees.app/bad-homburg).** Leon gave the spot yesterday; the night run still held it on the no-source check. Hidde: "luister naar leon". His submissions are now the recorded source (flagged, single source), Bad Homburg goes to six trees, intro, meta, question page and FAQ updated, and bhg_005's recognition line no longer puts it on the bank. No mail sent to Leon: setting the row to `changed` would auto-send one, and that is Hidde's call.

@@ -34,6 +34,7 @@ import { groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey } from "../../lib/parks";
 import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
 import { collectionEntries } from "../../lib/collection-rank";
+import { citySearchNames } from "../../lib/city-aliases";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -52,11 +53,19 @@ export async function GET() {
   const faceId = (t: { id?: string } | null): string | null =>
     t?.id && idToTree.has(t.id) ? t.id : null;
 
+  // A city's names in other languages, so the app's search finds Sevilla as
+  // well as Seville (Hidde, 2026-09-26: "ik kan seville niet als sevilla
+  // vinden in de app"). The website's search has read these since 2026-08-18
+  // via search-index.json; the app never got them. The list is an ANSWER, so
+  // it travels in the feed rather than being copied into Swift.
+  const searchNames = citySearchNames();
+
   const cityFacets = cities.map((c) => ({
     slug: c.id,
     name: c.data.city,
     country: c.data.country,
     count: (treesBySlug.get(c.id) ?? []).length,
+    ...(searchNames[c.id]?.length ? { aka: searchNames[c.id] } : {}),
     // The city page, the map sidebar, /cities, /countries and the app all show
     // this one picture now. hero_tree_id is how a person overrides it.
     face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, trees: renderableTrees(c) })),

@@ -5,7 +5,7 @@
 # still has every tree. Run this before a release so the floor is current.
 set -e
 cd "$(dirname "$0")/AncientTrees/AncientTrees/Data"
-for f in trees walks species; do
+for f in trees walks species browse; do
   curl -sf -m 60 "https://ancienttrees.app/api/$f.json" -o "$f.json"
   printf "%-8s %s\n" "$f" "$(du -h "$f.json" | cut -f1)"
 done

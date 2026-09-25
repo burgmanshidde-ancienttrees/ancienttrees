@@ -301,6 +301,10 @@ public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
     /// the server (site/src/lib/images.ts) so the app shows the same picture the
     /// website shows and a hand-set pin reaches both.
     public let face: String?
+    /// A city's names in other languages (Sevilla, Firenze, Wien), for search
+    /// only. The website's list, sent in the feed, so both searches find the
+    /// same places. Absent on every facet but cities.
+    public let aka: [String]?
 
     public var id: String { slug ?? name }
 }
@@ -353,6 +357,7 @@ public struct BrowseFacets: Sendable {
     }
 
     public func face(city slug: String) -> String? { cityBySlug[slug]?.face }
+    public func aka(city slug: String) -> [String] { cityBySlug[slug]?.aka ?? [] }
     public func face(country name: String) -> String? { countryByName[name]?.face }
     public func face(species commonName: String) -> String? { speciesByName[commonName]?.face }
     public func intro(species commonName: String) -> String? { speciesByName[commonName]?.intro }
