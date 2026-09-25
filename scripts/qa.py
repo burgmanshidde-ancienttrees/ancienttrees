@@ -2222,6 +2222,15 @@ def main():
                         help="Override the dist directory (default: site/dist). "
                              "Used during the Astro migration to check site/dist-astro "
                              "without touching behavior against the real dist.")
+    # THE CHECKS THAT NEED NO BUILD, RUN BEFORE THE BUILD (2026-09-25).
+    # Hidde, after three deploys were spent on faults of mine: "kunnen we dit
+    # verbeteren." Nineteen of the checks below read only the source, and they
+    # were all waiting twenty-five minutes behind a full Astro build to say so.
+    # One of them (check_one_city_order) failed a deploy the day this was
+    # written, on a mismatch a laptop could have reported instantly.
+    parser.add_argument("--source-only", action="store_true",
+                        help="Only the checks that read the source, so they can "
+                             "run in the pre-push hook without a built site.")
     args = parser.parse_args()
     if args.dist:
         # Must be absolute: the orphan check below resolves() every link
@@ -2231,6 +2240,40 @@ def main():
         # relative Path against an absolute one, silently orphaning every
         # non-excluded page in the build.
         DIST = args.dist.resolve()
+
+    SOURCE_ONLY = [
+        check_run_prompt_forbids_compound_commands,
+        check_scripts_are_valid_python,
+        check_no_strategy_in_workflows,
+        check_app_downloads_are_their_own_block,
+        check_auth_corpus_agreement,
+        check_one_city_order,
+        check_nothing_is_stored_locally,
+        check_one_owner_per_event,
+        check_species_face_is_chosen,
+        check_park_key_is_one_function,
+        check_every_feed_is_in_the_version,
+        check_a_thumbnail_is_actually_a_thumbnail,
+        check_every_feed_field_reaches_the_app,
+        check_no_personal_address,
+        check_icons_are_drawn,
+        check_css_braces_balance,
+        check_hidden_means_hidden,
+    ]
+    if args.source_only:
+        # The photo checks are left out on purpose: they read every image in
+        # the repo and take seconds rather than milliseconds, and a hook that
+        # costs seconds is a hook people learn to skip.
+        failures = []
+        for fn in SOURCE_ONLY:
+            failures += fn()
+        if failures:
+            print("QA FAILED (source checks): %d problem(s)" % len(failures))
+            for f in failures:
+                print("  - %s" % f)
+            return 1
+        print("qa source checks: %d checks, nothing to fix" % len(SOURCE_ONLY))
+        return 0
 
     # FIRST, and it returns rather than accumulating: every failure below is
     # meaningless if the build is older than the data it should hold.

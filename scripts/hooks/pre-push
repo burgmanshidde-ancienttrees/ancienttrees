@@ -69,6 +69,19 @@ done
 # draft that reaches a stranger is the one in a file. Narrow on purpose:
 # OUTREACH.md is a 900-line ledger of history and batches are generated, so
 # neither is copy anybody is writing now.
+# THE QA CHECKS THAT NEED NO BUILD, BEFORE THE BUILD (2026-09-25). Seventeen
+# of them read only the source and were all waiting twenty-five minutes behind
+# a full Astro build to speak. One of them failed a deploy the day before this
+# was written, on a CITY_QUEUE mismatch a laptop reports in under a second.
+if ! out=$(python3 scripts/qa.py --source-only 2>&1); then
+    echo ""
+    echo "pre-push: a qa check that needs no build says no"
+    echo "$out" | sed 's/^/  /'
+    echo ""
+    echo "Nothing was pushed."
+    exit 1
+fi
+
 # SPELLING, in the copy a reader meets (2026-09-24). Hidde: "dat is toch niet
 # zo veel gevraagd van een llm." It is not. Under a second, local only: the
 # dictionary is /usr/share/dict/words and it prints one line and passes where
