@@ -3,9 +3,9 @@
   "country": "Austria",
   "status": "needs_curation",
   "oldest_tree_id": "szb_003",
-  "intro": "Salzburg's baroque gardens get the postcards, but most of its oldest protected trees stand on ordinary ground: a farm oak once used to fatten pigs, a riverside poplar from a vanished floodplain forest, an oak and two limes on plain Riedenburg streets, a plane and a black pine that outlasted the grand hotel whose park they once grew in. The Naturdenkmal register lists dozens more; these nine, from Itzling to Morzg to the Fordhof estate, clear the bar this pass, alongside one import, a Californian sequoia in the Mirabellgarten.",
-  "meta_description": "Salzburg's oldest protected trees stand on farms and streets, not the baroque gardens. Nine trees, from a 1933 oak to survivors of a bombed hotel.",
-  "question_meta": "Salzburg's oldest confirmed tree is the Stephan-Ludwig-Roth Oak in Morzg, over 200 years old, recorded in an 1817 account. Full list of 9.",
+  "intro": "Salzburg's baroque gardens get the postcards, but most of its oldest protected trees stand on ordinary ground: a farm oak once used to fatten pigs, a riverside poplar from a vanished floodplain forest, an oak and two limes on plain Riedenburg streets, a plane and a black pine that outlasted the grand hotel whose park they once grew in. The Naturdenkmal register lists dozens more; these twelve, from Itzling to Morzg to the Fordhof estate and the Aigen streets south of the centre, clear the bar this pass, alongside one import, a Californian sequoia in the Mirabellgarten.",
+  "meta_description": "Salzburg's oldest protected trees stand on farms and streets, not the baroque gardens. 12 trees, from a 1933 oak to survivors of a bombed hotel.",
+  "question_meta": "Salzburg's oldest confirmed tree is the Stephan-Ludwig-Roth Oak in Morzg, over 200 years old, recorded in an 1817 account. Full list of 12.",
   "question_answer": "Salzburg's oldest documented tree is the Stephan-Ludwig-Roth Oak, a pedunculate oak at a woodland edge in Morzg. A source records the Transylvanian Saxon leader and pedagogue Stephan Ludwig Roth resting under it on 15 September 1817, which means it was already a landmark two centuries ago; a local blog puts its age at over 200 years today.",
   "question_context": "The oak has real urgency behind it: the same source reports a fungal infection and expects the tree to survive only about twenty more years, which makes it worth seeing sooner rather than later. Salzburg's Naturdenkmal register runs to dozens of entries, and the nine here come from five corners of the city rather than one walkable cluster, though three, an oak and two limes on separate Riedenburg streets, sit close enough to walk in one afternoon. The Erentrudishof Oak, the city's longest-protected tree (1933), stands in a working farmyard in Morzg where pigs once fattened on its acorns. A black poplar on the Josef-Mayburger-Kai promenade is one of the last traces of the riparian forest that used to line the Salzach. A plane and a black pine share a housing-estate courtyard near the main station, the only two trees left from a grand hotel's bombed-out park, and a giant sequoia stands beside a coast redwood in the formal Mirabellgarten, the only deliberately planted tree here. None of the nine carries a hard planting date; ages come from designation years, a sighting, a claim about a pair of survivors, or a visitor's tape measure, and each page says so.",
   "faq": [
@@ -15,11 +15,11 @@
     },
     {
       "q": "Where are Salzburg's most remarkable trees?",
-      "a": "Spread across the city rather than one walk: a farm in Morzg, a riverside promenade in Itzling, three trees on separate Riedenburg streets, a housing-estate courtyard near the main station, a residential street in Maxglan, and the formal Mirabellgarten in the centre."
+      "a": "Spread across the city rather than one walk: a farm in Morzg, a riverside promenade in Itzling, three trees on separate Riedenburg streets, a housing-estate courtyard near the main station, a residential street in Maxglan, the formal Mirabellgarten in the centre, and a second cluster to the south in Aigen, Morzg and Nonntal."
     },
     {
       "q": "Are Salzburg's trees free to visit?",
-      "a": "Yes, all nine stand on public ground, a working farm's publicly accessible yard, or an open housing-estate courtyard, with no entrance fee."
+      "a": "Yes, all twelve stand on public ground, a working farm's publicly accessible yard, or an open housing-estate courtyard, with no entrance fee."
     },
     {
       "q": "Why don't Salzburg's official register trees carry ages?",
@@ -315,6 +315,100 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by its trunk standing alone in the open courtyard of the Fordhof housing estate, off Rainerstraße; the black pine grows about 35 metres away in the same courtyard."
+    },
+    {
+      "id": "szb_010",
+      "name": "The Hornbeam of Freisaalweg",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": null,
+      "location": {
+        "address": "Freisaalweg, beside the public Parkplatz Akademiestraße car park, Nonntal, Salzburg",
+        "latitude": 47.791815,
+        "longitude": 13.052739,
+        "neighbourhood": "Nonntal"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg (register entry NDM00202, designated 1986, protected area 0.049 ha)",
+        "https://de.wikipedia.org/wiki/Freisaal (independent Wikipedia article on the Freisaal district, states the tree's estimated age directly: 'eine mehrstämmige Hainbuche, deren Alter auf mehr als 200 Jahre geschätzt wird')",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Hainbuche_am_Freisaalweg,_Salzburg.JPG (dated, geotagged photo, 22 May 2014, coordinates match the register centroid to within a few metres)"
+      ],
+      "access": "Free. Stands beside the public Parkplatz Akademiestraße car park (220 spaces) in Nonntal; publicly viewable, no gate or restriction found.",
+      "transport": "Bus line 20 (Nonntal route), stop Akademiestraße or Hofhaymer-Allee; about a 15-20 minute walk south from Salzburg's Altstadt (Residenzplatz)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This hornbeam is all that is left of a villa garden, and for years it was the tree outside Salzburg University's biology department. The villa on Freisaalweg dates from the Gründerzeit, the building boom around the turn of the last century, and it later housed the university's Institute of Biology until 1986, when the biologists moved to the new natural sciences building nearby.\n\nThat same year, on 23 January 1986, the city declared the hornbeam a natural monument. The register entry calls it notably symmetrical and mighty, and the local Wikipedia article on Freisaal singles out its strikingly round, globe-shaped crown. It grows on several stems rather than one trunk.\n\nIts age is an estimate and stays one: the Freisaal article puts it at more than 200 years, and nobody has published anything sharper. No source says whether it was planted for the villa's garden or was already standing when the villa went up.\n\nToday its neighbour is the Akademiestraße car park, 220 spaces of asphalt, an unglamorous address for a protected tree. The most recent dated sighting we found is a photograph from May 2014, so if you walk past, a new photo or a word that it still stands would help. The same goes for its girth, which no source records: a tape measure answers that in a minute. It is a 15 to 20 minute walk south of the Altstadt.",
+      "how_to_recognise": "You can recognise it by its several stems and its round, globe-shaped crown. It stands on Freisaalweg beside the Parkplatz Akademiestraße car park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "szb_011",
+      "name": "The Courtyard Oak of Aigner Straße",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Aigner Straße 9, in the courtyard behind the apartment blocks, Aigen, Salzburg",
+        "latitude": 47.798802,
+        "longitude": 13.065745,
+        "neighbourhood": "Aigen"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg (register entry NDM00251, designated 2005, protected area 0.033 ha, quotes the tree's own access text)",
+        "https://de.wikipedia.org/wiki/Datei:Eiche_an_der_Aigner_Strasse_9_(1).JPG (independent dated, geotagged photo by a different photographer, 30 May 2014, coordinates match the register centroid closely, uploaded for the Wiki Loves Earth 2014 contest)"
+      ],
+      "access": "Free and explicitly unrestricted. The register's own text states it plainly: 'Die Eiche an der Aigner Straße 9 steht im Innenhof mehrerer Wohnblocks. Sie ist trotzdem ohne Einschränkungen zugänglich' (stands in the courtyard of several apartment blocks; nevertheless it is accessible without restriction).",
+      "transport": "Salzburg Aigen station (Obus line 7 and S-Bahn S3), on Aigner Straße itself, a short walk to the courtyard",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Salzburg protected this oak in 2005, and it went on the list standing in the courtyard of a block of flats. The city's own register entry anticipates the obvious question and answers it: the tree stands in the inner courtyard of several apartment blocks at Aigner Straße 9, and it is nevertheless accessible without restriction. You may walk in and look.\n\nIt is one of the more recent additions to Salzburg's list of natural monuments, and the register's description is about its build. Somewhere between 2.5 and 4 metres up, the register says, the trunk breaks into several strong limbs, rather than carrying its crown on one straight stem.\n\nHow long it has stood here, no source records. The register gives no age for any of its trees and no girth for this one, and it names the tree simply as Eiche, oak, without a species. We list it as a pedunculate oak, like the other oaks we map in Salzburg, but that is our reading rather than the register's: a photograph of a leaf or an acorn would settle it, and a tape measure around the trunk would give us a basis for estimating its age.\n\nThe most recent dated photograph we found is from May 2014. If you pass through Aigen, tell us it still stands. It is a short walk from Salzburg Aigen station.",
+      "how_to_recognise": "You can recognise it by the trunk splitting into several strong limbs between 2.5 and 4 metres up. It stands in the inner courtyard of the apartment blocks at Aigner Straße 9.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "szb_012",
+      "name": "The Meadow Oak of Buchholzhofstraße",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Buchholzhofstraße, Kleingmain/Morzg, Salzburg, on the pedestrian and cycle path leading toward Hellbrunner Allee",
+        "latitude": 47.781905,
+        "longitude": 13.05778,
+        "neighbourhood": "Morzg"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg (register entry NDM00206, designated 1986, protected area 0.0346 ha)",
+        "https://commons.wikimedia.org/wiki/File:00206_Eiche_an_der_Buchholzhofstra%C3%9Fe.jpg (independent dated, geotagged photo, 16 August 2014, categorised by Commons as Quercus robur, coordinates match the register centroid closely)"
+      ],
+      "access": "Free. Stands beside Buchholzhofstraße, whose northern stretch is a public pedestrian and cycle path (Geh- und Radweg) running into the Hellbrunner Allee; no gate or restriction found.",
+      "transport": "Bus/Obus line 5 or bus line 25 (Morzg route); about a 20-25 minute walk south from Salzburg's Altstadt",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This oak is protected as a leftover of a landscape that no longer exists. Salzburg's register calls it a Kulturrelikt, a cultural relic: the last trace of the open, thinly wooded meadows that once spread near the Hellbrunner Allee, before this corner of Kleingmain and Morzg was built up.\n\nIt was declared a natural monument in 1986, and the register's reason is not its size or its shape but what it remembers: the ground here was once meadow with scattered trees, and this oak is what remains of it. The street it now stands on was only named in 1941, after the Buchholzhof.\n\nNo source gives its age, and nobody has published its girth, so we will not guess. The register's framing implies it was here long before 1986, but it puts no number on that. If you have measured it, tell us, and we can at least estimate.\n\nThe species stands on firmer ground: the register says only Eiche, oak, but a geotagged photograph on Wikimedia Commons from August 2014 is filed as Quercus robur. That photograph is also the most recent sighting we found, so a word that it still stands would help. As far as we can tell the northern stretch of Buchholzhofstraße is now a footpath and cycle path running toward the Hellbrunner Allee; it is about a 20 to 25 minute walk south of the Altstadt.",
+      "how_to_recognise": "You can recognise it as the lone protected oak beside Buchholzhofstraße, on the footpath and cycle path that leads toward the Hellbrunner Allee in Morzg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

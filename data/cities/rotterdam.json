@@ -4,9 +4,9 @@
   "status": "needs_curation",
   "oldest_tree_id": "rot_001",
   "intro": "Rotterdam's old trees are survivors first and monuments second. The German bombing of May 1940 erased most of the city centre in a single night, and the soft, subsiding soil across much of the region shortens most trees' working lives regardless of what happens above ground; the city has barely 3,000 monumental trees against 600,000 total. What remains earned its place the hard way: a plane that predates the park built around it, another that survived the exact firestorm that flattened everything nearby, a coronation linden, a beech that watched the shipping elite build their street.",
-  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. Twelve verified locations.",
+  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. 16 verified locations.",
   "question_answer": "Rotterdam's oldest tree is the Plane of het Park, standing since around 1800, before landscape architects Jan David and Louis Paul Zocher designed the park around it in 1852. At roughly 226 years old, it has survived both the 1940 bombing that destroyed much of the city centre and the 1953 flood that put het Park itself underwater.",
-  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus eleven more.",
+  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus fifteen more.",
   "question_context": "Rotterdam's tree ages tell a story most Dutch cities don't have to tell: almost everything old here either predates the 20th century's two great disasters or was planted afterward to replace what didn't survive them. The Park Plane and the Breitenbach Plane both cleared the German bombing of 14 May 1940 that flattened the historic centre a short walk from each of them, and the Park Plane cleared a second disaster besides, the 1953 flood that put much of the park underwater for weeks. That double survival is the actual basis for calling it Rotterdam's oldest confirmed tree rather than simply its most storied one; several other candidates are old enough to be plausible rivals but lack a comparably documented history reaching back before 1900. The Westersingel Plane, the Wilhelmina Linden and the Koningin Emmaplein Beech are all younger by a wide enough margin, planted within a few decades of each other in the 1890s, that the ranking among Rotterdam's oldest three genuinely rests on the two 19th-century-or-earlier planes rather than any of the turn-of-the-century additions.",
   "faq": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are Rotterdam's remarkable trees free to visit?",
-      "a": "Yes. Most stand in public parks or on public streets, open at any time, no ticket required. Three, the beech and two cedars in the Historic Garden of Schoonoord, need entering a gated garden that is free but keeps daily opening hours."
+      "a": "Most stand in public parks or on public streets, open at any time, no ticket required. Three, the beech and two cedars in the Historic Garden of Schoonoord, need entering a gated garden that is free but keeps daily opening hours. Four more, in Arboretum Trompenburg, a separate botanical garden about 3km from the rest, need a paid ticket."
     },
     {
       "q": "Why does Rotterdam have so few monumental trees?",
@@ -409,6 +409,139 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by standing out as a conifer among the canal's planes and lindens, beside the wooden Schietbaanbrug footbridge. It stands on the Heemraadssingel, near number 215B."
+    },
+    {
+      "id": "rot_013",
+      "name": "The Holm Oak of Trompenburg",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "around 110 years",
+      "age_min": 106,
+      "age_max": 116,
+      "age_basis": "source",
+      "location": {
+        "address": "Arboretum Trompenburg (Vak M), Honingerdijk 86, Rotterdam",
+        "latitude": 51.919475,
+        "longitude": 4.517625,
+        "neighbourhood": "Kralingen"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1687056)",
+        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg",
+        "https://www.internationaloaksociety.org/content/trompenburg-tuinen-arboretum"
+      ],
+      "access": "Paid entry to Trompenburg Tuinen & Arboretum (adult ticket; free with the Dutch Museumkaart). Open Tue-Sun 10:00-16:30 and Mon from 12:00 (April onward), shorter hours Nov-Feb.",
+      "transport": "Tram 21 to Woudestein, then about 5 minutes on foot to the garden entrance at Honingerdijk 86.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In 1928 Trompenburg lost roughly 400 elms to Dutch elm disease, and out of that clearing grew one of the best oak collections in Europe. This holm oak was already here when the saws came. The national register puts its planting between 1910 and 1920, which makes it about 110 years old and older than the arboretum it now stands in.\n\nIt is also the odd one out. A holm oak belongs to the Mediterranean, keeps its dark leathery leaves all winter, and looks nothing like the deciduous oaks the garden is famous for. Trompenburg holds the Dutch National Plant Collection of Quercus, and named oaks such as 'Pondaim' and the 'East Column' and 'West Column' forms of Quercus x rosacea were raised here. This evergreen came before all of that.\n\nThe garden itself is older still. James Smith laid it out from 1820 on the Honingerdijk, the Zochers, father and son, reworked the western half around 1870, and James van Hoey Smith turned it into an arboretum after the elms fell. His son Dick built the collection up, and the gates opened to the public in 1958.\n\nOne honest caveat: the register dates this tree, but the garden's own history does not single it out, and no second source we found names this individual oak. If you know more about it, tell us. It is a separate stop from Rotterdam's other trees, about three kilometres away, with its own ticket.",
+      "how_to_recognise": "You can recognise it by its leaves: dark, leathery and still on the tree in winter, when most of the collection's oaks stand bare. It stands in section M of the arboretum, accession number 17.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "paid_entry": true
+    },
+    {
+      "id": "rot_014",
+      "name": "The Weeping Pear of Trompenburg",
+      "species": "Weeping Pear (Pyrus salicifolia)",
+      "age_estimate": "around 150 years",
+      "age_min": 146,
+      "age_max": 156,
+      "age_basis": "source",
+      "location": {
+        "address": "Arboretum Trompenburg (Vak C), Honingerdijk 86, Rotterdam",
+        "latitude": 51.920063,
+        "longitude": 4.517442,
+        "neighbourhood": "Kralingen"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1687054)",
+        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg"
+      ],
+      "access": "Paid entry to Trompenburg Tuinen & Arboretum (adult ticket; free with the Dutch Museumkaart). Open Tue-Sun 10:00-16:30 and Mon from 12:00 (April onward), shorter hours Nov-Feb.",
+      "transport": "Tram 21 to Woudestein, then about 5 minutes on foot to the garden entrance at Honingerdijk 86.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Of the trees the national register dates inside Arboretum Trompenburg, the oldest is not an oak or a cedar but an ornamental pear. It puts the planting between 1870 and 1880, which makes it roughly 150 years old, half a century older than the arboretum that grew up around it.\n\nPyrus salicifolia, the willow-leaved pear, is grown for its narrow silver-grey leaves, usually as a small decorative tree rather than a monument. The register calls it a treurpeer, a weeping pear, but names no cultivar, so the familiar drooping 'Pendula' form is likely rather than recorded.\n\nWhen it went in, Trompenburg was still a private estate on the Honingerdijk: James Smith had laid it out from 1820 and combined it with the neighbouring land in 1859, and the landscape architects Jan David and Louis Paul Zocher reworked the western section around 1870. No source ties this pear to their redesign, so treat that as the setting rather than its origin. It then saw roughly 400 elms felled to Dutch elm disease in 1928, James van Hoey Smith turn the grounds into an arboretum, and the public let in for the first time in 1958.\n\nThe register dates it and the garden's history covers the estate, but no second source names this individual tree. If you know its story, tell us. It is a separate stop from Rotterdam's other trees, with its own entry fee.",
+      "how_to_recognise": "You can recognise it by its narrow, willow-like silver-grey leaves, the mark of the willow-leaved pear. It stands in section C of the arboretum.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "paid_entry": true
+    },
+    {
+      "id": "rot_015",
+      "name": "The Himalayan Cedar of Trompenburg",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "around 100 years",
+      "age_min": 96,
+      "age_max": 106,
+      "age_basis": "source",
+      "location": {
+        "address": "Arboretum Trompenburg (Vak G), Honingerdijk 86, Rotterdam",
+        "latitude": 51.919675,
+        "longitude": 4.518168,
+        "neighbourhood": "Kralingen"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1687053)",
+        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg"
+      ],
+      "access": "Paid entry to Trompenburg Tuinen & Arboretum (adult ticket; free with the Dutch Museumkaart). Open Tue-Sun 10:00-16:30 and Mon from 12:00 (April onward), shorter hours Nov-Feb.",
+      "transport": "Tram 21 to Woudestein, then about 5 minutes on foot to the garden entrance at Honingerdijk 86.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "You cannot see this cedar from the street. The national register says so outright: it stands inside Arboretum Trompenburg where no passer-by can see it, so the only way to meet it is to buy a ticket and walk in.\n\nThe register puts its planting between 1920 and 1930, which makes it roughly a century old. That decade was the garden's turning point. In 1928 roughly 400 elms here were felled to Dutch elm disease, and James van Hoey Smith began turning the estate into a true arboretum. Whether this cedar was part of that first replanting, nothing we found says.\n\nA deodar is a tree of the western Himalaya, with soft blue-green needles and branch tips that droop as if tired. Here it grew up alongside a collection that Dick van Hoey Smith later built into one of international standing. The garden opened to the public in 1958 and received the International Dendrology Society's Conservation Plaquette in 1983.\n\nThe register dates it, but no second source names this particular cedar, and we found no published girth or height. If you have measured it, tell us. It is a separate stop from Rotterdam's other old trees, about three kilometres away, with its own entry fee.",
+      "how_to_recognise": "You can recognise it by the soft blue-green needles and the drooping tips of its leading shoot and branches, the mark of a deodar. It stands in section G of the arboretum.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "paid_entry": true
+    },
+    {
+      "id": "rot_016",
+      "name": "The Summer Lime of Trompenburg",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "around 90 years",
+      "age_min": 86,
+      "age_max": 96,
+      "age_basis": "source",
+      "location": {
+        "address": "Arboretum Trompenburg, Honingerdijk 86, Rotterdam",
+        "latitude": 51.920921,
+        "longitude": 4.517672,
+        "neighbourhood": "Kralingen"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1687055)",
+        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg"
+      ],
+      "access": "Paid entry to Trompenburg Tuinen & Arboretum (adult ticket; free with the Dutch Museumkaart). Open Tue-Sun 10:00-16:30 and Mon from 12:00 (April onward), shorter hours Nov-Feb.",
+      "transport": "Tram 21 to Woudestein, then about 5 minutes on foot to the garden entrance at Honingerdijk 86.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Every tree the national register lists inside Arboretum Trompenburg comes with a plot number, except this one. The weeping pear is in section C, the cedar in G, the evergreen oak in M. The large-leaved lime has only the garden's name, which makes it the hardest of them to find by the garden plan.\n\nThe register puts its planting between 1930 and 1940, roughly 90 years ago. That places it after 1928, the year roughly 400 elms here fell to Dutch elm disease and James van Hoey Smith began turning the old estate into a real arboretum, so it grew up with the collection rather than before it. Nothing we found says who planted it or why.\n\nIt is a native European lime, the large-leaved species, with broader, softer leaves than the common lime lining Dutch streets, downy on the underside. Around it the garden kept growing: Dick van Hoey Smith built the collection into one of international standing, the gates opened to the public in 1958, and the International Dendrology Society awarded the garden its Conservation Plaquette in 1983. Today Trompenburg holds the Dutch National Plant Collections of oak, beech, rhododendron and hosta.\n\nThe register dates this tree, but no second source names it individually, and we found no published girth or height. If you have stood under it with a tape measure, tell us. It is a separate stop from Rotterdam's other old trees, about three kilometres away, with its own entry fee.",
+      "how_to_recognise": "You can recognise it by its broad, soft leaves, downy on the underside, which mark it as a large-leaved lime. It stands roughly 100 metres north of the weeping pear in section C.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "paid_entry": true
     }
   ]
 }

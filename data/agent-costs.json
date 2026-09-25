@@ -19,6 +19,42 @@
     "note": "Exposure-4 pass on four European Tree of the Year finalists. The Moeierboom (Etten-Leur, 7 min by train from Breda) verified clean and delivered to data/research/breda-verified.json as bre_011. The Slovak Dragon Oak verified alive and real but too far from Bratislava for a day trip, kept as a standalone lead. The Pet Oak (stands in an A58 motorway median) and the Guimaraes Camellia (private estate, visit-by-appointment only) both failed hard rule 10 and are blocked.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "zwolle",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 4,
+    "note": "Park 't Engelse Werk cluster (3, register cross-checked against Zwolle's own 2024 municipal tree list) plus one Boschwijk weeping beech; two dead Genne oaks caught from the register's own storm text and blocked, one avenue-pattern oak and one placeless oak sent to leads. Reached target (20).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "utrecht",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 3,
+    "note": "3 trees verified to reach Utrecht's target of 30 (utr_035-037, one a folded courthouse-plane pair); 1 candidate resolved as an existing published duplicate, 4 newly-found dead register rows and 1 non-collectible bulk canal-tree-row entry blocked; fixed 3 stale leads.json entries that contradicted the file's own blocked-list record.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "demand shortlist (tokyo, alicante, munich, brisbane, london, cork, utrecht, oahu)",
+    "kind": "photo",
+    "tokens": 190000,
+    "trees": 2,
+    "note": "48 candidates viewed against the Cadiz standard: 2 approved (tok_003, lon_019), 3 held (ali_006, hnl_015 x2, right species but identity doubt), 43 rejected, mostly off-subject files a filename-match had picked up (public toilets, a memorial column, river landscapes, a different species).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "breda+utrecht+zwolle",
+    "kind": "write",
+    "tokens": 130000,
+    "trees": 8,
+    "note": "8 stories and recognition lines written and merged (bre_011, utr_035-037, zwo_017-020). No best_time set: none of the notes recorded a real seasonal peak.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ],
   "2026-08-05": [

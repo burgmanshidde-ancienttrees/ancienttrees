@@ -4,9 +4,9 @@
   "status": "needs_curation",
   "hero_tree_id": "utr_002",
   "intro": "Utrecht's oldest trees live behind walls more often than in open parks, protected first by a university's own working garden and later by simple survival. The city's genuine standout is a walled botanical garden barely bigger than a single city block, home to a ginkgo that predates the Netherlands' current constitution and a Chinese tree so rare it took a missionary decades to bring seeds to Europe at all. Add a farmhouse linden absorbed whole by a science campus, and a park cluster of century-old planes planted when the city's old defences became parkland.",
-  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. 27 verified locations, real stories.",
+  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. 30 verified locations, real stories.",
   "question_answer": "Utrecht's oldest tree is the Uithof Linden, a common lime planted around 1750 beside a 17th-century farmhouse that gave its name to what is now Utrecht Science Park. At roughly 275 years old, it predates the university campus built up around it by two centuries, one of the oldest Dutch lindens still standing anywhere.",
-  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full 27.",
+  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full 30.",
   "question_context": "Utrecht keeps its oldest trees in two very different settings, and the contrast says something about how a Dutch city actually preserves age. The Uithof Linden and the Oude Hortus's three specimens all survive because they sat inside a boundary somebody drew and then defended: a farmhouse's private dooryard in one case, a university garden's walls in the other, both places where nobody had reason to fell an inconvenient tree for centuries. The Nieuwegracht's canal lindens took the opposite route, out in the open on a public street since the 1600s, which is also why they are honestly the youngest of the five: street trees get replaced when they die or block a view, and at least one full replanting happened there sometime between the original 1660 planting scheme and the roughly 1830-dated lime trees standing today. Between the walled survivors and the replanted street trees sits the real explanation for why this city's canal-lined image and its handful of genuinely centuries-old specimens rarely overlap on the same tree.",
   "faq": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are Utrecht's remarkable trees free to visit?",
-      "a": "Three of the 27, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other 24, including the Uithof Linden, the Markiezeneik of Amelisweerd, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk, Geertebolwerk, Lucasbolwerk, Lepelenburg and the bastion-belt canal walk, are free and visible from public streets or open parkland at any hour."
+      "a": "Three of the 30, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other 27, including the Uithof Linden, the Markiezeneik of Amelisweerd, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk, Geertebolwerk, Lucasbolwerk, Lepelenburg and the bastion-belt canal walk, are free and visible from public streets or open parkland at any hour."
     },
     {
       "q": "Why does Utrecht have so few very old street trees?",
@@ -973,6 +973,103 @@
       "girth_cm": 526,
       "height_m": 18,
       "verify_notes": "Alive and inspected 2016-08-15: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1683455)."
+    },
+    {
+      "id": "utr_035",
+      "name": "The Oriental Plane of the Abraham Dolehof",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 180 years",
+      "age_min": 176,
+      "age_max": 186,
+      "girth_cm": 400,
+      "height_m": 25,
+      "location": {
+        "address": "Abraham Dolehof, Utrecht (enter via the gate on Lange Nieuwstraat)",
+        "latitude": 52.088215,
+        "longitude": 5.122384,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688792, data/registers/netherlands-lrmb.json",
+        "https://www.duic.nl/cultuur/geheimen-van-de-stad-de-plataan-de-dolehof/ (DUIC, 2018-07-15, reporting a Gilde Utrecht guided-tour text)"
+      ],
+      "access": "Free, but daytime only: the courtyard gate on Lange Nieuwstraat is closed in the evening. The residents who live around the garden maintain it.",
+      "transport": "About a 12-15 minute walk from Utrecht Centraal station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The largest thing in this old convent garden is younger than the garden by more than four centuries. Abraham Dole and his wife Christina founded the Sint-Ursula nunnery here in 1412; it was dissolved in 1580, and the walled courtyard it left behind now holds an Oriental plane more than four metres round and about 25 metres tall.\n\nIt is the true Oriental plane, not the London hybrid planted along so many Dutch streets, and the difference shows in the leaves, cut deep into narrow lobes. The trunk is covered in harmless burrs the local guides call warts, under bark that peels away in a brown and green mottle. The seed balls hang in clusters of three to six.\n\nIts age rests on two readings that meet. The national monumental tree register puts its planting between 1840 and 1850, and a 2018 article in DUIC called it roughly 170 years old, which points to about 1848. That makes it around 180 now.\n\nFrom beneath its crown you can see the Lutheran church, a clandestine church built after the Reformation to pass for an ordinary house. The residents who live around the courtyard look after the garden themselves. The gate on Lange Nieuwstraat is open by day and locked in the evening, and from the street you cannot see the tree at all, which is a fair part of its charm: you have to walk in to find it.",
+      "how_to_recognise": "You can recognise it by the burr-covered trunk, over four metres round, and the deeply cut Oriental plane leaves. It is the one big tree in the walled Abraham Dolehof, through the gate on Lange Nieuwstraat.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "utr_036",
+      "name": "The Gnarled Plane of the Tolsteegbrug",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "girth_cm": 550,
+      "height_m": 24,
+      "location": {
+        "address": "Tolsteegbrug, Manenburg, Utrecht",
+        "latitude": 52.081604,
+        "longitude": 5.124436,
+        "neighbourhood": "Binnenstad-Zuid"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688688, data/registers/netherlands-lrmb.json",
+        "https://kanokaartutrecht.nl/monumentalebomen.html (stop 5 of the canal-side monumental trees route, photos dated through January 2026)"
+      ],
+      "access": "Free, in the public Manenburg park beside the Tolsteegbrug bridge",
+      "transport": "About a 15-20 minute walk south from Utrecht Centraal station, or a short bus ride to Tolsteegsingel",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The city wrote down the year this plane went into the ground: 1835. That municipal planting record, quoted in the national monumental tree register for this specific tree, makes its age a date rather than an estimate, and puts it at around 190 years.\n\nIt has spent them at the water's edge beside the Tolsteegbrug, in Manenburg, one of the small parks laid out on the bastions of the old city wall along the Stadsbuitengracht, the same ring of parks as the Zonnenburg.\n\nWhat sets it apart is the bottom of the trunk. Higher up it is an ordinary London plane, with peeling, mottled bark, big fresh-green leaves and a crown about 24 metres tall. Lower down the stem turns gnarled and irregular, and a local canoe map of the monumental trees you can see from Utrecht's canals singles out exactly that misshapen base. The same guide lists the tree as stop 5 on its route and photographed it as recently as January 2026, so it is alive and well. The trunk measures 550 centimetres round.\n\nIt is one of two monumental trees flanking the same crossing. The other is a black walnut about 94 metres away, a different species entirely, so a walk over the bridge takes in both.",
+      "how_to_recognise": "You can recognise it by the gnarled, irregular base of the trunk, 550 centimetres round. It stands at the water's edge beside the Tolsteegbrug in Manenburg; the other big tree at the bridge, 94 metres off, is a black walnut.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "utr_037",
+      "name": "The Courthouse Planes of Hamburgerstraat",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 170 years",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Hamburgerstraat, opposite no. 17, Utrecht (in front of the former Paleis van Justitie)",
+        "latitude": 52.088706,
+        "longitude": 5.122893,
+        "neighbourhood": "Binnenstad"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678126, data/registers/netherlands-lrmb.json",
+        "https://oud-utrecht.nl/nieuws/1351-de-kippen-van-de-concierge"
+      ],
+      "access": "Free, on a public square in front of the former Palace of Justice",
+      "transport": "About a 10 minute walk from Utrecht Centraal station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "These two planes were planted to hide an execution scaffold. Around 1860 Utrecht laid out a new square in front of its Palace of Justice on Hamburgerstraat, and the residents of the street objected to the scaffold planned there. Four or five plane trees went into the square to screen the courthouse and the scaffold from their view. The scaffold was never used. Two of those planes are still standing.\n\nThe courthouse itself was built in 1837 by the Utrecht architect Christiaan Kramm, on the remains of the medieval Paulusabdij, the abbey of St Paul. The planes came a generation later, and the dating is unusually neat. The national monumental tree register puts the pair's planting between 1850 and 1860. Separately, the historical society Oud-Utrecht studied a photograph taken around 1875 in which one of these very trees looks ten to fifteen years old. Both point to about 1860, which makes the pair roughly 170 years old.\n\nThey have outlasted the purpose they were planted for by well over a century. The building is the former courthouse now, and the planes are simply the trees on the square. Two more planes were added along the adjoining Korte Nieuwstraat in 1975 and have grown nearly as large as the originals, so count carefully: the monumental pair are the two on the square itself. Nobody has published a girth for them yet; if you have a tape measure, tell us.",
+      "how_to_recognise": "You can recognise them as the two big planes on the square itself, in front of the former Palace of Justice. The similar planes along Korte Nieuwstraat are younger, planted in 1975.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
