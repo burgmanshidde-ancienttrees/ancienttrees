@@ -176,7 +176,8 @@
       "surveyed": "2000年",
       "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69349&branch_number=1",
       "age_band_ja": "不明",
-      "owner_category_ja": "不明"
+      "owner_category_ja": "不明",
+      "verify_note": "verify_attempt_2026-09-25: no facility_ja and no coordinates in the register row (Arakashi/Quercus glauca, 510cm, Aki-ku, owner unknown). Searched by species and ward; found nothing that names a specific tree at this size in Aki-ku. With no facility, no address, and no coordinate, there is no way to tell which physical tree this is on the ground, so it cannot even be pinned approximately. Register-only, left as a lead; a future pass would need the ministry's own paper survey sheet or a records request to place it."
     },
     {
       "report_id": 69374,
@@ -199,7 +200,8 @@
       "longitude": 132.5852269,
       "geocode_display_name": "中野東七丁目, 中野町, 安芸区, 広島市, 広島県, 739-0323, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on this Kirihata Shrine muku tree (Aki-ku, Nakano-higashi, 300cm). Found none for THIS tree, but found that the same shrine has a separately registered, much larger Keyaki (5.6m girth, 28m tall, city-designated natural monument since 1974, per hitozato-kyoboku.com/kirihatajinja-keyaki.htm, a visited-and-photographed page dated 2017-03-26 with its own coordinate, 34.412334/132.586333, close to but not identical to our geocode). That keyaki is not one of our 24 candidates (different report_id, not in the extract given to this pass) and is not verified here; it is a promising lead for a future pass, since it already clears the two-source bar on its own (register + hitozato-kyoboku detail page) and is not a padding/duplicate of this muku tree. This muku tree itself (69374) stays register-only, left as a lead."
     },
     {
       "report_id": 69376,
@@ -270,7 +272,8 @@
       "longitude": 132.6112331,
       "geocode_display_name": "舛越神社, 瀬野呉線, 上瀬野南一丁目, 阿戸町, 安芸区, 広島市, 広島県, 731-4231, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on this Masukoe Shrine keyaki (Aki-ku, Ado-cho Masukoe, 329cm, partly dead per the register's own health field). Found only directory/map listings for the shrine, nothing describing the tree. Register-only, left as a lead."
     },
     {
       "report_id": 69379,
@@ -293,7 +296,8 @@
       "longitude": 132.6240374,
       "geocode_display_name": "国草, 瀬野呉線, 阿戸町, 安芸区, 広島市, 広島県, 731-4231, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on this Ado Kojin Shrine enoki (Aki-ku, Ado-cho Kusakusa, 380cm). Found only general Ado-district tourism pages and an unrelated large enoki at a different shrine (Shimoyake Arajinja, 5.3m, not this one). Register-only, left as a lead."
     },
     {
       "report_id": 69344,
@@ -358,7 +362,9 @@
       "longitude": 132.3699094,
       "geocode_display_name": "戸山槙原, 久地伏谷線, 沼田町大字阿戸, 安佐南区, 広島市, 広島県, 731-3362, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "duplicate_check_2026-09-25: this tree, together with its register twin, is already published as hir_018 (The Tabu Tree of Ato Myojin Shrine), which folds both the tabunoki and the sugi of this same grove into one story (same coordinates, 0m away). The 2026-09-25 verify pass that produced hir_034 in hiroshima-verified.json did not check against already-published trees before delivering; caught by passcheck.py --pending on the same day and hir_034 removed before any story was written over it. This entry is a duplicate of hir_018, not a new tree.",
+      "status": "duplicate"
     },
     {
       "report_id": 69347,
@@ -381,7 +387,9 @@
       "longitude": 132.3699094,
       "geocode_display_name": "戸山槙原, 久地伏谷線, 沼田町大字阿戸, 安佐南区, 広島市, 広島県, 731-3362, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "duplicate_check_2026-09-25: this tree, together with its register twin, is already published as hir_018 (The Tabu Tree of Ato Myojin Shrine), which folds both the tabunoki and the sugi of this same grove into one story (same coordinates, 0m away). The 2026-09-25 verify pass that produced hir_034 in hiroshima-verified.json did not check against already-published trees before delivering; caught by passcheck.py --pending on the same day and hir_034 removed before any story was written over it. This entry is a duplicate of hir_018, not a new tree.",
+      "status": "duplicate"
     },
     {
       "report_id": 53004,
@@ -464,7 +472,8 @@
       "longitude": 132.4746424,
       "geocode_display_name": "勝木台公園, 可部町大字勝木, 安佐北区, 広島市, 広島県, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on Ono Hachiman Shrine (Asakita-ku, Kabe-cho Katsuki), which has three candidates in this batch (69354 tabunoki 460cm, 69355 kuromatsu 380cm, 69356 icho 307cm). Found the shrine's address (964 Kabe-cho Katsuki) via a shrine directory but nothing describing any of its trees. Register-only, left as a lead."
     },
     {
       "report_id": 69355,
@@ -487,7 +496,8 @@
       "longitude": 132.4746424,
       "geocode_display_name": "勝木台公園, 可部町大字勝木, 安佐北区, 広島市, 広島県, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "verify_attempt_2026-09-25: see 69354, same shrine (Ono Hachiman) and same search, no second source found for this kuromatsu."
     },
     {
       "report_id": 69356,
@@ -510,7 +520,8 @@
       "longitude": 132.4746424,
       "geocode_display_name": "勝木台公園, 可部町大字勝木, 安佐北区, 広島市, 広島県, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "verify_attempt_2026-09-25: see 69354, same shrine (Ono Hachiman) and same search, no second source found for this icho."
     },
     {
       "report_id": 69357,
@@ -528,7 +539,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "風呂崎神社",
-      "town_ja": "可部町勝木中河内"
+      "town_ja": "可部町勝木中河内",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on this Furosaki Shrine mukunoki (Asakita-ku, Kabe-cho Katsuki Nakagouchi, 339cm). Found nothing beyond general ward/postcode listings. Register-only, left as a lead."
     },
     {
       "report_id": 69358,
@@ -551,7 +563,8 @@
       "longitude": 132.46927,
       "geocode_display_name": "玉縄神社, 勝木安古市線, 亀山西二丁目, 可部町大字勝木, 安佐北区, 広島市, 広島県, 731-1142, 日本",
       "location_precision_hint": "site",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result names the shrine or temple itself, so this is site level: the precinct, not the trunk.",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on this Tamanawa Shrine icho (Asakita-ku, Kabe-cho Katsuki, 327cm). The shrine itself geocodes to a named site (34.5350178/132.46927, site-level per the existing geocode note), but found no source describing the tree itself beyond the register. Register-only, left as a lead."
     },
     {
       "report_id": 69359,
@@ -653,7 +666,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "松笠観音",
-      "town_ja": "高陽町小田岩坪"
+      "town_ja": "高陽町小田岩坪",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on this Matsukasa Kannon sugi (Asakita-ku, Koyo-cho Oda Iwatsubo, 480cm, partly dead per the register). Matsukasa Kannon may be a modest hillside temple; found nothing describing it or its trees at all, not even a directory listing. Register-only, left as a lead."
     },
     {
       "report_id": 69364,
@@ -671,7 +685,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "松笠観音",
-      "town_ja": "高陽町小田岩坪"
+      "town_ja": "高陽町小田岩坪",
+      "verify_note": "verify_attempt_2026-09-25: see 69363, same temple (Matsukasa Kannon), no second source found for this abemaki (Quercus variabilis)."
     },
     {
       "report_id": 69365,
@@ -694,7 +709,8 @@
       "longitude": 132.6651981,
       "geocode_display_name": "大寺, 広島三次線, 白木町大字井原, 安佐北区, 広島市, 広島県, 739-1301, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on this Shiraki Kojin Shrine kaya (Asakita-ku, Shiraki-cho Oderadera, 324cm, partly dead per the register). Found a nearby, similarly-described kaya story (a Kabe-area giant kaya first recorded in a 1819 domain survey, on the western slope of Onigajo, with a yama-no-kami placard) but could not confirm it is the SAME tree as this shrine's kaya rather than a different one nearby; not used as a source without a firmer match. Register-only, left as a lead."
     },
     {
       "report_id": 69368,
@@ -712,7 +728,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "宮野八幡神社",
-      "town_ja": "安佐町宮野"
+      "town_ja": "安佐町宮野",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on Miyano Hachiman Shrine (Asakita-ku, Asa-cho Miyano), which has two candidates in this batch (69368 enoki 440cm, 69369 keyaki 457cm). Found nothing describing the shrine or its trees beyond general ward listings. Register-only, left as a lead."
     },
     {
       "report_id": 69369,
@@ -730,7 +747,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "宮野八幡神社",
-      "town_ja": "安佐町宮野"
+      "town_ja": "安佐町宮野",
+      "verify_note": "verify_attempt_2026-09-25: see 69368, same shrine (Miyano Hachiman), no second source found for this keyaki."
     },
     {
       "report_id": 69370,
@@ -753,7 +771,8 @@
       "longitude": 132.467587,
       "geocode_display_name": "安佐町大字筒瀬, 安佐北区, 広島市, 広島県, 739-0103, 日本",
       "location_precision_hint": "address",
-      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing."
+      "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on this Tsutsuse Hachiman Shrine tabunoki (Asakita-ku, Asa-cho Tsutsuse, 310cm). A Hiroshima City page (city.hiroshima.lg.jp/soshiki/48/9978.html) names a registered tabunoki with identification number S08a10-02, but that is the city's atomic-bomb-survivor-tree (hibaku) database, an unrelated register for trees within reach of the 1945 hypocenter; Tsutsuse is a rural area well outside that zone, so this is very unlikely to be the same tree and was not used. Register-only, left as a lead."
     },
     {
       "report_id": 69371,
@@ -771,7 +790,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "野冠神社",
-      "town_ja": "安佐町野冠"
+      "town_ja": "安佐町野冠",
+      "verify_note": "verify_attempt_2026-09-25: searched for a second source on Nokanmuri Shrine (Asakita-ku, Asa-cho Nokanmuri), which has two candidates in this batch (69371 tabunoki 528cm, 69372 tabunoki 331cm). Found nothing describing the shrine or its trees at all. Register-only, left as a lead; the 528cm girth is large for tabunoki and would be worth a dedicated search if a future pass has more time."
     },
     {
       "report_id": 69372,
@@ -789,7 +809,8 @@
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
       "facility_ja": "野冠神社",
-      "town_ja": "安佐町野冠"
+      "town_ja": "安佐町野冠",
+      "verify_note": "verify_attempt_2026-09-25: see 69371, same shrine (Nokanmuri), no second source found for this second, smaller tabunoki."
     },
     {
       "report_id": 53306,
@@ -824,7 +845,8 @@
       "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53307&branch_number=1",
       "age_band_ja": "300年以上",
       "owner_category_ja": "社寺",
-      "town_ja": "湯来町大森"
+      "town_ja": "湯来町大森",
+      "verify_note": "verify_attempt_2026-09-25: no facility_ja given (Sugi, 580cm, age band 300+ years at the 1988 survey, Yuki-cho Omori, Saeki-ku). Searched by town and species; found nothing specific to Yuki-cho Omori. No coordinate either, so this cannot be pinned even approximately. Register-only, left as a lead."
     },
     {
       "report_id": 53308,
@@ -841,7 +863,8 @@
       "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53308&branch_number=1",
       "age_band_ja": "300年以上",
       "owner_category_ja": "社寺",
-      "town_ja": "湯来町大森"
+      "town_ja": "湯来町大森",
+      "verify_note": "verify_attempt_2026-09-25: see 53307, same town (Yuki-cho Omori) and same search, no second source found for this kashiwa (Quercus dentata, 330cm, also age-banded 300+ years at 1988). No coordinate; cannot be pinned. Register-only, left as a lead."
     },
     {
       "report_id": 53309,
@@ -858,7 +881,8 @@
       "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53309&branch_number=1",
       "age_band_ja": "不明",
       "owner_category_ja": "社寺",
-      "town_ja": "湯来町湯ノ山"
+      "town_ja": "湯来町湯ノ山",
+      "verify_note": "verify_attempt_2026-09-25: no facility_ja given (Hinoki, 340cm, Yuki-cho Yunoyama, Saeki-ku). Searched by town and species; found nothing. No coordinate; cannot be pinned. Register-only, left as a lead."
     },
     {
       "report_id": 53313,
@@ -875,7 +899,8 @@
       "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53313&branch_number=1",
       "age_band_ja": "不明",
       "owner_category_ja": "国",
-      "town_ja": "湯来町恵下"
+      "town_ja": "湯来町恵下",
+      "verify_note": "verify_attempt_2026-09-25: no facility_ja given (Momi/fir, 491cm, owner category national/kuni, Yuki-cho Ege, Saeki-ku). This is the same town as the already published hir_015 (Shihon-sugi of Mount Togo, also on national forest land in Yuki-cho Ege), so this fir may well stand along the same Egedani forest road or trail. A hiking blog (eisanxn.exblog.jp/11079830) mentions the existence of a 'designated natural monument giant Momi tree' on the Ege-dani forest road, but the blogger themself could not find or confirm which tree it was and gives no girth or coordinate, so per the search-summary rule this is a pointer, not a source. No coordinate in our own data either. Left as a lead rather than guessed onto hir_015's location; a future pass with more time should try the Kinki-Chugoku Forest Office pages (rinya.maff.go.jp), which supplied hir_015's own second source, to see if they also document a fir along the same trail."
     },
     {
       "report_id": 53314,
@@ -891,7 +916,8 @@
       "surveyed": "1988年",
       "source": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53314&branch_number=1",
       "age_band_ja": "不明",
-      "owner_category_ja": "不明"
+      "owner_category_ja": "不明",
+      "verify_note": "verify_attempt_2026-09-25: no facility_ja, no town_ja, owner category unknown (Keyaki, 306cm, Saeki-ku). This row carries no place information at all beyond the ward, so there is nothing to search for and no way to identify or pin the physical tree. Left as a lead; would need a records request to the ministry or the city to place it at all."
     },
     {
       "report_id": 69380,
