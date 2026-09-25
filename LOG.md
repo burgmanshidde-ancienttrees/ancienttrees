@@ -36,6 +36,40 @@ oldest is stated as shared between the Set Cimals oak and Palma's olive, both
 500 to 600 years. Queue, aliases (search names via city_names.py) and coords
 updated; the research file is merged and deleted.
 
+## 2026-09-25 (session) - City and country are two links; sign-out revokes in the app too
+
+- **Tree page place line, both surfaces.** "Sydney, Australia" was one
+  underlined link that only ever opened the city. Now the city and the country
+  are each their own link: in the app the country opens the Country view, on
+  the website it opens /<country> where a country page exists (plain text where
+  none does). The country joins the line only when no district stands in front
+  of the city, which is the app's existing one-line rule, now on the web too
+  (site/src/lib/place-line.ts). That also stops the web printing a sentence
+  under the name: ~700 trees hold prose in `neighbourhood`, which the app
+  already dropped and the web did not. Translated pages get the same cap but no
+  country, as they carry no country anywhere. The rule now lives twice (Swift
+  and TS); moving the answer into /api/trees.json is the proper home.
+- **Sign-out in the app now tells the server.** The website has always posted
+  /auth/v1/logout; the app only cleared the Keychain, leaving the refresh token
+  valid. It now revokes after the pending photograph upload, never before it.
+- **Sign-in parity, audited.** Deliberate and left alone: Apple first and
+  Google second in the app, Google in front with Apple and email behind More
+  options on the web; the typed email route hidden in the app. Same on both:
+  you stay on the page you were on after signing in and after signing out, and
+  signing out is asked first and keeps the collection in the account. Only the
+  revoke above was an accident.
+- **Search within reach, audited, nothing built.**
+
+  | Where | Search |
+  |---|---|
+  | App, Map tab | field on the map |
+  | App, Discover tab | field pinned at the top |
+  | App, "all cities / countries / species" lists | filter field for that list only |
+  | App, My trees and pushed pages (tree, city, country, species) | none; one tap on Map or Discover |
+  | Web, home | hero field |
+  | Web, /explore | field on the map |
+  | Web, every other page type on a phone | none; the Map link in the bar leads to /explore |
+
 ## 2026-09-25 (session) - Leon's corrections, taken as true
 
 Hidde: "leon is echt een boom legend ik zou zijn tips als waar zien". Three
