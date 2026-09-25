@@ -21,6 +21,7 @@ import { mapHead } from "../../lib/map";
 import { treePageScript } from "../../lib/tree-page-js";
 import TreeDetail from "../../components/TreeDetail.astro";
 import { hreflangForCity, ui } from "../../lib/i18n";
+import { placeParts } from "../../lib/place-line";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -100,6 +101,7 @@ const parkPage = parkName ? (parkPages as Map<string, any>).get(parkGroupKey(cit
 
 const cityName = city.data.city;
 const country = city.data.country;
+const placeLine = placeParts(tree.location.neighbourhood, cityName, country);
 const cslug = city.id;
 // Contract B v1.18. This chip has been gated on `allTrees.length > 1` since
 // long before the rule was written down, which is the same line; it reads it
@@ -252,7 +254,9 @@ const scripts = treePageScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TRE
     story={tree.story ?? ""} access={tree.access ?? ""} transport={tree.transport ?? ""}
     ageLabel={ageLabel} ageValue={ageValue} girth={girth} girthLabel="Girth"
     recognise={tree.how_to_recognise ?? null} address={loc.address ?? null}
-    place={[loc.neighbourhood, cityName].filter(Boolean).join(", ")}
+    place={placeLine.place}
+    country={placeLine.country}
+    countryUrl={countryUrl ? `/${countryPages.get(country)}` : null}
     cityName={cityName} cityUrl={`/${cslug}`} crumbs={crumbItems} canonical={canonical}
     shots={shots} nearby={nearbyCards} chips={chips} seasonHtml={seasonHtml} />
   <Fragment slot="scripts" set:html={scripts} />

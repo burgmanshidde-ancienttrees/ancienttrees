@@ -903,16 +903,37 @@ struct TreeDetail: View {
     /// label a coordinate with a place name).
     @ViewBuilder private var placeLink: some View {
         if mine == nil {
-            Button { navigator.push = .city(tree.citySlug) } label: {
-                Text(place)
-                    .underline()
-                    .lineLimit(1)
-                    .frame(minHeight: 44)
-                    .contentShape(.rect)
+            // City and country are TWO links, not one (Hidde, 2026-09-24: "op
+            // Sydney en Australia apart kunnen klikken"). AllTrails underlines
+            // each item of this line on its own and each opens its own page;
+            // one underline over "Sydney, Australia" read as one place and
+            // only ever led to the city.
+            let parts = placeHalves
+            HStack(spacing: 0) {
+                Button { navigator.push = .city(tree.citySlug) } label: {
+                    Text(parts.city)
+                        .underline()
+                        .lineLimit(1)
+                        .frame(minHeight: 44)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("See every tree in \(tree.city)")
+                if let country = parts.country {
+                    Text(", ").accessibilityHidden(true)
+                    Button { navigator.push = .country(country) } label: {
+                        Text(country)
+                            .underline()
+                            .lineLimit(1)
+                            .fixedSize()
+                            .frame(minHeight: 44)
+                            .contentShape(.rect)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("See every tree in \(country)")
+                }
             }
-            .buttonStyle(.plain)
             .foregroundStyle(Brand.ink)
-            .accessibilityLabel("See every tree in \(tree.city)")
         } else if let found = minePlace {
             // Near a city we publish, so there is a page to open.
             Button { navigator.push = .city(found.slug) } label: {
@@ -971,7 +992,12 @@ struct TreeDetail: View {
     /// When it does, the country comes with it. "Fulufjället" alone names a
     /// place almost nobody knows; "Fulufjället, Sweden" is the answer he asked
     /// for, and it costs a word.
-    static func placeLine(neighbourhood: String, city: String, country: String) -> String {
+    ///
+    /// It comes back in its two tappable halves: the city (with its district
+    /// in front when there is one) and the country, which joins only when no
+    /// district does, so the line stays one line.
+    static func placeParts(neighbourhood: String, city: String,
+                           country: String) -> (city: String, country: String?) {
         var n = neighbourhood.trimmingCharacters(in: .whitespaces)
         if let bracket = n.firstIndex(of: "(") {
             n = String(n[..<bracket]).trimmingCharacters(in: .whitespaces)
@@ -980,17 +1006,17 @@ struct TreeDetail: View {
         // Past this it is prose, whatever the field is called.
         if n.count > 28 { n = "" }
         if n.isEmpty {
-            return country.isEmpty ? city : "\(city), \(country)"
+            return (city, country.isEmpty ? nil : country)
         }
         // Many registers write the district as "Amsterdam-Centrum", so adding
         // the city gives "Plantage, Amsterdam-Centrum, Amsterdam".
-        return n.localizedCaseInsensitiveContains(city) ? n : "\(n), \(city)"
+        return (n.localizedCaseInsensitiveContains(city) ? n : "\(n), \(city)", nil)
     }
 
-    private var place: String {
-        Self.placeLine(neighbourhood: tree.neighbourhood,
-                       city: tree.city,
-                       country: tree.country)
+    private var placeHalves: (city: String, country: String?) {
+        Self.placeParts(neighbourhood: tree.neighbourhood,
+                        city: tree.city,
+                        country: tree.country)
     }
 
     /// Four facts with their units labelled, the way AllTrails does it and the

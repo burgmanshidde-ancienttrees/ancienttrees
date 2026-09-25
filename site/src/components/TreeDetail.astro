@@ -60,6 +60,11 @@ interface Props {
   recognise?: string | null;
   address?: string | null;
   place: string;
+  /** After the place, as its own link, only when no district stands in front
+   * of the city (the app's rule, so the line stays one line). Null on the
+   * translated pages, which have no country pages. */
+  country?: string | null;
+  countryUrl?: string | null;
   cityName: string;
   cityUrl: string;
   crumbs: [string, string | null][];
@@ -150,7 +155,11 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
       <div class="td-group">
         <h1>{p.name}{(tree as any).label && <span class="tree-label">{(tree as any).label}</span>}</h1>
         <div class="tree-place-row">
-          <p class="tree-place"><a href={p.cityUrl}>{p.place}</a></p>
+          {/* City and country are two links, as in the app (Hidde, 2026-09-24:
+              "op Sydney en Australia apart kunnen klikken"). */}
+          <p class="tree-place"><a href={p.cityUrl}>{p.place}</a>{p.country && (
+            <Fragment>, {p.countryUrl ? <a href={p.countryUrl}>{p.country}</a> : <span>{p.country}</span>}</Fragment>
+          )}</p>
           <span class="tree-place-dot" aria-hidden="true">·</span>
           <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="vote" lang={p.lang} />
         </div>
