@@ -515,7 +515,11 @@ window.atPaintNav = function(inNow) {
 (function() {
   try {
     var s = JSON.parse(localStorage.getItem('ancienttrees_session'));
-    if (!s || s.expires_at <= Date.now() / 1000) return;
+    // A spent access token with a refresh token beside it is still a signed-in
+    // visitor: signin-js renews it a moment later and repaints, or repaints
+    // signed out if the renewal is refused. Painting "Sign in" here first was
+    // the bug of 2026-09-25.
+    if (!s || (s.expires_at <= Date.now() / 1000 && !s.refresh_token)) return;
     window.atPaintNav(true);
   } catch (e) {}
 })();

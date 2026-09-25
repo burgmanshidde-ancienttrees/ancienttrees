@@ -160,6 +160,7 @@ export const SIGNIN_JS = `
           // The refresh token is spent or revoked. Clear it rather than leave
           // a dead session that makes the site look signed in.
           try { localStorage.removeItem('ancienttrees_session'); } catch (e) {}
+          if (window.atPaintNav) window.atPaintNav(false);
           return;
         }
         try {
@@ -169,6 +170,11 @@ export const SIGNIN_JS = `
             expires_at: Math.floor(Date.now() / 1000) + (j.expires_in || 3600)
           }));
         } catch (e) {}
+        // And the bar, which painted itself before this answer existed and so
+        // said Sign in to somebody who was signed in (Hidde, 2026-09-25: "in
+        // het menu staat nog steeds sign in, als ik naar mijn account ga ben
+        // ik wel ingelogd").
+        if (window.atPaintNav) window.atPaintNav(true);
         if (window.atSyncSaves) window.atSyncSaves();
       })
       .catch(function() {});
