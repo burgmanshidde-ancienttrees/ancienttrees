@@ -376,10 +376,12 @@
       "curation_status": "flagged",
       "story": "The Warsaw University Botanical Garden protects twenty three trees as natural monuments under one legal designation from 1974, and this ginkgo is one of them, planted in 1824 in a garden that had already existed for six years by then. Ginkgo biloba had barely reached European gardens a generation earlier, brought from China as a curiosity that turned out to outlive nearly everything planted around it, and this tree has now stood through two centuries of a garden that itself survived the war that flattened most of the city around it.\n\nIt shares its 1974 designation with two common beeches elsewhere in the garden, and one of those beeches was blown down by wind in 2020, according to a news report at the time. That loss does not touch this ginkgo, a separate tree under the same paperwork, but it is a reminder that a shared designation protects individuals, not a group's survival as a whole.\n\nNo girth or height has been recorded for it in what is available so far, unusual for a tree this documented. It stands a few hundred metres from the Royal Oaks of Lazienki, close enough to fold into the same walk through central Warsaw's parks. The garden charges admission and closes its outdoor grounds over winter, opening again each March.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/577454658/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Bobo-X, via iNaturalist",
+        "status": "approved",
+        "width": 375,
+        "height": 500
       },
       "paid_entry": true,
       "best_time": {
@@ -702,10 +704,13 @@
       "curation_status": "flagged",
       "story": "Warsaw's register gives this oak a date five years older than its five famous neighbours. The Szustra Oaks, a group of five pedunculate oaks registered together in 1978, stand right beside Palac Szustra in Park Morskie Oko. This one, thirty metres further east, was designated on its own in 1973, which makes it the earliest protected tree found in the whole park, and yet it has no name of its own beyond a line in a register.\n\nWhy it was split out from a group registration nobody has explained. It may simply have been protected first, alone, before somebody later decided the palace's other five oaks deserved the same status as a set. Whatever the reason, the city treats it as a genuinely separate monument, with its own designation number rather than a line inside the Szustra group's listing.\n\nNobody has measured its girth or estimated its age, only recorded that it stands and that it is protected. A photograph taken in 2022 shows it in leaf at the stated spot, thirty metres from the palace, the most recent confirmation this pass could find that the earliest-registered tree in Park Morskie Oko is still there. If you know its age or have stood beside it, tell us: the reader is the one most likely to fill in what the register left out.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Dab_szypulkowy_pomnik_przyrody_Morskie_Oko_Warszawa_palac_Szustra.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Emptywords, via Wikimedia Commons",
+        "status": "held",
+        "note": "Good in-leaf oak by the Szustra palace wall, but register number blank and five Szustra Oaks stand within metres; cannot tell which trunk.",
+        "width": 3785,
+        "height": 2838
       },
       "how_to_recognise": "You can recognise it as the one oak registered separately from the five named Szustra Oaks nearby, thirty metres east of the palace. It stands in Park Promenada-Morskie Oko.",
       "best_time": {
