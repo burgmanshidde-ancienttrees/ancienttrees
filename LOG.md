@@ -10,6 +10,7 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+<<<<<<< Updated upstream
 ## 2026-09-25 (session) - Xcode cleaned up; the cleanup nearly shipped an older catalogue
 
 Six stale agent worktrees and the detached `~/Documents/at-stack` removed with
@@ -25,6 +26,13 @@ read a local build, so neither `checkouts.py` nor `release.py` can do it again.
 `release.py --check`: current with origin/main, version 1.0.2 against 1.0.1 on
 sale, clear to archive. The last two scheduled iOS CI runs were green; the run
 for this morning's app changes (TreeDetail, Profile, Account) was still going.
+=======
+## 2026-09-25 (continuation) - Key West opens: 5 champion trees, finishing a claim an earlier attempt left standing
+
+The prior attempt in this window stopped with 57 minutes still on the clock and a claim on Key West that nothing had finished: a verify pass and a write pass had already done the real work (5 champion trees in the Key West Tropical Forest & Botanical Garden on Stock Island, stories written), sitting in `data/research/key-west-verified.json` uncommitted. This session's job was the merge, which nobody had done: built `data/cities/key-west.json`, wrote the intro/FAQ/question page (honestly: none of the five carries a documented age, so the question page says that plainly and names the Lignum Vitae's slow growth as the best available case), regenerated `data/city-queue.json`/CITY_QUEUE.md/city-list.json via `scripts/city_queue.py`, ran `scripts/city_names.py` for search names, released the stale claim, and rebuilt the site clean. All five hold or held a Florida or national size title for their species and all sit behind the garden's paid entry, which clears the "would somebody cross town for it" bar on its own.
+
+Also cleared two stray untracked files an earlier attempt left behind rather than committing them: an empty `christchurch-verified.json` (Christchurch was already published 2026-09-24; the file was leftover after that merge) and a Wellington register file its own header had marked DO_NOT_USE (a licence read that turned out wrong; Wellington's real status was already correctly recorded elsewhere as stalled/permission-needed).
+>>>>>>> Stashed changes
 
 ## 2026-09-25 (session) - Which checkout to build in, answered by a script instead of by him
 

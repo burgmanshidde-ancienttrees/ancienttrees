@@ -18021,6 +18021,78 @@
    ],
    "trees": 10,
    "logged": false
+  },
+  {
+   "started": "2026-09-25T03:11:25+00:00",
+   "date": "2026-09-25",
+   "run_id": "36086037128",
+   "minutes": 75.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 488,
+   "denials": 42,
+   "denials_source": "permission_denials: Bash(? && echo || echo), Bash(cat ; import ; ? ; fields ...), Bash(cat ; import ; ? ; for ...), Bash(cat), Bash(cd && npx ; echo ; grep ...), Bash(cd && npx ; echo), Bash(curl ; Win64 ; ? ; head), Bash(curl ; wc ; python3 ; import ...), Bash(curl | python3 ; import ; html ...), Bash(echo && cat), Bash(echo ; echo), Bash(for ; do ; echo ; done), Bash(for ; do ; grep | sort ...), Bash(for ; do ; python3 ; import ...), Bash(git ; git | tail ; git), Bash(iconv ; wc), Bash(iconv | grep | ? | ? ...), Bash(iconv), Bash(mkdir && iconv), Bash(mv && echo), Bash(pip | tail), Bash(pip), Bash(python3 ; ? ; ? ; rm ...), Bash(python3 ; import ; ? ; import ...), Bash(python3 ; import ; data ; for ...), Bash(python3 ; import ; for ; for ...), Bash(python3 ; import ; html ; ? ...), Bash(python3 ; import ; path ; with ...), Bash(python3 ; import ; trees ; for ...), Bash(python3 ; import ; with ; d ...), Bash(python3 ; import ; with ; raw ...), Bash(python3 | grep ; ls | wc), Bash(python3 | tail ; grep | ? ...), Bash(rm && git), Bash(rm && python3 && python3), Bash(rm ; ls | grep), Bash(rm), Bash(while ; do ; ? ; ? ...)",
+   "ended": "success",
+   "tokens": 16521658,
+   "claims_held": [],
+   "commits": 47,
+   "cities_touched": 13,
+   "cities": [
+    {
+     "city": "mallorca",
+     "trees": 6
+    },
+    {
+     "city": "rotterdam",
+     "trees": 4
+    },
+    {
+     "city": "zwolle",
+     "trees": 4
+    },
+    {
+     "city": "salzburg",
+     "trees": 3
+    },
+    {
+     "city": "utrecht",
+     "trees": 3
+    },
+    {
+     "city": "belfast",
+     "trees": 1
+    },
+    {
+     "city": "breda",
+     "trees": 1
+    },
+    {
+     "city": "budapest",
+     "trees": 1
+    },
+    {
+     "city": "coimbra",
+     "trees": 1
+    },
+    {
+     "city": "glasgow",
+     "trees": 1
+    },
+    {
+     "city": "graz",
+     "trees": 1
+    },
+    {
+     "city": "bad-homburg",
+     "trees": 0
+    },
+    {
+     "city": "friedewald",
+     "trees": 0
+    }
+   ],
+   "trees": 26,
+   "logged": true
   }
  ],
  "schedule_changes": [
