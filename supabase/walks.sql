@@ -53,16 +53,19 @@ create table if not exists public.walks (
 -- A stop list the app can always decode: an array of at most 40 objects, each
 -- with a name and a position, and exactly one of treeId / sightingId. A check
 -- constraint cannot hold a subquery, so it calls an immutable function.
+-- IS DISTINCT FROM, never <>: a missing key reads as NULL, and NULL <> 'number'
+-- is NULL rather than true, so a stop with no position used to pass. Found by
+-- the rule test on the day the table went live (2026-09-26).
 create or replace function public.walk_stops_ok(s jsonb) returns boolean
 language sql immutable as $$
   select jsonb_typeof(s) = 'array'
      and jsonb_array_length(s) <= 40
      and not exists (
        select 1 from jsonb_array_elements(s) e
-        where jsonb_typeof(e) <> 'object'
-           or jsonb_typeof(e -> 'name') <> 'string'
-           or jsonb_typeof(e -> 'lat') <> 'number'
-           or jsonb_typeof(e -> 'lng') <> 'number'
+        where jsonb_typeof(e) is distinct from 'object'
+           or jsonb_typeof(e -> 'name') is distinct from 'string'
+           or jsonb_typeof(e -> 'lat') is distinct from 'number'
+           or jsonb_typeof(e -> 'lng') is distinct from 'number'
            or ((e ? 'treeId' and e -> 'treeId' <> 'null'::jsonb)
                = (e ? 'sightingId' and e -> 'sightingId' <> 'null'::jsonb))
      )
