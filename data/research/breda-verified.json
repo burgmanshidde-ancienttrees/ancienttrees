@@ -1,0 +1,28 @@
+[
+  {
+    "id": "bre_011",
+    "name": "The Moeierboom",
+    "species": "Large-leaved Lime (Tilia platyphyllos)",
+    "age_estimate": "about 345 years, planted 1675",
+    "age_min": 340,
+    "age_max": 350,
+    "girth_cm": 206,
+    "location": {
+      "address": "Markt 1, Etten-Leur, opposite the old town hall",
+      "latitude": 51.5696042,
+      "longitude": 4.635443,
+      "neighbourhood": "Etten-Leur town centre (day trip from Breda)"
+    },
+    "verified_sources": [
+      "https://www.treeoftheyear.org/previous-years/2021/The-ancient-Mother-Tree",
+      "https://www.naturetoday.com/intl/nl/nature-reports/message/?msg=26816",
+      "https://www.etten-leurcityapp.nl/locaties/moeierboom-56abb759f6bf5072258b48b4",
+      "https://www.henrykuppen.nl/nl/home/bomen-om-blij-van-te-worden-moeierboom-van-etten-leur-verkozen-tot-nederlands-mooiste-boom"
+    ],
+    "access": "Free, standing in the open on the Markt (the town square) in the centre of Etten-Leur, fenced only temporarily during public events",
+    "transport": "Etten-Leur railway station, 7 minutes by train from Breda (NS), then about a 10 minute walk to the Markt",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "NOT in Breda itself: stands on the Markt in Etten-Leur, a separate municipality about 9.8km from Breda's other trees, reached in 7 minutes by train (well inside the ~30 minute day-trip boundary already used for brt_007/Grinava in Bratislava), so this reads as a Breda-day-trip addition rather than a Breda in-town tree; the story and access line should say plainly it is in Etten-Leur.\n\nFOUR SOURCES beyond the contest page: Nature Today (naturetoday.com, nl edition), the official Etten-Leur City App location page, and a detailed piece by Henry Kuppen, a Dutch tree consultant/arborist, all agree on species (Tilia platyphyllos, grootbladige linde), the 1675 planting date and the resulting ~345-year age as of the 2020/2021 contest cycle. Local dialect name is Moeierboom (moeier derives from moeder, mother); the contest's English translation 'The ancient Mother Tree' is a rendering of that, not a separate tree.\n\nDATING NOTE worth carrying: Henry Kuppen records that a second plaque near the tree gives 1774 instead of 1675, which would make it roughly a century younger; the Brabants Historisch Informatie Centrum (BHIC), the regional heritage archive, explicitly rejects the 1774 date. Recorded per the two-conflicting-figures rule rather than picked silently, though the overwhelming majority of sources (contest page, Nature Today, City App, Kuppen's own preferred reading) go with 1675/345 years, which is what I have used.\n\nGIRTH: 206cm per Kuppen's cited 2019 measurement (209cm elsewhere, close enough to be the same figure rounded differently). This is a MODEST girth for a documented 345-year lime, which would normally fail the register sanity-check for corruption, but it is explained rather than suspicious: the tree has been kept as a clipped/pollarded espalier form since planting, its horizontal support branches held at about 2.75m and vertical growth pruned back to about 3m above that, which suppresses trunk growth to an average Kuppen calculates at 0.8cm of girth per year. Worth a line in the story: this is a shaped, tended tree rather than a free-grown giant, which is also why its striking appearance (per the contest page) comes from centuries of clipping and an iron support frame for the heavy limbs rather than from raw bulk.\n\nCOORDINATES agree closely: contest GPS and the City App's own coordinate are 36 metres apart, both landing on the same small square, so location_precision is confirmed.\n\nALIVE: actively maintained as a civic monument, not merely surviving: temporary fencing during public events, a winter protocol avoiding road salt near its roots, and an annual light display (7,500-8,000 LED lights funded by local crowdfunding) that requires yearly access to the tree. No death or damage report found. curation_status flagged only for the plaque dating discrepancy above, not for the tree's condition.\n\nACCESS: unrestricted public square, no hard-rule-10 concern.\n\nSTORY MATERIAL: stands on the spot where justice was historically administered in the Middle Ages; propagated historically by layering, producing offspring trees; Vincent van Gogh lived in Etten-Leur from 1881 and reportedly passed the tree daily, and by some accounts painted it; won the Dutch national Tree of the Year contest 2020 (3,593 votes) before placing 6th in the 2021 European contest with 34,244 votes."
+  }
+]
