@@ -1,6 +1,26 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-09-25": [
+   {
+    "target": "coimbra",
+    "kind": "verify",
+    "tokens": 65000,
+    "trees": 0,
+    "note": "Exposure-4 pass on outer ICNF candidates 4-11km out; one turned out to be the already-published cbr_004 under a different processo id, the other three (Choupo-negro, Cedro-do-atlas, Sobreiro) each gained a second source but stayed leads on an unresolved hard-rule-10 access question. All three Overpass mirrors confirmed dead (406/406/timeout).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "_tree-of-the-year",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 1,
+    "note": "Exposure-4 pass on four European Tree of the Year finalists. The Moeierboom (Etten-Leur, 7 min by train from Breda) verified clean and delivered to data/research/breda-verified.json as bre_011. The Slovak Dragon Oak verified alive and real but too far from Bratislava for a day trip, kept as a standalone lead. The Pet Oak (stands in an A58 motorway median) and the Guimaraes Camellia (private estate, visit-by-appointment only) both failed hard rule 10 and are blocked.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
+  ],
   "2026-08-05": [
    {
     "target": "Napoli",
