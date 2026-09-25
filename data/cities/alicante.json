@@ -219,13 +219,13 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Alicante_Giant_old_tree.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Zeisterre, via Wikimedia Commons",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/361336151/medium.jpeg",
+        "license": "CC BY",
+        "attribution": "Marc Riera, via iNaturalist",
         "status": "held",
-        "note": "Excellent daylight shot of a huge Moreton Bay fig (right species: long glossy leaves, fused aerial-root trunk), but no geotag, cafe terrace and ayuntamiento sign suggest a plaza rather than Canalejas ",
-        "width": 1769,
-        "height": 2417
+        "note": "Good daylight colour shot of a Moreton Bay fig (fused aerial-root trunk, glossy crown) looking up the trunk. Geotag ~14 m from pin but its twin stands ~20 m west, and the upward angle cannot show the ",
+        "width": 500,
+        "height": 375
       },
       "girth_cm": 705
     },
