@@ -261,10 +261,10 @@
    "workaround": "it held precise laser measurements for New Orleans City Park's oaks. Those figures survive in search snippets and on neworleanscitypark.org, which is what this page used."
   },
   "overpass-api.de": {
-   "behaviour": "returns HTTP 406 Not Acceptable to every query attempted (a trivial two-node bbox query, and real queries), both via curl -X POST with a Content-Type header and via GET with --data-urlencode. Confirmed the API server itself is reachable (Apache serves a proper 406 error page) but something about this environment's requests is rejected before Overpass QL is even evaluated.",
-   "seen": "2026-09-24",
-   "cost": "4 attempts during the famous-poland batch5 verify pass, all wasted, trying to geocode a Bydgoszcz street address to tree-level precision",
-   "workaround": "Nominatim (nominatim.openstreetmap.org/search) works fine for street/address-level geocoding and was used instead, though it cannot answer natural=tree node queries the way Overpass can. Untested this pass: a different Overpass mirror (e.g. overpass.kumi.systems) might not have the same block."
+   "behaviour": "returns HTTP 406 Not Acceptable to every query attempted (a trivial two-node bbox query, and real queries), both via curl -X POST with a Content-Type header and via GET with --data-urlencode. Confirmed the API server itself is reachable (Apache serves a proper 406 error page) but something about this environment's requests is rejected before Overpass QL is even evaluated. Its lz4.overpass-api.de mirror does the same 406, and the alternative overpass.kumi.systems mirror instead times out (curl -m 20, exit 28): confirmed 2026-09-25 on a Coimbra access-check pass trying the Ypres/Leuven technique (checking OSM access= tags on three rural Portuguese estates). All three routes are dead from this environment, not just the primary host.",
+   "seen": "2026-09-25",
+   "cost": "4 attempts during the famous-poland batch5 verify pass, plus 3 more (one per mirror) during a Coimbra verify pass trying to settle access on three ICNF register trees; every one wasted",
+   "workaround": "Nominatim (nominatim.openstreetmap.org/search) works fine for street/address-level geocoding and was used instead, though it cannot answer natural=tree node queries or access= tags the way Overpass can. No working Overpass mirror is known from this environment as of 2026-09-25; an access question that needs OSM tags directly has to be settled some other way (a local source naming the field as open, or leave the tree as a lead)."
   },
   "reliwiki.nl": {
    "behaviour": "hangs past the TCP/TLS connect, no response at all (curl -m 20 -A browser-UA, exit 28 both times)",
