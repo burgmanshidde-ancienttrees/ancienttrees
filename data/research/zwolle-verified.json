@@ -1,0 +1,97 @@
+[
+ {
+  "id": "zwo_017",
+  "name": "The Silver Lime by the Bridge",
+  "species": "Silver Lime (Tilia tomentosa)",
+  "age_estimate": "roughly 120 years, from a registered planting date around 1905",
+  "age_min": 116,
+  "age_max": 126,
+  "location": {
+   "address": "Near the footbridge in the southern part of Park 't Engelse Werk, Zwolle",
+   "latitude": 52.495508,
+   "longitude": 6.06876,
+   "neighbourhood": "Spoolde, Park 't Engelse Werk"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://lokaleregelgeving.overheid.nl/CVDR757712",
+   "https://nl.wikipedia.org/wiki/Engelse_Werk"
+  ],
+  "access": "Free. Park 't Engelse Werk is a 16-hectare public walking park owned by the municipality (gemeente Zwolle), open at all times; the national register itself records this tree as visitable (visitable: ja).",
+  "transport": "About 1.8 km southwest of Zwolle station, roughly 23 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Landelijk Register Monumentale Bomen (Bomenstichting) nr 1689601, registered as Zilverlinde, planted_band 1900-1910, place \"Nabij brug zuidelijk deel Park 't Engelse Werk, Zwolle\", owner_category gemeente, visitable: ja. Second source: the municipality's own 2024 special-trees list (Lijst bijzondere bomen, CVDR757712) independently lists a Tilia tomentosa (ZILVERLINDE) at Het Engelse Werk planted 1907 (bm-code 1235-10.bm0394), the ONLY silver lime recorded anywhere in that park's roughly 200-tree municipal inventory (which otherwise runs Tilia x europaea/Hollandse linde and Fagus sylvatica/Beuk in bulk) so the species match is distinctive rather than coincidental, though the municipal list carries no coordinate to confirm it is the exact same individual. Park context (nl.wikipedia, Engelse_Werk; rijksmonument nr 41894): laid out 1828-1830 in English landscape style, probably by Hendrik van Lunteren, on the site of 17th-century fortifications advised by Menno van Coehoorn (a brick tunnel from those works still survives in the park); national monument (rijksmonument) since the transformation's recognition. It is Zwolle's oldest and most-visited park, bordering the Spoolderbos. Silver lime is unusual among the park's otherwise near-total lime/beech planting, and its felted silvery leaf undersides catch the wind visibly, a distinguishing feature against its neighbours. Age is a derived estimate from the register's planting band, not a documented planting record for this specific tree. No girth or height recorded by any source found this pass."
+ },
+ {
+  "id": "zwo_018",
+  "name": "The Beech East of the Restaurant",
+  "species": "European Beech (Fagus sylvatica)",
+  "age_estimate": "roughly 130 years, from a registered planting date around 1895",
+  "age_min": 126,
+  "age_max": 136,
+  "location": {
+   "address": "East of the restaurant/pavilion, Park 't Engelse Werk, Zwolle",
+   "latitude": 52.496103,
+   "longitude": 6.066781,
+   "neighbourhood": "Spoolde, Park 't Engelse Werk"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://lokaleregelgeving.overheid.nl/CVDR757712",
+   "https://nl.wikipedia.org/wiki/Engelse_Werk"
+  ],
+  "access": "Free. Park 't Engelse Werk is a 16-hectare public walking park owned by the municipality, open at all times; the national register records this tree as visitable (visitable: ja).",
+  "transport": "About 1.9 km west-southwest of Zwolle station, roughly 24 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Landelijk Register Monumentale Bomen (Bomenstichting) nr 1689600, registered as Beuk, planted_band 1890-1900, place \"Ten oosten van restaurant, park 't Engelse Werk, Zwolle\" (east of the restaurant), owner_category gemeente, visitable: ja. Wikipedia's Engelse Werk infobox lists 'voorzieningen: horeca' (a hospitality facility) and the article notes a popular 'uitspanning' (refreshment house) has stood near the dike since the 19th century, which is almost certainly the restaurant the register uses as its landmark, though no source ties the two by name. The municipality's own 2024 special-trees list (CVDR757712) independently confirms Fagus sylvatica (BEUK) is heavily represented at Het Engelse Werk across many planting years (1877, 1887, 1907, 1920, 1927, 1930 among others), which corroborates that beeches of this general age genuinely stand in this park, but its entries carry no coordinates or landmark text, so it cannot confirm this SPECIFIC specimen beyond species and rough era; flagged for that reason. Only one source (the register itself) individually identifies this exact tree. Park context is shared with zwo_017 and zwo_019 (Silver Lime, Copper Beech), both within 200m in the same park. No girth or height recorded by any source found this pass."
+ },
+ {
+  "id": "zwo_019",
+  "name": "The Copper Beech by the Water",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "roughly 120 years, from a registered planting date around 1905",
+  "age_min": 116,
+  "age_max": 126,
+  "location": {
+   "address": "Southern part of Park 't Engelse Werk, by the water, Zwolle",
+   "latitude": 52.495357,
+   "longitude": 6.069373,
+   "neighbourhood": "Spoolde, Park 't Engelse Werk"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://lokaleregelgeving.overheid.nl/CVDR757712",
+   "https://nl.wikipedia.org/wiki/Engelse_Werk"
+  ],
+  "access": "Free. Park 't Engelse Werk is a 16-hectare public walking park owned by the municipality, open at all times; the national register records this tree as visitable (visitable: ja).",
+  "transport": "About 1.8 km southwest of Zwolle station, roughly 23 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Landelijk Register Monumentale Bomen (Bomenstichting) nr 1689602, registered as Bruine beuk, planted_band 1900-1910, place \"Zuidelijk deel a/h water, park 't Engelse Werk, Zwolle\" (southern part by the water), owner_category gemeente, visitable: ja. The municipality's own 2024 special-trees list (CVDR757712) independently records several Fagus sylvatica 'Atropunicea' (copper beech) specimens at Het Engelse Werk (planted 1887, 1927, 1937 among others), corroborating that copper beeches of this general age stand in the park, but again without coordinates to pin down this exact tree, so this is general species/era corroboration rather than a specimen match; flagged for that reason. Stands close to the park's water features (a large pond with wooded islets was added to the park after 1874). Within about 45m of zwo_017 (Silver Lime) and 200m of zwo_018 (Beech), forming a small cluster near the southern, waterside part of the park. No girth or height recorded by any source found this pass."
+ },
+ {
+  "id": "zwo_020",
+  "name": "The Weeping Beech of Park Boschwijk",
+  "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+  "age_estimate": "roughly 120 years, from a registered planting date around 1905",
+  "age_min": 116,
+  "age_max": 126,
+  "location": {
+   "address": "In the lawn, Park Boschwijk, Heinoseweg, Zwolle",
+   "latitude": 52.499144,
+   "longitude": 6.137681,
+   "neighbourhood": "Boschwijk"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/",
+   "https://rijksmonumenten.nl/monument/528225/boschwijk-historische-tuin-en-parkaanleg/zwolle/"
+  ],
+  "access": "Free. Park Boschwijk's landscape garden is open to the public (already established for zwo_002 and zwo_004, published trees in the same park); the register records this tree as visitable (visitable: ja), owner_category gemeente.",
+  "transport": "About 3.2 km east of Zwolle station, roughly 40 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Landelijk Register Monumentale Bomen (Bomenstichting) nr 1688446, registered as Treurbeuk, planted_band 1900-1910, place \"In grasveld, Park Boschwijk, Zwolle\" (in the lawn), owner_category gemeente, visitable: ja, history field blank (onbekend) for this specific tree, so no bridge-claim risk from reused place history. Second source: Rijksmonumenten.nl's national listing for Boschwijk's historic garden and park layout (rijksmonument nr 528225, fetched directly) confirms the estate's landscape garden was laid out after 1783 by then-owner and poet/mayor Rhijnvis Feith in English landscape style, on the southeast side of the house, with winding paths and water features; it does not name this specific weeping beech, so it corroborates the SITE and its public, protected status rather than the individual tree, hence flagged. A WebSearch summary of a third page (jan.kerkvliet.net) separately described the estate as having 'an impressive weeping beech' among its features, but that page could not be fetched directly this pass (DNS did not resolve, both http and https) so per the search-summary-is-a-lead rule that description is recorded here as an unconfirmed lead, not used as a source. Two other Boschwijk trees from the same register batch are already published (zwo_002 the Beech of the Boschwijk Avenue, zwo_004 the Red Oak of Boschwijk), confirming the park itself is public and walkable; this weeping beech stands about 150m from zwo_004. No girth or height recorded by any source found this pass."
+ }
+]

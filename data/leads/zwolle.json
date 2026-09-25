@@ -1,0 +1,41 @@
+{
+ "leads": [
+  {
+   "register_nr": 1696002,
+   "name": "Zomereik (Pedunculate Oak)",
+   "latitude": 52.514344,
+   "longitude": 6.142534,
+   "place": "Ambeltpad, Veldhoek (wijk Berkum, Stadsdeel Oost), Zwolle",
+   "planted_band": "1910-1920",
+   "reason": "The register's own site_history says this specific oak was planted in 1911 on an old levee (oeverwal) of the Overijsselse Vecht, which is a genuinely good story. But the municipality's own 2024 special-trees list (CVDR757712) shows Ambeltpad lined with dozens of near-identical Quercus robur / ZOMEREIK entries, most planted 1930-1931, classified 'Monumentaal Particulier' with no individual names or landmarks distinguishing one from another, the same avenue pattern that got the Philosofenallee oak (register nr 1683416) blocked earlier. This one's 1911 planting date is a decade older than most of its neighbours, which could make it distinguishable, but nothing found this pass names or photographs THIS specific tree apart from the row. Needs either a source that singles it out (an address number, a photo, a local write-up) or a site visit before it can ship as a collectible point rather than one of an avenue.",
+   "species": "Pedunculate Oak (Quercus robur)"
+  },
+  {
+   "register_nr": 1695758,
+   "name": "Zomereik (Pedunculate Oak)",
+   "latitude": 52.520013,
+   "longitude": 6.055314,
+   "place": "\"Nu nog weiland\" (still meadow for now), Zwolle",
+   "planted_band": "Leeftijd onbekend (age unknown)",
+   "reason": "No age at all, register reason is 'potentieel' (candidate for future designation, the lowest tier seen in this register for Zwolle), owner_category unknown, and the place name itself ('still meadow for now') suggests the site may be slated for development rather than being an established, findable spot. No address, no second source found. Too thin to research further within this pass's budget; a future pass with more time could try to place it precisely and check ownership/access."
+  }
+ ],
+ "blocked": [
+  {
+   "register_nr": 1689611,
+   "name": "Zomereik (Pedunculate Oak)",
+   "latitude": 52.551756,
+   "longitude": 6.125956,
+   "place": "Weiland naast Huis den Doorn, Den Doornweg 47, Genne",
+   "reason_blocked": "DEAD. The register's own site_history for the neighbouring oak at the same address (nr 1688462, also blocked, below) states in its own words that in the storm of 18 January 2007 'deze eik net als de naburige kleinere eik nr 1689611 ontworteld' (this oak, like the neighbouring smaller oak nr 1689611, was uprooted). The register carries no vitality field and does not flag nr 1689611 itself as dead, but its sibling entry's text names it explicitly as felled in the same storm. Never ship; a tree we know is dead never goes live."
+  },
+  {
+   "register_nr": 1688462,
+   "name": "Zomereik (Pedunculate Oak)",
+   "latitude": 52.551606,
+   "longitude": 6.126097,
+   "place": "In weiland, zuid kant huis Den Doorn, Den Doornweg 47, Genne",
+   "reason_blocked": "DEAD. The register's own site_history for this entry is unusually detailed and self-documenting: it was one of the ten thickest oaks in the Netherlands at 682cm circumference, but 'Bij de zware storm van 18 januari 2007 is deze eik... ontworteld. Het wortelstelsel bleek aangetast en de boom was onderin hol' (in the storm of 18 January 2007 this oak was uprooted; the root system was found to be damaged and the trunk was hollow at the base). The same text gives a ring count from the exposed cross-section (173 rings, oak estimated 180-190 years old, planted around 1820-1830) which is itself now historical rather than current. Never ship a tree known to be dead. Also note this and nr 1689611 above are both on private agricultural land (owner_category particulier, setting agrarisch) roughly 4.7 km outside central Zwolle in the hamlet of Genne, which would also have needed an access check even if alive."
+  }
+ ]
+}
