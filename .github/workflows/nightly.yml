@@ -478,6 +478,21 @@ jobs:
             comes back merged, go straight to the next one. The window ends when
             the clock or the usage limit says so, never when one item is done.
 
+            DISPATCH EVERY AGENT IN THE FOREGROUND: run_in_background false, on
+            every Agent call and on every long Bash command (the site build
+            included). This runner has no notifications. An attempt ends the
+            moment you stop producing turns, and a background agent's result
+            dies with it, verified trees and all. On 2026-09-25 five attempts in
+            a row said "I'll wait for the notification" and ended, and the 17:21
+            run spent 57 minutes for nothing that way. Wait by blocking, never
+            by stopping.
+
+            AND WRITE LOG.md ONLY AFTER `git log -1` SHOWS THE TREES COMMITTED.
+            The 19:40 run of 2026-09-25 verified and wrote 23 trees, had its
+            `rm && git` chains refused, never committed a city file, and then
+            logged "23 trees published". The Run health step swept that LOG
+            line onto main and the trees were lost with the runner.
+
             WHAT KIND OF WORK, and this prompt deliberately does not say. Read
             CLAUDE.md's "The course after the fortnight" paragraph in Step 0 and
             follow it; it holds the two rules (supply from the cheap end, depth

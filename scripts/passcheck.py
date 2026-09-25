@@ -839,7 +839,10 @@ def default_holder():
 MAX_OPEN_CLAIMS = 6
 
 
-def do_claim(target, kind, by):
+OPEN_FLOOR = 4  # a place at or above the floor is open; claiming it is deepening
+
+
+def do_claim(target, kind, by, deepen=None):
     doc, live = load_inflight()
 
     # The prompt has said "claim only what this window can finish" since
@@ -857,6 +860,26 @@ def do_claim(target, kind, by):
         print("finishes locks that city away from every other run until it expires.")
         print(f"  python3 scripts/passcheck.py --release {mine[0].get('target', '<place>')}")
         return 1
+
+    # Open, do not deepen (Hidde, 2026-09-26: "i want them to open new cities
+    # instead of adding"). Rule (0) has said so since 2026-08-28 and the runs
+    # went on deepening anyway: in the 24 hours to 2026-09-25 21:00 they added
+    # to Rotterdam, Zwolle, Utrecht, Salzburg, Warsaw and Kaunas while 118
+    # ranked cities stood at zero. So a verify or write claim on a place that
+    # already clears the four-tree floor is refused unless the run says why,
+    # and a reader's submission is the reason this exists for.
+    if kind in ("verify", "write") and not deepen:
+        match, _ = resolve(target, cities())
+        if match and match["n"] >= OPEN_FLOOR:
+            print(f"REFUSED: {match['city']} is already live with {match['n']} trees.")
+            print("The work now is OPENING places, not deepening them (Hidde,")
+            print("2026-09-26). Take a city at zero from `city_queue.py --next`, or a")
+            print("famous tree that is its own place, instead.")
+            print("A reader's submission for this place is the one ordinary reason")
+            print("to deepen; then say so:")
+            print(f'  python3 scripts/passcheck.py --claim {target} --kind {kind} '
+                  f'--deepen "reader submission row N"')
+            return 1
 
     existing = claims_for(target, live)
     if existing:
@@ -1325,10 +1348,15 @@ def main():
             i = args.index("--by")
             by = args[i + 1]
             del args[i:i + 2]
+        deepen = None
+        if "--deepen" in args:
+            i = args.index("--deepen")
+            deepen = args[i + 1] if i + 1 < len(args) else "unstated"
+            del args[i:i + 2]
         if not args:
-            print("usage: passcheck.py --claim <place> [--kind verify|write|photo] [--by who]")
+            print("usage: passcheck.py --claim <place> [--kind verify|write|photo] [--by who] [--deepen why]")
             return 1
-        return do_claim(" ".join(args), kind, by)
+        return do_claim(" ".join(args), kind, by, deepen)
     if "--release" in args:
         args.remove("--release")
         if not args:
