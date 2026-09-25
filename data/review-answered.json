@@ -82,8 +82,8 @@
       "at": "2026-09-23T16:00:09+00:00"
     },
     "2026-09-24": {
-      "note": "py_compile check for scripts/*.py already landed in scripts/hooks/pre-push (commit 54563871, a concurrent session): a changed script that does not parse (e.g. leftover conflict markers) now refuses the push before it reaches main.",
-      "at": "2026-09-25T03:27:33+00:00"
+      "note": "CITY_QUEUE.md's deepen-targets prose already rewritten to match target_for()'s population-based table (commit 190a9adb, a concurrent session), retiring the stale Search-Console-confirmation-keyed table the WARN described.",
+      "at": "2026-09-25T03:27:56+00:00"
     }
   }
 }
