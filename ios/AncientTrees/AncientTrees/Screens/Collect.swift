@@ -277,27 +277,23 @@ struct CollectView: View {
         // somebody's pins on a map either.
         let mineShown = showsYourCollection ? sightings.yoursOnly : []
         let visitedShown = showsYourCollection ? allVisited : []
-        let points = visitedShown.map { (lat: $0.lat, lng: $0.lng) }
-            + mineShown.map { (lat: $0.lat, lng: $0.lng) }
-        // -globe forces the branch for the sweep and the layout gate, because
-        // the real condition (signed in, trees ticked in two countries) is one
-        // no simulator can reach. See Launch.globe.
-        if Launch.globe || (countries > 1 && showsYourCollection) {
-            GlobeCover(points: points.isEmpty ? GlobeMap.somewhereToLookAt : points)
-        } else {
-            TreeMap(trees: visitedShown,
-                    mine: mineShown.map {
-                        (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
-                         photo: sightings.image($0)) },
-                    collected: Set(saved.collected.map(\.treeId)),
-                    favourites: Set(saved.favourites.map(\.treeId)),
-                    onSelectMine: { navigator.push = .mine($0) },
-                    onSelectTree: { navigator.push = .tree($0) },
-                    focus: centreOfYours,
-                    spanMeters: spanOfYours,
-                    fitsTrees: true,
-                    selected: $selectedTree)
-        }
+        // Always the flat map every other screen uses. A 3D globe lived here
+        // from 2026-09-13 to 2026-09-26 and came out on Hidde's word ("haal de
+        // hele 3d map er maar uit, val terug op de platte kaart die we overal
+        // gebruiken"): a second map engine is a second thing to test, and the
+        // flat map already frames trees in several countries.
+        TreeMap(trees: visitedShown,
+                mine: mineShown.map {
+                    (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
+                     photo: sightings.image($0)) },
+                collected: Set(saved.collected.map(\.treeId)),
+                favourites: Set(saved.favourites.map(\.treeId)),
+                onSelectMine: { navigator.push = .mine($0) },
+                onSelectTree: { navigator.push = .tree($0) },
+                focus: centreOfYours,
+                spanMeters: spanOfYours,
+                fitsTrees: true,
+                selected: $selectedTree)
     }
 
     /// The middle of what you have, so the map opens on your collection.

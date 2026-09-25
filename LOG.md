@@ -10,6 +10,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 (session) - The 3D globe is out; My trees draws the flat map
+
+Hidde, after trying yesterday's Polarsteps globe on his phone: "haal de hele 3d
+map er maar uit, die moet uitvoerig getest worden, val maar terug op de platte
+kaart die we overal gebruiken." Done: GlobeMap.swift, the -globe launch
+argument, its sweep entries and its unit tests are gone, and My trees always
+draws the same MapLibre map as every other screen. Build and all 156 unit tests
+green; the sweep and layout lists agree. CONVENTIONS.md keeps the Polarsteps
+reference, marked withdrawn, so reopening it starts from there.
+
 ## 2026-09-25 - 12 new places, 6 cities deepened: finishing the claims four prior attempts abandoned mid-wait
 
 The last four attempts in this window each dispatched a verify pass and then stopped talking, saying they'd wait for the background notification. That doesn't work here: a night-run attempt ends the moment it stops producing turns, so the background agent's result was lost every time and only a `data/in-flight.json` claim survived, 109-144 minutes still standing on 9 places when this attempt started. This attempt finished them for real, running each verify and write pass in the foreground so the result landed inside this same run instead of evaporating with it.

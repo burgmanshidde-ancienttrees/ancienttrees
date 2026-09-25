@@ -57,9 +57,6 @@ final class SweepFrames: XCTestCase {
         // were not, and over there the duplicate name meant this screen was
         // never photographed at all.
         ("collection-tab", ["-tab=2"], nil),
-        // The globe, forced. See appsweep.py for why it needs an argument
-        // at all and what it cost to have no way of opening it.
-        ("collection-globe", ["-tab=2", "-signed-in", "-globe"], nil),
         ("profile",      ["-tab=2", "-settings"], nil),
         // Signed in, which is a different screen: see appsweep.py for what it
         // cost to photograph only the signed-out half of it.
