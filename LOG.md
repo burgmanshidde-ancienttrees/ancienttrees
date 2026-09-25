@@ -10,7 +10,36 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-25 (session) - Why night runs end silent: they will now say it themselves, and the one-hour push credential
+## 2026-09-25 (session) - Which checkout to build in, answered by a script instead of by him
+
+Hidde's Xcode welcome window held two projects, `~/Documents/Ancienttrees/ios`
+and `~/Documents/ancienttrees-release/ios`, and he had not made the second one:
+"kun jij 1 doen ik heb het nooit gemaakt". A session made it, with the command
+`worktree_guard.py` prints. That is the bug in one line: a
+`git worktree add ../ancienttrees-<name> HEAD` is born on a DETACHED HEAD and
+never follows main again, `git status` inside it is clean and reassuring, and
+every build out of it ships the app as it was on the day somebody needed a spare
+checkout. My first answer was worse than useless: I told him to keep the release
+folder, which is the stale one.
+
+- **`python3 scripts/checkouts.py`** names the one to build in and every one to
+  forget, worktrees and separate clones both, with each one's head, dirt,
+  unpushed commits and distance from origin/main. `--fix` removes the stale
+  worktrees, fast-forwards the keeper and refreshes the bundled catalogue. It
+  never deletes a checkout carrying uncommitted work or a commit that is not on
+  origin/main, and it never deletes a clone at all, because that is somebody's
+  unpushed afternoon and it is the one mistake here that cannot be undone.
+- **The build guard says it too, which is the ratchet half.** `report()` used to
+  answer a linked worktree with "safe, whatever else is running" and stop, which
+  is true about concurrency and silent about the thing that actually went wrong.
+  It now adds how far behind origin/main it is, and `guard()` prints that even
+  when it lets the build through, so appsweep, appfit, appwalk and release.py
+  all say it in front of an xcodebuild.
+
+FOR HIDDE: the folders are on your Mac and this container cannot reach it, so
+the deletion runs there. One line in either folder: `python3 scripts/checkouts.py --fix`.
+
+ - Why night runs end silent: they will now say it themselves, and the one-hour push credential
 
 Hidde asked why the runs make few trees while usage runs hard. Two fixes from that reading.
 

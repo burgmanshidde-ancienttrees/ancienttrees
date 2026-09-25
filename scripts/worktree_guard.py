@@ -101,12 +101,46 @@ def worktree_command(name="app-work"):
             "# then work there, and `git worktree remove` it when merged" % name)
 
 
+def stale_warning():
+    """The other half of the worktree sentence, learned 2026-09-25.
+
+    A linked worktree is the safest place to build and the likeliest place to
+    build STALE, because it is born on a detached HEAD and never follows main
+    again. Hidde had one sitting in Xcode's welcome window beside the real
+    checkout with no way to tell which was which, and builds had been landing on
+    old code for days. This never refuses: being behind is not a reason to stop
+    a build, it is a reason to say so where somebody is looking.
+    """
+    if not in_linked_worktree():
+        return []
+    behind = commits_behind_main()
+    if not behind:
+        return []
+    return ["%d commit(s) behind origin/main, and a detached worktree never "
+            "catches up on its own, so this build would ship old code." % behind,
+            "python3 scripts/checkouts.py   "
+            "# which checkout to build in, and what to delete"]
+
+
+def commits_behind_main():
+    """How far this working directory is behind origin/main, or None.
+
+    Deliberately does NOT fetch: the guard runs in front of every app build and
+    a network call there would be paid a hundred times a week. A stale
+    origin/main only ever understates the gap, which is the safe direction.
+    """
+    out = _git("rev-list", "--count", "HEAD..origin/main")
+    return int(out) if out.isdigit() else None
+
+
 def report():
     """What the guard sees, as (ok, lines)."""
     lines = []
     ok = True
     if in_linked_worktree():
-        lines.append("in a linked worktree: safe, whatever else is running.")
+        lines.append("in a linked worktree: safe from other sessions, "
+                     "whatever else is running.")
+        lines += stale_warning()
         return True, lines
     others = other_live_sessions()
     gone = foreign_staged_deletions()
@@ -169,6 +203,10 @@ def guard(what="building the app"):
         return
     ok, lines = report()
     if ok:
+        # A stale worktree passes the safety question and still wants saying,
+        # and guard() is the only one of these entry points a build calls.
+        for line in stale_warning():
+            print("  " + line, file=sys.stderr)
         return
     print("STOP: not safe %s in this checkout." % what, file=sys.stderr)
     for line in lines:
@@ -181,7 +219,8 @@ def guard(what="building the app"):
 
 if __name__ == "__main__":
     ok, lines = report()
+    stale = set(stale_warning())
     for line in lines:
-        print(("ok: " if ok else "unsafe: ") + line)
+        print(line if line in stale else ("ok: " if ok else "unsafe: ") + line)
     if not ok:
         print("\n" + worktree_command())
