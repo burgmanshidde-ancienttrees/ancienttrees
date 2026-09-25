@@ -2,9 +2,9 @@
   "city": "Graz",
   "country": "Austria",
   "status": "needs_curation",
-  "intro": "Graz's city government keeps a live register of protected trees, and twelve ship here across three clusters: nine in the city centre, from a Schlossberg maple to a Volksgarten trio to two Panoramagasse oaks of very different girth to a plane on Elisabethstrasse, and three more on the western side, a paid-entry pine and copper beech inside Schlosspark Eggenberg plus a free oak in a nearby public park. Most carry no recorded age, an honest gap stated rather than guessed past.",
+  "intro": "Graz's city government keeps a live register of protected trees, and thirteen ship here across three clusters: ten in the city centre, from a Schlossberg maple to a Volksgarten trio to two Panoramagasse oaks of very different girth to a plane on Elisabethstrasse, and three more on the western side, a paid-entry pine and copper beech inside Schlosspark Eggenberg plus a free oak in a nearby public park. Most carry no recorded age, an honest gap stated rather than guessed past.",
   "meta_description": "Graz's protected trees: a Volksgarten oak-and-plane cluster, two Panoramagasse oaks of very different girth, a pine and beech in the Eggenberg palace park.",
-  "question_meta": "Graz's most solidly dated protected tree is a field maple in the Augarten, already recorded in a 1956 survey. Its story, and eleven more.",
+  "question_meta": "Graz's most solidly dated protected tree is a field maple in the Augarten, already recorded in a 1956 survey. Its story, and twelve more.",
   "question_answer": "Graz's most solidly dated protected tree is the Augarten Field Maple, growing at the eastern edge of the Augarten park in the Jakomini district. Its formal legal protection dates to 1979, but Wikipedia's own record of Graz's protected trees cites an earlier source, a 1956 survey of the city's planted broadleaf trees, which already listed this exact maple as worth protecting. That gives it a documented floor of at least seventy years old, decades before most of Graz's other protected trees, whose designation dates cluster in 1979, 1990 and 2000 with no age ever published for the trees themselves. Two oaks on Panoramagasse, protected on the same day in July 1979, carry real 2015 field-measured girths (2.80 and 4.90 metres), and those measurements now date them: at the published growth rate for oak they come out at roughly 100 to 200 years and roughly 175 to 350, which puts the larger one older than the maple on the arithmetic while the maple keeps the better paper trail. Both are bands a century or more wide, because that is the honest width of a girth estimate.",
   "question_context": "This page is built on the City of Graz's own live Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), cross-checked tree by tree against Wikipedia's independently maintained 'Liste der Naturdenkmaler in Graz', which geocodes each entry separately and sometimes carries a real field measurement or historical citation the register itself lacks. This page publishes twelve trees that verified against two independent sources and pass the access test: nine around the city centre, spanning the Schlossberg hill, the Volksgarten park, the Augarten, Schillerplatz, Elisabethstrasse and the Panoramagasse hillside, and three more on the western side near Schlosspark Eggenberg, a UNESCO World Heritage palace park about 3.5km west, where a wider planting of ten designated trees yielded only one pine and one beech with documentation strong enough to publish, plus a free oak in a public park 900 metres from the palace gate. The remaining eight Eggenberg trees (five planes, three pines) share an address and a date but no individuating record, reading as one avenue rather than separate points. Several more candidates, a kindergarten Paulownia, a youth-care-home pair and a villa plane among them, were held back under this project's rule against sending visitors onto grounds without clear evidence they are open.",
   "faq": [
@@ -14,15 +14,15 @@
     },
     {
       "q": "Are Graz's protected trees free to see?",
-      "a": "Ten of the twelve, yes, all free. The other two, inside Schlosspark Eggenberg, need a paid ticket into the palace park."
+      "a": "Eleven of the thirteen, yes, all free. The other two, inside Schlosspark Eggenberg, need a paid ticket into the palace park."
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Not in one walk. The nine city-centre trees split into a Schlossberg-and-Volksgarten pairing within about a kilometre and a further Augarten, Schillerplatz, Elisabethstrasse and Panoramagasse outing. The Eggenberg pine and beech, inside the palace park about 3.5km west, and the free Annaplatz oak roughly 900 metres from its gate, form a genuinely separate second visit."
+      "a": "Not in one walk. The ten city-centre trees split into a Schlossberg-and-Volksgarten pairing within about a kilometre and a further Augarten, Schillerplatz, Elisabethstrasse and Panoramagasse outing. The Eggenberg pine and beech, inside the palace park about 3.5km west, and the free Annaplatz oak roughly 900 metres from its gate, form a genuinely separate second visit."
     },
     {
       "q": "Why does Graz protect trees with no recorded age?",
-      "a": "The city's Naturdenkmal register records a protection date, a species and an owner, but rarely a planting date or a trunk measurement; only three of the twelve trees here carry a documented girth. This page states that gap honestly rather than inventing a number, and welcomes a reader with a tape measure."
+      "a": "The city's Naturdenkmal register records a protection date, a species and an owner, but rarely a planting date or a trunk measurement; only three of the thirteen trees here carry a documented girth. This page states that gap honestly rather than inventing a number, and welcomes a reader with a tape measure."
     }
   ],
   "hero_tree_id": "grz_005",
@@ -450,6 +450,38 @@
       "notes": "Register (id 87) and Wikipedia's independent Naturdenkmal list agree on coordinates within 4.4m. Both sources record the species only at genus level ('Eiche'/oak), no Latin binomial in either, so species ships as 'Oak (Quercus, species not established)', matching this project's existing convention for an unidentified oak (see heerlen.json), per the publish-and-ask rule. Annaplatz confirmed by web search as a public park (near the Annakapelle chapel and Ansitz Rothenburg, used for community events such as yoga classes, maintained by Holding Graz's public-space staff), not a private plot despite the street-number-style address. No age or girth found. About 890m on foot from the Eggenberg Weymouth Pine/Copper Beech (grz_009/grz_010).",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by being the oak in Annaplatz, near the Annakapelle chapel, its exact species not established. It stands about nine hundred metres on foot from the Eggenberg park's pine and beech."
+    },
+    {
+      "id": "grz_013",
+      "name": "The Tegetthoffplatz Hornbeam",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Tegetthoffplatz, 8010 Graz",
+        "latitude": 47.076464,
+        "longitude": 15.459124,
+        "neighbourhood": "St. Leonhard"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz",
+        "https://commons.wikimedia.org/wiki/File:ID_256544Carpinus_betulus_294A5661.jpg"
+      ],
+      "access": "Free, on a public city square (Tegetthoffplatz)",
+      "transport": "Tegetthoffplatz tram stop (Line 1), right at the square",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Graz protected this hornbeam in 2019, and the register gives it nothing else: no age, no girth, no story beyond a plot number in the cadastral map of St. Leonhard. Most of Austria's monumental trees at least carry a measurement. This one carries only a square.\n\nThe tree stands on Tegetthoffplatz, a public square a short tram ride from the Elisabethstrasse cluster, and the only independent confirmation of exactly where is a photograph taken in December 2020, its own coordinates matching the register's point almost exactly. The photographer's caption places the tree against the backdrop of the Seebacher Gymnasium, but the school is only scenery: the hornbeam itself grows on open public ground, not the school's.\n\nNaturdenkmal designation in Austria protects a tree for what it already is rather than for a story attached to it, and Tegetthoffplatz's hornbeam is a case in point: nobody wrote down when it was planted, nobody has taped its trunk, and the closest thing to a document is the 2019 decree that made cutting it down illegal. If you have measured it, or know when it went in, tell us. Until then it stands on its own square, three hundred and fifty metres from its nearest neighbour on this list, waiting for someone to write the rest of its history.",
+      "how_to_recognise": "You can recognise it by being the only hornbeam on Tegetthoffplatz, with no plaque or measurement to go by. It stands on the open square, about 350 metres from the Elisabethstrasse plane.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
