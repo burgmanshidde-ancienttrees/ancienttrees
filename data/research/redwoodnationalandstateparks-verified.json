@@ -1,0 +1,52 @@
+[
+  {
+    "id": "rnp_001",
+    "name": "Big Tree (Big Tree Wayside)",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "roughly 1,500 years",
+    "age_min": 1200,
+    "age_max": 1800,
+    "girth_cm": 2255,
+    "height_m": 87,
+    "location": {
+      "address": "Big Tree Wayside, Newton B. Drury Scenic Parkway, Prairie Creek Redwoods State Park, Humboldt County, California",
+      "latitude": 41.37376,
+      "longitude": -124.01399,
+      "neighbourhood": "Prairie Creek Redwoods State Park, just north of the visitor center off the Newton B. Drury Scenic Parkway"
+    },
+    "verified_sources": [
+      "https://casualtrekkers.com/big-tree-wayside/",
+      "https://www.earthtrekkers.com/prairie-creek-redwoods-state-park/"
+    ],
+    "access": "Free (no separate fee; Prairie Creek Redwoods State Park has no general entrance fee); a very short paved path (about 100 yards to 2 minutes' walk) from the Big Tree Wayside parking lot off Newton B. Drury Scenic Parkway, to a viewing platform built to protect the roots.",
+    "transport": "No public transit; reached via US-101 and the Newton B. Drury Scenic Parkway, about 50 miles north of Eureka and 25 miles south of Crescent City.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two sources give slightly different height figures (286ft/87m per earthtrekkers vs roughly 296-300ft per other search snippets) and near-identical girth figures (23.75ft/74ft-round diameter converts consistently to about 22.5m circumference across sources), both agreeing on species, age (~1,500 years) and location; the height disagreement is noted rather than resolved, height_m here uses the earthtrekkers figure (87m/286ft) as the more specific citation. Reported elsewhere as the 15th largest coast redwood by volume (28,619 cubic feet), not independently confirmed here. Part of Prairie Creek's Circle Trail loop, near the Cathedral Trees and Corkscrew Tree."
+  },
+  {
+    "id": "rnp_002",
+    "name": "Corkscrew Tree",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Corkscrew Tree Trail, Newton B. Drury Scenic Parkway, Prairie Creek Redwoods State Park, Humboldt County, California",
+      "latitude": 41.386,
+      "longitude": -124.0135,
+      "neighbourhood": "Prairie Creek Redwoods State Park, about 2.3 miles up the Newton B. Drury Scenic Parkway from US-101, just north of Big Tree Wayside"
+    },
+    "verified_sources": [
+      "https://inspiredimperfection.com/adventures/corkscrew-tree-trail-prairie-creek-redwoods/",
+      "https://www.earthtrekkers.com/prairie-creek-redwoods-state-park/"
+    ],
+    "access": "Free; a very short (0.1 mile / about 1 minute) out-and-back trail from a small roadside pullout on the Newton B. Drury Scenic Parkway.",
+    "transport": "No public transit; reached via US-101 and the Newton B. Drury Scenic Parkway.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A cluster of several coast redwood trunks twisted around each other; earthtrekkers reports the belief that they grew from a single stump and twisted over time to make room for one another, which is a documented explanation of formation rather than our own inference. One source (earthtrekkers) notes it is smaller/less dramatic than photos suggest. Treated as ONE collectible ensemble point (one small pullout, one short path, one obvious place to stand), not as separate trees. NOTE: a different, unrelated 'corkscrew tree' feature exists about a mile up the new Crooked Trail at the O Rew Redwoods Gateway (North Coast Journal); that is NOT this tree and was not used as a source here. No age, height or girth figures found for the Prairie Creek Corkscrew Tree in either source; coordinates are an estimate from its stated distance up the parkway from Big Tree Wayside, not independently pinned, so marked approximate. THIS CONTAINER HAS ONLY 2 VERIFIED CANDIDATES so far against the usual 4-tree floor; Humboldt Redwoods State Park (Founders Tree, Rockefeller Forest) was researched separately as its own place per the brief and should not be merged in to pad this one."
+  }
+]

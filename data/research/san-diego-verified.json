@@ -1,0 +1,49 @@
+[
+  {
+    "id": "sdg_005",
+    "name": "The Twisted Tea Tree of Marston House",
+    "species": "Australian Tea Tree (Leptospermum laevigatum)",
+    "age_estimate": "roughly 120 years",
+    "age_min": 110,
+    "age_max": 125,
+    "location": {
+      "address": "Marston House Museum grounds, 3525 Seventh Avenue, Balboa Park, San Diego, CA 92103",
+      "latitude": 32.7416766,
+      "longitude": -117.1578341,
+      "neighbourhood": "Balboa Park (northwest corner, near Hillcrest)"
+    },
+    "verified_sources": [
+      "https://www.sandiegoreader.com/news/2025/nov/10/balboa-park-has-more-than-these-ten-trees/",
+      "https://sandiegohistory.org/journal/1990/april/garden-2/"
+    ],
+    "access": "Free to view on the Marston House Museum grounds (part of Balboa Park); the house museum itself charges admission but the garden path this tree stands on is on the museum's public grounds",
+    "transport": "Balboa Park, northwest corner at Seventh Avenue and Upas Street; bus routes serve Sixth/Seventh Avenue, roughly 10-15 minute walk from central Balboa Park",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A single, low, wide-spreading, multi-trunk specimen with a prostrate growth habit (trunks grow nearly horizontal, occasionally rooting where a limb touches ground), described by San Diego Reader (2025, directly fetched via Wayback Machine after a live 403) as gnarled and 'crazy, twisty' -- park ranger Kim Duclo says it was 'likely planted by Balboa Park's godmother Kate Sessions around 1906.' The San Diego History Center's own 1990 article on the Marston Garden, drawn from a 1989 professional plant survey, independently lists 'Leptospermum laevigatum / Australian Tea Tree' as present in the garden, confirming species and existence, though it gives no planting date of its own -- so age (~1906/120 years) rests on the single Reader source only and is flagged accordingly. Visually distinctive rather than large: a genuinely photogenic, low gnarled canopy people compare to fantasy-novel trees (nicknamed both 'Gandalf' and separately considered for other names by visitors quoted in the piece; no single settled nickname, so the writer should pick a plain descriptive name rather than adopt a reporter's one-off joke). On the Marston House Museum's own public grounds, on the paved walkway just past the entrance -- this is public parkland (Balboa Park), not a private garden, though the house itself charges for interior tours."
+  },
+  {
+    "id": "sdg_006",
+    "name": "The Moreton Bay Fig of Palm Canyon",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 90 years (planted mid-1930s)",
+    "age_min": 85,
+    "age_max": 95,
+    "age_basis": "source",
+    "location": {
+      "address": "Palm Canyon footbridge, near Alcazar Garden, Balboa Park, San Diego, CA 92101",
+      "latitude": 32.73115,
+      "longitude": -117.15230,
+      "neighbourhood": "Balboa Park, central mesa"
+    },
+    "verified_sources": [
+      "https://www.sandiegoreader.com/news/2025/nov/10/balboa-park-has-more-than-these-ten-trees/",
+      "https://www.ktua.com/workpost/historic-palm-canyon-balboa-park/"
+    ],
+    "access": "Free; stands beside a public footbridge and steps into Palm Canyon, part of Balboa Park",
+    "transport": "Central Balboa Park, a short walk south of the Alcazar Garden and west of the Organ Pavilion; served by Balboa Park's free tram and multiple bus routes",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "NOT the same tree as sdg_001 (the famous Moreton Bay Fig by the Natural History Museum, planted 1915, confirmed via balboapark.org's own page, which gives that tree's own 1996 measurements: 78ft high, 123ft crown, 486in/12.3m girth -- checked directly to rule out a duplicate). This is a separate, younger Moreton Bay fig standing over Palm Canyon, visible from the wooden footbridge that crosses from near Alcazar Garden toward the Organ Pavilion. Per San Diego Reader (2025, directly fetched via Wayback Machine): 'massive root structure extends down into the canyon... planted in the 1930s or '40s,' with buttress roots that draw photographers and wedding parties into the canyon below. KTUA (a San Diego landscape-architecture firm with a historic-Balboa-Park focus), independently: 'Spectacular Moreton Bay fig trees were planted in the mid 1930s, with massive root structures reminiscent of flying buttresses extending down into the canyon' -- corroborates species, planting era and the exposed-buttress-root character without relying on the Reader piece. The Reader's nickname 'Abbey' (the author's own coinage, not an official or community name) is not adopted as the tree's project name; named instead by its location, per the site's naming convention. Location is the canyon-edge viewpoint near the footbridge; coordinate is an approximate estimate for that stretch of Palm Canyon, not a mapped GPS fix."
+  }
+]

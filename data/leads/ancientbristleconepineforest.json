@@ -1,0 +1,26 @@
+{
+  "country": "United States",
+  "note": "Verification pass 2026-09-26 (_us-parks-west batch). Delivered 1 tree (The Patriarch Tree), well short of the 4-tree floor, though the Patriarch may itself clear the single-famous-tree exception (largest bristlecone pine in the world). Great Basin National Park (Wheeler Peak bristlecone grove) was not researched this pass; the brief flagged it as context only since Prometheus is dead.",
+  "leads": [
+    {
+      "name": "Named/numbered bristlecones on the Methuselah Trail loop, Schulman Grove",
+      "status": "lead",
+      "reason": "The 4.5-mile Methuselah Trail carries numbered natural-history markers past several ancient specimens besides Methuselah itself; a follow-up pass could verify one or two of these as separate, non-withheld entries with defensible ages, since bristlecone growth-rate dating is well published for this species."
+    },
+    {
+      "name": "Wheeler Peak bristlecone grove, Great Basin National Park",
+      "status": "lead",
+      "reason": "A different park (Nevada) from the Ancient Bristlecone Pine Forest (California); not researched this pass beyond the brief's own note. Prometheus, once here, was cut down in 1964 and is dead; never an entry. Other named bristlecones in this grove were not checked."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Methuselah",
+      "reason": "The US Forest Service deliberately does not mark or disclose this tree's exact location, to protect it from vandalism (Wikipedia: 'Methuselah is not marked in the forest, to ensure added protection from vandals'). Hard rule 10 absolute: never publish a location its source deliberately withholds. The Methuselah Trail itself may be described as a trail (it is public and marked), but the specific tree must never be pinned or identified on any page."
+    },
+    {
+      "name": "Prometheus (WPN-114)",
+      "reason": "Cut down by a researcher in 1964; dead. Never an entry. Relevant only as context for Great Basin National Park's grove, per the brief."
+    }
+  ]
+}

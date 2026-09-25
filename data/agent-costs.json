@@ -8648,5 +8648,31 @@
    "trees": 0,
    "note": "Session work: processed reader submission 230 (Schone Eiche coordinate), converted DMS to decimal, updated the lead with a confirmed pin, checked preflight source requirement, replied asking for a baumkunde.de link or photo. No tokens spent on research (no network fetch cost beyond a few WebSearch/curl lookups that found nothing)."
   }
+ ],
+ "2026-09-26": [
+  {
+   "target": "_us-parks-west",
+   "kind": "verify",
+   "tokens": 259617,
+   "trees": 0,
+   "verified": 17,
+   "note": "Sequoia +5, Kings Canyon 3, Yosemite Mariposa 5, Redwood NSP 2, Humboldt 1, Patriarch 1. Methuselah (withheld) and Prometheus (dead) blocked. Estimate was ~75k; ran 3.5x over."
+  },
+  {
+   "target": "_us-parks-east",
+   "kind": "verify",
+   "tokens": 289419,
+   "trees": 0,
+   "verified": 13,
+   "note": "Congaree 2, Smokies 2, Olympic +3, Gettysburg 4, Antietam 2. Caught the Lincoln-address honey locust (dead ~2024) and the Quinault Big Cedar (dead 2016)."
+  },
+  {
+   "target": "_us-city-landmarks",
+   "kind": "verify",
+   "tokens": 253904,
+   "trees": 0,
+   "verified": 9,
+   "note": "Savannah 1, Charleston 1, Seattle 2, Philadelphia 3, San Diego 2. ~28k per verified tree; the webpage-list angle mostly found tour PDFs, not landmark lists."
+  }
  ]
 }

@@ -1,0 +1,23 @@
+{
+  "leads": [
+    {
+      "name": "Black gum near the visitor center",
+      "species": "Black Gum (Nyssa sylvatica)",
+      "note": "HistoryNet's 'Trees: Silent Survivors' piece lists a black gum 'along the road just north of the visitor center' among Antietam's witness trees, with no further detail. No coordinate, age or size found this pass. Black gum is notably long-lived (the species record exceeds 650 years), which would make this worth a follow-up pass if a precise location can be found.",
+      "sources": ["https://historynet.com/trees-silent-survivors/"]
+    },
+    {
+      "name": "Additional witness trees, unspecified",
+      "species": "Unknown",
+      "note": "Multiple sources note 'still other witness trees may yet be found' at Antietam and refer to trees 'hidden in the woods' beyond the Burnside Sycamore and West Woods oaks. Not actionable without a name or location.",
+      "sources": ["https://historynet.com/trees-silent-survivors/"]
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Third West Woods witness tree (unspecified species)",
+      "species": "Unknown",
+      "reason": "DEAD. Standing beside the two living West Woods white oaks (atb_002), described by both sources checked as 'dead but still standing'. Never delivered as a collectible entry per the never-publish-a-dead-tree rule."
+    }
+  ]
+}

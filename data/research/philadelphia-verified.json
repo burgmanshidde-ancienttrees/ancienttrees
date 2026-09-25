@@ -1,0 +1,73 @@
+[
+  {
+    "id": "phl_002",
+    "name": "The Bender Oak",
+    "species": "Bender Oak, a natural hybrid of Scarlet Oak x Northern Red Oak (Quercus x benderi)",
+    "age_estimate": "up to 250 years",
+    "age_min": 150,
+    "age_max": 250,
+    "girth_cm": 669,
+    "location": {
+      "address": "Morris Arboretum, 100 East Northwestern Avenue, Chestnut Hill, Philadelphia, PA 19118 (stop 1 of the Great Trees tour, near the historic hilltop mansion site)",
+      "latitude": 40.0882721,
+      "longitude": -75.2212804,
+      "neighbourhood": "Chestnut Hill, Philadelphia"
+    },
+    "verified_sources": [
+      "https://www.morrisarboretum.org/sites/default/files/2023-01/tours-great-trees.pdf",
+      "https://www.treesandshrubsonline.org/articles/quercus/quercus-x-benderi/"
+    ],
+    "access": "Paid entry (Morris Arboretum & Gardens, University of Pennsylvania, general admission charged); open every day except Thanksgiving, Christmas Eve, Christmas and New Year's",
+    "transport": "Chestnut Hill, northwest Philadelphia; SEPTA Chestnut Hill West line to Allen Lane, then about a 15-20 minute walk, or bus routes serving Northwestern Ave",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources, both directly fetched. Morris Arboretum's own official numbered 'Great Trees' tour brochure (stop 1): 'Possibly 250 years old, the tree provided a dramatic entrance to the Morris garden and hilltop home,' a naturally occurring hybrid between scarlet oak and red oak. Trees and Shrubs Online (International Dendrology Society reference site) independently gives measurements: 'a tree at the Morris Arboretum may be up to 250 years old, towering 26.5m tall, with its canopy spreading over 30m across on a trunk 213cm in diameter' (girth derived as pi x 213cm = 669cm, recorded per the girth field rule). The same reference notes a second, separate Bender Oak once grew at Swarthmore College (also Philadelphia area), estimated over 350 years old, but that one was felled before 2009 and is not this tree; not to be confused. Species is a rare cultivated hybrid first described in 1903 in Breslau, so 'naturally occurring hybrid' does not mean wild-origin, it means it arose spontaneously rather than being deliberately bred; still a genuine, ancient-for-its-kind specimen. Location is Morris Arboretum's own tour stop 1, near the historic mansion site at the garden's entrance; exact GPS pin not available from these sources, hence approximate."
+  },
+  {
+    "id": "phl_003",
+    "name": "The Katsura-Tree of Morris Arboretum",
+    "species": "Katsura-tree (Cercidiphyllum japonicum)",
+    "age_estimate": "roughly 124 years (planted around 1902)",
+    "age_min": 120,
+    "age_max": 128,
+    "age_basis": "source",
+    "location": {
+      "address": "Morris Arboretum, 100 East Northwestern Avenue, Chestnut Hill, Philadelphia, PA 19118 (stop 7 of the Great Trees tour)",
+      "latitude": 40.0882721,
+      "longitude": -75.2212804,
+      "neighbourhood": "Chestnut Hill, Philadelphia"
+    },
+    "verified_sources": [
+      "https://www.morrisarboretum.org/sites/default/files/2023-01/tours-great-trees.pdf",
+      "https://www.phillymag.com/news/2020/05/01/oldest-philadelphia-trees/"
+    ],
+    "access": "Paid entry (Morris Arboretum & Gardens, University of Pennsylvania); open every day except Thanksgiving, Christmas Eve, Christmas and New Year's",
+    "transport": "Chestnut Hill, northwest Philadelphia; SEPTA Chestnut Hill West line to Allen Lane, then about a 15-20 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources, both directly fetched. The Arboretum's own official 'Great Trees' tour brochure (stop 7): 'Native to Japan and China, planted around 1902 by the Morrises. One of the largest of its kind in North America, this plant is the signature tree of the Arboretum.' Philadelphia Magazine's own 2020 feature on the city's oldest/notable trees independently calls it 'the largest tree in Philadelphia' at Morris Arboretum. A separate Arboretum blog post ('Supporting Our 127-Year-Old Katsura-Tree', found via search, not fetched directly) gives a slightly newer age figure consistent with the ~1902 planting date; using the tour brochure's planting date as the primary basis rather than the blog's headline number, which would already be a year or two stale by the time this ships. Bright yellow/apricot fall foliage with a cinnamon/brown-sugar smell, per the brochure. Do not confuse with phl_001 (Bartram's Ginkgo), a different tree and species at a different site (Bartram's Garden, southwest Philadelphia)."
+  },
+  {
+    "id": "phl_004",
+    "name": "The Weeping Hemlock at the Meadowbrook Gate",
+    "species": "Weeping Canada Hemlock (Tsuga canadensis f. pendula, aka 'Sargentii')",
+    "age_estimate": "roughly 150 years",
+    "age_min": 140,
+    "age_max": 160,
+    "location": {
+      "address": "Morris Arboretum, Meadowbrook Avenue gate, Chestnut Hill, Philadelphia, PA 19118",
+      "latitude": 40.0882721,
+      "longitude": -75.2212804,
+      "neighbourhood": "Chestnut Hill, Philadelphia"
+    },
+    "verified_sources": [
+      "https://www.morrisarboretum.org/blog/legacy-weeping-hemlock",
+      "https://www.morrisarboretum.org/sites/default/files/2023-01/tours-great-trees.pdf"
+    ],
+    "access": "Paid entry (Morris Arboretum & Gardens, University of Pennsylvania); open every day except Thanksgiving, Christmas Eve, Christmas and New Year's",
+    "transport": "Chestnut Hill, northwest Philadelphia; SEPTA Chestnut Hill West line to Allen Lane, then about a 15-20 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "IMPORTANT, caught this pass: the printed 'Great Trees' tour brochure (2023, stop 11, Swan Pond Cluster) describes a Weeping Canada Hemlock as 'a rare tree, approximately 100 years old... displayed at the Centennial Exposition at Fairmount Park [1876]', but that specific specimen (planted near Morris/Swan Pond) was brought down by a wet snowstorm on 2024-02-13, per the Arboretum's own blog post 'Legacy Weeping Hemlock Taken Out by Snowstorm', directly fetched. That post also confirms a SISTER tree survives: two hemlocks from the 1876 Centennial Exposition (shown by Parsons & Sons nursery, 'creating a sensation among horticulturists') were planted on the Morris estate, one near the pond (now dead) and one near the Key Fountain, relocated in 1947 to 'its new home at the Meadowbrook Avenue gate' -- confirmed alive in the same 2024/2025 blog post. This record is for the SURVIVING Meadowbrook Avenue gate tree, not the one in the printed brochure/map, which would ship a dead tree if followed uncritically. Age estimated at roughly 150 years (first shown 1876, so ~150 years old in 2026), broader than the brochure's now-superseded 'approximately 100 years old' (written when the tour was assembled, referring to the pond tree). Exact GPS for the Meadowbrook Avenue gate not available from these sources; approximate."
+  }
+]
