@@ -10,6 +10,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-25 (session) - Why night runs end silent: they will now say it themselves, and the one-hour push credential
+
+Hidde asked why the runs make few trees while usage runs hard. Two fixes from that reading.
+
+- **A silent run now leaves its reason behind.** Three windows in a row (09-24 17:02, 19:35, 22:48) ended with a stub "ended without saying anything". The 22:48 one was four attempts of 8 to 23 minutes, each ending "success" of its own accord, and the console hides why. The execution file does hold each attempt's closing message, so `run_health.py` now puts it in the stub, one line per attempt, with urls carrying credentials, JWTs, gh/sk tokens and any long opaque string scrubbed. The next silent window tells us what it thought it was doing.
+- **The push credential dies after one hour.** Found by the 01:18 run on 09-25: the token the action hands the agent has a 3600-second life and nothing renews it, so anything still working after an hour cannot push. The prompt now says: commit locally, do not retry, keep working. The Run health step already pushes every local commit with its own token; it no longer skips that push when it has nothing of its own to record, so stranded commits always get out.
+- **Correction to what I told Hidde this morning:** the "11 verified trees waiting on the shelf" were written and published by the same night's run (Utrecht, Zwolle, Rotterdam, Salzburg, Graz; 3,348 to 3,370). Only two remain, both deliberately held. Write-first already works; the real brake is that the ready pile is empty, so every run starts with verification.
+
 
 ## 2026-09-25 (session) - Mallorca opens as an island page, 6 trees beyond Palma
 

@@ -534,6 +534,15 @@ jobs:
               costs the whole window; data/fetch-blocklist.json lists the known
               ones and passcheck.py prints it.
 
+            A PUSH THAT FAILS WITH "Invalid username or token" IS NOT YOUR
+            PROBLEM. The push credential this step hands you lives exactly one
+            hour and nothing renews it, so any attempt still working after an
+            hour meets it. Your commits are safe: the workflow's own Run health
+            step pushes every local commit with its own token when the window
+            ends. So commit locally, do not retry the push, do not debug git,
+            and keep working. Seen 2026-09-25, when a productive run spent its
+            last stretch on four commits it could not get out.
+
             APPEND TO LOG.md BEFORE YOU EXIT, always, and above all when you
             shipped nothing. Two or three sentences: which rung you picked, which
             city and why, what you actually did, and where it stopped. A run that
@@ -1012,14 +1021,17 @@ jobs:
           # the same failure the claim system was built around, since a claim
           # is only visible to other runs once it reaches the remote.
           git add data/run-health.json LOG.md data/in-flight.json
-          git diff --cached --quiet && { echo "nothing to record"; exit 0; }
           # The action revokes its own app token on the way out, so the remote
           # url it configured is dead by now. Push as the workflow itself.
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote set-url origin \
             "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git commit -q -m "Run health: what the $(date -u +%H:%M) run did with its window"
+          # No early exit when nothing is staged: this push is also what carries
+          # the agent's own commits out when its one-hour push credential died
+          # mid-run (2026-09-25), so it has to happen even with no record to add.
+          git diff --cached --quiet || \
+            git commit -q -m "Run health: what the $(date -u +%H:%M) run did with its window"
           # --autostash: the agent leaves unstaged files behind, and a plain
           # rebase refuses to run with those present. Seen on three runs on
           # 2026-08-19/20. It only survived because the remote had not moved;
