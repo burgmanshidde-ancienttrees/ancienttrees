@@ -606,7 +606,10 @@ PROBE_MIN_TURNS = 5         # below this it never really started: usage limit, n
 # day of ~250 machine minutes, so 1800 was leaving most of the week unused.
 # Minutes are a proxy for tokens and a poor one; his meter is the truth, and
 # the limit-death brake still yields the moment the real wall is felt.
-WEEK_BUDGET_MINUTES = 3000  # backstop only; the death brake is the real governor
+# And to 5000 / 900 the same day (Hidde: "ik ben zelf de persoon die ramt met
+# usage dus zet maar hoger, ik wil weer stoppen zelf voor de rest van de week").
+# Back to 3000 / 520 when he starts working in sessions again.
+WEEK_BUDGET_MINUTES = 5000  # backstop only; the death brake is the real governor
 # And the week has to be spread, not raced. A weekly budget alone front-loads:
 # the loop would spend all thousand minutes by Wednesday and leave the back half
 # of the week with a machine that starts and dies in seconds, which is the same
@@ -618,7 +621,7 @@ WEEK_BUDGET_MINUTES = 3000  # backstop only; the death brake is the real governo
 # maar 2 keer zo groot"), the week left at 1800: on 09-25 two knocks died in
 # seconds on the day's share while the week stood at 1075 of 1800. At 520 a
 # day the week can run out before Sunday; that is the intended backstop.
-DAY_BUDGET_MINUTES = 520   # was 260, a seventh of the week
+DAY_BUDGET_MINUTES = 900   # was 260, then 520, a seventh of the week
 LIMIT_DEATH_WINDOW_HOURS = 6   # how far back to look for "the window is shut right now"
 LIMIT_DEATHS_TO_BACK_OFF = 2   # one can be a blip; two in six hours is the wall
 PROBE_MINUTES = 20          # kept for the older callers that read it
