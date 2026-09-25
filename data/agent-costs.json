@@ -8625,5 +8625,21 @@
     "brief_wrong": true
    }
   ]
- }
+ },
+ "2026-09-25": [
+  {
+   "target": "sev_005 (Seville)",
+   "kind": "photo",
+   "tokens": 0,
+   "trees": 0,
+   "note": "Session work: judged and published a reader-submitted sighting photo for El Gran Capitan via sightings_publish.py (no photo hunting tokens, direct pixel judgement + script apply)."
+  },
+  {
+   "target": "higashi-hiroshima",
+   "kind": "scout",
+   "tokens": 0,
+   "trees": 0,
+   "note": "Session work: deduplicated 13 of 27 leads against already-published trees (coordinate and facility+species matching) before dispatching a verify pass, no tokens spent."
+  }
+ ]
 }
