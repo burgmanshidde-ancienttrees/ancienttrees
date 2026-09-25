@@ -10,6 +10,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 (session) - FOR HIDDE: one paste, the walks table
+
+Your own walks now have their server half: supabase/walks.sql (record in
+DECISIONS.md 2026-09-26). No screen yet, on purpose. It needs one paste:
+supabase/PENDING.sql into the Supabase SQL editor, then run
+`python3 scripts/account_delete_test.py` to prove deletion still takes
+everything. sqlcheck.py names `walks` as missing until then. Checked with the
+real Postgres parser locally; not yet run against a database.
+
 ## 2026-09-26 (session) - Audit: is everything a person does on the account?
 
 Hidde asked for a last check that nothing a user does lives only on the device.

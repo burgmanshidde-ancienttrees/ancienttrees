@@ -109,6 +109,10 @@ def main():
         {"user_id": uid, "tree_id": "ams_001", "name": "Test", "url": "/x"}], token=token)[0]
     made["visited"] = call("rest/v1/visited", "POST", [
         {"user_id": uid, "tree_id": "ams_001"}], token=token)[0]
+    made["walks"] = call("rest/v1/walks", "POST", [
+        {"user_id": uid, "name": "Delete test walk", "km": 1.2, "minutes": 18,
+         "stops": [{"treeId": "ams_001", "lat": 52.37, "lng": 4.89, "name": "Test"}]}],
+        token=token)[0]
     made["profiles"] = call("rest/v1/profiles", "POST", [
         {"user_id": uid, "display_name": "Delete Test",
          "avatar_url": f"{BASE}/storage/v1/object/public/avatars/{uid}/avatar.jpg"}],
@@ -141,6 +145,7 @@ def main():
     print("\nwhat is left")
     left = {}
     for table, col in [("saves", "user_id"), ("visited", "user_id"),
+                       ("walks", "user_id"),
                        ("profiles", "user_id"), ("reports", "reporter")]:
         c, rows = call(f"rest/v1/{table}?select={col}&{col}=eq.{uid}")
         left[table] = len(rows) if isinstance(rows, list) else f"? {c}"
