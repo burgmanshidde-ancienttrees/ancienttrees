@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.21 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.22 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -191,6 +191,27 @@ The mid-tier of the pyramid (tree → city → country), added v1.5 on Hidde's i
 
 ---
 
+### Contract L — US state page  `/united-states/[state-slug]` (v1.22)
+
+Approved by Hidde in session 2026-09-26 ("dit klinkt slim", then "doe 1 en 2"). The United States is the site's largest search country (14,190 impressions in 28 days, 1% CTR), and its tree queries are shaped by STATE as often as by city: "oldest tree in ohio", "oldest tree in indiana", "oldest tree in minnesota" arrive with no page of that shape to land on. A state page sits between the country page and its places, the way a country page sits between the site and its cities.
+
+| Element | Specification |
+|---|---|
+| Title (≤60 chars) | `Oldest Trees in [State]: [N] to Visit`, N being the tree count. Falls back to `Oldest Trees in [State]`. It describes what the page ranks, oldest first, and never claims to know every old tree in the state. |
+| Meta description (≤155) | The state's tree story in one line + its oldest or strongest tree as teaser. Counts only as `{trees}` / `{places}` placeholders, never frozen. |
+| H1 | `Oldest trees in [State]` |
+| First two sentences | The oldest tree we map in the state, with name, place and age, then how many trees and places we map there. Quotable standalone (P2). |
+| Body | Intro (100-150 words, unique per state and written from that state's own trees, P3; automated writing allowed per the 2026-08-13 ruling) → the state map → every place we map in the state (the design-system rows, count + face) → the species that grow there → the "[N] oldest trees we map in [State]" block, lower bound first, capped at ten → links to relevant collections |
+| Schema | CollectionPage + ItemList (places) + BreadcrumbList |
+| Internal links (min) | Every published place in the state; /united-states; 1+ collection |
+| Breadcrumbs | Home → United States → [State]. A US place page in a published state shows Home → United States → [State] → [Place]. |
+| Publish gate | 3+ published trees AND 2+ published places in the state AND an intro (data/states/[slug].json). A one-place state page is that place's page with a state name on it (P3, the same reasoning as Contract G's three-city gate). |
+| Which state a place is in | `data/us-states.json`, one line per US place. The build fails on a US place missing from it, so a newly opened place cannot silently fall out of its state. |
+| Inbound | /united-states lists every state page. Every US place page in a published state links it through the breadcrumb. |
+| URL | Nested under the country, never root-level: `/hawaii` is already a place and `/georgia` would collide with the country. |
+
+---
+
 ### Contract J — Translated city set  `/[lang]/[city]` (v1.13)
 
 Approved by Hidde in session 2026-08-10 ("wat als we een paar spaanse paginas
@@ -307,6 +328,7 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 
 ## CHANGELOG
 
+- **v1.22 (2026-09-26):** Contract L, the US state page, approved by Hidde in session ("dit klinkt slim", then "doe 1 en 2") after the US was shown to be the largest search country at 1% CTR with state-shaped queries ("oldest tree in ohio") and no page of that shape. The gate is two places as well as three trees, tightened from the three-tree gate he was shown, because seven states (New York, Nevada, Illinois, Louisiana, Florida, Idaho, Minnesota) hold a single place and would have been duplicates of it. Ten states qualify on day one.
 - **v1.21 (2026-09-24):** Contract A takes the app's tree page, approved by Hidde after seeing it as a mockup at phone and desktop width ("keep what you need for seo - but show me your proposed design for mobile web and desktop so i can approve", then "the rest you can build"), with one change of his own: "the take me there big button should be open in app cta". Above the fold is now the photograph with the map in its corner and a two-column fact card; location, access and the nearest station moved below the story, into one getting-there block, because the app puts them there and a reader deciding whether to go reads the picture and the age first. The map is still a single pin, now an inset that swaps with the photograph on a phone and a card beside the story on a desktop. Kept for search and unchanged: the breadcrumbs (a thin line on every width, as AllTrails prints them), 2-3 nearby trees, the city and question-page links, the TouristAttraction and BreadcrumbList schema. Removed as web-only repetition: the duplicate facts list, the directions note, the walk link, the app pitch, the two help boxes and the per-tree Sources list (Hidde, same day: "verwijder maar is ruis"; /sources credits every register).
 - **v1.20 (2026-09-23):** Contract H's five-tree gate becomes waivable per park, approved by Hidde in session on being told the National Mall stood at four: "gooi national mall ook maar live prima 3 voor n keer". Three is his floor and it is written into the code as `PARK_WAIVER_MIN`, because a waiver with no floor arrives later as a one-tree park page wearing his approval. The waiver lives in the park's own intro file as a `below_gate` block carrying who approved it and his exact words, never as a lowered constant: an exception nobody can trace is indistinguishable from the gate rotting, and this one is a decision about one park rather than a change of mind about thin pages. `parkPageIsAllowed()` in site/src/lib/parks.ts is the single place all four render sites ask, after the intro is in hand, so the page, the index, the home shelf and the tree-page link cannot disagree about which parks exist. What does not move: the intro is still required, so a waived park is a park somebody wrote about, and the title still has to state the count it actually holds, which `checkParkCountPromises()` enforces. First and so far only waiver: the National Mall at four trees, where the fifth does not exist at our bar rather than being one research pass away.
 - **v1.19 (2026-09-19):** Contract G's title names TREES instead of cities, and its single-oldest-tree block becomes a ranked ten. Approved by Hidde in session ("als je denkt dat dat beter is doe het"), after the measurement that forced it: country pages carried 410 impressions and FIVE clicks in ten days across the eight that clear ten impressions, while the tree-shaped national queries were landing elsewhere entirely. "oldest tree in the netherlands" reaches /nijmegen and /eindhoven at position 4; "oldest tree in switzerland" reaches /cremines, a village page of fifteen impressions, at 6. /netherlands held 602 trees and named one of them, under a title advertising 56 cities.

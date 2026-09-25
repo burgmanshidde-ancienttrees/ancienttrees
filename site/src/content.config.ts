@@ -259,6 +259,20 @@ const countries = defineCollection({
   }),
 });
 
+// Contract L, US state pages (blueprint v1.22, 2026-09-26). The intro is the
+// gate: no file, no page. Which place is in which state is data/us-states.json,
+// read by site/src/lib/us-states.ts, so a place does not carry it itself.
+const states = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "../data/states" }),
+  schema: z.object({
+    state: z.string(),
+    slug: z.string(),
+    country: z.string(),
+    meta_description: z.string(),
+    intro: z.string(),
+  }),
+});
+
 // Named collectionPages (not "collections") because Astro's content config
 // reserves that name for the top-level export mapping every collection.
 const collectionPages = defineCollection({
@@ -306,4 +320,4 @@ const collectionPages = defineCollection({
   }),
 });
 
-export const collections = { cities, parks, species, countries, collectionPages };
+export const collections = { cities, parks, species, countries, states, collectionPages };
