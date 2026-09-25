@@ -5,6 +5,18 @@
       "species": "Elm (Ulmus sp.)",
       "location": {"address": "Naast basketbalveld, Heemraadssingel, Rotterdam", "latitude": 51.916034, "longitude": 4.454998},
       "reason": "Only one source found (LRMB register nr 1686293, planted_band 1900-1910, owner_category gemeente, visitable ja, visible onbekend). Two search attempts (general web search and rotterdam.nl's own monumental-trees highlight page) turned up no independent second source naming this specific elm; the municipal highlight page lists a nearby cedar and other trees but not this one. History field in the register is itself 'onbekend' (unknown). Stands beside a public basketball court in what appears to be public parkland along the Heemraadssingel, so access looks fine, but the two-independent-source bar for existence/species/age is not met. Worth a future pass or a reader tip; do not re-run the exhausted general search without a new angle."
+    },
+    {
+      "name": "Venijnboom",
+      "species": "Yew (Taxus baccata)",
+      "location": {"address": "Bij grasveld, achterzijde Essenlaan, Rotterdam (near Arboretum Trompenburg)", "latitude": 51.921554, "longitude": 4.518557},
+      "reason": "Access unclear. LRMB register nr 1691669, planted_band 1900-1910, owner_category stichting (matching the Trompenburg foundation's ownership category used on other entries in this same cluster), visitable 'ja', but the place text ('by the lawn, rear side of Essenlaan') does not explicitly say it is inside the ticketed Arboretum Trompenburg grounds, and it sits roughly 150-250m from the vak-numbered specimens (Vak C/G/H/M) that are clearly inside the paid garden. Only one source found; no independent second source names this specific yew. Delivered three other Trompenburg specimens this pass (rot_013 to rot_016) and stopped at the four-candidate exposure limit before resolving whether this one is inside the garden or on a public strip along Essenlaan. Worth checking on a future pass: if it is inside the garden, it joins the same cluster; if it is on the public street side, it may need its own access note."
+    },
+    {
+      "name": "Moerascypres",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "location": {"address": "Aan Groene Wetering, bij sloot, zijde overtuin Trompenburg, Rotterdam", "latitude": 51.921173, "longitude": 4.518673},
+      "reason": "Private land, hard rule 10 question. LRMB register nr 1691670, planted_band 1900-1910, owner_category 'particulier' (private), visitable 'onbekend', visible 'ja'. The place text ('by the ditch, at the back-garden side of Trompenburg') suggests it may stand in a private garden adjoining the arboretum rather than inside the paid public grounds, though 'visible: ja' and the Groene Wetering canal path suggest it might be viewable from a public towpath. Dutch Wikipedia's Arboretum Trompenburg article separately mentions the 1870s Zocher redesign introduced 'swamp cypress with knee roots' as a general garden feature, but does not name this specific tree, so that is not usable as a link between the two (bridge-claim rule). Not delivered this pass; needs an access check (OSM path tags along the Groene Wetering, or a reader on the ground) before it can ship, and only one source exists regardless."
     }
   ],
   "blocked": [
