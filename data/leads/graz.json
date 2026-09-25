@@ -11,6 +11,18 @@
    "species": "Copper Beech (Fagus sylvatica 'Purpurea')",
    "location_hint": "register_id 97, object_id 44, ND1146, Grabenstraße 90c, Geidorf, 47.088276,15.435508 (register/Wikipedia agree within 4m), protected 01.08.1991. Register owner field: oeffentlich (public), publishable.",
    "why_not_shipped": "2026-08-31 pass: the address is 'Villa Washington', a former mayoral residence now home to several businesses (an architecture firm, a tax consultancy, hotel-consulting and real-estate-management offices) on a hillside site. Nearest OSM feature is a public parking amenity on Grabenstraße, and the register marks the owner as public, but no source found this pass confirms the driveway or grounds are open to a passer-by rather than only to visiting clients/tenants. Worth a proper access check (does a public path cross the grounds, or is it gated) before shipping; the tree itself, species and protection date are otherwise solidly two-sourced."
+  },
+  {
+   "name": "Elisabethstraße 11b Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "location_hint": "ND987, Geidorf, 47.074311,15.448454 (register/Wikipedia agree closely), protected 1979-07-11 (the first, oldest protection batch). No girth or age figure in the register or Wikipedia. About 500m from grz_011 (The Elisabethstrasse Plane) and 200m from Hugo-Wolf-Gasse 11 Platane (ND1001, also unmined, same area).",
+   "why_not_shipped": "2026-09-25 pass: the address is the former Breunerhof/Pittonihof/Palais Schreckenthal complex (baugeschichte.at), rebuilt 1834-35, later a dairy operation, with modern additions in the 1960s. The site reads as privately held (baugeschichte.at explicitly says 'not identified as a public institution... privately held') and no source found this pass confirms whether the ginkgo stands on a street frontage a passer-by could reach or inside a private courtyard. Worth a proper access check (a street-view look, or an OSM access tag on the parcel) before shipping; species, protection date and coordinate are otherwise solid from the register/Wikipedia join."
+  },
+  {
+   "name": "Am Ring Roßkastanie (Waltendorf)",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "location_hint": "ND1137, Waltendorf, 47.065842,15.462293, protected 1990-09-05. About 400m from grz_006 (The Schillerplatz Plane).",
+   "why_not_shipped": "2026-09-25 pass: 'Am Ring' in Waltendorf reads as an ordinary residential street (real-estate listings for flats 'Am Ring', a webcam for a new apartment building at 'Am Ring 5-7'), not a boulevard, so it is not safe to assume the tree stands on public verge rather than in a front garden; no source found this pass settles it either way. The only photographic evidence is four Commons images all dated 2014-05-02, twelve years old, which is thin for 'alive now' on its own. Needs both a fresher confirmation (a recent photo, aerial imagery, or local news) and a real access answer before it could ship."
   }
  ],
  "blocked": [
@@ -37,6 +49,12 @@
    "species": "Blutbuche (Fagus sylvatica 'Purpurea') and Hemlocktanne (Tsuga sp.)",
    "location_hint": "register_ids 78/124 and 80/91, ND1129 and ND1131, both Hilmteichstraße 104, Wenisbuch, ~47.083,15.463, about 2.3km from centre. Register owner field: oeffentlich (public), publishable for both.",
    "reason": "2026-08-31 pass: the address is the Leechwald-Villa (also called Villa Attems, built 1869), now operated as a TU Graz guesthouse for university guests and visiting researchers, per TU Graz's own guesthouse page and grazwiki/baugeschichte.at. No source found confirms the grounds are open to a passer-by rather than only to booked guests, even though the villa sits beside the public Leechwald forest and Hilmteich lake park. Blocked rather than shipped as a lead, consistent with the schools/institutions caution in hard rule 10: a guesthouse is closer to a hotel with a reception desk than to open parkland. Could be revisited if a future pass finds evidence the specific trees stand on the public forest side of the boundary rather than the guesthouse's own garden."
+  },
+  {
+   "name": "Leechgasse 52 pair (Rotbuche ND1123 + Roteiche ND1124, Villa Hartenau)",
+   "species": "Common Beech (Fagus sylvatica) and Red Oak (Quercus rubra)",
+   "location_hint": "ND1123 47.077356,15.457150 and ND1124 47.077774,15.456833, Geidorf, both protected 1989-06-21. Real 2015 girth measurements survive in Wikipedia's Beschreibung field: Rotbuche 4.40m, Roteiche 5.70m (both measured at breast height) -- a shame to leave on the table, the Roteiche in particular would be one of the biggest measured trunks in the whole city dataset. About 250m from grz_011 (The Elisabethstrasse Plane).",
+   "reason": "2026-09-25 pass: the address is Villa Hartenau (built c.1880 for Felix Baron Bruselle, later home to Prince Alexander von Battenberg/Graf Hartenau), which now serves as the seat of at least one foreign honorary consulate (Bulgaria; one source also names Kazakhstan) in a park with a fountain and a gate. A search result describing public guided tours of the villa specifies they 'meet at the garden gate', which reads as the park normally being closed and opened only for scheduled events, not as a place a passer-by can walk into. No source found this pass confirms any part of the park is open to the public day-to-day. Blocked rather than left as an open lead: a foreign consulate's private grounds is the institutional case hard rule 10 exists to keep strangers out of, not merely an inconvenient gate. Could be revisited if a future pass finds the two trees are visible and identifiable from Leechgasse itself (the view-only exception), or finds evidence the garden hosts regular public hours."
   }
  ]
 }
