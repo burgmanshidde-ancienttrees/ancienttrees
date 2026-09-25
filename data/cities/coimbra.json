@@ -19,11 +19,11 @@
     },
     {
       "q": "Are Coimbra's remarkable trees free to visit?",
-      "a": "Two are. The Karri Knight and the Bunya Knight stand in the free, public Mata Nacional de Vale de Canas forest. The bunya pine in the University Botanical Garden needs a paid garden ticket, and the camphor tree at ESAC stands on a college campus whose general walk-in access was not independently confirmed; ask the school first."
+      "a": "Two are. The Karri Knight and the Bunya Knight stand in the free, public Mata Nacional de Vale de Canas forest. The bunya pine in the University Botanical Garden needs a paid garden ticket, and the camphor tree at ESAC stands on a college campus whose general walk-in access was not independently confirmed; ask the school first. The Lovers' Banyan Tree stands in the Quinta das Lágrimas gardens, which charge a modest entry fee."
     },
     {
       "q": "Why does a Portuguese city grow so many Australian trees?",
-      "a": "Coimbra's institutions filled their grounds with imported conifers and eucalypts in the second half of the nineteenth century, the same decades the university's botanical garden and the Vale de Canas plantings both date from. Three of Coimbra's four remarkable trees are Australian species planted within a few decades of each other."
+      "a": "Coimbra's institutions filled their grounds with imported conifers and eucalypts in the second half of the nineteenth century, the same decades the university's botanical garden and the Vale de Canas plantings both date from. Four of Coimbra's five remarkable trees are Australian species planted within a few decades of each other, including the Moreton Bay fig at Quinta das Lágrimas, grown from a seed exchange with the Sydney Botanic Garden."
     }
   ],
   "trees": [
@@ -153,6 +153,39 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "how_to_recognise": "You can recognise it by its enormous crown, wider than the tree is tall (34.5m across, 28m high), on a trunk over 8.5m round. It stands on the ESAC agricultural college campus at Bencanta, behind the railway station."
+    },
+    {
+      "name": "The Lovers' Banyan Tree",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "story": "Europe's second favourite tree of 2025 started life as a seed traded with Sydney. In the 19th century an aristocratic tree collector at Quinta das Lágrimas swapped seeds with the Sydney Botanic Garden, and this Moreton Bay fig is what came of it: a huge trunk, buttress roots spreading over the ground and a canopy that drops aerial roots towards it. That habit is why everyone calls it a banyan. Botanically it is not one, and nobody seems to mind.\n\nThe setting is older than the tree by five centuries. It grows beside the Fountain of Lovers, in the gardens that Portuguese tradition gives to the story of Pedro I and Inês de Castro, the 14th-century romance that ended with her murder and has been retold ever since. A tree planted in the 1800s has become part of a legend it arrived far too late to witness, which is what happens when you grow in the right place.\n\nIn the 2025 European Tree of the Year it came second with 43,427 votes, nominated by the Fundação Inês de Castro, and it is one of the most photographed single trees in Portugal. The 19th-century planting puts it somewhere around 130 to 160 years old. Nobody has published a girth or a height we could confirm, so if you measure it, tell us.",
+      "how_to_recognise": "You can recognise it by the aerial roots hanging from the canopy and the buttress roots around its huge trunk, the one giant fig in the garden. It stands beside the Fountain of Lovers in the Quinta das Lágrimas gardens.",
+      "age_estimate": "about 150 years",
+      "age_min": 130,
+      "age_max": 160,
+      "age_basis": "source",
+      "location": {
+        "address": "Quinta das Lágrimas gardens, Rua António Augusto Gonçalves, Santa Clara, Coimbra, Portugal",
+        "latitude": 40.197306,
+        "longitude": -8.435219,
+        "neighbourhood": "Santa Clara, Coimbra"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2025/the-lovers-banyan-tree",
+        "https://www.quintadaslagrimas.pt/en/services/gardens/1077/"
+      ],
+      "curation_status": "flagged",
+      "access": "Paid entry. Stands inside the Quinta das Lágrimas gardens, a historic estate and hotel grounds with a small public admission fee (reports of around 1 euro for the adjoining Fontes dos Lagrimas fountain area; the wider gardens charge a modest ticket too); open daily to visitors, not restricted to hotel guests.",
+      "transport": "About a 20-25 minute walk south of central Coimbra (Santa Clara side of the Mondego); local buses serve the Quinta das Lágrimas stop",
+      "location_precision": "approximate",
+      "id": "cbr_005",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "paid_entry": true
     }
   ]
 }
