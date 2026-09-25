@@ -2285,6 +2285,22 @@ def _check_explicit_park_names(parks_ts_source):
     return out
 
 
+def check_every_tree_has_a_recognition_line():
+    """Every published tree carries how_to_recognise, because the app's feed
+    has always sent it as a string and scripts/feedshape.py refuses the deploy
+    the moment it goes null (installed apps decode it as non-optional).
+    2026-09-26: bhg_006 went live without one and blocked every deploy for
+    the evening, the US state pages among them. Caught here it costs a
+    sentence before the push instead of a red build after it."""
+    out = []
+    for f in sorted(glob.glob("data/cities/*.json")):
+        for t in json.load(open(f)).get("trees", []):
+            if not (t.get("how_to_recognise") or "").strip():
+                out.append(f"{os.path.basename(f)[:-5]}: {t.get('id')} has no how_to_recognise; "
+                           "the app feed requires one (BRIEF_WRITING.md, drawn only from the entry)")
+    return out
+
+
 def check_every_us_place_has_a_state():
     """Contract L (blueprint v1.22, 2026-09-26): data/us-states.json names the
     state of every published US place, and the build fails on one it does not
@@ -2328,7 +2344,8 @@ def main():
                 + check_one_common_name_per_species()
                 + check_register_says_the_tree_is_gone()
                 + check_park_words_match()
-                + check_every_us_place_has_a_state())
+                + check_every_us_place_has_a_state()
+                + check_every_tree_has_a_recognition_line())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
