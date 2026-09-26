@@ -219,7 +219,10 @@ struct TreeDetail: View {
                     // a dead end, and this page had one.
                     if mine == nil { discoverMore }
                     if let p = tree.photo, let c = Photos.credit(p) {
-                        Text(c)
+                        // "Photo:" in front, as the website writes it: a bare
+                        // name at the foot of a page reads as a signature, not
+                        // a credit (Nadia, 2026-09-26: "shouldn't it say photo by").
+                        Text("Photo: \(c)")
                             .font(.system(size: 10))
                             .foregroundStyle(Brand.inkSoft.opacity(0.45))
                             .lineLimit(1)

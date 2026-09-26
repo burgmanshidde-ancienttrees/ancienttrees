@@ -340,7 +340,11 @@ struct MapSearch: View {
             out.append(CityRow(slug: slug, name: ts[0].city, country: ts[0].country,
                                count: ts.count, lat: la / n, lng: ln / n))
         }
-        return out.sorted { $0.count > $1.count }
+        // The most VISITED first, as the website sorts it (Hidde, 2026-09-26:
+        // "niet met de meeste bomen maar de meest bezochte pagina's"). The
+        // figure is the website's, sent in browse.json; tree count breaks ties.
+        let pop = { (slug: String) in catalogue.facets.popularity(city: slug) }
+        return out.sorted { (pop($0.slug), $0.count) > (pop($1.slug), $1.count) }
     }
 
     private var countries: [(name: String, count: Int, cities: Int)] {

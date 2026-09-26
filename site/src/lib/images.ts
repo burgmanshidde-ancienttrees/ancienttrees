@@ -565,6 +565,26 @@ export function cityFaceTree<T extends TreeLike>(
   return hero ? hero.tree : null;
 }
 
+/** The tree that fronts a country: the pinned one when a person set it, else
+ * the face of its biggest city that has one. One helper for /countries, the
+ * country page and /api/browse.json, so the three cannot disagree. */
+export function countryFaceTree<T extends TreeLike>(
+  faceTreeId: string | null | undefined,
+  rankedCities: { hero_tree_id?: string | null; trees?: T[] }[],
+): T | null {
+  if (faceTreeId) {
+    for (const c of rankedCities) {
+      const pinned = faceRank((c.trees ?? []).find((t) => t.id === faceTreeId));
+      if (pinned) return pinned.tree;
+    }
+  }
+  for (const c of rankedCities) {
+    const t = cityFaceTree(c);
+    if (t) return t;
+  }
+  return null;
+}
+
 /** The tree that fronts a species: the pinned one when a person set it, else
  * the best in the set. A pin ignores `exclude`, because somebody chose it. */
 export function speciesFaceTree<T extends TreeLike>(

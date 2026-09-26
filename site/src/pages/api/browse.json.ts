@@ -29,12 +29,13 @@
 // quietly disagree with the website's.
 import { getCollection } from "astro:content";
 import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../../lib/trees";
-import { cityFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../lib/images";
+import { cityFaceTree, countryFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../lib/images";
 import { groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey } from "../../lib/parks";
 import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
 import { collectionEntries } from "../../lib/collection-rank";
 import { citySearchNames } from "../../lib/city-aliases";
+import { cityPopularity } from "../../lib/popularity";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -59,6 +60,7 @@ export async function GET() {
   // via search-index.json; the app never got them. The list is an ANSWER, so
   // it travels in the feed rather than being copied into Swift.
   const searchNames = citySearchNames();
+  const popularity = cityPopularity();
 
   const cityFacets = cities.map((c) => ({
     slug: c.id,
@@ -66,6 +68,9 @@ export async function GET() {
     country: c.data.country,
     count: (treesBySlug.get(c.id) ?? []).length,
     ...(searchNames[c.id]?.length ? { aka: searchNames[c.id] } : {}),
+    // How visited the page is, so the app's empty search offers the places
+    // people actually go to, the same as the website (lib/popularity.ts).
+    ...(popularity.get(c.id) ? { popularity: popularity.get(c.id) } : {}),
     // The city page, the map sidebar, /cities, /countries and the app all show
     // this one picture now. hero_tree_id is how a person overrides it.
     face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, trees: renderableTrees(c) })),
@@ -123,17 +128,18 @@ export async function GET() {
       .filter((x) => x.data.country === c.data.country)
       .sort((a, b) => renderableTrees(b).length - renderableTrees(a).length
         || a.data.city.localeCompare(b.data.city));
-    let face: string | null = null;
-    for (const city of inCountry) {
-      face = faceId(cityFaceTree({ hero_tree_id: city.data.hero_tree_id, trees: renderableTrees(city) }));
-      if (face) break;
-    }
+    const face = faceId(countryFaceTree(c.data.face_tree_id,
+      inCountry.map((city) => ({ hero_tree_id: city.data.hero_tree_id, trees: renderableTrees(city) }))));
     return {
       slug: c.data.slug ?? c.id,
       name: c.data.country,
       intro: c.data.intro,
       count: trees.length,
       face,
+      // Where the country map opens, as [[west, south], [east, north]], when
+      // its trees would frame an ocean (Martinique, Tenerife, Hawaii). An
+      // answer rather than a rule, so the app opens on the same ground.
+      ...(c.data.map_focus ? { focus: c.data.map_focus } : {}),
     };
   }).filter((c) => c.count > 0);
 

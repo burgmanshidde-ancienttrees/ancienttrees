@@ -117,10 +117,12 @@ export const SEARCH_WIDGET_JS = `
     }
     html += '<div class="ats-head">Near you</div>' +
             row('Trees near me', 'open the map at your location', '/explore#near', 'ats-near');
-    // "Start here" rather than "Popular": we cannot see what is popular from
-    // the browser, and the deepest pages are an honest proxy for the best
-    // afternoon. Sorted by tree count, so it maintains itself.
-    var top = IDX.c.slice().sort(function(a, b) { return b.n - a.n; }).slice(0, 5);
+    // The most VISITED pages, not the deepest (Hidde, 2026-09-26): `v` is
+    // their search traffic, refreshed daily. Tree count only breaks ties and
+    // fills in for pages nobody has visited yet. The app sorts the same way.
+    var top = IDX.c.slice().sort(function(a, b) {
+      return (b.v || 0) - (a.v || 0) || b.n - a.n;
+    }).slice(0, 5);
     html += '<div class="ats-head">Start here</div>';
     html += top.map(function(c) {
       return row(c.city, c.n + ' trees &middot; ' + escT(c.country), '/' + c.u);

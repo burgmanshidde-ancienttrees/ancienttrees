@@ -156,6 +156,10 @@ struct TreeMap: UIViewRepresentable {
     /// default: the Map tab opens on YOU and a tree's own page opens on the
     /// tree, and neither wants to be reframed around whatever else is nearby.
     var fitsTrees = false
+    /// The box to fit in place of the trees' own, when the website names one:
+    /// a country with trees overseas opens on its mainland (browse.json
+    /// `focus`, 2026-09-26). The overseas trees stay on the map.
+    var fitBox: (sw: CLLocationCoordinate2D, ne: CLLocationCoordinate2D)? = nil
     /// What the map is currently looking at, reported back so the list under it
     /// can be a list of what you are looking at.
     var region: Binding<MKCoordinateRegion?>? = nil
@@ -342,6 +346,21 @@ struct TreeMap: UIViewRepresentable {
     /// to the narrow phone because that is what a full-screen map is; a 72 point
     /// thumbnail that borrows the 375 figure opens five times too close, which
     /// turns an inset meant to show a SETTING into a picture of tarmac.
+    /// The centre and zoom that fit a box into `size` points, Web Mercator
+    /// on 512-point tiles (see zoom(forMeters:) for why 512).
+    static func fit(sw: CLLocationCoordinate2D, ne: CLLocationCoordinate2D,
+                    in size: CGSize) -> (CLLocationCoordinate2D, Double) {
+        func y(_ lat: Double) -> Double { log(tan(.pi / 4 + lat * .pi / 360)) }
+        let dLng = max(ne.longitude - sw.longitude, 0.0001)
+        let dY = max(y(ne.latitude) - y(sw.latitude), 0.0001)
+        let w = max(Double(size.width), 50), h = max(Double(size.height), 50)
+        let zoom = min(log2(w * 360 / (512 * dLng)), log2(h * 2 * .pi / (512 * dY)))
+        let midY = (y(ne.latitude) + y(sw.latitude)) / 2
+        let lat = (2 * atan(exp(midY)) - .pi / 2) * 180 / .pi
+        return (CLLocationCoordinate2D(latitude: lat, longitude: (sw.longitude + ne.longitude) / 2),
+                max(1, min(20, zoom)))
+    }
+
     static func zoom(forMeters m: CLLocationDistance, latitude: Double = 52,
                      width: Double = 375) -> Double {
         // 512, not 256. MapLibre's zoom is defined against 512-point tiles, and
@@ -716,6 +735,13 @@ struct TreeMap: UIViewRepresentable {
         /// Whether the shot on screen was taken at a real fix or at a fallback.
         /// See TreeMap.focusIsFix and shouldAim().
         var aimedWithFix = false
+        /// The fitBox the camera last aimed at. The feed that carries it can
+        /// land after a page opens, so a box that ARRIVES re-aims once.
+        var aimedFitBox: [Double]? = nil
+        /// And the size of the map when it did. A map fitted to a box while
+        /// it is still being laid out at no size fits with the padding alone
+        /// and opens on a continent (the France preview, 2026-09-26).
+        var aimedSize: CGSize = .zero
         /// Set the moment a finger moves the camera. After that the map belongs
         /// to whoever is holding the phone and nothing here aims it again.
         var userMoved = false
@@ -784,17 +810,35 @@ struct TreeMap: UIViewRepresentable {
             // every drag re-framed the camera under somebody's thumb, and a map
             // that jumps while you are reading the list under it is worse than
             // a map that opened slightly wrong.
-            guard TreeMap.shouldAim(userMoved: userMoved, aimed: aimed,
+            let box = parent.fitBox.map { [$0.sw.latitude, $0.sw.longitude, $0.ne.latitude, $0.ne.longitude] }
+            let boxArrived = !userMoved && parent.fitsTrees
+                && (box != aimedFitBox || map.bounds.size != aimedSize)
+                && map.bounds.width > 1 && map.bounds.height > 1
+            guard boxArrived || TreeMap.shouldAim(userMoved: userMoved, aimed: aimed,
                                     selecting: parent.selected != nil,
                                     coverage: coverage, aimedCoverage: aimedCoverage,
                                     hasFix: parent.focusIsFix, aimedWithFix: aimedWithFix)
             else { return }
+            aimedFitBox = box
+            aimedSize = map.bounds.size
             aimedCoverage = coverage
             aimedWithFix = parent.focusIsFix
 
             // The set, when the caller asked for the set. Padding on three
             // sides for air, and the sheet's own coverage under it so nothing
             // is fitted into the part nobody can see.
+            // A NAMED box (a country's mainland) is aimed by arithmetic rather
+            // than setVisibleCoordinateBounds, which on a map that has not
+            // drawn yet answered France's 13 degrees with zoom 1.6, a view of
+            // half the northern hemisphere (measured 2026-09-26).
+            if parent.fitsTrees, let named = parent.fitBox {
+                aimed = true
+                let (centre, zoom) = TreeMap.fit(sw: named.sw, ne: named.ne,
+                    in: CGSize(width: map.bounds.width - 88,
+                               height: map.bounds.height - map.contentInset.bottom - 120))
+                map.setCenter(centre, zoomLevel: zoom, animated: false)
+                return
+            }
             if parent.fitsTrees,
                let box = TreeMap.box(of: parent.trees.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng) }
                                      + parent.mine.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng) }) {

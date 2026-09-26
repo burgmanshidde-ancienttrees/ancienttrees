@@ -10,7 +10,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
 import { collectionEntries, MODES } from "../lib/collection-rank";
 import { COUNTRY_MIN_CITIES, GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific, speciesPageSlugs } from "../lib/species";
-import { usablePhoto, imgSrcset, cityFace, cityFaceTree, metaImageUrls, ogImageUrl, NO_PHOTO_SVG } from "../lib/images";
+import { usablePhoto, imgSrcset, cityFace, countryFaceTree, metaImageUrls, ogImageUrl, NO_PHOTO_SVG } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
 import { mapHead, countryMapScript, countryName } from "../lib/map";
@@ -246,12 +246,9 @@ const listElements = ranked.map((c, i) => ({ "@type": "ListItem", position: i + 
 // (2026-09-24). Country pages carried no og:image at all, so every one of
 // them, Poland included, shared as the site logo while its card had a photo.
 const countryFacePhotoUrl = (() => {
-  for (const c of ranked) {
-    const t = cityFaceTree({ hero_tree_id: c.city.data.hero_tree_id, trees: renderableTrees(c.city) });
-    const url = t ? usablePhoto(t)?.url : null;
-    if (url) return url;
-  }
-  return null;
+  const t = countryFaceTree(intro.data.face_tree_id,
+    ranked.map((c) => ({ hero_tree_id: c.city.data.hero_tree_id, trees: renderableTrees(c.city) })));
+  return t ? usablePhoto(t)?.url ?? null : null;
 })();
 const countryOgImage = countryFacePhotoUrl
   ? `\n<meta property="og:image" content="${esc(ogImageUrl(countryFacePhotoUrl))}">` : "";
@@ -270,7 +267,8 @@ const mapScript = countryMapScript(
     count: c.count,
     markers: renderableTrees(c.city).map((t) => ({ lat: t.location.latitude!, lng: t.location.longitude! })),
   })),
-  intro.data.map_frame
+  intro.data.map_frame,
+  intro.data.map_focus
 );
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>

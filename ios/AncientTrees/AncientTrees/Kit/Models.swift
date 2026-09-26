@@ -305,6 +305,13 @@ public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
     /// only. The website's list, sent in the feed, so both searches find the
     /// same places. Absent on every facet but cities.
     public let aka: [String]?
+    /// Where a country's map opens, [[west, south], [east, north]], when its
+    /// trees would frame an ocean: France's Martinique, Spain's Tenerife,
+    /// Hawaii. Decided on the website (data/countries map_focus). Countries only.
+    public let focus: [[Double]]?
+    /// How visited a city's page is (search clicks, then impressions), so the
+    /// empty search offers the places people go to. Cities only.
+    public let popularity: Int?
 
     public var id: String { slug ?? name }
 }
@@ -358,10 +365,19 @@ public struct BrowseFacets: Sendable {
 
     public func face(city slug: String) -> String? { cityBySlug[slug]?.face }
     public func aka(city slug: String) -> [String] { cityBySlug[slug]?.aka ?? [] }
+    public func popularity(city slug: String) -> Int { cityBySlug[slug]?.popularity ?? 0 }
     public func face(country name: String) -> String? { countryByName[name]?.face }
     public func face(species commonName: String) -> String? { speciesByName[commonName]?.face }
     public func intro(species commonName: String) -> String? { speciesByName[commonName]?.intro }
     public func intro(country name: String) -> String? { countryByName[name]?.intro }
+    /// The mainland box a country map opens on, as south-west and north-east
+    /// corners, or nil to frame the trees themselves.
+    public func focus(country name: String)
+        -> (sw: (lat: Double, lng: Double), ne: (lat: Double, lng: Double))? {
+        guard let f = countryByName[name]?.focus, f.count == 2,
+              f[0].count == 2, f[1].count == 2 else { return nil }
+        return (sw: (lat: f[0][1], lng: f[0][0]), ne: (lat: f[1][1], lng: f[1][0]))
+    }
 }
 
 /// `/api/version.json`, the cheap call that says whether anything changed.

@@ -12,6 +12,7 @@ import { cityIsRenderable, slugify } from "../lib/trees";
 import { groupTreesBySpecies, SPECIES_MIN_TREES } from "../lib/species";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { citySearchNames } from "../lib/city-aliases";
+import { cityPopularity } from "../lib/popularity";
 
 export async function GET() {
   const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
@@ -30,7 +31,10 @@ export async function GET() {
   // the widget already walks these rows once per keystroke.
   const searchNames = citySearchNames();
 
-  const c: { city: string; country: string; n: number; u: string; a?: string[] }[] = [];
+  const popularity = cityPopularity();
+  // `v` is how visited the page is (see lib/popularity.ts), for the empty
+  // search box's "Start here"; absent on a page with no search traffic.
+  const c: { city: string; country: string; n: number; u: string; a?: string[]; v?: number }[] = [];
   // `i` is the tree's own id, carried since 2026-08-30 so anything holding an
   // id can resolve it to a name and a url without a second request.
   //
@@ -45,8 +49,9 @@ export async function GET() {
   for (const entry of allCities) {
     const d = entry.data;
     const alt = searchNames[entry.id];
+    const v = popularity.get(entry.id);
     c.push({ city: d.city, country: d.country, n: d.trees.length, u: entry.id,
-             ...(alt && alt.length ? { a: alt } : {}) });
+             ...(alt && alt.length ? { a: alt } : {}), ...(v ? { v } : {}) });
     for (const tree of d.trees) {
       t.push({ n: tree.name, c: d.city, u: `${entry.id}/${slugify(tree.name)}`, i: tree.id });
     }
