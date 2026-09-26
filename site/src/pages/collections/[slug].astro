@@ -65,6 +65,10 @@ if (!coll.data.generated) {
 }
 
 const bands = rankedBands(coll, citiesBySlug);
+// The "oldest" ranking modes state age.min-to-age.max in the note; the card
+// also shows the tree's own age_estimate in tree-meta, and the two can
+// disagree (REVIEW.md BLOCKER, 2026-09-26). Suppress the redundant one there.
+const ageMode = coll.data.generated === "oldest" || coll.data.generated === "oldest_per_place";
 
 let entryCount = 0;
 const listElements: { "@type": string; position: number; name: string; url: string }[] = [];
@@ -105,7 +109,7 @@ const headExtra = ldScript(graph) + (isDraft ? '\n<meta name="robots" content="n
         <h2>{band.heading}</h2>
         {band.rows.map((r) => (
           <Fragment>
-            <TreeCard tree={r.tree} citySlug={r.citySlug} treeSlug={r.slug} note={r.note} />
+            <TreeCard tree={r.tree} citySlug={r.citySlug} treeSlug={r.slug} note={r.note} omitAge={ageMode} />
             <p class="coll-citycta"><a href={`/${r.citySlug}`}>{r.city} &rarr;</a></p>
           </Fragment>
         ))}
