@@ -14,6 +14,7 @@ import path from "node:path";
 import { DATA } from "./data-dir";
 import { BASE_URL } from "./schema";
 import { cityHasQuestionPage } from "./question-page";
+import { fitTitle } from "./title";
 
 export interface TreeTranslation {
   name: string;
@@ -2642,7 +2643,10 @@ export function fallbackCityTranslation(city: any): CityTranslation {
     title: `Ancient Trees in ${d.city}`,
     meta_description: d.meta_description ?? "",
     intro: d.intro ?? "",
-    question_title: `What is the oldest tree in ${d.city}?`,
+    // A long park name (Great Smoky Mountains National Park, 36 chars) can
+    // push the full phrase past TITLE_MAX with nothing here to shorten it,
+    // unlike the English page's own fitTitle chain. Same shorter fallback.
+    question_title: fitTitle([`What is the oldest tree in ${d.city}?`, `Oldest tree in ${d.city}`]),
     question_meta: d.question_meta ?? "",
     question_answer: d.question_answer ?? "",
     question_context: d.question_context ?? "",

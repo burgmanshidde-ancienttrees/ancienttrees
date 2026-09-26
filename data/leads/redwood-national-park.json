@@ -1,12 +1,31 @@
 {
   "country": "United States",
-  "note": "Verification pass 2026-09-26 (_us-parks-west batch). Delivered 2 trees (Big Tree Wayside, Corkscrew Tree), both in Prairie Creek Redwoods State Park, well short of the 4-tree floor. Time-boxed pass did not reach the Redwood National Park section proper (Lady Bird Johnson Grove, Tall Trees Grove) or Jedediah Smith Redwoods, which would be the natural next candidates. Hyperion, the Grove of Titans and any tree whose location is deliberately withheld were correctly never searched for, per hard rule 10 and the brief's own instruction.",
+  "note": "Verification pass 2026-09-26 (follow-up, _us-parks-west batch). Picked up from a prior pass that delivered only 2 trees (Big Tree Wayside, Corkscrew Tree, both Prairie Creek Redwoods SP). This pass added 3 more, all confirmed with tree-level GPS from famousredwoods.com plus a corroborating second source: Stout Tree (rnp_003, Stout Grove, Jedediah Smith Redwoods SP), Boy Scout Tree (rnp_004, Jedediah Smith Redwoods SP), and the Howard Libbey Tree / Tall Tree (rnp_005, Tall Trees Grove, Redwood National Park proper). The place now has 5 verified trees, clearing the 4-tree floor. Hyperion and the Grove of Titans were correctly never searched for (hard rule 10, deliberately withheld locations).",
   "leads": [
     {
-      "name": "Lady Bird Johnson Grove (not individually researched)",
+      "name": "Lady Bird Johnson Grove",
       "status": "lead",
-      "reason": "Named grove with a well-known loop trail in Redwood National Park proper; likely holds a nameable specimen but not reached this pass. Worth a follow-up verify pass with a fresh 4-candidate budget."
+      "reason": "Named memorial grove and popular 1-mile loop trail in Redwood National Park proper, dedicated by LBJ in 1969. Not individually researched this pass or the last: it reads as a grove/loop experience (a dedication plaque and a walk through old growth) rather than one obviously named specimen tree, so it may not clear the 'one collectible point' bar without finding a specifically named tree within it. Worth a follow-up look with a fresh candidate budget, searching specifically for any individually named tree along the loop rather than the grove as a whole."
+    },
+    {
+      "name": "Simpson-Reed Grove / Peterson Memorial Trail",
+      "status": "lead",
+      "reason": "An accessible, wheelchair-friendly old-growth loop in Jedediah Smith Redwoods SP off US-199, not checked this pass for a specifically named individual tree. Could be a good low-effort follow-up (paved, ADA-friendly access is a genuine access-honesty plus) if a named specimen turns up."
+    },
+    {
+      "name": "Nugget Tree (Tall Trees Grove)",
+      "status": "lead",
+      "reason": "The world's third-tallest tree at the time of the 1963 National Geographic survey, standing near the Howard Libbey Tree (rnp_005) in the same Tall Trees Grove. Not delivered as a separate entry this pass because Tall Trees Grove reads as ONE collectible destination (one trailhead, one permit, one short loop) with Howard Libbey as its obvious named specimen; adding Nugget as a second entry in the same tiny grove risks padding rather than genuinely separate destinations. Revisit only if a later pass finds Nugget has its own clearly distinct viewing point worth a second trip."
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "name": "Hyperion",
+      "reason": "Current tallest tree in the world, standing near Tom McDonald Creek close to the Tall Trees Grove. NPS deliberately withholds its exact location and actively discourages visitors after off-trail bushwhacking damaged the surrounding old growth; permanently excluded per hard rule 10."
+    },
+    {
+      "name": "Grove of Titans",
+      "reason": "A cluster of massive coast redwoods in Jedediah Smith Redwoods SP whose off-trail location was deliberately kept secret for years to protect the understory from trampling; even though a boardwalk now exists to part of it, treat per hard rule 10 guidance already applied to this park and skip, consistent with the brief's explicit instruction not to search for it."
+    }
+  ]
 }
