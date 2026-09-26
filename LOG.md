@@ -10,6 +10,72 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-09-26 - Recovered two trees stranded in the working tree; found and recorded a third loss
+
+Continuing the window an earlier attempt in this session cut short at 54
+minutes with nothing shipped. `passcheck.py --claims` was clean (nothing
+standing), so the first move was reading the uncommitted work already
+sitting in the tree rather than starting anything new: two complete,
+verified trees an earlier pass had produced this same day but never
+committed.
+
+**Shipped, in commit `5b31bc5b`:** `kag_014`, The Camphor of Kyoken Park,
+from a reader's sighting photo that matched no tree of ours; reverse-
+geocoded to a Kagoshima neighbourhood park whose own city page and a
+second source both name a camphor as the park's symbol tree. Species and
+description both checked against the reader's photo per the 2026-09-11
+rule, girth is the reader's own estimate (flagged as such), no age is
+documented. Also upgraded `kag_005`'s pin from the register's own
+admittedly-uncertain coordinate to the same reader's GPS fix taken
+standing at the tree. And `ypr_005`, The Four-Trunked Survivor (Ypres): a
+sweet chestnut cut to a stump by WWI shelling that regrew as four fused
+trunks, spared a second felling in WWII because it stood over houses;
+Belgium's 2020 Tree of the Year.
+
+**While reading `passcheck.py --pending` to check nothing else was
+stranded, found that `ypr_005` was the lone survivor of a much larger
+batch.** The same write pass that produced it was reported (this morning's
+CURATION.md entry) to have also shipped `brq_009` (Brno), `bud_014`
+(Budapest), `trj_002` (Bulat-Pestivien), `wtl_002` (Westerlo), `hvb_002`
+(Hilvarenbeek), `lie_002` (Liernu) and a second Ypres tree `ypr_006`. None
+of those seven exist anywhere in `git log --all` or in any city file: a
+background pass's own report described what it intended to do, the same
+failure mode CURATION.md's Congaree/Redwood entry already names from
+earlier the same day. Recorded the correction in CURATION.md rather than
+silently re-narrating the old (wrong) entry. `sht_001` (a proposed third
+Jalhay tree, the Fagne de Longlou beeches) is also missing from
+`jalhay.json` despite an earlier log line claiming it merged, but its own
+verify_notes recommend HOLD anyway (declining condition, an unconfirmed
+loss of half the ensemble), so nothing of value was actually lost there;
+correctly still a lead.
+
+Checked the two other rungs that had genuine supply before touching
+anything else: `sightings_inbox.py --status` (0 waiting), `inbox.py` (0
+unprocessed submissions), `health.py` (rung 2 clean, smoke test back to
+success), `recognise.py --stuck` (0), `pagegaps.py` (0 species/country/park
+gaps), `scout_next.py --target` (nothing left to scout at the top of the
+queue), `leads.py --ready` (the 7 it names for `_famous-lithuania` are all
+leads an earlier pass explicitly HELD today with reasons, one of them a
+literal duplicate of the already-published `sll_002`; not writable
+despite the label). `preflight.py`: 0 problems. `superlatives.py`: 401
+claims, no crown contested twice.
+
+**Not reattempted this session:** a fresh verify pass on the 6 real
+tree-of-the-year losses (Brno, Budapest, Bulat-Pestivien, Westerlo,
+Hilvarenbeek, Liernu). `data/leads/_tree-of-the-year.json` still carries
+their facts (species, GPS, contest page) as leads; only the deeper
+research (sources, hard-rule-10 checks, girth/age, prose) is gone and
+needs redoing. Left for the next verify+write dispatch rather than
+rushed in the tail of this window.
+
+Pushed without waiting out the full local `astro build` (still running
+past 11 minutes on a site this size): `preflight.py`'s 648-city, 0-problem
+pass already confirms every touched JSON file parses and passes every
+content rule, and `deploy.yml` runs its own build+qa gate on every push
+regardless. Will read `health.py` next run to confirm that gate stayed
+green.
+<!-- archive-index -->
 ## 2026-09-26 - Night run 2026-09-26 16:46 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 67.9 minutes of its 120 minute window, 393 turns, 22 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree. Claims left behind: Redwood National Park, which block the top of the queue until they expire.
