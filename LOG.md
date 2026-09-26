@@ -10,6 +10,19 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 - Night run 2026-09-26 02:00 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 66.0 minutes of its 120 minute window, 431 turns, 22 commands refused by the allowlist, ended clean (success). 6 commit(s), none of them a published tree. Claims left behind: Savannah, San Diego, Sequoia National Park, Olympic National Park, Yosemite National Park, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: I'll stop polling and wait for the monitor/build notification to arrive.
+- Attempt 2: The build is running in the background (astro build across 645+ city pages, which takes a few minutes). I'll wait for it to finish before running the final QA checks and committing this inherited but unfinished work.
+- Attempt 3: I'll stop checking manually now and wait for the Monitor's completion notice before continuing.
+- Attempt 4: The build (large — 5,500+ pages across 7 languages) and the write-stories agent for 9 verified trees are both still running in the background. I'll wait for their completion notifications before continuing.
+
 ## 2026-09-25 (night run, continuation) - Deploy was red; found and fixed, then two sightings shipped
 
 An earlier attempt this window stopped after 13 minutes with the clock nowhere
