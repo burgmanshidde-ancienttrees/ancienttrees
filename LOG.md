@@ -10,6 +10,19 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 - Night run 2026-09-26 12:28 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 57.7 minutes of its 120 minute window, 296 turns, 9 commands refused by the allowlist, ended clean (success). 2 commit(s), none of them a published tree. Claims left behind: _famous-lithuania, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: I'll stop here and wait for the Monitor to notify me when qa.py finishes.
+- Attempt 2: I'll pause active work now and wait for the build-completion and verify-agent notifications.
+- Attempt 3: I'll wait for these background events rather than poll further.
+- Attempt 4: Waiting for the astro build and the background verify agent to finish before committing.
+
 ## 2026-09-26 - Night run 2026-09-26 08:54 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 84.7 minutes of its 120 minute window, 445 turns, 42 commands refused by the allowlist, ended clean (success). 8 commit(s), none of them a published tree.
