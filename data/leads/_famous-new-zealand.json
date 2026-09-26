@@ -66,7 +66,9 @@
     "https://commons.wikimedia.org/wiki/File:Old_Abert_from_N_(upward_view).jpg",
     "https://commons.wikimedia.org/wiki/File:Old_Abert_from_W.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "akl_001",
+   "reason": "RESOLVED 2026-09-26: already live as akl_001 (Old Albert) in data/cities/auckland.json, coordinates match to within 3 metres (-36.8311084605075,174.79785561561584 vs this lead's -36.831093,174.797897). This IS the same tree, not a fresh candidate."
   },
   {
    "name": "Simpson Kauri",

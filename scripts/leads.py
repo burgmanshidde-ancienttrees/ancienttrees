@@ -94,8 +94,19 @@ def reason_text(entry):
 # Seven leads across four cities were affected. The marker is searched across
 # the whole entry, because the run that resolved one wrote it wherever it was
 # standing: in the name, in a note, in `status`.
+# Widened 2026-09-26: a genuine duplicate slipped through as READY when a
+# batch pass updated a repeated _famous-lithuania entry ("Oaks and lime of
+# January 13" appears twice, identical name/coordinates/photos) with
+# status "verified" rather than one of the recognised terminal values, and
+# its own note read "verified as sll_002 ... Do not treat this as a second
+# tree", which contains neither "resolved" nor "delivered as". "DUPLICATE
+# of" is already this corpus's own established convention for exactly this
+# case (7 other hits across heerlen, oss, hilversum and this same file, all
+# with status already set correctly); catching the phrase itself removes
+# the dependence on every future pass remembering the right status string.
 DONE = re.compile(r"\bresolved\b|\bdelivered as\b|\bdelivered to\b|"
-                  r"\balready published\b|\bpromoted\b|\bshipped as\b", re.I)
+                  r"\balready published\b|\bpromoted\b|\bshipped as\b|"
+                  r"\bduplicate of\b", re.I)
 
 
 def is_done(entry):
@@ -289,6 +300,16 @@ HELD_MARKER = re.compile(
 # garden's own records checked"); Rotterdam's Venijnboom ends "Worth
 # checking on a future pass" after finding only one source and no
 # independent second one for that specific tree. Three for three, again.
+# Widened a tenth time 2026-09-26, same methodology: all 6 non-duplicate
+# READY leads that morning were a single _famous-lithuania re-check batch
+# using a phrasing the pattern had not seen, "HELD as a lead" / "HELD as an
+# open lead", covering a mix of reasons (single source, ordinary size for
+# the batch, no cluster or destination case, or a figure that could not be
+# independently confirmed this pass). One of the six, Kiaunoriai oak, is
+# the sharpest case: it clears the two-source bar outright and is held only
+# for lacking a cluster or a single-tree destination case, which is exactly
+# the kind of judgement call this file's own comments already treat as a
+# valid decline rather than a forbidden count-doctrine reason.
 NOT_READY_MARKER = re.compile(
     r"\[SKIPPED\b[^\]]*\]|\bdeclined at merge\b|"
     r"\bbelow the 4-tree floor\b|\bbelow the four-tree floor\b|"
@@ -339,7 +360,8 @@ NOT_READY_MARKER = re.compile(
     r"needs the garden.{0,10}s own records checked|"
     r"no independent second source (?:names|found)|"
     r"needs species confirmation|"
-    r"before resolving whether)\b",
+    r"before resolving whether|"
+    r"held as an? (?:open )?lead)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
