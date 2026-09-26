@@ -18341,6 +18341,30 @@
    ],
    "trees": 30,
    "logged": true
+  },
+  {
+   "started": "2026-09-26T08:54:54+00:00",
+   "date": "2026-09-26",
+   "run_id": "36231186670",
+   "minutes": 84.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 445,
+   "denials": 42,
+   "denials_source": "permission_denials: Bash(?), Bash(cat ; import ; for ; if ...), Bash(cat ; import ; verified ; for ...), Bash(cat ; until ; do ; done ...), Bash(cd && curl ; ls ; which), Bash(cd && npx), Bash(cd && python3 ; import ; of ...), Bash(curl ; wc ; grep | ? ...), Bash(echo && python3 ; import ; d ...), Bash(for ; do ; echo ; grep ...), Bash(for ; do ; find ; done), Bash(for ; do ; grep ; done), Bash(for ; do ; grep | ? ...), Bash(for ; do ; python3 ; import ...), Bash(git && git && git && git ...), Bash(git ; git ; wc), Bash(git | head ; git | head ...), Bash(git), Bash(grep | bates | ? | ? ...), Bash(jobs), Bash(mkdir && cat ; import ; for ...), Bash(npx), Bash(pip | tail), Bash(python3 ; import ; d ; ? ...), Bash(python3 ; import ; d ; cities ...), Bash(python3 ; import ; with ; html ...), Bash(python3 ; text ; import ; ? ...), Bash(python3 ; text ; import ; for ...), Bash(rm && git), Bash(rm ; wc), Bash(rm), Bash(subshell cat ; ? ; National ; ? ...), Bash(subshell cd && curl && ls && which ...), Bash(subshell cd && npx ; echo ; disown ...), Bash(subshell cd && npx | tail), Bash(subshell curl ; National ; ? ; ? ...), Bash(tail), Bash(wait), Bash(wc)",
+   "ended": "success",
+   "tokens": 17151852,
+   "claims_held": [],
+   "commits": 8,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "olympic-national-park",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
