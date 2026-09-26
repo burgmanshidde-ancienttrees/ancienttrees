@@ -26,7 +26,7 @@
     "https://commons.wikimedia.org/wiki/File:Fagus_sylvatica_JPG_AC1b.jpg",
     "https://commons.wikimedia.org/wiki/File:Jalhay-Claw%C3%A9_fawe_(1).jpg"
    ],
-   "status": "verified",
+   "status": "RESOLVED 2026-09-26, delivered as gos_002 in data/cities/jalhay.json",
    "verified_id": "gos_002",
    "verified_file": "data/research/_famous-belgium-verified.json",
    "verify_note": "2026-09-26 verification pass: real and distinct from our already-published gos_001 (Les Sept Freres de Gospinal, a multi-trunk oak roughly 100-150m away in the same patch of forest). This is 'Clawe Fawe', a beech 'nail tree' (arbre a clous) in the Bois de Foyr near Jalhay, girth 379cm (2013), a genuine local folk-medicine and boundary-marker/gibbet-site tradition, confirmed by fr.wikipedia's 'Arbre a clous' article and mini-ardenne.be's tourism page. No age found. IMPORTANT: the 'fame' field currently on our published gos_001 wrongly links it to this tree's Wikidata item (Q13495179) by coordinate proximity; that link should be corrected, it is not evidence the two are the same tree. Recommend this join the existing Jalhay city page as a second stop (proposed id gos_002) rather than ship as a new standalone place, since it is a short walk from gos_001 in the same commune."
@@ -67,7 +67,7 @@
     "https://commons.wikimedia.org/wiki/File:Lo_-_Caesarsboom.jpg",
     "https://commons.wikimedia.org/wiki/File:Lo_-_Westpoort_and_Caesarsboom.jpg"
    ],
-   "status": "verified",
+   "status": "RESOLVED 2026-09-26, delivered as lor_001 in data/cities/lo.json",
    "verified_id": "lor_001",
    "verified_file": "data/research/_famous-belgium-verified.json",
    "verify_note": "2026-09-26 verification pass: strongly corroborated, two independent sources (Flanders heritage inventory + English Wikipedia's dedicated article), both agreeing the true age is ~250 years despite a local legend claiming Julius Caesar tied his horse here 2000+ years ago (both sources call the legend folklore). Girth 250cm, height 7.5m, protected national monument since 2005, stands beside Lo's last surviving medieval town gate. Recommend SHIP as its own standalone place under the single-tree exception: real fame, a debunked-but-tellable legend, solid measurements, one obvious place to stand."

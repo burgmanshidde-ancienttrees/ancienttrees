@@ -1,0 +1,64 @@
+{
+  "city": "Vepriai",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Vepriai's Kalvarijos is a Way of the Cross five and a half kilometres long, laid out in 1846 with 35 brick chapels built between 1882 and 1900, funded by local farmers. It is still a living pilgrimage route, not a museum piece. Twenty metres from the chapel of its third station stands a pedunculate oak, 30 metres tall and 4.3 metres round, protected since 2016. The oak is not why the path exists, and it does not need to be: it is one marked feature on a route people have been walking on purpose for 180 years.",
+  "meta_description": "The Vepriai Oak: a 30-metre pedunculate oak beside the third station of a 180-year-old Lithuanian pilgrimage route, the Kalvarijos.",
+  "question_meta": "Vepriai's mapped tree is the Vepriai Oak, a pedunculate oak 30 metres tall beside the third station of the Veprių Kalvarijos pilgrimage path.",
+  "question_answer": "The Vepriai Oak, a pedunculate oak standing about 20 metres southeast of the third station chapel on the Veprių Kalvarijos, a Way of the Cross near the town of Vepriai in the Ukmergė district. It is 30 metres tall and 4.3 metres round, and nobody has published its age.",
+  "question_context": "The pilgrims come for the Stations of the Cross, and the oak waits for them at the third one. The Kalvarijos was laid out in 1846, with 35 brick chapels added between 1882 and 1900, paid for by local farmers. At Whitsun in the years between the two world wars it drew thousands of walkers, and it is still an active pilgrimage route today rather than a preserved relic.\n\nThe oak stands about 20 metres from the third chapel. It is 30 metres tall, a real height for an oak, and 4.3 metres round at chest height. Lithuania protected it in 2016, and in autumn 2025 an information marker went up beside it, so a visitor no longer has to guess which trunk it is.\n\nSeeing it means walking the Kalvarijos, or at least its first stretch: the third station along a 5.5 kilometre route through forest, meadow and lakeshore in the Ukmergė district. There is no public transport to the site; it is easiest reached by car. Everything known about the tree comes from a single register entry, and nobody has published its age. If you know it, tell us.",
+  "hero_tree_id": "vpr_001",
+  "oldest_tree_id": "vpr_001",
+  "faq": [
+    {
+      "q": "How old is the Vepriai Oak?",
+      "a": "Nobody has published an age for it. The facts on record are its size, 30 metres tall and 4.3 metres round, and its 2016 protection order. If you know its age, tell us."
+    },
+    {
+      "q": "What is the Veprių Kalvarijos?",
+      "a": "A Way of the Cross laid out in 1846 near the town of Vepriai, 5.5 kilometres long with 35 brick chapels added between 1882 and 1900. It is a living pilgrimage route rather than a museum piece, and the oak stands beside its third station."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The oak stands in state forest directly beside the public pilgrimage path, with an information marker installed in autumn 2025."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Walk the Kalvarijos from its start, or at least as far as the third station chapel; the oak stands about 20 metres southeast of it. The site is in the Ukmergė district and is easiest reached by car, as there is no public transport stop nearby."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vpr_001",
+      "name": "The Vepriai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 430,
+      "location": {
+        "address": "Beside the Veprių Kalvarijos (Way of the Cross) path, about 20m southeast of the third station chapel, Deltuva forestry unit, Vepriai village, Ukmergė district",
+        "latitude": 55.149578,
+        "longitude": 24.586706,
+        "neighbourhood": "Vepriai, beside the Veprių Kalvarijos pilgrimage path"
+      },
+      "story": "The pilgrims come for the Stations of the Cross, and the oak is waiting for them at the third one. Vepriai's Kalvarijos is a Way of the Cross five and a half kilometres long, with 35 stations strung through forest, across meadow and along a lakeshore, and this tree stands 20 metres from the chapel of the third.\n\nThe path was laid out in 1846. The brick chapels came later, between 1882 and 1900, and it was the local farmers who paid for them. At Whitsun it drew crowds: in the years between the wars, thousands of people walked it. It is still a living pilgrimage route, not a museum piece.\n\nThe oak is not the reason the path exists, and it does not need to be. It is 30 metres tall, a real height for an oak, and 4.30 metres round at chest height. Lithuania protected it in 2016, and in autumn 2025 an information marker went up beside it, so you will not have to guess which trunk it is.\n\nThat is the way to see it: walk the Kalvarijos, or at least its first stretch, and stop at the third chapel. The oak is one marked feature on a route through a landscape that people have been walking on purpose for 180 years.\n\nIt is in the Ukmergė district, easiest by car. The facts on the tree come from a single register entry, and nobody has published its age. If you know it, tell us.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Vepri%C5%B3_%C4%85%C5%BEuolas",
+        "https://lt.wikipedia.org/wiki/Vepri%C5%B3_Kalvarijos"
+      ],
+      "access": "Free; stands in state forest directly beside a public pilgrimage path with an information marker installed as of autumn 2025",
+      "transport": "Ukmergė district; no public transit stop checked this pass, reachable by car; Ukmergė town itself is not currently a published place",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the information marker beside it and its height, 30 metres on a trunk 4.30 metres round. It stands on the Kalvarijos path, about 20 metres southeast of the third station chapel."
+    }
+  ]
+}

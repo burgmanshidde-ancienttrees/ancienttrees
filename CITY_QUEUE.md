@@ -287,7 +287,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 82 | Leiden | 7.55 | 33,227 | 20 | 6 | 1 | 129 | 20 | measured |
 | 83 | Ottawa | 10.06 | - | 21 | - | 3 | 122 | 60 | measured |
 | 84 | Saratoga Springs | 15.05 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 85 | Seattle | 14.43 | 398,724 | 8 | 1 | - | - | 30 | measured |
+| 85 | Seattle | 14.43 | 398,724 | 8 | 1 | 1 | - | 30 | measured |
 | 86 | West Palm Beach | 14.98 | - | - | - | - | - | 20 | predicted (travel demand) |
 | 87 | Saint Petersburg | 14.83 | - | - | - | - | - | 100 | predicted (travel demand) |
 | 88 | St. Louis | 14.80 | - | - | - | - | - | 30 | predicted (travel demand) |

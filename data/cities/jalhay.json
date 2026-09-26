@@ -2,11 +2,11 @@
   "city": "Jalhay",
   "country": "Belgium",
   "status": "needs_curation",
-  "intro": "Jalhay sits on the edge of the Hautes Fagnes, and its mapped tree is the largest multi-trunk oak in Belgium. Les Sept Frères de Gospinal, the seven brothers, was cut back in the eighteenth century and regrew as seven trunks that fused into one body, 7.67 metres round. A nineteenth-century lawyer received clients inside it; two communes used it to argue out their shared border. One of the seven trunks is now dead. It stands on the walking trail between Jalhay and Solwaster, free to reach on foot.",
-  "meta_description": "Les Sept Frères de Gospinal: Belgium's largest multi-trunk oak, seven fused trunks 7.67 metres round, on a trail near the Hautes Fagnes.",
+  "intro": "Jalhay sits on the edge of the Hautes Fagnes, and its best-known tree is the largest multi-trunk oak in Belgium. Les Sept Frères de Gospinal was cut back in the eighteenth century and regrew as seven fused trunks, 7.67 metres round; one is now dead. A short walk through the same forest finds Clawé Fawe, a beech villagers once drove nails into to cure a toothache, at the same old communal border. Both stand on trails near the Hautes Fagnes, free to reach on foot.",
+  "meta_description": "Les Sept Frères de Gospinal, Belgium's largest multi-trunk oak, and Clawé Fawe, a beech nail tree, on forest trails near the Hautes Fagnes.",
   "question_meta": "Les Sept Frères de Gospinal, over 300 years old, is Belgium's largest multi-trunk oak: seven fused trunks 7.67 metres round near Jalhay.",
-  "question_answer": "Jalhay's only mapped tree is Les Sept Frères de Gospinal, a pedunculate oak on the trail between Jalhay and Solwaster, opposite the Gospinal forestry house. Its fused trunks measured 7.67 metres round in 2021, making it the largest multi-trunk oak recorded in Belgium. It is over 300 years old.",
-  "question_context": "The name, the seven brothers, describes what happened after the tree was cut back in the mid-eighteenth century: rather than dying, it regrew as seven separate trunks, since fused into a single body large enough that a nineteenth-century lawyer who owned the Gospinal estate is said to have received clients inside it. It also served as the meeting point where officials of the communes of Sart and Jalhay argued out their shared boundary. The measurements agree with each other: a ministerial order protecting it in 2012 recorded 7.44 metres round, and a 2021 visit measured 7.67, roughly a centimetre a year of growth in between. Wallonia had already classified it as remarkable in 1987. The site sign is blunt: over 300 years old, nearing the end of its life, one of the seven trunks already dead, though the 2021 account describes the rest of the canopy as still vibrant. It stands opposite the Gospinal forestry house, on the marked trail between Jalhay and Solwaster, near the Hautes Fagnes.",
+  "question_answer": "Jalhay's oldest confirmed tree is Les Sept Frères de Gospinal, a pedunculate oak on the trail between Jalhay and Solwaster, opposite the Gospinal forestry house. Its fused trunks measured 7.67 metres round in 2021, making it the largest multi-trunk oak recorded in Belgium. It is over 300 years old.",
+  "question_context": "The name, the seven brothers, describes what happened after the tree was cut back in the mid-eighteenth century: rather than dying, it regrew as seven trunks, since fused into one body large enough that a nineteenth-century lawyer is said to have received clients inside it. It also served as the meeting point where Sart and Jalhay argued out their shared boundary. A 2012 ministerial order recorded 7.44 metres round; a 2021 visit measured 7.67, roughly a centimetre a year of growth in between. The site sign is blunt: over 300 years old, nearing the end of its life, one of the seven trunks already dead, though the canopy is still vibrant. It stands opposite the Gospinal forestry house, on the trail between Jalhay and Solwaster.\n\nA short walk through the same patch of forest finds Clawé Fawe, a beech at a crossroads north of the hamlet of Foyr. Villagers once drove nails into it to draw out a toothache, and it also marked the boundary between Jalhay and neighbouring Limbourg, at the site of Jalhay's old gibbet. It is 3.79 metres round and nobody has recorded its age.",
   "hero_tree_id": "gos_001",
   "oldest_tree_id": "gos_001",
   "faq": [
@@ -25,6 +25,10 @@
     {
       "q": "How do I get there?",
       "a": "The tree stands opposite the Gospinal forestry house, on the marked walking trail between Jalhay and Solwaster, near the Hautes Fagnes. There is no public transport stop at the site; it is reached on foot."
+    },
+    {
+      "q": "Is there another old tree near Les Sept Frères de Gospinal?",
+      "a": "Yes. Clawé Fawe, a beech nail tree, stands at a forest crossroads a short walk away, north of the hamlet of Foyr. It has its own story: villagers drove nails into it to cure a toothache."
     }
   ],
   "trees": [
@@ -59,13 +63,6 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "how_to_recognise": "You can recognise it by the seven trunks fused into a single body 7.67 metres round near the base, one of them dead. It stands opposite the Gospinal forestry house, on the trail between Jalhay and Solwaster.",
-      "fame": {
-        "langs": 1,
-        "checked": "2026-09-25",
-        "source_name": "Clawé faw",
-        "qid": "Q13495179",
-        "views": 19
-      },
       "best_time": {
         "months": [
           9,
@@ -73,6 +70,46 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      }
+    },
+    {
+      "id": "gos_002",
+      "name": "Clawé Fawe (the nail tree of Foyr)",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 379,
+      "location": {
+        "address": "Forest crossroads in the Bois de Foyr, north of the hamlet of Foyr, Jalhay",
+        "latitude": 50.5751,
+        "longitude": 5.9474,
+        "neighbourhood": "Foyr (Jalhay), Province de Liège"
+      },
+      "story": "People drove nails into this beech to get rid of their toothache. The idea, common across the Ardennes, was that the ailment passed out of the body and into the wood, and the name Clawé Fawe, the nailed beech, records what the tree was for.\n\nIt had other jobs, most of them grimmer. It marked the boundary between Jalhay, which answered to the Prince-Bishop of Liège, and Limbourg, which answered to the Duchy of Brabant, two communes with a long history of not getting along. And it stood at the site of Jalhay's gibbet. The present tree replaced an older one that did the same work, until the French cut it down at the end of the eighteenth century.\n\nBelgium has around 59 known nail trees, 33 of them in the province of Liège, and this is one of the named ones. It is a European beech, 3.79 metres round at chest height when it was measured in July 2013.\n\nIt stands at a forest crossroads north of the hamlet of Foyr, on marked walking trails between Jalhay and the Hautes Fagnes, a short way through the same woods from Les Sept Frères. The two sources that place it disagree by about a hundred metres, so the pin gets you to the right patch of forest and the crossroads does the rest.\n\nNobody has published an age for this beech. If you know when it went in, tell us.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Arbre_%C3%A0_clous",
+        "https://www.mini-ardenne.be/poi.card.php?id=5750&language=fr",
+        "https://www.wikidata.org/wiki/Q13495179"
+      ],
+      "access": "Free, at a forest crossroads reached by marked walking trails near Jalhay and the Hautes Fagnes; open at all times, no ticket.",
+      "transport": "On a forest path north of the hamlet of Foyr, between Jalhay and the Hautes Fagnes; no public transport stop at the site, reached on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the beech at the forest crossroads, 3.79 metres round at chest height, unlike the multi-trunked oak of Les Sept Frères nearby. It stands north of the hamlet of Foyr.",
+      "fame": {
+        "langs": 1,
+        "checked": "2026-09-25",
+        "source_name": "Clawé faw",
+        "qid": "Q13495179",
+        "views": 19
       }
     }
   ]

@@ -1,0 +1,64 @@
+{
+  "city": "Lo",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Julius Caesar is supposed to have tied his horse to this yew and slept in its shade on his way to conquer Britain in 55 BC. Historians doubt he ever came near the small West Flanders town of Lo, but the legend gave the tree its name, Caesarsboom, and the name is the reason it is still standing at the foot of the Westpoort, the last of Lo's four medieval town gates. Judged by its size, Flanders' own heritage inventory puts the real age at 200 to 300 years. It has been a protected monument since 2005.",
+  "meta_description": "The Caesarsboom of Lo: a legendary yew beside the Westpoort town gate in West Flanders, protected since 2005. The legend and the real age.",
+  "question_meta": "Lo's mapped tree is the Caesarsboom, a European yew at the foot of the Westpoort town gate, judged by its size at roughly 200 to 300 years.",
+  "question_answer": "The Caesarsboom, a European yew standing at the foot of the Westpoort, the sole surviving medieval gate of the small town of Lo in West Flanders. Flanders' heritage inventory judges its true age at 200 to 300 years by its size, despite a local legend that ties it to Julius Caesar.",
+  "question_context": "The legend is specific: Julius Caesar is said to have tied his horse to this yew and slept in its shade on his way to conquer Britain in 55 BC, and the name Caesarsboom records the story rather than the fact. Historians doubt Caesar came near Lo, though the road beside the tree may have Roman origins. Flanders' heritage inventory and English Wikipedia agree the current yew, judged by its size, most likely dates from the eighteenth century, 200 to 300 years old. Documents hint a yew has stood on this exact corner since about 1050, a claim about the site rather than this trunk, a successor on ground that has apparently always wanted a yew.\n\nThe setting carries the visit as much as the legend does. It stands at the foot of the Westpoort, the only one of Lo's four medieval town gates still standing, beside Het Damberd, recorded as a brewery since 1499. It measures 2.5 metres round, 7.5 metres tall and 8 metres across the crown, restored in 1989 and protected since 2005. Lo is small and some way from anywhere else on this map; the gate and the yew together are the reason to come.",
+  "hero_tree_id": "lor_001",
+  "oldest_tree_id": "lor_001",
+  "faq": [
+    {
+      "q": "Did Julius Caesar really stop at this tree?",
+      "a": "Almost certainly not. Historians doubt Caesar ever came near Lo, though the road beside the tree may be Roman in origin. The legend gave the tree its name; it is not a record of what happened."
+    },
+    {
+      "q": "How old is the Caesarsboom really?",
+      "a": "Flanders' heritage inventory judges it, by its size, at roughly 200 to 300 years old, dating from the eighteenth century rather than from Roman times. A yew may have stood on this exact spot since about 1050, but that is a claim about the site, not about this particular trunk."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open at a street corner in the centre of Lo, beside the Westpoort gate, open at all times with no ticket or appointment needed."
+    },
+    {
+      "q": "What is the Westpoort?",
+      "a": "The last of Lo's four original medieval town gates, restored in 1852 and 1991. The Caesarsboom stands at its foot, beside Het Damberd, a building recorded as one of the town's breweries since 1499."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lor_001",
+      "name": "Caesarsboom",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 200,
+      "age_max": 300,
+      "girth_cm": 250,
+      "location": {
+        "address": "Weststraat, at the foot of the Westpoort (the town's last surviving medieval gate), Lo, Lo-Reninge, West Flanders",
+        "latitude": 50.98028,
+        "longitude": 2.74556,
+        "neighbourhood": "Lo (Lo-Reninge), West Flanders"
+      },
+      "story": "Julius Caesar is supposed to have tied his horse to this yew and slept in its shade on his way to conquer Britain in 55 BC. The tree is about 250 years old. Both of those statements are on the record, and only one of them is true.\n\nFlanders' heritage inventory and every serious account agree on the second: judged by its size, the current yew most likely dates from the eighteenth century, somewhere between 200 and 300 years. Historians doubt Caesar came anywhere near Lo at all, though the road beside it may be Roman in origin. The legend is the reason the tree has a name, and the name is the reason it is still here.\n\nThere is an older thread, and it is worth keeping separate. Documents hint that a yew has stood on this exact corner since about 1050. That is a claim about the spot, not about this trunk, which is a successor on a site that has apparently always wanted a yew.\n\nThe setting does the rest. It stands at the foot of the Westpoort, the only one of Lo's four medieval town gates still standing, beside Het Damberd, recorded as one of the town's breweries since 1499. It is 2.5 metres round, 7.5 metres tall and 8 metres across the crown, restored in 1989 and protected as a monument since 2005.\n\nLo is small and far from anywhere else on this map. The gate and the yew together are the reason to come.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/70129",
+        "https://en.wikipedia.org/wiki/Caesarsboom"
+      ],
+      "access": "Free. Stands in the open at a street corner beside the Westpoort town gate, in the centre of the small town of Lo; open at all times, no ticket or appointment needed.",
+      "transport": "In the historic centre of Lo (Lo-Reninge), reachable on foot within the town; no railway station in the municipality, nearest by De Lijn bus from Ieper or Veurne (exact stop not confirmed this pass).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the dark evergreen crown, 7.5 metres tall and 8 across, on a trunk 2.5 metres round. It stands at the street corner at the foot of the Westpoort, Lo's last surviving town gate."
+    }
+  ]
+}
