@@ -1,0 +1,124 @@
+[
+  {
+    "id": "lor_001",
+    "name": "Caesarsboom",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "roughly 250 years",
+    "age_min": 200,
+    "age_max": 300,
+    "girth_cm": 250,
+    "location": {
+      "address": "Weststraat, at the foot of the Westpoort (the town's last surviving medieval gate), Lo, Lo-Reninge, West Flanders",
+      "latitude": 50.98028,
+      "longitude": 2.74556,
+      "neighbourhood": "Lo (Lo-Reninge), West Flanders"
+    },
+    "verified_sources": [
+      "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/70129",
+      "https://en.wikipedia.org/wiki/Caesarsboom"
+    ],
+    "access": "Free. Stands in the open at a street corner beside the Westpoort town gate, in the centre of the small town of Lo; open at all times, no ticket or appointment needed.",
+    "transport": "In the historic centre of Lo (Lo-Reninge), reachable on foot within the town; no railway station in the municipality, nearest by De Lijn bus from Ieper or Veurne (exact stop not confirmed this pass).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "TWO INDEPENDENT SOURCES: Flanders' heritage inventory (Inventaris Onroerend Erfgoed, object 70129, 'Caesarsboom, eeuwenoude taxus') and English Wikipedia's dedicated 'Caesarsboom' article, both directly fetched and agreeing closely. SPECIES: Taxus baccata (European/common yew), undisputed. GIRTH: 250cm, measured at 1.50m height in 2007 per the register. HEIGHT: 7.5m, crown diameter 8m. AGE: register and Wikipedia agree the true age is roughly 250 years (estimate range 200-300) based on size, NOT the 2000+ years the legend implies; both sources are explicit that the local legend (Julius Caesar tied his horse here and napped in its shade en route to conquer Britain, 55 BC) is folklore rather than fact, and Wikipedia notes historians doubt Caesar ever passed through this area at all, though the adjacent road may have Roman-era origins. The register separately notes documentary hints a yew may have stood on this exact spot since as early as 1050, but says the CURRENT specimen most likely dates to the 18th century, consistent with the 250-year estimate; this is a continuity-of-site claim, not a claim about this tree's exact age, and the story should keep the two apart. PROTECTION: designated a protected monument 27 May 2005 (Opgaande taxus Caesarsboom), inside the protected townscape of Lo (23 November 1994) and the protected architectural heritage of the Stadskern Lo (14 May 2024); restored in 1989 under the King Baudouin Foundation's heritage programme. SETTING: stands beside the Westpoort, the sole survivor of Lo's four original town gates (14th century core, restored 1852 and 1991), next to 'Het Damberd', a building documented since 1499 as one of the town's four historic breweries. ALIVE: both sources describe it in the present tense with no indication of decline; no death evidence found. DESTINATION TEST: this is a genuinely characterful, named, nationally protected yew with a well-known (if debunked) legend, standing beside the town's most recognisable landmark (its only surviving gate) in the centre of a small town that is not near any published city. Recommend SHIP as its own standalone place under the 2026-08-31 single-tree exception: it has real local fame, a legend worth telling precisely because it is false, solid measurements, and one obvious place to stand."
+  },
+  {
+    "id": "gos_002",
+    "name": "Clawé Fawe (the nail tree of Foyr)",
+    "species": "European Beech (Fagus sylvatica)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 379,
+    "location": {
+      "address": "Forest crossroads in the Bois de Foyr, north of the hamlet of Foyr, Jalhay",
+      "latitude": 50.5751,
+      "longitude": 5.9474,
+      "neighbourhood": "Foyr (Jalhay), Province de Liège"
+    },
+    "verified_sources": [
+      "https://fr.wikipedia.org/wiki/Arbre_%C3%A0_clous",
+      "https://www.mini-ardenne.be/poi.card.php?id=5750&language=fr",
+      "https://www.wikidata.org/wiki/Q13495179"
+    ],
+    "access": "Free, at a forest crossroads reached by marked walking trails near Jalhay and the Hautes Fagnes; open at all times, no ticket.",
+    "transport": "On a forest path north of the hamlet of Foyr, between Jalhay and the Hautes Fagnes; no public transport stop at the site, reached on foot.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "TWO INDEPENDENT SOURCES, both directly fetched: French Wikipedia's 'Arbre a clous' (nail tree) article, which covers this specimen among Belgium's ~59 known nail trees (33 in Liege province), and mini-ardenne.be's dedicated tourism entry, which gives the measurement. SPECIES: Fagus sylvatica, agreed by both (and by Wikidata Q13495179, which the Commons category and the lead's own coordinate derive from). GIRTH: 3.79m circumference, measured at 1.3m height in July 2013 (mini-ardenne). NO AGE given by any source; leave empty rather than guess from girth, since no growth-rate basis was attempted this pass. HISTORY/FOLKLORE: a 'nail tree', part of a genuine and fairly widespread Ardennes folk-medicine tradition of driving nails into a trunk to transfer an ailment (toothache, skin disease) or to help a pilgrimage succeed; this specific tree also marked the boundary between the historically rival communes of Jalhay (then under the Prince-Bishopric of Liege) and Limbourg (under the Duchy of Brabant), and stood at the site of 'Jalhay's gibbet' (an execution site), replacing an older tree with the same function that the French cut down at the end of the 18th century. IMPORTANT CORRECTION TO OUR OWN DATA: this is a DIFFERENT, DISTINCT tree from our already-published gos_001 (Les Sept Frères de Gospinal, a multi-trunk oak). The 'fame' field currently on gos_001 in data/cities/jalhay.json incorrectly links it to this Wikidata item (Q13495179, 'Clawe Fawe') by apparent coordinate-proximity; that match is wrong and should be corrected by whoever next touches that file, it is not evidence the two names refer to one tree. COORDINATE: the lead's own lat/lng (50.57611111, 5.94777778) matches Wikidata's DMS coordinate for Q13495179 (50 16'44'N/6 11'14'E... actually 50 34'34'N/5 56'52'E converted = ~50.5762,5.9478) almost exactly; mini-ardenne independently gives 50.5751,5.9474, a real place about 100-150m away, describing it as 'a forest crossroads north of the village of Foyr'. Used mini-ardenne's more descriptive figure here and flagged approximate rather than confirmed, since the two sources disagree by roughly a hundred metres, well within one small patch of forest. DESTINATION/PLACEMENT: do NOT treat as a new standalone place. It sits only about 100-150m from our already-published gos_001 in the same commune (Jalhay) and the same patch of forest near the Gospinal/Foyr area, so this reads as a second stop on the SAME walk rather than a separate destination. Recommend it be added to the existing Jalhay city page (data/cities/jalhay.json) as a second tree rather than shipped from this file; proposed id gos_002 follows that city's existing prefix. Whoever integrates it should also fix the mismatched 'fame' field on gos_001 noted above."
+  },
+  {
+    "id": "sht_001",
+    "name": "Les Six Hêtres de Longlou",
+    "species": "European Beech (Fagus sylvatica)",
+    "age_estimate": "roughly 250 years",
+    "age_min": 220,
+    "age_max": 280,
+    "girth_cm": null,
+    "location": {
+      "address": "A clearing in the Fagne de Longlou (also called Fagne de Tirifaye), in the forest between Xhoffraix and Hockai, north of the Route de l'Ancienne Douane, Beverce, Malmedy",
+      "latitude": 50.485627,
+      "longitude": 6.024951,
+      "neighbourhood": "Beverce (Malmedy), Province de Liege"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/List_of_protected_heritage_sites_in_Malmedy",
+      "https://www.komoot.com/highlight/1544617"
+    ],
+    "access": "Free, in a forest clearing reached by marked trails (the GR56 long-distance trail passes the spot) in the Hautes Fagnes; open at all times, no ticket.",
+    "transport": "In the forest between Xhoffraix and Hockai near Malmedy; no public transport stop at the site, reached on foot via the GR56 or local walking trails.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "AN ENSEMBLE ENTRY, treated as one collectible point (a single named, historically resting/gathering place with one obvious clearing to stand in, in the manner of Jalhay's Sept Freres). TWO INDEPENDENT SOURCES, both directly fetched: the Wallonia heritage register as reproduced in English Wikipedia's 'List of protected heritage sites in Malmedy' (reference 63049-CLT-0003-01, classified 15 January 1936), and komoot.com's tourism/hiking highlight page, which independently corroborates the age, history and current condition. SPECIES: Fagus sylvatica, agreed. AGE: 'around 250 years' per komoot; register gives only the 1936 classification date, not a planting date, so the age is the tourism source's estimate alone and is recorded as a broad band rather than a precise figure. GIRTH: not given per-tree by any source found this pass; left empty rather than invented. HISTORY: the clearing was historically a 'prandj'lohe', a midday resting place where shepherds stopped with their flocks; surrounded today by spruce plantation that did not exist when shepherds used it. CONDITION, IMPORTANT CAVEAT: komoot's page states directly that the beeches are 'at the end of their life cycle' (declining/senescent) and that in 1993 the local conservation group 'les Amis des Fagnes' (Friends of the Fens) planted young beech saplings alongside them to ensure the site's succession. A separate web search AI summary (not independently confirmed by direct fetch, so treated per the search-summary caution rule as a lead rather than a source) suggested that only three of the original six beeches now survive; this could not be verified on any page actually fetched this pass and should NOT be stated as settled fact without a further check. What IS directly confirmed: the trees are old, genuinely declining, and already partially succeeded by young replacements at the same spot, which is closer to the Elm of Saint-Gervais pattern than to a fully intact ensemble, and the eventual story should say so plainly rather than implying six equally ancient trees stand there today. ALIVE: yes, per komoot's current tourism description and the randonner-leger.org hiking forum, which independently confirms the site is an active, named stop on the GR56 trail (though that source added no botanical detail). DESTINATION TEST: borderline. It has real folklore (a named shepherds' rest, protected since 1936, on a major long-distance trail) but the declining condition and the unconfirmed loss of half the ensemble make it a shakier promise of 'something epic and old to stand in front of' than a fully intact grove. Recommend HOLD as a strong lead for a future Hautes Fagnes / Malmedy-area cluster page (there may be other classified trees nearby worth combining with) rather than shipping alone from this file; a next pass should try to confirm the current tree count in person or via a recent, dated photo before publishing."
+  },
+  {
+    "id": "wey_001",
+    "name": "The Old Lime of Weywertz",
+    "species": "Lime (Tilia sp.)",
+    "age_estimate": "over 350 years",
+    "age_min": 350,
+    "age_max": 400,
+    "girth_cm": null,
+    "location": {
+      "address": "On the square in front of St. Michael's Church, Lindenstrasse, Weywertz, Butgenbach",
+      "latitude": 50.43551,
+      "longitude": 6.16653,
+      "neighbourhood": "Weywertz (Butgenbach), German-speaking Community of Belgium"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Weywertz",
+      "https://butgenbach.info/dorfer/weywertz/"
+    ],
+    "access": "Free, on the open public square in front of the village church; open at all times, no ticket.",
+    "transport": "In the centre of Weywertz village, Butgenbach; reachable on foot within the village, exact bus stop not confirmed this pass.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "TWO INDEPENDENT SOURCES, both directly fetched and in full agreement: German Wikipedia's 'Weywertz' article and butgenbach.info's own tourist page for the village. Both give the SAME planting date, 1668 (making the tree roughly 358 years old as of 2026, i.e. 'over 350 years'), the same height (~20m), and the same protection date (designated a Naturdenkmal, natural monument, in 1984). One source (Wikipedia) notes the '1668' figure appears explicitly as an image caption ('Linde von 1668') though the main prose only says 'over three hundred years old'; treated here as a real documented planting date corroborated independently by butgenbach.info's prose, which states outright the tree 'has stood ... since 1668'. SPECIES: only 'Linde' (lime/linden, genus Tilia) is given by either source, not a specific species; recorded at genus level per this project's convention, ask the reader which species. GIRTH: not given by either source; left empty. SETTING: stands on the open square in front of the neo-Romanesque St. Michael's Church (rebuilt 1959 on the site of earlier churches); a small sculpture called 'Steeklopper', commemorating the local stone-breaking trade, was installed in its shade in 2020, which is a nice recent detail for the story. COORDINATE: no source gave an exact lat/lng for the tree itself; used a geocoded estimate for Lindenstrasse (the street the church/square sits on) as an approximate village-street-level pin, honestly flagged approximate rather than confirmed. ALIVE: yes, described in the present tense by both sources with no sign of decline, and the 2020 sculpture installation is itself evidence of recent, ongoing local care of the site. DESTINATION TEST: a real, precisely-dated (1668), officially protected 350+ year old tree on a public village square, in the German-speaking Community where this project has almost no coverage. On its own it may be a modest draw, but it pairs well with the Antoniusbaum lead in this same batch (also German-speaking Community, also thin alone): recommend considering both together as the seed of a small Bütgenbach/Sankt-Vith area cluster page rather than deciding placement from this file alone."
+  },
+  {
+    "id": "stv_001",
+    "name": "Antoniusbaum",
+    "species": "",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "In the Sankt Vither Wald (St. Vith forest), Sankt-Vith, German-speaking Community of Belgium",
+      "latitude": 50.278974,
+      "longitude": 6.187449,
+      "neighbourhood": "Sankt-Vith, German-speaking Community of Belgium"
+    },
+    "verified_sources": [
+      "https://www.wikidata.org/wiki/Q57352818",
+      "https://en.wikipedia.org/wiki/List_of_protected_heritage_sites_in_Sankt-Vith",
+      "https://www.grenzecho.net/art/region/eifel-ardennen/antoniusbaum-im-st-vither-wald-aufgewertet"
+    ],
+    "access": "Free, in the public St. Vith forest, described as a popular hiking destination; open at all times.",
+    "transport": "In the St. Vith forest (Sankt Vither Wald); reached on foot via the forest's hiking paths, exact trailhead not confirmed this pass.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "SECOND PASS ON THIS LEAD, superseding the 2026-09-07 partial check recorded on the lead itself; the earlier pass's conclusion still holds and this pass adds one further source and a firmer coordinate rather than changing the verdict. TWO-ISH INDEPENDENT SOURCES on EXISTENCE: (1) the official heritage designation, reachable via Wikidata Q57352818 and English Wikipedia's 'List of protected heritage sites in Sankt-Vith' (both drawing on the same underlying Ostbelgien Kulturerbe/German-speaking Community register entry, protection id 31049, dated 10 October 1985, so this is really ONE government source republished twice), and (2) a GrenzEcho (the regional German-language newspaper) article headlined 'Antoniusbaum im St. Vither Wald aufgewertet' (2007), independently confirming the tree/site is a real, currently-maintained, popularly-visited hiking destination with a Saint Anthony statue beside it, renewed by private local initiative that year; the article itself is paywalled beyond its teaser, so only the fact of its existence and headline/teaser could be used, not deeper detail. SPECIES AND AGE: genuinely not found in any source this pass or the last; left empty rather than guessed, since the tree's name (Antoniusbaum, 'Anthony tree', after the devotional statue of Saint Anthony beside it) gives no genus clue the way 'eik' or 'linde' do for other Belgian leads. A web-search AI summary claimed 'more than 300 years old' but this could not be confirmed on any page actually fetched (Wikidata, the Wikipedia list and the Commons category all omit age), so per the search-summary caution rule it is NOT recorded as a fact here. COORDINATE: Wikidata gives a precise arc-second coordinate (50 16'44.306\"N, 6 11'14.816\"E = 50.278974, 6.187449) matching the lead's own lat/lng almost exactly, but the Wikipedia list's own row label calls it the 'Antoniusbaum AREA' rather than a point, so this may be a protected-zone centroid rather than a tree-level pin; flagged approximate rather than confirmed for that reason. NATURE OF THE DESIGNATION: the 1985 protection is a 'protected landscape' (Landschaftsschutz) designation, which protects the setting/area rather than being a botanical monumental-tree designation specifically for the trunk; this is a different kind of protection than most other entries in this batch and should be described accurately rather than implied to be a tree-specific heritage listing. ALIVE: no recent dated confirmation found beyond the 2007 newspaper piece describing it as an actively-visited, tended site; no death evidence either. DESTINATION TEST: does not clear it on the evidence available. No species, no age, no measurements, no distinctive story beyond a devotional statue in a forest; this is a fine minor waypoint but not a reason to travel to Sankt-Vith. Recommend HOLD as a seed for a future small Sankt-Vith / German-speaking Community cluster page (potentially paired with wey_001, the Weywertz lime, in the same region) rather than publishing as its own place; a future pass with more time on ostbelgienkulturerbe.be's own detail pages (linkid=31049, which 403'd to automated fetch this pass) or the municipal 'Unsere Gemeinde' newsletter might still surface species/age."
+  }
+]
