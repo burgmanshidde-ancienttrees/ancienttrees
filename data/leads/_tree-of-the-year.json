@@ -327,13 +327,15 @@
       "lng": 19.142264,
       "gps_as_published": "N 49°50'45.89'', E 19°8'32.15''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2013/Platan-v-obci-Kozy",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "zyw_001",
         "name": "Dąb Franciszek (the Franciszek Oak)",
         "place": "Żywiec",
         "km": 18.27
-      }
+      },
+      "verified_id": "zyw_002",
+      "verified_file": "data/research/zywiec-verified.json"
     },
     {
       "name": "King Oak",
@@ -2532,13 +2534,15 @@
       "lng": 5.202061,
       "gps_as_published": "N 51°20'47'', E 5°12'7.42''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2020/Carodejny-strom",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "hvb_001",
         "name": "The Gebodenlinde of Hilvarenbeek",
         "place": "Hilvarenbeek",
         "km": 16.12
-      }
+      },
+      "verified_id": "hvb_002",
+      "verified_file": "data/research/hilvarenbeek-verified.json"
     },
     {
       "name": "Multisecular Fir Tree - Guardian of Cibin",
@@ -4642,13 +4646,15 @@
       "lng": 21.671553,
       "gps_as_published": "N 56°10'34.9'', E 21°40'17.59''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2026/oak-of-laukiai",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "plg_006",
         "name": "The Witch's Ash",
         "place": "Plunge",
         "km": 17.75
-      }
+      },
+      "verified_id": "plg_007",
+      "verified_file": "data/research/plunge-verified.json"
     },
     {
       "name": "The Old Wild Apple Tree",
@@ -4664,13 +4670,15 @@
       "lng": 19.678614,
       "gps_as_published": "N 49°7'46.93'', E 19°40'43.01''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2026/old-wild-apple-tree",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "vbo_001",
         "name": "The Pine of Veľké Borové",
         "place": "Veľké Borové",
         "km": 15.12
-      }
+      },
+      "verified_id": "vbo_002",
+      "verified_file": "data/research/velke-borove-verified.json"
     },
     {
       "name": "Crooked Tree",
