@@ -10,6 +10,44 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 - 11 trees live across 7 places: refilled the shelf, then wrote and merged it
+
+7-day visits: 1716 in the last week (544 today, the busiest day of the window).
+
+`prepare.py` said REFILL THE SHELF FIRST (ready-to-write was 0, well under the
+60 floor), so per the run's own instructions the first two dispatches were
+verify passes rather than a thin write pass: `_famous-belgium` (14 open leads)
+and `_famous-lithuania` (21 open leads not already `done`).
+
+- **Belgium: 5 of 14 cleared, 2 blocked, 6 still open.** Caesarsboom (a
+  legendary yew at Lo's Westpoort gate) recommended as its own place; Clawe
+  Fawe (a beech nail tree) recommended as a Jalhay addition, which also
+  turned up a real bug, gos_001's `fame` field had been linked to Clawe
+  Fawe's Wikidata item by coordinate proximity, now fixed. Six Hetres de
+  Longlou, the Weywertz lime and the Sankt-Vith Antoniusbaum were held back
+  (declining condition / thin evidence) rather than forced into a page.
+  Kapel-en-etagelinde (felled 2019) and the Gent Zilverlinde (private
+  institutional garden) are blocked with reasons on file.
+- **Lithuania: 9 of 21 cleared, 1 blocked (confirmed dead, Lenkaičiai).**
+  Found a genuine new 4-tree city, Silale (an Independence Oak and a January
+  13 memorial grove in town, two much older countryside oaks near
+  Kaltinenai), plus day-trip additions for Kaunas (Gastilonys Oak) and
+  Raudone (the Plokščiai and Ilguva oaks, which needed rewriting Raudone's
+  page copy since it was still framed as a single-tree destination).
+- **A write pass** turned all 11 cleared trees into stories and recognition
+  lines in one batched context.
+- **Merged and shipped**: 3 new standalone city files (lo, vepriai,
+  zadeikoniai), 1 new 4-tree city (silale), and 3 trees added to jalhay,
+  kaunas and raudone. Wrote full page copy (intro/meta/FAQ/question page)
+  for every new and changed page, trimmed several to fit Contract B/C's
+  word limits that a first pass overshot. `preflight.py`: 0 problems.
+  `npm run build`: 12559 pages, exit 0. `qa.py`: 16600 pages, links resolve,
+  text clean, exit 0. Both leads files updated in place so the next run
+  reads today's verdicts instead of re-verifying the same 35 trees.
+
+Push failed on an expired token about an hour in, as expected; commits are
+local and will go out with the workflow's own Run health push.
+
 ## 2026-09-26 - Night run 2026-09-26 12:28 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 57.7 minutes of its 120 minute window, 296 turns, 9 commands refused by the allowlist, ended clean (success). 2 commit(s), none of them a published tree. Claims left behind: _famous-lithuania, which block the top of the queue until they expire.
