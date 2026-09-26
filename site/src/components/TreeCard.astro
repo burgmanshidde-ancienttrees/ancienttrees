@@ -42,6 +42,14 @@ interface Props {
   headingLevel?: 2 | 3;
   /** A species page repeating one species name down the whole page is noise. */
   omitSpecies?: boolean;
+  /** True when `note` already states the tree's age as computed from its
+   *  age_min/age_max bounds (the "oldest" ranking modes in collection-rank.ts).
+   *  Without this, the card also prints the tree's own hand-written
+   *  `age_estimate` in tree-meta, and the two can name different numbers for
+   *  the same tree on the same card (REVIEW.md BLOCKER, 2026-09-26: General
+   *  Sherman read "roughly 2,300 to 2,700 years" in tree-meta and "Roughly
+   *  2,200 to 3,200 years old." one line below it). */
+  omitAge?: boolean;
   /** Any language with a data/i18n/<lang>/ directory; "en" is the canonical
    * English page. Widened from an "en" | "es" union on 2026-08-22 when
    * Contract J went to seven languages. */
@@ -63,7 +71,7 @@ interface Props {
 
 const {
   tree, citySlug, treeSlug, index, variant = "compact", note,
-  headingLevel = 3, omitSpecies = false, lang = "en", overrides, canTick = false, fallback = false,
+  headingLevel = 3, omitSpecies = false, omitAge = false, lang = "en", overrides, canTick = false, fallback = false,
 } = Astro.props as Props;
 
 // Labels come from the one shared table rather than a ternary, which is what
@@ -113,7 +121,7 @@ const linkName = index === undefined;
 // navigated instead.
 // The meta line is the same three facts in the same order on every page, which
 // is most of what "shown the same way" means to a reader.
-const metaParts = [omitSpecies ? "" : species, age, (tree.location?.neighbourhood ?? "").trim()]
+const metaParts = [omitSpecies ? "" : species, omitAge ? "" : age, (tree.location?.neighbourhood ?? "").trim()]
   .map((s) => (s ?? "").trim())
   .filter(Boolean);
 const bestTime = bestTimeShort(tree);

@@ -18,7 +18,11 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-25 - Amsterdam and Lisbon's photo-less trees: the last-resort sweep is exhausted too
+## 2026-09-26 - Two reader submissions processed: a form test and a worth-it vote on Copenhagen's Mulberry
+
+Row 246, kind feedback, page app-profile, why "Werkt dit überhaupt test" (Dutch, "does this even work, test"): no city or tree attached, a reader checking the form works rather than a claim about anything. Outcome set to `holds`, matching the existing convention for content-free feedback (row 42, "Super", same shape).
+
+Row 247, kind feedback, city Copenhagen, tree cop_001 (The Mulberry of Proviantgarden), why "worth it": a genuine worth-it vote from the same account seven minutes later. Nothing to verify or change, so outcome set to `holds`, matching the convention for every prior "worth it" row (125, 109, 107, 106, 101, 91, 82, 80, 78, 77, 75, 73, 71, 68, all `holds`). Both rows came from the same reader account (confirmed not ours via `scripts/ours.py`), landing on a day visits jumped to 643 against a normal ~170.
 
 Both cities were STARVED per `photo_gaps.py --shortlist` (the ordinary Commons/iNat name-matching sweep found nothing for their photo-less trees), so `photo_last_resort.py --radius 100` ran on both, turning off the plant-word title filter. It found plenty geotagged nearby (up to 40 candidates for some trees: ams_001, ams_011, ams_016 and others). A photo-judge pass looked at the top 1-2 candidates for 8 trees per city (16 images total) and rejected all 16: interiors, statues, bike parking, wide park scenes with no single tree as subject, or a species mismatch. Being 4-19m from the pin did not make any of them the right subject. This is evidence the geotag layer around these two cities' remaining gaps is scenery, not trees; do not re-run this exact sweep on these two cities without a new angle (a different radius, a reader photo, or a partner/aerial source). The full candidate lists remain in `data/photo-queue.json` (`source: "last-resort"`) if a future pass wants to look further down the list for a given tree.
 

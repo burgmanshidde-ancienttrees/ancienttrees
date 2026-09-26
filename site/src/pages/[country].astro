@@ -343,7 +343,7 @@ const mapScript = countryMapScript(
         </h2>
         {oldestTrees.map((r) => (
           <Fragment>
-            <TreeCard tree={r.tree} citySlug={r.stat.slug} treeSlug={r.tslug} note={r.note} />
+            <TreeCard tree={r.tree} citySlug={r.stat.slug} treeSlug={r.tslug} note={r.note} omitAge />
             <p class="coll-citycta"><a href={`/${r.stat.slug}`}>{r.stat.cityName} &rarr;</a></p>
           </Fragment>
         ))}
