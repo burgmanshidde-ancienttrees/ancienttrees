@@ -95,6 +95,10 @@ banned outright. And a figure of ZERO is not shown: a lone 0 under a tree we
 chose to publish reads as a verdict when it is only an empty table (his own
 rule for the save count, 2026-08-26, "pas van 1 tellen").
 
+## Nothing on a screen that does not have to be there
+
+Hidde, 2026-09-26, on the settings footer that read "3,375 trees, updated whenever you open the app. Version 1.0.1 (10) · built 8 Sep 23:05": "liever niks niet dingen neerzetten als het niet strict nodig is, legally ofzo." A line earns its place by being needed, by a person, a licence or the law, and never because it is true or because we could. The footer is now only "Version 1.0.2 (15)", last on the screen. Before adding a line of status, a count or a date, ask who needs it; if the answer is us, it goes in a log, not on the screen.
+
 ## Before it ships
 
 `python3 scripts/copycheck.py` greps every user-facing string for these tics.

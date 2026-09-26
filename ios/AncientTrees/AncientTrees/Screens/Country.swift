@@ -24,6 +24,13 @@ struct CountryView: View {
             longitude: trees.map(\.lng).reduce(0, +) / Double(trees.count))
     }
 
+    /// The mainland, when the website names one: see BrowseFacet.focus.
+    private var mainland: (sw: CLLocationCoordinate2D, ne: CLLocationCoordinate2D)? {
+        guard let f = catalogue.facets.focus(country: country) else { return nil }
+        return (sw: CLLocationCoordinate2D(latitude: f.sw.lat, longitude: f.sw.lng),
+                ne: CLLocationCoordinate2D(latitude: f.ne.lat, longitude: f.ne.lng))
+    }
+
     private var span: CLLocationDistance {
         let lats = trees.map(\.lat), lngs = trees.map(\.lng)
         guard let loLat = lats.min(), let hiLat = lats.max(),
@@ -67,6 +74,7 @@ struct CountryView: View {
                                 showsRecentre: false,
                                 spanMeters: span,
                                 fitsTrees: true,
+                                fitBox: mainland,
                                 selected: .constant(nil))
                             .allowsHitTesting(false)
                         Label("Expand map",

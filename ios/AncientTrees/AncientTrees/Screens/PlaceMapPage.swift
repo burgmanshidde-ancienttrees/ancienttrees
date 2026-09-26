@@ -58,6 +58,14 @@ struct PlaceMapPage: View {
             longitude: trees.map(\.lng).reduce(0, +) / Double(trees.count))
     }
 
+    /// The mainland, when this is a country the website names one for.
+    private var mainland: (sw: CLLocationCoordinate2D, ne: CLLocationCoordinate2D)? {
+        guard case .country(let name) = place,
+              let f = catalogue.facets.focus(country: name) else { return nil }
+        return (sw: CLLocationCoordinate2D(latitude: f.sw.lat, longitude: f.sw.lng),
+                ne: CLLocationCoordinate2D(latitude: f.ne.lat, longitude: f.ne.lng))
+    }
+
     /// Wide enough to hold them all with a little air, and never so tight that
     /// a place with one tree opens on a doorstep.
     private var span: CLLocationDistance {
@@ -79,6 +87,7 @@ struct PlaceMapPage: View {
                     // The whole point of this page is these trees, so it frames
                     // them rather than a point near them. See fitsTrees.
                     fitsTrees: true,
+                    fitBox: mainland,
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
         } header: {

@@ -89,7 +89,8 @@ export interface CountryMapCity {
  * simplest map on the site: at country zoom the job is orientation, not
  * detail. */
 export function countryMapScript(cities: CountryMapCity[],
-                                 frame?: [[number, number], [number, number]]): string {
+                                 frame?: [[number, number], [number, number]],
+                                 focus?: [[number, number], [number, number]]): string {
   const centre = (c: CountryMapCity): [number, number] => [
     c.markers.reduce((s, m) => s + m.lng, 0) / c.markers.length,
     c.markers.reduce((s, m) => s + m.lat, 0) / c.markers.length,
@@ -117,6 +118,10 @@ CITIES.features.forEach(function(f) { b.extend(f.geometry.coordinates); });
 // (map_frame in data/countries), so Canada's map is not centred on the US.
 var FRAME = ${JSON.stringify(frame ?? null)};
 if (FRAME) { b.extend(FRAME[0]); b.extend(FRAME[1]); }
+// A country with trees overseas opens on its mainland instead (map_focus):
+// Martinique, Tenerife and Hawaii stay on the map, one zoom out away.
+var FOCUS = ${JSON.stringify(focus ?? null)};
+if (FOCUS) { b = new maplibregl.LngLatBounds(FOCUS[0], FOCUS[1]); }
 var touched = false;
 function fit() {
   if (touched) return;

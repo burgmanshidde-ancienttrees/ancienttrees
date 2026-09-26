@@ -86,9 +86,11 @@ struct ProfileView: View {
                 // belongs in a settings row.
                 settingsCard
                 aboutCard
-                version
                 signOutRow
                 deleteAccountRow
+                // Last, under everything, and only the version (Hidde,
+                // 2026-09-26: "alleen versie nr helemaal onder alles").
+                version
                 Color.clear.frame(height: 80)
             }
             .padding(.horizontal, 16).padding(.top, 6)
@@ -451,7 +453,9 @@ struct ProfileView: View {
                     HStack(spacing: 12) {
                         Image(systemName: "doc.text").frame(width: 20)
                             .foregroundStyle(Brand.moss)
-                        Text("Legal").font(.callout).foregroundStyle(Brand.ink)
+                        // "Sources", not "Legal" (Hidde, 2026-09-26): what sits
+                        // behind it is who made the map and the photographs.
+                        Text("Sources").font(.callout).foregroundStyle(Brand.ink)
                         Spacer()
                         Image(systemName: "chevron.right")
                             .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
@@ -489,19 +493,16 @@ struct ProfileView: View {
                             .font(.footnote).foregroundStyle(Brand.inkSoft)
                             .fixedSize(horizontal: false, vertical: true)
                     }
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text("The rest").font(.cardTitle).foregroundStyle(Brand.ink)
-                        Link("Terms", destination: URL(string: "https://ancienttrees.app/terms")!)
-                            .font(.footnote.weight(.semibold)).foregroundStyle(Brand.moss)
-                        Link("Privacy", destination: URL(string: "https://ancienttrees.app/privacy")!)
-                            .font(.footnote.weight(.semibold)).foregroundStyle(Brand.moss)
-                    }
+                    // Privacy has its own row one level up, where Apple asks
+                    // for it; the terms somebody agreed to at sign-in live here.
+                    Link("Terms of use", destination: URL(string: "https://ancienttrees.app/terms")!)
+                        .font(.footnote.weight(.semibold)).foregroundStyle(Brand.moss)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(20)
             }
             .brandGround()
-            .navigationTitle("Legal")
+            .navigationTitle("Sources")
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Done") { showingLegal = false }
@@ -536,31 +537,18 @@ struct ProfileView: View {
         let info = Bundle.main.infoDictionary
         let v = info?["CFBundleShortVersionString"] as? String ?? "?"
         let b = info?["CFBundleVersion"] as? String ?? "?"
-        // The DATE is the part that does the work. CFBundleVersion is 1 and
-        // stays 1 until somebody remembers to bump it, so on its own the line
-        // would read "Version 1.0 (1)" on every build ever made and answer
-        // nothing. The executable's own modification time changes every single
-        // compile without anybody maintaining it.
-        var when = ""
-        if let exe = Bundle.main.executableURL,
-           let at = try? FileManager.default.attributesOfItem(atPath: exe.path),
-           let date = at[.modificationDate] as? Date {
-            let f = DateFormatter()
-            f.locale = Locale(identifier: "en_GB")
-            f.dateFormat = "d MMM HH:mm"
-            when = " · built " + f.string(from: date)
-        }
-        return "Version \(v) (\(b))" + when
+        return "Version \(v) (\(b))"
     }
 
     private var version: some View {
-        VStack(spacing: 2) {
-            Text("\(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees, updated whenever you open the app.")
-            Text(buildLine).accessibilityIdentifier("build-line")
-        }
-        .font(.caption2).foregroundStyle(Brand.inkSoft.opacity(0.8))
-        .frame(maxWidth: .infinity, alignment: .center)
-        .padding(.top, 4)
+        // Nothing but the version. The tree count and the build time went on
+        // Hidde's word (2026-09-26): nothing on a screen unless it has to be
+        // there. The build NUMBER stays, and is enough to say which build a
+        // report came from, which is what this line was for.
+        Text(buildLine).accessibilityIdentifier("build-line")
+            .font(.caption2).foregroundStyle(Brand.inkSoft.opacity(0.8))
+            .frame(maxWidth: .infinity, alignment: .center)
+            .padding(.top, 4)
     }
 
     /// What we hold, in one screen, because "where do I change my email

@@ -449,11 +449,23 @@ struct BottomSheet<Header: View, Content: View>: View {
                         defer { handingOff = false }
                         guard drag != 0 else { return }
                         let settled = target - value.translation.height
-                        height = SheetHeight.allCases.min {
+                        let next = SheetHeight.allCases.min {
                             abs($0.points(in: visible) - settled)
                                 < abs($1.points(in: visible) - settled)
                         } ?? .peek
-                        withAnimation(.spring(duration: 0.28)) { drag = 0 }
+                        // ONE change, not two (2026-09-26). The stop and the
+                        // drag used to be set one after the other, so for a
+                        // frame the sheet was the NEW stop plus the OLD drag:
+                        // 677 points at the half stop on a 17 Pro. That frame
+                        // is what the recentre control read, and when it was
+                        // the last value published the control hid itself
+                        // under a sheet that was not there, on every map with
+                        // a list (Hidde: "hardnekkige bug met het centreer
+                        // knopje boven de lijst in alle plekken").
+                        withAnimation(.spring(duration: 0.28)) {
+                            height = next
+                            drag = 0
+                        }
                     }
             )
             .animation(.spring(duration: 0.28), value: height)

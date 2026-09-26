@@ -256,6 +256,15 @@ const countries = defineCollection({
     // hug one border: Canada's sit along the 49th parallel, so a frame fitted
     // to them alone was centred on the United States (2026-09-24).
     map_frame: z.tuple([z.tuple([z.number(), z.number()]), z.tuple([z.number(), z.number()])]).optional(),
+    // The ground the country map OPENS on, as [[west, south], [east, north]],
+    // in place of the frame its trees would give. For a country with trees
+    // overseas: France's Martinique, Spain's Tenerife and Hawaii pulled their
+    // maps out to the Atlantic or the Pacific (Hidde, 2026-09-26: "focussed on
+    // mainland"). The overseas trees stay on the map and keep their own pages.
+    map_focus: z.tuple([z.tuple([z.number(), z.number()]), z.tuple([z.number(), z.number()])]).optional(),
+    // The tree whose photograph fronts the country, when the biggest city's
+    // face is not the one to show (Italy's was a close-up of a burl, 2026-09-26).
+    face_tree_id: z.string().optional(),
   }),
 });
 

@@ -2320,6 +2320,64 @@ def check_every_us_place_has_a_state():
     return out
 
 
+def note_overseas_trees_have_a_frame():
+    """A country whose trees fall apart into groups an ocean apart opens its map
+    on the ocean, unless data/countries names the ground to open on.
+
+    Hidde, 2026-09-26, on France's map opening on the Atlantic because of one
+    tree in Martinique: "show these country maps focussed on mainland", then
+    "geldt punt 4 niet voor meer landen?". Four did (France, Spain, Portugal,
+    the US) and Japan's Okinawa was borderline; each got a `map_focus` box.
+    This catches the next one: cities are linked when within 1000 km of each
+    other, and a country falling into more than one group with neither
+    map_focus nor map_frame set is reported. A NOTE, because a big country
+    with a gap between its cities (Canada's west coast) can be right as it is,
+    and the fix is a decision about a box, not a red build."""
+    import math
+    def km(a, b):
+        la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+        c = (math.sin(la1) * math.sin(la2)
+             + math.cos(la1) * math.cos(la2) * math.cos(lo1 - lo2))
+        return 6371 * math.acos(max(-1.0, min(1.0, c)))
+    by = {}
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        pts = [(t["location"]["latitude"], t["location"]["longitude"])
+               for t in d.get("trees") or []
+               if t.get("location", {}).get("latitude") is not None]
+        if pts:
+            by.setdefault(d.get("country"), []).append(
+                (d.get("city"), (sum(p[0] for p in pts) / len(pts),
+                                 sum(p[1] for p in pts) / len(pts))))
+    decided = set()
+    for path in glob.glob("data/countries/*.json"):
+        with open(path, encoding="utf-8") as fh:
+            c = json.load(fh)
+        if c.get("map_focus") or c.get("map_frame"):
+            decided.add(c.get("country"))
+    # Wide on purpose: the gap between their cities is land, not sea, and the
+    # whole country is the honest frame. Looked at 2026-09-26.
+    decided |= {"Australia", "Brazil", "China"}
+    out = []
+    for country, cities in sorted(by.items(), key=lambda kv: str(kv[0])):
+        if country in decided or len(cities) < 2:
+            continue
+        group = {0}
+        grew = True
+        while grew:
+            grew = False
+            for i, (_, p) in enumerate(cities):
+                if i not in group and any(km(p, cities[j][1]) <= 1000 for j in group):
+                    group.add(i)
+                    grew = True
+        if len(group) < len(cities):
+            apart = sorted(cities[i][0] for i in range(len(cities)) if i not in group)
+            out.append("%s: cities an ocean apart (%s); give data/countries a map_focus "
+                       "box so its map opens on the mainland" % (country, ", ".join(apart[:5])))
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
@@ -2361,7 +2419,8 @@ def main():
                  + check_a_by_licence_names_its_author()
                  + note_a_reader_photograph_is_not_a_reason()
                  + note_a_young_tree_is_not_ancient()
-                 + note_submissions_waiting_for_a_verdict()):
+                 + note_submissions_waiting_for_a_verdict()
+                 + note_overseas_trees_have_a_frame()):
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0

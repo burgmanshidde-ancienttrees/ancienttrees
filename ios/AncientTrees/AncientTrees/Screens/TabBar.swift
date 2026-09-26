@@ -24,7 +24,21 @@ struct TabBar: View {
     /// points plus the 4 it sits off the bottom. The sheet reads this so its
     /// content can end above the bar rather than under it; a number copied
     /// into BottomSheet would drift the first time this control is resized.
-    static let floatDepth: CGFloat = 58 + 4
+    static var floatDepth: CGFloat { 58 + bottomGap }
+
+    /// How far the bar sits off the bottom of the SAFE AREA. Negative on a
+    /// phone with a home indicator, so the bar reaches into that area the way
+    /// Apple's own floating tab bars do: measured 2026-09-26 in the simulator
+    /// beside Photos and Contacts on an iPhone 17 Pro, their bar ends 22
+    /// points above the screen's edge and ours ended 38 (Hidde: "het menu
+    /// lijkt te hoog te zitten"). A phone without one (the SE) has no area to
+    /// reach into, and keeps the 4 points it always had.
+    static var bottomGap: CGFloat {
+        let safe = UIApplication.shared.connectedScenes
+            .compactMap { ($0 as? UIWindowScene)?.keyWindow?.safeAreaInsets.bottom }
+            .first ?? 0
+        return safe > 20 ? 22 - safe : 4
+    }
 
     struct Item {
         /// Empty on the action, which carries no word: see `items`.
@@ -200,6 +214,6 @@ struct TabBar: View {
         // at 20. The layout gate reported that on six screens, and it is
         // right that a floating bar should line up with what it floats over.
         .padding(.horizontal, 16)
-        .padding(.bottom, 4)
+        .padding(.bottom, Self.bottomGap)
     }
 }
