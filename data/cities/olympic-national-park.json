@@ -2,11 +2,11 @@
   "city": "Olympic National Park",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Olympic National Park runs to nearly a million acres, and this is one tree inside it, a few hundred feet off Highway 101 between Ruby Beach and Kalaloch. The Kalaloch cedar was once counted among the largest western red cedars anywhere. In March 2014 a coastal storm split it down its length and roughly half of it came down. The other half is still standing and still alive, which makes it a stranger and more interesting stop than the record-holder was.",
-  "meta_description": "A storm split the Kalaloch cedar in two in 2014. Half of this thousand-year-old western red cedar still stands, a few feet off Highway 101.",
-  "question_meta": "The Kalaloch cedar, roughly 1,000 years old, is the named old tree of Olympic National Park's coast strip. Free, just off Highway 101.",
-  "question_answer": "Olympic National Park holds trees nobody has ever dated, but the oldest one with a name, a trail and a sign is the Kalaloch cedar, a western red cedar of roughly a thousand years, off Highway 101 between Ruby Beach and Kalaloch. Estimates for it run from 800 to 1,200 years. Half of it came down in a storm in March 2014; the standing half is alive, in slow decline, and reached by a flat trail of a few hundred feet from a signed roadside pull-off.",
-  "question_context": "Olympic National Park comes in three parts: mountains, rainforest and a long coastal strip. This tree is on the coastal strip, on Highway 101 between Ruby Beach and Kalaloch, and reaching it costs nothing. The Big Cedar trail leaves a signed roadside pull-off and runs a few hundred feet, flat, to the tree. The access road has potholes and is passable in any car. The nearest services are at Kalaloch Lodge a few miles south, and there is no public transport on this coast.\n\nGo knowing what is there. The dimensions this cedar is famous for, close to six metres through and about fifty three metres tall, date from before March 2014, when a coastal storm split the trunk and brought down roughly half of it. Nobody has published a remeasurement since. What stands now is a great damaged column, alive but declining, with the fallen half beside it. The signs at the tree cover the damage and where it is sensible to stand, and they are current guidance rather than history.",
+  "intro": "Olympic National Park runs to nearly a million acres, and this page maps four of its most striking conifers. The Kalaloch cedar, split by a 2014 storm, still stands half alive off Highway 101. A short walk from Kalaloch's own campground, a Sitka spruce holds its trunk over open air on an eroding root arch. By Lake Quinault stands the world-record Quinault Big Spruce. And fifteen miles south of Forks, on state land just outside the park boundary, the vast, mostly-dead Duncan Cedar somehow keeps growing.",
+  "meta_description": "Four Olympic Peninsula giants: a storm-split cedar, a spruce over open air, a world-record Sitka, and a redcedar just outside the park boundary.",
+  "question_meta": "The Kalaloch cedar, roughly 1,000 years old, is Olympic National Park's oldest named tree. Free, just off Highway 101, one of four mapped here.",
+  "question_answer": "Olympic National Park holds trees nobody has ever dated, but the oldest one with a name, a trail and a sign is the Kalaloch cedar, a western red cedar of roughly a thousand years, off Highway 101 between Ruby Beach and Kalaloch. Estimates for it run from 800 to 1,200 years. Half of it came down in a storm in March 2014; the standing half is alive, in slow decline, and reached by a flat trail of a few hundred feet from a signed roadside pull-off. Three more trees are mapped alongside it: a Sitka spruce at Kalaloch suspended over an eroding creek bank, the record-holding Quinault Big Spruce near Lake Quinault, and the vast Duncan Cedar, which actually stands on state land a few miles outside the park boundary.",
+  "question_context": "Olympic National Park comes in three parts: mountains, rainforest and a long coastal strip. This tree is on the coastal strip, on Highway 101 between Ruby Beach and Kalaloch, and reaching it costs nothing. The Big Cedar trail leaves a signed roadside pull-off and runs a few hundred feet, flat, to the tree. The access road has potholes and is passable in any car. The nearest services are at Kalaloch Lodge a few miles south, and there is no public transport on this coast.\n\nGo knowing what is there. The Kalaloch cedar's famous dimensions, close to six metres through and about fifty three metres tall, date from before the 2014 storm; nobody has remeasured it since. Three more trees are mapped elsewhere in the park: the Tree of Life, a Sitka spruce near Kalaloch Campground whose roots have been undercut by an eroding creek; the record Quinault Big Spruce near Lake Quinault; and the Duncan Cedar, the largest known western redcedar by volume, which actually stands on Washington State land just outside the park boundary, off Highway 101 south of Forks.",
   "faq": [
     {
       "q": "What is the oldest tree in Olympic National Park?",
@@ -23,6 +23,14 @@
     {
       "q": "How long is the walk?",
       "a": "A few hundred feet, flat and well marked, from the signed parking pull-off. It is one of the shortest walks to a tree of this age anywhere on the Washington coast."
+    },
+    {
+      "q": "Is the Duncan Cedar inside Olympic National Park?",
+      "a": "No. It stands on Washington State Department of Natural Resources land about 15 miles south of Forks, near the park boundary but outside it. It needs a Discover Pass rather than a park entrance fee."
+    },
+    {
+      "q": "What other trees are mapped here besides the Kalaloch cedar?",
+      "a": "Three: the Tree of Life, a Sitka spruce at Kalaloch whose roots have been undercut by erosion; the Quinault Big Spruce, a world-record Sitka near Lake Quinault; and the Duncan Cedar, the largest known western redcedar by volume, just outside the park boundary."
     }
   ],
   "oldest_tree_id": "oly_001",
@@ -60,6 +68,102 @@
         "height": 2004
       },
       "how_to_recognise": "You can recognise it by the still-standing half of its trunk beside the wreckage of the half that fell in a 2014 storm. It stands a few hundred feet along the Big Cedar trail off Highway 101."
+    },
+    {
+      "id": "oly_002",
+      "name": "The Duncan Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "age_estimate": "over 1,000 years",
+      "age_min": 1000,
+      "age_max": 1500,
+      "girth_cm": 1853,
+      "height_m": 54,
+      "location": {
+        "address": "Off US Route 101, about 15 miles south of Forks, Washington, near the Olympic National Park boundary",
+        "latitude": 47.719583,
+        "longitude": -124.315056,
+        "neighbourhood": "Reached via about 4 miles of unpaved logging road from Highway 101; a boardwalk trail leads from a small roadside pull-off marked only by a tree-shaped sign"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Duncan_Cedar",
+        "https://www.tripadvisor.com/Attraction_Review-g143047-d15065563-Reviews-The_Duncan_Cedar-Olympic_National_Park_Washington.html"
+      ],
+      "access": "Discover Pass required ($10 day / $45 annual) as it stands on Washington State DNR land, not inside the national park itself. Reached via a short boardwalk from a small, poorly marked roadside pull-off after about 4 miles of unpaved logging road.",
+      "transport": "No public transit; about 15 miles south of Forks, WA, off US-101. Roadside/trailhead parking, unpaved final approach.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The largest known western red cedar in the world is mostly dead wood, and it is still alive. A strip of living bark runs up one trunk and keeps the whole thing going, and a red cedar's resistance to rot means it can hold on like that for a very long time. One forestry expert has said it may manage centuries more if nothing knocks it down.\n\nThe Duncan Cedar is also the largest tree of any species in Washington state: about 5.9 metres through, 54 metres tall, and more than a thousand years old by the usual estimate. Loggers found it in 1975, and it survives because local people argued for it to be left standing.\n\nOne thing to know before you drive out. It does not stand in Olympic National Park. It is on Washington State Department of Natural Resources land just outside the boundary, which is why a state Discover Pass is needed to park, and why it is grouped with the park only by geography and habit.\n\nThe road in is about four miles of unpaved logging track off Highway 101, south of Forks, ending at a small pull-off marked by little more than a tree-shaped sign. A short boardwalk does the rest. Visitors report green growth still coming. Pair it with the Kalaloch Redcedar, a short drive down the coast inside the park, for two very different ways a cedar refuses to die.",
+      "how_to_recognise": "You can recognise it by a trunk nearly six metres through that is mostly dead wood, with one strip of living bark carrying green growth. It stands at the end of a short boardwalk from a pull-off marked by a tree-shaped sign.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "oly_003",
+      "name": "The Tree of Life",
+      "species": "Sitka Spruce (Picea sitchensis)",
+      "age_estimate": "not documented; known as a landmark since at least the 1950s",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Kalaloch Beach, near Kalaloch Campground, Olympic National Park, Washington",
+        "latitude": 47.613056,
+        "longitude": -124.374722,
+        "neighbourhood": "On the beach about 200-400 feet from the Kalaloch Campground day-use parking lot; the tree grows over a small eroded creek gap, its roots forming an arch/cave with the trunk suspended above"
+      },
+      "verified_sources": [
+        "https://www.thekalalochlodge.com/explore/olympic-national-park/tree-of-life/",
+        "https://www.seattlemet.com/news-and-city-life/2025/07/tree-of-life-washington-kalaloch-olympic-peninsula-coast"
+      ],
+      "access": "Free, within Olympic National Park; a short, flat walk (a few minutes) from the Kalaloch Campground day-use parking lot onto the beach.",
+      "transport": "No public transit; on US-101, 34 miles south of Forks, WA. Parking at Kalaloch Campground.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "There is nothing under this tree. A creek has cut through the bluff beneath it and carried the soil away, and the Sitka spruce now hangs over the gap on an arch of its own exposed roots, with open air where the ground used to be. Locals call the hollow underneath the root cave.\n\nIt is one of the most photographed single trees on the Washington coast, and it has been a known sight for a long time. Staff at Kalaloch Lodge say people have been coming to look at it since at least the 1950s, and that it is probably much older than that. Nobody has dated it or measured it, so how old it really is stays an open question. If you know, tell us.\n\nWhat is known is that the clock is running. The erosion that made it famous has not stopped. A 2025 feature reported branches in decline, and the recurring line in everything written about it since is that no one knows how much longer it will stand. As of the most recent reports in 2026, it is still there, still alive, still holding on.\n\nFrom the Kalaloch Campground day-use parking, walk onto the beach, turn right and go a few hundred feet. The pin marks the campground rather than the trunk, but on this stretch of sand you will not miss it.",
+      "how_to_recognise": "You can recognise it by the trunk suspended over a gap in the bluff, held up by an arch of bare roots with a hollow beneath. It stands on the beach a few hundred feet to the right of the Kalaloch Campground access.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "oly_004",
+      "name": "The Quinault Big Spruce",
+      "species": "Sitka Spruce (Picea sitchensis)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 1796,
+      "height_m": 58,
+      "location": {
+        "address": "South Shore Road, near Rain Forest Resort Village, Lake Quinault, Olympic National Park, Washington",
+        "latitude": 47.475741,
+        "longitude": -123.830765,
+        "neighbourhood": "A short, flat 0.4-mile out-and-back trail (the 'Big Spruce Trailhead', a named OSM trail node) starting from the Rain Forest Resort Village parking area on South Shore Road"
+      },
+      "verified_sources": [
+        "https://www.nps.gov/places/000/quinault-big-sitka-spruce-tree-trail.htm",
+        "https://www.tripadvisor.com/Attraction_Review-g58695-d8098577-Reviews-Quinault_Big_Spruce_Tree-Quinault_Washington.html",
+        "https://www.monumentaltrees.com/en/usa/washington/graysharborcounty/2549_lakequinaultresort/7019/"
+      ],
+      "access": "Free; NPS's own page for this trail confirms it is located within Olympic National Park, though the immediate trailhead and lawn area are managed day-to-day by the adjacent Rain Forest Resort Village rather than directly by park staff.",
+      "transport": "No public transit; on South Shore Road at Lake Quinault. Parking at the Rain Forest Resort Village.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is the biggest Sitka spruce on record anywhere, and it is a few minutes' walk from a resort car park. American Forests lists it as the champion of its species, and by volume it ranks among the largest trees of any kind in the continental United States outside California's redwoods and sequoias.\n\nThe numbers are the kind that stop meaning anything until you stand next to them. Nearly 18 metres round the trunk. About 58 metres tall. A crown reaching some 29 metres across. Visitor sources usually give its age as around a thousand years, and that is a loose figure passed from one writer to the next rather than anything counted, so read it as somewhere between eight and twelve centuries. Nobody has published a proper dating.\n\nWhat is missing from this tree's story is also worth noting: drama. The cedars and the beach spruce out to the west are famous partly for what is happening to them, split by a storm, reduced to a strip of living bark, undercut by a creek. No one has reported any damage or decline here. It is simply very large and, as far as anyone has reported, healthy.\n\nIt is also the easy visit. It stands inside Olympic National Park, the trail is flat and 0.4 miles out and back from the Rain Forest Resort Village on South Shore Road by Lake Quinault, and it costs nothing.",
+      "how_to_recognise": "You can recognise it by the trunk, nearly 18 metres round, under a crown some 29 metres across. It stands at the end of the short Big Spruce trail from the Rain Forest Resort Village on South Shore Road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

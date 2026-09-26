@@ -2,15 +2,15 @@
   "city": "Sequoia National Park",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "General Sherman is not the tallest tree, and it is probably not the oldest in its own grove. It is the largest known living single-stem tree on Earth by volume, about 1,487 cubic metres of trunk, and it stands on the Main Trail in the Giant Forest, half a mile from the parking lot that carries its name. In September 2021, with the KNP Complex Fire burning into the grove, park staff wrapped its base in aluminium foil. It worked.",
-  "meta_description": "General Sherman holds 1,487 cubic metres of trunk, the largest living tree on Earth. Staff wrapped its base in foil to save it from fire in 2021.",
-  "question_meta": "General Sherman, 2,300 to 2,700 years old, stands in the Giant Forest in Sequoia National Park, half a mile from the parking lot.",
-  "question_answer": "General Sherman is the giant sequoia at the centre of the Giant Forest in Sequoia National Park, most often dated at 2,300 to 2,700 years, with older estimates running as high as 3,200. It is the largest living single-stem tree on Earth by volume rather than the oldest: other sequoias in the same grove may well be older, and none has been cored to settle it. It is a half-mile walk from the Sherman Tree parking lot, downhill on the way in.",
-  "question_context": "Sequoia National Park is large, and General Sherman is the reason most first-time visitors drive into this part of it. The tree stands in the Giant Forest, on the Main Trail, about half a mile from the Sherman Tree parking lot. The walk in is downhill and partly paved, which makes the walk out the uphill one. A seasonal shuttle runs for anyone who would rather not do it twice.\n\nThe park charges an entrance fee at the gate. Once you are through, the tree costs nothing. There is no public transport into the park, and the nearest town is Three Rivers, about 45 minutes' drive from the entrance.\n\nThe thing worth knowing before you arrive is that the fame is about bulk, not height. At 83.6 metres it is an ordinary tall sequoia. At about 31 metres round the base it is not, and the roughly 1,487 cubic metres of trunk is what makes it the largest living single-stem tree on the planet.",
+  "intro": "General Sherman is not the tallest tree here, and it is probably not the oldest in its own grove. It is the largest known living single-stem tree on Earth by volume, on the Main Trail in the Giant Forest. A short walk away, the Congress Trail passes five more giants measured just as carefully: the President, second largest on Earth by one count, plus four more named for a president, a Cherokee scholar and each other, including one that lost half its height to a 2005 snowstorm and simply kept growing.",
+  "meta_description": "General Sherman holds the most wood of any living tree. Five more giants stand nearby on the Congress Trail, from the President to the Washington Tree.",
+  "question_meta": "General Sherman, 2,300 to 2,700 years old, is the largest living tree on Earth, one of six giants mapped in the Giant Forest.",
+  "question_answer": "Sequoia National Park's oldest known tree is probably not General Sherman, its most famous one. That title likely belongs to The President, a giant sequoia on the Congress Trail dated at roughly 3,200 years by a detailed 2011-2012 measuring campaign, against Sherman's more commonly cited 2,300 to 2,700 (older estimates for Sherman also reach 3,200). Neither tree has been cored, so read both figures as careful estimates rather than counts. The President stands a short, paved walk from the Sherman Tree parking lot, about 140 feet from the Chief Sequoyah Tree.",
+  "question_context": "Sequoia National Park charges an entrance fee at the gate. Once you are through, the tree costs nothing. There is no public transport into the park, and the nearest town is Three Rivers, about 45 minutes' drive from the entrance.\n\nThe thing worth knowing before you arrive is that the fame is about bulk, not height. At 83.6 metres General Sherman is an ordinary tall sequoia. At about 31 metres round the base it is not, and the roughly 1,487 cubic metres of trunk is what makes it the largest living single-stem tree on the planet.\n\nA short walk from the Sherman Tree parking lot, the paved Congress Trail loops past five more measured giants: the President, likely the true elder of the group at roughly 3,200 years; the Chief Sequoyah and Lincoln trees, both ranked among the ten largest sequoias on Earth depending on how the measurers count; and the Franklin and Washington trees, standing together at 1,800 metres, one of which lost half its height to a 2005 snow load and kept growing regardless.",
   "faq": [
     {
       "q": "What is the oldest tree in Sequoia National Park?",
-      "a": "Nobody knows, and General Sherman is not a safe answer to that question. It is dated at 2,300 to 2,700 years, with older estimates as high as 3,200, but other sequoias in the Giant Forest may be older and none of them has been cored. What General Sherman holds is the volume record."
+      "a": "Likely The President, a giant sequoia on the Congress Trail dated at roughly 3,200 years by a detailed 2011-2012 survey. General Sherman, the park's most famous tree, is more often put at 2,300 to 2,700 years, though older estimates for it also reach 3,200. Neither tree has been cored, so both figures are careful estimates rather than counts."
     },
     {
       "q": "How much does it cost to see General Sherman?",
@@ -23,9 +23,13 @@
     {
       "q": "Did General Sherman survive the wildfires?",
       "a": "Yes. The KNP Complex Fire reached the Giant Forest in September 2021 and park staff wrapped the base of the tree in protective aluminium foil. The tree came through unharmed and was remeasured in 2024."
+    },
+    {
+      "q": "What other giant sequoias stand near General Sherman?",
+      "a": "Five more, all on the paved Congress Trail loop a short walk from the Sherman Tree parking lot: the President, the Chief Sequoyah, the Lincoln and Franklin trees, and the storm-shortened Washington Tree, which lost half its height in 2005 and is still growing back."
     }
   ],
-  "oldest_tree_id": "seq_001",
+  "oldest_tree_id": "seq_002",
   "trees": [
     {
       "id": "seq_001",
@@ -61,6 +65,171 @@
         "height": 7933
       },
       "how_to_recognise": "You can recognise it by its immense base, about 31 metres round, the largest trunk volume of any living tree on Earth. It stands on the Main Trail in the Giant Forest, near the Sherman Tree parking lot."
+    },
+    {
+      "id": "seq_002",
+      "name": "The President",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 3,200 years",
+      "age_min": 3000,
+      "age_max": 3240,
+      "girth_cm": 2840,
+      "height_m": 75.3,
+      "location": {
+        "address": "Congress Trail, Giant Forest, Sequoia National Park, Tulare County, California",
+        "latitude": 36.57341,
+        "longitude": -118.7501,
+        "neighbourhood": "Giant Forest, on the Congress Trail loop, reached from the Sherman Tree parking lot"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/President_(tree)",
+        "https://www.americansouthwest.net/california/sequoia/congress-trail.html"
+      ],
+      "access": "Paid entry (Sequoia National Park entrance fee); on the paved Congress Trail loop, reached from the Sherman Tree parking lot near General Sherman.",
+      "transport": "No public transit; nearest town Three Rivers, CA, about 45 minutes' drive from the park entrance.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The oldest known living giant sequoia stands on a trail loop a short walk from General Sherman. The President is reckoned at roughly 3,200 years, a figure that came out of an extensive measuring campaign in 2011 and 2012.\n\nThat same work made it one of the most thoroughly measured trees on Earth. Count trunk and branches together and it is the second-largest tree known: about 1,278 cubic metres of trunk and some 255 more in limbs. Count the trunk alone and it slips a few places down the list, which is why rankings of the biggest trees do not agree on where to put it. Both numbers are honest. They are measuring different things.\n\nIt was named in 1923 for Warren G. Harding, the sitting president, by which point it had already been standing for around three thousand years. Fire has been through here many times in that span, and the prominent white burn scar on its north side is the record of it. The crown is unusually dense for a tree this old, and the first large limb does not branch out until 37 metres up.\n\nIt stands on the paved Congress Trail, reached from the Sherman Tree parking lot, about 140 feet downhill from the Chief Sequoyah Tree. The park charges at the gate; the tree itself asks nothing.",
+      "how_to_recognise": "You can recognise it by the white burn scar on its north side and a dense crown whose first big limb starts 37 metres up. It stands on the Congress Trail, about 140 feet downhill from the Chief Sequoyah Tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "seq_003",
+      "name": "Chief Sequoyah Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 2755,
+      "height_m": 69.6,
+      "location": {
+        "address": "Congress Trail, Giant Forest, Sequoia National Park, Tulare County, California",
+        "latitude": 36.57379,
+        "longitude": -118.75,
+        "neighbourhood": "Giant Forest, on the Congress Trail loop, about 140 feet uphill from the President Tree"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Chief_Sequoyah_Tree",
+        "https://www.sequoiaquest.com/chief-sequoyah.html"
+      ],
+      "access": "Paid entry (Sequoia National Park entrance fee); on the paved Congress Trail loop.",
+      "transport": "No public transit; nearest town Three Rivers, CA, about 45 minutes' drive from the park entrance.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tree is named for the man who gave the Cherokee a written language. Sequoyah finished his syllabary in 1821, and a century later one of the largest trees in the Giant Forest was given his name.\n\nPark superintendent Colonel John R. White gave it the name in the 1920s. One source says 1926 and another 1928, and neither has corrected the other, so both years stay here. The sources also disagree slightly on where it ranks: 27th largest giant sequoia in the world by one count, 30th by another, and ninth largest in the Giant Forest itself. The quarrel is about places on a list, not about scale. The trunk is roughly 27.5 metres round at the base and the tree stands close to 70 metres tall.\n\nWalk round it and two things mark it out. On the southern face is an enormous burl, a swollen knot of wood bulging from the trunk. On the western face is fire scarring, the ordinary damage of a tree that has lived through centuries of fires in this forest.\n\nIt stands on the paved Congress Trail, about 140 feet uphill from the President. Nobody has published an age for it. If you know of one, tell us.",
+      "how_to_recognise": "You can recognise it by the enormous burl bulging from its southern face and the fire scar on its western side. It stands on the Congress Trail, about 140 feet uphill from the President.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "seq_004",
+      "name": "Lincoln Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 3010,
+      "height_m": 80.0,
+      "location": {
+        "address": "Giant Forest, Sequoia National Park, Tulare County, California",
+        "latitude": 36.57187,
+        "longitude": -118.75604,
+        "neighbourhood": "Giant Forest grove, near the Congress Trail loop"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Lincoln_Tree",
+        "https://sequoiaquest.com/lincoln.html"
+      ],
+      "access": "Paid entry (Sequoia National Park entrance fee); Giant Forest grove, reached from the Congress Trail area near General Sherman.",
+      "transport": "No public transit; nearest town Three Rivers, CA, about 45 minutes' drive from the park entrance.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Depending on who held the tape, this tree holds 44,471 cubic feet of wood or 51,000. That gap of some 6,500 cubic feet is the argument between the measurers, and it is why the Lincoln Tree is usually called the fourth largest tree on Earth rather than simply stated to be.\n\nThe lower figure was calculated by the dendrologist Wendell Flint. The higher one came from earlier measurements by White and Pusateri. Neither side has been proved wrong, and the ranking survives both: whichever number you take, very few trees anywhere are bigger.\n\nThe base alone is about 30 metres round, irregular rather than neatly cylindrical, and the tree stands close to 80 metres tall. It carries the marks of a long life in a forest that burns. There are prominent fire scars on its north, south and west faces, a white burl swelling out of the northeast side, and at the top a bleached, broad-branched crown that looks weathered from the ground.\n\nIt stands in the Giant Forest grove near the Congress Trail, within walking distance of General Sherman and the President. Nobody has published an age for it. If you know one, tell us.",
+      "how_to_recognise": "You can recognise it by the burn scars on three sides of its irregular base, a white burl on the northeast face and a bleached, broad-branched top. It stands in the Giant Forest near the Congress Trail.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "seq_005",
+      "name": "Franklin Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 2890,
+      "height_m": 68.2,
+      "location": {
+        "address": "Giant Forest, Sequoia National Park, Tulare County, California",
+        "latitude": 36.56771,
+        "longitude": -118.75864,
+        "neighbourhood": "Giant Forest grove, near the Washington Tree"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Franklin_(tree)",
+        "https://sequoiaquest.com/franklin.html"
+      ],
+      "access": "Paid entry (Sequoia National Park entrance fee); Giant Forest grove.",
+      "transport": "No public transit; nearest town Three Rivers, CA, about 45 minutes' drive from the park entrance.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The eighth largest giant sequoia in the world went unrecognised until the 1950s, and the likely reason was the neighbour. The Franklin Tree stands near the much larger Washington Tree, and a trunk nearly 29 metres round the base could apparently pass as supporting cast beside it.\n\nIt was the dendrologist Wendell Flint who measured it properly, during his campaign in the 1950s, and who named it for Benjamin Franklin. So the name arrived late, attached to a tree that had been standing in plain sight for a very long time.\n\nThe years since have added an irony. The Washington Tree had its crown cut down by a lightning fire and then lost half its height to a snow load in 2005, and now ranks around 55th. The Franklin Tree, at about 68 metres tall, still ranks eighth. The tree that hid it is now far down the list, and it is the one that was overlooked that holds its place.\n\nIt grows above 1,800 metres in the Giant Forest grove. The pin is approximate, so expect to look for it near the Washington Tree rather than walk straight to it. Nobody has published an age. If you know one, tell us.",
+      "how_to_recognise": "You can recognise it by the sheer base, nearly 29 metres round, on a tree about 68 metres tall. It stands in the Giant Forest close to the Washington Tree, whose snapped, shortened top is the easier landmark to find first.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "seq_006",
+      "name": "Washington Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 2862,
+      "height_m": 35,
+      "location": {
+        "address": "Giant Forest, Sequoia National Park, Tulare County, California",
+        "latitude": 36.56833,
+        "longitude": -118.76083,
+        "neighbourhood": "Giant Forest grove, near the Franklin Tree"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Washington_Tree",
+        "https://sequoiaquest.com/washington-giant-forest.html"
+      ],
+      "access": "Paid entry (Sequoia National Park entrance fee); Giant Forest grove.",
+      "transport": "No public transit; nearest town Three Rivers, CA, about 45 minutes' drive from the park entrance.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Until 2005 this was the second largest tree known on Earth. Then a winter did what centuries of fire had not.\n\nThe trouble started with lightning. A strike set the tree burning in September 2003, by one source, or September 2002 by another, and the fire cut back the crown. In January 2005 a heavy load of snow finished the job, collapsing the upper half and leaving what remained of the upper trunk hollow. The Washington Tree went from about 77 metres tall to somewhere between 35 and 37. It had held 49,550 cubic feet of wood. It now holds a little over 30,000, and that figure counts the hollows.\n\nMost trees would be a stump after that. This one is not. Both sources report new foliage and small branches growing back on the south side, and it has been put back on the lists of the largest trees, around 55th, from second. A giant sequoia's answer to catastrophe is apparently to keep going at a lower altitude.\n\nIt stands in the Giant Forest grove near the Franklin Tree, and it is the easier of the two to spot: look for the shortened, broken-topped column with green coming back on one side. Nobody has published an age for it. If you know one, tell us.",
+      "how_to_recognise": "You can recognise it by the broken, hollowed top, cut to about 35 metres by a 2005 snow collapse, with new green growth on the south side. It stands in the Giant Forest near the Franklin Tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
     }
   ]
 }
