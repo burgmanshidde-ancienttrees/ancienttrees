@@ -11,6 +11,58 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-09-26 - Night run 2026-09-26 20:20 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 70.7 minutes of its 120 minute window, 320 turns, 19 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: Waipoua Forest, Wellington, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: I'll stop polling and just wait for the build's completion notification.
+- Attempt 2: The astro build is still running in the background (this site has thousands of pages and a full build has taken 11+ minutes before). I've released the three stranded verify claims, logged the missing write/merge cost entry, and drafted the LOG.md entry for the completed work (3 trees shipped: Hilvarenbeek's Witch Tree of Black Kate, Plunge's Oak of Laukiai, Veľké Borové's wild apple; plus a duplicate correctly folded into Kozy's existing tree rather than published twice). I'm waiting for the build to finish before running qa and committing/pushing — will continue as soon as it completes.
+- Attempt 3: I'll hold here until the astro build monitor reports back before continuing with qa.py and the commit.
+- Attempt 4: I'll stop polling now and wait for the Monitor and Agent notifications to arrive.
+
+## 2026-09-26 - Finished a stranded Tree of the Year write pass: 3 trees shipped, 1 folded as a duplicate
+
+Continuing a window an earlier attempt cut short at 31 minutes having
+shipped nothing, though the clock still had 89 minutes left. `passcheck.py
+--claims` found three standing verify claims (Hilvarenbeek, Velke Borove,
+Plunge) with 111-123 minutes still on them, and the working tree already
+held the finished output of that claimed pass: fully written, sourced
+stories merged into the city files, sitting uncommitted. Read and checked
+the diffs rather than redoing the research.
+
+**Shipped, in commit that follows this entry:** three of the four Tree of
+the Year candidates the earlier verify pass (`211884` tokens, logged
+2026-09-26) had cleared now have full stories. `hvb_002`, the Witch Tree
+of Black Kate on the Ten Vorsel estate near Bladel (a day trip from
+Hilvarenbeek), the beech a 19th-century novel hung a beheaded-robber-chief
+legend on, fourth in the 2020 European Tree of the Year. `plg_007`, the
+Oak of Laukiai (Plunge), the 2026 European Tree of the Year winner, the
+first Lithuanian tree to take the title. `vbo_002`, the Old Wild Apple
+Tree of Žiar (Veľké Borové), a self-seeded apple that placed second in
+Europe the same year. All three carry `age_basis: source`, real access
+notes (private homestead opened to the public for Laukiai; working
+farmland for the apple) and `location_precision: confirmed`.
+
+The fourth candidate, a plane in Kozy researched independently from the
+Żywiec side, turned out to be the same tree as the already-published
+`koz_001`: same park, same girth, coordinates 39m apart. Rather than
+publish a duplicate, folded its extra sourcing into `koz_001` directly
+(tightened the pin to confirmed, stated the 2013 European runner-up
+result as fact instead of unconfirmed colour) and recorded the collision
+in the new `data/leads/kozy.json`. Marked all four resolved in
+`data/leads/_tree-of-the-year.json` and released the three standing
+claims.
+
+Logged the write/merge step in `data/agent-costs.json` (it had only been
+logged through verify) so the day's retro sees the full pass rather than
+half of it. `preflight.py`: 648 cities, 0 problems. Pushed after
+`astro build` and `qa.py` ran clean locally; `deploy.yml` runs its own
+gate on every push regardless.
+
 ## 2026-09-26 - Recovered two trees stranded in the working tree; found and recorded a third loss
 
 Continuing the window an earlier attempt in this session cut short at 54
