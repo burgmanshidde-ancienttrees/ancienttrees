@@ -8731,8 +8731,9 @@
    "target": "Congaree National Park",
    "kind": "write",
    "tokens": 120741,
-   "trees": 4,
-   "note": "Wrote stories + recognition lines for all 4 Congaree trees (cgr_001-004), merged into data/cities as a new place. First-time place, so the 4-tree fixed cost was not amortised across a larger batch."
+   "trees": 0,
+   "wasted": 120741,
+   "note": "Claimed 'wrote stories, merged into data/cities as a new place', but no data/cities/congaree-national-park.json ever existed in git history: the background session ended before its output reached disk. Corrected 2026-09-26 (later session) after a leads.py/agent-costs.json cross-check found the gap; see CURATION.md same date. cgr_003/cgr_004 survive as sourced prose in data/leads/congaree-national-park.json; cgr_001/cgr_002 are named only, not reconstructable without fresh verification."
   },
   {
    "target": "_famous-belgium",
