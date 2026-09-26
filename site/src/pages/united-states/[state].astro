@@ -135,8 +135,10 @@ const collLine =
 
 // P2: the answer to "oldest tree in [state]" in the first sentence, from the
 // data, so it moves the day an older tree is published.
+// Mid-sentence, a name's leading "The" is lower case: "is the Treaty Oak".
+const midName = (n: string) => n.replace(/^The /, "the ");
 const answer = oldest
-  ? `The oldest tree we map in ${state} is ${oldest.tree.name} in ${oldest.stat.name}, at ${oldest.tree.age_estimate ?? "an uncertain age"}.`
+  ? `The oldest tree we map in ${state} is ${midName(oldest.tree.name)} in ${oldest.stat.name}, at ${oldest.tree.age_estimate ?? "an uncertain age"}.`
   : `These are the remarkable trees we map in ${state}.`;
 const countLine = `We map ${nTrees(total)} across ${places.length} places in ${state}, each one researched and verified.`;
 
