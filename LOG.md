@@ -10,6 +10,19 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 - Night run 2026-09-26 08:54 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 84.7 minutes of its 120 minute window, 445 turns, 42 commands refused by the allowlist, ended clean (success). 8 commit(s), none of them a published tree.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: I've staged all the data changes for Congaree National Park (verified trees, stories, leads updates, cost log, and the required US state entry). I'm now waiting for the Astro site build to finish so I can confirm it passes before committing and pushing.
+- Attempt 2: Waiting on the background build; I'll pick back up as soon as it reports back.
+- Attempt 3: Build is progressing cleanly. I'll pause here and pick up when the monitor reports completion or an error.
+- Attempt 4: I'm waiting on a local build to confirm the fix for the broken site (a meta-description length bug in the Duncan Cedar tree page on Olympic National Park) before committing. I'll check back once that's done.
+
 ## 2026-09-26 (continuation, recovering the previous attempt's stopped work) - 15 trees committed, three passes dispatched
 
 The previous attempt in this window (logged below as "ended without saying
