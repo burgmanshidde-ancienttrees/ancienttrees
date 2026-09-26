@@ -13,6 +13,76 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-26
+
+Reviewed commits since the last review (2026-09-25, `7e3a5626`) through HEAD
+(`d67ff563`), roughly 20 commits: a US-national-parks day for the assembly
+line (Congaree, Great Smoky Mountains and Redwood National Park claimed for
+verify; Charleston, Savannah, Philadelphia and San Diego deepened; four new
+national/historic-park places written, Ancient Bristlecone Pine Forest,
+Gettysburg and Kings Canyon National Park among them, several under the
+single-famous-tree exception where below the four-tree floor), a new Balboa
+Park page (Contract H), and Contract L landing its first built pages at
+`/united-states/[state]` (blueprint v1.22, approved by Hidde earlier the same
+day). Read the new places' data and stories in full against Step 2/3 and hard
+rule 10: no em dashes, no exclamation marks, no banned words used editorially
+(one near-miss that isn't one: `sav_003`'s name is literally "The Majestic
+Oak," on "Majestic Oaks Circle," so "majestic" is a proper name being
+reported, not the writer's adjective). Ages state their basis and flag
+disagreement honestly. Access lines for the Ancient Bristlecone Pine Forest
+($3/$6 paid), Gettysburg (free, public land throughout) and Kings Canyon
+(NPS fee for General Grant/Robert E. Lee, free for the Boole Tree on Forest
+Service land just outside the park boundary) all pass the three-part
+hard-rule-10 test honestly. Sampled the built `/united-states/california.html`
+against Contract L: title, meta description, H1 and first-two-sentences all
+match the spec, schema and breadcrumbs are correct, and the "10 oldest trees"
+block is genuinely ranked oldest-first.
+
+**BLOCKER — a tree's age can read two different numbers on its own card, on
+two page types, and one is live today.** `MODES.oldest.note()` in
+`site/src/lib/collection-rank.ts` prints `Roughly ${age_min} to ${age_max}
+years old.` from the tree's raw bounds, and this is what Contract G's and the
+new Contract L's "oldest trees we map in [place]" block renders as the card's
+`tree-story` line (via `TreeCard.astro`'s `note` prop, `[country].astro:346`
+and `united-states/[state].astro:216`). The card's `tree-meta` line just above
+it renders the tree's hand-written `age_estimate` instead. Where the two
+fields disagree, the same card states both, back to back. Confirmed live:
+`data/cities/sequoia-national-park.json`'s General Sherman Tree (`seq_001`)
+carries `age_estimate: "roughly 2,300 to 2,700 years"` (this is what
+`tree-meta` shows) alongside `age_min: 2200, age_max: 3200` (this is what
+`tree-story` computes and shows one line down). Read directly in
+`site/dist/united-states/california.html`: the General Sherman card states
+"roughly 2,300 to 2,700 years" and then "Roughly 2,200 to 3,200 years old."
+for the same tree in the same card. This is not P7's honest range-with-caveat
+(no disagreement is named; a reader just sees two different numbers), and it
+is not confined to today's new state page: the identical mechanism has backed
+Contract G's country pages since v1.19 (2026-09-19), so any tree whose
+`age_min`/`age_max` diverges from its own `age_estimate` string will show the
+same contradiction there too. This is the exact class of bug ("seven
+self-contradicting pages, all live") that the 2026-07-29 walk founded this
+review layer to catch, now live on the newest page type as well as an
+existing one.
+
+**NOTE — a park that straddles two states is about to be written into one,
+and the state file already committed before the write happened.**
+`data/us-states.json` (added in `8a4698c9`, this run) records
+`"great-smoky-mountains": "Tennessee"`, but Great Smoky Mountains National
+Park sits astride the Tennessee/North Carolina line, and
+`data/leads/great-smoky-mountains.json`'s own notes describe a soon-to-be-
+written fourth tree, `gsm_004`, "The Big Poplars of Caldwell Fork," at
+Cataloochee, a valley that is on the North Carolina side (Cades Cove and the
+Greenbrier/Ramsey Cascades leads already in that file are the Tennessee
+side). Contract L's own rule is "one line per US place" in `us-states.json`,
+one state per place with no provision for a place spanning two: once the
+pending write pass lands `gsm_004` with a Cataloochee, NC address, the
+Tennessee state page (already built, `/united-states/tennessee`) would list a
+tree whose own address says North Carolina, unless someone corrects this
+before or during that write. Not live yet since `data/cities/great-smoky-
+mountains.json` does not exist; worth catching now, before the mismatch ships,
+rather than after.
+
+---
+
 ## 2026-09-25
 
 Reviewed roughly 100 commits since the last review (2026-09-24) through
