@@ -18434,6 +18434,27 @@
    ],
    "trees": 11,
    "logged": true
+  },
+  {
+   "started": "2026-09-26T16:46:44+00:00",
+   "date": "2026-09-26",
+   "run_id": "36256656809",
+   "minutes": 67.9,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 393,
+   "denials": 22,
+   "denials_source": "permission_denials: Bash(cat ; ? ; ? ; ? ...), Bash(cd && git), Bash(cd && npm ; tail ; echo), Bash(cd && npm), Bash(cd ; python3 | tail ; for ...), Bash(curl ; Intel ; grep | head), Bash(curl ; Intel ; head), Bash(env | grep | sed), Bash(find | xargs ; cat), Bash(for ; do ; if ; then ...), Bash(for ; do ; python3 ; import ...), Bash(git || rm ; ls), Bash(if ; then ; else ; fi), Bash(if ; then ; fi ; cat), Bash(ls ; find), Bash(python3 ; import ; PHOTO_MISSING ; v ...), Bash(python3 ; import ; def ; return ...), Bash(rm), Bash(test && echo || echo), Bash(until ; do ; done ; echo), Bash(while ; do ; done | head)",
+   "ended": "success",
+   "tokens": 6066637,
+   "claims_held": [
+    "Redwood National Park"
+   ],
+   "commits": 4,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
