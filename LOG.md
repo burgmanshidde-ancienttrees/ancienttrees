@@ -10,6 +10,49 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 (continuation, recovering the previous attempt's stopped work) - 15 trees committed, three passes dispatched
+
+The previous attempt in this window (logged below as "ended without saying
+anything") had actually done the write-stories work for its five claimed
+places, it just never committed before deciding it was done. `git pull
+--rebase --autostash` surfaced all of it as a stash conflict on
+`data/in-flight.json` (trivial, both sides empty, resolved), plus clean
+uncommitted diffs everywhere else.
+
+- **Committed the recovered work: 15 trees across 7 places.** The Middleton
+  Oak (Charleston, chs_003), the Majestic Oak (Savannah, sav_003), three
+  Morris Arboretum trees (Philadelphia, phl_002-004), two Balboa Park trees
+  plus a new Balboa Park page (San Diego, sdg_005-006), two Kubota Garden
+  conifers beside Sylvia (Seattle, sea_007-008), and full write-outs for four
+  new places: Olympic National Park (4 trees), Sequoia National Park (6),
+  Yosemite National Park (5), and Kings Canyon National Park (3, one short of
+  the usual floor but publishing on the single-famous-tree reasoning its own
+  leads file already recorded for General Grant), plus two more single-place
+  pages, Gettysburg (4 trees) and the Ancient Bristlecone Pine Forest (1,
+  single-famous-tree exception). Two species pages (Japanese Red Pine, Sitka
+  Spruce) came with the new trees. `preflight.py`: 0 problems. Pushed to
+  main.
+- **Checked the top of the ladder before dispatching anything new**: no
+  pending submissions or photo-inbox sightings (rung 1), `health.py` rung 2
+  clear (nothing broken, nothing stale, 0 BLOCKER), no superlative
+  collisions, 0 of 3,405 published trees missing `how_to_recognise` (rung 7
+  fully closed). `scout_next.py --target` and `city_queue.py --next` both
+  came back empty of genuinely new work: the two "unopened ranked cities with
+  supply" they still list, Jersey City and Funchal, are both documented dead
+  ends from three earlier passes (Jersey City duplicates New York, Funchal is
+  already published as Madeira); `city_queue.py` hasn't caught up to that.
+- **Dispatched three passes to use the rest of the window**: a write-stories
+  pass on the 8 trees `passcheck.py --pending` found fully verified with no
+  story (Congaree, Great Smoky Mountains, Redwood NP, plus two famous-tree
+  singles from the France/China batches); a photo-judge viewing pass on the
+  Search-Console-backed demand shortlist (`photo_gaps.py --shortlist`:
+  Singapore, Amsterdam, Oahu, Munich, Brisbane, New York, Austin, Utrecht,
+  Warsaw, Fukuoka, The Hague); and a verify pass on the 20 unsourced Lithuania
+  famous-oak leads `prepare.py` flagged as ready to refill the shelf. All
+  three claimed in `data/in-flight.json` before dispatch, running in parallel
+  against non-overlapping files. Results land in a later entry once they
+  report back.
+
 ## 2026-09-26 - Night run 2026-09-26 02:00 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 66.0 minutes of its 120 minute window, 431 turns, 22 commands refused by the allowlist, ended clean (success). 6 commit(s), none of them a published tree. Claims left behind: Savannah, San Diego, Sequoia National Park, Olympic National Park, Yosemite National Park, which block the top of the queue until they expire.
