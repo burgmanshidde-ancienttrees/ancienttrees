@@ -1,0 +1,208 @@
+[
+  {
+    "name": "Gastilonys Oak",
+    "species": "Pedunculate Oak (Quercus robur, presumed)",
+    "species_basis": "genus commonly used generically in Lithuanian registers; presumed robur as the dominant native oak, not itemised explicitly in either source",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 525,
+    "location": {
+      "address": "Kauno marių regioninis parkas (Kaunas Reservoir Regional Park), beside the Gastilionys outcrop (Gastilionių atodanga), Rumšiškės eldership, Kaišiadorys district",
+      "latitude": 54.871942,
+      "longitude": 24.154606,
+      "neighbourhood": "Gastilionys, Kaunas Reservoir Regional Park"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Gastilioni%C5%B3_%C4%85%C5%BEuolas",
+      "https://www.manokrastas.lt/ka-veikti-kaisiadoriu-rajone-gastilioniu-azuolas-boru-misko-pusis/"
+    ],
+    "access": "Free; stands in the public Kauno marių Regional Park, reached via signposted paths at the start of the Gastilionys outcrop gorge, a public geological viewpoint",
+    "transport": "Kaišiadorys district, about 16km east of central Kaunas by road toward Rumšiškės; no public transit stop found this pass, reachable by car as a day-trip addition to Kaunas",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Both sources fetched directly (not from search summaries). lt.wikipedia (Gastilionių ąžuolas, drawing on the state Cadastre): girth 550cm (measured at trunk base, an unusual measurement point rather than the standard 1.3m), height 25m. manokrastas.lt (a Kaišiadorys-district tourism article, genuinely independent of Wikipedia): girth 5.25m (525cm) at unspecified height, height 21m, and explicitly calls it 'the thickest tree' in Kauno marių Regional Park, a real superlative claim with a named source. TWO INDEPENDENT SOURCES on existence, species (genus) and the superlative; girth and height figures disagree between them (recorded both, used manokrastas.lt's 525cm/21m as the headline figures since they are directly comparable measurements at a stated height, flagged the wiki figures as an alternate reading at a different measurement point). Protected as a state nature heritage object since 2008. Grows in a mixed forest next to a former logging site near the Gastilionys outcrop (a public geological attraction in its own right, a cliff/gorge feature), 'symmetrically branched, able to withstand strong winds off the reservoir.' No age recorded in either source; not derived (no consistent LT growth-rate convention found across this batch to derive one honestly). DESTINATION TEST: recommend NOT standalone (nearest published place, Kaunas, is 16km away and Kaunas already has an established day-trip pattern for exactly this kind of register tree, e.g. kun_006 Netoniai Oak at 12.3km, kun_007/008 Sitkūnai Forest Oaks and kun_009 Kiaunupis Oak at ~18km). RECOMMEND joining Kaunas (data/cities/kaunas.json) as a day-trip addition, next free id kun_010, labelled honestly with its real distance and the outcrop pairing, the same way the existing kun_ day-trip trees are labelled. Alive: no dated recent photo confirmation checked this pass beyond the sourced descriptions; nothing suggests decline."
+  },
+  {
+    "name": "The Plokščiai Oak (Panemunė)",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 520,
+    "location": {
+      "address": "Beside the 'Kentėjimo kelias' (Suffering Path) memorial, near road 3807 (Kiduliai-Gelgaudiškis-Gerdžiūnai), Plokščiai village, on the south bank of the Nemunas within Panemunių Regional Park, Šakiai district",
+      "latitude": 55.083221,
+      "longitude": 23.168522,
+      "neighbourhood": "Plokščiai, Panemunių regioninis parkas"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Plok%C5%A1%C4%8Di%C5%B3_(Panemun%C4%97s)_%C4%85%C5%BEuolas",
+      "https://e-seimas.lrs.lt/rs/legalact/TAD/b6649651417311e89517ff5ccea63d58/format/ISO_PDF/"
+    ],
+    "access": "Free; stands on public land within Panemunių Regional Park, beside a public road and a memorial site",
+    "transport": "Šakiai district, about 2.8km from Raudonė (Jurbarkas district) by road, on the opposite side of the Nemunas within the same regional park; reachable by car, no public transit checked this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "lt.wikipedia (Plokščių (Panemunės) ąžuolas) gives girth 5.2m, height 34m (tall for an oak), species Quercus robur, and cites the Environment Ministry decree No. D1-131 of 2025-09-10 as the designation source (the same September 2025 order, one of a wave of newly designated oaks, that also designated Kaunas's kun_006 Netoniai Oak). Confirmed this is the Panemunių Regional Park's own registered 'Plokščių ąžuolas' by cross-checking the park's own nature-heritage-object list (which separately names 'Gelgaudiškio dvaro parko pirmasis/antrasis ąžuolas', 'Gelgaudų ąžuolas' and 'Plokščių ąžuolas' as four of its 11 designated GPOs), not the unrelated 'Grūšlaukės (Plokščių) ąžuolas' in Kretinga district (a different Plokščiai village, ruled out by coordinates: that one sits near Klaipėda, roughly 140km from this lead's own coordinate). Only one substantive source fetched directly this pass (the Ministry decree PDF was found via search but not independently re-fetched here; treat that citation as the wiki article's own reference rather than a separately verified read, hence flagged for a single confirmed source). Trunk base long rotted and hollow; local residents recall climbing inside it as children, a real if modest anecdote. Stands beside a 'Suffering Path' (Kentėjimo kelias) memorial, whose own history was not researched this pass. No age documented; not derived. DESTINATION TEST: not a standalone case on its own (newly designated 2025, no legend beyond the hollow-trunk anecdote, girth and height good but not exceptional). RECOMMEND joining Raudonė (data/cities/raudone.json, currently published as a single-tree exception with only rdn_001, the Castle Lime) as a day-trip addition at 2.8km, next free id rdn_002: this is close enough to be a genuine second stop in the same walk/short drive around the Panemunė castles, and would start moving Raudonė past its single-tree-exception status."
+  },
+  {
+    "name": "Ilguva Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 300 to 400 years",
+    "age_min": 300,
+    "age_max": 400,
+    "girth_cm": 542,
+    "location": {
+      "address": "About 130m south of Ilguva Church, within the Nykos landscape reserve, Ilguva village, Kriūkai eldership, Šakiai district",
+      "latitude": 55.063106,
+      "longitude": 23.321357,
+      "neighbourhood": "Ilguva, Nykos kraštovaizdžio draustinis"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Ilguvos_%C4%85%C5%BEuolas"
+    ],
+    "access": "Free, but genuinely hard to find: no gate or ownership restriction, but the tree stands off any marked path, reached by walking along the Nyka stream from Dulinčiškiai village (in Panemunė) and climbing a slope",
+    "transport": "Šakiai district; about 12.7km from Raudonė by road, no public transit checked this pass",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "lt.wikipedia (Ilguvos ąžuolas), citing the State Cadastre of Protected Areas: girth 5.42m at 1.3m height (2014 measurement), height 32m, splits into 3 trunks at 3.8m, crown 22m tall and 22m wide, age given as '300-400 years' (a real documented range, not derived by us). Protected by Environment Ministry decree No. D1-255, 2005-05-23. Only ONE source found and fetched this pass; flagged rather than held, per Step 2 (single source with a note is deliverable). Location precision set to approximate rather than confirmed: the source describes reaching it by walking along a stream and climbing a slope rather than giving a tight coordinate, and explicitly calls it hard to reach/find, which reads as park-level rather than tree-exact knowledge despite the lead's own lat/lng. No legend or record claim found. DESTINATION TEST: not a standalone case (respectable size and a real documented age band, but no story beyond the register facts, and the access difficulty argues against fronting it as its own place). RECOMMEND as a further day-trip addition to Raudonė (data/cities/raudone.json) alongside the Plokščiai Oak above, next free id rdn_003 if Plokščiai takes rdn_002; 12.7km is a longer add than Plokščiai's 2.8km but is within the range already used elsewhere in this file (e.g. Kaunas's day-trip additions at 12-18km), so label the real distance and the access difficulty honestly rather than promising an easy walk."
+  },
+  {
+    "name": "Šilalė Independence Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "species_basis": "confirmed by lt.wikipedia infobox (paprastasis ąžuolas)",
+    "age_estimate": "around a century",
+    "age_min": 89,
+    "age_max": 99,
+    "girth_cm": 240,
+    "location": {
+      "address": "Traffic island at the J. Basanavičiaus / Nepriklausomybės street intersection, central Šilalė",
+      "latitude": 55.489909,
+      "longitude": 22.186615,
+      "neighbourhood": "Central Šilalė"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Nepriklausomyb%C4%97s_%C4%85%C5%BEuolas",
+      "https://commons.wikimedia.org/wiki/File:%C5%A0ilal%C4%97,_1918.02.16_%C4%85%C5%BEuolas.JPG"
+    ],
+    "access": "Free; public street island in the town centre, no gate or fee, though it stands amid busy traffic",
+    "transport": "Central Šilalė, walkable from anywhere in town; the closest bus stops serve regional routes",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Carried over from the 2026-09-06 pass's own thorough check, re-reviewed this pass with no material change (three weeks on, nothing about a slow-growing town oak would move). lt.wikipedia (Nepriklausomybės ąžuolas): height 15.0m, girth 2.40m at 1.3m, age 94 years as of 2022 (so roughly 98 now); stone markers at its base read '1918-02-16' (Lithuania's independence day). Planting date disputed between two accounts: either 1937 (20th independence anniversary, per historian Kazimieras Šetkus) or 1927-28 (10th anniversary, per another account); recorded both, hence the broad age band 89-99 rather than a single figure. Declared a municipal natural heritage object 2006. Actively tended: since 2018 the municipality has run restoration work (soil remediation, mulching, wire removal, winter salt protection) because road salt and passing trucks damage it, itself evidence of recent continued life. Modest size (2.40m girth) and purely local fame; does NOT clear the single-tree destination bar alone, exactly as the prior pass found. WHAT IS NEW THIS PASS: paired below with the 'Oaks and lime of January 13' grove (90m away) plus two out-of-town finds, Laumenai Oak and Pundžiai Oak (both in the Kaltinėnai area of the same Šilalė district, about 16-18km out and about 6.5km from each other), these four together clear the ordinary 4-tree floor for a place with two in-town walkable points and two car-reachable countryside stops, the same shape as several other cities in this file (e.g. Kaunas, Plungė). RECOMMEND a future write pass open Šilalė as a new city (data/cities/silale.json does not yet exist) with these four as sll_001 through sll_004; this entry as sll_001. Not itself independently a standalone place, but ships as the anchor of this proposed 4-tree cluster."
+  },
+  {
+    "name": "Oaks and Lime of January 13",
+    "species": "Oak (Quercus sp., x13) and Lime (Tilia sp., x1)",
+    "species_basis": "genus read from lt.wikipedia's description of the memorial grove; individual species per tree not itemised in the source",
+    "age_estimate": "around 30 to 35 years",
+    "age_min": 28,
+    "age_max": 36,
+    "girth_cm": null,
+    "location": {
+      "address": "J. Basanavičiaus / Nepriklausomybės street intersection, around the 'Laisvės šauklys' (Freedom's Crier) sculpture, central Šilalė",
+      "latitude": 55.489991,
+      "longitude": 22.186381,
+      "neighbourhood": "Central Šilalė"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Sausio_13-osios_%C4%85%C5%BEuolai_ir_liepa",
+      "https://www.pamatyklietuvoje.lt/"
+    ],
+    "access": "Free; public street-corner plot with benches, no gate or fee, genuinely reachable",
+    "transport": "Central Šilalė, about 90m from the Independence Oak, walkable",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Carried over from the 2026-09-06 pass's own thorough check; re-reviewed this pass, no material change, and the Cloudflare block on silale.lt's own fuller heritage list (noted by the prior pass) still stands as an open gap for a future browser-session check. lt.wikipedia plus pamatyklietuvoje.lt/silalesbiblioteka.lt (independently describing the same monument) confirm: 13 oaks and 1 linden planted in a semicircle around a Kazimieras Kisielis sculpture, marking the 13 men and 1 woman killed defending Lithuanian freedom on 13 January 1991. Declared a municipal natural heritage object 2006, protected area 0.21ha. No individual girth/height/planting date per tree; likely planted 1990-1998 alongside the monument (age band reflects that), so young rather than ancient, resting on historical significance rather than size. Reads as ONE compact, collectible ensemble (a semicircle around one monument, one obvious place to stand), not an avenue or a wood, so it counts as a single collectible point per the ensemble rule. WHAT IS NEW THIS PASS: see the Independence Oak entry above (sll_001) for the proposed 4-tree Šilalė cluster this grove completes as its second in-town point; this entry as sll_002. NOTE: this lead name appears TWICE in data/leads/_famous-lithuania.json (an apparent duplication from the original Commons sweep, identical coordinates and content); both occurrences should be updated identically to point at this one verified entry, not treated as two separate trees."
+  },
+  {
+    "name": "Laumenai Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 490,
+    "location": {
+      "address": "Off the old Žemaičių Highway, roughly midway between Laukuva and Kaltinėnai, via Bilioniai village, Laumenai village, Kaltinėnai eldership, Šilalė district",
+      "latitude": 55.614817,
+      "longitude": 22.357352,
+      "neighbourhood": "Laumenai, Kaltinėnai area"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Laumen%C5%B3_%C4%85%C5%BEuolas"
+    ],
+    "access": "No gate or ownership restriction stated in the source, but genuinely remote: stands amid cultivated fields and pastures in hilly farmland, described as hard to spot from nearby roads",
+    "transport": "Šilalė district, about 16-18km from central Šilalė and about 6.5km from Pundžiai Oak (below); reachable by car only, no public transit checked this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Only ONE source found and fetched this pass (lt.wikipedia, Laumenų ąžuolas, drawing on the State Protected Areas Registry and the State Forest Service's 'Old Lithuanian Oaks' survey); flagged rather than held per Step 2. Girth 4.9m at 1.3m (the state registry's own figure is very slightly different, 4.8m; recorded both), height 17m (registry: 15m), crown 17m, trunk to branches 4.5m. Protected since 2005. Distinctive feature: visible lightning-strike damage from 8m upward, and a small chapel (in poor condition) attached to the damaged side of the trunk, with a small cave beneath the roots. Coordinates from the source (55°36'53\"N 22°21'26\"E) convert almost exactly to the lead's own lat/lng, confirming tree-level precision despite the remote setting. No age documented; not derived. ACCESS CAVEAT stated honestly rather than treated as a block: the source describes farmland surroundings and difficulty of access but never says the land is private or that entry needs anyone's permission (unlike the explicitly-blocked Netiesos and Draugeliai oaks elsewhere in this file, whose sources state outright 'grows on private property'); this is the same ambiguous case already flagged for the published Vėžalaukis Oak, and the honest caveat belongs in the page's access field rather than in a block. DESTINATION TEST: not standalone (attached chapel is a genuine curiosity but the tree itself is otherwise ordinary). RECOMMEND as one of the two out-of-town points completing a proposed 4-tree Šilalė cluster (see sll_001 above); this entry as sll_003, paired with Pundžiai Oak (sll_004) about 6.5km away in the same Kaltinėnai countryside."
+  },
+  {
+    "name": "Pundžiai Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 560,
+    "location": {
+      "address": "Pundžiai forest, about 3km west of Kaltinėnai, 50m south of the old Žemaičių Highway, Rietavas Forest Management District, Šilalė district",
+      "latitude": 55.565592,
+      "longitude": 22.402658,
+      "neighbourhood": "Pundžiai forest, Kaltinėnai area"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Pund%C5%BEi%C5%B3_%C4%85%C5%BEuolas"
+    ],
+    "access": "Free; state forest under Rietavas Forest Management District, no ownership restriction, though as of a 2020 note the surrounding undergrowth was dense and the old fencing deteriorated, complicating (not preventing) a visit",
+    "transport": "Šilalė district, about 16km from central Šilalė and about 6.5km from Laumenai Oak (above); reachable by car only, no public transit checked this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Only ONE source found and fetched this pass (lt.wikipedia, Pundžių ąžuolas, drawing on the Protected Territories State Cadastre and a Rietavas Forest Management District document); flagged per Step 2. Girth 5.60m at 1.3m, height 33.5m (tall for an oak). First declared a protected monument in 1989. No legend or history recorded, purely descriptive/administrative source. Condition notes mention animal burrows dug beneath the roots and a declining canopy observed as of the source's writing; not confirmed dead, no indication of recent death, but worth a photo check on a future pass given the canopy note. No age documented; not derived. DESTINATION TEST: not standalone (height is genuinely notable but there is no story beyond the register facts). RECOMMEND as the second of the two out-of-town points completing a proposed 4-tree Šilalė cluster (see sll_001 above); this entry as sll_004, paired with Laumenai Oak (sll_003)."
+  },
+  {
+    "name": "The Vepriai Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 430,
+    "location": {
+      "address": "Beside the Veprių Kalvarijos (Way of the Cross) path, about 20m southeast of the third station chapel, Deltuva forestry unit, Vepriai village, Ukmergė district",
+      "latitude": 55.149578,
+      "longitude": 24.586706,
+      "neighbourhood": "Vepriai, beside the Veprių Kalvarijos pilgrimage path"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/Vepri%C5%B3_%C4%85%C5%BEuolas",
+      "https://lt.wikipedia.org/wiki/Vepri%C5%B3_Kalvarijos"
+    ],
+    "access": "Free; stands in state forest directly beside a public pilgrimage path with an information marker installed as of autumn 2025",
+    "transport": "Ukmergė district; no public transit stop checked this pass, reachable by car; Ukmergė town itself is not currently a published place",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "The tree's own facts come from ONE source (lt.wikipedia, Veprių ąžuolas, drawing on the State Protected Territories Cadastre): girth 4.30m at 1.3m, height 30.0m (tall), protected by Environment Ministry decree No. D1-88 of 2016-02-08 (the same decree, one of a wave that day, that also protected the Šilo Forest Oak below). Flagged per Step 2 for single source on the tree itself. THE DESTINATION CASE rests on a SECOND, independently confirmed fact: the Veprių Kalvarijos (Way of the Cross) is a real, actively visited Catholic pilgrimage site, verified via its own lt.wikipedia article: 35 Stations of the Cross along a 5.5km path through forest, meadow and lakeshore, established 1846 with brick chapels built 1882-1900 at local farmers' expense, drawing crowds especially at Whitsun (thousands during the interwar period per that source, contemporary visitor numbers not verified this pass). The oak stands directly on this path, 20m from its third station chapel, so the pin is genuinely tree-level (register coordinate) rather than merely park-level. DESTINATION TEST: recommend SHIP AS ITS OWN PLACE under the 2026-08-31 single-tree exception, on the strength of the Kalvarijos itself rather than the tree's own (ordinary) measurements: the trail is the reason to go, the oak is a marked, findable feature on it, the same logic already used for zal_001 (the Hermann Sudermann Oak, justified by an existing popular heritage trail rather than by the tree's own size). No age documented; not derived. Proposed id vpr_001, new place 'Vepriai'. Alive: no dated recent photo confirmation checked this pass; the 2025 information marker implies recent maintenance attention."
+  },
+  {
+    "name": "The Žadeikoniai Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not disclosed by the register",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 605,
+    "location": {
+      "address": "On a hillock within the old Oniūnai cemetery, about 5km southwest of Saločiai near road 3116 (Saločiai-Telžiai), Žadeikoniai village, Saločiai eldership, Pasvalys district",
+      "latitude": 56.195241,
+      "longitude": 24.378511,
+      "neighbourhood": "Žadeikoniai, old Oniūnai cemetery"
+    },
+    "verified_sources": [
+      "https://lt.wikipedia.org/wiki/%C5%BDadeikoni%C5%B3_%C4%85%C5%BEuolas"
+    ],
+    "access": "Free; a small, fenced village cemetery with gates, no fee; reachable near a bridge over the Kamatis stream, visible from it",
+    "transport": "Pasvalys district; no public transit stop checked this pass, reachable by car; Pasvalys town is not currently a published place",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "ONE source fetched directly this pass (lt.wikipedia, Žadeikonių ąžuolas, drawing on the State Cadastre): girth 6.05m at 1.3m (a substantial figure, comparable to already-published trees like Gudlaukis Oak at 6.30m and the Gojaus Forest Oak at 6.2-6.7m), height 22.0m, age explicitly 'neskelbiama' (not disclosed by the register, distinct from simply unrecorded), state botanical natural heritage object designated 1960-09-01 by decree No. 165, one of Lithuania's earliest protected-tree designations. A SECOND source, a Pasvalys-district tourism guide (pasvalia.lt/gidas/objektai/192-zadeikoniu-azuolas), was found via search and appears to independently confirm the site and add real narrative detail (the village cemetery is arranged as an open-air sanctuary with the oak occupying the position of a central altar on the western side, and people reportedly choose burial here specifically to lie beneath the oak rather than in the parish cemetery), but the URL returned 404 on a direct fetch and again via the Wayback Machine this pass (WebFetch cannot reach web.archive.org from this environment); per the 'a search summary is a lead, never a source' rule, this narrative is recorded here as a STRONG LEAD for the writer to re-verify by finding a live copy, not as a confirmed fact, and the tree is shipped on lt.wikipedia's single confirmed source, flagged accordingly (acceptable per Step 2). Also on record: in January 2009 a 7x7m sinkhole opened near the oak (later filled), a real if minor curiosity. DESTINATION TEST: recommend SHIP AS ITS OWN PLACE under the 2026-08-31 single-tree exception on the combined strength of size (6.05m, near the top tier of this whole batch) and the cemetery-as-sanctuary story, PROVISIONALLY: if a future pass cannot independently confirm the sanctuary/altar narrative from a live source, the destination case weakens to size alone, which is respectable but not on its own exceptional; recorded honestly rather than silently relying on the unconfirmed narrative. Proposed id zad_001, new place 'Žadeikoniai'."
+  }
+]
