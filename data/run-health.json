@@ -18200,6 +18200,58 @@
    "cities": [],
    "trees": 0,
    "logged": true
+  },
+  {
+   "started": "2026-09-25T22:55:49+00:00",
+   "date": "2026-09-26",
+   "run_id": "36198921159",
+   "minutes": 62.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 410,
+   "denials": 44,
+   "denials_source": "permission_denials: Bash(cat ; ? ; ? ; the ...), Bash(cat | head), Bash(cd && for ; do ; python3 ...), Bash(cd && mkdir && timeout | tail), Bash(cd && python3), Bash(cd && rm && npx ; echo), Bash(env | grep | sed), Bash(find | xargs ; cat | head), Bash(for ; do ; cat ; echo ...), Bash(for ; do ; run ; echo ...), Bash(gh ; grep | head), Bash(gh ; python3 ; import ; d ...), Bash(gh ; wc ; grep), Bash(gh | ?), Bash(gh | grep), Bash(gh | python3 ; import ; d ...), Bash(gh), Bash(git ; rm ; ls), Bash(git | head && rm && echo), Bash(kill ; sleep ; echo), Bash(python3 ; echo ; if ; then ...), Bash(python3 ; import ; ? ; import ...), Bash(python3 ; import ; ? ; items ...), Bash(python3 ; import ; ber_012 ; for ...), Bash(python3 ; import ; d ; trees ...), Bash(python3 ; import ; for ; ? ...), Bash(python3 ; python3 ; import ; for ...), Bash(rm && git), Bash(rm && python3 | tail ; git), Bash(rm), Bash(subshell cd && python3 ; import ; ? ...), Bash(tail | xxd | tail ; echo ...)",
+   "ended": "success",
+   "tokens": 4052021,
+   "claims_held": [],
+   "commits": 12,
+   "cities_touched": 8,
+   "cities": [
+    {
+     "city": "alicante",
+     "trees": 0
+    },
+    {
+     "city": "bad-homburg",
+     "trees": 0
+    },
+    {
+     "city": "glasgow",
+     "trees": 0
+    },
+    {
+     "city": "kagoshima",
+     "trees": 0
+    },
+    {
+     "city": "le-guerno",
+     "trees": 0
+    },
+    {
+     "city": "miyazaki",
+     "trees": 0
+    },
+    {
+     "city": "oahu",
+     "trees": 0
+    },
+    {
+     "city": "warsaw",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
