@@ -2,7 +2,7 @@
   "city": "San Diego",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "San Diego's trees were planted, not inherited. In 1892 the city leased Kate Sessions park land on the condition that she plant a hundred trees a year in Balboa Park, and the 1915 exposition brought in much of the rest. So the oldest tree anyone can date here is around 130 years old, which is genuinely old for this city. All four are free: a fig 12 metres round, a cypress from an island off Baja, a kauri from New Zealand, and a tipu that outlived the nursery around it.",
+  "intro": "San Diego's trees were planted, not inherited. In 1892 the city leased Kate Sessions park land on condition she plant a hundred trees a year in Balboa Park, and the 1915 exposition brought in much of the rest. The oldest anyone can date here is around 130 years, genuinely old for this city. All six are free: two Moreton Bay figs, a cypress from an island off Baja, a kauri from New Zealand, a tipu that outlived its nursery, and a low tangle of tea tree Sessions likely planted herself.",
   "meta_description": "San Diego planted its own shade. A 1914 Moreton Bay fig 12 metres round, a Guadalupe cypress from 1892, and a New Zealand kauri on the Plaza.",
   "question_answer": "The oldest tree in San Diego is a Guadalupe Island cypress on the Sixth Avenue side of Balboa Park, beside the chess and horseshoe club building, at roughly 130 years. San Diego Magazine went looking for the city's oldest tree in 2020 and named this one, putting it at about 128 years then. It is one of the trees Kate Sessions planted under her 1892 lease of park land at Sixth and Upas, which obliged her to plant a hundred trees a year in Balboa Park.",
   "question_meta": "San Diego's oldest tree is a Guadalupe Island cypress in Balboa Park, planted around 1892 by Kate Sessions and now roughly 130 years old.",
@@ -19,7 +19,11 @@
     },
     {
       "q": "Are San Diego's remarkable trees free to visit?",
-      "a": "All four are. Three stand in Balboa Park with no ticket and no gate, and the fourth is on a street corner in Pacific Beach beside its historical landmark plaque. Museum admission is only needed for the galleries, never for the trees outside them."
+      "a": "All six are. Five stand in Balboa Park with no ticket and no gate, though Marston House itself charges for tours inside; the sixth is on a street corner in Pacific Beach beside its historical landmark plaque. Museum admission is only needed for the galleries, never for the trees outside them."
+    },
+    {
+      "q": "What are the two newest trees added to this page?",
+      "a": "The Twisted Tea Tree at Marston House, a low tangle of Australian tea tree likely planted around 1906 by Kate Sessions herself, and a second Moreton Bay fig over Palm Canyon, planted in the 1930s, whose buttress roots pour over the canyon edge like a set of flying buttresses."
     },
     {
       "q": "Did Kate Sessions plant the big fig in Balboa Park?",
@@ -162,6 +166,67 @@
       "location_precision": "confirmed",
       "notes": "Existence, species and position confirmed from a geotagged, photographed iNaturalist observation (id 342689280, 2016-07-09, 32.7313561/-117.1511082), the only Agathis australis record near San Diego on that platform. The second source listed by the verify pass (sandiegoreader.com) returned HTTP 403 on every fetch route and was dropped rather than cited unread, so this ships single-sourced. Its reported height (~65ft, or 52ft measured 1994) and a late-1930s/early-1940s planting estimate came only from search summaries and are deliberately not recorded. sandiegoreader.com and pacifichorticulture.org are blocklist candidates.",
       "how_to_recognise": "You can recognise it by a straight grey column of a trunk holding its crown right at the top, unlike the spreading subtropicals around it. It stands beside the Mingei International Museum on the Plaza de Panama."
+    },
+    {
+      "id": "sdg_005",
+      "name": "The Twisted Tea Tree of Marston House",
+      "species": "Australian Tea Tree (Leptospermum laevigatum)",
+      "age_estimate": "roughly 120 years",
+      "age_min": 110,
+      "age_max": 125,
+      "location": {
+        "address": "Marston House Museum grounds, 3525 Seventh Avenue, Balboa Park, San Diego, CA 92103",
+        "latitude": 32.7416766,
+        "longitude": -117.1578341,
+        "neighbourhood": "Balboa Park (northwest corner, near Hillcrest)"
+      },
+      "verified_sources": [
+        "https://www.sandiegoreader.com/news/2025/nov/10/balboa-park-has-more-than-these-ten-trees/",
+        "https://sandiegohistory.org/journal/1990/april/garden-2/"
+      ],
+      "access": "Free to view on the Marston House Museum grounds (part of Balboa Park); the house museum itself charges admission but the garden path this tree stands on is on the museum's public grounds",
+      "transport": "Balboa Park, northwest corner at Seventh Avenue and Upas Street; bus routes serve Sixth/Seventh Avenue, roughly 10-15 minute walk from central Balboa Park",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This tree grows sideways. Its trunks run out almost level with the ground, and where a limb comes down far enough to touch the soil it sometimes puts down roots and carries on. The result, on the grounds of Marston House in Balboa Park, is a low, gnarled tangle that visitors compare to something out of a fantasy novel. Somebody has called it Gandalf. It is not the only name it has been given.\n\nIt is an Australian tea tree, and it earns its place here by shape rather than size. Nothing about it is tall. Everything about it is twisted.\n\nThe park ranger Kim Duclo says it was likely planted around 1906 by Kate Sessions, the horticulturist remembered as Balboa Park's godmother, the same woman whose last nursery left the tipu tree in Pacific Beach. That would make it about 120 years old. It is one person's informed guess rather than a record, and it is the only date anyone has offered. What is documented is that a professional survey of the Marston garden in 1989 listed Australian tea tree among its plants, though it does not say which specimen.\n\nIt stands on the paved walkway just past the entrance to the Marston House grounds, at the park's northwest corner near Seventh Avenue and Upas Street. The garden is free to walk; the house charges for tours inside.",
+      "how_to_recognise": "You can recognise it by the low, twisting trunks that run almost flat along the ground, some rooting where they touch. It stands beside the paved walkway just past the entrance to the Marston House grounds.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sdg_006",
+      "name": "The Moreton Bay Fig of Palm Canyon",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 90 years (planted mid-1930s)",
+      "age_min": 85,
+      "age_max": 95,
+      "age_basis": "source",
+      "location": {
+        "address": "Palm Canyon footbridge, near Alcazar Garden, Balboa Park, San Diego, CA 92101",
+        "latitude": 32.73115,
+        "longitude": -117.1523,
+        "neighbourhood": "Balboa Park, central mesa"
+      },
+      "verified_sources": [
+        "https://www.sandiegoreader.com/news/2025/nov/10/balboa-park-has-more-than-these-ten-trees/",
+        "https://www.ktua.com/workpost/historic-palm-canyon-balboa-park/"
+      ],
+      "access": "Free; stands beside a public footbridge and steps into Palm Canyon, part of Balboa Park",
+      "transport": "Central Balboa Park, a short walk south of the Alcazar Garden and west of the Organ Pavilion; served by Balboa Park's free tram and multiple bus routes",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The roots of this fig do not stay underground. They pour over the edge of Palm Canyon and run down the slope in great ridged buttresses, and one landscape history of the park compares them to flying buttresses. That is the reason to come, and the reason photographers and wedding parties climb down into the canyon below it.\n\nIt is a Moreton Bay fig, and not the famous one. Balboa Park's best-known fig, planted in 1915, stands by the Natural History Museum. This is a separate, younger tree over Palm Canyon, planted around the mid 1930s by one account, or in the 1930s or 1940s by another, which puts it at roughly ninety years.\n\nIt has had the better part of a century on the lip of this canyon, and it has used the time to go over the side. The trunk is the anchor. The roots are the show.\n\nThe best view is from the wooden footbridge that crosses Palm Canyon from near the Alcazar Garden toward the Organ Pavilion. The pin is an estimate for that stretch of canyon rather than a fix on the trunk, so start at the bridge and look over the side. It is free, open parkland.",
+      "how_to_recognise": "You can recognise it by the massive buttress roots spilling over the canyon edge and running down the slope. It stands beside the wooden footbridge over Palm Canyon, between the Alcazar Garden and the Organ Pavilion.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

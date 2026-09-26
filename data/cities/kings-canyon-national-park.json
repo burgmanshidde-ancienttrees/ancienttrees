@@ -1,0 +1,130 @@
+{
+  "city": "Kings Canyon National Park",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Three giant sequoias, and the biggest is a national shrine. General Grant, the second largest tree on Earth by volume, was declared a memorial to Americans killed in war by President Eisenhower in 1956, having already been named the Nation's Christmas Tree in 1926. A few minutes away stands the Robert E. Lee, the eleventh or tenth largest tree alive depending on the count, and, in a logged-out basin just outside the park, the widest sequoia ever measured, the Boole Tree, which somehow survived the saws that took eight thousand of its neighbours.",
+  "meta_description": "General Grant, the second largest tree on Earth, is a national shrine at Kings Canyon. Nearby stand the Robert E. Lee and the record-wide Boole Tree.",
+  "question_meta": "The Boole Tree, over 2,000 years old and the widest sequoia known, is Kings Canyon's oldest mapped tree, just outside the park boundary.",
+  "question_answer": "Kings Canyon's oldest mapped tree is the Boole Tree, a giant sequoia estimated at over 2,000 years, though it technically stands on U.S. Forest Service land in Converse Basin, just outside the park's own boundary. Inside the park itself, General Grant, the park's most famous tree and a declared national shrine, has no age more solid than one recent estimate of roughly 1,650 years. The Boole Tree also holds a record of its own: at 34.4 metres round, it has the greatest circumference of any known sequoia, wider than General Grant.",
+  "question_context": "General Grant Grove and Converse Basin are the two clusters mapped here, a few miles apart on Highway 180 north of Grant Grove Village. General Grant and the Robert E. Lee both stand in Grant Grove itself, reached by a short paved loop from the Grant Grove parking area; Kings Canyon's own entrance fee covers this stop. The Boole Tree stands apart, in Converse Basin, a grove once the largest stand of giant sequoias on Earth until loggers cut down roughly 8,000 of them between 1897 and 1907. The Boole Tree was the one left standing, on land the U.S. Forest Service manages rather than the National Park Service, so there is no entrance fee there, only a seasonal, high-clearance access road and a loop trail of a few kilometres. None of the three trees has a settled age: the Boole Tree's over 2,000 years is the most confident figure on this page, General Grant's roughly 1,650 years comes from a single recent estimate, and the Robert E. Lee has no published age at all.",
+  "hero_tree_id": "kcy_001",
+  "oldest_tree_id": "kcy_003",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kings Canyon National Park?",
+      "a": "The Boole Tree, estimated at over 2,000 years, though it technically stands on Forest Service land in Converse Basin just outside the park boundary. Inside the park, General Grant's age is put at roughly 1,650 years by one recent estimate; the Robert E. Lee has no published age at all."
+    },
+    {
+      "q": "Is General Grant the largest tree in Kings Canyon?",
+      "a": "By trunk volume alone, yes, and only General Sherman in neighbouring Sequoia National Park is bigger. Count branches as well and the park service ranks it third, behind the President Tree. The Boole Tree, in a different grove outside the park, has the widest trunk of any sequoia known, though less total volume than General Grant."
+    },
+    {
+      "q": "How much does it cost to visit these trees?",
+      "a": "General Grant and the Robert E. Lee are inside Kings Canyon National Park, covered by the park's entrance fee, shared with Sequoia National Park. The Boole Tree is free: it stands on U.S. Forest Service land, where no entrance fee applies."
+    },
+    {
+      "q": "Why was the Robert E. Lee Tree's name removed from park materials?",
+      "a": "In 2020 the park took the name out of its official interpretive materials. It did not rename the tree itself, since only Congress or the park service can do that formally, so the Robert E. Lee Tree remains its recorded name."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kcy_001",
+      "name": "General Grant Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 1,650 years",
+      "age_min": 1500,
+      "age_max": 1800,
+      "girth_cm": 3280,
+      "height_m": 81.5,
+      "location": {
+        "address": "General Grant Grove, Kings Canyon National Park, Fresno County, California",
+        "latitude": 36.7488,
+        "longitude": -118.9709,
+        "neighbourhood": "Grant Grove, on the paved General Grant Tree Trail loop"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/General_Grant_(tree)",
+        "https://www.nps.gov/places/000/general-grant-tree.htm"
+      ],
+      "access": "Paid entry (Kings Canyon National Park entrance fee, shared with Sequoia NP); short paved accessible loop trail from the Grant Grove parking area, benches and audio description available.",
+      "transport": "No public transit; reached via Highway 180 from Fresno, about 1.5 hours' drive.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is the only living thing the United States has declared a national shrine. President Eisenhower gave the General Grant Tree that title in 1956, as a memorial to Americans who died in war, thirty years after President Coolidge had proclaimed it the Nation's Christmas Tree. Two presidents, two designations, one trunk.\n\nThe trunk is the reason. It stands 81.5 metres tall and measures 32.8 metres round at the base, and it holds about 1,320 cubic metres of wood. By trunk volume alone only the General Sherman, in neighbouring Sequoia National Park, is bigger. Count the branches as well and the park service drops it to third, behind the President Tree, so its rank depends on what you measure rather than on anyone getting it wrong.\n\nIt was named in 1867 for Ulysses S. Grant, which makes the name younger than almost every ring inside it. How much younger is the part nobody has pinned down: a recent estimate cited on Wikipedia puts the tree at roughly 1,650 years, while the park service publishes no age at all, so treat that figure as one careful guess rather than a count.\n\nThe paved loop from the Grant Grove car park is short and accessible, with benches along the way. It is the largest tree in the grove, and the grove's second largest, the Robert E. Lee, ranks among the dozen biggest sequoias known.",
+      "how_to_recognise": "You can recognise it by the trunk, 32.8 metres round at the base, the largest tree in Grant Grove. It stands on the paved General Grant Tree Trail loop, a short walk from the Grant Grove car park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "kcy_002",
+      "name": "Robert E. Lee Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 2690,
+      "height_m": 77.6,
+      "location": {
+        "address": "General Grant Grove, Kings Canyon National Park, Fresno County, California",
+        "latitude": 36.74806,
+        "longitude": -118.97111,
+        "neighbourhood": "Grant Grove, near the General Grant Tree Trail"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Robert_E._Lee_Tree",
+        "https://sequoiaquest.com/robert-e-lee.html"
+      ],
+      "access": "Paid entry (Kings Canyon National Park entrance fee); Grant Grove.",
+      "transport": "No public transit; reached via Highway 180 from Fresno, about 1.5 hours' drive.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The eleventh largest tree on earth, or the tenth, depending on whose list you read, stands a few minutes from the General Grant. Both counts rest on the same 1985 survey by Wendell Flint and Mike Law: 77.6 metres tall, about 1,135 cubic metres of wood, a trunk 26.9 metres round. The disagreement is about which other giants made the ranking, not about this one.\n\nIt was named around 1875 by Richard Field, a former Confederate lieutenant, for Robert E. Lee. That puts a Confederate general's name a short walk from a tree named for the Union commander who accepted Lee's surrender, in the same grove, a decade after the war.\n\nIn 2020 the park took the name out of its official interpretive materials. It did not rename the tree, because only Congress or the park service itself can change a formal name, so the Robert E. Lee Tree is still what the records call it, and what we call it here. Its history now includes the argument about its name.\n\nThe second largest sequoia in Grant Grove has no published age. Neither source we checked gives one, and we have found no core count or estimate anywhere else. If you know of one, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 26.9 metres round, the second largest in Grant Grove after the General Grant. It stands near the General Grant Tree Trail, a short walk from the grove's namesake.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "kcy_003",
+      "name": "Boole Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "over 2,000 years",
+      "age_min": 2000,
+      "age_max": 2500,
+      "girth_cm": 3440,
+      "height_m": 81.9,
+      "location": {
+        "address": "Converse Basin Grove, Giant Sequoia National Monument, Sequoia National Forest, Fresno County, California",
+        "latitude": 36.82389,
+        "longitude": -118.94917,
+        "neighbourhood": "Converse Basin, reached via the Boole Tree Trail loop off Forest Road 13S55, about 4 miles north of Grant Grove Village on Highway 180"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Boole_Tree",
+        "https://www.altaonline.com/dispatches/a7183/boole-sequoia-tree-matt-jaffe/"
+      ],
+      "access": "Free (no park entrance fee inside the National Forest/Monument); reached by a roughly 2.2-3 mile loop trail with about 500-570 ft of elevation gain from the Boole Tree Trailhead on FS Road 13S55, which per the Forest Service's own current trail page is open seasonally (late spring to early fall) and not recommended for low-clearance vehicles. IMPORTANT: land manager is the U.S. Forest Service (Sequoia National Forest / Giant Sequoia National Monument, Hume Lake Ranger District), NOT the National Park Service, though it sits immediately beside Kings Canyon NP.",
+      "transport": "No public transit; reached via Highway 180 north of Grant Grove Village.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Around 8,000 giant sequoias were cut down in Converse Basin between 1897 and 1907, in what had been the largest sequoia grove in the world. The widest of them all was left standing.\n\nThe Boole Tree measures 34.4 metres round at the base, the greatest circumference of any known sequoia. It is 81.9 metres tall and the sixth largest by volume, and it now stands on its own above the Kings River, in a basin that was logged out around it.\n\nWhy it survived is disputed. The popular story says Frank Boole, the logging supervisor it is named after, spared it himself. His daughter denied that. Another account credits negotiation by the Sierra Club, and a third says it was simply too awkward to fell. All three are in print, and none of them has won.\n\nJohn Muir had already measured it in 1877, under a different name, the Hugh Miller. Twenty years later the saws arrived. Sources put the tree at over 2,000 years old, which makes the logging decade a short episode in a very long life.\n\nThe tree stands on Forest Service land in Giant Sequoia National Monument, just outside Kings Canyon National Park, so there is no entrance fee. The Boole Tree Trail is a loop of roughly three and a half to five kilometres with 150 to 175 metres of climb, and the road to the trailhead opens seasonally, from late spring to early autumn.",
+      "how_to_recognise": "You can recognise it by the base, 34.4 metres round, wider than any other sequoia known. It stands on its own above the Kings River in Converse Basin, on the Boole Tree Trail loop.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

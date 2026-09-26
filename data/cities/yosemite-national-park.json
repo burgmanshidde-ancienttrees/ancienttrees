@@ -1,0 +1,197 @@
+{
+  "city": "Yosemite National Park",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Five sequoias in the Mariposa Grove, and none of them is General Sherman's rival for fame, though one of them is older. The Grizzly Giant has lost four fifths of its bark to repeated fire and kept growing regardless, at roughly 2,995 years the oldest tree Yosemite maps. Nearby stands the last sequoia tunnel tree left standing anywhere, a fused pair called the Faithful Couple, a fire-carved archway named the Clothespin Tree, and four trees whose roots have grown so entangled they may fall together, the Bachelor and Three Graces.",
+  "meta_description": "The Grizzly Giant, roughly 2,995 years old, anchors Yosemite's Mariposa Grove alongside the last sequoia tunnel tree and a fire-carved archway.",
+  "question_meta": "The Grizzly Giant, roughly 2,995 years old and missing most of its bark to fire, is the oldest tree in Yosemite's Mariposa Grove.",
+  "question_answer": "The oldest tree in Yosemite National Park's Mariposa Grove is the Grizzly Giant, dated at roughly 2,995 years, give or take 250, by the estimate cited on Wikipedia; the National Park Service simply calls it the 3,000-year-old Grizzly Giant. More than four fifths of its bark and sapwood has burned away over the centuries and it is still alive, leaning about five and a half metres off vertical. It anchors the Grizzly Giant Loop Trail, a mile from the grove's Arrival Area, reached by a free seasonal shuttle or on foot. None of the grove's other four mapped trees, all sequoias with their own oddities of fire, fusion or old engineering, has a published age.",
+  "question_context": "Mariposa Grove is Yosemite's largest sequoia grove and the most visited, reached by a free seasonal shuttle from the Mariposa Grove Welcome Plaza to an Arrival Area, or a longer hike when the shuttle is not running. Entrance to Yosemite National Park is paid at the gate; the grove itself asks nothing more.\n\nThe lower loop, about 1.6 kilometres from the Arrival Area, passes the Grizzly Giant, the California Tunnel Tree, cut through in 1895 for horse-drawn stages and the last such tunnel tree standing anywhere, and the Bachelor and Three Graces, four sequoias with roots so intertwined that one falling could bring down the rest. The upper grove, reached on a longer loop of around eleven kilometres round trip, holds the Faithful Couple, two trunks fused into one base, and the Clothespin Tree, opened by repeated fire into an archway wide enough to be seen from fifty yards off. None of the four besides the Grizzly Giant has a published height, girth or age; if you have measured one, tell us.",
+  "hero_tree_id": "ynp_001",
+  "oldest_tree_id": "ynp_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in the Mariposa Grove?",
+      "a": "The Grizzly Giant, dated at roughly 2,995 years by the estimate cited on Wikipedia; the National Park Service simply calls it the 3,000-year-old Grizzly Giant. It has lost more than four fifths of its bark and sapwood to fire over the centuries and is still alive."
+    },
+    {
+      "q": "How do I get to the Grizzly Giant?",
+      "a": "A free seasonal shuttle runs from the Mariposa Grove Welcome Plaza to the Arrival Area, then it is about a mile on the Grizzly Giant Loop Trail. When the shuttle is not running, it is a roughly two mile hike each way on the Washburn Trail or Mariposa Grove Road."
+    },
+    {
+      "q": "Can cars still drive through the California Tunnel Tree?",
+      "a": "No. The passage was cut through its base in 1895 for horse-drawn stages, but the road through it closed to vehicles in 1932 and is now a footpath. It is the last standing sequoia tunnel tree anywhere; its more famous rival, the Wawona Tunnel Tree, fell in 1969."
+    },
+    {
+      "q": "How much does it cost to visit Mariposa Grove?",
+      "a": "Yosemite National Park charges an entrance fee at the gate. Once inside, the grove itself and its seasonal shuttle are free."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ynp_001",
+      "name": "Grizzly Giant",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 2,995 years (plus or minus 250)",
+      "age_min": 2745,
+      "age_max": 3245,
+      "girth_cm": 2950,
+      "height_m": 63.7,
+      "location": {
+        "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+        "latitude": 37.5035139,
+        "longitude": -119.6006639,
+        "neighbourhood": "Lower Mariposa Grove, on the Grizzly Giant Loop Trail, about 1 mile from the Arrival Area"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Grizzly_Giant",
+        "https://home.nps.gov/yose/planyourvisit/mg.htm"
+      ],
+      "access": "Paid entry (Yosemite National Park entrance fee); reached via the free seasonal shuttle from the Mariposa Grove Welcome Plaza to the Arrival Area, then about 1 mile on the Grizzly Giant Loop Trail (or a 2-mile hike each way on the Washburn Trail/Mariposa Grove Road when the shuttle is not running). Visitors with disability placards may drive to the Grizzly Giant parking area.",
+      "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "More than four fifths of this tree's bark and sapwood has burned away over the centuries, and it is still alive. The Grizzly Giant has taken fire after fire and kept growing on what was left.\n\nIt is the oldest tree in the Mariposa Grove. The park service calls it the 3,000-year-old Grizzly Giant, and the estimate cited on Wikipedia is more careful, 2,995 years give or take 250. A band five centuries wide is as close as anyone gets with a living sequoia, and even its young end is older than almost anything else you can walk up to.\n\nIt is not the biggest. A 1990 measurement ranked it the 26th largest living giant sequoia, 63.7 metres tall with a trunk 29.5 metres round. What it has instead is character: the whole tree leans about five and a half metres off vertical, carried on a trunk that fire has stripped of most of its bark.\n\nThe publisher James Hutchings named it the Grizzled Giant in 1859. By 1888 people were calling it the Grizzly Giant, and that name stuck.\n\nIt anchors the Grizzly Giant Loop Trail, about a mile, or 1.6 kilometres, from the Arrival Area. In season a free shuttle runs there from the Mariposa Grove Welcome Plaza; otherwise it is a walk of about three kilometres each way. Visitors with a disability placard may drive to the Grizzly Giant parking area.",
+      "how_to_recognise": "You can recognise it by the lean, about five and a half metres off vertical, on a trunk 29.5 metres round that fire has stripped of most of its bark. It stands on the Grizzly Giant Loop Trail, about 1.6 km from the Arrival Area.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "ynp_002",
+      "name": "California Tunnel Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+        "latitude": 37.5033,
+        "longitude": -119.6009,
+        "neighbourhood": "Lower Mariposa Grove, just past the Grizzly Giant on the Grizzly Giant Loop Trail"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Tunnel_tree",
+        "https://home.nps.gov/yose/planyourvisit/mg.htm"
+      ],
+      "access": "Paid entry (Yosemite National Park entrance fee); on foot only via the Grizzly Giant Loop Trail from the Arrival Area (the old road through the tree was closed to vehicles in 1932 and converted to footpath). Cars can no longer pass through it.",
+      "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This is the last giant sequoia tunnel tree still standing anywhere. You can walk through it, and for thirty-seven years horse-drawn stages drove through it.\n\nThe Yosemite Stage and Turnpike Company cut the passage through its base in 1895. It was meant as an alternative to the more famous Wawona Tunnel Tree: lower down, less often snowbound, and so usable for more of the year. A piece of road engineering that happened to be alive.\n\nIn 1932 the Mariposa Grove Road was rerouted away from the Grizzly Giant, and traffic through the tree ended. The old road through it was turned into a footpath, which is what runs through the tunnel today. The Wawona Tunnel Tree fell in 1969. The California Tunnel Tree is the one that outlived the idea.\n\nThat is the whole appeal, and it is an uncomfortable one. Nobody would cut a hole through a sequoia now, and there is no better argument for why not than a tree still growing around a doorway made for stagecoaches more than 130 years ago.\n\nIt stands just past the Grizzly Giant on the same loop trail, so the two make one short walk. Nobody has published its height, its girth or its age. If you have seen a measurement, tell us.",
+      "how_to_recognise": "You can recognise it by the passage cut through its base, wide enough to walk through, the last sequoia tunnel still standing. It stands just past the Grizzly Giant on the Grizzly Giant Loop Trail.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "ynp_003",
+      "name": "Faithful Couple",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+        "latitude": 37.5065,
+        "longitude": -119.5985,
+        "neighbourhood": "Mariposa Grove, on the Mariposa Grove Trail toward the upper grove"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Mariposa_Grove",
+        "https://home.nps.gov/yose/planyourvisit/mg.htm"
+      ],
+      "access": "Paid entry (Yosemite National Park entrance fee); reached via the Mariposa Grove Trail (about 7 miles round trip if walked from the Arrival Area, and generally combined with the upper-grove loop rather than walked as an out-and-back).",
+      "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Two giant sequoias grew up so close together that their trunks fused at the base, and they have gone on as one. The grove calls them the Faithful Couple, and for once a sentimental name describes the tree exactly.\n\nFused sequoias are rare. Here two trees took root on the same patch of ground, and at some point in their long lives the gap between them closed. What you see now is one base carrying two trunks, which is why we count it as one tree to stand at rather than two.\n\nIt is a named stop on the Mariposa Grove Trail, on the climb toward the upper grove, close to the Clothespin Tree. That makes it part of a longer walk than the Grizzly Giant loop: from the Arrival Area the round trip is around eleven kilometres, and most people fold it into the upper-grove loop rather than walking out and back.\n\nWhat we cannot tell you is how old the pair is or how big. Neither the park service nor any other source we checked has published a height, a girth or an age for it, and our pin sits on the trail near it rather than at the trunk. If you have measured it, or stood at it with a phone, tell us.",
+      "how_to_recognise": "You can recognise it by two sequoia trunks fused together at a single base. It stands on the Mariposa Grove Trail toward the upper grove, close to the Clothespin Tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "ynp_004",
+      "name": "Clothespin Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+        "latitude": 37.507,
+        "longitude": -119.598,
+        "neighbourhood": "Mariposa Grove, on the Mariposa Grove Trail near the Faithful Couple"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Mariposa_Grove",
+        "https://home.nps.gov/yose/planyourvisit/mg.htm"
+      ],
+      "access": "Paid entry (Yosemite National Park entrance fee); on the Mariposa Grove Trail, same route as the Faithful Couple.",
+      "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Nobody cut the hole in this tree. Fire did, over and over, until the trunk opened into a gap you can see from fifty yards off, and the sequoia went on living around it.\n\nOne look and the name explains itself. How big the opening is depends on who you ask. Wikipedia gives it as about 21 metres tall and nearly 5 metres wide. Another description puts it nearer 12 metres tall, still wide enough to drive a car through. Both agree on what it is, a fire-carved archway through a living giant, and we have not been able to settle the numbers, so we give you both.\n\nThat is the useful thing about this tree. Lower down in the same grove, the California Tunnel Tree shows what people did to a sequoia with saws in 1895. The Clothespin shows what fire does on its own, slowly, and how much of a trunk a sequoia can lose and still stand.\n\nIt is a named stop on the Mariposa Grove Trail, on the way to the upper grove, near the Faithful Couple, so the two are best walked together. From the Arrival Area that is the longer walk, around eleven kilometres there and back. No source we checked gives the height or girth of the whole tree, and none gives an age. If you know either, tell us.",
+      "how_to_recognise": "You can recognise it by the fire-carved opening straight through the trunk, big enough to see from fifty yards away. It stands on the Mariposa Grove Trail toward the upper grove, near the Faithful Couple.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "ynp_005",
+      "name": "Bachelor and Three Graces",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Mariposa Grove, Yosemite National Park, Mariposa County, California",
+        "latitude": 37.5045,
+        "longitude": -119.6001,
+        "neighbourhood": "Lower Mariposa Grove, on the Grizzly Giant Loop Trail"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Mariposa_Grove",
+        "https://home.nps.gov/yose/planyourvisit/mg.htm"
+      ],
+      "access": "Paid entry (Yosemite National Park entrance fee); on the Grizzly Giant Loop Trail from the Arrival Area, same route as the Grizzly Giant and California Tunnel Tree.",
+      "transport": "No public transit to the park; nearest gateway town Oakhurst/Wawona, reached via Highway 41.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Four giant sequoias stand here with their roots so intertwined that if one of the Three Graces falls, it will probably take the others down with it. They have staked everything on each other.\n\nThe Graces are the three that grow very close together. The Bachelor stands a little apart, near enough to belong to the group and far enough off to earn the name. From the Grizzly Giant Loop Trail the four read as one composition, and that is how the grove treats them: a single named stop rather than four separate trees. We do the same.\n\nThe arrangement is the whole point. Most famous sequoias are famous alone, for a record or a scar or a hole cut through them. This one is famous for a relationship. Three giants holding on to the same ground is either a picture of mutual support or a single accident waiting to happen, depending on your mood, and the names suggest whoever christened them chose the first reading.\n\nThey stand on the lower loop from the Arrival Area, on the same walk as the Grizzly Giant and the California Tunnel Tree, so all three fit into one short outing. We have not found a reliable height, girth or age for any of the four; one figure in circulation repeats the same number in two unrelated units and looks like a slip rather than a measurement. If you have a real one, tell us.",
+      "how_to_recognise": "You can recognise it by three sequoias growing very close together, with a fourth, the Bachelor, standing slightly apart. It stands on the Grizzly Giant Loop Trail, on the same walk as the Grizzly Giant.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}

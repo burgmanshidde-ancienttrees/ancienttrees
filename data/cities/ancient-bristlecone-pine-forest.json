@@ -1,0 +1,65 @@
+{
+  "city": "Ancient Bristlecone Pine Forest",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "One tree, the largest bristlecone pine ever measured. The Patriarch Tree stands in Patriarch Grove, not the more famous Schulman Grove where Methuselah, at 4,858 years the oldest tree species record-holder, grows unmarked and unnamed to protect it. The Patriarch is a different tree in a different grove, and its fame is bulk rather than age: broader and less twisted than the wind-carved bristlecones around it, on bare rock at nearly 3,440 metres in California's White Mountains. Nobody has published its age, its height or its girth.",
+  "meta_description": "The Patriarch Tree is the largest bristlecone pine known, in Patriarch Grove, California's White Mountains. Nobody has published its age.",
+  "question_meta": "The Ancient Bristlecone Pine Forest's mapped tree is the Patriarch, the largest bristlecone pine known, in Patriarch Grove, not Schulman Grove.",
+  "question_answer": "The Patriarch Tree, in Patriarch Grove, about 13 miles north of the more visited Schulman Grove. It is the largest bristlecone pine known by trunk volume, though a broader and comparatively untwisted trunk rather than a taller or older one: Methuselah, the species' age record-holder at 4,858 years, grows in Schulman Grove and is a different tree entirely. Nobody has published the Patriarch's age, height or girth. It is the only tree mapped here, published alone under the single-tree exception because it is the destination, not a list.",
+  "question_context": "The Ancient Bristlecone Pine Forest sits in the White Mountains of eastern California, inside Inyo National Forest, and holds the oldest confirmed trees on Earth, some past 4,800 years. This page maps only one of them. The Patriarch stands in Patriarch Grove, at about 3,440 metres, roughly 13 miles by a rough but maintained dirt road north of the Schulman Grove visitor centre, where the modest entry fee is paid; a spare tyre is recommended for the drive. It is almost the first tree on the Timberline Ancients Trail from the grove's car park.\n\nIts fame is size rather than age. Most bristlecones nearby are twisted into knots and ribbons of bare wood by the wind and cold at this elevation; the Patriarch is broader and comparatively straightforward, the bulkiest bristlecone anywhere by trunk volume. Methuselah, the oldest dated tree of any species at 4,858 years, grows in the Schulman Grove area, a different tree in a different grove, its exact location deliberately withheld to protect it. Nobody has published a height, girth or age for the Patriarch; if you know of a core or a count, tell us. The forest is open mid-May through November.",
+  "hero_tree_id": "abp_001",
+  "oldest_tree_id": "abp_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in the Ancient Bristlecone Pine Forest?",
+      "a": "The mapped tree here, the Patriarch, has no published age. The forest's oldest tree of any kind is Methuselah, dated at 4,858 years, in the nearby but separate Schulman Grove; its exact location is withheld to protect it, so it is not one we can map."
+    },
+    {
+      "q": "Why is it called the Patriarch if it isn't the oldest?",
+      "a": "Its fame is size, not age. It is the largest known bristlecone pine by trunk volume, broader and less wind-twisted than the trees around it, in a landscape where most bristlecones look nothing like it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "There is a modest entry fee, $3 per person or $6 per car maximum, paid at the Schulman Grove visitor centre gate; children under 18 are free."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car via White Mountain Road from US-395 near Big Pine, California. From the Schulman Grove visitor centre, a rough but maintained dirt road (a spare tyre is recommended) runs about 13 miles north to Patriarch Grove, where the tree is almost the first stop on the Timberline Ancients Trail. The forest is generally open mid-May through November."
+    }
+  ],
+  "trees": [
+    {
+      "id": "abp_001",
+      "name": "The Patriarch Tree",
+      "species": "Great Basin Bristlecone Pine (Pinus longaeva)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Patriarch Grove, Ancient Bristlecone Pine Forest, Inyo National Forest, White Mountains, Mono/Inyo County, California",
+        "latitude": 37.5276,
+        "longitude": -118.1979,
+        "neighbourhood": "Patriarch Grove, on the self-guided Timberline Ancients Trail, about 13 miles north of the Schulman Grove visitor center on a maintained dirt road"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Ancient_Bristlecone_Pine_Forest",
+        "https://californiathroughmylens.com/ancient-bristlecone-forest-patriarch-grove/"
+      ],
+      "access": "Paid entry ($3/person, $6/car maximum at the Schulman Grove visitor center gate, children under 18 free); reached via a maintained but rough dirt road (a spare tire is recommended) 13 miles north of Schulman Grove to Patriarch Grove at about 11,300 ft elevation, then a short walk on the Timberline Ancients Trail, encountered almost immediately from the trailhead. The forest is generally open mid-May through November, weather permitting.",
+      "transport": "No public transit; reached by car via White Mountain Road from US-395 near Big Pine, California.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The largest bristlecone pine in the world does not look the part. Most of the ancient bristlecones around it are twisted into knots and ribbons of bare wood; the Patriarch is broader and comparatively straightforward, a heavy trunk of a tree in a landscape that seems to have given up on trees.\n\nIt stands in the Patriarch Grove, at about 3,440 metres in California's White Mountains, on ground that is mostly bare rock. This is the species that holds the record for longevity. Methuselah, down in the Schulman Grove area, has been dated at 4,858 years. The Patriarch is a different tree in a different grove, and its fame is size, not age. Both sources we used call it the largest bristlecone by trunk volume, and neither gives a number for its height, its girth or its age.\n\nMethuselah's figure is not the Patriarch's, and nobody we can find has published how old the Patriarch is. If you know of a core or a count, tell us.\n\nGetting there is part of it. From the Schulman Grove visitor centre, where the modest entry fee is paid, a rough but maintained dirt road runs about 21 kilometres north; take a spare tyre. The tree is almost the first thing on the Timberline Ancients Trail from the grove's car park. The forest is generally open from mid-May through November, weather permitting.",
+      "how_to_recognise": "You can recognise it by the broad, comparatively untwisted trunk, the bulkiest of the bristlecones around it. It stands almost at the start of the Timberline Ancients Trail in Patriarch Grove, not Schulman Grove.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}

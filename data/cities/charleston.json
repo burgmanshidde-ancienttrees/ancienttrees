@@ -2,10 +2,10 @@
   "city": "Charleston",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Two entries, and one of them is why anyone drives out to Johns Island. The Angel Oak is a live oak wide enough to shade a quarter of an acre, standing in a free city park twenty five minutes from downtown, and the age printed on the souvenirs is roughly four times the age in the records. The other is in town: the fenced yard of oaks around an 1857 cistern at the College of Charleston, the view that college puts on everything it prints.",
+  "intro": "Three entries, and one of them is why anyone drives out to Johns Island. The Angel Oak is a live oak wide enough to shade a quarter of an acre, standing in a free city park twenty five minutes from downtown, and the age printed on the souvenirs is roughly four times the age in the records. Out at Middleton Place stands another live oak claimed even older, though its number is legend rather than measurement. In town, the fenced yard of oaks around an 1857 cistern at the College of Charleston completes the list.",
   "meta_description": "Charleston's Angel Oak shades a quarter of an acre in a free city park on Johns Island. Where it stands, and how old it actually is.",
   "question_meta": "Charleston's oldest tree is the Angel Oak on Johns Island, put at 300 to 500 years. Where it stands, and why 1,500 is the wrong number.",
-  "question_answer": "The oldest tree in Charleston is the Angel Oak, a southern live oak standing in a free city-owned park at 3688 Angel Oak Road on Johns Island, about twenty five minutes by car from downtown. The City of Charleston, which has owned the park since 1991, puts it at 300 to 400 years; an academic estimate cited by Wikipedia runs to 500. This page carries the union of the two, 300 to 500 years. The 1,500 year figure that appears on signs, postcards and merchandise around the city has no measurement behind it.",
+  "question_answer": "The oldest tree in Charleston is the Angel Oak, a southern live oak standing in a free city-owned park at 3688 Angel Oak Road on Johns Island, about twenty five minutes by car from downtown. The City of Charleston, which has owned the park since 1991, puts it at 300 to 400 years; an academic estimate cited by Wikipedia runs to 500. This page carries the union of the two, 300 to 500 years. The 1,500 year figure that appears on signs, postcards and merchandise around the city has no measurement behind it. A third tree, the Middleton Oak at Middleton Place, is sometimes quoted at 900 to 1,000 years, a figure repeated from account to account rather than measured; treat it the same way as the debunked 1,500-year claim for the Angel Oak, a number nobody has actually derived.",
   "question_context": "Nobody has counted the rings of the Angel Oak and nobody is going to. Live oak grows fast when young, slows at no reliable rate afterwards and hollows out from the centre while the tree is still healthy, so there is no continuous core to pull and no ring sequence to read. Every published age for it is an estimate built from size, which is how the city arrives at 300 to 400 years and an academic estimate reaches 500. The popular claim that goes with the 1,500 year figure, that this is the oldest living thing east of the Mississippi, does not survive checking either: bald cypress in the Carolinas have been dated by ring count well past a thousand years, one of them beyond 1,600. What is firm is everything that was actually measured. The trunk is 25 and a half feet round by the city's figure and 28 feet by another, the crown shades about 17,000 square feet, and the longest limb reaches 187 feet. The Cistern Yard stand downtown carries no age, because part of it was replanted after Hurricane Hugo.",
   "hero_tree_id": "chs_001",
   "oldest_tree_id": "chs_001",
@@ -25,6 +25,10 @@
     {
       "q": "Can I walk into the Cistern Yard at the College of Charleston?",
       "a": "Yes, it is an open campus green and self-guided visits are welcome in daylight. It is occasionally roped off for commencement or for Spoleto Festival performances staged in the yard."
+    },
+    {
+      "q": "Isn't the Middleton Oak older than the Angel Oak?",
+      "a": "Middleton Place quotes 900 to 1,000 years for its oak, but that figure is repeated from one write-up to the next rather than measured, much like the discredited 1,500-year claim once made for the Angel Oak. The Angel Oak's 300 to 500 year range comes from an actual size-based estimate, which is why it keeps the title here."
     }
   ],
   "trees": [
@@ -91,6 +95,39 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "how_to_recognise": "You are looking for the yard rather than one tree: iron-fenced live oaks hung with Spanish moss, closed at the far end by the portico of Randolph Hall. Come in from George Street and stand at the sunken cistern."
+    },
+    {
+      "id": "chs_003",
+      "name": "The Middleton Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 900 to 1,000 years",
+      "age_min": 900,
+      "age_max": 1000,
+      "girth_cm": 1000,
+      "location": {
+        "address": "Middleton Place, 4300 Ashley River Road, Charleston, SC 29414 (Sundial Garden)",
+        "latitude": 32.899673,
+        "longitude": -80.140617,
+        "neighbourhood": "Middleton Place plantation gardens, Ashley River, near Summerville"
+      },
+      "verified_sources": [
+        "https://www.lgcfinc.org/uploads/1/5/1/2/15124054/001-500.pdf",
+        "https://charlestonmag.com/guide_to_charleston_gardens_middleton_place",
+        "https://www.louisdallaraphotography.com/2014/01/middleton-oak-tree/"
+      ],
+      "access": "Paid entry (Middleton Place gardens, $28-32 adult admission, open daily 9am-5pm); stands in the Sundial Garden",
+      "transport": "Roughly 25-30 minutes by car northwest of downtown Charleston along Ashley River Road; no transit stop nearby",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Until 2012 this oak was described as the largest tree in the eastern United States. It has also been losing large parts of its crown since 2008, which has cut into the volume of wood that made the claim. It is still standing and still alive.\n\nThe numbers from a 2004 measurement are still the ones people quote: a trunk 10.44 feet across, about ten metres round, a height of 67 feet and some 4,820 cubic feet of wood. It has been called the largest measured southern live oak. The Live Oak Society, whose members are the trees themselves, lists it as its First Vice President.\n\nCharleston Magazine puts it at 900 to 1,000 years old. That is a figure repeated from one account to the next rather than measured, and it would make this oak several centuries older than the Angel Oak, so read it as a generous estimate rather than a date.\n\nIn 1997 a young oak propagated from it was planted just to the north, to help protect the old tree. That offspring is now about 26 feet tall, a reasonable start on the next thousand years.\n\nThe oak stands in the Sundial Garden at Middleton Place, about half an hour by car from downtown Charleston. Garden entry is paid.",
+      "how_to_recognise": "You can recognise it by a trunk about ten metres round under a crown thinned by losses since 2008, with a young oak raised from it standing just to the north. It stands in the Sundial Garden at Middleton Place.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
     }
   ]
 }

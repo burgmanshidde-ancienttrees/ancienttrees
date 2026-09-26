@@ -1,6 +1,7 @@
 {
  "note": "Which US state each published US place is in (Contract L). One line per place; the build fails on a US place missing here. District of Columbia is not a state and gets no state page.",
  "places": {
+  "ancient-bristlecone-pine-forest": "California",
   "athens-georgia": "Georgia",
   "austin": "Texas",
   "baltimore": "Maryland",
@@ -17,6 +18,7 @@
   "fish-lake-utah": "Utah",
   "fort-lauderdale": "Florida",
   "fort-worth": "Texas",
+  "gettysburg": "Pennsylvania",
   "gonzales-texas": "Texas",
   "guerneville": "California",
   "hampton-virginia": "Virginia",
@@ -26,6 +28,7 @@
   "indianapolis": "Indiana",
   "kansas-city": "Missouri",
   "kauai": "Hawaii",
+  "kings-canyon-national-park": "California",
   "las-vegas": "Nevada",
   "lebec": "California",
   "logan-ohio": "Ohio",
@@ -56,6 +59,7 @@
   "tillamook": "Oregon",
   "tulsa": "Oklahoma",
   "washington-dc": "District of Columbia",
-  "wye-mills-maryland": "Maryland"
+  "wye-mills-maryland": "Maryland",
+  "yosemite-national-park": "California"
  }
 }

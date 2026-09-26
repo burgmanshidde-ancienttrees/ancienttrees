@@ -1,0 +1,158 @@
+{
+  "city": "Gettysburg",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Four witness trees at Gettysburg, three alive since before the battle and one deliberately not. A swamp white oak sheltered Sickles's officers before he advanced to the Peach Orchard on 2 July 1863; a black walnut on Cemetery Ridge still carries concrete poured into its trunk in 1916; a young white oak above Devil's Den looked down on Longstreet's opening assault. The fourth, the Copse of Trees at the High Water Mark, is the most famous clump of trees on the battlefield, though the park service says plainly none of it stood there in 1863.",
+  "meta_description": "Four Gettysburg witness trees: Sickles's shade oak, a concrete-filled walnut, a young oak above Devil's Den, and the famous Copse of Trees.",
+  "question_meta": "General Gibbon's Walnut Tree, over 200 years old and still bearing the scars of 1863, is Gettysburg's oldest mapped witness tree.",
+  "question_answer": "Gettysburg's oldest mapped witness tree is General Gibbon's Walnut Tree, a black walnut on Cemetery Ridge dated at over 200 years by the survey behind gettysburgwitnesstrees.com, its trunk measured at 284 centimetres round in 2023. It stands where Confederate troops briefly broke through during Pickett's Charge on 3 July 1863, and it is the sole survivor of 33 witness trees whose cavities the park filled with concrete in 1916 and 1917; the concrete is still visible through a crevice at its base. The Sickles Witness Tree and the Devil's Den Witness Tree are both put at roughly 175 to 220 years, close behind it. The Copse of Trees, the battlefield's most photographed clump, is not a contender: the park service states plainly that none of today's trees there predate the battle.",
+  "question_context": "All four trees stand on public land inside Gettysburg National Military Park, free to visit, reached on foot from roadside pull-offs along the park's tour roads. The Sickles Witness Tree is at auto tour stop 11 near the Trostle Farm; General Gibbon's Walnut Tree and the Copse of Trees both stand on Cemetery Ridge, a few minutes' walk apart, off Hancock Avenue; the Devil's Den Witness Tree looks down from Sickles Avenue over the ground where Longstreet's assault on 2 July 1863 began.\n\nNone of the ages here comes from a core sample; all are drawn from period photographs, sketches or documented measurements of trunk growth, and the project treats them as careful estimates rather than settled counts. The Copse of Trees is the exception that proves the rule: it earns its place not as a witness but as the exact spot Pickett's Charge was aimed at on 3 July 1863, fenced since 1887 to keep souvenir hunters from carrying it away. All four sit within a short drive of each other and of downtown Gettysburg.",
+  "hero_tree_id": "gby_002",
+  "oldest_tree_id": "gby_003",
+  "faq": [
+    {
+      "q": "What is the oldest tree at Gettysburg?",
+      "a": "General Gibbon's Walnut Tree on Cemetery Ridge, put at over 200 years by the survey behind gettysburgwitnesstrees.com, with a trunk measured at 284 centimetres round in 2023. The Sickles and Devil's Den witness trees follow close behind, both estimated at roughly 175 to 220 years."
+    },
+    {
+      "q": "Are the trees in the Copse of Trees really from 1863?",
+      "a": "No, and the National Park Service says so on its own page for the site. What stood there during Pickett's Charge was a small clump of bushes and trees; today's half dozen or so oaks, fenced since 1887, are successors rather than survivors, and the spot matters for what it marks, not for how old the wood is."
+    },
+    {
+      "q": "How much does it cost to visit these trees?",
+      "a": "Nothing. All four stand on public land inside Gettysburg National Military Park, reachable on foot from roadside pull-offs along the park's tour roads."
+    },
+    {
+      "q": "What makes a tree a Gettysburg witness tree?",
+      "a": "Documentary evidence that it was already standing during the battle: a dated period photograph or sketch showing the tree in place. The Sickles Witness Tree has an 1863 sketch by the artist Charles Reed; the Devil's Den Witness Tree appears in an 1899 photograph already established on the same spot."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gby_001",
+      "name": "The Sickles Witness Tree",
+      "species": "Swamp White Oak (Quercus bicolor)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 175,
+      "age_max": 220,
+      "girth_cm": null,
+      "location": {
+        "address": "United States Avenue near the Trostle Farm, Gettysburg National Military Park, Pennsylvania",
+        "latitude": 39.80198,
+        "longitude": -77.24312,
+        "neighbourhood": "Auto tour stop 11, Trostle Farm, north side of United States Avenue"
+      },
+      "verified_sources": [
+        "https://www.gettysburgdaily.com/sickles-witness-tree/",
+        "https://www.waymarking.com/waymarks/WMMW0E_Sickles_Witness_Tree_at_Trostle_Farm_Gettysburg_Battlefield_Gettysburg_PA",
+        "https://civilwarcycling.com/index/gettysburg-witness-trees/"
+      ],
+      "access": "Free, within Gettysburg National Military Park; on public land directly beside United States Avenue at auto tour stop 11, reachable on foot or by pulling off the road.",
+      "transport": "No public transit; the park is a short drive from downtown Gettysburg, PA. Roadside parking near the Trostle Farm.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "On the afternoon of 2 July 1863, Major General Daniel Sickles gathered his officers under this oak to confer before he moved. He then pushed his corps forward to the Peach Orchard, and the second day of the Battle of Gettysburg took a different shape because of it.\n\nHe picked the spot for its shade. The swamp white oak at the Trostle Farm was one of the few shaded places on that part of the field, and it is still here, beside United States Avenue at auto tour stop 11.\n\nWhat makes it a witness tree rather than just an old tree near a battlefield is a drawing. The artist Charles Reed sketched the tree as it stood that day. A dated period image is the standard evidence for a Gettysburg witness tree, and this one has it.\n\nIt is not a giant, and not especially old by this map's standards. A tree-marker source puts it at roughly 175 to 220 years, which fits a tree already big enough to shelter a general's conference in 1863. A 2025 survey of the battlefield's witness trees, several of which are now dead or removed, lists this one as alive with no damage noted.\n\nThe ground is open, free and a few steps from the road. Nobody has published a girth for it yet; if you have a tape measure and a spare minute, tell us.",
+      "how_to_recognise": "You can recognise it as the swamp white oak that Charles Reed sketched on 2 July 1863, the shade tree beside the road. It stands at the Trostle Farm, on the north side of United States Avenue at auto tour stop 11.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gby_002",
+      "name": "The Copse of Trees",
+      "species": "Chestnut Oak (Quercus montana)",
+      "age_estimate": "not documented; the current trees postdate the 1863 battle",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "The Angle, Hancock Avenue, Gettysburg National Military Park, Pennsylvania",
+        "latitude": 39.812443,
+        "longitude": -77.235778,
+        "neighbourhood": "About 0.4 mile south of town, west side of Hancock Avenue, within the stone-walled Angle, at the base of the High Water Mark monument"
+      },
+      "verified_sources": [
+        "https://www.nps.gov/places/high-water-mark-monument-and-copse-of-trees.htm",
+        "https://gettysburg.stonesentinels.com/gettysburg-battlefield/the-copse-of-trees/"
+      ],
+      "access": "Free, within Gettysburg National Military Park; a short walk from Hancock Avenue on the paved battlefield paths, enclosed by a low iron fence installed in 1887 to protect it from souvenir hunters.",
+      "transport": "No public transit; the park is a short drive from downtown Gettysburg, PA. Roadside parking on Hancock Avenue.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "None of the trees inside this fence were standing in 1863. The National Park Service says so plainly on its own page for the site, and it is the first thing to know before you walk up to what may be the most famous clump of trees at Gettysburg.\n\nWhat stood here on 3 July 1863 was a small clump of bushes and trees on Cemetery Ridge. Confederate planners chose it as the visual target for Pickett's Charge, the point the whole assault was aimed at. The attack reached it, and that is as close as it came to breaking the Union line. The place has been called the High Water Mark ever since, and the monument of that name stands beside it.\n\nSo the trees are successors, not survivors. Today it is roughly half a dozen large trees, mostly chestnut oak, inside a low iron fence put up in 1887 to keep souvenir hunters from carrying the copse away. The count and the full species mix are approximate, because the sources we checked give neither exactly, and none of the trees has a published age.\n\nWhy map it at all, then? Because this is exactly where people come to stand. The copse was the landmark the charge aimed at, and it still marks the spot. The age of the wood is beside the point; the place is not. It is free, and a short walk from Hancock Avenue.",
+      "how_to_recognise": "You can recognise it by the small group of large oaks inside a low iron fence. It stands inside the stone-walled Angle, at the base of the High Water Mark monument, on the west side of Hancock Avenue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gby_003",
+      "name": "General Gibbon's Walnut Tree",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 260,
+      "girth_cm": 284,
+      "location": {
+        "address": "Hancock Avenue, Cemetery Ridge, Gettysburg National Military Park, Pennsylvania",
+        "latitude": 39.810021,
+        "longitude": -77.236115,
+        "neighbourhood": "Center of the Union line on Cemetery Ridge, beside Weir's Battery position, just off Hancock Avenue"
+      },
+      "verified_sources": [
+        "https://www.battlefields.org/visit/heritage-sites/cemetery-ridge-witness-tree",
+        "https://www.gettysburgwitnesstrees.com/main-map/hancock-avenue/john-gibbon-witness-tree/",
+        "https://www.gettysburgdaily.com/general-gibbons-walnut-tree/"
+      ],
+      "access": "Free, within Gettysburg National Military Park; on public land directly beside Hancock Avenue on Cemetery Ridge, reachable on foot.",
+      "transport": "No public transit; short drive from downtown Gettysburg, PA. Roadside parking along Hancock Avenue.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "There is concrete inside this walnut, poured into its trunk more than a century ago, and you can still see it through a crevice at the base. In 1916 and 1917 the park filled the cavities of 33 witness trees this way. This black walnut is the only one of them still alive.\n\nIt stands on Cemetery Ridge at the centre of the Union line, the stretch Confederate troops briefly broke through during Pickett's Charge on 3 July 1863. Local tradition says Brigadier General John Gibbon was wounded near this tree during the assault. Several sources repeat that, none documents it, so treat the wounding as a story about the tree rather than a fact about it. What is documented is the tree itself, standing on the ridge through the battle.\n\nThe survey behind gettysburgwitnesstrees.com gives it more than 200 years and a trunk 284 centimetres round in 2023, up from roughly 66 centimetres across in 1906. A storm in 2021 took the top of its main trunk. It survived that too, and by the same 2023 account it still sets fruit every summer, which is a better answer than a 2008 newspaper piece that worried it was failing.\n\nIt is free to visit, just off Hancock Avenue beside the position of Weir's Battery, and a few minutes' walk from the Copse of Trees.",
+      "how_to_recognise": "You can recognise it by the storm-broken main trunk, 284 cm round, and the concrete filling visible through a crevice at its base. It stands just off Hancock Avenue on Cemetery Ridge, beside the Weir's Battery position.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gby_004",
+      "name": "The Devil's Den Witness Tree",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "roughly 190 years",
+      "age_min": 175,
+      "age_max": 200,
+      "girth_cm": 411,
+      "location": {
+        "address": "Sickles Avenue, above Devil's Den, Gettysburg National Military Park, Pennsylvania",
+        "latitude": 39.791866,
+        "longitude": -77.242645,
+        "neighbourhood": "On a sharp curve on high ground above Devil's Den, across from the Smith's 4th New York Independent Battery monument"
+      },
+      "verified_sources": [
+        "https://www.battlefields.org/visit/heritage-sites/devils-den-witness-tree",
+        "https://www.gettysburgwitnesstrees.com/main-map/rose-woods/devils-den-witness-tree/"
+      ],
+      "access": "Free, within Gettysburg National Military Park; on public land directly beside Sickles Avenue overlooking Devil's Den, reachable on foot.",
+      "transport": "No public transit; short drive from downtown Gettysburg, PA. Roadside parking nearby.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "When the fighting at Devil's Den began on 2 July 1863, this white oak was a sapling, its trunk about 21 centimetres across. It is a witness to the battle, but a young one, and its interest is what it looked down on rather than its age.\n\nWhat it looked down on was the opening clash of Longstreet's assault on the second day. From this high ground there is what both our sources call a balcony view: Houck's Ridge, the Slaughter Pen and the western slope of Little Round Top, the ground where about 2,400 Union troops under Birney met some 5,500 Confederates under Hood.\n\nThe evidence that it was already here is a photograph published in 1899, showing the tree established on this same spot. The survey behind gettysburgwitnesstrees.com measured it in 2023 at 411 centimetres round, more than five times its width in 1863. By the estimates in the same sources it is somewhere around 175 to 200 years old, which puts its seedling years a generation or so before the battle.\n\nSo the view is the thing, and the tree frames it. Stand beside the trunk, look out over Devil's Den, and you are looking at the same ground this oak has faced since before a shot was fired there.\n\nIt stands on a sharp curve of Sickles Avenue, across the road from the monument to Smith's 4th New York Independent Battery. Free, and a few steps from the car.",
+      "how_to_recognise": "You can recognise it by the white oak trunk, 411 cm round, on the high ground with a clear view down over Devil's Den. It stands on a sharp curve of Sickles Avenue, across from the Smith's 4th New York Battery monument.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

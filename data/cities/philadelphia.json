@@ -2,11 +2,11 @@
   "city": "Philadelphia",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "One tree, and it is the oldest ginkgo in America. Bartram's Ginkgo grows at Bartram's Garden on the Schuylkill, from a sapling William Hamilton shipped over from London in 1785 and gave to his friend William Bartram. Hamilton kept two more for his own estate; both were felled in the 1980s. This one, standing on the ground Bartram himself planted, has now outlived them by four decades. It is free, open every day, dawn to dusk.",
-  "meta_description": "Bartram's Ginkgo, planted in 1785, is the oldest ginkgo tree in America. Free to visit at Bartram's Garden in Philadelphia, dawn to dusk.",
-  "question_answer": "The oldest tree in Philadelphia is Bartram's Ginkgo, growing east of the Bartram Barn at Bartram's Garden in Southwest Philadelphia, believed to be around 240 years old. It grew from a sapling William Hamilton shipped from London in 1785 and gave to his friend William Bartram, and it is thought to be the oldest ginkgo in North America. The garden is free and open every day, dawn to dusk.",
-  "question_meta": "Bartram's Ginkgo, planted 1785, roughly 240 years old, is Philadelphia's oldest tree and America's oldest ginkgo. Where it stands.",
-  "question_context": "The date rests on a specific claim rather than a general one. In 1785, William Hamilton of The Woodlands shipped three ginkgo saplings from London, the first of their kind to reach North America. He kept two at his own estate and gave the third to his friend William Bartram, whose garden on the Schuylkill was already the oldest botanic garden on the continent. Both of Hamilton's trees at The Woodlands were cut down in the 1980s, leaving Bartram's as the only survivor and the oldest ginkgo known in the country. Wikipedia and the garden's own history agree closely on this, though both likely draw on the same record rather than two independent counts, which is why the entry carries a flag. It is a male tree, sparing the garden a problem: ginkgoes are dioecious, and only females produce the foul-smelling seed the species is known for. No tree-level coordinates exist, so the pin marks the general area east of the Bartram Barn. The garden is free and open every day, dawn to dusk; the Woodland Avenue trolley (route 34) stops within a 10 minute walk, and SEPTA buses 12 and 64 also serve the area.",
+  "intro": "Four trees, and three of them are at Morris Arboretum. Bartram's Ginkgo, the oldest ginkgo in America, grows alone at Bartram's Garden on the Schuylkill, planted in 1785 by William Hamilton and outliving the two he kept for himself. Across town at Morris Arboretum stand a natural oak hybrid nobody bred, a katsura whose autumn leaves smell of brown sugar, and a weeping hemlock that survived a world's fair, a 1947 move, and the 2024 storm that killed its twin.",
+  "meta_description": "Bartram's Ginkgo, America's oldest, grows by the Schuylkill. Three more at Morris Arboretum: a wild oak hybrid, a fragrant katsura, a weeping hemlock.",
+  "question_answer": "The oldest tree in Philadelphia is Bartram's Ginkgo, growing east of the Bartram Barn at Bartram's Garden in Southwest Philadelphia, believed to be around 240 years old. It grew from a sapling William Hamilton shipped from London in 1785 and gave to his friend William Bartram, and it is thought to be the oldest ginkgo in North America. The garden is free and open every day, dawn to dusk. Three more trees are mapped at Morris Arboretum across town: a wild oak hybrid that may run nearly as old, a katsura whose autumn leaves smell of brown sugar, and a weeping hemlock that survived a 1947 move and the 2024 storm that killed its twin.",
+  "question_meta": "Bartram's Ginkgo, planted 1785, roughly 240 years old, is Philadelphia's oldest tree and America's oldest ginkgo, one of four mapped here.",
+  "question_context": "The date rests on a specific claim rather than a general one. In 1785, William Hamilton of The Woodlands shipped three ginkgo saplings from London, the first of their kind to reach North America. He kept two at his own estate and gave the third to his friend William Bartram, whose garden on the Schuylkill was already the oldest botanic garden on the continent. Both of Hamilton's trees were cut down in the 1980s, leaving Bartram's the sole survivor and the oldest ginkgo known in the country. It is a male tree, sparing the garden the foul-smelling seed ginkgoes are known for. The garden is free, open every day, dawn to dusk, a 10 minute walk from the Woodland Avenue trolley.\n\nThree more trees stand across town at Morris Arboretum, a paid garden: a Bender Oak hybrid nobody bred, possibly close to the ginkgo's own age; a katsura whose autumn leaves smell of brown sugar; and a weeping hemlock, moved to its current spot in 1947, that outlived a 2024 storm which killed its twin by the pond.",
   "hero_tree_id": "phl_001",
   "oldest_tree_id": "phl_001",
   "faq": [
@@ -20,11 +20,15 @@
     },
     {
       "q": "Is it free to visit?",
-      "a": "Yes. Bartram's Garden is a city-owned public garden and National Historic Landmark, free and open every day, dawn to dusk."
+      "a": "Yes. Bartram's Garden is a city-owned public garden and National Historic Landmark, free and open every day, dawn to dusk. Morris Arboretum, where the other three trees on this page stand, charges general admission."
     },
     {
       "q": "How do I get there?",
-      "a": "The Woodland Avenue trolley (route 34) stops about a 10 minute walk from the garden, and SEPTA bus routes 12 and 64 also serve Lindbergh Boulevard near the entrance."
+      "a": "The Woodland Avenue trolley (route 34) stops about a 10 minute walk from Bartram's Garden, and SEPTA bus routes 12 and 64 also serve Lindbergh Boulevard near the entrance. Morris Arboretum, in Chestnut Hill, is reached by the SEPTA Chestnut Hill West line to Allen Lane."
+    },
+    {
+      "q": "What trees are at Morris Arboretum?",
+      "a": "Three on this page: the Bender Oak, a natural hybrid that happened on its own; the arboretum's signature Katsura, whose fallen leaves smell of brown sugar each October; and a weeping hemlock that survived the 1876 Centennial Exposition, a 1947 move, and the 2024 storm that took down its twin by the pond."
     }
   ],
   "trees": [
@@ -65,6 +69,108 @@
         "label": "November, when the whole crown turns gold and can drop within a day or two"
       },
       "how_to_recognise": "You can recognise it by where it stands, east of the old Bartram barn on the ground Bartram planted. It is a male tree, so it drops none of the foul seed a female ginkgo does."
+    },
+    {
+      "id": "phl_002",
+      "name": "The Bender Oak",
+      "species": "Bender Oak, a natural hybrid of Scarlet Oak x Northern Red Oak (Quercus x benderi)",
+      "age_estimate": "up to 250 years",
+      "age_min": 150,
+      "age_max": 250,
+      "girth_cm": 669,
+      "location": {
+        "address": "Morris Arboretum, 100 East Northwestern Avenue, Chestnut Hill, Philadelphia, PA 19118 (stop 1 of the Great Trees tour, near the historic hilltop mansion site)",
+        "latitude": 40.0882721,
+        "longitude": -75.2212804,
+        "neighbourhood": "Chestnut Hill, Philadelphia"
+      },
+      "verified_sources": [
+        "https://www.morrisarboretum.org/sites/default/files/2023-01/tours-great-trees.pdf",
+        "https://www.treesandshrubsonline.org/articles/quercus/quercus-x-benderi/"
+      ],
+      "access": "Paid entry (Morris Arboretum & Gardens, University of Pennsylvania, general admission charged); open every day except Thanksgiving, Christmas Eve, Christmas and New Year's",
+      "transport": "Chestnut Hill, northwest Philadelphia; SEPTA Chestnut Hill West line to Allen Lane, then about a 15-20 minute walk, or bus routes serving Northwestern Ave",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Nobody bred this oak. It is a cross between a scarlet oak and a northern red oak that happened on its own, the kind of hybrid botanists did not even get round to naming until 1903, in Breslau. The one at Morris Arboretum may be up to 250 years old, which would put it at roughly the age of the United States. The arboretum's own guide says possibly; the lower end of the honest range is nearer 150.\n\nIt is also big in the way that matters: 26.5 metres tall, a trunk more than two metres across, and a canopy spreading over 30 metres. The Morris family, whose estate became the arboretum, had it as the dramatic entrance to their garden and their home on the hill. Today it is the first stop on the arboretum's own Great Trees tour.\n\nThere was once another notable Bender oak in the Philadelphia area, at Swarthmore College, reckoned at over 350 years. It was felled some time before 2009. This one is still standing, a hybrid most visitors have never heard of in a spot where they expect an ordinary oak.\n\nIt stands near the old mansion site at the start of the garden. Entry to the arboretum is paid. The pin is approximate; follow the Great Trees tour to stop one.",
+      "how_to_recognise": "You can recognise it by the spread, a canopy over 30 metres wide on a trunk more than two metres across. It stands at stop one of the arboretum's Great Trees tour, near the old hilltop mansion site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "phl_003",
+      "name": "The Katsura-Tree of Morris Arboretum",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "roughly 124 years (planted around 1902)",
+      "age_min": 120,
+      "age_max": 128,
+      "age_basis": "source",
+      "location": {
+        "address": "Morris Arboretum, 100 East Northwestern Avenue, Chestnut Hill, Philadelphia, PA 19118 (stop 7 of the Great Trees tour)",
+        "latitude": 40.0882721,
+        "longitude": -75.2212804,
+        "neighbourhood": "Chestnut Hill, Philadelphia"
+      },
+      "verified_sources": [
+        "https://www.morrisarboretum.org/sites/default/files/2023-01/tours-great-trees.pdf",
+        "https://www.phillymag.com/news/2020/05/01/oldest-philadelphia-trees/"
+      ],
+      "access": "Paid entry (Morris Arboretum & Gardens, University of Pennsylvania); open every day except Thanksgiving, Christmas Eve, Christmas and New Year's",
+      "transport": "Chestnut Hill, northwest Philadelphia; SEPTA Chestnut Hill West line to Allen Lane, then about a 15-20 minute walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Philadelphia Magazine once called this the largest tree in Philadelphia, which is a bold thing to say about a tree barely 120 years old. It is a katsura, native to Japan and China, planted around 1902 by the Morris family on the estate that became Morris Arboretum, and it has grown into one of the largest of its kind in North America.\n\nThe arboretum calls it its signature tree, and it earns the title in two ways. The first is plain size. The second arrives in autumn, when the leaves turn yellow and apricot and the air under the crown starts to smell of cinnamon and brown sugar, a bakery where you expected a garden.\n\nIn the century and a bit since it went in, the Morris estate around it has become a public garden run by the University of Pennsylvania, and a family planting has become the tree the arboretum puts forward as its emblem. It is stop seven on the arboretum's own Great Trees tour.\n\nEntry to the arboretum is paid. The pin marks the arboretum rather than the tree, so follow the tour to stop seven, and in October let your nose help.",
+      "how_to_recognise": "You can recognise it by its size, unusual for a katsura, and in autumn by the yellow and apricot leaves that smell of brown sugar. It stands at stop seven of the arboretum's Great Trees tour.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the leaves turn yellow and apricot and smell of brown sugar"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "phl_004",
+      "name": "The Weeping Hemlock at the Meadowbrook Gate",
+      "species": "Eastern Hemlock (Tsuga canadensis)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "location": {
+        "address": "Morris Arboretum, Meadowbrook Avenue gate, Chestnut Hill, Philadelphia, PA 19118",
+        "latitude": 40.0882721,
+        "longitude": -75.2212804,
+        "neighbourhood": "Chestnut Hill, Philadelphia"
+      },
+      "verified_sources": [
+        "https://www.morrisarboretum.org/blog/legacy-weeping-hemlock",
+        "https://www.morrisarboretum.org/sites/default/files/2023-01/tours-great-trees.pdf"
+      ],
+      "access": "Paid entry (Morris Arboretum & Gardens, University of Pennsylvania); open every day except Thanksgiving, Christmas Eve, Christmas and New Year's",
+      "transport": "Chestnut Hill, northwest Philadelphia; SEPTA Chestnut Hill West line to Allen Lane, then about a 15-20 minute walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This weeping hemlock was a celebrity once. In 1876 it went on show at the Centennial Exposition in Fairmount Park, the world's fair that marked America's hundredth birthday, where the Parsons & Sons nursery exhibited weeping hemlocks and, by the arboretum's account, created a sensation among horticulturists.\n\nTwo of those exhibition hemlocks came to the Morris estate afterwards. One was planted near the pond. The other went in near the Key Fountain, and in 1947 it was dug up and moved to a new home at the Meadowbrook Avenue gate. Moving a tree of that age is a gamble. It worked.\n\nThe twin by the pond was not so lucky. On 13 February 2024 a wet, heavy snowstorm brought it down, and the arboretum wrote its obituary. If you are carrying the older printed Great Trees brochure, its stop eleven describes that pond tree, which is gone. The survivor is this one, at the gate.\n\nIt is a weeping form of the eastern hemlock, the branches falling rather than reaching, and at roughly 150 years, counted from its first public appearance in 1876, it has now outlived both its sister and the fair that made it famous.\n\nEntry to the arboretum is paid. The pin is approximate; head for the Meadowbrook Avenue gate.",
+      "how_to_recognise": "You can recognise it by the weeping habit, branches hanging down rather than reaching out, on a hemlock that has stood here since 1947. It stands at the arboretum's Meadowbrook Avenue gate, not by the pond.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
     }
   ]
 }
