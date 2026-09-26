@@ -8762,6 +8762,13 @@
    "tokens": 0,
    "trees": 11,
    "note": "Session work: merged the 11 written trees into data/cities (3 new standalone places, 1 new city, 3 additions to existing pages), wrote page copy for the new places, fixed a stray fame field on gos_001, fixed Raudone's stale single-tree framing and Kaunas's stale tree-count sentence. preflight 0 problems, build 12559 pages, qa.py 16600 pages, both exit 0."
+  },
+  {
+   "target": "zywiec, hilvarenbeek, plunge, velke-borove",
+   "kind": "verify",
+   "tokens": 211884,
+   "trees": 4,
+   "note": "Refilled the shelf per prepare.py's instruction: verified 4 Tree of the Year contest entries (Kozy, Bladel/Witch Tree, Laukiai oak/2026 winner, Ziar wild apple), each deepening an existing 1-tree published place. Not yet written into city files."
   }
  ]
 }
