@@ -18386,6 +18386,54 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-26T13:57:11+00:00",
+   "date": "2026-09-26",
+   "run_id": "36246837818",
+   "minutes": 107.1,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 200,
+   "denials": 9,
+   "denials_source": "permission_denials: Bash(cd && python3 ; import ; stands ...), Bash(cd && sed && cd && python3 ...), Bash(for ; do ; -rohE | wc ...), Bash(git ; rm ; ls), Bash(grep | single | head ; echo ...), Bash(grep | vpr | zad | jrg ...), Bash(ls | grep | ghent | wetteren ...), Bash(python3 ; import ; ? ; path ...), Bash(sed)",
+   "ended": "success",
+   "tokens": 51469304,
+   "claims_held": [],
+   "commits": 9,
+   "cities_touched": 7,
+   "cities": [
+    {
+     "city": "silale",
+     "trees": 4
+    },
+    {
+     "city": "raudone",
+     "trees": 2
+    },
+    {
+     "city": "jalhay",
+     "trees": 1
+    },
+    {
+     "city": "kaunas",
+     "trees": 1
+    },
+    {
+     "city": "lo",
+     "trees": 1
+    },
+    {
+     "city": "vepriai",
+     "trees": 1
+    },
+    {
+     "city": "zadeikoniai",
+     "trees": 1
+    }
+   ],
+   "trees": 11,
+   "logged": true
   }
  ],
  "schedule_changes": [
