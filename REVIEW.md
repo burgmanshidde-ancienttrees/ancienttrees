@@ -81,6 +81,21 @@ before or during that write. Not live yet since `data/cities/great-smoky-
 mountains.json` does not exist; worth catching now, before the mismatch ships,
 rather than after.
 
+**WARN — APP — the map screen's logged-out "My trees" sheet cuts off its own
+sentence behind the tab bar.** `collection-tab.png` (iPhone SE, iOS 18.5, My
+trees tab, signed out): the empty-state paragraph reads "You collect a tree by
+photographing it while you stand in front of it. Sign in and we keep them for
+y" and the rest of the sentence is hidden behind the Map/Discover/My
+trees/camera tab bar. This is not the four-point DRIFT class appfit.py
+already gates; the words are actually unreadable, not merely close to an
+edge. PRINCIPLES.md #3 asks a zero state to teach ("a 0 of 10 passport should
+invite the first check-in, not look broken... every zero state is an
+instruction, not a dead end"); an instruction a reader cannot finish reading
+fails that on its own terms. The other five rotated screenshots (the collect
+flow: intro, place, identify, describe, ticked) read clean: no contradicted
+promises, no builder-speak, copy matches the reader-as-subject register
+PRODUCT_COPY.md and CONVENTIONS.md's identify-flow entry ask for.
+
 ---
 
 ## 2026-09-25
