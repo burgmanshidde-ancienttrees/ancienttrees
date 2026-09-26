@@ -1,0 +1,159 @@
+{
+  "city": "Šilalė",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Šilalė maps four trees in two registers. In town, at one junction, an oak planted to mark Lithuanian independence stands 90 metres from a memorial grove of thirteen oaks and a lime, one for each of the thirteen killed defending the Vilnius television tower on 13 January 1991. Out near Kaltinėnai, 16 to 18 kilometres away, two older oaks wait for a car: one scarred by lightning and carrying a small chapel, the other 33.5 metres tall.",
+  "meta_description": "Šilalė's trees: an Independence Oak and a memorial grove of 14 in town, plus two big countryside oaks near Kaltinėnai, one lightning-scarred.",
+  "question_meta": "Šilalė's oldest confirmed tree is the Independence Oak, planted 1927-1937, roughly a century old. Full list of 4.",
+  "question_answer": "The Šilalė Independence Oak, planted in the town centre to mark an anniversary of Lithuania's 1918 declaration of independence, either the tenth or the twentieth depending on which local account you follow. That leaves it 89 to 99 years old, young by the standards of this map but the oldest of the four trees mapped here with a documented basis for an age.",
+  "question_context": "The stones at the foot of the Independence Oak carry a single date, 1918-02-16, but which anniversary it marks is argued over: one account puts the planting in 1937, another in 1927 or 1928. It is 2.4 metres round and 15 metres tall, and stood through the Soviet decades when that date could not be marked. The town made it a heritage object in 2006 and has nursed it against traffic and road salt since 2018.\n\nNinety metres away, thirteen oaks and a lime ring a sculpture, Freedom's Crier: one tree for each of the thirteen men and one woman killed defending the Vilnius television tower on 13 January 1991. These are young trees, planted with the monument in the 1990s, here for what they mean rather than their age.\n\nThe other two, reached only by car, sit 16 to 18 kilometres out near Kaltinėnai. The Laumenai Oak carries a small chapel where lightning once struck it, and a cave has opened beneath its roots; it is 4.9 metres round. The Pundžiai Oak, 5.6 metres round and 33.5 metres tall, stands in forest behind an old, broken fence. Neither has a published age.",
+  "hero_tree_id": "sll_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Šilalė?",
+      "a": "The Independence Oak, planted in the town centre in either 1927/1928 or 1937 to mark an anniversary of Lithuania's 1918 independence declaration. That puts it at roughly 89 to 99 years old, the only one of the four mapped trees with a documented basis for an age."
+    },
+    {
+      "q": "What is the memorial grove beside the Independence Oak?",
+      "a": "Thirteen oaks and a single lime, planted around a sculpture called Freedom's Crier, one tree for each of the thirteen men and one woman killed when Soviet troops stormed the Vilnius television tower on 13 January 1991. It stands 90 metres from the Independence Oak, at the same junction."
+    },
+    {
+      "q": "Are all four trees in the town itself?",
+      "a": "No. The Independence Oak and the January 13 memorial grove are both in central Šilalė, 90 metres apart. The Laumenai and Pundžiai oaks stand in farmland and forest near Kaltinėnai, 16 to 18 kilometres out and 6.5 kilometres from each other; both need a car."
+    },
+    {
+      "q": "Is it free to visit all of them?",
+      "a": "Yes. The two town trees stand on a public street island and a street-corner plot with benches; the two countryside oaks stand on open farmland and state forest with no gate or fee, though both are genuinely remote and one is hard to spot from the road."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sll_001",
+      "name": "Šilalė Independence Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "species_basis": "confirmed by lt.wikipedia infobox (paprastasis ąžuolas)",
+      "age_estimate": "around a century",
+      "age_min": 89,
+      "age_max": 99,
+      "girth_cm": 240,
+      "location": {
+        "address": "Traffic island at the J. Basanavičiaus / Nepriklausomybės street intersection, central Šilalė",
+        "latitude": 55.489909,
+        "longitude": 22.186615,
+        "neighbourhood": "Central Šilalė"
+      },
+      "story": "The stones at the foot of this oak carry a single date, 1918-02-16, the day Lithuania declared its independence. The tree was planted to mark an anniversary of it. Which anniversary is still argued over in Šilalė.\n\nThe local historian Kazimieras Šetkus put the planting in 1937, for the twentieth. Another account puts it in 1927 or 1928, for the tenth. That leaves the oak somewhere between 89 and 99 years old, young by the standards of this map and chosen for what it stands for rather than its size: 2.40 metres round and 15 metres tall.\n\nWhat it has lived through is the point. Planted as a symbol of a young state, it stood through the Soviet decades when that date could not be celebrated, and was still there when it could be again. The town made it a natural heritage object in 2006.\n\nIts enemy now is traffic. It grows on an island in the middle of a busy junction, and road salt and passing lorries have been hard on it. Since 2018 the municipality has been nursing it back: replacing the soil, mulching the roots, pulling out old wire, and shielding it from salt each winter.\n\nIt is the first stop of an afternoon in Šilalė. The memorial grove for 13 January 1991 stands 90 metres away across the same junction, and two far bigger oaks wait in the countryside around Kaltinėnai, 16 kilometres out.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Nepriklausomyb%C4%97s_%C4%85%C5%BEuolas",
+        "https://commons.wikimedia.org/wiki/File:%C5%A0ilal%C4%97,_1918.02.16_%C4%85%C5%BEuolas.JPG"
+      ],
+      "access": "Free; public street island in the town centre, no gate or fee, though it stands amid busy traffic",
+      "transport": "Central Šilalė, walkable from anywhere in town; the closest bus stops serve regional routes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the stones at its base inscribed 1918-02-16, on an oak 2.40 metres round and 15 metres tall. It stands on the traffic island at the Basanavičiaus and Nepriklausomybės junction."
+    },
+    {
+      "id": "sll_002",
+      "name": "Oaks and Lime of January 13",
+      "species": "Oak (Quercus sp., x13) and Lime (Tilia sp., x1)",
+      "species_basis": "genus read from lt.wikipedia's description of the memorial grove; individual species per tree not itemised in the source",
+      "age_estimate": "around 30 to 35 years",
+      "age_min": 28,
+      "age_max": 36,
+      "girth_cm": null,
+      "location": {
+        "address": "J. Basanavičiaus / Nepriklausomybės street intersection, around the 'Laisvės šauklys' (Freedom's Crier) sculpture, central Šilalė",
+        "latitude": 55.489991,
+        "longitude": 22.186381,
+        "neighbourhood": "Central Šilalė"
+      },
+      "story": "Count the trees and you have the dead. Thirteen oaks and one lime stand in a semicircle on this street corner, one for each of the thirteen men and one woman killed when Soviet troops stormed the Vilnius television tower on 13 January 1991.\n\nThat night is the hinge of modern Lithuanian history. Unarmed civilians had gathered around the tower and the parliament to defend the independence declared the previous March, and the deaths hardened resistance at home and opinion abroad. Within a year Moscow had recognised the country.\n\nŠilalė's memorial is small and exact. The trees ring a sculpture by Kazimieras Kisielis, Laisvės šauklys, Freedom's Crier: thirteen oaks and a single lime for thirteen men and a single woman. There are benches, and the whole plot covers about a fifth of a hectare. The town declared it a natural heritage object in 2006.\n\nThese are young trees, and nobody pretends otherwise. No planting date has been published for them, but they most likely went in with the monument during the 1990s, which makes them roughly 30 to 35 years old. They are here for what they mean, not for their girth, and nobody has measured them one by one.\n\nThe Independence Oak stands 90 metres away at the same junction, so the two memorials make one stop: a tree for the state founded in 1918, and fourteen for the people who died to restore it.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Sausio_13-osios_%C4%85%C5%BEuolai_ir_liepa",
+        "https://www.pamatyklietuvoje.lt/"
+      ],
+      "access": "Free; public street-corner plot with benches, no gate or fee, genuinely reachable",
+      "transport": "Central Šilalė, about 90m from the Independence Oak, walkable",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the semicircle of thirteen oaks and one lime ringing the Freedom's Crier sculpture, with benches. It stands at the Basanavičiaus and Nepriklausomybės junction, 90 metres from the Independence Oak."
+    },
+    {
+      "id": "sll_003",
+      "name": "Laumenai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 490,
+      "location": {
+        "address": "Off the old Žemaičių Highway, roughly midway between Laukuva and Kaltinėnai, via Bilioniai village, Laumenai village, Kaltinėnai eldership, Šilalė district",
+        "latitude": 55.614817,
+        "longitude": 22.357352,
+        "neighbourhood": "Laumenai, Kaltinėnai area"
+      },
+      "story": "A small chapel hangs on the side of this oak, the same side where lightning tore into it. The scar runs from about eight metres up into the crown, the chapel is in poor repair, and the tree is still standing over both.\n\nThere is more at ground level: a small cave has opened beneath the roots. Between the strike, the shrine and the hollow underneath, this is a tree that has been through things, and it shows all of them at once.\n\nIt is a pedunculate oak 4.9 metres round at chest height, or 4.8 by the state registry's own count, and 17 metres tall, or 15 by the registry. The crown measures 17 metres and the first branches start four and a half metres up. It has been protected since 2005.\n\nGetting there is part of it. The oak stands among cultivated fields and pastures in hilly farmland off the old Žemaičių Highway, roughly midway between Laukuva and Kaltinėnai, reached through the village of Bilioniai. The source warns it is hard to spot from the nearby roads, so trust the pin, which is tree-level, and look across the fields. It is 16 to 18 kilometres from central Šilalė by car, and 6.5 kilometres from the Pundžiai oak, which makes the two one drive.\n\nEverything here rests on one published source, and nobody has dated the tree. If you know its age, or how the chapel came to be there, tell us.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Laumen%C5%B3_%C4%85%C5%BEuolas"
+      ],
+      "access": "No gate or ownership restriction stated in the source, but genuinely remote: stands amid cultivated fields and pastures in hilly farmland, described as hard to spot from nearby roads",
+      "transport": "Šilalė district, about 16-18km from central Šilalė and about 6.5km from Pundžiai Oak (below); reachable by car only, no public transit checked this pass",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the small chapel on its lightning-scarred side and the cave beneath its roots, on a trunk 4.9 metres round. It stands among fields and pasture near Laumenai, off the old Žemaičių Highway."
+    },
+    {
+      "id": "sll_004",
+      "name": "Pundžiai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 560,
+      "location": {
+        "address": "Pundžiai forest, about 3km west of Kaltinėnai, 50m south of the old Žemaičių Highway, Rietavas Forest Management District, Šilalė district",
+        "latitude": 55.565592,
+        "longitude": 22.402658,
+        "neighbourhood": "Pundžiai forest, Kaltinėnai area"
+      },
+      "story": "At 33.5 metres, this oak is more than twice the height of the Independence Oak in town, and at 5.6 metres round it is the thickest of the four trees on this page. Oaks rarely get this tall.\n\nIt stands in Pundžiai forest, about three kilometres west of Kaltinėnai and only 50 metres south of the old Žemaičių Highway, the historic road across Samogitia. Lithuania declared it a protected monument in 1989, in the last years of Soviet rule, and it is now looked after by the Rietavas state forest district.\n\nThe record on it is plain and administrative: measurements, a designation, and some honest notes on its condition. Animals have dug burrows under the roots. The canopy has been observed to be thinning. By 2020 the old fence around it had fallen into disrepair and the undergrowth had grown dense, which makes the last 50 metres slower than they look on a map without stopping anyone. None of that says it is dying, but it is not a tree in its prime either, and a photograph from anyone who visits would tell us how it is doing now.\n\nIt is about 16 kilometres from central Šilalė by car and 6.5 kilometres from the Laumenai oak, so the two countryside oaks make one drive. Nobody has published its age. If you know it, tell us.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Pund%C5%BEi%C5%B3_%C4%85%C5%BEuolas"
+      ],
+      "access": "Free; state forest under Rietavas Forest Management District, no ownership restriction, though as of a 2020 note the surrounding undergrowth was dense and the old fencing deteriorated, complicating (not preventing) a visit",
+      "transport": "Šilalė district, about 16km from central Šilalė and about 6.5km from Laumenai Oak (above); reachable by car only, no public transit checked this pass",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its height, 33.5 metres, on a trunk 5.6 metres round inside an old, broken fence. It stands in Pundžiai forest, 50 metres south of the old Žemaičių Highway, three kilometres west of Kaltinėnai."
+    }
+  ]
+}

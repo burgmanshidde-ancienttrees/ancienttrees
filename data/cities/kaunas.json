@@ -2,9 +2,9 @@
   "city": "Kaunas",
   "country": "Lithuania",
   "status": "needs_curation",
-  "intro": "Kaunas keeps its oldest trees inside its parks and forests rather than its streets: a linden with a fenced trunk in Vytautas Park; a golden willow leaning over the Nemunas-Neris confluence, now visibly failing; a 600-year-old oak above the Kaunas reservoir, carrying a name once given to a different, already-lost tree; a multi-trunked lime in Vilijampolė; a fused oak-and-pine pair in Dubrava forest on a parish coat of arms; and a newly protected oak at Netoniai. Six trees, several kinds of survival.",
-  "meta_description": "Kaunas's oldest trees: a 270-year linden, a declining willow, a 600-year oak, a multi-trunk lime, a fused pair and a new oak.",
-  "question_meta": "Kaunas's oldest confirmed tree is the Peace Hill Oak above Kaunas marios, estimated at roughly 600 years. Full list of 9.",
+  "intro": "Kaunas keeps its oldest trees inside its parks and forests rather than its streets: a linden with a fenced trunk in Vytautas Park; a golden willow leaning over the Nemunas-Neris confluence, now visibly failing; a 600-year-old oak above the Kaunas reservoir; a multi-trunked lime in Vilijampolė; a fused oak-and-pine pair in Dubrava forest. Beyond the city, a further scatter of protected oaks in the reservoir parkland, including one beside the Gastilionys outcrop gorge, rewards anyone willing to drive rather than walk.",
+  "meta_description": "Kaunas's oldest trees: a 270-year linden, a declining willow, a 600-year oak, a multi-trunk lime, a fused pair and several protected day-trip oaks.",
+  "question_meta": "Kaunas's oldest confirmed tree is the Peace Hill Oak above Kaunas marios, estimated at roughly 600 years. Full list of 10.",
   "question_answer": "The Peace Hill Oak (Taikos kalno ąžuolas), a pedunculate oak in the pine woods of Pažaislio šilas above the Kaunas reservoir, estimated at roughly 600 years. It carries a name and role handed down from an older oak nearby that was lost to arson in 2007.",
   "question_context": "Kaunas's Peace Hill Oak is not the original bearer of its own name. An older oak, roughly 800 years old by some estimates, stood nearby and was already dying from storm damage when a 2001 memorial installation was placed beside it; a further arson attack in 2007 finished it off, and it was removed. This living oak, judged healthy enough to carry the name and the city's 2001 natural-monument designation forward, has done that job since. It stands in Pažaislio šilas, a pine wood beside the Kauno marios reservoir and the Pažaislis Monastery, kept alive today with periodic treatment for internal rot.\n\nThe other three trees span very different parts of Kaunas: a 270-year linden confirmed by growth-ring count in Vytautas Park, within the city's Ąžuolynas oak forest; a golden willow by the Nemunas-Neris confluence that a 2016 environment ministry order protected for its unusual colouring, now showing signs of fungal decline in 2026 photographs; and an unusually thick, multi-trunked lime in the Vilijampolė district whose age nobody has recorded.",
   "faq": [
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are these trees free to visit?",
-      "a": "Yes, all nine stand on free, unticketed ground: public parks, a state forest with a marked path, and a roadside track."
+      "a": "Yes, all ten stand on free, unticketed ground: public parks, a state forest with a marked path, a roadside track and a regional park gorge."
     },
     {
       "q": "Is there a tree in Kaunas without a documented age?",
@@ -409,6 +409,39 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       }
+    },
+    {
+      "id": "kun_010",
+      "name": "Gastilonys Oak",
+      "species": "Pedunculate Oak (Quercus robur, presumed)",
+      "species_basis": "genus commonly used generically in Lithuanian registers; presumed robur as the dominant native oak, not itemised explicitly in either source",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 525,
+      "location": {
+        "address": "Kauno marių regioninis parkas (Kaunas Reservoir Regional Park), beside the Gastilionys outcrop (Gastilionių atodanga), Rumšiškės eldership, Kaišiadorys district",
+        "latitude": 54.871942,
+        "longitude": 24.154606,
+        "neighbourhood": "Gastilionys, Kaunas Reservoir Regional Park"
+      },
+      "story": "A tourism guide for the Kaišiadorys district calls this the thickest tree in the whole of Kaunas Reservoir Regional Park, and it grows at the mouth of one of the park's sights. The Gastilionys outcrop is a cliff and gorge cut into the valley, a geological viewpoint people come to see on its own account. The oak stands where the path into that gorge begins.\n\nThe two sources that describe it do not quite agree on its size, and the reason is where they held the tape. The district guide gives 5.25 metres round and 21 metres tall. The state cadastre, as Lithuanian Wikipedia reports it, gives 5.50 metres and 25 metres, but measured at the base of the trunk rather than at chest height, which always reads fatter. Either way it is a big oak.\n\nIt grows in mixed forest beside an old logging clearing, and the guide singles out its symmetrical branching, a crown built to take the strong winds that come off the reservoir. It has been protected as state natural heritage since 2008. The sources call it an oak without naming the species; pedunculate oak is the likely one, as the country's dominant native, but nobody has said so in writing.\n\nIt is about 16 kilometres east of central Kaunas by road, toward Rumšiškės, and easiest by car. Nobody has published its age. If you know it, tell us.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Gastilioni%C5%B3_%C4%85%C5%BEuolas",
+        "https://www.manokrastas.lt/ka-veikti-kaisiadoriu-rajone-gastilioniu-azuolas-boru-misko-pusis/"
+      ],
+      "access": "Free; stands in the public Kauno marių Regional Park, reached via signposted paths at the start of the Gastilionys outcrop gorge, a public geological viewpoint",
+      "transport": "Kaišiadorys district, about 16km east of central Kaunas by road toward Rumšiškės; no public transit stop found this pass, reachable by car as a day-trip addition to Kaunas",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its broad, evenly branched crown on a trunk about 5.25 metres round. It stands in mixed forest at the start of the path into the Gastilionys outcrop gorge."
     }
   ]
 }

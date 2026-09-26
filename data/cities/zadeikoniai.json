@@ -1,0 +1,63 @@
+{
+  "city": "Žadeikoniai",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "The Žadeikoniai Oak has spent its life among the dead, on a hillock inside the old Oniūnai cemetery in the flat countryside southwest of Saločiai, and it was one of the first trees in Lithuania to be given state protection, on 1 September 1960. It earns the trip on size alone: 6.05 metres round at chest height, close behind the biggest oaks on this map, with a 22-metre crown. Its age has never been published; the state cadastre lists the field as not disclosed. You will need a car, and this tree is the only reason to come.",
+  "meta_description": "The Žadeikoniai Oak: a 6.05-metre pedunculate oak in an old Lithuanian village cemetery, protected since 1960. One of the country's biggest.",
+  "question_meta": "Žadeikoniai's mapped tree is the Žadeikoniai Oak, a pedunculate oak 6.05 metres round in the old Oniūnai cemetery, protected since 1960.",
+  "question_answer": "The Žadeikoniai Oak, a pedunculate oak standing on a hillock inside the old Oniūnai cemetery near the village of Žadeikoniai, Pasvalys district. It is 6.05 metres round at chest height, among the thickest oaks on this map, and its age has not been published.",
+  "question_context": "This oak was protected by the Lithuanian state on 1 September 1960, one of the first trees in the country given that status, and it has spent its life among the dead, on a hillock inside the old Oniūnai cemetery, a small fenced village graveyard southwest of Saločiai.\n\nIt earns the trip on size. The trunk is 6.05 metres round at chest height, close behind the biggest Lithuanian oaks mapped here, and the crown rises to 22 metres.\n\nThe ground has had its own surprises. In January 2009 a sinkhole seven metres across opened near the oak; it was filled, and the tree carried on. Its age is a small mystery: the state cadastre lists the field as not disclosed, which is not the same as unknown, and nothing else has been found.\n\nThe cemetery has gates and costs nothing to enter. It lies about five kilometres southwest of Saločiai, near road 3116 toward Telžiai, by a bridge over the Kamatis stream, and the oak is visible from the bridge. A car is needed; there is nothing else on this map nearby.",
+  "hero_tree_id": "zad_001",
+  "oldest_tree_id": "zad_001",
+  "faq": [
+    {
+      "q": "How old is the Žadeikoniai Oak?",
+      "a": "Unknown. The state cadastre lists the age field as not disclosed, which suggests somebody may hold a figure without having published it. No other source gives one. If you know it, tell us."
+    },
+    {
+      "q": "Why is it protected?",
+      "a": "It was designated by the Lithuanian state on 1 September 1960, one of the country's earliest protected trees, on the strength of its size: 6.05 metres round at chest height."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands inside a small, fenced village cemetery with gates and no entry fee."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "The cemetery is about five kilometres southwest of Saločiai, near road 3116 toward Telžiai, by a bridge over the Kamatis stream. The oak is visible from the bridge. A car is needed; there is no public transport to the site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "zad_001",
+      "name": "The Žadeikoniai Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not disclosed by the register",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 605,
+      "location": {
+        "address": "On a hillock within the old Oniūnai cemetery, about 5km southwest of Saločiai near road 3116 (Saločiai-Telžiai), Žadeikoniai village, Saločiai eldership, Pasvalys district",
+        "latitude": 56.195241,
+        "longitude": 24.378511,
+        "neighbourhood": "Žadeikoniai, old Oniūnai cemetery"
+      },
+      "story": "This oak was protected by the state on 1 September 1960, one of the first trees in Lithuania to be given that status, and it has spent its life among the dead. It stands on a hillock inside the old Oniūnai cemetery, a small fenced village graveyard in the countryside southwest of Saločiai.\n\nIt earns the trip on size. The trunk is 6.05 metres round at chest height, close behind the biggest Lithuanian oaks on this map, the Gudlaukis oak at 6.30 metres among them, and the crown rises to 22 metres.\n\nThe ground here has had its own surprises. In January 2009 a sinkhole seven metres across opened in the ground near the oak. It was filled, and the tree carried on.\n\nIts age is a small mystery of its own. The state cadastre lists the field as not disclosed, which is not the same as unknown: somebody may hold a figure and has chosen not to publish it. We have not been able to find one anywhere else. If you know how old it is, tell us.\n\nThe cemetery has gates and costs nothing to enter. It lies about five kilometres southwest of Saločiai, near road 3116 toward Telžiai, by a bridge over the Kamatis stream, and the oak is visible from the bridge. You will need a car; there is nothing else on this map nearby, and this tree is the reason to come.",
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/%C5%BDadeikoni%C5%B3_%C4%85%C5%BEuolas"
+      ],
+      "access": "Free; a small, fenced village cemetery with gates, no fee; reachable near a bridge over the Kamatis stream, visible from it",
+      "transport": "Pasvalys district; no public transit stop checked this pass, reachable by car; Pasvalys town is not currently a published place",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the trunk, 6.05 metres round, on a hillock inside the fenced old Oniūnai cemetery. It stands near the bridge over the Kamatis stream, and you can see it from the bridge."
+    }
+  ]
+}
