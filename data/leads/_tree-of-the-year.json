@@ -1338,13 +1338,18 @@
       "lng": -5.9734,
       "gps_as_published": "N 54°36'36'', W 5°58'24.24''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2016/Strom-miru",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "bfs_002",
         "name": "The Grass Tree of the Palm House",
         "place": "Belfast",
         "km": 3.74
-      }
+      },
+      "mapped_as": {
+        "id": "bfs_005",
+        "place_slug": "belfast"
+      },
+      "mapped_by": "checked 2026-09-26, already published under this contest source"
     },
     {
       "name": "Survival at the cutting edge oak",
@@ -1561,13 +1566,14 @@
       "lng": -2.975317,
       "gps_as_published": "N 55°57'14.43'', W 2°58'31.14''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2017/Strom-Ding-dong",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "edi_016",
         "name": "The Great Yew of Ormiston",
         "place": "Edinburgh",
         "km": 6.56
-      }
+      },
+      "reason": "Checked 2026-09-26. Stands inside the working playground of Prestonpans Primary School with no evidence of public access (hard rule 10). Also roughly 30-39 years old with no compensating size, shape or story beyond a school playground game; East Lothian Courier reports it is being retired with a successor sapling already planted. Structural block, not an evidence gap."
     },
     {
       "name": "Plane tree from Budatin",
@@ -3110,13 +3116,18 @@
       "lng": 2.890628,
       "gps_as_published": "N 50°51'8.74'', E 2°53'26.26''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2021/The-Four-Trunked-Survivor",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "ypr_001",
         "name": "The Liberty Tree of Voormezele",
         "place": "Ypres",
         "km": 4.08
-      }
+      },
+      "mapped_as": {
+        "id": "ypr_005",
+        "place_slug": "ypres"
+      },
+      "mapped_by": "verified and written 2026-09-26"
     },
     {
       "name": "Ancient Oak from Drnava",
@@ -3514,13 +3525,14 @@
       "lng": 6.875,
       "gps_as_published": "N 52°4'5.99'', E 6°52'30''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2022/I-am-Tilia",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "ens_006",
         "name": "The Sessile Oak of the Blijdensteinpark",
         "place": "Enschede",
         "km": 16.57
-      }
+      },
+      "reason": "Checked 2026-09-26. The lead's own coordinate (near Enschede) is wrong; the real tree is in Maasniel (Roermond), confirmed via BNNVARA and Monumentaal. Facts check out (summer lime, ~1870, 150 years, 4.5m girth, etagelinde shape) but it stands in the private garden of an inhabited rectory (pastorie); BNNVARA's own piece calls it private property with only occasional open days. Blocked on hard rule 10 (private dwelling grounds), not on evidence."
     },
     {
       "name": "The Turgenev oak",
@@ -4607,13 +4619,14 @@
       "lng": 4.583153,
       "gps_as_published": "N 51°17'31.46'', E 4°34'59.35''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2025/the-old-chestnut-of-sint-rafael",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "ant_002",
         "name": "The Summer Linden of Rivierenhof",
         "place": "Antwerp",
         "km": 11.93
-      }
+      },
+      "reason": "Checked 2026-09-26. Confirmed by VRT NWS: sweet chestnut, ~200 years, over 6m circumference. Stands on the grounds of OC Clara Fey / BuBaO Sint-Rafael, a care and special-education campus for children and adults with disabilities (Brothers of Charity). No evidence of public access; the only public event is an annual open day, which implies the site is normally closed. Stricter than an ordinary school case given the vulnerable population. Blocked on hard rule 10."
     },
     {
       "name": "The Oak of Laukiai",

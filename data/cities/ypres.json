@@ -2,7 +2,7 @@
   "city": "Ypres",
   "country": "Belgium",
   "status": "needs_curation",
-  "intro": "Ypres has no ancient trees, and the reason is the reason people come here. The town and the country around it were shelled to rubble between 1914 and 1918, and the trees went with everything else. What grows here now was put here deliberately. The villages around Ieper planted limes as peace trees and liberty trees in the years straight after the armistice, and one oak on the edge of a golf course was reduced to a stump twice, by two different wars, and came back both times.",
+  "intro": "Ypres has no ancient trees, and the reason is the reason people come here. The town and the country around it were shelled to rubble between 1914 and 1918, and the trees went with everything else. What grows here now was put here deliberately: limes planted as peace trees and liberty trees straight after the armistice, an oak on a golf course reduced to a stump twice by two wars and regrown both times, and a chestnut by the Menin Gate that did the same, coming back as four trunks instead of one.",
   "meta_description": "Ypres was shelled flat between 1914 and 1918 and replanted on purpose. Start with the Christusboom, an oak that came back from a stump twice.",
   "question_meta": "The Liberty Tree of Voormezele, dated 1918 by the plaque at its foot, is the oldest tree in Ypres. Nothing here is older, and the war is why.",
   "question_answer": "The oldest tree in Ypres is the Liberty Tree of Voormezele, a lime in the churchyard of Onze-Lieve-Vrouwkerk about four kilometres southwest of the centre, dated to 1918 by the marble plaque at its foot reading Vryheidsboom 1918-1968. That puts it at roughly 105 years, and nothing in Ypres is older, because the shelling of 1914 to 1918 left nothing that could be. The Christusboom at Hollebeke grows on ground planted around 1830, but the wood standing there today is regrowth from a stump the Second World War left behind.",
@@ -18,11 +18,11 @@
     },
     {
       "q": "Are these trees free to visit?",
-      "a": "Yes, all four. The Liberty Tree stands in an open churchyard and the Peace Tree on a public square. The Christusboom is reached on a public foot path that crosses the golf course and passes about twenty metres away, so no membership and no green fee. The Boezinge limes are looked at from the road, since the farmyard behind them is private."
+      "a": "Yes, all five. The Liberty Tree stands in an open churchyard and the Peace Tree on a public square. The Christusboom is reached on a public foot path that crosses the golf course and passes about twenty metres away, so no membership and no green fee. The Boezinge limes are looked at from the road, since the farmyard behind them is private. The Four-Trunked Survivor stands in the open on the city's own fortifications walk, with a public audio-guide stop at the tree itself."
     },
     {
       "q": "Can I see them all in one trip?",
-      "a": "Not on foot. The four stand in four villages around Ieper, each roughly 3.5 to 4.5 kilometres out and in different directions: Voormezele and Hollebeke to the south, Vlamertinge west, Boezinge north. By bike or car it is an easy half day, and the Palingbeek domain around the Christusboom is worth the walk on its own."
+      "a": "Not the whole set on foot, but one of the five needs no trip at all: the Four-Trunked Survivor stands a few minutes' walk from the Menin Gate, on the fortifications path that rings the town centre. The other four are in four villages around Ieper, each roughly 3.5 to 4.5 kilometres out and in different directions: Voormezele and Hollebeke to the south, Vlamertinge west, Boezinge north. By bike or car it is an easy half day, and the Palingbeek domain around the Christusboom is worth the walk on its own."
     }
   ],
   "oldest_tree_id": "ypr_001",
@@ -153,6 +153,37 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "ypr_005",
+      "name": "The Four-Trunked Survivor",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "not established for the living wood; the site has been planted since around 1860",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "On the Vestingen (Ieper fortifications) walking route, on the slope beside the Menin Gate, Ieper",
+        "latitude": 50.852428,
+        "longitude": 2.890628,
+        "neighbourhood": "Vestingen / Menin Gate, Ieper"
+      },
+      "story": "This chestnut was cut to a stump by shelling in the First World War, and what grew back from the surviving roots was not one trunk but four. The site was planted around 1860, when Ieper's old fortifications became a public promenade, but the town was shelled flat between 1914 and 1918 and the tree went down with everything else. The four trunks standing today are regrowth off that stump, fused at a base that now measures nine metres round.\n\nThe second death sentence came in 1940. Wartime fuel shortages sent people across Ieper looking for firewood, and a four-trunked chestnut on a slope above the Menin Gate was an obvious target. It was spared, per the city's own account, because felling it risked dropping trunk onto the houses on the slope below. It is reported to be one of only two Ieper trees to have lived through both wars on the same spot.\n\nNone of this makes it an old tree. Whatever survives from 1860 is root rather than wood, and the trunks above ground are at most as old as the armistice that let them grow. What makes it worth the stop is what it has already outlived twice, on a walking route the city has built an audio guide around, minutes from the Menin Gate.\n\nIt won Belgium's own Tree of the Year in 2020, then placed twelfth at the 2021 European final with nearly 31,000 votes.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2021/The-Four-Trunked-Survivor",
+        "https://www.vrt.be/vrtnws/en/2020/10/17/ieper-chestnut-that-survived-two-wars-in-tree-of-the-year/",
+        "https://www.ieper.be/boom-vertelt"
+      ],
+      "access": "Free. Stands in the open on the public Vestingen fortifications walking park that rings Ieper, beside the Menin Gate; the City of Ieper runs a public audio-guide stop here (Dutch and English) as part of its heritage walking route, no ticket or permission needed.",
+      "transport": "Ieper railway station, roughly a 15-minute walk east via the town centre and Menin Gate.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by its four fused trunks rising from one wide base, on the fortification slope just below the Menin Gate."
     }
   ]
 }
