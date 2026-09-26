@@ -1096,7 +1096,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -8296,7 +8296,7 @@
         "brief_wrong": false
       },
       {
-        "target": "_famous-france refill, batch Forest (Senonches/R\u00e9no-Valdieu)",
+        "target": "_famous-france refill, batch Forest (Senonches/Réno-Valdieu)",
         "kind": "verify",
         "tokens": 95000,
         "trees": 0,
@@ -8309,7 +8309,7 @@
         "kind": "verify",
         "tokens": 61000,
         "trees": 1,
-        "note": "4 candidates: Platane de Branf\u00e9r\u00e9 verified, 1 blocked (not a living tree), 2 leads",
+        "note": "4 candidates: Platane de Branféré verified, 1 blocked (not a living tree), 2 leads",
         "wasted": 0,
         "brief_wrong": false
       },
@@ -8327,7 +8327,7 @@
         "kind": "verify",
         "tokens": 175000,
         "trees": 2,
-        "note": "3 candidates: Ramolleux and Tronjoly verified, Ch\u00eane des Partisans blocked (fell 1926)",
+        "note": "3 candidates: Ramolleux and Tronjoly verified, Chêne des Partisans blocked (fell 1926)",
         "wasted": 0,
         "brief_wrong": false
       },
@@ -8718,6 +8718,21 @@
       "tokens": 0,
       "trees": 30,
       "note": "Main-session work: merged both write passes into data/cities, rewrote intro/meta/question/FAQ copy for all 11 affected places to drop stale tree-count promises, built 4 new Contract B/C pages from scratch, added paid_entry flags, fixed a Seattle species-name build error (Pinus parvifolia -> parviflora). Held Redwood NP, Humboldt Redwoods, Congaree, Great Smoky Mountains and Antietam as leads (each under the 4-tree floor, none passes the single-famous-tree test). Tokens not separately metered for this session."
+    },
+    {
+      "target": "Congaree National Park, Great Smoky Mountains National Park",
+      "kind": "verify",
+      "tokens": 251696,
+      "trees": 0,
+      "verified": 3,
+      "note": "Refilled both places from their own leads files (national/state champion trees). Congaree: cgr_003 General Greene Tree, cgr_004 National Champion Loblolly, brought it from 2 to 4 (floor met). Great Smoky Mountains: gsm_003 Cocke County Champion Red Maple, brought it from 2 to 3 (still short by one; the other 4 leads stayed unresolved)."
+    },
+    {
+      "target": "Congaree National Park",
+      "kind": "write",
+      "tokens": 120741,
+      "trees": 4,
+      "note": "Wrote stories + recognition lines for all 4 Congaree trees (cgr_001-004), merged into data/cities as a new place. First-time place, so the 4-tree fixed cost was not amortised across a larger batch."
     }
   ]
 }

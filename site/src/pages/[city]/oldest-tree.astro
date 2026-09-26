@@ -76,6 +76,11 @@ const title = fitTitle([
     `What Is the Oldest Tree in ${cityName}? (${age} Years Old)`,
   ] : []),
   `What Is the Oldest Tree in ${cityName}?`,
+  // A city name alone can already reach 36 characters (Great Smoky Mountains
+  // National Park), leaving no room for "What Is the ... Tree in ...?". The
+  // H1 and the on-page question keep the full phrasing regardless; only the
+  // <title> tag needs the shorter fallback.
+  `Oldest Tree in ${cityName}`,
 ]);
 const answer = city.data.question_answer!;
 const context = city.data.question_context!;

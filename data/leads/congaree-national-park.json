@@ -17,19 +17,17 @@
       "species": "Laurel Oak (Quercus laurifolia)",
       "note": "Reached only 'after a three-mile hike' per American Forests; no trail name or coordinate found this pass.",
       "sources": ["https://www.americanforests.org/article/congaree-where-the-trees-are-still-tall/"]
-    },
+    }
+  ],
+  "blocked": [],
+  "resolved": [
     {
       "name": "State champion bald cypress, east end of park",
-      "species": "Bald Cypress (Taxodium distichum)",
-      "note": "Friends of Congaree Swamp essay 'Congaree's Cypress Story': nearly 28ft circumference, 132ft tall, 'east end' of the park, reached via Bates Ferry Trail. May be the same tree as the Harry Hampton Tree (cgr_002, delivered) given similar figures, or a distinct second champion cypress; not resolved this pass. Worth a follow-up pass to disambiguate before treating as a separate entry.",
-      "sources": ["https://friendsofcongaree.org/journals/essay-congarees-cypress-story/"]
+      "outcome": "Verified and delivered as cgr_003, The General Greene Tree (Bates Ferry Trail, 30ft/914cm circumference), on 2026-09-26. Confirmed distinct from cgr_002 (Harry Hampton Tree, Oakridge Trail, 23'9\"/724cm), which this lead had flagged as a possible duplicate; the two are different trails, different names and different circumferences. A separate, still-unresolved overlap is noted in cgr_003's own story: a Friends of Congaree essay's 'nearly 28ft' east-end champion figure may be an older measurement of this same tree or a genuine third giant."
     },
     {
       "name": "Tallest loblolly pine on Weston Lake Loop near Bridge D",
-      "species": "Loblolly Pine (Pinus taeda)",
-      "note": "Oakridge Trail Guide (Friends of Congaree) separately mentions 'a large loblolly pine on the Weston Lake Loop Trail near Bridge D... almost 170 feet tall, tallest tree in South Carolina', which may be the true current national-champion loblolly (172ft/15ft circumference per the Cely essay) rather than the Richland County Pine (cgr_001, over 150ft, a FORMER state champion per NPS stop 11). These read as two distinct loblollies. Needs a follow-up pass to pin an exact coordinate near Bridge D and confirm it is not the same tree as cgr_001 before delivering.",
-      "sources": ["https://friendsofcongaree.org/location/oakridge-trail-guide/", "https://friendsofcongaree.org/journals/john-cely-congaree-journal/essay-loblollies-and-cowpens/"]
+      "outcome": "Verified and delivered as cgr_004, The Congaree National Champion Loblolly Pine (Weston Lake Loop near Bridge D, ~170ft/457cm circumference), on 2026-09-26. Confirmed distinct from cgr_001 (Richland County Pine, Boardwalk Loop, a FORMER state champion per NPS); this one is the current national champion per three independent sources."
     }
-  ],
-  "blocked": []
+  ]
 }
