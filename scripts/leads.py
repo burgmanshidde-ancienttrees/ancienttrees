@@ -311,7 +311,7 @@ HELD_MARKER = re.compile(
 # the kind of judgement call this file's own comments already treat as a
 # valid decline rather than a forbidden count-doctrine reason.
 NOT_READY_MARKER = re.compile(
-    r"\[SKIPPED\b[^\]]*\]|\bdeclined at merge\b|"
+    r"\[SKIPPED\b[^\]]*\]|\bdeclined at merge\b|\bNOT SHIPPED\b|"
     r"\bbelow the 4-tree floor\b|\bbelow the four-tree floor\b|"
     r"\bno second source\b|\bneeds a second source\b|\bfor a second source\b|"
     r"\bnot individually destination-level\b|"

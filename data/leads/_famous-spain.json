@@ -125,12 +125,11 @@
         "https://commons.wikimedia.org/wiki/File:Garai_Garaiko_artea_1.jpg",
         "https://commons.wikimedia.org/wiki/File:Garai_Garaiko_artea_2.jpg"
       ],
-      "status": "verified",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "status": "held",
+      "species": "Holm Oak (Quercus ilex ilex)",
       "verified_id": "gar_001",
       "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes."
+      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes. CURATOR CALL: HOLD, not published. No numeric age (only \"centenaria\"), stands in a working farmhouse's meadow reached by an 800m track through someone's land, and its id (gar_001) collides with a different live tree (data/cities/garmen.json, Garmen, Bulgaria's Zagradski Plane) so it needs a fresh id if it is ever written. Kept as a lead; a future Durangaldea/Bizkaia cluster could take it."
     },
     {
       "name": "Gernikako Arbola",
