@@ -2,9 +2,9 @@
   "city": "Austin",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Five trees, and three of them are groves, because that is how Austin's oldest survived. A live oak downtown lived through a deliberate poisoning in 1989. A block away is the grove the city was auctioned beneath in 1839, which is why Republic Square exists. Three more stand on the university's original forty acres, argued out of a building plan by a professor of Classics. Those three make an easy afternoon on foot. Two are worth the drive: a bald cypress a Spanish priest wrote about in 1716, and a grove where a settler was killed fighting behind a trunk.",
-  "meta_description": "Five remarkable trees in Austin: the Treaty Oak that survived poisoning, the oaks the city was auctioned under in 1839, and a cypress older than Texas.",
-  "question_meta": "Austin's oldest tree is Old Baldy, a bald cypress on Onion Creek past 500 years old. Where it stands, and four more worth the walk.",
+  "intro": "Nine trees, and three of them are groves, because that is how Austin's oldest survived. A live oak downtown lived through a deliberate poisoning in 1989. A block away is the grove the city was auctioned beneath in 1839. Four more, including a Himalayan cedar planted with its own imported soil, stand on the university's original forty acres. A wild state co-champion oak grew up on Waller Creek before downtown reached it. Two are worth the drive: a bald cypress written about in 1716, and a grove where a settler was killed fighting behind a trunk.",
+  "meta_description": "Nine remarkable trees in Austin: the Treaty Oak that survived poisoning, a state champion Durand oak, and a cypress older than Texas.",
+  "question_meta": "Austin's oldest tree is Old Baldy, a bald cypress on Onion Creek past 500 years old. Where it stands, and eight more worth the walk.",
   "question_answer": "The oldest tree in Austin is Old Baldy, a bald cypress standing where Onion Creek runs through McKinney Falls State Park, about nine kilometres southeast of the centre. Texas Parks and Wildlife calls it the oldest bald cypress on public land in the state and puts it beyond five hundred years, with some accounts reaching five hundred and fifty. Father Antonio Olivares, the Franciscan who went on to found San Antonio, wrote about it in 1716, so it was already a landmark three centuries ago. Downtown, the Treaty Oak runs it close at roughly five hundred years and is the more famous of the two, largely because someone tried to kill it in 1989 and failed.",
   "question_context": "Ages here come from the Texas A&M Forest Service, which keeps a register of the state's historic trees, and from the bodies that manage each site: Texas Parks and Wildlife for Old Baldy, the University of Texas for the Battle Oaks, the Shoal Creek Conservancy for the Seiders grove. None of those figures comes from a core sample, so treat every year on this page as an estimate that the people closest to the tree are willing to stand behind. That register is a history of Texas trees rather than a survey of what still stands, and it is worth knowing that several of Austin's named trees are in it and gone. The Washington Elm on the capitol grounds was removed in 2000 after storm damage and decay. The Memorial Pecan, planted in 1945 to honour Texans who served in the war, came out during a capitol expansion in the early 1990s, and its wood was reportedly turned into benches. The pecans planted at Governor Hogg's grave at his own request are no longer there either. Only living trees appear on this page.",
   "hero_tree_id": "aus_001",
@@ -19,7 +19,7 @@
       "a": "Yes. It stands in its own small park on Baylor Street, free and open, a few minutes west of the 6th Street bars. Roughly two thirds of the tree died after it was poisoned in 1989 and more than half the crown had to be cut away, so what you see is lopsided rather than the wide dome in the old photographs. It set acorns again in 1997 and has gone on doing so."
     },
     {
-      "q": "Why are three of the five listed as groves rather than single trees?",
+      "q": "Why are three of the nine listed as groves rather than single trees?",
       "a": "Because that is what they are, and each one is the destination rather than any single trunk in it. The Auction Oaks, the Battle Oaks and the Seiders Oaks are all named, compact stands that people go to as a group, which is how the sources treat them and how the plaques read."
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "q": "Are these all the historic trees in Austin?",
-      "a": "No. The Texas A&M Forest Service register lists ten around the city, and several of them no longer stand. There are also state champion trees in Austin that are not here yet, including a bastard oak on the Waller Creek greenbelt and a Himalayan cedar on the university campus, both of which need a second source before they go up."
+      "a": "No. The Texas A&M Forest Service register lists ten around the city, and several of them no longer stand. A bastard oak on the Waller Creek greenbelt and a Himalayan cedar on the university campus, both once flagged here as needing a second source, are now on this page as the Durand Oak of Sir Swante Palm Park and the Littlefield Cedar."
     }
   ],
   "trees": [
@@ -194,6 +194,137 @@
       "how_to_recognise": "A group of four heavy live oaks standing together in the open middle of a narrow creek greenbelt.",
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "aus_006",
+      "name": "The Littlefield Cedar",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "about 130 years",
+      "age_min": 130,
+      "age_max": 135,
+      "age_basis": "source",
+      "girth_cm": 335,
+      "height_m": 17.7,
+      "location": {
+        "address": "Littlefield House lawn, southwest corner of West 24th Street and Whitis Avenue, University of Texas at Austin campus",
+        "latitude": 30.28780556,
+        "longitude": -97.74072222,
+        "neighbourhood": "University of Texas at Austin campus (The Drag)"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Littlefield_House",
+        "https://news.utexas.edu/2011/04/22/the-universitys-urban-forest/",
+        "https://facilitiesservices.utexas.edu/news/stories-stories-four-giants-forty-acres"
+      ],
+      "access": "Free. Stands on the lawn of the historic Littlefield House at a public street corner on UT Austin's main campus; the campus grounds and quads are open to visitors during the day, no permission needed.",
+      "transport": "On the UT Austin campus at 24th Street and Whitis Avenue, about a 20-25 minute walk north from the Texas Capitol. Capital Metro bus routes and the UT shuttle stop one block west on Guadalupe Street (the Drag).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "When George W. Littlefield planted a cedar beside his house in 1893, the story goes, he did not trust Texas dirt with it. The cattle baron, later a regent of the University of Texas, had the young deodar brought from the western Himalayas and, by the account the university's alumni magazine has repeated ever since, had the planting hole backfilled with Himalayan soil as well.\n\nWhether the soil made the difference or not, the tree took. More than 130 years later it stands on the lawn of Littlefield House at 24th Street and Whitis Avenue, 335 centimetres round and close to 18 metres tall at the Texas Big Tree Registry's last measurement in 2021. It is often called the only one of its kind in Austin, and it is one of the most photographed trees on the Forty Acres.\n\nIt has watched the campus fill in around it. The house passed to the university and onto the National Register; the open ground around it became quads, towers and the traffic of the Drag one block west.\n\nThe ranking is where the sources part ways. The university's news office called it the state's number two while quoting a forester who credited it with the largest girth of its kind in Texas; the facilities department, in 2023, called it the second largest deodar in the state. Somewhere in the top two, then, which is plenty for a tree that arrived with its own soil.",
+      "how_to_recognise": "You can recognise it by its needles: a conifer, not an oak, with a trunk about 3.35 metres round and close to 18 metres tall. It stands on the lawn of Littlefield House, at the corner of 24th Street and Whitis Avenue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "aus_007",
+      "name": "The Durand Oak of Sir Swante Palm Park",
+      "species": "Durand Oak (Quercus sinuata var. sinuata)",
+      "age_estimate": "not documented",
+      "girth_cm": 429,
+      "height_m": 13.7,
+      "location": {
+        "address": "Sir Swante Palm Neighborhood Park, east edge of Waller Creek, just south of East 3rd Street, downtown Austin",
+        "latitude": 30.26305556,
+        "longitude": -97.73705556,
+        "neighbourhood": "Downtown / Waller Creek Greenbelt"
+      },
+      "verified_sources": [
+        "https://www.inaturalist.org/observations/19159542 (research-grade, 2018-12-22, detailed write-up naming the same certification and metal tag number)",
+        "Texas Big Tree Registry, Texas A&M Forest Service, TreeID 1111 (state champion, certified January 2014; verification/cross-check source per this project's register rule, not the sole source)"
+      ],
+      "access": "Free. A small public City of Austin park (owner of record: City of Austin PARD) directly on the Waller Creek Greenbelt Trail, a public cycleway/footpath; open at all hours like the rest of the greenbelt.",
+      "transport": "On the Waller Creek Greenbelt Trail just south of East 3rd Street, about a 10 minute walk east of Congress Avenue in downtown Austin.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Texas's co-champion Durand oak was not planted by anybody. It grew up wild on the bank of Waller Creek, a few minutes' walk from Congress Avenue, and downtown Austin arrived later.\n\nThe evidence for that is in a herbarium drawer. The University of Texas holds specimens of this species collected along Waller Creek in 1901, 1933 and 1945, so the oaks on this stretch belong to a native population rather than a park planting. The species goes by a blunter local name too, bastard oak, which undersells it considerably.\n\nThe Texas Forest Service certified this one as a state co-champion in January 2014, and somebody nailed a numbered metal tag, 809, to the trunk. The measurements drift a little between visits: a naturalist who wrote it up in December 2018 recorded 419 centimetres round, 44 feet tall and a crown 56 feet across, while the state registry's 2021 figures give 429 centimetres and 45 feet. Three years of growth would cover the gap. On that December visit, the ground beneath it was littered with thousands of acorns.\n\nIt stands in Sir Swante Palm Neighborhood Park, a small green strip on the greenbelt trail, and it is not alone there: at least four other large Durand oaks share the park, and a sign along the trail names the species.\n\nNobody has dated it, and a wild tree comes with no planting record to date it from. If you know more, tell us.",
+      "how_to_recognise": "You can recognise it by the numbered metal tag, 809, nailed to its trunk, about 4.3 metres round; four other big Durand oaks stand nearby. It stands on the east bank of Waller Creek, just south of East 3rd Street.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "aus_008",
+      "name": "The Sorin Oak",
+      "species": "Texas Live Oak (Quercus fusiformis)",
+      "age_estimate": "about 260 years",
+      "age_min": 250,
+      "age_max": 300,
+      "age_basis": "source",
+      "girth_cm": 518,
+      "height_m": 17.1,
+      "location": {
+        "address": "St. Edward's University, on the limestone ridge beside the historic Main Building, 3001 South Congress Avenue",
+        "latitude": 30.2294971693,
+        "longitude": -97.754589448,
+        "neighbourhood": "South Congress / Dawson"
+      },
+      "verified_sources": [
+        "https://www.stedwards.edu/news/st-edwards-university-historic-tree-wins-top-award",
+        "https://www.hilltopviewsonline.com/32398/news/the-260-year-resilience-of-sorin-oak-is-the-anchor-of-the-hilltop/",
+        "https://www.inaturalist.org/observations/260636628 (dated 2025-02-04, tree-level coordinate, captioned 'Sorin Oak')"
+      ],
+      "access": "Free. Stands on the open hilltop quad of St. Edward's University, a private university whose historic core campus around the Main Building is open to visitors; it is the site of the student Ring Ceremony and the university's most-photographed spot after the Red Doors, so it is treated as a public-facing landmark rather than restricted ground.",
+      "transport": "On the St. Edward's University campus at 3001 South Congress Avenue, about a 10 minute walk from the South Congress/Congress & Woodward Capital Metro bus stops; roughly a 15-20 minute bus ride south of downtown Austin.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In 1872, the story goes, a priest chose where to build a university by standing under a tree. Edward Sorin, who had already founded Notre Dame in Indiana, found this limestone hilltop south of Austin almost bare, with one big oak on it, known then as the Umbrella or the Lone Tree. The school he started here became St. Edward's University, and the oak has carried his name since at least 1976, when it first turned up in the student paper.\n\nIt has had a rough century and a half. In 1903 fire destroyed part of the Main Building beside it. In 1922 twin tornadoes crossed the hill, one of them rated EF4, and the tree stayed up. For decades after that it stood with a parking lot beneath its limbs, breathing exhaust, until the lot was taken out.\n\nThe numbers are a little unsettled. In 2022, when it won Austin's Tree of the Year in the large-tree category against 36 other Central Texas trees, the university put it at 250 years on its arborist's word. In 2026 the student paper reported about 260, confirmed by tomography scans, with a trunk 17 feet round, about 5.2 metres, and a height of 56 feet. Either way, it was already about a century old when Sorin came up the hill.\n\nThe university holds its Ring Ceremony under it, which is a fair return for picking the site.",
+      "how_to_recognise": "You can recognise it by its trunk, about 5.2 metres round, the big tree on the hilltop where the Ring Ceremony is held. It stands beside the historic Main Building of St. Edward's University.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "aus_009",
+      "name": "The Mother Pecan",
+      "species": "Pecan (Carya illinoinensis)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Zilker Park, near Barton Springs Pool, in the vicinity of 2201 Barton Springs Road / 802 Azie Morton Road",
+        "latitude": 30.2628,
+        "longitude": -97.7695,
+        "neighbourhood": "Zilker / Barton Springs"
+      },
+      "verified_sources": [
+        "https://austin.com/10-majestic-austin-trees-that-will-inspire-you/",
+        "https://www.austinchronicle.com/arts/kevin-curtin-hung-out-with-all-of-austins-tree-of-the-year-winners-12004783/",
+        "https://www.austintreeoftheyearawards.org/winners-gallery (official record: 2011 Large Tree of the Year, Pecan/Carya illinoinensis, nominated by Zoila Vega, Zilker Metropolitan Park, 802 Azie Morton Rd.)"
+      ],
+      "access": "Free. Stands in Zilker Metropolitan Park, one of Austin's largest and most-visited public parks, near Barton Springs Pool; open during park hours.",
+      "transport": "In Zilker Park near Barton Springs Pool, about a 20-25 minute walk or a short Capital Metro bus ride south of downtown Austin across the Lamar or South First bridges.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Austin's Tree of the Year for 2011 is a pecan that people mostly know from lying underneath it. The Mother Pecan stands in Zilker Park near Barton Springs Pool, and the two accounts written about it describe the same thing from different angles: an outdoor yoga spot in one, a place to lean a bicycle and sit in the shade of a communal pecan in the other.\n\nThe award came from the Austin Tree of the Year Awards, which judged it the best large tree in the city that year. Margret Hoffman, the former council member Austin knew as the Tree Lady, came to the ceremony.\n\nFinding it takes a little looking, and that is worth saying plainly. The awards record puts it at 802 Azie Morton Road, another account at 2201 Barton Springs Road, and the two are about 400 metres apart by road. Both describe the stretch of park around the pool, so our pin marks that area rather than the trunk. If you have stood under it and can tell us where, or send a photograph, we will move the pin.\n\nDo not confuse it with the other famous Zilker pecan. That one stood near the great lawn, dated only from the 1970s, and fell in the Memorial Day floods of 2015; a transplanted live oak took its place.\n\nNobody has published an age for the Mother Pecan either. If you know it, tell us.",
+      "how_to_recognise": "You can recognise it by the people in its shade: a big pecan used as a yoga and resting spot. It stands in Zilker Park near Barton Springs Pool; the exact spot is unconfirmed, so a reader's photo helps.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

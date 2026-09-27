@@ -8893,6 +8893,24 @@
       "tokens": 166998,
       "trees": 8,
       "note": "Viewing pass on the 168-candidate US photo sweep, finishing a claim an earlier attempt left open. 38 images viewed across 19 photo-less trees: 8 approved, 6 held-only (identity certain but crown missing, or lookalike risk among near-identical named trees, e.g. New Orleans oaks and Sequoia's named giants), 5 rejected-only (wrong species/tree/park). One candidate queued under the wrong tree (Yosemite's tunnel-tree photo was filed under Bachelor and Three Graces) reassigned to the California Tunnel Tree before approving."
+    },
+    {
+      "target": "austin",
+      "kind": "verify",
+      "tokens": 254602,
+      "trees": 4,
+      "note": "Texas Big Tree Registry leads cross-checked with independent sources (registry is a finding aid, not a citable source); 4 verified, 3 moved to blocked (private/withheld or too far), leads file refreshed.",
+      "wasted": 0,
+      "brief_wrong": false
+    },
+    {
+      "target": "austin",
+      "kind": "write",
+      "tokens": 122698,
+      "trees": 4,
+      "note": "4 stories and recognition lines written (aus_006-009), merged into data/cities/austin.json; intro/meta/FAQ counts updated 5->9 trees.",
+      "wasted": 0,
+      "brief_wrong": false
     }
   ]
 }
