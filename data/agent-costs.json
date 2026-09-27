@@ -8826,6 +8826,20 @@
       "tokens": 50000,
       "trees": 2,
       "note": "Verified Hrádecký dub and Buk u rybníčku (second sources found); Českolipský buk lesní and Buk v Jindřichovickém zámeckém parku still one source short, left as leads with resolved village-match questions and a noted 3-tree cluster at the Jindřichovice chateau park"
+    },
+    {
+      "target": "los-angeles (4 candidates)",
+      "kind": "verify",
+      "tokens": 95000,
+      "trees": 2,
+      "note": "Verified Huntington Rose Garden Kauri (2021 California Big Tree champion, 1890 planting, 1908 blowtorch-taproot transplant) and Crystal Springs Heritage Sycamore (Griffith Park, survived 2014 protest and 2016 settlement); Bodhi tree champion blocked as private residential land; Chavez Ravine kauri pin could not be tightened"
+    },
+    {
+      "target": "los-angeles",
+      "kind": "write",
+      "tokens": 45000,
+      "trees": 2,
+      "note": "2 stories + recognition lines merged into data/cities/los-angeles.json (now 10 trees); softened lax_010's superlative claim after it clashed with the newly-verified, actually-measured lax_011 kauri (hard rule 8)"
     }
   ]
 }

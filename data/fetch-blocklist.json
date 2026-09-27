@@ -540,6 +540,24 @@
    "seen": "2026-09-27",
    "cost": "one fetch attempt (1s)",
    "workaround": "WebFetch reads the pages. The tree list itself is the public ArcGIS layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0 (query?where=1=1&outFields=*&f=json), which curl reads without trouble."
+  },
+  "huntington.org": {
+   "behaviour": "served a 'Vercel Security Checkpoint' HTML shell (title only, no article content) to a plain curl with a browser user agent on /watch-read-listen/verso/five-must-see-trees-huntington, then 429 Too Many Requests to every further attempt (plain WebFetch, curl on two other URL variants including the bare huntington.org host) across four tries.",
+   "seen": "2026-09-27",
+   "cost": "four fetch attempts during the Los Angeles deepen verify pass, chasing the Huntington Rose Garden Queensland Kauri's own institutional page; zero content returned",
+   "workaround": "the Huntington's own Instagram post (instagram.com/thehuntingtonlibrary/p/CV8Sa9SMTUq/) and Esotouric's Facebook video post on the same September 2021 California Big Tree ceremony both fetched fine and carried the same facts (measurements, planting history), and were used as the two verified sources instead."
+  },
+  "recreation.parks.lacity.gov": {
+   "behaviour": "403 Forbidden to WebFetch on both /park/crystal-springs and /forest/heritage-trees.",
+   "seen": "2026-09-27",
+   "cost": "two fetch attempts during the Los Angeles deepen verify pass; not retried with curl and a browser user agent this pass",
+   "workaround": "unknown this pass; friendsofgriffithpark.org's own pages (fetched fine via WebFetch) and a CityWatch LA news article covered the Crystal Springs heritage sycamore well enough without it."
+  },
+  "www.palmtalk.org": {
+   "behaviour": "403 Forbidden to WebFetch on a forum thread about the Huntington's Queensland kauri.",
+   "seen": "2026-09-27",
+   "cost": "one fetch attempt during the Los Angeles deepen verify pass",
+   "workaround": "not needed this pass; the Huntington's own Instagram post and an independent Facebook post from Esotouric already cleared the two-source bar."
   }
  }
 }
