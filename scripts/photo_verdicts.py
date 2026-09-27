@@ -31,6 +31,18 @@ def main():
     for f in files:
         rows += json.load(open(f))
 
+    # photo_apply.py writes tree["photo"] unconditionally on both approve AND
+    # hold (never only on approve), so a hold on a second candidate processed
+    # after an approve on the first silently clobbers it back to unapproved.
+    # A viewing pass naturally lists several candidates per tree in one batch
+    # (the best one approved, the rest held or rejected) with no guarantee
+    # the approve comes last, so this stable-sorts every approve to the end:
+    # whichever order a pass wrote them in, the approved photo is always the
+    # one still standing when this finishes. Found 2026-09-27: it ate 3 of 8
+    # intended approvals in one run (oly_002, oly_004, ynp_001) before two of
+    # them were restored by luck in an unrelated merge.
+    rows.sort(key=lambda r: r.get("verdict") == "approve")
+
     counts, failed = {"approve": 0, "hold": 0, "reject": 0}, []
     seen_approved = set()
     for r in rows:
