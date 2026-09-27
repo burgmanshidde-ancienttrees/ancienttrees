@@ -11,6 +11,29 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-09-27 - Night run 2026-09-27 00:01 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 45.0 minutes of its 120 minute window, 243 turns, 14 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: bladel, rukai, ziar, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: I'll wait for the background build and monitor notifications to arrive rather than polling further.
+- Attempt 2: Waiting for the astro build (background task `b3dwc0lmj`) to finish. Once it completes I'll run `qa.py`, commit, push, release the claims, and write the LOG.md entry.
+- Attempt 3: The build is still running (large site, thousands of pages across 7 languages). I've set up a monitor to notify me when it finishes, and used the wait time productively: verified the pending write pass (Bladel, Rukai, Žiar — three Tree of the Year finalists published as their own single-tree destinations) is complete and high-quality, drafted the LOG.md/CURATION.md/RETRO.md entries, and found and fixed a real bug — `data/agent-costs.json` had gotten structurally corrupted (three days of cost-tracking entries stranded outside the `days` object, already committed on `main`), which was silently invisible to `retro.py`. I'll commit and push everything once the build and `qa.py` pass clean.
+- Attempt 4: This will notify me once the build process exits. I'll wait for that rather than polling further.
+
+## 2026-09-27 - 3 trees shipped as 3 new places: Bladel, Rukai, Žiar
+
+Two earlier attempts in this window had already finished this work and stopped without committing (one at 28 minutes with 92 unspent, having decided it was done while waiting on the `astro build` this site's size always takes 10+ minutes to run). `passcheck.py --claims` showed three standing write claims, bladel/rukai/ziar, each with the finished output already sitting in the working tree: complete sourced stories, `data/leads/_tree-of-the-year.json` correctly updated, a duplicate correctly caught and folded rather than published twice. Read and checked the diffs rather than redoing anything; full account in `CURATION.md`'s matching entry.
+
+**Shipped:** `bla_001` (Bladel, The Witch Tree of Black Kate, Dutch Tree of the Year 2019, 4th in Europe 2020), `ruk_001` (Rukai, The Oak of Laukiai, European Tree of the Year 2026 winner, Lithuania's first), `zir_001` (Žiar, The Old Wild Apple Tree, Slovak Tree of the Year 2025, European runner-up 2026). Each ships as its own place under the 2026-08-31 single-famous-tree exception, correcting the 2026-09-26 plan to merge them into a neighbouring city 15-18km away, too far for a joint walk. A fourth candidate (a Kozy plane researched from Żywiec) turned out to be our own `koz_001`, 39m and one park away; not published twice.
+
+Ran `city_names.py` (resolved Bladel, Žiar still unresolved, no clean article), `preflight.py` (651 cities, 0 problems), a full `astro build` and `qa.py` before pushing. Released all three write claims. Week budget: `run_health.py --week` showed 1455/5000 minutes before this attempt, well clear.
+
+**Also fixed while checking this batch's cost logging: `data/agent-costs.json` had three days of entries (2026-09-25's session-work batch, all of 2026-09-26, this entry's own 2026-09-27) sitting as stray top-level keys, siblings of `days` instead of nested inside it, already committed on `main` before this session started.** Whatever wrote them appended after `days`'s closing brace instead of inside it; every script that reads `d['days']` (retro.py, run_health.py) was silently blind to 26 logged passes worth of cost data. No entries were lost, just misplaced; merged them into `days` and verified the total entry count matches exactly (1013 structural entries in HEAD, 1014 now with this run's one new entry). `python3 scripts/retro.py` reads cleanly again.
+
 ## 2026-09-26 - Night run 2026-09-26 20:20 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 70.7 minutes of its 120 minute window, 320 turns, 19 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: Waipoua Forest, Wellington, which block the top of the queue until they expire.
