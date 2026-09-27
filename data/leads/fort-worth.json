@@ -249,25 +249,9 @@
     "https://www.waymarking.com/waymarks/WM62P2_Turner_Oak_Fort_Worth_Texas"
    ],
    "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/turner-oak/",
-   "status": "lead"
-  },
-  {
-   "name": "Parker Oaks",
-   "species": "Post Oak (Quercus stellata)",
-   "reason": "A stand of post oaks around the Parker family cemetery in Hurst, where Cynthia Ann Parker, taken back from the Comanche in 1860 with her infant daughter, is said to have sat in grief at her uncle Isaac Parker's farm; she was the mother of Quanah Parker. A grove, so check it has one obvious place to stand before it counts as a collectible point. About 13 km from central Fort Worth.",
-   "location": {
-    "latitude": 32.8095,
-    "longitude": -97.2041,
-    "address": "Parker Cemetery, Hurst, TX"
-   },
-   "location_precision": "approximate",
-   "sources": [
-    "https://legendarytrees.com/trees/parker-oaks/",
-    "https://www.tshaonline.org/handbook/entries/parker-isaac-duke",
-    "https://hometownbyhandlebar.com/p-6146/"
-   ],
-   "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/parker-oaks/",
-   "status": "lead"
+   "status": "verified",
+   "verified_as": "ftw_005",
+   "note": "Verified this pass (2026-09-27), see data/research/texas-famous-verified.json. Alive confirmed via a dated 2025-03-18 waymarking.com visit log requiring an original on-site photo; exact spot settled as the traffic circle just past the Greenwood Memorial Park main entrance (3100 White Settlement Rd), GPS from the waymark."
   }
  ],
  "blocked": [
@@ -280,6 +264,21 @@
    ],
    "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/tannahill-oak/",
    "status": "blocked"
+  },
+  {
+   "name": "Parker Oaks",
+   "species": "Post Oak (Quercus stellata)",
+   "location": {
+    "latitude": 32.8095,
+    "longitude": -97.2041,
+    "address": "Post Oak-Parker Cemetery, 1301 Cardinal Lane, Hurst, TX 76053"
+   },
+   "sources": [
+    "https://legendarytrees.com/trees/parker-oaks/",
+    "https://www.tshaonline.org/handbook/entries/parker-isaac-duke",
+    "http://web.archive.org/web/20260608081949/https://www.hursttx.gov/about-us/departments/parks-recreation/parks/post-oak-parker-cemetery"
+   ],
+   "why_blocked": "NOT A COLLECTIBLE POINT (2026-09-27 verify pass). The cemetery is genuinely public (a City of Hurst park, officially named Post Oak-Parker Cemetery, designated a Historic Texas Cemetery in 2020, 1301 Cardinal Lane) and Isaac Duke Parker's biography checks out against TSHA, but the trees themselves are, in the nursery's own words, \"this stand of large post oaks\" surrounding the cemetery, and the city's own page calls it \"a good stand of trees, many of which are post oaks.\" Two historical markers on site (1968 \"Parker Cemetery\" and 1984 \"I.D. Parker Public Cemetery\") commemorate the CEMETERY, not any individual tree, and no source names, numbers or marks one specific specimen Cynthia Ann Parker is said to have sat beneath. A grove around a 2.4-acre cemetery with no single obvious place to stand fails the one-collectible-point rule (an avenue or a whole wood is blocked). Would need a source naming one specific tree (a plaque, a marker, a documented single specimen) to ever qualify; absent that it stays blocked rather than a lead, since the ensemble itself does not read as a compact, single-destination point."
   }
  ]
 }

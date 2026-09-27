@@ -8863,6 +8863,20 @@
       "tokens": 55000,
       "trees": 4,
       "note": "4 stories + recognition lines merged into data/cities/portland.json (20->24 trees); oldest_tree_id moved from ptl_009 (no age) to ptl_021 the Corbett Oak (~300yr, Oregon Encyclopedia); question fields and FAQ rewritten to match; apple species normalised to Apple (Malus domestica) to match site convention"
+    },
+    {
+      "target": "fort-worth + austin (3 candidates)",
+      "kind": "verify",
+      "tokens": 65000,
+      "trees": 1,
+      "note": "Turner Oak (Fort Worth) verified: gold buried under it by pioneer Charles Turner during the Civil War, alive-confirmed via a dated 2025 waymark visit log. Parker Oaks blocked (a grove, no single named specimen). Kyle Auction Oak held as a lead: no public transport connects Kyle to Austin so the day-trip claim cannot be made honestly, and it does not clear the single-famous-tree exception alone."
+    },
+    {
+      "target": "fort-worth",
+      "kind": "write",
+      "tokens": 40000,
+      "trees": 1,
+      "note": "Turner Oak story + recognition line merged (4->5 trees); oldest_tree_id moved to ftw_005; city copy (intro/meta/question fields/FAQ) rewritten for the new count and first dated tree"
     }
   ]
 }

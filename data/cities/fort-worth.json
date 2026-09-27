@@ -2,15 +2,15 @@
   "city": "Fort Worth",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Nobody has dated a single one of Fort Worth's big trees, and that turns out to be the interesting part. What the city has instead are measurements: a Texas Red Oak 622 centimetres round on a strip of grass beside a residential parkway, a national champion mesquite of a species ranchers pay to bulldoze, and the largest jujube on record in Texas. Four verified trees, two walkable pairs, and four open questions we would like a reader to help close.",
-  "meta_description": "Fort Worth's biggest tree is a Texas Red Oak 622 centimetres round on Ward Parkway. Four verified remarkable trees and how to reach each one.",
-  "question_meta": "No tree in Fort Worth has a documented age. The biggest is a Texas Red Oak 622 centimetres round on Ward Parkway. Where to find it and three more.",
-  "question_answer": "Nobody has established the oldest tree in Fort Worth, and we would rather say so than guess. The largest by trunk is the Texas Red Oak on Ward Parkway in the south of the city, 622 centimetres round when the Texas Big Tree Registry taped it in July 2026. If you know of a dated tree here, tell us.",
-  "question_context": "Fort Worth's remarkable trees are recorded by size rather than by age. The Texas Big Tree Registry measures girth, height and crown spread and certifies champions on a points system, and none of its fields carries a planting date or a ring count. Age can sometimes be derived from girth using a published growth rate, but these four are a Texas Red Oak, a honey mesquite, a Texas ash and a jujube, and the rates for those in north Texas conditions are not settled enough to put a number on the page. So the field stays empty. What is documented is unusually good: the Ward Parkway red oak and the Will Rogers mesquite are both stops on the DFW National Champion Tree Trail, the Pioneers Rest ash has been professionally treated against the emerald ash borer at the city's expense since 2019, and the Botanic Garden's jujube is the state record for its species. Three of the four are free to visit. The trees fall into two walks: the Botanic Garden and the Will Rogers Memorial Center sit about a kilometre apart in the Cultural District, and the Pioneers Rest ash is walkable from Sundance Square downtown.",
+  "intro": "Fort Worth's oldest tree once hid a fortune: pioneer Charles Turner buried about ten thousand dollars in gold under a live oak during the Civil War, and the oak is still standing at roughly 235 years. The city's other big trees are known by the tape measure rather than the calendar: a Texas Red Oak 622 centimetres round beside a residential parkway, a national champion mesquite of a species ranchers pay to bulldoze, and the largest jujube on record in Texas. Five verified trees, and a few open questions for readers.",
+  "meta_description": "Fort Worth's oldest tree is the Turner Oak, about 235 years old, with Civil War gold buried at its roots. Five remarkable trees and how to reach them.",
+  "question_meta": "The oldest tree in Fort Worth is the Turner Oak, a live oak of roughly 235 years in Greenwood Memorial Park. Where to find it and four more.",
+  "question_answer": "The oldest tree in Fort Worth is the Turner Oak, a Texas Live Oak of roughly 235 years standing just inside Greenwood Memorial Park, where pioneer Charles Turner buried his gold during the Civil War. The figure comes from a 2009 record of about 220 years plus the years since, and nobody holds a planting date. The biggest trunk in the city is a different tree, the Texas Red Oak on Ward Parkway, 622 centimetres round.",
+  "question_context": "Most of Fort Worth's remarkable trees are recorded by size rather than by age. The Texas Big Tree Registry measures girth, height and crown spread and certifies champions on a points system, and none of its fields carries a planting date or a ring count. The Turner Oak is the exception, because its age rests on a record rather than a tape: a 2009 listing put it at about 220 years, which fits the Daughters of the American Revolution plaque at its base calling it a Bicentennial Tree, alive when the Constitution was signed. With no planting date anywhere, the honest figure is a broad one, somewhere around 235. The Pioneers Rest ash carries a looser estimate of 75 to 150 years, judged from its trunk, while the Ward Parkway red oak, the Will Rogers mesquite and the Botanic Garden jujube have no age at all. Four of the five are free to visit; the jujube is inside the Botanic Garden, which charges admission. The Turner Oak sits about 1.6 kilometres north of the Will Rogers mesquite, and the mesquite about a kilometre from the Botanic Garden, so three of the five make one long walk.",
   "faq": [
     {
       "q": "What is the oldest tree in Fort Worth?",
-      "a": "Nobody has dated one. The trees here are recorded by size rather than age, and we would rather leave the field empty than invent a number. If you know of a dated tree in Fort Worth, we would like to hear about it."
+      "a": "The Turner Oak, a Texas Live Oak of roughly 235 years in Greenwood Memorial Park. A 2009 record put it at about 220 years, and a Daughters of the American Revolution plaque at its base marks it as alive when the US Constitution was signed. Nobody holds an exact planting date."
     },
     {
       "q": "What is the biggest tree in Fort Worth?",
@@ -18,18 +18,18 @@
     },
     {
       "q": "Are Fort Worth's remarkable trees free to visit?",
-      "a": "Three of the four are. The Ward Parkway red oak, the Will Rogers mesquite and the Pioneers Rest ash all stand on public land at no charge. The jujube is inside the Fort Worth Botanic Garden, which charges general admission of 14 dollars for adults."
+      "a": "Four of the five are. The Turner Oak, the Ward Parkway red oak, the Will Rogers mesquite and the Pioneers Rest ash all stand on land open at no charge, the oak inside Greenwood Memorial Park cemetery during its daylight hours. The jujube is inside the Fort Worth Botanic Garden, which charges general admission of 14 dollars for adults."
     },
     {
       "q": "Can you walk between them?",
-      "a": "Between two of them. The Botanic Garden and the Will Rogers Memorial Center are about a kilometre apart in the Cultural District, roughly 4.5 kilometres west of downtown. The Pioneers Rest ash is a separate walk, about 1.2 kilometres northeast of downtown and reachable on foot from Sundance Square. The Ward Parkway oak is 5 kilometres south with no rail stop nearby."
+      "a": "Between three of them, on a long walk. The Turner Oak in Greenwood Memorial Park is about 1.6 kilometres north of the Will Rogers Memorial Center, which is about a kilometre from the Botanic Garden in the Cultural District. The Pioneers Rest ash is a separate walk, about 1.2 kilometres northeast of downtown and reachable on foot from Sundance Square. The Ward Parkway oak is 5 kilometres south with no rail stop nearby."
     },
     {
       "q": "Why does a mesquite count as a remarkable tree?",
       "a": "Because of what it took to get that big. Honey mesquite is treated as a pest across Texas rangeland and ranchers spend real money clearing it, so a specimen that reaches 478 centimetres round has outlived a great deal of intent to remove it. It is a national champion for the species."
     }
   ],
-  "oldest_tree_id": "ftw_002",
+  "oldest_tree_id": "ftw_005",
   "trees": [
     {
       "id": "ftw_001",
@@ -158,6 +158,40 @@
       "how_to_recognise": "You can recognise it as the ash growing among the earliest graves. It stands in Pioneers Rest Cemetery, on Samuels Avenue.",
       "age_basis": "girth",
       "verify_notes": "Age derived from girth, not from a source: 213 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+    },
+    {
+      "id": "ftw_005",
+      "name": "Turner Oak",
+      "species": "Texas Live Oak (Quercus fusiformis)",
+      "age_estimate": "roughly 235 years",
+      "age_min": 220,
+      "age_max": 260,
+      "girth_cm": 427,
+      "height_m": 12.2,
+      "location": {
+        "address": "Greenwood Memorial Park, 3100 White Settlement Rd, Fort Worth, TX 76107",
+        "latitude": 32.761217,
+        "longitude": -97.36625,
+        "neighbourhood": "Greenwood Memorial Park cemetery"
+      },
+      "verified_sources": [
+        "https://tuisnider.com/famous-texas-tree-the-turner-oak-in-fort-worth/",
+        "https://www.gatheringgrowth.org/trees-of-significance/turner-oak",
+        "https://www.waymarking.com/waymarks/WM62P2_Turner_Oak_Fort_Worth_Texas"
+      ],
+      "access": "Free. Inside Greenwood Memorial Park, an active public cemetery with a paved two-lane road throughout; the tree stands in a traffic circle just past the main entrance, directly behind the first park sign. Visit during the cemetery's normal daylight hours.",
+      "transport": "No transit stop directly outside; nearest bus service is on White Settlement Rd, about a 5-minute walk from the entrance. Easiest by car, free parking on site.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "About ten thousand dollars in gold spent the Civil War in the ground under this oak. Charles Turner, a farmer, merchant and Texas Ranger, opposed secession, yet he still paid to raise a Confederate volunteer company. Where he drew the line was his savings. He would not swap them for Confederate paper, so he buried the gold here, on his own farm, and waited.\n\nWhen the war was over he dug it up and put it to work. The money helped the young city of Fort Worth pay its debts to northern creditors during Reconstruction, and the city counts Turner among its founders. His farm became Greenwood Memorial Park, and the oak is the first thing you meet inside the gate, standing in a traffic circle with two plaques at its feet. One tells the gold story. The other, from the Daughters of the American Revolution, names it a Bicentennial Tree, alive when the United States Constitution was signed.\n\nThat plaque is also the best evidence for its age. A 2009 record put the tree at about 220 years, which makes it somewhere around 235 now, and nobody holds a planting date to sharpen that. Gathering Growth taped it in 2021 at 427 centimetres round and 12 metres tall, with a crown about 18 metres across. It is an evergreen live oak, so it looks much the same in January as in July. Cars now circle the spot where a fortune once sat in the dirt.",
+      "how_to_recognise": "You can recognise it by the two plaques at its base, one telling the buried gold story. It stands in the traffic circle just past Greenwood Memorial Park's main entrance, directly behind the first park sign.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
