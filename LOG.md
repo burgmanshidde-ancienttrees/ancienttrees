@@ -43,6 +43,19 @@ street (blocked); the Chavez Ravine kauri's pin could not be tightened.
 Preflight clean throughout (0 problems), all costs logged in
 data/agent-costs.json, tree-index and species-size rebuilt.
 
+Last, tried to deepen Monterey (3 trees, target 15, 78 impressions) on its
+one strong lead, the city's own 13 Local Landmark Trees ordinance. No trees
+verified: the ordinance is behind a JS-only municode viewer with no
+crawlable fallback and no Wayback snapshot, Crocker Grove still has no
+single named specimen, and the Ghost Tree(s) of Pescadero Point turned out
+to be confirmed dead (Wikipedia's own article, fetched directly) rather
+than merely uncertain, moved to blocked. All three trails written up in
+data/leads/monterey.json so the next pass does not re-walk them; this one
+needs a browser-session pass or a phone call to city forestry, not another
+web sweep. The push credential expired partway through (expected, per the
+runner prompt); this commit and the ones before it are local and will go
+out with the run's own token when the window closes.
+
 ## 2026-09-27 (night run) - Finished a stranded write pass, fixed a leads.py false positive, a free photo sweep
 
 Picked up where an earlier attempt in the same window stopped with 3 write
