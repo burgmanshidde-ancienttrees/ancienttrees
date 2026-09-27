@@ -327,15 +327,19 @@
       "lng": 19.142264,
       "gps_as_published": "N 49°50'45.89'', E 19°8'32.15''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2013/Platan-v-obci-Kozy",
-      "status": "verified",
+      "status": "published",
       "nearest_published": {
         "id": "zyw_001",
         "name": "Dąb Franciszek (the Franciszek Oak)",
         "place": "Żywiec",
         "km": 18.27
       },
-      "verified_id": "zyw_002",
-      "verified_file": "data/research/zywiec-verified.json"
+      "mapped_as": {
+        "id": "koz_001",
+        "name": "The Kozy Plane Tree (Platan Klonolistny)",
+        "place_slug": "kozy"
+      },
+      "mapped_by": "checked 2026-09-27: same tree as koz_001, already published as its own place (Kozy); identical girth (482cm) and park, coordinate within 39m. Not a Zywiec deepening (18km away, separate village). zywiec-verified.json zyw_002 removed as this duplicate."
     },
     {
       "name": "King Oak",
@@ -1725,13 +1729,19 @@
       "lng": 19.048,
       "gps_as_published": "N 47°30'50.4'', E 19°2'52.8''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2017/Nejkrasnejsi-platan-na-namesti-Jaszai-Mari",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "bud_010",
         "name": "The Black Walnut of the Franciscan Ruins",
         "place": "Budapest",
         "km": 1.26
-      }
+      },
+      "mapped_as": {
+        "id": "bud_013",
+        "name": "The Plane Tree of Jaszai Mari Square",
+        "place_slug": "budapest"
+      },
+      "mapped_by": "checked 2026-09-27: same square, species and coordinates as our bud_013, already citing the same contest page"
     },
     {
       "name": "Hugh O’Flaherty’s Trees",
@@ -4325,13 +4335,19 @@
       "lng": -8.435219,
       "gps_as_published": "N 40°11'50.3'', W 8°26'6.79''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2025/the-lovers-banyan-tree",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "cbr_001",
         "name": "The Bunya Pine of the Arcos do Jardim",
         "place": "Coimbra",
         "km": 1.63
-      }
+      },
+      "mapped_as": {
+        "id": "cbr_005",
+        "name": "The Lovers' Banyan Tree",
+        "place_slug": "coimbra"
+      },
+      "mapped_by": "checked 2026-09-27: identical coordinates to six decimal places and same contest source as our cbr_005"
     },
     {
       "name": "Pino de Juan Molinera",
@@ -4893,15 +4909,20 @@
       "lng": -4.286914,
       "gps_as_published": "N 55°51'55.31'', W 4°17'12.89''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2026/argyle-street-ash",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "gla_002",
         "name": "The Suffragette Oak",
         "place": "Glasgow",
         "km": 0.71
       },
-      "mapped_by": "our page cites the award, within 2 km",
-      "note": "Not the Suffragette Oak: a different tree 0.7 km away in Glasgow. Unmapped."
+      "mapped_by": "checked 2026-09-27: same name, species, address and contest source as our gla_005, coordinate within 35m (single named street tree); confirmed distinct from gla_002 Suffragette Oak per this lead's own note",
+      "note": "Not the Suffragette Oak: a different tree 0.7 km away in Glasgow. Unmapped.",
+      "mapped_as": {
+        "id": "gla_005",
+        "name": "The Argyle Street Ash",
+        "place_slug": "glasgow"
+      }
     }
   ]
 }
