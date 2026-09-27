@@ -1529,7 +1529,12 @@ struct TreeDetail: View {
             if tree.story.isEmpty, mine != nil {
                 blank("What makes this tree special?", .story)
             } else {
-                ExpandableText(text: tree.story, lines: 6)
+                // IN FULL, always (Hidde, 2026-09-27: "not sure the main story
+                // deserves a read more"). The story is why the tree is worth
+                // the walk and is capped at 250 words already; Read more is for
+                // the access and transport lines, which are the long ones.
+                Text(tree.story)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
     }
