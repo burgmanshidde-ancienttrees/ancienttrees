@@ -8792,6 +8792,13 @@
       "tokens": 182909,
       "trees": 3,
       "note": "3 new single-tree places opened (Calvos, Runa, Azeitao), each under the 2026-08-31 single-famous-tree exception: Carvalho de Calvos (clv_001, University of Coimbra 2011-dated, oldest Q. robur on the Iberian Peninsula, own visitor centre), Cedro de Runa (run_001, won Arvore do Ano Portugal 2026), Millennial Olives of Azeitao (aze_001, 3-olive ensemble, folk-estimated age honestly flagged). 4th candidate (Nucleo dos Dragoeiros) was a duplicate of already-published mdr_006 Madeira, blocked not verified."
+    },
+    {
+      "target": "coromandel-forest-park, parry-kauri-park, otari-wiltons-bush",
+      "kind": "write",
+      "tokens": 60000,
+      "trees": 4,
+      "note": "Write pass on the three write-claimed New Zealand famous-tree places from the same day's _famous-new-zealand verify pass (Square Kauri, McKinney Kauri, Simpson Kauri, Moko/rimu). Stories and how_to_recognise written into the verified-leads file; city files built (data/cities/) with intro/faq/question_context per place. Left uncommitted by the run that wrote it; picked up and finished (tree_index rebuilt, city_names.py run, preflight 0 problems, claims released) by the next attempt in the same window."
     }
   ]
 }

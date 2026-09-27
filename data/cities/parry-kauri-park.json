@@ -1,0 +1,101 @@
+{
+  "city": "Parry Kauri Park",
+  "country": "New Zealand",
+  "status": "needs_curation",
+  "intro": "Two kauri stand together at the entrance to this Auckland Council park in Warkworth, saved as a pair fifty years ago when the Warkworth Kauri Bushmen's Association raised money specifically to keep them and gave the land to the council once it was secured. The McKinney Kauri, over seven metres round, is billed as the largest kauri on New Zealand's east coast; the smaller Simpson Kauri stands a few steps away, its own bronze plaque giving a measured age of 600 years. A boardwalk loop runs from the Warkworth Museum car park past both.",
+  "meta_description": "Parry Kauri Park, Warkworth: the McKinney Kauri, reputedly the largest kauri on New Zealand's east coast, and the smaller Simpson Kauri beside it.",
+  "question_meta": "Parry Kauri Park's oldest tree is the McKinney Kauri, put at about 800 years, ahead of its neighbour the 600-year Simpson Kauri.",
+  "question_answer": "The oldest tree in Parry Kauri Park is the McKinney Kauri, put at roughly 800 years old and more than seven metres round, billed by local sources as the largest kauri on New Zealand's east coast. Its neighbour, the Simpson Kauri, carries a bronze plaque giving a measured age of 600 years and a girth of 5.79 metres.",
+  "question_context": "Both trees stand together at the park entrance in Warkworth, a few steps apart, and both owe their survival to the same rescue. The land was the Reverend McKinney's, later the Simpson family's, and about fifty years ago the Warkworth Kauri Bushmen's Association raised money for exactly these two trees, then gave the secured land to Auckland Council. The McKinney Kauri is the bigger of the pair, a clean trunk out of mown grass with a fence around its base, measured at 7.62 metres round and about 38 metres tall, an age usually given as about 800 years and repeated locally as the largest kauri on New Zealand's east coast, though nobody has formally settled the title. The Simpson Kauri stands a few steps away, smaller by two metres of girth, and carries its own bronze plaque recording a girth of 5.79 metres, a height to the first limb of 14.94 metres and an age of 600 years. A boardwalk loop, 20 to 35 minutes and partly wheelchair accessible, runs from the free Warkworth Museum car park on Tudor Collins Drive past both trees; cleaning stations at the entrance guard against kauri dieback.",
+  "faq": [
+    {
+      "q": "Which tree in Parry Kauri Park is older?",
+      "a": "The McKinney Kauri, put at about 800 years against the Simpson Kauri's plaque-recorded 600 years. Neither figure is a precise measurement, since kauri cannot be reliably dated by coring."
+    },
+    {
+      "q": "Which is bigger?",
+      "a": "The McKinney Kauri, at 7.62 metres round and about 38 metres tall, billed as the largest kauri on New Zealand's east coast. The Simpson Kauri, a few steps away, measures 5.79 metres round."
+    },
+    {
+      "q": "Why are there two named kauri together here?",
+      "a": "About fifty years ago the Warkworth Kauri Bushmen's Association raised money specifically to save these two trees and gave the land to Auckland Council, which is how the park came to exist."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free. Both trees stand a few steps from a free car park at the Warkworth Museum on Tudor Collins Drive, in Warkworth town centre, about an hour north of Auckland. A boardwalk loop of 20 to 35 minutes runs past both; cleaning stations at the entrance guard against kauri dieback."
+    }
+  ],
+  "hero_tree_id": "pky_001",
+  "oldest_tree_id": "pky_001",
+  "trees": [
+    {
+      "id": "pky_001",
+      "name": "McKinney Kauri",
+      "species": "Kauri (Agathis australis)",
+      "age_estimate": "estimated about 800 years",
+      "age_min": 700,
+      "age_max": 900,
+      "age_basis": "source",
+      "girth_cm": 762,
+      "height_m": 38,
+      "location": {
+        "address": "Parry Kauri Park, Tudor Collins Drive, Warkworth, Auckland, New Zealand (beside the Warkworth & District Museum)",
+        "latitude": -36.416474,
+        "longitude": 174.669271,
+        "neighbourhood": "Warkworth"
+      },
+      "story": "The biggest kauri on New Zealand's east coast stands beside a museum car park in Warkworth. That is the claim the Warkworth museum makes for it, and the local tourism office and the trail guides repeat it: a trunk more than seven metres round, measured at 7.62, on a tree about 38 metres tall and roughly 800 years old. \"Probably the largest\", one of them adds, which is the honest way to hold a title nobody has formally settled.\n\nIt is still here because of a fundraiser. The park is the old property of the Reverend McKinney, later the Simpson family's, and the two giants at its entrance carry those two names. About fifty years ago the Warkworth Kauri Bushmen's Association raised money for one purpose, to save these two trees, and gave the land to the council once it was secured. Everything around them is what that fundraising bought.\n\nToday the McKinney Kauri rises straight out of mown grass, a single clean trunk with a fence around its base and its crown still full and healthy. A boardwalk loop runs on into the bush behind it, 20 to 35 minutes if you walk the whole thing, and part of it takes a wheelchair.\n\nTwo requests come with the visit, and both are for the tree. Scrub your shoes at the cleaning station on the way in, because kauri dieback travels in soil. And stay on the boards.",
+      "verified_sources": [
+        "https://www.matakanacoast.co.nz/blog/parry-kauri-park-warkworths-ancient-giants",
+        "https://warkworthmuseum.co.nz/parry-kauri-park/",
+        "https://www.outdooractive.com/en/route/hiking-trail/nordinsel/parry-kauri-park-circular-route/16840985/"
+      ],
+      "access": "Free. Auckland Council public park with a boardwalk loop (about 20-35 minutes, partly wheelchair accessible), reached from a free car park at the Warkworth & District Museum on Tudor Collins Drive. Car park open 7am-9pm in summer, 7am-7pm in winter. Kauri dieback cleaning stations at the entrance; visitors asked to stay on the boardwalk.",
+      "transport": "In Warkworth town centre, adjoining the museum; a short walk from central Warkworth. No public transport check done; reached easily by car off SH1, about an hour north of Auckland.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the girth, more than seven metres round, the thicker of the two kauri at the park entrance, standing alone in mown grass with a fence around its base. It stands beside the Warkworth Museum car park."
+    },
+    {
+      "id": "pky_002",
+      "name": "Simpson Kauri",
+      "species": "Kauri (Agathis australis)",
+      "age_estimate": "600 years, per the tree's own on-site plaque",
+      "age_min": 550,
+      "age_max": 650,
+      "age_basis": "source",
+      "girth_cm": 579,
+      "location": {
+        "address": "Parry Kauri Park, Tudor Collins Drive, Warkworth, Auckland, New Zealand (beside the Warkworth & District Museum, a few steps from the McKinney Kauri)",
+        "latitude": -36.4164463,
+        "longitude": 174.669443,
+        "neighbourhood": "Warkworth"
+      },
+      "story": "The plaque on the Simpson Kauri gives away its own arithmetic: 5.79 metres round, 14.94 metres to the first limb, an estimated 30.6 cubic metres of wood, and an age of 600 years, four figures fixed to a bronze plate a few steps from a much bigger tree. That bigger tree is the McKinney Kauri, and the two of them stand together at the entrance to Parry Kauri Park because that is specifically what was saved.\n\nFifty years ago the land belonged to the Simpson family, before that to the Reverend McKinney, and the Warkworth Kauri Bushmen's Association raised money for exactly two trees rather than the whole property. Once the ground was secured it passed to Auckland Council, and that fundraiser is the only reason either kauri, or this park, still exists.\n\nThe Simpson Kauri is the quieter half of the pair, smaller than its neighbour by two metres of girth, and its 600-year age is the figure everyone repeats because the plaque is the only place it has ever been published. What the plaque actually measured is the trunk beneath the crown, nearly 15 metres of clean wood before the first limb, which is the number worth remembering it by.\n\nA boardwalk keeps both trees' roots free of foot traffic, and cleaning stations at the entrance ask visitors to scrub kauri dieback off their shoes before they get near either one.",
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Plaque_of_the_Simpson_kauri_tree.jpg",
+        "https://www.matakanacoast.co.nz/blog/parry-kauri-park-warkworths-ancient-giants",
+        "https://www.tripadvisor.co.nz/ShowUserReviews-g609161-d9710485-r478469019-Parry_Kauri_Park-Warkworth_North_Island.html"
+      ],
+      "access": "Same as McKinney Kauri: free Auckland Council park, boardwalk loop from the Warkworth Museum car park, cleaning stations for kauri dieback.",
+      "transport": "Same as McKinney Kauri: in Warkworth town centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its bronze plaque, the second and slightly smaller of the two kauri at the Parry Kauri Park entrance, a few steps from the thicker McKinney Kauri."
+    }
+  ]
+}

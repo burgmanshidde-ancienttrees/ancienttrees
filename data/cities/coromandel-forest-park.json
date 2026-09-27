@@ -1,0 +1,66 @@
+{
+  "city": "Coromandel Forest Park",
+  "country": "New Zealand",
+  "status": "needs_curation",
+  "intro": "Loggers stripped the Coromandel Peninsula of nearly every large kauri in the nineteenth century, and this one survived only because its trunk grows squared off rather than round, a shape the timber trade had no use for. Measured in 1975 at 8.76 metres round and a little over 41 metres tall, it is put at around 1,200 years old, and stands at the top of a short, steep flight of steps straight off a public road across the Coromandel Range.",
+  "meta_description": "The Square Kauri: an angular, roughly 1,200-year-old giant on the Coromandel Peninsula, saved from the loggers by the very shape that gives it its name.",
+  "question_meta": "Coromandel Forest Park maps one tree, the Square Kauri, estimated around 1,200 years old on the Tapu-Coroglen Road.",
+  "question_answer": "Coromandel Forest Park's mapped tree is the Square Kauri, a kauri (Agathis australis) estimated at around 1,200 years old, its trunk squared off rather than round, standing at the top of a short DOC track off the Tapu-Coroglen Road.",
+  "question_context": "The Square Kauri owes its survival to its own shape: nineteenth-century loggers took almost every large, round-trunked kauri on the Coromandel Peninsula for timber, and passed over this one because its angular, squared-off trunk made it commercially useless. A 1975 survey measured it at 8.76 metres round, holding close to 70 cubic metres of wood, with a height of a little over 41 metres. By volume it ranks only about fifteenth largest on the peninsula, well short of the biggest survivors, but its shape gives it a silhouette nothing else nearby has. Its age is usually given as around 1,200 years, a round figure the sources repeat rather than a count anyone has made, so read it as somewhere past a thousand rather than a precise date. The Department of Conservation maintains a short, purpose-built track off the Tapu-Coroglen Road, a public road crossing the Coromandel Range between Tapu and Coroglen: 187 steep steps up from the roadside, two to three minutes each way, free, with no gate and no ticket.",
+  "hero_tree_id": "sqk_001",
+  "oldest_tree_id": "sqk_001",
+  "faq": [
+    {
+      "q": "How old is the Square Kauri?",
+      "a": "Around 1,200 years by the figure most sources repeat, though nobody has cored or precisely dated it. By volume it ranks about fifteenth largest kauri on the Coromandel Peninsula."
+    },
+    {
+      "q": "Why is it called the Square Kauri?",
+      "a": "Its trunk is squared off and angular rather than round, a shape that made it commercially useless to the nineteenth-century timber trade that took almost every other large kauri on the peninsula. That shape is why it is still standing."
+    },
+    {
+      "q": "How big is it?",
+      "a": "A 1975 survey measured the trunk at 8.76 metres round, holding close to 70 cubic metres of wood, on a tree a little over 41 metres tall."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "It's free, with no gate and no ticket. A Department of Conservation track leaves directly off the Tapu-Coroglen Road, a public road across the Coromandel Range: 187 steep steps, about 2 to 3 minutes each way. There is no public transport; the nearest settlement is Tapu, about 8.5 km away."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sqk_001",
+      "name": "Square Kauri",
+      "species": "Kauri (Agathis australis)",
+      "age_estimate": "estimated around 1,200 years",
+      "age_min": 1000,
+      "age_max": 1400,
+      "age_basis": "source",
+      "girth_cm": 876,
+      "height_m": 41.15,
+      "location": {
+        "address": "Square Kauri Track, Tapu-Coroglen Road, Coromandel Forest Park, Coromandel Peninsula, New Zealand",
+        "latitude": -36.99027778,
+        "longitude": 175.57258333,
+        "neighbourhood": "Coromandel Forest Park, 8.5 km from Tapu"
+      },
+      "story": "The loggers who took almost every big kauri off the Coromandel left this one standing because it was the wrong shape. Its trunk is squared off, angular where a kauri should be round, and to a nineteenth-century timber trade that made it commercially useless. The rest of the peninsula's giants went to the mills. This one stayed, saved by the very feature that now makes it a landmark.\n\nIt is not the biggest kauri on the Coromandel. By volume it ranks about fifteenth. Measured in 1975, the trunk was 8.76 metres round and held close to 70 cubic metres of wood, and the tree stands a little over 41 metres tall. Its age is usually given as around 1,200 years, a round figure the sources repeat rather than a count anyone has made, so read it as somewhere past a thousand.\n\nWhat it has that the bigger trees do not is a name, a silhouette you will not confuse with anything else, and a place right on the road. The Department of Conservation keeps a short track to it off the Tapu-Coroglen Road, which crosses the Coromandel Range between the two coasts: 187 steep steps up from the roadside, two or three minutes each way, no gate and no ticket.\n\nIt is a good place to think about how many old trees are still standing because somebody once decided they were not worth the trouble.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Square_Kauri",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/coromandel/places/coromandel-forest-park/things-to-do/square-kauri-tree/"
+      ],
+      "access": "Free. DOC-maintained track directly off the Tapu-Coroglen Road, a public road across the Coromandel Range between Tapu and Coroglen. Short but steep, 187 steps, about 2-3 minutes each way. No gate, no ticket.",
+      "transport": "No public transport; reached by car on the Tapu-Coroglen Road, roughly 8.5 km from the settlement of Tapu on the Coromandel's west coast.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the trunk, squared off at the edges rather than round, 8.76 metres in girth. It stands at the top of the 187-step track off the Tapu-Coroglen Road."
+    }
+  ]
+}
