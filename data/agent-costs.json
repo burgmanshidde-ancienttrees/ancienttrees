@@ -8929,6 +8929,24 @@
       "note": "3 stories and recognition lines written (dal_010-012), merged into data/cities/dallas.json; intro/meta/FAQ updated 9->12 trees, paid_entry set on dal_011.",
       "wasted": 0,
       "brief_wrong": false
+    },
+    {
+      "target": "boston",
+      "kind": "verify",
+      "tokens": 213017,
+      "trees": 1,
+      "note": "Rich lead batch (Boston Common, Public Garden, Mount Auburn, Arnold Arboretum) mostly resolved as duplicates/dead/still-unsourced; 1 verified (a second Wilson pine at Peters Hill), 2 moved to blocked (a removed beech, a duplicate cultivar already in bos_004 prose), Waverley Oak held on a source conflict.",
+      "wasted": 0,
+      "brief_wrong": false
+    },
+    {
+      "target": "boston",
+      "kind": "write",
+      "tokens": 4000,
+      "trees": 1,
+      "note": "Wrote story/recognition line for bos_012 directly in the main session rather than dispatching a full write-stories batch pass for a single tree; merged into data/cities/boston.json, intro/FAQ counts updated 11->12.",
+      "wasted": 0,
+      "brief_wrong": false
     }
   ]
 }
