@@ -92,6 +92,48 @@ struct CollectView: View {
     /// about standing there. Without this they reached your account and
     /// appeared nowhere in it. Newest first, and never a tree already in the
     /// collected list, so one tree is one card.
+    /// My trees as one list over time. See laneContent.
+    private enum TimelineItem: Identifiable {
+        case mine(Sightings.Sighting)
+        case sent(Submission.Sent)
+        case tree(Tree, Date)
+
+        var id: String {
+            switch self {
+            case .mine(let s): "m:" + s.id.uuidString
+            case .sent(let t): "s:\(t.id)"
+            case .tree(let t, _): "t:" + t.id
+            }
+        }
+        var date: Date {
+            switch self {
+            case .mine(let s): s.date
+            case .sent(let t): t.sentAt ?? .distantPast
+            case .tree(_, let d): d
+            }
+        }
+    }
+
+    private var timeline: [TimelineItem] {
+        var items: [TimelineItem] = sightings.yoursOnly.map { .mine($0) }
+        items += sent.map { .sent($0) }
+        var shown = Set<String>()
+        for e in saved.collected {
+            if let t = catalogue.tree(e.treeId), shown.insert(t.id).inserted {
+                items.append(.tree(t, e.visitedAt ?? .distantPast))
+            }
+        }
+        // Trees of ours photographed without being ticked off, dated by the
+        // photograph.
+        for s in sightings.newestFirst {
+            if let id = s.treeId, s.photo != nil, let t = catalogue.tree(id),
+               shown.insert(id).inserted {
+                items.append(.tree(t, s.date))
+            }
+        }
+        return items.sorted { $0.date > $1.date }
+    }
+
     private var photographedOnly: [Tree] {
         var seen = Set<String>()
         return sightings.newestFirst.compactMap { s -> Tree? in
@@ -568,26 +610,25 @@ struct CollectView: View {
             if !showsYourCollection {
                 signedOutLane
             } else {
-            if lane == .seen, !sightings.yoursOnly.isEmpty {
-                // Yours first, because they are the ones nobody else has. Still
-                // marked as yours on the card, so the distinction survives
-                // where it is useful (this one is not on the map everybody
-                // sees) and disappears where it was only in the way.
-                ForEach(sightings.yoursOnly) { s in
-                    SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
+            // ONE TIMELINE, newest first (Hidde, 2026-09-27: "my trees should
+            // be a timeline, not a split between your own trees and our trees,
+            // just over time which trees"). Your own finds, trees of ours you
+            // stood at or photographed, and tips you sent in words, in the
+            // order they happened. Each card still says what it is.
+            if lane == .seen {
+                ForEach(timeline) { item in
+                    switch item {
+                    case .mine(let s):
+                        SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
+                    case .sent(let t):
+                        SentCard(sent: t)
+                    case .tree(let t, _):
+                        card(t)
+                    }
                 }
             }
-            // AND WHAT YOU SENT US IN WORDS, from either surface. No photograph
-            // and no page of its own yet, so it is a card that says where it
-            // stands rather than a link to nowhere.
-            if lane == .seen, !sent.isEmpty {
-                ForEach(sent) { SentCard(sent: $0) }
-            }
-            if lane == .seen {
-                ForEach(photographedOnly) { card($0) }
-            }
-            let list = lane == .want ? wishlist : visited
-            if list.isEmpty && (lane == .want || photographedOnly.isEmpty) {
+            let list = lane == .want ? wishlist : []
+            if lane == .want ? list.isEmpty : timeline.isEmpty {
                 Text(lane == .want
                      ? "No favourites yet. Tap a heart anywhere to keep a tree here."
                      : "You add a tree here by photographing it. Tap the camera and stand in front of one.")
@@ -695,6 +736,18 @@ struct CollectView: View {
                     }
                 }
                 .frame(width: 62, height: 62)
+                // THE PHOTO OPENS THE SAME EDITOR AS THE NAME (Hidde,
+                // 2026-09-27: "I can only change my name and photo by pressing
+                // on my name but also should be photo"). Every profile screen
+                // he uses, Polarsteps and Instagram among them, takes a tap on
+                // the picture to change the picture.
+                .contentShape(.circle)
+                .tapUnlessDragged {
+                    if editable { editingProfile = true } else { signingIn = true }
+                }
+                .accessibilityAddTraits(.isButton)
+                .accessibilityLabel(editable ? "Change your photo and name" : "Sign in")
+                .accessibilityIdentifier("mytrees-edit-photo")
     
                 VStack(alignment: .leading, spacing: 0) {
                     // The part before the @ rather than the whole address
