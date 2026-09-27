@@ -10,6 +10,20 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 (session) - More than one photograph when adding a tree, app and website
+
+Hidde asked, and the benchmark agrees (iNaturalist, Google Maps; CONVENTIONS.md
+"More than one photograph when adding a tree"). Up to four: the first stays the
+tree's picture and the only one that can be published, up to three more are
+private evidence in `extra_photos`. The separate sign button is gone on both
+surfaces; the hint says a photo of the sign helps. App: a "More photographs"
+row with a "+ Add photo" tile on the tree's own page, draft or saved. Web:
+/contribute takes several files. sightings_inbox.py downloads them for the
+judge. 159 unit tests green, three new.
+
+FOR HIDDE: paste supabase/PENDING.sql (two `extra_photos` columns). Until then
+everything still lands, only the further photographs are dropped from the row.
+
 ## 2026-09-26 (session) - Hidde's 1.0.2 test: eight fixes live, and adding a tree now ends on its own page
 
 From his list, all on main and in the app: the tab bar sits 22 pt off the edge

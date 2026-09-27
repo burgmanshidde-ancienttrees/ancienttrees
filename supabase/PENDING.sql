@@ -20,3 +20,12 @@ language sql immutable as $$
                = (e ? 'sightingId' and e -> 'sightingId' <> 'null'::jsonb))
      )
 $$;
+
+-- 2026-09-26: further photographs when adding a tree, app and website. Paths
+-- only, private bucket, never published. Safe to run twice.
+alter table public.sightings
+  add column if not exists extra_photos text[]
+  check (extra_photos is null or cardinality(extra_photos) <= 3);
+alter table public.submissions
+  add column if not exists extra_photos text[]
+  check (extra_photos is null or cardinality(extra_photos) <= 3);

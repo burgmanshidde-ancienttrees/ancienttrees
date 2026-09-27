@@ -87,3 +87,10 @@ alter table public.sightings add column if not exists girth_hugs text;
 alter table public.sightings
   add column if not exists sign_photo text
   check (sign_photo is null or char_length(sign_photo) <= 300);
+
+-- FURTHER PHOTOGRAPHS, up to three after the first (Hidde, 2026-09-26: more
+-- than one photo when adding a tree). Private, same bucket and folder as
+-- `photo`; evidence for whoever checks the tree, never published. Paths only.
+alter table public.sightings
+  add column if not exists extra_photos text[]
+  check (extra_photos is null or cardinality(extra_photos) <= 3);

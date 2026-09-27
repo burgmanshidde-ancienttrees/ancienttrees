@@ -10,11 +10,6 @@ import { submitLink } from "../lib/tree-copy";
 import { byCityListOrder } from "../lib/city-order";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { DOWNSIZE_JS } from "../lib/image-downsize-js";
-import { ui } from "../lib/i18n";
-// English today; the sign strings are looked up rather than typed so the day
-// this page gets a translation they come with it (every change covers every
-// language, 2026-09-02).
-const U = ui("en");
 
 const canonical = `${BASE_URL}/contribute`;
 const title = fitTitle(["Become Your City's Tree Guide", "Map Your City's Ancient Trees"], canonical);
@@ -85,26 +80,19 @@ const headExtra = ldScript(graph);
         it, the same shape as the profile picture on /account/settings, because
         a bare file input is ugly on every platform and a button is what both
         references draw. */}
+    {/* MORE THAN ONE PHOTOGRAPH, up to four (Hidde, 2026-09-26). The first
+        is the tree's picture; the rest are evidence, the sign among them,
+        which is why the separate sign button this replaces became a line in
+        the hint. Convention: iNaturalist groups several photos into one
+        observation and Google Maps takes several with a new place
+        (CONVENTIONS.md, "More than one photograph when adding a tree"). The
+        app does the same on the tree's own page. */}
     <div class="sg-photo">
-      <span class="sg-photo-label">A photo you took yourself</span>
-      <span class="sg-hint">Optional. It has to be your own picture, not one from a website.</span>
-      <button type="button" id="sg-pic-btn" class="sg-pic-btn">Choose a photo</button>
-      <input id="sg-pic" type="file" accept="image/*" hidden />
+      <span class="sg-photo-label">Photos you took yourself</span>
+      <span class="sg-hint">Optional, up to four, and they have to be your own. A photo of the sign helps: it often names the tree, the species and its age.</span>
+      <button type="button" id="sg-pic-btn" class="sg-pic-btn">Choose photos</button>
+      <input id="sg-pic" type="file" accept="image/*" multiple hidden />
       <span id="sg-pic-name" class="sg-hint"></span>
-    </div>
-    {/* THE SIGN, a second photograph and an optional one (Hidde, 2026-09-24:
-        "vaak staat er een bordje bij een oude boom"). A sign names the
-        species, often the age and the tree itself, which settles which trunk
-        this is. Convention: iNaturalist lets you add more photographs to one
-        observation and never asks for them (CONVENTIONS.md, "A photograph of
-        the sign beside a tree"). Evidence for whoever checks the tip, never
-        published. The app's describe form asks the same question. */}
-    <div class="sg-photo">
-      <span class="sg-photo-label">{U.signPhotoLabel}</span>
-      <span class="sg-hint">{U.signPhotoHint}</span>
-      <button type="button" id="sg-sign-btn" class="sg-pic-btn">{U.signPhotoBtn}</button>
-      <input id="sg-sign" type="file" accept="image/*" hidden />
-      <span id="sg-sign-name" class="sg-hint"></span>
     </div>
     <label>Your name <span class="sg-hint">Optional. Never shown on the site.</span>
       <input type="text" id="sg-name" placeholder="First name is fine">
@@ -263,26 +251,33 @@ const headExtra = ldScript(graph);
   // the picture does not: a tree we did not know about is worth more than an
   // image, and losing the words because a file failed would be the wrong way
   // round.
-  // Two pickers of the same shape: the tree, and the sign beside it.
-  var staged = { tree: null, sign: null };
-  function picker(key, btnId, fileId, nameId) {
-    var pb = document.getElementById(btnId);
-    var pfile = document.getElementById(fileId);
-    var pname = document.getElementById(nameId);
+  // Up to four, in the order chosen; a second press adds to them.
+  var MAX_PHOTOS = 4;
+  var staged = { photos: [], names: [] };
+  (function() {
+    var pb = document.getElementById('sg-pic-btn');
+    var pfile = document.getElementById('sg-pic');
+    var pname = document.getElementById('sg-pic-name');
+    function show() {
+      var n = staged.photos.length;
+      pname.textContent = n ? (n === 1 ? '1 photo: ' : n + ' photos: ') + staged.names.join(', ') : '';
+      pb.textContent = n ? 'Add another photo' : 'Choose photos';
+      pb.hidden = n >= MAX_PHOTOS;
+    }
     pb.addEventListener('click', function() { pfile.click(); });
     pfile.addEventListener('change', function() {
-      var pf = pfile.files && pfile.files[0];
-      if (!pf) return;
-      pname.textContent = 'Reading it...';
-      window.atDownsize(pf, 1600, function(blob) {
-        staged[key] = blob;
-        pname.textContent = blob ? pf.name : 'That picture could not be read. Try another one.';
-        if (blob) pb.textContent = 'Change photo';
+      var files = Array.prototype.slice.call(pfile.files || [], 0, MAX_PHOTOS - staged.photos.length);
+      if (!files.length) return;
+      pname.textContent = 'Reading them...';
+      var left = files.length;
+      files.forEach(function(pf) {
+        window.atDownsize(pf, 1600, function(blob) {
+          if (blob && staged.photos.length < MAX_PHOTOS) { staged.photos.push(blob); staged.names.push(pf.name); }
+          if (--left === 0) { pfile.value = ''; show(); }
+        });
       });
     });
-  }
-  picker('tree', 'sg-pic-btn', 'sg-pic', 'sg-pic-name');
-  picker('sign', 'sg-sign-btn', 'sg-sign', 'sg-sign-name');
+  })();
 
   function uuid() {
     if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
@@ -360,18 +355,30 @@ const headExtra = ldScript(graph);
         method: 'POST', headers: headers, body: JSON.stringify(b2)
       });
     }
-    sendPhoto(s, staged.tree, function(path) {
-      if (path) body.photo = path;
-      sendPhoto(s, staged.sign, function(signPath) {
-      if (signPath) body.sign_photo = signPath;
+    // One after another, so the order chosen is the order stored: the first
+    // is the tree's picture, the rest go in extra_photos.
+    var paths = [];
+    function sendAll(i, done) {
+      if (i >= staged.photos.length) { done(); return; }
+      sendPhoto(s, staged.photos[i], function(p) { if (p) paths.push(p); sendAll(i + 1, done); });
+    }
+    sendAll(0, function() {
+      if (paths.length) body.photo = paths[0];
+      if (paths.length > 1) body.extra_photos = paths.slice(1);
       post(body).then(function(r) {
-        if (!r.ok && (body.photo || body.sign_photo)) {
+        if (!r.ok && body.extra_photos) {
+          // extra_photos is in supabase/PENDING.sql until pasted: keep the
+          // tree's own picture and drop only the further ones.
+          delete body.extra_photos;
+          return post(body);
+        }
+        return r;
+      }).then(function(r) {
+        if (!r.ok && body.photo) {
           // The database has not been taught a column yet. The same defence
           // the girth field already carries, and a retry rather than a guess
           // because PostgREST refuses the WHOLE row over one unknown key.
-          // submissions.sign_photo is in supabase/PENDING.sql until pasted.
           delete body.photo;
-          delete body.sign_photo;
           return post(body);
         }
         return r;
@@ -402,7 +409,6 @@ const headExtra = ldScript(graph);
       }).catch(function() {
         inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
         note.textContent = 'No connection. Try again in a moment.';
-      });
       });
     });
   });

@@ -127,6 +127,13 @@ final class Sightings {
         /// synced, never sent, never counted, and one left behind by a closed
         /// app is dropped at the next launch. Optional so older files decode.
         var draft: Bool?
+        /// Further photographs of this tree, after the first (Hidde,
+        /// 2026-09-26: more than one photo when adding a tree, benchmarked
+        /// against iNaturalist and Google Maps). A photo of the sign goes here
+        /// too. Evidence for whoever checks the tree; the first photograph
+        /// stays the tree's picture. At most `maxExtras`. Optional so older
+        /// files decode.
+        var extraPhotos: [String]?
         /// Where the coordinate came from ("GPS, standing at the tree"), kept
         /// on a draft so the submission sent on Save can say it.
         var fixNote: String?
@@ -404,10 +411,12 @@ final class Sightings {
     /// Take a sighting that came back from the account, with its photograph if
     /// the account had one. Deliberately does NOT push: this is the way in, and
     /// a pull that wrote straight back would be a loop.
-    func adopt(_ sighting: Sighting, image: UIImage?, sign: UIImage? = nil) {
+    func adopt(_ sighting: Sighting, image: UIImage?, sign: UIImage? = nil,
+               extras: [UIImage] = []) {
         guard !has(sighting.id) else { return }
         var made = sighting
         made.signPhoto = nil
+        made.extraPhotos = writeExtras(extras, for: made.id)
         if let image, let data = Self.downsized(image) {
             let file = made.id.uuidString + ".jpg"
             try? data.write(to: folder.appendingPathComponent(file))
@@ -434,13 +443,16 @@ final class Sightings {
     /// The photograph is kept rather than replaced when the phone already has
     /// one. It is the same picture, and the local file is the original while
     /// the download is a copy of a downsized copy.
-    func absorb(_ remote: Sighting, image: UIImage?, sign: UIImage? = nil) {
+    func absorb(_ remote: Sighting, image: UIImage?, sign: UIImage? = nil,
+                extras: [UIImage] = []) {
         guard let i = all.firstIndex(where: { $0.id == remote.id }) else { return }
         let kept = all[i].photo
         let keptSign = all[i].signPhoto
+        let keptExtras = all[i].extraPhotos
         all[i] = remote
         all[i].photo = kept
         all[i].signPhoto = keptSign
+        all[i].extraPhotos = (keptExtras ?? []).isEmpty ? writeExtras(extras, for: remote.id) : keptExtras
         if keptSign == nil, let sign { all[i].signPhoto = writeSign(sign, for: remote.id) }
         if kept == nil, let image, let data = Self.downsized(image) {
             let file = remote.id.uuidString + ".jpg"
@@ -459,6 +471,45 @@ final class Sightings {
     func signImage(_ s: Sighting) -> UIImage? {
         guard let f = s.signPhoto else { return nil }
         return UIImage(contentsOfFile: folder.appendingPathComponent(f).path)
+    }
+
+    /// The further photographs, in the order they were taken.
+    func extraImages(_ s: Sighting) -> [UIImage] {
+        (s.extraPhotos ?? []).compactMap {
+            UIImage(contentsOfFile: folder.appendingPathComponent($0).path)
+        }
+    }
+
+    static let maxExtras = 3
+
+    /// The file name of the n-th further photograph, here and in the bucket.
+    nonisolated static func extraFile(_ id: UUID, _ n: Int) -> String {
+        id.uuidString + "-extra-\(n).jpg"
+    }
+
+    private func writeExtras(_ images: [UIImage], for id: UUID) -> [String]? {
+        let files = images.prefix(Self.maxExtras).enumerated().compactMap { n, img -> String? in
+            guard let data = Self.downsized(img) else { return nil }
+            let file = Self.extraFile(id, n + 1)
+            return (try? data.write(to: folder.appendingPathComponent(file))) != nil ? file : nil
+        }
+        return files.isEmpty ? nil : files
+    }
+
+    /// A further photograph, added on the tree's own page.
+    func addExtra(_ id: UUID, image: UIImage) {
+        guard let i = all.firstIndex(where: { $0.id == id }) else { return }
+        var files = all[i].extraPhotos ?? []
+        guard files.count < Self.maxExtras, let data = Self.downsized(image) else { return }
+        let n = (files.compactMap { f -> Int? in
+            f.split(separator: "-").last.flatMap { Int($0.replacingOccurrences(of: ".jpg", with: "")) }
+        }.max() ?? 0) + 1
+        let file = Self.extraFile(id, n)
+        guard (try? data.write(to: folder.appendingPathComponent(file))) != nil else { return }
+        files.append(file)
+        all[i].extraPhotos = files
+        persist()
+        if all[i].draft != true { Self.syncOne?(all[i]) }
     }
 
     /// The file name of a sign photograph, here and in the account's bucket.
@@ -753,7 +804,7 @@ final class Sightings {
 
     func remove(_ id: UUID) {
         guard let i = all.firstIndex(where: { $0.id == id }) else { return }
-        for f in [all[i].photo, all[i].signPhoto].compactMap({ $0 }) {
+        for f in [all[i].photo, all[i].signPhoto].compactMap({ $0 }) + (all[i].extraPhotos ?? []) {
             try? FileManager.default.removeItem(at: folder.appendingPathComponent(f))
         }
         let gone = all[i].id
@@ -827,7 +878,7 @@ final class Sightings {
             let stale = all.filter { $0.draft == true }
             if !stale.isEmpty {
                 for s in stale {
-                    for f in [s.photo, s.signPhoto].compactMap({ $0 }) {
+                    for f in [s.photo, s.signPhoto].compactMap({ $0 }) + (s.extraPhotos ?? []) {
                         try? FileManager.default.removeItem(at: folder.appendingPathComponent(f))
                     }
                 }
@@ -930,7 +981,8 @@ final class Sightings {
     private func findOrphans() {
         // The sign photographs are known files too, or every one of them
         // would be counted as a lost picture of a tree.
-        let known = Set(all.compactMap(\.photo) + all.compactMap(\.signPhoto))
+        let known = Set(all.compactMap(\.photo) + all.compactMap(\.signPhoto)
+                        + all.flatMap { $0.extraPhotos ?? [] })
         let files = (try? FileManager.default.contentsOfDirectory(atPath: folder.path)) ?? []
         orphanPhotos = files.filter { $0.hasSuffix(".jpg") && !known.contains($0) }.sorted()
     }

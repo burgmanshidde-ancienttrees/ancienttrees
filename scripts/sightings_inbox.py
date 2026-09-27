@@ -232,6 +232,21 @@ def fetch_sign(row):
     return os.path.relpath(dest, ROOT) if fetch_photo(path, dest) else None
 
 
+def fetch_extras(row):
+    """Download the FURTHER photographs (up to three, 2026-09-26), for a judge.
+
+    Evidence like the sign, and often the sign itself: the separate sign
+    button became a "+ Add photo" tile. Never published by sightings_publish.py,
+    which publishes `photo` and nothing else. Returns repo-relative paths.
+    """
+    out = []
+    for n, path in enumerate((row.get("extra_photos") or [])[:3], 1):
+        dest = os.path.join(OUT, f"{row['id']}-extra-{n}.jpg")
+        if fetch_photo(path, dest):
+            out.append(os.path.relpath(dest, ROOT))
+    return out
+
+
 _REGISTERS = None
 
 
@@ -487,7 +502,7 @@ def tips_with_photographs():
     the account read the wrong table.
     """
     cols = ["id", "user_id", "kind", "city", "tree", "why", "girth_cm", "photo",
-            "sign_photo", "created_at"]
+            "sign_photo", "extra_photos", "created_at"]
     q = ("/rest/v1/submissions?select=%s"
          "&photo=not.is.null&kind=in.(tree,city)&order=created_at.asc")
     try:
@@ -495,7 +510,7 @@ def tips_with_photographs():
         # NOTE a tip carrying ONLY a sign is not read, because the filter is
         # on photo; a sign alone is not a picture of the tree and the words
         # of such a tip reach Step 0b through the submissions table anyway.
-        rows = read_optional(q, cols, ["sign_photo"], "submissions")
+        rows = read_optional(q, cols, ["sign_photo", "extra_photos"], "submissions")
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", "replace") if hasattr(e, "read") else ""
         if e.code == 400 and "photo" in body and "does not exist" in body:
@@ -528,6 +543,7 @@ def tips_with_photographs():
             "lng": None,
             "photo": r.get("photo"),
             "sign_photo": r.get("sign_photo"),
+            "extra_photos": r.get("extra_photos"),
             "shared": True,
             "status": "sent",
             "taken_at": r.get("created_at"),
@@ -560,11 +576,12 @@ def main():
     # sign_photo (2026-09-24) takes the same path: optional, dropped if absent.
     select_cols = ["user_id", "id", "tree_id", "name", "note", "species", "age",
                    "girth_cm", "girth_hugs", "lat", "lng", "taken_at", "status",
-                   "photo", "sign_photo", "shared", "updated_at"]
+                   "photo", "sign_photo", "extra_photos", "shared", "updated_at"]
     query = ("/rest/v1/sightings?select=%s"
              "&photo=not.is.null&shared=eq.true&order=updated_at.asc")
     try:
-        rows = read_optional(query, select_cols, ["girth_hugs", "sign_photo"], "sightings")
+        rows = read_optional(query, select_cols,
+                             ["girth_hugs", "sign_photo", "extra_photos"], "sightings")
     except urllib.error.HTTPError as e:
         print(f"sightings inbox: could not read sightings (HTTPError: {str(e)[:80]})")
         return 0
@@ -681,6 +698,7 @@ def main():
                     # judge can read it; evidence only, never published.
                     "sign_photo": row.get("sign_photo"),
                     "sign_file": fetch_sign(row),
+                    "extra_files": fetch_extras(row),
                     "nearest_published_m": dist,
                     # HAS ANYBODY OFFICIAL ALREADY SAID THIS IS REMARKABLE
                     # (2026-09-07, Hidde: "in the end we want trees people find
@@ -726,6 +744,7 @@ def main():
             # The sign, for READING (species, age, which tree), never for the
             # page: sightings_publish.py publishes photo_path and nothing else.
             "sign_path": row.get("sign_photo"), "sign_file": fetch_sign(row),
+            "extra_files": fetch_extras(row),
             # The row's coordinate (2026-09-11), kept for a tree picked from the
             # list too, not only for a lead. CAUTION: until the app records the
             # phone's own fix on that path, CollectSheet writes OUR pin here

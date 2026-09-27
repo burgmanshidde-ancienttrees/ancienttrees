@@ -1050,3 +1050,46 @@ struct AnUnnamedTreeIsNamedFromWhatWeKnow {
         #expect(s.all.first { $0.id == theirs.id }?.name == "The big one")
     }
 }
+
+/// A tree being added (2026-09-26): a draft is nobody's until Save, and its
+/// further photographs follow it wherever it goes.
+@MainActor
+@Suite(.serialized)
+struct ADraftAndItsPhotographs {
+
+    @Test func aDraftIsInNoListUntilItIsSaved() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let d = s.record(treeId: nil, name: "A tree", lat: 31.6, lng: 130.6,
+                         image: pixel(), draft: true)
+        #expect(s.yoursOnly.isEmpty, "an unsaved draft is already in the collection")
+        s.commit(d.id)
+        #expect(s.yoursOnly.count == 1)
+        #expect(s.all.first?.draft == nil)
+    }
+
+    @Test func aDraftLeftBehindIsGoneAtTheNextLaunch() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let d = s.record(treeId: nil, name: "A tree", lat: 31.6, lng: 130.6,
+                         image: pixel(), draft: true)
+        s.addExtra(d.id, image: pixel())
+        let again = Sightings(folder: p.url)
+        #expect(again.all.isEmpty, "a draft the app closed on came back as a tree")
+        #expect(p.files().filter { $0.hasSuffix(".jpg") }.isEmpty,
+                "a dropped draft left its photographs behind")
+    }
+
+    @Test func furtherPhotographsStopAtThreeAndLeaveWithTheTree() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let d = s.record(treeId: nil, name: "A tree", lat: 31.6, lng: 130.6, image: pixel())
+        for _ in 0..<5 { s.addExtra(d.id, image: pixel()) }
+        let held = s.all.first { $0.id == d.id }!
+        #expect(held.extraPhotos?.count == Sightings.maxExtras)
+        #expect(s.extraImages(held).count == Sightings.maxExtras)
+        s.remove(d.id)
+        #expect(p.files().filter { $0.hasSuffix(".jpg") }.isEmpty,
+                "removing a tree left its further photographs on the phone")
+    }
+}
