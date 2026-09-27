@@ -3,7 +3,7 @@
   "country": "Sweden",
   "status": "needs_curation",
   "oldest_tree_id": "sto_001",
-  "intro": "Stockholm protects nearly 3,000 ancient oaks, most of them on Djurgården, a legacy of a royal law that made felling one a capital crime because the navy needed the timber for warships. The six gathered here go beyond simple age: an 800-year oak the city built a motorway junction around rather than remove, an oak a Scottish geologist used to help prove Scandinavia's land was rising out of the sea, elm trees Stockholmers once occupied overnight to save from chainsaws, an ash Linnaeus recorded in the 1740s, and a hollow oak on a hospital's own grounds you can step inside.",
+  "intro": "Stockholm protects nearly 3,000 ancient oaks, most of them on Djurgården, a legacy of a royal law that made felling one a capital crime because the navy needed the timber for warships. The eight gathered here go beyond simple age: an 800-year oak the city built a motorway junction around rather than remove, two oaks a Scottish geologist used to prove Scandinavia's land was rising out of the sea, elms Stockholmers once occupied overnight to save from chainsaws, an ash Linnaeus recorded in the 1740s, and a hollow oak on a hospital's own grounds you can step inside.",
   "meta_description": "Stockholm's most remarkable trees: the 800-year Birger Jarl's Oak, Lyell's oak, the protest-saved Kungstradgarden elms, and Prince Eugen's giant oak.",
   "question_answer": "Stockholm's oldest tree is generally considered Birger Jarl's Oak, on a traffic island at the Kristineberg motorway interchange on Kungsholmen, estimated at roughly 800 years old, as old as the city itself. Its trunk is more than two metres across, among the nine thickest oaks recorded in Stockholm.",
   "question_meta": "Birger Jarl's Oak on Kungsholmen, roughly 800 years old and named for Stockholm's founder, is the city's oldest tree, on a motorway traffic island.",
@@ -262,6 +262,70 @@
         "qid": "Q89466458",
         "views": 17
       }
+    },
+    {
+      "id": "sto_007",
+      "name": "Bellmanseken",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Outside Hasselbacken, Djurgardsslatten, Sodra Djurgarden, Stockholm",
+        "latitude": 59.32472,
+        "longitude": 18.09833,
+        "neighbourhood": "Djurgarden"
+      },
+      "story": "Somebody cut this tree open trying to steal a signature. Tradition holds that the poet Carl Michael Bellman carved his name into the bark after sitting beneath it improvising songs on his mandolin, the setting for one of his Fredman's Epistles; an English autograph hunter later cut the carved name clean out of the trunk to keep as a souvenir, and the oak began rotting from that wound inward. By about 1890 the crown was failing badly enough that nearly every branch was sawn off. What was left, hollow and unstable, got filled with cement and bound in iron bands to hold it together, the standard nineteenth-century repair for a tree nobody wanted to lose but didn't know how to save. The botanist Rutger Sernander inspected the result in 1926 and called the pruning completely thoughtless and brutally ignorant. By 1969 the writer Gunnar Brusewitz described what remained as a deplorable remnant. It is still alive, its crown still putting out new growth every year, standing outside the Hasselbacken restaurant beside a statue of the poet it is named for, on the same stretch of Djurgarden where King Gustav III reportedly came incognito to watch ordinary Stockholmers at leisure. Nobody has established its age since the concrete went in; if you know it, tell us.",
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/Bellmanseken",
+        "https://sv.wikipedia.org/wiki/K%C3%A4nda_tr%C3%A4d_i_Stockholm",
+        "https://www.wikidata.org/wiki/Q10427897"
+      ],
+      "access": "Free. Stands on open public ground outside the Hasselbacken restaurant on Sodra Djurgarden, right beside the Bellman statue; reachable at any time.",
+      "transport": "Tram 7 or bus 69 to Grona Lund/Liljevalchs, then about 5 minutes on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the cement fill and iron bands holding its hollow trunk together, beside a statue of the poet Carl Michael Bellman. It stands outside the Hasselbacken restaurant on Djurgardsslatten."
+    },
+    {
+      "id": "sto_008",
+      "name": "Karl XI:s ek (Fiskartorpseken)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 340 years",
+      "age_min": 330,
+      "age_max": 350,
+      "age_basis": "source",
+      "girth_cm": 610,
+      "location": {
+        "address": "Beside Karl XI:s fiskarstuga, Fiskartorpet, Norra Djurgarden, Stockholm",
+        "latitude": 59.359472,
+        "longitude": 18.084083,
+        "neighbourhood": "Norra Djurgarden"
+      },
+      "story": "This oak has grown into the wall of a royal fishing cottage rather than around it. The cottage, Karl XI:s fiskarstuga, was built in the 1680s as a retreat for King Charles XI beside Husarviken bay, inside what was then an enclosed royal hunting ground reserved for the crown's own use, and the oak beside it began growing at roughly the same time, which puts it at 330 to 350 years old. The trunk now presses directly against the cottage's yellow wall and roofline, the two grown together into one another over three centuries. It was already hollow enough by the late 1950s that the trunk was filled with concrete to hold what remained, a repair recorded on top of Rutger Sernander's 1930s measurement of 6.1 metres round.\n\nIn 1835 the Scottish geologist Charles Lyell used this oak and a second one nearby, on Norra Djurgarden, as fixed points to measure how far Stockholm's shoreline had risen out of the sea since earlier surveys, fieldwork that fed directly into the theory of postglacial rebound Charles Darwin later drew on. The other oak, Lyell's own reference tree half a kilometre away, is already on this list. Every oak inside the Royal National City Park is protected from felling by the park's own statute, this one included, still standing exactly where a king once fished.",
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/Karl_XI:s_fiskarstuga",
+        "https://sv.wikipedia.org/wiki/K%C3%A4nda_tr%C3%A4d_i_Stockholm",
+        "https://www.kungligaslotten.se/artiklar-film-360/kungliga-parker/2021-10-05-karl-xis-fiskarstuga.html"
+      ],
+      "access": "Free, inside the Royal National City Park (Kungliga nationalstadsparken) on Norra Djurgarden, open year round. The oak grows against the outer wall of a protected historic building not open to enter, but the tree itself is on the surrounding public park ground and fully viewable and reachable from the path.",
+      "transport": "Bus toward Fiskartorpet/Uggleviksvagen, then a short walk; nearest metro is Universitetet, about 20-25 minutes on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the trunk pressed into the cottage's yellow wall, grown into the building rather than beside it, 6.1 metres round. It stands at Karl XI's fishing cottage, Fiskartorpet."
     }
   ]
 }
