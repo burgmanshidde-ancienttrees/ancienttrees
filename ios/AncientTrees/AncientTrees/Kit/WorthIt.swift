@@ -185,6 +185,10 @@ struct WorthItView: View {
                         .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
+                // The 44-point target stays for the finger; the layout gets
+                // back what a line of footnote does not need, so the gaps
+                // above and below match the rest of the page (2026-09-27).
+                .padding(.vertical, -13)
                 .accessibilityIdentifier("worthit-report")
             }
             if whyOpen && !reported {
