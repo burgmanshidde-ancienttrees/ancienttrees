@@ -10,6 +10,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - Used the new check to clean up 34 stale duplicate leads; released _famous-france as too thin
+
+Ran the new `check_country_batch_leads_against_all_cities()` against the whole corpus rather than just the one file it was built for. It surfaced 34 leads across 20 files (mostly `_famous-*` country batches, a few per-city) whose own text still claimed a tree we do not have when it is in fact already published, sometimes under a different id, sometimes because the lead's own research became the published page and nobody updated the note afterward (aachen, altrier, breukelen, laren-gelderland, bad-homburg all had this exact shape: "Awaiting a place/page decision; not published by this pass", written before publication and never revisited). Marked each `duplicate` with a pointer to the live page; folded four leads that were listed twice within their own file to one entry.
+
+Also claimed `_famous-france` to refill the shelf next, and found 3 of its 5 "unsourced" leads were exactly this class of stale duplicate (Platane de Branféré = Le Guerno's brf_001, Le chêne des Ramolleux = Crécy-en-Ponthieu's crc_001, Tilleul d'Innimond = Innimond's inm_001), all missed by the new check because these particular leads carry no coordinate. Fixed those three by name/photo-filename match instead. That left only 2 genuine candidates, too thin for a pass on its own (BRIEF_RESEARCH.md's "no pass under six candidates"), so released the claim rather than force a thin verify pass; a future run should combine it with another small country batch.
+
+Left for later, out of this cleanup's scope: `_famous-france`, `_famous-croatia` and `_famous-lithuania` each still carry a handful of OTHER leads listed twice for reasons unrelated to publication (Yvignac-la-Tour, Tombeboeuf, Raganų eglė, Raudonės liepa), which looks like `famous_trees.py` itself appending the same Commons category more than once across separate sweeps. Worth a look, not done tonight.
+
 ## 2026-09-27 (continuation) - _famous-brazil refilled and written: 3 new places, 1 blocked on access; a new preflight check added
 
 **After the Tree of the Year batch below**, `prepare.py` still said REFILL THE SHELF FIRST, so continued down the same rung. Claimed `_famous-brazil`, dispatched a 4-candidate verify pass (all four already carried Commons photographs, the expensive half of a research pass done for free by `famous_trees.py`), then a write pass on whatever verified.
