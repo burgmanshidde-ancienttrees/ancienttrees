@@ -11,10 +11,7 @@
         "https://commons.wikimedia.org/wiki/File:Olmos_Centenarios_de_Cabeza_del_Buey_01.jpg",
         "https://commons.wikimedia.org/wiki/File:Olmos_Centenarios_de_Cabeza_del_Buey_02.jpg"
       ],
-      "status": "verified",
-      "verified_id": "cdb_001",
-      "verified_file": "data/research/_famous-spain-verified.json",
-      "verify_note": "2026-09-10 verification pass: seven Ulmus minor elms around the Ermita/Santuario de Belen, judged a single compact collectible ensemble (Lomanstraat precedent), alive, officially designated Arbol Singular de Extremadura (Decreto 140/2005). Girth not found anywhere; age given only as 'over 150 years'."
+      "status": "RESOLVED 2026-09-27, already published as data/cities/cabeza-del-buey.json ebe_001 (\"Olmos Centenarios de la Ermita de Belen\"); the stale verified_id cdb_001 in this entry was wrong (that id now belongs to an unrelated Cordoba olive tree) and pointed at a deleted research file."
     },
     {
       "name": "Kisulabe oak",
@@ -111,12 +108,13 @@
         "https://commons.wikimedia.org/wiki/File:Eraul_eta_artea2.jpg",
         "https://commons.wikimedia.org/wiki/File:Eraul_eta_artea3.jpg"
       ],
-      "status": "verified",
+      "status": "published",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "verified_id": "erl_001",
       "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes."
+      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes.",
+      "mapped_as": "data/cities/eraul.json erl_001"
     },
     {
       "name": "Garaiko artea",
@@ -182,12 +180,13 @@
         "https://commons.wikimedia.org/wiki/File:Roble_Escarcio_front.jpg",
         "https://commons.wikimedia.org/wiki/File:Roble_Escenario.jpg"
       ],
-      "status": "verified",
+      "status": "published",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "verified_id": "esc_001",
       "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes."
+      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes.",
+      "mapped_as": "data/cities/villamudria.json esc_001"
     },
     {
       "name": "Urkietako artea",
@@ -212,12 +211,13 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:2017_Aprisquillo_Pine_ES.jpg"
       ],
-      "status": "verified",
+      "status": "published",
       "species": "Spanish Black Pine (Pinus nigra subsp. salzmannii)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "verified_id": "apr_001",
       "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: Pino del Aprisquillo, La Adrada, Avila. Spain's Tree of the Year 2016, European Tree of the Year 2017 finalist. Four sources agree on species and general dimensions (girth 500-590cm, height 25-30m per three sources, one outlier at 43m), age given vaguely as 'about 400 years' / '350 years' across sources. Location confirmed via a geotagged, provincial-government-credited Commons photo matching this lead's own coordinate exactly. 85km from Madrid, no public transport, standalone single-famous-tree candidate."
+      "verify_note": "2026-09-27 verification pass: Pino del Aprisquillo, La Adrada, Avila. Spain's Tree of the Year 2016, European Tree of the Year 2017 finalist. Four sources agree on species and general dimensions (girth 500-590cm, height 25-30m per three sources, one outlier at 43m), age given vaguely as 'about 400 years' / '350 years' across sources. Location confirmed via a geotagged, provincial-government-credited Commons photo matching this lead's own coordinate exactly. 85km from Madrid, no public transport, standalone single-famous-tree candidate.",
+      "mapped_as": "data/cities/la-adrada.json apr_001"
     },
     {
       "name": "Olmo de Navajas",
@@ -228,12 +228,13 @@
         "https://commons.wikimedia.org/wiki/File:Branca_de_l%27om_de_Navaixes.JPG",
         "https://commons.wikimedia.org/wiki/File:Brancatge_de_l%27om_de_Navaixes.JPG"
       ],
-      "status": "verified",
+      "status": "published",
       "species": "Field Elm (Ulmus minor)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "verified_id": "nvj_001",
       "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: Olmo de Navajas, Plaza del Olmo, Navajas, Castellon. Spain's Tree of the Year 2019. Three sources agree: planted 1636 (documented planting date for this specimen, not a bridge claim), girth ~630-650cm, height disputed (13.87m vs 19m across sources, flagged), notably unaffected by Dutch elm disease. Location confirmed to five decimals by both a geotagged Commons photo and this tree's own dedicated Wikidata item (Q105762033). 47km from Valencia with no fast transit link; standalone single-famous-tree candidate, strongest-pinned of the batch."
+      "verify_note": "2026-09-27 verification pass: Olmo de Navajas, Plaza del Olmo, Navajas, Castellon. Spain's Tree of the Year 2019. Three sources agree: planted 1636 (documented planting date for this specimen, not a bridge claim), girth ~630-650cm, height disputed (13.87m vs 19m across sources, flagged), notably unaffected by Dutch elm disease. Location confirmed to five decimals by both a geotagged Commons photo and this tree's own dedicated Wikidata item (Q105762033). 47km from Valencia with no fast transit link; standalone single-famous-tree candidate, strongest-pinned of the batch.",
+      "mapped_as": "data/cities/navajas.json nvj_001"
     },
     {
       "name": "Pino-roble de Canicosa de la Sierra",
@@ -244,12 +245,13 @@
         "https://commons.wikimedia.org/wiki/File:Pino-roble.jpg",
         "https://commons.wikimedia.org/wiki/File:Pinoroble2.jpg"
       ],
-      "status": "verified",
+      "status": "published",
       "species": "Pyrenean Oak (Quercus pyrenaica) with a Scots Pine (Pinus sylvestris) growing from its hollow trunk",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "verified_id": "pcs_001",
       "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: Pino-Roble de Canicosa de la Sierra, Burgos. A living oak/pine symbiosis (pine germinated inside the oak's hollow trunk), not a single tree; treated as one collectible ensemble. Fifth place, European Tree of the Year 2016. Four sources agree on ages (oak ~250yr, pine ~130yr) and the formation story; the most detailed source (canicosa.info) gives oak girth 340cm, pine girth 200cm at 2.9m, and notes the oak is in active decline with no conservation measures, i.e. alive but genuinely fragile. Location confirmed within ~100m by two independent GPS fixes. No cluster or nearby published city; standalone single-famous-tree candidate on rarity/story rather than size."
+      "verify_note": "2026-09-27 verification pass: Pino-Roble de Canicosa de la Sierra, Burgos. A living oak/pine symbiosis (pine germinated inside the oak's hollow trunk), not a single tree; treated as one collectible ensemble. Fifth place, European Tree of the Year 2016. Four sources agree on ages (oak ~250yr, pine ~130yr) and the formation story; the most detailed source (canicosa.info) gives oak girth 340cm, pine girth 200cm at 2.9m, and notes the oak is in active decline with no conservation measures, i.e. alive but genuinely fragile. Location confirmed within ~100m by two independent GPS fixes. No cluster or nearby published city; standalone single-famous-tree candidate on rarity/story rather than size.",
+      "mapped_as": "data/cities/canicosa-de-la-sierra.json pcs_001"
     },
     {
       "name": "L'Om del Trinquet",

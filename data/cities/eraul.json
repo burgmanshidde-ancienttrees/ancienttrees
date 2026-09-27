@@ -1,0 +1,65 @@
+{
+  "city": "Eraul",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Eraul is a hamlet in Navarre's Yerri valley, north of Estella-Lizarra, and its tree stands just outside it on the track toward Abartzuza. The Eraulgo artea, the Encina de Eraul, is a holm oak of over five hundred years that was the first tree on Navarre's 1991 list of Natural Monuments and still carries the number M.N. 1. It lost two of its three great limbs long ago and leans toward the one it kept.",
+  "meta_description": "The Encina de Eraul, Navarre: a holm oak over 500 years old, Natural Monument No. 1 on Navarre's list, leaning on the one great limb it kept of three.",
+  "question_meta": "Eraul's notable tree is the Eraulgo artea, Navarre's Natural Monument No. 1. Its age, its shape, and how to reach it.",
+  "question_answer": "The tree at Eraul is the Eraulgo artea, or Encina de Eraul, a holm oak beside the track from Eraul to Abartzuza in Navarre's Yerri valley. It is over five hundred years old by every source and was the first tree on Navarre's 1991 list of Natural Monuments, where the current 2009 decree still lists it as M.N. 1.",
+  "question_context": "Two sources carry this tree: a full Basque Wikipedia article on it, and Decreto Foral 87/2009, the Government of Navarre's current register of monumental trees, which replaced the original 1991 decree and lists the oak first, with its own coordinates. Wikipedia gives a height of 11 metres and a trunk 1.3 metres in diameter, which is a little over four metres round; that girth is worked out from the diameter rather than taped. On age, the sources say only that it is over five hundred years old and that it was already a young tree when Castile conquered Navarre from 1512. Nobody has published a ring count. The decree names the species more precisely than most registers do, as an intergrade between the ilex and ballota subspecies of holm oak. Of the tree's three original limbs only one remains, and the trunk has grown lopsided and partly hollow toward it, but Wikipedia describes the tree as still standing and sound. It stands on open rural ground beside a public track and is visible from the village street. No public transport reaches Eraul; Estella-Lizarra, about eight kilometres south, is the nearest town with services.",
+  "faq": [
+    {
+      "q": "How old is the Encina de Eraul?",
+      "a": "Over five hundred years, by every source, and a young tree when Castile conquered Navarre in the 1510s. Nobody has published a ring count, so treat it as a documented estimate rather than a measurement."
+    },
+    {
+      "q": "Why is it Navarre's Natural Monument No. 1?",
+      "a": "It was the first tree on the Government of Navarre's original 1991 list of monumental trees, and the current 2009 decree still lists it first, as M.N. 1, Encina de Eraul."
+    },
+    {
+      "q": "Can you visit the tree at Eraul?",
+      "a": "Yes, free. It stands on open ground beside the public track from Eraul toward Abartzuza, about 500 metres east of the hamlet, and is visible from the village street. No gate or ticket."
+    },
+    {
+      "q": "How do you get to Eraul?",
+      "a": "By car. Eraul sits in Navarre's Yerri valley, about eight kilometres north of Estella-Lizarra; no public transport reaches it."
+    }
+  ],
+  "hero_tree_id": "erl_001",
+  "oldest_tree_id": "erl_001",
+  "trees": [
+    {
+      "id": "erl_001",
+      "name": "Eraulgo artea (the Encina de Eraul)",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "over 500 years",
+      "age_min": 500,
+      "age_max": 700,
+      "age_basis": "source",
+      "girth_cm": 410,
+      "location": {
+        "address": "Beside the track from Eraul to Abartzuza, opposite the bend by the San Pedro hermitage, Eraul, Deierri/Valle de Yerri, Navarre",
+        "latitude": 42.71626,
+        "longitude": -2.04426,
+        "neighbourhood": "Eraul (a hamlet of the Deierri/Valle de Yerri valley), about 500m east of the village on the track towards Abartzuza"
+      },
+      "story": "When Castile conquered Navarre in 1512, this holm oak was already growing beside the track out of Eraul, a young tree by the account of its Basque Wikipedia entry. Five centuries later it is Monumento Natural number one: the first tree on Navarre's original 1991 list of protected monumental trees, and still listed first, as \"M.N. 1, Encina de Eraul\", in the government's current 2009 decree.\n\nIt is not a giant, and it does not pretend to be. It stands about 11 metres tall on a trunk roughly 1.3 metres across, which works out to a little over four metres round. What it has instead is a history you can read in its shape. It once carried three main limbs. Only one survives, and the trunk has grown lopsided and partly hollow, leaning toward the limb it kept. The Basque sources say it still stands firm and sound.\n\nThe decree is also more exact about the tree than most people would bother to be. It names it as an intergrade between two subspecies of holm oak, ilex and ballota, where Wikipedia simply says holm oak.\n\nIt stands a few hundred metres east of the hamlet, opposite the bend by the San Pedro hermitage, and you can see it from the village street. Every source puts it at over five hundred years; nobody has put a firmer number on it.",
+      "how_to_recognise": "You can recognise it by the lopsided, partly hollow trunk leaning toward the one great limb it has left of three. It stands beside the track from Eraul toward Abartzuza, opposite the bend by the San Pedro hermitage.",
+      "verified_sources": [
+        "https://eu.wikipedia.org/wiki/Eraulgo_artea",
+        "https://www.lexnavarra.navarra.es/detalle.asp?r=29923"
+      ],
+      "access": "Free, on open rural ground beside a public track between Eraul and Abartzuza; visible from the village street. No gate or ticket found in any source.",
+      "transport": "Rural Navarre; no public transport reaches Eraul directly. Nearest town with services is Estella-Lizarra, about 8km south; a car is the realistic way to reach it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -18,6 +18,20 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - Refilled and wrote the _famous-spain shelf: 5 new single-tree places, 3 held
+
+`prepare.py` named `_famous-spain` (13 unsourced leads, all with a photo already) as a refill batch. Ran three parallel 4-candidate verify passes on data/leads/_famous-spain.json's unsourced entries (per BRIEF_RESEARCH.md's four-candidate limit), merged into `data/research/famousspain-verified.json`, then a write pass turned the strongest 5 into brand new standalone place pages under the 2026-08-31 single-famous-tree exception:
+
+- **Eraul** (Navarre): the Eraulgo artea, holm oak over 500 years, Navarre's Natural Monument No. 1.
+- **Villamudria** (Burgos): the Roble Escarcio, a lone Pyrenean oak on a cleared ridge, ~600 years, ~700cm girth.
+- **La Adrada** (Avila): the Pino del Aprisquillo, Spain's Tree of the Year 2016, European finalist 2017.
+- **Navajas** (Castellon): the Olmo de Navajas, planted 1636 by settlers after the Morisco expulsion, escaped Dutch elm disease, Spain's Tree of the Year 2019.
+- **Canicosa de la Sierra** (Burgos): the Pino-Roble, a Scots pine growing from inside a hollow Pyrenean oak's trunk, 5th place European Tree of the Year 2016.
+
+Held 3 (recorded in famousspain-verified.json's verify_notes as curator HOLD calls, reasons named): Garaiko artea (no numeric age, farmland access caveat), Ondategiko Haritza (no numeric age, approximate pin), Om centenari de Millena (no register, approximate pin, no day-trip transit). Confirmed dead and blocked outright: L'Om del Trinquet and Om de la Plana (both Dutch elm disease), Mesto de las Rozas (storm-felled 1995, our only photo predates the loss). Also fixed a stale wrong id reference in the leads file (Olmos Centenarios de Cabeza del Buey pointed at `cdb_001`, which now belongs to an unrelated Cordoba olive tree; it is actually published as `ebe_001` in data/cities/cabeza-del-buey.json).
+
+None of the 5 new places has a photo yet (verify passes don't hunt photos); each retains its known Commons candidate filenames only inside the delivery record, not in the published tree data, so a future photo-judge pass should re-derive candidates from Commons directly per the normal photo lane rather than assume any are pre-queued. preflight clean throughout (0 problems, 660 cities).
+
 ## 2026-09-27 - Two live deploy-blocking park-count mismatches fixed, one stale orphan corrected
 
 `checkParkCountPromises()` was failing the build on `/parks/arnold-arboretum-boston` (title said "5 to Find", the group had grown to 6 with tonight's Wilson Black Pine addition) and would have failed again on `/parks/city-park-new-orleans` right after (title said "5 to Find" against 6, the new Enrique Alferez Oak). Both titles, meta descriptions and intros updated to the real count; both pass the check now (verified the regex logic by hand against `site/src/lib/count-promises.ts` and `parks.ts`'s `parkKey()`, since the build itself is not mine to run per the runner prompt).

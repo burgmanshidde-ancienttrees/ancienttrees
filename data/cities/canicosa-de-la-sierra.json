@@ -1,0 +1,67 @@
+{
+  "city": "Canicosa de la Sierra",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Canicosa de la Sierra is a village in the Sierra de la Demanda, in Burgos province, and its famous tree is really two. The Pino-Roble is a Pyrenean oak of about 250 years with a Scots pine of about 130 growing up out of its hollow trunk. It stands a short walk from the road toward Navaleno, and in 2016 it finished fifth in the European Tree of the Year contest, representing Spain.",
+  "meta_description": "The Pino-Roble of Canicosa de la Sierra, Burgos: a Scots pine growing out of a 250-year-old hollow oak, fifth in European Tree of the Year 2016.",
+  "question_meta": "Canicosa de la Sierra's notable tree is the Pino-Roble, a pine growing out of an oak. How it formed and how to find it.",
+  "question_answer": "The tree at Canicosa de la Sierra is the Pino-Roble, a Pyrenean oak of about 250 years with a Scots pine of about 130 years growing out of its hollow trunk. It stands in the El Piquillo oak dehesa, a short walk from the road toward Navaleno, and finished fifth in European Tree of the Year 2016.",
+  "question_context": "Four sources describe the pair and agree on how it formed: a Scots pine seed, most likely from a cone carried by a squirrel, germinated in a hollow of an old Pyrenean oak and has grown up through it. The most detailed figures come from a site dedicated to the tree: the pine is 15 metres tall, the oak 12.5; the oak is 3.4 metres round, and the pine two metres round measured at 2.9 metres, where its trunk emerges from the oak. The ages, about 250 years for the oak and about 130 for the pine, are repeated across all four sources without a ring count behind them. The same site records signs of decline in the oak, which the growing pine is splitting, and no conservation measures in place, so this is a pairing in slow change rather than a fixed monument. It was chosen as Spain's entry for European Tree of the Year 2016 and finished fifth out of fifteen countries. It stands at about 1,200 metres on communal land beside the road toward Navaleno. No public transport reaches the village.",
+  "faq": [
+    {
+      "q": "How did a pine end up growing out of an oak?",
+      "a": "A Scots pine seed, most likely from a cone a squirrel carried in, germinated in a hollow of the old oak's trunk. The pine has since grown up through the oak and out of its crown."
+    },
+    {
+      "q": "How old are the two trees?",
+      "a": "The oak is about 250 years old and the pine about 130, by the figures every source repeats. Nobody has published a ring count for either."
+    },
+    {
+      "q": "Can you visit the Pino-Roble?",
+      "a": "Yes, free, on communal land. About two kilometres out of the village on the road toward Navaleno, a painted rock marked Pino Roble shows a small parking area, and a path of roughly a kilometre leads to the tree. It is easy to walk past, so look carefully."
+    },
+    {
+      "q": "How do you get to Canicosa de la Sierra?",
+      "a": "By car. The village is in the Sierra de la Demanda, Burgos province, about 60 kilometres from Burgos and 50 from Soria, and no public transport reaches it."
+    }
+  ],
+  "hero_tree_id": "pcs_001",
+  "oldest_tree_id": "pcs_001",
+  "trees": [
+    {
+      "id": "pcs_001",
+      "name": "Pino-Roble de Canicosa de la Sierra",
+      "species": "Pyrenean Oak (Quercus pyrenaica) with a Scots Pine (Pinus sylvestris) growing out of its hollow trunk",
+      "age_estimate": "oak about 250 years, pine growing from within it about 130 years",
+      "age_min": 220,
+      "age_max": 280,
+      "age_basis": "source",
+      "girth_cm": 340,
+      "location": {
+        "address": "Paraje El Piquillo, beside the road (BU-V-8227) from Canicosa de la Sierra towards Navaleno, about 2km from the village then 1km on a marked path, Canicosa de la Sierra, Burgos province, Castilla y Leon",
+        "latitude": 41.93133,
+        "longitude": -3.04235,
+        "neighbourhood": "El Piquillo, an aged rebollo (Pyrenean oak) dehesa at about 1,200m altitude, Canicosa de la Sierra"
+      },
+      "story": "A Scots pine is growing out of the middle of an oak. Not beside it, not leaning on it: the pine germinated inside a hollow in the oak's trunk, most likely from a cone a squirrel carried in, and has grown up through it and out of the top. The pair is known as the Pino-Roble, the pine-oak.\n\nThe host is a Pyrenean oak of about 250 years, 12.5 metres tall and 3.4 metres round. The guest is about 130 years old and has already overtaken it, reaching 15 metres. Its own trunk only clears the oak's crown at 2.9 metres up, which is where it was measured: two metres round.\n\nThis is not a peaceful arrangement. As the pine thickens it splits the oak's bark and speeds up its decay, and the site that documents the pair records signs of decline in the oak and no conservation measures in place. You are looking at a slow takeover, halfway through.\n\nIn 2016 the Pino-Roble represented Spain in European Tree of the Year and finished fifth among trees from fifteen countries.\n\nIt stands in El Piquillo, an old dehesa of Pyrenean oaks at about 1,200 metres, on communal land. From the road toward Navaleno, a painted roadside rock marked Pino Roble shows where to park, and a path of about a kilometre leads to it. One hiker warns it is easy to walk straight past.",
+      "how_to_recognise": "You can recognise it by the pine trunk rising out of the top of a hollow oak, two trees sharing one base. It stands in the El Piquillo oak dehesa, about a kilometre's walk from the painted Pino Roble rock beside the road to Navaleno.",
+      "verified_sources": [
+        "https://www.canicosa.info/PinoRoble/index.html",
+        "http://tierrasdeburgos.blogspot.com/2014/04/canicosa-de-la-sierra-el-pino-roble-y.html",
+        "https://lagunasdeneila.es/el-pino-roble",
+        "https://cesefor.com/es/noticias/el-pino-roble-de-canicosa-de-la-sierra-burgos-representa-espana-en-el-concurso-arbol"
+      ],
+      "access": "Free, on communal land beside a public road. lagunasdeneila.es gives turn-by-turn directions: take the BU-V-8227 towards Navaleno, about 2km out of the village there is a painted roadside rock marked 'Pino Roble' and a small dirt parking area, then roughly 1km on a marked path to the tree. canicosa.info independently confirms it stands right beside that same road with views back to the village. One source (tierrasdeburgos) calls it 'not especially signposted' and easy to walk past even with coordinates, which is a real caveat about how inconspicuous the pair looks against the surrounding forest, not an access restriction.",
+      "transport": "Rural Sierra de la Demanda, Burgos province; no public transport. About 60km from Burgos city and roughly 50km from Soria (neither currently published); realistically reached by car to the village and then the short walk described above.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "city": "Navajas",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Navajas is a village in Castellon province, in the Comunitat Valenciana, and its tree stands in the middle of it, in the square named after it. The Olmo de Navajas is a field elm planted in 1636 by the settlers who arrived after the Moriscos were expelled, and it has been on the town's coat of arms since 1961. It has escaped the Dutch elm disease that killed most of Europe's old elms, and Spain voted it Tree of the Year in 2019.",
+  "meta_description": "The Olmo de Navajas, Castellon: a field elm planted in 1636, untouched by Dutch elm disease, on the town's coat of arms and Spain's Tree of the Year 2019.",
+  "question_meta": "Navajas's notable tree is the Olmo de Navajas, planted in 1636. Its history, its survival, and where to find it.",
+  "question_answer": "The tree at Navajas is the Olmo de Navajas, a field elm on a raised stone platform in the Plaza del Olmo, beside the town hall. It was planted in 1636 by Roque Pastor, making it close to 390 years old, it has not been affected by Dutch elm disease, and Spain voted it Tree of the Year in 2019.",
+  "question_context": "Three independent sources, a Valencian regional site, a Spanish tree-of-the-year archive and the Camino del Cid tourist route, tell the same story. The elm, Ulmus minor, was planted in 1636 by Roque Pastor, one of the new settlers who came to Navajas after the expulsion of the Moriscos in 1609, as a symbol of the new community's unity. That makes its age a documented one rather than an estimate: close to 390 years. The square is named after it, and it has appeared on the town's coat of arms since a decree of 1961. Its girth is given as 6.3 and 6.5 metres, which agree closely; its height as 13.87 metres in one source and 19 in the other two, a difference none of them explains. The archive notes that it has not been affected by Dutch elm disease, which has killed most mature elms across Europe. It was featured on a Spanish postal cancellation in 2002 and a ONCE lottery ticket in 2011, and won Spain's Tree of the Year public vote in 2019. It stands in the open square beside the town hall, free to visit at any time.",
+  "faq": [
+    {
+      "q": "How old is the Olmo de Navajas?",
+      "a": "About 390 years. It was planted in 1636 by Roque Pastor, one of the settlers who came after the Moriscos were expelled in 1609, and the date is documented rather than estimated."
+    },
+    {
+      "q": "Did it survive Dutch elm disease?",
+      "a": "Yes. Sources state it has not been affected by the disease that killed most of Europe's mature elms, which is a large part of why it is so well known."
+    },
+    {
+      "q": "Can you visit the Olmo de Navajas?",
+      "a": "Yes, free and at any time. It stands in the open Plaza del Olmo beside the town hall, on a raised stone platform, and the square is used for the village's markets and festivals."
+    },
+    {
+      "q": "How do you get to Navajas?",
+      "a": "By car it is about 47 kilometres north of Valencia. Navajas has a station on the slow C-5 regional line with only a few trains a day, and that stretch has been served by a replacement bus during engineering works."
+    }
+  ],
+  "hero_tree_id": "nvj_001",
+  "oldest_tree_id": "nvj_001",
+  "trees": [
+    {
+      "id": "nvj_001",
+      "name": "Olmo de Navajas",
+      "species": "Field Elm (Ulmus minor)",
+      "age_estimate": "planted 1636, about 390 years",
+      "age_min": 385,
+      "age_max": 395,
+      "age_basis": "source",
+      "girth_cm": 640,
+      "location": {
+        "address": "Plaza del Olmo, next to the town hall, Navajas, Castellon province, Comunitat Valenciana",
+        "latitude": 39.87777,
+        "longitude": -0.50708,
+        "neighbourhood": "Plaza del Olmo (Elm Square), village centre, Navajas"
+      },
+      "story": "Dutch elm disease killed most of Europe's great elms in the twentieth century. It never touched the Olmo de Navajas, which has stood in the village square since a man named Roque Pastor planted it in 1636.\n\nThe date is the point of the tree. The Moriscos were expelled from Spain in 1609, and the elm was planted by the settlers who came to Navajas after them, as a symbol of the new community holding together. The village took the idea seriously. The square is named after the tree, and the tree has been on the town's coat of arms since a decree of 1961. The village's markets, festivals and bullfights still happen around its feet.\n\nIt stands on a raised circular stone platform about seven metres across and 1.4 metres high, right beside the town hall, and it has grown to more than six metres round. Its height is less agreed: one source measured 13.87 metres, two others say 19.\n\nFame arrived late and in small, official doses. A Spanish postal cancellation featured it in 2002, a ONCE lottery ticket in 2011, and in 2019 Spain voted it the country's Tree of the Year, sending it on to represent Spain in the European contest. Nearly four hundred years after Roque Pastor dug the hole, it is still the centre of the village.",
+      "how_to_recognise": "You can recognise it easily: a single elm more than six metres round, on a raised round stone platform about seven metres across. It stands in the Plaza del Olmo, right beside the town hall.",
+      "verified_sources": [
+        "https://www.valenciabonita.es/2019/02/13/olmo-de-navajas/",
+        "https://www.xn--arbolybosquedelao-uxb.es/olmo-de-navajas-castellon/",
+        "https://www.caminodelcid.org/servicios/olmo-centenario-de-navajas-2745524"
+      ],
+      "access": "Free. Stands on a raised circular stone platform in the town's main square, right beside the ayuntamiento (town hall); Camino del Cid's own visitor page says the plaza is reachable directly by car and open to all, no restriction of any kind, and it hosts the village's markets, festivals and bullfighting events, so it is in continuous public use rather than roped off.",
+      "transport": "Navajas has its own station on the Cercanias Valencia line C-5 (Zaragoza-Sagunto railway), but the line runs a slow, sparse regional service (about three trains a day) and the town is well beyond a 30-minute ride from Valencia; as of the time of this pass the Sagunto-Caudiel stretch is reported suspended for engineering works with a replacement bus. About 47km north of Valencia (published) by road; treated as its own place rather than a Valencia day trip.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
