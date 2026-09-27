@@ -1442,6 +1442,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b9/121003-FS-Fishlake-JZ-001_%2845410482591%29.jpg": {
+   "base": "fsh_001-pando",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/9/95/Kroezeboom_Fleringer_Es_%28cropped%29.jpg": {
    "base": "fle_001-the-kroezeboom-of-fleringen",
    "widths": [
@@ -2129,6 +2135,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tsukazaki_no_Kusu%2C_zenkei-2.jpg": {
    "base": "kmt_001-tsukazaki-no-kusu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/67/General_Grant_Tree_in_Kings_Canyon_National_Park_June_2022.jpg": {
+   "base": "kcy_001-general-grant-tree",
    "widths": [
     500
    ]
@@ -3321,6 +3333,24 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/7/74/Duncan_Memorial_Western_Redcedar.jpg": {
+   "base": "oly_002-the-duncan-cedar",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ee/Tree_of_Life_on_Kalaloch_Beach_in_Olympic_National_Park.jpg": {
+   "base": "oly_003-the-tree-of-life",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/47/Largest_Sitka_Spruce%2C_Quinault_Lake%2C_Washington_2018-08-21_OC-LSC-0090.jpg": {
+   "base": "oly_004-the-quinault-big-spruce",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/1/1b/Grand_Camphor_Tree_%22Ikiki_no_Gomon%22_near_Oyamazumi_Shrine.jpg": {
    "base": "omi_001-ikiki-no-gomon-the-living-gate",
    "widths": [
@@ -3563,6 +3593,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/e/ec/Jela_car.JPG": {
    "base": "prs_001-jela-car",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/104286818/medium.jpg": {
+   "base": "phl_001-bartram-s-ginkgo",
    "widths": [
     500
    ]
@@ -4192,6 +4228,24 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/1/10/General_Sherman_Tree_%2854071103986%29.jpg": {
    "base": "seq_001-general-sherman-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/333897415/large.jpg": {
+   "base": "seq_002-the-president",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d0/Chief_Sequoyah_Tree%2C_Sequoia_National_Park_%28distance%29_July_2023.jpg": {
+   "base": "seq_003-chief-sequoyah-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/80/Lincoln_Tree_in_Sequoia_National_Park_%28distance%29_July_2023.jpg": {
+   "base": "seq_004-lincoln-tree",
    "widths": [
     500
    ]
@@ -5056,6 +5110,18 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/d/d8/Autumn_Tree%2C_Museum_Gardens%2C_York_%285137138362%29.jpg": {
    "base": "yor_003-the-pear-barked-beech",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6b/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2755.jpg": {
+   "base": "ynp_001-grizzly-giant",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/45/Tunnel_tree_at_Yosemite_National_Park_20220524_145321_copy.jpg": {
+   "base": "ynp_002-california-tunnel-tree",
    "widths": [
     500
    ]
