@@ -45,6 +45,9 @@ struct CollectIntro: View {
     /// accepted the invitation and wants to know what this button does to THIS
     /// tree. Same sheet, same flow, different first sentence.
     var about: String? = nil
+    /// Came in from the tree's missing photograph: the sheet is about adding
+    /// a photo, so it says that and nothing about collecting.
+    var addsPhoto = false
     var onStart: () -> Void
     /// The camera roll, added 2026-08-28. Convention: iNaturalist, where the
     /// gallery is an ordinary route and not a fallback, reachable both by long
@@ -54,8 +57,9 @@ struct CollectIntro: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text(about == nil ? "Build your tree collection"
-                              : "Add this tree to your collection")
+            Text(addsPhoto ? "Add a photo"
+                 : about == nil ? "Build your tree collection"
+                 : "Add this tree to your collection")
                 .font(.brand(28, .bold, relativeTo: .title))
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
@@ -86,11 +90,15 @@ struct CollectIntro: View {
             // Named, and the reader is the subject joined with "by", which is
             // PRODUCT_COPY.md's own shape. The general line stays exactly as it
             // was for every other way in.
-            Text(about.map { "You can add \($0) by taking a photograph of it." }
-                 ?? "Every tree you photograph joins your collection.")
-                .font(.brand(16, .regular, relativeTo: .body))
-                .foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
+            // No second line when adding a photo: the title says it all, and
+            // the page behind already says there is no photograph yet.
+            if !addsPhoto {
+                Text(about.map { "You can add \($0) by taking a photograph of it." }
+                     ?? "Every tree you photograph joins your collection.")
+                    .font(.brand(16, .regular, relativeTo: .body))
+                    .foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
 
             Spacer(minLength: 24)
 
@@ -116,15 +124,10 @@ struct CollectIntro: View {
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("add-library")
 
-                // Said where somebody chooses a picture, and in the same words
-                // as the website's own photo control: a picture saved from a
-                // website is not ours to publish, and the camera roll is where
-                // those live beside your own (2026-09-24).
-                Text("We can only use photographs you took yourself.")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-                    .multilineTextAlignment(.center)
-                    .frame(maxWidth: .infinity)
-                    .fixedSize(horizontal: false, vertical: true)
+                // No footnote about whose photographs we can use (Hidde,
+                // 2026-09-27: "do we need to say it otherwise less is more").
+                // It told an honest person something they already do and
+                // stopped nobody else; the viewing pass checks every picture.
             }
         }
         .frame(maxHeight: .infinity, alignment: .top)

@@ -592,8 +592,12 @@ struct ContentView: View {
                             // this desk compiled it fine. Same effect, and a
                             // small expression the type-checker can hold.
                             CollectSheet(catalogue: cat, origin: origin, mode: mode,
-                                         about: navigator.collectAbout)
-                                .onDisappear { navigator.collectAbout = nil }
+                                         about: navigator.collectAbout,
+                                         addsPhoto: navigator.collectAddsPhoto)
+                                .onDisappear {
+                                    navigator.collectAbout = nil
+                                    navigator.collectAddsPhoto = false
+                                }
                         }
                     }
                     // A sheet does not inherit the environment set on the view

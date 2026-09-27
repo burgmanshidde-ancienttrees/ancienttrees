@@ -66,6 +66,7 @@ struct CollectSheet: View {
     /// The tree somebody tapped the camera on, when there is one. Only the
     /// intro screen reads it: see CollectIntro.
     var about: String? = nil
+    var addsPhoto = false
 
     @Environment(Saved.self) private var saved
     @Environment(Sightings.self) private var sightings
@@ -195,7 +196,7 @@ struct CollectSheet: View {
                 // thumb already is, which is what Airbnb does with any sheet
                 // that asks for something. Everything after it is a list or a
                 // form, so those scroll.
-                CollectIntro(about: about,
+                CollectIntro(about: about, addsPhoto: addsPhoto,
                              onStart: { openCamera() },
                              onLibrary: { openLibrary() })
                     .padding(.horizontal, 20)
