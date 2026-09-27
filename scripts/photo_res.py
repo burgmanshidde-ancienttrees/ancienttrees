@@ -96,11 +96,17 @@ def commons_sizes(urls):
         except Exception as e:
             print("  commons api failed: %s" % str(e)[:80], file=sys.stderr)
             continue
+        # MediaWiki always returns the title with underscores normalized to
+        # spaces, even when the query itself used underscores, so match on
+        # that normalized form rather than assuming the API echoes it back
+        # exactly. Found on a .tif whose title has commas and spaces baked
+        # into a header the header-sniffing fallback also can't read.
+        by_normalized = {k.replace("_", " "): k for k in chunk}
         for page in (d.get("query", {}).get("pages", {}) or {}).values():
             ii = (page.get("imageinfo") or [{}])[0]
-            t = page.get("title")
-            if t in titles and ii.get("width"):
-                out[titles[t]] = (ii["width"], ii["height"])
+            key = by_normalized.get(page.get("title"))
+            if key and ii.get("width"):
+                out[titles[key]] = (ii["width"], ii["height"])
     return out
 
 
