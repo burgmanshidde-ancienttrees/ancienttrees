@@ -9014,6 +9014,20 @@
       "note": "Wrote both stories directly in the main session (small batch); merged into data/cities/new-orleans.json, intro/meta/FAQ updated 6->8 trees, both new trees carry paid_entry (2/8, under the one-third line).",
       "wasted": 0,
       "brief_wrong": false
+    },
+    {
+      "target": "_tree-of-the-year (batch 3, 8 candidates)",
+      "kind": "verify",
+      "tokens": 251910,
+      "trees": 6,
+      "note": "6 verified (lel_001, gar_001, let_001, fmc_001, cap_001, dbl_001). The Wish Tree (Nisovo) confirmed dead by a dated 2013 storm-damage news report, blocked. Alley in Skalicka blocked on access (grounds house a residential care home)."
+    },
+    {
+      "target": "_tree-of-the-year (batch 3, 6 trees)",
+      "kind": "write",
+      "tokens": 128978,
+      "trees": 5,
+      "note": "5 stories + recognition lines written and merged as 5 new single-tree places (leliceni, garmen, letenye, felsomocsolad, capeni). dbl_001 (Grot Oak of Deblin) turned out to be a duplicate of the already-published deb_001, caught before merge; discarded rather than shipped, lead marked duplicate. Fixed two species-label inconsistencies (lel_001 Tilia cordata mislabelled large-leaved; cap_001 elm synonym) before merge."
     }
   ]
 }
