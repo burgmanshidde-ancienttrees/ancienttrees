@@ -285,7 +285,7 @@ final class AncientTreesUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-collect", "-no-cover"]
         app.launch()
-        XCTAssertTrue(app.staticTexts["Build your tree collection"].waitForExistence(timeout: 12),
+        XCTAssertTrue(app.staticTexts["Add a tree"].waitForExistence(timeout: 12),
                       "the centre button does not open on the collect intro")
         XCTAssertTrue(app.buttons["add-start"].exists,
                       "no way into the camera")
