@@ -211,15 +211,21 @@ def main():
     # over a newer one, which checkouts.py --fix did on 2026-09-25 (3374 trees
     # to 3348, while the deploy of the newer data was still running). So a
     # live trees feed smaller than what this checkout publishes is refused.
+    # Compared with the BUNDLE, not with the checkout (2026-09-27): the night
+    # runs commit trees all day, every push cancels the deploy before it, and
+    # the live site is nearly always a few trees behind the checkout. Refusing
+    # on that blocked a release for an hour while the live feed was still
+    # newer than the bundle it would have replaced. What must never happen is
+    # the bundle going BACKWARDS, and that is the one comparison made here.
     if not args.source and not args.check:
-        _, published = local_drift()
+        bundled, _ = local_drift()
         try:
             n_live, _ = counted(fetch("trees", None))
         except Exception:
             n_live = None
-        if published and n_live is not None and n_live < published:
-            print("the live site publishes %d trees and this checkout %d, so it "
-                  "has not deployed yet; nothing written." % (n_live, published))
+        if bundled and n_live is not None and n_live < bundled:
+            print("the live site publishes %d trees and the bundle already holds %d, "
+                  "so it is behind a newer deploy; nothing written." % (n_live, bundled))
             print("Wait for the deploy, or read a local build:")
             print("  cd site && npx astro build && cd .. && "
                   "python3 scripts/appdata.py --from site/dist/api")
