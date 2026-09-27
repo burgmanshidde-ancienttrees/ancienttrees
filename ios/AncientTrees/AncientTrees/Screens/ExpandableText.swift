@@ -23,7 +23,7 @@ struct ExpandableText: View {
     private var isCut: Bool { !expanded && fullHeight > cutHeight + 1 }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
+        VStack(alignment: .leading, spacing: 0) {
             Text(text)
                 .lineLimit(expanded ? nil : lines)
                 .fixedSize(horizontal: false, vertical: true)
@@ -53,10 +53,17 @@ struct ExpandableText: View {
                     Text("Read more")
                         .fontWeight(.semibold)
                         .foregroundStyle(Brand.moss)
-                        .frame(minHeight: 44, alignment: .leading)
+                        .padding(.top, 4)
+                        // A 44-point target without a 44-point gap: the frame
+                        // keeps its height for the finger and gives most of it
+                        // back to the layout, so the next block sits where it
+                        // would under plain text (Hidde, 2026-09-27: "the
+                        // vertical spacing feels off").
+                        .frame(minHeight: 44, alignment: .topLeading)
                         .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
+                .padding(.bottom, -18)
                 .accessibilityIdentifier("read-more")
             }
         }
