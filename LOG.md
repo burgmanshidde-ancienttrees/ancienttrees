@@ -10,6 +10,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - Fixed a real deploy blocker (rung 2), then refilled and wrote the _famous-spain shelf: 5 new places
+
+**Rung 2 first.** `health.py` showed Smoke test and Build and deploy both failing. The cause: `checkParkCountPromises()` failing on `/parks/arnold-arboretum-boston`, whose hand-written title still said "5 to Find" after tonight's earlier Wilson Black Pine addition grew the group to 6. Audited every park file for the same drift (a small Python port of `parkKey()`/`groupTreesByPark()`, since I can't run the Astro build myself) and found a second live one about to fail right after it: New Orleans's City Park, same shape, also 5 vs 6 after the Enrique Alferez Oak. Fixed both titles/meta/intros. Also found and fixed a third, older, non-blocking case while auditing: Hortus Botanicus Amsterdam's park page still described 3 trees pulled in the 2026-08-23 paid-entry cleanup a month ago; it's been silently excluded from the build for that whole month (2 trees left, below the 3-tree floor) so this was hygiene, not a live bug. Committed and tried to push; `gh workflow run deploy.yml` 403'd (no dispatch permission, same known issue as other runs today), so the fix will land on the next scheduled build.
+
+**Then rung 4/5.** `prepare.py` said REFILL THE SHELF FIRST, naming `_famous-spain` (13 unsourced leads, all with a photo already). Claimed it, ran three parallel 4-candidate verify passes (per BRIEF_RESEARCH.md), merged into `data/research/famousspain-verified.json`. Of 10 candidates: 5 verified strongly enough to write as brand new single-tree places (all far from any published city, none day-trippable), 3 held (weak age or approximate pin, reasons recorded), 3 confirmed dead (2 Dutch elm disease, 1 storm-felled 1995).
+
+**Published (5 new places):** Eraul, Navarre (Eraulgo artea, holm oak, Natural Monument No. 1, 500+ years); Villamudria, Burgos (Roble Escarcio, a lone Pyrenean oak on a cleared ridge, ~600 years, ~700cm girth); La Adrada, Avila (Pino del Aprisquillo, Spain's Tree of the Year 2016, European finalist 2017); Navajas, Castellon (Olmo de Navajas, planted 1636, survived Dutch elm disease, Spain's Tree of the Year 2019); Canicosa de la Sierra, Burgos (Pino-Roble, a Scots pine growing from inside a hollow oak, 5th place European Tree of the Year 2016). All under the 2026-08-31 single-famous-tree exception.
+
+None of the 5 has a photo yet; that's a separate lane for a future pass. Also fixed a stale wrong-id reference in the leads file (an unrelated already-published tree). preflight clean throughout (0 problems, 660 cities). Everything above is committed locally; git push failed with the known expired-token error both times, so these are local commits for the workflow's own Run health step to push.
+
 ## 2026-09-27 (continuation) - Refilled the writer's shelf: 4 Tree of the Year trees published, plus 4 stale leads-file records fixed
 
 `prepare.py` said REFILL THE SHELF FIRST, naming `_tree-of-the-year` (115
