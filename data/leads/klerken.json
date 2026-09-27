@@ -1,0 +1,25 @@
+{
+ "city": "Klerken",
+ "leads": [
+  {
+   "candidate": "The Brown Cherry Pear of Klerken (Bruine Kriekpeer van Klerken)",
+   "species": "Common Pear (Pyrus communis 'Bruine Kriekpeer')",
+   "age_estimate": "roughly 105 years",
+   "age_min": 100,
+   "age_max": 110,
+   "girth_cm": 200,
+   "location": {
+    "address": "beside the Guide Bilckepad footpath, Klerken, Houthulst, West Flanders",
+    "latitude": 50.994719,
+    "longitude": 2.912364,
+    "neighbourhood": "Klerken (Houthulst)"
+   },
+   "verified_sources": [
+    "https://www.treeoftheyear.org/previous-years/2023/the-brown-cherry-pear-of-klerken",
+    "https://www.vrt.be/vrtnws/nl/2022/10/17/bruine-kriekpeer-van-klerken-is-boom-van-het-jaar/"
+   ],
+   "reason": "REJECTED AS A YPRES ADDITION on the distance/container test, kept here as a well-verified lead for whenever a Klerken/Houthulst page opens. Not a same-town or genuine day-trip pairing with Ypres: 11.0km from the nearest published Ypres tree (ypr_004, Boezinge) and 16.2km from Ypres town centre, straight-line. Klerken is a village of the municipality of Houthulst, in the Diksmuide administrative arrondissement, confirmed by Nominatim reverse geocode of the tree's own coordinate ('town: Houthulst, county: Diksmuide'), i.e. a different municipality AND a different arrondissement from Ypres, not merely a distant corner of the same one (contrast bsa_003 and lie_002 above, both same-municipality additions). De Lijn bus service in the area (line 30) links Klerken with Diksmuide, not with Ypres, so there is no evidence of even an indirect ~30-minute public-transport link to Ypres; the honest verdict is that this belongs to a future Houthulst or Diksmuide page, not to Ypres.\n\nWell verified otherwise, so worth keeping rather than re-researching later. Two independently fetched sources agree: the contest page (Common Pear, Pyrus communis L., age 102 years as of the 2023 European contest, GPS N 50 59'40.99'' / E 2 54'44.51'' which converts exactly to the decimal 50.994719/2.912364 given) and VRT NWS, Belgium's public broadcaster (height 10m, circumference 'zo'n twee meter' i.e. about 200cm, over 100 years old). Age here is rolled forward from the contest's 102 (as of October 2022, when it won the Flemish national 'Boom van het Jaar 2022' contest) to roughly 105 as of 2026, kept as a band rather than a point figure.\n\nACCESS IS THE OTHER OPEN QUESTION, independent of the distance problem, and worth recording now: VRT states plainly the tree 'staat op een privedomein... een weide van iemand uit het dorp' (stands on private property, a meadow belonging to someone from the village), but 'er loopt wel een wandelpad vlakbij' (a walking path does run nearby). The contest's own published GPS coordinate, when reverse-geocoded via Nominatim, lands almost exactly ON a named OSM footway, 'Guide Bilckepad', in Klerken. So the coordinate as published is very likely already the VIEWING PLACE (the public footpath) rather than the trunk itself, which stands in the adjoining private meadow. If this is ever revived for a Houthulst/Diksmuide page, per hard rule 10's view-only-tree provision it should ship, if at all, as a tree seen from the path rather than one you walk up to: pin at the footpath coordinate given here, and an access line stating plainly 'visible from the public Guide Bilckepad footpath; the tree itself stands on private farmland and is not for entering.' Do not upgrade the pin to 'confirmed-at-the-trunk' without a source that specifically places the trunk rather than the viewing spot.\n\nVariety note for a future writer: the Bruine Kriekpeer variety itself was first cultivated in 1778 in Schoonbroek (Antwerp province), per VRT; this is a fact about the VARIETY's origin, not a planting date for this specific specimen, and must not be bridged into a claim that this tree dates to 1778 (this specimen's own age is independently given as ~102 years/planted in the 1920s per the contest and press coverage). Cultural context: the village held an annual 'Perelaarommegang' (pear procession) tied to this tree's fruit until it lapsed around 1999; the nominating body (vzw Perenstoet Klerken / Niels Deceuninck) planned to revive it in August 2023. Won Flanders' 'Boom van het Jaar' 2022 with widely-reported vote counts (1,565 per one outlet; the treeoftheyear.org European page gives 4,823 votes and 15th place of 16 for the 2023 European final), and street 'Perelaarommegang' in the village is named after the tradition."
+  }
+ ],
+ "blocked": []
+}

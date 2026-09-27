@@ -2,29 +2,33 @@
   "city": "Bošáca",
   "country": "Slovakia",
   "status": "needs_curation",
-  "intro": "Bošáca maps two trees from the same hillside hamlet, Zabudišová, and both are national champions. An heirloom apple, about 130 years old, won Slovakia's Tree of the Year contest in 2017 and placed sixth in Europe; a rare pink-fleshed pear, roughly 200 years old, won it in 2015 and placed third. They stand 350 metres apart, on ordinary farmland, planted for their fruit rather than for looking at. No other Slovak village has produced two national tree champions from one small stretch of ground, and both still bear fruit every year.",
-  "meta_description": "Two Slovak Tree of the Year champions, an heirloom apple and a rare pink pear, growing 350 metres apart in the village of Bošáca.",
-  "question_meta": "Bošáca's oldest documented tree is the Pink Pear of Zabudišová, roughly 200 years old; an heirloom apple 350 metres away is younger, about 130.",
-  "question_answer": "Bošáca's oldest documented tree is the Pink Pear of Zabudišová, a heirloom variety estimated at roughly 200 years old and Slovakia's 2015 Tree of the Year; the heirloom apple growing 350 metres away is younger, about 130 years old and the 2017 champion.",
-  "question_context": "Both trees grow in Zabudišová, a hillside hamlet of the village of Bošáca in western Slovakia, and both are national tree champions. The pear, Bošácka ružová, is a locally distinctive pink-fleshed variety that won Slovakia's Strom roka title in 2015, then placed third at the European final the following year, an unusually strong result. Two separate outlets covering that win, pravda.sk and teraz.sk, independently give its age as around 200 years; local tradition ties it to the area's first settlers, who were known for making fruit brandy from orchards like this one. The apple carries the rare local variety Citrónové zimné Zabudišovské, planted an estimated 130 years ago by itinerant fruit-growers who moved through the region, and won the same contest two years later, in 2017, before placing sixth at the European final in 2018. Its girth was measured at 251 centimetres at the time; nobody has published a reliable girth for the older pear. Both trees stand on open farmland with no gate or ticket, reachable on foot from the Zabudišová lane, roughly 15 minutes by car from Nové Mesto nad Váhom.",
+  "intro": "Bošáca has produced three of Slovakia's national tree champions from one stretch of countryside. An heirloom apple, about 130 years old, won in 2017 and placed sixth in Europe; a rare pink-fleshed pear, roughly 200 years old, won in 2015 and placed third; and a wild pear on nearby Lysica Hill, about 150 years old, won in 2024 and placed fifth. The apple and older pear stand 350 metres apart in the hamlet of Zabudišová; the wild pear stands four kilometres off. No other Slovak village has produced three champions.",
+  "meta_description": "Three Slovak Tree of the Year champions, an heirloom apple, a rare pink pear and a self-seeded wild pear, all growing in and around the village of Bošáca.",
+  "question_meta": "Bošáca's oldest documented tree is the Pink Pear of Zabudišová, roughly 200 years old; an heirloom apple and a wild pear on Lysica Hill are both younger.",
+  "question_answer": "Bošáca's oldest documented tree is the Pink Pear of Zabudišová, a heirloom variety estimated at roughly 200 years old and Slovakia's 2015 Tree of the Year; the heirloom apple growing 350 metres away is younger, about 130 years old and the 2017 champion, and the Wild Pear of Lysica Hill, about 150 years old and the 2024 champion, is younger still.",
+  "question_context": "The apple and the older pear grow in Zabudišová, a hillside hamlet of Bošáca in western Slovakia, and all three trees here are national tree champions. The pear, Bošácka ružová, is a pink-fleshed variety that won Slovakia's Strom roka title in 2015, then placed third at the European final, its age given as around 200 years by two independent Slovak outlets; local tradition ties it to the area's first settlers, known for making fruit brandy from orchards like this one. The apple carries the rare local variety Citrónové zimné Zabudišovské, planted an estimated 130 years ago, and won the same contest in 2017, placing sixth in Europe; its girth was measured at 251 centimetres. Four kilometres away, on the slope at the foot of Lysica Hill, a wild pear grew from a stray seed; it won the 2024 title and placed fifth in Europe in 2025, its trunk 195 centimetres round. All three stand on open ground with no gate or ticket, roughly 15 minutes by car from Nové Mesto nad Váhom.",
   "hero_tree_id": "bsa_001",
   "oldest_tree_id": "bsa_002",
   "faq": [
     {
       "q": "What is the oldest tree in Bošáca?",
-      "a": "The Pink Pear of Zabudišová, estimated at roughly 200 years old and Slovakia's 2015 Tree of the Year. An heirloom apple 350 metres away is younger, about 130 years old."
+      "a": "The Pink Pear of Zabudišová, estimated at roughly 200 years old and Slovakia's 2015 Tree of the Year. The heirloom apple 350 metres away is younger, about 130 years old, and the Wild Pear of Lysica Hill, four kilometres off, is younger still at roughly 150."
     },
     {
-      "q": "Are both trees free to visit?",
-      "a": "Yes. Both stand on open farmland outside Zabudišová with no gate, ticket or permission needed."
+      "q": "Are all three trees free to visit?",
+      "a": "Yes. All three stand on open farmland or hillside with no gate, ticket or permission needed."
     },
     {
-      "q": "How do the two trees compare?",
-      "a": "The pear is older, roughly 200 years against the apple's 130, and placed higher in the European final, third against sixth. Neither has been remeasured since its contest year."
+      "q": "How do the three trees compare?",
+      "a": "The pear of Zabudišová is oldest at roughly 200 years, ahead of the wild pear on Lysica Hill at about 150 and the apple at about 130. The Zabudišová pear also placed highest in Europe, third, against fifth for the Lysica Hill pear and sixth for the apple."
+    },
+    {
+      "q": "Why has one village produced three national tree champions?",
+      "a": "Nobody claims to know for certain, though the Bošácka valley has a long fruit-growing tradition and self-seeded wild pears are said to be a feature of the White Carpathians landscape here. No other Slovak village has won the national Tree of the Year contest three times."
     },
     {
       "q": "How do I get there?",
-      "a": "Both stand in the Zabudišová locality of Bošáca, in the Nové Mesto nad Váhom district, roughly 15 minutes by car from the nearest town. There is no public transport stop at the trees themselves."
+      "a": "The apple and pear stand in the Zabudišová locality of Bošáca; the wild pear stands on Lysica Hill, four kilometres away. All are in the Nové Mesto nad Váhom district, roughly 15 minutes by car from the nearest town. There is no public transport stop at any of the trees."
     }
   ],
   "trees": [
@@ -95,6 +99,39 @@
         "height": 532
       },
       "how_to_recognise": "You can recognise it as the solitary pear tree on open land, its flesh famously pink rather than white when cut. It stands near Zabudisova, 350m from the prize-winning apple tree."
+    },
+    {
+      "id": "bsa_003",
+      "name": "The Wild Pear of Lysica Hill",
+      "species": "Wild Pear (Pyrus pyraster)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": 195,
+      "location": {
+        "address": "foot of Lysica Hill, Bošáca, Nové Mesto nad Váhom District",
+        "latitude": 48.834889,
+        "longitude": 17.817247,
+        "neighbourhood": "Lysica Hill, Bošáca"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2025/wild-pear-from-bosaca",
+        "https://www.teraz.sk/slovensko/stromom-roka-2024-sa-stala-150-rokov-sta/828472-clanok.html",
+        "https://ekopolis.sk/en/tlacove-spravy-en/2024-tlacove-spravy-en/bosaca-boasts-another-tree-of-the-year-the-title-goes-to-an-old-pear-tree-at-the-foot-of-lysica-hill"
+      ],
+      "access": "Free, open hillside at the foot of Lysica Hill above the Bošácka valley; the tree is described as a landmark for local paragliders and model-aircraft flyers, which implies open recreational ground rather than fenced land. No gate, ticket or access restriction mentioned in any source; not confirmed via OSM tags (Overpass query failed from this environment).",
+      "transport": "Rural hillside above Bošáca village; nearest town Nové Mesto nad Váhom, roughly 15 minutes by car, same as the other two Bošáca trees. No public transport stop at the tree itself.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Nobody planted Bošáca's third champion tree. A bird did, or the wind: a seed from a cultivated pear somewhere nearby landed on the sunny slope of Lysica Hill and took root on its own. Roughly 150 years later it is a wild pear ten metres tall, with a trunk 195 centimetres round.\n\nThat sets it apart from its two famous neighbours in Zabudišová, four kilometres away. The pink pear and the heirloom apple there were planted for their fruit. This one is Pyrus pyraster, the wild species, and big self-seeded pears like it are part of what the White Carpathian landscape around the Bošácka valley looks like: a valley that grew fruit for generations, scattering its own trees across the hills.\n\nOn Lysica it has become a landmark for the paragliders and model-aircraft flyers who use the hill. In 2024 the municipality nominated it for Slovakia's Tree of the Year, and it won with 2,298 votes, the village's third national title after the pear in 2015 and the apple in 2017. At the European final in 2025 it placed fifth, with 23,729 votes.\n\nThe contest's own account and an independent Slovak news report both give its age as 150 years.",
+      "how_to_recognise": "You can recognise it as a wild pear about 10 metres tall with a trunk 195 centimetres round. It stands on the open slope at the foot of Lysica Hill, 4 km from Bošáca's two other champion fruit trees in Zabudišová.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

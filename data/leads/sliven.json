@@ -1,0 +1,28 @@
+{
+  "city": "Sliven",
+  "country": "Bulgaria",
+  "city_slug": "sliven",
+  "note": "Verify pass 2026-09-27 (Tree of the Year batch 2, target '_tree-of-the-year'): checked 'The Mulberry and Walnut Trees of Glushnik' (Bulgaria's 2013 European Tree of the Year entry, 6th place, 2,737 votes), proposed as a day-trip addition to Sliven (15.4km). BLOCKED, not shipped, on hard rule 10.",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "The Mulberry and Walnut Trees of Glushnik",
+      "species": "Black/White Mulberry (Morus spp.) and 2x Common Walnut (Juglans regia)",
+      "coordinates": [42.662442, 26.503778],
+      "reason": "PRIVATE PROPERTY, hard rule 10, does not bend. Multiple independent sources agree the trees stand 'в двор в селото' / 'in a yard of a village house' -- bg.wikipedia's Glushnik article states the trees that won the 2012 national and 2013 European Tree of the Year competitions grow in a private residential yard ('Location: A private residential yard within the village... Public Access: No information provided suggesting public access'), matching the contest page's own description ('located in a yard of a village house') and the historical story (linked to Paskal Voevoda's house, a 19th-century rebel leader's home). No source found describing the yard as opened to visitors, turned into a museum, or otherwise made public; the nominator (a Stefan Stefanov, apparently from Dolni Dabnik per one search snippet, so likely not even the on-site owner) does not establish public access either. This is exactly the 'front gardens, courtyards of dwellings, private houses and their grounds stay out, whatever the register says and however fine the tree' case CLAUDE.md names, and it is explicit that this absolute does not bend for fame or for an official designation.",
+      "official_register": "All three trees ARE individually designated in Bulgaria's national register of centenarian trees (Регистър на вековните дървета, eea.government.bg/v-trees), Order No.651 of 17.08.2012 (Държавен вестник бр.68/2012), village of Glushnik, Sliven municipality: register code 2093 = mulberry (Morus spp.), height 15m, girth/perimeter 380cm; code 2094 = walnut #1 (Juglans regia), height 17m, girth 240cm; code 2095 = walnut #2 (Juglans regia), height 18m, girth 270cm. This is a real government protection order, but designation does not create public access (hard rule 10's own point: 'whatever the register says').",
+      "age_discrepancy_for_the_record": "The contest page and Bulgarian press (news.bg, inews.bg) say the mulberry is 'over 500 years old' and the walnuts 'over 200 years old'. The official register order gives ALL THREE trees the identical age figures 'Години към датата на обявяване: 150, Реална възраст: 164' (150 years at the 2012 declaration, 164 as of the register's last update, 01.09.2013), which would put them at roughly 177 years old today (2026) rather than 500/200. The three trees carrying an IDENTICAL age field despite very different girths (240/270/380cm) suggests the register's age figure may be a templated value from the designation paperwork rather than an individually dated figure, but this is not confirmed either way. Recorded here rather than resolved, since the tree is blocked on access regardless.",
+      "collectible_point_note": "Not reached: three trees in one yard, walkable distance from Sliven (15.4km), would otherwise need judging against the ensemble rule (compact, one obvious place to stand, famous for being exactly that) before shipping as one entry or three. Moot while access is blocked.",
+      "day_trip_note": "15.4km from Sliven town centre; public transport time to this specific village not checked, also moot while access is blocked.",
+      "sources_checked": [
+        "https://www.treeoftheyear.org/previous-years/2013/Moruse-a-oresaky-v-Glusniku",
+        "https://bg.wikipedia.org/wiki/%D0%93%D0%BB%D1%83%D1%88%D0%BD%D0%B8%D0%BA",
+        "https://eea.government.bg/v-trees/bg/area.jsp?vtGroupNum=2093",
+        "https://eea.government.bg/v-trees/bg/area.jsp?vtGroupNum=2094",
+        "https://eea.government.bg/v-trees/bg/area.jsp?vtGroupNum=2095",
+        "https://news.bg/regions/5-vekovna-chernitsa-i-dva-200-godishni-oreha-nay-haresvani-darveta-za-2012-ta.html"
+      ],
+      "fetch_notes": "bepf-bg.org (the EcoCommunity Foundation's own contest-history pages, toy2012-winners and darvo-s-koren/pobeditelite-dosega/winners-2012) and utroruse.com both 403 automated fetches, tried twice each via WebFetch and curl with a browser user-agent; not on the blocklist file yet, worth adding if a future pass hits the same wall. overpass-api.de also hung (curl exit 28, timeout) on two attempts at an access-tag query for this coordinate; not chased further given the textual evidence already settled the question."
+    }
+  ]
+}

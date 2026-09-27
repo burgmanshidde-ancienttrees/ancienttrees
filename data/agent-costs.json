@@ -8661,6 +8661,27 @@
         "note": "Viewing pass, 22 trees, ~110 images looked at: 10 approved (General Grant, The President, Chief Sequoyah, Lincoln, Grizzly Giant, California Tunnel Tree, Bachelor and Three Graces, Duncan Cedar, Quinault Big Spruce, Pando), 18 held on identity, 34 rejected. Sam Houston Oak held only because the file is a TIFF.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "_tree-of-the-year batch1 (Bosaca/Viroflay/Liernu additions)",
+        "kind": "verify",
+        "tokens": 201671,
+        "trees": 3,
+        "note": "bsa_003, vir_002, lie_002 verified and merged. 1 candidate (Klerken pear) parked as a lead: wrong municipality (Houthulst, not Ypres) and private land, view-only from a public footpath."
+      },
+      {
+        "target": "_tree-of-the-year batch2 (Sliven/Vilnius/Budapest/Bratislava candidates)",
+        "kind": "verify",
+        "tokens": 203280,
+        "trees": 0,
+        "note": "All 4 candidates verified factually but none shipped: Glushnik mulberry/walnuts and Varniskes oak blocked on private land, Godollo pear and Malacky Palffy oak held as leads on real Budapest/Bratislava transit times (70-90 min, past day-trip boundary); both flagged as future standalone-place candidates."
+      },
+      {
+        "target": "_tree-of-the-year-batch1 + lozorno",
+        "kind": "write",
+        "tokens": 138804,
+        "trees": 4,
+        "note": "Stories + recognition lines for bsa_003, vir_002, lie_002 merged into existing city files with intro/faq copy updated; loz_001 written as a brand new standalone place (Lozorno, Slovakia) under the single-famous-tree exception, city file created. Also fixed 4 stale leads-file entries (Witch Tree/hvb_002, ancient Mother Tree/bre_011, Oak of Laukiai/plg_007, Old Wild Apple Tree/vbo_002) that were marked verified/verified_lead pointing at research files lost with an earlier runner, but were in fact already published; updated their status to published with mapped_as."
       }
     ]
   },
