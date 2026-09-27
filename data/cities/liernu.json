@@ -2,8 +2,8 @@
   "city": "Liernu",
   "country": "Belgium",
   "status": "needs_curation",
-  "intro": "Liernu is a small village in Namur built around a single oak reputed to be Belgium's widest and oldest tree, hollow enough that a chapel was once built inside it. A local confraternity still keeps festival around it, it represented the country at a European final, and it has been a protected national monument since 1939, its status raised again in 1992 to exceptional heritage.",
-  "meta_description": "The Gros Chene of Liernu: a hollow oak reputed to be Belgium's widest, with a chapel built into its trunk in 1838 and a confraternity still tending it.",
+  "intro": "Liernu is a small village in Namur built around a single oak reputed to be Belgium's widest and oldest tree, hollow enough that a chapel was once built inside it. A local confraternity still keeps festival around it, it represented the country at a European final, and it has been a protected national monument since 1939, its status raised again in 1992 to exceptional heritage. A second champion tree, a horse chestnut planted as a liberty tree in 1796, stands by road in Waret-la-Chaussée, a village of the same Eghezée municipality.",
+  "meta_description": "The Gros Chene of Liernu: a hollow oak reputed to be Belgium's widest, with a chapel built into its trunk in 1838, plus a second champion tree nearby.",
   "question_meta": "The Gros Chene of Liernu is an oak just over 14 metres round, reputed to be Belgium's widest, hollow enough to hold a small chapel built inside it in 1838.",
   "question_answer": "The Gros Chene, standing beside the church in Liernu, is reputed to be the widest tree trunk in Belgium at just over 14 metres round. Village tradition puts its age near a thousand years, back to Charlemagne, though nobody has measured that scientifically. The trunk is hollow and fissured, and in 1838 someone fitted the inside out as a small chapel to Saint-Antoine Ermite. It has been a protected national monument since 1939.",
   "question_context": "The oldest-tree-in-Belgium claim travels with this tree everywhere it is written about, and it is a village story more than a measurement: the trunk's hollow, fused structure makes it a poor candidate for ring-counting even if anyone wanted to try, so the age is carried here as tradition rather than as a dated fact. What is documented is the tree's standing in the village. It sits beside the church, the former rectory and a school, and local schoolchildren walk past it daily. The Confrerie du Gros-Chene, a local confraternity, has tended and celebrated the tree for decades with its own annual festival, and Belgium raised it from a 1939 monument to exceptional heritage status in 1992. It also represented the country at the European Tree of the Year final in 2016. The girth figure, just over 14 metres by direct measurement, describes a fused and hollow trunk mass rather than a single clean stem, which is worth knowing before comparing it to a solid trunk elsewhere.",
@@ -25,6 +25,10 @@
     {
       "q": "How do I get there?",
       "a": "Liernu is a village in Eghezee, Namur province. There is no station; it is reached by road from Eghezee."
+    },
+    {
+      "q": "Is the horse chestnut also in Liernu?",
+      "a": "No. The Tree of Freedom stands in Waret-la-Chaussee, a separate village of the same Eghezee municipality, about 8.5km away, reached by road rather than a scheduled connection."
     }
   ],
   "trees": [
@@ -68,6 +72,46 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by its hollow, fissured trunk holding a tiny chapel to Saint-Antoine Ermite, furnished inside since 1838. It stands beside the church, former rectory and school in Liernu."
+    },
+    {
+      "id": "lie_002",
+      "name": "The Tree of Freedom of Waret-la-Chaussée",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 225 years",
+      "age_min": 220,
+      "age_max": 230,
+      "girth_cm": 334,
+      "location": {
+        "address": "Rue de la Croisette, Waret-la-Chaussée, Eghezée, Namur",
+        "latitude": 50.5419,
+        "longitude": 4.92855,
+        "neighbourhood": "Waret-la-Chaussée (Eghezée)"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2020/Strom-svobody",
+        "https://www.rtbf.be/article/l-arbre-de-l-annee-est-namurois-10354284",
+        "OpenStreetMap node 6916105158 (natural=tree, name=Arbre de la liberte, denotation=natural_monument), confirmed via Nominatim reverse geocode and the OSM API directly"
+      ],
+      "access": "Free. Stands beside Rue de la Croisette, a public road in the village of Waret-la-Chaussee (confirmed by OSM/Nominatim reverse geocode), tagged on OpenStreetMap as an officially denoted natural monument (denotation=natural_monument). No gate, ticket or restriction in any source.",
+      "transport": "SAME-COMMUNE ADDITION to Liernu (data/cities/liernu.json), not the same village: Waret-la-Chaussee is a separate village of the Eghezee municipality, about 8.5km from Liernu by straight-line distance. No train station in either village, same as Liernu's own entry ('reached by road from Eghezee'). Eghezee's TEC bus line 71 and an on-demand local transport service cover the commune's villages, but no source confirms a fast direct scheduled link between the two specific villages, so this is honestly a road/car connection (roughly 10-15 minutes' drive) rather than a confirmed ~30-minute public-transport day trip; state it as reached by road, the same honest phrasing already used for Liernu itself.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This horse chestnut was planted to celebrate a king's death. In 1796, with the Southern Netherlands under French rule, it went into the ground at Waret-la-Chaussée as an arbre de la liberté, a liberty tree, marking the fall of \"the tyrant\" Louis XVI. Both the European contest page and the Belgian broadcaster RTBF give that year. The tree's own entry on OpenStreetMap says 1769, which cannot be right, since Louis XVI was not even on the throne until 1774; it is probably 1796 with two digits swapped.\n\nEleven years later it gained a second meaning. In 1807 a stone niche went up at the tree, a shrine to Saint Joseph, patron of workers and craftsmen, and a revolutionary tree became a devotional one without anybody cutting it down.\n\nIt is now 20 to 22 metres tall, depending on who measured, and it was 334 centimetres round in 1997, the last published figure, so it will have put on wood since. It is recorded as a natural monument.\n\nA local association, Pour la ruralité de Waret, nominated it for Belgium's Tree of the Year as a stand for the village's rural character. It won, and represented Belgium at the European final in 2020, placing fifteenth of sixteen with 10,942 votes.\n\nWaret-la-Chaussée is a separate village of Eghezée, 8.5 km from the Gros Chêne of Liernu and reached by road.",
+      "how_to_recognise": "You can recognise it by the stone niche to Saint Joseph set at the tree, a horse chestnut 20 to 22 metres tall and over 3.3 metres round. It stands beside Rue de la Croisette in Waret-la-Chaussée.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when white candles stand upright over the whole crown"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

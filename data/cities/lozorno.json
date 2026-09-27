@@ -1,0 +1,65 @@
+{
+  "city": "Lozorno",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "The Dragon Oak stands alone in forest above the village of Lozorno, reached only by a hiking and cycling trail along an abandoned forest railway. Its trunk runs nearly seven metres round, and foresters put its age at 600 to 800 years. In 2023 it took silver at the European Tree of the Year, beaten only by Poland's Oak Fabrykant, after winning Slovakia's national title the year before. It maps here alone, below the usual four-tree floor, because a European runner-up reached by its own named trail is the destination, not a stop on the way to one.",
+  "meta_description": "The Dragon Oak of Lozorno: a 600-800 year old oak in Slovak forest, runner-up at the 2023 European Tree of the Year. Free, reached by a marked trail.",
+  "question_meta": "The Dragon Oak of Lozorno is a 600-800 year old oak, named for its dragon-like shape, runner-up at the European Tree of the Year 2023.",
+  "question_answer": "Lozorno's tree is the Dragon Oak, a Pedunculate Oak estimated at 600 to 800 years old, with a trunk nearly 7 metres round. It won Slovakia's national Tree of the Year in 2022 and placed second of seventeen at the European final in 2023, beaten only by Poland's Oak Fabrykant. It stands in forest on Kopanicka hill, reached by a marked trail from the village.",
+  "question_context": "The oak's age is an expert estimate rather than a ring count, so this page carries it as a broad band, 600 to 800 years. Its girth is reported at 677 centimetres, close to seven metres, and its height is disputed between sources at 18 and 24 metres. It is named for a silhouette compared to a dragon sitting down, with bark scarred and gnarled from centuries of standing. Local accounts tie its life to nearby Pajstun Castle, to Croatian merchants who later settled around Lozorno, and to a forest railway, since abandoned, whose route is now the trail that leads to the tree. Deer move through the surrounding forest, including rare white fallow deer, and beavers have returned to the nearby Suchy creek. The tree won Slovakia's national Tree of the Year in 2022 and placed second of seventeen at the 2023 European final with 18,198 votes; sources from that year name logging nearby as a threat, coverage repeated here since nothing more recent has surfaced. A nearby trail marker sits roughly 200 metres from the published coordinate, so the pin is approximate rather than confirmed.",
+  "hero_tree_id": "loz_001",
+  "oldest_tree_id": "loz_001",
+  "faq": [
+    {
+      "q": "How old is the Dragon Oak of Lozorno?",
+      "a": "An estimated 600 to 800 years, based on expert assessment rather than a ring count. Its trunk is nearly 7 metres round."
+    },
+    {
+      "q": "Why does Lozorno have only one tree on this site?",
+      "a": "Because this one tree is the destination. It placed second at the European Tree of the Year 2023, and nothing else nearby has been verified to the same standard, so it ships alone under this project's single-famous-tree exception rather than waiting for company."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in public forest inside the Male Karpaty Protected Landscape Area, reached by a marked hiking and cycling trail from the village; no gate or ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Park near the village water reservoir in Lozorno and follow the asphalt forest road east, the route of a former forest railway, onto the marked trail up Kopanicka hill. There is no direct public transport to the tree itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "loz_001",
+      "name": "The Dragon Oak of Lozorno",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 600-800 years",
+      "age_min": 600,
+      "age_max": 800,
+      "girth_cm": 677,
+      "location": {
+        "address": "Forest on the Kopanicka hill above Lozorno village, reached via a marked cycling/hiking trail (the former forest railway route toward Kosarisko), Malacky District, Bratislava Region, Slovakia",
+        "latitude": 48.323319,
+        "longitude": 17.101986,
+        "neighbourhood": "Kopanicka hill, Male Karpaty Protected Landscape Area, above Lozorno"
+      },
+      "story": "In 2023 only one tree in Europe drew more votes than this oak: Poland's Oak Fabrykant. The Dragon Oak of Lozorno took silver at the European Tree of the Year, second of seventeen with 18,198 votes, a year after winning Slovakia's national title. It is named for the way it looks, a silhouette Slovak writers compare to a dragon sitting down, with deeply scarred and gnarled bark.\n\nThe trunk is nearly seven metres round, 677 centimetres by one report. Experts put it at around 700 years, an estimate rather than a ring count, so the honest band is 600 to 800. Its height depends on who you read: 18 metres in one account, 24 in another.\n\nThe sources tie its long life to the building of nearby Pajstun Castle, to the Croatian merchants who later settled around Lozorno, and to a forest railway since abandoned. That railway's route is now the cycling and hiking trail that leads to it: park by the village reservoir and follow the asphalt forest road east into the Male Karpaty hills. Deer move through here, including rare white fallow deer, and beavers have come back to the nearby Suchy creek.\n\nThe worry is timber. The contest page and other coverage from 2023 name logging in the surrounding forest as a threat. That coverage is the most recent we have found; if you have walked up since, tell us how it looks. The pin is approximate, so watch for the trail signs.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2023/common-oak-dragon-oak",
+        "https://vedanadosah.cvtisr.sk/priroda/jedinecne-stromy-na-slovensku-dub-letny-v-lozorne-pripomina-sediaceho-draka/",
+        "https://regionzahorie.sk/draci-dub-strom-roka-na-lozornom/"
+      ],
+      "access": "Free, in public forest inside the Male Karpaty Protected Landscape Area. Reached via a signed cycling/hiking trail from Lozorno village (park near the village water reservoir, continue east on the asphalt forest road). No gate, ticket or private-land concern in any source.",
+      "transport": "In forest above Lozorno village, Malacky District; bus line 269 runs to Lozorno from Bratislava's main bus station in about 44 minutes, then the trail on foot or bike from the village reservoir. No public transport reaches the tree itself.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "how_to_recognise": "You can recognise it by the trunk, nearly 7 metres round, and the dragon-like silhouette with deeply scarred, gnarled bark. It stands in forest on Kopanicka hill, along the marked trail from Lozorno."
+    }
+  ]
+}

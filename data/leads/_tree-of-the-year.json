@@ -2544,15 +2544,19 @@
       "lng": 5.202061,
       "gps_as_published": "N 51°20'47'', E 5°12'7.42''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2020/Carodejny-strom",
-      "status": "verified",
+      "status": "published",
       "nearest_published": {
         "id": "hvb_001",
         "name": "The Gebodenlinde of Hilvarenbeek",
         "place": "Hilvarenbeek",
         "km": 16.12
       },
-      "verified_id": "hvb_002",
-      "verified_file": "data/research/hilvarenbeek-verified.json"
+      "mapped_as": {
+        "id": "hvb_002",
+        "name": "The Witch Tree of Black Kate",
+        "place_slug": "hilvarenbeek"
+      },
+      "mapped_by": "already published (found already merged into data/cities on 2026-09-27; the leads file status was stale after a prior run lost its verified-file record with the runner)"
     },
     {
       "name": "Multisecular Fir Tree - Guardian of Cibin",
@@ -2806,13 +2810,15 @@
       "lng": 4.92855,
       "gps_as_published": "N 50°32'30.84'', E 4°55'42.78''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2020/Strom-svobody",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "lie_001",
         "name": "The Gros Chene of Liernu",
         "place": "Liernu",
         "km": 8.53
-      }
+      },
+      "verified_id": "lie_002",
+      "verified_file": "data/research/_tree-of-the-year-batch1-verified.json"
     },
     {
       "name": "Oak Vallonea of Tricase",
@@ -2985,14 +2991,19 @@
       "lng": 4.635875,
       "gps_as_published": "N 51°34'11.24'', E 4°38'9.15''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2021/The-ancient-Mother-Tree",
-      "status": "verified_lead",
+      "status": "published",
       "nearest_published": {
         "id": "bre_001",
         "name": "The Mulberries of Nieuwe Veste",
         "place": "Breda",
         "km": 9.8
       },
-      "verify_notes": "Verified and delivered as bre_011 in data/research/breda-verified.json, as an Etten-Leur day-trip addition to Breda (7 min by train from Breda station), not an in-town Breda tree. Full verification notes live on that record. Local name Moeierboom. Not yet written into data/cities/breda.json; awaiting a write pass."
+      "mapped_as": {
+        "id": "bre_011",
+        "name": "The Moeierboom",
+        "place_slug": "breda"
+      },
+      "mapped_by": "already published (found already merged into data/cities on 2026-09-27; the leads file status was stale after a prior run lost its verified-file record with the runner)"
     },
     {
       "name": "Apple tree near Lidmans",
@@ -3385,13 +3396,15 @@
       "lng": 2.137381,
       "gps_as_published": "N 48°50'21.55'', E 2°8'14.57''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2022/The-Multisecular-Sweet-Chestnut-of-Audran-Square",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "vir_001",
         "name": "Chêne de la Vierge à Viroflay",
         "place": "Viroflay",
         "km": 5.47
-      }
+      },
+      "verified_id": "vir_002",
+      "verified_file": "data/research/_tree-of-the-year-batch1-verified.json"
     },
     {
       "name": "Age Grand Oak",
@@ -3613,7 +3626,7 @@
       "lng": 17.101986,
       "gps_as_published": "N 48°19'23.95'', E 17°6'7.15''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2023/common-oak-dragon-oak",
-      "status": "verified_lead",
+      "status": "verified",
       "nearest_published": {
         "id": "brt_007",
         "name": "The Grinava Poplar",
@@ -3627,7 +3640,9 @@
       "verified_sources": [
         "https://vedanadosah.cvtisr.sk/priroda/jedinecne-stromy-na-slovensku-dub-letny-v-lozorne-pripomina-sediaceho-draka/",
         "https://regionzahorie.sk/draci-dub-strom-roka-na-lozornom/"
-      ]
+      ],
+      "verified_id": "loz_001",
+      "verified_file": "data/research/lozorno-verified.json"
     },
     {
       "name": "Apple Tree Colony from Krolevets",
@@ -4413,13 +4428,15 @@
       "lng": 17.817247,
       "gps_as_published": "N 48°50'5.6'', E 17°49'2.09''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2025/wild-pear-from-bosaca",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "bsa_001",
         "name": "The Apple Tree of Zabudišová",
         "place": "Bošáca",
         "km": 3.99
-      }
+      },
+      "verified_id": "bsa_003",
+      "verified_file": "data/research/_tree-of-the-year-batch1-verified.json"
     },
     {
       "name": "White Acacia",
@@ -4662,15 +4679,19 @@
       "lng": 21.671553,
       "gps_as_published": "N 56°10'34.9'', E 21°40'17.59''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2026/oak-of-laukiai",
-      "status": "verified",
+      "status": "published",
       "nearest_published": {
         "id": "plg_006",
         "name": "The Witch's Ash",
         "place": "Plunge",
         "km": 17.75
       },
-      "verified_id": "plg_007",
-      "verified_file": "data/research/plunge-verified.json"
+      "mapped_as": {
+        "id": "plg_007",
+        "name": "The Oak of Laukiai",
+        "place_slug": "plunge"
+      },
+      "mapped_by": "already published (found already merged into data/cities on 2026-09-27; the leads file status was stale after a prior run lost its verified-file record with the runner)"
     },
     {
       "name": "The Old Wild Apple Tree",
@@ -4686,15 +4707,19 @@
       "lng": 19.678614,
       "gps_as_published": "N 49°7'46.93'', E 19°40'43.01''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2026/old-wild-apple-tree",
-      "status": "verified",
+      "status": "published",
       "nearest_published": {
         "id": "vbo_001",
         "name": "The Pine of Veľké Borové",
         "place": "Veľké Borové",
         "km": 15.12
       },
-      "verified_id": "vbo_002",
-      "verified_file": "data/research/velke-borove-verified.json"
+      "mapped_as": {
+        "id": "vbo_002",
+        "name": "The Old Wild Apple Tree of Žiar",
+        "place_slug": "velke-borove"
+      },
+      "mapped_by": "already published (found already merged into data/cities on 2026-09-27; the leads file status was stale after a prior run lost its verified-file record with the runner)"
     },
     {
       "name": "Crooked Tree",

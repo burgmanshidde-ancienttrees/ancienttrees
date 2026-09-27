@@ -155,6 +155,28 @@
    "lat": 48.155,
    "lng": 17.1016,
    "position_basis": "recovered from the lead's own `coordinates` field (field)"
+  },
+  {
+   "name": "The Palffy Oak of Memories (Palffyovsky dub spomienok)",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "500+ years",
+   "age_min": 450,
+   "age_max": 600,
+   "girth_cm": 660,
+   "coordinates": [
+    48.439075,
+    17.036208
+   ],
+   "why_a_lead": "Verify pass 2026-09-27 (Tree of the Year batch 2, target '_tree-of-the-year'). Verifies cleanly on every ordinary test: alive, two-plus independent sources agreeing on species/age/girth, freely and publicly accessible, genuinely famous (Slovakia's Tree of the Year 2023 with 4,201 domestic votes, 14th place / 5,204 votes in the 2024 European Tree of the Year contest). Held back from shipping as a Bratislava addition on ONE ground: the real transit time from central Bratislava is too far to read as a day-trip addition to that city page.",
+   "verified_facts": {
+    "location": "Zamocky park (Castle Park), Malacky, a National Cultural Monument park attached to the Palffy castle (kastiel). OSM (relation 17436084, leisure=park) gives the park's own bounding box as lat 48.4364-48.4409 / lon 17.0256-17.0369, which the contest page's stated GPS (48.439075, 17.036208) sits inside, corroborating the pin.",
+    "species": "Pedunculate Oak, Quercus robur. Agreed by every source found (contest page, malacky.sk's own announcement, ekopolis.sk, lesmedium.sk).",
+    "age_and_girth": "500+ years, trunk circumference 660cm, height 20m, crown width 31m: these exact figures are repeated identically across the contest page, malacky.sk (the town's own site) and lesmedium.sk (a forestry-industry outlet), which reads as one original measurement (presumably the nomination's own survey) rather than three independent measurements, so treat as one source repeated rather than triangulated; no growth-rate working shown anywhere. Still counts as verified existence/species/rough age under the 'register or documented nomination alone is enough, flagged' standard, given the town council itself (the tree's own municipal owner) is one of the repeating sources.",
+    "access": "Freely open, no fee, no restriction, confirmed by multiple sources describing the park itself (as opposed to the castle building) as accessible to the public year-round with no time limit ('Park je pristupny verejnosti nepretrzite, bez casoveho obmedzenia'). The adjoining castle building has separate limited opening hours and a small entry fee, but that does not affect the park or the tree, which stands in the open park.",
+    "alive_now": "Actively promoted by the town's own tourism/municipal channels as of the 2023-2024 contest cycle, with no health concerns mentioned anywhere; good recent evidence of continued life."
+   },
+   "why_not_shipped_as_bratislava_addition": "Real one-way transit time from central Bratislava is roughly 75-90 minutes door to door: the train from Bratislava hlavna stanica to Malacky takes about 48 minutes on its own (confirmed, hourly ZSSK service), and Malacky's own train station sits about 900m / an 11-13 minute walk from the Castle Park (station at 48.43299,17.02295 per Nominatim, park centre at roughly 48.4386,17.0313). Add getting from central Bratislava to the main station and this clears well past the ~30 minute public-transport day-trip boundary this project uses for a tree to honestly 'belong' on a city page, as opposed to being its own destination reached via Bratislava. The bus is slower still (about 78 minutes). 23.2km straight-line distance already sat at the outer edge of that test; the checked transit time confirms it does not clear the bar.",
+   "next_step": "Not a research gap, a container decision. Malacky has its own castle and park as a real, small-town destination in its own right, reachable directly from Bratislava by an hourly train; a future pass could consider opening Malacky as its own place under the single-famous-tree / own-destination logic rather than squeezing this oak into Bratislava's day-trip radius. All facts above are already verify-pass complete (sources, pin, access, alive-now) and can be lifted directly."
   }
  ],
  "blocked": [

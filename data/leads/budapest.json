@@ -49,6 +49,29 @@
     {
       "name": "bud_007 FOKERT registry",
       "why": "FOKERT's own registry page for the Karolyi mulberry is JS-rendered and unreadable to fetchers; a browser session can read it and may upgrade the pin."
+    },
+    {
+      "name": "The Giant Wild Pear of Godollo (Vén Vackor)",
+      "species": "Wild Pear (Pyrus pyraster)",
+      "age_estimate": "roughly 280-290 years",
+      "age_min": 260,
+      "age_max": 300,
+      "girth_cm": 320,
+      "coordinates": [
+        47.595114,
+        19.367294
+      ],
+      "why_a_lead": "Verify pass 2026-09-27 (Tree of the Year batch 2, target '_tree-of-the-year'). Fully verifies on every normal test: alive, sourced twice over, publicly reachable, genuinely famous (Hungary's 2013 national Tree of the Year, 2nd place / 36,925 votes in the 2014 European Tree of the Year contest, selected for the cross-border Wise Trees Project in 2021). Held back from shipping as a Budapest addition on ONE ground only: real transit time from central Budapest is too far to read as a day-trip addition to that city page, not a fact or access problem.",
+      "verified_facts": {
+        "location": "Godolloi Botanikus Kert (Godollo Botanical Garden, run by MATE / formerly Szent Istvan University), Pater Karoly utca 1, Godollo, Pest county. Stands roughly 100m from the garden entrance in a clearing behind a row of false cypresses, in the centre of the garden's layout; OSM's own 'Botanikus kert' polygon (leisure=garden, way 272087868) centres at 47.5935, 19.3673, matching the contest page's stated GPS (47.595114, 19.367294) closely, and Nominatim confirms Pater Karoly utca 1 sits on the same MATE university campus (way 226399604, bounding box 47.5889-47.5985 lat / 19.3581-19.3723 lon).",
+        "species": "Wild Pear, Pyrus pyraster. Agreed by every source (contest page, evfaja.hu, the garden's own MATE page, elmenyterkep.hu, turistamagazin.hu).",
+        "age": "MATE's own botanical-garden page (godolloibotanikuskert.uni-mate.hu/ven-kortefa), last content-dated 2023, gives 'Fa becsult kora: 289 ev' (estimated age 289 years) alongside height 17.5m; the 2014 contest era sources say 280 years. The two figures rise consistently with the years between them (280 in 2014, 289 as of ~2023), which reads as genuine institutional tracking rather than a static repeated number, though no ring count or growth-rate working was found; treat as a repeated estimate from the tree's own caretaker institution rather than a derived figure.",
+        "girth": "320-321cm trunk circumference reported consistently by evfaja.hu (321cm) and a search-engine summary of turistamagazin.hu/origo.hu coverage ('over 320cm'); height reported as 17.5m (MATE's own page, 2023) to 20m (contest page, elmenyterkep.hu), a real range across sources rather than an error, given tree height estimates commonly vary by measurement method and year.",
+        "access": "Genuinely public, PAID ENTRY: Godollo Botanical Garden charges 800 HUF adult / 500 HUF reduced (per elmenyterkep.hu, prices as of ~Feb 2026 search data), open Mon-Thu 08:00-16:00, Fri 08:00-14:00, closed to individual visitors on weekends (groups only, by prior reservation). This clears hard rule 10's paid-entry test cleanly, no access concern at all.",
+        "alive_now": "Confirmed as of 2023: the tree's own institutional page (MATE, godolloibotanikuskert.uni-mate.hu) is content-dated 2023 and describes its 2021 Wise Trees Project participation in the present tense, with no mention of decline. Good, recent, first-party evidence of continued life."
+      },
+      "why_not_shipped_as_budapest_addition": "Real one-way transit time from central Budapest is roughly 70-90 minutes door to door: the H8 HEV suburban line from Ors vezer tere (the M2 metro terminus, itself 10-15 min from central Budapest by metro) to Godollo takes about 45 minutes on its own (confirmed by multiple transit sources), and the Godollo HEV station sits close to 1km / a 12-15 minute walk from the botanical garden entrance. That is well past the ~30 minute public-transport day-trip boundary BRIEF_RESEARCH.md and this project's own day-trip rule use for a tree to 'belong on the city page' honestly labeled, as opposed to a separate destination reached via Budapest. 24.6km straight-line distance was already at the outer edge of that test before the real transit time was checked; the checked time confirms it does not clear the bar.",
+      "next_step": "This is not a research gap, it is a container decision: Godollo (famous for the Grassalkovich Palace, a genuine tourist destination in its own right, reachable by the same HEV line) is a strong candidate to become its OWN place later under the single-famous-tree / own-destination logic this project already applies elsewhere, rather than being squeezed into Budapest's day-trip radius. A future pass opening Godollo as its own city/place can lift this lead directly; all facts above are already verify-pass complete (two sources, pin, access, alive-now)."
     }
   ],
   "blocked": [
