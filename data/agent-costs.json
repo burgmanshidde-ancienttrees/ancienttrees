@@ -8886,6 +8886,13 @@
       "tokens": 40000,
       "trees": 1,
       "note": "Turner Oak story + recognition line merged (4->5 trees); oldest_tree_id moved to ftw_005; city copy (intro/meta/question fields/FAQ) rewritten for the new count and first dated tree"
+    },
+    {
+      "target": "us-photos (New Orleans, Olympic NP, Philadelphia, San Diego, Sequoia NP, Yosemite NP)",
+      "kind": "photo-judge",
+      "tokens": 166998,
+      "trees": 8,
+      "note": "Viewing pass on the 168-candidate US photo sweep, finishing a claim an earlier attempt left open. 38 images viewed across 19 photo-less trees: 8 approved, 6 held-only (identity certain but crown missing, or lookalike risk among near-identical named trees, e.g. New Orleans oaks and Sequoia's named giants), 5 rejected-only (wrong species/tree/park). One candidate queued under the wrong tree (Yosemite's tunnel-tree photo was filed under Bachelor and Three Graces) reassigned to the California Tunnel Tree before approving."
     }
   ]
 }
