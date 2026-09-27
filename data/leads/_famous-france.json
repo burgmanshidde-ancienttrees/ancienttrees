@@ -76,10 +76,11 @@
         "https://commons.wikimedia.org/wiki/File:Chataignier_de_l_Eraudi%C3%A8re_-_Nantes_-_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Chataignier_de_l_Eraudi%C3%A8re_-_Nantes_-_03.jpg"
       ],
-      "status": "verified",
+      "status": "duplicate",
       "species": "Sweet Chestnut (Castanea sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id erd_001)."
+      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id erd_001).",
+      "verify_note": "Already published as erd_001 (\"The Châtaignier de l'Éraudière\") in data/cities/nantes.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "Châtaignier de Romagne (Vienne)",
@@ -187,10 +188,11 @@
         "https://commons.wikimedia.org/wiki/File:Church_and_platanus_in_Pr%C3%A9ty.jpg",
         "https://commons.wikimedia.org/wiki/File:Platane_de_Pr%C3%A9ty.jpg"
       ],
-      "status": "verified",
+      "status": "duplicate",
       "species": "Plane (Platanus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id pty_001)."
+      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id pty_001).",
+      "verify_note": "Already published as pty_001 ('The Platane de Préty') in data/cities/prety.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "Arbre Ferrat",
@@ -213,8 +215,9 @@
         "https://commons.wikimedia.org/wiki/File:Arburacellu_1.jpg",
         "https://commons.wikimedia.org/wiki/File:Arburacellu_2.jpg"
       ],
-      "status": "verified",
-      "note": "Verified 2026-09-05 as the strongest single-tree-destination candidate of this batch (French Tree of the Year 2018, public prize); see data/research/famousfrance-verified.json (id arb_001)."
+      "status": "duplicate",
+      "note": "Verified 2026-09-05 as the strongest single-tree-destination candidate of this batch (French Tree of the Year 2018, public prize); see data/research/famousfrance-verified.json (id arb_001).",
+      "verify_note": "Already published as arb_001 (\"The Arburacellu (the Bird Tree)\") in data/cities/ghisonaccia.json. This file had the same lead listed twice; folded to one entry."
     },
     {
       "name": "Chêne séculaire de Blésignac",
@@ -281,10 +284,11 @@
         "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_de_Cantaure.jpg",
         "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_de_Cantaure_2.jpg"
       ],
-      "status": "verified",
+      "status": "duplicate",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id cnt_001)."
+      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id cnt_001).",
+      "verify_note": "Already published as cnt_001 ('The Chêne de Cantaure') in data/cities/lue.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "Chêne de Charlemagne (Fontainebleau)",
@@ -619,10 +623,11 @@
         "https://commons.wikimedia.org/wiki/File:Le_tilleul_de_P%C3%A9rouges_et_ses_renforts_en_avril_2021.jpg",
         "https://commons.wikimedia.org/wiki/File:Mobeye-%C3%89t%C3%A9DesVilles-P%C3%A9rouges-7.jpg"
       ],
-      "status": "verified",
+      "status": "duplicate",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id pgs_001)."
+      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id pgs_001).",
+      "verify_note": "Already published as pgs_001 ('The Tilleul de Pérouges (Liberty Tree)') in data/cities/perouges.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "Gros Tilleul de Samoëns",
@@ -633,10 +638,11 @@
         "https://commons.wikimedia.org/wiki/File:Gros_Tilleul_de_Samoens_1.jpg",
         "https://commons.wikimedia.org/wiki/File:Gros_Tilleul_de_Samoens_2.jpg"
       ],
-      "status": "verified",
+      "status": "duplicate",
       "species": "Lime (Tilia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id smn_001)."
+      "note": "Verified 2026-09-05 as a strong single-tree-destination candidate; see data/research/famousfrance-verified.json (id smn_001).",
+      "verify_note": "Already published as smn_001 ('The Gros Tilleul de Samoëns') in data/cities/samoens.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "Le Sully de Pesselières",
@@ -717,18 +723,6 @@
       ],
       "status": "blocked",
       "reason": "not a collectible point: a generic type name for dozens of independently planted village limes/elms ordered by Sully circa 1599-1600, not one famous tree. See data/research/famousfrancebatch1-verified.json's blocked entry, 2026-09-04, for the full verify_notes. 'Le Sully de Pesselieres' is a separate open lead, kept."
-    },
-    {
-      "name": "Arburacellu",
-      "lat": 42.03632,
-      "lng": 9.36888,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2019_The_bird-tree_FR.jpg",
-        "https://commons.wikimedia.org/wiki/File:Arburacellu_1.jpg",
-        "https://commons.wikimedia.org/wiki/File:Arburacellu_2.jpg"
-      ],
-      "status": "verified",
-      "note": "Verified 2026-09-05 as the strongest single-tree-destination candidate of this batch (French Tree of the Year 2018, public prize); see data/research/famousfrance-verified.json (id arb_001)."
     },
     {
       "name": "Cedre pleureur",

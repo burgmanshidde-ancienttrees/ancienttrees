@@ -1,185 +1,190 @@
 {
- "country": "Netherlands",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Anne Frank tree, Amsterdam",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Amsterdam_Panaroma.jpg",
-    "https://commons.wikimedia.org/wiki/File:Anne_Frank_Tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:Anne_Frank_tree.JPG"
-   ],
-   "status": "blocked",
-   "reason": "Dead: the horse chestnut behind the Achterhuis fell in a storm on 23 August 2010. Saplings grown from its chestnuts stand elsewhere and are different trees. CLAUDE.md: a dead tree may appear inside a story as context, never as an entry."
-  },
-  {
-   "name": "Dikke boom, Verwolde",
-   "lat": 52.199663,
-   "lng": 6.400566,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2015_Dikke_boom_Verwolde.jpg",
-    "https://commons.wikimedia.org/wiki/File:2018_Verwolde_Dikke_boom.jpg",
-    "https://commons.wikimedia.org/wiki/File:Dikke_boom.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Duizendjarige den Wolfheze",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Duizendjarige_den_Wolfheze_J.W._Bilders.jpg",
-    "https://commons.wikimedia.org/wiki/File:Twee_personen_voor_de_Duizendjarige_den_te_Wolfheze,_RP-F-F19363.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wolfheze-Duizendjarige_den_(1).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Hotsboom",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cadier_en_Keer-Hotsboom_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Cadier_en_Keer-Hotsboom_(2).jpg",
-    "https://commons.wikimedia.org/wiki/File:Cadier_en_Keer-Hotsboom_(3).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Huuskesboom",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%27s-Gravenvoeren-Libeek-Grenspaal_26a_(BE-NL)_(12).jpg",
-    "https://commons.wikimedia.org/wiki/File:%27s-Gravenvoeren-Libeek-Grenspaal_27_(BE-NL)_(3).jpg",
-    "https://commons.wikimedia.org/wiki/File:%27s-Gravenvoeren-wegkruis_op_grensboom_Huuskesboom_(1).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kozakkeneik, Delden",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2020-08-04_%E2%80%94_Kozakkeneik,_Delden_%E2%80%93_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:2020-08-04_%E2%80%94_Kozakkeneik,_Delden_%E2%80%93_10.jpg",
-    "https://commons.wikimedia.org/wiki/File:2020-08-04_%E2%80%94_Kozakkeneik,_Delden_%E2%80%93_11.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kroezeboom, Fleringen",
-   "lat": 52.387778,
-   "lng": 6.796944,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2013_De_Fleringer_Kroezeboom.jpg",
-    "https://commons.wikimedia.org/wiki/File:2013_Kapel_bij_de_Kroezeboom_Fleringen.jpg",
-    "https://commons.wikimedia.org/wiki/File:2017_Just_Know_Kroezeboom_Fleringen.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Linde van Achterberg",
-   "lat": 51.964118,
-   "lng": 5.601526,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20220301OudeLinde_Achterberg_01.JPG",
-    "https://commons.wikimedia.org/wiki/File:20220301OudeLinde_Achterberg_05.JPG",
-    "https://commons.wikimedia.org/wiki/File:20220301OudeLinde_Achterberg_07b.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Linde van Sambeek",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20190321Linde_van_Sambeek_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:20190321Linde_van_Sambeek_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:20190321Linde_van_Sambeek_3.jpg"
-   ],
-   "status": "published",
-   "tree_id": "smb_001",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Oude eik van Sieverdink",
-   "lat": 51.944731,
-   "lng": 6.752036,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20190813EikSieverdink.jpg",
-    "https://commons.wikimedia.org/wiki/File:20190813SieverdinkEik_03.jpg",
-    "https://commons.wikimedia.org/wiki/File:20190813SieverdinkEik_05.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Philemon and Baucis (Trees in Velp)",
-   "lat": 52.015214,
-   "lng": 5.988356,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20230117_Velp_Philemon_en_Baucis_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:20230117_Velp_Philemon_en_Baucis_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:20230117_Velp_Philemon_en_Baucis_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Plataan aan de Schimmelpenninckstraat",
-   "lat": 52.159669,
-   "lng": 5.385803,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20141029_PlataanSchimmelpenninckstr_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:20141029_PlataanSchimmelpenninckstr_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:20141029_PlataanSchimmelpenninckstr_03.jpg"
-   ],
-   "status": "RESOLVED 2026-08-29, delivered as ame_008",
-   "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Platanus orientalis, Abraham Dolehof, Utrecht",
-   "lat": 52.088611,
-   "lng": 5.1225,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Dolehof_Utrecht_(view_of_Catholic_cathedral).jpg",
-    "https://commons.wikimedia.org/wiki/File:Platanus_orientalis,_Abraham_Dolehof_Utrecht_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Platanus_orientalis,_Abraham_Dolehof_Utrecht_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Rode beuk, De Nieuwe Ooster",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2022_Rode_beuk,_Nieuwe_Ooster-Asd_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:2022_Rode_beuk,_Nieuwe_Ooster-Asd_(2).jpg",
-    "https://commons.wikimedia.org/wiki/File:2022_Rode_beuk,_Nieuwe_Ooster-Asd_(3).jpg"
-   ],
-   "status": "lead",
-   "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sprookjesboom",
-   "lat": 51.646039,
-   "lng": 5.038948,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Efteling-_Fairytale_forest_-_49327716212.jpg",
-    "https://commons.wikimedia.org/wiki/File:Efteling_-_48113863301.jpg",
-    "https://commons.wikimedia.org/wiki/File:Efteling_De_Tentoonstelling_14.jpg"
-   ],
-   "status": "BLOCKED 2026-09-06: not a living tree, so it fails the alive-entry requirement (hard rule: never doe aan dode bomen / no dead-or-non-living entries; also a fabrication risk under hard rule 2 if presented as a real specimen). Verified via Eftepedia (the detailed Efteling fan reference, cross-checked against English Wikipedia's 'Sprookjesboom' article and general web search): the Sprookjesboom in the Efteling's Sprookjesbos (Fairytale Forest, opened 1 April 2010) is an entirely artificial audio-animatronic structure, 9m tall and 9-13m wide, built on an 8-tonne internal steel framework with roughly 50,000 artificial leaves and 1,500 fabricated branch ends, built in-house by Efteling with external specialists Jora Vision and P&P Projects. A real tree's bark was used only as a mould reference for texturing the fake bark (same technique as the park's separate Trollenkoning prop); no living wood or root system is part of the structure. Note for future passes: do not confuse this with Kniesoor, a DIFFERENT attraction elsewhere in the same park where the trunk IS a real living tree with only an animatronic face and mouth added to it; Kniesoor would need its own separate verification if ever proposed as a candidate, since a real tree wearing a prop face is a different case from a wholly fabricated structure. Never ship the Sprookjesboom as a collectible tree entry."
-  }
- ]
+  "country": "Netherlands",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Anne Frank tree, Amsterdam",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Amsterdam_Panaroma.jpg",
+        "https://commons.wikimedia.org/wiki/File:Anne_Frank_Tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:Anne_Frank_tree.JPG"
+      ],
+      "status": "blocked",
+      "reason": "Dead: the horse chestnut behind the Achterhuis fell in a storm on 23 August 2010. Saplings grown from its chestnuts stand elsewhere and are different trees. CLAUDE.md: a dead tree may appear inside a story as context, never as an entry."
+    },
+    {
+      "name": "Dikke boom, Verwolde",
+      "lat": 52.199663,
+      "lng": 6.400566,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2015_Dikke_boom_Verwolde.jpg",
+        "https://commons.wikimedia.org/wiki/File:2018_Verwolde_Dikke_boom.jpg",
+        "https://commons.wikimedia.org/wiki/File:Dikke_boom.jpg"
+      ],
+      "status": "duplicate",
+      "verify_note": "Already published as lar_001 ('The Dikke Boom of Verwolde') in data/cities/laren-gelderland.json, matched by coordinate while scoping a verify pass on this file (2026-09-27)."
+    },
+    {
+      "name": "Duizendjarige den Wolfheze",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Duizendjarige_den_Wolfheze_J.W._Bilders.jpg",
+        "https://commons.wikimedia.org/wiki/File:Twee_personen_voor_de_Duizendjarige_den_te_Wolfheze,_RP-F-F19363.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wolfheze-Duizendjarige_den_(1).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Hotsboom",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cadier_en_Keer-Hotsboom_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Cadier_en_Keer-Hotsboom_(2).jpg",
+        "https://commons.wikimedia.org/wiki/File:Cadier_en_Keer-Hotsboom_(3).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Huuskesboom",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%27s-Gravenvoeren-Libeek-Grenspaal_26a_(BE-NL)_(12).jpg",
+        "https://commons.wikimedia.org/wiki/File:%27s-Gravenvoeren-Libeek-Grenspaal_27_(BE-NL)_(3).jpg",
+        "https://commons.wikimedia.org/wiki/File:%27s-Gravenvoeren-wegkruis_op_grensboom_Huuskesboom_(1).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kozakkeneik, Delden",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2020-08-04_%E2%80%94_Kozakkeneik,_Delden_%E2%80%93_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:2020-08-04_%E2%80%94_Kozakkeneik,_Delden_%E2%80%93_10.jpg",
+        "https://commons.wikimedia.org/wiki/File:2020-08-04_%E2%80%94_Kozakkeneik,_Delden_%E2%80%93_11.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kroezeboom, Fleringen",
+      "lat": 52.387778,
+      "lng": 6.796944,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2013_De_Fleringer_Kroezeboom.jpg",
+        "https://commons.wikimedia.org/wiki/File:2013_Kapel_bij_de_Kroezeboom_Fleringen.jpg",
+        "https://commons.wikimedia.org/wiki/File:2017_Just_Know_Kroezeboom_Fleringen.jpg"
+      ],
+      "status": "duplicate",
+      "verify_note": "Already published as fle_001 ('The Kroezeboom of Fleringen') in data/cities/fleringen.json, matched by coordinate while scoping a verify pass on this file (2026-09-27)."
+    },
+    {
+      "name": "Linde van Achterberg",
+      "lat": 51.964118,
+      "lng": 5.601526,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20220301OudeLinde_Achterberg_01.JPG",
+        "https://commons.wikimedia.org/wiki/File:20220301OudeLinde_Achterberg_05.JPG",
+        "https://commons.wikimedia.org/wiki/File:20220301OudeLinde_Achterberg_07b.JPG"
+      ],
+      "status": "duplicate",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Already published as rhe_002 ('The Lime of Achterberg') in data/cities/rhenen.json, matched by coordinate while scoping a verify pass on this file (2026-09-27)."
+    },
+    {
+      "name": "Linde van Sambeek",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20190321Linde_van_Sambeek_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:20190321Linde_van_Sambeek_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:20190321Linde_van_Sambeek_3.jpg"
+      ],
+      "status": "published",
+      "tree_id": "smb_001",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Oude eik van Sieverdink",
+      "lat": 51.944731,
+      "lng": 6.752036,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20190813EikSieverdink.jpg",
+        "https://commons.wikimedia.org/wiki/File:20190813SieverdinkEik_03.jpg",
+        "https://commons.wikimedia.org/wiki/File:20190813SieverdinkEik_05.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Philemon and Baucis (Trees in Velp)",
+      "lat": 52.015214,
+      "lng": 5.988356,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20230117_Velp_Philemon_en_Baucis_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:20230117_Velp_Philemon_en_Baucis_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:20230117_Velp_Philemon_en_Baucis_03.jpg"
+      ],
+      "status": "duplicate",
+      "verify_note": "Already published as vlp_001 ('Philemon') in data/cities/velp.json, matched by coordinate while scoping a verify pass on this file (2026-09-27)."
+    },
+    {
+      "name": "Plataan aan de Schimmelpenninckstraat",
+      "lat": 52.159669,
+      "lng": 5.385803,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20141029_PlataanSchimmelpenninckstr_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:20141029_PlataanSchimmelpenninckstr_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:20141029_PlataanSchimmelpenninckstr_03.jpg"
+      ],
+      "status": "RESOLVED 2026-08-29, delivered as ame_008",
+      "species": "Plane (Platanus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Platanus orientalis, Abraham Dolehof, Utrecht",
+      "lat": 52.088611,
+      "lng": 5.1225,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Dolehof_Utrecht_(view_of_Catholic_cathedral).jpg",
+        "https://commons.wikimedia.org/wiki/File:Platanus_orientalis,_Abraham_Dolehof_Utrecht_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Platanus_orientalis,_Abraham_Dolehof_Utrecht_02.jpg"
+      ],
+      "status": "duplicate",
+      "species": "Plane (Platanus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Already published as utr_037 ('The Courthouse Planes of Hamburgerstraat') in data/cities/utrecht.json, matched by coordinate while scoping a verify pass on this file (2026-09-27)."
+    },
+    {
+      "name": "Rode beuk, De Nieuwe Ooster",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2022_Rode_beuk,_Nieuwe_Ooster-Asd_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:2022_Rode_beuk,_Nieuwe_Ooster-Asd_(2).jpg",
+        "https://commons.wikimedia.org/wiki/File:2022_Rode_beuk,_Nieuwe_Ooster-Asd_(3).jpg"
+      ],
+      "status": "lead",
+      "species": "Beech (Fagus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Sprookjesboom",
+      "lat": 51.646039,
+      "lng": 5.038948,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Efteling-_Fairytale_forest_-_49327716212.jpg",
+        "https://commons.wikimedia.org/wiki/File:Efteling_-_48113863301.jpg",
+        "https://commons.wikimedia.org/wiki/File:Efteling_De_Tentoonstelling_14.jpg"
+      ],
+      "status": "BLOCKED 2026-09-06: not a living tree, so it fails the alive-entry requirement (hard rule: never doe aan dode bomen / no dead-or-non-living entries; also a fabrication risk under hard rule 2 if presented as a real specimen). Verified via Eftepedia (the detailed Efteling fan reference, cross-checked against English Wikipedia's 'Sprookjesboom' article and general web search): the Sprookjesboom in the Efteling's Sprookjesbos (Fairytale Forest, opened 1 April 2010) is an entirely artificial audio-animatronic structure, 9m tall and 9-13m wide, built on an 8-tonne internal steel framework with roughly 50,000 artificial leaves and 1,500 fabricated branch ends, built in-house by Efteling with external specialists Jora Vision and P&P Projects. A real tree's bark was used only as a mould reference for texturing the fake bark (same technique as the park's separate Trollenkoning prop); no living wood or root system is part of the structure. Note for future passes: do not confuse this with Kniesoor, a DIFFERENT attraction elsewhere in the same park where the trunk IS a real living tree with only an animatronic face and mouth added to it; Kniesoor would need its own separate verification if ever proposed as a candidate, since a real tree wearing a prop face is a different case from a wholly fabricated structure. Never ship the Sprookjesboom as a collectible tree entry."
+    }
+  ]
 }

@@ -23,9 +23,10 @@
         "https://commons.wikimedia.org/wiki/File:Garmen,Bulgaria.jpg",
         "https://commons.wikimedia.org/wiki/File:Garmen,Bulgaria1.jpg"
       ],
-      "status": "lead",
+      "status": "duplicate",
       "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Already published as gar_001 (\"The Zagradski Plane (Zagradski Chinar)\") in data/cities/garmen.json, verified via the _tree-of-the-year batch (2026-09-27, European Tree of the Year 2011 runner-up). This file had the same lead listed twice; folded to one entry."
     },
     {
       "name": "Old Plane Tree, Gotse Delchev",
@@ -122,19 +123,6 @@
         "https://commons.wikimedia.org/wiki/File:%D0%97%D0%BB%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D1%81%D1%82%D0%BA%D0%B8%D1%8F%D1%82_%D1%87%D0%B8%D0%BD%D0%B0%D1%80_2024-10-19-01.jpg",
         "https://commons.wikimedia.org/wiki/File:%D0%97%D0%BB%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D1%81%D1%82%D0%BA%D0%B8%D1%8F%D1%82_%D1%87%D0%B8%D0%BD%D0%B0%D1%80_2024-10-19-02.jpg",
         "https://commons.wikimedia.org/wiki/File:%D0%97%D0%BB%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D1%81%D1%82%D0%BA%D0%B8%D1%8F%D1%82_%D1%87%D0%B8%D0%BD%D0%B0%D1%80_2024-10-19-03.jpg"
-      ],
-      "status": "lead",
-      "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Plane in Garmen",
-      "lat": 41.59795,
-      "lng": 23.79874,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2011_Plane_in_Garmen_BG.jpg",
-        "https://commons.wikimedia.org/wiki/File:Garmen,Bulgaria.jpg",
-        "https://commons.wikimedia.org/wiki/File:Garmen,Bulgaria1.jpg"
       ],
       "status": "lead",
       "species": "Plane (Platanus sp.)",

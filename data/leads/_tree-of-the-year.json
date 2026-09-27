@@ -1156,13 +1156,14 @@
       "lng": -3.042353,
       "gps_as_published": "N 41°55'52.78'', W 3°2'32.47''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2016/Dubo-borovice-v-Canicose",
-      "status": "lead",
+      "status": "duplicate",
       "nearest_published": {
         "id": "mza_001",
         "name": "Encina Tres Patas de Mendaza",
         "place": "Mendaza",
         "km": 103.47
-      }
+      },
+      "verify_note": "Already published as pcs_001 ('Pino-Roble de Canicosa de la Sierra') in data/cities/canicosa-de-la-sierra.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "The oak from Danube park in Silistra",
@@ -1636,13 +1637,14 @@
       "lng": -4.635856,
       "gps_as_published": "N 40°21'12.63'', W 4°38'9.08''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2017/Borovice-Aprisquillo",
-      "status": "lead",
+      "status": "duplicate",
       "nearest_published": {
         "id": "mad_007",
         "name": "The Holm Oak of the Trillo Roundabout",
         "place": "Madrid",
         "km": 75.08
-      }
+      },
+      "verify_note": "Already published as apr_001 ('Pino del Aprisquillo') in data/cities/la-adrada.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "Russalka oak",
@@ -2239,13 +2241,14 @@
       "lng": 23.173389,
       "gps_as_published": "N 50°59'1.79'', E 23°10'24.2''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2019/Klecici-strom",
-      "status": "lead",
+      "status": "duplicate",
       "nearest_published": {
         "id": "hnz_001",
         "name": "Dąb Bolko (the Bolko Oak)",
         "place": "Hniszów",
         "km": 47.67
-      }
+      },
+      "verify_note": "Already published as krs_001 ('The Kneeling Tree (Klekace Drzewo)') in data/cities/krasnystaw.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "The Pet oak",
@@ -2390,13 +2393,14 @@
       "lng": -0.507133,
       "gps_as_published": "N 39°52'40.17'', W 0°30'25.68''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2019/Jilm-z-Navajas",
-      "status": "lead",
+      "status": "duplicate",
       "nearest_published": {
         "id": "vlc_030",
         "name": "The Norfolk Pine of Vila de Sant Josep",
         "place": "Valencia",
         "km": 41.99
-      }
+      },
+      "verify_note": "Already published as nvj_001 ('Olmo de Navajas') in data/cities/navajas.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "The towering plane from Câmpeni",
@@ -4814,13 +4818,14 @@
       "lng": -9.208433,
       "gps_as_published": "N 39°4'2.49'', W 9°12'30.36''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2026/cedro-de-runa",
-      "status": "lead",
+      "status": "duplicate",
       "nearest_published": {
         "id": "lis_036",
         "name": "The Ancient Olive of Santa Iria de Azoia",
         "place": "Lisbon",
         "km": 27.54
-      }
+      },
+      "verify_note": "Already published as run_001 ('The Cedro de Runa') in data/cities/runa.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "The Oak of Prince Ulrich",

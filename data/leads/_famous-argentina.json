@@ -1,32 +1,33 @@
 {
- "country": "Argentina",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Algarrobo Abuelo",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Algarrobo_Abuelo.jpg",
-    "https://commons.wikimedia.org/wiki/File:Algarrobo_Abuelo_-_Merlo_(SL).JPG",
-    "https://commons.wikimedia.org/wiki/File:Algarrobo_Abuelo_1.JPG"
-   ],
-   "status": "lead",
-   "species": "Algarrobo (Prosopis sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gomero de la Recoleta",
-   "lat": -34.587852,
-   "lng": -58.391551,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_tree_near_Necropolis_(Recoleta).jpg",
-    "https://commons.wikimedia.org/wiki/File:Arbol_antiguo.jpg",
-    "https://commons.wikimedia.org/wiki/File:Buenos_Aires,_varios_1994_09.jpg"
-   ],
-   "status": "lead",
-   "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  }
- ]
+  "country": "Argentina",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Algarrobo Abuelo",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Algarrobo_Abuelo.jpg",
+        "https://commons.wikimedia.org/wiki/File:Algarrobo_Abuelo_-_Merlo_(SL).JPG",
+        "https://commons.wikimedia.org/wiki/File:Algarrobo_Abuelo_1.JPG"
+      ],
+      "status": "lead",
+      "species": "Algarrobo (Prosopis sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gomero de la Recoleta",
+      "lat": -34.587852,
+      "lng": -58.391551,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:A_tree_near_Necropolis_(Recoleta).jpg",
+        "https://commons.wikimedia.org/wiki/File:Arbol_antiguo.jpg",
+        "https://commons.wikimedia.org/wiki/File:Buenos_Aires,_varios_1994_09.jpg"
+      ],
+      "status": "duplicate",
+      "species": "Fig (Ficus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Already published as bai_001 ('The Gomero de la Recoleta') in data/cities/buenos-aires.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
+    }
+  ]
 }

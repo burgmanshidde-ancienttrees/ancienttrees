@@ -1,32 +1,33 @@
 {
- "country": "Serbia",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Platan u Sremskim Karlovcima",
-   "lat": 45.202049,
-   "lng": 19.936069,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Donja_Crkva,_Sremski_Karlovci_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Donja_Crkva,_Sremski_Karlovci_03.jpg",
-    "https://commons.wikimedia.org/wiki/File:Donja_crkva,_Sremski_Karlovci_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Platan na Vračaru",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru.jpg",
-    "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  }
- ]
+  "country": "Serbia",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Platan u Sremskim Karlovcima",
+      "lat": 45.202049,
+      "lng": 19.936069,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Donja_Crkva,_Sremski_Karlovci_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Donja_Crkva,_Sremski_Karlovci_03.jpg",
+        "https://commons.wikimedia.org/wiki/File:Donja_crkva,_Sremski_Karlovci_02.jpg"
+      ],
+      "status": "duplicate",
+      "species": "Plane (Platanus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Already published as srk_001 ('The Plane of the Lower Church') in data/cities/sremski-karlovci.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
+    },
+    {
+      "name": "Platan na Vračaru",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru.jpg",
+        "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Plane (Platanus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    }
+  ]
 }
