@@ -43,26 +43,11 @@
    "trees": 34
   },
   {
-   "city": "Brussels",
-   "country": "Belgium",
-   "slug": "brussels",
-   "status": "published",
-   "demand_views_90d": 176863,
-   "trees": 35
-  },
-  {
    "city": "Rome",
    "country": "Italy",
    "slug": "rome",
    "status": "published",
    "trees": 31
-  },
-  {
-   "city": "Berlin",
-   "country": "Germany",
-   "slug": "berlin",
-   "status": "published",
-   "trees": 33
   },
   {
    "city": "Palermo",
@@ -80,20 +65,11 @@
    "trees": 20
   },
   {
-   "city": "Tokyo",
-   "country": "Japan",
-   "slug": "tokyo",
+   "city": "Berlin",
+   "country": "Germany",
+   "slug": "berlin",
    "status": "published",
-   "demand_views_90d": 394702,
-   "trees": 22
-  },
-  {
-   "city": "Arnhem",
-   "country": "Netherlands",
-   "slug": "arnhem",
-   "status": "published",
-   "demand_views_90d": 31478,
-   "trees": 39
+   "trees": 33
   },
   {
    "city": "Seville",
@@ -103,27 +79,28 @@
    "trees": 43
   },
   {
+   "city": "Tokyo",
+   "country": "Japan",
+   "slug": "tokyo",
+   "status": "published",
+   "demand_views_90d": 394702,
+   "trees": 22
+  },
+  {
+   "city": "Brussels",
+   "country": "Belgium",
+   "slug": "brussels",
+   "status": "published",
+   "demand_views_90d": 176863,
+   "trees": 35
+  },
+  {
    "city": "Alicante",
    "country": "Spain",
    "slug": "alicante",
    "status": "published",
    "demand_views_90d": 77454,
    "trees": 21
-  },
-  {
-   "city": "Pamplona",
-   "country": "Spain",
-   "slug": "pamplona",
-   "status": "published",
-   "trees": 14,
-   "note": "Opened 2026-08-31 from Navarra's SITNA register of declared Natural Monuments (CC BY 4.0). The thinnest register on the site: species, place, declaration year and coordinate, with no height, girth, age or vitality field anywhere, so no tree here carries a measurement it does not have and every page says so."
-  },
-  {
-   "city": "Prague",
-   "country": "Czech Republic",
-   "slug": "prague",
-   "status": "published",
-   "trees": 30
   },
   {
    "city": "Munich",
@@ -141,11 +118,41 @@
    "trees": 5
   },
   {
+   "city": "Dublin",
+   "country": "Ireland",
+   "slug": "dublin",
+   "status": "published",
+   "trees": 17
+  },
+  {
+   "city": "Arnhem",
+   "country": "Netherlands",
+   "slug": "arnhem",
+   "status": "published",
+   "demand_views_90d": 31478,
+   "trees": 39
+  },
+  {
+   "city": "Paris",
+   "country": "France",
+   "slug": "paris",
+   "status": "published",
+   "trees": 31
+  },
+  {
    "city": "Vienna",
    "country": "Austria",
    "slug": "vienna",
    "status": "published",
    "trees": 32
+  },
+  {
+   "city": "Pamplona",
+   "country": "Spain",
+   "slug": "pamplona",
+   "status": "published",
+   "trees": 14,
+   "note": "Opened 2026-08-31 from Navarra's SITNA register of declared Natural Monuments (CC BY 4.0). The thinnest register on the site: species, place, declaration year and coordinate, with no height, girth, age or vitality field anywhere, so no tree here carries a measurement it does not have and every page says so."
   },
   {
    "city": "Porto",
@@ -156,35 +163,6 @@
    "trees": 27
   },
   {
-   "city": "Malaga",
-   "country": "Spain",
-   "slug": "malaga",
-   "status": "published",
-   "demand_views_90d": 117780,
-   "trees": 9
-  },
-  {
-   "city": "Paris",
-   "country": "France",
-   "slug": "paris",
-   "status": "published",
-   "trees": 31
-  },
-  {
-   "city": "Milan",
-   "country": "Italy",
-   "slug": "milan",
-   "status": "published",
-   "trees": 30
-  },
-  {
-   "city": "Dublin",
-   "country": "Ireland",
-   "slug": "dublin",
-   "status": "published",
-   "trees": 17
-  },
-  {
    "city": "Brisbane",
    "country": "Australia",
    "slug": "brisbane",
@@ -193,12 +171,19 @@
    "trees": 20
   },
   {
-   "city": "Los Angeles",
-   "country": "United States",
-   "slug": "los-angeles",
+   "city": "Malaga",
+   "country": "Spain",
+   "slug": "malaga",
    "status": "published",
-   "demand_views_90d": null,
-   "trees": 8
+   "demand_views_90d": 117780,
+   "trees": 9
+  },
+  {
+   "city": "Milan",
+   "country": "Italy",
+   "slug": "milan",
+   "status": "published",
+   "trees": 30
   },
   {
    "city": "Cagliari",
@@ -209,12 +194,19 @@
    "trees": 14
   },
   {
-   "city": "Cadiz",
-   "country": "Spain",
-   "slug": "cadiz",
+   "city": "Los Angeles",
+   "country": "United States",
+   "slug": "los-angeles",
    "status": "published",
-   "demand_views_90d": 79226,
-   "trees": 5
+   "demand_views_90d": null,
+   "trees": 10
+  },
+  {
+   "city": "Prague",
+   "country": "Czech Republic",
+   "slug": "prague",
+   "status": "published",
+   "trees": 30
   },
   {
    "city": "Florence",
@@ -224,12 +216,20 @@
    "trees": 27
   },
   {
-   "city": "Valencia",
+   "city": "Cadiz",
    "country": "Spain",
-   "slug": "valencia",
+   "slug": "cadiz",
    "status": "published",
-   "demand_views_90d": 162209,
-   "trees": 31
+   "demand_views_90d": 79226,
+   "trees": 5
+  },
+  {
+   "city": "Houston",
+   "country": "United States",
+   "slug": "houston",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
   },
   {
    "city": "Edinburgh",
@@ -237,6 +237,14 @@
    "slug": "edinburgh",
    "status": "published",
    "trees": 16
+  },
+  {
+   "city": "Valencia",
+   "country": "Spain",
+   "slug": "valencia",
+   "status": "published",
+   "demand_views_90d": 162209,
+   "trees": 31
   },
   {
    "city": "Sintra",
@@ -254,20 +262,12 @@
    "trees": 23
   },
   {
-   "city": "Houston",
+   "city": "New Orleans",
    "country": "United States",
-   "slug": "houston",
+   "slug": "new-orleans",
    "status": "published",
    "demand_views_90d": null,
    "trees": 6
-  },
-  {
-   "city": "Krakow",
-   "country": "Poland",
-   "slug": "krakow",
-   "status": "published",
-   "demand_views_90d": 140824,
-   "trees": 38
   },
   {
    "city": "Sao Paulo",
@@ -278,27 +278,19 @@
    "trees": 1
   },
   {
+   "city": "Palma de Mallorca",
+   "country": "Spain",
+   "slug": "palma-de-mallorca",
+   "status": "published",
+   "demand_views_90d": 84075,
+   "trees": 5
+  },
+  {
    "city": "Madrid",
    "country": "Spain",
    "slug": "madrid",
    "status": "published",
    "trees": 17
-  },
-  {
-   "city": "Utrecht",
-   "country": "Netherlands",
-   "slug": "utrecht",
-   "status": "published",
-   "demand_views_90d": 67963,
-   "trees": 30
-  },
-  {
-   "city": "New Orleans",
-   "country": "United States",
-   "slug": "new-orleans",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 6
   },
   {
    "city": "The Hague",
@@ -309,6 +301,14 @@
    "trees": 31
   },
   {
+   "city": "Krakow",
+   "country": "Poland",
+   "slug": "krakow",
+   "status": "published",
+   "demand_views_90d": 140824,
+   "trees": 38
+  },
+  {
    "city": "Chicago",
    "country": "United States",
    "slug": "chicago",
@@ -316,19 +316,11 @@
    "trees": 6
   },
   {
-   "city": "Palma de Mallorca",
-   "country": "Spain",
-   "slug": "palma-de-mallorca",
+   "city": "Athens",
+   "country": "Greece",
+   "slug": "athens",
    "status": "published",
-   "demand_views_90d": 84075,
-   "trees": 5
-  },
-  {
-   "city": "Venice",
-   "country": "Italy",
-   "slug": "venice",
-   "status": "published",
-   "trees": 11
+   "trees": 12
   },
   {
    "city": "Nijmegen",
@@ -339,11 +331,34 @@
    "trees": 22
   },
   {
-   "city": "Athens",
-   "country": "Greece",
-   "slug": "athens",
+   "city": "Venice",
+   "country": "Italy",
+   "slug": "venice",
    "status": "published",
-   "trees": 12
+   "trees": 11
+  },
+  {
+   "city": "Boston",
+   "country": "United States",
+   "slug": "boston",
+   "status": "published",
+   "trees": 11
+  },
+  {
+   "city": "Utrecht",
+   "country": "Netherlands",
+   "slug": "utrecht",
+   "status": "published",
+   "demand_views_90d": 67963,
+   "trees": 30
+  },
+  {
+   "city": "Glasgow",
+   "country": "United Kingdom",
+   "slug": "glasgow",
+   "status": "published",
+   "demand_views_90d": 253705,
+   "trees": 5
   },
   {
    "city": "Warsaw",
@@ -354,11 +369,28 @@
    "trees": 39
   },
   {
-   "city": "Boston",
+   "city": "Philadelphia",
    "country": "United States",
-   "slug": "boston",
+   "slug": "philadelphia",
    "status": "published",
-   "trees": 11
+   "demand_views_90d": null,
+   "trees": 4
+  },
+  {
+   "city": "San Francisco",
+   "country": "United States",
+   "slug": "san-francisco",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
+  },
+  {
+   "city": "Cork",
+   "country": "Ireland",
+   "slug": "cork",
+   "status": "published",
+   "demand_views_90d": 101405,
+   "trees": 13
   },
   {
    "city": "Fukuoka",
@@ -370,12 +402,11 @@
    "trees": 15
   },
   {
-   "city": "Glasgow",
-   "country": "United Kingdom",
-   "slug": "glasgow",
+   "city": "Hobart",
+   "country": "Australia",
+   "slug": "hobart",
    "status": "published",
-   "demand_views_90d": 253705,
-   "trees": 5
+   "trees": 11
   },
   {
    "city": "Haarlem",
@@ -386,27 +417,58 @@
    "trees": 21
   },
   {
-   "city": "Philadelphia",
-   "country": "United States",
-   "slug": "philadelphia",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
-  },
-  {
-   "city": "Cork",
-   "country": "Ireland",
-   "slug": "cork",
-   "status": "published",
-   "demand_views_90d": 101405,
-   "trees": 13
-  },
-  {
    "city": "Washington DC",
    "country": "United States",
    "slug": "washington-dc",
    "status": "published",
    "trees": 15
+  },
+  {
+   "city": "Reykjavik",
+   "country": "Iceland",
+   "slug": "reykjavik",
+   "status": "published",
+   "demand_views_90d": 166789,
+   "trees": 4
+  },
+  {
+   "city": "Montreal",
+   "country": "Canada",
+   "slug": "montreal",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 13
+  },
+  {
+   "city": "Seattle",
+   "country": "United States",
+   "slug": "seattle",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 8
+  },
+  {
+   "city": "Naples",
+   "country": "Italy",
+   "slug": "naples",
+   "status": "published",
+   "demand_views_90d": 198913,
+   "trees": 24
+  },
+  {
+   "city": "Leeuwarden",
+   "country": "Netherlands",
+   "slug": "leeuwarden",
+   "status": "published",
+   "trees": 41
+  },
+  {
+   "city": "Coimbra",
+   "country": "Portugal",
+   "slug": "coimbra",
+   "status": "published",
+   "demand_views_90d": 34962,
+   "trees": 5
   },
   {
    "city": "Kyoto",
@@ -419,35 +481,12 @@
    "caveat": "What improving Kyoto can and cannot be. Its 10 trees span 35.5 km and NOT ONE has another within 2 km, the worst spread of any city on the site (CLAUDE.md's cluster doctrine names it as the counter-example to Cadiz). So Kyoto will never be an afternoon's walk, and adding trees to the existing ten would not change that. The work that pays is a genuine walkable cluster inside one district, Higashiyama or Arashiyama, which means researching a district rather than a city and accepting that the current ten stay a scattered list beside it. Photos are nearly done already: 8 of 10, missing only the Heian Cedar of Katanami and the Emperor's Gift Cherry of Kamigamo."
   },
   {
-   "city": "Hobart",
-   "country": "Australia",
-   "slug": "hobart",
+   "city": "Osaka",
+   "country": "Japan",
+   "slug": "osaka",
    "status": "published",
-   "trees": 11
-  },
-  {
-   "city": "Montreal",
-   "country": "Canada",
-   "slug": "montreal",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 13
-  },
-  {
-   "city": "San Francisco",
-   "country": "United States",
-   "slug": "san-francisco",
-   "status": "published",
-   "demand_views_90d": null,
+   "demand_views_90d": 163112,
    "trees": 6
-  },
-  {
-   "city": "Coimbra",
-   "country": "Portugal",
-   "slug": "coimbra",
-   "status": "published",
-   "demand_views_90d": 34962,
-   "trees": 5
   },
   {
    "city": "Copenhagen",
@@ -465,28 +504,12 @@
    "trees": 20
   },
   {
-   "city": "Seattle",
-   "country": "United States",
-   "slug": "seattle",
+   "city": "Kanazawa",
+   "country": "Japan",
+   "slug": "kanazawa",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 8
-  },
-  {
-   "city": "Reykjavik",
-   "country": "Iceland",
-   "slug": "reykjavik",
-   "status": "published",
-   "demand_views_90d": 166789,
-   "trees": 4
-  },
-  {
-   "city": "Geneva",
-   "country": "Switzerland",
-   "slug": "geneva",
-   "status": "published",
-   "demand_views_90d": 162269,
-   "trees": 21
+   "trees": 7
   },
   {
    "city": "Granada",
@@ -497,20 +520,11 @@
    "trees": 9
   },
   {
-   "city": "Naples",
-   "country": "Italy",
-   "slug": "naples",
+   "city": "Leipzig",
+   "country": "Germany",
+   "slug": "leipzig",
    "status": "published",
-   "demand_views_90d": 198913,
-   "trees": 24
-  },
-  {
-   "city": "Osaka",
-   "country": "Japan",
-   "slug": "osaka",
-   "status": "published",
-   "demand_views_90d": 163112,
-   "trees": 6
+   "trees": 7
   },
   {
    "city": "Melbourne",
@@ -521,22 +535,6 @@
    "trees": 16
   },
   {
-   "city": "Parma",
-   "country": "Italy",
-   "slug": "parma",
-   "status": "published",
-   "demand_views_90d": 40425,
-   "trees": 5
-  },
-  {
-   "city": "Kanazawa",
-   "country": "Japan",
-   "slug": "kanazawa",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 7
-  },
-  {
    "city": "Vilnius",
    "country": "Lithuania",
    "slug": "vilnius",
@@ -545,11 +543,11 @@
    "trees": 14
   },
   {
-   "city": "Leipzig",
-   "country": "Germany",
-   "slug": "leipzig",
+   "city": "Amersfoort",
+   "country": "Netherlands",
+   "slug": "amersfoort",
    "status": "published",
-   "trees": 7
+   "trees": 18
   },
   {
    "city": "Sorrento",
@@ -560,20 +558,6 @@
    "trees": 7
   },
   {
-   "city": "Amersfoort",
-   "country": "Netherlands",
-   "slug": "amersfoort",
-   "status": "published",
-   "trees": 18
-  },
-  {
-   "city": "Tilburg",
-   "country": "Netherlands",
-   "slug": "tilburg",
-   "status": "published",
-   "trees": 20
-  },
-  {
    "city": "Chiang Mai",
    "country": "Thailand",
    "slug": "chiang-mai",
@@ -582,32 +566,12 @@
    "trees": 0
   },
   {
-   "city": "Budapest",
-   "country": "Hungary",
-   "slug": "budapest",
+   "city": "Geneva",
+   "country": "Switzerland",
+   "slug": "geneva",
    "status": "published",
-   "trees": 13
-  },
-  {
-   "city": "Dordrecht",
-   "country": "Netherlands",
-   "slug": "dordrecht",
-   "status": "published",
-   "trees": 20
-  },
-  {
-   "city": "Eindhoven",
-   "country": "Netherlands",
-   "slug": "eindhoven",
-   "status": "published",
+   "demand_views_90d": 162269,
    "trees": 21
-  },
-  {
-   "city": "Leeuwarden",
-   "country": "Netherlands",
-   "slug": "leeuwarden",
-   "status": "published",
-   "trees": 41
   },
   {
    "city": "Dubai",
@@ -618,20 +582,11 @@
    "trees": 0
   },
   {
-   "city": "Groningen",
+   "city": "Eindhoven",
    "country": "Netherlands",
-   "slug": "groningen",
+   "slug": "eindhoven",
    "status": "published",
-   "demand_views_90d": 31401,
    "trees": 21
-  },
-  {
-   "city": "Segovia",
-   "country": "Spain",
-   "slug": "segovia",
-   "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from Castilla y Leon's register of notable trees (ORDEN MAM/1156/2006). Five of six are in the royal gardens at La Granja, 11 km out. The register has no age column, so no tree here carries an age, and its trunk column is not quoted anywhere because reading it as diameter makes AS-SG-07 the thickest sequoia in Europe."
   },
   {
    "city": "Maastricht",
@@ -642,20 +597,28 @@
    "trees": 19
   },
   {
-   "city": "Verona",
-   "country": "Italy",
-   "slug": "verona",
+   "city": "Sydney",
+   "country": "Australia",
+   "slug": "sydney",
    "status": "published",
-   "demand_views_90d": 77646,
-   "trees": 8
+   "demand_views_90d": null,
+   "trees": 7
   },
   {
-   "city": "Quebec City",
-   "country": "Canada",
-   "slug": "quebec-city",
+   "city": "Segovia",
+   "country": "Spain",
+   "slug": "segovia",
    "status": "published",
-   "demand_views_90d": 124358,
-   "trees": 6
+   "trees": 6,
+   "note": "Opened 2026-08-31 from Castilla y Leon's register of notable trees (ORDEN MAM/1156/2006). Five of six are in the royal gardens at La Granja, 11 km out. The register has no age column, so no tree here carries an age, and its trunk column is not quoted anywhere because reading it as diameter makes AS-SG-07 the thickest sequoia in Europe."
+  },
+  {
+   "city": "Parma",
+   "country": "Italy",
+   "slug": "parma",
+   "status": "published",
+   "demand_views_90d": 40425,
+   "trees": 5
   },
   {
    "city": "Miami",
@@ -666,19 +629,48 @@
    "trees": 0
   },
   {
-   "city": "Bari",
-   "country": "Italy",
-   "slug": "bari",
+   "city": "Dordrecht",
+   "country": "Netherlands",
+   "slug": "dordrecht",
    "status": "published",
-   "trees": 5
+   "trees": 20
   },
   {
-   "city": "Guimaraes",
-   "country": "Portugal",
-   "slug": "guimaraes",
+   "city": "Tilburg",
+   "country": "Netherlands",
+   "slug": "tilburg",
    "status": "published",
-   "note": "ICNF cluster: 14 registered trees within 3.4 km of the UNESCO historic centre, 4 published (planes at the Paco dos Duques, the cloister olive, the Vila Flor camellias, the Atouguia cemetery cedars). Casa de Margaride and Casa da Covilha have genuinely strong trees held back on uncertain private-estate access; Santa Marinha da Costa held back as a hotel with no clear public-access statement. All three, plus the rest of the register, in data/leads/guimaraes.json.",
-   "demand_views_90d": 26203,
+   "trees": 20
+  },
+  {
+   "city": "Stockholm",
+   "country": "Sweden",
+   "slug": "stockholm",
+   "status": "published",
+   "demand_views_90d": 188184,
+   "trees": 8
+  },
+  {
+   "city": "Budapest",
+   "country": "Hungary",
+   "slug": "budapest",
+   "status": "published",
+   "trees": 13
+  },
+  {
+   "city": "Groningen",
+   "country": "Netherlands",
+   "slug": "groningen",
+   "status": "published",
+   "demand_views_90d": 31401,
+   "trees": 21
+  },
+  {
+   "city": "Verona",
+   "country": "Italy",
+   "slug": "verona",
+   "status": "published",
+   "demand_views_90d": 77646,
    "trees": 8
   },
   {
@@ -698,51 +690,21 @@
    "note": "Opened 2026-08-31 from the same Catalan register. None is in Girona itself: the city's own Devesa is a grove of ~2,500 planes and the register declares individuals only. Four of the seven are inside designated natural areas. The register records vitality, so the dead entries near Girona were excluded from the data rather than by guess."
   },
   {
-   "city": "Dubrovnik",
-   "country": "Croatia",
-   "slug": "dubrovnik",
-   "status": "published",
-   "demand_views_90d": 119586,
-   "trees": 4
-  },
-  {
-   "city": "Sydney",
-   "country": "Australia",
-   "slug": "sydney",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 7
-  },
-  {
-   "city": "Toronto",
+   "city": "Quebec City",
    "country": "Canada",
-   "slug": "toronto",
+   "slug": "quebec-city",
    "status": "published",
-   "demand_views_90d": null,
+   "demand_views_90d": 124358,
    "trees": 6
   },
   {
-   "city": "Stockholm",
-   "country": "Sweden",
-   "slug": "stockholm",
+   "city": "Guimaraes",
+   "country": "Portugal",
+   "slug": "guimaraes",
    "status": "published",
-   "demand_views_90d": 188184,
-   "trees": 6
-  },
-  {
-   "city": "Cambridge",
-   "country": "United Kingdom",
-   "slug": "cambridge",
-   "status": "published",
-   "demand_views_90d": 97974,
-   "trees": 5
-  },
-  {
-   "city": "Enschede",
-   "country": "Netherlands",
-   "slug": "enschede",
-   "status": "published",
-   "trees": 15
+   "note": "ICNF cluster: 14 registered trees within 3.4 km of the UNESCO historic centre, 4 published (planes at the Paco dos Duques, the cloister olive, the Vila Flor camellias, the Atouguia cemetery cedars). Casa de Margaride and Casa da Covilha have genuinely strong trees held back on uncertain private-estate access; Santa Marinha da Costa held back as a hotel with no clear public-access statement. All three, plus the rest of the register, in data/leads/guimaraes.json.",
+   "demand_views_90d": 26203,
+   "trees": 8
   },
   {
    "city": "Zurich",
@@ -753,28 +715,27 @@
    "trees": 6
   },
   {
-   "city": "Sapporo",
-   "country": "Japan",
-   "slug": "sapporo",
+   "city": "Toronto",
+   "country": "Canada",
+   "slug": "toronto",
    "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from the Hitozato Kyoboku giant-tree database (Environment Ministry 2007 survey, per-tree coordinates) and Imada Hideki's 150 Giant and Notable Trees of Hokkaido (2018). A young city: no shrine here predates 1869, so the old trees are either Maruyama primeval forest remnants or settler imports."
+   "demand_views_90d": null,
+   "trees": 6
   },
   {
-   "city": "Catania",
-   "country": "Italy",
-   "slug": "catania",
+   "city": "Dubrovnik",
+   "country": "Croatia",
+   "slug": "dubrovnik",
    "status": "published",
-   "demand_views_90d": 77454,
+   "demand_views_90d": 119586,
    "trees": 4
   },
   {
-   "city": "Nice",
-   "country": "France",
-   "slug": "nice",
+   "city": "Bari",
+   "country": "Italy",
+   "slug": "bari",
    "status": "published",
-   "demand_views_90d": 136877,
-   "trees": 10
+   "trees": 5
   },
   {
    "city": "Tallinn",
@@ -785,28 +746,43 @@
    "trees": 9
   },
   {
+   "city": "Cambridge",
+   "country": "United Kingdom",
+   "slug": "cambridge",
+   "status": "published",
+   "demand_views_90d": 97974,
+   "trees": 5
+  },
+  {
+   "city": "Nice",
+   "country": "France",
+   "slug": "nice",
+   "status": "published",
+   "demand_views_90d": 136877,
+   "trees": 10
+  },
+  {
+   "city": "Enschede",
+   "country": "Netherlands",
+   "slug": "enschede",
+   "status": "published",
+   "trees": 15
+  },
+  {
+   "city": "Sapporo",
+   "country": "Japan",
+   "slug": "sapporo",
+   "status": "published",
+   "trees": 6,
+   "note": "Opened 2026-08-31 from the Hitozato Kyoboku giant-tree database (Environment Ministry 2007 survey, per-tree coordinates) and Imada Hideki's 150 Giant and Notable Trees of Hokkaido (2018). A young city: no shrine here predates 1869, so the old trees are either Maruyama primeval forest remnants or settler imports."
+  },
+  {
    "city": "Helsinki",
    "country": "Finland",
    "slug": "helsinki",
    "status": "published",
    "demand_views_90d": 148908,
    "trees": 12
-  },
-  {
-   "city": "Lyon",
-   "country": "France",
-   "slug": "lyon",
-   "status": "published",
-   "demand_views_90d": 136951,
-   "trees": 13
-  },
-  {
-   "city": "Potsdam",
-   "country": "Germany",
-   "slug": "potsdam",
-   "status": "published",
-   "demand_views_90d": 51727,
-   "trees": 4
   },
   {
    "city": "Santiago de Compostela",
@@ -817,20 +793,11 @@
    "trees": 0
   },
   {
-   "city": "Istanbul",
-   "country": "Turkey",
-   "slug": "istanbul",
+   "city": "Zwolle",
+   "country": "Netherlands",
+   "slug": "zwolle",
    "status": "published",
-   "trees": 14
-  },
-  {
-   "city": "Padua",
-   "country": "Italy",
-   "slug": "padua",
-   "status": "published",
-   "note": "Salvaged from an interrupted verification pass (RAMI, ilregistrodeglialberi.it, filled the age/health/access gap MASAF lacks). 9 trees inside a 1.25 km walk: four in the 1545 Orto Botanico (the Goethe Palm, an Oriental Plane, a grafted Ginkgo, a 1786 Magnolia), a magnolia in the Sant Antonio basilica cloister, two planes and a leaning hackberry in Parco Treves, and a folded twin-tree Sophora entry in Piazza Capitaniato. Full detail in data/research/padova-notes.md and data/leads/padova.json. Renamed from Padova to Padua 2026-08-06, hours after publication, to match the English exonym every other Italian city here uses; old URLs redirect.",
-   "demand_views_90d": 54592,
-   "trees": 12
+   "trees": 20
   },
   {
    "city": "Zagreb",
@@ -841,12 +808,19 @@
    "trees": 0
   },
   {
-   "city": "Genoa",
+   "city": "Catania",
    "country": "Italy",
-   "slug": "genoa",
+   "slug": "catania",
    "status": "published",
-   "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
-   "demand_views_90d": 145206,
+   "demand_views_90d": 77454,
+   "trees": 4
+  },
+  {
+   "city": "Lyon",
+   "country": "France",
+   "slug": "lyon",
+   "status": "published",
+   "demand_views_90d": 136951,
    "trees": 13
   },
   {
@@ -858,43 +832,12 @@
    "trees": 0
   },
   {
-   "city": "Helmond",
-   "country": "Netherlands",
-   "slug": "helmond",
-   "status": "published",
-   "trees": 20
-  },
-  {
    "city": "Shanghai",
    "country": "China",
    "slug": "shanghai",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Funchal",
-   "country": "Portugal",
-   "slug": "funchal",
-   "status": "pending",
-   "demand_views_90d": 174351,
-   "trees": 0
-  },
-  {
-   "city": "Bristol",
-   "country": "United Kingdom",
-   "slug": "bristol",
-   "status": "published",
-   "demand_views_90d": 163983,
-   "trees": 6
-  },
-  {
-   "city": "Oslo",
-   "country": "Norway",
-   "slug": "oslo",
-   "status": "published",
-   "demand_views_90d": 181113,
-   "trees": 4
   },
   {
    "city": "Caserta",
@@ -906,22 +849,6 @@
    "trees": 20
   },
   {
-   "city": "Cordoba",
-   "country": "Spain",
-   "slug": "cordoba",
-   "status": "published",
-   "demand_views_90d": 74675,
-   "trees": 16
-  },
-  {
-   "city": "Den Bosch",
-   "country": "Netherlands",
-   "slug": "den-bosch",
-   "status": "published",
-   "demand_views_90d": 39682,
-   "trees": 12
-  },
-  {
    "city": "Vancouver",
    "country": "Canada",
    "slug": "vancouver",
@@ -930,12 +857,69 @@
    "trees": 7
   },
   {
+   "city": "Padua",
+   "country": "Italy",
+   "slug": "padua",
+   "status": "published",
+   "note": "Salvaged from an interrupted verification pass (RAMI, ilregistrodeglialberi.it, filled the age/health/access gap MASAF lacks). 9 trees inside a 1.25 km walk: four in the 1545 Orto Botanico (the Goethe Palm, an Oriental Plane, a grafted Ginkgo, a 1786 Magnolia), a magnolia in the Sant Antonio basilica cloister, two planes and a leaning hackberry in Parco Treves, and a folded twin-tree Sophora entry in Piazza Capitaniato. Full detail in data/research/padova-notes.md and data/leads/padova.json. Renamed from Padova to Padua 2026-08-06, hours after publication, to match the English exonym every other Italian city here uses; old URLs redirect.",
+   "demand_views_90d": 54592,
+   "trees": 12
+  },
+  {
+   "city": "Oslo",
+   "country": "Norway",
+   "slug": "oslo",
+   "status": "published",
+   "demand_views_90d": 181113,
+   "trees": 4
+  },
+  {
+   "city": "Funchal",
+   "country": "Portugal",
+   "slug": "funchal",
+   "status": "pending",
+   "demand_views_90d": 174351,
+   "trees": 0
+  },
+  {
    "city": "Hong Kong",
    "country": "China",
    "slug": "hong-kong",
    "status": "published",
    "demand_views_90d": 689212,
    "trees": 10
+  },
+  {
+   "city": "Istanbul",
+   "country": "Turkey",
+   "slug": "istanbul",
+   "status": "published",
+   "trees": 14
+  },
+  {
+   "city": "Genoa",
+   "country": "Italy",
+   "slug": "genoa",
+   "status": "published",
+   "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
+   "demand_views_90d": 145206,
+   "trees": 13
+  },
+  {
+   "city": "Bristol",
+   "country": "United Kingdom",
+   "slug": "bristol",
+   "status": "published",
+   "demand_views_90d": 163983,
+   "trees": 6
+  },
+  {
+   "city": "Bologna",
+   "country": "Italy",
+   "slug": "bologna",
+   "status": "published",
+   "demand_views_90d": 146161,
+   "trees": 12
   },
   {
    "city": "Galway",
@@ -955,13 +939,6 @@
    "trees": 0
   },
   {
-   "city": "Salzburg",
-   "country": "Austria",
-   "slug": "salzburg",
-   "status": "published",
-   "trees": 12
-  },
-  {
    "city": "Beijing",
    "country": "China",
    "slug": "beijing",
@@ -978,18 +955,33 @@
    "trees": 0
   },
   {
-   "city": "Zwolle",
+   "city": "Den Bosch",
    "country": "Netherlands",
-   "slug": "zwolle",
+   "slug": "den-bosch",
+   "status": "published",
+   "demand_views_90d": 39682,
+   "trees": 12
+  },
+  {
+   "city": "Helmond",
+   "country": "Netherlands",
+   "slug": "helmond",
    "status": "published",
    "trees": 20
   },
   {
-   "city": "Bologna",
-   "country": "Italy",
-   "slug": "bologna",
+   "city": "Cordoba",
+   "country": "Spain",
+   "slug": "cordoba",
    "status": "published",
-   "demand_views_90d": 146161,
+   "demand_views_90d": 74675,
+   "trees": 16
+  },
+  {
+   "city": "Salzburg",
+   "country": "Austria",
+   "slug": "salzburg",
+   "status": "published",
    "trees": 12
   },
   {
@@ -1018,6 +1010,14 @@
    "trees": 4
   },
   {
+   "city": "Salamanca",
+   "country": "Spain",
+   "slug": "salamanca",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
+  },
+  {
    "city": "San Sebastian",
    "country": "Spain",
    "slug": "san-sebastian",
@@ -1041,21 +1041,6 @@
    "trees": 14
   },
   {
-   "city": "Deventer",
-   "country": "Netherlands",
-   "slug": "deventer",
-   "status": "published",
-   "trees": 12
-  },
-  {
-   "city": "Nagoya",
-   "country": "Japan",
-   "slug": "nagoya",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 6
-  },
-  {
    "city": "Kuala Lumpur",
    "country": "Malaysia",
    "slug": "kuala-lumpur",
@@ -1064,115 +1049,11 @@
    "trees": 0
   },
   {
-   "city": "Bilbao",
-   "country": "Spain",
-   "slug": "bilbao",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
-  },
-  {
-   "city": "Ferrara",
-   "country": "Italy",
-   "slug": "ferrara",
-   "status": "published",
-   "demand_views_90d": 27490,
-   "trees": 5
-  },
-  {
-   "city": "Cape Town",
-   "country": "South Africa",
-   "slug": "cape-town",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Salamanca",
-   "country": "Spain",
-   "slug": "salamanca",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
-  },
-  {
-   "city": "Dresden",
-   "country": "Germany",
-   "slug": "dresden",
-   "status": "published",
-   "trees": 5
-  },
-  {
-   "city": "Santiago",
-   "country": "Chile",
-   "slug": "santiago",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "York",
-   "country": "United Kingdom",
-   "slug": "york",
-   "status": "published",
-   "demand_views_90d": 118066,
-   "trees": 6
-  },
-  {
-   "city": "Oxford",
-   "country": "United Kingdom",
-   "slug": "oxford",
-   "status": "published",
-   "demand_views_90d": 111583,
-   "trees": 5
-  },
-  {
-   "city": "Delft",
+   "city": "Deventer",
    "country": "Netherlands",
-   "slug": "delft",
+   "slug": "deventer",
    "status": "published",
-   "demand_views_90d": 31293,
-   "trees": 8
-  },
-  {
-   "city": "Mexico City",
-   "country": "Mexico",
-   "slug": "mexico-city",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 9
-  },
-  {
-   "city": "Turin",
-   "country": "Italy",
-   "slug": "turin",
-   "status": "published",
-   "note": "One walk, Porta Nuova station to the Po, 1.94 km spread. Taken from the official 13.9 km tourist route, which is really four walks; the other three are in data/leads/turin.json. Piemonte's regional register (data/registers/piemonte-alberi-monumentali.json) carries presumed age bands and removal status, which no other Italian source does.",
-   "demand_views_90d": 147456,
-   "trees": 11
-  },
-  {
-   "city": "Gdansk",
-   "country": "Poland",
-   "slug": "gdansk",
-   "status": "published",
-   "demand_views_90d": 4908,
    "trees": 12
-  },
-  {
-   "city": "Bangkok",
-   "country": "Thailand",
-   "slug": "bangkok",
-   "status": "published",
-   "demand_views_90d": 222206,
-   "trees": 5
-  },
-  {
-   "city": "Apeldoorn",
-   "country": "Netherlands",
-   "slug": "apeldoorn",
-   "status": "published",
-   "trees": 10
   },
   {
    "city": "Trieste",
@@ -1184,12 +1065,67 @@
    "trees": 36
   },
   {
-   "city": "Ronda",
+   "city": "Bilbao",
    "country": "Spain",
-   "slug": "ronda",
+   "slug": "bilbao",
    "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from Andalusia's singular-tree register, which publishes a one-page measured sheet per tree carrying height, girth at 1.30 m, girth at the base, crown diameter AND an ownership field. That ownership field is what made this city publishable: it answers hard rule 10 from the data. Three trees are on public land in the Sierra de las Nieves, two are private land beside a public track, one is view-only from a pass and says so."
+   "demand_views_90d": null,
+   "trees": 4
+  },
+  {
+   "city": "Cape Town",
+   "country": "South Africa",
+   "slug": "cape-town",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Apeldoorn",
+   "country": "Netherlands",
+   "slug": "apeldoorn",
+   "status": "published",
+   "trees": 10
+  },
+  {
+   "city": "Delft",
+   "country": "Netherlands",
+   "slug": "delft",
+   "status": "published",
+   "demand_views_90d": 31293,
+   "trees": 8
+  },
+  {
+   "city": "Nagoya",
+   "country": "Japan",
+   "slug": "nagoya",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
+  },
+  {
+   "city": "Mexico City",
+   "country": "Mexico",
+   "slug": "mexico-city",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 9
+  },
+  {
+   "city": "Santiago",
+   "country": "Chile",
+   "slug": "santiago",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Oxford",
+   "country": "United Kingdom",
+   "slug": "oxford",
+   "status": "published",
+   "demand_views_90d": 111583,
+   "trees": 5
   },
   {
    "city": "Tarragona",
@@ -1200,6 +1136,55 @@
    "note": "Opened 2026-08-31 from Catalonia's monumental-tree register via its structured Catalan Wikipedia mirror, which carries species, condition, height, girth at 1.3 m, crown, coordinates and the official gencat record per tree. Only four of the nine live trees within 30 km stand on ground the public may walk on; the rest are on private mas and are recorded as blocked."
   },
   {
+   "city": "Gdansk",
+   "country": "Poland",
+   "slug": "gdansk",
+   "status": "published",
+   "demand_views_90d": 4908,
+   "trees": 12
+  },
+  {
+   "city": "York",
+   "country": "United Kingdom",
+   "slug": "york",
+   "status": "published",
+   "demand_views_90d": 118066,
+   "trees": 6
+  },
+  {
+   "city": "Ferrara",
+   "country": "Italy",
+   "slug": "ferrara",
+   "status": "published",
+   "demand_views_90d": 27490,
+   "trees": 5
+  },
+  {
+   "city": "Ronda",
+   "country": "Spain",
+   "slug": "ronda",
+   "status": "published",
+   "trees": 6,
+   "note": "Opened 2026-08-31 from Andalusia's singular-tree register, which publishes a one-page measured sheet per tree carrying height, girth at 1.30 m, girth at the base, crown diameter AND an ownership field. That ownership field is what made this city publishable: it answers hard rule 10 from the data. Three trees are on public land in the Sierra de las Nieves, two are private land beside a public track, one is view-only from a pass and says so."
+  },
+  {
+   "city": "Turin",
+   "country": "Italy",
+   "slug": "turin",
+   "status": "published",
+   "note": "One walk, Porta Nuova station to the Po, 1.94 km spread. Taken from the official 13.9 km tourist route, which is really four walks; the other three are in data/leads/turin.json. Piemonte's regional register (data/registers/piemonte-alberi-monumentali.json) carries presumed age bands and removal status, which no other Italian source does.",
+   "demand_views_90d": 147456,
+   "trees": 11
+  },
+  {
+   "city": "Bangkok",
+   "country": "Thailand",
+   "slug": "bangkok",
+   "status": "published",
+   "demand_views_90d": 222206,
+   "trees": 5
+  },
+  {
    "city": "Kansas City",
    "country": "United States",
    "slug": "kansas-city",
@@ -1208,20 +1193,19 @@
    "trees": 4
   },
   {
-   "city": "Breda",
-   "country": "Netherlands",
-   "slug": "breda",
+   "city": "Brno",
+   "country": "Czech Republic",
+   "slug": "brno",
    "status": "published",
-   "demand_views_90d": 36579,
-   "trees": 11
+   "demand_views_90d": 63714,
+   "trees": 8
   },
   {
-   "city": "Split",
-   "country": "Croatia",
-   "slug": "split",
+   "city": "Dresden",
+   "country": "Germany",
+   "slug": "dresden",
    "status": "published",
-   "demand_views_90d": 132399,
-   "trees": 4
+   "trees": 5
   },
   {
    "city": "Setubal",
@@ -1240,20 +1224,20 @@
    "trees": 5
   },
   {
-   "city": "Brno",
-   "country": "Czech Republic",
-   "slug": "brno",
+   "city": "Split",
+   "country": "Croatia",
+   "slug": "split",
    "status": "published",
-   "demand_views_90d": 63714,
-   "trees": 8
+   "demand_views_90d": 132399,
+   "trees": 4
   },
   {
-   "city": "Hiroshima",
-   "country": "Japan",
-   "slug": "hiroshima",
+   "city": "Zaragoza",
+   "country": "Spain",
+   "slug": "zaragoza",
    "status": "published",
-   "demand_views_90d": null,
-   "trees": 33
+   "demand_views_90d": 87580,
+   "trees": 7
   },
   {
    "city": "Braga",
@@ -1272,28 +1256,52 @@
    "trees": 6
   },
   {
+   "city": "Potsdam",
+   "country": "Germany",
+   "slug": "potsdam",
+   "status": "published",
+   "demand_views_90d": 51727,
+   "trees": 4
+  },
+  {
+   "city": "Breda",
+   "country": "Netherlands",
+   "slug": "breda",
+   "status": "published",
+   "demand_views_90d": 36579,
+   "trees": 11
+  },
+  {
+   "city": "Venlo",
+   "country": "Netherlands",
+   "slug": "venlo",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Auckland",
+   "country": "New Zealand",
+   "slug": "auckland",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 5,
+   "note": "Opened 2026-09-01, 5 trees: two Moreton Bay figs (Devonport, Hillsborough), a champion Algerian oak (Cornwall Park), and a pair of coronation oaks at Takapuna Primary School (view-only, flagged, school grounds not confirmed open)."
+  },
+  {
+   "city": "Hiroshima",
+   "country": "Japan",
+   "slug": "hiroshima",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 33
+  },
+  {
    "city": "Rio de Janeiro",
    "country": "Brazil",
    "slug": "rio-de-janeiro",
    "status": "published",
    "demand_views_90d": null,
    "trees": 6
-  },
-  {
-   "city": "Rotterdam",
-   "country": "Netherlands",
-   "slug": "rotterdam",
-   "status": "published",
-   "demand_views_90d": 104938,
-   "trees": 16
-  },
-  {
-   "city": "Thessaloniki",
-   "country": "Greece",
-   "slug": "thessaloniki",
-   "status": "published",
-   "demand_views_90d": 180145,
-   "trees": 4
   },
   {
    "city": "Sofia",
@@ -1320,6 +1328,14 @@
    "trees": 4
   },
   {
+   "city": "Thessaloniki",
+   "country": "Greece",
+   "slug": "thessaloniki",
+   "status": "published",
+   "demand_views_90d": 180145,
+   "trees": 4
+  },
+  {
    "city": "Kamakura",
    "country": "Japan",
    "slug": "kamakura",
@@ -1328,49 +1344,18 @@
    "trees": 6
   },
   {
-   "city": "Zaragoza",
-   "country": "Spain",
-   "slug": "zaragoza",
+   "city": "Rotterdam",
+   "country": "Netherlands",
+   "slug": "rotterdam",
    "status": "published",
-   "demand_views_90d": 87580,
-   "trees": 7
-  },
-  {
-   "city": "Auckland",
-   "country": "New Zealand",
-   "slug": "auckland",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 5,
-   "note": "Opened 2026-09-01, 5 trees: two Moreton Bay figs (Devonport, Hillsborough), a champion Algerian oak (Cornwall Park), and a pair of coronation oaks at Takapuna Primary School (view-only, flagged, school grounds not confirmed open)."
-  },
-  {
-   "city": "Assisi",
-   "country": "Italy",
-   "slug": "assisi",
-   "status": "published",
-   "trees": 6
+   "demand_views_90d": 104938,
+   "trees": 16
   },
   {
    "city": "Bamberg",
    "country": "Germany",
    "slug": "bamberg",
    "status": "published",
-   "trees": 5
-  },
-  {
-   "city": "Venlo",
-   "country": "Netherlands",
-   "slug": "venlo",
-   "status": "published",
-   "trees": 7
-  },
-  {
-   "city": "Lima",
-   "country": "Peru",
-   "slug": "lima",
-   "status": "published",
-   "demand_views_90d": null,
    "trees": 5
   },
   {
@@ -1382,12 +1367,19 @@
    "trees": 4
   },
   {
-   "city": "Toledo",
-   "country": "Spain",
-   "slug": "toledo",
-   "status": "pending",
+   "city": "Lima",
+   "country": "Peru",
+   "slug": "lima",
+   "status": "published",
    "demand_views_90d": null,
-   "trees": 0
+   "trees": 5
+  },
+  {
+   "city": "Assisi",
+   "country": "Italy",
+   "slug": "assisi",
+   "status": "published",
+   "trees": 6
   },
   {
    "city": "Okinawa",
@@ -1398,12 +1390,12 @@
    "note": "Opened 2026-08-31 from Okinawa prefecture's hundred notable trees (midorihana-okinawa.jp, run by the prefecture's environment department), which publishes per tree the species, height, girth, an estimated AGE, the owner, a coordinate and the designation history, and marks revoked certifications. The best-documented register used today. Yonagusuku's banyan, Okinawa's biggest tree at 23.5 m girth, is excluded and recorded as blocked: the register names its owner as a private household."
   },
   {
-   "city": "Poznan",
-   "country": "Poland",
-   "slug": "poznan",
-   "status": "published",
-   "demand_views_90d": 65666,
-   "trees": 10
+   "city": "Toledo",
+   "country": "Spain",
+   "slug": "toledo",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Antwerp",
@@ -1411,6 +1403,14 @@
    "slug": "antwerp",
    "status": "published",
    "demand_views_90d": 128289,
+   "trees": 10
+  },
+  {
+   "city": "Poznan",
+   "country": "Poland",
+   "slug": "poznan",
+   "status": "published",
+   "demand_views_90d": 65666,
    "trees": 10
   },
   {
@@ -1761,7 +1761,7 @@
    "country": "Japan",
    "slug": "kagoshima",
    "status": "published",
-   "trees": 13,
+   "trees": 14,
    "note": "Opened 2026-08-31 from Kagoshima City's own preserved-tree register (38 designated trees, species, girth at 1.5 m, height and estimated age, updated 2025-11-25) cross-checked against the Hitozato Kyoboku giant-tree database. Includes two day trips labelled as such: the Akou of Yuno on Sakurajima and the Great Camphor of Kamo in Aira, the largest tree in Japan."
   },
   {
