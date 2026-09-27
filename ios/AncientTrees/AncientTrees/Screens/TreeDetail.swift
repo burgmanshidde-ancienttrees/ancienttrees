@@ -711,8 +711,10 @@ struct TreeDetail: View {
             Text("Discover more")
                 .font(.brand(18, .bold, relativeTo: .headline))
                 .foregroundStyle(Brand.ink)
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 8) {
+            // WRAPPING, not a sideways scroll (Hidde, 2026-09-27: "de tags hebben
+            // een horizontal scroll, die hadden we bij web al gesloopt en was
+            // beter"). Same as the website's tree page.
+            FlowRow(spacing: 8) {
                     discoverChip(tree.city, "building.2") { navigator.push = .city(tree.citySlug) }
                     // No park chip: a tree carries no park and Route has no
                     // park case, so the parks facet lives on the website only.
@@ -731,7 +733,6 @@ struct TreeDetail: View {
                             navigator.push = .country(tree.country)
                         }
                     }
-                }
             }
         }
         .padding(.top, 4)
@@ -751,11 +752,13 @@ struct TreeDetail: View {
         Button(action: go) {
             HStack(spacing: 6) {
                 Image(systemName: symbol).font(.caption)
-                Text(title).font(.subheadline.weight(.medium)).lineLimit(1)
+                Text(title).font(.subheadline.weight(.medium)).lineLimit(2)
+                    .multilineTextAlignment(.leading)
             }
             .foregroundStyle(Brand.ink)
             .padding(.horizontal, 14)
-            .frame(height: 44)
+            .padding(.vertical, 8)
+            .frame(minHeight: 44)
             .background(Capsule().fill(Brand.moss.opacity(0.10)))
             .contentShape(.capsule)
         }
@@ -1526,8 +1529,7 @@ struct TreeDetail: View {
             if tree.story.isEmpty, mine != nil {
                 blank("What makes this tree special?", .story)
             } else {
-                Text(tree.story)
-                    .fixedSize(horizontal: false, vertical: true)
+                ExpandableText(text: tree.story, lines: 6)
             }
         }
     }
@@ -1621,9 +1623,7 @@ struct TreeDetail: View {
             HStack(alignment: .firstTextBaseline, spacing: 8) {
                 Image(systemName: symbol)
                     .frame(width: 18, alignment: .center)
-                Text(text)
-                    .fixedSize(horizontal: false, vertical: true)
-                Spacer(minLength: 0)
+                ExpandableText(text: text, lines: 2)
             }
         }
     }

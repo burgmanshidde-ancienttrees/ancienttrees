@@ -195,7 +195,11 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
         </div>
       </div>
 
-      <div class="prose-block td-story"><p>{p.story}</p></div>
+      {/* READ MORE, the AllTrails and App Store shape (Hidde, 2026-09-27: "dit
+          is nogal veel tekst... afkappen en read more"): six lines of story
+          and two of each access line, expanded in place. The app does the
+          same (ExpandableText). The full text stays in the page for search. */}
+      <div class="prose-block td-story"><p class="td-clamp" data-more={U.readMore}>{p.story}</p></div>
       {p.seasonHtml && <Fragment set:html={p.seasonHtml} />}
 
       {/* HOW TO GET IN AND HOW TO GET THERE (accessBlock: figure.walk and
@@ -205,8 +209,8 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
         {(p.address || p.recognise) && (
           <p><Fragment set:html={icon("map-pin")} /><span>{p.address}{p.recognise && <span class="which-one"> {p.recognise}</span>}</span></p>
         )}
-        {!tree.paid_entry && p.access && <p><Fragment set:html={icon("person-simple-walk")} /><span>{p.access}</span></p>}
-        {p.transport && <p><Fragment set:html={icon("train-simple")} /><span>{p.transport}</span></p>}
+        {!tree.paid_entry && p.access && <p><Fragment set:html={icon("person-simple-walk")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.access}</span></p>}
+        {p.transport && <p><Fragment set:html={icon("train-simple")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.transport}</span></p>}
       </div>
 
       <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="report" lang={p.lang} />
@@ -289,3 +293,14 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
     </dialog>
   )}
 </main>
+<script is:inline>
+  (function() {
+    document.querySelectorAll('.td-clamp').forEach(function(el) {
+      if (el.scrollHeight <= el.clientHeight + 1) { el.classList.add('open'); return; }
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'td-more'; b.textContent = el.getAttribute('data-more') || 'Read more';
+      b.addEventListener('click', function() { el.classList.add('open'); b.remove(); });
+      (el.closest('.td-access p') || el).insertAdjacentElement('afterend', b);
+    });
+  })();
+</script>

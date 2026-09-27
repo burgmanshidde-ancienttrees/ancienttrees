@@ -2639,3 +2639,11 @@ Hidde: "should the option to add more than one photo also be added to all tree a
 **Reference: Google Maps.** Adding a missing place and adding photos to a place are both contributions, and a place takes several photographs ([support.google.com, add a missing place](https://support.google.com/maps/answer/6320846), [add photos](https://support.google.com/maps/answer/2622947)).
 
 **What we took.** Up to four on both surfaces: the first is the tree's picture and the only one that can ever be published; up to three more are evidence, stored privately (`extra_photos`). The separate "Photograph the sign" button went, because a sign is just one of those photographs, and the hint says so: "A photo of the sign helps". App: a "More photographs" row on the tree's own page with a "+ Add photo" tile, on the draft and after. Web: /contribute's photo field takes several files, and a second press adds to them. Four rather than iNaturalist's twenty, for the scarcity reason recorded under "Several photographs of one tree".
+
+---
+
+## Long text on a tree page: Read more (2026-09-27)
+
+**Reference: AllTrails' trail description and the App Store's app description**: a few lines, then "more", expanded in place with no sheet. Airbnb opens a sheet, which suits a listing with headings and is heavier than a paragraph needs. Hidde: "dit is nogal veel tekst ... afkappen en read more logischer, ook op web."
+
+**What we took:** the story stops at six lines and each access and transport line at two, each with "Read more" that opens it where it stands; the button appears only when something is actually cut. App: ExpandableText. Web: .td-clamp in TreeDetail.astro, labelled from UIStrings.readMore in every language, the full text still in the page for search. The Discover more chips wrap onto new rows on both surfaces, as the website already did.

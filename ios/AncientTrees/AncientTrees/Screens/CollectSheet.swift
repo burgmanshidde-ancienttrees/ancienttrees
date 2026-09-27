@@ -1279,12 +1279,21 @@ private struct HugRow: View {
 struct FlowRow: Layout {
     var spacing: CGFloat = 8
 
+    /// Its own size, unless that is wider than the row: then the row's width,
+    /// so a long label wraps inside its chip instead of running off the
+    /// screen (the tree page's Discover more chips, 2026-09-27).
+    static func measure(_ view: LayoutSubview, _ limit: CGFloat) -> CGSize {
+        let own = view.sizeThatFits(.unspecified)
+        guard limit.isFinite, own.width > limit else { return own }
+        return view.sizeThatFits(ProposedViewSize(width: limit, height: nil))
+    }
+
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews,
                       cache: inout ()) -> CGSize {
         let limit = proposal.width ?? .infinity
         var x: CGFloat = 0, height: CGFloat = 0, lineHeight: CGFloat = 0
         for view in subviews {
-            let size = view.sizeThatFits(.unspecified)
+            let size = Self.measure(view, limit)
             if x > 0, x + size.width > limit {
                 x = 0
                 height += lineHeight + spacing
@@ -1301,7 +1310,7 @@ struct FlowRow: Layout {
                        subviews: Subviews, cache: inout ()) {
         var x = bounds.minX, y = bounds.minY, lineHeight: CGFloat = 0
         for view in subviews {
-            let size = view.sizeThatFits(.unspecified)
+            let size = Self.measure(view, bounds.width)
             if x > bounds.minX, x + size.width > bounds.maxX {
                 x = bounds.minX
                 y += lineHeight + spacing
