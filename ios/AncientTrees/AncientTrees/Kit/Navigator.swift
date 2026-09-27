@@ -69,6 +69,11 @@ public final class Navigator {
     /// Old Tjikko is not browsing, they are standing in front of a named tree.
     /// nil everywhere else, where the generic line is the honest one.
     public var collectAbout: String? = nil
+    /// True when the way in was the tree's own missing PHOTOGRAPH (the grey
+    /// "No photograph yet" area or the camera on it): somebody who tapped
+    /// there wants to add a photo, not to hear about a collection (Hidde,
+    /// 2026-09-27). Cleared with collectAbout.
+    public var collectAddsPhoto = false
 
 
     public init() {}

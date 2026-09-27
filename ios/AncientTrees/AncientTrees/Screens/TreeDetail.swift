@@ -679,7 +679,7 @@ struct TreeDetail: View {
                 .overlay { heroFallback }
                 .clipped()
                 .contentShape(.rect)
-                .onTapGesture { if mine == nil { navigator.collectAbout = tree.name; navigator.collectNearby = true } }
+                .onTapGesture { if mine == nil { navigator.collectAbout = tree.name; navigator.collectAddsPhoto = true; navigator.collectNearby = true } }
                 .accessibilityElement(children: .combine)
                 .accessibilityAddTraits(mine == nil ? .isButton : [])
                 .accessibilityIdentifier("tree-empty-photo")
@@ -1274,46 +1274,47 @@ struct TreeDetail: View {
         }
     }
 
+    /// The whole field is the button, label and name together (2026-09-27,
+    /// Hidde: the species "seems off compared to the rest"). The name was set
+    /// in 16 against the 19 its neighbours use, and only the name was the
+    /// tap target, padded to 44 points, which left a band of empty card under
+    /// it. Label plus name is already about 44, so the target needs no padding.
     @ViewBuilder private var speciesColumn: some View {
-        column("Species") {
-            Button {
-                // ON YOUR OWN TREE THIS NAMES THE SPECIES, it does not browse
-                // to one (Hidde, 2026-08-29): the read-only species page about
-                // a species nobody has named yet is a page about nothing.
-                if mine != nil {
-                    choosingSpecies = true
-                } else {
-                    navigator.push = .species(tree.commonName)
-                }
-            } label: {
+        Button {
+            // ON YOUR OWN TREE THIS NAMES THE SPECIES, it does not browse
+            // to one (Hidde, 2026-08-29): the read-only species page about
+            // a species nobody has named yet is a page about nothing.
+            if mine != nil {
+                choosingSpecies = true
+            } else {
+                navigator.push = .species(tree.commonName)
+            }
+        } label: {
+            column("Species") {
                 if mine != nil, tree.species.isEmpty {
                     addValue
                 } else {
-                    HStack(spacing: 3) {
-                        // The COMMON name only. `tree.species` carries
-                        // "Ginkgo (Ginkgo biloba)" and printing both put one
-                        // fact in this cell twice, four lines high on the
-                        // Leiden Laburnum (Hidde, 2026-09-04: "die species
-                        // worden nog steeds veel te lang, toon minder"). The
-                        // Latin name is on the species page, which is what
-                        // the chevron is for.
+                    // Common name only: the Latin name is on the species
+                    // page, which is what the chevron is for.
+                    HStack(spacing: 4) {
                         Text(tree.commonName)
-                            .font(.brand(16, .bold, relativeTo: .subheadline))
+                            .font(.brand(19, .bold, relativeTo: .headline))
                             .lineLimit(2)
+                            .multilineTextAlignment(.leading)
                         Image(systemName: "chevron.right")
-                            .font(.system(size: 9, weight: .semibold))
+                            .font(.system(size: 11, weight: .semibold))
                     }
                     .foregroundStyle(Brand.moss)
                 }
             }
-            .buttonStyle(.plain)
-            .frame(minHeight: 44, alignment: .topLeading)
+            .frame(maxWidth: .infinity, minHeight: 44, alignment: .topLeading)
             .contentShape(.rect)
-            .accessibilityIdentifier("tree-species-fact")
-            .accessibilityLabel(mine != nil && tree.species.isEmpty
-                                ? "Add the species"
-                                : "\(tree.commonName), see every one of them")
         }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("tree-species-fact")
+        .accessibilityLabel(mine != nil && tree.species.isEmpty
+                            ? "Add the species"
+                            : "\(tree.commonName), see every one of them")
     }
 
     /// "Add", never "Add it": Apple's writing guidance drops unnecessary words
@@ -1684,7 +1685,7 @@ struct TreeDetail: View {
         // centimetres from the one in the bar, and the bar is where he wants
         // the act promoted.
         if mine == nil, tree.photo == nil {
-            Button { navigator.collectAbout = tree.name; navigator.collectNearby = true } label: {
+            Button { navigator.collectAbout = tree.name; navigator.collectAddsPhoto = true; navigator.collectNearby = true } label: {
                 Image(systemName: "camera.fill")
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Brand.ink)
