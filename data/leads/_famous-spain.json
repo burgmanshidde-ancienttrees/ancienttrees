@@ -165,10 +165,10 @@
         "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza_3.jpg"
       ],
-      "status": "verified",
+      "status": "held",
       "verified_id": "ond_001",
       "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes."
+      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes. STORY WRITTEN 2026-09-27 (data/research/famousspain-verified.json carries the full story and how_to_recognise, ready to merge). Still HELD per the verify pass's own curator call: no numeric age (only 'centenario'), location_precision approximate (village-edge description, no surveyed coordinate), does not clear the destination test on fame or scale alone."
     },
     {
       "name": "Roble Escarcio",
@@ -275,11 +275,11 @@
         "https://commons.wikimedia.org/wiki/File:Branques_de_l%27om_de_Millena.JPG",
         "https://commons.wikimedia.org/wiki/File:Escor%C3%A7a_de_l%27om_de_Millena.JPG"
       ],
-      "status": "verified",
+      "status": "held",
       "species": "Field Elm (Ulmus minor)",
       "verified_id": "mll_001",
       "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: verified, flagged (no official register listing; three independent web sources agree). Girth ~530cm, age vaguely 'roughly 300 years' from sources (an 1812-planting theory in one source is speculation, not used). Called the last healthy plaza elm in Alicante province, having survived Dutch elm disease. location_precision approximate: given coordinate is the village/OSM-boundary centroid, not a tree-level fix (no geotagged photo found); church square is ~22m away. 65km from Alicante with no transit link, no nearby cluster; destination call left open. See out/tmp/famousspain-batchC.json for full notes."
+      "verify_note": "2026-09-27 verification pass: verified, flagged (no official register listing; three independent web sources agree). Girth ~530cm, age vaguely 'roughly 300 years' from sources (an 1812-planting theory in one source is speculation, not used). Called the last healthy plaza elm in Alicante province, having survived Dutch elm disease. location_precision approximate: given coordinate is the village/OSM-boundary centroid, not a tree-level fix (no geotagged photo found); church square is ~22m away. 65km from Alicante with no transit link, no nearby cluster; destination call left open. See out/tmp/famousspain-batchC.json for full notes. STORY WRITTEN 2026-09-27 (data/research/famousspain-verified.json carries the full story and how_to_recognise, ready to merge). Still HELD per the verify pass's own curator call: not on any official monumental-tree register, location_precision approximate (the coordinate is Millena's OSM administrative centroid, not a tree-level fix), and 65km from Alicante with no realistic transit."
     },
     {
       "name": "Om de la Plana",
