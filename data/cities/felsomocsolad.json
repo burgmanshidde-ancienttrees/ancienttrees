@@ -1,0 +1,70 @@
+{
+  "city": "Felsőmocsolád",
+  "country": "Hungary",
+  "status": "needs_curation",
+  "intro": "Local families bring their newborns to this lime in the forest of a former Somogy county estate, and children climb through its hollow trunk to prove they are brave. It won European Tree of the Year in 2012 with 11,158 votes, a year after winning Hungary's national contest. Local legend holds a storm and gas explosion once burned the surrounding forest into a chasm called Hell's Mouth, and this lime alone survived; crows are said to have reseeded the whole forest from its own crown afterward.",
+  "meta_description": "The Old Lime Tree of Felsőmocsolád, Hungary, a 400-year lime that won European Tree of the Year 2012. Free, in the estate forest.",
+  "question_meta": "Felsőmocsolád's remarkable tree is a 400-year lime in the estate forest, Europe's Tree of the Year in 2012.",
+  "question_answer": "Felsőmocsolád's notable tree is the Old Lime Tree, standing in the former Kacskovics-Bánó estate forest, roughly 400 years old, winner of European Tree of the Year 2012.",
+  "question_context": "The tree stands about a kilometre east of Bánó Mária Castle, beside the Malom-árok stream, on the grounds of what is now a hotel. A Hungarian hiking directory records its circumference as 11.9 metres, a figure that says less about a single trunk than about the shape of the whole tree: three thick limbs rise from a hollow base that children climb through as a rite of courage, and the number should be read as a measure of that base rather than an ordinary trunk reading. The village has a legend to match the tree's strangeness. A great storm, lightning and an explosion of gas are said to have burned the surrounding forest into a chasm called Hell's Mouth, and this lime alone survived it; crows then carried its seed and reseeded the whole forest, and a garabonciás, a protective spirit of Hungarian folklore, is said to live inside the trunk. None of that is documented history, though all of it is still told locally, alongside the more recent tradition of bringing newborns to stand beneath it.",
+  "hero_tree_id": "fmc_001",
+  "oldest_tree_id": "fmc_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Felsőmocsolád?",
+      "a": "The Old Lime Tree, standing in the former estate forest east of Bánó Mária Castle, winner of European Tree of the Year 2012."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 400 years, per the contest and independent Hungarian sources."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the estate forest, treated as a public attraction by local tourism guides."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fmc_001",
+      "name": "The Old Lime Tree of Felsőmocsolád",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": 1190,
+      "location": {
+        "address": "In the estate forest about 1km east of Bánó Mária Castle, beside the Malom-árok stream, Felsőmocsolád, Somogy county, Hungary",
+        "latitude": 46.577417,
+        "longitude": 17.829306,
+        "neighbourhood": "Felsőmocsolád outskirts, former Kacskovics-Bánó estate"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2012/Lipa-ve-Felsomocsoladu",
+        "https://hu.wikipedia.org/wiki/Felsőmocsoládi_öreg_hárs",
+        "https://kirandulastervezo.hu/latnivalo/felsomocsolad/400-eves-harsfa",
+        "https://banobirtok.hu/blog/az-oreg-hars-legendaja/"
+      ],
+      "access": "Free, standing in the estate forest near the Bánó Kastélyszálló (Bánó Castle Hotel); treated as a public tourist attraction by two independent hiking/tourism sites, with no restriction mentioned, though it sits on grounds historically tied to the castle estate",
+      "transport": "Felsőmocsolád village, Somogy county; no rail; nearest reasonable public transport is a regional bus to Somogy villages, then on foot/by car to the forest site about 1km from the castle",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Local families bring their newborns to this lime, and older children climb through its hollow trunk to prove they are brave. It won European Tree of the Year in 2012 with 11,158 votes, a year after winning Hungary's national contest.\n\nIt stands in the forest of the former Kacskovics-Bánó estate, about a kilometre east of Bánó Mária Castle, beside the Malom-árok stream. It is 20 to 25 metres tall and put at roughly 400 years old. A Hungarian hiking directory records its circumference as 11.9 metres, a figure that says less about one trunk than about the shape of the whole thing: three thick limbs rising from a hollow base. Read the number as a measure of that base rather than of an ordinary trunk.\n\nThe village has a legend to match. A great storm, lightning and an explosion of gas are said to have burned the surrounding forest into a chasm called Hell's Mouth, Pokol szája, and this lime alone survived. Crows then carried its seed and sowed the forest again, and a garabonciás, a protective spirit of Hungarian folklore, is said to live in the trunk. None of that is documented history; all of it is still told.\n\nThe castle is a hotel now, and its own blog describes the tree turning green every spring. The most recent dated report we have is from the 2012 contest, so if you have walked out to it, tell us how it looks.",
+      "how_to_recognise": "You can recognise it by the hollow base children climb through and the three thick limbs rising from it. It stands in the estate forest about a kilometre east of Bánó Mária Castle, beside the Malom-árok stream.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the old lime flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}

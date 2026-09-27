@@ -1,0 +1,61 @@
+{
+  "city": "Căpeni",
+  "country": "Romania",
+  "status": "needs_curation",
+  "intro": "On 2 June 2018 a storm tore off one of this elm's three great limbs, and the tree kept going, having already survived the Dutch elm disease that killed more than three quarters of Europe's elms in the 20th century. The Elm of Căpeni, Köpec in Hungarian, won Romania's Tree of the Year in 2011 with 13,096 votes and came second in Europe in 2012. It stands in a field beside a stream bridge in the Szekler country of Transylvania, 7.3 metres round and roughly 300 years old.",
+  "meta_description": "The Elm Tree of Căpeni, Romania, a 300-year field elm, runner-up European Tree of the Year 2012. Free, beside a stream bridge.",
+  "question_meta": "Căpeni's remarkable tree is a 300-year field elm beside the Baraolt stream, runner-up European Tree of the Year 2012.",
+  "question_answer": "Căpeni's notable tree is the Elm Tree of Căpeni, a Field Elm beside the bridge over the Baraolt stream, 7.3 metres round and roughly 300 years old, runner-up for European Tree of the Year in 2012.",
+  "question_context": "The tree has survived more than one kind of disaster. It came through the Dutch elm disease pandemic that killed more than three quarters of Europe's elms in the 20th century, spread by bark beetles, and on 2 June 2018 a storm tore off one of its three main limbs, which was since cut back and the wound sealed with a rubbery coating that is still visible today. It has also come through unspecified floods and fires along the Baraolt stream, though no source dates them. A 2011 Romanian news report, written when the tree won the national contest with 13,096 votes, puts its planting in the early 18th century, which makes it roughly 300 years old; the tree went on to place second in Europe the following year. A travel writer who visited in September 2023 found a mowed path of about a hundred metres leading from the road through the field to the trunk, and an information panel with the tree's details, which is the most recent confirmation found of the tree standing.",
+  "hero_tree_id": "cap_001",
+  "oldest_tree_id": "cap_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Căpeni?",
+      "a": "The Elm Tree of Căpeni, a field elm beside the bridge over the Baraolt stream, runner-up for European Tree of the Year in 2012."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 300 years, per a 2011 Romanian news report dating its planting to the early 18th century."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in an open field, reached by a short mowed path from road DJ131."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cap_001",
+      "name": "The Elm Tree of Căpeni",
+      "species": "Field Elm (Ulmus minor)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 730,
+      "location": {
+        "address": "Beside the bridge over the Baraolt stream, north of Căpeni village, near road DJ131, Covasna county, Romania",
+        "latitude": 46.05075,
+        "longitude": 25.570139,
+        "neighbourhood": "North of Căpeni (Köpec), Baraolt Depression"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2012/Jilm-v-Capeni-(Kopeci)",
+        "https://hotnews.ro/ulmul-din-capeni-covasna-a-fost-desemnat-arborele-anului-2011-in-romania-661441",
+        "https://norishorul-calator.com/2023/10/04/ulmul-din-capeni/"
+      ],
+      "access": "Free, in an open field beside the road, reached by a short mowed path from DJ131; an information panel marks the tree, no restriction found",
+      "transport": "Căpeni village, Covasna county, Szekler region; no rail, reached by car or regional bus along DJ131",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "On 2 June 2018 a storm tore off one of this elm's three great limbs, and the tree kept going. It had already survived something far worse: the Dutch elm disease that killed more than three quarters of Europe's elms in the 20th century, spread by bark beetles.\n\nThe Elm of Căpeni, Köpec in Hungarian, won Romania's Tree of the Year in 2011 with 13,096 votes and came second in Europe in 2012 with 9,812. It stands in a field beside the bridge over the Baraolt stream, just north of the village and off road DJ131, in the Szekler country of Transylvania. It is over 35 metres tall and 7.3 metres round, and a 2011 Romanian news report puts its planting in the early 18th century, which makes it roughly 300 years old.\n\nIt has also come through the floods and fires of the Baraolt stream, though no source dates them. The damage from 2018 is not hidden: the broken limb was cut back and the wound sealed with a rubbery coating, and you can see it.\n\nA travel writer who visited in September 2023 found a mowed path of about a hundred metres leading from the road through the field to the trunk, and an information panel with the tree's details, and suggested a stop of ten to fifteen minutes. That is about right for the tree, and a little short for the thought that a field elm this size is something most of Europe no longer has.",
+      "how_to_recognise": "You can recognise it by the sealed wound where one of its three main limbs came off in 2018, and by the information panel at its foot. It stands in the field beside the Baraolt stream bridge, reached by a mowed path from DJ131.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}

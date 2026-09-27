@@ -1,0 +1,62 @@
+{
+  "city": "Garmen",
+  "country": "Bulgaria",
+  "status": "needs_curation",
+  "intro": "Two plane trees stand opposite the church of St. George in the Zagrade quarter of Garmen, and the older, famous one took second place in European Tree of the Year 2011 with 18,374 votes, a year after winning Bulgaria's own national contest. It appears on the municipality's coat of arms. Sources disagree on its exact age, putting it between 600 and 650 years, and even on when it was first protected, 1961 or 1968. Local legend holds Ottoman janissaries once set it alight, and villagers put the fire out.",
+  "meta_description": "The Zagradski Plane in Garmen, Bulgaria, a 600+ year oriental plane, runner-up European Tree of the Year 2011. Free, opposite the church.",
+  "question_meta": "Garmen's remarkable tree is the Zagradski Plane, a centuries-old oriental plane opposite the village church in the Zagrade quarter.",
+  "question_answer": "Garmen's notable tree is the Zagradski Plane (Zagradski Chinar), an Oriental Plane in the Zagrade quarter opposite St. George's Church, 10.46 metres round and put at 550 to 700 years old, runner-up for European Tree of the Year in 2011.",
+  "question_context": "Two plane trees stand together opposite the church, and the famous one is the older and far thicker of the pair: a 1968 survey put the companion tree at roughly 300 years, a fraction of the elder's age. How old the elder actually is depends on which source is read. The contest and a Bulgarian tourist guide say more than 600 years; Bulgarian Wikipedia gives about 650, from that same 1968 survey. Even the protection date is disputed, 1961 in one source and 1968 in two others, so both age and designation are recorded as ranges rather than single figures. The tree's real fame rests on legend rather than paperwork: Ottoman janissaries are said to have set it alight to punish a villager who warned others the water had been poisoned, and the villagers put the fire out, leaving a scar that nobody has documented but everybody repeats. What is documented is more recent use: weddings and gatherings under the crown, storks roosting in season, and a 2017 Rotary Club project that turned the ground around the two trees into an open-air museum.",
+  "hero_tree_id": "gar_001",
+  "oldest_tree_id": "gar_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Garmen?",
+      "a": "The Zagradski Plane, an oriental plane in the Zagrade quarter opposite St. George's Church, runner-up for European Tree of the Year in 2011."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Sources disagree: somewhere between 600 and 650 years, by two independent readings."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open ground beside the road from Gotse Delchev to Marchevo."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gar_001",
+      "name": "The Zagradski Plane (Zagradski Chinar)",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 600 to 650 years",
+      "age_min": 550,
+      "age_max": 700,
+      "girth_cm": 1046,
+      "location": {
+        "address": "Zagrade quarter of Garmen, opposite St. George's Church, on the road from Gotse Delchev to Marchevo, Blagoevgrad region, Bulgaria",
+        "latitude": 41.597942,
+        "longitude": 23.798778,
+        "neighbourhood": "Zagrade, Garmen"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2011/Platan-v-Garmen",
+        "https://bg.wikipedia.org/wiki/Заградски_чинар",
+        "http://web.archive.org/web/20190711074123/http://visit.guide-bulgaria.com/a/466/centuries-old_tree_(oriental_plane).htm",
+        "https://pirinsko.com/vekovnite-chinari-v-gyrmen-stavat-muzej-na-otkrito-37107/"
+      ],
+      "access": "Free, standing on open ground in the Zagrade quarter of the village, opposite the church",
+      "transport": "Garmen village, on the Gotse Delchev to Marchevo road; no rail, nearest reasonable public transport is the intercity bus to Gotse Delchev, then local onward transport",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two plane trees stand opposite the church of St. George in Garmen, and the famous one is the older of the pair. The Zagradski Plane took second place in European Tree of the Year 2011 with 18,374 votes, a year after winning Bulgaria's national contest, and it appears on the municipality's coat of arms.\n\nIt is 24 metres tall and 10.46 metres round. How old it is depends on who you ask: the contest and a Bulgarian tourist guide say more than 600 years, while Bulgarian Wikipedia gives about 650, from a 1968 survey estimate. Even the year it became protected is disputed, 1961 in one source and 1968 in two others. Somewhere between 550 and 700 years covers every reading.\n\nThe same 1968 survey put the tree beside it at around 300. Together they are the Zagrade planes, standing in what was once a separate village and is now a quarter of Garmen, on the road from Gotse Delchev to Marchevo.\n\nThe legend is better than the paperwork. Ottoman janissaries are said to have set the tree alight to punish a villager who warned others that the water had been poisoned, and the villagers put the fire out, leaving a scar. Nobody has documented it. What is documented is the use: weddings and village gatherings under the crown, storks roosting in season, and in 2017 a Rotary Club project that turned the ground around the two trees into an open-air museum.",
+      "how_to_recognise": "You can recognise it by the trunk, 10.46 metres round and far thicker than the younger plane beside it. It stands on the Gotse Delchev to Marchevo road, directly opposite St. George's Church in the Zagrade quarter.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}

@@ -17,13 +17,15 @@
       "lng": 25.851528,
       "gps_as_published": "N 46°20'57.09'', E 25°51'5.5''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2011/Lipa-v-Leliceni",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "buc_004",
         "name": "The Ginkgos of the Botanical Garden",
         "place": "Bucharest",
         "km": 213.15
-      }
+      },
+      "verified_id": "lel_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "Plane in Garmen",
@@ -39,13 +41,15 @@
       "lng": 23.798778,
       "gps_as_published": "N 41°35'52.59'', E 23°47'55.6''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2011/Platan-v-Garmen",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "bkp_001",
         "name": "Baikushev's Pine (Baikushevata Mura)",
         "place": "Bansko",
         "km": 36.43
-      }
+      },
+      "verified_id": "gar_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "Plane in Letenye",
@@ -61,13 +65,15 @@
       "lng": 16.723639,
       "gps_as_published": "N 46°26'4.49'', E 16°43'25.1''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2011/Platan-v-Letenye",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "gst_001",
         "name": "Gupčeva lipa",
         "place": "Gornja Stubica",
         "km": 74.95
-      }
+      },
+      "verified_id": "let_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "Oak in Dubinné",
@@ -139,13 +145,15 @@
       "lng": 17.829306,
       "gps_as_published": "N 46°34'38.7'', E 17°49'45.5''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2012/Lipa-ve-Felsomocsoladu",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "bud_004",
         "name": "The Taban Mulberry",
         "place": "Budapest",
         "km": 136.9
-      }
+      },
+      "verified_id": "fmc_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "The Elm Tree from Căpeni (Köpec)",
@@ -161,13 +169,15 @@
       "lng": 25.570139,
       "gps_as_published": "N 46°3'2.7'', E 25°34'12.5''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2012/Jilm-v-Capeni-(Kopeci)",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "buc_004",
         "name": "The Ginkgos of the Botanical Garden",
         "place": "Bucharest",
         "km": 183.44
-      }
+      },
+      "verified_id": "cap_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "The Wish Tree",
@@ -183,13 +193,14 @@
       "lng": 26.061528,
       "gps_as_published": "N 43°37'47.89'', E 26°3'41.5''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2012/Strom-prani",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "buc_002",
         "name": "The Secular Plane of Cișmigiu",
         "place": "Bucharest",
         "km": 89.76
-      }
+      },
+      "verify_note": "DEAD, confirmed by dated Bulgarian news source: utroruse.com reports the 700-year-old elm was uprooted by hurricane-force wind in April 2013 (article dated 2013-04-14, headline Rukhna vekovnoto Darvo na zhelaniyata krai Nisovo), a year after its 2012 European Tree of the Year run. It was struck from Bulgaria state register of centuries-old trees and removed from the protected-sites list. A 2019-07-02 utroruse.com follow-up (Turisti napразno tarsyat vekovnia bryast v zhivopisnoto selo Nisovo) confirms only a decomposing fallen trunk and root mass remains, gradually turning to tinder from rain and sun; a plan to plant young elm saplings beside it was never carried out. Never publish per hard rule 2 and never a dead tree as a collectible entry. Sources: https://web.archive.org/web/20200805043316/https://utroruse.com/article/7667/ , https://web.archive.org/web/20201020151550/https://utroruse.com/article/760722/"
     },
     {
       "name": "Lime Tree in Lipany",
@@ -233,13 +244,14 @@
       "lng": 21.840469,
       "gps_as_published": "N 51°33'9.29'', E 21°50'25.69''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2012/Dub-Grot-v-Debline",
-      "status": "lead",
+      "status": "duplicate",
       "nearest_published": {
         "id": "gln_001",
         "name": "Wszebora",
         "place": "Gliniak",
         "km": 70.93
-      }
+      },
+      "verify_note": "Already published as deb_001 in data/cities/deblin.json (\"Dab Grot\"), 0.03km away, same tree (Poland Drzewo Roku 2011 winner, ETOTY 2012 rank 5). A 2026-09-27 verify pass re-researched this from the Tree of the Year contest list without checking existing coverage first and duplicated it as dbl_001 in data/research/treeoftheyear-verified.json; that duplicate entry was discarded rather than merged. The nearest_published field above (Wszebora/Gliniak, 70.93km) is stale/wrong and should not be trusted for this entry."
     },
     {
       "name": "Alley in Skalička",
@@ -255,13 +267,14 @@
       "lng": 17.798361,
       "gps_as_published": "N 49°31'5.25'', E 17°47'54.1''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2012/Alej-ve-Skalicce",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "boh_001",
         "name": "Hromuv Oak",
         "place": "Bohunovice",
         "km": 41.61
-      }
+      },
+      "verify_note": "BLOCKED on access, not on the avenue question. The alley (22 lindens, 10 oaks, planted from 1626 by count Zdenek Frantisek Lev z Rozmitalu) does have one genuinely singled-out collectible tree within it: press repeatedly identifies the largest/oldest oak specifically (450 years, 5.15m girth, 30m tall per 2011-2012 coverage; still an individual finalist in the Strom ctvrtstoleti (Tree of the Quarter Century) 2026 contest per an Olomoucky Report article dated 2026-08-20 and a TV Morava piece, both confirming it alive and visited by local schoolchildren for outdoor history lessons), so the avenue-not-a-point objection in the brief does not actually apply here.\n\nWhat blocks it instead: the castle grounds at Skalicka u Hranic (Prerov district; NOT to be confused with the separate, similarly named Zamek Skalicka near Zabreh/Hranice-Zabreh, which is a different property that does host public cultural events) house Domov Vetrny mlyn, a residential care home for women with mental disabilities, in operation since 1925 (prerovsky.denik.cz, 2020-06-15, marking the home's 95th anniversary). The park and its tree avenue sit inside this institution's grounds; no source describes public visiting access, and sending strangers onto a care home's grounds where vulnerable residents live fails the \"can they get in without asking anyone's permission\" test in BRIEF_RESEARCH.md/hard rule 10, whatever the school-visit precedent suggests about organised access. Recorded as blocked rather than a lead, since the access problem here is structural (a care institution's grounds) and unlikely to be resolved by a later pass finding a better source; if the home ever opens the park to the public and a source says so, this should be revisited.\n\nSources checked: https://www.report.cz/v-ankete-strom-ctvrtstoleti-soutezi-drevina-z-olomouckeho-kraje (2026-08-20), https://www.tvmorava.cz/o-stromu-ctvrtstoleti-rozhoduje-verejnost-mezi-finalisty-je-i-dub-ze-skalicky-na-prerovsku/ , https://prerovsky.denik.cz/ctenar-reporter/uplynulo-95-let-od-zalozeni-domova-vetrny-mlyn-ve-skalicce-20200615.html"
     },
     {
       "name": "Pistacia in Ghisonaccia (Haute-Corse)",
