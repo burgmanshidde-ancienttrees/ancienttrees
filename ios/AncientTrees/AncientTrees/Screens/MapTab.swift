@@ -237,11 +237,14 @@ struct MapTab: View {
         // What the WORDS say: the trees inside the rectangle you are looking
         // at. It counted everything within fifty kilometres before, which is
         // a different and much larger claim than "you can see".
+        // YOUR OWN TREES COUNT TOO (Hidde, 2026-09-27: "it says 2 trees while
+        // it's clearly 3"). They are pins on this map and cards in the list
+        // below it, so a count that leaves them out disagrees with the screen.
         guard let r = mapRegion else {
             return catalogue.trees.filter {
                 filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
                     && $0.distanceKm(from: focus.lat, focus.lng) <= 6
-            }.count
+            }.count + mineShown.filter { Geo.km(focus, ($0.lat, $0.lng)) <= 6 }.count
         }
         let latMin = r.center.latitude - r.span.latitudeDelta / 2
         let latMax = r.center.latitude + r.span.latitudeDelta / 2
@@ -250,6 +253,8 @@ struct MapTab: View {
         return catalogue.trees.filter {
             $0.lat >= latMin && $0.lat <= latMax && $0.lng >= lngMin && $0.lng <= lngMax
                 && filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
+        }.count + mineShown.filter {
+            $0.lat >= latMin && $0.lat <= latMax && $0.lng >= lngMin && $0.lng <= lngMax
         }.count
     }
 
