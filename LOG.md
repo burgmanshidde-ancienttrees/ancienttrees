@@ -10,6 +10,58 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - Refilled the writer's shelf: 4 Tree of the Year trees published, plus 4 stale leads-file records fixed
+
+`prepare.py` said REFILL THE SHELF FIRST, naming `_tree-of-the-year` (115
+unsourced leads) as the biggest batch, so that was the first dispatch rather
+than a fresh city. Claimed it, ran two 4-candidate verify passes in parallel
+(the "at most four named candidates" limit in BRIEF_RESEARCH.md), then one
+write-stories pass on whatever verified, then merged and pushed locally
+(GitHub token had expired by push time, per the runner's own known issue,
+so it's sitting as a local commit for the workflow's Run health step to push).
+
+**Published (4 trees, 4 places):**
+- **Bošáca (2 -> 3):** `bsa_003` The Wild Pear of Lysica Hill, a third
+  national Tree of the Year champion from this one village, seeded itself
+  from a stray pear seed rather than being planted.
+- **Viroflay (1 -> 2):** `vir_002` The Multisecular Chestnut of Audran
+  Square, genuinely in neighbouring La Celle-Saint-Cloud, added as a
+  day-trip (one change of train at Saint-Cloud); page copy says so plainly.
+- **Liernu (1 -> 2):** `lie_002` The Tree of Freedom of Waret-la-Chaussée, a
+  liberty tree planted 1796, same Eghezée commune as Liernu, reached by road.
+- **Lozorno, Slovakia (new place):** `loz_001` The Dragon Oak of Lozorno, a
+  2023 European Tree of the Year runner-up (2nd of 17, beaten only by
+  Poland's Oak Fabrykant) in forest reached by a marked trail; too far from
+  Bratislava for a day trip (75-90 min transit), so it ships alone under the
+  2026-08-31 single-famous-tree exception.
+
+**Verified but not shipped (4 candidates, all correctly held):** Glushnik's
+mulberry/walnut trio and the Oak of Varniškės are on private land; the
+Giant Wild Pear of Gödöllő and the Pálffy Oak of Malacky both verify cleanly
+but sit 70-90 minutes from Budapest/Bratislava by real transit, past the
+day-trip boundary, and are flagged as candidates for their own future
+standalone place pages rather than forced additions. One more, the Brown
+Cherry Pear of Klerken, turned out to be in Houthulst municipality, not
+Ypres, and on private land visible only from a public footpath.
+
+**Also found and fixed:** four leads-file entries (the Witch Tree, the
+ancient Mother Tree, the Oak of Laukiai, the Old Wild Apple Tree) were
+marked `verified`/`verified_lead` pointing at research files that no longer
+exist (lost with an earlier run's runner), but all four turned out to be
+already published (`hvb_002`, `bre_011`, `plg_007`, `vbo_002`) by a prior
+run today. Updated their status to `published` with `mapped_as` so a future
+run doesn't re-verify or re-write work that already shipped.
+
+**FOR HIDDE, not urgent:** `data/agent-costs.json` has had two shapes for a
+while, a `days` dict that `retro.py` actually reads and a parallel flat
+top-level date-keyed structure that isn't read by anything I could find.
+The flat shape had 20 entries logged today against 4 in `days` before this
+run, so the weekly retro has been blind to most of today's pass costs. I
+logged this run's costs into `days` and left the flat entries alone rather
+than merge them myself; worth a proper look.
+
+`preflight.py`: 0 problems. `superlatives.py`: no conflicts.
+
 ## 2026-09-27 (continuation) - US-priority deepen: 10 trees across 4 cities, plus a real deploy BLOCKER fixed
 
 Worked rung 1's new "US pages Google already shows" priority top to bottom
