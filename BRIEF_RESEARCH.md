@@ -26,6 +26,16 @@ itself "worth the walk": judge each one.
 2. **Two independent sources** for existence, species and age. One official
    register counts as one source. If sources conflict, deliver both figures in
    `verify_notes` and flag; never pick a winner silently.
+   **An official register ALONE is enough to deliver** (Hidde, 2026-09-27:
+   "flag them in our own system and let users correct us"). A tree on a
+   government register (city heritage list, state champion register, national
+   designation) with no second source is delivered with
+   `curation_status: "flagged"` and `verify_notes` saying "register only". Do
+   not hold it back and do not spend the window hunting a second source for
+   it; readers are the correction layer. This does NOT cover a finding aid
+   (a register whose licence is unclear, used only to find trees): those still
+   need a source of their own. Alive, publicly reachable and an honest
+   location_precision are checked exactly as before.
 3. **The exact spot.** `location_precision: "confirmed"` only when you can place
    the individual tree (tree-level coordinates from a register, a mapped photo,
    satellite-visible crown). Park-level or shrine-level knowledge is
