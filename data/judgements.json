@@ -206,6 +206,28 @@
    "agreed": null
   },
   {
+   "id": "sight:d8ccd98d-702c-4e1e-8c23-bdb5a712b806",
+   "seen": "2026-09-25",
+   "kind": "photo of a tree we do not map",
+   "tree": "The Camphor of Kyoken Park",
+   "city": "Kagoshima",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "out/sightings/229.jpg",
+   "reader_note": "Biggest of the park - 4m girth",
+   "reader_girth_cm": null,
+   "match": "unmatched (new tree)",
+   "distance_m": null,
+   "current_photo": "none",
+   "measure": {
+    "score": null,
+    "note": "no register or published record to compare against; reader-estimated girth only"
+   },
+   "verdict": "publish",
+   "reason": "No tree of ours stood nearby. Reverse-geocoded the coordinate to Kyoken Park (Chuo-cho, Kagoshima), a public neighbourhood park a few minutes from Kagoshima-Chuo Station. The park own official page and a second independent source (secret-kichi.net) both confirm a camphor as the park named symbol tree, with real sourced history (Saigo Takamori former residence, then a girls school from 1911, a park since 1951). Species and description both checked: a single large camphor filling its own circular brick planter at the park centre, matching the reader photograph and the sources naming of the symbol tree, well lit, tree fills frame. Two independent sources clear the normal bar even though neither measures this exact specimen; girth (400cm) is the reader own unverified estimate, flagged in the entry, and no age is documented anywhere for the tree itself. Published as kag_014.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
    "id": "lead:12168ca4-f893-4296-a444-14bd9e2c4e09",
    "seen": "2026-09-22",
    "kind": "a tree we do not map",
@@ -923,28 +945,6 @@
    "measure": null,
    "verdict": "hold",
    "reason": "Not a tree submission. A home office window scene: blinds, a clock, headphones on the sill, trees visible only distantly through the glass. Nothing to research.",
-   "hidde": null,
-   "agreed": null
-  },
-  {
-   "id": "sight:d8ccd98d-702c-4e1e-8c23-bdb5a712b806",
-   "seen": "2026-09-25",
-   "kind": "photo of a tree we do not map",
-   "tree": "The Camphor of Kyoken Park",
-   "city": "Kagoshima",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "photo": "out/sightings/229.jpg",
-   "reader_note": "Biggest of the park - 4m girth",
-   "reader_girth_cm": null,
-   "match": "unmatched (new tree)",
-   "distance_m": null,
-   "current_photo": "none",
-   "measure": {
-    "score": null,
-    "note": "no register or published record to compare against; reader-estimated girth only"
-   },
-   "verdict": "publish",
-   "reason": "No tree of ours stood nearby. Reverse-geocoded the coordinate to Kyoken Park (Chuo-cho, Kagoshima), a public neighbourhood park a few minutes from Kagoshima-Chuo Station. The park own official page and a second independent source (secret-kichi.net) both confirm a camphor as the park named symbol tree, with real sourced history (Saigo Takamori former residence, then a girls school from 1911, a park since 1951). Species and description both checked: a single large camphor filling its own circular brick planter at the park centre, matching the reader photograph and the sources naming of the symbol tree, well lit, tree fills frame. Two independent sources clear the normal bar even though neither measures this exact specimen; girth (400cm) is the reader own unverified estimate, flagged in the entry, and no age is documented anywhere for the tree itself. Published as kag_014.",
    "hidde": null,
    "agreed": null
   }
