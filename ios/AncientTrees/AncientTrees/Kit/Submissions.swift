@@ -156,3 +156,25 @@ public enum Submission {
         await Supa.post(path, token: token, body: body, prefer: "return=minimal")
     }
 }
+
+extension Submission {
+    /// Offers a tree somebody added to us for the map: the WORDS, the place and
+    /// how the coordinate was found, pointing at the sighting by id so the
+    /// thank-you mail can link its private page. Sent when a draft is saved on
+    /// its own page (2026-09-26); it used to be sent by the form that page
+    /// replaced. A failed send never loses the tree: it stays yours, marked
+    /// unsent, and the status on the page says so.
+    @MainActor
+    static func offer(_ s: Sightings.Sighting, city: String?, account: Account,
+                      sightings: Sightings) async {
+        var d = Draft()
+        d.kind = .tree
+        d.why = s.note
+        d.tree = s.id.uuidString
+        d.locationHint = String(format: "%.5f, %.5f (%@)", s.lat, s.lng,
+                                s.fixNote ?? "GPS, standing at the tree")
+        d.city = city ?? ""
+        let ok = await send(d, from: "app:collect", token: await account.freshToken())
+        sightings.update(s.id, status: ok ? .sent : .mine)
+    }
+}

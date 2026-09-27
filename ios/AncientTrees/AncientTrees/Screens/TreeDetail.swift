@@ -82,6 +82,23 @@ struct TreeDetail: View {
     /// geocoder, and never stored: there is no page to open, so this is a
     /// caption rather than a fact about the tree.
     @State private var geocodedPlace: String?
+    @State private var confirmingDiscard = false
+    @State private var signCamera = false
+
+    /// The live record, so a draft that is saved on this page turns into a
+    /// saved tree on this page without being opened again.
+    private var live: Sightings.Sighting? {
+        mine.flatMap { m in sightings.all.first { $0.id == m.id } ?? m }
+    }
+    /// A tree still being added (Sightings.Sighting.draft): Save at the foot,
+    /// no "added" status yet, and leaving asks first.
+    private var isDraft: Bool { live?.draft == true }
+
+    private func saveDraft() {
+        guard let m = live, let s = sightings.commit(m.id) else { return }
+        let city = catalogue.nearest(to: s.lat, s.lng, limit: 1, withinKm: 30).first?.tree.city
+        Task { await Submission.offer(s, city: city, account: account, sightings: sightings) }
+    }
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -139,7 +156,7 @@ struct TreeDetail: View {
                     // A toast alone would not do: it leaves no trace, and
                     // somebody opening this page an hour later has no way to
                     // ask what happened to their tree.
-                    if mine != nil { mineStatus }
+                    if mine != nil && !isDraft { mineStatus }
                     // ONE BLOCK, because it answers one question: what a
                     // person needs to know before setting off (2026-09-04,
                     // after Hidde walked eight drawings of it). Two columns
@@ -180,6 +197,7 @@ struct TreeDetail: View {
                     // and transport lines are ours to research, not blanks for
                     // you to fill about a tree you already stood at.
                     story
+                    if mine != nil { signRow }
                     if mine == nil, tree.hasAccessInfo { accessBlock }
                     // "Something's wrong", low on the page, which is where he
                     // asked for it (2026-09-04: "de something's wrong knop maar
@@ -234,12 +252,46 @@ struct TreeDetail: View {
                 }
             }
             actionBar
+                // On the bar and not on the page: the page already carries the
+                // Remove dialog, and SwiftUI shows only one dialog per view, so
+                // a second one there never appeared (2026-09-26). An alert,
+                // because iOS 26 draws a dialog as a popover from its anchor
+                // and drops the cancel button with it.
+                .alert("Discard this tree?", isPresented: $confirmingDiscard) {
+                    Button("Discard", role: .destructive) {
+                        if let m = live { sightings.remove(m.id) }
+                        dismiss()
+                    }
+                    Button("Keep editing", role: .cancel) {}
+                } message: {
+                    Text("You will lose the photograph and what you have filled in.")
+                }
         }
         .brandGround()
         // The name renders once, in the body's own heading; a second copy in
         // the bar was the "title twice" mess from the findings list.
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
+        // A draft asks before it is thrown away, so the system back (and its
+        // swipe) gives way to one that asks.
+        .navigationBarBackButtonHidden(isDraft)
+        .toolbar {
+            if isDraft {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button { confirmingDiscard = true } label: {
+                        Image(systemName: "chevron.left")
+                    }
+                    .accessibilityLabel("Back")
+                    .accessibilityIdentifier("draft-back")
+
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $signCamera) {
+            CameraPicker { image in
+                if let image, let m = live { sightings.setSign(m.id, image: image) }
+            }.ignoresSafeArea()
+        }
         .toolbar {
             // Only ours can be shared: a tree only you have has no address on
             // the web to send anybody to, and inventing one would send them to
@@ -1412,6 +1464,45 @@ struct TreeDetail: View {
     /// page, and with the map card gone there is room for it (Hidde,
     /// 2026-08-21: "your text can go up, so you can put the whole story there
     /// instead of putting that behind the button").
+    /// A photograph of the sign by the tree, optional evidence and never
+    /// published (CONVENTIONS.md, "A photograph of the sign beside a tree").
+    /// It lived on the form this page replaced; it lives here now.
+    @ViewBuilder private var signRow: some View {
+        if let m = live {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Is there a sign by the tree?")
+                    .font(.brand(15, .bold))
+                    .foregroundStyle(Brand.ink)
+                if m.signPhoto != nil {
+                    Label("Photo of the sign added", systemImage: "checkmark.circle")
+                        .font(.subheadline)
+                        .foregroundStyle(Brand.inkSoft)
+                        .accessibilityIdentifier("sign-photo-taken")
+                } else {
+                    Text("You can add a photo of the sign as well. It often names the tree, the species and its age.")
+                        .font(.footnote)
+                        .foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Button {
+                        if CameraPicker.isRefused { return }
+                        signCamera = true
+                    } label: {
+                        Label("Photograph the sign", systemImage: "camera")
+                            .font(.brand(15, .semibold, relativeTo: .subheadline))
+                            .foregroundStyle(Brand.ink)
+                            .padding(.horizontal, 16)
+                            .frame(height: 44)
+                            .background(Brand.surface, in: .capsule)
+                            .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                            .contentShape(.rect)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("sign-photo")
+                }
+            }
+        }
+    }
+
     private var story: some View {
         Group {
             // WHY GO is gone from both surfaces (2026-09-12). It printed a
@@ -1652,7 +1743,17 @@ struct TreeDetail: View {
             // which is what Apple Maps does on a place with several actions and
             // no single primary one. See CONVENTIONS.md, "Landing after you
             // have added something".
-            if mine != nil {
+            if isDraft {
+                // SAVE, on a tree still being added (Hidde, 2026-09-26: the
+                // form before this page asked the same things, so the page is
+                // the form). After it the page stays and this becomes Share.
+                Button { saveDraft() } label: {
+                    Label("Save tree", systemImage: "checkmark")
+                        .lineLimit(1)
+                }
+                .buttonStyle(BrandButtonStyle())
+                .accessibilityIdentifier("draft-save")
+            } else if mine != nil {
                 // ONE ACTION, AND IT IS SHARE (Hidde, 2026-09-01: "all cta's
                 // below dont make sense, i think the only thing that makes
                 // sense below is a share button for people to share their tree

@@ -156,6 +156,8 @@ enum SightingSync {
 
     static func push(session s: Session, sightings: Sightings,
                      sighting: Sightings.Sighting) async {
+        // A draft is nobody's yet: it goes up when Save is pressed, not before.
+        guard sighting.draft != true else { return }
 
         // The photograph first, so a row never points at a file that is not
         // there yet. Uploaded once: the name is the sighting's own id, and a

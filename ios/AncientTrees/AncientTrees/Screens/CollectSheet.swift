@@ -82,8 +82,6 @@ struct CollectSheet: View {
         case place             // the photograph does not say where it was taken
         case identify          // photograph taken, more than one candidate
         case ticked(String)    // tree id, matched and claimed
-        case describe          // a tree we do not map
-        case added(UUID)       // a tree we do not map, just written and sent
         case unsure            // one of ours, and they could not say which
         case compare(String)   // looking at one candidate before committing
     }
@@ -212,8 +210,6 @@ struct CollectSheet: View {
                         switch stage {
                         case .ticked(let id): if let t = catalogue.tree(id) { tickedState(t) }
                         case .identify: identifyState
-                        case .describe: describeForm
-                        case .added(let id): addedState(id)
                         case .unsure: unsureState
                         case .compare(let id):
                             if let t = catalogue.tree(id) { compareState(t) }
@@ -322,7 +318,7 @@ struct CollectSheet: View {
                 at = origin
                 shot = UIGraphicsImageRenderer(size: .init(width: 1, height: 1))
                     .image { _ in }
-                stage = .describe
+                startDraft()
                 return
             }
             if Launch.collectIdentify {
@@ -350,9 +346,6 @@ struct CollectSheet: View {
     private var hasWork: Bool {
         if case .intro = stage { return false }
         if case .ticked = stage { return false }
-        // Already recorded and sent by the time this stage shows: nothing left
-        // for the X button to throw away, same reasoning as .ticked above.
-        if case .added = stage { return false }
         if case .unsure = stage { return false }
         return shot != nil
     }
@@ -467,7 +460,7 @@ struct CollectSheet: View {
         if Self.mayClaimWithoutAsking(source), let t = Self.confident(origin: here, trees: catalogue.trees) {
             claim(t, image: image, at: here)
         } else if Self.nearby(origin: here, trees: catalogue.trees).isEmpty {
-            withAnimation(.snappy) { stage = .describe }
+            startDraft()
         } else {
             withAnimation(.snappy) { stage = .identify }
         }
@@ -696,7 +689,7 @@ struct CollectSheet: View {
                     .accessibilityIdentifier("collect-candidate-\(i)")
             }
             Divider().padding(.vertical, 4)
-            Button { withAnimation(.snappy) { stage = .describe } } label: {
+            Button { startDraft() } label: {
                 HStack(spacing: 10) {
                     Image(systemName: "plus.circle.fill")
                         .font(.system(size: 22)).foregroundStyle(Brand.moss)
@@ -1043,8 +1036,8 @@ struct CollectSheet: View {
                 // The list is the honest destination whatever its length: it
                 // holds all three answers, including "I am not sure which".
                 // Only with nothing of ours near at all is the form right.
-                withAnimation(.snappy) {
-                    stage = candidates.isEmpty ? .describe : .identify
+                if candidates.isEmpty { startDraft() } else {
+                    withAnimation(.snappy) { stage = .identify }
                 }
             } label: {
                 HStack { Spacer(); Text("I am not sure it was this one")
@@ -1133,242 +1126,6 @@ struct CollectSheet: View {
 
     // MARK: - A tree we do not have
 
-    private var describeForm: some View {
-        Group {
-            Text("We do not have this one")
-                .font(.brand(24, .heavy))
-                .foregroundStyle(Brand.ink)
-            Text("It is yours either way. Tell us about it and we will look at it for the map.")
-                .font(.body)
-                .foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-
-            if let shot {
-                Image(uiImage: shot)
-                    .resizable().aspectRatio(contentMode: .fill)
-                    .frame(height: 170).frame(maxWidth: .infinity)
-                    .clipShape(.rect(cornerRadius: 14))
-                    .overlay(alignment: .bottomTrailing) {
-                        Button("Retake") { openCamera() }
-                            .font(.caption.weight(.semibold))
-                            .foregroundStyle(.white)
-                            .padding(.horizontal, 10).padding(.vertical, 6)
-                            .background(.black.opacity(0.45), in: .capsule)
-                            .padding(10)
-                    }
-                    .accessibilityIdentifier("spot-camera")
-            }
-
-            // TWO FIELDS, NOT ONE, AND THIS IS THE CONVENTION RATHER THAN A
-            // REDESIGN. Until 2026-09-08 a single field asked "What makes it
-            // special? A name, a species, a story…" and then USED THE SAME TEXT
-            // AS THE TREE'S NAME, cut at 60 characters. So writing a real
-            // sentence turned your sentence into the title, and writing nothing
-            // was rewarded with a tidy-looking "A tree I found". Eight of the
-            // first eight photographs came in with the default name and an
-            // empty note, seven of them literally empty.
-            //
-            // Google Maps' "add a missing place" keeps the name as its own
-            // required field and never asks why the place is good; the opinion
-            // is a review, a separate act, later. iNaturalist's notes field is
-            // for context a photograph cannot carry, not for advocacy. Both
-            // separate what the thing IS from what you thought of it, and our
-            // single field had merged them.
-            //
-            // So the reason is asked in the reader's own terms, and it stays
-            // OPTIONAL: none of the references makes somebody argue for a place
-            // before they may add it, and a required justification would turn a
-            // thirty-second act into homework.
-            //
-            // The placeholder is the question and nothing else. The first draft
-            // added "Tell somebody else why they should come and see it", which
-            // is an order and is the exact habit PRODUCT_COPY.md exists to
-            // stop, and it is more words on a screen Hidde has twice said has
-            // too many.
-            VStack(alignment: .leading, spacing: 10) {
-                TextField("What is it called, or what kind of tree?",
-                          text: $callsIt)
-                    .padding(13)
-                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
-                    .accessibilityLabel("What the tree is called, or what kind it is")
-
-                TextField("Why is it worth the walk?",
-                          text: $why, axis: .vertical)
-                    .lineLimit(3...6)
-                    .padding(13)
-                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
-                    .accessibilityLabel("Why this tree is worth the walk")
-            }
-
-            // HOW THICK, and it is here rather than on a later screen because
-            // it is the one fact that can only be answered while standing at
-            // the trunk. Hidde, 2026-09-11: "en bij het toevoegen van een boom
-            // een nieuw veld - girth".
-            //
-            // WHY IT EARNS A THIRD FIELD on a form we have twice cut down.
-            // Girth is the only measurement an AGE can be derived from rather
-            // than invented, which is this project's own rule since 2026-08-16
-            // and now a script (scripts/ages.py). Nothing else somebody can
-            // give us in five seconds turns into a fact on a page.
-            //
-            // THE HUG, not centimetres. CONVENTIONS.md, "Asking a contributor
-            // how thick a tree is": the Ancient Tree Inventory has run fifteen
-            // years of citizen tree recording and hands anybody without a tape
-            // the hug, one adult hug being 1.5 m fingertip to fingertip. It is
-            // the only measurement available to somebody holding a phone in a
-            // park, and it sidesteps the metric-or-imperial question a number
-            // would raise. The precision costs nothing either: a hug is good
-            // to about 25 cm, a LiDAR scan to 3, and the growth rate makes the
-            // derived age a band a factor of two wide whichever you use.
-            //
-            // OPTIONAL, like both fields above it and for the reason recorded
-            // there: none of the references makes somebody fill anything in
-            // before they may contribute.
-            VStack(alignment: .leading, spacing: 8) {
-                Text("How thick is the trunk?")
-                    .font(.brand(15, .bold))
-                    .foregroundStyle(Brand.ink)
-                // THE EXPLANATION SITS ABOVE THE CHIPS, which is not where a
-                // footnote normally goes. It is not help after the fact: it
-                // defines the unit somebody is about to count in, and a chip
-                // saying "2 hugs" means nothing until you have read it. Our own
-                // web form does the same, hint between the label and the field
-                // (site/src/pages/contribute.astro, "Where does it stand?").
-                Text("You can measure it by putting your arms around it. One adult hug is about a metre and a half.")
-                    .font(.footnote)
-                    .foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-                HugRow(picked: $hugs)
-            }
-
-            // THE SIGN, a second photograph and an optional one (Hidde,
-            // 2026-09-24: "vaak staat er een bordje bij een oude boom dus is
-            // het best handig om naar een extra foto te vragen"). A sign names
-            // the species, often the age and the tree itself, which is exactly
-            // what settles which trunk somebody photographed and what a check
-            // would otherwise have to find in two sources.
-            //
-            // Convention: iNaturalist lets you add more photographs to one
-            // observation, as extra evidence beside the first, and never asks
-            // for them. So this is one quiet button that can be ignored, and
-            // no step of its own (CONVENTIONS.md, "A photograph of the sign
-            // beside a tree"). It is evidence and not the tree's picture: it is
-            // never published and never goes to the private page.
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Is there a sign by the tree?")
-                    .font(.brand(15, .bold))
-                    .foregroundStyle(Brand.ink)
-                Text("You can add a photo of the sign as well. It often names the tree, the species and its age.")
-                    .font(.footnote)
-                    .foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-                if let signShot {
-                    HStack(spacing: 12) {
-                        Image(uiImage: signShot)
-                            .resizable().aspectRatio(contentMode: .fill)
-                            .frame(width: 56, height: 56)
-                            .clipShape(.rect(cornerRadius: 10))
-                            .accessibilityHidden(true)
-                        Text("Photo of the sign")
-                            .font(.subheadline)
-                            .foregroundStyle(Brand.ink)
-                        Spacer(minLength: 8)
-                        Button("Remove") { self.signShot = nil }
-                            .font(.subheadline.weight(.semibold))
-                            .foregroundStyle(Brand.moss)
-                            .frame(minHeight: 44)
-                            .accessibilityLabel("Remove the photo of the sign")
-                    }
-                    .accessibilityIdentifier("sign-photo-taken")
-                } else {
-                    Button { openCamera(forSign: true) } label: {
-                        Label("Photograph the sign", systemImage: "camera")
-                            .font(.brand(15, .semibold, relativeTo: .subheadline))
-                            .foregroundStyle(Brand.ink)
-                            .padding(.horizontal, 16)
-                            .frame(height: 44)
-                            .background(Brand.surface, in: .capsule)
-                            .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
-                            .contentShape(.rect)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityIdentifier("sign-photo")
-                }
-            }
-
-            HStack(spacing: 8) {
-                Image(systemName: "leaf")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-                // NO CHOICE here any more (Hidde, 2026-08-24: "ik denk ook
-                // niet dat je mensen de optie moet geven om te kiezen om hem
-                // toe te voegen aan de database of niet - hij komt uberhaupt
-                // automatisch bij ons terecht of ze het willen of niet en dan
-                // kiezen wij of die het waard is"). Two buttons that differed
-                // only in whether we were allowed to look at it made the
-                // reader carry a decision that is ours, and most people would
-                // have taken the one that gave us nothing.
-                //
-                // THIS SENTENCE HAS BEEN WRONG TWICE, in opposite directions.
-                // Until 08-28 it said the photograph never leaves the phone,
-                // which stopped being true the day SightingSync landed. Then it
-                // said nobody else sees it, which was true of the code and
-                // false of the intention, on the one screen where somebody
-                // hands us a photograph FOR the map. Hidde, 2026-09-02: "het
-                // hele idee is dat als mensen fotos indienen dat hij potentieel
-                // voor het grote publiek word gebruikt", and "ook als de boom
-                // er al is en geen foto heeft of de foto van de gebruiker is
-                // beter gaan we die gebruiken."
-                //
-                // So it says what we may actually do, at the moment somebody
-                // decides to send it, which is the only moment consent means
-                // anything. No toggle beside it, per his 2026-08-24 ruling that
-                // the reader should not carry a choice that is ours.
-                //
-                // NO NAME, AND NOT A WORD ABOUT DELETING AN ACCOUNT (Hidde,
-                // 2026-09-04: "hier staat veel te veel tekst, begin hier niet
-                // over delete account, en laten we niet mensen hun naam noemen,
-                // laten we alleen hun fotos gebruiken als ze goed zijn, het kan
-                // mensen afschrikken als hun naam erbij staat").
-                //
-                // This retires the credit half of the 2026-09-02 decision: a
-                // photograph somebody sends is published without a name on it.
-                // The deletion sentence went with it, because it only existed
-                // to explain what happens to a name that will now never be
-                // there, and it raised losing your account at the moment
-                // somebody is deciding to give us something.
-                Text("Your photograph can appear on the tree's page. We read every word you send.")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-
-            // THE PRIVATE LINK, said before the tap rather than only after it
-            // (Hidde, 2026-09-03: sharing is now on from the moment a tree is
-            // added, so somebody can open theirs from the thank-you mail
-            // without a separate step). Consent belongs at the moment it is
-            // decided, the same reasoning as the sentence above, not buried in
-            // a menu item three screens later.
-            HStack(spacing: 8) {
-                Image(systemName: "link")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-                Text("We also make a private page for it that only somebody with the link can open. You can turn that off any time.")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-
-            Button { keepMine() } label: {
-                HStack { Spacer()
-                    if sending { ProgressView().tint(.white) }
-                    Label("Add this tree", systemImage: "checkmark")
-                        .font(.brand(17, .bold))
-                    Spacer() }
-                    .padding(.vertical, 15)
-                    .background(Brand.moss, in: .rect(cornerRadius: 15))
-                    .foregroundStyle(.white)
-            }
-            .buttonStyle(.plain)
-        }
-    }
-
     /// ADDING A TREE NEEDS AN ACCOUNT (Hidde, 2026-08-29, asked directly:
     /// "nee, inloggen verplicht"). It is the rule he set for the thumbs on
     /// 2026-08-21 and for the heart and this camera on 2026-08-25, now true of
@@ -1384,116 +1141,30 @@ struct CollectSheet: View {
     /// this sheet is one afternoon away, and a rule enforced at two call sites
     /// is a rule that leaks at the third. Both current callers check first, so
     /// in practice this never fires.
-    private func keepMine() {
+    private func startDraft() {
         guard account.isSignedIn else {
             nudge.require(.general)
             return
         }
         let here = at ?? origin
-        // The name is its own field now, so the note is never silently promoted
-        // into a title. Left empty, the tree is named from what we DO know,
-        // "A tree in Nara", which becomes "Oak in Nara" the moment a species
-        // is filled in on its page (Sightings.fallbackName). "A tree I found"
-        // survives only for somebody far from every tree we map, where we
-        // genuinely know neither.
-        let named = callsIt.trimmingCharacters(in: .whitespacesAndNewlines)
+        // Named from what we DO know, "A tree in Nara", which becomes "Oak in
+        // Nara" the moment a species is filled in (Sightings.fallbackName).
+        // The name, the story, the girth and the sign are all asked on the
+        // page itself now.
         let nearest = catalogue.nearest(to: here.lat, here.lng, limit: 1, withinKm: 30).first
         let place = Sightings.placePhrase(nearestCity: nearest?.tree.city, km: nearest?.km)
         let s = sightings.record(treeId: nil,
-                                 name: named.isEmpty
-                                    ? Sightings.fallbackName(species: nil, place: place)
-                                    : String(named.prefix(60)),
-                                 note: why, lat: here.lat, lng: here.lng, image: shot,
-                                 date: taken ?? Date(), girthHugs: hugs, place: place,
-                                 sign: signShot)
+                                 name: Sightings.fallbackName(species: nil, place: place),
+                                 lat: here.lat, lng: here.lng, image: shot,
+                                 date: taken ?? Date(), place: place,
+                                 draft: true, fixNote: fix.note)
         shot = nil
-        signShot = nil
-        // The payoff beat this path was missing (Hidde, 2026-09-03: "ik mis
-        // ook een vink bevestiging na het nemen van de foto dat de tree is
-        // toegevoegd"). tickedState already gives the matched-tree path a
-        // checkmark and a sentence; this path went straight to the tree's own
-        // page with nothing in between, so the moment somebody presses "Add
-        // this tree" had no answer of its own. addedState is that answer, and
-        // the trip to the tree's page happens when they press its own button.
-        withAnimation(.snappy) { stage = .added(s.id) }
-        // And it reaches us on its own, with no second step to remember. The
-        // queue-until-sign-in branch that used to be here is gone with the
-        // signed-out route that created it.
-        Task { await transmit(s.id) }
-    }
-
-    /// The payoff for a tree we did not already have. Mirrors tickedState:
-    /// same icon, same shape, because both answer the same question (did
-    /// this work?) and a reader should not have to learn two answers to it.
-    private func addedState(_ id: UUID) -> some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Image(systemName: "checkmark.seal.fill")
-                .font(.system(size: 44))
-                .foregroundStyle(Brand.moss)
-            Text("You added it")
-                .font(.brand(24, .heavy))
-                .foregroundStyle(Brand.ink)
-            Text("It is in your trees now, with your photograph.")
-                .font(.subheadline)
-                .foregroundStyle(Brand.inkSoft)
-            // The two halves said apart, on Hidde's own sketch of the flow
-            // (2026-09-07): "it's added, we will do a double check for the
-            // platform, but added to your trees already?" Yes, and saying so
-            // is the whole point. Your collection is yours the second you
-            // press the shutter and nothing we decide later takes it away;
-            // whether the tree earns a place on the map is our question, not a
-            // condition on theirs. Left unsaid, somebody reasonably assumes
-            // their tree is on the map, and hears a later silence as a no.
-            Text("We will look at whether it belongs on the map as well. Either way it stays in your trees.")
-                .font(.footnote)
-                .foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-            Button {
-                dismiss()
-                // Straight to the tree you just made, because that is where
-                // you finish the job: the same page ours get, with the fields
-                // you have not filled in yet open (Hidde, 2026-08-24: "als ik
-                // uit die flow kom van toegevoegde boom wil ik eindigen op de
-                // diepere boompagina van de boom die ik net heb gemaakt").
-                navigator.push = .mine(id)
-            } label: {
-                HStack { Spacer(); Text("See it").font(.brand(17, .bold)); Spacer() }
-                    .padding(.vertical, 15)
-                    .background(Brand.moss, in: .rect(cornerRadius: 15))
-                    .foregroundStyle(.white)
-            }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("collect-added-done")
-        }
-    }
-
-    /// Sends the WORDS, and nothing else.
-    ///
-    /// It used to record the sighting as well, which was right when offering
-    /// was a second button and is a duplicate now that keeping and offering are
-    /// one act: keepMine() has already written the tree by the time this runs.
-    private func transmit(_ id: UUID) async {
-        sending = true
-        let here = at ?? origin
-        var d = Submission.Draft()
-        d.kind = .tree
-        d.why = why
-        // The sighting's own id, so the thank-you mail can link straight to
-        // its unlisted page instead of printing the raw coordinate below.
-        // Nothing else in `tree` for a kind:tree row ever looks like a uuid,
-        // so contributor_reply.py tells the two shapes apart on sight.
-        d.tree = id.uuidString
-        // Say which of the three ways this coordinate arrived. A run reading
-        // the submission treats a hand-placed pin differently from a device
-        // fix, and until 2026-08-28 this line called all of them GPS.
-        d.locationHint = String(format: "%.5f, %.5f (%@)", here.lat, here.lng, fix.note)
-        d.city = nearbyCityName ?? ""
-        let ok = await Submission.send(d, from: "app:collect",
-                                       token: await account.freshToken())
-        // A failed send is a network problem and never a reason to lose
-        // somebody's tree: it stays yours and stays queued.
-        sightings.update(id, status: ok ? .sent : .mine)
-        sending = false
+        // STRAIGHT TO THE TREE'S OWN PAGE, as a draft with Save at the foot
+        // (Hidde, 2026-09-26: the form in front of it "asks the same info").
+        // iNaturalist and Strava both end the capture on the thing itself with
+        // Save below it; CONVENTIONS.md, "Adding a tree: straight to its page".
+        dismiss()
+        navigator.push = .mine(s.id)
     }
 
     /// Best guess at which of our cities the person is in, for the triage

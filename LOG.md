@@ -10,6 +10,29 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-26 (session) - Hidde's 1.0.2 test: eight fixes live, and adding a tree now ends on its own page
+
+From his list, all on main and in the app: the tab bar sits 22 pt off the edge
+like Apple's own bars (was 38); the recentre control no longer vanishes above
+the list on every map (the sheet published its new stop plus its old drag for a
+frame, 677 pt, and the control hid under a sheet that was not there); country
+maps open on the mainland on web and app (map_focus for France, Spain,
+Portugal, the US, Japan, UK, NL, DK, and a preflight NOTE for the next country
+with cities an ocean apart); Italy's face is the Tricase oak (face_tree_id);
+Legal is Sources; the settings footer is only the version; the tree credit
+reads "Photo:"; the empty search offers the most visited places, web and app.
+
+Then the flow he called horrible: the "We do not have this one" form is gone. A
+tree we do not map goes from the photograph to its own page as a draft with
+Save tree at the foot (CONVENTIONS.md, "Adding a tree: straight to its page").
+Drafts stay on the phone until saved. The hug chips went with the form; girth
+is now the page's own metres field, whose hint still explains the hug.
+
+Open with him: the review flow he asked for is satisfaction gating, which App
+Store guideline 5.6.1 forbids, and day-trip trees as page-less singles clash
+with 2026-08-31. Build 15 never appeared in App Store Connect; the next archive
+carries all of this.
+
 
 ## 2026-09-27 - Night run 2026-09-27 00:01 UTC ended without saying anything
 
