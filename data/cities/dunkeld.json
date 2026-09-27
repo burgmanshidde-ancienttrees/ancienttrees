@@ -1,0 +1,66 @@
+{
+  "city": "Dunkeld",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Dunkeld is a small town on the River Tay in Perth and Kinross, and its tree stands a short walk upstream on the Inver Walk. Niel Gow's Oak is named for the 18th-century fiddler who lived nearby, and tradition says he wrote his tunes sitting under it. The oak itself is roughly 300 years old, a sessile oak with a trunk 5.90 metres round, and in 2014 it became Scotland's first entry in the European Tree of the Year.",
+  "meta_description": "Niel Gow's Oak near Dunkeld, Scotland: a 300 year old sessile oak on the Tay, named for the fiddler said to have played beneath it. Free to visit.",
+  "question_meta": "Dunkeld's remarkable tree is Niel Gow's Oak, a 300 year old sessile oak on the Inver Walk by the River Tay.",
+  "question_answer": "Dunkeld's notable tree is Niel Gow's Oak, on the Inver Walk beside the River Tay, named for the 18th-century fiddler Niel Gow who lived a short walk upstream in Inver.",
+  "question_context": "Local tradition says Gow (1727 to 1807) sat under this oak to write his tunes, and that the Duke of Atholl could hear him play across the Tay; the connection has been in print since at least 1855, when the Illustrated London News made it. The oak itself is roughly 300 years old, seeded around 1700, which made it a young tree while Gow was alive. It is a sessile oak, trunk 5.90 metres round, now hollowing with decaying wood in the crown, which is what age looks like in an oak rather than a sign it is dying. A bench sits beside it carrying lines from Michael Marra's song Niel Gow's Apprentice, replacing one destroyed by falling branches in December 2012. In 2014 it became Scotland's first entry in the European Tree of the Year, placing seventh of ten, and it was shortlisted again at home in 2016. It stands on the public Inver Walk on Forestry and Land Scotland ground, free to reach on foot from Inver village.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Dunkeld?",
+      "a": "Niel Gow's Oak, a sessile oak 5.90 metres round on the Inver Walk beside the River Tay, named for the fiddler Niel Gow."
+    },
+    {
+      "q": "How old is Niel Gow's Oak?",
+      "a": "Roughly 300 years, seeded around 1700, which made it young while Gow himself was alive and playing nearby."
+    },
+    {
+      "q": "Can you visit Niel Gow's Oak?",
+      "a": "Yes, free. It stands on the public Inver Walk, part of the Dunkeld Path Network on Forestry and Land Scotland ground, with a bench beside it."
+    },
+    {
+      "q": "How do you get to Niel Gow's Oak?",
+      "a": "About 1.5 km, a 20 minute walk, from Inver village along the Tay-side path; Dunkeld & Birnam mainline railway station is roughly 2 km away."
+    }
+  ],
+  "hero_tree_id": "dnk_001",
+  "oldest_tree_id": "dnk_001",
+  "trees": [
+    {
+      "id": "dnk_001",
+      "name": "Niel Gow's Oak",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "age_basis": "source",
+      "girth_cm": 590,
+      "location": {
+        "address": "Inver Walk, Craigvinean Forest, south bank of the River Tay, near Dunkeld, Perth and Kinross, Scotland",
+        "latitude": 56.557928,
+        "longitude": -3.605211,
+        "neighbourhood": "Dunkeld and Birnam"
+      },
+      "story": "Local tradition says the most celebrated Scottish fiddler of the 18th century wrote his tunes sitting under this oak, and that the Duke of Atholl could hear him across the Tay. Niel Gow (1727 to 1807) lived in Inver, a short walk upstream, and his name has been attached to the tree since at least 1855, when the Illustrated London News printed the connection.\n\nThe oak is roughly 300 years old, seeded around 1700, which means it was a young tree while Gow was playing. It is a sessile oak with a trunk 5.90 metres round, now hollowing, with decaying wood up in the crown. That is what age looks like in an oak, not a sign it is finished.\n\nThe tree has a bench of its own, and the bench has had a harder life than the tree. The original was flattened by falling branches in December 2012 and replaced in March 2013. The new one carries lines from Michael Marra's song Niel Gow's Apprentice, so you can sit where the fiddler supposedly sat and read a modern musician's tribute to him.\n\nIn 2014 it became Scotland's first entry in the European Tree of the Year, placing seventh of ten with 1,740 votes, and it was shortlisted again at home in 2016. It stands on the Inver Walk, free, beside the river the music is said to have crossed.",
+      "how_to_recognise": "You can recognise it by the bench and plaque beside it, the bench carrying lines from Michael Marra's song. It stands on the Inver Walk by the Tay, a hollowing sessile oak 5.90 metres round.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2014/Dub-Niela-Gowse",
+        "https://en.wikipedia.org/wiki/Niel_Gow's_Oak",
+        "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=2114"
+      ],
+      "access": "Free. Stands beside the Inver Walk, part of the public Dunkeld Path Network, on Forestry Commission (now Forestry and Land Scotland) land; a bench and plaque sit at the tree.",
+      "transport": "About 1.5 km / 20 minute walk from Dunkeld along the Tay-side path from Inver village; Dunkeld & Birnam has a mainline railway station roughly 2 km away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "city": "Achnacarry",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Achnacarry is a Highland estate on the Great Glen near Loch Arkaig, and its tree stands hidden inside a working Sitka spruce plantation. Nobody knew the Skipinnish Oak was there until 2009, when a member of the ceilidh band Skipinnish, playing nearby, mentioned a big oak his father had told him about. It is at least 400 years old, 8 metres round, and carries a rare lichen found almost nowhere else in Britain. It won the UK's Tree of the Year in 2024.",
+  "meta_description": "The Skipinnish Oak, Achnacarry, Scotland: an oak at least 400 years old, 8 metres round, hidden in a working forestry plantation. Free access, no path.",
+  "question_meta": "Achnacarry's remarkable tree is the Skipinnish Oak, at least 400 years old, hidden inside a working spruce plantation.",
+  "question_answer": "Achnacarry's notable tree is the Skipinnish Oak, standing in a Sitka spruce plantation on the Achnacarry Estate near Loch Arkaig, in the Scottish Highlands.",
+  "question_context": "Until 2009 the foresters working this plantation did not know the oak was there; a member of the ceilidh band Skipinnish, playing nearby for a Native Woodland Discussion Group event, mentioned a big oak his father had told him about, and led the experts to it the next day. It is at least 400 years old by the estimate of the contest and the published record; one article floats a thousand, unsupported. There is a small dispute over the species too: the European Tree of the Year entry calls it a pedunculate oak, while the Woodland Trust's own register and other records call it sessile, and this page follows the register. The trunk is 8 metres round, and it carries the black-eyed Susan lichen, seldom found outside western Scotland, plus beefsteak fungus. It won the UK Tree of the Year in 2024 and placed seventh in Europe in 2025. The honest caveat: it stands in a working plantation with no path, no sign and possibly forestry machinery, reached under Scotland's statutory right of responsible access rather than any visitor route. Bring a GPS and expect to search for it.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Achnacarry?",
+      "a": "The Skipinnish Oak, a veteran oak 8 metres round standing among Sitka spruce on the Achnacarry Estate, only found in 2009."
+    },
+    {
+      "q": "How old is the Skipinnish Oak?",
+      "a": "At least 400 years, by the contest's and Woodland Trust's estimate. A claim of a thousand years circulates online but is unsupported."
+    },
+    {
+      "q": "Can you visit the Skipinnish Oak?",
+      "a": "Yes, free, under Scotland's statutory right of responsible access, but there is no path, sign or car park, and forestry machinery may be present. Bring a GPS."
+    },
+    {
+      "q": "How do you get to the Skipinnish Oak?",
+      "a": "No public transport reaches Achnacarry directly. Spean Bridge station on the West Highland Line is the nearest, a few km away, then a walk or drive to the estate."
+    }
+  ],
+  "hero_tree_id": "ach_001",
+  "oldest_tree_id": "ach_001",
+  "trees": [
+    {
+      "id": "ach_001",
+      "name": "The Skipinnish Oak",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "at least 400 years",
+      "age_min": 400,
+      "age_max": 600,
+      "age_basis": "source",
+      "girth_cm": 800,
+      "location": {
+        "address": "Sitka spruce plantation, Achnacarry Estate, near Loch Arkaig, Lochaber, Scottish Highlands",
+        "latitude": 56.947153,
+        "longitude": -4.996783,
+        "neighbourhood": "Achnacarry, Lochaber"
+      },
+      "story": "Until 2009 the foresters working this plantation did not know the oak was there. It took a ceilidh band to point it out. Members of Skipinnish were playing nearby for a Native Woodland Discussion Group event; one of them mentioned a big oak his father had told him about, and the next day he led the experts to it. That is how an oak eight metres round got onto the Ancient Tree Inventory and got its name.\n\nIt is at least 400 years old by the estimate of the contest and the published record. One article floats a thousand, unsupported. There is also a small dispute over what it is. The Tree of the Year entry calls it a pedunculate oak, while the Woodland Trust's register and other records call it sessile, and we follow the register. If you know oaks, look at the acorn stalks and tell us.\n\nThe tree carries a rare lichen, the black-eyed Susan, seldom found outside western Scotland, plus beefsteak fungus and plants rooted on the tree itself. It is a Scottish Heritage Tree and a Tree of National Special Interest, won the UK Tree of the Year in 2024 with 21 percent of the vote, and placed seventh in Europe in 2025.\n\nKnow what you are in for. It stands in a working Sitka spruce plantation on the Achnacarry Estate, with no path, no sign and possibly forestry machinery. Our pin is approximate. You will need a GPS and some patience.",
+      "how_to_recognise": "You can recognise it as a veteran oak standing among Sitka spruce, its trunk 8 metres round. It stands in the plantation on the Achnacarry Estate, and our pin is only approximate.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2025/the-skipinnish-oak",
+        "https://en.wikipedia.org/wiki/Skipinnish_Oak",
+        "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=236486",
+        "https://www.woodlandtrust.org.uk/press-centre/2024/11/skipinnish-oak-crowned-uk-tree-of-the-year-2024/"
+      ],
+      "access": "Free, but not a park: the tree stands within a working Sitka spruce plantation on the privately owned Achnacarry Estate. Woodland Trust's Ancient Tree Inventory records its access category as 'Public - Scottish Outdoor Access', covered by Scotland's statutory right of responsible access (the Land Reform (Scotland) Act 2003 / Scottish Outdoor Access Code) rather than by an estate invitation; there is no visitor infrastructure, marked path or car park, and forestry operations (harvesting machinery, felled timber) may be present. This is a bushwhack into a commercial plantation, not a stroll.",
+      "transport": "No public transport reaches Achnacarry directly; nearest railway station is Spean Bridge (West Highland Line), a few km away, then a walk/drive along the Great Glen to the estate and into the plantation. No official visitor route exists, so reaching the exact tree requires local knowledge or a GPS device.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

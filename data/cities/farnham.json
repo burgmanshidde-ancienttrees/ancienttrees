@@ -1,0 +1,66 @@
+{
+  "city": "Farnham",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Farnham is a Surrey market town, and its tree grows out of the ruins of Waverley Abbey on its edge, England's first Cistercian house, founded in 1128 and dissolved in 1536. The Waverley Abbey Yew took root sometime after, so five hundred years is the outer edge of its age rather than a floor. It is multi-stemmed, 6.78 metres round, spreading over the broken stonework, and in 2022 it won the Woodland Trust's UK Tree of the Year.",
+  "meta_description": "The Waverley Abbey Yew, Farnham, England: a multi-stemmed yew up to 500 years old, growing over medieval abbey ruins. Free to visit.",
+  "question_meta": "Farnham's remarkable tree is the Waverley Abbey Yew, up to 500 years old, growing among the abbey's ruins.",
+  "question_answer": "Farnham's notable tree is the Waverley Abbey Yew, growing among the ruins of Waverley Abbey off the B3001 near Tilford, Surrey.",
+  "question_context": "Waverley Abbey was founded in 1128 and dissolved in 1536; the yew came after, and most accounts have it taking root once the abbey was abandoned, which makes the European Tree of the Year entry's figure of roughly 500 years an outer edge rather than a confirmed floor. It may be younger than it looks. It is multi-stemmed, 6.78 metres round, its roots arching above the ground before diving back among the monks' old foundations, and the trunk carries holes and decay that make it a home for wildlife. What it has witnessed is the long second life of a ruin, the abbey reduced to stonework while the yew spread across it. In 2022 it won the Woodland Trust's UK Tree of the Year, then placed seventh in the 2023 European contest with 9,413 votes. English Heritage manages the site and admits visitors free during daylight hours; the walk from the on-site car park crosses about 350 metres of field, through a kissing gate and often past grazing cattle.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Farnham?",
+      "a": "The Waverley Abbey Yew, a multi-stemmed yew 6.78 metres round growing among the ruins of Waverley Abbey."
+    },
+    {
+      "q": "How old is the Waverley Abbey Yew?",
+      "a": "Up to about 500 years, though most accounts have it rooting only after the abbey's 1536 dissolution, so that figure is an outer edge rather than a firm floor."
+    },
+    {
+      "q": "Can you visit the Waverley Abbey Yew?",
+      "a": "Yes, free. English Heritage manages the abbey ruins and admits visitors at any reasonable time during daylight hours, no ticket."
+    },
+    {
+      "q": "How do you get to the Waverley Abbey Yew?",
+      "a": "A roughly 350 metre walk across a field from the on-site car park, through a kissing gate; Farnham railway station is about 3 km away."
+    }
+  ],
+  "hero_tree_id": "frn_001",
+  "oldest_tree_id": "frn_001",
+  "trees": [
+    {
+      "id": "frn_001",
+      "name": "Waverley Abbey Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "up to 500 years",
+      "age_min": 450,
+      "age_max": 550,
+      "age_basis": "source",
+      "girth_cm": 678,
+      "location": {
+        "address": "Waverley Abbey ruins, off B3001 near Tilford, Farnham, Surrey, England",
+        "latitude": 51.200181,
+        "longitude": -0.759694,
+        "neighbourhood": "Waverley Abbey"
+      },
+      "story": "This yew grows out of the ruins of a medieval Cistercian abbey, and its roots arch above the ground before diving back in among the monks' old foundations. Waverley Abbey was founded in 1128 and dissolved in 1536. The yew came after.\n\nHow long after is the honest question. The European Tree of the Year entry calls it roughly 500 years old, but most accounts have it taking root once the abbey was abandoned, which makes five centuries the outer edge of what anyone can support rather than a floor. It may be younger than it looks. A multi-stemmed yew with a girth of 6.78 metres, spreading over broken stonework, looks older than almost anything.\n\nWhat it has seen is the long second life of a ruin, the abbey reduced to stonework while the yew spread across it. The trunk now carries holes and decay, and those make it a home for wildlife.\n\nIn 2022 it won the Woodland Trust's UK Tree of the Year, and in 2023 it went on to the European contest, placing seventh with 9,413 votes. English Heritage looks after the site and lets anyone in during daylight without a ticket. The walk from the car park crosses a field with a kissing gate and, often, cattle.",
+      "how_to_recognise": "You can recognise it by the many stems and the roots arching above the ground, growing over the abbey's broken stonework. It stands among the Waverley Abbey ruins, a yew 6.78 metres round.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2023/waverley-abbey-yew",
+        "https://ati.woodlandtrust.org.uk/tree-search/tree?treeid=6525",
+        "https://www.english-heritage.org.uk/visit/places/waverley-abbey/"
+      ],
+      "access": "Free. English Heritage manages Waverley Abbey and admits visitors at any reasonable time during daylight hours, no entrance fee. A roughly 350m walk across a field (uneven ground, a kissing gate, and grazing cattle) leads to the ruins where the yew stands; small on-site car park.",
+      "transport": "About a 5 minute walk from the on-site car park; Farnham railway station is roughly 3km away, with the abbey otherwise reached by car or bus plus a short walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

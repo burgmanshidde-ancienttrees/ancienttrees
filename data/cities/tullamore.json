@@ -1,0 +1,65 @@
+{
+  "city": "Tullamore",
+  "country": "Ireland",
+  "status": "needs_curation",
+  "intro": "Tullamore is an Offaly market town, and its tree stands just inside the gate of the Charleville Forest demesne on its edge. The King Oak has stood there for somewhere between 400 and 800 years, its branches propped and spreading up to 27 metres, and local superstition says a falling limb from it means a death in the family that owns the estate. Thomas Pakenham put it in Meetings with Remarkable Trees; in 2013 it finished third in the European Tree of the Year.",
+  "meta_description": "The King Oak in Tullamore, Ireland: a 400 to 800 year old oak on the Charleville Forest demesne, branches propped and spreading 27 metres. Free to visit.",
+  "question_meta": "Tullamore's remarkable tree is the King Oak, a 400 to 800 year old oak on the Charleville Forest demesne.",
+  "question_answer": "Tullamore's notable tree is the King Oak, on the Charleville Forest demesne just inside the estate's main gate, County Offaly. Estimates put it at 400 to 800 years old.",
+  "question_context": "The King Oak's age has never been narrowed past that 400 to 800 year range, in the European Tree of the Year entry and in the published record alike. It was already worth writing down in the 17th century. Its trunk measures 8.29 metres round and it stands 19 metres tall, but the branches are the thing, spreading as far as 27 metres and now propped where they bow toward the ground, the shape left by centuries of pollarding for timber. Local superstition ties the family's fortunes to the tree: when a limb falls, someone in the owning family is said to die, and in 1963 a lightning strike split the trunk weeks before the estate's owner, Charles Howard-Bury, died. Thomas Pakenham included it in Meetings with Remarkable Trees, and in 2013 it placed third in Europe's Tree of the Year. It stands just inside the demesne's main entrance, free to walk into year round; the castle itself is a separate paid tour and is not needed to reach the tree.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Tullamore?",
+      "a": "The King Oak, on the Charleville Forest demesne just inside the main entrance, a pedunculate oak 8.29 metres round with branches spreading up to 27 metres."
+    },
+    {
+      "q": "How old is the King Oak?",
+      "a": "Somewhere between 400 and 800 years, a range nobody has narrowed. It was already notable in the 17th century."
+    },
+    {
+      "q": "Can you visit the King Oak?",
+      "a": "Yes, free. It stands just inside the gate of Charleville Forest, whose woodland walks are open to the public year round with no entrance fee."
+    },
+    {
+      "q": "How do you get to the King Oak?",
+      "a": "It is roughly 3 km, about a 40 minute walk, from Tullamore town centre, which has its own Irish Rail station on the Dublin to Galway line."
+    }
+  ],
+  "hero_tree_id": "tlm_001",
+  "oldest_tree_id": "tlm_001",
+  "trees": [
+    {
+      "id": "tlm_001",
+      "name": "King Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "400 to 800 years",
+      "age_min": 400,
+      "age_max": 800,
+      "age_basis": "source",
+      "girth_cm": 829,
+      "location": {
+        "address": "Charleville Forest, Charleville Demesne, Tullamore, County Offaly, Ireland",
+        "latitude": 53.266639,
+        "longitude": -7.518469,
+        "neighbourhood": "Charleville Forest Estate"
+      },
+      "story": "Local superstition says that when this oak drops a limb, a member of the family that owns it will die. In 1963 lightning split its main trunk, and within weeks Charles Howard-Bury, the estate's owner, was dead. Nobody in Tullamore needed the point made twice.\n\nThe King Oak has stood on the Charleville demesne for somewhere between 400 and 800 years; the European Tree of the Year entry and the published record both give that range, and nobody has narrowed it. It was already worth writing down in the 17th century, which is when it first appears on paper. The trunk measures 8.29 metres round and the tree is 19 metres tall, but the width is the thing: its branches reach out as far as 27 metres and bow towards the ground.\n\nThe lower limbs are now propped, so part of what you are looking at is a very old tree being held up on purpose. Centuries of pollarding for timber gave it that shape, and generations of local teenagers climbed it to prove their nerve.\n\nThomas Pakenham put it in Meetings with Remarkable Trees, and in 2013 it finished third in Europe's Tree of the Year with 5,785 votes. It is Ireland's best-known single tree, and it stands just inside the gate of a woodland you can walk into for free.",
+      "how_to_recognise": "You can recognise it by the low branches spreading up to 27 metres and resting on props, around a trunk 8.29 metres round. It stands just inside the main entrance to the Charleville Forest demesne.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2013/Kralovsky-dub",
+        "https://en.wikipedia.org/wiki/King_Oak"
+      ],
+      "access": "Free. The tree stands just inside the main entrance to Charleville Forest demesne, whose woodland walks are open to the public year-round with no entrance fee; the castle itself is a separate paid/booked tour and not needed to reach the tree.",
+      "transport": "Roughly 3 km / 40 minute walk from Tullamore town centre; no rail station in Tullamore serves the estate directly, but Tullamore has an Irish Rail station on the Dublin-Galway line.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
