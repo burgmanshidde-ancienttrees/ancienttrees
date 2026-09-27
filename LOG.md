@@ -10,6 +10,45 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (night run) - Finished a stranded write pass, fixed a leads.py false positive, a free photo sweep
+
+Picked up where an earlier attempt in the same window stopped with 3 write
+claims open and nothing pushed. The stories, recognition lines and city files
+for Coromandel Forest Park (Square Kauri), Parry Kauri Park (McKinney and
+Simpson Kauri) and Otari-Wilton's Bush (Moko the rimu) were already written
+to disk; rebuilt tree-index, resolved the three places' other-language names
+(none found, so nothing to add), ran preflight (0 problems), released the
+three claims, logged the pass and shipped. 4 trees, 3 new places, New Zealand
+now at 17 highlighted trees.
+
+Checking `leads.py --ready` for the next task turned up a false positive
+worth fixing before dispatching anything on it: the 82 California Big Trees
+champion leads Hidde added this session (Los Angeles, Long Beach, Sacramento,
+Oakland, San Francisco) carry `sources: []` and a reason that says outright
+they are finding aids only and still need an independent source, but nothing
+had set `needs_verification` on them, so they counted as READY. Same trap
+this file already caught once in Texas Big Tree Registry form on 2026-09-01;
+widened the check to catch "FINDING AID ONLY" text with an empty sources
+list. 82 leads moved from READY to NEARLY; none were written from.
+
+Rung 1 and 2 were clean (0 unprocessed submissions, only rung-2 item is the
+two migrations still waiting on Hidde's own paste). With the window short
+after recovering the stranded work, ran the free `photo_hunt.py` API sweep
+(no agent, no tokens) rather than starting a new research pass that risked
+being stranded the same way: 31 more published trees checked, 19 got
+candidates queued for a future viewing pass.
+
+Also discarded a purely cosmetic `data/judgements.json` reordering that a
+mid-session `git pull --rebase --autostash` produced (same 43 entries,
+different array order, confirmed by diffing sorted content); nothing was
+lost. Ran a full `npx astro build` in the background out of habit before
+finding the 2026-09-27 entry below explaining why that step left the run
+prompt; it finished clean after 17 minutes with no errors on the three new
+pages, but the lesson holds and this run did not wait on it or repeat it.
+
+FOR HIDDE, unchanged from earlier today: paste supabase/PENDING.sql (the two
+`extra_photos` columns); `python3 scripts/health.py` still names it.
+
 ## 2026-09-27 (session) - Write pass merged, shelf refilled, three new Portuguese places opened
 
 Started at the top of the ladder: `prepare.py` had 24 verified trees awaiting
