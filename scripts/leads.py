@@ -615,6 +615,21 @@ def readiness(entry):
         # from a single disqualified source with no named place, which hard
         # rule 2 forbids however the gap arrived.
         missing.append("verification (lead-only source, flagged needs_verification)")
+    # The same trap in a new phrasing, found 2026-09-27: 82 California Big
+    # Trees champion leads (los-angeles, long-beach, sacramento, oakland,
+    # san-francisco) carry `sources: []` and a reason that says outright
+    # "FINDING AID ONLY... a verify pass must find the tree in an independent
+    # source... before it can ship", but nobody had set needs_verification on
+    # them, so the flag check above missed every one and leads.py --ready
+    # offered all 82 back the same night they were logged. Same register
+    # rule CLAUDE.md already states for licence-unstated sources ("may still
+    # be used to FIND and cross-check trees that are then hand-verified from
+    # elsewhere"): a finding aid is not a source, and an empty `sources` list
+    # here is the tell rather than the register text alone, since a register
+    # note mentioning "finding aid" elsewhere for a tree that DOES carry real
+    # sources must not be caught by this.
+    elif not entry.get("sources") and re.search(r"finding aid only", reason_text(entry), re.I):
+        missing.append("verification (register finding-aid only, no independent source yet)")
     return missing
 
 

@@ -1,0 +1,67 @@
+{
+  "city": "Otari-Wilton's Bush",
+  "country": "New Zealand",
+  "status": "needs_curation",
+  "intro": "Wellington's oldest and tallest tree stands in a native forest reserve because an architect once went to court to stop it being felled. Moko is a rimu, about 800 years old, 27.3 metres tall, named by local iwi in a 2021 Matariki ceremony and a 2024 finalist for the country's Tree of the Year. A protective platform now stands over its roots, reached by a 20 to 30 minute track from the park's picnic lawn.",
+  "meta_description": "Moko: Wellington's oldest and tallest tree, an 800-year-old rimu at Otari-Wilton's Bush, saved from felling by a court case decades ago.",
+  "question_meta": "Otari-Wilton's Bush maps one tree, Moko, an 800-year-old rimu and Wellington's oldest and tallest tree.",
+  "question_answer": "Otari-Wilton's Bush's mapped tree is Moko, a rimu (Dacrydium cupressinum) about 800 years old, 27.3 metres tall with a trunk 177.6 centimetres across, generally reckoned Wellington's oldest and tallest tree.",
+  "question_context": "Moko survived because Bob Fantl, a Bauhaus-trained architect and early environmentalist, went to court decades ago to stop it being felled, well before Otari-Wilton's Bush became the reserve it is today. It is a rimu rather than a kauri, measured in 2010 at 177.6 centimetres across and 27.3 metres tall, its bark hung with epiphytes and perching lilies as old-growth rimu usually are. Its age, repeated everywhere as about 800 years, made it Wellington's oldest and tallest tree by reputation long before it had a name. It got one in July 2021, when local iwi gifted it the name Moko in a Matariki ceremony, and in 2024 it was a finalist for New Zealand's Tree of the Year. A protective viewing platform now stands over its roots, reached by a 20 to 30 minute track from the Troup Picnic Lawn. The reserve is free and open all hours, with a car park at 150 Wilton Road; the number 14 Wilton bus runs from central Wellington.",
+  "hero_tree_id": "mko_001",
+  "oldest_tree_id": "mko_001",
+  "faq": [
+    {
+      "q": "How old is Moko?",
+      "a": "About 800 years, the figure repeated across official and press sources, though it has not been precisely dated. It is generally reckoned Wellington's oldest tree."
+    },
+    {
+      "q": "Why is it called Moko?",
+      "a": "Local iwi gifted the tree that name in a Matariki ceremony in July 2021. It had gone unnamed for centuries before that."
+    },
+    {
+      "q": "How was it saved?",
+      "a": "Bob Fantl, a Bauhaus-trained architect and early environmentalist, went to court decades ago to stop it being felled, before Otari-Wilton's Bush became the protected reserve it is today."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free, open all hours, no ticket. A 20 to 30 minute track runs from the Troup Picnic Lawn to a viewing platform at the tree. The main entrance and car park is at 150 Wilton Road, Wellington; the number 14 Wilton bus also serves it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mko_001",
+      "name": "Moko",
+      "species": "Rimu (Dacrydium cupressinum)",
+      "age_estimate": "about 800 years",
+      "age_min": 700,
+      "age_max": 900,
+      "age_basis": "source",
+      "girth_cm": 558,
+      "height_m": 27.3,
+      "location": {
+        "address": "Otari-Wilton's Bush, 150 Wilton Road, Wilton, Wellington, New Zealand (track starts at the Troup Picnic Lawn)",
+        "latitude": -41.265943,
+        "longitude": 174.752483,
+        "neighbourhood": "Wilton, Wellington"
+      },
+      "story": "Wellington's oldest tree survived because an architect went to court for it. Decades before Otari-Wilton's Bush became the protected forest reserve it is today, Bob Fantl, a Bauhaus-trained architect and early environmentalist, fought to stop this rimu being felled, and the reason it still stands over Wilton Road is that he won.\n\nIt is a rimu rather than a kauri and carries none of a kauri's bulk: a trunk measured at 177.6 centimetres across in 2010, a height of 27.3 metres, its bark hung with epiphytes and perching lilies the way old-growth rimu usually are. Its age, repeated everywhere as about 800 years, is old enough that locals had already taken to calling it Wellington's oldest and tallest tree long before it had a name of its own.\n\nIt got one in July 2021, when local iwi gifted it the name Moko in a Matariki ceremony. In 2024 it was named a finalist for the country's Tree of the Year, decades after a single court case was the only thing standing between it and a saw.\n\nA protective viewing platform now stands over its roots, reached by a 20 to 30 minute track from the Troup Picnic Lawn, rebuilt as a gentler zig-zag route in 2022 so the climb there does not itself become more foot traffic over the ground the tree needs.",
+      "verified_sources": [
+        "https://wellington.govt.nz/news-and-events/news-and-information/our-wellington/2021/07/te-reo-name-gifted-to-ancient-rimu",
+        "https://www.wikidata.org/wiki/Q107394029",
+        "https://www.nzherald.co.nz/kahu/name-gifted-to-wellingtons-oldest-tree-as-part-of-matariki-celebrations/MZGKELFETRZ2QZCWXZGGNI3GVI/"
+      ],
+      "access": "Free, open all hours, no ticket. Otari-Wilton's Bush is a Wellington City Council native botanic garden and forest reserve; main entrance and car park at 150 Wilton Road. A 20-30 minute track (a gentler zig-zag route opened 2022) leads from the Troup Picnic Lawn to a protective viewing platform built around the tree's roots.",
+      "transport": "Number 14 (Wilton) bus from central Wellington; about 15 minutes by car from the city centre. Walking/biking also possible; bikes not permitted on the trails themselves.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the protective platform built around its roots at the end of the track, its trunk hung with epiphytes and perching lilies, Wellington's tallest tree."
+    }
+  ]
+}
