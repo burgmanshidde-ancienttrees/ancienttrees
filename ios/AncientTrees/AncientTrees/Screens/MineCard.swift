@@ -22,6 +22,17 @@ struct MineCard: View {
                     .resizable().aspectRatio(contentMode: .fill)
                     .frame(height: 170).frame(maxWidth: .infinity)
                     .clipped()
+                    // SEEN, the same badge ours carry once ticked (Hidde,
+                    // 2026-09-27: "you've definitely seen them as well"): you
+                    // photographed it standing there.
+                    .overlay(alignment: .topLeading) {
+                        Label("Seen", systemImage: "checkmark.seal.fill")
+                            .font(.caption2.weight(.semibold))
+                            .foregroundStyle(.white)
+                            .padding(.horizontal, 8).padding(.vertical, 5)
+                            .background(Brand.canopy, in: .capsule)
+                            .padding(10)
+                    }
             }
             VStack(alignment: .leading, spacing: 6) {
                 HStack(spacing: 8) {
