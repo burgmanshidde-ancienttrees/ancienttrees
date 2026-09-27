@@ -209,6 +209,14 @@ def check_run_prompt_forbids_compound_commands():
             "`npm --prefix site run build` and Monitor in CLAUDE_DISALLOWED and "
             "'DO NOT RUN THE SITE BUILD' in the prompt, or change this with Hidde."
         )
+    # Fourth (2026-09-27, Hidde's rule): save each place as it is written, and
+    # a run with no tree committed at minute 30 stops to save and says why.
+    for phrase, what in (("save each place the moment", "commit each place as its trees land"),
+                         ("thirty minutes in with no tree committed", "stop and save at minute 30"),
+                         ("never clean up", "no rm and no multi-line code in a Bash call")):
+        if phrase not in low:
+            out.append(".github/workflows/nightly.yml: the prompt lost the rule to "
+                       + what + ". Put it back, or change this check with Hidde.")
     return out
 
 

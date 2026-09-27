@@ -487,6 +487,31 @@ jobs:
             run spent 57 minutes for nothing that way. Wait by blocking, never
             by stopping.
 
+            SAVE EACH PLACE THE MOMENT ITS TREES ARE IN THE CITY FILE (2026-09-27).
+            When a write pass comes back: merge its trees, run
+            `python3 scripts/preflight.py`, commit that place, and only then
+            start anything else. Never hold a batch of written trees for one
+            commit at the end: on 2026-09-26 a pass that had written seven
+            Tree of the Year trees ended before its single commit and all
+            seven were lost with the runner.
+
+            THIRTY MINUTES IN WITH NO TREE COMMITTED, STOP AND SAVE (2026-09-27,
+            Hidde's rule). Check `git log --oneline` against the window's start:
+            if nothing that adds a tree has been committed by minute 30, commit
+            whatever finished work exists now, write two sentences to LOG.md on
+            what held you up, and push. Then carry on. Five runs on 2026-09-26
+            spent an hour each and saved nothing; this makes that impossible
+            to repeat silently.
+
+            NEVER CLEAN UP, and never write multi-line code into a Bash call.
+            `rm` is refused and pointless: this runner is thrown away when the
+            window ends. A Python snippet longer than one line is refused too,
+            because the tool list matches the whole command: Write it to
+            out/tmp/<name>.py with the Write tool and run
+            `python3 out/tmp/<name>.py`. Those two shapes were the most refused
+            commands of the week of 2026-09-20 (rm in 14 of 23 runs, multi-line
+            python in most of them).
+
             AND WRITE LOG.md ONLY AFTER `git log -1` SHOWS THE TREES COMMITTED.
             The 19:40 run of 2026-09-25 verified and wrote 23 trees, had its
             `rm && git` chains refused, never committed a city file, and then
