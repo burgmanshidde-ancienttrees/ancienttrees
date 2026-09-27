@@ -9,30 +9,6 @@
    ]
   },
   {
-   "name": "Crystal Springs Heritage Sycamore, Griffith Park",
-   "reason": "A giant native California sycamore (Platanus racemosa) at the Crystal Springs picnic area, designated a City of LA Heritage Tree, believed up to roughly 200 years old. NOT verified this pass because its survival is genuinely in question: the city approved a youth-baseball-fields project in 2014 that called for removing this exact tree, and Friends of Griffith Park filed litigation on 2023-09-14 specifically over its threatened destruction. No source found this pass confirms whether the tree still stands or was removed as part of that project. Do not publish until a fresh search (or a call to Friends of Griffith Park / LA Rec and Parks) confirms current status either way; this is the same shape of trap as the Encino Oak, just unresolved rather than settled.",
-   "sources": [
-    "https://friendsofgriffithpark.org/save-the-sycamore-tree-event-saturday-september-13/",
-    "https://citywatchla.com/index.php/archive/7541-griffith-park-sycamore-tree-protest-100-plus-lawsuit-announced"
-   ],
-   "needs_verification": true
-  },
-  {
-   "name": "The Queensland Kauri of the Chavez Ravine Arboretum",
-   "species": "Queensland Kauri (Agathis robusta)",
-   "reason": "The arboretum itself was verified as an entry and pulled: 100-plus species across a hillside is a park, not one collectible point with one place to stand. The publishable tree inside it is the kauri, believed the oldest and largest in the United States, and what is missing is its own coordinate. One pass with a source that pins that trunk turns this into a good entry.",
-   "verified_sources": [
-    "https://en.wikipedia.org/wiki/Chavez_Ravine_Arboretum",
-    "http://bigorangelandmarks.blogspot.com/2007/07/no-48-chavez-ravine-arboretum.html"
-   ],
-   "location": {
-    "address": "Chavez Ravine Arboretum, Elysian Park, 1025 Elysian Park Dr, Los Angeles, CA 90012 (just north of Dodger Stadium)",
-    "latitude": 34.083,
-    "longitude": -118.238,
-    "neighbourhood": "Elysian Park"
-   }
-  },
-  {
    "name": "Montezuma Cypress (Taxodium mucronatum), California state champion",
    "species": "Montezuma Cypress (Taxodium mucronatum)",
    "latitude": 34.045,
@@ -258,21 +234,6 @@
    "sources": []
   },
   {
-   "name": "Peepul Or Bodhi Tree (Ficus religiosa), California national champion",
-   "species": "Peepul Or Bodhi Tree (Ficus religiosa)",
-   "latitude": 34.0824,
-   "longitude": -118.3452,
-   "location_precision": "approximate",
-   "girth_cm": 711,
-   "height_m": 20,
-   "measured": "2018-01-01",
-   "county": "Los Angeles",
-   "register_id": "ca-bigtrees-452",
-   "status": "lead",
-   "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. National champion, 359.5 points; 9.5 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-   "sources": []
-  },
-  {
    "name": "Costa Rican Holly (Olmediella betschleriana), California state champion",
    "species": "Costa Rican Holly (Olmediella betschleriana)",
    "latitude": 34.0192,
@@ -360,21 +321,6 @@
    "register_id": "ca-bigtrees-519",
    "status": "lead",
    "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. National champion, 294 points; 6.7 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-   "sources": []
-  },
-  {
-   "name": "Queensland Kauri (Agathis robusta), California national champion",
-   "species": "Queensland Kauri (Agathis robusta)",
-   "latitude": 34.126676,
-   "longitude": -118.11389,
-   "location_precision": "approximate",
-   "girth_cm": 597,
-   "height_m": 34,
-   "measured": "2021-01-01",
-   "county": "Los Angeles",
-   "register_id": "ca-bigtrees-523",
-   "status": "lead",
-   "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. National champion, 353.75 points; 15.2 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
    "sources": []
   },
   {
@@ -679,6 +625,12 @@
   }
  ],
  "blocked": [
+  {
+   "name": "Peepul Or Bodhi Tree (Ficus religiosa), California national champion",
+   "species": "Peepul Or Bodhi Tree (Ficus religiosa)",
+   "reason": "PRIVATE LAND, blocked under hard rule 10. Register coordinate 34.0824,-118.3452 (register_id ca-bigtrees-452, girth 711 cm, height 20 m, measured 2018) reverse-geocodes (OSM Nominatim) to 631 North Detroit Street, Hancock Park/Fairfax, Los Angeles, a residential street of houses and apartments with no institution, garden or temple on record there. The register's own nominator/measurer, Nick Araya, is a Los Angeles arborist (TreeCareLA) whose practice centres on preserving large trees on private client properties, which fits a residence rather than a public site. No independent source (park, garden, press, botanical society) names this specific tree; the Self-Realization Fellowship sites and other LA Buddhist/spiritual gardens searched this pass do not match this address or coordinate. Selectree/Cal Poly UFEI is a finding aid only and cannot be the cited source. Do not re-chase without a new angle: a call to TreeCareLA or a permission from the property owner would be the only way this could ever open.",
+   "sources": []
+  },
   {
    "name": "Encino Oak Tree (Lang Oak)",
    "reason": "DEAD. HCM #24, a Valley Oak (Quercus lobata) estimated 1000+ years old, fell during El Nino storms on 1998-02-07, weakened by bacterial infection. Stump preserved at the site near Ventura Blvd/Louise Ave in Encino. Never ships per hard rule against dead trees.",
