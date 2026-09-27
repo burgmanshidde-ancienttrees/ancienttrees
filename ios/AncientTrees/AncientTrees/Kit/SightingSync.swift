@@ -84,10 +84,18 @@ enum SightingSync {
                let data = await download(file, token: s.accessToken) {
                 sign = UIImage(data: data)
             }
+            // And the further photographs, only when this phone has none.
+            var extras: [UIImage] = []
+            if (known?.extraPhotos ?? []).isEmpty, let files = row["extra_photos"] as? [String] {
+                for file in files.prefix(Sightings.maxExtras) {
+                    if let data = await download(file, token: s.accessToken),
+                       let img = UIImage(data: data) { extras.append(img) }
+                }
+            }
             if known == nil {
-                sightings.adopt(made, image: picture, sign: sign)
+                sightings.adopt(made, image: picture, sign: sign, extras: extras)
             } else {
-                sightings.absorb(made, image: picture, sign: sign)
+                sightings.absorb(made, image: picture, sign: sign, extras: extras)
             }
         }
 
@@ -191,6 +199,16 @@ enum SightingSync {
             if await upload(path, data: data, token: s.accessToken) { signStored = path }
         }
 
+        // THE FURTHER PHOTOGRAPHS, private like the sign, for the same reason:
+        // evidence for whoever checks the tree, never its picture.
+        var extrasStored: [String] = []
+        let extraImages = sightings.extraImages(sighting)
+        for (n, img) in extraImages.enumerated() {
+            guard let data = Sightings.downsized(img) else { continue }
+            let path = "\(s.userId)/\(Sightings.extraFile(sighting.id, n + 1))"
+            if await upload(path, data: data, token: s.accessToken) { extrasStored.append(path) }
+        }
+
         var row: [String: Any] = [
             "user_id": s.userId,
             "id": sighting.id.uuidString,
@@ -219,6 +237,7 @@ enum SightingSync {
         row["photo"] = stored
         // Only when there is one, for the same reason as girth_hugs above.
         if let signStored { row["sign_photo"] = signStored }
+        if !extrasStored.isEmpty { row["extra_photos"] = extrasStored }
         // Explicit, like every other field here, rather than left to the
         // column's own default: the LOCAL value is the one somebody may have
         // just changed by tapping "Stop sharing the link", and omitting the
@@ -242,9 +261,11 @@ enum SightingSync {
         //
         // `sign_photo` (2026-09-24) takes the same retry for the same reason:
         // the sign is the least valuable thing in the row, never worth the tree.
-        if !landed, row["girth_hugs"] != nil || row["sign_photo"] != nil {
+        if !landed, row["girth_hugs"] != nil || row["sign_photo"] != nil
+                        || row["extra_photos"] != nil {
             row["girth_hugs"] = nil
             row["sign_photo"] = nil
+            row["extra_photos"] = nil
             landed = await Supa.post("/rest/v1/sightings?on_conflict=user_id,id",
                                      token: s.accessToken, body: [row])
         }
@@ -255,7 +276,8 @@ enum SightingSync {
         // The sign counts too: a sign-out deletes the local file of anything
         // marked synced, and a sign that never arrived would go with it.
         if landed, stored != nil || sightings.image(sighting) == nil,
-           signStored != nil || sightings.signImage(sighting) == nil {
+           signStored != nil || sightings.signImage(sighting) == nil,
+           extrasStored.count == extraImages.count {
             await MainActor.run { sightings.markSynced(sighting.id) }
         }
     }

@@ -32,3 +32,8 @@ alter table public.submissions
 alter table public.submissions
   add column if not exists sign_photo text
   check (sign_photo is null or char_length(sign_photo) <= 300);
+
+-- The same further photographs on a tip sent from the website (2026-09-26).
+alter table public.submissions
+  add column if not exists extra_photos text[]
+  check (extra_photos is null or cardinality(extra_photos) <= 3);

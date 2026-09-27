@@ -2627,3 +2627,15 @@ Breadcrumbs sit in one thin line under the site header, visible on a phone. Then
 **Reference: iNaturalist.** Photo, then the "what is it" suggestions, then one screen that IS the observation (photo on top, species, place, notes) with Save/Upload at the foot; after it you are on the observation. **Strava** ends a recorded walk the same way: the activity, with Save below it, then the activity page.
 
 **What we took.** Hidde found our form before the tree page asked what the page asks again ("this page asks the same info"). So a tree we do not map goes from the photograph straight to its own tree page as a DRAFT: same layout as the saved page, the Age, Girth and Species "+ Add" fields, the story, the sign photograph, and **Save tree** where Share will be. No "Added to your trees" note until it is saved; after Save the page stays, the note appears and the button becomes Share (the three beats of "Landing after you have added something"). Back on a draft asks "Discard this tree?", Keep editing or Discard. A draft lives on the phone only: never synced, never counted, dropped at the next launch if the app closed on it. "Which one is it" still comes first whenever mapped trees stand nearby, because it is what stops duplicates.
+
+---
+
+## More than one photograph when adding a tree (2026-09-26)
+
+Hidde: "should the option to add more than one photo also be added to all tree add pages please benchmark."
+
+**Reference: iNaturalist.** One observation holds several photographs of the same organism from the same encounter, up to twenty; the "+" beside the photos adds another, and the first is the lead ([help.inaturalist.org](https://help.inaturalist.org/en/support/solutions/articles/151000197160-how-to-make-an-observation-with-the-inaturalist-iphone-app), [iNaturalist blog](https://www.inaturalist.org/posts/34152-multiple-photos-per-observation)).
+
+**Reference: Google Maps.** Adding a missing place and adding photos to a place are both contributions, and a place takes several photographs ([support.google.com, add a missing place](https://support.google.com/maps/answer/6320846), [add photos](https://support.google.com/maps/answer/2622947)).
+
+**What we took.** Up to four on both surfaces: the first is the tree's picture and the only one that can ever be published; up to three more are evidence, stored privately (`extra_photos`). The separate "Photograph the sign" button went, because a sign is just one of those photographs, and the hint says so: "A photo of the sign helps". App: a "More photographs" row on the tree's own page with a "+ Add photo" tile, on the draft and after. Web: /contribute's photo field takes several files, and a second press adds to them. Four rather than iNaturalist's twenty, for the scarcity reason recorded under "Several photographs of one tree".

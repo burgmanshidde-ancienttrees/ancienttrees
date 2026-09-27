@@ -83,7 +83,7 @@ struct TreeDetail: View {
     /// caption rather than a fact about the tree.
     @State private var geocodedPlace: String?
     @State private var confirmingDiscard = false
-    @State private var signCamera = false
+    @State private var extraCamera = false
 
     /// The live record, so a draft that is saved on this page turns into a
     /// saved tree on this page without being opened again.
@@ -197,7 +197,7 @@ struct TreeDetail: View {
                     // and transport lines are ours to research, not blanks for
                     // you to fill about a tree you already stood at.
                     story
-                    if mine != nil { signRow }
+                    if mine != nil { morePhotosRow }
                     if mine == nil, tree.hasAccessInfo { accessBlock }
                     // "Something's wrong", low on the page, which is where he
                     // asked for it (2026-09-04: "de something's wrong knop maar
@@ -287,9 +287,9 @@ struct TreeDetail: View {
                 }
             }
         }
-        .fullScreenCover(isPresented: $signCamera) {
+        .fullScreenCover(isPresented: $extraCamera) {
             CameraPicker { image in
-                if let image, let m = live { sightings.setSign(m.id, image: image) }
+                if let image, let m = live { sightings.addExtra(m.id, image: image) }
             }.ignoresSafeArea()
         }
         .toolbar {
@@ -1464,42 +1464,57 @@ struct TreeDetail: View {
     /// page, and with the map card gone there is room for it (Hidde,
     /// 2026-08-21: "your text can go up, so you can put the whole story there
     /// instead of putting that behind the button").
-    /// A photograph of the sign by the tree, optional evidence and never
-    /// published (CONVENTIONS.md, "A photograph of the sign beside a tree").
-    /// It lived on the form this page replaced; it lives here now.
-    @ViewBuilder private var signRow: some View {
+    /// FURTHER PHOTOGRAPHS, up to three after the first (Hidde, 2026-09-26:
+    /// "should the option to add more than one photo also be added to all
+    /// tree add pages"). Convention: iNaturalist groups up to twenty photos
+    /// into one observation and Google Maps takes several with a new place;
+    /// both keep the first as the lead. So the first photograph stays the
+    /// tree's picture and these are evidence for whoever checks it, the sign
+    /// among them: the separate "Photograph the sign" button this replaces is
+    /// now a hint. CONVENTIONS.md, "More than one photograph when adding a tree".
+    @ViewBuilder private var morePhotosRow: some View {
         if let m = live {
+            let extras = sightings.extraImages(m)
+            let sign = sightings.signImage(m)
+            let shown = (sign.map { [$0] } ?? []) + extras
             VStack(alignment: .leading, spacing: 8) {
-                Text("Is there a sign by the tree?")
+                Text("More photographs")
                     .font(.brand(15, .bold))
                     .foregroundStyle(Brand.ink)
-                if m.signPhoto != nil {
-                    Label("Photo of the sign added", systemImage: "checkmark.circle")
-                        .font(.subheadline)
-                        .foregroundStyle(Brand.inkSoft)
-                        .accessibilityIdentifier("sign-photo-taken")
-                } else {
-                    Text("You can add a photo of the sign as well. It often names the tree, the species and its age.")
-                        .font(.footnote)
-                        .foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
-                    Button {
-                        if CameraPicker.isRefused { return }
-                        signCamera = true
-                    } label: {
-                        Label("Photograph the sign", systemImage: "camera")
-                            .font(.brand(15, .semibold, relativeTo: .subheadline))
-                            .foregroundStyle(Brand.ink)
-                            .padding(.horizontal, 16)
-                            .frame(height: 44)
-                            .background(Brand.surface, in: .capsule)
-                            .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
-                            .contentShape(.rect)
+                Text("Optional. A photo of the sign helps: it often names the tree, the species and its age.")
+                    .font(.footnote)
+                    .foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        ForEach(Array(shown.enumerated()), id: \.offset) { _, img in
+                            Color.clear
+                                .frame(width: 88, height: 88)
+                                .overlay { Image(uiImage: img).resizable().aspectRatio(contentMode: .fill) }
+                                .clipShape(.rect(cornerRadius: 12))
+                                .accessibilityLabel("Photograph")
+                        }
+                        if extras.count < Sightings.maxExtras {
+                            Button {
+                                if !CameraPicker.isRefused { extraCamera = true }
+                            } label: {
+                                VStack(spacing: 6) {
+                                    Image(systemName: "plus")
+                                        .font(.system(size: 20, weight: .semibold))
+                                    Text("Add photo").font(.caption.weight(.semibold))
+                                }
+                                .foregroundStyle(Brand.moss)
+                                .frame(width: 88, height: 88)
+                                .background(Brand.surfaceMuted, in: .rect(cornerRadius: 12))
+                                .contentShape(.rect)
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityIdentifier("add-extra-photo")
+                        }
                     }
-                    .buttonStyle(.plain)
-                    .accessibilityIdentifier("sign-photo")
                 }
             }
+            .accessibilityIdentifier("more-photos")
         }
     }
 
