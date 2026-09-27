@@ -1,0 +1,61 @@
+{
+  "city": "Letenye",
+  "country": "Hungary",
+  "status": "needs_curation",
+  "intro": "For centuries the people of Letenye have used one plane tree in the town's castle park as the place to meet, court, quarrel and settle business. A local civic association campaigned it to victory as Hungary's Tree of the Year in 2010, and it came third in Europe the following year with 8,836 votes. Its crown spreads more than 36 metres, nearly twice its own height, and the town once held dances in its shade until they were stopped to protect the roots. Sources disagree on its age, giving either roughly 500 or roughly 300 years.",
+  "meta_description": "The Plane Tree of Letenye, Hungary, a giant plane in the castle park, third in European Tree of the Year 2011. Free to visit.",
+  "question_meta": "Letenye's remarkable tree is a giant plane in the town's castle park, third place in European Tree of the Year 2011.",
+  "question_answer": "Letenye's notable tree is the Plane Tree of Letenye, a London Plane in the Andrássy castle park, 6.15 metres round with a crown over 36 metres across, third place in European Tree of the Year 2011.",
+  "question_context": "The tree stands in the 5.6-hectare grounds of a Baroque castle the Szapáry family built in the mid-18th century, later held by the Andrássy family. Its age is where the sources part: the contest and Hungary's own national tree-of-the-year site both say about 500 years, while a 2015 local news article says about 300, and neither figure rests on a ring count or a planting record, so the honest range spans both readings. What is not disputed is how the town has used it. Dances were once held in its shade, then stopped to protect the roots, a rare case of a town giving up a party for a tree, and couples still come for wedding photographs beneath the crown, which has turned up in poems, letters and paintings over the years. In November 2014 vandals damaged a plaque at the tree, and the town took it personally enough to make local news; that report is also the most recent confirmation found of the tree standing.",
+  "hero_tree_id": "let_001",
+  "oldest_tree_id": "let_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Letenye?",
+      "a": "The Plane Tree of Letenye, a giant London Plane in the town's castle park, third place in European Tree of the Year 2011."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed: the contest says about 500 years, a 2015 local news report says about 300."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the public castle park in the centre of town."
+    }
+  ],
+  "trees": [
+    {
+      "id": "let_001",
+      "name": "The Plane Tree of Letenye",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "300 to 500 years, sources disagree",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 615,
+      "location": {
+        "address": "Castle park (Andrássy-kastély park), Szabadság tér 15, Letenye, Zala county, Hungary",
+        "latitude": 46.434581,
+        "longitude": 16.723639,
+        "neighbourhood": "Letenye town centre"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2011/Platan-v-Letenye",
+        "https://evfaja.hu/fa/2010/letenye-platan",
+        "https://www.letenyemedia.hu/cikkek/csunyan-megrongaltak-a-varos-jelkepenek-szamito-tobb-szaz-eves-letenyei-platant.html"
+      ],
+      "access": "Free, standing in the public castle park in the centre of Letenye",
+      "transport": "Letenye town centre, Zala county, near the Croatian border; nearest train station Letenye, short walk to the castle park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "For centuries the people of Letenye have used one plane tree as the place to meet, to court, to quarrel and to settle business. In 2010 a local civic association campaigned it to victory as Hungary's Tree of the Year, and a year later it came third in Europe with 8,836 votes.\n\nIt stands in the castle park at Szabadság tér 15, the 5.6-hectare grounds of a Baroque castle the Szapáry family built in the mid-18th century and the Andrássy family later held. The tree is 20 metres tall and 6.15 metres round, and its crown spreads more than 36 metres, nearly twice as wide as the tree is high.\n\nIts age is where the sources part. The contest and Hungary's national contest site both say about 500 years; a 2015 local news article says about 300. Neither figure rests on a ring count or a planting record, so the honest answer is somewhere between the two.\n\nThe town once held dances in its shade. They were stopped to protect the roots, which is a rare case of a town giving up a party for a tree. Couples still come for wedding photographs, and the plane has turned up in poems, letters and paintings.\n\nIn November 2014 vandals damaged a plaque at the tree, and the town took it personally enough to make the local news. That report is also the latest we have found describing it alive and standing. If you have seen it since, tell us.",
+      "how_to_recognise": "You can recognise it by the crown, more than 36 metres across, and a trunk 6.15 metres round. It stands in the castle park on Szabadság tér, and it is the park's one famous plane.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}
