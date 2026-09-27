@@ -117,7 +117,7 @@ struct CollectSheet: View {
     @State private var placing: CLLocationCoordinate2D?
     /// How tall the sheet stands, which is a property of the STEP rather than
     /// of the flow. See presentationDetents below.
-    @State private var detent: PresentationDetent = .height(320)
+    @State private var detent: PresentationDetent = .height(260)
     @State private var shot: UIImage?
     /// Where the shutter actually fell. Held separately from `origin` because
     /// the view can be re-evaluated with a newer fix while the outcome screen
@@ -247,10 +247,10 @@ struct CollectSheet: View {
         // running large Dynamic Type can drag it up rather than meeting clipped
         // text. Every later step is a map, a list or a form, and those want the
         // whole sheet.
-        .presentationDetents(stage == .intro ? [.height(320), .large] : [.large],
+        .presentationDetents(stage == .intro ? [.height(260), .large] : [.large],
                              selection: $detent)
         .onChange(of: stage) { _, now in
-            detent = now == .intro ? .height(320) : .large
+            detent = now == .intro ? .height(260) : .large
         }
         .presentationDragIndicator(.visible)
         // AND A SWIPE CANNOT THROW IT AWAY EITHER (Hidde, 2026-08-29: "als ik

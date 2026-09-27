@@ -57,9 +57,14 @@ struct CollectIntro: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
+            // THE TITLE SAYS WHAT YOU ARE DOING, and nothing else (Hidde,
+            // 2026-09-27: "I'm really not happy with the copy here"). The
+            // buttons that open this sheet say "Add a tree", and a sheet that
+            // answers them with "Build your tree collection" and a sentence
+            // about collections talks past the person who pressed it.
             Text(addsPhoto ? "Add a photo"
-                 : about == nil ? "Build your tree collection"
-                 : "Add this tree to your collection")
+                 : about == nil ? "Add a tree"
+                 : "Add this tree")
                 .font(.brand(28, .bold, relativeTo: .title))
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
@@ -90,15 +95,7 @@ struct CollectIntro: View {
             // Named, and the reader is the subject joined with "by", which is
             // PRODUCT_COPY.md's own shape. The general line stays exactly as it
             // was for every other way in.
-            // No second line when adding a photo: the title says it all, and
-            // the page behind already says there is no photograph yet.
-            if !addsPhoto {
-                Text(about.map { "You can add \($0) by taking a photograph of it." }
-                     ?? "Every tree you photograph joins your collection.")
-                    .font(.brand(16, .regular, relativeTo: .body))
-                    .foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
+            // No second line: the two buttons below say how.
 
             Spacer(minLength: 24)
 
