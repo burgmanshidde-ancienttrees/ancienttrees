@@ -9028,6 +9028,20 @@
       "tokens": 128978,
       "trees": 5,
       "note": "5 stories + recognition lines written and merged as 5 new single-tree places (leliceni, garmen, letenye, felsomocsolad, capeni). dbl_001 (Grot Oak of Deblin) turned out to be a duplicate of the already-published deb_001, caught before merge; discarded rather than shipped, lead marked duplicate. Fixed two species-label inconsistencies (lel_001 Tilia cordata mislabelled large-leaved; cap_001 elm synonym) before merge."
+    },
+    {
+      "target": "_famous-brazil (batch 1, 4 candidates)",
+      "kind": "verify",
+      "tokens": 202880,
+      "trees": 3,
+      "note": "3 verified (jer_001 Arvore da Preguica, ppf_001 Baoba do Passeio Publico, lco_001 Arvore Penteada), all already had Commons photos. Baoba do Poeta (Natal) blocked on access: alive but walled/gated private plot, no confirmed public viewing point."
+    },
+    {
+      "target": "_famous-brazil (batch 1, 3 trees)",
+      "kind": "write",
+      "tokens": 121157,
+      "trees": 3,
+      "note": "3 stories + recognition lines written and merged as 3 new single-tree places (jericoacoara, fortaleza, luis-correia), all 450-800km from the nearest published Brazilian tree. Fixed one species-label mismatch (African Baobab -> Baobab) before merge; trimmed question_context on all three to fit Contract B word range."
     }
   ]
 }

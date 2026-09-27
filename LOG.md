@@ -10,6 +10,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - _famous-brazil refilled and written: 3 new places, 1 blocked on access; a new preflight check added
+
+**After the Tree of the Year batch below**, `prepare.py` still said REFILL THE SHELF FIRST, so continued down the same rung. Claimed `_famous-brazil`, dispatched a 4-candidate verify pass (all four already carried Commons photographs, the expensive half of a research pass done for free by `famous_trees.py`), then a write pass on whatever verified.
+
+**Published (3 new single-tree places, 450-800km from the nearest published Brazilian tree):** Jericoacoara, Ceará (the Árvore da Preguiça, a button mangrove pushed flat by trade winds, one of the town's two "postcards" alongside the Pedra Furada arch); Fortaleza, Ceará (the Baobá do Passeio Público, a sacred baobab in the city's oldest square, planted around 1910 by a descendant of Senador Pompeu, legally protected from felling since a 1951 municipal decree, drawing an estimated 400 visitors a day pre-pandemic); Luís Correia, Piauí (the Árvore Penteada, a wind-swept tamarind that survived somebody deliberately cutting its roots in March 2021 and became a Piauí state heritage site nine months later).
+
+**Correctly blocked:** Baobá do Poeta, Natal. Alive (resprouting after an emergency 2025 crown reduction from 19m to 3m for structural safety) but stands on a walled, gated, padlocked private plot with no confirmed public viewing point, so it fails hard rule 10's access test rather than the alive test.
+
+**Also built, and this is the part worth remembering:** the Tree of the Year batch just below caught a duplicate (the Grot Oak of Dęblin, already published as `deb_001` under a different id, 89m away) by hand, via a one-off distance script, and that made four times this exact class of error has happened (Kozy's plane, Belfast's Peace Tree, Budapest's Jászai Mari plane, now this). `scripts/preflight.py` gained `check_country_batch_leads_against_all_cities()`, which does for underscore-prefixed batch files (`_famous-*`, `_tree-of-the-year`) what `check_leads_already_published()` already does for per-city leads files, since that check's slug-matching structurally cannot see a batch file with no matching city. Verified both ways (fires on the Dęblin lead reintroduced with its original shape, silent on the current corpus) before committing. It surfaced 32 more open `lead`-status entries across other country batches that quietly duplicate an already-published tree under a different id; leaving those for a future pass rather than fixing all 32 now.
+
+preflight clean throughout (0 problems, 668 cities). Both this batch's push and the Tree-of-the-year batch's push before it went out fine; this commit's own push then hit the known expired-token error, so it is a local commit for the workflow's Run health step to push.
+
 ## 2026-09-27 (continuation) - Refilled the shelf again: 5 more Tree of the Year places shipped, one duplicate caught before merge
 
 `prepare.py` said REFILL THE SHELF FIRST (writable pile under 60, the same
