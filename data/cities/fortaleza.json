@@ -1,0 +1,62 @@
+{
+  "city": "Fortaleza",
+  "country": "Brazil",
+  "status": "needs_curation",
+  "intro": "For part of Fortaleza, a baobab in the city's oldest public square is more than a tree. The Candomblé community venerates it as sacred, an orixá, and before the pandemic the local paper counted around 400 visitors a day. A newspaper feature dates its planting to 1910, by a descendant of the nineteenth-century Senador Pompeu, though an older, conflicting story claims it was brought from Algeria in 1872. What is certain is its protection: a 1951 municipal decree made it illegal to fell, and it has stood untouchable in the Passeio Público ever since.",
+  "meta_description": "The Baobá do Passeio Público in Fortaleza, Brazil: a sacred African baobab planted around 1910, protected since 1951. Free, in the historic centre.",
+  "question_meta": "Fortaleza's remarkable tree is a baobab in the Passeio Público square, sacred to the city's Candomblé community.",
+  "question_answer": "Fortaleza's notable tree is the Baobá do Passeio Público, a Baobab standing in Praça dos Mártires, Fortaleza's oldest public square, dated to a planting around 1910 and legally protected from felling since 1951.",
+  "question_context": "By baobab standards this tree is young. A 2026 newspaper feature dates its planting to 1910, by Thomaz Pompeu de Sousa Brasil Filho, son of the nineteenth-century Senador Pompeu, and marked its 115th birthday that June; a man identifying himself as the senator's great-great-grandson independently named the same planter in an earlier comment. The same newspaper's own 2021 feature told a different story, that the tree was brought from Algeria in 1872, which cannot both be true, and the older claim still circulates even though 1910 has more evidence behind it. A separate, darker story holds that the political prisoner Bárbara de Alencar was executed at this tree; she died in 1832, before either planting date given, so that one is folklore. What is documented without dispute is the protection: Municipal Decree 30.052, signed on 4 October 1951, made it illegal to fell the tree, and it has stood legally untouchable for three quarters of a century. It stands in Praça dos Mártires, the Passeio Público, Fortaleza's oldest public square, open like any city plaza; the pin places a visitor in the square rather than at the exact trunk.",
+  "hero_tree_id": "ppf_001",
+  "oldest_tree_id": "ppf_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Fortaleza?",
+      "a": "The Baobá do Passeio Público, a baobab in Praça dos Mártires, sacred to the city's Candomblé community and protected from felling since 1951."
+    },
+    {
+      "q": "How old is it?",
+      "a": "About 115 years per a 2026 newspaper feature, dating its planting to 1910; an older, conflicting 1872 origin story also circulates."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in Praça dos Mártires, an ordinary public square in Fortaleza's historic centre."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ppf_001",
+      "name": "Baobá do Passeio Público",
+      "species": "Baobab (Adansonia digitata)",
+      "age_estimate": "about 115 years",
+      "age_min": 115,
+      "age_max": 116,
+      "age_basis": "source",
+      "girth_cm": null,
+      "location": {
+        "address": "Praça dos Mártires (Passeio Público), Centro, Fortaleza, Ceará, Brazil",
+        "latitude": -3.722657,
+        "longitude": -38.526315,
+        "neighbourhood": "Centro, Fortaleza"
+      },
+      "verified_sources": [
+        "https://www.opovo.com.br/noticias/fortaleza/2026/06/18/baoba-do-passeio-publico-completa-115-anos-e-resiste-como-simbolo-de-memoria-em-fortaleza.html",
+        "http://web.archive.org/web/20231123141009/https://inventarioambientalfortaleza.blogspot.com/2007/10/o-baob-centenrio-do-passeio-pblico.html",
+        "https://mais.opovo.com.br/reportagens-especiais/2021/09/30/imune-ao-corte-o-baoba-sagrado-de-fortaleza.html"
+      ],
+      "access": "Free. Stands in Praça dos Mártires (Passeio Público), the oldest public square in Fortaleza's historic centre, open to the public as an ordinary city plaza (a café inside keeps its own limited hours, but the square and the tree are not gated).",
+      "transport": "In Fortaleza's Centro; walkable from the historic downtown, no dedicated station",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "For part of Fortaleza, the baobab in the Passeio Público is more than a tree. The city's Candomblé community venerates it as sacred, an orixá, and before the pandemic the local paper O Povo counted around 400 visitors a day.\n\nBy baobab standards it is young. O Povo dates its planting to 1910, by Thomaz Pompeu de Sousa Brasil Filho, son of the nineteenth-century Senador Pompeu, and marked its 115th birthday in June 2026. A man describing himself as the senator's great-great-grandson named the same planter independently. The same paper's 2021 feature told a different story, that the tree was brought from Algeria in 1872. Both cannot be true. The 1910 date has more behind it, but the older version still circulates.\n\nSo does a darker one: that Bárbara de Alencar was executed at this tree. She died in 1832, long before either date anyone gives for a baobab in this square, so treat it as folklore rather than history.\n\nWhat is documented is the protection. Municipal Decree 30.052, signed on 4 October 1951, made it illegal to fell the tree, so it has been legally untouchable for three quarters of a century while the historic centre changed around it. It stands in Praça dos Mártires, the oldest public square in Fortaleza, open like any city plaza. Our pin puts you in the square rather than at the trunk.\n\nNobody has published a measurement of that trunk. If you have taped it, tell us.",
+      "how_to_recognise": "You can recognise it as the square's baobab, the tree Fortaleza's Candomblé community treats as sacred. It stands in Praça dos Mártires, the Passeio Público, in the historic centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}

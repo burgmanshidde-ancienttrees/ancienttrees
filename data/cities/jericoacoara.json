@@ -1,0 +1,59 @@
+{
+  "city": "Jericoacoara",
+  "country": "Brazil",
+  "status": "needs_curation",
+  "intro": "One of Jericoacoara's two postcards, alongside the rock arch Pedra Furada, is a tree that barely stands up. This button mangrove grows almost flat, trunk and crown pushed sideways along the sand by decades of trade wind, and locals call it the Lazy Tree. It sits on the unpaved beach track running east from the village toward Praia do Preá, a regular stop on East Side buggy tours, and can also be reached on foot, about 6.4 kilometres each way across open sand. Nobody has dated it or measured its trunk.",
+  "meta_description": "The Árvore da Preguiça in Jericoacoara, Brazil: a wind-flattened button mangrove, one of the town's two postcards. Free to visit.",
+  "question_meta": "Jericoacoara's remarkable tree is the Árvore da Preguiça, a button mangrove pushed flat by the wind on the beach track east of town.",
+  "question_answer": "Jericoacoara's notable tree is the Árvore da Preguiça (the Lazy Tree), a Button Mangrove grown almost flat by decades of trade wind, on the beach track between the village and Praia do Preá.",
+  "question_context": "Nobody shaped this tree. Decades of the trade winds that pour along this stretch of the Ceará coast pushed it flat, and the button mangrove kept growing in the one direction the wind allowed, trunk and crown stretched low across the sand as if it had lain down for a rest, which is where the local name comes from. It is a tough species of salt flats and dune edges, and this one specimen has turned its harsh conditions into a local landmark, ranked alongside the rock arch Pedra Furada as one of the two things everybody photographs in Jericoacoara. Most visitors meet it from the back of a buggy on the East Side tour, which stops here on the way to Lagoa do Paraíso, though the track can also be walked, roughly 6.4 kilometres each way in full sun. Photographs from 2013 and 2025 show it lying in the same place, but nobody has published its age or a trunk measurement. The pin is approximate, since sources place the tree a few kilometres apart along the same track, and the park's day-use fee has been suspended by a federal court.",
+  "hero_tree_id": "jer_001",
+  "oldest_tree_id": "jer_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Jericoacoara?",
+      "a": "The Árvore da Preguiça (the Lazy Tree), a button mangrove grown almost flat by the wind, on the beach track toward Praia do Preá."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Undocumented. Nobody has published an age or a trunk measurement for it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, though Jericoacoara National Park's own day-use fee has been suspended by a federal court and its status may change."
+    }
+  ],
+  "trees": [
+    {
+      "id": "jer_001",
+      "name": "Árvore da Preguiça",
+      "species": "Button Mangrove (Conocarpus erectus)",
+      "age_estimate": "",
+      "girth_cm": null,
+      "location": {
+        "address": "Beach track between Vila de Jericoacoara and Praia do Preá, Jericoacoara National Park, Jijoca de Jericoacoara, Ceará, Brazil",
+        "latitude": -2.7904,
+        "longitude": -40.4915,
+        "neighbourhood": "Jericoacoara National Park"
+      },
+      "verified_sources": [
+        "https://jericar.com.br/descubra-a-fascinante-historia-da-arvore-da-preguica-em-jericoacoara/",
+        "https://www.buenasdicas.com/arvore-da-preguica-em-jericoacoara-vale-pena-conhecer-3190/",
+        "https://commons.wikimedia.org/wiki/Category:%C3%81rvore_da_Pregui%C3%A7a_(Jericoacoara)"
+      ],
+      "access": "Free to view once inside the park; Jericoacoara National Park itself has a per-day entrance fee (up to R$50/day for Brazilians, more for visitors) that was suspended by a federal court order pending an implementation review, so its status should be checked before visiting. Reached along an unpaved beach track; walkable (about 6.4 km from the village, sun protection and water needed) or by 4x4/buggy as a stop on the 'East Side' tour.",
+      "transport": "No public transport; 4x4/buggy tour from Jericoacoara village, or on foot along the coastal track, roughly 6.4 km / 1.5-2 hours each way",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "One of Jericoacoara's two postcards is a tree that barely stands up. This button mangrove grows sideways, trunk and crown stretched low across the sand as if it had lain down for a rest, which is where the name comes from: Árvore da Preguiça, the Lazy Tree.\n\nNobody shaped it. Decades of the trade winds that pour along this stretch of the Ceará coast pushed it flat, and it kept growing in the one direction the wind allowed. Button mangrove, Conocarpus erectus, is a tough tree of salt flats and dune edges, and this one has turned the conditions against it into a pose.\n\nThe other postcard is Pedra Furada, the rock arch along the coast. The tree sits on the unpaved track running east from the village toward Praia do Preá, and most people meet it from the back of a buggy on the East Side tour, which stops here on the way to Lagoa do Paraíso. You can also walk it: roughly 6.4 km each way in full sun, so bring water. Our pin is approximate, because sources place the tree at points a few kilometres apart along the same track.\n\nPhotographs from 2013 and from early 2025 show it lying in the same place. Nobody has dated it, and nobody has measured the trunk. If you know how long it has been lying there, tell us.\n\nCheck the national park's day fee before you go: a federal court has suspended it, and that may change.",
+      "how_to_recognise": "You can recognise it by its shape: a button mangrove lying almost flat along the sand, trunk and crown pushed sideways by the wind. It stands beside the beach track from the village toward Praia do Preá, a stop on East Side buggy tours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}
