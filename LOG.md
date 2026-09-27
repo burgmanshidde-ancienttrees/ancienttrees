@@ -10,6 +10,52 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - Fixed a misnamed research file, wrote one held-over Austrian lime, shipped 6 European Tree of the Year winners; 2 correctly rejected as dead including the Major Oak
+
+Picked up where the previous continuation left off (rung 2's deploy blocker was
+already fixed and merged by the time I read `health.py`; CI just hadn't had a
+clean run yet because of rapid pushes cancelling each other). `passcheck.py
+--pending` was missing a whole file: `data/research/famousaustria-verified-b.json`
+existed with 2 verified trees but its `-b` suffix didn't match the `*-verified.json`
+glob, so the pipeline couldn't see it. Renamed it. One of the two, `aut_002`
+Linde im Gries (St. Georgen im Attergau, Austria), cleared the bar on its own
+verify pass's own call (10m girth, best-known tree in the Attergau, confirmed
+pin) so wrote and merged it as a new single-tree place. The other, a 1918 WWI
+peace larch, stays held (ordinary size, 50-55min from Salzburg, no pairing
+candidate).
+
+**Then refilled the shelf per `prepare.py`** (writable pile under 60), taking
+the biggest batch, `_tree-of-the-year` (104 unsourced). Picked 8 UK/Ireland
+candidates far from anything published and dispatched a verify pass.
+
+**Published (6 new single-tree places, 16-70km from the nearest published
+tree, all under the single-famous-tree exception):** King Oak (Charleville
+Forest, Tullamore, Ireland, 400-800yr, propped branches spreading 27m, tied to
+a family-death superstition); Niel Gow's Oak (Craigvinean Forest, Dunkeld,
+Scotland, ~300yr, named for the 18th-century fiddler); The Oak at the Gate of
+the Dead (near Chirk Castle, Wales, 1000+yr, split in two by frost in 2010,
+named for the 1165 Battle of Crogen); Waverley Abbey Yew (Farnham, England,
+up to 500yr, growing through the abbey ruins, honestly dated as possibly
+younger); The Acton Park Sweet Chestnut (Wrexham, Wales, ~480-500yr, UK Tree
+of the Year 2023, approximate pin, park-level only); The Skipinnish Oak
+(Achnacarry Estate, Scotland, 400+yr, discovered in 2009 via a ceilidh band,
+approximate pin, standing in a working forestry plantation reached under
+Scotland's statutory access right, said so plainly on the page).
+
+**Correctly rejected as dead, marked `blocked`:** the Birr Castle Grey Poplar
+(blown down in a storm in February 2014, during the contest's own voting
+window) and, worth flagging on its own, **the Major Oak in Sherwood
+Forest**, Britain's most famous tree (the Robin Hood legend oak), confirmed
+dead by RSPB/Natural England in a June 2026 announcement (failed to leaf;
+heat stress, soil compaction and scaffolding side-effects cited), also
+covered by CNN and ABC News. Still standing as a monument, still fails hard
+rule 2's never-publish-a-dead-tree bar however famous.
+
+Fixed one species canonicalisation before merge (Yew -> European Yew, per
+hard rule 9) and expanded 3 `question_context` fields to hit Contract B's
+150-200 word range. `preflight.py` clean throughout (675 cities, 0 problems).
+Both passes' costs logged to `data/agent-costs.json`.
+
 ## 2026-09-27 (continuation) - Fixed a real deploy blocker; wrote 10 verified famous trees but held all 10; caught an id collision and a leads.py bug
 
 **Rung 2 first, and it was live for hours.** `health.py` showed Build and
