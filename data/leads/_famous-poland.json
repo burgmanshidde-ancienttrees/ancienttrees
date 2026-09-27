@@ -734,9 +734,10 @@
         "https://commons.wikimedia.org/wiki/File:Kozy,_park,_platan.jpg",
         "https://commons.wikimedia.org/wiki/File:POL_Kozy_Pomnikowy_platan.JPG"
       ],
-      "status": "lead",
+      "status": "duplicate",
       "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Already published as koz_001 ('The Kozy Plane Tree (Platan Klonolistny)') in data/cities/kozy.json, matched by coordinate/name while auditing this file after check_country_batch_leads_against_all_cities() surfaced it (2026-09-27)."
     },
     {
       "name": "Serce Ogrodu beech",
