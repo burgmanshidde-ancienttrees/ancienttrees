@@ -528,6 +528,18 @@
    "seen": "2026-09-24",
    "cost": "one fetch attempt during the famous-poland batch5 verify pass, chasing detail on Deblin's 'Grot' oak",
    "workaround": "the Wayback Machine had no snapshot checked this pass (untested); a live Dziennik Wschodni article on the same tree (also 404 live but recoverable via Wayback) supplied the primary facts instead."
+  },
+  "tfsweb.tamu.edu": {
+   "behaviour": "refuses curl: Cloudflare 'Sorry, you have been blocked' page (HTTP 200/403 body, fails fast, no hang), seen on the Famous Trees of Texas pages.",
+   "seen": "2026-09-27",
+   "cost": "one fetch attempt (1s)",
+   "workaround": "WebFetch reads the pages. The tree list itself is the public ArcGIS layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0 (query?where=1=1&outFields=*&f=json), which curl reads without trouble."
+  },
+  "famoustreesoftexas.tfs.tamu.edu": {
+   "behaviour": "refuses curl: Cloudflare 'Sorry, you have been blocked' page (HTTP 200/403 body, fails fast, no hang), seen on the Famous Trees of Texas pages.",
+   "seen": "2026-09-27",
+   "cost": "one fetch attempt (1s)",
+   "workaround": "WebFetch reads the pages. The tree list itself is the public ArcGIS layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0 (query?where=1=1&outFields=*&f=json), which curl reads without trouble."
   }
  }
 }

@@ -139,6 +139,25 @@
       "girth_cm": 66,
       "needs_verification": true,
       "deepen_pass_2026-09-12": "Same coordinate as the Eysenhardtia texana entry above (TreeID 2361): Picato Drive, Plano, TX 75074, Collin County, 30.0 km from central Dallas. Both champions almost certainly sit in the same private collection or nursery plot rather than a public park; not a Dallas tree and not shown to be public. Left as a lead, out of scope here."
+    },
+    {
+      "name": "Houston Campsite Oak",
+      "species": "Post Oak (Quercus stellata)",
+      "reason": "A post oak in Grapevine Springs Park, Coppell, on the ground where Sam Houston camped in 1843 while chiefs gathered for the council that led to the Republic of Texas's first peace treaty with Native nations, signed later at Bird's Fort. Public city park (City of Coppell), about 27 km from central Dallas, inside the day-trip boundary. Needs: confirmation it is alive in a recent source, the exact trunk inside the 23-acre park.",
+      "location": {
+        "latitude": 32.9522,
+        "longitude": -97.001,
+        "address": "Grapevine Springs Park, 700 Park Street, Coppell, TX 75019"
+      },
+      "location_precision": "approximate",
+      "sources": [
+        "https://www.hmdb.org/m.asp?m=147427",
+        "https://www.coppellhistoricalsociety.org/grapevine-springs-park.html",
+        "https://www.dallascounty.org/departments/plandev/openspaces/locations/01-grapevine.php",
+        "https://www.coppelltx.gov/facilities/facility/details/Grapevine-Springs-Park-22"
+      ],
+      "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/houston-campsite-oak/",
+      "status": "lead"
     }
   ],
   "blocked": [
