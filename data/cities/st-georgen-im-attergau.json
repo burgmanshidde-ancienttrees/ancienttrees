@@ -1,0 +1,65 @@
+{
+  "city": "St. Georgen im Attergau",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "St. Georgen im Attergau is a village on the Attersee lakes' edge, and its tree stands in a small riverside park in the Gries district, beside the Durre Ager. The Linde im Gries, known locally as the Tausendjahrige Linde, has a trunk a full ten metres round, and local tradition dates its planting to 1114. That would make it close to nine hundred years old, and it is the best-known tree in the whole Attergau region.",
+  "meta_description": "The Linde im Gries in St. Georgen im Attergau, Austria: a lime with a 10-metre trunk, said to have been planted in 1114. Free to visit.",
+  "question_meta": "St. Georgen im Attergau's remarkable tree is the Linde im Gries, a lime with a ten-metre trunk in a riverside park.",
+  "question_answer": "St. Georgen im Attergau's notable tree is the Linde im Gries (the Tausendjahrige Linde), a Large-leaved Lime with a trunk ten metres round, standing in a small park on the Attergaustrasse beside the Durre Ager.",
+  "question_context": "Local tradition, recorded on the village's own heritage wiki, dates the planting to 1114, which would put the tree close to nine hundred years old; the source itself calls this a tradition rather than a document, so treat the age as a story rather than a measurement. What is measured is the girth, a full ten metres, which is why the lime is known locally as the Tausendjahrige Linde and is called the best-known tree in the Attergau. It served as a Gerichtslinde, a court linden under which village disputes were settled, until the 16th century. A storm nearly finished it in 1911, and it was patched back together in 1912 and again in 1947 after internal fire damage. The state of Upper Austria later struck it from its register of protected natural monuments, an administrative delisting rather than a verdict on the tree's health, and a dendrology register recorded it as vital as recently as October 2024. It stands beside an information pavilion added in 2006, in a small public park with no gate or ticket.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in St. Georgen im Attergau?",
+      "a": "The Linde im Gries, known locally as the Tausendjahrige Linde, a Large-leaved Lime with a trunk ten metres round in a riverside park in the Gries district."
+    },
+    {
+      "q": "How old is the Linde im Gries?",
+      "a": "Local tradition dates its planting to 1114, close to nine hundred years, but that is a handed-down story rather than a documented measurement. The tree's own record hedges it the same way."
+    },
+    {
+      "q": "Can you visit the tree at St. Georgen im Attergau?",
+      "a": "Yes, free. It stands in a small public park on the Attergaustrasse beside the river, with no gate or ticket."
+    },
+    {
+      "q": "How do you get to St. Georgen im Attergau?",
+      "a": "The village has no rail station; it is reachable by the Vocklabruck-Attersee regional bus, or on foot from anywhere in the village centre."
+    }
+  ],
+  "hero_tree_id": "aut_002",
+  "oldest_tree_id": "aut_002",
+  "trees": [
+    {
+      "id": "aut_002",
+      "name": "Linde im Gries (the Tausendjahrige Linde)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "local tradition dates planting to 1114, roughly 900 years",
+      "age_min": 700,
+      "age_max": 1000,
+      "age_basis": "source",
+      "girth_cm": 1000,
+      "location": {
+        "address": "A small public park on Attergaustrasse beside the Durre Ager riverbank, near the site of the former Hotel Goldenes Schiff and the Ager bridge, Gries, St. Georgen im Attergau",
+        "latitude": 47.936844,
+        "longitude": 13.484372,
+        "neighbourhood": "Gries, St. Georgen im Attergau, Upper Austria"
+      },
+      "story": "Ten metres round is the number that gets repeated about this lime, and it undersells the legend behind it: local tradition dates the planting to 1114, which would make the tree close to nine hundred years old.\n\nThat date is a story handed down rather than a document, and the village's own heritage wiki hedges it the same way, saying only that the lime \"is said to have been planted\" that year. What is measured rather than told is the girth, a full ten metres around a trunk grown into something closer to a small building than a plant, and it is on that trunk, not the legend, that this became the best-known tree in the Attergau, known locally as the Tausendjahrige Linde, the thousand-year lime.\n\nIt has earned its keep. Until the 16th century, disputes in the village were settled in its shade as a Gerichtslinde, a court linden. A storm in 1911 nearly finished it, and it was patched back together the following year, then again in 1947 after fire damage inside the trunk. Upper Austria eventually struck it from its register of protected natural monuments, a piece of paperwork rather than a verdict, and a dendrology register still listed it as vital in October 2024.\n\nIt stands in a small riverside park on the Attergaustrasse, beside an information pavilion put up in 2006, close enough to the Durre Ager that you can hear the water while looking up at it.",
+      "how_to_recognise": "You can recognise it by its trunk, a full ten metres round, easily the widest tree in the village, standing beside an information pavilion in the small riverside park on Attergaustrasse.",
+      "verified_sources": [
+        "https://www.atterwiki.at/index.php?title=Tausendj%C3%A4hrige_Linde",
+        "https://www.baumkunde.de/baumregister/1709-1000jaehrige_linde_im_griesin_sankt_georgen_attersee/"
+      ],
+      "access": "Free, standing in a small public park on Attergaustrasse beside the river; open at all times, no ticket.",
+      "transport": "In the centre of St. Georgen im Attergau, Upper Austria; no rail station in the village, reachable by the Vocklabruck-Attersee regional bus or on foot from anywhere in the village centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -9042,6 +9042,13 @@
       "tokens": 121157,
       "trees": 3,
       "note": "3 stories + recognition lines written and merged as 3 new single-tree places (jericoacoara, fortaleza, luis-correia), all 450-800km from the nearest published Brazilian tree. Fixed one species-label mismatch (African Baobab -> Baobab) before merge; trimmed question_context on all three to fit Contract B word range."
+    },
+    {
+      "target": "_famous-austria (aut_002)",
+      "kind": "write",
+      "tokens": 0,
+      "trees": 1,
+      "note": "Written directly in the orchestrating session rather than dispatched (a single leftover verified tree, not worth a full agent). Renamed the misnamed famousaustria-verified-b.json so passcheck could see it, then wrote and merged aut_002 (Linde im Gries, St Georgen im Attergau) as a new single-famous-tree place, 10m girth, best-known tree in the Attergau. Friedenslaerche held (ordinary size, past the day-trip boundary, no pairing candidate yet)."
     }
   ]
 }
