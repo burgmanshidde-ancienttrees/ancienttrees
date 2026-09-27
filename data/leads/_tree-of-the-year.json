@@ -368,13 +368,15 @@
       "lng": -7.518469,
       "gps_as_published": "N 53°15'59.9'', W 7°31'6.49''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2013/Kralovsky-dub",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "dub_003",
         "name": "Dean's Tree",
         "place": "Dublin",
         "km": 67.45
-      }
+      },
+      "verified_id": "kgo_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "Lime Tree in the Nové Dvory Alley",
@@ -618,13 +620,15 @@
       "lng": -3.605211,
       "gps_as_published": "N 56°33'28.54'', W 3°36'18.76''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2014/Dub-Niela-Gowse",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "for_001",
         "name": "The Fortingall Yew",
         "place": "Fortingall",
         "km": 27.66
-      }
+      },
+      "verified_id": "ngo_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "The Birr Castle Grey Poplar",
@@ -640,13 +644,14 @@
       "lng": -7.914692,
       "gps_as_published": "N 53°5'39.5'', W 7°54'52.89''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2014/Sedy-topol-na-hrade-Birr",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "dub_003",
         "name": "Dean's Tree",
         "place": "Dublin",
         "km": 96.64
-      }
+      },
+      "verify_note": "DEAD. Confirmed by contest's own text ('200 years before its fall') and independent sources: blown down in a storm on 12 February 2014 while European Tree of the Year 2014 voting was still open (widely reported as 'the tree that died for Ireland'). At ~42m it was reputedly the tallest tree in the British Isles and the largest grey poplar in Ireland and Britain, but it is gone. Never publish per hard rule 2 and the never-publish-a-dead-tree rule; not resurrectable by a later pass."
     },
     {
       "name": "The Oak at the Gate of the Dead",
@@ -662,13 +667,15 @@
       "lng": -3.095358,
       "gps_as_published": "N 52°55'53.29'', W 3°5'43.29''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2014/Dub-pred-Branou-mrtvych",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "brm_001",
         "name": "The Brimmon Oak",
         "place": "Newtown",
         "km": 48.46
-      }
+      },
+      "verified_id": "ogd_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "The Tree of Perfect Gaiety",
@@ -834,13 +841,14 @@
       "lng": -1.069989,
       "gps_as_published": "N 53°12'16.92'', W 1°4'11.96''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2015/Velky-dub",
-      "status": "lead",
+      "status": "blocked",
       "nearest_published": {
         "id": "abf_001",
         "name": "Nellie's Tree",
         "place": "Aberford",
         "km": 70.93
-      }
+      },
+      "verify_note": "DEAD as of June 2026. Confirmed by RSPB/Natural England's own announcement plus CNN and ABC News: the tree failed to produce leaves in spring 2026 after several stressed years (heatwaves since 2022, soil compaction from two centuries of visitors, scaffolding forcing unnatural water distribution, water-table changes from nearby coal mining) and RSPB declared it dead. It remains standing as a monument (not to be felled) but per the never-publish-a-dead-tree rule it cannot ship as a living collectible entry, however famous. Its Robin Hood legend and conservation history (support poles since 1908, cabling, fencing since 1974) are well documented if a later pass ever wants it as historical/story context rather than as an entry. Verified 2026-09-27 against contemporaneous news; do not re-verify this as alive, the death is recent and solidly sourced."
     },
     {
       "name": "The Plane in Archar village",
@@ -3769,13 +3777,15 @@
       "lng": -0.759694,
       "gps_as_published": "N 51°12'0.65'', W 0°45'34.9''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2023/waverley-abbey-yew",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "wsw_001",
         "name": "Wellington's Wellingtonia",
         "place": "Stratfield Saye",
         "km": 23.4
-      }
+      },
+      "verified_id": "way_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "The Weeping Beech of Cassel Mount",
@@ -4213,13 +4223,15 @@
       "lng": -2.9769,
       "gps_as_published": "N 53°3'42.84'', W 2°58'36.84''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2024/wrexham's-acton-park-sweet-chestnut",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "lvp_002",
         "name": "The Calderstones Sweet Chestnut",
         "place": "Liverpool",
         "km": 35.98
-      }
+      },
+      "verified_id": "apc_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "Lithuania’s Patriarch Tree",
@@ -4491,13 +4503,15 @@
       "lng": -4.996783,
       "gps_as_published": "N 56°56'49.75'', W 4°59'48.42''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2025/the-skipinnish-oak",
-      "status": "lead",
+      "status": "verified",
       "nearest_published": {
         "id": "for_001",
         "name": "The Fortingall Yew",
         "place": "Fortingall",
         "km": 69.47
-      }
+      },
+      "verified_id": "sko_001",
+      "verified_file": "data/research/treeoftheyear-verified.json"
     },
     {
       "name": "Mēru Grand Oak",
