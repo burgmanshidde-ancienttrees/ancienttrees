@@ -56,6 +56,24 @@ web sweep. The push credential expired partway through (expected, per the
 runner prompt); this commit and the ones before it are local and will go
 out with the run's own token when the window closes.
 
+After that, checked `leads.py --ready` for cheap already-scouted candidates
+and found 3 in Texas. Verified Fort Worth's Turner Oak (gold buried under it
+by pioneer Charles Turner during the Civil War, alive-confirmed via a dated
+2025 waymark log) and merged it in, Fort Worth's first tree with a real age
+and its new oldest_tree_id (4->5 trees). Parker Oaks (Hurst) blocked, a
+grove with no single named specimen. Kyle Auction Oak stays a lead: no
+public transport connects it to Austin, so the day-trip claim to Austin
+can't be made honestly, and on its own local-auction story it doesn't
+clear the single-famous-tree exception either.
+
+Net this run: 3 new places (Coromandel Forest Park, Parry Kauri Park,
+Otari-Wilton's Bush, discarded as duplicate of a concurrent run's work),
+7 trees added across 3 already-published US cities (Los Angeles 8->10,
+Portland 20->24, Fort Worth 4->5), 3 leads correctly held rather than
+shipped thin (2 Czech, Kyle Auction Oak), 2 correctly blocked (Parker Oaks,
+Ghost Tree(s) of Pescadero Point). All costs in data/agent-costs.json,
+preflight clean throughout.
+
 ## 2026-09-27 (night run) - Finished a stranded write pass, fixed a leads.py false positive, a free photo sweep
 
 Picked up where an earlier attempt in the same window stopped with 3 write
