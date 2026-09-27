@@ -18592,6 +18592,134 @@
    ],
    "trees": 12,
    "logged": true
+  },
+  {
+   "started": "2026-09-27T07:46:37+00:00",
+   "date": "2026-09-27",
+   "run_id": "36302663716",
+   "minutes": 117.7,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 490,
+   "denials": 44,
+   "denials_source": "permission_denials: Bash(cat ; EOF ; echo), Bash(cat ; import ; ? ; r ...), Bash(cat ; import ; for ; if ...), Bash(cat ; import ; ten ; ? ...), Bash(cd && curl && ls && python3 ...), Bash(cd && npx | tail), Bash(cd && python3 ; today ; watched ...), Bash(curl && echo && wc), Bash(curl ; echo ; ls ; python3 ...), Bash(curl ; echo ; ls), Bash(curl ; echo ; wc ; grep ...), Bash(curl ; head), Bash(curl ; ls ; python3 ; data ...), Bash(find | sort | head && echo ...), Bash(for ; do ; cat ; echo ...), Bash(for ; do ; echo ; curl ...), Bash(git && git && python3 ; import ...), Bash(git && git ; git), Bash(git), Bash(grep | head), Bash(grep | sort), Bash(grep), Bash(iconv | grep | head), Bash(ls ; head), Bash(mkdir && git && git && python3 ...), Bash(mkdir && git), Bash(python3 && rm), Bash(python3 ; import ; ? ; import ...), Bash(python3 ; import ; for ; def ...), Bash(python3 ; import ; p ; d ...), Bash(python3 ; import ; q ; trees ...), Bash(python3 ; import ; so ; ? ...), Bash(python3 ; import ; t ; dates ...), Bash(python3 ; wc), Bash(rm && echo), Bash(rm && git), Bash(rm ; ls | grep), Bash(rm), Bash(wc ; grep | head ; echo ...), Bash(wc)",
+   "ended": "success",
+   "tokens": 48521358,
+   "claims_held": [
+    "monterey",
+    "philadelphia",
+    "new-orleans"
+   ],
+   "commits": 38,
+   "cities_touched": 26,
+   "cities": [
+    {
+     "city": "portland",
+     "trees": 4
+    },
+    {
+     "city": "los-angeles",
+     "trees": 2
+    },
+    {
+     "city": "parry-kauri-park",
+     "trees": 2
+    },
+    {
+     "city": "coromandel-forest-park",
+     "trees": 1
+    },
+    {
+     "city": "fort-worth",
+     "trees": 1
+    },
+    {
+     "city": "otari-wiltons-bush",
+     "trees": 1
+    },
+    {
+     "city": "bedomin",
+     "trees": 0
+    },
+    {
+     "city": "charleston",
+     "trees": 0
+    },
+    {
+     "city": "dresden",
+     "trees": 0
+    },
+    {
+     "city": "fish-lake-utah",
+     "trees": 0
+    },
+    {
+     "city": "gdansk",
+     "trees": 0
+    },
+    {
+     "city": "ghent",
+     "trees": 0
+    },
+    {
+     "city": "gonzales-texas",
+     "trees": 0
+    },
+    {
+     "city": "graz",
+     "trees": 0
+    },
+    {
+     "city": "hel",
+     "trees": 0
+    },
+    {
+     "city": "kings-canyon-national-park",
+     "trees": 0
+    },
+    {
+     "city": "new-orleans",
+     "trees": 0
+    },
+    {
+     "city": "olympic-national-park",
+     "trees": 0
+    },
+    {
+     "city": "philadelphia",
+     "trees": 0
+    },
+    {
+     "city": "salzburg",
+     "trees": 0
+    },
+    {
+     "city": "san-diego",
+     "trees": 0
+    },
+    {
+     "city": "savannah",
+     "trees": 0
+    },
+    {
+     "city": "seattle",
+     "trees": 0
+    },
+    {
+     "city": "sequoia-national-park",
+     "trees": 0
+    },
+    {
+     "city": "utrecht",
+     "trees": 0
+    },
+    {
+     "city": "yosemite-national-park",
+     "trees": 0
+    }
+   ],
+   "trees": 11,
+   "logged": true
   }
  ],
  "schedule_changes": [
