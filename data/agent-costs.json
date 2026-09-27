@@ -8682,6 +8682,27 @@
         "tokens": 138804,
         "trees": 4,
         "note": "Stories + recognition lines for bsa_003, vir_002, lie_002 merged into existing city files with intro/faq copy updated; loz_001 written as a brand new standalone place (Lozorno, Slovakia) under the single-famous-tree exception, city file created. Also fixed 4 stale leads-file entries (Witch Tree/hvb_002, ancient Mother Tree/bre_011, Oak of Laukiai/plg_007, Old Wild Apple Tree/vbo_002) that were marked verified/verified_lead pointing at research files lost with an earlier runner, but were in fact already published; updated their status to published with mapped_as."
+      },
+      {
+        "target": "_famous-spain",
+        "kind": "verify",
+        "tokens": 213931,
+        "trees": 4,
+        "note": "Batch A: 4 Basque/N-Spain leads verified (erl_001, gar_001, ond_001, esc_001); none cluster together or with a published city, all standalone single-tree candidates."
+      },
+      {
+        "target": "_famous-spain",
+        "kind": "verify",
+        "tokens": 198113,
+        "trees": 3,
+        "note": "Batch B: 3 verified (apr_001 Aprisquillo pine, nvj_001 Olmo de Navajas, pcs_001 Canicosa pine-oak, all Tree-of-the-Year titleholders); 1 blocked dead (Mesto de las Rozas, storm-felled 1995)."
+      },
+      {
+        "target": "_famous-spain",
+        "kind": "verify",
+        "tokens": 182867,
+        "trees": 1,
+        "note": "Batch C: 3 Catalan/Valencian elm leads checked; 2 blocked dead (Dutch elm disease casualties, official register confirms), 1 verified (mll_001, Om centenari de Millena, flagged for a village-centroid pin)."
       }
     ]
   },
