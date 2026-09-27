@@ -33,9 +33,15 @@
         "https://commons.wikimedia.org/wiki/File:Carvalho_de_Calvos_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Centro_Interpretativo.JPG"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified 2026-09-27 to data/research/famousportugal-verified.json as clv_001, \"The Carvalho de Calvos\". Povoa de Lanhoso, Braga district (not Ponte da Barca). Quercus robur, classified arvore de interesse publico since 22 August 1997, age (500+ years) scientifically dated in 2011 by the University of Coimbra. Stands inside its own dedicated Centro de Interpretacao. Strong single-tree destination candidate; far from any published place.",
+      "mapped_as": {
+        "id": "clv_001",
+        "name": "The Carvalho de Calvos",
+        "place_slug": "calvos"
+      }
     },
     {
       "name": "Millennial olea europaea (Azeitão)",
@@ -46,9 +52,15 @@
         "https://commons.wikimedia.org/wiki/File:Millennial_olea_europaea_Azeit%C3%A3o_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Millennial_olea_europaea_Azeit%C3%A3o_03.jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Olive (Olea sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified 2026-09-27 to data/research/famousportugal-verified.json as aze_001, \"The Millennial Olives of Azeitao\" (an ensemble of three olive trees at one roadside spot on EN10, near Quinta Nova). Coordinate confirmed via an OSM node explicitly named \"Oliveiras Milenares\" (39.5227947... see record). Age is a widely repeated ~2000 year folk estimate with no dendrochronological basis found; flagged.",
+      "mapped_as": {
+        "id": "aze_001",
+        "name": "The Millennial Olives of Azeitao",
+        "place_slug": "azeitao"
+      }
     },
     {
       "name": "Plane tree of rossio",
@@ -104,7 +116,8 @@
         "https://commons.wikimedia.org/wiki/File:N%C3%BAcleo_dos_Dragoeiros_das_Neves,_Funchal,_Madeira_-_2012-03-03_-_DSC04661.jpg",
         "https://commons.wikimedia.org/wiki/File:N%C3%BAcleo_dos_Dragoeiros_das_Neves,_Funchal,_Madeira_-_2012-03-03_-_DSC04662.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "note": "DUPLICATE: this is the same site already published as mdr_006, \"The Dragon Tree Grove of Neves\", in data/cities/madeira.json (address \"Jardim do Nucleo dos Dragoeiros das Neves, Caminho da Portada, Sitio das Neves, Sao Goncalo, Funchal\", 32.64875, -16.869667). No new tree to add; moved to blocked rather than re-verified."
     },
     {
       "name": "Carvalho Negral em Cimo do Couto de Baixo",
@@ -155,9 +168,15 @@
         "https://commons.wikimedia.org/wiki/File:20210518_145344_Largo_25_de_Abril_Runa.jpg",
         "https://commons.wikimedia.org/wiki/File:Runa_-_Portugal_(51653686087).jpg"
       ],
-      "status": "lead",
+      "status": "published",
       "species": "Cedar (Cedrus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified 2026-09-27 to data/research/famousportugal-verified.json as run_001, \"The Cedro de Runa\". Cupressus lusitanica, planted early 1950s by a named local resident, confirmed by three sources including the official contest page. Won national \"Arvore do Ano Portugal 2026\" in January 2026, a strong and very recent fame signal. Coordinate confirmed three ways.",
+      "mapped_as": {
+        "id": "run_001",
+        "name": "The Cedro de Runa",
+        "place_slug": "runa"
+      }
     },
     {
       "name": "Camélia Japoneira in Guimarães",
@@ -169,6 +188,14 @@
       "status": "lead",
       "species": "Camellia (Camellia sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Núcleo dos Dragoeiros das Neves",
+      "lat": 32.64875,
+      "lng": -16.869667,
+      "reason": "Already published as mdr_006 \"The Dragon Tree Grove of Neves\" in data/cities/madeira.json, same address (Jardim do Nucleo dos Dragoeiros das Neves, Caminho da Portada, Sitio das Neves, Sao Goncalo, Funchal). This Commons category name and its photos describe the identical dragon-tree grove/garden that Madeira already maps as a compact ensemble entry. Nothing to verify or add; not delivered."
     }
   ]
 }

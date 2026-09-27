@@ -1,0 +1,66 @@
+{
+  "city": "Runa",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "In January 2026 this cypress beat 51 other trees to win Arvore do Ano Portugal, the national Tree of the Year contest, with more than 3,000 public votes, then went on to represent Portugal at the European final. It is not old by this map's usual standard, planted in the early 1950s by a named village resident, but it has a documented planting date and a village's worth of memory attached to it, which is rarer than age alone.",
+  "meta_description": "The Cedro de Runa: winner of Portugal's Tree of the Year 2026, a Mexican cypress planted in the 1950s on the village square in Torres Vedras.",
+  "question_meta": "Runa maps one tree, the Cedro de Runa, Portugal's Tree of the Year 2026, on the village square in Torres Vedras municipality.",
+  "question_answer": "Runa's mapped tree is the Cedro de Runa, a Mexican Cypress (Cupressus lusitanica) planted in the early 1950s beside the parish church, near Largo 25 de Abril. It won Portugal's national Tree of the Year contest, Arvore do Ano Portugal, in January 2026.",
+  "question_context": "Despite its name, the Cedro de Runa is not a true cedar but a Mexican cypress, locally called cedro-do-bucaco after the more famous cedars of Bucaco that carry the same misnomer. It was planted in the early 1950s by a village resident remembered by name, Sr. Alfredo, who nursed it through a weak, yellowing start; that documented planting date makes it about 75 years old rather than centuries, and this page states that plainly rather than dressing it up. What it lacks in age it makes up in recent fame: in January 2026 it won Arvore do Ano Portugal, nominated by the Junta de Freguesia de Runa and voted the country's favourite tree over 51 other candidates with more than 3,000 votes, national press coverage from Publico, Diario de Noticias and others followed within days, and it went on to represent Portugal in that year's European Tree of the Year contest. Local coverage describes it less as a specimen to admire and more as a fixture of the village's own life, present through decades of departures, returns, celebrations and quiet days on the square. No source gives its height or trunk girth; if you have measured it, tell us.",
+  "hero_tree_id": "run_001",
+  "oldest_tree_id": "run_001",
+  "faq": [
+    {
+      "q": "How old is the Cedro de Runa?",
+      "a": "About 75 years. It was planted in the early 1950s by a named village resident, Sr. Alfredo, which is a documented date rather than an estimate."
+    },
+    {
+      "q": "Why is it called a cedro if it isn't a cedar?",
+      "a": "It is a Mexican Cypress (Cupressus lusitanica), locally called cedro-do-bucaco, the same popular misnomer given to the more famous cedars of the Bucaco forest."
+    },
+    {
+      "q": "Why is this tree notable?",
+      "a": "In January 2026 it won Arvore do Ano Portugal, the national Tree of the Year contest, with more than 3,000 public votes against 51 other nominees, then represented Portugal at that year's European Tree of the Year contest."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the public church square, near Largo 25 de Abril, in the centre of Runa village, with no restriction on record."
+    }
+  ],
+  "trees": [
+    {
+      "id": "run_001",
+      "name": "The Cedro de Runa",
+      "species": "Mexican Cypress (Cupressus lusitanica)",
+      "age_estimate": "about 75 years",
+      "age_min": 70,
+      "age_max": 80,
+      "age_basis": "source",
+      "girth_cm": null,
+      "location": {
+        "address": "By the parish church, near Largo 25 de Abril, Runa, Torres Vedras",
+        "latitude": 39.0674248,
+        "longitude": -9.2085527,
+        "neighbourhood": "Runa, Torres Vedras, Oeste region"
+      },
+      "story": "This tree won a national popularity contest in January 2026, beating 51 other candidates for the title of Arvore do Ano Portugal, Portugal's Tree of the Year, with more than 3,000 public votes. Nominated by the local parish council, it went on to represent the whole country at that year's European Tree of the Year contest, and national outlets from Publico to Diario de Noticias covered the win within days.\n\nThe name oversells its botany. Despite being called a cedro, it is a Mexican cypress, not a true cedar, the same mismatch carried by the far more famous cedars of Bucaco. What it does have, unusually for this map, is a documented planting date rather than a guess: it went into the ground beside Runa's parish church in the early 1950s, nursed through a weak, yellowing start by a village resident remembered today only as Sr. Alfredo. That makes it roughly 75 years old, young by the standard of most trees here, and this page says so rather than stretching the number.\n\nWhat the age lacks, the story supplies. Press coverage of the win describes the tree less as a specimen and more as a fixture of Runa's own life: present, on the square, through decades of the village's departures and returns, celebrations and ordinary days. Nobody has published its height or the width of its trunk. If you have measured it, tell us.",
+      "verified_sources": [
+        "https://www.dn.pt/sociedade/torres-vedras-cedro-com-75-anos-de-runa-vence-concurso-de-rvore-do-ano",
+        "https://greensavers.sapo.pt/cedro-de-runa-torres-vedras-vence-concurso-de-arvore-do-ano/",
+        "https://arvoredoanoportugal.pt/detalhe-da-arvore?year=2026&treeId=74"
+      ],
+      "access": "Free, on or beside the public church square (Largo 25 de Abril area) in the centre of Runa village; no restriction on record.",
+      "transport": "In the centre of Runa village, Torres Vedras municipality, on the EN248 a short distance from Torres Vedras town. No specific stop confirmed.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it as the cypress on the church square, beside Largo 25 de Abril, the tree that won Portugal's Tree of the Year 2026. It stands in the centre of Runa village."
+    }
+  ]
+}

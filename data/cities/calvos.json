@@ -1,0 +1,66 @@
+{
+  "city": "Calvos",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "A university dated this oak in 2011 and it came back the oldest of its species anywhere on the Iberian Peninsula, over 500 years old. The parish of Calvos built a visitor centre around it in 2005, before the dating even confirmed what everyone already suspected. It has since been a national Tree of the Year finalist twice, in 2019 and 2025, and it hosts a protected stag beetle in its crater of a base.",
+  "meta_description": "The Carvalho de Calvos: possibly the oldest Pedunculate Oak on the Iberian Peninsula, dated 2011, over 500 years old, with its own visitor centre in Braga.",
+  "question_meta": "Calvos maps one tree, the Carvalho de Calvos, a 500-plus-year Pedunculate Oak with its own visitor centre in Povoa de Lanhoso, Braga.",
+  "question_answer": "Calvos's mapped tree is the Carvalho de Calvos, a Pedunculate Oak (Quercus robur) over 500 years old, dated in 2011 by the University of Coimbra and reported to be the oldest of its species on the Iberian Peninsula. It stands inside its own visitor centre in Povoa de Lanhoso, Braga district.",
+  "question_context": "The oak was already a local landmark long before anyone put a number on it: the municipality of Povoa de Lanhoso built the Centro de Interpretacao do Carvalho de Calvos around it in 2005 and only got a scientific date in 2011, when the University of Coimbra's Centre for Functional Ecology confirmed what the tree's own crater-like base and buttressed trunk had always suggested, over 500 years old and reportedly the oldest Pedunculate Oak on the whole Iberian Peninsula. Sources disagree on the exact girth, giving 10 metres at breast height or 11.5 metres at the base, plausible readings of a hugely buttressed trunk rather than a contradiction, so this page states both rather than picking one. It was declared a tree of public interest on 22 August 1997 and has twice been a finalist in Portugal's national Tree of the Year contest, in 2019 and 2025. Its hollow, crater-shaped base now shelters the stag beetle, a protected species in Portugal. The centre keeps regular hours and marked trails run around the tree; there is no admission fee recorded, but visiting is tied to the centre's opening times rather than being open around the clock.",
+  "hero_tree_id": "clv_001",
+  "oldest_tree_id": "clv_001",
+  "faq": [
+    {
+      "q": "How old is the Carvalho de Calvos?",
+      "a": "Over 500 years, dated in 2011 by the University of Coimbra's Centre for Functional Ecology. It is reported to be the oldest Pedunculate Oak (Quercus robur) on the Iberian Peninsula."
+    },
+    {
+      "q": "How thick is the trunk?",
+      "a": "Sources disagree by measurement point: 10 metres round at breast height, or 11.5 metres at the base, where the trunk widens into a crater-like buttress. Both figures come from official sources."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "There is no admission fee on record, but the tree stands inside the municipality's Centro de Interpretacao, open Monday to Friday 09:00 to 18:00 and Saturday 09:00 to 13:00, rather than around the clock."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Calvos parish, Povoa de Lanhoso municipality, Braga district, about 3km from Povoa de Lanhoso town centre. No confirmed public transport stop at the site; reached by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "clv_001",
+      "name": "The Carvalho de Calvos",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 500 years",
+      "age_min": 500,
+      "age_max": 700,
+      "age_basis": "source",
+      "girth_cm": 1150,
+      "location": {
+        "address": "Rua do Carvalho, within the Centro de Interpretacao do Carvalho de Calvos, Calvos e Frades, Povoa de Lanhoso, Braga",
+        "latitude": 41.5961917,
+        "longitude": -8.2685056,
+        "neighbourhood": "Calvos, Povoa de Lanhoso, Braga district"
+      },
+      "story": "A tree does not usually get a verdict from a university, but this one did. In 2011 the University of Coimbra's Centre for Functional Ecology dated the Carvalho de Calvos at over 500 years old, and reported it the oldest Pedunculate Oak anywhere on the Iberian Peninsula. The municipality had already built a visitor centre around it six years earlier, in 2005, betting on a tree everybody locally already believed was ancient.\n\nThe trunk explains the bet. It widens at ground level into what locals describe as a crater, a mass of buttressed wood that two official sources measure differently depending on where they wrap the tape: 10 metres round at breast height, or 11.5 metres at the base. Both figures come from the tree's own public-interest registration rather than a guess, and the difference is a matter of where the trunk was measured rather than a disagreement about the tree. That hollow, crater-like base now shelters the stag beetle, a species protected under Portuguese law.\n\nDesignated a tree of public interest on 22 August 1997, it has survived disease, fire and old amputated branches, and gone on to place as a national Tree of the Year finalist twice, in 2019 and 2025. Marked trails now run around it, inside the interpretation centre built for exactly this purpose.",
+      "verified_sources": [
+        "https://pt.wikipedia.org/wiki/Carvalho_de_Calvos",
+        "https://povoadelanhoso.pt/municipio/espacos-municipais/centro-interpretacao-calvos/",
+        "https://florestas.pt/descobrir/carvalho-de-calvos-a-arvore-centenaria-que-inspira-educacao-ambiental/"
+      ],
+      "access": "Free public interpretation centre grounds (Centro de Interpretacao do Carvalho de Calvos), open Monday to Friday 09:00 to 18:00 and Saturday 09:00 to 13:00; no admission fee stated by any source found, but visiting is tied to the centre's hours rather than around the clock.",
+      "transport": "About 3km from Povoa de Lanhoso town centre, in Calvos parish; no public transport stop confirmed at the site, likely reached by car.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the crater-like buttressed base, 11.5 metres round, inside its own dedicated visitor centre. It stands on Rua do Carvalho, Calvos, Povoa de Lanhoso."
+    }
+  ]
+}
