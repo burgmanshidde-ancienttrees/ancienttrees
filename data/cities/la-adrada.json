@@ -1,0 +1,67 @@
+{
+  "city": "La Adrada",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "La Adrada is a village in the Tietar valley of Avila province, and its famous tree is a hike above it, in a gorge in the eastern foothills of the Sierra de Gredos. The Pino del Aprisquillo is a Spanish black pine of roughly 350 to 450 years, five to six metres round. It won Spain's Tree of the Year vote in 2016 and represented Spain in the European Tree of the Year contest in 2017.",
+  "meta_description": "The Pino del Aprisquillo above La Adrada, Avila: Spain's Tree of the Year 2016, a black pine about 400 years old, reached on a gorge hike in Gredos.",
+  "question_meta": "La Adrada's notable tree is the Pino del Aprisquillo, Spain's Tree of the Year 2016. Its age, its size, and the hike to it.",
+  "question_answer": "The tree at La Adrada is the Pino del Aprisquillo, a Spanish black pine beside the Arroyo del Aprisquillo in a gorge of the Sierra de Gredos foothills. It won Spain's Tree of the Year vote in 2016, was Spain's entry in European Tree of the Year 2017, and is roughly 350 to 450 years old.",
+  "question_context": "Four sources describe this pine, and they agree on what it is while differing on its numbers. A local trees blog, a regional news site, a hiking blog and La Adrada's own tourism pages all name the same specimen, which locals call the pino cascalbo for its pale bark; a photograph credited to Avila's provincial government identifies it as Pinus nigra subsp. salzmannii, the Spanish black pine. Its girth is given as between five and 5.9 metres, depending on whether it was measured at chest height or at the base, and its height mostly as 25 to 30 metres, with one report of 43 that the others do not support. The age estimates run from 350 to a little over 400 years, and none of them comes from a ring count. Spain chose it as its Tree of the Year in a 2016 public vote, and it went on to represent Spain in European Tree of the Year 2017. It stands on public forest land, reached by two marked hiking routes of about ten kilometres there and back with real climbing; one walker reported the last stretch overgrown in 2024. No public transport reaches the trailhead.",
+  "faq": [
+    {
+      "q": "How old is the Pino del Aprisquillo?",
+      "a": "Roughly 350 to 450 years. Its sources say about 400, over 400 and 350; none of them cites a ring count, so the band is the honest answer."
+    },
+    {
+      "q": "Why is it famous?",
+      "a": "It won Spain's Tree of the Year public vote in 2016 and was Spain's entry in European Tree of the Year 2017. It is also a very large Spanish black pine, five to six metres round."
+    },
+    {
+      "q": "How long is the walk to the tree?",
+      "a": "About ten kilometres there and back with roughly 630 metres of ascent, on one of two marked routes from the valley. It is a real hike rather than a stroll, and the final stretch can be overgrown."
+    },
+    {
+      "q": "How do you get to La Adrada?",
+      "a": "By car. La Adrada is in Avila province, about 85 kilometres southwest of Madrid; no public transport reaches the trailhead, so drive to the village and walk from there."
+    }
+  ],
+  "hero_tree_id": "apr_001",
+  "oldest_tree_id": "apr_001",
+  "trees": [
+    {
+      "id": "apr_001",
+      "name": "Pino del Aprisquillo",
+      "species": "Spanish Black Pine (Pinus nigra subsp. salzmannii)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "age_basis": "source",
+      "girth_cm": 550,
+      "location": {
+        "address": "Beside the Arroyo del Aprisquillo in the Garganta/Charco de la Hoya gorge, below the Cerro de la Escusa, La Adrada, Avila province, Castilla y Leon",
+        "latitude": 40.35428,
+        "longitude": -4.63591,
+        "neighbourhood": "Charco de la Hoya gorge, eastern foothills of the Sierra de Gredos, La Adrada"
+      },
+      "story": "In 2016 Spain voted for its Tree of the Year, and the winner was a pine you have to climb a gorge to see. The Pino del Aprisquillo stands beside the Arroyo del Aprisquillo in the Charco de la Hoya, below the Cerro de la Escusa, in the eastern foothills of the Sierra de Gredos. The next year it carried Spain's colours in European Tree of the Year, one of sixteen national candidates.\n\nIt is a Spanish black pine, Pinus nigra subsp. salzmannii, which people in La Adrada call cascalbo for its pale bark. The measurements depend on who took them. Its girth is given as anything from five metres to 5.9 at the base, its height mostly between 25 and 30 metres, and one outlying report says 43. Its age comes out the same way: about 400 years in one account, over 400 in another, 350 in a third. Call it three and a half to four and a half centuries, and nobody has counted the rings.\n\nIn that time, a regional paper wrote when it won, it has come through plagues, fires and every other hardship a mountain pine meets.\n\nGetting there is part of it. Two marked routes climb from the valley, roughly ten kilometres there and back with about 630 metres of ascent, and the last stretch can be overgrown. The village put up new signs for this route in 2023.",
+      "how_to_recognise": "You can recognise it by the trunk, five to six metres round, on a black pine 25 to 30 metres tall with pale bark. It stands beside the Arroyo del Aprisquillo in the Charco de la Hoya gorge, below the Cerro de la Escusa.",
+      "verified_sources": [
+        "http://arbolesdeltietar.blogspot.com/2010/08/el-pino-de-la-adrada.html",
+        "https://avilared.com/archive/23460/el-arbol-espanol-del-ano-es-el-pino-aprisquillo-de-la-adrada",
+        "https://www.rutinasvarias.com/2015/05/19/ruta-al-pino-del-aprisquillo/",
+        "https://laadrada.net/turismo/rutas/al-aprisquillo/"
+      ],
+      "access": "Free, on public forest tracks. Two marked hiking routes reach it (from the road to the Colmenilla dam, or via Canto de la Linde), both with real elevation gain (roughly 630m over a 10km round trip per rutinasvarias); one alternative interior trail is described as not fully signposted. The municipality installed new trail signage for this specific route in November 2023, and a 2024 hiker reported the final stretch overgrown, so the walk is real but rougher than a park path.",
+      "transport": "Rural Avila province; no public transport reaches the trailhead. La Adrada is about 85km southwest of Madrid (published) and roughly 45km from Avila city; a car to the village, then the hike, is the only realistic route.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

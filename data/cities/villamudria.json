@@ -1,0 +1,65 @@
+{
+  "city": "Villamudria",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Villamudria is a small village of the municipality of Rabanos in the province of Burgos, on the north slope of the Sierra de la Demanda. Its tree stands half a kilometre out along a farm track, entirely alone on an open meadow. The Roble Escarcio is a Pyrenean oak of about 600 years with a trunk close to seven metres round, and nobody has explained why it was spared when the land around it was cleared.",
+  "meta_description": "The Roble Escarcio near Villamudria, Burgos: a Pyrenean oak about 600 years old and seven metres round, standing alone in an open meadow.",
+  "question_meta": "Villamudria's notable tree is the Roble Escarcio, a lone Pyrenean oak. Its age, its size, and how to walk to it.",
+  "question_answer": "The tree at Villamudria is the Roble Escarcio, a Pyrenean oak standing alone in an open meadow about 500 metres west of the village, in the Burgos municipality of Rabanos. It is about 600 years old by both of its sources, close to seven metres round, and sits on the Junta de Castilla y Leon's list of protected trees.",
+  "question_context": "Two independent writers have described this tree: a specialist on the singular trees of Castilla y Leon, and a Burgos hiking blogger who walked to it and wrote down the route. Both give an age of about 600 years, a figure neither backs with a ring count. The girth is less settled. The hiker gives seven metres as a nominal figure, and other figures published for the tree run up to about 7.7 metres, so read the size as roughly seven metres rather than an exact measurement. The species is Quercus pyrenaica, the Pyrenean oak, known locally as rebollo or melojo. The hiker cites the regional government's list of protected trees as the reason it is designated. What neither source nor a published book on the trees of Burgos can explain is why this one oak was left alone when the land around it was cleared. Its trunk is hollow and open; shepherds once sheltered and lit fires inside it, which the hiker records as a worry for its condition. Access is public and rated easy: a farm track of about 500 metres from the village leads to it. No public transport reaches Villamudria, about 33 kilometres from Burgos.",
+  "faq": [
+    {
+      "q": "How old is the Roble Escarcio?",
+      "a": "About 600 years, by both of the sources that describe it. Nobody has published a ring count, so treat it as an estimate rather than a measured age."
+    },
+    {
+      "q": "How big is it?",
+      "a": "Close to seven metres round. One source gives seven metres as a nominal figure and others run up to about 7.7, so the exact girth depends on where it was measured."
+    },
+    {
+      "q": "Can you visit the Roble Escarcio?",
+      "a": "Yes, free and public. From the village, pass the first row of houses and follow the farm track about 500 metres; take the correct fork at the only junction and the tree stands alone in front of you."
+    },
+    {
+      "q": "How do you get to Villamudria?",
+      "a": "By car. Villamudria is in the municipality of Rabanos, about 33 kilometres from Burgos; no public transport reaches the village."
+    }
+  ],
+  "hero_tree_id": "esc_001",
+  "oldest_tree_id": "esc_001",
+  "trees": [
+    {
+      "id": "esc_001",
+      "name": "Roble Escarcio",
+      "species": "Pyrenean Oak (Quercus pyrenaica)",
+      "age_estimate": "roughly 600 years",
+      "age_min": 500,
+      "age_max": 700,
+      "age_basis": "source",
+      "girth_cm": 700,
+      "location": {
+        "address": "Alone in an open meadow on the ridge facing the village, about 500m along a farm track west of Villamudria, Rabanos municipality, province of Burgos, Castilla y Leon",
+        "latitude": 42.330542,
+        "longitude": -3.295127,
+        "neighbourhood": "Villamudria, a hamlet of the municipality of Rabanos, Burgos"
+      },
+      "story": "Nobody knows why this oak was left standing. The Roble Escarcio grows alone in an open, treeless meadow on the ridge facing Villamudria, on land that was most likely farmed or grazed until fairly recently, and even a published book on the singular trees of Burgos could not explain why this one Pyrenean oak survived when everything else was cleared.\n\nIt survived well. Both of the local writers who have described it put it at about 600 years old, and it is close to seven metres round, a figure its sources give anywhere from 7 to a little over 7.7 metres depending on who held the tape. That is a very big trunk for any oak. It sits on the Junta de Castilla y Leon's list of protected trees.\n\nIts hollow trunk opens wide enough to look into, and people have used it for a long time. Villagers took its shade in summer and gathered its big acorns. Shepherds sheltered inside the trunk and, by one account, lit fires in it and used it as a chimney, which the hiker who recorded that called not very encouraging for its future.\n\nIt is still here. From the village, the farm track runs about 500 metres west, and the correct branch at its only fork leads straight to it.",
+      "how_to_recognise": "You can recognise it easily: it is the only tree on an open, treeless meadow, an oak about seven metres round with a hollow trunk you can look into. It stands about 500 metres along the farm track west of Villamudria.",
+      "verified_sources": [
+        "http://arbolessingularescyl.blogspot.com/2010/10/roble-escarcio.html",
+        "http://tierrasdeburgos.blogspot.com/2011/07/arboles-singulares-el-roble-escarcio.html"
+      ],
+      "access": "Free and public (one source explicitly rates access as 'Publica' and difficulty 'Facil'): from the village, walk past the first row of houses and take the track continuing the road's direction; after about 500m the tree stands alone on an open, treeless plain, and the correct fork at the only junction leads straight to it.",
+      "transport": "Rural Burgos province; no public transport reaches Villamudria. About 33km from Burgos city (which we do not currently publish); a car is the realistic way to reach it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
