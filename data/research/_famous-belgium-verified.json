@@ -1,56 +1,5 @@
 [
   {
-    "id": "lor_001",
-    "name": "Caesarsboom",
-    "species": "European Yew (Taxus baccata)",
-    "age_estimate": "roughly 250 years",
-    "age_min": 200,
-    "age_max": 300,
-    "girth_cm": 250,
-    "location": {
-      "address": "Weststraat, at the foot of the Westpoort (the town's last surviving medieval gate), Lo, Lo-Reninge, West Flanders",
-      "latitude": 50.98028,
-      "longitude": 2.74556,
-      "neighbourhood": "Lo (Lo-Reninge), West Flanders"
-    },
-    "verified_sources": [
-      "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/70129",
-      "https://en.wikipedia.org/wiki/Caesarsboom"
-    ],
-    "access": "Free. Stands in the open at a street corner beside the Westpoort town gate, in the centre of the small town of Lo; open at all times, no ticket or appointment needed.",
-    "transport": "In the historic centre of Lo (Lo-Reninge), reachable on foot within the town; no railway station in the municipality, nearest by De Lijn bus from Ieper or Veurne (exact stop not confirmed this pass).",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "story": "Julius Caesar is supposed to have tied his horse to this yew and slept in its shade on his way to conquer Britain in 55 BC. The tree is about 250 years old. Both of those statements are on the record, and only one of them is true.\n\nFlanders' heritage inventory and every serious account agree on the second: judged by its size, the current yew most likely dates from the eighteenth century, somewhere between 200 and 300 years. Historians doubt Caesar came anywhere near Lo at all, though the road beside it may be Roman in origin. The legend is the reason the tree has a name, and the name is the reason it is still here.\n\nThere is an older thread, and it is worth keeping separate. Documents hint that a yew has stood on this exact corner since about 1050. That is a claim about the spot, not about this trunk, which is a successor on a site that has apparently always wanted a yew.\n\nThe setting does the rest. It stands at the foot of the Westpoort, the only one of Lo's four medieval town gates still standing, beside Het Damberd, recorded as one of the town's breweries since 1499. It is 2.5 metres round, 7.5 metres tall and 8 metres across the crown, restored in 1989 and protected as a monument since 2005.\n\nLo is small and far from anywhere else on this map. The gate and the yew together are the reason to come.",
-    "how_to_recognise": "You can recognise it by the dark evergreen crown, 7.5 metres tall and 8 across, on a trunk 2.5 metres round. It stands at the street corner at the foot of the Westpoort, Lo's last surviving town gate."
-  },
-  {
-    "id": "gos_002",
-    "name": "Clawé Fawe (the nail tree of Foyr)",
-    "species": "European Beech (Fagus sylvatica)",
-    "age_estimate": "",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 379,
-    "location": {
-      "address": "Forest crossroads in the Bois de Foyr, north of the hamlet of Foyr, Jalhay",
-      "latitude": 50.5751,
-      "longitude": 5.9474,
-      "neighbourhood": "Foyr (Jalhay), Province de Liège"
-    },
-    "verified_sources": [
-      "https://fr.wikipedia.org/wiki/Arbre_%C3%A0_clous",
-      "https://www.mini-ardenne.be/poi.card.php?id=5750&language=fr",
-      "https://www.wikidata.org/wiki/Q13495179"
-    ],
-    "access": "Free, at a forest crossroads reached by marked walking trails near Jalhay and the Hautes Fagnes; open at all times, no ticket.",
-    "transport": "On a forest path north of the hamlet of Foyr, between Jalhay and the Hautes Fagnes; no public transport stop at the site, reached on foot.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "story": "People drove nails into this beech to get rid of their toothache. The idea, common across the Ardennes, was that the ailment passed out of the body and into the wood, and the name Clawé Fawe, the nailed beech, records what the tree was for.\n\nIt had other jobs, most of them grimmer. It marked the boundary between Jalhay, which answered to the Prince-Bishop of Liège, and Limbourg, which answered to the Duchy of Brabant, two communes with a long history of not getting along. And it stood at the site of Jalhay's gibbet. The present tree replaced an older one that did the same work, until the French cut it down at the end of the eighteenth century.\n\nBelgium has around 59 known nail trees, 33 of them in the province of Liège, and this is one of the named ones. It is a European beech, 3.79 metres round at chest height when it was measured in July 2013.\n\nIt stands at a forest crossroads north of the hamlet of Foyr, on marked walking trails between Jalhay and the Hautes Fagnes, a short way through the same woods from Les Sept Frères. The two sources that place it disagree by about a hundred metres, so the pin gets you to the right patch of forest and the crossroads does the rest.\n\nNobody has published an age for this beech. If you know when it went in, tell us.",
-    "how_to_recognise": "You can recognise it as the beech at the forest crossroads, 3.79 metres round at chest height, unlike the multi-trunked oak of Les Sept Frères nearby. It stands north of the hamlet of Foyr."
-  },
-  {
     "id": "sht_001",
     "name": "Les Six Hêtres de Longlou",
     "species": "European Beech (Fagus sylvatica)",

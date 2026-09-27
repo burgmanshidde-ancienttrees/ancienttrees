@@ -2,11 +2,11 @@
   "city": "Veľké Borové",
   "country": "Slovakia",
   "status": "needs_curation",
-  "intro": "Veľké Borové maps one tree: a wild Scots pine on the forested hillside above the village, at the foot of Súšava hill. It won Slovakia's very first Tree of the Year contest in 2004, a 23-metre pine estimated at 250 to 350 years old, exceptional size and age for its species. No dated sighting has confirmed it still standing since a hiking route to it was abandoned in 2014, so this page says that plainly rather than pretend otherwise.",
-  "meta_description": "Slovakia's first Tree of the Year, a wild Scots pine above Veľké Borové estimated at 250 to 350 years old, its recent status unconfirmed.",
-  "question_meta": "Veľké Borové's only mapped tree is a wild Scots pine above the village, Slovakia's first-ever Tree of the Year in 2004.",
-  "question_answer": "Veľké Borové's only mapped tree is a wild Scots pine on the hillside above the village, Slovakia's first-ever Tree of the Year in 2004, estimated at 250 to 350 years old with a girth of 460 centimetres.",
-  "question_context": "The pine grows wild on a forested slope above Veľké Borové, at the foot of Súšava hill in the Liptovský Mikuláš district, and won Slovakia's inaugural Strom roka title in 2004 ahead of every other nominated tree in the country. Foresters recorded it at 23 metres tall and 460 centimetres round at chest height, and estimated its age at 250 to 350 years, old enough to predate any living memory of the village. An information plaque was installed at the site after the win, and for a decade a geocache route guided hikers up the hillside path to find it. That geocache was archived in 2014 over deteriorated trail conditions, not any report about the tree, but no dated photograph or news mention has surfaced since confirming the pine is still standing, so this page states that gap honestly rather than assume it. The coordinates given here come from a photograph's own location tag rather than a source naming the exact trunk, so the pin marks the hillside area rather than a precise spot. Veľké Borové sits roughly 50 kilometres from Žilina, the nearest published Slovak city, well outside any day-trip pairing.",
+  "intro": "Veľké Borové maps two trees. A wild Scots pine on the hillside above the village won Slovakia's very first Tree of the Year in 2004, but no dated sighting has confirmed it standing since a hiking route to it was abandoned in 2014. A day trip away above the village of Žiar stands a wild apple that finished second in the 2026 European Tree of the Year, an untended tree at a field's edge that nobody planted on purpose.",
+  "meta_description": "Slovakia's first Tree of the Year, an unconfirmed pine above Veľké Borové, plus a day-trip wild apple that placed second in Europe in 2026.",
+  "question_meta": "Veľké Borové's oldest mapped tree is a wild Scots pine above the village, Slovakia's first-ever Tree of the Year in 2004.",
+  "question_answer": "Veľké Borové's oldest mapped tree is a wild Scots pine on the hillside above the village, Slovakia's first-ever Tree of the Year in 2004, estimated at 250 to 350 years old with a girth of 460 centimetres.",
+  "question_context": "The pine grows wild on a forested slope above Veľké Borové, at the foot of Súšava hill, and won Slovakia's inaugural Strom roka title in 2004 ahead of every other nominated tree in the country. Foresters recorded it at 23 metres tall and 460 centimetres round, and estimated its age at 250 to 350 years. An information plaque was installed after the win, and for a decade a geocache route guided hikers up the hillside path to find it. That geocache was archived in 2014 over deteriorated trail conditions, but no dated photograph or report has surfaced since confirming the pine is still standing, so this page states that gap honestly. The pin marks the hillside area rather than a precise spot, since the coordinates come from a photograph's location tag rather than a source naming the exact trunk. A second, unrelated tree stands about 15 kilometres away above the village of Žiar: a wild apple on open hillside farmland that nobody planted, which took second place in the 2026 European Tree of the Year, Slovakia's best-ever result. It is a separate car trip, not a joint walk with the pine.",
   "hero_tree_id": "vbo_001",
   "oldest_tree_id": "vbo_001",
   "faq": [
@@ -25,6 +25,10 @@
     {
       "q": "How do I get there?",
       "a": "Veľké Borové is a small village in the Liptovský Mikuláš district, roughly 50km from Žilina; the pine stands above the village on the slope of Súšava hill."
+    },
+    {
+      "q": "What is the second tree, the wild apple near Žiar?",
+      "a": "An untended apple tree on open hillside farmland above the village of Žiar, about 15km away. Nobody deliberately planted it, and in 2026 it placed second in European Tree of the Year, Slovakia's best result ever in the contest. It is a separate car trip, not a joint walk with the pine."
     }
   ],
   "trees": [
@@ -58,6 +62,41 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by the information plaque at its foot, on a pine 23 metres tall and 4.6 metres round on the forest hillside above the village. Nobody has confirmed it standing since about 2014."
+    },
+    {
+      "id": "vbo_002",
+      "name": "The Old Wild Apple Tree of Žiar",
+      "species": "Wild Apple Tree (Malus sylvestris)",
+      "age_estimate": "about 150 years",
+      "age_min": 130,
+      "age_max": 170,
+      "age_basis": "source",
+      "girth_cm": 242,
+      "location": {
+        "address": "On the hill known as Diel, above the village of Žiar, Liptovský Mikuláš District, Žilina Region, Slovakia",
+        "latitude": 49.1297028,
+        "longitude": 19.6786144,
+        "neighbourhood": "Diel hillside, Žiar (roughly 15 km from Veľké Borové)"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2026/old-wild-apple-tree",
+        "https://ekopolis.sk/2025/strom-roka-2025-je-uz-znamy-stala-sa-nim-150-rocna-jablon-z-vrchu-diel",
+        "https://www.teraz.sk/slovensko/enviro-slovenska-jablon-plana-sa-uch/937784-clanok.html",
+        "https://www.bystricoviny.sk/anketa/pozname-vitaza-ankety-strom-roka-2025-je-nim-150-rocna-jablon-z-vrchu-diel-na-strednom-slovensku/",
+        "https://zahrada.pravda.sk/zahrada/clanok/784460-na-kopci-nad-liptovom-stoji-uz-150-rokov-teraz-moze-stara-jablon-porazit-europu/"
+      ],
+      "access": "Open hillside farmland above Žiar village, at 860 m elevation, at the edge of a field on the hill called Diel. No source records a gate, fee or restriction, and a marked cycling route in the area passes close by, but this is working agricultural land rather than a park: reach it on foot or by bike along the farm track up the hillside and stay to the field edge.",
+      "transport": "No public transport to the tree itself. Car or bike to Žiar village (on the L. Mikuláš side of the Western Tatras, near the popular Žiarska dolina trailhead), then on foot or by bike up the hillside track to Diel, roughly 15 km / 20-25 minutes' drive from Veľké Borové plus the walk up.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "By most accounts, nobody planted the second-best tree in Europe. The wild apple on the hill called Diel, above Žiar, may have grown from a seed a bird dropped, or from an apple core somebody threw away at the edge of a field.\n\nIn 2026 it finished second in European Tree of the Year with 4,766 points, behind Lithuania's Oak of Laukiai and ahead of Poland's Crooked Tree. That is Slovakia's best result in the contest; the previous best was third place, in 2016. It qualified by winning Slovakia's own Tree of the Year for 2025, with 4,345 of more than 18,000 votes.\n\nIt is not big. The trunk is 242 cm round and the tree is about eight metres tall, a wild apple in a contest dominated by oaks, limes and beeches. It stands alone at the far edge of a field that villagers worked by hand for generations, on a windswept shoulder of the Western Tatras foothills at 860 metres. For about 150 years it has taken the mountain wind, frost and drought with no orchard care and no protection.\n\nWhat it has instead is people. One resident told Pravda that their grandfather remembered the tree from his childhood, and that today they walk up to it themselves.\n\nIt stands on open farmland rather than in a park, and no gate or fee is recorded; keep to the field edge. It is about 15 km from Veľké Borové's pine, a drive and then a walk uphill.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by its solitude: a wild apple about eight metres tall, with a trunk 242 cm round, alone at the far edge of a field. It stands on the Diel hillside above Žiar, at 860 metres."
     }
   ]
 }

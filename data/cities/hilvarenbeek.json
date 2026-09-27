@@ -2,11 +2,11 @@
   "city": "Hilvarenbeek",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Hilvarenbeek maps one tree: the Gebodenlinde on the Vrijthof, the lime the village aldermen stood under to read out local decrees. A proclamation lime, in other words, which also sheltered the linen market and served as the courthouse tree. Its predecessor died in 1675 and a document of April 1676 records the replacement going in, though whether today's trunk is that one or a 1704 successor is unresolved. It is 6.21 metres round and 23 metres tall, on the open square beside the church, with a bench under it.",
-  "meta_description": "The Gebodenlinde of Hilvarenbeek: the lime the aldermen read village decrees under, 6.21 metres round on the Vrijthof. Free, with a bench beneath it.",
-  "question_meta": "Hilvarenbeek's only mapped tree is the Gebodenlinde on the Vrijthof, a proclamation lime of roughly 320 to 350 years. Free at any hour.",
-  "question_answer": "Hilvarenbeek's oldest and only mapped tree is the Gebodenlinde, a Common Lime (Tilia x europaea) on the Vrijthof beside the church. It is roughly 320 to 350 years old, 6.21 metres round and 23 metres tall.",
-  "question_context": "A gebodenlinde is a proclamation lime: the schepenen, the village aldermen, announced Hilvarenbeek's decrees standing under this tree. The local heritage society's plaque and bomenbieb both record that it sheltered the linen market as well and served as the courthouse tree. The date it went in is documented, up to a point. A record of 22 April 1676 notes that a young lime had recently been planted on the Vrijthof, replacing an earlier lime that had died in 1675, and bomenbieb flags real uncertainty over whether the tree standing there now is that planting or a 1704 replacement. That is why the age is given as a band rather than a year. Heavy limbs were given structural support in 1974. The tree is still actively managed: Omroep Brabant reported that the municipality is studying how to improve its growing conditions, giving the roots more space, air and water. It stands in the open beside the church, the water pump and the bandstand, with a bench beneath it, public at any hour.",
+  "intro": "Hilvarenbeek maps two trees. The Gebodenlinde on the Vrijthof is the lime the village aldermen stood under to read out local decrees, which also sheltered the linen market and served as the courthouse tree. A day trip away near Bladel stands the Witch Tree of Black Kate, an ordinary beech twisted into a wild shape by clay soil and foot traffic, carrying a gothic 1852 legend its own forester calls made up.",
+  "meta_description": "Hilvarenbeek's proclamation lime, 6.21m round on the Vrijthof, plus a day-trip beech near Bladel with a gnarled shape and a witch legend.",
+  "question_meta": "Hilvarenbeek's oldest mapped tree is the Gebodenlinde on the Vrijthof, a proclamation lime of roughly 320 to 350 years. Free at any hour.",
+  "question_answer": "Hilvarenbeek's oldest mapped tree is the Gebodenlinde, a Common Lime (Tilia x europaea) on the Vrijthof beside the church. It is roughly 320 to 350 years old, 6.21 metres round and 23 metres tall.",
+  "question_context": "A gebodenlinde is a proclamation lime: the village aldermen announced Hilvarenbeek's decrees standing under this tree, which also sheltered the linen market and served as the courthouse tree. A record of 22 April 1676 notes a young lime recently planted on the Vrijthof, replacing one that died in 1675, but bomenbieb flags real uncertainty over whether today's tree is that planting or a 1704 replacement, hence the age band. Heavy limbs were given structural support in 1974, and the municipality is still studying how to improve its growing conditions. It stands in the open beside the church, the water pump and the bandstand, with a bench beneath it. A second, much younger tree stands about 16km away near Bladel: the Witch Tree of Black Kate, a beech of roughly 130 years whose local forester is on record saying the species is unremarkable and its legend invented. What made it Europe's fourth Tree of the Year in 2020 is its shape, a short twisted trunk with roots sitting above the ground, and the gothic 1852 tale that grew up around it. It is a separate car trip, not part of the same walk.",
   "hero_tree_id": "hvb_001",
   "oldest_tree_id": "hvb_001",
   "faq": [
@@ -25,6 +25,10 @@
     {
       "q": "Is it free to visit?",
       "a": "Yes. It stands in the open on the Vrijthof beside the church, the water pump and the bandstand, with a bench beneath it, at any hour."
+    },
+    {
+      "q": "What is the second tree, the Witch Tree of Black Kate?",
+      "a": "A beech of roughly 130 years on the Ten Vorsel estate near Bladel, about 16km away. It is not old or rare for its species, but its short, wildly twisted trunk and a gothic 1852 legend made it Europe's fourth Tree of the Year in 2020. It is a separate car trip from the Gebodenlinde, not part of the same walk."
     }
   ],
   "trees": [
@@ -68,6 +72,40 @@
         "label": "June to July, when it flowers",
         "kind": "flowers"
       }
+    },
+    {
+      "id": "hvb_002",
+      "name": "The Witch Tree of Black Kate",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "about 130 years",
+      "age_min": 125,
+      "age_max": 140,
+      "age_basis": "source",
+      "girth_cm": 321,
+      "location": {
+        "address": "Landgoed Ten Vorsel, 5531 ND Bladel, North Brabant, Netherlands",
+        "latitude": 51.346389,
+        "longitude": 5.202061,
+        "neighbourhood": "Ten Vorsel estate, Bladel (roughly 16 km from Hilvarenbeek)"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2020/Carodejny-strom",
+        "https://nl.wikipedia.org/wiki/Heksenboom_(Bladel)",
+        "https://www.omroepbrabant.nl/nieuws/3060371/zwarte-kaat-stal-een-kind-en-werd-onthoofd-maar-de-beuk-op-haar-graf-kan-boom-van-het-jaar-worden",
+        "https://www.visitbladel.nl/nl/locaties-overzicht/3836542341/de-heksenboom-zwarte-kaat"
+      ],
+      "access": "Free, in the Ten Vorsel forest estate near Bladel, on the region's own listed walking routes (visitbladel.nl lists it under hiking destinations, with a plotted route to it). A low sheep-fence was placed around the trunk from mid-2019 to stop root-plate erosion from the volume of visitors it now draws; visitors can still walk right up to it, just not trample the roots.",
+      "transport": "No direct public transport to the estate. About 16 km / 20-25 minutes by car from central Hilvarenbeek; a day-trip stop rather than part of the same walk as the Gebodenlinde (hvb_001).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A forester working on its estate has said on record that its species is nothing special and its legend is made up. It came fourth in Europe anyway: 18,452 votes in the 2020 European Tree of the Year, after the Dutch title in 2019.\n\nThe reason is its shape. The trunk is short, the crown twists off in every direction, and the roots sit partly on top of the ground, as if they never managed to get into it. Hard clay in the subsoil is one cause; the feet of its visitors are the other, which is why a low fence has circled the trunk since 2019. The estate's manager says walkers at dusk have been startled by it.\n\nThe legend explains the shape differently. In 1852 the Bladel-born writer Renier Snieders published a tale about Zwarte Kaat, Black Kate, a robber chief who stole the child of the lord of Ten Vorsel. Caught years later and beheaded, she was refused a grave in consecrated ground, so the story goes, and buried on the heath under a young beech. This, supposedly, is that beech.\n\nThe register is less gothic. It dates the tree to around 1890, which makes it about 130 years old and younger than the book. It stood alone on open heath and was kept when the land was planted as forest in the early 20th century.\n\nIt stands near Bladel, about 16 km from Hilvarenbeek's lime: a separate trip by car, not part of the same walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the short trunk, 3.21 metres round, the wildly twisted crown and the roots sitting on top of the ground inside a low fence. It stands in a row of American oaks on the Ten Vorsel estate."
     }
   ]
 }
