@@ -18528,6 +18528,70 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-27T05:48:23+00:00",
+   "date": "2026-09-27",
+   "run_id": "36298246562",
+   "minutes": 116.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 566,
+   "denials": 46,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; if ...), Bash(cd && curl && curl && ls ...), Bash(cd && curl && file && ls), Bash(cd && ls | head && for ...), Bash(cd && npm ; echo), Bash(curl ; curl ; ls ; file), Bash(echo && cat && echo && for ...), Bash(echo && python3 | head && echo ...), Bash(for ; do ; cat ; echo ...), Bash(for ; do ; done), Bash(for ; do ; echo ; if ...), Bash(for ; do ; echo ; python3 ...), Bash(for ; do ; if ; then ...), Bash(for ; do ; ls || echo ...), Bash(for ; do ; python3 | grep ...), Bash(for ; do ; python3 | head ...), Bash(git ; Verify ; found ; or ...), Bash(grep | head), Bash(if ; then ; else ; fi ...), Bash(jobs), Bash(kill ; echo), Bash(kill ; sleep ; ps | grep ...), Bash(mkdir && cat ; ? ; EOF ...), Bash(mkdir && echo && cat), Bash(mkdir && python3 | tail), Bash(mkdir), Bash(npm ; echo), Bash(python3 && rm && python3 ; import ...), Bash(python3 ; echo ; cat), Bash(python3 ; import ; d ; ? ...), Bash(python3 ; import ; path ; data ...), Bash(python3 ; import ; with ; trees ...), Bash(python3 ; python3 ; python3 ; python3 ...), Bash(python3 ; wc), Bash(python3 | head ; echo ; ? ...), Bash(python3), Bash(rm && git | head), Bash(rm && git), Bash(rm ; echo), Bash(rm), Bash(until || kill | head ; do ...), Write",
+   "ended": "success",
+   "tokens": 18015400,
+   "claims_held": [],
+   "commits": 21,
+   "cities_touched": 11,
+   "cities": [
+    {
+     "city": "parry-kauri-park",
+     "trees": 2
+    },
+    {
+     "city": "stockholm",
+     "trees": 2
+    },
+    {
+     "city": "azeitao",
+     "trees": 1
+    },
+    {
+     "city": "calvos",
+     "trees": 1
+    },
+    {
+     "city": "coromandel-forest-park",
+     "trees": 1
+    },
+    {
+     "city": "hilvarenbeek",
+     "trees": 1
+    },
+    {
+     "city": "otari-wiltons-bush",
+     "trees": 1
+    },
+    {
+     "city": "plunge",
+     "trees": 1
+    },
+    {
+     "city": "runa",
+     "trees": 1
+    },
+    {
+     "city": "velke-borove",
+     "trees": 1
+    },
+    {
+     "city": "bad-homburg",
+     "trees": 0
+    }
+   ],
+   "trees": 12,
+   "logged": true
   }
  ],
  "schedule_changes": [
