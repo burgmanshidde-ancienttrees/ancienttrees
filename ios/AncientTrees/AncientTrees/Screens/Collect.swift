@@ -723,7 +723,7 @@ struct CollectView: View {
                         // called, and appfit caught the tap target at 33.7 by
                         // 44 on iOS 18 for a two-letter name. A short name is
                         // not a smaller person to aim at.
-                        .frame(minWidth: 44, minHeight: 44, alignment: .leading)
+                        .frame(minWidth: 44, minHeight: 44, alignment: .bottomLeading)
                         .tapUnlessDragged {
                             if editable { editingProfile = true } else { signingIn = true }
                         }
@@ -756,17 +756,17 @@ struct CollectView: View {
                             // else in this codebase enlarges an already-44 frame,
                             // it does not fake one.
                             Button { peopleList = .followers } label: {
-                                Text("\(profiles.followers) followers")
+                                Text("\(profiles.followers) followers").padding(.top, 4)
                             }
                             .buttonStyle(.plain)
-                            .frame(minHeight: 44)
+                            .frame(minHeight: 44, alignment: .top)
                             .contentShape(.rect)
                             .accessibilityIdentifier("mytrees-followers")
                             Button { peopleList = .following } label: {
-                                Text("\(profiles.following) following")
+                                Text("\(profiles.following) following").padding(.top, 4)
                             }
                             .buttonStyle(.plain)
-                            .frame(minHeight: 44)
+                            .frame(minHeight: 44, alignment: .top)
                             .contentShape(.rect)
                             .accessibilityIdentifier("mytrees-following")
                         }
