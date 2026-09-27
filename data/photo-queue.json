@@ -64643,7 +64643,7 @@
   "nol_001": {
    "city": "New Orleans",
    "name": "The McDonogh Oak",
-   "checked": "2026-09-01",
+   "checked": "2026-09-27",
    "sweep": 5,
    "candidates": [
     {
@@ -64695,6 +64695,18 @@
      "verdict": "Generic City Park live oak 219 m from the pin, trunk far too slender to be the McDonogh Oak."
     },
     {
+     "title": "File:Tree Ladder - New Orleans June 2021.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Tree_Ladder_-_New_Orleans_June_2021.jpg/960px-Tree_Ladder_-_New_Orleans_June_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tree_Ladder_-_New_Orleans_June_2021.jpg",
+     "licence": "CC BY 2.0",
+     "author": "Bart Everson",
+     "lat": 29.9846,
+     "lng": -90.095781,
+     "cats": "Category:2021 in City Park, New Orleans Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:June 2021 in New Orleans Category:Photographs by Bart Everson Category:Trees in City Park, New Orleans Category:Wooden ladders in the United States",
+     "judged": "reject",
+     "verdict": "viewed at 960px: a wooden ladder propped in a hollow trunk, the ladder is the subject and the tree is a backdrop"
+    },
+    {
      "title": "File:Spanish Moss in New Orleans City Park trees.jpg",
      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Spanish_Moss_in_New_Orleans_City_Park_trees.jpg/960px-Spanish_Moss_in_New_Orleans_City_Park_trees.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Spanish_Moss_in_New_Orleans_City_Park_trees.jpg",
@@ -64725,18 +64737,6 @@
      "cats": "Category:CC-BY-SA-4.0 Category:February 2021 in New Orleans Central Business District Category:Files with coordinates missing SDC location of creation Category:McDonough Memorial, New Orleans Category:Self-published work"
     },
     {
-     "title": "File:Tree Ladder - New Orleans June 2021.jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Tree_Ladder_-_New_Orleans_June_2021.jpg/960px-Tree_Ladder_-_New_Orleans_June_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Tree_Ladder_-_New_Orleans_June_2021.jpg",
-     "licence": "CC BY 2.0",
-     "author": "Bart Everson",
-     "lat": 29.9846,
-     "lng": -90.095781,
-     "cats": "Category:2021 in City Park, New Orleans Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:June 2021 in New Orleans Category:Photographs by Bart Everson Category:Trees in City Park, New Orleans Category:Wooden ladders in the United States",
-     "judged": "reject",
-     "verdict": "viewed at 960px: a wooden ladder propped in a hollow trunk, the ladder is the subject and the tree is a backdrop"
-    },
-    {
      "title": "iNat obs 114340341 (Quercus virginiana)",
      "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/193090902/medium.jpg",
      "url": "https://www.inaturalist.org/observations/114340341",
@@ -64750,7 +64750,7 @@
   "nol_002": {
    "city": "New Orleans",
    "name": "The Anseman Oak",
-   "checked": "2026-09-01",
+   "checked": "2026-09-27",
    "sweep": 5,
    "candidates": [
     {
@@ -124946,15 +124946,6 @@
      "obs_location": "36.748070768,-118.9711625106"
     },
     {
-     "title": "iNat obs 29400039 (Sequoiadendron giganteum)",
-     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/45882081/medium.jpeg",
-     "url": "https://www.inaturalist.org/observations/29400039",
-     "licence": "CC0",
-     "author": "no rights reserved",
-     "source": "inaturalist",
-     "obs_location": "36.74809402,-118.97111809"
-    },
-    {
      "title": "iNat obs 101679198 (Sequoiadendron giganteum)",
      "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/169821647/medium.jpeg",
      "url": "https://www.inaturalist.org/observations/101679198",
@@ -124964,17 +124955,26 @@
      "obs_location": "36.7492875271,-118.9704104885"
     },
     {
-     "title": "iNat obs 112031674 (Sequoiadendron giganteum)",
-     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189200956/medium.jpg",
-     "url": "https://www.inaturalist.org/observations/112031674",
-     "licence": "CC BY",
-     "author": "(c) Reilly, some rights reserved (CC BY)",
+     "title": "iNat obs 29400039 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/45882081/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/29400039",
+     "licence": "CC0",
+     "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "36.748056,-118.971111"
+     "obs_location": "36.74809402,-118.97111809"
     },
     {
      "title": "iNat obs 390492291 (Sequoiadendron giganteum)",
      "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/715398298/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/390492291",
+     "licence": "CC BY",
+     "author": "(c) carbapple, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.7486647222,-118.9718988889"
+    },
+    {
+     "title": "iNat obs 390492291 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/715398292/medium.jpg",
      "url": "https://www.inaturalist.org/observations/390492291",
      "licence": "CC BY",
      "author": "(c) carbapple, some rights reserved (CC BY)",
@@ -125514,6 +125514,2161 @@
    "checked": "2026-09-27",
    "sweep": 5,
    "candidates": []
+  },
+  "lax_011": {
+   "city": "Los Angeles",
+   "name": "The Huntington Rose Garden Kauri",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lax_012": {
+   "city": "Los Angeles",
+   "name": "The Crystal Springs Heritage Sycamore",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mel_013": {
+   "city": "Melbourne",
+   "name": "The Southern Mahogany of Edinburgh Gardens",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mel_014": {
+   "city": "Melbourne",
+   "name": "The Hoop Pine of Yarra Boulevard",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mel_015": {
+   "city": "Melbourne",
+   "name": "The Peppercorn Tree of Madden Grove",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mel_016": {
+   "city": "Melbourne",
+   "name": "The Lemon-scented Gum of Madden Grove",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "msa_001": {
+   "city": "Minamiaso",
+   "name": "Isshingyo-no-Ozakura",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mor_002": {
+   "city": "Morioka",
+   "name": "Shidare Katsura of Ryugen-ji",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Shidarekatsura2 Takigenji.jpg (Wikidata Q60997423)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Shidarekatsura2_Takigenji.jpg/960px-Shidarekatsura2_Takigenji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Shidarekatsura2_Takigenji.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ty19080914",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Japan photographs taken on 2018-05-04 Category:May 2018 in Iwate prefecture Category:Ryūgen-ji (Morioka) Category:Self-published work Category:Shidare Katsura Category:Taken with Canon Digital IXUS 500 HS",
+     "source": "wikidata/Q60997423"
+    }
+   ]
+  },
+  "nol_005": {
+   "city": "New Orleans",
+   "name": "The Suicide Oak",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 241200895 (Quercus virginiana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/429839803/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/241200895",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "29.9881716667,-90.0999305"
+    }
+   ]
+  },
+  "nol_006": {
+   "city": "New Orleans",
+   "name": "The Singing Oak",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 329525044 (Quercus virginiana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/597338841/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/329525044",
+     "licence": "CC BY",
+     "author": "(c) Bao Pham, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "29.9866961954,-90.0953224696"
+    },
+    {
+     "title": "iNat obs 35311800 (Quercus virginiana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/55670355/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/35311800",
+     "licence": "CC BY",
+     "author": "(c) Kaden Slone, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "29.9864601404,-90.094909966"
+    },
+    {
+     "title": "iNat obs 109669958 (Quercus virginiana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/184879440/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/109669958",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "29.98713318,-90.09587092"
+    },
+    {
+     "title": "iNat obs 109669958 (Quercus virginiana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/184879500/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/109669958",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "29.98713318,-90.09587092"
+    }
+   ]
+  },
+  "ntt_001": {
+   "city": "Nichinan, Tottori",
+   "name": "The Yew of Mt Sentsu (Sentsuzan no Ichii)",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "oly_002": {
+   "city": "Olympic National Park",
+   "name": "The Duncan Cedar",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Duncan Memorial Big Cedar Tree, 002.jpg (Wikidata Q104861421)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Duncan_Memorial_Big_Cedar_Tree%2C_002.jpg/960px-Duncan_Memorial_Big_Cedar_Tree%2C_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Duncan_Memorial_Big_Cedar_Tree,_002.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Steven Pavlov",
+     "lat": 47.71958336,
+     "lng": -124.31501001,
+     "cats": "Category:CC-BY-SA-4.0 Category:Duncan Memorial Big Cedar Tree Category:Files with coordinates missing SDC location of creation Category:Images by Steven Pavlov taken in 2016 Category:Information field template with formatting Category:July 2016 in Washington (state) Category:Photographs taken on 2016-07-03 Category:Photos by Steven Pavlov taken with Canon EOS 50D",
+     "source": "wikidata/Q104861421"
+    },
+    {
+     "title": "File:870404-30 Nolan Ck Cedar, in a clearcut off 101 S of the Hoh.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/870404-30_Nolan_Ck_Cedar%2C_in_a_clearcut_off_101_S_of_the_Hoh.jpg/960px-870404-30_Nolan_Ck_Cedar%2C_in_a_clearcut_off_101_S_of_the_Hoh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:870404-30_Nolan_Ck_Cedar,_in_a_clearcut_off_101_S_of_the_Hoh.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "OlyScientist",
+     "lat": 47.719,
+     "lng": -124.315,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Thuja plicata"
+    },
+    {
+     "title": "File:Duncan Memorial Big Cedar Tree, 002.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Duncan_Memorial_Big_Cedar_Tree%2C_002.jpg/960px-Duncan_Memorial_Big_Cedar_Tree%2C_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Duncan_Memorial_Big_Cedar_Tree,_002.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Steven Pavlov",
+     "lat": 47.71958336,
+     "lng": -124.31501001,
+     "cats": "Category:CC-BY-SA-4.0 Category:Duncan Memorial Big Cedar Tree Category:Files with coordinates missing SDC location of creation Category:Images by Steven Pavlov taken in 2016 Category:Information field template with formatting Category:July 2016 in Washington (state) Category:Photographs taken on 2016-07-03 Category:Photos by Steven Pavlov taken with Canon EOS 50D"
+    },
+    {
+     "title": "File:Duncan Memorial Big Cedar Tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Duncan_Memorial_Big_Cedar_Tree.jpg/960px-Duncan_Memorial_Big_Cedar_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Duncan_Memorial_Big_Cedar_Tree.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Steven Pavlov",
+     "lat": 47.719559,
+     "lng": -124.31500465,
+     "cats": "Category:CC-BY-SA-4.0 Category:Duncan Memorial Big Cedar Tree Category:Files with coordinates missing SDC location of creation Category:Images by Steven Pavlov taken in 2016 Category:Information field template with formatting Category:July 2016 in Washington (state) Category:Photographs taken on 2016-07-03 Category:Photos by Steven Pavlov taken with Canon EOS 50D"
+    },
+    {
+     "title": "File:Duncan Memorial Big Cedar Tree information sign.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Duncan_Memorial_Big_Cedar_Tree_information_sign.jpg/960px-Duncan_Memorial_Big_Cedar_Tree_information_sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Duncan_Memorial_Big_Cedar_Tree_information_sign.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Steven Pavlov",
+     "lat": 47.71956712,
+     "lng": -124.31499794,
+     "cats": "Category:CC-BY-SA-4.0 Category:Duncan Memorial Big Cedar Tree Category:Files with coordinates missing SDC location of creation Category:Images by Steven Pavlov taken in 2016 Category:July 2016 in Washington (state) Category:Photographs taken on 2016-07-03 Category:Photos by Steven Pavlov taken with Canon EOS 50D Category:Self-published work"
+    },
+    {
+     "title": "File:Duncan Memorial Big Cedar Tree road sign, U.S. Route 101.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Duncan_Memorial_Big_Cedar_Tree_road_sign%2C_U.S._Route_101.jpg/960px-Duncan_Memorial_Big_Cedar_Tree_road_sign%2C_U.S._Route_101.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Duncan_Memorial_Big_Cedar_Tree_road_sign,_U.S._Route_101.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Steven Pavlov",
+     "lat": 47.75097369,
+     "lng": -124.32275489,
+     "cats": "Category:CC-BY-SA-4.0 Category:Directional road signs in Washington (state) Category:Duncan Memorial Big Cedar Tree Category:Files with coordinates missing SDC location of creation Category:Guardrails in Washington (state) Category:Images by Steven Pavlov taken in 2016 Category:Information field template with formatting Category:July 2016 in Washington (state) Category:Photographs taken on 2016-07-03 Category:Photos by Steven Pavlov taken with Canon EOS 50D Category:Recreational and Cultural Interest Area directional guide signs in the United States Category:Road signs along U.S. Route 101 in Washington (state) Category:Road signs in the United States photographed in 2016 Category:U.S. Route 101 in Jefferson County, Washington"
+    },
+    {
+     "title": "File:Duncan Memorial Western Redcedar.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Duncan_Memorial_Western_Redcedar.jpg/960px-Duncan_Memorial_Western_Redcedar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Duncan_Memorial_Western_Redcedar.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marrstree",
+     "lat": 47.719394,
+     "lng": -124.315139,
+     "cats": "Category:CC-BY-SA-4.0 Category:Duncan Memorial Big Cedar Tree Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 371837539 (Thuja plicata)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/679407783/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/371837539",
+     "licence": "CC BY",
+     "author": "(c) Corey Fuhrer, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "47.7194116667,-124.3150416667"
+    },
+    {
+     "title": "iNat obs 90850004 (Thuja plicata)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/150190612/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/90850004",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "47.719481,-124.3149329722"
+    },
+    {
+     "title": "iNat obs 90850004 (Thuja plicata)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/150190645/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/90850004",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "47.719481,-124.3149329722"
+    }
+   ]
+  },
+  "oly_003": {
+   "city": "Olympic National Park",
+   "name": "The Tree of Life",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Tree of Life on Kalaloch Beach in Olympic National Park.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Tree_of_Life_on_Kalaloch_Beach_in_Olympic_National_Park.jpg/960px-Tree_of_Life_on_Kalaloch_Beach_in_Olympic_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tree_of_Life_on_Kalaloch_Beach_in_Olympic_National_Park.jpg",
+     "licence": "CC0",
+     "author": "Sven-the-Green",
+     "lat": 47.613517,
+     "lng": -124.376759,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Flora of national parks of the United States Category:Self-published work Category:September 2025 in Washington (state) Category:Trees in Washington (state)"
+    }
+   ]
+  },
+  "oly_004": {
+   "city": "Olympic National Park",
+   "name": "The Quinault Big Spruce",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Lake Quinault, Washington - Museum 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Lake_Quinault%2C_Washington_-_Museum_01.jpg/960px-Lake_Quinault%2C_Washington_-_Museum_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lake_Quinault,_Washington_-_Museum_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Joe Mabel",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings in Quinault, Washington Category:CC-BY-SA-4.0 Category:History museums in Washington (state) Category:Self-published work Category:September 2017 in Washington (state) Category:United States photographs taken on 2017-09-26"
+    },
+    {
+     "title": "File:Largest Sitka Spruce, Quinault Lake, Washington 2018-08-21 OC-LSC-0090.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Largest_Sitka_Spruce%2C_Quinault_Lake%2C_Washington_2018-08-21_OC-LSC-0090.jpg/960px-Largest_Sitka_Spruce%2C_Quinault_Lake%2C_Washington_2018-08-21_OC-LSC-0090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Largest_Sitka_Spruce,_Quinault_Lake,_Washington_2018-08-21_OC-LSC-0090.jpg",
+     "licence": "Public domain",
+     "author": "U.S. Department of Agriculture",
+     "lat": 47.477833,
+     "lng": -123.829667,
+     "cats": "Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Flora of Grays Harbor County, Washington Category:Lake Quinault Category:PD USDA Category:Photographs by the U.S. Department of Agriculture Category:Picea sitchensis Category:Trees in Washington (state) Category:USAgriculture files uploaded by Tyler de Noche"
+    },
+    {
+     "title": "File:QuinaltSpruce 7246c.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/QuinaltSpruce_7246c.jpg/960px-QuinaltSpruce_7246c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:QuinaltSpruce_7246c.jpg",
+     "licence": "CC BY 2.5",
+     "author": "Wsiegmund",
+     "lat": 47.4773,
+     "lng": -123.8297,
+     "cats": "Category:CC-BY-2.5 Category:CC-BY-SA-3.0-migrated Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Picea sitchensis Category:Pinales in Olympic National Park Category:Self-published work Category:Taken with Canon PowerShot S110"
+    },
+    {
+     "title": "iNat obs 269236706 (Picea sitchensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/484036011/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/269236706",
+     "licence": "CC BY",
+     "author": "(c) carbapple, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "47.4762219444,-123.8300777778"
+    },
+    {
+     "title": "iNat obs 269236706 (Picea sitchensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/484036028/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/269236706",
+     "licence": "CC BY",
+     "author": "(c) carbapple, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "47.4762219444,-123.8300777778"
+    },
+    {
+     "title": "iNat obs 269236702 (Picea sitchensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/484035750/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/269236702",
+     "licence": "CC BY",
+     "author": "(c) carbapple, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "47.4759969444,-123.8306877778"
+    },
+    {
+     "title": "iNat obs 269236702 (Picea sitchensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/484035730/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/269236702",
+     "licence": "CC BY",
+     "author": "(c) carbapple, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "47.4759969444,-123.8306877778"
+    }
+   ]
+  },
+  "mko_001": {
+   "city": "Otari-Wilton's Bush",
+   "name": "Moko",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:800 year old rimu (6706301087).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/800_year_old_rimu_%286706301087%29.jpg/960px-800_year_old_rimu_%286706301087%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:800_year_old_rimu_(6706301087).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Akos Kokai",
+     "lat": -41.265943,
+     "lng": 174.752483,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Moko (Tree) Category:Photographs by Akos Kokail"
+    },
+    {
+     "title": "File:800 year old rimu (6709283021).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/800_year_old_rimu_%286709283021%29.jpg/960px-800_year_old_rimu_%286709283021%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:800_year_old_rimu_(6709283021).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Akos Kokai",
+     "lat": -41.266247,
+     "lng": 174.752731,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR Category:Moko (Tree) Category:Photographs by Akos Kokail"
+    },
+    {
+     "title": "File:Carved tree fern trunk (6709296575).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Carved_tree_fern_trunk_%286709296575%29.jpg/960px-Carved_tree_fern_trunk_%286709296575%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Carved_tree_fern_trunk_(6709296575).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Akos Kokai",
+     "lat": -41.265809,
+     "lng": 174.7522,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR Category:Nature of Wellington Category:Photographs by Akos Kokail"
+    },
+    {
+     "title": "File:Trunk of 800 year old rimu.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Trunk_of_800_year_old_rimu.jpg/960px-Trunk_of_800_year_old_rimu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Trunk_of_800_year_old_rimu.jpg",
+     "licence": "Public domain",
+     "author": "Pseudopanax at English Wikipedia",
+     "lat": -41.26605556,
+     "lng": 174.7525,
+     "cats": "Category:Files with coordinates missing SDC location of creation Category:Moko (Tree) Category:PD-self Category:Self-published work Category:Tree trunks"
+    },
+    {
+     "title": "iNat obs 109601223 (Dacrydium cupressinum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/184750469/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/109601223",
+     "licence": "CC BY",
+     "author": "(c) Joe Dillon, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-41.2660700388,174.7522851858"
+    },
+    {
+     "title": "iNat obs 109601223 (Dacrydium cupressinum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/184750507/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/109601223",
+     "licence": "CC BY",
+     "author": "(c) Joe Dillon, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-41.2660700388,174.7522851858"
+    },
+    {
+     "title": "iNat obs 239284033 (Dacrydium cupressinum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/426139916/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/239284033",
+     "licence": "CC BY",
+     "author": "(c) Svend Hansen, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-41.2659388889,174.7525777778"
+    },
+    {
+     "title": "iNat obs 239284033 (Dacrydium cupressinum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/426139962/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/239284033",
+     "licence": "CC BY",
+     "author": "(c) Svend Hansen, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-41.2659388889,174.7525777778"
+    },
+    {
+     "title": "iNat obs 109601225 (Dacrydium cupressinum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/184750623/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/109601225",
+     "licence": "CC BY",
+     "author": "(c) Joe Dillon, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-41.2660700388,174.7522851858"
+    },
+    {
+     "title": "iNat obs 61927416 (Dacrydium cupressinum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/99154412/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/61927416",
+     "licence": "CC BY",
+     "author": "(c) wild_wind, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-41.2663271556,174.751243029"
+    }
+   ]
+  },
+  "pky_001": {
+   "city": "Parry Kauri Park",
+   "name": "McKinney Kauri",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:McKinneyKauri.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/McKinneyKauri.jpg/960px-McKinneyKauri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:McKinneyKauri.jpg",
+     "licence": "Public domain",
+     "author": "User:Kahuroa",
+     "lat": -36.416474,
+     "lng": 174.669271,
+     "cats": "Category:February 2007 in Auckland Category:Files by User:Kahuroa Category:Files with coordinates missing SDC location of creation Category:McKinney Kauri Category:New Zealand photographs taken on 2007-02-18 Category:PD-user Category:Trees in New Zealand"
+    },
+    {
+     "title": "File:McKinney Kauri.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/McKinney_Kauri.jpg/960px-McKinney_Kauri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:McKinney_Kauri.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "ShakyIsles",
+     "lat": -36.4161836,
+     "lng": 174.6698444,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:McKinney Kauri Category:New Zealand photographs taken on 2024-01-20 Category:Self-published work Category:Uploaded with Mobile/Android"
+    },
+    {
+     "title": "File:Parry Kauri Park - McKinney kauri tree-2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Parry_Kauri_Park_-_McKinney_kauri_tree-2.jpg/960px-Parry_Kauri_Park_-_McKinney_kauri_tree-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_McKinney_kauri_tree-2.jpg",
+     "licence": "Public domain",
+     "author": "Szilas",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:McKinney Kauri Category:PD-self Category:Self-published work Category:Uploaded with Commonist"
+    },
+    {
+     "title": "File:Parry Kauri Park - McKinney kauri tree-4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Parry_Kauri_Park_-_McKinney_kauri_tree-4.jpg/960px-Parry_Kauri_Park_-_McKinney_kauri_tree-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_McKinney_kauri_tree-4.jpg",
+     "licence": "Public domain",
+     "author": "Szilas",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:McKinney Kauri Category:PD-self Category:Self-published work Category:Uploaded with Commonist"
+    },
+    {
+     "title": "File:Simpson Kauri.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Simpson_Kauri.jpg/960px-Simpson_Kauri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Simpson_Kauri.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "ShakyIsles",
+     "lat": -36.4164463,
+     "lng": 174.669443,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:New Zealand photographs taken on 2024-01-20 Category:Self-published work Category:Simpson Kauri Category:Uploaded with Mobile/Android"
+    },
+    {
+     "title": "iNat obs 104165444 (Agathis australis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/174514806/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/104165444",
+     "licence": "CC BY",
+     "author": "(c) Joe Dillon, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-36.41669259,174.6694971837"
+    },
+    {
+     "title": "iNat obs 104276521 (Agathis australis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/174688189/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104276521",
+     "licence": "CC BY",
+     "author": "(c) er-birds, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-36.4161863065,174.67030995"
+    },
+    {
+     "title": "iNat obs 104276521 (Agathis australis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/174688192/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104276521",
+     "licence": "CC BY",
+     "author": "(c) er-birds, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-36.4161863065,174.67030995"
+    },
+    {
+     "title": "iNat obs 104165445 (Agathis australis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/174514843/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/104165445",
+     "licence": "CC BY",
+     "author": "(c) Joe Dillon, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-36.41669259,174.6694971837"
+    }
+   ]
+  },
+  "pky_002": {
+   "city": "Parry Kauri Park",
+   "name": "Simpson Kauri",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:McKinneyKauri.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/McKinneyKauri.jpg/960px-McKinneyKauri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:McKinneyKauri.jpg",
+     "licence": "Public domain",
+     "author": "User:Kahuroa",
+     "lat": -36.416474,
+     "lng": 174.669271,
+     "cats": "Category:February 2007 in Auckland Category:Files by User:Kahuroa Category:Files with coordinates missing SDC location of creation Category:McKinney Kauri Category:New Zealand photographs taken on 2007-02-18 Category:PD-user Category:Trees in New Zealand"
+    },
+    {
+     "title": "File:McKinney Kauri.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/McKinney_Kauri.jpg/960px-McKinney_Kauri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:McKinney_Kauri.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "ShakyIsles",
+     "lat": -36.4161836,
+     "lng": 174.6698444,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:McKinney Kauri Category:New Zealand photographs taken on 2024-01-20 Category:Self-published work Category:Uploaded with Mobile/Android"
+    },
+    {
+     "title": "File:Parry Kauri Park - Simpson kauri tree-2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Parry_Kauri_Park_-_Simpson_kauri_tree-2.jpg/960px-Parry_Kauri_Park_-_Simpson_kauri_tree-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Simpson_kauri_tree-2.jpg",
+     "licence": "Public domain",
+     "author": "Szilas",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:PD-self Category:Self-published work Category:Simpson Kauri Category:Uploaded with Commonist"
+    },
+    {
+     "title": "File:Parry Kauri Park - Simpson kauri tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Parry_Kauri_Park_-_Simpson_kauri_tree.jpg/960px-Parry_Kauri_Park_-_Simpson_kauri_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Simpson_kauri_tree.jpg",
+     "licence": "Public domain",
+     "author": "Szilas",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:PD-self Category:Self-published work Category:Simpson Kauri Category:Uploaded with Commonist"
+    },
+    {
+     "title": "File:Simpson Kauri.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Simpson_Kauri.jpg/960px-Simpson_Kauri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Simpson_Kauri.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "ShakyIsles",
+     "lat": -36.4164463,
+     "lng": 174.669443,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:New Zealand photographs taken on 2024-01-20 Category:Self-published work Category:Simpson Kauri Category:Uploaded with Mobile/Android"
+    },
+    {
+     "title": "iNat obs 104165444 (Agathis australis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/174514806/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/104165444",
+     "licence": "CC BY",
+     "author": "(c) Joe Dillon, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-36.41669259,174.6694971837"
+    },
+    {
+     "title": "iNat obs 104276521 (Agathis australis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/174688189/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104276521",
+     "licence": "CC BY",
+     "author": "(c) er-birds, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-36.4161863065,174.67030995"
+    },
+    {
+     "title": "iNat obs 104276521 (Agathis australis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/174688192/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104276521",
+     "licence": "CC BY",
+     "author": "(c) er-birds, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-36.4161863065,174.67030995"
+    },
+    {
+     "title": "iNat obs 104165445 (Agathis australis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/174514843/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/104165445",
+     "licence": "CC BY",
+     "author": "(c) Joe Dillon, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-36.41669259,174.6694971837"
+    }
+   ]
+  },
+  "phl_002": {
+   "city": "Philadelphia",
+   "name": "The Bender Oak",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Cephalotaxus harringtonia var. drupacea, Morris Arboretum 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Cephalotaxus_harringtonia_var._drupacea%2C_Morris_Arboretum_01.jpg/960px-Cephalotaxus_harringtonia_var._drupacea%2C_Morris_Arboretum_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cephalotaxus_harringtonia_var._drupacea,_Morris_Arboretum_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Shuvaev",
+     "lat": 40.087143,
+     "lng": -75.221362,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cephalotaxus harringtonia var. drupacea Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Specimens in Morris Arboretum"
+    },
+    {
+     "title": "iNat obs 192852794 (Quercus texana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/338647966/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/192852794",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0874055,-75.2206116667"
+    },
+    {
+     "title": "iNat obs 192852794 (Quercus texana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/338647993/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/192852794",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0874055,-75.2206116667"
+    },
+    {
+     "title": "iNat obs 367519229 (Quercus vaseyana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/671173088/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/367519229",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0876195,-75.2211966667"
+    },
+    {
+     "title": "iNat obs 367519229 (Quercus vaseyana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/671173117/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/367519229",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0876195,-75.2211966667"
+    },
+    {
+     "title": "iNat obs 219643272 (Quercus × deamii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/388791000/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/219643272",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0875333333,-75.2211916667"
+    },
+    {
+     "title": "iNat obs 219643272 (Quercus × deamii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/388791056/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/219643272",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0875333333,-75.2211916667"
+    }
+   ]
+  },
+  "phl_003": {
+   "city": "Philadelphia",
+   "name": "The Katsura-Tree of Morris Arboretum",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Cephalotaxus harringtonia var. drupacea, Morris Arboretum 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Cephalotaxus_harringtonia_var._drupacea%2C_Morris_Arboretum_01.jpg/960px-Cephalotaxus_harringtonia_var._drupacea%2C_Morris_Arboretum_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cephalotaxus_harringtonia_var._drupacea,_Morris_Arboretum_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Shuvaev",
+     "lat": 40.087143,
+     "lng": -75.221362,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cephalotaxus harringtonia var. drupacea Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Specimens in Morris Arboretum"
+    }
+   ]
+  },
+  "phl_004": {
+   "city": "Philadelphia",
+   "name": "The Weeping Hemlock at the Meadowbrook Gate",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Cephalotaxus harringtonia var. drupacea, Morris Arboretum 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Cephalotaxus_harringtonia_var._drupacea%2C_Morris_Arboretum_01.jpg/960px-Cephalotaxus_harringtonia_var._drupacea%2C_Morris_Arboretum_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cephalotaxus_harringtonia_var._drupacea,_Morris_Arboretum_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Shuvaev",
+     "lat": 40.087143,
+     "lng": -75.221362,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cephalotaxus harringtonia var. drupacea Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Specimens in Morris Arboretum"
+    },
+    {
+     "title": "iNat obs 69589240 (Tsuga ulleungensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/112947184/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/69589240",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0875166667,-75.22165"
+    },
+    {
+     "title": "iNat obs 69589240 (Tsuga ulleungensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/112947191/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/69589240",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0875166667,-75.22165"
+    },
+    {
+     "title": "iNat obs 69589362 (Tsuga chinensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/112947414/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/69589362",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0875638333,-75.22187"
+    },
+    {
+     "title": "iNat obs 69589362 (Tsuga chinensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/112947432/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/69589362",
+     "licence": "CC BY",
+     "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.0875638333,-75.22187"
+    }
+   ]
+  },
+  "plg_007": {
+   "city": "Plunge",
+   "name": "The Oak of Laukiai",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "rdn_002": {
+   "city": "Raudonė",
+   "name": "The Plokščiai Oak (Panemunė)",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Enlistment in the Lithuanian Army, Panemunė, Kaunas 1919.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/88/Enlistment_in_the_Lithuanian_Army%2C_Panemun%C4%97%2C_Kaunas_1919.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Enlistment_in_the_Lithuanian_Army,_Panemun%C4%97,_Kaunas_1919.jpg",
+     "licence": "Public domain",
+     "author": "Unknown authorUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1919 in Kaunas Category:Lithuanian Army (1918-1940) Category:Lithuanian War of Independence Category:PD-anon-70-EU Category:Panemunė (Kaunas) Category:Soldiers of Interwar Lithuania Category:Template Unknown (author)"
+    }
+   ]
+  },
+  "rdn_003": {
+   "city": "Raudonė",
+   "name": "Ilguva Oak",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Ilguva, ąžuolas.JPG (Wikidata Q116944253)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Ilguva%2C_%C4%85%C5%BEuolas.JPG/960px-Ilguva%2C_%C4%85%C5%BEuolas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ilguva,_%C4%85%C5%BEuolas.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vilensija",
+     "lat": 55.063106,
+     "lng": 23.321357,
+     "cats": "Category:CC-BY-SA-3.0 Category:Famous trees in Lithuania Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Ilguva oak Category:License migration redundant Category:Quercus robur in Lithuania Category:Self-published work",
+     "source": "wikidata/Q116944253"
+    }
+   ]
+  },
+  "rvd_003": {
+   "city": "Réno-Valdieu",
+   "name": "Chêne d'Aberdeen",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "rvd_004": {
+   "city": "Réno-Valdieu",
+   "name": "Chêne du Xe Congrès Forestier",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Georges Forestier 1838 1905.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/de/Georges_Forestier_1838_1905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Georges_Forestier_1838_1905.jpg",
+     "licence": "Public domain",
+     "author": "Marchais, photograph at Amboise, France",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1838 births Category:1905 deaths Category:Alumni of École polytechnique Category:CC-PD-Mark Category:Engineers from France Category:PD-old missing SDC copyright status Category:PD Old"
+    }
+   ]
+  },
+  "rot_013": {
+   "city": "Rotterdam",
+   "name": "The Holm Oak of Trompenburg",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Aviary at Arboretum Trompenburg, Rotterdam.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Aviary_at_Arboretum_Trompenburg%2C_Rotterdam.jpg/960px-Aviary_at_Arboretum_Trompenburg%2C_Rotterdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Aviary_at_Arboretum_Trompenburg,_Rotterdam.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.920117,
+     "lng": 4.518878,
+     "cats": "Category:Arboretum Trompenburg Category:Aviaries in the Netherlands Category:CC-BY-4.0 Category:Netherlands photographs taken on 2021-09-09 Category:Outdoor furniture in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "File:Crassula Arborescens at Arboretum Trompenburg, Rotterdam 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Crassula_Arborescens_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg/960px-Crassula_Arborescens_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Crassula_Arborescens_at_Arboretum_Trompenburg,_Rotterdam_01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.9202,
+     "lng": 4.518742,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Crassula arborescens Category:Self-published work"
+    },
+    {
+     "title": "File:Succulent greenhouse at Arboretum Trompenburg, Rotterdam 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg/960px-Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Succulent_greenhouse_at_Arboretum_Trompenburg,_Rotterdam_01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.919983,
+     "lng": 4.518686,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Greenhouses in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "File:Succulent greenhouse at Arboretum Trompenburg, Rotterdam 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_02.jpg/960px-Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Succulent_greenhouse_at_Arboretum_Trompenburg,_Rotterdam_02.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.920047,
+     "lng": 4.518797,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Greenhouses in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 115542299 (Quercus tomentella)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/195003188/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/115542299",
+     "licence": "CC BY-SA",
+     "author": "(c) Grzegorz Grzejszczak, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "51.9198180556,4.5184313889"
+    },
+    {
+     "title": "iNat obs 115542299 (Quercus tomentella)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/195007811/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/115542299",
+     "licence": "CC BY-SA",
+     "author": "(c) Grzegorz Grzejszczak, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "51.9198180556,4.5184313889"
+    }
+   ]
+  },
+  "rot_014": {
+   "city": "Rotterdam",
+   "name": "The Weeping Pear of Trompenburg",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Aviary at Arboretum Trompenburg, Rotterdam.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Aviary_at_Arboretum_Trompenburg%2C_Rotterdam.jpg/960px-Aviary_at_Arboretum_Trompenburg%2C_Rotterdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Aviary_at_Arboretum_Trompenburg,_Rotterdam.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.920117,
+     "lng": 4.518878,
+     "cats": "Category:Arboretum Trompenburg Category:Aviaries in the Netherlands Category:CC-BY-4.0 Category:Netherlands photographs taken on 2021-09-09 Category:Outdoor furniture in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "File:Crassula Arborescens at Arboretum Trompenburg, Rotterdam 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Crassula_Arborescens_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg/960px-Crassula_Arborescens_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Crassula_Arborescens_at_Arboretum_Trompenburg,_Rotterdam_01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.9202,
+     "lng": 4.518742,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Crassula arborescens Category:Self-published work"
+    },
+    {
+     "title": "File:Succulent greenhouse at Arboretum Trompenburg, Rotterdam 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg/960px-Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Succulent_greenhouse_at_Arboretum_Trompenburg,_Rotterdam_01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.919983,
+     "lng": 4.518686,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Greenhouses in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "File:Succulent greenhouse at Arboretum Trompenburg, Rotterdam 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_02.jpg/960px-Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Succulent_greenhouse_at_Arboretum_Trompenburg,_Rotterdam_02.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.920047,
+     "lng": 4.518797,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Greenhouses in the Netherlands Category:Self-published work"
+    }
+   ]
+  },
+  "rot_015": {
+   "city": "Rotterdam",
+   "name": "The Himalayan Cedar of Trompenburg",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Aviary at Arboretum Trompenburg, Rotterdam.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Aviary_at_Arboretum_Trompenburg%2C_Rotterdam.jpg/960px-Aviary_at_Arboretum_Trompenburg%2C_Rotterdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Aviary_at_Arboretum_Trompenburg,_Rotterdam.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.920117,
+     "lng": 4.518878,
+     "cats": "Category:Arboretum Trompenburg Category:Aviaries in the Netherlands Category:CC-BY-4.0 Category:Netherlands photographs taken on 2021-09-09 Category:Outdoor furniture in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "File:Crassula Arborescens at Arboretum Trompenburg, Rotterdam 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Crassula_Arborescens_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg/960px-Crassula_Arborescens_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Crassula_Arborescens_at_Arboretum_Trompenburg,_Rotterdam_01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.9202,
+     "lng": 4.518742,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Crassula arborescens Category:Self-published work"
+    },
+    {
+     "title": "File:Succulent greenhouse at Arboretum Trompenburg, Rotterdam 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg/960px-Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Succulent_greenhouse_at_Arboretum_Trompenburg,_Rotterdam_01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.919983,
+     "lng": 4.518686,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Greenhouses in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "File:Succulent greenhouse at Arboretum Trompenburg, Rotterdam 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_02.jpg/960px-Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Succulent_greenhouse_at_Arboretum_Trompenburg,_Rotterdam_02.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.920047,
+     "lng": 4.518797,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Greenhouses in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 115546112 (Cedrus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/195010486/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/115546112",
+     "licence": "CC BY-SA",
+     "author": "(c) Grzegorz Grzejszczak, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "51.91926,4.5176180556"
+    }
+   ]
+  },
+  "rot_016": {
+   "city": "Rotterdam",
+   "name": "The Summer Lime of Trompenburg",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Aviary at Arboretum Trompenburg, Rotterdam.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Aviary_at_Arboretum_Trompenburg%2C_Rotterdam.jpg/960px-Aviary_at_Arboretum_Trompenburg%2C_Rotterdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Aviary_at_Arboretum_Trompenburg,_Rotterdam.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.920117,
+     "lng": 4.518878,
+     "cats": "Category:Arboretum Trompenburg Category:Aviaries in the Netherlands Category:CC-BY-4.0 Category:Netherlands photographs taken on 2021-09-09 Category:Outdoor furniture in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "File:Crassula Arborescens at Arboretum Trompenburg, Rotterdam 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Crassula_Arborescens_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg/960px-Crassula_Arborescens_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Crassula_Arborescens_at_Arboretum_Trompenburg,_Rotterdam_01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.9202,
+     "lng": 4.518742,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Crassula arborescens Category:Self-published work"
+    },
+    {
+     "title": "File:Succulent greenhouse at Arboretum Trompenburg, Rotterdam 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg/960px-Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Succulent_greenhouse_at_Arboretum_Trompenburg,_Rotterdam_01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.919983,
+     "lng": 4.518686,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Greenhouses in the Netherlands Category:Self-published work"
+    },
+    {
+     "title": "File:Succulent greenhouse at Arboretum Trompenburg, Rotterdam 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_02.jpg/960px-Succulent_greenhouse_at_Arboretum_Trompenburg%2C_Rotterdam_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Succulent_greenhouse_at_Arboretum_Trompenburg,_Rotterdam_02.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Sandra Fauconnier",
+     "lat": 51.920047,
+     "lng": 4.518797,
+     "cats": "Category:Arboretum Trompenburg Category:CC-BY-4.0 Category:Greenhouses in the Netherlands Category:Self-published work"
+    }
+   ]
+  },
+  "run_001": {
+   "city": "Runa",
+   "name": "The Cedro de Runa",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "szb_010": {
+   "city": "Salzburg",
+   "name": "The Hornbeam of Freisaalweg",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:00202 Hainbuche am Freisaalweg.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/00202_Hainbuche_am_Freisaalweg.jpg/960px-00202_Hainbuche_am_Freisaalweg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:00202_Hainbuche_am_Freisaalweg.jpg",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "Georg Pflugbeil",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Austria photographs taken on 2014-09-04 Category:CC-BY-SA-3.0-AT Category:Carpinus betulus in Austria Category:Freisaal Category:Landschaftsschutzgebiet Salzburg-Süd in Salzburg Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Natural monuments in Salzburg Category:Self-published work Category:September 2014 in Salzburg Category:Trees in Salzburg Category:Uploaded via Campaign:wle-at-nd"
+    },
+    {
+     "title": "File:Naturdenkmal Hainbuche am Freisaalweg, Salzburg.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Naturdenkmal_Hainbuche_am_Freisaalweg%2C_Salzburg.JPG/960px-Naturdenkmal_Hainbuche_am_Freisaalweg%2C_Salzburg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Hainbuche_am_Freisaalweg,_Salzburg.JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "Eweht",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Austria photographs taken on 2014-05-22 Category:CC-BY-SA-3.0-AT Category:Carpinus betulus in Austria Category:Files with coordinates missing SDC location of creation Category:Freisaal Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Landschaftsschutzgebiet Salzburg-Süd in Salzburg Category:May 2014 in Salzburg Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Natural monuments in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work Category:Taken with Canon EOS 700D Category:Trees in Salzburg Category:Uploaded via Campaign:wle-at-nd"
+    },
+    {
+     "title": "File:Salzburg - Nonntal - Freisaalweg 16 (ZAMG) - 2023 01 04-1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Salzburg_-_Nonntal_-_Freisaalweg_16_%28ZAMG%29_-_2023_01_04-1.jpg/960px-Salzburg_-_Nonntal_-_Freisaalweg_16_%28ZAMG%29_-_2023_01_04-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Salzburg_-_Nonntal_-_Freisaalweg_16_(ZAMG)_-_2023_01_04-1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Eweht",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Austria photographs taken on 2023-01-04 Category:Buildings in Austria photographed in 2023 Category:CC-BY-SA-4.0 Category:Freisaalweg 16, Salzburg Category:January 2023 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work"
+    },
+    {
+     "title": "File:Salzburg - Nonntal - Freisaalweg 16 (ZAMG) - 2023 01 04-2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Salzburg_-_Nonntal_-_Freisaalweg_16_%28ZAMG%29_-_2023_01_04-2.jpg/960px-Salzburg_-_Nonntal_-_Freisaalweg_16_%28ZAMG%29_-_2023_01_04-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Salzburg_-_Nonntal_-_Freisaalweg_16_(ZAMG)_-_2023_01_04-2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Eweht",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Austria photographs taken on 2023-01-04 Category:Buildings in Austria photographed in 2023 Category:CC-BY-SA-4.0 Category:Freisaalweg 16, Salzburg Category:January 2023 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work"
+    }
+   ]
+  },
+  "szb_011": {
+   "city": "Salzburg",
+   "name": "The Courtyard Oak of Aigner Straße",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Eiche an der Aigner Strasse 9 (1).JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Eiche_an_der_Aigner_Strasse_9_%281%29.JPG/960px-Eiche_an_der_Aigner_Strasse_9_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Aigner_Strasse_9_(1).JPG",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "Microble",
+     "lat": 47.79861583,
+     "lng": 13.06566056,
+     "cats": "Category:Austria photographs taken on 2014-05-30 Category:CC-BY-SA-3.0-AT Category:Eiche an der Aigner Straße 9 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria check done Category:Natural monuments in Austria with known ID Category:Salzburg photographs taken on 2014-05-30 Category:Self-published work Category:Taken with Sony SLT-A65V Category:Uploaded via Campaign:wle-at-nd"
+    }
+   ]
+  },
+  "szb_012": {
+   "city": "Salzburg",
+   "name": "The Meadow Oak of Buchholzhofstraße",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:00206 Eiche an der Buchholzhofstraße.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/00206_Eiche_an_der_Buchholzhofstra%C3%9Fe.jpg/960px-00206_Eiche_an_der_Buchholzhofstra%C3%9Fe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:00206_Eiche_an_der_Buchholzhofstra%C3%9Fe.jpg",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "Georg Pflugbeil",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:August 2014 in Salzburg Category:Austria photographs taken on 2014-08-16 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria check done Category:Natural monuments in Austria with known ID Category:Natural monuments in Salzburg Category:Nature of Morzg Category:Quercus robur in Salzburg (state) Category:Self-published work Category:Trees in Salzburg Category:Uploaded via Campaign:wle-at-nd"
+    }
+   ]
+  },
+  "sdg_005": {
+   "city": "San Diego",
+   "name": "The Twisted Tea Tree of Marston House",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "sdg_006": {
+   "city": "San Diego",
+   "name": "The Moreton Bay Fig of Palm Canyon",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 200063820 (Ficus microcarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/352904744/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/200063820",
+     "licence": "CC BY",
+     "author": "(c) Bill Levine, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.7308883333,-117.1516888333"
+    },
+    {
+     "title": "iNat obs 200063820 (Ficus microcarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/352904754/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/200063820",
+     "licence": "CC BY",
+     "author": "(c) Bill Levine, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.7308883333,-117.1516888333"
+    }
+   ]
+  },
+  "sav_003": {
+   "city": "Savannah",
+   "name": "The Majestic Oak",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "sea_007": {
+   "city": "Seattle",
+   "name": "The Tanyosho Pine of Kubota Garden",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:BigTree (3556300859).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/BigTree_%283556300859%29.jpg/960px-BigTree_%283556300859%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:BigTree_(3556300859).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Leslie Seaton from Seattle, WA, USA",
+     "lat": 47.512424,
+     "lng": -122.264701,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Kubota Garden"
+    }
+   ]
+  },
+  "sea_008": {
+   "city": "Seattle",
+   "name": "The Japanese White Pine of Kubota Garden",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:BigTree (3556300859).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/BigTree_%283556300859%29.jpg/960px-BigTree_%283556300859%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:BigTree_(3556300859).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Leslie Seaton from Seattle, WA, USA",
+     "lat": 47.512424,
+     "lng": -122.264701,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Kubota Garden"
+    }
+   ]
+  },
+  "sno_003": {
+   "city": "Senonches",
+   "name": "Le Châtaignier du Rond de Condé",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "sno_004": {
+   "city": "Senonches",
+   "name": "Les Séquoias et le Cèdre du Rond de Monsieur",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": []
+  },
+  "seq_002": {
+   "city": "Sequoia National Park",
+   "name": "The President",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Burned Sequoia Roots (54075680826).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Burned_Sequoia_Roots_%2854075680826%29.jpg/960px-Burned_Sequoia_Roots_%2854075680826%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Burned_Sequoia_Roots_(54075680826).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Eric Kilby from Somerville, MA, USA",
+     "lat": 36.572858,
+     "lng": -118.750562,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files from Eric Kilby Flickr stream Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:May 2024 in California Category:Sequoiadendron giganteum (stumps) Category:Sequoiadendron giganteum in Sequoia National Park Category:Taken with Nikon Z 9 Category:United States photographs taken on 2024-05-20"
+    },
+    {
+     "title": "File:Chief Sequoyah Tree, Sequoia National Park (July 2023).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Chief_Sequoyah_Tree%2C_Sequoia_National_Park_%28July_2023%29.jpg/960px-Chief_Sequoyah_Tree%2C_Sequoia_National_Park_%28July_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chief_Sequoyah_Tree,_Sequoia_National_Park_(July_2023).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": 36.573647,
+     "lng": -118.749992,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+    },
+    {
+     "title": "File:President Barack Obama.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/960px-President_Barack_Obama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:President_Barack_Obama.jpg",
+     "licence": "Public domain",
+     "author": "Official White House Photo by Pete Souza",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Executive Office of the President files Category:Featured historical portrait photographs Category:Featured photographs in the public domain Category:Featured pictures from Flickr Category:Featured pictures of history of Washington, D.C. Category:Featured pictures of people of the United States Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, Arabic Category:Featured pictures on Wikipedia, Persian Category:Images with extracted images Category:Official portrait of Barack Obama (December 2012) Category:Pictures of the day (2025) Category:Published consent Category:United States photographs taken on 2012-12-06"
+    },
+    {
+     "title": "File:President Barack Obama with full cabinet 09-10-09.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/President_Barack_Obama_with_full_cabinet_09-10-09.jpg/960px-President_Barack_Obama_with_full_cabinet_09-10-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:President_Barack_Obama_with_full_cabinet_09-10-09.jpg",
+     "licence": "Public domain",
+     "author": "Chuck Kennedy",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Arne Duncan in 2009 Category:Barack Obama and Hillary Rodham Clinton Category:Barack Obama and Joe Biden in 2009 Category:Barack Obama and Rahm Emanuel Category:Barack Obama at the White House in 2009 Category:Barack Obama in September 2009 Category:Barack Obama in the East Room (White House) Category:Barack Obama smiling Category:Barack Obama wearing black suits Category:Barack Obama wearing lapel pins Category:Barack Obama wearing neckties Category:Cabinet members of the Obama administration Category:Christina Romer Category:Eric Holder in 2009 Category:Eric Shinseki in 2009 Category:Executive Office of the President files Category:Featured photographs in the public domain Category:Featured pictures from Flickr Category:Featured pictures from the United States Government Category:Featured pictures of history of Washington, D.C. Category:Featured pictures of people of the United States Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, English Category:Featured pictures on Wikipedia, Persian Category:Flickr images reviewed by trusted users Category:Front views of people at full length Category:Gary Locke Category:Group photographs of politicians Category:Hilda Solis in 2009 Category:Hillary Rodham Clinton and Hilda Solis Category:Hillary Rodham Clinton and Janet Napolitano Category:Hillary Rodham Clinton and Steven Chu Category:Hillary Rodham Clinton and Susan Rice Category:Hillary Rodham Clinton and Timothy F. Geithner Category:Hillary Rodham Clinton and Tom Vilsack Category:Hillary Rodham Clinton in September 2009 Category:Hillary Rodham Clinton in the East Room (White House) Category:Hillary Rodham Clinton wearing pantsuits Category:Hillary Rodham Clinton with Robert Gates Category:Images with 10+ annotations Category:Images with annotations Category:Janet Napolitano in 2009 Category:Joe Biden and Hillary Rodham Clinton Category:Joe Biden and Ken Salazar Category:Joe Biden and Rahm Emanuel Category:Joe Biden at the White House in 2009 Category:Joe Biden clasping hands Category:Joe Biden in September 2009 Category:Joe Biden in the East Room Category:Joe Biden smiling Category:Joe Biden standing Category:Joe Biden wearing lapel pins Category:Joe Biden wearing navy suits Category:Joe Biden wearing red neckties Category:Kathleen Sebelius in 2009 Category:Ken Salazar in 2009 Category:Lansdowne portrait of George Washington (White House) Category:Lisa P. Jackson Category:Official portraits of Barack Obama Category:Official portraits of Joe Biden as vice president Category:Peter R. Orszag Category:Photographs by Chuck Kennedy Category:Photographs from the White House during the Obama administration Category:Pictures of the day (2013) Category:Published consent Category:Rahm Emanuel in 2009 Category:Ray LaHood Category:Robert Gates in 2009 Category:Ron Kirk Category:Shaun Donovan Category:Standing with hand holding arms Category:Susan Rice in 2009 Category:Timothy F. Geithner in 2009 Category:Tom Vilsack in 2009 Category:United States photographs taken on 2009-09-10 Category:White House in September 2009 Category:Women standing with hands clasped Category:Women wearing black skirts Category:Women wearing blue jackets Category:Women wearing skirt suits"
+    },
+    {
+     "title": "File:President Biden Visits UConn.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/President_Biden_Visits_UConn.jpg/960px-President_Biden_Visits_UConn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:President_Biden_Visits_UConn.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Liam Enea",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cadillac Presidential Limousine (2018) Category:Flickr images reviewed by FlickreviewR 2 Category:Images with annotations Category:Joe Biden at the University of Connecticut (October 15, 2021) Category:Joe Biden inside automobiles Category:Joe Biden wearing masks during the COVID-19 pandemic Category:October 2021 in Connecticut Category:United States photographs taken on 2021-10-15"
+    },
+    {
+     "title": "File:The President Sequoia Tree in Sequoia National Park (close up) July 2023.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/The_President_Sequoia_Tree_in_Sequoia_National_Park_%28close_up%29_July_2023.jpg/960px-The_President_Sequoia_Tree_in_Sequoia_National_Park_%28close_up%29_July_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_President_Sequoia_Tree_in_Sequoia_National_Park_(close_up)_July_2023.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": 36.573319,
+     "lng": -118.750192,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Sequoia National Park Category:The President (tree)"
+    },
+    {
+     "title": "iNat obs 112031677 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189200963/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/112031677",
+     "licence": "CC BY",
+     "author": "(c) Reilly, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.573333,-118.75"
+    },
+    {
+     "title": "iNat obs 370807480 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/677448073/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/370807480",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "36.5727555556,-118.7506138889"
+    },
+    {
+     "title": "iNat obs 306650587 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/553027910/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/306650587",
+     "licence": "CC BY",
+     "author": "(c) Ryan Donnelly, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.5732616667,-118.7499866667"
+    },
+    {
+     "title": "iNat obs 398166369 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/730369293/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/398166369",
+     "licence": "CC BY-SA",
+     "author": "(c) squirrel759, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "36.5729491195,-118.7498310052"
+    },
+    {
+     "title": "iNat obs 112031742 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189201079/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/112031742",
+     "licence": "CC BY",
+     "author": "(c) Reilly, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.573889,-118.75"
+    },
+    {
+     "title": "iNat obs 390492135 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/715393834/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/390492135",
+     "licence": "CC BY",
+     "author": "(c) carbapple, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.5726575,-118.7507444444"
+    }
+   ]
+  },
+  "seq_003": {
+   "city": "Sequoia National Park",
+   "name": "Chief Sequoyah Tree",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Chief Sequoyah Tree, Sequoia National Park (July 2023).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Chief_Sequoyah_Tree%2C_Sequoia_National_Park_%28July_2023%29.jpg/960px-Chief_Sequoyah_Tree%2C_Sequoia_National_Park_%28July_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chief_Sequoyah_Tree,_Sequoia_National_Park_(July_2023).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": 36.573647,
+     "lng": -118.749992,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+    },
+    {
+     "title": "File:Chief Sequoyah Tree, Sequoia National Park (distance) July 2023.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Chief_Sequoyah_Tree%2C_Sequoia_National_Park_%28distance%29_July_2023.jpg/960px-Chief_Sequoyah_Tree%2C_Sequoia_National_Park_%28distance%29_July_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chief_Sequoyah_Tree,_Sequoia_National_Park_(distance)_July_2023.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chief Sequoyah (tree) Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+    },
+    {
+     "title": "File:Chief Sequoyah Tree (distance) in Sequoia National Park - July 2023.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Chief_Sequoyah_Tree_%28distance%29_in_Sequoia_National_Park_-_July_2023.jpg/960px-Chief_Sequoyah_Tree_%28distance%29_in_Sequoia_National_Park_-_July_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chief_Sequoyah_Tree_(distance)_in_Sequoia_National_Park_-_July_2023.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Chief Sequoyah (tree) Category:Self-published work Category:Sequoiadendron giganteum"
+    },
+    {
+     "title": "File:Henry Inman - Sequoyah - Google Art Project.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Henry_Inman_-_Sequoyah_-_Google_Art_Project.jpg/960px-Henry_Inman_-_Sequoyah_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Henry_Inman_-_Sequoyah_-_Google_Art_Project.jpg",
+     "licence": "Public domain",
+     "author": "Henry Inman",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1830s portrait paintings from the United States (male) Category:19th-century portrait paintings in the National Portrait Gallery (United States) Category:Artworks digital representation of 2D work Category:Artworks with Wikidata item Category:Artworks with known accession number Category:CC-PD-Mark Category:Cherokee people in art Category:Cherokee syllabary charts Category:Files from Google Arts & Culture Category:Google Art Project paintings Category:Google Art Project works by Henry Inman Category:Google Art Project works in National Portrait Gallery Category:Indian Peace Medals Category:Inkwells in art Category:Native American history of the 1830s Category:PD-Art (PD-old-100-expired) Category:PD-Art missing SDC copyright status Category:PD-old-100-expired Category:PD-old missing SDC copyright status Category:Portrait paintings of Native Americans by Henry Inman Category:Quills in portrait paintings Category:Smokers pipes in art Category:Works after the portrait of Sequoyah by Charles Bird King"
+    },
+    {
+     "title": "File:Ranger talk in front of Chief Sequoyah tree, Sequoia NP.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Ranger_talk_in_front_of_Chief_Sequoyah_tree%2C_Sequoia_NP.jpg/960px-Ranger_talk_in_front_of_Chief_Sequoyah_tree%2C_Sequoia_NP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ranger_talk_in_front_of_Chief_Sequoyah_tree,_Sequoia_NP.jpg",
+     "licence": "Public domain",
+     "author": "Richard Frear",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Chief Sequoyah (tree) Category:Guided tours in the United States Category:Images from NPGallery Category:Images from NPGallery to check Category:NPS employees of Sequoia National Park Category:PD US NPS Category:Signs in California Category:Unknown date"
+    },
+    {
+     "title": "File:Ranger talk in front of Chief Sequoyah tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Ranger_talk_in_front_of_Chief_Sequoyah_tree.jpg/960px-Ranger_talk_in_front_of_Chief_Sequoyah_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ranger_talk_in_front_of_Chief_Sequoyah_tree.jpg",
+     "licence": "Public domain",
+     "author": "Richard Frear",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Chief Sequoyah (tree) Category:Guided tours in the United States Category:Images from NPGallery Category:Images from NPGallery to check Category:PD US NPS Category:Signs in California Category:Unknown date"
+    },
+    {
+     "title": "iNat obs 112031677 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189200963/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/112031677",
+     "licence": "CC BY",
+     "author": "(c) Reilly, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.573333,-118.75"
+    },
+    {
+     "title": "iNat obs 306650587 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/553027910/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/306650587",
+     "licence": "CC BY",
+     "author": "(c) Ryan Donnelly, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.5732616667,-118.7499866667"
+    },
+    {
+     "title": "iNat obs 398166369 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/730369293/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/398166369",
+     "licence": "CC BY-SA",
+     "author": "(c) squirrel759, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "36.5729491195,-118.7498310052"
+    },
+    {
+     "title": "iNat obs 112031742 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189201079/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/112031742",
+     "licence": "CC BY",
+     "author": "(c) Reilly, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.573889,-118.75"
+    },
+    {
+     "title": "iNat obs 177773574 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/309237785/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/177773574",
+     "licence": "CC BY",
+     "author": "(c) Trevor Harding, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.5732544,-118.7500416"
+    },
+    {
+     "title": "iNat obs 190465535 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/333897415/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/190465535",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "36.5733216667,-118.750045"
+    }
+   ]
+  },
+  "seq_004": {
+   "city": "Sequoia National Park",
+   "name": "Lincoln Tree",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Lincoln Redwood Tree.jpg (Wikidata Q6550469)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/51/Lincoln_Redwood_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Lincoln_Redwood_Tree.jpg",
+     "licence": "Public domain",
+     "author": "Bradluke22",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Lincoln (tree) Category:PD-user Category:Taken with Sony DSC-S600",
+     "source": "wikidata/Q6550469"
+    },
+    {
+     "title": "File:Lincoln Tree (base) in Sequoia National Park - July 2023.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Lincoln_Tree_%28base%29_in_Sequoia_National_Park_-_July_2023.jpg/960px-Lincoln_Tree_%28base%29_in_Sequoia_National_Park_-_July_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lincoln_Tree_(base)_in_Sequoia_National_Park_-_July_2023.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": 36.571853,
+     "lng": -118.756028,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lincoln (tree) Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+    },
+    {
+     "title": "File:Lincoln Tree in Sequoia National Park, California - June 2022.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Lincoln_Tree_in_Sequoia_National_Park%2C_California_-_June_2022.jpg/960px-Lincoln_Tree_in_Sequoia_National_Park%2C_California_-_June_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lincoln_Tree_in_Sequoia_National_Park,_California_-_June_2022.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2022 photographs of California Category:CC-BY-SA-4.0 Category:June 2022 in California Category:Lincoln (tree) Category:Self-published work Category:Sequoiadendron giganteum in Sequoia National Park"
+    },
+    {
+     "title": "File:Lincoln Tree in Sequoia National Park (distance) July 2023.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Lincoln_Tree_in_Sequoia_National_Park_%28distance%29_July_2023.jpg/960px-Lincoln_Tree_in_Sequoia_National_Park_%28distance%29_July_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lincoln_Tree_in_Sequoia_National_Park_(distance)_July_2023.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": 36.572044,
+     "lng": -118.756225,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lincoln (tree) Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+    },
+    {
+     "title": "File:Room Tree (distance), Sequoia National Park (July 2023).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Room_Tree_%28distance%29%2C_Sequoia_National_Park_%28July_2023%29.jpg/960px-Room_Tree_%28distance%29%2C_Sequoia_National_Park_%28July_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Room_Tree_(distance),_Sequoia_National_Park_(July_2023).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": 36.572625,
+     "lng": -118.753761,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+    },
+    {
+     "title": "iNat obs 112031687 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189200989/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/112031687",
+     "licence": "CC BY",
+     "author": "(c) Reilly, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.571944,-118.756111"
+    }
+   ]
+  },
+  "seq_005": {
+   "city": "Sequoia National Park",
+   "name": "Franklin Tree",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Franklin Tree.jpg (Wikidata Q16993778)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Franklin_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Franklin_Tree.jpg",
+     "licence": "Public domain",
+     "author": "Bradluke22 (talk)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Franklin (tree) Category:PD-user",
+     "source": "wikidata/Q16993778"
+    },
+    {
+     "title": "File:4th ave main street historic franklin tennessee 2010.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/4th_ave_main_street_historic_franklin_tennessee_2010.jpg/960px-4th_ave_main_street_historic_franklin_tennessee_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:4th_ave_main_street_historic_franklin_tennessee_2010.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Ichabod",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2010 in Tennessee Category:Buildings in Franklin, Tennessee Category:CC-BY-SA-3.0 Category:Franklin Historic District (Tennessee) Category:GFDL Category:Images with extracted images Category:License migration redundant Category:National Register of Historic Places with known IDs Category:Self-published work Category:Shops in Tennessee Category:United States photographs taken on 2010-01-16"
+    },
+    {
+     "title": "File:Vincenzo Laviosa - Franklin D. Roosevelt - Google Art Project.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Vincenzo_Laviosa_-_Franklin_D._Roosevelt_-_Google_Art_Project.jpg/960px-Vincenzo_Laviosa_-_Franklin_D._Roosevelt_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Vincenzo_Laviosa_-_Franklin_D._Roosevelt_-_Google_Art_Project.jpg",
+     "licence": "Public domain",
+     "author": "Vincenzo Laviosa",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1932 black and white portrait photographs of men Category:20th-century black and white portrait photographs of men at bust length Category:Artworks digital representation of 2D work Category:Artworks with Wikidata item Category:Artworks with known accession number Category:CC-PD-Mark Category:Featured analogue photographs Category:Featured historical portrait photographs Category:Featured photographs in the public domain Category:Featured pictures by others nominated by Yann Forget Category:Featured pictures from the Google Art Project Category:Featured pictures of people of the United States Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, English Category:Featured pictures on Wikipedia, Persian Category:Featured pictures restored by Yann Forget Category:Files from Google Arts & Culture Category:Files uploaded by Yann Forget Category:Franklin Delano Roosevelt in 1932 Category:Google Art Project works by Vincenzo Laviosa Category:Google Art Project works in The J. Paul Getty Museum Category:Images with extracted images Category:Official portraits of Franklin Delano Roosevelt Category:PD-old-80-1964 Category:Pages with complex technique templates Category:Photographs by Vincenzo Laviosa Category:Photographs in The J. Paul Getty Museum Category:Portrait photographs of Franklin Delano Roosevelt Category:Retouched pictures Category:Sepia portrait photographs of men"
+    },
+    {
+     "title": "iNat obs 112031717 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189201065/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/112031717",
+     "licence": "CC BY",
+     "author": "(c) Reilly, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "36.567778,-118.758611"
+    }
+   ]
+  },
+  "seq_006": {
+   "city": "Sequoia National Park",
+   "name": "Washington Tree",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Christmas tree at the District Jail, Washington, D.C. - 3b38704r.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/48/Christmas_tree_at_the_District_Jail%2C_Washington%2C_D.C._-_3b38704r.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Christmas_tree_at_the_District_Jail,_Washington,_D.C._-_3b38704r.jpg",
+     "licence": "Public domain",
+     "author": "National Photo Company",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Christmas in the United States in the 20th century Category:Christmas trees in Washington, D.C. Category:Indoor Christmas trees Category:PD-US missing SDC copyright status Category:PD US Category:People and Christmas trees Category:Prisons in Washington, D.C."
+    },
+    {
+     "title": "File:Washington Sequoia Tree in Sequoia National Park (close up) July 2023.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Washington_Sequoia_Tree_in_Sequoia_National_Park_%28close_up%29_July_2023.jpg/960px-Washington_Sequoia_Tree_in_Sequoia_National_Park_%28close_up%29_July_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Washington_Sequoia_Tree_in_Sequoia_National_Park_(close_up)_July_2023.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": 36.56805,
+     "lng": -118.760703,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Washington Tree"
+    },
+    {
+     "title": "File:Washington Sequoia Tree in Sequoia National Park (distance) July 2023.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Washington_Sequoia_Tree_in_Sequoia_National_Park_%28distance%29_July_2023.jpg/960px-Washington_Sequoia_Tree_in_Sequoia_National_Park_%28distance%29_July_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Washington_Sequoia_Tree_in_Sequoia_National_Park_(distance)_July_2023.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": 36.568047,
+     "lng": -118.760711,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Washington Tree"
+    }
+   ]
+  },
+  "ynp_001": {
+   "city": "Yosemite National Park",
+   "name": "Grizzly Giant",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Grizzly Giant, Mariposa Grove, Yosemite National Park, CA - June 2022.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Grizzly_Giant%2C_Mariposa_Grove%2C_Yosemite_National_Park%2C_CA_-_June_2022.jpg/960px-Grizzly_Giant%2C_Mariposa_Grove%2C_Yosemite_National_Park%2C_CA_-_June_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Grizzly_Giant,_Mariposa_Grove,_Yosemite_National_Park,_CA_-_June_2022.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Grizzly Giant Category:Self-published work"
+    },
+    {
+     "title": "File:Grizzly Giant, Mariposa Grove, Yosemite National Park - June 2022.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Grizzly_Giant%2C_Mariposa_Grove%2C_Yosemite_National_Park_-_June_2022.jpg/960px-Grizzly_Giant%2C_Mariposa_Grove%2C_Yosemite_National_Park_-_June_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Grizzly_Giant,_Mariposa_Grove,_Yosemite_National_Park_-_June_2022.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Grizzly Giant Category:Self-published work"
+    },
+    {
+     "title": "File:Grizzly Giant Sequoia Tree, Yosemite National Park (July 2023).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Grizzly_Giant_Sequoia_Tree%2C_Yosemite_National_Park_%28July_2023%29.jpg/960px-Grizzly_Giant_Sequoia_Tree%2C_Yosemite_National_Park_%28July_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Grizzly_Giant_Sequoia_Tree,_Yosemite_National_Park_(July_2023).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Grizzly Giant Category:Self-published work"
+    },
+    {
+     "title": "File:Yosemite National Park, Wawona area, Grizzly Giant (7889406484).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Yosemite_National_Park%2C_Wawona_area%2C_Grizzly_Giant_%287889406484%29.jpg/960px-Yosemite_National_Park%2C_Wawona_area%2C_Grizzly_Giant_%287889406484%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park,_Wawona_area,_Grizzly_Giant_(7889406484).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Arian Zwegers",
+     "lat": 37.503514,
+     "lng": -119.600664,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Grizzly Giant Category:Photographs by Arian Zwegers Category:Taken with Canon EOS 450D Category:Trees in Yosemite National Park"
+    },
+    {
+     "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2752.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2752.jpg/960px-Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2752.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias,_Grizzly_Giant_--_2022_--_2752.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": 37.503497,
+     "lng": -119.600995,
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/40 sec Category:F-number f/10 Category:Grizzly Giant Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Linear perspective Category:Perspective views in the United States Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 3:2 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2754.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2754.jpg/960px-Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2754.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias,_Grizzly_Giant_--_2022_--_2754.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": 37.503487,
+     "lng": -119.600942,
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/40 sec Category:F-number f/7.1 Category:Grizzly Giant Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 4:3 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2755.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2755.jpg/960px-Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2755.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias,_Grizzly_Giant_--_2022_--_2755.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": 37.50352,
+     "lng": -119.600817,
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/160 sec Category:F-number f/7.1 Category:Grizzly Giant Category:ISO speed rating 200 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 2:3 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2758.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2758.jpg/960px-Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2758.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias,_Grizzly_Giant_--_2022_--_2758.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": 37.503532,
+     "lng": -119.600775,
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/160 sec Category:F-number f/6.3 Category:Grizzly Giant Category:ISO speed rating 200 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 3:2 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Shadows of trees in the United States Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:“Grizzly Giant” Sequoia in June 2025 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_02.jpg/960px-%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_02.jpg",
+     "licence": "CC0",
+     "author": "EF5",
+     "lat": 37.503536,
+     "lng": -119.600853,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Grizzly Giant Category:Mariposa Grove Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 86234786 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/142029587/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/86234786",
+     "licence": "CC BY",
+     "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5037062541,-119.6009251568"
+    },
+    {
+     "title": "iNat obs 92852915 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/153805493/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/92852915",
+     "licence": "CC BY",
+     "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5036477484,-119.6009549964"
+    },
+    {
+     "title": "iNat obs 112473068 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189975071/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/112473068",
+     "licence": "CC BY",
+     "author": "(c) Jonathan Curley, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5036603611,-119.6009341667"
+    },
+    {
+     "title": "iNat obs 104713202 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/175519077/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104713202",
+     "licence": "CC BY",
+     "author": "(c) Jake McCumber, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5038911293,-119.6004014872"
+    },
+    {
+     "title": "iNat obs 104713202 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/175519081/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104713202",
+     "licence": "CC BY",
+     "author": "(c) Jake McCumber, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5038911293,-119.6004014872"
+    },
+    {
+     "title": "iNat obs 380200176 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/695553780/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/380200176",
+     "licence": "CC BY",
+     "author": "(c) Devin Kellar, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5034166667,-119.6009533333"
+    }
+   ]
+  },
+  "ynp_002": {
+   "city": "Yosemite National Park",
+   "name": "California Tunnel Tree",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:California Tunnel Tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/California_Tunnel_Tree.jpg/960px-California_Tunnel_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:California_Tunnel_Tree.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Ymblanter",
+     "lat": 37.50377,
+     "lng": -119.600618,
+     "cats": "Category:CC-BY-SA-3.0 Category:California Tunnel Tree Category:Files with coordinates missing SDC location of creation Category:Photographs of the United States by Ymblanter Category:Self-published work Category:Taken with Olympus E-510 Category:United States photographs taken on 2013-10-26"
+    },
+    {
+     "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2752.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2752.jpg/960px-Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2752.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias,_Grizzly_Giant_--_2022_--_2752.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": 37.503497,
+     "lng": -119.600995,
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/40 sec Category:F-number f/10 Category:Grizzly Giant Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Linear perspective Category:Perspective views in the United States Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 3:2 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2754.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2754.jpg/960px-Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2754.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias,_Grizzly_Giant_--_2022_--_2754.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": 37.503487,
+     "lng": -119.600942,
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/40 sec Category:F-number f/7.1 Category:Grizzly Giant Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 4:3 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2755.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2755.jpg/960px-Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2755.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias,_Grizzly_Giant_--_2022_--_2755.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": 37.50352,
+     "lng": -119.600817,
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/160 sec Category:F-number f/7.1 Category:Grizzly Giant Category:ISO speed rating 200 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 2:3 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:“Grizzly Giant” Sequoia in June 2025 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_01.jpg/960px-%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_01.jpg",
+     "licence": "CC0",
+     "author": "EF5",
+     "lat": 37.503356,
+     "lng": -119.601036,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Grizzly Giant Category:Mariposa Grove Category:Self-published work"
+    },
+    {
+     "title": "File:“Grizzly Giant” Sequoia in June 2025 03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_03.jpg/960px-%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_03.jpg",
+     "licence": "CC0",
+     "author": "EF5",
+     "lat": 37.503533,
+     "lng": -119.600875,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Grizzly Giant Category:Mariposa Grove Category:Self-published work"
+    },
+    {
+     "title": "File:“tunnel tree” Yosemite National Park.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/%E2%80%9Ctunnel_tree%E2%80%9D_Yosemite_National_Park.jpg/960px-%E2%80%9Ctunnel_tree%E2%80%9D_Yosemite_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E2%80%9Ctunnel_tree%E2%80%9D_Yosemite_National_Park.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dreas99",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2021 in California Category:Self-published work Category:Uploaded via Campaign:wlm-us-other Category:Wawona Tree Category:Wiki Loves Monuments 2021 in the United States unreviewed"
+    },
+    {
+     "title": "iNat obs 104713202 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/175519077/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104713202",
+     "licence": "CC BY",
+     "author": "(c) Jake McCumber, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5038911293,-119.6004014872"
+    },
+    {
+     "title": "iNat obs 104713202 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/175519081/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104713202",
+     "licence": "CC BY",
+     "author": "(c) Jake McCumber, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5038911293,-119.6004014872"
+    },
+    {
+     "title": "iNat obs 92852915 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/153805493/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/92852915",
+     "licence": "CC BY",
+     "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5036477484,-119.6009549964"
+    },
+    {
+     "title": "iNat obs 86234786 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/142029587/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/86234786",
+     "licence": "CC BY",
+     "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5037062541,-119.6009251568"
+    },
+    {
+     "title": "iNat obs 112473068 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189975071/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/112473068",
+     "licence": "CC BY",
+     "author": "(c) Jonathan Curley, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5036603611,-119.6009341667"
+    },
+    {
+     "title": "iNat obs 380200176 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/695553780/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/380200176",
+     "licence": "CC BY",
+     "author": "(c) Devin Kellar, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5034166667,-119.6009533333"
+    }
+   ]
+  },
+  "ynp_003": {
+   "city": "Yosemite National Park",
+   "name": "Faithful Couple",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Faithful Couple Tree, Mariposa Grove, Yosemite National Park - June 2022.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Faithful_Couple_Tree%2C_Mariposa_Grove%2C_Yosemite_National_Park_-_June_2022.jpg/960px-Faithful_Couple_Tree%2C_Mariposa_Grove%2C_Yosemite_National_Park_-_June_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Faithful_Couple_Tree,_Mariposa_Grove,_Yosemite_National_Park_-_June_2022.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Mariposa Grove Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 88594457 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/146189804/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/88594457",
+     "licence": "CC BY",
+     "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5058916258,-119.5993375406"
+    },
+    {
+     "title": "iNat obs 88594457 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/146189883/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/88594457",
+     "licence": "CC BY",
+     "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5058916258,-119.5993375406"
+    }
+   ]
+  },
+  "ynp_004": {
+   "city": "Yosemite National Park",
+   "name": "Clothespin Tree",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Clothespin Sequoia in Yosemite (29515633208).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Clothespin_Sequoia_in_Yosemite_%2829515633208%29.jpg/960px-Clothespin_Sequoia_in_Yosemite_%2829515633208%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Clothespin_Sequoia_in_Yosemite_(29515633208).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Pedro Szekely from Los Angeles, USA",
+     "lat": 37.505334,
+     "lng": -119.604334,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files from Pedro Szekely Flickr stream Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Mariposa Grove Category:Sequoiadendron giganteum (named individual trees) Category:Trees in Yosemite National Park Category:United States photographs taken on 2018-06-26"
+    },
+    {
+     "title": "File:Clothespin Tree crown Nelder Grove.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Clothespin_Tree_crown_Nelder_Grove.jpg/960px-Clothespin_Tree_crown_Nelder_Grove.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Clothespin_Tree_crown_Nelder_Grove.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Guywelch2000",
+     "lat": 37.436341,
+     "lng": -119.604144,
+     "cats": "Category:CC-BY-4.0 Category:Crown (botany) Category:Files with coordinates missing SDC location of creation Category:Nelder Grove Category:Self-published work Category:Sequoiadendron giganteum (foliage) Category:Sequoiadendron giganteum (named individual trees)"
+    },
+    {
+     "title": "File:Clothespin Tree fire-scarred trunk Nelder Grove.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Clothespin_Tree_fire-scarred_trunk_Nelder_Grove.jpg/960px-Clothespin_Tree_fire-scarred_trunk_Nelder_Grove.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Clothespin_Tree_fire-scarred_trunk_Nelder_Grove.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Guywelch2000",
+     "lat": 37.435994,
+     "lng": -119.604202,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Fire damage on tree trunks Category:Nelder Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees) Category:Sequoiadendron giganteum (trunks)"
+    },
+    {
+     "title": "File:Clothespin Tree fire scar close-up Nelder Grove.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Clothespin_Tree_fire_scar_close-up_Nelder_Grove.jpg/960px-Clothespin_Tree_fire_scar_close-up_Nelder_Grove.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Clothespin_Tree_fire_scar_close-up_Nelder_Grove.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Guywelch2000",
+     "lat": 37.441393,
+     "lng": -119.603505,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Fire damage on tree trunks Category:Nelder Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees) Category:Sequoiadendron giganteum (trunks)"
+    },
+    {
+     "title": "File:Clothespin Tree split crown, Nelder Grove.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Clothespin_Tree_split_crown%2C_Nelder_Grove.jpg/960px-Clothespin_Tree_split_crown%2C_Nelder_Grove.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Clothespin_Tree_split_crown,_Nelder_Grove.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Guywelch2000",
+     "lat": 37.436341,
+     "lng": -119.604144,
+     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Files with coordinates missing SDC location of creation Category:Nelder Grove Category:Self-published work Category:Self-published work missing SDC copyright license Category:Sequoiadendron giganteum (trunks) Category:Trees damaged by lightning"
+    }
+   ]
+  },
+  "ynp_005": {
+   "city": "Yosemite National Park",
+   "name": "Bachelor and Three Graces",
+   "checked": "2026-09-27",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bachelor and Three Graces Trees, Mariposa Grove, Yosemite National Park - June 2022.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Bachelor_and_Three_Graces_Trees%2C_Mariposa_Grove%2C_Yosemite_National_Park_-_June_2022.jpg/960px-Bachelor_and_Three_Graces_Trees%2C_Mariposa_Grove%2C_Yosemite_National_Park_-_June_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bachelor_and_Three_Graces_Trees,_Mariposa_Grove,_Yosemite_National_Park_-_June_2022.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marty Aligata",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Mariposa Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees)"
+    },
+    {
+     "title": "File:California Tunnel Tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/California_Tunnel_Tree.jpg/960px-California_Tunnel_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:California_Tunnel_Tree.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Ymblanter",
+     "lat": 37.50377,
+     "lng": -119.600618,
+     "cats": "Category:CC-BY-SA-3.0 Category:California Tunnel Tree Category:Files with coordinates missing SDC location of creation Category:Photographs of the United States by Ymblanter Category:Self-published work Category:Taken with Olympus E-510 Category:United States photographs taken on 2013-10-26"
+    },
+    {
+     "title": "File:Tunnel tree at Yosemite National Park 20220524 145321 copy.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Tunnel_tree_at_Yosemite_National_Park_20220524_145321_copy.jpg/960px-Tunnel_tree_at_Yosemite_National_Park_20220524_145321_copy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tunnel_tree_at_Yosemite_National_Park_20220524_145321_copy.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Steveshelokhonov",
+     "lat": 37.504168,
+     "lng": -119.600302,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Mariposa Grove Category:May 2022 in California Category:Self-published work"
+    },
+    {
+     "title": "File:Yosemite National Park, Wawona area, Grizzly Giant (7889406484).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Yosemite_National_Park%2C_Wawona_area%2C_Grizzly_Giant_%287889406484%29.jpg/960px-Yosemite_National_Park%2C_Wawona_area%2C_Grizzly_Giant_%287889406484%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park,_Wawona_area,_Grizzly_Giant_(7889406484).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Arian Zwegers",
+     "lat": 37.503514,
+     "lng": -119.600664,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Grizzly Giant Category:Photographs by Arian Zwegers Category:Taken with Canon EOS 450D Category:Trees in Yosemite National Park"
+    },
+    {
+     "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2755.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2755.jpg/960px-Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2755.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias,_Grizzly_Giant_--_2022_--_2755.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": 37.50352,
+     "lng": -119.600817,
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/160 sec Category:F-number f/7.1 Category:Grizzly Giant Category:ISO speed rating 200 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 2:3 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2758.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2758.jpg/960px-Yosemite_National_Park_%28CA%2C_USA%29%2C_Mariposa_Grove_of_Giant_Sequoias%2C_Grizzly_Giant_--_2022_--_2758.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias,_Grizzly_Giant_--_2022_--_2758.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": 37.503532,
+     "lng": -119.600775,
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/160 sec Category:F-number f/6.3 Category:Grizzly Giant Category:ISO speed rating 200 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 3:2 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Shadows of trees in the United States Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:“Grizzly Giant” Sequoia in June 2025 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_02.jpg/960px-%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_02.jpg",
+     "licence": "CC0",
+     "author": "EF5",
+     "lat": 37.503536,
+     "lng": -119.600853,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Grizzly Giant Category:Mariposa Grove Category:Self-published work"
+    },
+    {
+     "title": "File:“Grizzly Giant” Sequoia in June 2025 05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_05.jpg/960px-%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E2%80%9CGrizzly_Giant%E2%80%9D_Sequoia_in_June_2025_05.jpg",
+     "licence": "CC0",
+     "author": "EF5",
+     "lat": 37.503678,
+     "lng": -119.600661,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Grizzly Giant Category:Mariposa Grove Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 86234786 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/142029587/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/86234786",
+     "licence": "CC BY",
+     "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5037062541,-119.6009251568"
+    },
+    {
+     "title": "iNat obs 112473068 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/189975071/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/112473068",
+     "licence": "CC BY",
+     "author": "(c) Jonathan Curley, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5036603611,-119.6009341667"
+    },
+    {
+     "title": "iNat obs 104713202 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/175519077/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104713202",
+     "licence": "CC BY",
+     "author": "(c) Jake McCumber, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5038911293,-119.6004014872"
+    },
+    {
+     "title": "iNat obs 104713202 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/175519081/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/104713202",
+     "licence": "CC BY",
+     "author": "(c) Jake McCumber, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5038911293,-119.6004014872"
+    },
+    {
+     "title": "iNat obs 32745600 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/51379222/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/32745600",
+     "licence": "CC BY",
+     "author": "(c) Dan Johnson, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5036805556,-119.6007388889"
+    },
+    {
+     "title": "iNat obs 93636856 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/155219519/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/93636856",
+     "licence": "CC BY",
+     "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.5037768297,-119.6007002704"
+    }
+   ]
   }
  },
  "notes": [
