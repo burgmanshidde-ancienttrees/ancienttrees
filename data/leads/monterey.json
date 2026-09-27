@@ -2,7 +2,7 @@
   "city": "Monterey",
   "country": "United States",
   "city_slug": "monterey",
-  "note": "Verify pass 2026-09-11, web research from zero (passcheck had no coordinate on file and no register). This is Monterey, California, on the Monterey Peninsula. 3 trees delivered (mty_001-003), below the 4-tree floor; leaves the city one short. City's own 13-tree Local Landmark Tree ordinance (Monterey Municipal Code 37-12) could not be read this pass, monterey.municipal.codes and monterey.gov both 403 plain fetchers and no wayback snapshot of the code page exists yet; a browser-session pass or a different fetch route should try again, since the ordinance is exactly the kind of naming-body BRIEF_RESEARCH.md says predicts a city's yield. Time-boxed; did not exhaust every candidate.",
+  "note": "Verify pass 2026-09-11, web research from zero (passcheck had no coordinate on file and no register). This is Monterey, California, on the Monterey Peninsula. 3 trees delivered (mty_001-003), below the 4-tree floor; leaves the city one short. City's own 13-tree Local Landmark Tree ordinance (Monterey Municipal Code 37-12) could not be read this pass, monterey.municipal.codes and monterey.gov both 403 plain fetchers and no wayback snapshot of the code page exists yet; a browser-session pass or a different fetch route should try again, since the ordinance is exactly the kind of naming-body BRIEF_RESEARCH.md says predicts a city's yield. Time-boxed; did not exhaust every candidate.\n\nDeepening pass 2026-09-27 (Hidde priority: 78 impressions/10 days, target 15 trees, only 3 published). Went deep on all three leads above and delivered zero new verified trees; see each lead/blocked entry for the full trail. Summary: the 13 Local Landmark Trees list is still unreadable (municode's viewer is JS-only with no crawlable fallback anywhere, no archive, no staff-report exhibit found despite trying Legistar, town-hall/ordinance-update materials, and news coverage; genuinely needs a phone call or public-records request, not another web pass). Crocker Grove still has no single named specimen distinguishing one tree from the grove (Pebble Beach's own tour page and VoiceMap's audio-tour page both 403'd every fetch attempt; worth a retry with browser-session tooling). The Ghost Tree(s) of Pescadero Point is now confirmed dead as a feature (Wikipedia's own article, fetched directly, says 'the bleached trunks of dead cypress') and moved from lead to blocked. Net effect: Monterey stays at 3 trees; the city needs either a browser-session pass on municode/Pebble Beach, or a different city (register or named-body) prioritised instead, per BRIEF_RESEARCH.md's yield rule.",
   "leads": [
     {
       "name": "Crocker Grove's oldest Monterey cypresses",
@@ -13,20 +13,20 @@
       "why": "17-Mile Drive stop 11, named after Charles Crocker; TripAdvisor and voicemap.me call it home to some of the oldest Monterey cypress specimens in the world, 'nearly 300 years old' per one WebSearch summary (not independently fetched, so treat that figure as a lead only). It is a GROVE though, not a single collectible point; would need a specific named/marked individual specimen within it to qualify, which was not found this pass."
     },
     {
-      "name": "The Ghost Tree(s) of Pescadero Point",
-      "species": "Cupressus macrocarpa",
-      "lat": 36.5713,
-      "lng": -121.9679,
-      "status": "lead",
-      "why": "Famous bleached cypress formation on 17-Mile Drive, 'a few paces' from the Lone Cypress. NOT pursued as a candidate this pass because search summaries describe it as having 'lost all of their foliage and been bleached white', which reads as possibly dead rather than alive, and CLAUDE.md's dead-tree rule is absolute. Also described in the plural ('Ghost Trees'), which may not be one collectible point. Needs a direct-fetched source establishing whether it (or which specimen) is alive before this can be considered."
-    },
-    {
       "name": "City of Monterey's 13 Local Landmark Trees",
       "species": "Unknown, various",
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "Monterey Municipal Code Chapter 37-12 designates 13 individual trees as Local Landmark Trees, 'of such unusual size, prominence or health as to be of significant value to the community'. The actual list of 13 (names/species/addresses) could not be retrieved this pass: monterey.municipal.codes/Code/37-12 and the monterey.gov ordinance page both return 403 to curl and WebFetch, and no wayback snapshot exists for the code page (checked). The ordinance's ownership-consent nomination process suggests many landmark trees are on private property, so access would need checking per tree once the list is found. This is the single highest-value lead for reaching and growing past the floor: a real municipal naming body, per BRIEF_RESEARCH.md's 'what predicts yield' section."
+      "why": "Monterey Municipal Code Chapter 37-12 designates 13 individual trees as Local Landmark Trees, 'of such unusual size, prominence or health as to be of significant value to the community'. STILL UNRETRIEVED after a second, more thorough pass (2026-09-27). Tried and failed: monterey.municipal.codes/Code/37-12 and the monterey.gov ordinance page (both 403 to curl and WebFetch); library.municode.com's own JS app directly (curl and WebFetch both return only the static Angular shell, no server-rendered content, even with a Googlebot user-agent -- this site cannot be read without executing its JS, which no tool here can do); Wayback Machine (no snapshot exists for either the .codes mirror or the municode.com nodeId URL, confirmed via the CDX API, zero results); the city's own tree/parks pages (tree_ordinance_facts.php and the urban-forestry index both confirm '13 trees' but explicitly say 'Photos of Landmark Trees posted soon', i.e. no gallery or list is live); the haveyoursaymonterey.org Tree Ordinance Update engagement site (2025-2026, town halls Oct 2025, council study session March 2026, council action April 2026 -- links only back to the same Code/37-12 page, no exhibit); monterey.legistar.com search (found only an unrelated Monterey COUNTY case about landmark pines #442/#411 near a private residence, nothing about the city's 13); Monterey County Now / Monterey Herald coverage of the ordinance update (one article on residents wanting more flexibility names only generic 'oak trees' and a 'pine tree' on private property, no landmark-tree specifics); a substack post titled 'Holy Oak' by a local Monterey history writer (montereyneighborsandfriends.substack.com/p/holy-oak, 403 to both curl with browser UA and WebFetch -- unconfirmed whether it is even about a landmark tree, worth a browser-session retry). This remains the single highest-value lead for growing past the floor, but it may need a phone call to city staff (831-646-3860 / forestry@monterey.gov, city has offered this contact repeatedly in search results) or a public-records request rather than another web pass; the source is genuinely gated behind a JS-only municode viewer with no crawlable fallback and no archived copy anywhere."
+    },
+    {
+      "name": "Crocker Grove's oldest Monterey cypresses",
+      "species": "Cupressus macrocarpa",
+      "lat": 36.5715,
+      "lng": -121.9611,
+      "status": "lead",
+      "why": "17-Mile Drive stop 11, named after Charles Crocker; TripAdvisor and voicemap.me call it home to some of the oldest Monterey cypress specimens in the world, 'nearly 300 years old' per one WebSearch summary (not independently fetched, so treat that figure as a lead only). It is a GROVE though, not a single collectible point; no specific named/marked individual specimen within it was found on this or the previous pass (2026-09-27: searched again for a plaque, a 'largest/oldest cypress in the grove' claim, or an individually named tree; found none. Pebble Beach's own tour material was 403 to both curl and WebFetch on this pass, so it has not been checked directly and is worth one more try by a browser-session pass)."
     }
   ],
   "blocked": [
@@ -37,6 +37,14 @@
       "lng": -121.8947,
       "status": "blocked",
       "why": "Dead. Declared dead in 1904 and cut down in 1905; the preserved trunk was displayed at the Cathedral of San Carlos Borromeo for most of the 20th century and has since been removed. Hard rule: never doen aan dode bomen. Its site (Mission San Carlos / Monterey State Historic Park) could be mentioned in prose as history but is not a collectible entry."
+    },
+    {
+      "name": "The Ghost Tree(s) of Pescadero Point",
+      "species": "Cupressus macrocarpa",
+      "lat": 36.5713,
+      "lng": -121.9679,
+      "status": "blocked",
+      "why": "Confirmed dead as a feature, not merely a worried lead. Wikipedia's own 'Ghost Trees' article, fetched directly (not a search summary), states plainly: 'the bleached trunks of dead cypress at the end of 17-Mile Drive.' Multiple other sources (Atlas Obscura's description, an SFGate headline 'California's most photographed tree should be allowed to die', a Roadtrippers/travel summary noting foresters expect the few living cypresses left there to die of cypress canker within 20 years) converge on the same picture: this is a cluster of predominantly dead, bone-bleached cypress trunks named collectively 'Ghost Trees' (plural), not one living, identifiable tree. Fails the alive test outright, and even setting that aside it is not one collectible point (no single named surviving specimen distinguished from the rest). Atlas Obscura, SFGate and pebblebeach.com's own tour page all returned 403 to WebFetch on this pass, so this rests on the Wikipedia fetch plus converging search summaries rather than every source being independently fetched; a future pass with browser access could firm this up further, but nothing found points the other way."
     }
   ]
 }

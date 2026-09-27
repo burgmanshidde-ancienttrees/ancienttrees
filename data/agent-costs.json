@@ -8849,6 +8849,13 @@
       "tokens": 45000,
       "trees": 2,
       "note": "2 stories + recognition lines merged into data/cities/los-angeles.json (now 10 trees); softened lax_010's superlative claim after it clashed with the newly-verified, actually-measured lax_011 kauri (hard rule 8)"
+    },
+    {
+      "target": "monterey (3 candidates)",
+      "kind": "verify",
+      "tokens": 90000,
+      "trees": 0,
+      "note": "All three leads dead-ended for a text-fetch pass: the 13 Local Landmark Trees ordinance is JS-only (municode) with no crawlable fallback and no archive, Crocker Grove still has no single named specimen, Ghost Tree(s) of Pescadero Point confirmed dead (moved to blocked). Documented the dead ends so the next pass does not re-walk them; needs a browser-session pass or a phone call to city forestry, not another web sweep."
     }
   ]
 }
