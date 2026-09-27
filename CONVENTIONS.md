@@ -2647,3 +2647,11 @@ Hidde: "should the option to add more than one photo also be added to all tree a
 **Reference: AllTrails' trail description and the App Store's app description**: a few lines, then "more", expanded in place with no sheet. Airbnb opens a sheet, which suits a listing with headings and is heavier than a paragraph needs. Hidde: "dit is nogal veel tekst ... afkappen en read more logischer, ook op web."
 
 **What we took:** each access and transport line stops at two lines with "Read more"; the STORY always shows in full (Hidde, same evening: "not sure the main story deserves a read more"; it is capped at 250 words and it is the product), that opens it where it stands; the button appears only when something is actually cut. App: ExpandableText. Web: .td-clamp in TreeDetail.astro, labelled from UIStrings.readMore in every language, the full text still in the page for search. The Discover more chips wrap onto new rows on both surfaces, as the website already did.
+
+---
+
+## A line of explanation on the "add" sheet? (2026-09-27)
+
+Hidde asked whether an action like "Add a tree" should carry at least one line of copy explaining it. From the references as recalled that evening (not re-read): iNaturalist's + opens a menu of labelled options (AI camera, camera, photo library, sound) with no sentence; Google Maps' Contribute offers Add place, Add photo, Write a review as bare labels; Instagram's + is Post, Story, Reel; AllTrails goes straight to the picker; PictureThis and Seek go straight into the camera and put their one hint IN the viewfinder. Apple's HIG on action sheets: provide a message only when necessary.
+
+**So no line on the sheet.** The button pressed already said what happens, and the camera and the library speak for themselves. Explanation belongs in two other places: an empty state or onboarding card, where somebody does not yet know the feature exists (Discover's "The map is still growing" card), and inside the camera as a hint while photographing, if one is ever needed.
