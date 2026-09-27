@@ -584,6 +584,26 @@ NAMED_BY_HIDDE = [
 ]
 
 
+def us_demand_first(doc, floor=30):
+    """US places Google already shows that are thin, most impressions first.
+
+    Hidde, 2026-09-27: the US is "our biggest underserved group", and of the
+    ways to improve it cheaply he picked deepening the US pages that already
+    take impressions as the night runs' FIRST work, ahead of everything this
+    printer lists below it. From-zero research is ON for every place here,
+    because he named the group (rule 1(d)); the California Big Trees and
+    Live Oak Society leads in data/leads are finding aids for them, and a
+    single famous tree may be its own place ("let go of cities per se").
+    Computed, not listed, so a page that starts taking impressions joins it.
+    """
+    rows = [c for c in doc["cities"]
+            if c.get("country") == "United States"
+            and (c.get("impressions_10d") or 0) >= floor
+            and c.get("trees", 0) < max(c.get("target") or 15, 15)]
+    rows.sort(key=lambda c: -(c.get("impressions_10d") or 0))
+    return rows
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true",
@@ -624,6 +644,20 @@ def main():
         # exists to stop. Named is named; the rest still need a register, a
         # lead file or a Wikidata cluster before a pass is worth dispatching.
         named = {c.lower() for c in NAMED_BY_HIDDE}
+        us = us_demand_first(doc)
+        if us:
+            print("FIRST, BEFORE ANYTHING BELOW: THE US PAGES GOOGLE ALREADY SHOWS")
+            print("(Hidde, 2026-09-27). Deepen these toward their target; from-zero")
+            print("research is ON for all of them. The California Big Trees leads in")
+            print("data/leads are finding aids (never the cited source); in the South,")
+            print("the Live Oak Society's named oaks are the place to look; and a")
+            print("single famous tree nearby may ship as its own place.\n")
+            print("  city                  trees  target  impressions(10d)  leads")
+            for c in us[:12]:
+                print("  %-21s %5d %7d %17d %6d" % (
+                    c["city"][:21], c.get("trees", 0), max(c.get("target") or 15, 15),
+                    c.get("impressions_10d") or 0, c.get("ready", 0)))
+            print()
         print("STAGE 1, OPEN THE UNOPENED: every ranked city with no trees yet,")
         print("to 10, as fast as they go. Hidde, 2026-08-19: starting these beats")
         print("deepening.\n")
