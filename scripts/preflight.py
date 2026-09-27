@@ -1996,6 +1996,86 @@ def check_leads_already_published():
     return out
 
 
+# The check above matches a leads file's own slug against a city file of the
+# same slug (data/leads/aachen.json against data/cities/aachen.json), which
+# is exactly right for a per-city leads file and blind by construction for a
+# country- or contest-wide batch (data/leads/_tree-of-the-year.json,
+# data/leads/_famous-*.json): those never have a same-named city file, so
+# `published.get(slug)` returns nothing and every lead in them skips the
+# whole function. That gap is not hypothetical: it has cost a duplicate tree
+# on at least four separate occasions (Kozy's plane, Belfast's Peace Tree,
+# Budapest's Jaszai Mari plane, and the Grot Oak of Deblin, 2026-09-27, caught
+# by hand each time via passcheck.py --pending or a one-off distance script,
+# never by this file). A lesson repeated four times is a check, not a fifth
+# retelling in LOG.md.
+def check_country_batch_leads_against_all_cities():
+    """A lead in a country/contest-wide batch file that duplicates a tree we
+    already publish somewhere else in the country, under a different id.
+
+    Scoped to leads files whose slug starts with "_" (the existing naming
+    convention for a batch with no single matching city: _famous-belgium,
+    _tree-of-the-year, and so on), because those are exactly the files
+    check_leads_already_published() cannot see. Matches on distance only,
+    against every published tree, not on name or genus, because the id is
+    all that ever changes between duplicate and original: the whole failure
+    mode here is the SAME coordinate reappearing under a new prefix.
+
+    A wider radius than the per-city check's 60m: a contest or register's own
+    published GPS reading is often a village-level or founder's-era reading
+    rather than a survey, and the Grot Oak of Deblin case this check exists
+    for sat 89m from its own already-published pin, which a 60m radius would
+    still have missed. 150m stays far below the distance between two
+    genuinely different remarkable trees in the same place, which is what
+    keeps this from firing on neighbours rather than duplicates.
+    """
+    import math
+    RADIUS_M = 150
+    all_trees = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for t in d.get("trees") or []:
+            loc = t.get("location") or {}
+            lat, lon = loc.get("latitude"), loc.get("longitude")
+            if lat is None or lon is None:
+                continue
+            all_trees.append({"id": t.get("id"), "name": t.get("name") or "",
+                               "lat": lat, "lon": lon})
+
+    out = []
+    for path in sorted(glob.glob("data/leads/_*.json")):
+        slug = os.path.basename(path)[:-5]
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for lead in (d.get("leads") or []):
+            if not isinstance(lead, dict):
+                continue
+            if lead.get("status") not in ("lead", "verified", None):
+                continue        # duplicate/blocked/published already say so
+            loc = lead.get("location") or {}
+            if not isinstance(loc, dict):
+                loc = {}
+            lat = lead.get("lat", loc.get("latitude"))
+            lon = lead.get("lng", loc.get("longitude"))
+            if lat is None or lon is None:
+                continue
+            name = lead.get("name") or lead.get("species") or "?"
+            already_this_one = lead.get("verified_id") or lead.get("mapped_as")
+            for t in all_trees:
+                if t["id"] == already_this_one:
+                    continue     # correctly linked to itself, not a duplicate
+                dlat = (lat - t["lat"]) * 111320
+                dlon = (lon - t["lon"]) * 111320 * math.cos(math.radians((lat + t["lat"]) / 2))
+                dist = math.hypot(dlat, dlon)
+                if dist <= RADIUS_M:
+                    out.append("%s: lead %r may already be published, %s (%r) stands "
+                               "%.0fm away. Check before verifying or writing it as a "
+                               "tree we do not have."
+                               % (slug, name, t["id"], t["name"], dist))
+                    break
+    return out
+
+
 def check_pin_is_in_its_own_country():
     """A pin thousands of kilometres from every other tree in its country.
 
@@ -2415,6 +2495,7 @@ def main():
         print("FAIL " + line)
     for line in (check_stacked_pins() + check_search_names() + check_paid_share()
                  + check_country_counts() + check_leads_already_published()
+                 + check_country_batch_leads_against_all_cities()
                  + check_tree_labels_are_translated() + check_city_indent()
                  + check_a_by_licence_names_its_author()
                  + note_a_reader_photograph_is_not_a_reason()

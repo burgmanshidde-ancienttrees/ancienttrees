@@ -10,6 +10,48 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - Refilled the shelf again: 5 more Tree of the Year places shipped, one duplicate caught before merge
+
+`prepare.py` said REFILL THE SHELF FIRST (writable pile under 60, the same
+`_tree-of-the-year` batch named as the biggest refill). Claimed it, dispatched
+one 8-candidate verify pass (contest page as first source, a second
+independent source found per tree), then one write pass on whatever verified.
+
+**Published (5 new single-tree places, all far from any published city,
+checked by distance not by name):** Leliceni, Romania (500-year lime,
+European Tree of the Year 2011 winner, 23,298 votes, village debating-bench
+tradition); Garmen, Bulgaria (the Zagradski Plane, 600-650 years, 2011
+runner-up, a twin younger plane stands beside it); Letenye, Hungary (a
+giant plane in a Baroque castle park, 2011 third place, age disputed 300 vs
+500 years between two sources); Felsőmocsolád, Hungary (a hollow-based lime
+children climb through, 2012 winner, 11.9m circumference at the buttressed
+base); Căpeni, Romania (a field elm that survived Dutch elm disease and a
+2018 storm limb loss, 2012 runner-up, confirmed alive by a dated 2023 visit
+blog).
+
+**Correctly blocked, not shipped:** the Wish Tree of Nisovo, Bulgaria,
+confirmed dead by a dated 2013 news report (uprooted by storm winds, struck
+from Bulgaria's own centuries-old-tree register); the Skalička alley,
+blocked on access rather than on the "one collectible point" question, since
+the grounds house a residential care home for women with disabilities.
+
+**Caught before merge:** the sixth candidate, the Grot Oak of Dęblin,
+verified cleanly but turned out to be the same tree as the already-published
+`deb_001` (~30m apart, same 2011/2012 contest history). The finding-aid's own
+`nearest_published` field was stale and said 70km, which is why the verify
+pass didn't catch it; I caught it running preflight and a manual distance
+check before merging, reverted `data/cities/deblin.json` to its published
+state (briefly overwrote it, which is exactly the collision `passcheck.py
+--claim` exists to prevent, worth remembering: an id-level claim doesn't
+protect against a coordinate-level duplicate inside a country batch), and
+marked the lead `duplicate` instead of `verified`.
+
+Also fixed two species-label mismatches before merge (a Tilia cordata
+mislabelled "Large-leaved Lime", an elm carrying two names for one species)
+and deleted three stale research files whose trees were already fully
+merged into data/cities (safe-to-delete per prepare.py's own check).
+preflight clean throughout (0 problems, 665 cities).
+
 ## 2026-09-27 (continuation) - Fixed a real deploy blocker (rung 2), then refilled and wrote the _famous-spain shelf: 5 new places
 
 **Rung 2 first.** `health.py` showed Smoke test and Build and deploy both failing. The cause: `checkParkCountPromises()` failing on `/parks/arnold-arboretum-boston`, whose hand-written title still said "5 to Find" after tonight's earlier Wilson Black Pine addition grew the group to 6. Audited every park file for the same drift (a small Python port of `parkKey()`/`groupTreesByPark()`, since I can't run the Astro build myself) and found a second live one about to fail right after it: New Orleans's City Park, same shape, also 5 vs 6 after the Enrique Alferez Oak. Fixed both titles/meta/intros. Also found and fixed a third, older, non-blocking case while auditing: Hortus Botanicus Amsterdam's park page still described 3 trees pulled in the 2026-08-23 paid-entry cleanup a month ago; it's been silently excluded from the build for that whole month (2 trees left, below the 3-tree floor) so this was hygiene, not a live bug. Committed and tried to push; `gh workflow run deploy.yml` 403'd (no dispatch permission, same known issue as other runs today), so the fix will land on the next scheduled build.
