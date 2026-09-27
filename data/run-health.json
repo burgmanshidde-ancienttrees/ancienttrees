@@ -18756,6 +18756,45 @@
    ],
    "trees": 10,
    "logged": true
+  },
+  {
+   "started": "2026-09-27T16:53:17+00:00",
+   "date": "2026-09-27",
+   "run_id": "36334868654",
+   "minutes": 120.0,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [
+    "_famous-spain",
+    "_famous-france"
+   ],
+   "commits": 6,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "bosaca",
+     "trees": 1
+    },
+    {
+     "city": "liernu",
+     "trees": 1
+    },
+    {
+     "city": "lozorno",
+     "trees": 1
+    },
+    {
+     "city": "viroflay",
+     "trees": 1
+    }
+   ],
+   "trees": 4,
+   "logged": true
   }
  ],
  "schedule_changes": [
