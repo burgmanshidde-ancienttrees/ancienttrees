@@ -64,7 +64,30 @@
    "status": "lead",
    "reason": "Found via the City of San Antonio's own commissioned tree-ring dating study (Joe Buck / Cross Timbers Dendro Consulting, Jan 2023 final report, sanantonio.gov PDF), which cored five of the city's officially designated 'heritage trees' (>24in diameter) near the river wall/Japanese Tea Garden area of Brackenridge Park. NOT PROMOTED to verified this pass: ring-count dating found tree #139 (pecan) 82-92 years old, #100 (live oak) 75-81 years, #95 (live oak) 73-79 years, #141 (bald cypress) only 34-38 years old. All are heritage-SIZED but none is centuries-old; they qualify for the city's diameter-based designation but not for this project's 'genuinely old' bar. #101 (a large live oak) could not be cored (borer broke) but the surveyor's professional opinion is it is unlikely to be old either. Recorded here so a future pass does not re-chase these five specific numbered trees as ancient-tree candidates; they could still be considered on visual/historic-park grounds if a future pass wants to build a Brackenridge Park cluster, but not on age.",
    "source": "City of San Antonio Parks and Recreation / Cross Timbers Dendro Consulting LLC, Jan 2023 (https://www.sanantonio.gov/Portals/0/Files/Parks/BrackenRidgeMasterPlan/Brackenridge%20Park%20Tree-Ring%20Dating%20Project.pdf)"
+  },
+  {
+   "name": "Burnt Oak",
+   "species": "Live Oak (Quercus virginiana)",
+   "reason": "A huge live oak on the east bank of Salado Creek, roughly 50 feet tall and 22 feet round per the finding aid, standing near where Stephen F. Austin's Texian army camped in October 1835 before the siege of Bexar. About 300 yards north of the East Southcross crossing, which puts it on or by the Salado Creek Greenway. Needs: an independent source beyond the Forest Service (none found in this pass), alive confirmation, and whether the trunk is on public greenway land.",
+   "location": {
+    "latitude": 29.3769,
+    "longitude": -98.4245,
+    "address": "Salado Creek, about 300 yards north of East Southcross Boulevard, San Antonio"
+   },
+   "location_precision": "approximate",
+   "girth_cm": 671,
+   "sources": [],
+   "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/burnt-oak/",
+   "status": "lead"
   }
  ],
- "blocked": []
+ "blocked": [
+  {
+   "name": "Rough Riders Pecan (Theodore Roosevelt Tree)",
+   "species": "Pecan (Carya illinoinensis)",
+   "reason": "Dead. The finding aid says it died after road widening in the 1990s.",
+   "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/rough-riders-pecan/",
+   "status": "blocked"
+  }
+ ]
 }
