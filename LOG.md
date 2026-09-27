@@ -10,6 +10,50 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (session) - Write pass merged, shelf refilled, three new Portuguese places opened
+
+Started at the top of the ladder: `prepare.py` had 24 verified trees awaiting
+a writer. Dispatched a write-stories pass on the three that checked out as
+genuinely unpublished (hvb_002 The Witch Tree of Black Kate, plg_007 The Oak
+of Laukiai, vbo_002 The Old Wild Apple Tree of Ziar), all day-trip additions
+to already-thin published cities (Hilvarenbeek, Plunge, Velke Borove); plg_007
+and vbo_002 are the 2026 European Tree of the Year winner and runner-up.
+Merged, rewrote each city's intro/FAQ/question_context for the new count and
+distance, ran preflight (0 problems). The other five "awaiting a writer"
+candidates (three Belgium, one China, one France famous-tree leads) checked
+out against their own verify_notes as correctly HELD, not stalled: each
+verifier had already recommended holding for a stated reason (a declining,
+uncertain-count beech ensemble; no distinguishing fact; fails the
+single-famous-tree destination test). Cleaned six now-fully-resolved stale
+research files (duplicates, already-published, or accounted for in leads).
+
+Mid-session, a concurrent push landed removing the site-build step from the
+night-run prompt (build now takes 11+ minutes, longer than a Bash call may
+block; runs were backgrounding it, waiting on a Monitor, and losing their
+work). I had already started exactly that pattern; stopped both the
+background build and the Monitor and switched to verifying with
+`preflight.py` only, per the new prompt.
+
+Shelf was still under the refill floor, so ran two more targeted verify
+passes (four named candidates each, per BRIEF_RESEARCH.md's limit) on
+`_famous-sweden` and `_famous-portugal` leads (famous_trees.py finds, never
+verified). Sweden: two of four (Bellmanseken, Karl XI:s ek/Fiskartorpseken)
+turned out to sit inside published Stockholm's own boundary and were merged
+as sto_007/sto_008 instead of standalone places; one (Trangsunds ekruin)
+confirmed dead and blocked; one (Kungseken, Knappfors) verified alive but held
+as a lead, modest fame and its own legend called invented by the sources.
+Portugal: three of four cleared the single-famous-tree bar and opened as new
+places, Calvos (a 500+ year oak dated 2011 by the University of Coimbra,
+oldest Q. robur on the Iberian Peninsula, with its own visitor centre), Runa
+(a cypress that won Portugal's Tree of the Year 2026), and Azeitao (three
+ancient, hollow olives, age kept as an honest folk estimate rather than the
+unverified "2,000 years" claim); the fourth was a duplicate of
+already-published mdr_006 in Madeira.
+
+Net this session: 8 trees shipped across 6 places (3 deepened, 3 opened),
+zero left on a claimed-but-unworked branch. All costs logged in
+data/agent-costs.json under 2026-09-27.
+
 ## 2026-09-27 (session) - Why the night of 09-26 shipped 13 trees in seven runs, and the fix
 
 Hidde asked. Five of seven runs ended "waiting for the build": the prompt told
