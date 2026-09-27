@@ -10,8 +10,8 @@ name: City research
 # A list copied into two places is a list that will differ. One name, both
 # steps.
 env:
-  CLAUDE_ALLOWED: "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Bash(touch:*),Bash(printf:*),Task,Monitor,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
-  CLAUDE_DISALLOWED: "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete)"
+  CLAUDE_ALLOWED: "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Bash(touch:*),Bash(printf:*),Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+  CLAUDE_DISALLOWED: "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete),Bash(npm --prefix site run build:*),Bash(npx astro:*),Bash(npm run build:*),Monitor"
   # The continuation prompt, hoisted here 2026-08-29 when the window went from
   # two attempts to four. This file's own rule: a list copied into two places is
   # a list that will differ. One prompt, every continuation.
@@ -523,10 +523,9 @@ jobs:
               different tree (status `held`, not `approved`).
               The API sweep (scripts/photo_hunt.py --recheck) is still free and
               still worth running to keep the queue stocked.
-            - Verify with `npm --prefix site ci` then `npm --prefix site run
-              build`. Both start with npm on purpose: a parenthesised subshell
-              like `(cd site && ...)` matches no entry on the tool allowlist and
-              is what silently stopped every night run for a day.
+            - Verify with `python3 scripts/preflight.py`, then commit and push.
+              DO NOT RUN THE SITE BUILD: it is refused by the tool list. See
+              the paragraph that says so below.
             - ONE COMMAND PER BASH CALL. No `&&`, no `;`, no pipes into a binary
               that is not itself on the list, no `(subshell)`, and no `for`,
               `while`, `until` or `if` loops. The allowlist matches the WHOLE
@@ -653,13 +652,18 @@ jobs:
             Whatever the work turns out to be: verify against two independent
             sources, follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
             location_precision on every tree you touch, run
-            `npm --prefix site ci` then `npm --prefix site run build` to
-            confirm the site still builds and every contract validates (both
-            start with npm on purpose: a parenthesised subshell like
-            `(cd site && ...)` matches no entry on the tool allowlist and is
-            what silently stopped every night run for a day), then commit,
-            append to
-            LOG.md, and push. The renderer is Astro now (site/), not
+            `python3 scripts/preflight.py` (0 problems), then commit, append to
+            LOG.md, and push.
+
+            DO NOT RUN THE SITE BUILD, and it is refused by the tool list so
+            you cannot. It takes eleven minutes and more on a site this size,
+            longer than one Bash call may block, so it could only ever run in
+            the background, and every attempt that started it ended waiting
+            for it with its trees uncommitted: on 2026-09-26 and 27 five runs
+            in a row, 13 trees in seven runs where the week before made 30 in
+            one. The build is not yours to run anyway: deploy.yml builds and
+            runs qa.py on every push, a red deploy leaves the live site as it
+            was, and a red deploy is rung-2 work for the next run. The renderer is Astro now (site/), not
             build_site.py: that file no longer exists, having been deleted
             once deploy.yml's cutover ran a clean cycle (ARCHITECTURE.md's
             rollout plan, step 6). scripts/walk_planning.py still holds the
@@ -750,7 +754,10 @@ jobs:
           # so tomorrow names the wall instead of counting it. Two exceptions
           # went in because they need no evidence: Monitor, which a run reached
           # for and which is not a shell at all, and touch/printf, which sit
-          # beside the plumbing already allowed.
+          # beside the plumbing already allowed. Monitor came OUT again on
+          # 2026-09-27: runs used it to wait on a backgrounded site build and
+          # ended waiting, which this runner never wakes them from. It is in
+          # CLAUDE_DISALLOWED with the build itself; qa.py keeps both there.
           claude_args: |
             --allowedTools "${{ env.CLAUDE_ALLOWED }}"
             --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
