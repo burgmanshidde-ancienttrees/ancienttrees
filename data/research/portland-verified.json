@@ -1,0 +1,103 @@
+[
+  {
+    "id": "ptl_021",
+    "name": "The Corbett Oak",
+    "species": "Oregon White Oak (Quercus garryana)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 350,
+    "girth_cm": 498,
+    "location": {
+      "address": "Heritage Tree Park, SW corner of SW Lane St & SW Corbett Ave",
+      "latitude": 45.49566504,
+      "longitude": -122.6762649,
+      "neighbourhood": "South Portland"
+    },
+    "verified_sources": [
+      "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, objectid 175, treeid 179, designated 1998)",
+      "https://www.oregonencyclopedia.org/articles/heritage_trees_of_portland/",
+      "https://paulgerald.com/portland-heritage-trees/portland-heritage-tree-corbett-oak/",
+      "https://cyclotram.blogspot.com/2007/05/corbett-oak.html"
+    ],
+    "access": "Free, public park (Heritage Tree Park is city-owned open ground, undeveloped corner lot)",
+    "transport": "South Portland neighbourhood, SW Corbett Ave; served by TriMet bus routes along SW Corbett/Naito",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Independently corroborated across three non-register sources (Oregon Encyclopedia, a heritage-tree-visiting blog, and a 2007 blog post) plus the register. Oregon Encyclopedia dates it at roughly 300 years old. Real story: around 2003-2005 a developer planned to fell this oak for row houses; neighbours draped it in chicken wire and tire chains and stopped a chainsaw crew mid-attempt to girdle it, leaving a horizontal scar still visible on the trunk. The rescue (led by Friends of the Oak / Phyllis Reynolds) directly led the Urban Forestry Commission to create Portland's Heritage Tree program in 1993, and after a 10-year fundraising campaign the lot itself was bought and became Heritage Tree Park, named for this tree. Register: 92ft height, 80ft spread, 62in diameter, 16.35ft (~498cm) circumference."
+  },
+  {
+    "id": "ptl_022",
+    "name": "The Dosch Yellow Bellflower Apple",
+    "species": "Yellow Bellflower Apple (Malus domestica 'Yellow Bellflower')",
+    "age_estimate": "roughly 175 years",
+    "age_min": 165,
+    "age_max": 180,
+    "age_basis": "source",
+    "girth_cm": 268,
+    "location": {
+      "address": "4700 SW Campbell Ct, off SW Sunset Blvd",
+      "latitude": 45.4877406,
+      "longitude": -122.70739112,
+      "neighbourhood": "Hillsdale"
+    },
+    "verified_sources": [
+      "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, objectid 147, treeid 290, designated 2009)",
+      "https://oregontic.com/oregon-heritage-trees/dosch-yellow-bellflower-apple/ (Oregon Travel Information Council)",
+      "https://psuvanguard.com/experience-portlands-most-historic-trees/",
+      "https://forums.homeorchardsociety.org/discuss/general-forum/son-of-dosch-apple/"
+    ],
+    "access": "Free, public right of way (stands at the dead end of SW Campbell Ct)",
+    "transport": "Hillsdale neighbourhood, off SW Sunset Blvd; served by TriMet bus routes on SW Sunset/Capitol Hwy",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Documented planting date, not a derived estimate: three independent sources (Oregon Travel Information Council, PSU Vanguard, Home Orchard Society) agree the tree was planted around 1850-1851 from stock bought from the Luelling and Meek Nursery in Milwaukie, the first grafted-fruit-tree nursery on the West Coast. Declared the oldest living grafted apple tree in the western US by the Home Orchard Society in 1976; PSU Vanguard calls it 'the oldest apple tree in Oregon.' Flagged only because sources disagree on WHO planted it: one write-up names a pioneer minister (a Rev. Kelly-type figure) homesteading the orchard, while the tree's own name ('Dosch') and its neighbourhood point to the locally prominent Dosch family (Dosch Rd/Dosch Park are nearby); could not resolve which pioneer household in one pass. Register: 31ft height, 39ft spread, 30in diameter, 8.8ft (~268cm) circumference."
+  },
+  {
+    "id": "ptl_023",
+    "name": "The Lone Fir",
+    "species": "Douglas Fir (Pseudotsuga menziesii)",
+    "age_estimate": "over 150 years",
+    "age_min": 150,
+    "age_max": 200,
+    "girth_cm": 418,
+    "location": {
+      "address": "Lone Fir Cemetery, northwest section, roughly opposite 437 SE 22nd Ave",
+      "latitude": 45.51877538,
+      "longitude": -122.64488353,
+      "neighbourhood": "Buckman"
+    },
+    "verified_sources": [
+      "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, objectid 73, treeid 294, designated 2009)",
+      "https://en.wikipedia.org/wiki/Lone_Fir_Cemetery",
+      "https://www.southeastexaminer.com/2026/05/portlands-heritage-trees-living-landmarks/",
+      "https://pdxmonthly.com/articles/2010/11/12/trees-of-the-lone-fir-cemetery-november-2010"
+    ],
+    "access": "Free, public cemetery (Metro-owned), open during posted daylight hours",
+    "transport": "Buckman neighbourhood, SE 20th & Morrison St; served by TriMet bus routes on SE Belmont/Morrison",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "This is the tree the cemetery is named for. Originally called Mount Crawford Cemetery, it was renamed Lone Fir in 1866 after Aurelia Barrell (wife of founder Colburn Barrell) chose the name for the once-solitary Douglas fir standing in its northwest corner; Wikipedia and Portland Monthly both independently confirm the naming story. Portland Monthly (2010) calls it the '150-year-old namesake' of the cemetery; the Southeast Examiner (2026) independently names it again as one of the cemetery's three City-designated historic trees, alongside an incense cedar and a bigleaf maple named for Joseph Lane. Lone Fir today functions as Portland's second-largest arboretum. Register: 109ft height, 61ft spread, 52in diameter, 13.7ft (~418cm) circumference."
+  },
+  {
+    "id": "ptl_024",
+    "name": "The Lone Fir Incense Cedar",
+    "species": "Incense Cedar (Calocedrus decurrens)",
+    "age_estimate": "",
+    "girth_cm": 338,
+    "location": {
+      "address": "Lone Fir Cemetery, north side, opposite 2231 SE Stark St",
+      "latitude": 45.51919502,
+      "longitude": -122.64274596,
+      "neighbourhood": "Buckman"
+    },
+    "verified_sources": [
+      "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, objectid 445, treeid 293, designated 2009)",
+      "https://www.southeastexaminer.com/2026/05/portlands-heritage-trees-living-landmarks/"
+    ],
+    "access": "Free, public cemetery (Metro-owned), open during posted daylight hours",
+    "transport": "Buckman neighbourhood, SE 20th & Morrison St area; served by TriMet bus routes on SE Belmont/Morrison",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Second Lone Fir Cemetery heritage tree, about 170m from The Lone Fir Douglas-fir (ptl_023), same grove, an easy joint stop. Named independently by the Southeast Examiner (2026) as one of the cemetery's three City-designated historic trees, alongside the Douglas-fir and a Joseph Lane bigleaf maple, distinctive for its well-defined columnar form. No source gives an age; register gives 121ft height (unusually tall for the species), 13ft spread, 42in diameter, 11.1ft (~338cm) circumference. Flagged and age_estimate left empty rather than derived, since no published growth-rate figure for Calocedrus decurrens under Portland conditions was found this pass; page should ask the reader."
+  }
+]
