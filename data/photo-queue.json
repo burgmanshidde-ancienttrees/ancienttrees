@@ -64796,7 +64796,7 @@
      "lng": -90.096756,
      "cats": "Category:2018 in City Park, New Orleans Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Louisiana Category:Images from Wiki Loves Monuments 2018 in the United States Category:Images from Wiki Loves Monuments 2018 in the United States missing state categorization Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Playgrounds in New Orleans Category:Self-published work Category:September 2018 in New Orleans Category:Trees in City Park, New Orleans Category:United States photographs taken on 2018-09-26 Category:Uploaded via Campaign:wlm-us-other Category:Wiki Loves Monuments 2018 in the United States unreviewed",
      "judged": "reject",
-     "verdict": "playground scene, tree incidental"
+     "verdict": "generic park scene over a playground; no single tree is the subject, no crutch-propped limbs visible"
     },
     {
      "title": "File:Spanish Moss on trees in New Orleans City Park.jpg",
@@ -64807,8 +64807,8 @@
      "lat": 29.985292,
      "lng": -90.096878,
      "cats": "Category:2018 in City Park, New Orleans Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Louisiana Category:Images from Wiki Loves Monuments 2018 in the United States Category:Images from Wiki Loves Monuments 2018 in the United States missing state categorization Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Trees in City Park, New Orleans Category:United States photographs taken on 2018-09-26 Category:Uploaded via Campaign:wlm-us-other Category:Wiki Loves Monuments 2018 in the United States unreviewed",
-     "judged": "reject",
-     "verdict": "generic City Park oak 222 m from pin, no crutches"
+     "judged": "hold",
+     "verdict": "fine live oak in City Park filling the frame, species right, but none of the wooden crutches our story leads on are visible; City Park has hundreds of live oaks, cannot confirm it is the McDonogh Oak"
     },
     {
      "title": "File:Statue of John Mcdonogh by Aziz Hogue.jpg",
@@ -64820,7 +64820,7 @@
      "lng": -90.07083889,
      "cats": "Category:CC-BY-SA-4.0 Category:February 2021 in New Orleans Central Business District Category:Files with coordinates missing SDC location of creation Category:McDonough Memorial, New Orleans Category:Self-published work",
      "judged": "reject",
-     "verdict": "statue of John McDonogh, not the tree"
+     "verdict": "a statue of John McDonogh 4.6 km away, not the tree"
     },
     {
      "title": "iNat obs 114340341 (Quercus virginiana)",
@@ -96368,7 +96368,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "39.9324033333,-75.2115466667"
+     "obs_location": "39.9324033333,-75.2115466667",
+     "judged": "approve",
+     "verdict": "ginkgo in full gold filling the frame beside the stone Bartram house; same observation includes the interpretive plaque naming this as the Hamilton 1785 ginkgo at the Bartram collection, so identity i"
     },
     {
      "title": "iNat obs 64828179 (Ginkgo biloba)",
@@ -96386,7 +96388,9 @@
      "licence": "CC BY",
      "author": "(c) Navin Sasikumar, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "39.9320983887,-75.2115249634"
+     "obs_location": "39.9320983887,-75.2115249634",
+     "judged": "reject",
+     "verdict": "single fallen ginkgo leaf on gravel, close-up"
     },
     {
      "title": "iNat obs 284633883 (Ginkgo biloba)",
@@ -125831,7 +125835,9 @@
      "lat": 47.71958336,
      "lng": -124.31501001,
      "cats": "Category:CC-BY-SA-4.0 Category:Duncan Memorial Big Cedar Tree Category:Files with coordinates missing SDC location of creation Category:Images by Steven Pavlov taken in 2016 Category:Information field template with formatting Category:July 2016 in Washington (state) Category:Photographs taken on 2016-07-03 Category:Photos by Steven Pavlov taken with Canon EOS 50D",
-     "source": "wikidata/Q104861421"
+     "source": "wikidata/Q104861421",
+     "judged": "hold",
+     "verdict": "same tree (3 m from pin, twin trunks), good alternate, but an upward trunk view that shows less of the whole than the approved one"
     },
     {
      "title": "File:870404-30 Nolan Ck Cedar, in a clearcut off 101 S of the Hoh.jpg",
@@ -125939,8 +125945,8 @@
      "lat": 47.613517,
      "lng": -124.376759,
      "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Flora of national parks of the United States Category:Self-published work Category:September 2025 in Washington (state) Category:Trees in Washington (state)",
-     "judged": "reject",
-     "verdict": "photo_light POOR: near-colourless, sky blown"
+     "judged": "approve",
+     "verdict": "unmistakable: spruce spanning the eroded cavity on bare roots over the beach, the unique Kalaloch Tree of Life; daylight, colour, subject centred in a landscape frame"
     }
    ]
   },
@@ -125958,7 +125964,9 @@
      "author": "Joe Mabel",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings in Quinault, Washington Category:CC-BY-SA-4.0 Category:History museums in Washington (state) Category:Self-published work Category:September 2017 in Washington (state) Category:United States photographs taken on 2017-09-26"
+     "cats": "Category:Buildings in Quinault, Washington Category:CC-BY-SA-4.0 Category:History museums in Washington (state) Category:Self-published work Category:September 2017 in Washington (state) Category:United States photographs taken on 2017-09-26",
+     "judged": "reject",
+     "verdict": "a museum building, not the tree"
     },
     {
      "title": "File:Largest Sitka Spruce, Quinault Lake, Washington 2018-08-21 OC-LSC-0090.jpg",
@@ -125980,7 +125988,9 @@
      "author": "Wsiegmund",
      "lat": 47.4773,
      "lng": -123.8297,
-     "cats": "Category:CC-BY-2.5 Category:CC-BY-SA-3.0-migrated Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Picea sitchensis Category:Pinales in Olympic National Park Category:Self-published work Category:Taken with Canon PowerShot S110"
+     "cats": "Category:CC-BY-2.5 Category:CC-BY-SA-3.0-migrated Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Picea sitchensis Category:Pinales in Olympic National Park Category:Self-published work Category:Taken with Canon PowerShot S110",
+     "judged": "hold",
+     "verdict": "same big spruce trunk with person for scale, good alternate, but crown cut off and a maple crowds the left"
     },
     {
      "title": "iNat obs 269236706 (Picea sitchensis)",
@@ -126344,7 +126354,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "40.0874055,-75.2206116667"
+     "obs_location": "40.0874055,-75.2206116667",
+     "judged": "reject",
+     "verdict": "leaf and bud close-ups (both photos), observation identified as Quercus texana, not the Bender Oak"
     },
     {
      "title": "iNat obs 192852794 (Quercus texana)",
@@ -126434,7 +126446,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "40.0875166667,-75.22165"
+     "obs_location": "40.0875166667,-75.22165",
+     "judged": "reject",
+     "verdict": "needle close-up and a tag reading Ulleungdo hemlock (Tsuga ulleungensis), wrong species and not the Meadowbrook Gate weeping hemlock"
     },
     {
      "title": "iNat obs 69589240 (Tsuga ulleungensis)",
@@ -126864,7 +126878,9 @@
      "licence": "CC BY",
      "author": "(c) Bill Levine, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "32.7308883333,-117.1516888333"
+     "obs_location": "32.7308883333,-117.1516888333",
+     "judged": "reject",
+     "verdict": "upward canopy and limb shots, no roots or trunk readable, observation identified as Ficus microcarpa not macrophylla; not the Palm Canyon fig with its buttress roots"
     },
     {
      "title": "iNat obs 200063820 (Ficus microcarpa)",
@@ -126998,7 +127014,9 @@
      "author": "Marty Aligata",
      "lat": 36.573319,
      "lng": -118.750192,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Sequoia National Park Category:The President (tree)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Sequoia National Park Category:The President (tree)",
+     "judged": "hold",
+     "verdict": "identity certain (The President sign at base), daylight, colour, but it is the base only with people hugging it; crown not in frame, fails Cadiz criterion 1"
     },
     {
      "title": "iNat obs 112031677 (Sequoiadendron giganteum)",
@@ -127081,7 +127099,9 @@
      "author": "Marty Aligata",
      "lat": 36.573647,
      "lng": -118.749992,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park",
+     "judged": "hold",
+     "verdict": "identity certain (Chief Sequoyah sign), but base and lower trunk only, crown not in frame"
     },
     {
      "title": "File:Chief Sequoyah Tree, Sequoia National Park (distance) July 2023.jpg",
@@ -127091,7 +127111,9 @@
      "author": "Marty Aligata",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Chief Sequoyah (tree) Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+     "cats": "Category:CC-BY-SA-4.0 Category:Chief Sequoyah (tree) Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park",
+     "judged": "approve",
+     "verdict": "full sequoia, crown and trunk readable against blue sky; same photographer and day as the signed base shot and the mid-trunk burl with a hole plus basal fire cave match it"
     },
     {
      "title": "File:Chief Sequoyah Tree (distance) in Sequoia National Park - July 2023.jpg",
@@ -127102,8 +127124,8 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:Chief Sequoyah (tree) Category:Self-published work Category:Sequoiadendron giganteum",
-     "judged": "approve",
-     "verdict": "viewed: named by photographer (same series as signed base shot), whole sequoia crown and trunk, daylight"
+     "judged": "hold",
+     "verdict": "handsome full sequoia but a clean trunk without the burl holes seen in the signed shot; could be a neighbour on the Congress Trail"
     },
     {
      "title": "File:Henry Inman - Sequoyah - Google Art Project.jpg",
@@ -127217,7 +127239,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Lincoln (tree) Category:PD-user Category:Taken with Sony DSC-S600",
-     "source": "wikidata/Q6550469"
+     "source": "wikidata/Q6550469",
+     "judged": "reject",
+     "verdict": "246 px wide extreme vertical panorama, fails the wide card crop and is too small; no marker ties it to the Lincoln Tree"
     },
     {
      "title": "File:Lincoln Tree (base) in Sequoia National Park - July 2023.jpg",
@@ -127227,7 +127251,9 @@
      "author": "Marty Aligata",
      "lat": 36.571853,
      "lng": -118.756028,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lincoln (tree) Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lincoln (tree) Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park",
+     "judged": "hold",
+     "verdict": "identity certain (Lincoln Tree sign), good alternate, but base only"
     },
     {
      "title": "File:Lincoln Tree in Sequoia National Park, California - June 2022.jpg",
@@ -127452,7 +127478,9 @@
      "author": "Dietmar Rabich",
      "lat": 37.503497,
      "lng": -119.600995,
-     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/40 sec Category:F-number f/10 Category:Grizzly Giant Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Linear perspective Category:Perspective views in the United States Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 3:2 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/40 sec Category:F-number f/10 Category:Grizzly Giant Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Linear perspective Category:Perspective views in the United States Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 3:2 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki",
+     "judged": "hold",
+     "verdict": "same tree (great side limb), good alternate, but steep upward view with the base cut off"
     },
     {
      "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2754.jpg",
@@ -127462,7 +127490,9 @@
      "author": "Dietmar Rabich",
      "lat": 37.503487,
      "lng": -119.600942,
-     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/40 sec Category:F-number f/7.1 Category:Grizzly Giant Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 4:3 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/40 sec Category:F-number f/7.1 Category:Grizzly Giant Category:ISO speed rating 100 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 4:3 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki",
+     "judged": "reject",
+     "verdict": "base and burned cavity only, crown not in frame"
     },
     {
      "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2755.jpg",
@@ -127719,8 +127749,8 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:Mariposa Grove Category:Self-published work",
-     "judged": "reject",
-     "verdict": "base close-up with person, crown not in frame, fusion not readable"
+     "judged": "hold",
+     "verdict": "identity certain (Faithful Couple sign at the fence), daylight, colour, but lower trunk only, crown not in frame and the fused-pair shape is not readable"
     },
     {
      "title": "iNat obs 88594457 (Sequoiadendron giganteum)",
@@ -127829,8 +127859,8 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:Mariposa Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees)",
-     "judged": "approve",
-     "verdict": "viewed: BACHELOR AND THREE GRACES sign, four trunks fill frame; crowns cropped, the trunk group is the identity"
+     "judged": "hold",
+     "verdict": "identity certain (Bachelor and Three Graces sign, the Bachelor plus three close trunks), good light and landscape crop, but trunks only, no crown in frame"
     },
     {
      "title": "File:California Tunnel Tree.jpg",
@@ -127850,7 +127880,9 @@
      "author": "Steveshelokhonov",
      "lat": 37.504168,
      "lng": -119.600302,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Mariposa Grove Category:May 2022 in California Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Mariposa Grove Category:May 2022 in California Category:Self-published work",
+     "judged": "reject",
+     "verdict": "wrong tree for ynp_005: this is the California Tunnel Tree (walk-through tunnel), approved under ynp_002 instead"
     },
     {
      "title": "File:Yosemite National Park, Wawona area, Grizzly Giant (7889406484).jpg",

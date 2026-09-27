@@ -1,284 +1,284 @@
 {
- "city": "Fort Worth",
- "leads": [
-  {
-   "name": "Fraxinus texensis (Texas Big Tree Registry TreeID 19)",
-   "species": "Fraxinus texensis",
-   "lat": 32.76583333,
-   "lng": -97.32916667,
-   "status": "verified",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 1.2 km from the centre of Fort Worth. Condition per the registry: 3. Measured December 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 213,
-   "verified_as": "ftw_004",
-   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
-   "needs_verification": true
-  },
-  {
-   "name": "Prosopis glandulosa var. glandulosa (Texas Big Tree Registry TreeID 781)",
-   "species": "Prosopis glandulosa var. glandulosa",
-   "lat": 32.747,
-   "lng": -97.36611111,
-   "status": "verified",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 3.4 km from the centre of Fort Worth. Condition per the registry: 3. Measured June 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 478,
-   "verified_as": "ftw_003",
-   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
-   "needs_verification": true
-  },
-  {
-   "name": "Ziziphus zizyphus (Texas Big Tree Registry TreeID 436)",
-   "species": "Ziziphus zizyphus",
-   "lat": 32.73636111,
-   "lng": -97.36494444,
-   "status": "verified",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 3.8 km from the centre of Fort Worth. Condition per the registry: 2. Measured May 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 190,
-   "verified_as": "ftw_001",
-   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
-   "needs_verification": true
-  },
-  {
-   "name": "Ungnadia speciosa (Texas Big Tree Registry TreeID 782)",
-   "species": "Ungnadia speciosa",
-   "lat": 32.73536111,
-   "lng": -97.36555556,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 3.9 km from the centre of Fort Worth. Condition per the registry: 3. Measured August 2015. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 20,
-   "needs_verification": true
-  },
-  {
-   "name": "Quercus buckleyi (Texas Big Tree Registry TreeID 843)",
-   "species": "Quercus buckleyi",
-   "lat": 32.7175,
-   "lng": -97.34972222,
-   "status": "verified",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.6 km from the centre of Fort Worth. Condition per the registry: 2. Measured July 2026. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 622,
-   "verified_as": "ftw_002",
-   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
-   "needs_verification": true
-  },
-  {
-   "name": "Quercus macrocarpa (Texas Big Tree Registry TreeID 1131)",
-   "species": "Quercus macrocarpa",
-   "lat": 32.70527778,
-   "lng": -97.40388889,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 8.8 km from the centre of Fort Worth. Condition per the registry: 4. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 554,
-   "needs_verification": true
-  },
-  {
-   "name": "Quercus shumardii (Texas Big Tree Registry TreeID 2343)",
-   "species": "Quercus shumardii",
-   "lat": 32.7049,
-   "lng": -97.44973889,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 12.5 km from the centre of Fort Worth. Condition per the registry: 2. Measured June 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 447,
-   "needs_verification": true
-  },
-  {
-   "name": "Ilex vomitoria (Texas Big Tree Registry TreeID 102)",
-   "species": "Ilex vomitoria",
-   "lat": 32.83944444,
-   "lng": -97.23638889,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 12.8 km from the centre of Fort Worth. Condition per the registry: 2. Measured September 2007. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 76,
-   "needs_verification": true
-  },
-  {
-   "name": "Ulmus parviflora (Texas Big Tree Registry TreeID 1326)",
-   "species": "Ulmus parviflora",
-   "lat": 32.87083333,
-   "lng": -97.267,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 14.1 km from the centre of Fort Worth. Condition per the registry: 2. Measured June 2019. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 254,
-   "needs_verification": true
-  },
-  {
-   "name": "Ilex vomitoria (Texas Big Tree Registry TreeID 1247)",
-   "species": "Ilex vomitoria",
-   "lat": 32.69538889,
-   "lng": -97.17211111,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 16.3 km from the centre of Fort Worth. Condition per the registry: 2. Measured February 2017. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 99,
-   "needs_verification": true
-  },
-  {
-   "name": "Ulmus crassifolia (Texas Big Tree Registry TreeID 2371)",
-   "species": "Ulmus crassifolia",
-   "lat": 32.873,
-   "lng": -97.4355,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 16.3 km from the centre of Fort Worth. Condition per the registry: 2. Measured December 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 373,
-   "needs_verification": true
-  },
-  {
-   "name": "Pinus thunbergii (Texas Big Tree Registry TreeID 919)",
-   "species": "Pinus thunbergii",
-   "lat": 32.75708333,
-   "lng": -97.12405556,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 19.3 km from the centre of Fort Worth. Condition per the registry: 1. Measured April 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 221,
-   "needs_verification": true
-  },
-  {
-   "name": "Lagerstroemia indica (Texas Big Tree Registry TreeID 1279)",
-   "species": "Lagerstroemia indica",
-   "lat": 32.85641667,
-   "lng": -97.14091667,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 21.0 km from the centre of Fort Worth. Condition per the registry: 1. Measured January 2018. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 183,
-   "needs_verification": true
-  },
-  {
-   "name": "Lagerstroemia indica (Texas Big Tree Registry TreeID 4437)",
-   "species": "Lagerstroemia indica",
-   "lat": 32.87054,
-   "lng": -97.15218806,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 21.0 km from the centre of Fort Worth. Condition per the registry: 3. Measured May 2022. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 211,
-   "needs_verification": true
-  },
-  {
-   "name": "Ulmus americana (Texas Big Tree Registry TreeID 937)",
-   "species": "Ulmus americana",
-   "lat": 32.87583333,
-   "lng": -97.12869444,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 23.1 km from the centre of Fort Worth. Condition per the registry: 1. Measured July 2012. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 549,
-   "needs_verification": true
-  },
-  {
-   "name": "Quercus marilandica (Texas Big Tree Registry TreeID 1328)",
-   "species": "Quercus marilandica",
-   "lat": 32.89211,
-   "lng": -97.13616,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 23.7 km from the centre of Fort Worth. Condition per the registry: 2. Measured September 2019. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 236,
-   "needs_verification": true
-  },
-  {
-   "name": "Pinus elliottii var. elliottii (Texas Big Tree Registry TreeID 1093)",
-   "species": "Pinus elliottii var. elliottii",
-   "lat": 32.91347222,
-   "lng": -97.15883333,
-   "status": "lead",
-   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 23.8 km from the centre of Fort Worth. Condition per the registry: 2. Measured July 2012. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
-   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 251,
-   "needs_verification": true
-  },
-  {
-   "name": "Steel's Tavern Oaks",
-   "species": "Live Oak (Quercus virginiana or Quercus fusiformis, not yet settled)",
-   "reason": "Three live oaks on the bluff 50 yards northwest of the Tarrant County Courthouse, the only living things left from the 1849 army post that gave Fort Worth its name; they also mark the site of Steel's Tavern, the town's first hotel and stagecoach stop from 1855. A county historical marker stands with them. Ensemble of three at one standing point, so it plausibly passes the collectible-point test. Public ground downtown.",
-   "location": {
-    "latitude": 32.757786,
-    "longitude": -97.334709,
-    "address": "200 West Bluff Street, Fort Worth, TX"
-   },
-   "location_precision": "approximate",
-   "sources": [
-    "https://www.hmdb.org/m.asp?m=264184",
-    "https://www.carolynhestand.com/blog/steels-tavern-oaks",
-    "https://en.wikipedia.org/wiki/Heritage_Park_Plaza"
-   ],
-   "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/steels-tavern-oak/",
-   "status": "lead"
-  },
-  {
-   "name": "Traders Oak",
-   "species": "Texas Live Oak (Quercus fusiformis)",
-   "reason": "The live oak behind which traders Daggett and Leonard built their log store in 1849, a mile from the fort because army rules kept merchants that far off; it became the area's first lasting business, trading with Native visitors camped at the spring nearby. It now has a small city park named after it. Species as given by the finding aid, to be confirmed.",
-   "location": {
-    "latitude": 32.7745,
-    "longitude": -97.3315,
-    "address": "Traders Oak Park, 1206 Samuels Avenue, Fort Worth, TX 76102"
-   },
-   "location_precision": "approximate",
-   "sources": [
-    "https://www.fortworthtexas.gov/departments/parks/parks-and-trails/traders-oak-park",
-    "https://legendarytrees.com/trees/traders-oak/",
-    "https://arbormasters.com/traders-oak/",
-    "https://hometownbyhandlebar.com/p-1571/"
-   ],
-   "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/traders-oak/",
-   "status": "lead"
-  },
-  {
-   "name": "Turner Oak",
-   "species": "Live Oak (Quercus virginiana or Quercus fusiformis, not yet settled)",
-   "reason": "Pioneer Charles Turner, who opposed secession but refused to swap his savings for Confederate paper, buried his gold under this oak on his 1851 farm and dug it up after the Civil War to help the young town pay its debts. The farm is now Greenwood Memorial Park cemetery. Needs: a recent alive confirmation and the spot inside the cemetery; access line should state cemetery hours.",
-   "location": {
-    "latitude": 32.7617,
-    "longitude": -97.3661,
-    "address": "Greenwood Memorial Park, Fort Worth, TX"
-   },
-   "location_precision": "approximate",
-   "sources": [
-    "https://tuisnider.com/famous-texas-tree-the-turner-oak-in-fort-worth/",
-    "https://www.gatheringgrowth.org/trees-of-significance/turner-oak",
-    "https://www.waymarking.com/waymarks/WM62P2_Turner_Oak_Fort_Worth_Texas"
-   ],
-   "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/turner-oak/",
-   "status": "verified",
-   "verified_as": "ftw_005",
-   "note": "Verified this pass (2026-09-27), see data/research/texas-famous-verified.json. Alive confirmed via a dated 2025-03-18 waymarking.com visit log requiring an original on-site photo; exact spot settled as the traffic circle just past the Greenwood Memorial Park main entrance (3100 White Settlement Rd), GPS from the waymark."
-  }
- ],
- "blocked": [
-  {
-   "name": "Tannahill Oak",
-   "species": "Live Oak (Quercus sp.)",
-   "reason": "Private home. The oak stands on the drive of the 1874 Tannahill homestead (9741 Verna Drive North), a privately owned residence; no source says it is visible from public ground. Hard rule 10: somebody's home.",
-   "sources": [
-    "https://historicfortworth.org/emily-leonard-1874-robert-watt-tannahill-homestead-great-steward-award/"
-   ],
-   "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/tannahill-oak/",
-   "status": "blocked"
-  },
-  {
-   "name": "Parker Oaks",
-   "species": "Post Oak (Quercus stellata)",
-   "location": {
-    "latitude": 32.8095,
-    "longitude": -97.2041,
-    "address": "Post Oak-Parker Cemetery, 1301 Cardinal Lane, Hurst, TX 76053"
-   },
-   "sources": [
-    "https://legendarytrees.com/trees/parker-oaks/",
-    "https://www.tshaonline.org/handbook/entries/parker-isaac-duke",
-    "http://web.archive.org/web/20260608081949/https://www.hursttx.gov/about-us/departments/parks-recreation/parks/post-oak-parker-cemetery"
-   ],
-   "why_blocked": "NOT A COLLECTIBLE POINT (2026-09-27 verify pass). The cemetery is genuinely public (a City of Hurst park, officially named Post Oak-Parker Cemetery, designated a Historic Texas Cemetery in 2020, 1301 Cardinal Lane) and Isaac Duke Parker's biography checks out against TSHA, but the trees themselves are, in the nursery's own words, \"this stand of large post oaks\" surrounding the cemetery, and the city's own page calls it \"a good stand of trees, many of which are post oaks.\" Two historical markers on site (1968 \"Parker Cemetery\" and 1984 \"I.D. Parker Public Cemetery\") commemorate the CEMETERY, not any individual tree, and no source names, numbers or marks one specific specimen Cynthia Ann Parker is said to have sat beneath. A grove around a 2.4-acre cemetery with no single obvious place to stand fails the one-collectible-point rule (an avenue or a whole wood is blocked). Would need a source naming one specific tree (a plaque, a marker, a documented single specimen) to ever qualify; absent that it stays blocked rather than a lead, since the ensemble itself does not read as a compact, single-destination point."
-  }
- ]
+  "city": "Fort Worth",
+  "leads": [
+    {
+      "name": "Fraxinus texensis (Texas Big Tree Registry TreeID 19)",
+      "species": "Fraxinus texensis",
+      "lat": 32.76583333,
+      "lng": -97.32916667,
+      "status": "verified",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 1.2 km from the centre of Fort Worth. Condition per the registry: 3. Measured December 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 213,
+      "verified_as": "ftw_004",
+      "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
+      "needs_verification": true
+    },
+    {
+      "name": "Prosopis glandulosa var. glandulosa (Texas Big Tree Registry TreeID 781)",
+      "species": "Prosopis glandulosa var. glandulosa",
+      "lat": 32.747,
+      "lng": -97.36611111,
+      "status": "verified",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 3.4 km from the centre of Fort Worth. Condition per the registry: 3. Measured June 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 478,
+      "verified_as": "ftw_003",
+      "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
+      "needs_verification": true
+    },
+    {
+      "name": "Ziziphus zizyphus (Texas Big Tree Registry TreeID 436)",
+      "species": "Ziziphus zizyphus",
+      "lat": 32.73636111,
+      "lng": -97.36494444,
+      "status": "verified",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 3.8 km from the centre of Fort Worth. Condition per the registry: 2. Measured May 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 190,
+      "verified_as": "ftw_001",
+      "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
+      "needs_verification": true
+    },
+    {
+      "name": "Ungnadia speciosa (Texas Big Tree Registry TreeID 782)",
+      "species": "Ungnadia speciosa",
+      "lat": 32.73536111,
+      "lng": -97.36555556,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 3.9 km from the centre of Fort Worth. Condition per the registry: 3. Measured August 2015. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 20,
+      "needs_verification": true
+    },
+    {
+      "name": "Quercus buckleyi (Texas Big Tree Registry TreeID 843)",
+      "species": "Quercus buckleyi",
+      "lat": 32.7175,
+      "lng": -97.34972222,
+      "status": "verified",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.6 km from the centre of Fort Worth. Condition per the registry: 2. Measured July 2026. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 622,
+      "verified_as": "ftw_002",
+      "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
+      "needs_verification": true
+    },
+    {
+      "name": "Quercus macrocarpa (Texas Big Tree Registry TreeID 1131)",
+      "species": "Quercus macrocarpa",
+      "lat": 32.70527778,
+      "lng": -97.40388889,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 8.8 km from the centre of Fort Worth. Condition per the registry: 4. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 554,
+      "needs_verification": true
+    },
+    {
+      "name": "Quercus shumardii (Texas Big Tree Registry TreeID 2343)",
+      "species": "Quercus shumardii",
+      "lat": 32.7049,
+      "lng": -97.44973889,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 12.5 km from the centre of Fort Worth. Condition per the registry: 2. Measured June 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 447,
+      "needs_verification": true
+    },
+    {
+      "name": "Ilex vomitoria (Texas Big Tree Registry TreeID 102)",
+      "species": "Ilex vomitoria",
+      "lat": 32.83944444,
+      "lng": -97.23638889,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 12.8 km from the centre of Fort Worth. Condition per the registry: 2. Measured September 2007. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 76,
+      "needs_verification": true
+    },
+    {
+      "name": "Ulmus parviflora (Texas Big Tree Registry TreeID 1326)",
+      "species": "Ulmus parviflora",
+      "lat": 32.87083333,
+      "lng": -97.267,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 14.1 km from the centre of Fort Worth. Condition per the registry: 2. Measured June 2019. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 254,
+      "needs_verification": true
+    },
+    {
+      "name": "Ilex vomitoria (Texas Big Tree Registry TreeID 1247)",
+      "species": "Ilex vomitoria",
+      "lat": 32.69538889,
+      "lng": -97.17211111,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 16.3 km from the centre of Fort Worth. Condition per the registry: 2. Measured February 2017. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 99,
+      "needs_verification": true
+    },
+    {
+      "name": "Ulmus crassifolia (Texas Big Tree Registry TreeID 2371)",
+      "species": "Ulmus crassifolia",
+      "lat": 32.873,
+      "lng": -97.4355,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 16.3 km from the centre of Fort Worth. Condition per the registry: 2. Measured December 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 373,
+      "needs_verification": true
+    },
+    {
+      "name": "Pinus thunbergii (Texas Big Tree Registry TreeID 919)",
+      "species": "Pinus thunbergii",
+      "lat": 32.75708333,
+      "lng": -97.12405556,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 19.3 km from the centre of Fort Worth. Condition per the registry: 1. Measured April 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 221,
+      "needs_verification": true
+    },
+    {
+      "name": "Lagerstroemia indica (Texas Big Tree Registry TreeID 1279)",
+      "species": "Lagerstroemia indica",
+      "lat": 32.85641667,
+      "lng": -97.14091667,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 21.0 km from the centre of Fort Worth. Condition per the registry: 1. Measured January 2018. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 183,
+      "needs_verification": true
+    },
+    {
+      "name": "Lagerstroemia indica (Texas Big Tree Registry TreeID 4437)",
+      "species": "Lagerstroemia indica",
+      "lat": 32.87054,
+      "lng": -97.15218806,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 21.0 km from the centre of Fort Worth. Condition per the registry: 3. Measured May 2022. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 211,
+      "needs_verification": true
+    },
+    {
+      "name": "Ulmus americana (Texas Big Tree Registry TreeID 937)",
+      "species": "Ulmus americana",
+      "lat": 32.87583333,
+      "lng": -97.12869444,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 23.1 km from the centre of Fort Worth. Condition per the registry: 1. Measured July 2012. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 549,
+      "needs_verification": true
+    },
+    {
+      "name": "Quercus marilandica (Texas Big Tree Registry TreeID 1328)",
+      "species": "Quercus marilandica",
+      "lat": 32.89211,
+      "lng": -97.13616,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 23.7 km from the centre of Fort Worth. Condition per the registry: 2. Measured September 2019. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 236,
+      "needs_verification": true
+    },
+    {
+      "name": "Pinus elliottii var. elliottii (Texas Big Tree Registry TreeID 1093)",
+      "species": "Pinus elliottii var. elliottii",
+      "lat": 32.91347222,
+      "lng": -97.15883333,
+      "status": "lead",
+      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 23.8 km from the centre of Fort Worth. Condition per the registry: 2. Measured July 2012. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+      "girth_cm": 251,
+      "needs_verification": true
+    },
+    {
+      "name": "Steel's Tavern Oaks",
+      "species": "Live Oak (Quercus virginiana or Quercus fusiformis, not yet settled)",
+      "reason": "Three live oaks on the bluff 50 yards northwest of the Tarrant County Courthouse, the only living things left from the 1849 army post that gave Fort Worth its name; they also mark the site of Steel's Tavern, the town's first hotel and stagecoach stop from 1855. A county historical marker stands with them. Ensemble of three at one standing point, so it plausibly passes the collectible-point test. Public ground downtown.",
+      "location": {
+        "latitude": 32.757786,
+        "longitude": -97.334709,
+        "address": "200 West Bluff Street, Fort Worth, TX"
+      },
+      "location_precision": "approximate",
+      "sources": [
+        "https://www.hmdb.org/m.asp?m=264184",
+        "https://www.carolynhestand.com/blog/steels-tavern-oaks",
+        "https://en.wikipedia.org/wiki/Heritage_Park_Plaza"
+      ],
+      "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/steels-tavern-oak/",
+      "status": "lead"
+    },
+    {
+      "name": "Traders Oak",
+      "species": "Texas Live Oak (Quercus fusiformis)",
+      "reason": "The live oak behind which traders Daggett and Leonard built their log store in 1849, a mile from the fort because army rules kept merchants that far off; it became the area's first lasting business, trading with Native visitors camped at the spring nearby. It now has a small city park named after it. Species as given by the finding aid, to be confirmed.",
+      "location": {
+        "latitude": 32.7745,
+        "longitude": -97.3315,
+        "address": "Traders Oak Park, 1206 Samuels Avenue, Fort Worth, TX 76102"
+      },
+      "location_precision": "approximate",
+      "sources": [
+        "https://www.fortworthtexas.gov/departments/parks/parks-and-trails/traders-oak-park",
+        "https://legendarytrees.com/trees/traders-oak/",
+        "https://arbormasters.com/traders-oak/",
+        "https://hometownbyhandlebar.com/p-1571/"
+      ],
+      "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/traders-oak/",
+      "status": "lead"
+    },
+    {
+      "name": "Turner Oak",
+      "species": "Live Oak (Quercus virginiana or Quercus fusiformis, not yet settled)",
+      "reason": "Pioneer Charles Turner, who opposed secession but refused to swap his savings for Confederate paper, buried his gold under this oak on his 1851 farm and dug it up after the Civil War to help the young town pay its debts. The farm is now Greenwood Memorial Park cemetery. Needs: a recent alive confirmation and the spot inside the cemetery; access line should state cemetery hours.",
+      "location": {
+        "latitude": 32.7617,
+        "longitude": -97.3661,
+        "address": "Greenwood Memorial Park, Fort Worth, TX"
+      },
+      "location_precision": "approximate",
+      "sources": [
+        "https://tuisnider.com/famous-texas-tree-the-turner-oak-in-fort-worth/",
+        "https://www.gatheringgrowth.org/trees-of-significance/turner-oak",
+        "https://www.waymarking.com/waymarks/WM62P2_Turner_Oak_Fort_Worth_Texas"
+      ],
+      "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/turner-oak/",
+      "status": "published",
+      "verified_as": "ftw_005",
+      "note": "Verified this pass (2026-09-27), see data/research/texas-famous-verified.json. Alive confirmed via a dated 2025-03-18 waymarking.com visit log requiring an original on-site photo; exact spot settled as the traffic circle just past the Greenwood Memorial Park main entrance (3100 White Settlement Rd), GPS from the waymark."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Tannahill Oak",
+      "species": "Live Oak (Quercus sp.)",
+      "reason": "Private home. The oak stands on the drive of the 1874 Tannahill homestead (9741 Verna Drive North), a privately owned residence; no source says it is visible from public ground. Hard rule 10: somebody's home.",
+      "sources": [
+        "https://historicfortworth.org/emily-leonard-1874-robert-watt-tannahill-homestead-great-steward-award/"
+      ],
+      "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/tannahill-oak/",
+      "status": "blocked"
+    },
+    {
+      "name": "Parker Oaks",
+      "species": "Post Oak (Quercus stellata)",
+      "location": {
+        "latitude": 32.8095,
+        "longitude": -97.2041,
+        "address": "Post Oak-Parker Cemetery, 1301 Cardinal Lane, Hurst, TX 76053"
+      },
+      "sources": [
+        "https://legendarytrees.com/trees/parker-oaks/",
+        "https://www.tshaonline.org/handbook/entries/parker-isaac-duke",
+        "http://web.archive.org/web/20260608081949/https://www.hursttx.gov/about-us/departments/parks-recreation/parks/post-oak-parker-cemetery"
+      ],
+      "why_blocked": "NOT A COLLECTIBLE POINT (2026-09-27 verify pass). The cemetery is genuinely public (a City of Hurst park, officially named Post Oak-Parker Cemetery, designated a Historic Texas Cemetery in 2020, 1301 Cardinal Lane) and Isaac Duke Parker's biography checks out against TSHA, but the trees themselves are, in the nursery's own words, \"this stand of large post oaks\" surrounding the cemetery, and the city's own page calls it \"a good stand of trees, many of which are post oaks.\" Two historical markers on site (1968 \"Parker Cemetery\" and 1984 \"I.D. Parker Public Cemetery\") commemorate the CEMETERY, not any individual tree, and no source names, numbers or marks one specific specimen Cynthia Ann Parker is said to have sat beneath. A grove around a 2.4-acre cemetery with no single obvious place to stand fails the one-collectible-point rule (an avenue or a whole wood is blocked). Would need a source naming one specific tree (a plaque, a marker, a documented single specimen) to ever qualify; absent that it stays blocked rather than a lead, since the ensemble itself does not read as a compact, single-destination point."
+    }
+  ]
 }
