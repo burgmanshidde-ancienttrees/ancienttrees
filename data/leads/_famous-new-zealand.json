@@ -1,129 +1,133 @@
 {
- "country": "New Zealand",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Chook Tree",
-   "lat": -45.269088,
-   "lng": 170.799993,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Chook_Tree_(2025).jpg"
-   ],
-   "status": "held",
-   "species": "Monterey Cypress (Hesperocyparis macrocarpa / Cupressus macrocarpa)",
-   "reason": "VERIFIED 2026-09-27 but access is genuinely ambiguous, so held rather than published. Not the anonymous roadside tree the brief expected: it viewed the actual photo (a large macrocarpa storm-damaged in 1978 and pruned by local farmers Norman and Evelyn Clarke into the unmistakable shape of a giant hen, beside a plaster egg) and it turns out to be a real find, winner of the 2025 NZ Tree of the Year (NZ Notable Trees Trust / Tree of the Year NZ, sponsored by the NZ Arboricultural Association, https://www.treeoftheyear.co.nz/2025-winner), covered by Scoop, the Otago Daily Times and waitakiapp.nz, and registered on the NZ Tree Register as OR/0578 (species Cupressus macrocarpa, height 6.60m, girth 217cm at 0.2m, coords -45.26896885653993,170.80032885074615, matching this lead closely). Two sources easily clear the bar and the Tree of the Year win is exactly the kind of third-party 'worth the visit' validation this project values most. BUT the Tree Register's own entry calls the setting 'Rural-Residential' with 'public accessibility appears limited' and names it private property on the front lawn of a working farm, '2507 Herbert-Hampden Road, Waianakarua' ('The Five A's'). Every press source describes it delighting 'passersby' for 50 years, which suggests real roadside visibility, but none of them states in so many words that the public may view it from the road without entering the property, and hard rule 10 treats a front garden/private home as not bending 'whatever the register says and however fine the tree'. Needs one of: an OSM/Street View check confirming the tree stands visibly at the road frontage rather than set back, or a source explicitly saying it is viewable from Herbert-Hampden Road. Age not recorded (only ~48 years since the 1978 storm shaping, so this would ship on spectacle/fame grounds, not age, which the research bar allows). Worth a short access-only follow-up pass rather than a full re-research."
-  },
-  {
-   "name": "Four Sisters",
-   "lat": -35.600215,
-   "lng": 173.527213,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:00_29_0506_Neuseeland_-_Kari_trees_For_Sisters.jpg",
-    "https://commons.wikimedia.org/wiki/File:00_29_0508_Neuseeland_-_Kauri-B%C3%A4ume_Four_Sisters.jpg",
-    "https://commons.wikimedia.org/wiki/File:Agathis_australis_Four_Sisters.jpg"
-   ],
-   "status": "blocked",
-   "blocked_reason": "CHECKED 2026-09-27: the walk to the Four Sisters kauri grove has been closed since 2019 for kauri dieback biosecurity (RNZ, 'Kauri dieback prompts Four Sisters track closure in Waipoua', and NZ Herald coverage of the same closure), and our own published Waipoua Forest page (wai_001/wai_002) already says so in its own question_answer/faq. DOC's March 2026 media release ('Waipoua Forest embarks on bold Kauri Walks expansion') says the closure runs through a rebuild including a 1.5km boardwalk, with reopening expected October 2026, i.e. after this pass's date (2026-09-27) but imminent. Fails hard rule 10's access test right now: nobody can walk to it without breaching a closed track. Would otherwise clearly qualify as a wai_003 addition to the already-published Waipoua Forest place (0.5km from wai_001/wai_002, four kauri trunks forming one named grove/stop, genuinely a single collectible point) the moment it reopens. RECHECK after October 2026 rather than re-researching from scratch; the facts above (four trunks, one grove, DOC-built new boardwalk) should still hold."
-  },
-  {
-   "name": "Harvey Tree",
-   "lat": -36.848306,
-   "lng": 174.763564,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:The_Harvey_Tree,_Auckland_PA01.jpg",
-    "https://commons.wikimedia.org/wiki/File:The_Harvey_Tree,_Auckland_PA02.jpg",
-    "https://commons.wikimedia.org/wiki/File:The_Harvey_Tree,_Auckland_PA03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "McKinney Kauri",
-   "lat": -36.416474,
-   "lng": 174.669271,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:McKinneyKauri.jpg",
-    "https://commons.wikimedia.org/wiki/File:McKinney_Kauri.jpg",
-    "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_McKinney_kauri_tree-2.jpg"
-   ],
-   "status": "verified",
-   "species": "Kauri (Agathis australis)",
-   "reason": "VERIFIED 2026-09-27, delivered to data/research/_famous-new-zealand-verified.json as pky_001. Two sources (matakanacoast.co.nz, warkworthmuseum.co.nz, corroborated by outdooractive.com), ~800 years, girth 7.62m, billed as the largest kauri on NZ's east coast. Ships together with Simpson Kauri as Parry Kauri Park, a two-tree own place under the single-famous-tree exception (same shape as the already-published Waipoua Forest, which also ships at 2 trees)."
-  },
-  {
-   "name": "Moko (Tree)",
-   "lat": -41.265943,
-   "lng": 174.752483,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:800_year_old_rimu_(6706301087).jpg",
-    "https://commons.wikimedia.org/wiki/File:800_year_old_rimu_(6709283021).jpg",
-    "https://commons.wikimedia.org/wiki/File:Rimu_Trees,_NZ_(52289339584).jpg"
-   ],
-   "status": "verified",
-   "species": "Rimu (Dacrydium cupressinum)",
-   "reason": "VERIFIED 2026-09-27, delivered to data/research/_famous-new-zealand-verified.json as mko_001. Wellington City Council's own news pages plus NZ Herald and Wikidata/NZ Tree Register confirm: te reo name gifted by local iwi July 2021, ~800 years old, 27.3m tall, standing in the free public Otari-Wilton's Bush botanic garden, 2024 NZ Tree of the Year finalist. Own place, nearest published tree 306km away."
-  },
-  {
-   "name": "Old Albert",
-   "lat": -36.831093,
-   "lng": 174.797897,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Old_Abert_from_N.jpg",
-    "https://commons.wikimedia.org/wiki/File:Old_Abert_from_N_(upward_view).jpg",
-    "https://commons.wikimedia.org/wiki/File:Old_Abert_from_W.jpg"
-   ],
-   "status": "published",
-   "tree_id": "akl_001",
-   "reason": "RESOLVED 2026-09-26: already live as akl_001 (Old Albert) in data/cities/auckland.json, coordinates match to within 3 metres (-36.8311084605075,174.79785561561584 vs this lead's -36.831093,174.797897). This IS the same tree, not a fresh candidate."
-  },
-  {
-   "name": "Simpson Kauri",
-   "lat": -36.4164463,
-   "lng": 174.669443,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Plaque_of_the_Simpson_kauri_tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Simpson_kauri_tree-2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Simpson_kauri_tree.jpg"
-   ],
-   "status": "verified",
-   "species": "Kauri (Agathis australis)",
-   "reason": "VERIFIED 2026-09-27, delivered to data/research/_famous-new-zealand-verified.json as pky_002. On-site bronze plaque (viewed directly) gives centre girth 5.79m, age 600 years; corroborated by matakanacoast.co.nz and Tripadvisor as the second of the two named kauri at the park entrance, beside McKinney. Ships together with McKinney Kauri as Parry Kauri Park."
-  },
-  {
-   "name": "Square Kauri",
-   "lat": -36.99027778,
-   "lng": 175.57258333,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:NZ_square_kauri_NI.jpg",
-    "https://commons.wikimedia.org/wiki/File:Square_Kauri_trunk_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Square_Kauri_trunk_2.jpg"
-   ],
-   "status": "verified",
-   "species": "Kauri (Agathis australis)",
-   "reason": "VERIFIED 2026-09-27, delivered to data/research/_famous-new-zealand-verified.json as sqk_001. Wikipedia + DOC (coordinates match to within a few metres), ~1,200 years old (source's own estimate), girth 8.76m, height 41.15m (monumentaltrees.com cross-check). DOC-maintained track off the public Tapu-Coroglen Road, its own place (nearest published tree 72.6km away)."
-  },
-  {
-   "name": "Tane Mahuta",
-   "lat": -35.607347,
-   "lng": 173.522014,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%22Tane_Mahuta%22_(Maori)_-_Lord_of_the_Forest.jpg",
-    "https://commons.wikimedia.org/wiki/File:%27Lord_of_the_Forest%27_Tane_Mahuta.jpg",
-    "https://commons.wikimedia.org/wiki/File:00_29_0496_Waipoua_Forest_NZ_-_Kauri_Baum_Tane_Mahuta.jpg"
-   ],
-   "status": "published",
-   "tree_id": "wai_001"
-  },
-  {
-   "name": "Te Matua Ngahere",
-   "lat": -35.60725,
-   "lng": 173.52897222,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%27Father_of_the_Forest%27_Te_Matua_Ngahere.jpg",
-    "https://commons.wikimedia.org/wiki/File:%27Te_Matua_Ngahere%27_Kauri_tree_(AM_82341-1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Agathis_australis_Te_Matua_Ngahere1.jpg"
-   ],
-   "status": "published",
-   "tree_id": "wai_002"
-  }
- ]
+  "country": "New Zealand",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Chook Tree",
+      "lat": -45.269088,
+      "lng": 170.799993,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Chook_Tree_(2025).jpg"
+      ],
+      "status": "held",
+      "species": "Monterey Cypress (Hesperocyparis macrocarpa / Cupressus macrocarpa)",
+      "reason": "VERIFIED 2026-09-27 but access is genuinely ambiguous, so held rather than published. Not the anonymous roadside tree the brief expected: it viewed the actual photo (a large macrocarpa storm-damaged in 1978 and pruned by local farmers Norman and Evelyn Clarke into the unmistakable shape of a giant hen, beside a plaster egg) and it turns out to be a real find, winner of the 2025 NZ Tree of the Year (NZ Notable Trees Trust / Tree of the Year NZ, sponsored by the NZ Arboricultural Association, https://www.treeoftheyear.co.nz/2025-winner), covered by Scoop, the Otago Daily Times and waitakiapp.nz, and registered on the NZ Tree Register as OR/0578 (species Cupressus macrocarpa, height 6.60m, girth 217cm at 0.2m, coords -45.26896885653993,170.80032885074615, matching this lead closely). Two sources easily clear the bar and the Tree of the Year win is exactly the kind of third-party 'worth the visit' validation this project values most. BUT the Tree Register's own entry calls the setting 'Rural-Residential' with 'public accessibility appears limited' and names it private property on the front lawn of a working farm, '2507 Herbert-Hampden Road, Waianakarua' ('The Five A's'). Every press source describes it delighting 'passersby' for 50 years, which suggests real roadside visibility, but none of them states in so many words that the public may view it from the road without entering the property, and hard rule 10 treats a front garden/private home as not bending 'whatever the register says and however fine the tree'. Needs one of: an OSM/Street View check confirming the tree stands visibly at the road frontage rather than set back, or a source explicitly saying it is viewable from Herbert-Hampden Road. Age not recorded (only ~48 years since the 1978 storm shaping, so this would ship on spectacle/fame grounds, not age, which the research bar allows). Worth a short access-only follow-up pass rather than a full re-research."
+    },
+    {
+      "name": "Four Sisters",
+      "lat": -35.600215,
+      "lng": 173.527213,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:00_29_0506_Neuseeland_-_Kari_trees_For_Sisters.jpg",
+        "https://commons.wikimedia.org/wiki/File:00_29_0508_Neuseeland_-_Kauri-B%C3%A4ume_Four_Sisters.jpg",
+        "https://commons.wikimedia.org/wiki/File:Agathis_australis_Four_Sisters.jpg"
+      ],
+      "status": "blocked",
+      "blocked_reason": "CHECKED 2026-09-27: the walk to the Four Sisters kauri grove has been closed since 2019 for kauri dieback biosecurity (RNZ, 'Kauri dieback prompts Four Sisters track closure in Waipoua', and NZ Herald coverage of the same closure), and our own published Waipoua Forest page (wai_001/wai_002) already says so in its own question_answer/faq. DOC's March 2026 media release ('Waipoua Forest embarks on bold Kauri Walks expansion') says the closure runs through a rebuild including a 1.5km boardwalk, with reopening expected October 2026, i.e. after this pass's date (2026-09-27) but imminent. Fails hard rule 10's access test right now: nobody can walk to it without breaching a closed track. Would otherwise clearly qualify as a wai_003 addition to the already-published Waipoua Forest place (0.5km from wai_001/wai_002, four kauri trunks forming one named grove/stop, genuinely a single collectible point) the moment it reopens. RECHECK after October 2026 rather than re-researching from scratch; the facts above (four trunks, one grove, DOC-built new boardwalk) should still hold."
+    },
+    {
+      "name": "Harvey Tree",
+      "lat": -36.848306,
+      "lng": 174.763564,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:The_Harvey_Tree,_Auckland_PA01.jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Harvey_Tree,_Auckland_PA02.jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Harvey_Tree,_Auckland_PA03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "McKinney Kauri",
+      "lat": -36.416474,
+      "lng": 174.669271,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:McKinneyKauri.jpg",
+        "https://commons.wikimedia.org/wiki/File:McKinney_Kauri.jpg",
+        "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_McKinney_kauri_tree-2.jpg"
+      ],
+      "status": "published",
+      "species": "Kauri (Agathis australis)",
+      "reason": "VERIFIED 2026-09-27, delivered to data/research/_famous-new-zealand-verified.json as pky_001. Two sources (matakanacoast.co.nz, warkworthmuseum.co.nz, corroborated by outdooractive.com), ~800 years, girth 7.62m, billed as the largest kauri on NZ's east coast. Ships together with Simpson Kauri as Parry Kauri Park, a two-tree own place under the single-famous-tree exception (same shape as the already-published Waipoua Forest, which also ships at 2 trees).",
+      "tree_id": "pky_001"
+    },
+    {
+      "name": "Moko (Tree)",
+      "lat": -41.265943,
+      "lng": 174.752483,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:800_year_old_rimu_(6706301087).jpg",
+        "https://commons.wikimedia.org/wiki/File:800_year_old_rimu_(6709283021).jpg",
+        "https://commons.wikimedia.org/wiki/File:Rimu_Trees,_NZ_(52289339584).jpg"
+      ],
+      "status": "published",
+      "species": "Rimu (Dacrydium cupressinum)",
+      "reason": "VERIFIED 2026-09-27, delivered to data/research/_famous-new-zealand-verified.json as mko_001. Wellington City Council's own news pages plus NZ Herald and Wikidata/NZ Tree Register confirm: te reo name gifted by local iwi July 2021, ~800 years old, 27.3m tall, standing in the free public Otari-Wilton's Bush botanic garden, 2024 NZ Tree of the Year finalist. Own place, nearest published tree 306km away.",
+      "tree_id": "mko_001"
+    },
+    {
+      "name": "Old Albert",
+      "lat": -36.831093,
+      "lng": 174.797897,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Old_Abert_from_N.jpg",
+        "https://commons.wikimedia.org/wiki/File:Old_Abert_from_N_(upward_view).jpg",
+        "https://commons.wikimedia.org/wiki/File:Old_Abert_from_W.jpg"
+      ],
+      "status": "published",
+      "tree_id": "akl_001",
+      "reason": "RESOLVED 2026-09-26: already live as akl_001 (Old Albert) in data/cities/auckland.json, coordinates match to within 3 metres (-36.8311084605075,174.79785561561584 vs this lead's -36.831093,174.797897). This IS the same tree, not a fresh candidate."
+    },
+    {
+      "name": "Simpson Kauri",
+      "lat": -36.4164463,
+      "lng": 174.669443,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Plaque_of_the_Simpson_kauri_tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Simpson_kauri_tree-2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Simpson_kauri_tree.jpg"
+      ],
+      "status": "published",
+      "species": "Kauri (Agathis australis)",
+      "reason": "VERIFIED 2026-09-27, delivered to data/research/_famous-new-zealand-verified.json as pky_002. On-site bronze plaque (viewed directly) gives centre girth 5.79m, age 600 years; corroborated by matakanacoast.co.nz and Tripadvisor as the second of the two named kauri at the park entrance, beside McKinney. Ships together with McKinney Kauri as Parry Kauri Park.",
+      "tree_id": "pky_002"
+    },
+    {
+      "name": "Square Kauri",
+      "lat": -36.99027778,
+      "lng": 175.57258333,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:NZ_square_kauri_NI.jpg",
+        "https://commons.wikimedia.org/wiki/File:Square_Kauri_trunk_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Square_Kauri_trunk_2.jpg"
+      ],
+      "status": "published",
+      "species": "Kauri (Agathis australis)",
+      "reason": "VERIFIED 2026-09-27, delivered to data/research/_famous-new-zealand-verified.json as sqk_001. Wikipedia + DOC (coordinates match to within a few metres), ~1,200 years old (source's own estimate), girth 8.76m, height 41.15m (monumentaltrees.com cross-check). DOC-maintained track off the public Tapu-Coroglen Road, its own place (nearest published tree 72.6km away).",
+      "tree_id": "sqk_001"
+    },
+    {
+      "name": "Tane Mahuta",
+      "lat": -35.607347,
+      "lng": 173.522014,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%22Tane_Mahuta%22_(Maori)_-_Lord_of_the_Forest.jpg",
+        "https://commons.wikimedia.org/wiki/File:%27Lord_of_the_Forest%27_Tane_Mahuta.jpg",
+        "https://commons.wikimedia.org/wiki/File:00_29_0496_Waipoua_Forest_NZ_-_Kauri_Baum_Tane_Mahuta.jpg"
+      ],
+      "status": "published",
+      "tree_id": "wai_001"
+    },
+    {
+      "name": "Te Matua Ngahere",
+      "lat": -35.60725,
+      "lng": 173.52897222,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%27Father_of_the_Forest%27_Te_Matua_Ngahere.jpg",
+        "https://commons.wikimedia.org/wiki/File:%27Te_Matua_Ngahere%27_Kauri_tree_(AM_82341-1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Agathis_australis_Te_Matua_Ngahere1.jpg"
+      ],
+      "status": "published",
+      "tree_id": "wai_002"
+    }
+  ]
 }
