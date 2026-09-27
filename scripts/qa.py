@@ -617,8 +617,14 @@ def check_photo_resolution():
                 soft += 1
         hero = next((t for t in doc.get("trees", [])
                      if hero_id and t.get("id") == hero_id), None)
-        hero_w = ((hero or {}).get("photo") or {}).get("width") or 0
-        if hero and hero_w and hero_w < MIN_CARD:
+        hero_photo = (hero or {}).get("photo") or {}
+        hero_w = hero_photo.get("width") or 0
+        # A photo not "approved" (e.g. "held") never renders, per images.ts's
+        # usablePhoto(): the real face-picking logic falls through to another
+        # tree's photo, so grading this hero's width grades a photo the site
+        # never shows. Caught 2026-09-27 on New Orleans: a viewing pass set
+        # nol_001's status to "held" and this check fired on its old width.
+        if hero and hero_w and hero_photo.get("status") == "approved" and hero_w < MIN_CARD:
             better = max((((t.get("photo") or {}).get("width") or 0)
                           for t in doc.get("trees", [])), default=0)
             if better >= MIN_CARD:
