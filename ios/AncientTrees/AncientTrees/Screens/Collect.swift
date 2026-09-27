@@ -37,6 +37,7 @@ struct CollectView: View {
     @Environment(Account.self) private var account
     @Environment(Sightings.self) private var sightings
     @Environment(Navigator.self) private var navigator
+    @Environment(\.floatingBarDepth) private var barDepth
 
     @State private var signingIn = false
     @State private var showAllStamps = false
@@ -609,6 +610,15 @@ struct CollectView: View {
     /// The reader is the subject, the method is joined with "by", and the
     /// second sentence names who keeps the thing rather than leaving it in the
     /// passive. What somebody gets comes first; what we need from them second.
+    ///
+    /// BOTTOM PADDING EQUAL TO THE FLOATING TAB BAR (REVIEW.md 2026-09-26): the
+    /// sheet's own room-for-the-bar trick only applies `contentMargins` to
+    /// SCROLLING content (BottomSheet.swift), and scrolling is disabled below
+    /// full height. This lane is static, finite text with nothing to scroll to,
+    /// so at less-than-full height its last line landed in the same band the
+    /// tab bar floats over and got covered, with no gesture that reveals it.
+    /// Reserving the bar's own depth here, rather than relying on the sheet, is
+    /// what makes it visible at every height instead of only at full.
     @ViewBuilder private var signedOutLane: some View {
         VStack(alignment: .leading, spacing: 14) {
             Text(lane == .want
@@ -633,6 +643,7 @@ struct CollectView: View {
             .accessibilityIdentifier("lane-signin")
         }
         .padding(.top, 4)
+        .padding(.bottom, barDepth)
     }
 
     // MARK: - the score

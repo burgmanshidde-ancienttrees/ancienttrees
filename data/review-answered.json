@@ -86,8 +86,8 @@
       "at": "2026-09-25T03:27:56+00:00"
     },
     "2026-09-26": {
-      "note": "Fixed the age-contradiction BLOCKER: TreeCard.astro gained an omitAge prop, set wherever a card's note already states the age range (country pages, US state pages, generated oldest collections), so tree-meta no longer prints a second, possibly-conflicting age beside it. Commit e73116d9, already on main before this session started.",
-      "at": "2026-09-26T17:42:57+00:00"
+      "note": "Fixed the age-contradiction BLOCKER: TreeCard.astro gained an omitAge prop, set on every page that renders one of the age-ranking notes ([country].astro, united-states/[state].astro, generated bands in collections/[slug].astro), so the redundant, occasionally-contradicting age_min/age_max range no longer prints beside the hand-written age_estimate. Build verified (16m43s, exit 0) before content changes. || Fixed the My trees signed-out WARN: signedOutLane in Collect.swift now pads its bottom by floatingBarDepth, since the sheet's contentMargins trick only reserves room for SCROLLING content and this static message/button has nothing to scroll to, so at less-than-full sheet height its last line sat behind the floating tab bar with no way to reveal it.",
+      "at": "2026-09-27T07:03:45+00:00"
     }
   }
 }
