@@ -19251,6 +19251,19 @@
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/94359914@N06\">John Brighenti</a> from Rockvi",
      "judged": "rejected: deliberate blue-hour silhouette, per the file's own categories, not daylight",
      "judged_date": "2026-08-08"
+    },
+    {
+     "title": "NPS gallery 756ED568-9C51-4039-BE9F-100F6B60C884",
+     "thumb": "https://www.nps.gov/npgallery/GetAsset/756ED568-9C51-4039-BE9F-100F6B60C884",
+     "url": "https://www.nps.gov/media/photo/gallery-item.htm?pg=1&id=756ED568-9C51-4039-BE9F-100F6B60C884&gid=47134FE3-7219-47C7-B9F2-C3E94BB36075",
+     "licence": "Public domain (NPS gallery usage constraint field, granting rights: Full)",
+     "author": "NPS / Malik Robinson",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal",
+     "judged": "reject",
+     "verdict": "2018 photo, before the May 2019 fall and propping the story describes"
     }
    ],
    "exhausted": "2026-08-08: the only two photographs of this mulberry anywhere open are both by the same photographer and both after dark."
@@ -60025,7 +60038,47 @@
    "name": "Pando",
    "checked": "2026-09-01",
    "sweep": 5,
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:20191007-FS-Fishlake-JZ-006 (48875693961).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/20191007-FS-Fishlake-JZ-006_%2848875693961%29.jpg/960px-20191007-FS-Fishlake-JZ-006_%2848875693961%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20191007-FS-Fishlake-JZ-006_(48875693961).jpg",
+     "licence": "Public domain ({{PD-USGov-USDA-FS}} on Commons; Flickr USFS Intermountain Region)",
+     "author": "USFS photo by John Zapell",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal",
+     "judged": "reject",
+     "verdict": "leaf close-up"
+    },
+    {
+     "title": "File:121003-FS-Fishlake-JZ-001 (45410482591).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/121003-FS-Fishlake-JZ-001_%2845410482591%29.jpg/960px-121003-FS-Fishlake-JZ-001_%2845410482591%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:121003-FS-Fishlake-JZ-001_(45410482591).jpg",
+     "licence": "Public domain ({{PD-USGov-USDA-FS}} on Commons; Flickr USFS Intermountain Region)",
+     "author": "Forest Service photo by John Zapell",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal",
+     "judged": "approve",
+     "verdict": "viewed: USFS caption names Pando; aspen stand in fall colour, trunks and crowns, daylight"
+    },
+    {
+     "title": "File:Entering the Pando aspen clone.png",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Entering_the_Pando_aspen_clone.png/960px-Entering_the_Pando_aspen_clone.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Entering_the_Pando_aspen_clone.png",
+     "licence": "Public domain ({{PD-USGov}} on Commons)",
+     "author": "United States Forest Service",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal",
+     "judged": "reject",
+     "verdict": "a sign graphic, not a photograph"
+    }
+   ]
   },
   "ftw_001": {
    "city": "Fort Worth",
@@ -62870,7 +62923,34 @@
    "name": "The Sam Houston Oak",
    "checked": "2026-09-01",
    "sweep": 5,
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:The Sam Houston Oak in Gonzales, Texas, where, in 1836, Sam Houston and several citizen-soldiers temporarily fleeing the superior Mexican forces after the fall of the Alamo in San Antonio, spent a LCCN2014632785.tif",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/The_Sam_Houston_Oak_in_Gonzales%2C_Texas%2C_where%2C_in_1836%2C_Sam_Houston_and_several_citizen-soldiers_temporarily_fleeing_the_superior_Mexican_forces_after_the_fall_of_the_Alamo_in_San_Antonio%2C_spent_a_LCCN2014632785.tif/lossy-page1-960px-thumbnail.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_Sam_Houston_Oak_in_Gonzales,_Texas,_where,_in_1836,_Sam_Houston_and_several_citizen-soldiers_temporarily_fleeing_the_superior_Mexican_forces_after_the_fall_of_the_Alamo_in_San_Antonio,_spent_a_LCCN2014632785.tif",
+     "licence": "Public domain ({{PD-Highsmith}} on Commons; Library of Congress: no known restrictions, Highsmith Archive donated to the public)",
+     "author": "Carol M. Highsmith, Library of Congress Prints and Photographs Division (LCCN 2014632785)",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal",
+     "judged": "hold",
+     "verdict": "passes Cadiz and names the tree, but the original is a TIFF the site passes through unresized; needs a vendored JPEG first"
+    },
+    {
+     "title": "File:The Sam Houston Oak in Gonzales, Texas, where, in 1836, Sam Houston and several citizen-soldiers temporarily fleeing the superior Mexican forces after the fall of the Alamo in San Antonio, spent a LCCN2014632784.tif",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/The_Sam_Houston_Oak_in_Gonzales%2C_Texas%2C_where%2C_in_1836%2C_Sam_Houston_and_several_citizen-soldiers_temporarily_fleeing_the_superior_Mexican_forces_after_the_fall_of_the_Alamo_in_San_Antonio%2C_spent_a_LCCN2014632784.tif/lossy-page1-960px-thumbnail.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:The_Sam_Houston_Oak_in_Gonzales,_Texas,_where,_in_1836,_Sam_Houston_and_several_citizen-soldiers_temporarily_fleeing_the_superior_Mexican_forces_after_the_fall_of_the_Alamo_in_San_Antonio,_spent_a_LCCN2014632784.tif",
+     "licence": "Public domain ({{PD-Highsmith}} on Commons; Library of Congress: no known restrictions)",
+     "author": "Carol M. Highsmith, Library of Congress Prints and Photographs Division (LCCN 2014632784)",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal",
+     "judged": "reject",
+     "verdict": "second frame of the approved tree, less clear"
+    }
+   ]
   },
   "hil_001": {
    "city": "Hilversum",
@@ -64714,7 +64794,9 @@
      "author": "Mrs bltd",
      "lat": 29.985456,
      "lng": -90.096756,
-     "cats": "Category:2018 in City Park, New Orleans Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Louisiana Category:Images from Wiki Loves Monuments 2018 in the United States Category:Images from Wiki Loves Monuments 2018 in the United States missing state categorization Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Playgrounds in New Orleans Category:Self-published work Category:September 2018 in New Orleans Category:Trees in City Park, New Orleans Category:United States photographs taken on 2018-09-26 Category:Uploaded via Campaign:wlm-us-other Category:Wiki Loves Monuments 2018 in the United States unreviewed"
+     "cats": "Category:2018 in City Park, New Orleans Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Louisiana Category:Images from Wiki Loves Monuments 2018 in the United States Category:Images from Wiki Loves Monuments 2018 in the United States missing state categorization Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Playgrounds in New Orleans Category:Self-published work Category:September 2018 in New Orleans Category:Trees in City Park, New Orleans Category:United States photographs taken on 2018-09-26 Category:Uploaded via Campaign:wlm-us-other Category:Wiki Loves Monuments 2018 in the United States unreviewed",
+     "judged": "reject",
+     "verdict": "playground scene, tree incidental"
     },
     {
      "title": "File:Spanish Moss on trees in New Orleans City Park.jpg",
@@ -64724,7 +64806,9 @@
      "author": "Mrs bltd",
      "lat": 29.985292,
      "lng": -90.096878,
-     "cats": "Category:2018 in City Park, New Orleans Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Louisiana Category:Images from Wiki Loves Monuments 2018 in the United States Category:Images from Wiki Loves Monuments 2018 in the United States missing state categorization Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Trees in City Park, New Orleans Category:United States photographs taken on 2018-09-26 Category:Uploaded via Campaign:wlm-us-other Category:Wiki Loves Monuments 2018 in the United States unreviewed"
+     "cats": "Category:2018 in City Park, New Orleans Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Louisiana Category:Images from Wiki Loves Monuments 2018 in the United States Category:Images from Wiki Loves Monuments 2018 in the United States missing state categorization Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Trees in City Park, New Orleans Category:United States photographs taken on 2018-09-26 Category:Uploaded via Campaign:wlm-us-other Category:Wiki Loves Monuments 2018 in the United States unreviewed",
+     "judged": "reject",
+     "verdict": "generic City Park oak 222 m from pin, no crutches"
     },
     {
      "title": "File:Statue of John Mcdonogh by Aziz Hogue.jpg",
@@ -64734,7 +64818,9 @@
      "author": "Thenoirroze",
      "lat": 29.94840278,
      "lng": -90.07083889,
-     "cats": "Category:CC-BY-SA-4.0 Category:February 2021 in New Orleans Central Business District Category:Files with coordinates missing SDC location of creation Category:McDonough Memorial, New Orleans Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:February 2021 in New Orleans Central Business District Category:Files with coordinates missing SDC location of creation Category:McDonough Memorial, New Orleans Category:Self-published work",
+     "judged": "reject",
+     "verdict": "statue of John McDonogh, not the tree"
     },
     {
      "title": "iNat obs 114340341 (Quercus virginiana)",
@@ -64743,7 +64829,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Tres Fisher, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "29.9841404055,-90.0950482675"
+     "obs_location": "29.9841404055,-90.0950482675",
+     "judged": "hold",
+     "verdict": "huge hollow live oak but no geotag or crutches; cannot tell it is the McDonogh Oak"
     }
    ]
   },
@@ -124925,7 +125013,9 @@
      "author": "Marty Aligata",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:General Grant Tree Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:General Grant Tree Category:Self-published work",
+     "judged": "approve",
+     "verdict": "viewed: whole tree in leaf, GENERAL GRANT sign at base, sequoia bark and buttressed base, daylight"
     },
     {
      "title": "iNat obs 145363272 (Sequoiadendron giganteum)",
@@ -124980,6 +125070,39 @@
      "author": "(c) carbapple, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "36.7486647222,-118.9718988889"
+    },
+    {
+     "title": "NPS gallery 2575FFCA-2801-480E-BA27-85F80CA84B5A",
+     "thumb": "https://www.nps.gov/npgallery/GetAsset/2575FFCA-2801-480E-BA27-85F80CA84B5A",
+     "url": "https://www.nps.gov/media/photo/gallery-item.htm?pg=1&id=2575FFCA-2801-480E-BA27-85F80CA84B5A&gid=2CDC85DF-EBE0-4B25-84C3-9DC95FABF4F0",
+     "licence": "Public domain (NPS gallery usage constraint field, granting rights: Full)",
+     "author": "Elizabeth Wu, National Park Service",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal"
+    },
+    {
+     "title": "NPS gallery 1FCEC879-155D-4519-3E16-DE082449ED40",
+     "thumb": "https://www.nps.gov/npgallery/GetAsset/1FCEC879-155D-4519-3E16-DE082449ED40",
+     "url": "https://www.nps.gov/media/photo/gallery-item.htm?pg=1&id=1FCEC879-155D-4519-3E16-DE082449ED40&gid=1FCEC84C-155D-4519-3E7B-0E7D58CE845A",
+     "licence": "Public domain (NPS gallery usage constraint field, granting rights: Unknown)",
+     "author": "National Park Service (SEKI gallery, no individual credit)",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal"
+    },
+    {
+     "title": "File:Sequoia Grant.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Sequoia_Grant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Sequoia_Grant.jpg",
+     "licence": "Public domain ({{PD-USGov-NPS}} on Commons)",
+     "author": "United States National Park Service",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal"
     }
    ]
   },
@@ -124997,7 +125120,9 @@
      "author": "Famartin",
      "lat": 36.74783333,
      "lng": -118.97116667,
-     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20"
+     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "File:2013-09-20 09 33 57 General Grant Tree.JPG",
@@ -125007,7 +125132,9 @@
      "author": "Famartin",
      "lat": 36.748,
      "lng": -118.97133333,
-     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20"
+     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "File:2013-09-20 09 35 21 General Grant Tree.JPG",
@@ -125017,7 +125144,9 @@
      "author": "Famartin",
      "lat": 36.748,
      "lng": -118.97133333,
-     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20"
+     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "File:2013-09-20 09 36 03 General Grant Tree.JPG",
@@ -125027,7 +125156,9 @@
      "author": "Famartin",
      "lat": 36.748,
      "lng": -118.97133333,
-     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20"
+     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "File:2013-09-20 09 41 22 General Grant Tree.JPG",
@@ -125037,7 +125168,9 @@
      "author": "Famartin",
      "lat": 36.74816667,
      "lng": -118.97116667,
-     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20"
+     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "File:2013-09-20 09 41 27 General Grant Tree.JPG",
@@ -125047,7 +125180,9 @@
      "author": "Famartin",
      "lat": 36.74816667,
      "lng": -118.97116667,
-     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20"
+     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20",
+     "judged": "reject",
+     "verdict": "photo_light POOR, trunk in shadow"
     },
     {
      "title": "File:2013-09-20 09 45 34 General Grant Tree.JPG",
@@ -125057,7 +125192,9 @@
      "author": "Famartin",
      "lat": 36.74816667,
      "lng": -118.97116667,
-     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20"
+     "cats": "Category:CC-BY-SA-3.0 Category:Famartin's 2013 photos Category:Famartin's September 2013 photos Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:Self-published work Category:September 2013 in California Category:Taken with iPhone 5 Category:United States photographs taken on 2013-09-20",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "File:Kings Canyon National Park - General Grant Grove - General Grant Tree.JPG",
@@ -125067,7 +125204,9 @@
      "author": "Daniel Mayer (mav)",
      "lat": 36.748,
      "lng": -118.9711,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:General Grant Tree Category:License migration redundant Category:Panoramic photographs of trees Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:General Grant Tree Category:License migration redundant Category:Panoramic photographs of trees Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ5",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "File:Sequoia Grant.jpg",
@@ -125077,7 +125216,9 @@
      "author": "United States National Park Service",
      "lat": 36.748,
      "lng": -118.97094,
-     "cats": "Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:PD US NPS"
+     "cats": "Category:Files with coordinates missing SDC location of creation Category:General Grant Tree Category:PD US NPS",
+     "judged": "reject",
+     "verdict": "General Grant sign in frame: this is the Grant, not the Lee"
     },
     {
      "title": "File:Sequoia National Park 03.jpg",
@@ -125087,7 +125228,9 @@
      "author": "Niagara66",
      "lat": 36.748045,
      "lng": -118.971122,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:General Grant Grove Category:General Grant Tree Category:Images from Wiki Loves Monuments 2016 Category:Images from Wiki Loves Monuments 2016 in California Category:Images from Wiki Loves Monuments 2016 in the United States Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Trees in Kings Canyon National Park Category:United States photographs taken on 2014-08-13 Category:Uploaded via Campaign:wlm-us-other Category:WLM 2016 United States unreviewed"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:General Grant Grove Category:General Grant Tree Category:Images from Wiki Loves Monuments 2016 Category:Images from Wiki Loves Monuments 2016 in California Category:Images from Wiki Loves Monuments 2016 in the United States Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Trees in Kings Canyon National Park Category:United States photographs taken on 2014-08-13 Category:Uploaded via Campaign:wlm-us-other Category:WLM 2016 United States unreviewed",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "File:Sequoia Tree (base) in General Grant Grove, Kings Canyon National Park (July 2023).jpg",
@@ -125097,7 +125240,9 @@
      "author": "Marty Aligata",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:General Grant Grove Category:Robert E. Lee (tree) Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:General Grant Grove Category:Robert E. Lee (tree) Category:Self-published work",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "iNat obs 145363272 (Sequoiadendron giganteum)",
@@ -125133,7 +125278,9 @@
      "licence": "CC BY",
      "author": "(c) Reilly, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "36.748056,-118.971111"
+     "obs_location": "36.748056,-118.971111",
+     "judged": "hold",
+     "verdict": "Grant Grove sequoia titled General Grant or unnamed, geotag near Lee pin; cannot tell which trunk"
     },
     {
      "title": "iNat obs 390492291 (Sequoiadendron giganteum)",
@@ -125169,7 +125316,9 @@
      "author": "Bradluke22 (talk · contribs)",
      "lat": null,
      "lng": null,
-     "cats": "Category:Boole Tree Category:Converse Basin Grove Category:May 2007 in California Category:PD-user Category:Taken with Sony DSC-S600 Category:United States photographs taken on 2007-05-20"
+     "cats": "Category:Boole Tree Category:Converse Basin Grove Category:May 2007 in California Category:PD-user Category:Taken with Sony DSC-S600 Category:United States photographs taken on 2007-05-20",
+     "judged": "hold",
+     "verdict": "Boole Tree named, but looks re-photographed from a print (grain, light leak), own-work PD doubtful; 425px"
     },
     {
      "title": "File:Boole Tree Donkey Crew.jpg",
@@ -125179,7 +125328,9 @@
      "author": "Jean Hume Browning Collection",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:Historical images of Sequoia National Park Category:Lumberjacks from the United States Category:PD-old-70-expired Category:Sequoiadendron giganteum (historical images) Category:Sequoiadendron giganteum in Sequoia National Park (historical images) Category:Steam donkeys"
+     "cats": "Category:CC-PD-Mark Category:Historical images of Sequoia National Park Category:Lumberjacks from the United States Category:PD-old-70-expired Category:Sequoiadendron giganteum (historical images) Category:Sequoiadendron giganteum in Sequoia National Park (historical images) Category:Steam donkeys",
+     "judged": "reject",
+     "verdict": "black-and-white historical logging photo"
     },
     {
      "title": "File:Boole Tree Top.JPG",
@@ -125189,7 +125340,9 @@
      "author": "Bradluke22",
      "lat": null,
      "lng": null,
-     "cats": "Category:Boole Tree Category:Converse Basin Grove Category:June 2007 in California Category:PD-user Category:Taken with Canon Digital IXUS 430 Category:United States photographs taken on 2007-06-17"
+     "cats": "Category:Boole Tree Category:Converse Basin Grove Category:June 2007 in California Category:PD-user Category:Taken with Canon Digital IXUS 430 Category:United States photographs taken on 2007-06-17",
+     "judged": "reject",
+     "verdict": "distant crown among firs, trunk not visible"
     },
     {
      "title": "iNat obs 112031757 (Sequoiadendron giganteum)",
@@ -125198,7 +125351,9 @@
      "licence": "CC BY",
      "author": "(c) Reilly, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "36.823889,-118.949167"
+     "obs_location": "36.823889,-118.949167",
+     "judged": "reject",
+     "verdict": "same image as Boole Tree.JPG reposted on iNat under a different owner and licence; provenance conflict"
     }
    ]
   },
@@ -125596,7 +125751,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "29.9881716667,-90.0999305"
+     "obs_location": "29.9881716667,-90.0999305",
+     "judged": "hold",
+     "verdict": "live oak by a road and gate, nothing ties it to the Suicide Oak; 465px"
     }
    ]
   },
@@ -125613,7 +125770,9 @@
      "licence": "CC BY",
      "author": "(c) Bao Pham, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "29.9866961954,-90.0953224696"
+     "obs_location": "29.9866961954,-90.0953224696",
+     "judged": "reject",
+     "verdict": "photo_light POOR, small, ornamented oak"
     },
     {
      "title": "iNat obs 35311800 (Quercus virginiana)",
@@ -125622,7 +125781,9 @@
      "licence": "CC BY",
      "author": "(c) Kaden Slone, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "29.9864601404,-90.094909966"
+     "obs_location": "29.9864601404,-90.094909966",
+     "judged": "hold",
+     "verdict": "City Park live oak, no chimes visible, cannot tell it is the Singing Oak"
     },
     {
      "title": "iNat obs 109669958 (Quercus virginiana)",
@@ -125631,7 +125792,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "29.98713318,-90.09587092"
+     "obs_location": "29.98713318,-90.09587092",
+     "judged": "hold",
+     "verdict": "City Park live oak, no chimes visible, cannot tell it is the Singing Oak"
     },
     {
      "title": "iNat obs 109669958 (Quercus virginiana)",
@@ -125640,7 +125803,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "29.98713318,-90.09587092"
+     "obs_location": "29.98713318,-90.09587092",
+     "judged": "hold",
+     "verdict": "City Park live oak, no chimes visible, cannot tell it is the Singing Oak"
     }
    ]
   },
@@ -125726,7 +125891,9 @@
      "author": "Marrstree",
      "lat": 47.719394,
      "lng": -124.315139,
-     "cats": "Category:CC-BY-SA-4.0 Category:Duncan Memorial Big Cedar Tree Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Duncan Memorial Big Cedar Tree Category:Files with coordinates missing SDC location of creation Category:Self-published work",
+     "judged": "approve",
+     "verdict": "viewed: twin silver spires with living green strip between, matches story, whole tree, blue sky"
     },
     {
      "title": "iNat obs 371837539 (Thuja plicata)",
@@ -125771,7 +125938,9 @@
      "author": "Sven-the-Green",
      "lat": 47.613517,
      "lng": -124.376759,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Flora of national parks of the United States Category:Self-published work Category:September 2025 in Washington (state) Category:Trees in Washington (state)"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Flora of national parks of the United States Category:Self-published work Category:September 2025 in Washington (state) Category:Trees in Washington (state)",
+     "judged": "reject",
+     "verdict": "photo_light POOR: near-colourless, sky blown"
     }
    ]
   },
@@ -125799,7 +125968,9 @@
      "author": "U.S. Department of Agriculture",
      "lat": 47.477833,
      "lng": -123.829667,
-     "cats": "Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Flora of Grays Harbor County, Washington Category:Lake Quinault Category:PD USDA Category:Photographs by the U.S. Department of Agriculture Category:Picea sitchensis Category:Trees in Washington (state) Category:USAgriculture files uploaded by Tyler de Noche"
+     "cats": "Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Flora of Grays Harbor County, Washington Category:Lake Quinault Category:PD USDA Category:Photographs by the U.S. Department of Agriculture Category:Picea sitchensis Category:Trees in Washington (state) Category:USAgriculture files uploaded by Tyler de Noche",
+     "judged": "approve",
+     "verdict": "viewed: USDA caption names the Quinault record spruce; burled Sitka trunk and full crown, people for scale"
     },
     {
      "title": "File:QuinaltSpruce 7246c.jpg",
@@ -125846,6 +126017,17 @@
      "author": "(c) carbapple, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "47.4759969444,-123.8306877778"
+    },
+    {
+     "title": "File:Big Spruce near Quinault Lake in fall, Olympic (34206552846).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Big_Spruce_near_Quinault_Lake_in_fall%2C_Olympic_%2834206552846%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Big_Spruce_near_Quinault_Lake_in_fall,_Olympic_(34206552846).jpg",
+     "licence": "Public domain ({{PD-USGov-USDA-FS}} on Commons; Flickr USFS Pacific Northwest Region)",
+     "author": "U.S. Forest Service - Pacific Northwest Region",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal"
     }
    ]
   },
@@ -126871,6 +127053,17 @@
      "author": "(c) carbapple, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "36.5726575,-118.7507444444"
+    },
+    {
+     "title": "iNat obs 190465535 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/333897415/large.jpg",
+     "url": "https://www.inaturalist.org/observations/190465535",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "36.5733216667,-118.750045",
+     "judged": "approve",
+     "verdict": "viewed at 1024px: The President sign in front, whole tree crown and trunk, geotag 10 m from pin"
     }
    ]
   },
@@ -126908,7 +127101,9 @@
      "author": "Marty Aligata",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Chief Sequoyah (tree) Category:Self-published work Category:Sequoiadendron giganteum"
+     "cats": "Category:CC-BY-SA-4.0 Category:Chief Sequoyah (tree) Category:Self-published work Category:Sequoiadendron giganteum",
+     "judged": "approve",
+     "verdict": "viewed: named by photographer (same series as signed base shot), whole sequoia crown and trunk, daylight"
     },
     {
      "title": "File:Henry Inman - Sequoyah - Google Art Project.jpg",
@@ -126993,6 +127188,17 @@
      "author": "no rights reserved",
      "source": "inaturalist",
      "obs_location": "36.5733216667,-118.750045"
+    },
+    {
+     "title": "File:HFCA 1607 NPS Employees 0025.jpg (1cc194f3a1ba42efabdb312f3ab02de6).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/HFCA_1607_NPS_Employees_0025.jpg_%281cc194f3a1ba42efabdb312f3ab02de6%29.jpg/960px-HFCA_1607_NPS_Employees_0025.jpg_%281cc194f3a1ba42efabdb312f3ab02de6%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:HFCA_1607_NPS_Employees_0025.jpg_(1cc194f3a1ba42efabdb312f3ab02de6).jpg",
+     "licence": "Public domain ({{PD-USGov-NPS}} on Commons, from NPGallery / NPS History Collection)",
+     "author": "Richard Frear, NPS History Collection",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal"
     }
    ]
   },
@@ -127041,7 +127247,9 @@
      "author": "Marty Aligata",
      "lat": 36.572044,
      "lng": -118.756225,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lincoln (tree) Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Lincoln (tree) Category:Self-published work Category:Sequoiadendron giganteum Category:Trees in Sequoia National Park",
+     "judged": "approve",
+     "verdict": "viewed: whole tree, basal hollow and sign post match the named base shot, geotag 25 m"
     },
     {
      "title": "File:Room Tree (distance), Sequoia National Park (July 2023).jpg",
@@ -127079,7 +127287,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Franklin (tree) Category:PD-user",
-     "source": "wikidata/Q16993778"
+     "source": "wikidata/Q16993778",
+     "judged": "reject",
+     "verdict": "close-up of burnt lower trunk only, no crown"
     },
     {
      "title": "File:4th ave main street historic franklin tennessee 2010.jpg",
@@ -127089,7 +127299,9 @@
      "author": "Ichabod",
      "lat": null,
      "lng": null,
-     "cats": "Category:2010 in Tennessee Category:Buildings in Franklin, Tennessee Category:CC-BY-SA-3.0 Category:Franklin Historic District (Tennessee) Category:GFDL Category:Images with extracted images Category:License migration redundant Category:National Register of Historic Places with known IDs Category:Self-published work Category:Shops in Tennessee Category:United States photographs taken on 2010-01-16"
+     "cats": "Category:2010 in Tennessee Category:Buildings in Franklin, Tennessee Category:CC-BY-SA-3.0 Category:Franklin Historic District (Tennessee) Category:GFDL Category:Images with extracted images Category:License migration redundant Category:National Register of Historic Places with known IDs Category:Self-published work Category:Shops in Tennessee Category:United States photographs taken on 2010-01-16",
+     "judged": "reject",
+     "verdict": "not a tree: name match on Franklin"
     },
     {
      "title": "File:Vincenzo Laviosa - Franklin D. Roosevelt - Google Art Project.jpg",
@@ -127099,7 +127311,9 @@
      "author": "Vincenzo Laviosa",
      "lat": null,
      "lng": null,
-     "cats": "Category:1932 black and white portrait photographs of men Category:20th-century black and white portrait photographs of men at bust length Category:Artworks digital representation of 2D work Category:Artworks with Wikidata item Category:Artworks with known accession number Category:CC-PD-Mark Category:Featured analogue photographs Category:Featured historical portrait photographs Category:Featured photographs in the public domain Category:Featured pictures by others nominated by Yann Forget Category:Featured pictures from the Google Art Project Category:Featured pictures of people of the United States Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, English Category:Featured pictures on Wikipedia, Persian Category:Featured pictures restored by Yann Forget Category:Files from Google Arts & Culture Category:Files uploaded by Yann Forget Category:Franklin Delano Roosevelt in 1932 Category:Google Art Project works by Vincenzo Laviosa Category:Google Art Project works in The J. Paul Getty Museum Category:Images with extracted images Category:Official portraits of Franklin Delano Roosevelt Category:PD-old-80-1964 Category:Pages with complex technique templates Category:Photographs by Vincenzo Laviosa Category:Photographs in The J. Paul Getty Museum Category:Portrait photographs of Franklin Delano Roosevelt Category:Retouched pictures Category:Sepia portrait photographs of men"
+     "cats": "Category:1932 black and white portrait photographs of men Category:20th-century black and white portrait photographs of men at bust length Category:Artworks digital representation of 2D work Category:Artworks with Wikidata item Category:Artworks with known accession number Category:CC-PD-Mark Category:Featured analogue photographs Category:Featured historical portrait photographs Category:Featured photographs in the public domain Category:Featured pictures by others nominated by Yann Forget Category:Featured pictures from the Google Art Project Category:Featured pictures of people of the United States Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, English Category:Featured pictures on Wikipedia, Persian Category:Featured pictures restored by Yann Forget Category:Files from Google Arts & Culture Category:Files uploaded by Yann Forget Category:Franklin Delano Roosevelt in 1932 Category:Google Art Project works by Vincenzo Laviosa Category:Google Art Project works in The J. Paul Getty Museum Category:Images with extracted images Category:Official portraits of Franklin Delano Roosevelt Category:PD-old-80-1964 Category:Pages with complex technique templates Category:Photographs by Vincenzo Laviosa Category:Photographs in The J. Paul Getty Museum Category:Portrait photographs of Franklin Delano Roosevelt Category:Retouched pictures Category:Sepia portrait photographs of men",
+     "judged": "reject",
+     "verdict": "not a tree: name match on Franklin"
     },
     {
      "title": "iNat obs 112031717 (Sequoiadendron giganteum)",
@@ -127108,7 +127322,9 @@
      "licence": "CC BY",
      "author": "(c) Reilly, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "36.567778,-118.758611"
+     "obs_location": "36.567778,-118.758611",
+     "judged": "reject",
+     "verdict": "close-up of burnt lower trunk only, no crown"
     }
    ]
   },
@@ -127126,7 +127342,9 @@
      "author": "National Photo Company",
      "lat": null,
      "lng": null,
-     "cats": "Category:Christmas in the United States in the 20th century Category:Christmas trees in Washington, D.C. Category:Indoor Christmas trees Category:PD-US missing SDC copyright status Category:PD US Category:People and Christmas trees Category:Prisons in Washington, D.C."
+     "cats": "Category:Christmas in the United States in the 20th century Category:Christmas trees in Washington, D.C. Category:Indoor Christmas trees Category:PD-US missing SDC copyright status Category:PD US Category:People and Christmas trees Category:Prisons in Washington, D.C.",
+     "judged": "reject",
+     "verdict": "black-and-white Christmas tree in a DC jail, not this tree"
     },
     {
      "title": "File:Washington Sequoia Tree in Sequoia National Park (close up) July 2023.jpg",
@@ -127136,7 +127354,9 @@
      "author": "Marty Aligata",
      "lat": 36.56805,
      "lng": -118.760703,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Washington Tree"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Washington Tree",
+     "judged": "reject",
+     "verdict": "base close-up, no crown"
     },
     {
      "title": "File:Washington Sequoia Tree in Sequoia National Park (distance) July 2023.jpg",
@@ -127146,7 +127366,35 @@
      "author": "Marty Aligata",
      "lat": 36.568047,
      "lng": -118.760711,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Washington Tree"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Washington Tree",
+     "judged": "hold",
+     "verdict": "named Washington but crown looks intact; our story says the upper half collapsed in 2005"
+    },
+    {
+     "title": "File:Washington-tree-2003sep.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/36/Washington-tree-2003sep.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Washington-tree-2003sep.jpg",
+     "licence": "Public domain ({{PD-USGov-Interior-NPS}} on Commons)",
+     "author": "Tony Caprio / National Park Service",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal",
+     "judged": "reject",
+     "verdict": "360px narrow scan, too small"
+    },
+    {
+     "title": "File:Washington-tree-2005feb.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Washington-tree-2005feb.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Washington-tree-2005feb.jpg",
+     "licence": "Public domain ({{PD-USGov-Interior-NPS}} on Commons)",
+     "author": "Tony Caprio / National Park Service",
+     "lat": null,
+     "lng": null,
+     "cats": [],
+     "source": "us-federal",
+     "judged": "reject",
+     "verdict": "photo_light POOR, washed-out winter scan, 360px"
     }
    ]
   },
@@ -127224,7 +127472,9 @@
      "author": "Dietmar Rabich",
      "lat": 37.50352,
      "lng": -119.600817,
-     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/160 sec Category:F-number f/7.1 Category:Grizzly Giant Category:ISO speed rating 200 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 2:3 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki"
+     "cats": "Category:Blue sky background in the United States Category:Blue sky in California Category:CC-BY-SA-4.0 Category:California Historical Landmarks with known IDs Category:Exposure time 1/160 sec Category:F-number f/7.1 Category:Grizzly Giant Category:ISO speed rating 200 Category:Images by XRay (flat list) Category:Information field template with formatting Category:June 2022 in California Category:Lens focal length 20 mm Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of World Heritage Sites Category:Photographs by Dietmar Rabich/Quality images of national parks Category:Photographs by Dietmar Rabich/Quality images of the United States Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/United States Category:Photographs by Dietmar Rabich/Year/2022 Category:Photographs with aspect ratio of 2:3 Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images of Cupressaceae Category:Quality images of Yosemite National Park Category:Quality images of trees in the United States Category:Self-published work Category:Summer 2022 in the United States Category:Summer in California Category:Taken with Canon EOS 5D Mark IV Category:Taken with Sigma 20mm F1.4 DG HSM Art Category:Trees and sky in the United States Category:Trees in summer in the United States Category:Trees in the United States in June Category:Trees with blue sky background Category:United States photographs taken on 2022-06-27 Category:Uploaded with LrMediaWiki",
+     "judged": "approve",
+     "verdict": "viewed: the lean, great side limb and fire scar of the Grizzly Giant, whole tree, geotag 14 m"
     },
     {
      "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2758.jpg",
@@ -127316,7 +127566,9 @@
      "author": "Ymblanter",
      "lat": 37.50377,
      "lng": -119.600618,
-     "cats": "Category:CC-BY-SA-3.0 Category:California Tunnel Tree Category:Files with coordinates missing SDC location of creation Category:Photographs of the United States by Ymblanter Category:Self-published work Category:Taken with Olympus E-510 Category:United States photographs taken on 2013-10-26"
+     "cats": "Category:CC-BY-SA-3.0 Category:California Tunnel Tree Category:Files with coordinates missing SDC location of creation Category:Photographs of the United States by Ymblanter Category:Self-published work Category:Taken with Olympus E-510 Category:United States photographs taken on 2013-10-26",
+     "judged": "reject",
+     "verdict": "distant forest view, tree must be searched for"
     },
     {
      "title": "File:Yosemite National Park (CA, USA), Mariposa Grove of Giant Sequoias, Grizzly Giant -- 2022 -- 2752.jpg",
@@ -127356,7 +127608,9 @@
      "author": "EF5",
      "lat": 37.503356,
      "lng": -119.601036,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Grizzly Giant Category:Mariposa Grove Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Grizzly Giant Category:Mariposa Grove Category:Self-published work",
+     "judged": "reject",
+     "verdict": "titled Grizzly Giant and shows its burnt base, not the Tunnel Tree"
     },
     {
      "title": "File:“Grizzly Giant” Sequoia in June 2025 03.jpg",
@@ -127366,7 +127620,9 @@
      "author": "EF5",
      "lat": 37.503533,
      "lng": -119.600875,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Grizzly Giant Category:Mariposa Grove Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Grizzly Giant Category:Mariposa Grove Category:Self-published work",
+     "judged": "reject",
+     "verdict": "titled Grizzly Giant and shows its burnt base, not the Tunnel Tree"
     },
     {
      "title": "File:“tunnel tree” Yosemite National Park.jpg",
@@ -127376,7 +127632,9 @@
      "author": "Dreas99",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2021 in California Category:Self-published work Category:Uploaded via Campaign:wlm-us-other Category:Wawona Tree Category:Wiki Loves Monuments 2021 in the United States unreviewed"
+     "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2021 in California Category:Self-published work Category:Uploaded via Campaign:wlm-us-other Category:Wawona Tree Category:Wiki Loves Monuments 2021 in the United States unreviewed",
+     "judged": "reject",
+     "verdict": "painted postcard of the Wawona tunnel tree"
     },
     {
      "title": "iNat obs 104713202 (Sequoiadendron giganteum)",
@@ -127431,6 +127689,18 @@
      "author": "(c) Devin Kellar, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "37.5034166667,-119.6009533333"
+    },
+    {
+     "title": "File:Tunnel tree at Yosemite National Park 20220524 145321 copy.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Tunnel_tree_at_Yosemite_National_Park_20220524_145321_copy.jpg/960px-Tunnel_tree_at_Yosemite_National_Park_20220524_145321_copy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tunnel_tree_at_Yosemite_National_Park_20220524_145321_copy.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Steveshelokhonov",
+     "lat": 37.504168,
+     "lng": -119.600302,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Mariposa Grove Category:May 2022 in California Category:Self-published work",
+     "judged": "approve",
+     "verdict": "viewed: walk-through tunnel at Mariposa trailhead, whole tree in frame, daylight"
     }
    ]
   },
@@ -127448,7 +127718,9 @@
      "author": "Marty Aligata",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Mariposa Grove Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Mariposa Grove Category:Self-published work",
+     "judged": "reject",
+     "verdict": "base close-up with person, crown not in frame, fusion not readable"
     },
     {
      "title": "iNat obs 88594457 (Sequoiadendron giganteum)",
@@ -127457,7 +127729,9 @@
      "licence": "CC BY",
      "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "37.5058916258,-119.5993375406"
+     "obs_location": "37.5058916258,-119.5993375406",
+     "judged": "reject",
+     "verdict": "backlit silhouette of an unidentified sequoia, small"
     },
     {
      "title": "iNat obs 88594457 (Sequoiadendron giganteum)",
@@ -127466,7 +127740,9 @@
      "licence": "CC BY",
      "author": "(c) Jeff Lahr, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "37.5058916258,-119.5993375406"
+     "obs_location": "37.5058916258,-119.5993375406",
+     "judged": "reject",
+     "verdict": "backlit silhouette of an unidentified sequoia, small"
     }
    ]
   },
@@ -127484,7 +127760,9 @@
      "author": "Pedro Szekely from Los Angeles, USA",
      "lat": 37.505334,
      "lng": -119.604334,
-     "cats": "Category:CC-BY-SA-2.0 Category:Files from Pedro Szekely Flickr stream Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Mariposa Grove Category:Sequoiadendron giganteum (named individual trees) Category:Trees in Yosemite National Park Category:United States photographs taken on 2018-06-26"
+     "cats": "Category:CC-BY-SA-2.0 Category:Files from Pedro Szekely Flickr stream Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Mariposa Grove Category:Sequoiadendron giganteum (named individual trees) Category:Trees in Yosemite National Park Category:United States photographs taken on 2018-06-26",
+     "judged": "reject",
+     "verdict": "sun flare straight into lens, trunks in silhouette"
     },
     {
      "title": "File:Clothespin Tree crown Nelder Grove.jpg",
@@ -127494,7 +127772,9 @@
      "author": "Guywelch2000",
      "lat": 37.436341,
      "lng": -119.604144,
-     "cats": "Category:CC-BY-4.0 Category:Crown (botany) Category:Files with coordinates missing SDC location of creation Category:Nelder Grove Category:Self-published work Category:Sequoiadendron giganteum (foliage) Category:Sequoiadendron giganteum (named individual trees)"
+     "cats": "Category:CC-BY-4.0 Category:Crown (botany) Category:Files with coordinates missing SDC location of creation Category:Nelder Grove Category:Self-published work Category:Sequoiadendron giganteum (foliage) Category:Sequoiadendron giganteum (named individual trees)",
+     "judged": "reject",
+     "verdict": "Nelder Grove Clothespin Tree, 7.8 km away: a different tree from Mariposa Grove Clothespin"
     },
     {
      "title": "File:Clothespin Tree fire-scarred trunk Nelder Grove.jpg",
@@ -127504,7 +127784,9 @@
      "author": "Guywelch2000",
      "lat": 37.435994,
      "lng": -119.604202,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Fire damage on tree trunks Category:Nelder Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees) Category:Sequoiadendron giganteum (trunks)"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Fire damage on tree trunks Category:Nelder Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees) Category:Sequoiadendron giganteum (trunks)",
+     "judged": "reject",
+     "verdict": "Nelder Grove Clothespin Tree, 7.8 km away: a different tree from Mariposa Grove Clothespin"
     },
     {
      "title": "File:Clothespin Tree fire scar close-up Nelder Grove.jpg",
@@ -127514,7 +127796,9 @@
      "author": "Guywelch2000",
      "lat": 37.441393,
      "lng": -119.603505,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Fire damage on tree trunks Category:Nelder Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees) Category:Sequoiadendron giganteum (trunks)"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Fire damage on tree trunks Category:Nelder Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees) Category:Sequoiadendron giganteum (trunks)",
+     "judged": "reject",
+     "verdict": "Nelder Grove Clothespin Tree, 7.8 km away: a different tree from Mariposa Grove Clothespin"
     },
     {
      "title": "File:Clothespin Tree split crown, Nelder Grove.jpg",
@@ -127524,7 +127808,9 @@
      "author": "Guywelch2000",
      "lat": 37.436341,
      "lng": -119.604144,
-     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Files with coordinates missing SDC location of creation Category:Nelder Grove Category:Self-published work Category:Self-published work missing SDC copyright license Category:Sequoiadendron giganteum (trunks) Category:Trees damaged by lightning"
+     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Files with coordinates missing SDC location of creation Category:Nelder Grove Category:Self-published work Category:Self-published work missing SDC copyright license Category:Sequoiadendron giganteum (trunks) Category:Trees damaged by lightning",
+     "judged": "reject",
+     "verdict": "Nelder Grove Clothespin Tree, 7.8 km away: a different tree from Mariposa Grove Clothespin"
     }
    ]
   },
@@ -127542,7 +127828,9 @@
      "author": "Marty Aligata",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Mariposa Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Mariposa Grove Category:Self-published work Category:Sequoiadendron giganteum (named individual trees)",
+     "judged": "approve",
+     "verdict": "viewed: BACHELOR AND THREE GRACES sign, four trunks fill frame; crowns cropped, the trunk group is the identity"
     },
     {
      "title": "File:California Tunnel Tree.jpg",
