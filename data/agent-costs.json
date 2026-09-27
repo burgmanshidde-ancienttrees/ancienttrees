@@ -8652,6 +8652,15 @@
         "note": "Candidates only, not approved: 15 federal/LoC public-domain photos for 7 of 240 photo-less US trees (General Grant, Chief Sequoyah, Washington Tree, Pando, Quinault spruce, Washington Monument mulberry, Sam Houston Oak) in data/photo-candidates-us-federal.json. Finding: Commons holds many CC photos of the sequoias a free photo_hunt.py sweep should catch.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "us (sequoias, Olympic, New Orleans, Pando)",
+        "kind": "photo",
+        "tokens": 257977,
+        "trees": 0,
+        "note": "Viewing pass, 22 trees, ~110 images looked at: 10 approved (General Grant, The President, Chief Sequoyah, Lincoln, Grizzly Giant, California Tunnel Tree, Bachelor and Three Graces, Duncan Cedar, Quinault Big Spruce, Pando), 18 held on identity, 34 rejected. Sam Houston Oak held only because the file is a TIFF.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   },
