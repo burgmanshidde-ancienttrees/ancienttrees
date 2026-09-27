@@ -2,9 +2,9 @@
   "city": "Boston",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Boston lost its two most famous trees long ago: the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is stranger. Two English elms have flanked the Shaw Memorial since around 1800, and the Arnold Arboretum keeps accession cards on its trees like a library catalogue. The eleven below split into a Common and Public Garden pair, an Arboretum six including a bonsai begun in 1737, and two across the river in Cambridge; all are free.",
+  "intro": "Boston lost its two most famous trees long ago: the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is stranger. Two English elms have flanked the Shaw Memorial since around 1800, and the Arnold Arboretum keeps accession cards on its trees like a library catalogue. The twelve below split into a Common and Public Garden pair, an Arboretum seven including a bonsai begun in 1737, and two across the river in Cambridge; all are free.",
   "meta_description": "Boston's remarkable trees, from the elms flanking the Shaw Memorial to a tree extinct in the wild at the Arnold Arboretum. Locations, stories, sources.",
-  "question_meta": "Boston's oldest documented trees are the Shaw Memorial elms on the Common, planted between 1772 and 1812. Their story, and nine more remarkable trees.",
+  "question_meta": "Boston's oldest documented trees are the Shaw Memorial elms on the Common, planted between 1772 and 1812. Their story, and ten more remarkable trees.",
   "question_answer": "The oldest documented landscape trees in Boston are the two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812. The oldest living thing on this list is older still and fits on a table: the Larz Anderson Hinoki Cypress at the Arnold Arboretum, a bonsai begun in 1737.",
   "question_context": "Boston's relationship with its trees is a long ledger of documented losses, and that is precisely what makes the survivors verifiable. The Liberty Tree, the elm under which the Sons of Liberty gathered, was felled by Loyalists in August 1775 and the city has marked the spot ever since. The Great Elm of the Common, once called the city's oldest inhabitant, blew down in 1876 and was mourned in print. The Public Garden's lagoon willow, the most photographed tree in the city, collapsed as recently as July 2026. Each loss was recorded, which means each survivor stands in an unusually well-documented landscape. Six of them stand in the Arnold Arboretum, which keeps an accession-level GIS with a coordinate, a condition and a last-inspection date for every plant it holds. That is better than any tree register on this site, and it moved two pins here: the Franklin tree by 315 metres and the Wilson paperbark maple by 255, both to the exact accession our own sources already named. Where it offers two candidates and nothing separates them, as with the white oak on Peters Hill, the pin stays approximate rather than guessing.",
   "faq": [
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Boston's remarkable trees free to visit?",
-      "a": "All eleven are free. Two stand on Boston Common and in the Public Garden, six in the Arnold Arboretum (open free daily, Orange Line to Forest Hills), and two across the river in Cambridge, at the Longfellow House and on Brattle Street."
+      "a": "All twelve are free. Two stand on Boston Common and in the Public Garden, seven in the Arnold Arboretum (open free daily, Orange Line to Forest Hills), and two across the river in Cambridge, at the Longfellow House and on Brattle Street."
     },
     {
       "q": "What is a Franklinia and why does Boston have one?",
@@ -429,6 +429,39 @@
         "height": 2400
       },
       "how_to_recognise": "You can recognise it by the apples, big coarse 'Flower of Kent' cookers nobody grows for flavour any more. It stands in the President's Garden off the Infinite Corridor, inside MIT's Main Group of buildings."
+    },
+    {
+      "id": "bos_012",
+      "name": "The Wilson Black Pine of Peters Hill",
+      "species": "Japanese Black Pine (Pinus thunbergii)",
+      "age_estimate": "about 107 years",
+      "age_min": 105,
+      "age_max": 110,
+      "age_basis": "source",
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, Peters Hill Road, ascending from the Peters Hill Gate",
+        "latitude": 42.29552082,
+        "longitude": -71.12843679,
+        "neighbourhood": "Peters Hill, Arnold Arboretum, Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/stories/new-years-elders (Arnoldia, 2019, names accession 11371*J as the largest of three sibling pines along Peters Hill Road, grown from seed E.H. Wilson acquired from the Yokohama Nursery Company at the end of his 1917-1919 expedition; turned 100 in 2019)",
+        "https://arboretum.harvard.edu/plant-bios/japanese-black-pine/ (Arnold Arboretum plant biography, species background and display history)",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0 (Arnold Arboretum plant inventory GIS: accession 11371*J at 42.29552082, -71.12843679, ACC_DT 07-01-1919, confirming a live, tree-level mapped record)"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line), roughly 15-20 minute walk via the Peters Hill Gate",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Ernest Henry Wilson was already home from his last expedition to Japan when he stopped at a nursery in Yokohama and bought a handful of pine seed almost as an afterthought. That seed, sown at the Arnold Arboretum in 1919, grew into the pine that now greets everyone who climbs Peters Hill Road from the Peters Hill Gate.\n\nA century of wind has done the shaping. The trunk twists rather than rises, and the lower limbs dip low before curling back up, the look Japanese gardeners spend decades training into a tree and this one simply grew into on its own. Two siblings from the same seed lot stand nearby, but the Arboretum's own account singles this one out as the largest and the most sculptural of the three.\n\nWilson spent years in China and Japan collecting plants for Boston, and the Arboretum still tracks this pine by the same accession number, 11371*J, that a clerk wrote down when it arrived. It turned 100 in 2019 and nobody has found a reason to expect it will stop now.\n\nEvery record on this tree traces back to the Arboretum itself, which keeps better books on its own collection than anyone else could. No outside account has turned up yet. If you know one, tell us.",
+      "how_to_recognise": "You can recognise it by the crooked, wind-shaped trunk and low, curling branches, unusual for a pine this size. It stands right where Peters Hill Road climbs from the Peters Hill Gate, the first big tree you meet on the way up.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ],
   "oldest_tree_id": "bos_001"
