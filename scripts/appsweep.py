@@ -255,7 +255,7 @@ def screens(sub):
         # three days: this is the screen carrying every field a contributor
         # types, and it was the one step of the collect flow with no argument,
         # so it had never been photographed or measured once.
-        ("collect-describe", ["-collect", "-collect-describe"], 6),
+        ("collect-describe", ["-collect", "-collect-describe", "-signed-in"], 6),
         ("search",        ["-search=lis"], 5),
         # 12, not 7. This walk has no cached route, so since 2026-08-25 it
         # asks Valhalla for one before the line can be drawn, and on the SE the
