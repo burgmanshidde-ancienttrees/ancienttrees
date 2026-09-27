@@ -1,0 +1,66 @@
+{
+  "city": "Chirk",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Chirk is a village on the Welsh border near its castle, and its tree stands on the roadside a few hundred metres away, in the Ceiriog Valley. The Oak at the Gate of the Dead is thought to be over a thousand years old, and takes its name from the Battle of Crogen in 1165, fought nearby. A cold snap split the trunk in two in February 2010, and it kept growing anyway; the two halves still stand together beside the B4500.",
+  "meta_description": "The Oak at the Gate of the Dead, Chirk, Wales: an oak over 1000 years old, split in two by frost in 2010, named for a 1165 battle. Free to visit.",
+  "question_meta": "Chirk's remarkable tree is the Oak at the Gate of the Dead, an oak over 1000 years old split in two since 2010.",
+  "question_answer": "Chirk's notable tree is the Oak at the Gate of the Dead, on the B4500 roadside about 300 metres from Chirk Castle in the Ceiriog Valley, Wales.",
+  "question_context": "The oak is estimated at over a thousand years old; one reading puts its seeding in the reign of King Ecgberht, between 802 and 839, though nobody can date an oak that precisely and the figure is a direction rather than a birth certificate. In February 2010 a cold snap split the trunk in two; before the split it measured about ten metres round, and a 2022 survey found 7.52 metres at the narrowest point of what remains. The name comes from the Battle of Crogen in 1165, when a Welsh army under Owain Gwynedd ambushed and beat an invading English army led by Henry II nearby; the dead are said to be buried close by, and the valley's old name, Adwy'r Beddau, means the pass of the graves. For most of its life the tree had no name at all until Woodland Trust recorder Rob McBride identified it in 2007; a plaque followed in 2009 and Wrexham council placed a preservation order on it after the split. It stands on the verge of the B4500 and on the Offa's Dyke Path, free to reach on foot or by car.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Chirk?",
+      "a": "The Oak at the Gate of the Dead, a pedunculate oak on the B4500 roadside near Chirk Castle, split into two halves since 2010."
+    },
+    {
+      "q": "How old is the Oak at the Gate of the Dead?",
+      "a": "Estimated at over a thousand years, possibly seeded in the early 9th century, though no oak can be dated that precisely."
+    },
+    {
+      "q": "Can you visit the Oak at the Gate of the Dead?",
+      "a": "Yes, free. It stands directly beside the public B4500 road, on the route of the Offa's Dyke Path, visible and reachable from the verge."
+    },
+    {
+      "q": "How do you get to the Oak at the Gate of the Dead?",
+      "a": "About 300 metres on foot from the Chirk Castle car park; Chirk railway station on the Wrexham to Shrewsbury line is roughly 3 km away."
+    }
+  ],
+  "hero_tree_id": "chr_001",
+  "oldest_tree_id": "chr_001",
+  "trees": [
+    {
+      "id": "chr_001",
+      "name": "The Oak at the Gate of the Dead",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 1000 years",
+      "age_min": 900,
+      "age_max": 1200,
+      "age_basis": "source",
+      "girth_cm": 752,
+      "location": {
+        "address": "B4500 roadside, Ceiriog Valley, near Chirk Castle, Wrexham County Borough, Wales",
+        "latitude": 52.931469,
+        "longitude": -3.095358,
+        "neighbourhood": "Ceiriog Valley, near Chirk"
+      },
+      "story": "In February 2010 a cold snap split this oak in two, and it kept growing anyway. Before the split its trunk measured about ten metres round. The 2022 survey found 7.52 metres at the narrowest point, which is the tree you meet today: two halves of one very old oak, still standing beside a Welsh country road.\n\nIt is estimated at over a thousand years old, and one reading puts its seeding in the reign of King Ecgberht, between 802 and 839. Nobody can date an oak that closely, so treat that as the direction of the estimate rather than a birth certificate.\n\nThe name comes from 1165. Near this spot a Welsh army under Owain Gwynedd ambushed and beat an invading English army led by Henry II, at what became known as the Battle of Crogen. The dead are said to be buried nearby, and the valley's old name, Adwy'r Beddau, means the pass of the graves. If the age estimate holds, the oak was already standing when the fighting happened.\n\nFor most of its life it had no name at all. Woodland Trust recorder Rob McBride identified it in 2007 and gave it one; a plaque followed in March 2009, and Wrexham council put a preservation order on it after the split. In 2014 it was Wales's first entry in the European Tree of the Year, finishing ninth. It stands on the verge of the B4500, on the Offa's Dyke Path, free to anyone walking past.",
+      "how_to_recognise": "You can recognise it by the trunk split into two halves, 7.52 metres round at its narrowest, and by its plaque. It stands on the verge of the B4500, about 300 metres from Chirk Castle.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2014/Dub-pred-Branou-mrtvych",
+        "https://en.wikipedia.org/wiki/Oak_at_the_Gate_of_the_Dead",
+        "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/wales/oak-at-the-gate-of-the-dead-wrexham/"
+      ],
+      "access": "Free. Stands directly beside the B4500 public road about 300m from Chirk Castle, and on the route of the Offa's Dyke Path (a National Trail); no permission needed, visible and reachable from the roadside verge.",
+      "transport": "About 300m walk from Chirk Castle car park; Chirk railway station (Wrexham-Shrewsbury line) is roughly 3km away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

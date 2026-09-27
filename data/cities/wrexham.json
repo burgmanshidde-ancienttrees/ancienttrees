@@ -1,0 +1,66 @@
+{
+  "city": "Wrexham",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Wrexham is a Welsh city, and its tree grows in Acton Park, an ordinary council park on the edge of the centre. This sweet chestnut is somewhere close to half a millennium old, planted around the reign of Henry VIII by the local figure most often quoted, though the European Tree of the Year entry rounds that up past 500. It survived the park being stripped for firewood after the Second World War and the storms of 2021, and in 2023 it won the UK's own Tree of the Year.",
+  "meta_description": "The Acton Park Sweet Chestnut, Wrexham, Wales: a sweet chestnut close to 500 years old, UK Tree of the Year 2023. Free to visit.",
+  "question_meta": "Wrexham's remarkable tree is the Acton Park Sweet Chestnut, close to 500 years old, UK Tree of the Year 2023.",
+  "question_answer": "Wrexham's notable tree is the Acton Park Sweet Chestnut, standing in Acton Park on the edge of the city centre.",
+  "question_context": "How old it is depends on who you ask. Local reporting, drawing on the council's own figures, puts it at roughly 480 to 484 years, planted around the 1530s or 1540s, in the reign of Henry VIII; the European Tree of the Year entry rounds that up to more than 500. Neither figure is a ring count, so read the two together as something close to half a millennium. The trunk is 6.1 metres round and the tree stands 24 metres tall, and it survived the park being stripped for firewood after the Second World War and the storms of 2021 that damaged the trees around it. It is not a roped-off relic: Acton is where local people have their picnics and tree parties, and Wrexham Council and Coed Cadw (the Woodland Trust in Wales) nominated it for the UK Tree of the Year in 2023, which it won with 17 percent of the vote. Our own pin marks the park rather than the exact trunk, so if you find it, tell us where it stands.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Wrexham?",
+      "a": "The Acton Park Sweet Chestnut, a sweet chestnut 6.1 metres round and 24 metres tall, standing in Acton Park."
+    },
+    {
+      "q": "How old is the Acton Park Sweet Chestnut?",
+      "a": "Local council figures put it at roughly 480 to 484 years; the European Tree of the Year entry rounds that to more than 500. Neither is a ring count."
+    },
+    {
+      "q": "Can you visit the Acton Park Sweet Chestnut?",
+      "a": "Yes, free. Acton Park is an ordinary public park run by Wrexham Council, open at normal park hours with no entrance fee."
+    },
+    {
+      "q": "How do you get to the Acton Park Sweet Chestnut?",
+      "a": "Acton Park sits within Wrexham city, roughly a 25 minute walk from Wrexham Central railway station."
+    }
+  ],
+  "hero_tree_id": "wrx_001",
+  "oldest_tree_id": "wrx_001",
+  "trees": [
+    {
+      "id": "wrx_001",
+      "name": "The Acton Park Sweet Chestnut",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "roughly 480 to 500 years",
+      "age_min": 450,
+      "age_max": 550,
+      "age_basis": "source",
+      "girth_cm": 610,
+      "location": {
+        "address": "Acton Park, Wrexham, Wales",
+        "latitude": 53.0619,
+        "longitude": -2.9769,
+        "neighbourhood": "Acton, Wrexham"
+      },
+      "story": "In the hard years after the Second World War, Acton Park was stripped for firewood. This sweet chestnut was left standing, and it has since come through dozens of storms, including those of 2021 that brought down or maimed the trees around it.\n\nHow old it is depends on who you ask. Local reporting, drawing on the council's figures, puts it at roughly 480 to 484 years, planted around the 1530s or 1540s, in the reign of Henry VIII. The European Tree of the Year entry rounds that up to more than 500. Neither is a ring count, so read the two together: something close to half a millennium, in a Wrexham park.\n\nThe measurements are firmer. The trunk is 6.1 metres round and the tree stands 24 metres tall.\n\nWhat sets it apart is less its size than its use. This is not a roped-off relic. It is where people in Acton have their picnics and their tree parties, a working part of an ordinary council park. Wrexham Council and Coed Cadw, the Woodland Trust in Wales, nominated it for the UK Tree of the Year in 2023, and it won with 17 percent of the vote. At the European final in 2024 it came tenth of ten with 7,180 votes, which says more about the competition than about the tree.\n\nOur pin marks the park rather than the trunk, so if you find it, tell us exactly where it stands.",
+      "how_to_recognise": "You can recognise it by its size: a sweet chestnut 24 metres tall with a trunk 6.1 metres round. It stands in Acton Park, where our pin is only approximate.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2024/wrexham's-acton-park-sweet-chestnut",
+        "https://wrexham.com/news/480-year-old-sweet-chestnut-in-acton-park-crowned-tree-of-the-year-241717.html",
+        "https://www.forestryjournal.co.uk/news/23879586.484-year-old-towering-sweet-chestnut-crowned-uks-best-tree/"
+      ],
+      "access": "Free. Acton Park is an ordinary public park run by Wrexham Council, on the edge of the city centre, open at all normal park hours with no entrance fee.",
+      "transport": "Acton Park sits within Wrexham city, roughly a 25 minute walk from Wrexham Central railway station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

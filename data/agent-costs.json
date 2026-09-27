@@ -9049,6 +9049,20 @@
       "tokens": 0,
       "trees": 1,
       "note": "Written directly in the orchestrating session rather than dispatched (a single leftover verified tree, not worth a full agent). Renamed the misnamed famousaustria-verified-b.json so passcheck could see it, then wrote and merged aut_002 (Linde im Gries, St Georgen im Attergau) as a new single-famous-tree place, 10m girth, best-known tree in the Attergau. Friedenslaerche held (ordinary size, past the day-trip boundary, no pairing candidate yet)."
+    },
+    {
+      "target": "_tree-of-the-year (8 UK/Ireland candidates)",
+      "kind": "verify",
+      "tokens": 197892,
+      "trees": 6,
+      "note": "6 verified (King Oak Tullamore, Niel Gow Oak Dunkeld, Oak at the Gate of the Dead Chirk, Waverley Abbey Yew Farnham, Acton Park Sweet Chestnut Wrexham, Skipinnish Oak Achnacarry). 2 correctly rejected as dead: Birr Castle Grey Poplar (blown down 2014) and the Major Oak in Sherwood Forest, confirmed dead June 2026 (RSPB/Natural England, CNN, ABC News) -- newsworthy, noted in LOG.md for Hidde."
+    },
+    {
+      "target": "_tree-of-the-year (6 trees)",
+      "kind": "write",
+      "tokens": 123732,
+      "trees": 6,
+      "note": "6 stories + recognition lines written and merged as 6 new single-tree places (tullamore, dunkeld, chirk, farnham, wrexham, achnacarry), each 16-70km from the nearest published tree, all under the single-famous-tree exception. Fixed one species canonicalisation (Yew -> European Yew) before merge, expanded 3 question_context fields to hit the 150-200 word Contract B range, and marked the corresponding leads published/duplicate."
     }
   ]
 }
