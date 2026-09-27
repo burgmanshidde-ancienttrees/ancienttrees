@@ -8799,6 +8799,13 @@
       "tokens": 60000,
       "trees": 4,
       "note": "Write pass on the three write-claimed New Zealand famous-tree places from the same day's _famous-new-zealand verify pass (Square Kauri, McKinney Kauri, Simpson Kauri, Moko/rimu). Stories and how_to_recognise written into the verified-leads file; city files built (data/cities/) with intro/faq/question_context per place. Left uncommitted by the run that wrote it; picked up and finished (tree_index rebuilt, city_names.py run, preflight 0 problems, claims released) by the next attempt in the same window."
+    },
+    {
+      "target": "_famous-czech-republic (4 candidates)",
+      "kind": "verify",
+      "tokens": 50000,
+      "trees": 2,
+      "note": "Verified Hrádecký dub and Buk u rybníčku (second sources found); Českolipský buk lesní and Buk v Jindřichovickém zámeckém parku still one source short, left as leads with resolved village-match questions and a noted 3-tree cluster at the Jindřichovice chateau park"
     }
   ]
 }
