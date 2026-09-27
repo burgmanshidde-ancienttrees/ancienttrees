@@ -1,0 +1,104 @@
+[
+  {
+    "id": "sqk_001",
+    "name": "Square Kauri",
+    "species": "Kauri (Agathis australis)",
+    "age_estimate": "estimated around 1,200 years",
+    "age_min": 1000,
+    "age_max": 1400,
+    "girth_cm": 876,
+    "height_m": 41.15,
+    "location": {
+      "address": "Square Kauri Track, Tapu-Coroglen Road, Coromandel Forest Park, Coromandel Peninsula, New Zealand",
+      "latitude": -36.99027778,
+      "longitude": 175.57258333,
+      "neighbourhood": "Coromandel Forest Park, 8.5 km from Tapu"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Square_Kauri",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/coromandel/places/coromandel-forest-park/things-to-do/square-kauri-tree/"
+    ],
+    "access": "Free. DOC-maintained track directly off the Tapu-Coroglen Road, a public road across the Coromandel Range between Tapu and Coroglen. Short but steep, 187 steps, about 2-3 minutes each way. No gate, no ticket.",
+    "transport": "No public transport; reached by car on the Tapu-Coroglen Road, roughly 8.5 km from the settlement of Tapu on the Coromandel's west coast.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two sources agree closely: Wikipedia gives coordinates 36°59'25\"S 175°34'22\"E, which converts to -36.99028,175.57278, effectively identical to the lead's -36.99027778,175.57258333 (DOC's own page is the second source and does not publish coordinates, but names the same track off Tapu-Coroglen Road). Girth 8.76m and trunk volume 69.8 cubic metres were measured in 1975 (Wikipedia, sourced to a 1975 kauri survey); height 41.15m is from monumentaltrees.com used only as a measurement cross-check per the rules, never as sole source. Age '~1,200 years' is the source's own vague estimate, repeated as given, not derived by us; age_min/age_max here is a broad band around that stated figure, not a calculation. Alive now: a 2024-2025 Tripadvisor/AllTrails-era review describes it as 'huge and very healthy looking', and DOC continues to list and maintain the track as an active things-to-do page, both fairly recent evidence of standing/health. Distinctive fact worth leading with: its squared-off trunk shape is WHY it survived; the 19th-century kauri loggers who took almost every big kauri on the peninsula for timber passed this one over because its odd, angular shape made it commercially unattractive, so the very feature that makes it a landmark today is what saved its life. It ranks only 15th largest kauri on the peninsula by volume, and its own-Wikipedia-article readership is modest (82 reads/month across one language edition per the brief), so fame online is thin. Destination-test read: this is a named, government-signposted, single-tree DOC 'thing to do' with its own short purpose-built track, not a park boasting a general old-growth population; visitors already come specifically for this named tree (not passing through to somewhere else), same shape as other single-tree stops this project has published on modest online fame. Nearest other published tree is 72.6km away, so it is its own place, not a deepen. Read: PUBLISHABLE as its own single-tree place, own page, honest about being a minor-key landmark rather than a super-famous one."
+  },
+  {
+    "id": "pky_001",
+    "name": "McKinney Kauri",
+    "species": "Kauri (Agathis australis)",
+    "age_estimate": "estimated about 800 years",
+    "age_min": 700,
+    "age_max": 900,
+    "girth_cm": 762,
+    "height_m": 38,
+    "location": {
+      "address": "Parry Kauri Park, Tudor Collins Drive, Warkworth, Auckland, New Zealand (beside the Warkworth & District Museum)",
+      "latitude": -36.416474,
+      "longitude": 174.669271,
+      "neighbourhood": "Warkworth"
+    },
+    "verified_sources": [
+      "https://www.matakanacoast.co.nz/blog/parry-kauri-park-warkworths-ancient-giants",
+      "https://warkworthmuseum.co.nz/parry-kauri-park/",
+      "https://www.outdooractive.com/en/route/hiking-trail/nordinsel/parry-kauri-park-circular-route/16840985/"
+    ],
+    "access": "Free. Auckland Council public park with a boardwalk loop (about 20-35 minutes, partly wheelchair accessible), reached from a free car park at the Warkworth & District Museum on Tudor Collins Drive. Car park open 7am-9pm in summer, 7am-7pm in winter. Kauri dieback cleaning stations at the entrance; visitors asked to stay on the boardwalk.",
+    "transport": "In Warkworth town centre, adjoining the museum; a short walk from central Warkworth. No public transport check done; reached easily by car off SH1, about an hour north of Auckland.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Viewed the actual photo (File:McKinneyKauri.jpg): a single-trunk, healthy-crowned kauri giant standing alone in mown grass with a boardwalk/fence around the base and a car visible for scale, consistent with every description of the site. Two independent sources for existence/species/age: matakanacoast.co.nz (local tourism blog) and warkworthmuseum.co.nz (the heritage museum that adjoins and effectively curates the park) both give ~800 years and call it the largest kauri on NZ's east coast by girth (>7m); outdooractive.com's trail page independently corroborates 'a circumference of over 7 meters... over 800 years old... probably the largest kauri on NZ's east coast', with its own coordinates (-36.416117,174.669750) matching the lead's within a few tens of metres. Girth 7.62m / height 38m from a WebSearch summary attributed to outdooractive-style trail copy; treated as sourced text rather than an AI-invented figure because it matches the same 'over 7 metres, 800 years' claim independently repeated by the museum and blog (still worth a second look by whoever writes the page). History: park is the site of Rev. McKinney's old property, later the Simpson family's, preserved as public land after the Warkworth Kauri Bushmen's Association fundraised specifically to save these two named trees roughly 50 years ago and gifted the land to Auckland Council; a genuine local-heritage story with a source. Alive now: recent Tripadvisor reviews describe a 'splendid 800 year old kauri tree' and it remains an actively maintained, signposted Auckland Council park. Destination-test read: this is a named individual specimen billed as the biggest kauri on the entire NZ east coast, with a dedicated short boardwalk built around it and a heritage society's rescue story behind it; genuinely a reason to detour off SH1 through Warkworth. Nearest other published tree is 48.4km away. PUBLISHABLE, alongside Simpson Kauri (pky_002) as a two-tree 'own place' under the single-famous-tree exception (same shape as Waipoua Forest, which ships at 2 trees on the same logic) since Parry Kauri Park has only these two named/plaqued kauri (confirmed by three independent descriptions of the park, none mentioning a third named tree) and does not clear the ordinary 4-tree floor on its own."
+  },
+  {
+    "id": "pky_002",
+    "name": "Simpson Kauri",
+    "species": "Kauri (Agathis australis)",
+    "age_estimate": "600 years, per the tree's own on-site plaque",
+    "age_min": 550,
+    "age_max": 650,
+    "girth_cm": 579,
+    "location": {
+      "address": "Parry Kauri Park, Tudor Collins Drive, Warkworth, Auckland, New Zealand (beside the Warkworth & District Museum, a few steps from the McKinney Kauri)",
+      "latitude": -36.4164463,
+      "longitude": 174.669443,
+      "neighbourhood": "Warkworth"
+    },
+    "verified_sources": [
+      "https://commons.wikimedia.org/wiki/File:Parry_Kauri_Park_-_Plaque_of_the_Simpson_kauri_tree.jpg",
+      "https://www.matakanacoast.co.nz/blog/parry-kauri-park-warkworths-ancient-giants",
+      "https://www.tripadvisor.co.nz/ShowUserReviews-g609161-d9710485-r478469019-Parry_Kauri_Park-Warkworth_North_Island.html"
+    ],
+    "access": "Same as McKinney Kauri: free Auckland Council park, boardwalk loop from the Warkworth Museum car park, cleaning stations for kauri dieback.",
+    "transport": "Same as McKinney Kauri: in Warkworth town centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Viewed the actual photo of the tree's own bronze on-site plaque (File:Parry_Kauri_Park_-_Plaque_of_the_Simpson_kauri_tree.jpg), legible and unambiguous: 'THE SIMPSON KAURI / HEIGHT TO FIRST LIMB 14.94m / CENTRE GIRTH 5.79m / ESTIMATED CUBIC METRES 30.6 / AGE 600 YEARS'. This is effectively a park-authority register plaque and is treated as one primary source; matakanacoast.co.nz and Tripadvisor ('Splendid 800 year old Kauri tree' review, referring to the pair at the park entrance) both independently confirm the tree's existence, name and species as the second of the two large kauri greeting visitors at the entrance, alongside McKinney. Girth 579cm and 'height to first limb' 14.94m are the plaque's own figures; note for the writer that 14.94m is height-to-first-limb, NOT total tree height, so do not present it as the tree's full height. Age 600 years is the plaque's own stated figure, not derived by us. No separate news/alive-today confirmation was found for Simpson specifically, but it stands a few metres from McKinney in the same actively maintained, currently-open park, so the same recency evidence applies. Destination-test read: same as McKinney; the two form one obvious entrance-grove stop rather than two separate detours. PUBLISHABLE as pky_002, joining pky_001 as Parry Kauri Park's two-tree 'own place'."
+  },
+  {
+    "id": "mko_001",
+    "name": "Moko",
+    "species": "Rimu (Dacrydium cupressinum)",
+    "age_estimate": "about 800 years",
+    "age_min": 700,
+    "age_max": 900,
+    "girth_cm": 558,
+    "height_m": 27.3,
+    "location": {
+      "address": "Otari-Wilton's Bush, 150 Wilton Road, Wilton, Wellington, New Zealand (track starts at the Troup Picnic Lawn)",
+      "latitude": -41.265943,
+      "longitude": 174.752483,
+      "neighbourhood": "Wilton, Wellington"
+    },
+    "verified_sources": [
+      "https://wellington.govt.nz/news-and-events/news-and-information/our-wellington/2021/07/te-reo-name-gifted-to-ancient-rimu",
+      "https://www.wikidata.org/wiki/Q107394029",
+      "https://www.nzherald.co.nz/kahu/name-gifted-to-wellingtons-oldest-tree-as-part-of-matariki-celebrations/MZGKELFETRZ2QZCWXZGGNI3GVI/"
+    ],
+    "access": "Free, open all hours, no ticket. Otari-Wilton's Bush is a Wellington City Council native botanic garden and forest reserve; main entrance and car park at 150 Wilton Road. A 20-30 minute track (a gentler zig-zag route opened 2022) leads from the Troup Picnic Lawn to a protective viewing platform built around the tree's roots.",
+    "transport": "Number 14 (Wilton) bus from central Wellington; about 15 minutes by car from the city centre. Walking/biking also possible; bikes not permitted on the trails themselves.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Viewed the actual photo (File:800_year_old_rimu_(6706301087).jpg): looking up an old-growth rimu trunk hung with epiphytes/perching lilies in dense native forest, consistent with Otari-Wilton's Bush's old-growth remnant. Wellington City Council's own news pages (official government source, used as one of two independent sources) record that this rimu was gifted the te reo name 'Moko' by local iwi in a July 2021 Matariki ceremony and was a 2024 NZ Tree of the Year finalist; NZ Herald independently covered the naming. Wikidata Q107394029, sourced to the New Zealand Tree Register (measured 21 Aug 2010), gives height 27.3m and diameter 177.6cm at that date; girth_cm here (558) is derived by us from that diameter via circumference=pi*diameter, not a directly measured girth, and this is flagged in case a directly measured girth turns up later. IMPORTANT caution for future passes: WebSearch's own AI summary for this tree garbled the Wikidata figures into 'width 5.58m', which is the girth figure divided out wrong and NOT what Wikidata actually says (177.6cm diameter); this is exactly the search-summary pitfall this rulebook warns about and was caught only by fetching Wikidata directly. Age '800 years' is repeated identically across WCC, NZ Herald and Wellington.Scoop as the site's own commonly cited figure, not derived by us here. History worth leading with: WCC's own account credits Bauhaus architect and early environmentalist Uncle Bob Fantl with going to court decades ago to stop this tree being felled, which is why it survived to become 'Wellington's oldest and tallest tree'; also the naming ceremony itself (Matariki 2021, local iwi choosing a name meaning something appropriate for what they read as a tree younger than Tane Mahuta) is a genuine, sourced anecdote. Alive and thriving: an actively maintained viewing platform, a 2022 track upgrade, and 2024 Tree of the Year finalist status are all recent, positive evidence. Destination-test read: an individually named tree, in a free public botanic garden, with a real preservation story and a 2024 national-competition finalist placing; clearly a reason to visit on its own. Its own place (nearest published tree 306km away). PUBLISHABLE."
+  }
+]
