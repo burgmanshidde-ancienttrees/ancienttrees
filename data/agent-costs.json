@@ -8911,6 +8911,24 @@
       "note": "4 stories and recognition lines written (aus_006-009), merged into data/cities/austin.json; intro/meta/FAQ counts updated 5->9 trees.",
       "wasted": 0,
       "brief_wrong": false
+    },
+    {
+      "target": "dallas",
+      "kind": "verify",
+      "tokens": 209705,
+      "trees": 3,
+      "note": "Discovered Dallas Historic Tree Program (City Council, 25 Oct 2023, Sec 51A-10.133), a genuine city register not previously documented in this file; 3 verified (a Comanche marker pecan, a bur oak, a post-oak-grove ensemble), Houston Campsite Oak lead enriched but correctly left unshipped (too far, belongs to a future Coppell page).",
+      "wasted": 0,
+      "brief_wrong": false
+    },
+    {
+      "target": "dallas",
+      "kind": "write",
+      "tokens": 119904,
+      "trees": 3,
+      "note": "3 stories and recognition lines written (dal_010-012), merged into data/cities/dallas.json; intro/meta/FAQ updated 9->12 trees, paid_entry set on dal_011.",
+      "wasted": 0,
+      "brief_wrong": false
     }
   ]
 }

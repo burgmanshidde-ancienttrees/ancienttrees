@@ -3,8 +3,8 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "dal_005",
-  "intro": "Two of the trees on this page stand in Dealey Plaza, and the shots fired at President Kennedy in 1963 passed through the canopy of one of them. The rest of Dallas is quieter and older: a bur oak of 250 years in Reverchon Park, another of 235 beside a spring in the Great Trinity Forest, a pecan that was saved from removal in 2009, and a grove in a park created in 1938 as one of five the city set aside for its Black residents.",
-  "meta_description": "Dallas's historic trees: the Dealey Plaza live oaks, a 250 year old bur oak in Reverchon Park, and a champion post oak in a pioneer cemetery.",
+  "intro": "Two of the trees on this page stand in Dealey Plaza, and the shots fired at President Kennedy in 1963 passed through the canopy of one of them. The rest of Dallas is quieter and older: a bur oak of 250 years in Reverchon Park, another of 235 beside a spring in the Great Trinity Forest, a bent pecan the Comanche Nation recognises as a trail marker, and a grove of post oaks in a downtown cemetery, standing since before the Constitution was signed.",
+  "meta_description": "Dallas's historic trees: the Dealey Plaza live oaks, a 250 year old bur oak, a Comanche marker tree, and a post oak grove older than the United States.",
   "question_answer": "The oldest tree in Dallas on this list is the Centennial Tree, a bur oak in Reverchon Park estimated at over 250 years, which puts it on that ground long before the city existed. It takes its name from the 1936 Texas Centennial celebration held at its foot. The bur oak beside Big Spring in the Great Trinity Forest is close behind at over 235 years, and stands next to the water source that drew people to this bend of the Trinity in the first place.",
   "question_meta": "The Centennial Tree, a bur oak of over 250 years in Reverchon Park, is the oldest tree on our Dallas list, older than the city itself.",
   "question_context": "Dallas was founded in 1841, so any tree here older than about 185 years was already standing when the first cabin went up, and two on this page are. Both are bur oaks, which is not a coincidence: the species is the one that holds on in the blackland prairie and along the Trinity bottoms, and it lives for centuries where the post oaks and pecans around it turn over faster. Ages in Texas come from the Texas Historic Tree Coalition and the state's Big Tree Registry, and both work from measured girth and growth rate rather than from ring counts, so treat every number on this page as a careful estimate rather than a birthday. What Dallas does have, unusually, is documentation of what it has lost. A state champion black willow at White Rock Lake was cut down by mistake in 2015, three Comanche marker trees have died since 1998, and a cottonwood at the Texas Discovery Gardens was removed as a hazard and turned into sculpture. None of those is on this list, because this list is living trees.",
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All of them. Every tree on this list stands in a public park, a public plaza or a public cemetery, with no gate and no ticket."
+      "a": "Most of them. Nine of the twelve stand in a public park, plaza or cemetery with no gate and no ticket. The Cherokee Park Tree stands inside Dallas Heritage Village, which charges a modest entry fee (free on Thursdays and the first Sunday of the month)."
     },
     {
       "q": "How exact are the pins?",
@@ -319,6 +319,103 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "dal_010",
+      "name": "The California Crossing Comanche Marker Tree",
+      "species": "Pecan (Carya illinoinensis)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "girth_cm": 208,
+      "location": {
+        "address": "California Crossing Park, near 1775 California Crossing Road, Dallas, TX 75220 (beside the Texas Army National Guard Armory, on the Elm Fork of the Trinity River)",
+        "latitude": 32.8681,
+        "longitude": -96.9207,
+        "neighbourhood": "Far Northwest Dallas / Elm Fork Trinity River Greenbelt"
+      },
+      "verified_sources": [
+        "https://txhtc.org/trees/california-crossing-comanche-marker-tree/",
+        "https://dallasexpress.com/city/historic-trees-designated-by-city-council/",
+        "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-92209",
+        "https://texashighways.com/culture/history/if-these-trees-could-talk-comanche-indian-marker-trees-texas/"
+      ],
+      "access": "Free. Stands in the public California Crossing Park (about 390 acres, part of the Elm Fork Trinity River Greenbelt), not inside the fenced Army National Guard armory grounds next door.",
+      "transport": "Far northwest Dallas; this is a car trip from downtown (roughly 15-20 minutes by car), not realistically reachable by DART rail or a short bus ride.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This pecan grew sideways on purpose, if the arborist who has studied it is right. Its trunk runs along the ground for about 25 feet before it turns and climbs, and Dallas arborist Steve Houser reads the scars on it as the marks of yucca rope: a flexible sapling, lashed down roughly 150 years ago so that it would point the way. That is what a Comanche marker tree is, a living signpost, bent young and left to grow into the shape of its instruction.\n\nThe name comes from California Crossing, a low-water ford on the Elm Fork of the Trinity River used by Native Americans, by early settlers and by travellers heading west in the 1849 Gold Rush. In 2013 the Comanche Nation Tribal Elder Council and the tribe's Language and Cultural Preservation Committee formally recognised the tree. Ten years later, on 25 October 2023, Dallas City Council named it among the city's first Historic Trees, which means nobody may remove it without the council's say.\n\nTwo live limbs rise from the bent trunk today, with signs of two more lost along the way. The measurements on record come from a 1997 survey: 43 feet tall, a crown 75 feet across, a trunk about 208 centimetres round. Those figures are 29 years old and the trunk has almost certainly kept growing, so if you have taped it more recently, tell us.\n\nThe armory next door is fenced off. The tree is not: it stands in the public park.",
+      "how_to_recognise": "You can recognise it by the trunk, which lies along the ground for about 25 feet before turning upright into two live limbs. It stands in California Crossing Park, outside the fence of the National Guard armory.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "dal_011",
+      "name": "The Cherokee Park Tree",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "not documented; the site itself predates the Republic of Texas era (pre-1845)",
+      "location": {
+        "address": "Dallas Heritage Village at Old City Park, 1515 South Harwood Street, Dallas, TX 75215",
+        "latitude": 32.77247,
+        "longitude": -96.78805,
+        "neighbourhood": "The Cedars"
+      },
+      "verified_sources": [
+        "https://www.dallasnews.com/news/commentary/2024/01/11/dallas-takes-an-unprecedented-step-to-save-its-historic-trees-and-we-all-missed-it/",
+        "https://dallasexpress.com/city/historic-trees-designated-by-city-council/",
+        "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-92209"
+      ],
+      "access": "Paid entry to Dallas Heritage Village (a modest fee, roughly $5-7 for adults; free Thursdays and on the first Sunday of the month). Grounds are a 20-acre outdoor walk-through living-history park with paved paths.",
+      "transport": "Cedars Station (DART Rail Red/Blue Line), about a 15 minute walk.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The ground under this bur oak was a campsite while Texas was still its own country. The Dallas Morning News and the Texas Historic Tree Coalition both describe the spot that way: a place people camped in the years of the Republic of Texas, between 1836 and 1845, before the state joined the Union.\n\nA generation later the land became Old City Park, established in 1876 as the first city park Dallas ever had. Today it is Dallas Heritage Village, twenty acres of living history laid out along paved paths, and the oak stands in the middle of it. The city grew up around the park, the park turned into a museum of the city's beginnings, and the tree stayed put through all of it.\n\nOn 25 October 2023 the City Council voted unanimously to give Dallas its first Historic Tree designations, six sites in all, and this oak is one of them. Under the city code it cannot now be removed without the council's authorisation.\n\nBur oaks carry the largest acorns of any North American oak, each sitting in a cup with a shaggy, fringed rim. Look down in autumn and you may find one.\n\nWhat nobody has published is anything about this particular tree's size: no age, no girth, no height, and no word on whether it was already growing when those campers came through. If you have stood beside it with a tape measure, tell us.",
+      "how_to_recognise": "You can recognise it by the bur oak's big leaves, broad near the tip and cut deep towards the stem, and its acorns in fringed cups. It stands in the middle of the Old City Park grounds of Dallas Heritage Village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "paid_entry": true
+    },
+    {
+      "id": "dal_012",
+      "name": "The Post Oak Grove of Pioneer Park Cemetery",
+      "species": "Post Oak (Quercus stellata)",
+      "age_estimate": "the oldest specimens up to roughly 250-260 years",
+      "age_min": 200,
+      "age_max": 260,
+      "location": {
+        "address": "Pioneer Park Cemetery, 1300 Young Street, Dallas, TX 75202 (adjacent to the Kay Bailey Hutchison Convention Center and Pioneer Plaza)",
+        "latitude": 32.77592,
+        "longitude": -96.80014,
+        "neighbourhood": "Downtown Dallas / Convention Center District"
+      },
+      "verified_sources": [
+        "https://txhtc.org/trees/post-oak-grove-at-pioneer-park/",
+        "https://dallasexpress.com/city/historic-trees-designated-by-city-council/",
+        "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-92209",
+        "https://www.dallasnews.com/news/commentary/2024/01/11/dallas-takes-an-unprecedented-step-to-save-its-historic-trees-and-we-all-missed-it/"
+      ],
+      "access": "Free, open cemetery grounds directly beside Pioneer Plaza; visitors are welcome to walk the grove but asked to be respectful of the graves of Dallas's founding families.",
+      "transport": "Convention Center / West End area, downtown; about a 10 minute walk from Union Station (DART Rail / Trinity Railway Express / streetcar).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The biggest oaks in this cemetery were already growing when the United States Constitution was signed in 1787, by the reckoning of the Texas Historic Tree Coalition and the Dallas Express. That puts the oldest somewhere around 250 years, a rough figure rather than a measured one: nobody has published a girth for any single trunk here.\n\nThey are post oaks, about 35 of them by the city's count and 40 by the coalition's, and they are among the last of the Post Oak Savanna left in any city, the open oak country that once ran from Oklahoma down into North Texas. Downtown Dallas covered the rest of it. This stand is on cemetery ground.\n\nPioneer Park Cemetery dates from 1849 and gathers what were once four burial grounds, the Masonic, the Odd Fellows', the Jewish and the City cemeteries, into about four acres. Many of Dallas's first settlers and founders are buried under these trees. The oldest oaks were here before any of them, and have since watched the city arrive, the towers go up and the convention centre settle in next door.\n\nOn 25 October 2023 the City Council made the grove one of Dallas's first Historic Tree designations, protecting the whole stand as a single entry rather than as 35 separate trunks. There is no named champion to hunt for. The point is to walk in among the headstones and stand under all of them at once, quietly, because these are family graves.",
+      "how_to_recognise": "You can recognise it by the headstones beneath it: the grove is the stand of some 35 post oaks shading the old cemetery at 1300 Young Street, beside Pioneer Plaza and the Kay Bailey Hutchison Convention Center.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
