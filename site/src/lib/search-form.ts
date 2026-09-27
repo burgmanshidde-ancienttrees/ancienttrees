@@ -117,7 +117,7 @@ export const SEARCH_WIDGET_JS = `
     }
     html += '<div class="ats-head">Near you</div>' +
             row('Trees near me', 'open the map at your location', '/explore#near', 'ats-near');
-    // The most VISITED pages, not the deepest (Hidde, 2026-09-26): `v` is
+    // The most VISITED pages, not the deepest (Hidde, 2026-09-26): the v field is
     // their search traffic, refreshed daily. Tree count only breaks ties and
     // fills in for pages nobody has visited yet. The app sorts the same way.
     var top = IDX.c.slice().sort(function(a, b) {
