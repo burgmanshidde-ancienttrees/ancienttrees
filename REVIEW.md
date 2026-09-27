@@ -59,6 +59,38 @@ this is the read. Roughly 30 commits of today's work, including the digest,
 the walking-routes fix and both Read-more commits, have not reached
 production while this blocks.
 
+Read `/tmp/appshots-list.txt`'s six rotated screenshots (iPhone SE, iOS
+26.2): collection (signed-out empty-state hero), contribute (sign-in sheet
+for sending a report), directions (the Apple Maps/Google Maps action sheet),
+explore (Discover tab home), feedback (same sign-in sheet, from the feedback
+flow) and map-full (the map tab's sheet pulled to full height, Amsterdam).
+Five are clean: no contradicted promises, no builder-speak, the two sign-in
+sheets read identically to each other as they should (CONVENTIONS.md's
+sign-in entry) and match PRODUCT_COPY.md's reader-as-subject register.
+
+**WARN — APP — the floating "back to map" pill lands on top of a tree
+card's own content, not beside it.** `map-full.png` (Amsterdam, sheet at
+full height, scrolled to the Wych Elm card): the card has no photograph, so
+`TreeCard.swift`'s `noPhoto` view draws its species silhouette, the tree's
+name and "No photograph yet" stacked in the middle of a solid-colour tile
+(`TreeCard.swift:148-157`). `MapTab.swift`'s `.overlay(alignment: .bottom)`
+"Map" button (`map.fill` icon, `.regularMaterial` capsule, `padding(.bottom,
+70)`, shown only `if sheetHeight == .full`) is pinned to the screen rather
+than the scroll content, and at this scroll position it sits directly over
+that card, between the species icon and the tree's name. The result on
+screen is a green tile showing a white icon, then what reads as a "Map"
+label sitting where the tree's own name belongs, with "Wych Elm" pushed down
+behind the tab bar. Nothing here is the CLIPPED/SMALL/DRIFT class appfit.py
+already gates (the button is exactly where 2026-08-25's ruling put it, and
+by itself it is fine); the issue is that a persistent global control can
+land mid-card and read as if it belongs to the tree underneath it, which is
+the "control with no obvious purpose" this duty asks to be checked for. A
+person scrolling to this exact position sees a card that appears to offer
+"Map" as its label. Whether this is worth a fix (e.g. dimming or fading the
+button while it overlaps card content, or confirming this is an accepted
+cost of the Google Maps/Airbnb pattern it copies) is a judgement call rather
+than a clear violation, so this is a WARN and not a BLOCKER.
+
 ---
 
 ## 2026-09-26
