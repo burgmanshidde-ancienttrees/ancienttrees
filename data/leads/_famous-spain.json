@@ -1,266 +1,299 @@
 {
- "country": "Spain",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Olmos Centenarios de Cabeza del Buey",
-   "lat": 38.70572,
-   "lng": -5.32404,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2018_Ancient_elms_of_Cabeza_Buey_ES.jpg",
-    "https://commons.wikimedia.org/wiki/File:Olmos_Centenarios_de_Cabeza_del_Buey_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Olmos_Centenarios_de_Cabeza_del_Buey_02.jpg"
-   ],
-   "status": "verified",
-   "verified_id": "cdb_001",
-   "verified_file": "data/research/_famous-spain-verified.json",
-   "verify_note": "2026-09-10 verification pass: seven Ulmus minor elms around the Ermita/Santuario de Belen, judged a single compact collectible ensemble (Lomanstraat precedent), alive, officially designated Arbol Singular de Extremadura (Decreto 140/2005). Girth not found anywhere; age given only as 'over 150 years'."
-  },
-  {
-   "name": "Kisulabe oak",
-   "lat": 43.0027,
-   "lng": -1.7976,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kisulabeko_haritza_-_Jauntsarats_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kisulabeko_haritza_-_Jauntsarats_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kisulabeko_haritza_-_Jauntsarats_03.jpg"
-   ],
-   "status": "RESOLVED 2026-09-18, already published as data/cities/pamplona.json pam_004 (\"The Oaks of Jauntsarats\"); coordinates match to five decimal places and the tree's own fame record on pam_004 names its source as \"Kisulabe oak\" (Wikidata Q106862688)",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Pino de las dos Pernadas, Vilaflor de Chasna",
-   "lat": 28.166356,
-   "lng": -16.637261,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Pino_Gordo,_Vilaflor_de_Chasna,_Tenerife_04.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pino_de_las_dos_Pernadas,_Vilaflor_de_Chasna,_Tenerife_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pino_de_las_dos_Pernadas,_Vilaflor_de_Chasna,_Tenerife_02.jpg"
-   ],
-   "status": "RESOLVED 2026-09-18, already published as data/cities/tenerife.json tfe_003 (coordinates match to five decimal places)",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Pino Gordo, Vilaflor de Chasna",
-   "lat": 28.16518611,
-   "lng": -16.63658611,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:At_Tenerife_2023_785.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kanarische_Kiefer_bei_Vilaflor,_Teneriffa.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pino_Gordo,_Vilaflor_de_Chasna,_Tenerife_01.jpg"
-   ],
-   "status": "RESOLVED 2026-09-18, already published as data/cities/tenerife.json tfe_002 (coordinates match to five decimal places)",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Carbayón de Valentín",
-   "lat": 43.304325,
-   "lng": -6.520509,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Carbayon_de_Valentin_02.JPG",
-    "https://commons.wikimedia.org/wiki/File:Carbay%C3%B3n_de_Valent%C3%ADn.JPG",
-    "https://commons.wikimedia.org/wiki/File:Detalle_tronco_carbay%C3%B3n_Valent%C3%ADn.JPG"
-   ],
-   "status": "RESOLVED 2026-09-18, published as data/cities/valentin-tineo.json cbv_001 (single-tree place page, Carbayon de Valentin)",
-   "verified_id": "cbv_001",
-   "verified_file": "data/research/_famous-spain-verified.json",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "verify_note": "2026-09-18 verification pass: Asturias Natural Monument since 1995, documented before 1492, believed oldest oak in Asturias, one of Spain's Fundacion Biodiversidad '100 most singular trees'. 10m girth flagged as extreme but agreed by two sources. No cluster nearby (rural western Asturias); reads as a solitary single-tree candidate on its own historical/champion-tree merit."
-  },
-  {
-   "name": "Carrasca milenaria de Lecina",
-   "lat": 42.22975,
-   "lng": 0.03846,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2021_Millennial_Carrasca_of_Lecina_ES.jpg",
-    "https://commons.wikimedia.org/wiki/File:Carrasca_milenaria_de_Lecina.jpg",
-    "https://commons.wikimedia.org/wiki/File:PPA2587_Encina_milenaria_de_Lecina.jpg"
-   ],
-   "status": "verified",
-   "verified_id": "lec_001",
-   "verified_file": "data/research/_famous-spain-verified.json",
-   "species": "Holm Oak, carrasca/ballota form (Quercus ilex subsp. ballota)",
-   "species_basis": "confirmed to subspecies via Wikidata Q109316184",
-   "verify_note": "2026-09-10 verification pass: European Tree of the Year 2021, Spain's Tree of the Year 2020, own dedicated tourism site. Flagged for minor girth (610 vs 700cm) and age (1000 vs 1100yr) conflicts between sources; not large enough to doubt the tree."
-  },
-  {
-   "name": "Encina Tres Patas, Mendaza",
-   "lat": 42.64309,
-   "lng": -2.23215,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2020_The_Three-Legged_Spanish_Oak_ES.jpg",
-    "https://commons.wikimedia.org/wiki/File:Encino_de_las_Tres_Patas,_Mendaza_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Encino_de_las_Tres_Patas,_Mendaza_02.jpg"
-   ],
-   "status": "verified",
-   "verified_id": "mza_001",
-   "verified_file": "data/research/_famous-spain-verified.json",
-   "species": "Holm Oak (Quercus ilex)",
-   "species_basis": "confirmed via Spanish Wikipedia and Wikidata Q584899",
-   "verify_note": "2026-09-10 verification pass: Natural Monument of Navarre since 1991 (Foral Decree 165/1991), national 'oldest tree' prize 2007, European Tree of the Year 2020 finalist. No source conflicts found."
-  },
-  {
-   "name": "Eraulgo artea",
-   "lat": 42.716667,
-   "lng": -2.05,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Eraul_eta_artea.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eraul_eta_artea2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eraul_eta_artea3.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Garaiko artea",
-   "lat": 43.197819,
-   "lng": -2.625761,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Garai_Garaiko_artea.jpg",
-    "https://commons.wikimedia.org/wiki/File:Garai_Garaiko_artea_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Garai_Garaiko_artea_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gernikako Arbola",
-   "lat": 43.313189,
-   "lng": -2.679757,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1909-07-11,_Gede%C3%B3n,_Guernicaco_arbola,_o_el_%C3%A1rbol_de_Guernica,_para_decirlo_en_castellano,_Medina_Vera.jpg",
-    "https://commons.wikimedia.org/wiki/File:Arbol_de_Gernika_d%C3%ADa.jpg",
-    "https://commons.wikimedia.org/wiki/File:Arbol_de_Gernika_y_La_Tribuna._Casa_de_Juntas_de_Gernika-Gernikako_Batzarretxea._Gernika-Lumo,_Vizcaya-Bizkaia..JPG"
-   ],
-   "status": "RESOLVED 2026-09-18, published as data/cities/guernica.json grk_001 (single-tree place page, Gernikako Arbola; page states plainly the standing trunk is young, planted 2015, fifth in a documented line)",
-   "verified_id": "grk_001",
-   "verified_file": "data/research/_famous-spain-verified.json",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "verify_note": "2026-09-18 verification pass: this is a single-tree destination on fame/legend, not on trunk age -- the living oak is the fifth of a documented dynasty, planted 2015, standing in the Casa de Juntas garden in Gernika-Lumo where Basque self-government was sworn for centuries and where the third tree famously survived the 1937 bombing. Recommend its own small place page (like cabeza-del-buey.json, mendaza.json, muxika.json), clearly stating the current trunk's youth, rather than folding it into Bilbao (too far, ~35km) or any cluster."
-  },
-  {
-   "name": "Mesto de las Rozas",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Elmesto.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Ondategiko Haritza",
-   "lat": 42.95363042,
-   "lng": -2.73524306,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza_3.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Roble Escarcio",
-   "lat": 42.330542,
-   "lng": -3.295127,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Roble_Escarcio.webm",
-    "https://commons.wikimedia.org/wiki/File:Roble_Escarcio_front.jpg",
-    "https://commons.wikimedia.org/wiki/File:Roble_Escenario.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Urkietako artea",
-   "lat": 43.28164,
-   "lng": -2.71034,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Muxika_San_Roman_Besangiz01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Muxika_San_Roman_Besangiz02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Muxika_San_Roman_Besangiz03.jpg"
-   ],
-   "status": "verified",
-   "verified_id": "urk_001",
-   "verified_file": "data/research/_famous-spain-verified.json",
-   "species": "Holm Oak (Quercus ilex subsp. ilex)",
-   "species_basis": "confirmed via paisajesdebizkaia.blogspot.com and floresyplantas.net",
-   "verify_note": "2026-09-10 verification pass: real train station (Muxika, Euskotren E4) close by, but honest journey time from Bilbao is 45-50 minutes, past the ~30-minute day-trip boundary, so it does not fold into Bilbao's page as written; whether it earns its own page (low measured demand, no major awards, only a 1995 regional protection decree) is a placement call for whoever assembles the site, not decided here. No age found or safely derivable; girth 430cm corrected from a mislabelled 'diameter' figure on first read."
-  },
-  {
-   "name": "Aprisquillo Pine",
-   "lat": 40.35428,
-   "lng": -4.63591,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2017_Aprisquillo_Pine_ES.jpg"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Olmo de Navajas",
-   "lat": 39.87777,
-   "lng": -0.50708,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2019_Elm_of_Navajas_ES.jpg",
-    "https://commons.wikimedia.org/wiki/File:Branca_de_l%27om_de_Navaixes.JPG",
-    "https://commons.wikimedia.org/wiki/File:Brancatge_de_l%27om_de_Navaixes.JPG"
-   ],
-   "status": "lead",
-   "species": "Elm (Ulmus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Pino-roble de Canicosa de la Sierra",
-   "lat": 41.93133,
-   "lng": -3.04235,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2016_Canicosa%C2%B4s_Pine-Oak_ES.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pino-roble.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pinoroble2.jpg"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "L'Om del Trinquet",
-   "lat": 42.477259,
-   "lng": 0.715804,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Om_del_Trinquet.jpg",
-    "https://commons.wikimedia.org/wiki/File:Vilaller,_om_del_trinquet_01.JPG",
-    "https://commons.wikimedia.org/wiki/File:Vilaller,_om_del_trinquet_02.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Om centenari de Millena",
-   "lat": 38.730569,
-   "lng": -0.363691,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Arrels_de_l%27om_centenari_de_Millena.JPG",
-    "https://commons.wikimedia.org/wiki/File:Branques_de_l%27om_de_Millena.JPG",
-    "https://commons.wikimedia.org/wiki/File:Escor%C3%A7a_de_l%27om_de_Millena.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Om de la Plana",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:OM_DE_LA_PLANA_-_TARREGA_-_IB-431.JPG",
-    "https://commons.wikimedia.org/wiki/File:OM_DE_LA_PLANA_-_TARREGA_-_IB-432.JPG",
-    "https://commons.wikimedia.org/wiki/File:OM_DE_LA_PLANA_-_TARREGA_-_IB-433.JPG"
-   ],
-   "status": "lead"
-  }
- ]
+  "country": "Spain",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Olmos Centenarios de Cabeza del Buey",
+      "lat": 38.70572,
+      "lng": -5.32404,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2018_Ancient_elms_of_Cabeza_Buey_ES.jpg",
+        "https://commons.wikimedia.org/wiki/File:Olmos_Centenarios_de_Cabeza_del_Buey_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Olmos_Centenarios_de_Cabeza_del_Buey_02.jpg"
+      ],
+      "status": "verified",
+      "verified_id": "cdb_001",
+      "verified_file": "data/research/_famous-spain-verified.json",
+      "verify_note": "2026-09-10 verification pass: seven Ulmus minor elms around the Ermita/Santuario de Belen, judged a single compact collectible ensemble (Lomanstraat precedent), alive, officially designated Arbol Singular de Extremadura (Decreto 140/2005). Girth not found anywhere; age given only as 'over 150 years'."
+    },
+    {
+      "name": "Kisulabe oak",
+      "lat": 43.0027,
+      "lng": -1.7976,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kisulabeko_haritza_-_Jauntsarats_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kisulabeko_haritza_-_Jauntsarats_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kisulabeko_haritza_-_Jauntsarats_03.jpg"
+      ],
+      "status": "RESOLVED 2026-09-18, already published as data/cities/pamplona.json pam_004 (\"The Oaks of Jauntsarats\"); coordinates match to five decimal places and the tree's own fame record on pam_004 names its source as \"Kisulabe oak\" (Wikidata Q106862688)",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Pino de las dos Pernadas, Vilaflor de Chasna",
+      "lat": 28.166356,
+      "lng": -16.637261,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Pino_Gordo,_Vilaflor_de_Chasna,_Tenerife_04.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pino_de_las_dos_Pernadas,_Vilaflor_de_Chasna,_Tenerife_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pino_de_las_dos_Pernadas,_Vilaflor_de_Chasna,_Tenerife_02.jpg"
+      ],
+      "status": "RESOLVED 2026-09-18, already published as data/cities/tenerife.json tfe_003 (coordinates match to five decimal places)",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Pino Gordo, Vilaflor de Chasna",
+      "lat": 28.16518611,
+      "lng": -16.63658611,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:At_Tenerife_2023_785.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kanarische_Kiefer_bei_Vilaflor,_Teneriffa.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pino_Gordo,_Vilaflor_de_Chasna,_Tenerife_01.jpg"
+      ],
+      "status": "RESOLVED 2026-09-18, already published as data/cities/tenerife.json tfe_002 (coordinates match to five decimal places)",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Carbayón de Valentín",
+      "lat": 43.304325,
+      "lng": -6.520509,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Carbayon_de_Valentin_02.JPG",
+        "https://commons.wikimedia.org/wiki/File:Carbay%C3%B3n_de_Valent%C3%ADn.JPG",
+        "https://commons.wikimedia.org/wiki/File:Detalle_tronco_carbay%C3%B3n_Valent%C3%ADn.JPG"
+      ],
+      "status": "RESOLVED 2026-09-18, published as data/cities/valentin-tineo.json cbv_001 (single-tree place page, Carbayon de Valentin)",
+      "verified_id": "cbv_001",
+      "verified_file": "data/research/_famous-spain-verified.json",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "verify_note": "2026-09-18 verification pass: Asturias Natural Monument since 1995, documented before 1492, believed oldest oak in Asturias, one of Spain's Fundacion Biodiversidad '100 most singular trees'. 10m girth flagged as extreme but agreed by two sources. No cluster nearby (rural western Asturias); reads as a solitary single-tree candidate on its own historical/champion-tree merit."
+    },
+    {
+      "name": "Carrasca milenaria de Lecina",
+      "lat": 42.22975,
+      "lng": 0.03846,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2021_Millennial_Carrasca_of_Lecina_ES.jpg",
+        "https://commons.wikimedia.org/wiki/File:Carrasca_milenaria_de_Lecina.jpg",
+        "https://commons.wikimedia.org/wiki/File:PPA2587_Encina_milenaria_de_Lecina.jpg"
+      ],
+      "status": "verified",
+      "verified_id": "lec_001",
+      "verified_file": "data/research/_famous-spain-verified.json",
+      "species": "Holm Oak, carrasca/ballota form (Quercus ilex subsp. ballota)",
+      "species_basis": "confirmed to subspecies via Wikidata Q109316184",
+      "verify_note": "2026-09-10 verification pass: European Tree of the Year 2021, Spain's Tree of the Year 2020, own dedicated tourism site. Flagged for minor girth (610 vs 700cm) and age (1000 vs 1100yr) conflicts between sources; not large enough to doubt the tree."
+    },
+    {
+      "name": "Encina Tres Patas, Mendaza",
+      "lat": 42.64309,
+      "lng": -2.23215,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2020_The_Three-Legged_Spanish_Oak_ES.jpg",
+        "https://commons.wikimedia.org/wiki/File:Encino_de_las_Tres_Patas,_Mendaza_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Encino_de_las_Tres_Patas,_Mendaza_02.jpg"
+      ],
+      "status": "verified",
+      "verified_id": "mza_001",
+      "verified_file": "data/research/_famous-spain-verified.json",
+      "species": "Holm Oak (Quercus ilex)",
+      "species_basis": "confirmed via Spanish Wikipedia and Wikidata Q584899",
+      "verify_note": "2026-09-10 verification pass: Natural Monument of Navarre since 1991 (Foral Decree 165/1991), national 'oldest tree' prize 2007, European Tree of the Year 2020 finalist. No source conflicts found."
+    },
+    {
+      "name": "Eraulgo artea",
+      "lat": 42.716667,
+      "lng": -2.05,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Eraul_eta_artea.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eraul_eta_artea2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eraul_eta_artea3.jpg"
+      ],
+      "status": "verified",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verified_id": "erl_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes."
+    },
+    {
+      "name": "Garaiko artea",
+      "lat": 43.197819,
+      "lng": -2.625761,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Garai_Garaiko_artea.jpg",
+        "https://commons.wikimedia.org/wiki/File:Garai_Garaiko_artea_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Garai_Garaiko_artea_2.jpg"
+      ],
+      "status": "verified",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verified_id": "gar_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes."
+    },
+    {
+      "name": "Gernikako Arbola",
+      "lat": 43.313189,
+      "lng": -2.679757,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:1909-07-11,_Gede%C3%B3n,_Guernicaco_arbola,_o_el_%C3%A1rbol_de_Guernica,_para_decirlo_en_castellano,_Medina_Vera.jpg",
+        "https://commons.wikimedia.org/wiki/File:Arbol_de_Gernika_d%C3%ADa.jpg",
+        "https://commons.wikimedia.org/wiki/File:Arbol_de_Gernika_y_La_Tribuna._Casa_de_Juntas_de_Gernika-Gernikako_Batzarretxea._Gernika-Lumo,_Vizcaya-Bizkaia..JPG"
+      ],
+      "status": "RESOLVED 2026-09-18, published as data/cities/guernica.json grk_001 (single-tree place page, Gernikako Arbola; page states plainly the standing trunk is young, planted 2015, fifth in a documented line)",
+      "verified_id": "grk_001",
+      "verified_file": "data/research/_famous-spain-verified.json",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "verify_note": "2026-09-18 verification pass: this is a single-tree destination on fame/legend, not on trunk age -- the living oak is the fifth of a documented dynasty, planted 2015, standing in the Casa de Juntas garden in Gernika-Lumo where Basque self-government was sworn for centuries and where the third tree famously survived the 1937 bombing. Recommend its own small place page (like cabeza-del-buey.json, mendaza.json, muxika.json), clearly stating the current trunk's youth, rather than folding it into Bilbao (too far, ~35km) or any cluster."
+    },
+    {
+      "name": "Mesto de las Rozas",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Elmesto.jpg"
+      ],
+      "status": "blocked",
+      "blocked_reason": "Known dead. This is Montalban de Cordoba's 'Mesto de las Rozas', a Quercus ilex x Quercus suber natural hybrid in the Las Rozas area (Campina Cordobesa), about 7km from the town (approx. municipality centre 37.5477, -4.7430; no tree-level coordinate exists or is needed now). es.wikipedia.org/wiki/Mesto_de_las_Rozas (fetched directly) states the trunk split and the whole crown fell in a severe storm in summer 1995; only the trunk and a regrowth shoot remain on site. The one photo we hold, File:Elmesto.jpg, is captioned on Commons 'El Mesto de las Rozas. Anos 80' (the tree in the 1980s), i.e. it depicts the tree BEFORE it fell, not a current living specimen; publishing it as a photo of a living tree would misrepresent a historical image as current. The brief's guess that 'Mesto' was an Asturias/Cantabria term was wrong; it is a Cordoba/Andalusia hybrid-oak name and this is a different region entirely from the other three candidates in this batch. Hard rule: never publish a tree known to be dead. This can appear only as historical context inside a story about the region, never as a collectible entry. Verification pass 2026-09-27."
+    },
+    {
+      "name": "Ondategiko Haritza",
+      "lat": 42.95363042,
+      "lng": -2.73524306,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza_3.jpg"
+      ],
+      "status": "verified",
+      "verified_id": "ond_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes."
+    },
+    {
+      "name": "Roble Escarcio",
+      "lat": 42.330542,
+      "lng": -3.295127,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Roble_Escarcio.webm",
+        "https://commons.wikimedia.org/wiki/File:Roble_Escarcio_front.jpg",
+        "https://commons.wikimedia.org/wiki/File:Roble_Escenario.jpg"
+      ],
+      "status": "verified",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verified_id": "esc_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes."
+    },
+    {
+      "name": "Urkietako artea",
+      "lat": 43.28164,
+      "lng": -2.71034,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Muxika_San_Roman_Besangiz01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Muxika_San_Roman_Besangiz02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Muxika_San_Roman_Besangiz03.jpg"
+      ],
+      "status": "verified",
+      "verified_id": "urk_001",
+      "verified_file": "data/research/_famous-spain-verified.json",
+      "species": "Holm Oak (Quercus ilex subsp. ilex)",
+      "species_basis": "confirmed via paisajesdebizkaia.blogspot.com and floresyplantas.net",
+      "verify_note": "2026-09-10 verification pass: real train station (Muxika, Euskotren E4) close by, but honest journey time from Bilbao is 45-50 minutes, past the ~30-minute day-trip boundary, so it does not fold into Bilbao's page as written; whether it earns its own page (low measured demand, no major awards, only a 1995 regional protection decree) is a placement call for whoever assembles the site, not decided here. No age found or safely derivable; girth 430cm corrected from a mislabelled 'diameter' figure on first read."
+    },
+    {
+      "name": "Aprisquillo Pine",
+      "lat": 40.35428,
+      "lng": -4.63591,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2017_Aprisquillo_Pine_ES.jpg"
+      ],
+      "status": "verified",
+      "species": "Spanish Black Pine (Pinus nigra subsp. salzmannii)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verified_id": "apr_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: Pino del Aprisquillo, La Adrada, Avila. Spain's Tree of the Year 2016, European Tree of the Year 2017 finalist. Four sources agree on species and general dimensions (girth 500-590cm, height 25-30m per three sources, one outlier at 43m), age given vaguely as 'about 400 years' / '350 years' across sources. Location confirmed via a geotagged, provincial-government-credited Commons photo matching this lead's own coordinate exactly. 85km from Madrid, no public transport, standalone single-famous-tree candidate."
+    },
+    {
+      "name": "Olmo de Navajas",
+      "lat": 39.87777,
+      "lng": -0.50708,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2019_Elm_of_Navajas_ES.jpg",
+        "https://commons.wikimedia.org/wiki/File:Branca_de_l%27om_de_Navaixes.JPG",
+        "https://commons.wikimedia.org/wiki/File:Brancatge_de_l%27om_de_Navaixes.JPG"
+      ],
+      "status": "verified",
+      "species": "Field Elm (Ulmus minor)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verified_id": "nvj_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: Olmo de Navajas, Plaza del Olmo, Navajas, Castellon. Spain's Tree of the Year 2019. Three sources agree: planted 1636 (documented planting date for this specimen, not a bridge claim), girth ~630-650cm, height disputed (13.87m vs 19m across sources, flagged), notably unaffected by Dutch elm disease. Location confirmed to five decimals by both a geotagged Commons photo and this tree's own dedicated Wikidata item (Q105762033). 47km from Valencia with no fast transit link; standalone single-famous-tree candidate, strongest-pinned of the batch."
+    },
+    {
+      "name": "Pino-roble de Canicosa de la Sierra",
+      "lat": 41.93133,
+      "lng": -3.04235,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2016_Canicosa%C2%B4s_Pine-Oak_ES.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pino-roble.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pinoroble2.jpg"
+      ],
+      "status": "verified",
+      "species": "Pyrenean Oak (Quercus pyrenaica) with a Scots Pine (Pinus sylvestris) growing from its hollow trunk",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verified_id": "pcs_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: Pino-Roble de Canicosa de la Sierra, Burgos. A living oak/pine symbiosis (pine germinated inside the oak's hollow trunk), not a single tree; treated as one collectible ensemble. Fifth place, European Tree of the Year 2016. Four sources agree on ages (oak ~250yr, pine ~130yr) and the formation story; the most detailed source (canicosa.info) gives oak girth 340cm, pine girth 200cm at 2.9m, and notes the oak is in active decline with no conservation measures, i.e. alive but genuinely fragile. Location confirmed within ~100m by two independent GPS fixes. No cluster or nearby published city; standalone single-famous-tree candidate on rarity/story rather than size."
+    },
+    {
+      "name": "L'Om del Trinquet",
+      "lat": 42.477259,
+      "lng": 0.715804,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Om_del_Trinquet.jpg",
+        "https://commons.wikimedia.org/wiki/File:Vilaller,_om_del_trinquet_01.JPG",
+        "https://commons.wikimedia.org/wiki/File:Vilaller,_om_del_trinquet_02.JPG"
+      ],
+      "status": "blocked",
+      "verified_id": "trq_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: BLOCKED, dead. Official Generalitat de Catalunya register (AM 05.245.01) states the main trunk died in the late 1990s; a small root-sucker sapling from 2008 is now standing but is not remarkable. See out/tmp/famousspain-batchC.json for full notes."
+    },
+    {
+      "name": "Om centenari de Millena",
+      "lat": 38.730569,
+      "lng": -0.363691,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Arrels_de_l%27om_centenari_de_Millena.JPG",
+        "https://commons.wikimedia.org/wiki/File:Branques_de_l%27om_de_Millena.JPG",
+        "https://commons.wikimedia.org/wiki/File:Escor%C3%A7a_de_l%27om_de_Millena.JPG"
+      ],
+      "status": "verified",
+      "species": "Field Elm (Ulmus minor)",
+      "verified_id": "mll_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: verified, flagged (no official register listing; three independent web sources agree). Girth ~530cm, age vaguely 'roughly 300 years' from sources (an 1812-planting theory in one source is speculation, not used). Called the last healthy plaza elm in Alicante province, having survived Dutch elm disease. location_precision approximate: given coordinate is the village/OSM-boundary centroid, not a tree-level fix (no geotagged photo found); church square is ~22m away. 65km from Alicante with no transit link, no nearby cluster; destination call left open. See out/tmp/famousspain-batchC.json for full notes."
+    },
+    {
+      "name": "Om de la Plana",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:OM_DE_LA_PLANA_-_TARREGA_-_IB-431.JPG",
+        "https://commons.wikimedia.org/wiki/File:OM_DE_LA_PLANA_-_TARREGA_-_IB-432.JPG",
+        "https://commons.wikimedia.org/wiki/File:OM_DE_LA_PLANA_-_TARREGA_-_IB-433.JPG"
+      ],
+      "status": "blocked",
+      "species": "Field Elm (Ulmus minor)",
+      "verified_id": "trr_001",
+      "verified_file": "data/research/famousspain-verified.json",
+      "verify_note": "2026-09-27 verification pass: BLOCKED, dead. Official Generalitat de Catalunya register (AM 38.217.01) declared it monumental in 1995 as one of the few large elms then unaffected by Dutch elm disease; a virulent 2007 infection killed it. Register's conservation status (updated 2022) reads 'mort i en queden restes al lloc' (dead, remains in situ). See out/tmp/famousspain-batchC.json for full notes."
+    }
+  ]
 }
