@@ -13,6 +13,54 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-27
+
+Reviewed commits since the last review (2026-09-26, through `d67ff563`)
+through HEAD (`121d82cf`, with `origin/main` two commits further ahead at
+`60c7a649`): a US-first assembly-line day (Fort Worth's Turner Oak, Portland
+deepened 20→24 on heritage-register trees, Los Angeles deepened, New Zealand
+and Portugal write passes, several Tree-of-the-Year and famous-tree verify
+batches) plus a viewing-pass day for the US photo backlog (168 candidates
+swept, 18 approved across two passes, the rest held or rejected on identity),
+the Texas Live Oak species page closing the last page gap, the daily digest
+and re-ranked queue, and an app/web pair for a "Read more" clamp on the tree
+page's story/access/transport lines. Confirmed the 2026-09-26 BLOCKER (the
+General Sherman-style double age on ranked-collection cards) is genuinely
+fixed: `TreeCard.astro`'s new `omitAge` prop is set on every age-ranked mode,
+and the built `united-states/california.html` now shows the card's age
+exactly once. Sampled 400 of 16,731 built pages for em dashes and banned
+words: none, beside the one already-cleared proper-name case (Savannah's
+"Majestic Oak").
+
+**BLOCKER — deploy has been failing for three hours on a false positive, and
+recent work is not live.** `gh run list --workflow deploy.yml` shows every
+run since `f1ac63f6` (09:22 UTC) failing or being cancelled into a failure,
+the newest at `60c7a649` (12:12 UTC, still red). The failing step is
+`scripts/qa.py`'s `check_photo_resolution()`: `QA FAILED: ... 1 city hero
+photo(s) soft while a bigger one is available: New Orleans: hero The
+McDonogh Oak is 375px while a 3024px photo sits in the same city`. This is a
+false alarm, not a real hero problem. `data/cities/new-orleans.json` records
+`hero_tree_id: "nol_001"` (the McDonogh Oak), and that tree's `photo.status`
+is `"held"` with the note "cannot tell it is the McDonogh Oak", set by
+today's `f1ac63f6` viewing pass (before that commit the field was `status:
+"missing"`, `url: null`, which is why the check never fired before). CLAUDE.md
+is explicit that `held` "keeps a photo in the file and off the site," and the
+real page-rendering path (`site/src/lib/images.ts`'s `cityFaceTree`/
+`faceRank`, via `usablePhoto()`) already honours that: the built
+`new-orleans.html`'s `og:image` and every rendered photo on the page is the
+approved Dueling Oak picture, never the held McDonogh one. `check_photo_
+resolution()` in scripts/qa.py is the one place that does not check
+`photo.status` before reading `hero_tree_id`'s width, so it is grading a
+photo the site never shows. The fix is narrow (skip a hero whose photo is not
+`approved`), but I fix nothing per this role; flagging it here per rung 2
+("the site may be broken; read the failing log before anything else") since
+`python3 scripts/health.py` already surfaces "Build and deploy: failure" and
+this is the read. Roughly 30 commits of today's work, including the digest,
+the walking-routes fix and both Read-more commits, have not reached
+production while this blocks.
+
+---
+
 ## 2026-09-26
 
 Reviewed commits since the last review (2026-09-25, `7e3a5626`) through HEAD
