@@ -10,6 +10,65 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - Finished the us-photos claim: 8 US trees get a lead photo
+
+Picked up where an earlier attempt in this same window stopped early with
+one claim still open (`us-photos`, a viewing pass on the 168-candidate US
+Commons/iNaturalist sweep). Fetched the actual candidate images with
+`photo_fetch.py` for the ten US cities/parks in that sweep and dispatched a
+photo-judge agent to look at all 38 downloaded files against the Cadiz
+standard. Result: 8 trees now have a lead photo (Duncan Cedar, Tree of
+Life and Quinault Big Spruce in Olympic NP; Bartram's Ginkgo in
+Philadelphia; Chief Sequoyah Tree and Lincoln Tree in Sequoia NP; Grizzly
+Giant and California Tunnel Tree in Yosemite), 6 more held (identity
+certain but crown missing, or a lookalike risk among near-identical named
+trees) and 5 rejected outright (wrong species, wrong tree, or below
+standard). One candidate had been filed under the wrong tree (Yosemite's
+tunnel-tree photo was queued under Bachelor and Three Graces) and was
+reassigned to the California Tunnel Tree before approving.
+
+Caught and fixed a real bug of my own along the way: `photo_verdicts.py`
++ `photo_apply.py` overwrite a tree's whole `photo` block on every verdict
+for that tree, approve or hold, so when my verdicts array listed an
+approve followed later by a hold for the same tree (multiple candidates
+judged in one pass), the hold silently clobbered the approval. This ate 3
+of my 8 intended approvals (oly_002, oly_004, ynp_001) before the merge
+below happened to restore them by luck; seq_003 and seq_004 needed a
+manual re-apply after the merge to land on the right file. Worth a fix in
+`photo_verdicts.py` itself (process approves before holds/rejects per
+tree, or refuse a second write to an already-approved tree) so the next
+pass with more than one verdict per tree doesn't hit the same thing
+silently.
+
+While pushing, hit a genuine collision: a concurrent run had independently
+swept and judged the *same* 168 candidates as "US viewing pass: 10 famous
+trees get a photo" and pushed first. Both passes agreed on nearly every
+call (same files approved for oly_002, oly_003, oly_004, seq_004, ynp_001,
+ynp_002's reassigned tunnel tree), which is reassuring rather than
+suspicious, but one disagreement was real: their pass approved Chief
+Sequoyah's "(distance) in Sequoia National Park" file, which I had
+specifically held for a lookalike risk (a clean trunk missing the burl
+holes visible in the signed reference shot, so possibly a neighbouring
+tree on the Congress Trail); kept my hold and used the file I'd
+originally approved instead (same photographer, matching burl-with-hole
+and fire-cave detail). Also kept my own (stricter) hold on ynp_005's only
+candidate, trunks-only with no crown, where their pass approved it; the
+Cadiz standard wants both crown and trunk readable and I'd have held an
+identical shot for The President, Lincoln Tree and Faithful Couple, so
+approving it here would have been an inconsistent exception rather than a
+real judgement call.
+
+Also cleared two stale `leads.py --ready` entries that were misreporting
+as READY: Fort Worth's Turner Oak (already published as ftw_005 earlier
+this window) and Monterey's Crocker Grove cypresses (a grove, not a single
+collectible point, already declined in its own notes but with a stale
+`status: lead`). `leads.py --ready` is now clean at 0.
+
+Preflight clean throughout (0 problems). Cost logged in
+data/agent-costs.json. Released the `us-photos` claim; left Monterey's
+active `verify` claim (a concurrent night-run, unrelated to any of this)
+untouched.
+
 ## 2026-09-27 (night run) - Czech verify pass, Los Angeles deepened 8→10 (US-first directive)
 
 Started by discovering a concurrent run had already shipped the exact New
