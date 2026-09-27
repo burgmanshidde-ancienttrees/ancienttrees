@@ -15,28 +15,6 @@
       "tree_id": "ful_001"
     },
     {
-      "name": "Trees in Gothenburg",
-      "lat": 57.696398,
-      "lng": 11.9881,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:171125_Borttagning_av_tr%C3%A4d,_Korv%C3%A4gen_G%C3%B6teborg_024.jpg",
-        "https://commons.wikimedia.org/wiki/File:Autumn_-_Flickr_-_Pasi_Mammela.jpg",
-        "https://commons.wikimedia.org/wiki/File:Goteborg_Kungsportsavenyn_jesien_1.jpg"
-      ],
-      "status": "lead"
-    },
-    {
-      "name": "Trees in Stockholm",
-      "lat": 59.366441,
-      "lng": 18.039802,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2020-10-17_-_Flickr_-_Gi%C3%A5m.jpg",
-        "https://commons.wikimedia.org/wiki/File:27122013_Gamla_stan_(11935095604).jpg",
-        "https://commons.wikimedia.org/wiki/File:Alvsjo_gard.jpg"
-      ],
-      "status": "lead"
-    },
-    {
       "name": "Månsbolinden",
       "lat": null,
       "lng": null,
@@ -49,14 +27,21 @@
     },
     {
       "name": "Bellmanseken",
-      "lat": null,
-      "lng": null,
+      "lat": 59.32472,
+      "lng": 18.09833,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Bellmans_eken_Ill_tidn_nr36_1865.jpg",
         "https://commons.wikimedia.org/wiki/File:Bellmanseken_1800-tal.JPG",
         "https://commons.wikimedia.org/wiki/File:Bellmanseken_1889.jpg"
       ],
-      "status": "lead"
+      "status": "published",
+      "note": "Verified 2026-09-27, alive (viewed actual pixels of a 2011 Commons photo showing a live crown, plus a 2025 news piece describing it as still standing near Skansen). Delivered to data/research/famoussweden-verified.json as swe_bellmanseken. NOT a standalone destination candidate: coordinate sits inside the already-published Stockholm city page's boundary (~1.1km from sto_004 Prince Eugen's Oak). Reads as an addition to Stockholm, not a new place.",
+      "mapped_as": {
+        "id": "sto_007",
+        "name": "Bellmanseken",
+        "place_slug": "stockholm"
+      },
+      "mapped_by": "2026-09-27 verify pass found both inside published Stockholm boundary (1.1km and 0.4km from sto_004/sto_002); merged as Stockholm additions rather than standalone places."
     },
     {
       "name": "Berzelii ek",
@@ -151,16 +136,22 @@
     },
     {
       "name": "Karl XI:s ek",
-      "lat": null,
-      "lng": null,
+      "lat": 59.359472,
+      "lng": 18.084083,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Fiskarstugan_2011.jpg",
         "https://commons.wikimedia.org/wiki/File:Karl_XI_fishing_cottage_Husarviken_Stockholm_close.jpg",
         "https://commons.wikimedia.org/wiki/File:Karl_XI_fiskarstuga_Stockholm.jpg"
       ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "note": "Verified 2026-09-27, alive (viewed actual pixels of a 2011 Commons photo; kungligaslotten.se, the official Royal Palaces site, describes it in the present tense growing into the cottage wall). Girth 610cm (Sernander, 1930s). Delivered to data/research/famoussweden-verified.json as swe_karlxis_ek. NOT a standalone destination candidate: coordinate is ~0.4km from the already-published sto_002 Lyell's Oak, essentially the same small grove. Reads as an addition to Stockholm, not a new place.",
+      "mapped_as": {
+        "id": "sto_008",
+        "name": "Karl XI:s ek (Fiskartorpseken)",
+        "place_slug": "stockholm"
+      },
+      "mapped_by": "2026-09-27 verify pass found both inside published Stockholm boundary (1.1km and 0.4km from sto_004/sto_002); merged as Stockholm additions rather than standalone places."
     },
     {
       "name": "Ek i Kräklingbo",
@@ -210,9 +201,13 @@
         "https://commons.wikimedia.org/wiki/File:Knappfors_2024-07-22_image12.jpg",
         "https://commons.wikimedia.org/wiki/File:Kungseken_i_Knappfors.png"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Verified 2026-09-27, alive (viewed actual pixels of the 2024-07-22 Commons photo, full leaf, EXIF GPS matches candidate coordinate almost exactly). Delivered to data/research/famoussweden-verified.json as swe_kungseken_knappfors. Genuinely not near any published Swedish city, so a real (if moderate-strength) candidate for the single-famous-tree exception; no age, girth or dedicated Wikipedia article found, and no realistic public transport.",
+      "verified_id": "swe_kungseken_knappfors",
+      "verified_file": "data/research/famoussweden-verified.json",
+      "verify_note": "2026-09-27: verified alive with high confidence (EXIF-matched 2024 photo), genuinely isolated from any published city so a real single-famous-tree candidate in principle, but modest online fame (no dedicated article of its own, mentioned only inside two others), no age or girth found anywhere, no public transport, and its own royal legend is called likely invented by the sources themselves. Recommend HOLD rather than ship as its own place, same shape as Trogareds ek in this file."
     },
     {
       "name": "Lojstaeken",
@@ -292,17 +287,6 @@
       "published_in": "trollskogen"
     },
     {
-      "name": "Trångsunds ekruin",
-      "lat": 59.226558,
-      "lng": 18.133415,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Tr%C3%A5ngsunds_ekruin,_2018a.jpg",
-        "https://commons.wikimedia.org/wiki/File:Tr%C3%A5ngsunds_ekruin,_2018b.jpg",
-        "https://commons.wikimedia.org/wiki/File:Tr%C3%A5ngsunds_ekruin,_2018c.jpg"
-      ],
-      "status": "lead"
-    },
-    {
       "name": "TV-eken",
       "lat": null,
       "lng": null,
@@ -312,6 +296,26 @@
         "https://commons.wikimedia.org/wiki/File:R%C3%A4dda_eken_2011-11-26a.jpg"
       ],
       "status": "lead"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Trångsunds ekruin",
+      "reason": "DEAD. sv.wikipedia's 'Naturminnen i Huddinge kommun' explicitly describes it as 'en ekruin (död ek)' (an oak ruin, a dead oak), stem circumference 418cm, protected as a natural monument since 1960-01-22, on Storvretsvägen, Trångsund, property Fållan 3:21, near Trångsund station. (A WebSearch AI summary separately claimed 628cm; discarded per the search-summary rule, the fetched Wikipedia page itself gives 418cm.) Never republish as a live entry. Checked 2026-09-27.",
+      "lat": 59.226558,
+      "lng": 18.133415
+    },
+    {
+      "name": "Trees in Gothenburg",
+      "reason": "Not a single tree: this is famous_trees.py matching a generic Commons city-tree-population category, not a named individual specimen. No collectible point. Checked 2026-09-27.",
+      "lat": 57.696398,
+      "lng": 11.9881
+    },
+    {
+      "name": "Trees in Stockholm",
+      "reason": "Not a single tree: this is famous_trees.py matching a generic Commons city-tree-population category, not a named individual specimen. No collectible point. Checked 2026-09-27.",
+      "lat": 59.366441,
+      "lng": 18.039802
     }
   ]
 }

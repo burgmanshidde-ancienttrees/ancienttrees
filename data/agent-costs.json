@@ -8778,6 +8778,13 @@
       "tokens": 123000,
       "trees": 3,
       "note": "3 stories + recognition lines (hvb_002, plg_007, vbo_002), merged into city files; page-level intro/faq/question_context rewritten for the added trees. 3 held candidates (sht_001, wey_001, stv_001, nnj_001, ftn_001) confirmed still correctly HELD per prior verify_notes, not written. zyw_002 confirmed duplicate of published koz_001, removed. Stale already-published research files (belgium partial, china n/a, lithuania, tree-of-the-year x2) cleaned up."
+    },
+    {
+      "target": "_famous-sweden",
+      "kind": "verify",
+      "tokens": 191245,
+      "trees": 2,
+      "note": "4 candidates verified (Bellmanseken, Karl XI:s ek/Fiskartorpseken, Kungseken Knappfors alive; Trangsunds ekruin confirmed dead, blocked). Bellmanseken and Karl XI:s ek turned out to sit inside published Stockholms boundary (1.1km/0.4km from sto_004/sto_002); merged as sto_007/sto_008 rather than standalone places. Kungseken Knappfors genuinely isolated but modest fame/no age/legend called invented by its own sources; held as a lead rather than shipped as its own place."
     }
   ]
 }
