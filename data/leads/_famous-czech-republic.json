@@ -22,11 +22,11 @@
         "https://commons.wikimedia.org/wiki/File:Hr%C3%A1deck%C3%BD_dub2.jpg",
         "https://commons.wikimedia.org/wiki/File:Hr%C3%A1deck%C3%BD_dub3.jpg"
       ],
-      "status": "lead",
+      "status": "verified",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "girth_cm": 411,
-      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register (data/registers/czech-aopk-pamatne-stromy.json), which gives this coordinate and a 411cm girth. Independent of the Commons photo category; a second source (age, history) still needed before this could be verified."
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register (data/registers/czech-aopk-pamatne-stromy.json), which gives this coordinate and a 411cm girth. Independent of the Commons photo category; a second source (age, history) still needed before this could be verified. VERIFIED 2026-09-27: second independent source found (turistika.cz, confirms alive as of 2021, general location match) beyond cs.wikipedia (which cites the same registry no. 102466/9266, so not independent, but adds age ~440y, height 28m, girth 485cm from a 2012 AOPK measurement -- a GIRTH CONFLICT against our register snapshot of 411cm, flagged rather than resolved). Delivered to data/research/_famous-czech-republic-verified.json as hrd_001."
     },
     {
       "name": "Memorable tree signs in the Czech Republic",
@@ -99,11 +99,11 @@
         "https://commons.wikimedia.org/wiki/File:Buk_u_rybnicku-II-10-2020-nova_ves_pod_plesi.jpg",
         "https://commons.wikimedia.org/wiki/File:Buk_u_rybnicku-III-10-2020-nova_ves_pod_plesi.jpg"
       ],
-      "status": "lead",
+      "status": "verified",
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "girth_cm": 308,
-      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 308cm girth from that source. The lead photo filenames reference nova_ves_pod_plesi (Nova Ves pod Plesi); not yet cross-checked that this is the same village as the register coordinate. A second independent source still needed."
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 308cm girth from that source. The lead photo filenames reference nova_ves_pod_plesi (Nova Ves pod Plesi); not yet cross-checked that this is the same village as the register coordinate. A second independent source still needed. VERIFIED 2026-09-27: village match to the register coordinate CONFIRMED (Nová Ves pod Pleší, Příbram District; cs.wikipedia raw wikitext of the district list gives the exact same coordinate, registry ids 10227/103427, matching our register kod exactly). Second independent source: nasedobrissko.cz (a regional heritage site) names it directly as one of the village's memorial trees; mistopisy.cz independently places a protected forest beech by the pond outside the village. No numeric age found anywhere (a search-engine AI summary claiming \"150+ years\" could not be confirmed on any fetched page and was NOT used). Delivered to data/research/_famous-czech-republic-verified.json as nvp_001."
     },
     {
       "name": "Buk u staré vrátnice (Fakultní nemocnice Olomouc)",
@@ -158,7 +158,7 @@
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "girth_cm": 385,
-      "register_note": "Cross-checked: this lead's own coordinate sits 23m from AOPK CR Pamatne stromy register entry Buk lesni v Moskevske ulici v Ceske Lipe (385cm girth), a genuine independent match by location rather than name. A second independent source (age, history) still needed before this could be verified."
+      "register_note": "Cross-checked: this lead's own coordinate sits 23m from AOPK CR Pamatne stromy register entry Buk lesni v Moskevske ulici v Ceske Lipe (385cm girth), a genuine independent match by location rather than name. A second independent source (age, history) still needed before this could be verified. RECHECKED 2026-09-27: the location-match question is RESOLVED -- confirmed the same tree as the register's \"Buk lesní v Moskevské ulici\" via Wikidata Q26789330, which carries the identical registry ids (104688/USOP, 12318/DRUSOP) and the identical girth (385cm) and coordinate. But no genuinely independent SECOND source was found this pass: cs.wikipedia's dedicated district-list entry, Wikidata and the Wikimedia Commons category all trace back to the same AOPK/DRUSOP record rather than an separate publisher (checked Českolipský deník, the regional newspaper, and turistika.cz; neither carries this tree). Still one source short of the two-source bar; left as a lead."
     },
     {
       "name": "Hraniční buk (Cínovec)",
@@ -213,7 +213,7 @@
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "girth_cm": 295,
-      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 295cm girth from that source. The same chateau park also registers a lime and a silver maple nearby, so this is part of a small cluster rather than a lone tree. A second independent source still needed."
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 295cm girth from that source. The same chateau park also registers a lime and a silver maple nearby, so this is part of a small cluster rather than a lone tree. A second independent source still needed. RECHECKED 2026-09-27: confirmed this is Jindřichovice near Kolinec, Klatovy District, Plzeň Region (hrady.cz and kolinec.cz both independently confirm the village and castle, distinct from two other identically-named places that kept surfacing in search -- Jindřichov in Bruntál District and Jindřichovice u Sokolova in Karlovy Vary Region -- neither of which is this tree). The chateau park cluster is confirmed via the okres Klatovy Wikipedia district list (raw wikitext): this beech at 11849/104677 (matches our register kod, but the Wikipedia mirror gives girth 316cm against our register's 295cm, a further GIRTH CONFLICT not yet resolved), a silver maple at 11848/104676 (477cm, noted as a \"living torso overgrown with ivy\" -- declining but alive), and a large-leaved lime at 11846/104674 (580cm) about 12-37m away, all south of a small pond -- a genuine three-tree cluster worth flagging for a future pass. No independent second source found this pass beyond the register and its Wikipedia/Wikidata mirrors (checked the estate's own rental website and two castle-history sites, neither mentions the trees). Still one source short of the two-source bar; left as a lead."
     },
     {
       "name": "Buk lesní v Koclířově",
