@@ -10,6 +10,86 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - US-priority deepen: 10 trees across 4 cities, plus a real deploy BLOCKER fixed
+
+Worked rung 1's new "US pages Google already shows" priority top to bottom
+(CLAUDE.md, "point 1 prioritise for night runs"), each city claimed with
+`--deepen` since they were already at or above the 4-tree floor:
+
+- **Austin (5 -> 9):** the Littlefield Cedar (a Himalayan cedar on the UT
+  campus planted 1893 with imported soil, per the alumni magazine's own
+  telling), the Durand Oak of Sir Swante Palm Park (a wild state co-champion
+  on Waller Creek, tagged #809), the Sorin Oak (St. Edward's University,
+  named for the priest who chose the campus site by standing under it in
+  1872), and the Mother Pecan (2011 Tree of the Year, Zilker Park, pin
+  approximate since two sources give addresses 400m apart).
+- **Dallas (9 -> 12):** discovered the City of Dallas's own Historic Tree
+  Program (City Council, 25 Oct 2023, Code Sec. 51A-10.133), a genuine
+  register not previously in this file. Shipped a Comanche marker pecan at
+  California Crossing, a bur oak at Dallas Heritage Village, and the Post
+  Oak Grove of Pioneer Park Cemetery (an ensemble, ~35 post oaks the city
+  itself designated as one entity).
+- **Boston (11 -> 12):** a second E.H. Wilson introduction at the Arnold
+  Arboretum, the Wilson Black Pine of Peters Hill (accession 11371*J,
+  seed from his 1917-19 expedition). A rich Boston Common/Public
+  Garden/Mount Auburn lead batch mostly resolved to duplicates or
+  confirmed-dead rather than new trees; leads file updated for the next
+  pass. Wrote this one story directly in-session rather than dispatching a
+  full write-stories batch for a single tree.
+- **New Orleans (6 -> 8):** from-zero (leads file was empty). Found the
+  Live Oak Society's actively-maintained Orleans-parish registry, which
+  marks dead members "(Deceased)" inline. Shipped the Martha Washington
+  Oak (Audubon Zoo, a sibling of the already-published Tree of Life, both
+  among the Society's original 43 members in 1934; her paired George
+  Washington oak is confirmed dead) and the Enrique Alferez Oak (City Park
+  Botanical Garden, draped in blue LED lights each December for
+  Celebration in the Oaks). Both new trees carry paid entry, 2/8 total,
+  still under the one-third line.
+
+Every city's intro, meta description, question_meta and FAQ were updated
+to the new counts (preflight's Contract C word/char limits caught two
+overlong rewrites before they shipped). All four cities passed
+`preflight.py` clean before committing.
+
+The 8 famous-tree leads sitting "awaiting a writer" on the shelf
+(Belgium x3, China, Czech Republic x2, France, Sweden) were NOT written:
+read every verify_notes field and all eight explicitly recommend HOLD, none
+clearing the single-famous-tree destination test and none near an existing
+published city to cluster with. Forcing stories for these would have
+shipped pages that argue against their own premise. Released the write
+claims rather than merge non-answers.
+
+**Fixed a real deploy-blocking bug.** REVIEW.md's newest BLOCKER
+(`check_photo_resolution()` in scripts/qa.py failing the deploy on New
+Orleans's hero photo, which a same-day viewing pass had correctly set to
+`held`) was a genuine false positive: the check read a hero's photo width
+without checking its `status`, so a photo the site never renders (per
+images.ts's usablePhoto()) still failed the build. Fixed to skip any hero
+whose photo isn't `approved`; verified the function directly both ways
+(false positive gone, a genuinely soft *approved* hero still fires).
+Recorded the answer via `health.py --answer`. Could not `gh workflow run
+deploy.yml` (403, this token has no dispatch permission) or confirm the
+next build went green (`gh` itself lost auth partway through this window,
+apparently the same expiring credential that later made `git push` fail);
+the fix is committed and will land on the next scheduled build or the next
+laptop push.
+
+Also cleaned up Houston's leads file: several TreeIDs sat in `leads` with
+status duplicate/promoted/blocked from an earlier pass's own notes but
+were never actually moved to `blocked`, so every brief kept re-surfacing
+already-published trees as open candidates. Moved 7, removed 2 redundant
+copies; one genuinely open lead remains.
+
+**Push failed partway through** ("Invalid username or token", the
+hour-long credential expiring mid-window, same as `gh`). Per the runner
+prompt this is not mine to fix: every commit above is local and intact
+(`git log` confirms it), and the workflow's own Run health step pushes
+them with its own token when the window ends. Nothing was lost.
+
+`python3 scripts/prepare.py`'s 7-day visits line at the start of this
+window: 2,241 visits / 2,972 views over the last 7 days, with 2026-09-26
+a clear outlier (1,063 visits) against an otherwise flat ~150-200/day.
+
 ## 2026-09-27 (continuation) - Finished the us-photos claim: 8 US trees get a lead photo
 
 Picked up where an earlier attempt in this same window stopped early with
