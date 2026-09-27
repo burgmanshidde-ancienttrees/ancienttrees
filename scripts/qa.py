@@ -190,6 +190,25 @@ def check_run_prompt_forbids_compound_commands():
             "it; on 2026-09-25 that cost two whole runs. Put the rule back, or "
             "change this check with Hidde."
         )
+    # Third rule (2026-09-27): the prompt said to run the site build before
+    # every commit, the build outgrew what one Bash call may block, and runs
+    # backgrounded it, waited on a Monitor, and ended with their trees
+    # uncommitted. Telling them to wait in the foreground (the rule above,
+    # 09-26) did not help, because a foreground wait that long is impossible.
+    # So the build and the Monitor are refused outright, and this keeps it so.
+    text = path.read_text(encoding="utf-8")
+    dis = next((l for l in text.splitlines() if "CLAUDE_DISALLOWED:" in l), "")
+    allowed = next((l for l in text.splitlines() if "CLAUDE_ALLOWED:" in l), "")
+    if ("npm --prefix site run build" not in dis or "Monitor" not in dis
+            or ",Monitor," in allowed or "do not run the site build" not in low):
+        out.append(
+            ".github/workflows/nightly.yml: night runs may run the site build or "
+            "wait on a Monitor again. The build takes longer than a Bash call may "
+            "block, so a run can only background it and then ends waiting, trees "
+            "uncommitted (2026-09-26/27: five runs, nothing shipped). Keep "
+            "`npm --prefix site run build` and Monitor in CLAUDE_DISALLOWED and "
+            "'DO NOT RUN THE SITE BUILD' in the prompt, or change this with Hidde."
+        )
     return out
 
 

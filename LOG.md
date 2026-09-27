@@ -10,6 +10,22 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (session) - Why the night of 09-26 shipped 13 trees in seven runs, and the fix
+
+Hidde asked. Five of seven runs ended "waiting for the build": the prompt told
+every run to run the full site build before committing, the build now takes
+11+ minutes, longer than one Bash call may block, so runs backgrounded it,
+waited on a Monitor, and the attempt ended there with its trees uncommitted.
+The 09-26 rule "dispatch in the foreground" could not help, because a
+foreground wait that long is impossible. Later attempts found the work in the
+working tree and recovered some of it; at least seven Tree of the Year trees
+were lost with a runner.
+
+Fix: the build (`npm --prefix site run build`, `npx astro`, `npm run build`)
+and Monitor are in CLAUDE_DISALLOWED, the prompt says verify with
+preflight.py and push, and deploy.yml's build and qa gate on every push stays
+the gate. qa.py's run-prompt check refuses either coming back.
+
 ## 2026-09-26 (session) - More than one photograph when adding a tree, app and website
 
 Hidde asked, and the benchmark agrees (iNaturalist, Google Maps; CONVENTIONS.md
