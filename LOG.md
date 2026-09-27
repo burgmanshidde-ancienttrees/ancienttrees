@@ -10,6 +10,67 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (continuation) - Fixed a real deploy blocker; wrote 10 verified famous trees but held all 10; caught an id collision and a leads.py bug
+
+**Rung 2 first, and it was live for hours.** `health.py` showed Build and
+deploy failing; five straight runs since 21:02 had died on the identical QA
+message, "1 of 913 photographs have no measured width" (Gonzales, Texas's
+Sam Houston Oak, a Library of Congress .tif). Two bugs, both in
+`scripts/photo_res.py`: `jpeg_png_size()` can't read a TIFF header, and
+`commons_sizes()`'s title matching has been silently broken for every photo,
+not just this one, because MediaWiki always normalizes underscores to spaces
+in the title it hands back and the lookup dict was keyed on the raw
+underscore form. It never showed before because the JPEG/PNG header
+fallback quietly covered for it on all 912 other photos. Fixed the matching
+to compare on the normalized form; ran it for real, Commons answered for the
+.tif (7360x4912), 0 photographs unmeasured. Pushed immediately.
+
+**Then the inherited claims.** No stale claims from the earlier attempt in
+this window (`passcheck.py --claims` was clean). `leads.py --ready` listed
+exactly one tree, Austin's Red Bud Isle Cypress, but its own lead record
+said outright "NOT SHIPPED" (several similar bald cypresses along one
+shoreline, no source pins which trunk won the 2009 award, the same
+unidentifiable-trunk failure BRIEF_RESEARCH.md's Nigatsu-do lesson warns
+against). `leads.py`'s `NOT_READY_MARKER` pattern didn't catch that exact
+phrasing, so it was about to ship a tree nobody could point at. Added
+`NOT SHIPPED` to the pattern; READY dropped to 0.
+
+**The real bought-and-paid-for work was six research files.**
+`passcheck.py --pending` listed 10 verified trees across _famous-belgium (3),
+_famous-china (1), _famous-czech-republic (2), famousfrance (1),
+famousspain (2 of 3; gar_001 excluded, see below), famoussweden (1), all
+needing only a story. Also found: famousspain's third entry, gar_001
+(Garaiko artea), claims an id that collides with the already-published
+Garmen, Bulgaria plane, and the verify pass's own curator note already
+recommended HOLD on it anyway (no numeric age, access across a working
+farmhouse's land); marked it held in the leads file before dispatching
+anything, so no write pass would try to overwrite a live tree.
+
+Claimed and pushed the six files, dispatched one write-stories pass on the
+10 trees. All 10 came back with a story and a recognition line. Before
+merging anything, read the verify_notes each story was built from, because
+BRIEF_WRITING.md's brief doesn't carry that judgement: every one of the 10
+turns out to have an explicit or de facto HOLD from its own verify pass
+(unconfirmed surviving tree count, reads as a village/campus curiosity
+rather than a destination, no species or age on record at all, a garden
+feature of an already-famous UNESCO abbey, approximate/centroid pins). So
+none of them merged into data/cities this pass; recorded the finished
+story in each leads file entry (status: held) so whoever eventually builds
+a Sankt-Vith/Bütgenbach area page, a Nanjing city page, or a Marmagne page
+picks up finished work instead of redoing it. Also caught and fixed a stale
+`verified_id` in `_famous-china.json` (said sdj_001, the real tree is
+nnj_001; nothing reads that field but a human, so it had drifted silently).
+Released all six write claims.
+
+**Then refilled the shelf per `prepare.py`'s own instruction** (writable
+pile under 60): claimed `_famous-austria` (9 unsourced leads with photos
+already) and dispatched a verify pass on the 4 that had never been looked
+at by any pass at all (a landmark "1000-year lime" in St. Georgen im
+Attergau among them). Still running as this entry is written; a future
+run or this same one continues from there.
+
+`preflight.py`: 668 cities, 0 problems throughout.
+
 ## 2026-09-27 (continuation) - Used the new check to clean up 34 stale duplicate leads; released _famous-france as too thin
 
 Ran the new `check_country_batch_leads_against_all_cities()` against the whole corpus rather than just the one file it was built for. It surfaced 34 leads across 20 files (mostly `_famous-*` country batches, a few per-city) whose own text still claimed a tree we do not have when it is in fact already published, sometimes under a different id, sometimes because the lead's own research became the published page and nobody updated the note afterward (aachen, altrier, breukelen, laren-gelderland, bad-homburg all had this exact shape: "Awaiting a place/page decision; not published by this pass", written before publication and never revisited). Marked each `duplicate` with a pointer to the live page; folded four leads that were listed twice within their own file to one entry.
