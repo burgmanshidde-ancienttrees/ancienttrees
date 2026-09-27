@@ -173,9 +173,10 @@
         "https://commons.wikimedia.org/wiki/File:Le_Guerno_-_platane_de_Branf%C3%A9r%C3%A9_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Le_Guerno_-_platane_de_Branf%C3%A9r%C3%A9_03.jpg"
       ],
-      "status": "lead",
+      "status": "duplicate",
       "species": "Plane (Platanus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Already published as brf_001 ('The Weeping Plane of Branféré') in data/cities/le-guerno.json. Found 2026-09-27 while scoping a verify pass, by matching the lead's own name/photo filenames against published place names, since this lead carries no coordinate."
     },
     {
       "name": "Platane de Préty",
@@ -405,9 +406,10 @@
         "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_des_Ramolleux_for%C3%AAt_de_Cr%C3%A9cy.JPG",
         "https://commons.wikimedia.org/wiki/File:Le_Ramolleux,_For%C3%AAt_de_Cr%C3%A9cy_(Somme)_France.JPG"
       ],
-      "status": "lead",
+      "status": "duplicate",
       "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Already published as crc_001 ('Le Chêne des Ramolleux') in data/cities/crecy-en-ponthieu.json. Found 2026-09-27 while scoping a verify pass, by matching the lead's own name/photo filenames against published place names, since this lead carries no coordinate."
     },
     {
       "name": "Le Rageur (Fontainebleau)",
@@ -657,9 +659,10 @@
         "https://commons.wikimedia.org/wiki/File:La_chapelle_et_le_Sully_d%27INNIMOND.jpg",
         "https://commons.wikimedia.org/wiki/File:La_chapelle_et_le_tilleul_%22_Sully_%22_100_2193_2.jpg"
       ],
-      "status": "lead",
+      "status": "duplicate",
       "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_note": "Already published as inm_001 ('The Sully Lime of Innimond') in data/cities/innimond.json. Found 2026-09-27 while scoping a verify pass, by matching the lead's own name/photo filenames against published place names, since this lead carries no coordinate."
     },
     {
       "name": "Tilleul de Châteauvieux",
