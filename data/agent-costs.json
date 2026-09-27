@@ -8856,6 +8856,13 @@
       "tokens": 90000,
       "trees": 0,
       "note": "All three leads dead-ended for a text-fetch pass: the 13 Local Landmark Trees ordinance is JS-only (municode) with no crawlable fallback and no archive, Crocker Grove still has no single named specimen, Ghost Tree(s) of Pescadero Point confirmed dead (moved to blocked). Documented the dead ends so the next pass does not re-walk them; needs a browser-session pass or a phone call to city forestry, not another web sweep."
+    },
+    {
+      "target": "portland",
+      "kind": "write",
+      "tokens": 55000,
+      "trees": 4,
+      "note": "4 stories + recognition lines merged into data/cities/portland.json (20->24 trees); oldest_tree_id moved from ptl_009 (no age) to ptl_021 the Corbett Oak (~300yr, Oregon Encyclopedia); question fields and FAQ rewritten to match; apple species normalised to Apple (Malus domestica) to match site convention"
     }
   ]
 }
