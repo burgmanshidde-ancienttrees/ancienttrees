@@ -2619,3 +2619,11 @@ Breadcrumbs sit in one thin line under the site header, visible on a phone. Then
 ## The globe on a profile (2026-09-25, withdrawn 2026-09-26)
 
 **Reference: Polarsteps' profile globe**: the whole sphere on black space above the profile sheet, spun by a finger and pinched to zoom. We built it with MapKit's satellite flyover and took it out the next day on Hidde's word: "haal de hele 3d map er maar uit, die moet uitvoerig getest worden, val maar terug op de platte kaart die we overal gebruiken." A second map engine on one screen is a second thing to test on every phone and OS, for a view only collections spanning two countries ever reached. My trees draws the same flat map as every other screen; it already frames trees in several countries. Reopening the globe is his call, and starts from this entry rather than from zero.
+
+---
+
+## Adding a tree: straight to its page (2026-09-26)
+
+**Reference: iNaturalist.** Photo, then the "what is it" suggestions, then one screen that IS the observation (photo on top, species, place, notes) with Save/Upload at the foot; after it you are on the observation. **Strava** ends a recorded walk the same way: the activity, with Save below it, then the activity page.
+
+**What we took.** Hidde found our form before the tree page asked what the page asks again ("this page asks the same info"). So a tree we do not map goes from the photograph straight to its own tree page as a DRAFT: same layout as the saved page, the Age, Girth and Species "+ Add" fields, the story, the sign photograph, and **Save tree** where Share will be. No "Added to your trees" note until it is saved; after Save the page stays, the note appears and the button becomes Share (the three beats of "Landing after you have added something"). Back on a draft asks "Discard this tree?", Keep editing or Discard. A draft lives on the phone only: never synced, never counted, dropped at the next launch if the app closed on it. "Which one is it" still comes first whenever mapped trees stand nearby, because it is what stops duplicates.

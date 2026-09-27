@@ -121,6 +121,15 @@ final class Sightings {
         /// so a file written before it existed still decodes.
         var signPhoto: String?
         var status: Status = .mine
+        /// A tree still being added: photographed, on its own page, not yet
+        /// saved (Hidde, 2026-09-26: the form before the page asked what the
+        /// page asks again). A draft lives on this phone only. It is never
+        /// synced, never sent, never counted, and one left behind by a closed
+        /// app is dropped at the next launch. Optional so older files decode.
+        var draft: Bool?
+        /// Where the coordinate came from ("GPS, standing at the tree"), kept
+        /// on a draft so the submission sent on Save can say it.
+        var fixNote: String?
 
         /// When the account last took a copy of this, photograph and all.
         ///
@@ -364,7 +373,9 @@ final class Sightings {
     // MARK: - reading
 
     /// Newest first, which is how anybody looks at their own photographs.
-    var newestFirst: [Sighting] { all.sorted { $0.date > $1.date } }
+    /// Drafts are left out of every list: a tree nobody has saved yet is not
+    /// in anybody's collection.
+    var newestFirst: [Sighting] { all.filter { $0.draft != true }.sorted { $0.date > $1.date } }
 
     /// Only the ones nobody else has: your own finds, the second layer on the
     /// map.
@@ -599,7 +610,8 @@ final class Sightings {
                 lat: Double, lng: Double, image: UIImage?,
                 date: Date = Date(), status: Status = .mine,
                 unsureOf: [String]? = nil, girthHugs: String? = nil,
-                place: String? = nil, sign: UIImage? = nil) -> Sighting {
+                place: String? = nil, sign: UIImage? = nil,
+                draft: Bool = false, fixNote: String? = nil) -> Sighting {
         var s = Sighting(treeId: treeId, name: Self.oneLine(name), note: note,
                          lat: lat, lng: lng, date: date, photo: nil, status: status)
         s.unsureOf = unsureOf
@@ -615,8 +627,12 @@ final class Sightings {
             s.photo = file
         }
         if let sign { s.signPhoto = writeSign(sign, for: s.id) }
+        if draft { s.draft = true }
+        s.fixNote = fixNote
         all.append(s)
         persist()
+        // A draft stops here: it is on this phone and nowhere else until Save.
+        if draft { return s }
         // The NAME, NOTE and COORDINATES of somebody's own tree are deliberately
         // not sent. They are theirs, and the question here is only whether this
         // happens at all.
@@ -626,6 +642,27 @@ final class Sightings {
         // gaat." Signed out this does nothing and the app behaves as it did.
         Self.syncOne?(s)
         return s
+    }
+
+    /// Save pressed on a draft: it becomes a tree in your collection and goes
+    /// to the account, exactly as record() would have sent it.
+    @discardableResult
+    func commit(_ id: UUID) -> Sighting? {
+        guard let i = all.firstIndex(where: { $0.id == id }) else { return nil }
+        all[i].draft = nil
+        persist()
+        Measure.event("sighting_recorded", ["known_tree": all[i].treeId == nil ? "no" : "yes"])
+        Self.syncOne?(all[i])
+        return all[i]
+    }
+
+    /// A photograph of the sign, added on the tree's own page.
+    func setSign(_ id: UUID, image: UIImage) {
+        guard let i = all.firstIndex(where: { $0.id == id }),
+              let file = writeSign(image, for: id) else { return }
+        all[i].signPhoto = file
+        persist()
+        if all[i].draft != true { Self.syncOne?(all[i]) }
     }
 
     func setStatus(_ id: UUID, _ status: Status) {
@@ -786,6 +823,17 @@ final class Sightings {
         }
         if let list = try? JSONDecoder().decode([Sighting].self, from: d) {
             all = list
+            // A draft the app closed on was never saved: drop it and its files.
+            let stale = all.filter { $0.draft == true }
+            if !stale.isEmpty {
+                for s in stale {
+                    for f in [s.photo, s.signPhoto].compactMap({ $0 }) {
+                        try? FileManager.default.removeItem(at: folder.appendingPathComponent(f))
+                    }
+                }
+                all.removeAll { $0.draft == true }
+                persist()
+            }
             findOrphans()
             return
         }

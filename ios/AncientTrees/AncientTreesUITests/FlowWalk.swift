@@ -157,6 +157,17 @@ final class FlowWalk: XCTestCase {
                 Step(name: "doubt-it-afterwards") { Self.tap($0, "collect-not-this-one") },
             ]),
 
+            // ADDING A TREE WE DO NOT MAP, which ends on the tree's own page as a
+            // draft (2026-09-26). Back first, and keep editing, because a draft
+            // that can be lost by one tap on back is the fault to catch; then
+            // save, which has to leave the page standing with Share below it.
+            Flow(name: "add-a-tree-draft",
+                 args: ["-collect", "-collect-describe"] + signedIn, steps: [
+                Step(name: "try-to-leave") { Self.tap($0, "draft-back") },
+                Step(name: "keep-editing") { Self.tap($0, "Keep editing") },
+                Step(name: "save-it") { Self.tap($0, "draft-save") },
+            ]),
+
             // The honest exit, and the one that must never lose a photograph.
             Flow(name: "not-sure-which",
                  args: ["-collect", "-collect-identify"] + signedIn, steps: [
