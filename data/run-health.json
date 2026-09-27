@@ -18505,6 +18505,29 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-27T00:01:28+00:00",
+   "date": "2026-09-27",
+   "run_id": "36281210672",
+   "minutes": 45.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 243,
+   "denials": 14,
+   "denials_source": "permission_denials: Bash(cd ; cat ; import ; story ...), Bash(for ; do ; echo ; python3 ...), Bash(for ; do ; python3 ; import ...), Bash(python3 && sed), Bash(python3), Bash(timeout ; until ; do ; sleep ...), Bash(until && kill | head ; do ...), Bash(until && ps | grep ; do ...), Bash(until ; do ; done ; echo), Bash(until | grep ; do ; done ...)",
+   "ended": "success",
+   "tokens": 5856090,
+   "claims_held": [
+    "bladel",
+    "rukai",
+    "ziar"
+   ],
+   "commits": 5,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
