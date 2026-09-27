@@ -195,11 +195,10 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
         </div>
       </div>
 
-      {/* READ MORE, the AllTrails and App Store shape (Hidde, 2026-09-27: "dit
-          is nogal veel tekst... afkappen en read more"): six lines of story
-          and two of each access line, expanded in place. The app does the
-          same (ExpandableText). The full text stays in the page for search. */}
-      <div class="prose-block td-story"><p class="td-clamp" data-more={U.readMore}>{p.story}</p></div>
+      {/* READ MORE on the access and transport lines only, two lines each,
+          expanded in place (AllTrails, App Store; Hidde, 2026-09-27). The
+          story always shows in full: it is why the tree is worth the walk. */}
+      <div class="prose-block td-story"><p>{p.story}</p></div>
       {p.seasonHtml && <Fragment set:html={p.seasonHtml} />}
 
       {/* HOW TO GET IN AND HOW TO GET THERE (accessBlock: figure.walk and
