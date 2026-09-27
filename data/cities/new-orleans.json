@@ -2,9 +2,9 @@
   "city": "New Orleans",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Five of these six stand in City Park, which holds more registered live oaks than any other place on earth, and the three oldest sit on a strip between City Park Avenue and Bayou Metairie that never flooded, not even in 2005. The bayou spent centuries dropping silt and raised that ground a metre above the rest of the park, which is why the city's oldest oaks are the ones on the high ground. Two are reckoned between seven and nine hundred years old and one stands on wooden crutches. The sixth is uptown by the zoo.",
-  "meta_description": "Six remarkable trees in New Orleans: a 700-year live oak on crutches, the last duelling oak, an oak hung with wind chimes, and the Tree of Life.",
-  "question_meta": "New Orleans's oldest tree is the McDonogh Oak in City Park, reckoned at 700 to 800 years. Where it stands, and five more worth the walk.",
+  "intro": "Six of these eight stand in City Park, which holds more registered live oaks than any other place on earth, and the three oldest sit on a strip between City Park Avenue and Bayou Metairie that never flooded, not even in 2005. The bayou spent centuries dropping silt and raised that ground a metre above the rest of the park, which is why the city's oldest oaks are the ones on the high ground. Two are reckoned between seven and nine hundred years old and one stands on wooden crutches. The other two are uptown by the zoo.",
+  "meta_description": "Eight remarkable trees in New Orleans: a 700-year live oak on crutches, the last duelling oak, an oak hung with wind chimes, and the Tree of Life.",
+  "question_meta": "New Orleans's oldest tree is the McDonogh Oak in City Park, reckoned at 700 to 800 years. Where it stands, and seven more worth the walk.",
   "question_answer": "The oldest tree in New Orleans is the McDonogh Oak, a southern live oak in the Old Grove of City Park, between City Park Avenue and Bayou Metairie. City Park puts it at 700 to 800 years and other accounts stretch to 900, which would make it older than the city by five centuries. The trunk is over eight metres round and the crown reaches about forty six metres across, wide enough that the longest branches now rest on wooden crutches. The Anseman Oak, a few hundred metres west in the same grove, is given the same range and by some accounts is the older of the two. Nobody has cored either, so the honest answer is that they are the two oldest and the order between them is not settled.",
   "question_context": "Ages here are estimates from City Park and from the Old-Growth Forest Network, which added this grove in 2018 as the first site in Louisiana. None comes from a core sample. Live oak is difficult to date because it grows fast when young, slows unpredictably and often hollows, so a range of two centuries is the honest width. Girths are firmer: the trunk figures come from measured surveys and from the Live Oak Society, which has registered live oaks since 1934 and now lists over ten thousand across fourteen states. Two hundred and forty nine of them stand in City Park, more registered live oaks than anywhere else on earth. That society is a garden club rather than a government body, so it is used here to find and cross-check trees rather than as a register in its own right. Where a pin is marked approximate it means the street or the grove is known and the trunk is not, which in a grove of hundreds of old oaks is worth saying plainly.",
   "hero_tree_id": "nol_001",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are these free to visit?",
-      "a": "Yes, all six. City Park and Audubon Park are both open public parks with no entry charge. The Tree of Life stands outside the zoo fence, so you do not need a zoo ticket to reach it."
+      "a": "Six of the eight. City Park and Audubon Park are open public parks with no entry charge, and the Tree of Life stands outside the zoo fence, so no ticket is needed for it. Two, though, sit behind a ticket: the Martha Washington Oak is inside Audubon Zoo and the Enrique Alferez Oak is inside City Park's Botanical Garden, both of which charge their own admission."
     }
   ],
   "trees": [
@@ -229,6 +229,74 @@
       "location_precision": "approximate",
       "how_to_recognise": "You can recognise it by the wind chimes hanging in its branches, seven sets of them, all painted black and the longest over four metres. It is the tree you can hear, on the east side of Big Lake.",
       "verify_notes": "Added 2026-09-23. Age is the 125 years that several accounts give, widened to a band because none says who measured it. No girth published. Species: every source calls it an oak and the park's mature oaks are southern live oaks, and the low spreading form matches, but no source gives the binomial for this individual, so it is flagged. Pin is the east shore of Big Lake near the museum, from the descriptions, and marked approximate; the chimes settle which tree it is on arrival. Sources were read through search result summaries, this sandbox cannot fetch pages."
+    },
+    {
+      "id": "nol_007",
+      "name": "The Martha Washington Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 853,
+      "location": {
+        "address": "Audubon Zoo, rhino habitat, Audubon Park (near the giraffe habitat area where the Tree of Life stands)",
+        "latitude": 29.9207,
+        "longitude": -90.1288,
+        "neighbourhood": "Audubon Park / Audubon Zoo"
+      },
+      "verified_sources": [
+        "https://100oaks.blog/2010/07/08/etienne-de-bore-oak-tree-of-life/",
+        "https://www.theadvocate.com/baton_rouge/sports/outdoors/10-spots-to-see-majestic-live-oaks-in-the-new-orleans-area/article_55e0cf23-03cd-5109-9804-bc313aff3592.html",
+        "https://www.lgcfinc.org/live-oak-society.html",
+        "https://www.lgcfinc.org/uploads/1/5/1/2/15124054/live_oak_society_-_orleans.docx"
+      ],
+      "access": "Paid entry: inside Audubon Zoo, which charges zoo admission. Stands in the rhino habitat, viewable from the public path around the enclosure.",
+      "transport": "Audubon Park, Uptown New Orleans, about 9 km from the French Quarter. St Charles streetcar to Audubon Park, then walk into the zoo.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Martha Washington had a husband and a rival, and both were oaks. In 1934, when the Louisiana Garden Club Federation founded the Live Oak Society and inducted its first 43 members, three trees on the old de Bore sugarcane plantation joined together: George Washington, Martha Washington, and the tree now known as the Tree of Life, already published on this page as the Etienne de Bore Oak. George and Martha stood on either side of the plantation house, framing the view of it the way a married couple frames a photograph. George is gone now, marked deceased in the Society's own register. Martha is not, and today stands inside the zoo that grew up around the old plantation ground, in the rhino habitat.\n\nTo join the Society in 1934 a tree needed a trunk at least eight feet round, so Martha was already a substantial tree nine decades ago. The Society's own measurement puts her at 28 feet round today, a couple of feet more than the figure recorded when George Douglass first registered her. Nobody has published an age, and a live oak this size does not hurry toward one.\n\nShe keeps her Society rank too: current fourth vice president, an honour the Live Oak Society hands out to its most senior members rather than to anyone with a vote.",
+      "how_to_recognise": "You can recognise it by the massive trunk, 28 feet round, standing over the rhino enclosure. It is inside Audubon Zoo, near the already-published Tree of Life.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "paid_entry": true
+    },
+    {
+      "id": "nol_008",
+      "name": "The Enrique Alferez Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 528,
+      "location": {
+        "address": "New Orleans Botanical Garden, City Park, 5 Victory Avenue",
+        "latitude": 29.9946,
+        "longitude": -90.0983,
+        "neighbourhood": "City Park"
+      },
+      "verified_sources": [
+        "http://web.archive.org/web/20221006193518/https://neworleanscitypark.com/live-oaks-of-city-park",
+        "https://www.lgcfinc.org/uploads/1/5/1/2/15124054/live_oak_society_-_orleans.docx"
+      ],
+      "access": "Paid entry: inside the New Orleans Botanical Garden, which charges a small admission fee separate from the rest of City Park.",
+      "transport": "City Park, Mid-City, about 6 km north of the French Quarter. Canal Streetcar to City Park / Museum, then a walk to the Botanical Garden entrance on Victory Avenue.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Every December this oak wears blue. Draped in dripping LED lights for Celebration in the Oaks, City Park's holiday lighting event, it is one of the more theatrical trees on a list that runs mostly to war and duels.\n\nIt carries the name of Enrique Alferez, the sculptor whose WPA-era fountains and figures are scattered through City Park, though the tree itself stands in the Botanical Garden rather than at the newer sculpture garden that also bears his name. It is one of 26 oaks the park singled out for a historic walking tour, drawn from roughly 250 Live Oak Society members growing across the grounds, and when the park re-measured its tour trees between 1983 and 1999, this was the one that had grown the most. Its trunk measured just over 16 feet round in 1983; the Live Oak Society's current figure puts it at over 17.\n\nNobody has published its age, which for a tree in a park this thoroughly documented is itself a small honest gap. What is on record is upkeep: City Park describes it as getting regular watering and feeding at that spot, the kind of attention that keeps a showpiece a showpiece.",
+      "how_to_recognise": "You can recognise it, in December, by the blue LED lights draped through its crown for Celebration in the Oaks. It stands in the New Orleans Botanical Garden, City Park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "paid_entry": true
     }
   ]
 }

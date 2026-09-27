@@ -8947,6 +8947,24 @@
       "note": "Wrote story/recognition line for bos_012 directly in the main session rather than dispatching a full write-stories batch pass for a single tree; merged into data/cities/boston.json, intro/FAQ counts updated 11->12.",
       "wasted": 0,
       "brief_wrong": false
+    },
+    {
+      "target": "new-orleans",
+      "kind": "verify",
+      "tokens": 209408,
+      "trees": 2,
+      "note": "From-zero pass (no register, empty leads file). Found the Live Oak Society Orleans-parish registry (actively maintained, marks dead trees inline); 2 verified (Martha Washington Oak at Audubon Zoo, sibling of the published Tree of Life; Enrique Alferez Oak in City Park Botanical Garden), 4 moved to blocked (a dead sibling oak, private-grounds oaks), 5 City Park oaks left as leads pending a more specific location than \"City Park\".",
+      "wasted": 0,
+      "brief_wrong": false
+    },
+    {
+      "target": "new-orleans",
+      "kind": "write",
+      "tokens": 3000,
+      "trees": 2,
+      "note": "Wrote both stories directly in the main session (small batch); merged into data/cities/new-orleans.json, intro/meta/FAQ updated 6->8 trees, both new trees carry paid_entry (2/8, under the one-third line).",
+      "wasted": 0,
+      "brief_wrong": false
     }
   ]
 }

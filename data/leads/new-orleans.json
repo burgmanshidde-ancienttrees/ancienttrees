@@ -1,7 +1,72 @@
 {
   "city": "New Orleans",
-  "leads": [],
+  "leads": [
+    {
+      "name": "The George H. Grandjean Oak, City Park",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": null,
+      "lng": null,
+      "status": "open",
+      "why": "Found 2026-09-27 in the Live Oak Society's official Orleans-parish registry docx (entry #745, 23 feet 7 inches / ~719 cm girth, custodian 'City Park') and confirmed still standing as of a 1999 re-measurement on City Park's own website (archived copy, fetched via Wayback since the live page 404s): 'The Grandjean Oak added 2'2\" in circumference and 7' in crown spread' between 1983 and 1999, one of 26 trees on the park's historic oak walking tour. Named for George H. Grandjean, the 1890s civil engineer behind City Park's original master plan (lagoons, footpaths, bridges) -- a real, checkable history hook. NOT delivered this pass because no source gives a location more specific than 'City Park', and inventing a plausible-sounding spot (e.g. near the lagoons Grandjean himself laid out) would be exactly the bridge-claim trap BRIEF_RESEARCH.md warns about. A future pass should try to find the original 1983/1999 walking-tour brochure or map (referenced on City Park's own page but not linked; searched, not found this pass) which likely gives stop-by-stop locations for all 26 named trees at once, which would unlock this one and several others below in one document."
+    },
+    {
+      "name": "The John Philip Sousa Oak, City Park",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": null,
+      "lng": null,
+      "status": "open",
+      "why": "Registry #748, 21 feet 4 inches (~650 cm) girth, custodian 'City Park' -- a genuinely large live oak, in the same size class as several already-published City Park trees. Sousa performed at City Park's Popp Bandstand (built 1917), which is a plausible reason for the name, but no source connects the TREE to the bandstand's location specifically, so that stays two facts rather than one claim (see the bridge-claim rule). Only one source (the registry itself) found this pass; register-alone is enough to deliver flagged per the 2026-09-27 ruling, but with zero location beyond 'City Park' and zero narrative beyond the name, it did not clear this pass's bar for a page people can actually find. Worth a future pass, ideally alongside a search for the walking-tour brochure (see Grandjean Oak lead above)."
+    },
+    {
+      "name": "The Isaac Delgado Oak, City Park",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": null,
+      "lng": null,
+      "status": "open",
+      "why": "Registry #744, 16 feet 6 inches (~503 cm) girth, custodian 'City Park'. Isaac Delgado (1839-1912) was a major New Orleans philanthropist whose bequest funded the Isaac Delgado Museum of Art (now NOMA, at the north end of City Park) and Delgado Community College. Real history, but only one source (the registry) and no location for the tree itself beyond 'City Park' -- did not check whether it might stand near NOMA given the namesake's connection to that museum, which would be a bridge-claim unless a source says so directly. Open for a future pass."
+    },
+    {
+      "name": "The Flying Horses Oak, City Park",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": null,
+      "lng": null,
+      "status": "open",
+      "why": "Registry #755, 12 feet 8 inches (~386 cm) girth, custodian 'City Park'. 'Flying Horses' is the long-standing local nickname for City Park's 1906 antique wooden carousel at Carousel Gardens, which suggests but does not confirm this tree stands near the carousel; no source found this pass places the actual tree there. Smaller girth than the other candidates, so weaker on the 'big for species' test too. Worth a quick check against a City Park map in a future pass, since Carousel Gardens is a specific, findable landmark if the connection holds."
+    },
+    {
+      "name": "Franklin Delano Roosevelt Oak and Zachary Taylor Oak, City Park",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": null,
+      "lng": null,
+      "status": "open",
+      "why": "Registry #750 (FDR, 14 feet 1 inch / ~429 cm) and #751 (Zachary Taylor, 16 feet 10 inches / ~513 cm), both custodian 'City Park'. Presidential names, no other narrative or location found this pass beyond the registry entry itself. Grouped here rather than given full entries since neither cleared the bar alone; either could be revisited if the walking-tour brochure (see Grandjean lead) turns up and places them."
+    }
+  ],
   "blocked": [
+    {
+      "name": "The Companion Oak and The McGehee Oak, Louise S. McGehee School",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": null,
+      "lng": null,
+      "status": "private_grounds",
+      "why": "Checked 2026-09-27: registry #289 and #290, custodian 'Louise S. McGehee School', a private all-girls K-12 school in the Garden District (1749 Coliseum St). No evidence found that the school's grounds are open to the public outside supervised events; per hard rule 10's schools exception, a tree on school grounds ships only with real evidence of genuine public access, which was not found. Stays blocked unless a future pass finds that evidence."
+    },
+    {
+      "name": "A cluster of privately-owned named oaks, various New Orleans addresses",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": null,
+      "lng": null,
+      "status": "private_grounds",
+      "why": "The Live Oak Society's Orleans-parish registry (fetched 2026-09-27, live_oak_society_-_orleans.docx) lists roughly two dozen more New Orleans entries whose custodian is a named individual or family rather than a park or institution: Sara Mayo Oak, Talluto Oak, Opinicus Oak, Martlet Oak, Deckbar Oak, Bayou Bounty, Bergeron Pal, Bishop Linus Parker Oak, Carol Elizabeth, The Motte Oak, Monor Bark, Thomas Jefferson, Fergerson Oak (x2), Conery Street Oak, Aurora Oak, Abendigo, The Algiers, Elijah, and others. These read as private-yard trees (a garden club register of enthusiasts' own trees, not a public list), and this pass did not chase any of them: no address more specific than 'New Orleans, LA' is given for most, and a private name as custodian is itself a strong signal of a front or back garden rather than a place a stranger may walk up to. Not worth a future pass's time without a specific reason to think otherwise (e.g. a reader tip, or a news piece naming one). Also skipped: Mace-Dominica Oak, The Joseph Oak and The Greenville Oak, custodian 'Dominican College' (a private Catholic institution formerly on St. Charles Ave, since closed/merged; unclear if the site or the trees are even still standing under that name, and not chased this pass)."
+    },
+    {
+      "name": "The George Washington Oak, Audubon Park/Zoo",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": null,
+      "lng": null,
+      "status": "dead",
+      "why": "Checked 2026-09-27 during a deepen pass: one of the original 43 trees inducted into the Live Oak Society in 1934, alongside the already-published Tree of Life (nol_004, the Etienne de Bore Oak) and the Martha Washington Oak (delivered this pass as nol_007). Two sources (100oaks.blog's 2010 piece on the de Bore Oak, and theadvocate.com's 2017 roundup of Louisiana live oaks) both independently say plainly that it is dead ('George has passed on'; theadvocate.com says the tree is 'no longer' present). Never to ship; recorded here so a future pass does not re-research it from zero."
+    },
     {
       "name": "The Dueling Oak (nol_dueling_001, a second research pass)",
       "species": "Southern Live Oak (Quercus virginiana)",
