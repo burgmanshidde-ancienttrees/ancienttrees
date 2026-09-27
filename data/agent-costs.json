@@ -8643,6 +8643,15 @@
         "note": "Deepen pass from the Heritage Trees register: 4 cleared two sources (Corbett Oak, Dosch apple, Lone Fir and its incense cedar); 6 register trees stayed leads for want of any source beyond the register, which is what made this ~55k per tree.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "us (federal public-domain photos)",
+        "kind": "photo",
+        "tokens": 253128,
+        "trees": 0,
+        "note": "Candidates only, not approved: 15 federal/LoC public-domain photos for 7 of 240 photo-less US trees (General Grant, Chief Sequoyah, Washington Tree, Pando, Quinault spruce, Washington Monument mulberry, Sam Houston Oak) in data/photo-candidates-us-federal.json. Finding: Commons holds many CC photos of the sequoias a free photo_hunt.py sweep should catch.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   },
