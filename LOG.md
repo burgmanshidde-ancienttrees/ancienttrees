@@ -10,6 +10,39 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-27 (night run) - Czech verify pass, Los Angeles deepened 8→10 (US-first directive)
+
+Started by discovering a concurrent run had already shipped the exact New
+Zealand write pass I was independently building (Coromandel Forest Park,
+Parry Kauri Park, Otari-Wilton's Bush); discarded my duplicate commit and
+instead fixed three loose ends theirs left: a bad Wikipedia-title match in
+city-aliases.json (parry-kauri-park had matched the neighbouring museum),
+the four leads still reading "verified" instead of "published", and the
+stale research file passcheck.py flagged for deletion.
+
+Shelf was under the refill floor, so ran a verify pass on 4 Czech
+famous-tree leads (register-matched, needing a second source): Hrádecký dub
+and Buk u rybníčku both cleared the bar, but neither clears the
+single-famous-tree destination test alone (modest fame, no legend, beyond
+day-trip range of the nearest published place), so held both rather than
+ship thin standalone pages, same shape as this week's Belgium leads.
+
+Then picked up today's new top-of-queue directive from Hidde (US pages
+Google already shows, deepen before anything else) and ran a verify pass
+on 4 Los Angeles candidates from the California Big Trees finding-aid
+leads. Two verified: the Huntington Rose Garden Kauri (1890 planting, 1908
+blowtorch-taproot transplant, 2021 California Big Tree champion) and the
+Crystal Springs Heritage Sycamore in Griffith Park (survived a 2012-2014
+removal threat via a 2016 settlement). Wrote both up and merged into
+data/cities/los-angeles.json (8→10 trees); the new kauri's documented
+measurement contradicted the existing Chavez Ravine kauri's unmeasured
+"oldest and largest in the US" claim, so softened that story per hard rule
+8. The Bodhi tree champion turned out to sit on a private residential
+street (blocked); the Chavez Ravine kauri's pin could not be tightened.
+
+Preflight clean throughout (0 problems), all costs logged in
+data/agent-costs.json, tree-index and species-size rebuilt.
+
 ## 2026-09-27 (night run) - Finished a stranded write pass, fixed a leads.py false positive, a free photo sweep
 
 Picked up where an earlier attempt in the same window stopped with 3 write
