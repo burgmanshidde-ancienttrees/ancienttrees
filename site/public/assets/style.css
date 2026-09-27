@@ -2670,6 +2670,13 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 .td-access { margin-top: 1.75rem; display: grid; gap: 10px; }
 .td-access p { display: flex; gap: 8px; margin: 0; font-size: 14.5px; line-height: 1.45; color: var(--ink-light); }
 .td-access svg.ic { width: 17px; height: 17px; margin-top: 2px; color: var(--ink-light); }
+.td-clamp { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; overflow: hidden; }
+.td-clamp-2 { -webkit-line-clamp: 2; }
+.td-clamp.open { display: block; -webkit-line-clamp: unset; overflow: visible; }
+.td-access p > span.td-clamp { display: -webkit-box; }
+.td-access p > span.td-clamp.open { display: block; }
+.td-more { background: none; border: 0; padding: 0; min-height: 44px; font: inherit; font-weight: 600; color: var(--moss); cursor: pointer; }
+.td-access .td-more { font-size: 14.5px; margin-left: 25px; min-height: 32px; }
 .td-access .which-one { display: inline; background: none; padding: 0; margin: 0; font-size: inherit; color: var(--ink-mid); border: 0; }
 .td-page > .td-grid .worthit:not(.worthit-inline):not(.worthit-flag) { margin-top: 1.25rem; }
 
