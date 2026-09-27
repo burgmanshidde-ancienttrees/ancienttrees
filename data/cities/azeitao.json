@@ -1,0 +1,65 @@
+{
+  "city": "Azeitao",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Three olive trees stand together on the shoulder of the EN10, gnarled, hollow and split, that local tradition puts at close to 2,000 years old. No study has actually dated them, unlike Portugal's two scientifically confirmed ancient olives elsewhere, so this page repeats the estimate as a reputation rather than a measurement. What is not in dispute is the shape: a trunk hollowed and twisted by roughly that much time, still green in the crown, visible from the road between Vila Nogueira and Vila Fresca de Azeitao.",
+  "meta_description": "The Millennial Olives of Azeitao: three ancient, hollow-trunked olive trees reputed at close to 2,000 years old, beside the EN10 near Setubal.",
+  "question_meta": "Azeitao maps three olive trees together beside the EN10, reputed at close to 2,000 years old though never scientifically dated.",
+  "question_answer": "Azeitao's mapped trees are three olive trees (Olea europaea) standing together on the roadside of the EN10 near Quinta Nova, between Vila Nogueira and Vila Fresca de Azeitao. Local tradition puts them at close to 2,000 years old, though no dendrochronological study has confirmed this.",
+  "question_context": "The three olives stand at one spot on the EN10, close enough together to be seen as one grove. Both sources describing them, the local parish and a walking blog, repeat the same figure, cerca de dois mil anos (about 2,000 years), attributed only to unnamed specialists rather than a published dating study; Portugal does have two olives with a genuine scientific age, at Mouriscas and Santa Iria da Azoia, dated to 3,350 and 2,850 years by researchers at UTAD, but neither claim has been made for this trio, so the Azeitao figure stays a widely repeated estimate rather than a fact. The trunks are decayed, split, twisted and full of cavities, the classic profile of a genuinely ancient olive that has hollowed out its dead heartwood while its crown carries on. They are reported to have been declared trees of public interest by Setubal's municipal council in 1996, with a commemorative tile plaque at the site, not independently confirmed here. The trees stand on the road shoulder; whether the trunks are on public ground or just inside a bordering plot is not stated anywhere, so this page describes them honestly as viewed from the roadside.",
+  "hero_tree_id": "aze_001",
+  "oldest_tree_id": "aze_001",
+  "faq": [
+    {
+      "q": "How old are the Millennial Olives of Azeitao?",
+      "a": "Reputed at close to 2,000 years old by local sources, but no scientific dating study has confirmed this. Treat the figure as a long-repeated estimate rather than a measurement."
+    },
+    {
+      "q": "Is this one tree or several?",
+      "a": "Three olive trees, standing together at one roadside spot, close enough to be seen and visited as a single group."
+    },
+    {
+      "q": "Are they protected?",
+      "a": "Reported to have been declared trees of public interest by Setubal's municipal council in 1996, with a commemorative tile plaque at the site, though this page has not independently confirmed the exact decree."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, viewed from the roadside of the EN10. It is not confirmed whether the trunks themselves stand on public ground or just inside a bordering plot, so this is a roadside view rather than a guaranteed path up to the trees."
+    }
+  ],
+  "trees": [
+    {
+      "id": "aze_001",
+      "name": "The Millennial Olives of Azeitao",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "reputedly about 2,000 years",
+      "age_min": 1500,
+      "age_max": 2500,
+      "age_basis": "source",
+      "girth_cm": null,
+      "location": {
+        "address": "Roadside of EN10 (Estrada Nacional 10), Castanhos, near Quinta Nova, Vila Fresca de Azeitao, Setubal",
+        "latitude": 38.5227947,
+        "longitude": -9.004213,
+        "neighbourhood": "Vila Fresca de Azeitao, Setubal"
+      },
+      "story": "Three olive trees stand together on the shoulder of the EN10, and local tradition puts them at close to 2,000 years old. That figure comes from the parish's own account and a local walking blog, both attributing it only to unnamed specialists rather than to any published dating study, unlike Portugal's two scientifically confirmed ancient olives, at Mouriscas and Santa Iria da Azoia, dated by researchers at 3,350 and 2,850 years. Nobody has made that same claim for this trio, so the age here stays a reputation rather than a fact, repeated as loosely as the sources themselves give it.\n\nWhat is not in question is the shape. Their trunks are decayed, split, twisted and riddled with cavities, the profile a genuinely old olive takes on as its dead heartwood hollows out while a green crown carries on regardless above it. They are reported to have been declared trees of public interest by Setubal's municipal council in 1996, marked with a commemorative tile plaque, though the exact decree has not been independently confirmed here.\n\nThey stand at the road's edge between Vila Nogueira and Vila Fresca de Azeitao, near Quinta Nova. Whether the trunks themselves sit on public ground or just inside a neighbouring plot is not stated by any source, so the honest description is a roadside view of three ancient, hollow trees rather than a promised path up to them.",
+      "verified_sources": [
+        "https://www.freguesiadeazeitao.com/portfolio_page/oliveiras-milenares/",
+        "http://andarilharar.blogspot.com/2015/10/oliveiras-milenares-azeitao.html"
+      ],
+      "access": "Free, visible from the roadside of EN10. Whether the trunks stand on the public verge or just inside a bordering plot is not stated by any source, so this is a roadside view rather than a guaranteed path up to the trees.",
+      "transport": "On EN10 between Vila Nogueira de Azeitao and Vila Fresca de Azeitao, Setubal; nearest named stops are at Quinta da Bassaqueira (about 350m) and Urbanizacao Bom Pastor.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise them as three hollow, split and heavily gnarled olive trunks standing together, still green in the crown. They stand on the roadside of the EN10 near Quinta Nova, Vila Fresca de Azeitao."
+    }
+  ]
+}
