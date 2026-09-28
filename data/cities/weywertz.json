@@ -1,0 +1,72 @@
+{
+  "city": "Weywertz",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "On the church square in Weywertz, the tree is older than the church by almost three centuries. The lime in front of St. Michael's has stood there since 1668, a date both the municipality and the village's own history give, while the neo-Romanesque church behind it went up in 1959 on the site of earlier ones. The lime is about twenty metres tall and has been a protected natural monument since 1984. A small stone-breaker sculpture joined it in 2020. Free, on the open square, in the German-speaking east of Belgium.",
+  "meta_description": "The Old Lime of Weywertz has stood on the church square since 1668, older than the church behind it. Free, on an open village square.",
+  "question_meta": "The Old Lime of Weywertz, planted by 1668, stands in front of St. Michael's Church in Butgenbach. Its age, its square and how to find it.",
+  "question_answer": "The Old Lime of Weywertz is a lime tree on the square in front of St. Michael's Church in Weywertz, part of the municipality of Butgenbach in the German-speaking Community of Belgium. It has stood there since 1668, which makes it a little over 350 years old, and it is about twenty metres tall. It is free to see on the open square.",
+  "question_context": "The date is unusually firm for a village tree. The municipality of Butgenbach gives 1668 on its own tourist page, and the German Wikipedia article on Weywertz captions the tree's photograph simply 'Linde von 1668'. It has been a protected natural monument since 1984. The church behind it, St. Michael's, is the newcomer on the square: the present neo-Romanesque building dates from 1959 and replaced earlier churches on the same site, so the lime was already close to three centuries old when it went up, and it was standing when the church before it came down. In 2020 the village added a small sculpture in the tree's shade, the Steeklopper, a stone-breaker commemorating the local quarry trade. What neither source says is which lime it is. 'Linde' covers the small-leaved, large-leaved and common lime alike, so the species is left open here, and a reader who knows lime leaves could settle it in a minute. Late June into July, when it flowers, is the time to hear the square hum with bees.",
+  "hero_tree_id": "wey_001",
+  "oldest_tree_id": "wey_001",
+  "faq": [
+    {
+      "q": "How old is the Old Lime of Weywertz?",
+      "a": "It has stood on the church square since 1668, according to both the municipality of Butgenbach and the village's Wikipedia article, which makes it a little over 350 years old."
+    },
+    {
+      "q": "Which kind of lime is it?",
+      "a": "The sources say only 'Linde', so we do not know whether it is a small-leaved, large-leaved or common lime. If you can tell from the leaves, let us know."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the open public square in front of St. Michael's Church, with no gate or ticket."
+    },
+    {
+      "q": "Where exactly is it?",
+      "a": "On Lindenstrasse, in front of St. Michael's Church in the centre of Weywertz, a village of the municipality of Butgenbach in eastern Belgium."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wey_001",
+      "name": "The Old Lime of Weywertz",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "over 350 years",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": null,
+      "location": {
+        "address": "On the square in front of St. Michael's Church, Lindenstrasse, Weywertz, Butgenbach",
+        "latitude": 50.43551,
+        "longitude": 6.16653,
+        "neighbourhood": "Weywertz (Butgenbach), German-speaking Community of Belgium"
+      },
+      "story": "The church behind this lime is the newcomer. St. Michael's was rebuilt in 1959, on the site of earlier churches, while the tree in front of it has stood on the square since 1668.\n\nThat date is unusually firm for a village tree. The municipality's own tourist page gives it, and so does the village's Wikipedia article, where the tree's picture is captioned simply \"Linde von 1668\". That makes it a little over 350 years old. It has grown to about twenty metres, and it has been a protected natural monument since 1984.\n\nPut those two dates side by side. The neo-Romanesque church is not yet seventy years old; the tree was already close to three centuries old when it went up, and it was standing there when the church before it came down. On this square, the building is the thing that gets replaced and the lime is the thing that stays.\n\nIn 2020 the village added a small sculpture in its shade, the Steeklopper, a stone-breaker commemorating the local quarry trade. It is a good sign when a village keeps spending money on the ground around an old tree, and it gives the square a second reason to linger.\n\nThe sources say only \"Linde\", so we do not know whether this is a small-leaved, large-leaved or common lime. If you can tell from the leaves, let us know.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Weywertz",
+        "https://butgenbach.info/dorfer/weywertz/"
+      ],
+      "access": "Free, on the open public square in front of the village church; open at all times, no ticket.",
+      "transport": "In the centre of Weywertz village, part of Butgenbach, and easily reached on foot anywhere in the village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the big lime, about twenty metres tall, on the square in front of St. Michael's Church, with the small Steeklopper stone-breaker sculpture in its shade.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers and the square hums with bees"
+      }
+    }
+  ]
+}
