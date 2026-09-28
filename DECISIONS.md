@@ -1156,3 +1156,13 @@ One dated entry per decision that shapes the product, newest first: what was dec
 - **2026-07-27 — Hidde:** Cookieless analytics in, ads/ad-tracking out; no spending without approval, no fixed ceiling, condition: start earning.
 - **2026-07-27 — Hidde:** Interim identity: Direction A (Gabarito, warmed palette), logo 3A, explicitly temporary until a real designer pass.
 - **2026-07-26 — Hidde:** The four verbs (find, walk, collect, season); count follows the trees, ten is a cap; no points, the currency is years.
+
+## 2026-09-28: one official register is enough, worldwide, and the second source is replaced by three checks
+
+Hidde: "if we consider some registers to be very reliable should we make other exceptions for 1 source rule?", then "officials registers make sense to trust also outside of the US", and "we should just be careful to minimise the risks do tree or location mistakes". Agreed after being shown where registers are strong (existence, species, girth, age) and where they are weak (the pin, whether the tree still stands, twins, access).
+
+What changed: a government register, or the owner of the ground publishing its own tree, settles what the tree is anywhere in the world. A verify pass no longer hunts a second source; it checks alive with `scripts/lifecheck.py` (a dated geotagged photograph or iNaturalist observation within four years), the pin against map or aerial imagery, and access under hard rule 10. A register that records vitality or was updated within five years ships unflagged; any other register-only tree ships flagged. Finding aids (California Big Trees, Famous Trees of Texas, monumentaltrees.com) still need their own source.
+
+What did not change: the "which trees get a page" cut, the register pitfalls, pin honesty, hard rule 10. Nothing is shown to the reader ("the user doesn't have to know this"). And the queue: "let's first keep our focus on the us though", so the US stays first and this only makes each tree cheaper.
+
+Accepted risk, said out loud: some register trees will turn out dead because the life check misses one. Readers correct those and they are removed the same day.

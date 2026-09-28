@@ -26,16 +26,31 @@ itself "worth the walk": judge each one.
 2. **Two independent sources** for existence, species and age. One official
    register counts as one source. If sources conflict, deliver both figures in
    `verify_notes` and flag; never pick a winner silently.
-   **An official register ALONE is enough to deliver** (Hidde, 2026-09-27:
-   "flag them in our own system and let users correct us"). A tree on a
+   **An official register ALONE is enough to deliver, anywhere in the world**
+   (Hidde, 2026-09-27 for the US, widened to every country 2026-09-28). A
    government register (city heritage list, state champion register, national
-   designation) with no second source is delivered with
-   `curation_status: "flagged"` and `verify_notes` saying "register only". Do
-   not hold it back and do not spend the window hunting a second source for
-   it; readers are the correction layer. This does NOT cover a finding aid
-   (a register whose licence is unclear, used only to find trees): those still
-   need a source of their own. Alive, publicly reachable and an honest
-   location_precision are checked exactly as before.
+   or regional designation) settles WHAT the tree is: existence, species, and
+   girth or age where it gives them. Do not hunt a second source for those.
+   The same holds for the OWNER or manager of the ground publishing its own
+   tree (a botanic garden, a park department, a church, an estate).
+   Instead, spend the time on the three things a register is weak at, because
+   they are where a wrong tree or a wrong pin comes from:
+   - **Alive:** run `python3 scripts/lifecheck.py LAT LON` (or `--file` on your
+     verified JSON). RECENT means no reason to doubt; OLD or NONE means say so
+     in `verify_notes` and deliver flagged. It proves something was
+     photographed at the spot, not that it was this trunk.
+   - **Pin:** check the register coordinate against the map or aerial imagery.
+     Registers often give a park or a parcel; unless it lands on one clear
+     crown, `location_precision` is `"approximate"`.
+   - **Access:** hard rule 10 unchanged. Registers include gardens and
+     schoolyards and rarely say whether you can walk up to the tree.
+   A register that records vitality or was updated in the last five years may
+   be delivered unflagged; any other register-only tree is `flagged` with
+   `verify_notes` saying "register only". The register pitfalls below (units,
+   a year in the age field, twins, stale national files) still apply. This
+   does NOT cover a finding aid (California Big Trees, Famous Trees of Texas,
+   monumentaltrees.com, any list with an unclear licence): those still need a
+   source of their own.
 3. **The exact spot.** `location_precision: "confirmed"` only when you can place
    the individual tree (tree-level coordinates from a register, a mapped photo,
    satellite-visible crown). Park-level or shrine-level knowledge is
