@@ -1,0 +1,71 @@
+{
+  "city": "Longlou",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Shepherds of the Hautes Fagnes once stopped at noon in a clearing called a prandj'lohe, a midday resting place, and rested their flocks under six beeches. The clearing is still there in the Fagne de Longlou near Malmedy, now ringed by spruce, and the old beeches, roughly 250 years old, are still in it, though fewer and frailer than the name promises. Wallonia protected the site in 1936, and in 1993 the Amis des Fagnes planted young beeches beside the old ones. The GR56 trail passes it, free and open at all times.",
+  "meta_description": "Les Six Hêtres de Longlou: a shepherds' midday resting place in the Hautes Fagnes, with beeches about 250 years old. Free, on the GR56 trail.",
+  "question_meta": "The Six Beeches of Longlou are roughly 250-year-old beeches in a Hautes Fagnes clearing near Malmedy. Their story and how to walk there.",
+  "question_answer": "Les Six Hêtres de Longlou are old European beeches, roughly 250 years old by the estimate of local hiking guides, standing in a clearing in the Fagne de Longlou between Xhoffraix and Hockai near Malmedy. The clearing was a prandj'lohe, a place where shepherds rested their flocks at midday, and it has been protected heritage since 1936. It is free, reached on foot along the GR56.",
+  "question_context": "The site sits in the Hautes Fagnes, Belgium's high moorland plateau, in a stretch of forest also called the Fagne de Tirifaye, north of the Route de l'Ancienne Douane. The spruce plantation that now closes in on every side came later; when shepherds used the clearing it stood in open country. Wallonia classified the site as protected heritage on 15 January 1936, and it appears on the official list of protected heritage sites in Malmedy. The beeches are at the end of their lives. In 1993 the Amis des Fagnes, the local nature society, planted young beeches beside them so that the resting place would outlast its namesakes. How many of the original six are still standing is not settled: one account says three, which we have not been able to confirm. Most visitors arrive the way the shepherds did, on foot: the GR56 long-distance trail runs past, and the clearing only shows itself when the conifers open up. The site is at its most striking in October, when the old beeches turn copper against the dark spruce.",
+  "hero_tree_id": "sht_001",
+  "oldest_tree_id": "sht_001",
+  "faq": [
+    {
+      "q": "How old are the Six Beeches of Longlou?",
+      "a": "Roughly 250 years old, by the estimate of the local hiking guides. No planting date is recorded."
+    },
+    {
+      "q": "Are all six beeches still standing?",
+      "a": "Probably not. The old trees are at the end of their lives, and one account says three remain. We have not been able to confirm the current count, so if you have been recently, tell us."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It is a forest clearing on marked trails in the Hautes Fagnes, open at all times, with no ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "On foot. The GR56 long-distance trail passes the clearing, which lies in the forest between Xhoffraix and Hockai near Malmedy. There is no public transport stop at the site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sht_001",
+      "name": "Les Six Hêtres de Longlou",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 220,
+      "age_max": 280,
+      "girth_cm": null,
+      "location": {
+        "address": "A clearing in the Fagne de Longlou (also called Fagne de Tirifaye), in the forest between Xhoffraix and Hockai, north of the Route de l'Ancienne Douane, Beverce, Malmedy",
+        "latitude": 50.485627,
+        "longitude": 6.024951,
+        "neighbourhood": "Beverce (Malmedy), Province de Liege"
+      },
+      "story": "Shepherds used to stop here at noon with their flocks, and the beeches they rested under are still standing, though not for much longer. The clearing in the Fagne de Longlou was a prandj'lohe, the local name for a midday resting place, and the spruce plantation that now closes in on every side did not exist when the shepherds used it. They would not recognise the approach.\n\nThe beeches are roughly 250 years old by the estimate of the local hiking guides, and Wallonia classified the site as protected heritage on 15 January 1936. The GR56 long-distance trail runs past, which is how most people arrive: on foot, through the Hautes Fagnes, with the clearing appearing only when the conifers open up.\n\nKnow what you are walking to. The old trees are at the end of their lives, and in 1993 the Amis des Fagnes planted young beeches beside them so the resting place would outlast its namesakes. How many of the original six still stand is not settled: one account says three, and we have not been able to confirm it. If you have stood in the clearing recently, tell us the count.\n\nWhat you find is a place in the middle of handing itself over, old trunks and their replacements side by side. That is a reason to go sooner rather than later.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/List_of_protected_heritage_sites_in_Malmedy",
+        "https://www.komoot.com/highlight/1544617"
+      ],
+      "access": "Free, in a forest clearing reached by marked trails (the GR56 long-distance trail passes the spot) in the Hautes Fagnes; open at all times, no ticket.",
+      "transport": "In the forest between Xhoffraix and Hockai near Malmedy. There is no public transport stop at the site; it is reached on foot via the GR56 or local walking trails.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the old beeches standing in an open clearing ringed by spruce, with young beeches planted in 1993 beside them. It stands on the GR56 in the Fagne de Longlou.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the old beeches turn copper against the dark spruce"
+      }
+    }
+  ]
+}
