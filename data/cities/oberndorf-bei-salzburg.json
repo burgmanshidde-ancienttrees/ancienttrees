@@ -1,0 +1,72 @@
+{
+  "city": "Oberndorf bei Salzburg",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "In 1918 a farmer from the Tettenbach farm came home alive from the First World War and planted a larch in thanks. That tree, the Friedenslärche or peace larch, still stands beside the pilgrimage path that climbs from the town of Oberndorf bei Salzburg up to the church of Maria Bühel. It is not old by the standards of this map and does not pretend to be: its claim is a date, a reason and a place. Free, beside a public path, about 25 minutes by train from Salzburg.",
+  "meta_description": "The Friedenslärche in Oberndorf bei Salzburg, a larch planted in 1918 by a farmer home from the First World War. Free, on the Maria Bühel path.",
+  "question_meta": "The Friedenslärche is a peace larch planted in 1918 on the pilgrimage path to Maria Bühel in Oberndorf bei Salzburg. Its story and where to find it.",
+  "question_answer": "The Friedenslärche, the peace larch, is a larch planted in 1918 by a farmer from the Tettenbach farm in thanks for coming home safely from the First World War. It stands on Maria-Bühel-Straße, the pilgrimage path from the town of Oberndorf bei Salzburg up to the pilgrimage church of Maria Bühel, near the small Wasserkapelle below the church. It is free to see beside the public path.",
+  "question_context": "Two independent accounts, the Salzburg regional wiki's own article on the Tettenbacher Friedenslärche and a local community report, agree on the story: the larch was planted in 1918 by the Tettenbach farmer, zum Dank für seine glückliche Heimkehr, in thanks for his safe homecoming from the war. That makes it about 108 years old. The town lists it among its Kleindenkmäler, its small monuments, rather than among protected natural monuments, which is a fair description: this is a memorial that happens to be alive. No source records its girth or height. The path it stands on, Maria-Bühel-Straße, climbs from the Stille-Nacht-Platz in Oberndorf to the Wallfahrtskirche Maria Bühel, and the larch grows on the lower part of the climb, near the Wasserkapelle Maria Bühel, a small chapel a few hundred metres below the church. A photograph taken in April 2022 shows it standing. The sources name it only as a Lärche; in this region that is almost certainly the European larch, but it has not been confirmed, and our pin marks the stretch of road rather than the trunk itself.",
+  "hero_tree_id": "obf_001",
+  "oldest_tree_id": "obf_001",
+  "faq": [
+    {
+      "q": "Why is it called the peace larch?",
+      "a": "A farmer from the Tettenbach farm planted it in 1918 in thanks for coming home safely from the First World War."
+    },
+    {
+      "q": "How old is it?",
+      "a": "About 108 years. It was planted in 1918, according to both the Salzburg regional wiki and a local report."
+    },
+    {
+      "q": "Which larch is it?",
+      "a": "The sources say only 'larch'. In this part of Austria it is almost certainly the European larch, but nobody has written that down. If you can confirm it, tell us."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Take the train from Salzburg Hauptbahnhof to Oberndorf, about 25 minutes, then walk uphill for roughly 25 to 30 minutes along the pilgrimage path to Maria Bühel. The larch stands on Maria-Bühel-Straße near the Wasserkapelle, below the church."
+    }
+  ],
+  "trees": [
+    {
+      "id": "obf_001",
+      "name": "Friedenslärche",
+      "species": "European Larch (Larix decidua)",
+      "age_estimate": "about 108 years, planted in 1918",
+      "age_min": 106,
+      "age_max": 110,
+      "location": {
+        "address": "Maria Bühel-Straße, on the pilgrimage path below the Wallfahrtskirche Maria Bühel (near the Wasserkapelle Maria Bühel), Oberndorf bei Salzburg",
+        "latitude": 47.9474478,
+        "longitude": 12.9277328,
+        "neighbourhood": "Maria Bühel, Oberndorf bei Salzburg"
+      },
+      "story": "A farmer from the Tettenbach farm came home alive from the First World War, and in 1918 he planted a larch to say thank you. That is the whole of the documented story, and it is enough. This is the Friedenslärche, the peace larch, and it is still growing beside the pilgrimage path in Oberndorf bei Salzburg a little over a century later.\n\nIt is not an ancient tree, and nobody claims it is. At about 108 years it is young by the standards of this map, and no source records its girth or its height. What it has is a date, a reason and a place. Oberndorf lists it among its Kleindenkmäler, the small monuments of the town, rather than among protected natural monuments.\n\nThe path it stands on, Maria-Bühel-Straße, climbs from the Stille-Nacht-Platz in the town up to the pilgrimage church of Maria Bühel. The larch grows on the way up, near the little Wasserkapelle a few hundred metres below the church. A photograph from April 2022 shows it standing.\n\nThe sources say only Lärche, larch. In this part of Austria that is almost certainly the European larch, but nobody has written it down. Our pin marks the stretch of road rather than the trunk. If you walk up the hill, tell us exactly where it stands and which larch it is.",
+      "verified_sources": [
+        "https://wiki.sn.at/wiki/Tettenbacher_Friedensl%C3%A4rche",
+        "https://www.meinbezirk.at/flachgau/c-regionauten-community/wallfahrtskirche-maria-buehel-oberndorf_a7215209",
+        "https://commons.wikimedia.org/wiki/File:Friedenslaerche_Maria_Buehel_Oberndorf_bei_Salzburg-1.jpg"
+      ],
+      "access": "Free, standing beside the public pilgrimage path/street (Maria-Bühel-Straße) that leads up to the Wallfahrtskirche Maria Bühel. Open, no permission or ticket needed.",
+      "transport": "Train from Salzburg Hauptbahnhof to Oberndorf, about 25 minutes, then an uphill walk of roughly 25 to 30 minutes along Maria-Bühel-Straße or the Kalvarienbergstiege pilgrimage steps toward Maria Bühel.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as a larch, a conifer that turns gold and drops its needles in autumn. It stands beside the pilgrimage path on Maria-Bühel-Straße, near the small Wasserkapelle below the church.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the larch needles turn gold"
+      }
+    }
+  ]
+}
