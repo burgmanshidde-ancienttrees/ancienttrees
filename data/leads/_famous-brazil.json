@@ -24,7 +24,9 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:%C3%81rvore_dos_Amores_-_Natal-RN_-_HDR_(2314903304).jpg"
       ],
-      "status": "lead"
+      "status": "delivered",
+      "note": "CORRECTED AND DELIVERED 2026-09-28: the Commons filename says 'Natal-RN' but every news source places this tree at Barra de Maxaranguape beach, Maxaranguape municipality, about 55km up the coast from Natal (known locally as 'Árvore do Amor', singular). Two joined 'gameleira' (Ficus) trunks forming a heart shape; locally claimed over 300 years old; survived a root-cutting vandalism attack in February 2024. See data/research/famous-czech-brazil-batch1-verified.json (id mrg_001).",
+      "mapped_as": "mrg_001"
     },
     {
       "name": "Baobab in Nísia Floresta",
@@ -35,9 +37,11 @@
         "https://commons.wikimedia.org/wiki/File:N%C3%ADsia-Floresta-baob%C3%A1-1.jpg",
         "https://commons.wikimedia.org/wiki/File:N%C3%ADsia-Floresta-baob%C3%A1-2.jpg"
       ],
-      "status": "lead",
+      "status": "delivered",
       "species": "Baobab (Adansonia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "DELIVERED 2026-09-28: planted 1877 per the tree's own plaque and the municipality's page, protected by federal and municipal law and declared Environmental Heritage of the Municipality in 2007. Two disputed local legends (brought by an enslaved African, and a supposed Saint-Exupery/Little Prince connection) recorded but not stated as fact. See data/research/famous-czech-brazil-batch1-verified.json (id nfl_001).",
+      "mapped_as": "nfl_001"
     },
     {
       "name": "Baobab in Passeio Público (Fortaleza)",
@@ -124,9 +128,11 @@
         "https://commons.wikimedia.org/wiki/File:Cipreste_Farroupilha.JPG",
         "https://commons.wikimedia.org/wiki/File:Cipreste_Farroupilha_.jpg"
       ],
-      "status": "lead",
+      "status": "delivered",
       "species": "Cypress (Cupressus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "DELIVERED 2026-09-28: an official civic symbol of Guaíba (in its own municipal anthem, coat of arms and flag), local tradition dates planting to c.1680; site of an 1835 Farroupilha Revolution planning meeting. Genus-only species (cipreste = cypress, exact Cupressus species not found). See data/research/famous-czech-brazil-batch1-verified.json (id gba_001).",
+      "mapped_as": "gba_001"
     },
     {
       "name": "Figueira das Lágrimas",
@@ -136,9 +142,11 @@
         "https://commons.wikimedia.org/wiki/File:Figueira_das_L%C3%A1grimas.jpg",
         "https://commons.wikimedia.org/wiki/File:Figueira_das_L%C3%A1grimas_2026.png"
       ],
-      "status": "lead",
+      "status": "delivered",
       "species": "Fig (Ficus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "DELIVERED 2026-09-28: tombada (protected) by CONPRESP, São Paulo's municipal heritage council, in 2016; over 250 years old per botanists/historical documents (already mature by 1862); historic farewell site including for Paraguayan War soldiers and Largo São Francisco law students. Location is street-level (approximate), no dedicated coordinate found for the 2020 plaza around it. See data/research/famous-czech-brazil-batch1-verified.json (id fdl_001).",
+      "mapped_as": "fdl_001"
     },
     {
       "name": "Old trees in Brazil",
@@ -148,7 +156,8 @@
         "https://commons.wikimedia.org/wiki/File:Jequitib%C3%A1_Rosa_com_idade_entre_500_a_700_anos.jpg",
         "https://commons.wikimedia.org/wiki/File:Santa_Rita_de_Caldas_-_Cajarana_-_%C3%81rvore_Centen%C3%A1ria_na_Mata_Pedra_Branca_-_panoramio.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Was never one tree: 'Old trees in Brazil' is a leftover Commons category label covering two unrelated trees near Santa Rita de Caldas, MG (a Jequitibá Rosa claimed 500-700 years old, and a Cajarana / Centenary Tree in Mata Pedra Branca), per the two photo filenames. CHECKED 2026-09-28: searches for both kept returning a DIFFERENT, unrelated jequitibá story from Santa Rita DO PASSO QUATRO (SP, the Patriarca/Matriarca pair in Vassununga State Park, already published as pat_001 -- a different place, do not confuse the two). No dedicated source was found this pass for either Santa Rita de Caldas tree beyond the Commons photo descriptions themselves, so neither clears the two-source bar. Split into two separate leads below rather than left as one fake 'tree'; this entry itself is retired."
     },
     {
       "name": "Patriarca (tree)",
@@ -174,6 +183,30 @@
       "status": "lead",
       "species": "Pine (Pinus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Jequitibá Rosa de Santa Rita de Caldas",
+      "lat": -21.982369,
+      "lng": -46.356125,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Jequitib%C3%A1_Rosa_com_idade_entre_500_a_700_anos.jpg"
+      ],
+      "status": "lead",
+      "species": "Cariniana legalis (Jequitibá Rosa)",
+      "species_basis": "the Commons filename names the species outright ('Jequitibá Rosa'), a real and distinctive Brazilian species",
+      "note": "Split out 2026-09-28 from the retired 'Old trees in Brazil' entry (see that entry's reason). Claimed 500-700 years old per the filename; not independently verified. Not to be confused with the published Patriarca (pat_001) jequitibá in Vassununga State Park, a different place entirely (Santa Rita do Passo Quatro, SP, not Santa Rita de Caldas, MG). No second source found in a quick search this pass."
+    },
+    {
+      "name": "Cajarana de Santa Rita de Caldas",
+      "lat": -21.982369,
+      "lng": -46.356125,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Santa_Rita_de_Caldas_-_Cajarana_-_%C3%81rvore_Centen%C3%A1ria_na_Mata_Pedra_Branca_-_panoramio.jpg"
+      ],
+      "status": "lead",
+      "species": "Cajarana (Spondias sp. or Cedrelinga sp., genus unconfirmed)",
+      "species_basis": "'cajarana' is a common Brazilian name applied to more than one genus; not resolved to a specific species this pass",
+      "note": "Split out 2026-09-28 from the retired 'Old trees in Brazil' entry. Filename calls it an 'Árvore Centenária' (centenary tree) in Mata Pedra Branca. No second source found in a quick search this pass."
     }
   ]
 }
