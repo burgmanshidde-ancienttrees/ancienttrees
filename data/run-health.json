@@ -19582,6 +19582,122 @@
    ],
    "trees": 20,
    "logged": true
+  },
+  {
+   "started": "2026-09-28T00:36:41+00:00",
+   "date": "2026-09-28",
+   "run_id": "36360949137",
+   "minutes": 43.4,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 133,
+   "denials": 7,
+   "denials_source": "permission_denials: Bash(git | sort | while ; do ...), Bash(mkdir && cd && curl), Bash(python3 ; import ; d ; for ...), Bash(rm ; echo), Bash(rm), Bash(subshell cat ; ? ; ? ; ? ...)",
+   "ended": "success",
+   "tokens": 27540117,
+   "claims_held": [],
+   "commits": 33,
+   "cities_touched": 24,
+   "cities": [
+    {
+     "city": "cajvana",
+     "trees": 1
+    },
+    {
+     "city": "cheile-cibinului",
+     "trees": 1
+    },
+    {
+     "city": "colindres",
+     "trees": 1
+    },
+    {
+     "city": "fontenay-abbey",
+     "trees": 1
+    },
+    {
+     "city": "hradek-u-susice",
+     "trees": 1
+    },
+    {
+     "city": "jerceni",
+     "trees": 1
+    },
+    {
+     "city": "knappfors",
+     "trees": 1
+    },
+    {
+     "city": "longlou",
+     "trees": 1
+    },
+    {
+     "city": "malacky",
+     "trees": 1
+    },
+    {
+     "city": "millena",
+     "trees": 1
+    },
+    {
+     "city": "nanjing",
+     "trees": 1
+    },
+    {
+     "city": "nova-ves-pod-plesi",
+     "trees": 1
+    },
+    {
+     "city": "oberndorf-bei-salzburg",
+     "trees": 1
+    },
+    {
+     "city": "ondategi",
+     "trees": 1
+    },
+    {
+     "city": "peruc",
+     "trees": 1
+    },
+    {
+     "city": "pianello",
+     "trees": 1
+    },
+    {
+     "city": "sankt-vith",
+     "trees": 1
+    },
+    {
+     "city": "seja",
+     "trees": 1
+    },
+    {
+     "city": "soreze",
+     "trees": 1
+    },
+    {
+     "city": "urvaste",
+     "trees": 1
+    },
+    {
+     "city": "vales",
+     "trees": 1
+    },
+    {
+     "city": "veliki-preslav",
+     "trees": 1
+    },
+    {
+     "city": "veryn",
+     "trees": 1
+    },
+    {
+     "city": "weywertz",
+     "trees": 1
+    }
+   ],
+   "trees": 24,
+   "logged": true
   }
  ],
  "schedule_changes": [
