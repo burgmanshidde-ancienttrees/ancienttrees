@@ -986,13 +986,14 @@
       "lng": 9.236069,
       "gps_as_published": "N 42°17'58.92'', E 9°14'9.85''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2015/Kastanovnik",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "arb_002",
         "name": "U Listincu",
         "place": "Ghisonaccia",
         "km": 30.99
-      }
+      },
+      "verified_id": "pnl_001"
     },
     {
       "name": "Olive Tree from Canneto Sabino",
@@ -1209,13 +1210,14 @@
       "lng": 26.576667,
       "gps_as_published": "N 57°55'1.99'', E 26°34'36''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2016/Dub-Tamme-Lauri",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "rig_003",
         "name": "The Kaltiņi Oak",
         "place": "Riga",
         "km": 171.12
-      }
+      },
+      "verified_id": "urv_001"
     },
     {
       "name": "The Cubbington Pear Tree",
@@ -2133,13 +2135,14 @@
       "lng": 25.986667,
       "gps_as_published": "N 47°42'16.99'', E 25°59'12''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2018/Dub-z-Cajvany",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "zrz_001",
         "name": "The Zarzecze Plane Tree",
         "place": "Zarzecze",
         "km": 357.49
-      }
+      },
+      "verified_id": "cjv_001"
     },
     {
       "name": "The Almond Tree of the Snowy Hill in Pécs",
@@ -2598,13 +2601,14 @@
       "lng": 23.984167,
       "gps_as_published": "N 45°43'48'', E 23°59'3''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2020/Starobyla-jedle-strazce-Cibinu",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "buc_004",
         "name": "The Ginkgos of the Botanical Garden",
         "place": "Bucharest",
         "km": 217.45
-      }
+      },
+      "verified_id": "cbn_001"
     },
     {
       "name": "The Chestnut Tree from Vales",
@@ -2620,13 +2624,14 @@
       "lng": -7.520492,
       "gps_as_published": "N 41°27'44.7'', W 7°31'13.77''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2020/Kastan-z-Valesu",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "gui_008",
         "name": "The Giant Eucalyptus of Monte da Penha",
         "place": "Guimaraes",
         "km": 62.44
-      }
+      },
+      "verified_id": "val_001"
     },
     {
       "name": "The Allerton Oak",
@@ -2692,13 +2697,14 @@
       "lng": -0.507133,
       "gps_as_published": "N 42°38'35.22'', W 0°30'25.68''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2020/Trojnohy-spanelsky-dub",
-      "status": "lead",
+      "status": "duplicate",
       "nearest_published": {
         "id": "lec_001",
         "name": "Carrasca Milenaria de Lecina",
         "place": "Lecina",
         "km": 64.17
-      }
+      },
+      "note": "DUPLICATE 2026-09-28: same tree already published as data/cities/mendaza.json mza_001 (Encina Tres Patas de Mendaza), a different id/slug for the identical tree; contest GPS was also ~140km off. Do not re-verify or re-write."
     },
     {
       "name": "Precious Sorb Tree",
@@ -3896,13 +3902,14 @@
       "lng": 21.988914,
       "gps_as_published": "N 56°46'58.28'', E 21°59'20.09''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2023/seja-oak",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
         "id": "ren_001",
         "name": "Renavas Thick Spruce",
         "place": "Renavas",
         "km": 62.15
-      }
+      },
+      "verified_id": "sej_001"
     },
     {
       "name": "The Purple Beech of Reigi",

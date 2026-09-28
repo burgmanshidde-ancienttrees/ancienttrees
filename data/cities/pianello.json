@@ -1,0 +1,72 @@
+{
+  "city": "Pianello",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Pianello is a village in the Castagniccia, Corsica's chestnut country, and its tree grows in the communal grove below the village. The Bread Tree is called that because for centuries Castagniccia families lived on chestnut flour, and this tree has been part of that harvest for somewhere between 800 and 1,000 years. Its base is knotted with burrs and measures 15 metres round, in a grove of centuries-old chestnuts that researchers still study today.",
+  "meta_description": "The Bread Tree of Pianello, Corsica: a chestnut 800 to 1,000 years old, its burred base 15 metres round. Free to visit, in a communal grove.",
+  "question_meta": "Pianello's remarkable tree is the Bread Tree, an 800 to 1,000 year old chestnut with a 15-metre base.",
+  "question_answer": "Pianello's notable tree is l'Arbre a Pain, the Bread Tree, a sweet chestnut in the communal grove below the village, in Corsica's Castagniccia region.",
+  "question_context": "In Corsica this chestnut is called the Bread Tree because for centuries its nuts were the bread: the Castagniccia lived on chestnut flour, and the same harvest fattened the pigs. Every source gives its girth as 15 metres, a figure to read with care, since the base is thick and knotted with round burrs, a shape very old chestnuts often take, so the tape is almost certainly going round a swollen foot rather than one smooth trunk. Above it the tree rises to at least 12 metres. In 2014 a French jury named it Tree of the Year, and in 2015 it finished twelfth in the European contest. It stands in a communal grove of some fifty hectares of centuries-old chestnuts that a European research group has studied for more than a decade. The pin marks the grove rather than the exact trunk, so expect to walk a path downhill from the village and look.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Pianello?",
+      "a": "The Bread Tree (l'Arbre a Pain), a sweet chestnut with a knotted, burred base 15 metres round, in the communal chestnut grove below the village."
+    },
+    {
+      "q": "How old is the Bread Tree?",
+      "a": "Somewhere between 800 and 1,000 years, the estimate given by the contest that made it famous. Nobody recorded when it was planted."
+    },
+    {
+      "q": "Can you visit the Bread Tree of Pianello?",
+      "a": "Yes, free, no ticket or gate reported. It stands in a communal grove reached by a path below the village, part of a wider chestnut forest."
+    },
+    {
+      "q": "How do you get to Pianello?",
+      "a": "By car into the Castagniccia; there is no public transport. The nearest town is Piedicroce, then a short walk down into the grove."
+    }
+  ],
+  "hero_tree_id": "pnl_001",
+  "oldest_tree_id": "pnl_001",
+  "trees": [
+    {
+      "id": "pnl_001",
+      "name": "The Bread Tree of Pianello (l'Arbre a Pain)",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "800 to 1,000 years",
+      "age_min": 800,
+      "age_max": 1000,
+      "age_basis": "source",
+      "girth_cm": 1500,
+      "location": {
+        "address": "Chataigneraie below the village of Pianello, Castagniccia, Haute-Corse, Corsica, France",
+        "latitude": 42.2903485,
+        "longitude": 9.3598147,
+        "neighbourhood": "Pianello, Castagniccia"
+      },
+      "story": "In Corsica this chestnut is called the Bread Tree, because for centuries its nuts were the bread. The Castagniccia, the chestnut country of north-eastern Corsica, lived on chestnut flour, and the same harvest went to fattening the pigs. This tree has been part of that economy for somewhere between 800 and 1,000 years, the estimate given by the contest that made it famous; nobody recorded when it was planted.\n\nEvery source that describes it gives the same girth: 15 metres. Read that number with care. The base is thick and knotted with round burrs, a shape very old chestnuts often take, so the tape is almost certainly going round a swollen foot rather than one smooth trunk. Above it the tree rises to at least 12 metres.\n\nIn 2014 a French jury named it Tree of the Year, and a year later it went to the European contest and finished twelfth. It stands in a communal grove below the village of Pianello, part of some fifty hectares of centuries-old chestnuts that a European research group has been studying for more than a decade, which says the grove is alive and watched even if nobody has published a check on this one trunk since.\n\nThe pin marks the grove rather than the tree, so expect to walk and look. It is a car journey into the Castagniccia and then a path downhill. If you have stood in front of it and know exactly where, tell us.",
+      "how_to_recognise": "You can recognise it by its base, around 15 metres round and knotted with rounded burrs. It stands in the communal chestnut grove below Pianello village, reached on foot by a path rather than a road.",
+      "best_time": {
+        "months": [10],
+        "kind": "fruit",
+        "label": "October, when the chestnuts that gave it its name fall in their spiny burs"
+      },
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2015/Kastanovnik",
+        "https://www.arbredelannee.com/arbres/chataignier-de-pianello",
+        "https://www.corsenetinfos.corsica/Le-plus-bel-arbre-de-l-annee-est-le-chataignier-de-Pianellu-_a11400.html",
+        "https://france3-regions.franceinfo.fr/corse/2014/09/24/l-arbre-pain-un-chataignier-de-pianello-elu-le-plus-bel-arbre-de-l-annee-557826.html"
+      ],
+      "access": "Free, no ticket or gate reported. Stands in a communal chestnut grove (chataigneraie) below Pianello village in the Castagniccia forest, reached by a path rather than a road; local school groups and a TF1 news crew have visited it, which points to open access, but the exact route was not independently confirmed from these sources.",
+      "transport": "Rural Corsica, no public transport. Nearest town is Piedicroce; a car and then a short walk down into the chestnut grove below Pianello village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

@@ -9064,5 +9064,14 @@
       "trees": 6,
       "note": "6 stories + recognition lines written and merged as 6 new single-tree places (tullamore, dunkeld, chirk, farnham, wrexham, achnacarry), each 16-70km from the nearest published tree, all under the single-famous-tree exception. Fixed one species canonicalisation (Yew -> European Yew) before merge, expanded 3 question_context fields to hit the 150-200 word Contract B range, and marked the corresponding leads published/duplicate."
     }
+  ],
+  "2026-09-28": [
+    {
+      "target": "_tree-of-the-year (7 trees, batch 2)",
+      "kind": "write",
+      "tokens": 134965,
+      "trees": 6,
+      "note": "7 stories written and merged as 6 new single-tree places (pianello, urvaste, cajvana, cheile-cibinului, vales, seja); the 7th, the Three-Legged Oak, turned out to be a duplicate of already-published mendaza.json mza_001 under a different slug, caught before merge via preflight coordinate check and dropped rather than published twice. Vales access field rewritten per session judgement call on a standing sourced landowner invitation (hard rule 10)."
+    }
   ]
 }
