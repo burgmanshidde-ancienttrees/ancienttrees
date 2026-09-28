@@ -117,7 +117,9 @@ struct CollectSheet: View {
     @State private var placing: CLLocationCoordinate2D?
     /// How tall the sheet stands, which is a property of the STEP rather than
     /// of the flow. See presentationDetents below.
-    @State private var detent: PresentationDetent = .height(260)
+    @State private var detent: PresentationDetent = .height(210)
+    /// The intro's measured height, so the sheet fits it exactly.
+    @State private var introHeight: CGFloat = 210
     @State private var shot: UIImage?
     /// Where the shutter actually fell. Held separately from `origin` because
     /// the view can be re-evaluated with a newer fix while the outcome screen
@@ -190,7 +192,7 @@ struct CollectSheet: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            closeRow
+            if stage != .intro { closeRow }
             if stage == .intro {
                 // The intro FILLS the sheet so its one action sits where a
                 // thumb already is, which is what Airbnb does with any sheet
@@ -198,9 +200,19 @@ struct CollectSheet: View {
                 // form, so those scroll.
                 CollectIntro(about: about, addsPhoto: addsPhoto,
                              onStart: { openCamera() },
-                             onLibrary: { openLibrary() })
+                             onLibrary: { openLibrary() },
+                             close: AnyView(closeButton.padding(.trailing, -7)))
                     .padding(.horizontal, 20)
-                    .padding(.bottom, 24)
+                    // Clear of the drag indicator, then the content decides
+                    // the sheet's height: measured, not guessed.
+                    .padding(.top, 24)
+                    .padding(.bottom, 8)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { h in
+                        introHeight = h
+                        if stage == .intro { detent = .height(h) }
+                    }
+                Spacer(minLength: 0)
             } else if stage == .place {
                 // A map needs the whole sheet, so this one does not scroll
                 // either. Same reason as the intro.
@@ -247,10 +259,10 @@ struct CollectSheet: View {
         // running large Dynamic Type can drag it up rather than meeting clipped
         // text. Every later step is a map, a list or a form, and those want the
         // whole sheet.
-        .presentationDetents(stage == .intro ? [.height(260), .large] : [.large],
+        .presentationDetents(stage == .intro ? [.height(introHeight), .large] : [.large],
                              selection: $detent)
         .onChange(of: stage) { _, now in
-            detent = now == .intro ? .height(260) : .large
+            detent = now == .intro ? .height(introHeight) : .large
         }
         .presentationDragIndicator(.visible)
         // AND A SWIPE CANNOT THROW IT AWAY EITHER (Hidde, 2026-08-29: "als ik
@@ -354,6 +366,14 @@ struct CollectSheet: View {
     private var closeRow: some View {
         HStack {
             Spacer()
+            closeButton
+        }
+        .padding(.horizontal, 12)
+        .padding(.top, 4)
+    }
+
+    /// The circle stays 30 points; the finger gets 44.
+    private var closeButton: some View {
             Button { if hasWork { confirmingDiscard = true } else { dismiss() } } label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 13, weight: .semibold))
@@ -366,9 +386,6 @@ struct CollectSheet: View {
             }
             .accessibilityLabel("Close")
             .accessibilityIdentifier("spot-close")
-        }
-        .padding(.horizontal, 12)
-        .padding(.top, 4)
     }
 
     // MARK: - The one decision
