@@ -54,28 +54,29 @@ struct CollectIntro: View {
     /// pressing the camera button and as a visible choice. A long press alone
     /// is invisible, so this is the visible half and the press is the shortcut.
     var onLibrary: () -> Void = {}
+    /// The sheet's close button, drawn on the title row (Hidde, 2026-09-28:
+    /// "the x is placed wrongly"). Apple Maps and the iOS 26 system sheets put
+    /// the close control at the trailing end of the TITLE, on the content's
+    /// own margin, never in a row of its own above it.
+    var close: AnyView? = nil
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 14) {
+        VStack(alignment: .leading, spacing: 24) {
             // THE TITLE SAYS WHAT YOU ARE DOING, and nothing else (Hidde,
             // 2026-09-27: "I'm really not happy with the copy here"). The
             // buttons that open this sheet say "Add a tree", and a sheet that
             // answers them with "Build your tree collection" and a sentence
             // about collections talks past the person who pressed it.
-            Text(addsPhoto ? "Add a photo"
-                 : about == nil ? "Add a tree"
-                 : "Add this tree")
-                .font(.brand(28, .bold, relativeTo: .title))
-                .foregroundStyle(Brand.ink)
-                .fixedSize(horizontal: false, vertical: true)
-                // 22 under the title, not 14 (Hidde, 2026-08-25: "the spacing
-                // between collect a tree title and the rest is too little,
-                // please verify whats convention"). It is: Apple's own sheets
-                // set a large title and then leave roughly 20 to 24 points
-                // before the body, which is about the title's own cap height.
-                // 14 is the spacing BETWEEN two paragraphs, and using it here
-                // made the title read as the first line of the text.
-                .padding(.bottom, 8)
+            HStack(alignment: .center, spacing: 12) {
+                Text(addsPhoto ? "Add a photo"
+                     : about == nil ? "Add a tree"
+                     : "Add this tree")
+                    .font(.brand(28, .bold, relativeTo: .title))
+                    .foregroundStyle(Brand.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                close
+            }
 
             // ONE LINE, AND IT IS BACK ON PURPOSE (Hidde, 2026-08-29: "ik denk
             // dat deze toch een onderregel nodig heeft om wat meer uit te
@@ -97,8 +98,10 @@ struct CollectIntro: View {
             // was for every other way in.
             // No second line: the two buttons below say how.
 
-            Spacer(minLength: 24)
-
+            // 24 between the title and the buttons, fixed rather than a
+            // Spacer: the sheet is sized to fit, so a Spacer only ever grew
+            // into the gap Hidde saw on 2026-09-28 ("the vertical spacing in
+            // the pop-up seems off").
             VStack(spacing: 10) {
                 Button("Take a photo", action: onStart)
                     .buttonStyle(BrandButtonStyle())
@@ -127,7 +130,5 @@ struct CollectIntro: View {
                 // stopped nobody else; the viewing pass checks every picture.
             }
         }
-        .frame(maxHeight: .infinity, alignment: .top)
-        .padding(.top, 8)
     }
 }
