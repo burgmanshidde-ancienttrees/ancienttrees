@@ -8711,6 +8711,17 @@
         "trees": 5,
         "note": "5 single-tree place pages shipped under the single-famous-tree exception (3 are national/European Tree of the Year titleholders); 3 more leads from the same batch held (weak age or pin, recorded in verify_notes)."
       }
+    ],
+    "2026-09-28": [
+      {
+        "target": "17 famous trees (multi-country)",
+        "kind": "write",
+        "tokens": 310000,
+        "trees": 11,
+        "note": "11 single-tree places published (longlou, weywertz, sankt-vith, nanjing, hradek-u-susice, nova-ves-pod-plesi, fontenay-abbey, ondategi, millena, knappfors, oberndorf-bei-salzburg); obf_001 story newly written. COLLISION: the 6 Tree of the Year trees in the brief (pianello, urvaste, cajvana, cibin, vales, seja) were written and paged here, then found already published by the 00:03 UTC night run (65685b2a) when pushing; this pass's versions were dropped before merge (kept on local branch writepass-0928-backup only), and the Mendaza duplicate had also already been handled there. gar_001 Garaiko artea moved to its existing held lead in data/leads/_famous-spain.json (curator HOLD; id also collides with live Garmen gar_001). 11 leads across 7 files marked published. Researcher notes stripped from access/transport fields before publishing. The brief predated the night run's merge and was not generated from passcheck at dispatch time.",
+        "wasted": 90000,
+        "brief_wrong": true
+      }
     ]
   },
   "2026-09-25": [
