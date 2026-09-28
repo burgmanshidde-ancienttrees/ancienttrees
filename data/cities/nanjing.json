@@ -1,0 +1,64 @@
+{
+  "city": "Nanjing",
+  "country": "China",
+  "status": "needs_curation",
+  "intro": "Nanjing's most famous tree is called a pine and is a juniper, and it has been standing for about 1,500 years. Tradition says Emperor Wu of Liang planted it in his palace garden in the sixth century. The palace is long gone; the ground became the Ming dynasty's Imperial Academy and then the Sipailou campus of Southeast University, where students now use the tree as a meeting point. Hollow, braced with steel and concrete, it still puts out new shoots. The campus grounds are open to walk.",
+  "meta_description": "The Six-Dynasty Juniper at Southeast University, Nanjing, is about 1,500 years old and said to be planted by a Liang emperor. On an open campus.",
+  "question_meta": "The Six-Dynasty Juniper in Nanjing is about 1,500 years old and stands on Southeast University's Sipailou campus. Its story and how to find it.",
+  "question_answer": "The Six-Dynasty Juniper, known in Chinese as Liuchao Song, is a Chinese juniper about 1,500 years old in the northwest corner of Southeast University's Sipailou campus in Xuanwu District, Nanjing. By tradition it was planted by Emperor Wu of Liang, who reigned from 502 to 549. It stands on the open university grounds.",
+  "question_context": "The name is a leftover from older usage. Liuchao Song means the Six Dynasties pine, from a time when pines and cypresses were not told apart by name, and it stuck long after the tree was recognised as a juniper. The planting by Emperor Wu of Liang is a tradition rather than a record, but both English Wikipedia and Baidu Baike put the tree at over 1,500 years, and nobody disputes that it is very old. The Liang palace did not survive: Sui armies destroyed the city in the sixth century, and the tree came through it. The site later became the Guozijian, the Ming dynasty's Imperial Academy, and today it is the historic Sipailou campus of Southeast University. Locally the juniper is called the tree king of Jinling, the old name for Nanjing. It is about twelve metres tall with a six-metre crown and a trunk roughly 99 centimetres across. The inside of the trunk is dead and hollow; the tree lives through its outer layers alone, held up by steel rods and concrete, and after expert care it has sprouted new shoots and partly recovered.",
+  "hero_tree_id": "nnj_001",
+  "oldest_tree_id": "nnj_001",
+  "faq": [
+    {
+      "q": "How old is the Six-Dynasty Juniper?",
+      "a": "About 1,500 years. Both English Wikipedia and Baidu Baike put it at over 1,500 years; the tradition that Emperor Wu of Liang planted it would date it to the first half of the sixth century."
+    },
+    {
+      "q": "Why is a juniper called a pine?",
+      "a": "The Chinese name, Liuchao Song, comes from a time when pines and cypresses were not distinguished by name. The tree is a Chinese juniper, and the old name stuck."
+    },
+    {
+      "q": "Can I visit it?",
+      "a": "Yes. It stands in the northwest corner of Southeast University's Sipailou campus, a historic campus whose grounds visitors can walk. It is on institutional grounds rather than in a public park, so keep to the campus's opening arrangements."
+    },
+    {
+      "q": "Is the tree still healthy?",
+      "a": "It is alive but fragile. The trunk is hollow and braced with steel rods and concrete, and after specialist care it has put out new shoots and partly recovered its vigour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nnj_001",
+      "name": "Six-Dynasty Juniper",
+      "species": "Chinese Juniper (Juniperus chinensis)",
+      "age_estimate": "roughly 1,500 years",
+      "age_min": 1450,
+      "age_max": 1550,
+      "girth_cm": 311,
+      "location": {
+        "address": "Northwest corner of the Sipailou campus, Southeast University, Xuanwu District, Nanjing, Jiangsu",
+        "latitude": 32.05928,
+        "longitude": 118.786057,
+        "neighbourhood": "Sipailou, Xuanwu District, Nanjing"
+      },
+      "story": "Nanjing calls this tree a pine, and it has been a juniper for about 1,500 years. The Chinese name, Liuchao Song, dates from a time when pines and cypresses were not told apart by name, and it stuck long after botany caught up.\n\nBy tradition it was planted by Emperor Wu of Liang himself, who reigned from 502 to 549, in the gardens of the Liang imperial palace. That is a legend rather than a record, but both Wikipedia and Baidu Baike put the tree at over 1,500 years, and nobody disputes that it is very old. The palace did not last. The Sui armies destroyed the city in the sixth century, and the tree came through it. The ground later became the Ming dynasty's Imperial Academy, the Guozijian, and after that the campus of Southeast University, where students now use it as a meeting point. Locally it is called the tree king of Jinling, the old name for Nanjing.\n\nIt is twelve metres tall with a six-metre crown, and it is held together with more than luck. The inside of the trunk is dead and hollow; the tree lives through its outer bark alone, braced with steel rods and concrete. After expert care, it has sprouted new shoots and partly recovered its vigour.\n\nThe trunk is about 99 centimetres across. That is not large by the standards of ancient trees, which is part of what makes the age hard to take in.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Six-Dynasty_Juniper",
+        "https://baike.baidu.com/item/%E5%85%AD%E6%9C%9D%E6%9D%BE/2728123"
+      ],
+      "access": "Free. Stands in the northwest corner of Southeast University's historic Sipailou campus, whose grounds visitors can walk; it is a well-known campus landmark, on university grounds rather than in a public park.",
+      "transport": "Central Nanjing, Sipailou campus of Southeast University, Xuanwu District; within walking distance of central Nanjing metro stations.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the hollow trunk, about a metre across, braced with steel rods and concrete. It stands in the northwest corner of Southeast University's Sipailou campus."
+    }
+  ]
+}
