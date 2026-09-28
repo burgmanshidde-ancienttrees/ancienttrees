@@ -75,6 +75,10 @@
       "Orxus",
       "Årousse"
     ],
+    "achnacarry": [
+      "Castelo de Achnacarry",
+      "Achadh na Cairidh"
+    ],
     "aga": [
       "Aga Machi"
     ],
@@ -638,6 +642,10 @@
       "Càliari",
       "Kagliari",
       "Kaljaro"
+    ],
+    "cajvana": [
+      "Opština Cajvana",
+      "Oraș Cajvana"
     ],
     "cambridge": [
       "Kembridžas",
@@ -2112,6 +2120,12 @@
     "maibara": [
       "Maibara-chhī"
     ],
+    "malacky": [
+      "Malacka",
+      "Malackai",
+      "Malacki",
+      "Malatski"
+    ],
     "malaga": [
       "Malaca",
       "Malago",
@@ -2700,6 +2714,9 @@
       "Filadelfio",
       "Filadelfiya"
     ],
+    "pianello": [
+      "U Pianellu"
+    ],
     "pisa": [
       "Pise",
       "Piza",
@@ -3115,6 +3132,16 @@
       "Segovio",
       "Seqoviya"
     ],
+    "seja": [
+      "Sējas novads",
+      "Bezirk Sēja",
+      "Municipio de Sēja",
+      "Sēja kommun",
+      "Sėjos savivaldybė",
+      "Sēja udalerria",
+      "Munisipalitas Sēja",
+      "Sēja Chū-tī-thé"
+    ],
     "senica": [
       "Szenice",
       "Senitsa"
@@ -3224,6 +3251,9 @@
       "Zolingene",
       "Salingiacum",
       "Solich"
+    ],
+    "soreze": [
+      "Sorese"
     ],
     "sorrento": [
       "Sorrent",
@@ -3547,6 +3577,9 @@
       "Unnan-chhī",
       "Unnan-sṳ"
     ],
+    "urvaste": [
+      "Urvastõ"
+    ],
     "utrecht": [
       "Utreque",
       "Utrechtas",
@@ -3587,6 +3620,12 @@
     ],
     "vassununga": [
       "Parque Estadual Vassununga"
+    ],
+    "veliki-preslav": [
+      "Weliki Preslaw",
+      "Preslav",
+      "Preslava",
+      "Veliki Preszlav"
     ],
     "velke-borove": [
       "Wielkie Borowe",
@@ -3646,6 +3685,10 @@
       "Verono",
       "Verùna",
       "Wherōna"
+    ],
+    "veryn": [
+      "Weryń",
+      "Verîn"
     ],
     "vienna": [
       "Wenen",
@@ -3716,6 +3759,13 @@
     ],
     "westerlo": [
       "Vesterlas"
+    ],
+    "wrexham": [
+      "Reksamas",
+      "Reksema",
+      "Wrecsam",
+      "Wrexam",
+      "Wreksam"
     ],
     "wroclaw": [
       "Breslau",
@@ -3866,6 +3916,7 @@
     "aachen": "Aachen",
     "aarhus": "Aarhus",
     "aberford": "Aberford",
+    "achnacarry": "Achnacarry",
     "aga": "Aga, Niigata",
     "aguas-de-moura": "Águas de Moura",
     "aizuwakamatsu": "Aizuwakamatsu",
@@ -3952,6 +4003,7 @@
     "cabeza-del-buey": "Cabeza del Buey",
     "cadiz": "Cádiz",
     "cagliari": "Cagliari",
+    "cajvana": "Cajvana",
     "calvos": "Calvos e Frades",
     "cambridge": "Cambridge",
     "canberra": "Canberra",
@@ -3972,6 +4024,7 @@
     "christchurch": "Christchurch",
     "cinovec": "Dubí",
     "coimbra": "Coimbra",
+    "colindres": "Colindres",
     "collm": "Wermsdorf",
     "cologne": "Cologne",
     "columbia-missouri": "Columbia, Missouri",
@@ -4017,6 +4070,7 @@
     "eraul": "Valle de Yerri / Deierri",
     "estry": "Estry",
     "fara-in-sabina": "Fara in Sabina",
+    "farnham": "Farnham",
     "felsomocsolad": "Felsőmocsolád",
     "ferrara": "Ferrara",
     "feternes": "Féternes",
@@ -4198,6 +4252,7 @@
     "maebashi": "Maebashi",
     "magescq": "Magescq",
     "maibara": "Maibara, Shiga",
+    "malacky": "Malacky",
     "malaga": "Málaga",
     "mallorca": "Mallorca",
     "malsfeld": "Malsfeld",
@@ -4294,6 +4349,7 @@
     "perugia": "Perugia",
     "perusic": "Perušić",
     "philadelphia": "Philadelphia",
+    "pianello": "Pianello",
     "pisa": "Pisa",
     "pisz-forest": "Puszcza Piska",
     "pittsburgh": "Pittsburgh",
@@ -4363,6 +4419,7 @@
     "schlettau": "Schlettau",
     "seattle": "Seattle",
     "segovia": "Segovia",
+    "seja": "Sēja Municipality",
     "senica": "Senica",
     "senonches": "Senonches",
     "seoul": "Seoul",
@@ -4383,6 +4440,7 @@
     "smolyan": "Smolyan",
     "sofia": "Sofia",
     "solingen": "Solingen",
+    "soreze": "Sorèze",
     "sorrento": "Sorrento",
     "split": "Split, Croatia",
     "spokane": "Spokane, Washington",
@@ -4438,12 +4496,15 @@
     "ueki": "Ueki, Kumamoto",
     "unnan": "Unnan",
     "untermerzbach": "Untermerzbach",
+    "urvaste": "Urvaste",
     "utrecht": "Utrecht",
     "uzovska-panica": "Uzovská Panica",
     "valencia": "Valencia",
     "valentin-tineo": "Valentin",
+    "vales": "Vales",
     "vancouver": "Vancouver",
     "vassununga": "Vassununga State Park",
+    "veliki-preslav": "Veliki Preslav",
     "velke-borove": "Veľké Borové",
     "velke-opatovice": "Velké Opatovice",
     "velp": "Arnhem Centraal railway station",
@@ -4452,6 +4513,7 @@
     "venon": "Grenoble",
     "vepriai": "Vepriai",
     "verona": "Verona",
+    "veryn": "Veryn",
     "vienna": "Vienna",
     "villeneuve": "Villeneuve, Fribourg",
     "vilnius": "Vilnius",
@@ -4466,6 +4528,7 @@
     "westerlo": "Westerlo",
     "wojslawice": "Wojsławice",
     "wolfheze": "Wolfheze",
+    "wrexham": "Wrexham",
     "wroclaw": "Wrocław",
     "wuppertal": "Wuppertal",
     "wye-mills-maryland": "Wye Mills, Maryland",
@@ -4505,6 +4568,7 @@
     "chadds-ford": "Chadds Ford, Pennsylvania",
     "chiapa-de-corzo": "Chiapa de Corzo",
     "chikubushima": "Chikubushima",
+    "colindres": "Colindres",
     "coromandel-forest-park": "Coromandel Forest Park",
     "craigends": "Craigends",
     "cremines": "Crémines",
@@ -4515,6 +4579,7 @@
     "eichigt": "Eichigt",
     "ekero": "Ekerö",
     "estry": "Estry",
+    "farnham": "Farnham",
     "felsomocsolad": "Felsőmocsolád",
     "galenbeck": "Galenbeck",
     "gjerrild": "Gjerrild",
@@ -4586,6 +4651,7 @@
     "ueki": "Ueki, Kumamoto",
     "untermerzbach": "Untermerzbach",
     "valentin-tineo": "Valentin",
+    "vales": "Vales",
     "velke-opatovice": "Velké Opatovice",
     "vir": "Vír",
     "vorden": "Vorden",
@@ -4603,6 +4669,7 @@
     "brielow": "no article within 40 km, tried Brielow; Brielow, Germany; search: List of dialling codes in Germany; search: Schwedenschanze; search: 143rd Rifle Division",
     "brzoza": "no article within 40 km, tried Brzoza (Brzoza, no coordinates, disambiguation page); Brzoza, Poland; search: Invasion of Poland; search: History of Poland; search: Communist Party of Poland",
     "casta": "no article within 40 km, tried Časta; Časta, Slovakia; search: List of castles in Slovakia; search: List of Lepidoptera of Slovakia; search: Slovak heraldry",
+    "cheile-cibinului": "no article within 40 km, tried Cheile Cibinului; Cheile Cibinului, Romania",
     "chishang": "no article within 40 km, tried Chishang (Chishang, no coordinates, disambiguation page); Chishang, Taiwan; search: List of cities in Taiwan; search: Agriculture in Taiwan; search: List of townships/cities and districts in Taiwan",
     "cieletniki": "no article within 40 km, tried Cielętniki (Cielętniki, no coordinates, disambiguation page); Cielętniki, Poland; search: Timeline of the 1939 invasion of Poland; search: German war crimes",
     "cooper-creek": "no article within 40 km, tried Cooper Creek (Cooper Creek, 344 km away); Cooper Creek, Australia; search: Cooper Creek; search: Cooper; search: Division of Cooper",
@@ -4623,6 +4690,7 @@
     "hinode": "no article within 40 km, tried Hinode (Hinode, no coordinates, disambiguation page); Hinode, Japan; search: Eisuke Hinode; search: Tokyo; search: Hinode Bridge",
     "ilguva": "no article within 40 km, tried Ilguva; Ilguva, Lithuania",
     "jaegerspris-nordskov": "no article within 40 km, tried Jægerspris Nordskov; Jægerspris Nordskov, Denmark; search: List of individual trees",
+    "jerceni": "no article within 40 km, tried Jērcēni; Jērcēni, Latvia; search: Administrative divisions of Latvia; search: Administrative divisions of Latvia (2009–2021); search: Strenči Municipality (Strenči Municipality, title does not match)",
     "kawago": "no article within 40 km, tried Kawago; Kawago, Japan; search: Nogizaka46",
     "kybarciai": "no article within 40 km, tried Kybarciai; Kybarciai, Lithuania",
     "laumenai": "no article within 40 km, tried Laumenai; Laumenai, Lithuania; search: Šilalė District Municipality (Šilalė District Municipality, title does not match)",
