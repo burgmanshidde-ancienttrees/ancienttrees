@@ -1047,6 +1047,59 @@ def check_a_tree_can_be_told_apart():
     return out
 
 
+COVERED_AT = 100  # published trees; a country at or above this is covered
+COVER_EXEMPT = {"United States"}
+
+
+def check_covered_countries_want_a_photo_or_a_pin():
+    """A covered country takes no new tree with neither a photo nor a sure pin.
+
+    Hidde, 2026-09-28, the day one official register became enough anywhere:
+    "for countries like NL, which is quite covered, we don't want to swamp it
+    with photo less not accurate trees." The Netherlands then held 615 trees
+    and 45 photographs, and the register behind it holds 16,000 more, so the
+    cheap route would have added exactly the kind of tree he meant.
+
+    So in a country already carrying COVERED_AT trees, a NEW tree must bring a
+    photograph or a confirmed pin; a recognition line alone is not enough
+    there. The US is exempt on his word ("better this than nothing"), and so is
+    every country below the line, where a first rough tree still opens a page.
+    Trees already live on 2026-09-28 sit in data/covered-baseline.json and
+    stay, because retiring a live page is hard rule 3. Removing this needs Hidde.
+    """
+    try:
+        with open(os.path.join("data", "covered-baseline.json"), encoding="utf-8") as fh:
+            grand = set(json.load(fh).get("ids", []))
+    except (OSError, ValueError):
+        return []
+    cities, count = [], {}
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        cities.append((path, city))
+        c = city.get("country")
+        count[c] = count.get(c, 0) + len(city.get("trees", []))
+    out = []
+    for path, city in cities:
+        c = city.get("country")
+        if c in COVER_EXEMPT or count.get(c, 0) < COVERED_AT:
+            continue
+        for tree in city.get("trees", []):
+            if tree.get("id") in grand:
+                continue
+            photo = tree.get("photo") or {}
+            if photo.get("url") and photo.get("status") != "held":
+                continue
+            if tree.get("location_precision") == "confirmed":
+                continue
+            out.append("%s: %s (%s) is new in %s, which already carries %d trees, "
+                       "and it has neither a photograph nor a confirmed pin. In a "
+                       "covered country that is a lead, not a page: keep it in "
+                       "data/leads/ until one of the two exists."
+                       % (path, tree.get("id"), tree.get("name"), c, count[c]))
+    return out
+
+
 def note_a_reader_photograph_is_not_a_reason():
     """The Nara shape, rekeyed after why_go was removed (2026-09-12).
 
@@ -2478,6 +2531,7 @@ def main():
                 + check_translations_have_no_stray_script()
                 + check_every_tree_names_a_source()
                 + check_a_tree_can_be_told_apart()
+                + check_covered_countries_want_a_photo_or_a_pin()
                 + check_story_length()
                 + check_one_common_name_per_species()
                 + check_register_says_the_tree_is_gone()

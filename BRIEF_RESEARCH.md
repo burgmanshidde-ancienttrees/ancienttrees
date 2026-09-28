@@ -51,6 +51,12 @@ itself "worth the walk": judge each one.
    does NOT cover a finding aid (California Big Trees, Famous Trees of Texas,
    monumentaltrees.com, any list with an unclear licence): those still need a
    source of their own.
+   **In a well-covered country (100+ published trees: NL, Italy, Japan, Spain,
+   Germany, France, Poland, Portugal, UK), a new tree must bring a photograph or
+   a confirmed pin**, or it goes to leads (Hidde, 2026-09-28: "for countries like
+   NL, which is quite covered, we don't want to swamp it with photo less not
+   accurate trees"). The US is exempt ("better this than nothing").
+   `check_covered_countries_want_a_photo_or_a_pin()` in preflight enforces it.
 3. **The exact spot.** `location_precision: "confirmed"` only when you can place
    the individual tree (tree-level coordinates from a register, a mapped photo,
    satellite-visible crown). Park-level or shrine-level knowledge is

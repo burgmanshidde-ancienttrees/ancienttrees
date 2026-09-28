@@ -1166,3 +1166,4 @@ What changed: a government register, or the owner of the ground publishing its o
 What did not change: the "which trees get a page" cut, the register pitfalls, pin honesty, hard rule 10. Nothing is shown to the reader ("the user doesn't have to know this"). And the queue: "let's first keep our focus on the us though", so the US stays first and this only makes each tree cheaper.
 
 Accepted risk, said out loud: some register trees will turn out dead because the life check misses one. Readers correct those and they are removed the same day.
+Same day, the guard on it: "for countries like NL, which is quite covered, we don't want to swamp it with photo less not accurate trees." In a country with 100+ published trees (the US exempt), a new tree needs a photograph or a confirmed pin, or it stays a lead. The 841 trees already live without either are grandfathered in data/covered-baseline.json. Enforced by preflight as a FAIL.
