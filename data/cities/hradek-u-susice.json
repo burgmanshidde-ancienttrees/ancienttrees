@@ -1,0 +1,65 @@
+{
+  "city": "Hrádek u Sušice",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "On the bank of the mill pond at Hrádek, four kilometres outside Sušice, stands an oak that was growing before the Thirty Years' War ended. The Hrádecký dub is a pedunculate oak put at 400 to 440 years old, 28 metres tall, with a crown twenty metres wide and a trunk over four metres round. It has been a protected memorial tree since 1978, and a Czech tourism guide last updated in 2021 describes it as a massive tree in good condition. Free, on open ground by the water.",
+  "meta_description": "The Hrádecký dub, a pedunculate oak of 400 to 440 years, stands 28 metres tall by the mill pond at Hrádek near Sušice. Free, on open ground.",
+  "question_meta": "The Hrádecký dub near Sušice is a pedunculate oak roughly 400 to 440 years old, 28 metres tall. Its size, its pond and how to reach it.",
+  "question_answer": "The Hrádecký dub is a pedunculate oak roughly 400 to 440 years old, standing on the bank of the mill pond in Hrádek u Sušice, about four kilometres from Sušice in the Klatovy District of the Plzeň Region. It is 28 metres tall with a crown about twenty metres wide, and it has been a protected memorial tree since 1978. It is free to see on open ground.",
+  "question_context": "The age comes as a range because the two sources that give it do not agree: Czech Wikipedia says about 440 years, a Czech tourism site nearer 400, and neither says how the figure was reached. Either end of the range puts the tree's first years before 1648, while the Thirty Years' War was still being fought across Bohemia. The trunk has the same problem on a smaller scale. The Czech memorial-tree register gives 411 centimetres round; Wikipedia quotes 485 centimetres from a 2012 measurement under the same register number. Both are over four metres, and both cannot describe the same measurement, so a reader with a tape and a spare minute at chest height could settle it. There is no legend attached to the tree and no famous visitor on record. What there is, is a large, healthy oak with a full crown over a working mill pond, protected since 1978 and described in 2021 as in good condition. Czech Wikipedia names two more protected limes in the area, the Hrádecká lípa and the Lešišovská lípa, which we have not yet checked for ourselves.",
+  "hero_tree_id": "hrd_001",
+  "oldest_tree_id": "hrd_001",
+  "faq": [
+    {
+      "q": "How old is the Hrádecký dub?",
+      "a": "Roughly 400 to 440 years. Czech Wikipedia says about 440, a Czech tourism site nearer 400, and neither says how the figure was worked out."
+    },
+    {
+      "q": "How big is it?",
+      "a": "About 28 metres tall with a crown twenty metres wide. The trunk is over four metres round: the memorial-tree register gives 411 centimetres, while Wikipedia quotes 485 from a 2012 measurement."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open ground on the bank of the mill pond, with no gate or ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is in the village of Hrádek u Sušice, about four kilometres from Sušice. No public transport reaches the pond itself; walk or drive from the village."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hrd_001",
+      "name": "Hrádecký dub",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400-440 years",
+      "age_min": 400,
+      "age_max": 440,
+      "age_basis": "source",
+      "girth_cm": 411,
+      "location": {
+        "address": "Beside the Hrádecký mill pond (Hrádecký mlýnský rybník), Hrádek u Sušice, Klatovy District, Plzeň Region",
+        "latitude": 49.26181896683315,
+        "longitude": 13.495127014679188,
+        "neighbourhood": "Hrádek u Sušice, about 4km from Sušice"
+      },
+      "story": "This oak was a sapling while the Thirty Years' War was tearing through Bohemia. Czech Wikipedia puts it at about 440 years old; a Czech tourism site says nearer 400. Neither says how the number was reached, so read it as a range rather than a birthday, but either end of it lands the tree's first years before 1648.\n\nWhat is not in doubt is the size. It stands 28 metres tall with a crown twenty metres wide, on the bank of the mill pond at Hrádek, four kilometres outside Sušice. It has been a protected memorial tree since 1978, and the tourism site, last updated in 2021, calls it a truly massive tree in good condition.\n\nThe trunk is over four metres round, though exactly how far over depends on whom you ask. The Czech memorial-tree register's figure is 411 centimetres; Wikipedia quotes 485 from a 2012 measurement under the same register number. They cannot both describe the same day's measurement, and if you have a tape and a spare minute at chest height, we would like to know which is closer.\n\nThere is no legend attached and no famous visitor on record. What there is, is a pedunculate oak that has stood over the same water for four centuries, through wars and a working pond's ordinary seasons, and it still carries a full crown. Czech Wikipedia names two more protected limes nearby, the Hrádecká lípa and the Lešišovská lípa, which we have not yet checked ourselves.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Hr%C3%A1deck%C3%BD_dub",
+        "https://www.turistika.cz/mista/pamatny-dub-v-hradku-u-susice/detail"
+      ],
+      "access": "Free, open public ground on the bank of the mill pond; no gate or ticket",
+      "transport": "In Hrádek u Sušice village, about 4km from Sušice; no public transport reaches the pond directly, reachable on foot or by road from the village",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by its size: a pedunculate oak 28 metres tall, with a trunk over four metres round and a crown about twenty metres wide. It stands on the bank of the Hrádek mill pond."
+    }
+  ]
+}
