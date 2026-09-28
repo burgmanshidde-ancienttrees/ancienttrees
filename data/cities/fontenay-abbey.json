@@ -1,0 +1,65 @@
+{
+  "city": "Fontenay Abbey",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Most visitors to Fontenay Abbey photograph the cloister and walk straight past the tallest thing on the site. In the abbey's gardens stands a plane tree about forty metres tall, planted in 1780 by the abbey's own account, nine years before the French Revolution. Fontenay is a Cistercian abbey in Burgundy and a UNESCO World Heritage Site, and the plane has grown through everything it has been since. Entry to the abbey is paid and the tree is inside, six kilometres from Montbard's TGV station.",
+  "meta_description": "The plane tree of Fontenay Abbey, planted in 1780, stands about 40 metres tall in the gardens of a UNESCO-listed abbey. Inside, paid entry.",
+  "question_meta": "The plane tree of Fontenay Abbey was planted in 1780 and stands about 40 metres tall in a UNESCO-listed Burgundy abbey. How to see it.",
+  "question_answer": "The Plane Tree of Fontenay Abbey is a London plane planted in 1780 in the gardens of the Abbaye de Fontenay, a Cistercian abbey and UNESCO World Heritage Site near Montbard in Burgundy. It is about forty metres tall and roughly 245 years old. It stands inside the abbey grounds, which charge for entry.",
+  "question_context": "The planting year comes from the abbey itself: the Abbaye de Fontenay's own site dates this plane to 1780, and the date belongs to the tree rather than being borrowed from the garden around it. The Comité des Parcs et Jardins de France lists Fontenay's gardens in their own right, among them a handful of centuries-old trees, and at about forty metres the plane is the one that makes people look up. Almost everyone who comes here comes for the stone: the Romanesque church, the cloister and the forge of a Cistercian abbey that is now a UNESCO World Heritage Site. The plane went into the ground nine years before the Revolution began, and it has stood through every use the abbey has been put to since. Its trunk is said to be around six metres round, but that figure comes from photograph captions rather than from the abbey, so read it as a rough guide rather than a measurement. Because the tree stands inside the abbey grounds, you see it as part of a paid visit rather than on the way to one.",
+  "hero_tree_id": "ftn_001",
+  "oldest_tree_id": "ftn_001",
+  "faq": [
+    {
+      "q": "How old is the plane tree at Fontenay Abbey?",
+      "a": "It was planted in 1780, according to the abbey's own website, which makes it about 245 years old."
+    },
+    {
+      "q": "How big is it?",
+      "a": "About forty metres tall. Its trunk is often said to be around six metres round, but that figure comes from photograph captions rather than from the abbey."
+    },
+    {
+      "q": "Is it free to see?",
+      "a": "No. It stands in the abbey gardens, and entry to the Abbaye de Fontenay is paid."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "The nearest station is Montbard, a TGV stop about six kilometres away. From there, take a taxi, drive, or use the seasonal shuttle to the abbey."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ftn_001",
+      "name": "The Plane Tree of Fontenay Abbey",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "planted 1780, about 245 years",
+      "age_min": 240,
+      "age_max": 250,
+      "girth_cm": 600,
+      "location": {
+        "address": "Abbaye de Fontenay, 21500 Marmagne, Cote-d'Or, Burgundy",
+        "latitude": 47.639731,
+        "longitude": 4.388587,
+        "neighbourhood": "Grands Jardins (formal gardens) courtyard, Abbaye de Fontenay"
+      },
+      "story": "A plane tree about forty metres tall stands in the gardens of one of Europe's best-preserved medieval monasteries, and most visitors photograph the cloister instead. The Abbaye de Fontenay's own site gives the planting year as 1780, which makes the tree roughly 245 years old, and that date belongs to this specimen, not borrowed from the garden around it.\n\nFontenay is a Cistercian abbey and a UNESCO World Heritage Site, and almost everyone who comes here comes for the stone: the Romanesque church, the cloister, the forge. The Comité des Parcs et Jardins de France lists its gardens separately, among them a handful of centuries-old trees, and at forty metres the plane is the one that makes you look up.\n\nIt went into the ground nine years before the French Revolution began, and it has grown through everything the abbey has been since. The trunk is said to be around six metres round, though that figure comes from photo captions rather than from the abbey itself, so treat it as a rough guide and not a measurement.\n\nEntry to the abbey is paid, and the plane is inside, so this is a tree you see as part of the visit rather than on the way to it. Montbard, the nearest TGV station, is about six kilometres away, and a short taxi ride or the seasonal shuttle covers the rest.",
+      "verified_sources": [
+        "https://www.abbayedefontenay.com/decouvrir-fontenay/l-abbaye-et-ses-jardins/les-nouveaux-jardins",
+        "https://www.parcsetjardins.fr/jardins/1377-jardin-de-l-abbaye-de-fontenay"
+      ],
+      "access": "Paid entry: the Abbey of Fontenay (a UNESCO World Heritage Site) charges admission to enter the grounds and gardens where the tree stands.",
+      "transport": "Nearest station is Montbard, a TGV stop about 6km away; the abbey is reached by a short taxi ride or drive, or by the seasonal shuttle from Montbard.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "paid_entry": true,
+      "how_to_recognise": "You can recognise it by its height, about forty metres, and a trunk said to be some six metres round. It is the plane planted in 1780 in the formal gardens of the Abbaye de Fontenay."
+    }
+  ]
+}
