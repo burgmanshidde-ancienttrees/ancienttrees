@@ -1,0 +1,65 @@
+{
+  "city": "Knappfors",
+  "country": "Sweden",
+  "status": "needs_curation",
+  "intro": "Kungseken, the king's oak, stands beside an old canal lock at Knappfors, and tradition says two princes met under it to plot against their brother, King Erik XIV. The Swedes who wrote the story down do not believe it. The oak is real enough: photographed here in 1895 and again in the 1940s, and still in full leaf in 2024, its split trunk held together with metal bands. It stands in a meadow by the 1852 lock, inside the Lunnedet nature reserve near Karlskoga. Free to visit.",
+  "meta_description": "Kungseken, the king's oak at Knappfors near Karlskoga, stands by an 1852 canal lock, bound with metal bands and tied to a royal legend. Free.",
+  "question_meta": "Kungseken is the king's oak beside the old lock at Knappfors, in the Lunnedet nature reserve near Karlskoga. Its legend and how to find it.",
+  "question_answer": "Kungseken, the king's oak, is an oak beside the old canal lock at Knappfors, a preserved ironworks site inside the Lunnedet nature reserve about ten kilometres by road from Karlskoga in Sweden. Tradition links it to a plot by Gustav Vasa's sons against their brother Erik XIV, a story Swedish sources consider an invention. It is free to visit, in a fenced meadow with a sign beside it.",
+  "question_context": "The legend is the reason for the name. Tradition says the future kings Johan and Karl, sons of Gustav Vasa, came to the Knappfors lock to conspire against their brother, King Erik XIV, and met under this oak. Both Swedish Wikipedia articles that mention the tree call the story a likely invention, which has not stopped anybody calling it Kungseken. What can be shown is that the oak has been here a long time. A photograph from 1895 is referred to, the Örebro city archive holds one from the 1940s, and a 2024 photograph shows it alive and in full summer leaf, its split lower trunk bound with metal bands, inside a wooden fence in a mown meadow beside the lock and the red lock-keeper's house, with a small sign at its foot. The setting has its own history. Knappfors is a preserved nineteenth-century ironworks site, and the lock, finished in 1852, carried pig iron floated down from the Karlskoga and Nora mining districts. Since 1987 it has been part of the Lunnedet nature reserve, 188 hectares with camping and beaches. No source gives the oak's age, girth or exact species.",
+  "hero_tree_id": "swe_kungseken_knappfors",
+  "oldest_tree_id": "swe_kungseken_knappfors",
+  "faq": [
+    {
+      "q": "Why is it called the king's oak?",
+      "a": "Tradition says Gustav Vasa's sons Johan and Karl met under it to plot against their brother, King Erik XIV. Swedish sources consider the story a likely invention."
+    },
+    {
+      "q": "How old is Kungseken?",
+      "a": "Nobody has published an age, a girth or even which oak species it is. It was photographed here as early as 1895. If you have measured it, tell us."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open, fenced heritage meadow beside the old Knappfors lock inside the Lunnedet nature reserve, with an information sign beside the tree."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Knappfors is about ten kilometres by road from central Karlskoga. There is no useful public transport, so go by car or bicycle along the Knappfors and Lunnedet road."
+    }
+  ],
+  "trees": [
+    {
+      "id": "swe_kungseken_knappfors",
+      "name": "Kungseken, Knappfors",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "By the old lock (slussen), Knappfors bruksmiljö, Lunnedet nature reserve, Karlskoga municipality",
+        "latitude": 59.403652,
+        "longitude": 14.422668,
+        "neighbourhood": "Knappfors, near Lesjöfors/Karlskoga, Värmland"
+      },
+      "story": "Two princes are supposed to have met under this oak to plot against their own brother, the king, and the Swedes who wrote it down do not believe a word of it. Tradition says Gustav Vasa's sons, the future dukes and kings Johan and Karl, came to the Knappfors lock to conspire against Erik XIV. Both Swedish Wikipedia articles that mention the tree call the story a likely invention. It is a good story all the same, for a tree called Kungseken, the king's oak.\n\nWhat is certain is that it has been photographed here for a long time: a picture from 1895 is referred to, and the Örebro city archive holds one from the 1940s. A 2024 photograph shows it alive and in full summer leaf, its split lower trunk held together with metal bands, standing inside a wooden fence in a mown meadow beside the old canal lock and the red lock-keeper's house, with a small sign at its foot.\n\nThe setting has its own history. Knappfors is a preserved nineteenth-century ironworks site, and the lock, finished in 1852, carried pig iron floated down from the Karlskoga and Nora mining districts. Today it sits inside the Lunnedet nature reserve, about ten kilometres by road from Karlskoga, with camping and beaches nearby.\n\nNobody has published its age, its girth, or even which oak it is. If you have measured it, tell us.",
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/Knappfors",
+        "https://sv.wikipedia.org/wiki/Lunnedet",
+        "https://commons.wikimedia.org/wiki/File:Knappfors_2024-07-22_image04.jpg"
+      ],
+      "access": "Free. Stands in the open, fenced heritage meadow by the historic Knappfors ironworks lock, inside the Lunnedet nature reserve (established 1987, 188 ha, with camping and beaches), with a public information sign next to the tree.",
+      "transport": "About 10km by road from central Karlskoga, reached by car or bicycle via the Knappfors and Lunnedet road; there is no useful public transport.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the metal bands holding its split lower trunk together and the wooden fence around it. It stands in the meadow beside the old Knappfors lock and the red lock-keeper's house."
+    }
+  ]
+}
