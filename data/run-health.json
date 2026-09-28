@@ -19482,6 +19482,106 @@
    ],
    "trees": 8,
    "logged": true
+  },
+  {
+   "started": "2026-09-27T22:58:37+00:00",
+   "date": "2026-09-28",
+   "run_id": "36357087234",
+   "minutes": 96.3,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 235,
+   "denials": 12,
+   "denials_source": "permission_denials: Bash(cd ; cat ; import ; ? ...), Bash(cd ; sed ; ? && python3), Bash(echo && cat), Bash(for ; do ; grep ; done), Bash(git | tail && git), Bash(python3 && rm), Bash(rm && python3 ; import ; d ...), Bash(rm ; echo), Bash(rm), Bash(subshell python3 ; import ; with ; d ...)",
+   "ended": "success",
+   "tokens": 61661125,
+   "claims_held": [],
+   "commits": 18,
+   "cities_touched": 20,
+   "cities": [
+    {
+     "city": "achnacarry",
+     "trees": 1
+    },
+    {
+     "city": "cajvana",
+     "trees": 1
+    },
+    {
+     "city": "cheile-cibinului",
+     "trees": 1
+    },
+    {
+     "city": "chirk",
+     "trees": 1
+    },
+    {
+     "city": "colindres",
+     "trees": 1
+    },
+    {
+     "city": "dunkeld",
+     "trees": 1
+    },
+    {
+     "city": "farnham",
+     "trees": 1
+    },
+    {
+     "city": "jerceni",
+     "trees": 1
+    },
+    {
+     "city": "malacky",
+     "trees": 1
+    },
+    {
+     "city": "peruc",
+     "trees": 1
+    },
+    {
+     "city": "pianello",
+     "trees": 1
+    },
+    {
+     "city": "seja",
+     "trees": 1
+    },
+    {
+     "city": "soreze",
+     "trees": 1
+    },
+    {
+     "city": "st-georgen-im-attergau",
+     "trees": 1
+    },
+    {
+     "city": "tullamore",
+     "trees": 1
+    },
+    {
+     "city": "urvaste",
+     "trees": 1
+    },
+    {
+     "city": "vales",
+     "trees": 1
+    },
+    {
+     "city": "veliki-preslav",
+     "trees": 1
+    },
+    {
+     "city": "veryn",
+     "trees": 1
+    },
+    {
+     "city": "wrexham",
+     "trees": 1
+    }
+   ],
+   "trees": 20,
+   "logged": true
   }
  ],
  "schedule_changes": [
