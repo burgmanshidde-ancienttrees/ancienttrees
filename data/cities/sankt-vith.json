@@ -1,0 +1,65 @@
+{
+  "city": "Sankt Vith",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "In the forest outside Sankt Vith, a tree and a saint stand together. The statue of Saint Anthony beside it gives the tree its name, the Antoniusbaum, and the pair is a popular goal for walkers in the Sankt Vither Wald. The German-speaking Community of Belgium put the area under landscape protection in 1985, and in 2007 the spot was restored through private local initiative, as the regional paper reported. It is free, in the public Sankt Vither Wald, and reached on foot along the forest paths.",
+  "meta_description": "The Antoniusbaum: a tree beside a statue of Saint Anthony in the Sankt Vith forest, a protected landscape and a popular walk. Free, open always.",
+  "question_meta": "The Antoniusbaum is a named tree beside a statue of Saint Anthony in the forest of Sankt Vith. What is known about it and how to walk there.",
+  "question_answer": "The Antoniusbaum is a tree in the Sankt Vither Wald, the forest of Sankt Vith in the German-speaking east of Belgium, named after the statue of Saint Anthony that stands beside it. The area around it has been under landscape protection since 1985, and it is a popular destination for hikers. It is free and open at all times.",
+  "question_context": "The Antoniusbaum is a named place rather than a botanical record. When the German-speaking Community of Belgium protected it in 1985, it listed the Antoniusbaum area as a protected landscape, which guards the setting as a whole, the tree and the saint and the forest around them, rather than registering the trunk as a monumental tree. It appears under that heading on the official list of protected heritage sites in Sankt Vith. In 2007 the regional newspaper GrenzEcho reported that the spot had been restored and improved through private local initiative, and the paper describes the place as a favourite goal for walkers in the Sankt Vither Wald. That is close to the whole of the record, and it leaves the obvious questions open. No source we trust names the species, gives an age or records a girth. A figure of more than 300 years circulates online, but we could not trace it to any page we would cite, so it is not given here as fact. If you have stood under it and can say what kind of tree it is, or how big, you would be the first to put it on record.",
+  "hero_tree_id": "stv_001",
+  "oldest_tree_id": "stv_001",
+  "faq": [
+    {
+      "q": "Why is it called the Antoniusbaum?",
+      "a": "After the statue of Saint Anthony that stands beside it. Antoniusbaum means Anthony's tree."
+    },
+    {
+      "q": "What kind of tree is it, and how old?",
+      "a": "No source we trust says. A figure of more than 300 years circulates online, but we could not trace it. If you can identify the species or have measured the trunk, tell us."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the public forest of Sankt Vith, open at all times, with no ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "On foot, along the hiking paths of the Sankt Vither Wald, the forest around the town of Sankt Vith in eastern Belgium."
+    }
+  ],
+  "trees": [
+    {
+      "id": "stv_001",
+      "name": "Antoniusbaum",
+      "species": "species not established",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "In the Sankt Vither Wald (St. Vith forest), Sankt-Vith, German-speaking Community of Belgium",
+        "latitude": 50.278974,
+        "longitude": 6.187449,
+        "neighbourhood": "Sankt-Vith, German-speaking Community of Belgium"
+      },
+      "story": "This tree is known by the saint standing next to it. The Antoniusbaum takes its name from a statue of Saint Anthony beside it in the St. Vith forest, and it is the pairing, tree and saint together, that people walk out to see.\n\nIt is a named destination rather than a botanical record. In 1985 the German-speaking Community of Belgium put the Antoniusbaum area under landscape protection, which guards the setting as a whole rather than listing the trunk as a monumental tree. In 2007 the regional paper GrenzEcho reported the spot had been spruced up by private local initiative, and it is described as a popular goal for hikers in the Sankt Vither Wald.\n\nThat is close to everything on record, and we would rather say so than dress it up. No source we found names the species, gives an age or records a girth. The name is no help either: an Eiche or a Linde announces itself, an Anthony tree does not. A figure of \"more than 300 years\" circulates online, but we could not trace it to any page we trust, so it is not repeated here as fact.\n\nWhat it offers is a walk through the forest to a place that people have kept tending, with a saint for company at the end. If you have stood under it and can say what kind of tree it is, or how big, tell us. You would be the first source.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q57352818",
+        "https://en.wikipedia.org/wiki/List_of_protected_heritage_sites_in_Sankt-Vith",
+        "https://www.grenzecho.net/art/region/eifel-ardennen/antoniusbaum-im-st-vither-wald-aufgewertet"
+      ],
+      "access": "Free, in the public St. Vith forest, described as a popular hiking destination; open at all times.",
+      "transport": "In the Sankt Vither Wald, the forest around Sankt Vith, reached on foot along the forest's hiking paths.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the statue of Saint Anthony standing beside it, which gives the tree its name. It stands in the St. Vith forest, on the hiking paths of the Sankt Vither Wald."
+    }
+  ]
+}
