@@ -201,13 +201,19 @@
         "https://commons.wikimedia.org/wiki/File:Knappfors_2024-07-22_image12.jpg",
         "https://commons.wikimedia.org/wiki/File:Kungseken_i_Knappfors.png"
       ],
-      "status": "held",
+      "status": "published",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "note": "Verified 2026-09-27, alive (viewed actual pixels of the 2024-07-22 Commons photo, full leaf, EXIF GPS matches candidate coordinate almost exactly). Delivered to data/research/famoussweden-verified.json as swe_kungseken_knappfors. Genuinely not near any published Swedish city, so a real (if moderate-strength) candidate for the single-famous-tree exception; no age, girth or dedicated Wikipedia article found, and no realistic public transport.",
       "verified_id": "swe_kungseken_knappfors",
       "verified_file": "data/research/famoussweden-verified.json",
-      "verify_note": "2026-09-27: verified alive with high confidence (EXIF-matched 2024 photo), genuinely isolated from any published city so a real single-famous-tree candidate in principle, but modest online fame (no dedicated article of its own, mentioned only inside two others), no age or girth found anywhere, no public transport, and its own royal legend is called likely invented by the sources themselves. Recommend HOLD rather than ship as its own place, same shape as Trogareds ek in this file."
+      "verify_note": "2026-09-27: verified alive with high confidence (EXIF-matched 2024 photo), genuinely isolated from any published city so a real single-famous-tree candidate in principle, but modest online fame (no dedicated article of its own, mentioned only inside two others), no age or girth found anywhere, no public transport, and its own royal legend is called likely invented by the sources themselves. Recommend HOLD rather than ship as its own place, same shape as Trogareds ek in this file.",
+      "mapped_as": {
+        "id": "swe_kungseken_knappfors",
+        "name": "Kungseken, Knappfors",
+        "place_slug": "knappfors"
+      },
+      "mapped_by": "verified_id"
     },
     {
       "name": "Lojstaeken",
