@@ -182,55 +182,6 @@
       "blocked_reason": "Known dead. This is Montalban de Cordoba's 'Mesto de las Rozas', a Quercus ilex x Quercus suber natural hybrid in the Las Rozas area (Campina Cordobesa), about 7km from the town (approx. municipality centre 37.5477, -4.7430; no tree-level coordinate exists or is needed now). es.wikipedia.org/wiki/Mesto_de_las_Rozas (fetched directly) states the trunk split and the whole crown fell in a severe storm in summer 1995; only the trunk and a regrowth shoot remain on site. The one photo we hold, File:Elmesto.jpg, is captioned on Commons 'El Mesto de las Rozas. Anos 80' (the tree in the 1980s), i.e. it depicts the tree BEFORE it fell, not a current living specimen; publishing it as a photo of a living tree would misrepresent a historical image as current. The brief's guess that 'Mesto' was an Asturias/Cantabria term was wrong; it is a Cordoba/Andalusia hybrid-oak name and this is a different region entirely from the other three candidates in this batch. Hard rule: never publish a tree known to be dead. This can appear only as historical context inside a story about the region, never as a collectible entry. Verification pass 2026-09-27."
     },
     {
-      "name": "Ondategiko Haritza",
-      "lat": 42.95363042,
-      "lng": -2.73524306,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza.jpg",
-        "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza_2.jpg",
-        "https://commons.wikimedia.org/wiki/File:Ondategiko_Haritza_3.jpg"
-      ],
-      "status": "held",
-      "verified_id": "ond_001",
-      "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: see data/research/famousspain-verified.json for full verify_notes. STORY WRITTEN 2026-09-27 (data/research/famousspain-verified.json carries the full story and how_to_recognise, ready to merge). Still HELD per the verify pass's own curator call: no numeric age (only 'centenario'), location_precision approximate (village-edge description, no surveyed coordinate), does not clear the destination test on fame or scale alone.",
-      "held_reason": "2026-09-28: written and paged in a write pass, then held back before push by preflight's new covered-country rule (Spain already carries ~296 trees): no photograph and an approximate pin. The story and recognition line are in data/research/famousspain-verified.json; the full place-page draft (intro, meta, question page, FAQ, cleaned access/transport) is in page_draft below. Publish when a photograph of THIS tree or a confirmed pin exists.",
-      "page_draft": {
-        "slug": "ondategi",
-        "page": {
-          "city": "Ondategi",
-          "country": "Spain",
-          "intro": "Until the Spanish Civil War, the village of Ondategi in Álava held its August festival under one oak, with one accordion for music. The Sarragoa oak, Ondategiko Haritza in Basque, is a pedunculate oak twenty metres tall with a crown about thirty metres across, standing on the communal meadow at the edge of the village. The Basque Government declared it a Singular Tree in 1997, one of ten in Álava. The festival did not survive the war; the oak did. Free, on the open meadow.",
-          "meta_description": "Ondategiko Haritza, the Sarragoa oak: a pedunculate oak with a 30-metre crown where Ondategi held its festival. Free, on a communal meadow.",
-          "question_meta": "Ondategiko Haritza is a protected pedunculate oak on the Sarragoa meadow in Ondategi, Álava, with a 30-metre crown. Its story and how to find it.",
-          "question_answer": "Ondategiko Haritza, also called the Roble de Sarragoa, is a pedunculate oak on the campa of Sarragoa, the communal meadow at the southwest edge of Ondategi in the municipality of Zigoitia, Álava. It is about twenty metres tall with a crown around thirty metres wide and a trunk 4.9 metres round, and the Basque Government declared it a Singular Tree in 1997. It is free to visit on the open meadow.",
-          "question_context": "The tree's best story is about a party. Ondategi's romería of San Lorenzo fell on 10 August, but the village could only afford paid musicians for one feast a year, Santa Lucía on 13 December. So in August the celebration took place in the shade of the Sarragoa oak with a single accordionist, and it went on that way until the Spanish Civil War, after which the romería under the tree was not revived. For generations the oak also gave shade and shelter to livestock and people on the meadow. It goes by several names: Ondategiko Haritza, Sarragoako haritza, the Roble de Sarragoa, and the plainest of them, the Árbol gordo de Zanagua, the fat tree. The Basque Government listed it as a Singular Tree in 1997, one of ten in the province of Álava, and the published measurement puts its trunk at 4.9 metres round at chest height. Every source calls it centenario, which means old and says nothing more precise. No one has published an age, and a reader who knows when the romería under it began would already be telling us more than any source does.",
-          "faq": [
-            {
-              "q": "How old is Ondategiko Haritza?",
-              "a": "No source gives an age. Every account calls it centenario, simply meaning very old. If you know more, tell us."
-            },
-            {
-              "q": "Why is it famous locally?",
-              "a": "Until the Spanish Civil War, Ondategi held its August romería of San Lorenzo under its crown, with a single accordionist playing, because the village could afford paid musicians only for its December feast."
-            },
-            {
-              "q": "Is it free to visit?",
-              "a": "Yes. It stands on an open communal meadow at the edge of the village, with no gate or ticket."
-            },
-            {
-              "q": "How do I find it?",
-              "a": "Go to Ondategi, in the municipality of Zigoitia, Álava, and take the street to the left of the church to its end; the oak stands on the Sarragoa meadow. The village is about 13 kilometres from Vitoria-Gasteiz, and a car is the realistic way to get there."
-            }
-          ]
-        },
-        "tree_overrides": {
-          "access": "Free. Stands on an open communal meadow (campa) at the edge of the village, reached by the street that runs to the left of the church; no gate or ticket. Also known locally as the Roble de Sarragoa, Sarragoako haritza or the Árbol gordo de Zanagua.",
-          "transport": "Rural Zigoitia, Álava, about 13km from Vitoria-Gasteiz and 38km from Bilbao; there is no realistic public transport, so a car is the practical way to reach it."
-        }
-      }
-    },
-    {
       "name": "Roble Escarcio",
       "lat": 42.330542,
       "lng": -3.295127,
@@ -325,55 +276,6 @@
       "verified_id": "trq_001",
       "verified_file": "data/research/famousspain-verified.json",
       "verify_note": "2026-09-27 verification pass: BLOCKED, dead. Official Generalitat de Catalunya register (AM 05.245.01) states the main trunk died in the late 1990s; a small root-sucker sapling from 2008 is now standing but is not remarkable. See out/tmp/famousspain-batchC.json for full notes."
-    },
-    {
-      "name": "Om centenari de Millena",
-      "lat": 38.730569,
-      "lng": -0.363691,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Arrels_de_l%27om_centenari_de_Millena.JPG",
-        "https://commons.wikimedia.org/wiki/File:Branques_de_l%27om_de_Millena.JPG",
-        "https://commons.wikimedia.org/wiki/File:Escor%C3%A7a_de_l%27om_de_Millena.JPG"
-      ],
-      "status": "held",
-      "species": "Field Elm (Ulmus minor)",
-      "verified_id": "mll_001",
-      "verified_file": "data/research/famousspain-verified.json",
-      "verify_note": "2026-09-27 verification pass: verified, flagged (no official register listing; three independent web sources agree). Girth ~530cm, age vaguely 'roughly 300 years' from sources (an 1812-planting theory in one source is speculation, not used). Called the last healthy plaza elm in Alicante province, having survived Dutch elm disease. location_precision approximate: given coordinate is the village/OSM-boundary centroid, not a tree-level fix (no geotagged photo found); church square is ~22m away. 65km from Alicante with no transit link, no nearby cluster; destination call left open. See out/tmp/famousspain-batchC.json for full notes. STORY WRITTEN 2026-09-27 (data/research/famousspain-verified.json carries the full story and how_to_recognise, ready to merge). Still HELD per the verify pass's own curator call: not on any official monumental-tree register, location_precision approximate (the coordinate is Millena's OSM administrative centroid, not a tree-level fix), and 65km from Alicante with no realistic transit.",
-      "held_reason": "2026-09-28: written and paged in a write pass, then held back before push by preflight's new covered-country rule (Spain already carries ~296 trees): no photograph and an approximate pin. The story and recognition line are in data/research/famousspain-verified.json; the full place-page draft (intro, meta, question page, FAQ, cleaned access/transport) is in page_draft below. Publish when a photograph of THIS tree or a confirmed pin exists.",
-      "page_draft": {
-        "slug": "millena",
-        "page": {
-          "city": "Millena",
-          "country": "Spain",
-          "intro": "Dutch elm disease emptied the village squares of Alicante province of their elms, and in Millena, a village of around two hundred people in El Comtat, one is still standing. The field elm in front of the Church of Sant Josep is locally called the thousand-year elm, and is more likely two to three centuries old. Its trunk is 5.30 metres round, its heavy limbs propped on pillars after a snowfall broke one. The village signposts it at the entrance to town. Free, in the open church square.",
-          "meta_description": "The Olmo centenario de Millena, a field elm 5.30 metres round, survives in the church square of a small Alicante village. Free, in the open square.",
-          "question_meta": "The Olmo centenario de Millena is a field elm of roughly 200 to 300 years in the church square of Millena, Alicante. Its story and how to find it.",
-          "question_answer": "The Olmo centenario de Millena, locally the Om mil·lenari, is a field elm in the Plaza de la Iglesia in front of the Church of Sant Josep in Millena, a small village in the El Comtat district of Alicante province. Published estimates put it at about 300 years, and possibly nearer 200. Its trunk is 5.30 metres round, and it is free to see in the open square.",
-          "question_context": "Dutch elm disease killed most of the old village elms of this part of Spain, and two independent accounts describe Millena's as the last healthy one still standing in a plaza in the province. The local name, the thousand-year elm, overstates it considerably. Published estimates say about three hundred years, and one travel writer who visited suggests it may be younger still: elms were planted in Spanish town squares to mark the Cádiz Constitution of 1812, and he wonders whether this is one of them. That is his theory rather than a record, so the honest range is somewhere between two and three centuries. The measurements are firmer. The trunk is 5.30 metres round, the tree about ten metres tall with a crown up to eleven metres across. A limb broke under snow, pillars were put in to hold up the rest, and a later snowfall damaged one of the pillars. The elm is not on the Valencian catalogue of monumental trees, but it is protected under the region's 2006 law on monumental trees. The most recent account we found dates from 2016, so a current report from a visitor would be welcome.",
-          "faq": [
-            {
-              "q": "Is the elm really a thousand years old?",
-              "a": "No. The local name means the thousand-year elm, but published estimates put it at about 300 years, and one visitor's theory would make it nearer 200."
-            },
-            {
-              "q": "Why is it special?",
-              "a": "Dutch elm disease killed most of the old village elms of the region, and by two independent accounts this is the last healthy one still standing in a plaza in Alicante province. Its trunk is 5.30 metres round."
-            },
-            {
-              "q": "Is it free to visit?",
-              "a": "Yes. It stands in the open church square in the centre of Millena, and the village signposts it at the entrance to town."
-            },
-            {
-              "q": "How do I get there?",
-              "a": "Millena is in inland Alicante province, between Gorga and Cocentaina, and no public transport reaches it. Drive from Cocentaina or Alcoi; it is roughly 65 kilometres from Alicante city."
-            }
-          ]
-        },
-        "tree_overrides": {
-          "transport": "Rural inland Alicante province (El Comtat district), between Gorga and Cocentaina; no public transport reaches the village. Roughly 65km from Alicante city; most practical by car from Cocentaina or Alcoi."
-        }
-      }
     },
     {
       "name": "Om de la Plana",
