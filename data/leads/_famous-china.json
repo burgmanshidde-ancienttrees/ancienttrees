@@ -77,12 +77,18 @@
         "https://commons.wikimedia.org/wiki/File:LiuChaoSong_carving.jpg",
         "https://commons.wikimedia.org/wiki/File:LiuChaoSong_stone.jpg"
       ],
-      "status": "held",
+      "status": "published",
       "verified_id": "nnj_001",
       "verified_file": "data/research/_famous-china-verified.json",
       "species": "Chinese Juniper (Juniperus chinensis)",
       "species_basis": "confirmed via English Wikipedia and Baidu Baike; the common name means 'pine' but Baidu is explicit it is actually a juniper, a historical misnaming",
-      "verify_note": "2026-09-10 verification pass: alive, ~1500yr, on Southeast University's Sipailou campus, Nanjing, free/open campus landmark. DESTINATION TEST: recommend AGAINST a standalone place page; reads as a loved campus curiosity rather than a reason to travel to Nanjing, and Nanjing has much stronger draws that would eclipse it. Better held as the seed tree for a future Nanjing city page than shipped alone. STORY WRITTEN 2026-09-27 (data/research/_famous-china-verified.json carries the full story as nnj_001, its real id, correcting this entry's stale verified_id which read sdj_001; ready to merge whenever a Nanjing page exists). Still HELD, same reasoning."
+      "verify_note": "2026-09-10 verification pass: alive, ~1500yr, on Southeast University's Sipailou campus, Nanjing, free/open campus landmark. DESTINATION TEST: recommend AGAINST a standalone place page; reads as a loved campus curiosity rather than a reason to travel to Nanjing, and Nanjing has much stronger draws that would eclipse it. Better held as the seed tree for a future Nanjing city page than shipped alone. STORY WRITTEN 2026-09-27 (data/research/_famous-china-verified.json carries the full story as nnj_001, its real id, correcting this entry's stale verified_id which read sdj_001; ready to merge whenever a Nanjing page exists). Still HELD, same reasoning.",
+      "mapped_as": {
+        "id": "nnj_001",
+        "name": "Six-Dynasty Juniper",
+        "place_slug": "nanjing"
+      },
+      "mapped_by": "verified_id"
     },
     {
       "name": "Guilty Chinese Scholartree",

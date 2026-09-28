@@ -22,11 +22,17 @@
         "https://commons.wikimedia.org/wiki/File:Hr%C3%A1deck%C3%BD_dub2.jpg",
         "https://commons.wikimedia.org/wiki/File:Hr%C3%A1deck%C3%BD_dub3.jpg"
       ],
-      "status": "held",
+      "status": "published",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "girth_cm": 411,
-      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register (data/registers/czech-aopk-pamatne-stromy.json), which gives this coordinate and a 411cm girth. Independent of the Commons photo category; a second source (age, history) still needed before this could be verified. VERIFIED 2026-09-27: second independent source found (turistika.cz, confirms alive as of 2021, general location match) beyond cs.wikipedia (which cites the same registry no. 102466/9266, so not independent, but adds age ~440y, height 28m, girth 485cm from a 2012 AOPK measurement -- a GIRTH CONFLICT against our register snapshot of 411cm, flagged rather than resolved). Delivered to data/research/_famous-czech-republic-verified.json as hrd_001. STORY WRITTEN 2026-09-27 (data/research/_famous-czech-republic-verified.json carries the full story and how_to_recognise, ready to merge, as hrd_001). Still HELD per the verify pass's own explicit call: destination test does not clear alone (400+ year protected oak, no legend or superlative beyond the registration), and the Wikipedia article names two more protected trees in the same village (Hradecka lipa, Lesisovska lipa) not yet researched; if those verify, Hradek u Susice could reach 3 trees toward a cluster."
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register (data/registers/czech-aopk-pamatne-stromy.json), which gives this coordinate and a 411cm girth. Independent of the Commons photo category; a second source (age, history) still needed before this could be verified. VERIFIED 2026-09-27: second independent source found (turistika.cz, confirms alive as of 2021, general location match) beyond cs.wikipedia (which cites the same registry no. 102466/9266, so not independent, but adds age ~440y, height 28m, girth 485cm from a 2012 AOPK measurement -- a GIRTH CONFLICT against our register snapshot of 411cm, flagged rather than resolved). Delivered to data/research/_famous-czech-republic-verified.json as hrd_001. STORY WRITTEN 2026-09-27 (data/research/_famous-czech-republic-verified.json carries the full story and how_to_recognise, ready to merge, as hrd_001). Still HELD per the verify pass's own explicit call: destination test does not clear alone (400+ year protected oak, no legend or superlative beyond the registration), and the Wikipedia article names two more protected trees in the same village (Hradecka lipa, Lesisovska lipa) not yet researched; if those verify, Hradek u Susice could reach 3 trees toward a cluster.",
+      "mapped_as": {
+        "id": "hrd_001",
+        "name": "Hrádecký dub",
+        "place_slug": "hradek-u-susice"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "Memorable tree signs in the Czech Republic",
@@ -99,11 +105,17 @@
         "https://commons.wikimedia.org/wiki/File:Buk_u_rybnicku-II-10-2020-nova_ves_pod_plesi.jpg",
         "https://commons.wikimedia.org/wiki/File:Buk_u_rybnicku-III-10-2020-nova_ves_pod_plesi.jpg"
       ],
-      "status": "held",
+      "status": "published",
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "girth_cm": 308,
-      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 308cm girth from that source. The lead photo filenames reference nova_ves_pod_plesi (Nova Ves pod Plesi); not yet cross-checked that this is the same village as the register coordinate. A second independent source still needed. VERIFIED 2026-09-27: village match to the register coordinate CONFIRMED (Nová Ves pod Pleší, Příbram District; cs.wikipedia raw wikitext of the district list gives the exact same coordinate, registry ids 10227/103427, matching our register kod exactly). Second independent source: nasedobrissko.cz (a regional heritage site) names it directly as one of the village's memorial trees; mistopisy.cz independently places a protected forest beech by the pond outside the village. No numeric age found anywhere (a search-engine AI summary claiming \"150+ years\" could not be confirmed on any fetched page and was NOT used). Delivered to data/research/_famous-czech-republic-verified.json as nvp_001. STORY WRITTEN 2026-09-27 (data/research/_famous-czech-republic-verified.json carries the full story and how_to_recognise, ready to merge, as nvp_001). Still HELD per the verify pass's own explicit call: a modest 308cm forest beech, no documented age, distinguishing fact is decline (2019 storm wound, fungal fruiting bodies) rather than scale or legend; nearest published tree (Prague) is 25.7km away with no direct transport."
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 308cm girth from that source. The lead photo filenames reference nova_ves_pod_plesi (Nova Ves pod Plesi); not yet cross-checked that this is the same village as the register coordinate. A second independent source still needed. VERIFIED 2026-09-27: village match to the register coordinate CONFIRMED (Nová Ves pod Pleší, Příbram District; cs.wikipedia raw wikitext of the district list gives the exact same coordinate, registry ids 10227/103427, matching our register kod exactly). Second independent source: nasedobrissko.cz (a regional heritage site) names it directly as one of the village's memorial trees; mistopisy.cz independently places a protected forest beech by the pond outside the village. No numeric age found anywhere (a search-engine AI summary claiming \"150+ years\" could not be confirmed on any fetched page and was NOT used). Delivered to data/research/_famous-czech-republic-verified.json as nvp_001. STORY WRITTEN 2026-09-27 (data/research/_famous-czech-republic-verified.json carries the full story and how_to_recognise, ready to merge, as nvp_001). Still HELD per the verify pass's own explicit call: a modest 308cm forest beech, no documented age, distinguishing fact is decline (2019 storm wound, fungal fruiting bodies) rather than scale or legend; nearest published tree (Prague) is 25.7km away with no direct transport.",
+      "mapped_as": {
+        "id": "nvp_001",
+        "name": "Buk u rybníčku",
+        "place_slug": "nova-ves-pod-plesi"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "Buk u staré vrátnice (Fakultní nemocnice Olomouc)",
