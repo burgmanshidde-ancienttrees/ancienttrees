@@ -70,7 +70,7 @@
       "status": "lead",
       "species": "Small-leaved Lime (Tilia cordata)",
       "species_basis": "confirmed via its Wikimedia Commons category, which classes it under 'Famous Tilia cordata in South Bohemian Region'; supersedes the earlier genus-only guess",
-      "verify_note": "2026-09-12 pass: found in the Wikipedia district list 'Seznam pamatnych stromu v okrese Strakonice' (coordinates 49.1662603,13.8901597, matching this lead closely; location given as 'Park u ulice U nemocnice', Volyně). Named for Antonin Benjamin Svojsik, founder of Czech Scouting, and Commons groups it with 'Monuments and memorials to scouting'. Two things held this back from verifying: (1) no age, girth or AOPK register number in the district-list table, unlike its neighbours in the same table which all carry a Pstrom register id; this tree's slot is blank, suggesting it may never have held formal protected-tree status, and (2) its Commons category is itself filed under 'Former famous trees in Czechia', which reads as a signal the tree may have died, been felled or been delisted, though no source explaining why was found in the ~10 minutes spent on it this pass. Left as a lead rather than blocked or verified: not enough evidence either way, and 'former famous tree' is too ambiguous a signal to call it dead outright per the never-fabricate rule. A future pass should check the 'Former famous trees in Czechia' category description and any cs.wikipedia edit history for a removal note before touching this one again."
+      "verify_note": "2026-09-12 pass: found in the Wikipedia district list 'Seznam pamatnych stromu v okrese Strakonice' (coordinates 49.1662603,13.8901597, matching this lead closely; location given as 'Park u ulice U nemocnice', Volyně). Named for Antonin Benjamin Svojsik, founder of Czech Scouting, and Commons groups it with 'Monuments and memorials to scouting'. Two things held this back from verifying: (1) no age, girth or AOPK register number in the district-list table, unlike its neighbours in the same table which all carry a Pstrom register id; this tree's slot is blank, suggesting it may never have held formal protected-tree status, and (2) its Commons category is itself filed under 'Former famous trees in Czechia', which reads as a signal the tree may have died, been felled or been delisted, though no source explaining why was found in the ~10 minutes spent on it this pass. Left as a lead rather than blocked or verified: not enough evidence either way, and 'former famous tree' is too ambiguous a signal to call it dead outright per the never-fabricate rule. A future pass should check the 'Former famous trees in Czechia' category description and any cs.wikipedia edit history for a removal note before touching this one again. CHECKED AGAIN 2026-09-28 (brief priority): search this pass kept surfacing a DIFFERENT tree, also called 'Svojsíkova lípa' (aka Huťská lípa) near Bělčice (roughly 49.489N 13.856E, 600cm perimeter, 27m), which is NOT this Volyně tree (49.1663975, 13.88997833) despite the identical dedication name (both honour A.B. Svojsík, the founder of Czech Scouting; this appears to be a common naming pattern rather than one tree). Could not resolve the 'Former famous trees in Czechia' category signal for the VOLYNĚ tree specifically in the time available this pass. Left as a lead, unchanged; a future pass should fetch cs.wikipedia's district list for okres Strakonice directly and/or the category description page rather than searching by name, since the name collides with the Bělčice tree."
     },
     {
       "name": "Buk na Bekovce",
@@ -126,9 +126,10 @@
         "https://commons.wikimedia.org/wiki/File:Buk_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Buk_3.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "DEAD/FELLED, checked 2026-09-28. cs.wikipedia's dedicated article (Buk_u_staré_vrátnice) states the tree's protection was formally cancelled by Olomouc city magistrate decision on 2020-11-28 after a technical assessment found 'masivnímu defektu' (a massive structural defect) despite an earlier 2020 crown reduction; its high-security location near the hospital's main entrance made removal the only option. Never publish; drop from consideration. (European beech, 494cm girth, 28m height, ~250 years old per the same article, coordinates 49.58347, 17.23893, for the record only.)"
     },
     {
       "name": "Buk u vodojemu",
@@ -166,11 +167,17 @@
         "https://commons.wikimedia.org/wiki/File:Buk_%C4%8CL2.jpg",
         "https://commons.wikimedia.org/wiki/File:Buk_%C4%8CL3.JPG"
       ],
-      "status": "lead",
-      "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "status": "delivered",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "species_basis": "register's own species_cz field, 'buk lesní nachový' = copper/red-leaved beech",
       "girth_cm": 385,
-      "register_note": "Cross-checked: this lead's own coordinate sits 23m from AOPK CR Pamatne stromy register entry Buk lesni v Moskevske ulici v Ceske Lipe (385cm girth), a genuine independent match by location rather than name. A second independent source (age, history) still needed before this could be verified. RECHECKED 2026-09-27: the location-match question is RESOLVED -- confirmed the same tree as the register's \"Buk lesní v Moskevské ulici\" via Wikidata Q26789330, which carries the identical registry ids (104688/USOP, 12318/DRUSOP) and the identical girth (385cm) and coordinate. But no genuinely independent SECOND source was found this pass: cs.wikipedia's dedicated district-list entry, Wikidata and the Wikimedia Commons category all trace back to the same AOPK/DRUSOP record rather than an separate publisher (checked Českolipský deník, the regional newspaper, and turistika.cz; neither carries this tree). Still one source short of the two-source bar; left as a lead."
+      "register_note": "Cross-checked: this lead's own coordinate sits 23m from AOPK CR Pamatne stromy register entry Buk lesni v Moskevske ulici v Ceske Lipe (385cm girth), a genuine independent match by location rather than name. A second independent source (age, history) still needed before this could be verified. RECHECKED 2026-09-27: the location-match question is RESOLVED -- confirmed the same tree as the register's \"Buk lesní v Moskevské ulici\" via Wikidata Q26789330, which carries the identical registry ids (104688/USOP, 12318/DRUSOP) and the identical girth (385cm) and coordinate. But no genuinely independent SECOND source was found this pass: cs.wikipedia's dedicated district-list entry, Wikidata and the Wikimedia Commons category all trace back to the same AOPK/DRUSOP record rather than an separate publisher (checked Českolipský deník, the regional newspaper, and turistika.cz; neither carries this tree). Still one source short of the two-source bar; left as a lead. DELIVERED 2026-09-28 under the register-alone rule (BRIEF_RESEARCH.md, 2026-09-27/28): AOPK register kod 104688 is the sole source, corroborated for location only by cs.wikipedia's Česká Lípa district list (same underlying AOPK data, not independent). Flagged: register-only, and lifecheck.py returned OLD (2012 photo, no more recent evidence). See data/research/famous-czech-brazil-batch1-verified.json (id csl_001).",
+      "mapped_as": {
+        "id": "csl_001",
+        "name": "Českolipský buk lesní",
+        "place_slug": "ceska-lipa"
+      },
+      "mapped_by": "register coordinate, exact match by kod/name"
     },
     {
       "name": "Hraniční buk (Cínovec)",
@@ -221,11 +228,12 @@
         "https://commons.wikimedia.org/wiki/File:Buk_v_Jind%C5%99ichovick%C3%A9m_z%C3%A1meck%C3%A9m_parku_02.jpg",
         "https://commons.wikimedia.org/wiki/File:Buk_v_Jind%C5%99ichovick%C3%A9m_z%C3%A1meck%C3%A9m_parku_03.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "girth_cm": 295,
-      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 295cm girth from that source. The same chateau park also registers a lime and a silver maple nearby, so this is part of a small cluster rather than a lone tree. A second independent source still needed. RECHECKED 2026-09-27: confirmed this is Jindřichovice near Kolinec, Klatovy District, Plzeň Region (hrady.cz and kolinec.cz both independently confirm the village and castle, distinct from two other identically-named places that kept surfacing in search -- Jindřichov in Bruntál District and Jindřichovice u Sokolova in Karlovy Vary Region -- neither of which is this tree). The chateau park cluster is confirmed via the okres Klatovy Wikipedia district list (raw wikitext): this beech at 11849/104677 (matches our register kod, but the Wikipedia mirror gives girth 316cm against our register's 295cm, a further GIRTH CONFLICT not yet resolved), a silver maple at 11848/104676 (477cm, noted as a \"living torso overgrown with ivy\" -- declining but alive), and a large-leaved lime at 11846/104674 (580cm) about 12-37m away, all south of a small pond -- a genuine three-tree cluster worth flagging for a future pass. No independent second source found this pass beyond the register and its Wikipedia/Wikidata mirrors (checked the estate's own rental website and two castle-history sites, neither mentions the trees). Still one source short of the two-source bar; left as a lead."
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 295cm girth from that source. The same chateau park also registers a lime and a silver maple nearby, so this is part of a small cluster rather than a lone tree. A second independent source still needed. RECHECKED 2026-09-27: confirmed this is Jindřichovice near Kolinec, Klatovy District, Plzeň Region (hrady.cz and kolinec.cz both independently confirm the village and castle, distinct from two other identically-named places that kept surfacing in search -- Jindřichov in Bruntál District and Jindřichovice u Sokolova in Karlovy Vary Region -- neither of which is this tree). The chateau park cluster is confirmed via the okres Klatovy Wikipedia district list (raw wikitext): this beech at 11849/104677 (matches our register kod, but the Wikipedia mirror gives girth 316cm against our register's 295cm, a further GIRTH CONFLICT not yet resolved), a silver maple at 11848/104676 (477cm, noted as a \"living torso overgrown with ivy\" -- declining but alive), and a large-leaved lime at 11846/104674 (580cm) about 12-37m away, all south of a small pond -- a genuine three-tree cluster worth flagging for a future pass. No independent second source found this pass beyond the register and its Wikipedia/Wikidata mirrors (checked the estate's own rental website and two castle-history sites, neither mentions the trees). Still one source short of the two-source bar; left as a lead. CHECKED 2026-09-28: moved from lead to blocked, access only (see 'reason' field), not a data or evidence problem. Register's own coordinate (49.297071329153496, 13.394486821709357) matches this lead's coordinate exactly. Note the two girth figures on file (295cm register vs 316cm cs.wikipedia mirror) are still unresolved and moot while the tree is blocked.",
+      "reason": "ACCESS BLOCKED under hard rule 10, checked 2026-09-28. The chateau (Zámek Jindřichovice) operates as a bookable private rental estate; its own website (zamek-jindrichovice.cz) describes the park's amenities in language addressed to guests ('you have access to a large children's playground') with no mention of public paths, visiting hours or public tours. A web search summary additionally describes the park as accessible only to guests, with guided tours obtainable only by phoning ahead, which reads as needing a private party's permission rather than a public price-and-schedule arrangement (the distinction the 2026-09-01 booking exception draws). Register data (girth 295cm, kod 104677, publishable=true, no death signal) is otherwise sound and this can be revisited if a clearer public-access statement turns up. The same park's other registered trees found this pass (Javor stříbrný / silver maple, kod 104676, 463cm; Lípa velkolistá / large-leaved lime, kod 104674, 380cm, both about 12-37m away; a second lime 'Jindřichovická lípa v zámeckém parku', kod 104673, 515cm) share the same access block and are not separately recorded as leads."
     },
     {
       "name": "Buk lesní v Koclířově",
@@ -236,9 +244,10 @@
         "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%BD_buk,_Kocl%C3%AD%C5%99ov_(2).JPG",
         "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%BD_buk,_Kocl%C3%AD%C5%99ov_(3).JPG"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "DEAD/REMOVED, checked 2026-09-28. cs.wikipedia's 'Seznam památných stromů v okrese Svitavy' district list marks this tree (registry code 101292, location 'v obci před čp. 188' i.e. in the village in front of house no. 188) with a † symbol for removed/deleted entries, stating 'Ochrana zrušena 22. 12. 2023' (protection cancelled 22 December 2023). Never publish; drop from consideration. Separately, its address (in front of a specific house number) would likely also have raised a hard-rule-10 access question had it still been alive. (European beech per Wikidata Q26786900, coordinates 49.774999, 16.521478, 475cm girth, 26m height, protected since 1998-06-24, for the record only.)"
     },
     {
       "name": "Horákův buk (Lhoty u Potštejna)",
@@ -272,11 +281,17 @@
         "https://commons.wikimedia.org/wiki/File:Buk_u_vrbice.jpg",
         "https://commons.wikimedia.org/wiki/File:Buk_u_vrbice_2.jpg"
       ],
-      "status": "lead",
+      "status": "delivered",
       "species": "Beech (Fagus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "girth_cm": 410,
-      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 410cm girth from that source. A second independent source still needed."
+      "register_note": "Matched by exact name to AOPK CR Pamatne stromy register, coordinate and 410cm girth from that source. A second independent source still needed. DELIVERED 2026-09-28 under the register-alone rule: AOPK register kod 103488 is the sole source. Reverse-geocoded (Nominatim) to Krašovice/Krásná Hora nad Vltavou, okres Příbram (NOT okres Tábor, despite rough geographic proximity); Mokřice confirmed as a real hamlet of Krásná Hora nad Vltavou by general web search. No second source found. Flagged: register-only, and lifecheck.py returned NONE (no dated photographic evidence at all near this coordinate). An OpenStreetMap picnic-table node sits at essentially the same coordinate, a plausible but not certain access/location signal. See data/research/famous-czech-brazil-batch1-verified.json (id mok_001).",
+      "mapped_as": {
+        "id": "mok_001",
+        "name": "Buk v Mokřicích",
+        "place_slug": "mokrice-krasna-hora"
+      },
+      "mapped_by": "register coordinate, exact match by kod/name"
     },
     {
       "name": "Pastýřský buk",

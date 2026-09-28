@@ -1,0 +1,150 @@
+[
+  {
+    "id": "csl_001",
+    "name": "Českolipský buk lesní",
+    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 385,
+    "location": {
+      "address": "Small public park (parčík) at the corner of Moskevská and U Kartounky streets, near the city hospital, Česká Lípa",
+      "latitude": 50.68433003751712,
+      "longitude": 14.545477604158624,
+      "neighbourhood": "Česká Lípa"
+    },
+    "verified_sources": [
+      "data/registers/czech-aopk-pamatne-stromy.json (AOPK ČR Pamatne stromy register, CC BY 4.0, kod 104688, designated 2010-10-15)",
+      "https://cs.wikipedia.org/wiki/Pam%C3%A1tn%C3%A9_stromy_v_%C4%8Cesk%C3%A9_L%C3%ADp%C4%9B"
+    ],
+    "access": "Free. Stands in a small public park at the corner of Moskevská and U Kartounky streets, next to the city hospital; open ground, no gate or ticket found.",
+    "transport": "Within Česká Lípa town, walking distance of the town centre (exact stop not established this pass)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "REGISTER ONLY per the 2026-09-28 rule (one official register is enough to deliver): AOPK ČR names it 'Buk lesní v Moskevské ulici v České Lípě', kod 104688, isop_id 53115, designation_basis VYH, protection zone a 12m-radius circle outside parcel 783/2, girth 385cm, publishable=true (no death signal in the register's own note_cz field). Species per the register's own species_cz is 'buk lesní nachový' = copper beech (Fagus sylvatica f. purpurea/Atropunicea), not a plain European beech. cs.wikipedia's district list (Seznam památných stromů v okrese Česká Lípa) independently places the same registry number 104688 in a small public park (parčík) at Moskevská/U Kartounky near the city hospital, and does not list it among the page's 'Zrušené stromy' (deleted trees) section, which corroborates both the public-park location and continued designation but shares the same underlying AOPK data so is not a fully independent second source of the tree's facts. FLAGGED for two reasons: (1) register-only, no independent second source with new information; (2) python3 scripts/lifecheck.py returned OLD (a 2012-06-04 dated Commons photo, no more recent geotagged evidence found), so recent liveness is not confirmed, only plausible. Coordinate note: the register's own point (used above) sits about 23m from an earlier lead coordinate (50.68451667, 14.54534139) sourced from the tree's Commons category; both fall inside the same small park, so location_precision is set to approximate rather than confirmed given the two readings disagree at that scale. No access restriction found; a public park beside a hospital reads as ordinary open ground."
+  },
+  {
+    "id": "mok_001",
+    "name": "Buk v Mokřicích",
+    "species": "European Beech (Fagus sylvatica)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 410,
+    "location": {
+      "address": "Near the hamlet of Mokřice, part of Krásná Hora nad Vltavou, Příbram District",
+      "latitude": 49.575569336650446,
+      "longitude": 14.268559667583151,
+      "neighbourhood": "Mokřice, Krásná Hora nad Vltavou"
+    },
+    "verified_sources": [
+      "data/registers/czech-aopk-pamatne-stromy.json (AOPK ČR Pamatne stromy register, CC BY 4.0, kod 103488, last changed 2013-06-25)"
+    ],
+    "access": "Likely free, rural open ground: OpenStreetMap records a public picnic table (leisure=picnic_table) at this exact coordinate (via Nominatim reverse lookup), which reads as an ordinary countryside spot rather than fenced private land. No explicit access statement found from any source; treat as an open-countryside assumption rather than a confirmed fact.",
+    "transport": "Rural, near the hamlet of Mokřice, roughly 3.5km south of the town of Krásná Hora nad Vltavou; no public transport stop identified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "REGISTER ONLY per the 2026-09-28 rule: AOPK ČR names it 'Buk v Mokřicích', kod 103488, isop_id 51030, designation_basis ZAK, girth 410cm, no protection_zone recorded, publishable=true (no death signal in note_cz). No second source found this pass: not in the okres Tábor Wikipedia district list (checked, this coordinate is NOT in Tábor district despite being geographically close to it); reverse-geocoded via Nominatim to Krašovice/Krásná Hora nad Vltavou, okres Příbram instead, and Mokřice is confirmed as a real hamlet of Krásná Hora nad Vltavou roughly 2km from Krašovice per general web search, which matches the register's own place name. No dedicated page or district list found for okres Příbram's memorial trees in the time available. FLAGGED for: (1) register-only, no second source; (2) python3 scripts/lifecheck.py returned NONE (no dated photographic evidence found near this coordinate at all, only the register entry itself and its own two Commons photos of unknown date), so recent liveness is unconfirmed. Coordinate matches the register exactly (used as both lead and register source), and independently matches an OpenStreetMap picnic-table node at essentially the same point, which is a plausible but not certain confirmation of the exact spot (a picnic table near a named memorial tree is a common Czech pattern, not a definite one)."
+  },
+  {
+    "id": "nfl_001",
+    "name": "Baobá de Nísia Floresta",
+    "species": "African Baobab (Adansonia digitata)",
+    "age_estimate": "about 150 years",
+    "age_min": 145,
+    "age_max": 155,
+    "girth_cm": null,
+    "location": {
+      "address": "Central plaza in front of the church, Centro, Nísia Floresta",
+      "latitude": -6.0915299,
+      "longitude": -35.2078870,
+      "neighbourhood": "Centro, Nísia Floresta, Rio Grande do Norte"
+    },
+    "verified_sources": [
+      "https://nisiafloresta.rn.gov.br/o-baoba/ (municipality's own page)",
+      "https://www.tripadvisor.com/Attraction_Review-g2351334-d2372665-Reviews-Baoba_tree-Nisia_Floresta_State_of_Rio_Grande_do_Norte.html",
+      "https://pt.wikipedia.org/wiki/Baob%C3%A1_no_Brasil"
+    ],
+    "access": "Free. Stands in the town's central plaza, in front of the church, near the bus terminal and old railway station; open public ground.",
+    "transport": "Central Nísia Floresta, walking distance of the town centre; the town itself sits roughly 45 minutes by road from Natal (day-trip range, but by car/bus rather than a city walk)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "DELIVERED under the register-alone rule as an official designation rather than a national government register: the municipality's own page states the baobab is protected by Federal Law 4.771/65 and Municipal Law 169/70, with two further municipal laws in 2007 (Lei Complementar 001/2007 designating the surrounding area 'of scenic interest', Lei Complementar 003/2007 declaring the baobab itself Environmental Heritage of the Municipality). Per a plaque by the tree (quoted on the municipality's own page), it was planted in 1877 by a citizen named Manoel Júnior, giving a documented planting date (about 149 years as of 2026; stated broadly as 'about 150 years'). A widely repeated local legend says it was brought/planted by an enslaved African person carrying seeds from their homeland, and a separate disputed claim ties it to Saint-Exupery's Little Prince (he supposedly saw it on a transatlantic flight in the 1920s-30s); NEITHER legend is stated as fact, only as local claims, and they appear to be in tension with the plaque's own 1877/Manoel Júnior planting story, which the writer should note as a genuine disagreement between sources rather than resolve. FLAGGED for that disagreement and because the exact 1877 date rests on a plaque and the municipality's own retelling rather than an independent document. OSM tags this tree individually (natural=tree, name 'Baobá de Nísia') at the coordinate used here, on Rua João Batista Gondim, matching the 'central plaza near the church' description exactly. No girth or height found in the time available. Not checked with lifecheck.py (outside Europe; script may not have imagery coverage there, not attempted this pass)."
+  },
+  {
+    "id": "mrg_001",
+    "name": "Árvore do Amor",
+    "species": "Fig (Ficus sp., locally 'gameleira')",
+    "age_estimate": "locally said to be over 300 years",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Barra de Maxaranguape beach, Av. Cabo de São Roque, Maxaranguape, Rio Grande do Norte",
+      "latitude": -5.4923131,
+      "longitude": -35.2607738,
+      "neighbourhood": "Barra de Maxaranguape, Maxaranguape"
+    },
+    "verified_sources": [
+      "https://www.terra.com.br/planeta/noticias/cartao-postal-do-rn-arvore-do-amor-de-300-anos-e-vandalizada-e-tem-raizes-cortadas,393aa9c94ae271d258ab7bf653c55203f142jafy.html",
+      "https://tribunadonorte.com.br/clube-do-assinante/arvore-do-amor/",
+      "https://www.band.com.br/entretenimento/zeca-pelo-brasil/noticias/conheca-a-arvore-de-amor-ponto-turistico-para-supersticiosos-no-rn-16320860"
+    ],
+    "access": "Free. A well-known public tourist spot on Barra de Maxaranguape beach; OpenStreetMap tags it tourism=yes by name. No gate or ticket found in any source."
+    ,
+    "transport": "Maxaranguape municipality, roughly 55km up the coast from Natal; a day trip by car or bus, not a walk or short hop from the city itself",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "CORRECTS the original lead, filed under the name 'Árvore dos Amores, Natal-RN' from a Commons photo filename. It is NOT in Natal: every news source (Terra, Tribuna do Norte, Band, the Maxaranguape municipal government's own site) places it at Barra de Maxaranguape beach, Maxaranguape municipality, about 55km up the coast from Natal, and it should be its own place rather than presented as in-town Natal (day-trip boundary rule). It is two 'gameleira' (a Brazilian common name covering several native Ficus species) trees whose trunks and canopies have grown together, forming a heart shape when the shadow falls a certain way at mid-morning; treated as one collectible ensemble point since there is one obvious place to stand. Age is a widely repeated local figure, 'mais de 300 anos' / 'over 300 years old', appearing consistently across multiple independent news outlets but with no cited source, measurement or documented planting date behind it; kept exactly as vague as the sources give it, per the estimate-vs-invention rule, and flagged as a local claim rather than a measured fact. On 2024-02-27 someone deliberately cut through several of its exposed roots (a criminal act reported to police and environmental agencies Idema/Ibama); as of the article's reporting the tree had survived and officials said the cuts were unlikely to kill it though could invite disease, so this is recorded as an act of vandalism the tree survived, not evidence of decline. Coordinate is an OSM node tagged 'Árvore do Amor'/tourism=yes; a second natural=tree node sits about 13m away, likely marking the second joined trunk. No girth found. Not checked with lifecheck.py (outside Europe; script may not have imagery coverage there, not attempted this pass)."
+  },
+  {
+    "id": "fdl_001",
+    "name": "Figueira das Lágrimas",
+    "species": "Fig (Ficus sp.)",
+    "age_estimate": "over 250 years",
+    "age_min": 200,
+    "age_max": 280,
+    "girth_cm": null,
+    "location": {
+      "address": "Estrada das Lágrimas (near no. 515), Sacomã, São Paulo",
+      "latitude": -23.6321513,
+      "longitude": -46.5824821,
+      "neighbourhood": "Sacomã, São Paulo"
+    },
+    "verified_sources": [
+      "https://pt.wikipedia.org/wiki/Figueira_das_L%C3%A1grimas",
+      "https://exame.com/esg/figueira-das-lagrimas-arvore-mais-antiga-de-sao-paulo-tem-mais-de-200-anos/",
+      "https://prefeitura.sp.gov.br/w/noticia/nos-200-anos-de-independencia-do-brasil-figueira-das-lagrimas-tem-201cfilha201d-plantada-entre-a-avenida-dom-pedro-i-e-praca-do-monumento"
+    ],
+    "access": "Free. Stands in Praça Figueira das Lágrimas, a small square the Ipiranga sub-prefecture created around it in 2020 specifically to preserve and open the site to the public.",
+    "transport": "Sacomã district, southern São Paulo; nearest metro/bus stop not established this pass",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Formally protected (tombada) by CONPRESP (São Paulo's municipal historic heritage council) in 2016 as a historic landmark of the city, which is an official designation, plus multiple independent corroborating sources: its own Wikipedia article, Exame (a national business/culture outlet), and the São Paulo city government's own press page (published for Brazil's 2022 bicentennial, about a sapling grown from this tree being planted downtown). Age is 'more than 250 years per botanists' estimates and historical documents', with a specific historical anchor: documents place it as already a mature tree in 1862. That is a real, sourced estimate (not our own growth-rate calculation), so recorded broadly rather than sharpened; verify_notes carries the working, age_estimate stays a short chip. Historically it is where São Paulo residents said goodbye to those leaving for the coast or other states, including mothers of soldiers during the Paraguayan War, and where law students of the Faculdade de Direito do Largo São Francisco held farewells; the 2022 legend tying it to Dom Pedro I's 'Cry of Independence' is repeated by multiple sources here but is the kind of patriotic bicentennial story worth a light touch rather than flat assertion. Location: no dedicated coordinate found for the tree itself or its 2020 plaza; the coordinate used is the Estrada das Lágrimas road near house number 515, so location_precision is approximate (street-level, not tree-level). Species not confirmed beyond 'figueira' (fig); genus-only. No girth found. Not checked with lifecheck.py (outside Europe; script may not have imagery coverage there, not attempted this pass)."
+  },
+  {
+    "id": "gba_001",
+    "name": "Cipreste Farroupilha",
+    "species": "Cypress (Cupressus sp.)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 350,
+    "girth_cm": null,
+    "location": {
+      "address": "Praça Gomes Jardim, Centro, Guaíba",
+      "latitude": -30.1100644,
+      "longitude": -51.3170434,
+      "neighbourhood": "Centro, Guaíba, Rio Grande do Sul"
+    },
+    "verified_sources": [
+      "https://pt.wikipedia.org/wiki/Cipreste_Farroupilha",
+      "https://www.guaiba.online/coluna/conhecaguaiba-a-importancia-do-cipreste-na-historia-de-nosso-estado",
+      "http://wikimapia.org/36442564/pt/Cipreste-Farroupilha"
+    ],
+    "access": "Free. Stands in Praça Gomes Jardim, a public square in central Guaíba; open ground.",
+    "transport": "Central Guaíba, a short ferry/road trip across the Rio Guaíba from Porto Alegre; nearest stop not established this pass",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "An official civic symbol rather than a register entry: the tree appears in Guaíba's own municipal anthem, coat of arms and flag, which is about as strong a local-government designation as exists without a formal heritage register, corroborated by its own Wikipedia article and local news/tourism sources (guaiba.online, a TV Guaíba Online column; wikimapia's community-mapped location). History: local tradition holds it was planted around 1680 to mark the grave of a Spanish army commander killed while passing through hunting cattle, a custom of the era; and that on 1835-09-19 Farroupilha Revolution leaders (Bento Gonçalves da Silva, Onofre Pires, Gomes Jardim) planned their invasion of Porto Alegre in its shade, giving the tree and the revolution its name. Age is a local estimate, 'mais de 300 anos' ('more than 300 years'), consistent with the ~1680 planting tradition (about 346 years as of 2026) but resting on oral history/folklore rather than a document, so kept as a broad range rather than a precise figure. Location is the plaza (Praça Gomes Jardim) rather than a tree-level pin, so location_precision is approximate. Species is 'cipreste' (cypress); no source found specifying which Cupressus species, so left genus-only. No girth found. Not checked with lifecheck.py (outside Europe; script may not have imagery coverage there, not attempted this pass)."
+  }
+]
