@@ -1,0 +1,66 @@
+{
+  "city": "Malacky",
+  "country": "Slovakia",
+  "status": "needs_curation",
+  "intro": "Malacky is a town northwest of Bratislava, its own trip rather than a stop on a Bratislava afternoon at 44 to 48 minutes by direct train. Its tree stands near the eastern edge of Zámocký park, the castle grounds, and predates them by about a century: it was already growing when the Pálffy family arrived in the 17th century and built their castle around it. The Pálffy Oak of Memories is over 500 years old, 6.6 metres round under a crown 31 metres wide, and in 2023 won Slovakia's own Tree of the Year.",
+  "meta_description": "The Pálffy Oak of Memories, Malacky, Slovakia: over 500 years old, predating the castle park around it. Slovakia's Tree of the Year 2023. Free to visit.",
+  "question_meta": "Malacky's remarkable tree is the Pálffy Oak of Memories, over 500 years old, Slovakia's Tree of the Year 2023.",
+  "question_answer": "Malacky's notable tree is the Pálffy Oak of Memories, near the eastern edge of Zámocký park (Castle Park), a National Cultural Monument.",
+  "question_context": "This oak is older than the park it stands in. Experts reckon it predates Malacky's castle park by about a century, which means it was already growing when the Pálffy family arrived in the 17th century, built their castle and laid out the grounds around it, which is where its name comes from: the tree that remembers the Pálffys coming. It is a pedunculate oak of more than 500 years, twenty metres tall, 6.6 metres round and carrying a crown 31 metres wide. The Slovak nomination tells its life through Napoleonic troops passing through town, epidemics, fires and market days, all of which the town lived through while the oak stood at the edge of what became the park. In 2023 it won Slovakia's Tree of the Year with 4,201 of some 19,000 votes, and in 2024 it placed fourteenth in Europe; a Slovak public broadcaster called it the second most famous tree in Europe. After vandalism, the trunk now stands behind a protective fence. The park itself is a National Cultural Monument, free and ungated, and Malacky is a separate town from Bratislava, reached by an hourly direct train.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Malacky?",
+      "a": "The Pálffy Oak of Memories, a pedunculate oak 6.6 metres round with a crown 31 metres wide, near the eastern edge of Zámocký park."
+    },
+    {
+      "q": "How old is the Pálffy Oak?",
+      "a": "Over 500 years. Experts reckon it predates the castle park around it by about a century, back to before the Pálffy family arrived in the 17th century."
+    },
+    {
+      "q": "Can you visit the Pálffy Oak of Memories?",
+      "a": "Yes, free. Zámocký park is open, ungated ground; the trunk itself is fenced for protection after vandalism."
+    },
+    {
+      "q": "How do you get to Malacky?",
+      "a": "By the hourly direct train from Bratislava hlavná stanica, 44 to 48 minutes, or bus line 245. It is its own trip rather than a Bratislava day stop."
+    }
+  ],
+  "hero_tree_id": "mky_001",
+  "oldest_tree_id": "mky_001",
+  "trees": [
+    {
+      "id": "mky_001",
+      "name": "The Pálffy Oak of Memories",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 500 years",
+      "age_min": 500,
+      "age_max": 600,
+      "age_basis": "source",
+      "girth_cm": 660,
+      "location": {
+        "address": "Near the eastern edge of Zámocký park (Castle Park), a National Cultural Monument, Malacky, Bratislava region, Slovakia",
+        "latitude": 48.439075,
+        "longitude": 17.036208,
+        "neighbourhood": "Zámocký park, Malacky"
+      },
+      "story": "This oak is older than the park it stands in. Experts reckon it predates Malacky's castle park by about a century, which means it was already growing when the Pálffy family arrived in the seventeenth century, built their castle and laid out the grounds around it.\n\nThat is where its name comes from: the tree that remembers the Pálffys coming. It is a pedunculate oak of more than 500 years, twenty metres tall, 6.6 metres round and carrying a crown 31 metres wide. The Slovak nomination tells its life through Napoleonic troops passing through town, epidemics, fires and market days, all of which the town lived through while the oak stood at the edge of what became the park.\n\nIn 2023 it won Slovakia's Tree of the Year with 4,201 of some 19,000 votes, and in 2024 it placed fourteenth in Europe. A Slovak public broadcaster went further and called it the second most famous tree in Europe. After vandalism, the trunk now stands behind a protective fence.\n\nThe park itself, Zámocký park, is a National Cultural Monument and an ordinary place to walk, free and ungated. The oak is near its eastern edge; our pin is approximate, so walk that side and look for the fence.\n\nMalacky is its own trip rather than a stop on a Bratislava afternoon: 44 to 48 minutes on the hourly direct train from Bratislava hlavná stanica.",
+      "how_to_recognise": "You can recognise it by the fence around its trunk, 6.6 metres round under a crown 31 metres wide. It stands near the eastern edge of Zámocký park in Malacky, the park beside the Pálffy castle.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2024/an-oak-that-remembers-the-palffy-family",
+        "https://ekopolis.sk/2023/strom-ktory-si-pamata-prichod-palffyovcov-do-malaciek-500-rocny-dub-je-strom-roka-2023/",
+        "https://www.lesmedium.sk/aktualne/stromom-roka-2023-na-slovensku-je-500-rocny-dub-letny-zo-zamockeho-parku-v-malackach-za-palffyovsky-dub-spomienok-hlasovalo-z-19-000-vyse-4-200-milovnikov-stromov"
+      ],
+      "access": "Free, in the public Zámocký park (Castle Park) in Malacky, a well-used recreation park; the trunk itself has been fenced for protection after vandalism (per stvr.sk), but the park itself is open ground, not gated.",
+      "transport": "Malacky is a separate town roughly 37-38km / 44-48 minutes by direct train from Bratislava Hlavná stanica (hourly ZSSK service), or via bus line 245; outside the ~30-minute day-trip boundary from central Bratislava, so this reads as its own place rather than a Bratislava addition.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

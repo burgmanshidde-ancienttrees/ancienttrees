@@ -1,0 +1,66 @@
+{
+  "city": "Sorèze",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Sorèze is a village on the Montagne Noire in Occitania, and its tree grows high on the mountain road toward Arfons, beside the ruins of an 11th-century pilgrim chapel. The Multisecular Beech of Saint-Jammes is roughly 450 years old, six metres round, with a crown ninety metres across, nearly the length of a football pitch. The chapel it stands beside is a ruin; the beech, propped on two limbs, is not.",
+  "meta_description": "The Multisecular Beech of Saint-Jammes, Sorèze, France: a 450 year old beech with a 90-metre crown, beside a ruined pilgrim chapel. Free to visit.",
+  "question_meta": "Sorèze's remarkable tree is the Beech of Saint-Jammes, 450 years old with a 90-metre crown.",
+  "question_answer": "Sorèze's notable tree is the Multisecular Beech of Saint-Jammes, on the D45 mountain road between Sorèze and Arfons, beside the ruined Chapelle de Saint-Jammes.",
+  "question_context": "The town of Sorèze gives this beech a crown ninety metres across, carried on a trunk six metres round; it is roughly 450 years old and twenty metres tall, and two of its great limbs now rest on props. It grows on the Montagne Noire beside the ruins of the Chapelle de Saint-Jammes, a pre-Romanesque chapel of the 11th century with an old cemetery beside it, on ground that once belonged to the Prats Vieils estate. The spot lay on a route of the Way of St James, so for much of the tree's life the people passing under it were pilgrims bound for Compostela. The French association A.R.B.R.E.S. named it Remarkable Tree of the Year in 2019, and in 2020 it placed eleventh in the European contest with 12,192 votes. A light fence guards the trunk itself, and there is nothing else out here besides a mountain road, a roofless chapel and the tree.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Sorèze?",
+      "a": "The Multisecular Beech of Saint-Jammes, a European beech with a trunk six metres round and a crown ninety metres across, beside a ruined chapel."
+    },
+    {
+      "q": "How old is the Beech of Saint-Jammes?",
+      "a": "Roughly 450 years, by the estimate carried since it won France's Remarkable Tree of the Year award in 2019."
+    },
+    {
+      "q": "Can you visit the Beech of Saint-Jammes?",
+      "a": "Yes, free. It stands on open, unenclosed ground on the D45 between Sorèze and Arfons; only the trunk itself carries a light protective fence."
+    },
+    {
+      "q": "How do you get to the Beech of Saint-Jammes?",
+      "a": "By car, bike or on foot along the D45, roughly 8 km from Sorèze centre. There is no public transport on this rural mountain road."
+    }
+  ],
+  "hero_tree_id": "sor_001",
+  "oldest_tree_id": "sor_001",
+  "trees": [
+    {
+      "id": "sor_001",
+      "name": "The Multisecular Beech of Saint-Jammes",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 450 years",
+      "age_min": 400,
+      "age_max": 500,
+      "age_basis": "source",
+      "girth_cm": 600,
+      "location": {
+        "address": "D45 road between Sorèze and Arfons, beside the ruins of the pre-Romanesque Chapelle de Saint-Jammes, Montagne Noire, Sorèze, Tarn, Occitania, France",
+        "latitude": 43.435164,
+        "longitude": 2.112753,
+        "neighbourhood": "Montagne Noire, near Sorèze"
+      },
+      "story": "The town of Sorèze gives this beech a crown ninety metres across, close to the length of a football pitch, carried on a trunk six metres round. It is roughly 450 years old and twenty metres tall, and two of its great limbs now rest on props.\n\nIt grows high on the Montagne Noire beside the ruins of the Chapelle de Saint-Jammes, a pre-Romanesque chapel of the eleventh century with an old cemetery at its side, on ground that once belonged to the Prats Vieils estate. The spot lay on a route of the Way of St James, so for much of the tree's life the people passing under it were pilgrims bound for Compostela. The chapel is now a ruin. The beech is not, and local tradition has kept its own legends and pilgrimages attached to the place.\n\nThe prizes came late. The French association A.R.B.R.E.S. named it Remarkable Tree of the Year in 2019, and a year later it placed eleventh in European Tree of the Year with 12,192 votes.\n\nThere is nothing else out here, which is rather the point: a mountain road, a roofless chapel and a tree that has outlasted the traffic it grew up beside. A light fence guards the trunk itself, so stand outside it and look up. Under that crown, outside is still in the shade.",
+      "how_to_recognise": "You can recognise it by the trunk, six metres round inside a light protective fence, with two limbs resting on props. It stands beside the ruins of the Chapelle de Saint-Jammes on the D45 between Sorèze and Arfons.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2020/Starobyly-buk-ze-Saint-Jammes-(Occitania)",
+        "https://www.ville-soreze.fr/chapelle-et-hetre-de-saint-jammes/",
+        "https://www.tarn.fr/actualites/concours-arbre-de-lannee-prix-du-public-pour-le-hetre-de-saint-jammes-a-soreze"
+      ],
+      "access": "Free, unenclosed rural site on the D45 between Sorèze and Arfons; only the trunk itself carries a light protective fence and two branches are propped. No gate, no ticket, open ground.",
+      "transport": "Rural Montagne Noire, no public transport; reached by car or on foot/bike via the D45, roughly 8km from Sorèze centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

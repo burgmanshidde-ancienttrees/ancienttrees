@@ -1,0 +1,66 @@
+{
+  "city": "Veliki Preslav",
+  "country": "Bulgaria",
+  "status": "needs_curation",
+  "intro": "Veliki Preslav is a town in northeastern Bulgaria, and its tree stands in the public garden at the centre of town, fountain and all. The Old Mulberry is roughly 450 years old, a white mulberry that tradition ties to Stefan Karadzha, Vasil Levski and a 1900 meeting with the writer Ivan Vazov, none of it checkable against a record. Nobody has published its girth or height; the pin marks the garden rather than the exact trunk. In 2021 it placed fourteenth in the European Tree of the Year.",
+  "meta_description": "The Old Mulberry, Veliki Preslav, Bulgaria: roughly 450 years old, in the town's central garden, tied to Bulgarian revolutionary legend. Free to visit.",
+  "question_meta": "Veliki Preslav's remarkable tree is the Old Mulberry, roughly 450 years old, in the town's central garden.",
+  "question_answer": "Veliki Preslav's notable tree is the Old Mulberry, standing in the public garden with the fountain at the centre of the town, Shumen Region, Bulgaria.",
+  "question_context": "By local tradition, the revolutionary Stefan Karadzha once hid from the Ottoman authorities in a pub beside this mulberry, and it is also linked to Vasil Levski, the revolutionary most Bulgarians would name first, and to a supposed 1900 meeting where the writer Ivan Vazov met the townspeople under its branches. None of it can be checked against a record, and all of it tells you what the tree is to Preslav: the place where people meet. That is still what it does, since the garden around it, fountain and all, is where the town gathers. In 2020 it won Bulgaria's Tree with Roots contest, and in 2021 it went on to the European Tree of the Year, where 30,055 votes placed it fourteenth. Nobody has published a girth or a height for it, and the pin marks the garden rather than the trunk, so expect to look around the square for it.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Veliki Preslav?",
+      "a": "The Old Mulberry, a white mulberry roughly 450 years old, standing in the public garden with the fountain at the town centre."
+    },
+    {
+      "q": "How old is the Old Mulberry?",
+      "a": "Roughly 450 years, by the estimate two Bulgarian outlets repeat. No girth or height has ever been published."
+    },
+    {
+      "q": "Can you visit the Old Mulberry of Veliki Preslav?",
+      "a": "Yes, free. It stands in an open public garden and square at the centre of town, with no restrictions."
+    },
+    {
+      "q": "How do you get to Veliki Preslav?",
+      "a": "By road; Veliki Preslav sits on route 73/E772 between Shumen and Zavet, roughly 20 km from Shumen. The tree is walkable from anywhere in the small town centre."
+    }
+  ],
+  "hero_tree_id": "vps_001",
+  "oldest_tree_id": "vps_001",
+  "trees": [
+    {
+      "id": "vps_001",
+      "name": "The Old Mulberry of Veliki Preslav",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "roughly 450 years",
+      "age_min": 400,
+      "age_max": 500,
+      "age_basis": "source",
+      "girth_cm": null,
+      "location": {
+        "address": "Public garden with fountain, town centre of Veliki Preslav, Shumen Region, Bulgaria",
+        "latitude": 43.1618,
+        "longitude": 26.809764,
+        "neighbourhood": "Town centre, Veliki Preslav"
+      },
+      "story": "By local tradition, the revolutionary Stefan Karadzha once hid from the Ottoman authorities in a pub beside this mulberry. The tree has been keeping that kind of company for a long time.\n\nIt is a white mulberry, roughly 450 years old by the estimate two Bulgarian outlets repeat, and it grows in the public garden with the fountain in the centre of Veliki Preslav. That makes it older than any of the stories told about it, and the town has attached a good number. Tradition links it to Vasil Levski, the revolutionary most Bulgarians would name first. In 1900 the writer Ivan Vazov is said to have met the townspeople at a cafe under its branches. None of it can be checked against a record, and all of it tells you what the tree is to Preslav: the place where people meet.\n\nThat is still what it does. The garden around it, fountain and all, is where the town gathers.\n\nIn 2020 it won Bulgaria's Tree with Roots contest, and in 2021 it went on to European Tree of the Year, where 30,055 votes placed it fourteenth.\n\nNobody has published a girth or a height for it, and our pin marks the garden rather than the trunk, so expect to look around the square for it. If you have stood under it with a tape measure, tell us how big it is.",
+      "how_to_recognise": "You can recognise it by its species, a white mulberry, in the public garden with the fountain in Veliki Preslav's town centre. No size has ever been published, so if in doubt ask anyone in the square for the old mulberry.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2021/The-Old-Mulberry",
+        "https://news.bg/society/450-godishna-chernitsa-stana-darvo-s-koren-za-2020-g.html",
+        "https://bnr.bg/radiobulgaria/post/101416184/450-godishna-chernica-v-konkursa-evropeisko-darvo-na-godinata-2021"
+      ],
+      "access": "Free, in a public garden/square with a fountain in the centre of Veliki Preslav; a community gathering spot, open ground with no restrictions.",
+      "transport": "Small town centre, walkable from anywhere in Veliki Preslav; no metro or rail, reached by road (Veliki Preslav is on route 73/E772 between Shumen and Zavet, roughly 20km from Shumen).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
