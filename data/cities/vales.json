@@ -1,0 +1,67 @@
+{
+  "city": "Vales",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Vales is a village near the Roman gold mines of Tresminas in Vila Real district, and its tree stands on private farmland whose owner wants visitors to see it. The Chestnut of Vales, Portugal's thickest chestnut, has a hollow trunk 14 metres round and a crown reaching 21 metres, and generations of local children have played in and around it. Its age is only ever given as about a thousand years. In 2020 Portugal voted it Tree of the Year, and it went on to place sixth in Europe.",
+  "meta_description": "The Chestnut of Vales, Portugal: the country's thickest chestnut, trunk 14 metres round, on farmland its owner invites visitors to see.",
+  "question_meta": "Vales's remarkable tree is the Castanheiro de Vales, Portugal's thickest chestnut, on farmland open to visitors.",
+  "question_answer": "Vales's notable tree is the Castanheiro de Vales, the Chestnut of Vales, standing on private farmland near the Roman gold mines of Tresminas, Vila Pouca de Aguiar.",
+  "question_context": "The trunk is 14 metres round and the crown reaches 21 metres, figures repeated identically by Portugal's forestry press and by the municipality of Vila Pouca de Aguiar. The European contest gave its trunk as 4.5 metres wide, which is not a second opinion but the same tree measured across rather than around. Its age is only ever given as about a thousand years; nobody has counted rings or found a planting record, so treat that as a round number for a very old tree rather than a measurement. The hills around it are gold country: Tresminas, a short distance away, was one of the largest Roman gold mines in Iberia, though the Romans had gone for centuries by the time a thousand-year-old tree would have sprouted, so the connection is local colour rather than history. What the village remembers with more certainty is generations of children playing in and around its hollow trunk. In 2020 Portugal voted it Tree of the Year, and it went on to finish sixth in Europe with more than 17,000 votes. The state lists it as a Tree of Public Interest, and the pin is approximate, so ask locally in Vales.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Vales?",
+      "a": "The Castanheiro de Vales, a sweet chestnut with a hollow trunk 14 metres round, Portugal's thickest chestnut tree."
+    },
+    {
+      "q": "How old is the Chestnut of Vales?",
+      "a": "About a thousand years by every source, though nobody has counted its rings or found a planting record, so treat that as a round figure rather than a measurement."
+    },
+    {
+      "q": "Can you visit the Chestnut of Vales?",
+      "a": "Yes, free. It stands on private agricultural land, but the owner has a standing, publicly known invitation for anyone passing to come onto the land and see the tree. It is still someone's working farmland, so visit it as a guest."
+    },
+    {
+      "q": "How do you get to Vales?",
+      "a": "By car to Vila Pouca de Aguiar, in Vila Real district, northern Portugal; there is no public transport to the village itself."
+    }
+  ],
+  "hero_tree_id": "val_001",
+  "oldest_tree_id": "val_001",
+  "trees": [
+    {
+      "id": "val_001",
+      "name": "The Chestnut of Vales (Castanheiro de Vales)",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 900,
+      "age_max": 1100,
+      "age_basis": "source",
+      "girth_cm": 1400,
+      "location": {
+        "address": "Vales, near the Roman gold-mining site of Tresminas, Vila Pouca de Aguiar, Vila Real District, Portugal",
+        "latitude": 41.462417,
+        "longitude": -7.520492,
+        "neighbourhood": "Vales, Tresminas"
+      },
+      "story": "Portugal's thickest chestnut stands on private farmland, and its owner wants you to come in. By every report, whoever is passing through the village of Vales is invited onto the land to look at what one Portuguese forestry site called the source of the owner's pride.\n\nIt is worth the invitation. The trunk is 14 metres round and the crown reaches 21 metres, figures repeated identically by Portugal's forestry press and by the municipality of Vila Pouca de Aguiar. The European contest gave its trunk as 4.5 metres wide, which is not a second opinion but the same tree measured across rather than around. Its age is only ever given as about a thousand years; nobody has counted rings or found a planting record, so treat that as a round number for a very old tree.\n\nThe hills around it are gold country. Tresminas, a short distance away, was one of the largest Roman gold mines in Iberia, and locally the chestnut is linked with it, though the Romans had gone for centuries by the time a thousand-year-old tree would have sprouted. What the village remembers with more certainty is generations of children playing in and around its hollow trunk.\n\nIn 2020 Portugal voted it Tree of the Year, and it went on to finish sixth in Europe with more than 17,000 votes. The state lists it as a Tree of Public Interest. The pin is approximate, so ask in Vales.",
+      "how_to_recognise": "You can recognise it by the hollow trunk, 14 metres round, under a crown about 21 metres high. It stands on farmland in the village of Vales, near the Roman gold mines of Tresminas.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2020/Kastan-z-Valesu",
+        "https://florestas.pt/noticias-e-agenda/castanheiro-de-vales-e-a-arvore-do-ano-2020-em-portugal/",
+        "https://wilder.pt/historias/portugueses-escolhem-castanheiro-milenar-como-a-arvore-de-2020",
+        "https://cm-vpaguiar.pt/castanheiro-portugues-esta-a-concurso-para-ser-a-arvore-europeia-2020/"
+      ],
+      "access": "Free. Stands on private agricultural land, but the owner has a standing, publicly known invitation for anyone passing to come onto the land and see the tree. It is still someone's working farmland, so visit it as a guest.",
+      "transport": "Rural Vila Real district, northern Portugal. No public transport to the site; nearest town is Vila Pouca de Aguiar, reached from Vila Real or Chaves by car; the tree stands near the Tresminas Roman gold-mine archaeological site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

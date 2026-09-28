@@ -1,0 +1,67 @@
+{
+  "city": "Cajvana",
+  "country": "Romania",
+  "status": "needs_curation",
+  "intro": "Cajvana is a small town in Suceava County, northern Romania, and its tree is watched around the clock. The town hall runs a live webcam on its oak, reported as the largest in south-eastern Europe: 11 metres round and about 23 metres tall. Radiocarbon dating puts it at roughly 810 years old, and the Romanian Academy declared it a natural monument in 1942. Two local legends, a 13th-century mass grave and a 15th-century prince's visit, are both told as lore rather than fact.",
+  "meta_description": "The Oak from Cajvana, Romania: radiocarbon-dated to about 810 years, 11 metres round, watched by the town's own live webcam. Free to visit.",
+  "question_meta": "Cajvana's remarkable tree is its oak, radiocarbon-dated to about 810 years and 11 metres round.",
+  "question_answer": "Cajvana's notable tree is the Stejarul Secular din Cajvana, the town oak, standing in the town itself in Suceava County, northern Romania.",
+  "question_context": "Its age has been tested rather than guessed: radiocarbon dating put it at roughly 810 years, give or take 75, so it began growing between the mid 12th and late 13th century. The Romanian Academy declared it a natural monument in 1942, in the middle of a war. Two stories come with it, told as legends rather than history: one says it was planted around 1241 to mark a mass grave after a Tatar invasion, the other that Stefan cel Mare, prince of Moldavia, rested his troops in its shade in 1476 and was served cas, the local cheese, supposedly the source of the town's name. Neither can be checked, though the radiocarbon date allows both. What can be checked is that it is alive and looked after: a plaque and a bas-relief stand beside it, and the town hall's 24/7 webcam shows it standing on any day you care to look. It is free and open in the town itself; Suceava, the nearest city with a railway station, is about 25 kilometres away.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Cajvana?",
+      "a": "The Stejarul Secular din Cajvana, an oak 11 metres round reported as the largest in south-eastern Europe, watched by the town hall's own live webcam."
+    },
+    {
+      "q": "How old is the Cajvana oak?",
+      "a": "Radiocarbon dating puts it at roughly 810 years, give or take 75. It was declared a Romanian Academy natural monument in 1942."
+    },
+    {
+      "q": "Can you visit the oak from Cajvana?",
+      "a": "Yes, free, no gate. It stands in the town itself with a plaque and bas-relief beside it."
+    },
+    {
+      "q": "How do you get to Cajvana?",
+      "a": "By car or local bus. Suceava, the nearest city with a railway station, is about 25 kilometres away; the tree is reached on foot within the town."
+    }
+  ],
+  "hero_tree_id": "cjv_001",
+  "oldest_tree_id": "cjv_001",
+  "trees": [
+    {
+      "id": "cjv_001",
+      "name": "The Oak from Cajvana",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 810 years",
+      "age_min": 735,
+      "age_max": 885,
+      "age_basis": "source",
+      "girth_cm": 1101,
+      "location": {
+        "address": "Stejarul Secular din Cajvana, town of Cajvana, Suceava County, Romania (a plaque and bas-relief stand beside the tree)",
+        "latitude": 47.704719,
+        "longitude": 25.986667,
+        "neighbourhood": "Cajvana"
+      },
+      "story": "The town of Cajvana keeps a camera on its oak around the clock, and anyone can watch it live on the town hall's website. That is how seriously a small place in northern Romania takes a tree reported as the largest oak in south-eastern Europe: 11 metres round and about 23 metres tall.\n\nIts age has been tested rather than guessed. Radiocarbon dating put it at roughly 810 years, give or take 75, so it began growing somewhere between the mid 12th and the late 13th century. The Romanian Academy declared it a natural monument in 1942, in the middle of a war.\n\nTwo stories come with it, and both are told as legends rather than history. The first says it was planted around 1241, after the Tatar invasion, to mark a mass grave. The second says that in 1476 Stefan cel Mare, prince of Moldavia, rested his troops in its shade and was served cas, the local fresh cheese, which is supposedly where Cajvana got its name. Neither can be checked. The radiocarbon date at least allows both.\n\nWhat can be checked is that it is alive and looked after. A plaque and a bas-relief stand beside it, the town calls it living heritage, and the webcam shows it standing on any day you care to look. It is free and open in the town itself; Suceava, the nearest city with a railway station, is about 25 kilometres away.",
+      "how_to_recognise": "You can recognise it by the trunk, 11 metres round, and by the plaque and bas-relief that stand beside it. It is the oak the town hall's live webcam points at, in Cajvana itself.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2018/Dub-z-Cajvany",
+        "https://adevarul.ro/stiri-locale/suceava/cel-mai-batran-stejar-din-sud-estul-europei-1870077.html",
+        "https://cajvana.ro/stejarul-secular-din-cajvana-camera-live/",
+        "https://suceava.online/locuri/arbori/stejarul-multisecular-din-cajvana/"
+      ],
+      "access": "Free, open, no gate. Stands in the town of Cajvana with a plaque and bas-relief beside it, and the town hall itself hosts a 24/7 public live webcam pointed at the tree, which is strong evidence it is a normal, openly visitable town monument rather than restricted land.",
+      "transport": "Cajvana is a small town in Suceava County, northeastern Romania; nearest larger town/rail access is Suceava, roughly 25km away. No public transport directly to the tree; reachable by car or local bus into Cajvana, then on foot in town.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

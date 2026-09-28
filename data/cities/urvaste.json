@@ -1,0 +1,67 @@
+{
+  "city": "Urvaste",
+  "country": "Estonia",
+  "status": "needs_curation",
+  "intro": "Urvaste is a rural parish in southeastern Estonia, and its tree once appeared on the country's own money. The Tamme-Lauri Oak was printed on the back of the old 10 kroon banknote, and a 1998 ring study dated its first year to 1326, making it Estonia's thickest and oldest tree. Lightning has hollowed its trunk so thoroughly that seven people are said to fit inside, and in 1970 the hollow was filled with eight tonnes of concrete to keep it standing.",
+  "meta_description": "The Tamme-Lauri Oak, Urvaste, Estonia: the country's oldest and thickest tree, dated to 1326, once on the 10 kroon banknote. Free to visit.",
+  "question_meta": "Urvaste's remarkable tree is the Tamme-Lauri Oak, Estonia's oldest and thickest, dated to 1326.",
+  "question_answer": "Urvaste's notable tree is the Tamme-Lauri Oak, in a signposted clearing off the Urvaste to Kanepi road in Voru County, Estonia.",
+  "question_context": "A 1998 ring study put the oak's first year at 1326, making 2026 its seven hundredth summer; one tourism source rounds it down to 800 years, but the ring count is the better evidence. It is the country's thickest tree, 8.31 metres round at chest height, though repeated lightning strikes have cut its crown down to about 17 metres and hollowed the trunk so thoroughly that seven people are said to fit standing inside. The name comes from folklore: Tamme-Lauri, Lauri of the oak, is a fire spirit believed to live within it, and a separate legend claims a Swedish king's carriage lost an axle here that then took root. In 1970 the hollow was filled with eight tonnes of reinforced concrete, not a burial but a rescue, and the oak has kept growing around its new core for half a century. It has outlived the money that made its face familiar, since Estonia swapped the kroon for the euro in 2011. It stands in a signposted clearing, free and open all year, a short walk from roadside parking.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Urvaste?",
+      "a": "The Tamme-Lauri Oak, Estonia's thickest and oldest tree, 8.31 metres round, standing in a signposted clearing off the Urvaste to Kanepi road."
+    },
+    {
+      "q": "How old is the Tamme-Lauri Oak?",
+      "a": "About 700 years. A 1998 ring study dated its first year to 1326, which is stronger evidence than the 800-year figure some tourism pages give."
+    },
+    {
+      "q": "Can you visit the Tamme-Lauri Oak?",
+      "a": "Yes, free, open year-round with no gate or ticket. It stands in a clearing signposted from the Urvaste-Kanepi highway."
+    },
+    {
+      "q": "How do you get to the Tamme-Lauri Oak?",
+      "a": "There is no public transport to the site. The nearest towns are Antsla and Urvaste; a car is the practical way to reach it, with a short walk from roadside parking."
+    }
+  ],
+  "hero_tree_id": "urv_001",
+  "oldest_tree_id": "urv_001",
+  "trees": [
+    {
+      "id": "urv_001",
+      "name": "Tamme-Lauri Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 700 years",
+      "age_min": 690,
+      "age_max": 710,
+      "age_basis": "source",
+      "girth_cm": 831,
+      "location": {
+        "address": "Tamme-Lauri, Urvaste kula, Antsla vald, Voru maakond, Estonia; signed off the Urvaste-Kanepi highway",
+        "latitude": 57.917219,
+        "longitude": 26.576667,
+        "neighbourhood": "Urvaste, Antsla Parish, Voru County"
+      },
+      "story": "Estonians carried this oak in their wallets: it was printed on the back of the old 10 kroon banknote. It is the country's thickest tree, 8.31 metres round at chest height, and a 1998 ring study put its first year at 1326, which makes 2026 its seven hundredth summer. One tourism source says 800 years; the ring count is the better evidence.\n\nThe name comes from folklore. Tamme-Lauri is Lauri of the oak, a fire spirit believed to live inside it, which is an apt tenant for a tree that lightning has struck again and again. Those strikes cut its height to about 17 metres and hollowed the trunk so thoroughly that seven people are said to fit standing inside. Another legend claims a Swedish king's carriage lost an axle here, and the axle took root.\n\nIn 1970 the hollow was filled with eight tonnes of reinforced concrete. That sounds like a burial and was a rescue: the oak kept growing around its new core, and it is still growing half a century later. It has now outlived the money that made its face familiar: Estonia swapped the kroon for the euro in 2011.\n\nIt stands in a clearing off the Urvaste to Kanepi road, signposted, free and open all year, a short walk from roadside parking.",
+      "how_to_recognise": "You can recognise it by the trunk, 8.31 metres round and hollowed by lightning, under a crown cut down to about 17 metres. It stands in a signposted clearing off the Urvaste to Kanepi road.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2016/Dub-Tamme-Lauri",
+        "https://visitestonia.com/en/tamme-lauri-oak-estonias-largest-oak-tree",
+        "https://www.monumentaltrees.com/en/est/vorumaa/urvaste/2455_tammelauritamm/",
+        "https://www.internationaloaksociety.org/content/tamme-lauri-oak"
+      ],
+      "access": "Free, open year-round, no gate or ticket. Stands in a clearing beside a road, signposted from the Urvaste-Kanepi highway; a public tourist site, not private land.",
+      "transport": "Rural southeastern Estonia, no public transport to the site itself. Nearest towns are Antsla and Urvaste; a car is the practical way to reach it, with the tree a short walk from roadside parking.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

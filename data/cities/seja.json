@@ -1,0 +1,67 @@
+{
+  "city": "Sēja",
+  "country": "Latvia",
+  "status": "needs_curation",
+  "intro": "Sēja is a village in Saulkrasti Municipality, inland from Latvia's Baltic coast, and its tree stands at the edge of a ruined manor park. The Sēja Oak is about nine metres round and one of the biggest oaks in the Baltic states, and a naturalist's ring count of a broken branch put its age at roughly 500 years. A plaque claims ancient Latvian chieftains once met beneath it, a claim at least one local source calls invented; what really happens here is a midsummer gathering, when people bring flowers and folk songs.",
+  "meta_description": "The Sēja Oak, Latvia: one of the biggest oaks in the Baltic states, about 500 years old, at the edge of a ruined manor park. Free to visit.",
+  "question_meta": "Sēja's remarkable tree is the Sēja Oak, about 500 years old and one of the biggest in the Baltic states.",
+  "question_answer": "Sēja's notable tree is the Sējas ozols, the Sēja Oak, at the edge of the former Sēja Manor park, 160 metres from the manor ruins, in Saulkrasti Municipality, Latvia.",
+  "question_context": "The plaque at this oak says ancient Latvian chieftains once met beneath it; there is no convincing evidence for that, and at least one Latvian source calls the claim a recent invention. The tree is about nine metres round at chest height, and stands 22 metres tall; sources rank it anywhere from second-thickest to fourth-largest oak in the Baltic states, so the safe claim is that it is one of the biggest. Its age is better grounded than most: Guntis Eniņš, who has spent more than fifty years measuring Latvia's largest trees, counted the rings of a broken-off branch and worked out the oak is roughly 500 years old, close to 1567, when Johan Seyge acquired Sēja manor, though nothing proves the oak was planted for it. The manor house is now a ruin 160 metres to the east; the tree outlasted it. A gathering does happen here, just not the one the plaque imagines: at midsummer, on Jāņi, people come to the oak with flowers and folk songs. It holds nature monument status and stands at the edge of the old manor park, where the grass is mown and the paths are raked.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Sēja?",
+      "a": "The Sējas ozols, the Sēja Oak, about nine metres round, one of the biggest oaks in the Baltic states, at the edge of the old manor park."
+    },
+    {
+      "q": "How old is the Sēja Oak?",
+      "a": "Roughly 500 years, from a ring count of a broken branch by naturalist Guntis Eniņš. A plaque's claim that chieftains met here is not supported by evidence."
+    },
+    {
+      "q": "Can you visit the Sēja Oak?",
+      "a": "Yes, free, no ticket. It stands at the edge of a well-maintained former manor park, 160 metres from the manor ruins."
+    },
+    {
+      "q": "How do you get to Sēja?",
+      "a": "There is no direct public transport. By car via the village of Sēja, in Saulkrasti Municipality inland from the Baltic coast, then a short walk to the old manor park."
+    }
+  ],
+  "hero_tree_id": "sej_001",
+  "oldest_tree_id": "sej_001",
+  "trees": [
+    {
+      "id": "sej_001",
+      "name": "The Sēja Oak (Sējas ozols)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 470,
+      "age_max": 530,
+      "age_basis": "source",
+      "girth_cm": 910,
+      "location": {
+        "address": "Edge of the former Sēja Manor park, about 160m west of the Sēja manor ruins, Sēja, Saulkrasti Municipality, Latvia",
+        "latitude": 57.19861,
+        "longitude": 24.58916,
+        "neighbourhood": "Sēja"
+      },
+      "story": "The plaque at this oak says ancient Latvian chieftains once met beneath it. There is no convincing evidence for that, and at least one Latvian source calls the claim a recent invention. The tree does not need it.\n\nThe Sēja oak is about nine metres round at chest height, 9.05 by a 2017 measurement and 9.15 by another count, and it stands 22 metres tall. Sources rank it anywhere from second-thickest to fourth-largest oak in the Baltic states; the safe claim is that it is one of the biggest. Its age is better grounded than most. Guntis Eniņš, who has spent more than fifty years measuring Latvia's largest trees, counted the rings of a broken-off branch and worked out from them that the oak is roughly 500 years old.\n\nThat puts its first years close to 1567, when Johan Seyge acquired Sēja manor. The two dates sit comfortably together, though nothing proves the oak was planted for the manor. The manor house is now a ruin 160 metres to the east; the tree outlasted it.\n\nA gathering does happen here, just not the one the plaque imagines. At midsummer, on Jāņi, people come to the oak with flowers and folk songs, which is a tradition you can actually check by turning up. It holds nature monument status and stands at the edge of the old manor park, where the grass is mown and the paths are raked.",
+      "how_to_recognise": "You can recognise it by the trunk, about nine metres round under a crown 22 metres high. It stands on the edge of the old Sēja manor park, 160 metres west of the manor ruins.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2023/seja-oak",
+        "https://www.senvietas.lv/sejas-ozols/",
+        "https://www.aprinkis.lv/index.php/sabiedriba/pasvaldibas/16741-tas-ir-musu-ozols-sejas-dizozols",
+        "https://wondermondo.lv/latvijas-lielakie-ozoli/"
+      ],
+      "access": "Free, no ticket. Stands at the edge of a former manor park described as well maintained (mowed grass, raked paths), consistent with a managed public park rather than closed private land; a Latvian nature-monument designation on a tree normally goes with public visitability.",
+      "transport": "Saulkrasti Municipality, Latvia, inland from the Baltic coast town of Saulkrasti. No direct public transport to the site; reachable by car via the village of Sēja, then a short walk to the old manor park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
