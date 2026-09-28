@@ -1079,6 +1079,18 @@
     "fonte-colombo": [
       "Santuario di Fonte Colombo"
     ],
+    "fontenay-abbey": [
+      "Abdij van Fontenay",
+      "Abtei Fontenay",
+      "Abbaye de Fontenay",
+      "Abadía de Fontenay",
+      "Abbazia di Fontenay",
+      "Fontenay",
+      "Fontenayn apottiluostari",
+      "Opactwo Fontenay",
+      "Klášter Fontenay",
+      "Kláštor Fontenay"
+    ],
     "formentera": [
       "Frumentaria",
       "Formenteara",
@@ -1584,6 +1596,9 @@
       "Hūhetene",
       "Hūsestūn",
       "Youstòn"
+    ],
+    "hradek-u-susice": [
+      "Hrádek"
     ],
     "hronsek": [
       "Garamszeg"
@@ -2232,6 +2247,9 @@
       "Mediolanum",
       "Megelan"
     ],
+    "millena": [
+      "Villeneta"
+    ],
     "minamialps": [
       "Akaishigebergte",
       "Akaishi-Gebirge",
@@ -2352,6 +2370,18 @@
       "Nagoya-sṳ",
       "Nakoia",
       "Naqoya"
+    ],
+    "nanjing": [
+      "Nankin",
+      "Nanchino",
+      "Nanquim",
+      "Nanquín",
+      "Nanking",
+      "Nankinas",
+      "Naņdzjina",
+      "Nanjing Shi",
+      "Nankeen",
+      "Nam Kinh"
     ],
     "nantes": [
       "Nantas",
@@ -2491,6 +2521,10 @@
     "oahu": [
       "ma lili Owaju"
     ],
+    "oberndorf-bei-salzburg": [
+      "Oberndorf",
+      "Owerndorf ba Såizburg"
+    ],
     "odawara": [
       "Odavara",
       "Odawara-chhī",
@@ -2533,6 +2567,9 @@
     "omishima": [
       "Isla Ōmi",
       "Ōmi Shima"
+    ],
+    "ondategi": [
+      "Ondátegui"
     ],
     "oostkapelle": [
       "Oôskappel"
@@ -3061,6 +3098,13 @@
     "san-quirico-d-orcia": [
       "Sanctus Quiricus in Nosenna",
       "San Quiricu d'Orcia"
+    ],
+    "sankt-vith": [
+      "Saint-Vith",
+      "Sankt-Vith",
+      "St. Vith",
+      "Sankt Väit",
+      "Sint-Vit"
     ],
     "santa-maria-del-tule": [
       "Municipio de Santa María del Tule",
@@ -4079,6 +4123,7 @@
     "flinders-ranges": "Ikara–Flinders Ranges National Park",
     "florence": "Florence",
     "fonte-colombo": "Sanctuary of Greccio",
+    "fontenay-abbey": "Abbey of Fontenay",
     "formentera": "Formentera",
     "fort-lauderdale": "Fort Lauderdale, Florida",
     "fort-worth": "Fort Worth, Texas",
@@ -4157,6 +4202,7 @@
     "horn-bremen": "International School of Bremen",
     "horni-bradlo": "Horní Bradlo",
     "houston": "Houston",
+    "hradek-u-susice": "Hrádek (Klatovy District)",
     "hronsek": "Hronsek",
     "humboldt-redwoods-state-park": "Humboldt Redwoods State Park",
     "ibigawa": "Ibigawa",
@@ -4270,6 +4316,7 @@
     "miedzyzdroje": "Międzyzdroje",
     "miharu": "Miharu, Fukushima",
     "milan": "Milan",
+    "millena": "Millena",
     "minamialps": "Akaishi Mountains",
     "minamiaso": "Minamiaso, Kumamoto",
     "minneapolis": "Minneapolis",
@@ -4290,6 +4337,7 @@
     "nagi": "Nagi, Okayama",
     "nago": "Nago",
     "nagoya": "Nagoya",
+    "nanjing": "Nanjing",
     "nantes": "Nantes",
     "naples": "Naples",
     "nara": "Nara (city)",
@@ -4307,12 +4355,14 @@
     "nijmegen": "Nijmegen",
     "nikaho": "Nikaho, Akita",
     "nishio": "Nishio",
+    "nova-ves-pod-plesi": "Nová Ves pod Pleší",
     "novi-ligure": "Novi Ligure",
     "nuenen": "Nuenen",
     "numata": "Numata, Gunma",
     "nuremberg": "Nuremberg",
     "nyingchi": "Nyingchi",
     "oahu": "Oʻahu",
+    "oberndorf-bei-salzburg": "Oberndorf bei Salzburg",
     "odawara": "Odawara",
     "ofunato": "Ōfunato",
     "oguni": "Oguni, Kumamoto",
@@ -4321,6 +4371,7 @@
     "oklahoma-city": "Oklahoma City",
     "okuizumo": "Okuizumo",
     "omishima": "Ōmishima Island",
+    "ondategi": "Ondategi",
     "oostkapelle": "Oostkapelle",
     "osaka": "Osaka",
     "oslo": "Oslo",
@@ -4407,6 +4458,7 @@
     "san-diego": "San Diego",
     "san-francisco": "San Francisco",
     "san-quirico-d-orcia": "San Quirico d'Orcia",
+    "sankt-vith": "St. Vith",
     "santa-maria-del-tule": "Santa María del Tule",
     "santalfio": "Sant'Alfio",
     "sao-paulo": "São Paulo",
@@ -4617,6 +4669,7 @@
     "neudrossenfeld": "Neudrossenfeld",
     "nicorps": "Nicorps",
     "niedenstein": "Niedenstein",
+    "nova-ves-pod-plesi": "Nová Ves pod Pleší",
     "nuenen": "Nuenen",
     "otari-wiltons-bush": "Ōtari-Wilton's Bush",
     "parry-kauri-park": "Warkworth & District Museum",
@@ -4692,11 +4745,13 @@
     "jaegerspris-nordskov": "no article within 40 km, tried Jægerspris Nordskov; Jægerspris Nordskov, Denmark; search: List of individual trees",
     "jerceni": "no article within 40 km, tried Jērcēni; Jērcēni, Latvia; search: Administrative divisions of Latvia; search: Administrative divisions of Latvia (2009–2021); search: Strenči Municipality (Strenči Municipality, title does not match)",
     "kawago": "no article within 40 km, tried Kawago; Kawago, Japan; search: Nogizaka46",
+    "knappfors": "no article within 40 km, tried Knappfors; Knappfors, Sweden",
     "kybarciai": "no article within 40 km, tried Kybarciai; Kybarciai, Lithuania",
     "laumenai": "no article within 40 km, tried Laumenai; Laumenai, Lithuania; search: Šilalė District Municipality (Šilalė District Municipality, title does not match)",
     "lazy-cheb": "no article within 40 km, tried Lazy (Lazy, no coordinates, disambiguation page); Lazy, Czech Republic; search: List of German names for places in the Czech Republic; search: Aquapalace Prague; search: Capital Cities (duo)",
     "lecina": "no article within 40 km, tried Lecina; Lecina, Spain; search: Results breakdown of the 1936 Spanish general election; search: Results breakdown of the 1931 Spanish general election; search: Results breakdown of the 1933 Spanish general election",
     "linkaiciai": "no article within 40 km, tried Linkaičiai; Linkaičiai, Lithuania; search: Šiauliai Ghetto (Šiauliai Ghetto, title does not match); search: Radviliškis–Daugavpils Railway; search: List of military headstamps",
+    "longlou": "no article within 40 km, tried Longlou; Longlou, Belgium; search: Typhoon Yagi",
     "lukavice": "no article within 40 km, tried Lukavice (Lukavice, no coordinates, disambiguation page); Lukavice, Czech Republic; search: List of municipalities in the Czech Republic; search: List of German names for places in the Czech Republic; search: Rychnov nad Kněžnou",
     "moffat": "no article within 40 km, tried Moffat (Moffat, no coordinates, disambiguation page); Moffat, United Kingdom; search: Steven Moffat; search: Glasgow; search: List of postcode districts in the United Kingdom",
     "mrakotin": "no article within 40 km, tried Mrákotín (Mrákotín, no coordinates, disambiguation page); Mrákotín, Czech Republic; search: List of cities and towns in the Czech Republic; search: List of municipalities in the Czech Republic; search: List of German names for places in the Czech Republic",
@@ -4729,6 +4784,7 @@
     "visnova": "no article within 40 km, tried Višňová (Višňová, no coordinates, disambiguation page); Višňová, Czech Republic; search: List of municipalities in the Czech Republic; search: List of German names for places in the Czech Republic; search: Liberec-Jablonec agglomeration",
     "volkenroda": "no article within 40 km, tried Volkenroda; Volkenroda, Germany; search: Loccum; search: Pilgrims' way; search: Kamp Abbey",
     "vytogala": "no article for the village; the lookup matched Silale District Municipality, a different place 9 km away, so its names are not this place's names",
+    "weywertz": "no article within 40 km, tried Weywertz; Weywertz, Belgium; search: Luc Eymael; search: 2018–19 Belgian Cup; search: 2017–18 Belgian Cup",
     "wilparting": "no article within 40 km, tried Wilparting; Wilparting, Germany",
     "wisniowa": "no article within 40 km, tried Wiśniowa (Wiśniowa, no coordinates, disambiguation page); Wiśniowa, Poland; search: Wrocław Water Tower; search: Kraków metropolitan area; search: Soplica",
     "wojslawice": "no article within 40 km, tried Wojslawice (Wojsławice, no coordinates, disambiguation page); Wojslawice, Poland; search: Wojsławice, Masovian Voivodeship; search: Kłodzko (Kłodzko, title does not match); search: Szczawno-Zdrój",
