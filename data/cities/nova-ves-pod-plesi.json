@@ -1,0 +1,73 @@
+{
+  "city": "Nová Ves pod Pleší",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Buk u rybníčku means the beech by the little pond, and in Nová Ves pod Pleší, forty kilometres southwest of Prague, the name has outlived the pond. The beech stands by a former pond at the edge of the village, a protected memorial tree since 2004, 308 centimetres round. Its official record reads like a veteran's medical file: a branch torn away, an open wound, tinder fungus at the crown, and birds nesting in a cavity. It is falling apart slowly and still growing. Free, on open ground.",
+  "meta_description": "Buk u rybníčku, a veteran beech by a former pond in Nová Ves pod Pleší, protected since 2004, wounded and still growing. Free, on open ground.",
+  "question_meta": "Buk u rybníčku is a protected veteran beech by a former pond in Nová Ves pod Pleší, near Dobříš. What its record says and how to find it.",
+  "question_answer": "Buk u rybníčku, the beech by the little pond, is a European beech standing by a former pond on the edge of Nová Ves pod Pleší in the Příbram District, about nine kilometres from Dobříš and forty kilometres southwest of Prague. The Czech state declared it a memorial tree in September 2004. Its trunk is 308 centimetres round, and it is free to see on open ground.",
+  "question_context": "What makes this beech unusual is how much of its decline is on the record. When it was declared a memorial tree in 2004, the state nature-conservation record noted one open cavity and a crown only five percent dead. At the next inspection, in 2019, conservationists found a large branch torn away, a big open wound, rot, tinder fungus fruiting at the base of the crown, and a smaller cavity being used by nesting birds. That is what a veteran tree looks like: old enough to be coming apart, and still alive while it does. The trunk is 308 centimetres round, modest for a lone park beech and respectable for one that grew up among neighbours competing for light, which this one did. A regional heritage site counts it as one of the village's two memorial trees and says stories have already grown up around it, without saying which. Nobody has published an age. If you know the village's stories about the beech, or when the pond beside it was drained, we would like to hear them. October, when the leaves turn copper, is the best time to see it.",
+  "hero_tree_id": "nvp_001",
+  "oldest_tree_id": "nvp_001",
+  "faq": [
+    {
+      "q": "How old is Buk u rybníčku?",
+      "a": "Nobody has published an age for it. The trunk is 308 centimetres round. If you know more, tell us."
+    },
+    {
+      "q": "Is the tree healthy?",
+      "a": "It is alive and in decline. A 2019 inspection recorded a torn-off branch, an open wound, rot, tinder fungus at the base of the crown and a nesting cavity, against a much healthier record from 2004."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open ground by a former pond at the edge of the village, with no gate or ticket."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is at the edge of Nová Ves pod Pleší, about nine kilometres from Dobříš and forty kilometres southwest of Prague. No public transport reaches the pond itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nvp_001",
+      "name": "Buk u rybníčku",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 308,
+      "location": {
+        "address": "By a former pond on the edge of the village, Nová Ves pod Pleší, Příbram District, Central Bohemian Region",
+        "latitude": 49.84100809854185,
+        "longitude": 14.26891464680929,
+        "neighbourhood": "Nová Ves pod Pleší, about 9km from Dobříš"
+      },
+      "story": "Birds nest in this beech, and a fungus is eating it, and both facts are in the official record. When Czech conservationists inspected the tree in 2019 they noted a large branch torn away and a big open wound, rot, tinder fungus fruiting at the base of the crown, and a smaller cavity in use as a nest. Fifteen years earlier, in 2004, the same record had found one open cavity and a crown only five percent dead. It is a veteran in the full sense of the word: old enough to be falling apart, and still doing it slowly.\n\nIt stands by a former pond on the edge of Nová Ves pod Pleší, roughly forty kilometres southwest of Prague, which is where the name comes from: Buk u rybníčku, the beech by the little pond. The state declared it a memorial tree in September 2004. A regional heritage site counts it as one of the village's two memorial trees and says stories have already grown up around it, without telling us which.\n\nThe trunk is 308 centimetres round. That is modest for a lone park beech and respectable for one that grew up with neighbours competing for light, which is what this one is.\n\nNobody has published an age for it, and we are not going to invent one. If you know the village's stories, or when the pond was drained, we would like to hear them.",
+      "verified_sources": [
+        "https://portal.nature.cz/w/uzemi-7463",
+        "https://cs.wikipedia.org/w/index.php?title=Seznam_pam%C3%A1tn%C3%BDch_strom%C5%AF_v_okrese_P%C5%99%C3%ADbram&action=raw",
+        "https://nasedobrissko.cz/nova-ves-pod-plesi-obec-kde-se-trpytilo-zlato/",
+        "https://www.mistopisy.cz/pruvodce/obec/3281/nova-ves-pod-plesi/pamatky-turistika/"
+      ],
+      "access": "Free, on open ground by a pond at the edge of the village; no gate or ticket found in any source",
+      "transport": "Nová Ves pod Pleší village, Příbram District; about 9km from Dobříš, roughly 40km southwest of Prague; no direct public transport to the pond itself",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the storm wound where a large branch tore off in 2019, and the tinder fungus at the base of the crown. It is a beech, 308 centimetres round, by the old pond outside the village.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the beech turns copper and russet"
+      }
+    }
+  ]
+}
