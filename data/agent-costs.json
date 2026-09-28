@@ -8716,10 +8716,10 @@
       {
         "target": "17 famous trees (multi-country)",
         "kind": "write",
-        "tokens": 310000,
-        "trees": 11,
-        "note": "11 single-tree places published (longlou, weywertz, sankt-vith, nanjing, hradek-u-susice, nova-ves-pod-plesi, fontenay-abbey, ondategi, millena, knappfors, oberndorf-bei-salzburg); obf_001 story newly written. COLLISION: the 6 Tree of the Year trees in the brief (pianello, urvaste, cajvana, cibin, vales, seja) were written and paged here, then found already published by the 00:03 UTC night run (65685b2a) when pushing; this pass's versions were dropped before merge (kept on local branch writepass-0928-backup only), and the Mendaza duplicate had also already been handled there. gar_001 Garaiko artea moved to its existing held lead in data/leads/_famous-spain.json (curator HOLD; id also collides with live Garmen gar_001). 11 leads across 7 files marked published. Researcher notes stripped from access/transport fields before publishing. The brief predated the night run's merge and was not generated from passcheck at dispatch time.",
-        "wasted": 90000,
+        "tokens": 330000,
+        "trees": 9,
+        "note": "9 single-tree places published (longlou, weywertz, sankt-vith, nanjing, hradek-u-susice, nova-ves-pod-plesi, fontenay-abbey, knappfors, oberndorf-bei-salzburg); obf_001 story newly written. COLLISION: the 6 Tree of the Year trees in the brief (pianello, urvaste, cajvana, cibin, vales, seja) were written and paged here, then found already published by the 00:03 UTC night run (65685b2a) at push time; this pass's versions were dropped before merge (local branch writepass-0928-backup only). The Mendaza duplicate had also been handled there. RULE CHANGE MID-PASS: 60486899 added preflight's covered-country rule (no photo and no confirmed pin = lead), so ondategi and millena (Spain, approximate pins, no photos) were held back as leads with their page drafts embedded in data/leads/_famous-spain.json. gar_001 Garaiko artea moved to its existing held lead (curator HOLD; id also collides with live Garmen gar_001). Researcher notes stripped from access/transport before publishing. The brief predated the night run's merge and was not regenerated from passcheck at dispatch time.",
+        "wasted": 110000,
         "brief_wrong": true
       }
     ]
