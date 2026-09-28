@@ -653,6 +653,60 @@
    "status": "RESOLVED 2026-09-26, delivered as kag_014 in data/cities/kagoshima.json",
    "why": "LOOKED at 2026-09-25: a wide, well-balanced single tree given its own circular brick planter in the centre of a city park plaza (basketball court and lawn around it), people sitting on the surround. The setting (a park literally built around this one tree) reads as a valued civic specimen. Reader's note: \"Biggest of the park - 4m girth.\" No published tree sits within reach (nearest_published_m: none recorded) and no register entry or web source names it (searched 2026-09-25). The strongest of this batch: worth a research pass to place the park and find a municipal source or plaque before it can clear the normal bar. Kept as a lead. RESOLVED 2026-09-26: identified the park as Kyoken Park (Chuo-cho) via Nominatim reverse-geocode plus WebSearch; the city own park page (city.kagoshima.lg.jp) and a second source (secret-kichi.net) both confirm a camphor as the park named symbol tree, and the site real history (Saigo Takamori former residence, later a girls school, a park since 1951). Two independent sources plus the contributor photo and girth estimate clears the normal bar; girth (400cm) is the reader own estimate, not a register measurement, and no age is documented for the tree itself. Published as kag_014.",
    "seen": "2026-09-25"
+  },
+  {
+   "sighting_id": "50bab485-dcc6-479f-a4fa-f45756d8558e",
+   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+   "mine": true,
+   "name": "A tree near Minamiaso",
+   "species": null,
+   "age": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 32.8512601149593,
+   "longitude": 131.138918612214,
+   "taken_at": "2026-09-28T02:04:23+00:00",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/50BAB485-DCC6-479F-A4FA-F45756D8558E.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [],
+   "nearest_published_m": null,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-09-28"
+  },
+  {
+   "sighting_id": "70e18ab5-cc32-492e-b2a4-a816e854582b",
+   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+   "mine": true,
+   "name": "A tree near Ueki",
+   "species": null,
+   "age": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 32.7558987857612,
+   "longitude": 130.752892679092,
+   "taken_at": "2026-09-28T02:44:59+00:00",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/70E18AB5-CC32-492E-B2A4-A816E854582B.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [],
+   "nearest_published_m": null,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-09-28"
   }
  ]
 }
