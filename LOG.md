@@ -90,6 +90,29 @@ throughout (681 cities, 0 problems). Local commits are ahead of origin;
 `git push` hit the known expired-token error, so these are for the workflow's
 Run health step to push.
 
+**A third `_tree-of-the-year` batch followed the same shape**, 8 more
+candidates diversified across countries with real ages. Verify pass delivered
+7, blocked 1 (Varna's Plane Tree, on private Galatex factory grounds with a
+source stating access is restricted), and specifically checked whether one
+candidate, 37-38km from Bratislava, belonged on that existing page instead of
+becoming its own place; confirmed it sits outside the ~30 minute day-trip
+boundary (44-48min by direct train) so it ships as its own place. Write pass
+turned all 7 into stories, one of them (the Oak of Prince Ulrich, Peruc)
+carrying a genuine, honestly-unresolved dispute over whether the living tree
+is the original from an 11th-century legend or a younger successor, stated
+as a range rather than picked. **All 7 published as new single-tree places:**
+The Multisecular Beech of Saint-Jammes (Sorèze, France), The Old Mulberry
+(Veliki Preslav, Bulgaria, no girth or height ever published, said so
+plainly), The Encina de San Roque (Colindres, Spain), The Millennium Oak
+(Veryn, Ukraine, an 1917 wartime photograph beside it), The Kaņepju Oak
+(Jērcēni, Latvia, a disputed age between 450 and 825 years), The Pálffy Oak
+of Memories (Malacky, Slovakia), The Oak of Prince Ulrich (Peruc, Czech
+Republic). preflight clean throughout (688 cities, 0 problems). Three
+verify/write passes and 19 new single-tree places from one refill target in
+this window; `_tree-of-the-year` still has roughly 74 unsourced leads left
+for a future run. All commits local, ahead of origin on the same expired
+push token; the workflow's Run health step will push them.
+
 ## 2026-09-27 (continuation) - Fixed a real deploy blocker; wrote 10 verified famous trees but held all 10; caught an id collision and a leads.py bug
 
 **Rung 2 first, and it was live for hours.** `health.py` showed Build and
