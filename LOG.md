@@ -56,6 +56,40 @@ hard rule 9) and expanded 3 `question_context` fields to hit Contract B's
 150-200 word range. `preflight.py` clean throughout (675 cities, 0 problems).
 Both passes' costs logged to `data/agent-costs.json`.
 
+**Continued into a second `_tree-of-the-year` batch** (still the biggest
+refill target per `prepare.py`), 8 more European candidates diversified
+across countries. Verify pass delivered 7, rejected 1 (a Bulgarian oak
+destroyed in the August 2025 Tryn wildfires), and caught 3 of the 8
+contest-published GPS coordinates as badly wrong (10 to 165km off),
+correcting each against independent sources before delivery. Write pass
+turned 7 into stories; **6 published as new single-tree places**: The Bread
+Tree of Pianello (Corsica, an 800-1000yr chestnut whose 15m girth is a
+burred base, not a clean trunk); Tamme-Lauri Oak (Urvaste, Estonia, ring-dated
+to 1326, once on the 10-kroon banknote, its lightning-hollowed trunk filled
+with concrete in 1970); The Oak from Cajvana (Romania, radiocarbon-dated to
+~810yr, watched by the town's own 24/7 webcam); The Guardian of Cibin (Cheile
+Cibinului gorge, Romania, a ~500yr silver fir, 8 men to encircle it); The
+Chestnut of Vales (Portugal, ~1000yr, Portugal's thickest chestnut, on
+private farmland with a sourced standing owner invitation to enter, judged
+against hard rule 10 and published with an honest access line); The Sēja Oak
+(Latvia, ~500yr by ring count, a plaque's chieftain legend explicitly
+debunked in the story).
+
+**Caught before merge, worth recording as a process note:** the 7th
+candidate, Navarra's "Three-Legged Spanish Oak", turned out to already be
+published as `data/cities/mendaza.json` `mza_001` (Encina Tres Patas de
+Mendaza) under a different id and a different, previously-corrected
+coordinate. I nearly overwrote the live file outright by guessing an unused
+city slug without checking whether "Mendaza" already existed; caught it
+because the file-write tool reported "updated" rather than "created",
+checked `git status`, saw it was tracked, and restored it from HEAD before
+committing anything. Lesson for next time: check `data/cities/<slug>.json`
+existence (or run preflight's duplicate check) before writing a NEW city
+file, not only after. Marked the lead `duplicate` instead. preflight clean
+throughout (681 cities, 0 problems). Local commits are ahead of origin;
+`git push` hit the known expired-token error, so these are for the workflow's
+Run health step to push.
+
 ## 2026-09-27 (continuation) - Fixed a real deploy blocker; wrote 10 verified famous trees but held all 10; caught an id collision and a leads.py bug
 
 **Rung 2 first, and it was live for hours.** `health.py` showed Build and
