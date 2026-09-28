@@ -1,0 +1,66 @@
+{
+  "city": "Veryn",
+  "country": "Ukraine",
+  "status": "needs_curation",
+  "intro": "Veryn is a village in the Lviv region of western Ukraine, and its tree grows unfenced beside the village church. The Millennium Oak is reckoned at over a thousand years old, with a hollow big enough that people compare it to a small cave; a 1917 photograph shows soldiers of the Ukrainian Sich Riflemen posing beside it. In 2010 Ukraine's national contest named it the oldest tree in the Lviv region, and in 2024 it placed eighth in the European Tree of the Year.",
+  "meta_description": "The Millennium Oak of Veryn, Ukraine: over 1,000 years old, a cave-like hollow, photographed with soldiers in 1917. Free, unfenced, by the village church.",
+  "question_meta": "Veryn's remarkable tree is the Millennium Oak, over 1,000 years old, by the village church.",
+  "question_answer": "Veryn's notable tree is the Millennium Oak, standing unfenced beside the Church of St Michael the Archangel in the village, Stryi district, Lviv region.",
+  "question_context": "The hollow in this oak is big enough that people compare it to a small cave, and a village story from the Second World War says a sniper once hid inside it to cover the crossing of the Dniester. The tree is reckoned at over a thousand years old, a pedunculate oak 8.5 metres round and about eighteen metres tall. It has been a place to stop for a long time: tradition says Hetman Bohdan Khmelnytsky rested in its shade, and a set of photographs from 1917 shows soldiers of the Ukrainian Sich Riflemen standing beside it, later printed as a postcard. The hollow is also its weakness, since rot inside the trunk is a documented, ongoing concern and part of what age looks like on an oak this size, though the tree is still alive. It has been a protected botanical monument since 1984, and in 2010 Ukraine's national Tree of Ukraine contest named it the oldest tree in the Lviv region; in 2024 it placed eighth in European Tree of the Year with 8,886 votes. There is no fence, and an informal path has worn its way to the trunk.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Veryn?",
+      "a": "The Millennium Oak, a pedunculate oak 8.5 metres round with a hollow big enough to be compared to a small cave, beside the village church."
+    },
+    {
+      "q": "How old is the Millennium Oak of Veryn?",
+      "a": "Reckoned at over a thousand years. In 2010 a national Ukrainian contest named it the oldest tree in the Lviv region."
+    },
+    {
+      "q": "Can you visit the Millennium Oak?",
+      "a": "Yes, free. It stands unfenced beside the village Church of St Michael the Archangel, reached by an informal path."
+    },
+    {
+      "q": "How do you get to Veryn?",
+      "a": "By road; there is no rail or public transport directly to the village. Stryi is roughly 15 km away and Lviv about 70 km."
+    }
+  ],
+  "hero_tree_id": "vry_001",
+  "oldest_tree_id": "vry_001",
+  "trees": [
+    {
+      "id": "vry_001",
+      "name": "The Millennium Oak of Veryn",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 1,000 years",
+      "age_min": 1000,
+      "age_max": 1200,
+      "age_basis": "source",
+      "girth_cm": 850,
+      "location": {
+        "address": "By the Church of St Michael the Archangel, Veryn village, Stryi district, Lviv region, Ukraine",
+        "latitude": 49.487771,
+        "longitude": 23.990716,
+        "neighbourhood": "Veryn village"
+      },
+      "story": "The hollow in this oak is big enough that people compare it to a small cave, and a village story from the Second World War says a sniper once hid inside it to cover the crossing of the Dniester.\n\nThe tree is reckoned at over a thousand years old, and in 2010 Ukraine's national Tree of Ukraine contest named it the oldest tree in the Lviv region. It is a pedunculate oak, 8.5 metres round and about eighteen metres tall, growing beside the Church of St Michael the Archangel in the village of Veryn.\n\nIt has been a place to stop for a long time. Tradition says Hetman Bohdan Khmelnytsky rested in its shade. What is more than tradition is a set of photographs from 1917 showing soldiers of the Ukrainian Sich Riflemen standing beside it, later printed as a postcard, so it was already worth posing beside more than a century ago.\n\nThe hollow is also its weakness. Rot inside the trunk is a documented, ongoing concern, and it is part of what age looks like on an oak this size. The tree is still alive. It has been a protected botanical monument since 1984, and in 2024 it placed eighth in European Tree of the Year with 8,886 votes.\n\nThere is no fence. An informal path has worn its way to the trunk, which tells you how many people have made the same walk.",
+      "how_to_recognise": "You can recognise it by the trunk, 8.5 metres round with a cavity large enough to be compared to a small cave. It stands unfenced by the Church of St Michael the Archangel in Veryn.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2024/the-millennium-oak",
+        "https://spadok.org.ua/krayeznavstvo/tysyacholitniy-dub-u-seli-veryn",
+        "https://localhistory.org.ua/texts/kolonki/vikovii-dub-u-verini-zolota-galitska-provintsiia/"
+      ],
+      "access": "Free, on the grounds of the village church of St Michael; the local monument is explicitly unfenced (per localhistory.org.ua) and there is a well-documented informal path for visitors, so this is open village ground, not a private site.",
+      "transport": "Rural village in Stryi district, Lviv region, western Ukraine; no rail or public transport directly to the tree, reached by road from Stryi (roughly 15km) or Lviv (roughly 70km).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

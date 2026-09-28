@@ -9072,6 +9072,20 @@
       "tokens": 134965,
       "trees": 6,
       "note": "7 stories written and merged as 6 new single-tree places (pianello, urvaste, cajvana, cheile-cibinului, vales, seja); the 7th, the Three-Legged Oak, turned out to be a duplicate of already-published mendaza.json mza_001 under a different slug, caught before merge via preflight coordinate check and dropped rather than published twice. Vales access field rewritten per session judgement call on a standing sourced landowner invitation (hard rule 10)."
+    },
+    {
+      "target": "_tree-of-the-year (8 candidates, batch 3)",
+      "kind": "verify",
+      "tokens": 179831,
+      "trees": 7,
+      "note": "7 verified (Saint-Jammes Beech France, Old Mulberry Bulgaria, Encina de San Roque Spain, Millennium Oak Ukraine, Kaņepju Oak Latvia, Pálffy Oak Slovakia, Oak of Prince Ulrich Czechia). 1 blocked on access: Plane Tree of Varna, Bulgaria, on private Galatex factory grounds, a source stating access is restricted. Checked and confirmed the Pálffy Oak is outside Bratislava day-trip boundary (37-38km/44-48min), ships as its own place."
+    },
+    {
+      "target": "_tree-of-the-year (7 trees, batch 3)",
+      "kind": "write",
+      "tokens": 131618,
+      "trees": 7,
+      "note": "7 stories written and merged as 7 new single-tree places (soreze, veliki-preslav, colindres, veryn, jerceni, malacky, peruc). Prince Ulrich oak story states the successor-tree dispute honestly rather than picking a side. Old Mulberry has no girth/height on record, stated as an honest gap. Expanded 2 question_context fields to hit the 150-200 word Contract B range."
     }
   ]
 }

@@ -1,0 +1,66 @@
+{
+  "city": "Peruc",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Peruc is a village in northern Bohemia that may be named after a load of washing. The Chronicle of Dalimil tells how Prince Oldřich met a young woman named Božena doing laundry by the stream here around 1002 and married her, and tradition puts the meeting beneath this oak. Whether the tree itself is a thousand years old or a younger successor to the legend is genuinely disputed. It is 31 metres tall and 7.6 metres round, survived two fires, and in 2025 was voted the Czech Republic's Tree of the Year.",
+  "meta_description": "The Oak of Prince Ulrich, Peruc, Czechia: linked to a 1002 royal legend, 7.6 metres round, Czech Tree of the Year 2025. Free to visit.",
+  "question_meta": "Peruc's remarkable tree is the Oak of Prince Ulrich, tied to a 1002 legend, Czech Tree of the Year 2025.",
+  "question_answer": "Peruc's notable tree is the Oldřichův dub, the Oak of Prince Ulrich, standing by the stream at the edge of the village, at Oldřichova 49.",
+  "question_context": "The village of Peruc may be named after a load of washing. The Chronicle of Dalimil tells how Prince Oldřich, a Přemyslid ruler of Bohemia, came upon a young woman named Božena doing laundry by the stream here around 1002 and married her; their son became Duke Břetislav I, and perouc prádlo, washing the linen, is the village's favourite explanation of its own name. Tradition puts the meeting beneath this oak, but whether this is that oak is genuinely disputed: it is usually given as roughly a thousand years old, though some foresters think the original oak died long ago and the legend passed to a younger successor, so the honest range runs from about 300 years to a thousand. What is not in dispute is the size: a pedunculate oak 31 metres tall with a trunk 7.6 metres round, which survived two fires, in 1993 and 1995. It is a protected memorial tree by the stream at the village edge, with a bench for visitors and a forest kindergarten sharing its corner of Peruc. In 2025 it was voted the Czech Republic's Tree of the Year, and in 2026 it placed seventh in Europe.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Peruc?",
+      "a": "The Oldřichův dub, the Oak of Prince Ulrich, a pedunculate oak 7.6 metres round, standing by the stream at the edge of the village."
+    },
+    {
+      "q": "How old is the Oak of Prince Ulrich?",
+      "a": "Disputed. It is usually given as about a thousand years, tied to a legend from the year 1002, but some experts think it is a younger successor tree, so the honest range is 300 to 1,000 years."
+    },
+    {
+      "q": "Can you visit the Oak of Prince Ulrich?",
+      "a": "Yes, free. It is a protected memorial tree by the stream at the edge of Peruc, with a bench for visitors and no restrictions mentioned."
+    },
+    {
+      "q": "How do you get to Peruc?",
+      "a": "By road. Peruc is a village in the Louny district, roughly 65 km northwest of Prague and about 15 km from Louny; there is no rail station in the village."
+    }
+  ],
+  "hero_tree_id": "prc_001",
+  "oldest_tree_id": "prc_001",
+  "trees": [
+    {
+      "id": "prc_001",
+      "name": "The Oak of Prince Ulrich (Oldřichův dub)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "disputed, 300 to 1,000 years",
+      "age_min": 300,
+      "age_max": 1000,
+      "age_basis": "source",
+      "girth_cm": 760,
+      "location": {
+        "address": "Oldřichova 49, 439 07 Peruc, Ústí nad Labem Region, Czechia (Dolní Poohří area)",
+        "latitude": 50.344814,
+        "longitude": 13.961542,
+        "neighbourhood": "Peruc"
+      },
+      "story": "The village of Peruc may be named after a load of washing. The Chronicle of Dalimil tells how Prince Oldřich, a Přemyslid ruler of Bohemia, came upon a young woman named Božena doing laundry by the stream here around 1002, fell for her and married her. Their son became Duke Břetislav I, and \"perouc prádlo\", washing the linen, is the village's favourite explanation of its own name. Tradition puts the meeting beneath this oak.\n\nWhether this is that oak is the open question. It is usually given as roughly a thousand years old, which would make it the tree from the chronicle. Some foresters and experts think otherwise: that the original oak died long ago and the legend passed to a younger successor. Nobody has settled it, so the honest range runs from about 300 years to a thousand.\n\nWhat is not in dispute is the size. It is a pedunculate oak 31 metres tall with a trunk 7.6 metres round, and it came through two fires, in 1993 and 1995. It is a protected memorial tree, stands by the stream at the edge of the village with a bench for visitors, and a forest kindergarten now shares its corner of Peruc.\n\nIn 2025 it was voted the Czech Republic's Tree of the Year, and in 2026 it placed seventh in Europe. Whichever tree the prince stood under, this is the one the village has chosen to remember him by.",
+      "how_to_recognise": "You can recognise it by its height, 31 metres, over a trunk 7.6 metres round, with a visitors' bench beside it. It stands by the stream at the edge of Peruc, at Oldřichova 49, near the forest kindergarten.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2026/oak-of-prince-ulrich",
+        "https://www.kudyznudy.cz/aktivity/oldrichuv-dub-v-peruci",
+        "https://www.ceskestavby.cz/clanky/stromem-roku-je-po-roce-opet-dub-pry-pod-nim-knize-oldrich-potkal-bozenu-35270.html"
+      ],
+      "access": "Free, a legally protected 'památný strom' (memorial tree) beside a stream at the edge of the village, with a bench for visitors; kudyznudy.cz (the Czech national tourism board's own site) treats it as an established, freely visitable destination with no restrictions mentioned.",
+      "transport": "Peruc is a village in the Louny district, Usti nad Labem region; no rail station in the village, reached by road, roughly 65km northwest of Prague and about 15km from Louny.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

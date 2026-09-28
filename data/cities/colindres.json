@@ -1,0 +1,66 @@
+{
+  "city": "Colindres",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Colindres is a small town on the Cantabrian coast, and its tree stands on the hill above it, beside a chapel overlooking the old salt road. The Encina de San Roque, a holm oak roughly 400 years old, appears on a map drawn in 1778 and had already survived the felling that stripped the region's woods for 18th-century galleon shipyards. Its trunk measures 3.70 metres round at chest height, flaring to 4.40 metres at the base. In 2023 it was voted Spain's Tree of the Year.",
+  "meta_description": "The Encina de San Roque, Colindres, Spain: a holm oak roughly 400 years old, on a 1778 map, Spain's Tree of the Year 2023. Free to visit.",
+  "question_meta": "Colindres's remarkable tree is the Encina de San Roque, roughly 400 years old, Spain's Tree of the Year 2023.",
+  "question_answer": "Colindres's notable tree is the Encina de San Roque, on Monte de La Redonda beside the Ermita de San Roque, above the town, Cantabria.",
+  "question_context": "This holm oak is on a map drawn in 1778. By then it had already come through the felling that stripped the region's woods to feed the eighteenth-century galleon shipyards. It stands on Monte de La Redonda beside the Ermita de San Roque, looking over what was once the Camino Real, the medieval salt route, and the 1778 map is a map of that road. Roughly 400 years old and sixteen metres tall, it is 3.70 metres round at chest height and 4.40 metres at the base, where the trunk meets the hill. Why it was spared when the shipyards were taking timber, nobody records. What is recorded is what the town does with it now: the hillside hosts a World Environment Day gathering, and every August a countryside festival fills the ground around the chapel. In 2023 it beat fifteen other candidates to become Spain's Tree of the Year, backed by the town's Green Corridor tree-planting project, and went on to place sixth in Europe with 10,174 votes. It is a short walk up from the San Roque neighbourhood.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Colindres?",
+      "a": "The Encina de San Roque, a holm oak 3.70 metres round at chest height, standing on Monte de La Redonda beside the Ermita de San Roque."
+    },
+    {
+      "q": "How old is the Encina de San Roque?",
+      "a": "Roughly 400 years. It appears on a map of the region drawn in 1778, and had already survived 18th-century shipyard felling by then."
+    },
+    {
+      "q": "Can you visit the Encina de San Roque?",
+      "a": "Yes, free. It stands in open woodland beside the public Ermita de San Roque, a normal community open-air spot with no fence or restriction."
+    },
+    {
+      "q": "How do you get to Colindres?",
+      "a": "By road or local bus from Santander (roughly 45 km) or Laredo. The oak is a short walk up from the town's San Roque neighbourhood."
+    }
+  ],
+  "hero_tree_id": "cld_001",
+  "oldest_tree_id": "cld_001",
+  "trees": [
+    {
+      "id": "cld_001",
+      "name": "The Encina de San Roque (the Spanish Oak of San Roque)",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "age_basis": "source",
+      "girth_cm": 370,
+      "location": {
+        "address": "Monte de La Redonda, beside the Ermita de San Roque, Barrio San Roque, Colindres, Cantabria, Spain",
+        "latitude": 43.383099,
+        "longitude": -3.438213,
+        "neighbourhood": "Barrio San Roque, Colindres"
+      },
+      "story": "This holm oak is on a map drawn in 1778. By then it had already come through the felling that stripped the region's woods to feed the eighteenth-century galleon shipyards.\n\nIt stands on Monte de La Redonda beside the Ermita de San Roque, above Colindres, looking over what was once the Camino Real, the medieval salt route, and the 1778 map is a map of that road. Roughly 400 years old and sixteen metres tall, it is 3.70 metres round at chest height and 4.40 metres at the base, where the trunk meets the hill. The clean stem runs a little over three metres before the crown begins.\n\nWhy it was spared when the shipyards were taking timber, nobody records. What is recorded is what the town does with it now. The hillside hosts a World Environment Day gathering, and every August a countryside festival fills the ground around the chapel.\n\nIn 2023 it beat fifteen other candidates to become Spain's Tree of the Year, backed by the town's Green Corridor tree-planting project, and went on to place sixth in Europe with 10,174 votes.\n\nIt is a short walk up from the San Roque neighbourhood. Holm oaks stay green all year, so any month will do.",
+      "how_to_recognise": "You can recognise it by the evergreen holm oak crown on a trunk 3.70 metres round at chest height, flaring to 4.40 at the base. It stands on Monte de La Redonda right beside the Ermita de San Roque.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2023/spanish-oak-of-san-roque",
+        "https://www.xn--arbolybosquedelao-uxb.es/encina-del-monte-de-la-redonda-colindres/",
+        "https://elasombrario.publico.es/encina-san-roque-cantabria-arbol-del-ano-2023/"
+      ],
+      "access": "Free, in open woodland on Monte de La Redonda beside the public Ermita de San Roque; the site hosts a World Environment Day gathering and a popular countryside festival ('fiesta campestre') each August, so it is a normal community open-air spot, not fenced or restricted.",
+      "transport": "Colindres is a small town on the Cantabrian coast near Laredo; the oak is a short walk from the town's San Roque neighbourhood, reached by road/local bus from Santander (roughly 45km) or Laredo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

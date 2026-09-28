@@ -1,0 +1,66 @@
+{
+  "city": "Jērcēni",
+  "country": "Latvia",
+  "status": "needs_curation",
+  "intro": "Jērcēni is a rural parish in Valmiera municipality, and its tree stands beside a farmstead outside the village. The Kaņepju Oak has a lightning-split trunk more than nine metres round, hollow enough that eight people are said to fit inside, and visitors have carved their names into it since at least 1886. Its age is disputed between 450 and 800 years, though a ring study suggests closer to 825. Latvia lists it as an archaeological cult site, and in 1933 a national competition named it the mightiest oak in the country.",
+  "meta_description": "The Kaņepju Oak, Jērcēni, Latvia: a lightning-split oak over 9 metres round, one of the Baltic's largest, listed as a cult site. Free to visit.",
+  "question_meta": "Jērcēni's remarkable tree is the Kaņepju Oak, over 9 metres round, one of the largest in the Baltic states.",
+  "question_answer": "Jērcēni's notable tree is the Kaņepju Oak, standing beside the Kaņepju farmstead about 1.5 km northeast of the village, Valmiera municipality, Latvia.",
+  "question_context": "The hollow inside this oak is said to hold eight people. A lightning strike, reportedly in the 19th century, split the trunk and left a hollow with three openings, and visitors have carved their names into it since at least 1886. The trunk is more than nine metres round, between 9.2 and 9.4 depending on who held the tape, the second-thickest ancient oak in Latvia and the Baltic states, sixteen or seventeen metres tall with a crown about nineteen metres across. How old it is depends on whom you ask: the figure most often quoted runs from 450 to 800 years, while a dendrochronological study by S. Salins dated it to around 1200, which would make it roughly 825; both numbers circulate and nobody has settled it. Latvia lists the oak as an archaeological cult site, believed sacred before Christianity reached these fields, and in 1933 a competition named it the mightiest oak in the country. The farmstead beside it is private, but the oak is signposted as a sightseeing object and the approach to it is open to anyone.",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Jērcēni?",
+      "a": "The Kaņepju Oak, a lightning-split pedunculate oak more than nine metres round, one of the largest ancient oaks in the Baltic states."
+    },
+    {
+      "q": "How old is the Kaņepju Oak?",
+      "a": "Disputed: most sources say 450 to 800 years, while a ring study puts it closer to 825. Nobody has settled which figure is right."
+    },
+    {
+      "q": "Can you visit the Kaņepju Oak?",
+      "a": "Yes, free. It stands beside a private farmstead, but the oak itself is signposted as a public sightseeing object and the approach is open."
+    },
+    {
+      "q": "How do you get to Jērcēni?",
+      "a": "By road; there is no rail. The oak is about 1.5 km from Jērcēni village and roughly 25 km from Valmiera."
+    }
+  ],
+  "hero_tree_id": "jrc_001",
+  "oldest_tree_id": "jrc_001",
+  "trees": [
+    {
+      "id": "jrc_001",
+      "name": "The Kaņepju Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "450 to 800 years",
+      "age_min": 450,
+      "age_max": 825,
+      "age_basis": "source",
+      "girth_cm": 940,
+      "location": {
+        "address": "Beside the Kaņepju farmstead, roughly 1.2-1.8km northeast of Jērcēni village centre, Jērcēnu parish, Valmiera municipality, Latvia",
+        "latitude": 57.70139,
+        "longitude": 25.66167,
+        "neighbourhood": "Jērcēnu parish"
+      },
+      "story": "The hollow inside this oak is said to hold eight people. A lightning strike, reportedly in the nineteenth century, split the trunk and left a hollow with three openings, and visitors have been carving their names into it since at least 1886.\n\nThe trunk is more than nine metres round, between 9.2 and 9.4 depending on who held the tape, which makes it the second-thickest ancient oak in Latvia and in the Baltic states. It is sixteen or seventeen metres tall, with a crown about nineteen metres across, and it stands beside the Kaņepju farmstead outside the village of Jērcēni.\n\nHow old it is depends on whom you ask. The figure most often quoted is anywhere from 450 to 800 years. A dendrochronological study by S. Salins went further and dated it to around 1200, the years when Bishop Albert was pushing into Livonia, which would make it roughly 825. Both numbers are in circulation and nobody has settled it.\n\nThe state settled something else. Latvia lists the oak on its register of archaeological monuments as a cult site, a tree believed to have been sacred before Christianity reached these fields. Latvians had already crowned it once: in 1933 a competition run by a leading Latvian publication named it the mightiest oak in the country.\n\nThe farmstead beside it is private. The oak is signposted as a sightseeing object, and the approach to it is open to anyone.",
+      "how_to_recognise": "You can recognise it by the lightning-split trunk, over nine metres round, with a walk-in hollow opening in three places. It stands beside the Kaņepju farmstead, about 1.5 km northeast of Jērcēni.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2024/kanepju-oak",
+        "https://lv.wikipedia.org/wiki/Ka%C5%86epju_di%C5%BEozols",
+        "http://www.viss.lv/?p=157210"
+      ],
+      "access": "Free, a signposted 'turisma apskates objekts' (tourism sightseeing object); stands beside a private farmstead but the tree itself and its approach are treated as a public heritage site, not part of the private yard.",
+      "transport": "Rural Jērcēnu parish, no rail; reached by road, roughly 1.5km from Jērcēni village and about 25km from Valmiera.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
