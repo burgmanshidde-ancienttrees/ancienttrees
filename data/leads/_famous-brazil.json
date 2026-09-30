@@ -142,11 +142,12 @@
         "https://commons.wikimedia.org/wiki/File:Figueira_das_L%C3%A1grimas.jpg",
         "https://commons.wikimedia.org/wiki/File:Figueira_das_L%C3%A1grimas_2026.png"
       ],
-      "status": "delivered",
+      "status": "published",
       "species": "Fig (Ficus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "duplicate_note": "2026-09-30 writing pass: fdl_001 was NOT merged. This tree is already live as spa_001 in data/cities/sao-paulo.json (Figueira das Lagrimas, Ficus organensis, confirmed pin -23.60604,-46.59858, which matches pt.wikipedia's own coordinate -23.60611,-46.59861). fdl_001's street-level pin sat about 3 km south of that and would have been worse. Its one new fact worth carrying into spa_001 later is the 2020 Praça Figueira das Lágrimas and the 2022 sapling planted downtown (prefeitura.sp.gov.br).",
       "note": "DELIVERED 2026-09-28: tombada (protected) by CONPRESP, São Paulo's municipal heritage council, in 2016; over 250 years old per botanists/historical documents (already mature by 1862); historic farewell site including for Paraguayan War soldiers and Largo São Francisco law students. Location is street-level (approximate), no dedicated coordinate found for the 2020 plaza around it. See data/research/famous-czech-brazil-batch1-verified.json (id fdl_001).",
-      "mapped_as": "fdl_001"
+      "mapped_as": "spa_001"
     },
     {
       "name": "Old trees in Brazil",
