@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-30 night run (4): Austria famous leads, one place opened
+
+- **Visits, 7 days:** 2,790 visits, 3,260 views.
+- **Refill:** nothing writable, so a verify pass on `_famous-austria` confirmed one tree (Hochneukirchen lime, register-only, flagged) and blocked two dead ones (Breite Foehre, Karlstetten). The write pass published it as its own place, Hochneukirchen-Gschaidt. Preflight 0 problems; site build not run.
+- **Stopped at:** the other Austrian leads lack a register entry or open access (school grounds, farm). Stale research files could not be deleted (rm refused). The tree name still carries the register code and could be shortened.
+
 ## 2026-09-30 night run (3): Deploy fix, Houston deepened to eight
 
 - **Visits, 7 days:** 2,780 visits, 3,250 views.
