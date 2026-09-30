@@ -1,0 +1,62 @@
+{
+  "city": "Järvselja",
+  "country": "Estonia",
+  "status": "needs_curation",
+  "intro": "Beside a forest road in Järvselja, south-east of Tartu, stands the Kuningamänd, the King's Pine: a Scots pine more than 33 metres tall and about 380 years old, billed as Estonia's largest tree by volume. It has been protected since 1958, grows in the Estonian University of Life Sciences' training forest, and was Estonia's entry to European Tree of the Year 2022. It can be seen from the road.",
+  "meta_description": "The King's Pine at Järvselja, Estonia: a Scots pine over 33 m tall and about 380 years old, billed as Estonia's largest tree by volume.",
+  "question_meta": "Järvselja's remarkable tree is the Kuningamänd, the King's Pine, a Scots pine of about 380 years and Estonia's largest tree by volume.",
+  "question_answer": "Järvselja's remarkable tree is the Kuningamänd, or King's Pine, a Scots pine more than 33 metres tall and about 380 years old, billed as the largest tree in Estonia by volume. It stands beside the Liispõllu-Järvselja-Aravu road inside the Järvselja protected area.",
+  "question_context": "The King's Pine has been a protected natural object since 6 August 1958 and carries its own entry in Estonia's environmental register. Its measurements vary a little by source: more than 33 metres tall, a crown about 23 metres across, and a girth at chest height given as 3.25 or 3.4 metres, with a timber volume of 11 to 13 cubic metres. Those numbers are why it is called the country's largest tree by volume rather than its thickest: a pine puts its bulk into height. The Estonian University of Life Sciences, whose training forest this is, gave its age as about 380 years in 2021, an estimate rather than a ring count. If that estimate holds, the pine took root around the 1640s, when Tartu's university was newly founded under Swedish rule. It was Estonia's entry to European Tree of the Year 2022 and finished 13th. It stands beside the public road and is visible from it; the forest around it is a protection zone, so check the reserve's rules before walking in closer.",
+  "hero_tree_id": "kmd_001",
+  "oldest_tree_id": "kmd_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Järvselja?",
+      "a": "The Kuningamänd, or King's Pine, a Scots pine more than 33 metres tall and about 380 years old, billed as Estonia's largest tree by volume."
+    },
+    {
+      "q": "How old is the King's Pine?",
+      "a": "About 380 years, according to the Estonian University of Life Sciences in 2021. It is an estimate, not a ring count."
+    },
+    {
+      "q": "Can I visit it?",
+      "a": "It stands beside a public forest road inside the Järvselja protected area and can be seen from the road. Check the reserve's rules before leaving the road."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kmd_001",
+      "name": "Kuningamänd (the King's Pine)",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "age_estimate": "about 380 years",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": 340,
+      "location": {
+        "address": "Beside the Liispõllu-Järvselja-Aravu road, Järvselja protection zone, Kastre Parish, Tartu County, Estonia",
+        "latitude": 58.2725,
+        "longitude": 27.32194,
+        "neighbourhood": "Järvselja"
+      },
+      "story": "Estonia's largest tree by volume is not an oak or a lime. It is a pine, more than 33 metres tall, standing beside a forest road south-east of Tartu, and people call it the King's Pine.\n\nThe Kuningamänd grows in Järvselja, the training forest of the Estonian University of Life Sciences. Its trunk is only 3.25 to 3.4 metres round, depending on which source measured it, which would be ordinary for an old oak. The size is in the height. A crown some 23 metres across sits on top, and the whole tree holds 11 to 13 cubic metres of timber.\n\nThe university gave its age as about 380 years in 2021. That is an estimate rather than a ring count, but if it holds, the pine was a seedling when Tartu's university was newly founded under Swedish rule, and it has stood through every change of flag since.\n\nIt has been protected since 6 August 1958 and has its own entry in the national environmental register, which is more than most forest pines get. In 2022 it represented Estonia in European Tree of the Year and finished 13th.\n\nThe tree is a single pine by the road, so it is easy to find. Leaving the road is another matter: the forest is a protected area, so check the reserve's rules before you walk in closer.",
+      "how_to_recognise": "You can recognise it by its height, more than 33 metres, on a trunk about 3.4 metres round. It stands right beside the Liispõllu-Järvselja-Aravu road, a single pine.",
+      "verified_sources": [
+        "https://et.wikipedia.org/wiki/Kuningam%C3%A4nd",
+        "https://www.emu.ee/et/ylikoolist/uudised/pressiteated/uudis/2021/10/27/380-aastane-kuningamand-kandideerib-euroopa-aasta-puu-konkursil/",
+        "https://looduskalender.ee/n/node/6352",
+        "https://www.treeoftheyear.org/"
+      ],
+      "access": "Free to see: it stands beside a public forest road inside the Järvselja nature protection area and is visible from the road. Check the reserve's visitor rules before leaving the road.",
+      "transport": "Järvselja, Kastre Parish, Tartu County, beside the Liispõllu-Järvselja-Aravu road; reached by road from Tartu.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
