@@ -1096,7 +1096,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -8296,7 +8296,7 @@
     "brief_wrong": false
    },
    {
-    "target": "_famous-france refill, batch Forest (Senonches/Réno-Valdieu)",
+    "target": "_famous-france refill, batch Forest (Senonches/R\u00e9no-Valdieu)",
     "kind": "verify",
     "tokens": 95000,
     "trees": 0,
@@ -8309,7 +8309,7 @@
     "kind": "verify",
     "tokens": 61000,
     "trees": 1,
-    "note": "4 candidates: Platane de Branféré verified, 1 blocked (not a living tree), 2 leads",
+    "note": "4 candidates: Platane de Branf\u00e9r\u00e9 verified, 1 blocked (not a living tree), 2 leads",
     "wasted": 0,
     "brief_wrong": false
    },
@@ -8327,7 +8327,7 @@
     "kind": "verify",
     "tokens": 175000,
     "trees": 2,
-    "note": "3 candidates: Ramolleux and Tronjoly verified, Chêne des Partisans blocked (fell 1926)",
+    "note": "3 candidates: Ramolleux and Tronjoly verified, Ch\u00eane des Partisans blocked (fell 1926)",
     "wasted": 0,
     "brief_wrong": false
    },
@@ -8910,7 +8910,7 @@
    "kind": "verify",
    "tokens": 50000,
    "trees": 2,
-   "note": "Verified Hrádecký dub and Buk u rybníčku (second sources found); Českolipský buk lesní and Buk v Jindřichovickém zámeckém parku still one source short, left as leads with resolved village-match questions and a noted 3-tree cluster at the Jindřichovice chateau park"
+   "note": "Verified Hr\u00e1deck\u00fd dub and Buk u rybn\u00ed\u010dku (second sources found); \u010ceskolipsk\u00fd buk lesn\u00ed and Buk v Jind\u0159ichovick\u00e9m z\u00e1meck\u00e9m parku still one source short, left as leads with resolved village-match questions and a noted 3-tree cluster at the Jind\u0159ichovice chateau park"
   },
   {
    "target": "los-angeles (4 candidates)",
@@ -9096,7 +9096,7 @@
    "kind": "verify",
    "tokens": 179831,
    "trees": 7,
-   "note": "7 verified (Saint-Jammes Beech France, Old Mulberry Bulgaria, Encina de San Roque Spain, Millennium Oak Ukraine, Kaņepju Oak Latvia, Pálffy Oak Slovakia, Oak of Prince Ulrich Czechia). 1 blocked on access: Plane Tree of Varna, Bulgaria, on private Galatex factory grounds, a source stating access is restricted. Checked and confirmed the Pálffy Oak is outside Bratislava day-trip boundary (37-38km/44-48min), ships as its own place."
+   "note": "7 verified (Saint-Jammes Beech France, Old Mulberry Bulgaria, Encina de San Roque Spain, Millennium Oak Ukraine, Ka\u0146epju Oak Latvia, P\u00e1lffy Oak Slovakia, Oak of Prince Ulrich Czechia). 1 blocked on access: Plane Tree of Varna, Bulgaria, on private Galatex factory grounds, a source stating access is restricted. Checked and confirmed the P\u00e1lffy Oak is outside Bratislava day-trip boundary (37-38km/44-48min), ships as its own place."
   },
   {
    "target": "_tree-of-the-year (7 trees, batch 3)",
@@ -9104,6 +9104,24 @@
    "tokens": 131618,
    "trees": 7,
    "note": "7 stories written and merged as 7 new single-tree places (soreze, veliki-preslav, colindres, veryn, jerceni, malacky, peruc). Prince Ulrich oak story states the successor-tree dispute honestly rather than picking a side. Old Mulberry has no girth/height on record, stated as an honest gap. Expanded 2 question_context fields to hit the 150-200 word Contract B range."
+  }
+ ],
+ "2026-09-30": [
+  {
+   "target": "famous-czech-brazil-batch1",
+   "kind": "write",
+   "tokens": 155777,
+   "trees": 5,
+   "note": "5 single-tree places (Ceska Lipa, Mokrice, Nisia Floresta, Maxaranguape, Guaiba); fdl_001 held as duplicate of live spa_001, pins ~3 km apart",
+   "wasted": 0,
+   "brief_wrong": true
+  },
+  {
+   "target": "5 reader sightings",
+   "kind": "session",
+   "tokens": 0,
+   "trees": 0,
+   "note": "judged as leads via judgement.py, photos not viewed"
   }
  ]
 }
