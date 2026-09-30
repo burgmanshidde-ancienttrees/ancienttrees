@@ -1,0 +1,74 @@
+{
+  "city": "Daruvar",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "In front of the Janković Palace in Daruvar stands a male ginkgo more than seven metres round, billed as the largest and oldest in Croatia, with a younger female ginkgo beside it. Locals call the pair Adam and Eve. Planted by tradition around 1777 to 1780, when the palace was built, Adam was Croatia's Tree of the Year in 2019 and came second in Europe in 2020. The palace park is free and in the town centre.",
+  "meta_description": "Adam, the Daruvar ginkgo, is Croatia's largest, over 7 m round, planted by tradition around 1780. Second in European Tree of the Year 2020. Free.",
+  "question_meta": "Daruvar's remarkable tree is Adam, a ginkgo more than seven metres round in the palace park, second in European Tree of the Year 2020.",
+  "question_answer": "Daruvar's remarkable tree is Adam, a male ginkgo in the palace park in front of the Janković Palace, more than seven metres round and billed as the largest and oldest ginkgo in Croatia. By tradition it was planted around 1777 to 1780, when the palace was built, which makes it about 250 years old.",
+  "question_context": "The ginkgo has been protected since 4 October 1967 as a monument of park architecture, an individual tree listed by the Bjelovar-Bilogora County nature protection body. Its age rests on tradition rather than a record: the county gives about 1777, the tourist board about 1780, and the Croatian press says plainly that no exact data exist. Beside it grows a younger female ginkgo, and together the two are known locally as Adam and Eve; the protected tree, Adam, is the male. The pair entered Croatia's Tree of the Year contest in 2019 as the Ginkgo in Love and won, and in 2020 Adam came second in the European contest with 28,060 votes. Its girth is given as more than seven metres. In autumn both trees turn gold. The park is the palace's own garden in the centre of town, and visitors are encouraged to walk it. Our pin is approximate, so look for the pair in front of the palace's southern entrance rather than at the exact dot on the map.",
+  "hero_tree_id": "dgk_001",
+  "oldest_tree_id": "dgk_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Daruvar?",
+      "a": "Adam, a male ginkgo in the palace park in front of the Janković Palace, more than seven metres round, second in European Tree of the Year 2020."
+    },
+    {
+      "q": "How old is the Daruvar ginkgo?",
+      "a": "About 250 years, by the tradition that it was planted around 1777 to 1780 when the palace was built. No exact planting record survives."
+    },
+    {
+      "q": "Which of the two ginkgos is Adam?",
+      "a": "The larger, older male tree, the one protected as a monument since 1967. The younger ginkgo beside it is the female, Eve."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The palace park is in the town centre and open to visitors."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dgk_001",
+      "name": "Adam, the Daruvar Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 250 years",
+      "age_min": 240,
+      "age_max": 260,
+      "girth_cm": 700,
+      "location": {
+        "address": "Palace park (Dvorski perivoj), in front of the southern entrance of the Janković Palace, Daruvar, Bjelovar-Bilogora County, Croatia",
+        "latitude": 45.595419,
+        "longitude": 17.219769,
+        "neighbourhood": "Dvorski perivoj"
+      },
+      "story": "Croatia's biggest ginkgo has a partner. The protected tree in front of the Janković Palace in Daruvar is a male, and the younger ginkgo beside it is a female, so the town calls them Adam and Eve.\n\nAdam is the one that counts. The county nature protection body has listed it since 4 October 1967 as a monument of park architecture, and it is billed as the largest and oldest ginkgo in Croatia, with a trunk more than seven metres round.\n\nIts age rests on tradition. The ginkgo is said to have gone in when the palace was built: around 1777 by the county's account, around 1780 by the tourist board's. The Croatian press notes that no exact record survives, so about 250 years is the fair way to put it. If the tradition holds, the tree and the palace behind it are the same age, and have stood facing each other the whole time.\n\nIn 2019 the pair were entered in Croatia's Tree of the Year as the Ginkgo in Love, and won. A year later Adam came second in Europe with 28,060 votes.\n\nCome in autumn. Both trees turn gold, and a ginkgo drops its leaves almost all at once.",
+      "how_to_recognise": "You can recognise it by the trunk, more than seven metres round, and by the younger ginkgo growing beside it. It stands in front of the palace's southern entrance; Adam is the bigger, older male of the pair.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the ginkgo turns gold"
+      },
+      "verified_sources": [
+        "https://www.zastita-prirode-bbz.hr/podrucja/stablo-ginka-daruvar/",
+        "https://www.visitdaruvar.hr/otkrij/atrakcije/ginkgo-biloba.html",
+        "https://www.ekovjesnik.hr/clanak/2257/zaljubljeni-ginko-iz-daruvara-je-hrvatsko-stablo-2019-godine",
+        "https://www.treeoftheyear.org/"
+      ],
+      "access": "Free; in the palace park in the town centre, which visitors are encouraged to tour.",
+      "transport": "Town centre of Daruvar; on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    }
+  ]
+}
