@@ -65,6 +65,38 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "paid_entry": true
+    },
+    {
+      "id": "alh_002",
+      "name": "Alishan No. 28 Giant Tree (28號巨木)",
+      "species": "Taiwan Red Cypress (Chamaecyparis formosensis)",
+      "age_estimate": "roughly 1,100 years",
+      "age_min": 1087,
+      "age_max": 1103,
+      "girth_cm": 1470,
+      "location": {
+        "address": "Alishan National Forest Recreation Area, compartment 2, in the forest below Shouzhen Temple (受鎮宮), Alishan Township, Chiayi County",
+        "latitude": 23.5191726,
+        "longitude": 120.8097294,
+        "neighbourhood": "Alishan Forest Recreation Area"
+      },
+      "story": "For most of a century this cypress was overlooked in favour of a neighbour that the newest dating makes about five centuries younger. No. 28 has been known since Japanese rule, yet it was passed over because the better-known Sianglin cypress stands a few hundred metres away. Today it is one of Alishan's official New Eight Sights, reached by footpath and boardwalk to a viewing platform in the forest below Shouzhen Temple.\n\nLike many of the giants here, it is a merged tree: several red cypress stems grown into one mass. The official figure, from the Forestry Bureau's survey, dates its largest trunk to between 1,087 and 1,103 years. That puts it in rare company. When National Chiayi University cored 43 of Alishan's red cypresses in 2022, most came out under 800 years, far younger than the legends attached to them, so a thousand-year trunk is the exception on this mountain rather than the rule.\n\nThe measurements depend on who held the tape. Chinese Wikipedia gives 14.7 metres round the fused mass at chest height; the park's own page gives a diameter of 4 metres, which works out nearer 12.6. The park puts its height at 45 metres.\n\nOne naming trap: an article on Alishan's giants also gives No. 28 the Sianglin name, which belongs to the elected cypress by Ciyun Temple, dated in 2022 at about 626 years. They are two different trees, and this is the older one.",
+      "verified_sources": [
+        "https://www.ali-nsa.net/zh-tw/attractions/detail/170",
+        "https://zh.wikipedia.org/wiki/阿里山神木群"
+      ],
+      "access": "Inside the Alishan National Forest Recreation Area, which charges a park entry ticket (amount not verified). Reached by footpath and boardwalk with a viewing platform; the official page lists it open 24 hours.",
+      "transport": "Within the Alishan recreation area, on foot from Shouzhen Temple. Alishan is reached by bus or forest railway from Chiayi (not checked in detail).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the giant at the viewing platform in the forest below Shouzhen Temple. It is not the Sianglin Sacred Tree by Ciyun Temple, which one source confusingly gives the same name.",
+      "paid_entry": true
     }
   ]
 }

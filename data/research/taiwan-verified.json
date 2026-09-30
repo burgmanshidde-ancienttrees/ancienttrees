@@ -1,0 +1,63 @@
+[
+  {
+    "id": "lul_001",
+    "name": "Lulin Sacred Tree (鹿林神木)",
+    "species": "Taiwan Red Cypress (Chamaecyparis formosensis)",
+    "age_estimate": "roughly 2,800 years",
+    "age_min": 2000,
+    "age_max": 2800,
+    "girth_cm": 2000,
+    "location": {
+      "address": "Below Provincial Highway 18 (Alishan Highway) at the 102 km marker, Xinyi Township, Nantou County; NTU Experimental Forest compartment 31",
+      "latitude": 23.4818589,
+      "longitude": 120.8554974,
+      "neighbourhood": "Lulin Mountain, Xinyi, Nantou"
+    },
+    "verified_sources": [
+      "https://zh.wikipedia.org/wiki/鹿林神木",
+      "https://hiking.biji.co/index.php?act=detail&id=1458&q=trail",
+      "OSM node 5311418421 (Nominatim search 鹿林神木)"
+    ],
+    "access": "Free. Short public boardwalk and stair trail (about 0.2 km one way, about 15 minutes return) down from Highway 18; no mountain or park permit required per hiking.biji.co. Stairs are steep and can be slippery.",
+    "transport": "Road only: on Highway 18 between Alishan and Tataka, at the 102 km marker. Public transport not checked; drive or taxi.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "Taiwan's second-largest tree stood about 40 metres from a highway for years, and the people driving past saw only the top of it. The Lulin Sacred Tree grows below a cliff at the 102 kilometre marker of the Alishan Highway, so from the road its crown reads as one more treetop in the forest. It was properly found only when somebody abseiled down the drop and reached the trunk. The stairs and the railing came afterwards.\n\nWhat was down there is a Taiwan red cypress that the Forestry Bureau's figures put at 43 metres tall and 20 metres round at chest height, growing at 2,375 metres above sea level. In the official ranking only the Da'an River tree is larger.\n\nThe same figures give its age as about 2,800 years, and that number deserves a caution. In 2022 National Chiayi University cored red cypresses at nearby Alishan and found many of them far younger than their legends, often because what looked like a single trunk was several stems grown together. Nobody has shown whether that holds here, so read 2,800 as the Bureau's estimate rather than a ring count. The size needs no such caveat.\n\nThe walk is short: about 200 metres of steep boardwalk and stairs down from the road, roughly fifteen minutes there and back, free and with no permit needed. The steps can be slippery, and a tree this well hidden is worth the care.",
+    "how_to_recognise": "You can recognise it by sheer size: one huge red cypress below the road at the 102 km marker of Highway 18. The signboard stands on the left side of the road as you come from Alishan toward Tataka."
+  },
+  {
+    "id": "a28_001",
+    "name": "Alishan No. 28 Giant Tree (28號巨木)",
+    "species": "Taiwan Red Cypress (Chamaecyparis formosensis)",
+    "age_estimate": "roughly 1,100 years",
+    "age_min": 1087,
+    "age_max": 1103,
+    "girth_cm": 1470,
+    "location": {
+      "address": "Alishan National Forest Recreation Area, compartment 2, in the forest below Shouzhen Temple (受鎮宮), Alishan Township, Chiayi County",
+      "latitude": 23.5191726,
+      "longitude": 120.8097294,
+      "neighbourhood": "Alishan Forest Recreation Area"
+    },
+    "verified_sources": [
+      "https://www.ali-nsa.net/zh-tw/attractions/detail/170",
+      "https://zh.wikipedia.org/wiki/阿里山神木群"
+    ],
+    "access": "Inside the Alishan National Forest Recreation Area, which charges a park entry ticket (amount not verified). Reached by footpath and boardwalk with a viewing platform; the official page lists it open 24 hours.",
+    "transport": "Within the Alishan recreation area, on foot from Shouzhen Temple. Alishan is reached by bus or forest railway from Chiayi (not checked in detail).",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "For most of a century this cypress was overlooked in favour of a neighbour that the newest dating makes about five centuries younger. No. 28 has been known since Japanese rule, yet it was passed over because the better-known Sianglin cypress stands a few hundred metres away. Today it is one of Alishan's official New Eight Sights, reached by footpath and boardwalk to a viewing platform in the forest below Shouzhen Temple.\n\nLike many of the giants here, it is a merged tree: several red cypress stems grown into one mass. The official figure, from the Forestry Bureau's survey, dates its largest trunk to between 1,087 and 1,103 years. That puts it in rare company. When National Chiayi University cored 43 of Alishan's red cypresses in 2022, most came out under 800 years, far younger than the legends attached to them, so a thousand-year trunk is the exception on this mountain rather than the rule.\n\nThe measurements depend on who held the tape. Chinese Wikipedia gives 14.7 metres round the fused mass at chest height; the park's own page gives a diameter of 4 metres, which works out nearer 12.6. The park puts its height at 45 metres.\n\nOne naming trap: an article on Alishan's giants also gives No. 28 the Sianglin name, which belongs to the elected cypress by Ciyun Temple, dated in 2022 at about 626 years. They are two different trees, and this is the older one.",
+    "how_to_recognise": "You can recognise it as the giant at the viewing platform in the forest below Shouzhen Temple. It is not the Sianglin Sacred Tree by Ciyun Temple, which one source confusingly gives the same name."
+  },
+  {
+    "id": "_notes",
+    "blocked": [
+      {
+        "name": "Xitou Giant Tree (溪頭神木)",
+        "reason": "Dead. zh.wikipedia (Xitou Nature Education Area) says the hollow 46 m, 16 m-girth red cypress collapsed on 2016-09-11. Commons photos date from 2014. Lead coordinate 23.674263, 120.798281 marks a fallen tree; relic only, not an entry."
+      }
+    ],
+    "notes": "agriharvest.tw returned 429 on WebFetch; Wikidata rate-limited once; Overpass timed out. Search summaries used only as pointers."
+  }
+]

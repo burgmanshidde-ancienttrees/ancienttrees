@@ -1,0 +1,64 @@
+{
+  "city": "Lulin",
+  "country": "Taiwan",
+  "status": "needs_curation",
+  "intro": "The Lulin Sacred Tree is Taiwan's second-largest tree by the official ranking, a red cypress the Forestry Bureau puts at 43 metres tall and 20 metres round, growing below a cliff at the 102 km marker of the Alishan Highway. From the road you see only its crown, which is why it was found late. A short, steep stair trail leads down to it, free and with no permit.",
+  "meta_description": "The Lulin Sacred Tree, Taiwan's second-largest tree: a red cypress 43 metres tall and 20 metres round, a short free stair walk below Highway 18.",
+  "question_meta": "The Lulin Sacred Tree is put at about 2,800 years by the Forestry Bureau, a figure newer coring of nearby cypresses gives reason to doubt.",
+  "question_answer": "The oldest tree at Lulin is the Lulin Sacred Tree, a Taiwan red cypress the Forestry Bureau puts at about 2,800 years old, 43 metres tall and 20 metres round. That age is an estimate rather than a ring count, and a 2022 coring study of red cypresses at nearby Alishan found many of them far younger than their legends. It stands below Highway 18 at the 102 km marker, a short free walk down from the road.",
+  "question_context": "The tree grows at 2,375 metres, about 40 metres below the edge of the Alishan Highway, on a slope steep enough that drivers passing above saw only the top of its crown. It came to attention when somebody abseiled down to the trunk, and a stair trail with a railing was built afterwards. In the official ranking of Taiwan's giant trees only the Da'an River tree is larger. The age deserves a caution the size does not. When National Chiayi University cored red cypresses at Alishan in 2022, many turned out far younger than the ages long quoted for them, often because what looked like one trunk was several stems grown together. Nobody has shown whether that holds for the Lulin tree, so its 2,800 years is best read as the Bureau's figure rather than a measurement. The trail is about 200 metres each way, steep and sometimes slippery, and takes around fifteen minutes there and back.",
+  "hero_tree_id": "lul_001",
+  "oldest_tree_id": "lul_001",
+  "faq": [
+    {
+      "q": "How old is the Lulin Sacred Tree?",
+      "a": "The Forestry Bureau's figure is about 2,800 years. It is an estimate rather than a ring count, and a 2022 coring study of red cypresses at nearby Alishan found many of them far younger than their quoted ages, so the true figure may be lower."
+    },
+    {
+      "q": "How big is it?",
+      "a": "By the Forestry Bureau's figures it is 43 metres tall and 20 metres round at chest height, which ranks it second in Taiwan after the Da'an River tree."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. A public boardwalk and stair trail of about 200 metres leads down from Highway 18, with no mountain or park permit needed. The stairs are steep and can be slippery, and mountain roads here can close after typhoons or landslides, so check conditions before you set out."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By road, on Provincial Highway 18 between Alishan and Tataka, at the 102 km marker, where a signboard stands on the left coming from Alishan. Drive or take a taxi; the trail starts at the roadside."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lul_001",
+      "name": "Lulin Sacred Tree (鹿林神木)",
+      "species": "Taiwan Red Cypress (Chamaecyparis formosensis)",
+      "age_estimate": "roughly 2,800 years",
+      "age_min": 2000,
+      "age_max": 2800,
+      "girth_cm": 2000,
+      "location": {
+        "address": "Below Provincial Highway 18 (Alishan Highway) at the 102 km marker, Xinyi Township, Nantou County; NTU Experimental Forest compartment 31",
+        "latitude": 23.4818589,
+        "longitude": 120.8554974,
+        "neighbourhood": "Lulin Mountain, Xinyi, Nantou"
+      },
+      "story": "Taiwan's second-largest tree stood about 40 metres from a highway for years, and the people driving past saw only the top of it. The Lulin Sacred Tree grows below a cliff at the 102 kilometre marker of the Alishan Highway, so from the road its crown reads as one more treetop in the forest. It was properly found only when somebody abseiled down the drop and reached the trunk. The stairs and the railing came afterwards.\n\nWhat was down there is a Taiwan red cypress that the Forestry Bureau's figures put at 43 metres tall and 20 metres round at chest height, growing at 2,375 metres above sea level. In the official ranking only the Da'an River tree is larger.\n\nThe same figures give its age as about 2,800 years, and that number deserves a caution. In 2022 National Chiayi University cored red cypresses at nearby Alishan and found many of them far younger than their legends, often because what looked like a single trunk was several stems grown together. Nobody has shown whether that holds here, so read 2,800 as the Bureau's estimate rather than a ring count. The size needs no such caveat.\n\nThe walk is short: about 200 metres of steep boardwalk and stairs down from the road, roughly fifteen minutes there and back, free and with no permit needed. The steps can be slippery, and a tree this well hidden is worth the care.",
+      "verified_sources": [
+        "https://zh.wikipedia.org/wiki/鹿林神木",
+        "https://hiking.biji.co/index.php?act=detail&id=1458&q=trail",
+        "OSM node 5311418421 (Nominatim search 鹿林神木)"
+      ],
+      "access": "Free. Short public boardwalk and stair trail (about 0.2 km one way, about 15 minutes return) down from Highway 18; no mountain or park permit required per hiking.biji.co. Stairs are steep and can be slippery.",
+      "transport": "Road only: on Highway 18 between Alishan and Tataka, at the 102 km marker. Public transport not checked; drive or taxi.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by sheer size: one huge red cypress below the road at the 102 km marker of Highway 18. The signboard stands on the left side of the road as you come from Alishan toward Tataka."
+    }
+  ]
+}
