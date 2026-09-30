@@ -1,84 +1,6 @@
 [
  {
-  "id": "vna_001",
-  "name": "Viiralti Oak (Tamme-Koori Oak)",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "300 to 400 years",
-  "age_min": 300,
-  "age_max": 400,
-  "girth_cm": 488,
-  "location": {
-   "address": "Tamme farm, Vana-Võidu village, Viljandi Parish, Viljandi County, Estonia",
-   "latitude": 58.37089,
-   "longitude": 25.64556,
-   "neighbourhood": "Vana-Võidu"
-  },
-  "verified_sources": [
-   "https://et.wikipedia.org/wiki/Viiralti_tamm",
-   "https://www.looduskalender.ee/n/node/8304",
-   "https://puhkaeestis.ee/et/viiralti-e-tammekoori-tamm",
-   "https://www.treeoftheyear.org/"
-  ],
-  "access": "Stands alone in a meadow beside the Tartu-Viljandi-Kilingi-Nomme road (visible from it, about 160 m away); adjoins Tamme farm land, so approach respectfully. Protected natural monument.",
-  "transport": "Rural site in Viljandi County, by car from the Tartu-Viljandi road; public transport not confirmed.",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "- Name: from Eduard Viiralt's 1943 drypoint 'Viljandi maastik'; older name Tamme-Koori (Goori) oak after 19th-century farmer Grigori of Tamme farm.\n- et.wikipedia: girth 488 cm at 1.3 m, height 13 m, hollow cemented, squat with upright branches, stands mid-meadow, protected natural monument (IUCN III). Wikipedia coordinate 58.37089,25.64556 equals the ETOTY-published GPS.\n- Age 300-400 years is the contest's stated figure (not measured); no independent dendro date seen. Girth 488 cm is consistent with that band for an open-grown oak.\n- Alive: Maaleht 2024-02-10 'Mis juhtus Wiiralti tammega?' reports the tree in good condition today (seen via search snippet only; page not fetched); it was Estonian Tree of the Year 2024 and represented Estonia in European Tree of the Year 2024 (12th). lifecheck: NONE (nothing geotagged), so flagged.\n- Pin: single tree in an open meadow, coordinates identical across Wikipedia and contest; confirmed but not checked on aerial imagery.\n- Estonia otherwise thinly covered on our site."
- },
- {
-  "id": "bat_001",
-  "name": "Bátaszék Downy Oak (St Orbán Hill oak)",
-  "species": "Downy Oak (Quercus pubescens)",
-  "age_estimate": "300 to 400 years",
-  "age_min": 300,
-  "age_max": 400,
-  "girth_cm": 470,
-  "location": {
-   "address": "Orbán-hegy, next to the Szent Orbán Chapel, Bátaszék, Tolna County, Hungary",
-   "latitude": 46.17019,
-   "longitude": 18.7004,
-   "neighbourhood": "Orbán-hegy"
-  },
-  "verified_sources": [
-   "https://www.turistamagazin.hu/hir/bataszeki-molyhos-tolgy-2022-02-25",
-   "https://kirandulastervezo.hu/latnivalo/bataszek/molyhos-tolgy",
-   "https://index.hu/kulfold/ep/2016/04/20/a_bataszeki_molyhos_tolgy_lett_az_ev_europai_faja/",
-   "https://www.treeoftheyear.org/"
-  ],
-  "access": "Free; on the hill beside the Szent Orbán chapel, no access restrictions mentioned by sources (turistamagazin says open to visitors).",
-  "transport": "Bátaszék town, hill on the edge of town; walking route from centre not measured.",
-  "location_precision": "confirmed",
-  "curation_status": "ai_generated",
-  "verify_notes": "- European Tree of the Year 2016 winner with 72,653 votes (record then); Hungarian Tree of the Year 2015 (Index/Magyar Kurir/oee.hu headlines).\n- turistamagazin 2022-03-04: 300-400 years (400 in other outlets: 'about 400'), 17.5 m tall, 4.7 m trunk circumference, hollow oak; tradition: survived Ottoman era and the 1956 Danube flood when residents sheltered and mass was held beside it; on St Orbán's Day (25 May) locals pour wine on the trunk for a good grape harvest; farmers trimmed dead branches and painted stumps against disease.\n- Age is the contest/press figure, not measured; keep as a range.\n- Coordinates: kirandulastervezo 46.170189,18.700399 vs contest 46.170111,18.700267 (about 12 m apart): same tree, next to the chapel.\n- Alive: lifecheck RECENT, iNaturalist observation 2025-04-11 at the spot (https://www.inaturalist.org/observations/271451540); not checked that it is this trunk but only one big oak stands by the chapel per sources.\n- Hungary is not in the well-covered list; Bátaszék is a small town so this is a single-famous-tree place (would somebody travel for it: yes, it won Europe)."
- },
- {
-  "id": "vld_001",
-  "name": "Elku Linden of Valdemārpils (Linden of Sacrifice)",
-  "species": "Small-leaved Lime (Tilia cordata)",
-  "age_estimate": "disputed, 250 to 500 years",
-  "age_min": 250,
-  "age_max": 500,
-  "girth_cm": 865,
-  "location": {
-   "address": "Sasmaka Manor park, edge of Valdemārpils, Talsi Municipality, Latvia",
-   "latitude": 57.37889,
-   "longitude": 22.60033,
-   "neighbourhood": "Sasmaka"
-  },
-  "verified_sources": [
-   "https://www.talsunovads.lv/lv/jaunums/eiropas-gada-koks-latvija-2025-elku-liepa-valdemarpili",
-   "https://www.senvietas.lv/valdemarpils-elku-liepa/",
-   "https://travelblog.lv/lv/valdemarpils-liepa-pati-vecaka-liepa-latvija/",
-   "https://www.treeoftheyear.org/"
-  ],
-  "access": "Free; publicly accessible, at the edge of Valdemārpils in the Sasmaka manor park (Talsi municipality article and senvietas.lv both say open to visitors).",
-  "transport": "Valdemārpils town edge; local bus from Talsi not checked.",
-  "location_precision": "confirmed",
-  "curation_status": "ai_generated",
-  "verify_notes": "- Thickest lime in the Baltics (Talsi municipality, 19 Nov 2025) / 'thickest large linden in Latvia' (senvietas.lv). Latvia's entry to European Tree of the Year 2026 (contest lead lists it as 2026 rank 4).\n- Girth: 8.65 m at 0.3 m height (Talsi 2025); senvietas says 8.60 m. Earlier: 7.95 m in 1995 (Talsi) vs 8.5 m in 1974 (senvietas): the two sources disagree on the growth history; do not repeat either as fact. Height 25 m, crown 320 m2 (Talsi).\n- AGE DISPUTE, deliver both: folklore and senvietas say 400-500 years, a former sacrificial (cult) tree ('Elku' = idols/sacrifice); Talsi 2025 says 2023 measurements at ~3.5 cm/yr give about 247 years, planted about 1770. Do not pick a winner.\n- Hollow trunk interior has wood formations said to resemble owls, hedgehogs, turtles, snakes (senvietas). Lost about a third of the crown in a 1967 storm and a large limb in 2010; parts reinforced with cables and cement (Talsi).\n- Listed in the National Cultural Heritage Register per senvietas.lv (not independently checked). Talsi says no specific legal protection; sources conflict.\n- Coordinates: senvietas 57.37892,22.60024 vs contest 57.378858,22.600442 (within 13 m). Single obvious giant tree.\n- Alive: Talsi article Nov 2025. lifecheck not run."
- },
- {
-  "id": "stu_001",
+  "id": "std_001",
   "name": "Grandpa Kolyo's Oak (Studena)",
   "species": "Pedunculate Oak (Quercus robur)",
   "age_estimate": "about 350 years",
@@ -100,7 +22,11 @@
   "transport": "Svilengrad municipality village; by car from Svilengrad, public transport not checked.",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "- Species: contest entry says English oak (Quercus robur); Bulgarian press calls it 'summer oak' (летен дъб), which is the usual Bulgarian name for Q. robur. Taken from the contest, not independently checked.\n- Bulgaria 'Tree with Roots 2021' winner (737 votes, awarded 1 Feb 2022 per Svilengrad municipality) and Bulgaria's entry to European Tree of the Year 2022 (24,431 votes, 14th).\n- Named for landowner Nikola Dimitrov Angelov ('Grandpa Kolyo'), who rested under it; tradition says it descends from the dense forest that once covered the area; a cross was erected nearby in 2019.\n- Age 350 years is local tradition and the contest figure, not measured. No girth or height found on the municipality page; contest page not fetched.\n- Alive: 2022 municipality and Darik articles; lifecheck NONE (nothing geotagged). Flagged.\n- Pin: only the contest GPS, not cross-checked against a map: approximate.\n- Sources are the municipality and the contest chain (one origin); no independent second source."
+  "verify_notes": "- Species: contest entry says English oak (Quercus robur); Bulgarian press calls it 'summer oak' (летен дъб), which is the usual Bulgarian name for Q. robur. Taken from the contest, not independently checked.\n- Bulgaria 'Tree with Roots 2021' winner (737 votes, awarded 1 Feb 2022 per Svilengrad municipality) and Bulgaria's entry to European Tree of the Year 2022 (24,431 votes, 14th).\n- Named for landowner Nikola Dimitrov Angelov ('Grandpa Kolyo'), who rested under it; tradition says it descends from the dense forest that once covered the area; a cross was erected nearby in 2019.\n- Age 350 years is local tradition and the contest figure, not measured. No girth or height found on the municipality page; contest page not fetched.\n- Alive: 2022 municipality and Darik articles; lifecheck NONE (nothing geotagged). Flagged.\n- Pin: only the contest GPS, not cross-checked against a map: approximate.\n- Sources are the municipality and the contest chain (one origin); no independent second source.",
+  "story": "Grandpa Kolyo used to rest under this oak, and the village of Studena named it after him. He was Nikola Dimitrov Angelov, and the field where it stands, at the entrance to the village on the road from Svilengrad, was his.\n\nLocal tradition gives the tree about 350 years and says it is a survivor of the dense forest that once covered this corner of south-eastern Bulgaria. That is tradition rather than record. The age comes from the village and from the contest entry, and nobody has published a girth or a height. If you have stood beside it with a tape measure, tell us.\n\nIt is visible from the whole village and from the road in. In 2019 a cross was put up nearby. Two years later the oak won Bulgaria's Tree with Roots contest for 2021 with 737 votes, and in 2022 it represented the country in European Tree of the Year, finishing 14th with 24,431 votes.\n\nThe field is private farmland. See the oak from the roadside, which is where the village sees it from too.",
+  "how_to_recognise": "You can recognise it as the lone oak in the field to the right of the road as you enter Studena from Svilengrad, visible from the whole village.",
+  "written": true,
+  "not_merged_reason": "Not merged: no honest container. Single tree on private farmland, view from the road only, but the only pin is the contest GPS of the trunk rather than a roadside viewing point; no girth or height; sources are one origin (municipality plus contest). Does not pass the single-famous-tree test on its own. Publish once a roadside viewing pin and a second independent source exist, or when a Svilengrad/Haskovo place with four trees opens."
  },
  {
   "id": "nsb_001",
@@ -125,135 +51,10 @@
   "transport": "Village near Veliko Tarnovo; distance and bus not checked, treat as a car trip.",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "- Bulgaria 'Tree with Roots 2019' winner (1,073 votes per news.bg, 17 Dec 2019); Bulgaria's entry to European Tree of the Year 2020.\n- Age 'about 500 years' is stated by press (BNR headline '500-year-old oak', 'according to specialists' in a search summary I could not open); news.bg only says it has kept the village's history since its founding in 1750, which is a tension: the tree is claimed older than the village. Do not link the two. No measurement seen; girth and height not found in any source I reached.\n- Fountain detail (five spouts of cold water in front of the oak) and the 2010 planting of a young oak grown from its acorn beside it, so the roots intertwine: from a search summary of BNR/contest text, not a fetched page. Treat as lead until seen.\n- Species from contest entry (Quercus robur); press says only 'oak'.\n- Alive: news.bg Dec 2019 (article says an arborist assessment will follow); Commons photo dated 2019-09-26/2020 at the coordinate (lifecheck OLD). Nothing later found: flagged.\n- Pin: contest GPS only; the site is a village-centre landmark so probably good to a few metres, but not cross-checked."
- },
- {
-  "id": "dgk_001",
-  "name": "Adam, the Daruvar Ginkgo",
-  "species": "Ginkgo (Ginkgo biloba)",
-  "age_estimate": "about 250 years",
-  "age_min": 240,
-  "age_max": 260,
-  "girth_cm": 700,
-  "location": {
-   "address": "Palace park (Dvorski perivoj), in front of the southern entrance of the Janković Palace, Daruvar, Bjelovar-Bilogora County, Croatia",
-   "latitude": 45.595419,
-   "longitude": 17.219769,
-   "neighbourhood": "Dvorski perivoj"
-  },
-  "verified_sources": [
-   "https://www.zastita-prirode-bbz.hr/podrucja/stablo-ginka-daruvar/",
-   "https://www.visitdaruvar.hr/otkrij/atrakcije/ginkgo-biloba.html",
-   "https://www.ekovjesnik.hr/clanak/2257/zaljubljeni-ginko-iz-daruvara-je-hrvatsko-stablo-2019-godine",
-   "https://www.treeoftheyear.org/"
-  ],
-  "access": "Free; in the palace park in the town centre, which visitors are encouraged to tour (visitdaruvar.hr).",
-  "transport": "Town centre of Daruvar; on foot.",
-  "location_precision": "approximate",
-  "curation_status": "ai_generated",
-  "verify_notes": "- Official protection: Bjelovar-Bilogora County nature protection body lists it as a 'monument of park architecture' (spomenik parkovne arhitekture) protected 4 Oct 1967, as an individual tree.\n- Male ginkgo, planted about 1777-1780 when the palace was built (protection page: about 247 years, c.1777; tourist board: both planted about 1780). No exact planting record: 'no exact data' per the Croatian press. Age band here is derived from that planting tradition for this specimen, not a measurement.\n- Girth: 'more than seven metres' (Croatian tourist board text calls it the diameter, which cannot be right for a tree of this age; read as circumference; not measured by us). Height not given. Billed as the largest and oldest ginkgo in Croatia; a search summary adds 'second oldest in Europe', UNVERIFIED, do not repeat.\n- A younger female ginkgo stands beside it; locals call the pair Adam and Eve. The protected one is the male. Say which is which in the page.\n- Croatian Tree of the Year 2019 (Zaljubljeni ginko, 'Ginkgo in Love'); second in European Tree of the Year 2020 with 28,060 votes.\n- Alive: thriving per the tourist board; 2019/2020 press. lifecheck NONE (nothing geotagged within 30 m), so the pin is only the contest GPS. Nominatim reverse puts the contest point inside Dvorski perivoj (Palace Park), on a park road edge, consistent with 'in front of the southern entrance'. Not checked on aerial imagery: approximate.\n- Croatia is thin on our site."
- },
- {
-  "id": "kmd_001",
-  "name": "Kuningamänd (the King's Pine)",
-  "species": "Scots Pine (Pinus sylvestris)",
-  "age_estimate": "about 380 years",
-  "age_min": 350,
-  "age_max": 400,
-  "girth_cm": 340,
-  "location": {
-   "address": "Beside the Liispõllu-Järvselja-Aravu road, Järvselja protection zone, Kastre Parish, Tartu County, Estonia",
-   "latitude": 58.2725,
-   "longitude": 27.32194,
-   "neighbourhood": "Järvselja"
-  },
-  "verified_sources": [
-   "https://et.wikipedia.org/wiki/Kuningam%C3%A4nd",
-   "https://www.emu.ee/et/ylikoolist/uudised/pressiteated/uudis/2021/10/27/380-aastane-kuningamand-kandideerib-euroopa-aasta-puu-konkursil/",
-   "https://looduskalender.ee/n/node/6352",
-   "https://www.treeoftheyear.org/"
-  ],
-  "access": "Stands beside a public forest road inside the Järvselja nature protection area (Estonian University of Life Sciences training forest); exact visitor rules for the reserve not checked, so confirm before writing an access line.",
-  "transport": "Rural forest road in Tartu County; distance from Tartu and public transport not checked.",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "- Protected individual natural object (register code KLO4000596), designated 6 Aug 1958 (et.wikipedia citing the environmental registry). Official register counts as one source.\n- Size (et.wikipedia): over 33 m tall, girth 3.4 m at breast height, crown 23 m wide, volume 11 m3; another source in search results gives 3.25 m and volume up to 13 m3: sources differ, record 3.25-3.4 m. Billed as Estonia's largest tree by volume (press, EMU 2021).\n- Age about 380 years as of 2022 (EMU press release 27 Oct 2021, contest). Not independently measured.\n- Estonia's entry to European Tree of the Year 2022, 13th place.\n- Coordinates: et.wikipedia 58 16 21 N, 27 19 19 E = 58.2725, 27.32194; contest GPS 58.2726, 27.321839: within 10 m. Tree stands beside a road, one obvious pine, so confirmed.\n- Alive: 2021-22 contest coverage; lifecheck NONE at the spot. Flagged (register only plus press)."
- },
- {
-  "id": "kzd_001",
-  "name": "The Green Lady of Krka (Skradinski Buk mulberry)",
-  "species": "White Mulberry (Morus alba)",
-  "age_estimate": "about 400 years",
-  "age_min": 300,
-  "age_max": 400,
-  "girth_cm": 475,
-  "location": {
-   "address": "Right bank of the Krka below the remains of the Budim mill, Skradinski Buk, Krka National Park, Šibenik-Knin County, Croatia",
-   "latitude": 43.807028,
-   "longitude": 15.964692,
-   "neighbourhood": "Skradinski Buk"
-  },
-  "verified_sources": [
-   "https://www.npkrka.hr/hr/newsletter/murva-na-skradinskom-buku-svilena-povijest-skradina/",
-   "https://npkrka.hr/hr/2023/10/13/murva-iz-nacionalnog-parka-krka-hrvatsko-je-stablo-godine-2023/",
-   "https://magazin.hrt.hr/price-iz-hrvatske/cetiristogodisnja-murva-iz-skradina-kandidatkinja-za-stablo-godine-11040595",
-   "https://www.treeoftheyear.org/"
-  ],
-  "access": "Inside Krka National Park at Skradinski Buk, the park's main visitor site: park admission required (ticket price not checked), seasonal boat/road access to the falls not checked.",
-  "transport": "Krka National Park, Skradinski Buk entrance; ferry/road access from Skradin or Lozovac not checked.",
-  "location_precision": "approximate",
-  "curation_status": "ai_generated",
-  "verify_notes": "- Published by the owner/manager of the ground: Javna ustanova Nacionalni park Krka (park newsletter and its 13 Oct 2023 news item). Species Morus alba L., 475 cm circumference at breast height, about 400 years (park newsletter). Height not given.\n- Croatian Tree of the Year 2023 (653 votes); Croatia's entry to European Tree of the Year 2024 ('Green Lady of Krka National Park'; it did not place highly).\n- Story hook: mulberries fed silkworms; the park says Skradin was Dalmatia's largest silkworm-breeding centre in the 1830s: the tree is a symbol of that silk past. The park newsletter locates it on the right bank beneath the remains of the Budim mill.\n- 'Over 800,000 visitors a year' came from a search summary, not a fetched page: do not use.\n- Age 400 years is the park's estimate; a 475 cm girth for a mulberry is compatible with a few hundred years but no basis is given.\n- Alive: park news says thriving (Oct 2023); lifecheck RECENT, iNaturalist observation 2026-09-24 within radius (https://www.inaturalist.org/observations/402975158), not necessarily this trunk.\n- Pin: contest GPS only (about 250 m from the OSM waterfall node), matches the described bank position; not checked on aerial imagery: approximate."
- },
- {
-  "id": "tat_001",
-  "name": "The Great Plane of Tata (Tatai nagy platán)",
-  "species": "Oriental Plane (Platanus orientalis)",
-  "age_estimate": "about 240 years",
-  "age_min": 230,
-  "age_max": 250,
-  "girth_cm": 650,
-  "location": {
-   "address": "Kastély tér (Castle Square), on the shore of Öreg-tó near the southwestern gate of Tata Castle, Tata, Komárom-Esztergom County, Hungary",
-   "latitude": 47.64767,
-   "longitude": 18.318805,
-   "neighbourhood": "Kastély tér"
-  },
-  "verified_sources": [
-   "https://evfaja.hu/fa/2014/tatai-nagy-platan",
-   "https://tata.hu/mindennapok/ertekeink/teremtett-epitett-oroksegunk/platanfa/",
-   "https://www.turistamagazin.hu/hir/a-tatai-nagy-platan",
-   "https://www.treeoftheyear.org/"
-  ],
-  "access": "Free; in a public town square by the lake shore with benches, beside a cafe; open to all.",
-  "transport": "Centre of Tata beside the castle; on foot from the town centre (train/bus to Tata not checked).",
-  "location_precision": "confirmed",
-  "curation_status": "ai_generated",
-  "verify_notes": "- Owner and tree-of-the-year sources agree: Tata town council page and evfaja.hu (Hungarian Tree of the Year 2014) both: Platanus orientalis, 232 years old, 19 m tall, girth 650 cm, GPS 47.64767096, 18.3188049495, Kastély tér by the Platán restaurant-cafe.\n- Age 232 is as stated around 2014-15; that is the age the sources give, add roughly a decade for now. Turistamagazin (29 Mar 2022) says about 240.\n- Species conflict: the ETOTY contest lead says London plane (Platanus acerifolia); the town page and evfaja.hu say Oriental Plane. Two Hungarian sources agree on orientalis, use that and flag.\n- Brought from Versailles by the Esterházy family (about 1794 per town page; 'Ferenc, son of Miklós János Esterházy' per a search summary); stands near the castle's southwestern gate.\n- Damage: a lightning-strike wound filled with concrete which the sources say hurts the tree but cannot be removed without harm (evfaja.hu, tata.hu). Tree inspired author Mátyás Pribojszky's fairy tale 'The Platán King' after his stroke (tata.hu).\n- Hungarian Tree of the Year 2014; 2nd place, European Tree of the Year 2015 (53,487 votes vs winner 59,836).\n- Alive: turistamagazin 2022-03-29 describes it as structurally sound; Kisalföld headline July 2023 'Ápolják az óriásplatánt Tatán' (title only, page 403). lifecheck OLD (2014 Commons photo of it); no recent geotag, so flagged-ish but three-source, low doubt. Left unflagged because two official pages plus a 2022 article.\n- Not to be confused with the separate 'Bridge Plane Tree' (Tata, ETOTY 2023), a fallen plane forming a bridge at Cseke-tó: distinct entry, not verified."
- },
- {
-  "id": "mly_001",
-  "name": "The Judas Tree of Mélykút Church Hill",
-  "species": "Judas Tree (Cercis siliquastrum)",
-  "age_estimate": "about 250 years",
-  "age_min": 230,
-  "age_max": 260,
-  "girth_cm": null,
-  "location": {
-   "address": "Grounds of the Roman Catholic church (Grassalkovich church), church hill, Mélykút, Bács-Kiskun County, Hungary",
-   "latitude": 46.215883,
-   "longitude": 19.379803,
-   "neighbourhood": "Templomdomb"
-  },
-  "verified_sources": [
-   "https://index.hu/belfold/2020/10/15/ev_faja_fa_melykut_judasfa/",
-   "https://qubit.hu/2021/02/01/derekasan-kuzd-az-europai-ev-faja-cimert-a-melykuti-judasfa",
-   "https://www.treeoftheyear.org/"
-  ],
-  "access": "Free; on the publicly accessible church grounds in the town centre (Index 2020; the grounds are a popular resting and play area).",
-  "transport": "Centre of Mélykút; on foot from the town centre. Bus/train link not checked.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "- Hungarian Tree of the Year 2020 (5,091 of a record 20,464 votes, Index 15 Oct 2020); 8th in European Tree of the Year 2021.\n- Age: Index says about 250-260 years, planted in the 1760s-70s, 'probably' brought as seed by Franciscan monks from Szabadka (Subotica) who served in Mélykút: the 'probably' is theirs. Qubit says 250 years. Not measured. No girth or height found.\n- Location: north side of the church built by the Grassalkovich family; the tree is in the geometric centre of the town of about 5,000.\n- Unusual point: a Mediterranean species surviving on the exposed north side of a church in the Great Hungarian Plain, called 'a minor miracle' (Index). Folklore: flowers as Christ's blood, flat pods as Judas's silver.\n- Alive: Index Oct 2020, Qubit Feb 2021, BAON 2021 events under the tree (Jerusalema dance, May 2021, headline only). lifecheck NONE. Flagged: nothing dated after 2021 seen.\n- Pin: contest GPS only, the church is a single obvious object in a small town; approximate until checked on a map.\n- Two press sources, both derived from the contest material: not independent."
+  "verify_notes": "- Bulgaria 'Tree with Roots 2019' winner (1,073 votes per news.bg, 17 Dec 2019); Bulgaria's entry to European Tree of the Year 2020.\n- Age 'about 500 years' is stated by press (BNR headline '500-year-old oak', 'according to specialists' in a search summary I could not open); news.bg only says it has kept the village's history since its founding in 1750, which is a tension: the tree is claimed older than the village. Do not link the two. No measurement seen; girth and height not found in any source I reached.\n- Fountain detail (five spouts of cold water in front of the oak) and the 2010 planting of a young oak grown from its acorn beside it, so the roots intertwine: from a search summary of BNR/contest text, not a fetched page. Treat as lead until seen.\n- Species from contest entry (Quercus robur); press says only 'oak'.\n- Alive: news.bg Dec 2019 (article says an arborist assessment will follow); Commons photo dated 2019-09-26/2020 at the coordinate (lifecheck OLD). Nothing later found: flagged.\n- Pin: contest GPS only; the site is a village-centre landmark so probably good to a few metres, but not cross-checked.",
+  "story": "The village of Novo Selo, near Veliko Tarnovo, dates its founding to 1750. The oak in its centre is said to be about 500 years old, which would make the tree older than the village by a couple of centuries.\n\nThose two numbers do not come from the same place, and it is worth keeping them apart. The founding date is the village's own history. The 500 years comes from Bulgarian press reports citing specialists, and nobody has published a measurement, a ring count, a girth or a height. So the honest version is simpler: a big old oak that the village regards as the keeper of its history since 1750, of an age nobody has settled. If you know more, tell us.\n\nIt stands in the middle of the village, a landmark rather than a secret. In December 2019 it won Bulgaria's Tree with Roots contest with 1,073 votes, and in 2020 it was the country's entry to European Tree of the Year. At the time an arborist's assessment was promised, and we have found no report of it since.\n\nThe contest entry names it as a pedunculate oak; the press says only oak.",
+  "how_to_recognise": "You can recognise it as the big old oak in the centre of Novo Selo, the village's landmark tree, standing in the village centre by a public fountain.",
+  "written": true,
+  "not_merged_reason": "Not merged: no honest container. Single village tree with no measurement, pin from the contest GPS only, latest proof of life 2019/2020, and its most distinctive details (the five-spout fountain, the 2010 acorn-grown oak beside it) come from search summaries not yet seen on a fetched page. Does not pass the single-famous-tree test on its own. Publish if a Veliko Tarnovo place opens (the village is roughly 20 km west) or once a post-2020 life check and a fetched source land."
  }
 ]
