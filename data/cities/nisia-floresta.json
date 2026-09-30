@@ -1,0 +1,66 @@
+{
+  "city": "Nisia Floresta",
+  "country": "Brazil",
+  "status": "needs_curation",
+  "intro": "The baobab in Nísia Floresta's central plaza carries three origin stories. A plaque says a local man, Manoel Júnior, planted it in 1877. Tradition says it grew from seeds an enslaved African carried from home. And the town will tell you Saint-Exupéry saw it from the air and put it in The Little Prince. The town has protected it by law since 1970 and named it municipal environmental heritage in 2007.",
+  "meta_description": "Nísia Floresta's baobab, planted in 1877 by its plaque and tied by legend to The Little Prince. Free, in the central plaza, 45 minutes from Natal.",
+  "question_meta": "Nísia Floresta's baobab was planted in 1877, according to its plaque, and local legend links it to Saint-Exupéry's The Little Prince.",
+  "question_answer": "Nísia Floresta's famous tree is the Baobá de Nísia Floresta, an African baobab planted in 1877 according to the plaque beside it, which makes it about 150 years old. It stands in the town's central plaza in front of the church, protected by municipal law since 1970.",
+  "question_context": "The sources disagree about where it came from. The plaque, quoted on the municipality's own page, names Manoel Júnior as the planter in 1877. A widely repeated tradition credits an enslaved African carrying seeds from home, and a separate claim says Antoine de Saint-Exupéry saw the tree on a transatlantic flight and put baobabs into The Little Prince because of it. Only the plaque carries a name and a date, and none of the stories can be settled from what is published. The tree is protected under Brazil's 1965 forest code and a 1970 municipal law; in 2007 the council declared the surrounding area of scenic interest and the tree itself Environmental Heritage of the Municipality. No girth has been published, and if you visit with a tape measure we would like the number. The baobab stands in the central plaza in front of the church, a short walk from the bus terminal and the old railway station, on open public ground with no gate. Nísia Floresta is about 45 minutes by road from Natal, which makes it a day trip rather than a stop inside the city.",
+  "faq": [
+    {
+      "q": "How old is the Nísia Floresta baobab?",
+      "a": "About 150 years, if the plaque beside it is right: it says the tree was planted in 1877 by Manoel Júnior."
+    },
+    {
+      "q": "Is it really the baobab from The Little Prince?",
+      "a": "That is a local legend with no document behind it, and it sits awkwardly with the plaque's own 1877 planting story."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the central plaza in front of the church, near the bus terminal and the old railway station."
+    }
+  ],
+  "hero_tree_id": "nfl_001",
+  "oldest_tree_id": "nfl_001",
+  "trees": [
+    {
+      "id": "nfl_001",
+      "name": "Baobá de Nísia Floresta",
+      "species": "Baobab (Adansonia digitata)",
+      "age_estimate": "about 150 years",
+      "age_min": 145,
+      "age_max": 155,
+      "girth_cm": null,
+      "location": {
+        "address": "Central plaza in front of the church, Centro, Nísia Floresta",
+        "latitude": -6.0915299,
+        "longitude": -35.207887,
+        "neighbourhood": "Centro, Nísia Floresta, Rio Grande do Norte"
+      },
+      "verified_sources": [
+        "https://nisiafloresta.rn.gov.br/o-baoba/ (municipality's own page)",
+        "https://www.tripadvisor.com/Attraction_Review-g2351334-d2372665-Reviews-Baoba_tree-Nisia_Floresta_State_of_Rio_Grande_do_Norte.html",
+        "https://pt.wikipedia.org/wiki/Baob%C3%A1_no_Brasil"
+      ],
+      "access": "Free. Stands in the town's central plaza, in front of the church, near the bus terminal and old railway station; open public ground.",
+      "transport": "Central Nísia Floresta, walking distance of the town centre; the town itself sits roughly 45 minutes by road from Natal (day-trip range, but by car/bus rather than a city walk)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Nísia Floresta will tell you that Antoine de Saint-Exupéry saw this baobab from the air on one of his flights across the Atlantic, and that it ended up in The Little Prince, the book whose tiny planet is overrun by baobabs. The plaque standing beside the tree tells a plainer story: it was planted in 1877 by a local man named Manoel Júnior.\n\nThose two accounts do not sit easily together, and there is a third. A widely repeated tradition holds that the tree grew from seeds an enslaved African carried from home. The plaque, quoted on the municipality's own page, is the only one of the three with a name and a year attached, which makes the tree about 150 years old: young, for a species that can live for well over a thousand. The other stories cannot be proven, and nobody has ruled them out either.\n\nWhat is not in doubt is how seriously the town takes it. The baobab has been protected under Brazil's 1965 forest code and a municipal law of 1970, and in 2007 the council went further twice over: one law declared the ground around it of scenic interest, a second named the tree itself Environmental Heritage of the Municipality.\n\nIt stands in the central plaza in front of the church, a short walk from the bus terminal and the old railway station, on open public ground. Nobody has published its girth. If you visit with a tape measure, we would like to know.",
+      "how_to_recognise": "You can recognise it as the baobab in the central plaza, with a plaque beside it recording its 1877 planting. It stands in front of the church, near the bus terminal and the old railway station.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "container": {
+        "type": "own_place",
+        "place": "Nisia Floresta, Brazil"
+      }
+    }
+  ]
+}
