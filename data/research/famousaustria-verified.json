@@ -1,0 +1,29 @@
+[
+ {
+  "id": "afm_001",
+  "name": "Sommerlinde of Hochneukirchen (NÖ-Naturdenkmal WB-032)",
+  "species": "Large-leaved Lime (Tilia platyphyllos)",
+  "age_estimate": "roughly 650 years",
+  "age_min": 500,
+  "age_max": 650,
+  "girth_cm": 540,
+  "height_m": 20,
+  "location": {
+   "address": "Lindenstraße, 2852 Hochneukirchen, Hochneukirchen-Gschaidt, Bezirk Wiener Neustadt, Niederösterreich",
+   "latitude": 47.456945,
+   "longitude": 16.199255,
+   "neighbourhood": "Hochneukirchen"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Wiener_Neustadt (reproduces the Land Niederösterreich register row WB-032: ND, designated 1938-05-08, Tilia platyphyllos per Commons category, ca. 650 yrs, 20 m high, crown 16 m, girth 5.4 m, cadastral plot 1888/1, coords 47.456945/16.199255)",
+   "https://commons.wikimedia.org/wiki/Category:N%C3%96-Naturdenkmal_WB-032_Sommerlinde_in_Hochneukirchen",
+   "https://commons.wikimedia.org/wiki/File:AlteLinde_Hochneukirchen.jpg"
+  ],
+  "access": "Free. Stands at a village street (Lindenstraße) in Hochneukirchen; Naturdenkmal sign on the tree, photographed from public ground (Commons 2014 and 2025). Not checked against private plot boundary beyond that.",
+  "transport": "Not checked: rural village on the Styria/Burgenland border; car is the realistic way (no timetable verified).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "container": "own place (single-famous-tree test) - Hochneukirchen-Gschaidt; nearest published city not within 30 km checked (Vienna ~100 km). Judge: would somebody travel for this one? Hollow 5.4 m girth, ~650-year lime with a 1938 designation; plausible but modest",
+  "verify_notes": "- Official register only (Land NÖ Naturdenkmal WB-032, designated 8 May 1938), reproduced in the de.wikipedia list; register-only so flagged. 'Sommerlinde' = Tilia platyphyllos (Commons category 'Tilia platyphyllos in Lower Austria' and file title).\n- Register figures: ca. 650 years, 20 m tall, crown diameter 16 m, girth 5.4 m. Age is the register's own statement, not checked against girth; 650 years for 5.4 m girth is on the high side for a lime (growth-rate band would suggest 300-500), so age_min 500 is offered as a cautious floor and the writer should say 'the register puts it at about 650'.\n- Alive: lifecheck gave OLD (2014 photos) but Commons file 'Alte Linde in Hochneukirchen' by Jonas Kager is dated 22 April 2025 (CC BY 4.0), and is filed in the tree's category. Register row is not marked 'ehemalig' (unlike Karlstetten's felled lime in the same kind of list).\n- Details from 2014 photos: hollow trunk ('Höhle im Stamm'), trunk growing over the old Naturdenkmal sign ('Sommerlinde frisst Naturdenkmalschild').\n- Pin: register coordinate and the 2014/2025 Commons geotag (47.45692833/16.19928) agree within ~10 m; Nominatim puts the point on Lindenstraße 2 in the village. Confirmed.\n- Nothing found on folklore; no second independent written source beyond the register and photographs."
+ }
+]
