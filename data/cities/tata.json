@@ -1,0 +1,62 @@
+{
+  "city": "Tata",
+  "country": "Hungary",
+  "status": "needs_curation",
+  "intro": "Tata's great plane tree came from Versailles, brought by the Esterházy family and planted by the lake below their castle. It was Hungary's Tree of the Year in 2014 and came second in Europe the following year with 53,487 votes. It stands 19 metres tall and 6.5 metres round on Kastély tér, free to visit, with benches in its shade.",
+  "meta_description": "The Great Plane of Tata, brought from Versailles by the Esterházy family, came second in European Tree of the Year 2015. Free, by the castle lake.",
+  "question_meta": "Tata's remarkable tree is the great plane on Kastély tér, brought from Versailles and second in European Tree of the Year 2015.",
+  "question_answer": "Tata's remarkable tree is the Great Plane on Kastély tér, an oriental plane brought from Versailles by the Esterházy family and planted by the lake near the castle. It is 19 metres tall and 6.5 metres round, Hungarian Tree of the Year 2014 and second in European Tree of the Year 2015.",
+  "question_context": "The tree stands on Castle Square on the shore of the Öreg-tó, near the southwestern gate of Tata Castle, which the Esterházy family held. The town's own page says the family brought it from Versailles, around 1794. Around 2014 the town and Hungary's tree of the year site both gave its age as 232 years; a 2022 article puts it at about 240. None of those figures comes from a ring count. At some point lightning opened the trunk and the wound was filled with concrete, which both official pages now say harms the tree but cannot be removed without harming it more. The plane also inspired a fairy tale, The Platán King, by the local author Mátyás Pribojszky. One caveat: the European contest listed it as a London plane, while the town and the Hungarian contest both name it an oriental plane, and we follow the two Hungarian sources.",
+  "hero_tree_id": "tta_001",
+  "oldest_tree_id": "tta_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Tata?",
+      "a": "The Great Plane on Kastély tér, beside the castle lake, second in European Tree of the Year 2015 with 53,487 votes."
+    },
+    {
+      "q": "How old is the Tata plane tree?",
+      "a": "Around 240 years. The town gave 232 years around 2014, and a 2022 article says about 240. The figures come from its planting history, not a ring count."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in a public square on the lake shore, with benches under it and a café beside it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tta_001",
+      "name": "The Great Plane of Tata (Tatai nagy platán)",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "about 240 years",
+      "age_min": 230,
+      "age_max": 250,
+      "girth_cm": 650,
+      "location": {
+        "address": "Kastély tér (Castle Square), on the shore of Öreg-tó near the southwestern gate of Tata Castle, Tata, Komárom-Esztergom County, Hungary",
+        "latitude": 47.64767,
+        "longitude": 18.318805,
+        "neighbourhood": "Kastély tér"
+      },
+      "story": "In 2015 the great plane of Tata finished second in Europe, about 6,300 votes short of the winner. The year before, it had been named Hungary's Tree of the Year.\n\nIt came from Versailles. The Esterházy family, who held Tata, brought it from France, around 1794 by the town's own account, and it stands by the lake near the southwestern gate of their castle. Around 2014 the town and Hungary's tree of the year site both put it at 232 years; a 2022 article says about 240. It is 19 metres tall and 6.5 metres round.\n\nIt carries an old injury. Lightning opened the trunk, and the wound was filled with concrete. Both official pages now say the concrete harms the tree but cannot be taken out without harming it more, so the plug stays and the plane grows on around it.\n\nThe tree has a literary life too. The local author Mátyás Pribojszky wrote a fairy tale about it, The Platán King, after suffering a stroke.\n\nToday it shades Kastély tér on the shore of the Öreg-tó, with benches underneath and a café called the Platán beside it. One caveat on the name: the European contest listed it as a London plane, while the town and the Hungarian contest both call it an oriental plane. We follow the two Hungarian sources; if you know the tree, tell us which is right.",
+      "how_to_recognise": "You can recognise it by the trunk, 6.5 metres round, which carries an old lightning wound filled with concrete. It stands on Kastély tér by the lake, near the castle's southwestern gate and beside the Platán café.",
+      "verified_sources": [
+        "https://evfaja.hu/fa/2014/tatai-nagy-platan",
+        "https://tata.hu/mindennapok/ertekeink/teremtett-epitett-oroksegunk/platanfa/",
+        "https://www.turistamagazin.hu/hir/a-tatai-nagy-platan",
+        "https://www.treeoftheyear.org/"
+      ],
+      "access": "Free; in a public town square by the lake shore with benches, beside a cafe; open to all.",
+      "transport": "Centre of Tata beside the castle; on foot from the town centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}
