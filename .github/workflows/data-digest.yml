@@ -181,6 +181,17 @@ jobs:
             # autoStash so the NEXT script that writes a file nobody listed here
             # cannot kill the run the same way. Naming files is the fix; this is
             # the belt, because the list will go stale again.
-            git -c rebase.autoStash=true pull --rebase
-            git push
+            # Retried because 2026-09-29's entry was lost to a push race: the
+            # pull saw main up to date, a night run landed a commit in the next
+            # second, and one rejected push threw the whole digest away.
+            pushed=0
+            for i in 1 2 3 4 5; do
+              if git -c rebase.autoStash=true pull --rebase && git push; then
+                pushed=1
+                break
+              fi
+              echo "push race, attempt $i; another workflow landed a commit in between"
+              sleep $((i * 5))
+            done
+            [ "$pushed" = 1 ]
           fi
