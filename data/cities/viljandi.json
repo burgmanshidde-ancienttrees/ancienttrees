@@ -1,0 +1,62 @@
+{
+  "city": "Viljandi",
+  "country": "Estonia",
+  "status": "needs_curation",
+  "intro": "Just outside Viljandi, alone in a meadow at Vana-Võidu, stands the oak that Eduard Viiralt drew into his 1943 drypoint of the Viljandi landscape, and it has carried the artist's name ever since. It is 4.88 metres round, squat and broad, and put at 300 to 400 years old. It was Estonia's Tree of the Year in 2024, and it can be seen from the Tartu-Viljandi road.",
+  "meta_description": "The Viiralti Oak near Viljandi, the lone meadow oak in Eduard Viiralt's 1943 drypoint, 4.88 m round and Estonian Tree of the Year 2024.",
+  "question_meta": "Viljandi's remarkable tree is the Viiralti Oak, a lone meadow oak named after the artist Eduard Viiralt, Estonian Tree of the Year 2024.",
+  "question_answer": "Viljandi's remarkable tree is the Viiralti Oak, a pedunculate oak standing alone in a meadow at Vana-Võidu, just outside the town. It is named after the artist Eduard Viiralt, who drew it into his 1943 drypoint of the Viljandi landscape, and it is 4.88 metres round and put at 300 to 400 years old.",
+  "question_context": "Before it belonged to an artist, the tree belonged to a farm. Its older name, the Tamme-Koori oak, comes from Grigori, a 19th-century farmer at Tamme farm, whose land it adjoins. Eduard Viiralt put it at the centre of his 1943 drypoint Viljandi maastik, and the name stuck. The oak is 4.88 metres round at chest height and about 13 metres tall, squat, with upright branches, and its hollow has been filled with cement. The age usually given, 300 to 400 years, is the contest's figure rather than a measurement, though the girth sits comfortably inside that range for an oak grown in the open. It is a protected natural monument. It was Estonian Tree of the Year 2024 and came 12th in the European contest that year, and a 2024 report describes it in good condition. It stands about 160 metres from the Tartu-Viljandi-Kilingi-Nõmme road and is visible from it. The meadow adjoins Tamme farm, so approach it with the respect you would want shown to your own field.",
+  "hero_tree_id": "vna_001",
+  "oldest_tree_id": "vna_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree near Viljandi?",
+      "a": "The Viiralti Oak at Vana-Võidu, a lone meadow oak drawn by Eduard Viiralt in 1943 and Estonian Tree of the Year 2024."
+    },
+    {
+      "q": "Why is it called the Viiralti Oak?",
+      "a": "Because the artist Eduard Viiralt drew it in his 1943 drypoint Viljandi maastik. Its older name, the Tamme-Koori oak, comes from a 19th-century farmer of Tamme farm."
+    },
+    {
+      "q": "Can I visit it?",
+      "a": "Yes. It stands alone in a meadow about 160 metres from the Tartu-Viljandi-Kilingi-Nõmme road and is visible from it. The meadow adjoins farm land, so approach with respect."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vna_001",
+      "name": "Viiralti Oak (Tamme-Koori Oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "300 to 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 488,
+      "location": {
+        "address": "Tamme farm, Vana-Võidu village, Viljandi Parish, Viljandi County, Estonia",
+        "latitude": 58.37089,
+        "longitude": 25.64556,
+        "neighbourhood": "Vana-Võidu"
+      },
+      "story": "This oak is famous because an artist drew it. In 1943 Eduard Viiralt, one of Estonia's great printmakers, put it at the centre of a drypoint called Viljandi maastik, the Viljandi landscape, and it has been the Viiralti oak ever since.\n\nIt had a name before that. Locals knew it as the Tamme-Koori oak, after Grigori, a 19th-century farmer at Tamme farm, whose land the meadow adjoins. So the tree has been named for a farmer and for an artist, and has outlived both.\n\nIt stands alone in the middle of the meadow at Vana-Võidu, just outside Viljandi, about 160 metres from the Tartu-Viljandi road. It is not tall, about 13 metres, but it is broad: 4.88 metres round at chest height, squat, with its branches reaching upward. The hollow inside the trunk has been filled with cement.\n\nThe age usually given, 300 to 400 years, is the contest's figure, not a measurement. The girth fits that range for an oak that has grown in the open all its life, with nothing to compete with for light.\n\nIn 2024 it was Estonia's Tree of the Year and came 12th in the European contest. A report that year described it in good condition. It is a protected natural monument, and the farm is next door, so walk over with the respect you would want shown to your own field.",
+      "how_to_recognise": "You can recognise it as the only tree in the middle of the meadow: a squat oak about 13 metres tall and 4.88 metres round, branches upright. It stands about 160 metres from the Tartu-Viljandi road.",
+      "verified_sources": [
+        "https://et.wikipedia.org/wiki/Viiralti_tamm",
+        "https://www.looduskalender.ee/n/node/8304",
+        "https://puhkaeestis.ee/et/viiralti-e-tammekoori-tamm",
+        "https://www.treeoftheyear.org/"
+      ],
+      "access": "Stands alone in a meadow beside the Tartu-Viljandi-Kilingi-Nõmme road, visible from it about 160 m away; the meadow adjoins Tamme farm land, so approach respectfully. Protected natural monument.",
+      "transport": "Vana-Võidu, just outside Viljandi, beside the Tartu-Viljandi-Kilingi-Nõmme road; by car.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
