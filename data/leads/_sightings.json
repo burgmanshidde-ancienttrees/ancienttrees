@@ -769,7 +769,7 @@
    "user_id": "c297da44-0809-4c48-9741-ad40af16397a",
    "mine": true,
    "name": "I think it’s a Japanese cedar. It’s next to a beautiful shri",
-   "species": null,
+   "species": "Cedar (Cedrus sp.)",
    "age": null,
    "girth_cm": null,
    "girth_hugs": null,
@@ -789,7 +789,8 @@
    },
    "status": "lead",
    "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
-   "seen": "2026-09-29"
+   "seen": "2026-09-29",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ]
 }
