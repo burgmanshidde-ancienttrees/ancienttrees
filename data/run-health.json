@@ -20031,6 +20031,30 @@
    ],
    "trees": 2,
    "logged": true
+  },
+  {
+   "started": "2026-09-30T20:08:58+00:00",
+   "date": "2026-09-30",
+   "run_id": "36770546905",
+   "minutes": 9.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 59,
+   "denials": 13,
+   "denials_source": "permission_denials: Bash(cat ; import ; def ; return ...), Bash(cat ; import ; story ; The ...), Bash(cd && curl | head ; echo ...), Bash(cd ; for ; do ; curl ...), Bash(cd ; ls | grep | ? ...), Bash(cd ; python3 ; import ; ? ...), Bash(ls | grep | tilia | ? ...), Bash(ls | head ; python3 | head), Bash(python3 ; wc), Bash(python3 | head ; git && git ...), Bash(rm), Bash(sed ; grep)",
+   "ended": "success",
+   "tokens": 756554,
+   "claims_held": [],
+   "commits": 6,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "hochneukirchen-gschaidt",
+     "trees": 1
+    }
+   ],
+   "trees": 1,
+   "logged": true
   }
  ],
  "schedule_changes": [
