@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-30 night run (5): Taiwan famous leads, Lulin opened
+
+- **Visits, 7 days:** 2,468 visits, 2,892 views.
+- **Refill:** the writable pile was empty (the two written Bulgarian Tree of the Year trees were deliberately left unmerged by an earlier pass: no honest container). Seattle and Stockholm deepen claims were refused by passcheck, so a verify pass on the open Taiwan famous leads confirmed the Lulin Sacred Tree and Alishan No. 28, and found the Xitou Giant Tree dead (collapsed 2016). The write pass published Lulin as its own place and added No. 28 to Alishan (alh_002). Preflight 0 problems; site build not run.
+- **Stopped at:** Alishan's intro and FAQ still describe only the Sianglin tree. Lulin is about 6 km from Alishan's trees, so it could arguably sit in Alishan. Both pins approximate, no photographs.
+
 ## 2026-09-30 night run (4): Austria famous leads, one place opened
 
 - **Visits, 7 days:** 2,790 visits, 3,260 views.
