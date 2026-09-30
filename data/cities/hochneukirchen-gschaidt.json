@@ -1,0 +1,66 @@
+{
+  "city": "Hochneukirchen-Gschaidt",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "Hochneukirchen's large-leaved lime stands on Lindenstraße and has been a natural monument of Lower Austria since 8 May 1938. Its register entry gives it about 650 years, 20 metres of height, a crown 16 metres across and a hollow trunk 5.4 metres round, and the trunk has grown over its own old Naturdenkmal sign. It is free to see from the village street. Nobody has written its story down yet, so if you know what the village says about it, tell us.",
+  "meta_description": "A hollow large-leaved lime on Lindenstraße in Hochneukirchen, 5.4m round, protected since 1938 and put at about 650 years by its register.",
+  "question_meta": "Hochneukirchen's old lime: a hollow large-leaved lime 5.4m round, protected since 1938, which its register puts at about 650 years.",
+  "question_answer": "The oldest tree in Hochneukirchen-Gschaidt is the large-leaved lime on Lindenstraße in the village of Hochneukirchen, which Lower Austria's natural monument register puts at about 650 years. It is 20 metres tall with a hollow trunk 5.4 metres round, and has been protected as Naturdenkmal WB-032 since 8 May 1938. It stands by the village street and is free to see.",
+  "question_context": "The age comes from the register alone. No second written source dates the tree, the usual growth rates for a lime would read a 5.4-metre trunk as somewhat younger, and a hollow trunk keeps no rings to count, so treat 650 years as the register's figure rather than a measurement. The same entry, WB-032, records a crown 16 metres across and a height of 20 metres, and it dates the protection to 8 May 1938, eight weeks after Austria was annexed to Germany. Photographs from 2014 show the trunk grown over its old Naturdenkmal sign and a cavity in the trunk, and a photograph from April 2025 shows the tree still standing. Hochneukirchen is a small village in the Bezirk Wiener Neustadt, near the borders with Styria and Burgenland; we have not checked a public transport route, and a car is the realistic way to reach it. The lime stands by Lindenstraße and can be seen from the street. We have found no legend or local history about the tree, and no record of who planted it; if you know either, tell us.",
+  "faq": [
+    {
+      "q": "How old is the lime in Hochneukirchen?",
+      "a": "Lower Austria's natural monument register puts it at about 650 years. No other source dates it, and the trunk's size could also fit a somewhat younger tree, so read the figure as the register's estimate."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands by Lindenstraße in the village, and it can be seen and photographed from the street."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Hochneukirchen is a rural village in Lower Austria, near the Styrian and Burgenland borders. We have not checked a public transport route; a car is the realistic way in."
+    }
+  ],
+  "hero_tree_id": "afm_001",
+  "oldest_tree_id": "afm_001",
+  "trees": [
+    {
+      "id": "afm_001",
+      "name": "Sommerlinde of Hochneukirchen (NÖ-Naturdenkmal WB-032)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 650 years",
+      "age_min": 500,
+      "age_max": 650,
+      "girth_cm": 540,
+      "height_m": 20,
+      "location": {
+        "address": "Lindenstraße, 2852 Hochneukirchen, Hochneukirchen-Gschaidt, Bezirk Wiener Neustadt, Niederösterreich",
+        "latitude": 47.456945,
+        "longitude": 16.199255,
+        "neighbourhood": "Hochneukirchen"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Wiener_Neustadt (reproduces the Land Niederösterreich register row WB-032: ND, designated 1938-05-08, Tilia platyphyllos per Commons category, ca. 650 yrs, 20 m high, crown 16 m, girth 5.4 m, cadastral plot 1888/1, coords 47.456945/16.199255)",
+        "https://commons.wikimedia.org/wiki/Category:N%C3%96-Naturdenkmal_WB-032_Sommerlinde_in_Hochneukirchen",
+        "https://commons.wikimedia.org/wiki/File:AlteLinde_Hochneukirchen.jpg"
+      ],
+      "access": "Free. Stands at a village street (Lindenstraße) in Hochneukirchen; Naturdenkmal sign on the tree, photographed from public ground (Commons 2014 and 2025). Not checked against private plot boundary beyond that.",
+      "transport": "Not checked: rural village on the Styria/Burgenland border; car is the realistic way (no timetable verified).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "container": {
+        "type": "own_place",
+        "place": "Hochneukirchen-Gschaidt, Austria"
+      },
+      "story": "The old lime on Lindenstraße in Hochneukirchen is slowly swallowing the sign that protects it. Photographs taken in 2014 show the trunk growing over its old Naturdenkmal plate, the bark closing in around the notice that declares it a natural monument.\n\nThat protection goes back a long way. Lower Austria designated this large-leaved lime on 8 May 1938, eight weeks after Austria was annexed to Germany, and the register entry, WB-032, is still in force. It records a tree 20 metres tall, with a crown 16 metres across and a trunk 5.4 metres round. The trunk is hollow, and the cavity shows in photographs taken from the road.\n\nThe register puts its age at about 650 years, which would have it growing here since the fourteenth century. Read that as the register's figure rather than a measurement. A lime 5.4 metres round can be very old, but the usual growth rates for the species would read the same trunk as somewhat younger, and a hollow tree keeps no rings to settle the argument.\n\nA photograph from April 2025 shows it still standing.\n\nBeyond the register we found nothing written about it: no legend, no planting story, no local history naming who put it here or why. Hochneukirchen is a small village near the Styrian and Burgenland borders, and a car is the realistic way in. If you know what the village says about its lime, or have stood under it lately, tell us.",
+      "how_to_recognise": "You can recognise it by the hollow trunk, 5.4 metres round, grown over its old Naturdenkmal sign. It stands on Lindenstraße in the village, about 20 metres tall with a crown 16 metres across.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    }
+  ]
+}
