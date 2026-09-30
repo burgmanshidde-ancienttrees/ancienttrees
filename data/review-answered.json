@@ -92,6 +92,10 @@
     "2026-09-27": {
       "note": "Fixed check_photo_resolution() in scripts/qa.py: it now skips a hero whose photo.status is not approved, so a held photo (New Orleans nol_001) no longer fails the deploy on its old width. Verified the function directly both ways (false positive gone, genuine soft-approved-hero case still fires); could not run the full Astro build in this sandbox. Pushed at 121d82cf+1. Could not gh workflow run deploy.yml (403, no dispatch permission from this token); it will pick up the fix on its own push (blocked, GITHUB_TOKEN pushes don't trigger it) or the next 3-hourly cron (:20 past every 3rd hour).",
       "at": "2026-09-27T13:55:30+00:00"
+    },
+    "2026-09-30": {
+      "note": "noop",
+      "at": "2026-09-30T14:25:19+00:00"
     }
   }
 }

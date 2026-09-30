@@ -2,11 +2,11 @@
   "city": "Houston",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Houston does not do walks, and neither does this page. The city sprawls across seventeen hundred square kilometres and its oldest trees are scattered accordingly: a live oak with a forty metre crown in Spring Branch, the tallest winged elm in Texas, a pecan with a footpath named after it, a live oak in Klein that a gas station nearly took down, a yaupon grown to tree height in a museum garden, and a wide oak in a Bellaire park. Six trees, six drives, each worth the parking.",
-  "meta_description": "Six remarkable trees around Houston: a live oak with a 40 metre crown, the tallest winged elm in Texas, and the oak schoolchildren saved.",
-  "question_meta": "Houston's oldest tree is the Kissing Tree at Klein, a live oak that marks an 1848 homestead. Where it stands, and five more worth the drive.",
-  "question_answer": "The oldest tree around Houston is almost certainly the Kissing Tree at Klein, a live oak that Strack family records place at the site of Herman Strack's homestead and blacksmith shop, settled in 1848, and which was already the meeting tree for the settlement then. Nobody has put a firm number of years on it. The largest is a different tree: a live oak on the lawn of John Knox Presbyterian Church in Spring Branch, measured in March 2026 at 625 centimetres round and twenty three metres tall, with a crown spreading forty metres. Neither is in central Houston, because central Houston does not have a documented old tree of that order.",
-  "question_context": "Measurements here come from the Texas Big Tree Registry, kept by the Texas A&M Forest Service, which records circumference, height and crown spread with the date each was taken. That is unusually good for a tree register, which is why the girths on this page are exact and the ages are not: the registry has no age field at all, and nobody has cored these trees. Where a year appears it comes from a settlement date or a plaque rather than from the wood. The registry publishes in inches and feet, and the figures here are converted. It also marks which of its trees stand on public land and which do not, and withholds the positions of the private ones, so several large Houston trees are deliberately absent from this page. The one thing the registry is good at, and most registers are not, is telling you a tree was alive recently: three of these six were measured in the last twelve months.",
+  "intro": "Houston does not do walks, and neither does this page. The city sprawls across seventeen hundred square kilometres and its oldest trees are scattered accordingly: a live oak with a forty metre crown in Spring Branch, the tallest winged elm in Texas, a pecan with a footpath named after it, a live oak in Klein a gas station nearly took down, a yaupon in a museum garden, a wide oak in Bellaire, and two old live oaks downtown. Eight trees, each worth the trip.",
+  "meta_description": "Eight remarkable trees around Houston: a live oak with a 40 metre crown, the tallest winged elm in Texas, and two old live oaks downtown.",
+  "question_meta": "Houston's oldest tree is the Kissing Tree at Klein, a live oak that marks an 1848 homestead. Where it stands, and seven more worth the trip.",
+  "question_answer": "The oldest tree around Houston is almost certainly the Kissing Tree at Klein, a live oak that Strack family records place at the site of Herman Strack's homestead and blacksmith shop, settled in 1848, and which was already the meeting tree for the settlement then. Nobody has put a firm number of years on it. The largest is a different tree: a live oak on the lawn of John Knox Presbyterian Church in Spring Branch, measured in March 2026 at 625 centimetres round and twenty three metres tall, with a crown spreading forty metres. Neither is in central Houston. Downtown has two old live oaks, Jane Ellen's Tree in Sam Houston Park and the Old Hanging Oak on Capitol Street, credited with 250 to 400 years, but those ages are estimates that nobody has measured.",
+  "question_context": "Measurements here come from the Texas Big Tree Registry, kept by the Texas A&M Forest Service, which records circumference, height and crown spread with the date each was taken. That is unusually good for a tree register, which is why the girths on this page are exact and the ages are not: the registry has no age field at all, and nobody has cored these trees. Where a year appears it comes from a settlement date or a plaque rather than from the wood. The registry publishes in inches and feet, and the figures here are converted. It also marks which of its trees stand on public land and which do not, and withholds the positions of the private ones, so several large Houston trees are deliberately absent from this page. The two downtown oaks are not registry trees: their ages and pins come from the Heritage Society and the press, and both pins are approximate. The one thing the registry is good at, and most registers are not, is telling you a tree was alive recently: three of these trees were measured in the last twelve months.",
   "hero_tree_id": "hou_001",
   "oldest_tree_id": "hou_003",
   "faq": [
@@ -16,7 +16,7 @@
     },
     {
       "q": "Are any of these in central Houston?",
-      "a": "No, and that is the honest answer rather than an omission. The nearest is the Spring Branch live oak, about eighteen kilometres west of downtown. Central Houston has large trees but no documented veteran of this order on ground the public can reach; the two registry trees closest to downtown both stand on private land, and the registry withholds their positions."
+      "a": "Two, and both are estimates. Jane Ellen's Tree stands in Sam Houston Park and the Old Hanging Oak on the corner of Capitol and Bagby, about half a kilometre apart. Their ages come from the Heritage Society and press reports rather than any measurement, and our pins mark the park and the corner, not the trunk. The other trees are further out: the nearest is the Spring Branch live oak, about eighteen kilometres west of downtown. The two registry trees closest to downtown stand on private land, and the registry withholds their positions."
     },
     {
       "q": "How do you know these trees are still alive?",
@@ -218,6 +218,70 @@
       "how_to_recognise": "You can recognise it by the crown, wider than the tree is tall at 19.8 metres across, on a trunk 2.31 metres round. It stands among the oaks of Russ Pitman Park, off Newcastle Street in Bellaire.",
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "hou_007",
+      "name": "Jane Ellen's Tree",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "250 to 300 years",
+      "age_min": 250,
+      "age_max": 300,
+      "location": {
+        "address": "Sam Houston Park, 1000 Bagby St, Houston, TX 77002",
+        "latitude": 29.7599,
+        "longitude": -95.3718,
+        "neighbourhood": "Downtown"
+      },
+      "verified_sources": [
+        "https://www.heritagesociety.org/historictrees"
+      ],
+      "access": "Free; Sam Houston Park is a public downtown park (owner-managed by the Heritage Society).",
+      "transport": "Downtown Houston, METRORail Main Street line to Preston or Downtown Transit Center, about 10 to 15 min walk to the park.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Houston is younger than this tree, probably by the better part of a century. The Heritage Society, which manages Sam Houston Park, puts the oak at 250 to 300 years old. That is an arborist's estimate rather than a ring count, and nobody has published a girth to check it against, but even the low end has it growing here before the city was founded in 1836.\n\nIt is a southern live oak grown the way the species grows when it is left alone: sprawling rather than tall, with massive limbs that reach out and then down until they nearly meet the ground. The towers of downtown stand a few blocks away. The oak was already old when the frontier town became a cotton port, and older still when the oil money arrived and built the skyline behind it.\n\nThe name is recent. The society called it Jane Ellen's Tree, after Jane Ellen, its first female executive director, so it honours the person who looked after the ground rather than anyone who owned it.\n\nDo not confuse it with the other live oak that made the news in this park. In February 2026 Trees for Houston planted its one-millionth tree here, a young live oak beside the Kellum-Noble House. It has a long future ahead of it. This one has the past.\n\nOur pin marks the park, not the trunk, so expect to look around. Look for the limbs that come down to meet you.",
+      "how_to_recognise": "You can recognise it by its massive limbs, sprawling outward and reaching down almost to the ground. It stands in Sam Houston Park; the young live oak beside the Kellum-Noble House, planted in 2026, is not it.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "hou_008",
+      "name": "The Old Hanging Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "location": {
+        "address": "Corner of Capitol St and Bagby St, across from Bayou Place, Downtown Houston, TX",
+        "latitude": 29.7607,
+        "longitude": -95.366,
+        "neighbourhood": "Downtown"
+      },
+      "verified_sources": [
+        "https://www.houstonpress.com/news/the-hanging-oaks-of-houston-6711178/",
+        "https://www.atlasobscura.com/places/old-hanging-oak (seen only as a search snippet, page 403; lead not source)",
+        "https://www.chron.com/culture/article/houston-oldest-tree-history-16374370.php (title only, page did not load)"
+      ],
+      "access": "Free; on the public sidewalk area at the corner, maintained by the City of Houston Civic Center Department.",
+      "transport": "Downtown, next to Bayou Place; METRORail Main Street line stops about 5 to 8 min walk away.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The most famous thing about this oak is a story nobody can document. For years a plaque near the corner of Capitol and Bagby said that eleven criminals were hanged from its limbs while Texas was an independent republic, between 1836 and 1845. The plaque has since gone, and the story has not held up well without it. The Houston Press calls it uncertain. The Houston Chronicle has called the tree's grim reputation false. And the executions that a 1913 history of the city by Dr S.O. Young does record, three of them according to the Press, are tied to a different tree altogether, in Freedmans Town.\n\nWhat remains is the oak itself, which is the better story anyway. It is a southern live oak usually described as roughly 400 years old. Nobody has published a ring count or even a girth, so treat that as a figure the city repeats rather than one anybody measured. It is old; exactly how old is an open question.\n\nIt has stood through all of downtown Houston's history without the courtesy of a park around it. It stands on the public sidewalk across the street from Bayou Place, and the City of Houston's Civic Center Department keeps it alive there.\n\nOur pin is an estimate of the corner, not the trunk, so check which tree you are looking at. And if you have a tape measure, the girth would settle more than the plaque ever did.",
+      "how_to_recognise": "You can recognise it as the old live oak on the corner of Capitol Street and Bagby Street. It stands on the public sidewalk, across the street from Bayou Place.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }
