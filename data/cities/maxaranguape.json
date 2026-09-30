@@ -1,0 +1,65 @@
+{
+  "city": "Maxaranguape",
+  "country": "Brazil",
+  "status": "needs_curation",
+  "intro": "The Árvore do Amor on Barra de Maxaranguape beach is two native figs grown into one crown, and in mid-morning its shadow falls in the shape of a heart. Locally it is said to be over 300 years old, a figure nobody has documented. In February 2024 someone deliberately cut through several of its roots; it survived. It is free to visit, about 55 kilometres up the coast from Natal.",
+  "meta_description": "The Árvore do Amor: two joined figs on Barra de Maxaranguape beach whose mid-morning shadow forms a heart. Free, 55 km north of Natal.",
+  "question_meta": "The Árvore do Amor is two joined gameleira figs on Barra de Maxaranguape beach, locally said to be over 300 years old.",
+  "question_answer": "Maxaranguape's famous tree is the Árvore do Amor, the Tree of Love: two gameleira figs whose trunks and crowns have grown together on Barra de Maxaranguape beach, casting a heart-shaped shadow in mid-morning. Locally it is said to be more than 300 years old.",
+  "question_context": "The 300-year figure is repeated by every news report and sourced by none of them, so it is the beach's tradition rather than a measurement. Gameleira is a Brazilian name covering several native Ficus species, and no source says which one this is. On 27 February 2024 several of its exposed roots were cut through deliberately; the case went to the police and to the environmental agencies Idema and Ibama, and officials said the cuts were unlikely to kill it, though they could let disease in. It is often filed under Natal, but it stands in Maxaranguape municipality, a day trip by car or bus up the coast. There is no gate or ticket, and it is the beach's best-known sight, so it is easy to find once you are there. The heart only shows when the sun sits at the right angle in the middle of the morning; at noon the shadow is an ordinary patch of shade. Nobody has published its girth, and a recent photograph from anyone who has seen it since the 2024 attack would tell us how it is recovering.",
+  "faq": [
+    {
+      "q": "Why is it called the Tree of Love?",
+      "a": "Two figs have grown together into one crown, and in mid-morning their shadow falls in the shape of a heart."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Locally it is said to be over 300 years old, but no source documents that figure."
+    },
+    {
+      "q": "Is it in Natal?",
+      "a": "No. It stands on Barra de Maxaranguape beach, about 55 kilometres up the coast from Natal, and it is free to visit."
+    }
+  ],
+  "hero_tree_id": "mrg_001",
+  "oldest_tree_id": "mrg_001",
+  "trees": [
+    {
+      "id": "mrg_001",
+      "name": "Árvore do Amor",
+      "species": "Fig (Ficus sp.)",
+      "age_estimate": "locally said to be over 300 years",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Barra de Maxaranguape beach, Av. Cabo de São Roque, Maxaranguape, Rio Grande do Norte",
+        "latitude": -5.4923131,
+        "longitude": -35.2607738,
+        "neighbourhood": "Barra de Maxaranguape, Maxaranguape"
+      },
+      "verified_sources": [
+        "https://www.terra.com.br/planeta/noticias/cartao-postal-do-rn-arvore-do-amor-de-300-anos-e-vandalizada-e-tem-raizes-cortadas,393aa9c94ae271d258ab7bf653c55203f142jafy.html",
+        "https://tribunadonorte.com.br/clube-do-assinante/arvore-do-amor/",
+        "https://www.band.com.br/entretenimento/zeca-pelo-brasil/noticias/conheca-a-arvore-de-amor-ponto-turistico-para-supersticiosos-no-rn-16320860"
+      ],
+      "access": "Free. A well-known public tourist spot on Barra de Maxaranguape beach; OpenStreetMap tags it tourism=yes by name. No gate or ticket found in any source.",
+      "transport": "Maxaranguape municipality, roughly 55km up the coast from Natal; a day trip by car or bus, not a walk or short hop from the city itself",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "At the right hour of the morning this tree throws a shadow shaped like a heart, which is how a fig on a beach north of Natal became the Árvore do Amor, the Tree of Love.\n\nStrictly, it is two trees. Both are gameleiras, the name Brazilians give to several native figs, and over the years their trunks and crowns have grown into one another until they read as a single tree with one obvious place to stand. The shadow does the rest, but only when the sun sits at the right angle in the middle of the morning. Come at noon and you get a large, ordinary patch of shade.\n\nEveryone locally will tell you it is more than 300 years old. Every news report repeats the figure and none of them says where it comes from, so treat it as the beach's own tradition rather than a measurement.\n\nIn February 2024 somebody took a blade to it. Several of the exposed roots were cut through deliberately, and the case went to the police and to the state and federal environmental agencies. The tree survived. Officials said the cuts were unlikely to kill it, although open wounds can let disease in, so a report from anyone who has seen it lately is welcome.\n\nIt stands on Barra de Maxaranguape beach, about 55 kilometres up the coast from Natal: a day out by car or bus, free, with no gate and no ticket. Nobody has published its girth.",
+      "how_to_recognise": "You can recognise it by two fig trunks grown together into one crown, whose shadow falls as a heart in mid-morning. It stands on Barra de Maxaranguape beach, where it is the best-known sight.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "container": {
+        "type": "own_place",
+        "place": "Maxaranguape, Brazil"
+      }
+    }
+  ]
+}
