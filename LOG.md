@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-30 night run (3): Deploy fix, Houston deepened to eight
+
+- **Visits, 7 days:** 2,780 visits, 3,250 views.
+- **Rung 2:** deploy QA was red on an orphaned photo (`ond_001` under its pre-rename filename); `git rm`'d it and pushed. `gh workflow run deploy.yml` returned HTTP 403 here, so the redeploy waits for the next push or schedule. I also ran `health.py --answer` when there was no BLOCKER; it is harmless.
+- **Houston (US-first):** the verify agent found two trees (Jane Ellen's Tree, the Old Hanging Oak) and the write pass merged both, flagged, with approximate pins. Houston's intro, meta, question copy and the central-Houston FAQ no longer say six or "none downtown". Preflight 0 problems; site build not run.
+- **Stopped at:** Hermann Park, Memorial Park, Bayou Bend and the Houston Arboretum were not reached, and Overpass is unreachable from this runner. `fdl_001` is the same tree as live `spa_001`, and its research pin is 3 km off the confirmed one, so it was not merged.
+
 ## 2026-09-30 night run (2): Tree of the Year shelf refill, eight places published
 
 - **Visits, 7 days:** 2,770 visits, 3,240 views.
