@@ -1,0 +1,63 @@
+{
+  "city": "Krka National Park",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "At Skradinski Buk, the main falls of Krka National Park, a white mulberry about 400 years old stands on the right bank of the river below the ruins of the Budim mill. The park calls it a symbol of Skradin's silk past: in the 1830s the town was Dalmatia's largest centre for breeding silkworms, which live on mulberry leaves. It was Croatia's Tree of the Year in 2023. Park admission applies.",
+  "meta_description": "The Green Lady of Krka, a white mulberry about 400 years old at Skradinski Buk, Croatian Tree of the Year 2023 and a relic of Skradin's silk trade.",
+  "question_meta": "Krka National Park's remarkable tree is the Green Lady, a 400-year-old mulberry at Skradinski Buk, Croatian Tree of the Year 2023.",
+  "question_answer": "Krka National Park's remarkable tree is the Green Lady, a white mulberry at Skradinski Buk, 4.75 metres round and about 400 years old by the park's own estimate. It was Croatia's Tree of the Year in 2023 and stands on the right bank of the Krka below the remains of the Budim mill.",
+  "question_context": "The park authority, which manages the ground the tree stands on, published its details itself: Morus alba, 475 centimetres round at breast height, about 400 years old. That age is the park's estimate, with no basis given for it. The tree's story is silk. Mulberry leaves are what silkworms eat, and the park writes that in the 1830s Skradin, just downstream, was the largest silkworm-breeding centre in Dalmatia; the park calls the mulberry by the old mill a symbol of that trade. It won Croatia's Tree of the Year in 2023 with 653 votes and went on to represent Croatia in the 2024 European contest as the Green Lady of Krka National Park. It stands at Skradinski Buk, the park's main visitor site, so reaching it means paying the park's entry fee. Our pin is approximate, taken from the contest entry, so look for it on the right bank below the ruined Budim mill rather than at the exact dot on the map. If you know how old it really is, tell us.",
+  "hero_tree_id": "kzd_001",
+  "oldest_tree_id": "kzd_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Krka National Park?",
+      "a": "The Green Lady, a white mulberry about 400 years old at Skradinski Buk, Croatian Tree of the Year 2023."
+    },
+    {
+      "q": "Why is there an old mulberry at Skradinski Buk?",
+      "a": "Mulberry leaves feed silkworms, and in the 1830s nearby Skradin was the largest silkworm-breeding centre in Dalmatia. The park treats the tree as a survivor of that silk trade."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No. It stands inside Krka National Park at Skradinski Buk, so park admission applies."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kzd_001",
+      "name": "The Green Lady of Krka (Skradinski Buk mulberry)",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "about 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 475,
+      "location": {
+        "address": "Right bank of the Krka below the remains of the Budim mill, Skradinski Buk, Krka National Park, Šibenik-Knin County, Croatia",
+        "latitude": 43.807028,
+        "longitude": 15.964692,
+        "neighbourhood": "Skradinski Buk"
+      },
+      "story": "At Skradinski Buk, the famous falls of the Krka, a white mulberry about 400 years old stands on the right bank, below the ruins of the Budim mill.\n\nMulberry leaves are the only food a silkworm wants, and in the 1830s Skradin, just downstream, was the largest silkworm-breeding centre in Dalmatia. The national park, which manages the ground and published the tree's details itself, calls this mulberry a symbol of that silk past. The mill is a ruin. The tree is still in leaf.\n\nThe trunk is 4.75 metres round at chest height. The park puts its age at about 400 years and gives no basis for the figure; a trunk that size is consistent with a few centuries, but nobody has counted rings.\n\nIn 2023 it was voted Croatia's Tree of the Year with 653 votes, and the following year it went to the European contest under the name the park gave it, the Green Lady of Krka National Park. It did not place near the top.\n\nThat hardly matters on the day. The falls draw the crowds, and they will still be there in another 400 years. The silk trade is already gone, and this tree is what the park keeps to remember it by. If you know how old it really is, tell us.",
+      "how_to_recognise": "You can recognise it as a mulberry with a trunk 4.75 metres round. It stands on the right bank of the Krka at Skradinski Buk, below the ruins of the Budim mill.",
+      "verified_sources": [
+        "https://www.npkrka.hr/hr/newsletter/murva-na-skradinskom-buku-svilena-povijest-skradina/",
+        "https://npkrka.hr/hr/2023/10/13/murva-iz-nacionalnog-parka-krka-hrvatsko-je-stablo-godine-2023/",
+        "https://magazin.hrt.hr/price-iz-hrvatske/cetiristogodisnja-murva-iz-skradina-kandidatkinja-za-stablo-godine-11040595",
+        "https://www.treeoftheyear.org/"
+      ],
+      "access": "Paid entry: inside Krka National Park at Skradinski Buk, the park's main visitor site, so park admission is required. Check the park's current prices and seasonal boat or road access before you go.",
+      "paid_entry": true,
+      "transport": "Krka National Park, Skradinski Buk; reached through the park's Skradin or Lozovac entrances.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    }
+  ]
+}
