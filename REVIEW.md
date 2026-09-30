@@ -13,6 +13,34 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-30
+
+Web half: read the built pages for the day's eight new single-tree places (Tata,
+Daruvar, Valdemārpils, Järvselja, Viljandi, Mélykút, Bátaszék, Krka National
+Park) plus the two redirect stubs (Le Précheur, Naha). Each states its count
+honestly ("1 tree"), hedges age with its basis (tradition, contest figure,
+disputed 250 to 500 at Valdemārpils), gives access, and shows no em dashes or
+banned words. Nothing found on the web half.
+
+NOTE — this file has no entries for 2026-09-28, 09-29 or 09-30 before this one;
+the review workflow failed on its schedule three mornings running (per the
+session brief). Not a content finding, but the reviewer has been blind for three
+days.
+
+## 2026-09-30 (app)
+
+- NOTE APP — `tree.png` (Łódź, Dąb Fabrykant, "No photograph yet") shows no
+  camera chip in the top-left of the photo area, while `tree-nophoto.png`
+  (Maastricht wingnut, same "No photograph yet" state) does. Two photo-less trees
+  offering different ways to add a picture; pick one behaviour.
+- NOTE APP — on the photo-less tree screen the same add-a-photo action appears
+  twice (top-left chip and the camera button beside "Take me there"), with no
+  visible difference in purpose.
+- Other four screens (sign-in, species-pick, species, walk-begin) read fine: no
+  contradictions, counts consistent with their own text.
+
+---
+
 ## 2026-09-27
 
 Reviewed commits since the last review (2026-09-26, through `d67ff563`)
