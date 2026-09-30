@@ -14,6 +14,75 @@ roughly double the real number, and do not compare one across that date.
 because those point at /app and the listener matched the href. Every other
 event on the list is unaffected.
 
+## Weekly analysis 2026-09-30
+
+Ninth weekly analysis. Compares the last seven complete Search Console days
+(09-21 to 09-27) with the seven before (09-14 to 09-20), read from the daily
+entries. Google returned almost nothing for 09-28 (50 impressions) and 09-29,
+which is the usual lag and not a collapse, so both are left out. The 09-28
+daily entry is missing from this file.
+
+**Scorecard**
+
+| Week | Impressions | Clicks | CTR | Avg position | Visits (beacon) | Directions (14d) | App-CTA (14d) | Waitlist total | Submissions total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 09-14 to 09-20 | 15,069 | 322 | 2.1% | ~7.8 | 1,130 (8d to 09-22) | 39 | 50 | 19 | 25 |
+| 09-21 to 09-27 | 15,217 | 377 | 2.5% | ~7.6 | 2,690 (8d to 09-29), about 1,440 without the 09-26 spike | 43 | 42 | 20 (Android) | 27 |
+
+**What moved:**
+1. Clicks rose 17% (322 to 377) on flat impressions (+1%), so the gain is CTR
+   (2.1% to 2.5%), not reach. Position improved slightly. 09-25 was the best
+   day in the window (80 clicks, 3.5%). Volumes are small; read this as
+   steady, not as a breakout.
+2. The machine went dark again. Across 09-23 to 09-27 it logged about 1,900
+   minutes and roughly 200 trees, well past the 1,000 to 1,400 weekly budget.
+   From 09-28 08:00 on, all 6 knocks we can see (09-29 10:13 to 09-30 07:40)
+   ran 0.0 minutes and 0 trees. That is the weekly usage wall, the same
+   shape as 09-19 to 09-22, and it follows days of 535 and 646 minutes with
+   7 to 46 refused commands per run.
+3. Beacon visits look like they doubled, but one day explains it: 09-26 had
+   1,250 visits and 1,280 pageviews, of which /open took 790, against 130 to
+   310 on other days. That is a link or QR burst to the app-open redirect,
+   not a trend. Singapore (410) and direct traffic (2,290 of 3,190 pageviews)
+   carry the window.
+4. App Store downloads are still frozen at 2026-09-17 (72 over 14 days). That
+   is 13 days, every digest since 09-16. The app's own events still move
+   (120 opens and 497 trees opened in 14 days from 61 installs), so the app
+   is being used while the downloads table says nothing.
+5. Reader supply is one person. 20 of 20 non-"us" submission rows in 14 days
+   come from one account (ebde), and the new rows on 09-28 and 09-29
+   (Minamiaso, Ueki) are still awaiting a verdict. Account registrations: 2
+   this week (09-25), one Android waitlist signup.
+
+**Suggestions, ranked:**
+1. **[sessie]** Fix `scripts/asc_downloads.py`. Its table has not advanced
+   since 09-17, and it is the only number on the page that counts people
+   deciding rather than arriving. This was suggestion 1 last time and
+   nothing has changed.
+2. **[run]** Write verdicts for the 5 open reader submissions (Minamiaso x3,
+   Ueki, and "A tree I found"), using `judgement.py --scan` then `--verdict`.
+   Readers sending trees outranks new coverage, and a verdict Hidde can
+   overrule is the point of the table.
+3. **[run]** Do not treat the new zero-click impression pages as demand.
+   /sao-paulo (268), /jauze (258), /wilparting (161), /komjatice (138) and
+   /peesten (75) jumped by 70 to 258 impressions with 0 clicks, and the top
+   queries shown for two of them are "peesten municipality 2019" and
+   "kasukabe new city hall construction bid", which are not tree searches.
+   Check them against seolearn's NOT_DEMAND rule before spending photos or
+   depth on them.
+4. **[run]** Pamplona is no longer the big earned-and-wasted page. It fell
+   from 525 impressions to 43 to 71 (-401) and its position slipped 3.2
+   places, so last week's photo-hunt target was partly a one-off burst.
+   Keep the photo gap on it, but rank by current impressions, not the old 525.
+5. **[FOR HIDDE]** The run budget: the machine hit the weekly wall again
+   within five days of the reset to 1,800/260, then stalled for two days.
+   Decide whether to cap daily minutes lower so it works every day instead
+   of five days on and several off. The total minutes are the same.
+
+**Watch next week:** whether knocks resume and produce trees once the weekly
+window rolls over (about 10-02), whether asc_downloads.py starts moving, and
+whether the 09-25 CTR of 3.5% repeats or was a single day.
+
 ## 2026-09-29 (previous UTC day)
 
 **Today: the machine produced nothing across all 6 knocks in the last 24h (0.0 real minutes total, 0 trees), not a quiet night.**
