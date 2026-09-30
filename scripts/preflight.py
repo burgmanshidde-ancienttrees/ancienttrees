@@ -1004,6 +1004,29 @@ def check_every_tree_names_a_source():
     return out
 
 
+TITLE_MAX = 60
+
+
+def check_tree_name_fits_a_title():
+    """A tree page's title is at least its name, and the Astro build refuses a
+    title over 60 characters by throwing, which fails the WHOLE build rather
+    than one page. Ondategi's oak went live in data on 2026-09-28 with a
+    62-character name and every deploy and fresh-eyes review stayed red for two
+    days, while this file said 0 problems. So the name is checked here, where it
+    costs a line instead of a site."""
+    out = []
+    for p in sorted(glob.glob("data/cities/*.json")):
+        with open(p, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for t in d.get("trees") or []:
+            name = t.get("name") or ""
+            if len(name) > TITLE_MAX:
+                out.append("%s: %s name is %d characters, over the %d a page title allows, "
+                           "and the site build fails on it: %r"
+                           % (os.path.basename(p)[:-5], t.get("id"), len(name), TITLE_MAX, name))
+    return out
+
+
 def check_a_tree_can_be_told_apart():
     """Nothing ships with a rough pin, no photograph and no recognition line.
 
@@ -2530,6 +2553,7 @@ def main():
                 + check_one_photograph_per_tree()
                 + check_translations_have_no_stray_script()
                 + check_every_tree_names_a_source()
+                + check_tree_name_fits_a_title()
                 + check_a_tree_can_be_told_apart()
                 + check_covered_countries_want_a_photo_or_a_pin()
                 + check_story_length()

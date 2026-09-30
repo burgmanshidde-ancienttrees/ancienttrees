@@ -10,6 +10,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-30 session: site build red for two days, fixed
+
+- **Every deploy and fresh-eyes review since 2026-09-28 failed** on one tree name: Ondategi's oak was called "Ondategiko Haritza (the Roble de Ondategi / Roble de Sarragoa)", 62 characters, and the Astro build throws on a title over 60. Renamed to "Ondategiko Haritza (Roble de Ondategi)". The page never built, so no live URL changed. New `check_tree_name_fits_a_title()` in preflight turns this into a one-line FAIL.
+- **The 2026-09-29 digest was lost to a push race** (built, committed, rejected once, discarded). data-digest.yml now retries the push five times, the same loop routes.yml already uses. Today's digest was dispatched by hand.
+
 ## 2026-09-30 - Night run 2026-09-30 07:40 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
