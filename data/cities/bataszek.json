@@ -1,0 +1,62 @@
+{
+  "city": "Bátaszék",
+  "country": "Hungary",
+  "status": "needs_curation",
+  "intro": "In 2016 a hollow downy oak on a vineyard hill above Bátaszék won European Tree of the Year with 72,653 votes, then a record for the contest. It stands beside the small chapel of Saint Orbán, 4.7 metres round and about 17.5 metres tall, and the town still pours wine over its trunk every 25 May for a good harvest. Its age is put at 300 to 400 years; nobody has measured it.",
+  "meta_description": "The Bátaszék downy oak won European Tree of the Year 2016 with a record 72,653 votes. A hollow oak by a hilltop chapel, free to visit.",
+  "question_meta": "Bátaszék's remarkable tree is a hollow downy oak beside the Saint Orbán chapel, European Tree of the Year 2016.",
+  "question_answer": "Bátaszék's remarkable tree is the downy oak on Orbán Hill, beside the Saint Orbán chapel, which won European Tree of the Year in 2016 with 72,653 votes. It is 4.7 metres round, about 17.5 metres tall and put at 300 to 400 years old, an estimate rather than a measurement.",
+  "question_context": "The oak had already been named Hungary's Tree of the Year in 2015 when it went on to win the European contest the following spring, with a vote count that was a record at the time. It stands on the edge of Bátaszék in Tolna County, on the hill named for Saint Orbán, the patron of winegrowers, and next to his chapel. Local tradition credits it with outlasting the Ottoman period, and says that during the Danube flood of 1956 residents sheltered on the hill and mass was said beside the tree. Farmers have long cut away its dead wood and painted the stumps against disease, and on Saint Orbán's Day, 25 May, locals pour wine on the trunk in the hope of a good grape harvest. The age most often given is 300 to 400 years; some outlets say simply about 400. Neither figure comes from a ring count, so the range is the honest answer.",
+  "hero_tree_id": "btz_001",
+  "oldest_tree_id": "btz_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Bátaszék?",
+      "a": "The downy oak on Orbán Hill, beside the Saint Orbán chapel, winner of European Tree of the Year 2016 with 72,653 votes."
+    },
+    {
+      "q": "How old is the Bátaszék oak?",
+      "a": "It is usually given as 300 to 400 years old, sometimes simply about 400. That is an estimate from the contest and the press, not a measurement."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the hill beside the chapel on the edge of town, open to visitors."
+    }
+  ],
+  "trees": [
+    {
+      "id": "btz_001",
+      "name": "Bátaszék Downy Oak (St Orbán Hill oak)",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "300 to 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 470,
+      "location": {
+        "address": "Orbán-hegy, next to the Szent Orbán Chapel, Bátaszék, Tolna County, Hungary",
+        "latitude": 46.17019,
+        "longitude": 18.7004,
+        "neighbourhood": "Orbán-hegy"
+      },
+      "story": "In 2016 a hollow oak on a vineyard hill in southern Hungary beat every other tree in Europe, with 72,653 votes, a record for the contest at the time. A year earlier it had been named Hungary's Tree of the Year.\n\nIt stands on Orbán Hill at the edge of Bátaszék, beside the small chapel of Saint Orbán, the patron of winegrowers. The trunk is 4.7 metres round and the crown rises to about 17.5 metres. Its age is given as 300 to 400 years, or simply about 400 in some reports. Nobody has measured it, so the range is the honest answer.\n\nWhat it has lived through reaches us as local tradition rather than record. By that account it came through the Ottoman period, and during the Danube flood of 1956 residents sheltered on the hill and mass was said beside it.\n\nThe town's care for it has always been practical. Farmers cut away its dead branches and painted the stumps against disease, and on Saint Orbán's Day, 25 May, locals pour wine over the trunk in the hope of a good grape harvest. It is a strange sort of offering to make to an oak, and the oak has so far returned the favour by staying alive.\n\nThat is the appeal. A small wine town tended one tree by hand for generations, then sent it to the top of a continent.",
+      "how_to_recognise": "You can recognise it by the hollow trunk, 4.7 metres round. It stands right beside the small Saint Orbán chapel on the hill, and it is the one big oak there.",
+      "verified_sources": [
+        "https://www.turistamagazin.hu/hir/bataszeki-molyhos-tolgy-2022-02-25",
+        "https://kirandulastervezo.hu/latnivalo/bataszek/molyhos-tolgy",
+        "https://index.hu/kulfold/ep/2016/04/20/a_bataszeki_molyhos_tolgy_lett_az_ev_europai_faja/",
+        "https://www.treeoftheyear.org/"
+      ],
+      "access": "Free; on the open hill beside the Szent Orbán chapel, open to visitors.",
+      "transport": "On Orbán Hill at the edge of Bátaszék, Tolna County.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}
