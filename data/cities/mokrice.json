@@ -1,0 +1,70 @@
+{
+  "city": "Mokrice",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Outside the hamlet of Mokřice, near Krásná Hora nad Vltavou, a protected beech 4.10 metres round stands in open country, with a picnic table beside it. The Czech nature conservation agency lists it as a memorial tree. Nobody has published its age, and the last reports of it are thin, so if you walk out to see it, tell us what you find.",
+  "meta_description": "The Mokřice beech: a protected memorial tree 4.10 metres round in open country near Krásná Hora nad Vltavou, Příbram district.",
+  "question_meta": "Mokřice's memorial tree is a European beech 4.10 metres round, standing in open country near Krásná Hora nad Vltavou.",
+  "question_answer": "The tree at Mokřice is Buk v Mokřicích, a European beech with a trunk 4.10 metres round, listed as a memorial tree by the Czech nature conservation agency. It stands in open country near the hamlet of Mokřice, part of Krásná Hora nad Vltavou in the Příbram district.",
+  "question_context": "The register is the only source we have for this tree: it records the name, the girth and the protection, and nothing about age or history. We found no dated photograph of it, only two pictures of unknown date, so we cannot say when anyone last reported it standing, although the register records no loss. OpenStreetMap marks a picnic table at the same spot, which suggests ordinary open countryside; no source states the access outright. We found no public transport stop close by: Mokřice lies roughly 3.5 kilometres south of Krásná Hora nad Vltavou, so this is a walk or a drive into the countryside. A trunk of 4.10 metres is a big one for a beech, and it is the whole case for going: there is no plaque story, legend or local history page that we could find. Nobody has published an age, and we would rather leave the field empty than guess. If you make the trip, a photograph with a date on it, or a fresh tape measure around the trunk, would settle more about this tree than anything currently in print.",
+  "faq": [
+    {
+      "q": "Where is the Mokřice beech?",
+      "a": "In open country near the hamlet of Mokřice, part of Krásná Hora nad Vltavou in the Příbram district, where OpenStreetMap marks a picnic table."
+    },
+    {
+      "q": "How big is it?",
+      "a": "The register records a trunk 4.10 metres round. No age has been published."
+    },
+    {
+      "q": "Can I visit it?",
+      "a": "It appears to stand on open countryside with a picnic table beside it, but no source states the access outright, and there is no nearby public transport."
+    }
+  ],
+  "hero_tree_id": "mok_001",
+  "oldest_tree_id": "mok_001",
+  "trees": [
+    {
+      "id": "mok_001",
+      "name": "Buk v Mokřicích",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 410,
+      "location": {
+        "address": "Near the hamlet of Mokřice, part of Krásná Hora nad Vltavou, Příbram District",
+        "latitude": 49.575569336650446,
+        "longitude": 14.268559667583151,
+        "neighbourhood": "Mokřice, Krásná Hora nad Vltavou"
+      },
+      "verified_sources": [
+        "data/registers/czech-aopk-pamatne-stromy.json (AOPK ČR Pamatne stromy register, CC BY 4.0, kod 103488, last changed 2013-06-25)"
+      ],
+      "access": "Likely free, rural open ground: OpenStreetMap records a public picnic table (leisure=picnic_table) at this exact coordinate (via Nominatim reverse lookup), which reads as an ordinary countryside spot rather than fenced private land. No explicit access statement found from any source; treat as an open-countryside assumption rather than a confirmed fact.",
+      "transport": "Rural, near the hamlet of Mokřice, roughly 3.5km south of the town of Krásná Hora nad Vltavou; no public transport stop identified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A beech 4.10 metres round stands in open country outside Mokřice, a hamlet belonging to the small town of Krásná Hora nad Vltavou, and according to OpenStreetMap somebody has put a picnic table right beside it.\n\nThe Czech nature conservation agency, AOPK, lists it as a memorial tree under the simplest name possible, Buk v Mokřicích, the beech at Mokřice. That entry is the whole of its paperwork. We found no plaque story, no founding legend and no local history page, which is unusual for a Czech tree that made the national list. What the register does keep is the girth, and 4.10 metres is a lot of beech for a tree standing out in the fields of the Příbram district rather than in a castle park or an old forest.\n\nSo this one arrives without a story attached and has to be judged on its trunk alone, which is a test it passes.\n\nWe have to be straight about two gaps. Nobody has published its age, and we would rather leave the field empty than guess. And we found no dated photograph of it at all, only the register entry and two pictures of unknown date, so we cannot say when anyone last reported it standing. The register itself records no loss. If you walk out to Mokřice, tell us what you find, and bring a tape measure if you fancy checking the state's number.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.10 metres round, a big beech out in open country. It stands near the hamlet of Mokřice, at the spot where OpenStreetMap marks a picnic table.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the beech turns copper and gold"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "container": {
+        "type": "own_place",
+        "place": "Mokrice, Czech Republic"
+      }
+    }
+  ]
+}
