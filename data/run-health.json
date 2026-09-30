@@ -19949,6 +19949,62 @@
    ],
    "trees": 5,
    "logged": true
+  },
+  {
+   "started": "2026-09-30T11:11:58+00:00",
+   "date": "2026-09-30",
+   "run_id": "36707010594",
+   "minutes": 18.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 64,
+   "denials": 5,
+   "denials_source": "permission_denials: Bash(cat ; import ; if ; for ...), Bash(cd ; ? ; ? | python3 ...), Bash(cd ; python3 ; python3 ; python3 ...), Bash(cd ; sed ; no ; reached ...), Bash(python3 | tail ; python3 | tail ...)",
+   "ended": "success",
+   "tokens": 438995,
+   "claims_held": [
+    "Houston",
+    "New Orleans",
+    "Chicago"
+   ],
+   "commits": 15,
+   "cities_touched": 8,
+   "cities": [
+    {
+     "city": "bataszek",
+     "trees": 1
+    },
+    {
+     "city": "daruvar",
+     "trees": 1
+    },
+    {
+     "city": "jarvselja",
+     "trees": 1
+    },
+    {
+     "city": "krka-national-park",
+     "trees": 1
+    },
+    {
+     "city": "melykut",
+     "trees": 1
+    },
+    {
+     "city": "tata",
+     "trees": 1
+    },
+    {
+     "city": "valdemarpils",
+     "trees": 1
+    },
+    {
+     "city": "viljandi",
+     "trees": 1
+    }
+   ],
+   "trees": 8,
+   "logged": true
   }
  ],
  "schedule_changes": [
