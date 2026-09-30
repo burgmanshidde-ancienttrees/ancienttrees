@@ -1,0 +1,69 @@
+{
+  "city": "Valdemārpils",
+  "country": "Latvia",
+  "status": "needs_curation",
+  "intro": "At the edge of Valdemārpils, in the old Sasmaka manor park, stands the thickest lime in the Baltic states: 8.65 metres round and 25 metres tall. Its name, the Elku linden, points to an old tradition that it was a sacrificial tree, and folklore gives it 400 to 500 years, while a 2023 measurement by the municipality suggests closer to 250. It was Latvia's entry to European Tree of the Year 2026, and it is free to visit.",
+  "meta_description": "The Elku Linden of Valdemārpils, Latvia, is the thickest lime in the Baltics at 8.65 m round. A hollow former sacrificial tree, free to visit.",
+  "question_meta": "Valdemārpils' remarkable tree is the Elku linden, the thickest lime in the Baltics, in the Sasmaka manor park.",
+  "question_answer": "Valdemārpils' remarkable tree is the Elku Linden, a small-leaved lime in the Sasmaka manor park on the edge of town, 8.65 metres round and 25 metres tall, billed by Talsi municipality as the thickest lime in the Baltic states. Its age is disputed: folklore says 400 to 500 years, a 2023 measurement points to about 250.",
+  "question_context": "The name Elku means idols, or sacrifice, and local tradition holds that the tree was once a place of offerings, which is where the older age of 400 to 500 years comes from. Talsi municipality, which published new measurements in November 2025, reads the tree differently: at the growth rate it measured in 2023, roughly 3.5 centimetres a year, it arrives at about 247 years, a planting around 1770. We give both, because neither source has settled it. The girth was 8.65 metres at 0.3 metres above the ground in 2025, the crown covers about 320 square metres, and the trunk is hollow, with wood inside that visitors read as owls, hedgehogs, turtles and snakes. A storm in 1967 took about a third of the crown and a large limb came down in 2010; parts of the tree are now held with cables and cement. It was Latvia's entry to European Tree of the Year 2026.",
+  "hero_tree_id": "vld_001",
+  "oldest_tree_id": "vld_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Valdemārpils?",
+      "a": "The Elku Linden in the Sasmaka manor park, a small-leaved lime 8.65 metres round, described by Talsi municipality as the thickest lime in the Baltic states."
+    },
+    {
+      "q": "How old is the Elku linden?",
+      "a": "Sources disagree. Folklore and the heritage site senvietas.lv say 400 to 500 years; Talsi municipality, from 2023 growth measurements, estimates about 247 years."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the Sasmaka manor park at the edge of Valdemārpils, open to visitors."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vld_001",
+      "name": "Elku Linden of Valdemārpils (Linden of Sacrifice)",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "disputed, 250 to 500 years",
+      "age_min": 250,
+      "age_max": 500,
+      "girth_cm": 865,
+      "location": {
+        "address": "Sasmaka Manor park, edge of Valdemārpils, Talsi Municipality, Latvia",
+        "latitude": 57.37889,
+        "longitude": 22.60033,
+        "neighbourhood": "Sasmaka"
+      },
+      "story": "Inside the hollow trunk of the thickest lime in the Baltic states, the wood has grown into shapes that visitors read as owls, hedgehogs, turtles and snakes.\n\nThe Elku linden stands in the old Sasmaka manor park on the edge of Valdemārpils. In 2025 Talsi municipality measured it at 8.65 metres round, taken low, at 30 centimetres above the ground, with a height of 25 metres and a crown covering some 320 square metres.\n\nIts name is its oldest story. Elku means idols, or sacrifice, and tradition says this was once a tree where offerings were made. Folklore and Latvia's heritage site senvietas.lv give it 400 to 500 years. The municipality disagrees: measurements in 2023 found it growing about 3.5 centimetres a year, which works back to roughly 247 years and a planting around 1770. The two readings are far apart and nobody has settled it, so we give both.\n\nWhatever its age, it has been through a lot. A storm in 1967 took about a third of the crown, and a large limb came down in 2010. Parts of the tree are now held together with cables and cement, and the municipality reported it alive in late 2025.\n\nIn 2026 it was Latvia's entry to European Tree of the Year. Come in July if you can, when the lime is in flower.",
+      "how_to_recognise": "You can recognise it by the trunk, 8.65 metres round near the ground and hollow, with parts of the tree held by cables and cement. It stands in the Sasmaka manor park and is the one obvious giant there.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the old lime flowers"
+      },
+      "verified_sources": [
+        "https://www.talsunovads.lv/lv/jaunums/eiropas-gada-koks-latvija-2025-elku-liepa-valdemarpili",
+        "https://www.senvietas.lv/valdemarpils-elku-liepa/",
+        "https://travelblog.lv/lv/valdemarpils-liepa-pati-vecaka-liepa-latvija/",
+        "https://www.treeoftheyear.org/"
+      ],
+      "access": "Free; publicly accessible, at the edge of Valdemārpils in the Sasmaka manor park.",
+      "transport": "Sasmaka manor park on the edge of Valdemārpils, Talsi Municipality.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}
