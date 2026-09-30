@@ -10,6 +10,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-30 night run (2): Tree of the Year shelf refill, eight places published
+
+- **Visits, 7 days:** 2,770 visits, 3,240 views.
+- **Rung 1:** the five Kagoshima/Aso sightings still carried the stub `why`; rewrote each as a lead (own account, no register, nothing setting it apart).
+- **Refill:** nothing was writable, so a verify pass on `_tree-of-the-year` confirmed 10 of 81 unsourced leads; the write pass merged 8 as single-tree places: Bataszek, Tata, Valdemarpils, Daruvar, Krka National Park, Melykut, Jarvselja, Viljandi. Studena and Novo Selo are written but unmerged (private field, contest-only pins). Preflight 0 problems; site build not run.
+- **Hosts for the blocklist:** kisalfold.hu and bepf-bg.org (403), old-news.bnr.bg (certificate error); Wikipedia API needs a user agent and pacing.
+- **Rung 2, not fixable from here:** iOS app run and fresh-eyes review are red; `gh workflow run review.yml` returned HTTP 403 on this runner.
+- **Still open:** fdl_001 vs spa_001 pin check (see entry below); about 60 Tree of the Year leads untouched.
+
 ## 2026-09-30 night run: five single-famous-tree places published
 
 - **Visits, 7 days:** 2,411 visits, 2,831 views (1,063 on 09-26, a spike).
