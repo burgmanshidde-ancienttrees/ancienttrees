@@ -10,6 +10,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-30 night run: five single-famous-tree places published
+
+- **Visits, 7 days:** 2,411 visits, 2,831 views (1,063 on 09-26, a spike).
+- **Rung 1:** five new reader sightings (Minamiaso, Ueki, Kagoshima area), all Hidde's own photos, no register entry or write-up. Verdict `lead` for each; photos were not viewed this run.
+- **Write pass:** Ceska Lipa, Mokrice, Nisia Floresta, Maxaranguape and Guaiba, one tree each, all flagged, no photo. The two Czech beeches rest on the register alone.
+- **Held:** fdl_001 Figueira das Lagrimas is already live as spa_001 (Sao Paulo), and the two pins are ~3 km apart, so one is wrong. That is a rung-3 pin check for the next run. The verify pass also found a 2016 CONPRESP listing the live page lacks.
+- 130 leads still sit one field away on position; the shelf is under its floor, so the next run should refill it (_tree-of-the-year, seattle, _famous-austria).
+
 ## 2026-09-30 session: site build red for two days, fixed
 
 - **Every deploy and fresh-eyes review since 2026-09-28 failed** on one tree name: Ondategi's oak was called "Ondategiko Haritza (the Roble de Ondategi / Roble de Sarragoa)", 62 characters, and the Astro build throws on a title over 60. Renamed to "Ondategiko Haritza (Roble de Ondategi)". The page never built, so no live URL changed. New `check_tree_name_fits_a_title()` in preflight turns this into a one-line FAIL.
