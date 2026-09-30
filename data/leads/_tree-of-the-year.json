@@ -741,13 +741,19 @@
       "lng": 18.3188,
       "gps_as_published": "N 47°38'51.72'', E 18°19'7.68''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2015/Velky-platan-v-Tate",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
-        "id": "bud_005",
-        "name": "The Seven Chieftains Plane",
-        "place": "Budapest",
-        "km": 56.2
-      }
+        "id": "tta_001",
+        "name": "The Great Plane of Tata (Tatai nagy platán)",
+        "place": "Tata",
+        "km": 0.0
+      },
+      "mapped_as": {
+        "id": "tta_001",
+        "name": "The Great Plane of Tata (Tatai nagy platán)",
+        "place_slug": "tata"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "Poplar pollard of the Remolinar",
@@ -1059,13 +1065,19 @@
       "lng": 18.700267,
       "gps_as_published": "N 46°10'12.4'', E 18°42'0.96''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2016/Nejstarsi-strom-v-Bataszeku",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
-        "id": "srk_001",
-        "name": "The Plane of the Lower Church",
-        "place": "Sremski Karlovci",
-        "km": 144.23
-      }
+        "id": "btz_001",
+        "name": "Bátaszék Downy Oak (St Orbán Hill oak)",
+        "place": "Bátaszék",
+        "km": 0.01
+      },
+      "mapped_as": {
+        "id": "btz_001",
+        "name": "Bátaszék Downy Oak (St Orbán Hill oak)",
+        "place_slug": "bataszek"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "The Thousand Year Old Lime",
@@ -2528,13 +2540,19 @@
       "lng": 17.219769,
       "gps_as_published": "N 45°35'43.51'', E 17°13'11.17''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2020/Jinan-z-Daruvaru",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
-        "id": "gst_001",
-        "name": "Gupčeva lipa",
-        "place": "Gornja Stubica",
-        "km": 102.54
-      }
+        "id": "dgk_001",
+        "name": "Adam, the Daruvar Ginkgo",
+        "place": "Daruvar",
+        "km": 0.0
+      },
+      "mapped_as": {
+        "id": "dgk_001",
+        "name": "Adam, the Daruvar Ginkgo",
+        "place_slug": "daruvar"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "Lonely Poplar",
@@ -3080,13 +3098,19 @@
       "lng": 19.379803,
       "gps_as_published": "N 46°12'57.18'', E 19°22'47.29''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2021/The-Judas-Tree-on-the-Church-Hill-of-Melykut-(Hung",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
-        "id": "srk_001",
-        "name": "The Plane of the Lower Church",
-        "place": "Sremski Karlovci",
-        "km": 120.72
-      }
+        "id": "mly_001",
+        "name": "The Judas Tree of Mélykút Church Hill",
+        "place": "Mélykút",
+        "km": 0.0
+      },
+      "mapped_as": {
+        "id": "mly_001",
+        "name": "The Judas Tree of Mélykút Church Hill",
+        "place_slug": "melykut"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "The Pouplie",
@@ -3542,13 +3566,19 @@
       "lng": 27.321839,
       "gps_as_published": "N 58°16'21.36'', E 27°19'18.62''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2022/The-Kings-Pine",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
-        "id": "tln_007",
-        "name": "The Kadriorg Guardhouse Oak",
-        "place": "Tallinn",
-        "km": 194.86
-      }
+        "id": "kmd_001",
+        "name": "Kuningamänd (the King's Pine)",
+        "place": "Järvselja",
+        "km": 0.01
+      },
+      "mapped_as": {
+        "id": "kmd_001",
+        "name": "Kuningamänd (the King's Pine)",
+        "place_slug": "jarvselja"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "Grandpa Kolyo's tree",
@@ -4283,13 +4313,19 @@
       "lng": 25.645556,
       "gps_as_published": "N 58°22'15.64'', E 25°38'44''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2024/the-viiralts-oak",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
-        "id": "tln_007",
-        "name": "The Kadriorg Guardhouse Oak",
-        "place": "Tallinn",
-        "km": 128.36
-      }
+        "id": "vna_001",
+        "name": "Viiralti Oak (Tamme-Koori Oak)",
+        "place": "Viljandi",
+        "km": 0.01
+      },
+      "mapped_as": {
+        "id": "vna_001",
+        "name": "Viiralti Oak (Tamme-Koori Oak)",
+        "place_slug": "viljandi"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "The Green Lady of the \"Krka\" National Park",
@@ -4305,13 +4341,19 @@
       "lng": 15.964692,
       "gps_as_published": "N 43°48'25.3'', E 15°57'52.89''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2024/the-green-lady-of-the-krka-national-park",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
-        "id": "spl_003",
-        "name": "The Cypress of Kolombatović",
-        "place": "Split",
-        "km": 49.78
-      }
+        "id": "kzd_001",
+        "name": "The Green Lady of Krka (Skradinski Buk mulberry)",
+        "place": "Krka National Park",
+        "km": 0.0
+      },
+      "mapped_as": {
+        "id": "kzd_001",
+        "name": "The Green Lady of Krka (Skradinski Buk mulberry)",
+        "place_slug": "krka-national-park"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "An Oak That Remembers the Pálffy Family",
@@ -4803,13 +4845,19 @@
       "lng": 22.600442,
       "gps_as_published": "N 57°22'43.89'', E 22°36'1.59''",
       "source_url": "https://www.treeoftheyear.org/previous-years/2026/linden-of-sacrifice-elku-liepa",
-      "status": "lead",
+      "status": "published",
       "nearest_published": {
-        "id": "rig_004",
-        "name": "The Zasulauks Maple",
-        "place": "Riga",
-        "km": 100.21
-      }
+        "id": "vld_001",
+        "name": "Elku Linden of Valdemārpils (Linden of Sacrifice)",
+        "place": "Valdemārpils",
+        "km": 0.01
+      },
+      "mapped_as": {
+        "id": "vld_001",
+        "name": "Elku Linden of Valdemārpils (Linden of Sacrifice)",
+        "place_slug": "valdemarpils"
+      },
+      "mapped_by": "distance under 250 m"
     },
     {
       "name": "The Kostrena oak tree",
