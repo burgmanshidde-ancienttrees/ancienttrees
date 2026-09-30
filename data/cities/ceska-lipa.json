@@ -1,0 +1,64 @@
+{
+  "city": "Ceska Lipa",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Česká Lípa's memorial tree is a copper beech with a trunk 3.85 metres round, standing in a small park on a street corner beside the city hospital. The Czech nature conservation agency listed it in 2010 and protects a twelve-metre circle around it. Its leaves open deep purple in spring. Nobody has published its age, and if you know when it went in, we would like to hear.",
+  "meta_description": "Česká Lípa's copper beech: a 3.85-metre trunk in a small park beside the hospital, a protected memorial tree since 2010. Free to visit.",
+  "question_meta": "Česká Lípa's best-known tree is a protected copper beech 3.85 metres round, in a small park at Moskevská and U Kartounky.",
+  "question_answer": "Česká Lípa's best-known tree is the Českolipský buk lesní, a copper beech with a trunk 3.85 metres round, protected as a memorial tree since 15 October 2010. It stands in a small public park at the corner of Moskevská and U Kartounky, beside the city hospital.",
+  "question_context": "The Czech nature conservation agency, AOPK, lists it as Buk lesní v Moskevské ulici, the beech on Moskevská street, under registry number 104688, and records it as the purple-leaved form of the European beech rather than the ordinary green one. Locally it carries the prouder name Českolipský buk lesní, the beech of Česká Lípa. It was declared a memorial tree on 15 October 2010, and its protection zone is a circle with a twelve-metre radius around the trunk, drawn outside the parcel the tree grows on. No source gives an age, and we have not invented one; if you know when it was planted, tell us. The most recent dated photograph we found is from 2012. The register still lists the tree as protected and records no loss, which is encouraging, so a reader's report that it is standing is welcome. The park is open ground beside the city hospital with no gate or ticket, and our pin places you in the park rather than exactly at the trunk.",
+  "faq": [
+    {
+      "q": "Where is the Česká Lípa beech?",
+      "a": "In a small public park at the corner of Moskevská and U Kartounky streets, next to the city hospital."
+    },
+    {
+      "q": "How old is it?",
+      "a": "No source gives an age. Its trunk is 3.85 metres round. If you know when it was planted, tell us."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The park is open ground with no gate or ticket."
+    }
+  ],
+  "hero_tree_id": "csl_001",
+  "oldest_tree_id": "csl_001",
+  "trees": [
+    {
+      "id": "csl_001",
+      "name": "Českolipský buk lesní",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 385,
+      "location": {
+        "address": "Small public park (parčík) at the corner of Moskevská and U Kartounky streets, near the city hospital, Česká Lípa",
+        "latitude": 50.68433003751712,
+        "longitude": 14.545477604158624,
+        "neighbourhood": "Česká Lípa"
+      },
+      "verified_sources": [
+        "data/registers/czech-aopk-pamatne-stromy.json (AOPK ČR Pamatne stromy register, CC BY 4.0, kod 104688, designated 2010-10-15)",
+        "https://cs.wikipedia.org/wiki/Pam%C3%A1tn%C3%A9_stromy_v_%C4%8Cesk%C3%A9_L%C3%ADp%C4%9B"
+      ],
+      "access": "Free. Stands in a small public park at the corner of Moskevská and U Kartounky streets, next to the city hospital; open ground, no gate or ticket found.",
+      "transport": "Within Česká Lípa town, walking distance of the town centre (exact stop not established this pass)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The state protects a circle twelve metres wide around this copper beech, and the circle sits on a street corner beside a hospital. Its trunk measures 3.85 metres round, a serious waistline for a tree in a patch of town green rather than a castle park.\n\nIt is not an ordinary beech. The Czech nature conservation agency, AOPK, records it as the purple form, the copper beech, whose leaves open a deep purple in spring and darken through the summer. The agency added it to the national list of memorial trees on 15 October 2010 under a plain working name, Buk lesní v Moskevské ulici, the beech on Moskevská street. Locally it goes by something prouder: Českolipský buk lesní, the beech of Česká Lípa.\n\nThe park it stands in is barely a park at all, a small square of grass at the corner of Moskevská and U Kartounky, with the hospital next door. Nothing else in it competes for attention.\n\nTwo things we do not know, and would like to. Nobody has published an age for it, so we will not invent one; if you know when it was planted, tell us. And the most recent dated photograph we could find was taken in 2012. The register still lists the tree as protected and records no loss, which is good news but not the same as somebody having seen it this year. If you walk past, let us know it is standing.",
+      "how_to_recognise": "You can recognise it by its purple leaves in the growing season and a trunk 3.85 metres round. It stands in the small park at the corner of Moskevská and U Kartounky, beside the city hospital.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "container": {
+        "type": "own_place",
+        "place": "Ceska Lipa, Czech Republic"
+      }
+    }
+  ]
+}
