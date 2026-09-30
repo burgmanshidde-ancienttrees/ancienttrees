@@ -9140,6 +9140,21 @@
    "note": "8 single-tree places merged (Bataszek, Tata, Valdemarpils, Daruvar, Krka, Melykut, Jarvselja, Viljandi); 2 written, unmerged",
    "wasted": 0,
    "brief_wrong": false
+  },
+  {
+   "target": "Houston",
+   "kind": "verify",
+   "tokens": 134548,
+   "trees": 2,
+   "note": "Sam Houston Park live oak plus Old Hanging Oak downtown; flagged, approximate pins; no register coverage"
+  },
+  {
+   "target": "Houston",
+   "kind": "write",
+   "tokens": 116217,
+   "trees": 2,
+   "note": "2 stories; fdl_001 skipped as duplicate of live spa_001",
+   "brief_wrong": true
   }
  ]
 }
