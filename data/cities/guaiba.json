@@ -1,0 +1,66 @@
+{
+  "city": "Guaiba",
+  "country": "Brazil",
+  "status": "needs_curation",
+  "intro": "Guaíba put a tree on its flag. The Cipreste Farroupilha in Praça Gomes Jardim is where, by the town's account, Farroupilha Revolution leaders planned their attack on Porto Alegre on 19 September 1835. Local tradition says it was planted around 1680 over a Spanish commander's grave, which would make it more than 300 years old, though that date rests on oral history.",
+  "meta_description": "The Cipreste Farroupilha, the cypress on Guaíba's flag, where the 1835 Farroupilha Revolution was planned. Free, in Praça Gomes Jardim.",
+  "question_meta": "Guaíba's Cipreste Farroupilha is a cypress said to be over 300 years old, where the Farroupilha Revolution was planned in 1835.",
+  "question_answer": "Guaíba's famous tree is the Cipreste Farroupilha, a cypress in Praça Gomes Jardim that appears on the city's flag, coat of arms and anthem. By local tradition it was planted around 1680, which would make it over 300 years old, and the 1835 Farroupilha Revolution was planned in its shade.",
+  "question_context": "The tradition is that the cypress was planted around 1680 to mark the grave of a Spanish army commander killed while passing through on a cattle hunt; no document confirms it, so the age is the town's memory rather than a measurement. On 19 September 1835, by the town's account, Bento Gonçalves da Silva, Onofre Pires and Gomes Jardim met beneath it to plan the invasion of Porto Alegre, and the tree took its name from the revolution. Nobody has recorded which Cupressus species it is or its girth. Our pin places you in the square rather than at the trunk. Guaíba lies across the water from Porto Alegre, a short trip by ferry or road, and the square is public and free. The Farroupilha Revolution the tree is named for became a ten-year war in which Rio Grande do Sul tried to break away from the Brazilian Empire, which is why a single tree in a small town square carries so much weight in the state's memory, and why it appears in the city's anthem as well as on its flag and coat of arms.",
+  "faq": [
+    {
+      "q": "How old is the Cipreste Farroupilha?",
+      "a": "Local tradition says it was planted around 1680, which would make it more than 300 years old, but no document confirms the date."
+    },
+    {
+      "q": "Why is it called Farroupilha?",
+      "a": "By the town's account, leaders of the Farroupilha Revolution met in its shade on 19 September 1835 to plan the attack on Porto Alegre."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in Praça Gomes Jardim, a public square in central Guaíba."
+    }
+  ],
+  "hero_tree_id": "gba_001",
+  "oldest_tree_id": "gba_001",
+  "trees": [
+    {
+      "id": "gba_001",
+      "name": "Cipreste Farroupilha",
+      "species": "Cypress (Cupressus sp.)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": null,
+      "location": {
+        "address": "Praça Gomes Jardim, Centro, Guaíba",
+        "latitude": -30.1100644,
+        "longitude": -51.3170434,
+        "neighbourhood": "Centro, Guaíba, Rio Grande do Sul"
+      },
+      "verified_sources": [
+        "https://pt.wikipedia.org/wiki/Cipreste_Farroupilha",
+        "https://www.guaiba.online/coluna/conhecaguaiba-a-importancia-do-cipreste-na-historia-de-nosso-estado",
+        "http://wikimapia.org/36442564/pt/Cipreste-Farroupilha"
+      ],
+      "access": "Free. Stands in Praça Gomes Jardim, a public square in central Guaíba; open ground.",
+      "transport": "Central Guaíba, a short ferry/road trip across the Rio Guaíba from Porto Alegre; nearest stop not established this pass",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This cypress is on the flag of the city it grows in, on the city's coat of arms, and in its anthem. Guaíba has its reasons. On 19 September 1835, by the town's own account, Bento Gonçalves da Silva, Onofre Pires and Gomes Jardim sat in its shade and planned the attack on Porto Alegre that opened the Farroupilha Revolution, the ten-year war in which Rio Grande do Sul tried to break away from the Brazilian Empire. The tree took the revolution's name, and the square around it is named after Gomes Jardim.\n\nThe story of how it got here is older and stranger. Local tradition holds that it was planted around 1680 over the grave of a Spanish army commander, killed while passing through on a cattle hunt, at a time when marking a grave with a tree was the custom. That would put it at something over 300 years, which is the figure Guaíba gives, but the date rests on oral history rather than any document, so read it as the town's memory rather than a measurement.\n\nNobody has recorded which cypress species it is, or how thick it is, and our pin puts you in the square rather than at the trunk. If you know either, or can stand at it and tell us where it is, we would like to hear.\n\nGuaíba sits across the water from Porto Alegre, a short trip by ferry or road. The square is public and free.",
+      "how_to_recognise": "You can recognise it as the old cypress of Praça Gomes Jardim, the tree Guaíba puts on its flag and coat of arms. The pin marks the square rather than the trunk, so look for the cypress in it.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "container": {
+        "type": "own_place",
+        "place": "Guaiba, Brazil"
+      }
+    }
+  ]
+}
