@@ -1,0 +1,73 @@
+{
+  "city": "Mélykút",
+  "country": "Hungary",
+  "status": "needs_curation",
+  "intro": "On the north side of the church in Mélykút, in the middle of the Great Hungarian Plain, grows a Judas tree, a Mediterranean species that has no business surviving there and has done so for about 250 years. Tradition says Franciscan monks probably brought the seed from Szabadka in the 1760s or 1770s. It was Hungary's Tree of the Year in 2020 and eighth in Europe in 2021, and it stands free to visit on the church grounds in the centre of town.",
+  "meta_description": "The Judas tree of Mélykút, a Mediterranean tree about 250 years old on the Hungarian plain, Hungarian Tree of the Year 2020. Free, by the church.",
+  "question_meta": "Mélykút's remarkable tree is a Judas tree about 250 years old beside the church, Hungarian Tree of the Year 2020.",
+  "question_answer": "Mélykút's remarkable tree is the Judas tree on church hill, beside the Roman Catholic church built by the Grassalkovich family. It is about 250 years old, thought to have been grown from seed brought by Franciscan monks in the 1760s or 1770s, and was Hungary's Tree of the Year in 2020.",
+  "question_context": "The Judas tree is a Mediterranean species, and this one grows on the exposed north side of a church on the Great Hungarian Plain, which the Hungarian news site Index called a minor miracle. Its age is given as 250 to 260 years, a planting in the 1760s or 1770s. Index writes that the seed was probably brought by Franciscan monks from Szabadka, today Subotica in Serbia, who served in Mélykút; the probably is theirs, and nobody has measured the tree. It stands in the geometric centre of a town of about 5,000, on church grounds that serve as a place to rest and play. In 2020 it won Hungary's Tree of the Year with 5,091 votes out of a record 20,464, and in 2021 it came eighth in the European contest. Folklore reads the tree through its name: the flowers stand for the blood of Christ, the flat seed pods for the silver paid to Judas.",
+  "hero_tree_id": "mly_001",
+  "oldest_tree_id": "mly_001",
+  "faq": [
+    {
+      "q": "What is the remarkable tree in Mélykút?",
+      "a": "The Judas tree beside the Roman Catholic church on church hill, Hungarian Tree of the Year 2020 and eighth in European Tree of the Year 2021."
+    },
+    {
+      "q": "How old is the Mélykút Judas tree?",
+      "a": "About 250 to 260 years, according to the Hungarian press, which dates it to the 1760s or 1770s. It has not been measured."
+    },
+    {
+      "q": "When is it in flower?",
+      "a": "In spring, usually late April into May, when pink flowers cover the branches before the leaves open."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the open church grounds in the centre of Mélykút."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mly_001",
+      "name": "The Judas Tree of Mélykút Church Hill",
+      "species": "Judas Tree (Cercis siliquastrum)",
+      "age_estimate": "about 250 years",
+      "age_min": 230,
+      "age_max": 260,
+      "girth_cm": null,
+      "location": {
+        "address": "Grounds of the Roman Catholic church (Grassalkovich church), church hill, Mélykút, Bács-Kiskun County, Hungary",
+        "latitude": 46.215883,
+        "longitude": 19.379803,
+        "neighbourhood": "Templomdomb"
+      },
+      "story": "A Mediterranean tree has been growing on the cold north side of a church on the Great Hungarian Plain for about 250 years. The Hungarian news site Index called it a minor miracle, and that is not much of an exaggeration.\n\nThe Judas tree belongs to warm, dry hillsides much further south. This one stands on church hill in Mélykút, in the geometric centre of a town of about 5,000, beside the church the Grassalkovich family built. Index dates it to the 1760s or 1770s and writes that the seed was probably brought by Franciscan monks from Szabadka, today Subotica, who served in the town. The probably is theirs. Nobody has taken a tape measure or a core to it, so the age rests on that story.\n\nThe name carries its own folklore. The flowers, which break out along the bare branches in spring, are read as the blood of Christ, and the flat seed pods that follow as Judas's silver.\n\nThe town treats the church grounds as a place to sit and to play, and the tree as its own. In 2020 it won Hungary's Tree of the Year with 5,091 votes, out of a record 20,464 cast, and in 2021 it came eighth in Europe. That spring the town held events beneath it.\n\nIf you have measured its trunk, tell us. Nobody has published a girth yet.",
+      "how_to_recognise": "You can recognise it in spring by pink flowers growing straight from the bare branches, and in summer by its round leaves and flat seed pods. It stands on the north side of the church on church hill.",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "flowers",
+        "label": "late April into May, when pink flowers break out along the bare branches"
+      },
+      "verified_sources": [
+        "https://index.hu/belfold/2020/10/15/ev_faja_fa_melykut_judasfa/",
+        "https://qubit.hu/2021/02/01/derekasan-kuzd-az-europai-ev-faja-cimert-a-melykuti-judasfa",
+        "https://www.treeoftheyear.org/"
+      ],
+      "access": "Free; on the publicly accessible church grounds in the town centre, a popular place to rest and play.",
+      "transport": "Centre of Mélykút; on foot from the town centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
