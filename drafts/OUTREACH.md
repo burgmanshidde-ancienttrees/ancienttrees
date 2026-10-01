@@ -863,6 +863,8 @@ site will or will not cost, which is the standing rule.
 | 2026-10-01 | Paulo V. Araujo, Dias com Arvores (dias.com.arvores@sapo.pt) | First link ask: his photos now on twelve Porto trees, would he link a tree page when he next writes about one; plus a tree in another Portuguese city. Reply in the existing thread with the history quoted (Hidde's ask) | **sent** |
 | 2026-09-02 | Paulo V. Araujo, Dias com Arvores (dias.com.arvores@sapo.pt) | Say he is right about the Bischofia, link both trees now carrying his photographs, and ask for a tree idea for Coimbra or any other Portuguese city | **sent** |
 | 2026-09-03 | Bymiljoetaten, Oslo kommune (postmottak@bym.oslo.kommune.no) | Thanks for the three Birkelunden photographs, ask whether we may credit Ingar Sorensen or should ask him ourselves, invite them to the app now it is live, and ask which Oslo tree we are missing | **sent** |
+| 2026-10-02 | Ingar Sorensen, photographer (ingar@sorensenfoto.no) | Asks to use his two Birkelunden photographs (forwarded by Bymiljoetaten) on osl_003 with his name credited; asks which Oslo tree we miss | **sent** |
+| 2026-10-02 | VisitOSLO image bank (social@visitoslo.com) | Asks to use Tord Baklund's Birkelunden photograph credited VisitOSLO / Tord Baklund, and whether they have one of Munch-eika | **sent** |
 
 He wrote back the same morning to say he photographed the Bischofia BECAUSE it
 is on our own Porto list, with a link to our page. He was right: por_006 has
