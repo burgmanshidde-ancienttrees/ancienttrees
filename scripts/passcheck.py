@@ -862,7 +862,7 @@ US_COUNTRY = "United States"
 FOCUS_COUNTRIES = {"United States", "United Kingdom", "Japan", "France", "Spain",
                    "Portugal", "Italy", "Germany", "Netherlands", "Belgium",
                    "Luxembourg", "Austria", "Switzerland", "Ireland",
-                   "Denmark", "Norway", "Sweden", "Australia"}  # Australia: Hidde, same day
+                   "Denmark", "Norway", "Sweden", "Australia", "Canada"}  # Australia, Canada: Hidde, same day
 # Contiguous states, Alaska, Hawaii. Rough on purpose: it decides which country
 # a place a run names is in, and a border town is a question for --country.
 US_BOXES = [(24.4, 49.5, -125.0, -66.9), (51.2, 71.5, -179.9, -129.9),
