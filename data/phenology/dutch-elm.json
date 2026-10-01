@@ -1,0 +1,45 @@
+{
+  "common_name": "Dutch Elm",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    2,
+    3
+  ],
+  "fruit": [
+    4,
+    5
+  ],
+  "colour": [
+    10,
+    11
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "nice"
+  },
+  "flower_label": "clusters of small red flowers on bare twigs",
+  "fruit_label": "broad-winged samaras crowd the twigs around the time the leaves open",
+  "colour_label": "yellow to brown",
+  "sources": [
+    "http://www.tree-guide.com/dutch-elm",
+    "https://en.wikipedia.org/wiki/Ulmus_%C3%97_hollandica",
+    "https://en.wikipedia.org/wiki/Ulmus_%C3%97_hollandica_%27Major%27"
+  ]
+}

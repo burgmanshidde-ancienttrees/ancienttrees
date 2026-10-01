@@ -1,0 +1,47 @@
+{
+  "common_name": "Large-leaved Lime",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    6,
+    7
+  ],
+  "fruit": [
+    9,
+    10
+  ],
+  "colour": [
+    10
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "striking",
+    "fruit": "nice",
+    "colour": "nice"
+  },
+  "flower_label": "scented pale yellow flowers in June, early for a lime and loud with bees",
+  "colour_label": "yellow-green to yellow",
+  "flower_colour": "#E4DCA2",
+  "flower_peak": 6,
+  "flower_days": "about a fortnight",
+  "sources": [
+    "https://plants.ces.ncsu.edu/plants/tilia-platyphyllos/",
+    "https://www.treesandshrubsonline.org/articles/tilia/tilia-platyphyllos/",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Tilia+platyphyllos",
+    "https://en.wikipedia.org/wiki/Tilia_platyphyllos"
+  ]
+}

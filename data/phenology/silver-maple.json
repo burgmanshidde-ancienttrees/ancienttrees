@@ -1,0 +1,45 @@
+{
+  "common_name": "Silver Maple",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    2,
+    3
+  ],
+  "fruit": [
+    4,
+    5,
+    6
+  ],
+  "colour": [
+    10
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "nice",
+    "fruit": "nice",
+    "colour": "nice"
+  },
+  "flower_label": "dense clusters of small red and yellow flowers on bare twigs, very early",
+  "fruit_label": "winged seeds ripen in spring, unlike most maples",
+  "colour_label": "usually pale yellow, sometimes orange or red",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Acer_saccharinum",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Acer+saccharinum",
+    "https://plants.ces.ncsu.edu/plants/acer-saccharinum/"
+  ]
+}

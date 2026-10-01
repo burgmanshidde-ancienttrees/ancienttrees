@@ -1,0 +1,44 @@
+{
+  "common_name": "Weeping Beech",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    4,
+    5
+  ],
+  "fruit": [
+    9,
+    10
+  ],
+  "colour": [
+    10,
+    11
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "striking"
+  },
+  "fruit_label": "beech mast, small triangular nuts in bristly husks",
+  "colour_label": "the hanging curtain of leaves turns gold and copper",
+  "sources": [
+    "https://plants.ces.ncsu.edu/plants/fagus-sylvatica-pendula/",
+    "https://en.wikipedia.org/wiki/Fagus_sylvatica",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Fagus+sylvatica"
+  ]
+}
