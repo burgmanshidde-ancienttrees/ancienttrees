@@ -1,0 +1,65 @@
+{
+  "city": "Maria Aurora",
+  "country": "Philippines",
+  "status": "needs_curation",
+  "intro": "The Millennium Tree in Maria Aurora's Balete Park is a strangler fig you can walk inside: its roots have fused into a cage around a hollow big enough for a small crowd. It is billed locally as the largest balete in Asia, and tradition gives it about 600 years, though nobody has measured either. The park sits roughly seven kilometres from the town proper, about half an hour by tricycle from Baler on the coast.",
+  "meta_description": "The Millennium Tree of Maria Aurora: a strangler fig you can stand inside, billed as Asia's largest balete and said to be about 600 years old.",
+  "question_meta": "Maria Aurora's oldest tree is the Millennium Tree in Balete Park, a strangler fig tradition puts at about 600 years. Where it is and how to visit.",
+  "question_answer": "The oldest tree in Maria Aurora is the Millennium Tree in Balete Park, a balete, or strangler fig, that tradition puts at about 600 years old. No measurement backs that figure. It stands in Barangay Quirino on the Pantabangan-Canili-Basal-Baler road, roughly seven kilometres from the town proper and about half an hour by tricycle from Baler, and a small entrance fee is reported.",
+  "question_context": "The 600 years is tradition, and it is worth knowing why nobody has done better. Every source that gives the figure, Wikipedia, a photographer's caption from 2011 and the travel blogs, repeats the same claim, so it amounts to one voice rather than several, and none of them gives a girth, a core or a ring count. A strangler fig is also an awkward tree to date. It begins as a seed lodged in the branches of a host, lets roots down around it and slowly encloses it, and in Balete Park the host has gone, leaving a hollow at the centre that visitors can step into. What stands is a lattice of fused roots rather than a single trunk. The tree's two titles, the largest balete in Asia and the Philippines' Millennium Tree, are reported from the municipality's own page, which we could not open, so treat them as the town's claim. What is certain is that it is alive: it was photographed for iNaturalist in 2023 and is reviewed by visitors every week. If you know its species, or have measured it, tell us.",
+  "hero_tree_id": "mra_001",
+  "oldest_tree_id": "mra_001",
+  "faq": [
+    {
+      "q": "How old is the Millennium Tree of Maria Aurora?",
+      "a": "About 600 years by tradition. Every source repeats the same figure and none gives a measurement behind it, so treat it as the local estimate rather than a dating."
+    },
+    {
+      "q": "Can you go inside the tree?",
+      "a": "Yes. The fig grew around a host tree that has since disappeared, leaving a hollow inside the roots that one visitor reckoned would hold about fifteen people."
+    },
+    {
+      "q": "Does it cost anything to visit?",
+      "a": "A small entrance fee is reported, around 30 pesos plus a 10 peso environmental fee, though we could not confirm it from the park's own page. Local guides charge extra."
+    },
+    {
+      "q": "How do I get to Balete Park?",
+      "a": "It is on the Pantabangan-Canili-Basal-Baler road in Barangay Quirino, roughly seven kilometres from Maria Aurora town and about half an hour by tricycle or car from Baler. There is no rail."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mra_001",
+      "name": "Millennium Tree of Balete Park",
+      "species": "Fig (Ficus sp.)",
+      "age_estimate": "roughly 600 years",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Balete Park, Barangay Quirino, Pantabangan-Canili-Basal-Baler Road, Maria Aurora, Aurora",
+        "latitude": 15.7697,
+        "longitude": 121.4769,
+        "neighbourhood": "Barangay Quirino, Maria Aurora"
+      },
+      "story": "You can stand inside this tree. A balete is a strangler fig: it starts life as a seed in the branches of another tree, sends roots down around its host and slowly takes its place. Here the host is long gone, and what remains is a cage of fused roots around a hollow that one visitor in 2012 reckoned would hold about fifteen people.\n\nIt is billed locally as the largest balete in Asia and carries the title of the Philippines' Millennium Tree. We could not find a measurement behind either claim. The age has the same problem: about 600 years is the figure on Wikipedia, on a photographer's caption and on the travel blogs, and each of them repeats the others rather than counting anything. Treat it as tradition. If it is anywhere near right, this fig was already strangling its host before the first Spanish ships reached these islands.\n\nA blog says sixty people with linked arms could ring it, a number easier to repeat than to test. Folklore says engkanto, the spirits of Philippine tradition, live in it, and it turns up on lists of the country's haunted places.\n\nIt is very much alive, photographed for iNaturalist in 2023 and reviewed online by over a thousand visitors. Expect a small entrance fee, souvenir stalls and local guides offering a walk through the roots for a little extra. Nobody has settled the species: one observer says Ficus benjamina. If you know, tell us.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Balete_tree",
+        "https://www.marxtermind.com/the-old-balete-tree-and-the-ditumabo-falls-in-aurora/",
+        "https://wanderlog.com/place/details/211120/balete-tree-millenium-tree",
+        "https://www.inaturalist.org/observations/167292816",
+        "https://commons.wikimedia.org/wiki/File:Millennium_tree_of_Balete_Park,_Maria_Aurora,_Philippinesjf.jpg"
+      ],
+      "access": "Park with a small entrance fee (reported 30 pesos plus a 10 peso environmental fee, a 2012 blog says donation only; fee unconfirmed from the owner's own page). Reported open 24 hours. Pay toilets, souvenir stalls, local guides charge extra. Roughly 30 minutes by tricycle from Baler (2012 blog); 7 km from Maria Aurora town proper (search snippet of municipal page).",
+      "transport": "No rail. Tricycle or car from Baler town, ~30 min per a 2012 blog; on the Pantabangan-Canili-Basal-Baler Road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the hollow inside its fused roots, big enough to step into. It is the one giant fig the park is laid out around, so there is no neighbour to mistake it for."
+    }
+  ]
+}
