@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 night run: Houston written, held by the pacing limit
+
+- **Rung:** US only. Rung 2 (deploy red, iOS red) already had a fix in flight from a session; pulled it. The two ready New York leads are a park-level pin (Saratoga Park red oak) and a sapling (Anne Frank tree), so left as leads. Verify pass on Houston delivered hou_009 to hou_011 (Becks Prime Augusta oaks, Glenwood Cemetery oak, Arboretum sycamore), stories written with recognition lines. 7-day visits: 2,423 (mostly bots).
+- **Not shipped:** preflight's publishing pace refuses it (31 trees in the last 24h, limit 20). The stories wait in data/research/houston-verified.json; a later run merges with out/tmp/merge_houston.py (appends only) and changes Houston's meta and question-meta counts from eight to eleven. The Houston claim is left in place on purpose so nobody rewrites them.
+- Fetch failures: becksprime.com 403, chron.com JS shell, penick.net Cloudflare, txhtc.org empty.
+
 ## 2026-10-01 night run: Seattle to 12 trees
 
 - **Rung:** US only (CLAUDE.md recovery mode). Nothing US was waiting for a writer and the shelf was under its floor, so the first dispatch was a verify pass on Seattle (below target, 9 unsourced leads). 7-day visits per visitors.py: 3,200 (mostly bots, see the session entry below).
