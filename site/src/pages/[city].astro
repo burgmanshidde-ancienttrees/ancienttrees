@@ -20,6 +20,7 @@ import { arm } from "../lib/copy-test";
 import { submitLink, ageToken } from "../lib/tree-copy";
 import { mapHead } from "../lib/map";
 import TreeCard from "../components/TreeCard.astro";
+import { splitForPage } from "../lib/day-trips";
 import ShareButton from "../components/ShareButton.astro";
 import { SHARE_JS } from "../lib/share-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
@@ -29,7 +30,7 @@ import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
 import { otherCitiesFor, nearbyCitiesFor, cityCentre } from "../lib/other-cities";
 import { publishedStatePages, usStateOf } from "../lib/us-states";
-import { hreflangForCity } from "../lib/i18n";
+import { hreflangForCity, ui } from "../lib/i18n";
 import LanguagePicker from "../components/LanguagePicker.astro";
 
 function esc(s: string): string {
@@ -84,6 +85,8 @@ const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
 const trees = renderableTrees(city);
+// The city's own trees first, then "A day trip away" (lib/day-trips.ts).
+const split = splitForPage(city.data.city, trees as any);
 // Contract B v1.18: a one-tree place has no question page to link to.
 const cityHasQuestion = hasQuestionPage(city);
 const canonical = `${BASE_URL}/${cslug}`;
@@ -288,10 +291,24 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
           <span class="passport-total" id="passport-total"></span>
         </p>
       </div>
-      {trees.map((t, i) => (
-        <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={i + 1}
+      {split.inTown.map((t) => (
+        <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
                   variant="full" headingLevel={2} canTick />
       ))}
+      {split.away.length > 0 && (
+        <section class="day-trips">
+          <h2 class="day-trips-head">{ui("en").dayTripAway}</h2>
+          {split.away.map((g) => (
+            <Fragment>
+              <p class="day-trip-where">{ui("en").dayTripWhere(g.trip.place, g.trip.km, g.trip.dir)}</p>
+              {g.trees.map((t) => (
+                <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
+                          variant="full" headingLevel={3} canTick />
+              ))}
+            </Fragment>
+          ))}
+        </section>
+      )}
       <div class="panel-foot">
         <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world.</b> Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
         <div class="take-with-you">

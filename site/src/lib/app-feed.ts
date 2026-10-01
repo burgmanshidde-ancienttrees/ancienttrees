@@ -17,6 +17,7 @@
 // every tree so an app can say "we know the park, not the trunk" exactly where
 // the website says it, and a photo carries its licence and attribution so an
 // app cannot show the picture while dropping the credit the licence demands.
+import { dayTrips, type DayTrip } from "./day-trips";
 import type { CityEntry } from "./trees";
 import { peakFor } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
@@ -85,6 +86,8 @@ export interface FeedTree {
    * the app decodes an Int: one 365.8 would make Swift reject the whole trees
    * array, and every phone would quietly stop updating. */
   girth_cm: number | null;
+  /** Set only on a tree that is a day trip from its city (lib/day-trips.ts). */
+  day_trip?: DayTrip;
   url: string;
   /** The photograph, with the two sizes a client actually paints and the
    * licence question already answered.
@@ -116,6 +119,7 @@ export interface FeedPhoto {
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
   const out: FeedTree[] = [];
   for (const city of cities) {
+    const trips = dayTrips(city.data.city, renderableTrees(city) as any);
     for (const t of renderableTrees(city)) {
       const loc = t.location ?? ({} as any);
       if (loc.latitude == null || loc.longitude == null) continue;
@@ -150,6 +154,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
           return Number.isFinite(g) && g > 0 ? Math.round(g) : null;
         })(),
         url: `/${city.id}/${slugify(t.name)}`,
+        ...(trips.get(t.id) ? { day_trip: trips.get(t.id) } : {}),
         photo: resolvePhoto(p),
         // MORE THAN ONE PHOTOGRAPH (2026-09-12). Sent only when there IS more
         // than one, so 3000-odd single-photograph trees pay nothing for a

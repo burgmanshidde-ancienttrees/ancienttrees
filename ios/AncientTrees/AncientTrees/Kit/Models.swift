@@ -185,6 +185,18 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// memberwise initialiser keeps compiling at every call site and a feed
     /// that does not carry it decodes to nil.
     public var girthCm: Int? = nil
+    /// Set when this tree is a day trip from its city rather than a walk in
+    /// town. Decided by the website (site/src/lib/day-trips.ts) and read here,
+    /// never re-decided: the answer travels, the rule stays on the server.
+    public var dayTrip: DayTrip? = nil
+
+    public struct DayTrip: Codable, Hashable, Sendable {
+        public let place: String
+        public let km: Int
+        public let dir: String
+        /// "Jaegersborg Dyrehave, 12 km north", the website's own words.
+        public var line: String { "\(place), \(km) km \(dir)" }
+    }
 
     enum CodingKeys: String, CodingKey {
         case id, name, species, age, lat, lng, city, country
@@ -198,6 +210,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case citySlug = "city_slug"
         case bestTime = "best_time"
         case girthCm = "girth_cm"
+        case dayTrip = "day_trip"
     }
 
     /// The common name only, without the Latin in parentheses. Map pins and

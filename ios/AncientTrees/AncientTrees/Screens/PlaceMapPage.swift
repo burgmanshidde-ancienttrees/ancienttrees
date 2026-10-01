@@ -76,6 +76,25 @@ struct PlaceMapPage: View {
         return max(m * 1.3, 1200)
     }
 
+    private var isCity: Bool { if case .city = place { true } else { false } }
+
+    /// The list's first part: everything that is not a day trip.
+    private var inTown: [Tree] { isCity ? trees.filter { $0.dayTrip == nil } : trees }
+
+    /// The day trips, one group per place, nearest first.
+    private var away: [(line: String, trees: [Tree])] {
+        guard isCity else { return [] }
+        var groups: [String: (km: Int, trees: [Tree])] = [:]
+        for t in trees { if let d = t.dayTrip { groups[d.line, default: (d.km, [])].trees.append(t) } }
+        return groups.sorted { $0.value.km < $1.value.km }.map { (line: $0.key, trees: $0.value.trees) }
+    }
+
+    private func card(_ t: Tree) -> some View {
+        SheetLink(route: .tree(t.id)) { TreeCard(tree: t) }
+            .accessibilityIdentifier("tree-card")
+            .id(t.id)
+    }
+
     var body: some View {
         MapWithSheet(height: $sheetHeight, topItem: $topCard) {
             TreeMap(trees: trees,
@@ -98,10 +117,23 @@ struct PlaceMapPage: View {
                 .padding(.bottom, 10)
         } content: {
             VStack(alignment: .leading, spacing: 18) {
-                ForEach(trees) { t in
-                    SheetLink(route: .tree(t.id)) { TreeCard(tree: t) }
-                        .accessibilityIdentifier("tree-card")
-                        .id(t.id)
+                ForEach(inTown) { t in card(t) }
+                // A DAY TRIP AWAY, on the website's word (Hidde approved the
+                // Copenhagen mockup 2026-09-27, and found it missing here on
+                // 2026-10-01). The city's own trees first, then one group per
+                // place, nearest first. Cities only: a country page is all
+                // day trips by definition.
+                if !away.isEmpty {
+                    Text("A day trip away")
+                        .font(.brand(20, .bold, relativeTo: .title3))
+                        .foregroundStyle(Brand.ink)
+                        .padding(.top, 10)
+                        .accessibilityAddTraits(.isHeader)
+                    ForEach(away, id: \.line) { g in
+                        Text(g.line)
+                            .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                        ForEach(g.trees) { t in card(t) }
+                    }
                 }
                 Color.clear.frame(height: 24)
             }
