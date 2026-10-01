@@ -4,7 +4,8 @@
 // pages, the place pages of places with one to three trees, and question
 // pages Search Console never showed. Pages stay live and keep their URLs
 // (hard rule 3); noindex only asks Google not to list them, and the sitemap
-// drops anything noindexed by itself. Undo by emptying `paths`.
+// drops anything noindexed by itself. deploy.yml regenerates the list before
+// every build. Undo by emptying `paths` and removing that step.
 import fs from "node:fs";
 import path from "node:path";
 import { DATA } from "./data-dir";
@@ -14,7 +15,9 @@ let cache: Set<string> | null = null;
 function list(): Set<string> {
   if (cache) return cache;
   const f = path.join(DATA, "noindex.json");
-  cache = new Set(fs.existsSync(f) ? (JSON.parse(fs.readFileSync(f, "utf-8")).paths ?? []) : []);
+  const raw = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")).paths ?? {} : {};
+  // { path: date first listed }; an array is the first day's shape.
+  cache = new Set(Array.isArray(raw) ? raw : Object.keys(raw));
   return cache;
 }
 

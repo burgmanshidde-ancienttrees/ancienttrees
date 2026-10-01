@@ -386,7 +386,18 @@ def demand_lines(pages, pairs=None):
     treating it as demand would make the rule mean nothing. Cities only, since
     depth work is per city; a tree page's impressions count toward its city."""
     rows = city_demand_rows(pages, pairs)
-    if not rows:
+    # Since Google's 09-28 demotion almost nothing clears 10 impressions, which
+    # would allow depth nowhere. Until search recovers, the cities that had
+    # readers on 09-27 stay on the roster (data/depth-roster-frozen.json).
+    frozen = {}
+    try:
+        frozen = json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json"))).get("cities") or {}
+    except (OSError, ValueError, NameError):
+        pass
+    have = {r["city"] for r in rows}
+    extra = sorted(((c, v) for c, v in frozen.items() if c not in have),
+                   key=lambda cv: -cv[1].get("impressions", 0))
+    if not rows and not extra:
         if not pages:
             return []
         return ["", "**Depth is allowed on:** no city cleared 10 impressions this window."]
@@ -401,6 +412,9 @@ def demand_lines(pages, pairs=None):
         out.append("| %s | %d | %d | %.1f%% | %.1f | %.1f%% | %s |"
                    % (r["city"], r["clicks"], r["impressions"], r["ctr"],
                       r["position"], r["expected"], qcell))
+    for c, v in extra:
+        out.append("| %s | %d | %d | - | - | - | frozen 09-27 roster |"
+                   % (c, v.get("clicks", 0), v.get("impressions", 0)))
     return out
 
 

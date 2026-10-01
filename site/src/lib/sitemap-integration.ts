@@ -82,15 +82,18 @@ export default function sitemapIntegration(): AstroIntegration {
         const nf = path.join(process.cwd(), "../data/noindex.json");
         if (fs.existsSync(nf)) {
           const nd = JSON.parse(fs.readFileSync(nf, "utf-8"));
-          const since: string = nd.since ?? fallback;
-          const rec = (nd.paths ?? [])
-            .map((p: string) => `  <url><loc>${BASE_URL}${p}</loc><lastmod>${since}</lastmod></url>\n`)
+          const raw = nd.paths ?? {};
+          const dated: [string, string][] = Array.isArray(raw)
+            ? raw.map((p: string) => [p, nd.since ?? fallback])
+            : Object.entries(raw);
+          const rec = dated
+            .map(([p, d]) => `  <url><loc>${BASE_URL}${p}</loc><lastmod>${d}</lastmod></url>\n`)
             .join("");
           fs.writeFileSync(
             path.join(distRoot, "sitemap-recrawl.xml"),
             `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rec}</urlset>\n`,
           );
-          logger.info(`wrote sitemap-recrawl.xml with ${(nd.paths ?? []).length} url(s)`);
+          logger.info(`wrote sitemap-recrawl.xml with ${dated.length} url(s)`);
         }
 
       },
