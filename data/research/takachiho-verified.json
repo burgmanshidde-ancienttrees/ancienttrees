@@ -121,12 +121,20 @@
   "transport": "Takachiho is reached by bus only (no railway). Shimono is about 5 km north-east of the centre (roughly 12 minutes by taxi from Takachiho Bus Centre); the local bus is infrequent, so check the timetable or take a taxi.",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "- National natural monument (designated 1951-06-09), Agency for Cultural Affairs entry: breast-height girth 9.20 m, height 36.40 m, female tree. Town page: about 800 years (town's figure, no dating method given), also among Miyazaki's 100 giant trees. Stands left of the approach to the shrine.\n- Register-only plus town page.\n- Pin: shrine node only (OSM node 5089460578). GSI seamlessphoto z18 (winter, leaf-off mixed with evergreens) checked 2026-10-02: shrine building and a dense mixed canopy W of it, no crown separable as the ginkgo or zelkova, so NOT confirmed. No Commons file (name search and 500 m geosearch empty), no iNaturalist observation with open licence within 300 m. Alive: lifecheck not run on a tree-level point; national monument page lists both as designated, no news of loss seen. Cannot ship under the photo-or-pin rule until a photograph or a trunk-level fix exists; a reader or Hidde photo would open it."
+  "story": "Japan made this ginkgo a national natural monument in June 1951, and the measurements explain why: 9.20 metres round at chest height and 36.4 metres tall, which is a very large ginkgo by any standard. The Agency for Cultural Affairs records it as a female tree, so in autumn it drops its fruit on the shrine ground, the soft, pungent seeds every Japanese ginkgo-watcher knows by smell before sight.\n\nIt stands on the left of the approach to Shimono Hachiman Shrine, about five kilometres north-east of Takachiho's centre. The town puts its age at about 800 years and counts it among Miyazaki Prefecture's hundred giant trees. The town gives no method for the figure, so read it as a local estimate rather than a ring count, somewhere in the range of six to nine centuries.\n\nOn the other side of the approach stands a second national monument, a zelkova designated the same day, so the shrine is guarded on both flanks.\n\nGetting here takes some planning. Takachiho has no railway, the local bus to Shimono runs rarely, and a taxi from the bus centre takes about twelve minutes. Late November is the time: the ginkgo turns gold and the ground beneath it follows.",
+  "how_to_recognise": "You can recognise it as the giant ginkgo on the left of the approach to Shimono Hachiman Shrine, 9.20 metres round and 36.4 metres tall; the zelkova on the right, against the shrine building, is the other monument.",
+  "best_time": {
+   "months": [
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "late November, when the ginkgo turns gold over the shrine approach"
+  }
  },
  {
   "id": "tkc_005",
   "name": "Zelkova of Shimono Hachiman Shrine (下野八幡大神社のケヤキ)",
-  "species": "Japanese Zelkova (Zelkova serrata)",
+  "species": "Saw-leaf Zelkova (Zelkova serrata)",
   "age_estimate": "not documented",
   "age_min": null,
   "age_max": null,
@@ -147,6 +155,14 @@
   "transport": "Takachiho is reached by bus only (no railway). Shimono is about 5 km north-east of the centre (roughly 12 minutes by taxi from Takachiho Bus Centre); the local bus is infrequent, so check the timetable or take a taxi.",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "- National natural monument (1951-06-09), Agency for Cultural Affairs: breast-height girth 8 m, ROOT girth 20.80 m (buttressed mass, not a trunk measurement, do not quote as trunk), height 34.70 m, crown spread 26 x 33 m. No age in the record; leave empty and let the page ask.\n- Stands against the shrine building on the right of the approach.\n- Register only.\n- Pin: shrine node only (OSM node 5089460578). GSI seamlessphoto z18 (winter, leaf-off mixed with evergreens) checked 2026-10-02: shrine building and a dense mixed canopy W of it, no crown separable as the ginkgo or zelkova, so NOT confirmed. No Commons file (name search and 500 m geosearch empty), no iNaturalist observation with open licence within 300 m. Alive: lifecheck not run on a tree-level point; national monument page lists both as designated, no news of loss seen. Cannot ship under the photo-or-pin rule until a photograph or a trunk-level fix exists; a reader or Hidde photo would open it."
+  "story": "The crown of this zelkova spreads 26 metres one way and 33 the other, nearly as wide as the tree is tall. The Agency for Cultural Affairs, which has listed it as a national natural monument since June 1951, gives the rest of the measurements: 34.7 metres tall and 8 metres round at chest height.\n\nThere is a bigger number in the same record, and it needs care. Measured round the roots, the tree comes to 20.80 metres. That is the buttressed mass of the base where it meets the ground, not the trunk, and the gap between 8 and 20.80 tells you how far the foot of this tree spreads before it rises.\n\nIt stands on the right of the approach to Shimono Hachiman Shrine, about five kilometres north-east of central Takachiho, close against the shrine building. Across the approach is the shrine's great ginkgo, designated on the same day in 1951, so a single visit takes in two national monuments a few steps apart.\n\nNobody has published an age for it. The national record gives none, and a girth alone is not enough to name one honestly. If you know the shrine's own account of when this tree was planted, or how old the shrine considers it, tell us.\n\nGo in November. Zelkovas turn russet and orange in late autumn, and so does the ginkgo opposite, in gold, which makes it the month the two trees peak together.",
+  "how_to_recognise": "You can recognise it as the huge zelkova close against the shrine building on the right of the approach, its base spread wide in buttresses; the giant ginkgo stands across the approach on the left.",
+  "best_time": {
+   "months": [
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "November, when the zelkova turns russet beside the gold ginkgo"
+  }
  }
 ]
