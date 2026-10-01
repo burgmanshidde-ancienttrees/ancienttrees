@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 sixth continuation: nothing shipped
+
+Pulled; Houston claim still stands (its 3 written trees wait on a pin or photo and the pace limit; release refused while unmerged). READY leads still 4, pace gate unchanged, preflight 0 problems. No new work found beyond earlier attempts; next run with allowance writes New York's two READY trees.
+
 ## 2026-10-01 fifth continuation: nothing shipped
 
 Pulled; only claim is Houston (held, trees need a pin or photo first and a day under the pace limit). READY leads still 4, pace gate still refuses write passes. The photo shortlist's candidates (palm leaves, an egret, a street view) fail the plant gate, so nothing was worth approving. Next run with allowance writes New York's two READY trees.
