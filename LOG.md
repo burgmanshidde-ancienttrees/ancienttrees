@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 continuation: pace limit is the wall
+
+- Checked claims, READY leads (3, all declined: park-level pin, sapling, Linz ensemble) and preflight. Nothing shippable while 31 trees sit in the 24h window against a limit of 20. Houston's held stories and claim stay for the next run after the window clears. Shipped 0 trees; stopping rather than burning the window on work the pace check would refuse.
+
 ## 2026-10-01 night run: Houston written, held by the pacing limit
 
 - **Rung:** US only. Rung 2 (deploy red, iOS red) already had a fix in flight from a session; pulled it. The two ready New York leads are a park-level pin (Saratoga Park red oak) and a sapling (Anne Frank tree), so left as leads. Verify pass on Houston delivered hou_009 to hou_011 (Becks Prime Augusta oaks, Glenwood Cemetery oak, Arboretum sycamore), stories written with recognition lines. 7-day visits: 2,423 (mostly bots).
