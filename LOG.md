@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 second continuation: Austin Treaty Oak photograph
+
+- Pace gate still refuses verify/write (16 trees in 24h, limit 10); READY leads 4 only, recognition gaps in New York none. Did depth instead.
+- Viewed the Commons candidate for the Treaty Oak (aus_001): live oak in leaf, chain fence and park sign, daylight, tree fills the frame, photo_light OK. Approved, CC BY 4.0, Larry D. Moore. Austin is on the US demand roster.
+- Two claims (Copenhagen, Fukuoka verify) belong to another session with ~79 min left; left alone.
+
 ## 2026-10-01 continuation attempt: nothing shipped, gate holds
 
 Pulled, checked claims and READY leads. Four READY (two New York, one Linz, one Fukuoka) but `passcheck.py --claim "New York" --kind write` is refused: 16 trees in the last 24 hours against the limit of 10, so a write pass would only wait a day. Fukuoka and Linz are outside the US-only focus anyway. The Copenhagen (7 trees) and Fukuoka (1) claims by an earlier session could not be released because their verified output is not merged; they expire on their own. The photo shortlist held no usable candidate (filename matches for the wrong trees; Austin had nothing to fetch). Next run with allowance: write New York's two READY trees.
