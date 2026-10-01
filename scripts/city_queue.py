@@ -651,8 +651,9 @@ def main():
             print("(Hidde, 2026-09-27). Deepen these toward their target; from-zero")
             print("research is ON for all of them. The California Big Trees leads in")
             print("data/leads are finding aids (never the cited source); in the South,")
-            print("the Live Oak Society's named oaks are the place to look; and a")
-            print("single famous tree nearby may ship as its own place.\n")
+            print("the Live Oak Society's named oaks are the place to look. A famous")
+            print("tree goes INTO a nearby place; no new place below four trees while")
+            print("search recovers (2026-10-01, preflight refuses it).\n")
             print("  city                  trees  target  impressions(10d)  leads")
             for c in (us if US_ONLY else us[:12]):
                 print("  %-21s %5d %7d %17d %6d" % (
@@ -665,11 +666,11 @@ def main():
             # into refusals. One flag decides both: passcheck.US_ONLY.
             zero = [c for c in s1 if c.get("country") == "United States"]
             if zero:
-                print("US PLACES AT ZERO, ranked: open them to four or five.\n")
+                print("US PLACES AT ZERO, ranked: open them with four or five in one go, never fewer.\n")
                 for c in zero[:20]:
                     print("  %3d  %s" % (c["rank"], c["city"]))
                 print()
-            print("Also US: a famous tree that is its own place (data/leads/_famous-united-states.json,")
+            print("Also US: famous trees inside a place that reaches four (data/leads/_famous-united-states.json,")
             print("`famous_demand.py --next`), and the NYC Great Trees, Florida, Seattle and DC")
             print("champion registers. One credible source is enough (BRIEF_RESEARCH.md).")
             print("\nEVERYTHING OUTSIDE THE US IS PAUSED (Hidde, 2026-10-01). A reader's")

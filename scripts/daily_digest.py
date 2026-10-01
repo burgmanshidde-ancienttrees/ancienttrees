@@ -1111,6 +1111,10 @@ query($tag: String!, $since: Date!, $until: Date!) {
         filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
       count dimensions { countryName }
     }
+    gdays: rumPageloadEventsAdaptiveGroups(limit: 300,
+        filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
+      count dimensions { date refererHost }
+    }
     devices: rumPageloadEventsAdaptiveGroups(limit: 3,
         filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
       count dimensions { deviceType }
@@ -1143,12 +1147,25 @@ query($tag: String!, $since: Date!, $until: Date!) {
     # zero. At our volume that makes the per-day column decorative and the
     # window total the only figure worth reading. Search Console does not
     # round, which is why it, and not this, is the series to steer by.
-    rows = ["| Day | Visits | Pageviews |", "|---|---:|---:|"]
+    # From Google per day, added 2026-10-01: Google demoted the whole site on
+    # 09-28 and the only per-day proof that it was real rather than a Search
+    # Console lag came from this beacon, read by hand three days late. It is
+    # independent of Search Console, so it is the column that says on the first
+    # morning whether search traffic actually arrived.
+    google = {}
+    for r in acct[0].get("gdays") or []:
+        host = (r["dimensions"].get("refererHost") or "").lower()
+        if "google." in host or "googlequicksearchbox" in host:
+            dd = r["dimensions"]["date"]
+            google[dd] = google.get(dd, 0) + r["count"]
+    rows = ["| Day | Visits | Pageviews | From Google |", "|---|---:|---:|---:|"]
     for d in days:
-        rows.append("| %s | %d | %d |" % (
-            d["dimensions"]["date"][5:], d["sum"]["visits"], d["count"]))
-    rows.append("| **window** | **%d** | **%d** |" % (
-        sum(d["sum"]["visits"] for d in days), sum(d["count"] for d in days)))
+        rows.append("| %s | %d | %d | %d |" % (
+            d["dimensions"]["date"][5:], d["sum"]["visits"], d["count"],
+            google.get(d["dimensions"]["date"], 0)))
+    rows.append("| **window** | **%d** | **%d** | **%d** |" % (
+        sum(d["sum"]["visits"] for d in days), sum(d["count"] for d in days),
+        sum(google.values())))
     trend = "\n" + "\n".join(rows)
     top = "; ".join("%s (%d)" % (p["dimensions"]["requestPath"], p["count"]) for p in paths)
     def _dim(rows, key, skip=("", None)):

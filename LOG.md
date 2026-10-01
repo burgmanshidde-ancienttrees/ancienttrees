@@ -10,6 +10,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 session: Google demoted the site on 09-28; first response
+
+- **Confirmed real, sitewide and algorithmic.** `seo-diagnose.yml` (new, run by hand): 09-28 is final at 53 impressions against ~2,000, every country, device and page kept 0 to 2 percent, Google visitors in the beacon went to zero, while URL Inspection says every page is indexed and fetched fine, robots and sitemaps are clean and there is no manual action (Hidde checked). `site:` search still lists /prague. Leading suspect: Google's September 2026 spam update (from 09-24), scaled content.
+- **No new place below four trees** (`check_no_new_thin_places()` in preflight; the 456 live ones frozen in data/thin-places-frozen.json). The single-famous-tree exception is paused in CLAUDE.md.
+- **Noindex proposal, NOT live:** `scripts/thin_pages.py` writes drafts/noindex-proposal.md and data/noindex-proposal.json. 8,156 of 12,923 pages: places with 1-3 trees (1,039), translations of quiet cities (98) and 7,019 fallback language pages that repeat the English text on a second URL. FOR HIDDE: yes or no on the list.
+- **IndexNow** (`indexnow.yml`, after every deploy): Bing, and through it ChatGPT search, hears about changed pages straight away. FOR HIDDE: register at Bing Webmaster Tools (import from Search Console takes five minutes).
+- **Disavow converter** `scripts/disavow.py`: give it the Search Console Links export and it writes drafts/disavow.txt. FOR HIDDE: export, and upload the result.
+- **The digest's visits table gains "From Google" per day**, independent of Search Console.
+
 ## 2026-10-01 session: US only, one credible source, budget raised
 
 - **All new work is in the US now** (Hidde: night runs were opening trees where we have no users). `passcheck.py --claim` refuses a place outside the US unless the run passes `--outside-us "<why>"` (a reader submission or a fix to a wrong published tree). US places are exempt from open-do-not-deepen, and `city_queue.py --next` prints only US work. Off switch: `US_ONLY = False` in scripts/passcheck.py.

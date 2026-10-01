@@ -1,0 +1,31 @@
+name: IndexNow
+
+# After every successful deploy, tell Bing (and so ChatGPT's search) which pages
+# changed. Written 2026-10-01 after Google demoted the site: Bing is the fastest
+# channel that does not wait on Google. Run by hand with all=true once, for the
+# first full submission.
+on:
+  workflow_run:
+    workflows: ["Build and deploy site"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "Send every URL in the sitemap, not only the changed ones"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - name: Send changed pages
+        run: python3 scripts/indexnow.py ${{ inputs.all && '--all' || '' }}
