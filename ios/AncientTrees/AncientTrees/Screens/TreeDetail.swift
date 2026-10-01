@@ -83,6 +83,8 @@ struct TreeDetail: View {
     /// caption rather than a fact about the tree.
     @State private var geocodedPlace: String?
     @State private var confirmingDiscard = false
+    /// "Tree saved", for the second and a half after Save (DoneHUD.swift).
+    @State private var done: String?
     @State private var extraCamera = false
 
     /// The live record, so a draft that is saved on this page turns into a
@@ -96,6 +98,7 @@ struct TreeDetail: View {
 
     private func saveDraft() {
         guard let m = live, let s = sightings.commit(m.id) else { return }
+        done = "Tree saved"
         let city = catalogue.nearest(to: s.lat, s.lng, limit: 1, withinKm: 30).first?.tree.city
         Task { await Submission.offer(s, city: city, account: account, sightings: sightings) }
     }
@@ -426,6 +429,7 @@ struct TreeDetail: View {
                 }
             }
         }
+        .doneHUD($done)
         .fullScreenCover(isPresented: $showingPhoto) {
             if let p = tree.photo {
                 PhotoViewer(photo: p, photos: tree.shots, startAt: photoAt,
