@@ -199,8 +199,8 @@ def daily_downloads_by_type(days=14):
 
 
 def daily_download_totals(days=14):
-    """{date: total_downloads}, first-time plus redownload. Kept because it is
-    the shape every caller before 2026-09-10 expects."""
+    """{date: downloads}, first-time only since 2026-10-02 (NEW_PERSON). Kept
+    because it is the shape every caller before 2026-09-10 expects."""
     split, note = daily_downloads_by_type(days)
     if note:
         return {}, note
@@ -220,7 +220,12 @@ def daily_download_totals(days=14):
 # the page and pressed the button, which is the only figure we have that counts
 # somebody DECIDING rather than arriving. A redownload is a person too, and a
 # returning one, so it counts.
-NEW_PERSON = ("first-time download", "redownload")
+# FIRST-TIME ONLY since 2026-10-02 (Hidde: "can you only count first time
+# downloads please your number is way higher than what apple shows me"). A
+# redownload used to count as a returning person; it also made every figure we
+# printed disagree with the one screen he reads, and a number he cannot check
+# against Apple is a number he cannot trust. First-time is Apple's Trends unit.
+NEW_PERSON = ("first-time download",)
 
 
 def _download_type(row):
@@ -240,10 +245,7 @@ if __name__ == "__main__":
     split, note = daily_downloads_by_type()
     if note:
         print(note)
-    print("%-12s %10s %11s %7s" % ("date", "first-time", "redownload", "total"))
+    print("%-12s %10s" % ("date", "downloads"))
     for date in sorted(split):
-        v = split[date]
-        f, r = v.get("first-time download", 0), v.get("redownload", 0)
-        print("%-12s %10d %11d %7d" % (date, f, r, f + r))
-    print("first-time is the column that should equal App Store Connect's "
-          "Trends screen, which counts units and not redownloads.")
+        print("%-12s %10d" % (date, split[date].get("first-time download", 0)))
+    print("first-time downloads only, the unit App Store Connect's Trends screen counts.")
