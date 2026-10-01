@@ -41,6 +41,7 @@ import { imgSrcset } from "../lib/images";
 import { locationIsApproximate } from "../lib/tree-copy";
 import { icon } from "../lib/icons";
 import { ui } from "../lib/i18n";
+import { treeSources } from "../lib/tree-sources";
 import type { Tree } from "../lib/trees";
 
 interface Props {
@@ -80,6 +81,13 @@ const tree = p.tree;
 const loc = tree.location;
 const photo = p.shots[0] ?? null;
 const isApprox = locationIsApproximate(tree);
+// The per-tree sources, back on 2026-10-01 after Google's 09-28 demotion
+// (Hidde: "punt 1 klinkt als een goed idee"). They were taken off on 09-24 as
+// noise; Google's own self-assessment asks whether a page shows "clear
+// sourcing", and for a site whose stories are written at scale the visible
+// sources are the evidence that each one was checked. Facts, not text, so
+// identical in every language; only the heading and line are looked up.
+const sources = treeSources(tree);
 
 // "Moreton Bay Fig (Ficus macrophylla)" -> the name a reader knows. The card
 // shows only that, exactly as the app's card does (Hidde, 2026-09-24: "maak
@@ -211,6 +219,18 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
         {!tree.paid_entry && p.access && <p><Fragment set:html={icon("person-simple-walk")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.access}</span></p>}
         {p.transport && <p><Fragment set:html={icon("train-simple")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.transport}</span></p>}
       </div>
+
+      {sources.length > 0 && (
+        <section class="td-section tree-sources">
+          <h2>{U.sourcesHeading}</h2>
+          <p>{U.sourcesLine}</p>
+          <ul>
+            {sources.map((s) => (
+              <li>{s.href ? <a href={s.href} target="_blank" rel="noopener">{s.label}</a> : <span>{s.label}</span>}</li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="report" lang={p.lang} />
 
