@@ -1088,7 +1088,7 @@ query($tag: String!, $since: String!, $until: String!) {
     return g["data"]["viewer"]["zones"][0]["httpRequests1dGroups"]
 
 
-def fetch_rum(token, today):
+def fetch_rum(token, today, window=8):
     """Cookieless Web Analytics (beacon) numbers, PEOPLE only.
     Returns text; never raises past itself.
 
@@ -1106,7 +1106,7 @@ def fetch_rum(token, today):
         "query": """
 query($tag: String!, $since: Date!, $until: Date!) {
   viewer { accounts(filter: {accountTag: $tag}) {
-    days: rumPageloadEventsAdaptiveGroups(limit: 10,
+    days: rumPageloadEventsAdaptiveGroups(limit: 40,
         filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [date_ASC]) {
       count dimensions { date } sum { visits }
     }
@@ -1122,12 +1122,12 @@ query($tag: String!, $since: Date!, $until: Date!) {
         filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [count_DESC]) {
       count dimensions { countryName }
     }
-    bots: rumPageloadEventsAdaptiveGroups(limit: 10,
+    bots: rumPageloadEventsAdaptiveGroups(limit: 40,
         filter: {date_geq: $since, date_lt: $until, refererHost: "", deviceType: "desktop"},
         orderBy: [date_ASC]) {
       count dimensions { date } sum { visits }
     }
-    gdays: rumPageloadEventsAdaptiveGroups(limit: 300,
+    gdays: rumPageloadEventsAdaptiveGroups(limit: 1500,
         filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
       count dimensions { date refererHost }
     }
@@ -1142,7 +1142,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
   } }
 }""",
         "variables": {"tag": ACCOUNT_TAG,
-                      "since": (today - datetime.timedelta(days=8)).isoformat(),
+                      "since": (today - datetime.timedelta(days=window)).isoformat(),
                       "until": today.isoformat()},
     }
     g = api("https://api.cloudflare.com/client/v4/graphql", q, token=token)

@@ -200,7 +200,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
         if not tok:
             print("no CLOUDFLARE_ANALYTICS_TOKEN")
             return
-        print(fetch_rum(tok, today).split("\n\nLinks:")[0])
+        print(fetch_rum(tok, today, window=31).split("\n\nLinks:")[0])
 
     print("# SEO diagnosis, %s" % today.isoformat())
     section("1. Day by day, final against fresh data", days)
