@@ -296,3 +296,12 @@ buurtsite die hem plaatst is een passieve link. Klein om te bouwen (een
 tijdens de oogstweek; bouwen wanneer de eerste kanalen gelopen hebben. Nog
 niet door Hidde bekrachtigd als bouwopdracht.
 
+
+## City editors (parked, Hidde 2026-10-01: "een gebruiker een editor status van een stad... in charge laten van een stad binnen onze richtlijnen... meer lange termijn")
+
+A trusted reader gets editor status for one city and looks after it within our rules: confirms or corrects trees, proposes new ones, answers reports for that city. Raised during the Google recovery, and it is the strongest version of what Google asks for ("written or reviewed by an expert or enthusiast who demonstrably knows the topic well").
+
+- **Conventions to follow, not invent:** iNaturalist curators, OpenStreetMap and Wikipedia's trusted editors, Google Maps Local Guides levels. All of them grant rights after a track record, and the platform keeps the rules. Look each up in CONVENTIONS.md before designing.
+- **Hard-list contact:** a role per account is a new personal-data field (hard rule 1, needs his yes), and an editor is never named on a page unless they opt in (never-publish-a-name rule).
+- **First candidates, already doing the work without a title:** Paulo Araújo (Porto, Dias com Árvores), Daniel Daggfeldt (Stockholm, Trädmästarna), Hugo Veríssimo (Lisbon, Quercus), Bomenstichting Amsterdam.
+- **Precondition:** enough engaged people. On 2026-10-01 almost every contribution came from one account.
