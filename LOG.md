@@ -10,6 +10,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 night run: reader photographs and one Commons photo, no new trees
+
+Rung 1. Nine reader photographs were waiting; I looked at every file. The whole-tree shot of Paris's Square Rene-Le Gall horse chestnut ships as its lead (it matches the Paris plaque in the other frames and the tree had no photograph); the other five Paris frames (conker, two information boards, trunk close-ups) and both Lisbon dragon tree frames were declined with a written verdict, since that tree already has an approved wide photograph. Wilparting's St.-Marinus-Linde got its first photograph from Commons after I looked at the pixels.
+
+No tree was added. The pace gate already shows 19 new trees in 24 hours against a limit of 10, and Houston's three written trees (hou_009 to hou_011) have neither a photograph nor a confirmed pin, so preflight refused them; they stay in data/research/houston-verified.json. Copenhagen's seven verified trees and the other staged files wait for tomorrow's allowance. Visits last 7 days: 2494 (1063 on 09-26).
+
+Refused commands: none. One snag: `sightings_publish.py` writes no judgement stub, so `judgement.py --scan` missed the published photo and preflight failed until I added the verdict by hand (a script gap worth closing).
+
 ## 2026-10-01 session: Hidde's phone walk of build 20, and his covers
 
 Live on main:
