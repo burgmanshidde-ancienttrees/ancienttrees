@@ -51,6 +51,16 @@ itself "worth the walk": judge each one.
    does NOT cover a finding aid (California Big Trees, Famous Trees of Texas,
    monumentaltrees.com, any list with an unclear licence): those still need a
    source of their own.
+   **In the US, ONE CREDIBLE SOURCE is enough, not only a register** (Hidde,
+   2026-10-01: "all focus on the US, with making use of the 1 credible source
+   is enough rule"). Credible means somebody accountable wrote about THIS tree:
+   a government register or agency page, the owner or manager of the ground,
+   American Forests' champion trees, the Live Oak Society's registry, a
+   university arboretum, or a newspaper or magazine's dated report on the
+   specific tree. Deliver it `flagged`, "one source" in `verify_notes`, and
+   spend the time saved on alive, pin and access exactly as above. Finding aids
+   stay finding aids (the list above), blogs and listicles are not credible
+   sources, and an unknown field is a question on the page, never a guess.
    **In a well-covered country (100+ published trees: NL, Italy, Japan, Spain,
    Germany, France, Poland, Portugal, UK), a new tree must bring a photograph or
    a confirmed pin**, or it goes to leads (Hidde, 2026-09-28: "for countries like

@@ -67,6 +67,7 @@ try:
 except SystemExit:
     WALKS = {}
 import leads as L                  # noqa: E402
+from passcheck import US_ONLY      # noqa: E402
 
 
 
@@ -653,11 +654,27 @@ def main():
             print("the Live Oak Society's named oaks are the place to look; and a")
             print("single famous tree nearby may ship as its own place.\n")
             print("  city                  trees  target  impressions(10d)  leads")
-            for c in us[:12]:
+            for c in (us if US_ONLY else us[:12]):
                 print("  %-21s %5d %7d %17d %6d" % (
                     c["city"][:21], c.get("trees", 0), max(c.get("target") or 15, 15),
                     c.get("impressions_10d") or 0, c.get("ready", 0)))
             print()
+        if US_ONLY:
+            # Hidde, 2026-10-01: all focus on the US. passcheck --claim refuses
+            # anything else, so printing the stages below would only walk a run
+            # into refusals. One flag decides both: passcheck.US_ONLY.
+            zero = [c for c in s1 if c.get("country") == "United States"]
+            if zero:
+                print("US PLACES AT ZERO, ranked: open them to four or five.\n")
+                for c in zero[:20]:
+                    print("  %3d  %s" % (c["rank"], c["city"]))
+                print()
+            print("Also US: a famous tree that is its own place (data/leads/_famous-united-states.json,")
+            print("`famous_demand.py --next`), and the NYC Great Trees, Florida, Seattle and DC")
+            print("champion registers. One credible source is enough (BRIEF_RESEARCH.md).")
+            print("\nEVERYTHING OUTSIDE THE US IS PAUSED (Hidde, 2026-10-01). A reader's")
+            print("submission or a fix to a published tree is the exception: --outside-us.")
+            return 0
         print("STAGE 1, OPEN THE UNOPENED: every ranked city with no trees yet,")
         print("to 10, as fast as they go. Hidde, 2026-08-19: starting these beats")
         print("deepening.\n")
