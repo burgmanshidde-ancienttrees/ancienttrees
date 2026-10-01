@@ -15,6 +15,8 @@ import { speciesIcon } from "../lib/species-icons";
 import { peakFor } from "../lib/phenology";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { nTrees } from "../lib/tree-count";
+import AmbassadorLine from "../components/AmbassadorLine.astro";
+import { namedAmbassadorsFor } from "../lib/ambassadors";
 import { fitTitle } from "../lib/title";
 import { arm } from "../lib/copy-test";
 import { submitLink, ageToken } from "../lib/tree-copy";
@@ -285,6 +287,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="sheet-body">
       <div class="city-intro">
         <p class="lede">{intro}</p>
+        <AmbassadorLine people={namedAmbassadorsFor(city.id)} />
         <button type="button" class="city-intro-more">Read more</button>
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}

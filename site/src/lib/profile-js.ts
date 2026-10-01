@@ -10,6 +10,11 @@
 // front of plus the ones you added, the species among them, the countries. Two
 // surfaces answering the same question must not answer it differently.
 import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
+import { icon } from "./icons";
+
+// The seal the badge wears, Phosphor's own file, so the account page and the
+// city page draw the same glyph (never hand-drawn, Hidde 2026-09-24).
+const SEAL_SVG = icon("seal-check", "fill", "ic").replace(/\n/g, "").replace(/'/g, "");
 
 export const PROFILE_JS = `
 <script>
@@ -17,6 +22,7 @@ export const PROFILE_JS = `
   var C = window.atCollection;
   if (!C) return;
   var SB = '${SUPABASE_URL}', KEY = '${SUPABASE_KEY}';
+  var SEAL = '${SEAL_SVG}';
 
   function el(id) { return document.getElementById(id); }
   function setText(id, v) { var n = el(id); if (n) n.textContent = v; }
@@ -60,6 +66,20 @@ export const PROFILE_JS = `
               av.textContent = '';
               av.style.backgroundImage = 'url(' + p.avatar_url.replace(/[()'"]/g, '') + ')';
             }
+          }).catch(function() {});
+        // Your badge, if a place has made you its ambassador (2026-10-02). The
+        // seal is Phosphor's seal-check, the same file AmbassadorLine.astro
+        // draws; the text is the place's name as the row carries it.
+        fetch(SB + '/rest/v1/ambassadors?select=place_name&user_id=eq.' + encodeURIComponent(u.id),
+              { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
+          .then(function(r) { return r.ok ? r.json() : null; })
+          .then(function(rows) {
+            var amb = el('in-ambassador');
+            if (!amb || !rows || !rows.length) return;
+            var places = rows.map(function(r) { return r.place_name; }).join(', ');
+            amb.innerHTML = SEAL + '<span></span>';
+            amb.lastChild.textContent = 'Ambassador for ' + places;
+            amb.hidden = false;
           }).catch(function() {});
         head(token, '/rest/v1/follows?select=follower&followee=eq.' + encodeURIComponent(u.id))
           .then(function(n) { setText('n-followers', n); });

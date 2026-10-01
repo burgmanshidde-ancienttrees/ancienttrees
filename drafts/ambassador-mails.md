@@ -47,20 +47,24 @@ Thanks,
 Hidde
 ```
 
-## 3. Copenhagen
+## 3. Copenhagen and Porto: no mail
 
-<!-- Hans Erik Lund, the register extract and his photographs; address in drafts/OUTREACH.md -->
+Hidde, 2026-10-02: "dont email paulo or hans ive had much contact with them just make them ambassador". Hans Erik Lund (Copenhagen) and Paulo V. Araujo (Porto) are made ambassadors directly, named on their city pages, with `python3 scripts/ambassador.py --grant-named`. Neither has an app account; the badge reaches them the day they make one.
+
+## 4. Stockholm
+
+<!-- Daniel Daggfeldt, arborist, Trädmästarna, daniel@tradmastarna.se. Third mail in the thread: the first (09-10) answered his corrections, the second (09-24) asked about the app in Prague. Hidde, 2026-10-02: "you can email daniel if you want there is much to gain there". Reply in the same thread, Tina Axelsson stays cc'd as he put her there. Not pre-granted: the mail asks. -->
 
 ```
-Subject: Copenhagen, seven more
+Subject: Re: Stockholm trees
 
-Hi Hans Erik,
+Hi Daniel,
 
-Seven more of the trees from your list are verified with your photographs and go live this week, which brings Copenhagen to over forty.
+Valkasken is live, with your pin. One thing is still missing on it: nobody has recorded a girth, and you are the one person I know who owns a tape and passes it now and then.
 
-What do you make of the Copenhagen list now? If something is missing or wrong, tell me and I will fix it. The app is live as well, and I would like to hear what you think of it: https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
+We are starting with ambassadors: one person per city who adds photographs, checks the facts and helps sharpen the list, with a badge beside their name. Would you be up for Stockholm? You have already done most of it for the Prins Eugen oak.
 
-Would you be happy to be named as Copenhagen's ambassador on the site? It would say that the list has someone behind it who knows the trees.
+If Tina's photographs of these trees can go on the pages, with her credit, we would be glad to have them.
 
 Thanks,
 Hidde

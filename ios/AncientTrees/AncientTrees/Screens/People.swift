@@ -129,10 +129,15 @@ struct PeopleView: View {
                         // Somebody who has signed up and never chosen a name.
                         // Said rather than filled in: a placeholder name would
                         // be the one thing this project does not do.
-                        Text(p.display_name.isEmpty ? "No name yet" : p.display_name)
-                            .font(.callout)
-                            .foregroundStyle(p.display_name.isEmpty ? Brand.inkSoft : Brand.ink)
-                            .foregroundStyle(moderation.hides(p.user_id) ? Brand.inkSoft : Brand.ink)
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text(p.display_name.isEmpty ? "No name yet" : p.display_name)
+                                .font(.callout)
+                                .foregroundStyle(p.display_name.isEmpty ? Brand.inkSoft : Brand.ink)
+                                .foregroundStyle(moderation.hides(p.user_id) ? Brand.inkSoft : Brand.ink)
+                            // The ambassador badge, komoot's Pioneer shape
+                            // (AmbassadorBadge.swift); nothing for almost everybody.
+                            AmbassadorBadge(places: profiles.placesByUser[p.user_id] ?? [])
+                        }
                         Spacer(minLength: 8)
 
                         if moderation.hides(p.user_id) {
@@ -253,6 +258,7 @@ struct PeopleView: View {
                     ? await profiles.followerIds(of: uid, token: token)
                     : await profiles.followingIds(of: uid, token: token)
                 let known = await profiles.byIds(ids, token: token)
+                await profiles.loadAmbassadors(for: ids, token: token)
                 // A COUNT AND A LIST THAT DISAGREE IS WORSE THAN EITHER. Two of
                 // the three accounts here have signed up and never chosen a
                 // display name, so they have no profiles row at all and byIds
@@ -277,6 +283,7 @@ struct PeopleView: View {
                 try? await Task.sleep(for: .milliseconds(300))
                 if Task.isCancelled { return }
                 results = await profiles.search(query, token: await account.freshToken())
+                await profiles.loadAmbassadors(for: results.map(\.user_id), token: await account.freshToken())
                 searching = false
             }
         }

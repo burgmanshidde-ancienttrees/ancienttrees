@@ -32,6 +32,7 @@ struct ProfileView: View {
     @Environment(Units.self) private var units
     @Environment(Moderation.self) private var moderation
     @Environment(Sightings.self) private var sightings
+    @Environment(Profiles.self) private var profiles
 
 
 
@@ -179,6 +180,7 @@ struct ProfileView: View {
                     // somewhere; this is the way there (Hidde, 2026-08-21).
                     Text("\(saved.visitedCount) collected · \(saved.savedCount) saved")
                         .font(.footnote).foregroundStyle(Brand.moss)
+                    AmbassadorBadge(places: profiles.myPlaces)
                 } else {
                     Text("Sign in")
                         .font(.brand(18, .bold, relativeTo: .headline))

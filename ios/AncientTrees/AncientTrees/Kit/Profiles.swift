@@ -28,9 +28,25 @@ public final class Profiles {
         public var units: String?
     }
 
+    /// One person looking after one place (supabase/ambassadors.sql). The
+    /// badge is the whole of it: komoot's Pioneer shape, per place, beside the
+    /// name (CONVENTIONS.md 2026-10-02). `public` is consent to be NAMED on the
+    /// website; the app shows the badge to signed-in readers either way,
+    /// because a profile is already public here.
+    public struct Ambassador: Codable, Sendable, Hashable {
+        public let user_id: String
+        public let place_slug: String
+        public let place_name: String
+        public let `public`: Bool
+    }
+
     public private(set) var me: Profile?
     public private(set) var followers = 0
     public private(set) var following = 0
+    /// The places you are the ambassador of, usually none.
+    public private(set) var myPlaces: [Ambassador] = []
+    /// Other people's badges, by user id, filled as lists load.
+    public private(set) var placesByUser: [String: [Ambassador]] = [:]
 
     public init() {
         // Debug scaffolding, the same family as -collected=, -mine-demo and
@@ -47,6 +63,22 @@ public final class Profiles {
             if !name.isEmpty {
                 me = Profile(user_id: "00000000-0000-0000-0000-0000000000ab",
                              display_name: name, avatar_url: nil, units: nil)
+            }
+        }
+        // -people-demo: the first demo person wears a badge, so the People
+        // list is photographed with one in it.
+        if DemoPeople.on, let first = DemoPeople.all.first {
+            placesByUser[first.user_id] = [Ambassador(user_id: first.user_id, place_slug: "amsterdam",
+                                                      place_name: "Amsterdam", public: true)]
+        }
+        // -ambassador=Paris: the badge on the demo account, so the screen
+        // sweep photographs it (a screen no argument can open ships unseen).
+        if let arg = ProcessInfo.processInfo.arguments
+            .first(where: { $0.hasPrefix("-ambassador=") }) {
+            let place = String(arg.dropFirst(12))
+            if !place.isEmpty {
+                myPlaces = [Ambassador(user_id: me?.user_id ?? "00000000-0000-0000-0000-0000000000ab",
+                                       place_slug: place.lowercased(), place_name: place, public: false)]
             }
         }
     }
@@ -77,6 +109,13 @@ public final class Profiles {
            let rows = try? JSONDecoder().decode([Profile].self, from: data) {
             me = rows.first
         }
+        if let data = try? await send(request(
+            "ambassadors?select=user_id,place_slug,place_name,public&user_id=eq.\(userId)",
+            "GET", token: token)),
+           let rows = try? JSONDecoder().decode([Ambassador].self, from: data) {
+            myPlaces = rows
+            placesByUser[userId] = rows
+        }
         struct Counts: Decodable { let followers: Int; let following: Int }
         if let data = try? await send(request("rpc/follow_counts", "POST", token: token,
                                               body: try? JSONEncoder().encode(["uid": userId]))),
@@ -96,6 +135,25 @@ public final class Profiles {
         me = nil
         followers = 0
         following = 0
+        myPlaces = []
+    }
+
+    /// The badges of the people in a list, one request for the whole list.
+    /// Fails quietly into "no badges", the honest-empty rule, until the table
+    /// exists.
+    public func loadAmbassadors(for ids: [String], token: String?) async {
+        let wanted = Array(Set(ids)).filter { placesByUser[$0] == nil }
+        guard !wanted.isEmpty, let token else { return }
+        let list = wanted.joined(separator: ",")
+        guard let data = try? await send(request(
+            "ambassadors?select=user_id,place_slug,place_name,public&user_id=in.(\(list))",
+            "GET", token: token)),
+              let rows = try? JSONDecoder().decode([Ambassador].self, from: data) else {
+            for id in wanted { placesByUser[id] = [] }
+            return
+        }
+        for id in wanted { placesByUser[id] = [] }
+        for r in rows { placesByUser[r.user_id, default: []].append(r) }
     }
 
     /// Set or change what people see. The name is the only thing required; an

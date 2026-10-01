@@ -1,5 +1,11 @@
 # Decisions
 
+## 2026-10-02: Ambassadors, one person per place, a badge on both surfaces
+
+Hidde, on the first stranger to add photographs through the app (nine frames, two Paris trees, live within minutes): "email each person that adds trees to become the cities ambassador ... maybe we can even give them special tag if they want - share some responsibility and amplify them." Then: "ambassador idea is perfect lets implement it in both app and web." And on perks: "we can always add this later if it doesnt work."
+
+Decided: the komoot Pioneer shape (per place, a seal beside the name, earned), one line describing the role (adds photographs, checks the facts, helps sharpen the list), the badge as the whole return for now. Two consents kept apart: the badge in the app on yes to the mail, the name on the public page only on a second yes. Granted directly on his word to people he has corresponded with (Hans Erik Lund, Copenhagen; Paulo Araujo, Porto): "dont email paulo or hans ive had much contact with them just make them ambassador." Daniel Daggfeldt (Stockholm) gets a mail. The accounts rule's explicit yes for a new personal-data table is this entry. Full rule in CLAUDE.md "Ambassadors"; convention record in CONVENTIONS.md.
+
 ## 2026-09-26 - Walks you make yourself get a table before they get a screen
 
 Hidde, after the cross-device audit found Kit/MyWalks.swift keeping walks in a

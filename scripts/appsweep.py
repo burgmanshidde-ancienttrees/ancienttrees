@@ -288,7 +288,7 @@ def screens(sub):
         # says. A screen whose SIGNED-IN HALF no argument can open ships half
         # unseen, and the half nobody looks at is the half with the account in
         # it.
-        ("profile-signed-in", ["-tab=2", "-settings", "-signed-in"], 6),
+        ("profile-signed-in", ["-tab=2", "-settings", "-signed-in", "-ambassador=Paris"], 6),
         ("tree",          ["-tab=0", f'-open=tree:{sub["tree"]}'], 6),
         ("tree-nophoto",  ["-tab=0", f'-open=tree:{sub["tree_nophoto"]}'], 5),
         ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 5),

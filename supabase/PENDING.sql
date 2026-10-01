@@ -29,3 +29,24 @@ alter table public.sightings
 alter table public.submissions
   add column if not exists extra_photos text[]
   check (extra_photos is null or cardinality(extra_photos) <= 3);
+
+-- PENDING: the ambassadors table, 2026-10-02 (supabase/ambassadors.sql holds
+-- the full file with its reasoning; this is the same statements). Paste once;
+-- safe to run twice.
+create table if not exists public.ambassadors (
+  user_id uuid not null references auth.users(id) on delete cascade,
+  place_slug text not null check (char_length(place_slug) between 1 and 80),
+  place_name text not null check (char_length(place_name) between 1 and 80),
+  public boolean not null default false,
+  since date not null default current_date,
+  primary key (user_id, place_slug)
+);
+alter table public.ambassadors enable row level security;
+drop policy if exists "ambassadors are readable" on public.ambassadors;
+create policy "ambassadors are readable" on public.ambassadors for select using (true);
+drop policy if exists "own consent is writable" on public.ambassadors;
+create policy "own consent is writable" on public.ambassadors
+  for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
+revoke update on public.ambassadors from authenticated;
+grant update (public) on public.ambassadors to authenticated;
+grant select on public.ambassadors to anon, authenticated;

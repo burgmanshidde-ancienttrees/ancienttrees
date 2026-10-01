@@ -704,6 +704,13 @@ struct CollectView: View {
                 .accessibilityIdentifier("mytrees-edit-photo")
     
                 VStack(alignment: .leading, spacing: 0) {
+                    // Your ambassador badge, when a place has given you one
+                    // (AmbassadorBadge.swift, komoot's Pioneer shape). Drawn
+                    // above the name so the name keeps its tap target intact.
+                    if editable, !profiles.myPlaces.isEmpty {
+                        AmbassadorBadge(places: profiles.myPlaces, size: 13)
+                            .padding(.bottom, 4)
+                    }
                     // The part before the @ rather than the whole address
                     // truncated in the middle, which rendered as "burgma...ail.com"
                     // on his own phone and reads as a bug rather than as a name.
