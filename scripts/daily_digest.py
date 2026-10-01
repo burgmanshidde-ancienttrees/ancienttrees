@@ -377,18 +377,26 @@ def language_lines(pages):
 
 
 def recovery_lines(pages):
-    """Google recovery, one table a day (2026-10-01, after the 09-28 demotion).
+    """Google, measured as if we start again (2026-10-01, after the 09-28 demotion).
 
-    What the cleanup changed and whether the pages that had readers are coming
-    back: trees Google may see (photo or exact pin) against trees kept out,
-    pages on the noindex list, and impressions on the proven cities (the frozen
-    09-27 roster) against what they had that day. Hidde asked for a way to see
-    whether the work is working without reading a session's notes."""
+    Hidde: "we hebben geen idee wat googles probleem is... kijk het alsof we
+    opnieuw beginnen, we moeten groeien en die cijfers bijhouden". So the table
+    leads with what GOOGLE does, measured from the new floor of 2026-10-01
+    (about 50 impressions a day, zero clicks), and keeps what WE did below it
+    as context only, because our own actions prove nothing by themselves."""
     try:
         roster = json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json"))).get("cities") or {}
         noindex = json.load(open(os.path.join(ROOT, "data", "noindex.json"))).get("paths") or {}
     except (OSError, ValueError):
         return []
+    imp = sum(r.get("impressions", 0) for r in pages or [])
+    clk = sum(r.get("clicks", 0) for r in pages or [])
+    seen = sum(1 for r in pages or [] if r.get("impressions", 0) > 0)
+    proven = 0
+    for r in pages or []:
+        path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
+        if path and split_path(path)[1] in roster:
+            proven += r.get("impressions", 0)
     good = weak = 0
     for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
         try:
@@ -403,21 +411,16 @@ def recovery_lines(pages):
                 good += 1
             else:
                 weak += 1
-    now = 0
-    for r in pages or []:
-        path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
-        if not path:
-            continue
-        lang, city = split_path(path)
-        if city in roster:
-            now += r.get("impressions", 0)
-    then = sum(v.get("impressions", 0) for v in roster.values())
-    return ["", "**Google recovery** (the 09-28 demotion; the cleanup went live 2026-10-01)", "",
-            "| Measure | Now | Reference |", "|---|---:|---:|",
-            "| Trees Google may index (photo or exact pin) | %d | |" % good,
-            "| Trees kept out (neither) | %d | 867 on 10-01 |" % weak,
-            "| Pages on the noindex list | %d | 8,935 on 10-01 |" % len(noindex),
-            "| Impressions on the %d proven cities, 10 days | %d | %d on 09-27 |" % (len(roster), now, then)]
+    return ["", "**Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)", "",
+            "What Google does, last 10 days:", "",
+            "| Measure | Now |", "|---|---:|",
+            "| Impressions | %d |" % imp,
+            "| Clicks | %d |" % clk,
+            "| Pages that got at least one impression | %d |" % seen,
+            "| Impressions on the proven cities | %d |" % proven,
+            "", "What we did (context, proves nothing by itself): %d trees Google may index, "
+            "%d kept out for lacking a photo and an exact pin, %d pages on the noindex list."
+            % (good, weak, len(noindex))]
 
 
 def demand_lines(pages, pairs=None):
