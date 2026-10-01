@@ -195,6 +195,8 @@ const cities = defineCollection({
     question_context: z.string().optional(),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     hero_tree_id: z.string().nullable().optional(),
+    // The cover a person chose; beats hero_tree_id (lib/images.ts cityFaceTree).
+    face_tree_id: z.string().optional(),
     oldest_tree_id: z.string().nullable().optional(),
     // In practice this is sometimes a boolean and sometimes an editorial
     // note string (e.g. data/cities/zaragoza.json); it's an internal signal,

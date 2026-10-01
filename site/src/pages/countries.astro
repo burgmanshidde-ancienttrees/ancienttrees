@@ -35,7 +35,7 @@ const countryCards = intros
     );
     const trees = cities.reduce((s, c) => s + renderableTrees(c).length, 0);
     const faceTree = countryFaceTree(intro.data.face_tree_id,
-      ranked.map((c) => ({ hero_tree_id: c.data.hero_tree_id, trees: renderableTrees(c) })));
+      ranked.map((c) => ({ hero_tree_id: c.data.hero_tree_id, face_tree_id: (c.data as any).face_tree_id, trees: renderableTrees(c) })));
     const faceUrl = faceTree ? usablePhoto(faceTree)?.url : null;
     const face: string | null = faceUrl ? thumbUrl(faceUrl, 400) : null;
     return {

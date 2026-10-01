@@ -73,7 +73,7 @@ export async function GET() {
     ...(popularity.get(c.id) ? { popularity: popularity.get(c.id) } : {}),
     // The city page, the map sidebar, /cities, /countries and the app all show
     // this one picture now. hero_tree_id is how a person overrides it.
-    face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, trees: renderableTrees(c) })),
+    face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, face_tree_id: (c.data as any).face_tree_id, trees: renderableTrees(c) })),
   }));
 
   // Contract D's own gate, the one /collections applies: a draft is built for
@@ -129,7 +129,7 @@ export async function GET() {
       .sort((a, b) => renderableTrees(b).length - renderableTrees(a).length
         || a.data.city.localeCompare(b.data.city));
     const face = faceId(countryFaceTree(c.data.face_tree_id,
-      inCountry.map((city) => ({ hero_tree_id: city.data.hero_tree_id, trees: renderableTrees(city) }))));
+      inCountry.map((city) => ({ hero_tree_id: city.data.hero_tree_id, face_tree_id: (city.data as any).face_tree_id, trees: renderableTrees(city) }))));
     return {
       slug: c.data.slug ?? c.id,
       name: c.data.country,

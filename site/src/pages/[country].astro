@@ -247,7 +247,7 @@ const listElements = ranked.map((c, i) => ({ "@type": "ListItem", position: i + 
 // them, Poland included, shared as the site logo while its card had a photo.
 const countryFacePhotoUrl = (() => {
   const t = countryFaceTree(intro.data.face_tree_id,
-    ranked.map((c) => ({ hero_tree_id: c.city.data.hero_tree_id, trees: renderableTrees(c.city) })));
+    ranked.map((c) => ({ hero_tree_id: c.city.data.hero_tree_id, face_tree_id: (c.city.data as any).face_tree_id, trees: renderableTrees(c.city) })));
   return t ? usablePhoto(t)?.url ?? null : null;
 })();
 const countryOgImage = countryFacePhotoUrl

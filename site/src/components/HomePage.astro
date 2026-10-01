@@ -306,7 +306,7 @@ for (const cs of FAVOURITE_CITIES) {
   // homepage too (Hidde, 2026-10-01: "are thumbnails consistent"). Only when
   // a shelf above already printed that photograph does it step aside for
   // another of the city's trees: one picture once per page.
-  const face = cityFaceTree({ hero_tree_id: e.data.hero_tree_id, trees: renderableTrees(e) });
+  const face = cityFaceTree({ hero_tree_id: e.data.hero_tree_id, face_tree_id: (e.data as any).face_tree_id, trees: renderableTrees(e) });
   const faceUrl = face ? usablePhoto(face)?.url : null;
   if (faceUrl && !usedPhotos.has(faceUrl)) photo = { url: faceUrl };
   if (!photo) {

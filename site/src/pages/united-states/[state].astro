@@ -144,7 +144,7 @@ const countLine = `We map ${nTrees(total)} across ${places.length} places in ${s
 
 const faceUrl = (() => {
   for (const c of ranked) {
-    const t = cityFaceTree({ hero_tree_id: c.city.data.hero_tree_id, trees: renderableTrees(c.city) });
+    const t = cityFaceTree({ hero_tree_id: c.city.data.hero_tree_id, face_tree_id: (c.city.data as any).face_tree_id, trees: renderableTrees(c.city) });
     const url = t ? usablePhoto(t)?.url : null;
     if (url) return url;
   }

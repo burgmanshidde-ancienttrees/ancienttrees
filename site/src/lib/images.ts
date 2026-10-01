@@ -482,6 +482,7 @@ export function usablePhoto(tree: TreeLike): Photo | null {
 
 export interface CityEntryLike {
   hero_tree_id?: string | null;
+  face_tree_id?: string | null;
   trees?: TreeLike[];
 }
 
@@ -554,9 +555,16 @@ export function bestFaceTree<T extends TreeLike>(trees: T[], exclude?: Set<strin
 /** The tree that fronts a city: its pinned hero when that photograph is big
  * enough for the box, else the best one in the city, else the hero anyway. */
 export function cityFaceTree<T extends TreeLike>(
-  cityData: { hero_tree_id?: string | null; trees?: T[] },
+  cityData: { hero_tree_id?: string | null; face_tree_id?: string | null; trees?: T[] },
 ): T | null {
   const trees = cityData.trees ?? [];
+  // A COVER A PERSON CHOSE wins outright (Hidde picked city covers from an
+  // overview on 2026-10-01, as he did for countries). hero_tree_id cannot
+  // carry that: runs set it on nearly every city they add.
+  if (cityData.face_tree_id) {
+    const pinned = faceRank(trees.find((t) => t.id === cityData.face_tree_id));
+    if (pinned) return pinned.tree;
+  }
   const hero = cityData.hero_tree_id
     ? faceRank(trees.find((t) => t.id === cityData.hero_tree_id)) : null;
   if (hero?.big) return hero.tree;
@@ -570,7 +578,7 @@ export function cityFaceTree<T extends TreeLike>(
  * country page and /api/browse.json, so the three cannot disagree. */
 export function countryFaceTree<T extends TreeLike>(
   faceTreeId: string | null | undefined,
-  rankedCities: { hero_tree_id?: string | null; trees?: T[] }[],
+  rankedCities: { hero_tree_id?: string | null; face_tree_id?: string | null; trees?: T[] }[],
 ): T | null {
   if (faceTreeId) {
     for (const c of rankedCities) {
