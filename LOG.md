@@ -53,6 +53,13 @@ Live on main:
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: Hidde's first photo review round
+
+- **48 of 212 judged** on the review page (https://claude.ai/artifact/T4TtkFaSAmJXdTVJy1unHp): 25 rejected (recorded in data/photo-queue.json so nobody judges them again), 21 judged a good photograph for 17 trees.
+- **His rule for the page, same day:** he judges only whether it is a good photograph of a tree ("ik weet soms niet of het die boom precies is"); identity is ours to settle from geotag, filename, species and description, and a doubt stays off the site.
+- **The 21 good ones** are in data/research/photo-review-good-2026-10-01.json for the identity check, then photo_verdicts.py.
+- **FOR THE NEXT SESSION: ask Hidde to continue the photo review** ("vraag me binnenkort nog maar n keer"); 164 candidates are still open on the page, which resumes where he stopped.
+
 ## 2026-10-01 session: Hidde judges photographs himself
 
 - **Review page:** https://claude.ai/artifact/T4TtkFaSAmJXdTVJy1unHp (private to Hidde). Batch 1: 212 candidates for 129 trees that are out of the index for lacking a photo and an exact pin, in proven cities, ranked by geotag distance and filename match; no-licence and >1.5 km candidates dropped. Buttons: Goed / Andere boom / Slechte foto / Twijfel.
