@@ -988,8 +988,12 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
             print("A reader's submission is the exception: --deepen \"reader submission row N\".")
             return 1
 
+    # Focus membership is computed whether or not US_ONLY is on: the focus
+    # countries gate new trees (Hidde, 2026-10-01), US_ONLY only decides
+    # whether the US leads the queue. Found 2026-10-02 when US_ONLY went off
+    # and every deepen claim in Europe was refused because is_us stayed False.
     is_us = False
-    if US_ONLY and kind not in DEPTH_KINDS:
+    if kind not in DEPTH_KINDS:
         country = country or country_of(target)
         is_us = country in FOCUS_COUNTRIES
         if not is_us and not outside_us:
@@ -1031,7 +1035,12 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
     # The focus countries are exempt from open-do-not-deepen: Google recovery
     # mode (2026-10-01) puts trees into places that exist ahead of new places,
     # and the US demand sits on pages that already exist.
-    if kind in ("verify", "write") and not deepen and not is_us:
+    # OFF since 2026-10-02 (Hidde: "lets not make needless pages but adding
+    # trees is good"): new trees go INTO proven cities, which is deepening by
+    # definition, and new places need four trees anyway (preflight). Flip
+    # OPEN_FIRST to bring the refusal back.
+    OPEN_FIRST = False
+    if OPEN_FIRST and kind in ("verify", "write") and not deepen and not is_us:
         match, _ = resolve(target, cities())
         # Writing trees that are ALREADY VERIFIED is finishing work, not new
         # deepening: refusing it would throw the verification away.
