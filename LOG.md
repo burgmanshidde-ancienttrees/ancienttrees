@@ -53,6 +53,11 @@ Live on main:
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: season calendar live again, first reviewed photographs live (deploy d48a6e0f)
+
+- **Checked live:** the Assen copper beech page draws the year calendar (SEASON_PUBLIC back on, plus 18 new species files); the Wiktorska chestnut in Warsaw carries the photograph Hidde judged and the identity pass tied to the trunk, and the page is indexable again (no noindex tag). The build refused the coast redwood file for a flat curve, which is the ratchet doing its job; that species now records no moments.
+- Also in this deploy: 49 register links, 5 reviewed photographs, honest copy fixes from earlier in the day.
+
 ## 2026-10-01 session: Hidde's first photo review round
 
 - **48 of 212 judged** on the review page (https://claude.ai/artifact/T4TtkFaSAmJXdTVJy1unHp): 25 rejected (recorded in data/photo-queue.json so nobody judges them again), 21 judged a good photograph for 17 trees.
