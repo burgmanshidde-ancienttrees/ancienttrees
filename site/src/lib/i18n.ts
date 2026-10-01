@@ -326,6 +326,10 @@ export interface UIStrings {
    *  you have added something"): waiting, or on the page. Same words as the
    *  app's Sighting.photoState. */
   addPhotoWaiting: string;
+  /** The heading over a city's day-trip trees (lib/day-trips.ts). */
+  dayTripAway: string;
+  /** "Jaegersborg Dyrehave, 12 km north". `dir` arrives in English. */
+  dayTripWhere: (place: string, km: number, dir: string) => string;
   addPhotoOnPage: string;
   /** The link from the acknowledgement to where the photograph now lives. */
   addPhotoSeeMine: string;
@@ -610,6 +614,8 @@ const EN: UIStrings = {
   addPhotoThanks: "Thank you. We look at every photograph before it goes on a page, and you will hear what happened to yours.",
   addPhotoFailed: "That did not go through. Try again in a moment.",
   addPhotoWaiting: "Sent to us",
+  dayTripAway: "A day trip away",
+  dayTripWhere: (place, km, dir) => `${place}, ${km} km ${dir}`,
   addPhotoOnPage: "Your photo is on this page",
   addPhotoSeeMine: "See it in My trees",
   havePhotographed: "Have you photographed this tree?",
@@ -863,6 +869,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoThanks: "Gracias. Revisamos cada fotografía antes de publicarla, y te diremos qué pasó con la tuya.",
     addPhotoFailed: "Eso no se pudo enviar. Inténtalo de nuevo en un momento.",
     addPhotoWaiting: "Enviada a nosotros",
+    dayTripAway: "A un día de excursión",
+    dayTripWhere: (place, km, dir) => `${place}, a ${km} km ${({"north": "al norte", "north-east": "al noreste", "east": "al este", "south-east": "al sureste", "south": "al sur", "south-west": "al suroeste", "west": "al oeste", "north-west": "al noroeste"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "Tu foto está en esta página",
     addPhotoSeeMine: "Verla en Mis árboles",
     havePhotographed: "¿Has fotografiado este árbol?",
@@ -1103,6 +1111,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoThanks: "Grazie. Guardiamo ogni fotografia prima che venga pubblicata, e ti diremo cosa ne è stato della tua.",
     addPhotoFailed: "L'invio non è andato a buon fine. Riprova tra poco.",
     addPhotoWaiting: "Inviata a noi",
+    dayTripAway: "Una gita in giornata",
+    dayTripWhere: (place, km, dir) => `${place}, ${km} km ${({"north": "a nord", "north-east": "a nord-est", "east": "a est", "south-east": "a sud-est", "south": "a sud", "south-west": "a sud-ovest", "west": "a ovest", "north-west": "a nord-ovest"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "La tua foto è su questa pagina",
     addPhotoSeeMine: "Vedila in I miei alberi",
     havePhotographed: "Hai fotografato questo albero?",
@@ -1343,6 +1353,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoThanks: "Dank je. We bekijken elke foto voordat hij op een pagina komt, en je hoort wat ermee is gebeurd.",
     addPhotoFailed: "Dat is niet gelukt. Probeer het zo weer.",
     addPhotoWaiting: "Naar ons gestuurd",
+    dayTripAway: "Een dagje uit",
+    dayTripWhere: (place, km, dir) => `${place}, ${km} km ${({"north": "ten noorden", "north-east": "ten noordoosten", "east": "ten oosten", "south-east": "ten zuidoosten", "south": "ten zuiden", "south-west": "ten zuidwesten", "west": "ten westen", "north-west": "ten noordwesten"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "Je foto staat op deze pagina",
     addPhotoSeeMine: "Bekijk hem bij Mijn bomen",
     havePhotographed: "Heb je deze boom gefotografeerd?",
@@ -1583,6 +1595,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoThanks: "Danke. Wir sehen uns jedes Foto an, bevor es auf einer Seite erscheint, und du erfährst, was aus deinem geworden ist.",
     addPhotoFailed: "Das hat nicht geklappt. Versuch es gleich noch einmal.",
     addPhotoWaiting: "An uns gesendet",
+    dayTripAway: "Ein Tagesausflug",
+    dayTripWhere: (place, km, dir) => `${place}, ${km} km ${({"north": "nördlich", "north-east": "nordöstlich", "east": "östlich", "south-east": "südöstlich", "south": "südlich", "south-west": "südwestlich", "west": "westlich", "north-west": "nordwestlich"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "Dein Foto ist auf dieser Seite",
     addPhotoSeeMine: "In Meine Bäume ansehen",
     havePhotographed: "Hast du diesen Baum fotografiert?",
@@ -1823,6 +1837,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoThanks: "Obrigado. Vemos cada fotografia antes de ela ser publicada, e saberá o que aconteceu com a sua.",
     addPhotoFailed: "Isso não foi enviado. Tente novamente daqui a pouco.",
     addPhotoWaiting: "Enviada para nós",
+    dayTripAway: "Um passeio de um dia",
+    dayTripWhere: (place, km, dir) => `${place}, a ${km} km ${({"north": "a norte", "north-east": "a nordeste", "east": "a leste", "south-east": "a sudeste", "south": "a sul", "south-west": "a sudoeste", "west": "a oeste", "north-west": "a noroeste"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "A sua foto está nesta página",
     addPhotoSeeMine: "Ver em As minhas árvores",
     havePhotographed: "Fotografou esta árvore?",
@@ -2063,6 +2079,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoThanks: "Merci. Nous regardons chaque photo avant qu'elle ne soit publiée, et vous saurez ce qu'il est advenu de la vôtre.",
     addPhotoFailed: "Cela n'a pas fonctionné. Réessayez dans un instant.",
     addPhotoWaiting: "Envoyée à nous",
+    dayTripAway: "Une excursion d’une journée",
+    dayTripWhere: (place, km, dir) => `${place}, à ${km} km ${({"north": "au nord", "north-east": "au nord-est", "east": "à l’est", "south-east": "au sud-est", "south": "au sud", "south-west": "au sud-ouest", "west": "à l’ouest", "north-west": "au nord-ouest"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "Votre photo est sur cette page",
     addPhotoSeeMine: "La voir dans Mes arbres",
     havePhotographed: "Avez-vous photographié cet arbre ?",
@@ -2302,6 +2320,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoThanks: "ありがとうございます。掲載前にすべての写真を確認し、その後どうなったかをお知らせします。",
     addPhotoFailed: "送信できませんでした。少し経ってからもう一度お試しください。",
     addPhotoWaiting: "送信済み",
+    dayTripAway: "日帰りで行ける木",
+    dayTripWhere: (place, km, dir) => `${place}（中心から${({"north": "北", "north-east": "北東", "east": "東", "south-east": "南東", "south": "南", "south-west": "南西", "west": "西", "north-west": "北西"} as Record<string, string>)[dir] ?? dir}へ${km}km）`,
     addPhotoOnPage: "あなたの写真はこのページに掲載されています",
     addPhotoSeeMine: "アカウントで見る",
     havePhotographed: "この木を撮影しましたか?",

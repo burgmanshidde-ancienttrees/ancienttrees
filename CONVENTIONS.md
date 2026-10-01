@@ -2667,3 +2667,5 @@ Hidde asked whether an action like "Add a tree" should carry at least one line o
 **Camera or library: two equal choices with icons.** iNaturalist's + and Apple's own add-photo menu give the camera and the library the same weight. A filled button over a text link read as one action and a footnote.
 
 **One word for pending.** Google Maps shows one "Pending" for an edit, a photo or a new place, then "Published". Ours is "Sent to us" for a tree you added and for a photo of one of ours alike, then "On the map" or "on the tree's page".
+
+**A confirmation that needs no answer is Apple's grey HUD.** Music's "Added to Library" and Photos' "Saved": a rounded material square in the middle, a checkmark over one or two words, gone in about a second and a half, nothing to tap. Used for "Tree saved" (Kit/DoneHUD.swift). Anything offering Undo is a Google Maps snackbar at the bottom instead.

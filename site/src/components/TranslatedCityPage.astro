@@ -10,6 +10,7 @@
 // component renders it; data/i18n/<lang>/<slug>.json supplies only text, and
 // ui(lang) supplies the chrome labels with English fallback per key.
 import TreeCard from "./TreeCard.astro";
+import { splitForPage } from "../lib/day-trips";
 import LanguagePicker from "./LanguagePicker.astro";
 import ShareButton from "./ShareButton.astro";
 import Base from "../layouts/Base.astro";
@@ -45,6 +46,7 @@ const cslug = city.id;
  * stays in the reader's language whether or not the city is translated. */
 const leaf = (slug: string) => (fallback ? `/${cslug}/${slug}` : `/${lang}/${cslug}/${slug}`);
 const trees = renderableTrees(city);
+const split = splitForPage(city.data.city, trees as any);
 const tslugs = treeSlugsForCity(city);
 const selfUrl = `${BASE_URL}/${lang}/${cslug}`;
 // A fallback page is the English text on a second URL, so it points its
@@ -137,14 +139,32 @@ const cityHasQuestion = hasQuestionPage(city);
           <span class="passport-total" id="passport-total"></span>
         </p>
       </div>
-      {trees.map((t, i) => {
+      {split.inTown.map((t) => {
         const x = tr.trees[t.id];
         return (
-          <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={i + 1}
+          <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
                     variant="full" headingLevel={2} lang={lang} canTick fallback={fallback}
                     overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
         );
       })}
+      {split.away.length > 0 && (
+        <section class="day-trips">
+          <h2 class="day-trips-head">{U.dayTripAway}</h2>
+          {split.away.map((g) => (
+            <Fragment>
+              <p class="day-trip-where">{U.dayTripWhere(g.trip.place, g.trip.km, g.trip.dir)}</p>
+              {g.trees.map((t) => {
+                const x = tr.trees[t.id];
+                return (
+                  <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
+                            variant="full" headingLevel={3} lang={lang} canTick fallback={fallback}
+                            overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
+                );
+              })}
+            </Fragment>
+          ))}
+        </section>
+      )}
       <div class="panel-foot">
         <p class="subtle-suggest"><b>{U.mappingAll}</b> {U.missingOrWrong(tr.city)} <a href="/contribute?kind=tree">{U.tellUs}</a>.</p>
         <div class="take-with-you">

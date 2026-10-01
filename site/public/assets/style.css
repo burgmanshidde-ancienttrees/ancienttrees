@@ -2798,3 +2798,10 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 }
 .tree-sources-how { font-size: 13px; margin: 0.5rem 0 0; }
 .tree-sources-how a { color: var(--ink); }
+
+/* "A day trip away" on a city page (lib/day-trips.ts, 2026-10-01). The same
+   heading weight as the page's other section heads, and the place line in
+   the muted voice the cards use for their own small print. */
+.day-trips { margin-top: 2rem; }
+.day-trips-head { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; margin: 0 0 0.25rem; }
+.day-trip-where { color: var(--ink-mid); font-size: 0.95rem; margin: 0.75rem 0 0.5rem; }
