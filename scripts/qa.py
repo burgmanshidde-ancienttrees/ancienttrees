@@ -276,6 +276,47 @@ def check_no_strategy_in_workflows():
     return out
 
 
+def check_the_digest_never_shows_bots():
+    """The digest counts PEOPLE and never shows a bot.
+
+    Hidde, 2026-10-02, on a digest that explained most beacon visits were
+    headless crawlers and printed them in a "Bots (left out)" column: "can you
+    please never ever count en show bots again evr." The filter itself is
+    right and stays (a desktop pageview with no referrer is left out of every
+    beacon query); what is refused is any trace of it in the output. No column,
+    no total, no sentence about what was left out. Read in the digest code
+    (so the next person who adds the column back is told at push time) and in
+    DATA.md's newest entry (so a digest written by an older checkout is caught
+    the next morning). Removing this check needs Hidde.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    bad_cells = ("| bots", "bots (left out)", "| bot |", "crawlers (left out)")
+    for name in ("scripts/daily_digest.py", "scripts/weekly_analysis.py", "scripts/seo_diagnose.py"):
+        path = root / name
+        if not path.is_file():
+            continue
+        for i, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            low = line.lower()
+            if low.lstrip().startswith("#") or '"""' in line:
+                continue
+            if any(c in low for c in bad_cells):
+                out.append(f"{name}:{i}: prints a bot column or count ({line.strip()[:70]!r}). "
+                           "The digest counts people; bots are filtered silently and never shown "
+                           "(Hidde, 2026-10-02).")
+    data = root / "DATA.md"
+    if data.is_file():
+        text = data.read_text(encoding="utf-8")
+        heads = [m.start() for m in re.finditer(r"^## ", text, re.M)]
+        newest = text[heads[0]:heads[1]] if len(heads) > 1 else text[heads[0]:] if heads else ""
+        for i, line in enumerate(newest.splitlines(), 1):
+            low = line.lower()
+            if line.startswith("|") and any(c in low for c in bad_cells):
+                out.append(f"DATA.md newest entry, line {i}: a table shows bots ({line.strip()[:70]!r}). "
+                           "People only (Hidde, 2026-10-02).")
+    return out
+
+
 # The eighth ratchet check, and the same disease as the one above: a second
 # copy of something that already has one place to live. data/city-list.json
 # carried rank/queue/tier from an older scheme while CITY_QUEUE.md carried the
@@ -2360,6 +2401,7 @@ def main():
         check_run_prompt_forbids_compound_commands,
         check_scripts_are_valid_python,
         check_no_strategy_in_workflows,
+        check_the_digest_never_shows_bots,
         check_app_downloads_are_their_own_block,
         check_auth_corpus_agreement,
         check_one_city_order,
@@ -2535,6 +2577,7 @@ def main():
         failures.append(f"{page.relative_to(DIST)}: orphan, no page on the site links to it")
 
     failures += check_no_strategy_in_workflows()
+    failures += check_the_digest_never_shows_bots()
     failures += check_run_prompt_forbids_compound_commands()
     failures += check_app_downloads_are_their_own_block()
     failures += check_one_city_order()

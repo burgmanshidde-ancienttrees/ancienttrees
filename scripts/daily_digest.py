@@ -1236,16 +1236,21 @@ query($tag: String!, $since: Date!, $until: Date!) {
         if "google." in host or "googlequicksearchbox" in host:
             dd = r["dimensions"]["date"]
             google[dd] = google.get(dd, 0) + r["count"]
-    bots = {b["dimensions"]["date"]: b["count"] for b in acct[0].get("bots") or []}
-    rows = ["| Day | Visits | Pageviews | From Google | Bots (left out) |",
-            "|---|---:|---:|---:|---:|"]
+    # NO BOT COLUMN, EVER (Hidde, 2026-10-02: "can you please never ever count
+    # en show bots again evr"). The crawler pageviews are filtered out of
+    # every query above and that is the whole of their appearance here: the
+    # table counts people and says nothing about what it left out. The one
+    # internal use that survives is subtracting them from the no-referrer row
+    # below, so that line counts people too; it never prints them.
+    rows = ["| Day | Visits | Pageviews | From Google |",
+            "|---|---:|---:|---:|"]
     for d in days:
         dd = d["dimensions"]["date"]
-        rows.append("| %s | %d | %d | %d | %d |" % (
-            dd[5:], d["sum"]["visits"], d["count"], google.get(dd, 0), bots.get(dd, 0)))
-    rows.append("| **window** | **%d** | **%d** | **%d** | **%d** |" % (
+        rows.append("| %s | %d | %d | %d |" % (
+            dd[5:], d["sum"]["visits"], d["count"], google.get(dd, 0)))
+    rows.append("| **window** | **%d** | **%d** | **%d** |" % (
         sum(d["sum"]["visits"] for d in days), sum(d["count"] for d in days),
-        sum(google.values()), sum(bots.values())))
+        sum(google.values())))
     trend = "\n" + "\n".join(rows)
     top = "; ".join("%s (%d)" % (p["dimensions"]["requestPath"], p["count"]) for p in paths)
     def _dim(rows, key, skip=("", None)):
@@ -1290,8 +1295,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
     nav = ("\n- Moved between our own pages: %d of %d pageviews (%.0f%%); the rest arrived "
            "from search or straight in. Cookieless means no session, so which page led to "
            "which cannot be measured." % (internal, total_pv, 100.0 * internal / total_pv))
-    return ("Web Analytics (beacon, cookieless), PEOPLE only: a desktop pageview with no "
-            "referrer is counted as a bot and sits in the last column, nowhere else.\n"
+    return ("Web Analytics (beacon, cookieless), people only.\n"
             "Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.\n%s\n- Top paths: %s\n"
             "- Referrers: %s%s\n- Countries: %s\n- Devices: %s%s"
             % (trend, top, _dim(refs, "refererHost"), nav,
