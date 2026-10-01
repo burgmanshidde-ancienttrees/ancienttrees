@@ -1,0 +1,60 @@
+[
+  {
+    "id": "kag_015",
+    "name": "The Sacred Cedar of Kirishima Jingu",
+    "species": "Japanese Cedar (Cryptomeria japonica)",
+    "age_estimate": "roughly 800 years",
+    "age_min": 700,
+    "age_max": 900,
+    "girth_cm": 680,
+    "height_m": 38,
+    "location": {
+      "address": "霧島神宮, 鹿児島県霧島市霧島田口2608-5 (Kirishima Jingu, Kirishima)",
+      "latitude": 31.858319,
+      "longitude": 130.87114,
+      "neighbourhood": "Kirishima (day trip from Kagoshima)"
+    },
+    "verified_sources": [
+      "https://kirishima-sjc.or.jp/guide/d-goshinboku.html",
+      "https://www.pmiyazaki.com/kirishimajingu/gosinboku.htm",
+      "https://ja.wikipedia.org/wiki/霧島神宮",
+      "https://www.openstreetmap.org/node/13863502742",
+      "https://commons.wikimedia.org/wiki/File:霧島神宮（御神木）.jpg"
+    ],
+    "access": "Free, shrine precinct; the tree stands fenced in the front courtyard, right of the approach to the main hall, visible from the open ground around it.",
+    "transport": "Day trip. JR Nippo line to Kirishima-Jingu station, then Kagoshima Kotsu bus toward Kirishima Iwasaki Hotel, about 15 minutes (ja.wikipedia). Total from Kagoshima city centre NOT verified; train time and timetable not checked, expect roughly 1.5 to 2 hours each way.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "photo_hint": {
+      "own": "Hidde photograph, sighting 0ee5b139-7042-4bcb-a109-4e8b8d051174, approved for use uncredited",
+      "open_licence": "File:霧島神宮（御神木）.jpg, CC BY-SA 4.0, author 矢野弘幸, own work 2018-09-10, geotag 31.858311,130.8712, viewed: same tree (fern patch on trunk, shimenawa, fence), tight crop and low res, so Hidde's is better"
+    },
+    "recognise": "The single huge cedar inside a low wooden fence in the front courtyard, right of the approach to the main hall, a rope with paper streamers (shimenawa) tied round the foot of the trunk and a small wooden notice board at the fence.",
+    "verify_notes": "Shrine's own tourist-association page (kirishima-sjc.or.jp) and pmiyazaki.com (shrine guide): estimated about 800 years, height 38.2 m, trunk girth 6.8 m. Called 霧島杉 / 霧島メアサ; said to be the ancestor of southern Kyushu cedars (ja.wikipedia, 'estimated about 800 years'). pmiyazaki: it was already standing before the shrine was re-established on the present site in 1484 (page's wording 'transplanted to this location' is about the shrine, not necessarily the tree; do not say the tree was moved). It had declined and leaned about 10 degrees; restoration work April 2013 (pmiyazaki). Sources do not say how the figures were measured (girth height not given), so 6.8 m is a source figure, girth_cm 680. DESIGNATION: none found. ja.wikipedia does not list it as a natural monument or giant-tree entry; I did not find it on a Kagoshima prefectural or Environment Ministry list, so do not call it designated. Age is source-given, repeated as 'about 800'; age_min/max band is mine, broad. PIN: OSM natural=tree node 13863502742 at 31.858319,130.871140 and the Commons geotag (31.858311,130.8712) agree within 5 m; Hidde's phone fix 31.858505,130.871308 is about 26 m NE, consistent with him standing back from a 38 m tree; his photo shows the same fenced tree. Pin = OSM node, confirmed. ALIVE: Hidde's photograph 2026-10-02 shows a healthy crown; also lifecheck RECENT nearby iNat records. Shrine is Kirishima Jingu in Kirishima city, Kagoshima Prefecture (pmiyazaki's page header says Miyazaki; that is the site name only). Shrine coordinates 31.858944,130.871861 (ja.wikipedia). Day-trip boundary: well beyond 30 min of the centre, label as Kirishima, true time not verified."
+  },
+  {
+    "id": "kag_016",
+    "name": "The Leaning Camphor of the Shiroyama Car Park",
+    "species": "Camphor Tree (Cinnamomum camphora)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "新照院町, Kagoshima (car park below Shiroyama, about 250 m from kag_001)",
+      "latitude": 31.5962204,
+      "longitude": 130.5495004,
+      "neighbourhood": "Shiroyama"
+    },
+    "verified_sources": [],
+    "access": "Free; it stands at the edge of a public car park beside a small building, its main limb arching over the road and parking area. Visible from the car park.",
+    "transport": "Near Shiroyama, same area as kag_001 (about 250 m); in Kagoshima city, local bus to Shiroyama. Stop name and time not checked.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_hint": {
+      "own": "Hidde photograph, sighting 1993a31d-f025-44d3-bcc1-6caa9cbba0eb, approved for use uncredited",
+      "open_licence": "none found: Commons geosearch within 200 m returned only views from Shiroyama, no tree; iNaturalist has no camphor record within 120 m"
+    },
+    "recognise": "A camphor with a massive trunk rising from a raised concrete bed beside a small building at the car park, its main limb leaning out and arching right across the road over the parked cars, fern-covered; kag_001 by contrast stands beside the walking path in the forest.",
+    "verify_notes": "UNNAMED, ONE SOURCE ONLY: the owner's own photograph and phone GPS fix (31.5962204,130.5495004), approved for publication by Hidde 2026-10-02. Searched: Kagoshima city 保存樹 register (hozonju-02, 38 trees): no entry in 新照院町 (only a kuroganemochi in Terukuni Park for Shiroyama); several web searches on Shiroyama car park camphor found nothing naming it; Shiroyama is a national natural monument and historic site (1931) per kagoshima-kankou.com but that does not name this tree. No age, girth or height from any source; none estimated. Species camphor judged from the photograph (leaf, bark, form), not from a source. Pin is the owner's phone fix, honestly approximate (phone accuracy, tree beside the road); the photo shows the trunk base next to the small building so the viewing spot is right. ALIVE: owner photo 2026-10-02, full green crown. Whether the car park land is public: it is a car park, free per Kagoshima city park page for the Shiroyama park car park (城山公園駐車場, 城山町22-33, 37 spaces, free) but I did not confirm this is that exact car park. Page should ask the reader for girth and name. Ask: is a plaque at the base."
+  }
+]
