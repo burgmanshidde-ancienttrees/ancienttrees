@@ -5,7 +5,7 @@
   "intro": "Kagoshima keeps its own list. Since 1974 the city has designated preserved trees one at a time, measured each at 1.5 metres and put a signboard at its foot, so the ages here come from a municipal register rather than from folklore. Number one is a camphor at Kagoshima Shrine. Number eight is a subtropical fig on the flank of an active volcano that the sign dates at a thousand years. Above the harbour, Shiroyama was fenced off for most of the Edo period and never cleared. An hour north stands the largest tree in Japan.",
   "meta_description": "Kagoshima's ancient trees: a thousand-year fig on Sakurajima, the cycad that gave botany its first plant sperm, and Japan's largest tree an hour north.",
   "question_answer": "The oldest tree in Kagoshima is the Akou of Yuno, a subtropical fig on the eastern flank of Sakurajima, which the city's own preserved-tree signboard dates at about 1,000 years. It stands in the hamlet of Yuno in Higashi-Sakurajima, reached by the 15-minute ferry from central Kagoshima and a local bus.",
-  "question_meta": "The Akou of Yuno on Sakurajima, about 1,000 years old, is Kagoshima's oldest tree. Where it stands, how the age is dated, and 13 more remarkable trees.",
+  "question_meta": "The Akou of Yuno on Sakurajima, about 1,000 years old, is Kagoshima's oldest tree. Where it stands, how the age is dated, and 15 more remarkable trees.",
   "question_context": "Kagoshima's ages come from an unusually concrete place. Under a 1974 ordinance the city designates individual preserved trees, records trunk circumference at 1.5 metres, height and an estimated age for each, and posts that estimate on a board at the tree. The Akou of Yuno is preserved tree number 8, and its board gives about 1,000 years, roughly three times the next oldest figure on the list. Nothing behind that number is a ring count and the city does not publish its method, so treat it as an official estimate. The Environment Ministry measured the same tree at 6.5 metres around against the city's 7.4, most likely because it recorded only the thicker of two stems that fuse a metre above the ground. If a day trip counts, an older tree stands an hour north in Aira: the Great Camphor of Kamo was already worshipped as sacred when the shrine beside it was founded in 1123. Getting to Yuno: the Sakurajima ferry runs around the clock and takes 15 minutes, then a local bus toward Higashi-Sakurajima.",
   "oldest_tree_id": "kag_009",
   "faq": [
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Kagoshima's ancient trees free to visit?",
-      "a": "Yes, all fourteen. Eleven stand in public parks, on shrine grounds or beside a public road in the city, one is on a lane through a Sakurajima hamlet, and the two out-of-town trees are on open shrine ground. None charges entry."
+      "a": "Yes, all sixteen. Thirteen stand in public parks, on shrine grounds or beside a public road in the city, one is on a lane through a Sakurajima hamlet, and the two out-of-town trees, at Kamo and Kirishima, are on open shrine ground. None charges entry."
     },
     {
       "q": "What is an akou tree?",
@@ -27,7 +27,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "Most of them. Four sit within a kilometre of Terukuni Park and Shiroyama in the city centre. Seven more make a second walk of about two and a half kilometres along the northern waterfront, from Nanshu Shrine down through Tagayama Park to the stone bridges at Gionnosu and on up the Iso coast road. The Camphor of Kyoken Park is its own short stop, a few minutes from Kagoshima-Chuo Station and about 1.3 km from Terukuni Park. Sakurajima and Kamo are separate trips."
+      "a": "Most of them. Four sit within a kilometre of Terukuni Park and Shiroyama in the city centre. Seven more make a second walk of about two and a half kilometres along the northern waterfront, from Nanshu Shrine down through Tagayama Park to the stone bridges at Gionnosu and on up the Iso coast road. The Camphor of Kyoken Park is its own short stop, a few minutes from Kagoshima-Chuo Station and about 1.3 km from Terukuni Park. Sakurajima, Kamo and Kirishima are separate trips."
     }
   ],
   "trees": [
@@ -525,6 +525,86 @@
       "location_precision": "confirmed",
       "notes": "Girth (400 cm) is a visitor's own estimate, not a register or survey measurement; no age is documented anywhere found for this specific tree, only for the park and the site's history. The city's own park page names a camphor (kusunoki) as Kyoken Park's symbol tree alongside a ginkgo-lined promenade; this is the single large camphor standing in its own brick planter at the park's centre, distinct from the ginkgo row. Do not bridge the Saigo Takamori residence (pre-1868) or the 1911 girls' school to the tree's own age: no source dates the tree itself, only the site.",
       "how_to_recognise": "You can recognise it by its own circular brick planter at the park's centre, the only tree here fenced off like that. It stands between the basketball court and the open lawn, a few minutes from Kagoshima-Chuo Station."
+    },
+    {
+      "id": "kag_015",
+      "name": "The Sacred Cedar of Kirishima Jingu",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 800 years",
+      "age_min": 700,
+      "age_max": 900,
+      "age_basis": "source",
+      "girth_cm": 680,
+      "height_m": 38,
+      "location": {
+        "address": "霧島神宮, 鹿児島県霧島市霧島田口2608-5 (Kirishima Jingu, Kirishima)",
+        "latitude": 31.858319,
+        "longitude": 130.87114,
+        "neighbourhood": "Kirishima (day trip from Kagoshima)"
+      },
+      "story": "Every cedar in southern Kyushu is said to descend from this one. Kirishima Jingu calls its sacred tree the Kirishima-sugi, or Kirishima measa, the ancestor of the region's cedars, and that claim is tradition rather than anything a laboratory has tested.\n\nThe size is easier to check. The shrine's tourist association gives it 38.2 metres of height, 6.8 metres round the trunk and an age of about 800 years. Nobody publishes how those figures were taken, so read the age as the shrine's estimate rather than a count of rings.\n\nIf the estimate holds, the cedar was here before the shrine was. Kirishima Jingu was re-established on its present site in 1484, and the shrine's own guide says this tree was already standing when it arrived. It has watched more than five centuries of worshippers walk the approach since.\n\nEight hundred years is long enough to start leaning. By the early 2010s the trunk had tilted about ten degrees and the tree was in visible decline, and restoration work was carried out on it in April 2013. In October 2026 its crown was full and green.\n\nIt stands inside a low wooden fence in the front courtyard, a straw rope hung with paper streamers tied round the foot of the trunk and ferns growing on the bark. It is a day trip from Kagoshima: the train to Kirishima-Jingu station, then about fifteen minutes on the bus.",
+      "verified_sources": [
+        "https://kirishima-sjc.or.jp/guide/d-goshinboku.html",
+        "https://www.pmiyazaki.com/kirishimajingu/gosinboku.htm",
+        "https://ja.wikipedia.org/wiki/霧島神宮",
+        "https://www.openstreetmap.org/node/13863502742",
+        "https://commons.wikimedia.org/wiki/File:霧島神宮（御神木）.jpg"
+      ],
+      "access": "Free, shrine precinct; the tree stands fenced in the front courtyard, right of the approach to the main hall, visible from the open ground around it.",
+      "transport": "Day trip from Kagoshima: JR Nippo line to Kirishima-Jingu station, then the Kagoshima Kotsu bus toward Kirishima Iwasaki Hotel, about 15 minutes. Allow roughly 1.5 to 2 hours each way from the city centre.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/kag_015-the-sacred-cedar-of-kirishima-jingu.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "c297da44-0809-4c48-9741-ad40af16397a",
+        "sighting_id": "0ee5b139-7042-4bcb-a109-4e8b8d051174",
+        "note": "Photographed by a reader and sent through the app (2026-09-23); a viewing pass approved it on 2026-10-02: Owner's own photograph; Hidde approved it on the review page 2026-10-02 (never credited, as every own photograph) Species seen: tall cedar, fibrous red-brown bark, dense dark crown: Cryptomeria. Fits the description: the sacred cedar at Kirishima Jingu with its shimenawa, wooden fence and the Kirishima kagura sign at its foot.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "notes": "Shrine's own tourist-association page (kirishima-sjc.or.jp) and pmiyazaki.com (shrine guide): estimated about 800 years, height 38.2 m, trunk girth 6.8 m. Called 霧島杉 / 霧島メアサ; said to be the ancestor of southern Kyushu cedars (ja.wikipedia, 'estimated about 800 years'). pmiyazaki: it was already standing before the shrine was re-established on the present site in 1484 (page's wording 'transplanted to this location' is about the shrine, not necessarily the tree; do not say the tree was moved). It had declined and leaned about 10 degrees; restoration work April 2013 (pmiyazaki). Sources do not say how the figures were measured (girth height not given), so 6.8 m is a source figure, girth_cm 680. DESIGNATION: none found. ja.wikipedia does not list it as a natural monument or giant-tree entry; I did not find it on a Kagoshima prefectural or Environment Ministry list, so do not call it designated. Age is source-given, repeated as 'about 800'; age_min/max band is mine, broad. PIN: OSM natural=tree node 13863502742 at 31.858319,130.871140 and the Commons geotag (31.858311,130.8712) agree within 5 m; Hidde's phone fix 31.858505,130.871308 is about 26 m NE, consistent with him standing back from a 38 m tree; his photo shows the same fenced tree. Pin = OSM node, confirmed. ALIVE: Hidde's photograph 2026-10-02 shows a healthy crown; also lifecheck RECENT nearby iNat records. Shrine is Kirishima Jingu in Kirishima city, Kagoshima Prefecture (pmiyazaki's page header says Miyazaki; that is the site name only). Shrine coordinates 31.858944,130.871861 (ja.wikipedia). Day-trip boundary: well beyond 30 min of the centre, label as Kirishima, true time not verified.",
+      "how_to_recognise": "You can recognise it as the one huge cedar inside a low wooden fence, with a straw rope and paper streamers round the foot of the trunk. It stands in the front courtyard, to the right of the approach to the main hall."
+    },
+    {
+      "id": "kag_016",
+      "name": "The Leaning Camphor of the Shiroyama Car Park",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "新照院町, Kagoshima (car park below Shiroyama, about 250 m from the Camphor of Shiroyama)",
+        "latitude": 31.5962204,
+        "longitude": 130.5495004,
+        "neighbourhood": "Shiroyama"
+      },
+      "story": "Its main limb leaves the trunk at a slant and keeps going, out across the road, until it hangs over the cars parked on the other side. Almost everything else about this camphor is an open question.\n\nKagoshima keeps a register of 38 preserved trees, each measured and given a signboard at its foot. This one is not on it. It stands at the edge of a car park below Shiroyama, the hill above the city that has been a national natural monument and historic site since 1931, about 250 metres from the Camphor of Shiroyama on the forest path. None of the writing about Shiroyama that we found names it.\n\nWhat one visit shows: a massive trunk rising out of a raised concrete bed beside a small building, a crown that was full and green in October 2026, and ferns growing along the leaning limb. The species is read from the leaves, the bark and the shape of the tree rather than from any record, and nobody has published a name, a girth, a height or an age for it.\n\nThat makes it a tree you can help put on the record. If you are standing under it, a tape round the trunk at chest height would give it its first measurement. If there is a plaque at the base, or a name the neighbourhood uses for it, or you know when it was planted, tell us and this page will carry it.",
+      "verified_sources": [
+        "Visit on 2026-09-25: photograph and GPS fix at the trunk; no register or article names this tree"
+      ],
+      "access": "Free; it stands at the edge of a public car park beside a small building, its main limb arching over the road and parking area. Visible from the car park.",
+      "transport": "In central Kagoshima: a local bus to Shiroyama, then on foot; about 250 metres from the Camphor of Shiroyama.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/kag_016-the-leaning-camphor-of-the-shiroyama-car-park.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1600,
+        "height": 1200,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "1993a31d-f025-44d3-bcc1-6caa9cbba0eb",
+        "note": "Photographed by a reader and sent through the app (2026-09-25); a viewing pass approved it on 2026-10-02: Owner's own photograph; Hidde approved it on the review page 2026-10-02 (never credited, as every own photograph) Species seen: evergreen crown of small glossy leaves, massive fissured trunk: camphor. Fits the description: a huge camphor rising from a raised bed by a small building, its main limb arching across the road over the car park.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "UNNAMED, ONE SOURCE ONLY: the owner's own photograph and phone GPS fix (31.5962204,130.5495004), approved for publication by Hidde 2026-10-02. Searched: Kagoshima city 保存樹 register (hozonju-02, 38 trees): no entry in 新照院町 (only a kuroganemochi in Terukuni Park for Shiroyama); several web searches on Shiroyama car park camphor found nothing naming it; Shiroyama is a national natural monument and historic site (1931) per kagoshima-kankou.com but that does not name this tree. No age, girth or height from any source; none estimated. Species camphor judged from the photograph (leaf, bark, form), not from a source. Pin is the owner's phone fix, honestly approximate (phone accuracy, tree beside the road); the photo shows the trunk base next to the small building so the viewing spot is right. ALIVE: owner photo 2026-10-02, full green crown. Whether the car park land is public: it is a car park, free per Kagoshima city park page for the Shiroyama park car park (城山公園駐車場, 城山町22-33, 37 spaces, free) but I did not confirm this is that exact car park. Page should ask the reader for girth and name. Ask: is a plaque at the base.",
+      "how_to_recognise": "You can recognise it by the main limb, which leans out from a raised concrete bed beside a small building and arches right across the road over the parked cars. It stands at the car park's edge, not on the forest path.",
+      "verify_notes": " Published 2026-10-02 on Hidde's own call on the review page (overruling the run's lead verdict of 2026-09-25); his photograph fronts the page uncredited, his GPS fix at the trunk is the pin. No source names the tree; the page asks."
     }
   ]
 }
