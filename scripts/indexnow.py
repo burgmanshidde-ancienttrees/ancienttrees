@@ -64,10 +64,18 @@ def main(argv):
     except Exception as e:
         print("indexnow: could not read the sitemap (%s); nothing sent" % e)
         return 0
+    if send_all:
+        # The noindexed pages too (2026-10-01): Bing only drops them once it
+        # has refetched them and seen the tag.
+        try:
+            entries += sitemap_entries("https://%s/sitemap-recrawl.xml" % HOST)
+        except Exception:
+            pass
     since = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
     urls = sorted({u for u, m in entries if send_all or (m and m >= since)})
     print("indexnow: %d URLs in the sitemap, %d to send (%s)"
           % (len(entries), len(urls), "all" if send_all else "lastmod since " + since))
+    refused = 0
     for i in range(0, len(urls), BATCH):
         payload = {"host": HOST, "key": KEY,
                    "keyLocation": "https://%s/%s.txt" % (HOST, KEY),
@@ -81,8 +89,16 @@ def main(argv):
             # 202 is accepted-pending-key-check; 403 means the key file was not
             # found yet, which is normal on the very first deploy that adds it.
             print("indexnow: batch %d HTTP %d %s" % (i // BATCH + 1, e.code, e.read()[:200]))
+            refused += 1
         except Exception as e:
             print("indexnow: batch %d failed: %s" % (i // BATCH + 1, e))
+            refused += 1
+    # A refusal used to end in exit 0, so the workflow went green while Bing
+    # had accepted nothing (2026-10-01, 403 UserForbiddedToAccessSite on the
+    # first full submission). Red is the honest colour.
+    if refused:
+        print("::error::indexnow: %d batch(es) refused or failed" % refused)
+        return 1
     return 0
 
 
