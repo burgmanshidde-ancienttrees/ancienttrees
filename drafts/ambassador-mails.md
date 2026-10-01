@@ -1,6 +1,6 @@
 # Ambassador mails: thanks, what do you think of the list, want to carry it?
 
-Hidde's idea, 2026-10-02. He sends; a session drafts and checks. Three people
+Hidde's idea, 2026-10-02. **Since the same evening the Paris mail is the STANDARD invitation and the knock sends it** (`scripts/ambassador.py --invite-scan --send`, signed Ancient Trees) to any reader whose photograph is live in a place without an ambassador; the Paris and Seville readers are the first two. The badge follows their answer. The Leon and Daniel mails below are personal and his to send. Three people
 have actually given us trees or photographs and can be reached today. The
 Paris reader signed in with Apple, so their address is a privaterelay.appleid.com
 one: mail to it only arrives from the ancienttrees.app sender the relay knows
