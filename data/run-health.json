@@ -20251,6 +20251,25 @@
    ],
    "trees": 0,
    "logged": true
+  },
+  {
+   "started": "2026-10-01T20:39:13+00:00",
+   "date": "2026-10-01",
+   "run_id": "36923078547",
+   "minutes": 2.1,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 29,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 429453,
+   "claims_held": [],
+   "commits": 5,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
