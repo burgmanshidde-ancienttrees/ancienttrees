@@ -192,6 +192,37 @@ query($tag: String!, $since: Date!, $until: Date!) {
         for d in sorted(per):
             print("| %s | %d | %d | %d |" % (d, per[d]["google"], per[d]["bing"], per[d]["all"]))
 
+    def who_is_left():
+        # Who still arrives with Google at zero: the beacon runs in any browser
+        # that executes JavaScript, headless crawlers included, so a visit is
+        # not a person until its shape says so (path, country, device, browser).
+        tok = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
+        if not tok:
+            print("no CLOUDFLARE_ANALYTICS_TOKEN")
+            return
+        since = (today - datetime.timedelta(days=4)).isoformat()
+        query = {"query": """
+query($tag: String!, $since: Date!, $until: Date!) {
+  viewer { accounts(filter: {accountTag: $tag}) {
+    g: rumPageloadEventsAdaptiveGroups(limit: 60,
+        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
+      count dimensions { requestPath countryName deviceType refererHost
+                         userAgentBrowser userAgentOS }
+    }
+  } }
+}""", "variables": {"tag": ACCOUNT_TAG, "since": since, "until": today.isoformat()}}
+        g = api("https://api.cloudflare.com/client/v4/graphql", query, token=tok)
+        if g.get("errors"):
+            raise RuntimeError(json.dumps(g["errors"]))
+        print("Since %s, the 60 biggest combinations:\n" % since)
+        print("| Views | Path | Country | Device | Referrer | Browser | OS |")
+        print("|---:|---|---|---|---|---|---|")
+        for r in g["data"]["viewer"]["accounts"][0]["g"]:
+            d = r["dimensions"]
+            print("| %d | %s | %s | %s | %s | %s | %s |" % (
+                r["count"], d["requestPath"], d["countryName"], d["deviceType"],
+                d["refererHost"] or "(direct)", d["userAgentBrowser"], d["userAgentOS"]))
+
     print("# SEO diagnosis, %s" % today.isoformat())
     section("1. Day by day, final against fresh data", days)
     section("2a. By country", lambda: split_by("country"))
@@ -203,6 +234,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
     section("4. Sitemaps", sitemaps)
     section("5. What the site sends right now", live)
     section("6. Real visitors from search engines, per day (beacon)", beacon)
+    section("7. Who is left without Google (beacon, last 4 days)", who_is_left)
 
 
 if __name__ == "__main__":
