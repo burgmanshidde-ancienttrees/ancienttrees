@@ -28,6 +28,8 @@ Live on main:
 - **Covers:** Hidde picked them for 21 countries (face_tree_id).
 - **The red iOS check** was a simulator hang on GitHub's runner, not a code fault.
 - **Supabase:** sqlcheck reports every migration applied.
+- **Covers, all chosen by Hidde:** 21 countries, 20 cities and 18 species, each set with face_tree_id. Cities gained that field today, because runs set hero_tree_id on nearly every city they add. One cover now shows on every surface: the homepage shelves, translated city pages and species pages all share it as their Google and social image, where before they showed the site default. The rest of the overviews he called fine as they are.
+- **Build 21 (version 1.0.3)** is archived for upload. 1.0.2 is on sale, so that version can take no new builds.
 
 ## 2026-10-01 continuation: pace limit is the wall
 
