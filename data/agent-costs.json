@@ -9218,6 +9218,22 @@
       "tokens": 142000,
       "trees": 7,
       "note": "nyc_021-027 written and merged; count copy and intro updated; preflight 0 problems"
+    },
+    {
+      "target": "seattle",
+      "kind": "verify",
+      "tokens": 207000,
+      "trees": 0,
+      "note": "4 flagged approximate-pin trees from Heritage Tree and city tree-walk sources; Green Lake Emperor Oak found cut down"
+    },
+    {
+      "target": "seattle",
+      "kind": "write",
+      "tokens": 132000,
+      "trees": 4,
+      "note": "sea_009-012 written and merged",
+      "wasted": 0,
+      "brief_wrong": false
     }
   ]
 }
