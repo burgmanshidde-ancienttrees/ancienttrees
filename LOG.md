@@ -10,6 +10,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 second continuation: nothing new shipped
+
+- Pulled, `leads.py --ready` still 0, Houston claim still standing (release refused: hou_009 to 011 not merged, held on photo-or-pin). Left it to expire on its own.
+- Remaining queue is US depth that needs photos or pins, which a night run cannot supply; no honest tree to write.
+
 ## 2026-10-01 continuation after a 10-minute stop: nothing new shipped
 
 - Pulled, checked claims, ran `leads.py --ready`: 0 READY (the five were held earlier today). No recognition-line gaps either (`recognise.py --stuck` empty).
