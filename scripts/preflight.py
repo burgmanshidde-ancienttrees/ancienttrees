@@ -1112,6 +1112,25 @@ def check_publishing_pace():
         i = nl + 1 + size + 1
     before = ids_from(texts)
     now = ids_from(open(p, encoding="utf-8").read() for p in glob.glob("data/cities/*.json"))
+    # Only a change that itself ADDS trees is held to the pace. An edit to
+    # trees already committed (a corrected intro, a pin) is not growth.
+    head_files = [f for f in git("ls-tree", "-r", "--name-only", "HEAD", "data/cities").split("\n")
+                  if f.endswith(".json")]
+    req_h = "".join("HEAD:%s\n" % f for f in head_files)
+    raw_h = subprocess.run(["git", "cat-file", "--batch"], input=req_h.encode(),
+                           capture_output=True).stdout
+    texts_h, j = [], 0
+    while j < len(raw_h):
+        nl = raw_h.index(b"\n", j)
+        head = raw_h[j:nl].split()
+        if len(head) < 3 or head[1] == b"missing":
+            j = nl + 1
+            continue
+        size = int(head[2])
+        texts_h.append(raw_h[nl + 1:nl + 1 + size].decode("utf-8", "replace"))
+        j = nl + 1 + size + 1
+    if not (now - ids_from(texts_h)):
+        return []
     new = len(now - before)
     if new > PACE_PER_DAY:
         return ["publishing pace: %d new trees in the last 24 hours, the limit is %d while "

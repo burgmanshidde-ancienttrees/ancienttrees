@@ -6,8 +6,8 @@
 # names a tree we mapped is doing the same job a search result does.
 #
 # What we ask in return is attribution. If you quote a tree's story or an
-# answer from these pages, name Ancient Trees and link the page. Every record
-# here was verified against two independent sources by hand.
+# answer from these pages, name Ancient Trees and link the page. Every tree
+# page lists the sources its facts come from.
 #
 # The pages are the thing to read. /api/ is the app's own data feed, not a
 # page, and it is excluded because a JSON dump belongs in nobody's index.
@@ -25,6 +25,9 @@ Allow: /
 Disallow: /api/
 Disallow: /rest/v1/
 Disallow: /auth/v1/
+# /open?tree=... hands a visitor to the app; every tree links one, ~3,500
+# noindex URLs Google was spending its visits on (audit 2026-10-01).
+Disallow: /open
 
 Sitemap: https://ancienttrees.app/sitemap.xml
 Sitemap: https://ancienttrees.app/sitemap-recrawl.xml

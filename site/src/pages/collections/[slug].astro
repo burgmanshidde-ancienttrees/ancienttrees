@@ -10,7 +10,8 @@ import { rankedBands } from "../../lib/collection-rank";
 import { usablePhoto, imgSrcset } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
-import { byCityListOrder } from "../../lib/city-order";
+import { byCityListOrder, exploreCities } from "../../lib/city-order";
+import { isNoindexed } from "../../lib/noindex";
 
 export async function getStaticPaths() {
   const allCities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -98,6 +99,7 @@ const graph = [
   breadcrumbSchema(crumbItems, canonical),
 ];
 const headExtra = ldScript(graph) + (isDraft ? '\n<meta name="robots" content="noindex, nofollow">' : "");
+const exploreList = exploreCities(sections.map((x) => x.cslug), published, (slug) => !isNoindexed(`/${slug}`));
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <main class="content-page">
@@ -126,12 +128,13 @@ const headExtra = ldScript(graph) + (isDraft ? '\n<meta name="robots" content="n
     ))}
     <p class="suggest">
       Explore by city:{" "}
-      {published.map((p, i) => (
+      {exploreList.map((p, i) => (
         <Fragment>
           {i > 0 && " · "}
           <a href={`/${p.slug}`}>{p.city}</a>
         </Fragment>
       ))}
+      {" "}· <a href="/cities">every city</a>
     </p>
 </main>
   <Fragment slot="scripts" set:html={TREE_ACTIONS_JS} />

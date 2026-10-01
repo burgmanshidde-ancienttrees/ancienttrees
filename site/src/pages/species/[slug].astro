@@ -12,7 +12,8 @@ import { checkPhenology } from "../../lib/phenology";
 import { usablePhoto, imgSrcset } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
-import { byCityListOrder } from "../../lib/city-order";
+import { byCityListOrder, exploreCities } from "../../lib/city-order";
+import { isNoindexed } from "../../lib/noindex";
 
 export async function getStaticPaths() {
   const allCities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -93,6 +94,7 @@ const graph = [
   { "@type": "ItemList", name: `${common} trees`, itemListElement: listElements },
   breadcrumbSchema(crumbItems, canonical),
 ];
+const exploreList = exploreCities(sections.map((x) => x.cslug), published, (slug) => !isNoindexed(`/${slug}`));
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
   <main class="content-page">
@@ -112,12 +114,13 @@ const graph = [
     ))}
     <p class="suggest">
       Explore by city:{" "}
-      {published.map((p, i) => (
+      {exploreList.map((p, i) => (
         <Fragment>
           {i > 0 && " · "}
           <a href={`/${p.slug}`}>{p.city}</a>
         </Fragment>
       ))}
+      {" "}· <a href="/cities">every city</a>
       {" "}· or browse <a href="/species">all species</a>.
     </p>
 </main>

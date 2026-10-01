@@ -8,7 +8,8 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable } from "../lib/trees";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
-import { byCityListOrder } from "../lib/city-order";
+import { byCityListOrder, exploreCities } from "../lib/city-order";
+import { isNoindexed } from "../lib/noindex";
 import { browseCard, collectionFace } from "../lib/browse-card";
 import { collectionEntries } from "../lib/collection-rank";
 
@@ -58,8 +59,8 @@ const graph = [
   ) : (
     <div class="prose-block"><p>The first collections are drafted and being reviewed. None are public yet; check back as the map grows.</p></div>
   )}
-  <p class="suggest">Explore by city instead: {published.map((p, i) => (
+  <p class="suggest">Explore by city instead: {exploreCities([], published, (slug) => !isNoindexed(`/${slug}`), 12).map((p, i) => (
     <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
-  ))}</p>
+  ))} &middot; <a href="/cities">every city</a></p>
 </main>
 </Base>

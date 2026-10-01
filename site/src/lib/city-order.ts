@@ -43,3 +43,29 @@ export function byCityListOrderEntry<T extends { id: string }>(items: T[]): T[] 
   const index = new Map(order.map((slug, i) => [slug, i]));
   return [...items].sort((a, b) => (index.get(a.id) ?? Infinity) - (index.get(b.id) ?? Infinity));
 }
+
+/** The "Explore by city" line (2026-10-01). It used to list every one of ~720
+ * places on every species and collection page: 750 identical links, ~200 KB
+ * per page, 355 of them into noindexed places, which an audit after Google's
+ * 09-28 demotion called boilerplate that reads like a link farm. Now: the
+ * cities this page actually shows, then the leading indexable cities until
+ * there are eight, which still clears the contracts' 2+ and 3+ city minimums. */
+export function exploreCities(
+  pageSlugs: string[],
+  published: { slug: string; city: string }[],
+  isIndexed: (slug: string) => boolean,
+  min = 8,
+): { slug: string; city: string }[] {
+  const bySlug = new Map(published.map((p) => [p.slug, p]));
+  const out: { slug: string; city: string }[] = [];
+  const seen = new Set<string>();
+  for (const s of pageSlugs) {
+    const p = bySlug.get(s);
+    if (p && !seen.has(s) && isIndexed(s)) { out.push(p); seen.add(s); }
+  }
+  for (const p of published) {
+    if (out.length >= min) break;
+    if (!seen.has(p.slug) && isIndexed(p.slug)) { out.push(p); seen.add(p.slug); }
+  }
+  return out;
+}

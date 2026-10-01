@@ -124,7 +124,10 @@ def main():
         #    the tree pages stay, because the tree page is the one with the story.
         i = imps.get(slug, 0)
         if n <= THIN_MAX:
-            if any(destination(t) for t in trees) or slug in EARNED_KEEP:
+            # A one-tree place page repeats its own tree page (audit 2026-10-01:
+            # /aga shared 10 of 37 sentences with /aga/shogun-sugi and both
+            # aimed at one query), so only the tree page stays, however famous.
+            if slug in EARNED_KEEP or (n >= 2 and any(destination(t) for t in trees)):
                 kept_thin.append((d.get("city", slug), n, i))
             else:
                 groups["thin_places"] += city_urls + q_urls
@@ -133,7 +136,10 @@ def main():
         # 3. Question pages: ~45 percent template shared with every other
         #    question page and with their own city page. Kept only where
         #    Search Console ever showed one.
-        groups["question_pages"] += [u for u in q_urls if u not in q_keep]
+        # All of them since the 2026-10-01 audit: every remaining English one
+        # answered the same question as its own city page's FAQ, so two pages
+        # chased one query.
+        groups["question_pages"] += q_urls
 
     every = sorted(set(sum(groups.values(), [])))
     today = __import__("datetime").date.today().isoformat()
@@ -161,7 +167,7 @@ def main():
            "| Group | What | Pages |", "|---|---|---:|",
            f"| 1 | Fallback language pages: the English text on a /de/, /es/ ... URL | {len(set(groups['fallback']))} |",
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
-           f"| 3 | Question pages Search Console never showed (kept: {len(q_keep)}) | {len(set(groups['question_pages']))} |",
+           f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",
            f"Thin places kept indexed ({len(kept_thin)}), a destination tree or real impressions: " +
