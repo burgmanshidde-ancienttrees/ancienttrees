@@ -791,6 +791,36 @@
    "why": "2026-09-30 lead: our own account, no register entry within 100 m, no written source and nothing recorded that sets it apart from neighbouring cedars. Stays a lead until a source or a second account confirms it (Which trees get a page, 2026-09-23).",
    "seen": "2026-09-29",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "sighting_id": "e36a052c-3a48-4eed-ba48-5ab48574fa05",
+   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+   "mine": true,
+   "name": "A tree near Fukuoka",
+   "species": null,
+   "age": null,
+   "girth_cm": 500,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 33.558654389322,
+   "longitude": 130.147357375253,
+   "taken_at": "2026-10-01T00:52:45+00:00",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/E36A052C-3A48-4EED-BA48-5AB48574FA05.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [
+    "out/sightings/e36a052c-3a48-4eed-ba48-5ab48574fa05-extra-1.jpg",
+    "out/sightings/e36a052c-3a48-4eed-ba48-5ab48574fa05-extra-2.jpg"
+   ],
+   "nearest_published_m": null,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-01"
   }
  ]
 }
