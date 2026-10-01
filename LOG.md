@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 continuation after a 10-minute stop: nothing new shipped
+
+- Pulled, checked claims, ran `leads.py --ready`: 0 READY (the five were held earlier today). No recognition-line gaps either (`recognise.py --stuck` empty).
+- Re-claimed Houston to read its brief: it is a deepen pass whose register candidates are all mined or blocked, and its three written trees (hou_009 to 011) still wait on a photo or tree-level pin plus the pace limit. The claim stands rather than being forced off, because releasing it would hand those trees to a run that writes them again.
+- No refused commands.
+
 ## 2026-10-01 write pass: nothing shipped, the five READY leads were never shippable
 
 - Target was leads.py's five READY leads plus Takachiho tkc_004/005. All seven fail the worldwide photo-or-pin check: tkc_004/005 and fuk_017 already have stories in data/research and pin only to the shrine, and the five leads are park- or shrine-level with no photo. Checked for a way through, found none: the OSM node at Shimono Hachiman is the shrine itself, Overpass has no tree nodes at any of the three shrines, Commons geosearch and iNaturalist (open licences) are empty at Shimono and Rokusho, and the one Commons file at Kushifuru shows the torii, not the zelkova.
