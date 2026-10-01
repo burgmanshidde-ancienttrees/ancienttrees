@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 ninth continuation: nothing shipped
+
+No claims stand. 4 READY leads, pace gate still refuses write passes (limit 10 per 24h). Nothing new found; New York's two READY trees go first when allowance returns.
+
 ## 2026-10-01 eighth continuation: nothing shipped
 
 No claims stand. 4 READY leads, but the pace gate still refuses write passes (13 trees in 24 hours, limit 10). Recognition gaps are empty, so there was no depth to do. Deploy fix from the last entry is pushed and waits on the next build. Next run with allowance writes New York's two READY trees.
