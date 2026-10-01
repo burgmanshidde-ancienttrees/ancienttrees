@@ -2679,27 +2679,22 @@ def app_store_downloads_lines():
         return out
     days_sorted = sorted(totals)
     out.append("")
-    out.append("| Day | First-time | Redownload | Total |")
-    out.append("|---|---:|---:|---:|")
-    tf = tr = 0
+    # FIRST-TIME ONLY (Hidde, 2026-10-02: "can you only count first time
+    # downloads please your number is way higher than what apple shows me").
+    # This table used to carry a Redownload and a Total column beside it, and
+    # the Total was what every session quoted, so our number never matched the
+    # one screen he reads. One column, the unit App Store Connect's Trends
+    # screen counts, so he can check it to the unit.
+    out.append("| Day | Downloads |")
+    out.append("|---|---:|")
+    tf = 0
     for d in days_sorted:
         f = split[d].get("first-time download", 0)
-        r = split[d].get("redownload", 0)
         tf += f
-        tr += r
-        out.append("| %s | %d | %d | %d |" % (d, f, r, f + r))
-    out.append("| **%d days** | **%d** | **%d** | **%d** |"
-               % (len(days_sorted), tf, tr, tf + tr))
-    # Split on 2026-09-10, when Hidde read App Store Connect's Trends screen
-    # (22 units over seven days) against this table (42 over six) and
-    # reasonably concluded ours was wrong. Neither was. Trends counts UNITS,
-    # which is first-time downloads only; we also count a redownload, on
-    # purpose, because a returning person is a person. The two can never
-    # match, so the table now says which is which and the first-time column
-    # is the one that should equal his screen to the unit.
-    out.append("- First-time should match App Store Connect's Trends screen, "
-               "which counts units and excludes redownloads. A redownload is "
-               "still a person, which is why the total carries both.")
+        out.append("| %s | %d |" % (d, f))
+    out.append("| **%d days** | **%d** |" % (len(days_sorted), tf))
+    out.append("- First-time downloads only, which is what App Store Connect's Trends "
+               "screen counts; redownloads and updates are not in this table.")
     return out
 
 
