@@ -202,6 +202,35 @@ query($tag: String!, $since: Date!, $until: Date!) {
             return
         print(fetch_rum(tok, today, window=31).split("\n\nLinks:")[0])
 
+    def people_since_google_left():
+        # Raw (unbucketed) rows of the PEOPLE filter since 09-28, so the
+        # non-Google remainder can be read one arrival at a time.
+        tok = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
+        if not tok:
+            print("no CLOUDFLARE_ANALYTICS_TOKEN")
+            return
+        query = {"query": """
+query($tag: String!, $since: Date!, $until: Date!) {
+  viewer { accounts(filter: {accountTag: $tag}) {
+    g: rumPageloadEventsAdaptiveGroups(limit: 80,
+        filter: {AND: [{date_geq: $since}, {date_lt: $until},
+                       {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]},
+        orderBy: [count_DESC]) {
+      count dimensions { date requestPath countryName deviceType refererHost userAgentOS }
+    }
+  } }
+}""", "variables": {"tag": ACCOUNT_TAG, "since": "2026-09-28", "until": today.isoformat()}}
+        g = api("https://api.cloudflare.com/client/v4/graphql", query, token=tok)
+        if g.get("errors"):
+            raise RuntimeError(json.dumps(g["errors"]))
+        print("| Views | Day | Path | Country | Device | OS | Referrer |")
+        print("|---:|---|---|---|---|---|---|")
+        for r in g["data"]["viewer"]["accounts"][0]["g"]:
+            d = r["dimensions"]
+            print("| %d | %s | %s | %s | %s | %s | %s |" % (
+                r["count"], d["date"][5:], d["requestPath"], d["countryName"], d["deviceType"],
+                d["userAgentOS"], d["refererHost"] or "(direct)"))
+
     print("# SEO diagnosis, %s" % today.isoformat())
     section("1. Day by day, final against fresh data", days)
     section("2a. By country", lambda: split_by("country"))
@@ -214,6 +243,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
     section("5. What the site sends right now", live)
     section("6. Real visitors from search engines, per day (beacon)", beacon)
     section("7. The digest's beacon table, people only", who_is_left)
+    section("8. People since Google left, row by row (raw)", people_since_google_left)
 
 
 if __name__ == "__main__":
