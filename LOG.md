@@ -32,6 +32,14 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: night runs re-aimed for the recovery
+
+- **Focus countries** (Hidde): US, UK, Japan, France, Spain, Portugal, Italy, Denmark, Norway, Sweden; translations where useful. `FOCUS_COUNTRIES` in passcheck.py; city_queue.py --next lists zero-tree places from all of them, US first.
+- **Depth is no longer blocked by the country focus**: photo, pin and recognise claims are allowed anywhere, since the pages with pre-demotion readers (Lisbon, Amsterdam, Barcelona, Rome, Tokyo) were refused under US-only.
+- **Pace limit now refuses verify and write claims** once 20 trees landed in 24 hours, pointing the run at photos and recognition lines. The 08:08 run had researched three Houston trees only to hold them.
+- **Open-do-not-deepen is off for the focus countries**: recovery mode prefers trees into places that exist.
+- **Rung 3 for runs, intros whose counts went stale** (check each, several may be false positives): miyazaki (says four, has 8), rouen (13/12), higashi-hiroshima (5/20), helmond (7/20), trieste meta (6/36), yosemite (4/5), barcelona (4/56), pamplona (47/14), beijing (10/7). Also Seattle's intro still names only the original eight.
+
 ## 2026-10-01 session: everything from the recovery day is live (deploy 15c45df5)
 
 - **Checked live:** Sources list and "How we choose and check trees" on tree pages; /about (no personal name, says AI drafting); /aga and /cadiz/oldest-tree noindex while /aga/shogun-sugi stays indexable; species metas rewritten and the species page down to 88 links from ~780; sitemap.xml 5,396 URLs, sitemap-recrawl.xml 7,855.

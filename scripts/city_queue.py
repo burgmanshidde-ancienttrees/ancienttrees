@@ -67,7 +67,7 @@ try:
 except SystemExit:
     WALKS = {}
 import leads as L                  # noqa: E402
-from passcheck import US_ONLY      # noqa: E402
+from passcheck import US_ONLY, FOCUS_COUNTRIES      # noqa: E402
 
 
 
@@ -664,16 +664,18 @@ def main():
             # Hidde, 2026-10-01: all focus on the US. passcheck --claim refuses
             # anything else, so printing the stages below would only walk a run
             # into refusals. One flag decides both: passcheck.US_ONLY.
-            zero = [c for c in s1 if c.get("country") == "United States"]
+            zero = [c for c in s1 if c.get("country") in FOCUS_COUNTRIES]
             if zero:
-                print("US PLACES AT ZERO, ranked: open them with four or five in one go, never fewer.\n")
+                print("FOCUS-COUNTRY PLACES AT ZERO, ranked: open them with four or five in one go, never fewer.\n")
                 for c in zero[:20]:
                     print("  %3d  %s" % (c["rank"], c["city"]))
                 print()
             print("Also US: famous trees inside a place that reaches four (data/leads/_famous-united-states.json,")
             print("`famous_demand.py --next`), and the NYC Great Trees, Florida, Seattle and DC")
             print("champion registers. One credible source is enough (BRIEF_RESEARCH.md).")
-            print("\nEVERYTHING OUTSIDE THE US IS PAUSED (Hidde, 2026-10-01). A reader's")
+            print("\nFOCUS (Hidde, 2026-10-01): " + ", ".join(sorted(FOCUS_COUNTRIES)) + ".")
+            print("Everything else is paused. Translations where useful (rung 0b, langcheck.py --next).")
+            print("Depth (photos, pins, recognition lines) is allowed anywhere. A reader's")
             print("submission or a fix to a published tree is the exception: --outside-us.")
             return 0
         print("STAGE 1, OPEN THE UNOPENED: every ranked city with no trees yet,")
