@@ -60,11 +60,11 @@ Subject: Re: Stockholm trees
 
 Hi Daniel,
 
-Valkasken is live, with your pin. One thing is still missing on it: nobody has recorded a girth, and you are the one person I know who owns a tape and passes it now and then.
+Thanks for the pin on Valkasken and for the corrections to the Prins Eugen oak. Both pages now say what you told us: the oak is the largest in the city, and hollow.
 
-We are starting with ambassadors: one person per city who adds photographs, checks the facts and helps sharpen the list, with a badge beside their name. Would you be up for Stockholm? You have already done most of it for the Prins Eugen oak.
+We are starting with ambassadors: one person per city who adds photographs, checks the facts and helps sharpen the list, named on the city's page. Would you be up for Stockholm? You have already done most of it.
 
-If Tina's photographs of these trees can go on the pages, with her credit, we would be glad to have them.
+Two small asks while you are passing Valkasken: its girth, which nobody has ever written down, and whether Tina's photographs of these trees may go on the pages with her credit.
 
 Thanks,
 Hidde
