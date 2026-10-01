@@ -120,11 +120,24 @@ def _daily_instances(token, report_id, limit=14):
     # documented sortable field here), and the list is small enough that
     # sorting client-side after the fact is simpler than guessing at one
     # that works.
+    # ASK FOR EVERYTHING, THEN KEEP THE NEWEST (2026-10-02). With limit=14 the
+    # endpoint returned the FIRST fourteen instances it holds, oldest first, and
+    # the client-side sort below then ordered those fourteen: the newest day
+    # this ever printed was 09-20, eleven days stale, and the digest read it as
+    # Apple lagging. Apple was not lagging; we were reading the wrong end of
+    # the list. 200 is the API's page maximum, and a daily report has one
+    # instance per day, so this covers more than half a year before paging
+    # would be needed.
     data = _get("%s/analyticsReports/%s/instances" % (API, report_id), token,
-                params={"filter[granularity]": "DAILY", "limit": limit})
+                params={"filter[granularity]": "DAILY", "limit": 200})
     rows = data.get("data", [])
+    next_url = data.get("links", {}).get("next")
+    while next_url:
+        data = _get(next_url, token)
+        rows += data.get("data", [])
+        next_url = data.get("links", {}).get("next")
     rows.sort(key=lambda r: r["attributes"].get("processingDate") or "", reverse=True)
-    return rows
+    return rows[:limit]
 
 
 def _segment_rows(token, instance_id):

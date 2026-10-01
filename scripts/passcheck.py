@@ -849,7 +849,11 @@ OPEN_FLOOR = 4  # a place at or above the floor is open; claiming it is deepenin
 # ranked it top since 2026-09-27 and runs still spent windows on Taiwan,
 # Austria and the Basque country, so a ranking is not enough and this refuses.
 # Reversing it is one line: US_ONLY = False.
-US_ONLY = True
+# REVERSED by Hidde 2026-10-02 ("us open rule is gone"), the day after: the
+# machine spent nine continuation windows shipping nothing because every
+# verified tree it held was outside the US or over the pace. The US still
+# leads city_queue.py --next by demand; it no longer refuses the rest.
+US_ONLY = False
 US_COUNTRY = "United States"
 # Widened the same day, Hidde 2026-10-01: "focus op us, uk, japan, west europa
 # frankrijk spanj portugal italie en scandinavie, maakt vertalingen als het
@@ -939,6 +943,12 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
     # A write pass on research that is already verified is finishing work: the
     # pace is enforced where it bites, at commit time (preflight), so refusing
     # the claim would only leave verified trees unwritten.
+    # The pace no longer REFUSES a claim (Hidde, 2026-10-02: "fuck the 10 tree
+    # thing if there is nothing else the nightruns can do"). On 2026-10-01 it
+    # refused every verify and write pass for nine windows in a row and the
+    # depth work it pointed at was empty, so the machine shipped nothing all
+    # day. It is a preference now: when the day's pace is spent, say so, name
+    # the depth work, and let the run take the claim if that work is empty.
     if kind in ("verify", "write") and not deepen and not (kind == "write" and unmerged_research(target)):
         try:
             import preflight
@@ -947,13 +957,11 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
         except Exception:
             added, limit = None, None
         if added is not None and added >= limit:
-            print(f"REFUSED: {added} trees were published in the last 24 hours and the pace")
-            print(f"limit is {limit} while Google recovers (CLAUDE.md, recovery mode). More")
-            print("research now only waits a day. Do depth on pages that exist instead:")
-            print("  python3 scripts/photo_gaps.py --shortlist     (photographs, demand first)")
-            print("  python3 scripts/recognise.py --stuck          (recognition lines)")
-            print(f"  then: python3 scripts/passcheck.py --claim <place> --kind photo")
-            return 1
+            print(f"NOTE: {added} trees were published in the last 24 hours, past the preferred")
+            print(f"pace of {limit} while Google recovers. Depth on pages that exist comes first")
+            print("when there is any (photo_gaps.py --shortlist, recognise.py --stuck); when")
+            print("those are empty this claim stands, and preflight only brakes past the")
+            print(f"runaway cap of {preflight.PACE_HARD_CAP}.")
 
     # PROVEN CITIES FIRST (Hidde, 2026-10-01: "meer focus op bewezen steden
     # beter maken voor google dan nog heel veel steden openen"). A verify or

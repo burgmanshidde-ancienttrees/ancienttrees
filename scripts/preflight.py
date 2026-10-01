@@ -1055,6 +1055,12 @@ def check_no_new_thin_places():
 
 
 PACE_PER_DAY = 10  # 20 until later on 2026-10-01; Hidde agreed to 10 with enrichment first
+# A PREFERENCE above PACE_PER_DAY, a FAIL only above this (Hidde, 2026-10-02:
+# "fuck the 10 tree thing if there is nothing else the nightruns can do"). The
+# 10 cost a whole day of windows that shipped nothing. The cap below is the
+# runaway backstop, the shape of the burst that preceded the demotion (~40 a
+# day for five days), and it is Hidde's number to move.
+PACE_HARD_CAP = 40
 
 
 def check_publishing_pace():
@@ -1132,10 +1138,14 @@ def check_publishing_pace():
     if not (now - ids_from(texts_h)):
         return []
     new = len(now - before)
+    if new > PACE_HARD_CAP:
+        return ["publishing pace: %d new trees in the last 24 hours, past the runaway cap of %d "
+                "(the burst before the demotion was about that). Commit the best %d, keep the "
+                "rest in data/research/ and write them tomorrow." % (new, PACE_HARD_CAP, PACE_HARD_CAP)]
     if new > PACE_PER_DAY:
-        return ["publishing pace: %d new trees in the last 24 hours, the limit is %d while "
-                "Google recovers (2026-10-01). Commit the best %d, keep the rest in "
-                "data/research/ and write them tomorrow." % (new, PACE_PER_DAY, PACE_PER_DAY)]
+        return ["NOTE publishing pace: %d new trees in the last 24 hours against a preferred %d "
+                "while Google recovers. Fine when there was no depth work to do instead "
+                "(Hidde, 2026-10-02); the hard brake is %d." % (new, PACE_PER_DAY, PACE_HARD_CAP)]
     return []
 
 
@@ -2758,6 +2768,11 @@ def main():
             problems += check_recognise(os.path.basename(p)[:-5], json.load(fh))
         with open(p, encoding='utf-8') as fh2:
             problems += check_contract_b(os.path.basename(p)[:-5], json.load(fh2))
+    # A check may return a line starting "NOTE ": it is printed with the notes
+    # and does not count as a problem (the pace, since 2026-10-02).
+    for line in [l for l in problems if l.startswith("NOTE ")]:
+        print(line)
+    problems = [l for l in problems if not l.startswith("NOTE ")]
     for line in problems:
         print("FAIL " + line)
     for line in (check_stacked_pins() + check_search_names() + check_paid_share()
