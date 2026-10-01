@@ -234,11 +234,15 @@ jobs:
           OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
         run: |
           python3 scripts/contributor_reply.py --send
-          if ! git diff --quiet data/outreach-sent.json; then
+          # The standard first contact (Hidde, 2026-10-02): a reader whose
+          # photograph is live in a place with no ambassador is invited once,
+          # from the same address. The badge follows their answer, by hand.
+          python3 scripts/ambassador.py --invite-scan --send
+          if ! git diff --quiet data/outreach-sent.json data/ambassadors.json; then
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"
-            git add data/outreach-sent.json
-            git commit -m "Contributor replies sent, log updated"
+            git add data/outreach-sent.json data/ambassadors.json
+            git commit -m "Contributor replies and ambassador invitations sent, log updated"
             git push
           fi
 

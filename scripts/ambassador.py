@@ -14,6 +14,17 @@ CLAUDE.md ("Ambassadors"); this script only records the answer.
     python3 scripts/ambassador.py --revoke <user_id> <place_slug>
     python3 scripts/ambassador.py --sync
     python3 scripts/ambassador.py --grant-named "<Name>" <place_slug>
+    python3 scripts/ambassador.py --invite-scan [--send]
+
+--invite-scan is the standard first contact (Hidde, 2026-10-02: "lets make it
+a standard thing whenever someone adds something to a city we dont have a
+ambassador for we email this - and once they respond with more info we actually
+give them the badge"). It finds every reader whose photograph is live on a tree
+in a place with no ambassador, who has not been invited, and sends them the
+invitation once, from the Ancient Trees address the other contributor mails use
+(never as Hidde: hard rule 4). The badge is NOT granted here: it follows their
+answer, by hand, with --grant. Without --send it prints the mails it would send.
+The invitations live in data/ambassadors.json under "invited".
 
 --grant-named is for somebody who gave us trees by MAIL and has no app account
 (Hidde, 2026-10-02, on Hans Erik Lund and Paulo Araujo: "dont email paulo or
@@ -38,6 +49,9 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import smtplib
+from email.message import EmailMessage
+import glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
@@ -168,6 +182,126 @@ def sync():
     return 0
 
 
+INVITE_SUBJECT = "Your {place} trees"
+INVITE_BODY = (
+    "Hi,\n\n"
+    "Thanks so much for adding {what} in {place}. {itis} live, for everybody to see.\n\n"
+    "We would love to make you our ambassador for {place}: somebody who adds photos, checks the "
+    "facts and helps sharpen the list. What do you think of our list, is it missing any, are some "
+    "wrong? Let us know if you are up for it.\n\n"
+    "Thanks,\nAncient Trees\n"
+)
+
+
+def _contributions():
+    """{(user_id, place_slug): [tree names]} for every reader photograph live
+    on a tree page, lead or extra. Today a photograph is how a reader adds
+    something to a city; a tree they sent that went live carries no account id
+    in the city file, so it is not seen here yet."""
+    out = {}
+    for path in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
+        slug = os.path.basename(path)[:-5]
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for t in city.get("trees") or []:
+            shots = [t.get("photo") or {}] + [p for p in (t.get("photos") or []) if p]
+            for p in shots:
+                if p.get("source") == "contributor" and p.get("contributor_user_id") \
+                        and p.get("status") == "approved":
+                    out.setdefault((p["contributor_user_id"], slug), [])
+                    if t["name"] not in out[(p["contributor_user_id"], slug)]:
+                        out[(p["contributor_user_id"], slug)].append(t["name"])
+    return out
+
+
+def _address(user_id):
+    try:
+        u = _req(f"/auth/v1/admin/users/{user_id}")
+    except Exception:
+        return None
+    return (u or {}).get("email")
+
+
+def _what(names):
+    low = [n[0].lower() + n[1:] if n[:4] == "The " else n for n in names]
+    low = [n[4:] if n.startswith("the ") else n for n in low]
+    low = ["the " + n for n in low]
+    if len(low) == 1:
+        return low[0], "It is"
+    if len(low) == 2:
+        return f"{low[0]} and {low[1]}", "They are"
+    return f"{', '.join(low[:-1])} and {low[-1]}", "They are"
+
+
+def invite_scan(send):
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import ours
+    try:
+        from contributor_reply import mailcheck_ok
+    except Exception:
+        mailcheck_ok = None
+    with open(FILE, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    covered = {e["place_slug"] for e in doc.get("ambassadors", [])}
+    badged = {e.get("user_id") for e in doc.get("ambassadors", []) if e.get("user_id")}
+    invited = doc.setdefault("invited", [])
+    already = {(i["user_id"], i["place_slug"]) for i in invited}
+    sent_log_path = os.path.join(ROOT, "data", "outreach-sent.json")
+    n = 0
+    for (uid, slug), names in sorted(_contributions().items()):
+        if ours.is_ours(uid) or slug in covered or uid in badged or (uid, slug) in already:
+            continue
+        place = place_name(slug)
+        what, itis = _what(names)
+        body = INVITE_BODY.format(what=what, place=place, itis=itis)
+        subject = INVITE_SUBJECT.format(place=place)
+        if mailcheck_ok:
+            ok, why = mailcheck_ok(body, app_user=True)
+            if not ok:
+                print(f"invite {uid[:8]} / {slug}: held by mailcheck\n{why}")
+                continue
+        addr = _address(uid) if KEY else None
+        creds = {k: os.environ.get(f"OUTREACH_{k}") for k in ("SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS", "FROM")}
+        if not send or not addr or not all(creds.values()):
+            why = "dry run" if not send else ("no address" if not addr else "no mail credentials")
+            print(f"invite {uid[:8]} / {slug} ({why}):\n  {subject}\n" + "\n".join("  " + l for l in body.splitlines()))
+            continue
+        if "burgmans.hidde" in creds["FROM"].lower():
+            print("REFUSED: an invitation would go out under a personal address")
+            continue
+        msg = EmailMessage()
+        msg["From"], msg["To"], msg["Subject"] = creds["FROM"], addr, subject
+        msg.set_content(body)
+        try:
+            with smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=60) as server:
+                server.starttls()
+                server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+                server.send_message(msg)
+        except Exception as e:
+            print(f"invite {uid[:8]} / {slug}: transport failed ({e.__class__.__name__})")
+            continue
+        today = datetime.date.today().isoformat()
+        invited.append({"user_id": uid, "place_slug": slug, "place_name": place,
+                        "date": today, "trees": names})
+        try:
+            with open(sent_log_path, encoding="utf-8") as fh:
+                log = json.load(fh)
+            log.setdefault("sent", []).append({"date": today, "to": addr, "outlet": "ambassador invitation",
+                                               "subject": subject, "batch": "ambassador-invite"})
+            with open(sent_log_path, "w", encoding="utf-8") as fh:
+                json.dump(log, fh, indent=2, ensure_ascii=False)
+                fh.write("\n")
+        except Exception:
+            pass
+        n += 1
+        print(f"invite {uid[:8]} / {slug}: sent ({', '.join(names)[:60]})")
+    with open(FILE, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+    print(f"invite-scan: {n} invitation(s) sent")
+    return 0
+
+
 def listing():
     with open(FILE, encoding="utf-8") as fh:
         doc = json.load(fh)
@@ -184,6 +318,8 @@ def main(argv):
         return listing()
     if "--sync" in argv:
         return sync()
+    if "--invite-scan" in argv:
+        return invite_scan("--send" in argv)
     if "--grant-named" in argv:
         i = argv.index("--grant-named")
         return grant_named(argv[i + 1], argv[i + 2])
