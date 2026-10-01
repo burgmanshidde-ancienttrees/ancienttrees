@@ -1027,6 +1027,33 @@ def check_tree_name_fits_a_title():
     return out
 
 
+def check_no_new_thin_places():
+    """No new place below four trees while search recovers (Hidde, 2026-10-01,
+    after Google stopped showing the site on 09-28). 456 of 716 places held
+    one to three trees by then, the single-famous-tree exception of 2026-08-31
+    having become most of the site, and a mass of near-empty templated pages is
+    what Google's spam policies call scaled content. The places already live
+    are frozen in data/thin-places-frozen.json; anything else below four fails.
+    A place grows to four in its first commit or waits as a lead. Removing this
+    check needs Hidde."""
+    try:
+        with open("data/thin-places-frozen.json", encoding="utf-8") as fh:
+            frozen = set(json.load(fh)["places"])
+    except (OSError, ValueError, KeyError):
+        return ["data/thin-places-frozen.json is missing or unreadable"]
+    out = []
+    for p in sorted(glob.glob("data/cities/*.json")):
+        slug = os.path.basename(p)[:-5]
+        with open(p, encoding="utf-8") as fh:
+            d = json.load(fh)
+        n = sum(1 for t in d.get("trees") or []
+                if t.get("story") and (t.get("location") or {}).get("latitude") is not None)
+        if 0 < n < 4 and slug not in frozen:
+            out.append("%s: a new place with %d tree(s). New places need four while search "
+                       "recovers (2026-10-01); keep these as leads in data/leads/%s.json" % (slug, n, slug))
+    return out
+
+
 def check_a_tree_can_be_told_apart():
     """Nothing ships with a rough pin, no photograph and no recognition line.
 
@@ -2554,6 +2581,7 @@ def main():
                 + check_translations_have_no_stray_script()
                 + check_every_tree_names_a_source()
                 + check_tree_name_fits_a_title()
+                + check_no_new_thin_places()
                 + check_a_tree_can_be_told_apart()
                 + check_covered_countries_want_a_photo_or_a_pin()
                 + check_story_length()

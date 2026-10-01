@@ -872,7 +872,8 @@ def country_of(target, coord=None):
         with open(os.path.join(ROOT, "data", "city-queue.json")) as fh:
             queue = json.load(fh)
         key = fold(target)
-        for q in queue if isinstance(queue, list) else []:
+        rows = queue.get("cities", []) if isinstance(queue, dict) else queue
+        for q in rows:
             if fold(q.get("city") or "") == key or fold(q.get("slug") or "") == key:
                 if q.get("country"):
                     return q["country"]
