@@ -1756,7 +1756,21 @@ def check_sitemap_dates():
             recorded, covered = _lastmod_counts(top)
             # Pages with a file of their own (species, country, collection) are
             # not in the map and take their date from git, so allow for them.
-            uncovered = max(0, len(found) - covered)
+            # Counted from the sitemap itself since 2026-10-01: the map also
+            # covers the 7,855 pages now kept out of the sitemap by noindex,
+            # so "sitemap size minus map size" went negative and a real day of
+            # species rewrites read as a restamp.
+            locs = re.findall(r"<loc>https?://[^/]+(/[^<]*)</loc>", sm.read_text(encoding="utf-8"))
+            cities = {p.stem for p in (ROOT / "data" / "cities").glob("*.json")}
+            langs = {"de", "es", "fr", "it", "ja", "nl", "pt"}
+
+            def in_map(path):
+                seg = [x for x in path.split("/") if x]
+                if seg and seg[0] in langs:
+                    seg = seg[1:]
+                return bool(seg) and seg[0] in cities
+
+            uncovered = sum(1 for (loc, d) in zip(locs, found) if d == top and not in_map(loc))
             if found.count(top) > recorded + uncovered:
                 return ["sitemap.xml: %d of %d urls (%.0f%%) carry the same lastmod "
                         "%s, and data/lastmod.json records only %d page(s) changing "
