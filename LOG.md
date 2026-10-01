@@ -10,6 +10,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: a gate against the 09-28 Google mistake, and the Oslo photographs chased
+
+- **Gate, live from the next deploy:** `check_index_grows_with_the_trees()` in qa.py fails a deploy above 1.5 indexable pages per tree (now 1.23: 4,325 sitemap urls, 3,526 trees) or with more than 80 new indexable urls against the live sitemap. Tested against the live sitemap: clean today, and a simulated burst of 2,000 template pages fails on both counts. Existing guards it sits beside: no new thin places, 10 trees a day, noindex recomputed every deploy.
+- **Oslo photographs:** the kommune forwarded three Birkelunden photos on 09-03 it does not own and never answered who may be credited. Drafted `drafts/batches/oslo-photos.json` to the rights holders directly: Ingar Sorensen (two photos) and VisitOSLO's image bank (Tord Baklund's, plus a Munch-eika ask). mailcheck clean. Waits on Hidde's "verstuur".
+
 ## 2026-10-01 ninth continuation: nothing shipped
 
 No claims stand. 4 READY leads, pace gate still refuses write passes (limit 10 per 24h). Nothing new found; New York's two READY trees go first when allowance returns.
@@ -105,6 +110,11 @@ Live on main:
 - **What was wrong:** in the three days after Google went to zero, 649 of 735 beacon pageviews were desktop visits with no referrer and one page each, mostly Firefox and Edge, from Brazil, Singapore, India, Bangladesh and Pakistan, about one hit per page across the whole site. Those are headless crawlers that run our script. Singapore had been the "top country" since mid-September for the same reason, and the 09-26 spike of ~1,000 visits on /open was the same thing.
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
+
+## 2026-10-02 session: Itoshima camphor live on Hidde's call
+
+- **fuk_016, The Camphor of Oimatsu Tenjin Shrine** (Shima-Kuga, Itoshima), on the Fukuoka page as a day-trip tree under its real place name. Hidde overruled the run's lead verdict after visiting ("ik was er het was mooi en de foto ook dus keur hem goed"); recorded in judgement.py (lead: DISAGREED, sight: publish). His photograph is the page's picture, uncredited like every own photograph; pin confirmed from the app's GPS fix at the trunk; girth 500 cm by his estimate; flagged, no source names the tree, the page asks for a measurement and the shrine's name for it. Japanese overlay written. Rokusho's research renumbered to fuk_017.
+- **Held for the pace limit** (14 trees in the last 24 h at 21:30 UTC): a detached waiter commits and pushes the moment preflight passes, about 01:10 UTC on 10-02.
 
 ## 2026-10-01 session: Copenhagen seven verified from the register extract, Rokusho held, Leon all done
 

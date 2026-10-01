@@ -1713,6 +1713,62 @@ def check_approved_photos_reach_the_feed():
     return failures
 
 
+def check_index_grows_with_the_trees():
+    """The Google demotion of 2026-09-28, as a gate (Hidde, 2026-10-02: "hoe
+    zorgen we dat we nooit meer deze google fout maken").
+
+    What Google punished was SHAPE, not any one page: 12,923 pages for 3,522
+    trees, most of them templates (English text on seven language URLs, a
+    question page per place, places of one tree), and ~200 trees in the five
+    days before the spam update. Every rule that would have stopped it existed
+    as a sentence and none could refuse a deploy. Two questions now can:
+
+    1. Pages per tree. What we ask Google to index (sitemap.xml, which noindex
+       pages leave by themselves) against the trees we publish. 1.23 on the day
+       this was written. Above PAGES_PER_TREE a new page TYPE or a template set
+       has crept back into the index, and that is a decision for Hidde, not a
+       build.
+    2. Pages per deploy. New indexable urls against the sitemap that is live
+       right now. The publishing pace is ten trees a day; a deploy adding more
+       than NEW_URLS_PER_DEPLOY urls is a burst, which is the other half of
+       what scaled content looks like from outside.
+
+    Raising either number needs Hidde, like every ratchet check.
+    """
+    PAGES_PER_TREE = 1.5
+    NEW_URLS_PER_DEPLOY = 80
+    sm = DIST / "sitemap.xml"
+    if not sm.exists():
+        return []
+    built = set(re.findall(r"<loc>([^<]+)</loc>", sm.read_text(encoding="utf-8")))
+    trees = 0
+    for f in (ROOT / "data" / "cities").glob("*.json"):
+        try:
+            trees += len(json.loads(f.read_text(encoding="utf-8")).get("trees") or [])
+        except (OSError, ValueError):
+            pass
+    out = []
+    if trees and len(built) / trees > PAGES_PER_TREE:
+        out.append("sitemap.xml: %d indexable pages for %d trees (%.2f per tree, limit %.1f). "
+                   "This is the shape Google demoted on 2026-09-28: a page type or template "
+                   "set is back in the index. Noindex it (data/noindex.json) or ask Hidde."
+                   % (len(built), trees, len(built) / trees, PAGES_PER_TREE))
+    try:
+        import urllib.request
+        with urllib.request.urlopen("https://ancienttrees.app/sitemap.xml", timeout=20) as r:
+            live = set(re.findall(r"<loc>([^<]+)</loc>", r.read().decode("utf-8", "replace")))
+    except Exception as e:  # the live site being down must not stop a fix to it
+        print("qa: live sitemap unreadable (%s), page-burst check skipped" % e)
+        return out
+    new = sorted(built - live)
+    if live and len(new) > NEW_URLS_PER_DEPLOY:
+        out.append("sitemap.xml: %d new indexable urls in one deploy (limit %d), e.g. %s. "
+                   "A burst of pages is what scaled content looks like to Google; "
+                   "spread it over days or noindex the template pages."
+                   % (len(new), NEW_URLS_PER_DEPLOY, ", ".join(new[:5])))
+    return out
+
+
 def check_sitemap_dates():
     sm = DIST / "sitemap.xml"
     if not sm.exists():
@@ -2485,6 +2541,7 @@ def main():
     failures += check_copy_test_renders()
     failures += check_one_face_per_city()
     failures += check_sitemap_dates()
+    failures += check_index_grows_with_the_trees()
     failures += check_no_name_promise(pages)
     failures += check_tree_count_claims(pages)
     failures += check_tree_photo_dimensions(pages)
