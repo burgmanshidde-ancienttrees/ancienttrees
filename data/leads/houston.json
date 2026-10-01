@@ -14,6 +14,31 @@
       ],
       "girth_cm": 376,
       "owner": "Inverness Houston POA, INC"
+    },
+    {
+      "name": "The Three Sisters of Montrose (post oaks)",
+      "species": "Post Oak (Quercus stellata)",
+      "reason": "Texas Historic Tree Coalition designation (txhtc.org) calls them about 160 years old, at the entrance of Magnolia Cemetery, Montrose Blvd at Dallas St. Hurricane Beryl (July 2024) felled the southernmost; search snippets of Chronicle/LMT say about 85 rings were counted on it, so the 160-year claim is disputed, and one remaining tree reportedly has disease and another lost a major branch. Only search summaries seen this pass (txhtc and chron pages unreadable). Needs: current status of survivors, a readable source for the ring count, cemetery access. Not delivered 2026-10-01.",
+      "sources": [
+        "https://txhtc.org/three-sisters-iconic-montrose-oak-trees-given-historic-designation/"
+      ]
+    },
+    {
+      "name": "Sam Houston Park unnamed live oaks",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "reason": "Heritage Society says several live oaks there are believed to be more than two centuries old; no individual tree named or pinned. Jane Ellen's Tree (hou_007) is the named one. Look for more specimens on site with a coordinate.",
+      "sources": [
+        "https://www.heritagesociety.org/historictrees"
+      ]
+    },
+    {
+      "name": "Compton Oak, League City",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "reason": "Heritage Society names it as relocated with Trees for Houston help; no age, address or location found. League City Historical Society runs a 300+ tree Live Oak Registry (point classes, Majestic 225+) whose page lists no named trees; ask for named Majestic entries on public ground.",
+      "sources": [
+        "https://www.heritagesociety.org/historictrees",
+        "https://leaguecityhistory.org/live-oak-tree-registry"
+      ]
     }
   ],
   "blocked": [
@@ -151,6 +176,14 @@
       "reason": "CHECKED 2026-09-17 (verify pass): same address and same owner (Spring Branch ISD) as TreeID 645, 40m apart, same PublicOrPrivate=0/Display=0 private-land signature. Two distinct trees by circumference (77in vs 91in), not duplicates of each other, but both BLOCKED under hard rule 10 for the same reason.",
       "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
       "girth_cm": 196
+    },
+    {
+      "name": "Avalon Academy Houston Live Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "reason": "On school grounds (Avalon Academy, Montrose); only about 90 years old, 16 ft circumference per txhtc; no evidence the grounds are open (school rule).",
+      "sources": [
+        "https://txhtc.org/trees/avalon-academy-houston-live-oak-heritage-tree/"
+      ]
     }
   ],
   "notes": [
@@ -161,6 +194,10 @@
     {
       "date": "2026-08-20",
       "note": "PublicOrPrivate decoded from the data itself: flag 1 is national parks, national forests, state natural areas and TxDOT; flag 0 is ranches and hunting clubs. Flag 0 trees moved to blocked under hard rule 10, since the registry also hides them from its own public map and their coordinates only reached us because the backend returns what the front end withholds. OrganizationName names the owner and is the field a verify pass should lead with."
+    },
+    {
+      "date": "2026-10-01",
+      "note": "Pass delivered hou_009 (Becks Prime oaks), hou_010 (Glenwood Cemetery Oak), hou_011 (Arboretum Ravine Trail sycamore) to data/research/houston-verified.json, all flagged with approximate pins. Hermann Park's tree page names no individual trees. Hosts: becksprime.com 403; chron.com and houstonchronicle.com JS shell unreadable by WebFetch; penick.net Cloudflare; txhtc.org returns empty to curl."
     }
   ]
 }
