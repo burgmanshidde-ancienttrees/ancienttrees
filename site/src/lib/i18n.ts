@@ -227,6 +227,8 @@ export interface UIStrings {
   discoverMore: string;
   sourcesHeading: string;
   sourcesLine: string;
+  /** Link under the sources to /about (2026-10-01). */
+  howWeCheck: string;
   takeMeThere: string;
   /** The app's tree page on the web (2026-09-24): the Open-in-the-app CTA, the
    *  corner map, the maps-app choice and the drag-the-pin correction. */
@@ -541,6 +543,7 @@ const EN: UIStrings = {
   discoverMore: "Discover more",
   sourcesHeading: "Sources",
   sourcesLine: "Where the facts on this page come from.",
+    howWeCheck: "How we choose and check trees",
   takeMeThere: "Take me there",
   showOnMap: "Show on the map",
   showPhoto: "Show the photograph",
@@ -793,6 +796,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     discoverMore: "Descubre más",
     sourcesHeading: "Fuentes",
     sourcesLine: "De dónde salen los datos de esta página.",
+    howWeCheck: "Cómo elegimos y comprobamos los árboles",
     takeMeThere: "Cómo llegar",
     showOnMap: "Ver en el mapa",
     showPhoto: "Ver la fotografía",
@@ -1032,6 +1036,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     discoverMore: "Scopri di più",
     sourcesHeading: "Fonti",
     sourcesLine: "Da dove vengono i dati di questa pagina.",
+    howWeCheck: "Come scegliamo e verifichiamo gli alberi",
     takeMeThere: "Portami lì",
     showOnMap: "Mostra sulla mappa",
     showPhoto: "Mostra la fotografia",
@@ -1271,6 +1276,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     discoverMore: "Ontdek meer",
     sourcesHeading: "Bronnen",
     sourcesLine: "Waar de gegevens op deze pagina vandaan komen.",
+    howWeCheck: "Hoe we bomen kiezen en controleren",
     takeMeThere: "Breng me erheen",
     showOnMap: "Toon op de kaart",
     showPhoto: "Toon de foto",
@@ -1510,6 +1516,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     discoverMore: "Mehr entdecken",
     sourcesHeading: "Quellen",
     sourcesLine: "Woher die Angaben auf dieser Seite stammen.",
+    howWeCheck: "Wie wir Bäume auswählen und prüfen",
     takeMeThere: "Route planen",
     showOnMap: "Auf der Karte zeigen",
     showPhoto: "Foto zeigen",
@@ -1749,6 +1756,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     discoverMore: "Descobrir mais",
     sourcesHeading: "Fontes",
     sourcesLine: "De onde vêm os dados desta página.",
+    howWeCheck: "Como escolhemos e verificamos as árvores",
     takeMeThere: "Como chegar",
     showOnMap: "Ver no mapa",
     showPhoto: "Ver a fotografia",
@@ -1988,6 +1996,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     discoverMore: "Découvrir plus",
     sourcesHeading: "Sources",
     sourcesLine: "D’où viennent les informations de cette page.",
+    howWeCheck: "Comment nous choisissons et vérifions les arbres",
     takeMeThere: "M'y emmener",
     showOnMap: "Voir sur la carte",
     showPhoto: "Voir la photo",
@@ -2226,6 +2235,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     discoverMore: "もっと見る",
     sourcesHeading: "出典",
     sourcesLine: "このページの情報の出どころ。",
+    howWeCheck: "木の選び方と確認の方法",
     takeMeThere: "ここへ行く",
     showOnMap: "地図で見る",
     showPhoto: "写真を見る",

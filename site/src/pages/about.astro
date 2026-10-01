@@ -1,0 +1,61 @@
+---
+// About: who makes this and how. Written 2026-10-01 after Google's 09-28
+// demotion, approved by Hidde in session ("moeten we niet open zijn dat we
+// starten met officiele register en ai - maar dat we de gebruikers vragen om
+// ons te helpen? en dat we contact opnemen met de lokale partijen?").
+//
+// Why it exists: Google's own self-assessment asks "Is it self-evident to your
+// visitors who authored your content?" and "Is the use of automation,
+// including AI-generation, self-evident to visitors through disclosures?", and
+// this site answered neither anywhere. So it says plainly where the trees come
+// from, that the stories are drafted with AI from the sources each tree page
+// lists, and where readers and local organisations come in.
+//
+// Convention: AllTrails, komoot and iNaturalist all carry an About page linked
+// from the footer. The maker is named here and only here (Hidde, 2026-10-01:
+// "als mijn naam heel belangrijk is mag die er wel in"), because Google asks
+// whether it is self-evident who made the content. Still no email address,
+// per the v1.4 privacy ruling: the contact route is the contribute form.
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { submitLink } from "../lib/tree-copy";
+
+const canonical = `${BASE_URL}/about`;
+const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["About", null]];
+const description = "Where our trees come from, how each one is checked, how the stories are written, and how readers and local tree groups correct us.";
+
+const graph = [
+  ...SITE_SCHEMA,
+  breadcrumbSchema(crumbItems, canonical),
+  {
+    "@type": "AboutPage",
+    name: "About Ancient Trees",
+    description,
+    url: canonical,
+  },
+];
+---
+<Base title="About Ancient Trees" description={description} canonical={canonical} headExtra={ldScript(graph)}>
+<main class="content-page">
+  <Breadcrumbs items={crumbItems} />
+  <h1>About Ancient Trees</h1>
+  <p class="lede">Ancient Trees maps the old trees worth walking to, city by city, with the story of each one and directions to the trunk. It is an independent project made by Hidde Burgmans, a designer and tree enthusiast in the Netherlands.</p>
+  <div class="prose-block">
+    <h2>Where the trees come from</h2>
+    <p>We start from official registers: the lists of protected and monumental trees that governments and city councils publish. From those, and from the tree trails councils put out, dendrological societies and local newspapers, we choose the trees worth the walk. Each one is checked against at least two independent sources before it goes on the map, and every pin says whether it marks the exact trunk or only the right part of a park.</p>
+    <p>Trees that have died, trees on private land and trees whose location is kept quiet to protect them are left out.</p>
+
+    <h2>How the stories are written</h2>
+    <p>The stories are drafted with AI from those sources, which are listed at the foot of every tree page. That is how a small project can cover this many cities. It also means we will sometimes get something wrong, which is why the next part matters.</p>
+
+    <h2>Where you come in</h2>
+    <p>If you stand in front of one of these trees, you know things we do not: whether it is still there, which trunk it is, how big it really is. Every tree page has a button to tell us or to add a photograph, and every report gets an answer. You can also <a href={submitLink("tree")}>send us a tree we are missing</a>.</p>
+
+    <h2>The people who look after the trees</h2>
+    <p>We write to the people who care for these trees: park services, botanical gardens, tree registers and local tree groups. Several have already corrected or confirmed trees in their care, and their corrections are on the map.</p>
+
+    <p>Where our facts come from, register by register, is on the <a href="/sources">sources page</a>.</p>
+  </div>
+</main>
+</Base>

@@ -2796,3 +2796,5 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
   .td-near { display: grid; grid-template-columns: repeat(3, 1fr); overflow: visible; }
   .td-near-card { flex: none; }
 }
+.tree-sources-how { font-size: 13px; margin: 0.5rem 0 0; }
+.tree-sources-how a { color: var(--ink); }

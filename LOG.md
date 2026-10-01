@@ -22,6 +22,13 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: Sources back on tree pages, an About page that says AI and names the maker
+
+- **Per-tree Sources list restored** (reverts 2a661227 of 09-24) in the shared TreeDetail component, all seven languages, with a link "How we choose and check trees" to /about. Blueprint v1.24.
+- **/about, new**, linked from the footer's "The project" column: official registers first, two independent sources, honest pins, stories drafted with AI from the listed sources, readers and local tree groups correct us. Names Hidde Burgmans as maker on his ok ("als mijn naam heel belangrijk is mag die er wel in"), on that page only. Grounded in Google's self-assessment: "Is it self-evident ... who authored your content?" and "Is the use of automation, including AI-generation, self-evident to visitors?"
+- **Not done, on purpose:** a "checked by" list of institutions. Only Florence (Orto botanico), Stockholm (Trädmästarna), Buçaco (Fundação) and Cork (Blarney Castle) reviewed their full set, about 21 trees in all; Hidde: is that really an addition. Naming them would overclaim. Last-checked dates per tree: only 106 of 3,526 trees carry a real one, so none are shown.
+- Bing Webmaster Tools: Hidde imported the site from Search Console. IndexNow still 403 (Bing says up to 48 hours); retry `indexnow.yml` all=true tomorrow.
+
 ## 2026-10-01 session: what Google left unindexed (Search Console export, data to 09-21)
 
 - Indexed 3.93K, not indexed 1.96K, of which **1,854 "Discovered, currently not indexed"**, flat since 09-07, so a crawl backlog that predates the 09-28 drop rather than the drop itself.
