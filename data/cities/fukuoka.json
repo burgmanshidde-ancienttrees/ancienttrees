@@ -5,7 +5,7 @@
   "intro": "Fukuoka's oldest trees stand watch over shrines the city grew up around, not the other way around. A cedar Empress Jingu is said to have planted with her own hand still guards Kashii Shrine's inner grounds. A stubbornly hollow ginkgo, already declared a thousand years old on a stone plaque installed in 1913, anchors Hakata's biggest festival. A giant camphor stands in the exact middle of Tenjin's shopping crowds, and another keeps a quieter neighbourhood's own calendar entirely. None of them are Fukuoka's famous sights. All of them were already old when the city's postwar skyline was still rice paddies.",
   "meta_description": "Fukuoka's oldest trees guard its shrines: a legendary cedar, a hollow thousand-year ginkgo, and a camphor rooted in the middle of Tenjin.",
   "question_answer": "The oldest tree in Fukuoka is, by tradition, the Ayasugi, a Japanese cedar at Kashii Shrine said to be around 1,800 years old and planted, by legend, by Empress Jingu herself. It stands 21.5 metres tall beside the shrine's main hall in Higashi-ku.",
-  "question_meta": "Kashii Shrine's Ayasugi cedar, said to be 1,800 years old, is Fukuoka's oldest tree. Its legend, exact location, and fourteen more remarkable trees nearby.",
+  "question_meta": "Kashii Shrine's Ayasugi cedar, said to be 1,800 years old, is Fukuoka's oldest tree. Its legend, exact location, and fifteen more remarkable trees nearby.",
   "question_context": "Fukuoka's claim to its oldest tree rests on tradition rather than measurement. The Ayasugi's roughly 1,800-year figure comes from Kashii Shrine's own founding legend, that Empress Jingu planted a cedar branch from her armor here on returning from a third-century campaign, a story with no ring count or scientific dating behind it. A more conservative rival stands across town: the ginkgo at Kushida Shrine, which a 1913 monument already called over a thousand years old, though a later trunk measurement suggested a real age closer to 600. Neither figure is settled science, which is honest for a city where almost every old tree grows on shrine ground with a founding myth attached rather than a documented planting record. What is not in dispute is which tree carries more ceremonial weight: the Ayasugi's cuttings have traditionally been sent to the Imperial court, and its shrine is one of the few in Japan that still receives a personal envoy from the Emperor. Getting there: JR Kashii-jingu-mae Station, about a five-minute walk to the shrine's inner grounds.",
   "oldest_tree_id": "fuk_001",
   "faq": [
@@ -557,6 +557,45 @@
         "height": 5448
       },
       "how_to_recognise": "You can recognise it by its ring of more than twenty root suckers rising from one base, no single trunk to put a tape around. It stands beside a mountain-god shrine at Shimo-ose, Fuji-cho, Saga City."
+    },
+    {
+      "id": "fuk_016",
+      "name": "The Camphor of Oimatsu Tenjin Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "Age not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Oimatsu Tenjin Shrine (生松天神社), Shima-Kuga 2813, Itoshima, Fukuoka 819-1331",
+        "latitude": 33.558654,
+        "longitude": 130.147357,
+        "neighbourhood": "Shima-Kuga, Itoshima"
+      },
+      "story": "In 1019 three thousand raiders from across the sea came ashore along this coast, and the shrine that stands behind this camphor began as a prayer to send them away. The chronicles call it the Toi invasion: it struck Tsushima and Iki first, then the Itoshima shore, and the Dazaifu government asked Tenjin, the deified scholar Sugawara no Michizane, for help. Oimatsu Tenjin Shrine stood by the sea at Kuga for eight centuries and was moved up to this spot in February 1823. Its stone lanterns were made in 1816 and its pair of Naniwa-style guardian lions in 1842.\n\nThe tree itself has no record we can find. What we have is one visit on a bright autumn morning: a camphor with a trunk about five metres round by a visitor's estimate, a wide crown over the approach, a stone lantern and a lion-dog standing at its base, and a bamboo grove rising behind it. Nobody has dated it and we do not guess. If you go with a tape, measure it at chest height and tell us. If you know the shrine, tell us what they call this tree.",
+      "verified_sources": [
+        "https://www.kyushu-jinja.com/fukuoka/oimatsuten-jinja/",
+        "https://yaokami.jp/1402662/",
+        "Visit on 2026-10-01: photograph and GPS fix at the trunk; girth about 500 cm by estimate"
+      ],
+      "access": "Shrine grounds, open at all times, free. Free parking at the shrine.",
+      "transport": "Itoshima, about 27 km west of Fukuoka: JR Chikuhi Line to Chikuzen-Maehara (about 40 minutes from Hakata), then about 10 km north by taxi or the Itoshima community bus toward Shima",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/fuk_016-the-camphor-of-oimatsu-tenjin-shrine.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "e36a052c-3a48-4eed-ba48-5ab48574fa05",
+        "note": "Photographed by a reader and sent through the app (2026-10-01); a viewing pass approved it on 2026-10-02: Owner's own photograph at the trunk; Hidde approved it in session on 2026-10-02 (never credited, as every own photograph) Species seen: dense glossy evergreen crown of small oval leaves, dark fissured trunk: camphor. Fits the description: broad camphor over the shrine approach, stone lantern and komainu at its base, bamboo grove behind.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+      },
+      "girth_cm": 500,
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the broad camphor on the approach with a stone lantern and a lion-dog at its foot and a bamboo grove rising behind it.",
+      "verify_notes": "Published 2026-10-02 on Hidde's own call, overruling the run's 'lead' verdict of 2026-10-01 (recorded in judgement.py: 'itoshima ik was er het was mooi en de foto ook dus keur hem goed'). Single source for the tree: his visit, photograph and GPS fix at the trunk on 2026-10-01, girth 500 cm by his estimate; the shrine's history from kyushu-jinja.com and yaokami.jp, neither of which mentions the tree. No register entry within 100 m, no article names it. Flagged; the page asks for a measurement and the shrine's own name for it. Day-trip tree on the Fukuoka page under its real place name, Itoshima."
     }
   ]
 }
