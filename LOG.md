@@ -10,6 +10,25 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 session: Hidde's phone walk of build 20, and his covers
+
+Live on main:
+- **Location bug, the serious one.** Adding a tree on a phone never asked for location, and the tree was filed at Dam square. The add sheet never received the location state, because sheets do not inherit it, and the default said "known". It now reaches every sheet, the default is unknown, and taking a photo asks for location. Test: aScreenNobodyToldHasNoFix.
+- **My trees:** the big Add a tree button is gone (the tab bar's camera is the make button, as on Instagram and Strava). Find people sits beside the name.
+- **One status word:** a photo of one of our trees says "Sent to us", the same as a tree you added. Changed in the app and on the web in all 8 languages.
+- **Your own tree's photo** opens full screen.
+- **Sign-in sheet:**
+  - Apple, Google and Continue with email as three equal buttons; email link sign-in is switched on.
+  - One line of terms; the storage paragraph is gone, from the website too.
+  - Solid sheet, height fitted to its content.
+- **Add a tree sheet:** two equal buttons with icons, on a solid sheet.
+- **"Tree saved":** Apple's grey confirmation after Save (Kit/DoneHUD.swift).
+- **Canada's map** now centres on Canada, not on the US border.
+- **A day trip away:** built on both surfaces, from one server rule (site/src/lib/day-trips.ts), carried in the feed as day_trip. Catches 26 cities, among them Copenhagen (Dyrehaven), Pamplona, Hong Kong and Deventer.
+- **Covers:** Hidde picked them for 21 countries (face_tree_id).
+- **The red iOS check** was a simulator hang on GitHub's runner, not a code fault.
+- **Supabase:** sqlcheck reports every migration applied.
+
 ## 2026-10-01 continuation: pace limit is the wall
 
 - Checked claims, READY leads (3, all declined: park-level pin, sapling, Linz ensemble) and preflight. Nothing shippable while 31 trees sit in the 24h window against a limit of 20. Houston's held stories and claim stay for the next run after the window clears. Shipped 0 trees; stopping rather than burning the window on work the pace check would refuse.
