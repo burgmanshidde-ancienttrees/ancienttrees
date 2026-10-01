@@ -1,6 +1,6 @@
 # Ambassador mails: thanks, what do you think of the list, want to carry it?
 
-Hidde's idea, 2026-10-02. **Since the same evening the Paris mail is the STANDARD invitation and the knock sends it** (`scripts/ambassador.py --invite-scan --send`, signed Ancient Trees) to any reader whose photograph is live in a place without an ambassador; the Paris and Seville readers are the first two. The badge follows their answer. The Leon and Daniel mails below are personal and his to send. Three people
+Hidde's idea, 2026-10-02. **Since the same evening the Paris mail is the STANDARD invitation and the knock sends it** (`scripts/ambassador.py --invite-scan --send`, signed Ancient Trees) to any reader whose photograph is live in a place without an ambassador; the Paris and Seville readers are the first two. The badge follows their answer. Daniel's mail below is personal and his to send; Leon gets none. Three people
 have actually given us trees or photographs and can be reached today. The
 Paris reader signed in with Apple, so their address is a privaterelay.appleid.com
 one: mail to it only arrives from the ancienttrees.app sender the relay knows
@@ -28,24 +28,9 @@ Thanks,
 Hidde
 ```
 
-## 2. Friedewald and Bad Homburg
+## 2. Friedewald and Bad Homburg: no mail
 
-<!-- Leon, the Hammundeseiche and the Schöne Eiche -->
-
-```
-Subject: Friedewald and Bad Homburg
-
-Hi Leon,
-
-Every correction you sent on the Hammundeseiche and the Schöne Eiche is in.
-
-What do you think of the German list as it stands? If there are trees around Friedewald or Bad Homburg that should be on it, send them and I will add them. The app is live now, if you want to tick them off on the spot: https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
-
-Would you want to be named as the ambassador for those two places on the site? Say no and nothing changes.
-
-Thanks,
-Hidde
-```
+Hidde, 2026-10-02: "to leon dont send because it makes no sense after our conversation". Leon is already in a running thread with him; the scan skips his account (the `*` entry in data/ambassadors.json).
 
 ## 3. Copenhagen and Porto: no mail
 
@@ -64,7 +49,7 @@ Thanks for the pin on Valkasken and for the corrections to the Prins Eugen oak. 
 
 We are starting with ambassadors: one person per city who adds photographs, checks the facts and helps sharpen the list, named on the city's page. Would you be up for Stockholm? You have already done most of it.
 
-Two small asks while you are passing Valkasken: its girth, which nobody has ever written down, and whether Tina's photographs of these trees may go on the pages with her credit.
+Two small asks while you are passing Valkasken: its girth, which nobody has ever written down, and whether Tina's photographs of these trees may go on the pages with her credit. If you have the app on your phone, a photograph from there lands on the page by itself: https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
 
 Thanks,
 Hidde
