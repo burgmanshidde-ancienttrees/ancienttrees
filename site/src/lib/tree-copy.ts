@@ -206,7 +206,10 @@ export function metaForTree(tree: {
   const species = rawSpecies && !/^mixed species$/i.test(rawSpecies) ? rawSpecies : "";
   const ageText = (overrides?.age_estimate ?? tree.age_estimate ?? "").trim();
   const age = /not documented|unknown|undated|not established/i.test(ageText)
-    ? "" : (ageText.replace(/,/g, "").match(/\d{2,4}/) ?? [""])[0];
+    // Thousands separators of every overlay language, not only the comma:
+    // "1.000 Jahre" read as "000" and shipped as "rund 000 Jahre alt" on five
+    // translated pages (audit 2026-10-01).
+    ? "" : (ageText.replace(/(\d)[,.\s\u00a0\u202f'](?=\d{3}(?!\d))/g, "$1").replace(/,/g, "").match(/\d{2,4}/) ?? [""])[0];
 
   const loc = tree.location ?? {};
   const raw = (loc.neighbourhood ?? "").split("/")[0].split(",")[0].trim()
