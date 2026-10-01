@@ -34,7 +34,9 @@ import SwiftUI
 struct LocationState {
     /// False when `origin` is a fallback rather than a fix. Anything that prints
     /// a distance, a walk time or the word "near" has to read this first.
-    var known: Bool = true
+    /// The default is UNKNOWN: a view nobody gave the real value to must not
+    /// believe it has a fix (the Dam square tree of 2026-10-01).
+    var known: Bool = false
     /// Asked and refused, as opposed to not asked yet. The two need different
     /// buttons: a refusal can only be undone in Settings, while an unasked
     /// permission can still be asked right here.
