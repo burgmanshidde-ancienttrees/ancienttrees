@@ -200,28 +200,26 @@ query($tag: String!, $since: Date!, $until: Date!) {
         if not tok:
             print("no CLOUDFLARE_ANALYTICS_TOKEN")
             return
-        since = (today - datetime.timedelta(days=4)).isoformat()
-        query = {"query": """
+        since = (today - datetime.timedelta(days=3)).isoformat()
+        for dim in ("refererHost", "countryName", "deviceType", "userAgentBrowser",
+                    "requestPath"):
+            query = {"query": """
 query($tag: String!, $since: Date!, $until: Date!) {
   viewer { accounts(filter: {accountTag: $tag}) {
-    g: rumPageloadEventsAdaptiveGroups(limit: 60,
+    g: rumPageloadEventsAdaptiveGroups(limit: 15,
         filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
-      count dimensions { requestPath countryName deviceType refererHost
-                         userAgentBrowser userAgentOS }
+      count sum { visits } dimensions { %s }
     }
   } }
-}""", "variables": {"tag": ACCOUNT_TAG, "since": since, "until": today.isoformat()}}
-        g = api("https://api.cloudflare.com/client/v4/graphql", query, token=tok)
-        if g.get("errors"):
-            raise RuntimeError(json.dumps(g["errors"]))
-        print("Since %s, the 60 biggest combinations:\n" % since)
-        print("| Views | Path | Country | Device | Referrer | Browser | OS |")
-        print("|---:|---|---|---|---|---|---|")
-        for r in g["data"]["viewer"]["accounts"][0]["g"]:
-            d = r["dimensions"]
-            print("| %d | %s | %s | %s | %s | %s | %s |" % (
-                r["count"], d["requestPath"], d["countryName"], d["deviceType"],
-                d["refererHost"] or "(direct)", d["userAgentBrowser"], d["userAgentOS"]))
+}""" % dim, "variables": {"tag": ACCOUNT_TAG, "since": since, "until": today.isoformat()}}
+            g = api("https://api.cloudflare.com/client/v4/graphql", query, token=tok)
+            if g.get("errors"):
+                print("%s: %s" % (dim, json.dumps(g["errors"])[:300]))
+                continue
+            rows = g["data"]["viewer"]["accounts"][0]["g"]
+            print("\n**%s** since %s: " % (dim, since) + "; ".join(
+                "%s %d views/%d visits" % (r["dimensions"][dim] or "(none)", r["count"],
+                                          r["sum"]["visits"]) for r in rows))
 
     print("# SEO diagnosis, %s" % today.isoformat())
     section("1. Day by day, final against fresh data", days)
