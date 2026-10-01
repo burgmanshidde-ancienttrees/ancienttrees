@@ -1167,3 +1167,14 @@ What did not change: the "which trees get a page" cut, the register pitfalls, pi
 
 Accepted risk, said out loud: some register trees will turn out dead because the life check misses one. Readers correct those and they are removed the same day.
 Same day, the guard on it: "for countries like NL, which is quite covered, we don't want to swamp it with photo less not accurate trees." In a country with 100+ published trees (the US exempt), a new tree needs a photograph or a confirmed pin, or it stays a lead. The 841 trees already live without either are grandfathered in data/covered-baseline.json. Enforced by preflight as a FAIL.
+
+## 2026-10-01: the website stays free, the app becomes paid (decided, not yet built)
+
+Hidde, after Google's 09-28 demotion took away the search numbers that were his main reason to continue: "heel simpel de website is gratis de app is betaald", then "jaar abo", then "gratis downloaden daarna snel betalen versie met 7 dagen gratis... maar dit komt later ik moet eerst deze klap nog even verwerken".
+
+- **The model:** free download, then a subscription to use the app, with a 7-day free trial. EUR 19.95 a year (his 2026-08-18 price). The website keeps every tree, story and location free.
+- **Existing users (~70) keep the app free**, as thanks for trusting it early; confirmed by Hidde in the same exchange.
+- **Why:** the fastest honest answer to hard rule 6 ("have we validated that real people will pay"). Hard paywalls convert a far larger share of downloads than freemium (RevenueCat's reports, roughly 10 percent against 2, from memory and to be re-checked), at the cost of fewer users and therefore fewer contributors.
+- **What it replaces:** the 2026-08-18 line "every tree, story and location stays free on web and in the app" (now: on the web), and Entitlement.swift's freemium rule "never gate the core loop", which follows AllTrails. Both stay in the code until this is built, and the change is deliberate, not drift.
+- **Blocked on Hidde, in App Store Connect:** the Paid Apps agreement with bank and tax details, then a subscription group with one annual product at EUR 19.95 and a 7-day free introductory offer. Then a session builds StoreKit 2, the paywall, restore purchases, Apple's required terms, and the grandfathering.
+- **Not now:** he asked for time first. No session starts this until he says so.
