@@ -1179,3 +1179,7 @@ Hidde, after Google's 09-28 demotion took away the search numbers that were his 
 - **What it replaces:** the 2026-08-18 line "every tree, story and location stays free on web and in the app" (now: on the web), and Entitlement.swift's freemium rule "never gate the core loop", which follows AllTrails. Both stay in the code until this is built, and the change is deliberate, not drift.
 - **Blocked on Hidde, in App Store Connect:** the Paid Apps agreement with bank and tax details, then a subscription group with one annual product at EUR 19.95 (the early-adopter price) and a 7-day free introductory offer. Then a session builds StoreKit 2, the paywall, restore purchases, Apple's required terms, and the grandfathering.
 - **Not now:** he asked for time first. No session starts this until he says so.
+
+## 2026-10-01: the season calendar is back on the website
+
+Hidde: "zet maar terug", reversing 2026-08-26 ("the whole season story is Plus, the fact included"). Reason: the same day the model became website free, app paid, so the app sells the season SERVICE (Season Radar alerts when a tree near you peaks) and the web shows the facts: best_time on ~1,400 trees and the year calendar for the species with a phenology file. That is unique, visit-useful content, which is what Google's helpful-content guidance asks for after the 09-28 demotion. One switch, `SEASON_PUBLIC` in site/src/lib/phenology.ts.

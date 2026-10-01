@@ -16,11 +16,12 @@ function esc(s: string): string {
 export const MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 // The season story left the public site on 2026-08-26 (DECISIONS.md: "the
-// whole season story is Plus, the fact included"). Nothing below is deleted:
-// the data, the curves and the feed all stay, because the app's Plus is where
-// they resurface. This switch only silences what the WEB renders; flipping it
-// back is a decision recorded there, not a code cleanup.
-export const SEASON_PUBLIC = false;
+// whole season story is Plus, the fact included") and came back on 2026-10-01
+// (Hidde: "zet maar terug"). That day the model changed: the website is free
+// and the whole app is paid, so the app sells the SERVICE (alerts when a tree
+// near you peaks, walks, offline) and the web carries the facts, which is the
+// unique, practical content Google rewards after the 09-28 demotion.
+export const SEASON_PUBLIC = true;
 
 export const KIND_ICONS: Record<string, string> = {
   "bare silhouette":
