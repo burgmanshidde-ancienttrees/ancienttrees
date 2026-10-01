@@ -20167,6 +20167,32 @@
    ],
    "trees": 4,
    "logged": true
+  },
+  {
+   "started": "2026-10-01T07:58:38+00:00",
+   "date": "2026-10-01",
+   "run_id": "36833440499",
+   "minutes": 9.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 47,
+   "denials": 8,
+   "denials_source": "permission_denials: Bash(cd && for ; do ; curl ...), Bash(curl ; Intel ; wc), Bash(for ; do ; curl ; Intel ...), Bash(grep | paste | bc), Bash(python3 && rm), Bash(python3 ; import ; ? ; ? ...), Bash(python3 ; import ; ? ; search ...), Bash(rm)",
+   "ended": "success",
+   "tokens": 635821,
+   "claims_held": [
+    "Houston"
+   ],
+   "commits": 5,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "bad-homburg",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
