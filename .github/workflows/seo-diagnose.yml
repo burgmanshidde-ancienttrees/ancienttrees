@@ -1,0 +1,25 @@
+name: SEO diagnosis
+
+# Run by hand when search falls off a cliff. Read-only: it asks Search Console
+# and the beacon what happened and prints the answer in the log. Written
+# 2026-10-01 for the 09-28 drop; kept because the next one should take one
+# click instead of an afternoon.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ask Google
+        env:
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+        run: python3 scripts/seo_diagnose.py
