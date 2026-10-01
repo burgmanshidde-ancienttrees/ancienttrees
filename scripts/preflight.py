@@ -1281,10 +1281,18 @@ def check_covered_countries_want_a_photo_or_a_pin():
         c = city.get("country")
         count[c] = count.get(c, 0) + len(city.get("trees", []))
     out = []
+    # WORLDWIDE since 2026-10-01 (Hidde, after the Google demotion: "zo min
+    # mogelijk bomen met geen foto en geen exacte pin - we moeten met goede
+    # content komen"). The country threshold and the US exemption are gone;
+    # trees live that day are listed in data/photo-or-pin-baseline.json and
+    # are noindexed by scripts/thin_pages.py until they gain one of the two.
+    try:
+        with open(os.path.join("data", "photo-or-pin-baseline.json"), encoding="utf-8") as fh:
+            grand |= set(json.load(fh).get("ids", []))
+    except (OSError, ValueError):
+        pass
     for path, city in cities:
         c = city.get("country")
-        if c in COVER_EXEMPT or count.get(c, 0) < COVERED_AT:
-            continue
         for tree in city.get("trees", []):
             if tree.get("id") in grand:
                 continue
@@ -1294,8 +1302,8 @@ def check_covered_countries_want_a_photo_or_a_pin():
             if tree.get("location_precision") == "confirmed":
                 continue
             out.append("%s: %s (%s) is new in %s, which already carries %d trees, "
-                       "and it has neither a photograph nor a confirmed pin. In a "
-                       "covered country that is a lead, not a page: keep it in "
+                       "and it has neither a photograph nor a confirmed pin. That "
+                       "is a lead, not a page, anywhere (2026-10-01): keep it in "
                        "data/leads/ until one of the two exists."
                        % (path, tree.get("id"), tree.get("name"), c, count[c]))
     return out

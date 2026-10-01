@@ -32,6 +32,13 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: only trees with a photo or an exact pin in Google
+
+- **New trees need a photograph or a confirmed pin, everywhere** (preflight; US exemption gone). Live trees are baselined in data/photo-or-pin-baseline.json.
+- **867 live trees with neither leave the index** (1,080 pages with their translations), recomputed every deploy; they come back when they gain one. noindex.json now 8,935 paths.
+- **15 city intros fixed** where a count or claim had gone stale (apeldoorn, barcelona, boston, cagliari, ghent, hilo, kyoto, miyazaki, oahu, priekule, rome, roosendaal, seattle, trento, vilnius). Rouen, Helmond, Trieste and the rest of the earlier list were false positives (register totals, groups).
+- Hidde will not visit or photograph trees for now; photographs come from open sources and readers.
+
 ## 2026-10-01 session: night runs re-aimed for the recovery
 
 - **Focus countries** (Hidde): US, UK, Japan, France, Spain, Portugal, Italy, Denmark, Norway, Sweden; translations where useful. `FOCUS_COUNTRIES` in passcheck.py; city_queue.py --next lists zero-tree places from all of them, US first.
