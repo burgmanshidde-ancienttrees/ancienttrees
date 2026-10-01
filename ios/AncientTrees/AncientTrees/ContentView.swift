@@ -108,6 +108,18 @@ struct ContentView: View {
     /// Debug only, same reason as the tab argument: this Mac cannot tap the
     /// simulator's location permission dialog, so screenshots would all be
     /// Amsterdam. `-at=38.11,13.36` starts somewhere else.
+    /// Whether `origin` is a fix, published to every screen AND every sheet.
+    /// Sheets do not inherit it, and on 2026-10-01 the add sheet was reading
+    /// the default instead: a phone that had never been asked for its
+    /// location took a photograph, was told it had a fix, and filed the tree
+    /// at Dam square (Hidde: "vraagt niet locatie ... dacht ie dat ik in
+    /// amsterdam was"). appObjects carries it now, and the default is unknown.
+    var locationState: LocationState {
+        LocationState(known: location.coordinate != nil || debugOrigin != nil,
+                      denied: location.status == .denied || location.status == .restricted,
+                      ask: { location.request() })
+    }
+
     private var debugOrigin: (lat: Double, lng: Double)? {
         guard let a = ProcessInfo.processInfo.arguments
                 .first(where: { $0.hasPrefix("-at=") })?.dropFirst(4).split(separator: ","),
@@ -444,11 +456,7 @@ struct ContentView: View {
                 // every screen under here. See LocationOff.swift: origin always
                 // has a value, and printing a distance measured from Dam square
                 // is the one error this product cannot afford.
-                .environment(\.locationState,
-                             LocationState(known: location.coordinate != nil || debugOrigin != nil,
-                                           denied: location.status == .denied
-                                                || location.status == .restricted,
-                                           ask: { location.request() }))
+                .environment(\.locationState, locationState)
                 // Outline icons that stay outline when selected, colour doing
                 // the selecting (Careem is Hidde's reference; Airbnb does the
                 // same). The .none variant sits on each Label because iOS
@@ -1026,5 +1034,6 @@ extension View {
             .environment(root.myVotes)
             .environment(root.profiles)
             .environment(root.moderation)
+            .environment(\.locationState, root.locationState)
     }
 }

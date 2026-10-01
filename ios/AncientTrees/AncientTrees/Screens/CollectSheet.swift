@@ -559,6 +559,11 @@ struct CollectSheet: View {
 
     private func openCamera(forSign: Bool = false) {
         self.forSign = forSign
+        // Adding a tree is the moment the app needs to know where you stand,
+        // so this is where it asks (iNaturalist and Seek ask at the first
+        // observation, not at launch). The fix arrives while the camera is
+        // open; if it does not, `route` asks for the pin instead of guessing.
+        if !location.known && !location.denied { location.ask() }
         if CameraPicker.isRefused { refused = .camera } else { camera = true }
     }
 

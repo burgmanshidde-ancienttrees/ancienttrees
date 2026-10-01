@@ -351,6 +351,15 @@ struct APhotographNeverGetsAnInventedCoordinate {
         #expect(route != .settle(.device))
     }
 
+    /// The second half of the same bug, found on a phone on 2026-10-01: the
+    /// route was right and the INPUT was wrong. The add sheet never received
+    /// the real location state, read the default, and the default said
+    /// known. A view nobody told must assume it has no fix.
+    @Test func aScreenNobodyToldHasNoFix() {
+        #expect(LocationState().known == false,
+                "the default said known, so a sheet without the real value filed a tree at Dam square")
+    }
+
     /// And the case it must not break: standing there with a real fix is still
     /// the whole point of the camera path, and asking for a pin there would be
     /// a question nobody should have to answer.

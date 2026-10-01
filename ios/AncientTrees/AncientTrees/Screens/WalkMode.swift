@@ -53,6 +53,7 @@ struct WalkMode: View {
     @Environment(Units.self) private var units
     @Environment(Entitlement.self) private var entitlement
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.locationState) private var locationState
     @State private var selected: Tree?
     /// A real pedestrian route, fetched once when this screen opens and the
     /// feed had none. See Kit/Routing.swift for why it is one call and why
@@ -181,6 +182,7 @@ struct WalkMode: View {
         .accessibilityIdentifier("walk-mode")
         .sheet(isPresented: $photographing) {
             CollectSheet(catalogue: catalogue, origin: origin, mode: .collect)
+                .environment(\.locationState, locationState)
                 .environment(saved)
                 .environment(account)
                 .environment(nudge)
