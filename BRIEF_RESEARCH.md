@@ -16,6 +16,16 @@ A tree qualifies if it is genuinely old OR visually spectacular OR historically
 significant, AND publicly accessible. A register saying "protected" is not by
 itself "worth the walk": judge each one.
 
+## Since 2026-10-01: a tree ships only with a photograph or an exact pin
+
+Google demoted the site on 09-28 for pages at scale, and Hidde's answer is "zo min mogelijk bomen met geen foto en geen exacte pin - we moeten met goede content komen". preflight now refuses a NEW tree anywhere that has neither, so a candidate that will end with neither is wasted work.
+
+Before you spend time on a candidate, check that it can end with one of the two:
+- **a photograph**: an openly licensed picture of THIS tree exists (Commons file named after it or geotagged within ~150 m, iNaturalist, a register's own CC photo), or
+- **a confirmed pin**: a register coordinate, an OSM tree node, or aerial imagery that puts you on the trunk (see "Aerial imagery as evidence").
+
+If neither is in reach, do not verify it: record it in data/leads/ with the reason "no photo or exact pin in reach" and move to the next candidate. Order your candidates so the ones with a photo already in hand come first.
+
 ## The bar, per tree
 
 1. **Alive now.** Best evidence is a dated photo, news item or observation from
