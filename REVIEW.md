@@ -13,6 +13,19 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-01
+
+Web half: read the species pages (coast redwood, ginkgo), London, Seattle and four random tree pages in the built site. No em dashes or banned words in the sampled HTML; counts on city pages agree with their own text. The day's work was Copenhagen/Itoshima research held in data/, nothing new live.
+
+- WARN: species pages whose hand-written intro says the list runs "oldest first" do not list oldest first. species/ginkgo.html opens with 100+, 110, 68, 120 years and reaches 1,200 sixth; holm-oak, pedunculate-oak, cedar-of-lebanon and mediterranean-cypress are likewise out of order (12 species pages carry the phrase). The page contradicts itself (blueprint P3: copy must not promise what the list does not do). Either sort by age_max or drop the phrase.
+- NOTE: sitemap-recrawl.xml lists noindex city pages (e.g. /kimotsuki and its seven language twins) while data/noindex.json says noindex paths "leave sitemap.xml". sitemap.xml itself is clean, so this looks deliberate (recrawl so Google sees the noindex); noted only so nobody reads it as a leak.
+
+App half (walk, city, city-map, collect-away, collect-compare, collect-describe):
+
+- NOTE APP: `collect-describe.png` (Add a tree, details form) shows the launch line "Trees worth the walk, wherever you are." drawn translucently across the Age/Girth fields. If it is only a sweep timing artefact it needs nothing; if a person can see it, it sits over the form's labels. One look in a session.
+- NOTE APP: `city-map.png` (Aachen, 1 tree) puts the Back label on top of a street name ("Goldberg") because the map runs under the nav bar with no backing, so the control reads as clutter.
+- Walk, city, collect-away and collect-compare read fine: counts agree with their lists (3 stops, 0.6 km, 7 min) and the unknown-species line asks the reader rather than guessing.
+
 ## 2026-09-30
 
 Web half: read the built pages for the day's eight new single-tree places (Tata,
