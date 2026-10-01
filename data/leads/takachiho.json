@@ -1,0 +1,51 @@
+{
+ "city": "Takachiho",
+ "country": "Japan",
+ "city_slug": "takachiho",
+ "note": "2026-10-02 verification pass. Never rendered.",
+ "leads": [
+  {
+   "name": "Ginkgo of Shimono Hachiman Shrine (下野八幡宮のイチョウ)",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "lat": 32.745,
+   "lng": 131.308,
+   "reason": "no photo or exact pin in reach: no open-licence photo on Commons/Openverse and no OSM tree node; shrine-level pin only (OSM node 5089460578). Otherwise strong: national natural monument (designated 1951-06-09), female tree, girth 9.20 m at breast height, height 36.40 m, per the Agency for Cultural Affairs (https://online.bunka.go.jp/heritages/region/45/45441); about 800 years per the town; selected for Miyazaki's 100 giant trees; stands left of the approach. A photograph of it from Hidde or a reader would open it.",
+   "sources": [
+    "https://online.bunka.go.jp/heritages/region/45/45441",
+    "https://www.town-takachiho.jp/top/soshiki/kikakukanko/2/3/295.html"
+   ]
+  },
+  {
+   "name": "Zelkova of Shimono Hachiman Shrine (下野八幡宮のケヤキ)",
+   "species": "Japanese Zelkova (Zelkova serrata)",
+   "lat": 32.745,
+   "lng": 131.308,
+   "reason": "no photo or exact pin in reach, as for the ginkgo. National natural monument (1951-06-09): root girth 20.80 m, breast-height girth 8 m, height 34.70 m, crown spread 26 by 33 m, stands against the shrine building on the right (Agency for Cultural Affairs, 文化遺産オンライン). Probably the best tree in Takachiho by record; needs a photograph.",
+   "sources": [
+    "https://online.bunka.go.jp/heritages/region/45/45441"
+   ]
+  },
+  {
+   "name": "Sakasa-sugi and Arima-sugi, Shimono Hachiman Shrine",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "lat": 32.745,
+   "lng": 131.308,
+   "reason": "no photo or exact pin; about 800 and 400 years by the planting legends on a travel site and the town page; neither is designated, no measurements.",
+   "sources": [
+    "https://tabi-bito.net/shimono-hachiman-shrine-shrine-takachiho-town-miyazaki-prefecture/",
+    "https://www.town-takachiho.jp/top/soshiki/kikakukanko/2/3/295.html"
+   ]
+  },
+  {
+   "name": "Sacred zelkova of Kushifuru Shrine (槵觸神社)",
+   "species": "Japanese Zelkova (Zelkova serrata)",
+   "lat": 32.7099875,
+   "lng": 131.3138104,
+   "reason": "no photo or exact pin; the 'about 3,000 years' is a shrine-guide claim (kyushu-jinja.com) with no measurement, treat as legend; shrine is a town tangible cultural property (1990). Commons has Kushifuru-jinjya.jpg 45 m from the shrine node but it was not checked as showing the tree.",
+   "sources": [
+    "https://www.kyushu-jinja.com/miyazaki/kushifuru-jinja/index.php"
+   ]
+  }
+ ],
+ "blocked": []
+}
