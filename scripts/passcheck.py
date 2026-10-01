@@ -862,7 +862,7 @@ US_COUNTRY = "United States"
 FOCUS_COUNTRIES = {"United States", "United Kingdom", "Japan", "France", "Spain",
                    "Portugal", "Italy", "Germany", "Netherlands", "Belgium",
                    "Luxembourg", "Austria", "Switzerland", "Ireland",
-                   "Denmark", "Norway", "Sweden"}
+                   "Denmark", "Norway", "Sweden", "Australia"}  # Australia: Hidde, same day
 # Contiguous states, Alaska, Hawaii. Rough on purpose: it decides which country
 # a place a run names is in, and a border town is a question for --country.
 US_BOXES = [(24.4, 49.5, -125.0, -66.9), (51.2, 71.5, -179.9, -129.9),
@@ -950,6 +950,26 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
             print("  python3 scripts/photo_gaps.py --shortlist     (photographs, demand first)")
             print("  python3 scripts/recognise.py --stuck          (recognition lines)")
             print(f"  then: python3 scripts/passcheck.py --claim <place> --kind photo")
+            return 1
+
+    # PROVEN CITIES FIRST (Hidde, 2026-10-01: "meer focus op bewezen steden
+    # beter maken voor google dan nog heel veel steden openen"). A verify or
+    # write pass goes to a city that had readers before the demotion, the
+    # frozen 09-27 roster in data/depth-roster-frozen.json. Opening new places
+    # adds pages, and pages at scale is what Google marked down. A reader's
+    # submission is still the reason to go elsewhere (--deepen "reader row N").
+    if kind in ("verify", "write") and not deepen:
+        try:
+            proven = set((json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json")))
+                          .get("cities") or {}).keys())
+        except (OSError, ValueError):
+            proven = set()
+        match, _ = resolve(target, cities()) if proven else (None, None)
+        if proven and not (match and match["slug"] in proven):
+            print(f"REFUSED: {target} is not a proven city. New trees go to cities that had")
+            print("readers before the demotion (data/depth-roster-frozen.json), not to new")
+            print("places (Hidde, 2026-10-01). `python3 scripts/city_queue.py --next` lists them.")
+            print("A reader's submission is the exception: --deepen \"reader submission row N\".")
             return 1
 
     is_us = False

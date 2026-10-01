@@ -664,11 +664,24 @@ def main():
             # Hidde, 2026-10-01: all focus on the US. passcheck --claim refuses
             # anything else, so printing the stages below would only walk a run
             # into refusals. One flag decides both: passcheck.US_ONLY.
-            zero = [c for c in s1 if c.get("country") in FOCUS_COUNTRIES]
-            if zero:
-                print("FOCUS-COUNTRY PLACES AT ZERO, ranked: open them with four or five in one go, never fewer.\n")
-                for c in zero[:20]:
-                    print("  %3d  %s" % (c["rank"], c["city"]))
+            # PROVEN CITIES FIRST (Hidde, 2026-10-01), replacing the list of
+            # places at zero: opening new places is what passcheck now refuses.
+            try:
+                proven = (json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json")))
+                          .get("cities") or {})
+            except (OSError, ValueError):
+                proven = {}
+            rows = [c for c in doc.get("cities", []) if c.get("slug") in proven
+                    and c.get("country") in FOCUS_COUNTRIES
+                    and (c.get("trees") or 0) < max(c.get("target") or 10, 10)]
+            rows.sort(key=lambda c: -proven[c["slug"]].get("impressions", 0))
+            if rows:
+                print("PROVEN CITIES WITH ROOM: readers before the demotion, below target.")
+                print("New trees go HERE, not to new places (Hidde, 2026-10-01).\n")
+                print("  city                  trees  target  impressions(09-27)")
+                for c in rows[:25]:
+                    print("  %-21s %5d %7d %19d" % (c["city"][:21], c.get("trees", 0),
+                          max(c.get("target") or 10, 10), proven[c["slug"]].get("impressions", 0)))
                 print()
             print("Also US: famous trees inside a place that reaches four (data/leads/_famous-united-states.json,")
             print("`famous_demand.py --next`), and the NYC Great Trees, Florida, Seattle and DC")
