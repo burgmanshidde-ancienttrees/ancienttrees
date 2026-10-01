@@ -99,7 +99,7 @@ const graph = [
 // 2026-10-01: "are thumbnails consistent over seo, app and web?"). These pages
 // carried no og:image, so a shared or searched translated city fell back to
 // the site's default picture.
-const faceTree = cityFaceTree({ hero_tree_id: city.data.hero_tree_id, trees });
+const faceTree = cityFaceTree({ hero_tree_id: city.data.hero_tree_id, face_tree_id: (city.data as any).face_tree_id, trees });
 const faceUrl = faceTree ? usablePhoto(faceTree)?.url : null;
 const ogImage = faceUrl ? `\n<meta property="og:image" content="${ogImageUrl(faceUrl).replace(/"/g, "&quot;")}">` : "";
 const headExtra = mapHead() + (fallback ? "" : "\n" + hreflangForCity(cslug, "city")) + "\n" + ldScript(graph) + ogImage;
