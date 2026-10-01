@@ -936,7 +936,10 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
     #    line) is not new, and the pages with pre-demotion readers are mostly
     #    outside the US, so depth kinds are exempt.
     DEPTH_KINDS = {"photo", "pin", "recognise", "depth"}
-    if kind in ("verify", "write") and not deepen:
+    # A write pass on research that is already verified is finishing work: the
+    # pace is enforced where it bites, at commit time (preflight), so refusing
+    # the claim would only leave verified trees unwritten.
+    if kind in ("verify", "write") and not deepen and not (kind == "write" and unmerged_research(target)):
         try:
             import preflight
             added = preflight.trees_committed_last_24h()
