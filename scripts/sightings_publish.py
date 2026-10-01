@@ -296,6 +296,14 @@ def address_of(user_id):
 # it says published (Sightings.Sighting.photoState, my-trees-js). Without this
 # the state could never change, because nothing else ever touches a sighting
 # row after the phone writes it. Nothing is written on a dry run, like the mail.
+# NO MAIL WHEN A PHOTOGRAPH GOES LIVE (Hidde, 2026-10-02: "do we still send
+# emails to people when trees are live - i think we shouldnt"). The first
+# stranger to send photographs through the app did so from a Sign in with
+# Apple relay address, minutes after installing; a mail from us into that
+# inbox is the one thing about the exchange they did not ask for. The app
+# already shows the status on their own tree, which is where the answer
+# belongs. The mail code stays for the day he wants it back.
+MAIL_WHEN_LIVE = False
 VERDICT_STATUS = {"approve": "published", "add": "published",
                   "reject": "declined", "hold": "checking"}
 
@@ -427,6 +435,9 @@ def main():
         published.append(entry)
         print(f"  {'ADDED' if extra else 'PUBLISHED'} {entry['tree_id']} {entry['tree_name'][:40]}: {fname} {w}x{h}"
               f"{f', replaced {old_url}' if old_url else ''}{f' ({dropped} vendored file(s) removed)' if dropped else ''}")
+        if not MAIL_WHEN_LIVE:
+            print("  mail: off, a photograph going live sends no mail (Hidde, 2026-10-02)")
+            continue
         addr = address_of(entry["user_id"])
         if addr:
             subject, body = mail_for(entry, reason)

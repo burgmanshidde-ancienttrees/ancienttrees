@@ -10,6 +10,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: US-only lifted, the pace is a note, downloads were never lagging, no mail when a photo goes live
+
+- **US-only is off** (Hidde: "us open rule is gone"). `US_ONLY = False` in passcheck.py; the US still leads `city_queue.py --next` by demand. Copenhagen's seven verified trees and Fukuoka's two can be written on the next knock.
+- **The 10-a-day pace is a NOTE, with a hard brake at 40** (Hidde: "fuck the 10 tree thing if there is nothing else the nightruns can do"). Nine windows on 10-01 shipped nothing because the gate refused every write pass and the depth it pointed at was empty. passcheck no longer refuses a claim on pace; preflight prints a NOTE past 10 and FAILs past `PACE_HARD_CAP` 40, which is his number. Said in session that this restores some of the burst shape Google demoted us for; he knows.
+- **App Store downloads were never eleven days behind.** asc_downloads.py asked Apple for 14 instances and got the OLDEST 14, so 09-20 was the newest day it could print. It now fetches every instance and keeps the newest: 10 downloads on 09-26, 2 on 10-01. The digest will carry current days from tomorrow.
+- **No mail when a photograph goes live** (Hidde: "do we still send emails to people when trees are live - i think we shouldnt"). `MAIL_WHEN_LIVE = False` in sightings_publish.py; the code stays. Replies to typed submissions (contributor_reply.py, the 2026-08-21 loop) are unchanged.
+- **Bots are never shown** (earlier this session): the beacon table lost its bot column and sentence, `check_the_digest_never_shows_bots()` in qa.py refuses them coming back.
+- Not fixed this session: the red iOS check (two tests expect the email field open on the new sign-in sheet; terms and privacy links under 44 pt), and whether contributor mail credentials resolve inside a night run.
+
 ## 2026-10-02 session: a stranger's nine photographs in Paris, all on the page
 
 - **What happened, in order (UTC, 2026-10-01).** 14:57 an account is created in the app with Sign in with Apple. 14:59 to 15:04 seven photographs of the Horse Chestnut of Square Rene-Le Gall (par_031), taken from the tree's own page in the app, pinned at the trunk. 15:05 the knock arrives, the run looks at all seven and the wide shot is live at 15:06, seven minutes after it was taken. 15:07 to 15:09 three sightings on the Turkey Oak next to it (par_033), two with photographs. 18:24 the run publishes both. Not one of our accounts (`ours.is_ours` says reader); the first person other than Hidde to add a photograph through the app.
