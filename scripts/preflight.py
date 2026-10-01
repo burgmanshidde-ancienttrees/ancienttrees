@@ -1054,7 +1054,7 @@ def check_no_new_thin_places():
     return out
 
 
-PACE_PER_DAY = 20
+PACE_PER_DAY = 10  # 20 until later on 2026-10-01; Hidde agreed to 10 with enrichment first
 
 
 def check_publishing_pace():
