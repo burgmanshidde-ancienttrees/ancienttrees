@@ -22,6 +22,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: links are the next Google lever; who to ask
+
+- **Hugo Veríssimo (Quercus Lisboa): Hidde calls him next week, so no mail.** Ask on the call for a link to /lisbon (Quercus offered a mention on their site and socials on 09-17). Their tree check happens on the planned walk.
+- **Next link candidates**, all people who already helped: Paulo Araújo (Dias com Árvores blog, Porto, link to /porto), Trädmästarna (Stockholm), Orto botanico Firenze. Already linking: Bomenstichting Den Haag, getLISBON. Declined: Blarney Castle, Park Güell. Drafts start from Hidde's own rough lines (drafts/HIS_VOICE.md), rendered and mailchecked, sent only on his word.
+- **Not doing:** moving the sign-in/app dialogs out of tree pages. Google separates main content from site chrome, the gain is uncertain, and it touches sign-in on every page with no local build to test it.
+
 ## 2026-10-01 session: Sources back on tree pages, an About page that says AI and names the maker
 
 - **Per-tree Sources list restored** (reverts 2a661227 of 09-24) in the shared TreeDetail component, all seven languages, with a link "How we choose and check trees" to /about. Blueprint v1.24.
