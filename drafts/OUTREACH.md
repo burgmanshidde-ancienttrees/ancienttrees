@@ -860,6 +860,7 @@ site will or will not cost, which is the standing rule.
 
 | Date | Who | Ask | Status |
 |---|---|---|---|
+| 2026-10-01 | Paulo V. Araujo, Dias com Arvores (dias.com.arvores@sapo.pt) | First link ask: his photos now on twelve Porto trees, would he link a tree page when he next writes about one; plus a tree in another Portuguese city. Reply in the existing thread with the history quoted (Hidde's ask) | **sent** |
 | 2026-09-02 | Paulo V. Araujo, Dias com Arvores (dias.com.arvores@sapo.pt) | Say he is right about the Bischofia, link both trees now carrying his photographs, and ask for a tree idea for Coimbra or any other Portuguese city | **sent** |
 | 2026-09-03 | Bymiljoetaten, Oslo kommune (postmottak@bym.oslo.kommune.no) | Thanks for the three Birkelunden photographs, ask whether we may credit Ingar Sorensen or should ask him ourselves, invite them to the app now it is live, and ask which Oslo tree we are missing | **sent** |
 
