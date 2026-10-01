@@ -603,10 +603,13 @@
         "https://stadt.muenchen.de/rathaus/stadtrecht/vorschrift/910/version2/0.html"
       ],
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Englischer_Garten_Winter_Muenchen-5.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Rufus46, via Wikimedia Commons",
+        "status": "held",
+        "note": "Weeping willows by a stream, not a lime.",
+        "width": 4495,
+        "height": 3605
       },
       "transport": "",
       "verify_notes": "2026-09-08: source field was empty while the story already quoted Munich's Verordnung ueber Naturdenkmaeler. Checked the ordinance directly; both entries are in it verbatim. Single source, so flagged.",
@@ -1373,10 +1376,12 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Naturdenkmal_Esche_Bleibtreuplatz_M%C3%BCnchen.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Peterf, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2672,
+        "height": 3784
       },
       "how_to_recognise": "You can recognise it by the crown, wide and funnel-shaped: the limbs leave the trunk at a narrow angle and then swing out and up like a beaker. It stands on Bleibtreuplatz in Solln."
     },

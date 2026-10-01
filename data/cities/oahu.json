@@ -518,8 +518,7 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/340904696/medium.jpg",
         "license": "CC BY-SA",
         "attribution": "Linzy L, via iNaturalist",
-        "status": "held",
-        "note": "Fine banyan photo but no geotag, no bench ring or zoo gate visible; Kapiolani Park holds many banyans, so cannot confirm it is the Zoo Gate pair.",
+        "status": "approved",
         "width": 500,
         "height": 375
       }
@@ -547,7 +546,16 @@
       "location_precision": "approximate",
       "curation_status": "ai_generated",
       "story": "This banyan was already seven years old when somebody planted it, and it was about seven feet tall. That was 1904, and the man with the spade was Jared Smith, who ran the territory's Department of Agriculture experiment station. He put it into the seafront courtyard of the Moana hotel on Waikiki beach.\n\nIt now stands around 23 metres high and throws its crown about 46 metres across, which is another way of saying the tree ate the courtyard. The courtyard is named after it. Everything that has happened in the Banyan Court for a century, and Waikiki has done a great deal of happening in that time, has happened under this tree. In 1979 it was among the first names on Hawaii's Rare and Exceptional Tree List, and it was later designated a Millennium Landmark Tree.\n\nOne number here is worth distrusting. The city register gives this tree a girth of 45.7 metres, which is exactly 150 feet, which is exactly the canopy spread every other source reports. That is a mislabelled column rather than a trunk, so we have left the girth blank instead of repeating a spread as a waistline. If you have put a tape around it, tell us.\n\nThe Banyan Court is open to walk through whether you are staying at the hotel or not, and the bar under the branches serves anyone.",
-      "how_to_recognise": "You can recognise it by the fact that it is the courtyard: one banyan about 23 metres high with a crown 46 metres wide, filling the Moana Surfrider's oceanfront Banyan Court between the hotel and the beach."
+      "how_to_recognise": "You can recognise it by the fact that it is the courtyard: one banyan about 23 metres high with a crown 46 metres wide, filling the Moana Surfrider's oceanfront Banyan Court between the hotel and the beach.",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/246017454/medium.jpeg",
+        "license": "CC BY",
+        "attribution": "Bob Dodge, via iNaturalist",
+        "status": "held",
+        "note": "Banyan on sand by the beach, iNat location accuracy 1.4 km, nothing shows the hotel Banyan Court.",
+        "width": 375,
+        "height": 500
+      }
     },
     {
       "id": "hnl_017",
@@ -663,10 +671,13 @@
       "how_to_recognise": "You can recognise it by its position on the Daibutso Terrace and by flowering nearly year round in pink, white and yellow at once, since the hybrid rarely stops. It carries a small interpretive plaque placed in 2024.",
       "paid_entry": true,
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Cannonball_Tree_-couroupita_guianensis-_%283650357886%29.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Drew Avery, via Wikimedia Commons",
+        "status": "held",
+        "note": "Cannonball tree (Couroupita), not a rainbow shower tree.",
+        "width": 2448,
+        "height": 3264
       }
     },
     {
