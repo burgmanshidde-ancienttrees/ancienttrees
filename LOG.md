@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: a stranger's nine photographs in Paris, all on the page
+
+- **What happened, in order (UTC, 2026-10-01).** 14:57 an account is created in the app with Sign in with Apple. 14:59 to 15:04 seven photographs of the Horse Chestnut of Square Rene-Le Gall (par_031), taken from the tree's own page in the app, pinned at the trunk. 15:05 the knock arrives, the run looks at all seven and the wide shot is live at 15:06, seven minutes after it was taken. 15:07 to 15:09 three sightings on the Turkey Oak next to it (par_033), two with photographs. 18:24 the run publishes both. Not one of our accounts (`ours.is_ours` says reader); the first person other than Hidde to add a photograph through the app.
+- **The bug it found.** The Turkey Oak close-up got an `add` verdict, but `photo_block()` built the url from the stem and ignored the hashed filename an extra is written under, so the extra's url equalled the lead's, `apply_to_city` dropped it as a duplicate, the file sat orphaned, QA went red and the 20:39 run deleted it. Fixed (`photo_block(..., fname=)`), regression test in scripts/test_sightings.py, the close-up is back beside the lead.
+- **Hidde, on seeing the frames: "add all tree photos to the page!"** The six horse chestnut frames declined on 10-01 (hollow trunk with plaque, trunk from below, split trunk, both information boards, a conker) are now beside the lead as extras, each with a verdict in data/judgements.json recording the reversal, statuses set in Supabase. This contradicts "a tree page is not an album" (DECISIONS.md 2026-09-12) and he outranks it; said so in session. par_031 carries 7 photographs, par_033 carries 2.
+- The reader got two "we received your report" mails from contributor_reply.py; whether the "your photograph is live" mail from sightings_publish went out is not in data/outreach-sent.json, so probably not (the night runs may lack the mail creds, or the address did not resolve). Not chased this session.
+
 ## 2026-10-02 session: a gate against the 09-28 Google mistake, and the Oslo photographs chased
 
 - **Gate, live from the next deploy:** `check_index_grows_with_the_trees()` in qa.py fails a deploy above 1.5 indexable pages per tree (now 1.23: 4,325 sitemap urls, 3,526 trees) or with more than 80 new indexable urls against the live sitemap. Tested against the live sitemap: clean today, and a simulated burst of 2,000 template pages fails on both counts. Existing guards it sits beside: no new thin places, 10 trees a day, noindex recomputed every deploy.

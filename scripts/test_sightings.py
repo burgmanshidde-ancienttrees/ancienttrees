@@ -55,6 +55,18 @@ class TestPhotoBlock(unittest.TestCase):
         self.assertEqual(b["status"], "approved")
         self.assertEqual((b["width"], b["height"]), (1200, 1600))
 
+    def test_an_extras_url_follows_its_own_file(self):
+        """An `add` verdict writes the file under a name carrying the sighting
+        id so it cannot overwrite the lead; the url has to point at THAT file.
+        It used to point at the lead's, apply_to_city's duplicate check dropped
+        the extra, and the orphaned file failed QA and was deleted: the Paris
+        Turkey Oak close-up a reader sent on 2026-10-01 was lost that way."""
+        lead = pub.photo_block(self.ENTRY, 1, 1, "", "2026-10-02")
+        extra = pub.photo_block(self.ENTRY, 1, 1, "", "2026-10-02",
+                                fname="ams_001-the-wertheimpark-wingnut-abc-123.jpg")
+        self.assertTrue(extra["url"].endswith("/photos/ams_001-the-wertheimpark-wingnut-abc-123.jpg"))
+        self.assertNotEqual(extra["url"], lead["url"])
+
     def test_no_name_is_printed_beside_a_readers_photograph(self):
         """Hidde, 2026-09-04: "laten we niet mensen hun naam noemen, laten we
         alleen hun fotos gebruiken als ze goed zijn, het kan mensen afschrikken

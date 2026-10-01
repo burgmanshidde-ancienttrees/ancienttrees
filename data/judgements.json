@@ -39,8 +39,8 @@
    "measure": null,
    "verdict": "lead",
    "reason": "LOOKED 2026-10-01: camphor foliage over a sandy shrine-style yard with several camphors standing together, a pushchair in frame. Own sighting, girth entered as 500 cm. No register entry within 100 m, no article within 300 m, no source, nothing in the frames separates this trunk from its neighbours. Kyushu shrine camphors of that girth are common, so this is the Nara pattern: kept as a lead until a source or a second reader names it.",
-   "hidde": null,
-   "agreed": null
+   "hidde": "itoshima ik was er het was mooi en de foto ook dus keur hem goed (publish)",
+   "agreed": false
   },
   {
    "id": "sight:0ac9eef6-08d3-4236-a17e-3ac9f36303d9",
@@ -1166,6 +1166,163 @@
    "reason": "Not a tree submission. A home office window scene: blinds, a clock, headphones on the sill, trees visible only distantly through the glass. Nothing to research.",
    "hidde": null,
    "agreed": null
+  },
+  {
+   "id": "sight:e36a052c-3a48-4eed-ba48-5ab48574fa05",
+   "seen": "2026-10-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Camphor of Oimatsu Tenjin Shrine",
+   "city": "Fukuoka",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "out/sightings/e36a052c-3a48-4eed-ba48-5ab48574fa05.jpg",
+   "reader_note": "",
+   "reader_girth_cm": 500,
+   "match": "distance",
+   "distance_m": 0,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Own photograph at the trunk, light OK, camphor foliage and the lantern-and-komainu setting match the entry written from it. Published as fuk_016 on Hidde's call, overruling the run's earlier lead verdict (lead:e36a052c-3a48-4eed-ba48-5ab48574fa05).",
+   "hidde": "itoshima ik was er het was mooi en de foto ook dus keur hem goed",
+   "agreed": true
+  },
+  {
+   "id": "sight:722e85a4-63fe-434a-b058-d41389ff7769",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/722e85a4-63fe-434a-b058-d41389ff7769.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "Hollow trunk at eye level with the city's plaque on the bark; same tree, same reader, same minutes as the lead. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:fc9e2246-a080-4bd3-b67f-cc75e407336c",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/fc9e2246-a080-4bd3-b67f-cc75e407336c.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "Looking up the fissured trunk into the yellowing crown. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:cccde1b1-93ce-45d6-8fc8-7341432edf30",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/cccde1b1-93ce-45d6-8fc8-7341432edf30.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "The split hollow trunk from below, glasshouse of the square behind. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:8bb90abb-6768-4f14-822b-a89d797061d6",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/8bb90abb-6768-4f14-822b-a89d797061d6.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "The plaque on the trunk: planted 1894, 18 m, 3.60 m girth in 2011, which is our entry word for word. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:ca7d8605-6a37-47ca-9b68-b7a6c1415446",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/ca7d8605-6a37-47ca-9b68-b7a6c1415446.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "The Paris Nature board at the foot of the tree with the city's own photographs of it. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:689af5c2-fb5a-4473-9f73-334895a5f1b2",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/689af5c2-fb5a-4473-9f73-334895a5f1b2.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "A conker on the ground beneath it, early October. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
   }
  ]
 }

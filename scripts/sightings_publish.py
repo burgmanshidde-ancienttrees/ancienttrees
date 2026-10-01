@@ -119,7 +119,7 @@ def credit_name(display_name):
     return name if name else FALLBACK_NAME
 
 
-def photo_block(entry, width, height, reason, today):
+def photo_block(entry, width, height, reason, today, fname=None):
     """The photo dict the tree gets. Pure, so it can be tested without a file."""
     # NO NAME ON IT (Hidde, 2026-09-04: "laten we niet mensen hun naam noemen,
     # laten we alleen hun fotos gebruiken als ze goed zijn, het kan mensen
@@ -132,7 +132,14 @@ def photo_block(entry, width, height, reason, today):
     #
     # The account id stays, because the takedown sweep needs it and it is not
     # a name.
-    fname = f"{entry['tree_id']}-{slugify(entry['tree_name'])}.jpg"
+    # THE URL FOLLOWS THE FILE (2026-10-02). An extra is written to disk under a
+    # name carrying the sighting id so it cannot overwrite the lead, and this
+    # block used to rebuild the url from the stem alone, so the extra's url was
+    # the lead's url, apply_to_city's duplicate check dropped it, and the file
+    # sat in site/public/photos with nothing pointing at it until QA failed
+    # the deploy and a run deleted it. That lost the Paris Turkey Oak close-up
+    # a reader sent on 2026-10-01, the first add verdict ever applied.
+    fname = fname or f"{entry['tree_id']}-{slugify(entry['tree_name'])}.jpg"
     return {
         "url": f"{BASE_URL}/photos/{fname}",
         "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
@@ -410,7 +417,7 @@ def main():
         except Exception as e:
             print(f"  {sid}: could not write the image ({e.__class__.__name__}: {str(e)[:80]})")
             continue
-        block = photo_block(entry, w, h, reason, today)
+        block = photo_block(entry, w, h, reason, today, fname=fname)
         old_url = apply_to_city(entry, block, as_extra=extra)
         dropped = drop_vendored(old_url) if old_url and old_url != block["url"] else 0
         done[sid] = {"outcome": "added" if extra else "published", "date": today,
