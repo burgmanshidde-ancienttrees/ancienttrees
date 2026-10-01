@@ -231,6 +231,67 @@ query($tag: String!, $since: Date!, $until: Date!) {
                 r["count"], d["date"][5:], d["requestPath"], d["countryName"], d["deviceType"],
                 d["userAgentOS"], d["refererHost"] or "(direct)"))
 
+    def channels_by_week():
+        # People's ARRIVALS per week by channel, Google left out, raw counts.
+        # Internal clicks are not arrivals; desktop with no referrer is bots.
+        tok = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
+        if not tok:
+            print("no CLOUDFLARE_ANALYTICS_TOKEN")
+            return
+        since = (today - datetime.timedelta(days=35)).isoformat()
+        query = {"query": """
+query($tag: String!, $since: Date!, $until: Date!) {
+  viewer { accounts(filter: {accountTag: $tag}) {
+    g: rumPageloadEventsAdaptiveGroups(limit: 5000,
+        filter: {AND: [{date_geq: $since}, {date_lt: $until},
+                       {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}) {
+      count dimensions { date refererHost }
+    }
+  } }
+}""", "variables": {"tag": ACCOUNT_TAG, "since": since, "until": today.isoformat()}}
+        g = api("https://api.cloudflare.com/client/v4/graphql", query, token=tok)
+        if g.get("errors"):
+            raise RuntimeError(json.dumps(g["errors"]))
+        cols = ["Google", "Direct on a phone", "Other search", "Mail and apps", "Other sites", "AI"]
+        def kind(h):
+            h = (h or "").lower()
+            if not h:
+                return "Direct on a phone"
+            if "ancienttrees" in h:
+                return None
+            if "google." in h or "googlequicksearchbox" in h:
+                return "Google"
+            if any(x in h for x in ("bing", "duckduckgo", "yahoo", "ecosia", "yandex",
+                                    "baidu", "naver", "qwant", "startpage", "brave")):
+                return "Other search"
+            if h.startswith("com.") or "mail" in h or "facebook" in h or "instagram" in h \
+                    or "t.co" == h or "reddit" in h or "linkedin" in h:
+                return "Mail and apps"
+            if "chatgpt" in h or "perplexity" in h or "claude" in h or "gemini" in h \
+                    or "copilot" in h:
+                return "AI"
+            return "Other sites"
+        weeks, hosts = {}, {}
+        for r in g["data"]["viewer"]["accounts"][0]["g"]:
+            d = datetime.date.fromisoformat(r["dimensions"]["date"])
+            k = kind(r["dimensions"]["refererHost"])
+            if not k:
+                continue
+            wk = (d - datetime.timedelta(days=d.weekday())).isoformat()[5:]
+            weeks.setdefault(wk, dict.fromkeys(cols, 0))[k] += r["count"]
+            if k in ("Other sites", "Mail and apps", "AI"):
+                hosts.setdefault(r["dimensions"]["refererHost"], {}).setdefault(wk, 0)
+                hosts[r["dimensions"]["refererHost"]][wk] += r["count"]
+        print("| Week from | " + " | ".join(cols) + " | Without Google |")
+        print("|---|" + "---:|" * (len(cols) + 1))
+        for wk in sorted(weeks):
+            w = weeks[wk]
+            print("| %s | %s | %d |" % (wk, " | ".join(str(w[c]) for c in cols),
+                                        sum(w[c] for c in cols if c != "Google")))
+        print("\nOther sites, mail, apps and AI by host:")
+        for h, ws in sorted(hosts.items(), key=lambda x: -sum(x[1].values())):
+            print("- %s: %s" % (h, ", ".join("%s %d" % (k, v) for k, v in sorted(ws.items()))))
+
     print("# SEO diagnosis, %s" % today.isoformat())
     section("1. Day by day, final against fresh data", days)
     section("2a. By country", lambda: split_by("country"))
@@ -244,6 +305,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
     section("6. Real visitors from search engines, per day (beacon)", beacon)
     section("7. The digest's beacon table, people only", who_is_left)
     section("8. People since Google left, row by row (raw)", people_since_google_left)
+    section("9. People arriving per week by channel (raw)", channels_by_week)
 
 
 if __name__ == "__main__":
