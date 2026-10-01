@@ -51,6 +51,12 @@ Live on main:
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: Hidde judges photographs himself
+
+- **Review page:** https://claude.ai/artifact/T4TtkFaSAmJXdTVJy1unHp (private to Hidde). Batch 1: 212 candidates for 129 trees that are out of the index for lacking a photo and an exact pin, in proven cities, ranked by geotag distance and filename match; no-licence and >1.5 km candidates dropped. Buttons: Goed / Andere boom / Slechte foto / Twijfel.
+- **Applying his verdicts (a session does this, not a run):** read the `verdicts` collection with ArtifactData (`list`, `out_dir`), map `kind` approve to approve, reject-wrong and reject-bad to reject, hold to hold, write `[{tree_id, page, verdict, reason}]` and run `python3 scripts/photo_verdicts.py <file>`, then preflight, commit, push. An approved tree leaves the noindex list on the next deploy by itself.
+- Night runs queue photo candidates rather than approving them, while Hidde judges.
+
 ## 2026-10-01 session: only trees with a photo or an exact pin in Google
 
 - **New trees need a photograph or a confirmed pin, everywhere** (preflight; US exemption gone). Live trees are baselined in data/photo-or-pin-baseline.json.
