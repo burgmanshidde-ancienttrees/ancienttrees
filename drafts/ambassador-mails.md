@@ -11,8 +11,11 @@ they add more. The tag is offered as a question, never applied.
 
 ---
 
-## 1. The Paris reader (par_031, par_033; no name known; send from the ancienttrees.app address)
+## 1. Paris
 
+<!-- the reader of par_031 and par_033; no name known; their address is an Apple relay, so send from the ancienttrees.app sender, never a personal one -->
+
+```
 Subject: Your Paris photographs
 
 Hi,
@@ -25,9 +28,13 @@ If you like, I can mark you as the Paris ambassador on the site, so people see t
 
 Thanks,
 Hidde
+```
 
-## 2. Leon (Friedewald, Bad Homburg, the Hammundeseiche and the Schöne Eiche)
+## 2. Friedewald and Bad Homburg
 
+<!-- Leon, the Hammundeseiche and the Schöne Eiche -->
+
+```
 Subject: Friedewald and Bad Homburg
 
 Hi Leon,
@@ -40,9 +47,13 @@ Would you want to be named as the ambassador for those two places on the site? S
 
 Thanks,
 Hidde
+```
 
-## 3. Hans Erik Lund (Copenhagen, the register extract and his photographs)
+## 3. Copenhagen
 
+<!-- Hans Erik Lund, the register extract and his photographs; address in drafts/OUTREACH.md -->
+
+```
 Subject: Copenhagen, seven more
 
 Hi Hans Erik,
@@ -55,3 +66,4 @@ Would you be happy to be named as Copenhagen's ambassador on the site? It would 
 
 Thanks,
 Hidde
+```
