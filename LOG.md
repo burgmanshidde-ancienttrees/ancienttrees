@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 night run: Seattle to 12 trees
+
+- **Rung:** US only (CLAUDE.md recovery mode). Nothing US was waiting for a writer and the shelf was under its floor, so the first dispatch was a verify pass on Seattle (below target, 9 unsourced leads). 7-day visits per visitors.py: 3,200 (mostly bots, see the session entry below).
+- **Shipped:** four trees, sea_009 to sea_012 (Hiawatha Playfield red oak, Cal Anderson pagoda tree, Summit Place plane, Wedgwood scarlet oak), all flagged with approximate pins and no photographs. Preflight 0 problems. The Green Lake Emperor Oak is blocked: cut down after a break. New leads: Volunteer Park copper beech, Green Lake elms and sequoias.
+- **Not done:** the Seattle intro and meta description still list the original eight trees. The other awaiting-writer trees are outside the US, which is paused. capitolhillseattle.com, historicseattle.org and artbeat.seattle.gov challenge curl.
+
 ## 2026-10-01 session: the visitor count was mostly bots; the digest now counts people
 
 - **What was wrong:** in the three days after Google went to zero, 649 of 735 beacon pageviews were desktop visits with no referrer and one page each, mostly Firefox and Edge, from Brazil, Singapore, India, Bangladesh and Pakistan, about one hit per page across the whole site. Those are headless crawlers that run our script. Singapore had been the "top country" since mid-September for the same reason, and the 09-26 spike of ~1,000 visits on /open was the same thing.

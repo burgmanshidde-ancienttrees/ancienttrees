@@ -75,6 +75,21 @@
       "name": "Seattle Heritage Tree Program full list (250+ trees)",
       "species": "various",
       "note": "Run jointly by the City and PlantAmnesty since 1996. Individual entries only visible as gold icons on the interactive Seattle Tree Inventory map (rectech.seattle.gov/trees or similar), which is a full inventory tool our semantic filter treats as bulk data, not a designation list to import wholesale. A future pass could browse the map for named/notable individual Heritage Trees (the nomination categories are Specimen, Historic, Landmark, Collection) to research one at a time, the way this pass found the Seward Park and Volunteer Park trees independently. Not a register import candidate, a browsing resource."
+    },
+    {
+      "name": "Volunteer Park copper beech near Seattle Asian Art Museum",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "note": "Per CHS/McGarry 2015 (fetched via Wayback): largest in Seattle, 92 ft tall in 2000 (Jacobson); behind the museum, south of the path. No coordinate, no age, no heritage designation found; one-source lead. Same park as sea_002."
+    },
+    {
+      "name": "Green Lake Elm Hill (American elms)",
+      "species": "American Elm (Ulmus americana)",
+      "note": "Four American elms plus one smoothleaf elm planted 1932 for Washington's bicentennial, atop Elm Hill at the NW corner of Green Lake (city tree walk map; Jacobson article). A small ensemble, about 93 years old; borderline, not pursued."
+    },
+    {
+      "name": "Green Lake giant sequoias, northeast corner",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "note": "Three massive sequoias beside the path per the city Green Lake tree walk. No measurements or planting date seen; the separate famous Green Lake sequoia at Woodlawn Ave N is blocked (removed)."
     }
   ],
   "blocked": [
@@ -82,6 +97,11 @@
       "name": "Green Lake Giant Sequoia",
       "species": "Giant Sequoia (Sequoiadendron giganteum)",
       "reason": "DEAD/REMOVED. 5834 Woodlawn Ave N, Seattle. Per treeactionseattle.org/campaigns/green-lakes-giant-sequoia, this tree was slated for removal to make way for a residential driveway despite a campaign and an alternative site plan to save it; the campaign page itself lists its status as 'Removed' as of 2025-12-17. Never ship. Recorded so no future pass rediscovers it and wastes time before finding the same removal notice."
+    },
+    {
+      "name": "Green Lake Emperor Oak",
+      "species": "Daimyo/Emperor Oak (Quercus dentata)",
+      "reason": "DEAD/REMOVED. Per Arthur Lee Jacobson's Plant of the Month, June 2024 (arthurleej.com/plant-of-month/p-o-m-June24.html): the Green Lake giant (93.75 ft tall, 103.5 ft wide, 15 ft 2 in girth) broke so severely that the entire tree was cut down. Still listed on the city's Green Lake tree walk map."
     }
   ]
 }

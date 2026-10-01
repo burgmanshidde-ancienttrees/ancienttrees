@@ -7,7 +7,7 @@
   "meta_description": "Seattle's oldest trees: two old-growth Douglas firs, a Capitol Hill sequoia, three Kubota Garden conifers, a state champion and an 1909 poplar.",
   "question_answer": "The oldest tree in Seattle is the Big Tree in Seward Park, a Douglas fir of roughly 400 to 500 years standing in the old-growth remnant on the peninsula, with a bald eagle nest near its top. Nobody publishes exactly where it is in the park's 120 acres, so finding it is part of the walk, and the much younger fir the park's own leaflet starts you at is not it. A second old-growth survivor, Sylvia, stands in Kirkland's O.O. Denny Park at roughly 500 to 600 years, close enough in age that either tree could be the true elder; neither has been cored.",
   "question_meta": "The Big Tree in Seward Park, a Douglas fir of 400 to 500 years in Seattle's last old-growth remnant, is the city's oldest known tree.",
-  "question_context": "Seattle has no register of individual trees, which shapes everything on this page. The city runs a Heritage Tree programme with the group PlantAmnesty and it names trees without publishing a dataset, the parks department's own file is a full street inventory rather than a selection, and Washington's state champion list records size rather than age. So every pin here is approximate, meaning we know the park and not the trunk, and two of the eight trees have no recorded age at all. That includes the giant sequoia on Capitol Hill, where the city's own tree-walk leaflet quotes a height and a diameter that belong to what the species can reach rather than to this tree, which is the kind of number that gets repeated until somebody checks it. We would rather say we do not know. Sylvia, the old-growth survivor in Kirkland, comes closest to challenging the Seward Park fir for the oldest-tree title, and neither has been cored to settle it. If you have a tape measure and ten minutes in Volunteer Park, you can settle the sequoia, and we will put your figure on the page.",
+  "question_context": "Seattle has no register of individual trees, which shapes everything on this page. The city runs a Heritage Tree programme with the group PlantAmnesty and it names trees without publishing a dataset, the parks department's own file is a full street inventory rather than a selection, and Washington's state champion list records size rather than age. So every pin here is approximate, meaning we know the park and not the trunk, and three of the twelve trees have no recorded age at all. That includes the giant sequoia on Capitol Hill, where the city's own tree-walk leaflet quotes a height and a diameter that belong to what the species can reach rather than to this tree, which is the kind of number that gets repeated until somebody checks it. We would rather say we do not know. Sylvia, the old-growth survivor in Kirkland, comes closest to challenging the Seward Park fir for the oldest-tree title, and neither has been cored to settle it. If you have a tape measure and ten minutes in Volunteer Park, you can settle the sequoia, and we will put your figure on the page.",
   "faq": [
     {
       "q": "What is the oldest tree in Seattle?",
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Seattle's old trees free to visit?",
-      "a": "Yes. Every tree on this page stands in a public park, arboretum or garden, and every one is free to see. The Washington Park Arboretum charges nothing to walk through either."
+      "a": "Yes. Every tree on this page stands in a public park, arboretum, garden or on a public street corner, and every one is free to see. The Washington Park Arboretum charges nothing to walk through either."
     },
     {
       "q": "What trees stand in Kubota Garden?",
@@ -285,6 +285,151 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "sea_009",
+      "name": "The Hiawatha Playfield Red Oak",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "planted 1911",
+      "age_min": 110,
+      "age_max": 120,
+      "girth_cm": 478,
+      "location": {
+        "address": "Hiawatha Playfield, 2700 California Ave SW, West Seattle",
+        "latitude": 47.5782,
+        "longitude": -122.385,
+        "neighbourhood": "Admiral, West Seattle"
+      },
+      "story": "This oak is 55 feet wider than it is tall. When the tree expert Arthur Lee Jacobson measured it for a 2023 newspaper column, he found a crown 133 feet across on a tree 78 feet high, over a trunk 15 feet 8 inches round.\n\nIt is a northern red oak, a species from the other side of the continent, and it has spent its life at the edge of a playing field in West Seattle. Hiawatha Playfield opened in 1911, and the whole ground is now a city landmark. One local tree blog says this oak went in that year with the trees around it, when the Olmsted Brothers laid out what it calls Seattle's first playfield. That blog is the only source tying the tree to the opening, so read 1911 as likely rather than proven, which would make the oak a little over a century old.\n\nThe city lists it as a Heritage Tree, the programme Seattle runs with the group PlantAmnesty. Jacobson's verdict in 2023 was that it is not even halfway to the 250 years the species can live. Most trees on a list like this are admired for having survived. This one is still growing into itself, mostly sideways.\n\nThe pin marks the playfield rather than the trunk. Look toward the school side, and look for the crown first: it is the measurement you can see from a distance.",
+      "how_to_recognise": "You can recognise it by the crown, about 133 feet across on a tree only 78 feet tall, over a trunk 15 feet 8 inches round. It stands in Hiawatha Playfield, on the side toward West Seattle High School.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when that 133-foot crown turns red"
+      },
+      "verified_sources": [
+        "https://pauldorpat.com/2023/06/01/seattle-now-then-hiawatha-playfield-1911/",
+        "http://ecoyards.com/seattles-heritage-trees/",
+        "https://commons.wikimedia.org/wiki/File:Seattle_-_Hiawatha_Playfield_-_Northern_Red_Oak.jpg"
+      ],
+      "access": "Free; Hiawatha Playfield is a public Seattle Parks playfield",
+      "transport": "Not verified; city bus service on California Ave SW, exact stop and walk time not checked",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sea_010",
+      "name": "The Chinese Scholar Tree of Cal Anderson Park",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 130,
+      "location": {
+        "address": "Cal Anderson Park, northwest corner near Capitol Hill Station entrance, Nagle Pl, Seattle",
+        "latitude": 47.619,
+        "longitude": -122.3199,
+        "neighbourhood": "Capitol Hill"
+      },
+      "story": "When the Capitol Hill light rail station was being dug, this tree stood just inside the construction wall, and a local reporter wrote in 2015 that it was probably only still standing because it was a Heritage Tree.\n\nThat listing, run by the city with the group PlantAmnesty, is the likeliest reason a century-old tree came through the dig. It is a Chinese scholar tree, also known as the Japanese pagoda tree, and the Capitol Hill Historical Society describes it as more than a century old and one of the trees still left from the Olmsted Brothers' design for the park. Nobody has published a planting year, so a century and a bit is as close as the sources go.\n\nThe same 2015 article called it the largest of its kind in the Pacific Northwest. No measurement has been published to go with that, so read it as a proud local claim rather than a ranking anybody has checked. If you have a tape measure, the trunk is the one figure this page is missing, and we would like it.\n\nSo the tree has seen the park as the Olmsteds planned it and the neighbourhood as it is now, with a train station built right beside it. The pin marks the corner rather than the trunk, but the corner does most of the work: come up out of the station entrance at the northwest of the park and it is right there.",
+      "how_to_recognise": "You can recognise it by where it stands: the very northwest corner of Cal Anderson Park, beside the Capitol Hill light rail station entrance, at the edge of the pavement.",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "flowers",
+        "label": "August, when it flowers cream while almost nothing else in the city does"
+      },
+      "verified_sources": [
+        "https://web.archive.org/web/2018/https://www.capitolhillseattle.com/2017/12/capitol-hill-historical-society-landmarks-at-cal-anderson-park/",
+        "https://web.archive.org/web/2020/https://www.capitolhillseattle.com/2015/01/pikespines-a-comforting-search-for-capitol-hills-largest-and-likely-oldest-trees/",
+        "https://www.seattle.gov/parks/allparks/cal-anderson-park"
+      ],
+      "access": "Free; public city park, open daylight hours; tree stands at the park edge beside the sidewalk and station entrance",
+      "transport": "Capitol Hill Link light rail station is at the tree's corner of the park, about a 1 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sea_011",
+      "name": "The London Plane of Summit Place Triangle",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "location": {
+        "address": "Triangle of Belmont Ave E, Bellevue Pl E and Summit Ave E (nearest address 906 Summit Ave E), Seattle",
+        "latitude": 47.62703,
+        "longitude": -122.32526,
+        "neighbourhood": "Capitol Hill"
+      },
+      "story": "This is a park where the tree is most of the park. Summit Place Triangle is the scrap of ground left where Belmont Avenue East, Bellevue Place East and Summit Avenue East meet, and a London plane fills it. In 2015 a Capitol Hill reporter described the effect rather than the trunk: it shades the entire space in summer, spreading 100 feet from side to side.\n\nThe city takes it seriously. It is an official Seattle Heritage Tree, one of the trees named by the programme the city runs with the group PlantAmnesty, and it is the closing stop on the city's own North Capitol Hill tree walk, which finishes at this triangle.\n\nWhat nobody has written down is how old it is. There is no planting date, no girth and no height on record. It would be easy to borrow a date from the Olmsted plantings in Volunteer Park, a short walk away, and it would be wrong: that is a different story about different trees, and no source connects this one to it. A blank is more honest than a borrowed number.\n\nSo the page asks instead. If you live on Capitol Hill and know when this tree went in, or you pass with a tape measure, tell us and the figure goes here. It stands on public ground, open at all hours, about ten to twelve minutes' walk north of the Capitol Hill light rail station.",
+      "how_to_recognise": "You can recognise it by the crown, about 100 feet across, which shades the whole triangle. It stands where Belmont Ave E, Bellevue Pl E and Summit Ave E meet, near 906 Summit Ave E.",
+      "verified_sources": [
+        "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/CH_NorthCapitol%20HillTreeWalk.pdf",
+        "https://web.archive.org/web/2020/https://www.capitolhillseattle.com/2015/01/pikespines-a-comforting-search-for-capitol-hills-largest-and-likely-oldest-trees/"
+      ],
+      "access": "Free; the tree stands in a small public street triangle (Summit Place Triangle), open at all times, on the pavement edge",
+      "transport": "Roughly 10 to 12 minutes on foot from Capitol Hill Link station (about 1 km north-northwest along Broadway/E Roy St, walk time not measured precisely)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sea_012",
+      "name": "The Wedgwood Scarlet Oak",
+      "species": "Scarlet Oak (Quercus coccinea)",
+      "age_estimate": "planted in the 1920s, probably",
+      "age_min": 90,
+      "age_max": 110,
+      "location": {
+        "address": "Northeast corner of NE 77th St and 38th Ave NE, Seattle",
+        "latitude": 47.685,
+        "longitude": -122.2872,
+        "neighbourhood": "Wedgwood"
+      },
+      "story": "This oak is held together with hardware rated to 54,000 pounds. A windstorm in March 2016 cracked its trunk, and instead of taking it down, Seattle's street-tree crews cabled and braced it, promised to inspect it every year, and estimated the work could buy ten years or more for what they called an otherwise healthy and vigorous tree.\n\nThat effort tells you its standing. It is a scarlet oak growing in the street right-of-way at a Wedgwood corner, which puts it in the city's own care, and it is one of the few such trees named a Seattle Heritage Tree and classed Best in City. It received its Heritage plaque at a ceremony in 2008. Arthur Lee Jacobson's Trees of Seattle counts it among the most outstanding of its kind in the city, and the local history blog that has followed it for years gives its height as 95 feet.\n\nWho planted it is a neighbourhood argument rather than a record. The same blog thinks it likely went in during the 1920s, probably by the family who ran a plant nursery here, while an earlier post floated another family entirely. So call it roughly a century, give or take.\n\nIt has seen the corner change around it, most recently a new house going up beside it in 2020. Admire it from the pavement; the lots on either side are private. The pin marks the intersection, and the tree is on its northeast corner.",
+      "how_to_recognise": "You can recognise it by the cables and bracing in the crown, fitted after a 2016 storm cracked the trunk, on a tree about 95 feet tall. It stands on the northeast corner of NE 77th St and 38th Ave NE.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when a scarlet oak earns its name"
+      },
+      "verified_sources": [
+        "https://sdotblog.seattle.gov/2016/06/20/preserving-a-best-in-city-scarlet-oak/",
+        "https://wedgwoodinseattlehistory.com/2016/06/25/preserving-wedgwoods-scarlet-oak-heritage-tree/",
+        "https://wedgwoodinseattlehistory.com/2023/11/01/enjoying-the-trees-of-wedgwood/",
+        "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/NE_WedgwoodTreeWalk.pdf"
+      ],
+      "access": "Free; stands in the public street right-of-way at the corner, viewable from the pavement. Do not enter adjoining private lots.",
+      "transport": "Neighbourhood street in Wedgwood; bus service on 35th Ave NE about 3 blocks west, stop and walk time not verified",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ]
 }
