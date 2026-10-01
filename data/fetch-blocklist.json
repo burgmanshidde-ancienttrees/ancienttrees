@@ -1,563 +1,563 @@
 {
- "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
- "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
- "hosts": {
-  "piece-jointe-carto.developpement-durable.gouv.fr": {
-   "behaviour": "hangs; curl -m 20 times out (exit 28, Connection timed out) on a site-classe fact-sheet PDF (REG043B/DOCS/SITES/SC_71_005_fiche.pdf) during the _famous-france verify pass.",
-   "seen": "2026-09-05",
-   "cost": "one fetch attempt (20s)",
-   "workaround": "French Wikipedia articles that cite these DREAL fact sheets usually quote the key figures (age, girth, height, classification date) directly, so the citing Wikipedia article can substitute when it exists."
-  },
-  "ffs.fdacs.gov": {
-   "behaviour": "connect ECONNREFUSED via WebFetch; curl -m 20 times out (exit 28). Confirmed on the Florida Champion Tree Register's index and detail pages during a Jacksonville register scout.",
-   "seen": "2026-09-03",
-   "cost": "2 fetch attempts",
-   "workaround": "Wayback Machine has recent snapshots (index and per-tree Detail/<id> pages) that load fine via curl. Check first with curl 'https://archive.org/wayback/available?url=<page>'."
-  },
-  "hawaii.edu": {
-   "behaviour": "the whole domain and its subdomains (www.hawaii.edu, botany.hawaii.edu, manoa.hawaii.edu) are unreachable from this environment: mostly connect ECONNREFUSED via WebFetch, and curl -m 20 timed out (exit 28) on manoa.hawaii.edu and serv.biokic.asu.edu (a related UH-hosted checklist). Seen across at least 5 separate attempts on 4 different pages during an Oahu verify pass.",
-   "seen": "2026-09-03",
-   "cost": "several fetch attempts across an Oahu verify pass, all wasted; forced falling back to Wayback Machine snapshots for anything that had to be confirmed on a hawaii.edu page",
-   "workaround": "the Wayback Machine (web.archive.org) has recent snapshots of most hawaii.edu pages and loads fine via curl (though WebFetch itself refuses web.archive.org URLs directly, so fetch archive.org snapshots with curl and parse the HTML, not with WebFetch). Check availability first with curl 'https://archive.org/wayback/available?url=<page>'."
-  },
-  "hidakokubunji.jp": {
-   "behaviour": "does not respond at all (curl -m 20, HTTP 000) on both http and https, to /html/ginkgo.html and the bare domain",
-   "seen": "2026-09-03",
-   "cost": "cheap once known; one fetch during the Takayama (Hida Kokubunji great ginkgo) verify pass",
-   "workaround": "Wayback Machine has a recent snapshot (2026-01-20) that loads fine via curl: http://web.archive.org/web/20260120082107/https://hidakokubunji.jp/html/ginkgo.html"
-  },
-  "pref.gifu.lg.jp": {
-   "behaviour": "does not respond at all (curl -m 20, HTTP 000)",
-   "seen": "2026-09-03",
-   "cost": "one fetch during the Takayama verify pass; left a height figure (37m) from a WebSearch AI summary unverifiable, so it was not used per the search-summary-is-a-lead-never-a-source rule",
-   "workaround": "unknown this pass; www.kankou-gifu.jp (the prefecture's own tourism site, a different host) covers the same tree and loaded fine"
-  },
-  "ofunato.jp": {
-   "behaviour": "does not respond at all (curl -m 20, HTTP 000)",
-   "seen": "2026-09-03",
-   "cost": "one fetch during the Ofunato (Dokonjo Poplar) verify pass; not chased further since ja.wikipedia and the MLIT disaster-memorial registry already cleared the two-source bar",
-   "workaround": "unknown this pass"
-  },
-  "www.tripadvisor.jp": {
-   "behaviour": "403 to curl with a browser user agent",
-   "seen": "2026-09-03",
-   "cost": "cheap, fails fast; one fetch during the Higashine verify pass",
-   "workaround": "jalan.net review pages carried the same kind of first-person visitor evidence and loaded fine"
-  },
-  "texasescapes.com": {
-   "behaviour": "hangs; WebFetch ran past 60s and returned nothing",
-   "seen": "2026-09-01",
-   "cost": "one fetch of a verify pass, during Sam Houston Oak research",
-   "workaround": "unknown; the site's own text was reachable as a WebSearch snippet, which is a lead and not a source, so a second source had to be found elsewhere"
-  },
-  "assisinews.it": {
-   "behaviour": "403 to plain curl and to curl with a browser user agent alike",
-   "seen": "2026-08-29",
-   "cost": "cheap, fails in under a second",
-   "workaround": "unknown; umbria24.it covered the same story (Assisi's new Via di Valecchie oak, 10th MASAF update) and was fetchable normally, used as the second source instead"
-  },
-  "gemeentebestuur.haarlem.nl": {
-   "behaviour": "does not hang, but serves an Anubis bot-challenge HTML page (200 OK, ~6.6KB) instead of the requested PDF to plain curl, even with a browser user agent",
-   "seen": "2026-08-22",
-   "cost": "cheap, fails in under a second, but wastes a fetch if not expected",
-   "workaround": "unknown; a real browser session may pass the challenge. www.bomenstichting.nl and www.ivn.nl serve their own monumental-trees PDFs for Haarlem and both downloaded fine via plain curl, so prefer those over the gemeente's own hosted copy"
-  },
-  "rijksmonumenten.nl": {
-   "behaviour": "hangs / socket hang up on individual monument pages (both via WebFetch and via curl -m 20 with a browser user agent, curl exit 92)",
-   "seen": "2026-08-22",
-   "cost": "burned two attempts during a Nijmegen deepen verify pass, zero content returned either time",
-   "workaround": "unknown; WebSearch's own extracted snippets exist for this content but per the search-summary-is-a-lead-never-a-source rule they could not be used to verify a specific tree claim without seeing the page itself"
-  },
-  "ateneodecordoba.com": {
-   "behaviour": "hangs, no response at all (curl -m 20 exit 28, both http and https)",
-   "seen": "2026-08-16",
-   "cost": "burned two 20s timeouts during a Cordoba deepen verify pass",
-   "workaround": "unknown; used WebSearch snippet-level results instead of a direct fetch"
-  },
-  "www.lapresse.ca": {
-   "behaviour": "405 Method Not Allowed to plain curl (GET), fast fail, not a hang",
-   "seen": "2026-08-15",
-   "cost": "cheap, failed in under a second",
-   "workaround": "Wayback Machine snapshot worked fine via curl (no browser UA needed): http://web.archive.org/web/<timestamp>/<url>, use the archive.org/wayback/available API to find the closest snapshot first"
-  },
-  "www.alsace.eu": {
-   "host": "www.alsace.eu",
-   "noted": "2026-08-13",
-   "symptom": "hangs, no response at all (curl -m 20 exit 28, ECONNREFUSED/timeout on both the specific page and the bare domain root); burned the full 20s timeout twice during a Bordeaux/Strasbourg verify pass",
-   "workaround": "unknown; the Collectivite europeenne d'Alsace's own remarkable-trees register (arbre-368, Platane du Parc du Contades) was cited via WebSearch's own extracted snippet instead of a direct fetch"
-  },
-  "cultural.valencia.es": {
-   "behaviour": "hangs, no response at all",
-   "seen": "2026-08-06",
-   "cost": "two Valencia passes died on it, nothing written either time",
-   "workaround": "unknown; try valencia.es (302, responds fine) or the Generalitat catalogue instead"
-  },
-  "www.sevilla.org": {
-   "behaviour": "hangs, ECONNREFUSED at TCP level",
-   "seen": "2026-08-05",
-   "cost": "a Seville pass lost time before finding the mirror",
-   "workaround": "www.femas.es serves the identical municipal PDF"
-  },
-  "diario.madrid.es": {
-   "behaviour": "Akamai 403 to every user agent",
-   "seen": "2026-08-05",
-   "cost": "cheap, it fails immediately",
-   "workaround": "none found; open in a browser session or skip"
-  },
-  "barcelona.cat": {
-   "behaviour": "418 to plain fetchers",
-   "seen": "2026-08-05",
-   "cost": "cheap",
-   "workaround": "the register is already imported at data/registers/barcelona-ail.json"
-  },
-  "lyon.fr": {
-   "behaviour": "403 to plain fetching",
-   "seen": "2026-08-05",
-   "cost": "cheap",
-   "workaround": "none found"
-  },
-  "datosabiertos.jcyl.es": {
-   "behaviour": "TLS certificate verification fails",
-   "seen": "2026-08-02",
-   "cost": "cheap",
-   "workaround": "verify via datos.gob.es metadata instead"
-  },
-  "publico.pt": {
-   "behaviour": "blocks plain fetchers",
-   "seen": "2026-08-05",
-   "cost": "cheap",
-   "workaround": "none needed, it is a newspaper and a lead rather than a source"
-  },
-  "sites.heritage.brussels": {
-   "behaviour": "403 to WebFetch, 200 to curl with a browser user agent",
-   "seen": "2026-08-06",
-   "cost": "cheap once known",
-   "workaround": "curl -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'"
-  },
-  "comune.milano.it": {
-   "host": "comune.milano.it",
-   "noted": "2026-08-08",
-   "symptom": "403 to curl and WebFetch (was reachable 2026-08-05)",
-   "workaround": "Regione Lombardia press releases and Il Giorno surveys served as second sources instead"
-  },
-  "avrupaanitagaclar.com": {
-   "host": "avrupaanitagaclar.com",
-   "noted": "2026-08-08",
-   "symptom": "COMPROMISED: serves unrelated gambling content; was cited as detail-page host for Turkish register records",
-   "workaround": "never fetch or cite; use the national registry itself"
-  },
-  "www.loc.gov": {
-   "host": "www.loc.gov",
-   "noted": "2026-08-08",
-   "symptom": "Cloudflare 'Just a moment...' challenge to plain curl and to WebFetch on every /pictures/item/ and /item/ path tried (dc1027 through dc1051 range); 403 every time, no browser UA tested",
-   "workaround": "tile.loc.gov (the raw PDF/image storage host, e.g. https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dcNNNN/data/dcNNNNdata.pdf) is NOT behind the same Cloudflare gate and served most HALS survey PDFs fine this pass; note those PDFs are scanned images (JBIG2) with no text layer, so they confirm a record's existence and title but cannot be read for content without OCR"
-  },
-  "nycgovparks.org": {
-   "host": "nycgovparks.org",
-   "noted": "2026-08-08",
-   "symptom": "HTTP 202 with EMPTY body to curl and WebFetch: a soft bot-block that wastes time instead of erroring",
-   "workaround": "Wayback Machine direct web.archive.org/web/<date>/ URLs (the availability API itself rate-limits)"
-  },
-  "hmdb.org": {
-   "host": "hmdb.org",
-   "noted": "2026-08-09",
-   "symptom": "Cloudflare 'Just a moment' challenge to curl and WebFetch",
-   "workaround": "Wayback snapshots, as the DC pass used"
-  },
-  "monumentaltrees.com": {
-   "host": "monumentaltrees.com",
-   "noted": "2026-08-09",
-   "symptom": "403 to curl (was fetchable earlier); a browser session gets a Cloudflare 'Just a moment' interstitial first but clears it on its own within about 5 seconds",
-   "workaround": "browser session for fact verification only, wait a few seconds after navigating; hard rule 1 forbids content reuse anyway"
-  },
-  "konusanagac.com": {
-   "host": "konusanagac.com",
-   "noted": "2026-08-09",
-   "symptom": "DNS resolution fails outright (ENOTFOUND / could not resolve host) to both curl and WebFetch; not a block, genuinely unreachable from this sandbox",
-   "workaround": "WebSearch's own page-reading still surfaces usable extracted facts from individual pages (used successfully this pass for Istanbul's Gulhane Park trees, konusanagac.com/ozel-agac/*); a session with different network access may be able to fetch it directly"
-  },
-  "www.aoc.gov": {
-   "host": "www.aoc.gov",
-   "noted": "2026-08-09",
-   "symptom": "403 to curl (plain and browser UA) and to WebFetch on every /explore-capitol-campus/features/ and /blog/ path tried; not a Cloudflare interstitial, a flat 403",
-   "workaround": "Wayback Machine snapshots (web.archive.org/web/<date>/https://www.aoc.gov/...) load fine via curl with a browser UA and are recent (May-July 2026 snapshots available); WebFetch itself refuses web.archive.org URLs outright ('unable to fetch'), so use curl + local HTML/text parsing for archive.org fetches, not WebFetch"
-  },
-  "olmsted.org": {
-   "host": "olmsted.org",
-   "noted": "2026-08-09",
-   "symptom": "Cloudflare 'Just a moment' / bot-check redirect loop to curl (with or without browser UA)",
-   "workaround": "Wayback Machine snapshot worked fine via curl; note its content on the Capitol trees page is explicitly 'republished with permission from the Architect of the Capitol', i.e. NOT an independent source from aoc.gov even though the domain differs"
-  },
-  "loc.getarchive.net": {
-   "host": "loc.getarchive.net",
-   "noted": "2026-08-09",
-   "symptom": "403 to curl even with a browser user agent",
-   "workaround": "none found this pass; tile.loc.gov raw PDF storage remains the working route to HALS record content (see www.loc.gov entry)"
-  },
-  "www.portlandmaps.com": {
-   "host": "www.portlandmaps.com",
-   "noted": "2026-08-13",
-   "symptom": "hangs, no response at all, on the /od/rest/services/... ArcGIS REST path specifically; burned the full 20s timeout twice",
-   "workaround": "the opendata.arcgis.com/datasets/<item>_<layer>.geojson redirect route (lands on hub.arcgis.com/api/download/v1/items/...) reaches the same Heritage Trees data fine"
-  },
-  "www.up.pt": {
-   "host": "www.up.pt",
-   "noted": "2026-08-09",
-   "symptom": "hangs: no response at all, burns the full 20s timeout on /jardimbotanico/ (other up.pt subdomains are fine)",
-   "workaround": "mhnc.up.pt serves the Jardim Botanico do Porto pages and its /pt/contactos/ page carries the addresses (jardimbotanico@mhnc.up.pt); jardimbotanico.up.pt itself fails fast with a TLS/DNS error, which is cheap rather than harmful"
-  },
-  "www.cagliaritoday.it": {
-   "host": "www.cagliaritoday.it",
-   "date": "2026-08-14",
-   "problem": "403 to WebFetch on every URL tried (not a hang)",
-   "workaround": "curl -m 20 with a browser user agent returns clean 200s, same pattern as monumentaltrees.com and sites.heritage.brussels"
-  },
-  "bigtrees.forestry.ubc.ca": {
-   "host": "bigtrees.forestry.ubc.ca",
-   "date": "2026-08-15",
-   "problem": "UBC's IT bot-defense returns a captcha challenge page (200 status, page body is the captcha itself) to plain curl on every path tried, including /terms-of-use/ and /bc-bigtree-registry/champion/. Not a hang, and captchas are never to be solved by an agent.",
-   "workaround": "none found this pass; the BC Big Tree Registry licence and downloadable Excel remain unverified. A session with a real browser (this project's Browser pane, not curl/WebFetch) should be able to clear it; do not attempt to bypass the captcha programmatically."
-  },
-  "vilnius.lt": {
-   "behaviour": "403 Forbidden to both curl and WebFetch on its protected-object register pages. Fast fail, not a hang, so it costs a second rather than a window.",
-   "seen": "2026-08-17",
-   "cost": "one fetch during a Vilnius verify pass; cheap, recorded so the next pass does not try it first",
-   "workaround": "Lithuanian Wikipedia reproduces the municipal protected-object list with register id, address and measurements. Fetch its WIKITEXT and join on the id: that confirmed or killed 8 of 10 candidates in one pass and surfaced two delisted-dead trees the register itself does not flag. Same technique as pl.wikipedia for Krakow and Warsaw."
-  },
-  "candelaria.es": {
-   "behaviour": "TLS failure: self-signed certificate. Fast fail.",
-   "seen": "2026-08-17",
-   "cost": "one fetch during the Tenerife island pass",
-   "workaround": "none found; the Cabildo de Tenerife monumental-tree portal covers the island and OSM natural=tree nodes give the pin"
-  },
-  "archive.nelsonmandela.org": {
-   "behaviour": "Cloudflare 'Just a moment...' JS challenge to both curl (plain and browser UA) and WebFetch; fast response, not a hang, but no usable content",
-   "seen": "2026-08-17",
-   "cost": "cheap, failed in a couple seconds each time, during a Singapore deepen verify pass",
-   "workaround": "none found this pass; used WebSearch's own extracted snippets and an independent Flickr photo caption instead for the Mandela/Singapore Botanic Gardens visit fact"
-  },
-  "allaboutlimassol.com": {
-   "behaviour": "403 to WebFetch consistently, but curl with a browser user agent returns clean 200s.",
-   "seen": "2026-08-17",
-   "cost": "none, caught on the Cyprus pass",
-   "workaround": "curl -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)' -m 20"
-  },
-  "wikiloc.com": {
-   "behaviour": "403 to WebFetch and to curl with a browser user agent, both attempts.",
-   "seen": "2026-08-17",
-   "cost": "two attempts on the Cyprus pass",
-   "workaround": "its coordinates appear in the search snippet; treat those as approximate and say so"
-  },
-  "frankfurt.de": {
-   "behaviour": "Cloudflare 'Just a moment...' 403 to both curl (browser user agent included) and WebFetch. Fast fail, not a hang, so it costs a second rather than a window",
-   "seen": "2026-08-19",
-   "cost": "the Frankfurt verify pass could not read the city register directly",
-   "workaround": "de.wikipedia's 'Liste der Naturdenkmale in Frankfurt am Main', fetched as WIKITEXT and joined to the city's own gazette (Amtsblatt Nr. 44/2025), carries the same register content; that join delivered the whole pass. Wayback snapshots of frankfurt.de load, but archive.org's availability API starts 429-ing after roughly 6 to 8 calls"
-  },
-  "www.nativetreesociety.org": {
-   "behaviour": "connection refused on both 80 and 443, fails fast at about 170 ms rather than hanging",
-   "seen": "2026-08-20",
-   "cost": "nothing, because it fails fast; recorded so nobody assumes the site is merely slow",
-   "workaround": "it held precise laser measurements for New Orleans City Park's oaks. Those figures survive in search snippets and on neworleanscitypark.org, which is what this page used."
-  },
-  "overpass-api.de": {
-   "behaviour": "returns HTTP 406 Not Acceptable to every query attempted (a trivial two-node bbox query, and real queries), both via curl -X POST with a Content-Type header and via GET with --data-urlencode. Confirmed the API server itself is reachable (Apache serves a proper 406 error page) but something about this environment's requests is rejected before Overpass QL is even evaluated. Its lz4.overpass-api.de mirror does the same 406, and the alternative overpass.kumi.systems mirror instead times out (curl -m 20, exit 28): confirmed 2026-09-25 on a Coimbra access-check pass trying the Ypres/Leuven technique (checking OSM access= tags on three rural Portuguese estates). All three routes are dead from this environment, not just the primary host.",
-   "seen": "2026-09-25",
-   "cost": "4 attempts during the famous-poland batch5 verify pass, plus 3 more (one per mirror) during a Coimbra verify pass trying to settle access on three ICNF register trees; every one wasted",
-   "workaround": "Nominatim (nominatim.openstreetmap.org/search) works fine for street/address-level geocoding and was used instead, though it cannot answer natural=tree node queries or access= tags the way Overpass can. No working Overpass mirror is known from this environment as of 2026-09-25; an access question that needs OSM tags directly has to be settled some other way (a local source naming the field as open, or leave the tree as a lead)."
-  },
-  "reliwiki.nl": {
-   "behaviour": "hangs past the TCP/TLS connect, no response at all (curl -m 20 -A browser-UA, exit 28 both times)",
-   "seen": "2026-08-22",
-   "cost": "two attempts during a Nijmegen deepen verify pass (candidate church page reliwiki.nl/index.php/Nijmegen,_Dennenstraat_125_-_Antonius_Abt), zero content returned",
-   "workaround": "unknown this pass; the Rijksmonument description at kennis.cultureelerfgoed.nl and the parish's own history page at mariakapelvinden.nl both loaded fine and covered the same church"
-  },
-  "services.nijmegen.nl": {
-   "behaviour": "TLS handshake completes, then hangs with no HTTP response (curl -m 20, exit 28 on a plain GetFeature request and exit 2 on a count-limited retry, both burning the full 20s)",
-   "seen": "2026-08-22",
-   "cost": "two attempts trying to reach the municipality's own monumental-tree WFS layer (typeName extern_kaartviewer_GRN_BOMEN_MON) during a Nijmegen deepen verify pass, which would have been a genuinely independent second source distinct from the national LRMB register",
-   "workaround": "RESOLVED 2026-08-26: the extern_kaartviewer_GRN_BOMEN_MON layer still hangs the same way, but a working layer on the same host serves the data: extern_BOR_Groen/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=extern_BOR_Groen:GRN_BOMEN&outputFormat=csv (found via opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5, which is reachable directly). Responds in under half a second, no hang. BUT it is the municipal STREET/PARK tree management inventory (60k+ trees under gemeente management), not a curated monumental list: its own IND_MONUMENTAAL=Ja flag hits 7350 records, clearly a structural/avenue classification rather than individual designation, so treat it as bulk inventory (CLAUDE.md: never a supply source on its own) and use it only as a per-coordinate cross-check. It also will not corroborate a tree on institutional/private grounds (a church, cemetery, private estate): those are outside gemeente management and simply absent from this dataset, confirmed by checking three Nijmegen leads on church/cemetery land (Begraafplaats Daalseweg, two Hees parish churches) which returned no match in a tight bbox around their coordinates."
-  },
-  "www.dubaipulse.gov.ae": {
-   "behaviour": "hangs, no response at all (curl -m 15, exit 28) on a dataset search path",
-   "seen": "2026-08-23",
-   "cost": "one 15s timeout during a Dubai register scouting attempt, no content returned",
-   "workaround": "unknown this pass; not retried within the same window"
-  },
-  "brisbanebotanictreasures.info": {
-   "behaviour": "hangs, no response at all (curl -m 15, exit 28, connection timed out) even to the bare domain root, not just specific pages; the same domain was fetchable enough to serve as a bne_010 source in an earlier pass",
-   "seen": "2026-08-23",
-   "cost": "one 15s timeout during a Brisbane deepen verify pass, plus a live-fetch check on the bare root",
-   "workaround": "Wayback Machine snapshots load fine via curl with a browser user agent (e.g. web.archive.org/web/20250426212328/https://brisbanebotanictreasures.info/exploring-brisbane-city-botanic-gardens/brisbane-city-botanic-gardens-description/); use the archive.org/wayback/available API to find the closest snapshot per page first"
-  },
-  "trusttrees.org.au": {
-   "behaviour": "the /search endpoint (e.g. /search?state=QLD&region=Brisbane) hangs, no response at all (curl -m 20, exit 28, both plain and browser UA); individual /tree/QLD/<suburb>/<slug> pages load fine via plain curl, and WebFetch also succeeded on the search URL where curl did not",
-   "seen": "2026-08-28",
-   "cost": "burned one 20s timeout during a Brisbane deepen verify pass",
-   "workaround": "use WebFetch instead of curl for the /search form, or better, avoid the search form entirely and go straight to known /tree/QLD/<suburb>/<slug> URLs (findable via WebSearch) or WebSearch itself"
-  },
-  "lite.duckduckgo.com": {
-   "behaviour": "serves an anomaly/bot-challenge page (\"Unfortunately, bots use DuckDuckGo too\") instead of search results, consistently, regardless of query",
-   "seen": "2026-08-31",
-   "cost": "cheap per call (fast response, ~14KB challenge page) but wasted about 5 calls before being recognised, since the page looks like a plain no-results page unless you grep for the anomaly.js form",
-   "workaround": "unknown for curl; en.wikipedia.org/w/api.php search+extracts worked fine throughout and covered most needs; Bing HTML search (www.bing.com/search) returned real b_algo results for some queries but ignored quoted/compound queries and returned generic unrelated hits for others (a Maui Old Hana School query returned results for the film Old), so treat Bing snippets as unreliable for anything but the simplest single-topic queries"
-  },
-  "webmaps.sandiego.gov": {
-   "behaviour": "hangs, no response at all (curl -m 20 exit 28) on the ArcGIS REST path /arcgis/rest/services/DSD/Environment/MapServer/layers?f=json",
-   "seen": "2026-08-31",
-   "cost": "burned two 20s timeouts during a US register scouting pass (San Diego target)",
-   "workaround": "unknown; San Diego's designated-tree programme (Council Policy 900-19) has no published dataset anyway, so this host was not chased further"
-  },
-  "idese.cultura.gov.it": {
-   "behaviour": "refuses the connection outright (curl -m 20 and WebFetch both ECONNREFUSED / exit 000) on two different individual-tree pages, not a hang",
-   "seen": "2026-09-01",
-   "cost": "cheap, fails fast",
-   "workaround": "unknown from this environment; retry from a session with different network access. WebSearch summaries of its content (girth/height/age figures) are not usable as sources per the search-summary-is-a-lead-never-a-source rule"
-  },
-  "scouts.org.uk": {
-   "behaviour": "Cloudflare 403 to plain curl; fast fail rather than a hang, so it costs a second rather than a window.",
-   "seen": "2026-09-01",
-   "cost": "one fetch during the Gilwell Oak verify pass",
-   "workaround": "Wayback Machine snapshots load fine via curl with a browser user agent, and that is how this pass got the current access wording (the Gilwell Oak's own custodian)."
-  },
-  "scoutadventures.org.uk": {
-   "behaviour": "Cloudflare 403 to plain curl; fast fail rather than a hang, so it costs a second rather than a window.",
-   "seen": "2026-09-01",
-   "cost": "one fetch during the Gilwell Oak verify pass",
-   "workaround": "Wayback Machine snapshots load fine via curl with a browser user agent, and that is how this pass got the current access wording (the site that operates Gilwell Park and publishes its current visitor access)."
-  },
-  "msi.gob.pe": {
-   "behaviour": "hangs, no response at all (curl -m 20, exit 28). San Isidro's municipal site.",
-   "seen": "2026-09-01",
-   "cost": "one fetch of the Lima verify pass",
-   "workaround": "the ordinance content (535-MSI, and the 2026 Ruta de los Arboles Patrimoniales) was reachable through infobae, El Comercio, andina.pe and gob.pe, which carried enough to verify five trees."
-  },
-  "munimagdalena.gob.pe": {
-   "behaviour": "responds, but plain curl gets JS boilerplate rather than article text, so the programme page cannot be read this way.",
-   "seen": "2026-09-01",
-   "cost": "the Magdalena del Mar half of the Lima pass, seven eucalyptus left unverified",
-   "workaround": "unknown; a browser session or the ordinance PDF via a search engine cache."
-  },
-  "manchester.gov.uk": {
-   "host": "manchester.gov.uk",
-   "what": "403 to plain curl AND to curl with a browser user agent, on both /info/ pages and /download/downloads/ PDFs. Fast fail, not a hang, so it costs a second rather than a window.",
-   "workaround": "A REAL BROWSER SESSION LOADS IT FINE (verified 2026-09-02). This is the tooling gap OPEN_DATA_SURVEY already names: a scout with a browser reads what curl cannot. The page worth having is /info/709/looking_after_parks_and_open_spaces/5754/trees/4, 'Rare trees in parks', which lists the RHS-funded Owen Johnson survey tree by tree and park by park. WebSearch's own extracted snippets also carried most of that page's content.",
-   "date": "2026-09-02"
-  },
-  "multirio.rio.rj.gov.br": {
-   "what": "ECONNREFUSED on two URL variants, fails fast.",
-   "workaround": "unknown; the Rio pass used other Brazilian sources",
-   "date": "2026-09-02"
-  },
-  "irph.prefeitura.rio": {
-   "what": "ECONNREFUSED. Rio's heritage institute, so the host you most want for tombamento decrees.",
-   "workaround": "unknown; INEPAC decree numbers were confirmed from secondary Brazilian sources instead",
-   "date": "2026-09-02"
-  },
-  "escuteaterra.museudapessoa.org": {
-   "what": "403.",
-   "workaround": "unknown",
-   "date": "2026-09-02"
-  },
-  "atlasdochao.org": {
-   "what": "403, Cloudflare JS challenge.",
-   "workaround": "unknown",
-   "date": "2026-09-02"
-  },
-  "terra.com.br": {
-   "what": "403/406 to the default fetcher, 200 with a full desktop Safari user agent. NOT a block, a user-agent check.",
-   "workaround": "curl -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'",
-   "date": "2026-09-02"
-  },
-  "jbemfolhas.com.br": {
-   "what": "403/406 to the default fetcher, 200 with a full desktop Safari user agent.",
-   "workaround": "same full desktop Safari user agent as terra.com.br",
-   "date": "2026-09-02"
-  },
-  "sandiegoreader.com": {
-   "what": "Cloudflare 'Performing security verification' interstitial that does NOT clear. Tried WebFetch, curl with a browser user agent, the Wayback Machine, a reader proxy, and a REAL BROWSER SESSION held for 16 seconds; the challenge never resolved.",
-   "workaround": "None found, and do not try to defeat the challenge. WebSearch's own extracted snippets DO carry the content: its 2017 'top ten trees of Balboa Park' piece and a 2025 follow-up are the best remaining San Diego supply, and searching the site returns usable summaries where fetching returns nothing. Treat those as leads needing a second source, never as the source itself.",
-   "date": "2026-09-02"
-  },
-  "sandiegohistory.org": {
-   "what": "403 to WebFetch, browser-UA curl and Wayback alike.",
-   "workaround": "unknown",
-   "date": "2026-09-02"
-  },
-  "pacifichorticulture.org": {
-   "what": "403 to WebFetch, browser-UA curl and Wayback alike.",
-   "workaround": "unknown",
-   "date": "2026-09-02"
-  },
-  "historicengland.org.uk": {
-   "what": "403 to plain WebFetch and to curl with a browser user agent, on list-entry pages. Fast fail, not a hang.",
-   "workaround": "unknown; the Liverpool pass used Wikipedia and local botanical-society write-ups instead. Worth one browser-session attempt, since manchester.gov.uk 403s the same way and loads fine in a browser.",
-   "date": "2026-09-02"
-  },
-  "newsletter.co.uk": {
-   "what": "403 to both curl and WebFetch.",
-   "workaround": "unknown",
-   "date": "2026-09-02"
-  },
-  "klbotanicalgarden.gov.my": {
-   "what": "Fails to resolve or connect entirely, curl exit 1, HTTP 000.",
-   "workaround": "unknown; the KL pass used FRIM's own site and tourism sources instead",
-   "date": "2026-09-02"
-  },
-  "mybrightonandhove.org.uk": {
-   "what": "403 to curl.",
-   "workaround": "unknown; the Brighton pass used the council, Brighton & Hove Museums and the Ancient Yew Group instead",
-   "date": "2026-09-02"
-  },
-  "gz.gov.cn": {
-   "behaviour": "hangs on curl -m 20 (exit 1, no connection within timeout) and on WebFetch (socket hang up), on a 2020 batch-designation notice page",
-   "seen": "2026-09-02",
-   "cost": "one fetch attempt each via curl and WebFetch, during the China register scouting pass",
-   "workaround": "the bureau own subdomain lyylj.gz.gov.cn answered normally in under a second; route around the gz.gov.cn main portal via bureau subdomains where one exists"
-  },
-  "blog.xuite.net": {
-   "behaviour": "DNS does not resolve at all (getaddrinfo ENOTFOUND), to curl and WebFetch alike. Fast fail rather than a hang. The platform appears to be gone rather than blocking us",
-   "seen": "2026-09-02",
-   "cost": "the 228 Peace Memorial Park banyan lead could not be confirmed on a Taipei verify pass, and it was the one tree that would have given the city a central cluster",
-   "workaround": "unknown; try the Wayback Machine, which is where a dead blogging platform's posts survive"
-  },
-  "crgis.rchss.sinica.edu.tw": {
-   "behaviour": "DNS does not resolve (getaddrinfo ENOTFOUND). Academia Sinica's temple and cultural-resources GIS database",
-   "seen": "2026-09-02",
-   "cost": "would have been a good independent second source for temple-adjacent trees across Taiwan, not only for one park",
-   "workaround": "unknown this pass"
-  },
-  "guide.cc.ntu.edu.tw": {
-   "behaviour": "connection refused (ECONNREFUSED). National Taiwan University's own campus building guide",
-   "seen": "2026-09-02",
-   "cost": "the NTU Geology Building ginkgo fell back to a personal blog as its only source, which is why it is held as a lead rather than published",
-   "workaround": "unknown; zh.wikipedia carries NTU's Twelve Scenic Spots and served for the Common Three Pines"
-  },
-  "parks.gov.taipei": {
-   "behaviour": "connection refused (ECONNREFUSED), and parks.taipei behaves the same. Taipei's own parks department",
-   "seen": "2026-09-02",
-   "cost": "no official source for named trees in any Taipei park",
-   "workaround": "unknown; worth retrying, a refused connection is often temporary"
-  },
-  "blog.udn.com": {
-   "behaviour": "403 Forbidden to WebFetch on every path tried. udn's blog platform blocks plain fetchers",
-   "seen": "2026-09-02",
-   "cost": "fast fail, so a second rather than a window",
-   "workaround": "unknown this pass"
-  },
-  "eculture.gov.taipei": {
-   "behaviour": "SPLIT, and the split is the whole point. Individual records at /trees/zh-tw/tree/<id> fetch fine through WebFetch and return a full protected-tree record (species, address, measurements). The backing API at eculturedata.gov.taipei/api/site/module/tree answers 403 權限不足 to plain curl, so the 3,905 records CANNOT be enumerated or searched. From this Mac the host is worse than that: curl exits 35 on TLS and urllib gets a connection reset, so a scripted import cannot run here at all, only WebFetch reaches it",
-   "seen": "2026-09-02",
-   "cost": "Taipei's official Protected Trees platform holds 3,905 designated trees and we can read them one at a time by id and no other way. That is a register we can cite but not import",
-   "workaround": "for a handful of known trees, WebFetch /trees/zh-tw/tree/<id> directly. For an import, try from a different network first (the CI runner reaches hosts this Mac does not), and look for the same data on data.taipei, whose dataset download errored on every path tried this pass"
-  },
-  "oaxaca.gob.mx": {
-   "behaviour": "connection refused / hangs (curl -m 20 exit 28, timeout; also ECONNREFUSED via WebFetch)",
-   "seen": "2026-09-03",
-   "cost": "one fetch during the famous-trees batch1 verify pass (Arbol del Tule)",
-   "workaround": "unknown this pass; ciudadania-express.com and sinembargo.mx covered the same certification story and loaded fine"
-  },
-  "silale.lt": {
-   "behaviour": "Cloudflare 'you have been blocked' page (HTTP 200 body, not a connection error) to both WebFetch and curl with a spoofed browser user agent; this is a refusal, not a hang, so it fails fast rather than burning the window",
-   "seen": "2026-09-06",
-   "cost": "two fetch attempts during the Lithuania (_famous-lithuania) verify pass, trying to reach the municipality's own list of protected natural heritage objects for Silale town",
-   "workaround": "unknown this pass; lt.wikipedia's per-object articles and pamatyklietuvoje.lt/silalesbiblioteka.lt covered the two Silale trees checked well enough without it. A Wayback Machine snapshot was not tried."
-  },
-  "am.lrv.lt": {
-   "behaviour": "Cloudflare JS challenge page ('Just a moment...', HTTP 200 body full of _cf_chl_opt obfuscated JS, not a connection error) returned to a plain curl fetch; a refusal, not a hang, fails fast.",
-   "seen": "2026-09-06",
-   "cost": "one fetch attempt during the Lithuania famous-trees batch B verify pass, trying to reach the Ministry of Environment's own news release on the December 2024 Renavas spruce public vote",
-   "workaround": "LRT (lrt.lt) independently covered the same vote result and substituted fine as the second source."
-  },
-  "keliaukpats.lt": {
-   "behaviour": "TLS/SSL handshake failure (curl exit 35, OPENSSL_internal:TLSV1_ALERT_INTERNAL_ERROR) on both a plain fetch and a retry with --tlsv1.2; not a hang, fails in under a second each time.",
-   "seen": "2026-09-06",
-   "cost": "two fetch attempts during the Lithuania famous-trees batch B verify pass, trying a travel-blog page on the Stakai oak",
-   "workaround": "unknown this pass; saugoma.lt (the State Protected Areas Service's own visitor page) and lt.wikipedia covered the tree well enough without it."
-  },
-  "stvk.lt": {
-   "behaviour": "Not blocked and not a hang: returns HTTP 200 fast, but the whole page is an Angular single-page app shell with no server-rendered content, so a plain curl gets an empty shell and none of the register data (girth, height, age, designation date) that the page actually shows in a browser.",
-   "seen": "2026-09-06",
-   "cost": "two fetch attempts (Renavas spruce and Stakai oak state-register pages) during the Lithuania famous-trees batch B verify pass, both wasted",
-   "workaround": "This is the state Register of Protected Territories (Saugomų teritorijų valstybės kadastras) map portal, cited by nearly every lt.wikipedia protected-tree article as source name=stk. Its figures are usually already quoted inline in the citing Wikipedia article, which substitutes fine. A rendering fetch (headless browser) would likely work per the Tenerife/Cabildo precedent in BRIEF_RESEARCH.md, not tried this pass."
-  },
-  "komjatice.sk": {
-   "behaviour": "hangs, no response at all (curl -m 20, exit 28) on /obec/kultura-a-sport/park-komjatice/, the municipality's own page about its Kastiel park",
-   "seen": "2026-09-08",
-   "cost": "two 20s timeouts during the _famous-slovakia batch A verify pass, trying to get a primary-source access statement for the Komjatice plane tree's park",
-   "workaround": "unknown this pass; spravy.pravda.sk (2013) and lepsiageografia.sk (2015) covered the tree and its park's history well enough without it, and a search summary of a third site described the park as freely open to the public"
-  },
-  "ortobotanicoitalia.it": {
-   "behaviour": "403 Forbidden to plain curl (with a browser user agent) on its per-garden pages (e.g. /sardegna/cagliari/). Fast fail, not a hang.",
-   "seen": "2026-09-09",
-   "cost": "one fetch attempt",
-   "workaround": "apgi.it and luoghi.italianbotanicalheritage.com cover the same gardens (Associazione Parchi e Giardini Italiani and Italian Botanical Heritage directories) and both load fine via curl with a browser user agent; used as substitutes for the Cagliari Orto Botanico entry."
-  },
-  "www.tulsapeople.com": {
-   "behaviour": "429 Too Many Requests via WebFetch on two separate attempts, minutes apart, to a single article page (the Creek Council Oak Tree preservation piece).",
-   "seen": "2026-09-11",
-   "cost": "two fetch attempts during a batched Adelaide/Busan/Zagreb/Sao Paulo/Tulsa verify pass",
-   "workaround": "Wikipedia, MVSKOKE Media (mvskokemedia.com) and a dated 2026 KOSU public-radio piece covered the same tree independently and loaded fine; not chased further per the two-attempts-then-move-on rule."
-  },
-  "zwierzyniec.e-biuletyn.pl": {
-   "behaviour": "hangs; curl -m 20 times out (HTTP 000) on the gmina's own 'Raport o stanie gminy' PDF documents.",
-   "seen": "2026-09-24",
-   "cost": "one fetch attempt (20s) during the famous-poland batch5 verify pass, chasing the unresolved Zdzislaw Oak (Zwierzyniec) lead",
-   "workaround": "none found this pass; the gmina's own BIP/council resolutions might be reachable through a different host."
-  },
-  "kozy.vot.pl": {
-   "behaviour": "hangs; curl -m 20 times out (HTTP 000) on an old (2011) news post about the Kozy plane tree.",
-   "seen": "2026-09-24",
-   "cost": "one fetch attempt (20s) during the famous-poland batch5 verify pass; not chased further since pl.wikipedia and fotopolska.eu independently cleared the tree",
-   "workaround": "pl.wikipedia's own article on the Czecz Palace (Palac Czeczow w Kozach) cites the same underlying facts (Klub Gaja's 2012 contest result) and loads fine directly."
-  },
-  "kozy.pl": {
-   "behaviour": "403s to curl with a browser user agent (the gmina's own official page about the Czecz Palace and park).",
-   "seen": "2026-09-24",
-   "cost": "one fetch attempt during the famous-poland batch5 verify pass",
-   "workaround": "pl.wikipedia's article on the same palace/park cites kozy.pl as a source and reproduces the key facts, so it substitutes fine."
-  },
-  "gazetalubuska.pl": {
-   "behaviour": "403s behind a Cloudflare JS challenge (chl_page) to curl, even with a browser user agent.",
-   "seen": "2026-09-24",
-   "cost": "one fetch attempt during the famous-poland batch5 verify pass, chasing detail on Zielona Gora's 'Lubuszan' oak",
-   "workaround": "the article's own headline/existence (returned by a search) is still usable as weak corroborating evidence, but its body text is unreachable; look for the same facts on a non-Cloudflare-protected local outlet instead (pomniki-przyrody.pl and ruchmiejski.zgora.pl both worked fine for the same tree)."
-  },
-  "lubiehrubie.pl": {
-   "behaviour": "403s to curl with a browser user agent (a regional culture/history blog).",
-   "seen": "2026-09-24",
-   "cost": "one fetch attempt during the famous-poland batch5 verify pass, chasing detail on Deblin's 'Grot' oak",
-   "workaround": "the Wayback Machine had no snapshot checked this pass (untested); a live Dziennik Wschodni article on the same tree (also 404 live but recoverable via Wayback) supplied the primary facts instead."
-  },
-  "tfsweb.tamu.edu": {
-   "behaviour": "refuses curl: Cloudflare 'Sorry, you have been blocked' page (HTTP 200/403 body, fails fast, no hang), seen on the Famous Trees of Texas pages.",
-   "seen": "2026-09-27",
-   "cost": "one fetch attempt (1s)",
-   "workaround": "WebFetch reads the pages. The tree list itself is the public ArcGIS layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0 (query?where=1=1&outFields=*&f=json), which curl reads without trouble."
-  },
-  "famoustreesoftexas.tfs.tamu.edu": {
-   "behaviour": "refuses curl: Cloudflare 'Sorry, you have been blocked' page (HTTP 200/403 body, fails fast, no hang), seen on the Famous Trees of Texas pages.",
-   "seen": "2026-09-27",
-   "cost": "one fetch attempt (1s)",
-   "workaround": "WebFetch reads the pages. The tree list itself is the public ArcGIS layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0 (query?where=1=1&outFields=*&f=json), which curl reads without trouble."
-  },
-  "huntington.org": {
-   "behaviour": "served a 'Vercel Security Checkpoint' HTML shell (title only, no article content) to a plain curl with a browser user agent on /watch-read-listen/verso/five-must-see-trees-huntington, then 429 Too Many Requests to every further attempt (plain WebFetch, curl on two other URL variants including the bare huntington.org host) across four tries.",
-   "seen": "2026-09-27",
-   "cost": "four fetch attempts during the Los Angeles deepen verify pass, chasing the Huntington Rose Garden Queensland Kauri's own institutional page; zero content returned",
-   "workaround": "the Huntington's own Instagram post (instagram.com/thehuntingtonlibrary/p/CV8Sa9SMTUq/) and Esotouric's Facebook video post on the same September 2021 California Big Tree ceremony both fetched fine and carried the same facts (measurements, planting history), and were used as the two verified sources instead."
-  },
-  "recreation.parks.lacity.gov": {
-   "behaviour": "403 Forbidden to WebFetch on both /park/crystal-springs and /forest/heritage-trees.",
-   "seen": "2026-09-27",
-   "cost": "two fetch attempts during the Los Angeles deepen verify pass; not retried with curl and a browser user agent this pass",
-   "workaround": "unknown this pass; friendsofgriffithpark.org's own pages (fetched fine via WebFetch) and a CityWatch LA news article covered the Crystal Springs heritage sycamore well enough without it."
-  },
-  "www.palmtalk.org": {
-   "behaviour": "403 Forbidden to WebFetch on a forum thread about the Huntington's Queensland kauri.",
-   "seen": "2026-09-27",
-   "cost": "one fetch attempt during the Los Angeles deepen verify pass",
-   "workaround": "not needed this pass; the Huntington's own Instagram post and an independent Facebook post from Esotouric already cleared the two-source bar."
+  "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
+  "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
+  "hosts": {
+    "piece-jointe-carto.developpement-durable.gouv.fr": {
+      "behaviour": "hangs; curl -m 20 times out (exit 28, Connection timed out) on a site-classe fact-sheet PDF (REG043B/DOCS/SITES/SC_71_005_fiche.pdf) during the _famous-france verify pass.",
+      "seen": "2026-09-05",
+      "cost": "one fetch attempt (20s)",
+      "workaround": "French Wikipedia articles that cite these DREAL fact sheets usually quote the key figures (age, girth, height, classification date) directly, so the citing Wikipedia article can substitute when it exists."
+    },
+    "ffs.fdacs.gov": {
+      "behaviour": "connect ECONNREFUSED via WebFetch; curl -m 20 times out (exit 28). Confirmed on the Florida Champion Tree Register's index and detail pages during a Jacksonville register scout.",
+      "seen": "2026-09-03",
+      "cost": "2 fetch attempts",
+      "workaround": "Wayback Machine has recent snapshots (index and per-tree Detail/<id> pages) that load fine via curl. Check first with curl 'https://archive.org/wayback/available?url=<page>'."
+    },
+    "hawaii.edu": {
+      "behaviour": "the whole domain and its subdomains (www.hawaii.edu, botany.hawaii.edu, manoa.hawaii.edu) are unreachable from this environment: mostly connect ECONNREFUSED via WebFetch, and curl -m 20 timed out (exit 28) on manoa.hawaii.edu and serv.biokic.asu.edu (a related UH-hosted checklist). Seen across at least 5 separate attempts on 4 different pages during an Oahu verify pass.",
+      "seen": "2026-09-03",
+      "cost": "several fetch attempts across an Oahu verify pass, all wasted; forced falling back to Wayback Machine snapshots for anything that had to be confirmed on a hawaii.edu page",
+      "workaround": "the Wayback Machine (web.archive.org) has recent snapshots of most hawaii.edu pages and loads fine via curl (though WebFetch itself refuses web.archive.org URLs directly, so fetch archive.org snapshots with curl and parse the HTML, not with WebFetch). Check availability first with curl 'https://archive.org/wayback/available?url=<page>'."
+    },
+    "hidakokubunji.jp": {
+      "behaviour": "does not respond at all (curl -m 20, HTTP 000) on both http and https, to /html/ginkgo.html and the bare domain",
+      "seen": "2026-09-03",
+      "cost": "cheap once known; one fetch during the Takayama (Hida Kokubunji great ginkgo) verify pass",
+      "workaround": "Wayback Machine has a recent snapshot (2026-01-20) that loads fine via curl: http://web.archive.org/web/20260120082107/https://hidakokubunji.jp/html/ginkgo.html"
+    },
+    "pref.gifu.lg.jp": {
+      "behaviour": "does not respond at all (curl -m 20, HTTP 000)",
+      "seen": "2026-09-03",
+      "cost": "one fetch during the Takayama verify pass; left a height figure (37m) from a WebSearch AI summary unverifiable, so it was not used per the search-summary-is-a-lead-never-a-source rule",
+      "workaround": "unknown this pass; www.kankou-gifu.jp (the prefecture's own tourism site, a different host) covers the same tree and loaded fine"
+    },
+    "ofunato.jp": {
+      "behaviour": "does not respond at all (curl -m 20, HTTP 000)",
+      "seen": "2026-09-03",
+      "cost": "one fetch during the Ofunato (Dokonjo Poplar) verify pass; not chased further since ja.wikipedia and the MLIT disaster-memorial registry already cleared the two-source bar",
+      "workaround": "unknown this pass"
+    },
+    "www.tripadvisor.jp": {
+      "behaviour": "403 to curl with a browser user agent",
+      "seen": "2026-09-03",
+      "cost": "cheap, fails fast; one fetch during the Higashine verify pass",
+      "workaround": "jalan.net review pages carried the same kind of first-person visitor evidence and loaded fine"
+    },
+    "texasescapes.com": {
+      "behaviour": "hangs; WebFetch ran past 60s and returned nothing",
+      "seen": "2026-09-01",
+      "cost": "one fetch of a verify pass, during Sam Houston Oak research",
+      "workaround": "unknown; the site's own text was reachable as a WebSearch snippet, which is a lead and not a source, so a second source had to be found elsewhere"
+    },
+    "assisinews.it": {
+      "behaviour": "403 to plain curl and to curl with a browser user agent alike",
+      "seen": "2026-08-29",
+      "cost": "cheap, fails in under a second",
+      "workaround": "unknown; umbria24.it covered the same story (Assisi's new Via di Valecchie oak, 10th MASAF update) and was fetchable normally, used as the second source instead"
+    },
+    "gemeentebestuur.haarlem.nl": {
+      "behaviour": "does not hang, but serves an Anubis bot-challenge HTML page (200 OK, ~6.6KB) instead of the requested PDF to plain curl, even with a browser user agent",
+      "seen": "2026-08-22",
+      "cost": "cheap, fails in under a second, but wastes a fetch if not expected",
+      "workaround": "unknown; a real browser session may pass the challenge. www.bomenstichting.nl and www.ivn.nl serve their own monumental-trees PDFs for Haarlem and both downloaded fine via plain curl, so prefer those over the gemeente's own hosted copy"
+    },
+    "rijksmonumenten.nl": {
+      "behaviour": "hangs / socket hang up on individual monument pages (both via WebFetch and via curl -m 20 with a browser user agent, curl exit 92)",
+      "seen": "2026-08-22",
+      "cost": "burned two attempts during a Nijmegen deepen verify pass, zero content returned either time",
+      "workaround": "unknown; WebSearch's own extracted snippets exist for this content but per the search-summary-is-a-lead-never-a-source rule they could not be used to verify a specific tree claim without seeing the page itself"
+    },
+    "ateneodecordoba.com": {
+      "behaviour": "hangs, no response at all (curl -m 20 exit 28, both http and https)",
+      "seen": "2026-08-16",
+      "cost": "burned two 20s timeouts during a Cordoba deepen verify pass",
+      "workaround": "unknown; used WebSearch snippet-level results instead of a direct fetch"
+    },
+    "www.lapresse.ca": {
+      "behaviour": "405 Method Not Allowed to plain curl (GET), fast fail, not a hang",
+      "seen": "2026-08-15",
+      "cost": "cheap, failed in under a second",
+      "workaround": "Wayback Machine snapshot worked fine via curl (no browser UA needed): http://web.archive.org/web/<timestamp>/<url>, use the archive.org/wayback/available API to find the closest snapshot first"
+    },
+    "www.alsace.eu": {
+      "host": "www.alsace.eu",
+      "noted": "2026-08-13",
+      "symptom": "hangs, no response at all (curl -m 20 exit 28, ECONNREFUSED/timeout on both the specific page and the bare domain root); burned the full 20s timeout twice during a Bordeaux/Strasbourg verify pass",
+      "workaround": "unknown; the Collectivite europeenne d'Alsace's own remarkable-trees register (arbre-368, Platane du Parc du Contades) was cited via WebSearch's own extracted snippet instead of a direct fetch"
+    },
+    "cultural.valencia.es": {
+      "behaviour": "hangs, no response at all",
+      "seen": "2026-08-06",
+      "cost": "two Valencia passes died on it, nothing written either time",
+      "workaround": "unknown; try valencia.es (302, responds fine) or the Generalitat catalogue instead"
+    },
+    "www.sevilla.org": {
+      "behaviour": "hangs, ECONNREFUSED at TCP level",
+      "seen": "2026-08-05",
+      "cost": "a Seville pass lost time before finding the mirror",
+      "workaround": "www.femas.es serves the identical municipal PDF"
+    },
+    "diario.madrid.es": {
+      "behaviour": "Akamai 403 to every user agent",
+      "seen": "2026-08-05",
+      "cost": "cheap, it fails immediately",
+      "workaround": "none found; open in a browser session or skip"
+    },
+    "barcelona.cat": {
+      "behaviour": "418 to plain fetchers",
+      "seen": "2026-08-05",
+      "cost": "cheap",
+      "workaround": "the register is already imported at data/registers/barcelona-ail.json"
+    },
+    "lyon.fr": {
+      "behaviour": "403 to plain fetching",
+      "seen": "2026-08-05",
+      "cost": "cheap",
+      "workaround": "none found"
+    },
+    "datosabiertos.jcyl.es": {
+      "behaviour": "TLS certificate verification fails",
+      "seen": "2026-08-02",
+      "cost": "cheap",
+      "workaround": "verify via datos.gob.es metadata instead"
+    },
+    "publico.pt": {
+      "behaviour": "blocks plain fetchers",
+      "seen": "2026-08-05",
+      "cost": "cheap",
+      "workaround": "none needed, it is a newspaper and a lead rather than a source"
+    },
+    "sites.heritage.brussels": {
+      "behaviour": "403 to WebFetch, 200 to curl with a browser user agent",
+      "seen": "2026-08-06",
+      "cost": "cheap once known",
+      "workaround": "curl -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'"
+    },
+    "comune.milano.it": {
+      "host": "comune.milano.it",
+      "noted": "2026-08-08",
+      "symptom": "403 to curl and WebFetch (was reachable 2026-08-05)",
+      "workaround": "Regione Lombardia press releases and Il Giorno surveys served as second sources instead"
+    },
+    "avrupaanitagaclar.com": {
+      "host": "avrupaanitagaclar.com",
+      "noted": "2026-08-08",
+      "symptom": "COMPROMISED: serves unrelated gambling content; was cited as detail-page host for Turkish register records",
+      "workaround": "never fetch or cite; use the national registry itself"
+    },
+    "www.loc.gov": {
+      "host": "www.loc.gov",
+      "noted": "2026-08-08",
+      "symptom": "Cloudflare 'Just a moment...' challenge to plain curl and to WebFetch on every /pictures/item/ and /item/ path tried (dc1027 through dc1051 range); 403 every time, no browser UA tested",
+      "workaround": "tile.loc.gov (the raw PDF/image storage host, e.g. https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dcNNNN/data/dcNNNNdata.pdf) is NOT behind the same Cloudflare gate and served most HALS survey PDFs fine this pass; note those PDFs are scanned images (JBIG2) with no text layer, so they confirm a record's existence and title but cannot be read for content without OCR"
+    },
+    "nycgovparks.org": {
+      "behaviour": "returns HTTP 405 to every fetcher",
+      "seen": "2026-10-01",
+      "cost": "one fetch attempt",
+      "workaround": "read Great Trees designations through press coverage (Brooklyn Paper, BK Reader) and Village Preservation"
+    },
+    "hmdb.org": {
+      "host": "hmdb.org",
+      "noted": "2026-08-09",
+      "symptom": "Cloudflare 'Just a moment' challenge to curl and WebFetch",
+      "workaround": "Wayback snapshots, as the DC pass used"
+    },
+    "monumentaltrees.com": {
+      "host": "monumentaltrees.com",
+      "noted": "2026-08-09",
+      "symptom": "403 to curl (was fetchable earlier); a browser session gets a Cloudflare 'Just a moment' interstitial first but clears it on its own within about 5 seconds",
+      "workaround": "browser session for fact verification only, wait a few seconds after navigating; hard rule 1 forbids content reuse anyway"
+    },
+    "konusanagac.com": {
+      "host": "konusanagac.com",
+      "noted": "2026-08-09",
+      "symptom": "DNS resolution fails outright (ENOTFOUND / could not resolve host) to both curl and WebFetch; not a block, genuinely unreachable from this sandbox",
+      "workaround": "WebSearch's own page-reading still surfaces usable extracted facts from individual pages (used successfully this pass for Istanbul's Gulhane Park trees, konusanagac.com/ozel-agac/*); a session with different network access may be able to fetch it directly"
+    },
+    "www.aoc.gov": {
+      "host": "www.aoc.gov",
+      "noted": "2026-08-09",
+      "symptom": "403 to curl (plain and browser UA) and to WebFetch on every /explore-capitol-campus/features/ and /blog/ path tried; not a Cloudflare interstitial, a flat 403",
+      "workaround": "Wayback Machine snapshots (web.archive.org/web/<date>/https://www.aoc.gov/...) load fine via curl with a browser UA and are recent (May-July 2026 snapshots available); WebFetch itself refuses web.archive.org URLs outright ('unable to fetch'), so use curl + local HTML/text parsing for archive.org fetches, not WebFetch"
+    },
+    "olmsted.org": {
+      "host": "olmsted.org",
+      "noted": "2026-08-09",
+      "symptom": "Cloudflare 'Just a moment' / bot-check redirect loop to curl (with or without browser UA)",
+      "workaround": "Wayback Machine snapshot worked fine via curl; note its content on the Capitol trees page is explicitly 'republished with permission from the Architect of the Capitol', i.e. NOT an independent source from aoc.gov even though the domain differs"
+    },
+    "loc.getarchive.net": {
+      "host": "loc.getarchive.net",
+      "noted": "2026-08-09",
+      "symptom": "403 to curl even with a browser user agent",
+      "workaround": "none found this pass; tile.loc.gov raw PDF storage remains the working route to HALS record content (see www.loc.gov entry)"
+    },
+    "www.portlandmaps.com": {
+      "host": "www.portlandmaps.com",
+      "noted": "2026-08-13",
+      "symptom": "hangs, no response at all, on the /od/rest/services/... ArcGIS REST path specifically; burned the full 20s timeout twice",
+      "workaround": "the opendata.arcgis.com/datasets/<item>_<layer>.geojson redirect route (lands on hub.arcgis.com/api/download/v1/items/...) reaches the same Heritage Trees data fine"
+    },
+    "www.up.pt": {
+      "host": "www.up.pt",
+      "noted": "2026-08-09",
+      "symptom": "hangs: no response at all, burns the full 20s timeout on /jardimbotanico/ (other up.pt subdomains are fine)",
+      "workaround": "mhnc.up.pt serves the Jardim Botanico do Porto pages and its /pt/contactos/ page carries the addresses (jardimbotanico@mhnc.up.pt); jardimbotanico.up.pt itself fails fast with a TLS/DNS error, which is cheap rather than harmful"
+    },
+    "www.cagliaritoday.it": {
+      "host": "www.cagliaritoday.it",
+      "date": "2026-08-14",
+      "problem": "403 to WebFetch on every URL tried (not a hang)",
+      "workaround": "curl -m 20 with a browser user agent returns clean 200s, same pattern as monumentaltrees.com and sites.heritage.brussels"
+    },
+    "bigtrees.forestry.ubc.ca": {
+      "host": "bigtrees.forestry.ubc.ca",
+      "date": "2026-08-15",
+      "problem": "UBC's IT bot-defense returns a captcha challenge page (200 status, page body is the captcha itself) to plain curl on every path tried, including /terms-of-use/ and /bc-bigtree-registry/champion/. Not a hang, and captchas are never to be solved by an agent.",
+      "workaround": "none found this pass; the BC Big Tree Registry licence and downloadable Excel remain unverified. A session with a real browser (this project's Browser pane, not curl/WebFetch) should be able to clear it; do not attempt to bypass the captcha programmatically."
+    },
+    "vilnius.lt": {
+      "behaviour": "403 Forbidden to both curl and WebFetch on its protected-object register pages. Fast fail, not a hang, so it costs a second rather than a window.",
+      "seen": "2026-08-17",
+      "cost": "one fetch during a Vilnius verify pass; cheap, recorded so the next pass does not try it first",
+      "workaround": "Lithuanian Wikipedia reproduces the municipal protected-object list with register id, address and measurements. Fetch its WIKITEXT and join on the id: that confirmed or killed 8 of 10 candidates in one pass and surfaced two delisted-dead trees the register itself does not flag. Same technique as pl.wikipedia for Krakow and Warsaw."
+    },
+    "candelaria.es": {
+      "behaviour": "TLS failure: self-signed certificate. Fast fail.",
+      "seen": "2026-08-17",
+      "cost": "one fetch during the Tenerife island pass",
+      "workaround": "none found; the Cabildo de Tenerife monumental-tree portal covers the island and OSM natural=tree nodes give the pin"
+    },
+    "archive.nelsonmandela.org": {
+      "behaviour": "Cloudflare 'Just a moment...' JS challenge to both curl (plain and browser UA) and WebFetch; fast response, not a hang, but no usable content",
+      "seen": "2026-08-17",
+      "cost": "cheap, failed in a couple seconds each time, during a Singapore deepen verify pass",
+      "workaround": "none found this pass; used WebSearch's own extracted snippets and an independent Flickr photo caption instead for the Mandela/Singapore Botanic Gardens visit fact"
+    },
+    "allaboutlimassol.com": {
+      "behaviour": "403 to WebFetch consistently, but curl with a browser user agent returns clean 200s.",
+      "seen": "2026-08-17",
+      "cost": "none, caught on the Cyprus pass",
+      "workaround": "curl -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)' -m 20"
+    },
+    "wikiloc.com": {
+      "behaviour": "403 to WebFetch and to curl with a browser user agent, both attempts.",
+      "seen": "2026-08-17",
+      "cost": "two attempts on the Cyprus pass",
+      "workaround": "its coordinates appear in the search snippet; treat those as approximate and say so"
+    },
+    "frankfurt.de": {
+      "behaviour": "Cloudflare 'Just a moment...' 403 to both curl (browser user agent included) and WebFetch. Fast fail, not a hang, so it costs a second rather than a window",
+      "seen": "2026-08-19",
+      "cost": "the Frankfurt verify pass could not read the city register directly",
+      "workaround": "de.wikipedia's 'Liste der Naturdenkmale in Frankfurt am Main', fetched as WIKITEXT and joined to the city's own gazette (Amtsblatt Nr. 44/2025), carries the same register content; that join delivered the whole pass. Wayback snapshots of frankfurt.de load, but archive.org's availability API starts 429-ing after roughly 6 to 8 calls"
+    },
+    "www.nativetreesociety.org": {
+      "behaviour": "connection refused on both 80 and 443, fails fast at about 170 ms rather than hanging",
+      "seen": "2026-08-20",
+      "cost": "nothing, because it fails fast; recorded so nobody assumes the site is merely slow",
+      "workaround": "it held precise laser measurements for New Orleans City Park's oaks. Those figures survive in search snippets and on neworleanscitypark.org, which is what this page used."
+    },
+    "overpass-api.de": {
+      "behaviour": "returns HTTP 406 Not Acceptable to every query attempted (a trivial two-node bbox query, and real queries), both via curl -X POST with a Content-Type header and via GET with --data-urlencode. Confirmed the API server itself is reachable (Apache serves a proper 406 error page) but something about this environment's requests is rejected before Overpass QL is even evaluated. Its lz4.overpass-api.de mirror does the same 406, and the alternative overpass.kumi.systems mirror instead times out (curl -m 20, exit 28): confirmed 2026-09-25 on a Coimbra access-check pass trying the Ypres/Leuven technique (checking OSM access= tags on three rural Portuguese estates). All three routes are dead from this environment, not just the primary host.",
+      "seen": "2026-09-25",
+      "cost": "4 attempts during the famous-poland batch5 verify pass, plus 3 more (one per mirror) during a Coimbra verify pass trying to settle access on three ICNF register trees; every one wasted",
+      "workaround": "Nominatim (nominatim.openstreetmap.org/search) works fine for street/address-level geocoding and was used instead, though it cannot answer natural=tree node queries or access= tags the way Overpass can. No working Overpass mirror is known from this environment as of 2026-09-25; an access question that needs OSM tags directly has to be settled some other way (a local source naming the field as open, or leave the tree as a lead)."
+    },
+    "reliwiki.nl": {
+      "behaviour": "hangs past the TCP/TLS connect, no response at all (curl -m 20 -A browser-UA, exit 28 both times)",
+      "seen": "2026-08-22",
+      "cost": "two attempts during a Nijmegen deepen verify pass (candidate church page reliwiki.nl/index.php/Nijmegen,_Dennenstraat_125_-_Antonius_Abt), zero content returned",
+      "workaround": "unknown this pass; the Rijksmonument description at kennis.cultureelerfgoed.nl and the parish's own history page at mariakapelvinden.nl both loaded fine and covered the same church"
+    },
+    "services.nijmegen.nl": {
+      "behaviour": "TLS handshake completes, then hangs with no HTTP response (curl -m 20, exit 28 on a plain GetFeature request and exit 2 on a count-limited retry, both burning the full 20s)",
+      "seen": "2026-08-22",
+      "cost": "two attempts trying to reach the municipality's own monumental-tree WFS layer (typeName extern_kaartviewer_GRN_BOMEN_MON) during a Nijmegen deepen verify pass, which would have been a genuinely independent second source distinct from the national LRMB register",
+      "workaround": "RESOLVED 2026-08-26: the extern_kaartviewer_GRN_BOMEN_MON layer still hangs the same way, but a working layer on the same host serves the data: extern_BOR_Groen/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=extern_BOR_Groen:GRN_BOMEN&outputFormat=csv (found via opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5, which is reachable directly). Responds in under half a second, no hang. BUT it is the municipal STREET/PARK tree management inventory (60k+ trees under gemeente management), not a curated monumental list: its own IND_MONUMENTAAL=Ja flag hits 7350 records, clearly a structural/avenue classification rather than individual designation, so treat it as bulk inventory (CLAUDE.md: never a supply source on its own) and use it only as a per-coordinate cross-check. It also will not corroborate a tree on institutional/private grounds (a church, cemetery, private estate): those are outside gemeente management and simply absent from this dataset, confirmed by checking three Nijmegen leads on church/cemetery land (Begraafplaats Daalseweg, two Hees parish churches) which returned no match in a tight bbox around their coordinates."
+    },
+    "www.dubaipulse.gov.ae": {
+      "behaviour": "hangs, no response at all (curl -m 15, exit 28) on a dataset search path",
+      "seen": "2026-08-23",
+      "cost": "one 15s timeout during a Dubai register scouting attempt, no content returned",
+      "workaround": "unknown this pass; not retried within the same window"
+    },
+    "brisbanebotanictreasures.info": {
+      "behaviour": "hangs, no response at all (curl -m 15, exit 28, connection timed out) even to the bare domain root, not just specific pages; the same domain was fetchable enough to serve as a bne_010 source in an earlier pass",
+      "seen": "2026-08-23",
+      "cost": "one 15s timeout during a Brisbane deepen verify pass, plus a live-fetch check on the bare root",
+      "workaround": "Wayback Machine snapshots load fine via curl with a browser user agent (e.g. web.archive.org/web/20250426212328/https://brisbanebotanictreasures.info/exploring-brisbane-city-botanic-gardens/brisbane-city-botanic-gardens-description/); use the archive.org/wayback/available API to find the closest snapshot per page first"
+    },
+    "trusttrees.org.au": {
+      "behaviour": "the /search endpoint (e.g. /search?state=QLD&region=Brisbane) hangs, no response at all (curl -m 20, exit 28, both plain and browser UA); individual /tree/QLD/<suburb>/<slug> pages load fine via plain curl, and WebFetch also succeeded on the search URL where curl did not",
+      "seen": "2026-08-28",
+      "cost": "burned one 20s timeout during a Brisbane deepen verify pass",
+      "workaround": "use WebFetch instead of curl for the /search form, or better, avoid the search form entirely and go straight to known /tree/QLD/<suburb>/<slug> URLs (findable via WebSearch) or WebSearch itself"
+    },
+    "lite.duckduckgo.com": {
+      "behaviour": "serves an anomaly/bot-challenge page (\"Unfortunately, bots use DuckDuckGo too\") instead of search results, consistently, regardless of query",
+      "seen": "2026-08-31",
+      "cost": "cheap per call (fast response, ~14KB challenge page) but wasted about 5 calls before being recognised, since the page looks like a plain no-results page unless you grep for the anomaly.js form",
+      "workaround": "unknown for curl; en.wikipedia.org/w/api.php search+extracts worked fine throughout and covered most needs; Bing HTML search (www.bing.com/search) returned real b_algo results for some queries but ignored quoted/compound queries and returned generic unrelated hits for others (a Maui Old Hana School query returned results for the film Old), so treat Bing snippets as unreliable for anything but the simplest single-topic queries"
+    },
+    "webmaps.sandiego.gov": {
+      "behaviour": "hangs, no response at all (curl -m 20 exit 28) on the ArcGIS REST path /arcgis/rest/services/DSD/Environment/MapServer/layers?f=json",
+      "seen": "2026-08-31",
+      "cost": "burned two 20s timeouts during a US register scouting pass (San Diego target)",
+      "workaround": "unknown; San Diego's designated-tree programme (Council Policy 900-19) has no published dataset anyway, so this host was not chased further"
+    },
+    "idese.cultura.gov.it": {
+      "behaviour": "refuses the connection outright (curl -m 20 and WebFetch both ECONNREFUSED / exit 000) on two different individual-tree pages, not a hang",
+      "seen": "2026-09-01",
+      "cost": "cheap, fails fast",
+      "workaround": "unknown from this environment; retry from a session with different network access. WebSearch summaries of its content (girth/height/age figures) are not usable as sources per the search-summary-is-a-lead-never-a-source rule"
+    },
+    "scouts.org.uk": {
+      "behaviour": "Cloudflare 403 to plain curl; fast fail rather than a hang, so it costs a second rather than a window.",
+      "seen": "2026-09-01",
+      "cost": "one fetch during the Gilwell Oak verify pass",
+      "workaround": "Wayback Machine snapshots load fine via curl with a browser user agent, and that is how this pass got the current access wording (the Gilwell Oak's own custodian)."
+    },
+    "scoutadventures.org.uk": {
+      "behaviour": "Cloudflare 403 to plain curl; fast fail rather than a hang, so it costs a second rather than a window.",
+      "seen": "2026-09-01",
+      "cost": "one fetch during the Gilwell Oak verify pass",
+      "workaround": "Wayback Machine snapshots load fine via curl with a browser user agent, and that is how this pass got the current access wording (the site that operates Gilwell Park and publishes its current visitor access)."
+    },
+    "msi.gob.pe": {
+      "behaviour": "hangs, no response at all (curl -m 20, exit 28). San Isidro's municipal site.",
+      "seen": "2026-09-01",
+      "cost": "one fetch of the Lima verify pass",
+      "workaround": "the ordinance content (535-MSI, and the 2026 Ruta de los Arboles Patrimoniales) was reachable through infobae, El Comercio, andina.pe and gob.pe, which carried enough to verify five trees."
+    },
+    "munimagdalena.gob.pe": {
+      "behaviour": "responds, but plain curl gets JS boilerplate rather than article text, so the programme page cannot be read this way.",
+      "seen": "2026-09-01",
+      "cost": "the Magdalena del Mar half of the Lima pass, seven eucalyptus left unverified",
+      "workaround": "unknown; a browser session or the ordinance PDF via a search engine cache."
+    },
+    "manchester.gov.uk": {
+      "host": "manchester.gov.uk",
+      "what": "403 to plain curl AND to curl with a browser user agent, on both /info/ pages and /download/downloads/ PDFs. Fast fail, not a hang, so it costs a second rather than a window.",
+      "workaround": "A REAL BROWSER SESSION LOADS IT FINE (verified 2026-09-02). This is the tooling gap OPEN_DATA_SURVEY already names: a scout with a browser reads what curl cannot. The page worth having is /info/709/looking_after_parks_and_open_spaces/5754/trees/4, 'Rare trees in parks', which lists the RHS-funded Owen Johnson survey tree by tree and park by park. WebSearch's own extracted snippets also carried most of that page's content.",
+      "date": "2026-09-02"
+    },
+    "multirio.rio.rj.gov.br": {
+      "what": "ECONNREFUSED on two URL variants, fails fast.",
+      "workaround": "unknown; the Rio pass used other Brazilian sources",
+      "date": "2026-09-02"
+    },
+    "irph.prefeitura.rio": {
+      "what": "ECONNREFUSED. Rio's heritage institute, so the host you most want for tombamento decrees.",
+      "workaround": "unknown; INEPAC decree numbers were confirmed from secondary Brazilian sources instead",
+      "date": "2026-09-02"
+    },
+    "escuteaterra.museudapessoa.org": {
+      "what": "403.",
+      "workaround": "unknown",
+      "date": "2026-09-02"
+    },
+    "atlasdochao.org": {
+      "what": "403, Cloudflare JS challenge.",
+      "workaround": "unknown",
+      "date": "2026-09-02"
+    },
+    "terra.com.br": {
+      "what": "403/406 to the default fetcher, 200 with a full desktop Safari user agent. NOT a block, a user-agent check.",
+      "workaround": "curl -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'",
+      "date": "2026-09-02"
+    },
+    "jbemfolhas.com.br": {
+      "what": "403/406 to the default fetcher, 200 with a full desktop Safari user agent.",
+      "workaround": "same full desktop Safari user agent as terra.com.br",
+      "date": "2026-09-02"
+    },
+    "sandiegoreader.com": {
+      "what": "Cloudflare 'Performing security verification' interstitial that does NOT clear. Tried WebFetch, curl with a browser user agent, the Wayback Machine, a reader proxy, and a REAL BROWSER SESSION held for 16 seconds; the challenge never resolved.",
+      "workaround": "None found, and do not try to defeat the challenge. WebSearch's own extracted snippets DO carry the content: its 2017 'top ten trees of Balboa Park' piece and a 2025 follow-up are the best remaining San Diego supply, and searching the site returns usable summaries where fetching returns nothing. Treat those as leads needing a second source, never as the source itself.",
+      "date": "2026-09-02"
+    },
+    "sandiegohistory.org": {
+      "what": "403 to WebFetch, browser-UA curl and Wayback alike.",
+      "workaround": "unknown",
+      "date": "2026-09-02"
+    },
+    "pacifichorticulture.org": {
+      "what": "403 to WebFetch, browser-UA curl and Wayback alike.",
+      "workaround": "unknown",
+      "date": "2026-09-02"
+    },
+    "historicengland.org.uk": {
+      "what": "403 to plain WebFetch and to curl with a browser user agent, on list-entry pages. Fast fail, not a hang.",
+      "workaround": "unknown; the Liverpool pass used Wikipedia and local botanical-society write-ups instead. Worth one browser-session attempt, since manchester.gov.uk 403s the same way and loads fine in a browser.",
+      "date": "2026-09-02"
+    },
+    "newsletter.co.uk": {
+      "what": "403 to both curl and WebFetch.",
+      "workaround": "unknown",
+      "date": "2026-09-02"
+    },
+    "klbotanicalgarden.gov.my": {
+      "what": "Fails to resolve or connect entirely, curl exit 1, HTTP 000.",
+      "workaround": "unknown; the KL pass used FRIM's own site and tourism sources instead",
+      "date": "2026-09-02"
+    },
+    "mybrightonandhove.org.uk": {
+      "what": "403 to curl.",
+      "workaround": "unknown; the Brighton pass used the council, Brighton & Hove Museums and the Ancient Yew Group instead",
+      "date": "2026-09-02"
+    },
+    "gz.gov.cn": {
+      "behaviour": "hangs on curl -m 20 (exit 1, no connection within timeout) and on WebFetch (socket hang up), on a 2020 batch-designation notice page",
+      "seen": "2026-09-02",
+      "cost": "one fetch attempt each via curl and WebFetch, during the China register scouting pass",
+      "workaround": "the bureau own subdomain lyylj.gz.gov.cn answered normally in under a second; route around the gz.gov.cn main portal via bureau subdomains where one exists"
+    },
+    "blog.xuite.net": {
+      "behaviour": "DNS does not resolve at all (getaddrinfo ENOTFOUND), to curl and WebFetch alike. Fast fail rather than a hang. The platform appears to be gone rather than blocking us",
+      "seen": "2026-09-02",
+      "cost": "the 228 Peace Memorial Park banyan lead could not be confirmed on a Taipei verify pass, and it was the one tree that would have given the city a central cluster",
+      "workaround": "unknown; try the Wayback Machine, which is where a dead blogging platform's posts survive"
+    },
+    "crgis.rchss.sinica.edu.tw": {
+      "behaviour": "DNS does not resolve (getaddrinfo ENOTFOUND). Academia Sinica's temple and cultural-resources GIS database",
+      "seen": "2026-09-02",
+      "cost": "would have been a good independent second source for temple-adjacent trees across Taiwan, not only for one park",
+      "workaround": "unknown this pass"
+    },
+    "guide.cc.ntu.edu.tw": {
+      "behaviour": "connection refused (ECONNREFUSED). National Taiwan University's own campus building guide",
+      "seen": "2026-09-02",
+      "cost": "the NTU Geology Building ginkgo fell back to a personal blog as its only source, which is why it is held as a lead rather than published",
+      "workaround": "unknown; zh.wikipedia carries NTU's Twelve Scenic Spots and served for the Common Three Pines"
+    },
+    "parks.gov.taipei": {
+      "behaviour": "connection refused (ECONNREFUSED), and parks.taipei behaves the same. Taipei's own parks department",
+      "seen": "2026-09-02",
+      "cost": "no official source for named trees in any Taipei park",
+      "workaround": "unknown; worth retrying, a refused connection is often temporary"
+    },
+    "blog.udn.com": {
+      "behaviour": "403 Forbidden to WebFetch on every path tried. udn's blog platform blocks plain fetchers",
+      "seen": "2026-09-02",
+      "cost": "fast fail, so a second rather than a window",
+      "workaround": "unknown this pass"
+    },
+    "eculture.gov.taipei": {
+      "behaviour": "SPLIT, and the split is the whole point. Individual records at /trees/zh-tw/tree/<id> fetch fine through WebFetch and return a full protected-tree record (species, address, measurements). The backing API at eculturedata.gov.taipei/api/site/module/tree answers 403 權限不足 to plain curl, so the 3,905 records CANNOT be enumerated or searched. From this Mac the host is worse than that: curl exits 35 on TLS and urllib gets a connection reset, so a scripted import cannot run here at all, only WebFetch reaches it",
+      "seen": "2026-09-02",
+      "cost": "Taipei's official Protected Trees platform holds 3,905 designated trees and we can read them one at a time by id and no other way. That is a register we can cite but not import",
+      "workaround": "for a handful of known trees, WebFetch /trees/zh-tw/tree/<id> directly. For an import, try from a different network first (the CI runner reaches hosts this Mac does not), and look for the same data on data.taipei, whose dataset download errored on every path tried this pass"
+    },
+    "oaxaca.gob.mx": {
+      "behaviour": "connection refused / hangs (curl -m 20 exit 28, timeout; also ECONNREFUSED via WebFetch)",
+      "seen": "2026-09-03",
+      "cost": "one fetch during the famous-trees batch1 verify pass (Arbol del Tule)",
+      "workaround": "unknown this pass; ciudadania-express.com and sinembargo.mx covered the same certification story and loaded fine"
+    },
+    "silale.lt": {
+      "behaviour": "Cloudflare 'you have been blocked' page (HTTP 200 body, not a connection error) to both WebFetch and curl with a spoofed browser user agent; this is a refusal, not a hang, so it fails fast rather than burning the window",
+      "seen": "2026-09-06",
+      "cost": "two fetch attempts during the Lithuania (_famous-lithuania) verify pass, trying to reach the municipality's own list of protected natural heritage objects for Silale town",
+      "workaround": "unknown this pass; lt.wikipedia's per-object articles and pamatyklietuvoje.lt/silalesbiblioteka.lt covered the two Silale trees checked well enough without it. A Wayback Machine snapshot was not tried."
+    },
+    "am.lrv.lt": {
+      "behaviour": "Cloudflare JS challenge page ('Just a moment...', HTTP 200 body full of _cf_chl_opt obfuscated JS, not a connection error) returned to a plain curl fetch; a refusal, not a hang, fails fast.",
+      "seen": "2026-09-06",
+      "cost": "one fetch attempt during the Lithuania famous-trees batch B verify pass, trying to reach the Ministry of Environment's own news release on the December 2024 Renavas spruce public vote",
+      "workaround": "LRT (lrt.lt) independently covered the same vote result and substituted fine as the second source."
+    },
+    "keliaukpats.lt": {
+      "behaviour": "TLS/SSL handshake failure (curl exit 35, OPENSSL_internal:TLSV1_ALERT_INTERNAL_ERROR) on both a plain fetch and a retry with --tlsv1.2; not a hang, fails in under a second each time.",
+      "seen": "2026-09-06",
+      "cost": "two fetch attempts during the Lithuania famous-trees batch B verify pass, trying a travel-blog page on the Stakai oak",
+      "workaround": "unknown this pass; saugoma.lt (the State Protected Areas Service's own visitor page) and lt.wikipedia covered the tree well enough without it."
+    },
+    "stvk.lt": {
+      "behaviour": "Not blocked and not a hang: returns HTTP 200 fast, but the whole page is an Angular single-page app shell with no server-rendered content, so a plain curl gets an empty shell and none of the register data (girth, height, age, designation date) that the page actually shows in a browser.",
+      "seen": "2026-09-06",
+      "cost": "two fetch attempts (Renavas spruce and Stakai oak state-register pages) during the Lithuania famous-trees batch B verify pass, both wasted",
+      "workaround": "This is the state Register of Protected Territories (Saugomų teritorijų valstybės kadastras) map portal, cited by nearly every lt.wikipedia protected-tree article as source name=stk. Its figures are usually already quoted inline in the citing Wikipedia article, which substitutes fine. A rendering fetch (headless browser) would likely work per the Tenerife/Cabildo precedent in BRIEF_RESEARCH.md, not tried this pass."
+    },
+    "komjatice.sk": {
+      "behaviour": "hangs, no response at all (curl -m 20, exit 28) on /obec/kultura-a-sport/park-komjatice/, the municipality's own page about its Kastiel park",
+      "seen": "2026-09-08",
+      "cost": "two 20s timeouts during the _famous-slovakia batch A verify pass, trying to get a primary-source access statement for the Komjatice plane tree's park",
+      "workaround": "unknown this pass; spravy.pravda.sk (2013) and lepsiageografia.sk (2015) covered the tree and its park's history well enough without it, and a search summary of a third site described the park as freely open to the public"
+    },
+    "ortobotanicoitalia.it": {
+      "behaviour": "403 Forbidden to plain curl (with a browser user agent) on its per-garden pages (e.g. /sardegna/cagliari/). Fast fail, not a hang.",
+      "seen": "2026-09-09",
+      "cost": "one fetch attempt",
+      "workaround": "apgi.it and luoghi.italianbotanicalheritage.com cover the same gardens (Associazione Parchi e Giardini Italiani and Italian Botanical Heritage directories) and both load fine via curl with a browser user agent; used as substitutes for the Cagliari Orto Botanico entry."
+    },
+    "www.tulsapeople.com": {
+      "behaviour": "429 Too Many Requests via WebFetch on two separate attempts, minutes apart, to a single article page (the Creek Council Oak Tree preservation piece).",
+      "seen": "2026-09-11",
+      "cost": "two fetch attempts during a batched Adelaide/Busan/Zagreb/Sao Paulo/Tulsa verify pass",
+      "workaround": "Wikipedia, MVSKOKE Media (mvskokemedia.com) and a dated 2026 KOSU public-radio piece covered the same tree independently and loaded fine; not chased further per the two-attempts-then-move-on rule."
+    },
+    "zwierzyniec.e-biuletyn.pl": {
+      "behaviour": "hangs; curl -m 20 times out (HTTP 000) on the gmina's own 'Raport o stanie gminy' PDF documents.",
+      "seen": "2026-09-24",
+      "cost": "one fetch attempt (20s) during the famous-poland batch5 verify pass, chasing the unresolved Zdzislaw Oak (Zwierzyniec) lead",
+      "workaround": "none found this pass; the gmina's own BIP/council resolutions might be reachable through a different host."
+    },
+    "kozy.vot.pl": {
+      "behaviour": "hangs; curl -m 20 times out (HTTP 000) on an old (2011) news post about the Kozy plane tree.",
+      "seen": "2026-09-24",
+      "cost": "one fetch attempt (20s) during the famous-poland batch5 verify pass; not chased further since pl.wikipedia and fotopolska.eu independently cleared the tree",
+      "workaround": "pl.wikipedia's own article on the Czecz Palace (Palac Czeczow w Kozach) cites the same underlying facts (Klub Gaja's 2012 contest result) and loads fine directly."
+    },
+    "kozy.pl": {
+      "behaviour": "403s to curl with a browser user agent (the gmina's own official page about the Czecz Palace and park).",
+      "seen": "2026-09-24",
+      "cost": "one fetch attempt during the famous-poland batch5 verify pass",
+      "workaround": "pl.wikipedia's article on the same palace/park cites kozy.pl as a source and reproduces the key facts, so it substitutes fine."
+    },
+    "gazetalubuska.pl": {
+      "behaviour": "403s behind a Cloudflare JS challenge (chl_page) to curl, even with a browser user agent.",
+      "seen": "2026-09-24",
+      "cost": "one fetch attempt during the famous-poland batch5 verify pass, chasing detail on Zielona Gora's 'Lubuszan' oak",
+      "workaround": "the article's own headline/existence (returned by a search) is still usable as weak corroborating evidence, but its body text is unreachable; look for the same facts on a non-Cloudflare-protected local outlet instead (pomniki-przyrody.pl and ruchmiejski.zgora.pl both worked fine for the same tree)."
+    },
+    "lubiehrubie.pl": {
+      "behaviour": "403s to curl with a browser user agent (a regional culture/history blog).",
+      "seen": "2026-09-24",
+      "cost": "one fetch attempt during the famous-poland batch5 verify pass, chasing detail on Deblin's 'Grot' oak",
+      "workaround": "the Wayback Machine had no snapshot checked this pass (untested); a live Dziennik Wschodni article on the same tree (also 404 live but recoverable via Wayback) supplied the primary facts instead."
+    },
+    "tfsweb.tamu.edu": {
+      "behaviour": "refuses curl: Cloudflare 'Sorry, you have been blocked' page (HTTP 200/403 body, fails fast, no hang), seen on the Famous Trees of Texas pages.",
+      "seen": "2026-09-27",
+      "cost": "one fetch attempt (1s)",
+      "workaround": "WebFetch reads the pages. The tree list itself is the public ArcGIS layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0 (query?where=1=1&outFields=*&f=json), which curl reads without trouble."
+    },
+    "famoustreesoftexas.tfs.tamu.edu": {
+      "behaviour": "refuses curl: Cloudflare 'Sorry, you have been blocked' page (HTTP 200/403 body, fails fast, no hang), seen on the Famous Trees of Texas pages.",
+      "seen": "2026-09-27",
+      "cost": "one fetch attempt (1s)",
+      "workaround": "WebFetch reads the pages. The tree list itself is the public ArcGIS layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0 (query?where=1=1&outFields=*&f=json), which curl reads without trouble."
+    },
+    "huntington.org": {
+      "behaviour": "served a 'Vercel Security Checkpoint' HTML shell (title only, no article content) to a plain curl with a browser user agent on /watch-read-listen/verso/five-must-see-trees-huntington, then 429 Too Many Requests to every further attempt (plain WebFetch, curl on two other URL variants including the bare huntington.org host) across four tries.",
+      "seen": "2026-09-27",
+      "cost": "four fetch attempts during the Los Angeles deepen verify pass, chasing the Huntington Rose Garden Queensland Kauri's own institutional page; zero content returned",
+      "workaround": "the Huntington's own Instagram post (instagram.com/thehuntingtonlibrary/p/CV8Sa9SMTUq/) and Esotouric's Facebook video post on the same September 2021 California Big Tree ceremony both fetched fine and carried the same facts (measurements, planting history), and were used as the two verified sources instead."
+    },
+    "recreation.parks.lacity.gov": {
+      "behaviour": "403 Forbidden to WebFetch on both /park/crystal-springs and /forest/heritage-trees.",
+      "seen": "2026-09-27",
+      "cost": "two fetch attempts during the Los Angeles deepen verify pass; not retried with curl and a browser user agent this pass",
+      "workaround": "unknown this pass; friendsofgriffithpark.org's own pages (fetched fine via WebFetch) and a CityWatch LA news article covered the Crystal Springs heritage sycamore well enough without it."
+    },
+    "www.palmtalk.org": {
+      "behaviour": "403 Forbidden to WebFetch on a forum thread about the Huntington's Queensland kauri.",
+      "seen": "2026-09-27",
+      "cost": "one fetch attempt during the Los Angeles deepen verify pass",
+      "workaround": "not needed this pass; the Huntington's own Instagram post and an independent Facebook post from Esotouric already cleared the two-source bar."
+    }
   }
- }
 }

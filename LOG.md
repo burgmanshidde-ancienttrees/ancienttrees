@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 night run (2): New York deepened, seven trees
+
+- **Visits, 7 days:** 2,351 visits, 2,683 views.
+- **Rung 1:** one reader sighting, a camphor near Fukuoka (`e36a052c`, Hidde's own, girth 500 cm entered). Looked at the frames: no register or write-up within 300 m, nothing separating it from its neighbours. Verdict `lead`, recorded in judgement.py.
+- **Coverage:** the writable pile was empty again (the Bulgarian pair stays unmerged, no container). Took the US-first lane: New York, 20 of 100 with 155 impressions. passcheck refused a deepen, so I claimed with `--deepen` citing that lane. Verify pass, then write pass: nyc_021 to nyc_027 published (Hattie Carthan's magnolia, Hare Krishna elm, Survivor Tree, Bed-Stuy ginkgo, the Dinosaur elm, Madison Square Park elm, Fort Greene elm). All flagged, pins approximate, no photographs; source conflicts are stated on the pages. Preflight 0 problems; site build not run.
+- **Stopped at:** nycgovparks.org returns 405 to every fetcher (added to the blocklist), so Great Trees designations came through press coverage. Six NYC leads and two blocked trees added to leads/new-york.json. The iOS run failure is the same CI simulator hang as noted below; nothing to fix from here.
+
 ## 2026-10-01 night run (1): Philippines famous trees, two places opened
 
 - **Visits, 7 days:** 2,670 visits, 3,030 views.
