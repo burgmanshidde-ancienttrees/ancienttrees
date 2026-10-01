@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 fourth continuation: two reader photographs, Houston held by the gates
+
+- Rung 1: two new reader photographs of Paris's Turkey Oak of Square Rene-Le Gall (par_033), which had none. Looked at both: whole tree in leaf ships as the lead, the trunk and bark close-up with lobed leaves ships beside it (`add`). Verdicts written in data/judgements.json (judgement.py --scan skipped them because the publish script had already cleared the queue, so I stubbed them with a small script); preflight 0 problems.
+- Houston's three written trees (hou_009 to hou_011) were merged on a trial basis and refused: 19 new trees in 24 hours against the limit of 10, and each has neither a photograph nor a confirmed pin. Reverted, not committed. They stay in data/research/houston-verified.json and the Houston claim stays (a release is refused while they are unmerged). They need a pin upgrade or a photograph first, then a day under the limit.
+- rung 2: only iOS app red (CI on Xcode, not fixable from this runner; log not read this window). Visits 7d: 2512.
+- Refused: `python3 scripts/judgement.py --verdict sight:...` raised KeyError rather than being refused by the allowlist.
+
 ## 2026-10-01 third continuation: nothing shipped
 
 Pulled, checked claims (Copenhagen and Fukuoka still held by another session) and READY leads (4, unchanged). The pace gate still refuses write passes, and Fukuoka and Linz are outside the US-only focus. No new work found that earlier attempts had not already done; next run with allowance writes New York's two READY trees.
