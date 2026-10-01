@@ -22,6 +22,11 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: species pages no longer contradict themselves
+
+- **132 of 187 species intros and metas rewritten** (write-stories pass, ~570k tokens): current counts taken out (the page prints its own), geography fixed, each meta names one real top tree. Four claims that were never true fixed on the way (Hiroshima hackberry girth, kurogane holly, a sourceless pecan girth, Mexican white oak "three countries").
+- **Rung 3 for runs, data the pass found wrong and did not touch:** Vilnius Bernardinai entry filed as "Amur Cork Tree ... and Crimean Linden" (two species in one field); Higashiomi hananoki filed as generic "Maple (Acer pycnanthum)" and Zilina's maple carries notes in its species field; Yono no Okaya sits in the Tokyo file but stands in Saitama City; the Red Horse Chestnut of Wilhelminaplein sits in Amsterdam but stands in Amstelveen; Barcelona's "Judas Tree" and "Judas Trees of Placa Joanic" may be one tree twice; Copenhagen's Proviantgarden mulberry is filed as black mulberry while its story says silkworm scheme (white).
+
 ## 2026-10-01 session: links are the next Google lever; who to ask
 
 - **Hugo Veríssimo (Quercus Lisboa): Hidde calls him next week, so no mail.** Ask on the call for a link to /lisbon (Quercus offered a mention on their site and socials on 09-17). Their tree check happens on the planned walk.
