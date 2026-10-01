@@ -32,6 +32,13 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: everything from the recovery day is live (deploy 15c45df5)
+
+- **Checked live:** Sources list and "How we choose and check trees" on tree pages; /about (no personal name, says AI drafting); /aga and /cadiz/oldest-tree noindex while /aga/shogun-sugi stays indexable; species metas rewritten and the species page down to 88 links from ~780; sitemap.xml 5,396 URLs, sitemap-recrawl.xml 7,855.
+- **The deploy broke twice on the way, both caused by the day's own changes and both caught by gates:** a source entry on bhg_006 named the owner once the Sources list rendered again (now "from a local contributor"), and check_sitemap_dates counted unmapped pages as sitemap size minus map size, which went negative after the noindex; it now counts the sitemap's own non-city URLs (tested both ways).
+- **Bing / IndexNow still 403** at 15:30 local. Bing said up to 48 hours after the Search Console import. FOR RUNS: when `curl "https://api.indexnow.org/indexnow?url=https://ancienttrees.app/about&key=81e2b7f644c7a01071949732c4937da8"` returns 200 or 202, run `gh workflow run indexnow.yml -f all=true` once.
+- **Next measurement:** ~08 Oct when the spam update finishes, then monthly. Documented recoveries took 3 to 5 months after cleanup, usually at a core update.
+
 ## 2026-10-01 session: species pages no longer contradict themselves
 
 - **132 of 187 species intros and metas rewritten** (write-stories pass, ~570k tokens): current counts taken out (the page prints its own), geography fixed, each meta names one real top tree. Four claims that were never true fixed on the way (Hiroshima hackberry girth, kurogane holly, a sourceless pecan girth, Mexican white oak "three countries").
