@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 continuation attempt: nothing shipped, gate holds
+
+Pulled, checked claims and READY leads. Four READY (two New York, one Linz, one Fukuoka) but `passcheck.py --claim "New York" --kind write` is refused: 16 trees in the last 24 hours against the limit of 10, so a write pass would only wait a day. Fukuoka and Linz are outside the US-only focus anyway. The Copenhagen (7 trees) and Fukuoka (1) claims by an earlier session could not be released because their verified output is not merged; they expire on their own. The photo shortlist held no usable candidate (filename matches for the wrong trees; Austin had nothing to fetch). Next run with allowance: write New York's two READY trees.
+
 ## 2026-10-01 night run: reader photographs and one Commons photo, no new trees
 
 Rung 1. Nine reader photographs were waiting; I looked at every file. The whole-tree shot of Paris's Square Rene-Le Gall horse chestnut ships as its lead (it matches the Paris plaque in the other frames and the tree had no photograph); the other five Paris frames (conker, two information boards, trunk close-ups) and both Lisbon dragon tree frames were declined with a written verdict, since that tree already has an approved wide photograph. Wilparting's St.-Marinus-Linde got its first photograph from Commons after I looked at the pixels.
