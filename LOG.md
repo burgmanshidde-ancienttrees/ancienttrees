@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 third continuation: nothing shipped
+
+Pulled, checked claims (Copenhagen and Fukuoka still held by another session) and READY leads (4, unchanged). The pace gate still refuses write passes, and Fukuoka and Linz are outside the US-only focus. No new work found that earlier attempts had not already done; next run with allowance writes New York's two READY trees.
+
 ## 2026-10-01 second continuation: Austin Treaty Oak photograph
 
 - Pace gate still refuses verify/write (16 trees in 24h, limit 10); READY leads 4 only, recognition gaps in New York none. Did depth instead.
