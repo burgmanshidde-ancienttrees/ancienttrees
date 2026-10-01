@@ -1178,13 +1178,20 @@
       "story": "Three hundred metres from Square Rene-Le Gall's horse chestnut, on the same buried river, stands a Turkey oak the city's own register lists at 190 centimetres round and 18 metres tall. It shares the garden's history without sharing its fame: the horse chestnut has a planting date, an obelisk nearby and a published story, while this oak has only its two register measurements and a spot in the same 1930s park laid out over the vanished Bievre.\n\nQuercus cerris is a fast grower for an oak, native to southern Europe and Asia Minor, distinguishable from more familiar oaks by acorns wrapped in a shaggy, moss-like cup that gives the species its French name, chene chevelu, the hairy oak. Paris plants it as a street and park tree precisely because it tolerates drought and poor soil better than the native pedunculate oak, useful for a garden built on reclaimed, once-marshy ground.\n\nNo second source beyond the city's own tree register has been found for this specific tree, so it ships flagged. If you know more, the garden's obelisk is a five minute walk and the two trees make an easy stop on the same visit.",
       "verify_notes": "Single official source (Ville de Paris Arbres Remarquables register, register_id 104840): girth 190cm, height 18m, no planting date. Earlier pass held this back only for lacking a second source ('short of the two-source bar'), which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker; Step 2 explicitly allows a single-sourced tree to ship flagged. 300m from the already-published par_031 (Horse Chestnut, same square), no extra walking distance on the existing walk. A city per-tree PDF fact sheet exists for a nearby-numbered register entry (104839, not this tree's 104840) but was not confirmed to be the same specimen; not used as a source here to avoid a wrong-tree risk. Age derived from girth, not from a source: 190 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/par_033-the-turkey-oak-of-square-rene-le-gall.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "3f3fd52d-4665-41f3-bbaf-1cd863381908",
+        "sighting_id": "401983c9-c965-4d40-b376-707b0c4c02b8",
+        "note": "Photographed by a reader and sent through the app (2026-10-01); a viewing pass approved it on 2026-10-01: Whole tree in full leaf, crown and trunk both readable, daylight, square setting with stone steps and clipped hedge matches Square Rene-Le Gall; trunk modest and single, consistent with 190 cm girth. Species seen: broad dense rounded oak-like crown, single ridged trunk, small lobed foliage. Fits the description: single mature tree about 18 m tall in a public square, trunk of moderate girth.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "how_to_recognise": "You can recognise it by the acorns wrapped in shaggy, moss-like cups, on a trunk 190 centimetres round and 18 metres tall. It stands in Square Rene-Le Gall, 300 metres from the horse chestnut near the obelisk.",
-      "age_basis": "girth"
+      "age_basis": "girth",
+      "photos": []
     }
   ]
 }
