@@ -852,6 +852,9 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .profile-who h1 { margin: 0; font-size: 1.5rem; overflow-wrap: anywhere; }
 .profile-follow { margin: 0.15rem 0 0; font-size: 13px; color: var(--ink-mid); }
 .profile-follow b { color: var(--ink); }
+/* The ambassador badge beside your own name (komoot Pioneer shape, CONVENTIONS.md 2026-10-02); the city page draws the same pill in AmbassadorLine.astro. */
+.profile-ambassador { display: inline-flex; align-items: center; gap: 6px; margin: 0.4rem 0 0; font-size: 13px; color: var(--moss); background: var(--moss-light); border-radius: 999px; padding: 4px 10px 4px 8px; }
+.profile-ambassador svg { width: 15px; height: 15px; fill: currentColor; flex: none; }
 /* 44px, Apple's own minimum, which the first sweep of the app found broken in
    four places. A gear is the easiest control on a page to under-size. */
 .profile-gear { flex: none; width: 44px; height: 44px; border-radius: 50%;

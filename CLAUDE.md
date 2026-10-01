@@ -865,6 +865,20 @@ This corrects `check_every_tree_names_a_source()`, written the same morning afte
 
 It is not progress. MonumentalTrees has more trees than this project ever will and it does not matter, because a list where everything is on it tells you nothing. A collector wants every entry to deserve its spot. So the answer to a reader whose tree does not make it is never a quiet no: it is kept as a lead, it is theirs to ask about, and it goes live the day something says it is worth the walk.
 
+## Ambassadors, ruled by Hidde 2026-10-02
+
+The day a stranger put nine photographs on two Paris pages within minutes of installing the app, Hidde: "email each person that adds trees to become the cities ambassador - ask them thanks and what do they think of the list can they add more - maybe we can even give them special tag if they want - share some responsibility and amplify them", then "ambassador idea is perfect lets implement it in both app and web". It is phase 1 work of the first kind, people, and it is the only mechanism this project has for turning one gift into a correspondent.
+
+**The convention is komoot's Pioneer (CONVENTIONS.md 2026-10-02): per place, a seal beside the name, earned by what the person already did.** So an ambassador is one person and one place, the badge is the whole of what they get for now (the references add perks later, never first), and the role is described in one line in the mail: adds photographs, checks the facts, helps sharpen the list.
+
+**Who is asked.** The person who has given the most trees or photographs that went live in a place, when that is more than a passing contribution: the Paris reader with nine photographs yes, a reader with one tree not yet. Hidde writes the mail (hard rule 4; drafts in drafts/ambassador-mails.md), and somebody he has already corresponded with at length is granted without a mail on his word (Hans Erik Lund for Copenhagen, Paulo Araujo for Porto, 2026-10-02: "dont email paulo or hans ive had much contact with them just make them ambassador").
+
+**Two consents, kept apart, and the second is never assumed.** Saying yes to the mail puts the badge in the app, where a profile is already public. Being NAMED on the public city page is a separate yes, because the site publishes no person's name without it (2026-08-11); `public` on the row records it and AmbassadorLine.astro prints a name only then. People without an app account are named on Hidde's word, since he holds the correspondence.
+
+**The mechanics.** supabase/ambassadors.sql (rows cascade with the account; only `public` is the person's to change), `python3 scripts/ambassador.py` (--grant, --public, --grant-named for people without an account, --sync on every knock beside photo_takedown.py so a deleted account loses its badge everywhere), data/ambassadors.json for the website, Profiles.myPlaces and placesByUser for the app. A decision travels as data: neither surface decides who is an ambassador, both read it.
+
+**No mail when the badge is given, no mail when a photograph goes live, one personal mail from Hidde.** That is the whole of the contact, and it is the line between a person writing once and a system writing every time.
+
 ## Which trees get a page, ruled by Hidde 2026-09-23
 
 A register can hand us thousands at once, and scarcity is the product, so this is the rule that decides which of them earn a page. It covers LAYER 1 only: the trees with a page that can be collected. Layer 2 is untouched, one official register is still enough for an honestly labelled dot. The full record, including the two corrections Hidde made while it was being written, is DECISIONS.md 2026-09-23.

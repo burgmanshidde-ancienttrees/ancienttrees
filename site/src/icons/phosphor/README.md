@@ -14,6 +14,7 @@ platforms only). `bold` matches SF Symbols' regular weight best at UI sizes.
 | exclamationmark.bubble             | flag (no bubble-with-! in Phosphor) |
 | arrow.turn.up.right                | arrow-bend-up-right     |
 | camera / camera.fill               | camera / camera fill    |
+| checkmark.seal.fill (ambassador)   | seal-check fill (bold for the line) |
 | heart / heart.fill                 | heart / heart fill      |
 | hand.thumbsup / .fill              | thumbs-up / fill        |
 | figure.walk                        | person-simple-walk      |

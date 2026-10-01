@@ -26,6 +26,8 @@ import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
 import { SHARE_JS } from "../lib/share-js";
 import { hreflangForCity, QUESTION_SLUG, ui, cityTranslation, type CityTranslation } from "../lib/i18n";
+import AmbassadorLine from "./AmbassadorLine.astro";
+import { namedAmbassadorsFor } from "../lib/ambassadors";
 import { getCollection } from "astro:content";
 import { cityIsRenderable } from "../lib/trees";
 import { nearbyCitiesFor, cityCentre } from "../lib/other-cities";
@@ -140,6 +142,7 @@ const cityHasQuestion = hasQuestionPage(city);
       <div class="sheet-body">
       <div class="city-intro">
         <p class="lede">{tr.intro}</p>
+        <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} />
         <button type="button" class="city-intro-more">{U.readMore}</button>
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}

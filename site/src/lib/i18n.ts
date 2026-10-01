@@ -160,6 +160,10 @@ export interface UIStrings {
    *  punctuation is part of the language: French wants a space before its
    *  colon and Japanese a full-width one. */
   photoCredit: (credit: string) => string;
+  /** The ambassador line under a city intro (2026-10-02): a reader who looks
+   *  after the place and consented to be named. Nothing prints without that
+   *  consent, so this string is only ever reached with a real name. */
+  ambassadorLine: (name: string, place: string) => string;
   /** The photo viewer, added 2026-09-03. `photoOpen` labels the button the
    *  photograph itself becomes, `photoFull` is the step Wikipedia's Media
    *  Viewer puts one click further in: the original file at full resolution. */
@@ -496,6 +500,7 @@ const EN: UIStrings = {
   cityHasMore: (c) => `${c} has more trees worth the visit:`,
   sentenceEnd: ".",
   photoCredit: (credit) => `Photo: ${credit}`,
+  ambassadorLine: (name, place) => `${name} is the ambassador for ${place} and helps keep this list right.`,
   photoOpen: "Open the photograph",
   photoPrev: "Previous photograph",
   photoNext: "Next photograph",
@@ -924,6 +929,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} tiene m\u00e1s \u00e1rboles que merecen la visita:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    ambassadorLine: (name, place) => `${name} representa a ${place} en Ancient Trees y ayuda a mantener esta lista al día.`,
     photoOpen: "Abrir la fotografía",
     photoPrev: "Fotografía anterior",
     photoNext: "Fotografía siguiente",
@@ -1166,6 +1172,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} ha altri alberi che meritano la visita:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    ambassadorLine: (name, place) => `${name} rappresenta ${place} su Ancient Trees e aiuta a tenere questa lista in ordine.`,
     photoOpen: "Apri la fotografia",
     photoPrev: "Fotografia precedente",
     photoNext: "Fotografia successiva",
@@ -1408,6 +1415,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} heeft meer bomen die de moeite waard zijn:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    ambassadorLine: (name, place) => `${name} is ambassadeur voor ${place} en helpt deze lijst kloppend te houden.`,
     photoOpen: "Open de foto",
     photoPrev: "Vorige foto",
     photoNext: "Volgende foto",
@@ -1650,6 +1658,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} hat weitere B\u00e4ume, die den Weg lohnen:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    ambassadorLine: (name, place) => `${name} vertritt ${place} bei Ancient Trees und hilft, diese Liste richtig zu halten.`,
     photoOpen: "Foto öffnen",
     photoPrev: "Vorheriges Foto",
     photoNext: "Nächstes Foto",
@@ -1892,6 +1901,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} tem mais \u00e1rvores que valem a visita:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    ambassadorLine: (name, place) => `${name} representa ${place} no Ancient Trees e ajuda a manter esta lista certa.`,
     photoOpen: "Abrir a fotografia",
     photoPrev: "Fotografia anterior",
     photoNext: "Fotografia seguinte",
@@ -2134,6 +2144,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} compte d'autres arbres qui valent le d\u00e9tour :`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
+    ambassadorLine: (name, place) => `${name} représente ${place} sur Ancient Trees et aide à garder cette liste juste.`,
     photoOpen: "Ouvrir la photographie",
     photoPrev: "Photographie précédente",
     photoNext: "Photographie suivante",
@@ -2375,6 +2386,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c}\u306b\u306f\u8a2a\u308c\u308b\u4fa1\u5024\u306e\u3042\u308b\u6a39\u6728\u304c\u307e\u3060\u3042\u308a\u307e\u3059\u3002`,
     sentenceEnd: "\u3002",
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
+    ambassadorLine: (name, place) => `${name}さんは${place}のアンバサダーとして、このリストを確かなものに保つ手伝いをしています。`,
     photoOpen: "写真を開く",
     photoPrev: "前の写真",
     photoNext: "次の写真",
