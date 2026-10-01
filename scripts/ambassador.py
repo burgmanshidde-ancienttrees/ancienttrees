@@ -185,12 +185,14 @@ def sync():
 INVITE_SUBJECT = "Your {place} trees"
 INVITE_BODY = (
     "Hi,\n\n"
-    "Thanks so much for adding {what} in {place}. {itis} live, for everybody to see.\n\n"
+    "Thanks so much for adding {what} in {place}. {itis} live, for everybody to see:\n"
+    "{links}\n\n"
     "We would love to make you our ambassador for {place}: somebody who adds photos, checks the "
-    "facts and helps sharpen the list. What do you think of our list, is it missing any, are some "
-    "wrong? Let us know if you are up for it.\n\n"
+    "facts and helps sharpen the list. What do you think of our {place} list, is it missing any, "
+    "are some wrong? Let us know if you are up for it.\n{listlink}\n\n"
     "Thanks,\nAncient Trees\n"
 )
+BASE_URL = "https://ancienttrees.app"
 
 
 def _contributions():
@@ -209,9 +211,30 @@ def _contributions():
                 if p.get("source") == "contributor" and p.get("contributor_user_id") \
                         and p.get("status") == "approved":
                     out.setdefault((p["contributor_user_id"], slug), [])
-                    if t["name"] not in out[(p["contributor_user_id"], slug)]:
-                        out[(p["contributor_user_id"], slug)].append(t["name"])
+                    if (t["name"], t["id"]) not in out[(p["contributor_user_id"], slug)]:
+                        out[(p["contributor_user_id"], slug)].append((t["name"], t["id"]))
     return out
+
+
+_FEED_URLS = None
+
+
+def _tree_urls():
+    """id -> page path, from the site's own feed rather than slugged here: the
+    site drops a leading "The" and the two Paris links guessed from the name
+    came back 404 on 2026-10-02."""
+    global _FEED_URLS
+    if _FEED_URLS is None:
+        _FEED_URLS = {}
+        try:
+            with urllib.request.urlopen(BASE_URL + "/api/trees.json", timeout=30) as r:
+                d = json.load(r)
+            for t in (d.get("trees") if isinstance(d, dict) else d) or []:
+                if t.get("id") and t.get("url"):
+                    _FEED_URLS[t["id"]] = t["url"]
+        except Exception:
+            pass
+    return _FEED_URLS
 
 
 def _address(user_id):
@@ -245,15 +268,25 @@ def invite_scan(send):
     covered = {e["place_slug"] for e in doc.get("ambassadors", [])}
     badged = {e.get("user_id") for e in doc.get("ambassadors", []) if e.get("user_id")}
     invited = doc.setdefault("invited", [])
-    already = {(i["user_id"], i["place_slug"]) for i in invited}
+    already = {(i["user_id"][:8], i["place_slug"]) for i in invited}
+    # A person Hidde has said never to mail: an entry with place "*", matched
+    # on the first eight characters of the id (Leon, 2026-10-02).
+    never = {i["user_id"][:8] for i in invited if i.get("place_slug") == "*"}
     sent_log_path = os.path.join(ROOT, "data", "outreach-sent.json")
     n = 0
-    for (uid, slug), names in sorted(_contributions().items()):
-        if ours.is_ours(uid) or slug in covered or uid in badged or (uid, slug) in already:
+    for (uid, slug), pairs in sorted(_contributions().items()):
+        names = [n for n, _ in pairs]
+        if ours.is_ours(uid) or slug in covered or uid in badged or (uid[:8], slug) in already or uid[:8] in never:
             continue
         place = place_name(slug)
         what, itis = _what(names)
-        body = INVITE_BODY.format(what=what, place=place, itis=itis)
+        urls = _tree_urls()
+        if not all(tid in urls for _, tid in pairs):
+            print(f"invite {uid[:8]} / {slug}: the feed has no page for one of the trees yet, next knock")
+            continue
+        links = "\n".join(BASE_URL + urls[tid] for _, tid in pairs)
+        body = INVITE_BODY.format(what=what, place=place, itis=itis, links=links,
+                                  listlink=f"{BASE_URL}/{slug}")
         subject = INVITE_SUBJECT.format(place=place)
         if mailcheck_ok:
             ok, why = mailcheck_ok(body, app_user=True)

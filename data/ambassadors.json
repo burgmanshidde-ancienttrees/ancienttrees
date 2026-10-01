@@ -1,6 +1,6 @@
 {
   "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named on the public page (public true); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
-  "synced": null,
+  "synced": "2026-10-01T23:15Z",
   "ambassadors": [
     {
       "user_id": null,
@@ -21,5 +21,33 @@
       "source": "mail, granted by Hidde"
     }
   ],
-  "invited": []
+  "invited": [
+    {
+      "user_id": "daa8cd52-0000-0000-0000-000000000000",
+      "place_slug": "*",
+      "place_name": "*",
+      "date": "2026-10-02",
+      "trees": [],
+      "note": "Leon (Treehunter, Friedewald and Bad Homburg): never invited by the scan. Hidde, 2026-10-02: 'to leon dont send because it makes no sense after our conversation'. Full user id is the one data/cities files carry as contributor on his reports; the scan matches on the first 8 characters for this entry."
+    },
+    {
+      "user_id": "01b4d9c0-3841-43bb-9bd0-37d3c904be29",
+      "place_slug": "seville",
+      "place_name": "Seville",
+      "date": "2026-10-02",
+      "trees": [
+        "El Gran Capitán"
+      ]
+    },
+    {
+      "user_id": "3f3fd52d-4665-41f3-bbaf-1cd863381908",
+      "place_slug": "paris",
+      "place_name": "Paris",
+      "date": "2026-10-02",
+      "trees": [
+        "The Horse Chestnut of Square Rene-Le Gall",
+        "The Turkey Oak of Square Rene-Le Gall"
+      ]
+    }
+  ]
 }
