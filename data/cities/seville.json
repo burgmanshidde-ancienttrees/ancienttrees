@@ -760,10 +760,13 @@
       "access": "Free, public park",
       "transport": "10 min walk from Prado de San Sebastián bus/tram interchange, inside Parque de María Luisa",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/262303720/medium.jpg",
+        "license": "CC BY",
+        "attribution": "rmjb, via iNaturalist",
+        "status": "held",
+        "note": "Observation identified as Araucaria cunninghamii, not Norfolk Island pine, and no location tie to the Torre Norte.",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "flagged",
       "location_precision": "approximate",

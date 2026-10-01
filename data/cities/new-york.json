@@ -635,10 +635,13 @@
       "access": "Free, public park",
       "transport": "Q train to 72nd Street (Second Avenue), about 10 minute walk west into the park via the 72nd Street/Fifth Avenue entrance",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/480965295/medium.jpg",
+        "license": "CC BY",
+        "attribution": "gwt2102, via iNaturalist",
+        "status": "held",
+        "note": "Cone close-up identified as Cedrus atlantica, not a readable view of the Lebanon cedar behind the kiosk.",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "flagged",
       "notes": "Two independent sources describe evergreen Cedar of Lebanon trees at the same spot, but disagree on count: Central Park Conservancy's own plant page describes 'a beautiful specimen' (singular); gardenindelight.com (2016) describes 'several... in a small grove' at the identical location, with the same dedication plaque. Delivered as a grove/ensemble since the plaque gives one obvious place to stand, per the collectible-point rule. No confirmed planting date; age range is a rough inference from a 2016 blog guess about the park's cedars generally, not a documented figure for this planting, hence the 'not documented' chip label. Coordinates are Conservatory Water's own published centre point (Wikipedia), not a tree-level GPS fix; distance-checked against the existing cluster: roughly 540m to nyc_002, 370m to nyc_012/013, 780m to nyc_011, comfortably within the same walk.",

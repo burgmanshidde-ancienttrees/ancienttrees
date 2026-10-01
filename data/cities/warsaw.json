@@ -296,10 +296,12 @@
       "access": "Free, the park is open daily to the public at no charge",
       "transport": "Tram or bus to Dolna/Pulawska, short walk into the park",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Dab_szypulkowy_pomnik_przyrody_Morskie_Oko_Warszawa_palac_Szustra.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Emptywords, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3785,
+        "height": 2838
       },
       "curation_status": "flagged",
       "notes": "Register (INSPIRE PL.ZIPOP.1393.PP.1465011.2969) designates five oaks as one 1978 listing at Palac Szustra / Park Morskie Oko; single coordinate covers the group. Warsaw's own park page (eko.um.warszawa.pl) and zabytek.pl's heritage record independently confirm a protected oak stands beside the palace within the public park, which is the second, tree-relevant source. No age or girth documented anywhere found; access is not in question, the palace sits inside a public municipal park.",
@@ -567,7 +569,15 @@
         "kind": "flowers",
         "label": "late June into July, when the lime flowers and the scent carries across the pond"
       },
-      "how_to_recognise": "Come in from Belwederska, keep the water beside you and look for the big lime above the bank. The register gives only the junction at the park's edge, so the trunk takes a few minutes to find."
+      "how_to_recognise": "Come in from Belwederska, keep the water beside you and look for the big lime above the bank. The register gives only the junction at the park's edge, so the trunk takes a few minutes to find.",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/657844801/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Marcin Jasiński, via iNaturalist",
+        "status": "approved",
+        "width": 375,
+        "height": 500
+      }
     },
     {
       "id": "war_017",
@@ -1095,10 +1105,13 @@
         "label": "July, when it flowers weeks after Warsaw's common limes and the crown fills with bees"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Wawa_pomnik_przyr_350_3.JPG",
+        "license": "CC BY-SA 3.0 pl",
+        "attribution": "Panek, via Wikimedia Commons",
+        "status": "held",
+        "note": "Shows a magnolia and a deciduous conifer, not a silver lime.",
+        "width": 3088,
+        "height": 4256
       }
     },
     {
@@ -1134,10 +1147,12 @@
         "label": "May, when the flower candles stand up off the crown, before the leaf miner browns it"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Kasztanowiec_Wiktorska.jpg",
+        "license": "CC0",
+        "attribution": "Visenna, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2319,
+        "height": 3500
       }
     },
     {
@@ -1166,10 +1181,13 @@
       "story": "The disease now killing Europe's ash trees was first noticed in Poland, in the early 1990s, and has been working through the country's ash ever since. Warsaw made this one a protected natural monument in June 2020, thirty years into that, which is the context a trunk 368 centimetres round deserves.\n\nIt is a big ash by any standard: a diameter of 117 centimetres, and the register's girth and diameter figures agree with each other to about a millimetre, which is what a real measurement looks like. It carries its 20 metres in the courtyard of Osiedle WSM Mokotow, the interwar cooperative estate on ul. Wiktorska, 19 metres from a horse chestnut protected on the same day. Two monuments, one yard, two species, measured separately.\n\nWe have put no age on it. Published growth rates for open-grown Fraxinus excelsior scatter badly, and at this thickness any single figure would be either flattery or an insult, so the field stays empty and the girth sits on file until there is a better way to read it.\n\nThe courtyard reads as shared, open ground rather than a gated development, which is how these estates were laid out, but nothing we found says so in as many words. If you know the yard, or know how old the ash is, tell us.",
       "how_to_recognise": "You can recognise it by the compound leaves, nine to thirteen leaflets on one stalk, and by the trunk, 368 centimetres round. It stands in the courtyard at ul. Wiktorska 78, 19 metres from the yard's protected chestnut.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Kasztanowiec_Wiktorska.jpg",
+        "license": "CC0",
+        "attribution": "Visenna, via Wikimedia Commons",
+        "status": "held",
+        "note": "File is the horse chestnut of Wiktorska (title and leaves), not the ash.",
+        "width": 2319,
+        "height": 3500
       }
     },
     {
@@ -1237,10 +1255,13 @@
         "label": "June, when the white flower bunches hang and the scent carries down the street"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Wawa_pomnik_przyr_350_3.JPG",
+        "license": "CC BY-SA 3.0 pl",
+        "attribution": "Panek, via Wikimedia Commons",
+        "status": "held",
+        "note": "Shows a magnolia and a deciduous conifer, not a black locust.",
+        "width": 3088,
+        "height": 4256
       }
     },
     {
