@@ -102,24 +102,35 @@ struct CollectIntro: View {
             // Spacer: the sheet is sized to fit, so a Spacer only ever grew
             // into the gap Hidde saw on 2026-09-28 ("the vertical spacing in
             // the pop-up seems off").
-            VStack(spacing: 10) {
-                Button("Take a photo", action: onStart)
-                    .buttonStyle(BrandButtonStyle())
-                    .accessibilityIdentifier("add-start")
-                    // The shortcut iNaturalist puts on its camera button. It
-                    // is a second way in and never the only one.
-                    .onLongPressGesture(perform: onLibrary)
+            VStack(spacing: 12) {
+                // TWO EQUAL CHOICES WITH THEIR ICONS (Hidde, 2026-10-01: "the
+                // design of add a tree pop up still feels a bit weird").
+                // iNaturalist's + and Apple's own add-photo menu give the
+                // camera and the library the same weight and an icon each; a
+                // filled button over a loose text link read as one action and
+                // a footnote. Same 52pt capsules as the sign-in sheet.
+                Button(action: onStart) {
+                    Label("Take a photo", systemImage: "camera")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity).frame(height: 52)
+                        .background(Brand.moss, in: .capsule)
+                        .contentShape(.capsule)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("add-start")
+                // The shortcut iNaturalist puts on its camera button. It
+                // is a second way in and never the only one.
+                .onLongPressGesture(perform: onLibrary)
 
-                // The label carries the frame and the shape, not the Button:
-                // a plain Button reports its TEXT as the tappable thing, which
-                // is how this shipped 18 points tall past a green build. The
-                // layout gate measured it within the hour.
                 Button(action: onLibrary) {
-                    Text("Choose from your photos")
-                        .font(.brand(16, .bold))
-                        .foregroundStyle(Brand.moss)
-                        .frame(maxWidth: .infinity, minHeight: 44)
-                        .contentShape(.rect)
+                    Label("Choose from your photos", systemImage: "photo.on.rectangle")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(Brand.ink)
+                        .frame(maxWidth: .infinity).frame(height: 52)
+                        .background(Color(.systemBackground), in: .capsule)
+                        .overlay { Capsule().strokeBorder(Color(.separator), lineWidth: 1) }
+                        .contentShape(.capsule)
                 }
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("add-library")

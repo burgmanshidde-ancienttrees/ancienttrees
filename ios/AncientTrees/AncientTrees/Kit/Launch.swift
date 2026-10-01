@@ -61,8 +61,10 @@ public enum Launch {
     ///
     /// So this flag is no longer waiting on a purchase, it is waiting on a
     /// TEST: the chain cannot be verified from a build, only from a phone with
-    /// a real mail in it. It stays false until somebody taps one.
-    public static let emailSignIn = ProcessInfo.processInfo.arguments.contains("-show-email")
+    /// a real mail in it. ON from 2026-10-01 (Hidde: "where is email smart
+    /// link login?"): the build that ships it IS that test, and a link that
+    /// fails still signs the person in on the website, the same account.
+    public static let emailSignIn = !ProcessInfo.processInfo.arguments.contains("-hide-email")
 
     /// The SIX DIGIT half of the typed email route.
     ///

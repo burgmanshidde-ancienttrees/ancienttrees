@@ -603,6 +603,12 @@ struct TreeDetail: View {
                     Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
                 }
                 .clipped()
+                // OPENS LIKE OURS DO (Hidde, 2026-10-01: "at the detail pages
+                // of a tree I found I cannot open the full image").
+                .contentShape(.rect)
+                .onTapGesture { viewingOwn = mine ?? (tree.photo == nil ? yourShots.first : nil) }
+                .accessibilityAddTraits(.isButton)
+                .accessibilityIdentifier("tree-photo-open")
         } else if let p = tree.photo, let url = p.full {
             VStack(alignment: .leading, spacing: 6) {
                 // AN EMPTY BOX WITH THE PHOTOGRAPH LAID OVER IT, not a

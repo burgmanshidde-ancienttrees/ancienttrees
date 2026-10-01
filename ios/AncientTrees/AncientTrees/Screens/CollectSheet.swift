@@ -265,6 +265,7 @@ struct CollectSheet: View {
             detent = now == .intro ? .height(introHeight) : .large
         }
         .presentationDragIndicator(.visible)
+        .presentationBackground(Color(.systemBackground))
         // AND A SWIPE CANNOT THROW IT AWAY EITHER (Hidde, 2026-08-29: "als ik
         // een boom aan het toevoegen ben met een foto moet ik niet zomaar op
         // vorige knop kunnen klikken en dat je dan alles weg gooit, dan moet

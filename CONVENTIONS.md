@@ -2655,3 +2655,15 @@ Hidde: "should the option to add more than one photo also be added to all tree a
 Hidde asked whether an action like "Add a tree" should carry at least one line of copy explaining it. From the references as recalled that evening (not re-read): iNaturalist's + opens a menu of labelled options (AI camera, camera, photo library, sound) with no sentence; Google Maps' Contribute offers Add place, Add photo, Write a review as bare labels; Instagram's + is Post, Story, Reel; AllTrails goes straight to the picker; PictureThis and Seek go straight into the camera and put their one hint IN the viewfinder. Apple's HIG on action sheets: provide a message only when necessary.
 
 **So no line on the sheet.** The button pressed already said what happens, and the camera and the library speak for themselves. Explanation belongs in two other places: an empty state or onboarding card, where somebody does not yet know the feature exists (Discover's "The map is still growing" card), and inside the camera as a hint while photographing, if one is ever needed.
+
+---
+
+## Four small ones from the 2026-10-01 walk
+
+**No make-button on your own profile when the tab bar has one.** Instagram and Strava put their create button in the tab bar and leave it off the profile; Polarsteps' red button sits on a profile whose tab bar has none. Ours has the camera in the tab bar, so the big "Add a tree" left My trees. Find people moved beside the name as a 44pt icon, the way Instagram's discover-people icon sits in its profile header and Strava's in the corner of You.
+
+**A sign-in sheet is title, three equal buttons, one line of terms.** AllTrails and Airbnb: Apple, Google, then "Continue with email" as a third button of the same size that opens its own field, and one sentence under them linking Terms and Privacy. No paragraph about storage on the sheet; the privacy notice says it. Solid sheet, never glass, because the page behind bled through the buttons.
+
+**Camera or library: two equal choices with icons.** iNaturalist's + and Apple's own add-photo menu give the camera and the library the same weight. A filled button over a text link read as one action and a footnote.
+
+**One word for pending.** Google Maps shows one "Pending" for an edit, a photo or a new place, then "Published". Ours is "Sent to us" for a tree you added and for a photo of one of ours alike, then "On the map" or "on the tree's page".
