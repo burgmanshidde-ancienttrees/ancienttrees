@@ -376,6 +376,50 @@ def language_lines(pages):
     return out
 
 
+def recovery_lines(pages):
+    """Google recovery, one table a day (2026-10-01, after the 09-28 demotion).
+
+    What the cleanup changed and whether the pages that had readers are coming
+    back: trees Google may see (photo or exact pin) against trees kept out,
+    pages on the noindex list, and impressions on the proven cities (the frozen
+    09-27 roster) against what they had that day. Hidde asked for a way to see
+    whether the work is working without reading a session's notes."""
+    try:
+        roster = json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json"))).get("cities") or {}
+        noindex = json.load(open(os.path.join(ROOT, "data", "noindex.json"))).get("paths") or {}
+    except (OSError, ValueError):
+        return []
+    good = weak = 0
+    for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        try:
+            d = json.load(open(path, encoding="utf-8"))
+        except ValueError:
+            continue
+        for t in d.get("trees") or []:
+            if not (t.get("story") and (t.get("location") or {}).get("latitude") is not None):
+                continue
+            ph = t.get("photo") or {}
+            if (ph.get("url") and ph.get("status") != "held") or t.get("location_precision") == "confirmed":
+                good += 1
+            else:
+                weak += 1
+    now = 0
+    for r in pages or []:
+        path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
+        if not path:
+            continue
+        lang, city = split_path(path)
+        if city in roster:
+            now += r.get("impressions", 0)
+    then = sum(v.get("impressions", 0) for v in roster.values())
+    return ["", "**Google recovery** (the 09-28 demotion; the cleanup went live 2026-10-01)", "",
+            "| Measure | Now | Reference |", "|---|---:|---:|",
+            "| Trees Google may index (photo or exact pin) | %d | |" % good,
+            "| Trees kept out (neither) | %d | 867 on 10-01 |" % weak,
+            "| Pages on the noindex list | %d | 8,935 on 10-01 |" % len(noindex),
+            "| Impressions on the %d proven cities, 10 days | %d | %d on 09-27 |" % (len(roster), now, then)]
+
+
 def demand_lines(pages, pairs=None):
     """Every page with real demand, as a table, so the depth rule has a list.
 
@@ -892,6 +936,7 @@ def gsc_section(gsc):
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
+        *recovery_lines(pages),
         *demand_lines(pages, pairs),
         *learning_lines(pages, pairs),
         *grouped_pages_lines(pages, pairs),
