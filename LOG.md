@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 eighth continuation: nothing shipped
+
+No claims stand. 4 READY leads, but the pace gate still refuses write passes (13 trees in 24 hours, limit 10). Recognition gaps are empty, so there was no depth to do. Deploy fix from the last entry is pushed and waits on the next build. Next run with allowance writes New York's two READY trees.
+
 ## 2026-10-01 rung 2: deploy fix
 
 Build and deploy had failed on QA: `par_033-...-5ef6e499.jpg` was in site/public/photos with nothing pointing at it (a leftover duplicate from the Paris reader-photograph publish; the tree's photo url uses the unhashed file). Removed it with git rm and pushed. `gh workflow run deploy.yml` was refused (HTTP 403 for this token), and a CI push does not trigger a build, so the next scheduled deploy carries the fix. The iOS failure is untouched. Nothing else shipped; the pace gate still holds tree work.
