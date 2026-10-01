@@ -17,7 +17,7 @@ import Base from "../layouts/Base.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { renderableTrees, treeSlugsForCity, hasQuestionPage, type CityEntry } from "../lib/trees";
-import { usablePhoto } from "../lib/images";
+import { usablePhoto, cityFaceTree, ogImageUrl } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { mapHead } from "../lib/map";
@@ -95,7 +95,14 @@ const graph = [
   { "@type": "FAQPage", mainEntity: tr.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
   breadcrumbSchema(crumbItems, selfUrl),
 ];
-const headExtra = mapHead() + (fallback ? "" : "\n" + hreflangForCity(cslug, "city")) + "\n" + ldScript(graph);
+// The SAME cover the English page, the app and the city cards show (Hidde,
+// 2026-10-01: "are thumbnails consistent over seo, app and web?"). These pages
+// carried no og:image, so a shared or searched translated city fell back to
+// the site's default picture.
+const faceTree = cityFaceTree({ hero_tree_id: city.data.hero_tree_id, trees });
+const faceUrl = faceTree ? usablePhoto(faceTree)?.url : null;
+const ogImage = faceUrl ? `\n<meta property="og:image" content="${ogImageUrl(faceUrl).replace(/"/g, "&quot;")}">` : "";
+const headExtra = mapHead() + (fallback ? "" : "\n" + hreflangForCity(cslug, "city")) + "\n" + ldScript(graph) + ogImage;
 
 const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
 const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;

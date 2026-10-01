@@ -41,7 +41,7 @@ const homeVariants = Object.fromEntries(translatedLanguages().map((l) => [l, `/$
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../lib/trees";
-import { usablePhoto, imgSrcset, imgSrcsetAttrs, photoWidth, MIN_CARD_PX } from "../lib/images";
+import { usablePhoto, imgSrcset, imgSrcsetAttrs, photoWidth, MIN_CARD_PX, cityFaceTree } from "../lib/images";
 import { speciesCommon, COUNTRY_MIN_CITIES } from "../lib/species";
 import { belongsInCityIndex } from "../lib/city-index";
 import { groupTreesByPark, parkGroupKey, parkPageIsAllowed } from "../lib/parks";
@@ -301,18 +301,14 @@ for (const cs of FAVOURITE_CITIES) {
   const e = bySlug.get(cs);
   if (!e) continue;
   let photo: { url: string } | null = null;
-  const hero = e.data.hero_tree_id;
-  if (hero) {
-    const t = e.data.trees.find((t) => t.id === hero);
-    if (t) {
-      const p = usablePhoto(t);
-      // A pinned hero still loses to the oldest-trees shelf above, which is
-      // the only shelf whose cards cannot swap picture: London's face moves
-      // to another of its trees rather than printing the Totteridge Yew
-      // twice on one page.
-      if (p?.url && !usedPhotos.has(p.url)) photo = { url: p.url };
-    }
-  }
+  // THE CITY'S OWN COVER first, the one the city page, the app and every
+  // other city card show (cityFaceTree), so a pinned hero_tree_id reaches the
+  // homepage too (Hidde, 2026-10-01: "are thumbnails consistent"). Only when
+  // a shelf above already printed that photograph does it step aside for
+  // another of the city's trees: one picture once per page.
+  const face = cityFaceTree({ hero_tree_id: e.data.hero_tree_id, trees: renderableTrees(e) });
+  const faceUrl = face ? usablePhoto(face)?.url : null;
+  if (faceUrl && !usedPhotos.has(faceUrl)) photo = { url: faceUrl };
   if (!photo) {
     for (const t of e.data.trees) {
       const p = usablePhoto(t);
