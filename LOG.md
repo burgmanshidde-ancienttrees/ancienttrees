@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 session: the visitor count was mostly bots; the digest now counts people
+
+- **What was wrong:** in the three days after Google went to zero, 649 of 735 beacon pageviews were desktop visits with no referrer and one page each, mostly Firefox and Edge, from Brazil, Singapore, India, Bangladesh and Pakistan, about one hit per page across the whole site. Those are headless crawlers that run our script. Singapore had been the "top country" since mid-September for the same reason, and the 09-26 spike of ~1,000 visits on /open was the same thing.
+- **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
+- `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
+
 ## 2026-10-01 session: 7,744 pages taken out of Google's index (recovery steps 1 to 4)
 
 - **Live on Hidde's yes ("start with point 1 to 4").** `data/noindex.json` (from `scripts/thin_pages.py`) puts `noindex, follow` and a self canonical on 7,744 of 12,923 pages: all 7,019 fallback language pages; the place and question pages of 355 places with 1 to 3 trees (their TREE pages stay indexed; 101 thin places kept for a destination tree, meaning two-plus language Wikipedias or a sourced age of 1,000+, or real impressions, Sao Paulo excluded as bot demand); and 2,184 question pages Search Console never showed (they share ~45% of their text with every other question page and with their own city page; 25 with digest evidence kept). About 5,200 pages stay indexed.
