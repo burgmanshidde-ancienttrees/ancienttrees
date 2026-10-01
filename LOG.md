@@ -58,6 +58,7 @@ Live on main:
 - **48 of 212 judged** on the review page (https://claude.ai/artifact/T4TtkFaSAmJXdTVJy1unHp): 25 rejected (recorded in data/photo-queue.json so nobody judges them again), 21 judged a good photograph for 17 trees.
 - **His rule for the page, same day:** he judges only whether it is a good photograph of a tree ("ik weet soms niet of het die boom precies is"); identity is ours to settle from geotag, filename, species and description, and a doubt stays off the site.
 - **The 21 good ones** are in data/research/photo-review-good-2026-10-01.json for the identity check, then photo_verdicts.py.
+- **Identity pass result:** 5 of 17 trees approved (war_032, muc_043, war_009, war_016, hnl_015), 12 held: wrong species (5), wrong tree (hag_005 shows Beek's Kabouterboom), wrong subject (2), nothing tying it to the trunk (4). So only ~25% of photos Hidde finds good can go live. **Next batch: pre-filter candidates to filename-names-the-tree OR geotag within 100 m**, so his time goes where a yes can ship.
 - **FOR THE NEXT SESSION: ask Hidde to continue the photo review** ("vraag me binnenkort nog maar n keer"); 164 candidates are still open on the page, which resumes where he stopped.
 
 ## 2026-10-01 session: Hidde judges photographs himself
