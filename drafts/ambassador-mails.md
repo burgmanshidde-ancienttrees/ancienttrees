@@ -13,18 +13,16 @@ they add more. The tag is offered as a question, never applied.
 
 ## 1. Paris
 
-<!-- the reader of par_031 and par_033; no name known; their address is an Apple relay, so send from the ancienttrees.app sender, never a personal one -->
+<!-- Hidde's own words, 2026-10-02 ("zoiets?"), rendered. The reader of par_031 and par_033; no name known; address jd84vvjkvb@privaterelay.appleid.com, an Apple relay, so send from the ancienttrees.app sender, never a personal one -->
 
 ```
-Subject: Your Paris photographs
+Subject: Your Paris trees
 
 Hi,
 
-Your photographs of the horse chestnut and the Turkey oak in Square René-Le Gall are on their pages now. You are the first person besides me to add photographs through the app, and they are better than anything I could have found myself.
+Thanks so much for adding the horse chestnut and the Turkey oak of Square René-Le Gall. They are live, for everybody to see.
 
-What do you think of the Paris list? If you know trees that should be on it, I would love to add them.
-
-If you like, I can mark you as the Paris ambassador on the site, so people see the city has someone who actually goes and looks. Only if you want that.
+We would love to make you our ambassador for Paris: somebody who adds photos, checks the facts and helps sharpen the list. What do you think of our list, is it missing any, are some wrong? Let us know if you are up for it.
 
 Thanks,
 Hidde
