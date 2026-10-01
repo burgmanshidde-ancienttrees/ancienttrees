@@ -220,6 +220,12 @@ def main():
         if cc:
             msg["Cc"] = ", ".join(cc)
         msg["Subject"] = m["subject"]
+        # A reply lands in the recipient's existing thread when it carries the
+        # Message-ID it answers (2026-10-01, Hidde: "neem onze vorige berichten
+        # even mee in je bericht we hebben veel gemaild").
+        if m.get("in_reply_to"):
+            msg["In-Reply-To"] = m["in_reply_to"]
+            msg["References"] = m.get("references") or m["in_reply_to"]
         msg.set_content(m["body"])
         if server is None:
             server = smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=30)
