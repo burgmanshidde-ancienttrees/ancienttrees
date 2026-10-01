@@ -54,3 +54,13 @@ Two small asks while you are passing Valkasken: its girth, which nobody has ever
 Thanks,
 Hidde
 ```
+
+## 5. When they answer "I was only visiting"
+
+Hidde, 2026-10-02: "people can of course have been on a trip and respond that they're not there anymore but then we can ask them to become of their hometown". The reply, by hand, in the same thread:
+
+```
+Thanks for writing back. No problem at all: which place would you look after? Your own town is the best one, and if we do not have it yet, your trees are how it starts.
+```
+
+Then `python3 scripts/ambassador.py --grant <user_id> <place_slug>` once they name one we publish, or a lead for the place if we do not.
