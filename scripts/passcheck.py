@@ -949,7 +949,12 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
     # depth work it pointed at was empty, so the machine shipped nothing all
     # day. It is a preference now: when the day's pace is spent, say so, name
     # the depth work, and let the run take the claim if that work is empty.
-    if kind in ("verify", "write") and not deepen and not (kind == "write" and unmerged_research(target)):
+    # Claims are no longer refused on the pace (Hidde, 2026-10-02: "does this
+    # really help google stuff or just makes our site improvements stall").
+    # The quality gates do the work; preflight's backstop catches a burst at
+    # commit time. PACE_CLAIMS stays as the one-line way back.
+    PACE_CLAIMS = False
+    if PACE_CLAIMS and kind in ("verify", "write") and not deepen and not (kind == "write" and unmerged_research(target)):
         try:
             import preflight
             added = preflight.trees_committed_last_24h()
