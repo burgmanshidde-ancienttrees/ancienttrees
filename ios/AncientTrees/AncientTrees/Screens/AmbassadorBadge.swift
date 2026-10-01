@@ -19,6 +19,12 @@ struct AmbassadorBadge: View {
     let places: [Profiles.Ambassador]
     /// 12 under a row's name, 13 under the My trees header.
     var size: CGFloat = 12
+    /// In a LIST ROW the badge says only the place ("Amsterdam"), because the
+    /// row also holds Follow and a menu and the full label truncated to
+    /// "Amsterdam a..." on the smallest phone (seen in the sweep, 2026-10-02).
+    /// komoot's list rows carry the seal alone; the word "ambassador" belongs
+    /// on the person's own header, where there is room for it.
+    var compact = false
 
     var body: some View {
         if !places.isEmpty {
@@ -34,7 +40,7 @@ struct AmbassadorBadge: View {
             .padding(.leading, 7).padding(.trailing, 9)
             .background(Brand.moss.opacity(0.12), in: .capsule)
             .accessibilityElement(children: .combine)
-            .accessibilityLabel(label)
+            .accessibilityLabel(compact ? "\(label) ambassador" : label)
             .accessibilityIdentifier("ambassador-badge")
         }
     }
@@ -43,6 +49,9 @@ struct AmbassadorBadge: View {
     /// with two. Never a list longer than that: scarcity is the point.
     private var label: String {
         let names = places.map(\.place_name)
+        if compact {
+            return names.count == 1 ? names[0] : "\(names[0]) and \(names.count - 1) more"
+        }
         switch names.count {
         case 0: return ""
         case 1: return "\(names[0]) ambassador"

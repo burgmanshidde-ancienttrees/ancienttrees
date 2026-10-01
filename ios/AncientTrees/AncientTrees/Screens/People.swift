@@ -136,7 +136,7 @@ struct PeopleView: View {
                                 .foregroundStyle(moderation.hides(p.user_id) ? Brand.inkSoft : Brand.ink)
                             // The ambassador badge, komoot's Pioneer shape
                             // (AmbassadorBadge.swift); nothing for almost everybody.
-                            AmbassadorBadge(places: profiles.placesByUser[p.user_id] ?? [])
+                            AmbassadorBadge(places: profiles.placesByUser[p.user_id] ?? [], compact: true)
                         }
                         Spacer(minLength: 8)
 
