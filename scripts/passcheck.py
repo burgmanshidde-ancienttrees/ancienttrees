@@ -842,8 +842,95 @@ MAX_OPEN_CLAIMS = 6
 OPEN_FLOOR = 4  # a place at or above the floor is open; claiming it is deepening
 
 
-def do_claim(target, kind, by, deepen=None):
+# US only, ruled by Hidde 2026-10-01: "the night runs open trees in territories
+# we don't have users. Please put all focus on the US for now." Search Console
+# agrees: the US is our largest audience by impressions and the pages Google
+# already shows there sit on four to nine trees. Rule (FIRST) in CLAUDE.md
+# ranked it top since 2026-09-27 and runs still spent windows on Taiwan,
+# Austria and the Basque country, so a ranking is not enough and this refuses.
+# Reversing it is one line: US_ONLY = False.
+US_ONLY = True
+US_COUNTRY = "United States"
+# Contiguous states, Alaska, Hawaii. Rough on purpose: it decides which country
+# a place a run names is in, and a border town is a question for --country.
+US_BOXES = [(24.4, 49.5, -125.0, -66.9), (51.2, 71.5, -179.9, -129.9),
+            (18.8, 22.4, -160.4, -154.7)]
+
+
+def country_of(target, coord=None):
+    """The country a claim target sits in, or None when nothing says."""
+    match, c = resolve(target, cities())
+    if match:
+        try:
+            with open(os.path.join(ROOT, "data", "cities", match["slug"] + ".json")) as fh:
+                country = json.load(fh).get("country")
+            if country:
+                return country
+        except (OSError, ValueError):
+            pass
+    try:
+        with open(os.path.join(ROOT, "data", "city-queue.json")) as fh:
+            queue = json.load(fh)
+        key = fold(target)
+        for q in queue if isinstance(queue, list) else []:
+            if fold(q.get("city") or "") == key or fold(q.get("slug") or "") == key:
+                if q.get("country"):
+                    return q["country"]
+    except (OSError, ValueError):
+        pass
+    # A place that is not a city yet: its own leads file, or a famous-tree
+    # list named after a country, usually knows where it is.
+    key = fold(target)
+    for path in sorted(glob.glob(os.path.join(ROOT, "data", "leads", "*.json"))):
+        base = os.path.basename(path)[:-5]
+        famous = base.startswith("_famous-")
+        if fold(base) != key and not famous:
+            continue
+        try:
+            with open(path) as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        rows = d if isinstance(d, list) else (d.get("leads") or d.get("trees") or d.get("blocked") or [])
+        if famous:
+            if any(key and key in fold(r.get("name") or "") for r in rows if isinstance(r, dict)):
+                return "United States" if base == "_famous-united-states" else base[len("_famous-"):].replace("-", " ").title()
+            continue
+        if isinstance(d, dict) and d.get("country"):
+            return d["country"]
+        for r in rows:
+            if isinstance(r, dict) and r.get("lat") is not None and r.get("lng") is not None:
+                c = c or (float(r["lat"]), float(r["lng"]))
+                break
+    c = c or coord or centre_from_any_name(target)
+    if c:
+        lat, lng = c
+        if any(a <= lat <= b and w <= lng <= e for a, b, w, e in US_BOXES):
+            return US_COUNTRY
+        return "outside the United States"
+    return None
+
+
+def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
     doc, live = load_inflight()
+
+    is_us = False
+    if US_ONLY:
+        country = country or country_of(target)
+        is_us = country == US_COUNTRY
+        if not is_us and not outside_us:
+            where = country or "a country nothing here can tell"
+            print(f"REFUSED: {target} is in {where}, and all work is on the United")
+            print("States for now (Hidde, 2026-10-01). Take the next US place from")
+            print("`python3 scripts/city_queue.py --next`.")
+            print("A reader's submission, or fixing a published tree that is wrong, is")
+            print("the reason to work elsewhere; then say so:")
+            print(f'  python3 scripts/passcheck.py --claim {target} --kind {kind} '
+                  f'--outside-us "reader submission row N"')
+            if country is None:
+                print("If it IS in the US and only the lookup failed, pass coordinates")
+                print('as the target ("lat lon"), or add --country "United States".')
+            return 1
 
     # The prompt has said "claim only what this window can finish" since
     # 2026-08-13, and it has been ignored twice: fourteen cities claimed that
@@ -868,7 +955,9 @@ def do_claim(target, kind, by, deepen=None):
     # ranked cities stood at zero. So a verify or write claim on a place that
     # already clears the four-tree floor is refused unless the run says why,
     # and a reader's submission is the reason this exists for.
-    if kind in ("verify", "write") and not deepen:
+    # The US is exempt from open-do-not-deepen: its demand sits on pages that
+    # already exist with four to nine trees, so deepening them IS the focus.
+    if kind in ("verify", "write") and not deepen and not is_us:
         match, _ = resolve(target, cities())
         # Writing trees that are ALREADY VERIFIED is finishing work, not new
         # deepening: refusing it would throw the verification away.
@@ -1355,10 +1444,21 @@ def main():
             i = args.index("--deepen")
             deepen = args[i + 1] if i + 1 < len(args) else "unstated"
             del args[i:i + 2]
+        outside_us = None
+        if "--outside-us" in args:
+            i = args.index("--outside-us")
+            outside_us = args[i + 1] if i + 1 < len(args) else "unstated"
+            del args[i:i + 2]
+        country = None
+        if "--country" in args:
+            i = args.index("--country")
+            country = args[i + 1] if i + 1 < len(args) else None
+            del args[i:i + 2]
         if not args:
-            print("usage: passcheck.py --claim <place> [--kind verify|write|photo] [--by who] [--deepen why]")
+            print("usage: passcheck.py --claim <place> [--kind verify|write|photo] [--by who] "
+                  "[--deepen why] [--outside-us why] [--country name]")
             return 1
-        return do_claim(" ".join(args), kind, by, deepen)
+        return do_claim(" ".join(args), kind, by, deepen, outside_us, country)
     if "--release" in args:
         args.remove("--release")
         if not args:

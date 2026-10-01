@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 session: US only, one credible source, budget raised
+
+- **All new work is in the US now** (Hidde: night runs were opening trees where we have no users). `passcheck.py --claim` refuses a place outside the US unless the run passes `--outside-us "<why>"` (a reader submission or a fix to a wrong published tree). US places are exempt from open-do-not-deepen, and `city_queue.py --next` prints only US work. Off switch: `US_ONLY = False` in scripts/passcheck.py.
+- **In the US one credible source is enough**, not only a register: an agency, the landowner, American Forests, the Live Oak Society, a university arboretum, a newspaper's dated report on the tree. Flagged, with the time saved going to alive, pin and access (BRIEF_RESEARCH.md).
+- **Budget raised to 8000 a week and 1440 a day**, the physical ceiling. Honest caveat: the zero-minute day on 09-29 was the usage limit, not the budget, so this only helps once the weekly limit resets.
+- **Search impressions collapsed from 09-28** (1,886 to about 50 a day, still there three days later) and Google referrals in our own counter fell with them, so it is not just a reporting lag. Nothing on our side changed indexing; Google's September spam update started 09-24 and is the leading suspect. FOR HIDDE: Search Console, check Manual actions, the Pages count and a URL inspection of the homepage.
+
 ## 2026-10-01 night run (2): New York deepened, seven trees
 
 - **Visits, 7 days:** 2,351 visits, 2,683 views.
