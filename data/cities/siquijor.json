@@ -1,0 +1,64 @@
+{
+  "city": "Siquijor",
+  "country": "Philippines",
+  "status": "needs_curation",
+  "intro": "Siquijor's best-known tree drinks from its own spring. The Enchanted Balete in Campalanas, Lazi, is a giant fig with water rising at its roots into a pool where small fish nibble visitors' feet, on an island the rest of the Philippines associates with folk healers and sorcery. Tradition puts it at 400 years and a local guide at up to 600; nobody has measured it. It stands on the coastal road, where island tours stop.",
+  "meta_description": "The Enchanted Balete of Siquijor: a giant fig in Lazi with a spring at its roots and a fish pool at its foot, said to be 400 years old or more.",
+  "question_meta": "Siquijor's oldest tree is said to be the Enchanted Balete in Lazi, a fig with a spring at its roots. Its disputed age, and how to visit.",
+  "question_answer": "The oldest tree on Siquijor is said to be the Enchanted Balete in Barangay Campalanas, Lazi, a giant fig that Wikipedia puts at 400 years and a local guide at 400 to 600. Neither figure comes from a measurement. It stands on the island's coastal road with a spring rising at its roots, and entry was 20 pesos in early 2026.",
+  "question_context": "Wikipedia gives the Enchanted Balete 400 years and calls it believed to be the oldest and biggest balete in the province. A local guide, updated in March 2026, widens that to 400 to 600 years and says plainly that no dendrochronology has been done. Nobody has published a girth or a height that comes with a source, so the range is tradition rather than a dating, and this page carries the union of the two figures. What the tree has instead of a number is a setting. A natural spring flows from the base of the trunk into a man-made pool, stocked with doctor fish that crowd round the feet of visitors who sit on the edge. Locals have carved small shrines into the trunk. The island is known across the Philippines for its folk healers, which goes some way to explaining the name. Even the species is open: one source says Ficus benghalensis, an iNaturalist observer says Ficus benjamina. It is alive, photographed at the same spot as recently as December 2025. If you know which fig it is, tell us.",
+  "hero_tree_id": "sqj_001",
+  "oldest_tree_id": "sqj_001",
+  "faq": [
+    {
+      "q": "How old is the Enchanted Balete of Siquijor?",
+      "a": "Somewhere around 400 years by Wikipedia and up to 600 by a local guide. Neither figure rests on a measurement, so the range is tradition."
+    },
+    {
+      "q": "Why is it called enchanted?",
+      "a": "A spring rises at its roots, locals have carved small shrines into the trunk, and Siquijor is the island the Philippines associates with folk healers and sorcery."
+    },
+    {
+      "q": "What is the fish pool?",
+      "a": "The spring feeds a man-made pool in front of the tree, stocked with doctor fish. For 50 to 100 pesos of bait they will nibble the feet of anyone who sits on the edge."
+    },
+    {
+      "q": "Does it cost anything to visit?",
+      "a": "Entry was reported at 20 pesos a person in early 2026. Opening hours are not confirmed. It is a roadside stop on the coastal road and most island tours include it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sqj_001",
+      "name": "Enchanted Balete Tree of Lazi",
+      "species": "Fig (Ficus sp.)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 400,
+      "age_max": 600,
+      "location": {
+        "address": "Barangay Campalanas, Lazi, Siquijor",
+        "latitude": 9.121,
+        "longitude": 123.5754,
+        "neighbourhood": "Campalanas, Lazi"
+      },
+      "story": "A spring rises at the roots of this tree. The water runs from the base of the trunk into a pool built in front of it, and the pool is stocked with doctor fish, which for a few extra pesos of bait will crowd round the feet of anyone who sits on the edge and lowers them in.\n\nSiquijor is the island the rest of the Philippines associates with folk healers and sorcery, so a giant fig with a spring at its feet was always going to be called enchanted. Locals have carved small shrines into the trunk.\n\nHow old it is depends on who you ask, and nobody has asked the tree. Wikipedia gives 400 years and says it is believed to be the oldest and biggest balete in the province. A local guide stretches that to between 400 and 600 and admits there has been no dendrochronology. Both are tradition rather than measurement, and no one has published a girth.\n\nIts life is not in doubt. It has been photographed at the same spot in Campalanas for a decade, most recently in December 2025, and it sits on the coastal road where island tours stop as a matter of routine. Entry was 20 pesos a head in early 2026.\n\nThe species is unsettled, and not narrowly. One source calls it Ficus benghalensis, the banyan; an iNaturalist observer calls it Ficus benjamina, the weeping fig. Those are very different trees. If you can tell which, tell us.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Balete_tree",
+        "https://www.insiquijor.com/guides/balete-tree-guide",
+        "https://www.inaturalist.org/observations/331527207",
+        "https://commons.wikimedia.org/wiki/File:Enchanted_Balete_Tree_in_Lazi.JPG"
+      ],
+      "access": "Pay-to-enter attraction, reported 20 pesos per person, fish-spa bait 50 to 100 pesos extra (insiquijor guide, updated March 2026; owner/municipal page not found). Hours unconfirmed. Public roadside tourist stop on the island's coastal road.",
+      "transport": "Siquijor has no rail; reached by tricycle, motorbike or car from Lazi town or Siquijor town along the coastal road. Island tours stop here.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it by the spring pool at its foot, stocked with small fish that nibble visitors' feet. It stands beside the coastal road in Campalanas, Lazi."
+    }
+  ]
+}
