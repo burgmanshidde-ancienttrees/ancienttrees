@@ -1054,6 +1054,72 @@ def check_no_new_thin_places():
     return out
 
 
+PACE_PER_DAY = 20
+
+
+def check_publishing_pace():
+    """At most PACE_PER_DAY new trees in any 24 hours while search recovers.
+
+    Hidde, 2026-10-01, approving every recovery suggestion. Google's index of
+    this site went from about 800 known pages in early August to 5,900 by
+    09-21, and in the five days before the September 2026 spam update the
+    machine published about 200 trees. A sitewide burst of templated pages is
+    the shape the scaled-content policy describes, however good each page is.
+    A steady pace is not.
+
+    Compares the working tree with the newest commit older than 24 hours and
+    fails only while there are UNCOMMITTED changes under data/cities, which is
+    the moment a run checks itself before committing; a clean tree (the deploy
+    gate) never fails here, so a burst cannot block the site from deploying.
+    Silent when history is too shallow to answer. Removing this needs Hidde."""
+    import subprocess
+
+    def git(*a):
+        return subprocess.run(["git", *a], capture_output=True, text=True).stdout
+
+    if not git("status", "--porcelain", "--", "data/cities").strip():
+        return []
+    base = git("rev-list", "-1", "--before=24 hours ago", "HEAD").strip()
+    if not base:
+        return []
+
+    def ids_from(texts):
+        out = set()
+        for txt in texts:
+            try:
+                d = json.loads(txt)
+            except ValueError:
+                continue
+            for t in d.get("trees") or []:
+                if t.get("story") and (t.get("location") or {}).get("latitude") is not None:
+                    out.add(t.get("id"))
+        return out
+
+    old_files = [f for f in git("ls-tree", "-r", "--name-only", base, "data/cities").split("\n")
+                 if f.endswith(".json")]
+    req = "".join("%s:%s\n" % (base, f) for f in old_files)
+    raw = subprocess.run(["git", "cat-file", "--batch"], input=req.encode(),
+                         capture_output=True).stdout
+    texts, i = [], 0
+    while i < len(raw):
+        nl = raw.index(b"\n", i)
+        head = raw[i:nl].split()
+        if len(head) < 3 or head[1] == b"missing":
+            i = nl + 1
+            continue
+        size = int(head[2])
+        texts.append(raw[nl + 1:nl + 1 + size].decode("utf-8", "replace"))
+        i = nl + 1 + size + 1
+    before = ids_from(texts)
+    now = ids_from(open(p, encoding="utf-8").read() for p in glob.glob("data/cities/*.json"))
+    new = len(now - before)
+    if new > PACE_PER_DAY:
+        return ["publishing pace: %d new trees in the last 24 hours, the limit is %d while "
+                "Google recovers (2026-10-01). Commit the best %d, keep the rest in "
+                "data/research/ and write them tomorrow." % (new, PACE_PER_DAY, PACE_PER_DAY)]
+    return []
+
+
 def check_a_tree_can_be_told_apart():
     """Nothing ships with a rough pin, no photograph and no recognition line.
 
@@ -2582,6 +2648,7 @@ def main():
                 + check_every_tree_names_a_source()
                 + check_tree_name_fits_a_title()
                 + check_no_new_thin_places()
+                + check_publishing_pace()
                 + check_a_tree_can_be_told_apart()
                 + check_covered_countries_want_a_photo_or_a_pin()
                 + check_story_length()
