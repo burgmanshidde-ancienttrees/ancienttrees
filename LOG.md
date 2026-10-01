@@ -22,6 +22,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-01 session: what Google left unindexed (Search Console export, data to 09-21)
+
+- Indexed 3.93K, not indexed 1.96K, of which **1,854 "Discovered, currently not indexed"**, flat since 09-07, so a crawl backlog that predates the 09-28 drop rather than the drop itself.
+- **Correction to my own guess:** of the 1,000 exported examples, ~860 are TREE pages (540 English, ~320 translated), and only ~80 are on the noindex list. Google had stopped bothering to fetch tree pages. Cutting 7,744 URLs frees crawl for them; tree pages are the product and stay indexable. Watch this number fall once Google recrawls.
+- Index growth before the drop: ~0.8K indexed early August to 3.93K on 09-21, known pages ~5.9K. Only 10 pages show as "alternate with canonical", so Google never counted most fallback language pages as pages at all.
+
 ## 2026-10-01 session: Google recovery mode, everything approved
 
 - **Noindex list keeps itself current.** deploy.yml reruns `scripts/thin_pages.py` before every build, so a place opened tonight cannot ship fourteen indexable language copies and a template question page again. Each path keeps the date it was first listed (sitemap-recrawl.xml stays honest). The four thin places kept for pre-demotion impressions are frozen in `EARNED_KEEP`.
