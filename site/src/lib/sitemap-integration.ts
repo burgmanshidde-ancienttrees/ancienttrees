@@ -73,6 +73,26 @@ export default function sitemapIntegration(): AstroIntegration {
         // at the flat sitemap.xml this hook writes, which is the only thing
         // the two ever had to agree on.
         logger.info(`wrote sitemap.xml with ${urls.length} url(s)`);
+        // Recovery sitemap (2026-10-01): every page on data/noindex.json,
+        // dated the day it went on the list. Google only learns of a noindex
+        // by recrawling the page, and the main sitemap above drops noindexed
+        // pages, so without this the change would be found at Google's own
+        // slow pace. Delete this block once Search Console shows the pages
+        // as "Excluded by noindex".
+        const nf = path.join(process.cwd(), "../data/noindex.json");
+        if (fs.existsSync(nf)) {
+          const nd = JSON.parse(fs.readFileSync(nf, "utf-8"));
+          const since: string = nd.since ?? fallback;
+          const rec = (nd.paths ?? [])
+            .map((p: string) => `  <url><loc>${BASE_URL}${p}</loc><lastmod>${since}</lastmod></url>\n`)
+            .join("");
+          fs.writeFileSync(
+            path.join(distRoot, "sitemap-recrawl.xml"),
+            `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rec}</urlset>\n`,
+          );
+          logger.info(`wrote sitemap-recrawl.xml with ${(nd.paths ?? []).length} url(s)`);
+        }
+
       },
     },
   };

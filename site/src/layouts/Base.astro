@@ -14,6 +14,7 @@ import { SIGNIN_JS, SIGNIN_CATCH_JS } from "../lib/signin-js";
 import { UNITS_JS } from "../lib/units-js";
 import LanguagePicker from "../components/LanguagePicker.astro";
 import { toEnglishPath } from "../lib/i18n";
+import { isNoindexed, cleanPath } from "../lib/noindex";
 import { chrome } from "../lib/ui-strings";
 import AppModal from "../components/AppModal.astro";
 import AppDownloadModal from "../components/AppDownloadModal.astro";
@@ -75,6 +76,12 @@ if (description.length > DESC_MAX) {
 }
 
 const year = new Date().getFullYear();
+/** On the recovery noindex list (site/src/lib/noindex.ts). Such a page points
+ * its canonical at ITSELF: a canonical naming another URL plus noindex is the
+ * contradiction Google warns against, and a fallback page used to carry
+ * exactly that, its canonical pointing at the English twin. */
+const noindexed = isNoindexed(Astro.url.pathname);
+const canonicalHref = noindexed ? `https://ancienttrees.app${cleanPath(Astro.url.pathname)}` : canonical;
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -84,7 +91,8 @@ const year = new Date().getFullYear();
 <meta name="google-site-verification" content="uVA_hyHOJQWM3wH90g2QwP5qw2pk1WlPrtZ-lZKq2Hc">
 <title>{title}</title>
 <meta name="description" content={description}>
-<link rel="canonical" href={canonical}>
+<link rel="canonical" href={canonicalHref}>
+{noindexed && !headExtra.includes("noindex") && <meta name="robots" content="noindex, follow">}
 {/* Apple's smart app banner. Safari on iOS draws it itself, above the page,
     at a height Apple chooses, and a person can dismiss it for good.
 

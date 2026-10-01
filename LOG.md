@@ -10,11 +10,19 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 session: 7,744 pages taken out of Google's index (recovery steps 1 to 4)
+
+- **Live on Hidde's yes ("start with point 1 to 4").** `data/noindex.json` (from `scripts/thin_pages.py`) puts `noindex, follow` and a self canonical on 7,744 of 12,923 pages: all 7,019 fallback language pages; the place and question pages of 355 places with 1 to 3 trees (their TREE pages stay indexed; 101 thin places kept for a destination tree, meaning two-plus language Wikipedias or a sourced age of 1,000+, or real impressions, Sao Paulo excluded as bot demand); and 2,184 question pages Search Console never showed (they share ~45% of their text with every other question page and with their own city page; 25 with digest evidence kept). About 5,200 pages stay indexed.
+- **Sitemap:** noindexed pages leave sitemap.xml by themselves; a temporary `sitemap-recrawl.xml` (in robots.txt) lists all 7,744 dated 2026-10-01 so Google recrawls them sooner. Remove it once Search Console shows them as "Excluded by noindex".
+- **Blueprint v1.23** records the P9 change and his approval.
+- **Not dynamic:** a thin place that later grows past three trees stays on the list until `thin_pages.py` is rerun. Undo everything by emptying `paths`.
+- **Pasted advice checked:** directions button, Place-type schema and the submit form already exist; the data-sheet layout is not done, because identical label templates are what the scaled-content rule targets.
+
 ## 2026-10-01 session: Google demoted the site on 09-28; first response
 
 - **Confirmed real, sitewide and algorithmic.** `seo-diagnose.yml` (new, run by hand): 09-28 is final at 53 impressions against ~2,000, every country, device and page kept 0 to 2 percent, Google visitors in the beacon went to zero, while URL Inspection says every page is indexed and fetched fine, robots and sitemaps are clean and there is no manual action (Hidde checked). `site:` search still lists /prague. Leading suspect: Google's September 2026 spam update (from 09-24), scaled content.
 - **No new place below four trees** (`check_no_new_thin_places()` in preflight; the 456 live ones frozen in data/thin-places-frozen.json). The single-famous-tree exception is paused in CLAUDE.md.
-- **Noindex proposal, NOT live:** `scripts/thin_pages.py` writes drafts/noindex-proposal.md and data/noindex-proposal.json. 8,156 of 12,923 pages: places with 1-3 trees (1,039), translations of quiet cities (98) and 7,019 fallback language pages that repeat the English text on a second URL. FOR HIDDE: yes or no on the list.
+- **Noindex proposal, NOT live:** `scripts/thin_pages.py` writes data/noindex.md and data/noindex-proposal.json. 8,156 of 12,923 pages: places with 1-3 trees (1,039), translations of quiet cities (98) and 7,019 fallback language pages that repeat the English text on a second URL. FOR HIDDE: yes or no on the list.
 - **IndexNow** (`indexnow.yml`, after every deploy): Bing, and through it ChatGPT search, hears about changed pages straight away. FOR HIDDE: register at Bing Webmaster Tools (import from Search Console takes five minutes).
 - **Disavow converter** `scripts/disavow.py`: give it the Search Console Links export and it writes drafts/disavow.txt. FOR HIDDE: export, and upload the result.
 - **The digest's visits table gains "From Google" per day**, independent of Search Console.
