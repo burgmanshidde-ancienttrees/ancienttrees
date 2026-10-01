@@ -193,33 +193,14 @@ query($tag: String!, $since: Date!, $until: Date!) {
             print("| %s | %d | %d | %d |" % (d, per[d]["google"], per[d]["bing"], per[d]["all"]))
 
     def who_is_left():
-        # Who still arrives with Google at zero: the beacon runs in any browser
-        # that executes JavaScript, headless crawlers included, so a visit is
-        # not a person until its shape says so (path, country, device, browser).
+        # The digest's own beacon reader, run here so a change to it can be
+        # seen against live data without waiting for the morning digest.
+        from daily_digest import fetch_rum
         tok = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
         if not tok:
             print("no CLOUDFLARE_ANALYTICS_TOKEN")
             return
-        since = (today - datetime.timedelta(days=3)).isoformat()
-        for dim in ("refererHost", "countryName", "deviceType", "userAgentBrowser",
-                    "requestPath"):
-            query = {"query": """
-query($tag: String!, $since: Date!, $until: Date!) {
-  viewer { accounts(filter: {accountTag: $tag}) {
-    g: rumPageloadEventsAdaptiveGroups(limit: 15,
-        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
-      count sum { visits } dimensions { %s }
-    }
-  } }
-}""" % dim, "variables": {"tag": ACCOUNT_TAG, "since": since, "until": today.isoformat()}}
-            g = api("https://api.cloudflare.com/client/v4/graphql", query, token=tok)
-            if g.get("errors"):
-                print("%s: %s" % (dim, json.dumps(g["errors"])[:300]))
-                continue
-            rows = g["data"]["viewer"]["accounts"][0]["g"]
-            print("\n**%s** since %s: " % (dim, since) + "; ".join(
-                "%s %d views/%d visits" % (r["dimensions"][dim] or "(none)", r["count"],
-                                          r["sum"]["visits"]) for r in rows))
+        print(fetch_rum(tok, today).split("\n\nLinks:")[0])
 
     print("# SEO diagnosis, %s" % today.isoformat())
     section("1. Day by day, final against fresh data", days)
@@ -232,7 +213,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
     section("4. Sitemaps", sitemaps)
     section("5. What the site sends right now", live)
     section("6. Real visitors from search engines, per day (beacon)", beacon)
-    section("7. Who is left without Google (beacon, last 4 days)", who_is_left)
+    section("7. The digest's beacon table, people only", who_is_left)
 
 
 if __name__ == "__main__":

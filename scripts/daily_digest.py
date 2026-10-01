@@ -1089,18 +1089,29 @@ query($tag: String!, $since: String!, $until: String!) {
 
 
 def fetch_rum(token, today):
-    """Cookieless Web Analytics (beacon) numbers: real browser visits, no bots.
-    Returns text; never raises past itself."""
+    """Cookieless Web Analytics (beacon) numbers, PEOPLE only.
+    Returns text; never raises past itself.
+
+    The beacon runs in any browser that executes JavaScript, and headless
+    crawlers do. Measured 2026-10-01 after Google went to zero: 649 of 735
+    pageviews in three days had no referrer, were one page per visit, 89%
+    desktop on Firefox and Edge, from Brazil, Singapore, India, Bangladesh and
+    Pakistan, one hit per page across the whole site. Singapore had been our
+    "first country" since mid-September for the same reason. So every figure
+    here except the Bots column leaves out a DESKTOP pageview with NO
+    referrer. That costs the odd real desktop bookmark, which at our volume
+    is noise beside a crawler sending hundreds a day (Hidde: "off course wtf").
+    """
     q = {
         "query": """
 query($tag: String!, $since: Date!, $until: Date!) {
   viewer { accounts(filter: {accountTag: $tag}) {
     days: rumPageloadEventsAdaptiveGroups(limit: 10,
-        filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
+        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [date_ASC]) {
       count dimensions { date } sum { visits }
     }
     paths: rumPageloadEventsAdaptiveGroups(limit: 12,
-        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
+        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [count_DESC]) {
       count dimensions { requestPath }
     }
     refs: rumPageloadEventsAdaptiveGroups(limit: 25,
@@ -1108,15 +1119,20 @@ query($tag: String!, $since: Date!, $until: Date!) {
       count dimensions { refererHost }
     }
     countries: rumPageloadEventsAdaptiveGroups(limit: 5,
-        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
+        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [count_DESC]) {
       count dimensions { countryName }
+    }
+    bots: rumPageloadEventsAdaptiveGroups(limit: 10,
+        filter: {date_geq: $since, date_lt: $until, refererHost: "", deviceType: "desktop"},
+        orderBy: [date_ASC]) {
+      count dimensions { date } sum { visits }
     }
     gdays: rumPageloadEventsAdaptiveGroups(limit: 300,
         filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
       count dimensions { date refererHost }
     }
     devices: rumPageloadEventsAdaptiveGroups(limit: 3,
-        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
+        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [count_DESC]) {
       count dimensions { deviceType }
     }
     perf: rumPerformanceEventsAdaptiveGroups(limit: 1,
@@ -1158,14 +1174,16 @@ query($tag: String!, $since: Date!, $until: Date!) {
         if "google." in host or "googlequicksearchbox" in host:
             dd = r["dimensions"]["date"]
             google[dd] = google.get(dd, 0) + r["count"]
-    rows = ["| Day | Visits | Pageviews | From Google |", "|---|---:|---:|---:|"]
+    bots = {b["dimensions"]["date"]: b["count"] for b in acct[0].get("bots") or []}
+    rows = ["| Day | Visits | Pageviews | From Google | Bots (left out) |",
+            "|---|---:|---:|---:|---:|"]
     for d in days:
-        rows.append("| %s | %d | %d | %d |" % (
-            d["dimensions"]["date"][5:], d["sum"]["visits"], d["count"],
-            google.get(d["dimensions"]["date"], 0)))
-    rows.append("| **window** | **%d** | **%d** | **%d** |" % (
+        dd = d["dimensions"]["date"]
+        rows.append("| %s | %d | %d | %d | %d |" % (
+            dd[5:], d["sum"]["visits"], d["count"], google.get(dd, 0), bots.get(dd, 0)))
+    rows.append("| **window** | **%d** | **%d** | **%d** | **%d** |" % (
         sum(d["sum"]["visits"] for d in days), sum(d["count"] for d in days),
-        sum(google.values())))
+        sum(google.values()), sum(bots.values())))
     trend = "\n" + "\n".join(rows)
     top = "; ".join("%s (%d)" % (p["dimensions"]["requestPath"], p["count"]) for p in paths)
     def _dim(rows, key, skip=("", None)):
@@ -1197,13 +1215,21 @@ query($tag: String!, $since: Date!, $until: Date!) {
     # nothing at all is an arrival. Cloudflare's cookieless beacon carries no
     # session, so page-to-page paths do not exist to be reported: this ratio
     # and pages-per-visit are the honest substitutes.
+    # The bots all sit in the no-referrer row; take them out of it so the
+    # Referrers line counts people like every other line here.
+    nbots = sum(b["count"] for b in acct[0].get("bots") or [])
+    for r in refs:
+        if not r["dimensions"].get("refererHost"):
+            r["count"] = max(0, r["count"] - nbots)
+            break
     internal = sum(r["count"] for r in refs
                    if "ancienttrees.app" in (r["dimensions"].get("refererHost") or ""))
     total_pv = sum(r["count"] for r in refs) or 1
     nav = ("\n- Moved between our own pages: %d of %d pageviews (%.0f%%); the rest arrived "
            "from search or straight in. Cookieless means no session, so which page led to "
            "which cannot be measured." % (internal, total_pv, 100.0 * internal / total_pv))
-    return ("Web Analytics (beacon, real browsers, cookieless):\n"
+    return ("Web Analytics (beacon, cookieless), PEOPLE only: a desktop pageview with no "
+            "referrer is counted as a bot and sits in the last column, nowhere else.\n"
             "Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.\n%s\n- Top paths: %s\n"
             "- Referrers: %s%s\n- Countries: %s\n- Devices: %s%s"
             % (trend, top, _dim(refs, "refererHost"), nav,
