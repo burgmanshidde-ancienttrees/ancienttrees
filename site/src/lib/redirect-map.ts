@@ -454,6 +454,29 @@ export function buildRedirectStubs(): RedirectStub[] {
     });
   }
 
+  // The same tree redirects for every TRANSLATED copy of a city (2026-10-01).
+  // Every stub above writes only the English path, so a renamed or removed
+  // tree left its /pt/, /ja/, /de/ ... twin as a 404: Search Console listed
+  // five of them. A translated city has real tree pages at /<lang>/<city>/<slug>
+  // (fallback cities link their trees to English and have none), so the same
+  // relative target resolves there too.
+  const LANGS = ["de", "es", "fr", "it", "ja", "nl", "pt"];
+  const treeStubs = stubs.filter(
+    (s) => s.title === "Moved: this tree" && s.outputPath.split("/").length === 2,
+  );
+  for (const lang of LANGS) {
+    for (const s of treeStubs) {
+      const city = s.outputPath.split("/")[0];
+      if (!fs.existsSync(path.join(DATA, "i18n", lang, `${city}.json`))) continue;
+      stubs.push({
+        outputPath: `${lang}/${s.outputPath}`,
+        targetRelative: s.targetRelative,
+        canonical: s.canonical.replace(`${BASE_URL}/`, `${BASE_URL}/${lang}/`),
+        title: s.title,
+      });
+    }
+  }
+
   return stubs;
 }
 

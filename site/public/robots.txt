@@ -11,6 +11,9 @@
 #
 # The pages are the thing to read. /api/ is the app's own data feed, not a
 # page, and it is excluded because a JSON dump belongs in nobody's index.
+# /rest/v1/ and /auth/v1/ are the sign-in service's paths, which Google read
+# out of our scripts and tried as pages (four 404s in Search Console,
+# 2026-10-01). They live on another host and were never pages here.
 #
 # The collection itself is protected by copyright and by the EU database
 # right; the terms are at /terms and the full notice is at /sources. Bulk
@@ -20,6 +23,8 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /rest/v1/
+Disallow: /auth/v1/
 
 Sitemap: https://ancienttrees.app/sitemap.xml
 Sitemap: https://ancienttrees.app/sitemap-recrawl.xml
