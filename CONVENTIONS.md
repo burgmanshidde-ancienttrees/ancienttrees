@@ -2669,3 +2669,52 @@ Hidde asked whether an action like "Add a tree" should carry at least one line o
 **One word for pending.** Google Maps shows one "Pending" for an edit, a photo or a new place, then "Published". Ours is "Sent to us" for a tree you added and for a photo of one of ours alike, then "On the map" or "on the tree's page".
 
 **A confirmation that needs no answer is Apple's grey HUD.** Music's "Added to Library" and Photos' "Saved": a rounded material square in the middle, a checkmark over one or two words, gone in about a second and a half, nothing to tap. Used for "Tree saved" (Kit/DoneHUD.swift). Anything offering Undo is a Google Maps snackbar at the bottom instead.
+
+## Recognising a contributor: ambassador, Pioneer, Local Guide (2026-10-02)
+
+Hidde, the day a stranger put nine photographs on two Paris pages within
+minutes of installing the app: "email each person that adds trees to become
+the cities ambassador - ask them thanks and what do they think of the list can
+they add more - maybe we can even give them special tag if they want - share
+some responsibility and amplify them."
+
+**komoot Pioneers** (komoot.com/pioneers, fetched 2026-10-02): status is PER
+REGION and EARNED: record, upload photos, create Highlights, and "get the most
+upvotes in your region, you'll become the Pioneer." Recognition is "the golden
+badge" on the profile and on every recommendation they make, plus membership of
+"the komoot Pioneers Club" with "invite-only events and insider giveaways." What
+they are asked for is exactly what they already do: Highlights with "a good,
+descriptive name," "detailed, insightful tips," "beautiful, inspiring photos."
+
+**Google Local Guides** (support.google.com/local-guides/answer/6225851, fetched
+2026-10-02): points per contribution (photo 5, review 10, adding a place 15),
+ten levels, and "the Local Guides badge shown on a user's contributions
+indicates they made enough contributions to reach Level 4." Nobody is written
+to; members "review the email preferences on your Local Guides settings page."
+Higher levels unlock "early access to Google features and invites to special
+events."
+
+**Yelp Elite and TripAdvisor Destination Experts** (from memory, not fetched):
+both are per city or per destination forum, both carry a visible tag beside the
+name, and both are reached by nomination or invitation after sustained
+contributing, which is the closest model to a personal mail.
+
+**What the convention says, in three lines.** The status is tied to a PLACE,
+never global. It is a BADGE beside the person's name on their own
+contributions, nothing more elaborate. And it is EARNED by the same acts we
+already count (trees sent, photographs published), so the rule for who gets it
+is arithmetic rather than a favour: komoot's "most upvotes in your region" is,
+for us, "most trees or photographs live in this place," and at our volume the
+Paris reader already is that person for Paris.
+
+**Where we genuinely differ.** (1) The mail: none of the references write to a
+contributor to offer a role; Yelp and TripAdvisor come closest. Ours is a
+personal note from Hidde, under hard rule 4 (he sends, a session drafts), and
+it is NOT the automatic "your photo is live" mail he switched off the same
+hour; the difference is a person writing once versus a system writing every
+time. (2) The name: every reference prints the badge beside a public profile,
+and this site publishes no person's name (2026-08-11). So the tag can show
+INSIDE the app on their own trees and account today, and appears on the public
+site only if the person asks for it, which is the question the mail ends with.
+(3) The tag is a column on an account, which is personal data under the
+accounts rule (2026-08-14) and needs Hidde's explicit yes before it is built.
