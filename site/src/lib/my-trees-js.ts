@@ -120,7 +120,7 @@ export const MY_TREES_JS = `
   function photoState(status) {
     if (status === 'published') return "Your photo is on the tree's page";
     if (status === 'declined') return '';
-    return 'Your photo, waiting for a look';
+    return 'Sent to us';
   }
 
   function clear() {

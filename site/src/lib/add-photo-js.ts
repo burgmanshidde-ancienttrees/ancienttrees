@@ -56,7 +56,7 @@ export const ADD_PHOTO_JS = `
   var msgBadFile = box.getAttribute('data-msg-badfile') || 'That picture could not be read. Try another one.';
   var msgThanks = box.getAttribute('data-msg-thanks') || 'Thank you. We look at every photograph before it goes on a page, and you will hear what happened to yours.';
   var msgFailed = box.getAttribute('data-msg-failed') || 'That did not go through. Try again in a moment.';
-  var msgWaiting = box.getAttribute('data-msg-waiting') || 'Your photo, waiting for a look';
+  var msgWaiting = box.getAttribute('data-msg-waiting') || 'Sent to us';
   var msgOnPage = box.getAttribute('data-msg-onpage') || 'Your photo is on this page';
   var msgSeeMine = box.getAttribute('data-msg-seemine') || 'See it in My trees';
   // The button's own label, in whichever language rendered it (quiet or not),

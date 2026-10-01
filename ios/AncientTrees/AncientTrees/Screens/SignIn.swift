@@ -39,6 +39,9 @@ struct SignInSheet: View {
     @State private var code = ""
     @State private var rawNonce = ""
     @State private var merged: Int?
+    /// The sheet stands as tall as what it holds, measured (the add sheet's
+    /// fix of 2026-09-28), so no fixed number leaves a gap to explain.
+    @State private var askHeight: CGFloat = 470
     @FocusState private var focus: Field?
 
     private enum Field { case email, code }
@@ -60,8 +63,9 @@ struct SignInSheet: View {
                 }
             }
             .padding(.horizontal, 22)
-            .padding(.top, 22)
-            .padding(.bottom, 26)
+            .padding(.top, 28)
+            .padding(.bottom, 16)
+            .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { askHeight = max(320, $0) }
         }
         // A cross in the corner rather than a "Not now" at the bottom (Hidde,
         // 2026-08-24). A sheet is dismissed by its corner everywhere, and a
@@ -88,7 +92,10 @@ struct SignInSheet: View {
         // left nearly half the sheet empty under the two buttons, which reads
         // as a screen that failed to load rather than a short one. The height
         // follows what is actually on it.
-        .presentationDetents([.height(Launch.emailSignIn ? 660 : 470), .large])
+        .presentationDetents([.height(askHeight), .large])
+        // SOLID, not the system's glass: on a glass sheet the page behind
+        // showed through the email button as a green blur (2026-10-01).
+        .presentationBackground(Color(.systemBackground))
         .presentationDragIndicator(.visible)
         // One container with a name, so the layout sweep can measure the
         // sheet on its own rather than together with the screen behind it.
@@ -98,47 +105,71 @@ struct SignInSheet: View {
 
     // MARK: - the ask
 
+    /// THE SHAPE OF AllTrails' AND Airbnb's SHEET (Hidde, 2026-10-01: "do we
+    /// need this text underneath? less is more", "where is email smart link
+    /// login?", "the vertical alignments once again feels off"). A title and
+    /// a line, three sign-in buttons of one size and one spacing, then one
+    /// line linking the terms. Email is a third button that opens its field,
+    /// rather than a field always on show below an "or".
     private var ask: some View {
-        VStack(spacing: 18) {
+        VStack(alignment: .leading, spacing: 24) {
             header
 
-            SignInWithAppleButton(.continue) { request in
-                rawNonce = Self.nonce()
-                request.requestedScopes = [.email]
-                request.nonce = Self.sha256(rawNonce)
-            } onCompletion: { result in
-                guard case .success(let auth) = result,
-                      let cred = auth.credential as? ASAuthorizationAppleIDCredential,
-                      let data = cred.identityToken,
-                      let token = String(data: data, encoding: .utf8) else { return }
-                Task {
-                    await account.signInWithApple(idToken: token, nonce: rawNonce)
-                    await finishIfSignedIn()
+            VStack(spacing: 12) {
+                SignInWithAppleButton(.continue) { request in
+                    rawNonce = Self.nonce()
+                    request.requestedScopes = [.email]
+                    request.nonce = Self.sha256(rawNonce)
+                } onCompletion: { result in
+                    guard case .success(let auth) = result,
+                          let cred = auth.credential as? ASAuthorizationAppleIDCredential,
+                          let data = cred.identityToken,
+                          let token = String(data: data, encoding: .utf8) else { return }
+                    Task {
+                        await account.signInWithApple(idToken: token, nonce: rawNonce)
+                        await finishIfSignedIn()
+                    }
                 }
-            }
-            .signInWithAppleButtonStyle(scheme == .dark ? .white : .black)
-            .frame(height: 52)
-            .clipShape(.capsule)
+                .signInWithAppleButtonStyle(scheme == .dark ? .white : .black)
+                .frame(height: 52)
+                .clipShape(.capsule)
 
-            // Google under Apple, both above the typed route, which is the
-            // order every consumer app has settled on: the taps first, the
-            // typing second. Both buttons are the provider's own, to the
-            // provider's own specification, which is the whole rule.
-            GoogleSignInButton {
-                Task {
-                    await account.signInWithGoogle()
-                    await finishIfSignedIn()
+                GoogleSignInButton {
+                    Task {
+                        await account.signInWithGoogle()
+                        await finishIfSignedIn()
+                    }
                 }
-            }
-            .disabled(account.state == .working)
+                .disabled(account.state == .working)
 
-            if Launch.emailSignIn {
-            HStack(spacing: 12) {
-                Rectangle().fill(.quaternary).frame(height: 1)
-                Text("or").font(.footnote).foregroundStyle(.secondary)
-                Rectangle().fill(.quaternary).frame(height: 1)
+                if Launch.emailSignIn { emailRoute }
             }
 
+            problemLine
+            footer
+        }
+    }
+
+    @State private var emailOpen = false
+
+    /// The third way in, closed until asked for.
+    @ViewBuilder private var emailRoute: some View {
+        if !emailOpen {
+            Button {
+                withAnimation(.snappy) { emailOpen = true }
+                focus = .email
+            } label: {
+                Label("Continue with email", systemImage: "envelope")
+                    .font(.system(size: 19, weight: .medium))
+                    .foregroundStyle(Brand.ink)
+                    .frame(maxWidth: .infinity).frame(height: 52)
+                    .background(Color(.systemBackground), in: .capsule)
+                    .overlay { Capsule().strokeBorder(Color(.separator), lineWidth: 1) }
+                    .contentShape(.capsule)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("signin-email")
+        } else {
             TextField("you@example.com", text: $address)
                 .textContentType(.emailAddress)
                 .keyboardType(.emailAddress)
@@ -147,7 +178,7 @@ struct SignInSheet: View {
                 .submitLabel(.go)
                 .focused($focus, equals: .email)
                 .onSubmit { Task { await account.sendCode(to: address) } }
-                .padding(.horizontal, 16).padding(.vertical, 14)
+                .padding(.horizontal, 18).frame(height: 52)
                 .background(Color(.secondarySystemBackground), in: .capsule)
 
             Button {
@@ -158,20 +189,15 @@ struct SignInSheet: View {
                     if account.state == .working { ProgressView().tint(.white) }
                     Text(Launch.emailCode ? "Email me a code" : "Email me a sign-in link")
                 }
-                .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 15)
+                .font(.headline).foregroundStyle(.white)
+                .frame(maxWidth: .infinity).frame(height: 52)
+                .background(brand, in: .capsule)
             }
-            .buttonStyle(.borderedProminent)
-            .tint(brand)
-            .clipShape(.capsule)
-            .disabled(account.state == .working)
-            }
-
-            problemLine
-            footer
+            .buttonStyle(.plain)
+            .disabled(account.state == .working || !address.contains("@"))
         }
     }
 
-    // MARK: - the code
 
     private func codeEntry(_ to: String) -> some View {
         VStack(spacing: 18) {
@@ -290,67 +316,16 @@ struct SignInSheet: View {
     /// The privacy line is not small print here, it is part of the offer. The
     /// honest version of it converts better than a vague one, and it is the same
     /// sentence the website has carried since the account track opened.
+    /// One line, links inline, which is what every reference sheet carries
+    /// under its buttons. The paragraph about what we store went on
+    /// 2026-10-01 (Hidde: "do we need this text underneath? less is more");
+    /// the privacy notice the line links to says it in full.
     private var footer: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            // Same correction as Profile's, same day. The "no advertising" and
-            // the deletion promise both survive because both are still true;
-            // "Nothing else" did not.
-            Text("We store your email address and what you collect: the trees you save, the ones you photograph, and where they stand. No advertising, and you can delete the lot from this app.")
-                .font(.caption2).foregroundStyle(.secondary)
-                // LEADING, and so is everything else on this sheet, which is
-                // the point. Hidde chose it on 2026-09-01 after seeing both
-                // versions photographed side by side ("rechts ziet er beter
-                // uit").
-                //
-                // How it got here matters, because the same paragraph was
-                // changed three times that day and only the last change was a
-                // decision. An appfit DRIFT finding on iOS 18.5 had the gate
-                // red; one run answered it with .frame(maxWidth: .infinity),
-                // which measured identically before and after and therefore did
-                // nothing; a second gave this ONE paragraph leading alignment,
-                // which moved the number and left it flush left with its
-                // centred twin underneath, on a sheet centred everywhere else.
-                // That was reverted, because a layout gate does not get to
-                // redesign a screen one element at a time.
-                //
-                // What replaced it is the whole sheet, deliberately: Apple's
-                // own guidance moved onboarding and alert text to leading
-                // alignment in the new design system (WWDC25, "Get to know the
-                // new design system"), and one margin for the mark, the
-                // headline, the subtitle, both small lines and the links reads
-                // calmer than five separate centres. The DRIFT finding going
-                // quiet is a side effect of that decision and was not its
-                // reason.
-                .multilineTextAlignment(.leading)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            // Both of these were text a finger has to find: "Privacy" measured
-            // 37 by 13 points and "Not now" 55 by 17, against Apple's 44 by 44.
-            // The words stay the same size; the area around them is the target.
-            // The acceptance line every consumer app carries under this button,
-            // and the reason it is here rather than on a checkbox: a licence to
-            // use what you send is granted by agreeing to terms once, not by
-            // answering a question per photograph. Added 2026-08-24 with the
-            // terms themselves; the website's sign-in dialog carries the same
-            // sentence, because a person who signs in on a laptop and
-            // photographs on a phone is one person.
-            Text("By continuing you agree to the Terms and the Privacy notice.")
-                .font(.caption2).foregroundStyle(.secondary)
-                .multilineTextAlignment(.leading)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            HStack(spacing: 18) {
-                Link("Terms", destination: URL(string: "https://ancienttrees.app/terms")!)
-                    .font(.caption2)
-                    .frame(minWidth: 44, minHeight: 44)
-                    .contentShape(.rect)
-                Link("Privacy", destination: URL(string: "https://ancienttrees.app/privacy")!)
-                    .font(.caption2)
-                    .frame(minWidth: 44, minHeight: 44)
-                    .contentShape(.rect)
-            }
-
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.top, 2)
+        Text("By continuing you agree to the [Terms](https://ancienttrees.app/terms) and the [Privacy notice](https://ancienttrees.app/privacy).")
+            .font(.footnote).foregroundStyle(.secondary)
+            .tint(brand)
+            .multilineTextAlignment(.leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func finishIfSignedIn() async {

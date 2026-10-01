@@ -286,7 +286,10 @@ struct CollectView: View {
             statsRow
             // Signed out this opened the sign-in sheet, which the lane's own
             // button already does one screenful lower. See signedOutLane.
-            if showsYourCollection { actionRow }
+            // NO ADD BUTTON HERE (Hidde, 2026-10-01: "I want to get rid of
+            // the big add a tree button here. There is already a big button in
+            // the menu"). Instagram and Strava, whose tab bar carries the make
+            // button, keep it off the profile; the tab bar's camera is ours.
             // YOUR OWN TREES COUNT AS HAVING STARTED. This asked only about
             // ours, so somebody whose whole collection is trees they
             // photographed themselves was told "your first tree is 1.3 km
@@ -380,55 +383,6 @@ struct CollectView: View {
         .accessibilityLabel("Settings")
         .accessibilityIdentifier("mytrees-settings")
     }
-
-    /// The row Polarsteps runs under the numbers: the thing you make, wide and
-    /// filled, and the way to find people beside it (Hidde, 2026-08-26: "doe
-    /// voeg boom toe ook maar op dezelfde plek als bij polarsteps en daar dan
-    /// naast die vriend uitnodigen knop").
-    ///
-    /// Theirs is a trip and ours is a tree, which is the same sentence: the
-    /// one thing this page is a record of. The person button moved here out of
-    /// the name row, where it had been sitting beside a pencil that has since
-    /// gone, so the name row is now just the name.
-    private var actionRow: some View {
-        HStack(spacing: 12) {
-            Button { navigator.collectNearby = true } label: {
-                Label("Add a tree", systemImage: "camera.fill")
-                    .font(.callout.weight(.semibold))
-                    // A THREE WORD BUTTON MUST NOT BECOME "Add a tr...".
-                    // Same cap as the counts and the stat row above, plus a
-                    // little shrink, because a control that cannot say what it
-                    // does is worse than one drawn slightly small.
-                    .dynamicTypeSize(...DynamicTypeSize.accessibility1)
-                    .lineLimit(1).minimumScaleFactor(0.7)
-                    .foregroundStyle(Brand.ground)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 52)
-                    .background(Brand.moss, in: .capsule)
-            }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("mytrees-add-tree")
-
-            if account.isSignedIn {
-                Button { findingPeople = true } label: {
-                    Image(systemName: "person.badge.plus")
-                        .font(.system(size: 18, weight: .medium))
-                        .foregroundStyle(Brand.ink)
-                        .frame(width: 52, height: 52)
-                        .background(Brand.surface, in: .capsule)
-                        .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Find people")
-                .accessibilityIdentifier("mytrees-find-people")
-            }
-        }
-    }
-
-
-
-
-
 
     private var oldBody: some View {
         ScrollView {
@@ -840,6 +794,24 @@ struct CollectView: View {
                 }
             }
             Spacer(minLength: 0)
+            // FIND PEOPLE BESIDE THE NAME (Hidde, 2026-10-01: "move the friend
+            // button up next to the profile name"). Instagram puts its
+            // discover-people icon in the profile's own header and Strava in
+            // the top corner of the You tab: a small icon, never a big button.
+            // Same 44pt circle and hairline as the other icon buttons here.
+            if account.isSignedIn {
+                Button { findingPeople = true } label: {
+                    Image(systemName: "person.badge.plus")
+                        .font(.system(size: 17, weight: .medium))
+                        .foregroundStyle(Brand.ink)
+                        .frame(width: 44, height: 44)
+                        .background(Brand.surface, in: .circle)
+                        .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Find people")
+                .accessibilityIdentifier("mytrees-find-people")
+            }
         }
         // NO identifier on this row, and that is the fix rather than an
         // omission (2026-09-08). It carried "mytrees-who" plus

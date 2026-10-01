@@ -203,7 +203,13 @@ final class Sightings {
             case .declined:
                 return nil
             case .mine, .sent, .checking:
-                return "Your photo, waiting for a look"
+                // THE SAME WORDS as a tree only you have (Hidde, 2026-10-01:
+                // "status sent to us, status waiting for a look and no status,
+                // what is the difference?"). There was none worth a second
+                // phrase: both mean we have it and have not used it yet.
+                // Google Maps does the same with one "Pending" for an edit,
+                // a photo or a new place.
+                return "Sent to us"
             }
         }
 
