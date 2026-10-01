@@ -202,6 +202,7 @@ The same rule the whole file runs on still applies: while volume is tiny, say so
 
 - **Make the pages that stay indexed better, before making new ones.** In order: a photograph on a tree that has none (seolearn measures photographed pages converting far better), a recognition line, a pin upgraded on real evidence. Depth goes to the cities on the digest's roster, which until search recovers includes the frozen 09-27 roster (data/depth-roster-frozen.json), because the live one reads near zero everywhere.
 - **Trees into places that already exist beat new places.** A tree added to a live US city is a new page with a real story; a new place is three or more pages, two of them thin. Open a new place only with four verified trees in hand (preflight refuses fewer), and never a place that would sit on the noindex list the day it opens.
+- **At most 20 new trees in any 24 hours** (`check_publishing_pace()` in preflight, against the commit of a day ago). The index went from ~800 known pages in early August to 5,900 by 09-21, with ~200 trees in the five days before the update: the burst itself is the scaled-content shape. Verified trees over the limit wait in data/research/ for the next day.
 - **No new page TYPES and no new templated page sets** until search is back. Translations wait too: a translation is a second URL for text we already have, which is the exact pattern that was punished.
 - **What does not change:** US first, the hard rules, the research bar, reader submissions first.
 

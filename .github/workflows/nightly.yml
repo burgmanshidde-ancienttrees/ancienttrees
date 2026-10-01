@@ -187,6 +187,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # preflight's publishing-pace check compares against the commit of
+          # 24 hours ago, which a depth-1 clone does not have (2026-10-01).
+          fetch-depth: 0
 
       # The night run's own self-check builds via Astro now (npx astro
       # build), and site/package.json demands Node >=22.12 - Vite treats
