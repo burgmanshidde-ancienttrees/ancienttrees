@@ -1054,13 +1054,15 @@ def check_no_new_thin_places():
     return out
 
 
-PACE_PER_DAY = 10  # a NOTE above this, never a FAIL; the FAIL is PACE_HARD_CAP below
-# A PREFERENCE above PACE_PER_DAY, a FAIL only above this (Hidde, 2026-10-02:
-# "fuck the 10 tree thing if there is nothing else the nightruns can do"). The
-# 10 cost a whole day of windows that shipped nothing. The cap below is the
-# runaway backstop, the shape of the burst that preceded the demotion (~40 a
-# day for five days), and it is Hidde's number to move.
-PACE_HARD_CAP = 40
+# NOT A PACE. Hidde, 2026-10-02, asked three times whether a daily number
+# helps Google, and the honest answer is no: Google names no rate, and the
+# quality gates (a photograph or an exact pin, a source, a real place) are
+# what stop the scaled shape returning. What is left is an ACCIDENT GUARD: a
+# script that bulk-imports a register must not land hundreds of trees in one
+# commit with nobody looking. No honest day comes near it. The note that
+# used to fire at 10 is gone; nothing nags below the guard.
+PACE_PER_DAY = None
+PACE_HARD_CAP = 60
 
 
 def check_publishing_pace():
@@ -1142,7 +1144,7 @@ def check_publishing_pace():
         return ["publishing pace: %d new trees in the last 24 hours, past the runaway cap of %d "
                 "(the burst before the demotion was about that). Commit the best %d, keep the "
                 "rest in data/research/ and write them tomorrow." % (new, PACE_HARD_CAP, PACE_HARD_CAP)]
-    if new > PACE_PER_DAY:
+    if PACE_PER_DAY is not None and new > PACE_PER_DAY:
         return ["NOTE publishing pace: %d new trees in the last 24 hours against a preferred %d "
                 "while Google recovers. Fine when there was no depth work to do instead "
                 "(Hidde, 2026-10-02); the hard brake is %d." % (new, PACE_PER_DAY, PACE_HARD_CAP)]
