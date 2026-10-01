@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 fifth continuation: nothing shipped
+
+Pulled; only claim is Houston (held, trees need a pin or photo first and a day under the pace limit). READY leads still 4, pace gate still refuses write passes. The photo shortlist's candidates (palm leaves, an egret, a street view) fail the plant gate, so nothing was worth approving. Next run with allowance writes New York's two READY trees.
+
 ## 2026-10-01 fourth continuation: two reader photographs, Houston held by the gates
 
 - Rung 1: two new reader photographs of Paris's Turkey Oak of Square Rene-Le Gall (par_033), which had none. Looked at both: whole tree in leaf ships as the lead, the trunk and bark close-up with lobed leaves ships beside it (`add`). Verdicts written in data/judgements.json (judgement.py --scan skipped them because the publish script had already cleared the queue, so I stubbed them with a small script); preflight 0 problems.
