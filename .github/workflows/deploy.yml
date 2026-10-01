@@ -106,6 +106,12 @@ jobs:
       - name: Date the pages that changed
         run: python3 scripts/lastmod.py --write
 
+      # The recovery noindex list (2026-10-01), recomputed so a place opened
+      # since the last commit does not ship indexable language copies and a
+      # template question page. Not committed here, like the date map above.
+      - name: Recompute the noindex list
+        run: python3 scripts/thin_pages.py
+
       - name: Build site
         working-directory: site
         run: npx astro build

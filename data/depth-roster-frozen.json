@@ -1,0 +1,1049 @@
+{
+ "source": "DATA.md 2026-09-27 roster, the last digest before Google's 09-28 demotion",
+ "why": "Depth goes where readers were. Since 09-28 Search Console reads near zero everywhere, so the live roster would allow depth nowhere. daily_digest.py adds these cities to the roster until search recovers; delete this file then.",
+ "dropped_as_bot_demand": [
+  "sao-paulo",
+  "jauze",
+  "wilparting",
+  "komjatice",
+  "peesten"
+ ],
+ "cities": {
+  "singapore": {
+   "clicks": 4,
+   "impressions": 359
+  },
+  "lisbon": {
+   "clicks": 5,
+   "impressions": 316
+  },
+  "amsterdam": {
+   "clicks": 7,
+   "impressions": 284
+  },
+  "barcelona": {
+   "clicks": 3,
+   "impressions": 284
+  },
+  "seville": {
+   "clicks": 7,
+   "impressions": 259
+  },
+  "bath": {
+   "clicks": 9,
+   "impressions": 255
+  },
+  "tenerife": {
+   "clicks": 3,
+   "impressions": 241
+  },
+  "berlin": {
+   "clicks": 5,
+   "impressions": 224
+  },
+  "rome": {
+   "clicks": 3,
+   "impressions": 221
+  },
+  "palermo": {
+   "clicks": 2,
+   "impressions": 216
+  },
+  "oahu": {
+   "clicks": 1,
+   "impressions": 213
+  },
+  "tokyo": {
+   "clicks": 5,
+   "impressions": 209
+  },
+  "munich": {
+   "clicks": 8,
+   "impressions": 206
+  },
+  "new-york": {
+   "clicks": 3,
+   "impressions": 188
+  },
+  "edinburgh": {
+   "clicks": 8,
+   "impressions": 173
+  },
+  "brussels": {
+   "clicks": 4,
+   "impressions": 171
+  },
+  "dublin": {
+   "clicks": 6,
+   "impressions": 168
+  },
+  "brisbane": {
+   "clicks": 6,
+   "impressions": 163
+  },
+  "paris": {
+   "clicks": 2,
+   "impressions": 163
+  },
+  "malaga": {
+   "clicks": 7,
+   "impressions": 161
+  },
+  "vienna": {
+   "clicks": 4,
+   "impressions": 161
+  },
+  "south-korea": {
+   "clicks": 0,
+   "impressions": 152
+  },
+  "london": {
+   "clicks": 3,
+   "impressions": 147
+  },
+  "alicante": {
+   "clicks": 1,
+   "impressions": 146
+  },
+  "athens": {
+   "clicks": 4,
+   "impressions": 130
+  },
+  "cadiz": {
+   "clicks": 5,
+   "impressions": 125
+  },
+  "pamplona": {
+   "clicks": 1,
+   "impressions": 125
+  },
+  "porto": {
+   "clicks": 1,
+   "impressions": 124
+  },
+  "prague": {
+   "clicks": 11,
+   "impressions": 119
+  },
+  "cagliari": {
+   "clicks": 3,
+   "impressions": 116
+  },
+  "glasgow": {
+   "clicks": 2,
+   "impressions": 110
+  },
+  "ede": {
+   "clicks": 0,
+   "impressions": 100
+  },
+  "hinode": {
+   "clicks": 0,
+   "impressions": 98
+  },
+  "palma-de-mallorca": {
+   "clicks": 2,
+   "impressions": 95
+  },
+  "los-angeles": {
+   "clicks": 1,
+   "impressions": 94
+  },
+  "madrid": {
+   "clicks": 0,
+   "impressions": 93
+  },
+  "arnhem": {
+   "clicks": 1,
+   "impressions": 92
+  },
+  "milan": {
+   "clicks": 1,
+   "impressions": 92
+  },
+  "krakow": {
+   "clicks": 3,
+   "impressions": 91
+  },
+  "austin": {
+   "clicks": 0,
+   "impressions": 91
+  },
+  "montreal": {
+   "clicks": 9,
+   "impressions": 90
+  },
+  "houston": {
+   "clicks": 4,
+   "impressions": 90
+  },
+  "sintra": {
+   "clicks": 0,
+   "impressions": 87
+  },
+  "florence": {
+   "clicks": 0,
+   "impressions": 86
+  },
+  "the-hague": {
+   "clicks": 1,
+   "impressions": 84
+  },
+  "amerongen": {
+   "clicks": 0,
+   "impressions": 84
+  },
+  "new-orleans": {
+   "clicks": 1,
+   "impressions": 83
+  },
+  "switzerland": {
+   "clicks": 0,
+   "impressions": 83
+  },
+  "reykjavik": {
+   "clicks": 0,
+   "impressions": 80
+  },
+  "liverpool": {
+   "clicks": 1,
+   "impressions": 78
+  },
+  "valencia": {
+   "clicks": 3,
+   "impressions": 77
+  },
+  "guerneville": {
+   "clicks": 0,
+   "impressions": 76
+  },
+  "copenhagen": {
+   "clicks": 5,
+   "impressions": 75
+  },
+  "chicago": {
+   "clicks": 2,
+   "impressions": 72
+  },
+  "nara": {
+   "clicks": 2,
+   "impressions": 72
+  },
+  "warsaw": {
+   "clicks": 1,
+   "impressions": 72
+  },
+  "istanbul": {
+   "clicks": 4,
+   "impressions": 70
+  },
+  "rogalin": {
+   "clicks": 1,
+   "impressions": 70
+  },
+  "cyprus": {
+   "clicks": 2,
+   "impressions": 69
+  },
+  "nijmegen": {
+   "clicks": 0,
+   "impressions": 69
+  },
+  "cork": {
+   "clicks": 3,
+   "impressions": 68
+  },
+  "dallas": {
+   "clicks": 1,
+   "impressions": 68
+  },
+  "venice": {
+   "clicks": 1,
+   "impressions": 68
+  },
+  "hobart": {
+   "clicks": 3,
+   "impressions": 66
+  },
+  "takeo": {
+   "clicks": 0,
+   "impressions": 65
+  },
+  "fukuoka": {
+   "clicks": 2,
+   "impressions": 64
+  },
+  "monterey": {
+   "clicks": 2,
+   "impressions": 64
+  },
+  "netherlands": {
+   "clicks": 2,
+   "impressions": 63
+  },
+  "ottawa": {
+   "clicks": 2,
+   "impressions": 63
+  },
+  "portland": {
+   "clicks": 2,
+   "impressions": 63
+  },
+  "sydney": {
+   "clicks": 0,
+   "impressions": 63
+  },
+  "kanazawa": {
+   "clicks": 2,
+   "impressions": 60
+  },
+  "sardinia": {
+   "clicks": 0,
+   "impressions": 60
+  },
+  "greece": {
+   "clicks": 2,
+   "impressions": 58
+  },
+  "vilnius": {
+   "clicks": 0,
+   "impressions": 57
+  },
+  "coimbra": {
+   "clicks": 1,
+   "impressions": 56
+  },
+  "borrowdale": {
+   "clicks": 0,
+   "impressions": 56
+  },
+  "fulufjallet": {
+   "clicks": 2,
+   "impressions": 55
+  },
+  "beijing": {
+   "clicks": 1,
+   "impressions": 55
+  },
+  "madeira": {
+   "clicks": 1,
+   "impressions": 55
+  },
+  "boston": {
+   "clicks": 0,
+   "impressions": 55
+  },
+  "san-francisco": {
+   "clicks": 0,
+   "impressions": 55
+  },
+  "seoul": {
+   "clicks": 1,
+   "impressions": 54
+  },
+  "utrecht": {
+   "clicks": 3,
+   "impressions": 54
+  },
+  "osaka": {
+   "clicks": 1,
+   "impressions": 53
+  },
+  "crete": {
+   "clicks": 4,
+   "impressions": 52
+  },
+  "hong-kong": {
+   "clicks": 1,
+   "impressions": 52
+  },
+  "budapest": {
+   "clicks": 1,
+   "impressions": 51
+  },
+  "kyoto": {
+   "clicks": 1,
+   "impressions": 51
+  },
+  "leipzig": {
+   "clicks": 1,
+   "impressions": 51
+  },
+  "granada": {
+   "clicks": 2,
+   "impressions": 50
+  },
+  "logan-ohio": {
+   "clicks": 1,
+   "impressions": 50
+  },
+  "seattle": {
+   "clicks": 1,
+   "impressions": 49
+  },
+  "geneva": {
+   "clicks": 3,
+   "impressions": 48
+  },
+  "ibiza": {
+   "clicks": 2,
+   "impressions": 47
+  },
+  "melbourne": {
+   "clicks": 3,
+   "impressions": 47
+  },
+  "toronto": {
+   "clicks": 0,
+   "impressions": 47
+  },
+  "leuven": {
+   "clicks": 7,
+   "impressions": 46
+  },
+  "haarlem": {
+   "clicks": 1,
+   "impressions": 46
+  },
+  "stockholm": {
+   "clicks": 2,
+   "impressions": 45
+  },
+  "zurich": {
+   "clicks": 5,
+   "impressions": 45
+  },
+  "leeuwarden": {
+   "clicks": 0,
+   "impressions": 45
+  },
+  "cambridge": {
+   "clicks": 1,
+   "impressions": 44
+  },
+  "germany": {
+   "clicks": 1,
+   "impressions": 44
+  },
+  "dubrovnik": {
+   "clicks": 0,
+   "impressions": 44
+  },
+  "sweden": {
+   "clicks": 0,
+   "impressions": 44
+  },
+  "naples": {
+   "clicks": 1,
+   "impressions": 43
+  },
+  "washington-dc": {
+   "clicks": 0,
+   "impressions": 43
+  },
+  "nice": {
+   "clicks": 1,
+   "impressions": 42
+  },
+  "palo-alto": {
+   "clicks": 0,
+   "impressions": 42
+  },
+  "strasbourg": {
+   "clicks": 1,
+   "impressions": 41
+  },
+  "las-vegas": {
+   "clicks": 0,
+   "impressions": 41
+  },
+  "amersfoort": {
+   "clicks": 2,
+   "impressions": 40
+  },
+  "runnymede": {
+   "clicks": 0,
+   "impressions": 40
+  },
+  "vancouver": {
+   "clicks": 1,
+   "impressions": 39
+  },
+  "philadelphia": {
+   "clicks": 0,
+   "impressions": 38
+  },
+  "kagoshima": {
+   "clicks": 1,
+   "impressions": 37
+  },
+  "perth": {
+   "clicks": 0,
+   "impressions": 37
+  },
+  "verona": {
+   "clicks": 5,
+   "impressions": 36
+  },
+  "eindhoven": {
+   "clicks": 3,
+   "impressions": 36
+  },
+  "mexico-city": {
+   "clicks": 1,
+   "impressions": 36
+  },
+  "segovia": {
+   "clicks": 1,
+   "impressions": 36
+  },
+  "sequoia-national-park": {
+   "clicks": 0,
+   "impressions": 35
+  },
+  "sorrento": {
+   "clicks": 0,
+   "impressions": 35
+  },
+  "tallinn": {
+   "clicks": 3,
+   "impressions": 34
+  },
+  "helsinki": {
+   "clicks": 1,
+   "impressions": 34
+  },
+  "oslo": {
+   "clicks": 1,
+   "impressions": 34
+  },
+  "bristol": {
+   "clicks": 0,
+   "impressions": 33
+  },
+  "glastonbury": {
+   "clicks": 0,
+   "impressions": 33
+  },
+  "quebec-city": {
+   "clicks": 1,
+   "impressions": 32
+  },
+  "girona": {
+   "clicks": 0,
+   "impressions": 32
+  },
+  "bari": {
+   "clicks": 1,
+   "impressions": 31
+  },
+  "leiden": {
+   "clicks": 2,
+   "impressions": 31
+  },
+  "tricase": {
+   "clicks": 1,
+   "impressions": 31
+  },
+  "bucaco": {
+   "clicks": 0,
+   "impressions": 31
+  },
+  "craigends": {
+   "clicks": 0,
+   "impressions": 31
+  },
+  "pittsburgh": {
+   "clicks": 0,
+   "impressions": 31
+  },
+  "boise": {
+   "clicks": 4,
+   "impressions": 30
+  },
+  "luxembourg-city": {
+   "clicks": 0,
+   "impressions": 30
+  },
+  "spokane": {
+   "clicks": 1,
+   "impressions": 29
+  },
+  "manchester": {
+   "clicks": 1,
+   "impressions": 28
+  },
+  "taipei": {
+   "clicks": 1,
+   "impressions": 28
+  },
+  "maastricht": {
+   "clicks": 0,
+   "impressions": 28
+  },
+  "sapporo": {
+   "clicks": 0,
+   "impressions": 28
+  },
+  "bangkok": {
+   "clicks": 2,
+   "impressions": 26
+  },
+  "parma": {
+   "clicks": 0,
+   "impressions": 26
+  },
+  "cologne": {
+   "clicks": 0,
+   "impressions": 25
+  },
+  "laren-gelderland": {
+   "clicks": 0,
+   "impressions": 25
+  },
+  "ljubljana": {
+   "clicks": 0,
+   "impressions": 25
+  },
+  "groningen": {
+   "clicks": 1,
+   "impressions": 24
+  },
+  "slovakia": {
+   "clicks": 1,
+   "impressions": 24
+  },
+  "dordrecht": {
+   "clicks": 2,
+   "impressions": 23
+  },
+  "lyon": {
+   "clicks": 1,
+   "impressions": 23
+  },
+  "charleston": {
+   "clicks": 0,
+   "impressions": 23
+  },
+  "frankfurt": {
+   "clicks": 0,
+   "impressions": 23
+  },
+  "jaegerspris-nordskov": {
+   "clicks": 0,
+   "impressions": 23
+  },
+  "naha": {
+   "clicks": 0,
+   "impressions": 23
+  },
+  "schenklengsfeld": {
+   "clicks": 2,
+   "impressions": 22
+  },
+  "cordoba": {
+   "clicks": 2,
+   "impressions": 22
+  },
+  "otoyo": {
+   "clicks": 1,
+   "impressions": 22
+  },
+  "bilu": {
+   "clicks": 0,
+   "impressions": 22
+  },
+  "cardiff": {
+   "clicks": 0,
+   "impressions": 22
+  },
+  "enschede": {
+   "clicks": 0,
+   "impressions": 22
+  },
+  "higashi-hiroshima": {
+   "clicks": 0,
+   "impressions": 22
+  },
+  "limmersdorf": {
+   "clicks": 0,
+   "impressions": 22
+  },
+  "minneapolis": {
+   "clicks": 0,
+   "impressions": 22
+  },
+  "savannah": {
+   "clicks": 0,
+   "impressions": 22
+  },
+  "yabu": {
+   "clicks": 0,
+   "impressions": 22
+  },
+  "bologna": {
+   "clicks": 1,
+   "impressions": 21
+  },
+  "guimaraes": {
+   "clicks": 3,
+   "impressions": 21
+  },
+  "caserta": {
+   "clicks": 0,
+   "impressions": 21
+  },
+  "heidelberg": {
+   "clicks": 0,
+   "impressions": 21
+  },
+  "tilburg": {
+   "clicks": 0,
+   "impressions": 21
+  },
+  "zwolle": {
+   "clicks": 0,
+   "impressions": 21
+  },
+  "catania": {
+   "clicks": 1,
+   "impressions": 20
+  },
+  "belgrade": {
+   "clicks": 0,
+   "impressions": 20
+  },
+  "chadds-ford": {
+   "clicks": 0,
+   "impressions": 20
+  },
+  "menorca": {
+   "clicks": 0,
+   "impressions": 20
+  },
+  "miyazaki": {
+   "clicks": 0,
+   "impressions": 20
+  },
+  "sources": {
+   "clicks": 1,
+   "impressions": 19
+  },
+  "bordeaux": {
+   "clicks": 0,
+   "impressions": 19
+  },
+  "hawaii": {
+   "clicks": 0,
+   "impressions": 19
+  },
+  "olympic-national-park": {
+   "clicks": 0,
+   "impressions": 19
+  },
+  "yakushima": {
+   "clicks": 0,
+   "impressions": 19
+  },
+  "wessobrunn": {
+   "clicks": 2,
+   "impressions": 18
+  },
+  "genoa": {
+   "clicks": 2,
+   "impressions": 18
+  },
+  "nuremberg": {
+   "clicks": 1,
+   "impressions": 18
+  },
+  "gojaus-miskas": {
+   "clicks": 0,
+   "impressions": 18
+  },
+  "llangernyw": {
+   "clicks": 0,
+   "impressions": 18
+  },
+  "oxford": {
+   "clicks": 0,
+   "impressions": 18
+  },
+  "taiwan": {
+   "clicks": 0,
+   "impressions": 18
+  },
+  "toulouse": {
+   "clicks": 2,
+   "impressions": 17
+  },
+  "aarhus": {
+   "clicks": 1,
+   "impressions": 17
+  },
+  "freiburg": {
+   "clicks": 1,
+   "impressions": 17
+  },
+  "padua": {
+   "clicks": 1,
+   "impressions": 17
+  },
+  "bergamo": {
+   "clicks": 0,
+   "impressions": 17
+  },
+  "salzburg": {
+   "clicks": 0,
+   "impressions": 17
+  },
+  "ghent": {
+   "clicks": 1,
+   "impressions": 16
+  },
+  "hallstatt": {
+   "clicks": 1,
+   "impressions": 16
+  },
+  "perouges": {
+   "clicks": 1,
+   "impressions": 16
+  },
+  "biei": {
+   "clicks": 0,
+   "impressions": 16
+  },
+  "macugnaga": {
+   "clicks": 0,
+   "impressions": 16
+  },
+  "salamanca": {
+   "clicks": 0,
+   "impressions": 16
+  },
+  "york": {
+   "clicks": 0,
+   "impressions": 16
+  },
+  "nagoya": {
+   "clicks": 1,
+   "impressions": 15
+  },
+  "timber-creek": {
+   "clicks": 0,
+   "impressions": 15
+  },
+  "tolpuddle": {
+   "clicks": 0,
+   "impressions": 15
+  },
+  "gornja-stubica": {
+   "clicks": 1,
+   "impressions": 14
+  },
+  "stuttgart": {
+   "clicks": 2,
+   "impressions": 14
+  },
+  "bratislava": {
+   "clicks": 0,
+   "impressions": 14
+  },
+  "heinkenszand": {
+   "clicks": 0,
+   "impressions": 14
+  },
+  "helmond": {
+   "clicks": 0,
+   "impressions": 14
+  },
+  "oss": {
+   "clicks": 0,
+   "impressions": 14
+  },
+  "otama": {
+   "clicks": 0,
+   "impressions": 14
+  },
+  "rio-de-janeiro": {
+   "clicks": 0,
+   "impressions": 14
+  },
+  "sulechow": {
+   "clicks": 0,
+   "impressions": 14
+  },
+  "gdansk": {
+   "clicks": 2,
+   "impressions": 13
+  },
+  "alkmaar": {
+   "clicks": 0,
+   "impressions": 13
+  },
+  "den-bosch": {
+   "clicks": 0,
+   "impressions": 13
+  },
+  "derby": {
+   "clicks": 0,
+   "impressions": 13
+  },
+  "graz": {
+   "clicks": 0,
+   "impressions": 13
+  },
+  "hoorn": {
+   "clicks": 0,
+   "impressions": 13
+  },
+  "lausanne": {
+   "clicks": 0,
+   "impressions": 13
+  },
+  "lucca": {
+   "clicks": 0,
+   "impressions": 13
+  },
+  "nantes": {
+   "clicks": 0,
+   "impressions": 13
+  },
+  "simsbury": {
+   "clicks": 0,
+   "impressions": 13
+  },
+  "bilbao": {
+   "clicks": 2,
+   "impressions": 12
+  },
+  "ronda": {
+   "clicks": 1,
+   "impressions": 12
+  },
+  "belfast": {
+   "clicks": 0,
+   "impressions": 12
+  },
+  "buenos-aires": {
+   "clicks": 0,
+   "impressions": 12
+  },
+  "como": {
+   "clicks": 0,
+   "impressions": 12
+  },
+  "deventer": {
+   "clicks": 0,
+   "impressions": 12
+  },
+  "ekero": {
+   "clicks": 0,
+   "impressions": 12
+  },
+  "hamburg": {
+   "clicks": 0,
+   "impressions": 12
+  },
+  "tarragona": {
+   "clicks": 1,
+   "impressions": 11
+  },
+  "trieste": {
+   "clicks": 1,
+   "impressions": 11
+  },
+  "apeldoorn": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "brno": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "bruges": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "canada": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "delft": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "dresden": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "gottingen": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "perugia": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "riga": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "senonches": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "venon": {
+   "clicks": 0,
+   "impressions": 11
+  },
+  "kauai": {
+   "clicks": 1,
+   "impressions": 10
+  },
+  "regensburg": {
+   "clicks": 1,
+   "impressions": 10
+  },
+  "tulsa": {
+   "clicks": 1,
+   "impressions": 10
+  },
+  "assen": {
+   "clicks": 0,
+   "impressions": 10
+  },
+  "cremines": {
+   "clicks": 0,
+   "impressions": 10
+  },
+  "emmen": {
+   "clicks": 0,
+   "impressions": 10
+  },
+  "matera": {
+   "clicks": 0,
+   "impressions": 10
+  },
+  "nagano": {
+   "clicks": 0,
+   "impressions": 10
+  },
+  "oklahoma-city": {
+   "clicks": 0,
+   "impressions": 10
+  },
+  "ueda": {
+   "clicks": 0,
+   "impressions": 10
+  },
+  "venlo": {
+   "clicks": 0,
+   "impressions": 10
+  },
+  "viroflay": {
+   "clicks": 0,
+   "impressions": 10
+  }
+ }
+}
