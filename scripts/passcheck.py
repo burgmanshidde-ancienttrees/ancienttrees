@@ -851,6 +851,13 @@ OPEN_FLOOR = 4  # a place at or above the floor is open; claiming it is deepenin
 # Reversing it is one line: US_ONLY = False.
 US_ONLY = True
 US_COUNTRY = "United States"
+# Widened the same day, Hidde 2026-10-01: "focus op us, uk, japan, west europa
+# frankrijk spanj portugal italie en scandinavie, maakt vertalingen als het
+# nuttig is". US_ONLY now means "only the focus countries"; the name stays so
+# city_queue.py's import keeps working. Scandinavia read strictly (Denmark,
+# Norway, Sweden). The US still leads city_queue.py --next.
+FOCUS_COUNTRIES = {"United States", "United Kingdom", "Japan", "France", "Spain",
+                   "Portugal", "Italy", "Denmark", "Norway", "Sweden"}
 # Contiguous states, Alaska, Hawaii. Rough on purpose: it decides which country
 # a place a run names is in, and a border town is a question for --country.
 US_BOXES = [(24.4, 49.5, -125.0, -66.9), (51.2, 71.5, -179.9, -129.9),
@@ -915,22 +922,46 @@ def country_of(target, coord=None):
 def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
     doc, live = load_inflight()
 
+    # GOOGLE RECOVERY (2026-10-01): two brakes that send a run to the right work.
+    # 1. The publishing pace. Once the last 24 hours already added PACE_PER_DAY
+    #    trees, a verify or write pass can only produce stories that wait a day,
+    #    so it is refused and the run does depth instead.
+    # 2. US_ONLY is about NEW trees ("night runs were opening trees where we have
+    #    no users"). Depth on a page that already exists (photo, pin, recognition
+    #    line) is not new, and the pages with pre-demotion readers are mostly
+    #    outside the US, so depth kinds are exempt.
+    DEPTH_KINDS = {"photo", "pin", "recognise", "depth"}
+    if kind in ("verify", "write") and not deepen:
+        try:
+            import preflight
+            added = preflight.trees_committed_last_24h()
+            limit = preflight.PACE_PER_DAY
+        except Exception:
+            added, limit = None, None
+        if added is not None and added >= limit:
+            print(f"REFUSED: {added} trees were published in the last 24 hours and the pace")
+            print(f"limit is {limit} while Google recovers (CLAUDE.md, recovery mode). More")
+            print("research now only waits a day. Do depth on pages that exist instead:")
+            print("  python3 scripts/photo_gaps.py --shortlist     (photographs, demand first)")
+            print("  python3 scripts/recognise.py --stuck          (recognition lines)")
+            print(f"  then: python3 scripts/passcheck.py --claim <place> --kind photo")
+            return 1
+
     is_us = False
-    if US_ONLY:
+    if US_ONLY and kind not in DEPTH_KINDS:
         country = country or country_of(target)
-        is_us = country == US_COUNTRY
+        is_us = country in FOCUS_COUNTRIES
         if not is_us and not outside_us:
             where = country or "a country nothing here can tell"
-            print(f"REFUSED: {target} is in {where}, and all work is on the United")
-            print("States for now (Hidde, 2026-10-01). Take the next US place from")
-            print("`python3 scripts/city_queue.py --next`.")
+            print(f"REFUSED: {target} is in {where}, outside the focus countries")
+            print("(Hidde, 2026-10-01): " + ", ".join(sorted(FOCUS_COUNTRIES)) + ".")
+            print("Take the next place from `python3 scripts/city_queue.py --next`.")
             print("A reader's submission, or fixing a published tree that is wrong, is")
             print("the reason to work elsewhere; then say so:")
             print(f'  python3 scripts/passcheck.py --claim {target} --kind {kind} '
                   f'--outside-us "reader submission row N"')
             if country is None:
-                print("If it IS in the US and only the lookup failed, pass coordinates")
-                print('as the target ("lat lon"), or add --country "United States".')
+                print("If the lookup failed, add --country \"<country>\" (e.g. \"Japan\").")
             return 1
 
     # The prompt has said "claim only what this window can finish" since
@@ -956,8 +987,9 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
     # ranked cities stood at zero. So a verify or write claim on a place that
     # already clears the four-tree floor is refused unless the run says why,
     # and a reader's submission is the reason this exists for.
-    # The US is exempt from open-do-not-deepen: its demand sits on pages that
-    # already exist with four to nine trees, so deepening them IS the focus.
+    # The focus countries are exempt from open-do-not-deepen: Google recovery
+    # mode (2026-10-01) puts trees into places that exist ahead of new places,
+    # and the US demand sits on pages that already exist.
     if kind in ("verify", "write") and not deepen and not is_us:
         match, _ = resolve(target, cities())
         # Writing trees that are ALREADY VERIFIED is finishing work, not new

@@ -1139,6 +1139,46 @@ def check_publishing_pace():
     return []
 
 
+def _published_ids_at(rev):
+    """Published tree ids in data/cities at a git revision ("HEAD", a sha)."""
+    import subprocess
+    files = [f for f in subprocess.run(["git", "ls-tree", "-r", "--name-only", rev, "data/cities"],
+                                       capture_output=True, text=True).stdout.split("\n")
+             if f.endswith(".json")]
+    raw = subprocess.run(["git", "cat-file", "--batch"],
+                         input="".join("%s:%s\n" % (rev, f) for f in files).encode(),
+                         capture_output=True).stdout
+    ids, i = set(), 0
+    while i < len(raw):
+        nl = raw.index(b"\n", i)
+        head = raw[i:nl].split()
+        if len(head) < 3 or head[1] == b"missing":
+            i = nl + 1
+            continue
+        size = int(head[2])
+        try:
+            d = json.loads(raw[nl + 1:nl + 1 + size].decode("utf-8", "replace"))
+            for t in d.get("trees") or []:
+                if t.get("story") and (t.get("location") or {}).get("latitude") is not None:
+                    ids.add(t.get("id"))
+        except ValueError:
+            pass
+        i = nl + 1 + size + 1
+    return ids
+
+
+def trees_committed_last_24h():
+    """How many trees the last 24 hours of commits added, or None without history.
+    passcheck.py reads this before handing out a verify or write claim, so a run
+    stops researching trees it would only have to hold back."""
+    import subprocess
+    base = subprocess.run(["git", "rev-list", "-1", "--before=24 hours ago", "HEAD"],
+                          capture_output=True, text=True).stdout.strip()
+    if not base:
+        return None
+    return len(_published_ids_at("HEAD") - _published_ids_at(base))
+
+
 COUNT_WORDS = r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|twenty|thirty|forty|fifty|dozen)"
 
 
