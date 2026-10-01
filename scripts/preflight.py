@@ -1139,6 +1139,32 @@ def check_publishing_pace():
     return []
 
 
+COUNT_WORDS = r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|twenty|thirty|forty|fifty|dozen)"
+
+
+def check_species_copy_states_no_count():
+    """A species intro or meta never states how many trees the page holds.
+
+    The page generates its own list, so a count in hand-written prose goes
+    stale the next time a tree is added. On 2026-10-01 an audit after Google's
+    09-28 demotion found /species/bald-cypress promising "Seven bald cypresses
+    mapped, one in each of seven cities" above a list of 26, and 132 of 187
+    species files needed rewriting. A page that contradicts itself reads as
+    unmaintained generated content. Removing this check needs Hidde."""
+    import re
+    pat = re.compile(r"\b%s\b(?:[^\w.]+\w+){0,3}?[^\w.]+(?:mapped|on (?:this|the) map|on this page|we map)\b" % COUNT_WORDS, re.I)
+    out = []
+    for p in sorted(glob.glob("data/species/*.json")):
+        with open(p, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for field in ("meta_description", "intro"):
+            m = pat.search(d.get(field) or "")
+            if m:
+                out.append("%s: %s states a count (%r); the page prints its own, say what the "
+                           "species is instead" % (os.path.basename(p)[:-5], field, m.group(0)))
+    return out
+
+
 def check_a_tree_can_be_told_apart():
     """Nothing ships with a rough pin, no photograph and no recognition line.
 
@@ -2668,6 +2694,7 @@ def main():
                 + check_tree_name_fits_a_title()
                 + check_no_new_thin_places()
                 + check_publishing_pace()
+                + check_species_copy_states_no_count()
                 + check_a_tree_can_be_told_apart()
                 + check_covered_countries_want_a_photo_or_a_pin()
                 + check_story_length()
