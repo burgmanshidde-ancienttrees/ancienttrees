@@ -12,10 +12,10 @@
 // lists, and where readers and local organisations come in.
 //
 // Convention: AllTrails, komoot and iNaturalist all carry an About page linked
-// from the footer. The maker is named here and only here (Hidde, 2026-10-01:
-// "als mijn naam heel belangrijk is mag die er wel in"), because Google asks
-// whether it is self-evident who made the content. Still no email address,
-// per the v1.4 privacy ruling: the contact route is the contribute form.
+// from the footer. No personal name: it went in on 2026-10-01 for Google's
+// "who made this" question and came out the same day (Hidde: "als die about
+// pagina niks doet haal mn naam dan maar weer weg"), since Google says bylines
+// do not help ranking. No email address either, per the v1.4 privacy ruling.
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -40,7 +40,7 @@ const graph = [
 <main class="content-page">
   <Breadcrumbs items={crumbItems} />
   <h1>About Ancient Trees</h1>
-  <p class="lede">Ancient Trees maps the old trees worth walking to, city by city, with the story of each one and directions to the trunk. It is an independent project made by Hidde Burgmans, a designer and tree enthusiast in the Netherlands.</p>
+  <p class="lede">Ancient Trees maps the old trees worth walking to, city by city, with the story of each one and directions to the trunk. It is an independent project from the Netherlands.</p>
   <div class="prose-block">
     <h2>Where the trees come from</h2>
     <p>We start from official registers: the lists of protected and monumental trees that governments and city councils publish. From those, and from the tree trails councils put out, dendrological societies and local newspapers, we choose the trees worth the walk. Each one rests on an official register or on two independent sources, every tree page lists them, and every pin says whether it marks the exact trunk or only the right part of a park.</p>
