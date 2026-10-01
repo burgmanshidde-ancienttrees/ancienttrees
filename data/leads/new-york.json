@@ -67,7 +67,9 @@
     "longitude": -73.919,
     "neighbourhood": ""
    },
-   "reason": "2026-10-01 verify pass: NYC Parks Great Trees 2024 addition per Brooklyn Paper ('likely stood since the area served as circus ground'). Park-level pin only, no age or size found; Parks entry unreadable (405). Could be delivered flagged as register-only if a tree-level pin turns up."
+   "reason": "2026-10-01 verify pass: NYC Parks Great Trees 2024 addition per Brooklyn Paper ('likely stood since the area served as circus ground'). Park-level pin only, no age or size found; Parks entry unreadable (405). Could be delivered flagged as register-only if a tree-level pin turns up.",
+   "status": "held",
+   "held_note": "held 2026-10-01 write pass: no photograph and no confirmed pin, so preflight's photo-or-pin check (worldwide since 2026-10-01) refuses it as a page. Ships the day one of the two exists. Also single-sourced (Brooklyn Paper) and only a park-level pin."
   },
   {
    "name": "The James Madison Tree",
@@ -111,7 +113,9 @@
     "longitude": -74.01395,
     "neighbourhood": ""
    },
-   "reason": "2026-10-01 verify pass: Sapling of the Amsterdam Secret Annex chestnut, planted 16 May 2016, dedicated 12 June 2017; reported sick in recent news. Young; Wikidata Q140073097. Story-only, parked until health is clear."
+   "reason": "2026-10-01 verify pass: Sapling of the Amsterdam Secret Annex chestnut, planted 16 May 2016, dedicated 12 June 2017; reported sick in recent news. Young; Wikidata Q140073097. Story-only, parked until health is clear.",
+   "status": "held",
+   "held_note": "held 2026-10-01 write pass: no photograph and no confirmed pin, so preflight's photo-or-pin check (worldwide since 2026-10-01) refuses it as a page. Ships the day one of the two exists. Also a 2016 sapling reported sick; parked by the verify pass until its health is clear."
   },
   {
    "name": "Treaty Oak replacement elm, Bartow-Pell Mansion",

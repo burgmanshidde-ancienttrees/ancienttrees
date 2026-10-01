@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 write pass: nothing shipped, the five READY leads were never shippable
+
+- Target was leads.py's five READY leads plus Takachiho tkc_004/005. All seven fail the worldwide photo-or-pin check: tkc_004/005 and fuk_017 already have stories in data/research and pin only to the shrine, and the five leads are park- or shrine-level with no photo. Checked for a way through, found none: the OSM node at Shimono Hachiman is the shrine itself, Overpass has no tree nodes at any of the three shrines, Commons geosearch and iNaturalist (open licences) are empty at Shimono and Rokusho, and the one Commons file at Kushifuru shows the torii, not the zelkova.
+- **The fix:** the five leads now carry `status: held` with a `held_note` naming the blocker, so `leads.py --ready` reads 0 instead of sending the next pass after the same seven trees. That is the second pass to spend a window on them after the night run above.
+- The Takachiho claim is released. tkc_004/005 and fuk_017 merge as they stand the day a photograph or tree-level pin turns up.
+
 ## 2026-10-01 night run: Copenhagen +7 (committed 3141d219), the rest of the shelf is blocked by photo-or-pin
 
 - Rung: write pass on the verified shelf. Copenhagen's seven Danish Tree Register trees are written and merged (cop_043 to cop_049, preflight 0 problems; research ids renamed cph_ to cop_ so the claim released). Visits, 7 days: 2,531 (one 1,063 spike on 09-26).

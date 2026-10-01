@@ -139,8 +139,9 @@
       "species": "Cinnamomum camphora",
       "lat": 33.58765,
       "lng": 130.20467,
-      "status": "lead",
-      "why": "no photo or exact pin in reach. Verified 2026-10-01 as Fukuoka Prefecture natural monument no. 41 (12 Apr 1960), girths 8.5 and 7.5 m, free open precinct in Itoshima; full facts in data/research/fukuoka-verified.json as fuk_016 (held). Ships the day an open-licence photo or tree-level pin appears."
+      "status": "held",
+      "why": "no photo or exact pin in reach. Verified 2026-10-01 as Fukuoka Prefecture natural monument no. 41 (12 Apr 1960), girths 8.5 and 7.5 m, free open precinct in Itoshima; full facts in data/research/fukuoka-verified.json as fuk_016 (held). Ships the day an open-licence photo or tree-level pin appears.",
+      "held_note": "held 2026-10-01 write pass: no photograph and no confirmed pin, so preflight's photo-or-pin check (worldwide since 2026-10-01) refuses it as a page. Ships the day one of the two exists. Story already written as fuk_017 in data/research/fukuoka-verified.json; merge it as is once a photo or tree-level pin exists. Commons geosearch (300 m) and iNaturalist (300 m, open licences) both empty on 2026-10-01."
     },
     {
       "name": "Camphor at Oimatsu Tenjin Shrine, Shima-Kuga 2813 (Hidde's own photograph, ~33.558654, 130.147357, girth about 500 cm by his estimate)",
