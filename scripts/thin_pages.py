@@ -101,7 +101,7 @@ def main():
                   for lang in LANGS}
     q_keep = question_evidence()
 
-    groups = {"fallback": [], "thin_places": [], "question_pages": []}
+    groups = {"fallback": [], "thin_places": [], "question_pages": [], "weak_trees": []}
     kept_thin, a_places = [], []
     total_pages = 0
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
@@ -110,6 +110,7 @@ def main():
         trees = [t for t in d.get("trees") or [] if renderable(t)]
         if not trees:
             continue
+        tslugs = [slugify(t["name"]) for t in trees]
         n = len(trees)
         has_q = n >= 2
         langs_real = [lang for lang in LANGS if slug in translated[lang]]
@@ -120,6 +121,15 @@ def main():
         for lang in LANGS:
             if lang not in langs_real:
                 groups["fallback"] += [f"{BASE}/{lang}/{slug}"] + ([f"{BASE}/{lang}/{slug}/{QSLUG[lang]}"] if has_q else [])
+        # 4. Tree pages with neither a photograph nor a confirmed pin (Hidde,
+        #    2026-10-01: "zo min mogelijk bomen met geen foto en geen exacte pin").
+        #    Recomputed every deploy, so a tree returns to the index the day it
+        #    gains either.
+        for t, ts in zip(trees, tslugs):
+            ph = t.get("photo") or {}
+            if (ph.get("url") and ph.get("status") != "held") or t.get("location_precision") == "confirmed":
+                continue
+            groups["weak_trees"] += [f"{BASE}/{slug}/{ts}"] + [f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real]
         # 2. Places with one to three trees: the PLACE pages leave the index,
         #    the tree pages stay, because the tree page is the one with the story.
         i = imps.get(slug, 0)
@@ -168,6 +178,7 @@ def main():
            f"| 1 | Fallback language pages: the English text on a /de/, /es/ ... URL | {len(set(groups['fallback']))} |",
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
+           f"| 4 | Tree pages with neither a photograph nor a confirmed pin | {len(set(groups['weak_trees']))} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",
            f"Thin places kept indexed ({len(kept_thin)}), a destination tree or real impressions: " +
