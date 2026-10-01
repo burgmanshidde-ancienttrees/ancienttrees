@@ -95,5 +95,58 @@
    "commons": "File:天岩戸神社の招霊の木 - panoramio.jpg, CC BY-SA 3.0, sk01, 2014-05-22, geotag 32.734529,131.350554; looked at: single multi-stemmed tree with a shimenawa at the base, name board, fence, strong subject, fills frame. Needs attribution 'sk01, CC BY-SA 3.0'."
   },
   "verify_notes": "- The shrine's own site names the ogatama as the West Shrine's 御神木. Town page: the ogatama's branch is what Ame-no-Uzume held when she danced at the cave of Amaterasu (the origin of the kagura bell); it is Takachiho's town tree.\n- Species: ogatama-no-ki, which the shrine and town name directly; Latin name is the standard one for the common name, not stated on those pages.\n- NO age, girth or height from any source; the sign in the photograph is unreadable at this resolution. Deliver age 'not documented' and have the page ask the reader for girth. A reader will have to tell us whether it is old; the case for the page is the myth and the tree itself (a multi-stemmed trunk bound with shimenawa) rather than a record size.\n- Pin: the Commons photograph is geotagged 32.734529,131.350554 and shows the tree and the shrine fence; the nearest OSM tree nodes (untagged) are 40-90 m away and are not it. Treat as confirmed to the fenced enclosure; the photograph itself shows which tree.\n- Alive: only the 2014 Commons photograph and the shrine's current page naming it; lifecheck NONE. Hence flagged.\n- Weaker candidate than tkc_001 and tkc_002: include only to reach the four-tree floor with a fourth."
+ },
+ {
+  "id": "tkc_004",
+  "name": "Ginkgo of Shimono Hachiman Shrine (下野八幡大神社のイチョウ)",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "about 800 years",
+  "age_min": 600,
+  "age_max": 900,
+  "age_basis": "source",
+  "girth_cm": 920,
+  "height_m": 36.4,
+  "location": {
+   "address": "下野八幡大神社, 宮崎県西臼杵郡高千穂町下野 (Shimono Hachiman Shrine, Takachiho)",
+   "latitude": 32.7450026,
+   "longitude": 131.3080147,
+   "neighbourhood": "Shimono, Takachiho"
+  },
+  "verified_sources": [
+   "https://online.bunka.go.jp/heritages/region/45/45441",
+   "https://www.town-takachiho.jp/top/soshiki/kikakukanko/2/3/295.html",
+   "https://www.openstreetmap.org/node/5089460578"
+  ],
+  "access": "Free, shrine precinct, open to walk into; no booking or entry fee found. Access beyond the approach not confirmed by a source.",
+  "transport": "Takachiho is reached by bus only (no railway). Shimono is about 5 km north-east of the centre (roughly 12 minutes by taxi from Takachiho Bus Centre); the local bus is infrequent, so check the timetable or take a taxi.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "- National natural monument (designated 1951-06-09), Agency for Cultural Affairs entry: breast-height girth 9.20 m, height 36.40 m, female tree. Town page: about 800 years (town's figure, no dating method given), also among Miyazaki's 100 giant trees. Stands left of the approach to the shrine.\n- Register-only plus town page.\n- Pin: shrine node only (OSM node 5089460578). GSI seamlessphoto z18 (winter, leaf-off mixed with evergreens) checked 2026-10-02: shrine building and a dense mixed canopy W of it, no crown separable as the ginkgo or zelkova, so NOT confirmed. No Commons file (name search and 500 m geosearch empty), no iNaturalist observation with open licence within 300 m. Alive: lifecheck not run on a tree-level point; national monument page lists both as designated, no news of loss seen. Cannot ship under the photo-or-pin rule until a photograph or a trunk-level fix exists; a reader or Hidde photo would open it."
+ },
+ {
+  "id": "tkc_005",
+  "name": "Zelkova of Shimono Hachiman Shrine (下野八幡大神社のケヤキ)",
+  "species": "Japanese Zelkova (Zelkova serrata)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "girth_cm": 800,
+  "height_m": 34.7,
+  "location": {
+   "address": "下野八幡大神社, 宮崎県西臼杵郡高千穂町下野 (Shimono Hachiman Shrine, Takachiho)",
+   "latitude": 32.7450026,
+   "longitude": 131.3080147,
+   "neighbourhood": "Shimono, Takachiho"
+  },
+  "verified_sources": [
+   "https://online.bunka.go.jp/heritages/region/45/45441",
+   "https://www.openstreetmap.org/node/5089460578"
+  ],
+  "access": "Free, shrine precinct, open to walk into; no booking or entry fee found. Access beyond the approach not confirmed by a source.",
+  "transport": "Takachiho is reached by bus only (no railway). Shimono is about 5 km north-east of the centre (roughly 12 minutes by taxi from Takachiho Bus Centre); the local bus is infrequent, so check the timetable or take a taxi.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "- National natural monument (1951-06-09), Agency for Cultural Affairs: breast-height girth 8 m, ROOT girth 20.80 m (buttressed mass, not a trunk measurement, do not quote as trunk), height 34.70 m, crown spread 26 x 33 m. No age in the record; leave empty and let the page ask.\n- Stands against the shrine building on the right of the approach.\n- Register only.\n- Pin: shrine node only (OSM node 5089460578). GSI seamlessphoto z18 (winter, leaf-off mixed with evergreens) checked 2026-10-02: shrine building and a dense mixed canopy W of it, no crown separable as the ginkgo or zelkova, so NOT confirmed. No Commons file (name search and 500 m geosearch empty), no iNaturalist observation with open licence within 300 m. Alive: lifecheck not run on a tree-level point; national monument page lists both as designated, no news of loss seen. Cannot ship under the photo-or-pin rule until a photograph or a trunk-level fix exists; a reader or Hidde photo would open it."
  }
 ]
