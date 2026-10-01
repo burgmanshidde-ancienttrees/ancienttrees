@@ -1054,7 +1054,7 @@ def check_no_new_thin_places():
     return out
 
 
-PACE_PER_DAY = 30  # a backstop against a burst, not a working limit (Hidde, 2026-10-02: the 10 stalled good trees and helped nothing)
+PACE_PER_DAY = 10  # a NOTE above this, never a FAIL; the FAIL is PACE_HARD_CAP below
 # A PREFERENCE above PACE_PER_DAY, a FAIL only above this (Hidde, 2026-10-02:
 # "fuck the 10 tree thing if there is nothing else the nightruns can do"). The
 # 10 cost a whole day of windows that shipped nothing. The cap below is the
