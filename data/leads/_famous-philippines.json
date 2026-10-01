@@ -11,7 +11,8 @@
     "https://commons.wikimedia.org/wiki/File:Angeles_City,_Pampanga_(Centro)_08.jpg",
     "https://commons.wikimedia.org/wiki/File:Angeles_City,_Pampanga_(Centro)_10.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "verify_result": "A fossil/lahar-recovered trunk (radiocarbon 2,970 years) displayed at Holy Angel University per Commons caption; not a living tree. Dead, never ships."
   },
   {
    "name": "Balete Park & Millennium Tree",
@@ -21,9 +22,10 @@
     "https://commons.wikimedia.org/wiki/File:Big_balete_tree_of_Aurora_(MicahPiosDad)_-_Flickr.jpg",
     "https://commons.wikimedia.org/wiki/File:Millennium_tree_of_Balete_Park,_Maria_Aurora,_Philippinesjf.jpg"
    ],
-   "status": "lead",
+   "status": "verified",
    "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "verify_result": "Delivered as phl_001 in data/research/famous-philippines-verified.json"
   },
   {
    "name": "Balete tree",
@@ -36,7 +38,8 @@
    ],
    "status": "lead",
    "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "verify_result": "Commons name 'Balete tree' is generic; coordinate 14.604167,121.159722 is Antipolo-area and its photos are mixed (one file shows a balete in Washington SyCip Park, Makati; another is in Cavinti). No single identifiable tree and no source; not verified 2026-10-01."
   },
   {
    "name": "Balite tree (Mendez, Cavite)",
@@ -47,7 +50,8 @@
     "https://commons.wikimedia.org/wiki/File:5495Mendez_Cavite_Landmarks_Barangays_01.jpg",
     "https://commons.wikimedia.org/wiki/File:5495Mendez_Cavite_Landmarks_Barangays_02.jpg"
    ],
-   "status": "lead"
+   "status": "lead",
+   "verify_result": "Only Commons photos of an 'Old Balite Tree' near the church/school in Mendez, Cavite (~14.1303,120.9056). No independent source for species, age or status found; not verified 2026-10-01."
   },
   {
    "name": "Enchanted balete tree of Lazi, Siquijor",
@@ -58,9 +62,10 @@
     "https://commons.wikimedia.org/wiki/File:Century_Old_Balete_Tree_in_Campalanas,_Lazi_-_Flickr_2.jpg",
     "https://commons.wikimedia.org/wiki/File:Enchanted_Balete_Tree_in_Lazi.JPG"
    ],
-   "status": "lead",
+   "status": "verified",
    "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "verify_result": "Delivered as phl_002"
   },
   {
    "name": "Heritage Sampaloc Tree (Lanang, Candaba, Pampanga)",
@@ -71,7 +76,8 @@
     "https://commons.wikimedia.org/wiki/File:0148jfHeritage_Sampaloc_Tree_Lanang_Candaba_Pampanga_Tamarindus_indicafvf_02.jpg",
     "https://commons.wikimedia.org/wiki/File:0148jfHeritage_Sampaloc_Tree_Lanang_Candaba_Pampanga_Tamarindus_indicafvf_03.jpg"
    ],
-   "status": "lead"
+   "status": "lead",
+   "verify_result": "Tamarindus indica per Commons file names; one search found only photo uploads (2016-17) and stock-photo captions. No register, age or access source. Coordinate 15.110278,120.801111 from Commons. Not verified 2026-10-01."
   },
   {
    "name": "Meycauayan Tree",
@@ -82,7 +88,8 @@
     "https://commons.wikimedia.org/wiki/File:00064jfSaint_Francis_Church_Tree_Meycauayan_Heritage_Belfry_Bulacanfvf_02.JPG",
     "https://commons.wikimedia.org/wiki/File:00064jfSaint_Francis_Church_Tree_Meycauayan_Heritage_Belfry_Bulacanfvf_03.JPG"
    ],
-   "status": "lead"
+   "status": "verified",
+   "verify_result": "Delivered as phl_003, flagged: alive evidence only 2016 photos"
   },
   {
    "name": "Old sampalok tree in Bulakan, Bulacan",
@@ -93,7 +100,8 @@
     "https://commons.wikimedia.org/wiki/File:2011Maysantol_San_Jose_Bulacan,_Bulacan_07.jpg",
     "https://commons.wikimedia.org/wiki/File:2011Maysantol_San_Jose_Bulacan,_Bulacan_08.jpg"
    ],
-   "status": "lead"
+   "status": "lead",
+   "verify_result": "Commons file has no description; photos are from San Jose, Maysantol, Bulakan. No source for age or status; not verified 2026-10-01."
   }
  ]
 }

@@ -9187,5 +9187,23 @@
    "note": "Hochneukirchen-Gschaidt published; fdl_001 duplicate of spa_001",
    "brief_wrong": true
   }
+ ],
+ "2026-10-01": [
+  {
+   "target": "famous-philippines",
+   "kind": "verify",
+   "tokens": 159000,
+   "trees": 0,
+   "note": "3 of 8 delivered flagged, 1 blocked fossil, 4 leads without sources"
+  },
+  {
+   "target": "maria-aurora+siquijor",
+   "kind": "write",
+   "tokens": 150000,
+   "trees": 2,
+   "note": "phl ids renamed mra/sqj (phl is Philadelphia); fdl_001 already live as spa_001",
+   "wasted": 0,
+   "brief_wrong": true
+  }
  ]
 }

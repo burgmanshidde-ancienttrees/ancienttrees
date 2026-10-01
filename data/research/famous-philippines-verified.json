@@ -1,0 +1,92 @@
+[
+  {
+    "id": "mra_001",
+    "name": "Millennium Tree of Balete Park",
+    "species": "Fig (Ficus sp.)",
+    "age_estimate": "roughly 600 years",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Balete Park, Barangay Quirino, Pantabangan-Canili-Basal-Baler Road, Maria Aurora, Aurora",
+      "latitude": 15.7697,
+      "longitude": 121.4769,
+      "neighbourhood": "Barangay Quirino, Maria Aurora"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Balete_tree",
+      "https://www.marxtermind.com/the-old-balete-tree-and-the-ditumabo-falls-in-aurora/",
+      "https://wanderlog.com/place/details/211120/balete-tree-millenium-tree",
+      "https://www.inaturalist.org/observations/167292816",
+      "https://commons.wikimedia.org/wiki/File:Millennium_tree_of_Balete_Park,_Maria_Aurora,_Philippinesjf.jpg"
+    ],
+    "access": "Park with a small entrance fee (reported 30 pesos plus a 10 peso environmental fee, a 2012 blog says donation only; fee unconfirmed from the owner's own page). Reported open 24 hours. Pay toilets, souvenir stalls, local guides charge extra. Roughly 30 minutes by tricycle from Baler (2012 blog); 7 km from Maria Aurora town proper (search snippet of municipal page).",
+    "transport": "No rail. Tricycle or car from Baler town, ~30 min per a 2012 blog; on the Pantabangan-Canili-Basal-Baler Road.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "- Famous: billed as the largest balete in Asia, official 'Millennium Tree' of the Philippines (per search summary of mariaaurora.gov.ph, whose page itself 403s to fetchers, so unverified).\n- Age: en.wikipedia Balete tree says 'estimated to be about more than 600 years old'; Commons file description (photographer 2011) says six-century old; blog (May 2012) says 600 years. All repeat the same lore, so effectively one claim, no measurement. age_min/age_max left null: no derived basis. No girth recorded; claims are '60 men to encircle' (blog) and Wikipedia says roots 10 to 15 m diameter, 60 m tall (implausibly tall for a fig, treat as lore, do not repeat as measurement). Hollow centre fits ~15 people per blog.\n- Species: only genus (balete = Ficus strangler, hemiepiphyte; the tree is a fig that engulfed a host). One iNaturalist observation names it Ficus benjamina (community id unconfirmed): ask the reader.\n- Alive: lifecheck RECENT, iNaturalist observation 2023-06-13 at 15.769685,121.47686 (accuracy 221 m) at Maria Aurora; Wanderlog shows 1,150 Google reviews and 42 TripAdvisor reviews, listed as a current attraction in 2025/2026. No news of death found. No typhoon damage found either way (not searched beyond one query).\n- Pin: 15.769761,121.47695 came from a WebSearch summary (lead only) and the iNat observation agrees within ~12 m, but iNat accuracy circle is 221 m and neither is tree-level proof. Approximate, honest. Park centres on the tree and it is the single obvious point.\n- Folklore: said to be home to engkanto/spirits, listed in 'reportedly haunted locations in the Philippines'.\n- Single-famous-tree test: passes (national tourist draw, 7 km from town, Baler surf area is the main trip nearby). This is its own place, not a city.",
+    "story": "You can stand inside this tree. A balete is a strangler fig: it starts life as a seed in the branches of another tree, sends roots down around its host and slowly takes its place. Here the host is long gone, and what remains is a cage of fused roots around a hollow that one visitor in 2012 reckoned would hold about fifteen people.\n\nIt is billed locally as the largest balete in Asia and carries the title of the Philippines' Millennium Tree. We could not find a measurement behind either claim. The age has the same problem: about 600 years is the figure on Wikipedia, on a photographer's caption and on the travel blogs, and each of them repeats the others rather than counting anything. Treat it as tradition. If it is anywhere near right, this fig was already strangling its host before the first Spanish ships reached these islands.\n\nA blog says sixty people with linked arms could ring it, a number easier to repeat than to test. Folklore says engkanto, the spirits of Philippine tradition, live in it, and it turns up on lists of the country's haunted places.\n\nIt is very much alive, photographed for iNaturalist in 2023 and reviewed online by over a thousand visitors. Expect a small entrance fee, souvenir stalls and local guides offering a walk through the roots for a little extra. Nobody has settled the species: one observer says Ficus benjamina. If you know, tell us.",
+    "how_to_recognise": "You can recognise it by the hollow inside its fused roots, big enough to step into. It is the one giant fig the park is laid out around, so there is no neighbour to mistake it for.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "sqj_001",
+    "name": "Enchanted Balete Tree of Lazi",
+    "species": "Fig (Ficus sp.)",
+    "age_estimate": "roughly 400 years",
+    "age_min": 400,
+    "age_max": 600,
+    "location": {
+      "address": "Barangay Campalanas, Lazi, Siquijor",
+      "latitude": 9.121,
+      "longitude": 123.5754,
+      "neighbourhood": "Campalanas, Lazi"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Balete_tree",
+      "https://www.insiquijor.com/guides/balete-tree-guide",
+      "https://www.inaturalist.org/observations/331527207",
+      "https://commons.wikimedia.org/wiki/File:Enchanted_Balete_Tree_in_Lazi.JPG"
+    ],
+    "access": "Pay-to-enter attraction, reported 20 pesos per person, fish-spa bait 50 to 100 pesos extra (insiquijor guide, updated March 2026; owner/municipal page not found). Hours unconfirmed. Public roadside tourist stop on the island's coastal road.",
+    "transport": "Siquijor has no rail; reached by tricycle, motorbike or car from Lazi town or Siquijor town along the coastal road. Island tours stop here.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "- Age: Wikipedia (Balete tree article) says 400 years old, believed oldest and biggest in the province; the insiquijor guide says 400 to 600 with 'no official dendrochronology'. Lore only, so age_min/max are the sources' own band, not derived. No girth, no height measured (guide says 'over 15 m', unsourced).\n- Remarkable: a natural spring flows from the base into a man-made pool stocked with 'doctor fish' (Commons file description 2015 and Wikipedia agree); locals carved small shrines into the trunk (guide); Siquijor's reputation for folk sorcery; sits on the island's main tourist circuit.\n- Species: genus only. The guide says Ficus benghalensis, an iNaturalist observation says Ficus benjamina, the Wikipedia article only says balete. Unsettled, so ask the reader.\n- Alive: lifecheck RECENT, iNaturalist observation 2025-12-21 at 9.12098,123.57543, with others from 2015, 2019 (x2) at the same spot labelled Campalanas, Lazi. Guide dated March 2026 calls it active.\n- Pin: the guide's own coordinates (8.959, 123.614) are in the sea off Siquijor and WRONG; discarded. Pin taken from four iNaturalist observations within 40 m of each other, place_guess Campalanas, Lazi; approximate because no tree-level register or OSM node was checked.\n- Overpass blocked from here, OSM node not checked.\n- Single-famous-tree test: passes (island attraction, regional name). Place would be Siquijor island, not a city.",
+    "story": "A spring rises at the roots of this tree. The water runs from the base of the trunk into a pool built in front of it, and the pool is stocked with doctor fish, which for a few extra pesos of bait will crowd round the feet of anyone who sits on the edge and lowers them in.\n\nSiquijor is the island the rest of the Philippines associates with folk healers and sorcery, so a giant fig with a spring at its feet was always going to be called enchanted. Locals have carved small shrines into the trunk.\n\nHow old it is depends on who you ask, and nobody has asked the tree. Wikipedia gives 400 years and says it is believed to be the oldest and biggest balete in the province. A local guide stretches that to between 400 and 600 and admits there has been no dendrochronology. Both are tradition rather than measurement, and no one has published a girth.\n\nIts life is not in doubt. It has been photographed at the same spot in Campalanas for a decade, most recently in December 2025, and it sits on the coastal road where island tours stop as a matter of routine. Entry was 20 pesos a head in early 2026.\n\nThe species is unsettled, and not narrowly. One source calls it Ficus benghalensis, the banyan; an iNaturalist observer calls it Ficus benjamina, the weeping fig. Those are very different trees. If you can tell which, tell us.",
+    "how_to_recognise": "You can recognise it by the spring pool at its foot, stocked with small fish that nibble visitors' feet. It stands beside the coastal road in Campalanas, Lazi.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "phl_003",
+    "name": "Meycauayan Tree",
+    "species": "Rain Tree (Samanea saman)",
+    "age_estimate": "about 150 years",
+    "age_min": 120,
+    "age_max": 180,
+    "location": {
+      "address": "Patio of the Parish Church of St. Francis of Assisi, Meycauayan, Bulacan",
+      "latitude": 14.7347,
+      "longitude": 120.9571,
+      "neighbourhood": "Poblacion, Meycauayan"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Meycauayan_Tree",
+      "https://commons.wikimedia.org/wiki/Category:Meycauayan_Tree"
+    ],
+    "access": "Stands in the open churchyard patio in front of the church facade; churchyard ground, no fee known. Hours not confirmed.",
+    "transport": "Meycauayan city centre, about 20 km north of Manila; reached by bus or jeepney on MacArthur Highway. Walk time from the stop not confirmed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "- Sources: only en.wikipedia (and a Wikidata item Q18344292) hold the facts. Wikipedia: one of three acacia (Samanea saman) trees in the church patio, planted by an unknown person, 'almost a century and a half' old, i.e. roughly 1870s (derived from the article, not a measurement). Search snippets mention an Esquire PH 2019 piece and a Wikivoyage entry listing it; both unreadable/unread here (Esquire 403), so not counted as sources.\n- Remarkable: Manuel L. Quezon, later Philippine president, played under it as a young sexton in 1890 (Wikipedia). Tree Preservation Foundation of the Philippines recognised it in 1982 and set a marker; marker stolen 2004, replaced 2014 (Wikipedia). Church founded 1578; belfry 1800.\n- Species caveat: Wikipedia calls them 'acacia (Samanea saman)'; Samanea saman is the rain tree, so the species is the rain tree and 'acacia' is the common local label.\n- ALIVE IS THIN: lifecheck returned NONE at the Wikipedia coordinate. Newest dated evidence is the Commons photo set from 2016-03-11 (30+ files). A search summary claimed 'remains a landmark as of July 2026' but that is a summary, not seen on a page. Deliver flagged, ask the reader to confirm it still stands. Three trees are in the patio and it is not established which of them is the marked one.\n- Pin: Wikipedia coordinate is church-level; approximate.\n- Girth/height: none recorded. Age basis is one source; no growth-rate estimate possible without girth.\n- Weak on 'worth the walk': a heritage-marked rain tree in a town churchyard. Publishable under the single-famous-tree test only if the Quezon link is judged enough; writer or Hidde to decide, not a blocker."
+  }
+]

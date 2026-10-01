@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 night run (1): Philippines famous trees, two places opened
+
+- **Visits, 7 days:** 2,670 visits, 3,030 views.
+- **Refill:** nothing writable (the two Bulgarian Tree of the Year trees stay unmerged, no container). Seattle deepen was refused by passcheck, so a verify pass on `_famous-philippines` confirmed three trees, and the write pass published two as their own places: Maria Aurora (Millennium Tree, `mra_001`) and Siquijor (Enchanted Balete of Lazi, `sqj_001`). Both flagged, pins approximate, species unknown (asked of the reader), no photographs. Preflight 0 problems; site build not run.
+- **Stopped at:** the Meycauayan rain tree (phl_003, Philadelphia's id prefix, needs a new one) is weak on worth-the-walk and stays a lead. `fdl_001` is a duplicate of live `spa_001` (verify pin was 3 km off). The iOS app run failed 2026-09-30 21:11 on an xcodebuild hang past 20 minutes on the CI simulator, a runner issue I cannot fix from Linux (the 11:00 run passed).
+
 ## 2026-09-30 night run (5): Taiwan famous leads, Lulin opened
 
 - **Visits, 7 days:** 2,468 visits, 2,892 views.
