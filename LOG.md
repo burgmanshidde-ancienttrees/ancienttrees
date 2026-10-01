@@ -127,6 +127,11 @@ Live on main:
 - **Fix, live:** `fetch_rum()` in daily_digest.py leaves out every desktop pageview with no referrer and shows it in a new "Bots (left out)" column. Over the last 8 days that is 950 human pageviews against 2,320 from bots; people are now 80% mobile, from US/DE/GB/PL/AT, and half of what they view comes from clicking through our own pages. Since 09-28 it is about 30 to 50 human pageviews a day. Older DATA.md entries are not rewritten, so the weekly "Visits (beacon)" column will drop when it switches over.
 - `seo-diagnose.yml` section 7 prints the same table, so a change to the filter can be checked against live data at once.
 
+## 2026-10-02 session: Takachiho opens at three, on Hidde's call
+
+- **New place, data/cities/takachiho.json:** tkc_001 Chichibu-sugi (about 800 years, 7.15 m round on the sign, 55 m; Miyazaki's 100 giant trees; Commons lead photo by sk01 CC BY-SA 3.0, Hidde's photograph of the sign beside it), tkc_002 Meoto-sugi (the paired cedars, 400 to 800 years by the sources, Hidde's photograph fronts it, pin from his fix), tkc_003 the ogatama of Amano Iwato Shrine (Commons photo, geotag pin, no measurements, flagged). Hidde: "at three at takachiho"; the exception is written in data/thin-places-frozen.json. The Shimono Hachiman ginkgo and zelkova (national monuments) wait in data/research/takachiho-verified.json for a pin or a photo.
+- **No daily pace any more** (Hidde, three times): one accident guard at 60 in preflight, nothing else.
+
 ## 2026-10-02 session: Hidde's review answers become trees: Kirishima, Shiroyama, Takachiho
 
 - **His five answers on the judgement page** (lead verdicts overruled, recorded in judgement.py): Kirishima Jingu cedar, the leaning camphor by the Shiroyama car park, Takachiho's Chichibu-sugi and Meoto-sugi, and the Kyoken Park camphor (already live, agreed).

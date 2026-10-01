@@ -1,0 +1,162 @@
+{
+  "city": "Takachiho",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Takachiho is where Japanese myth puts the cave the sun goddess hid in, and its three old trees all stand on ground that story made sacred. Two are in the precinct of Takachiho Shrine in the town itself: the Chichibu-sugi, a cedar 55 metres tall that legend says a Kamakura warrior planted around 1190, and the Meoto-sugi, two cedars grown from one root that couples walk round hand in hand. The third is an ogatama, the town's own tree, at Amano Iwato Shrine six kilometres east.",
+  "meta_description": "Takachiho's three ancient trees: a 55 metre cedar held to be 800 years old, two cedars wed at the root, and the sacred ogatama of Amano Iwato Shrine.",
+  "question_answer": "The oldest tree in Takachiho is the Chichibu-sugi, a Japanese cedar at Takachiho Shrine put at about 800 years. That figure comes from the shrine's legend that Hatakeyama Shigetada planted it around 1190, not from a measurement of the tree.",
+  "question_meta": "The Chichibu-sugi at Takachiho Shrine, about 800 years old by the shrine's account, is Takachiho's oldest tree. How that age arose, and 2 more trees.",
+  "question_context": "The 800 years is a legend turned into a number. Two signs stand at the Chichibu-sugi's foot: one from Miyazaki prefecture's hundred-giant-trees list, certified in 1992, giving 800 years, 55 metres and 7.15 metres round; the other telling how Hatakeyama Shigetada, envoy of the first shogun Minamoto no Yoritomo, planted the tree about 800 years ago. The tree takes its name from Shigetada's home town of Chichibu, near Tokyo. Nobody has cored it. What is measured is the height, 55 metres in the Environment Agency's giant-tree survey, while the girth is disputed: 7.15 metres on the sign, 9 metres in the older national survey. The Meoto-sugi, 35 metres away, are given anything from 400 to 800 years by travel pages, with no measurement behind either. Getting there: Takachiho has no railway, so take a bus from Nobeoka or Kumamoto to Takachiho Bus Centre and walk about 15 minutes to the shrine.",
+  "oldest_tree_id": "tkc_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Takachiho?",
+      "a": "The Chichibu-sugi at Takachiho Shrine, at about 800 years by the shrine's account. The age comes from a legend that Hatakeyama Shigetada planted it around 1190 as Minamoto no Yoritomo's envoy, so treat it as tradition rather than a measured date."
+    },
+    {
+      "q": "What are the Meoto-sugi?",
+      "a": "Two cedars at Takachiho Shrine that grew from one root and are treated as a married couple. Couples walk round them three times hand in hand for harmony in the marriage, a safe household and descendants. Their age is disputed, given as anything from 400 to 800 years."
+    },
+    {
+      "q": "Are Takachiho's ancient trees free to visit?",
+      "a": "Yes, all three. They stand in shrine precincts with no entry fee. The Chichibu-sugi and the Meoto-sugi are fenced at the foot and seen from a few metres away; the ogatama stands inside the fence at Amano Iwato Shrine's West Shrine, open 8:30 to 16:30."
+    },
+    {
+      "q": "Do I need to book the cave tour to see the ogatama?",
+      "a": "No. The ogatama stands beside the West Shrine building and you see it from the precinct. Viewing the sacred cave across the river is a separate guided visit and is not needed for the tree."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "The two cedars, yes: they are about 35 metres apart in the same shrine, some 15 minutes on foot from Takachiho Bus Centre. Amano Iwato Shrine is about 6 km east of the town, so take the local bus or a taxi for the ogatama."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tkc_001",
+      "name": "Chichibu-sugi (秩父杉), the Cedar of Takachiho Shrine",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 800 years",
+      "age_min": 700,
+      "age_max": 900,
+      "age_basis": "source",
+      "girth_cm": 715,
+      "height_m": 55,
+      "location": {
+        "address": "高千穂神社, 宮崎県西臼杵郡高千穂町三田井1037 (Takachiho Shrine, Takachiho)",
+        "latitude": 32.7063343,
+        "longitude": 131.3022396,
+        "neighbourhood": "Mitai, Takachiho"
+      },
+      "story": "This cedar is named after a town in the hills north-west of Tokyo. Chichibu was the home of Hatakeyama Shigetada, a warrior of the Kamakura age, and the second sign at the tree's foot says he planted it about 800 years ago, sent to Takachiho as the envoy of Minamoto no Yoritomo, the first shogun. That is the shrine's account: a planting legend from around 1190, not a ring count, and the 800 years is held to be that legend's age rather than a measurement. The height is measured. The Environment Agency's giant-tree survey put it at 55 metres, one straight trunk rising clean through the canopy beside the Kagura-den, and the sign repeats the figure. The girth depends on who held the tape. The sign, from Miyazaki prefecture's hundred-giant-trees list, certified in 1992, says 7.15 metres; the older national survey recorded 9 metres, and one giant-tree database sides with the sign and remarks that it is not that thick. The town made it a natural monument in 1969. If the shrine's count is right, it went in when the first shogunate was being built and has stood through every century of samurai rule since. Its foot is fenced, so you look up from a few metres off. The Meoto-sugi, the shrine's wedded pair of cedars, stand about 35 metres away.",
+      "verified_sources": [
+        "https://www.nishiusuki-shinrin.jp/pages/13/detail=1/b_id=32/r_id=0/",
+        "https://www.town-takachiho.jp/top/kanko_bunka/kanko_supotto/812.html",
+        "https://ja.wikipedia.org/wiki/高千穂神社",
+        "https://www.openstreetmap.org/node/7073933907",
+        "http://www.hitozato-kyoboku.com/chichibusugi.htm",
+        "https://commons.wikimedia.org/wiki/File:高千穂神社の大杉_-_panoramio.jpg"
+      ],
+      "access": "Free, inside the Takachiho Shrine precinct, open to walk up to; fenced at the foot, so viewed from a few metres away. Nothing booked or paid for the tree.",
+      "transport": "Takachiho is reached by bus only (no railway): Takachiho Bus Centre (Nobeoka or Kumamoto buses) to the shrine is about 15 minutes' walk, or a few minutes by taxi.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/%E9%AB%98%E5%8D%83%E7%A9%82%E7%A5%9E%E7%A4%BE%E3%81%AE%E5%A4%A7%E6%9D%89_-_panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "sk01, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3264,
+        "height": 4896
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "notes": "Age is the shrine's and town's 800 years, from the legend that Hatakeyama Shigetada planted it as Yoritomo's envoy around 1185-1190; not a measured date. Girth conflict: the shrine sign (Miyazaki 100 giant trees, certified 1992) and nishiusuki-shinrin give 715 cm, the Environment Agency survey and ja.wikipedia give 9 m; 715 used. Height 55 m from the survey and the sign. Town natural monument 1969-03-19. Pin from OSM node, within 5 m of a reader GPS fix and the Commons geotag.",
+      "how_to_recognise": "You can recognise it by the single straight trunk, 55 metres tall and 7.15 metres round, fenced at its foot with two wooden signs and a white post reading 秩父杉. It stands right of the path near the Kagura-den.",
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/tkc_001-chichibu-sugi-the-cedar-of-takachiho-shrine-8bfeb681.jpg",
+          "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+          "attribution": null,
+          "status": "approved",
+          "width": 1200,
+          "height": 1600,
+          "source": "contributor",
+          "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+          "sighting_id": "8bfeb681-540d-4b78-8df5-06a95191adb2",
+          "note": "Photographed by a reader and sent through the app (2026-09-29); a viewing pass approved it on 2026-10-02: Owner's own photograph beside the Commons lead: it shows the shrine's sign with the measurements and the fenced trunk; Hidde approved it on the review page 2026-10-02 (never credited) Species seen: tall straight cedar trunk with fibrous red-brown bark, Cryptomeria. Fits the description: the fenced cedar beside the shrine with the Miyazaki giant-tree sign and the Chichibu-sugi name board at its foot.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+        }
+      ]
+    },
+    {
+      "id": "tkc_002",
+      "name": "Meoto-sugi (夫婦杉), the Wedded Cedars of Takachiho Shrine",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "several hundred years",
+      "age_min": 400,
+      "age_max": 800,
+      "age_basis": "source",
+      "location": {
+        "address": "高千穂神社 拝殿前, 宮崎県西臼杵郡高千穂町三田井1037 (in front of the haiden, Takachiho Shrine)",
+        "latitude": 32.7062619,
+        "longitude": 131.3021866,
+        "neighbourhood": "Mitai, Takachiho"
+      },
+      "story": "Couples walk round these two cedars three times, hand in hand. The Meoto-sugi are two big trees west of Takachiho Shrine's hall of worship that grew from one root, so the shrine treats them as a married pair, and the custom says three circuits together bring harmony in the marriage, a safe household and descendants. The town's own page puts it more simply: two trunks that become one. Look at the base and you can see what it means. The two trunks fuse at the foot, bound together by a shimenawa, the twisted straw rope that marks something sacred, with a small roofed offering box beside them and a fence hung with ema, the wooden prayer plaques visitors write their wishes on. How old the pair is, nobody has settled. Travel pages give about 800 years, which would make them as old as the Chichibu-sugi, the shrine's 55-metre cedar some 35 metres away; another tourist page says 400. No survey, sign or designation we found carries a measurement, so the honest answer is several hundred years and a range of four centuries. That gap is the easiest one on this page to close. A tape round each trunk at chest height would tell us a great deal, and if you have done it, tell us what you found.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/高千穂神社",
+        "https://www.town-takachiho.jp/top/kanko_bunka/kanko_supotto/812.html",
+        "https://www.ana.co.jp/ja/jp/japan-travel-planner/miyazaki/0000001.html",
+        "https://www.openstreetmap.org/node/7127381322",
+        "https://commons.wikimedia.org/wiki/File:高千穂神社の夫婦杉_-_panoramio.jpg"
+      ],
+      "access": "Free, inside the Takachiho Shrine precinct, by the haiden and honden; fenced, with ema racks at the fence. Shrine hours daily; no booking.",
+      "transport": "Takachiho is reached by bus only (no railway): Takachiho Bus Centre to the shrine is about 15 minutes' walk, or a few minutes by taxi.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/tkc_002-meoto-sugi-the-wedded-cedars-of-takachiho-shrine.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "b9a2d2df-77ba-4240-8c90-63ca0a83b1c9",
+        "note": "Photographed by a reader and sent through the app (2026-09-29); a viewing pass approved it on 2026-10-02: Owner's own photograph; Hidde approved it on the review page 2026-10-02 (never credited) Species seen: two moss-covered cedar trunks, Cryptomeria, joined at the base. Fits the description: the paired cedars in front of the hall, bound with a shimenawa, ema racks and offertory box at the fence.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Age disputed: travel pages say about 800 years, another tourist page 400; no measured source, no girth or height recorded. Pin from a reader GPS fix at the fence and the Commons geotag (6 m apart); OSM node 7127381322 sits about 40 m off and is not used.",
+      "how_to_recognise": "You can recognise it by the two trunks fused at the base and bound with a shimenawa, a roofed offering box and an ema fence at their foot. It stands west of the hall of worship, beside the main sanctuary."
+    },
+    {
+      "id": "tkc_003",
+      "name": "The Ogatama of Amano Iwato Shrine (招霊の木)",
+      "species": "Ogatama Magnolia (Magnolia compressa)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "天岩戸神社 西本宮, 宮崎県西臼杵郡高千穂町岩戸1073-1 (West Shrine, Amano Iwato Shrine)",
+        "latitude": 32.734529,
+        "longitude": 131.350554,
+        "neighbourhood": "Iwato, Takachiho"
+      },
+      "story": "The kagura bell, by Takachiho's own account, began as a branch of this kind of tree. The story is the oldest in Japan: the sun goddess Amaterasu shut herself in a cave and the world went dark, and the goddess Ame-no-Uzume danced outside until she came out. What Uzume held as she danced, the town says, was a branch of ogatama, and the bells shaken in kagura today descend from it. The cave is across the river from the West Shrine of Amano Iwato Shrine, and this ogatama is the West Shrine's goshinboku, its sacred tree, standing inside the fence beside the shrine building. The ogatama is also Takachiho's town tree. The characters written for its name, 招霊, read roughly as calling the spirits. It is an evergreen magnolia, and this one rises as several stems from a single base, bound at the foot with a shimenawa rope beside its name board. Here the page has to be plain about what it does not know. No source we found gives its age, its girth or its height, so it is here for the myth and for the tree itself rather than for any record. If you have stood at the fence with a tape measure, or know when it was planted, tell us.",
+      "verified_sources": [
+        "https://amanoiwato-jinja.jp/pages/31/",
+        "https://www.town-takachiho.jp/top/kanko_bunka/kanko_supotto/799.html",
+        "https://commons.wikimedia.org/wiki/File:天岩戸神社の招霊の木_-_panoramio.jpg"
+      ],
+      "access": "Free; the shrine precinct is open 8:30 to 16:30 all year (town tourism page). The tree stands inside the fence beside the West Shrine's building, so it is viewed over the fence. Viewing the sacred cave across the river is a separate booked visit and not needed for the tree.",
+      "transport": "About 6 km east of Takachiho town centre; local bus or taxi from Takachiho Bus Centre (timetable not verified).",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%E5%A4%A9%E5%B2%A9%E6%88%B8%E7%A5%9E%E7%A4%BE%E3%81%AE%E6%8B%9B%E9%9C%8A%E3%81%AE%E6%9C%A8_-_panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "sk01, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4896,
+        "height": 3264
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "No age, girth or height from any source. Species from the shrine and town naming it ogatama. Pin is the Commons photograph's geotag, confirmed to the fenced enclosure. Alive evidence is the 2014 photograph and the shrine's current page only.",
+      "how_to_recognise": "You can recognise it by the several stems rising from one base, bound with a shimenawa beside a name board. It stands inside the fence next to the West Shrine building, not across the river at the cave."
+    }
+  ]
+}
