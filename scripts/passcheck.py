@@ -856,8 +856,13 @@ US_COUNTRY = "United States"
 # nuttig is". US_ONLY now means "only the focus countries"; the name stays so
 # city_queue.py's import keeps working. Scandinavia read strictly (Denmark,
 # Norway, Sweden). The US still leads city_queue.py --next.
+# Western Europe read broadly the same day ("duitsland is ook ok dat is west
+# europa toch"): Germany, the Netherlands, Belgium, Luxembourg, Austria,
+# Switzerland and Ireland join France, Spain, Portugal and Italy.
 FOCUS_COUNTRIES = {"United States", "United Kingdom", "Japan", "France", "Spain",
-                   "Portugal", "Italy", "Denmark", "Norway", "Sweden"}
+                   "Portugal", "Italy", "Germany", "Netherlands", "Belgium",
+                   "Luxembourg", "Austria", "Switzerland", "Ireland",
+                   "Denmark", "Norway", "Sweden"}
 # Contiguous states, Alaska, Hawaii. Rough on purpose: it decides which country
 # a place a run names is in, and a border town is a question for --country.
 US_BOXES = [(24.4, 49.5, -125.0, -66.9), (51.2, 71.5, -179.9, -129.9),
