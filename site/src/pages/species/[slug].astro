@@ -9,7 +9,7 @@ import { cityIsRenderable, treeSlugsForCity, type CityEntry } from "../../lib/tr
 import { groupTreesBySpecies, checkSpeciesNames, SPECIES_MIN_TREES, type SpeciesMember } from "../../lib/species";
 import { checkCityNames } from "../../lib/city-aliases";
 import { checkPhenology } from "../../lib/phenology";
-import { usablePhoto, imgSrcset } from "../../lib/images";
+import { usablePhoto, imgSrcset, speciesFaceTree, ogImageUrl } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
 import { byCityListOrder, exploreCities } from "../../lib/city-order";
@@ -95,8 +95,15 @@ const graph = [
   breadcrumbSchema(crumbItems, canonical),
 ];
 const exploreList = exploreCities(sections.map((x) => x.cslug), published, (slug) => !isNoindexed(`/${slug}`));
+// The species' cover for Google and share links: the same tree the app and
+// the homepage show, a person's pick (face_tree_id) first (Hidde,
+// 2026-10-01). This page had no og:image, so it shared the site default.
+const speciesFace = speciesFaceTree(intro.data.face_tree_id, members.map((m) => m.tree));
+const speciesFaceUrl = speciesFace ? usablePhoto(speciesFace)?.url : null;
+const speciesOgImage = speciesFaceUrl
+  ? `\n<meta property="og:image" content="${ogImageUrl(speciesFaceUrl).replace(/"/g, "&quot;")}">` : "";
 ---
-<Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
+<Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph) + speciesOgImage}>
   <main class="content-page">
     <Breadcrumbs items={crumbItems} />
     <h1>{common}</h1>
