@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-01 night run: Copenhagen +7 (committed 3141d219), the rest of the shelf is blocked by photo-or-pin
+
+- Rung: write pass on the verified shelf. Copenhagen's seven Danish Tree Register trees are written and merged (cop_043 to cop_049, preflight 0 problems; research ids renamed cph_ to cop_ so the claim released). Visits, 7 days: 2,531 (one 1,063 spike on 09-26).
+- **Not merged, and why:** Houston hou_009 to 011 fail the worldwide photo-or-pin check (park-level pins, no photo); Fukuoka fuk_017 and Takachiho tkc_004/005 are written but shrine-level pins with no photo; the two Bulgarian Tree of the Year oaks are approximate with no photo; New York's Saratoga Park oak and Anne Frank sapling are park-level and young. All stay in research/leads until a photo or tree-level pin turns up. fdl_001 duplicates spa_001 in Sao Paulo (pins 3 km apart, someone should check which is right).
+- Oahu verify claimed and released: its register candidates share coarse coordinates, so they could not pass the same check. The photo shortlist candidates were mostly wrong-subject filenames, not chased. Taiwan a28_001 duplicates alh_002.
+- No refused commands.
+
 ## 2026-10-02 session: US-only lifted, the pace is a note, downloads were never lagging, no mail when a photo goes live
 
 - **US-only is off** (Hidde: "us open rule is gone"). `US_ONLY = False` in passcheck.py; the US still leads `city_queue.py --next` by demand. Copenhagen's seven verified trees and Fukuoka's two can be written on the next knock.
