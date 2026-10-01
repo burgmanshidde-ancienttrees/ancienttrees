@@ -1,0 +1,28 @@
+[
+  {
+    "id": "fuk_016",
+    "name": "The Camphors of Rokusho Shrine",
+    "species": "Camphor Tree (Cinnamomum camphora)",
+    "age_estimate": "800 to 1,000+ years",
+    "age_min": 800,
+    "age_max": 1000,
+    "girth_cm": 850,
+    "location": {
+      "address": "六所神社, 福岡県糸島市志摩馬場344 (Rokusho Shrine, Shima-Baba 344, Itoshima)",
+      "latitude": 33.58765,
+      "longitude": 130.20467,
+      "neighbourhood": "Shima-Baba, Itoshima (day trip from Fukuoka)"
+    },
+    "verified_sources": [
+      "https://www.city.itoshima.lg.jp/s033/010/020/010/130/060/rokusyo-kusunoki.html",
+      "https://ja.wikipedia.org/wiki/糸島市",
+      "https://www.crossroadfukuoka.jp/spot/14726",
+      "http://www.fukuokanomori.xyz/shoukai/itoshimarokusho/"
+    ],
+    "access": "Free, shrine precinct, open at all times (crossroadfukuoka.jp: 参拝自由)",
+    "transport": "About 27 km west of central Fukuoka. Community bus (Kyudai line) from JR Chikuzen-Maehara to Baba stop, then 1 minute walk (crossroadfukuoka); 12 min by car from Maehara IC. Real door-to-door from Fukuoka centre not checked, roughly an hour by train plus bus.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "HOLD, DO NOT MERGE YET: no openly licensed photograph found (Commons search and geosearch within 400 m empty, iNaturalist 0 camphor records within 300 m) and the pin is shrine-level only, so under the 2026-10-01 rule a new tree in Japan would be refused by preflight. Merge only if a photo or a tree-level pin turns up.\n- Official designation: Fukuoka Prefecture natural monument no. 41, designated 12 April 1960, two camphors (ja.wikipedia 糸島市 list; Itoshima city page 六所神社の大樟, which says both exceed 1,000 years). Register-type sources only (city page, ja.wikipedia, tourism page); one official designation.\n- Measurements: tree 1 girth at breast height 8.5 m, tree 2 7.5 m (all sources agree). Heights DISAGREE: 28.0 m and 39.0 m (city page and crossroadfukuoka) versus 28 m and 29 m (fukuokanomori.xyz, which reproduces what reads like the prefectural description). 39 m may be a typo for 29; deliver both, pick neither. Girth in the tree record is tree 1 (850); tree 2 is 750.\n- Age DISAGREES: city page and crossroadfukuoka say over 1,000 years; fukuokanomori says the age is presumed to exceed about 800 years. Say 'at least 800, probably 1,000' loosely.\n- fukuokanomori also gives root-ring (根廻り) 24 m for both, and explains root girth being large against breast-height girth: the ground around the base was cut down when the shrine buildings were rebuilt, exposing the root base. Tree 1 is the Kumano sacred tree (熊野神木, in front, near the approach), tree 2 the Sumiyoshi sacred tree (住吉神木, further back).\n- Shrine history: oldest recorded building by Otomo Yoshiaki 1531 (munafuda plaque), burned in the Tensho era, restored 1631 by Kuroda Tadayuki, village shrine 1872, prefectural shrine 1933; creation legend tied to Empress Jingu, over 1,300 years claimed.\n- Pin: shrine coordinate 33.587653, 130.204677 (hotokami.jp map, same spot as an unnamed OSM shinto building way 1274622801 at 33.58765, 130.20467). The brief's 33.5932, 130.2076 was only the quarter centroid and is about 650 m off. GSI seamlessphoto z18 shows a wooded grove, individual crowns not distinguishable, so precision stays approximate and the two trunks are not separately pinned.\n- Alive: lifecheck NONE at the shrine. No dated photograph found. Sources describe the trees as vigorous (樹勢旺盛) but are undated. Flag.\n- Twins: two registered trunks in one grove, folded into one entry."
+  }
+]
