@@ -1,0 +1,44 @@
+{
+  "common_name": "Bald Cypress",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    3,
+    4
+  ],
+  "fruit": [
+    10,
+    11
+  ],
+  "colour": [
+    10,
+    11
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "striking"
+  },
+  "fruit_label": "round wrinkled cones turn from purplish green to brown",
+  "colour_label": "the soft needles turn copper red, then the whole tree drops them",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Taxodium_distichum",
+    "https://plants.ces.ncsu.edu/plants/taxodium-distichum/",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Taxodium+distichum"
+  ]
+}

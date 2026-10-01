@@ -1,0 +1,44 @@
+{
+  "common_name": "Sessile Oak",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    4,
+    5
+  ],
+  "fruit": [
+    9,
+    10
+  ],
+  "colour": [
+    10,
+    11
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "nice",
+    "fruit": "striking",
+    "colour": "nice"
+  },
+  "flower_label": "greenish-yellow catkins hang as the leaves open",
+  "fruit_label": "stalkless acorns sit tight on the twig, and a mast year covers the ground in them",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Quercus_petraea",
+    "https://plants.ces.ncsu.edu/plants/quercus-petraea/",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Quercus+petraea"
+  ]
+}

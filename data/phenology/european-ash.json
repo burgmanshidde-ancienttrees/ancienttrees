@@ -1,0 +1,47 @@
+{
+  "common_name": "European Ash",
+  "habit": "deciduous",
+  "leaf": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    4,
+    5
+  ],
+  "fruit": [
+    9,
+    10,
+    11,
+    12,
+    1
+  ],
+  "colour": [
+    10
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "nice"
+  },
+  "flower_label": "flowers open on bare twigs, before the late leaves",
+  "fruit_label": "bunches of winged keys hang on the bare branches through winter",
+  "colour_label": "often falls still green, sometimes a clear yellow",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fraxinus_excelsior",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Fraxinus+excelsior",
+    "https://www.treesandshrubsonline.org/articles/fraxinus/fraxinus-excelsior/"
+  ]
+}

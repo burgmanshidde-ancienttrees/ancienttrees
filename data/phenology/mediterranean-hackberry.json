@@ -1,0 +1,42 @@
+{
+  "common_name": "Mediterranean Hackberry",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    4
+  ],
+  "fruit": [
+    10
+  ],
+  "colour": [
+    10,
+    11
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "nice"
+  },
+  "fruit_label": "small dark-purple berries hang in short clusters",
+  "colour_label": "pale yellow before the leaves drop",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Celtis_australis",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Celtis+australis",
+    "https://www.treesandshrubsonline.org/articles/celtis/celtis-australis/"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "common_name": "Northern Red Oak",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    4,
+    5
+  ],
+  "fruit": [
+    10
+  ],
+  "colour": [
+    10,
+    11
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "nice",
+    "fruit": "nice",
+    "colour": "striking"
+  },
+  "flower_label": "yellow-green catkins hang as the leaves open",
+  "fruit_label": "acorns that took two summers to ripen drop in early October",
+  "colour_label": "a rich red, sometimes fading to brown",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Quercus_rubra",
+    "https://plants.ces.ncsu.edu/plants/quercus-rubra/",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Quercus+rubra"
+  ]
+}

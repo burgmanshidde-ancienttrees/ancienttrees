@@ -1,0 +1,44 @@
+{
+  "common_name": "Copper Beech",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    4,
+    5
+  ],
+  "fruit": [
+    9,
+    10
+  ],
+  "colour": [
+    10,
+    11
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "striking"
+  },
+  "fruit_label": "beech mast, small triangular nuts in bristly husks",
+  "colour_label": "leaves open purple in spring, darken through summer and turn copper before they fall",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Copper_beech_(tree)",
+    "https://plants.ces.ncsu.edu/plants/fagus-sylvatica/",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Fagus+sylvatica"
+  ]
+}

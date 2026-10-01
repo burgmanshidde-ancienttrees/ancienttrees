@@ -1,0 +1,43 @@
+{
+  "common_name": "Dawn Redwood",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    2,
+    3
+  ],
+  "fruit": [
+    10,
+    11
+  ],
+  "colour": [
+    10,
+    11
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "unseen",
+    "colour": "striking"
+  },
+  "colour_label": "bright green needles turn a foxy reddish brown, then fall",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Metasequoia_glyptostroboides",
+    "https://www.treesandshrubsonline.org/articles/metasequoia/metasequoia-glyptostroboides/",
+    "https://pfaf.org/user/Plant.aspx?LatinName=Metasequoia+glyptostroboides"
+  ]
+}
