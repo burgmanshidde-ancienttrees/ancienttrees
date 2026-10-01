@@ -877,6 +877,8 @@ The day a stranger put nine photographs on two Paris pages within minutes of ins
 
 **The mechanics.** supabase/ambassadors.sql (rows cascade with the account; only `public` is the person's to change), `python3 scripts/ambassador.py` (--grant, --public, --grant-named for people without an account, --sync on every knock beside photo_takedown.py so a deleted account loses its badge everywhere), data/ambassadors.json for the website, Profiles.myPlaces and placesByUser for the app. A decision travels as data: neither surface decides who is an ambassador, both read it.
 
+**A visitor is asked for their hometown instead (Hidde, 2026-10-02: "people can of course have been on a trip and respond that they're not there anymore but then we can ask them to become of their hometown").** Most photographs come from trips, so the ordinary answer to the Paris mail is "I was only visiting". That is not a no: the reply asks which place they would look after, and `--grant` takes any place we publish. A hometown we do not publish yet is the best kind of lead, because the person asking for it is its supply; it opens the normal way, with four verified trees, and the badge waits for the page. The reply line is in drafts/ambassador-mails.md.
+
 **No mail when the badge is given, no mail when a photograph goes live, one invitation.** That is the whole of the contact: the invitation is the single automatic mail a contributor ever gets from this, and it is sent once per person and place, recorded under `invited` in data/ambassadors.json so it can never repeat.
 
 ## Which trees get a page, ruled by Hidde 2026-09-23
