@@ -287,6 +287,14 @@ struct BottomSheet<Header: View, Content: View>: View {
     /// less than 74. A test that drives the real sequence caught it in one run
     /// (2026-08-25); the fix I shipped an hour earlier had not worked at all.
     private let headerDepth: CGFloat = 90
+    /// 0 at the half stop, 1 at the page, READ BACK FROM THE DRAWN FRAME each
+    /// frame of the spring rather than computed from the height asked for.
+    /// The asked-for height changes in one step on release while the frame
+    /// springs to it, so corners, handle and fades computed from it jumped
+    /// ahead of the sheet and the move read as clunky (Hidde, 2026-10-02:
+    /// "feels a bit clunky"). Measured, the way the recentre control already
+    /// rides the live height, they move with the sheet and overshoot with it.
+    @State private var pageProgress: CGFloat = 0
 
     /// The home indicator's depth, read from the window rather than from the
     /// geometry, because a view that IGNORES the bottom safe area is told the
@@ -347,7 +355,7 @@ struct BottomSheet<Header: View, Content: View>: View {
             // frame, so the change is one movement under the finger rather than
             // a switch on release (the Polarsteps transition, 2026-10-02).
             let halfPts = SheetHeight.half.points(in: visible)
-            let progress = max(0, min(1, (h - halfPts) / max(page - halfPts, 1)))
+            let progress = pageProgress
             VStack(spacing: 0) {
                 // The status-bar strip, only as far as the sheet has risen into it.
                 Color.clear.frame(height: top * progress)
@@ -356,6 +364,8 @@ struct BottomSheet<Header: View, Content: View>: View {
                 // outside the scroll view. So it gets a real target rather than
                 // a five point line: the capsule is what you see, the padding
                 // around it is what you can actually grab.
+                // One fixed height for the whole row, so the swap from handle
+                // to chevron moves nothing below it.
                 ZStack(alignment: .leading) {
                     Capsule()
                         .fill(.tertiary)
@@ -373,7 +383,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                             .font(.system(size: 15, weight: .semibold))
                             .foregroundStyle(Brand.ink)
                             .frame(width: 36, height: 36)
-                            .background(Brand.moss.opacity(0.10), in: .circle)
+                            .background(Brand.surfaceMuted, in: .circle)
                             .frame(width: 44, height: 44)
                     }
                     .buttonStyle(.plain)
@@ -390,6 +400,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                     .accessibilityIdentifier("sheet-page-close")
                 }
                 .frame(maxWidth: .infinity)
+                .frame(height: 44)
                 .contentShape(.rect)
 
                 header
@@ -466,8 +477,13 @@ struct BottomSheet<Header: View, Content: View>: View {
             // "rides the sheet" was always supposed to mean.
             .background(
                 GeometryReader { drawn in
-                    Color.clear.preference(key: SheetVisibleHeightKey.self,
-                                           value: max(drawn.size.height - bottom, 0))
+                    Color.clear
+                        .preference(key: SheetVisibleHeightKey.self,
+                                    value: max(drawn.size.height - bottom, 0))
+                        // The page progress, from the same drawn height, so
+                        // every visual that follows it follows the spring.
+                        .preference(key: SheetPageProgressKey.self,
+                                    value: max(0, min(1, (drawn.size.height - bottom - halfPts) / max(page - halfPts, 1))))
                 }
             )
             .overlay {
@@ -484,7 +500,6 @@ struct BottomSheet<Header: View, Content: View>: View {
             .background(Color(.systemBackground).opacity(progress))
             .clipShape(.rect(topLeadingRadius: 16 * (1 - progress), topTrailingRadius: 16 * (1 - progress)))
             .shadow(color: .black.opacity(0.12 * (1 - progress)), radius: 10, y: -3)
-            .preference(key: SheetPageProgressKey.self, value: progress)
             .frame(maxHeight: .infinity, alignment: .bottom)
             // simultaneous, not exclusive: the scroll view has to keep working
             // for every gesture this one does not want.
@@ -542,6 +557,24 @@ struct BottomSheet<Header: View, Content: View>: View {
         // would still be there. It is what lets the sheet paint the last thirty
         // points of the screen.
         .ignoresSafeArea(edges: [.top, .bottom])
+        .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
+    }
+}
+
+private struct SheetPageProgressEnvKey: EnvironmentKey {
+    static let defaultValue: CGFloat = 0
+}
+
+extension EnvironmentValues {
+    /// 0 at the half stop, 1 when the sheet is the page, for a control in
+    /// MapWithSheet's `floating` slot that wants to RESTYLE rather than leave
+    /// as the sheet rises: Polarsteps' gear turns from a light circle over the
+    /// globe into a grey circle on the white page without ever disappearing
+    /// (Hidde, 2026-10-02: "the settings button disappears where at Polarsteps
+    /// it smoothly turns the button into black please copy that").
+    var sheetPageProgress: CGFloat {
+        get { self[SheetPageProgressEnvKey.self] }
+        set { self[SheetPageProgressEnvKey.self] = newValue }
     }
 }
 

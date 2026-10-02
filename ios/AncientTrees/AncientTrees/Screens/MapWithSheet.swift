@@ -60,9 +60,13 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
             // controls a map that is no longer there once the sheet is the
             // page, so it fades as the sheet rises past half and stops taking
             // taps once it is mostly gone.
+            // Each floating control decides what the page does to it, by
+            // reading sheetPageProgress: the map tab fades its search field
+            // and chips, which control a map that is no longer there; My
+            // trees restyles its gear, which still has a job, as Polarsteps
+            // does with its own (2026-10-02).
             floating
-                .opacity(1 - pageProgress)
-                .allowsHitTesting(pageProgress < 0.5)
+                .environment(\.sheetPageProgress, pageProgress)
         }
         .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
         // Zero means NOT MEASURED YET, not "the sheet is flat", which is the

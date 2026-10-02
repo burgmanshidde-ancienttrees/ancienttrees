@@ -375,6 +375,9 @@ struct CollectView: View {
         return max(m * 1.4, 1200)
     }
 
+    /// 0 over the map, 1 when the sheet is the page (MapWithSheet).
+    @Environment(\.sheetPageProgress) private var pageProgress
+
     private var settingsButton: some View {
         Button { navigator.push = .profile } label: {
             Image(systemName: "gearshape")
@@ -382,6 +385,17 @@ struct CollectView: View {
                 .foregroundStyle(Brand.ink)
                 .frame(width: 44, height: 44)
                 .background(.regularMaterial, in: .circle)
+                // POLARSTEPS' GEAR: it never leaves. Over the map it is a
+                // light circle; as the sheet becomes the page it turns into a
+                // grey circle on white, the same grey as the sheet's chevron,
+                // in one continuous move with the sheet (Hidde, 2026-10-02).
+                .overlay { Circle().fill(Brand.surfaceMuted).opacity(pageProgress) }
+                .overlay {
+                    Image(systemName: "gearshape")
+                        .font(.system(size: 18, weight: .medium))
+                        .foregroundStyle(Brand.ink)
+                        .opacity(pageProgress)
+                }
         }
         .buttonStyle(.plain)
         .padding(.trailing, 16)
