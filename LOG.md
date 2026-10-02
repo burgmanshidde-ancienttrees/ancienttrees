@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 (fifth continuation): nothing published
+
+Pulled, no claims standing, `leads.py --ready` 0, `city_queue.py --next` shows the same US demand cities with no leads or register supply. Nothing claimed or dispatched; the findings of the earlier continuations today still hold.
+
 ## 2026-10-02 (fourth continuation): nothing published, one sighting judged
 
 Visits, 7 days: 2,703. Rung 1: the one new sighting (Camphor Tree in Fukuoka, own account, 700 cm girth entered, no register or write-up within 300 m, photograph file not on this runner) stays a lead, reason written into data/leads/_sightings.json. Shelf still under its floor and the eight written trees (hou_009 to 011, fuk_017, tkc_004/005, std_001, nsb_001) still fail photo-or-pin. `--claim _famous-portugal` was refused (not a proven city). Claimed Oahu for a deepen verify and released it undispatched: its 176 unmined register rows come from the Hawaii exceptional-trees file, whose coordinates are rounded to 0.01 degrees, so every new tree would be an approximate pin with no photograph and preflight would refuse it. Health: the fresh-eyes review fails on "Workflow initiated by non-human actor" (review.yml needs `allowed_bots`), a workflow edit that is not mine to make from a run. No commands were refused.
