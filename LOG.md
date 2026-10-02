@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 (sixth continuation): three photographs live, one reader photo rejected
+
+Visits, 7 days: 3,160. Rung 1: the one reader photograph (par_033, Turkey Oak of Square Rene-Le Gall) is a close-up of a single acorn on gravel, no tree in frame, so it was rejected under the Cadiz standard. Shelf still under its floor: Houston's three written trees (hou_009 to 011) and the Japanese ones still fail photo-or-pin (merged and reverted, preflight refused them), so no tree was added. Claimed Oahu and released it again for the same reason as the fourth continuation (register grid 0.01 degrees). Took a viewing pass instead (`photo_fetch.py --zero`, 3 s throttled): of ~100 candidates most are wrong subjects by filename, three were the right tree in leaf and good light and are approved: Belfast's Peace Tree (bfs_005), Breda's Moeierboom (bre_011) and Budapest's Jaszai Mari plane (bud_013), all CC BY-SA 4.0 with attribution. Preflight 0 problems. Note: `photo_verdicts.py` wants the candidate's Commons url in `page`, not the city. No commands were refused.
+
 ## 2026-10-02 (session): Find people is a pill, and a person has a name
 
 **Pill button.** The Follow control on Find people is a pill: filled moss with white text for Follow, outlined on the hairline with ink text for Following, which is how Strava, Polarsteps and Instagram draw the same pair (CONVENTIONS.md). Photographed on the SE and a large phone, appfit 0 findings on 74 screens.
