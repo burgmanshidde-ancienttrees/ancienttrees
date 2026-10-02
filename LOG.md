@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 (seventh continuation): nothing published
+
+Pulled, no claims standing, `leads.py --ready` 0, health clear. Claimed Houston to read its brief: register candidates all mined or blocked, and its three written trees (hou_009 to 011) have neither a photograph nor a confirmed pin, so preflight would refuse them. Their pins are address-level (restaurant, cemetery slope, arboretum trail), and upgrading one needs aerial evidence this run could not get. Release refused (trees unmerged) and `--force` would hand them to a night run to rewrite, so the claim is left to expire on its own. Next useful step for Houston: a pin upgrade on one of the three, or a photograph. No commands were refused.
+
 ## 2026-10-02 (sixth continuation): three photographs live, one reader photo rejected
 
 Visits, 7 days: 3,160. Rung 1: the one reader photograph (par_033, Turkey Oak of Square Rene-Le Gall) is a close-up of a single acorn on gravel, no tree in frame, so it was rejected under the Cadiz standard. Shelf still under its floor: Houston's three written trees (hou_009 to 011) and the Japanese ones still fail photo-or-pin (merged and reverted, preflight refused them), so no tree was added. Claimed Oahu and released it again for the same reason as the fourth continuation (register grid 0.01 degrees). Took a viewing pass instead (`photo_fetch.py --zero`, 3 s throttled): of ~100 candidates most are wrong subjects by filename, three were the right tree in leaf and good light and are approved: Belfast's Peace Tree (bfs_005), Breda's Moeierboom (bre_011) and Budapest's Jaszai Mari plane (bud_013), all CC BY-SA 4.0 with attribution. Preflight 0 problems. Note: `photo_verdicts.py` wants the candidate's Commons url in `page`, not the city. No commands were refused.
