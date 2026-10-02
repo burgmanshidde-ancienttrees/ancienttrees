@@ -74,7 +74,7 @@ Subject: Re: Schöne Eiche
 
 Hi Leon,
 
-Your five metres are on the page now, next to the 2010 figure from the Baumkunde thread, with the year on each.
+Five metres it is: your measurement from last year stands, and the older figure from the Baumkunde thread stays beside it with its year.
 
 Something we are starting: one person per place who looks after its list, adds photographs, checks the facts and says what is missing. You have been doing exactly that for Bad Homburg and Friedewald since the day you found us. Would you want to be named as their ambassador on the pages? If you would rather not be named, it shows inside the app only.
 
@@ -87,14 +87,31 @@ Hidde
 <!-- woelfie@gmx.de, Hidde's 2026-09-24 mail asked for his Münster favourite; he answered 2026-10-02 with the Kopfulme in der Beerlage. German, as the thread is. Not pre-granted: the mail asks, and the place is his to name. -->
 
 ```
-Subject: Re: Baumkunde und Ancient Trees
+Subject: Re: Kopfulme in der Beerlage
 
 Hallo Wolfgang,
 
-Ihre Kopfulme in der Beerlage kommt auf die Karte, die hatten wir noch nicht: hohl, begehbar, über fünf Meter Umfang und seit 2014 Naturdenkmal, genau die Sorte Baum, für die Leute einen Umweg machen.
+Die Kopfulme in der Beerlage ist ein großartiger Tipp: hohl, begehbar, über fünf Meter Umfang und Naturdenkmal, genau die Sorte Baum, für die Leute einen Umweg machen. Wir nehmen sie auf.
 
 Wir fangen mit etwas Neuem an: pro Ort eine Person, die die Liste im Blick hat, Fotos beisteuert, Fakten prüft und sagt, was fehlt, mit Namen auf der Seite. Für das Münsterland fällt mir niemand ein, der die Bäume besser kennt. Hätten Sie Lust?
 
 Baumstarke Grüße zurück,
+Hidde
+```
+
+## 8. Florence: Giulia Torta, Orto botanico, in the thread you already have
+
+<!-- giulia.torta@unifi.it. She reviewed all seven Orto botanico trees, sent the Himalayan cedar's photograph with the credit she wanted, and the thread is in Italian (Lei). Hidde, 2026-10-02: "kunnen we Giulia ook niet vragen als ambassadeur?" The name on the page can be hers or the museum's; the mail asks which. -->
+
+```
+Oggetto: Re: Il cedro dell'Himalaya, online
+
+Buongiorno Giulia,
+
+Stiamo iniziando una cosa nuova: per ogni città una persona che tiene d'occhio la lista, aggiunge fotografie, controlla i fatti e dice cosa manca, con il nome sulla pagina della città. Per Firenze non riesco a immaginare nessuno meglio di Lei: i sette alberi dell'Orto botanico sono già passati tutti dalle Sue mani.
+
+Le andrebbe? Sulla pagina possiamo scrivere il Suo nome oppure quello del Sistema Museale, come preferisce.
+
+Un saluto cordiale,
 Hidde
 ```
