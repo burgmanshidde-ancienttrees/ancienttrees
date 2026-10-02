@@ -61,7 +61,18 @@ enum SheetHeight: CaseIterable {
         // then sat under the floating chip row, which is 116 points deep.
         // A field you cannot reach at full height is no field (2026-08-21,
         // found by a UI test whose second press kept landing on a chip).
-        case .full: min(total * 0.92, total - 124)
+        // FULL IS THE PAGE (2026-10-02). Hidde, with a recording of
+        // Polarsteps' profile over its globe: "elke keer als een lijst en kaart
+        // samenwerken dan kan je hem helemaal naar boven scrollen en veranderen
+        // de iconen van kleur." At the top the sheet becomes the screen: it
+        // covers the map, its corners square off, the handle gives way to a
+        // chevron, and the chrome floating over the map fades out, because at
+        // this height there is no map under it to control. Until today full
+        // stopped 124 points short so the sheet's search field cleared the
+        // floating chip row; with the chips gone at the top that reason went
+        // with them. The status-bar strip is added in the body, so this is the
+        // safe-area height and the sheet still reaches the very top.
+        case .full: total
         }
     }
 }
@@ -286,6 +297,16 @@ struct BottomSheet<Header: View, Content: View>: View {
     /// height doing it: the white band went and the heading dropped by the same
     /// amount. Measured rather than eyeballed, which is the only reason it was
     /// caught.
+    /// The status-bar strip, which the page state paints under, exactly as
+    /// Polarsteps does: at the top there is no map left for the clock to sit over.
+    private static var statusBarDepth: CGFloat {
+        UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap(\.windows)
+            .first { $0.isKeyWindow }?
+            .safeAreaInsets.top ?? 0
+    }
+
     private static var homeIndicatorDepth: CGFloat {
         UIApplication.shared.connectedScenes
             .compactMap { $0 as? UIWindowScene }
@@ -313,21 +334,63 @@ struct BottomSheet<Header: View, Content: View>: View {
             // reader ignores the bottom edge, so the visible part is what is
             // left above the home indicator. Every tuned number in SheetHeight
             // is measured against THAT and keeps its meaning.
-            let visible = geo.size.height - bottom
-            let target = height.points(in: visible)
-            let h = min(max(target - drag, 90), visible * 0.94)
+            let top = Self.statusBarDepth
+            // The reader spans the status bar too now (ignoresSafeArea below),
+            // so `visible` subtracts it and the stops keep their meaning; only
+            // the page adds the strip back on top.
+            let visible = geo.size.height - bottom - top
+            let page = visible + top
+            let target = height.points(in: visible) + (height == .full ? top : 0)
+            let h = min(max(target - drag, 90), page)
+            // 0 at the half stop, 1 at the page: what the corners, the handle,
+            // the chevron and the chrome over the map all follow frame by
+            // frame, so the change is one movement under the finger rather than
+            // a switch on release (the Polarsteps transition, 2026-10-02).
+            let halfPts = SheetHeight.half.points(in: visible)
+            let progress = max(0, min(1, (h - halfPts) / max(page - halfPts, 1)))
             VStack(spacing: 0) {
+                // The status-bar strip, only as far as the sheet has risen into it.
+                Color.clear.frame(height: top * progress)
                 // The grabber is the one handle that always works, including
                 // when the content below it is scrolling, because it sits
                 // outside the scroll view. So it gets a real target rather than
                 // a five point line: the capsule is what you see, the padding
                 // around it is what you can actually grab.
-                Capsule()
-                    .fill(.tertiary)
-                    .frame(width: 40, height: 5)
-                    .padding(.top, 10).padding(.bottom, 12)
-                    .frame(maxWidth: .infinity)
-                    .contentShape(.rect)
+                ZStack(alignment: .leading) {
+                    Capsule()
+                        .fill(.tertiary)
+                        .frame(width: 40, height: 5)
+                        .padding(.top, 10).padding(.bottom, 12)
+                        .frame(maxWidth: .infinity)
+                        .opacity(1 - progress)
+                    // Polarsteps' way back from the page: a chevron-down in a
+                    // light circle where its logo stood over the globe; Apple's
+                    // own sheets use the same glyph for "dismiss downward".
+                    Button {
+                        withAnimation(.spring(duration: 0.28)) { height = .half }
+                    } label: {
+                        Image(systemName: "chevron.down")
+                            .font(.system(size: 15, weight: .semibold))
+                            .foregroundStyle(Brand.ink)
+                            .frame(width: 36, height: 36)
+                            .background(Brand.moss.opacity(0.10), in: .circle)
+                            .frame(width: 44, height: 44)
+                    }
+                    .buttonStyle(.plain)
+                    .padding(.leading, 12)
+                    // Only on a ROOT screen. A pushed page (the city map) has
+                    // its own back button in the same corner, and two circles
+                    // on top of each other is what the first sweep showed; the
+                    // root sets floatingBarDepth to zero on a pushed page, so
+                    // that is the signal, the same one the list uses for its
+                    // bottom margin.
+                    .opacity(barDepth > 0 ? progress : 0)
+                    .allowsHitTesting(barDepth > 0 && progress > 0.9)
+                    .accessibilityLabel("Back to the map")
+                    .accessibilityIdentifier("sheet-page-close")
+                }
+                .frame(maxWidth: .infinity)
+                .contentShape(.rect)
 
                 header
                     .frame(maxWidth: .infinity)
@@ -416,8 +479,12 @@ struct BottomSheet<Header: View, Content: View>: View {
             }
             .frame(maxWidth: .infinity)
             .background(.regularMaterial)
-            .clipShape(.rect(topLeadingRadius: 16, topTrailingRadius: 16))
-            .shadow(color: .black.opacity(0.12), radius: 10, y: -3)
+            // Solid once it is the page, so nothing shows through where the
+            // sheet has become the screen; glass below that, as before.
+            .background(Color(.systemBackground).opacity(progress))
+            .clipShape(.rect(topLeadingRadius: 16 * (1 - progress), topTrailingRadius: 16 * (1 - progress)))
+            .shadow(color: .black.opacity(0.12 * (1 - progress)), radius: 10, y: -3)
+            .preference(key: SheetPageProgressKey.self, value: progress)
             .frame(maxHeight: .infinity, alignment: .bottom)
             // simultaneous, not exclusive: the scroll view has to keep working
             // for every gesture this one does not want.
@@ -474,6 +541,17 @@ struct BottomSheet<Header: View, Content: View>: View {
         // bottom inset of zero, so `bottom` above would be nothing and the band
         // would still be there. It is what lets the sheet paint the last thirty
         // points of the screen.
-        .ignoresSafeArea(edges: .bottom)
+        .ignoresSafeArea(edges: [.top, .bottom])
+    }
+}
+
+/// HOW FAR THE SHEET HAS BECOME THE PAGE, 0 at the half stop and 1 at the top,
+/// mid-drag included. MapWithSheet fades the chrome floating over the map
+/// against it, the way the recentre control already rides the live height: a
+/// switch on release would jump, a fade under the finger does not.
+struct SheetPageProgressKey: PreferenceKey {
+    static let defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = max(value, nextValue())
     }
 }

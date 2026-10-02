@@ -28,7 +28,12 @@ struct PlaceMapPage: View {
     @Environment(Sightings.self) private var sightings
     @Environment(Navigator.self) private var navigator
 
-    @State private var sheetHeight: SheetHeight = .half
+    // -sheet=full opens the sheet as the page, so the screen sweep can
+    // photograph the Polarsteps transition here as well as on the map tab
+    // (Hidde, 2026-10-02: "this transition should also be on the map page and
+    // the my trees page"; it is one component, so it is).
+    @State private var sheetHeight: SheetHeight =
+        ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full : .half
     @State private var selected: Tree?
     @State private var topCard: String?
 

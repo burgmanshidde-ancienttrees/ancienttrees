@@ -65,7 +65,12 @@ struct CollectView: View {
         var source: PeopleView.Source { self == .followers ? .followers : .following }
     }
     @State private var peopleList: PeopleList?
-    @State private var sheetHeight: SheetHeight = .half
+    // -sheet=full opens the sheet as the page, so the screen sweep can
+    // photograph the Polarsteps transition here as well as on the map tab
+    // (Hidde, 2026-10-02: "this transition should also be on the map page and
+    // the my trees page"; it is one component, so it is).
+    @State private var sheetHeight: SheetHeight =
+        ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full : .half
     @State private var selectedTree: Tree?
     @Environment(Profiles.self) private var profiles
 

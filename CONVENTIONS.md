@@ -2743,3 +2743,34 @@ pages under a list of exclusions (indexes, account, legal, feeds, assets), and
 under the seven language prefixes. A path the app cannot place opens the app
 and goes nowhere; `check_every_site_route_is_claimed_or_excluded()` in qa.py
 keeps that rare by refusing a route that is in neither list.
+
+## A sheet over a map that becomes the page at the top (2026-10-02, from Hidde's recording of Polarsteps)
+
+Hidde: "elke keer als een lijst en kaart samenwerken dan kan je hem helemaal
+naar boven scrollen en veranderen de iconen van kleur - maak dit alleen na als
+je het exact zo na kan maken." He recorded Polarsteps' profile sheet over its
+globe; the recording was cut into frames and measured.
+
+**What Polarsteps does, frame by frame.** At the half stop the sheet has
+rounded corners and a grab handle and the chrome over the globe is light on
+dark (logo, gear). Dragging past half, the sheet rises to the very top of the
+screen, status bar included, in about 0.2 s with a small overshoot; the corners
+square off and the handle disappears; the logo over the globe is replaced by a
+chevron-down in a light grey circle and the gear gets the same circle, so the
+top controls flip from light-on-dark to dark-on-light; the status bar flips to
+dark text. The way back (a drag down past the top, or the chevron) reverses
+all of it in about 0.15 s. **Apple Maps** does the same shape with its search
+sheet: at the top it is a page with a square top edge and the map is gone.
+
+**What we do, in BottomSheet.swift and MapWithSheet.swift.** `full` IS the
+page: the sheet reaches the top of the screen and paints under the status bar.
+A `progress` value, 0 at half and 1 at the page, is computed from the live
+height mid-drag and drives everything at once: corner radius 16 to 0, the
+handle fading out and a chevron-down in a moss-tinted circle fading in, the
+shadow going, the glass background turning solid, and the chrome floating over
+the map (search field, chips, gear) fading out and refusing taps past
+half-way. The spring stays our 0.28 s. **Where we differ:** our map chrome
+does not recolour, it leaves, because at the page there is no map under it to
+control; Polarsteps keeps its gear because its gear is for the profile. A
+screen that wants a control to survive the page puts it in the sheet's own
+header, not in `floating`.

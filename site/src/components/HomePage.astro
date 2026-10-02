@@ -47,6 +47,7 @@ import { belongsInCityIndex } from "../lib/city-index";
 import { groupTreesByPark, parkGroupKey, parkPageIsAllowed } from "../lib/parks";
 import { ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { byCityListOrderEntry } from "../lib/city-order";
+import { FAVOURITE_CITIES } from "../lib/favourites";
 import { SPECIES_ICONS } from "../lib/species-icons";
 import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 import { ui, languagesForCity, hreflangSet, translatedLanguages } from "../lib/i18n";
@@ -294,7 +295,6 @@ const oldestCards = renderable
 const oldestShelf = wideShelf(u.homeOldestShelfH, "/collections/trees-older-than-400-years", u.homeOldestOfAll, oldestCards);
 
 // --- Our favourite tree cities shelf ---
-const FAVOURITE_CITIES = ["barcelona", "rome", "paris", "berlin", "amsterdam", "london", "new-york", "lisbon", "vienna", "edinburgh"];
 const bySlug = new Map(renderable.map((e) => [e.id, e]));
 const favCards: string[] = [];
 for (const cs of FAVOURITE_CITIES) {

@@ -47,6 +47,8 @@ struct MapTab: View {
     /// the raise gesture first, which makes every card test a gesture test as
     /// well and fails for reasons that have nothing to do with what it covers.
     /// The gesture itself is still asserted, by the test that is about it.
+    /// 0 at the half stop, 1 when the sheet is the page (SheetPageProgressKey).
+    @State private var pageProgress: CGFloat = 0
     @State private var sheetHeight: SheetHeight =
         // -sheet=half as well as -sheet=full, since 2026-08-27: the App Store
         // screenshot of the map wants the shape a person actually uses, a card
@@ -386,8 +388,17 @@ struct MapTab: View {
                     whereChip
                     filterRow
                 }
+                // LEAVES WITH THE MAP (2026-10-02, the Polarsteps transition):
+                // this chrome controls the map, and once the sheet is the page
+                // there is no map under it. It is drawn here as an overlay
+                // rather than in MapWithSheet's `floating` slot (which fades
+                // by itself) because the search sheet above needs it gone from
+                // the hierarchy; so it reads the same progress the slot does.
+                .opacity(1 - pageProgress)
+                .allowsHitTesting(pageProgress < 0.5)
             }
         }
+        .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
         // AT FULL HEIGHT ONLY, which is his own correction within the minute:
         // "de map floating knop op de map pagina is overbodig" and then, having
         // pulled the list all the way up, "de knop maakt sense als je de lijst

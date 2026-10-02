@@ -38,6 +38,8 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
     /// itself. The stop below it is a different number on purpose: see
     /// SheetVisibleHeightKey.
     @State private var livePoints: CGFloat?
+    /// 0 at the half stop, 1 when the sheet is the page (SheetPageProgressKey).
+    @State private var pageProgress: CGFloat = 0
 
     var body: some View {
         ZStack(alignment: .top) {
@@ -53,8 +55,16 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
                 .environment(\.sheetPoints, livePoints)
             BottomSheet(height: $height, topItem: topItem, header: { header },
                         content: { content })
+            // THE CHROME OVER THE MAP LEAVES WITH THE MAP (2026-10-02, the
+            // Polarsteps transition). Search field, chips, gear: all of it
+            // controls a map that is no longer there once the sheet is the
+            // page, so it fades as the sheet rises past half and stops taking
+            // taps once it is mostly gone.
             floating
+                .opacity(1 - pageProgress)
+                .allowsHitTesting(pageProgress < 0.5)
         }
+        .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
         // Zero means NOT MEASURED YET, not "the sheet is flat", which is the
         // difference between falling back to the stop and pinning a control to
         // the bottom of the screen for a frame. PlacePin already made this
