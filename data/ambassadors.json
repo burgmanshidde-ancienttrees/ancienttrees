@@ -1,6 +1,6 @@
 {
   "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named on the public page (public true); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
-  "synced": "2026-10-02T07:42Z",
+  "synced": "2026-10-02T11:09Z",
   "ambassadors": [
     {
       "user_id": null,
