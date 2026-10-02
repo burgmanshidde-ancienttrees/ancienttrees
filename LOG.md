@@ -2,6 +2,9 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 - thirteenth continuation, nothing shipped
+Pulled, no claims standing, READY leads 0, rung 2 clear. Recognition lines are at 100 percent (3543 of 3543), so that rung is done. The photo shortlist holds only mismatched candidates (a night-lit street for an elm, a palm-leaf close-up for nutmegs, one file attached to three Brisbane trees), none worth a viewing pass. The US queue was already shown empty of supply by the twelfth continuation. Dispatched nothing rather than spend a pass that returns zero.
+
 ## 2026-10-02 - twelfth continuation, Oahu verify pass: 0 trees
 7-day visits: 2,731 (347 today). READY leads 0, so the shelf-refill rule applied; the `_famous-portugal` claim was refused (not a proven city), so I took Oahu (US lane, 163 unmined register rows). The verify pass (~150k tokens) delivered nothing: the Hawaii Exceptional Trees register rounds coordinates to about 1.1 km, so no pin can be tree-level, and Commons has no tree-specific photographs, so photo-or-pin blocks every candidate. 4 leads added to data/leads/oahu.json, claim released. Nothing refused. What moves Oahu is a reader photograph or an OSM tree node; more verify passes on the US lane will repeat this.
 
