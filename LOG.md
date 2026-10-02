@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 (second continuation): nothing published, Houston released
+
+Pulled, no claims, `leads.py --ready` 0. Claimed Houston to read its brief: a deepen pass whose register candidates are all mined or blocked, and its three written trees (hou_009 to 011) still fail photo-or-pin. Released it with --force so the claim does not lock the city. Did not dispatch a verify pass on a dead-end city; no other US city on the demand list has leads or a register to start from.
+
 ## 2026-10-02 (night continuation): nothing published, shelf still empty
 
 Pulled, no claims standing, `leads.py --ready` 0, health clear (night-shift failures are the usage allowance). The demand photo shortlist holds only loose filename matches (palm leaves for nutmegs, an egret for an elm, a helicopter for a mulberry), none worth a viewing pass. The seven written trees stay blocked on photo or pin. No claim made, nothing dispatched.
