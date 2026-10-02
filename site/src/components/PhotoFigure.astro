@@ -39,10 +39,10 @@
  * wired by hand is the one that silently missed the Spanish city page. Every
  * string comes from UIStrings so the seven translated page sets get this too.
  */
-import { imgSrcset, photoDims, creditRequired, creditText } from "../lib/images";
+import { imgSrcset, photoDims, creditRequired, creditText, creditLinkParts } from "../lib/images";
 import { ui } from "../lib/i18n";
 
-type Shot = { url: string; license?: string | null; attribution?: string | null };
+type Shot = { url: string; license?: string | null; attribution?: string | null; attribution_url?: string | null };
 
 interface Props {
   /** The lead photograph. */
@@ -75,10 +75,16 @@ const shots = set.map((p, i) => {
     photo: p,
     dims: photoDims(p),
     credit: raw ? t.photoCredit(raw) : null,
+    // The photographer's name as a link, the Unsplash convention, when the
+    // record carries attribution_url (Ingar Sorensen, 2026-10-02: "a link to
+    // my website instead of just my name"). The credit text is split around
+    // the printed name so every language's "Photo:" prefix survives.
+    link: raw && p.attribution_url ? creditLinkParts(t.photoCredit(raw), p.attribution, p.license) : null,
     label: t.photoNumber(i + 1, set.length),
   };
 });
 const leadCredit = shots[0].credit;
+const leadLink = shots[0].link;
 ---
 <figure class={variant === "hero" ? "tree-photo tree-hero" : "tree-photo"}>
   {/* The stage holds the picture and whatever sits ON it. The tree page puts
@@ -92,7 +98,9 @@ const leadCredit = shots[0].credit;
     </button>
     <slot name="overlay" />
   </div>
-  {leadCredit && <figcaption>{leadCredit}</figcaption>}
+  {leadCredit && (leadLink
+    ? <figcaption>{leadLink.before}<a href={shots[0].photo.attribution_url} rel="noopener">{leadLink.name}</a>{leadLink.after}</figcaption>
+    : <figcaption>{leadCredit}</figcaption>)}
 
   {many && (
     <ol class="photo-strip">

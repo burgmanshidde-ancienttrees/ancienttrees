@@ -19,7 +19,7 @@
 // park and collection pages would put the same paragraphs on four URLs, which
 // SEO_GEO_BLUEPRINT.md's P3 forbids and Google reads as thin duplication.
 // Hence one component, one look, two text lengths.
-import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditText } from "../lib/images";
+import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditText, creditLinkParts } from "../lib/images";
 import { ui } from "../lib/i18n";
 import { bestTimeShort } from "../lib/phenology";
 import SaveHeart from "./SaveHeart.astro";
@@ -86,6 +86,11 @@ const species = overrides?.species ?? tree.species ?? "";
 const age = overrides?.age ?? tree.age_estimate ?? "";
 const story = overrides?.story ?? tree.story ?? "";
 const photo = usablePhoto(tree);
+// The photographer's name as a link when the record asks for it (attribution_url).
+const creditLine = photo && creditRequired(photo.license) ? creditText(photo.attribution, photo.license) : null;
+const creditLink = creditLine && photo?.attribution_url
+  ? { href: photo.attribution_url, ...creditLinkParts(U.photoCredit(creditLine), photo.attribution, photo.license) }
+  : null;
 // The href is functional rather than cosmetic, so it generalises properly:
 // English lives at the root, every other language under its own prefix.
 const href = lang === "en" || fallback ? `/${citySlug}/${treeSlug}` : `/${lang}/${citySlug}/${treeSlug}`;
@@ -141,8 +146,9 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
       <div class="tree-card-photo">
         <img {...imgSrcset(photo.url, [500, 900], "(max-width: 800px) 100vw, 560px")} alt={name} loading="lazy" />
       </div>
-      {creditRequired(photo.license) && creditText(photo.attribution, photo.license) && (
-        <p class="tree-card-credit">{U.photoCredit(creditText(photo.attribution, photo.license)!)}</p>
+      {creditLine && (creditLink
+        ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
+        : <p class="tree-card-credit">{U.photoCredit(creditLine)}</p>
       )}
     </Fragment>
   )}

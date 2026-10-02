@@ -16,6 +16,7 @@ without SUPABASE_SERVICE_KEY it prints what it would do and changes nothing.
 
     python3 scripts/sightings_link.py [--dry]
 """
+import datetime
 import glob
 import json
 import os
@@ -75,7 +76,15 @@ def main(argv):
               + (" (dry)" if dry else ""))
         if not dry:
             q = urllib.parse.urlencode({"id": f"eq.{r['id']}"})
-            _req(f"/rest/v1/sightings?{q}", "PATCH", {"tree_id": tree, "status": "published"})
+            # updated_at travels with it, or the phone never takes the change:
+            # SightingSync.merge adopts a remote row only when its updated_at
+            # is newer than the phone's last push, and a PATCH that leaves the
+            # stamp alone looks to the phone like nothing happened. Found
+            # 2026-10-03 on Hidde's own Fukuoka camphor, still two cards a day
+            # after this script had linked it.
+            now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f+00:00")
+            _req(f"/rest/v1/sightings?{q}", "PATCH",
+                 {"tree_id": tree, "status": "published", "updated_at": now})
         fixed += 1
     print(f"sightings_link: {len(rows)} sighting(s) behind published photographs, {fixed} linked")
     return 0

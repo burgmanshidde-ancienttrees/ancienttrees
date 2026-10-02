@@ -125,15 +125,31 @@
       "access": "Free, open access, Birkelunden (public park, open at all times)",
       "transport": "Tram to Birkelunden or Olaf Ryes plass, adjacent",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/osl_003-the-birches-of-birkelunden.jpg",
+        "license": "Provided by Ingar Sørensen with permission, credit required",
+        "attribution": "Ingar Sørensen",
+        "attribution_url": "https://sorensenfoto.no",
+        "status": "approved",
+        "width": 1189,
+        "height": 793,
+        "note": "Photographed by Ingar Sørensen (sorensenfoto.no) for the City of Oslo and forwarded by Bymiljøetaten on 2026-09-03; his permission by mail on 2026-10-02: 'The photos may be used freely, provided credit is given (Photo: Ingar Sørensen)', with a link to his website in the credit, which he asked for. Not an open licence; ask him before reuse elsewhere."
       },
       "curation_status": "flagged",
       "notes": "Thorvald Meyer's 1860s layout, the 1882 gift to the municipality, the 1916-1920 replanting and the 2006 heritage protection are corroborated between lokalhistoriewiki.no and Riksantikvaren (Norway's own directorate for cultural heritage). No source gives an exact planting year for the specific surviving perimeter birches, only that they date from Meyer's original 1860s layout, hence the age range rather than a precise figure.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise them by the ring: birches around the edge of the square, left from Thorvald Meyer's 1860s layout when the middle was turned into a playground. They stand in Birkelunden in Grunerlokka."
+      "how_to_recognise": "You can recognise them by the ring: birches around the edge of the square, left from Thorvald Meyer's 1860s layout when the middle was turned into a playground. They stand in Birkelunden in Grunerlokka.",
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/osl_003-the-birches-of-birkelunden-53d4ff72.jpg",
+          "license": "Provided by Ingar Sørensen with permission, credit required",
+          "attribution": "Ingar Sørensen",
+          "attribution_url": "https://sorensenfoto.no",
+          "status": "approved",
+          "width": 1189,
+          "height": 793,
+          "note": "Second frame of the same grove, the path through it; same permission as the lead."
+        }
+      ]
     },
     {
       "id": "osl_004",

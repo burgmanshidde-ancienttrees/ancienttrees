@@ -2,6 +2,18 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 (session, morning JST): people, Oslo, the focus, and two false alarms
+
+**People.** Giulia Torta (Orto botanico) said yes: named on /florence, our first editor; reply drafted as the first editor follow-up (drafts/reply-giulia-torta-florence.md). Ingar Sørensen granted his two Birkelunden photographs with a linked credit: both on osl_003 (lead and extra), the credit links to his site, reply drafted (drafts/reply-ingar-sorensen-oslo.md). Four correspondents' addresses were sitting in drafts/ambassador-mails.md and are scrubbed; the file is public.
+
+**Credits can link.** `attribution_url` on a photo record; web (PhotoFigure, TreeCard via creditLinkParts), feed (`credit_url`) and app (Models.creditURL, TreeDetail Link) in the same change.
+
+**Why the night runs were empty, and the fix.** READY 0, the US cities Google shows hold no supply that passes photo-or-pin (Hawaii rounds coordinates to 1.1 km; Austin and San Francisco lists carry neither photo nor pin), three ~150k passes shipped nothing, then the runs correctly stopped dispatching. Hidde: visitors are in the US, the UK and Germany, NL is over-represented. `SUPPLY_FOCUS` in passcheck.py; `city_queue.py --next` prints the three countries' cities WITH supply (Berlin 830, Dresden 203, Potsdam 205, Portland 306, Oahu 163) and shows supply beside every US row; a claim elsewhere gets a NOTE. The UK has no register; that is the next scout.
+
+**Two false alarms.** Six commits titled "A reader deleted their account" were the ambassador sync rewriting its timestamp; it now writes nothing when nothing moved. And Hidde's own Fukuoka camphor still showed as two cards: sightings_link.py set tree_id without bumping `updated_at`, so the phone's merge never took it; it bumps the stamp now, and the row was bumped by hand.
+
+**App.** Find people pill and the name-at-sign-in change shipped (f2a9e2fa), CI gate green after one runner re-run.
+
 ## 2026-10-02 - fifteenth continuation, three country intros
 Pulled, no claims, READY 0. Took rung 8 (page gaps): wrote the Estonia, Romania and Latvia country intros (12, 8 and 8 trees behind them), each from those countries' own published stories. pagegaps --check reports no gaps and preflight shows 0 problems. No new trees; no site build run in this window, so the pages go live on the next deploy.
 

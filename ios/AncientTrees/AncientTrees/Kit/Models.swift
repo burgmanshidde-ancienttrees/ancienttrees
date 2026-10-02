@@ -49,6 +49,10 @@ public struct Photo: Codable, Hashable, Sendable {
     /// reserved", so the phone printed his name twice and told a reader the
     /// photograph he had donated was all rights reserved.
     let creditLine: String?
+    /// The photographer's own site, when the credit should link there (the
+    /// Unsplash convention; asked for by a photographer, 2026-10-02). Decided
+    /// on the server from attribution_url; the phone only draws it.
+    public let creditURL: String?
 
     enum CodingKeys: String, CodingKey {
         case url, license, attribution, width, height
@@ -57,6 +61,7 @@ public struct Photo: Codable, Hashable, Sendable {
         case creditRequiredRaw = "credit_required"
         case attributionShort = "attribution_short"
         case creditLine = "credit_line"
+        case creditURL = "credit_url"
     }
 
     /// The name to print. Falls back to the untrimmed one only for a snapshot

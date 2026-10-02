@@ -867,6 +867,16 @@ FOCUS_COUNTRIES = {"United States", "United Kingdom", "Japan", "France", "Spain"
                    "Portugal", "Italy", "Germany", "Netherlands", "Belgium",
                    "Luxembourg", "Austria", "Switzerland", "Ireland",
                    "Denmark", "Norway", "Sweden", "Australia", "Canada"}  # Australia, Canada: Hidde, same day
+# WHERE THE VISITORS ARE (Hidde, 2026-10-03: "NL is over represented we mainly
+# have visitors for uk us and Germany so focus there"). Measured the same
+# morning: the Netherlands holds 615 published trees, the most of any country,
+# while the 28-day audience is the US, Spain, the Netherlands, the UK and
+# Germany in that order and the night runs had just spent a day finding no
+# supply in the US. These three lead city_queue.py --next and a claim outside
+# them prints a NOTE naming where the supply is; nothing is refused, because
+# the US-only refusal of 2026-10-01 bought nine empty windows in one day.
+SUPPLY_FOCUS = ["United States", "United Kingdom", "Germany"]
+OVER_REPRESENTED = {"Netherlands"}
 # Contiguous states, Alaska, Hawaii. Rough on purpose: it decides which country
 # a place a run names is in, and a border town is a question for --country.
 US_BOXES = [(24.4, 49.5, -125.0, -66.9), (51.2, 71.5, -179.9, -129.9),
@@ -1008,6 +1018,12 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
             if country is None:
                 print("If the lookup failed, add --country \"<country>\" (e.g. \"Japan\").")
             return 1
+
+    if kind not in DEPTH_KINDS and country and country not in SUPPLY_FOCUS:
+        # A nudge, not a wall (Hidde, 2026-10-03). The claim stands.
+        tail = " and the Netherlands is over-represented already" if country in OVER_REPRESENTED else ""
+        print(f"NOTE: {target} is in {country}; the visitors are in the US, the UK and Germany{tail}.")
+        print("      `python3 scripts/city_queue.py --next` prints the cities there that hold supply.")
 
     # The prompt has said "claim only what this window can finish" since
     # 2026-08-13, and it has been ignored twice: fourteen cities claimed that

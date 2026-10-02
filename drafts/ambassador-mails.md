@@ -38,7 +38,7 @@ Hidde, 2026-10-02: "dont email paulo or hans ive had much contact with them just
 
 ## 4. Stockholm
 
-<!-- Daniel Daggfeldt, arborist, Trädmästarna, daniel@tradmastarna.se. Third mail in the thread: the first (09-10) answered his corrections, the second (09-24) asked about the app in Prague. Hidde, 2026-10-02: "you can email daniel if you want there is much to gain there". Reply in the same thread, Tina Axelsson stays cc'd as he put her there. Not pre-granted: the mail asks. -->
+<!-- Daniel Daggfeldt, arborist, Trädmästarna. Third mail in the thread: the first (09-10) answered his corrections, the second (09-24) asked about the app in Prague. Hidde, 2026-10-02: "you can email daniel if you want there is much to gain there". Reply in the same thread, Tina Axelsson stays cc'd as he put her there. Not pre-granted: the mail asks. -->
 
 ```
 Subject: Re: Stockholm trees
@@ -84,7 +84,7 @@ Hidde
 
 ## 7. Münsterland: Wolfgang Schürmann, in the thread you already have
 
-<!-- woelfie@gmx.de, Hidde's 2026-09-24 mail asked for his Münster favourite; he answered 2026-10-02 with the Kopfulme in der Beerlage. German, as the thread is. Not pre-granted: the mail asks, and the place is his to name. -->
+<!-- Hidde's 2026-09-24 mail asked for his Münster favourite; he answered 2026-10-02 with the Kopfulme in der Beerlage. German, as the thread is. Not pre-granted: the mail asks, and the place is his to name. -->
 
 ```
 Subject: Re: Kopfulme in der Beerlage
@@ -101,7 +101,7 @@ Hidde
 
 ## 8. Florence: Giulia Torta, Orto botanico, in the thread you already have
 
-<!-- giulia.torta@unifi.it. She reviewed all seven Orto botanico trees, sent the Himalayan cedar's photograph with the credit she wanted, and the thread is in Italian (Lei). Hidde, 2026-10-02: "kunnen we Giulia ook niet vragen als ambassadeur?" The name on the page can be hers or the museum's; the mail asks which. -->
+<!-- She reviewed all seven Orto botanico trees, sent the Himalayan cedar's photograph with the credit she wanted, and the thread is in Italian (Lei). Hidde, 2026-10-02: "kunnen we Giulia ook niet vragen als ambassadeur?" The name on the page can be hers or the museum's; the mail asks which. -->
 
 ```
 Oggetto: Re: Il cedro dell'Himalaya, online
@@ -118,7 +118,7 @@ Hidde
 
 ## 9. Washington, DC: Jon Pattee, Rock Creek Conservancy, in the thread you already have
 
-<!-- jpattee@rockcreekconservancy.org. He corrected us in August (Montrose Park and Dumbarton Oaks are National Park Service ground, not theirs) and Hidde wrote back as one tree fan to another asking for suggestions for the DC map. Hidde, 2026-10-02: "mail jon en ales maar wie weet". -->
+<!-- He corrected us in August (Montrose Park and Dumbarton Oaks are National Park Service ground, not theirs) and Hidde wrote back as one tree fan to another asking for suggestions for the DC map. Hidde, 2026-10-02: "mail jon en ales maar wie weet". -->
 
 ```
 Subject: Re: Rock Creek trees
@@ -135,7 +135,7 @@ Hidde
 
 ## 10. Prague: Aleš Rudl, Pražské stromy, in the thread you already have
 
-<!-- prazskestromy@seznam.cz. He runs Prague's memorial-trees site, which we cite on eight Prague trees; he wrote back in August with corrections and got a thank-you on 2026-09-24 asking for a missing tree. -->
+<!-- He runs Prague's memorial-trees site, which we cite on eight Prague trees; he wrote back in August with corrections and got a thank-you on 2026-09-24 asking for a missing tree. -->
 
 ```
 Subject: Re: Prague's trees
