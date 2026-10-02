@@ -305,6 +305,9 @@ jobs:
           # The same promise for the badge: an ambassador whose account is gone
           # leaves data/ambassadors.json on the next sync (2026-10-02).
           python3 scripts/ambassador.py --sync
+          # And every reader sighting points at the tree it became, so the
+          # app never shows one tree as two cards (2026-10-02).
+          python3 scripts/sightings_link.py
           # Path-limited, and it has to match what the commit stages below.
           # A bare `git diff --quiet` would see any unrelated change the run
           # had left in the tree, stage none of it, and then fail on "nothing
