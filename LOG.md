@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 - Seattle grows from twelve to sixteen
+
+Visits, 7 days: 2,729. Rung 2 clear. The shelf was empty (the seven written trees all still fail the photo-or-pin rule), so I took a verify pass on a proven US city: Seattle, from the city's own Heritage Trees layer (public land only, private heritage trees excluded under hard rule 10). Four trees with tree-level confirmed pins went live in data/cities (commit acdb17e5): sea_013 Volunteer Park copper beech, sea_014 Roanoke Street Lombardy poplar, sea_015 Ballard Playground planes, sea_016 Seward Park Douglas fir. None has a photograph; sea_015 and sea_016 rest on the register alone and are flagged. Seattle's intro and question context were rewritten for sixteen. About 320k tokens across verify and write. Overpass 504/429'd and seattle.gov's heritage page 404s; no commands were refused. Four more park-owned heritage candidates (Fremont maple, Elliott Ave cottonwood, Lakeside tulip tree, Roanoke elm) were not examined.
+
 ## 2026-10-02 - ninth continuation, nothing shipped
 
 READY leads: 0. Rung 2 clear. Chicago verify pass (leads re-checked: Graceland tour PDF is an unreadable map image, UChicago oaks unlocatable or young, cycads indoor, Beverly council oak has no pin): 0 trees, ~130k tokens, claim released. Chicago's register is exhausted; the next US cities to try are Houston, Austin, San Francisco, by a session that can read image PDFs.
