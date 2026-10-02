@@ -48,13 +48,52 @@ window.atCollection = (function() {
       return (s && s.access_token && s.expires_at > Date.now() / 1000) ? s : null;
     } catch (e) { return null; }
   }
+  // THE SERVER DECIDES WHO IS SIGNED IN, NEVER THE BROWSER (Hidde, 2026-10-02:
+  // "I can still do thumbs up save and collect tree without being logged in
+  // on the website ... close this gap forever! No local storage!"). Until
+  // tonight every script here trusted a session object in localStorage by its
+  // own expires_at: a token revoked elsewhere, a deleted account or a hand
+  // edited value painted the whole site signed in, hearts lit on tap, and the
+  // refused write was swallowed. So: a stored session is CHECKED with Supabase
+  // once per page load, any write the server refuses forgets it, and
+  // forgetting repaints every control and the bar and opens the sign-in
+  // dialog. The smoke test plants a fake session and clicks Save to prove it.
+  function forget() {
+    try { localStorage.removeItem('ancienttrees_session'); } catch (e) {}
+    try { delete document.documentElement.dataset.signedIn; } catch (e) {}
+    if (window.atPaintNav) { try { window.atPaintNav(false); } catch (e) {} }
+    try { document.dispatchEvent(new CustomEvent('at:signedout')); } catch (e) {}
+  }
+  function refused(r) {
+    if (r && (r.status === 401 || r.status === 403)) {
+      forget();
+      if (window.atOpenSignIn) { try { window.atOpenSignIn(); } catch (e) {} }
+      return true;
+    }
+    return false;
+  }
+  var verified = null;
+  function verify() {
+    if (verified) return verified;
+    var s = session();
+    if (!s) return (verified = Promise.resolve(false));
+    verified = fetch(SB + '/auth/v1/user', { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token } })
+      .then(function(r) {
+        if (r.status === 401 || r.status === 403) { forget(); return false; }
+        return r.ok;
+      })
+      .catch(function() { return true; });   // offline: keep the session, the next write decides
+    return verified;
+  }
   function api(path, s, opts) {
     opts = opts || {};
     var h = { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token };
     if (opts.body) { h['Content-Type'] = 'application/json'; h['Prefer'] = 'resolution=merge-duplicates'; }
     return fetch(SB + path, { method: opts.method || 'GET', headers: h,
-                              body: opts.body ? JSON.stringify(opts.body) : undefined });
+                              body: opts.body ? JSON.stringify(opts.body) : undefined })
+      .then(function(r) { refused(r); return r; });
   }
+  verify();
   // What a tree IS, answered by the website rather than remembered by the
   // browser. One request, held for this page, shared by every caller.
   function catalogue() {
@@ -121,6 +160,8 @@ window.atCollection = (function() {
 
   return {
     session: session,
+    forget: forget,
+    verify: verify,
     catalogue: catalogue,
     card: card,
     esc: esc,

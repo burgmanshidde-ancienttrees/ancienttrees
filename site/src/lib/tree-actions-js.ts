@@ -67,8 +67,20 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     if (on) { mine[id] = true; try { at.track('save'); } catch (err) {} }
     else { delete mine[id]; }
     paint();
-    C.save(id, on);
+    // And if the account REFUSES the write, the heart goes back at once: a
+    // lit heart on a save the server threw away is the bug of 2026-10-02.
+    C.save(id, on).then(function(ok) {
+      if (ok) return;
+      if (on) { delete mine[id]; } else { mine[id] = true; }
+      paint();
+    });
   };
+  document.addEventListener('at:signedout', function() {
+    mine = {};
+    paint();
+    if (window.atPaintSeen) window.atPaintSeen();
+    if (window.atPaintPassport) window.atPaintPassport();
+  });
   function load() {
     if (!C.session()) { mine = {}; paint(); return Promise.resolve(); }
     return C.saves().then(function(list) {

@@ -883,6 +883,16 @@ The day a stranger put nine photographs on two Paris pages within minutes of ins
 
 **No mail when the badge is given, no mail when a photograph goes live, no templated thank-you, one invitation (Hidde, 2026-10-02: "didn't we stop email responding to trees? We should just send the ambassador one").** The automatic "Thank you, we received your report" of contributor_reply.py is OFF (`THANK_YOU = False`); the invitation is the single automatic mail a contributor ever gets, sent once per person and place and recorded under `invited` in data/ambassadors.json so it can never repeat. What stays: the ANSWER kind of the 2026-08-21 loop, a run's verified reply to a typed correction or question, because that is somebody being answered rather than a system saying it heard them.
 
+## The server decides who is signed in, ruled by Hidde 2026-10-02
+
+"I can still do thumbs up save and collect tree without being logged in on the website how many times did we look at this please close this gap forever! No local storage!!!!!!!!" Said for at least the fourth time (2026-08-25, 2026-08-30, 2026-09-02, and tonight), which by this file's own ratchet makes it a check and not a sentence.
+
+**What was actually wrong, found by planting a fake session in a clean browser.** Every control was gated: signed out, the heart, the tick and the vote all opened the sign-in dialog and stored nothing. But "signed in" was decided by the BROWSER: a session object in localStorage was believed on its own `expires_at`, so a token revoked elsewhere, a deleted account or any hand-edited value painted the bar "Account", lit a heart on tap, and the write the server refused was swallowed. From outside that is indistinguishable from saving without an account.
+
+**The rule: a stored session is a claim, and only Supabase can confirm it.** `collection-js.ts` asks `/auth/v1/user` once per page load and forgets the session on a refusal; every refused write (401 or 403) forgets it too, reopens the sign-in dialog and takes the heart, tick or vote back; the three scripts listen for `at:signedout` and repaint. Nothing a reader collects, saves or votes is ever kept in the browser; the one thing in localStorage is the session token, and from tonight the token is checked before anything trusts it.
+
+**Enforced twice.** `check_a_stored_session_is_verified_with_the_server()` in scripts/qa.py refuses a build whose heart-bearing pages lack the verify call or the sign-out event. `stale_session_is_refused()` in scripts/smoke_test.py plants a fake session, taps Save and fails the deploy unless the heart comes back off, the dialog opens and the session is gone. Removing either needs Hidde.
+
 ## Which trees get a page, ruled by Hidde 2026-09-23
 
 A register can hand us thousands at once, and scarcity is the product, so this is the rule that decides which of them earn a page. It covers LAYER 1 only: the trees with a page that can be collected. Layer 2 is untouched, one official register is still enough for an honestly labelled dot. The full record, including the two corrections Hidde made while it was being written, is DECISIONS.md 2026-09-23.

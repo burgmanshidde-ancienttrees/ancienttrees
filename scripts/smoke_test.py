@@ -399,6 +399,76 @@ def drifts_at(chrome, base, page, width):
         return None
 
 
+STALE_HARNESS = """<!doctype html><meta charset="utf-8"><title>stale</title>
+<style>html,body{margin:0}iframe{width:402px;height:874px;border:0}</style>
+<iframe id="f"></iframe><pre id="r">pending</pre>
+<script>
+// A session the browser believes in and the server does not: a token that was
+// never issued, with an expiry an hour away. Same origin as the page in the
+// iframe, so the page reads it as its own.
+try { localStorage.setItem('ancienttrees_session', JSON.stringify({
+  access_token: 'stale-token-that-no-server-issued', refresh_token: '',
+  expires_at: Math.floor(Date.now() / 1000) + 3600 })); } catch (e) {}
+var p = new URLSearchParams(location.search);
+var f = document.getElementById('f');
+f.src = p.get('u');
+f.addEventListener('load', function () {
+  var w = f.contentWindow, d = f.contentDocument;
+  setTimeout(function () {
+    var out = {};
+    out.signedInAfterLoad = d.documentElement.dataset.signedIn === '1';
+    var b = d.querySelector('.save-btn');
+    out.hasHeart = Boolean(b);
+    if (b) b.click();
+    setTimeout(function () {
+      var dlg = d.getElementById('signin-dialog');
+      out.heartPressed = b ? b.getAttribute('aria-pressed') : null;
+      out.dialogOpen = Boolean(dlg && dlg.open);
+      out.sessionLeft = null;
+      try { out.sessionLeft = Boolean(w.localStorage.getItem('ancienttrees_session')); } catch (e) {}
+      document.getElementById('r').textContent = 'RESULT ' + JSON.stringify(out);
+    }, 2500);
+  }, 3000);
+});
+</script>"""
+
+
+def stale_session_is_refused(chrome, base, page):
+    """A session the server does not recognise must not paint the site signed
+    in, and a save made on it must come back off (Hidde, 2026-10-02: "I can
+    still do thumbs up save and collect tree without being logged in on the
+    website how many times did we look at this please close this gap forever!
+    No local storage!"). The harness plants a fake session on the same
+    origin, loads a tree page, taps the heart and reads what is left: the
+    heart must be unpressed, the dialog open, the bar signed out and the
+    stored session gone. It needs the network, because the proof is the
+    server's own refusal; with no network it reports nothing rather than a
+    pass. Removing this check needs Hidde."""
+    url = "%s/__stale.html?u=%s" % (base, page)
+    out = subprocess.run(
+        [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+         "--window-size=420,900", "--virtual-time-budget=25000", "--dump-dom", url],
+        capture_output=True, text=True, timeout=120).stdout
+    m = re.search(r"RESULT (\{.*?\})</pre>", out, re.S)
+    if not m:
+        return ["stale session: the harness produced no result (Chrome or the page did not run)"]
+    try:
+        r = json.loads(m.group(1).replace("&quot;", '"').replace("&amp;", "&"))
+    except Exception:
+        return ["stale session: the harness result was unreadable"]
+    fails = []
+    if not r.get("hasHeart"):
+        fails.append("stale session: no save heart on %s to test with" % page)
+        return fails
+    if r.get("heartPressed") == "true":
+        fails.append("stale session: the heart stays lit after the server refused the save (%s)" % page)
+    if not r.get("dialogOpen"):
+        fails.append("stale session: a refused save did not open the sign-in dialog (%s)" % page)
+    if r.get("sessionLeft"):
+        fails.append("stale session: the dead session is still in localStorage after the server refused it (%s)" % page)
+    return fails
+
+
 def fits_at_375(chrome, base, page):
     """Does this page fit a phone, or does something run off the right edge?
 
@@ -749,12 +819,21 @@ setTimeout(function(){
     align_page.write_text(ALIGN_HARNESS, encoding="utf-8")
     sheet_page = DIST / "__sheet.html"
     sheet_page.write_text(SHEET_HARNESS, encoding="utf-8")
+    stale_page = DIST / "__stale.html"
+    stale_page.write_text(STALE_HARNESS, encoding="utf-8")
 
     failures = []
     base_fails, base_warns = check_basemap(DIST)
     failures += base_fails
     for w in base_warns:
         print("SMOKE WARN: %s" % w)
+
+    # A FAKE SESSION MUST NOT WORK (2026-10-02). Runs first because it is the
+    # one check here about what a stranger can do with our data.
+    stale = stale_session_is_refused(chrome, base, f"/{city.stem}/{tree.name}")
+    for line in stale:
+        print("SMOKE FAIL: %s" % line)
+    failures += stale
 
     for url, label, wants in checks:
         dom = ""

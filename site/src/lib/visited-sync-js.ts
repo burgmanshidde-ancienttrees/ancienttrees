@@ -46,8 +46,23 @@ export const VISITED_SYNC_JS = `
     var at = seen.indexOf(id);
     if (on === false) { if (at !== -1) seen.splice(at, 1); }
     else if (at === -1) { seen.push(id); }
-    C.visit(id, on !== false);
+    var before = seen.slice();
+    C.visit(id, on !== false).then(function(ok) {
+      if (ok) return;
+      // Refused by the account: back to what it was, and say so on screen.
+      seen = before;
+      var at2 = seen.indexOf(id);
+      if (on === false) { if (at2 === -1) seen.push(id); }
+      else if (at2 !== -1) { seen.splice(at2, 1); }
+      if (window.atPaintSeen) window.atPaintSeen();
+      if (window.atPaintPassport) window.atPaintPassport();
+    });
   };
+  document.addEventListener('at:signedout', function() {
+    seen = [];
+    if (window.atPaintSeen) window.atPaintSeen();
+    if (window.atPaintPassport) window.atPaintPassport();
+  });
 
   // Two painters read this one answer: the city map's pins and passport
   // counter, and every tick button on the page (tree-actions-js.ts). Added

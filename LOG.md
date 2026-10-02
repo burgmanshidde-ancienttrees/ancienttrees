@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: the website believed the browser about who was signed in
+
+- **Hidde: "I can still do thumbs up save and collect tree without being logged in ... close this gap forever! No local storage!"** Reproduced: with a clean browser every control is gated, but a session object in localStorage was trusted on its own expiry, so a stale or fake token painted the site signed in, lit the heart on tap, and the server's refusal was swallowed.
+- **Fix, both halves:** collection-js.ts verifies a stored session with `/auth/v1/user` once per load and forgets it on refusal; every refused write forgets it, reopens the sign-in dialog and reverts the heart (tree-actions-js), the tick (visited-sync-js) and the vote (worthit-js), all of which repaint on `at:signedout`.
+- **Ratchets:** qa.py refuses a build whose heart pages lack the verify call or the event; smoke_test.py plants a fake session, taps Save and fails unless it is refused end to end. Rule recorded in CLAUDE.md ("The server decides who is signed in").
+- Also tonight: Hidde's own Oimatsu sighting was linked to the tree it became (fuk_016), which removes the duplicate card he saw in the app; a sweep to do that automatically is still to write.
+
 ## 2026-10-02 session: the Lisbon reader, reader photographs are extras by default, no more thank-you mails
 
 - **Missed and corrected.** A second stranger photographed a tree through the app on 2026-10-01, the Dragon Tree of Quinta Conde dos Arcos in Lisbon, 20 m from our pin, two good frames, and the night run declined both because the page already had a Commons lead. It reached Hidde only as the word "declined" in passing ("another user doing exactly what we want and you didn't tell me"). Both frames are beside the lead now; verdicts reversed in data/judgements.json.
