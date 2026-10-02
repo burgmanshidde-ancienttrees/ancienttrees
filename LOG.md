@@ -10,6 +10,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: the sheet becomes the page, and no city without a photograph on the shelf
+
+- **Polarsteps transition, from Hidde's screen recording** (cut into frames and timed): the sheet over a map now rises to the very top of the screen at `full`, corners squaring off, the handle giving way to a chevron-down, the status-bar strip covered, and the search field, chips and gear over the map fading out as it goes, all driven by one `progress` value under the finger. Recorded in CONVENTIONS.md with what Polarsteps does and where we differ (our chrome leaves rather than recolours, because there is no map left to control).
+- **"Don't promote cities like Leeuwarden if they don't have a single photo."** The website's favourites shelf was a hand-picked list that skipped photo-less cities; the app sorted every city by tree count, which put Leeuwarden (41 trees, no photograph) second with a placeholder leaf. The list now travels in /api/browse.json as `favourites`, only cities with a face, in the website's order; the app shows that list (old snapshots fall back to faced cities by count). One list, both surfaces (lib/favourites.ts).
+
 ## 2026-10-02 session: a link to a tree opens the app
 
 - **Hidde: "whenever clicking it opens the website but it should prefer app open if there."** The association file claimed only /t, /auth and /open, so every tree and city link went to Safari by design. It now hands every content page to the app (catch-all under a list of exclusions: indexes, account, legal, feeds, assets, state pages), and Kit/WebLink.swift turns a path into a screen: tree, city, question page to its city, country, species, collection, explore to the map, all seven language prefixes. Pure parser with WebLinkTests. qa.py refuses a new site route that is neither claimed nor excluded. Convention recorded in CONVENTIONS.md. Phones pick the new file up from Apple's CDN within a day, or on a fresh install.

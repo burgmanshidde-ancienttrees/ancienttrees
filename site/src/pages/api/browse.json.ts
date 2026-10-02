@@ -36,6 +36,7 @@ import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
 import { collectionEntries } from "../../lib/collection-rank";
 import { citySearchNames } from "../../lib/city-aliases";
 import { cityPopularity } from "../../lib/popularity";
+import { favouriteCitySlugs } from "../../lib/favourites";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -163,7 +164,11 @@ export async function GET() {
     };
   }).filter((s) => s.count > 0);
 
-  const payload = { cities: cityFacets, collections, parks, countries, species };
+  // The homepage shelf's cities, only those with a face, so the app's Discover
+  // shows the same shelf (lib/favourites.ts; Hidde, 2026-10-02: no Leeuwarden
+  // with a placeholder leaf).
+  const favourites = favouriteCitySlugs(cities);
+  const payload = { cities: cityFacets, favourites, collections, parks, countries, species };
   const body = JSON.stringify(payload);
   return new Response(
     JSON.stringify({ version: await feedVersion(body), licence: FEED_LICENCE, ...payload }),

@@ -57,6 +57,7 @@ final class SweepFrames: XCTestCase {
         // were not, and over there the duplicate name meant this screen was
         // never photographed at all.
         ("collection-tab", ["-tab=2"], nil),
+        ("collection-tab-full", ["-tab=2", "-signed-in", "-mine-demo", "-sheet=full", "-no-cover"], nil),
         ("profile",      ["-tab=2", "-settings"], nil),
         // Signed in, which is a different screen: see appsweep.py for what it
         // cost to photograph only the signed-out half of it.
@@ -65,6 +66,7 @@ final class SweepFrames: XCTestCase {
         ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"], nil),
         ("city",         ["-tab=0", "-open=city:aarhus"], nil),
         ("city-map",     ["-tab=0", "-open=citymap:aarhus"], nil),
+        ("city-map-full", ["-tab=0", "-open=citymap:aarhus", "-sheet=full"], nil),
         ("species",      ["-tab=0", "-open=species:Aleppo Pine"], nil),
         ("collection",   ["-tab=0", "-open=collection:ancient-oaks-of-europe"], nil),
         ("walk",         ["-tab=0", "-open=walk:aarhus|Moesgård / Højbjerg"], nil),

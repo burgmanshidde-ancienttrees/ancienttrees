@@ -274,6 +274,9 @@ def screens(sub):
         # once. Two screens with one name is the same failure as a screen no
         # argument can open, and the check below now refuses it.
         ("collection-tab", ["-tab=2"], 4),
+        # My trees with the sheet as the page: the Polarsteps transition on the
+        # second of the three screens that share MapWithSheet (2026-10-02).
+        ("collection-tab-full", ["-tab=2", "-signed-in", "-mine-demo", "-sheet=full", "-no-cover"], 4),
         ("profile",       ["-tab=2", "-settings"], 5),
         # THE SAME SCREEN SIGNED IN, and it is a different screen.
         #
@@ -293,6 +296,7 @@ def screens(sub):
         ("tree-nophoto",  ["-tab=0", f'-open=tree:{sub["tree_nophoto"]}'], 5),
         ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 5),
         ("city-map",      ["-tab=0", f'-open=citymap:{sub["city"]}'], 7),
+        ("city-map-full", ["-tab=0", f'-open=citymap:{sub["city"]}', "-sheet=full"], 7),
         ("species",       ["-tab=0", f'-open=species:{sub["species"]}'], 5),
         ("collection",    ["-tab=0", f'-open=collection:{sub["collection"]}'], 5),
         ("walk",          ["-tab=0", f'-open=walk:{sub["walk"]}'], 7),

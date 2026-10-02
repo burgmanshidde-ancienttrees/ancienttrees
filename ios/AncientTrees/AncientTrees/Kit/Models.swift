@@ -339,6 +339,9 @@ public struct BrowseFeed: Codable, Sendable {
     public let countries: [BrowseFacet]?
     public let species: [BrowseFacet]?
     public let parks: [BrowseFacet]?
+    /// The favourite-cities shelf, decided on the website (lib/favourites.ts):
+    /// in order, and only cities with a face. Absent on an older snapshot.
+    public let favourites: [String]?
 }
 
 /// The browse facets as the app holds them: keyed for lookup, answering only
@@ -352,17 +355,22 @@ public struct BrowseFacets: Sendable {
     public let countries: [BrowseFacet]
     public let species: [BrowseFacet]
     public let parks: [BrowseFacet]
+    /// The Discover shelf's cities as the website ordered them; empty when
+    /// the snapshot predates the field, and Home then falls back to the cities
+    /// that have a face, by count.
+    public let favourites: [String]
 
     private let cityBySlug: [String: BrowseFacet]
     private let countryByName: [String: BrowseFacet]
     private let speciesByName: [String: BrowseFacet]
 
     public init(cities: [BrowseFacet], countries: [BrowseFacet],
-                species: [BrowseFacet], parks: [BrowseFacet]) {
+                species: [BrowseFacet], parks: [BrowseFacet], favourites: [String] = []) {
         self.cities = cities
         self.countries = countries
         self.species = species
         self.parks = parks
+        self.favourites = favourites
         self.cityBySlug = Dictionary(cities.compactMap { f in f.slug.map { ($0, f) } },
                                      uniquingKeysWith: { a, _ in a })
         self.countryByName = Dictionary(countries.map { ($0.name, $0) },
@@ -373,7 +381,8 @@ public struct BrowseFacets: Sendable {
 
     public init(feed: BrowseFeed?) {
         self.init(cities: feed?.cities ?? [], countries: feed?.countries ?? [],
-                  species: feed?.species ?? [], parks: feed?.parks ?? [])
+                  species: feed?.species ?? [], parks: feed?.parks ?? [],
+                  favourites: feed?.favourites ?? [])
     }
 
     public func face(city slug: String) -> String? { cityBySlug[slug]?.face }

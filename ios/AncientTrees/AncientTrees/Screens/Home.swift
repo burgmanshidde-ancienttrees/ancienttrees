@@ -75,10 +75,23 @@ struct HomeView: View {
     /// the map has moved somewhere far enough to change what is near.
     private func buildShelves() {
         var s = Shelves()
-        s.cities = catalogue.citiesWithTrees
-            .map { (slug: $0.key, name: $0.value[0].city,
-                    country: $0.value[0].country, count: $0.value.count) }
-            .sorted { $0.count > $1.count }
+        // THE WEBSITE'S SHELF, in the website's order (feed `favourites`,
+        // lib/favourites.ts), never every city by count: that put Leeuwarden,
+        // 41 trees and no photograph, in the second slot with a placeholder
+        // leaf (Hidde, 2026-10-02: "Don't promote cities like Leeuwarden if
+        // they don't have a single photo"). An older snapshot without the
+        // field falls back to the cities that HAVE a face, by count, which
+        // keeps the one rule that matters either way: no card without a cover.
+        let byCity = catalogue.citiesWithTrees
+        func card(_ slug: String) -> (slug: String, name: String, country: String, count: Int)? {
+            guard let trees = byCity[slug], let first = trees.first else { return nil }
+            return (slug: slug, name: first.city, country: first.country, count: trees.count)
+        }
+        let favourites = catalogue.facets.favourites.compactMap(card)
+        s.cities = !favourites.isEmpty ? favourites
+            : byCity.keys.compactMap(card)
+                .filter { catalogue.face(city: $0.slug) != nil }
+                .sorted { $0.count > $1.count }
         s.walksNear = catalogue.walks.compactMap { w -> (Walk, Double)? in
             guard let f = catalogue.trees(of: w).first else { return nil }
             return (w, f.distanceKm(from: origin.lat, origin.lng))
@@ -491,10 +504,15 @@ struct HomeView: View {
 
     /// The website's own homepage shelf, which this screen was missing: the
     /// places, with a photograph, rather than a list of names and counts.
+    private func placesLine(_ n: Int) -> String { n == 1 ? "1 place worth an afternoon" : "\(n) places worth an afternoon" }
+
     private var cityShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Our favourite tree cities",
-                        subtitle: cities.count == 1 ? "1 place worth an afternoon" : "\(cities.count) places worth an afternoon",
+                        // The count under the title is every PLACE we map, not the
+                        // ten on the shelf, because the shelf is a pick and the
+                        // line is the invitation to See all.
+                        subtitle: placesLine(catalogue.citySlugs.count),
                         more: .index(.cities))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
