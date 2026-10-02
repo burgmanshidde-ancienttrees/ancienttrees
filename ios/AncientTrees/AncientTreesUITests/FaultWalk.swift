@@ -90,6 +90,9 @@ final class FaultWalk: XCTestCase {
                       || app.staticTexts["Keep your trees"].waitForExistence(timeout: 5),
                       "the sign-in sheet did not open")
 
+        // The typed route opens from "Continue with email" since 2026-10-01.
+        let route = app.buttons["signin-email"]
+        if route.waitForExistence(timeout: 5) { route.tap() }
         let field = app.textFields["you@example.com"]
         XCTAssertTrue(field.waitForExistence(timeout: 8), "no email field on the sign-in sheet")
         field.tap()
