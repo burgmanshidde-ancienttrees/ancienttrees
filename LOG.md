@@ -2,6 +2,9 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 - fifteenth continuation, three country intros
+Pulled, no claims, READY 0. Took rung 8 (page gaps): wrote the Estonia, Romania and Latvia country intros (12, 8 and 8 trees behind them), each from those countries' own published stories. pagegaps --check reports no gaps and preflight shows 0 problems. No new trees; no site build run in this window, so the pages go live on the next deploy.
+
 ## 2026-10-02 - fourteenth continuation, nothing shipped
 Pulled, no claims standing, READY leads 0, refill has nothing to fill, the US queue shows 0 leads in every listed city. Dispatched nothing: every lane that a verify pass can move was shown empty by the tenth to thirteenth continuations. Supply now comes from reader photographs, aerial pin evidence or a new register.
 
