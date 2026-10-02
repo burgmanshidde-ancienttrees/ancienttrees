@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 - ninth continuation, nothing shipped
+
+READY leads: 0. Rung 2 clear. Chicago verify pass (leads re-checked: Graceland tour PDF is an unreadable map image, UChicago oaks unlocatable or young, cycads indoor, Beverly council oak has no pin): 0 trees, ~130k tokens, claim released. Chicago's register is exhausted; the next US cities to try are Houston, Austin, San Francisco, by a session that can read image PDFs.
+
 ## 2026-10-02 (eighth continuation): nothing published, Houston claim released
 
 Houston's three written trees (hou_009 to hou_011) are the reason six continuations shipped nothing: merged, preflight FAILs all three, because each has neither a photograph nor a confirmed pin (the worldwide 2026-10-01 rule), and the city's meta text promises eight. They stay in data/research/houston-verified.json as leads until a photograph or a pin upgrade exists; a photo hunt or a reader sighting is what unblocks them. Claim released with --force. `leads.py --ready` 0, recognise --stuck 0.
