@@ -1,0 +1,203 @@
+[
+ {
+  "id": "ber_034",
+  "name": "The Lebanon Oak of the Tiergarten",
+  "species": "Lebanon Oak (Quercus libani)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Grosser Tiergarten, east of the Englischer Garten, Berlin-Mitte",
+   "latitude": 52.516732,
+   "longitude": 13.348768,
+   "neighbourhood": "Tiergarten, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://www.wikidata.org/wiki/Q125772581",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Libanon-Eiche_Großer_Tiergarten,_östlich_des_Englischen_Gartens_2024-05-09_06.jpg"
+  ],
+  "access": "Free, open public park (Grosser Tiergarten), no gate; open at all hours.",
+  "transport": "S Bellevue (S3/S5/S7/S9), roughly 400 m, 5 to 8 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register reason is rarity: Quercus libani is a Near Eastern oak uncommon in Berlin. A WebSearch summary claimed a circumference of 1825 for this tree; that figure is a land-parcel (Flurstueck) number repeated across five unrelated Tiergarten rows in the 2021 ordinance, NOT a girth. Do not use it. About 84 m from live ber_023. REGISTER: Land Berlin Naturdenkmal 1-36/B, designated 1993-03-02, reason 'Seltenheit (rarity)'; the register has no age or girth field, so none recorded; register-only for species (one source, flagged). PIN: register point is tree-level, and the CC0 Commons photo of this tree is geotagged 14 m from it (camera position, 2024), so two independent position sources agree and the pin is confirmed. ALIVE: lifecheck RECENT (dated nearby observations 2024 to 2026) plus the 2024 photo. PHOTO CANDIDATE (not approved, pixels not looked at): https://commons.wikimedia.org/wiki/File:Naturdenkmal_Libanon-Eiche_Großer_Tiergarten,_östlich_des_Englischen_Gartens_2024-05-09_06.jpg , CC0, by User:GPSLeo (no attribution required), taken 2024, 8368x5584. Wikidata Q125772581 is built from the same Berlin ordinance, so it is not an independent source."
+ },
+ {
+  "id": "ber_035",
+  "name": "The Silver Linden by the Bismarck Monument",
+  "species": "Silver Linden (Tilia tomentosa)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Grosser Tiergarten, near the Bismarck Monument, Berlin-Mitte",
+   "latitude": 52.515543,
+   "longitude": 13.349634,
+   "neighbourhood": "Tiergarten, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://www.wikidata.org/wiki/Q125772644",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Silber-Linde_Großer_Tiergarten,_nahe_Bismarckdenkmal_2024-05-09_07.jpg"
+  ],
+  "access": "Free, open public park (Grosser Tiergarten), no gate; open at all hours.",
+  "transport": "S Bellevue roughly 550 m (about 8 minutes on foot); Grosser Stern bus stops roughly 350 m.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Silver linden is a south-east European and Anatolian species, so a mature specimen is a planted exotic. No age data anywhere. REGISTER: Land Berlin Naturdenkmal 1-90/B, designated 1993-03-02, reason 'Schoenheit, landeskundliche Gruende (beauty, regional heritage)'; the register has no age or girth field, so none recorded; register-only for species (one source, flagged). PIN: register point is tree-level, and the CC0 Commons photo of this tree is geotagged 24 m from it (camera position, 2024), so two independent position sources agree and the pin is confirmed. ALIVE: lifecheck RECENT (dated nearby observations 2024 to 2026) plus the 2024 photo. PHOTO CANDIDATE (not approved, pixels not looked at): https://commons.wikimedia.org/wiki/File:Naturdenkmal_Silber-Linde_Großer_Tiergarten,_nahe_Bismarckdenkmal_2024-05-09_07.jpg , CC0, by User:GPSLeo (no attribution required), taken 2024, 8368x5584. Wikidata Q125772644 is built from the same Berlin ordinance, so it is not an independent source."
+ },
+ {
+  "id": "ber_036",
+  "name": "The White Elm east of the English Garden",
+  "species": "European White Elm (Ulmus laevis)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Grosser Tiergarten, east of the Englischer Garten, Berlin-Mitte",
+   "latitude": 52.51631,
+   "longitude": 13.349916,
+   "neighbourhood": "Tiergarten, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://www.wikidata.org/wiki/Q125772583",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Großer_Tiergarten,_östlich_des_Englischen_Gartens_2024-05-09_03.jpg"
+  ],
+  "access": "Free, open public park (Grosser Tiergarten), no gate; open at all hours.",
+  "transport": "S Bellevue roughly 450 m (about 6 to 8 minutes on foot).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Stands about 55 m from the oak 1-37/B and 85 m from the linden 1-90/B; separate register trees, not twins. No age or size recorded; ask the reader for girth. REGISTER: Land Berlin Naturdenkmal 1-38/B, designated 1993-03-02, reason 'Eigenart (distinctiveness)'; the register has no age or girth field, so none recorded; register-only for species (one source, flagged). PIN: register point is tree-level, and the CC0 Commons photo of this tree is geotagged 9 m from it (camera position, 2024), so two independent position sources agree and the pin is confirmed. ALIVE: lifecheck RECENT (dated nearby observations 2024 to 2026) plus the 2024 photo. PHOTO CANDIDATE (not approved, pixels not looked at): https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Großer_Tiergarten,_östlich_des_Englischen_Gartens_2024-05-09_03.jpg , CC0, by User:GPSLeo (no attribution required), taken 2024, 8368x5584. Wikidata Q125772583 is built from the same Berlin ordinance, so it is not an independent source."
+ },
+ {
+  "id": "ber_037",
+  "name": "The Oak east of the English Garden",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Grosser Tiergarten, east of the Englischer Garten, Berlin-Mitte",
+   "latitude": 52.516576,
+   "longitude": 13.349334,
+   "neighbourhood": "Tiergarten, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://www.wikidata.org/wiki/Q125772582",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stiel-Eiche_-_Sommer-Eiche_Großer_Tiergarten,_östlich_des_Englischen_Gartens_2024-05-09_07.jpg"
+  ],
+  "access": "Free, open public park (Grosser Tiergarten), no gate; open at all hours.",
+  "transport": "S Bellevue roughly 400 m (about 6 minutes on foot).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "About 125 m from live ber_023 (the Queen's Oak, a red oak): a different tree. No size or age in any source; ask the reader for girth. REGISTER: Land Berlin Naturdenkmal 1-37/B, designated 1993-03-02, reason 'Eigenart, Schoenheit (distinctiveness, beauty)'; the register has no age or girth field, so none recorded; register-only for species (one source, flagged). PIN: register point is tree-level, and the CC0 Commons photo of this tree is geotagged 27 m from it (camera position, 2024), so two independent position sources agree and the pin is confirmed. ALIVE: lifecheck RECENT (dated nearby observations 2024 to 2026) plus the 2024 photo. PHOTO CANDIDATE (not approved, pixels not looked at): https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stiel-Eiche_-_Sommer-Eiche_Großer_Tiergarten,_östlich_des_Englischen_Gartens_2024-05-09_07.jpg , CC0, by User:GPSLeo (no attribution required), taken 2024, 8368x5584. Wikidata Q125772582 is built from the same Berlin ordinance, so it is not an independent source."
+ },
+ {
+  "id": "ber_038",
+  "name": "The Katsura of Altonaer Strasse",
+  "species": "Katsura (Cercidiphyllum japonicum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Altonaer Strasse 6, diagonally opposite the Hansabibliothek, Berlin-Hansaviertel",
+   "latitude": 52.517468,
+   "longitude": 13.344041,
+   "neighbourhood": "Hansaviertel, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://www.wikidata.org/wiki/Q125772589",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Japanischer_Kuchenbaum_Altonaer_Straße_6,_schräg_gegenüber_Hansabibliothek_2024-05-19_07.jpg"
+  ],
+  "access": "Free, on a public street in the Hansaviertel; no gate.",
+  "transport": "U Hansaplatz (U9) and S Bellevue both roughly 400 m, 5 to 7 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Street-side location opposite the library, address Altonaer Strasse 6 per the register. Access note: the register place text is a street address; the writer must look at the photo to confirm it stands on public ground and not in a front garden, and flag if unclear. Three register reasons (beauty, rarity, regional heritage), the most in this batch. The other Katsura in the TU Schaugaerten is live as ber_032. REGISTER: Land Berlin Naturdenkmal 1-43/B, designated 1993-03-02, reason 'Schoenheit, Seltenheit, landeskundliche Gruende (beauty, rarity, regional heritage)'; the register has no age or girth field, so none recorded; register-only for species (one source, flagged). PIN: register point is tree-level, and the CC0 Commons photo of this tree is geotagged 23 m from it (camera position, 2024), so two independent position sources agree and the pin is confirmed. ALIVE: lifecheck RECENT (dated nearby observations 2024 to 2026) plus the 2024 photo. PHOTO CANDIDATE (not approved, pixels not looked at): https://commons.wikimedia.org/wiki/File:Naturdenkmal_Japanischer_Kuchenbaum_Altonaer_Straße_6,_schräg_gegenüber_Hansabibliothek_2024-05-19_07.jpg , CC0, by User:GPSLeo (no attribution required), taken 2024, 8368x5584. Wikidata Q125772589 is built from the same Berlin ordinance, so it is not an independent source."
+ },
+ {
+  "id": "ber_039",
+  "name": "The Katsura south of the Fauler See",
+  "species": "Katsura (Cercidiphyllum japonicum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Grosser Tiergarten, north of Strasse des 17. Juni, south of the Fauler See, Berlin-Mitte",
+   "latitude": 52.514344,
+   "longitude": 13.341701,
+   "neighbourhood": "Tiergarten, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://www.wikidata.org/wiki/Q125772580",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Japanischer_Kuchenbaum_Großer_Tiergarten,_nördlich_der_Straße_des_17._Juni,_südlich_Fauler_See_2024-05-09_04.jpg"
+  ],
+  "access": "Free, open public park (Grosser Tiergarten), no gate; open at all hours.",
+  "transport": "S Tiergarten (S3/S5/S7/S9) roughly 350 m, about 5 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register places it north of the Strasse des 17. Juni, south of the Fauler See. Katsura is a rarity here by the register's own word. REGISTER: Land Berlin Naturdenkmal 1-35/B, designated 1993-03-02, reason 'Schoenheit, Seltenheit (beauty, rarity)'; the register has no age or girth field, so none recorded; register-only for species (one source, flagged). PIN: register point is tree-level, and the CC0 Commons photo of this tree is geotagged 2 m from it (camera position, 2024), so two independent position sources agree and the pin is confirmed. ALIVE: lifecheck RECENT (dated nearby observations 2024 to 2026) plus the 2024 photo. PHOTO CANDIDATE (not approved, pixels not looked at): https://commons.wikimedia.org/wiki/File:Naturdenkmal_Japanischer_Kuchenbaum_Großer_Tiergarten,_nördlich_der_Straße_des_17._Juni,_südlich_Fauler_See_2024-05-09_04.jpg , CC0, by User:GPSLeo (no attribution required), taken 2024, 8368x5584. Wikidata Q125772580 is built from the same Berlin ordinance, so it is not an independent source."
+ },
+ {
+  "id": "ber_040",
+  "name": "The Zehlendorf Peace Oak",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "planted 1871",
+  "age_min": 150,
+  "age_max": 160,
+  "girth_cm": null,
+  "location": {
+   "address": "In front of Clayallee 357, corner Potsdamer Strasse / Berliner Strasse, Berlin-Zehlendorf",
+   "latitude": 52.435324,
+   "longitude": 13.260262,
+   "neighbourhood": "Zehlendorf, Steglitz-Zehlendorf"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Zehlendorfer_Eiche",
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://commons.wikimedia.org/wiki/File:Berlin_Zehlendorf_Friedenseiche.JPG",
+   "https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article229323740/Dicker-Ast-bricht-im-Feierabendverkehr-von-alter-Eiche-ab.html"
+  ],
+  "access": "Free, on the public road junction at the centre of Zehlendorf; there was a bench round the trunk until the root zone was unsealed after 2020 (de.wikipedia).",
+  "transport": "S Zehlendorf (S1), roughly 340 m, about 5 minutes on foot (OSM platform to register point).",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Planted 2 September 1871, the first anniversary of the Battle of Sedan, as a Friedenseiche (peace oak) after the Franco-Prussian War; a bronze plaque on the south side of the trunk says so (de.wikipedia 'Zehlendorfer Eiche', fetched as wikitext). Documented planting date for THIS tree, so age 1871 is a source figure (about 155 years in 2026). Naturdenkmal 6-31/B (X-42B), designated 1993-03-02 for regional-heritage reasons ('Schoenheit, landeskundliche Gruende' in the register). A large limb broke in June 2020 in rush-hour traffic (Berliner Morgenpost 2020-06-16); the area round the oak was to be unsealed to give the roots room and the bench was removed. Alive: lifecheck RECENT 2025-06-04 (Commons photo at the spot) plus the Wikipedia article's 2020 account; a 2025 photo is the nearest to a recent confirmation, so say how the crown looks after the 2020 loss only from a photo. Dominates the junction with Heimatmuseum Zehlendorf and the Dorfkirche beside it. PIN: register coordinate 52.435324,13.260262 and Wikipedia/Wikidata 52.435332,13.260241 (about 2 m apart; same ordinance origin) at a single dominant crown on an open junction, so confirmed; Commons photo is not geotagged. PHOTO CANDIDATE (not approved, unlooked): https://commons.wikimedia.org/wiki/File:Berlin_Zehlendorf_Friedenseiche.JPG , CC BY-SA 3.0, by Kvikk, 2013-06-06, 2928x2168 (11 years old; summer, in leaf; would need a fresher frame if the crown changed after 2020). Girth not published in any source seen."
+ },
+ {
+  "id": "ber_041",
+  "name": "The 500-Year Oak of Berlin Zoo",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "about 500 years",
+  "age_min": 400,
+  "age_max": 500,
+  "girth_cm": null,
+  "location": {
+   "address": "Zoologischer Garten Berlin, south of the hippo house, Hardenbergplatz 8, Berlin-Charlottenburg",
+   "latitude": 52.508685,
+   "longitude": 13.336639,
+   "neighbourhood": "Tiergarten (Zoologischer Garten), Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://stadtundgruen.de/artikel/wo-alte-baeume-neue-wege-saeumen-und-biodiversitaet-gefoerdert-wird-gruenflaechen-in-zoo-und-tierpark-berlin-19695",
+   "https://commons.wikimedia.org/wiki/File:Stieleiche_in_Berlin_Zoo,_ungef%C3%A4hr_500_Jahre_alte_Eiche,_Naturdenkmal.jpg"
+  ],
+  "access": "Paid entry: inside the Zoologischer Garten Berlin, ticket required (check current Zoo prices and hours before visiting).",
+  "transport": "S/U Zoologischer Garten, the Hardenbergplatz entrance is about 200 m from the register point; inside the zoo, a few minutes' walk.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "REGISTER: Naturdenkmal 1-52/B, Stiel-Eiche, 'Zoologischer Garten, suedlich Flusspferdhaus, Hardenbergplatz 8', designated 1993-03-02, reasons Eigenart and landeskundliche Gruende; tree-level register coordinate 52.508685,13.336639. AGE: the zoo's own park article (Stadt und Gruen, fetched directly) has a numbered feature 'Schatten seit 500 Jahren: Die ewige Eiche (Columbus-Eiche / Pedunculate Oak)' and says the historic oak stock is to be preserved, and says the zoo holds eleven Naturdenkmaeler. A Commons photo uploaded by User:Istriana is captioned 'ungefaehr 500 Jahre alte Eiche, Naturdenkmal' for the same Wikidata item. LIMIT: no fetched source states in so many words that the 'ewige Eiche' IS register tree 1-52/B (it is the only ND oak the register lists in the zoo, and the Commons caption ties the 500-year figure to the Naturdenkmal, but this is two inferences, not one statement), and 500 years is a round figure from the owner with no method. Deliver flagged; the writer says 'about 500 years, according to the zoo'. A Quercus robur of 500 years in central Berlin is plausible as a remnant of the pre-park Tiergarten oaks but that is NOT sourced; do not write it. PIN: approximate because the Commons photo is not geotagged, so only the register point supports it; it is a tree-level point inside the zoo (a plan or aerial view would settle it). ALIVE: lifecheck RECENT 2024-10-09 (iNaturalist observation 246793865 at the point) plus the 2024-06-25 Commons photo. PHOTO CANDIDATE (not approved, unlooked): https://commons.wikimedia.org/wiki/File:Stieleiche_in_Berlin_Zoo,_ungef%C3%A4hr_500_Jahre_alte_Eiche,_Naturdenkmal.jpg , CC BY-SA 4.0, by Istriana, 2024-06-25, 3456x4608 (credit required). Paid entry counts as a yes under hard rule 10; page must say so."
+ }
+]

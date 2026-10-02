@@ -196,6 +196,42 @@
    },
    "reason": "NEW this pass (2026-09-08), found while checking on the (now-dead, see blocked list) Burgsdorff-Laerche. 2021 airborne laser scanning (LiDAR) commissioned by the Senatsverwaltung fuer Umwelt found this beech to be Berlin's tallest tree at 43.15m, overtaking the Burgsdorff-Laerche (41.05m by the same survey). Covered by de.wikipedia's 'Tegeler Forst' article and an enthusiast page (l-u-m-o.de/buche, 404 on this pass, may be a dead link now) plus a 2025 Tagesspiegel storm-damage piece. No precise coordinate found this pass beyond 'on Muehlenweg in the southern part of the forest, one of three tree superlatives there'; that is at best a several-hundred-metre approximate location, not a tree-level pin, and this project's honesty bar on location precision means it cannot ship without a tighter fix. Also unclear whether it is individually named, marked with a sign, or a Naturdenkmal (no register match attempted this pass). Worth a future pass: try the Senatsverwaltung's own LiDAR/tree-superlative press material directly, or a Tegeler Forst trail map that marks the three superlative trees Berlin.de's press release describes. RESOLVED 2026-09-10 (verify pass): l-u-m-o.de/buche (independent nature/LiDAR blogger, primary publisher of the 2021 Berlin-wide airborne laser scan) publishes the exact laser-scanned base coordinate for this specific beech, 52.59576N 13.24125E, 180m from the Burgsdorff-Laerche's own scanned base (52.59537N 13.24341E), plus a physical marker sign the local Revierfoersterei Tegelsee placed on the trail pointing hikers to it. Trunk diameter 96cm (girth converted via pi), planted 1843 per forestry records per the same source. Corroborated by de.wikipedia's Burgsdorff-Laerche and Tegeler Forst articles (which also confirm, via an official 2026-07-02 Berlin Senate press release, that the Burgsdorff-Laerche itself fell in a June 2025 storm while Dicke Marie/ber_001 survived the same storm). See data/research/berlin-verified.json ber_021.",
    "status": "lead"
+  },
+  {
+   "name": "Remaining Tiergarten Naturdenkmal trees with 2024 CC0 geotagged Commons photos (Robinie Mittelinsel Siegessaeule 1-34/B; Rosskastanien Hansa-Ufer x3; Platanen Lichtensteinallee and east of Neuer See; Stiel-Eichen Katharina-Heinroth-Ufer 2 and between Neuer See and Landwehrkanal)",
+   "species": "mixed",
+   "location": {
+    "address": "Grosser Tiergarten and Hansa-Ufer, Berlin-Mitte",
+    "latitude": 52.51491,
+    "longitude": 13.35012,
+    "neighbourhood": "Tiergarten, Mitte"
+   },
+   "reason": "NEW this pass (2026-10-02). Same pattern as ber_034 to ber_039: register tree-level point, Wikidata item, and a CC0 Commons photo by User:GPSLeo geotagged at the tree (e.g. Robinie 1-34/B photo 2024-05-09 geotag 52.51488,13.35016, about 4 m from the register point). They are publishable on photo-or-confirmed-pin the same way and were left only because this pass stopped at eight. Species are common (robinia, horse chestnut, plane, pedunculate oak) and no age or size is published, so rank them by the reader's girth later.",
+   "status": "lead"
+  },
+  {
+   "name": "Urweltmammutbaum (Dawn Redwood) ND 1-4x/B at the Englischer Garten",
+   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+   "location": {
+    "address": "Grosser Tiergarten, Englischer Garten near Altonaer Strasse",
+    "latitude": 52.5166,
+    "longitude": 13.34624,
+    "neighbourhood": "Tiergarten, Mitte"
+   },
+   "reason": "Skipped this pass only because it stands about 24 m from live ber_010 (the Giant Sequoia), inside the 80 m exclusion. Has a CC0 geotagged 2024-05-09 Commons photo (geotag 52.51651,13.34657) and a tree-level register point, so it can be added later as its own entry if a writer wants the pair. monumentaltrees.com claim of planting 1954 remains an unverified lead (403).",
+   "status": "lead"
+  },
+  {
+   "name": "Amerikanischer Zuergelbaum (American Hackberry) at Canisius-Kolleg",
+   "species": "Celtis occidentalis",
+   "location": {
+    "address": "Canisius-Kolleg, Tiergarten, Berlin-Mitte",
+    "latitude": 52.508047,
+    "longitude": 13.353556,
+    "neighbourhood": "Tiergarten, Mitte"
+   },
+   "reason": "Has a Commons photo but stands on school grounds (Canisius-Kolleg is a Jesuit school); hard-rule-10 school exception applies: no evidence the grounds are open. Not publishable without that evidence.",
+   "status": "lead"
   }
  ],
  "blocked": [
