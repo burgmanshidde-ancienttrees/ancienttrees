@@ -155,6 +155,10 @@ public struct Session: Codable, Sendable, Equatable {
     public var expiresAt: Date
     public var userId: String
     public var email: String?
+    /// The name the sign-in provider handed us (Google's full_name, Apple's
+    /// fullName on the first authorisation), kept only until a profile name
+    /// exists. Optional so a session stored before 2026-10-02 still decodes.
+    public var providerName: String?
 
     /// Internal until 2026-08-30, when signing out needed to ask it: the
     /// sign-out uploads with the token already in hand rather than refreshing
@@ -483,17 +487,31 @@ public final class Account {
         if let who = await Self.user(accessToken: access) {
             session.userId = who.id
             session.email = who.email
+            if let n = who.name, !n.isEmpty { session.providerName = n }
         }
         store(session)
     }
 
-    private static func user(accessToken: String) async -> (id: String, email: String?)? {
+    /// Apple hands the person's name to the sign-in button, once, and never
+    /// to the server; the sheet passes it here so the first profile can carry
+    /// it (2026-10-02: 22 of 24 accounts had no name, and the people who
+    /// followed Hidde showed as "No name yet").
+    public func noteProviderName(_ name: String?) {
+        guard var s = session, let name, !name.trimmingCharacters(in: .whitespaces).isEmpty else { return }
+        s.providerName = name
+        session = s
+        store(s)
+    }
+
+    private static func user(accessToken: String) async -> (id: String, email: String?, name: String?)? {
         let r = Supa.request("/auth/v1/user", method: "GET", token: accessToken)
         guard let (data, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode),
               let j = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
               let id = j["id"] as? String else { return nil }
-        return (id, j["email"] as? String)
+        let md = j["user_metadata"] as? [String: Any]
+        let name = (md?["full_name"] as? String) ?? (md?["name"] as? String)
+        return (id, j["email"] as? String, name)
     }
 
     // MARK: - leaving

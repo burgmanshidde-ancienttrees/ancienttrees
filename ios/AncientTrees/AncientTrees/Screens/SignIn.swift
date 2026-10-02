@@ -118,15 +118,20 @@ struct SignInSheet: View {
             VStack(spacing: 12) {
                 SignInWithAppleButton(.continue) { request in
                     rawNonce = Self.nonce()
-                    request.requestedScopes = [.email]
+                    // The name as well, which Apple gives ONCE, on the first
+                    // authorisation, and only if asked (2026-10-02).
+                    request.requestedScopes = [.fullName, .email]
                     request.nonce = Self.sha256(rawNonce)
                 } onCompletion: { result in
                     guard case .success(let auth) = result,
                           let cred = auth.credential as? ASAuthorizationAppleIDCredential,
                           let data = cred.identityToken,
                           let token = String(data: data, encoding: .utf8) else { return }
+                    let given = [cred.fullName?.givenName, cred.fullName?.familyName]
+                        .compactMap { $0 }.joined(separator: " ")
                     Task {
                         await account.signInWithApple(idToken: token, nonce: rawNonce)
+                        account.noteProviderName(given)
                         await finishIfSignedIn()
                     }
                 }

@@ -41,6 +41,10 @@ public final class Profiles {
     }
 
     public private(set) var me: Profile?
+    /// True once the server has answered about your own row. A fetch that
+    /// failed (offline, a test with no server) leaves `me` nil and this false,
+    /// and nobody is asked for a name on the strength of a missing answer.
+    public private(set) var meLoaded = false
     public private(set) var followers = 0
     public private(set) var following = 0
     /// The places you are the ambassador of, usually none.
@@ -108,6 +112,7 @@ public final class Profiles {
             "GET", token: token)),
            let rows = try? JSONDecoder().decode([Profile].self, from: data) {
             me = rows.first
+            meLoaded = true
         }
         if let data = try? await send(request(
             "ambassadors?select=user_id,place_slug,place_name,public&user_id=eq.\(userId)",
@@ -133,6 +138,7 @@ public final class Profiles {
     /// account's and it comes back with the next sign-in.
     public func forgetLocally() {
         me = nil
+        meLoaded = false
         followers = 0
         following = 0
         myPlaces = []
@@ -158,6 +164,30 @@ public final class Profiles {
 
     /// Set or change what people see. The name is the only thing required; an
     /// avatar is optional and stays optional.
+    /// "Hidde Burgmans" -> "Hidde B.", which is how Strava and Polarsteps show a
+    /// name taken from a provider in a list: a first name, and no surname
+    /// published for somebody who never typed one. Pure, for the test.
+    nonisolated public static func shortName(from full: String) -> String {
+        let parts = full.split(separator: " ").map(String.init).filter { !$0.isEmpty }
+        guard let first = parts.first else { return "" }
+        if parts.count == 1 { return String(first.prefix(40)) }
+        return String("\(first) \(parts[parts.count - 1].prefix(1)).".prefix(40))
+    }
+
+    /// Give a profile its first name from what the provider said, once.
+    /// True when a name exists afterwards, from before or from this call;
+    /// false means the person has to be asked (ProfileEditor).
+    public func ensureName(userId: String, token: String, providerName: String?) async -> Bool {
+        if let me, !me.display_name.isEmpty { return true }
+        // No answer from the server is not "no name": asking would open the
+        // editor over every offline launch, and did, in the flow walk.
+        guard meLoaded else { return true }
+        guard let providerName else { return false }
+        let short = Self.shortName(from: providerName)
+        guard !short.isEmpty else { return false }
+        return await save(name: short, avatarURL: me?.avatar_url, userId: userId, token: token)
+    }
+
     public func save(name: String, avatarURL: String?, userId: String, token: String) async -> Bool {
         struct Row: Encodable { let user_id: String; let display_name: String; let avatar_url: String? }
         let body = try? JSONEncoder().encode([Row(user_id: userId,

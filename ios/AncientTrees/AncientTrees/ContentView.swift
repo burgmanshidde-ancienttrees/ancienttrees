@@ -18,6 +18,9 @@ import MapKit
 
 struct ContentView: View {
     @State fileprivate var store = CatalogueStore()
+    /// The one-time ask for a name after a sign-in that brought none.
+    @State private var askingForName = false
+    @State private var askedForName = false
     @State fileprivate var saved: Saved = {
         let s = Saved()
         s.seedFromLaunchArguments()
@@ -537,6 +540,7 @@ struct ContentView: View {
                 // still opens Safari with the real page rather than the app
                 // sitting on whatever tab it last had open.
                 .onOpenURL { url in open(url) }
+                .sheet(isPresented: $askingForName) { ProfileEditor().appObjects(self) }
                 .onChange(of: navigator.selectTab) { _, new in
                     // ONLY A TAB THAT EXISTS. A selection matching no tag
                     // leaves the TabView showing its first page with our bar
@@ -809,6 +813,17 @@ struct ContentView: View {
             Task {
                 let token = await account.freshToken()
                 await profiles.load(userId: account.session?.userId, token: token)
+                // A PERSON HAS A NAME (2026-10-02). Strava and Polarsteps ask
+                // for one at sign-up and Instagram requires a handle; we asked
+                // nobody, so 22 of 24 accounts had none and showed as "No name
+                // yet" to the people they followed. The provider's name fills
+                // it first (Google's, or Apple's from the sheet); with none,
+                // the editor opens once and asks.
+                if let uid = account.session?.userId, let token {
+                    let named = await profiles.ensureName(userId: uid, token: token,
+                                                          providerName: account.session?.providerName)
+                    if !named && !askedForName { askedForName = true; askingForName = true }
+                }
             }
             // Who you have blocked, from the server rather than only from this
             // phone: a reinstall or a second phone has to start where the last

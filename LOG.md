@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 (session): Find people is a pill, and a person has a name
+
+**Pill button.** The Follow control on Find people is a pill: filled moss with white text for Follow, outlined on the hairline with ink text for Following, which is how Strava, Polarsteps and Instagram draw the same pair (CONVENTIONS.md). Photographed on the SE and a large phone, appfit 0 findings on 74 screens.
+
+**A person has a name.** Hidde: "I see I have two followers but no name can't we just show email or something or benchmark". Not an email, which is private and which no reference product shows. The convention is a name from the provider or asked at sign-up, and we asked nobody: 22 of 24 accounts had none and read as "No name yet" to the people following them. Three changes: Sign in with Apple now requests `.fullName` beside `.email` (Apple hands it over once, on the first authorisation, and only when asked); the provider's name (Google's from `user_metadata`, Apple's from the sheet via `noteProviderName`) fills the profile as "First L." through `Profiles.ensureName`; a sign-in that brings none opens the profile editor once and asks. The nine existing nameless accounts were given their provider names with the service key. `NameTests.swift` covers the shortening and the no-answer case; the flow walk covers find-people. **The first walk after the change caught the app trapping at launch**: the ask-for-name sheet was presented without `appObjects`, which the editor reads two stores from, and a profile fetch that failed read as "no name", so every signed-in launch with no server opened the editor and died. Both fixed (`meLoaded` on Profiles, the sheet gets the stores) before anything was pushed. What the simulator cannot prove is Apple's own sheet handing the name over, so that is the one step for Hidde's phone.
+
+Open: tapping a person does not open a profile, because other people's trees are not public.
+
 ## 2026-10-02 (fifth continuation): nothing published
 
 Pulled, no claims standing, `leads.py --ready` 0, `city_queue.py --next` shows the same US demand cities with no leads or register supply. Nothing claimed or dispatched; the findings of the earlier continuations today still hold.
