@@ -2,6 +2,9 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 - eleventh continuation, nothing further shipped
+Pulled, no claims standing, `leads.py --ready` 0, sightings inbox 0, `recognise --stuck` 0. Read the Houston brief: no unmined register candidates, the three written trees (hou_009 to 011) still have neither photograph nor confirmed pin. The US lane has no supply left that a verify pass can turn into a tree under the photo-or-pin rule; what moves it is photographs, aerial pin evidence or reader sightings. No claim taken, nothing refused.
+
 ## 2026-10-02 - tenth continuation, nothing further shipped
 
 Pulled, no claims standing, READY leads 0. Claimed Chicago, found its brief shows no unmined register candidates and an earlier pass this window already re-checked every lead, so released it unworked. The US lane (Chicago, Houston, Austin, San Francisco, New York) is exhausted for tree supply under the photo-or-pin rule; what moves it next is photographs or pin evidence (reader sightings, aerial image reading), not another verify pass.
