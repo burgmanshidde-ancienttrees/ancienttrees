@@ -1,0 +1,49 @@
+[
+ {
+  "id": "sfo_007",
+  "name": "The Yellow Christmas Tree of Stanyan Street",
+  "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
+  "age_estimate": "planted in the late 1950s",
+  "age_min": 65,
+  "age_max": 75,
+  "location": {
+   "address": "1221 Stanyan Street, in front of the house",
+   "latitude": 37.76156,
+   "longitude": -122.45227,
+   "neighbourhood": "Cole Valley"
+  },
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees (SF Public Works official list of designated Landmark Trees: '1221 Stanyan Street: New Zealand Christmas Tree')",
+   "http://www.sftrees.com/blog/2016/5/30/my-favorite-tree (Mike Sullivan, 2016: yellow mutation from Motiti Island 1940, cutting planted in front of 1221 Stanyan by Victor Reiter's family, 'more than 70 years later thriving', blooms yellow around Memorial Day, seen from the street)",
+   "https://www.sfenvironment.org/landmark-tree-program (seen only via search result; page 403s to fetchers; designation by Urban Forestry Council 2019, unanimous vote)"
+  ],
+  "access": "Visible from the public sidewalk on Stanyan Street; it stands in front of a private home, so look from the pavement only.",
+  "transport": "Muni N Judah or 6/7 to Haight St and Stanyan, short walk (stop not verified)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Official Landmark Tree (2019). Rare YELLOW-flowering cultivar of the common red NZ Christmas tree: natural mutation found 1940 on Motiti Island NZ; Victor Reiter obtained a cutting in the late 1950s and planted it in front of the family home. Blooms around Memorial Day. Pin is the geocoded building at 1221 Stanyan (Nominatim), not the trunk; aerial not checked, so approximate. Alive: lifecheck RECENT, iNaturalist observation 2026-04-19 within radius (not proven same trunk): https://www.inaturalist.org/observations/351189918. Age: no source dates the tree itself beyond the late-1950s planting per Sullivan. Different from the CA Big Trees NZ Christmas tree champion lead. Front of a dwelling: viewing place is the pavement; do not imply entry. Girth unknown."
+ },
+ {
+  "id": "sfo_008",
+  "name": "The Canary Palms of Quesada Avenue",
+  "species": "Canary Island Date Palm (Phoenix canariensis)",
+  "age_estimate": "around a century",
+  "age_min": 90,
+  "age_max": 105,
+  "location": {
+   "address": "Quesada Avenue median, just west of 3rd Street",
+   "latitude": 37.731,
+   "longitude": -122.3893,
+   "neighbourhood": "Bayview"
+  },
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees (SF Public Works official list: 'Quesada Street Median (West of 3rd Street to dead end): 13 Canary Island Date Palms')",
+   "https://www.sanfranciscostory.com/quesada-gardens/ (fetched directly: median planted around 1920 with Canary Island Date Palms, same as Dolores Street; palms survived the twentieth century)"
+  ],
+  "access": "Free, public street median in the Bayview; walk along the sidewalk.",
+  "transport": "Muni T Third or the 15 bus on 3rd Street, then a short walk west on Quesada (stop not verified)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Official Landmark Tree group of 13 palms on one compact block, one place to stand (like the Dolores palms already published as sfo_002). Planting date conflict: sanfranciscostory.com says about 1920; a search summary (lead only) says about 1932. Do not narrow. Pin: Nominatim places Quesada Avenue between roughly 37.7299,-122.3854 and 37.7331,-122.3911; I set an approximate mid-block point, NOT checked on aerial imagery. lifecheck NONE at pin: alive evidence is only the official list and undated-recent articles; flag. Girth and height unknown."
+ }
+]

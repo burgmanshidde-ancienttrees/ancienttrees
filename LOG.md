@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 - San Francisco verify: two trees, neither can ship
+
+Fourth continuation. READY leads 0. New York re-checked (eleven leads and five blocked already on file, nothing new; claim released). San Francisco verify pass (~155k tokens) read the official Landmark Tree list: 2 trees delivered (Yellow Christmas Tree of Stanyan Street, Canary Palms of Quesada Avenue), both approximate pins and no photograph, so they fail the worldwide photo-or-pin rule; held in data/research/san-francisco-verified.json until a photo or confirmed pin exists. Also 5 new leads and 10 blocked (private backyards, removed trees) in data/leads/san-francisco.json. Not yet worked: the Urban Forestry Council Significant Tree register, Golden Gate Park and Presidio specimens. 0 trees published; claim released.
+
 ## 2026-10-02 - Austin verify, nothing shippable
 
 Austin verify pass (~160k tokens): Texas Big Tree Registry, Famous Trees of Texas layer, Wikidata and Commons all return only trees already live or blocked. Three Tree of the Year leads (Learning Tree, Zilker pecan, Central Park oak) recorded in data/leads/austin.json, none with a photo or pin. Claim released. Overpass still unreachable here.
