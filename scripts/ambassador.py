@@ -173,6 +173,13 @@ def sync():
         doc = json.load(fh)
     # Named people without an account live only in this file; keep them.
     kept = [e for e in doc.get("ambassadors", []) if e.get("user_id") is None]
+    if out + kept == doc.get("ambassadors", []):
+        # Nothing moved, so nothing is written: the knock commits any change
+        # to this file as "a reader deleted their account", and on 2026-10-02
+        # six such commits were this timestamp alone, which read in the
+        # digest as six people leaving.
+        print(f"ambassador --sync: {len(out)} row(s), unchanged")
+        return 0
     doc["ambassadors"] = out + kept
     doc["synced"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     with open(FILE, "w", encoding="utf-8") as fh:
