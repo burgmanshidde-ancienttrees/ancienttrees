@@ -13,6 +13,18 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-02
+
+Web half: read copenhagen.html (49 trees, title, meta and body counts agree; no em dashes or banned words), the Paris tree pages and the city redirect stubs (by design). Ambassador and reader-photograph work shows no leak on the sampled pages. Nothing found on the web half.
+
+App half (photo-viewer, place-pin, profile-edit, profile-signed-in, profile, refused):
+
+- NOTE APP: `refused.png` (Discover, location refused) shows a stray map label "A" squeezed between the "My trees" and "Species" filter chips, because the chip row floats over the map without backing. One look in a session.
+- NOTE APP: `profile.png` (signed out) offers "Your name and picture" in Settings although the card above says to sign in first; fine if the row opens the sign-in dialog, worth one tap to confirm.
+- Photo viewer, place pin, profile edit and the signed-in Settings (ambassador badge reads "Paris ambassador") read clearly and agree with their titles.
+
+---
+
 ## 2026-10-01
 
 Web half: read the species pages (coast redwood, ginkgo), London, Seattle and four random tree pages in the built site. No em dashes or banned words in the sampled HTML; counts on city pages agree with their own text. The day's work was Copenhagen/Itoshima research held in data/, nothing new live.
