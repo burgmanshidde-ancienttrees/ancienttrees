@@ -1399,6 +1399,46 @@
    "reason": "Own photograph at the trunk, species and setting match; published with tkc_002 when Takachiho opened at three on Hidde's call (overruling the run's lead verdict lead:b9a2d2df-77ba-4240-8c90-63ca0a83b1c9).",
    "hidde": "publish (Hidde, review page 2026-10-02)",
    "agreed": true
+  },
+  {
+   "id": "sight:a7f41ada-be81-462a-8356-763b5d1323bd",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Dragon Tree of Quinta Conde dos Arcos",
+   "city": "Lisbon",
+   "species": "Dragon Tree (Dracaena draco)",
+   "photo": "out/sightings/a7f41ada-be81-462a-8356-763b5d1323bd.jpg",
+   "reader_note": null,
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 20,
+   "current_photo": "Commons lead (wide shot)",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "The whole dragon tree, umbrella crown over the fluted trunk; 20 m from our confirmed pin. Declined 2026-10-01 because the page had a lead; added beside it 2026-10-02 on Hidde's ruling: reader photographs are extras by default.",
+   "hidde": "add as extra (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:ef0d9ead-41b5-4fcb-8004-015d6b5afe1e",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Dragon Tree of Quinta Conde dos Arcos",
+   "city": "Lisbon",
+   "species": "Dragon Tree (Dracaena draco)",
+   "photo": "out/sightings/ef0d9ead-41b5-4fcb-8004-015d6b5afe1e.jpg",
+   "reader_note": null,
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 20,
+   "current_photo": "Commons lead (wide shot)",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "The trunk at eye level, fused knuckled limbs and aerial roots. Declined 2026-10-01 because the page had a lead; added beside it 2026-10-02 on Hidde's ruling: reader photographs are extras by default.",
+   "hidde": "add as extra (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
   }
  ]
 }

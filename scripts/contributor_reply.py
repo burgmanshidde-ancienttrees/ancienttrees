@@ -288,6 +288,14 @@ def thanks_body(rows_for_addr, addr=None):
     return "\n".join(out) + "\n"
 
 
+# THE TEMPLATED THANK-YOU IS OFF (Hidde, 2026-10-02: "didn't we stop email
+# responding to trees? We should just send the ambassador one"). A photograph
+# or a tip sent through the app gets ONE automatic mail from us, the ambassador
+# invitation (scripts/ambassador.py), and nothing that merely says we heard.
+# The ANSWER kind below stays: a run's verified reply to a typed correction or
+# question is somebody being answered. Flip this back only on his word.
+THANK_YOU = False
+
 THANKS_SUBJECT = {
     "tree": "Thank you, we received your tree tip",
     "city": "Thank you, we received your tree tip",
@@ -465,7 +473,7 @@ def main():
             # his own submissions the moment mailcheck stopped holding them.
             print("OURS row %s: never mail ourselves" % r["id"])
             continue
-        if only != "answers" and not r.get("thanked_at") and addr not in thanked_addrs:
+        if THANK_YOU and only != "answers" and not r.get("thanked_at") and addr not in thanked_addrs:
             subj = THANKS_SUBJECT.get(r.get("kind"), THANKS_SUBJECT["feedback"])
             jobs.append((r, subj, thanks_body(unthanked.get(addr, [r]), addr),
                          "thanked_at"))

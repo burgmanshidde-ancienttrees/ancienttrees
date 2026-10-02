@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: the Lisbon reader, reader photographs are extras by default, no more thank-you mails
+
+- **Missed and corrected.** A second stranger photographed a tree through the app on 2026-10-01, the Dragon Tree of Quinta Conde dos Arcos in Lisbon, 20 m from our pin, two good frames, and the night run declined both because the page already had a Commons lead. It reached Hidde only as the word "declined" in passing ("another user doing exactly what we want and you didn't tell me"). Both frames are beside the lead now; verdicts reversed in data/judgements.json.
+- **Rule change (CLAUDE.md, reader photographs):** a reader's good photograph of the right tree is `add` when the tree has a lead, `approve` when it has none; `reject` is never "the page already has one" (Hidde: "we need this kind of UGC to be relevant for Google").
+- **Thank-you mails off** (`THANK_YOU = False` in contributor_reply.py; Hidde: "didn't we stop email responding to trees? We should just send the ambassador one"). The verified ANSWER replies of the 2026-08-21 loop stay.
+- **Apple relay fixed by Hidde**: SPF now includes Google, domain and info@ address registered and verified; the Paris invitation was resent and delivered on the third attempt. Four earlier mails to relay addresses had bounced (three acknowledgements, one invitation). Lisbon's invitation follows this commit.
+
 ## 2026-10-02 - Night run 2026-10-02 01:11 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 3 commit(s), none of them a published tree.
