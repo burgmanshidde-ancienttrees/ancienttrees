@@ -1,97 +1,121 @@
 {
-  "leads": [
-    {
-      "register_id": "3",
-      "species": "Baobab (Adansonia digitata)",
-      "locality": "Ala Moana Beach Park",
-      "reason": "The register lists one baobab here, but independent sources (a Honolulu blog, WebSearch snippets) describe a grove of about 11 baobabs at Ala Moana Regional Park with no single standout specimen named or described anywhere found. Fails the one-collectible-point test as investigated. A future pass with more time could try to find whether one specific baobab in the grove (e.g. the largest, or one nearest a landmark) is individually described somewhere, which would unblock it."
-    },
-    {
-      "register_id": "72,73",
-      "species": "Kamani (Calophyllum inophyllum)",
-      "locality": "Kualoa Regional Park, near fishpond",
-      "reason": "Register locality is only 'Kualoa Regional Park, near fishpond' with grid-rounded coordinates, no tree-level fix. A light search this pass (Molii/Apua fishpond history, park pages) found plenty on the ancient fishponds themselves but nothing describing this specific kamani tree or pair of kamani trees individually; still needs a targeted second source before it could ship even setting the distance question aside. Kualoa Regional Park is a genuine free public park, but it is on the windward/Koolauloa side of Oahu, roughly 30-40km from downtown Honolulu, a real stretch beyond the 30-minute transit day-trip framing this city page otherwise uses (all published trees cluster in central Honolulu / UH Manoa / Nuuanu). Worth a dedicated look with more time, but likely needs honest 'about an hour's drive' framing rather than a day-trip label, per the island rules in BRIEF_RESEARCH.md."
-    },
-    {
-      "register_id": "909 or 910 (whichever is not George Hall)",
-      "species": "Skunk Tree / Java Olive (Sterculia foetida)",
-      "locality": "UH Manoa campus, either near Sinclair Library or adjacent the Architecture Building",
-      "reason": "This pass shipped hnl_018 (register id 910, register locality 'George Hall') using an independent UH student-newspaper feature (manoanow.org, 2019/2020) as the second source. That same article says there are TWO skunk trees on campus, one near Sinclair Library and one adjacent the Architecture Building, neither named as George Hall; it is genuinely unclear which of the two the register row and the article refer to, or whether a third specimen exists. The register's OTHER Oahu Sterculia foetida row (id 909) is at a different address entirely (Tennet Family Foundation, 203 Prospect St, not UH), so it does not resolve this. Worth a future look: find the exact building each of the article's two trees stands beside (a campus arboretum map, e.g. manoa.hawaii.edu/landscaping/plants/campusarboretum.php, was not reachable this pass) and check whether the second one is a distinct, separately publishable candidate near the existing hnl_009/hnl_010 cluster."
-    },
-    {
-      "register_id": "1207",
-      "species": "Chinese Banyan (Ficus microcarpa)",
-      "locality": "Nuuanu Park",
-      "reason": "Register girth is 1332cm (13.3m circumference), which if accurate would be an exceptional specimen. SECOND PASS, STILL UNRESOLVED: a fresh round of searches (Yelp reviews for Nuuanu Valley Park, general web search for the register locality plus 'banyan' and 'exceptional tree') again found only generic descriptions of the park having 'massive banyans and monkeypod trees', never a write-up naming or describing this individual specimen. This now looks like a dead end for generic web research specifically (two passes, same result); the park itself (2925 Pali Highway) is confirmed free and public, so it is not an access problem, only an evidence one. A future attempt should try the City & County of Honolulu Parks and Recreation office directly, a records request for the original 1975 Exceptional Tree designation file (which usually includes a site description), or a reader/site-visit photo, rather than another generic search sweep. THIRD PASS: confirmed the register locality 'Nuuanu Park' geocodes to the same park as the already-published hnl_011 (Nuuanu Valley Monkeypod, OSM way for 'Nuuanu Valley Park' centres on 21.3358,-157.8385, a few hundred metres from hnl_011's own pin), so this is a deepening opportunity in an already-open cluster rather than a new location. Tried the OSM natural=tree technique that worked for the Kuhio Beach banyan (see hnl_019 this pass): an Overpass query over the park returned 11 natural=tree nodes, none individually tagged with a genus, denotation or name, so OSM cannot distinguish this specimen from the park's other trees either. That is a third dead end by a third method; a records request or reader tip is genuinely the only route left."
-    },
-    {
-      "register_id": "1208, 1209",
-      "species": "Monkeypod (Albizia saman), two entries",
-      "locality": "Nuuanu Park / Nuuanu Valley (same park as hnl_011 and register id 1207 above)",
-      "reason": "Two more large monkeypods (girth 585.2cm and 615.7cm, both 'Excellent' vitality) registered at the same park as the already-published hnl_011 and the unresolved 1207 Chinese Banyan. Not individually searched this pass beyond the same generic 'massive banyans and monkeypod trees' park descriptions that failed for 1207; same evidence gap, same park, so treat together with 1207 in any future targeted attempt (a single records request or site visit could resolve all three at once)."
-    },
-    {
-      "register_id": "399, 386",
-      "species": "Indian Banyan (Ficus benghalensis), two entries",
-      "locality": "Diamond Head Tennis Courts, Paki Avenue (Kapiolani Park)",
-      "reason": "Girths 27.4m and 15.9m circumference, both 'Good' vitality, both large enough to be worth a page on their own. Searched this pass: every source describing Kapiolani Park's tennis courts calls them 'surrounded by astounding banyan trees' or similar, plural and collective, with no single specimen named or distinguished, the same pattern that blocked the Ala Moana baobab grove and the Ala Wai banyan colonnade. A 'The Exceptional Trees of Kapi'olani Park & Paki Avenue' walking-guide PDF exists (waikikioutdoorcircle.org/uploads/3/7/9/7/37971713/kapiolani_walk_v5.pdf) and would likely resolve this, since it is exactly the kind of tree-by-tree local survey BRIEF_RESEARCH.md says to look for, but this pass had no tool that could read it (it downloads as a valid PDF but is image-heavy/scanned and neither WebFetch nor the tools on hand could extract its text). A future pass with PDF-reading tools or a browser session should open it directly."
-    },
-    {
-      "register_id": "1211, 1212, 102",
-      "species": "Tamarind / Banyan / Pili Nut",
-      "locality": "Washington Place, 320 S. Beretania St., Downtown",
-      "reason": "MOVED TO BLOCKED this pass: access confirmed and it fails hard rule 10. See blocked list.",
-      "reason_short": "superseded, see blocked"
-    },
-    {
-      "register_id": "850",
-      "species": "Monkeypod (Albizia saman)",
-      "locality": "Central Union Church, 1660 S. Beretania St. (Atherton Chapel courtyard)",
-      "reason": "The register places this specific 'exceptional tree' monkeypod in the Atherton Chapel courtyard (per SAH Archipedia, which says the 1949 chapel was designed to incorporate an existing exceptional monkeypod within an adjoining courtyard). A separate source (imagesofoldhawaii.com) describes a different-sounding monkeypod on the church's grounds with a treehouse, dating to the pre-church Dillingham estate (Woodlawn) era; it is not certain these are the same tree. SECOND PASS: checked the church's own site (centralunionchurch.org, no page addresses public grounds access) and ran an Overpass query over the church's ~8-acre campus (way 468548377, bounded roughly 21.2984-21.2993 N, -157.8339 to -157.8329 W): no access=private tag on the church parcel itself, and public foot=designated footways cross the block, but that is suggestive rather than a confirmed answer, since it is a large multi-building campus (sanctuary, chapel, offices, Great Lawn) and the OSM tags do not distinguish the chapel courtyard specifically from the street-facing green. Wedding-venue write-ups describe ceremonies happening 'on the lawn under the grand Monkeypod tree' outside the chapel, which suggests the tree itself may stand on the open Great Lawn rather than inside a closed courtyard, but no source states this as a fact about general public access on an ordinary day (as opposed to a booked event). Still needs a call to the church office or a one-off site visit before shipping; not blocked, just unresolved."
-    },
-    {
-      "register_id": "401",
-      "species": "Indian Banyan (Ficus benghalensis)",
-      "locality": "Honolulu Zoo, outside entrance, mauka tree",
-      "reason": "Not a lead in the sense of unshipped: folded into hnl_015 (The Zoo Gate Banyans) alongside id 402 this pass. Recorded here because its own diameter figure (83.8cm) is inconsistent with its girth (2545.1cm) by roughly a factor of ten and looks like a register data-entry error (should be nearer 810cm by circumference=pi*diameter); a future pass touching this register more broadly should flag or fix this row rather than trust the diameter column at face value."
-    },
-    {
-      "register_id": "117",
-      "species": "Kapok (Ceiba pentandra)",
-      "locality": "Foster Botanical Garden, 180 N. Vineyard Blvd.",
-      "reason": "A second, smaller kapok (diameter 157.2cm vs the published hnl_003's 222.2cm) is registered at the same garden with the identical locality string as register_id 116 (hnl_003). No source found this pass gives an on-site landmark, path or terrace name that would let a visitor (or a future pass) tell this specimen apart from the one already published. Shipping it risks the register-twin problem (two near-identical entries that read as one thing to a visitor) rather than a genuinely distinct collectible point. Needs a garden map, plaque photo or staff confirmation naming which terrace/bed holds the second kapok before it can ship."
-    },
-    {
-      "register_id": "1289",
-      "species": "Panama Tree (Sterculia apetala)",
-      "locality": "Thomas Square",
-      "reason": "Register-only: diameter 111.8cm, height 55ft, vitality Good. No independent second source found this pass describing this specific tree at Thomas Square (Thomas Square's own Wikipedia page and the CTAHR/Star-Advertiser sources already used for hnl_007 cover the park's banyans, not this species). The park itself is public and free, so access is not the blocker, only the second source. A future pass should try the CTAHR OF-34 PDF (already cited for hnl_007) for a full tree inventory, or the Honolulu Exceptional Trees ordinance/resolution behind register_id 1289."
-    },
-    {
-      "register_id": "17, 28, 695",
-      "species": "Queensland Kauri (Agathis robusta), Hoop Pine (Araucaria cunninghamii), Caribbean Royal Palm (Roystonea oleracea)",
-      "locality": "Harold L. Lyon Arboretum, 3860 Manoa Rd.",
-      "reason": "Genuinely new, unpublished cluster of 4 register trees (plus a Sealing Wax Palm, register_id 120, too small/ornamental to be remarkable on its own) at a site confirmed publicly accessible: free admission, Mon-Fri 9am-3pm, visitor sign-in required but no reservation or gatekeeping (manoa.hawaii.edu/lyon/visit, hawaiimagazine.com), so hard rule 10 is not a blocker. What is missing is a second, non-register source describing any INDIVIDUAL specimen (species-level pages exist for Agathis robusta and Araucaria cunninghamii generally, but nothing found this pass ties a notable measurement or story to the Lyon Arboretum specimen specifically). A Honolulu City Council document (hnldoc.ehawaii.gov/hnldoc/document-download?id=19318) appears to be the underlying exceptional-tree designation record and could be a genuine second source once read, but it is a scanned/image PDF that this pass could not extract text from. A future pass with OCR or a different fetch route should try that document first; if it names measurements matching the register entries, this cluster ships in one go."
-    }
-  ],
-  "blocked": [
-    {
-      "register_id": "1211, 1212, 102",
-      "species": "Tamarind (Tamarindus indica) / Banyan (Ficus sp) / Pili Nut (Canarium vulgare)",
-      "locality": "Washington Place, 320 S. Beretania St., Downtown",
-      "reason": "Washington Place's own site (washingtonplace.hawaii.gov/tours-and-gardens/) states the grounds are open to the public Monday to Friday BY APPOINTMENT ONLY (guided tours), and that on-site tours are currently suspended for renovation and restoration work expected to continue through 2027, with limited tour openings possibly resuming later in 2026. This fails the walk-up access test in BRIEF_RESEARCH.md/hard rule 10: the gate between a visitor and these trees is somebody's permission and a booking, not a price and a schedule anyone can just turn up to, and right now it is not even bookable. Revisit once (a) tours resume and (b) it is clear the GARDENS rather than only the house interior are covered by a booking a member of the public can actually make."
-    },
-    {
-      "register_id": "389, 16, 921",
-      "species": "Indian Banyan / Queensland Kauri / Tamarind",
-      "locality": "Judiciary Bldg. (Aliiolani Hale), 417 S. King St, Downtown",
-      "reason": "A large banyan tree at Aliiolani Hale (the state Judiciary / Supreme Court building) was cut down on 2026-02-10 after storm damage (cracked branches, partially uprooted, leaning toward the building), per courts.state.hi.us and KITV news. Neither source names the tree precisely enough to confirm whether it is register id 389 (the Indian Banyan) or a different, unregistered banyan on the same property, and the site had public tours suspended around the removal. Given that ambiguity and the very real chance the registered banyan is the one that came down, none of the three Judiciary Building register trees are shipped this pass. A future pass should call or check courts.hawaii.gov / DAGS for which specific tree was removed before using any of these three."
-    },
-    {
-      "register_id": "499, 500",
-      "species": "Chinese Banyan / Weeping Fig",
-      "locality": "Ala Wai Canal",
-      "reason": "These are two of 58 banyans forming a continuous double-row colonnade along the Ala Wai Promenade, planted by the Outdoor Circle in 1937 as a single avenue-planting scheme. This is exactly the avenue/whole-wood case BRIEF_RESEARCH.md blocks: there is no single obvious tree to stand at and no way to individually distinguish register ids 499 and 500 from their 56 neighbours. Blocked as a collectible point, not as a quality or access problem; the promenade itself might make a fine mention in a future 'walk' feature but not as a single tree entry."
-    }
-  ]
+ "leads": [
+  {
+   "register_id": "3",
+   "species": "Baobab (Adansonia digitata)",
+   "locality": "Ala Moana Beach Park",
+   "reason": "The register lists one baobab here, but independent sources (a Honolulu blog, WebSearch snippets) describe a grove of about 11 baobabs at Ala Moana Regional Park with no single standout specimen named or described anywhere found. Fails the one-collectible-point test as investigated. A future pass with more time could try to find whether one specific baobab in the grove (e.g. the largest, or one nearest a landmark) is individually described somewhere, which would unblock it."
+  },
+  {
+   "register_id": "72,73",
+   "species": "Kamani (Calophyllum inophyllum)",
+   "locality": "Kualoa Regional Park, near fishpond",
+   "reason": "Register locality is only 'Kualoa Regional Park, near fishpond' with grid-rounded coordinates, no tree-level fix. A light search this pass (Molii/Apua fishpond history, park pages) found plenty on the ancient fishponds themselves but nothing describing this specific kamani tree or pair of kamani trees individually; still needs a targeted second source before it could ship even setting the distance question aside. Kualoa Regional Park is a genuine free public park, but it is on the windward/Koolauloa side of Oahu, roughly 30-40km from downtown Honolulu, a real stretch beyond the 30-minute transit day-trip framing this city page otherwise uses (all published trees cluster in central Honolulu / UH Manoa / Nuuanu). Worth a dedicated look with more time, but likely needs honest 'about an hour's drive' framing rather than a day-trip label, per the island rules in BRIEF_RESEARCH.md."
+  },
+  {
+   "register_id": "909 or 910 (whichever is not George Hall)",
+   "species": "Skunk Tree / Java Olive (Sterculia foetida)",
+   "locality": "UH Manoa campus, either near Sinclair Library or adjacent the Architecture Building",
+   "reason": "This pass shipped hnl_018 (register id 910, register locality 'George Hall') using an independent UH student-newspaper feature (manoanow.org, 2019/2020) as the second source. That same article says there are TWO skunk trees on campus, one near Sinclair Library and one adjacent the Architecture Building, neither named as George Hall; it is genuinely unclear which of the two the register row and the article refer to, or whether a third specimen exists. The register's OTHER Oahu Sterculia foetida row (id 909) is at a different address entirely (Tennet Family Foundation, 203 Prospect St, not UH), so it does not resolve this. Worth a future look: find the exact building each of the article's two trees stands beside (a campus arboretum map, e.g. manoa.hawaii.edu/landscaping/plants/campusarboretum.php, was not reachable this pass) and check whether the second one is a distinct, separately publishable candidate near the existing hnl_009/hnl_010 cluster."
+  },
+  {
+   "register_id": "1207",
+   "species": "Chinese Banyan (Ficus microcarpa)",
+   "locality": "Nuuanu Park",
+   "reason": "Register girth is 1332cm (13.3m circumference), which if accurate would be an exceptional specimen. SECOND PASS, STILL UNRESOLVED: a fresh round of searches (Yelp reviews for Nuuanu Valley Park, general web search for the register locality plus 'banyan' and 'exceptional tree') again found only generic descriptions of the park having 'massive banyans and monkeypod trees', never a write-up naming or describing this individual specimen. This now looks like a dead end for generic web research specifically (two passes, same result); the park itself (2925 Pali Highway) is confirmed free and public, so it is not an access problem, only an evidence one. A future attempt should try the City & County of Honolulu Parks and Recreation office directly, a records request for the original 1975 Exceptional Tree designation file (which usually includes a site description), or a reader/site-visit photo, rather than another generic search sweep. THIRD PASS: confirmed the register locality 'Nuuanu Park' geocodes to the same park as the already-published hnl_011 (Nuuanu Valley Monkeypod, OSM way for 'Nuuanu Valley Park' centres on 21.3358,-157.8385, a few hundred metres from hnl_011's own pin), so this is a deepening opportunity in an already-open cluster rather than a new location. Tried the OSM natural=tree technique that worked for the Kuhio Beach banyan (see hnl_019 this pass): an Overpass query over the park returned 11 natural=tree nodes, none individually tagged with a genus, denotation or name, so OSM cannot distinguish this specimen from the park's other trees either. That is a third dead end by a third method; a records request or reader tip is genuinely the only route left."
+  },
+  {
+   "register_id": "1208, 1209",
+   "species": "Monkeypod (Albizia saman), two entries",
+   "locality": "Nuuanu Park / Nuuanu Valley (same park as hnl_011 and register id 1207 above)",
+   "reason": "Two more large monkeypods (girth 585.2cm and 615.7cm, both 'Excellent' vitality) registered at the same park as the already-published hnl_011 and the unresolved 1207 Chinese Banyan. Not individually searched this pass beyond the same generic 'massive banyans and monkeypod trees' park descriptions that failed for 1207; same evidence gap, same park, so treat together with 1207 in any future targeted attempt (a single records request or site visit could resolve all three at once)."
+  },
+  {
+   "register_id": "399, 386",
+   "species": "Indian Banyan (Ficus benghalensis), two entries",
+   "locality": "Diamond Head Tennis Courts, Paki Avenue (Kapiolani Park)",
+   "reason": "Girths 27.4m and 15.9m circumference, both 'Good' vitality, both large enough to be worth a page on their own. Searched this pass: every source describing Kapiolani Park's tennis courts calls them 'surrounded by astounding banyan trees' or similar, plural and collective, with no single specimen named or distinguished, the same pattern that blocked the Ala Moana baobab grove and the Ala Wai banyan colonnade. A 'The Exceptional Trees of Kapi'olani Park & Paki Avenue' walking-guide PDF exists (waikikioutdoorcircle.org/uploads/3/7/9/7/37971713/kapiolani_walk_v5.pdf) and would likely resolve this, since it is exactly the kind of tree-by-tree local survey BRIEF_RESEARCH.md says to look for, but this pass had no tool that could read it (it downloads as a valid PDF but is image-heavy/scanned and neither WebFetch nor the tools on hand could extract its text). A future pass with PDF-reading tools or a browser session should open it directly."
+  },
+  {
+   "register_id": "1211, 1212, 102",
+   "species": "Tamarind / Banyan / Pili Nut",
+   "locality": "Washington Place, 320 S. Beretania St., Downtown",
+   "reason": "MOVED TO BLOCKED this pass: access confirmed and it fails hard rule 10. See blocked list.",
+   "reason_short": "superseded, see blocked"
+  },
+  {
+   "register_id": "850",
+   "species": "Monkeypod (Albizia saman)",
+   "locality": "Central Union Church, 1660 S. Beretania St. (Atherton Chapel courtyard)",
+   "reason": "The register places this specific 'exceptional tree' monkeypod in the Atherton Chapel courtyard (per SAH Archipedia, which says the 1949 chapel was designed to incorporate an existing exceptional monkeypod within an adjoining courtyard). A separate source (imagesofoldhawaii.com) describes a different-sounding monkeypod on the church's grounds with a treehouse, dating to the pre-church Dillingham estate (Woodlawn) era; it is not certain these are the same tree. SECOND PASS: checked the church's own site (centralunionchurch.org, no page addresses public grounds access) and ran an Overpass query over the church's ~8-acre campus (way 468548377, bounded roughly 21.2984-21.2993 N, -157.8339 to -157.8329 W): no access=private tag on the church parcel itself, and public foot=designated footways cross the block, but that is suggestive rather than a confirmed answer, since it is a large multi-building campus (sanctuary, chapel, offices, Great Lawn) and the OSM tags do not distinguish the chapel courtyard specifically from the street-facing green. Wedding-venue write-ups describe ceremonies happening 'on the lawn under the grand Monkeypod tree' outside the chapel, which suggests the tree itself may stand on the open Great Lawn rather than inside a closed courtyard, but no source states this as a fact about general public access on an ordinary day (as opposed to a booked event). Still needs a call to the church office or a one-off site visit before shipping; not blocked, just unresolved."
+  },
+  {
+   "register_id": "401",
+   "species": "Indian Banyan (Ficus benghalensis)",
+   "locality": "Honolulu Zoo, outside entrance, mauka tree",
+   "reason": "Not a lead in the sense of unshipped: folded into hnl_015 (The Zoo Gate Banyans) alongside id 402 this pass. Recorded here because its own diameter figure (83.8cm) is inconsistent with its girth (2545.1cm) by roughly a factor of ten and looks like a register data-entry error (should be nearer 810cm by circumference=pi*diameter); a future pass touching this register more broadly should flag or fix this row rather than trust the diameter column at face value."
+  },
+  {
+   "register_id": "117",
+   "species": "Kapok (Ceiba pentandra)",
+   "locality": "Foster Botanical Garden, 180 N. Vineyard Blvd.",
+   "reason": "A second, smaller kapok (diameter 157.2cm vs the published hnl_003's 222.2cm) is registered at the same garden with the identical locality string as register_id 116 (hnl_003). No source found this pass gives an on-site landmark, path or terrace name that would let a visitor (or a future pass) tell this specimen apart from the one already published. Shipping it risks the register-twin problem (two near-identical entries that read as one thing to a visitor) rather than a genuinely distinct collectible point. Needs a garden map, plaque photo or staff confirmation naming which terrace/bed holds the second kapok before it can ship."
+  },
+  {
+   "register_id": "1289",
+   "species": "Panama Tree (Sterculia apetala)",
+   "locality": "Thomas Square",
+   "reason": "Register-only: diameter 111.8cm, height 55ft, vitality Good. No independent second source found this pass describing this specific tree at Thomas Square (Thomas Square's own Wikipedia page and the CTAHR/Star-Advertiser sources already used for hnl_007 cover the park's banyans, not this species). The park itself is public and free, so access is not the blocker, only the second source. A future pass should try the CTAHR OF-34 PDF (already cited for hnl_007) for a full tree inventory, or the Honolulu Exceptional Trees ordinance/resolution behind register_id 1289."
+  },
+  {
+   "register_id": "17, 28, 695",
+   "species": "Queensland Kauri (Agathis robusta), Hoop Pine (Araucaria cunninghamii), Caribbean Royal Palm (Roystonea oleracea)",
+   "locality": "Harold L. Lyon Arboretum, 3860 Manoa Rd.",
+   "reason": "Genuinely new, unpublished cluster of 4 register trees (plus a Sealing Wax Palm, register_id 120, too small/ornamental to be remarkable on its own) at a site confirmed publicly accessible: free admission, Mon-Fri 9am-3pm, visitor sign-in required but no reservation or gatekeeping (manoa.hawaii.edu/lyon/visit, hawaiimagazine.com), so hard rule 10 is not a blocker. What is missing is a second, non-register source describing any INDIVIDUAL specimen (species-level pages exist for Agathis robusta and Araucaria cunninghamii generally, but nothing found this pass ties a notable measurement or story to the Lyon Arboretum specimen specifically). A Honolulu City Council document (hnldoc.ehawaii.gov/hnldoc/document-download?id=19318) appears to be the underlying exceptional-tree designation record and could be a genuine second source once read, but it is a scanned/image PDF that this pass could not extract text from. A future pass with OCR or a different fetch route should try that document first; if it names measurements matching the register entries, this cluster ships in one go."
+  },
+  {
+   "register_id": "392,391,1193,397,398,396,403,404,405,386,399,395",
+   "species": "Banyan (Ficus benghalensis)",
+   "locality": "Waikiki / Kapiolani Park / Diamond Head: Natatorium (2), Aquarium, Waikiki Shell lot (2), Paki Ave tennis courts (2), Poni Moi Rd, Queen's Surf, across from Zoo",
+   "reason": "2026-10-02 verify pass: no photo or exact pin in reach. Register coordinates are rounded to 0.01 degree (~1.1 km), so pins cannot be tree-level. Commons geosearch within 150-400 m of the Natatorium, Aquarium and Kapiolani bandstand returns no tree photographs; keyword searches (Natatorium, Waikiki Aquarium, Queen's Surf, Kapiolani banyan) return only archive PDFs and one archival black-and-white Brother Bertram print of a Kapiolani banyan (not identifiable as a register tree, B&W rejected). Revisit only with a reader photograph or a tree-level OSM node."
+  },
+  {
+   "register_id": "882,883,916,848",
+   "species": "Bodhi tree / Monkeypods (Ficus religiosa, Albizia saman)",
+   "locality": "Moanalua Gardens, 1352 Pineapple Pl.",
+   "reason": "2026-10-02 pass: Commons holds panoramio monkeypod photos of the gardens but none names which register tree; hnl_006 (Hitachi Tree, id 848) is already live and the other monkeypods and the 477 cm bodhi (882) cannot be told apart from it by photo. No photo or exact pin."
+  },
+  {
+   "register_id": "108",
+   "species": "Ironwood (Casuarina equisetifolia)",
+   "locality": "Kapiolani Park Bandstand, girth 518 cm",
+   "reason": "2026-10-02 pass: only a Starr aerial of Kapiolani Park casuarinas exists on Commons, not of this tree; no pin below 1 km. No photo or exact pin."
+  },
+  {
+   "register_id": "850",
+   "species": "Monkeypod (Albizia saman)",
+   "locality": "Central Union Church, 1660 S. Beretania St., girth 750 cm",
+   "reason": "2026-10-02 pass: church grounds would pass access, but Commons search and 150 m geosearch returned nothing for it; register pin is grid-rounded. No photo or exact pin; worth a reader photograph."
+  }
+ ],
+ "blocked": [
+  {
+   "register_id": "1211, 1212, 102",
+   "species": "Tamarind (Tamarindus indica) / Banyan (Ficus sp) / Pili Nut (Canarium vulgare)",
+   "locality": "Washington Place, 320 S. Beretania St., Downtown",
+   "reason": "Washington Place's own site (washingtonplace.hawaii.gov/tours-and-gardens/) states the grounds are open to the public Monday to Friday BY APPOINTMENT ONLY (guided tours), and that on-site tours are currently suspended for renovation and restoration work expected to continue through 2027, with limited tour openings possibly resuming later in 2026. This fails the walk-up access test in BRIEF_RESEARCH.md/hard rule 10: the gate between a visitor and these trees is somebody's permission and a booking, not a price and a schedule anyone can just turn up to, and right now it is not even bookable. Revisit once (a) tours resume and (b) it is clear the GARDENS rather than only the house interior are covered by a booking a member of the public can actually make."
+  },
+  {
+   "register_id": "389, 16, 921",
+   "species": "Indian Banyan / Queensland Kauri / Tamarind",
+   "locality": "Judiciary Bldg. (Aliiolani Hale), 417 S. King St, Downtown",
+   "reason": "A large banyan tree at Aliiolani Hale (the state Judiciary / Supreme Court building) was cut down on 2026-02-10 after storm damage (cracked branches, partially uprooted, leaning toward the building), per courts.state.hi.us and KITV news. Neither source names the tree precisely enough to confirm whether it is register id 389 (the Indian Banyan) or a different, unregistered banyan on the same property, and the site had public tours suspended around the removal. Given that ambiguity and the very real chance the registered banyan is the one that came down, none of the three Judiciary Building register trees are shipped this pass. A future pass should call or check courts.hawaii.gov / DAGS for which specific tree was removed before using any of these three."
+  },
+  {
+   "register_id": "499, 500",
+   "species": "Chinese Banyan / Weeping Fig",
+   "locality": "Ala Wai Canal",
+   "reason": "These are two of 58 banyans forming a continuous double-row colonnade along the Ala Wai Promenade, planted by the Outdoor Circle in 1937 as a single avenue-planting scheme. This is exactly the avenue/whole-wood case BRIEF_RESEARCH.md blocks: there is no single obvious tree to stand at and no way to individually distinguish register ids 499 and 500 from their 56 neighbours. Blocked as a collectible point, not as a quality or access problem; the promenade itself might make a fine mention in a future 'walk' feature but not as a single tree entry."
+  }
+ ]
 }
