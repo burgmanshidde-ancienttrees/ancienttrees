@@ -3,11 +3,11 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "sea_001",
-  "intro": "Seattle logged nearly all of itself, and kept only pockets of what stood before. Seward Park holds a Douglas fir of 400 to 500 years with an eagle nest in it; a second old-growth survivor, Sylvia, stands in Kirkland after a 1993 storm took her crown. Most of the rest are garden plantings: a giant sequoia on Capitol Hill, a Kubota Garden grand fir with two of its pines, a state champion in the arboretum, and a poplar dated to the 1909 world's fair. On the streets, a West Seattle oak is 55 feet wider than it is tall.",
+  "intro": "Seattle logged nearly all of itself and kept pockets of the old forest. Seward Park holds a Douglas fir of 400 to 500 years with an eagle nest; a second old-growth survivor, Sylvia, stands in Kirkland. Most of the rest stand in parks and gardens: a giant sequoia and the city's largest copper beech in Volunteer Park, a Kubota Garden grand fir with two of its pines, a state champion in the arboretum, a poplar from the 1909 world's fair and another among willows on Lake Union. A West Seattle oak is 55 feet wider than it is tall.",
   "meta_description": "Seattle's oldest trees: two old-growth Douglas firs, a Capitol Hill sequoia, Kubota Garden conifers, a 1909 poplar and an oak wider than it is tall.",
   "question_answer": "The oldest tree in Seattle is the Big Tree in Seward Park, a Douglas fir of roughly 400 to 500 years standing in the old-growth remnant on the peninsula, with a bald eagle nest near its top. Nobody publishes exactly where it is in the park's 120 acres, so finding it is part of the walk, and the much younger fir the park's own leaflet starts you at is not it. A second old-growth survivor, Sylvia, stands in Kirkland's O.O. Denny Park at roughly 500 to 600 years, close enough in age that either tree could be the true elder; neither has been cored.",
   "question_meta": "The Big Tree in Seward Park, a Douglas fir of 400 to 500 years in Seattle's last old-growth remnant, is the city's oldest known tree.",
-  "question_context": "Seattle has no register of individual trees, which shapes everything on this page. The city runs a Heritage Tree programme with the group PlantAmnesty and it names trees without publishing a dataset, the parks department's own file is a full street inventory rather than a selection, and Washington's state champion list records size rather than age. So every pin here is approximate, meaning we know the park and not the trunk, and three of the twelve trees have no recorded age at all. That includes the giant sequoia on Capitol Hill, where the city's own tree-walk leaflet quotes a height and a diameter that belong to what the species can reach rather than to this tree, which is the kind of number that gets repeated until somebody checks it. We would rather say we do not know. Sylvia, the old-growth survivor in Kirkland, comes closest to challenging the Seward Park fir for the oldest-tree title, and neither has been cored to settle it. If you have a tape measure and ten minutes in Volunteer Park, you can settle the sequoia, and we will put your figure on the page.",
+  "question_context": "Seattle names its Heritage Trees through a programme the city runs with the group PlantAmnesty, and the city's own tree records give a height, a trunk diameter and a position for some of them. Four of the sixteen trees here come from those records, and their pins mark the trunk. The rest come from tree walks, local historians and Washington's state champion list, which records size rather than age, so most of their pins are approximate, meaning we know the park and not the trunk. Seven of the sixteen trees have no recorded age at all. That includes the giant sequoia on Capitol Hill, where the city's own tree-walk leaflet quotes a height and a diameter that belong to what the species can reach rather than to this tree, a number that gets repeated until somebody checks it. Sylvia, the old-growth survivor in Kirkland, comes closest to challenging the Seward Park fir for the oldest-tree title, and neither has been cored to settle it. If you have a tape measure and ten minutes in Volunteer Park, you can settle the sequoia, and we will put your figure on the page.",
   "faq": [
     {
       "q": "What is the oldest tree in Seattle?",
@@ -430,6 +430,128 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "sea_013",
+      "name": "The Volunteer Park Copper Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "not documented",
+      "girth_cm": 567,
+      "location": {
+        "address": "Volunteer Park, behind the Seattle Asian Art Museum, 1400 E Prospect St",
+        "latitude": 47.630793,
+        "longitude": -122.314387,
+        "neighbourhood": "Capitol Hill"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)",
+        "https://web.archive.org/ (CHS/McGarry 2015 via data/leads/seattle.json: largest in Seattle, 92 ft in 2000 per Jacobson)"
+      ],
+      "access": "Free; public Seattle Parks land, open daily",
+      "transport": "Not verified; walk time from Capitol Hill not checked",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Two measurements taken nineteen years apart put this copper beech at almost exactly the same height: 92 feet when the tree expert Arthur Lee Jacobson recorded it in 2000, and 94 feet when the city surveyed it in 2019. Nineteen years, two feet: this beech was already near its full height when the century began.\n\nThe trunk is the bigger number. The city gives the trunk as 71 inches across at chest height, which comes to roughly 18 and a half feet round. A Capitol Hill writer, drawing on Jacobson's records in 2015, called it the largest copper beech in Seattle, and the city lists it as one of its Heritage Trees.\n\nA copper beech is a purple-leaved form of the European beech, so this is an Old World tree grown up on the far side of North America. It stands in Volunteer Park, behind the building that houses the Seattle Asian Art Museum, a short walk from the park's giant sequoia. Its leaves open purple in spring and turn copper before they fall, which is where the name comes from.\n\nWhat nobody has published is when it was planted. The city's measurements say what it has become and nothing about when it began. If you know, or know who would, tell us, because the age is the one number this page is missing.",
+      "how_to_recognise": "You can recognise it by the purple leaves on a tree 94 feet tall, over a trunk about 18 and a half feet round. It stands in Volunteer Park, behind the Seattle Asian Art Museum.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "May, when the new leaves open purple"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sea_014",
+      "name": "The Roanoke Street Lombardy Poplar",
+      "species": "Lombardy Poplar (Populus nigra 'Italica')",
+      "age_estimate": "not documented",
+      "girth_cm": 646,
+      "location": {
+        "address": "Roanoke Street Mini Park, E Roanoke St street-end at Fairview Ave E",
+        "latitude": 47.643111,
+        "longitude": -122.328921,
+        "neighbourhood": "Eastlake"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)",
+        "https://seattle.gov/parks/parks/roanoke-street-mini-park",
+        "https://www.yearofseattleparks.com/2010/01/10/roanoke-street-mini-park/"
+      ],
+      "access": "Free; public mini park at a street-end on Lake Union",
+      "transport": "Not verified; bus on Eastlake Ave E, stop and walk time not checked",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Lombardy poplars are famous for being narrow, and the city's figure for this one says otherwise: a trunk 81 inches across at chest height, which is about 21 feet round, under a tree recorded at 108 feet tall. For a tree planted almost everywhere as a slim green column along a fence line, that is an unusually heavy base.\n\nIt stands in Roanoke Street Mini Park, a scrap of public ground where East Roanoke Street runs out at Lake Union, in Eastlake. In 2010 the city named it a Heritage Tree together with three weeping willows beside it, and treated the four as a heritage grove, which is recorded on a plaque in the south part of the park. So the poplar shares the honour, and the shoreline, with three trees of a completely different shape: one shooting straight up, three hanging down.\n\nThe last city survey was in 2019, and naturalists logged the tree on iNaturalist as recently as April 2026. It is a different tree from the University of Washington's world's-fair poplar.\n\nNobody has published a planting date, and a trunk that thick on a poplar is worth a second look. If you pass with a tape measure, a girth taken at chest height would settle it, and the figure goes on this page.",
+      "how_to_recognise": "You can recognise it as the tall, upright poplar among three weeping willows, 108 feet high on a trunk about 21 feet round. It stands in Roanoke Street Mini Park, at the Lake Union end of E Roanoke St.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sea_015",
+      "name": "The Ballard Playground London Planes",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "girth_cm": 606,
+      "location": {
+        "address": "Ballard Playground, near 2644 NW 60th St (register address), by 26th Ave NW",
+        "latitude": 47.672839,
+        "longitude": -122.390278,
+        "neighbourhood": "Ballard"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)"
+      ],
+      "access": "Free; Seattle Parks playground (OSM area Ballard Playground). Adjoins a school site: stay on the park side.",
+      "transport": "Not verified",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two London planes stand twenty metres apart at Ballard Playground, and the city measures them as near twins: trunks 76 and 75 inches across at chest height, each close to 20 feet round. Then they part company upward. One reaches 80 feet, the other stops at 64.\n\nBoth carry Seattle's Heritage Tree designation, and standing between them you see them as one sight: two trunks more than six feet thick, sharing a corner of a neighbourhood playground in Ballard. The city last surveyed them in 2019 and recorded both in good condition.\n\nThat survey is close to everything anyone has written down. No planting date has been published, no local history names them, and as far as we can find nobody has photographed them for any public collection. So the age is open, and so is the story: who planted a pair of planes this size beside a playground, and when. If you know, tell us.\n\nThe pin marks the larger tree, which sits inside the playground. Its partner stands a short way north, and we have not confirmed whether it is inside the park boundary or just beyond it. The playground borders a school site, so look from the park side and leave the school grounds alone.",
+      "how_to_recognise": "You can recognise them as a matched pair of London planes about 20 metres apart, each trunk close to 20 feet round; the taller reaches 80 feet. They stand in Ballard Playground near 26th Ave NW.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sea_016",
+      "name": "The Seward Park Lake Washington Boulevard Douglas Fir",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "not documented",
+      "girth_cm": 559,
+      "location": {
+        "address": "Seward Park, by Lake Washington Blvd S (register address 5898 Lake Washington Blvd S)",
+        "latitude": 47.560148,
+        "longitude": -122.250625,
+        "neighbourhood": "Seward Park"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)"
+      ],
+      "access": "Free; inside Seward Park (OSM park area), public",
+      "transport": "Not verified",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is the Seward Park Douglas fir you can actually find. The city records it at 125 feet tall with a trunk 70 inches across at chest height, about 18 feet round, and it stands by Lake Washington Boulevard South rather than somewhere deep in the woods.\n\nThat matters because Seward Park already has a famous fir, and this is not it. The Big Tree, the 400 to 500 year old survivor of two forest fires, stands a little over a kilometre away in the old-growth interior, in a spot nobody publishes. This one is a city Heritage Tree with a pin that marks the trunk.\n\nThe last city survey of it was in 2019, and naturalists recorded it standing on iNaturalist in April 2026. Beyond that the record is thin. Nobody has published its age, and a Douglas fir this size could be a lot of things: a big tree is not automatically an old one, and we would rather leave the number blank than borrow one from its famous neighbour.\n\nSo stand at its base and look up 125 feet, then walk into the forest knowing the Big Tree in there is taller still. If you know when this one started, or what it has seen, tell us.",
+      "how_to_recognise": "You can recognise it as a Douglas fir about 125 feet tall with a trunk around 18 feet round. It stands beside Lake Washington Blvd S (city address 5898), not in the forest interior.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
