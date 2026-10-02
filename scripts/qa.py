@@ -276,6 +276,35 @@ def check_no_strategy_in_workflows():
     return out
 
 
+def check_a_stored_session_is_verified_with_the_server():
+    """Every page that carries a heart must also carry the code that checks a
+    stored session with Supabase and forgets it when the server says no.
+
+    Hidde, 2026-10-02: "I can still do thumbs up save and collect tree without
+    being logged in on the website how many times did we look at this please
+    close this gap forever! No local storage!" The site had trusted a session
+    object in localStorage by its own expiry, so a token revoked elsewhere
+    painted everything signed in and lit a heart on a save the server threw
+    away. collection-js.ts now asks /auth/v1/user once per load and forgets
+    the session on a refusal, every refused write does the same, and all three
+    controls listen for the sign-out. This check reads the BUILT page for the
+    two markers that code leaves, so a rewrite that drops either cannot
+    deploy; the smoke test proves the behaviour with a planted fake session.
+    Removing this check needs Hidde.
+    """
+    out = []
+    pages = [p for p in DIST.rglob("*.html") if "save-btn" in p.read_text(encoding="utf-8", errors="replace")]
+    if not pages:
+        return out
+    for page in pages[:200]:
+        html = page.read_text(encoding="utf-8", errors="replace")
+        if "/auth/v1/user" not in html:
+            out.append(f"{page.relative_to(DIST)}: has a save heart but never verifies the stored session with the server (/auth/v1/user missing)")
+        if "at:signedout" not in html:
+            out.append(f"{page.relative_to(DIST)}: has a save heart but no sign-out event, so a refused session cannot repaint the controls")
+    return out[:6]
+
+
 def check_the_digest_never_shows_bots():
     """The digest counts PEOPLE and never shows a bot.
 
@@ -2578,6 +2607,7 @@ def main():
 
     failures += check_no_strategy_in_workflows()
     failures += check_the_digest_never_shows_bots()
+    failures += check_a_stored_session_is_verified_with_the_server()
     failures += check_run_prompt_forbids_compound_commands()
     failures += check_app_downloads_are_their_own_block()
     failures += check_one_city_order()

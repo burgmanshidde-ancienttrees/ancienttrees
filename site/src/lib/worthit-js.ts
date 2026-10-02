@@ -88,7 +88,17 @@ export const WORTHIT_JS = `
           why: verdict + (reason ? ': ' + reason : ''),
           page: location.pathname
         })
-      });
+      }).then(function(r) {
+        // The account refused it: the thumb goes back, the dead session is
+        // forgotten everywhere, and the sign-in dialog asks (2026-10-02).
+        if (r && (r.status === 401 || r.status === 403)) {
+          state(tree).vote = null; state(tree).reported = false;
+          paint(box);
+          if (window.atCollection && window.atCollection.forget) window.atCollection.forget();
+          else { try { localStorage.removeItem('ancienttrees_session'); } catch (e) {} }
+          if (window.atOpenSignIn) window.atOpenSignIn(name);
+        }
+      }).catch(function() {});
     } catch (e) {}
     try { at.track('worthit-' + verdict); } catch (e) {}
   }
@@ -105,6 +115,10 @@ export const WORTHIT_JS = `
   //   why = "worth it" | "not worth it" | "vote undone: ..." | "report: ..."
   //         | "report detail: ..."
   var mine = {};   // tree id -> { vote, reported, detailed }
+  document.addEventListener('at:signedout', function() {
+    mine = {};
+    document.querySelectorAll('.worthit').forEach(function(box) { try { paint(box); } catch (e) {} });
+  });
   function state(tree) {
     if (!mine[tree]) mine[tree] = { vote: null, reported: false, detailed: false };
     return mine[tree];
