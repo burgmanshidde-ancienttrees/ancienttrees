@@ -2774,3 +2774,33 @@ does not recolour, it leaves, because at the page there is no map under it to
 control; Polarsteps keeps its gear because its gear is for the profile. A
 screen that wants a control to survive the page puts it in the sheet's own
 header, not in `floating`.
+
+## Finding and following people (2026-10-02, benchmarked after a bug report)
+
+Hidde: "M'n vriendin zegt dat de hele add friends gedeelte vol met bugs zit."
+Read before fixing, so the fix lands on the convention rather than on a guess.
+
+**Strava** (support.strava.com, "Following Athletes on Strava", fetched
+2026-10-02): the followers and following lists open from the counts on your own
+profile ("tap on your following count on the Strava mobile app"); the button on
+a person reads Follow and, once followed, "Following", which toggles back;
+tapping a name opens that person's profile, and unfollowing happens either from
+the profile or from your own following list. **Polarsteps** (polarsteps.com
+profile, read 2026-09-02): the same shape, "Volgers / Volgend" counts on the
+profile open the lists, "Volg" becomes "Volgend", a row opens the person.
+**Instagram** adds "Follow back" on a follower you do not follow yet.
+
+**What ours did wrong, found by reading People.swift:** the set of people you
+follow was never loaded, so every row said "Follow" on every open, in search,
+in Followers and in your own Following list, and a tap there UNFOLLOWED the
+person while the button turned to "Following". Signed out, Follow did nothing
+and search said "Nobody by that name yet". You could follow yourself. A refused
+write left the button in the wrong state.
+
+**What ours does now:** the following set loads when the sheet opens and after
+every change; Follow, Following and (in the Followers list) Follow back are the
+three states; you are not in your own search results; signed out, Follow and
+search open the sign-in sheet; a write the account refuses puts the button
+back. **Where we still differ, and it is a gap rather than a choice:** a row
+does not open the person's profile, because another person's trees are their
+own and not public here, so there is nothing to show behind the name yet.

@@ -170,18 +170,25 @@ public final class Profiles {
         return ok
     }
 
-    public func follow(_ other: String, me userId: String, token: String) async {
+    /// True when the account accepted it. A refusal (offline, a revoked
+    /// token, following yourself) used to be swallowed here and the button
+    /// in People stayed on the state the finger asked for (2026-10-02).
+    @discardableResult
+    public func follow(_ other: String, me userId: String, token: String) async -> Bool {
         struct Row: Encodable { let follower: String; let followee: String }
-        _ = try? await send(request("follows", "POST", token: token,
-                                    body: try? JSONEncoder().encode([Row(follower: userId,
-                                                                         followee: other)])))
+        let ok = (try? await send(request("follows", "POST", token: token,
+                                          body: try? JSONEncoder().encode([Row(follower: userId,
+                                                                               followee: other)])))) != nil
         await load(userId: userId, token: token)
+        return ok
     }
 
-    public func unfollow(_ other: String, me userId: String, token: String) async {
-        _ = try? await send(request("follows?follower=eq.\(userId)&followee=eq.\(other)",
-                                    "DELETE", token: token))
+    @discardableResult
+    public func unfollow(_ other: String, me userId: String, token: String) async -> Bool {
+        let ok = (try? await send(request("follows?follower=eq.\(userId)&followee=eq.\(other)",
+                                          "DELETE", token: token))) != nil
         await load(userId: userId, token: token)
+        return ok
     }
 
     /// WHO FOLLOWS YOU, and who you follow (Hidde, 2026-09-04: "ik zie ook dat

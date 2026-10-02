@@ -41,6 +41,9 @@ struct PeopleView: View {
     @State private var acting: Profiles.Profile?
     @State private var reporting: Profiles.Profile?
     @State private var reported = false
+    /// Signed out, Follow and search ask for an account instead of doing
+    /// nothing (2026-10-02, the same gate the heart and the tick carry).
+    @State private var signingIn = false
 
     /// Blocked people go to the BOTTOM rather than out of the list.
     ///
@@ -56,8 +59,29 @@ struct PeopleView: View {
     /// would be. They are still gone from everywhere else, which is what a
     /// block is for.
     private var visible: [Profiles.Profile] {
-        results.filter { !moderation.hides($0.user_id) }
-            + results.filter { moderation.hides($0.user_id) }
+        // Never yourself: following yourself is refused by the table and the
+        // row used to show "Following" anyway (2026-10-02).
+        let me = account.session?.userId
+        let others = results.filter { $0.user_id != me }
+        return others.filter { !moderation.hides($0.user_id) }
+            + others.filter { moderation.hides($0.user_id) }
+    }
+
+    /// THREE STATES, as Strava and Instagram label them (CONVENTIONS.md
+    /// 2026-10-02): Following when you do, Follow back on a follower you do
+    /// not follow yet, Follow otherwise. The set behind it is LOADED when the
+    /// sheet opens and after every change; until 2026-10-02 it started empty,
+    /// so every row said Follow on every open and a tap in your own Following
+    /// list unfollowed the person while the button turned to Following.
+    private func followLabel(_ p: Profiles.Profile) -> String {
+        if followingIds.contains(p.user_id) { return "Following" }
+        return source == .followers ? "Follow back" : "Follow"
+    }
+
+    private func loadFollowing() async {
+        guard let uid = account.session?.userId, !DemoPeople.on else { return }
+        let ids = await profiles.followingIds(of: uid, token: await account.freshToken())
+        followingIds = Set(ids)
     }
 
     /// Said plainly per list, including the case that is true today: somebody
@@ -65,8 +89,9 @@ struct PeopleView: View {
     /// nothing to show but the fact that they are there.
     private var emptyLine: String {
         switch source {
-        case .search: query.isEmpty ? "Search for somebody by the name they chose."
-                                    : "Nobody by that name yet."
+        case .search: account.session == nil ? "Sign in to find people."
+                      : query.isEmpty ? "Search for somebody by the name they chose."
+                                      : "Nobody by that name yet."
         case .followers: "Nobody follows you yet."
         case .following: "You do not follow anybody yet."
         }
@@ -155,7 +180,7 @@ struct PeopleView: View {
                             .contentShape(.rect)
                             .accessibilityIdentifier("person-unblock")
                         } else {
-                            Button(followingIds.contains(p.user_id) ? "Following" : "Follow") {
+                            Button(followLabel(p)) {
                                 toggle(p)
                             }
                             .font(.subheadline.weight(.semibold))
@@ -163,6 +188,7 @@ struct PeopleView: View {
                             .buttonStyle(.plain)
                             .frame(minWidth: 78, minHeight: 44, alignment: .trailing)
                             .contentShape(.rect)
+                            .accessibilityIdentifier("person-follow")
                         }
 
                         // THE ELLIPSIS, and it is not decoration. From the
@@ -249,6 +275,14 @@ struct PeopleView: View {
                 // control nobody has looked at is exactly what this project
                 // keeps promising not to ship.
                 if DemoPeople.on { results = DemoPeople.all }
+                await loadFollowing()
+            }
+            .onChange(of: account.session?.userId) { _, _ in
+                Task { await loadFollowing() }
+            }
+            .sheet(isPresented: $signingIn) {
+                SignInSheet(reason: .general, localCount: 0)
+                    .environment(account)
             }
             .task(id: source) {
                 guard source != .search, let uid = account.session?.userId else { return }
@@ -277,6 +311,12 @@ struct PeopleView: View {
             }
             .task(id: query) {
                 if DemoPeople.on || source != .search { return }
+                if account.session == nil {
+                    // Nothing to search with; the empty line says why, and a
+                    // Follow tap opens the sign-in sheet.
+                    results = []
+                    return
+                }
                 // A beat before asking, so typing does not fire a request per
                 // letter.
                 searching = true
@@ -304,18 +344,26 @@ struct PeopleView: View {
     }
 
     private func toggle(_ p: Profiles.Profile) {
-        guard let s = account.session else { return }
+        guard let s = account.session else { signingIn = true; return }
         let wasFollowing = followingIds.contains(p.user_id)
         // Move the button first: a follow that waits on a round trip feels
         // broken, and the number beside your name catches up a moment later.
+        // And PUT IT BACK if the account refuses (2026-10-02), the heart's rule.
         if wasFollowing { followingIds.remove(p.user_id) } else { followingIds.insert(p.user_id) }
+        if DemoPeople.on { return }   // the sweep's fixture people: no account behind them
         Task {
-            guard let t = await account.freshToken() else { return }
-            if wasFollowing {
-                await profiles.unfollow(p.user_id, me: s.userId, token: t)
-            } else {
-                await profiles.follow(p.user_id, me: s.userId, token: t)
+            guard let t = await account.freshToken() else {
+                if wasFollowing { followingIds.insert(p.user_id) } else { followingIds.remove(p.user_id) }
+                signingIn = true
+                return
             }
+            let ok = wasFollowing
+                ? await profiles.unfollow(p.user_id, me: s.userId, token: t)
+                : await profiles.follow(p.user_id, me: s.userId, token: t)
+            if !ok {
+                if wasFollowing { followingIds.insert(p.user_id) } else { followingIds.remove(p.user_id) }
+            }
+            await loadFollowing()
         }
     }
 }
