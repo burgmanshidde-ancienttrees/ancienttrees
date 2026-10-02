@@ -13,7 +13,7 @@ they add more. The tag is offered as a question, never applied.
 
 ## 1. Paris
 
-<!-- Hidde's own words, 2026-10-02 ("zoiets?"), rendered. The reader of par_031 and par_033; no name known; address jd84vvjkvb@privaterelay.appleid.com, an Apple relay, so send from the ancienttrees.app sender, never a personal one -->
+<!-- Hidde's own words, 2026-10-02 ("zoiets?"), rendered. The reader of par_031 and par_033; no name known; their address is an Apple relay on the account, so send from the ancienttrees.app sender, never a personal one -->
 
 ```
 Subject: Your Paris trees
@@ -113,5 +113,41 @@ Stiamo iniziando una cosa nuova: per ogni città una persona che tiene d'occhio 
 Le andrebbe? Sulla pagina possiamo scrivere il Suo nome oppure quello del Sistema Museale, come preferisce.
 
 Un saluto cordiale,
+Hidde
+```
+
+## 9. Washington, DC: Jon Pattee, Rock Creek Conservancy, in the thread you already have
+
+<!-- jpattee@rockcreekconservancy.org. He corrected us in August (Montrose Park and Dumbarton Oaks are National Park Service ground, not theirs) and Hidde wrote back as one tree fan to another asking for suggestions for the DC map. Hidde, 2026-10-02: "mail jon en ales maar wie weet". -->
+
+```
+Subject: Re: Rock Creek trees
+
+Hi Jon,
+
+One tree fan to another, a question: each city is getting one person who keeps an eye on its list, adds a photograph now and then, checks the facts and says what is missing. For Washington, you are the first person I thought of, because you were the first to catch us getting something wrong there.
+
+Would you be up for that? Your name would go on the DC page, or the Conservancy's if you would rather. And if there is a tree along Rock Creek that deserves to be on the map and is not, I would still love to hear it.
+
+Thanks either way,
+Hidde
+```
+
+## 10. Prague: Aleš Rudl, Pražské stromy, in the thread you already have
+
+<!-- prazskestromy@seznam.cz. He runs Prague's memorial-trees site, which we cite on eight Prague trees; he wrote back in August with corrections and got a thank-you on 2026-09-24 asking for a missing tree. -->
+
+```
+Subject: Re: Prague's trees
+
+Hi Aleš,
+
+Your corrections are all in, and Prague is one of the few pages where somebody who actually knows the trees has read every line.
+
+We are starting something: for each city, one person who looks after its list, adds photographs, checks the facts and says what is missing, named on the city's page. For Prague that person is obviously you, if you want it. Pražské stromy would be named beside you, with a link.
+
+Would you be up for it? And if a tree you have written about is still missing here, tell me which and it goes up first.
+
+Thanks,
 Hidde
 ```

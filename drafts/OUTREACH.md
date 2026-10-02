@@ -22,6 +22,11 @@ actually clicked) and links to the Links report for a manual read.
 
 | Date | Who | What | State |
 |---|---|---|---|
+| 2026-10-02 | woelfie@gmx.de | Wolfgang Schurmann, Baumkunde.de | ambassador ask | sent | Munsterland; in reply to his Kopfulme in der Beerlage tip. |
+| 2026-10-02 | giulia.torta@unifi.it | Giulia Torta, Orto botanico Firenze | ambassador ask | sent | Florence; her name or the museum's on the page. |
+| 2026-10-02 | jpattee@rockcreekconservancy.org | Jon Pattee, Rock Creek Conservancy | ambassador ask | sent | Washington; one tree fan to another. |
+| 2026-10-02 | prazskestromy@seznam.cz | Ales Rudl, Prazske stromy | ambassador ask | sent | Prague; site named beside him with a link. |
+| 2026-10-02 | (reader account daa8cd52, address not recorded here) | Leon, Treehunter | ambassador ask | sent | Bad Homburg and Friedewald; five metres confirmed. |
 | 2026-09-24 | helund@helund.com | Hans Erik Lund, Dansk Traeregister | reply | sent | Answer to his list of sixty Copenhagen register trees and his photo permission. cc Peter Hoffmann, dtr@dendron.dk. |
 | 2026-09-24 | daniel@tradmastarna.se | Daniel Daggfeldt, arborist Stockholm | reply 2 | sent | Asks whether he used the app in Prague and how it went. |
 | 2026-09-24 | Katherine.Masiulanis@nattrust.com.au (cc trusttrees@) | Katherine Masiulanis, National Trust Victoria | reply | sent | Answers why these trees and public land; asks her one Melbourne tree. |
