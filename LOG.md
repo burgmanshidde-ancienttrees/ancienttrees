@@ -34,6 +34,10 @@ Visits, 7 days: 2,528. Picked the write lane: seven already-written verified tre
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: the sheet transition smoothed, the gear restyles instead of leaving
+
+- Hidde, on his phone: "feels a bit clunky", and "the settings button disappears where at Polarsteps it smoothly turns the button into black". Cause of the clunk: corners, handle swap, solid background, shadow and chrome fades were computed from the height the sheet is ASKED for, which jumps to the stop on release while the frame springs there, so they ran ahead of the sheet. They now follow the drawn frame, read back each frame of the spring (SheetPageProgressKey from the same GeometryReader that already measures the live height), and the handle row has one fixed height. The gear on My trees no longer fades: `sheetPageProgress` travels through the environment to the `floating` slot and the gear turns from the light circle over the map into a grey circle with a black gear, the chevron's grey, in one move. The map tab's search field and chips still leave, since there is no map left for them to control. Photographed at half and at the top; layout gate 0 findings on 74 screens.
+
 ## 2026-10-02 session: five ambassador asks sent in their own threads
 
 - On Hidde's "stuur die 5 uit en mail jon en ales maar": Wolfgang Schurmann (Munsterland), Giulia Torta (Florence), Jon Pattee (Washington), Ales Rudl (Prague) and Leon (Bad Homburg and Friedewald) each got the ambassador ask as a reply in the thread they already had with him, from the Ancient Trees address through outreach_send.py (batch ambassadors-2026-10-02; Leon's from a file outside the repo, his address being a reader's). Drafts in drafts/ambassador-mails.md, mailcheck and pitchcheck clean.
