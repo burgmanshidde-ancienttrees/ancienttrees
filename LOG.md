@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 (third continuation): nothing published
+
+Pulled, no claims standing, `leads.py --ready` 0. The US demand cities (New York, Oahu, Houston, LA, Austin) have no leads or register supply on hand and a verify pass from zero is off for them. Nothing dispatched, nothing claimed.
+
 ## 2026-10-02 (second continuation): nothing published, Houston released
 
 Pulled, no claims, `leads.py --ready` 0. Claimed Houston to read its brief: a deepen pass whose register candidates are all mined or blocked, and its three written trees (hou_009 to 011) still fail photo-or-pin. Released it with --force so the claim does not lock the city. Did not dispatch a verify pass on a dead-end city; no other US city on the demand list has leads or a register to start from.
