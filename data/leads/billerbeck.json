@@ -1,0 +1,27 @@
+{
+  "city": "Billerbeck",
+  "country": "Germany",
+  "leads": [
+    {
+      "name": "Kopfulme in der Beerlage",
+      "species": "European White Elm (Ulmus laevis)",
+      "note": "A pollarded white elm, completely hollow with an opening you can stand in, 5.34 m round at 1.30 m and 12.4 m tall, planted around 1650 (plus or minus 70 years), Naturdenkmal since 2014, publicly accessible. Baumkunde register 3375. Named on 2026-10-02 by Wolfgang Schurmann, moderator of that register, as his favourite tree, in reply to Hidde's mail; he visits it often. Beerlage is a Bauerschaft of Billerbeck, Kreis Coesfeld, about 5 km from Billerbeck station (RB63 from Munster, 30 min), so not inside Munster's day-trip boundary. Billerbeck has no page; the four-tree floor is paused for new places (2026-10-01), so this waits for three more Billerbeck or Coesfeld trees, or for the pause to lift.",
+      "sources": [
+        "https://www.baumkunde.de/baumregister/3375-kopfulme_beerlage/",
+        "https://www.baumkunde.de/forum/viewtopic.php?f=19&t=17216",
+        "http://www.na-tour-denkmal.de/baumveteranen/114-maerz-2011-die-kopfulme-in-der-beerlage"
+      ],
+      "girth_cm": 534,
+      "height_m": 12.4,
+      "age_estimate": "about 375 years",
+      "age_basis": "source",
+      "location": {
+        "neighbourhood": "Beerlage, Billerbeck",
+        "precision": "approximate, from the register page"
+      },
+      "added": "2026-10-02",
+      "status": "lead"
+    }
+  ],
+  "blocked": []
+}

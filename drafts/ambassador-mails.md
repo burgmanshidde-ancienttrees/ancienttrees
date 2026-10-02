@@ -64,3 +64,37 @@ Thanks for writing back. Which place would you look after? Your own town is the 
 ```
 
 Then `python3 scripts/ambassador.py --grant <user_id> <place_slug>` once they name one we publish, or a lead for the place if we do not.
+
+## 6. Bad Homburg and Friedewald: Leon, in the thread you already have
+
+<!-- Hidde, 2026-10-02: "Zullen we hun ook beide vragen als ambassadeur? Maar dan met een mail die klopt in het gesprek wat we al hebben met ze?" His account is daa8cd52 (Treehunter); the address is on his account, never written here. English, as the earlier replies to him were. -->
+
+```
+Subject: Re: Schöne Eiche
+
+Hi Leon,
+
+Your five metres are on the page now, next to the 2010 figure from the Baumkunde thread, with the year on each.
+
+Something we are starting: one person per place who looks after its list, adds photographs, checks the facts and says what is missing. You have been doing exactly that for Bad Homburg and Friedewald since the day you found us. Would you want to be named as their ambassador on the pages? If you would rather not be named, it shows inside the app only.
+
+Thanks,
+Hidde
+```
+
+## 7. Münsterland: Wolfgang Schürmann, in the thread you already have
+
+<!-- woelfie@gmx.de, Hidde's 2026-09-24 mail asked for his Münster favourite; he answered 2026-10-02 with the Kopfulme in der Beerlage. German, as the thread is. Not pre-granted: the mail asks, and the place is his to name. -->
+
+```
+Subject: Re: Baumkunde und Ancient Trees
+
+Hallo Wolfgang,
+
+Ihre Kopfulme in der Beerlage kommt auf die Karte, die hatten wir noch nicht: hohl, begehbar, über fünf Meter Umfang und seit 2014 Naturdenkmal, genau die Sorte Baum, für die Leute einen Umweg machen.
+
+Wir fangen mit etwas Neuem an: pro Ort eine Person, die die Liste im Blick hat, Fotos beisteuert, Fakten prüft und sagt, was fehlt, mit Namen auf der Seite. Für das Münsterland fällt mir niemand ein, der die Bäume besser kennt. Hätten Sie Lust?
+
+Baumstarke Grüße zurück,
+Hidde
+```
