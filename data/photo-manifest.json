@@ -235,6 +235,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ef/Treaty_oak_austin_2015.jpg": {
+   "base": "aus_001-the-treaty-oak",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/d/d6/Old_Baldy_McKinney_Falls_State_Park_Texas_2022.jpg": {
    "base": "aus_004-old-baldy",
    "widths": [
@@ -1186,6 +1192,48 @@
   },
   "https://www.dendron.dk/dtr/photos/Ungarsk_eg_Bispebjerg_Kirkeg%E5rd_HEL_MG_5064.JPG": {
    "base": "cop_042-the-hungarian-oak-of-bispebjerg-kirkegard",
+   "widths": [
+    500
+   ]
+  },
+  "http://www.dendron.dk/dtr/photos/Eg_S%C3%B8ndermarken_HEL_MG_2627.JPG": {
+   "base": "cop_043-the-s-ndermarken-oak",
+   "widths": [
+    500
+   ]
+  },
+  "http://www.dendron.dk/dtr/photos/2023/Eg_Hegelsvej_HEL_20130619_IMAG0405.jpg": {
+   "base": "cop_044-the-oak-of-hegelsvej",
+   "widths": [
+    500
+   ]
+  },
+  "http://www.dendron.dk/dtr/photos/2019/Eg_Tavsen_HEL_MG_1842.JPG": {
+   "base": "cop_045-the-oak-of-hans-tavsens-park",
+   "widths": [
+    500
+   ]
+  },
+  "http://www.dendron.dk/dtr/photos/2023/Platan_Gr%C3%A5b%C3%B8dre_HEL_20131218_MG_3497.JPG": {
+   "base": "cop_046-the-plane-tree-of-gr-br-dre-torv",
+   "widths": [
+    500
+   ]
+  },
+  "http://www.dendron.dk/dtr/photos/2023/Orient_F%C3%A6lled_HEL_20130830_MG_2933.JPG": {
+   "base": "cop_047-the-oriental-beech-of-f-lledparken",
+   "widths": [
+    500
+   ]
+  },
+  "http://www.dendron.dk/dtr/photos/2019/R%C3%B8deg_Vestre_HEL_MG_1740.jpg": {
+   "base": "cop_048-the-red-oak-of-vestre-kirkeg-rd",
+   "widths": [
+    500
+   ]
+  },
+  "http://www.dendron.dk/dtr/photos/2019/H%C3%A6ngeb%C3%B8g_Garnison_HEL_MG_6362.JPG": {
+   "base": "cop_049-the-weeping-beech-of-garnisons-kirkeg-rd",
    "widths": [
     500
    ]
@@ -3093,6 +3141,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bc/Naturdenkmal_Esche_Bleibtreuplatz_M%C3%BCnchen.jpg": {
+   "base": "muc_043-the-ash-of-bleibtreuplatz",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/2/2d/Muxika_San_Roman_Besangiz21.jpg": {
    "base": "urk_001-urkietako-artea-encina-de-urkieta",
    "widths": [
@@ -3311,6 +3365,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/c/cc/Banyan_Tree%2C_%E2%80%98Iolani_Palace%2C_King_Street%2C_Honolulu%2C_HI.jpg": {
    "base": "hnl_012-the-iolani-palace-banyan",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/340904696/medium.jpg": {
+   "base": "hnl_015-the-zoo-gate-banyans",
    "widths": [
     500
    ]
@@ -4466,6 +4526,18 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4e/%E9%AB%98%E5%8D%83%E7%A9%82%E7%A5%9E%E7%A4%BE%E3%81%AE%E5%A4%A7%E6%9D%89_-_panoramio.jpg": {
+   "base": "tkc_001-chichibu-sugi-the-cedar-of-takachiho-shrine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f9/%E5%A4%A9%E5%B2%A9%E6%88%B8%E7%A5%9E%E7%A4%BE%E3%81%AE%E6%8B%9B%E9%9C%8A%E3%81%AE%E6%9C%A8_-_panoramio.jpg": {
+   "base": "tkc_003-the-ogatama-of-amano-iwato-shrine",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/d/dd/Sugimori_Jinja_no_Ohatsuki_Icho_West_side_tree_A.jpg": {
    "base": "tka_001-sugimori-jinja-no-ohatsuki-icho",
    "widths": [
@@ -5024,6 +5096,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/8/88/Dab_szypulkowy_pomnik_przyrody_Morskie_Oko_Warszawa_palac_Szustra.jpg": {
+   "base": "war_009-the-szustra-oaks",
+   "widths": [
+    500
+   ]
+  },
   "https://inaturalist-open-data.s3.amazonaws.com/photos/577454658/medium.jpg": {
    "base": "war_011-the-ginkgo-of-the-botanical-garden",
    "widths": [
@@ -5032,6 +5110,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/7/77/Pomnikowa_grusza_przy_pu%C5%82awskiej.jpg": {
    "base": "war_014-the-pu-awska-street-pear",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/657844801/medium.jpg": {
+   "base": "war_016-the-lime-of-park-morskie-oko",
    "widths": [
     500
    ]
@@ -5078,6 +5162,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/7/70/Kasztanowiec_Wiktorska.jpg": {
+   "base": "war_032-the-chestnut-of-wiktorska",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/6/65/Wawa_pomnik_przyr_43_2.JPG": {
    "base": "war_037-the-copper-beech-of-langiewicza",
    "widths": [
@@ -5098,6 +5188,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/a/ac/Etagelinde_met_oorlogmonument_-_390541_-_onroerenderfgoed.jpg": {
    "base": "wtl_001-the-etagelinde-of-westerlo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/47/St.-Marinus-Linde_Wilparting_Irschenberg-1.jpg": {
+   "base": "wpg_001-st-marinus-linde-wilparting",
    "widths": [
     500
    ]
