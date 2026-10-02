@@ -67,7 +67,7 @@ try:
 except SystemExit:
     WALKS = {}
 import leads as L                  # noqa: E402
-from passcheck import US_ONLY, FOCUS_COUNTRIES      # noqa: E402
+from passcheck import US_ONLY, FOCUS_COUNTRIES, SUPPLY_FOCUS      # noqa: E402
 
 
 
@@ -605,6 +605,31 @@ def us_demand_first(doc, floor=30):
     return rows
 
 
+def supply_of(c):
+    """Rows a pass can start from: register entries in reach, Wikidata
+    candidates, READY leads. Zero means a verify pass would be from-zero
+    research, which rule 1(d) forbids and which the US passes of 2026-10-02
+    proved anyway: three passes, ~150k tokens each, zero shippable trees."""
+    return (c.get("register") or 0) + (c.get("wikidata") or 0) + (c.get("ready") or 0)
+
+
+def visitors_first(doc):
+    """Cities in the countries the visitors come from (passcheck.SUPPLY_FOCUS),
+    below target and holding supply, most supply times demand first.
+
+    Hidde, 2026-10-03: "NL is over represented we mainly have visitors for uk
+    us and Germany so focus there." The US block above this already exists;
+    this adds the UK and Germany beside it and, unlike the stage lists below,
+    prints only what a run can actually work tonight.
+    """
+    rows = [c for c in doc["cities"]
+            if c.get("country") in SUPPLY_FOCUS
+            and c.get("trees", 0) < max(c.get("target") or 10, 10)
+            and supply_of(c) > 0]
+    rows.sort(key=lambda c: -(supply_of(c) * (1 + (c.get("impressions_10d") or 0))))
+    return rows
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true",
@@ -658,7 +683,20 @@ def main():
             for c in (us if US_ONLY else us[:12]):
                 print("  %-21s %5d %7d %17d %6d" % (
                     c["city"][:21], c.get("trees", 0), max(c.get("target") or 15, 15),
-                    c.get("impressions_10d") or 0, c.get("ready", 0)))
+                    c.get("impressions_10d") or 0, supply_of(c)))
+            print("  A row with 0 supply is a wall, not work: three US verify passes on")
+            print("  2026-10-02 (~150k tokens each) shipped nothing. Pick a row with supply.\n")
+        vis = visitors_first(doc)
+        if vis:
+            print("WHERE THE VISITORS ARE (Hidde, 2026-10-03): the US, the UK and Germany.")
+            print("Cities there below target that HOLD SUPPLY, so a pass can start tonight.")
+            print("The Netherlands is over-represented (most trees of any country); it is")
+            print("not refused, it is not promoted.\n")
+            print("  city                  country          trees  target  impr10d  supply")
+            for c in vis[:15]:
+                print("  %-21s %-16s %5d %7d %8d %7d" % (
+                    c["city"][:21], c.get("country", "")[:16], c.get("trees", 0),
+                    max(c.get("target") or 10, 10), c.get("impressions_10d") or 0, supply_of(c)))
             print()
         if US_ONLY:
             # Hidde, 2026-10-01: all focus on the US. passcheck --claim refuses

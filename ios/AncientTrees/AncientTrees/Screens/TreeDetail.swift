@@ -243,10 +243,19 @@ struct TreeDetail: View {
                         // "Photo:" in front, as the website writes it: a bare
                         // name at the foot of a page reads as a signature, not
                         // a credit (Nadia, 2026-09-26: "shouldn't it say photo by").
-                        Text("Photo: \(c)")
-                            .font(.system(size: 10))
-                            .foregroundStyle(Brand.inkSoft.opacity(0.45))
-                            .lineLimit(1)
+                        if let raw = p.creditURL, let u = URL(string: raw) {
+                            // The name links to the photographer's site when
+                            // the feed says so (credit_url), as the website does.
+                            Link("Photo: \(c)", destination: u)
+                                .font(.system(size: 10))
+                                .foregroundStyle(Brand.inkSoft.opacity(0.45))
+                                .lineLimit(1)
+                        } else {
+                            Text("Photo: \(c)")
+                                .font(.system(size: 10))
+                                .foregroundStyle(Brand.inkSoft.opacity(0.45))
+                                .lineLimit(1)
+                        }
                     }
                     Color.clear.frame(height: 90)   // room for the pinned bar
                     }

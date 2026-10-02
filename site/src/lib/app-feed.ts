@@ -113,7 +113,7 @@ export interface FeedPhoto {
   url: string; license: string | null; attribution: string | null;
   width: number | null; height: number | null;
   thumb: string; hero: string; credit_required: boolean;
-  attribution_short: string | null; credit_line: string | null;
+  attribution_short: string | null; credit_line: string | null; credit_url: string | null;
 }
 
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
@@ -216,6 +216,7 @@ function resolvePhoto(p: ReturnType<typeof usablePhoto>): FeedPhoto | null {
       // rights reserved" under a photograph he gave us. An answer in
       // the feed, not a rule written twice.
       credit_line: creditText(p.attribution, p.license),
+      credit_url: p.attribution_url ?? null,
       }
     : null;
 }

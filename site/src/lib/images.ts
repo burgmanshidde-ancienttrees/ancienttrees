@@ -348,6 +348,19 @@ function isAGift(lowercaseLicence: string): boolean {
  *
  * It returns the credit without any "Photo:" prefix, because that word is the
  * one part that differs per language. */
+/** Split a finished credit line ("Photo: Ingar Sorensen (CC BY 4.0)") around
+ *  the printed name, so the name alone can be a link to the photographer's
+ *  site (attribution_url on the photo record). Convention: Unsplash credits
+ *  link the photographer, never the whole line. Falls back to the whole line
+ *  as the link text when the name is not found verbatim. */
+export function creditLinkParts(line: string, attribution?: string | null, licenseStr?: string | null):
+  { before: string; name: string; after: string } {
+  const name = creditName(attribution) ?? "";
+  const i = name ? line.indexOf(name) : -1;
+  if (i < 0) return { before: "", name: line, after: "" };
+  return { before: line.slice(0, i), name, after: line.slice(i + name.length) };
+}
+
 export function creditText(attribution?: string | null, licenseStr?: string | null): string | null {
   const name = creditName(attribution);
   if (!name) return null;
