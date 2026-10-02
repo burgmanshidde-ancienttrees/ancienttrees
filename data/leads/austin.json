@@ -76,6 +76,36 @@
    ],
    "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/kyle-auction-oak/",
    "status": "lead"
+  },
+  {
+   "name": "The Learning Tree (2007 Austin Tree of the Year, Hampton Branch library)",
+   "species": "Escarpment Live Oak (Quercus fusiformis)",
+   "reason": "2026-10-02 verify pass: named by the city's Tree of the Year list (Urban Forestry, via Austin Chronicle 2020) as a live oak behind the Hampton Branch of the Oak Hill Public Library, about a quarter mile along a walking trail, with an on-site marker. Public library nature trail, so access is plausible. NOT SHIPPED: no coordinate found (Nominatim no hit, no Commons or iNaturalist file of it, Wikidata has no entry), so neither a photograph nor a tree-level pin is in reach. Needs a reader photo with GPS or the marker text.",
+   "sources": [
+    "https://www.austinchronicle.com/arts/kevin-curtin-hung-out-with-all-of-austins-tree-of-the-year-winners-12004783/"
+   ],
+   "status": "lead",
+   "location_precision": "approximate"
+  },
+  {
+   "name": "Zilker Park pecan (2011 Austin Tree of the Year)",
+   "species": "Pecan (Carya illinoinensis)",
+   "reason": "2026-10-02 verify pass: Tree of the Year 2011, in Zilker Park (public). Chronicle writer calls it a communal pecan. NOT SHIPPED: no coordinate; the only Commons file (Pecan tree canopy zilker.jpg, CC BY 4.0) is a canopy shot not tied to this tree.",
+   "sources": [
+    "https://www.austinchronicle.com/arts/kevin-curtin-hung-out-with-all-of-austins-tree-of-the-year-winners-12004783/"
+   ],
+   "status": "lead",
+   "location_precision": "approximate"
+  },
+  {
+   "name": "Central Park live oak, 3900 Guadalupe (2008 Austin Tree of the Year, Large)",
+   "species": "Escarpment Live Oak (Quercus fusiformis)",
+   "reason": "2026-10-02 verify pass: named 2008 winner, 150 ft crown per the Chronicle. NOT SHIPPED: no coordinate and the 3900 Guadalupe site is a mixed-use development, so public access is unconfirmed. Texas Persimmons at Mayfield Park and Pease Park (2009/2008 small-tree winners) also named, no coordinates.",
+   "sources": [
+    "https://www.austinchronicle.com/arts/kevin-curtin-hung-out-with-all-of-austins-tree-of-the-year-winners-12004783/"
+   ],
+   "status": "lead",
+   "location_precision": "approximate"
   }
  ],
  "blocked": [

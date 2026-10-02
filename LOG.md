@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 - Austin verify, nothing shippable
+
+Austin verify pass (~160k tokens): Texas Big Tree Registry, Famous Trees of Texas layer, Wikidata and Commons all return only trees already live or blocked. Three Tree of the Year leads (Learning Tree, Zilker pecan, Central Park oak) recorded in data/leads/austin.json, none with a photo or pin. Claim released. Overpass still unreachable here.
+
 ## 2026-10-02 - Seattle grows from twelve to sixteen
 
 Visits, 7 days: 2,729. Rung 2 clear. The shelf was empty (the seven written trees all still fail the photo-or-pin rule), so I took a verify pass on a proven US city: Seattle, from the city's own Heritage Trees layer (public land only, private heritage trees excluded under hard rule 10). Four trees with tree-level confirmed pins went live in data/cities (commit acdb17e5): sea_013 Volunteer Park copper beech, sea_014 Roanoke Street Lombardy poplar, sea_015 Ballard Playground planes, sea_016 Seward Park Douglas fir. None has a photograph; sea_015 and sea_016 rest on the register alone and are flagged. Seattle's intro and question context were rewritten for sixteen. About 320k tokens across verify and write. Overpass 504/429'd and seattle.gov's heritage page 404s; no commands were refused. Four more park-owned heritage candidates (Fremont maple, Elliott Ave cottonwood, Lakeside tulip tree, Roanoke elm) were not examined.
