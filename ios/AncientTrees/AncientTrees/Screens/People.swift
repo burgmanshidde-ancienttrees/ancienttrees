@@ -180,14 +180,24 @@ struct PeopleView: View {
                             .contentShape(.rect)
                             .accessibilityIdentifier("person-unblock")
                         } else {
-                            Button(followLabel(p)) {
-                                toggle(p)
+                            // A PILL, as Strava, Polarsteps and Instagram draw it
+                            // (CONVENTIONS.md 2026-10-02): filled in the brand
+                            // colour while it says Follow, outlined once you do,
+                            // so the state reads at a glance down a list. It
+                            // was a bare word in moss, which read as a label.
+                            Button { toggle(p) } label: {
+                                let on = followingIds.contains(p.user_id)
+                                Text(followLabel(p))
+                                    .font(.subheadline.weight(.semibold))
+                                    .foregroundStyle(on ? Brand.ink : .white)
+                                    .padding(.horizontal, 14)
+                                    .frame(minWidth: 96, minHeight: 34)
+                                    .background(on ? Color.clear : Brand.moss, in: .capsule)
+                                    .overlay { if on { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) } }
+                                    .frame(minHeight: 44)
+                                    .contentShape(.rect)
                             }
-                            .font(.subheadline.weight(.semibold))
-                            .foregroundStyle(followingIds.contains(p.user_id) ? Brand.inkSoft : Brand.moss)
                             .buttonStyle(.plain)
-                            .frame(minWidth: 78, minHeight: 44, alignment: .trailing)
-                            .contentShape(.rect)
                             .accessibilityIdentifier("person-follow")
                         }
 

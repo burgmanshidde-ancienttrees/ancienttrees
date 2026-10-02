@@ -2797,6 +2797,12 @@ person while the button turned to "Following". Signed out, Follow did nothing
 and search said "Nobody by that name yet". You could follow yourself. A refused
 write left the button in the wrong state.
 
+**The control itself is a pill in all three references:** filled in the brand
+colour while it says Follow (Strava orange, Polarsteps red, Instagram blue),
+outlined with the word Following once you do, so the state reads down a list
+without reading the word. Ours was a bare word in moss, which read as a label;
+it is the pill now, 34 points tall inside the 44-point tap target.
+
 **What ours does now:** the following set loads when the sheet opens and after
 every change; Follow, Following and (in the Followers list) Follow back are the
 three states; you are not in your own search results; signed out, Follow and
