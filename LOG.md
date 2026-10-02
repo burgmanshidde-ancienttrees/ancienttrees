@@ -10,6 +10,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 - Night run 2026-10-02 01:11 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 3 commit(s), none of them a published tree.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: You've hit your session limit · resets 1:30am (UTC)
+
 ## 2026-10-01 second continuation: nothing new shipped
 
 - Pulled, `leads.py --ready` still 0, Houston claim still standing (release refused: hou_009 to 011 not merged, held on photo-or-pin). Left it to expire on its own.
