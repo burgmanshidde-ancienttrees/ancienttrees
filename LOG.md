@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 (eighth continuation): nothing published, Houston claim released
+
+Houston's three written trees (hou_009 to hou_011) are the reason six continuations shipped nothing: merged, preflight FAILs all three, because each has neither a photograph nor a confirmed pin (the worldwide 2026-10-01 rule), and the city's meta text promises eight. They stay in data/research/houston-verified.json as leads until a photograph or a pin upgrade exists; a photo hunt or a reader sighting is what unblocks them. Claim released with --force. `leads.py --ready` 0, recognise --stuck 0.
+
 ## 2026-10-02 (seventh continuation): nothing published
 
 Pulled, no claims standing, `leads.py --ready` 0, health clear. Claimed Houston to read its brief: register candidates all mined or blocked, and its three written trees (hou_009 to 011) have neither a photograph nor a confirmed pin, so preflight would refuse them. Their pins are address-level (restaurant, cemetery slope, arboretum trail), and upgrading one needs aerial evidence this run could not get. Release refused (trees unmerged) and `--force` would hand them to a night run to rewrite, so the claim is left to expire on its own. Next useful step for Houston: a pin upgrade on one of the three, or a photograph. No commands were refused.
