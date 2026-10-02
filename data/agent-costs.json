@@ -9366,6 +9366,15 @@
    "tokens": 0,
    "trees": 0,
    "note": "session work, no agent: viewing pass approved 3 Commons photographs (bfs_005, bre_011, bud_013); a 4th sighting rejected (acorn on gravel)"
+  },
+  {
+   "target": "Oahu",
+   "kind": "verify",
+   "tokens": 150000,
+   "trees": 0,
+   "note": "register coords rounded to 1.1 km and Commons has no tree-specific photos, so photo-or-pin blocks all; 4 leads added",
+   "wasted": 150000,
+   "brief_wrong": false
   }
  ]
 }
