@@ -26,6 +26,12 @@ Visits, 7 days: 2,528. Picked the write lane: seven already-written verified tre
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: five ambassador asks sent in their own threads
+
+- On Hidde's "stuur die 5 uit en mail jon en ales maar": Wolfgang Schurmann (Munsterland), Giulia Torta (Florence), Jon Pattee (Washington), Ales Rudl (Prague) and Leon (Bad Homburg and Friedewald) each got the ambassador ask as a reply in the thread they already had with him, from the Ancient Trees address through outreach_send.py (batch ambassadors-2026-10-02; Leon's from a file outside the repo, his address being a reader's). Drafts in drafts/ambassador-mails.md, mailcheck and pitchcheck clean.
+- Not sent: the thank-yous to Gemma Boetekees (Leiden, Open Bomen Kaart) and Vera Wesinger (Nationalerbe-Baeume), because both wrote to Hidde directly and their addresses are in no file here; drafts/reply-gemma-boetekees-leiden.md and drafts/reply-vera-wesinger-nationalerbe.md are his to send.
+- A badge follows an answer: nobody was granted. Candidates waved off on his word: Hugo Verissimo, Piet van Dijck, Eduard Groen, Katherine Masiulanis, Ingeborg Schreuder.
+
 ## 2026-10-02 session: release gate for build 22, green on this Mac
 
 - **Hidde: "Is app ready for a rerelease again - should you stress test it?"** App Store Connect says 1.0.2 is on sale and the last build Apple received is 20 (09-28); build 21 archived this morning was never uploaded and is stale against main. So the candidate is build 22 from today's main.
