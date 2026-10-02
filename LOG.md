@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 - tenth continuation, nothing further shipped
+
+Pulled, no claims standing, READY leads 0. Claimed Chicago, found its brief shows no unmined register candidates and an earlier pass this window already re-checked every lead, so released it unworked. The US lane (Chicago, Houston, Austin, San Francisco, New York) is exhausted for tree supply under the photo-or-pin rule; what moves it next is photographs or pin evidence (reader sightings, aerial image reading), not another verify pass.
+
 ## 2026-10-02 - San Francisco verify: two trees, neither can ship
 
 Fourth continuation. READY leads 0. New York re-checked (eleven leads and five blocked already on file, nothing new; claim released). San Francisco verify pass (~155k tokens) read the official Landmark Tree list: 2 trees delivered (Yellow Christmas Tree of Stanyan Street, Canary Palms of Quesada Avenue), both approximate pins and no photograph, so they fail the worldwide photo-or-pin rule; held in data/research/san-francisco-verified.json until a photo or confirmed pin exists. Also 5 new leads and 10 blocked (private backyards, removed trees) in data/leads/san-francisco.json. Not yet worked: the Urban Forestry Council Significant Tree register, Golden Gate Park and Presidio specimens. 0 trees published; claim released.
