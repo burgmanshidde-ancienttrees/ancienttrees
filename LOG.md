@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 (night run): nothing published, seven written trees blocked on photo or pin
+
+Visits, 7 days: 2,528. Picked the write lane: seven already-written verified trees were waiting (Houston hou_009 to hou_011, Fukuoka fuk_017, Takachiho tkc_004 and tkc_005, plus the Bulgarian Tree of the Year pair std_001 and nsb_001). I merged the first six and preflight refused all of them, since each has neither a photograph nor a confirmed pin (the 2026-10-01 rule), so I reverted the merge; nothing changed in data/cities. Fukuoka would also have needed a Japanese overlay for fuk_017. A Commons search found one candidate, the CC BY-SA 4.0 Novo Selo oak (Hristo Hristov), but it is a trunk close-up where the tree cannot be read as a whole, so not approved. The other searches (Studena, Rokusho, Shimono Hachiman, Glenwood, Houston) found nothing usable, and the Bulgarian one hit a 429. These seven stay in data/research until a photograph or a pin upgrade exists. The shelf is still under its floor (0 ready to write); I did not dispatch a verify pass. No commands were refused.
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-09](archive/LOG-2026-09.md)
