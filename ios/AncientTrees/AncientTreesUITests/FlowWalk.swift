@@ -179,6 +179,18 @@ final class FlowWalk: XCTestCase {
             // in the app. Apple's reviewer taps exactly this sequence, so it is
             // the one flow where a dead end would cost a release rather than an
             // afternoon.
+            // FIND PEOPLE, walked since 2026-10-02 after a reader found the
+            // follow flow "vol met bugs": the following set was never loaded,
+            // so every row said Follow and a tap in your own Following list
+            // unfollowed the person. The demo people have no account behind
+            // them, so the tap only has to turn the button and stay on screen.
+            Flow(name: "find-people",
+                 args: ["-tab=2", "-people", "-people-demo"] + signedIn, steps: [
+                Step(name: "follow-the-first") { Self.tap($0, "person-follow") },
+                Step(name: "unfollow-again") { Self.tap($0, "person-follow") },
+                Step(name: "done") { Self.tap($0, "Done") },
+            ]),
+
             Flow(name: "report-and-block",
                  args: ["-tab=2", "-people", "-people-demo"] + signedIn, steps: [
                 Step(name: "open-the-ellipsis") { Self.tap($0, "person-more") },
