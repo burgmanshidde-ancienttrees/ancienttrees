@@ -305,6 +305,57 @@ def check_a_stored_session_is_verified_with_the_server():
     return out[:6]
 
 
+def check_every_site_route_is_claimed_or_excluded():
+    """Every top-level route the website serves is either handed to the app by
+    the association file or excluded from it on purpose.
+
+    Hidde, 2026-10-02: "I have the app but whenever clicking it opens the
+    website but it should prefer app open if there." The association file at
+    site/public/.well-known/apple-app-site-association now carries a catch-all
+    for content pages above a list of exclusions, and Kit/WebLink.swift turns a
+    path into a screen. A NEW page type added to site/src/pages would fall into
+    the catch-all and open the app to nothing, so this check makes the author
+    decide: either WebLink handles it (add it to HANDLED here beside the Swift)
+    or the association file excludes it. Apple takes the first matching entry,
+    so the exclusions must come before the catch-all, which this also checks.
+    Removing this check needs Hidde.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    aasa = root / "site" / "public" / ".well-known" / "apple-app-site-association"
+    pages = root / "site" / "src" / "pages"
+    if not aasa.is_file() or not pages.is_dir():
+        return out
+    comps = json.loads(aasa.read_text(encoding="utf-8"))["applinks"]["details"][0]["components"]
+    excluded = {c["/"] for c in comps if c.get("exclude")}
+    order = [c["/"] for c in comps]
+    if "/*" not in order:
+        return ["apple-app-site-association: no catch-all '/*', so tree and city links open Safari (2026-10-02)"]
+    if any(order.index(e) > order.index("/*") for e in excluded):
+        out.append("apple-app-site-association: an exclusion sits BELOW the catch-all; Apple takes the first match, so it is dead")
+    # What Kit/WebLink.swift resolves (keep in step with its parse()).
+    handled = {"[city]", "[country]", "explore", "species", "collections", "t", "auth", "open",
+               "de", "es", "fr", "it", "nl", "pt", "ja"}
+    for entry in sorted(pages.iterdir()):
+        # An Astro page serves at its stem; an endpoint keeps its own extension
+        # (feed.xml.ts serves /feed.xml), so only the source suffix comes off.
+        name = entry.name
+        for suf in (".astro", ".ts"):
+            if name.endswith(suf):
+                name = name[: -len(suf)]
+                break
+        if name in handled or name == "index" or name.startswith("_"):
+            continue
+        candidates = {"/" + name, "/" + name + "/*", "/" + name + "*"}
+        if name.endswith(".gpx"):
+            candidates.add("/*.gpx")
+        if not (candidates & excluded):
+            out.append(f"site/src/pages/{entry.name}: a route the association file neither hands to the app "
+                       f"(Kit/WebLink.swift) nor excludes; add '/{name}' or '/{name}/*' with exclude true, "
+                       f"or teach WebLink the screen and list it in HANDLED here")
+    return out
+
+
 def check_the_digest_never_shows_bots():
     """The digest counts PEOPLE and never shows a bot.
 
@@ -2431,6 +2482,7 @@ def main():
         check_scripts_are_valid_python,
         check_no_strategy_in_workflows,
         check_the_digest_never_shows_bots,
+        check_every_site_route_is_claimed_or_excluded,
         check_app_downloads_are_their_own_block,
         check_auth_corpus_agreement,
         check_one_city_order,
@@ -2607,6 +2659,7 @@ def main():
 
     failures += check_no_strategy_in_workflows()
     failures += check_the_digest_never_shows_bots()
+    failures += check_every_site_route_is_claimed_or_excluded()
     failures += check_a_stored_session_is_verified_with_the_server()
     failures += check_run_prompt_forbids_compound_commands()
     failures += check_app_downloads_are_their_own_block()

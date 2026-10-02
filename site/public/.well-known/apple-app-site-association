@@ -17,6 +17,195 @@
           {
             "/": "/open",
             "comment": "continue in the app (2026-09-17). The sheet's loud button on a phone points here; iOS hands the URL to the app when it is installed, and when it is not, the page itself forwards to the App Store. ?tree= and ?city= carry where the reader was standing, so the app can land on the same tree rather than on whatever tab it last had open."
+          },
+          {
+            "/": "/",
+            "exclude": true,
+            "comment": "STAYS IN SAFARI (2026-10-02). Hidde: 'whenever clicking it opens the website but it should prefer app open if there'. From today every CONTENT page below is handed to the app when it is installed; these paths are the ones the app has no screen for (the indexes, the account and legal pages, the feeds and assets, the state pages), so they open in the browser as before. Order matters: Apple takes the first matching entry, so the exclusions sit above the catch-all. scripts/qa.py refuses a route on the site that appears in neither list."
+          },
+          {
+            "/": "/cities",
+            "exclude": true
+          },
+          {
+            "/": "/collections",
+            "exclude": true
+          },
+          {
+            "/": "/countries",
+            "exclude": true
+          },
+          {
+            "/": "/species",
+            "exclude": true
+          },
+          {
+            "/": "/parks",
+            "exclude": true
+          },
+          {
+            "/": "/parks/*",
+            "exclude": true
+          },
+          {
+            "/": "/in-season",
+            "exclude": true
+          },
+          {
+            "/": "/about",
+            "exclude": true
+          },
+          {
+            "/": "/app",
+            "exclude": true
+          },
+          {
+            "/": "/account",
+            "exclude": true
+          },
+          {
+            "/": "/account/*",
+            "exclude": true
+          },
+          {
+            "/": "/contribute",
+            "exclude": true
+          },
+          {
+            "/": "/press",
+            "exclude": true
+          },
+          {
+            "/": "/privacy",
+            "exclude": true
+          },
+          {
+            "/": "/terms",
+            "exclude": true
+          },
+          {
+            "/": "/support",
+            "exclude": true
+          },
+          {
+            "/": "/sponsor",
+            "exclude": true
+          },
+          {
+            "/": "/sources",
+            "exclude": true
+          },
+          {
+            "/": "/saved",
+            "exclude": true
+          },
+          {
+            "/": "/api/*",
+            "exclude": true
+          },
+          {
+            "/": "/photos/*",
+            "exclude": true
+          },
+          {
+            "/": "/assets/*",
+            "exclude": true
+          },
+          {
+            "/": "/_astro/*",
+            "exclude": true
+          },
+          {
+            "/": "/united-states/*",
+            "exclude": true
+          },
+          {
+            "/": "/sitemap*",
+            "exclude": true
+          },
+          {
+            "/": "/robots.txt",
+            "exclude": true
+          },
+          {
+            "/": "/feed.xml",
+            "exclude": true
+          },
+          {
+            "/": "/search-index.json",
+            "exclude": true
+          },
+          {
+            "/": "/build.txt",
+            "exclude": true
+          },
+          {
+            "/": "/*.gpx",
+            "exclude": true
+          },
+          {
+            "/": "/404",
+            "exclude": true
+          },
+          {
+            "/": "/de",
+            "exclude": true
+          },
+          {
+            "/": "/de/cities",
+            "exclude": true
+          },
+          {
+            "/": "/es",
+            "exclude": true
+          },
+          {
+            "/": "/es/cities",
+            "exclude": true
+          },
+          {
+            "/": "/fr",
+            "exclude": true
+          },
+          {
+            "/": "/fr/cities",
+            "exclude": true
+          },
+          {
+            "/": "/it",
+            "exclude": true
+          },
+          {
+            "/": "/it/cities",
+            "exclude": true
+          },
+          {
+            "/": "/nl",
+            "exclude": true
+          },
+          {
+            "/": "/nl/cities",
+            "exclude": true
+          },
+          {
+            "/": "/pt",
+            "exclude": true
+          },
+          {
+            "/": "/pt/cities",
+            "exclude": true
+          },
+          {
+            "/": "/ja",
+            "exclude": true
+          },
+          {
+            "/": "/ja/cities",
+            "exclude": true
+          },
+          {
+            "/": "/*",
+            "comment": "Every content page: /<city>, /<city>/<tree>, /<city>/<question page>, /<country>, /species/<slug>, /collections/<slug>, /explore, and the same under the seven language prefixes. Kit/WebLink.swift turns the path into a screen; a path it cannot place opens the app and goes nowhere."
           }
         ]
       }
