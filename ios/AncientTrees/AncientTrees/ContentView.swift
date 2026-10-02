@@ -168,17 +168,14 @@ struct ContentView: View {
         }
     }
 
-    /// A tapped Universal Link, turned into a Route. Only /t is wired (see the
-    /// .onOpenURL comment above): anything else returns nil and the app opens
-    /// without navigating, which is honest given nothing else parses a URL
-    /// back into a screen yet.
-    static func route(for url: URL) -> Route? {
-        guard let comps = URLComponents(url: url, resolvingAgainstBaseURL: false),
-              comps.path == "/t",
-              let idStr = comps.queryItems?.first(where: { $0.name == "id" })?.value,
-              let id = UUID(uuidString: idStr)
-        else { return nil }
-        return .shared(id)
+    /// A tapped Universal Link, turned into a Route. Every content page of the
+    /// website resolves here since 2026-10-02 (Hidde: "it should prefer app
+    /// open if there"); the parsing lives in Kit/WebLink.swift with its tests.
+    /// Without a catalogue only /t resolves, which is what this did before.
+    static func route(for url: URL, catalogue: Catalogue? = nil) -> Route? {
+        guard let comps = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return nil }
+        if case .route(let r) = WebLink.parse(comps, lookup: WebLink.Lookup(catalogue: catalogue)) { return r }
+        return nil
     }
 
     /// Every incoming universal link, handled OFF the view body.
@@ -213,8 +210,15 @@ struct ContentView: View {
             navigator.push = Self.continued(comps)
             return
         }
-        guard let route = Self.route(for: url) else { return }
-        navigator.push = route
+        // Everything else the association file hands us: a tree, a city, a
+        // country, a species, a collection, the map. An unknown path opens the
+        // app and goes nowhere, which the association file's exclusions make
+        // rare, and qa.py's route check keeps rare.
+        switch WebLink.parse(comps, lookup: WebLink.Lookup(catalogue: store.catalogue)) {
+        case .route(let route): navigator.push = route
+        case .map: tab = 0
+        case .none: break
+        }
     }
 
     /// Where /open asks the app to land, or nil to just open.

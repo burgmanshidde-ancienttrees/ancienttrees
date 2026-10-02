@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: a link to a tree opens the app
+
+- **Hidde: "whenever clicking it opens the website but it should prefer app open if there."** The association file claimed only /t, /auth and /open, so every tree and city link went to Safari by design. It now hands every content page to the app (catch-all under a list of exclusions: indexes, account, legal, feeds, assets, state pages), and Kit/WebLink.swift turns a path into a screen: tree, city, question page to its city, country, species, collection, explore to the map, all seven language prefixes. Pure parser with WebLinkTests. qa.py refuses a new site route that is neither claimed nor excluded. Convention recorded in CONVENTIONS.md. Phones pick the new file up from Apple's CDN within a day, or on a fresh install.
+
 ## 2026-10-02 session: the website believed the browser about who was signed in
 
 - **Hidde: "I can still do thumbs up save and collect tree without being logged in ... close this gap forever! No local storage!"** Reproduced: with a clean browser every control is gated, but a session object in localStorage was trusted on its own expiry, so a stale or fake token painted the site signed in, lit the heart on tap, and the server's refusal was swallowed.

@@ -2718,3 +2718,28 @@ INSIDE the app on their own trees and account today, and appears on the public
 site only if the person asks for it, which is the question the mail ends with.
 (3) The tag is a column on an account, which is personal data under the
 accounts rule (2026-08-14) and needs Hidde's explicit yes before it is built.
+
+## A link to one of our pages opens the app when it is installed (2026-10-02)
+
+Hidde: "I have the app but whenever clicking it opens the website but it should
+prefer app open if there."
+
+**AllTrails, Google Maps, komoot, Strava** all do the same thing with their
+links: a trail, place, route or activity URL shared from anywhere opens the
+app when it is installed and the web page when it is not, and the URL is the
+same in both cases. This is Apple's Universal Links: the site serves
+`/.well-known/apple-app-site-association` naming the app and the paths, the
+app carries the `applinks:` associated-domains entitlement, and `onOpenURL`
+turns the path into a screen. iOS fetches the file from Apple's CDN when the
+app is installed or updated, so a change to the file reaches phones within a
+day and immediately on a fresh install.
+
+**What we had**: the file claimed only `/t` (a shared sighting), `/auth` (the
+sign-in landing) and `/open` (the "continue in the app" button). Every tree and
+city link went to Safari by design. **What we do now**: a catch-all for content
+pages under a list of exclusions (indexes, account, legal, feeds, assets), and
+`Kit/WebLink.swift` resolves `/<city>`, `/<city>/<tree>`, the question pages,
+`/<country>`, `/species/<slug>`, `/collections/<slug>`, `/explore` and the same
+under the seven language prefixes. A path the app cannot place opens the app
+and goes nowhere; `check_every_site_route_is_claimed_or_excluded()` in qa.py
+keeps that rare by refusing a route that is in neither list.
