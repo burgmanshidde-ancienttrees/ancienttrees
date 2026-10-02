@@ -682,7 +682,12 @@ final class AncientTreesUITests: XCTestCase {
         // not what ships, so this asks for the button a person would actually
         // meet. Named rather than matched loosely, for the reason FaultWalk
         // records: a sign-in sheet is full of buttons that sound alike.
-        XCTAssertTrue(app.buttons["Email me a sign-in link"].exists,
+        // Since 2026-10-01 the typed route sits behind a third button, "Continue
+        // with email" (Hidde: Apple, Google and email as three equal buttons),
+        // so the field and its send button appear only after that tap.
+        let route = app.buttons["signin-email"]
+        if route.waitForExistence(timeout: 5) { route.tap() }
+        XCTAssertTrue(app.buttons["Email me a sign-in link"].waitForExistence(timeout: 5),
                       "the email route is missing from the sign-in sheet")
     }
 

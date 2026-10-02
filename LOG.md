@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-02 session: release gate for build 22, green on this Mac
+
+- **Hidde: "Is app ready for a rerelease again - should you stress test it?"** App Store Connect says 1.0.2 is on sale and the last build Apple received is 20 (09-28); build 21 archived this morning was never uploaded and is stale against main. So the candidate is build 22 from today's main.
+- **Run here, all green:** the whole unit and UI suite as CI runs it (FlowWalk, FaultWalk, StressWalk, UpgradeTests, LiveFeedContract included), RefusedWalk via refused.py (4 of 4), appfit on both phones (0 findings on 74 screens), appsweep lists in step.
+- **What the red gate was:** two sign-in tests still asked for the email field before tapping "Continue with email" (the sheet's 2026-10-01 redesign), fixed; and the terms and privacy links in the sign-in footer, two markdown links the height of a footnote line, reported as SMALL on every run. Exempted narrowly in appfit.py (a Link whose identifier is one of our own URLs and whose height is a line of text), with the reason: Apple's own consent sheets set their terms exactly this way and a 44-point inline link does not exist. A small BUTTON is still reported.
+- **Release steps done:** bundled feeds refreshed (`appdata.py`), `CURRENT_PROJECT_VERSION` 21 to 22, 1.0.3 unchanged. **Hidde's:** archive build 22 and upload it as 1.0.3; the version does not exist in App Store Connect yet.
+
 ## 2026-10-02 session: the sheet becomes the page, and no city without a photograph on the shelf
 
 - **Polarsteps transition, from Hidde's screen recording** (cut into frames and timed): the sheet over a map now rises to the very top of the screen at `full`, corners squaring off, the handle giving way to a chevron-down, the status-bar strip covered, and the search field, chips and gear over the map fading out as it goes, all driven by one `progress` value under the finger. Recorded in CONVENTIONS.md with what Polarsteps does and where we differ (our chrome leaves rather than recolours, because there is no map left to control).

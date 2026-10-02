@@ -436,6 +436,19 @@ def check(screen):
         # one: the gate is about OUR geometry.
         if el.type == "SegmentedControl" or inside(el, ("SegmentedControl",)):
             continue
+        # A LINK INSIDE A SENTENCE is a line of text, not a control (2026-10-02).
+        # The sign-in sheet's "By continuing you agree to the Terms and the
+        # Privacy notice" carries two markdown links, each the height of a
+        # footnote line, and the gate reported them as 4 SMALL findings on
+        # every run since the sheet was redesigned on 2026-10-01. Apple's own
+        # consent sheets (Sign in with Apple, the App Store's terms line) set
+        # their terms exactly this way, and a 44-point inline link does not
+        # exist. Matched narrowly: a Link whose label is one of our own page
+        # URLs and whose height is a line of text, so a small BUTTON is still
+        # reported. The same judgement as the segmented control above.
+        if (el.type == "Link" and str(el.ident or el.label).startswith("https://ancienttrees.app/")
+                and el.h < 28 * screen.get("scale", 1.0)):
+            continue
         if el.type in TAPPABLE and (el.w < min_tap - SAME or el.h < min_tap - SAME):
             findings.append(("SMALL", el,
                              f"{el.w:.0f} by {el.h:.0f}, under Apple's 44 by 44"))
