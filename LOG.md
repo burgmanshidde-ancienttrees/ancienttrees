@@ -2,6 +2,9 @@
 
 <!-- archive-index -->
 
+## 2026-10-02 - fourteenth continuation, nothing shipped
+Pulled, no claims standing, READY leads 0, refill has nothing to fill, the US queue shows 0 leads in every listed city. Dispatched nothing: every lane that a verify pass can move was shown empty by the tenth to thirteenth continuations. Supply now comes from reader photographs, aerial pin evidence or a new register.
+
 ## 2026-10-02 - thirteenth continuation, nothing shipped
 Pulled, no claims standing, READY leads 0, rung 2 clear. Recognition lines are at 100 percent (3543 of 3543), so that rung is done. The photo shortlist holds only mismatched candidates (a night-lit street for an elm, a palm-leaf close-up for nutmegs, one file attached to three Brisbane trees), none worth a viewing pass. The US queue was already shown empty of supply by the twelfth continuation. Dispatched nothing rather than spend a pass that returns zero.
 
