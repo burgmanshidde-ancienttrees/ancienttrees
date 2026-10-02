@@ -279,7 +279,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 74 | Reykjavik | 13.66 | 166,789 | 4 | - | 1 | - | 20 | measured |
 | 75 | Key West | 15.81 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 76 | Huntsville | 15.35 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 77 | Seattle | 14.75 | 398,724 | 12 | 1 | 1 | - | 30 | measured |
+| 77 | Seattle | 14.75 | 398,724 | 16 | 1 | 2 | - | 30 | measured |
 | 78 | Haarlem | 7.65 | 33,960 | 21 | 1 | 2 | 277 | 20 | measured |
 | 79 | Ottawa | 10.11 | - | 21 | - | 3 | 122 | 60 | measured |
 | 80 | Fukuoka | 9.84 | 77,485 | 16 | 10 | 1 | - | 60 | measured |
@@ -306,7 +306,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 101 | Maastricht | 6.28 | 47,763 | 19 | - | 2 | 135 | 20 | measured |
 | 102 | Detroit | 12.53 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 103 | Ibiza | 7.92 | - | 1 | - | - | 4 | 20 | measured |
-| 104 | Budapest | 11.47 | 283,807 | 13 | 1 | 3 | - | 60 | measured |
+| 104 | Budapest | 11.47 | 283,807 | 13 | 2 | 3 | - | 60 | measured |
 | 105 | Osaka | 7.65 | 163,112 | 6 | 1 | - | - | 60 | measured |
 | 106 | Leipzig | 7.92 | 121,319 | 7 | 7 | 1 | - | 30 | measured |
 | 107 | Denver | 11.66 | - | - | - | - | - | 30 | predicted (travel demand) |
@@ -512,7 +512,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 307 | Ischia | 1.32 | - | - | - | - | 2 | 20 | predicted (travel demand) |
 | 308 | Izmir | 1.88 | 69,826 | - | - | - | - | 60 | predicted (travel demand) |
 | 309 | Bangkok | 1.91 | 222,206 | 5 | 1 | 1 | - | 100 | measured |
-| 310 | Belfast | 1.91 | 224,315 | 5 | - | 1 | - | 30 | measured |
+| 310 | Belfast | 1.91 | 224,315 | 5 | 1 | 1 | - | 30 | measured |
 | 311 | Tarragona | 1.09 | 32,396 | 4 | 2 | - | - | 20 | measured |
 | 312 | Stirling | 1.78 | 43,558 | - | - | - | - | 10 | predicted (travel demand) |
 | 313 | Killarney | 1.20 | 28,763 | - | - | - | - | 10 | predicted (travel demand) |
@@ -522,7 +522,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 317 | Pisa | 1.09 | 52,174 | 4 | - | - | - | 20 | measured |
 | 318 | Fort Lauderdale | 1.64 | - | 4 | - | - | - | 20 | measured |
 | 319 | Auckland | 1.09 | 152,056 | 5 | 2 | - | 977 | 60 | measured |
-| 320 | Breda | 0.82 | 36,579 | 11 | - | 2 | 120 | 20 | measured |
+| 320 | Breda | 0.82 | 36,579 | 11 | 1 | 2 | 120 | 20 | measured |
 | 321 | Fort Worth | 1.64 | - | 5 | - | - | - | 30 | measured |
 | 322 | Middletown | 1.64 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 323 | Nantes | 1.64 | 67,689 | 1 | 1 | - | - | 30 | measured |
