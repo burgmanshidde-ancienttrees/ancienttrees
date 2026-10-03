@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (eighteenth attempt): nothing to ship, pace cap still shut
+
+Pulled; ready 0; scout_next names Bath (UK), not dispatched. Released the munich claim with --force (the verify pass is exhausted; muc_055 to 060 stay in data/research as files, still unmerged, held by the 24h pace cap until about 12:54 UTC 10-04). Next window after the cap: merge muc_055 to 060 and the Nuremberg two.
+
 ## 2026-10-03 night run (seventeenth attempt): nothing to ship, pace cap still shut
 
 Pulled; only claim is munich (muc_055 to 060 verified and written, held; release refused until merged). leads.py --ready is 0, Munich verify is exhausted per the sixteenth attempt, scout_next names Bath (UK) with no register verdict yet. Nothing dispatched: new trees cannot merge before about 12:54 UTC on 10-04. Next window after the cap: merge muc_055 to 060 and the Nuremberg two.
