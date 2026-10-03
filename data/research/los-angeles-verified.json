@@ -1,36 +1,38 @@
 [
- {
-  "id": "lax_013",
-  "name": "El Pino (The Pine Tree)",
-  "species": "Bunya Pine (Araucaria bidwillii)",
-  "age_estimate": "roughly 70 years or more",
-  "age_min": 70,
-  "age_max": 120,
-  "girth_cm": null,
-  "location": {
-   "address": "Southeast corner of Folsom Street and North Indiana Street, East Los Angeles / Boyle Heights border",
-   "latitude": 34.04328,
-   "longitude": -118.1924,
-   "neighbourhood": "Wellington Heights, East Los Angeles"
-  },
-  "verified_sources": [
-   "https://en.wikipedia.org/wiki/El_Pino_(The_Pine_Tree)",
-   "https://losangelesexplorersguild.com/2022/01/19/el-pino-famoso/",
-   "https://www.openstreetmap.org/node/5511025036"
-  ],
-  "access": "Stands on a private lot but is seen from the public streets, Folsom Street especially; view only, do not enter the lot.",
-  "transport": "Local buses to Folsom St and Indiana St; no rail station within an easy walk (not checked).",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "- Alive: LA Times 2 Mar 2021 (via enwiki) says owner Art Gastelum has no plan to develop; LA Explorers Guild Jan 2022 says standing; esotouric Sep 2022 still calls it savable. No 2024+ dated source found.\n- Species bunya pine, enwiki + OSM tags. Age unknown; Explorers Guild says it arrived on the lot in the late 1940s (one source, soft). Height and girth not found.\n- Dec 2020 false rumour of felling sparked a petition; symbol of local resistance to gentrification; location of 1993 film Blood In Blood Out. Visible for miles from the hill crest, near Evergreen Cemetery.\n- Pin: Wikidata 34.04325,-118.192361 and OSM tree node 5511025036 (34.043279,-118.192395) agree within about 5 m; the OSM node may have been placed from the same source, so the pin is only as good as that.\n- Private lot, view-only from street (hard rule 10 access test: view-only publishable, pin at tree is fine since the street is adjacent; say so in access).\n- PHOTO: Commons File:Bunya, cultivated, Los Angeles.jpg (2010, jondoeforty1, Flickr) is NOT identified as El Pino in its description, only a cultivated bunya in LA. Almost certainly a different tree. Do not use unless the viewer can match it; candidate is held.",
-  "photo_candidates": [
-   {
-    "file": "File:Bunya, cultivated, Los Angeles.jpg",
-    "url": "https://commons.wikimedia.org/wiki/File:Bunya,_cultivated,_Los_Angeles.jpg",
-    "license": "CC BY 2.0",
-    "attribution": "jondoeforty1 from Los Angeles, USA, via Flickr",
-    "status": "unverified_identity_probably_other_tree"
-   }
-  ]
- }
+  {
+    "id": "lax_013",
+    "name": "El Pino (The Pine Tree)",
+    "species": "Bunya Pine (Araucaria bidwillii)",
+    "age_estimate": "roughly 70 years or more",
+    "age_min": 70,
+    "age_max": 120,
+    "girth_cm": null,
+    "location": {
+      "address": "Southeast corner of Folsom Street and North Indiana Street, East Los Angeles / Boyle Heights border",
+      "latitude": 34.04328,
+      "longitude": -118.1924,
+      "neighbourhood": "Wellington Heights, East Los Angeles"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/El_Pino_(The_Pine_Tree)",
+      "https://losangelesexplorersguild.com/2022/01/19/el-pino-famoso/",
+      "https://www.openstreetmap.org/node/5511025036"
+    ],
+    "access": "Stands on a private lot but is seen from the public streets, Folsom Street especially; view only, do not enter the lot.",
+    "transport": "Local buses to Folsom St and Indiana St; no rail station within an easy walk (not checked).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "- Alive: LA Times 2 Mar 2021 (via enwiki) says owner Art Gastelum has no plan to develop; LA Explorers Guild Jan 2022 says standing; esotouric Sep 2022 still calls it savable. No 2024+ dated source found.\n- Species bunya pine, enwiki + OSM tags. Age unknown; Explorers Guild says it arrived on the lot in the late 1940s (one source, soft). Height and girth not found.\n- Dec 2020 false rumour of felling sparked a petition; symbol of local resistance to gentrification; location of 1993 film Blood In Blood Out. Visible for miles from the hill crest, near Evergreen Cemetery.\n- Pin: Wikidata 34.04325,-118.192361 and OSM tree node 5511025036 (34.043279,-118.192395) agree within about 5 m; the OSM node may have been placed from the same source, so the pin is only as good as that.\n- Private lot, view-only from street (hard rule 10 access test: view-only publishable, pin at tree is fine since the street is adjacent; say so in access).\n- PHOTO: Commons File:Bunya, cultivated, Los Angeles.jpg (2010, jondoeforty1, Flickr) is NOT identified as El Pino in its description, only a cultivated bunya in LA. Almost certainly a different tree. Do not use unless the viewer can match it; candidate is held.",
+    "photo_candidates": [
+      {
+        "file": "File:Bunya, cultivated, Los Angeles.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Bunya,_cultivated,_Los_Angeles.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "jondoeforty1 from Los Angeles, USA, via Flickr",
+        "status": "unverified_identity_probably_other_tree"
+      }
+    ],
+    "story": "El Pino is a pine that is not a pine, on a lot nobody may enter, and East Los Angeles once petitioned to save it from a felling that was never coming.\n\nIt is a bunya pine, an Australian conifer of the monkey puzzle family, on a private lot at the southeast corner of Folsom Street and North Indiana Street, where Boyle Heights meets East Los Angeles. From the crest of the hill it is visible for miles, near Evergreen Cemetery, and that visibility is how it became a landmark. The 1993 film Blood In Blood Out used it as a location, and the neighbourhood took it up as a symbol of resistance to the gentrification changing the streets around it.\n\nIn December 2020 a rumour spread that it was about to be cut down. It was false, and a petition followed anyway. In March 2021 the lot's owner told the Los Angeles Times he had no plan to develop it, and accounts from 2022 still describe it standing.\n\nIts age is soft. One local history source says it arrived on the lot in the late 1940s, which would make it roughly seventy years old or more, and nobody we found has measured it. We have no sighting dated after 2022 either, so if you pass it, tell us how it looks.\n\nThe lot is private. This is a tree to see from the pavement on Folsom Street, not to walk up to.",
+    "how_to_recognise": "You can recognise it from far off: a bunya pine visible for miles from the crest of the hill. It stands on a private lot at the southeast corner of Folsom Street and North Indiana Street; view it from the pavement."
+  }
 ]
