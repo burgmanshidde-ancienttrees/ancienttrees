@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run, second attempt: nothing could ship, pace cap
+
+- Claims were clear and `leads.py --ready` empty. Munich (the only staged visitor city) holds written, verified muc_055 and muc_057 (confirmed pins, one approved photo) in data/research/munich-verified.json, plus lon_027 in london-verified.json. Merging muc_055/057 tripped preflight's runaway cap (62 new trees in 24h against 60), so I reverted the merge. They are not lost: merge them once the 24h count drops. The de/munich overlay needs these two translated at that point.
+- Munich was claimed then released without a new verify pass: its register is already mined (61 unmined of 184, the rest blocked or Dachau-area leads). The rest of the window went unspent on purpose, since any more trees would hit the cap.
+
 ## 2026-10-03 night run: Reykjavik photographs, London opened from the Great Trees list
 
 - **Rung 1:** three reader photographs of Reykjavik trees looked at. The whitebeam (rey_001) and the larch (rey_002) are live as lead photographs with verdicts written; the City Hall maple (rey_003) is held (dark, crowd in front). Written verdicts were stubbed by hand because `judgement.py --scan` reads the queue AFTER publish has emptied it, so scan finds nothing: scan before publishing.
