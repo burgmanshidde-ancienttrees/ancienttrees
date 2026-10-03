@@ -93,12 +93,15 @@ def main(argv):
         except Exception as e:
             print("indexnow: batch %d failed: %s" % (i // BATCH + 1, e))
             refused += 1
-    # A refusal used to end in exit 0, so the workflow went green while Bing
-    # had accepted nothing (2026-10-01, 403 UserForbiddedToAccessSite on the
-    # first full submission). Red is the honest colour.
+    # A refusal used to end in exit 0 silently, so the workflow went green
+    # while Bing had accepted nothing (2026-10-01). It then went red, and red
+    # on a workflow that fires after every deploy mailed Hidde a failure
+    # roughly fifteen times a day for a refusal only he can fix, in Bing
+    # Webmaster Tools (2026-10-03: "Why are all night runs failing?"). So a
+    # refusal is a visible warning annotation on the run, not a failure.
     if refused:
-        print("::error::indexnow: %d batch(es) refused or failed" % refused)
-        return 1
+        print("::warning::indexnow: %d batch(es) refused or failed; Bing has "
+              "not accepted the key for this site yet" % refused)
     return 0
 
 
