@@ -230,6 +230,20 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         guard let i = species.firstIndex(of: "(") else { return species }
         return String(species[..<i]).trimmingCharacters(in: .whitespaces)
     }
+
+    /// The scientific name, the half inside the parentheses of
+    /// "European Yew (Taxus baccata)", or nil where the record carries none
+    /// (a species nobody has established yet). Search answers to it since
+    /// 2026-10-03, on a reader's request: "also service Latin names".
+    public var scientificName: String? { Tree.scientificName(of: species) }
+
+    public static func scientificName(of species: String) -> String? {
+        guard let open = species.firstIndex(of: "("),
+              let close = species[open...].firstIndex(of: ")") else { return nil }
+        let inner = species[species.index(after: open)..<close]
+            .trimmingCharacters(in: .whitespaces)
+        return inner.isEmpty ? nil : inner
+    }
 }
 
 public struct Walk: Codable, Hashable, Sendable {
@@ -319,6 +333,10 @@ public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
     /// the server (site/src/lib/images.ts) so the app shows the same picture the
     /// website shows and a hand-set pin reaches both.
     public let face: String?
+    /// A species' scientific name, the website's own (data/species). It has
+    /// been in the feed since 2026-08-19 and nothing here decoded it; search
+    /// and the species page read it since 2026-10-03. Species only.
+    public let scientific: String?
     /// A city's names in other languages (Sevilla, Firenze, Wien), for search
     /// only. The website's list, sent in the feed, so both searches find the
     /// same places. Absent on every facet but cities.
@@ -396,6 +414,7 @@ public struct BrowseFacets: Sendable {
     public func face(country name: String) -> String? { countryByName[name]?.face }
     public func face(species commonName: String) -> String? { speciesByName[commonName]?.face }
     public func intro(species commonName: String) -> String? { speciesByName[commonName]?.intro }
+    public func scientific(species commonName: String) -> String? { speciesByName[commonName]?.scientific }
     public func intro(country name: String) -> String? { countryByName[name]?.intro }
     /// The mainland box a country map opens on, as south-west and north-east
     /// corners, or nil to frame the trees themselves.

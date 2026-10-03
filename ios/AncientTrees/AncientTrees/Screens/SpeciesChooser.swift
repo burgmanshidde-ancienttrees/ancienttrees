@@ -51,7 +51,14 @@ struct SpeciesChooser: View {
 
     private var rows: [(name: String, count: Int)] {
         guard !typed.isEmpty else { return index }
-        return index.filter { $0.name.localizedCaseInsensitiveContains(typed) }
+        // The scientific name answers too (2026-10-03). It matters most here:
+        // a reader who knows their tree as Taxus baccata and finds no row for
+        // it would type a second name for a species we already carry, which
+        // is the exact split this chooser exists to prevent.
+        return index.filter {
+            $0.name.localizedCaseInsensitiveContains(typed)
+                || (catalogue.scientificName(of: $0.name)?.localizedCaseInsensitiveContains(typed) ?? false)
+        }
     }
 
     /// Offered only when nothing on the list matches what they typed, which is

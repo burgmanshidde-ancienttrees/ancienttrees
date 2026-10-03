@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 (session): a species answers to its Latin name, app and web
+
+A reader asked for Latin names. Benchmark first (CONVENTIONS.md, "Searching a species by its scientific name"): iNaturalist's autocomplete matches scientific and common names and shows which one matched; its taxon page puts the common name first with the Latin in italics under it. Built on both surfaces in one change: the search index row carries `l`, the website's search and the app's MapSearch match the start of any word of the scientific name and print it in italics under the common name; the species page (web and app) prints it under the H1 and the web's first sentence names it; the /species cards, the app's species filter, its directory search and the chooser for naming your own tree all take the Latin. The app now decodes the `scientific` facet field browse.json had sent since 08-19. `check_species_answer_to_their_latin_name()` in qa.py guards the index, the feed and every species page. Not changed, because hard rule 7 makes it Hidde's: Contract F's title template and schema stack (the Latin could join the title where it fits under 60, and an `alternateName` in the ItemList); both are the next step if Search Console shows Latin queries.
+
 ## 2026-10-03 (night run): Berlin 46 to 54
 
 Rung 4/US-UK-DE supply lane. prepare.py showed 24 written/verified trees waiting, but all but Berlin's fail the photo-or-pin rule (Houston x3, Fukuoka fuk_017, Takachiho x2, ber_041 have neither a photograph nor a confirmed pin), so I left them in data/research as leads and did not merge them. Verified 8 new Berlin Naturdenkmal trees with tree-level register pins (ber_048 to ber_055: Humboldt University ginkgo and chestnut, Bebelplatz plane, Viktoriapark mulberry, Pankow bald cypress, Kreuzpfuhl poplar, Natural History Museum copper beeches, Tiergarten carillon oak), wrote them with recognition lines, extended the German overlay, preflight 0 problems. 7-day visits: 2544 visits, 2725 views. iOS app CI is red (rung 2, not investigated: no Xcode here). No tool refusals worth reporting.

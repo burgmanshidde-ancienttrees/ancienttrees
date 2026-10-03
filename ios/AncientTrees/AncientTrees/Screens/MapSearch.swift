@@ -226,7 +226,14 @@ struct MapSearch: View {
         // Pedunculate Oak. The website matches the head of the name only,
         // which is right for a keyboard-and-mouse dropdown and wrong on a
         // phone, where nobody types "pedunculate".
-        let species = allSpecies.filter { Self.startsAWord(Self.fold($0), q) }
+        // And the scientific name, word-start too, so "quercus" and "robur"
+        // both find Pedunculate Oak (2026-10-03). iNaturalist's autocomplete
+        // answers to either name; the website's search does the same.
+        let species = allSpecies.filter { common in
+            if Self.startsAWord(Self.fold(common), q) { return true }
+            guard let sci = catalogue.scientificName(of: common) else { return false }
+            return Self.startsAWord(Self.fold(sci), q)
+        }
 
         var trees: [Tree] = []
         if q.count >= 4 || lane == .trees {
@@ -268,6 +275,11 @@ struct MapSearch: View {
 
     private func row(_ name: String, _ sub: String, _ icon: String,
                      _ act: @escaping () -> Void) -> some View {
+        row(name, Text(sub), icon, act)
+    }
+
+    private func row(_ name: String, _ sub: Text, _ icon: String,
+                     _ act: @escaping () -> Void) -> some View {
         Button(action: act) {
             HStack(spacing: 14) {
                 Image(systemName: icon)
@@ -278,7 +290,7 @@ struct MapSearch: View {
                     highlighted(name)
                         .font(.brand(16, .regular)).foregroundStyle(Brand.ink)
                         .lineLimit(1)
-                    Text(sub).font(.caption).foregroundStyle(Brand.inkSoft).lineLimit(1)
+                    sub.font(.caption).foregroundStyle(Brand.inkSoft).lineLimit(1)
                 }
                 Spacer(minLength: 8)
             }
@@ -305,8 +317,13 @@ struct MapSearch: View {
             + Text(String(chars[hi...])).fontWeight(.bold)
     }
 
-    private func speciesSub(_ s: String) -> String {
-        treesLabel(catalogue.trees(ofSpecies: s).count)
+    /// The scientific name in italics before the count, iNaturalist's row:
+    /// common name on top, Latin beneath. It is also how somebody who typed
+    /// "robur" sees why Pedunculate Oak answered.
+    private func speciesSub(_ s: String) -> Text {
+        let count = Text(treesLabel(catalogue.trees(ofSpecies: s).count))
+        guard let sci = catalogue.scientificName(of: s) else { return count }
+        return Text(sci).italic() + Text(" · ") + count
     }
 
     /// Does the query start the name, or start any word inside it?

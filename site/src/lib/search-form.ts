@@ -66,8 +66,15 @@ export const SEARCH_WIDGET_JS = `
       if (alt) { places.push({kind: 'city', it: c}); return; }
       if (i > 0 || norm(c.country).indexOf(q) === 0) places.push({kind: 'city', it: c});
     });
+    // A species answers to its common name OR its scientific name (2026-10-03,
+    // a reader asked for Latin names). The convention is iNaturalist's
+    // autocomplete, which matches either and says which one it matched. Latin
+    // matches on the start of any word, so "robur" finds Quercus robur the way
+    // a botanist would type it; the common name keeps its start-of-name bar.
     IDX.s.forEach(function(s) {
+      var l = norm(s.l || '');
       if (norm(s.n).indexOf(q) === 0) species.push({kind: 'species', it: s});
+      else if (l && (l.indexOf(q) === 0 || l.indexOf(' ' + q) !== -1)) species.push({kind: 'species', it: s});
     });
     // Trees only earn a slot once the query is specific: at least four
     // characters, matching the start of a word in the name, and never
@@ -78,7 +85,11 @@ export const SEARCH_WIDGET_JS = `
         if (n.indexOf(q) === 0 || n.indexOf(' ' + q) !== -1) trees.push({kind: 'tree', it: t});
       });
     }
-    out = places.slice(0, 6).concat(species.slice(0, 2));
+    // Two species beside six places, six when no place matched: the app's
+    // budget (MapSearch.swift), ported back so "quercus" shows the oaks rather
+    // than two of them. The lists were already the same eight rows otherwise.
+    var p = places.slice(0, 6);
+    out = p.concat(species.slice(0, p.length ? 2 : 6));
     var room = 8 - out.length;
     if (room > 0) out = out.concat(trees.slice(0, Math.min(room, places.length ? 2 : 5)));
     return out;
@@ -154,7 +165,10 @@ export const SEARCH_WIDGET_JS = `
           sec = r.it.n + ' trees &middot; ' + escT(r.it.country);
         } else if (r.kind === 'species') {
           name = r.it.n;
-          sec = r.it.count + ' mapped &middot; every one on the site';
+          // The scientific name under the common one, in italics, which is how
+          // iNaturalist lays out a taxon row; it is also the only way a person
+          // who typed the Latin can see why this row answered.
+          sec = (r.it.l ? '<i lang="la">' + escT(r.it.l) + '</i> &middot; ' : '') + r.it.count + ' mapped';
         } else {
           name = r.it.n;
           sec = escT(r.it.c);
