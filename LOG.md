@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run, third attempt: nothing shipped, pace cap still shut
+
+- Pulled; the only standing claim was munich, released with --force (its register is mined, the verify pass would find nothing). `leads.py --ready` is 0. Written trees waiting on the 24h cap (runaway cap 60, about 62 in the window): muc_055 to 060, Nuremberg two, lon_027, hou_009 to 011, ber_041, fuk_017. Merge them after about 12:54 UTC 10-04. I did not dispatch new verify work, because any tree it found would also hit the cap. The cap is Hidde's, so I left it alone.
+
 ## 2026-10-03 night run, second attempt: nothing could ship, pace cap
 
 - Claims were clear and `leads.py --ready` empty. Munich (the only staged visitor city) holds written, verified muc_055 and muc_057 (confirmed pins, one approved photo) in data/research/munich-verified.json, plus lon_027 in london-verified.json. Merging muc_055/057 tripped preflight's runaway cap (62 new trees in 24h against 60), so I reverted the merge. They are not lost: merge them once the 24h count drops. The de/munich overlay needs these two translated at that point.
