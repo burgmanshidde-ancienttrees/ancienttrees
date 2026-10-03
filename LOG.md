@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (sixteenth attempt): Munich verify pass shipped nothing new
+
+Dispatched a verify agent on Munich (~200k tokens). It delivered muc_062, the Schlosseiche of Eisolzried, which duplicates live eis_001 (12 m away), so nothing to publish. Munich's register candidates are exhausted: the rest are private plots, school grounds or lack a photograph or exact pin. Pace cap still shut (clears about 12:54 UTC 10-04). Munich claim kept (kind write) for muc_055 to 060. A Portland claim was taken and released: 1 of 17 leads carry a coordinate. Do not re-dispatch a Munich verify pass; after the cap, merge muc_055 to 060 and the Nuremberg two.
+
 ## 2026-10-03 night run (fifteenth attempt, 20:20 UTC): no trees, scouting verdict written
 
 visitors.py: 2623 visits in 7 days. Pace cap still shut for new trees (clears about 12:54 UTC on 10-04), ready to write 0, so the one lane left was `scout_next.py --target`, which named New York (#4). NYC Parks' Great Trees pages return an AWS WAF captcha to curl, so a night run cannot read them; verdict recorded as stalled in data/register-scouting.json. Next window after the cap: merge muc_055 to 060 and the Nuremberg two. One curl was refused, the one with a `$limit` variable in the URL.
