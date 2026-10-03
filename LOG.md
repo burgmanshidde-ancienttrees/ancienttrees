@@ -2,6 +2,15 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 (session): the night line points at work the gates will accept
+
+Hidde asked whether the night run is built to scout and write trees productively and truthfully where the visitors are. It was not: the tools a run reads first pointed it at work its own gates refuse.
+
+- **leads.py**: "ready to write" now requires a photograph or a confirmed pin, because preflight refuses a new tree with neither. READY went from 3 to an honest 0 (all three were the zoo-oak kind).
+- **prepare.py**: stages only proven cities in the focus countries, US/UK/Germany first, up to the city's target rather than ten, drops register rows an earlier pass already judged (instead of skipping any city with a leads file, which had kept Berlin from ever being staged), and drops coordinates too coarse to confirm a pin. It splits staged files into claimable and parked (17 parked), and verified trees into awaiting a writer (0) and held (24: no photo or pin, or not a proven city). The refill directive now names the staged visitor-country cities: Munich, Nuremberg, Portland, Spokane. Newly staged today: Munich 14, Nuremberg 35, Portland 98, Spokane 5, Barcelona 113.
+- **city_queue.py**: a register coordinate rounded to ~110 m is not supply (Oahu's 163 is gone), "where the visitors are" lists proven cities only (Potsdam was listed, and refused at claim) and reads live tree counts (it said Berlin 33 while Berlin had 62). Queue rebuilt.
+- **nightly.yml prompt**: removed "there are no focus countries any more" (the claim gate refuses outside them), "LONDON: never research it" (the gate is Woodland Trust data, not the city), "verify against two independent sources" (one official register is enough, BRIEF_RESEARCH.md), the heredoc it recommended while forbidding it, "run the build" in the loop (the build is refused), page gaps "in every run" (now after trees), and 8 to 10 trees (now the city's target). New: a tree preflight will refuse is not work; the continuation prompt goes prepare.py, then scout_next.py, never "nothing dispatched".
+
 ## 2026-10-03 (session): an empty window scouts instead of stopping
 
 Hidde: "night runs should go find register or sources when nothing is available right?" They should, and on 10-02 they did not: fifteen continuations ended "dispatched nothing", because `scout_next.py --target` read only the top 25 cities under ten trees, found a verdict on each and answered "nothing to scout". It now has a second pass over every ranked city in the SUPPLY_FOCUS countries (US, UK, Germany), at any tree count: first a city with no verdict of its own and no register rows, then a STALLED verdict whose note names the next step. A country-wide verdict (the UK's, which is about the Ancient Tree Inventory licence) no longer closes a city's own register. Today it names New York (#6), whose NYC Parks Great Trees list has never been scouted; Bath, London, Edinburgh, Boston, Liverpool and Glasgow follow. The night-run prompt now says that when nothing on hand can refill the shelf, the dispatch is whatever `scout_next.py --target` prints.

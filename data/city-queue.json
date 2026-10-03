@@ -35,30 +35,6 @@
   },
   {
    "rank": 2,
-   "city": "Oahu",
-   "country": "United States",
-   "slug": "oahu",
-   "score": 64.48,
-   "demand": null,
-   "basis": "measured",
-   "status": "published",
-   "trees": 21,
-   "photos": 7,
-   "walks": 3,
-   "register": 163,
-   "ready": 0,
-   "supply": 163,
-   "target": 30,
-   "impressions_10d": 118,
-   "clicks_10d": 1,
-   "ease": 1.5,
-   "work_score": 96.72,
-   "travel": 5228,
-   "kind": "island",
-   "wikidata": 0
-  },
-  {
-   "rank": 3,
    "city": "Barcelona",
    "country": "Spain",
    "slug": "barcelona",
@@ -81,7 +57,7 @@
    "wikidata": 261
   },
   {
-   "rank": 4,
+   "rank": 3,
    "city": "Amsterdam",
    "country": "Netherlands",
    "slug": "amsterdam",
@@ -104,7 +80,7 @@
    "wikidata": 10
   },
   {
-   "rank": 5,
+   "rank": 4,
    "city": "Singapore",
    "country": "Singapore",
    "slug": "singapore",
@@ -127,7 +103,7 @@
    "wikidata": 0
   },
   {
-   "rank": 6,
+   "rank": 5,
    "city": "New York",
    "country": "United States",
    "slug": "new-york",
@@ -150,7 +126,7 @@
    "wikidata": 3
   },
   {
-   "rank": 7,
+   "rank": 6,
    "city": "Rome",
    "country": "Italy",
    "slug": "rome",
@@ -173,7 +149,7 @@
    "wikidata": 5
   },
   {
-   "rank": 8,
+   "rank": 7,
    "city": "Palermo",
    "country": "Italy",
    "slug": "palermo",
@@ -196,7 +172,7 @@
    "wikidata": 10
   },
   {
-   "rank": 9,
+   "rank": 8,
    "city": "Seville",
    "country": "Spain",
    "slug": "seville",
@@ -219,6 +195,30 @@
    "wikidata": 1
   },
   {
+   "rank": 9,
+   "city": "Oahu",
+   "country": "United States",
+   "slug": "oahu",
+   "score": 64.48,
+   "demand": null,
+   "basis": "measured",
+   "status": "published",
+   "trees": 21,
+   "photos": 7,
+   "walks": 3,
+   "register": 0,
+   "ready": 0,
+   "supply": 0,
+   "target": 30,
+   "impressions_10d": 118,
+   "clicks_10d": 1,
+   "ease": 1.0,
+   "work_score": 64.48,
+   "travel": 5228,
+   "kind": "island",
+   "wikidata": 0
+  },
+  {
    "rank": 10,
    "city": "Berlin",
    "country": "Germany",
@@ -227,19 +227,19 @@
    "demand": 412181,
    "basis": "measured",
    "status": "published",
-   "trees": 33,
+   "trees": 62,
    "photos": 23,
    "walks": 3,
    "register": 195,
    "ready": 0,
-   "supply": 830,
+   "supply": 789,
    "target": 60,
    "impressions_10d": 155,
    "clicks_10d": 5,
    "ease": 1.5,
    "work_score": 63.53,
    "travel": 21405,
-   "wikidata": 635
+   "wikidata": 594
   },
   {
    "rank": 11,
@@ -522,30 +522,6 @@
   },
   {
    "rank": 23,
-   "city": "Cagliari",
-   "country": "Italy",
-   "slug": "cagliari",
-   "score": 18.85,
-   "demand": 51351,
-   "basis": "measured",
-   "status": "published",
-   "trees": 14,
-   "photos": 1,
-   "walks": 2,
-   "register": 15,
-   "ready": 0,
-   "supply": 18,
-   "target": 20,
-   "ease": 1.86,
-   "work_score": 35.06,
-   "impressions_10d": 69,
-   "clicks_10d": 1,
-   "travel": 3696,
-   "wikidata": 3,
-   "settled": "VERDICT: Cagliari's register pool near the city is fully exhausted, confirmed twice (2026-09-16, 2026-09-17): every unmined row resolves to an already-published tree by coordinate match or is already blocked (private land). Two open leads remain (Magnolia at Villa Marini/Sinnai, an Olea grove) but fail the two-source or collectible-point bar. Do not re-dispatch a register verify pass here without new supply (a new register import or a from-zero web angle)."
-  },
-  {
-   "rank": 24,
    "city": "Cadiz",
    "country": "Spain",
    "slug": "cadiz",
@@ -566,6 +542,30 @@
    "work_score": 34.94,
    "travel": 3583,
    "wikidata": 3
+  },
+  {
+   "rank": 24,
+   "city": "Cagliari",
+   "country": "Italy",
+   "slug": "cagliari",
+   "score": 18.85,
+   "demand": 51351,
+   "basis": "measured",
+   "status": "published",
+   "trees": 14,
+   "photos": 1,
+   "walks": 2,
+   "register": 14,
+   "ready": 0,
+   "supply": 17,
+   "target": 20,
+   "ease": 1.84,
+   "work_score": 34.68,
+   "impressions_10d": 69,
+   "clicks_10d": 1,
+   "travel": 3696,
+   "wikidata": 3,
+   "settled": "VERDICT: Cagliari's register pool near the city is fully exhausted, confirmed twice (2026-09-16, 2026-09-17): every unmined row resolves to an already-published tree by coordinate match or is already blocked (private land). Two open leads remain (Magnolia at Villa Marini/Sinnai, an Olea grove) but fail the two-source or collectible-point bar. Do not re-dispatch a register verify pass here without new supply (a new register import or a from-zero web angle)."
   },
   {
    "rank": 25,
@@ -1784,7 +1784,7 @@
    "status": "published",
    "trees": 16,
    "photos": 1,
-   "walks": 2,
+   "walks": 1,
    "register": 0,
    "ready": 0,
    "supply": 2,
@@ -3235,31 +3235,6 @@
   },
   {
    "rank": 140,
-   "city": "Hawaii",
-   "country": "United States",
-   "slug": "hawaii",
-   "score": 8.2,
-   "demand": null,
-   "basis": "measured",
-   "status": "published",
-   "trees": 6,
-   "photos": 0,
-   "walks": 1,
-   "register": 6,
-   "ready": 0,
-   "supply": 6,
-   "target": 60,
-   "impressions_10d": 15,
-   "clicks_10d": 0,
-   "ease": 1.12,
-   "work_score": 9.18,
-   "travel": 12388,
-   "why_pooled": "The Big Island, distinct from Kauai, Maui and Oahu which are already ranked. Hawaii has an Exceptional Trees law with county registries behind it, which is a register in all but name.",
-   "note": "Rank 43 was worked on 2026-08-17 and produced data/cities/hilo.json, five protected trees in and around the town of Hilo, three of them in Kalakaua Park. The ISLAND row stays pending on purpose: Kona, Volcano and the Hamakua coast are untouched and the register holds 30 more publishable Big Island trees, so a page called Hawaii would promise an island and deliver a town.",
-   "wikidata": 0
-  },
-  {
-   "rank": 141,
    "city": "Oslo",
    "country": "Norway",
    "slug": "oslo",
@@ -3268,7 +3243,7 @@
    "basis": "measured",
    "status": "published",
    "trees": 4,
-   "photos": 0,
+   "photos": 1,
    "walks": 0,
    "register": 0,
    "ready": 0,
@@ -3291,7 +3266,7 @@
    "score": 8.93,
    "basis": "predicted (travel demand)",
    "work_score": 8.93,
-   "rank": 142,
+   "rank": 141,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -3305,7 +3280,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 143,
+   "rank": 142,
    "city": "Seoul",
    "country": "South Korea",
    "slug": "seoul",
@@ -3328,7 +3303,7 @@
    "wikidata": 4
   },
   {
-   "rank": 144,
+   "rank": 143,
    "city": "Tampere",
    "country": "Finland",
    "slug": "tampere",
@@ -3351,7 +3326,7 @@
    "wikidata": 0
   },
   {
-   "rank": 145,
+   "rank": 144,
    "city": "Crete",
    "country": "Greece",
    "slug": "crete",
@@ -3375,7 +3350,7 @@
    "wikidata": 0
   },
   {
-   "rank": 146,
+   "rank": 145,
    "city": "Nice",
    "country": "France",
    "slug": "nice",
@@ -3398,7 +3373,7 @@
    "wikidata": 0
   },
   {
-   "rank": 147,
+   "rank": 146,
    "city": "Savannah",
    "country": "United States",
    "slug": "savannah",
@@ -3435,7 +3410,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 8.74,
-   "rank": 148,
+   "rank": 147,
    "impressions_10d": 16,
    "clicks_10d": 0,
    "score": 4.37,
@@ -3454,7 +3429,7 @@
    "score": 8.55,
    "basis": "predicted (travel demand)",
    "work_score": 8.55,
-   "rank": 149,
+   "rank": 148,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -3468,7 +3443,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 150,
+   "rank": 149,
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
@@ -3492,7 +3467,7 @@
    "wikidata": 0
   },
   {
-   "rank": 151,
+   "rank": 150,
    "city": "Guimaraes",
    "country": "Portugal",
    "slug": "guimaraes",
@@ -3515,7 +3490,7 @@
    "wikidata": 2
   },
   {
-   "rank": 152,
+   "rank": 151,
    "city": "Charleston",
    "country": "United States",
    "slug": "charleston",
@@ -3539,7 +3514,7 @@
    "wikidata": 1
   },
   {
-   "rank": 153,
+   "rank": 152,
    "city": "Adelaide",
    "country": "Australia",
    "slug": "adelaide",
@@ -3575,7 +3550,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 8.2,
-   "rank": 154,
+   "rank": 153,
    "impressions_10d": 15,
    "clicks_10d": 0,
    "score": 4.1,
@@ -3585,7 +3560,7 @@
    "slug": "enschede"
   },
   {
-   "rank": 155,
+   "rank": 154,
    "city": "Groningen",
    "country": "Netherlands",
    "slug": "groningen",
@@ -3606,6 +3581,31 @@
    "work_score": 8.2,
    "travel": 5676,
    "wikidata": 1
+  },
+  {
+   "rank": 155,
+   "city": "Hawaii",
+   "country": "United States",
+   "slug": "hawaii",
+   "score": 8.2,
+   "demand": null,
+   "basis": "measured",
+   "status": "published",
+   "trees": 6,
+   "photos": 0,
+   "walks": 1,
+   "register": 0,
+   "ready": 0,
+   "supply": 0,
+   "target": 60,
+   "impressions_10d": 15,
+   "clicks_10d": 0,
+   "ease": 1.0,
+   "work_score": 8.2,
+   "travel": 12388,
+   "why_pooled": "The Big Island, distinct from Kauai, Maui and Oahu which are already ranked. Hawaii has an Exceptional Trees law with county registries behind it, which is a register in all but name.",
+   "note": "Rank 43 was worked on 2026-08-17 and produced data/cities/hilo.json, five protected trees in and around the town of Hilo, three of them in Kalakaua Park. The ISLAND row stays pending on purpose: Kona, Volcano and the Hamakua coast are untouched and the register holds 30 more publishable Big Island trees, so a page called Hawaii would promise an island and deliver a town.",
+   "wikidata": 0
   },
   {
    "city": "Helmond",
@@ -4770,30 +4770,6 @@
   },
   {
    "rank": 206,
-   "city": "Kauai",
-   "country": "United States",
-   "slug": "kauai",
-   "score": 4.37,
-   "demand": null,
-   "basis": "measured",
-   "status": "published",
-   "trees": 6,
-   "photos": 1,
-   "walks": 0,
-   "register": 8,
-   "ready": 0,
-   "supply": 8,
-   "target": 20,
-   "impressions_10d": 8,
-   "clicks_10d": 1,
-   "ease": 1.16,
-   "work_score": 5.07,
-   "travel": 7335,
-   "kind": "island",
-   "wikidata": 0
-  },
-  {
-   "rank": 207,
    "city": "Heraklion",
    "country": "Greece",
    "slug": "heraklion",
@@ -4816,7 +4792,7 @@
    "wikidata": 0
   },
   {
-   "rank": 208,
+   "rank": 207,
    "city": "Marseille",
    "country": "France",
    "slug": "marseille",
@@ -4852,7 +4828,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 4.92,
-   "rank": 209,
+   "rank": 208,
    "impressions_10d": 9,
    "clicks_10d": 0,
    "score": 2.46,
@@ -4862,7 +4838,7 @@
    "slug": "venlo"
   },
   {
-   "rank": 210,
+   "rank": 209,
    "city": "Menorca",
    "country": "Spain",
    "slug": "menorca",
@@ -4886,7 +4862,7 @@
    "wikidata": 0
   },
   {
-   "rank": 211,
+   "rank": 210,
    "city": "Basel",
    "country": "Switzerland",
    "slug": "basel",
@@ -4909,7 +4885,7 @@
    "wikidata": 0
   },
   {
-   "rank": 212,
+   "rank": 211,
    "city": "Aarhus",
    "country": "Denmark",
    "slug": "aarhus",
@@ -4941,7 +4917,7 @@
    "score": 4.37,
    "basis": "measured",
    "work_score": 4.46,
-   "rank": 213,
+   "rank": 212,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -4964,7 +4940,7 @@
    "score": 4.37,
    "basis": "measured",
    "work_score": 4.46,
-   "rank": 214,
+   "rank": 213,
    "photos": 0,
    "walks": 1,
    "register": 0,
@@ -4978,7 +4954,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 215,
+   "rank": 214,
    "city": "Tasmania",
    "country": "Australia",
    "slug": "tasmania",
@@ -5015,7 +4991,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 4.38,
-   "rank": 216,
+   "rank": 215,
    "impressions_10d": 8,
    "clicks_10d": 0,
    "score": 2.19,
@@ -5025,7 +5001,7 @@
    "slug": "assen"
   },
   {
-   "rank": 217,
+   "rank": 216,
    "city": "Den Bosch",
    "country": "Netherlands",
    "slug": "den-bosch",
@@ -5061,7 +5037,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 4.38,
-   "rank": 218,
+   "rank": 217,
    "impressions_10d": 8,
    "clicks_10d": 0,
    "score": 2.19,
@@ -5069,6 +5045,30 @@
    "wikidata": 0,
    "travel": 1209,
    "slug": "hoorn"
+  },
+  {
+   "rank": 218,
+   "city": "Kauai",
+   "country": "United States",
+   "slug": "kauai",
+   "score": 4.37,
+   "demand": null,
+   "basis": "measured",
+   "status": "published",
+   "trees": 6,
+   "photos": 1,
+   "walks": 0,
+   "register": 0,
+   "ready": 0,
+   "supply": 0,
+   "target": 20,
+   "impressions_10d": 8,
+   "clicks_10d": 1,
+   "ease": 1.0,
+   "work_score": 4.37,
+   "travel": 7335,
+   "kind": "island",
+   "wikidata": 0
   },
   {
    "rank": 219,
@@ -6630,19 +6630,19 @@
    "demand": 113624,
    "basis": "measured",
    "status": "published",
-   "trees": 5,
-   "photos": 5,
+   "trees": 13,
+   "photos": 9,
    "walks": 1,
    "register": 0,
    "ready": 0,
-   "supply": 203,
+   "supply": 200,
    "target": 30,
    "ease": 1.5,
    "work_score": 2.46,
    "impressions_10d": 6,
    "clicks_10d": 0,
    "travel": 6405,
-   "wikidata": 203
+   "wikidata": 200
   },
   {
    "rank": 287,
@@ -6993,29 +6993,6 @@
   },
   {
    "rank": 302,
-   "city": "Hilo",
-   "country": "United States",
-   "slug": "hilo",
-   "score": 1.64,
-   "demand": null,
-   "basis": "measured",
-   "status": "published",
-   "trees": 6,
-   "photos": 0,
-   "walks": 1,
-   "register": 16,
-   "ready": 0,
-   "supply": 16,
-   "target": 10,
-   "impressions_10d": 3,
-   "clicks_10d": 0,
-   "ease": 1.32,
-   "work_score": 2.16,
-   "travel": 6543,
-   "wikidata": 0
-  },
-  {
-   "rank": 303,
    "city": "Regensburg",
    "country": "Germany",
    "slug": "regensburg",
@@ -7038,7 +7015,7 @@
    "wikidata": 1
   },
   {
-   "rank": 304,
+   "rank": 303,
    "city": "Zaragoza",
    "country": "Spain",
    "slug": "zaragoza",
@@ -7061,7 +7038,7 @@
    "wikidata": 1
   },
   {
-   "rank": 305,
+   "rank": 304,
    "city": "Cesky Krumlov",
    "country": "Czech Republic",
    "slug": "cesky-krumlov",
@@ -7084,7 +7061,7 @@
    "wikidata": 114
   },
   {
-   "rank": 306,
+   "rank": 305,
    "city": "La Gomera",
    "country": "Spain",
    "slug": "la-gomera",
@@ -7108,7 +7085,7 @@
    "wikidata": 0
   },
   {
-   "rank": 307,
+   "rank": 306,
    "city": "Ischia",
    "country": "Italy",
    "slug": "ischia",
@@ -7133,7 +7110,7 @@
    "settled": "VERDICT: Ischia has no publishable supply right now, checked 2026-09-17. passcheck.py --brief lists only 3 unmined MASAF register candidates within 20km of the city centre (40.7314,13.8951): a Farnia (Quercus robur, girth 8.7m) 2.3km out at 40.71592,13.91339, a Carpino nero (Ostrya carpinifolia, girth 2.0m) 2.6km out at 40.73987,13.92372, roughly 2.8km from the first tree rather than genuinely clustered, and a Fico magnolioide (Ficus macrophylla, girth 8.0m) 17.0km away and unrelated to either. That is below the six-candidate floor for dispatching a verify pass, and even at 3 candidates the city sits below the four-tree floor a page needs. No Wikidata leads within range. Kept so nobody re-runs this hunt against Ischia; re-open only if a new register or a walkable cluster of leads turns up near the city centre."
   },
   {
-   "rank": 308,
+   "rank": 307,
    "city": "Izmir",
    "country": "Turkey",
    "slug": "izmir",
@@ -7157,7 +7134,7 @@
    "wikidata": 2
   },
   {
-   "rank": 309,
+   "rank": 308,
    "city": "Bangkok",
    "country": "Thailand",
    "slug": "bangkok",
@@ -7180,7 +7157,7 @@
    "wikidata": 0
   },
   {
-   "rank": 310,
+   "rank": 309,
    "city": "Belfast",
    "country": "United Kingdom",
    "slug": "belfast",
@@ -7203,7 +7180,7 @@
    "wikidata": 0
   },
   {
-   "rank": 311,
+   "rank": 310,
    "city": "Tarragona",
    "country": "Spain",
    "slug": "tarragona",
@@ -7226,7 +7203,7 @@
    "wikidata": 9
   },
   {
-   "rank": 312,
+   "rank": 311,
    "city": "Stirling",
    "country": "United Kingdom",
    "slug": "stirling",
@@ -7249,7 +7226,7 @@
    "wikidata": 1
   },
   {
-   "rank": 313,
+   "rank": 312,
    "city": "Killarney",
    "country": "Ireland",
    "slug": "killarney",
@@ -7272,7 +7249,7 @@
    "wikidata": 0
   },
   {
-   "rank": 314,
+   "rank": 313,
    "city": "Dijon",
    "country": "France",
    "slug": "dijon",
@@ -7295,7 +7272,7 @@
    "wikidata": 0
   },
   {
-   "rank": 315,
+   "rank": 314,
    "city": "Trier",
    "country": "Germany",
    "slug": "trier",
@@ -7319,7 +7296,7 @@
    "settled": "VERDICT: Trier has no publishable supply right now, checked 2026-09-17. city_queue.py --next lists 9 register rows and 4 Wikidata candidates within 20km, all pulled from data/registers/luxembourg-anf.json by raw distance. Read each row's own 'commune' field: every one sits in Rosport-Mompach, Mertert, Manternach, Echternach, Berdorf or Flaxweiler, all Luxembourg communes 10.7 to 21 km away, across the border. None of them is a Trier (Germany) tree; the queue's near() distance search does not know about the international boundary. This matches the exact mistake CLAUDE.md already records for Florence/Fiesole and Milan/wider-metropolitan-area register rows: distance is not the same question as jurisdiction. Kept so nobody re-runs this hunt against Trier. Not investigated as a possible Luxembourg-side city (Echternach or a Mullerthal-region cluster): the candidates share a real geographic cluster around Rosport-Mompach/Mertert/Manternach/Echternach/Berdorf and might be worth a fresh brief under one of those names, but that is a different city than Trier and out of scope for this note."
   },
   {
-   "rank": 316,
+   "rank": 315,
    "city": "Annecy",
    "country": "France",
    "slug": "annecy",
@@ -7342,7 +7319,7 @@
    "wikidata": 0
   },
   {
-   "rank": 317,
+   "rank": 316,
    "city": "Pisa",
    "country": "Italy",
    "slug": "pisa",
@@ -7374,7 +7351,7 @@
    "score": 1.64,
    "basis": "measured",
    "work_score": 1.67,
-   "rank": 318,
+   "rank": 317,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -7388,7 +7365,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 319,
+   "rank": 318,
    "city": "Auckland",
    "country": "New Zealand",
    "slug": "auckland",
@@ -7411,7 +7388,7 @@
    "wikidata": 1
   },
   {
-   "rank": 320,
+   "rank": 319,
    "city": "Breda",
    "country": "Netherlands",
    "slug": "breda",
@@ -7443,7 +7420,7 @@
    "score": 1.64,
    "basis": "measured",
    "work_score": 1.64,
-   "rank": 321,
+   "rank": 320,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -7455,6 +7432,29 @@
    "slug": "fort-worth",
    "impressions_10d": 3,
    "clicks_10d": 0
+  },
+  {
+   "rank": 321,
+   "city": "Hilo",
+   "country": "United States",
+   "slug": "hilo",
+   "score": 1.64,
+   "demand": null,
+   "basis": "measured",
+   "status": "published",
+   "trees": 6,
+   "photos": 0,
+   "walks": 1,
+   "register": 0,
+   "ready": 0,
+   "supply": 0,
+   "target": 10,
+   "impressions_10d": 3,
+   "clicks_10d": 0,
+   "ease": 1.0,
+   "work_score": 1.64,
+   "travel": 6543,
+   "wikidata": 0
   },
   {
    "city": "Middletown",
@@ -7517,14 +7517,14 @@
    "walks": 1,
    "register": 26,
    "ready": 0,
-   "supply": 205,
+   "supply": 204,
    "target": 20,
    "ease": 1.5,
    "work_score": 1.64,
    "impressions_10d": 4,
    "clicks_10d": 0,
    "travel": 2057,
-   "wikidata": 179
+   "wikidata": 178
   },
   {
    "rank": 325,
@@ -8248,30 +8248,6 @@
   },
   {
    "rank": 356,
-   "city": "Maui",
-   "country": "United States",
-   "slug": "maui",
-   "score": 0.55,
-   "demand": null,
-   "basis": "measured",
-   "status": "published",
-   "trees": 4,
-   "photos": 0,
-   "walks": 0,
-   "register": 3,
-   "ready": 0,
-   "supply": 3,
-   "target": 20,
-   "impressions_10d": 1,
-   "clicks_10d": 0,
-   "ease": 1.06,
-   "work_score": 0.58,
-   "travel": 2331,
-   "kind": "island",
-   "wikidata": 0
-  },
-  {
-   "rank": 357,
    "city": "Buenos Aires",
    "country": "Argentina",
    "slug": "buenos-aires",
@@ -8294,7 +8270,7 @@
    "wikidata": 2
   },
   {
-   "rank": 358,
+   "rank": 357,
    "city": "Riga",
    "country": "Latvia",
    "slug": "riga",
@@ -8317,7 +8293,7 @@
    "wikidata": 1
   },
   {
-   "rank": 359,
+   "rank": 358,
    "city": "Bucharest",
    "country": "Romania",
    "slug": "bucharest",
@@ -8337,6 +8313,30 @@
    "ease": 1.0,
    "work_score": 0.55,
    "travel": 7376,
+   "wikidata": 0
+  },
+  {
+   "rank": 359,
+   "city": "Maui",
+   "country": "United States",
+   "slug": "maui",
+   "score": 0.55,
+   "demand": null,
+   "basis": "measured",
+   "status": "published",
+   "trees": 4,
+   "photos": 0,
+   "walks": 0,
+   "register": 0,
+   "ready": 0,
+   "supply": 0,
+   "target": 20,
+   "impressions_10d": 1,
+   "clicks_10d": 0,
+   "ease": 1.0,
+   "work_score": 0.55,
+   "travel": 2331,
+   "kind": "island",
    "wikidata": 0
   },
   {

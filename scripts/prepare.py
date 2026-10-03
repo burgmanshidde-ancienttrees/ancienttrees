@@ -47,8 +47,41 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 from geo import km              # noqa: E402
 import city_queue as Q          # noqa: E402
 
-STAGE_LIMIT = 5        # cities stocked per invocation: fresh beats plentiful
+STAGED_FIRST = []      # set by pipeline_status, read by refill_batches
+STAGE_LIMIT = 5       # cities stocked per invocation: fresh beats plentiful
 MIN_CANDIDATES = 3     # below this a staging file is not worth a pass
+
+
+def tree_level(la, lo):
+    """Is this a coordinate for one trunk, or a grid square?
+
+    Three decimals or fewer on both axes is ~110 m or coarser, which can never
+    become a confirmed pin. Measured 2026-10-03 across all 57 registers: exactly
+    one is like that, Hawaii's (all 338 rows), and two night passes of ~150k
+    tokens each went into it on 10-02 for zero trees, because nothing upstream
+    said its pins could not be confirmed.
+    """
+    def dp(v):
+        s = repr(float(v))
+        return len(s.split(".")[1].rstrip("0")) if "." in s else 0
+    return dp(la) > 3 or dp(lo) > 3
+
+
+def claimable():
+    """(proven slugs, focus countries, supply-focus countries), from the same
+    files passcheck --claim reads, so the shelf never stages work the claim
+    will refuse. On 2026-10-03 it held 49 staged cities and 46 of them could
+    not be claimed for a verify pass at all."""
+    try:
+        from passcheck import FOCUS_COUNTRIES, SUPPLY_FOCUS
+    except Exception:
+        FOCUS_COUNTRIES, SUPPLY_FOCUS = set(), []
+    try:
+        with open(os.path.join(ROOT, "data", "depth-roster-frozen.json"), encoding="utf-8") as fh:
+            proven = set((json.load(fh).get("cities") or {}).keys())
+    except (OSError, ValueError):
+        proven = set()
+    return proven, set(FOCUS_COUNTRIES), list(SUPPLY_FOCUS)
 
 
 def register_rows():
@@ -62,7 +95,7 @@ def register_rows():
             la = r.get("latitude", r.get("lat"))
             lo = r.get("longitude", r.get("lng"))
             try:
-                if la is not None and lo is not None:
+                if la is not None and lo is not None and tree_level(la, lo):
                     rows.append((float(la), float(lo), os.path.basename(path)[:-5], r))
             except (TypeError, ValueError):
                 continue
@@ -123,9 +156,20 @@ def stage(rows, city):
         return None
     out = []
     live = live_trees(slug)
+    try:
+        from passcheck import already_judged
+    except Exception:
+        already_judged = None
     for la, lo, reg, r in rows:
         d_km = km((la, lo), pos)
         if d_km > 5:
+            continue
+        # A row an earlier pass already put in leads or blocked is not a
+        # candidate. This used to be done by skipping any city with a leads
+        # file at all, which also skipped every city worth deepening: Berlin,
+        # the one register that shipped trees on 10-03, was never staged.
+        sp = r.get("species") or r.get("species_latin") or r.get("species_name")
+        if already_judged and already_judged(la, lo, sp):
             continue
         e = {k: v for k, v in r.items() if k != "geometry"}
         e["register"] = reg
@@ -199,8 +243,45 @@ def pipeline_status():
                      ("  note: " + l["note"].strip()[:36]) if (l.get("note") or "").strip() else ""))
         print("      python3 scripts/corroborate.py <lat> <lng> --country <country>"
               "   asks the registers AND Wikipedia")
-    print("  staged for verify : %d file(s)  %s" % (
-        len(staged), " ".join(os.path.basename(p).split("-register")[0] for p in staged) or "(empty)"))
+    # Split by whether a verify claim would be accepted. Older staging files
+    # for cities outside the proven roster or the focus countries stay on disk
+    # (nothing is thrown away) but are named apart, so a run does not pick one
+    # and spend its window being refused.
+    proven, focus, supply = claimable()
+    try:
+        with open(os.path.join(ROOT, "data", "city-queue.json"), encoding="utf-8") as fh:
+            qc = {c["slug"]: c.get("country") for c in json.load(fh)["cities"]}
+    except (OSError, ValueError, KeyError):
+        qc = {}
+    names = [os.path.basename(p).split("-register")[0] for p in staged]
+
+    def has_tree_level(slug):
+        p = os.path.join(ROOT, "data", "research", f"{slug}-register-candidates.json")
+        try:
+            rows = json.load(open(p, encoding="utf-8"))
+        except (OSError, ValueError):
+            return False
+        for r in rows if isinstance(rows, list) else []:
+            try:
+                if tree_level(r.get("latitude", r.get("lat")), r.get("longitude", r.get("lng"))):
+                    return True
+            except (TypeError, ValueError):
+                continue
+        return False
+
+    ok = [s for s in names if (not proven or s in proven) and (not focus or qc.get(s) in focus)
+          and has_tree_level(s)]
+    global STAGED_FIRST
+    STAGED_FIRST = [s for s in ok if qc.get(s) in supply]
+    ok.sort(key=lambda s: (qc.get(s) not in supply, s))
+    parked = [s for s in names if s not in ok]
+    print("  staged for verify : %d claimable  %s" % (
+        len(ok), " ".join("%s%s" % (s, "*" if qc.get(s) in supply else "") for s in ok) or "(empty)"))
+    if ok:
+        print("      (* = where the visitors are: the US, the UK, Germany. Take those first.)")
+    if parked:
+        print("  parked            : %d staged file(s) a verify claim would refuse, or "
+              "whose coordinates cannot become a confirmed pin" % len(parked))
     # Count TREES that still need a story, not FILES that exist. A verified
     # file survives its own merge: nothing deletes it once the stories are
     # written, so the shelf kept reporting work that had already shipped. On
@@ -208,7 +289,12 @@ def pipeline_status():
     # fully published and the true number was zero, which is the first thing a
     # night run reads at the top of its window. Same disease as the leads file
     # offering held trees back as READY: a queue that cannot see completion.
-    waiting, stale = [], []
+    try:
+        from leads import has_photo_or_pin as _photo_or_pin
+    except Exception:
+        _photo_or_pin = lambda t: True
+    _proven = claimable()[0]
+    waiting, stale, held = [], [], []
     for p in verified:
         slug = os.path.basename(p).split("-verified")[0]
         try:
@@ -225,9 +311,25 @@ def pipeline_status():
                 pass
         todo = [t for t in rows if t.get("id") not in live]
         (waiting if todo else stale).append((slug, len(todo)))
+        # A file that is not a proven city cannot be claimed for writing, so
+        # all of it waits, whatever its trees carry.
+        blocked_here = (todo if (_proven and slug not in _proven)
+                        else [t for t in todo if not _photo_or_pin(t)])
+        if blocked_here:
+            held.append((slug, len(blocked_here)))
+    held_n = dict(held)
     print("  awaiting a writer : %d tree(s)  %s" % (
-        sum(n for _, n in waiting),
-        " ".join(f"{s}({n})" for s, n in waiting) or "(empty)"))
+        sum(n - held_n.get(s, 0) for s, n in waiting),
+        " ".join(f"{s}({n - held_n.get(s, 0)})" for s, n in waiting
+                 if n - held_n.get(s, 0) > 0) or "(empty)"))
+    if held:
+        # Written or verified, and refused by preflight until a photograph or a
+        # confirmed pin exists. On 10-02 runs merged and reverted these seven
+        # times; they are depth work (photo_fetch / a pin check), not writing.
+        print("  held               : %d tree(s)  %s  (no photo or confirmed pin, "
+              "or not a proven city; a photo or pin pass frees the first kind. "
+              "Do NOT merge them as they are)"
+              % (sum(held_n.values()), " ".join(f"{s}({n})" for s, n in held)))
     if stale:
         print("  fully published, safe to delete : %s"
               % " ".join(s for s, _ in stale))
@@ -419,22 +521,63 @@ def refill_batches(b, want=3):
     complete rather than with a gap.
     """
     import collections
+    # A staged register city where the visitors are beats any leads batch:
+    # its rows carry tree-level coordinates, so a verify pass can confirm the
+    # pins, which is what Berlin and Dresden did on 10-03 for 25 trees.
+    if STAGED_FIRST:
+        return ["      verify a STAGED city first, where the visitors are: "
+                + " ".join(STAGED_FIRST)
+                + "\n      brief: python3 scripts/passcheck.py --brief <city>; verify "
+                "agent, per BRIEF_RESEARCH.md (one official register is enough)."]
     per = collections.Counter()
     photos = collections.Counter()
+    # Only batches a claim would accept and preflight could publish (2026-10-03).
+    # The old order put `_tree-of-the-year` (73 leads, none with a photograph)
+    # and `_famous-portugal` (refused at claim time: not a proven city) first,
+    # and on 10-02 runs took exactly those and shipped nothing. An underscore
+    # file is never a proven city, so it is a reader-submission matter now.
+    proven, focus, supply = claimable()
+    try:
+        from leads import has_photo_or_pin
+    except Exception:
+        has_photo_or_pin = lambda e: True
+    countries = {}
+    try:
+        with open(os.path.join(ROOT, "data", "city-queue.json"), encoding="utf-8") as fh:
+            countries = {c["slug"]: c.get("country") for c in json.load(fh)["cities"]}
+    except (OSError, ValueError, KeyError):
+        pass
     for item in b["needs"]:
         city, lead, miss = item[0], item[1], item[2]
+        if city.startswith("_") or (proven and city not in proven):
+            continue
         if not any(m.startswith("source") for m in miss):
             continue
+        # A lead with no tree-level coordinate and no photograph cannot become
+        # either from a verify pass of its sources alone, so it refills nothing.
+        coords = None
+        if isinstance(lead, dict):
+            loc = lead.get("location") if isinstance(lead.get("location"), dict) else lead
+            la, lo = loc.get("latitude", loc.get("lat")), loc.get("longitude", loc.get("lng"))
+            try:
+                coords = tree_level(la, lo) if la is not None and lo is not None else None
+            except (TypeError, ValueError):
+                coords = None
+            if not coords and not has_photo_or_pin(lead):
+                continue
         per[city] += 1
-        if isinstance(lead, dict) and lead.get("photos"):
+        if isinstance(lead, dict) and has_photo_or_pin(lead):
             photos[city] += 1
     if not per:
-        return []
+        return ["      no lead batch can refill it: every remaining lead is outside "
+                "the proven cities or has neither a photo nor a tree-level "
+                "coordinate. Verify a STAGED city above, or scout "
+                "(scout_next.py --target)."]
+    ranked = sorted(per, key=lambda c: (countries.get(c) not in supply, -per[c]))
     out = ["      the batches that would refill it, biggest first:"]
-    for city, n in per.most_common(want):
-        kind = "country batch" if city.startswith("_famous-") else "city"
-        out.append("        %-26s %3d unsourced, %3d with a photo already  (%s)"
-                   % (city, n, photos[city], kind))
+    for city in ranked[:want]:
+        out.append("        %-26s %3d unsourced, %3d with a photo or pin already  (%s)"
+                   % (city, per[city], photos[city], countries.get(city) or "?"))
     out.append("      brief it from data/leads/<name>.json; verify agent, per "
                "BRIEF_RESEARCH.md.")
     return out
@@ -486,26 +629,34 @@ def main():
         queue = json.load(fh)["cities"]
     busy = claimed()
     rows = register_rows()
+    proven, focus, supply = claimable()
+    # Where the visitors are first (SUPPLY_FOCUS), then the other focus
+    # countries, each in queue order. A city outside the proven roster or the
+    # focus countries is refused at claim time, so it is not staged at all.
+    order = sorted(
+        [c for c in queue if c.get("rank")
+         and (not proven or c["slug"] in proven)
+         and (not focus or c.get("country") in focus)],
+        key=lambda c: (c.get("country") not in supply, c["rank"]))
     done = 0
-    for c in queue:
+    for c in order:
         if done >= STAGE_LIMIT:
             break
-        if not c.get("rank") or c["rank"] > 250:
-            continue
         # Live count from data/cities, never the queue's copy: the queue is
         # regenerated periodically and its tree counts lag the same afternoon
-        # that changes them. And the sprint only: cities at 10 or more wait,
-        # because nothing deepens while the sprint runs (Hidde, 2026-08-13).
-        if live_count(c["slug"]) >= 10:
-            continue
-        if already_worked(c["slug"]):
+        # that changes them. Below TARGET, not below ten: the sprint-to-ten of
+        # 2026-08-13 ended with recovery mode (2026-10-01), which puts new
+        # trees into proven cities ahead of new places.
+        if live_count(c["slug"]) >= (c.get("target") or 10):
             continue
         if c["city"].lower() in busy or c["slug"] in busy:
             continue
         path = os.path.join(ROOT, "data", "research", f"{c['slug']}-register-candidates.json")
-        if os.path.exists(path):
-            continue
-        if os.path.exists(os.path.join(ROOT, "data", "research", f"{c['slug']}-verified.json")):
+        # A staging file is restocked once it is a day old, because the leads
+        # it was built against move every run. A verified file no longer stops
+        # staging: Berlin had one (a single held tree) and so was never staged.
+        if os.path.exists(path) and (datetime.datetime.now().timestamp()
+                                     - os.path.getmtime(path)) < 86400:
             continue
         n = stage(rows, c)
         if n:

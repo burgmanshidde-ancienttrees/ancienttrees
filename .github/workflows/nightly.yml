@@ -34,10 +34,14 @@ env:
        is fully verified and needs only a story: the work is bought and paid
        for and one write pass finishes it. If the list is not empty, dispatch
        a write-stories agent on up to 20 of them ACROSS cities per
-       BRIEF_WRITING.md, merge, build, commit. Do that before you consider
-       anything else, and do it again if the clock allows.
-    4. Only if that list is empty, read CLAUDE.md and execute "The research
-       workflow (autonomous run)" from Step 0 as written.
+       BRIEF_WRITING.md, merge, run preflight, commit. Do that before you
+       consider anything else, and do it again if the clock allows.
+    4. Only if that list is empty: `python3 scripts/prepare.py --status`. If
+       it names a staged city where the visitors are, claim it and dispatch a
+       verify agent on it now. If it names nothing workable, run
+       `python3 scripts/scout_next.py --target` and do what it prints.
+       Ending with nothing dispatched is not an option while either names
+       work. Then read CLAUDE.md for anything else Step 0 asks.
 
     The one thing not to repeat: do not spend this attempt on orientation and
     claiming. Reading state, staging candidates and recording a claim are the
@@ -584,10 +588,10 @@ jobs:
               were refused commands, one in eleven, and `for` appeared in 37 of
               those 39 runs. Each refusal costs the turn plus the retry.
               When you need a loop, a pipeline or several steps, do it in Python
-              instead: `python3 -c "..."`, `python3 -` with a heredoc, or a small
-              script under scripts/. All three are one command starting with
-              python3, which is what the list matches on, and Python is what the
-              rest of this project already uses for exactly this.
+              instead: a one-line `python3 -c "..."`, or Write the code to
+              out/tmp/<name>.py and run `python3 out/tmp/<name>.py`. Not a
+              heredoc: it is multi-line and refused (this line recommended one
+              until 2026-10-03, contradicting the two paragraphs that forbid it).
               If a single uncompounded command is still refused, say which one in
               LOG.md. That is now a fact worth reporting rather than noise: since
               2026-09-19 the record names the whole shape, so a refusal with no
@@ -617,8 +621,11 @@ jobs:
             command; the workflow log does not record that and you are the only
             witness.
 
-            PAGE GAPS ARE PART OF THE WORK, not a separate project. Run
-            `python3 scripts/pagegaps.py` in every run. It prints the species,
+            PAGE GAPS COME AFTER TREES, never instead of them: a window that
+            still has a staged city, a held tree it can free or a scouting
+            target does that first (on 2026-10-02 a continuation wrote three
+            country intros while Munich and Portland sat unstaged). When those
+            are done, run `python3 scripts/pagegaps.py`. It prints the species,
             country and park pages the data has earned and nobody has written,
             biggest first, and every one of them is an entry from Google that
             does not exist while its trees do. Writing an intro is small, cheap
@@ -647,8 +654,12 @@ jobs:
             top one you can move cheaply and STOP AT THE TARGET: leftover
             candidates stay leads. Do not use any city order remembered from
             this prompt or from CLAUDE.md, and do not deepen a city that has no
-            target. LONDON IS GATED: never research it and never touch Woodland
-            Trust ATI data.
+            target. THE LONDON GATE IS ABOUT DATA, NOT THE CITY: never touch
+            Woodland Trust Ancient Tree Inventory data (no written permission).
+            London's trees from other sources (its parks, the Royal Parks, the
+            borough lists) are ordinary work. This line said "never research
+            it" until 2026-10-03, which kept the UK's biggest city out of reach
+            while the UK is one of the three countries the visitors come from.
 
             Before dispatching or starting any pass on a place, claim it:
             python3 scripts/passcheck.py --claim <place> --kind verify, commit
@@ -659,12 +670,12 @@ jobs:
             eighteen trees, and published zero: the hour ran out mid-write and
             the whole top of the queue sat locked behind expiring claims. A
             city merged, built and pushed is worth more than three assembled,
-            so the loop is: claim one small batch, write it, merge it, run the
-            build, commit, release, and only then claim the next.
+            so the loop is: claim one small batch, write it, merge it, run
+            preflight, commit, release, and only then claim the next.
 
             What a good city run produces, and it is one city done properly:
-            - Between 8 and 10 highlighted trees for an ordinary city, and for a
-              large one two or three clusters of 6 to 8 rather than a long list.
+            - Trees up to the city's target in data/city-queue.json, chosen in
+              walkable clusters of 4 to 8 rather than as a long list.
               A cluster is trees within roughly 2 km of each other, because the
               walk is the product; the measured proof is Cadiz at 600 metres
               reading as a good afternoon while Kyoto at 35 km does not.
@@ -685,20 +696,33 @@ jobs:
               the push.
 
             How to find the trees, in this order, because it is far faster than a
-            web sweep: the country's official register if it has one (see
-            OPEN_DATA_SURVEY.md; Portugal's ICNF and Japan's Environment Ministry
-            giant-tree database are both cleared for use, Spain has regional and
-            municipal catalogues), then the city's named parks and sacred ground,
-            then the generic sweep for whatever is left. Use
+            web sweep: the staged register candidates prepare.py names (a
+            register already imported under data/registers/, with tree-level
+            coordinates), then Wikidata candidates and leads that passcheck.py
+            --brief prints, then the city's named parks and sacred ground, then
+            the generic sweep for whatever is left. Use
             python3 scripts/cluster_register.py on a register to get the walkable
             groups before deciding which trees a city gets.
 
-            There are no focus countries any more; CITY_QUEUE.md scores places
-            individually and its order already reflects supply and demand. Do not start a city that already has a file
-            in data/cities or that LOG.md shows in flight.
+            WHERE: the focus countries are a CHECK, not a sentence here.
+            passcheck.py --claim refuses a place outside FOCUS_COUNTRIES or the
+            proven roster, and prepare.py and city_queue.py --next put the
+            SUPPLY_FOCUS countries (where the visitors are) first; CLAUDE.md
+            says why. Follow what they print. Until 2026-10-03 this paragraph
+            said "there are no focus countries any more", which sent runs to
+            places their own claim then refused.
 
-            Whatever the work turns out to be: verify against two independent
-            sources, follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
+            A TREE PREFLIGHT WILL REFUSE IS NOT WORK. prepare.py's "held" line
+            names trees that are written or verified but have neither a
+            photograph nor a confirmed pin. Do not merge them to see what
+            happens; on 2026-10-02 runs merged and reverted the same seven
+            trees again and again. They move only through a photograph (a
+            viewing pass) or pin evidence, and a verify pass that cannot
+            produce one of the two for a tree hands that tree back as a lead.
+
+            Whatever the work turns out to be: verify per BRIEF_RESEARCH.md
+            (one official register is enough; otherwise two independent
+            sources), follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
             location_precision on every tree you touch, run
             `python3 scripts/preflight.py` (0 problems), then commit, append to
             LOG.md, and push.
