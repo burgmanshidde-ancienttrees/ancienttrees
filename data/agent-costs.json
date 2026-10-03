@@ -9573,6 +9573,15 @@
    "tokens": 171000,
    "trees": 0,
    "note": "0 delivered: no open photo or confirmed pin; Treaty Tree found felled Aug 2026 and moved to blocked"
+  },
+  {
+   "date": "2026-10-03",
+   "target": "_wikidata-united-states (6 leads)",
+   "kind": "verify",
+   "tokens": 165143,
+   "trees": 0,
+   "verified": 4,
+   "note": "Capped at 30 tool calls, used 25: 4 verified (El Pino, Endicott Pear, Travilah Oak, Sentinel), Linden Oak dead, Alley Pond Giant already ours. ~41k per verified tree against a 50k budget for the whole pass: a tool-call cap does not cap tokens."
   }
  ]
 }

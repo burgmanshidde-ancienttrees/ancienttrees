@@ -1,0 +1,37 @@
+[
+ {
+  "id": "bos_013",
+  "name": "Endicott Pear Tree",
+  "species": "European Pear (Pyrus communis)",
+  "age_estimate": "roughly 390 years",
+  "age_min": 380,
+  "age_max": 395,
+  "girth_cm": null,
+  "location": {
+   "address": "North Shore Medical Center, 100 Endicott Street, Danvers, Massachusetts",
+   "latitude": 42.54823,
+   "longitude": -70.93002,
+   "neighbourhood": "Danvers (about 25 km north of Boston)"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Endicott_Pear_Tree",
+   "https://historicipswich.net/2024/12/24/danvers-pear/",
+   "https://historyofmassachusetts.org/endicott-pear-tree-danvers/",
+   "https://www.openstreetmap.org/node/2510773452"
+  ],
+  "access": "Free. Stands behind a fence beside a hospital parking lot; viewed from the 2011 historic marker at the viewing level over the lot and from the medical centre's public lobby display. Not enterable.",
+  "transport": "Danvers, roughly 35 to 45 minutes by car from central Boston; by public transport commuter rail to Salem or Beverly plus a local bus or taxi, 75 minutes or more (not route-checked).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "- Oldest living cultivated fruit tree in North America per enwiki; planted 1632 to about 1640 by John Endecott (spelled Endicott on the tree), governor of Massachusetts Bay Colony. Only survivor of his orchard.\n- Alive: search result dates a May 2025 photograph, and a Dec 2024 article says it still bears fruit. I did not open those pages; treat as one soft dated source.\n- 1770 storm survived; 1964 vandals hacksawed the branches and trunk down to about 6 ft; chain-link and barbed wire fence then installed. 1952 CBS-Hytron plant and parking lot left it nearly hidden. 2009 lobby display, 2011 marker by Colonial Dames. Reported 80 ft by 1875 (not today). Fruit is a Bon Chretien sugar pear.\n- Owner 2004: North Shore Medical Center; maintained with Danvers Tree and Grounds.\n- Pin: Wikidata 42.548238,-70.930013 and OSM node 2510773452 (42.548227,-70.930052) agree, but probably share a source and the tree is tucked beside a lot, so left approximate.\n- Commons photo is a 1997 USDA photo, public domain: old, check it still shows the tree as it is.",
+  "photo_candidates": [
+   {
+    "file": "File:Endicott pear.jpeg",
+    "url": "https://commons.wikimedia.org/wiki/File:Endicott_pear.jpeg",
+    "license": "Public domain",
+    "attribution": "Joseph D. Postman (USDA), photo 1997",
+    "status": "found_needs_check"
+   }
+  ]
+ }
+]

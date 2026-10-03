@@ -1,0 +1,36 @@
+[
+ {
+  "id": "seq_007",
+  "name": "Sentinel Tree",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 2403,
+  "location": {
+   "address": "In front of the Giant Forest Museum, Generals Highway, Sequoia National Park, California",
+   "latitude": 36.56487,
+   "longitude": -118.77305,
+   "neighbourhood": "Giant Forest"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Sentinel_Tree",
+   "https://www.nps.gov/seki/learn/historyculture/gfgfm.htm",
+   "https://www.openstreetmap.org/node/1751781798"
+  ],
+  "access": "Park entry fee; the tree stands at the museum plaza and can be walked right up to; a sidewalk ruler in the plaza marks its height (NPS).",
+  "transport": "Drive only in practice; shuttle in season to the museum (not checked); zero walking from the museum car park.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "- Giant sequoia, 78.5 m (257.6 ft) tall, 7.65 m (25.1 ft) diameter at 1.5 m (so girth about 24 m, my conversion; enwiki, Flint 2002), bole volume 790 m3, 43rd largest giant sequoia, two burn scars at the base. Age not stated anywhere I found; leave empty.\n- Alive: the 2021 KNP Complex fire stopped short of the Giant Forest and firefighters wrapped the Giant Forest Museum and other sequoias (news, Sep 2021); enwiki says rank may be 41st or 42nd after the 2015 to 2017 fires killed other sequoias. No tree-specific dated sighting after 2021 found; the NPS page I fetched was last updated 2016 and says nothing on Sentinel.\n- The walkway ruler exhibit in the plaza is NPS-signed (nps.gov/places 'sentinel tree ruler').\n- Pin: Wikidata 36.56486,-118.77306, OSM node 1751781798 (36.5648692,-118.7730503, name Sentinel Tree, historic=yes) agree within 8 m, and the tree is the landmark of a plaza, so confirmed.",
+  "photo_candidates": [
+   {
+    "file": "File:Sentinel tree - Sequoia National Park - May 2016 (26922686733).jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Sentinel_tree_-_Sequoia_National_Park_-_May_2016_(26922686733).jpg",
+    "license": "CC BY-SA 2.0",
+    "attribution": "m01229 from USA, via Flickr, 2016-05-24",
+    "status": "found_needs_check"
+   }
+  ]
+ }
+]
