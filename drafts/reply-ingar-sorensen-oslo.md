@@ -7,7 +7,7 @@ City of Oslo and will check which, if we send the list. He also points at the
 municipality's map of old trees (no photos, no exact locations).
 
 What happened on our side before this goes out: his two Birkelunden frames are
-on /oslo/the-birches-of-birkelunden, the wide autumn one as lead and the path
+on /oslo/birches-of-birkelunden, the wide autumn one as lead and the path
 as extra, credited "Ingar Sørensen" with the credit linking to his site. Oslo
 lists four trees and none of the other three has a photograph.
 
@@ -18,7 +18,7 @@ Send from your own Gmail, in the existing thread.
 Hi Ingar,
 
 Thank you. Your two Birkelunden photographs are on the page now, and the credit links to sorensenfoto.no:
-https://ancienttrees.app/oslo/the-birches-of-birkelunden
+https://ancienttrees.app/oslo/birches-of-birkelunden
 
 The Oslo list is short so far, four trees, and the other three have no photograph at all:
 https://ancienttrees.app/oslo

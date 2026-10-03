@@ -11,6 +11,12 @@ const photoFields = z
     url: z.string().nullable().optional(),
     license: z.string().nullable().optional(),
     attribution: z.string().nullable().optional(),
+    // Where the printed name links (2026-10-03). Zod strips what it does not
+    // name, and this field shipped in the data, the component and the feed
+    // while missing here, so a photographer was promised a linked credit that
+    // no page could draw. preflight's check_photo_fields_reach_the_site() now
+    // refuses a photo key in data/cities that this schema does not name.
+    attribution_url: z.string().url().nullable().optional(),
     status: z.enum(["missing", "found_needs_check", "approved", "held"]).optional(),
     // Recorded by scripts/photo_check.py. Zod strips keys it does not name, so
     // leaving these out meant the app feed shipped 353 photos with null
