@@ -9549,6 +9549,30 @@
    "tokens": 154000,
    "trees": 8,
    "note": "8 stories + recognition lines merged, Portland 24 -> 32; preflight 0 problems"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "verify",
+   "target": "nuremberg",
+   "tokens": 173000,
+   "trees": 0,
+   "note": "4 delivered, only 2 with a confirmed pin; 2 held as leads"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "write",
+   "target": "nuremberg",
+   "tokens": 149000,
+   "trees": 2,
+   "note": "nbg_013, nbg_016 EN+DE, Nuremberg 12 -> 14; preflight 0 problems"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "verify",
+   "target": "spokane",
+   "tokens": 171000,
+   "trees": 0,
+   "note": "0 delivered: no open photo or confirmed pin; Treaty Tree found felled Aug 2026 and moved to blocked"
   }
  ]
 }

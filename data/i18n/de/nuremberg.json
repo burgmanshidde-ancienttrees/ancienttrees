@@ -1,11 +1,11 @@
 {
  "_note": "de overlay for nuremberg, written 2026-09-17 from data/cities/nuremberg.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
  "city": "Nürnberg",
- "title": "Alte Bäume in Nürnberg: 12 bemerkenswerte Exemplare",
- "meta_description": "Zwölf geschützte Nürnberger Bäume, neun davon auf einem Weg: eine 400 Jahre alte Linde, sechs in einem früheren Quarantänegarten, Buchen, Platanen.",
- "intro": "Neun der zwölf geschützten Bäume Nürnbergs stehen im Umkreis von einem Kilometer um die Altstadt, und sechs teilen sich einen einzigen Park von unter zwei Hektar. Der Kontumazgarten hat seinen Namen von einer Quarantänestation und trägt heute Platanen, Buchen und eine Kastanie, jede einzeln per städtischer Verordnung geschützt. Drei weitere stehen abseits in Wöhrd: eine Linde im Stadtpark mit acht Metern Stammumfang, die am besten belegte von allen mit ihren rund vierhundert Jahren, und ein Buchenpaar, achtzig Meter voneinander entfernt im Cramer-Klett-Park, jede mit eigener Nummer und keine von beiden datiert.",
+ "title": "Alte Bäume in Nürnberg: 14 bemerkenswerte Exemplare",
+ "meta_description": "Vierzehn geschützte Nürnberger Bäume, neun auf einem Weg: eine 400 Jahre alte Linde, sechs im Quarantänegarten, eine Eiche am See, eine Königsbirne.",
+ "intro": "Neun der vierzehn geschützten Bäume Nürnbergs stehen im Umkreis von einem Kilometer um die Altstadt, sechs davon im Kontumazgarten, einem Park von unter zwei Hektar, benannt nach einer Quarantänestation. Drei weitere stehen abseits in Wöhrd: eine Linde im Stadtpark mit acht Metern Stammumfang, mit rund vierhundert Jahren die am besten belegte von allen, und ein undatiertes Buchenpaar im Cramer-Klett-Park. Die letzten beiden liegen weiter draußen: eine Eiche am Ufer des Nummernweihers im Volkspark Dutzendteich und in Gebersdorf eine Holzbirne, die den Namen Gustav Adolfs von Schweden trägt.",
  "question_title": "Was ist der älteste Baum Nürnbergs? Die Linde im Stadtpark",
- "question_meta": "Nürnbergs ältester Baum ist die Linde im Stadtpark, etwa 400 Jahre alt, mit acht Metern Stammumfang. Wo sie steht, dazu elf weitere Bäume.",
+ "question_meta": "Nürnbergs ältester Baum ist die Linde im Stadtpark, etwa 400 Jahre alt, mit acht Metern Stammumfang. Wo sie steht, dazu dreizehn weitere Bäume.",
  "question_answer": "Der älteste Baum Nürnbergs ist die Sommerlinde im Stadtpark, auf etwa vierhundert Jahre geschätzt und mit einem Stamm von rund acht Metern Umfang, womit sie zugleich der älteste und der dickste Baum dieser Seite ist. Sie steht in einem kostenlosen öffentlichen Park, etwa fünfzehn Gehminuten vom Cluster am Kontumazgarten entfernt. Sie ist auch die am besten belegte: Zwei unabhängige Quellen beschreiben sie, während die meisten geschützten Bäume der Stadt allein auf der Verordnung ruhen.",
  "question_context": "Nürnberg schützt einzelne Bäume per städtischer Verordnung und nicht über eine Landesliste, und das bayerische Register, das sie führt, nennt eine Nummer, einen deutschen Namen und eine Koordinate, ohne Artenspalte, ohne Stammumfang und ohne Alter. Die Arten auf dieser Seite stammen deshalb aus der städtischen Verordnung von 2020 und aus lokalen Quellen, und mehrere sind nur bis zur Gattung bestimmt oder aus dem deutschen Namen des Baums erschlossen statt zweifelsfrei bestätigt; jede dieser Seiten sagt das auch. Die Dünne der Quellen wirkt in beide Richtungen. Der Abgleich der Landesebene mit der geltenden städtischen Verordnung förderte zwei geschützte Bäume zutage, die das Land weiterhin als aktuell führt und die Verordnung nicht mehr trägt, beide an Adressen, an denen deutsche Quellen Naturdenkmäler verzeichnen, die einem Pilzbefall zum Opfer fielen. Die fehlen hier. Vier weitere stehen auf privatem Grund, eines ist eine Allee aus neunundsiebzig Bäumen ohne Platz zum Stehen, und zwei stehen in Innenhöfen von Institutionen.",
  "faq": [
@@ -15,11 +15,11 @@
   },
   {
    "q": "Kann ich Nürnbergs geschützte Bäume auf einem Weg sehen?",
-   "a": "Neun der zwölf, ja. Sechs stehen im Kontumazgarten und drei auf der Hallerwiese, alle im Umkreis von etwa einem Kilometer um das Zentrum. Die Linde im Stadtpark und das Paar im Cramer-Klett-Park sind eigene Stationen in Wöhrd, weitere fünfzehn bis zwanzig Gehminuten von der Altstadt entfernt."
+   "a": "Neun der vierzehn, ja. Sechs stehen im Kontumazgarten und drei auf der Hallerwiese, alle im Umkreis von etwa einem Kilometer um das Zentrum. Die Linde im Stadtpark und das Paar im Cramer-Klett-Park sind eigene Stationen in Wöhrd, weitere fünfzehn bis zwanzig Gehminuten von der Altstadt entfernt. Die Eiche am Dutzendteich im Südosten und die Gustav-Adolf-Birne in Gebersdorf im Westen sind eigene Ausflüge."
   },
   {
    "q": "Sind sie frei zugänglich?",
-   "a": "Ja. Jeder Baum auf dieser Seite steht in einem öffentlichen Park oder an einer öffentlichen Straße, ohne Eintritt. Geschützte Bäume auf privatem Grund sind hier bewusst nicht aufgeführt."
+   "a": "Ja. Jeder Baum auf dieser Seite steht in einem öffentlichen Park oder an einer öffentlichen Straße, ohne Eintritt. Die Gustav-Adolf-Birne in Gebersdorf steht an einer Straße, und ob man bis an den Stamm gelangt oder sie nur von der Straße aus sieht, ist noch nicht bestätigt. Geschützte Bäume auf privatem Grund sind hier bewusst nicht aufgeführt."
   }
  ],
  "trees": {
@@ -112,6 +112,22 @@
    "access": "Kostenlos, öffentlicher Stadtpark (Cramer-Klett-Park, Stadtteil Wöhrd; dasselbe Gelände wie ihre Nachbarin ND 29 / nbg_011)",
    "transport": "Kurzer Weg vom Stadtteil Wöhrd, etwa 15-20 Minuten vom Nürnberger Hauptbahnhof/von der Altstadt",
    "story": "Diese Buche und ihre Nachbarin achtzig Meter weiter sind die beiden Überlebenden eines Trios. Eine Blutbuche an anderer Stelle im selben Cramer-Klett-Park wurde 1996 ausgewiesen, mit vier Metern Stammumfang und einer Krone von 23 Metern, und starb um 2009 an Pilzbefall. Dieser Baum, getrennt als Naturdenkmal Nr. 28 eingetragen, trägt weder im Landes- noch im Stadtnachweis vergleichbare Maße, und keine der Zahlen des toten Baums gehört zu ihm, was auch immer ein schneller Blick in die Parkgeschichte nahelegen mag.\n\nBestätigt ist, dass er lebt und im bayerischen Landesregister aktuell geführt wird, in einem Park, der für die Familie Cramer-Klett angelegt wurde, bevor die Stadt das Gelände 1929 kaufte und es zwei Jahre später öffnete. Die Kriegsschäden und die Sanierung von 2019 gehören zur Geschichte des Parks und nicht speziell zu diesem Baum, denn die Quellen erzählen ihn nie für sich. Dass eine Buche so still überlebt, dass niemand ihren Umfang gemessen oder sie datiert hat, ist in einem Park, der schon eine seiner Buchen an eine Krankheit verloren hat, die gewöhnlichere Geschichte, und gewöhnlich ist hier nicht dasselbe wie unbemerkenswert.\n\nGröße und Alter dieses Baums hat niemand veröffentlicht. Wenn Sie unter ihm gestanden haben und sagen können, wie er im Vergleich zu seiner Schwester achtzig Meter weiter dasteht, sagen Sie es uns."
+  },
+  "nbg_013": {
+   "name": "Eiche ND Nr. 34 am Nummernweiher, Volkspark Dutzendteich",
+   "species": "Stieleiche (Quercus robur)",
+   "age_estimate": "nicht dokumentiert",
+   "access": "Kostenlos. Öffentlicher Stadtpark (Volkspark Dutzendteich), jederzeit zugänglich; der Baum steht am Nordufer des Sees.",
+   "transport": "Endhaltestelle der Straßenbahn 4 oder S-Bahn Dutzendteich, etwa 10 Minuten zu Fuß (geschätzt, Entfernung von der Haltestelle nicht gemessen)",
+   "story": "Drei Eichen an einem Seeufer in Nürnberg tragen jede ihre eigene Registriernummer, und dies ist die Nummer 34. Sie steht am Nordufer des östlichen Nummernweihers, eines der Weiher im Volkspark Dutzendteich, und von den dreien ist sie diejenige, deren Standort niemand bestreitet. Das bayerische Landesregister, die deutsche Wikipedia-Liste der Naturdenkmäler der Stadt und das Geotag eines Fotografen setzen sie alle auf etwa drei Meter genau an denselben Punkt.\n\nDiese Einigkeit ist seltener, als sie klingt. Ihre beiden geschützten Nachbarinnen, die Nummern 33 und 31, stehen innerhalb von rund 450 Metern am selben Wasser, und bei beiden liegen die amtlichen Koordinaten zwanzig oder dreißig Meter auseinander. Zu dieser hier kann man direkt hinlaufen.\n\nAnsonsten ist die Aktenlage dünn. Das Register nennt sie schlicht Eiche; die Wikipedia-Liste führt sie als Stieleiche. Das Foto stammt vom Juni 2019, und das Register verzeichnet nichts über den Zustand des Baums, also kann ein Besucher uns besser als jedes Dokument sagen, ob sie noch so aussieht wie in jenem Sommer.\n\nUmfang, Höhe oder Alter hat niemand veröffentlicht. Wenn Sie mit einem Maßband neben ihr gestanden haben oder einfach wissen, wie alt sie ist, sagen Sie es uns."
+  },
+  "nbg_016": {
+   "name": "Gustav-Adolf-Birne (ND Nr. 23), Gebersdorf",
+   "species": "Holzbirne (Pyrus pyraster)",
+   "age_estimate": "nicht dokumentiert",
+   "access": "Steht an der Hügelstraße neben der Sportanlage Gebersdorf. Noch nicht bestätigt, ob der Stamm von öffentlichem Grund aus erreichbar ist oder der Baum nur von der Straße aus zu sehen ist.",
+   "transport": "Gebersdorf, im Südwesten Nürnbergs, etwa 5,5 km vom Zentrum; Bus oder U-Bahn nach Gebersdorf (Haltestelle und Fahrzeit nicht geprüft)",
+   "story": "Diese Holzbirne trägt den Namen eines schwedischen Königs, und niemand hat aufgeschrieben, warum. Nürnbergs Liste der Naturdenkmäler führt sie als Gustav Adolf-Birne, geschützt unter ihrer eigenen Nummer, 23.\n\nNaheliegend ist der Sommer 1632, als Gustav Adolf um Nürnberg kämpfte und Gebersdorf auf dem Schlachtfeld lag. Aber keine Quelle, die wir gefunden haben, sagt, dass dieser Baum damals schon stand, oder erklärt, wann und von wem der Name vergeben wurde. Eine Birne, die nach einem König heißt, ist eine Tatsache. Eine Birne, die ihn kämpfen sah, ist eine Geschichte, die niemand belegt hat, und wir werden nicht die Ersten sein, die sie erzählen.\n\nWas sie hat, ist ihre Art. Pyrus pyraster ist die wilde Birne, kleinfrüchtig und dornig, kein verwilderter Obstbaum. Mitte April 2022 hat ein Fotograf sie in Blüte erwischt, und das ist die Woche, in der man kommen sollte.\n\nSie steht an der Hügelstraße, südwestlich der Sportanlage Gebersdorf. Wir haben nicht bestätigt, ob man bis an den Stamm herankommt oder sie nur von der Straße aus sieht, und Alter oder Umfang hat niemand veröffentlicht. Wenn Sie eines davon wissen, sagen Sie es uns."
   }
  }
 }
