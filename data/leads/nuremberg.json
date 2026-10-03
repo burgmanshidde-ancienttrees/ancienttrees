@@ -43,6 +43,53 @@
    ],
    "name": "Ten oaks, ND Nr. 12-21, Grünanlage Platnersberg, Erlenstegen",
    "reason": "Not individually researched this pass: about 4.2-4.3 km from centre, outside the roughly 2 km walk radius this pass focused on (Kontumazgarten/Hallerwiese/Stadtpark). Officially in a public green space (Grünanlage Platnersberg per the city ordinance, Erlenstegen district), not private, so access looks fine on paper, but which individual oak is which within the ten is unresolved. A local survey (nordbayern.de) names one famous specimen in this area, the 'Bäreneiche' (Bear Oak) near the Bärenbrunnen fountain, roughly 350 years old, 28m tall, 20m crown, 6.8m girth: that could anchor a second Nuremberg walk/cluster in Erlenstegen if a future pass wants to pursue it, but none of these ten ND numbers has been matched to the Bäreneiche specifically yet."
+  },
+  {
+   "register_id": "ND-05061",
+   "name": "ND Nr. 35 Eiche in der Jakob-Wolff-Strasse",
+   "reason": "No photo or exact pin in reach: register 49.42985,11.10555 vs Wikipedia 49.42983,11.10578 (17 m apart); Commons has a 2017 Quercus robur photo, but the tree stands on a lawn in front of a residential block (Jakob-Wolff-Strasse 19/21/23), access unclear."
+  },
+  {
+   "register_id": "ND-05058",
+   "name": "ND Nr. 32 Eiche an der Endhaltestelle Dutzendteich (tram 4)",
+   "reason": "Register 49.43605,11.11527 vs Wikipedia 49.43595,11.11535 (12 m); no photograph found; pin not provably tree-level (OSM check timed out). Public tram terminus, so access is fine; deliver if a photo or OSM tree node confirms it."
+  },
+  {
+   "name": "ND Nr. 12-21 oaks, Platnersberg (Erlenstegen)",
+   "reason": "Ten oaks within ~150 m. Register numbering does not match de.wikipedia numbering (the same oak sits ~25 m apart between the two lists), so Commons Quercus robur photos (2017-08-25) cannot be tied to a register row; an individual pin cannot be confirmed. Park lawn, public. Candidate for one ensemble entry if a photo pass wants it."
+  },
+  {
+   "register_id": "ND-Gerasmuehle",
+   "name": "ND Nr. 24 and 25 Sommerlinden, Gerasmuehle",
+   "reason": "No photo or exact pin in reach; register and Wikipedia coords agree within 20 m; access to the Pumphaus grounds unverified."
+  },
+  {
+   "register_id": "ND-05059",
+   "name": "ND Nr. 33 Oak on the Nummernweiher footpath, Volkspark Dutzendteich",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "reason": "Verified 2026-10-03 (register only, flagged) but held back from the page: pin approximate (register and de.wikipedia coordinates disagree by 20 to 30 m) and the Commons photograph's licence and identity not yet checked, so the tree has neither a photograph nor a confirmed pin. Publish once one of the two exists. Verify notes: Register row ND-05059 is at 49.429127,11.110031; de.wikipedia's list puts the same monument at 49.42920,11.11040, about 30 m east. Two official-derived coordinates disagree by that much, so the pin is approximate (the lakeshore path, with this tree about 30 m either side). The Wikipedia list's own wording places it 'on the east side, in the footpath' of the Nummernweiher north shore, which helps a visitor identify it on arrival. Species as for ND 34 (Commons category Quercus robur; register says 'Eiche' only). Photograph in hand: Commons file '...an der Ostseite im Gehweg.jpg' (lifecheck OLD 2019-06-20; licence to be verified by a photo pass). No age, girth or height in any source. Register only; flagged.",
+   "latitude": 49.42912686,
+   "longitude": 11.11003101,
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+    "data/registers/bayern-naturdenkmale.json ND-05059 (Bavarian Naturdenkmal register, status aktuell)",
+    "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers,_an_der_Ostseite_im_Gehweg.jpg"
+   ],
+   "access": "Free. Public city park, open all hours; the tree grows in the footpath along the lake shore."
+  },
+  {
+   "register_id": "ND-05057",
+   "name": "ND Nr. 31 Oak north of the Nummernweiher, Volkspark Dutzendteich",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "reason": "Verified 2026-10-03 (register only, flagged) but held back from the page: pin approximate (register and de.wikipedia coordinates disagree by 20 to 30 m) and the Commons photograph's licence and identity not yet checked, so the tree has neither a photograph nor a confirmed pin. Publish once one of the two exists. Verify notes: Register row ND-05057 at 49.430115,11.106694; de.wikipedia list at 49.42999,11.10690, about 20 m apart, so approximate. The official name places it north of the Nummernweiher and south of Jakob-Wolff-Strasse. Species: Commons file 2017-08-25 by Buendia22 (CC BY-SA 4.0, uploader's description 'Naturdenkmal Eiche (Quercus robur)'); register says only 'Eiche'. Photograph in hand: that Commons file, taken 2017 (OLD, lifecheck at the coordinate returned NONE), so alive is thin; flagged. No age, girth or height anywhere. Neighbour register entry ND 35 (oak at Jakob-Wolff-Strasse 19/21/23, 49.42985,11.10555) stands on a lawn in front of a residential block and is held back as a lead, not delivered.",
+   "latitude": 49.43011472,
+   "longitude": 11.10669369,
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+    "data/registers/bayern-naturdenkmale.json ND-05057 (Bavarian Naturdenkmal register, status aktuell)",
+    "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_n%C3%B6rdlich_des_Nummernweihers,_s%C3%BCdlich_der_Jakob-Wolff-Stra%C3%9Fe_20170825_130211.jpg"
+   ],
+   "access": "Free. Public city park, open all hours; the tree stands between the lake and Jakob-Wolff-Strasse."
   }
  ],
  "blocked": [

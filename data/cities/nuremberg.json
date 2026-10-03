@@ -2,9 +2,9 @@
   "city": "Nuremberg",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Nine of Nuremberg's twelve protected trees stand within a kilometre of the old town, and six share a single park of under two hectares. The Kontumazgarten takes its name from a quarantine station, and now holds planes, beeches and a chestnut protected individually by city ordinance. Three more stand apart in Woehrd: a Stadtpark lime with a trunk eight metres round, the best documented of the lot at around four hundred years, and a pair of beeches eighty metres apart in Cramer-Klett-Park, each with its own registration number and neither one dated.",
-  "meta_description": "Twelve protected Nuremberg trees, nine in one walk: a 400-year lime, six in a former quarantine garden, beeches on the Hallerwiese, a pair in Woehrd.",
-  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus eleven more.",
+  "intro": "Nine of Nuremberg's fourteen protected trees stand within a kilometre of the old town, six of them in the Kontumazgarten, a park of under two hectares named after a quarantine station. Three more stand apart in Woehrd: a Stadtpark lime with a trunk eight metres round, at around four hundred years the best documented of the lot, and a pair of undated beeches in Cramer-Klett-Park. The last two are further out: an oak on the shore of the Nummernweiher in the Volkspark Dutzendteich, and in Gebersdorf a wild pear named after Gustav Adolf of Sweden.",
+  "meta_description": "Fourteen protected Nuremberg trees, nine in one walk: a 400-year lime, six in a former quarantine garden, a lakeside oak, a pear named for a king.",
+  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus thirteen more.",
   "question_answer": "The oldest tree in Nuremberg is the large-leaved lime in the Stadtpark, reckoned at around four hundred years with a trunk about eight metres round, which makes it both the oldest and the thickest tree on this page. It stands in a free public park about fifteen minutes' walk from the Kontumazgarten cluster. It is also the best documented: two independent sources describe it, where most of the city's protected trees rest on the ordinance alone.",
   "question_context": "Nuremberg protects individual trees by city ordinance rather than through a state heritage list, and the Bavarian register that carries them gives a number, a German name and a coordinate, with no species column, no girth and no age. So the species on this page were established from the city's own 2020 ordinance and from local sources, and several are identified at genus level or inferred from the tree's German name rather than confirmed outright; each of those says so in its own story. The same thinness cuts the other way too. Cross-checking the state layer against the current city ordinance turned up two protected trees that the state still lists as current and that the ordinance no longer carries, both at addresses where German sources record monuments lost to fungal infection. Those are absent here. Four more are on private ground, one is a seventy-nine tree avenue with nowhere to stand, and two are in institutional courtyards.",
   "faq": [
@@ -14,11 +14,11 @@
     },
     {
       "q": "Can I see Nuremberg's protected trees in one walk?",
-      "a": "Nine of the twelve, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime and the Cramer-Klett-Park pair are separate stops in Woehrd, a further fifteen to twenty minutes on foot from the old town."
+      "a": "Nine of the fourteen, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime and the Cramer-Klett-Park pair are separate stops in Woehrd, a further fifteen to twenty minutes on foot from the old town. The Dutzendteich oak in the south-east and the Gustav Adolf pear in Gebersdorf, in the west, are separate trips."
     },
     {
       "q": "Are they free to visit?",
-      "a": "Yes. Every tree on this page stands in a public park or a public street with no entry fee. Protected trees on private ground are deliberately not listed here."
+      "a": "Yes. Every tree on this page stands in a public park or by a public street with no entry fee. The Gustav Adolf pear in Gebersdorf stands beside a street, and whether you can reach the trunk or only see it from the road is not yet confirmed. Protected trees on private ground are deliberately not listed here."
     }
   ],
   "hero_tree_id": "nbg_010",
@@ -429,6 +429,79 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it as the other of the two separately registered beeches, about eighty metres from its neighbour. It stands in Cramer-Klett-Park, Gärten bei Wöhrd."
+    },
+    {
+      "id": "nbg_013",
+      "name": "ND Nr. 34 Oak at the Nummernweiher, Volkspark Dutzendteich",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Volkspark Dutzendteich, north shore of the eastern Nummernweiher, Nuremberg",
+        "latitude": 49.42895546,
+        "longitude": 11.10919291,
+        "neighbourhood": "Gleisshammer"
+      },
+      "story": "Three oaks along one lakeshore in Nuremberg carry registration numbers of their own, and this is number 34. It stands on the north shore of the eastern Nummernweiher, one of the ponds of the Volkspark Dutzendteich, and of the three it is the one whose position nobody disputes. Bavaria's state register, the German Wikipedia list of the city's natural monuments and a photographer's geotag all put it within about three metres of the same point.\n\nThat agreement is rarer than it sounds. Its two protected neighbours, numbers 33 and 31, stand within roughly 450 metres along the same water, and for each of them the official coordinates drift apart by twenty or thirty metres. This is the one you can walk straight to.\n\nThe paperwork is otherwise thin. The register calls it simply Eiche, oak; the Wikipedia list gives it as a pedunculate oak. The photograph dates from June 2019, and the register keeps no record of the tree's health, so whether it still looks the way it did that summer is something a visitor can tell us better than any document.\n\nNobody has published its girth, its height or its age. If you have stood beside it with a tape measure, or simply know how old it is, tell us.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+        "data/registers/bayern-naturdenkmale.json ND-05060 (Bavarian Naturdenkmal register, status aktuell)",
+        "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers.jpg"
+      ],
+      "access": "Free. Public city park (Volkspark Dutzendteich), open all hours; the tree stands on the lake's north shore.",
+      "transport": "Tram 4 terminus or S-Bahn Dutzendteich, roughly 10 minutes on foot (estimate, stop-to-park distance not measured)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers.jpg",
+        "license": "CC0",
+        "attribution": "Kayron TB, via Wikimedia Commons",
+        "status": "found_needs_check",
+        "width": 3024,
+        "height": 4032
+      },
+      "how_to_recognise": "You can recognise it as the oak right on the north shore of the eastern Nummernweiher. It stands a short way west of protected oak No. 33, which grows in the footpath itself.",
+      "verify_notes": "Register only (Bavarian Naturdenkmal register, row ND-05060, 'aktuell'; Nuremberg's own 2020 ordinance list per earlier pass). Register coordinate 49.428955,11.109193 and de.wikipedia's list coordinate 49.42894,11.10923 agree within about 3 m, and a Commons photograph of this exact monument is geotagged at the same point, so the pin is confirmed to tree level. Species: de.wikipedia list and the photographer's Commons category 'Quercus robur in Nuremberg' (the species label is the Commons contributor's, not the register's; the register says only 'Eiche'). Photograph in hand: Commons file 'Eiche im Volkspark Dutzendteich am Nordufer des oestlichen Nummernweihers.jpg' (found by lifecheck, dated 2019-06-20; licence not yet checked here, a photo pass must verify it). Alive: lifecheck gave OLD (2019) only; no vitality field in register; deliver flagged. No girth, height or age given by any source seen. Part of a walkable group around the Dutzendteich lakes with ND 33 and ND 31 (all within roughly 450 m)."
+    },
+    {
+      "id": "nbg_016",
+      "name": "Gustav Adolf Pear (ND Nr. 23), Gebersdorf",
+      "species": "Wild Pear (Pyrus pyraster)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Hügelstrasse, south-west of the sports ground, Gebersdorf, Nuremberg",
+        "latitude": 49.42627,
+        "longitude": 11.01195,
+        "neighbourhood": "Gebersdorf"
+      },
+      "story": "This wild pear carries the name of a Swedish king, and nobody has written down why. Nuremberg's list of natural monuments records it as the Gustav Adolf-Birne, the Gustav Adolf pear, protected under its own number, 23.\n\nThe obvious guess is the summer of 1632, when Gustav Adolf fought around Nuremberg and Gebersdorf lay on the battlefield. But no source we have found says this tree was standing then, or explains when the name was given or by whom. A pear named after a king is a fact. A pear that watched him fight is a story nobody has backed, and we are not going to be the first to tell it.\n\nWhat it does have is its species. Pyrus pyraster is the wild pear, small-fruited and thorny, not an orchard tree gone feral. In mid-April 2022 a photographer caught it in blossom, and that is the week to come.\n\nIt stands by Hügelstrasse, south-west of the Gebersdorf sports ground. We have not confirmed whether you can walk right up to the trunk or only see it from the street, and nobody has published its age or girth. If you know either, tell us.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "mid-April, when the wild pear flowers white"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+        "data/registers/bayern-naturdenkmale.json (ND Nr. 23 Holzbirnbaum in der Hügelstrasse, Gustav Adolf-Birne, status aktuell)",
+        "https://commons.wikimedia.org/wiki/Category:Holzbirne_auf_dem_Gustav-Adolf-H%C3%BCgel_(N%C3%BCrnberg)"
+      ],
+      "access": "Stands by Hügelstrasse beside the Gebersdorf sports ground. Not yet confirmed whether the trunk can be reached from public ground or only seen from the street.",
+      "transport": "Gebersdorf, south-west Nuremberg, about 5.5 km from the centre; bus or U-Bahn to Gebersdorf (stop and time not verified)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it as the lone wild pear by Hügelstrasse, white with blossom in mid-April. It stands south-west of the Gebersdorf sports ground.",
+      "verify_notes": "Register name: 'Holzbirnbaum in der Huegelstrasse, Gustav Adolf-Birne'; de.wikipedia list: 'Holzbirne an der Huegelstrasse suedwestlich der Sportanlage (Gustav-Adolf-Birnbaum in Gebersdorf)'. Register coordinate 49.42627,11.01195 and Wikipedia 49.42628,11.01197 agree within about 2 m: pin confirmed. Alive: Commons category holds six photographs dated April 2022 including the tree in blossom (OLD, 4 years). The name suggests a tie to King Gustav Adolf of Sweden and the 1632 battle around Gebersdorf (Gebersdorf was on the 1632 battlefield per de.wikipedia's Gebersdorf article snippet), but NO source seen states that the tree itself witnessed it: do not write that. No age, girth or height in any source seen; wild pears seldom pass 200-275 years so keep any age band loose. Needs access check and licence check on the Commons photos before page build. Register only; flagged."
     }
   ]
 }
