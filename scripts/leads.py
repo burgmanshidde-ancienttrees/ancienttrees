@@ -630,7 +630,34 @@ def readiness(entry):
     # sources must not be caught by this.
     elif not entry.get("sources") and re.search(r"finding aid only", reason_text(entry), re.I):
         missing.append("verification (register finding-aid only, no independent source yet)")
+    # Photo or pin (2026-10-03). Since 2026-10-01 preflight refuses every new
+    # tree with neither a photograph nor a confirmed pin, and a write pass can
+    # produce neither, so a lead without one is not writable however complete
+    # its story material is. This file kept offering them anyway: on 10-02 the
+    # night runs merged and reverted the same seven such trees again and again
+    # (Houston, Fukuoka, Takachiho, the zoo oak), because "ready" said yes and
+    # preflight said no.
+    if not has_photo_or_pin(entry):
+        missing.append("photo or pin (preflight refuses a new tree with neither)")
     return missing
+
+
+def has_photo_or_pin(entry):
+    loc = entry.get("location") if isinstance(entry.get("location"), dict) else {}
+    if (entry.get("location_precision") or loc.get("precision")
+            or loc.get("location_precision")) == "confirmed":
+        return True
+    photo = entry.get("photo")
+    if isinstance(photo, dict) and photo.get("url") and photo.get("status") != "held":
+        return True
+    if isinstance(photo, str) and photo.startswith("http"):
+        return True
+    if entry.get("photo_url"):
+        return True
+    for p in entry.get("photos") or []:
+        if (isinstance(p, dict) and (p.get("url") or p.get("file"))) or (isinstance(p, str) and p):
+            return True
+    return False
 
 
 def load(city=None):

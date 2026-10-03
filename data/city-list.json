@@ -14,13 +14,6 @@
    "trees": 36
   },
   {
-   "city": "Oahu",
-   "country": "United States",
-   "slug": "oahu",
-   "status": "published",
-   "trees": 21
-  },
-  {
    "city": "Barcelona",
    "country": "Spain",
    "slug": "barcelona",
@@ -72,11 +65,18 @@
    "trees": 43
   },
   {
+   "city": "Oahu",
+   "country": "United States",
+   "slug": "oahu",
+   "status": "published",
+   "trees": 21
+  },
+  {
    "city": "Berlin",
    "country": "Germany",
    "slug": "berlin",
    "status": "published",
-   "trees": 33
+   "trees": 62
   },
   {
    "city": "Tokyo",
@@ -155,20 +155,20 @@
    "trees": 31
   },
   {
-   "city": "Cagliari",
-   "country": "Italy",
-   "slug": "cagliari",
-   "status": "published",
-   "demand_views_90d": 51351,
-   "trees": 14
-  },
-  {
    "city": "Cadiz",
    "country": "Spain",
    "slug": "cadiz",
    "status": "published",
    "demand_views_90d": 79226,
    "trees": 5
+  },
+  {
+   "city": "Cagliari",
+   "country": "Italy",
+   "slug": "cagliari",
+   "status": "published",
+   "demand_views_90d": 51351,
+   "trees": 14
   },
   {
    "city": "Madrid",
@@ -1187,7 +1187,7 @@
    "country": "Germany",
    "slug": "dresden",
    "status": "published",
-   "trees": 5
+   "trees": 13
   },
   {
    "city": "Ferrara",

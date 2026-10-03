@@ -165,6 +165,14 @@ def register_points(warn=False):
             d = json.load(fh)
         rows = register_rows(d)
         got = [q for q in (row_point(r) for r in rows if isinstance(r, dict)) if q]
+        # Only coordinates that can become a confirmed pin count as supply
+        # (2026-10-03). Hawaii's register rounds every row to ~110 m, so its
+        # 338 trees read as Oahu's "163 supply" while preflight refuses every
+        # one of them without a photograph: two ~150k passes, zero trees.
+        def _fine(v):
+            s = repr(float(v))
+            return len(s.split(".")[1].rstrip("0")) > 3 if "." in s else False
+        got = [q for q in got if _fine(q[0]) or _fine(q[1])]
         # A register file that contributes nothing is nearly always a shape
         # this reader has not met yet, not an empty register. Say so rather
         # than letting it count as zero supply for a city.
@@ -622,8 +630,17 @@ def visitors_first(doc):
     this adds the UK and Germany beside it and, unlike the stage lists below,
     prints only what a run can actually work tonight.
     """
+    # Proven cities only, the same roster passcheck --claim refuses outside of
+    # (2026-10-03: Potsdam was listed here with 204 supply and a claim on it
+    # is refused, because it had no readers before the demotion).
+    try:
+        with open(os.path.join(ROOT, "data", "depth-roster-frozen.json"), encoding="utf-8") as fh:
+            proven = set((json.load(fh).get("cities") or {}).keys())
+    except (OSError, ValueError):
+        proven = set()
     rows = [c for c in doc["cities"]
             if c.get("country") in SUPPLY_FOCUS
+            and (not proven or c.get("slug") in proven)
             and c.get("trees", 0) < max(c.get("target") or 10, 10)
             and supply_of(c) > 0]
     rows.sort(key=lambda c: -(supply_of(c) * (1 + (c.get("impressions_10d") or 0))))
@@ -657,6 +674,18 @@ def main():
         # are 10 unconfirmed, 20 confirmed, 30 for a big confirmed city, set the
         # same morning and unchanged by this.
         doc = load_source()
+        # Live tree counts, not the queue's copy (2026-10-03). The queue is
+        # rewritten once a day by the digest, so by the third run of a night it
+        # said Berlin had 33 trees while it had 62, and a run reading it would
+        # take a city that was already at target.
+        for c in doc["cities"]:
+            p = os.path.join(ROOT, "data", "cities", "%s.json" % c.get("slug"))
+            if os.path.exists(p):
+                try:
+                    with open(p, encoding="utf-8") as fh:
+                        c["trees"] = len(json.load(fh).get("trees") or [])
+                except (OSError, ValueError):
+                    pass
         s1 = [c for c in doc["cities"] if c.get("rank") and not c.get("trees", 0)]
         s2 = [c for c in doc["cities"] if c.get("rank") and c.get("target")
               and c.get("trees", 0) and c.get("trees", 0) < c["target"]]
