@@ -69,3 +69,40 @@ struct AmbassadorBadge: View {
     }
     .padding()
 }
+
+/// The ambassador on a city page, komoot's person row (Hidde, 2026-10-03:
+/// "follow the design way of komoot"): a 32 point round avatar, the name in
+/// bold, one small grey line saying what they are. The website draws the same
+/// row under the city intro (AmbassadorLine.astro); the names arrive in the
+/// feed, so neither surface decides who is named.
+struct AmbassadorRow: View {
+    let name: String
+    let place: String
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Text(String(name.trimmingCharacters(in: .whitespaces).prefix(1)).uppercased())
+                .font(.system(size: 14, weight: .bold))
+                .foregroundStyle(Brand.moss)
+                .frame(width: 32, height: 32)
+                .background(Brand.moss.opacity(0.12), in: .circle)
+                .overlay(alignment: .bottomTrailing) {
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(Brand.moss)
+                        .background(Brand.ground, in: .circle)
+                        .offset(x: 3, y: 3)
+                }
+            VStack(alignment: .leading, spacing: 1) {
+                Text(name)
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundStyle(Brand.ink)
+                Text("\(place) ambassador")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Brand.inkSoft)
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityIdentifier("ambassador-row")
+    }
+}

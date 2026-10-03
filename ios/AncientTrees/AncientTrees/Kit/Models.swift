@@ -348,6 +348,10 @@ public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
     /// How visited a city's page is (search clicks, then impressions), so the
     /// empty search offers the places people go to. Cities only.
     public let popularity: Int?
+    /// The people named as this city's ambassadors, consent already settled on
+    /// the website (data/ambassadors.json). Cities only, usually absent. A var
+    /// with a default so older code building a facet by hand still compiles.
+    public var ambassadors: [String]? = nil
 
     public var id: String { slug ?? name }
 }
@@ -411,6 +415,7 @@ public struct BrowseFacets: Sendable {
     public func face(city slug: String) -> String? { cityBySlug[slug]?.face }
     public func aka(city slug: String) -> [String] { cityBySlug[slug]?.aka ?? [] }
     public func popularity(city slug: String) -> Int { cityBySlug[slug]?.popularity ?? 0 }
+    public func ambassadors(city slug: String) -> [String] { cityBySlug[slug]?.ambassadors ?? [] }
     public func face(country name: String) -> String? { countryByName[name]?.face }
     public func face(species commonName: String) -> String? { speciesByName[commonName]?.face }
     public func intro(species commonName: String) -> String? { speciesByName[commonName]?.intro }

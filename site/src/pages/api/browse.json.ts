@@ -33,6 +33,7 @@ import { cityFaceTree, countryFaceTree, speciesFaceTree, parkFaceTree, usablePho
 import { groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey } from "../../lib/parks";
 import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
+import { namedAmbassadorsFor } from "../../lib/ambassadors";
 import { collectionEntries } from "../../lib/collection-rank";
 import { citySearchNames } from "../../lib/city-aliases";
 import { cityPopularity } from "../../lib/popularity";
@@ -75,6 +76,12 @@ export async function GET() {
     // The city page, the map sidebar, /cities, /countries and the app all show
     // this one picture now. hero_tree_id is how a person overrides it.
     face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, face_tree_id: (c.data as any).face_tree_id, trees: renderableTrees(c) })),
+    // The people named as this city's ambassadors, so the app's city page
+    // prints the same row the website prints under the intro (2026-10-03).
+    // Only those who consented to be named; the list is an ANSWER.
+    ...(namedAmbassadorsFor(c.id).length
+      ? { ambassadors: namedAmbassadorsFor(c.id).map((a) => a.display_name!) }
+      : {}),
   }));
 
   // Contract D's own gate, the one /collections applies: a draft is built for
