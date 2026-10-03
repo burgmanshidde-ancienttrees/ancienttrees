@@ -6,6 +6,7 @@
 
 - **App Discover:** the subtitles under shelf titles are gone (Hidde: "maybe less is more"; AllTrails, Airbnb, Netflix and Spotify show a title and See all, nothing under it). New rows: Best in [your country] (only with a real location fix: famous trees first, then by age), the collections in season this month (October: autumn harvest and autumn colour), the tallest trees, the thickest trunks, and tree islands. Long but finite, never infinite scroll (CONVENTIONS.md 2026-10-04).
 - **Website homepage:** the same tallest, thickest and islands rows in all eight languages, and the season rows on the English homepage only (collections are English-only pages). Best in your country is app-only because a static page does not know where its reader is.
+- **Correction the same hour (Hidde: "the rows already there were perfect i just wanted more below"):** two new rows had gone ABOVE his rows (best in your country, the season rows). All new rows now sit below the existing ones on both surfaces; nothing had been deleted.
 - **Decided on the server, sent in /api/browse.json:** `islands` (lib/favourites.ts, face rule: Menorca, Mallorca, Maui, Okinawa stay off until they have a photograph) and `months` on the four seasonal collections. This reverses part of the 2026-08-21 cut (season and collections out of the app feed) on Hidde's "ok do that".
 
 ## 2026-10-04 session: the Camphor of Kofuji Tenmangu, on Hidde's word

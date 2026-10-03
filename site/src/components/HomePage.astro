@@ -556,7 +556,6 @@ const scripts = SEARCH_WIDGET_JS;
   <p>{u.homeSub}</p>
 </section>
 <Fragment set:html={favShelf} />
-<Fragment set:html={seasonShelves} />
 <section class="home-acts">
   <div class="home-act">
     <div class="home-act-copy">
@@ -627,6 +626,9 @@ const scripts = SEARCH_WIDGET_JS;
 <Fragment set:html={speciesShelf} />
 <Fragment set:html={parksShelf} />
 <Fragment set:html={oldestShelf} />
+{/* The new rows go BELOW the existing ones, never between (Hidde,
+    2026-10-04: "i just wanted more below"). */}
+<Fragment set:html={seasonShelves} />
 <Fragment set:html={tallestShelf} />
 <Fragment set:html={thickestShelf} />
 <Fragment set:html={islandsShelf} />
