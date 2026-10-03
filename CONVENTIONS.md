@@ -25,6 +25,44 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Making and sharing your own list of places (2026-10-03)
+
+**The interaction: a person collects trees into a list of their own, including
+trees we did not publish, and shares it.** Raised by Hidde while the Plus line
+was being weighed ("maybe they just want to be able to make and share their own
+list"). Looked up to settle one question: is the list a free verb or a paid one.
+
+**In every reference the list is free, and sharing it is free, because a shared
+list is how the product travels.**
+
+- AllTrails: custom lists and collaborative lists on the free Base plan, shared
+  with members and non-members alike by link.
+  https://www.alltrails.com/press/alltrails-introduces-collaborative-lists and
+  https://support.alltrails.com/hc/en-us/articles/37202982202900-AllTrails-Base-membership
+- Google Maps: saved lists, private or shared by link, with collaborators who
+  may edit; free. https://support.google.com/maps/answer/7280933
+- Letterboxd: lists free and public by default; Pro sells stats, the ad-free
+  view and cloning a list, never the list.
+  https://letterboxd.com/about/pro/
+- Komoot Collections, Pinterest boards, Goodreads shelves: free, shared by
+  link. Recorded from our own corpus.
+
+**Two findings that matter more than the layouts.** First, the list is a
+distribution mechanism before it is a feature: a shared list is a link one
+person sends another, which is the acquisition this project lacks. Second, the
+paid layer, where one exists, sits ON the list (Letterboxd's stats, a printed
+version) and never gates making or sharing it.
+
+**What we take from it.** Lists are free on both surfaces and may hold both
+published trees and a person's own sightings, so "we did not accept your tree"
+never means "you cannot keep it". A list page is noindex, like the own-tree
+pages of 2026-09-02, so user lists cannot recreate the scaled-content shape.
+The ambassador's list of their city is the same object. Plus, if anything,
+sells the keepsake made from a list (album, map, recap, print), per the
+2026-09 ruling that ticking is free and the proof is sold.
+
+---
+
 ## Where the paywall sits in a product that lives on contributions (2026-10-03)
 
 **The interaction: a person who is not paying wants to add a tree, a photograph
