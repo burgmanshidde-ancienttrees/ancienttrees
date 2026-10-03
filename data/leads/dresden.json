@@ -91,6 +91,48 @@
       "status": "blocked",
       "blocked_reason": "private land",
       "why": "NEVER SHIP as this entry. ND 28, a genuinely rare and large specimen for its species (12m tall, 1.4m girth, protected since the 3 Jan 1985 resolution alongside the Albertplatz plane and Fetscherplatz oak), but multiple sources place it specifically in the front garden (Vorgarten) of the private property at Mozartstrasse 10. Hard rule 10: front gardens of dwellings stay out whatever the register says, however fine the tree."
+    },
+    {
+      "name": "The Rotbuche of the Dresdner Heide",
+      "species": "European Beech (Fagus sylvatica)",
+      "lat": 51.09819,
+      "lng": 13.849767,
+      "status": "lead",
+      "why": "ND 108, Dresdner Heide. Verified and written 2026-10-03 (story and how_to_recognise kept below), held back only on photo-or-pin: the pin is approximate (Wikidata coordinate matches the de.wikipedia prose description only roughly) and no specific photograph has been checked. Commons category Naturdenkmal_Rotbuche_Dresdner_Heide holds CC BY-SA 3.0 files by Dr. Bernd Gross (2015) and CC BY-SA 4.0 by Staubi59 (2017); one checked frame, or a confirmed pin, makes it publishable as dre_007.",
+      "verified_tree": {
+        "id": "dre_007",
+        "name": "The Rotbuche of the Dresdner Heide",
+        "species": "European Beech (Fagus sylvatica)",
+        "age_estimate": "roughly 250 years",
+        "age_min": 230,
+        "age_max": 300,
+        "girth_cm": 570,
+        "height_m": 35,
+        "location": {
+          "address": "Dresdner Heide, forest section 109 (Revier Langebruck), about 150 m north-west of the crossing of Radeberger Strasse and Schneise 8",
+          "latitude": 51.09819,
+          "longitude": 13.849767,
+          "neighbourhood": "Dresdner Heide"
+        },
+        "verified_sources": [
+          "https://de.wikipedia.org/wiki/Rotbuche_Dresdner_Heide",
+          "https://www.wikidata.org/wiki/Q96146116",
+          "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Rotbuche_Dresdner_Heide"
+        ],
+        "access": "Free. Stands in the public forest of the Dresdner Heide (Sachsenforst), a short way off the Schneise 8 forest ride; no entry charge.",
+        "transport": "Not verified. Inside the Heide, over 30 minutes from the centre; reached on foot from the Radeberger Strasse side. Check timetables before quoting a stop.",
+        "location_precision": "approximate",
+        "curation_status": "flagged",
+        "story": "In October 2002 a hurricane found a fork in this beech that nobody knew was failing, and more than a third of the crown came down. Two years earlier Dresden had made it a natural monument, measured at about 35 metres tall, 5.70 metres round and with a crown some 28 metres across. At that point only one beech in the city was bigger, the one behind the Weisses Schloss in Cossebaude.\n\nWhat stands in forest section 109 of the Dresdner Heide today is the tree that came out of that storm: lower than the 35 metres in the record and lopsided where the crown went. Every photograph on file was taken after the damage, so they show the beech as a visitor will meet it rather than as it looked on the day it was designated.\n\nThe age given in 2000 was about 250 years, and that was an estimate then. Add the years since and it lands somewhere around 275, give or take a few decades. The ordinance protects a ring of 18 metres around the trunk along with the tree itself.\n\nIt stands a short way into the forest, about 150 metres north-west of the point where Radeberger Strasse crosses the forest ride called Schneise 8. Our pin is approximate, so expect to look around for the broken crown once you reach the crossing.",
+        "photo": {
+          "url": null,
+          "license": null,
+          "attribution": null,
+          "status": "missing"
+        },
+        "how_to_recognise": "You can recognise it by the lopsided crown, more than a third of it lost to a storm in 2002, above a trunk about 5.70 metres round. It stands about 150 metres north-west of where Radeberger Strasse crosses Schneise 8.",
+        "verify_notes": "Register only (city Naturdenkmal ND 108, designated Dec 2000). Wikidata coordinate 51.09819,13.849767 agrees with the de.wikipedia description (150 m NW of the Radeberger Strasse / Schneise 8 crossing) only in prose, which I did not measure, so precision is stated approximate. Photos on Commons: CC BY-SA 3.0 by Dr. Bernd Gross (2015-05-26, 22 files) and CC BY-SA 4.0 Staubi59 (2017). lifecheck on the pin returned NONE. Measurements at designation in 2000: height about 35 m, girth 5.70 m, crown diameter about 28 m. After an unseen fork defect plus a hurricane in October 2002 more than a third of the crown broke off, so today's tree is lower and lopsided; the 35 m figure is the pre-2002 height. The photos show the tree after the damage, which a writer should check. Age 250 years was an estimate in 2000. At designation only the beech behind the Weisses Schloss in Cossebaude (ND 66) was a bigger beech in Dresden. Protected zone 18 m around the trunk."
+      }
     }
   ]
 }
