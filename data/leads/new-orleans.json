@@ -7,15 +7,8 @@
       "lat": null,
       "lng": null,
       "status": "open",
-      "why": "Found 2026-09-27 in the Live Oak Society's official Orleans-parish registry docx (entry #745, 23 feet 7 inches / ~719 cm girth, custodian 'City Park') and confirmed still standing as of a 1999 re-measurement on City Park's own website (archived copy, fetched via Wayback since the live page 404s): 'The Grandjean Oak added 2'2\" in circumference and 7' in crown spread' between 1983 and 1999, one of 26 trees on the park's historic oak walking tour. Named for George H. Grandjean, the 1890s civil engineer behind City Park's original master plan (lagoons, footpaths, bridges) -- a real, checkable history hook. NOT delivered this pass because no source gives a location more specific than 'City Park', and inventing a plausible-sounding spot (e.g. near the lagoons Grandjean himself laid out) would be exactly the bridge-claim trap BRIEF_RESEARCH.md warns about. A future pass should try to find the original 1983/1999 walking-tour brochure or map (referenced on City Park's own page but not linked; searched, not found this pass) which likely gives stop-by-stop locations for all 26 named trees at once, which would unlock this one and several others below in one document."
-    },
-    {
-      "name": "The John Philip Sousa Oak, City Park",
-      "species": "Southern Live Oak (Quercus virginiana)",
-      "lat": null,
-      "lng": null,
-      "status": "open",
-      "why": "Registry #748, 21 feet 4 inches (~650 cm) girth, custodian 'City Park' -- a genuinely large live oak, in the same size class as several already-published City Park trees. Sousa performed at City Park's Popp Bandstand (built 1917), which is a plausible reason for the name, but no source connects the TREE to the bandstand's location specifically, so that stays two facts rather than one claim (see the bridge-claim rule). Only one source (the registry itself) found this pass; register-alone is enough to deliver flagged per the 2026-09-27 ruling, but with zero location beyond 'City Park' and zero narrative beyond the name, it did not clear this pass's bar for a page people can actually find. Worth a future pass, ideally alongside a search for the walking-tour brochure (see Grandjean Oak lead above)."
+      "why": "Found 2026-09-27 in the Live Oak Society's official Orleans-parish registry docx (entry #745, 23 feet 7 inches / ~719 cm girth, custodian 'City Park') and confirmed still standing as of a 1999 re-measurement on City Park's own website (archived copy, fetched via Wayback since the live page 404s): 'The Grandjean Oak added 2'2\" in circumference and 7' in crown spread' between 1983 and 1999, one of 26 trees on the park's historic oak walking tour. Named for George H. Grandjean, the 1890s civil engineer behind City Park's original master plan (lagoons, footpaths, bridges) -- a real, checkable history hook. NOT delivered this pass because no source gives a location more specific than 'City Park', and inventing a plausible-sounding spot (e.g. near the lagoons Grandjean himself laid out) would be exactly the bridge-claim trap BRIEF_RESEARCH.md warns about. A future pass should try to find the original 1983/1999 walking-tour brochure or map (referenced on City Park's own page but not linked; searched, not found this pass) which likely gives stop-by-stop locations for all 26 named trees at once, which would unlock this one and several others below in one document.",
+      "pin_attempt": "2026-10-03: Commons (named-file search, geosearch around City Park and Audubon), City Park live-oaks page (404 on both domains), Live Oak Society 2019 registry PDF (no locations). No named photo, no geotag, no OSM node found. Still no pin and no photo candidate; needs the City Park oak tour map, which is not online. 2019 registry still lists it (23 ft 7 in, down from 24 ft 6 in in 2002), not marked deceased."
     },
     {
       "name": "The Isaac Delgado Oak, City Park",
@@ -23,7 +16,8 @@
       "lat": null,
       "lng": null,
       "status": "open",
-      "why": "Registry #744, 16 feet 6 inches (~503 cm) girth, custodian 'City Park'. Isaac Delgado (1839-1912) was a major New Orleans philanthropist whose bequest funded the Isaac Delgado Museum of Art (now NOMA, at the north end of City Park) and Delgado Community College. Real history, but only one source (the registry) and no location for the tree itself beyond 'City Park' -- did not check whether it might stand near NOMA given the namesake's connection to that museum, which would be a bridge-claim unless a source says so directly. Open for a future pass."
+      "why": "Registry #744, 16 feet 6 inches (~503 cm) girth, custodian 'City Park'. Isaac Delgado (1839-1912) was a major New Orleans philanthropist whose bequest funded the Isaac Delgado Museum of Art (now NOMA, at the north end of City Park) and Delgado Community College. Real history, but only one source (the registry) and no location for the tree itself beyond 'City Park' -- did not check whether it might stand near NOMA given the namesake's connection to that museum, which would be a bridge-claim unless a source says so directly. Open for a future pass.",
+      "pin_attempt": "2026-10-03: Commons (named-file search, geosearch around City Park and Audubon), City Park live-oaks page (404 on both domains), Live Oak Society 2019 registry PDF (no locations). No named photo, no geotag, no OSM node found. Still no pin and no photo candidate; needs the City Park oak tour map, which is not online."
     },
     {
       "name": "The Flying Horses Oak, City Park",
@@ -31,7 +25,8 @@
       "lat": null,
       "lng": null,
       "status": "open",
-      "why": "Registry #755, 12 feet 8 inches (~386 cm) girth, custodian 'City Park'. 'Flying Horses' is the long-standing local nickname for City Park's 1906 antique wooden carousel at Carousel Gardens, which suggests but does not confirm this tree stands near the carousel; no source found this pass places the actual tree there. Smaller girth than the other candidates, so weaker on the 'big for species' test too. Worth a quick check against a City Park map in a future pass, since Carousel Gardens is a specific, findable landmark if the connection holds."
+      "why": "Registry #755, 12 feet 8 inches (~386 cm) girth, custodian 'City Park'. 'Flying Horses' is the long-standing local nickname for City Park's 1906 antique wooden carousel at Carousel Gardens, which suggests but does not confirm this tree stands near the carousel; no source found this pass places the actual tree there. Smaller girth than the other candidates, so weaker on the 'big for species' test too. Worth a quick check against a City Park map in a future pass, since Carousel Gardens is a specific, findable landmark if the connection holds.",
+      "pin_attempt": "2026-10-03: Commons (named-file search, geosearch around City Park and Audubon), City Park live-oaks page (404 on both domains), Live Oak Society 2019 registry PDF (no locations). No named photo, no geotag, no OSM node found. Still no pin and no photo candidate; needs the City Park oak tour map, which is not online."
     },
     {
       "name": "Franklin Delano Roosevelt Oak and Zachary Taylor Oak, City Park",
@@ -39,7 +34,8 @@
       "lat": null,
       "lng": null,
       "status": "open",
-      "why": "Registry #750 (FDR, 14 feet 1 inch / ~429 cm) and #751 (Zachary Taylor, 16 feet 10 inches / ~513 cm), both custodian 'City Park'. Presidential names, no other narrative or location found this pass beyond the registry entry itself. Grouped here rather than given full entries since neither cleared the bar alone; either could be revisited if the walking-tour brochure (see Grandjean lead) turns up and places them."
+      "why": "Registry #750 (FDR, 14 feet 1 inch / ~429 cm) and #751 (Zachary Taylor, 16 feet 10 inches / ~513 cm), both custodian 'City Park'. Presidential names, no other narrative or location found this pass beyond the registry entry itself. Grouped here rather than given full entries since neither cleared the bar alone; either could be revisited if the walking-tour brochure (see Grandjean lead) turns up and places them.",
+      "pin_attempt": "2026-10-03: Commons (named-file search, geosearch around City Park and Audubon), City Park live-oaks page (404 on both domains), Live Oak Society 2019 registry PDF (no locations). No named photo, no geotag, no OSM node found. Still no pin and no photo candidate; needs the City Park oak tour map, which is not online."
     }
   ],
   "blocked": [
@@ -74,6 +70,14 @@
       "lng": -90.09056,
       "status": "duplicate",
       "why": "DUPLICATE, found 2026-09-01 during a write pass on data/research/us-famous-2-verified.json's nol_dueling_001: same tree as already-published nol_003 (The Dueling Oak), 519m away by coordinate but identical by every fact in hand (girth ~7.6m round vs nol_003's 7.5m, height 21.3m vs 21m, age ~300 years, same 1949-hurricane-took-the-other-one story, same junction of Dueling Oaks Drive and Dreyfous Drive near the sculpture garden and NOMA). The 519m gap is two independent coordinate estimates for one tree, not two trees; passcheck.py's 50m duplicate radius did not catch it because of that gap, so recorded here by hand instead. A full alternate-sourced story was written for this pass (uponarriving.com, neworleanscitypark.com) and is worth keeping as a second-source check on nol_003's existing story rather than a new entry. Not merged. If a future pin pass wants to sharpen nol_003's location_precision from approximate to confirmed, cross-check both coordinate estimates and the two source sets before doing so."
+    },
+    {
+      "name": "The John Philip Sousa Oak, City Park",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked_dead",
+      "why": "Registry #748, 21 feet 4 inches (~650 cm) girth, custodian 'City Park' -- a genuinely large live oak, in the same size class as several already-published City Park trees. Sousa performed at City Park's Popp Bandstand (built 1917), which is a plausible reason for the name, but no source connects the TREE to the bandstand's location specifically, so that stays two facts rather than one claim (see the bridge-claim rule). Only one source (the registry itself) found this pass; register-alone is enough to deliver flagged per the 2026-09-27 ruling, but with zero location beyond 'City Park' and zero narrative beyond the name, it did not clear this pass's bar for a page people can actually find. Worth a future pass, ideally alongside a search for the walking-tour brochure (see Grandjean Oak lead above). | 2026-10-03: Live Oak Society registry PDF (lgcfinc.org 001-5000_12-3-2019.pdf, entry 748) marks it \"(Deceased)\". Do not publish; later registry entries 1534 and 4095 are successor Sousa oaks."
     }
   ]
 }

@@ -558,6 +558,18 @@
       "seen": "2026-09-27",
       "cost": "one fetch attempt during the Los Angeles deepen verify pass",
       "workaround": "not needed this pass; the Huntington's own Instagram post and an independent Facebook post from Esotouric already cleared the two-source bar."
+    },
+    "fpdcc.com": {
+      "behaviour": "403 to fetchers on the Cook County Champion Tree Register",
+      "seen": "2026-10-03",
+      "cost": "one fetch",
+      "workaround": "none found; the Cook County GIS endpoints returned empty"
+    },
+    "neworleanscitypark.org": {
+      "behaviour": "404 on the oaks page, on both domains",
+      "seen": "2026-10-03",
+      "cost": "one fetch",
+      "workaround": "the Live Oak Society registry PDF names the oaks but gives no coordinates"
     }
   }
 }

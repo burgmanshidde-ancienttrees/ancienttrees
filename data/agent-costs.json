@@ -9517,6 +9517,14 @@
    "tokens": 128000,
    "trees": 0,
    "note": "5 overlay entries plus title count 50"
+  },
+  {
+   "target": "new-orleans, chicago, dallas",
+   "kind": "verify",
+   "tokens": 195445,
+   "trees": 0,
+   "wasted": 195445,
+   "note": "Pin-and-photo pass on existing leads: 0 delivered. City Park oaks have no coordinates anywhere online, Chicago's register returns 403 and its two famous leads are dead, Dallas leads unplaceable. Lesson: a lead file without coordinates cannot be rescued by a pin pass; check for ANY coordinate source before dispatching."
   }
  ]
 }
