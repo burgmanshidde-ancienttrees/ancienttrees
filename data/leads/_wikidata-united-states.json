@@ -66,12 +66,13 @@
    "taxon": null,
    "admin": null,
    "status": "open",
-   "species": null,
+   "species": "Juniper (Juniperus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q20857822",
     "https://en.wikipedia.org/wiki/Bennett_Juniper"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Boyington Oak",
@@ -84,12 +85,13 @@
    "taxon": null,
    "admin": "Mobile",
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q4952495",
     "https://en.wikipedia.org/wiki/Boyington_Oak"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Chandelier Tree",
@@ -120,11 +122,12 @@
    "taxon": null,
    "admin": "Riverside",
    "status": "open",
-   "species": null,
+   "species": "Coast Redwood (Sequoia sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q140613826"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Council Oak Tree (Hollywood, Florida)",
@@ -137,12 +140,13 @@
    "taxon": null,
    "admin": "Florida",
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q14685842",
     "https://en.wikipedia.org/wiki/Council_Oak_Tree_(Hollywood,_Florida)"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Duffie Oak",
@@ -155,12 +159,13 @@
    "taxon": null,
    "admin": "Alabama",
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q5312354",
     "https://en.wikipedia.org/wiki/Duffie_Oak"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "El Pino",
@@ -173,12 +178,13 @@
    "taxon": null,
    "admin": "Los Angeles County",
    "status": "open",
-   "species": null,
+   "species": "Pine (Pinus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q5351846",
     "https://en.wikipedia.org/wiki/El_Pino_(The_Pine_Tree)"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Endicott Pear Tree",
@@ -191,12 +197,13 @@
    "taxon": null,
    "admin": "Massachusetts",
    "status": "open",
-   "species": null,
+   "species": "Pear (Pyrus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q5376133",
     "https://en.wikipedia.org/wiki/Endicott_Pear_Tree"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Fairmount Park Montezuma Bald Cypress Trees",
@@ -209,11 +216,12 @@
    "taxon": null,
    "admin": "Riverside",
    "status": "open",
-   "species": null,
+   "species": "Cypress (Cupressus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q140698450"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Friendship Oak",
@@ -226,12 +234,13 @@
    "taxon": null,
    "admin": "Long Beach",
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q5504407",
     "https://en.wikipedia.org/wiki/Friendship_Oak"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Genesis",
@@ -298,12 +307,13 @@
    "taxon": null,
    "admin": "Utah",
    "status": "open",
-   "species": null,
+   "species": "Juniper (Juniperus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q16997958",
     "https://en.wikipedia.org/wiki/Jardine_Juniper"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "King Arthur",
@@ -352,12 +362,13 @@
    "taxon": null,
    "admin": "Montgomery County",
    "status": "open",
-   "species": null,
+   "species": "Lime (Tilia sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q1826003",
     "https://en.wikipedia.org/wiki/Linden_Oak"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Man in Tree",
@@ -441,11 +452,12 @@
    "taxon": null,
    "admin": "Riverside",
    "status": "open",
-   "species": null,
+   "species": "Date Palm (Phoenix sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q140723663"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Sentinel",
@@ -476,12 +488,13 @@
    "taxon": null,
    "admin": null,
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q7457431",
     "https://en.wikipedia.org/wiki/Seven_Sisters_Oak"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Stagg",
@@ -512,12 +525,13 @@
    "taxon": null,
    "admin": "Thomasville",
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q7717719",
     "https://en.wikipedia.org/wiki/The_Big_Oak"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "The Big Tree",
@@ -548,11 +562,12 @@
    "taxon": null,
    "admin": "Rutland",
    "status": "open",
-   "species": null,
+   "species": "Maple (Acer sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q136955547"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Travilah Oak",
@@ -565,12 +580,13 @@
    "taxon": null,
    "admin": "Montgomery County",
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q7836190",
     "https://en.wikipedia.org/wiki/Travilah_Oak"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Tree of 40 Fruit",
@@ -664,12 +680,13 @@
    "taxon": null,
    "admin": "Deptford Township",
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q30623019",
     "https://en.wikipedia.org/wiki/Clement_Oak"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Euclid Tree",
@@ -712,11 +729,12 @@
    "taxon": null,
    "admin": "Riverside",
    "status": "open",
-   "species": null,
+   "species": "Sweet Chestnut (Castanea sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q140723876"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "International World War Peace Tree",
@@ -855,11 +873,12 @@
    "taxon": null,
    "admin": "Springfield",
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q113996324"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Washington Oak",
@@ -870,12 +889,13 @@
    "taxon": null,
    "admin": "Princeton",
    "status": "open",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
     "https://www.wikidata.org/wiki/Q7972082",
     "https://en.wikipedia.org/wiki/Washington_Oak"
-   ]
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": [
