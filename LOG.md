@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (eighth attempt): nothing to ship, pace cap still shut
+
+Pulled; munich claim (own, stories written) left standing. leads.py --ready is 0, preflight 0 problems. Trees were added at 11:42 and 12:54 UTC today, so the 24h cap clears after about 12:54 UTC tomorrow. Dispatching a verify pass now would only add trees the cap refuses to merge. Next window after the cap clears: merge muc_055 to 060 and the Nuremberg two, add the muc ids to the de overlay.
+
 ## 2026-10-03 night run (seventh attempt): nothing to ship, pace cap still shut
 
 Pulled; only claim is munich (stories written, six trees held for the 24h pace cap and the German overlay). leads.py --ready is 0, preflight 0 problems. A new verify pass would only add trees the cap refuses to merge, so none was dispatched. Next window after the cap clears: merge muc_055 to 060 and the Nuremberg two, add the muc ids to the de overlay.
