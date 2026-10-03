@@ -1,3 +1,5 @@
+**SENT 2026-10-03** (batch ingar-oslo-2026-10-03).
+
 # Reply to Ingar Sørensen, photographer, Oslo, 2026-10-03
 
 He answered the 2026-10-02 ask: his photographs may be used freely with the
