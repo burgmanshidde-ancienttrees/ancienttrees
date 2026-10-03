@@ -63,6 +63,12 @@ struct HomeView: View {
         var cities: [(slug: String, name: String, country: String, count: Int)] = []
         var walksNear: [Walk] = []
         var species: [(name: String, count: Int)] = []
+        /// The country you are standing in and its best photographed trees.
+        var home: (country: String, trees: [Tree])? = nil
+        var tallest: (collection: TreeCollection, trees: [Tree])? = nil
+        var thickest: (collection: TreeCollection, trees: [Tree])? = nil
+        var islands: [(slug: String, name: String, country: String, count: Int)] = []
+        var inSeason: [(collection: TreeCollection, trees: [Tree])] = []
     }
 
     private var month: Int { Calendar.current.component(.month, from: Date()) }
@@ -117,6 +123,45 @@ struct HomeView: View {
             .map { (name: $0.key, count: $0.value.count) }
             .sorted { $0.count > $1.count }
             .prefix(18).map { $0 }
+
+        // MORE SHELVES, 2026-10-04 (Hidde: "more lines like tree island
+        // tallest trees best of us etc"). Long but finite, the way AllTrails,
+        // komoot and the App Store build a browse screen; never an infinite
+        // feed, because a catalogue of picks runs out of good picks
+        // (CONVENTIONS.md 2026-10-04). Every shelf is an answer from the feed
+        // except "best in your country", and every one needs photographs.
+        func photographed(_ ids: [Tree], _ n: Int = 12) -> [Tree] {
+            Array(ids.filter { $0.photo != nil }.prefix(n))
+        }
+        func ranked(_ slug: String) -> (collection: TreeCollection, trees: [Tree])? {
+            guard let c = catalogue.collections.first(where: { $0.slug == slug }) else { return nil }
+            let t = photographed(catalogue.trees(of: c))
+            return t.count >= 4 ? (c, t) : nil
+        }
+        s.tallest = ranked("tallest-trees")
+        s.thickest = ranked("thickest-trees")
+        s.inSeason = catalogue.collections
+            .filter { ($0.months ?? []).contains(month) }
+            .compactMap { ranked($0.slug) }
+
+        // Best in the country you are standing in: the trees the world has
+        // written about first (the website's famous-trees collection), then
+        // by recorded age. Only with a real fix, because "best in the
+        // Netherlands" for somebody in Texas is the fallback talking.
+        if location.known,
+           let here = catalogue.nearest(to: origin.lat, origin.lng, limit: 1, withinKm: 300).first?.tree.country {
+            let famous = Set(catalogue.collections.first { $0.slug == "famous-trees" }?.trees ?? [])
+            let best = catalogue.trees(inCountry: here)
+                .filter { $0.photo != nil }
+                .sorted {
+                    let a = famous.contains($0.id), b = famous.contains($1.id)
+                    if a != b { return a }
+                    return ($0.ageMin ?? 0) > ($1.ageMin ?? 0)
+                }
+            if best.count >= 4 { s.home = (here, Array(best.prefix(12))) }
+        }
+
+        s.islands = catalogue.facets.islands.compactMap(card)
         deck = s
     }
 
@@ -203,7 +248,10 @@ struct HomeView: View {
             }
         }
         .refreshable { await store.refresh() }
-        .task(id: catalogue.version) { buildShelves() }
+        // Rebuilt when the catalogue changes, and when a fix arrives or moves a
+        // long way, because two shelves (walks, best in your country) depend
+        // on where you are. A tenth of a degree is about ten kilometres.
+        .task(id: "\(catalogue.version)|\(location.known)|\(Int(origin.lat * 10))|\(Int(origin.lng * 10))") { buildShelves() }
     }
 
     /// The website leads with one tree rather than with a grid, and so does
@@ -317,9 +365,7 @@ struct HomeView: View {
         // everywhere else, so the gap between a heading and what it introduces
         // changed depending on which heading you were looking at.
         VStack(alignment: .leading, spacing: 12) {
-            ShelfHeader(title: "By species",
-                        subtitle: "\(catalogue.speciesNames.count) kinds of tree",
-                        more: .index(.species))
+            ShelfHeader(title: "By species", more: .index(.species))
             ForEach(topSpeciesHere.prefix(6), id: \.name) { sp in
                 NavigationLink(value: Route.species(sp.name)) {
                     HStack(spacing: 12) {
@@ -361,24 +407,68 @@ struct HomeView: View {
         // square and titling the result "Walks near you".
         if Launch.walks, !walksNear.isEmpty, location.known { walkShelf }
 
+        if let h = deck.home {
+            shelf(title: "Best in \(Self.withArticle(h.country))", subtitle: nil,
+                  trees: h.trees, season: false, more: .country(h.country))
+        }
+
         cityShelf
+
+        ForEach(deck.inSeason, id: \.collection.slug) { c in
+            shelf(title: c.collection.title, subtitle: nil, trees: c.trees,
+                  season: true, more: .collection(c.collection.slug))
+        }
 
         if !oldest.isEmpty {
             shelf(title: "The oldest trees we map",
-                  subtitle: "Standing before your country looked like this",
+                  subtitle: nil,
                   trees: oldest,
                   season: false,
                   more: .index(.oldest))
         }
 
+        if let t = deck.tallest {
+            shelf(title: "The tallest trees", subtitle: nil, trees: t.trees,
+                  season: false, more: .collection(t.collection.slug))
+        }
+        if let t = deck.thickest {
+            shelf(title: "The thickest trunks", subtitle: nil, trees: t.trees,
+                  season: false, more: .collection(t.collection.slug))
+        }
+        if deck.islands.count >= 3 { islandShelf }
+
         countryShelf
         speciesShelf
+    }
+
+    /// "the United States", "the Netherlands", but "Germany". The countries
+    /// that take an article in English, as the feed spells them.
+    static func withArticle(_ country: String) -> String {
+        let the: Set<String> = ["United States", "United Kingdom", "Netherlands",
+                                "Czech Republic", "Philippines", "Bahamas"]
+        return the.contains(country) ? "the \(country)" : country
+    }
+
+    /// Tree islands, as the website picked them (lib/favourites.ts): the city
+    /// card, because an island here is a place exactly the way a city is.
+    private var islandShelf: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            ShelfHeader(title: "Tree islands")
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .top, spacing: 12) {
+                    ForEach(deck.islands, id: \.slug) { c in
+                        NavigationLink(value: Route.city(c.slug)) { cityCard(c) }
+                            .buttonStyle(.plain)
+                    }
+                }
+                .padding(.horizontal, 16).padding(.bottom, 4)
+            }
+        }
     }
 
     private var countryShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Tree countries",
-                        subtitle: "\(deck.countries.count) countries, as far as we have mapped",
                         more: .index(.countries))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
@@ -502,17 +592,18 @@ struct HomeView: View {
         .frame(maxWidth: .infinity)
     }
 
+    // NO SUBTITLES under the shelf titles (Hidde, 2026-10-04: "maybe less is
+    // more"). AllTrails, Airbnb, Netflix and Spotify put a title and a See all
+    // on a browse row and nothing under it; the cards do the persuading. The
+    // counts that sat here ("31 countries, as far as we have mapped") were
+    // the lead-with-a-count habit PITCH_VOICE.md names. CONVENTIONS.md
+    // 2026-10-04.
+
     /// The website's own homepage shelf, which this screen was missing: the
     /// places, with a photograph, rather than a list of names and counts.
-    private func placesLine(_ n: Int) -> String { n == 1 ? "1 place worth an afternoon" : "\(n) places worth an afternoon" }
-
     private var cityShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Our favourite tree cities",
-                        // The count under the title is every PLACE we map, not the
-                        // ten on the shelf, because the shelf is a pick and the
-                        // line is the invitation to See all.
-                        subtitle: placesLine(catalogue.citySlugs.count),
                         more: .index(.cities))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
