@@ -128,6 +128,12 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # A review the watchdog dispatches runs as the repo's own Actions
+          # bot, and the action refused every one ("Workflow initiated by
+          # non-human actor"), so the scheduled reviews passed while each
+          # rescue failed and the session brief read the gate as broken
+          # (2026-10-02 and 10-03). Same line nightly.yml carries, same reason.
+          allowed_bots: "github-actions[bot]"
           prompt: |
             You are the FRESH-EYES REVIEWER for Ancient Trees, deliberately
             without the builder's context. You review; you never fix. A
