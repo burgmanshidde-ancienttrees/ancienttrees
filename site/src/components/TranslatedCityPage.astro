@@ -142,7 +142,7 @@ const cityHasQuestion = hasQuestionPage(city);
       <div class="sheet-body">
       <div class="city-intro">
         <p class="lede">{tr.intro}</p>
-        <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} />
+        <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} place={tr.city} />
         <button type="button" class="city-intro-more">{U.readMore}</button>
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}

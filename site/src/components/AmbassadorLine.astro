@@ -25,26 +25,41 @@ import { icon } from "../lib/icons";
 import { ui } from "../lib/i18n";
 import type { Ambassador } from "../lib/ambassadors";
 
-interface Props { people: Ambassador[]; lang?: string }
-const { people, lang = "en" } = Astro.props as Props;
+interface Props { people: Ambassador[]; lang?: string; place?: string }
+const { people, lang = "en", place } = Astro.props as Props;
 const U = ui(lang);
 ---
 {people.length > 0 && (
   <ul class="ambassadors" aria-label="Ambassadors">
     {people.map((p) => (
-      <li class="ambassador-line">
-        <Fragment set:html={icon("seal-check", "fill", "ic ambassador-seal")} />
-        <span class="ambassador-label">{U.ambassadorLabel}</span>
-        <span class="ambassador-name">{p.display_name}</span>
+      <li class="ambassador">
+        <span class="ambassador-avatar" aria-hidden="true">
+          {p.display_name!.trim().charAt(0).toUpperCase()}
+          <Fragment set:html={icon("seal-check", "fill", "ic ambassador-seal")} />
+        </span>
+        <span class="ambassador-text">
+          <span class="ambassador-name">{p.display_name}</span>
+          <span class="ambassador-role">{U.ambassadorRole(place ?? p.place_name)}</span>
+        </span>
       </li>
     ))}
   </ul>
 )}
 
 <style>
-  .ambassadors { list-style: none; margin: 0.75rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
-  .ambassador-line { display: flex; align-items: center; gap: 6px; max-width: 100%; font-size: 14px; line-height: 1.4; }
-  .ambassador-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); }
-  .ambassador-name { font-weight: 600; color: var(--ink); }
-  .ambassador-line :global(.ambassador-seal) { width: 16px; height: 16px; flex: none; fill: var(--moss); color: var(--moss); }
+  .ambassadors { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .ambassador { display: flex; align-items: center; gap: 10px; max-width: 100%; }
+  .ambassador-avatar {
+    position: relative; flex: none; width: 32px; height: 32px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--moss-light); color: var(--moss);
+    font-size: 14px; font-weight: 700; line-height: 1;
+  }
+  .ambassador-avatar :global(.ambassador-seal) {
+    position: absolute; right: -3px; bottom: -3px; width: 15px; height: 15px;
+    fill: var(--moss); background: var(--cream); border-radius: 50%;
+  }
+  .ambassador-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
+  .ambassador-name { font-size: 14px; font-weight: 700; color: var(--ink); }
+  .ambassador-role { font-size: 12px; color: var(--ink-mid); }
 </style>
