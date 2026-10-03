@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (later window): US write pass, +4 trees
+
+Rung 5/4, first dispatch a write pass on the four verified US trees waiting for a story: Austin +1 (Sunset Valley Bigelow Oak, 10), Los Angeles +1 (El Pino, view from the street, 11), Sequoia +1 (Sentinel Tree, 7), Washington DC +1 (Travilah Oak, 16). All confirmed pins, no photos yet (two candidates for a viewing pass: Travilah Oak, Sentinel). Intro counts updated. Preflight 0 problems. Not done: refill pass for Munich (claimed by an earlier run) and the 49 source-only leads. Visits last 7 days: 2590.
+
 ## 2026-10-03 session: the ambassador is komoot's person row, on web and app
 
 Hidde, on the ambassador line: "feels a bit unprofessional", then "follow the design way of komoot". komoot prints a person as a 32px round avatar, the name in bold and one small grey line (measured on a komoot Highlight). The website's city intro now draws exactly that: initial avatar with the seal, "Giulia Torta", "Florence ambassador" (eight languages, the role line avoids gendered nouns). The app's city page had no ambassador at all; the names now travel in browse.json and AmbassadorRow draws the same row above the trees (app compiles; shows once the new feed is live).
