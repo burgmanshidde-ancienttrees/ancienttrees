@@ -720,6 +720,12 @@
    "country": "Germany",
    "status": "lead_list",
    "note": "Pointed out 2026-10-02 by Vera Donata Wesinger (Gartenreferentin, Referatsleitung G6) by mail to Hidde. nationalerbe-baeume.de is the Kuratorium Nationalerbe-Baeume of the Deutsche Dendrologische Gesellschaft (Prof. Andreas Roloff, TU Dresden), funded by the Eva Mayr-Stihl Stiftung: a hundred trees to be proclaimed, each over 400 cm round and ideally over 400 years, each with a portrait page and a map pin, several proclaimed in 2026 alone. A FINDING AID and never a cited source on its own: the portraits carry measurements, age and the owner, and each tree is famous enough to have its own press, so a verify pass has a second source within reach. Content licence not stated beyond an Impressum, so nothing is copied, only read. We already held a handful as Commons leads (Hamburg, Rothenburg, the famous-Germany file); the whole list has not been walked. Germany is a focus country again since 2026-10-02 (US-only lifted)."
+  },
+  {
+   "place": "New York",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-03 on scout_next.py --target naming New York (#4). NYC Parks' Great Trees pages (nycgovparks.org/trees/great-trees) answer a plain curl with an AWS WAF captcha ('Human Verification'), so a night run cannot read the per-tree pages; the Great Trees list is not on NYC Open Data as a dataset that was found in this window either (the open Street Tree Census is a full inventory, never to be bulk-imported). Retry from a session with a browser, or via a Wikidata/Wikipedia 'Great Trees of New York City' list that carries coordinates. New York already holds published trees (see data/cities/new-york.json), so this is depth, not an opening."
   }
  ],
  "out_of_focus": {
