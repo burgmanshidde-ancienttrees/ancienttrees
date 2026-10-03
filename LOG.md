@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (twelfth attempt): nothing to ship, pace cap still shut
+
+Pulled; only claim is munich (muc_055 to 061 verified, held for the 24h pace cap clearing after about 12:54 UTC tomorrow). leads.py --ready is 0. Dispatching verify or write would add trees the cap refuses to merge. Next window after the cap: merge muc_055 to 060, the Nuremberg two, add muc ids to the de overlay.
+
 ## 2026-10-03 night run (eleventh attempt): nothing to ship, pace cap still shut
 
 Pulled; only claim is munich (verified muc_055 to 061 held for the 24h pace cap and the German overlay). leads.py --ready is 0. Nothing dispatched: any new verify or write output could not merge until after about 12:54 UTC tomorrow. Next window after the cap clears: merge muc_055 to 060, the Nuremberg two, add muc ids to the de overlay.
