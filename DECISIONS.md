@@ -14,15 +14,21 @@ free."
   improving the product and getting people in, not charging.
 - Plus is introduced slowly, as a subscription, one feature at a time: walks
   first (his call), then the season tool, then species recognition for a
-  reader's own curiosity. Each addition goes to Plus; nothing free on the
-  day Plus opens is ever taken away (the 08-26 freeze stands).
+  reader's own curiosity. Each addition goes to Plus. While Plus is being
+  built up this way, what is free stays free (the 08-26 freeze), but that is
+  the working rule of the staged phase and not a promise: see the last
+  experiment below.
 - Adding trees, photographing them and correcting pages are free, forever in
   practice, in the app and on the web. Recognition of a tree somebody ADDS
   runs free, because the species is our gain; recognition for your own
   curiosity is Plus (the 09-11 ruling, kept).
 - If Plus with several features pushes nobody to buy over the long term, the
-  full-app paywall (seven open days, then pay, earlier installs
-  grandfathered) is the last experiment. Not before.
+  app itself becomes paid (seven open days, then pay). Hidde, correcting the
+  first draft of this entry: "we might take free stuff away like I said, if
+  nothing works out we can still make the app paid." So free things CAN be
+  withdrawn at that step; grandfathering earlier installs by original
+  purchase date is the recommended mechanism, his call at the time. Adding,
+  photographing and correcting stay free on the web whatever the app does.
 - Rejected, by his word: a Polarsteps-style printed book ("I'm not going to
   the Polarsteps print model"), sponsorship by cities and gardens ("I don't
   want sponsorships"), and a one-time unlock in place of the subscription.
