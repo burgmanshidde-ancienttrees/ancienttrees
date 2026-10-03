@@ -82,6 +82,18 @@ If neither is in reach, do not verify it: record it in data/leads/ with the reas
    satellite-visible crown). Park-level or shrine-level knowledge is
    `"approximate"`, and that is a finished, publishable answer. Faking precision
    is the one mistake this project cannot afford.
+4. **Or a small site (Hidde, 2026-10-04, sitewide).** A tree whose trunk you
+   cannot pin to the metre may still be FINDABLE: when it stands on a small,
+   named site that a visitor takes in at one glance, record
+   `"location_site": {"name": "Gate of Magnolia Cemetery", "radius_m": 30}`
+   with the honest radius (50 m at most), keep `location_precision`
+   `"approximate"`, and put in `verify_notes` what tells this tree apart on
+   that site (the biggest, the one by the gate, the leaning one), from your
+   sources only. A churchyard, a cemetery gate, a square, a cloister, a
+   courtyard or a library lawn is a site; a park, a wood, a campus or a garden
+   you walk through is not, whatever radius you could write down. With a
+   recognition line from the writer this counts like a photo or a confirmed pin
+   (scripts/findable.py). Never use it to dress up a park-level pin.
 
 ## Hard limits that never bend
 
@@ -399,6 +411,7 @@ One object per tree:
   "access": "Free / paid entry / restricted, with the honest caveat if any",
   "transport": "Nearest station or stop + walk time",
   "location_precision": "confirmed | approximate",
+  "location_site": {"name": "only for a small named site, see point 4", "radius_m": 30},
   "curation_status": "ai_generated | flagged",
   "verify_notes": "Raw facts for the writer: what makes it remarkable, what it witnessed, disagreements between sources, the anecdote worth leading with. Bullet-style is fine."
 }

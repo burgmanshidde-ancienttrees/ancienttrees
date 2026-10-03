@@ -40,6 +40,12 @@ in the prose.
 
 ## Every tree also gets a recognition line
 
+**On a tree with a `location_site`, the line is what makes it findable, so it is
+never optional there (2026-10-04).** Name the site and the tell, from the verify
+notes only: "At the gate of Magnolia Cemetery, the larger of the two oaks either
+side of the entrance." Without the line the tree stays out of Google and a new
+one is refused (scripts/findable.py).
+
 One sentence in `how_to_recognise`, alongside the story, answering the only
 question somebody standing in the park actually has: WHICH of the trees in
 front of me is it.
