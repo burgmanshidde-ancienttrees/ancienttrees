@@ -738,6 +738,12 @@
    "country": "United Kingdom",
    "status": "stalled",
    "note": "SCOUTED 2026-10-03 on scout_next.py --target (#37). No official register of remarkable trees. Three things found: (1) GiGL's London Public Realm Trees (data.london.gov.uk, CSV from all boroughs, Royal Parks, TfL) is a full street/park inventory, excluded as a bulk import; (2) the Woodland Trust Ancient Tree Inventory stays gated (London gate); (3) the curated 'Great Trees of London' list (Trees for Cities, 61 trees chosen by the public after 1987 and 2008, Wikipedia en 'Great_Trees_of_London' carries a coordinate per tree) is the usable lead source: not a government register, so every tree needs its own verify (alive, second source, pin), but it is a selection made for exactly our question and London holds 23 published trees against a target of 100. NEXT for a verify pass: brief it from that Wikipedia list, skip those already published (check by distance), mine for walkable clusters (Kew, Greenwich, Hampstead, the City churchyards)."
+  },
+  {
+   "place": "Edinburgh",
+   "country": "United Kingdom",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-03 on scout_next.py --target. The City of Edinburgh Council open spatial data portal lists only 'Tree Preservation Orders' (INSPIRE MapServer layer 16, a legal protection layer, not a remarkable-tree register) and a 'Trees' FeatureServer on services-eu1.arcgis.com whose layer 0 returned no metadata (likely a full municipal inventory, which the semantic filter forbids importing). No heritage-tree list found. Route: Woodland Trust Ancient Tree Inventory (London gate applies) or a from-zero pass. Do not re-scout without a new angle."
   }
  ],
  "out_of_focus": {

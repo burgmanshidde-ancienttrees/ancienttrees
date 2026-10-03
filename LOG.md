@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run, fourth attempt: scouted Edinburgh, no trees (pace cap still shut)
+
+Pulled; no claims, ready 0. Claimed and force-released nuremberg (its two verified trees stay held by the 24h pace cap, clears about 12:54 UTC 10-04). Scouted Edinburgh as scout_next named it: only a TPO layer and an unverified Trees inventory, verdict `stalled` in data/register-scouting.json. Next window after the cap: merge muc_055 to 060 and the Nuremberg two.
+
 ## 2026-10-03 night run, third attempt: nothing shipped, pace cap still shut
 
 - Pulled; the only standing claim was munich, released with --force (its register is mined, the verify pass would find nothing). `leads.py --ready` is 0. Written trees waiting on the 24h cap (runaway cap 60, about 62 in the window): muc_055 to 060, Nuremberg two, lon_027, hou_009 to 011, ber_041, fuk_017. Merge them after about 12:54 UTC 10-04. I did not dispatch new verify work, because any tree it found would also hit the cap. The cap is Hidde's, so I left it alone.
