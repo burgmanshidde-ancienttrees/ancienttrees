@@ -1,3 +1,5 @@
+**SENT 2026-09-24** (batch reply-owed-2026-09-24). Kept as the record of what was said; do not send again.
+
 # FOR HIDDE: reply to Ingeborg Schreuder, KNNV bureau
 
 To: [address in Hidde's mailbox] (she replied from there; our first mail went to [address in Hidde's mailbox])

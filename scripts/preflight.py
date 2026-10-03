@@ -2546,6 +2546,47 @@ def check_a_by_licence_names_its_author():
     return out
 
 
+def check_photo_fields_reach_the_site():
+    """Every key a photo record carries is either named in the site's schema
+    or known bookkeeping the site never draws.
+
+    site/src/content.config.ts reads data/cities through zod, and zod strips a
+    key it does not name without a word. `attribution_url` was written into
+    oslo.json, read by PhotoFigure and sent in the feed as `credit_url`, and
+    arrived everywhere as nothing: the photographer who gave us the pictures on
+    the one condition of a linked credit got a bare name, on the page and in
+    the app, and every gate was green (2026-10-03). Width and height went the
+    same way once (353 photographs with null dimensions), and so nearly did
+    contributor_user_id. Third time, so it is a check.
+    """
+    cfg = os.path.join("site", "src", "content.config.ts")
+    try:
+        src = open(cfg, encoding="utf-8").read()
+    except OSError:
+        return []
+    start = src.find("const photoFields = z")
+    end = src.find(".partial()", start)
+    if start < 0 or end < 0:
+        return ["FAIL content.config.ts: photoFields was not found, so nothing checks that photo "
+                "keys survive the schema. Fix check_photo_fields_reach_the_site() to find it."]
+    named = set(re.findall(r"^\s{4}([a-z_]+):\s*z\.", src[start:end], re.M))
+    # Written for scripts and never drawn; safe to strip.
+    bookkeeping = {"sighting_id", "held_reason", "caption", "commons_file"}
+    seen = {}
+    for path in sorted(glob.glob(os.path.join("data", "cities", "*.json"))):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for t in city.get("trees") or []:
+            for ph in [t.get("photo") or {}] + [x for x in (t.get("photos") or []) if x]:
+                for k in ph:
+                    if k not in named and k not in bookkeeping:
+                        seen.setdefault(k, t.get("id"))
+    return [f"FAIL photo key '{k}' (first on {tid}) is not named in photoFields in "
+            f"site/src/content.config.ts, so zod strips it and no page or feed ever sees it. "
+            f"Name it there, or add it to the bookkeeping set in this check if nothing draws it."
+            for k, tid in sorted(seen.items())]
+
+
 def check_park_words_match():
     """The park keyword list says the same thing in Python and in TypeScript.
 
@@ -2761,6 +2802,7 @@ def main():
                 + check_one_common_name_per_species()
                 + check_register_says_the_tree_is_gone()
                 + check_park_words_match()
+                + check_photo_fields_reach_the_site()
                 + check_every_us_place_has_a_state()
                 + check_every_tree_has_a_recognition_line())
     files = sorted(glob.glob("data/cities/*.json"))

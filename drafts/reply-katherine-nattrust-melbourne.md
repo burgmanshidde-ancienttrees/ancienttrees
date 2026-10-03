@@ -1,3 +1,5 @@
+**SENT 2026-09-24** (batch reply-owed-2026-09-24). Kept as the record of what was said; do not send again.
+
 # FOR HIDDE: reply to Katherine Masiulanis, National Trust of Australia (Victoria)
 
 To: [address in Hidde's mailbox] (reply to her mail of 23 Aug, which
