@@ -378,24 +378,6 @@
    ]
   },
   {
-   "name": "Mark Twain Tree",
-   "lat": 36.717,
-   "lng": -118.965,
-   "photos": [
-    "http://commons.wikimedia.org/wiki/Special:FilePath/Big%20Stump%20Grove%20Stump.jpg"
-   ],
-   "wikidata": "Q113330589",
-   "taxon": null,
-   "admin": null,
-   "status": "open",
-   "species": null,
-   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
-   "sources": [
-    "https://www.wikidata.org/wiki/Q113330589",
-    "https://en.wikipedia.org/wiki/Mark_Twain_Tree"
-   ]
-  },
-  {
    "name": "Mother Orange Tree",
    "lat": 39.511111111,
    "lng": -121.504277777,
@@ -411,24 +393,6 @@
    "sources": [
     "https://www.wikidata.org/wiki/Q1956029",
     "https://en.wikipedia.org/wiki/Mother_Orange_Tree"
-   ]
-  },
-  {
-   "name": "National Christmas Tree",
-   "lat": 38.8949,
-   "lng": -77.0363,
-   "photos": [
-    "http://commons.wikimedia.org/wiki/Special:FilePath/2020%20National%20Christmas%20Tree%20Lighting%20%282274716e-44a5-4680-9b53-854791d496b2%29.jpg"
-   ],
-   "wikidata": "Q1523633",
-   "taxon": null,
-   "admin": "Washington, D.C.",
-   "status": "open",
-   "species": null,
-   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
-   "sources": [
-    "https://www.wikidata.org/wiki/Q1523633",
-    "https://en.wikipedia.org/wiki/National_Christmas_Tree_(United_States)"
    ]
   },
   {
@@ -624,24 +588,6 @@
    "sources": [
     "https://www.wikidata.org/wiki/Q18709203",
     "https://en.wikipedia.org/wiki/Tree_of_40_Fruit"
-   ]
-  },
-  {
-   "name": "Washington",
-   "lat": 36.5642,
-   "lng": -118.763,
-   "photos": [
-    "http://commons.wikimedia.org/wiki/Special:FilePath/Washington%20Tree%202007.jpg"
-   ],
-   "wikidata": "Q1967325",
-   "taxon": null,
-   "admin": "California",
-   "status": "open",
-   "species": null,
-   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
-   "sources": [
-    "https://www.wikidata.org/wiki/Q1967325",
-    "https://en.wikipedia.org/wiki/Washington_Tree"
    ]
   },
   {
@@ -866,21 +812,6 @@
    "sources": [
     "https://www.wikidata.org/wiki/Q17080205",
     "https://en.wikipedia.org/wiki/Monroe_(tree)"
-   ]
-  },
-  {
-   "name": "Quinault Giant Sitka Spruce",
-   "lat": 47.478146936,
-   "lng": -123.829844017,
-   "photos": [],
-   "wikidata": "Q107415547",
-   "taxon": null,
-   "admin": "Grays Harbor County",
-   "status": "open",
-   "species": null,
-   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
-   "sources": [
-    "https://www.wikidata.org/wiki/Q107415547"
    ]
   },
   {
@@ -1211,6 +1142,79 @@
     "https://www.wikidata.org/wiki/Q69716290"
    ],
    "reason": "probably the Kalaloch Redcedar we already publish (oly_001); check before treating as new (from memory; a pass that finds it alive may reopen it)"
+  },
+  {
+   "name": "Mark Twain Tree",
+   "lat": 36.717,
+   "lng": -118.965,
+   "photos": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Big%20Stump%20Grove%20Stump.jpg"
+   ],
+   "wikidata": "Q113330589",
+   "taxon": null,
+   "admin": null,
+   "status": "open",
+   "species": null,
+   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q113330589",
+    "https://en.wikipedia.org/wiki/Mark_Twain_Tree"
+   ],
+   "reason": "a stump, felled 1891"
+  },
+  {
+   "name": "National Christmas Tree",
+   "lat": 38.8949,
+   "lng": -77.0363,
+   "photos": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/2020%20National%20Christmas%20Tree%20Lighting%20%282274716e-44a5-4680-9b53-854791d496b2%29.jpg"
+   ],
+   "wikidata": "Q1523633",
+   "taxon": null,
+   "admin": "Washington, D.C.",
+   "status": "open",
+   "species": null,
+   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q1523633",
+    "https://en.wikipedia.org/wiki/National_Christmas_Tree_(United_States)"
+   ],
+   "reason": "a young spruce planted 2023, not ancient"
+  },
+  {
+   "name": "Washington",
+   "lat": 36.5642,
+   "lng": -118.763,
+   "photos": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Washington%20Tree%202007.jpg"
+   ],
+   "wikidata": "Q1967325",
+   "taxon": null,
+   "admin": "California",
+   "status": "open",
+   "species": null,
+   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q1967325",
+    "https://en.wikipedia.org/wiki/Washington_Tree"
+   ],
+   "reason": "already published as the Washington Tree (Sequoia National Park)"
+  },
+  {
+   "name": "Quinault Giant Sitka Spruce",
+   "lat": 47.478146936,
+   "lng": -123.829844017,
+   "photos": [],
+   "wikidata": "Q107415547",
+   "taxon": null,
+   "admin": "Grays Harbor County",
+   "status": "open",
+   "species": null,
+   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q107415547"
+   ],
+   "reason": "already published as the Quinault Big Spruce (oly_004)"
   }
  ]
 }
