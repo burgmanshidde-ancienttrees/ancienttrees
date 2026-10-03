@@ -125,8 +125,8 @@ struct PlaceMapPage: View {
                 // Who looks after this city, komoot's person row, above the
                 // trees as the website prints it under the intro.
                 if case .city(let slug) = place {
-                    ForEach(catalogue.facets.ambassadors(city: slug), id: \.self) { name in
-                        AmbassadorRow(name: name, place: title)
+                    ForEach(catalogue.facets.ambassadors(city: slug), id: \.self) { a in
+                        AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
                     }
                 }
                 ForEach(inTown) { t in card(t) }

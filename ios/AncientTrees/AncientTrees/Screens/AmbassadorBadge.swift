@@ -78,6 +78,7 @@ struct AmbassadorBadge: View {
 struct AmbassadorRow: View {
     let name: String
     let place: String
+    var affiliation: String? = nil
 
     var body: some View {
         HStack(spacing: 10) {
@@ -97,7 +98,7 @@ struct AmbassadorRow: View {
                 Text(name)
                     .font(.system(size: 14, weight: .bold))
                     .foregroundStyle(Brand.ink)
-                Text("\(place) ambassador")
+                Text(affiliation.map { "\(place) ambassador · \($0)" } ?? "\(place) ambassador")
                     .font(.system(size: 12))
                     .foregroundStyle(Brand.inkSoft)
             }

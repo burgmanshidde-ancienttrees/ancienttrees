@@ -351,7 +351,7 @@ public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
     /// The people named as this city's ambassadors, consent already settled on
     /// the website (data/ambassadors.json). Cities only, usually absent. A var
     /// with a default so older code building a facet by hand still compiles.
-    public var ambassadors: [String]? = nil
+    public var ambassadors: [CityAmbassador]? = nil
 
     public var id: String { slug ?? name }
 }
@@ -375,6 +375,13 @@ public struct BrowseFeed: Codable, Sendable {
 /// what the feed actually said. Nothing is decided here on purpose. A facet's
 /// face and its intro are the website's judgement, and the whole point of
 /// carrying them is that the two surfaces cannot disagree.
+/// One person named on a city page, with the institution beside the name where
+/// they agreed to that too. Both decided on the website (data/ambassadors.json).
+public struct CityAmbassador: Codable, Hashable, Sendable {
+    public let name: String
+    public let affiliation: String?
+}
+
 public struct BrowseFacets: Sendable {
     public static let empty = BrowseFacets(cities: [], countries: [], species: [], parks: [])
 
@@ -415,7 +422,7 @@ public struct BrowseFacets: Sendable {
     public func face(city slug: String) -> String? { cityBySlug[slug]?.face }
     public func aka(city slug: String) -> [String] { cityBySlug[slug]?.aka ?? [] }
     public func popularity(city slug: String) -> Int { cityBySlug[slug]?.popularity ?? 0 }
-    public func ambassadors(city slug: String) -> [String] { cityBySlug[slug]?.ambassadors ?? [] }
+    public func ambassadors(city slug: String) -> [CityAmbassador] { cityBySlug[slug]?.ambassadors ?? [] }
     public func face(country name: String) -> String? { countryByName[name]?.face }
     public func face(species commonName: String) -> String? { speciesByName[commonName]?.face }
     public func intro(species commonName: String) -> String? { speciesByName[commonName]?.intro }
