@@ -14,6 +14,873 @@ roughly double the real number, and do not compare one across that date.
 because those point at /app and the listener matched the href. Every other
 event on the list is unaffected.
 
+## 2026-10-02 (previous UTC day)
+
+**Today: nothing here needs you.** The blocks below are the standing picture.
+
+**What readers gave us, and it went live**
+
+| Day | Tree | Where | What |
+|---|---|---|---|
+| 10-01 | The Horse Chestnut of Square Rene-Le Gall | Paris | a reader's photograph, published |
+| 10-02 | The Horse Chestnut of Square Rene-Le Gall | Paris | a reader's photograph, published beside the one it had |
+| 10-02 | The Horse Chestnut of Square Rene-Le Gall | Paris | a reader's photograph, published beside the one it had |
+| 10-02 | The Horse Chestnut of Square Rene-Le Gall | Paris | a reader's photograph, published beside the one it had |
+| 10-02 | The Horse Chestnut of Square Rene-Le Gall | Paris | a reader's photograph, published beside the one it had |
+| 10-02 | The Horse Chestnut of Square Rene-Le Gall | Paris | a reader's photograph, published beside the one it had |
+| 10-02 | The Horse Chestnut of Square Rene-Le Gall | Paris | a reader's photograph, published beside the one it had |
+| 10-02 | The Dragon Tree of Quinta Conde dos Arcos | Lisbon | a reader's photograph, published beside the one it had |
+| 10-02 | The Dragon Tree of Quinta Conde dos Arcos | Lisbon | a reader's photograph, published beside the one it had |
+| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | a reader's photograph, published |
+| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | a reader's photograph, published beside the one it had |
+| 10-02 | The Camphor of Oimatsu Tenjin Shrine | Fukuoka | a reader's photograph, published |
+| 10-02 | The Sacred Cedar of Kirishima Jingu | Kagoshima | a reader's photograph, published |
+| 10-02 | The Leaning Camphor of the Shiroyama Car Park | Kagoshima | a reader's photograph, published |
+| 10-02 | Chichibu-sugi (秩父杉), the Cedar of Takachiho Shrine | Takachiho | a reader's photograph, published beside the one it had |
+| 10-02 | Meoto-sugi (夫婦杉), the Wedded Cedars of Takachiho Shrine | Takachiho | a reader's photograph, published |
+
+**Did the product happen**
+
+| Action | Yesterday | 14 days | Ever | Last |
+|---|---:|---:|---:|---|
+| signin-open | 8 | 431 | 431 | yesterday |
+| app-cta | 1 | 35 | 86 | yesterday |
+| directions | 0 | 35 | 57 | today |
+| search-home | 5 | 18 | 47 | yesterday |
+| signin-done | 0 | 38 | 38 | 6 days ago |
+| signin-oauth | 0 | 37 | 37 | 6 days ago |
+| suggestion-submit | 0 | 17 | 17 | 8 days ago |
+| waitlist-submit | 0 | 4 | 13 | 9 days ago |
+| home-fav | 1 | 5 | 11 | yesterday |
+| walks-app | 0 | 1 | 11 | 10 days ago |
+| app-open | 0 | 10 | 10 | 6 days ago |
+| search-explore | 1 | 2 | 8 | yesterday |
+| home-country | 0 | 5 | 7 | 3 days ago |
+| signin-link-sent | 0 | 6 | 6 | 8 days ago |
+| save | 1 | 5 | 5 | yesterday |
+| home-dir-tree | 0 | 3 | 4 | 10 days ago |
+| visit | 0 | 3 | 3 | 13 days ago |
+| home-species | 0 | 2 | 2 | 12 days ago |
+| sponsor-open | 0 | 1 | 2 | 13 days ago |
+| app-page-badge | 0 | 0 | 1 | 23 days ago |
+| home-dir-city | 0 | 0 | 1 | 24 days ago |
+| worthit-report | 0 | 1 | 1 | 9 days ago |
+| worthit-report detail | 0 | 1 | 1 | 9 days ago |
+| worthit-worth it | 0 | 1 | 1 | 13 days ago |
+| worthit-not worth it | 0 | 0 | 0 | never |
+| **all** | **17** | **661** | **800** | |
+- 'Ever' counts every row in the events table, which begins 2026-08-01 when the funnel was repaired. Anything named here with a zero has never fired at all.
+
+**What people typed into our search** (14 days, 18 searches, 13 different terms)
+
+| Typed | Times |
+|---|---:|
+| estambul | 3 |
+| lisboa | 3 |
+| lisbon | 2 |
+| canada | 1 |
+| cop | 1 |
+| granada | 1 |
+| graz | 1 |
+| lis | 1 |
+| lisb | 1 |
+| mu | 1 |
+| munich | 1 |
+| oslo | 1 |
+| tokyo | 1 |
+
+| Day | Accounts | Android waitlist | Saves | Trees sent | Feedback |
+|---|---:|---:|---:|---:|---:|
+| 09-19 | 2 | 0 | 0 | 0 | 0 |
+| 09-20 | 3 | 1 | 3 | 9 | 1 |
+| 09-21 | 0 | 0 | 0 | 3 | 0 |
+| 09-22 | 0 | 0 | 1 | 1 | 0 |
+| 09-23 | 0 | 0 | 0 | 1 | 0 |
+| 09-24 | 0 | 1 | 0 | 0 | 2 |
+| 09-25 | 2 | 0 | 0 | 1 | 0 |
+| 09-26 | 0 | 0 | 0 | 0 | 0 |
+| 09-27 | 0 | 0 | 0 | 0 | 0 |
+| 09-28 | 0 | 0 | 0 | 0 | 0 |
+| 09-29 | 0 | 0 | 0 | 0 | 0 |
+| 09-30 | 0 | 0 | 0 | 0 | 0 |
+| 10-01 | 3 | 0 | 0 | 0 | 3 |
+| 10-02 | 0 | 0 | 1 | 0 | 0 |
+| 10-03 | 0 | 0 | 0 | 0 | 0 |
+| **14 days** | **10** | **2** | **5** | **15** | **6** |
+- Our own rows are not in this table: 53 trees, 43 feedback, 3 accounts. They are testing, and counting them reads as traction.
+- Android waitlist: 20 total, newest 9 days ago
+- Submissions: 30 total (17 trees sent, 13 feedback), newest 2 days ago
+- Accounts:    21 total, newest 2 days ago
+
+**What readers told us** (14 days, structure only; the words stay in the database)
+
+| Day | Tree | What | Note | From | Outcome |
+|---|---|---|---|---|---|
+| 09-20 | C920CF02-072D-492C-8B22-FC04956142 | tree sent in | - | us | - |
+| 09-20 | 12168CA4-F893-4296-A444-14BD9E2C4E | tree sent in | - | us | - |
+| 09-20 | 48129024-139C-4B61-9136-2A2BD746B5 | tree sent in | - | us | - |
+| 09-20 | Schöne Eiche im Schlosspark | tree sent in | 121 chars, read it in the database | ebde | changed |
+| 09-20 | Hammundeseiche | tree sent in | 64 chars, read it in the database | ebde | changed |
+| 09-20 | Hammundeseiche | tree sent in | 34 chars, read it in the database | ebde | changed |
+| 09-20 | Hammundeseiche | tree sent in | 34 chars, read it in the database | ebde | changed |
+| 09-20 | Hammundeseiche | tree sent in | 35 chars, read it in the database | ebde | changed |
+| 09-20 | Hammundeseiche | tree sent in | 47 chars, read it in the database | ebde | changed |
+| 09-20 | Hammundeseiche | tree sent in | 46 chars, read it in the database | ebde | changed |
+| 09-20 | Hammundeseiche | tree sent in | 46 chars, read it in the database | ebde | changed |
+| 09-20 | Hammundeseiche | tree sent in | 54 chars, read it in the database | ebde | changed |
+| 09-20 | rbn_001 (1000-jährige Linde in Rei | worth it | - | ebde | holds |
+| 09-20 | Hammundeseiche | tree sent in | 160 chars, read it in the database | ebde | changed |
+| 09-21 | Hammundeseiche | tree sent in | 133 chars, read it in the database | ebde | changed |
+| 09-21 | Hammundeseiche | tree sent in | 46 chars, read it in the database | ebde | changed |
+| 09-21 | Hammundeseiche | tree sent in | 126 chars, read it in the database | ebde | changed |
+| 09-21 | Hammundeseiche | tree sent in | 46 chars, read it in the database | ebde | changed |
+| 09-22 | Hammundeseiche | tree sent in | 46 chars, read it in the database | ebde | changed |
+| 09-23 | test | tree sent in | 4 chars, read it in the database | us | - |
+| 09-23 | test | tree sent in | 4 chars, read it in the database | us | - |
+| 09-23 | Schöne Eiche | tree sent in | 613 chars, read it in the database | ebde | changed |
+| 09-24 | 01D9C8B8-147F-40D5-AF0C-D81857C90F | tree sent in | - | us | - |
+| 09-24 | B4B65FEF-1AC7-4EBD-AE21-88200BE2FB | tree sent in | - | us | - |
+| 09-24 | 9F1810D8-0BBF-4220-81F7-47C9177C97 | tree sent in | - | us | - |
+| 09-24 | fwd_001 (The Hammundeseiche) | report | something else | ebde | changed |
+| 09-24 | fwd_001 (The Hammundeseiche) | report detail | 952 chars | ebde | changed |
+| 09-25 | 1993A31D-F025-44D3-BCC1-6CAA9CBBA0 | tree sent in | - | us | - |
+| 09-25 | 16539189-ABE6-4F04-A8A9-52EC0C3752 | tree sent in | - | us | - |
+| 09-25 | D8CCD98D-702C-4E1E-8C23-BDB5A712B8 | tree sent in | 30 chars, read it in the database | us | - |
+| 09-25 | Schöne Eiche | tree sent in | 286 chars, read it in the database | ebde | changed |
+| 09-26 | - | Werkt dit überhaupt test | - | us | holds |
+| 09-26 | cop_001 (The Mulberry of Proviantg | worth it | - | us | holds |
+| 09-28 | 50BAB485-DCC6-479F-A4FA-F45756D855 | tree sent in | - | us | - |
+| 09-28 | 70E18AB5-CC32-492E-B2A4-A816E85458 | tree sent in | - | us | - |
+| 09-29 | 8BFEB681-540D-4B78-8DF5-06A95191AD | tree sent in | - | us | - |
+| 09-29 | B9A2D2DF-77BA-4240-8C90-63CA0A83B1 | tree sent in | - | us | - |
+| 09-29 | A54BCE9E-B822-4E4D-A14D-2097523C4D | tree sent in | 62 chars, read it in the database | us | - |
+| 09-29 | 0EE5B139-7042-4BCB-A109-4E8B8D0511 | tree sent in | 62 chars, read it in the database | us | - |
+| 10-01 | 74066D89-9958-4D93-BFDC-1C78ED97EE | tree sent in | - | us | - |
+| 10-01 | E36A052C-3A48-4EED-BA48-5AB48574FA | tree sent in | - | us | - |
+| 10-01 | lis_030 (The Dragon Tree of Quinta | worth it | - | 08aa | - |
+| 10-01 | par_031 (The Horse Chestnut of Squ | worth it | - | cfe8 | - |
+| 10-01 | par_033 (The Turkey Oak of Square  | worth it | - | cfe8 | - |
+| 10-02 | par_031 (The Horse Chestnut of Squ | worth it | - | us | - |
+| 10-02 | lis_030 (The Dragon Tree of Quinta | worth it | - | us | - |
+| 10-02 | 59E829E3-784F-4302-A98E-2C40D1BE88 | tree sent in | - | us | - |
+
+- 24 of these 47 rows are ours, marked us. The rest is the reader traffic.
+- 20 of the other 23 came from one account (ebde), which is one person rather than a pattern.
+
+**The funnel, as rates**
+- Seen to clicked: 2.5% (499 of 19687) vs 2.1% the fortnight before
+- Pages per visit: 1.2 (5930 visits, 7360 pageviews since 2026-09-05)
+- Visits that did something: 13.1% (776 actions on 5930 visits)
+
+**What people did in the app**
+
+| What | Yesterday | 14 days | Ever | Last |
+|---|---:|---:|---:|---|
+| app_open | 14 | 140 | 253 | today |
+| tab | 11 | 158 | 303 | today |
+| tree_opened | 23 | 518 | 1075 | today |
+| directions | 0 | 24 | 39 | 2 days ago |
+| tree_saved | 1 | 17 | 20 | yesterday |
+| tree_visited | 0 | 7 | 18 | 2 days ago |
+| sighting_recorded | 1 | 31 | 68 | yesterday |
+| **all** | **50** | **895** | **1776** | |
+- Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
+- Ours is not in this table: 20 install(s), 471 events, the testing before the app went live on 2026-09-03. Any install first seen before that stays excluded, so testing on the same phone never reads as a stranger.
+- 66 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
+- Yesterday came from 5 installs, and the busiest made 36 of 5 events (720%). One install making most of a day is what our own reinstall looks like: add its id to excluded_installs in data/app-measure.json if it is ours.
+- Tabs opened (14d): Discover 59; My trees 55; Map 44
+- Trees recorded (14d): a tree we do not 16; a tree we map 15
+  A sighting reaches our database only through an account. Signed out it stays on the phone, so this count can run ahead of the trees and photographs we actually receive.
+
+**App Store downloads** (Apple's own count, not PostHog)
+
+| Day | Downloads |
+|---|---:|
+| 2026-09-19 | 2 |
+| 2026-09-20 | 5 |
+| 2026-09-21 | 6 |
+| 2026-09-22 | 2 |
+| 2026-09-23 | 1 |
+| 2026-09-24 | 2 |
+| 2026-09-25 | 4 |
+| 2026-09-26 | 9 |
+| 2026-09-27 | 6 |
+| 2026-09-28 | 2 |
+| 2026-09-29 | 2 |
+| 2026-10-01 | 1 |
+| 2026-10-02 | 3 |
+| **13 days** | **45** |
+- First-time downloads only, which is what App Store Connect's Trends screen counts; redownloads and updates are not in this table.
+
+**Where demand is going to waste**
+
+Search Console, the last 10 days Google will give us (its data lags 2-3 days, so the newest row is never yesterday). The newest row is also still FILLING: Google backfills for days and backfills impressions harder than clicks, so it reads as an unusually good day and is not one (08-22 arrived as 12/769 and settled at 17/1030). Position is an average across every query, so it dips whenever we start ranking for something new:
+
+| Day | Clicks | Impressions | CTR | Position |
+|---|---:|---:|---:|---:|
+| 09-23 | 47 | 2137 | 2.2% | 7.7 |
+| 09-24 | 45 | 2195 | 2.1% | 7.6 |
+| 09-25 | 80 | 2300 | 3.5% | 7.4 |
+| 09-26 | 51 | 2410 | 2.1% | 7.6 |
+| 09-27 | 52 | 1886 | 2.8% | 7.3 |
+| 09-28 | 2 | 53 | 3.8% | 22.4 |
+| 09-29 | 4 | 57 | 7.0% | 18.4 |
+| 09-30 | 2 | 52 | 3.8% | 23.9 |
+| 10-01 | 1 | 53 | 1.9% | 31.7 |
+| 10-02 *partial* | 2 | 59 | 3.4% | 37.2 |
+| **window** | **286** | **11202** | **2.6%** | |
+- Top queries (10d): roble blanco mexicano (i13, p7); airborne museum arnhem (i1, p1); ancient trees near me (i4, p4); clove lakes park tickets (i1, p1); dąb bolko (i1, p1)
+- Top pages (10d): / (c9/i109); /de/graz (c5/i27); /berlin (c4/i90); /de/regensburg/chestnuts-of-the-golden-lion (c4/i33); /de/vienna/chestnut-avenue-of-the-hauptallee (c4/i87)
+- Content leads, biggest first. A lead is a query no page TITLE covers, so some are ranking problems on a page we have rather than a page to write ('vegas trees' against /las-vegas). Check before building:
+    - 'kastanienallee' (i21, p8)
+    - 'roble blanco mexicano' (i13, p7)
+    - 'kastanienallee wien' (i11, p6)
+    - 'oldest trees in europe' (i7, p8)
+    - '+"gleditsia triacanthos" "oldest" "park"' (i7, p3)
+    - '%"gleditsia triacanthos" "oldest" "park"' (i5, p3)
+    - '+"named for the expedition" town' (i2, p3)
+    - 'clove lakes park tickets' (i1, p1)
+    - and 6 more
+
+**Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
+
+What Google does, last 10 days:
+
+| Measure | Now |
+|---|---:|
+| Impressions | 11992 |
+| Clicks | 292 |
+| Pages that got at least one impression | 2246 |
+| Impressions on the proven cities | 9874 |
+
+What we did (context, proves nothing by itself): 2726 trees Google may index, 859 kept out for lacking a photo and an exact pin, 8935 pages on the noindex list.
+
+**Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
+
+| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |
+|---|---:|---:|---:|---:|---:|---|
+| jauze | 0 | 248 | 0.0% | 6.7 | 4.3% | kasukabe new city hall construction bid  (i4, p2) |
+| singapore | 0 | 161 | 0.0% | 7.3 | 3.9% | bodhi tree singapore (i7, p8) |
+| wilparting | 0 | 150 | 0.0% | 7.4 | 3.8% | kasukabe new city hall construction bid  (i4, p6) |
+| lisbon | 3 | 145 | 2.1% | 5.6 | 5.8% | oldest tree in lisbon (i4, p4) |
+| prague | 7 | 144 | 4.9% | 5.2 | 6.5% | - |
+| berlin | 5 | 141 | 3.5% | 6.6 | 4.4% | trees in berlin (i3, p7) |
+| barcelona | 1 | 141 | 0.7% | 6.3 | 4.7% | barcelona trees (i3, p10) |
+| amsterdam | 5 | 132 | 3.8% | 6.6 | 4.4% | dutch elm amsterdam (i2, p5) |
+| seville | 4 | 131 | 3.1% | 5.5 | 6.0% | viscote (i11, p7) |
+| new-york | 3 | 118 | 2.5% | 12.0 | 1.8% | oldest trees in central park (i3, p7) |
+| rome | 2 | 116 | 1.7% | 5.5 | 6.1% | oldest tree in rome (i4, p3) |
+| tenerife | 2 | 116 | 1.7% | 10.2 | 2.4% | drago milenario (i11, p15) |
+| komjatice | 0 | 113 | 0.0% | 7.8 | 3.6% | tree services oxford mills (i1, p16) |
+| palermo | 1 | 108 | 0.9% | 5.8 | 5.4% | oldest tree in palermo (i5, p8) |
+| munich | 6 | 106 | 5.7% | 7.3 | 3.8% | landsberger straße (i1, p27) |
+| dublin | 5 | 103 | 4.9% | 5.7 | 5.6% | the hungry tree (i4, p11) |
+| oahu | 1 | 103 | 1.0% | 8.6 | 3.2% | hitachi tree (i6, p10) |
+| tokyo | 4 | 102 | 3.9% | 8.2 | 3.4% | ginkgo sperm (i3, p12) |
+| bath | 4 | 100 | 4.0% | 6.4 | 4.6% | bath tree (i1, p5) |
+| brussels | 2 | 99 | 2.0% | 6.9 | 4.1% | - |
+| brisbane | 5 | 97 | 5.2% | 8.6 | 3.2% | bodhi tree brisbane (i4, p33) |
+| malaga | 5 | 94 | 5.3% | 6.6 | 4.4% | malaga tree (i3, p4) |
+| hinode | 0 | 87 | 0.0% | 7.6 | 3.7% | mobile mapping survey birch greater manc (i1, p8) |
+| paris | 0 | 86 | 0.0% | 8.5 | 3.2% | oldest tree in paris (i2, p34) |
+| porto | 0 | 82 | 0.0% | 5.7 | 5.6% | peesten municipality 2019 (i4, p5) |
+| edinburgh | 3 | 79 | 3.8% | 8.7 | 3.2% | ormiston yew (i5, p23) |
+| athens | 2 | 78 | 2.6% | 5.4 | 6.1% | athens trees (i2, p12) |
+| vienna | 2 | 75 | 2.7% | 6.2 | 4.8% | fähnrichhof (i2, p10) |
+| ede | 0 | 75 | 0.0% | 6.2 | 4.8% | appede (i1, p6) |
+| cagliari | 1 | 74 | 1.4% | 4.7 | 7.3% | +"gleditsia triacanthos" "oldest" "park" (i7, p3) |
+| london | 2 | 71 | 2.8% | 9.9 | 2.5% | oldest tree in london (i1, p48) |
+| madrid | 0 | 66 | 0.0% | 6.7 | 4.3% | - |
+| cadiz | 3 | 64 | 4.7% | 5.1 | 6.8% | oldest tree in america (i1, p15) |
+| sao-paulo | 0 | 64 | 0.0% | 8.3 | 3.3% | peesten municipality 2019 (i48, p9) |
+| alicante | 1 | 63 | 1.6% | 6.1 | 4.9% | ficus alicante (i1, p5) |
+| amerongen | 0 | 58 | 0.0% | 7.9 | 3.5% | - |
+| south-korea | 0 | 55 | 0.0% | 7.3 | 3.8% | korean trees (i6, p8) |
+| liverpool | 1 | 54 | 1.9% | 10.6 | 2.3% | the allerton oak (i2, p38) |
+| houston | 3 | 51 | 5.9% | 8.0 | 3.5% | southern live oak houston (i2, p52) |
+| montreal | 7 | 50 | 14.0% | 5.7 | 5.6% | +"gleditsia triacanthos" "oldest" "park" (i2, p10) |
+| the-hague | 0 | 50 | 0.0% | 7.6 | 3.7% | huijgenspark (i5, p8) |
+| cyprus | 2 | 49 | 4.1% | 6.7 | 4.3% | oldest tree in cyprus (i3, p8) |
+| sintra | 0 | 49 | 0.0% | 6.1 | 4.9% | pohutukawa (i2, p12) |
+| switzerland | 0 | 49 | 0.0% | 8.3 | 3.4% | switzerland tree (i6, p8) |
+| krakow | 3 | 48 | 6.2% | 6.6 | 4.4% | "oldest black locust" park (i3, p5) |
+| chicago | 0 | 48 | 0.0% | 7.4 | 3.8% | oldest tree in chicago (i5, p4) |
+| florence | 0 | 47 | 0.0% | 5.6 | 5.7% | florence tree (i1, p7) |
+| austin | 0 | 46 | 0.0% | 13.6 | 1.5% | battle oaks (i3, p11) |
+| milan | 0 | 46 | 0.0% | 6.1 | 4.9% | sofora (i1, p38) |
+| palma-de-mallorca | 1 | 45 | 2.2% | 6.3 | 4.7% | - |
+| los-angeles | 1 | 44 | 2.3% | 8.8 | 3.1% | historic palm tree of los angeles (i2, p46) |
+| reykjavik | 0 | 43 | 0.0% | 6.7 | 4.3% | oldest tree in iceland (i3, p7) |
+| nijmegen | 0 | 42 | 0.0% | 5.6 | 5.8% | oldest tree in the netherlands (i2, p4) |
+| nara | 1 | 40 | 2.5% | 5.5 | 5.9% | enoki tree (i13, p6) |
+| san-francisco | 1 | 40 | 2.5% | 6.0 | 5.1% | oldest tree in san francisco (i5, p1) |
+| dallas | 0 | 39 | 0.0% | 5.9 | 5.2% | knoll tree (i1, p4) |
+| rogalin | 0 | 38 | 0.0% | 4.7 | 7.3% | rusoak (i21, p3) |
+| hobart | 2 | 37 | 5.4% | 6.5 | 4.5% | centurion mountain ash tasmania (i3, p1) |
+| istanbul | 3 | 37 | 8.1% | 7.1 | 4.0% | topkapi palace tree (i1, p10) |
+| new-orleans | 1 | 37 | 2.7% | 9.3 | 2.9% | oldest tree in new orleans (i7, p10) |
+| valencia | 3 | 35 | 8.6% | 5.4 | 6.3% | trees in valencia (i1, p1) |
+| ottawa | 1 | 35 | 2.9% | 7.3 | 3.9% | - |
+| sydney | 0 | 35 | 0.0% | 7.0 | 4.0% | cemetery+fig (i4, p8) |
+| copenhagen | 2 | 34 | 5.9% | 6.8 | 4.2% | copenhagen trees (i2, p29) |
+| fukuoka | 2 | 34 | 5.9% | 5.2 | 6.6% | # ultra-compact role image-grounded know (i1, p2) |
+| budapest | 1 | 34 | 2.9% | 6.6 | 4.4% | - |
+| pamplona | 0 | 34 | 0.0% | 7.3 | 3.9% | pamplona trees (i6, p4) |
+| utrecht | 2 | 33 | 6.1% | 10.8 | 2.2% | catalapa (i1, p2) |
+| madeira | 1 | 32 | 3.1% | 7.0 | 4.0% | - |
+| venice | 0 | 32 | 0.0% | 6.6 | 4.4% | trees in venice italy (i2, p10) |
+| vilnius | 0 | 32 | 0.0% | 5.9 | 5.2% | pizza vilnius (i1, p1) |
+| coimbra | 0 | 31 | 0.0% | 7.2 | 3.9% | karri knight (i7, p8) |
+| warsaw | 0 | 31 | 0.0% | 7.3 | 3.9% | strip crown in warsaw (i1, p6) |
+| arnhem | 1 | 30 | 3.3% | 12.1 | 1.8% | infanteriestraat arnhem (i2, p83) |
+| glasgow | 0 | 30 | 0.0% | 9.0 | 3.0% | darnley sycamore (i3, p10) |
+| greece | 0 | 30 | 0.0% | 12.1 | 1.8% | trees in greece (i2, p1) |
+| granada | 1 | 29 | 3.4% | 6.0 | 5.0% | - |
+| portland | 1 | 29 | 3.4% | 13.5 | 1.5% | london elm tree (i1, p90) |
+| boston | 0 | 29 | 0.0% | 5.8 | 5.5% | - |
+| monterey | 0 | 29 | 0.0% | 11.5 | 2.0% | the lone cypress (i3, p18) |
+| sardinia | 0 | 29 | 0.0% | 7.2 | 3.9% | baltolu sardinia (i5, p9) |
+| sequoia-national-park | 0 | 29 | 0.0% | 48.1 | 0.4% | sequoia national park general sherman (i4, p49) |
+| melbourne | 2 | 28 | 7.1% | 8.2 | 3.4% | oldest tree in melbourne (i3, p10) |
+| crete | 2 | 27 | 7.4% | 8.6 | 3.2% | - |
+| cork | 1 | 27 | 3.7% | 6.7 | 4.3% | camphor tree (i2, p4) |
+| nice | 0 | 27 | 0.0% | 6.1 | 4.9% | - |
+| oslo | 2 | 26 | 7.7% | 6.0 | 5.1% | dronningparken (i1, p12) |
+| seattle | 1 | 26 | 3.8% | 5.9 | 5.2% | oldest tree in seattle (i4, p8) |
+| haarlem | 0 | 26 | 0.0% | 6.4 | 4.6% | kenaupark haarlem (i2, p8) |
+| leeuwarden | 0 | 26 | 0.0% | 11.7 | 1.9% | julianaboom (i1, p100) |
+| verona | 5 | 25 | 20.0% | 3.9 | 8.2% | - |
+| ibiza | 1 | 25 | 4.0% | 6.4 | 4.6% | ibiza trees (i2, p9) |
+| leipzig | 1 | 25 | 4.0% | 6.0 | 5.0% | is leipzig worth visiting (i1, p24) |
+| naples | 1 | 25 | 4.0% | 4.6 | 7.4% | e questo? (i1, p5) |
+| tricase | 1 | 25 | 4.0% | 13.0 | 1.6% | quercia vallonea (i5, p13) |
+| hong-kong | 0 | 25 | 0.0% | 6.7 | 4.3% | where does camphor come from (i1, p10) |
+| seoul | 0 | 25 | 0.0% | 5.6 | 5.8% | banghak-dong (i1, p12) |
+| kanazawa | 2 | 24 | 8.3% | 4.9 | 7.1% | tabunoki tree (i3, p11) |
+| zurich | 2 | 24 | 8.3% | 5.8 | 5.3% | linden (i1, p12) |
+| fulufjallet | 1 | 24 | 4.2% | 14.7 | 1.3% | old tjikko (i5, p37) |
+| osaka | 1 | 24 | 4.2% | 5.3 | 6.3% | meoto kusu (i4, p8) |
+| borrowdale | 0 | 24 | 0.0% | 6.1 | 4.9% | borrowdale tree (i19, p6) |
+| takeo | 0 | 24 | 0.0% | 3.8 | 8.6% | "great camphor of takeo" "cinnamomum cam (i6, p3) |
+| leiden | 1 | 23 | 4.3% | 6.6 | 4.4% | +"oldest of its species" ginkgo park (i1, p11) |
+| guerneville | 0 | 23 | 0.0% | 8.7 | 3.2% | parson jones tree (i6, p7) |
+| runnymede | 0 | 23 | 0.0% | 10.1 | 2.5% | ankerwycke yew (i2, p20) |
+| strasbourg | 0 | 23 | 0.0% | 6.2 | 4.8% | strip crown in strasbourg (i1, p4) |
+| taipei | 1 | 22 | 4.5% | 3.8 | 8.7% | ancient trees tower (i14, p3) |
+| kagoshima | 0 | 22 | 0.0% | 5.4 | 6.3% | ujise (i3, p8) |
+| las-vegas | 0 | 22 | 0.0% | 6.8 | 4.2% | eucalyptus tree las vegas (i1, p12) |
+| eindhoven | 1 | 21 | 4.8% | 6.5 | 4.5% | - |
+| netherlands | 1 | 21 | 4.8% | 6.8 | 4.2% | - |
+| kyoto | 0 | 21 | 0.0% | 5.8 | 5.5% | - |
+| maastricht | 0 | 21 | 0.0% | 5.8 | 5.5% | - |
+| boise | 4 | 20 | 20.0% | 21.1 | 0.8% | trees boise (i2, p91) |
+| schenklengsfeld | 2 | 20 | 10.0% | 8.3 | 3.3% | schenklengsfelder dorflinde (i6, p10) |
+| beijing | 1 | 20 | 5.0% | 4.5 | 7.5% | estimated age (i1, p2) |
+| higashi-hiroshima | 0 | 20 | 0.0% | 7.3 | 3.9% | 地址 (i1, p6) |
+| logan-ohio | 0 | 20 | 0.0% | 7.5 | 3.7% | oldest tree in ohio (i4, p10) |
+| perth | 0 | 20 | 0.0% | 8.0 | 3.5% | oldest tree in perth (i3, p9) |
+| yakushima | 0 | 20 | 0.0% | 28.7 | 0.5% | jomon sugi (i2, p55) |
+| manchester | 1 | 19 | 5.3% | 14.5 | 1.3% | manchester trees (i5, p38) |
+| stockholm | 1 | 19 | 5.3% | 5.5 | 5.9% | - |
+| cambridge | 0 | 19 | 0.0% | 15.0 | 1.2% | isaac newton tree cambridge (i1, p42) |
+| geneva | 0 | 19 | 0.0% | 8.1 | 3.5% | cedar parc (i2, p26) |
+| girona | 0 | 19 | 0.0% | 5.3 | 6.5% | espinau (i1, p10) |
+| luxembourg-city | 0 | 19 | 0.0% | 7.8 | 3.6% | trees+copper (i1, p6) |
+| palo-alto | 0 | 19 | 0.0% | 8.6 | 3.2% | palo alto tree (i4, p11) |
+| dordrecht | 1 | 18 | 5.6% | 5.3 | 6.4% | - |
+| frankfurt | 0 | 18 | 0.0% | 5.8 | 5.4% | - |
+| gojaus-miskas | 0 | 18 | 0.0% | 5.9 | 5.2% | gojaus atgaiva (i1, p4) |
+| vancouver | 0 | 18 | 0.0% | 20.2 | 0.8% | ancient trees (i3, p22) |
+| belgrade | 2 | 17 | 11.8% | 5.9 | 5.1% | - |
+| cordoba | 1 | 17 | 5.9% | 5.8 | 5.5% | - |
+| germany | 1 | 17 | 5.9% | 5.9 | 5.2% | - |
+| mexico-city | 1 | 17 | 5.9% | 7.2 | 3.9% | ahuehuete mexico city (i2, p8) |
+| amersfoort | 0 | 17 | 0.0% | 5.6 | 5.7% | amershof (i1, p2) |
+| dubrovnik | 0 | 17 | 0.0% | 6.9 | 4.1% | - |
+| glastonbury | 0 | 17 | 0.0% | 5.4 | 6.2% | - |
+| slovakia | 1 | 16 | 6.2% | 7.5 | 3.8% | y eslovaquia (i1, p5) |
+| quebec-city | 0 | 16 | 0.0% | 6.2 | 4.8% | oldest tree in quebec (i1, p6) |
+| sapporo | 0 | 16 | 0.0% | 6.4 | 4.6% | sapporo tree (i1, p11) |
+| sorrento | 0 | 16 | 0.0% | 6.4 | 4.6% | - |
+| sweden | 0 | 16 | 0.0% | 9.1 | 2.9% | trees in sweden (i3, p11) |
+| helsinki | 1 | 15 | 6.7% | 7.7 | 3.6% | - |
+| nuremberg | 1 | 15 | 6.7% | 5.9 | 5.3% | - |
+| segovia | 1 | 15 | 6.7% | 4.9 | 7.1% | segovia tree (i1, p1) |
+| helmond | 0 | 15 | 0.0% | 6.9 | 4.1% | oak tower (i1, p10) |
+| parma | 0 | 15 | 0.0% | 4.1 | 7.9% | a parma? (i1, p4) |
+| tolpuddle | 0 | 15 | 0.0% | 10.3 | 2.4% | tolpuddle martyrs tree (i2, p10) |
+| aarhus | 1 | 14 | 7.1% | 10.4 | 2.4% | happy pig (i1, p25) |
+| bologna | 1 | 14 | 7.1% | 6.3 | 4.7% | - |
+| otoyo | 1 | 14 | 7.1% | 6.1 | 4.9% | sugi no osugi (i2, p10) |
+| bucaco | 0 | 14 | 0.0% | 6.5 | 4.5% | til tree (i6, p8) |
+| caserta | 0 | 14 | 0.0% | 5.0 | 7.0% | piazza carlo di borbone (i1, p10) |
+| chadds-ford | 0 | 14 | 0.0% | 9.3 | 2.9% | - |
+| olympic-national-park | 0 | 14 | 0.0% | 13.0 | 1.6% | duncan cedar (i5, p8) |
+| philadelphia | 0 | 14 | 0.0% | 8.9 | 3.1% | ancient trees near me (i2, p5) |
+| washington-dc | 0 | 14 | 0.0% | 6.4 | 4.6% | - |
+| spokane | 1 | 13 | 7.7% | 18.7 | 0.9% | moore turner heritage gardens spokane (i2, p4) |
+| bristol | 0 | 13 | 0.0% | 5.6 | 5.8% | - |
+| enschede | 0 | 13 | 0.0% | 8.8 | 3.1% | lasonder zeggelt (i1, p30) |
+| groningen | 0 | 13 | 0.0% | 7.3 | 3.8% | hunenborg (i1, p10) |
+| jaegerspris-nordskov | 0 | 13 | 0.0% | 10.1 | 2.5% | - |
+| limmersdorf | 0 | 13 | 0.0% | 7.1 | 4.0% | tanzlinde (i3, p10) |
+| tallinn | 0 | 13 | 0.0% | 5.8 | 5.3% | - |
+| toronto | 0 | 13 | 0.0% | 7.9 | 3.5% | - |
+| zwolle | 0 | 13 | 0.0% | 5.5 | 5.9% | - |
+| ghent | 1 | 12 | 8.3% | 6.1 | 4.9% | prudens van duyseplein (i2, p6) |
+| biei | 0 | 12 | 0.0% | 8.6 | 3.2% | ken and mary tree story (i2, p6) |
+| charleston | 0 | 12 | 0.0% | 7.7 | 3.7% | cofc oaks (i1, p25) |
+| cologne | 0 | 12 | 0.0% | 5.8 | 5.5% | - |
+| timber-creek | 0 | 12 | 0.0% | 6.2 | 4.8% | +"named for the expedition" town history (i4, p8) |
+| gornja-stubica | 1 | 11 | 9.1% | 10.9 | 2.2% | gupčeva lipa (i6, p14) |
+| hallstatt | 1 | 11 | 9.1% | 6.2 | 4.8% | - |
+| bilu | 0 | 11 | 0.0% | 9.4 | 2.8% | bilu sacred tree (i2, p7) |
+| cardiff | 0 | 11 | 0.0% | 11.9 | 1.8% | athenian tree (i1, p70) |
+| delft | 0 | 11 | 0.0% | 3.4 | 9.9% | - |
+| hamburg | 0 | 11 | 0.0% | 6.5 | 4.5% | - |
+| ljubljana | 0 | 11 | 0.0% | 5.5 | 6.1% | trees ljubljana (i1, p9) |
+| miyazaki | 0 | 11 | 0.0% | 8.4 | 3.3% | - |
+| naha | 0 | 11 | 0.0% | 6.6 | 4.4% | akagi tree (i3, p6) |
+| oxford | 0 | 11 | 0.0% | 4.8 | 7.2% | - |
+| perouges | 0 | 11 | 0.0% | 2.7 | 12.1% | oldest tree in france (i1, p11) |
+| savannah | 0 | 11 | 0.0% | 8.2 | 3.4% | oldest tree in savannah (i3, p8) |
+| senonches | 0 | 11 | 0.0% | 4.0 | 8.0% | - |
+| bari | 1 | 10 | 10.0% | 6.7 | 4.3% | - |
+| nagoya | 1 | 10 | 10.0% | 5.3 | 6.4% | - |
+| apeldoorn | 0 | 10 | 0.0% | 13.4 | 1.5% | old old tree (i1, p74) |
+| bangkok | 0 | 10 | 0.0% | 6.4 | 4.6% | - |
+| canada | 0 | 10 | 0.0% | 6.5 | 4.5% | yes (i1, p14) |
+| guimaraes | 0 | 10 | 0.0% | 4.0 | 8.0% | indicações (i1, p2) |
+| hawaii | 0 | 10 | 0.0% | 17.5 | 1.0% | koa hawaiian (i1, p88) |
+| sources | 0 | 10 | 0.0% | 12.1 | 1.8% | tree database (i1, p62) |
+| leuven | 7 | 46 | - | - | - | frozen 09-27 roster |
+| craigends | 0 | 31 | - | - | - | frozen 09-27 roster |
+| pittsburgh | 0 | 31 | - | - | - | frozen 09-27 roster |
+| laren-gelderland | 0 | 25 | - | - | - | frozen 09-27 roster |
+| lyon | 1 | 23 | - | - | - | frozen 09-27 roster |
+| minneapolis | 0 | 22 | - | - | - | frozen 09-27 roster |
+| yabu | 0 | 22 | - | - | - | frozen 09-27 roster |
+| heidelberg | 0 | 21 | - | - | - | frozen 09-27 roster |
+| tilburg | 0 | 21 | - | - | - | frozen 09-27 roster |
+| catania | 1 | 20 | - | - | - | frozen 09-27 roster |
+| menorca | 0 | 20 | - | - | - | frozen 09-27 roster |
+| bordeaux | 0 | 19 | - | - | - | frozen 09-27 roster |
+| wessobrunn | 2 | 18 | - | - | - | frozen 09-27 roster |
+| genoa | 2 | 18 | - | - | - | frozen 09-27 roster |
+| llangernyw | 0 | 18 | - | - | - | frozen 09-27 roster |
+| taiwan | 0 | 18 | - | - | - | frozen 09-27 roster |
+| toulouse | 2 | 17 | - | - | - | frozen 09-27 roster |
+| freiburg | 1 | 17 | - | - | - | frozen 09-27 roster |
+| padua | 1 | 17 | - | - | - | frozen 09-27 roster |
+| bergamo | 0 | 17 | - | - | - | frozen 09-27 roster |
+| salzburg | 0 | 17 | - | - | - | frozen 09-27 roster |
+| macugnaga | 0 | 16 | - | - | - | frozen 09-27 roster |
+| salamanca | 0 | 16 | - | - | - | frozen 09-27 roster |
+| york | 0 | 16 | - | - | - | frozen 09-27 roster |
+| stuttgart | 2 | 14 | - | - | - | frozen 09-27 roster |
+| bratislava | 0 | 14 | - | - | - | frozen 09-27 roster |
+| heinkenszand | 0 | 14 | - | - | - | frozen 09-27 roster |
+| oss | 0 | 14 | - | - | - | frozen 09-27 roster |
+| otama | 0 | 14 | - | - | - | frozen 09-27 roster |
+| rio-de-janeiro | 0 | 14 | - | - | - | frozen 09-27 roster |
+| sulechow | 0 | 14 | - | - | - | frozen 09-27 roster |
+| gdansk | 2 | 13 | - | - | - | frozen 09-27 roster |
+| alkmaar | 0 | 13 | - | - | - | frozen 09-27 roster |
+| den-bosch | 0 | 13 | - | - | - | frozen 09-27 roster |
+| derby | 0 | 13 | - | - | - | frozen 09-27 roster |
+| graz | 0 | 13 | - | - | - | frozen 09-27 roster |
+| hoorn | 0 | 13 | - | - | - | frozen 09-27 roster |
+| lausanne | 0 | 13 | - | - | - | frozen 09-27 roster |
+| lucca | 0 | 13 | - | - | - | frozen 09-27 roster |
+| nantes | 0 | 13 | - | - | - | frozen 09-27 roster |
+| simsbury | 0 | 13 | - | - | - | frozen 09-27 roster |
+| bilbao | 2 | 12 | - | - | - | frozen 09-27 roster |
+| ronda | 1 | 12 | - | - | - | frozen 09-27 roster |
+| belfast | 0 | 12 | - | - | - | frozen 09-27 roster |
+| buenos-aires | 0 | 12 | - | - | - | frozen 09-27 roster |
+| como | 0 | 12 | - | - | - | frozen 09-27 roster |
+| deventer | 0 | 12 | - | - | - | frozen 09-27 roster |
+| ekero | 0 | 12 | - | - | - | frozen 09-27 roster |
+| tarragona | 1 | 11 | - | - | - | frozen 09-27 roster |
+| trieste | 1 | 11 | - | - | - | frozen 09-27 roster |
+| brno | 0 | 11 | - | - | - | frozen 09-27 roster |
+| bruges | 0 | 11 | - | - | - | frozen 09-27 roster |
+| dresden | 0 | 11 | - | - | - | frozen 09-27 roster |
+| gottingen | 0 | 11 | - | - | - | frozen 09-27 roster |
+| perugia | 0 | 11 | - | - | - | frozen 09-27 roster |
+| riga | 0 | 11 | - | - | - | frozen 09-27 roster |
+| venon | 0 | 11 | - | - | - | frozen 09-27 roster |
+| kauai | 1 | 10 | - | - | - | frozen 09-27 roster |
+| regensburg | 1 | 10 | - | - | - | frozen 09-27 roster |
+| tulsa | 1 | 10 | - | - | - | frozen 09-27 roster |
+| assen | 0 | 10 | - | - | - | frozen 09-27 roster |
+| cremines | 0 | 10 | - | - | - | frozen 09-27 roster |
+| emmen | 0 | 10 | - | - | - | frozen 09-27 roster |
+| matera | 0 | 10 | - | - | - | frozen 09-27 roster |
+| nagano | 0 | 10 | - | - | - | frozen 09-27 roster |
+| oklahoma-city | 0 | 10 | - | - | - | frozen 09-27 roster |
+| ueda | 0 | 10 | - | - | - | frozen 09-27 roster |
+| venlo | 0 | 10 | - | - | - | frozen 09-27 roster |
+| viroflay | 0 | 10 | - | - | - | frozen 09-27 roster |
+
+**What converts, and what does not** (scripts/seolearn.py)
+
+```
+SEO learning pass: 53 pages over 40 impressions, 50 of them clean
+Index 1.00 means a page converts exactly as its position normally does.
+
+NOT DEMAND: 3 pages, 172 impressions (4% of the sample), 11 clicks.
+Their biggest query uses Google's exact-phrase operator, so a person did not type it. Read their impressions as zero, here and in the queue.
+   cagliari         i74    c1   +"gleditsia triacanthos" "oldest" "park" (i7, p3)
+   montreal         i50    c7   +"gleditsia triacanthos" "oldest" "park" (i2, p10)
+   krakow           i48    c3   "oldest black locust" park (i3, p5)
+
+SHARE OF TREES CARRYING A PHOTOGRAPH
+   none                   n7   i561   c5    ctr  0.9%  index 0.22
+   under 20%              n10  i876   c16   ctr  1.8%  index 0.44
+   20 to 40%              n14  i1268  c28   ctr  2.2%  index 0.49
+   40% and over           n19  i1705  c39   ctr  2.3%  index 0.52
+
+SHARE WITH A CONFIRMED PIN
+   none                   n2   i92    c2    ctr  2.2%  index 0.51
+   under 20%              n2   i182   c4    ctr  2.2%  index 0.69
+   20 to 40%              n7   i503   c16   ctr  3.2%  index 0.77
+   40% and over           n39  i3633  c66   ctr  1.8%  index 0.41
+
+SHARE WITH A RECOGNITION LINE
+   40% and over           n50  i4410  c88   ctr  2.0%  index 0.46
+
+SHARE WITH A RECORDED AGE
+   under 20%              n1   i40    c1    ctr  2.5%  index 0.49
+   40% and over           n49  i4370  c87   ctr  2.0%  index 0.46
+
+SHARE WITH A SEASONAL PEAK
+   none                   n6   i585   c3    ctr  0.5%  index 0.15
+   under 20%              n8   i556   c12   ctr  2.2%  index 0.55
+   20 to 40%              n15  i1265  c32   ctr  2.5%  index 0.48
+   40% and over           n21  i2004  c41   ctr  2.0%  index 0.49
+
+TREES ON THE PAGE
+   4 to 6                 n16  i1328  c14   ctr  1.1%  index 0.26
+   7 to 15                n7   i428   c12   ctr  2.8%  index 0.64
+   16 to 25               n10  i834   c22   ctr  2.6%  index 0.64
+   over 25                n17  i1820  c40   ctr  2.2%  index 0.47
+
+AVERAGE STORY LENGTH
+   170 and over           n50  i4410  c88   ctr  2.0%  index 0.46
+
+EARNED AND WASTED, worst first (real queries, converting under half)
+These have the demand already. Fixing one is worth more than a new page.
+   jauze            i248   c0   p6.7   index 0.00  loses ~11 clicks/10d  0/1 photos
+   singapore        i161   c0   p7.3   index 0.00  loses ~6 clicks/10d  5/34 photos
+   wilparting       i150   c0   p7.4   index 0.00  loses ~6 clicks/10d  -
+   barcelona        i141   c1   p6.3   index 0.15  loses ~6 clicks/10d  -
+   lisbon           i145   c3   p5.6   index 0.35  loses ~5 clicks/10d  -
+   rome             i116   c2   p5.5   index 0.28  loses ~5 clicks/10d  -
+   palermo          i108   c1   p5.8   index 0.17  loses ~5 clicks/10d  -
+   porto            i82    c0   p5.7   index 0.00  loses ~5 clicks/10d  -
+   komjatice        i113   c0   p7.8   index 0.00  loses ~4 clicks/10d  -
+   ede              i75    c0   p6.2   index 0.00  loses ~4 clicks/10d  1/7 photos
+   hinode           i87    c0   p7.6   index 0.00  loses ~3 clicks/10d  -
+   madrid           i66    c0   p6.7   index 0.00  loses ~3 clicks/10d  -
+```
+
+**How the grouping pages are doing** (10 days, 10+ impressions). Index 1.00 means the page converts exactly as its position normally does; a query in quotation marks is Google's exact-phrase operator, so read those impressions as nobody:
+
+*collections*
+
+| Page | Clicks | Impressions | CTR | Position | Index | Biggest query |
+|---|---:|---:|---:|---:|---:|---|
+| europes-most-remarkable-yews | 0 | 39 | 0.0% | 9.4 | 0.00 | ancient yews (i1, p92) |
+| europes-most-remarkable-trees | 2 | 35 | 5.7% | 7.4 | 1.51 | oldest trees in europe (i7, p8) |
+| trees-older-than-400-years | 0 | 33 | 0.0% | 8.0 | 0.00 | # jurisdiction you operate within the ju (i1, p1) |
+| europes-best-tree-city-trips | 0 | 10 | 0.0% | 14.7 | 0.00 | city trees (i1, p52) |
+| thickest-trees | 0 | 10 | 0.0% | 8.6 | 0.00 | - |
+
+*species pages*
+
+| Page | Clicks | Impressions | CTR | Position | Index | Biggest query |
+|---|---:|---:|---:|---:|---:|---|
+| london-plane | 0 | 42 | 0.0% | 9.2 | 0.00 | london.plane (i1, p58) |
+| pedunculate-oak | 1 | 35 | 2.9% | 7.9 | 0.81 | dąb bolko (i1, p1) |
+| tipu-tree | 0 | 29 | 0.0% | 9.6 | 0.00 | tipu tree (i7, p8) |
+| douglas-fir | 0 | 25 | 0.0% | 12.6 | 0.00 | douglas firs (i14, p7) |
+| silver-maple | 0 | 22 | 0.0% | 30.7 | 0.00 | silver maple (i3, p44) |
+| osage-orange | 1 | 21 | 4.8% | 44.3 | 11.90 | osage orange (i3, p68) |
+| himalayan-cedar | 0 | 19 | 0.0% | 10.5 | 0.00 | himalayan deodar cedar (i1, p80) |
+| silk-floss-tree | 0 | 19 | 0.0% | 6.7 | 0.00 | silk floss tree (i1, p2) |
+| pohutukawa | 0 | 15 | 0.0% | 20.5 | 0.00 | pohutukawa (i4, p34) |
+| norfolk-island-pine | 0 | 13 | 0.0% | 12.2 | 0.00 | norfolk island pine portugal (i1, p7) |
+| date-palm | 0 | 11 | 0.0% | 29.8 | 0.00 | date palm tree (i1, p59) |
+| indian-banyan | 0 | 11 | 0.0% | 10.9 | 0.00 | banyan indian (i2, p8) |
+| norfolk-island-hibiscus | 0 | 11 | 0.0% | 9.9 | 0.00 | itchy bomb tree (i5, p8) |
+| turkish-hazel | 0 | 10 | 0.0% | 7.1 | 0.00 | hazels (i3, p6) |
+
+*park pages*
+
+| Page | Clicks | Impressions | CTR | Position | Index | Biggest query |
+|---|---:|---:|---:|---:|---:|---|
+| national-botanic-gardens-dublin | 1 | 14 | 7.1% | 5.3 | 1.11 | - |
+| villa-borghese-rome | 1 | 11 | 9.1% | 4.6 | 1.23 | - |
+| fort-canning-park-singapore | 0 | 10 | 0.0% | 4.5 | 0.00 | # role template v3 you operate under a s (i1, p1) |
+
+*country pages*
+
+| Page | Clicks | Impressions | CTR | Position | Index | Biggest query |
+|---|---:|---:|---:|---:|---:|---|
+| south-korea | 0 | 55 | 0.0% | 7.3 | 0.00 | korean trees (i6, p8) |
+| switzerland | 0 | 49 | 0.0% | 8.3 | 0.00 | switzerland tree (i6, p8) |
+| greece | 0 | 30 | 0.0% | 12.1 | 0.00 | trees in greece (i2, p1) |
+| netherlands | 1 | 21 | 4.8% | 6.8 | 1.14 | - |
+| germany | 1 | 17 | 5.9% | 5.9 | 1.12 | - |
+| slovakia | 1 | 16 | 6.2% | 7.5 | 1.67 | y eslovaquia (i1, p5) |
+| sweden | 0 | 16 | 0.0% | 9.1 | 0.00 | trees in sweden (i3, p11) |
+| canada | 0 | 10 | 0.0% | 6.5 | 0.00 | yes (i1, p14) |
+
+**Copy test**
+
+```
+Copy test: city-title-age-first (day 23 of 56, review 2026-11-05)
+The age is the hook and the count is inventory, so naming the oldest tree before the number earns more clicks.
+
+  age_first    n20   before 0.76  now 0.70  change -0.06
+  control      n17   before 0.66  now 0.64  change -0.01
+
+  against control: -0.05 index points (promote at +0.25)
+
+  TOO EARLY. At about 2 clicks per page per ten days this needs the full window; a lead now is noise wearing a result's clothes.
+```
+
+**What was sent in, and what we decided**
+
+| seen | what | where | size for its species | ours | Hidde |
+|---|---|---|---|---|---|
+| before 2026-09-23 | The Twisted Muku of Omiya Gate, Kyoto  | Kyoto | - | publish | - |
+| 2026-10-02 | The Camphor of Oimatsu Tenjin Shrine | Fukuoka | - | publish | itoshima ik was er het was mooi en de foto ook dus keur hem goed |
+| 2026-10-02 | The Sacred Cedar of Kirishima Jingu | Kagoshima | - | publish | publish (Hidde, review page 2026-10-02) |
+| 2026-10-02 | The Leaning Camphor of the Shiroyama C | Kagoshima | - | publish | publish (Hidde, review page 2026-10-02) |
+| 2026-10-02 | Chichibu-sugi, the Cedar of Takachiho  | Takachiho | - | publish | publish (Hidde, review page 2026-10-02) |
+| 2026-10-02 | Meoto-sugi, the Wedded Cedars of Takac | Takachiho | - | publish | publish (Hidde, review page 2026-10-02) |
+| 2026-10-02 | Camphor Tree in Fukuoka | - | 175% girth | open | - |
+| 2026-10-01 | A tree near Fukuoka | - | - | lead | itoshima ik was er het was mooi en de foto ook dus keur hem goed (publish) |
+| 2026-10-01 | The Horse Chestnut of Square Rene-Le G | Paris | - | publish | - |
+| 2026-10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | - | publish | - |
+| 2026-10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | - | publish | - |
+| 2026-10-01 | The Horse Chestnut of Square Rene-Le G | Paris | - | publish | publish all frames (2026-10-02, in session) |
+| 2026-10-01 | The Horse Chestnut of Square Rene-Le G | Paris | - | publish | publish all frames (2026-10-02, in session) |
+| 2026-10-01 | The Horse Chestnut of Square Rene-Le G | Paris | - | publish | publish all frames (2026-10-02, in session) |
+| 2026-10-01 | The Horse Chestnut of Square Rene-Le G | Paris | - | publish | publish all frames (2026-10-02, in session) |
+
+1 waiting for a verdict. Disagree with one and the rule changes: `python3 scripts/judgement.py --feedback <id> "..."`, and `--learn` prints every verdict he has overruled.
+
+**The language test** (Contract J v1.13: a translated set should pass its English twin's impressions within four weeks of indexing):
+
+| Lang | City | Clicks | Impressions | Position | English twin |
+|---|---|---:|---:|---:|---:|
+| de | vienna | 11 | 265 | 6.8 | 75 |
+| ja | kyoto | 3 | 154 | 8.8 | 21 |
+| es | cadiz | 2 | 137 | 7.7 | 64 |
+| es | barcelona | 5 | 115 | 7.4 | 141 |
+| es | malaga | 2 | 114 | 6.6 | 94 |
+| fr | paris | 5 | 114 | 9.8 | 86 |
+| de | berlin | 3 | 99 | 9.7 | 141 |
+| it | rome | 6 | 99 | 6.2 | 116 |
+| it | palermo | 1 | 97 | 9.5 | 108 |
+| nl | amsterdam | 2 | 92 | 8.2 | 132 |
+| it | milan | 3 | 85 | 9.3 | 46 |
+| pt | lisbon | 2 | 83 | 6.5 | 145 |
+| es | madrid | 0 | 81 | 7.8 | 66 |
+| pt | rio-de-janeiro | 1 | 62 | 9.1 | 5 |
+| fr | geneva | 2 | 59 | 6.9 | 19 |
+| fr | nice | 1 | 51 | 8.5 | 27 |
+| es | tenerife | 0 | 51 | 16.0 | 116 |
+| de | zurich | 0 | 48 | 11.9 | 24 |
+| de | graz | 5 | 40 | 6.3 | 9 |
+| pt | porto | 2 | 37 | 5.7 | 82 |
+| de | regensburg | 4 | 35 | 5.9 | 3 |
+| ja | osaka | 1 | 35 | 7.0 | 24 |
+| de | heidelberg | 0 | 35 | 7.1 | 9 |
+| de | nuremberg | 1 | 34 | 10.0 | 15 |
+| de | hamburg | 0 | 34 | 10.9 | 11 |
+| fr | venon | 1 | 28 | 12.5 | 6 |
+| ja | kagoshima | 1 | 26 | 13.4 | 22 |
+| ja | tokyo | 0 | 24 | 9.9 | 102 |
+| de | dresden | 0 | 23 | 8.7 | 6 |
+| ja | yakushima | 0 | 23 | 38.8 | 20 |
+| es | alicante | 1 | 22 | 6.6 | 63 |
+| nl | nijmegen | 2 | 21 | 7.4 | 42 |
+| it | bologna | 0 | 20 | 8.3 | 14 |
+| nl | the-hague | 0 | 18 | 5.6 | 50 |
+| fr | nantes | 1 | 17 | 7.5 | 4 |
+| ja | sapporo | 2 | 16 | 5.4 | 16 |
+| es | seville | 3 | 15 | 7.7 | 131 |
+| de | salzburg | 0 | 15 | 14.5 | 6 |
+| de | leipzig | 0 | 14 | 6.8 | 25 |
+| de | cologne | 0 | 13 | 5.1 | 12 |
+| fr | lyon | 0 | 13 | 10.9 | 9 |
+| ja | fukuoka | 0 | 13 | 16.6 | 34 |
+| de | explore | 0 | 12 | 7.3 | 30 |
+| ja | nara | 0 | 12 | 7.6 | 40 |
+| it | cagliari | 0 | 11 | 14.3 | 74 |
+| ja | kanazawa | 0 | 11 | 9.3 | 24 |
+| nl | arnhem | 2 | 10 | 7.0 | 30 |
+| it | florence | 0 | 10 | 19.4 | 47 |
+| es | girona | 0 | 9 | 6.7 | 19 |
+| es | pamplona | 0 | 8 | 7.6 | 34 |
+| it | sardinia | 0 | 8 | 23.1 | 29 |
+| es | explore | 0 | 7 | 6.1 | 30 |
+| fr | strasbourg | 0 | 7 | 8.3 | 23 |
+| it | leiden | 0 | 7 | 5.0 | 23 |
+| fr | bordeaux | 0 | 6 | 16.3 | 8 |
+| pt | sintra | 0 | 6 | 6.3 | 49 |
+| es | segovia | 0 | 5 | 3.6 | 15 |
+| fr | brussels | 1 | 4 | 2.8 | 99 |
+| ja | iga | 1 | 4 | 10.2 | 3 |
+| es | granada | 0 | 4 | 3.8 | 29 |
+| fr | explore | 0 | 4 | 10.2 | 30 |
+| fr | zaragoza | 0 | 4 | 5.5 | 5 |
+| nl | dordrecht | 0 | 4 | 9.8 | 18 |
+| nl | explore | 1 | 3 | 4.0 | 30 |
+| de | munich | 0 | 3 | 6.0 | 106 |
+| es | ibiza | 0 | 3 | 11.3 | 25 |
+| it | naples | 0 | 3 | 9.0 | 25 |
+| ja | uda | 0 | 3 | 8.0 | 4 |
+| nl | leiden | 0 | 3 | 9.3 | 23 |
+| de | stuttgart | 0 | 2 | 5.5 | 9 |
+| es | helmond | 0 | 2 | 9.5 | 15 |
+| fr | lausanne | 0 | 2 | 7.5 | 7 |
+| ja | nagoya | 0 | 2 | 8.0 | 10 |
+| nl | haarlem | 0 | 2 | 7.5 | 26 |
+| pt | cities | 0 | 2 | 10.5 | 1 |
+| de | bordeaux | 0 | 1 | 6.0 | 8 |
+| de | iga | 0 | 1 | 8.0 | 3 |
+| es | hilo | 0 | 1 | 10.0 | 3 |
+| es | hino | 0 | 1 | 5.0 | 8 |
+| es | sao-paulo | 0 | 1 | 6.0 | 64 |
+| it | cities | 0 | 1 | 3.0 | 1 |
+| it | sorrento | 0 | 1 | 11.0 | 16 |
+| ja | maastricht | 0 | 1 | 8.0 | 21 |
+| ja | miyazaki | 0 | 1 | 11.0 | 11 |
+| pt | bordeaux | 0 | 1 | 1.0 | 8 |
+| pt | iga | 0 | 1 | 7.0 | 3 |
+| pt | princeton-new-jersey | 0 | 1 | 21.0 | 0 |
+- Seen, not clicked: /sao-paulo (c0/i48, 0.0%) for peesten municipality 2019 (i48, p9)
+- Seen, not clicked: /ja/kyoto/land-boat-pine (c0/i47, 0.0%) for 陸舟の松 (i16, p11); 金閣寺 松の木 (i15, p1); 金閣寺 陸舟の松 (i7, p11)
+- Seen, not clicked: / (c0/i45, 0.0%) for ancient trees (i23, p5); ancient tree (i12, p14); old trees (i3, p14)
+- Seen, not clicked: /tenerife/el-drago-milenario (c0/i33, 0.0%) for drago milenario (i11, p15); el drago milenario (i9, p12); oldest tree in tenerife (i3, p15)
+- Seen, not clicked: /de/vienna/pagoda-tree-of-the-stadtpark (c0/i26, 0.0%) for japanische bäume (i23, p12); baumkataster wien (i2, p18); schnurbaum (i1, p1)
+- Seen, not clicked: /rogalin/russ-oak (c0/i26, 0.0%) for rusoak (i21, p3); russoak (i5, p8)
+- Seen, not clicked: /sequoia-national-park/general-sherman-tree (c0/i24, 0.0%) for sequoia national park general sherman (i4, p49); sherman tree (i3, p56); general sequoia (i3, p56)
+- Seen, not clicked: /species/tipu-tree (c0/i22, 0.0%) for tipu tree (i7, p8); tipuana tree (i6, p10); tipuana tipu tree (i3, p15)
+
+**Climbing** (this ten days against the ten before it)
+
+| Page | Impressions | Change | Position | Moved | Clicks |
+|---|---:|---:|---:|---:|---:|
+| /jauze | 247 | +235 | 6.7 | +1.3 | +0 |
+| /wilparting | 150 | +136 | 7.4 | +0.2 | +0 |
+| /komjatice | 113 | +85 | 7.8 | +0.1 | +0 |
+| /hinode | 87 | +71 | 7.6 | -0.1 | +0 |
+| /amerongen | 58 | +32 | 7.9 | +1.7 | +0 |
+| /liverpool/allerton-oak | 39 | +28 | 7.4 | +19.7 | +1 |
+| /de/heidelberg/zwingerstrasse-horse-chestnuts | 35 | +27 | 7.1 | -1.8 | -2 |
+| /berlin/twin-yews-of-johannaplatz | 25 | +23 | 7.1 | -0.6 | +0 |
+
+**Newly ranking** (no impressions at all ten days ago)
+
+| Page | Impressions | Clicks | Position |
+|---|---:|---:|---:|
+| /de/regensburg/chestnuts-of-the-golden-lion | 33 | 4 | 5.9 |
+| /fr/venon | 28 | 1 | 12.5 |
+| /fr/nantes/chataignier-de-leraudiere | 17 | 1 | 7.5 |
+
+**Slipping**
+
+| Page | Impressions | Change | Position | Moved |
+|---|---:|---:|---:|---:|
+| /pamplona | 18 | -445 | 10.0 | -6.6 |
+| /brussels/thornless-honey-locust-of-parc-degmont | 28 | -374 | 8.0 | -2.1 |
+| /sao-paulo | 57 | -164 | 8.4 | -0.6 |
+| /barcelona | 87 | -118 | 6.9 | -0.7 |
+
+- New queries this window: roble blanco mexicano (i13).
+
+**Who they are**
+Audience, 28 days of search (1040 clicks, 46476 impressions):
+- Countries: usa c149/i13423; esp c98/i3743; nld c98/i2443; gbr c90/i3409; ita c65/i2274
+- Devices: MOBILE c740/i26157; DESKTOP c282/i19807; TABLET c18/i512
+- Landing pages: / c32/i446; /prague c14/i404; /lisbon c13/i564; /rome c12/i446; /bath/plane-trees-of-the-circus c11/i181
+
+Web Analytics (beacon, cookieless), people only.
+Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
+
+| Day | Visits | Pageviews | From Google |
+|---|---:|---:|---:|
+| 09-25 | 90 | 160 | 80 |
+| 09-26 | 90 | 120 | 60 |
+| 09-27 | 90 | 150 | 80 |
+| 09-28 | 40 | 60 | 0 |
+| 09-29 | 0 | 40 | 0 |
+| 09-30 | 30 | 50 | 0 |
+| 10-01 | 30 | 60 | 20 |
+| 10-02 | 20 | 70 | 0 |
+| **window** | **390** | **710** | **240** |
+- Top paths: / (60); /explore (30); /munich (20); /krakow (20); /san-francisco (20); /bordeaux (20); /open (20); /copenhagen (20); /de/regensburg/chestnuts-of-the-golden-lion (20); /zurich/lindens-of-lindenhof (10); /dublin (10); /belgrade/plane-of-vracar (10)
+- Referrers: (direct) (100); ancienttrees.app (320); www.google.com (240); duckduckgo.com (20); hk.search.yahoo.com (10); ca.search.yahoo.com (10); search.yahoo.com (10)
+- Moved between our own pages: 320 of 710 pageviews (45%); the rest arrived from search or straight in. Cookieless means no session, so which page led to which cannot be measured.
+- Countries: US (110); DE (80); GB (70); AT (70); PL (40)
+- Devices: mobile (550); desktop (160)
+- Page load (8d): p50 2254ms, p90 8059ms
+
+Links: external referrers (a link somebody actually clicked): hk.search.yahoo.com (10); ca.search.yahoo.com (10); search.yahoo.com (10)
+AI: arrivals from an assistant that cited us: none yet
+
+Backlinks (watched pages):
+| Site | Links to | rel | First seen |
+|---|---|---|---|
+| getlisbon.com | /lisbon | followed | 2026-09-08 |
+| getlisbon.com | /pt/lisbon | followed | 2026-09-08 |
+| www.baumkunde.de | /copenhagen | followed | 2026-09-26 |
+| www.baumkunde.de | /rogalin/russ-oak | followed | 2026-09-26 |
+4 linking page(s), 4 followed. Checked by fetching the page: a link with rel="noreferrer" never appears in the referrer table, so these two lines measure different things and neither replaces the other. Unknown links stay a manual read of Search Console's Links report. This run read 12 of 12 fetched (0 unreachable), out of 27 watched pages.
+
+
+**What the machine did, the last 24 hours**
+
+| Started | Minutes | Trees | Commits | Refused | Cities |
+|---|---:|---:|---:|---:|---|
+| 10-02T11:09 | 1.4 | 0 | 6 | 0 | - |
+| 10-02T14:17 | 10.7 | 0 | 6 | 5 | Belfast, Breda, Budapest |
+| 10-02T19:52 | 17.0 | 4 | 11 | 16 | Seattle +4 |
+| 10-02T20:14 | 7.0 | 0 | 7 | 8 | - |
+| 10-02T23:43 | 32.1 | 13 | 8 | 15 | Berlin +13 |
+| 10-03T00:48 | 20.5 | 12 | 5 | 21 | Berlin +8, Dresden +4 |
+| 10-03T07:15 | 43.0 | 17 | 14 | 13 | Berlin +8, Munich +5, Dresden +4 |
+| **7 runs** | **132** | **46** | **57** | | |
+
+- 3 of 7 produced no trees; 5 to 21 commands refused per run.
+
+**What they made**
+
+- Vendor 13 photograph file(s) onto our own domain
+- Log: Munich added
+- Munich: 5 suburban Naturdenkmal trees (45 to 50), German overlay, costs
+- Log: night run, Berlin and Dresden
+- Dresden: 3 more trees with photographs (10 to 13), German overlay, costs
+- Berlin: 8 Tiergarten Naturdenkmal trees (54 to 62), German overlay, costs
+- Dresden: the Rotbuche of the Dresdner Heide (9 to 10), photograph, German overlay
+- Record when each page last changed
+- Dresden: 4 Naturdenkmal trees (5 to 9), German overlay, log
+- Berlin: 8 more Naturdenkmal trees with confirmed pins (46 to 54), German overlay, log
+- Photographs readers sent, queued for a look
+- Record when each page last changed
+- Berlin: 6 more Naturdenkmal trees with confirmed pins (40 to 46), German overlay, log
+- Berlin: 6 more verified trees staged
+
+Machine: 7 chain attempts yesterday, 6 got real work time (~79 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 2 clicks and 59 impressions on Google's freshest day (day before: c1/i53). Directional at best; no strategic conclusions from these volumes.
+
 ## 2026-10-01 (previous UTC day)
 
 **Today: 3 feedback reports arrived yesterday (30 total); an account was opened yesterday (21 total).**
