@@ -1,0 +1,177 @@
+[
+ {
+  "id": "muc_050",
+  "name": "The Verfassungslinde of Grünwald",
+  "species": "Large-leaved Lime (Tilia platyphyllos)",
+  "age_estimate": "over 200 years",
+  "age_min": 210,
+  "age_max": 220,
+  "age_basis": "source",
+  "location": {
+   "address": "Marktplatz, 82031 Grünwald",
+   "latitude": 48.03981,
+   "longitude": 11.52237,
+   "neighbourhood": "Grünwald (municipality south of Munich)"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Verfassungslinde_(Gr%C3%BCnwald)",
+   "https://commons.wikimedia.org/wiki/File:Verfassungslinde_Gruenwald-1.jpg",
+   "https://commons.wikimedia.org/wiki/File:Infotafel_Verfassungslinde_Gruenwald-4.jpg",
+   "https://www.wikidata.org/wiki/Q2515478",
+   "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete (Naturdenkmal register, CC BY 4.0)"
+  ],
+  "access": "Free, on the public Marktplatz of Grünwald at the junction of the two main streets; always visible from the pavement.",
+  "transport": "Grünwald is outside Munich city; tram 25 runs from central Munich to Grünwald. Walk from the stop to the Marktplatz not measured (a few minutes); travel time from the centre roughly 35 to 45 minutes, not verified.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "how_to_recognise": "You can recognise it by the memorial plaque on its trunk recalling the Bavarian constitution of 1808. It stands alone in the open Marktplatz, where Grünwald's two main streets cross.",
+  "photo_candidate": {
+   "file": "File:Verfassungslinde Gruenwald-1.jpg",
+   "licence": "CC BY-SA 3.0",
+   "photographer": "Rufus46 (Wikimedia Commons user)",
+   "geotag": "48.039767, 11.522417, about 5 m from register point"
+  },
+  "verify_notes": "- Planted 20 May 1808 by the Gruenwald citizens' community to mark King Max Joseph's constitution of the Kingdom of Bavaria; plaque on the trunk records the gift (de.wikipedia). Documented planting date for THIS tree, so age about 218 years in 2026.\n- Legally a Naturdenkmal and also listed like a Baudenkmal (de.wikipedia). Bayern LfU ND register point 48.03981, 11.52237 (entry 'Sommerlinde am Marktplatz (Verfassungslinde)', Fl.Nr. 22, Gde. Gruenwald); Wikidata Q2515478 same point.\n- Pin CONFIRMED: Commons file Verfassungslinde Gruenwald-1.jpg (CC BY-SA 3.0, Rufus46, taken 2007-04-22) is geotagged 48.039767, 11.522417, about 5 m from the register point; info-board photos (2019, same author) caption it Marktplatz, Sommerlinde Tilia platyphyllos. Species per Commons caption and register name; no girth or height found in any source seen.\n- Alive: Martinus KE photographs dated 2021-08-25 on Commons show the tree; lifecheck.py returned RECENT 2023-05-14 for the spot (a nearby monument photo, proves presence at the place only).\n- Outside Munich city boundary (Gruenwald, about 12 km south of the centre): day-trip boundary applies, label as Gruenwald. No girth/height: leave empty and ask reader.",
+  "story": "This lime was planted to celebrate a constitution, and it has outlived the kingdom that wrote it. On 20 May 1808 the citizens of Grünwald set it into their market square to mark King Max Joseph's new constitution for the Kingdom of Bavaria. A plaque on the trunk still records the gift.\n\nThat gives it something rare among old trees: a birthday. Most trees on this map carry an estimate or a range. This one has a date, which makes it about 218 years old in 2026, and the arithmetic is the whole argument.\n\nIt stands in the open where Grünwald's two main streets cross, a large-leaved lime with the town's traffic turning around it. Bavaria protects it twice over, as a natural monument and on the same footing as a listed building, an unusual honour for something that grows.\n\nIn the two centuries since, the constitution it was planted for was replaced and the Bavarian monarchy ended in 1918. The lime stayed where the citizens put it, on the square, with its plaque.\n\nNobody has published its girth or its height. If you pass with a tape measure, tell us what you find.\n\nGrünwald lies about 12 km south of central Munich, so this is a suburban trip rather than a city stroll: tram 25 runs out from the centre, and the Marktplatz is a few minutes on foot from the stop.",
+  "best_time": {
+   "months": [
+    6
+   ],
+   "kind": "flowers",
+   "label": "June, when the lime flowers over the square and the scent carries"
+  },
+  "written": true
+ },
+ {
+  "id": "muc_051",
+  "name": "The Lime of the Nepomuk Chapel, Grünwald",
+  "species": "Small-leaved Lime (Tilia cordata)",
+  "age_estimate": "not documented",
+  "age_basis": "none",
+  "location": {
+   "address": "Auf der Eierwiese, next to the St.-Johann-von-Nepomuk-Kapelle, 82031 Grünwald",
+   "latitude": 48.03749,
+   "longitude": 11.51928,
+   "neighbourhood": "Grünwald (municipality south of Munich)"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_M%C3%BCnchen",
+   "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Winterlinde_bei_der_Nepomukkapelle_(Gr%C3%BCnwald)",
+   "https://commons.wikimedia.org/wiki/File:ND_Linde_bei_Nepomukkapelle_-_2021-08-25_-_491b.jpg",
+   "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete (Naturdenkmal register, CC BY 4.0)"
+  ],
+  "access": "Free, a roadside tree on the public street Auf der Eierwiese beside the chapel; viewable from the pavement.",
+  "transport": "Grünwald is outside Munich city; tram 25 runs from central Munich to Grünwald. Walk from the terminus to the chapel not measured; travel time from the centre roughly 35 to 45 minutes, not verified.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "how_to_recognise": "You can recognise it by its broad crown towering over the roof of the small white Nepomuk chapel. It stands right beside the chapel on the street Auf der Eierwiese, the one large lime there.",
+  "photo_candidate": {
+   "file": "File:ND Linde bei Nepomukkapelle - 2021-08-25 - 491b.jpg",
+   "licence": "CC BY-SA 4.0",
+   "photographer": "Martinus KE (Wikimedia Commons user)",
+   "note": "Viewed: tree beside the chapel, public street, in leaf, good light. Also files 461b, 463c, 464b in the same set."
+  },
+  "verify_notes": "- Naturdenkmal of the Landkreis Muenchen (ordinance of 22 Feb 1982, link dead). de.wikipedia list: 'Eine Winterlinde, Tilia cordata, Gruenwald, Auf der Eierwiese, bei der Nepomukkapelle', coordinate 48.0375127, 11.5192711, Gemarkung Gruenwald Fl.Nr. 189 (with an editor note on a map problem on the talk page).\n- SPECIES/PARCEL DISAGREEMENT, flagged: Bayern LfU register has two points here: 'Sommerlinde auf der Eierwiese, Fl.Nr. 137/5' at 48.03749, 11.51928 (2 m from the Wikipedia coordinate and 3.6 m from the chapel's geotagged photos) and 'Winterlinde, Fl.Nr. 189' at 48.03620, 11.51766 (about 190 m away). Wikipedia and Commons (Martinus KE, 2021-08-25) call the tree at the chapel a Winterlinde; the register names the point at the chapel a Sommerlinde. Species deliver as Tilia cordata per Wikipedia and Commons with the conflict stated; page should ask the reader.\n- Pin: confirmed by agreement of three independent coordinates (register point, Wikipedia list, geotagged chapel photos 3.6 to 12.6 m) plus Martinus KE's photos showing the single large lime directly beside the chapel. The Fl.Nr.-189 point 190 m south-west is NOT this tree and was not checked (could be the other ND).\n- Alive: photographed in full leaf 2021-08-25 (Commons).\n- No age, girth or height in any source seen; leave empty and ask reader. Outside Munich city boundary: label as Gruenwald, about 12 km south of the centre.",
+  "story": "The officials who protect this lime do not agree on which lime it is. The Landkreis München made it a natural monument by an ordinance of 22 February 1982, and the published list of the district's monuments calls it a Winterlinde, a small-leaved lime. The Bavarian state register, at the same spot by the chapel, names it a Sommerlinde, a large-leaved lime. The photographer who documented it in 2021 sided with the small-leaved reading, and so do we, but the dispute is real and still open.\n\nWhat nobody disputes is where it stands. It grows on the street Auf der Eierwiese, directly beside the little chapel of St. John of Nepomuk, and its crown rises well over the chapel roof. Three separate coordinates, from the register, the list and geotagged photographs, land within a few metres of each other here.\n\nYou can settle the species yourself. A small-leaved lime has smaller, neater leaves and flowers in July; a large-leaved lime flowers a few weeks earlier, in June. Stand under it in early summer and the timing tells you. If you know it already, tell us which one it is.\n\nNo age, girth or height has been published for it either, so a measurement would be just as welcome.\n\nThe chapel is in Grünwald, about 12 km south of central Munich: a suburban trip on tram 25 from the centre, then on foot from the stop.",
+  "written": true
+ },
+ {
+  "id": "muc_052",
+  "name": "The Copper Beech of the Schlosspassage, Grünwald",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "not documented",
+  "age_basis": "none",
+  "location": {
+   "address": "Luitpoldweg, beside the Schlosspassage shopping arcade, 82031 Grünwald",
+   "latitude": 48.04107,
+   "longitude": 11.52308,
+   "neighbourhood": "Grünwald (municipality south of Munich)"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_M%C3%BCnchen",
+   "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Blutbuche_(Gr%C3%BCnwald)",
+   "https://commons.wikimedia.org/wiki/File:Blutbuche_Gr%C3%BCnwald_-_2021-08-25_-_436a.jpg",
+   "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete (Naturdenkmal register, CC BY 4.0)"
+  ],
+  "access": "Free, in the open pedestrian forecourt beside the Schlosspassage arcade on Luitpoldweg; view it from the public square. Shop opening hours do not matter for seeing the tree, but the arcade grounds are commercial property, not verified as always open.",
+  "transport": "Grünwald is outside Munich city; tram 25 runs from central Munich to Grünwald, whose terminus (Derbolfinger Platz) lies roughly 100 m from this point. Travel time from the centre roughly 35 to 45 minutes, not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "how_to_recognise": "You can recognise it by its dark-purple leaves: the one tall copper beech beside the Schlosspassage arcade, with a red Japanese maple at its foot. It stands on Luitpoldweg, about 100 m from the tram terminus.",
+  "photo_candidate": {
+   "file": "File:Blutbuche Grünwald - 2021-08-25 - 436a.jpg",
+   "licence": "CC BY-SA 4.0",
+   "photographer": "Martinus KE (Wikimedia Commons user)",
+   "note": "Viewed: whole crown and trunk readable, in leaf, good light, beside the arcade. Second frame 439b."
+  },
+  "verify_notes": "- Naturdenkmal 'Eine Blutbuche Fagus sylvatica f. purpurea', Luitpoldweg, Gemarkung Gruenwald Fl.Nr. 497 (de.wikipedia list of Naturdenkmaeler im Landkreis Muenchen, coordinate 48.04108, 11.52308); Bayern LfU register point 48.04107, 11.52308 (about 1 m apart, same underlying designation).\n- Photo of this exact tree: Commons category Naturdenkmal Blutbuche (Gruenwald), Martinus KE, 2021-08-25, CC BY-SA 4.0, caption 'am Luitpoldweg in Gruenwald, beim Einkaufszentrum Schlosspassage'. OSM (Nominatim) maps the Schlosspassage as a mall way with bounding box lat 48.04077 to 48.04140, lon 11.52284 to 11.52428; the register point sits at its western edge, matching the photo.\n- Pin set APPROXIMATE (downgraded on review: no geotagged photo); the register point is tree-level and the evidence is strong, but the Commons files carry no geotag. Reasoning:  the register point is a single-tree point and the one ND beech there is plainly the dominant beech in the photo; the Commons files carry no geotag of their own, so the pin rests on register plus caption plus mall location, not on a geotagged photo. The tree ships on its photograph.\n- Alive: photographed in leaf 2021-08-25.\n- No age, girth or height in any source seen: leave empty and ask reader. Outside Munich city: Gruenwald, about 12 km south of the centre, label accordingly. Tram terminus distance is from the Commons geosearch (tram loop photos at 112 m), not measured on the ground.",
+  "story": "Most protected trees stand in parks or churchyards. This one stands beside a shopping arcade. The Landkreis München lists a single copper beech on Luitpoldweg in Grünwald as a natural monument, and it fills the open space at the western edge of the Schlosspassage.\n\nThat is the charm of it. You do not walk into a wood to find this tree. You step off tram 25 at its Grünwald terminus, roughly 100 metres away, and there it is above the forecourt, a tall dome of dark purple leaves among the shopfronts.\n\nCopper beech is a colour form of the ordinary European beech, and the colour runs through the year: the leaves open purple in spring, darken through summer and turn copper before they fall.\n\nThe pin is close but not exact. The register gives a point for this one tree, and a 2021 photograph captioned at Luitpoldweg by the Schlosspassage shows it there, but no photograph carries its own position. In practice it matters little: look for the one large purple beech beside the arcade, with a red Japanese maple at its foot. The forecourt belongs to the shopping centre, so we cannot promise it is open at every hour, though the tree is plain to see from the square.\n\nNobody has published its age, girth or height. If you know any of the three, tell us.\n\nGrünwald is about 12 km south of central Munich, a suburban trip by tram rather than a stroll from the centre.",
+  "written": true
+ },
+ {
+  "id": "muc_053",
+  "name": "The Oak of Bergstraße, Oberhaching",
+  "species": "Oak (Quercus sp.)",
+  "age_estimate": "not documented",
+  "age_basis": "none",
+  "location": {
+   "address": "Bergstraße 7a, 82041 Oberhaching",
+   "latitude": 48.01932,
+   "longitude": 11.59388,
+   "neighbourhood": "Oberhaching (municipality south of Munich)"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_M%C3%BCnchen",
+   "https://commons.wikimedia.org/wiki/Category:Eiche_Bergstra%C3%9Fe_7_a_(Oberhaching)",
+   "https://commons.wikimedia.org/wiki/File:Eiche_Bergstr._7_a_-_2021-09-14_-_685b.jpg",
+   "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete (Naturdenkmal register, CC BY 4.0)"
+  ],
+  "access": "Free to see: the oak stands at the side of the public Bergstraße, where the footpath Kirchweg branches off behind it. Next to a dwelling address (Bergstraße 7a); view from the road, do not enter the property.",
+  "transport": "Oberhaching lies about 14 km south of Munich centre. Public transport route and time not verified; check MVV for the bus to Oberhaching.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "how_to_recognise": "You can recognise it by the low, heavy branching and a crown spreading widest toward the west. It stands at the roadside where the footpath Kirchweg leaves Bergstraße, by number 7a; the Eleven Oaks are in the wood behind.",
+  "photo_candidate": {
+   "file": "File:Eiche Bergstr. 7 a - 2021-09-14 - 685b.jpg",
+   "licence": "CC BY-SA 4.0",
+   "photographer": "Martinus KE (Wikimedia Commons user)",
+   "note": "Viewed: wide crown seen from the west, road in front, in leaf. Frames 684b, 686b, 687b, 691b in the same category."
+  },
+  "verify_notes": "- Naturdenkmal of the Landkreis Muenchen: 'Eine Eiche', Oberhaching, Bergstrasse 7a, Gemarkung Oberhaching Fl.Nr. 1680/1 (de.wikipedia list, coordinate 48.01932, 11.59388); Bayern LfU register point 'Eiche auf Fl.Nr. 1680' 48.01933, 11.59390, agreeing within 2 m. Species stated only as Eiche; do not name Stieleiche.\n- Commons caption (Martinus KE, 2021-09-14, CC BY-SA 4.0): strong branching low on the trunk gives a broad crown best seen from the west; Bergstrasse rises east out of the Gleissental; behind the oak the footpath Kirchweg branches off north along the slope edge; part of that slope wood is a second ND, Elf Eichen (not delivered: a group of eleven).\n- Pin approximate: register and Wikipedia coordinates agree and are tree-level, but no Commons file is geotagged, so no independent confirmation of the exact trunk.\n- Alive: photographed in leaf 2021-09-14.\n- No age, girth or height in any source seen. Neighbouring ND: Zwei Eichen, Vorderes Gleissental 4 (48.02011, 11.59381, no photo, a house address, not delivered). Outside Munich city: label as Oberhaching.",
+  "story": "This oak starts branching so low on its trunk that its crown has room to spread wide, and the photographer who documented it in 2021 left one piece of advice: see it from the west. That is where the spread shows best.\n\nIt stands at the side of Bergstraße in Oberhaching, where the road climbs east out of the Gleißental valley and a footpath called the Kirchweg branches off north behind the tree along the edge of the slope. The Landkreis München protects it as a natural monument. Part of the slope wood behind it is protected too, as a separate monument called the Elf Eichen, the Eleven Oaks, so this is plainly a corner where oaks were thought worth protecting.\n\nThe register says only Eiche, oak, without naming which one. If you can tell a pedunculate from a sessile oak by its acorn stalks, tell us.\n\nThe pin is close but not exact: the register and the district list agree to within two metres, but no photograph confirms the trunk independently. On the ground, look for the broad oak at the roadside exactly where the Kirchweg leaves Bergstraße, rather than the trees in the wood behind it. The address beside it, Bergstraße 7a, is a private house, so look from the road and leave the property alone.\n\nNo age, girth or height has been published.\n\nOberhaching lies about 14 km south of Munich centre, a suburban trip; check MVV for the bus.",
+  "written": true
+ },
+ {
+  "id": "muc_054",
+  "name": "The Ash of Gräfelfing by the Würm",
+  "species": "European Ash (Fraxinus excelsior)",
+  "age_estimate": "not documented",
+  "age_basis": "none",
+  "location": {
+   "address": "Corner of Wendelsteinstraße and Stefanusstraße, near the Würm bank, 82166 Gräfelfing",
+   "latitude": 48.1143,
+   "longitude": 11.43445,
+   "neighbourhood": "Gräfelfing (municipality west of Munich)"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_M%C3%BCnchen",
+   "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Esche_(Gr%C3%A4felfing)",
+   "https://commons.wikimedia.org/wiki/File:Esche_in_Gr%C3%A4felfing_-_2023-06-07_-_197b.jpg",
+   "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete (Naturdenkmal register, CC BY 4.0)"
+  ],
+  "access": "Free, a streetside tree on public roads at the junction of Wendelsteinstraße and Stefanusstraße; view from the pavement.",
+  "transport": "Gräfelfing lies about 12 km west of Munich centre; S-Bahn route and time to the tree not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "how_to_recognise": "You can recognise it by the dead bare spire at the top of an otherwise green crown, and the leaning, forked trunk. It stands at the corner of Wendelsteinstraße and Stefanusstraße near the Würm, with an information board beside it.",
+  "photo_candidate": {
+   "file": "File:Esche in Gräfelfing - 2023-06-07 - 197b.jpg",
+   "licence": "CC BY-SA 4.0",
+   "photographer": "Martinus KE (Wikimedia Commons user)",
+   "note": "Viewed: whole tree and trunk readable, in leaf, 2023. The upper crown holds a dead spire (ash dieback or storm loss); other frames 199a, 200a, 201a and info-board frames 204b, 205a show the plaque."
+  },
+  "verify_notes": "- Naturdenkmal 'Eine Esche Fraxinus excelsior', Gräfelfing, at the junction of Wendelsteinstrasse and Stefanusstrasse near the Würm bank, Gemarkung Gräfelfing Fl.Nr. 55 (de.wikipedia list, coordinate 48.11433, 11.43419).\n- COORDINATE DISAGREEMENT: Bayern LfU register point 48.11426, 11.43472 is about 40 m east of the Wikipedia coordinate. The pin here is a midpoint and therefore APPROXIMATE; the Commons photos are not geotagged. Same junction either way.\n- Alive but with a dead spire in the crown on the 2023-06-07 photo (Martinus KE, CC BY-SA 4.0), the rest in full leaf; a real ash-dieback or storm-damage risk, so flagged: the writer should say what is visible and nothing about its future. Also an info-board (Schild) photographed beside it, confirming it is the designated monument.\n- No age, girth or height in any source seen; leave empty and ask reader. Outside Munich city: label as Gräfelfing.",
+  "story": "Look up at the top of this ash and you will see a bare dead spire standing out of a green crown. When it was photographed in June 2023 the tree was in full leaf everywhere except that one leader at the summit. Whether storm or disease took it, nobody has said, and we will not guess. What the photograph shows is the rest of the tree alive and leafing.\n\nIt is a protected natural monument of the Landkreis München, a European ash at the corner of Wendelsteinstraße and Stefanusstraße in Gräfelfing, close to the bank of the Würm. An information board stands beside it, which is the surest sign you have the right tree. Its trunk leans and forks.\n\nThe pin is honest about its limits. The district's list and the Bavarian state register place the tree about 40 metres apart, both at the same junction, so our pin sits between them. At the corner, look for the tall ash with the dead spire and the board beside it.\n\nNobody has published its age, girth or height. If you know any of them, or if you pass and see how the crown is doing now, tell us.\n\nGräfelfing lies about 12 km west of central Munich, so this is a suburban trip rather than a city walk. Check the S-Bahn for the way out; we have not timed the journey to the tree.",
+  "written": true
+ }
+]

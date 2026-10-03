@@ -9496,6 +9496,27 @@
    "tokens": 123000,
    "trees": 0,
    "note": "3 overlay entries plus page copy to 13"
+  },
+  {
+   "target": "Munich",
+   "kind": "verify",
+   "tokens": 200000,
+   "trees": 5,
+   "note": "muc_050-054 suburban Naturdenkmal via Landkreis list plus Commons; city register exhausted"
+  },
+  {
+   "target": "Munich",
+   "kind": "write",
+   "tokens": 135000,
+   "trees": 5,
+   "note": "5 stories, 1 best_time"
+  },
+  {
+   "target": "de/munich",
+   "kind": "translate",
+   "tokens": 128000,
+   "trees": 0,
+   "note": "5 overlay entries plus title count 50"
   }
  ]
 }
