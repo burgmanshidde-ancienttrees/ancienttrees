@@ -25,6 +25,49 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Where the paywall sits in a product that lives on contributions (2026-10-03)
+
+**The interaction: a person who is not paying wants to add a tree, a photograph
+or a correction.** Looked up because Hidde, weighing a whole-app paywall (seven
+free days, then pay) against a feature tier, asked whether the paywall would
+turn the platform into a ghost town. The references split cleanly on one line.
+
+**Every product that depends on what people send in keeps the sending free, on
+every surface, forever in practice.**
+
+- AllTrails: the free Base tier records activities, writes reviews, uploads
+  photographs, saves and navigates routes. Plus sells offline maps, wrong-turn
+  alerts, 3D previews and live sharing at USD 35.99 a year; Peak sells AI
+  routes, conditions and plant ID at USD 80. Nothing a contributor does is paid.
+  https://techcrunch.com/2025/05/12/alltrails-debuts-a-80-year-membership-that-includes-ai-powered-smart-routes
+  and https://www.peakdistrict.org/alltrails-review/
+- iNaturalist and Seek: no paywall of any kind, a nonprofit funded by grants
+  and donations. https://help.inaturalist.org/en/support/solutions/articles/151000189329
+- Komoot: recording and uploading tours is free, the first region is free
+  forever, Premium sells further regions and planning extras. Pioneers (the
+  contributor programme) are rewarded, never charged.
+  https://www.advnture.com/features/introducing-komoot
+- Strava and Google Maps (Local Guides): uploading and contributing free,
+  analysis paid or nothing paid. Recorded from our own corpus.
+
+**The one hard-paywall reference is a TOOL with no community.** PictureThis
+runs a 7-day trial that converts to a USD 20 to 40 annual subscription, with a
+near-unskippable onboarding paywall that deceptive.design lists as a dark
+pattern. It has no contributors to lose; its data comes from its own model.
+https://adapty.io/blog/paywall-newsletter-26/ and
+https://www.deceptive.design/brands/picture-this
+
+**What we take from it.** The paid line is in-the-field convenience (walks,
+offline, the season as a tool, alerts), never the acts that feed the database
+(find, tick, photograph, add, correct). A whole-app paywall is the PictureThis
+shape and fits a product that is a tool; this one is a community, and the
+arithmetic Hidde feared is real: contributions come from active users, and a
+hard paywall keeps only the paying ones active after week one. This is law 3
+in PRODUCT_IA.md and the 2026-08-26 ruling, now with the references written
+down beside them.
+
+---
+
 ## A photograph of the sign beside a tree (2026-09-24)
 
 Hidde: "vaak staat er een bordje bij een oude boom dus is het best handig om
