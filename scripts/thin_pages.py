@@ -27,6 +27,8 @@ import os
 import re
 import unicodedata
 
+from findable import findable
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://ancienttrees.app"
 LANGS = ["de", "es", "fr", "it", "ja", "nl", "pt"]
@@ -125,9 +127,10 @@ def main():
         #    2026-10-01: "zo min mogelijk bomen met geen foto en geen exacte pin").
         #    Recomputed every deploy, so a tree returns to the index the day it
         #    gains either.
+        #    Widened 2026-10-04: a pin on a small named site plus a recognition
+        #    line counts as findable too (scripts/findable.py, shared with preflight).
         for t, ts in zip(trees, tslugs):
-            ph = t.get("photo") or {}
-            if (ph.get("url") and ph.get("status") != "held") or t.get("location_precision") == "confirmed":
+            if findable(t):
                 continue
             groups["weak_trees"] += [f"{BASE}/{slug}/{ts}"] + [f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real]
         # 2. Places with one to three trees: the PLACE pages leave the index,
@@ -178,7 +181,7 @@ def main():
            f"| 1 | Fallback language pages: the English text on a /de/, /es/ ... URL | {len(set(groups['fallback']))} |",
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
-           f"| 4 | Tree pages with neither a photograph nor a confirmed pin | {len(set(groups['weak_trees']))} |",
+           f"| 4 | Tree pages nobody could find: no photograph, no confirmed pin, no small site with a recognition line | {len(set(groups['weak_trees']))} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",
            f"Thin places kept indexed ({len(kept_thin)}), a destination tree or real impressions: " +

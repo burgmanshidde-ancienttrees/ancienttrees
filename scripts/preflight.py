@@ -23,6 +23,7 @@ import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import pagegaps          # for the park word list, compared below
+from findable import findable  # photo, confirmed pin, or small site + line
 
 DESC_MAX = 155          # site/src/lib/site-config.ts
 INTRO_MIN, INTRO_MAX = 60, 100   # Contract C, site/src/pages/[city].astro
@@ -1308,15 +1309,16 @@ def check_covered_countries_want_a_photo_or_a_pin():
         for tree in city.get("trees", []):
             if tree.get("id") in grand:
                 continue
-            photo = tree.get("photo") or {}
-            if photo.get("url") and photo.get("status") != "held":
-                continue
-            if tree.get("location_precision") == "confirmed":
+            # 2026-10-04: a pin on a small named site plus a recognition line
+            # counts too (scripts/findable.py, the one copy of this rule).
+            if findable(tree):
                 continue
             out.append("%s: %s (%s) is new in %s, which already carries %d trees, "
-                       "and it has neither a photograph nor a confirmed pin. That "
-                       "is a lead, not a page, anywhere (2026-10-01): keep it in "
-                       "data/leads/ until one of the two exists."
+                       "and nobody standing there could find it: no photograph, no "
+                       "confirmed pin, and no small site (location_site, radius "
+                       "<= 50 m) with a recognition line. That is a lead, not a "
+                       "page (2026-10-01, widened 2026-10-04): keep it in "
+                       "data/leads/ until one of the three exists."
                        % (path, tree.get("id"), tree.get("name"), c, count[c]))
     return out
 
