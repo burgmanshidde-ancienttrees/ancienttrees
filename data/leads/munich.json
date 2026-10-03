@@ -442,6 +442,33 @@
    "register_ref": "Bayern LfU ND 1686 and 1686/7; de.wikipedia list; Commons category Elf Eichen (Oberhaching)",
    "status": "lead",
    "why": "Group of eleven on a slope edge reached by the footpath Kirchweg beside the Bergstrasse oak (muc_053). Not a single trunk, so a collectible point only if the group reads as one stand; has photographs (Martinus KE, 2021-09-14). Left for a judgement on the ensemble test."
+  },
+  {
+   "name": "Beech of Martin-Huber-Strasse, Dachau (ND 12)",
+   "species": "Common Beech (Fagus sylvatica)",
+   "lat": 48.26045,
+   "lng": 11.43887,
+   "register_ref": "Bayern LfU 'Rotbuche' 48.26041,11.43902; de.wikipedia Dachau ND 12",
+   "status": "lead",
+   "why": "Roughly 190 years per the county list, stands immediately NW of a public car park at Martin-Huber-/Dr.-Engert-Strasse. Register and Wikipedia pins agree within 12 m. No photograph on Commons and lifecheck.py returned NONE (2026-10-03), so no proof of life and neither photo nor confirmed pin to ship on. Needs a photograph."
+  },
+  {
+   "name": "Poplar of the Amper bridge, Rotkreuzplatz, Dachau (ND 15)",
+   "species": "Poplar (Populus sp.)",
+   "lat": 48.25671,
+   "lng": 11.43549,
+   "register_ref": "Bayern LfU 'Pappel' 48.25664,11.43548; de.wikipedia Dachau ND 15",
+   "status": "lead",
+   "why": "About 100 years old per the county list, on the embankment at the Amper bridge. Public ground. No photograph on Commons, lifecheck NONE, poplar is short-lived. Weak case; needs a photograph."
+  },
+  {
+   "name": "Silver Poplars by the stadium, Dachau (ND 19 and 20)",
+   "species": "White Poplar (Populus alba)",
+   "lat": 48.24475,
+   "lng": 11.43735,
+   "register_ref": "Bayern LfU 2 Silberpappeln 48.24467,11.43730 and Silberpappel 48.24477,11.43686; Commons category Silberpappeln beim Stadion (Dachau), Martinus KE 2023-09-08",
+   "status": "lead",
+   "why": "Alive 2023-09-08 (photographed, CC BY-SA 4.0). ND 19 is two trees at the roadside, ND 20 a third behind the sports club fence; the middle one carries an unofficial bat-tree plaque. A trio, not a single trunk, and age undocumented: left for a judgement on the ensemble test."
   }
  ],
  "blocked": [
@@ -1163,6 +1190,24 @@
    "register_ref": "de.wikipedia list of Naturdenkmaeler im Landkreis Muenchen, Fl.Nr. 1679",
    "status": "blocked",
    "reason": "Group of two at a house address with no photograph on Commons; no way to settle access or a pin. Never deliver without a photograph or confirmed pin."
+  },
+  {
+   "name": "Horse Chestnut, Kolumbus-/Humboldt-/Pilgersheimer Strasse school plot (ND 10/5, Fl.Nr. 12579)",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "lat": 48.11971,
+   "lng": 11.57569,
+   "register_ref": "Bayern LfU ND-01969; de.wikipedia Liste der Naturdenkmaeler in Muenchen",
+   "status": "blocked",
+   "reason": "de.wikipedia states the tree is no longer there (felled 2020/21, still visible in 2020/21 aerials), and it stood on a school plot. Never ship."
+  },
+  {
+   "name": "Beech, Kaulbachstrasse 15 (ND 6/3, Fl.Nr. 3521)",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "lat": 48.14759,
+   "lng": 11.58264,
+   "register_ref": "Bayern LfU ND-07032",
+   "status": "blocked",
+   "reason": "Already blocked above as Kaulbachstrasse 15: central in a rear garden, not publicly accessible."
   }
  ]
 }

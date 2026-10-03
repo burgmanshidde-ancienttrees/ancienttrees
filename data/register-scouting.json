@@ -726,6 +726,18 @@
    "country": "United States",
    "status": "stalled",
    "note": "SCOUTED 2026-10-03 on scout_next.py --target naming New York (#4). NYC Parks' Great Trees pages (nycgovparks.org/trees/great-trees) answer a plain curl with an AWS WAF captcha ('Human Verification'), so a night run cannot read the per-tree pages; the Great Trees list is not on NYC Open Data as a dataset that was found in this window either (the open Street Tree Census is a full inventory, never to be bulk-imported). Retry from a session with a browser, or via a Wikidata/Wikipedia 'Great Trees of New York City' list that carries coordinates. New York already holds published trees (see data/cities/new-york.json), so this is depth, not an opening."
+  },
+  {
+   "place": "Bath",
+   "country": "United Kingdom",
+   "status": "blocked",
+   "note": "SCOUTED 2026-10-03 on scout_next.py --target (#27). Bath and North East Somerset Council publishes its Tree Preservation Orders as open data (data.gov.uk, bathhacked INSPIRE TPO, WMS/WFS, 2,343 rows with easting/northing), but a TPO is a planning protection on ordinary trees, not a designation of remarkable ones: it is a municipal inventory by another name, which the register rules exclude (semantic filter, never bulk import). No dedicated notable/veteran tree register for Bath was found; the national Ancient Tree Inventory is Woodland Trust data (no written permission, London gate). Supply for Bath is Wikidata singles and from-zero web research (off). Do not re-scout without a new angle, such as a Bath Preservation Trust or Bath in Bloom heritage tree list."
+  },
+  {
+   "place": "London",
+   "country": "United Kingdom",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-03 on scout_next.py --target (#37). No official register of remarkable trees. Three things found: (1) GiGL's London Public Realm Trees (data.london.gov.uk, CSV from all boroughs, Royal Parks, TfL) is a full street/park inventory, excluded as a bulk import; (2) the Woodland Trust Ancient Tree Inventory stays gated (London gate); (3) the curated 'Great Trees of London' list (Trees for Cities, 61 trees chosen by the public after 1987 and 2008, Wikipedia en 'Great_Trees_of_London' carries a coordinate per tree) is the usable lead source: not a government register, so every tree needs its own verify (alive, second source, pin), but it is a selection made for exactly our question and London holds 23 published trees against a target of 100. NEXT for a verify pass: brief it from that Wikipedia list, skip those already published (check by distance), mine for walkable clusters (Kew, Greenwich, Hampstead, the City churchyards)."
   }
  ],
  "out_of_focus": {
