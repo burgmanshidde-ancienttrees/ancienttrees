@@ -244,5 +244,259 @@
   "story": "Berlin Zoo calls it the eternal oak, and says it has been giving shade for 500 years. If the zoo's figure is right, the tree was already old when the zoo itself opened in 1844, the first in Germany. The zoo also gives it a second name, the Columbus oak, without explaining it.\n\nTreat the number as the owner's word rather than a measurement. It is a round figure, no method is given, and nobody has published a girth to check it against. A photograph of the tree on Wikimedia Commons is captioned the same way, about 500 years old. So the honest version is: about 500 years, according to the zoo.\n\nThere is a second thing we cannot quite close. Berlin's register protects one pedunculate oak inside the zoo, Naturdenkmal 1-52/B, south of the hippo house, listed in 1993 for its distinctiveness and for regional heritage. That is the tree we have mapped. It is the only protected oak the register lists in the grounds, which makes it almost certainly the eternal oak, but no source we have read says in so many words that the two are the same tree. The zoo counts eleven protected natural monuments on its ground in all.\n\nYou will need a ticket, and our pin comes from the register rather than from a visit, so expect to look around south of the hippo house. If you have stood under it, tell us whether we have the right one.",
   "how_to_recognise": "You can recognise it as the old pedunculate oak south of the hippo house, the only oak Berlin's register protects inside the zoo. Our pin is approximate, so look around that end of the hippo house rather than for an exact spot.",
   "written": true
+ },
+ {
+  "id": "ber_048",
+  "name": "The Ginkgo of the Humboldt University Courtyard",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Unter den Linden 6, Humboldt-Universitaet, south courtyard",
+   "latitude": 52.517959,
+   "longitude": 13.393265,
+   "neighbourhood": "Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte"
+  ],
+  "access": "Courtyard of the Humboldt University main building; university courtyards are normally walk-in by day but opening hours were not verified this pass, check on arrival.",
+  "transport": "S/U Friedrichstrasse, about 8 min walk; bus 100/300 to Staatsoper",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register only (Land Berlin Naturdenkmal 1-6/B-1, designated 1993-03-02, protection reasons: Schönheit, landeskundliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Wikipedia list gives protection reasons Seltenheit and Eigenart. Sister ginkgo 1-6/B-2 (north courtyard, 52.518525,13.393119) is a separate registered tree, not folded. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/394159736. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
+  "story": "The Humboldt University keeps two protected ginkgos, one in each of its courtyards, and Berlin registers them as two separate natural monuments. This is the southern one, Naturdenkmal 1-6/B-1. Its twin, 1-6/B-2, stands about 60 metres to the north, in the other courtyard of the same building.\n\nBerlin listed both on 2 March 1993. The reasons depend on who you ask. The state register gives beauty and regional heritage. The Wikipedia list of natural monuments in Mitte gives rarity and distinctiveness. That makes four reasons across two sources, and not one of them is age.\n\nThe moment to come is November. A ginkgo's whole crown turns butter gold and then drops its leaves in a day or two, so the window is short and easy to miss.\n\nThe tree also starts a short walk. A protected red horse chestnut stands in the forecourt a few steps away, and a protected London plane grows on Bebelplatz across the street, so three of Berlin's natural monuments sit within a couple of hundred metres of each other.\n\nUniversity courtyards are normally open by day, but we have not confirmed the hours, so check at the gate. Nobody has published an age or a girth for this ginkgo. If you have a tape measure and a minute, tell us what it comes to.",
+  "how_to_recognise": "You can recognise it by its small fan-shaped ginkgo leaves. It stands in the south courtyard of the main building at Unter den Linden 6; its protected twin is in the north courtyard.",
+  "best_time": {
+   "months": [
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "November, when the crown turns butter gold for a few days"
+  },
+  "written": true
+ },
+ {
+  "id": "ber_049",
+  "name": "The Red Horse Chestnut of the Humboldt University Forecourt",
+  "species": "Red Horse Chestnut (Aesculus x carnea)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Unter den Linden 6, Vorhof der Humboldt-Universitaet, western part",
+   "latitude": 52.517931,
+   "longitude": 13.39349,
+   "neighbourhood": "Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte"
+  ],
+  "access": "Open forecourt of the Humboldt University main building, visible from the Unter den Linden pavement.",
+  "transport": "S/U Friedrichstrasse, about 8 min walk; bus 100/300 to Staatsoper",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register only (Land Berlin Naturdenkmal 1-5/B, designated 1993-03-02, protection reasons: Schönheit, landeskundliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Red-flowered hybrid horse chestnut, less common than the white. Same forecourt as ber_048. Species per Wikipedia list (Aesculus x carnea); register name Fleischrote Rosskastanie. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/394159736. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
+  "story": "Berlin's register files this tree as a Fleischrote Rosskastanie, a flesh-red horse chestnut, which is the German name for it and does the flowers no favours. In English it is simply the red horse chestnut: the same upright candles as the familiar white kind, in red, and less common.\n\nIt stands in the forecourt of the Humboldt University's main building, on the western side, and you do not need to go through a gate to see it: it is in plain view from the pavement of Unter den Linden. Berlin made it Naturdenkmal 1-5/B on 2 March 1993, for its beauty and for regional heritage.\n\nCome in May. That is when a horse chestnut puts its candles up over the whole crown, and on this one they come out red rather than white.\n\nIt is also a stop on a very short walk. One of the university's two protected ginkgos stands in the south courtyard a few steps behind it, and a protected London plane grows on Bebelplatz across the road.\n\nThe register records no age, no girth and no height for it, and neither does any other source we found. If you know when it was planted, or have measured it, tell us.",
+  "how_to_recognise": "You can recognise it in May by red flower candles where Berlin's common horse chestnuts carry white ones. It stands on the western side of the Humboldt University forecourt, visible from the Unter den Linden pavement.",
+  "best_time": {
+   "months": [
+    5
+   ],
+   "kind": "flowers",
+   "label": "May, when the candles come out red instead of white"
+  },
+  "written": true
+ },
+ {
+  "id": "ber_050",
+  "name": "The Plane Tree of Bebelplatz",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Bebelplatz, green area beside the Operncafe",
+   "latitude": 52.516787,
+   "longitude": 13.395774,
+   "neighbourhood": "Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte"
+  ],
+  "access": "Free; public square and lawn between the State Opera, St Hedwig's Cathedral and the university.",
+  "transport": "Bus 100/300 to Staatsoper; U Hausvogteiplatz about 5 min walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register only (Land Berlin Naturdenkmal 1-7/B, designated 1993-03-02, protection reasons: Schönheit, landeskundliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Bebelplatz is the site of the 1933 book burning (a fact about the place, do not bridge it to this tree's age). Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/399847056. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
+  "story": "This plane tree grows on Bebelplatz, the square where the 1933 book burning took place, and nobody has recorded whether it was already standing there to see it. That is the honest version, and it is worth saying plainly, because the temptation with a tree on a square like this is to give it a witness's part it may never have had.\n\nWhat is recorded is where it stands and why it is protected. It grows on the green beside the Operncafe, in the space framed by the State Opera, St Hedwig's Cathedral and the Humboldt University. Berlin made it Naturdenkmal 1-7/B on 2 March 1993, for its beauty and for regional heritage. The register's point marks the trunk itself, so our pin is exact rather than a guess somewhere on the square.\n\nSo the tree makes no claim on the square's history, and the square makes none on the tree's age. What you get is a protected London plane in the middle of Mitte, free to stand under.\n\nTwo more of the city's protected trees are a short walk away across Unter den Linden: a red horse chestnut in the university forecourt and a ginkgo in the courtyard behind it. Together they make a walk of a few minutes.\n\nThe register gives no age, girth or height for this plane. If you have measured the trunk, or know when it was planted, tell us.",
+  "how_to_recognise": "You can recognise it as the plane tree on the green beside the Operncafe. It stands on Bebelplatz, in the space between the State Opera, St Hedwig's Cathedral and the Humboldt University.",
+  "written": true
+ },
+ {
+  "id": "ber_051",
+  "name": "The White Mulberry of Viktoriapark",
+  "species": "White Mulberry (Morus alba)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Viktoriapark, east of the waterfall, Kreuzberg",
+   "latitude": 52.488901,
+   "longitude": 13.382297,
+   "neighbourhood": "Kreuzberg"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Friedrichshain-Kreuzberg"
+  ],
+  "access": "Free; public hill park, open at all hours.",
+  "transport": "U6/U7 Mehringdamm, about 10 min walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register only (Land Berlin Naturdenkmal 2-30/B, designated 1993-03-02, protection reasons: Eigenart, landeskundliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Park position only as precise as the register's description 'east of the waterfall'; the pin is the register coordinate. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/343653093. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
+  "story": "This tree belongs to the species whose leaves fed the silk trade, and it grows in a hill park in Kreuzberg. White mulberry leaves are what silkworms are raised on. What we cannot tell you is whether this particular tree has anything to do with that story. No source records when or why it was planted, and a white mulberry in a Berlin park could have arrived for silk, for fruit or simply for shade.\n\nWhat Berlin does record is that it is worth keeping. The city made it Naturdenkmal 2-30/B on 2 March 1993, citing its distinctiveness and regional heritage. The register places it in Viktoriapark, east of the waterfall, and its coordinate marks the tree itself.\n\nThe time to come is midsummer. In June and July a white mulberry carries pale, sweet fruit, and a tree in a public park tends to leave the evidence on the path beneath it.\n\nViktoriapark is free and open at all hours, about ten minutes on foot from Mehringdamm. Find the waterfall and look to its east side.\n\nNobody has published an age, girth or height for this mulberry. If you know its story, or have put a tape around its trunk, tell us.",
+  "how_to_recognise": "You can recognise it in June and July by its pale mulberry fruit. It stands in Viktoriapark on the east side of the waterfall, where the register places it.",
+  "best_time": {
+   "months": [
+    6,
+    7
+   ],
+   "kind": "fruit",
+   "label": "June and July, when it carries pale, sweet mulberries"
+  },
+  "written": true
+ },
+ {
+  "id": "ber_052",
+  "name": "The Bald Cypress of Buergerpark Pankow",
+  "species": "Bald Cypress (Taxodium distichum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Buergerpark Pankow, north of the rose garden",
+   "latitude": 52.570439,
+   "longitude": 13.394191,
+   "neighbourhood": "Pankow"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Pankow"
+  ],
+  "access": "Free; public park.",
+  "transport": "S/U Pankow, about 10 min walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register only (Land Berlin Naturdenkmal 3-48/B, designated 1993-03-02, protection reasons: Schönheit, landeskundliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Deciduous conifer, rare in Berlin parks; turns copper in autumn (species trait, not sourced to this tree). Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/356603893. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
+  "story": "This is a conifer that goes bare every winter. A bald cypress grows needles like a pine and then, each autumn, turns them copper red and drops the lot. It is a rare tree in Berlin's parks, and this one, north of the rose garden in the Bürgerpark Pankow, is under state protection.\n\nBerlin made it Naturdenkmal 3-48/B on 2 March 1993, for its beauty and for regional heritage. The register's point marks the tree itself, so the pin takes you to the trunk rather than to a corner of the park.\n\nThe moment to come is October into November. The whole crown changes colour and then strips itself. The copper is the reason to make the trip; the bare frame that follows is why the species is called bald.\n\nIt is not the only one on our Berlin map. Another bald cypress stands in the palace garden at Charlottenburg, on the far side of the city, so a reader who likes this one has a second to find.\n\nThe Bürgerpark is free, about ten minutes on foot from S and U Pankow. Nobody has published an age, girth or height for this tree. If you have measured it, or know when it was planted, tell us.",
+  "how_to_recognise": "You can recognise it as a conifer whose soft needles turn copper red in autumn and are gone by winter. It stands in the Bürgerpark Pankow, just north of the rose garden.",
+  "best_time": {
+   "months": [
+    10,
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "October into November, when the needles turn copper red before they fall"
+  },
+  "written": true
+ },
+ {
+  "id": "ber_053",
+  "name": "The Black Poplar of Kreuzpfuhl",
+  "species": "Black Poplar (Populus nigra)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Juergen-Kuczynski-Park, Kreuzpfuhl, middle of the south shore path",
+   "latitude": 52.552675,
+   "longitude": 13.452452,
+   "neighbourhood": "Prenzlauer Berg"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Pankow"
+  ],
+  "access": "Free; public park around the Kreuzpfuhl pond.",
+  "transport": "Tram M4 or S Landsberger Allee area; walk not measured",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register only (Land Berlin Naturdenkmal 3-16/B, designated 1993-03-02, protection reasons: Schönheit, naturgeschichtliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Wikipedia list gives 52.552341,13.452469, about 40 m from the register pin: consistent. Black poplar is a rare native in Berlin. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/314990080. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
+  "story": "The black poplar is a native tree in Berlin and a rare one, which is a combination worth pausing on. This one stands by a pond in Prenzlauer Berg, halfway along the path on the south shore of the Kreuzpfuhl, in the Jürgen-Kuczynski-Park.\n\nBerlin made it Naturdenkmal 3-16/B on 2 March 1993. Many of the city's protected trees are listed partly for regional heritage, for what they say about the place. This one was listed for its beauty and for natural-history reasons instead: for what it says about the species and the landscape rather than about the people around it.\n\nThe pin is a good one. The register gives a point for the tree itself, and the Wikipedia list of Pankow's natural monuments gives its own coordinate about 40 metres away, which for two sources in a park is close agreement. Walk the south shore path and look for it near the middle.\n\nA poplar by water is in its element, and the Kreuzpfuhl is a pond ringed by a public park, free to walk around. It has no single day of glory. It is the kind of tree you come to because you know a native black poplar is a rare thing to find in Berlin.\n\nNo source records its age, girth or height. If you have put a tape around the trunk, tell us what it comes to.",
+  "how_to_recognise": "You can recognise it as the black poplar halfway along the path on the south shore of the Kreuzpfuhl pond. It stands in the Jürgen-Kuczynski-Park, at the register's tree-level point.",
+  "written": true
+ },
+ {
+  "id": "ber_054",
+  "name": "The Copper Beeches of the Natural History Museum Forecourt",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Invalidenstrasse 43, square in front of the Museum fuer Naturkunde",
+   "latitude": 52.529917,
+   "longitude": 13.380037,
+   "neighbourhood": "Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte"
+  ],
+  "access": "Free; public square in front of the museum (museum entry is paid, the square is not).",
+  "transport": "U6 Naturkundemuseum, 1 min walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register only (Land Berlin Naturdenkmal 1-75/B-1, designated 1993-03-02, protection reasons: Schönheit, landeskundliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Folded register twins within about 100 m: 1-75/B-1 (copper beech, east wing, this pin), 1-75/B-2 (copper beech, west wing, 52.529707,13.37912), 1-76/B (beech, east wing, 52.530056,13.379911), 1-77/B (west wing), 1-78/B (oak on the square). A visitor sees one forecourt ensemble; writer should present it as a compact group, not five trees. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/349194553. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
+  "story": "The square in front of Berlin's natural history museum holds five protected trees, and the two that give the group its name are copper beeches, one off each wing of the building. The museum charges for what is inside. The square, and everything growing on it, is free.\n\nBerlin's register lists them one by one. Naturdenkmal 1-75/B-1, designated on 2 March 1993, is the copper beech by the east wing, and it is where our pin stands. Its partner, 1-75/B-2, is by the west wing, about 70 metres across. A beech, 1-76/B, stands by the east wing too, another protected tree, 1-77/B, by the west, and an oak, 1-78/B, out on the square itself. The register gives the east-wing copper beech its place for beauty and for regional heritage.\n\nWe have mapped them as one stop rather than five, because that is how you will meet them: a single forecourt, all within about a hundred metres, a minute from the U-Bahn.\n\nCopper beeches are worth seeing through the year. Their leaves open purple in spring, darken through the summer and turn copper before they fall, so the pair looks different with every visit.\n\nNo source gives an age, girth or height for any of the five. If you have measured one, tell us which, and what it came to.",
+  "how_to_recognise": "You can recognise them by their dark purple leaves, one copper beech beside each wing of the Museum für Naturkunde. They stand on the forecourt at Invalidenstrasse 43; our pin marks the one by the east wing.",
+  "written": true
+ },
+ {
+  "id": "ber_055",
+  "name": "The Sessile Oak by the Carillon",
+  "species": "Sessile Oak (Quercus petraea)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Scheidemannstrasse at Grosse Querallee, near the Carillon, Tiergarten",
+   "latitude": 52.517454,
+   "longitude": 13.367421,
+   "neighbourhood": "Tiergarten"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte"
+  ],
+  "access": "Free; Grosser Tiergarten is a public park open at all hours.",
+  "transport": "S/U Hauptbahnhof, about 10 min walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register only (Land Berlin Naturdenkmal 1-86/B, designated 1993-03-02, protection reasons: Eigenart, Schönheit, landeskundliche Gründe, wissenschaftliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Register reasons: Eigenart, Schoenheit, landeskundliche Gruende. Sessile oak is the less common oak in Berlin parks. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://commons.wikimedia.org/wiki/File:Naturdenkmal_Trauben-Eiche_-_Winter-Eiche_Scheidemannstra%C3%9Fe,_Ecke_Gro%C3%9Fe_Querallee,_nahe_Carillon_2024-05-09_04.jpg. It proves something was photographed at the spot, not that it is this trunk; not individually checked. WRITER (2026-10-03): the four-reasons lead is counted from data/registers/berlin-naturdenkmale.json (638 rows: 408 cite one reason, 215 two, 13 three, 2 four; 3 rows cite wissenschaftliche Gruende).",
+  "story": "Berlin's natural monument register lists more than six hundred trees, and only two of them are protected for four reasons at once. This oak is one. When the city made it Naturdenkmal 1-86/B on 2 March 1993, it cited distinctiveness, beauty, regional heritage and scientific grounds. Most entries in the register cite a single reason; only three in the whole list mention science at all.\n\nIt is a sessile oak, the less common of the two oaks in Berlin's parks. The pedunculate oak is the one you meet everywhere. This one stands at the corner of Scheidemannstrasse and the Grosse Querallee, near the Carillon in the Tiergarten.\n\nThe register's point marks the tree itself, and a photograph on Wikimedia Commons from May 2024 is titled with this exact place, Scheidemannstrasse at the corner of the Grosse Querallee, near the Carillon, so the pin is a firm one.\n\nWhat the register does not say is what the scientific interest is. It records the reason and leaves the explanation out.\n\nThe Tiergarten is a free public park, open at all hours, about ten minutes on foot from the Hauptbahnhof, and the Tulip Tree of Luiseninsel is under a kilometre away if you want to keep walking.\n\nNo source we have found gives an age, a girth or a height. If you know any of those, or why scientists cared about this oak, tell us.",
+  "how_to_recognise": "You can recognise it as a sessile oak, its acorns sitting directly on the twig rather than on stalks. It stands at the corner of Scheidemannstrasse and the Grosse Querallee, near the Carillon in the Tiergarten.",
+  "written": true
  }
 ]

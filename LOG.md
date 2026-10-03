@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 (night run): Berlin 46 to 54
+
+Rung 4/US-UK-DE supply lane. prepare.py showed 24 written/verified trees waiting, but all but Berlin's fail the photo-or-pin rule (Houston x3, Fukuoka fuk_017, Takachiho x2, ber_041 have neither a photograph nor a confirmed pin), so I left them in data/research as leads and did not merge them. Verified 8 new Berlin Naturdenkmal trees with tree-level register pins (ber_048 to ber_055: Humboldt University ginkgo and chestnut, Bebelplatz plane, Viktoriapark mulberry, Pankow bald cypress, Kreuzpfuhl poplar, Natural History Museum copper beeches, Tiergarten carillon oak), wrote them with recognition lines, extended the German overlay, preflight 0 problems. 7-day visits: 2544 visits, 2725 views. iOS app CI is red (rung 2, not investigated: no Xcode here). No tool refusals worth reporting.
+
 ## 2026-10-03 (session, morning JST): people, Oslo, the focus, and two false alarms
 
 **People.** Giulia Torta (Orto botanico) said yes: named on /florence, our first editor; reply drafted as the first editor follow-up (drafts/reply-giulia-torta-florence.md). Ingar Sørensen granted his two Birkelunden photographs with a linked credit: both on osl_003 (lead and extra), the credit links to his site, reply drafted (drafts/reply-ingar-sorensen-oslo.md). Four correspondents' addresses were sitting in drafts/ambassador-mails.md and are scrubbed; the file is public.
