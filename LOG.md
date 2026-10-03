@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run: Reykjavik photographs, London opened from the Great Trees list
+
+- **Rung 1:** three reader photographs of Reykjavik trees looked at. The whitebeam (rey_001) and the larch (rey_002) are live as lead photographs with verdicts written; the City Hall maple (rey_003) is held (dark, crowd in front). Written verdicts were stubbed by hand because `judgement.py --scan` reads the queue AFTER publish has emptied it, so scan finds nothing: scan before publishing.
+- **Refill the shelf:** Munich verify pass (~185k tokens) found nothing shippable (felled chestnut, private beech, two Dachau trees with no life evidence or photo); logged as leads and blocked. Scouting: Bath has only TPO bulk data (blocked verdict); London's usable source is the curated Great Trees of London list (not a register). A London verify pass from it delivered four trees, three are live: Greenwich hickory, Battersea strawberry tree, Brockwell Oak (London now 26). lon_027 Dulwich Turkey Oak is written with an approved photo and waits in data/research/london-verified.json, held by preflight's 60-in-24h cap; merge it next window. More Great Trees leads sit in data/leads/london.json.
+- **Rung 2:** iOS app CI is red since 10-03; the Linux runner cannot read the xcresult, not investigated. No command refusals worth reporting.
+
 ## 2026-10-04 session: Discover gets longer, and quieter
 
 - **App Discover:** the subtitles under shelf titles are gone (Hidde: "maybe less is more"; AllTrails, Airbnb, Netflix and Spotify show a title and See all, nothing under it). New rows: Best in [your country] (only with a real location fix: famous trees first, then by age), the collections in season this month (October: autumn harvest and autumn colour), the tallest trees, the thickest trunks, and tree islands. Long but finite, never infinite scroll (CONVENTIONS.md 2026-10-04).
