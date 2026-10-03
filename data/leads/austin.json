@@ -14,7 +14,8 @@
     "https://www.sunsetvalley.gov/departments/public-works-environmental-services/environmental-services/urban-forestry (live page 403s; readable via http://web.archive.org/web/20260309150009if_/ + the same path, snapshot 2026-03-09)"
    ],
    "girth_cm": 315,
-   "owner": "City of Sunset Valley"
+   "owner": "City of Sunset Valley",
+   "pin_attempt": "2026-10-03: RESOLVED, delivered as aus_010 in data/research/austin-verified.json. Overpass: no building within 40 m, point inside Sunset Valley Nature Area / South Hills Conservation Area (operator City of Sunset Valley), foot-designated footway 40 m away. iNat obs 43004147 (7 m, 4 m accuracy) and 4224912 (14 m) agree with the registry point."
   },
   {
    "name": "Carya illinoinensis, Texas Big Tree Registry TreeID 10442 (largest pecan in Travis County, Pflugerville)",
@@ -45,7 +46,8 @@
     "https://www.austinchronicle.com/arts/kevin-curtin-hung-out-with-all-of-austins-tree-of-the-year-winners-12004783/",
     "https://austin.com/10-majestic-austin-trees-that-will-inspire-you/"
    ],
-   "status": "lead"
+   "status": "lead",
+   "pin_attempt": "2026-10-03: unchanged, no source pins a single trunk; no new evidence found."
   },
   {
    "name": "Fraxinus texensis (Texas Big Tree Registry TreeID 2332)",
@@ -56,7 +58,8 @@
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.6 km from the centre of Austin. Condition per the registry: 2. Measured July 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
    "girth_cm": 218,
-   "needs_verification": true
+   "needs_verification": true,
+   "pin_attempt": "2026-10-03: registry row has Display=0 (registry withholds the location itself): hard rule 10, do not ship."
   },
   {
    "name": "Kyle Auction Oak",

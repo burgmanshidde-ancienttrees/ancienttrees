@@ -1071,6 +1071,32 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
                   f'--deepen "reader submission row N"')
             return 1
 
+    # A pin pass cannot place a tree nobody has placed (2026-10-03). Two passes
+    # on six proven US cities spent ~410k tokens for ONE tree, because their
+    # leads carried no coordinate of any kind: City Park's oaks, Chicago's
+    # register behind a 403, LA's champions with only close-up photographs.
+    # So the share of open leads holding a coordinate is printed before a
+    # verify claim, and under a quarter it says so. A note, not a refusal:
+    # from-zero research on a city is a different job and may still be right.
+    if kind == "verify":
+        lead_file = os.path.join(ROOT, "data", "leads",
+                                 re.sub(r"[^a-z0-9]+", "-", target.lower()).strip("-") + ".json")
+        try:
+            leads = json.load(open(lead_file, encoding="utf-8")).get("leads") or []
+        except (OSError, ValueError, AttributeError):
+            leads = []
+        if len(leads) >= 4:
+            def _has_xy(l):
+                loc = l.get("location") or {}
+                return bool(l.get("lat") or l.get("latitude") or loc.get("latitude"))
+            n_xy = sum(1 for l in leads if isinstance(l, dict) and _has_xy(l))
+            print(f"NOTE: {n_xy} of {len(leads)} open leads here carry a coordinate.")
+            if n_xy * 4 < len(leads):
+                print("  Under a quarter. A pass working these leads will mostly fail on the pin:")
+                print("  on 2026-10-03 two such passes cost ~410k tokens for one tree. Find a")
+                print("  coordinate source first (a register with tree-level points, iNaturalist")
+                print("  with a CC photo and GPS), or pick a city whose leads are placed.")
+
     existing = claims_for(target, live)
     if existing:
         c = existing[0]
