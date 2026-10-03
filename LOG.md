@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (fourteenth attempt): nothing to ship, pace cap still shut
+
+Pulled; only claim is munich (muc_055 to 061 verified, held for the 24h pace cap, clears after about 12:54 UTC tomorrow). leads.py --ready is 0; every staged city's output would hit the same cap. Claim kept. Next window after the cap: merge muc_055 to 060, the Nuremberg two, add muc ids to the de overlay.
+
 ## 2026-10-03 night run (thirteenth attempt, 20:14 UTC): nothing to ship, pace cap still shut
 
 visitors.py: 2623 visits in 7 days. prepare.py: ready to write 0, Munich muc_055 to 060 written and held behind the 24h pace guard (clears about 12:54 UTC on 10-04), Nuremberg two and Portland one still need stories. Dispatching more verify or write work would only add trees the guard refuses to merge, and the guard is Hidde's. Next window after the cap clears: merge muc_055 to 060 and the Nuremberg two. No tool call refused.
