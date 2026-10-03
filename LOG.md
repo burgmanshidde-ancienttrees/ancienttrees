@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (fifth attempt): nothing to ship, pace window still shut
+
+Pulled; claims are new-york (a session's) and the earlier attempts' munich, nuremberg, portland, left standing because their verified trees (muc_055, muc_057, the Nuremberg two) still wait on the 24h pace cap. leads.py --ready is 0. Depth lane checked: recognise.py --stuck prints nothing, Munich has no recognition gaps, and the photo shortlist's candidates are wrong subjects (egret, palm leaves, a street view), so none were approved. No new work dispatched: a verify pass would only add trees the cap refuses to merge. Next window after the cap clears: merge the held Munich and Nuremberg trees (add muc ids to the German overlay), then Spokane or Leipzig verify.
+
 ## 2026-10-03 night run (fourth attempt): fixed the red deploy
 
 Deploy and smoke test had been red since the Travilah Oak (wdc_016) went in: it became Washington's oldest tree, and the build refuses a question page whose answer does not name it. Rewrote the washington-dc question_answer to name the Travilah Oak first; the build now passes the old failure point (could not run astro locally, the allowlist refuses it). Nothing else shipped: leads.py --ready is 0, and the verified Munich, Nuremberg and Portland trees wait on the 24h pace window, so their claims stay in place rather than being force-released.
