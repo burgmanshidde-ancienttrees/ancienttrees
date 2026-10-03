@@ -148,5 +148,112 @@
     "story": "Dresden protected this elm in 2015 for surviving something most of its kind have not. Dutch elm disease, spread by fungi that arrived from Asia, has killed elms across Europe, and when the city went looking in the early 2010s for its most valuable trees, 39 of them at 29 sites, it picked this European white elm as an exceptional specimen that was still healthy.\n\nIt is not a park tree. It stands on Konigsbrucker Strasse in the Aussere Neustadt, on the pavement side in front of numbers 49 and 51, and it sets the look of the street: about 30 metres tall, with a crown some 20 metres across and a trunk 3.57 metres round. Trams run past it along the Konigsbrucker Strasse corridor.\n\nIt was not the city's first protected elm. A white elm in Altubigau and the elms on Sachsenplatz had been natural monuments since 1999, so this one joined a short list rather than starting it.\n\nTwo things we do not know. Nobody has documented when it was planted, so this page gives no age; if you know, tell us. And the newest photographs on record are from 2019, so if you walk past and it is still standing over the pavement, that is worth a message too.",
     "how_to_recognise": "You can recognise it as the tall elm, about 30 metres, on the pavement side of Konigsbrucker Strasse in front of numbers 49 and 51. Its trunk measures 3.57 metres round.",
     "written": true
+  },
+  {
+    "id": "dre_011",
+    "name": "The Sängereiche on the Elbe Meadows",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 160 years",
+    "age_min": 155,
+    "age_max": 165,
+    "girth_cm": 426,
+    "height_m": 26,
+    "location": {
+      "address": "Elbwiesen (Waldschlösschenwiese), beside the Waldschlösschenbrücke and the Körnerweg / Elbe cycle path, Radeberger Vorstadt",
+      "latitude": 51.0661121,
+      "longitude": 13.7773475,
+      "neighbourhood": "Radeberger Vorstadt"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/S%C3%A4ngereiche_auf_den_Elbwiesen",
+      "https://www.wikidata.org/wiki/Q118368457",
+      "https://www.openstreetmap.org/node/5620261952",
+      "https://commons.wikimedia.org/wiki/Category:S%C3%A4ngereiche_auf_den_Elbwiesen"
+    ],
+    "access": "Free. Stands on the open public Elbe meadows beside the asphalted Körnerweg / Elbe cycle path; no entry, open at all times.",
+    "transport": "Not timetable-verified. Neustadt bank of the Elbe at the Waldschlösschenbrücke; the Bautzner Strasse stops on the plateau above are roughly 10 to 15 minutes on foot down to the meadows (check stops before quoting).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidate": {
+      "file": "File:Sängereiche Elbwiesen Sommer (4).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:S%C3%A4ngereiche_Elbwiesen_Sommer_(4).jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "DynaMoToR, 2017-08-29",
+      "note": "Description names the tree and its position beside the Waldschlösschenbrücke; also on the same tree: File:Dresden, Waldschlößchenbrücke, Elberadweg, 17.6.2.40-080367.jpg (CC BY-SA 4.0, Albrecht Voss, 3 Aug 2022, geotag 51.06625,13.77740, 14 m from the pin). Not viewed by me; the viewing pass must look at the pixels."
+    },
+    "how_to_recognise": "You can recognise it as the oak standing on its own on the widest part of the meadow, its trunk over four metres round. It stands about 25 metres east of the Waldschlösschenbrücke railing, just north of the cycle path.",
+    "verify_notes": "Pin: OSM node 5620261952 (natural=tree, name Sängereiche, wikidata-linked) at 51.0661121,13.7773475, Wikidata P625 51.066125,13.777365 (about 2 m apart; the Wikidata point derives from the OSM node, so they are not fully independent). A geotagged Commons photo of this tree (Albrecht Voss 2022) lies 14 m away, and the dewiki article places it about 25 m from the bridge railing on the meadow at its widest point. Several unnamed OSM trees stand 20 to 50 m away, which is why the named node and photo description carry the pin. Facts (de.wikipedia, citing Ostdeutsches Baumarchiv): memorial oak for the first German Sängerbundesfest, July 1865 (Dresden); planted 13 Nov 1865 where the festival hall had stood, by Heinrich Hartwig with two gardeners. 1994: height 26 m, crown 20 m, girth 3.80 m; 2018 girth 4.26 m (girth_cm 426 is the 2018 figure; height_m 26 is the 1994 figure). The 1925 festival booklet says the November 1865 tree was the original gift (Leipzig-area choirs carried a young oak in a tub in the procession) and that a replanting was later needed after vandalism; Rainer Pfannkuchen (ex head of Dresden's nature-protection authority, Elbhang-Kurier April 2021) thinks the original died of drought and the 1865 planting was already a replacement. So the age basis is the documented November 1865 planting, but whether today's trunk is that planting or a later replacement is disputed in the sources: say so, keep the age as an estimate. Not a Naturdenkmal (no ND number found). Alive: photographed 2022 (Commons geotag), girth measured 2018, discussed 2021. lifecheck.py returned OLD (2010) only because it sees bridge-construction photos; the 2022 Commons file is the better evidence. The Waldschlösschenbrücke opened 2013 and the tree stands about 25 m from it. No official register: dewiki plus OSM plus Commons, flagged.",
+    "story": "This oak was planted for a song festival, and the sources still argue over whether it is the oak they planted. In July 1865 Dresden hosted the first German Sängerbundesfest, and a festival hall went up on this stretch of the Elbe meadows. On 13 November that year, according to the Ostdeutsches Baumarchiv, Heinrich Hartwig and two gardeners planted a memorial oak where the hall had stood.\n\nThat is where the agreement ends. A festival booklet from 1925 says the November tree was the singers' own gift, a young oak that choirs from around Leipzig had carried through the procession in a tub, and that it later had to be replaced after vandals got to it. Rainer Pfannkuchen, once head of Dresden's nature-protection authority, reads it the other way: the festival oak died of drought, and the November 1865 planting was already the replacement. So the trunk in front of you is either the 1865 tree, which would make it about 160 years old, or a later stand-in, and nobody has settled which.\n\nWhichever it is, the open ground has suited it. In 1994 it stood 26 metres tall under a crown 20 metres wide, and its girth grew from 3.80 to 4.26 metres between 1994 and 2018. Since 2013 it has had a neighbour it never asked for: the Waldschlösschenbrücke now crosses the river about 25 metres away, and the Elbe cycle path runs past its feet.",
+    "written": true
+  },
+  {
+    "id": "dre_012",
+    "name": "The Luther Oak of the Dresdner Heide",
+    "species": "Oak (Quercus sp.)",
+    "age_estimate": "about 109 years",
+    "age_min": 105,
+    "age_max": 109,
+    "location": {
+      "address": "Prinzeß-Margarethen-Park, Dresdner Heide, south of Radeberger Landstrasse between forest rides 17 and 18 (Doppel-E to the north, Alte Acht to the south), Forstabteilung 68, Revier Bühlau",
+      "latitude": 51.0747442,
+      "longitude": 13.8067087,
+      "neighbourhood": "Dresdner Heide"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Luthereiche_in_der_Dresdner_Heide",
+      "https://www.wikidata.org/wiki/Q106253692",
+      "https://www.openstreetmap.org/node/260483097",
+      "https://commons.wikimedia.org/wiki/Category:Luthereiche_Dresdner_Heide"
+    ],
+    "access": "Free. Stands in the public forest of the Dresdner Heide (Sachsenforst) beside a forest ride, with a memorial stone, two benches and a table; open at all times.",
+    "transport": "Not verified. About 850 m east of the Fischhaus in the Albertpark and south of Radeberger Landstrasse; likely over 30 minutes from the centre by bus and foot, check timetables before quoting a stop.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidate": {
+      "file": "File:Luthereiche Dresdner Heide (1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Luthereiche_Dresdner_Heide_(1).jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "DynaMoToR, 2017-02-22",
+      "note": "Shows the oak with memorial stone and benches (Feb 2017, leafless). Also File:Luthereiche - panoramio.jpg (CC BY-SA 3.0, geotag 51.074667,13.806833, 24 March 2011, 12 m from the pin; check the exact photographer credit on the file page). Not viewed by me; the viewing pass must look at the pixels."
+    },
+    "how_to_recognise": "You can recognise it by the memorial stone with a Luther inscription at its foot, with two benches and a table beside it. It stands on a forest ride in the Prinzeß-Margarethen-Park part of the Heide.",
+    "verify_notes": "Pin: OSM node 260483097 (natural=tree, name Luthereiche, genus Quercus, tourism=attraction, wikidata Q106253692) at 51.0747442,13.8067087; Wikidata P625 51.0745,13.80665 (about 30 m from the node, rounded to 4 decimals, so the OSM node is used). A geotagged 2011 Commons photo captioned as this tree lies 12 m from the node, and the memorial stone stands beside the tree. Facts (dewiki, citing local sources): planted Sunday 28 Oct 1917 for the 400th anniversary of the Reformation (Luther's 95 Theses); Saxon Kulturdenkmal (ID 09217019) together with the memorial stone. Soil is dry sand over Lusatian granite, so the oak did poorly: called a 'mickriges Exemplar' (puny specimen) in 2017 coverage, so it is NOT a big tree; its worth is the memorial and the setting. Benches renewed and a table added in the 2017 Luther year; one bench carries a Luther quote. Species known only as oak; species not established. Age is the documented 1917 planting of this tree (about 109 years in 2026). No girth or height found. Alive: photographed Feb 2017 and described as living in 2017 coverage; lifecheck not run. One source cluster (dewiki plus OSM plus Commons): flagged. Marginal on worth the walk: young and slight trunk, a lead-grade tree if the photo viewing pass finds it dull.",
+    "story": "This oak was planted to honour four hundred years of the Reformation, and it has spent a century failing to look the part. On Sunday 28 October 1917, with Germany deep in the First World War, it went into the ground in the Dresdner Heide to mark the anniversary of Luther's 95 Theses. A memorial stone carrying a Luther inscription was set beside it, and the two together are now a protected Saxon cultural monument, number 09217019.\n\nThe ground was against it from the start. This corner of the forest is dry sand over Lusatian granite, and the oak never thrived: local coverage in 2017 called it a puny specimen, which is fair. Nobody comes here for the size of the trunk. What makes it worth the detour is the setting, beside a forest ride in the Prinzeß-Margarethen-Park section of the forest, and the small act of remembrance that keeps being renewed around it. For the Luther year of 2017 the benches were replaced and a table added, and one of the benches now carries a quotation from Luther himself.\n\nIt makes a good stop on a walk through the Heide rather than a destination of its own. Two things nobody has recorded: which species of oak it is, and how big it has managed to grow. If you know either, tell us.",
+    "written": true
+  },
+  {
+    "id": "dre_013",
+    "name": "The Bismarck Oak of the Waldpark Blasewitz",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 130 years",
+    "age_min": 125,
+    "age_max": 131,
+    "location": {
+      "address": "Waldpark Blasewitz, Lothringer Weg, west of the tennis courts",
+      "latitude": 51.055298,
+      "longitude": 13.7944222,
+      "neighbourhood": "Blasewitz"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Gedenkb%C3%A4ume_in_Dresden",
+      "https://www.wikidata.org/wiki/Q118429034",
+      "https://www.openstreetmap.org/node/8551492274",
+      "https://commons.wikimedia.org/wiki/Category:Bismarckeiche_Blasewitz"
+    ],
+    "access": "Free. In the Waldpark Blasewitz, a public park; open at all times.",
+    "transport": "Not verified. Blasewitz, in the Waldpark by the Waldparkrestaurant; check tram stops before quoting a stop.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidate": {
+      "file": "File:Bismarckeiche Blasewitz 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bismarckeiche_Blasewitz_02.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "DynaMoToR, 2017-10-21",
+      "note": "Description 'Bismarckeiche im Waldpark Blasewitz, Dresden'; sibling File:Bismarckeiche Blasewitz 01.jpg same photographer and date. No geotag on the files. Not viewed by me; the viewing pass must look at the pixels and check the photo shows the right oak, since the tree is part of a group."
+    },
+    "how_to_recognise": "You can recognise it by the sandstone block beside it, bearing a bronze plaque to the park's designer H. S. Neumann. It stands in a group of trees on the Lothringer Weg, west of the tennis courts.",
+    "verify_notes": "Register coordinate: de.wikipedia Liste der Gedenkbäume in Dresden gives 51/3/19 N, 13/47/40.5 E (51.05528, 13.79458), identical to Wikidata. OSM node 8551492274 (named Bismarckeiche, Quercus robur, planted=1895) lies at 51.055298,13.7944222, about 11 m west of that point. Two sources agree within about 11 m, but the list says the tree is 'Teil einer Baumgruppe' and the Commons photos have no geotag, so the pin is APPROXIMATE, not confirmed; the photograph is what meets the photo-or-pin requirement. I used the OSM point as the pin. Facts: planted 1895 for Bismarck's 80th birthday; the stone beside it was originally dedicated to Bismarck, its bronze portrait medallion lost shortly after WWII; the existing sandstone block was rededicated in 1998 with a bronze plaque 'Zur Erinnerung an den Gestalter der Waldparkanlage Hofgärtner H. S. Neumann 1829-1880'; no information sign. Age is the documented 1895 planting per the list (about 131 years); no girth or height found. Alive: Commons photos 2017 and the OSM node; lifecheck not run. One source cluster: flagged. Modest as a tree; the draw is the Waldpark and the stone.",
+    "story": "The stone beside this oak has changed its mind about who it honours. The tree was planted in 1895 for Otto von Bismarck's 80th birthday, and the sandstone block next to it was dedicated to him too, with his portrait in a bronze medallion. The medallion went missing shortly after the Second World War. In 1998 the block was given a new bronze plaque, this time remembering Hofgärtner H. S. Neumann, 1829 to 1880, the court gardener who designed the Waldpark itself.\n\nSo the oak has outlasted the man it was planted for and the monument that explained it. At about 130 years old it is no giant, and nobody has published its girth or height. What it offers is the park its stone now commemorates, and a small lesson in how a memorial gets rewritten when the century moves on.\n\nBe warned before you go: there is no information sign, and the Bismarck Oak stands as part of a group of trees. Our pin is approximate, close to the spot but not on the trunk, so you will have to pick the right oak yourself. The stone is the giveaway. Find the sandstone block with the Neumann plaque on the Lothringer Weg, west of the tennis courts, and the oak is the one beside it.",
+    "written": true
   }
 ]
