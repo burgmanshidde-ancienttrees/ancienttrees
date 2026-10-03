@@ -13,6 +13,18 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-03
+
+Web half: read berlin.html (62 trees in title, meta and body agree), dresden.html (13), munich.html, florence.html (ambassador byline renders, no leak). No em dashes or banned words in the four pages. Nothing found on the web half.
+
+App half (search, signin-email, signin, species-pick, species, tree-nophoto):
+
+- NOTE APP: `search.png` ("lis") lists two Species rows that read as one: "Elm" with the subtitle "the city register lists American Elm, Ulmus amer..." (cut off, and it names no count) and "Elm, listed as Lombarts' Elm". A person cannot tell what the first one is or why there are two.
+- NOTE APP: `species-pick.png` ("What kind of tree is it?") shows a count beside every species except the ticked Pedunculate Oak, so the list under "Growing near you first" looks uneven. Probably the tick replacing the number; worth one look.
+- Sign-in, the species page (Aleppo Pine, 20 on the map) and the no-photograph tree page (honest "No photograph yet" placeholder) read clearly and agree with their titles.
+
+---
+
 ## 2026-10-02
 
 Web half: read copenhagen.html (49 trees, title, meta and body counts agree; no em dashes or banned words), the Paris tree pages and the city redirect stubs (by design). Ambassador and reader-photograph work shows no leak on the sampled pages. Nothing found on the web half.
