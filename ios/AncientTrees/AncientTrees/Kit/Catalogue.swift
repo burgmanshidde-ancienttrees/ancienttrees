@@ -44,6 +44,12 @@ public struct Catalogue: Sendable {
     /// Every common name we carry, once each, sorted. The search field asked
     /// for this by building a Set and sorting it, per keystroke.
     public let speciesNames: [String]
+    /// Common name to scientific name, so a search can answer to Quercus robur
+    /// as well as to Pedunculate Oak (2026-10-03, a reader's request). The
+    /// facet's own field first, which is the website's answer; else the
+    /// parenthetical the trees themselves carry, which is the same words from
+    /// the same file one step earlier.
+    private let scientificByCommon: [String: String]
 
     public init(trees: [Tree], walks: [Walk], species: [Species],
                 collections: [TreeCollection] = [],
@@ -64,7 +70,17 @@ public struct Catalogue: Sendable {
         // name is a tree whose species nobody has established yet, which is a
         // real state on this site (the publish-and-ask rule) and not a species.
         self.speciesNames = bySpecies.keys.filter { !$0.isEmpty }.sorted()
+        var sci: [String: String] = [:]
+        for (common, ts) in bySpecies where !common.isEmpty {
+            if let s = facets.scientific(species: common) ?? ts.lazy.compactMap(\.scientificName).first {
+                sci[common] = s
+            }
+        }
+        self.scientificByCommon = sci
     }
+
+    /// The scientific name behind a common name, where we hold one.
+    public func scientificName(of commonName: String) -> String? { scientificByCommon[commonName] }
 
     public func tree(_ id: String) -> Tree? { byId[id] }
 

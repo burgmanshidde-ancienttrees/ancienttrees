@@ -40,6 +40,14 @@ struct SpeciesView: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(commonName).font(.brand(20, .heavy, relativeTo: .title3))
                             .foregroundStyle(Brand.ink)
+                        // The scientific name under the common one, in
+                        // italics: iNaturalist's taxon page, and the
+                        // website's species page since 2026-10-03.
+                        if let sci = catalogue.scientificName(of: commonName) {
+                            Text(sci).italic()
+                                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                                .accessibilityIdentifier("species-scientific")
+                        }
                         Text("\(trees.count) on the map, photographed first")
                             .font(.footnote).foregroundStyle(Brand.inkSoft)
                     }

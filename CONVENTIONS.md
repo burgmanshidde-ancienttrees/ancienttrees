@@ -2810,3 +2810,40 @@ search open the sign-in sheet; a write the account refuses puts the button
 back. **Where we still differ, and it is a gap rather than a choice:** a row
 does not open the person's profile, because another person's trees are their
 own and not public here, so there is nothing to show behind the name yet.
+
+---
+
+## Searching a species by its scientific name (2026-10-03, a reader's request)
+
+A feature request: "also service Latin names". Hidde: "which makes a lot of
+sense". Our search answered to common names only, so somebody who knows a tree
+as Quercus robur found nothing, and the species page never printed the name.
+
+**iNaturalist** (taxon pages and the v1 `taxa/autocomplete` endpoint, read
+through search summaries and the forum because the domain is blocked by this
+sandbox's egress proxy; forum.inaturalist.org "Common Name and Scientific
+Name", pyinaturalist's documentation of `matched_term`): the autocomplete
+matches a taxon on its scientific name AND its common names, and the response
+carries `matched_term`, the name that actually matched, so a row can show why
+it answered. The taxon page puts the common name on top and the scientific
+name in italics beneath it; a setting can swap the order, and the default is
+common first. Common names of plants are lower case there; ours are title
+case by hard rule 9 and that is a style, not an interaction.
+
+**Pl@ntNet** (App Store listing, 3.23 release notes): the species search is
+by scientific or common name with fuzzy matching, and a result shows both.
+**PictureThis** gives the botanical name beside the common name on every
+result; whether its text search takes the Latin could not be confirmed from
+outside, so it is not leaned on.
+
+**What ours does now, on both surfaces in the same change:** a species row in
+search answers to the start of the common name or the start of any word in
+the scientific name ("quercus" and "robur" both find Pedunculate Oak); the row
+prints the Latin in italics under the common name, which is the matched-term
+idea without a field for it; the species page prints the Latin in italics
+under the H1 and names it in the first sentence; the species index card, the
+app's species filter and the chooser for naming your own tree all take the
+Latin too. The name travels as data (`l` on the search index row,
+`scientific` on the browse.json facet, which had been sent since 2026-08-19
+and never decoded); `check_species_answer_to_their_latin_name()` in
+scripts/qa.py guards it.

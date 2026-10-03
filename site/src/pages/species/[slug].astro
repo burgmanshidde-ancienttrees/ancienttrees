@@ -50,6 +50,11 @@ interface Props {
 const { intro, members, published, allCities } = Astro.props as Props;
 
 const common = intro.data.common_name;
+// The scientific name, shown in italics under the H1 and named in the first
+// sentence (2026-10-03, a reader's request to service Latin names). The
+// convention is iNaturalist's taxon page: common name first, scientific name
+// in italics beneath it. The H1 itself stays the common name (Contract F).
+const scientific = intro.data.scientific_name;
 const canonical = `${BASE_URL}/species/${intro.data.slug}`;
 const title = fitTitle([
   intro.data.title ?? "",
@@ -107,8 +112,9 @@ const speciesOgImage = speciesFaceUrl
   <main class="content-page">
     <Breadcrumbs items={crumbItems} />
     <h1>{common}</h1>
+    <p class="sci-name"><i lang="la">{scientific}</i></p>
     <p class="answer-first">
-      {firstSentence} This page maps every {common.toLowerCase()} on the site, {n} so far across {byCity.size} cit{byCity.size === 1 ? "y" : "ies"}.
+      {firstSentence} This page maps every {common.toLowerCase()} (<i lang="la">{scientific}</i>) on the site, {n} so far across {byCity.size} cit{byCity.size === 1 ? "y" : "ies"}.
     </p>
     {introRest && <div class="prose-block"><p>{introRest}</p></div>}
     {sections.map(({ city, cslug, rows }) => (

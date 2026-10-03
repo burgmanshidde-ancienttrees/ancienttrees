@@ -1373,6 +1373,46 @@ def check_a_thumbnail_is_actually_a_thumbnail():
     return out
 
 
+def check_species_answer_to_their_latin_name():
+    """A species answers to its scientific name on every surface, 2026-10-03.
+
+    A reader asked for Latin names, and Hidde: "which makes a lot of sense".
+    Somebody who knows a tree as Quercus robur should find the Pedunculate Oak
+    page by typing either, which is what iNaturalist's autocomplete does
+    (CONVENTIONS.md, "Searching a species by its scientific name"). The name is
+    an ANSWER the species intro already holds, so it travels as data: `l` on
+    the search index row, `scientific` on the browse.json facet, and an
+    italic line under the species page's H1. The app reads the feed field and
+    the website reads the index; neither parses a parenthetical.
+
+    This guards the three places it travels through, because the facet field
+    had been in browse.json for six weeks with nothing decoding it, which is
+    exactly how a feature stops at one surface without anybody noticing."""
+    out = []
+    index = DIST / "search-index.json"
+    if index.exists():
+        rows = json.loads(index.read_text(encoding="utf-8")).get("s", [])
+        missing = [r.get("n") for r in rows if not (r.get("l") or "").strip()]
+        if missing:
+            out.append("search-index.json: %d species row(s) carry no scientific name (l): %s"
+                       % (len(missing), ", ".join(str(m) for m in missing[:5])))
+    browse = DIST / "api" / "browse.json"
+    if browse.exists():
+        facets = json.loads(browse.read_text(encoding="utf-8")).get("species", [])
+        missing = [f.get("name") for f in facets if not (f.get("scientific") or "").strip()]
+        if missing:
+            out.append("browse.json: %d species facet(s) carry no scientific name: %s"
+                       % (len(missing), ", ".join(str(m) for m in missing[:5])))
+    species_dir = DIST / "species"
+    if species_dir.exists():
+        for page in sorted(species_dir.glob("*.html")):
+            if page.stem == "index":
+                continue  # the /species index, not a species
+            if '<p class="sci-name"><i lang="la">' not in page.read_text(encoding="utf-8", errors="replace"):
+                out.append("/species/%s: no scientific name under the H1" % page.stem)
+    return out
+
+
 def check_faces_travel_to_the_app():
     """The thirteenth ratchet check, from 2026-08-25.
 
@@ -2673,6 +2713,7 @@ def main():
     failures += check_tree_photo_dimensions(pages)
     failures += check_species_face_is_chosen()
     failures += check_faces_travel_to_the_app()
+    failures += check_species_answer_to_their_latin_name()
     failures += check_a_thumbnail_is_actually_a_thumbnail()
     failures += check_every_feed_is_in_the_version()
     failures += check_park_key_is_one_function()

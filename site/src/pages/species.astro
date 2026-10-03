@@ -44,6 +44,7 @@ const speciesCards = qualifying.map(([common, members]) => {
   return {
     slug: intro.data.slug,
     common,
+    scientific: intro.data.scientific_name,
     group: speciesGroup(intro.data.scientific_name),
     count: members.length,
     cities: cities.size,
@@ -78,7 +79,7 @@ const graph = [
   {sections.map((s) => (
     <section class="species-cluster">
       <h2>{s.g}</h2>
-      <div class="cindex-grid" set:html={s.cards.map((c) => browseCard(`/species/${c.slug}`, c.common, `${c.count} trees &middot; ${c.cities} ${c.cities === 1 ? "city" : "cities"}`, c.face)).join("")} />
+      <div class="cindex-grid" set:html={s.cards.map((c) => browseCard(`/species/${c.slug}`, c.common, `<i lang="la">${c.scientific}</i> &middot; ${c.count} trees &middot; ${c.cities} ${c.cities === 1 ? "city" : "cities"}`, c.face)).join("")} />
     </section>
   ))}
   <p class="suggest">Or explore by city: {published.map((p, i) => (

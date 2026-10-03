@@ -49,7 +49,13 @@ struct SpeciesPicker: View {
     private var rows: [(name: String, count: Int)] {
         let q = query.trimmingCharacters(in: .whitespaces).lowercased()
         guard !q.isEmpty else { return index }
-        return index.filter { $0.name.lowercased().contains(q) }
+        // The scientific name answers too (2026-10-03), so somebody who knows
+        // the tree as Taxus baccata filters the map without knowing we call
+        // it European Yew.
+        return index.filter {
+            $0.name.lowercased().contains(q)
+                || (catalogue.scientificName(of: $0.name)?.lowercased().contains(q) ?? false)
+        }
     }
 
     var body: some View {

@@ -72,7 +72,8 @@ struct IndexView: View {
     private var species: some View {
         let all = catalogue.speciesWithTrees
             .map { (name: $0.key, count: $0.value.count) }
-            .filter { matches($0.name) }
+            // The Latin answers too (2026-10-03): Quercus finds the oaks.
+            .filter { matches($0.name) || matches(catalogue.scientificName(of: $0.name) ?? "") }
             .sorted { $0.count > $1.count }
         return ForEach(all, id: \.name) { sp in
             NavigationLink(value: Route.species(sp.name)) {

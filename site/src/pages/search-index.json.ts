@@ -70,8 +70,14 @@ export async function GET() {
     ([common, members]) => members.length >= SPECIES_MIN_TREES && introBySlug.has(common),
   );
   qualifying.sort((a, b) => b[1].length - a[1].length);
+  // `l` is the scientific name (2026-10-03, a reader's request: "also service
+  // Latin names"). Somebody who knows a tree as Quercus robur should find the
+  // Pedunculate Oak page by typing either, which is what iNaturalist's
+  // autocomplete does. The name is an ANSWER the intro already holds, so it
+  // travels on the row and the widget never parses a parenthetical.
   const s = qualifying.map(([common, members]) => ({
     n: common,
+    l: introBySlug.get(common)!.data.scientific_name,
     count: members.length,
     u: `species/${introBySlug.get(common)!.data.slug}`,
   }));
