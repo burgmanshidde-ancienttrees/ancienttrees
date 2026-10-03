@@ -2,25 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-15T20:50:16+00:00",
-   "date": "2026-08-15",
-   "run_id": "31907765863",
-   "minutes": 14.4,
-   "turns": 141,
-   "denials": null,
-   "ended": "success",
-   "tokens": 21907358,
-   "claims_held": [
-    "brisbane",
-    "brussels",
-    "barcelona"
-   ],
-   "commits": 8,
-   "cities_touched": 2,
-   "trees": 7,
-   "logged": true
-  },
-  {
    "started": "2026-08-15T22:49:28+00:00",
    "date": "2026-08-15",
    "run_id": "31913128188",
@@ -20518,6 +20499,36 @@
     }
    ],
    "trees": 17,
+   "logged": true
+  },
+  {
+   "started": "2026-10-03T11:23:33+00:00",
+   "date": "2026-10-03",
+   "run_id": "37119470750",
+   "minutes": 19.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 77,
+   "denials": 9,
+   "denials_source": "permission_denials: Bash(curl ; wc ; head), Bash(for ; do | python3 ; import ...), Bash(pdftotext ; wc), Bash(pdftotext), Bash(python3 ; python3 ; head ; python3 ...), Bash(python3 ; wc), Bash(subshell grep | Bild.ID | ID | Coordinate.NS ...)",
+   "ended": "success",
+   "tokens": 691224,
+   "claims_held": [
+    "leipzig"
+   ],
+   "commits": 18,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "portland",
+     "trees": 8
+    },
+    {
+     "city": "nuremberg",
+     "trees": 2
+    }
+   ],
+   "trees": 10,
    "logged": true
   }
  ],
