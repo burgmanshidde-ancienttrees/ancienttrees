@@ -2751,6 +2751,32 @@ Hidde asked whether an action like "Add a tree" should carry at least one line o
 
 **A confirmation that needs no answer is Apple's grey HUD.** Music's "Added to Library" and Photos' "Saved": a rounded material square in the middle, a checkmark over one or two words, gone in about a second and a half, nothing to tap. Used for "Tree saved" (Kit/DoneHUD.swift). Anything offering Undo is a Google Maps snackbar at the bottom instead.
 
+## Crediting the person behind a list: a byline, never a sentence (2026-10-03)
+
+**The interaction: a public page names the person who looks after it.** Looked
+up because the first ambassador line read "Giulia Torta is the ambassador for
+Florence and helps keep this list right" in a moss pill, and Hidde asked: "is
+this really how others do it - feels a bit unprofessional or something?"
+
+**Atlas Obscura** (atlasobscura.com/places/major-oak, read in the browser
+2026-10-03): under the title, a small-caps label and a name, "ADDED BY Eric
+Grundhauser"; at the foot, a "Community Contributors" block with avatars,
+"ADDED BY" and "EDITED BY Martin, differentscheme". No sentence anywhere says
+what those people do.
+
+**komoot** (a Collection page, fetched 2026-10-03): "Road Cycling Collection by
+komoot". A by-line beside the title.
+
+**What we do:** a seal, a small-caps label and the name, under the city intro:
+"AMBASSADOR Giulia Torta". The label is `ambassadorLabel` in UIStrings, and it
+is a by-construction ("Lista curata da", "Betreut von", "Liste suivie par")
+in the languages where the noun would be gendered, so one string serves any
+name. A sentence explaining the role is our process told to the reader, which
+no reference does. The app already follows this shape (seal and place beside
+the name in People and on My trees), so this change is the website's alone.
+
+---
+
 ## Recognising a contributor: ambassador, Pioneer, Local Guide (2026-10-02)
 
 Hidde, the day a stranger put nine photographs on two Paris pages within
