@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (seventh attempt): nothing to ship, pace cap still shut
+
+Pulled; only claim is munich (stories written, six trees held for the 24h pace cap and the German overlay). leads.py --ready is 0, preflight 0 problems. A new verify pass would only add trees the cap refuses to merge, so none was dispatched. Next window after the cap clears: merge muc_055 to 060 and the Nuremberg two, add the muc ids to the de overlay.
+
 ## 2026-10-03 night run (sixth attempt): Munich stories written, merge still blocked by the pace cap
 
 Rung 4 (staged, where visitors are). Dispatched a write pass on Munich: stories for muc_056, 058, 059, 060 are now in data/research/munich-verified.json (muc_055 and 057 were already written). Merge refused: 60 new trees already live in 24h, so 66 would cross the cap, and the de/munich overlay lacks muc_055 to 060, which preflight also refuses. Nothing reached data/cities; the munich claim stays. Next window after the cap clears: merge all six, add them to the German overlay (translate agent), photo records for muc_056/058/059/060 listed in the pass report (found_needs_check, Martinus KE CC BY-SA 4.0; 059 is a trunk close-up, 060 an HDR). No tool refusals.
