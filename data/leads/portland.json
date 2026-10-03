@@ -106,6 +106,22 @@
       "common_name": "remaining ~90 candidates",
       "address": "various",
       "reason": "Not individually vetted this pass; time-boxed per BRIEF_RESEARCH.md. All 120 raw candidates remain available in data/research/portland-register-candidates.json for a future pass. Priorities for next time: the Overlook ensemble/Patton Square area (see leads above), the South Portland/Lair Hill cluster, and Lone Fir Cemetery."
+    },
+    {
+      "register_objectid": 460,
+      "common_name": "Douglas-fir",
+      "name": "Powell Butte Cedar Grove Douglas-fir",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "address": "Cedar Grove Trail, Powell Butte Nature Park",
+      "latitude": 45.4863,
+      "longitude": -122.51173333,
+      "girth_cm": 573,
+      "height_m": 50.6,
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (objectid 460, treeid 260)"
+      ],
+      "access": "Free. Public nature park (Portland Water Bureau land, managed with Parks as Powell Butte Nature Park); tree is along the Cedar Grove Trail.",
+      "reason": "[2026-10-03 write pass] Verified (register treeid 260, alive per iNaturalist 2026-03-22) but held back from publication: the register coordinate has only 4 decimals, so the pin is approximate, and there is no photograph, so preflight's photo-or-pin check refuses it. Publish once a photograph or a confirmed pin on the Cedar Grove Trail exists. Verify notes: Register only (designated 2004): 166 ft tall (about 50 m), 56 ft spread, 71 in diameter, 18.8 ft circumference. Register note: 'located along the Cedar Grove Trail in Powell Butte Nature Park.' Register coordinate has only 4 decimals (about 10 m), so approximate; the trail location is the honest direction. Alive: lifecheck RECENT, iNaturalist obs 2026-03-22 (https://www.inaturalist.org/observations/344523182) near the coordinate. Second Powell Butte tree already published (ptl_012, Lombardy poplar). Tallest and thickest unmined Douglas-fir in the register. No age in source."
     }
   ],
   "blocked": [
