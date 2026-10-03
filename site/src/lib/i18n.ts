@@ -453,10 +453,6 @@ export interface UIStrings {
   homeAllSpecies: (n: number) => string;
   homeFavH: string;
   homeOldestShelfH: string;
-  homeTallestH: string;
-  homeThickestH: string;
-  homeIslandsH: string;
-  homeSeeAll: string;
   homeCountriesH: string;
   homeAllCountries: string;
   homeSpeciesH: string;
@@ -701,10 +697,6 @@ const EN: UIStrings = {
   homeAllSpecies: (n) => `All ${n} species`,
   homeFavH: "Our favourite tree cities",
   homeOldestShelfH: "The oldest trees we map",
-  homeTallestH: "The tallest trees",
-  homeThickestH: "The thickest trunks",
-  homeIslandsH: "Tree islands",
-  homeSeeAll: "See all",
   homeCountriesH: "Countries",
   homeAllCountries: "All countries",
   homeSpeciesH: "Species",
@@ -738,10 +730,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeAllSpecies: (n) => `Las ${n} especies`,
     homeFavH: "Nuestras ciudades de árboles favoritas",
     homeOldestShelfH: "Los árboles más viejos que cartografiamos",
-    homeTallestH: "Los árboles más altos",
-    homeThickestH: "Los troncos más gruesos",
-    homeIslandsH: "Islas de árboles",
-    homeSeeAll: "Ver todo",
     homeCountriesH: "Países",
     homeAllCountries: "Todos los países",
     homeSpeciesH: "Especies",
@@ -985,10 +973,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeAllSpecies: (n) => `Tutte le ${n} specie`,
     homeFavH: "Le nostre città di alberi preferite",
     homeOldestShelfH: "Gli alberi più vecchi che mappiamo",
-    homeTallestH: "Gli alberi più alti",
-    homeThickestH: "I tronchi più grossi",
-    homeIslandsH: "Isole di alberi",
-    homeSeeAll: "Vedi tutto",
     homeCountriesH: "Paesi",
     homeAllCountries: "Tutti i paesi",
     homeSpeciesH: "Specie",
@@ -1232,10 +1216,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeAllSpecies: (n) => `Alle ${n} soorten`,
     homeFavH: "Onze favoriete bomensteden",
     homeOldestShelfH: "De oudste bomen die we in kaart brengen",
-    homeTallestH: "De hoogste bomen",
-    homeThickestH: "De dikste stammen",
-    homeIslandsH: "Bomeneilanden",
-    homeSeeAll: "Alles bekijken",
     homeCountriesH: "Landen",
     homeAllCountries: "Alle landen",
     homeSpeciesH: "Soorten",
@@ -1479,10 +1459,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeAllSpecies: (n) => `Alle ${n} Arten`,
     homeFavH: "Unsere liebsten Baumstädte",
     homeOldestShelfH: "Die ältesten Bäume, die wir kartieren",
-    homeTallestH: "Die höchsten Bäume",
-    homeThickestH: "Die dicksten Stämme",
-    homeIslandsH: "Bauminseln",
-    homeSeeAll: "Alle ansehen",
     homeCountriesH: "Länder",
     homeAllCountries: "Alle Länder",
     homeSpeciesH: "Arten",
@@ -1726,10 +1702,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeAllSpecies: (n) => `Todas as ${n} espécies`,
     homeFavH: "As nossas cidades de árvores preferidas",
     homeOldestShelfH: "As árvores mais velhas que mapeamos",
-    homeTallestH: "As árvores mais altas",
-    homeThickestH: "Os troncos mais grossos",
-    homeIslandsH: "Ilhas de árvores",
-    homeSeeAll: "Ver tudo",
     homeCountriesH: "Países",
     homeAllCountries: "Todos os países",
     homeSpeciesH: "Espécies",
@@ -1973,10 +1945,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeAllSpecies: (n) => `Les ${n} espèces`,
     homeFavH: "Nos villes d'arbres préférées",
     homeOldestShelfH: "Les arbres les plus vieux que nous cartographions",
-    homeTallestH: "Les arbres les plus hauts",
-    homeThickestH: "Les troncs les plus épais",
-    homeIslandsH: "Îles aux arbres",
-    homeSeeAll: "Tout voir",
     homeCountriesH: "Pays",
     homeAllCountries: "Tous les pays",
     homeSpeciesH: "Espèces",
@@ -2220,10 +2188,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeAllSpecies: (n) => `${n}種すべて`,
     homeFavH: "お気に入りの木の街",
     homeOldestShelfH: "私たちが地図に載せた最も古い木",
-    homeTallestH: "最も高い木",
-    homeThickestH: "最も太い幹",
-    homeIslandsH: "巨木の島",
-    homeSeeAll: "すべて見る",
     homeCountriesH: "国",
     homeAllCountries: "国一覧",
     homeSpeciesH: "樹種",

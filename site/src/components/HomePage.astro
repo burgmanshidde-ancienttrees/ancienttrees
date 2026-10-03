@@ -47,8 +47,7 @@ import { belongsInCityIndex } from "../lib/city-index";
 import { groupTreesByPark, parkGroupKey, parkPageIsAllowed } from "../lib/parks";
 import { ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { byCityListOrderEntry } from "../lib/city-order";
-import { FAVOURITE_CITIES, islandSlugs, collectionsInSeason } from "../lib/favourites";
-import { collectionEntries } from "../lib/collection-rank";
+import { FAVOURITE_CITIES } from "../lib/favourites";
 import { SPECIES_ICONS } from "../lib/species-icons";
 import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 import { ui, languagesForCity, hreflangSet, translatedLanguages } from "../lib/i18n";
@@ -426,57 +425,6 @@ const parkCards = [...groupTreesByPark(renderable).values()]
   .map((c) => c.html);
 const parksShelf = wideShelf(u.homeParksH, "/parks", u.homeAllParks, parkCards);
 
-// --- Tallest, thickest, tree islands, and what is in season ---
-// The app's Discover rows of 2026-10-04 (Hidde: "more lines like tree island
-// tallest trees best of us"), on both surfaces in the same change. The ranked
-// order is the collection's own (collection-rank.ts), the islands are
-// lib/favourites.ts's list, the season is its month table, so the app reads
-// the same answers from /api/browse.json. "Best in your country" is app-only:
-// a static page does not know where its reader stands.
-// Built after every other shelf, so they never take a photograph a shelf
-// above already printed; a tree whose picture is taken is skipped.
-const collBySlug = new Map(collections.map((c) => [c.data.slug ?? c.id, c]));
-const treeInCity = new Map<string, { t: AnyTree; city: string; slug: string }>();
-for (const c of renderable) for (const t of renderableTrees(c)) treeInCity.set(t.id, { t, city: c.data.city, slug: c.id });
-function collectionCards(slug: string, ev: string): string[] {
-  const coll = collBySlug.get(slug);
-  if (!coll) return [];
-  const cards: string[] = [];
-  for (const e of collectionEntries(coll as any, bySlug as any)) {
-    const o = treeInCity.get(e.tree_id);
-    const url = o ? usablePhoto(o.t)?.url : null;
-    if (!o || !url || usedPhotos.has(url)) continue;
-    usedPhotos.add(url);
-    cards.push(shelfCard(treeHref(o.slug, slugify(o.t.name)), url, o.t.name, esc(o.city), ev, o.t.id));
-    if (cards.length === 10) break;
-  }
-  return cards;
-}
-const tallestShelf = wideShelf(u.homeTallestH, "/collections/tallest-trees", u.homeSeeAll, collectionCards("tallest-trees", "home-tallest"));
-const thickestShelf = wideShelf(u.homeThickestH, "/collections/thickest-trees", u.homeSeeAll, collectionCards("thickest-trees", "home-thickest"));
-// Collection titles are English and /collections exists in English only, so
-// the season rows stand on the English homepage alone.
-const seasonShelves = lang === "en"
-  ? collectionsInSeason(new Date().getMonth() + 1)
-      .map((slug) => wideShelf(esc(collBySlug.get(slug)?.data.title ?? ""), `/collections/${slug}`, u.homeSeeAll, collectionCards(slug, "home-season")))
-      .join("")
-  : "";
-const islandCards: string[] = [];
-for (const cs of islandSlugs(renderable as any)) {
-  const e = bySlug.get(cs)!;
-  const face = cityFaceTree({ hero_tree_id: e.data.hero_tree_id, face_tree_id: (e.data as any).face_tree_id, trees: renderableTrees(e) });
-  const url = face ? usablePhoto(face)?.url : null;
-  if (!url) continue;
-  usedPhotos.add(url);
-  islandCards.push(shelfCard(L(`/${cs}`), url, e.data.city, esc(u.homeShelfMeta(renderableTrees(e).length, e.data.country)), "home-island", cs));
-}
-// Three is enough for islands, where wideShelf asks four: today six have a
-// photograph, and the shelf is a pick rather than a directory.
-const islandsShelf = islandCards.length >= 3
-  ? `<section class="shelf"><div class="shelf-head"><h2>${u.homeIslandsH}</h2></div>` +
-    `<div class="shelf-row shelf-row-wide">${islandCards.join("")}</div></section>`
-  : "";
-
 // --- The four static home-act illustrations ---
 const findPin1 = icon("plane");
 const findPin2 = icon("wingnut");
@@ -626,12 +574,6 @@ const scripts = SEARCH_WIDGET_JS;
 <Fragment set:html={speciesShelf} />
 <Fragment set:html={parksShelf} />
 <Fragment set:html={oldestShelf} />
-{/* The new rows go BELOW the existing ones, never between (Hidde,
-    2026-10-04: "i just wanted more below"). */}
-<Fragment set:html={seasonShelves} />
-<Fragment set:html={tallestShelf} />
-<Fragment set:html={thickestShelf} />
-<Fragment set:html={islandsShelf} />
 <main class="page">
   <h2 class="section-heading" id="cities">{u.homeDirectoryH}</h2>
   <Fragment set:html={directoryHtml} />
