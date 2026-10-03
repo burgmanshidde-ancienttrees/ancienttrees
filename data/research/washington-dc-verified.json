@@ -1,0 +1,36 @@
+[
+ {
+  "id": "wdc_016",
+  "name": "Travilah Oak",
+  "species": "White Oak (Quercus alba)",
+  "age_estimate": "over 330 years",
+  "age_min": 300,
+  "age_max": 400,
+  "girth_cm": 582,
+  "location": {
+   "address": "Potomac Oak Shopping Center, corner of Travilah Road and Glen Road, Potomac, Maryland",
+   "latitude": 39.06766,
+   "longitude": -77.26348,
+   "neighbourhood": "Travilah, Potomac (Montgomery County, MD)"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Travilah_Oak",
+   "https://www.atlasobscura.com/places/travilah-oak-tree",
+   "https://www.openstreetmap.org/node/10205493991"
+  ],
+  "access": "Free. Stands in the shopping centre's forecourt with a fence, patio and seating, open to anyone shopping or passing; public parking lot.",
+  "transport": "About 45 to 60 minutes by car from downtown DC; Metro Red Line to Shady Grove plus a Ride On bus is the transit route (not route-checked), so a half-day trip.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "- Alive: Maryland Big Tree Program measured it January 2021 at 19 ft 1 in circumference (5.82 m, 582 cm), 78 ft high, 110 ft crown; enwiki says as of spring 2022 it is the Montgomery County champion white oak (a search snippet from another page says it is number two behind a tree at Wisconsin Ave and Beech Drive: conflicting, state only 'among the county's largest'). OSM node carries circumference 581 and height 23.7 m, so it was surveyed recently.\n- Over 330 years old per enwiki; age is a source estimate.\n- Named for postmaster Travilah Clagett. Shopping centre built 1979; threatened with removal in 1989; protection effort from 1997 (fence, patio, floodlights, lightning rods); Friends of the Travilah Oak hold an annual autumn celebration. Proposed as Maryland state tree candidate after the Wye Oak fell in 2002.\n- Pin: Wikidata 39.0676,-77.2634 and OSM node 10205493991 (39.0676641,-77.263481) agree within about 8 m; OSM node is survey-grade (carries measurements).\n- Public view test passed: forecourt of a shopping centre.",
+  "photo_candidates": [
+   {
+    "file": "File:TravilahOak2020.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:TravilahOak2020.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "TwoScarsUp, Wikimedia Commons, 2020-03-26",
+    "status": "found_needs_check"
+   }
+  ]
+ }
+]

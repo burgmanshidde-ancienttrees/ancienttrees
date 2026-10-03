@@ -39,23 +39,6 @@
    ]
   },
   {
-   "name": "Alley Pond Giant",
-   "lat": 40.7473,
-   "lng": -73.743,
-   "photos": [
-    "http://commons.wikimedia.org/wiki/Special:FilePath/Queens%20Giant%20%28Tree%29%2004072024.jpg"
-   ],
-   "wikidata": "Q129456628",
-   "taxon": null,
-   "admin": "Queens",
-   "status": "open",
-   "species": null,
-   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
-   "sources": [
-    "https://www.wikidata.org/wiki/Q129456628"
-   ]
-  },
-  {
    "name": "Bennett Juniper",
    "lat": 38.30911667,
    "lng": -119.7971,
@@ -177,7 +160,7 @@
    "wikidata": "Q5351846",
    "taxon": null,
    "admin": "Los Angeles County",
-   "status": "open",
+   "status": "verified 2026-10-03, in data/research",
    "species": "Pine (Pinus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
@@ -196,7 +179,7 @@
    "wikidata": "Q5376133",
    "taxon": null,
    "admin": "Massachusetts",
-   "status": "open",
+   "status": "verified 2026-10-03, in data/research",
    "species": "Pear (Pyrus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
@@ -352,25 +335,6 @@
    ]
   },
   {
-   "name": "Linden Oak",
-   "lat": 39.0228,
-   "lng": -77.1022,
-   "photos": [
-    "http://commons.wikimedia.org/wiki/Special:FilePath/Linden%20Oak%201.jpg"
-   ],
-   "wikidata": "Q1826003",
-   "taxon": null,
-   "admin": "Montgomery County",
-   "status": "open",
-   "species": "Lime (Tilia sp.)",
-   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
-   "sources": [
-    "https://www.wikidata.org/wiki/Q1826003",
-    "https://en.wikipedia.org/wiki/Linden_Oak"
-   ],
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Man in Tree",
    "lat": 47.612167,
    "lng": -122.338762,
@@ -469,7 +433,7 @@
    "wikidata": "Q85800365",
    "taxon": null,
    "admin": null,
-   "status": "open",
+   "status": "verified 2026-10-03, in data/research",
    "species": null,
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
@@ -579,7 +543,7 @@
    "wikidata": "Q7836190",
    "taxon": null,
    "admin": "Montgomery County",
-   "status": "open",
+   "status": "verified 2026-10-03, in data/research",
    "species": "Oak (Quercus sp.)",
    "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
    "sources": [
@@ -1235,6 +1199,44 @@
     "https://www.wikidata.org/wiki/Q107415547"
    ],
    "reason": "already published as the Quinault Big Spruce (oly_004)"
+  },
+  {
+   "name": "Alley Pond Giant",
+   "lat": 40.7473,
+   "lng": -73.743,
+   "photos": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Queens%20Giant%20%28Tree%29%2004072024.jpg"
+   ],
+   "wikidata": "Q129456628",
+   "taxon": null,
+   "admin": "Queens",
+   "status": "open",
+   "species": null,
+   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q129456628"
+   ],
+   "reason": "already published as the Queens Giant (New York)"
+  },
+  {
+   "name": "Linden Oak",
+   "lat": 39.0228,
+   "lng": -77.1022,
+   "photos": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Linden%20Oak%201.jpg"
+   ],
+   "wikidata": "Q1826003",
+   "taxon": null,
+   "admin": "Montgomery County",
+   "status": "open",
+   "species": "Lime (Tilia sp.)",
+   "source": "wikidata (CC0), a finding aid: still needs alive, pin and a second source",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q1826003",
+    "https://en.wikipedia.org/wiki/Linden_Oak"
+   ],
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "died by spring 2022, removed 18 July 2023"
   }
  ]
 }
