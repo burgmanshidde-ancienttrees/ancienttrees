@@ -16,6 +16,9 @@ export interface Ambassador {
   public: boolean;
   since: string | null;
   display_name?: string;
+  /** The institution beside the name, printed only where the person said yes
+   *  to it as well (Giulia Torta, Orto botanico di Firenze, 2026-10-03). */
+  affiliation?: string;
 }
 
 let cache: Ambassador[] | null = null;

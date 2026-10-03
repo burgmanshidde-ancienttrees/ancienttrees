@@ -39,7 +39,7 @@ const U = ui(lang);
         </span>
         <span class="ambassador-text">
           <span class="ambassador-name">{p.display_name}</span>
-          <span class="ambassador-role">{U.ambassadorRole(place ?? p.place_name)}</span>
+          <span class="ambassador-role">{U.ambassadorRole(place ?? p.place_name)}{p.affiliation ? ` · ${p.affiliation}` : ""}</span>
         </span>
       </li>
     ))}
