@@ -9475,6 +9475,27 @@
    "tokens": 0,
    "trees": 1,
    "note": "session work: Commons photo viewed and approved, German overlay written by the run"
+  },
+  {
+   "target": "Dresden",
+   "kind": "verify",
+   "tokens": 171000,
+   "trees": 3,
+   "note": "dre_011-013, OSM node plus geotagged Commons photo pins; two of six candidates blocked (private garden, young)"
+  },
+  {
+   "target": "Dresden",
+   "kind": "write",
+   "tokens": 125000,
+   "trees": 3,
+   "note": "3 stories; too few for the fixed cost"
+  },
+  {
+   "target": "de/dresden",
+   "kind": "translate",
+   "tokens": 123000,
+   "trees": 0,
+   "note": "3 overlay entries plus page copy to 13"
   }
  ]
 }
