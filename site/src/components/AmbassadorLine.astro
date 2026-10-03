@@ -1,11 +1,15 @@
 ---
-/* The ambassador line under a city intro.
+/* The ambassador byline under a city intro.
  *
- * Convention: komoot's Pioneer badge (CONVENTIONS.md 2026-10-02): a small seal
- * beside a person's name, tied to one region, earned by what they already did.
- * Google's Local Guides badge is the same shape. Ours is Phosphor's seal-check
- * (the app draws Apple's checkmark.seal.fill) in the moss pill the site already
- * uses for a person's avatar, with one plain sentence.
+ * Convention: a BYLINE, a small label and a name, never a sentence about what
+ * the person does. Atlas Obscura prints "ADDED BY Eric Grundhauser" and
+ * "EDITED BY Martin" in small caps beside the name; komoot prints "Collection
+ * by komoot"; komoot's Pioneer and Google's Local Guide are a seal and a role
+ * word beside the name (CONVENTIONS.md 2026-10-02 and 2026-10-03). The first
+ * version here was a full sentence in a moss pill ("... is the ambassador for
+ * Florence and helps keep this list right"), and Hidde, 2026-10-03: "is this
+ * really how others do it - feels a bit unprofessional." It explained our
+ * process to the reader, which a byline never does.
  *
  * Where we differ, and why this renders so rarely: every reference prints the
  * badge beside a PUBLIC profile, and this site publishes no person's name
@@ -30,7 +34,8 @@ const U = ui(lang);
     {people.map((p) => (
       <li class="ambassador-line">
         <Fragment set:html={icon("seal-check", "fill", "ic ambassador-seal")} />
-        <span>{U.ambassadorLine(p.display_name!, p.place_name)}</span>
+        <span class="ambassador-label">{U.ambassadorLabel}</span>
+        <span class="ambassador-name">{p.display_name}</span>
       </li>
     ))}
   </ul>
@@ -38,10 +43,8 @@ const U = ui(lang);
 
 <style>
   .ambassadors { list-style: none; margin: 0.75rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
-  .ambassador-line {
-    display: inline-flex; align-items: center; gap: 8px; max-width: 100%;
-    font-size: 13px; line-height: 1.4; color: var(--moss);
-    background: var(--moss-light); border-radius: 999px; padding: 6px 12px 6px 10px;
-  }
-  .ambassador-line :global(.ambassador-seal) { width: 16px; height: 16px; flex: none; fill: currentColor; }
+  .ambassador-line { display: flex; align-items: center; gap: 6px; max-width: 100%; font-size: 14px; line-height: 1.4; }
+  .ambassador-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); }
+  .ambassador-name { font-weight: 600; color: var(--ink); }
+  .ambassador-line :global(.ambassador-seal) { width: 16px; height: 16px; flex: none; fill: var(--moss); color: var(--moss); }
 </style>
