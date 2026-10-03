@@ -1,28 +1,30 @@
 [
- {
-  "id": "aus_010",
-  "name": "The Sunset Valley Bigelow Oak",
-  "species": "Bigelow Oak (Quercus sinuata var. breviloba)",
-  "age_estimate": "",
-  "girth_cm": 315,
-  "height_m": 13.4,
-  "location": {
-   "address": "Sunset Valley Nature Area / South Hills Conservation Area, Williamson Creek, Sunset Valley, TX",
-   "latitude": 30.21883333,
-   "longitude": -97.81611111,
-   "neighbourhood": "Sunset Valley (enclave inside Austin)"
-  },
-  "verified_sources": [
-   "https://www.sunsetvalley.gov/departments/public-works-environmental-services/environmental-services/urban-forestry (live page 403s; readable via http://web.archive.org/web/20260309150009if_/ + same path, snapshot 2026-03-09)",
-   "Texas Big Tree Registry, Texas A&M Forest Service, TreeID 543 (non-commercial licence: verification only)",
-   "https://www.inaturalist.org/observations/43004147",
-   "https://www.inaturalist.org/observations/4224912",
-   "OpenStreetMap ways 549251160, 1081681031, 1081681035"
-  ],
-  "access": "Free. Stands in Sunset Valley's city-owned nature area beside Williamson Creek; OSM maps foot-designated dirt footways about 40 m from the pin and the registry lists the City of Sunset Valley as owner.",
-  "transport": "Sunset Valley sits inside Austin about 9 km south-west of downtown; Capital Metro bus is roughly 35 minutes (borderline for the day-trip boundary), then a short walk on the nature-area paths.",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "ONE-SOURCE-PLUS: Texas Big Tree Registry (Texas A&M Forest Service) TreeID 543, state and national champion for the variety (flag -1 in registry), nominated Feb 1999, remeasured June 2024: circumference 124 in = 315 cm, height 44 ft = 13.4 m, spread 42 ft, condition code 3. Owner of record City of Sunset Valley; registry Display=1 (registry itself shows the location publicly, so hard rule 10 withholding does not apply). Sunset Valley's own Public Works and Environmental Services page says the city is 'home to a champion Bigelow Oak (Quercus durandii)' (second source; fetched via Wayback because the live page 403s). Species naming: Bigelow oak = white shin oak, a small-tree oak, so a 3.15 m girth is large for the species (use the species yardstick, do not call it big for an oak in general). PIN: registry coordinate is DMS-precision (1 m resolution). Two independent iNaturalist observations GPS-located at 7 m (obs 43004147, 2020-04-23, positional accuracy 4 m, research grade Quercus sinuata) and 14 m (obs 4224912, 2016, observer note 'Beautiful and huge! There are several large shin oaks along Williamson Creek') from the registry point, both identified as this species, agree with it. Caveat for the writer: other large shin oaks stand along the creek, so the recognition line should rest on the registry's measured size, not on this being the only shin oak there. Earlier pass worried the coordinate reverse-geocoded to 792 Oakdale Drive; that was nominatim snapping to the nearest address. Overpass shows no building within 40 m of the point, the point lies inside the city's Sunset Valley Nature Area / South Hills Conservation Area operator=City of Sunset Valley, so the earlier access doubt is resolved. lifecheck: RECENT, an iNaturalist observation 2026-08-05 near the spot (proves something photographed there, not this trunk); registry remeasured June 2024. Age: none recorded; no basis to derive (shin oak growth rate not in hand) so leave empty and let the page ask. Photograph: none usable. The two nearest iNat observations are CC BY-NC (not an open licence for us) or all rights reserved, so no photo candidate. Container note: Sunset Valley is an incorporated enclave surrounded by Austin; lead was held back earlier only on access, now resolved."
- }
+  {
+    "id": "aus_010",
+    "name": "The Sunset Valley Bigelow Oak",
+    "species": "Bigelow Oak (Quercus sinuata var. breviloba)",
+    "age_estimate": "",
+    "girth_cm": 315,
+    "height_m": 13.4,
+    "location": {
+      "address": "Sunset Valley Nature Area / South Hills Conservation Area, Williamson Creek, Sunset Valley, TX",
+      "latitude": 30.21883333,
+      "longitude": -97.81611111,
+      "neighbourhood": "Sunset Valley (enclave inside Austin)"
+    },
+    "verified_sources": [
+      "https://www.sunsetvalley.gov/departments/public-works-environmental-services/environmental-services/urban-forestry (live page 403s; readable via http://web.archive.org/web/20260309150009if_/ + same path, snapshot 2026-03-09)",
+      "Texas Big Tree Registry, Texas A&M Forest Service, TreeID 543 (non-commercial licence: verification only)",
+      "https://www.inaturalist.org/observations/43004147",
+      "https://www.inaturalist.org/observations/4224912",
+      "OpenStreetMap ways 549251160, 1081681031, 1081681035"
+    ],
+    "access": "Free. Stands in Sunset Valley's city-owned nature area beside Williamson Creek; OSM maps foot-designated dirt footways about 40 m from the pin and the registry lists the City of Sunset Valley as owner.",
+    "transport": "Sunset Valley sits inside Austin about 9 km south-west of downtown; Capital Metro bus is roughly 35 minutes (borderline for the day-trip boundary), then a short walk on the nature-area paths.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "ONE-SOURCE-PLUS: Texas Big Tree Registry (Texas A&M Forest Service) TreeID 543, state and national champion for the variety (flag -1 in registry), nominated Feb 1999, remeasured June 2024: circumference 124 in = 315 cm, height 44 ft = 13.4 m, spread 42 ft, condition code 3. Owner of record City of Sunset Valley; registry Display=1 (registry itself shows the location publicly, so hard rule 10 withholding does not apply). Sunset Valley's own Public Works and Environmental Services page says the city is 'home to a champion Bigelow Oak (Quercus durandii)' (second source; fetched via Wayback because the live page 403s). Species naming: Bigelow oak = white shin oak, a small-tree oak, so a 3.15 m girth is large for the species (use the species yardstick, do not call it big for an oak in general). PIN: registry coordinate is DMS-precision (1 m resolution). Two independent iNaturalist observations GPS-located at 7 m (obs 43004147, 2020-04-23, positional accuracy 4 m, research grade Quercus sinuata) and 14 m (obs 4224912, 2016, observer note 'Beautiful and huge! There are several large shin oaks along Williamson Creek') from the registry point, both identified as this species, agree with it. Caveat for the writer: other large shin oaks stand along the creek, so the recognition line should rest on the registry's measured size, not on this being the only shin oak there. Earlier pass worried the coordinate reverse-geocoded to 792 Oakdale Drive; that was nominatim snapping to the nearest address. Overpass shows no building within 40 m of the point, the point lies inside the city's Sunset Valley Nature Area / South Hills Conservation Area operator=City of Sunset Valley, so the earlier access doubt is resolved. lifecheck: RECENT, an iNaturalist observation 2026-08-05 near the spot (proves something photographed there, not this trunk); registry remeasured June 2024. Age: none recorded; no basis to derive (shin oak growth rate not in hand) so leave empty and let the page ask. Photograph: none usable. The two nearest iNat observations are CC BY-NC (not an open licence for us) or all rights reserved, so no photo candidate. Container note: Sunset Valley is an incorporated enclave surrounded by Austin; lead was held back earlier only on access, now resolved.",
+    "story": "The national champion Bigelow oak stands in a city that sits entirely inside another city. Sunset Valley is an incorporated enclave with Austin on every side, and the tree grows on its conservation land beside Williamson Creek.\n\nSet the yardstick before the numbers. The Bigelow oak, also called white shin oak, is a small-tree oak, so this is not a giant by the standards of oaks in general. It is a giant by the standards of its own kind. Nominated to the Texas Big Tree Registry in February 1999 and remeasured in June 2024, it came in at 315 centimetres round, 13.4 metres tall and about 13 metres across the crown, which makes it the state and national champion for its variety.\n\nThe town knows what it has. Sunset Valley's public works department lists a champion Bigelow oak among the things the city is home to, though it uses an older botanical name, Quercus durandii, where the registry files the tree as a variety of Quercus sinuata. Shin oak names are a tangle, and the two records do not use the same label.\n\nIt is not alone. An iNaturalist observer walking the creek in 2016 noted several large shin oaks along it, so the champion is the biggest of a group rather than the only one.\n\nNobody has recorded its age, and nothing we hold gives a basis to estimate one. If you know when this tree took root, tell us.",
+    "how_to_recognise": "You can recognise it by its size against the other shin oaks along the creek: a trunk 3.15 metres round under a crown about 13 metres wide. It stands in the Sunset Valley Nature Area beside Williamson Creek, some 40 metres off the paths."
+  }
 ]
