@@ -29,7 +29,7 @@ No second ask. They already said no to the link, and repeating it in the same
 mail that thanks them for a correction would spend the goodwill their answer
 just created.
 
-To: parkguell@bsmsa.cat
+To: [address in Hidde's mailbox]
 Subject: Re: Gracias por la correccion sobre el acceso al Park Güell
 
 ---

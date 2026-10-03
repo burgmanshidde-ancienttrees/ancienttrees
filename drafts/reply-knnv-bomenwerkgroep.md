@@ -1,6 +1,6 @@
 # FOR HIDDE: reply to Ingeborg Schreuder, KNNV bureau
 
-To: knnv@knnv.nl (she replied from there; our first mail went to bureau@knnv.nl)
+To: [address in Hidde's mailbox] (she replied from there; our first mail went to [address in Hidde's mailbox])
 
 Checked 2026-09-24 in All Mail: after her mail of 28 Aug the only mail to KNNV
 is the app-launch batch of 5 Sep, which is not a reply to her. She passed your

@@ -24,7 +24,7 @@ Checked: Cambridge is live with 5 trees, three of them in the Botanic Garden
 (Newton's apple, the giant redwood, the Cambridge oak), and two of the five
 have a photograph.
 
-To: rsh53@cam.ac.uk
+To: [address in Hidde's mailbox]
 Subject: Re: Ancient tree app enquiry
 
 ---

@@ -1,5 +1,5 @@
-To: helund@helund.com
-Cc: post@peterhoffmann.dk, dtr@dendron.dk
+To: [address in Hidde's mailbox]
+Cc: [address in Hidde's mailbox], [address in Hidde's mailbox]
 Subject: Re: SV: Your yearbook archive is why Copenhagen has a page at all
 
 Hi Hans Erik,

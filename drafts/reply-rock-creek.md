@@ -12,7 +12,7 @@ inline, the ask in a single sentence with no argument attached, four lines. My
 drafts kept bolting a case onto the ask (fourteen trees, only three near Rock
 Creek) and a fact-check (Battery Kemble); he cut both.
 
-To: jpattee@rockcreekconservancy.org
+To: [address in Hidde's mailbox]
 Subject: Re: Montrose Park and Dumbarton Oaks Park, and a request
 
 ---

@@ -31,7 +31,7 @@ put the price on the site, and there is a TestFlight build rather than a day.
 The app-opinion ask is gone. It was a second question in a mail that already
 has one, and the tree question is the one she can answer in a line.
 
-To: ksweeney@cityofsydney.nsw.gov.au
+To: [address in Hidde's mailbox]
 Subject: Re: Register of Significant Trees
 
 ---

@@ -1,7 +1,7 @@
 # FOR HIDDE: reply to Katherine Masiulanis, National Trust of Australia (Victoria)
 
-To: Katherine.Masiulanis@nattrust.com.au (reply to her mail of 23 Aug, which
-came forwarded from conservation@, cc trusttrees@nattrust.com.au: keep that cc)
+To: [address in Hidde's mailbox] (reply to her mail of 23 Aug, which
+came forwarded from conservation@, cc [address in Hidde's mailbox]: keep that cc)
 
 Checked 2026-09-24 in All Mail: no reply from you after her 23 Aug mail, under
 her name, the nattrust domain, trusttrees or "Melbourne". A month late, so one
@@ -31,9 +31,6 @@ Your plans for tree trails around Victoria sound great, I would love to hear
 more when they take shape.
 
 And if you had to send one person to one tree in Melbourne, which would it be?
-
-The app is live too, if you want to take it out to one of them:
-https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
 
 The app is live too, if you want to take it out to one of them:
 https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB

@@ -17,7 +17,7 @@ offers pictures is the cheapest supply this city has.
 that reads as pressure to a public body costs more than the photographs are
 worth.
 
-To: Vera.Wesinger@bsv.bayern.de
+To: [address in Hidde's mailbox]
 Subject: AW: Fotos Englischer Garten und Nymphenburg
 
 ---

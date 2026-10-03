@@ -10,7 +10,7 @@ could not otherwise reach.
 Not repeated: the claim that Treptower Park's elm is theirs. That was the
 error they wrote in to correct.
 
-To: service@gruen-berlin.de
+To: [address in Hidde's mailbox]
 Subject: Re: Können Sie mir mit ancienttrees.app helfen? The Great Elm of Treptower Park
 
 ---

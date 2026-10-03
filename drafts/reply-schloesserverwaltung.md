@@ -32,8 +32,8 @@ to deal with.
 Checked: /munich/fern-leaved-beech carries the new opening, 210 words, and
 preflight is clean.
 
-To: Vera.Wesinger@bsv.bayern.de
-Cc: GVEnglischergarten@bsv.bayern.de, Martin.Baumgaertner@bsv.bayern.de
+To: [address in Hidde's mailbox]
+Cc: [address in Hidde's mailbox], [address in Hidde's mailbox]
 Subject: AW: Können Sie mir mit ancienttrees.app helfen? The Fern-leaved Beech
 
 ---

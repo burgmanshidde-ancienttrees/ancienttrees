@@ -68,7 +68,7 @@ Not in the mail, but recorded: he says he knows no other Bischofia javanica in
 mainland Portugal, and expects them in the islands. That agrees with what the
 page already says from the council's classification, so it changes no sentence.
 
-To: dias.com.arvores@sapo.pt
+To: [address in Hidde's mailbox]
 Subject: Re: Fotos das árvores do Porto
 
 ---

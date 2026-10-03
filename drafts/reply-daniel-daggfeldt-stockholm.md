@@ -1,6 +1,6 @@
 # FOR HIDDE: reply to Daniel Daggfeldt, arborist in Stockholm
 
-To: daniel@tradmastarna.se, **reply to all**: Tina Axelsson is on his thread
+To: [address in Hidde's mailbox], **reply to all**: Tina Axelsson is on his thread
 because he put her there ("so you can have a direct contact if you like to
 proceed"). A separate mail to somebody who was cc'd reads as going round the
 person who introduced her, and it splits a thread that is currently one

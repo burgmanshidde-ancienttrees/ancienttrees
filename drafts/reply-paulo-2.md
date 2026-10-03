@@ -44,7 +44,7 @@ Since you cannot check Portuguese, here is exactly what it says in English:
   not on the map yet and that would be a good reason to start.
 
 Reply in the existing thread (his own address; the list has the blog at
-dias.com.arvores@sapo.pt).
+[address in Hidde's mailbox]).
 
 Subject: Re: Ginkgo biloba do Parque das Virtudes
 

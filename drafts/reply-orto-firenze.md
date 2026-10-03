@@ -25,7 +25,7 @@ and it would be rude to ask her for their material.
 Checked: Florence is live with 23 trees, seven of them in the Giardino dei
 Semplici, and six of those seven carry a photograph.
 
-To: giulia.torta@unifi.it
+To: [address in Hidde's mailbox]
 Subject: Re: Orto botanico di Firenze, grazie e una domanda
 
 ---

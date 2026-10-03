@@ -14,7 +14,7 @@ thing is to be quick and finished, not to find a new ask. Their mail signs off
 "quedamos a disposición para cualquier otra duda", which is a door that stays
 open on its own.
 
-To: parkguell@bsmsa.cat
+To: [address in Hidde's mailbox]
 Subject: Re: Park Güell, gracias por la aclaración
 
 ---

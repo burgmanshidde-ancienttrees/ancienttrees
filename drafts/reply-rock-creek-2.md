@@ -16,7 +16,7 @@ The trap in his tip, already recorded in the lead: the Jackson Magnolia stood
 on White House grounds and was removed in 2025, so if he names that one, it
 fails the living-tree rule.
 
-To: jpattee@rockcreekconservancy.org
+To: [address in Hidde's mailbox]
 Subject: Re: Hi Hidde
 
 ---

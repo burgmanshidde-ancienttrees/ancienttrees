@@ -1,6 +1,6 @@
 # Reply to Bymiljøetaten, Oslo kommune (Bianca Søyland, Parkforvaltning)
 
-To: postmottak@bym.oslo.kommune.no
+To: [address in Hidde's mailbox]
 Subject: Re: Svar på ønsker bilder av trær til ancienttrees app - Munch-eika og bjørketrær i Birkelunden
 
 Their mail (2026-09-03, case 22/35801-52, English, answer in a PDF letter):

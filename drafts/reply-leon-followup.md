@@ -1,4 +1,4 @@
-# Follow-up to Leon (less.02.427@gmail.com), a day after the first reply
+# Follow-up to Leon ([address in Hidde's mailbox]), a day after the first reply
 
 Hidde, 2026-09-24: "can you ask him if hes experiencing problems now?" The
 first reply said the form was fixed and never asked whether it actually is,

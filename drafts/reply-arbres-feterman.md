@@ -39,7 +39,7 @@ it tells him where the gaps are without asking him to fill them.
 Checked before writing: Paris is live with 30 trees and returns 200; Lyon 13,
 Toulouse 10, Nice 10, Strasbourg 10, Bordeaux 10.
 
-To: georges.feterman2@gmail.com
+To: [address in Hidde's mailbox]
 Subject: Re: arbres parisiens
 
 ---

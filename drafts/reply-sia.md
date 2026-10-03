@@ -19,7 +19,7 @@ So: thanks, the tips were right and we already use them, and would she look at
 the app and try it. That is something a secretariat CAN do and can pass on
 inside the society, which is worth more than one answer.
 
-To: segreteria@isaitalia.org
+To: [address in Hidde's mailbox]
 Subject: Re: Alberi monumentali, grazie per le indicazioni
 
 ---
