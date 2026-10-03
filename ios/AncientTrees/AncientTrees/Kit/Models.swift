@@ -315,6 +315,10 @@ public struct TreeCollection: Codable, Hashable, Sendable, Identifiable {
     public let title: String
     public let intro: String?
     public let trees: [String]
+    /// The months this collection is in season, decided on the website
+    /// (lib/favourites.ts COLLECTION_MONTHS). Discover shows it as a shelf in
+    /// those months only. Absent on most collections and on older snapshots.
+    public var months: [Int]? = nil
 
     public var id: String { slug }
 }
@@ -369,6 +373,8 @@ public struct BrowseFeed: Codable, Sendable {
     /// The favourite-cities shelf, decided on the website (lib/favourites.ts):
     /// in order, and only cities with a face. Absent on an older snapshot.
     public let favourites: [String]?
+    /// The tree-islands shelf, decided the same way (2026-10-04).
+    public let islands: [String]?
 }
 
 /// The browse facets as the app holds them: keyed for lookup, answering only
@@ -393,18 +399,23 @@ public struct BrowseFacets: Sendable {
     /// the snapshot predates the field, and Home then falls back to the cities
     /// that have a face, by count.
     public let favourites: [String]
+    /// The tree-islands shelf as the website ordered it; empty on an older
+    /// snapshot, and Home then leaves the shelf out.
+    public let islands: [String]
 
     private let cityBySlug: [String: BrowseFacet]
     private let countryByName: [String: BrowseFacet]
     private let speciesByName: [String: BrowseFacet]
 
     public init(cities: [BrowseFacet], countries: [BrowseFacet],
-                species: [BrowseFacet], parks: [BrowseFacet], favourites: [String] = []) {
+                species: [BrowseFacet], parks: [BrowseFacet], favourites: [String] = [],
+                islands: [String] = []) {
         self.cities = cities
         self.countries = countries
         self.species = species
         self.parks = parks
         self.favourites = favourites
+        self.islands = islands
         self.cityBySlug = Dictionary(cities.compactMap { f in f.slug.map { ($0, f) } },
                                      uniquingKeysWith: { a, _ in a })
         self.countryByName = Dictionary(countries.map { ($0.name, $0) },
@@ -416,7 +427,8 @@ public struct BrowseFacets: Sendable {
     public init(feed: BrowseFeed?) {
         self.init(cities: feed?.cities ?? [], countries: feed?.countries ?? [],
                   species: feed?.species ?? [], parks: feed?.parks ?? [],
-                  favourites: feed?.favourites ?? [])
+                  favourites: feed?.favourites ?? [],
+                  islands: feed?.islands ?? [])
     }
 
     public func face(city slug: String) -> String? { cityBySlug[slug]?.face }

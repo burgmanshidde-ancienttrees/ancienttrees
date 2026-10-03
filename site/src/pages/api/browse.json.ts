@@ -37,7 +37,7 @@ import { namedAmbassadorsFor } from "../../lib/ambassadors";
 import { collectionEntries } from "../../lib/collection-rank";
 import { citySearchNames } from "../../lib/city-aliases";
 import { cityPopularity } from "../../lib/popularity";
-import { favouriteCitySlugs } from "../../lib/favourites";
+import { favouriteCitySlugs, islandSlugs, COLLECTION_MONTHS } from "../../lib/favourites";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -107,6 +107,9 @@ export async function GET() {
         // photograph wins rather than the widest one. Same rule as
         // collectionFace() on /collections.
         face: ids.find((id) => Boolean(usablePhoto(idToTree.get(id))?.url)) ?? null,
+        // When it is in season (lib/favourites.ts), so Discover can show it as
+        // a shelf in those months without deciding anything itself.
+        ...(COLLECTION_MONTHS[c.data.slug ?? c.id] ? { months: COLLECTION_MONTHS[c.data.slug ?? c.id] } : {}),
       };
     })
     .filter((c) => c.trees.length > 0);
@@ -175,7 +178,9 @@ export async function GET() {
   // shows the same shelf (lib/favourites.ts; Hidde, 2026-10-02: no Leeuwarden
   // with a placeholder leaf).
   const favourites = favouriteCitySlugs(cities);
-  const payload = { cities: cityFacets, favourites, collections, parks, countries, species };
+  // The tree-islands shelf, same rule (lib/favourites.ts, 2026-10-04).
+  const islands = islandSlugs(cities);
+  const payload = { cities: cityFacets, favourites, islands, collections, parks, countries, species };
   const body = JSON.stringify(payload);
   return new Response(
     JSON.stringify({ version: await feedVersion(body), licence: FEED_LICENCE, ...payload }),

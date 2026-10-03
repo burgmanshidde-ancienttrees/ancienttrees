@@ -26,3 +26,38 @@ export function favouriteCitySlugs(cities: CollectionEntry<"cities">[]): string[
     return Boolean(face && usablePhoto(face)?.url);
   });
 }
+
+// TREE ISLANDS: the second shelf decided here, on the same terms (Hidde,
+// 2026-08-20: "rows like our favourite cities, best tree islands"; built
+// 2026-10-04). Places that ARE an island, not cities that happen to stand on
+// one, so Palermo and Cagliari stay cities. Same face rule: an island with no
+// photograph is not on the shelf, which today keeps Menorca, Mallorca, Maui
+// and Okinawa off it until one of their trees gets a picture.
+export const FAVOURITE_ISLANDS = ["tenerife", "madeira", "oahu", "crete", "sardinia", "kauai", "menorca", "mallorca", "maui", "hawaii", "okinawa", "yakushima"];
+
+/** The islands that can actually be shown: in order, only those with a face. */
+export function islandSlugs(cities: CollectionEntry<"cities">[]): string[] {
+  const bySlug = new Map(cities.map((c) => [c.id, c]));
+  return FAVOURITE_ISLANDS.filter((slug) => {
+    const e = bySlug.get(slug);
+    if (!e) return false;
+    const face = cityFaceTree({ hero_tree_id: e.data.hero_tree_id, face_tree_id: (e.data as any).face_tree_id, trees: renderableTrees(e) });
+    return Boolean(face && usablePhoto(face)?.url);
+  });
+}
+
+// WHEN A COLLECTION IS IN SEASON, as month numbers (northern hemisphere, which
+// is where every one of these trees stands). Discover shows the collection as
+// a shelf in those months only, so the screen changes with the year. An
+// ANSWER sent in the feed as `months`, never a table copied into Swift.
+export const COLLECTION_MONTHS: Record<string, number[]> = {
+  "wisteria-and-blossom-worth-a-spring-trip": [3, 4, 5],
+  "autumn-harvest-trees": [9, 10],
+  "autumn-colour-trees": [10, 11],
+  "ginkgos-worth-a-november-trip": [11],
+};
+
+/** The collections in season this month, in the table's order. */
+export function collectionsInSeason(month: number): string[] {
+  return Object.entries(COLLECTION_MONTHS).filter(([, m]) => m.includes(month)).map(([slug]) => slug);
+}

@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 session: Discover gets longer, and quieter
+
+- **App Discover:** the subtitles under shelf titles are gone (Hidde: "maybe less is more"; AllTrails, Airbnb, Netflix and Spotify show a title and See all, nothing under it). New rows: Best in [your country] (only with a real location fix: famous trees first, then by age), the collections in season this month (October: autumn harvest and autumn colour), the tallest trees, the thickest trunks, and tree islands. Long but finite, never infinite scroll (CONVENTIONS.md 2026-10-04).
+- **Website homepage:** the same tallest, thickest and islands rows in all eight languages, and the season rows on the English homepage only (collections are English-only pages). Best in your country is app-only because a static page does not know where its reader is.
+- **Decided on the server, sent in /api/browse.json:** `islands` (lib/favourites.ts, face rule: Menorca, Mallorca, Maui, Okinawa stay off until they have a photograph) and `months` on the four seasonal collections. This reverses part of the 2026-08-21 cut (season and collections out of the app feed) on Hidde's "ok do that".
+
 ## 2026-10-04 session: the Camphor of Kofuji Tenmangu, on Hidde's word
 
 - **Live:** fuk_018, a camphor beside the village Tenmangu at Shima-Kofuji, Itoshima, on the Fukuoka page as a day-trip tree, with Hidde's own photograph (uncredited, contributor id kept for takedown). He took it on 2026-10-02; the run had kept it as a lead (own sighting, no source near it, photograph never viewed). His call: "put it live i vouch for it i was there."
