@@ -31,7 +31,7 @@ No third ask. She has now given us two corrections and a list of sources, and
 her mail closes with "leuk als we het vervolg horen", which is an invitation to
 report back rather than to request anything.
 
-To: hhirsch@xs4all.nl
+To: [address in Hidde's mailbox]
 Subject: Re: Kun je me helpen met ancienttrees.app? De oude bomen van Amsterdam
 
 ---

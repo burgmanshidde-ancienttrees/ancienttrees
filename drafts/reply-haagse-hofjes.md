@@ -14,7 +14,7 @@ Already done on our side: the address is on the do-not-contact list, which the
 sender can never override, and the contact record is marked blocked with the
 reason, so no future batch picks it up again.
 
-To: rogier@haagsehofjes.nl
+To: [address in Hidde's mailbox]
 Subject: Re: Kun je me helpen met ancienttrees.app? De oude bomen van Den Haag
 
 ---

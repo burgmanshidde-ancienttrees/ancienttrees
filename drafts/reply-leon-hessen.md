@@ -1,4 +1,4 @@
-# Reply to Leon (less.02.427@gmail.com), the first contributor from outside
+# Reply to Leon ([address in Hidde's mailbox]), the first contributor from outside
 
 Rows 116-131 in submissions. Both trees live 2026-09-23. The letter goes on
 row 131 via reply_text; the other rows get outcome and replied_at so only one

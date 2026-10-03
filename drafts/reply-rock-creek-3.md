@@ -14,7 +14,7 @@ The ask at the end is deliberately one he can ignore without it being a
 refusal: a name on a plaque or a photograph, if he happens to cross the
 square. He has now given something twice without being asked.
 
-To: jpattee@rockcreekconservancy.org
+To: [address in Hidde's mailbox]
 Subject: Re: Hi Hidde
 
 ---

@@ -22,7 +22,7 @@ The camellia walk at Casa Tait is deliberately not mentioned: it is a place
 rather than a single tree, and explaining our collectible-point rule to a man
 who has just given us six photographs is the wrong use of his attention.
 
-To: dias.com.arvores@sapo.pt
+To: [address in Hidde's mailbox]
 Subject: Re: Fotos das árvores do Porto
 
 **Three changes on his instruction (2026-09-02): thank him properly, tell him
@@ -35,7 +35,7 @@ The filename tip stays in, and it earns its place rather than being a lecture:
 he says more photographs are coming by the end of next week, so it makes the
 next batch land straight away.
 
-To: dias.com.arvores@sapo.pt
+To: [address in Hidde's mailbox]
 Subject: Re: Fotos das árvores do Porto
 
 ---

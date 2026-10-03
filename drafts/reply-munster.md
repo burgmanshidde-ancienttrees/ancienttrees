@@ -20,7 +20,7 @@ Genehmigung." So no open licence by default, and permission is the only route.
 Facts are not copyrightable, but Germany has EU database rights, so
 systematically lifting a register is not an option even where each fact is free.
 
-To: webmaster@baumkunde.de (Wolfgang Schürmann)
+To: [address in Hidde's mailbox] (Wolfgang Schürmann)
 Subject: Re: Können Sie mir mit ancienttrees.app helfen? Berlin
 
 ---

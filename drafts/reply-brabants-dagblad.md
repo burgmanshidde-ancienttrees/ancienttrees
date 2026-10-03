@@ -40,7 +40,7 @@ written is true as of today.
 Still true and still yours to add or leave: all 11 Den Bosch trees have no
 photograph.
 
-To: stadsredactie@bd.nl (or Roel's own address if he wrote from it)
+To: [address in Hidde's mailbox] (or Roel's own address if he wrote from it)
 Subject: Re: Op Bastion Oranje groeit een boom boven op de vestingmuur van 1634
 
 ---

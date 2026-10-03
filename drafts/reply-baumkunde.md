@@ -20,7 +20,7 @@ Dicke Marie is in it; the Kaisereiche never was, only a Kaiserulme, which turns
 out to stand in Minfeld in Rheinland-Pfalz. Our Berlin data is fine, our claim
 that both trees were "theirs" was not.
 
-To: webmaster@baumkunde.de (Wolfgang Schürmann)
+To: [address in Hidde's mailbox] (Wolfgang Schürmann)
 Subject: Re: Können Sie mir mit ancienttrees.app helfen? Berlin
 
 ---

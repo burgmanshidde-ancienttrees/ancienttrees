@@ -1,6 +1,6 @@
 # FOR HIDDE: reply to Wolfgang Schürmann, Baumkunde.de (September)
 
-To: woelfie@gmx.de (reply to his mail of 20 Sep; Christian heppsb@t-online.de
+To: [address in Hidde's mailbox] (reply to his mail of 20 Sep; Christian [address in Hidde's mailbox]
 forwarded our app mail to him, you may cc Christian or leave it)
 
 Checked 2026-09-24 in All Mail: your last mail to him is 11 Aug. Nothing since,

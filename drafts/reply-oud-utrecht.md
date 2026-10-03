@@ -26,11 +26,11 @@ https://ancienttrees.app/utrecht returns 200.
 One line you may want to strike: the offer to walk along. It is true that Baarn
 is nearby, but it is a promise for 2027 and only you can make it.
 
-Reply to Piet directly (pietvandijck1949@gmail.com); Janny and Else Marie are in
+Reply to Piet directly ([address in Hidde's mailbox]); Janny and Else Marie are in
 the thread and there is no reason to drop them, since Else Marie at DUIC is the
 one who passed it on and the story may still be theirs to run.
 
-To: pietvandijck1949@gmail.com, cc Janny Wildemast + Else Marie Vonk
+To: [address in Hidde's mailbox], cc Janny Wildemast + Else Marie Vonk
 Subject: Re: De oudste boom van Utrecht overleefde het hele boerenlandschap om zich heen
 
 ---

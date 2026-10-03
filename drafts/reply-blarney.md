@@ -21,7 +21,7 @@ Checked: Cork is live with 13 trees, four of them at Blarney (the Witch's Yew,
 the great western red cedar, the Cappadocian maple and the beech), two with a
 photograph.
 
-To: socialmedia@blarneycastle.ie
+To: [address in Hidde's mailbox]
 Subject: Re: Blarney Castle
 
 ---

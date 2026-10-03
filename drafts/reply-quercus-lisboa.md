@@ -1,7 +1,7 @@
 # Antwoord aan Quercus, Núcleo Regional de Lisboa (Silvia Moutinho)
 
 Op haar mail van 2026-08-21, in reactie op batch-005 (verstuurd 2026-08-16 aan
-lisboa@quercus.pt, waarin gevraagd werd de Lissabonse bomen na te kijken en te
+[address in Hidde's mailbox], waarin gevraagd werd de Lissabonse bomen na te kijken en te
 zeggen welke boom ontbreekt).
 
 Zij bood vier dingen aan: de app bekijken, de bomen nakijken, divulgatie bij een

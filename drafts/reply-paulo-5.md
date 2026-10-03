@@ -34,7 +34,7 @@ that is not an ask, it is the best thanks available: his suggestion produced a
 letter. `drafts/coimbra-jardim-botanico.md` is that letter, ready to go
 alongside this one.
 
-To: dias.com.arvores@sapo.pt
+To: [address in Hidde's mailbox]
 Subject: Re: Fotos das arvores do Porto
 
 In English, since you cannot check the Portuguese:

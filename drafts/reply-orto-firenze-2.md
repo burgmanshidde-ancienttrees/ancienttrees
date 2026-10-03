@@ -17,7 +17,7 @@ One honest limit in how the app is described: it lets somebody add a tree with
 a photograph from their phone, which is genuinely easier than mailing files.
 It is not a promise about when, and there is no word about price.
 
-To: giulia.torta@unifi.it
+To: [address in Hidde's mailbox]
 Subject: Re: Il cedro dell'Himalaya, online
 
 ---

@@ -1,6 +1,6 @@
 # FOR HIDDE: reply to Inês Sequeira, Wilder (Lisbon), the interview date
 
-To: ines.sequeira@wilder.pt (reply to her mail of 21 Sep 13:24)
+To: [address in Hidde's mailbox] (reply to her mail of 21 Sep 13:24)
 
 Checked 2026-09-24 in All Mail: your last mail to her is 20 Sep 21:38, where
 you proposed 15 October at 10 her time. She answered twice on 21 Sep: first

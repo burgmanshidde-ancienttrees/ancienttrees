@@ -1,7 +1,7 @@
 # FOR HIDDE: two mails from one reply (Vrienden van Sonsbeek)
 
 They did not say no to the project, they said no to being the right desk, and
-then named the right one: Natuur Centrum Arnhem, info@natuurcentrumarnhem.nl.
+then named the right one: Natuur Centrum Arnhem, [address in Hidde's mailbox].
 That is the same shape as DUIC forwarding your Utrecht pitch to Oud-Utrecht,
 which is the only press result this project has so far. A referral is worth
 more than an answer, because the next mail opens with a name they know.
@@ -19,7 +19,7 @@ clause costs nothing and it is how a thread stays open.
 
 ---
 
-To: info@vriendenvansonsbeek.nl
+To: [address in Hidde's mailbox]
 Subject: Re: Kun je me helpen met ancienttrees.app? De bomen van Arnhem
 
 Dag,
@@ -33,7 +33,7 @@ Hidde
 
 ---
 
-To: info@natuurcentrumarnhem.nl
+To: [address in Hidde's mailbox]
 Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Arnhem
 
 Hallo,

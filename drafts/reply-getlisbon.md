@@ -1,7 +1,7 @@
 # Antwoord aan getLISBON (Gracinda en Teresa)
 
 Op hun mail van 2026-09-04, in reactie op batch-006 (verstuurd 2026-08-22 aan
-contact@getlisbon.com, waarin gevraagd werd de Lissabonse bomen na te kijken en
+[address in Hidde's mailbox], waarin gevraagd werd de Lissabonse bomen na te kijken en
 te zeggen welke boom ontbreekt).
 
 **Dit is de eerste keer in 220 verstuurde mails dat iemand uit zichzelf een link

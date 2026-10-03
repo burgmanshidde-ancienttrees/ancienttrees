@@ -7,12 +7,12 @@ all four before writing so the reply says something true rather than thanks.
 
 1. **The Haagse bomenapp is the real prize.** Its own metadata says 117,000
    street trees and nearly 1,300 monumental ones, and it names the city's open
-   data platform plus `opendata@denhaag.nl` as the access contact. We publish
+   data platform plus `[address in Hidde's mailbox]` as the access contact. We publish
    FIVE trees in The Hague. This is the Den Bosch pattern again, a municipal
    ArcGIS layer, and it is the cheapest supply this project ever gets. What I
    could not settle today: the licence. The service path the app points at is a
    dead version (`V2_8...` returns 404) and the server hides its directory, so
-   the honest next step is one mail to `opendata@denhaag.nl` asking which
+   the honest next step is one mail to `[address in Hidde's mailbox]` asking which
    licence the monumental-tree layer carries. That is the municipality, not
    her, so it does not belong in this reply.
 2. **hethaagsegroen.nl** carries their new monumental trees and a walking route
@@ -38,7 +38,7 @@ questions have their own addresses and can wait a week.
 
 Checked: /the-hague is live with 5 trees and returns 200.
 
-To: info@bomenstichtingdenhaag.nl (Clara Visser)
+To: [address in Hidde's mailbox] (Clara Visser)
 Subject: Re: Kun je me helpen met ancienttrees.app? De oude bomen van Den Haag
 
 ---

@@ -28,7 +28,7 @@ enormously.
 Checked before writing: the Olifantsiep and the Vondelpark poplar carry the
 corrected text live, and /amsterdam returns 200 with 31 trees.
 
-To: hhirsch@xs4all.nl
+To: [address in Hidde's mailbox]
 Subject: Re: Kun je me helpen met ancienttrees.app? De oude bomen van Amsterdam
 
 ---
