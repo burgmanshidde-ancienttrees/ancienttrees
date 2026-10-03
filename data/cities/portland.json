@@ -2,11 +2,11 @@
   "city": "Portland",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Portland has protected its best trees by city ordinance since 1993, and the law is credited to neighbours who stopped a chainsaw partway through an oak. That oak is here, roughly 300 years old, with twenty-three more. Seven stand within 1.8 kilometres downtown. Seven make a second walk through Irvington, ending at a line of nine Caucasian wingnuts. Lone Fir Cemetery holds the Douglas fir it is named for. The rest are worth the trip alone: a 74 metre Douglas fir, the West's oldest grafted apple and a sequoia on a volcano.",
-  "meta_description": "24 heritage trees in Portland: a 300-year-old oak neighbours saved from a chainsaw, a 74-metre Douglas fir and the West's oldest grafted apple.",
-  "question_meta": "Portland's oldest dated tree is the Corbett Oak, roughly 300 years old, in Heritage Tree Park. Where it stands, plus 23 more heritage trees.",
+  "intro": "Portland has protected its best trees by city ordinance since 1993, and the law is credited to neighbours who stopped a chainsaw partway through an oak. That oak is here, roughly 300 years old, with thirty-one more. Seven stand within 1.8 kilometres downtown. Seven make a second walk through Irvington, ending at a line of nine Caucasian wingnuts. Lone Fir Cemetery holds the Douglas fir it is named for. The rest are worth the trip alone: a 74 metre Douglas fir, the West's oldest grafted apple and a sequoia on a volcano.",
+  "meta_description": "32 heritage trees in Portland: a 300-year-old oak neighbours saved from a chainsaw, a 74-metre Douglas fir and the West's oldest grafted apple.",
+  "question_meta": "Portland's oldest dated tree is the Corbett Oak, roughly 300 years old, in Heritage Tree Park. Where it stands, plus 31 more heritage trees.",
   "question_answer": "Portland's oldest dated tree is the Corbett Oak, an Oregon white oak the Oregon Encyclopedia puts at roughly 300 years old, in Heritage Tree Park at SW Lane Street and SW Corbett Avenue. It is free to visit, and a saw scar across its trunk marks the day neighbours stopped a crew from killing it. The tallest tree is a different one: the Douglas fir above Balch Creek in Forest Park, measured at 74.1 metres, the tallest tree on this whole site.",
-  "question_context": "Portland's Heritage Tree register is unusually good and unusually blunt: it gives girth, height, species and a per-tree coordinate, and it records ownership. What it does not record is age, so 'oldest' here means oldest with a published date. The Corbett Oak's 300 years come from the Oregon Encyclopedia; the runner-up with a documented date is the Dosch Yellow Bellflower apple in Hillsdale, planted around 1850. The Irvington elm, judged from its girth alone, could be anywhere from 175 to 350, so the oak's title is the best answer the sources allow rather than a certainty. Roughly two fifths of the register's trees stand in private yards, and none of those appear on this page: everything here stands on right-of-way, park, cemetery or public campus ground. The register also lags reality, since a 2026 delisting ordinance confirmed trees dead that its own rows still listed, so each entry here was checked separately for whether it is standing.",
+  "question_context": "Portland's Heritage Tree register is unusually good and unusually blunt: it gives girth, height, species and a per-tree coordinate, and it records ownership. What it does not record is age, so 'oldest' here means oldest with a published date. The Corbett Oak's 300 years come from the Oregon Encyclopedia; the runner-up with a documented date is the Dosch Yellow Bellflower apple in Hillsdale, planted around 1850. The Irvington elm, judged from its girth alone, could be anywhere from 175 to 350, so the oak's title is the best answer the sources allow rather than a certainty. Roughly two fifths of the register's trees stand in private yards, and none of those appear on this page: everything here stands on right-of-way, park, cemetery or public campus ground. The register also lags reality, since a 2026 delisting ordinance confirmed trees dead that its own rows still listed, so each entry here was checked separately, and where we could not confirm that a tree is still standing, its page says so.",
   "faq": [
     {
       "q": "What is the tallest tree in Portland?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Can I see them in one walk?",
-      "a": "Not all of them. Seven stand in about 1.8 kilometres through downtown and the near west side, and seven more make a second walk through Irvington. The Lone Fir and its incense cedar share a cemetery in Buckman, 170 metres apart. The rest, the Corbett Oak and the Dosch apple among them, each need their own trip."
+      "a": "Not all of them. Seven stand in about 1.8 kilometres through downtown and the near west side, and seven more make a second walk through Irvington. The Lone Fir and its incense cedar share a cemetery in Buckman, 170 metres apart. Powell Park holds two big red oaks about 120 metres apart, and Mount Tabor a sequoia and a giant lime under 300 metres apart. The rest, the Corbett Oak and the Dosch apple among them, each need their own trip."
     },
     {
       "q": "Where is the second walk?",
@@ -831,6 +831,267 @@
       "curation_status": "flagged",
       "story": "This incense cedar is 37 metres tall and only four metres across, which makes it look less like a tree than a column.\n\nThose are the city register's figures, and the height, 121 feet, is unusually tall for the species. The spread is the other half of the shape. Thirteen feet across on a tree that tall gives it the narrow, clean-edged outline the Southeast Examiner singled out in 2026 when it named the cemetery's three historic trees. The trunk is 3.38 metres round.\n\nIt shares that designation with the Lone Fir itself, the Douglas fir the cemetery is named for, about 170 metres to the west, and with a bigleaf maple named for Joseph Lane. The city designated both conifers heritage trees in 2009. Seeing them together is the easiest way to read the difference between the two species: the fir heavier and broader, the cedar all height.\n\nIncense cedar is native to the mountains of Oregon and California, and its soft, fragrant wood was for generations the standard wood for pencils. Here it grows among the graves of a cemetery that was renamed in 1866 and now works as Portland's second-largest arboretum, on grounds owned by Metro and open during posted daylight hours.\n\nWhat nobody has published is its age. No source we found gives a planting date or a ring count, and we would rather leave the number blank than guess. If you know when it went in, tell us.",
       "how_to_recognise": "You can recognise it by its narrow column of a crown, 37 metres tall and only four across, far slimmer than the Lone Fir. It stands on the cemetery's north side opposite 2231 SE Stark Street, about 170 metres east of that fir.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ptl_025",
+      "name": "Couch Park Cucumber Tree",
+      "species": "Cucumber Tree Magnolia (Magnolia acuminata)",
+      "age_estimate": "roughly 125 years",
+      "age_min": 120,
+      "age_max": 130,
+      "age_basis": "source",
+      "girth_cm": 530,
+      "height_m": 30.5,
+      "location": {
+        "address": "Couch Park, 1961 NW Glisan St",
+        "latitude": 45.52646925,
+        "longitude": -122.69051727,
+        "neighbourhood": "Northwest District"
+      },
+      "verified_sources": [
+        "https://www.portland.gov/trees/magnolia-acuminata",
+        "https://portlandwild.com/tree/14",
+        "data/registers/portland-heritage-trees.json (objectid 352, treeid 14)"
+      ],
+      "access": "Free. Southeast corner of Couch Park, a public city park (the park adjoins the Metropolitan Learning Center school; the tree is on park grounds).",
+      "transport": "TriMet bus service along NW Glisan/23rd; exact stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This magnolia is about thirty metres tall, and it stands on a city block that only ever held one house.\n\nThat house belonged to Cicero Horatius Lewis, who built it in 1879 and 1880, and the tree was planted on his estate around 1900, which makes it roughly 125 years old. In 1917 the house was razed to make room for a park beside Couch School, the building that is now the Metropolitan Learning Center. The tree has outlasted the family home by more than a century and now stands in the southeast corner of Couch Park.\n\nThe cucumber tree is a magnolia native to the eastern United States, named for its young fruit, and it is rare this far west. Portland's heritage register, which designated this one in 1994, calls it perhaps the largest in the city.\n\nHow large depends on who you ask. The register gives 100 feet tall, a 55 foot spread and a trunk 17.4 feet round, about 5.3 metres. Portland Parks' own species page gives 93 feet, a 63 foot spread and 15.35 feet round. Nobody has reconciled the two figures, and both describe a tree far bigger than most people expect a magnolia to be.\n\nIt is free to visit, in a public park on NW Glisan Street, and somebody photographed it there in May 2026.",
+      "how_to_recognise": "You can recognise it by its trunk, about 5.3 metres round, on a magnolia close to 30 metres tall. It stands in the southeast corner of Couch Park, on the park side of the Metropolitan Learning Center.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ptl_026",
+      "name": "Mount Tabor Giant Linden",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "",
+      "girth_cm": 506,
+      "height_m": 38.4,
+      "location": {
+        "address": "Mount Tabor Park, SE corner of the rectangular reservoir, near 6325 SE Division St",
+        "latitude": 45.51225497,
+        "longitude": -122.59547963,
+        "neighbourhood": "Mt. Tabor"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (objectid 419, treeid 62)"
+      ],
+      "access": "Free. Public park (Portland Parks & Recreation, Mt Tabor Park), west side of the park at the rectangular reservoir.",
+      "transport": "TriMet bus on SE Division St; exact stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Portland's heritage register is a dry document, all measurements and directions, and for this tree it breaks character: \"This tree is gigantic.\"\n\nThe figures back the word up. It is a large-leaved lime, the European linden, and the register gives it 126 feet tall, about 38 metres, with a crown 88 feet across and a trunk 5.06 metres round. The city designated it a heritage tree in 1995.\n\nIt grows at the southeast corner of the rectangular reservoir, on the west side of Mount Tabor Park. The park's giant sequoia stands under 300 metres away, which makes the two one walk on the same hill: a Californian conifer and a European broadleaf.\n\nIn June it flowers. Limes are better known for the scent than the look of it, pale yellow and loud with bees, and a tree with a crown this wide carries a great deal of it.\n\nTwo gaps, stated plainly. Nobody has published its age, and the register says nothing about when it went in. And the register is our only source: a photograph taken at the spot in September 2026 shows a tree standing there, though not necessarily this trunk. If you have stood under it, tell us whether it is still the giant the register describes, and if you know when it was planted, tell us that too.",
+      "how_to_recognise": "You can recognise it by the broad lime crown, about 27 metres across, and a trunk 5.06 metres round. It stands at the southeast corner of the rectangular reservoir, on the west side of Mount Tabor Park.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the pale yellow flowers open and the crown hums with bees"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ptl_028",
+      "name": "The Revolution Oak",
+      "species": "Oregon White Oak (Quercus garryana)",
+      "age_estimate": "",
+      "girth_cm": 448,
+      "height_m": 31.7,
+      "location": {
+        "address": "Willamette Park, south end by the children's play area",
+        "latitude": 45.47187199,
+        "longitude": -122.67029669,
+        "neighbourhood": "South Portland"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (objectid 239, treeid 171)"
+      ],
+      "access": "Free. Public city park (Portland Parks & Rec), by the play area.",
+      "transport": "TriMet bus on SW Macadam; exact stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This oak has a name, and nobody seems to know where it came from. Portland's heritage register places it at the south end of Willamette Park, beside the children's play area, and says only that it \"is known as the Revolution Oak\". We looked and found no page explaining which revolution, or whose.\n\nWhat the register does record is the tree. It is an Oregon white oak, the oak native to this part of the state, 104 feet tall, about 32 metres, with a crown 75 feet across and a trunk 4.48 metres round. The city designated it a heritage tree in 1998, and somebody photographed it at the spot in April 2026.\n\nThe species matters in Portland. The Corbett Oak, about 2.7 kilometres north in Heritage Tree Park, is an Oregon white oak too, and the neighbours who stopped a chainsaw partway through it are credited with the 1993 ordinance under which this one is protected. Of the two, the Corbett Oak has the dated age and the famous rescue. This one has the better name and no explanation for it.\n\nIts age is not recorded either, because the register has no field for it. So there are two open questions on one trunk. If you know either answer, a family story, an old newspaper piece, a sign in the park, tell us. A name like this deserves its reason.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.48 metres round, on an Oregon white oak about 32 metres tall with a crown 23 metres across. It stands at the south end of Willamette Park, right beside the children's play area.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ptl_029",
+      "name": "The Patton Square Red Oak",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "",
+      "girth_cm": 552,
+      "height_m": 33.8,
+      "location": {
+        "address": "Patton Square Park, 5340 N Interstate Ave",
+        "latitude": 45.56145821,
+        "longitude": -122.68119583,
+        "neighbourhood": "Overlook"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (objectid 323, treeid 274)"
+      ],
+      "access": "Free. Public city park (Portland Parks & Rec), east side of Patton Square, fully visible from N Maryland Ave.",
+      "transport": "MAX Yellow Line along N Interstate Ave (Overlook area); exact station and walk time not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This oak's crown is wider than the tree is tall. Portland's heritage register gives it a spread of 115 feet against a height of 111, a canopy about 35 metres across on the east side of Patton Square, a small city park in Overlook.\n\nThe trunk keeps up with the crown: 69 inches through and 5.52 metres round. It is a northern red oak, a species from the eastern half of the continent, and the city designated this one a heritage tree in 2005. The register adds a practical note, that it is fully visible from N Maryland Avenue, so you can take in the whole shape from the pavement before you walk underneath it.\n\nThe time to come is autumn. Red oaks earn their name in October and into November, when the leaves turn a deep red, sometimes fading to brown, and a crown this broad puts a great deal of that colour over one corner of one park.\n\nOverlook's three London planes, on Overlook Boulevard about a kilometre away, make the other half of a neighbourhood walk.\n\nWhat the register does not record is age, because it has no field for one, and nobody else has published a planting date. A photograph taken at the spot in May 2026 shows it still standing. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the crown, about 35 metres across and wider than the tree is tall, over a trunk 5.52 metres round. It stands on the east side of Patton Square, in full view from N Maryland Avenue.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October into November, when the whole 35 metre crown turns red"
+      },
+      "verify_notes": "Register only (designated 2005): 111 ft tall, 115 ft spread, 69 in diameter, 18.1 ft circumference. Register note: east side of Patton Square City Park, fully visible from N Maryland Ave. An earlier pass (data/leads/portland.json) already recorded this tree as one of 12 trees confirmed alive and current. Alive: lifecheck RECENT, iNaturalist obs 2026-05-01 (https://www.inaturalist.org/observations/357214385). Pin: register tree-level coordinate. Overlook already has ptl_019 (Overlook Planes) published. A heritage oak in Overlook died in 2024 (WWeek reported a celebration of life) so check this is not that one: that was a separate tree, not verified here which one. No age in source.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ptl_030",
+      "name": "The Hillside Park Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "",
+      "girth_cm": 506,
+      "height_m": 34.7,
+      "location": {
+        "address": "Hillside Park, 701 NW Culpepper Terrace",
+        "latitude": 45.52794385,
+        "longitude": -122.7086395,
+        "neighbourhood": "Hillside"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (objectid 384, treeid 282)"
+      ],
+      "access": "Free. Public city park (Portland Parks & Rec), to the right of the main entrance to the gymnasium.",
+      "transport": "Hillside, NW Portland uphill from Burnside; transit not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A coast redwood 114 feet tall stands beside the front door of a gymnasium.\n\nPortland's heritage register gives the directions with unusual precision: to the right of the main entrance to the gym at Hillside Park, a small city park in the hills of NW Portland above Burnside. It records the rest in the same dry way. The trunk is 50 inches through and 5.06 metres round, the height about 35 metres, and the crown only 54 feet across, which is the redwood's usual shape, more column than dome. The city designated it a heritage tree in 2007.\n\nCoast redwoods are native to a narrow strip of the Pacific coast, from California into the far south of Oregon, so this one is several hundred kilometres north of its native range and has reached a size worth a heritage listing anyway, beside a door.\n\nTwo things we cannot tell you. Nobody has published its age. And while the register still lists the tree and has never marked it removed, we found no recent photograph from the spot, so we have not confirmed for ourselves that it is still standing. If you pass the gym, look right, and tell us what you see.\n\nThe Northwest District's two heritage elms are about 750 metres away, and Couch Park's cucumber tree about 1.4 kilometres east.",
+      "how_to_recognise": "You can recognise it by the narrow redwood column, about 35 metres tall on a trunk 5.06 metres round. It stands immediately to the right of the main entrance to the gymnasium at Hillside Park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ptl_031",
+      "name": "The Powell Park Red Oak, South",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "",
+      "girth_cm": 558,
+      "height_m": 29.9,
+      "location": {
+        "address": "Powell Park, south side, between SE 23rd and 24th Ave, SE Powell Blvd",
+        "latitude": 45.49761659,
+        "longitude": -122.64261812,
+        "neighbourhood": "Brooklyn"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (objectid 57, treeid 175)"
+      ],
+      "access": "Free. Public city park (Portland Parks & Recreation, Powell Park).",
+      "transport": "TriMet bus on SE Powell Blvd; exact stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two northern red oaks stand on opposite sides of Powell Park, and their trunks are identical to the inch: 70 inches through, 18.3 feet round, about 5.58 metres. The city entered them in its heritage register one after the other, in 1998.\n\nThis is the southern one, between SE 23rd and 24th Avenues, and it is the one that spreads. The register gives it a crown 116 feet across on a height of 98, so it is about 35 metres wide and only 30 tall, a low dome rather than a tower. Its partner on the north side, about 120 metres away, is a little taller and a little narrower. Seeing both in one visit is the point: two trees of the same species and the same girth that did not grow into the same shape.\n\nRed oaks come from the eastern half of the continent, and they earn the name in October, when the leaves go a deep red.\n\nTwo caveats, stated plainly. Nobody has published an age for either tree, because the register has no age field. And we found no recent photograph from this spot, so beyond the register, which has never marked it removed, we have not confirmed it still stands. Powell Park is free, on SE Powell Boulevard in Brooklyn. If you go, tell us whether both are still there.",
+      "how_to_recognise": "You can recognise it by the crown, about 35 metres across on a tree only 30 tall, the wider of the park's two big red oaks. It stands on the south side of Powell Park, between SE 23rd and 24th Avenues.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ptl_032",
+      "name": "The Powell Park Red Oak, North",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "",
+      "girth_cm": 558,
+      "height_m": 31.1,
+      "location": {
+        "address": "Powell Park, north side, between SE 23rd and 24th Ave, SE Powell Blvd",
+        "latitude": 45.49869645,
+        "longitude": -122.64295914,
+        "neighbourhood": "Brooklyn"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (objectid 273, treeid 176)"
+      ],
+      "access": "Free. Public city park (Portland Parks & Recreation, Powell Park).",
+      "transport": "TriMet bus on SE Powell Blvd; exact stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Portland's heritage register measured this oak's trunk at exactly the size of the one 120 metres south of it: 70 inches through, 18.3 feet round. The two were entered one after the other in 1998, as heritage trees 175 and 176.\n\nThis is number 176, on the north side of Powell Park in Brooklyn, and it is the taller of the pair at 102 feet, about 31 metres. Its crown is 106 feet across, still wider than the tree is tall, though less extravagantly than its partner's. Side by side on paper they look like twins. On the ground they stand on opposite sides of a city park, which is the easiest way to tell them apart.\n\nIt is a northern red oak, a species of the eastern half of the continent, and in October the crown turns a deep red. The Lone Fir and its incense cedar, in the cemetery a little over two kilometres north, make the nearest other heritage trees on this page.\n\nNobody has dated either oak, and we have no recent photograph of this one, so its standing rests on the register, which has never marked it removed. If you walk through, check both sides. And if you know when they were planted, which would tell us whether they went in together, tell us that too.",
+      "how_to_recognise": "You can recognise it as the taller and narrower of Powell Park's two big red oaks, about 31 metres tall on a trunk 5.58 metres round. It stands on the north side of the park, about 120 metres from its partner.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ptl_033",
+      "name": "The Peninsula Crossing Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "",
+      "girth_cm": 567,
+      "height_m": 32.3,
+      "location": {
+        "address": "Peninsula Crossing Trail at N Carey Blvd, between N Princeton St and N Syracuse St",
+        "latitude": 45.5834853,
+        "longitude": -122.73779937,
+        "neighbourhood": "University Park"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (objectid 189, treeid 329)"
+      ],
+      "access": "Free. Right-of-way beside the public Peninsula Crossing Trail.",
+      "transport": "Far north St Johns/University Park area; transit not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The thickest coast redwood in Portland's heritage register does not stand in a park. It stands on a strip of public right-of-way beside a trail, at N Carey Boulevard in University Park, between N Princeton and N Syracuse Streets.\n\nThe register gives its trunk as 69 inches through and 18.6 feet round, about 5.67 metres, which is more than half a metre fatter than the redwood by the gym door at Hillside Park. It is 106 feet tall, about 32 metres, with a crown 57 feet across. The city designated it in 2016, recently enough that the listing is fresher than most in the register, which counts for something on a tree we have not been able to see for ourselves.\n\nCoast redwoods are native to a narrow strip of the Pacific coast from California into southern Oregon. This one has grown to a girth worth listing in the far north of Portland, on the peninsula between the Willamette and the Columbia.\n\nThat is also the honest limit of this page. It stands about eight kilometres from the centre and well away from the city's other heritage trees, so it is a trip of its own, easiest by bike or car along the Peninsula Crossing Trail. Nobody has published its age, and we found no recent photograph from the spot. If you ride past, tell us it is still there.",
+      "how_to_recognise": "You can recognise it by the trunk, about 5.67 metres round, on a redwood about 32 metres tall right beside the Peninsula Crossing Trail. It stands at N Carey Boulevard, between N Princeton and N Syracuse Streets.",
       "photo": {
         "url": null,
         "license": null,
