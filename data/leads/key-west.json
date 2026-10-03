@@ -42,6 +42,134 @@
       "species": "Pongam / Indian Beech (Pongamia pinnata)",
       "location_hint": "Key West Tropical Forest & Botanical Garden, 5210 College Road, Stock Island (exact area not found)",
       "reason": "Wikipedia's garden article (2026-08-23) lists it as a current Florida Challenger, one of seven named champions/challengers. Not mentioned at all in the garden's own 2024 'gallery of champions' status page (which focuses on Irma-affected native/legacy trees), so this may be a newer or previously uncatalogued designation. No location within the garden and no second source found this pass."
+    },
+    {
+      "name": "SATINWOOD, West Indian / Yellowwood (COMPLETE)",
+      "species": "SATINWOOD, West Indian / Yellowwood (Zanthoxylum flavum)",
+      "lat": 24.57245,
+      "lng": -81.74777,
+      "register_location": "The tree is on the SW side of the city golf course. Piths in",
+      "girth_cm": 152,
+      "height_m": 6.4,
+      "register_status": "COMPLETE",
+      "measured": 1519776000000,
+      "sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/44"
+      ],
+      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+      "status": "open"
+    },
+    {
+      "name": "BUTTON-MANGROVE (COMPLETE)",
+      "species": "BUTTON-MANGROVE (Conocarpus erectus)",
+      "lat": 24.55356,
+      "lng": -81.78492,
+      "register_location": "1414 Leon St, near Washington St  Key West",
+      "girth_cm": 574,
+      "height_m": 11.6,
+      "register_status": "COMPLETE",
+      "measured": 1519689600000,
+      "sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/68"
+      ],
+      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+      "status": "open"
+    },
+    {
+      "name": "Sea putat / Barringtonia (COMPLETE)",
+      "species": "Sea putat / Barringtonia (Barringtonia asiatica)",
+      "lat": 24.57389,
+      "lng": -81.74927,
+      "register_location": "Key West Tropical Forest & Botanical Garden, 5210 College Rd",
+      "girth_cm": 76,
+      "height_m": 9.1,
+      "register_status": "COMPLETE",
+      "measured": 1519776000000,
+      "sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/87"
+      ],
+      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+      "status": "open"
+    },
+    {
+      "name": "Cuban lignum vitae / Lignum-vitae (COMPLETE)",
+      "species": "Cuban lignum vitae / Lignum-vitae (Guaiacum officinale)",
+      "lat": 24.57383,
+      "lng": -81.74931,
+      "register_location": "Key West Tropical Forest & Botanical Garden, 5210 College Rd",
+      "girth_cm": 76,
+      "height_m": 5.8,
+      "register_status": "COMPLETE",
+      "measured": 1519776000000,
+      "sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/91"
+      ],
+      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+      "status": "open"
+    },
+    {
+      "name": "Mammee apple / Mamey (COMPLETE)",
+      "species": "Mammee apple / Mamey (Mammea americana)",
+      "lat": 24.55387,
+      "lng": -81.79298,
+      "register_location": "Tree is located between the fire station (museum) and the bu",
+      "girth_cm": 328,
+      "height_m": 14.9,
+      "register_status": "COMPLETE",
+      "measured": 1519689600000,
+      "sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/315"
+      ],
+      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+      "status": "open"
+    },
+    {
+      "name": "CANELLA (PENDING)",
+      "species": "CANELLA (Canella winterana)",
+      "lat": 24.57397,
+      "lng": -81.75003,
+      "register_location": "Key West Tropical Forest & Botanical Garden - from southboun",
+      "girth_cm": 51,
+      "height_m": 8.2,
+      "register_status": "PENDING",
+      "measured": 1361232000000,
+      "sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/483"
+      ],
+      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+      "status": "open"
+    },
+    {
+      "name": "Bucida / Black olive (PENDING)",
+      "species": "Bucida / Black olive (Bucida buceras)",
+      "lat": 24.57386,
+      "lng": -81.74883,
+      "register_location": "Tree is located in boardwalk area. Look at garden guide.",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "PENDING",
+      "measured": 1519776000000,
+      "sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/505"
+      ],
+      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+      "status": "open"
+    },
+    {
+      "name": "FALSE-MASTIC (PENDING)",
+      "species": "FALSE-MASTIC (Sideroxylon foetidissimum)",
+      "lat": 24.65,
+      "lng": -81.73,
+      "register_location": "Lignumvitae Key State Botanical Site/ off Matheson Trail, Li",
+      "girth_cm": 193,
+      "height_m": 13.4,
+      "register_status": "PENDING",
+      "measured": 788918400000,
+      "sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/588"
+      ],
+      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+      "status": "open"
     }
   ],
   "blocked": [
