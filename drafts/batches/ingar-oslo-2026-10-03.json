@@ -1,0 +1,14 @@
+{
+ "batch": "ingar-oslo-2026-10-03",
+ "note": "Hidde, 2026-10-03: 'the one for ingar you can send'. Held until the live page showed his name linking to sorensenfoto.no, which the mail promises; verified in the page HTML and in /api/trees.json before sending.",
+ "status": "sent_complete",
+ "mails": [
+  {
+   "to": "ingar@sorensenfoto.no",
+   "outlet": "Ingar Sorensen, photographer, Oslo (thanks, the linked credit, which other Oslo trees)",
+   "subject": "Re: Can you help me with ancienttrees.app? Your Birkelunden photographs",
+   "body": "Hi Ingar,\n\nThank you. Your two Birkelunden photographs are on the page now, and the credit links to sorensenfoto.no:\nhttps://ancienttrees.app/oslo/birches-of-birkelunden\n\nThe Oslo list is short so far, four trees, and the other three have no photograph at all:\nhttps://ancienttrees.app/oslo\n\nThe Munch oak, the linden alley in Dronningparken and the ginkgo in the Botanical Garden. If any of those are among the ones you photographed for the city, I would gladly use them on the same terms. And if your work for Oslo covered an old tree that should be on this list and is not, that is the one I most want to hear about.\n\nThanks also for the pointer to the municipality's map, I will look at it. The app is out as well, same trees, with the photographs people take on the spot: https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB. Curious what you make of it.\n\nBest,\nHidde\nancienttrees.app\n",
+   "resend_reason": "He answered on 2026-10-02 granting the photographs with a linked credit; this confirms they are live and asks about the other Oslo trees he photographed."
+  }
+ ]
+}
