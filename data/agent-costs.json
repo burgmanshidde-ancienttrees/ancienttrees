@@ -9397,5 +9397,28 @@
       "trees": 0,
       "note": "7 overlay entries plus title count; required or deploy refuses"
     }
+  ],
+  "2026-10-03": [
+    {
+      "target": "Berlin",
+      "kind": "verify",
+      "tokens": 189000,
+      "trees": 6,
+      "note": "second Naturdenkmal batch, six rare species with confirmed pins from register plus CC0 geotag"
+    },
+    {
+      "target": "Berlin",
+      "kind": "write",
+      "tokens": 131000,
+      "trees": 6,
+      "note": "six stories, three best_time"
+    },
+    {
+      "target": "de/berlin",
+      "kind": "translate",
+      "tokens": 146000,
+      "trees": 0,
+      "note": "six overlay entries plus title count 46"
+    }
   ]
 }

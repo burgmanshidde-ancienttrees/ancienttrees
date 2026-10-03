@@ -14,6 +14,9 @@
 
 **App.** Find people pill and the name-at-sign-in change shipped (f2a9e2fa), CI gate green after one runner re-run.
 
+## 2026-10-03 - night run, second round: Berlin +6 (40 to 46)
+Second verify/write/translate cycle on Berlin: six rare-species Naturdenkmal trees (fontanesia, tulip tree, dawn redwood in Rehberge, Italian maple at Gendarmenmarkt, Kentucky coffeetree, Korean evodia), all pins confirmed from register coordinate plus CC0 Commons geotag, none with a recorded age. ber_045 has a Norway maple neighbour 14 m away, so its photo needs a viewing pass before approval (candidates in verify_notes). German overlay extended, preflight 0 problems, no site build run. Stale data/research/berlin-verified.json still holds the ber_041 lead, so `passcheck --release` needed --force.
+
 ## 2026-10-03 - night run: Berlin +7 (33 to 40)
 7-day visits 2746. Rung 2: only iOS app red, and it was `xcodebuild test` hanging past 20 minutes on the SweepFrames runner step (the scheduled run before it passed); not fixable from here. The 8 written-but-unmerged trees (Houston 3, Fukuoka 1, Takachiho 2, tree-of-the-year 2) all fail photo-or-pin, so I tried and reverted them. Picked Berlin (supply 830, Germany): verify found 8 Naturdenkmal trees whose register coordinate plus a CC0 Commons geotag within 2 to 27 m confirm the pin; wrote them, merged 7, kept the zoo oak (ber_041, approximate pin, no photo) as a lead. Removed an unsourced building attribution from ber_038 and tightened its access; renamed ber_035 to Silver Lime. Extended data/i18n/de/berlin.json (the deploy refuses a short overlay). Photo candidates (CC0, GPSLeo) are listed in verify_notes, not yet viewed or approved. Preflight 0 problems; no site build run. Refused: `passcheck --release` without --force (stale research file holds ber_041). Remaining supply: more Tiergarten Naturdenkmal leads in data/leads/berlin.json.
 
