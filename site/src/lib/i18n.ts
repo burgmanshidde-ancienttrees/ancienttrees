@@ -163,10 +163,11 @@ export interface UIStrings {
   /** The ambassador line under a city intro (2026-10-02): a reader who looks
    *  after the place and consented to be named. Nothing prints without that
    *  consent, so this string is only ever reached with a real name. */
-  /** The label of the ambassador byline, printed in small caps BEFORE the name
-   *  (Atlas Obscura's "ADDED BY", komoot's "Collection by"). A by-construction
-   *  where the noun would be gendered, so one string serves any name. */
-  ambassadorLabel: string;
+  /** The grey line UNDER the ambassador's name, komoot's person row (2026-10-03,
+   *  Hidde: "follow the design way of komoot"): avatar, name in bold, one small
+   *  line saying what they are. Where the noun would be gendered the line says
+   *  what they do instead, so one string serves any name. */
+  ambassadorRole: (place: string) => string;
   /** The photo viewer, added 2026-09-03. `photoOpen` labels the button the
    *  photograph itself becomes, `photoFull` is the step Wikipedia's Media
    *  Viewer puts one click further in: the original file at full resolution. */
@@ -503,7 +504,7 @@ const EN: UIStrings = {
   cityHasMore: (c) => `${c} has more trees worth the visit:`,
   sentenceEnd: ".",
   photoCredit: (credit) => `Photo: ${credit}`,
-  ambassadorLabel: "Ambassador",
+  ambassadorRole: (place) => `${place} ambassador`,
   photoOpen: "Open the photograph",
   photoPrev: "Previous photograph",
   photoNext: "Next photograph",
@@ -932,7 +933,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} tiene m\u00e1s \u00e1rboles que merecen la visita:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
-    ambassadorLabel: "Lista a cargo de",
+    ambassadorRole: (place) => `Cuida la lista de ${place}`,
     photoOpen: "Abrir la fotografía",
     photoPrev: "Fotografía anterior",
     photoNext: "Fotografía siguiente",
@@ -1175,7 +1176,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} ha altri alberi che meritano la visita:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
-    ambassadorLabel: "Lista curata da",
+    ambassadorRole: (place) => `Cura la lista di ${place}`,
     photoOpen: "Apri la fotografia",
     photoPrev: "Fotografia precedente",
     photoNext: "Fotografia successiva",
@@ -1418,7 +1419,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} heeft meer bomen die de moeite waard zijn:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
-    ambassadorLabel: "Ambassadeur",
+    ambassadorRole: (place) => `Ambassadeur van ${place}`,
     photoOpen: "Open de foto",
     photoPrev: "Vorige foto",
     photoNext: "Volgende foto",
@@ -1661,7 +1662,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} hat weitere B\u00e4ume, die den Weg lohnen:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
-    ambassadorLabel: "Betreut von",
+    ambassadorRole: (place) => `Betreut die Liste für ${place}`,
     photoOpen: "Foto öffnen",
     photoPrev: "Vorheriges Foto",
     photoNext: "Nächstes Foto",
@@ -1904,7 +1905,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} tem mais \u00e1rvores que valem a visita:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
-    ambassadorLabel: "Lista a cargo de",
+    ambassadorRole: (place) => `Cuida da lista de ${place}`,
     photoOpen: "Abrir a fotografia",
     photoPrev: "Fotografia anterior",
     photoNext: "Fotografia seguinte",
@@ -2147,7 +2148,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} compte d'autres arbres qui valent le d\u00e9tour :`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
-    ambassadorLabel: "Liste suivie par",
+    ambassadorRole: (place) => `Veille sur la liste de ${place}`,
     photoOpen: "Ouvrir la photographie",
     photoPrev: "Photographie précédente",
     photoNext: "Photographie suivante",
@@ -2389,7 +2390,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c}\u306b\u306f\u8a2a\u308c\u308b\u4fa1\u5024\u306e\u3042\u308b\u6a39\u6728\u304c\u307e\u3060\u3042\u308a\u307e\u3059\u3002`,
     sentenceEnd: "\u3002",
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
-    ambassadorLabel: "アンバサダー",
+    ambassadorRole: (place) => `${place}のアンバサダー`,
     photoOpen: "写真を開く",
     photoPrev: "前の写真",
     photoNext: "次の写真",
