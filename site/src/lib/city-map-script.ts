@@ -291,7 +291,10 @@ markers.forEach(function(m, idx) {
   // in the browser rather than baked at build time, so a page cached in October
   // still lights up on the first of November. Months arrive already shifted for
   // latitude, so a Melbourne ginkgo peaks in May.
-  if (m.peak && m.peak.months.indexOf(new Date().getMonth() + 1) !== -1) {
+  // Switched off on 2026-10-03 (Hidde: "its not good enough lets look at it
+  // later"); the CSS in style.css is kept, so this is the one line to undo.
+  var SEASON_PINS = false;
+  if (SEASON_PINS && m.peak && m.peak.months.indexOf(new Date().getMonth() + 1) !== -1) {
     el.classList.add('pin-peak', 'peak-' + m.peak.effect);
     if (m.peak.level === 'nice') el.classList.add('peak-quiet');
     el.style.setProperty('--peak', m.peak.colour);

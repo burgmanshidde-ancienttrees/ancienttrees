@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 session: seasonal map animations switched off
+
+Hidde: "i still see some seasonal animations on the website plus put al off them out - its not good enough lets look at it later". Off: the drifting petals, falling fruit, swaying catkins and breathing halo on city-map pins (`SEASON_PINS = false` in city-map-script.ts, CSS kept), and the explore map's gold pulse and gold dot for trees at their peak (map.ts). The season data and the calendar on tree pages are untouched. Parked, not deleted.
+
 ## 2026-10-03 (session): the outlook after the demotion, and the Plus line settled
 
 Hidde asked for critical thinking on where the project stands. Measured against

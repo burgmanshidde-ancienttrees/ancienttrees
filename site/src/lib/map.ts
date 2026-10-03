@@ -253,11 +253,11 @@ function initTreeLayers() {
   if (map.getSource('trees')) { return; }
   map.addSource('trees', {type: 'geojson', data: DATA, cluster: true,
                           clusterMaxZoom: 11, clusterRadius: 42});
-  // The season heartbeat: a soft pulse behind trees at their peak, the
-  // recorded pulsing-pin idea (BACKLOG) in its cheapest honest form.
-  map.addLayer({id: 'tree-pulse', type: 'circle', source: 'trees',
-    filter: ['all', ['!', ['has', 'point_count']], ['==', ['get', 'now'], 1]],
-    paint: {'circle-color': '#D9A13F', 'circle-opacity': 0.35, 'circle-radius': 9}});
+  // The season heartbeat (a pulse and a gold dot behind trees at their peak)
+  // is switched off: Hidde, 2026-10-03, "its not good enough lets look at it
+  // later". The 'now' property still travels in DATA, so bringing it back is
+  // this layer, its requestAnimationFrame loop and the two gold cases on the
+  // tree layer (git history has all three).
   map.addLayer({id: 'clusters', type: 'circle', source: 'trees',
     filter: ['has', 'point_count'],
     paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
@@ -270,8 +270,8 @@ function initTreeLayers() {
     paint: {'text-color': '#F6F2E9'}});
   map.addLayer({id: 'tree', type: 'circle', source: 'trees',
     filter: ['!', ['has', 'point_count']],
-    paint: {'circle-color': ['case', ['==', ['get', 'now'], 1], '#D9A13F', '#4A6B2A'],
-            'circle-radius': ['case', ['==', ['get', 'now'], 1], 9, 7],
+    paint: {'circle-color': '#4A6B2A',
+            'circle-radius': 7,
             'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
   // The register layer: officially designated trees from a government
   // register, not our own research. Visually quieter than the curated
@@ -478,17 +478,6 @@ map.on('moveend', renderPanel);
 map.on('load', renderPanel);
 renderPanel();
 
-// The pulse: radius and opacity breathe on a 2s cycle. Paint-property
-// animation only, no per-frame data churn; stops costing anything when the
-// tab is hidden because rAF pauses.
-(function pulse(ts) {
-  if (map.getLayer && map.getLayer('tree-pulse')) {
-    var t = (ts % 2000) / 2000;
-    map.setPaintProperty('tree-pulse', 'circle-radius', 9 + t * 9);
-    map.setPaintProperty('tree-pulse', 'circle-opacity', 0.4 * (1 - t));
-  }
-  requestAnimationFrame(pulse);
-})(0);
 `)
   );
 }
