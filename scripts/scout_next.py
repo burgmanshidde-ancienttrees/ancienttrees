@@ -32,6 +32,12 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEDGER = os.path.join(ROOT, "data", "register-scouting.json")
 QUEUE = os.path.join(ROOT, "data", "city-queue.json")
+
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from passcheck import SUPPLY_FOCUS
+except Exception:
+    SUPPLY_FOCUS = ["United States", "United Kingdom", "Germany"]
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
 # A country-level verdict answers for its cities; a city-level one wins over it.
@@ -177,8 +183,44 @@ def main():
             # blocked / empty / stalled all mean somebody already looked and
             # wrote down why. Scouting again buys nothing; the note says what
             # the city actually needs.
-        print("BUILD: every city in this window has supply or a written "
-              "verdict. Nothing left to scout at the top of the queue.")
+        # Second pass, 2026-10-03. The first pass only reads the top of the
+        # queue below ten trees, so when that window was all verdicts it said
+        # "nothing to scout" and fifteen continuations on 10-02 dispatched
+        # nothing at all, while Germany, a SUPPLY_FOCUS country, had verdicts
+        # for four of its sixteen states. Hidde: "night runs should go find
+        # register or sources when nothing is available right?" So: any ranked
+        # city in a focus country with no verdict, at any tree count, then a
+        # STALLED verdict there, whose note names the next thing to try.
+        focus = [f.lower() for f in SUPPLY_FOCUS]
+        ranked = sorted([c for c in cities if c.get("rank")
+                         and (c.get("country") or "").lower() in focus],
+                        key=lambda c: c["rank"])
+        # by_place only: a country-wide verdict is about one dataset (the UK's
+        # is the Ancient Tree Inventory's licence) and says nothing about a
+        # city's own register. A city already holding register rows is supply,
+        # not a scouting question.
+        for c in ranked:
+            if (c.get("register") or 0) >= 8:
+                continue
+            if not by_place.get(c["city"].lower()):
+                print("SCOUT  %s (#%d), %s: a focus country with no verdict for "
+                      "this place. Look for its state or city register of "
+                      "protected trees with tree-level coordinates "
+                      "(Naturdenkmal, heritage tree, champion tree), and record "
+                      "the verdict in data/register-scouting.json."
+                      % (c["city"], c["rank"], c.get("country")))
+                return 0
+        for c in ranked:
+            hit = by_place.get(c["city"].lower())
+            if hit and hit.get("status") == "stalled" and not hit.get("retried"):
+                print("RETRY  %s (#%d), %s: stalled verdict, its note says what "
+                      "to try next. Try it, then rewrite the status (and set "
+                      "\"retried\" with the date if it stays stalled)."
+                      % (c["city"], c["rank"], c.get("country")))
+                return 0
+        print("BUILD: every city in this window and every ranked city in the "
+              "focus countries has supply or a written verdict. Nothing left "
+              "to scout; the next source is iNaturalist or a reader.")
         return 0
 
     print("Scouting worklist, queue order. 'unscouted' at the top is the whole "

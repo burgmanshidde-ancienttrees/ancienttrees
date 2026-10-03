@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 (session): an empty window scouts instead of stopping
+
+Hidde: "night runs should go find register or sources when nothing is available right?" They should, and on 10-02 they did not: fifteen continuations ended "dispatched nothing", because `scout_next.py --target` read only the top 25 cities under ten trees, found a verdict on each and answered "nothing to scout". It now has a second pass over every ranked city in the SUPPLY_FOCUS countries (US, UK, Germany), at any tree count: first a city with no verdict of its own and no register rows, then a STALLED verdict whose note names the next step. A country-wide verdict (the UK's, which is about the Ancient Tree Inventory licence) no longer closes a city's own register. Today it names New York (#6), whose NYC Parks Great Trees list has never been scouted; Bath, London, Edinburgh, Boston, Liverpool and Glasgow follow. The night-run prompt now says that when nothing on hand can refill the shelf, the dispatch is whatever `scout_next.py --target` prints.
+
 ## 2026-10-03 (session): the red emails were IndexNow, not the night runs
 
 Hidde asked why all night runs were failing, with GitHub's "IndexNow: All jobs have failed" mails as the evidence. The night runs were green; IndexNow was red on 12 of its last 15 runs, about fifteen mails a day, because it fires after every deploy and Bing answers every ping with 403 `UserForbiddedToAccessSite`. The key file in site/public is correct (32 characters, no newline), so the refusal is on Bing's side, and it has outlasted Bing's "up to 48 hours" since the Search Console import on 10-01. `indexnow.py` now prints a warning annotation on a refusal and exits 0, so it stops mailing failures; nothing is sent to Bing until the key is accepted either way.
