@@ -2,7 +2,7 @@
   "city": "Sequoia National Park",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "General Sherman is not the tallest tree here, and it is probably not the oldest in its own grove. It is the largest known living single-stem tree on Earth by volume, on the Main Trail in the Giant Forest. A short walk away, the Congress Trail passes five more giants measured just as carefully: the President, second largest on Earth by one count, plus four more named for a president, a Cherokee scholar and each other, including one that lost half its height to a 2005 snowstorm and simply kept growing.",
+  "intro": "General Sherman is not the tallest tree here, and it is probably not the oldest in its own grove. It is the largest known living single-stem tree on Earth by volume, on the Main Trail in the Giant Forest. A short walk away, the Congress Trail passes five more giants measured just as carefully: the President, second largest on Earth by one count, plus four more named for a president, a Cherokee scholar and each other, including one that lost half its height to a 2005 snowstorm and simply kept growing. The Sentinel Tree waits on the museum plaza.",
   "meta_description": "General Sherman holds the most wood of any living tree. Five more giants stand nearby on the Congress Trail, from the President to the Washington Tree.",
   "question_meta": "General Sherman, 2,300 to 2,700 years old, is the largest living tree on Earth, one of six giants mapped in the Giant Forest.",
   "question_answer": "Sequoia National Park's oldest known tree is probably not General Sherman, its most famous one. That title likely belongs to The President, a giant sequoia on the Congress Trail dated at roughly 3,200 years by a detailed 2011-2012 measuring campaign, against Sherman's more commonly cited 2,300 to 2,700 (older estimates for Sherman also reach 3,200). Neither tree has been cored, so read both figures as careful estimates rather than counts. The President stands a short, paved walk from the Sherman Tree parking lot, about 140 feet from the Chief Sequoyah Tree.",
@@ -239,6 +239,38 @@
         "height": 4012
       },
       "paid_entry": true
+    },
+    {
+      "id": "seq_007",
+      "name": "Sentinel Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "In front of the Giant Forest Museum, Generals Highway, Sequoia National Park, California",
+        "latitude": 36.56487,
+        "longitude": -118.77305,
+        "neighbourhood": "Giant Forest"
+      },
+      "story": "The Sentinel Tree has moved up the rankings by standing still. It was counted the 43rd largest giant sequoia known, and may now be 41st or 42nd, because the fires of 2015 to 2017 killed trees that stood above it.\n\nIt is also the easiest giant in the park to reach. It stands on the plaza in front of the Giant Forest Museum, with no walk at all from the car park, and the Park Service has laid a ruler along the sidewalk so you can pace out its height on the ground.\n\nThat height is 78.5 metres. The trunk is 7.65 metres across at chest height, which works out at roughly 24 metres round, and it holds about 790 cubic metres of wood. Two burn scars mark its base, the record of fires it lived through long before anyone was counting.\n\nIn September 2021 the KNP Complex fire came toward the Giant Forest. Firefighters wrapped the museum and the sequoias around it, and the fire stopped short of the grove. We have not found a dated sighting of this particular tree since, so if you stand under it, tell us how it looks.\n\nNobody has published an age for it either. Size is what it offers, and it offers it at the door: General Sherman, the largest of them all, stands under three kilometres to the north-east, and the Sentinel is the giant you meet before you have even set off.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Sentinel_Tree",
+        "https://www.nps.gov/seki/learn/historyculture/gfgfm.htm",
+        "https://www.openstreetmap.org/node/1751781798"
+      ],
+      "access": "Park entry fee; the tree stands at the museum plaza and can be walked right up to; a sidewalk ruler in the plaza marks its height (NPS).",
+      "transport": "Drive only in practice; shuttle in season to the museum (not checked); zero walking from the museum car park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 2403,
+      "how_to_recognise": "You can recognise it by its place: the giant sequoia on the plaza in front of the Giant Forest Museum, with a ruler laid along the sidewalk marking its 78.5 metre height. Two burn scars mark its base."
     }
   ]
 }
