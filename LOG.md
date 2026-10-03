@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 session: the ambassador is komoot's person row, on web and app
+
+Hidde, on the ambassador line: "feels a bit unprofessional", then "follow the design way of komoot". komoot prints a person as a 32px round avatar, the name in bold and one small grey line (measured on a komoot Highlight). The website's city intro now draws exactly that: initial avatar with the seal, "Giulia Torta", "Florence ambassador" (eight languages, the role line avoids gendered nouns). The app's city page had no ambassador at all; the names now travel in browse.json and AmbassadorRow draws the same row above the trees (app compiles; shows once the new feed is live).
+
 ## 2026-10-03 night run: Portland +8, Nuremberg +2
 
 Rung 5/4 via the staged shelf, visitor countries first. Portland (US): verify then write, 24 to 32 trees from the Heritage Tree register, all confirmed pins; ptl_027 held as a lead (approximate pin, no photo). Nuremberg: 14 trees (+2, nbg_013 with a CC0 photo awaiting a viewing pass, nbg_016 with its access stated as unconfirmed); two more kept as leads. Spokane: zero delivered, no open photo or confirmed pin on any candidate, and the Treaty Tree turned out felled in Aug 2026 (now blocked; it was never published). Preflight 0 problems. Rung 2: the Fresh-eyes failure is the bot-actor refusal that cc2646dd already addressed. Visits last 7 days: 2583.
