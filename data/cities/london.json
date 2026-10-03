@@ -3,10 +3,10 @@
   "country": "United Kingdom",
   "face_tree_id": "lon_007",
   "status": "needs_curation",
-  "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These twenty-three range from a churchyard yew older than Londinium itself to a plane once valued at three quarters of a million pounds. All but Kew are free, though two Temple trees keep lawyers' hours.",
+  "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These twenty-six range from a churchyard yew older than Londinium itself to a plane once valued at three quarters of a million pounds. All but Kew are free, though two Temple trees keep lawyers' hours.",
   "meta_description": "London's ancient trees hide in royal parks and churchyards. Start with the Totteridge Yew, alive since before the Romans built Londinium.",
   "question_answer": "The oldest tree in London is the Totteridge Yew, a European yew in St Andrew's churchyard in Totteridge, North London, estimated at between 1,000 and 2,000 years old. It is the oldest living thing in the city, and it stands a 15 minute walk from Totteridge and Whetstone station on the Northern Line.",
-  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and twenty-two more of the city's ancient trees.",
+  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and twenty-five more of the city's ancient trees.",
   "question_context": "Ring counting does not work on ancient yews because their heartwood rots away, so estimates for the Totteridge Yew run from 1,000 to 2,000 years. Even the cautious low end makes it older than any building in London, and the high end means it was already a substantial tree when the Romans founded Londinium. It stands in the churchyard of St Andrew's in Totteridge, a village long since swallowed by North London, and the 13th century church beside it is the newcomer on the plot: the tree predates it by centuries at minimum. The district's Hundred Court once met in its shade, which tells you how long it has been the local landmark. London's runners-up are oaks rather than yews: Richmond Park and Greenwich Park hold hollow pollards in the 700 to 900 year range, survivors of the royal hunting grounds. But for sheer age, nothing in the capital touches the yew. Getting there is simple: Totteridge and Whetstone station on the Northern Line, then a 15 minute walk through the old village.",
   "faq": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are London's ancient trees free to visit?",
-      "a": "Fourteen of the twenty-three trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
+      "a": "Twenty-five of the twenty-six trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
     },
     {
       "q": "Why does London have so many ancient trees?",
@@ -840,6 +840,113 @@
         "height": 3024
       },
       "how_to_recognise": "You can recognise it by the circular green plaque at its foot naming it a Great Tree of London and one of the largest of its species in the country. It stands by the sports area and playground in Ravenscourt Park."
+    },
+    {
+      "id": "lon_024",
+      "name": "The Greenwich Park Shagbark Hickory",
+      "species": "Shagbark Hickory (Carya ovata)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Flower Garden, Greenwich Park, London SE10",
+        "latitude": 51.475428,
+        "longitude": 0.00518,
+        "neighbourhood": "Greenwich"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+        "https://www.graftingardeners.co.uk/greatest-trees-london/",
+        "https://commons.wikimedia.org/wiki/File:Greenwich_Park_Shagbark_Hickory_(1).jpg"
+      ],
+      "access": "Free; Royal Park, Flower Garden open daily (park opening hours apply)",
+      "transport": "Maze Hill station or Greenwich DLR/rail, about 15 minutes' walk; same park as lon_005",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Britain's largest shagbark hickory, by the reckoning of the Great Trees of London list, is an American nut tree just short of 100 feet tall, growing in the Flower Garden of Greenwich Park. The list named it one of the capital's Great Trees, and a tree-care firm's round-up of London's finest gives the same height. Nobody else has published a measurement, so treat the national title as the list's claim rather than a settled record.\n\nThe name describes the bark. On an old trunk it comes away in long shaggy strips that lift from the wood, which makes the tree look permanently half-undressed and is the quickest way to pick it out from its neighbours. The species belongs to the forests of eastern North America and reached Britain around 1629. This one is a long way from home and standing up well to it.\n\nWhat this tree does not have is a birthday. No source dates it, and nobody has published its girth either. If you know when it went in, or have stood at it with a tape measure, tell us.\n\nThe pin comes from the Great Trees map rather than a survey of the trunk, so expect to look around the Flower Garden in the south-east of the park. Greenwich Park's old sweet chestnut is a short walk away, which makes this an easy second tree for the same afternoon.",
+      "how_to_recognise": "You can recognise it by its shaggy bark, coming away from the trunk in long strips, and by its height, just under 100 feet. It stands in the Flower Garden in the south-east of Greenwich Park.",
+      "age_min": null,
+      "age_max": null,
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Greenwich_Park_Shagbark_Hickory_%281%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3024,
+        "height": 4032
+      }
+    },
+    {
+      "id": "lon_025",
+      "name": "The Battersea Park Hybrid Strawberry Tree",
+      "species": "Hybrid Strawberry Tree (Arbutus x andrachnoides)",
+      "age_estimate": "dating from the 1850s",
+      "age_min": 150,
+      "age_max": 175,
+      "location": {
+        "address": "near the south west corner of Ladies Pond, Battersea Park, London SW11",
+        "latitude": 51.478312,
+        "longitude": -0.155937,
+        "neighbourhood": "Battersea"
+      },
+      "verified_sources": [
+        "https://batterseapark.org/hybrid-strawberry/",
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+        "https://www.graftingardeners.co.uk/greatest-trees-london/",
+        "https://commons.wikimedia.org/wiki/File:The_Biggest_Strawberry_Tree_in_Britain.jpg"
+      ],
+      "access": "Free; Battersea Park is a public park, open daily",
+      "transport": "Battersea Park rail station about 10 minutes' walk; Queenstown Road about 12",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "A round green plaque on the railings calls this the biggest hybrid strawberry tree in Britain, and dates the claim to 1997. Since then the titles have multiplied and drifted apart. A tree-care firm's survey calls it the largest in Britain by girth, just under 60 feet tall, and a Champion Tree of London. The Friends of Battersea Park, who know it best, settle for \"second highest in the country\" and \"one of the treasures of the Park\". They also call it the most splendid of the park's strawberry trees, which is the one title nobody contests.\n\nIt is a cross between the Mediterranean strawberry tree and its Greek cousin, and it shows off in two ways. The bark peels back to red, so the trunk looks freshly skinned all year, and it flowers in autumn, when most of the park is shutting down. The Great Trees of London list dates it to the 1850s. Where it came from, the Friends admit, nobody knows.\n\nThe last few years have been hard on it. A storm in February 2022 tore off a major limb, and in September 2023 the next bough up came down too. It is still standing, and still a Great Tree of London.\n\nYou will find it near the south-west corner of the Ladies Pond, ten minutes on foot from Battersea Park station, and the pin is on the tree.",
+      "how_to_recognise": "You can recognise it by the peeling red bark and the round green plaque on the railings naming it the biggest hybrid strawberry tree in Britain. It stands near the south-west corner of the Ladies Pond.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "flowers",
+        "label": "October and November, when it flowers while the rest of the park winds down"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lon_026",
+      "name": "The Brockwell Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "500 to 700 years",
+      "age_min": 500,
+      "age_max": 700,
+      "location": {
+        "address": "Brockwell Park, Herne Hill, London SE24",
+        "latitude": 51.448108,
+        "longitude": -0.106166,
+        "neighbourhood": "Herne Hill / Brixton"
+      },
+      "verified_sources": [
+        "https://lambethnews.wordpress.com/2008/11/19/wood-you-believe-it-two-lambeth-trees-in-londons-top-20/",
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+        "https://commons.wikimedia.org/wiki/File:Brockwell_Oak_(1).jpg"
+      ],
+      "access": "Free; Brockwell Park is a public park, open daily",
+      "transport": "Herne Hill station about 10 minutes' walk; Brixton about 20",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "girth_cm": 600,
+      "story": "The Brockwell Oak was old before Brockwell Park existed, and old before the country estate the park was made from. Lambeth Council, which owns the ground, said so in 2008 when the tree was counted among London's Great Trees, and put its age at probably well over 700 years. The Great Trees of London list is more cautious: 500 to 700 years as of 2010. Read together, they put the acorn in the ground no later than the early 1500s, and around 1300 or before if the council is right. That band is the honest answer.\n\nEven at the cautious end it was more than a century and a half old when the Great Fire burned the City in 1666, a few miles to the north. The public, by contrast, are newcomers: the park only opened in 1892, when this oak was already several centuries into its life.\n\nLambeth gives its girth as over six metres. That is the council's figure rather than a published measurement, and it is a floor, not a ceiling. Photographs from May 2023 show it in full leaf, broad and heavy in open grass, with people picnicking in its shade.\n\nThe pin comes from the Great Trees map, not a survey of the trunk, so expect to look. You want an oak with a trunk over six metres round, standing in the open. It is not a subtle tree.",
+      "how_to_recognise": "You can recognise it by the trunk, which Lambeth Council puts at over six metres round, on a broad oak standing in open grass. It stands in Brockwell Park, ten minutes from Herne Hill station.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Brockwell_Oak_%2810%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4032,
+        "height": 3024
+      }
     }
   ]
 }
