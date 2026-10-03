@@ -2,6 +2,22 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 (session): the outlook after the demotion, and the Plus line settled
+
+Hidde asked for critical thinking on where the project stands. Measured against
+outside benchmarks: the ten-week search curve was several times a new domain's
+norm and also the exact thin-and-wide shape the September spam update hits;
+install, use and contribution rates are the rare numbers. Recovery is a
+six-month background process and the index stays as cut on 10-01.
+
+Decided by Hidde (DECISIONS.md 2026-10-03): app free for now and improving;
+Plus introduced slowly as a subscription, walks first, then season, then
+recognition; adding trees, photographing and correcting free for good; the
+full-app paywall only as a last experiment; no print book, no sponsorship, no
+one-time unlock, no new brand. Two convention lookups recorded in
+CONVENTIONS.md: where a paywall sits in a contribution product, and user
+lists (free and shareable in every reference). Nothing on the site changed.
+
 ## 2026-10-03 (session): the night line points at work the gates will accept
 
 Hidde asked whether the night run is built to scout and write trees productively and truthfully where the visitors are. It was not: the tools a run reads first pointed it at work its own gates refuse.

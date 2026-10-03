@@ -1,5 +1,61 @@
 # Decisions
 
+## 2026-10-03 - Plus stays a subscription, introduced slowly, and adding trees is free for good
+
+A long session on the outlook after the 09-28 demotion, which Hidde opened as
+"speak out my mind and have some critical thinking back", ended in his
+ruling: "keeping it free for now and improving but I'm going to slowly
+introduce plus and just keep adding features to it, keeping adding trees
+free."
+
+**What he decided.**
+
+- The app stays free for now. The priority until further notice is
+  improving the product and getting people in, not charging.
+- Plus is introduced slowly, as a subscription, one feature at a time: walks
+  first (his call), then the season tool, then species recognition for a
+  reader's own curiosity. Each addition goes to Plus; nothing free on the
+  day Plus opens is ever taken away (the 08-26 freeze stands).
+- Adding trees, photographing them and correcting pages are free, forever in
+  practice, in the app and on the web. Recognition of a tree somebody ADDS
+  runs free, because the species is our gain; recognition for your own
+  curiosity is Plus (the 09-11 ruling, kept).
+- If Plus with several features pushes nobody to buy over the long term, the
+  full-app paywall (seven open days, then pay, earlier installs
+  grandfathered) is the last experiment. Not before.
+- Rejected, by his word: a Polarsteps-style printed book ("I'm not going to
+  the Polarsteps print model"), sponsorship by cities and gardens ("I don't
+  want sponsorships"), and a one-time unlock in place of the subscription.
+  Also not pursued: a new brand or domain to escape the demotion.
+
+**What the session established on the way, kept because it is measured.**
+
+- Ten weeks in, the site's search curve was several times a new domain's
+  norm (weekly clicks 35 to 377 in seven weeks) and also the thin-and-wide
+  shape the September 2026 spam update targets: 2,400 pages taking under
+  half a click each per month, two human backlinks. The engagement numbers
+  are the rare ones: about one install per ten search visitors, 65 of 113
+  installs active, contributors at several times the usual one percent.
+- Recovery from a scaled-content demotion is quoted at roughly six months in
+  the case literature and arrives at a later update; the index stays where
+  the 10-01 cut left it (Hidde: "if it's good as it is let's not change").
+- Every reference that lives on contributions keeps contributing free
+  (CONVENTIONS.md 2026-10-03); user lists are free and shareable everywhere
+  (same day). Lists go into the build as the one feature that spreads.
+- The usage is occasional (a trip, two to five times a year) by Hidde's own
+  reading, and he does not expect a habit to form.
+
+**The session's dissent, recorded so it can be checked later rather than
+re-argued.** The advice given was: no subscription on an occasional product,
+a one-time unlock with recognition as the first paid thing, and walks never
+as the first thing behind a paywall (eleven taps on the web control in two
+months, so a zero there reads as nothing). Hidde heard it and decided as
+above. The check that settles it is the one written here: sheet views to
+purchases per feature stage, read after each stage rather than at a feeling.
+
+**Unchanged:** pricing and the paywall wiring are his alone (hard rule 2);
+content free on the web; no personal data beyond what accounts hold.
+
 ## 2026-10-02: Ambassadors, one person per place, a badge on both surfaces
 
 Hidde, on the first stranger to add photographs through the app (nine frames, two Paris trees, live within minutes): "email each person that adds trees to become the cities ambassador ... maybe we can even give them special tag if they want - share some responsibility and amplify them." Then: "ambassador idea is perfect lets implement it in both app and web." And on perks: "we can always add this later if it doesnt work."
