@@ -407,17 +407,7 @@ struct HomeView: View {
         // square and titling the result "Walks near you".
         if Launch.walks, !walksNear.isEmpty, location.known { walkShelf }
 
-        if let h = deck.home {
-            shelf(title: "Best in \(Self.withArticle(h.country))", subtitle: nil,
-                  trees: h.trees, season: false, more: .country(h.country))
-        }
-
         cityShelf
-
-        ForEach(deck.inSeason, id: \.collection.slug) { c in
-            shelf(title: c.collection.title, subtitle: nil, trees: c.trees,
-                  season: true, more: .collection(c.collection.slug))
-        }
 
         if !oldest.isEmpty {
             shelf(title: "The oldest trees we map",
@@ -425,6 +415,22 @@ struct HomeView: View {
                   trees: oldest,
                   season: false,
                   more: .index(.oldest))
+        }
+
+        countryShelf
+        speciesShelf
+
+        // THE NEW ROWS GO BELOW, never between (Hidde, 2026-10-04: "the rows
+        // already there were perfect i just wanted more below"). Everything
+        // above this line is the screen as he approved it.
+        if let h = deck.home {
+            shelf(title: "Best in \(Self.withArticle(h.country))", subtitle: nil,
+                  trees: h.trees, season: false, more: .country(h.country))
+        }
+
+        ForEach(deck.inSeason, id: \.collection.slug) { c in
+            shelf(title: c.collection.title, subtitle: nil, trees: c.trees,
+                  season: true, more: .collection(c.collection.slug))
         }
 
         if let t = deck.tallest {
@@ -436,9 +442,6 @@ struct HomeView: View {
                   season: false, more: .collection(t.collection.slug))
         }
         if deck.islands.count >= 3 { islandShelf }
-
-        countryShelf
-        speciesShelf
     }
 
     /// "the United States", "the Netherlands", but "Germany". The countries
