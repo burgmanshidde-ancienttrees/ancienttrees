@@ -173,5 +173,184 @@
   "verify_notes": "- Naturdenkmal 'Eine Esche Fraxinus excelsior', Gräfelfing, at the junction of Wendelsteinstrasse and Stefanusstrasse near the Würm bank, Gemarkung Gräfelfing Fl.Nr. 55 (de.wikipedia list, coordinate 48.11433, 11.43419).\n- COORDINATE DISAGREEMENT: Bayern LfU register point 48.11426, 11.43472 is about 40 m east of the Wikipedia coordinate. The pin here is a midpoint and therefore APPROXIMATE; the Commons photos are not geotagged. Same junction either way.\n- Alive but with a dead spire in the crown on the 2023-06-07 photo (Martinus KE, CC BY-SA 4.0), the rest in full leaf; a real ash-dieback or storm-damage risk, so flagged: the writer should say what is visible and nothing about its future. Also an info-board (Schild) photographed beside it, confirming it is the designated monument.\n- No age, girth or height in any source seen; leave empty and ask reader. Outside Munich city: label as Gräfelfing.",
   "story": "Look up at the top of this ash and you will see a bare dead spire standing out of a green crown. When it was photographed in June 2023 the tree was in full leaf everywhere except that one leader at the summit. Whether storm or disease took it, nobody has said, and we will not guess. What the photograph shows is the rest of the tree alive and leafing.\n\nIt is a protected natural monument of the Landkreis München, a European ash at the corner of Wendelsteinstraße and Stefanusstraße in Gräfelfing, close to the bank of the Würm. An information board stands beside it, which is the surest sign you have the right tree. Its trunk leans and forks.\n\nThe pin is honest about its limits. The district's list and the Bavarian state register place the tree about 40 metres apart, both at the same junction, so our pin sits between them. At the corner, look for the tall ash with the dead spire and the board beside it.\n\nNobody has published its age, girth or height. If you know any of them, or if you pass and see how the crown is doing now, tell us.\n\nGräfelfing lies about 12 km west of central Munich, so this is a suburban trip rather than a city walk. Check the S-Bahn for the way out; we have not timed the journey to the tree.",
   "written": true
+ },
+ {
+  "id": "muc_055",
+  "name": "The Silver Lime of Widerstandsplatz, Dachau",
+  "species": "Silver Lime (Tilia tomentosa)",
+  "age_estimate": "planted 1907",
+  "age_min": 115,
+  "age_max": 125,
+  "girth_cm": null,
+  "location": {
+   "address": "Konrad-Adenauer-Straße, corner of Pfarrstraße (Widerstandsplatz), 85221 Dachau",
+   "latitude": 48.2602,
+   "longitude": 11.43571,
+   "neighbourhood": "Dachau old town"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
+   "https://commons.wikimedia.org/wiki/File:Silberlinde_(Dachau)_-_2023-09-16_-_440a.jpg",
+   "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) point 'Linde auf Fl.Nr. 350' 48.26020, 11.43574"
+  ],
+  "access": "Free, on a public town square in Dachau's old town; no restrictions",
+  "transport": "S2 from Munich (Marienplatz/Hauptbahnhof) to Dachau station, roughly 25 minutes; about 0.8 km on foot from Dachau station (roughly 10 to 12 minutes). Dachau is outside Munich city; label as Dachau, not Munich.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "- Landkreis Dachau Naturdenkmal ND 05 (Sammelverordnung 1997), species stated as Silver Lime Tilia tomentosa; de.wikipedia list: 'Laut Informationstafel 1907 gepflanzt' (an information board gives the planting year; this is a stated planting date for this specimen, so age about 119 years, say 'planted 1907' and not a precise age beyond that). Commons description by Martinus KE repeats 1907 and the location Konrad-Adenauer-Strasse corner Pfarrstrasse, called Widerstandsplatz.\n- Pin: Wikipedia coordinate 48.26020, 11.43571 and Bayern LfU register point 48.26020, 11.43574 (Fl.Nr. 350) agree within 3 m; lone tree on a town square, so confirmed. No Commons file geotagged.\n- Alive: photographed in leaf 2023-09-16 (Commons, CC BY-SA 4.0, Martinus KE). Photo in hand, Cadiz standard not judged by this pass.\n- No girth or height in any source seen. Register only for monument status, plus the on-site board via Wikipedia: flagged, one source family (Wikipedia list reproduces the county ordinance).\n- Day-trip: Dachau is about 16 km from central Munich, S2.\n- Photo candidate: File:Silberlinde (Dachau) - 2023-09-16 - 440a.jpg, CC BY-SA 4.0, Martinus KE.",
+  "story": "This lime has a birth certificate of sorts: an information board gives the year it was planted, 1907. That makes it about 119 years old, and for once that is a date rather than an estimate.\n\nTwenty-six years after it went into the ground, the Nazi regime opened a concentration camp on the edge of this town, and the name Dachau took on the meaning it still carries. The lime grew on in the old town through all of it, and through the liberation in April 1945. Today it stands on the corner of Konrad-Adenauer-Straße and Pfarrstraße, on the square called Widerstandsplatz, Resistance Square.\n\nThe Landkreis Dachau made it a natural monument in a 1997 ordinance, which names it a silver lime, a species from south-eastern Europe rather than a native. Its leaves are dark above and felted white beneath, so the crown flickers pale when the wind turns them over. It is also the last lime of the year to flower, in July, after the native limes have finished, and the honey scent carries across the square.\n\nNobody has published its girth or its height. If you stand under it with a tape measure, tell us what you find.\n\nDachau lies about 16 km north-west of central Munich: roughly 25 minutes on the S2, then a ten-minute walk from the station.",
+  "how_to_recognise": "You can recognise it by its leaves, dark green above and felted white beneath, the mark of a silver lime. It stands alone on Widerstandsplatz, at the corner of Konrad-Adenauer-Straße and Pfarrstraße.",
+  "best_time": {
+   "months": [
+    7
+   ],
+   "kind": "flowers",
+   "label": "July, when the last lime of the summer flowers and the square smells of honey"
+  },
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Silberlinde_%28Dachau%29_-_2023-09-16_-_440a.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Martinus KE, via Wikimedia Commons",
+   "status": "approved",
+   "width": 2736,
+   "height": 3648
+  },
+  "photos": []
+ },
+ {
+  "id": "muc_056",
+  "name": "The Lime of Gottesackerstraße, Dachau",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "roughly 140 years",
+  "age_min": 120,
+  "age_max": 160,
+  "girth_cm": null,
+  "location": {
+   "address": "Corner of Gottesackerstraße and Färbergasse (former courtyard of the Unterbräu inn, Augsburger Straße 12), 85221 Dachau",
+   "latitude": 48.2605,
+   "longitude": 11.43303,
+   "neighbourhood": "Dachau old town"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
+   "https://commons.wikimedia.org/wiki/File:Linde_N%C3%A4he_Augsburger_Stra%C3%9Fe_(Dachau)_-_2023-09-16_-_429b.jpg",
+   "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) point 'Linde auf Fl.Nr. 84' 48.26046, 11.43307"
+  ],
+  "access": "Free, visible and reachable from the street corner (Gottesackerstraße / Färbergasse); the courtyard it once belonged to is no longer run as an inn garden. Check the fence line on arrival.",
+  "transport": "S2 from Munich (Marienplatz/Hauptbahnhof) to Dachau station, roughly 25 minutes; about 1.0 km on foot from Dachau station. Dachau is outside Munich city; label as Dachau.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "- Landkreis Dachau Naturdenkmal ND 04, 'Linde', de.wikipedia: 'im Hof der Gaststätte Unterbräu an der Augsburger Straße. Etwa 140 Jahre alt.' (the list does not say when the estimate was made; quote it as the list gives it and as vague as it is).\n- Commons description (Martinus KE, 2023-09-16): the tree stands at the corner of Gottesackerstrasse/Faerbergasse, 'frueher Hof der Gaststaette Unterbraeu (Augsburger Strasse 12). Die heutige Nachfolge-Gaststaette bewirtschaftet diesen Hof nicht mehr.' So it is no longer inside an inn courtyard but the exact fence line was not seen: access is stated cautiously.\n- Species given only as Linde: do not name a species.\n- Pin approximate: Wikipedia 48.26055, 11.43300 and LfU register 48.26046, 11.43307 agree within about 11 m, no geotagged file; the photo shows the corner.\n- Alive: photographed in leaf 2023-09-16 (CC BY-SA 4.0, Martinus KE).\n- No girth or height in any source.\n- Photo candidate: File:Linde Nähe Augsburger Straße (Dachau) - 2023-09-16 - 429b.jpg."
+ },
+ {
+  "id": "muc_057",
+  "name": "The Copper Beech of the Old Cemetery, Dachau",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "roughly 160 years",
+  "age_min": 140,
+  "age_max": 190,
+  "girth_cm": null,
+  "location": {
+   "address": "Alter Stadtfriedhof, about 20 m inside the Jocherstraße entrance, left side, 85221 Dachau",
+   "latitude": 48.26174,
+   "longitude": 11.43418,
+   "neighbourhood": "Dachau old town"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
+   "https://commons.wikimedia.org/wiki/File:Blutbuche_im_Stadtfriedhof_Dachau_-_2023-09-17_-_628a.jpg",
+   "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) point 'Blutbuche auf Fl.Nr. 720' 48.26175, 11.43408"
+  ],
+  "access": "Free, in Dachau's old town cemetery, open to visitors; stand quietly and keep to the paths",
+  "transport": "S2 from Munich (Marienplatz/Hauptbahnhof) to Dachau station, roughly 25 minutes; about 1.0 km on foot from Dachau station. Dachau is outside Munich city; label as Dachau.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "- Landkreis Dachau Naturdenkmal ND 07, 'Blutbuche': 'im alten Stadtfriedhof, ca. 20 m nach dem Eingang Jocherstrasse auf der linken Seite. Etwa 160 Jahre alt.' (de.wikipedia list reproducing the county ordinance).\n- Pin: Wikipedia 48.26174, 11.43418 and LfU register 48.26175, 11.43408 agree within 7 m, and the description gives a position relative to a gate (about 20 m inside, left): confirmed. No geotagged file.\n- HEALTH: the Commons caption (Martinus KE, 2023-09-17) says the tree does not look healthy, the crown is only sparsely leaved in mid-September before autumn leaf fall. Alive in 2023 but visibly declining; writer should state what the photograph shows and nothing about its future.\n- Photo: File:Blutbuche im Stadtfriedhof Dachau - 2023-09-17 - 628a.jpg, CC BY-SA 4.0. A sparse crown photo: judge against the Cadiz standard; if it fails, the tree still has a confirmed pin.\n- No girth or height in any source.",
+  "story": "When it was photographed in mid-September 2023, this copper beech already had the thin crown of a tree in November. The photographer said so plainly in his caption: the tree did not look healthy, and its leaves were sparse before autumn leaf fall had even begun. It was alive that summer, in leaf if not in full leaf. How it looks today is something a visitor can tell us better than any record can.\n\nIt stands in Dachau's Alter Stadtfriedhof, the old town cemetery, and the county list that protects it as a natural monument gives directions rather than coordinates: about 20 metres inside the Jocherstraße entrance, on the left. Those directions and two separate map points agree on the spot, so this is one tree you will not have to hunt for among the graves.\n\nThe same list puts its age at about 160 years. That figure arrives without a date or a method attached, so read it as a band, somewhere between 140 and 190 years. Either way, it has spent well over a century among the town's graves.\n\nA copper beech is the purple-leaved form of the common beech. No girth or height has been published for this one.\n\nThis is a working cemetery, so stand quietly and keep to the paths. It is about a kilometre on foot from Dachau station, which the S2 reaches from central Munich in roughly 25 minutes.",
+  "how_to_recognise": "You can recognise it by its purple-brown copper beech leaves on a thinly leaved crown. It stands about 20 metres inside the Jocherstraße entrance of the Alter Stadtfriedhof, on the left.",
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Blutbuche_im_Stadtfriedhof_Dachau_-_2023-09-17_-_628a.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Martinus KE, via Wikimedia Commons",
+   "status": "approved",
+   "width": 2736,
+   "height": 3648
+  },
+  "photos": []
+ },
+ {
+  "id": "muc_058",
+  "name": "The Lime of the Wayside Cross, Dachau",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "roughly 100 years",
+  "age_min": 90,
+  "age_max": 130,
+  "girth_cm": null,
+  "location": {
+   "address": "Etzenhausener Straße, about 20 m south of the Prälat-Pfanzelt-Straße junction, near Dachau Stadt station, 85221 Dachau",
+   "latitude": 48.26642,
+   "longitude": 11.43823,
+   "neighbourhood": "Dachau, Etzenhausener Straße"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
+   "https://commons.wikimedia.org/wiki/File:Linde_mit_Wegkreuz_-_N%C3%A4he_Bhf_DAH-Stadt_-_2023-09-03_-_136b.jpg",
+   "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) point 'Linde in Dachau auf Fl.Nr. 68' 48.26643, 11.43826"
+  ],
+  "access": "Free, beside a public street and a wayside cross; parked cars crowd the foot of it",
+  "transport": "S2 from Munich to Dachau, roughly 25 minutes from central Munich; the tree stands near Dachau Stadt station (walk time not measured). Dachau is outside Munich city; label as Dachau.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "- Landkreis Dachau Naturdenkmal ND 26, 'Linde': 'Etzenhausener Strasse, ca. 20 m suedlich der Abzweigung Praelat-Pfanzelt-Strasse. Etwa 100 Jahre alt.'\n- Pin approximate: Wikipedia 48.26642, 11.43823 and LfU register 48.26643, 11.43826 agree within 3 m, no geotagged file; the Commons photo shows a lime with a wayside cross (Wegkreuz) whose plaque carries a short prayer for field and house, from when the land was grain fields. Cross plus tree is the identifying pair.\n- Commons caption (Martinus KE, 2023-09-03) notes many parked cars at the foot of the tree.\n- Alive: photographed in leaf 2023-09-03.\n- Modest age (about a century) and a street tree: weakest of this batch on remarkableness; the cross is its story. Transport: the S-Bahn station name and walk time were not confirmed by this pass, only the Commons phrase 'Naehe Bahnhof Dachau Stadt'; writer should say 'near Dachau Stadt station' without a minute count.\n- Photo candidate: File:Linde mit Wegkreuz - Nähe Bhf DAH-Stadt - 2023-09-03 - 136b.jpg, CC BY-SA 4.0."
+ },
+ {
+  "id": "muc_059",
+  "name": "The Oak of the Leitenweg, Dachau",
+  "species": "Oak (Quercus sp.)",
+  "age_estimate": "roughly 220 years",
+  "age_min": 180,
+  "age_max": 260,
+  "girth_cm": null,
+  "location": {
+   "address": "Leitenweg, north of the Leitenberg, between Dachau and Prittlbach, about 15 m from the railway embankment, 85221 Dachau",
+   "latitude": 48.28083,
+   "longitude": 11.45055,
+   "neighbourhood": "Etzenhausen / Leitenberg"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
+   "https://commons.wikimedia.org/wiki/File:Eiche_am_Leitenweg,_Stamm_-_Dachau_-_2023-10-01_-_196a.jpg",
+   "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) ND-00410 'Eiche bei Etzenhausen auf Fl.Nr. 381' 48.28080, 11.45026"
+  ],
+  "access": "The Naturdenkmal list places it at the north-east corner of a plot at the northern approach to the Leitenberg, beside the Leitenweg track. Whether the plot is open land was not established; say that the tree is seen from the Leitenweg and ask readers to confirm.",
+  "transport": "Outside Munich and well beyond the old town: S2 to Dachau (roughly 25 minutes from central Munich), then about 3 km north on foot or by bike. Not a walk from the station; do not call it one.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "- Landkreis Dachau Naturdenkmal ND 27, 'Eiche': 'Nordostecke des Grundstuecks an der noerdlichen Auffahrt zum Leitenberg, ca. 15 m vom Bahndamm. Etwa 220 Jahre alt.' Oldest single tree in this batch by the county's own estimate.\n- COORDINATE DISAGREEMENT: de.wikipedia 48.28086, 11.45084 vs LfU register ND-00410 48.28080, 11.45026, about 43 m apart. Pin here is the midpoint and APPROXIMATE.\n- Commons (Martinus KE, 2023-10-01, CC BY-SA 4.0): 'Eiche am Leitenweg noerdlich des Leitenbergs, zwischen Dachau und Prittlbach'; trunk shot. Alive in leaf-fall season 2023.\n- Access is the weak point: 'Grundstueck' wording; if the plot is private land it must go to blocked. Lifecheck found no geotagged evidence (iNaturalist timed out). Deliver flagged.\n- Species only as Eiche.\n- Photo candidate: File:Eiche am Leitenweg, Stamm - Dachau - 2023-10-01 - 196a.jpg (a trunk close-up, may fail the Cadiz standard)."
+ },
+ {
+  "id": "muc_060",
+  "name": "The Clipped Lime Walk of the Dachau Palace Garden",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "roughly 290 years",
+  "age_min": 250,
+  "age_max": 320,
+  "girth_cm": null,
+  "location": {
+   "address": "Hofgarten of Dachau Palace (Schloss Dachau), 85221 Dachau",
+   "latitude": 48.25733,
+   "longitude": 11.43236,
+   "neighbourhood": "Dachau Schlossberg"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
+   "https://commons.wikimedia.org/wiki/File:Dachauer_Schlossgarten_Lindenalle.jpg",
+   "https://commons.wikimedia.org/wiki/Category:Lindenallee_im_Hofgarten_Dachau"
+  ],
+  "access": "Free, in the public palace garden (Hofgarten) of Schloss Dachau; check the garden's opening hours on arrival",
+  "transport": "S2 from Munich (Marienplatz/Hauptbahnhof) to Dachau station, roughly 25 minutes; Schloss Dachau stands on the hill above the old town, roughly 1.5 km from the station (uphill at the end). Dachau is outside Munich city; label as Dachau.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "- Landkreis Dachau Naturdenkmal ND 01, 'geschnittener Lindenlaubengang' (a clipped lime arbour/pergola), 'im Hofgarten des Schlosses. Etwa 290 Jahre alt.' (county ordinance via de.wikipedia). A compact single feature in a named garden, so a collectible ensemble point rather than an avenue; the writer should say plainly it is a trained, clipped walk.\n- Pin approximate: only the Wikipedia coordinate 48.25733, 11.43236; the Bayern LfU point layer has no row for it (the register rows nearby are other Dachau monuments), and no Commons file is geotagged. It marks the garden, not a trunk.\n- Photo: File:Dachauer Schlossgarten Lindenalle.jpg, Richard Huber, 2011-05, CC BY-SA 3.0, HDR image: old and HDR-processed, judge against the Cadiz standard before approving.\n- Alive: lifecheck RECENT, an iNaturalist observation dated 2025-07-15 within 40 m (proves something was observed there, not this arbour). The photo is 2011, so aliveness today is moderately supported only.\n- No girth, height or species beyond Tilia."
  }
 ]
