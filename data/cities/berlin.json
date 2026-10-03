@@ -1975,6 +1975,315 @@
       "verify_notes": "Register only (Land Berlin Naturdenkmal 1-86/B, designated 1993-03-02, protection reasons: Eigenart, Schönheit, landeskundliche Gründe, wissenschaftliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Register reasons: Eigenart, Schoenheit, landeskundliche Gruende. Sessile oak is the less common oak in Berlin parks. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://commons.wikimedia.org/wiki/File:Naturdenkmal_Trauben-Eiche_-_Winter-Eiche_Scheidemannstra%C3%9Fe,_Ecke_Gro%C3%9Fe_Querallee,_nahe_Carillon_2024-05-09_04.jpg. It proves something was photographed at the spot, not that it is this trunk; not individually checked. WRITER (2026-10-03): the four-reasons lead is counted from data/registers/berlin-naturdenkmale.json (638 rows: 408 cite one reason, 215 two, 13 three, 2 four; 3 rows cite wissenschaftliche Gruende).",
       "story": "Berlin's natural monument register lists more than six hundred trees, and only two of them are protected for four reasons at once. This oak is one. When the city made it Naturdenkmal 1-86/B on 2 March 1993, it cited distinctiveness, beauty, regional heritage and scientific grounds. Most entries in the register cite a single reason; only three in the whole list mention science at all.\n\nIt is a sessile oak, the less common of the two oaks in Berlin's parks. The pedunculate oak is the one you meet everywhere. This one stands at the corner of Scheidemannstrasse and the Grosse Querallee, near the Carillon in the Tiergarten.\n\nThe register's point marks the tree itself, and a photograph on Wikimedia Commons from May 2024 is titled with this exact place, Scheidemannstrasse at the corner of the Grosse Querallee, near the Carillon, so the pin is a firm one.\n\nWhat the register does not say is what the scientific interest is. It records the reason and leaves the explanation out.\n\nThe Tiergarten is a free public park, open at all hours, about ten minutes on foot from the Hauptbahnhof, and the Tulip Tree of Luiseninsel is under a kilometre away if you want to keep walking.\n\nNo source we have found gives an age, a girth or a height. If you know any of those, or why scientists cared about this oak, tell us.",
       "how_to_recognise": "You can recognise it as a sessile oak, its acorns sitting directly on the twig rather than on stalks. It stands at the corner of Scheidemannstrasse and the Grosse Querallee, near the Carillon in the Tiergarten."
+    },
+    {
+      "id": "ber_056",
+      "name": "The Black Locust of the Victory Column Island",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Grosser Tiergarten, traffic island at the Siegessaeule (Grosser Stern)",
+        "latitude": 52.514906,
+        "longitude": 13.350119,
+        "neighbourhood": "Tiergarten"
+      },
+      "verified_sources": [
+        "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Gewöhnliche_Robinie_Großer_Tiergarten,_Mittelinsel_Siegessäule_2024-05-09_16.jpg",
+        "https://www.wikidata.org/wiki/Q125772579"
+      ],
+      "access": "Free; Grosser Tiergarten is a public park open at all hours.",
+      "transport": "Bus 100 to Grosser Stern; S Tiergarten or S Bellevue about 12 to 15 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_note": "Commons file Naturdenkmal Gewöhnliche Robinie Großer Tiergarten, Mittelinsel Siegessäule 2024-05-09 16.jpg (CC0 (User:GPSLeo), taken 2024-05-09, geotagged 2 m from the register point).",
+      "how_to_recognise": "You can recognise it by the deeply furrowed bark, the paired thorns on its twigs and, in June, hanging white flowers. It stands on the island around the Victory Column, reached through the pedestrian tunnels.",
+      "verify_notes": "Register only (Land Berlin Naturdenkmal 1-34/B, Berlin WFS schutzgebiete:a_nd; de.wikipedia Naturdenkmale Bezirk Mitte). The register holds no age, girth or height, so none recorded and the page should ask the reader for a girth. PIN CONFIRMED: the register coordinate is tree-level and a geotagged Commons photograph named for this exact register entry lies 2 m from it (second positional source; CC0 (User:GPSLeo), 2024-05-09). Alive: lifecheck.py RECENT: https://www.inaturalist.org/observations/313329438 (2025-09-09). Stands on the central island around the Siegessaeule; the writer should check and state how pedestrians reach the island (not verified here). Register gives no age, girth or height.",
+      "story": "Berlin's most famous traffic island holds a 67-metre column, a gilded Victoria and a protected tree from North America. The column itself is a transplant: it was moved here from in front of the Reichstag in 1938 and 1939, when the Nazi planners rebuilt the Grosser Stern as a showpiece junction. Whether this black locust was already growing on the island then, or went in afterwards, no source records.\n\nThe species has its own long road to Berlin. Robinia comes from the eastern United States and reached Europe in the early seventeenth century, through the Paris garden of Jean Robin, the French king's gardener, whose name the genus still carries. It took to the dry, sandy soils of Brandenburg so well that it now grows wild across them. Its wood is famously hard and its twigs carry paired thorns, and in early summer it hangs out clusters of white flowers that smell of honey and draw bees from a long way off.\n\nThe island sits in the middle of a busy five-way roundabout. You reach it on foot through the pedestrian tunnels under the traffic, which come up on the island itself.\n\nBerlin lists the tree as Naturdenkmal 1-34/B and records nothing about its size or age. If you stand under it with a tape measure, send us the girth.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "early June, when white flower clusters hang from it and smell of honey"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ber_057",
+      "name": "The Plane Tree east of the Neuer See",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Grosser Tiergarten, east of the Neuer See (south of Grosser Weg)",
+        "latitude": 52.511926,
+        "longitude": 13.343364,
+        "neighbourhood": "Tiergarten"
+      },
+      "verified_sources": [
+        "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornblättrige_Platane_Großer_Tiergarten,_östlich_des_Neuen_Sees_(südlich_Großer_Weg)_2024-05-09_01.jpg",
+        "https://www.wikidata.org/wiki/Q125772602"
+      ],
+      "access": "Free; Grosser Tiergarten is a public park open at all hours.",
+      "transport": "S Tiergarten about 15 min walk, or S/U Zoologischer Garten about 12 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_note": "Commons file Naturdenkmal Ahornblättrige Platane Großer Tiergarten, östlich des Neuen Sees (südlich Großer Weg) 2024-05-09 01.jpg (CC0 (User:GPSLeo), taken 2024-05-09, geotagged 10 m from the register point).",
+      "how_to_recognise": "You can recognise it by the bark coming off in plates, leaving the trunk patched cream, olive and grey. It stands east of the Neuer See, just south of the Grosser Weg, about 200 metres from the protected plane at Lichtensteinallee.",
+      "verify_notes": "Register only (Land Berlin Naturdenkmal 1-56/B, Berlin WFS schutzgebiete:a_nd; de.wikipedia Naturdenkmale Bezirk Mitte). The register holds no age, girth or height, so none recorded and the page should ask the reader for a girth. PIN CONFIRMED: the register coordinate is tree-level and a geotagged Commons photograph named for this exact register entry lies 10 m from it (second positional source; CC0 (User:GPSLeo), 2024-05-09). Alive: lifecheck.py RECENT: https://www.inaturalist.org/observations/287767521 (2025-04-06). Stands beside the path network east of the lake. Register gives no age, girth or height. The Commons file is 10 m from the register point, a series of several photographs tagged with this register entry by name.",
+      "story": "On the night of 15 January 1919, Freikorps soldiers shot Karl Liebknecht in the dark beside the Neuer See and reported that he had been killed trying to escape. A memorial stone by the lake marks it now. This London plane stands a short walk east of the water, south of the Grosser Weg, and nobody has recorded whether it was there to see any of that.\n\nWhat it is, at least, is easy to say. The London plane is a city tree by temperament: it sheds its bark in flat plates, which is one reason it shrugs off soot and exhaust, and the shedding leaves a trunk patched in olive, cream and grey like old camouflage. In winter it keeps its seed balls, bristly brown spheres on long threads that hang on after the leaves have gone. Berlin planted the species along its streets by the thousand. Here, among the lawns and paths east of the lake, it has room to spread.\n\nThe Neuer See is one of the busiest corners of the Tiergarten, with a beer garden and rowing boats on the water, so this is a tree a lot of people walk past without knowing the city lists it. It is Naturdenkmal 1-56/B.\n\nThe register gives no age, girth or height. If you put a tape around the trunk at chest height, tell us what it says.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ber_058",
+      "name": "The Plane Tree of Lichtensteinallee",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Grosser Tiergarten, Lichtensteinallee at Grosser Weg, north of the Spanish Embassy",
+        "latitude": 52.511066,
+        "longitude": 13.345935,
+        "neighbourhood": "Tiergarten"
+      },
+      "verified_sources": [
+        "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornblättrige_Platane_Großer_Tiergarten,_Lichtensteinallee_Ecke_Großer_Weg,_nördlich_der_Spanischen_Botschaft_2024-05-09_12.jpg",
+        "https://www.wikidata.org/wiki/Q125772641"
+      ],
+      "access": "Free; Grosser Tiergarten is a public park open at all hours.",
+      "transport": "S/U Zoologischer Garten about 12 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_note": "Commons file Naturdenkmal Ahornblättrige Platane Großer Tiergarten, Lichtensteinallee Ecke Großer Weg, nördlich der Spanischen Botschaft 2024-05-09 12.jpg (CC0 (User:GPSLeo), taken 2024-05-09, geotagged 6 m from the register point).",
+      "how_to_recognise": "You can recognise it by the plane's patchwork bark and maple-shaped leaves. It stands where Lichtensteinallee crosses the Grosser Weg, just north of the Spanish Embassy.",
+      "verify_notes": "Register only (Land Berlin Naturdenkmal 1-87/B, Berlin WFS schutzgebiete:a_nd; de.wikipedia Naturdenkmale Bezirk Mitte). The register holds no age, girth or height, so none recorded and the page should ask the reader for a girth. PIN CONFIRMED: the register coordinate is tree-level and a geotagged Commons photograph named for this exact register entry lies 6 m from it (second positional source; CC0 (User:GPSLeo), 2024-05-09). Alive: lifecheck.py RECENT: https://www.inaturalist.org/observations/378912005 (2026-07-02). Stands at the crossing of Lichtensteinallee and Grosser Weg, on public park ground. Register gives no age, girth or height. Several Commons photographs tagged with the register name, all within 10 m of the point.",
+      "story": "The London plane may not be from London at all. It is a hybrid of the oriental plane and the American sycamore, and the cross seems to have happened by accident in the seventeenth century, somewhere the two parents grew side by side. One theory puts it in a London garden; another in Spain, which is why botanists also call it Platanus hispanica. This one stands a few steps north of the Spanish Embassy, which is either a coincidence or the tree being diplomatic.\n\nIts spot is a crossing: Lichtensteinallee meets the Grosser Weg here, two of the paths that thread the south-western Tiergarten towards the zoo and the Landwehr Canal. Hybrid vigour is part of why the London plane is everywhere in European cities. It grows fast, takes heavy pruning and poor soil, and puts up with air that kills more delicate trees. A plane in a park, with no kerb pressing on its roots, gets to show what it does when nobody is in its way.\n\nBerlin protects it as Naturdenkmal 1-87/B. A second protected plane stands about 200 metres to the north-west, east of the Neuer See, so the two make an easy pair on one walk.\n\nThe register stops at the species and the spot. No age, no girth, no height. If you know any of them, or measure the trunk yourself, we would like to hear.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ber_059",
+      "name": "The Oak between the Neuer See and the Landwehr Canal",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Grosser Tiergarten, between Neuer See and Landwehrkanal",
+        "latitude": 52.510739,
+        "longitude": 13.341389,
+        "neighbourhood": "Tiergarten"
+      },
+      "verified_sources": [
+        "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stiel-Eiche_-_Sommer-Eiche_Großer_Tiergarten,_zwischen_Neuem_See_und_Landwehrkanal_2024-05-09_07.jpg",
+        "https://www.wikidata.org/wiki/Q125772642"
+      ],
+      "access": "Free; Grosser Tiergarten is a public park open at all hours.",
+      "transport": "S/U Zoologischer Garten about 10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_note": "Commons file Naturdenkmal Stiel-Eiche - Sommer-Eiche Großer Tiergarten, zwischen Neuem See und Landwehrkanal 2024-05-09 07.jpg (CC0 (User:GPSLeo), taken 2024-05-09, geotagged 1 m from the register point).",
+      "how_to_recognise": "You can recognise it by the acorns hanging on long stalks and the short-stalked, round-lobed leaves. It stands on the strip of park between the Neuer See and the Landwehr Canal.",
+      "verify_notes": "Register only (Land Berlin Naturdenkmal 1-88/B, Berlin WFS schutzgebiete:a_nd; de.wikipedia Naturdenkmale Bezirk Mitte). The register holds no age, girth or height, so none recorded and the page should ask the reader for a girth. PIN CONFIRMED: the register coordinate is tree-level and a geotagged Commons photograph named for this exact register entry lies 1 m from it (second positional source; CC0 (User:GPSLeo), 2024-05-09). Alive: lifecheck.py RECENT: https://www.inaturalist.org/observations/340792382 (2026-03-01). Ten Commons photographs lie within 17 m of the register point, one at 1 m. Register gives no age, girth or height.",
+      "story": "This oak grows on a strip of park squeezed between two kinds of water: the Neuer See on one side, the Landwehr Canal on the other. One is a park lake, with rowing boats in summer. The other was dug between 1845 and 1850 to carry barges around the crowded Spree, and still carries tour boats past the zoo today.\n\nIt is a pedunculate oak, the common oak of the north German lowlands, and probably the single most useful tree a park can hold. Oaks support more insect life than almost any other European tree, and the insects feed the birds: woodpeckers, nuthatches and jays all work an old oak. In a good year the ground beneath it fills with acorns on long stalks, the peduncles the species is named for, and jays carry them off, bury them and forget a good share.\n\nBerlin protects it as Naturdenkmal 1-88/B, and a volunteer photographing the city's natural monuments for Wikimedia Commons left ten pictures of it, all taken within a few metres of the trunk.\n\nWhat nobody has written down is how old it is or how big. If you walk the strip between the lake and the canal, a girth measurement would tell us a great deal.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ber_060",
+      "name": "The Oak of Katharina-Heinroth-Ufer",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Gartenufer green space, Katharina-Heinroth-Ufer 2, Tiergarten",
+        "latitude": 52.508527,
+        "longitude": 13.344343,
+        "neighbourhood": "Tiergarten"
+      },
+      "verified_sources": [
+        "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stiel-Eiche_Katharina-Heinroth-Ufer_2_2024-05-09_09.jpg",
+        "https://www.wikidata.org/wiki/Q60465561"
+      ],
+      "access": "Free; public green strip along the Landwehrkanal, open at all hours.",
+      "transport": "S/U Zoologischer Garten about 8 to 10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_note": "Commons file Naturdenkmal Stiel-Eiche Katharina-Heinroth-Ufer 2 2024-05-09 09.jpg (CC0 (User:GPSLeo), taken 2024-05-09, geotagged 3 m from the register point).",
+      "how_to_recognise": "You can recognise it as one of a pair: two protected pedunculate oaks about 25 metres apart on the same canal-side strip. It stands on the Gartenufer green along the Landwehr Canal, at Katharina-Heinroth-Ufer 2.",
+      "verify_notes": "Register only (Land Berlin Naturdenkmal 1-20/B, Berlin WFS schutzgebiete:a_nd; de.wikipedia Naturdenkmale Bezirk Mitte). The register holds no age, girth or height, so none recorded and the page should ask the reader for a girth. PIN CONFIRMED: the register coordinate is tree-level and a geotagged Commons photograph named for this exact register entry lies 3 m from it (second positional source; CC0 (User:GPSLeo), 2024-05-09). Alive: lifecheck.py RECENT: https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stiel-Eiche_Katharina-Heinroth-Ufer_2_Berlin-Tiergarten_with_snow_2025-02-14_04.jpg (2025-02-14). Folded twins: a second Naturdenkmal pedunculate oak, register 1-97/B (52.508623, 13.344072), stands about 25 m away on the same riverside strip (Wikidata Q125772652); a visitor sees them as one stop, so fold into this entry. The address is the Gartenufer green strip along the Landwehrkanal, public; Register gives no age, girth or height.",
+      "story": "Two protected oaks stand on this stretch of canal bank, about 25 metres apart, and Berlin lists them as separate natural monuments, 1-20/B and 1-97/B. Standing there, you will read them as one place: a pair of pedunculate oaks on the green strip along the Landwehr Canal, a few minutes from the zoo.\n\nThe street is named after Katharina Heinroth, and she is worth knowing about. A zoologist, she took over the Berlin Zoo in 1945, when the war had left it in ruins and fewer than a hundred of its thousands of animals were still alive. She rebuilt it over the following decade and was the first woman to run a German zoo. The bank that carries her name is a quiet one: a canal path, joggers, the odd tour boat sliding past.\n\nPedunculate oaks are the native oak of this lowland, the tree that carries its acorns on long stalks and its leaves on almost none. Whether these two were planted together, or one came long after the other, no source says.\n\nThe register records nothing about their age or size. If you measure either trunk, or better both, tell us which one and what you found.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ber_061",
+      "name": "The Oak of Bellevueallee",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Grosser Tiergarten, between Bellevueallee and Strasse des 17. Juni",
+        "latitude": 52.515846,
+        "longitude": 13.356652,
+        "neighbourhood": "Tiergarten"
+      },
+      "verified_sources": [
+        "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_–_Traubeneiche_–_Großer_Tiergarten_–_Standortnr._17-229_Winter_20250218_080846.jpg"
+      ],
+      "access": "Free; Grosser Tiergarten is a public park open at all hours.",
+      "transport": "S Bellevue about 10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_note": "Commons file Naturdenkmal – Traubeneiche – Großer Tiergarten – Standortnr. 17-229 Winter 20250218 080846.jpg (CC BY-SA 4.0 (User:Vandeley), taken 2025-02-18, geotagged 6 m from the register point).",
+      "how_to_recognise": "You can recognise it as an oak whose species is disputed, so check whether the acorns hang on stalks. It stands between the Bellevueallee and the Strasse des 17. Juni, about ten minutes on foot from S Bellevue.",
+      "verify_notes": "Register only (Land Berlin Naturdenkmal 1-95/B, Berlin WFS schutzgebiete:a_nd; de.wikipedia Naturdenkmale Bezirk Mitte). The register holds no age, girth or height, so none recorded and the page should ask the reader for a girth. PIN CONFIRMED: the register coordinate is tree-level and a geotagged Commons photograph named for this exact register entry lies 6 m from it (second positional source; CC BY-SA 4.0 (User:Vandeley), 2025-02-18). Alive: lifecheck.py RECENT: https://commons.wikimedia.org/wiki/File:Naturdenkmal_%E2%80%93_Traubeneiche_%E2%80%93_Gro%C3%9Fer_Tiergarten_%E2%80%93_Standortnr._17-229_Sommer_20260624_072222.jpg (2026-06-24). Register names it a Stiel-Eiche (pedunculate oak); the Commons series by User:Vandeley, which cites the Berlin tree-cadastre site number 17-229, calls the same tree a Traubeneiche (sessile oak). SPECIES CONFLICT, so the species field is the genus level (Quercus sp.): the writer should say oak and ask the reader which. Photo is CC BY-SA 4.0 by User:Vandeley (attribution required), many seasonal photographs 2024-2026 within 6 m. Register gives no age, girth or height.",
+      "story": "Berlin's register and the photographer who has followed this oak through every season cannot agree on what it is. The register, which protects it as Naturdenkmal 1-95/B, calls it a pedunculate oak. That photographer, posting winter and summer pictures to Wikimedia Commons since 2024 and citing the city's own tree-cadastre number 17-229, calls it a sessile oak. Both are native here and they hybridise freely, so this is not a careless mistake on either side. It is a genuinely awkward question.\n\nYou can try to settle it yourself. A pedunculate oak hangs its acorns on long stalks and holds its leaves almost stalkless, with two small ear-like lobes where the leaf meets the twig. A sessile oak does the reverse: acorns sitting tight to the twig, leaves on a clear stalk and tapering at the base. Come in autumn and look at both.\n\nThe tree stands between the Bellevueallee and the Strasse des 17. Juni, the broad avenue named for the East German uprising of 17 June 1953, when workers across the GDR struck and Soviet tanks put them down. Schloss Bellevue, the German president's residence, is a few minutes away.\n\nThe register gives no age, girth or height. Tell us which oak you think it is, and if you can, how far round the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ber_062",
+      "name": "The Beech south of the Kleiner Stern",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Grosser Tiergarten, south of the Kleiner Stern, east of the Rosengarten",
+        "latitude": 52.513796,
+        "longitude": 13.360503,
+        "neighbourhood": "Tiergarten"
+      },
+      "verified_sources": [
+        "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Gewöhnliche_Buche_-_Rot-Buche_Großer_Tiergarten,_südlich_kleiner_Stern,_östlich_Rosengarten_2025-02-14_09.jpg"
+      ],
+      "access": "Free; Grosser Tiergarten is a public park open at all hours.",
+      "transport": "S Bellevue about 12 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_note": "Commons file Naturdenkmal Gewöhnliche Buche - Rot-Buche Großer Tiergarten, südlich kleiner Stern, östlich Rosengarten 2025-02-14 09.jpg (CC0 (User:GPSLeo), taken 2025-02-14, geotagged 2 m from the register point).",
+      "how_to_recognise": "You can recognise it by the smooth silver-grey bark and green, not purple, leaves. It stands just south of the Kleiner Stern junction, east of the Rosengarten.",
+      "verify_notes": "Register only (Land Berlin Naturdenkmal 1-96/B, Berlin WFS schutzgebiete:a_nd; de.wikipedia Naturdenkmale Bezirk Mitte). The register holds no age, girth or height, so none recorded and the page should ask the reader for a girth. PIN CONFIRMED: the register coordinate is tree-level and a geotagged Commons photograph named for this exact register entry lies 2 m from it (second positional source; CC0 (User:GPSLeo), 2025-02-14). Alive: lifecheck.py RECENT: https://www.inaturalist.org/observations/359811255 (2026-04-27). Register lists it as Gewoehnliche Buche - Rot-Buche (green-leaved common beech, not the copper form). Register gives no age, girth or height. At least ten Commons photographs within 8 m of the register point.",
+      "story": "Berlin's register takes the trouble to say exactly which beech this is: Gewoehnliche Buche, Rot-Buche, the plain green common beech. The name trips people up. Rotbuche means red beech, but it refers to the pinkish timber, not the leaves, and the purple-leaved copper beech planted in so many old parks is a separate form. This one is the original, the tree that would cover most of central Europe if people let it.\n\nThat is not an exaggeration. Left alone, beech outcompetes nearly everything on ordinary soils, mostly by shade: its leaves are layered so tightly that very little light reaches the ground, and seedlings of other trees give up underneath it. The bark stays smooth and silver-grey into old age, which is why beech trunks across Europe carry carved initials that have stretched with the tree for decades.\n\nIts spot is south of the Kleiner Stern, one of the path junctions in the eastern Tiergarten, and east of the Rosengarten. In late October and early November the crown goes from green to copper and orange, and the leaves that drop make a dry, rustling carpet that lasts most of the winter.\n\nBerlin lists it as Naturdenkmal 1-96/B and records neither its age nor its size. If you can get a tape around the trunk, we would like the figure.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the crown turns copper and orange"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "ber_063",
+      "name": "The Fluttering Elm near the Grosse Sternallee Bridge",
+      "species": "European White Elm (Ulmus laevis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Grosser Tiergarten, near the Grosse-Sternallee bridge",
+        "latitude": 52.511297,
+        "longitude": 13.356792,
+        "neighbourhood": "Tiergarten"
+      },
+      "verified_sources": [
+        "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Großer_Tiergarten,_nahe_Große-Sternallee-Brücke_2024-05-09_10.jpg",
+        "https://www.wikidata.org/wiki/Q125772646"
+      ],
+      "access": "Free; Grosser Tiergarten is a public park open at all hours.",
+      "transport": "S Bellevue or S Tiergarten about 12 to 15 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_note": "Commons file Naturdenkmal Flatter-Ulme Großer Tiergarten, nahe Große-Sternallee-Brücke 2024-05-09 10.jpg (CC0 (User:GPSLeo), taken 2024-05-09, geotagged 8 m from the register point).",
+      "how_to_recognise": "You can recognise it by the elm leaves, lopsided where the blade meets the stalk, and in March by dangling purple-brown flowers on a bare crown. It stands near the bridge on the Grosse Sternallee.",
+      "verify_notes": "Register only (Land Berlin Naturdenkmal 1-92/B, Berlin WFS schutzgebiete:a_nd; de.wikipedia Naturdenkmale Bezirk Mitte). The register holds no age, girth or height, so none recorded and the page should ask the reader for a girth. PIN CONFIRMED: the register coordinate is tree-level and a geotagged Commons photograph named for this exact register entry lies 8 m from it (second positional source; CC0 (User:GPSLeo), 2024-05-09). Alive: lifecheck.py RECENT: https://www.inaturalist.org/observations/366269018 (2026-05-28). Another registered elm (1-91/B, Flatter-Ulme, with beeches) stands to the north-west near Tiergartenstrasse 30; not delivered. Register gives no age, girth or height. Ten Commons photographs within 21 m.",
+      "story": "This elm flowers in March, weeks before its own leaves, in small purple-brown tassels that dangle on threads and are easy to mistake for nothing at all. A white elm in flower looks faintly smoky against a pale sky, and most people crossing the bridge nearby will walk past without looking up.\n\nUlmus laevis is at home in river meadows and on wet ground, and the Tiergarten, laid out on the low, damp land along the Spree, gives it what it likes. Old trees of the species can do something few European trees do: grow plank-like buttresses at the base of the trunk, the kind of thing you expect in a rainforest rather than a Berlin park. Whether this one has started, the register does not say. You will have to look.\n\nIt is the second protected white elm in the Tiergarten on our map; the other stands east of the English Garden. A third registered elm, listed together with beeches, grows north-west of here near Tiergartenstrasse 30. Berlin knows this one as Naturdenkmal 1-92/B.\n\nNo age, girth or height has been recorded. If you measure the trunk, or find buttresses at its foot, send us what you see.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
     }
   ]
 }

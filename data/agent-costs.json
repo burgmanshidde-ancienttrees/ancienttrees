@@ -9447,6 +9447,34 @@
    "tokens": 162000,
    "trees": 4,
    "note": "dre_007 parked in leads (approximate pin, no photo)"
+  },
+  {
+   "target": "Berlin",
+   "kind": "verify",
+   "tokens": 174000,
+   "trees": 8,
+   "note": "ber_056-063 Tiergarten Naturdenkmal, confirmed pins via register point plus geotagged CC0 photo"
+  },
+  {
+   "target": "Berlin",
+   "kind": "write",
+   "tokens": 151000,
+   "trees": 8,
+   "note": "8 stories, 2 best_time"
+  },
+  {
+   "target": "de/berlin",
+   "kind": "translate",
+   "tokens": 134000,
+   "trees": 0,
+   "note": "8 overlay entries plus title count 62"
+  },
+  {
+   "target": "dresden dre_007",
+   "kind": "photo",
+   "tokens": 0,
+   "trees": 1,
+   "note": "session work: Commons photo viewed and approved, German overlay written by the run"
   }
  ]
 }
