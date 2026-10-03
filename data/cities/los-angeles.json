@@ -3,7 +3,7 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "lax_005",
-  "intro": "Los Angeles kept its old trees in odd places: a hotel built its driveway around one, a church was built around another, the city's oldest palm has been dug up and moved three times, and a kauri at the Huntington survived having its taproot burned shut. Five of the ten here are Moreton Bay figs, which is what the city's documented tree history is made of. They are spread across sixty kilometres, so treat this as several trips: downtown, Griffith Park, Santa Monica, San Marino and Arcadia.",
+  "intro": "Los Angeles kept its old trees in odd places: a hotel built its driveway around one, a church was built around another, the city's oldest palm has been dug up and moved three times, and a kauri at the Huntington survived having its taproot burned shut. Five of the eleven here are Moreton Bay figs, which is what the city's documented tree history is made of. They are spread across sixty kilometres, so treat this as several trips: downtown, Griffith Park, Santa Monica, San Marino, Arcadia and the hilltop bunya pine of East Los Angeles.",
   "meta_description": "Los Angeles's oldest trees: the Miramar's Moreton Bay fig, the 1875 figs on the founding plaza, and a palm that has been moved three times.",
   "question_answer": "The oldest tree in Los Angeles is the palm in Exposition Park, a California fan palm documented in the city since the 1850s and already mature when it was first transplanted, which makes it at least 170 years old and probably more. It has been moved three times since, which is why a tree that old stands in a park laid out in 1913.",
   "question_meta": "A California fan palm in Exposition Park, in Los Angeles since the 1850s and moved three times, is the city's oldest documented tree.",
@@ -353,6 +353,37 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "lax_013",
+      "name": "El Pino (The Pine Tree)",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "age_estimate": "roughly 70 years or more",
+      "age_min": 70,
+      "age_max": 120,
+      "location": {
+        "address": "Southeast corner of Folsom Street and North Indiana Street, East Los Angeles / Boyle Heights border",
+        "latitude": 34.04328,
+        "longitude": -118.1924,
+        "neighbourhood": "Wellington Heights, East Los Angeles"
+      },
+      "story": "El Pino is a pine that is not a pine, on a lot nobody may enter, and East Los Angeles once petitioned to save it from a felling that was never coming.\n\nIt is a bunya pine, an Australian conifer of the monkey puzzle family, on a private lot at the southeast corner of Folsom Street and North Indiana Street, where Boyle Heights meets East Los Angeles. From the crest of the hill it is visible for miles, near Evergreen Cemetery, and that visibility is how it became a landmark. The 1993 film Blood In Blood Out used it as a location, and the neighbourhood took it up as a symbol of resistance to the gentrification changing the streets around it.\n\nIn December 2020 a rumour spread that it was about to be cut down. It was false, and a petition followed anyway. In March 2021 the lot's owner told the Los Angeles Times he had no plan to develop it, and accounts from 2022 still describe it standing.\n\nIts age is soft. One local history source says it arrived on the lot in the late 1940s, which would make it roughly seventy years old or more, and nobody we found has measured it. We have no sighting dated after 2022 either, so if you pass it, tell us how it looks.\n\nThe lot is private. This is a tree to see from the pavement on Folsom Street, not to walk up to.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/El_Pino_(The_Pine_Tree)",
+        "https://losangelesexplorersguild.com/2022/01/19/el-pino-famoso/",
+        "https://www.openstreetmap.org/node/5511025036"
+      ],
+      "access": "Stands on a private lot but is seen from the public streets, Folsom Street especially; view only, do not enter the lot.",
+      "transport": "Local buses to Folsom St and Indiana St; no rail station within an easy walk (not checked).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it from far off: a bunya pine visible for miles from the crest of the hill. It stands on a private lot at the southeast corner of Folsom Street and North Indiana Street; view it from the pavement."
     }
   ]
 }
