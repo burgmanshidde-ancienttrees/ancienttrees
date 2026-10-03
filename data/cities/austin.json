@@ -2,8 +2,8 @@
   "city": "Austin",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Nine trees, and three of them are groves, because that is how Austin's oldest survived. A live oak downtown lived through a deliberate poisoning in 1989. A block away is the grove the city was auctioned beneath in 1839. Four more, including a Himalayan cedar planted with its own imported soil, stand on the university's original forty acres. A wild state co-champion oak grew up on Waller Creek before downtown reached it. Two are worth the drive: a bald cypress written about in 1716, and a grove where a settler was killed fighting behind a trunk.",
-  "meta_description": "Nine remarkable trees in Austin: the Treaty Oak that survived poisoning, a state champion Durand oak, and a cypress older than Texas.",
+  "intro": "Ten trees, and three of them are groves, because that is how Austin's oldest survived. A live oak downtown lived through a deliberate poisoning in 1989. A block away is the grove the city was auctioned beneath in 1839. Four more stand on the university's original forty acres. A state co-champion oak grew up wild on Waller Creek. Sunset Valley, a town inside Austin, holds the national champion Bigelow oak. Two are worth the drive: a bald cypress written about in 1716, and a grove where a settler was killed fighting behind a trunk.",
+  "meta_description": "Ten remarkable trees in Austin: the Treaty Oak that survived poisoning, a state champion Durand oak, and a cypress older than Texas.",
   "question_meta": "Austin's oldest tree is Old Baldy, a bald cypress on Onion Creek past 500 years old. Where it stands, and eight more worth the walk.",
   "question_answer": "The oldest tree in Austin is Old Baldy, a bald cypress standing where Onion Creek runs through McKinney Falls State Park, about nine kilometres southeast of the centre. Texas Parks and Wildlife calls it the oldest bald cypress on public land in the state and puts it beyond five hundred years, with some accounts reaching five hundred and fifty. Father Antonio Olivares, the Franciscan who went on to found San Antonio, wrote about it in 1716, so it was already a landmark three centuries ago. Downtown, the Treaty Oak runs it close at roughly five hundred years and is the more famous of the two, largely because someone tried to kill it in 1989 and failed.",
   "question_context": "Ages here come from the Texas A&M Forest Service, which keeps a register of the state's historic trees, and from the bodies that manage each site: Texas Parks and Wildlife for Old Baldy, the University of Texas for the Battle Oaks, the Shoal Creek Conservancy for the Seiders grove. None of those figures comes from a core sample, so treat every year on this page as an estimate that the people closest to the tree are willing to stand behind. That register is a history of Texas trees rather than a survey of what still stands, and it is worth knowing that several of Austin's named trees are in it and gone. The Washington Elm on the capitol grounds was removed in 2000 after storm damage and decay. The Memorial Pecan, planted in 1945 to honour Texans who served in the war, came out during a capitol expansion in the early 1990s, and its wood was reportedly turned into benches. The pecans planted at Governor Hogg's grave at his own request are no longer there either. Only living trees appear on this page.",
@@ -19,7 +19,7 @@
       "a": "Yes. It stands in its own small park on Baylor Street, free and open, a few minutes west of the 6th Street bars. Roughly two thirds of the tree died after it was poisoned in 1989 and more than half the crown had to be cut away, so what you see is lopsided rather than the wide dome in the old photographs. It set acorns again in 1997 and has gone on doing so."
     },
     {
-      "q": "Why are three of the nine listed as groves rather than single trees?",
+      "q": "Why are three of the ten listed as groves rather than single trees?",
       "a": "Because that is what they are, and each one is the destination rather than any single trunk in it. The Auction Oaks, the Battle Oaks and the Seiders Oaks are all named, compact stands that people go to as a group, which is how the sources treat them and how the plaques read."
     },
     {
@@ -327,6 +327,39 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "aus_010",
+      "name": "The Sunset Valley Bigelow Oak",
+      "species": "Bigelow Oak (Quercus sinuata var. breviloba)",
+      "age_estimate": "",
+      "location": {
+        "address": "Sunset Valley Nature Area / South Hills Conservation Area, Williamson Creek, Sunset Valley, TX",
+        "latitude": 30.21883333,
+        "longitude": -97.81611111,
+        "neighbourhood": "Sunset Valley (enclave inside Austin)"
+      },
+      "story": "The national champion Bigelow oak stands in a city that sits entirely inside another city. Sunset Valley is an incorporated enclave with Austin on every side, and the tree grows on its conservation land beside Williamson Creek.\n\nSet the yardstick before the numbers. The Bigelow oak, also called white shin oak, is a small-tree oak, so this is not a giant by the standards of oaks in general. It is a giant by the standards of its own kind. Nominated to the Texas Big Tree Registry in February 1999 and remeasured in June 2024, it came in at 315 centimetres round, 13.4 metres tall and about 13 metres across the crown, which makes it the state and national champion for its variety.\n\nThe town knows what it has. Sunset Valley's public works department lists a champion Bigelow oak among the things the city is home to, though it uses an older botanical name, Quercus durandii, where the registry files the tree as a variety of Quercus sinuata. Shin oak names are a tangle, and the two records do not use the same label.\n\nIt is not alone. An iNaturalist observer walking the creek in 2016 noted several large shin oaks along it, so the champion is the biggest of a group rather than the only one.\n\nNobody has recorded its age, and nothing we hold gives a basis to estimate one. If you know when this tree took root, tell us.",
+      "verified_sources": [
+        "https://www.sunsetvalley.gov/departments/public-works-environmental-services/environmental-services/urban-forestry (live page 403s; readable via http://web.archive.org/web/20260309150009if_/ + same path, snapshot 2026-03-09)",
+        "Texas Big Tree Registry, Texas A&M Forest Service, TreeID 543 (non-commercial licence: verification only)",
+        "https://www.inaturalist.org/observations/43004147",
+        "https://www.inaturalist.org/observations/4224912",
+        "OpenStreetMap ways 549251160, 1081681031, 1081681035"
+      ],
+      "access": "Free. Stands in Sunset Valley's city-owned nature area beside Williamson Creek; OSM maps foot-designated dirt footways about 40 m from the pin and the registry lists the City of Sunset Valley as owner.",
+      "transport": "Sunset Valley sits inside Austin about 9 km south-west of downtown; Capital Metro bus is roughly 35 minutes (borderline for the day-trip boundary), then a short walk on the nature-area paths.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 315,
+      "height_m": 13.4,
+      "how_to_recognise": "You can recognise it by its size against the other shin oaks along the creek: a trunk 3.15 metres round under a crown about 13 metres wide. It stands in the Sunset Valley Nature Area beside Williamson Creek, some 40 metres off the paths."
     }
   ]
 }
