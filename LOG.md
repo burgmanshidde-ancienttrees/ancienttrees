@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (tenth attempt): one more Munich tree verified, still pace-capped
+
+Pull hit untracked register-candidate files; stashed them and rebased (my duplicate log commit skipped). Dispatched a verify pass on Munich: muc_061, Oak of the Hachinger Bach, Taufkirchen (flagged, approximate pin, one source, no photo) added to data/research/munich-verified.json; the register leftovers are exhausted (private plots, ensembles, no photo). It needs a photograph or confirmed pin and a story before it can merge, and muc_055 to 060 still wait on the 24h pace cap (clears after about 12:54 UTC tomorrow). Claim on munich stays. Wikimedia returned 429 after ~30 requests in minutes; clears in ~4 minutes. Next id after muc_061 is muc_062.
+
 ## 2026-10-03 night run (ninth attempt): nothing to ship, pace cap still shut
 
 Pulled; only claim is munich (stories written, six trees held for the 24h pace cap and the German overlay). leads.py --ready is 0. No dispatch: verify output could not merge under the cap. Next window after about 12:54 UTC tomorrow: merge muc_055 to 060 and the Nuremberg two, add muc ids to the de overlay.
