@@ -202,6 +202,8 @@ The Florida Forest Service publishes the register as a live ArcGIS Feature Servi
 
 **Richer counties not yet touched, ranked by row count: Miami-Dade (81), Monroe/Keys (54), Broward (43, partly used), Wakulla (38), Alachua/Gainesville (31).** Miami (#135), Key West (#79) and Fort Lauderdale's remaining rows are all worth a look before assuming this register is exhausted; Daytona Beach's own Volusia rows (2, distant) are not.
 
+**Update 2026-10-04: the whole register is now in the leads files, by script.** All 404 rows fetched from the FeatureServer; 387 are not yet ours. Written as leads with coordinates, girth (inches to cm) and height (feet to m), register link per row: Miami +64 (Simpson Park's hammock alone holds 15 champions within walking distance; Montgomery Botanical Center and Fairchild are paid or by-appointment, say so), Fort Lauderdale +24, Gainesville +9, Key West +8. Rows the register marks DEAD and rows on school grounds went to `blocked`. Under the 2026-09-28 rule one official register is enough for layer 1, so a verify pass on these is a life check, an access check and a pin check, not research; the licence still forbids republishing the dataset as dots.
+
 ## Madeira: IFCN's ASMAC survey, a register passcheck did not know about (2026-08-17)
 
 **USABLE, and found by walking a URL number range.** Portugal's ICNF register does not reach Madeira, because the archipelago is an autonomous region and keeps its own. The Instituto das Florestas e Conservacao da Natureza (IFCN Madeira) published a VALCONMAC/ASMAC survey, "Arvores e bosques singulares da Madeira e Porto Santo": **11 Madeira entries plus 1 on Porto Santo**, each a numbered PDF at
