@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (fourth attempt): fixed the red deploy
+
+Deploy and smoke test had been red since the Travilah Oak (wdc_016) went in: it became Washington's oldest tree, and the build refuses a question page whose answer does not name it. Rewrote the washington-dc question_answer to name the Travilah Oak first; the build now passes the old failure point (could not run astro locally, the allowlist refuses it). Nothing else shipped: leads.py --ready is 0, and the verified Munich, Nuremberg and Portland trees wait on the 24h pace window, so their claims stay in place rather than being force-released.
+
 ## 2026-10-03 night run (third attempt): nothing shippable, pace-capped
 
 Pulled, read claims (new-york is a session's, munich is the earlier attempt's, two stories waiting on the 24h pace window at 62 of 60). leads.py --ready is 0. Claimed Nuremberg for a verify pass, then found today's run had already mined it (12 leads, 2 verified trees held back, pins approximate); a second pass would buy nothing and a merge is refused by the pace cap. Released nothing by force: Nuremberg's claim stays until its 2 held trees merge. Next window after the cap clears: merge muc_055, muc_057 and the Nuremberg two, then Spokane or Leipzig verify.
