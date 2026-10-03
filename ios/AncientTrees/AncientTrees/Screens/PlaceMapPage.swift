@@ -122,6 +122,13 @@ struct PlaceMapPage: View {
                 .padding(.bottom, 10)
         } content: {
             VStack(alignment: .leading, spacing: 18) {
+                // Who looks after this city, komoot's person row, above the
+                // trees as the website prints it under the intro.
+                if case .city(let slug) = place {
+                    ForEach(catalogue.facets.ambassadors(city: slug), id: \.self) { name in
+                        AmbassadorRow(name: name, place: title)
+                    }
+                }
                 ForEach(inTown) { t in card(t) }
                 // A DAY TRIP AWAY, on the website's word (Hidde approved the
                 // Copenhagen mockup 2026-09-27, and found it missing here on
