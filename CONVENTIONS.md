@@ -2954,3 +2954,11 @@ Latin too. The name travels as data (`l` on the search index row,
 `scientific` on the browse.json facet, which had been sent since 2026-08-19
 and never decoded); `check_species_answer_to_their_latin_name()` in
 scripts/qa.py guards it.
+
+---
+
+## Discover: infinite scroll or more shelves? (2026-10-04)
+
+Hidde asked whether Discover should become an infinite scroll, with rows like tree islands, tallest trees and the best of the US. These are the references as remembered that day, not re-read. **True infinite scroll is used only for feeds of endless, similar items:** Instagram Explore, Pinterest, TikTok, Airbnb's results grid. **Catalogue browse screens are long but they END:** AllTrails Explore (near you, popular, lists, by activity, about ten shelves), komoot Discover (highlights and collections near you), the App Store's Apps tab (about twenty shelves), Netflix (forty-odd rows, each one a deliberate pick, personalised by row order rather than by endless loading), Spotify Home (shelves, near-personal ones first).
+
+**What we take:** more shelves, not infinite scroll. Personal shelves first (near you, your country), then editorial ones (collections, which the feed already sends as `collections`), then the indexes (countries, species), and the "map is still growing" card stays as the deliberate end. Every shelf follows the existing face rule: no shelf without photographs.
