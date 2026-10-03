@@ -1,0 +1,152 @@
+[
+ {
+  "id": "ber_042",
+  "name": "The Asia Minor Fontanesia of the Kleiner Tiergarten",
+  "species": "Fontanesia (Fontanesia phillyreoides)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Kleiner Tiergarten, east of Stromstrasse, Berlin-Moabit",
+   "latitude": 52.525694,
+   "longitude": 13.344167,
+   "neighbourhood": "Moabit, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte_(Berlin)",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kleinasiatische_Fontanesie_Kleiner_Tiergarten,_östlich_der_Stromstraße_ND-1-49_2024-06-16_06.jpg"
+  ],
+  "access": "Free, public park (Kleiner Tiergarten), open at all times.",
+  "transport": "U9 Turmstrasse, about 6 minutes on foot (approximate).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "REGISTER: Naturdenkmal 1-49/B (and twin 1-50/B at 52.525778,13.344472, about 25 m east; fold into this one entry, note both ids), Fontanesia phillyreoides, designated 1993-03-02, reasons Seltenheit and landeskundliche Gruende (rarity, local-history). Fontanesia is a rare privet-family shrub or small tree from Asia Minor; register itself names rarity as the reason. PIN: register point 52.525694,13.344167; CC0 Commons photos geotagged 2, 3 and 6 m away (52.52571372,13.34415403, file ...ND-1-49 2024-06-16 06/07/05) and for 1-50 geotagged 4 m away (...ND-1-50 2024-06-16 04/05/06). OSM node 12964352880 (natural=tree, ref 174, 52.52597,13.34434) is a park-inventory tree near 1-50, not authoritative. PHOTO CANDIDATES: Commons File:Naturdenkmal Kleinasiatische Fontanesie Kleiner Tiergarten, oestlich der Stromstrasse ND-1-49 2024-06-16 06.jpg, CC0, Leonhard Lenz, 2024-06-16 (photo pass must LOOK before approving; a shrub-form rarity may not fill a frame). No age and no girth in the register (Berlin Naturdenkmal data carries neither). Register, Wikipedia list and Wikidata all trace to the same 1993/2021 ordinance, so they count as ONE source; the independent evidence is the CC0 Commons photograph geotagged at the tree. Alive: photographed 2024-2025 by the same photographer. Photographer on Commons: Leonhard Lenz (CC0, no attribution required; record as Leonhard Lenz / Wikimedia Commons, CC0)."
+ },
+ {
+  "id": "ber_043",
+  "name": "The Tulip Tree of Luiseninsel",
+  "species": "Tulip Tree (Liriodendron tulipifera)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Grosser Tiergarten, Luiseninsel, Berlin-Mitte",
+   "latitude": 52.510725,
+   "longitude": 13.364493,
+   "neighbourhood": "Tiergarten, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte_(Berlin)",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Tulpenbaum_Großer_Tiergarten,_Luiseninsel_2024-05-09_09.jpg"
+  ],
+  "access": "Free, public park (Grosser Tiergarten), open at all times; Luiseninsel is a small island in the park reached by park paths.",
+  "transport": "S Tiergarten (S3, S5, S7, S9) about 12 minutes on foot (approximate); Bus 100/106 to Grosser Stern also near.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "REGISTER: Naturdenkmal 1-42/B, Liriodendron tulipifera, designated 1993-03-02, reason Schoenheit (beauty). Tulip trees are North American; none other in our Berlin set. PIN: register point 52.510725,13.364493; CC0 Commons photos geotagged 2 m (52.51072255,13.36451445), 4 m and 5 m away, taken 2024-05-09, file titles name the Luiseninsel. PHOTO CANDIDATES: Commons File:Naturdenkmal Tulpenbaum Grosser Tiergarten, Luiseninsel 2024-05-09 09.jpg, CC0, Leonhard Lenz (also 10, 08). OSM tree check hit a 429 rate limit, not needed given the geotag. No age and no girth in the register (Berlin Naturdenkmal data carries neither). Register, Wikipedia list and Wikidata all trace to the same 1993/2021 ordinance, so they count as ONE source; the independent evidence is the CC0 Commons photograph geotagged at the tree. Alive: photographed 2024-2025 by the same photographer. Photographer on Commons: Leonhard Lenz (CC0, no attribution required; record as Leonhard Lenz / Wikimedia Commons, CC0)."
+ },
+ {
+  "id": "ber_044",
+  "name": "The Dawn Redwood of the Rehberge",
+  "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Volkspark Rehberge, opposite the Freilichtbuehne entrance, Berlin-Wedding",
+   "latitude": 52.55441,
+   "longitude": 13.331564,
+   "neighbourhood": "Wedding, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte_(Berlin)",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Urweltmammutbaum_-_Chinesisches_Rotholz_Volkspark_Rehberge_gegenüber_Eingang_Freilichtbühne_Berlin-Wedding_2025-06-28_02.jpg"
+  ],
+  "access": "Free, public park (Volkspark Rehberge), open at all times.",
+  "transport": "U6 Afrikanische Strasse, about 8 minutes on foot (approximate).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "REGISTER: Naturdenkmal 1-44/B, Metasequoia glyptostroboides, designated 1993-03-02, reasons Schoenheit and Seltenheit. Distinct from the Englischer Garten dawn redwood lead (about 5 km away). PIN: register point 52.55441,13.331564; CC0 Commons photos geotagged 11 m, 11 m, 12 m away (52.55441256,13.33140632 etc), taken 2025-06-28, i.e. alive this summer. PHOTO CANDIDATES: Commons File:Naturdenkmal Urweltmammutbaum - Chinesisches Rotholz Volkspark Rehberge gegenueber Eingang Freilichtbuehne Berlin-Wedding 2025-06-28 02.jpg, CC0, Leonhard Lenz (also 01, 04). No age and no girth in the register (Berlin Naturdenkmal data carries neither). Register, Wikipedia list and Wikidata all trace to the same 1993/2021 ordinance, so they count as ONE source; the independent evidence is the CC0 Commons photograph geotagged at the tree. Alive: photographed 2024-2025 by the same photographer. Photographer on Commons: Leonhard Lenz (CC0, no attribution required; record as Leonhard Lenz / Wikimedia Commons, CC0)."
+ },
+ {
+  "id": "ber_045",
+  "name": "The Bosnian Maple of Gendarmenmarkt",
+  "species": "Italian Maple (Acer opalus subsp. obtusatum)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Gendarmenmarkt, south-west of the Deutscher Dom, corner of Charlottenstrasse, Berlin-Mitte",
+   "latitude": 52.512419,
+   "longitude": 13.391818,
+   "neighbourhood": "Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte_(Berlin)",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Bosnischer_Ahorn_Gendarmenmarkt,_südwestlich_des_Deutschen_Doms,_Ecke_Charlottenstraße_2024-05-19_06.jpg"
+  ],
+  "access": "Free, public square (Gendarmenmarkt), open at all times.",
+  "transport": "U2 or U6 Stadtmitte, about 3 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "REGISTER: Naturdenkmal 1-102/B-2, listed as Bosnischer Ahorn, Latin Acer opalus subsp. obtusatum, designated 1993-03-02, reasons Eigenart, Schoenheit, Seltenheit, landeskundliche Gruende (most reasons of any in this batch). SPECIES/PHOTO CAUTION: sibling register row 1-102/B-1 (52.512392,13.392032, about 14 m away) is a Spitz-Ahorn (Acer platanoides). Commons has files titled Bosnischer Ahorn at 8 m (...Ecke Charlottenstrasse 2024-05-19 05/06) and files titled Spitz-Ahorn at 2 to 6 m (...suedwestlich des Deutschen Doms 2024-05-19 03/04/07) and a Schnurbaum file at 8 m; two trees stand close, so the photo pass must not assume which trunk a file shows; if unsure, photo status held. The pin is confirmed to the register point and one of the geotagged photos but a recognition line is needed because the neighbour is 14 m away. Also on the square: Japanischer Schnurbaum 1-10/B-1/-2 (52.512881,13.391817, about 50 m north, another Naturdenkmal, Styphnolobium japonicum, reasons Eigenart and landeskundliche Gruende) not delivered here. OSM has unlabelled natural=tree nodes in the square, not decisive. PHOTO CANDIDATES: Commons File:Naturdenkmal Bosnischer Ahorn Gendarmenmarkt, suedwestlich des Deutschen Doms, Ecke Charlottenstrasse 2024-05-19 06.jpg, CC0, Leonhard Lenz (also 05). No age and no girth in the register (Berlin Naturdenkmal data carries neither). Register, Wikipedia list and Wikidata all trace to the same 1993/2021 ordinance, so they count as ONE source; the independent evidence is the CC0 Commons photograph geotagged at the tree. Alive: photographed 2024-2025 by the same photographer. Photographer on Commons: Leonhard Lenz (CC0, no attribution required; record as Leonhard Lenz / Wikimedia Commons, CC0)."
+ },
+ {
+  "id": "ber_046",
+  "name": "The Kentucky Coffeetree of Maerkischer Platz",
+  "species": "Kentucky Coffeetree (Gymnocladus dioica)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Maerkischer Platz, opposite Wallstrasse 53, Berlin-Mitte",
+   "latitude": 52.514002,
+   "longitude": 13.414256,
+   "neighbourhood": "Mitte (Maerkisches Viertel)"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte_(Berlin)",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Geweihbaum_Märkischer_Platz,_gegenüber_Wallstraße_53_2024-05-19_03.jpg"
+  ],
+  "access": "Free, public square (Maerkischer Platz), open at all times.",
+  "transport": "U2 Maerkisches Museum, about 3 minutes on foot (approximate).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "REGISTER: Naturdenkmal 1-53/B, Geweihbaum (Gymnocladus dioica), designated 1993-03-02, reason Seltenheit (rarity). Only coffeetree in our Berlin set. PIN: register point 52.514002,13.414256; CC0 Commons photos geotagged 7 m (52.51394338,13.41421292) and 8 m away, 2024-05-19. PHOTO CANDIDATES: Commons File:Naturdenkmal Geweihbaum Maerkischer Platz, gegenueber Wallstrasse 53 2024-05-19 03.jpg, CC0, Leonhard Lenz (also 04). About 600 m from ber_047 (a walkable pair). No age and no girth in the register (Berlin Naturdenkmal data carries neither). Register, Wikipedia list and Wikidata all trace to the same 1993/2021 ordinance, so they count as ONE source; the independent evidence is the CC0 Commons photograph geotagged at the tree. Alive: photographed 2024-2025 by the same photographer. Photographer on Commons: Leonhard Lenz (CC0, no attribution required; record as Leonhard Lenz / Wikimedia Commons, CC0)."
+ },
+ {
+  "id": "ber_047",
+  "name": "The Velvet-leaf Euodia of Fischerinsel",
+  "species": "Korean Evodia (Tetradium daniellii)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Fischerinsel, level with the Australian Embassy (Fischerinsel 5), Berlin-Mitte",
+   "latitude": 52.512828,
+   "longitude": 13.40883,
+   "neighbourhood": "Fischerinsel, Mitte"
+  },
+  "verified_sources": [
+   "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Mitte_(Berlin)",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Samthaarige_Stinkesche_auf_Höhe_der_Australischen_Botschaft_Fischerinsel_5_2024-05-19_11.jpg"
+  ],
+  "access": "Free, on the public street/green strip of Fischerinsel; embassy grounds are not entered, view from the public side.",
+  "transport": "U2 Maerkisches Museum or Spittelmarkt, about 5 minutes on foot (approximate).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "REGISTER: Naturdenkmal 1-54/B, Samthaarige Stinkesche (Tetradium daniellii), designated 1993-03-02, reasons Schoenheit and Seltenheit. No access question found, but it stands beside a diplomatic building so the access line says view from the street. PIN: register point 52.512828,13.40883; CC0 Commons photos geotagged 13 m, 16 m, 16 m away (52.51273466,13.4089498), 2024-05-19; the offset is consistent with a photographer standing back. PHOTO CANDIDATES: Commons File:Naturdenkmal Samthaarige Stinkesche auf Hoehe der Australischen Botschaft Fischerinsel 5 2024-05-19 11.jpg, CC0, Leonhard Lenz. No age and no girth in the register (Berlin Naturdenkmal data carries neither). Register, Wikipedia list and Wikidata all trace to the same 1993/2021 ordinance, so they count as ONE source; the independent evidence is the CC0 Commons photograph geotagged at the tree. Alive: photographed 2024-2025 by the same photographer. Photographer on Commons: Leonhard Lenz (CC0, no attribution required; record as Leonhard Lenz / Wikimedia Commons, CC0)."
+ }
+]
