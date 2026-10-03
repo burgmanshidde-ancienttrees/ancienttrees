@@ -6,7 +6,8 @@
    "sources": [
     "https://www.hortmag.com/visit-descanso-gardens-to-explore-the-rich-history-of-southern-california",
     "https://patch.com/california/lacanadaflintridge/heritage-oak-walk-at-descanso-gardens"
-   ]
+   ],
+   "pin_attempt": "2026-10-03: patch.com 2014 notice names only 'coast live oaks, Center Circle'; hortmag/atlas pages name no individual tree; Commons has one generic file 'Oaks - Descanso Gardens - La Canada Flintridge, CA - DSC00843.jpg'. An ensemble with no named or pinned trunk: no pin and no photo of a specific tree in reach. Needs the garden's map read by eye or a call to the garden."
   },
   {
    "name": "Montezuma Cypress (Taxodium mucronatum), California state champion",
@@ -21,7 +22,8 @@
    "register_id": "ca-bigtrees-42",
    "status": "lead",
    "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. State champion, 331.5 points; 19.2 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-   "sources": []
+   "sources": [],
+   "pin_attempt": "2026-10-03: point 34.045,-118.4584 is University High School Charter campus (iNat obs 150238666, CC BY, place University High School Charter, 15 m from the register point). School grounds: ships only with evidence the grounds are open. Not delivered."
   },
   {
    "name": "Flooded Gum (Eucalyptus grandis), California national champion",
@@ -36,7 +38,8 @@
    "register_id": "ca-bigtrees-62",
    "status": "lead",
    "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. National champion, 385.5 points; 17.7 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-   "sources": []
+   "sources": [],
+   "pin_attempt": "2026-10-03: UCLA (Flooded Gum champion, registry point 34.06569,-118.44117). iNat obs 344811347 (CC0, 2026-03-23, 3 m accuracy, casual) shows a huge trunk with a plant label 65 m from the registry point, https://www.inaturalist.org/observations/344811347, close-up of trunk only. No UCLA page naming the tree could be read (search only returned a snippet that a 216 ft champion stands at UCLA). Not delivered: no owner source, pin approximate at best."
   },
   {
    "name": "European Hackberry (Celtis australis), California state champion",
@@ -501,7 +504,8 @@
    "register_id": "ca-bigtrees-603",
    "status": "lead",
    "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. State champion (co-champion), 335.75 points; 15.1 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-   "sources": []
+   "sources": [],
+   "pin_attempt": "2026-10-03: register point 34.12629,-118.11412 is inside The Huntington (paid botanical garden, owner publishes its own trees). iNat obs 112447434 (CC0, 2022-04-22, 44 m accuracy, place The Huntington, 14 m from register point) has two CC0 photos but both are close-ups (foliage, bark base) so they fail the Cadiz standard as lead photos: https://inaturalist-open-data.s3.amazonaws.com/photos/189927357/medium.jpg and .../189927447/medium.jpg. huntington.org/verso/five-must-see-trees-huntington and /verso/2014/04/celebration-trees are reported by search to say a Montezuma cypress planted from seed in 1912 in the Rose Garden, but the host serves a Vercel challenge to curl and 429s WebFetch, so the page was never read and the claim is unverified. Next step: read that page in a browser; if it names the Rose Garden tree, deliver as register plus owner, approximate pin, and check the Rose Garden tree is the champion at the register point."
   },
   {
    "name": "Triangle Fig (Ficus triangularis), California national champion",

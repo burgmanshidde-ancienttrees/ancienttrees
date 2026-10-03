@@ -9525,6 +9525,14 @@
    "trees": 0,
    "wasted": 195445,
    "note": "Pin-and-photo pass on existing leads: 0 delivered. City Park oaks have no coordinates anywhere online, Chicago's register returns 403 and its two famous leads are dead, Dallas leads unplaceable. Lesson: a lead file without coordinates cannot be rescued by a pin pass; check for ANY coordinate source before dispatching."
+  },
+  {
+   "target": "los-angeles, austin, houston",
+   "kind": "verify",
+   "tokens": 216900,
+   "trees": 0,
+   "verified": 1,
+   "note": "Pin-and-photo pass on existing leads: 1 delivered (Austin, Sunset Valley Bigelow Oak, confirmed pin, no usable photo). LA champions have only close-up photos, Huntington blocks fetchers, Houston leads lack coordinates. Together with the New Orleans/Chicago/Dallas pass: ~410k for one tree. passcheck now prints the coordinate share before a verify claim."
   }
  ]
 }
