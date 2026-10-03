@@ -47,12 +47,16 @@
   {
    "register_id": "ND-05061",
    "name": "ND Nr. 35 Eiche in der Jakob-Wolff-Strasse",
-   "reason": "No photo or exact pin in reach: register 49.42985,11.10555 vs Wikipedia 49.42983,11.10578 (17 m apart); Commons has a 2017 Quercus robur photo, but the tree stands on a lawn in front of a residential block (Jakob-Wolff-Strasse 19/21/23), access unclear."
+   "reason": "No photo or exact pin in reach: register 49.42985,11.10555 vs Wikipedia 49.42983,11.10578 (17 m apart); Commons has a 2017 Quercus robur photo, but the tree stands on a lawn in front of a residential block (Jakob-Wolff-Strasse 19/21/23), access unclear.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "register_id": "ND-05058",
    "name": "ND Nr. 32 Eiche an der Endhaltestelle Dutzendteich (tram 4)",
-   "reason": "Register 49.43605,11.11527 vs Wikipedia 49.43595,11.11535 (12 m); no photograph found; pin not provably tree-level (OSM check timed out). Public tram terminus, so access is fine; deliver if a photo or OSM tree node confirms it."
+   "reason": "Register 49.43605,11.11527 vs Wikipedia 49.43595,11.11535 (12 m); no photograph found; pin not provably tree-level (OSM check timed out). Public tram terminus, so access is fine; deliver if a photo or OSM tree node confirms it.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "ND Nr. 12-21 oaks, Platnersberg (Erlenstegen)",
