@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-03 night run (third attempt): nothing shippable, pace-capped
+
+Pulled, read claims (new-york is a session's, munich is the earlier attempt's, two stories waiting on the 24h pace window at 62 of 60). leads.py --ready is 0. Claimed Nuremberg for a verify pass, then found today's run had already mined it (12 leads, 2 verified trees held back, pins approximate); a second pass would buy nothing and a merge is refused by the pace cap. Released nothing by force: Nuremberg's claim stays until its 2 held trees merge. Next window after the cap clears: merge muc_055, muc_057 and the Nuremberg two, then Spokane or Leipzig verify.
+
 ## 2026-10-03 night run (later window): US write pass, +4 trees
 
 Rung 5/4, first dispatch a write pass on the four verified US trees waiting for a story: Austin +1 (Sunset Valley Bigelow Oak, 10), Los Angeles +1 (El Pino, view from the street, 11), Sequoia +1 (Sentinel Tree, 7), Washington DC +1 (Travilah Oak, 16). All confirmed pins, no photos yet (two candidates for a viewing pass: Travilah Oak, Sentinel). Intro counts updated. Preflight 0 problems. Not done: refill pass for Munich (claimed by an earlier run) and the 49 source-only leads. Visits last 7 days: 2590.
