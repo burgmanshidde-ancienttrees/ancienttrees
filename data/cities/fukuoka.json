@@ -5,7 +5,7 @@
   "intro": "Fukuoka's oldest trees stand watch over shrines the city grew up around, not the other way around. A cedar Empress Jingu is said to have planted with her own hand still guards Kashii Shrine's inner grounds. A stubbornly hollow ginkgo, already declared a thousand years old on a stone plaque installed in 1913, anchors Hakata's biggest festival. A giant camphor stands in the exact middle of Tenjin's shopping crowds, and another keeps a quieter neighbourhood's own calendar entirely. None of them are Fukuoka's famous sights. All of them were already old when the city's postwar skyline was still rice paddies.",
   "meta_description": "Fukuoka's oldest trees guard its shrines: a legendary cedar, a hollow thousand-year ginkgo, and a camphor rooted in the middle of Tenjin.",
   "question_answer": "The oldest tree in Fukuoka is, by tradition, the Ayasugi, a Japanese cedar at Kashii Shrine said to be around 1,800 years old and planted, by legend, by Empress Jingu herself. It stands 21.5 metres tall beside the shrine's main hall in Higashi-ku.",
-  "question_meta": "Kashii Shrine's Ayasugi cedar, said to be 1,800 years old, is Fukuoka's oldest tree. Its legend, exact location, and fifteen more remarkable trees nearby.",
+  "question_meta": "Kashii Shrine's Ayasugi cedar, said to be 1,800 years old, is Fukuoka's oldest tree. Its legend, exact location, and sixteen more remarkable trees nearby.",
   "question_context": "Fukuoka's claim to its oldest tree rests on tradition rather than measurement. The Ayasugi's roughly 1,800-year figure comes from Kashii Shrine's own founding legend, that Empress Jingu planted a cedar branch from her armor here on returning from a third-century campaign, a story with no ring count or scientific dating behind it. A more conservative rival stands across town: the ginkgo at Kushida Shrine, which a 1913 monument already called over a thousand years old, though a later trunk measurement suggested a real age closer to 600. Neither figure is settled science, which is honest for a city where almost every old tree grows on shrine ground with a founding myth attached rather than a documented planting record. What is not in dispute is which tree carries more ceremonial weight: the Ayasugi's cuttings have traditionally been sent to the Imperial court, and its shrine is one of the few in Japan that still receives a personal envoy from the Emperor. Getting there: JR Kashii-jingu-mae Station, about a five-minute walk to the shrine's inner grounds.",
   "oldest_tree_id": "fuk_001",
   "faq": [
@@ -596,6 +596,45 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it as the broad camphor on the approach with a stone lantern and a lion-dog at its foot and a bamboo grove rising behind it.",
       "verify_notes": "Published 2026-10-02 on Hidde's own call, overruling the run's 'lead' verdict of 2026-10-01 (recorded in judgement.py: 'itoshima ik was er het was mooi en de foto ook dus keur hem goed'). Single source for the tree: his visit, photograph and GPS fix at the trunk on 2026-10-01, girth 500 cm by his estimate; the shrine's history from kyushu-jinja.com and yaokami.jp, neither of which mentions the tree. No register entry within 100 m, no article names it. Flagged; the page asks for a measurement and the shrine's own name for it. Day-trip tree on the Fukuoka page under its real place name, Itoshima."
+    },
+    {
+      "id": "fuk_018",
+      "name": "The Camphor of Kofuji Tenmangu",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "Age not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Tenmangu shrine (天満宮), Shima-Kofuji 2458, Itoshima, Fukuoka 819-1321",
+        "latitude": 33.561887,
+        "longitude": 130.159398,
+        "neighbourhood": "Shima-Kofuji, Itoshima"
+      },
+      "story": "Its long limbs reach out over the roof of the shrine it stands beside, which is the first thing you notice and the reason to come. The shrine is the Tenmangu of Shima-Kofuji, a village shrine in Itoshima dedicated to Sugawara no Michizane, the ninth-century scholar worshipped across Kyushu as Tenjin, the god of learning. Its yearly festival falls in late September. The village shares its name with the nickname of Mount Kaya, the 365-metre former volcano above this part of the Itoshima peninsula, which people here call Kofuji, Little Fuji, for its shape.\n\nThe tree has no record we can find, and no register lists it. What we have is one visit on a clear autumn morning in 2026: a camphor rising from the stone wall beside the shrine's steps, a trunk about seven metres round by the visitor's estimate, and a crown so wide it shades the whole approach. Nobody has dated it and we do not guess. If you go with a tape, measure it at chest height and tell us. If you know the village, tell us what they call this tree.",
+      "verified_sources": [
+        "https://yaokami.jp/1402656/",
+        "https://www.crossroadfukuoka.jp/spot/12484",
+        "Visit on 2026-10-02: photograph and GPS fix at the shrine, 45 m from the shrine's listed position; girth about 700 cm by estimate"
+      ],
+      "access": "Village shrine grounds, free, no gate.",
+      "transport": "Itoshima, about 22 km west of central Fukuoka: JR Chikuhi Line to Chikuzen-Maehara (about 40 minutes from Hakata), then about 4 km north-west, ten minutes by taxi or about an hour on foot",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/fuk_018-the-camphor-of-kofuji-tenmangu.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "59e829e3-784f-4302-a98e-2c40d1be8824",
+        "note": "Photographed by a reader and sent through the app (2026-10-02); a viewing pass approved it on 2026-10-04: Owner's own photograph; Hidde published it in session on 2026-10-04 ('put it live i vouch for it i was there'), never credited, as every own photograph. Whole tree in daylight and in leaf, crown and trunk both readable, shrine hall beside it for scale. Species seen: dense glossy evergreen crown of small oval leaves, long sinuous grey-brown limbs, fissured trunk: camphor. Fits the description: big camphor to the right of the shrine's stone steps, rising from the retaining wall, limbs reaching over the hall roof, shimenawa on the stone posts.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+      },
+      "girth_cm": 700,
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the big camphor to the right of the Tenmangu's stone steps, rising from the retaining wall, its long twisting limbs reaching out over the roof of the hall.",
+      "verify_notes": "Published 2026-10-04 on Hidde's own call ('put it live i vouch for it i was there'), overruling the run's 'lead' verdict of 2026-10-02. Single source for the tree: his visit, photograph and GPS fix on 2026-10-02 (sighting 59e829e3), girth 700 cm entered by hand as an estimate. Shrine identified from the fix: yaokami.jp lists a Tenmangu (Sugawara no Michizane, festival 25 September) at Shima-Kofuji 2458, position 33.56179, 130.15985, 45 m from the fix; the photograph shows a small shrine hall with stone steps and a shimenawa, matching. No register entry within 100 m, no article names the tree. Mount Kaya's nicknames and height from crossroadfukuoka.jp (Fukuoka prefecture tourism); the story does not claim the village is named after the mountain. Flagged; the page asks for a measurement and the tree's local name. Day-trip tree on the Fukuoka page under its real place name, Itoshima."
     }
   ]
 }

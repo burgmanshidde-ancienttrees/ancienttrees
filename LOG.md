@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 session: the Camphor of Kofuji Tenmangu, on Hidde's word
+
+- **Live:** fuk_018, a camphor beside the village Tenmangu at Shima-Kofuji, Itoshima, on the Fukuoka page as a day-trip tree, with Hidde's own photograph (uncredited, contributor id kept for takedown). He took it on 2026-10-02; the run had kept it as a lead (own sighting, no source near it, photograph never viewed). His call: "put it live i vouch for it i was there."
+- Shrine identified from the GPS fix: yaokami.jp lists a Tenmangu (Sugawara no Michizane) at Shima-Kofuji 2458, 45 m away; the photograph matches. Girth 700 cm is his estimate, so the tree is flagged and the page asks for a tape measurement and the local name. Same single-source footing as fuk_016.
+- Fukuoka counts updated (question meta "sixteen more", Japanese meta 17/16); Japanese overlay written; judgement recorded as a disagreement in judgements.json so `--learn` sees it.
+- The 175% size score in the digest was against a genus reference of ONE record (THIN), so it said little; the reason to publish is his visit and the photograph.
+
 ## 2026-10-03 night run (eighteenth attempt): nothing to ship, pace cap still shut
 
 Pulled; ready 0; scout_next names Bath (UK), not dispatched. Released the munich claim with --force (the verify pass is exhausted; muc_055 to 060 stay in data/research as files, still unmerged, held by the 24h pace cap until about 12:54 UTC 10-04). Next window after the cap: merge muc_055 to 060 and the Nuremberg two.
