@@ -746,6 +746,12 @@
    "note": "SCOUTED 2026-10-03 on scout_next.py --target. The City of Edinburgh Council open spatial data portal lists only 'Tree Preservation Orders' (INSPIRE MapServer layer 16, a legal protection layer, not a remarkable-tree register) and a 'Trees' FeatureServer on services-eu1.arcgis.com whose layer 0 returned no metadata (likely a full municipal inventory, which the semantic filter forbids importing). No heritage-tree list found. Route: Woodland Trust Ancient Tree Inventory (London gate applies) or a from-zero pass. Do not re-scout without a new angle."
   },
   {
+   "place": "Liverpool",
+   "country": "United Kingdom",
+   "status": "blocked",
+   "note": "SCOUTED 2026-10-04 on scout_next.py --target (#61). Liverpool City Council's Protected Tree Portal (liverpool.ezyportal.com/Tpos) is a TPO planning layer, not a remarkable-tree register, so a municipal inventory by another name (semantic filter). The only veteran-tree list is the Woodland Trust Ancient Tree Inventory (Childwall Woods holds 24 veterans): gated, no written permission. Same verdict as Bath and Edinburgh. Do not re-scout without a new angle (a Sefton Park or Calderstones heritage tree list)."
+  },
+  {
    "place": "Boston",
    "country": "United States",
    "status": "empty",
