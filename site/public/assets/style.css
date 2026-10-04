@@ -2935,3 +2935,25 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .content-page .page-place { margin: -0.5rem 0 1rem; font-size: 15px; color: var(--ink-light); }
 .content-page .page-place a { color: var(--ink); text-underline-offset: 3px; }
 .content-page .park-list { margin-top: 2rem; }
+
+/* THE LIST, CALMER (Hidde, 2026-10-04, on the live Barcelona sheet: "wat een
+   chaos"). Benchmarked against AllTrails' and Airbnb's phone lists: a card
+   has no hover state on a touch screen, nothing is underlined until it is
+   pressed, and every line of text starts at one left edge.
+   1. iOS keeps :hover on whatever was last touched, so the first card wore
+      the cream hover fill and an underlined title after a scroll. Hover and
+      the selected-pin highlight are a pointer's affordance and stay there.
+   2. The number badge pushed the title 36px right of its own meta and story.
+      A numbered list hangs its text off one edge (the ordered-list
+      convention), so meta, story and the tag row line up under the title. */
+@media (hover: none), (max-width: 800px) {
+  .tree-card:hover, .tree-card.active { background: #fff; box-shadow: none; }
+  .tree-card:hover .tree-card-photo img { transform: none; }
+  .tree-name a:hover { text-decoration: none; }
+}
+.tree-card:not(.tree-card-nonum) > .tree-meta,
+.tree-card:not(.tree-card-nonum) > .tree-story,
+.tree-card:not(.tree-card-nonum) > .tag-row-under,
+.tree-card:not(.tree-card-nonum) > .tree-card-seen-line { margin-left: calc(var(--gutter) + 36px); }
+.tree-card .tree-card-credit { margin: 8px var(--gutter) 0; }
+.tree-card:not(.tree-card-nonum) > .tree-card-credit { margin-left: calc(var(--gutter) + 36px); }

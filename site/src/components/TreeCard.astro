@@ -173,10 +173,6 @@ const metaHtml = metaParts.map(esc).join(" &middot; ");
           </div>
         )}
       </div>
-      {creditLine && (creditLink
-        ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
-        : <p class="tree-card-credit">{U.photoCredit(creditLine)}</p>
-      )}
     </Fragment>
   )}
   <div class="tree-card-top">
@@ -208,4 +204,11 @@ const metaHtml = metaParts.map(esc).join(" &middot; ");
   )}
   {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
   {text && <p class="tree-story">{text}</p>}
+  {/* The credit closes the card rather than sitting between the photograph
+      and the title, where it split the picture from its name (2026-10-04,
+      the Barcelona list). The licence asks for the credit, not its place. */}
+  {creditLine && (creditLink
+    ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
+    : <p class="tree-card-credit">{U.photoCredit(creditLine)}</p>
+  )}
 </article>
