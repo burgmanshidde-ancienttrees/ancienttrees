@@ -164,7 +164,7 @@ export const SHEET_JS = `
   if (intro) {
     intro.addEventListener('click', function(e) {
       if (!mq.matches || intro.classList.contains('is-open')) return;
-      if (e.target.closest('a')) return;
+      if (e.target.closest('a, .ambassadors')) return;
       intro.classList.add('is-open');
     });
   }

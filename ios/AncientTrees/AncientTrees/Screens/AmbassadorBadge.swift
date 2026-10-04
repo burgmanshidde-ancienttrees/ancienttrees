@@ -123,37 +123,41 @@ struct AmbassadorWantedRow: View {
     @State private var sending = false
     @State private var signingIn = false
 
+    /// THE WHOLE ROW IS THE CONTROL (Hidde, 2026-10-04: "just make the whole
+    /// thing clickable instead of adding a huge button"), an iOS list row with
+    /// a chevron, as Google Maps draws "Join Local Guides". The website's row
+    /// is the same (AmbassadorLine.astro).
     var body: some View {
-        HStack(spacing: 10) {
-            Image(systemName: "checkmark.seal")
-                .font(.system(size: 14, weight: .semibold))
-                .foregroundStyle(Brand.moss)
-                .frame(width: 32, height: 32)
-                .overlay(Circle().strokeBorder(Brand.moss, style: StrokeStyle(lineWidth: 1.5, dash: [3, 3])))
-                .accessibilityHidden(true)
-            VStack(alignment: .leading, spacing: 1) {
-                Text("\(place) is looking for an ambassador")
-                    .font(.system(size: 14, weight: .bold))
-                    .foregroundStyle(Brand.ink)
-                    .fixedSize(horizontal: false, vertical: true)
-                Text(asked ? "Thanks, we'll write to you." : "Help us improve this list.")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
+        Button(action: tap) {
+            HStack(spacing: 10) {
+                Image(systemName: "checkmark.seal")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Brand.moss)
+                    .frame(width: 32, height: 32)
+                    .overlay(Circle().strokeBorder(Brand.moss, style: StrokeStyle(lineWidth: 1.5, dash: [3, 3])))
+                VStack(alignment: .leading, spacing: 1) {
+                    Text("\(place) is looking for an ambassador")
+                        .font(.system(size: 14, weight: .bold))
+                        .foregroundStyle(Brand.ink)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Text(asked ? "Thanks, we'll write to you." : "Help us improve this list.")
+                        .font(.system(size: 12))
+                        .foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer(minLength: 8)
+                if !asked {
+                    Image(systemName: "chevron.right")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(Brand.inkSoft.opacity(0.6))
+                }
             }
-            Spacer(minLength: 8)
-            if !asked {
-                Button("Become the ambassador", action: tap)
-                    .font(.system(size: 13, weight: .bold))
-                    .buttonStyle(.bordered)
-                    .buttonBorderShape(.capsule)
-                    .tint(Brand.moss)
-                    .controlSize(.small)
-                    .frame(minHeight: 44)
-                    .disabled(sending)
-                    .accessibilityIdentifier("ambassador-apply")
-            }
+            .frame(minHeight: 44)
+            .contentShape(.rect)
         }
+        .buttonStyle(.plain)
+        .disabled(asked || sending)
+        .accessibilityHint(asked ? "" : "Become the ambassador")
         .accessibilityIdentifier("ambassador-wanted")
         .task(id: account.isSignedIn) {
             asked = await Submission.askedToBeAmbassador(city: place, token: await account.freshToken())

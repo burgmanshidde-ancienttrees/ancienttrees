@@ -68,16 +68,16 @@ const U = ui(lang);
 )}
 {people.length === 0 && place && requestCity && (
   <div class="ambassadors ambassador-open" data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
-    <div class="ambassador">
+    <button type="button" class="ambassador ambassador-apply" aria-label={`${U.ambassadorWanted(place)}. ${U.ambassadorApply}`}>
       <span class="ambassador-avatar ambassador-avatar-open" aria-hidden="true">
         <Fragment set:html={icon("seal-check", "bold", "ic")} />
       </span>
       <span class="ambassador-text">
         <span class="ambassador-name">{U.ambassadorWanted(place)}</span>
-        <span class="ambassador-role">{U.ambassadorWantedLine}</span>
+        <span class="ambassador-role" data-done={U.ambassadorApplied}>{U.ambassadorWantedLine}</span>
       </span>
-    </div>
-    <button type="button" class="ambassador-apply" data-done={U.ambassadorApplied}>{U.ambassadorApply}</button>
+      <svg class="ambassador-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
   </div>
   <script is:inline>
   document.addEventListener('DOMContentLoaded', function() {
@@ -85,9 +85,11 @@ const U = ui(lang);
     var C = window.atCollection;
     if (!box || !C) return;
     var btn = box.querySelector('.ambassador-apply');
+    var line = box.querySelector('.ambassador-role');
+    var first = line.textContent;
     var city = box.getAttribute('data-city');
     var SB = box.getAttribute('data-sb'), KEY = box.getAttribute('data-key');
-    function done() { btn.textContent = btn.getAttribute('data-done'); btn.disabled = true; box.classList.add('ambassador-asked'); }
+    function done() { line.textContent = line.getAttribute('data-done'); btn.disabled = true; box.classList.add('ambassador-asked'); }
     function headers(s, json) {
       var h = { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token };
       if (json) { h['Content-Type'] = 'application/json'; h['Prefer'] = 'return=minimal'; }
@@ -117,9 +119,8 @@ const U = ui(lang);
       }).catch(function() { btn.disabled = false; });
     });
     document.addEventListener('at:signedout', function() {
-      btn.textContent = btn.getAttribute('data-label'); btn.disabled = false; box.classList.remove('ambassador-asked');
+      line.textContent = first; btn.disabled = false; box.classList.remove('ambassador-asked');
     });
-    btn.setAttribute('data-label', btn.textContent);
   });
   </script>
 )}
@@ -140,16 +141,18 @@ const U = ui(lang);
   .ambassador-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
   .ambassador-name { font-size: 14px; font-weight: 700; color: var(--ink); }
   .ambassador-role { font-size: 12px; color: var(--ink-mid); }
-  .ambassador-open { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; }
-  .ambassador-open .ambassador { flex: 1 1 220px; min-width: 0; }
+  /* The open seat is ONE tappable row (Hidde, 2026-10-04: "just make the
+     whole thing clickable instead of adding a huge button"): the person row
+     above with a chevron, as an iOS list row or Google Maps' "Join Local
+     Guides" row reads. Once asked, the chevron goes and the grey line says
+     thanks. */
+  .ambassador-apply { width: 100%; padding: 6px 0; border: 0; background: none;
+    font: inherit; text-align: left; cursor: pointer; color: inherit; min-height: 44px; }
+  .ambassador-apply:hover .ambassador-name { text-decoration: underline; }
+  .ambassador-apply:disabled { cursor: default; }
+  .ambassador-apply .ambassador-text { flex: 1; }
+  .ambassador-chev { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
+  .ambassador-asked .ambassador-chev { display: none; }
   .ambassador-avatar-open { background: transparent; border: 1.5px dashed var(--moss); }
   .ambassador-avatar-open :global(.ic) { width: 16px; height: 16px; fill: var(--moss); }
-  .ambassador-apply {
-    flex: none; min-height: 36px; padding: 0 14px; border-radius: 999px;
-    border: 1.5px solid var(--moss); background: transparent; color: var(--moss);
-    font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
-  }
-  .ambassador-apply:hover { background: var(--moss-light); }
-  .ambassador-apply:disabled { cursor: default; opacity: 1; }
-  .ambassador-asked .ambassador-apply { border-color: transparent; padding: 0; font-weight: 500; color: var(--ink-mid); }
 </style>

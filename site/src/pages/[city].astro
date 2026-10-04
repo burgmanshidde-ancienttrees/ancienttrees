@@ -287,8 +287,8 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="sheet-body">
       <div class="city-intro">
         <p class="lede">{intro}</p>
-        <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={cityName} />
         <button type="button" class="city-intro-more">Read more</button>
+        <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={cityName} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
           <span class="passport-total" id="passport-total"></span>
