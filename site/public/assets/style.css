@@ -360,7 +360,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .tree-card.mine-card .mine-state { margin-left: var(--gutter); margin-right: var(--gutter); }
 .panel-foot { padding: var(--gutter); font-size: 13px; color: var(--ink-mid); }
 .subtle-suggest b { color: var(--ink); font-weight: 700; }
-.panel-foot h2 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; font-weight: 400; margin-bottom: 0.75rem; }
+.panel-foot h2 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; margin-bottom: 0.75rem; }
 .panel-foot dt { font-weight: 500; margin-top: 1rem; }
 .panel-foot dd { font-weight: 300; margin-top: 0.3rem; }
 .panel-foot .suggest { border-top: 1px solid var(--cream-dark); margin-top: 1.5rem; padding-top: 1.25rem; color: var(--ink-light); }
@@ -370,9 +370,13 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .crumbs { font-size: 12px; color: var(--ink-light); margin-bottom: 1.25rem; }
 .crumbs a { color: var(--ink-light); text-decoration: none; }
 .crumbs a:hover { color: var(--moss); }
-.content-page h1 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 2.1rem; font-weight: 400; line-height: 1.2; margin-bottom: 1rem; }
-.content-page h2 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.4rem; font-weight: 400; margin: 2.25rem 0 0.75rem; }
-.content-page h3 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.15rem; font-weight: 400; margin: 1.5rem 0 0.35rem; }
+/* One heading style on every page type (Hidde, 2026-10-04: "equal titles").
+   Each rule carried font-weight twice, 750 and then 400, and the 400 won, so
+   content pages had thin headings beside the bold home and tree pages, and a
+   bold card title out-shouted the section heading above it. */
+.content-page h1 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 2.1rem; line-height: 1.2; margin-bottom: 1rem; }
+.content-page h2 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.4rem; margin: 2.25rem 0 0.75rem; }
+.content-page h3 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.15rem; margin: 1.5rem 0 0.35rem; }
 .answer-first { font-size: 1.05rem; line-height: 1.75; margin-bottom: 1rem; }
 /* The scientific name under a species H1, iNaturalist's layout: common name
    first, Latin in italics beneath, quieter than the heading. */
