@@ -33,6 +33,7 @@ import { getCollection } from "astro:content";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity } from "../../lib/trees";
 import { usablePhoto, thumbUrl, creditRequired, creditName } from "../../lib/images";
 import { ageShort } from "../../lib/age-short";
+import { seasonKey } from "../../lib/phenology";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -71,7 +72,7 @@ export async function GET() {
           ? { p: thumbUrl(photo.url, 500), p9: thumbUrl(photo.url, 900) }
           : {}),
         ...(credit ? { cr: `${credit} (${photo!.license})` } : {}),
-        ...(tree.best_time?.months?.length ? { bt: tree.best_time.months } : {}),
+        ...(tree.best_time?.months?.length ? { bt: tree.best_time.months, sk: seasonKey(tree) ?? "peak" } : {}),
       };
     }
   }

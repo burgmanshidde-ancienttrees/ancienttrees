@@ -199,6 +199,10 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// TreeCard stops deciding it a second time. Nil when there is nothing
     /// short to say; a `var` with a default for the memberwise initialiser.
     public var ageShort: String? = nil
+    /// Which season chip this tree wears while its best_time is now ("bloom",
+    /// "autumn", "fruit", "leaves", "catkins", "winter", "peak"), decided on the
+    /// website (phenology.ts seasonKey, 2026-10-04). Nil without a best_time.
+    public var seasonKey: String? = nil
 
     public struct DayTrip: Codable, Hashable, Sendable {
         public let place: String
@@ -215,6 +219,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case ageMin = "age_min"
         case ageMax = "age_max"
         case ageShort = "age_short"
+        case seasonKey = "season_key"
         case access, story, url, precision, photo, photos, peak
         case recogniseRaw = "how_to_recognise"
         case paidEntryRaw = "paid_entry"

@@ -2836,6 +2836,27 @@ more and get directions" line went, because the whole card now says it. On
 the city page a card no longer selects its pin on tap; the pin still does,
 and on a desktop hovering a card lights its pin.
 
+## A tree that is at its best now: a soft chip naming the moment (2026-10-04)
+
+Hidde: "ik vind ook de hele at it's best now titel niet nice en de tag lelijk
+... is autumn colours or bloom niet veel nicer met licht oranje kleur of licht
+roze kleur."
+
+**Airbnb** puts "Guest favourite" as a small white pill, sentence case, on the
+photograph's top left. **AllTrails** marks a list photo the same way, and its
+difficulty words are coloured text rather than filled blocks. Neither shouts
+in capitals on a saturated fill. Material's "assist chip" and Apple's capsule
+labels both use a light tint with darker text of the same hue.
+
+**What we do:** the chip names the moment ("In bloom", "Autumn colour", "In
+fruit", "Fresh leaves", "Catkins", "Winter shape", "In season" when the kind
+is unknown) on a tint of its own colour: pink, orange, amber, green, straw,
+grey, each with its text at the dark end of the hue for contrast. On the
+photograph's top left when there is one, closing the meta line when there is
+not, and in the tree page's season block instead of "AT ITS BEST NOW". The key
+is decided on the server and travels as `season_key`; the app draws the same
+chip on its card photograph.
+
 ## Asking for somebody to look after a place: the open seat (2026-10-04)
 
 Hidde: "Is het een idee om de ambassadeur regel die we toegevoegd hebben bij

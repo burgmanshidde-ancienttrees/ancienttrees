@@ -163,6 +163,9 @@ export interface UIStrings {
   /** The short age on a list card (age-short.ts, 2026-10-04): "250 years",
    *  "135-175 years". The figure arrives already formatted. */
   ageYears: (n: string) => string;
+  /** The season chip's words (phenology.ts seasonChip, 2026-10-04): the moment
+   *  named in sentence case, shown only while it is true. */
+  seasonChip: Record<string, string>;
   /** The ambassador line under a city intro (2026-10-02): a reader who looks
    *  after the place and consented to be named. Nothing prints without that
    *  consent, so this string is only ever reached with a real name. */
@@ -520,6 +523,7 @@ const EN: UIStrings = {
   photoCredit: (credit) => `Photo: ${credit}`,
   ambassadorRole: (place) => `${place} ambassador`,
   ageYears: (n) => `${n} years`,
+  seasonChip: { bloom: "In bloom", autumn: "Autumn colour", fruit: "In fruit", leaves: "Fresh leaves", catkins: "Catkins", winter: "Winter shape", peak: "In season" },
   ambassadorWanted: (place) => `${place} is looking for an ambassador`,
   ambassadorWantedLine: "Help us improve this list.",
   ambassadorApply: "Become the ambassador",
@@ -956,6 +960,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cuida la lista de ${place}`,
     ageYears: (n) => `${n} años`,
+    seasonChip: { bloom: "En flor", autumn: "Color de otoño", fruit: "Con fruto", leaves: "Hojas nuevas", catkins: "Amentos", winter: "Silueta invernal", peak: "En temporada" },
     ambassadorWanted: (place) => `Se busca quien cuide la lista de ${place}`,
     ambassadorWantedLine: "Ayúdanos a mejorar esta lista.",
     ambassadorApply: "Quiero hacerlo",
@@ -1205,6 +1210,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cura la lista di ${place}`,
     ageYears: (n) => `${n} anni`,
+    seasonChip: { bloom: "In fiore", autumn: "Colori d'autunno", fruit: "Con frutti", leaves: "Foglie nuove", catkins: "Amenti", winter: "Sagoma invernale", peak: "Di stagione" },
     ambassadorWanted: (place) => `Cerchiamo chi curi la lista di ${place}`,
     ambassadorWantedLine: "Aiutaci a migliorare questa lista.",
     ambassadorApply: "Mi candido",
@@ -1454,6 +1460,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Ambassadeur van ${place}`,
     ageYears: (n) => `${n} jaar`,
+    seasonChip: { bloom: "In bloei", autumn: "Herfstkleur", fruit: "Vruchten", leaves: "Vers blad", catkins: "Katjes", winter: "Wintersilhouet", peak: "Nu op z'n mooist" },
     ambassadorWanted: (place) => `${place} zoekt een ambassadeur`,
     ambassadorWantedLine: "Help ons deze lijst te verbeteren.",
     ambassadorApply: "Ik doe mee",
@@ -1703,6 +1710,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Betreut die Liste für ${place}`,
     ageYears: (n) => `${n} Jahre`,
+    seasonChip: { bloom: "In Blüte", autumn: "Herbstfärbung", fruit: "Früchte", leaves: "Frisches Laub", catkins: "Kätzchen", winter: "Wintersilhouette", peak: "Jetzt am schönsten" },
     ambassadorWanted: (place) => `Wer betreut die Liste für ${place}?`,
     ambassadorWantedLine: "Hilf uns, diese Liste zu verbessern.",
     ambassadorApply: "Ich mache mit",
@@ -1952,6 +1960,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cuida da lista de ${place}`,
     ageYears: (n) => `${n} anos`,
+    seasonChip: { bloom: "Em flor", autumn: "Cores de outono", fruit: "Com fruto", leaves: "Folhas novas", catkins: "Amentilhos", winter: "Silhueta de inverno", peak: "Na época" },
     ambassadorWanted: (place) => `Procuramos quem cuide da lista de ${place}`,
     ambassadorWantedLine: "Ajude-nos a melhorar esta lista.",
     ambassadorApply: "Quero participar",
@@ -2201,6 +2210,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
     ambassadorRole: (place) => `Veille sur la liste de ${place}`,
     ageYears: (n) => `${n} ans`,
+    seasonChip: { bloom: "En fleurs", autumn: "Couleurs d'automne", fruit: "En fruits", leaves: "Jeunes feuilles", catkins: "Chatons", winter: "Silhouette d'hiver", peak: "De saison" },
     ambassadorWanted: (place) => `Qui veillera sur la liste de ${place}\u00a0?`,
     ambassadorWantedLine: "Aidez-nous à améliorer cette liste.",
     ambassadorApply: "Ça m'intéresse",
@@ -2449,6 +2459,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
     ambassadorRole: (place) => `${place}のアンバサダー`,
     ageYears: (n) => `${n}年`,
+    seasonChip: { bloom: "開花中", autumn: "紅葉", fruit: "実り", leaves: "新緑", catkins: "尾状花序", winter: "冬の樹形", peak: "見頃" },
     ambassadorWanted: (place) => `${place}のアンバサダーを募集中`,
     ambassadorWantedLine: "このリストをより良くするために力を貸してください。",
     ambassadorApply: "応募する",

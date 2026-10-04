@@ -2855,3 +2855,22 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 /* The card's Seen badge is painted by tree-actions-js; [hidden] must win over
    its inline-flex. */
 .tree-card-seen[hidden], .tree-card-seen-line[hidden] { display: none; }
+
+/* THE SEASON CHIP (2026-10-04, phenology.ts seasonChipHtml). The moment named
+   in sentence case on a soft tint of its own colour, never the old moss pill
+   in capitals. Text colours are the dark end of each hue so small text keeps
+   at least 4.5:1 on its tint. On a photograph it is Airbnb's top-left pill. */
+.best-now-inline.sn-chip { display: inline-flex; align-items: center; gap: 4px; margin: 0;
+  padding: 2px 9px 2px 6px; border-radius: 999px; font-size: 12px; font-weight: 650;
+  letter-spacing: 0; text-transform: none; line-height: 1.35; vertical-align: middle; }
+.sn-chip svg { width: 14px; height: 14px; flex: none; }
+.sn-bloom { background: #FCE6EE; color: #9A2F57; }
+.sn-autumn { background: #FDE8D6; color: #95440F; }
+.sn-fruit, .sn-peak { background: #FBEFD3; color: #7A5A0C; }
+.sn-leaves { background: #E5F1D9; color: #355E19; }
+.sn-catkins { background: #F2F0D0; color: #615A16; }
+.sn-winter { background: #ECEAE4; color: #4F4C45; }
+.tree-card-photo .sn-on-photo { position: absolute; top: 10px; left: 10px; z-index: 2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16); padding: 4px 10px 4px 7px; }
+/* With the chip on the top left, the Seen badge goes to the bottom left. */
+.tree-card-photo .tree-card-seen { top: auto; bottom: 10px; }

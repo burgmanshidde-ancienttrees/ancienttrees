@@ -20,7 +20,7 @@
 import { ageShort } from "./age-short";
 import { dayTrips, type DayTrip } from "./day-trips";
 import type { CityEntry } from "./trees";
-import { peakFor } from "./phenology";
+import { peakFor, seasonKey } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
 import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText } from "./images";
 import { BASE_URL } from "./schema";
@@ -55,6 +55,7 @@ export interface FeedTree {
   /// The card's age, decided once here (age-short.ts) so the app does not
   /// decide it a second time in Swift. Null when there is nothing short to say.
   age_short: string | null;
+  season_key: string | null;
   lat: number;
   lng: number;
   city: string;
@@ -148,6 +149,10 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         transport: t.transport ?? null,
         precision: t.location_precision ?? null,
         best_time: t.best_time ?? null,
+        // The season chip's key ("bloom", "autumn", ...), decided once on the
+        // server (phenology.ts seasonKey, 2026-10-04) so the app draws the same
+        // tint without re-reading the label.
+        season_key: seasonKey(t),
         peak: (() => {
           const pk = peakFor(t, loc.latitude);
           return pk?.map ? { months: pk.months, effect: pk.map.effect, colour: pk.map.colour, ...(pk.level ? { level: pk.level } : {}) } : null;

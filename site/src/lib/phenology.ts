@@ -151,7 +151,7 @@ export function seasonCurve(tree: Tree): string {
     const by = (peakY / H) * 100;
     peakBadge = `<span class="sc-peakbadge" style="left:${bx.toFixed(1)}%;top:${by.toFixed(1)}%">${KIND_ICONS[kind]}</span>`;
   }
-  const nowBadge = inSeason ? '<span class="best-now">at its best now</span>' : "";
+  const nowBadge = inSeason && kind ? seasonChipHtml(CHIP_KEY[kind] ?? "peak") : (inSeason ? seasonChipHtml("peak") : "");
 
   return `
 <figure class="season">
@@ -175,15 +175,54 @@ export function seasonCurve(tree: Tree): string {
 }
 
 /** One short phrase for the city-page card. */
-export function bestTimeShort(tree: Tree): string {
+// THE SEASON CHIP (Hidde, 2026-10-04: "ik vind ook de hele at it's best now
+// titel niet nice en de tag lelijk ... is autumn colours or bloom niet veel
+// nicer met licht oranje kleur of licht roze kleur"). It was one moss pill in
+// capitals saying "AT ITS BEST NOW" whatever the moment was. Now it names the
+// moment in sentence case, in a soft tint of that moment's own colour, with its
+// icon: pink for bloom, orange for autumn colour, amber for fruit. The
+// reference is Airbnb's "Guest favourite" and AllTrails' photo badges: a small
+// pill on the photograph's top left, sentence case, no fill colour that shouts
+// (CONVENTIONS.md 2026-10-04). Without a photograph it closes the meta line.
+// The key travels in the feed as `season_key`, so the app draws the same chip
+// without re-deciding which moment a label means.
+const CHIP_KEY: Record<string, string> = {
+  flowers: "bloom", "autumn colour": "autumn", fruit: "fruit",
+  "fresh leaves": "leaves", catkins: "catkins", "bare silhouette": "winter",
+};
+
+/** The chip's key for a tree's best_time ("bloom", "autumn", ...), or "peak"
+ *  when the kind is unknown, or null when the tree has no best_time at all. */
+export function seasonKey(tree: Tree): string | null {
+  const bt = tree.best_time;
+  if (!bt || !bt.label) return null;
+  return CHIP_KEY[seasonKind(bt)] ?? "peak";
+}
+
+/** The chip, but only in the months it is true. Empty otherwise. */
+export function seasonChip(tree: Tree, U?: { seasonChip: Record<string, string> }, onPhoto = false): string {
   if (!SEASON_PUBLIC) return "";
   const bt = tree.best_time;
-  if (!bt || !bt.label) return "";
-  const now = new Date().getMonth() + 1;
-  if ((bt.months ?? []).includes(now)) {
-    return ' &middot; <span class="best-now-inline">at its best now</span>';
-  }
-  return "";
+  const key = seasonKey(tree);
+  if (!bt || !key || !(bt.months ?? []).includes(new Date().getMonth() + 1)) return "";
+  return seasonChipHtml(key, U, onPhoto);
+}
+
+const KEY_ICON: Record<string, string> = {
+  bloom: "flowers", autumn: "autumn colour", fruit: "fruit", leaves: "fresh leaves",
+  catkins: "catkins", winter: "bare silhouette",
+};
+const EN_CHIP: Record<string, string> = {
+  bloom: "In bloom", autumn: "Autumn colour", fruit: "In fruit", leaves: "Fresh leaves",
+  catkins: "Catkins", winter: "Winter shape", peak: "In season",
+};
+
+export function seasonChipHtml(key: string, U?: { seasonChip: Record<string, string> }, onPhoto = false): string {
+  const label = U?.seasonChip?.[key] ?? EN_CHIP[key] ?? EN_CHIP.peak;
+  const icon = KIND_ICONS[KEY_ICON[key] ?? ""] ?? "";
+  // best-now-inline stays on the class list: qa.py's language-parity check
+  // looks for that name, and renaming it would hide a gap rather than close it.
+  return `<span class="best-now-inline sn-chip sn-${key}${onPhoto ? " sn-on-photo" : ""}">${icon}${esc(label)}</span>`;
 }
 
 // ---------------------------------------------------------- species curves
@@ -438,7 +477,7 @@ export function seasonBlock(tree: Tree, lat: number): string {
   }
 
   const keys = moments.map((mo) => `<span class="ph-key">${KIND_ICONS[mo.kind]}${esc(mo.label || mo.kind.charAt(0).toUpperCase() + mo.kind.slice(1))}</span>`).join("");
-  const nowBadge = inSeason ? '<span class="best-now">at its best now</span>' : "";
+  const nowBadge = inSeason ? seasonChipHtml(CHIP_KEY[kind] ?? "peak") : "";
   const labelLine = hasBt ? `<p class="season-label">${esc(bt.label!)}</p>` : "";
 
   return `

@@ -21,7 +21,7 @@
 // Hence one component, one look, two text lengths.
 import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditText, creditLinkParts } from "../lib/images";
 import { ui } from "../lib/i18n";
-import { bestTimeShort } from "../lib/phenology";
+import { seasonChip } from "../lib/phenology";
 import { ageShort } from "../lib/age-short";
 import SaveHeart from "./SaveHeart.astro";
 
@@ -138,14 +138,17 @@ const linkName = true;
 const metaParts = [omitSpecies ? "" : species, omitAge ? "" : age, (tree.location?.neighbourhood ?? "").trim()]
   .map((s) => (s ?? "").trim())
   .filter(Boolean);
-const bestTime = bestTimeShort(tree);
+// The season chip: on the photograph when there is one, else closing the meta line.
+const hasPhoto = Boolean(photo && photo.url);
+const chipOnPhoto = hasPhoto ? seasonChip(tree, U, true) : "";
+const chipInMeta = hasPhoto ? "" : seasonChip(tree, U);
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 // The app's `ticked` mark, drawn the way collection-js.ts draws it on /saved.
 const SEEN_MARK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12.5l2.2 2.2L16 9.8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9.4" fill="none" stroke="#fff" stroke-width="1.6" opacity="0.6"/></svg>';
-const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
+const metaHtml = metaParts.map(esc).join(" &middot; ") + (chipInMeta ? " " + chipInMeta : "");
 ---
 <article
   class:list={["tree-card", "tree-card-link", { "tree-card-nonum": index === undefined, "tree-card-nophoto": !(photo && photo.url) }]}
@@ -160,6 +163,7 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
                    treeUrl={href}
                    photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
                    meta={metaParts.join(" \u00b7 ") || undefined} />
+        {chipOnPhoto && <Fragment set:html={chipOnPhoto} />}
         {canTick && <span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{L.done}</span></span>}
       </div>
       {creditLine && (creditLink

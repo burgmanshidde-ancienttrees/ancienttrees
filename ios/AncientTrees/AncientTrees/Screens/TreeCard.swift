@@ -55,6 +55,7 @@ struct TreeCard: View {
             ZStack(alignment: .topTrailing) {
                 image
                 if showHeart { SaveHeart(tree: tree, look: .onPhoto).padding(6) }
+                if let chip = seasonChip { chip }
                 if saved.isVisited(tree.id) { ticked }
             }
             VStack(alignment: .leading, spacing: 5) {
@@ -169,7 +170,40 @@ struct TreeCard: View {
             .padding(.horizontal, 8).padding(.vertical, 5)
             .background(Brand.canopy, in: .capsule)
             .padding(10)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            // Bottom left since 2026-10-04: the season chip has the top left.
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+    }
+
+    /// THE SEASON CHIP, the website's (phenology.ts seasonChipHtml): the
+    /// moment named in sentence case on a soft tint of its own colour, top left
+    /// on the photograph, only in the months it is true. Which chip is the
+    /// website's answer (`seasonKey` in the feed); the words and tints are this
+    /// surface's drawing of it. Behind the same season switch as the map's peak
+    /// dots, because the season is the paid feature here.
+    private var seasonChip: AnyView? {
+        guard Launch.season, let key = tree.seasonKey,
+              tree.bestTime?.isNow(Calendar.current.component(.month, from: .now)) == true
+        else { return nil }
+        let look: (String, UInt32, UInt32) = switch key {
+        case "bloom": ("In bloom", 0xFCE6EE, 0x9A2F57)
+        case "autumn": ("Autumn colour", 0xFDE8D6, 0x95440F)
+        case "leaves": ("Fresh leaves", 0xE5F1D9, 0x355E19)
+        case "catkins": ("Catkins", 0xF2F0D0, 0x615A16)
+        case "winter": ("Winter shape", 0xECEAE4, 0x4F4C45)
+        case "fruit": ("In fruit", 0xFBEFD3, 0x7A5A0C)
+        default: ("In season", 0xFBEFD3, 0x7A5A0C)
+        }
+        return AnyView(
+            Text(look.0)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(Color(light: look.2, dark: look.2))
+                .padding(.horizontal, 10).padding(.vertical, 5)
+                .background(Color(light: look.1, dark: look.1), in: .capsule)
+                .shadow(color: .black.opacity(0.15), radius: 2, y: 1)
+                .padding(10)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .accessibilityIdentifier("tree-card-season")
+        )
     }
 
     private var meta: some View {

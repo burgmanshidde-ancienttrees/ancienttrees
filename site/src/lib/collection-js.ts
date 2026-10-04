@@ -121,8 +121,16 @@ window.atCollection = (function() {
   function card(id, c, hearted, visited) {
     var meta = c.m || '';
     if (c.c) meta = meta ? meta + ' \\u00b7 ' + c.c : c.c;
+    // The season chip (phenology.ts seasonChipHtml, 2026-10-04): the moment's
+    // own name and tint, on the photograph when there is one. English, as the
+    // rest of this card is; the key arrives from /api/cards.json.
+    var chip = '';
     if (c.bt && c.bt.indexOf(new Date().getMonth() + 1) !== -1) {
-      meta += ' \\u00b7 <span class="best-now-inline">at its best now</span>';
+      var words = { bloom: 'In bloom', autumn: 'Autumn colour', fruit: 'In fruit', leaves: 'Fresh leaves',
+                    catkins: 'Catkins', winter: 'Winter shape', peak: 'In season' };
+      var k = words[c.sk] ? c.sk : 'peak';
+      chip = '<span class="best-now-inline sn-chip sn-' + k + (c.p ? ' sn-on-photo' : '') + '">' + words[k] + '</span>';
+      if (!c.p) meta += ' ' + chip;
     }
     var on = hearted !== false;
     // The card heart (TreeCard.astro, 2026-10-04): on the photograph, or at
@@ -145,7 +153,7 @@ window.atCollection = (function() {
                + '<img src="' + esc(c.p) + '" srcset="'
                + esc(c.p) + ' 500w, ' + esc(c.p9 || c.p) + ' 900w" '
                + 'sizes="(max-width: 800px) 100vw, 560px" alt="' + esc(c.n)
-               + '" loading="lazy">' + HEART + '</div>' : '')
+               + '" loading="lazy">' + HEART + (c.p ? chip : '') + '</div>' : '')
       + (c.cr ? '<p class="tree-card-credit">Photo: ' + esc(c.cr) + '</p>' : '')
       + '<div class="tree-card-top">' + (c.p ? '' : HEART) + '<h3 class="tree-name"><a href="' + esc(c.u) + '">'
         + esc(c.n) + '</a></h3></div>'
