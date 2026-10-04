@@ -340,10 +340,10 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .tree-more a:hover { text-decoration: underline; }
 /* THE LIST CARD, variant 3 (Hidde, 2026-10-04: "versie 3 ziet er goed uit
    ... verwerk gelijk consistent over alle lijsten"; CONVENTIONS.md, "A tree in
-   a list"). AllTrails' card: photograph full width on top with the number and
-   the heart on it, then a bold name, one meta line, two lines of story. No
-   photograph means no empty frame: the number becomes a round badge before
-   the name and the heart closes the row. Two-class selectors on purpose, so
+   a list"). AllTrails' card: photograph full width on top with the heart on
+   it, then the number in a round badge beside a bold name (Hidde: "bij de
+   titel"), one meta line, two lines of story. No photograph means no empty
+   frame, and the heart closes the name row instead. Two-class selectors on purpose, so
    the older single-purpose rules above (the nonum indent, the phone padding)
    cannot reach back in. */
 .tree-card.tree-card { padding: 0 0 14px; overflow: hidden; }
@@ -353,13 +353,10 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .tree-card .tree-card-top { display: flex; align-items: center; gap: 10px; padding: 0 var(--gutter); margin: 0 0 4px; }
 .tree-card .tree-num { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 999px;
   background: #eef0e6; font-size: 13px; letter-spacing: 0; flex: none; }
-.tree-card .tree-card-photo .tree-num { position: absolute; top: 10px; left: 10px; z-index: 2;
-  background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18); }
 .tree-card .tree-name { font-size: 1.125rem; font-weight: 750; line-height: 1.3; }
 .tree-card .tree-meta { margin: 0 var(--gutter) 6px; font-size: 12.5px; }
 .tree-card .tree-story { margin: 0 var(--gutter); font-size: 14px; font-weight: 400; line-height: 1.55; -webkit-line-clamp: 2; }
 .tree-card .tree-card-seen-line { margin: 8px var(--gutter) 0; }
-.tree-card .tree-card-photo:has(.tree-num) .tree-card-seen { top: auto; bottom: 10px; }
 .tree-card.mine-card .mine-state { margin-left: var(--gutter); margin-right: var(--gutter); }
 .panel-foot { padding: var(--gutter); font-size: 13px; color: var(--ink-mid); }
 .subtle-suggest b { color: var(--ink); font-weight: 700; }
