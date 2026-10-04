@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 night run, sixth attempt: nothing shipped, pace cap still shut
+
+Pulled; ready 0, munich claim kept (release refused: 8 verified trees unmerged). The 24h cap clears about 12:54 UTC; any verify pass now would only add trees that hit it. Merge muc_055 to 060, nbg_014/015, lon_027, hou_009 to 011, ber_041, fuk_017 after that.
+
 ## 2026-10-04 night run, fifth attempt: nothing shipped, pace cap still shut
 
 Pulled; only the munich claim stands (kept for the written trees held by the 24h cap, clears about 12:54 UTC). `leads.py --ready` is 0 and every staged city's output would also hit the cap, so I dispatched nothing. Next window after the cap: merge muc_055 to 060, the Nuremberg two, lon_027, hou_009 to 011, ber_041, fuk_017.
