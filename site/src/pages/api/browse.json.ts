@@ -31,7 +31,7 @@ import { getCollection } from "astro:content";
 import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../../lib/trees";
 import { cityFaceTree, countryFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../lib/images";
 import { groupTreesBySpecies } from "../../lib/species";
-import { groupTreesByPark, parkGroupKey } from "../../lib/parks";
+import { groupTreesByPark, parkGroupKey, parkTitle } from "../../lib/parks";
 import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
 import { namedAmbassadorsFor } from "../../lib/ambassadors";
 import { collectionEntries } from "../../lib/collection-rank";
@@ -121,7 +121,8 @@ export async function GET() {
     const trees = g?.trees ?? [];
     return {
       slug: p.data.slug,
-      name: p.data.name ?? p.data.park,
+      // A title on its own, so a capital: "The Parque de María Luisa" (parkTitle).
+      name: parkTitle(p.data.name ?? p.data.park),
       citySlug: p.data.city_slug,
       intro: p.data.intro,
       trees: trees.map((t) => t.id),
