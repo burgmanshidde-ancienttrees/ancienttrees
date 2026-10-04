@@ -50,7 +50,9 @@ function textLabel(raw: string): string {
 function pathHint(url: string): string {
   try {
     const parts = new URL(url).pathname.split("/").filter(Boolean);
-    const last = parts[parts.length - 1] ?? "";
+    // Decoded, or a German article reads "Burgsdorff L%C3%A4rche" (2026-10-04).
+    let last = parts[parts.length - 1] ?? "";
+    try { last = decodeURIComponent(last); } catch { /* keep it as it came */ }
     const hint = last.replace(/\.\w{2,5}$/, "").replace(/[-_]+/g, " ").trim();
     if (!hint) return "";
     return hint.length > 40 ? hint.slice(0, 39).trimEnd() + "…" : hint;

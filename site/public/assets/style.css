@@ -2884,3 +2884,23 @@ figure.season .season-plot { margin-top: 8px; }
 figure.season .ph-keys { gap: 8px 14px; }
 figure.season .season-label { font-size: 14px; line-height: 1.5; color: var(--ink); }
 figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
+
+/* THE VISUAL AUDIT OF 2026-10-04 (Hidde: "can you check the site for more of
+   these alignment mistakes I feel there are heaps"). A reviewer with no
+   memory of the build read 97 screenshots of twelve page types; these are the
+   fixes that were plain errors rather than taste. */
+/* A card's title is not a page heading: .content-page h3 gave it 24px of top
+   margin, so every card without a photo opened on an empty band. */
+.tree-card .tree-name { margin: 0; }
+/* The lead paragraph was 14px light under 15px body text, smaller than what
+   it leads. It now reads as the lead. The city sheet keeps its own clamp. */
+.content-page > .lede { font-size: 17px; font-weight: 400; line-height: 1.6; color: var(--ink); margin: 0 0 1.25rem; }
+/* The footer's wordmark and its column headings share one top line. */
+.footer-logo, .footer-col h4 { display: block; line-height: 16px; margin: 0 0 0.6rem; }
+/* The press line under the contribute form sat flush against the box above. */
+.sg-fine { margin-top: 1.5rem; }
+#signin-ask:focus { outline: none; }
+/* The tree page's location: the address, then the recognition line on its
+   own line, instead of one run-on sentence in two colours. */
+.td-address { display: block; }
+.td-address + .which-one { display: block; margin-top: 4px; }

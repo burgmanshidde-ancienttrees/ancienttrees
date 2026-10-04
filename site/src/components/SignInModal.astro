@@ -53,7 +53,10 @@ const T = signInCopy(lang);
       centred dialog and nothing about it invites a drag. */}
   <div class="signin-grab" id="signin-grab" aria-hidden="true"></div>
   <button type="button" class="signin-close" id="signin-close" aria-label={T.close}>&#10005;</button>
-  <div id="signin-ask">
+  {/* autofocus HERE, not on the close button: a native dialog focuses its
+      first focusable control on open, and the ring drawn round the ✕ read as
+      a button hanging off the sheet's corner (visual audit, 2026-10-04). */}
+  <div id="signin-ask" tabindex="-1" autofocus>
     <SignInPanel lang={lang} prefix="signin" />
   </div>
   <div id="signin-sent" hidden>

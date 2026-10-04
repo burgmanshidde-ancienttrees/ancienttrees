@@ -214,7 +214,7 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
           because the web has no map sheet to carry it. */}
       <div class="td-access">
         {(p.address || p.recognise) && (
-          <p><Fragment set:html={icon("map-pin")} /><span>{p.address}{p.recognise && <span class="which-one"> {p.recognise}</span>}</span></p>
+          <p><Fragment set:html={icon("map-pin")} /><span>{p.address && <span class="td-address">{p.address}</span>}{p.recognise && <span class="which-one">{p.recognise}</span>}</span></p>
         )}
         {!tree.paid_entry && p.access && <p><Fragment set:html={icon("person-simple-walk")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.access}</span></p>}
         {p.transport && <p><Fragment set:html={icon("train-simple")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.transport}</span></p>}

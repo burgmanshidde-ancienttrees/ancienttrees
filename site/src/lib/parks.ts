@@ -178,3 +178,11 @@ export function groupTreesByPark(cities: CityEntry[]): Map<string, ParkGroup> {
   }
   return groups;
 }
+
+/** A park's name where it stands ALONE, as a card or list title: "The Parque
+ *  de María Luisa", not "the Parque ..." (2026-10-04, the visual audit). The
+ *  stored name keeps its lowercase "the" because it is written to sit inside a
+ *  sentence ("Ancient trees in the Parque de María Luisa"). */
+export function parkTitle(name: string): string {
+  return name ? name.charAt(0).toUpperCase() + name.slice(1) : name;
+}

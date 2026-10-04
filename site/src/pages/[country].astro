@@ -4,6 +4,7 @@
 // directly, same reasoning as the city route. See ARCHITECTURE.md.
 import { getCollection, type CollectionEntry } from "astro:content";
 import { nTrees } from "../lib/tree-count";
+import { ageShort } from "../lib/age-short";
 import Base from "../layouts/Base.astro";
 import TreeCard from "../components/TreeCard.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
@@ -165,7 +166,10 @@ const rows = ranked.map((c, i) => {
     return a[0] > b[0] || (a[0] === b[0] && a[1] > b[1]) ? t : best;
   }, null);
   let sub = nTrees(c.count);
-  if (cityOldest) sub += ` · oldest ${cityOldest.age_estimate ?? ""}`;
+  // The short age (age-short.ts), and nothing at all when there is no age:
+  // "7 trees · oldest" with nothing after it read as a broken line (2026-10-04).
+  const oldestAge = cityOldest ? ageShort(cityOldest) : null;
+  if (oldestAge) sub += ` · oldest ${oldestAge}`;
   return { i: i + 1, slug: c.slug, cityName: c.cityName, ph, sub };
 });
 
