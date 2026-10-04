@@ -13,6 +13,21 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-04
+
+Web half: read los-angeles.html (11 in title and body, intro agrees), the El Pino tree page, and the title and meta of london (27), munich (52), portland (32), nuremberg (14), washington-dc (16) and reykjavik (4); counts match their data files. No em dashes or banned words in the changed city files, and the reader-photograph licence string does not render on the Reykjavik page.
+
+- NOTE: `los-angeles/el-pino-the-pine-tree.html` ships a private lot as a view-only tree (hard rule 10, view-only clause). The page says so plainly and the pin is a street corner, which is the honest form; the one thing thin is that the page says "no sighting dated after 2022", so aliveness rests on 2022 accounts. Acceptable under the publish-and-ask rule, noted so a later run re-checks it.
+- NOTE: the same page gives "Years old 70-120" while the source only says "late 1940s" (about 75 years); the 120 upper bound has no source in the entry. Cheap to tighten, not a blocker.
+
+App half (tree, walk-begin, walk, city-map-full, city-map, city):
+
+- WARN APP: `city-map.png` and `city-map-full.png` are both the welcome splash ("Trees worth the walk, wherever you are.") and not a city map, so the sweep never reached those two screens and they ship unseen (CLAUDE.md 3c: a screen no argument can open ships unlooked-at). Either the launch argument for them no longer skips the first-run splash or the screen list names a screen that moved; worth one look in a session.
+- NOTE APP: `city.png` (Aachen, one tree) repeats itself, a title "Aachen" and directly under it "1 tree in Aachen", over a card and a large empty screen. Honest but sparse; a one-tree place is the thin-page shape the recovery rules are removing, so this may simply be how those look.
+- Tree page (Łódź oak, honest title and photograph), Amsterdam walk in progress ("0 of 7 ticked off") and the Moesgård walk (7 min, 0.6 km, numbered stops) read clearly and agree with their titles.
+
+---
+
 ## 2026-10-03
 
 Web half: read berlin.html (62 trees in title, meta and body agree), dresden.html (13), munich.html, florence.html (ambassador byline renders, no leak). No em dashes or banned words in the four pages. Nothing found on the web half.
