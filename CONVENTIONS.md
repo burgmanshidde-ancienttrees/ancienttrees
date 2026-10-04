@@ -2751,6 +2751,31 @@ Hidde asked whether an action like "Add a tree" should carry at least one line o
 
 **A confirmation that needs no answer is Apple's grey HUD.** Music's "Added to Library" and Photos' "Saved": a rounded material square in the middle, a checkmark over one or two words, gone in about a second and a half, nothing to tap. Used for "Tree saved" (Kit/DoneHUD.swift). Anything offering Undo is a Google Maps snackbar at the bottom instead.
 
+## A tree in a list: the whole card is the link, the heart sits on the photo (2026-10-04)
+
+Hidde, on a Barcelona card on his phone: "the save and I've seen this one
+clutter this page I think there should only be a button towards the tree
+detail page - but honestly the app just makes the whole tile clickable. Which
+makes more sense."
+
+**Airbnb** (search results), **AllTrails** (trail lists, app and web) and
+**our own app** (TreeCard.swift, SaveHeart look .onPhoto) do the same thing:
+the whole card opens the item, the only other control is a heart or bookmark
+icon in the photograph's top right corner, and a "visited/completed" state is
+a badge, never a button in the list. On AllTrails' web list, pointing at a card
+lights its pin on the map beside it; clicking opens the trail. Card-design
+guidance agrees (uxplanet, uxcel, DTA via search 2026-10-04): one primary
+target per card, the whole card clickable, auxiliary actions such as save
+kept to a quiet icon.
+
+**What we do:** TreeCard.astro and /saved's card are one stretched link each,
+the heart is a 36px white circle on the photo (44px to hit; at the end of the
+name row when there is no photo), and the tick moved off the card: the card
+shows a Seen badge once you have ticked the tree on its own page. The "Read
+more and get directions" line went, because the whole card now says it. On
+the city page a card no longer selects its pin on tap; the pin still does,
+and on a desktop hovering a card lights its pin.
+
 ## Asking for somebody to look after a place: the open seat (2026-10-04)
 
 Hidde: "Is het een idee om de ambassadeur regel die we toegevoegd hebben bij

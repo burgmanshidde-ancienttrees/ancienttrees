@@ -315,15 +315,15 @@ markers.forEach(function(m, idx) {
 });
 if (markers.length > 1) { map.fitBounds(HOME, { padding: 70, maxZoom: 13 }); }
 
+// A tap on a card OPENS the tree since 2026-10-04 (TreeCard.astro: the whole
+// card is one link, as in the app and on AllTrails and Airbnb). What the list
+// still does for the map is AllTrails' web half: on a desktop, pointing at a
+// card lights its pin, without flying anywhere. The pin itself still selects.
+var canHover = window.matchMedia && window.matchMedia('(hover: hover) and (min-width: 800px)').matches;
 document.querySelectorAll('.tree-card').forEach(function(card, idx) {
-  card.addEventListener('click', function(e) {
-    // A link or a button on the card does its own job; only the card itself
-    // selects the pin. The button half was added 2026-09-12 with the tick:
-    // ticking a tree off the list should not also fly the map to it and slide
-    // the sheet open, and the heart had quietly been doing that all along.
-    if (e.target.closest('a, button')) { return; }
-    setActive(idx, true, false);
-  });
+  if (canHover) {
+    card.addEventListener('mouseenter', function() { setActive(idx, false, false); });
+  }
 });
 
 var routeCoords = ${routeCoords};

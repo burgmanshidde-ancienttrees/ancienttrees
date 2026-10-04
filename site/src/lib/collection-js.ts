@@ -125,6 +125,18 @@ window.atCollection = (function() {
       meta += ' \\u00b7 <span class="best-now-inline">at its best now</span>';
     }
     var on = hearted !== false;
+    // The card heart (TreeCard.astro, 2026-10-04): on the photograph, or at
+    // the end of the name row when there is none. No action row, no "Read
+    // more": the whole card is the link.
+    var HEART = ''
+      + '<button class="save-btn heart-btn heart-card" type="button" data-tree="' + esc(id) + '"'
+      + ' data-name="' + esc(c.n) + '" data-url="' + esc(c.u) + '"'
+      + ' data-l-save="Save" data-l-saved="Saved"'
+      + ' aria-pressed="' + (on ? 'true' : 'false') + '"'
+      + ' aria-label="' + (on ? 'Saved ' : 'Save ') + esc(c.n) + '">'
+      + '<svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>'
+      + '<span class="sr-only">' + (on ? 'Saved' : 'Save') + '</span></button>'
+      ;
     return '<article class="tree-card tree-card-nonum tree-card-link" data-tree-id="' + esc(id) + '">'
       + (c.p ? '<div class="tree-card-photo">'
                + (visited ? '<span class="tree-card-seen">'
@@ -133,19 +145,11 @@ window.atCollection = (function() {
                + '<img src="' + esc(c.p) + '" srcset="'
                + esc(c.p) + ' 500w, ' + esc(c.p9 || c.p) + ' 900w" '
                + 'sizes="(max-width: 800px) 100vw, 560px" alt="' + esc(c.n)
-               + '" loading="lazy"></div>' : '')
+               + '" loading="lazy">' + HEART + '</div>' : '')
       + (c.cr ? '<p class="tree-card-credit">Photo: ' + esc(c.cr) + '</p>' : '')
-      + '<div class="tree-card-top"><h3 class="tree-name"><a href="' + esc(c.u) + '">'
+      + '<div class="tree-card-top">' + (c.p ? '' : HEART) + '<h3 class="tree-name"><a href="' + esc(c.u) + '">'
         + esc(c.n) + '</a></h3></div>'
       + (meta ? '<p class="tree-meta">' + meta + '</p>' : '')
-      + '<p class="tree-more"><a href="' + esc(c.u) + '">Read more and get directions &rarr;</a></p>'
-      + '<button class="save-btn heart-btn heart-compact" type="button" data-tree="' + esc(id) + '"'
-      + ' data-name="' + esc(c.n) + '" data-url="' + esc(c.u) + '"'
-      + ' data-l-save="Save" data-l-saved="Saved"'
-      + ' aria-pressed="' + (on ? 'true' : 'false') + '"'
-      + ' aria-label="' + (on ? 'Saved ' : 'Save ') + esc(c.n) + '">'
-      + '<svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>'
-      + '<span>' + (on ? 'Saved' : 'Save') + '</span></button>'
       + '</article>';
   }
 

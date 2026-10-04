@@ -23,7 +23,6 @@ import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditText, creditLin
 import { ui } from "../lib/i18n";
 import { bestTimeShort } from "../lib/phenology";
 import SaveHeart from "./SaveHeart.astro";
-import SeenButton from "./SeenButton.astro";
 
 interface Props {
   tree: any;
@@ -105,25 +104,22 @@ function firstSentence(s: string): string {
 }
 
 const text = note ?? (variant === "full" ? story : firstSentence(story));
-// On the city page the whole card is the click target: it selects the tree's
-// pin on the map, so the name is not a link and must not become one. Anywhere
-// else there is no such handler, and a list whose titles do nothing is a
-// list that looks broken.
-const linkName = index === undefined;
-// AllTrails, Airbnb and Booking all make the WHOLE card the click target, and
-// ours only looked that way: it lit up on hover and then only the two links
-// inside it actually did anything (Hidde, 2026-08-18: "overal kan je aan de
-// hoverstaat zien dat je een boom selecteert, maar dan moet je ook wel overal
-// kunnen klikken, niet alleen de tekst"). The fix is the stretched-link
-// pattern rather than wrapping the card in an anchor, because a card contains
-// a Save button and a credit link, and interactive content cannot be nested
-// inside a link. One real link in the accessibility tree, the whole card
-// clickable, and the text still selectable.
+// THE WHOLE CARD OPENS THE TREE, on every page, the city page included
+// (Hidde, 2026-10-04, on a Barcelona card: "the save and I've seen this one
+// clutter this page ... the app just makes the whole tile clickable"). The
+// references agree with the app: Airbnb's and AllTrails' list cards are one
+// link each, with the heart as a small icon on the photograph and nothing else
+// to press (CONVENTIONS.md 2026-10-04). So the action row and the "Read more
+// and get directions" line are gone: the tree page has both, and the card's
+// one job is to get you there. Ticking a tree off lives on its page; the card
+// only SHOWS that you have, as the app's `ticked` badge does.
 //
-// The city page is the exception and keeps no stretched link: there a tap on
-// the card selects the tree's pin and opens it in the sheet, which is already
-// whole-card behaviour and is the thing that would break if the card
-// navigated instead.
+// The stretched-link pattern rather than an anchor around the card, because
+// the card still holds the heart and sometimes a credit link, and interactive
+// content cannot be nested inside a link. On the city page a tap on the card
+// used to select the pin instead; the pin itself still does that, and hovering
+// a card on a desktop lights its pin (city-map-script.ts).
+const linkName = true;
 // The meta line is the same three facts in the same order on every page, which
 // is most of what "shown the same way" means to a reader.
 const metaParts = [omitSpecies ? "" : species, omitAge ? "" : age, (tree.location?.neighbourhood ?? "").trim()]
@@ -134,10 +130,12 @@ const bestTime = bestTimeShort(tree);
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
+// The app's `ticked` mark, drawn the way collection-js.ts draws it on /saved.
+const SEEN_MARK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12.5l2.2 2.2L16 9.8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9.4" fill="none" stroke="#fff" stroke-width="1.6" opacity="0.6"/></svg>';
 const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
 ---
 <article
-  class:list={["tree-card", { "tree-card-nonum": index === undefined, "tree-card-link": linkName }]}
+  class:list={["tree-card", "tree-card-link", { "tree-card-nonum": index === undefined, "tree-card-nophoto": !(photo && photo.url) }]}
   id={index === undefined ? undefined : `tree-${index}`}
   data-tree-id={tree.id}
 >
@@ -145,6 +143,11 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
     <Fragment>
       <div class="tree-card-photo">
         <img {...imgSrcset(photo.url, [500, 900], "(max-width: 800px) 100vw, 560px")} alt={name} loading="lazy" />
+        <SaveHeart treeId={tree.id} treeName={name} look="card" labelSave={L.save} labelSaved={L.saved}
+                   treeUrl={href}
+                   photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
+                   meta={metaParts.join(" \u00b7 ") || undefined} />
+        {canTick && <span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{L.done}</span></span>}
       </div>
       {creditLine && (creditLink
         ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
@@ -153,6 +156,10 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
     </Fragment>
   )}
   <div class="tree-card-top">
+    {!(photo && photo.url) && <SaveHeart treeId={tree.id} treeName={name} look="card" labelSave={L.save} labelSaved={L.saved}
+                treeUrl={href}
+                photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
+                meta={metaParts.join(" \u00b7 ") || undefined} />}
     {index !== undefined && <span class="tree-num">{index}</span>}
     {headingLevel === 2 ? (
       <h2 class="tree-name">
@@ -168,12 +175,5 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
   </div>
   {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
   {text && <p class="tree-story">{text}</p>}
-  <p class="tree-more"><a href={href}>{L.more}</a></p>
-  <div class="tree-card-actions">
-    <SaveHeart treeId={tree.id} treeName={name} compact labelSave={L.save} labelSaved={L.saved}
-               treeUrl={href}
-               photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
-               meta={metaParts.join(" \u00b7 ") || undefined} />
-    {canTick && <SeenButton treeId={tree.id} treeName={name} labelSeen={L.seen} labelDone={L.done} />}
-  </div>
+  {canTick && !(photo && photo.url) && <p class="tree-card-seen-line" data-tree={tree.id} hidden><span class="tree-card-seen"><Fragment set:html={SEEN_MARK} /><span>{L.done}</span></span></p>}
 </article>

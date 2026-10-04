@@ -247,6 +247,21 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .tree-card-link .save-btn,
 .tree-card-link .tree-more,
 .tree-card-link .tree-card-credit { position: relative; z-index: 1; }
+/* The heart on a card (2026-10-04): a white circle on the photograph's top
+   right, as Airbnb, AllTrails and the app's TreeCard draw it. 36px to see,
+   44px to hit. Without a photograph it sits at the end of the name row. */
+.tree-card-link .heart-card { position: absolute; z-index: 2; }
+.heart-card { width: 36px; height: 36px; padding: 0; justify-content: center;
+  border: none; border-radius: 50%; background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18); color: var(--ink); }
+.heart-card .heart { width: 18px; height: 18px; }
+.heart-card::after { left: 50%; right: auto; width: 44px; transform: translate(-50%, -50%); }
+.tree-card-photo .heart-card { top: 10px; right: 10px; }
+.tree-card-top .heart-card { position: relative; order: 3; margin-left: auto; align-self: center;
+  flex-shrink: 0; background: var(--cream); box-shadow: none; }
+.heart-card[aria-pressed="true"] { color: var(--moss); }
+.tree-card-seen-line { margin: 0.5rem 0 0; }
+.tree-card-seen-line .tree-card-seen { position: static; }
 /* No map number means nothing to indent under: the 2.15rem on the meta, the
    story and the link is the width of .tree-num plus its gap. */
 .tree-card-nonum .tree-meta, .tree-card-nonum .tree-story, .tree-card-nonum .tree-more { margin-left: 0; }
@@ -2813,3 +2828,6 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 .day-trip-where { color: var(--ink-mid); font-size: 0.95rem; margin: 0.75rem var(--gutter) 0.5rem; }
 /* On the panel's own gutter, like the cards under them (seen on the live
    Copenhagen page the hour it shipped: the heading sat flush to the edge). */
+/* The card's Seen badge is painted by tree-actions-js; [hidden] must win over
+   its inline-flex. */
+.tree-card-seen[hidden], .tree-card-seen-line[hidden] { display: none; }

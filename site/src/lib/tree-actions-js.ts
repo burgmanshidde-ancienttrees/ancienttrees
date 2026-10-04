@@ -113,6 +113,15 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
                                 : (b.dataset.lSeen || 'I have seen this one');
     });
   }
+  // The card's badge (TreeCard.astro, 2026-10-04): the card no longer offers
+  // the tick, it only shows that you have stood there, as the app's does.
+  function paintSeenBadges() {
+    document.querySelectorAll('.tree-card-seen[data-tree], .tree-card-seen-line[data-tree]').forEach(function(b) {
+      b.hidden = !(window.atHasVisited && window.atHasVisited(b.dataset.tree));
+    });
+  }
+  var paintTicks = paintSeen;
+  paintSeen = function() { paintTicks(); paintSeenBadges(); };
   window.atPaintSeen = paintSeen;
   paintSeen();
 
