@@ -2919,7 +2919,7 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
    An empty row (no season, not seen) takes no space. */
 .tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
 .tree-card-photo .tag-row { position: absolute; top: 10px; left: 10px; right: 56px; z-index: 2; }
-.tag-row-above { margin: 0 var(--gutter) 8px; }
+.tag-row-under { margin: 2px var(--gutter) 6px; }
 .tag-row:not(:has(> :not([hidden]))) { display: none; }
 .tag-row .sn-chip, .tag-row .tree-card-seen { position: static; margin: 0; }
 .tag-row .tree-card-seen { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px;

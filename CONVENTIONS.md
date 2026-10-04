@@ -2870,8 +2870,10 @@ which wins when several apply. **Our app** already said "Seen".
 
 **What we do:** one tag row, at most two pills of one size and style: the
 season chip first, then "Seen" (a light pill with a green tick). On the
-photograph's top left, clear of the heart; above the title when there is no
-photograph, never inside the grey meta line. "Seen" replaces "Ticked off"
+photograph's top left, clear of the heart; on the line under the title when
+there is no photograph (Google Maps puts "Open now" under a place's name;
+Hidde, same day: "don't most competitors put the label behind the title"),
+never inside the grey meta line. "Seen" replaces "Ticked off"
 everywhere, the tree page's button included, on web and app.
 
 ## Asking for somebody to look after a place: the open seat (2026-10-04)

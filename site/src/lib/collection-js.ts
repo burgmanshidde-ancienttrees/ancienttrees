@@ -135,7 +135,7 @@ window.atCollection = (function() {
     var seen = visited ? '<span class="tree-card-seen">'
       + '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#4A6B2A"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
       + '<span>Seen</span></span>' : '';
-    var tags = (chip || seen) ? '<div class="tag-row' + (c.p ? '' : ' tag-row-above') + '">' + chip + seen + '</div>' : '';
+    var tags = (chip || seen) ? '<div class="tag-row' + (c.p ? '' : ' tag-row-under') + '">' + chip + seen + '</div>' : '';
     var on = hearted !== false;
     // The card heart (TreeCard.astro, 2026-10-04): on the photograph, or at
     // the end of the name row when there is none. No action row, no "Read
@@ -156,9 +156,9 @@ window.atCollection = (function() {
                + 'sizes="(max-width: 800px) 100vw, 560px" alt="' + esc(c.n)
                + '" loading="lazy">' + HEART + tags + '</div>' : '')
       + (c.cr ? '<p class="tree-card-credit">Photo: ' + esc(c.cr) + '</p>' : '')
-      + (c.p ? '' : tags)
       + '<div class="tree-card-top">' + (c.p ? '' : HEART) + '<h3 class="tree-name"><a href="' + esc(c.u) + '">'
         + esc(c.n) + '</a></h3></div>'
+      + (c.p ? '' : tags)
       + (meta ? '<p class="tree-meta">' + meta + '</p>' : '')
       + '</article>';
   }

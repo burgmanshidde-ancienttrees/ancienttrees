@@ -140,7 +140,7 @@ const metaParts = [omitSpecies ? "" : species, omitAge ? "" : age, (tree.locatio
   .filter(Boolean);
 // THE TAG ROW (Hidde, 2026-10-04, approving the mockup): at most two small
 // pills in one row and one style, the season first and "Seen" second. On the
-// photograph's top left when there is one, above the title when there is not.
+// photograph's top left when there is one, under the title when there is not.
 // Airbnb's one top-left badge, and Adobe Spectrum's rule of one place per card
 // for labels (CONVENTIONS.md 2026-10-04). "Seen" is the app's word.
 const hasPhoto = Boolean(photo && photo.url);
@@ -179,12 +179,6 @@ const metaHtml = metaParts.map(esc).join(" &middot; ");
       )}
     </Fragment>
   )}
-  {!hasPhoto && (chip || canTick) && (
-    <div class="tag-row tag-row-above">
-      {chip && <Fragment set:html={chip} />}
-      {canTick && <span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{U.seenChip}</span></span>}
-    </div>
-  )}
   <div class="tree-card-top">
     {!(photo && photo.url) && <SaveHeart treeId={tree.id} treeName={name} look="card" labelSave={L.save} labelSaved={L.saved}
                 treeUrl={href}
@@ -203,6 +197,15 @@ const metaHtml = metaParts.map(esc).join(" &middot; ");
       </h3>
     )}
   </div>
+  {/* Without a photograph the tags follow the title, on the line under it,
+      where Google Maps puts "Open now" under a place's name (Hidde, 2026-10-04:
+      "don't most competitors put the label behind the title"). */}
+  {!hasPhoto && (chip || canTick) && (
+    <div class="tag-row tag-row-under">
+      {chip && <Fragment set:html={chip} />}
+      {canTick && <span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{U.seenChip}</span></span>}
+    </div>
+  )}
   {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
   {text && <p class="tree-story">{text}</p>}
 </article>
