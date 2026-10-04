@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 thirteenth attempt: Spokane verify found nothing, Cincinnati scouted
+
+Visits last 7 days: 1840. Shelf was under its floor, so claimed and verified Spokane: of 5 unmined register candidates none has an open photograph or a confirmable pin (Reid Family Tree is a private residence, treated as blocked), so zero trees; leads updated, claim released. Scouted Cincinnati (#97): no city register with coordinates, Spring Grove and ODNR champion lists recorded as next angles. No trees shipped; no command refused.
+
 ## 2026-10-04 twelfth attempt (evening): nothing publishable, Tampa scouted
 
 leads.py --ready is 0 and no claims stood. The Munich (muc_056, 058, 059, 060), Nuremberg (nbg_014, 015), ptl_027 and bos_013 all fail photo-or-pin (approximate pin, no photograph), so none was merged; muc_055 and 057 are already live. Judged the one reader sighting of an unmapped tree (pedunculate oak, 440 cm, central France): no register or article nearby, one contributor, stays a lead. Scouted Tampa (#91): heritage and grand tree programmes exist but no downloadable list with coordinates; next angle recorded in register-scouting.json. Preflight 0 problems.
