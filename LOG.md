@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 run, continuation: scouted Boston, no trees
+
+Pulled; ready 0, the one standing claim (munich) force-released because its remaining trees (muc_056, 058 to 062) carry no photo or confirmed pin and cannot ship. Staged cities have nothing mergeable (all held on photo or pin). Ran `scout_next.py --target`: Boston has no heritage or champion register with coordinates (ArcGIS search returns only park boundaries); verdict recorded in data/register-scouting.json. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
+
 ## 2026-10-04 run: three trees merged, the pace cap has cleared
 
 Visits 7d: 1583. Rung 2 clear. The cap that blocked the earlier attempts no longer refuses: preflight passed. Merged the written trees that carry a photograph or confirmed pin: muc_055 (Silver Lime, Dachau) and muc_057 (Copper Beech, Dachau) into Munich, with German overlay entries and the "52" title, and lon_027 (Dulwich Park Turkey Oak, photo approved) into London, with its FAQ now saying twenty-seven. Held, left alone: muc_056, 058, 059, 060 (approximate pin, no photo). Munich claim stays for those. Not done: Houston, Berlin, Fukuoka and Takachiho written trees still need a photo or pin pass.
