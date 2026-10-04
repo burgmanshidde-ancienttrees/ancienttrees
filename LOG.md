@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 night run, tenth attempt: nothing shipped
+
+Pulled, no stale claims, READY 0. Claimed Frankfurt (Germany, below target) and the brief showed 0 register candidates in 20 km, so web research from zero, which the doctrine rules out; released it. Dresden's brief is also fully mined (every remaining lead is an avenue or group). The one unjudged reader sighting, the Cher oak at 440 cm, is single-contributor, no register or article within 300 m, so it stays a lead. Next real supply needs a scout: `scout_next.py --target` says St. Louis.
+
 ## 2026-10-04 night run, ninth attempt: nothing shipped, two verdicts and two scouting records
 
 Rung 1: two new reader sightings judged (a Cher oak at 440 cm and a Tokyo ginkgo, both single-contributor with nothing setting them apart), both stay leads, verdicts written with judgement.py. Rung 2: health says the live site is behind main and `gh workflow run deploy.yml` is refused with HTTP 403 from the runner, so that dispatch needs a laptop push or the schedule. Shelf was empty again; Munich and Nuremberg are mined and their written trees are held for photo or pin, so no verify dispatched. Scouted the next two US targets: West Palm Beach (no Palm Beach County rows in the Florida champion register) and Saint Petersburg (one Pinellas row, in Dunedin), both recorded as empty in register-scouting.json. 7-day visits: 1,654.
