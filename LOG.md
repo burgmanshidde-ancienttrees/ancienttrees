@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 Leipzig +8: Naturdenkmal oaks, lindens and planes
+
+Leipzig goes from 7 trees to 15, all from the city's Naturdenkmal list: the Menzellinde in Schoenefeld (the lime Adolf von Menzel drew, 200 to 300 years, now the page's oldest tree), the Dufourstrasse oak above the Pleissemuehlgraben, two Lindenau street oaks 150 m apart, Wahren's Friedenseiche (no peace or year claimed, the list gives none), the Leibnizstrasse plane, a Lebanon oak in Schoenau and ND 1, the medlar-leaved oak on the Martin-Luther-Ring. Every one ships with a Commons photograph I looked at before approving, so all eight are findable despite approximate pins; each has a recognition line, and only the lime got a best_time (July flowering). Intro, meta, question page and FAQ now describe 15 trees, oldest_tree_id is the Menzellinde, and the German overlay carries all 8 new trees and the new counts. bos_013 (Endicott Pear) was not written: Danvers is 75+ minutes from Boston by public transport, the alive evidence is one unopened search result and its only photo is from 1997. Preflight 0 problems.
+
 ## 2026-10-04 thirteenth attempt: Spokane verify found nothing, Cincinnati scouted
 
 Visits last 7 days: 1840. Shelf was under its floor, so claimed and verified Spokane: of 5 unmined register candidates none has an open photograph or a confirmable pin (Reid Family Tree is a private residence, treated as blocked), so zero trees; leads updated, claim released. Scouted Cincinnati (#97): no city register with coordinates, Spring Grove and ODNR champion lists recorded as next angles. No trees shipped; no command refused.
