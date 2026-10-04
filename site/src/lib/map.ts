@@ -82,38 +82,41 @@ export interface CountryMapCity {
   slug: string;
   city: string;
   count: number;
-  markers: { lat: number; lng: number }[];
+  markers: { lat: number; lng: number; url?: string }[];
 }
 
-/** One green dot per mapped city, click goes to its page. Deliberately the
- * simplest map on the site: at country zoom the job is orientation, not
- * detail. */
+/** Every tree in the country, clustered the way /explore and the app cluster
+ *  them: a cluster of one city opens that city, a pin opens its tree. */
 export function countryMapScript(cities: CountryMapCity[],
                                  frame?: [[number, number], [number, number]],
                                  focus?: [[number, number], [number, number]]): string {
-  const centre = (c: CountryMapCity): [number, number] => [
-    c.markers.reduce((s, m) => s + m.lng, 0) / c.markers.length,
-    c.markers.reduce((s, m) => s + m.lat, 0) / c.markers.length,
-  ];
+  // THE APP'S COUNTRY MAP (Hidde, 2026-10-04, on Italy: "deze stad preview is
+  // niet echt mooi trek dit ook gelijk met app"). It was one dot per CITY with
+  // its count and its name printed beside it, and in a country with forty
+  // cities the names and numbers piled over each other. The app's country
+  // page draws its TreeMap instead: every tree, clustered, no labels of our
+  // own over the base map's. So this is the explore map's cluster and pin
+  // style, and its rules: a cluster that is one city's trees opens that city,
+  // a mixed one zooms, a pin opens its tree.
   const data = {
     type: "FeatureCollection",
-    features: cities.map((c) => ({
+    features: cities.flatMap((c) => c.markers.map((m) => ({
       type: "Feature",
-      geometry: { type: "Point", coordinates: centre(c) },
-      properties: { slug: c.slug, city: c.city, n: String(c.count) },
-    })),
+      geometry: { type: "Point", coordinates: [m.lng, m.lat] },
+      properties: { cs: "/" + c.slug, url: m.url ?? "/" + c.slug },
+    }))),
   };
   return mapScript(`
-var CITIES = ${JSON.stringify(data)};
+var TREES = ${JSON.stringify(data)};
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [0, 0], zoom: 3, renderWorldCopies: false,
-  attributionControl: false
+  scrollZoom: false, attributionControl: false
 });
 map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
-map.addControl(new maplibregl.NavigationControl());
+map.addControl(new maplibregl.NavigationControl({showCompass: false}));
 var b = new maplibregl.LngLatBounds();
-CITIES.features.forEach(function(f) { b.extend(f.geometry.coordinates); });
+TREES.features.forEach(function(f) { b.extend(f.geometry.coordinates); });
 // A country whose cities all hug one border names extra ground to show
 // (map_frame in data/countries), so Canada's map is not centred on the US.
 var FRAME = ${JSON.stringify(frame ?? null)};
@@ -125,7 +128,7 @@ if (FOCUS) { b = new maplibregl.LngLatBounds(FOCUS[0], FOCUS[1]); }
 var touched = false;
 function fit() {
   if (touched) return;
-  map.fitBounds(b, { padding: 48, maxZoom: 9, duration: 0 });
+  map.fitBounds(b, { padding: 36, maxZoom: 9, duration: 0 });
   // On a phone held upright the width decides the zoom, so the frame sits in
   // the middle with a band of neighbour above and below it: for Canada that
   // lower band was the US and Mexico (Hidde, 2026-09-24). Slide the view north
@@ -143,23 +146,42 @@ map.on('zoomstart', function(e) { if (e.originalEvent) { touched = true; } });
 new ResizeObserver(function() { map.resize(); fit(); }).observe(document.getElementById('map'));
 map.on('load', function() {
   fit();
-  map.addSource('cities', {type: 'geojson', data: CITIES});
-  map.addLayer({id: 'city-dot', type: 'circle', source: 'cities',
-    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': 15,
+  map.addSource('trees', {type: 'geojson', data: TREES, cluster: true,
+                          clusterMaxZoom: 11, clusterRadius: 42});
+  map.addLayer({id: 'clusters', type: 'circle', source: 'trees',
+    filter: ['has', 'point_count'],
+    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
+            'circle-radius': ['step', ['get', 'point_count'], 14, 10, 18, 30, 24],
             'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
-  map.addLayer({id: 'city-n', type: 'symbol', source: 'cities',
-    layout: {'text-field': ['get', 'n'], 'text-font': ['Noto Sans Regular'],
+  map.addLayer({id: 'cluster-count', type: 'symbol', source: 'trees',
+    filter: ['has', 'point_count'],
+    layout: {'text-field': ['get', 'point_count_abbreviated'], 'text-font': ['Noto Sans Regular'],
              'text-size': 12, 'text-allow-overlap': true},
     paint: {'text-color': '#F6F2E9'}});
-  map.addLayer({id: 'city-name', type: 'symbol', source: 'cities',
-    layout: {'text-field': ['get', 'city'], 'text-font': ['Noto Sans Regular'],
-             'text-size': 12, 'text-offset': [0, 1.6], 'text-anchor': 'top'},
-    paint: {'text-color': '#26301E', 'text-halo-color': '#F6F2E9', 'text-halo-width': 1.4}});
-  map.on('click', 'city-dot', function(e) {
-    window.location.href = '/' + e.features[0].properties.slug;
+  map.addLayer({id: 'tree', type: 'circle', source: 'trees',
+    filter: ['!', ['has', 'point_count']],
+    paint: {'circle-color': '#4A6B2A', 'circle-radius': 7,
+            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
+  map.on('click', 'clusters', function(e) {
+    var f = map.queryRenderedFeatures(e.point, {layers: ['clusters']})[0];
+    var src = map.getSource('trees');
+    src.getClusterLeaves(f.properties.cluster_id, 1000, 0).then(function(leaves) {
+      var cities = {};
+      leaves.forEach(function(l) { cities[l.properties.cs] = true; });
+      var keys = Object.keys(cities);
+      if (keys.length === 1) { window.location.href = keys[0]; return; }
+      src.getClusterExpansionZoom(f.properties.cluster_id).then(function(zoom) {
+        map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
+      });
+    });
   });
-  map.on('mouseenter', 'city-dot', function() { map.getCanvas().style.cursor = 'pointer'; });
-  map.on('mouseleave', 'city-dot', function() { map.getCanvas().style.cursor = ''; });
+  map.on('click', 'tree', function(e) {
+    window.location.href = e.features[0].properties.url;
+  });
+  ['clusters', 'tree'].forEach(function(l) {
+    map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', l, function() { map.getCanvas().style.cursor = ''; });
+  });
 });
 `);
 }
