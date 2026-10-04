@@ -1774,6 +1774,87 @@
         "height": 3231
       },
       "photos": []
+    },
+    {
+      "id": "muc_055",
+      "name": "The Silver Lime of Widerstandsplatz, Dachau",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "planted 1907",
+      "age_min": 115,
+      "age_max": 125,
+      "girth_cm": null,
+      "location": {
+        "address": "Konrad-Adenauer-Straße, corner of Pfarrstraße (Widerstandsplatz), 85221 Dachau",
+        "latitude": 48.2602,
+        "longitude": 11.43571,
+        "neighbourhood": "Dachau old town"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
+        "https://commons.wikimedia.org/wiki/File:Silberlinde_(Dachau)_-_2023-09-16_-_440a.jpg",
+        "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) point 'Linde auf Fl.Nr. 350' 48.26020, 11.43574"
+      ],
+      "access": "Free, on a public town square in Dachau's old town; no restrictions",
+      "transport": "S2 from Munich (Marienplatz/Hauptbahnhof) to Dachau station, roughly 25 minutes; about 0.8 km on foot from Dachau station (roughly 10 to 12 minutes). Dachau is outside Munich city; label as Dachau, not Munich.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "- Landkreis Dachau Naturdenkmal ND 05 (Sammelverordnung 1997), species stated as Silver Lime Tilia tomentosa; de.wikipedia list: 'Laut Informationstafel 1907 gepflanzt' (an information board gives the planting year; this is a stated planting date for this specimen, so age about 119 years, say 'planted 1907' and not a precise age beyond that). Commons description by Martinus KE repeats 1907 and the location Konrad-Adenauer-Strasse corner Pfarrstrasse, called Widerstandsplatz.\n- Pin: Wikipedia coordinate 48.26020, 11.43571 and Bayern LfU register point 48.26020, 11.43574 (Fl.Nr. 350) agree within 3 m; lone tree on a town square, so confirmed. No Commons file geotagged.\n- Alive: photographed in leaf 2023-09-16 (Commons, CC BY-SA 4.0, Martinus KE). Photo in hand, Cadiz standard not judged by this pass.\n- No girth or height in any source seen. Register only for monument status, plus the on-site board via Wikipedia: flagged, one source family (Wikipedia list reproduces the county ordinance).\n- Day-trip: Dachau is about 16 km from central Munich, S2.\n- Photo candidate: File:Silberlinde (Dachau) - 2023-09-16 - 440a.jpg, CC BY-SA 4.0, Martinus KE.",
+      "story": "This lime has a birth certificate of sorts: an information board gives the year it was planted, 1907. That makes it about 119 years old, and for once that is a date rather than an estimate.\n\nTwenty-six years after it went into the ground, the Nazi regime opened a concentration camp on the edge of this town, and the name Dachau took on the meaning it still carries. The lime grew on in the old town through all of it, and through the liberation in April 1945. Today it stands on the corner of Konrad-Adenauer-Straße and Pfarrstraße, on the square called Widerstandsplatz, Resistance Square.\n\nThe Landkreis Dachau made it a natural monument in a 1997 ordinance, which names it a silver lime, a species from south-eastern Europe rather than a native. Its leaves are dark above and felted white beneath, so the crown flickers pale when the wind turns them over. It is also the last lime of the year to flower, in July, after the native limes have finished, and the honey scent carries across the square.\n\nNobody has published its girth or its height. If you stand under it with a tape measure, tell us what you find.\n\nDachau lies about 16 km north-west of central Munich: roughly 25 minutes on the S2, then a ten-minute walk from the station.",
+      "how_to_recognise": "You can recognise it by its leaves, dark green above and felted white beneath, the mark of a silver lime. It stands alone on Widerstandsplatz, at the corner of Konrad-Adenauer-Straße and Pfarrstraße.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the last lime of the summer flowers and the square smells of honey"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Silberlinde_%28Dachau%29_-_2023-09-16_-_440a.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Martinus KE, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2736,
+        "height": 3648
+      },
+      "photos": [],
+      "written": true
+    },
+    {
+      "id": "muc_057",
+      "name": "The Copper Beech of the Old Cemetery, Dachau",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 160 years",
+      "age_min": 140,
+      "age_max": 190,
+      "girth_cm": null,
+      "location": {
+        "address": "Alter Stadtfriedhof, about 20 m inside the Jocherstraße entrance, left side, 85221 Dachau",
+        "latitude": 48.26174,
+        "longitude": 11.43418,
+        "neighbourhood": "Dachau old town"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
+        "https://commons.wikimedia.org/wiki/File:Blutbuche_im_Stadtfriedhof_Dachau_-_2023-09-17_-_628a.jpg",
+        "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) point 'Blutbuche auf Fl.Nr. 720' 48.26175, 11.43408"
+      ],
+      "access": "Free, in Dachau's old town cemetery, open to visitors; stand quietly and keep to the paths",
+      "transport": "S2 from Munich (Marienplatz/Hauptbahnhof) to Dachau station, roughly 25 minutes; about 1.0 km on foot from Dachau station. Dachau is outside Munich city; label as Dachau.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "- Landkreis Dachau Naturdenkmal ND 07, 'Blutbuche': 'im alten Stadtfriedhof, ca. 20 m nach dem Eingang Jocherstrasse auf der linken Seite. Etwa 160 Jahre alt.' (de.wikipedia list reproducing the county ordinance).\n- Pin: Wikipedia 48.26174, 11.43418 and LfU register 48.26175, 11.43408 agree within 7 m, and the description gives a position relative to a gate (about 20 m inside, left): confirmed. No geotagged file.\n- HEALTH: the Commons caption (Martinus KE, 2023-09-17) says the tree does not look healthy, the crown is only sparsely leaved in mid-September before autumn leaf fall. Alive in 2023 but visibly declining; writer should state what the photograph shows and nothing about its future.\n- Photo: File:Blutbuche im Stadtfriedhof Dachau - 2023-09-17 - 628a.jpg, CC BY-SA 4.0. A sparse crown photo: judge against the Cadiz standard; if it fails, the tree still has a confirmed pin.\n- No girth or height in any source.",
+      "story": "When it was photographed in mid-September 2023, this copper beech already had the thin crown of a tree in November. The photographer said so plainly in his caption: the tree did not look healthy, and its leaves were sparse before autumn leaf fall had even begun. It was alive that summer, in leaf if not in full leaf. How it looks today is something a visitor can tell us better than any record can.\n\nIt stands in Dachau's Alter Stadtfriedhof, the old town cemetery, and the county list that protects it as a natural monument gives directions rather than coordinates: about 20 metres inside the Jocherstraße entrance, on the left. Those directions and two separate map points agree on the spot, so this is one tree you will not have to hunt for among the graves.\n\nThe same list puts its age at about 160 years. That figure arrives without a date or a method attached, so read it as a band, somewhere between 140 and 190 years. Either way, it has spent well over a century among the town's graves.\n\nA copper beech is the purple-leaved form of the common beech. No girth or height has been published for this one.\n\nThis is a working cemetery, so stand quietly and keep to the paths. It is about a kilometre on foot from Dachau station, which the S2 reaches from central Munich in roughly 25 minutes.",
+      "how_to_recognise": "You can recognise it by its purple-brown copper beech leaves on a thinly leaved crown. It stands about 20 metres inside the Jocherstraße entrance of the Alter Stadtfriedhof, on the left.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Blutbuche_im_Stadtfriedhof_Dachau_-_2023-09-17_-_628a.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Martinus KE, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2736,
+        "height": 3648
+      },
+      "photos": [],
+      "written": true
     }
   ]
 }

@@ -2,6 +2,26 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 run, fourth continuation: scouted Huntsville, no trees
+
+Ready 0. Munich claim released (force; its 6 trees are held on photo or pin). `scout_next.py --target` named Huntsville (#82): only Alabama's statewide champion program, no tree-level register; verdict `empty` in data/register-scouting.json. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
+
+## 2026-10-04 run, third continuation: Munich verify empty, Key West scouted, no trees
+
+Visits 7 days: 1,594. Rung 1: the Tokyo ginkgo sighting (own, no girth, photo not on the runner) logged as a lead. Munich verify pass (~120k tokens) found nothing new: every register candidate with a photo or pin is already live; Sommerlinde ND12 has a 140 m pin conflict and no photo, a Vaterstetten fir is on a house plot (blocked), eight rural trees are leads. Overpass returned 406 here. Munich claim left standing (muc_056, 058 to 062 held; `--release` refused without --force, and it expires on its own). Scouted Key West: no per-tree register, verdict in data/register-scouting.json. Next: a photo or pin pass on the held trees.
+
+## 2026-10-04 run, second continuation: scouted Liverpool, no trees
+
+Ready 0; the munich claim stands (6 held trees, no photo or pin). `scout_next.py --target` named Liverpool (#61): its council portal is a TPO layer and the only veteran list is the gated Woodland Trust inventory, same verdict as Bath and Edinburgh, recorded in data/register-scouting.json. Staged cities are all held on photo or pin. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
+
+## 2026-10-04 run, continuation: scouted Boston, no trees
+
+Pulled; ready 0, the one standing claim (munich) force-released because its remaining trees (muc_056, 058 to 062) carry no photo or confirmed pin and cannot ship. Staged cities have nothing mergeable (all held on photo or pin). Ran `scout_next.py --target`: Boston has no heritage or champion register with coordinates (ArcGIS search returns only park boundaries); verdict recorded in data/register-scouting.json. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
+
+## 2026-10-04 run: three trees merged, the pace cap has cleared
+
+Visits 7d: 1583. Rung 2 clear. The cap that blocked the earlier attempts no longer refuses: preflight passed. Merged the written trees that carry a photograph or confirmed pin: muc_055 (Silver Lime, Dachau) and muc_057 (Copper Beech, Dachau) into Munich, with German overlay entries and the "52" title, and lon_027 (Dulwich Park Turkey Oak, photo approved) into London, with its FAQ now saying twenty-seven. Held, left alone: muc_056, 058, 059, 060 (approximate pin, no photo). Munich claim stays for those. Not done: Houston, Berlin, Fukuoka and Takachiho written trees still need a photo or pin pass.
+
 ## 2026-10-04 night run, seventh attempt: nothing shipped, pace cap still shut
 
 It is 00:18 UTC and the 24h cap (60 new trees) clears about 12:54 UTC. Ready 0. Claimed and force-released nuremberg without a pass, since its output would also hit the cap. Munich claim kept for the 6 written trees. After the cap: merge muc_055 to 060, nbg_014/015, lon_027, hou_009 to 011, ber_041, fuk_017.

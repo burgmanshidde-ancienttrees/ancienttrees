@@ -22,8 +22,10 @@ photograph is a person, and it goes. A photograph of a tree is not a person; it
 is often the only picture of that tree, on a page that is worse without it. The
 licence for keeping it is in /terms under "What you send us", where permission
 to show a PUBLISHED photograph explicitly survives deletion and is the only
-thing that does. Ownership never transfers. Somebody who wants the picture
-itself gone sends a privacy request, and /terms and /privacy both say it goes.
+thing that does. Since 2026-10-04 that permission is also irrevocable and
+covers our social media; a picture comes off only when a recognisable person
+in it asks, or when it was sent before that date under the old ask-and-it-goes
+promise. Copyright stays with the photographer.
 
 The design is a sweep rather than a queue, deliberately. A queue needs a table,
 a migration Hidde has to paste, and a delete_user() that knows about the
