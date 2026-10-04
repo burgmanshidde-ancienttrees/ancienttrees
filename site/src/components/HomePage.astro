@@ -327,10 +327,21 @@ for (const cs of FAVOURITE_CITIES) {
       `<span class="shelf-meta">${esc(u.homeShelfMeta(e.data.trees.length, e.data.country))}</span></a>`,
   );
 }
+// "See all >" on the heading's own line, the same words on every shelf: the
+// app's Discover does it this way and so do the App Store and Airbnb (Hidde,
+// 2026-10-04: "I think app does it better"). The row's own label ("All 186
+// species") is kept as the accessible name, so a screen reader still hears
+// where it goes.
+// A function declaration with no outer const, because the oldest shelf is
+// built above this line and a const would not exist yet when it runs.
+function seeAllLink(href: string, label: string): string {
+  const chevron = '<svg class="shelf-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  return `<a class="shelf-all" href="${href}" aria-label="${esc(label)}">${u.seeAll}${chevron}</a>`;
+}
 const favShelf =
   favCards.length >= 4
     ? `<section class="shelf"><div class="shelf-head"><h2>${u.homeFavH}</h2>` +
-      `<a href="${L("/cities")}">${u.citiesCrumb}</a></div>` +
+      seeAllLink(L("/cities"), u.citiesCrumb) + `</div>` +
       `<div class="shelf-row shelf-row-wide">${favCards.slice(0, 10).join("")}</div></section>`
     : "";
 
@@ -346,7 +357,7 @@ const favShelf =
 function wideShelf(heading: string, allHref: string, allLabel: string, cards: string[]): string {
   return cards.length >= 4
     ? `<section class="shelf"><div class="shelf-head"><h2>${heading}</h2>` +
-      `<a href="${allHref}">${allLabel}</a></div>` +
+      seeAllLink(allHref, allLabel) + `</div>` +
       `<div class="shelf-row shelf-row-wide">${cards.slice(0, 10).join("")}</div></section>`
     : "";
 }

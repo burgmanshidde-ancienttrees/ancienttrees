@@ -465,6 +465,10 @@ export interface UIStrings {
   homeSpeciesH: string;
   homeParksH: string;
   homeAllParks: string;
+  /** "See all >" at the end of every shelf heading (2026-10-04, the app's
+   *  Discover and the App Store's shelves): one label on every row, the
+   *  specific one ("All 186 species") rides along as the link's aria-label. */
+  seeAll: string;
   homeShelfMeta: (n: number, country: string) => string;
 }
 
@@ -713,6 +717,7 @@ const EN: UIStrings = {
   homeSpeciesH: "Species",
   homeParksH: "Parks",
   homeAllParks: "All parks",
+  seeAll: "See all",
   homeShelfMeta: (n, country) => `${n} trees \u00b7 ${country}`,
 };
 
@@ -746,6 +751,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeSpeciesH: "Especies",
     homeParksH: "Parques",
     homeAllParks: "Todos los parques",
+    seeAll: "Ver todo",
     homeShelfMeta: (n, country) => `${n} árboles \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} árboles en ${d}`,
     citiesCrumb: "Ciudades",
@@ -993,6 +999,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeSpeciesH: "Specie",
     homeParksH: "Parchi",
     homeAllParks: "Tutti i parchi",
+    seeAll: "Vedi tutti",
     homeShelfMeta: (n, country) => `${n} alberi \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} alberi in ${d}`,
     citiesCrumb: "Città",
@@ -1240,6 +1247,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeSpeciesH: "Soorten",
     homeParksH: "Parken",
     homeAllParks: "Alle parken",
+    seeAll: "Alles bekijken",
     homeShelfMeta: (n, country) => `${n} bomen \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} bomen binnen ${d}`,
     citiesCrumb: "Steden",
@@ -1487,6 +1495,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeSpeciesH: "Arten",
     homeParksH: "Parks",
     homeAllParks: "Alle Parks",
+    seeAll: "Alle ansehen",
     homeShelfMeta: (n, country) => `${n} Bäume \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} Bäume auf ${d}`,
     citiesCrumb: "Städte",
@@ -1734,6 +1743,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeSpeciesH: "Espécies",
     homeParksH: "Parques",
     homeAllParks: "Todos os parques",
+    seeAll: "Ver tudo",
     homeShelfMeta: (n, country) => `${n} árvores \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} árvores em ${d}`,
     citiesCrumb: "Cidades",
@@ -1981,6 +1991,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeSpeciesH: "Espèces",
     homeParksH: "Parcs",
     homeAllParks: "Tous les parcs",
+    seeAll: "Tout voir",
     homeShelfMeta: (n, country) => `${n} arbres \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n} arbres sur ${d}`,
     citiesCrumb: "Villes",
@@ -2228,6 +2239,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeSpeciesH: "樹種",
     homeParksH: "公園",
     homeAllParks: "公園一覧",
+    seeAll: "すべて見る",
     homeShelfMeta: (n, country) => `${n}本 \u00b7 ${country}`,
     exploreWalkItem: (n, d) => `${n}本、${d}以内`,
     citiesCrumb: "都市一覧",

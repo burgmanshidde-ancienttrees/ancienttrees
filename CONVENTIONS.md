@@ -2751,6 +2751,22 @@ Hidde asked whether an action like "Add a tree" should carry at least one line o
 
 **A confirmation that needs no answer is Apple's grey HUD.** Music's "Added to Library" and Photos' "Saved": a rounded material square in the middle, a checkmark over one or two words, gone in about a second and a half, nothing to tap. Used for "Tree saved" (Kit/DoneHUD.swift). Anything offering Undo is a Google Maps snackbar at the bottom instead.
 
+## A shelf's way to the full list: "See all >" on the heading line (2026-10-04)
+
+Hidde, comparing the app's Discover with the website's home: "let's make this
+see all button consistent for these rows. I think app does it better."
+
+**The app** (Discover), **the App Store** (Today and app shelves) and
+**Airbnb** (category rows) put a short "See all" with a chevron at the right
+end of the shelf heading, the same two words on every row, and never wrap it
+under the heading on a phone. The website had a different underlined label
+per row ("All 186 species", "All parks", "All cities") that dropped onto its
+own line under 800px.
+
+**What we do:** one `seeAll` string in eight languages and a chevron, on the
+heading's line at every width, with the row's own label kept as the link's
+aria-label.
+
 ## A tree in a list: the whole card is the link, the heart sits on the photo (2026-10-04)
 
 Hidde, on a Barcelona card on his phone: "the save and I've seen this one

@@ -1170,6 +1170,12 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .shelf-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.9rem; }
 .shelf-head h2 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.015em; }
 .shelf-head a { font-size: 13.5px; font-weight: 700; color: var(--moss); text-decoration: underline; text-underline-offset: 3px; }
+/* "See all >" (2026-10-04): the app's Discover shelf link, no underline, a
+   chevron, always on the heading's line and never wrapped under it. */
+.shelf-head .shelf-all { display: inline-flex; align-items: center; gap: 2px; flex-shrink: 0;
+  font-size: 15px; text-decoration: none; white-space: nowrap; min-height: 44px; }
+.shelf-head .shelf-all:hover { text-decoration: underline; }
+.shelf-chev { width: 15px; height: 15px; }
 .shelf-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .shelf-row-wide { display: flex; overflow-x: auto; gap: 16px; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; }
 .shelf-row-wide .shelf-card { flex: 0 0 calc(20% - 13px); min-width: 180px; scroll-snap-align: start; }
@@ -1185,7 +1191,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .shelf-meta { display: block; font-size: 12.5px; color: var(--ink-mid); margin-top: 2px; }
 @media (max-width: 800px) {
   .shelf { padding: 1.2rem var(--page-pad) 0.4rem; }
-  .shelf-head { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
+  .shelf-head { align-items: center; gap: 0.75rem; }
   .shelf-head h2 { font-size: 1.25rem; }
   .shelf-row { display: flex; overflow-x: auto; gap: 12px; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; }
   .shelf-card { flex: 0 0 72%; scroll-snap-align: start; }
