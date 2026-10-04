@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 night run, ninth attempt: nothing shipped, two verdicts and two scouting records
+
+Rung 1: two new reader sightings judged (a Cher oak at 440 cm and a Tokyo ginkgo, both single-contributor with nothing setting them apart), both stay leads, verdicts written with judgement.py. Rung 2: health says the live site is behind main and `gh workflow run deploy.yml` is refused with HTTP 403 from the runner, so that dispatch needs a laptop push or the schedule. Shelf was empty again; Munich and Nuremberg are mined and their written trees are held for photo or pin, so no verify dispatched. Scouted the next two US targets: West Palm Beach (no Palm Beach County rows in the Florida champion register) and Saint Petersburg (one Pinellas row, in Dunedin), both recorded as empty in register-scouting.json. 7-day visits: 1,654.
+
 ## 2026-10-04 night run, eighth attempt: nothing shipped
 
 Pulled; only the nuremberg claim stood, released with --force (register mined, earlier passes already hold its leads and blocks). `leads.py --ready` is 0 and every staged city is either mined or parked; the written Munich, Houston, Berlin, Fukuoka, Takachiho and Tree-of-the-Year trees are held for lacking a photograph or confirmed pin, not for the clock. No dispatch made: a verify pass on a mined register buys nothing.

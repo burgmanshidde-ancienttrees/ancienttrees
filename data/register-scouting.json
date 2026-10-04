@@ -774,6 +774,18 @@
       "country": "United States",
       "status": "empty",
       "note": "SCOUTED 2026-10-04 on scout_next.py --target (#84). One web search: no city or county heritage-tree register surfaced, only historic-district and NRHP building listings (Congress Park, Broadway). No tree-level coordinates, no open licence. A from-zero pass is off by rule. Do not re-scout without a new angle (the New York Big Tree register is statewide and already a finding aid)."
+    },
+    {
+      "place": "West Palm Beach",
+      "country": "United States",
+      "status": "empty",
+      "note": "SCOUTED 2026-10-04 on scout_next.py --target (#85). The Florida Champion Trees ArcGIS feature service (Florida_Champion_Trees_Public_View, 404 rows, 43 counties) was queried for county: Palm Beach County is not among them, so it holds no row near West Palm Beach. No city or county heritage-tree register surfaced either. A from-zero pass is off by rule. Do not re-scout without a new angle."
+    },
+    {
+      "place": "Saint Petersburg",
+      "country": "United States",
+      "status": "empty",
+      "note": "SCOUTED 2026-10-04 on scout_next.py --target (#87). Florida Champion Trees feature service holds exactly one Pinellas County row, a sweetbay magnolia at 28.031, -82.782 (Dunedin area, about 40 km north of St Petersburg, the state's own location text is a fragment). Nothing in the city. No city heritage-tree register surfaced. A from-zero pass is off by rule. Do not re-scout without a new angle."
     }
   ],
   "out_of_focus": {

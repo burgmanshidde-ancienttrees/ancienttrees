@@ -18,6 +18,63 @@
    "agreed": null
   },
   {
+   "id": "lead:6151f7e2-9211-4c2b-8ce8-e1bf17daa3e7",
+   "seen": "2026-10-04",
+   "kind": "a tree we do not map",
+   "tree": "Ginkgo in Tokyo",
+   "city": null,
+   "species": "Ginkgo",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/6151F7E2-9211-4C2B-8CE8-E1BF17DAA3E7.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Ginkgo"
+   },
+   "verdict": "lead",
+   "reason": "Own sighting of a ginkgo in Tokyo, nothing measurable, no register or write-up within 300 m, photograph not viewed this run. Nothing sets it apart. Stays a lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:8f4e7266-cc24-46b3-9a6d-5e8a94bba199",
+   "seen": "2026-10-04",
+   "kind": "a tree we do not map",
+   "tree": "Pedunculate Oak",
+   "city": null,
+   "species": "Pedunculate Oak",
+   "photo": "3f3fd52d-4665-41f3-bbaf-1cd863381908/8F4E7266-CC24-46B3-9A6D-5E8A94BBA199.jpg",
+   "reader_note": "",
+   "reader_girth_cm": 440,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": 1.122,
+    "via": "girth",
+    "note": "112% of the genus reference (392 cm, n=2, max 392)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": "lead",
+   "reason": "Pedunculate oak, reader gives 245 years and 440 cm girth, about the genus norm (reference THIN, n=2). One contributor, no register or write-up within 300 m, photograph not viewed this run. Nothing sets it apart from its neighbours, so it stays a lead; a second account nearby or a source naming it would clear it.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
    "id": "sight:55b91b6b-2126-4579-800f-41cf3f12d87a",
    "seen": "2026-10-03",
    "kind": "photo of a tree we map",
