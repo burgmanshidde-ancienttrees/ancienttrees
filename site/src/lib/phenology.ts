@@ -183,7 +183,7 @@ export function seasonCurve(tree: Tree): string {
 // icon: pink for bloom, orange for autumn colour, amber for fruit. The
 // reference is Airbnb's "Guest favourite" and AllTrails' photo badges: a small
 // pill on the photograph's top left, sentence case, no fill colour that shouts
-// (CONVENTIONS.md 2026-10-04). Without a photograph it closes the meta line.
+// (CONVENTIONS.md 2026-10-04). It sits in a card's tag row (TreeCard.astro).
 // The key travels in the feed as `season_key`, so the app draws the same chip
 // without re-deciding which moment a label means.
 const CHIP_KEY: Record<string, string> = {

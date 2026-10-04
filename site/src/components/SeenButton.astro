@@ -33,7 +33,7 @@ interface Props {
   labelSeen?: string;
   labelDone?: string;
 }
-const { treeId, treeName, labelSeen = "I have seen this one", labelDone = "Ticked off" } = Astro.props as Props;
+const { treeId, treeName, labelSeen = "I have seen this one", labelDone = "Seen" } = Astro.props as Props;
 ---
 <button
   class="seen-btn"

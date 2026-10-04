@@ -2904,3 +2904,21 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
    own line, instead of one run-on sentence in two colours. */
 .td-address { display: block; }
 .td-address + .which-one { display: block; margin-top: 4px; }
+
+/* THE TAG ROW (Hidde, 2026-10-04, approving the mockup: "your new proposal is
+   good"). At most two pills, one style: the season chip, then "Seen" as a
+   light pill with a green tick (the heavy moss "Ticked off" bar is gone). On
+   the photograph's top left, clear of the heart; above the title without one.
+   An empty row (no season, not seen) takes no space. */
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.tree-card-photo .tag-row { position: absolute; top: 10px; left: 10px; right: 56px; z-index: 2; }
+.tag-row-above { margin: 0 var(--gutter) 8px; }
+.tag-row:not(:has(> :not([hidden]))) { display: none; }
+.tag-row .sn-chip, .tag-row .tree-card-seen { position: static; margin: 0; }
+.tag-row .tree-card-seen { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px;
+  font-size: 12px; font-weight: 650; line-height: 1.35; padding: 2px 9px 2px 6px;
+  background: #EEF0E6; color: #2F4A1A; }
+.tag-row .tree-card-seen svg { width: 14px; height: 14px; flex: none; }
+.tag-row .tree-card-seen[hidden] { display: none; }
+.tree-card-photo .tag-row > * { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16); padding: 4px 10px 4px 7px; }
+.tree-card-photo .tag-row .tree-card-seen { background: #fff; }

@@ -109,7 +109,7 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
       var on = Boolean(window.atHasVisited && window.atHasVisited(b.dataset.tree));
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
       var t = b.querySelector('.seen-text');
-      if (t) t.textContent = on ? (b.dataset.lDone || 'Ticked off')
+      if (t) t.textContent = on ? (b.dataset.lDone || 'Seen')
                                 : (b.dataset.lSeen || 'I have seen this one');
     });
   }

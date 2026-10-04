@@ -2857,6 +2857,23 @@ not, and in the tree page's season block instead of "AT ITS BEST NOW". The key
 is decided on the server and travels as `season_key`; the app draws the same
 chip on its card photograph.
 
+## More than one label on a card: one tag row (2026-10-04)
+
+Hidde, on a card wearing a season chip, a heavy "Ticked off" bar and a heart:
+"the ticked off is way to heavy ... I don't like the autumn colours tag and
+where it's placed when no foto, can you benchmark multiple tags."
+
+**Airbnb** shows ONE small badge top left on a listing photo and the heart top
+right, nothing else on the picture. **Adobe Spectrum** (spectrum.adobe.com/page/badge)
+gives a card one place for badges, always with a text label, and decides
+which wins when several apply. **Our app** already said "Seen".
+
+**What we do:** one tag row, at most two pills of one size and style: the
+season chip first, then "Seen" (a light pill with a green tick). On the
+photograph's top left, clear of the heart; above the title when there is no
+photograph, never inside the grey meta line. "Seen" replaces "Ticked off"
+everywhere, the tree page's button included, on web and app.
+
 ## Asking for somebody to look after a place: the open seat (2026-10-04)
 
 Hidde: "Is het een idee om de ambassadeur regel die we toegevoegd hebben bij

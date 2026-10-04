@@ -55,8 +55,7 @@ struct TreeCard: View {
             ZStack(alignment: .topTrailing) {
                 image
                 if showHeart { SaveHeart(tree: tree, look: .onPhoto).padding(6) }
-                if let chip = seasonChip { chip }
-                if saved.isVisited(tree.id) { ticked }
+                tagRow
             }
             VStack(alignment: .leading, spacing: 5) {
                 Text(tree.name).font(.cardTitle).foregroundStyle(Brand.ink)
@@ -163,15 +162,29 @@ struct TreeCard: View {
     // The heart lives in SaveHeart.swift now: one control, two looks, and the
     // sign-in gate and the remove confirmation written once instead of twice.
 
-    private var ticked: some View {
-        Label("Seen", systemImage: "checkmark.seal.fill")
-            .font(.caption2.weight(.semibold))
-            .foregroundStyle(.white)
-            .padding(.horizontal, 8).padding(.vertical, 5)
-            .background(Brand.canopy, in: .capsule)
+    /// THE TAG ROW, the website's (TreeCard.astro, 2026-10-04): at most two
+    /// small pills top left on the photograph, the season first and "Seen"
+    /// second, clear of the heart. "Seen" is a light pill with a green tick,
+    /// no longer the filled canopy badge Hidde found "way too heavy".
+    @ViewBuilder private var tagRow: some View {
+        let seen = saved.isVisited(tree.id)
+        if seasonChip != nil || seen {
+            HStack(spacing: 6) {
+                if let chip = seasonChip { chip }
+                if seen {
+                    Label("Seen", systemImage: "checkmark.circle.fill")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(Brand.canopy)
+                        .padding(.horizontal, 10).padding(.vertical, 5)
+                        .background(Color.white, in: .capsule)
+                        .shadow(color: .black.opacity(0.15), radius: 2, y: 1)
+                        .accessibilityIdentifier("tree-card-seen")
+                }
+            }
             .padding(10)
-            // Bottom left since 2026-10-04: the season chip has the top left.
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+            .padding(.trailing, 44)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        }
     }
 
     /// THE SEASON CHIP, the website's (phenology.ts seasonChipHtml): the
@@ -200,8 +213,6 @@ struct TreeCard: View {
                 .padding(.horizontal, 10).padding(.vertical, 5)
                 .background(Color(light: look.1, dark: look.1), in: .capsule)
                 .shadow(color: .black.opacity(0.15), radius: 2, y: 1)
-                .padding(10)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 .accessibilityIdentifier("tree-card-season")
         )
     }
