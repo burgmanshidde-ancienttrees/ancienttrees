@@ -1021,7 +1021,7 @@ struct CollectSheet: View {
             // a photograph taken on this screen can end up on that tree's page
             // when the page has none or this one is better. Somebody who is
             // told that only on the other screen has not been told.
-            Text("Your photograph can appear on the tree's page.")
+            Text("We may use your photograph on the tree's page and when we share Ancient Trees on social media.")
                 .font(.footnote)
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)

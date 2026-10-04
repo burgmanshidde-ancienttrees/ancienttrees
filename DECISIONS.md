@@ -1,5 +1,28 @@
 # Decisions
 
+## 2026-10-04: a reader's photograph is ours to use, permanently
+
+Hidde, on hearing that the terms let a reader ask for a published photograph
+to come off at any time: "Die foto's moeten van ons zijn en juist gebruikt
+kunnen worden herschrijf onze policy!", and "merge zeker". Asked while
+weighing Instagram as a channel, which the old licence (site, app, "material
+about the platform") did not clearly cover.
+
+**What changed.** /terms takes a worldwide, free, permanent licence that
+cannot be withdrawn: store, crop, edit, publish on site and app, share on our
+social media, use in anything that promotes Ancient Trees, including letting
+those platforms show it. A published photograph stays after account deletion
+(true since 2026-09-04) and no longer comes off on request. /privacy and the
+app's found screen say the same.
+
+**What did not change.** Copyright stays with the photographer: every
+reference app takes a licence rather than ownership (Instagram, Google Maps,
+iNaturalist, AllTrails), and Dutch law (Auteurswet art. 2) needs a deed for a
+transfer. A recognisable person in a photograph can still have it removed,
+because that is their personal data. Photographs sent before 4 October 2026
+keep the old ask-and-it-goes promise they were given under (19 published).
+Not reviewed by a lawyer, same as the original terms.
+
 ## 2026-10-03 - Plus stays a subscription, introduced slowly, and adding trees is free for good
 
 A long session on the outlook after the 09-28 demotion, which Hidde opened as
