@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 run, third continuation: Munich verify empty, Key West scouted, no trees
+
+Visits 7 days: 1,594. Rung 1: the Tokyo ginkgo sighting (own, no girth, photo not on the runner) logged as a lead. Munich verify pass (~120k tokens) found nothing new: every register candidate with a photo or pin is already live; Sommerlinde ND12 has a 140 m pin conflict and no photo, a Vaterstetten fir is on a house plot (blocked), eight rural trees are leads. Overpass returned 406 here. Munich claim left standing (muc_056, 058 to 062 held; `--release` refused without --force, and it expires on its own). Scouted Key West: no per-tree register, verdict in data/register-scouting.json. Next: a photo or pin pass on the held trees.
+
 ## 2026-10-04 run, second continuation: scouted Liverpool, no trees
 
 Ready 0; the munich claim stands (6 held trees, no photo or pin). `scout_next.py --target` named Liverpool (#61): its council portal is a TPO layer and the only veteran list is the gated Woodland Trust inventory, same verdict as Bath and Edinburgh, recorded in data/register-scouting.json. Staged cities are all held on photo or pin. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.

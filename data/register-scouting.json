@@ -756,6 +756,12 @@
    "country": "United States",
    "status": "empty",
    "note": "SCOUTED 2026-10-04 on scout_next.py --target. ArcGIS sharing search for Boston heritage trees returns only park boundaries, EGIS_Park and a student StoryMap (Flora of Boston); no city heritage or champion tree register with coordinates. Covered by the 2026-08-20 US city sweep; the only per-tree source is Arnold Arboretum (already imported). Route: from-zero pass or leads. Do not re-scout without a new angle."
+  },
+  {
+   "place": "Key West",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-10-04 on scout_next.py --target. City tree ordinance (Code ch. 110 art. VI) protects species classes (royal poinciana, mahogany, gumbo limbo, sapodilla, Spanish lime) and lets the commission add individual heritage trees by resolution, but no published per-tree register with coordinates turned up. Route: Florida Champion Trees register (state) or a from-zero pass. Do not re-scout without a new angle."
   }
  ],
  "out_of_focus": {
