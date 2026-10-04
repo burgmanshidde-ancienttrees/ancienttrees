@@ -199,7 +199,7 @@ struct TreeCard: View {
         else { return nil }
         let look: (String, UInt32, UInt32) = switch key {
         case "bloom": ("In bloom", 0xFCE6EE, 0x9A2F57)
-        case "autumn": ("Autumn colour", 0xFDE8D6, 0x95440F)
+        case "autumn": ("Autumn colour", 0xFCEEDC, 0x8A5216)
         case "leaves": ("Fresh leaves", 0xE5F1D9, 0x355E19)
         case "catkins": ("Catkins", 0xF2F0D0, 0x615A16)
         case "winter": ("Winter shape", 0xECEAE4, 0x4F4C45)

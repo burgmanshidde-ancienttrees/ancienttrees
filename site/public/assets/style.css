@@ -2865,7 +2865,10 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
   letter-spacing: 0; text-transform: none; line-height: 1.35; vertical-align: middle; }
 .sn-chip svg { width: 14px; height: 14px; flex: none; }
 .sn-bloom { background: #FCE6EE; color: #9A2F57; }
-.sn-autumn { background: #FDE8D6; color: #95440F; }
+/* Softer, on Hidde's word (2026-10-04: "the autumn tag needs to be softer"):
+   the amber family "In fruit" wears, warmed a touch, with a lighter leaf. */
+.sn-autumn { background: #FCEEDC; color: #8A5216; }
+.sn-autumn svg path:first-child { fill: #E59A5C; }
 .sn-fruit, .sn-peak { background: #FBEFD3; color: #7A5A0C; }
 .sn-leaves { background: #E5F1D9; color: #355E19; }
 .sn-catkins { background: #F2F0D0; color: #615A16; }
