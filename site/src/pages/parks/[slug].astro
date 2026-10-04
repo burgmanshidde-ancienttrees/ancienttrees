@@ -96,14 +96,19 @@ const graph = [...SITE_SCHEMA, breadcrumbSchema(crumbItems, canonical), { "@type
   <main class="content-page">
     <Breadcrumbs items={crumbItems} />
     <h1>Ancient Trees in {name}</h1>
+    {/* WHERE THE PARK IS, one line under its name, as AllTrails prints a
+        park's place under its title. It carries Contract H's link to the
+        city. It replaced "All 5 stand in San Diego, which maps 6 remarkable
+        trees in total", a sentence that existed only to hold that link (Hidde,
+        2026-10-04: "feels completely random and wrong"). */}
+    <p class="page-place"><a href={`/${cslug}`}>{cityName}</a>{city.data.country ? `, ${city.data.country}` : ""}</p>
     <p class="lede">{firstSentence}</p>
     {rest && <div class="prose-block"><p>{rest}</p></div>}
-    <p class="suggest">
-      All {trees.length} stand in <a href={`/${cslug}`}>{cityName}</a>, which maps {city.data.trees.length} remarkable trees in total.
-    </p>
+    <div class="park-list">
     {trees.map((t) => (
       <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} />
     ))}
+    </div>
     {intro.data.official_url && (
       // The reciprocity OUTREACH.md promises has to actually exist on the
       // page: opening hours, tickets and closures are theirs to state, not

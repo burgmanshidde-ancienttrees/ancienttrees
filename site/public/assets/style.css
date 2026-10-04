@@ -2929,3 +2929,9 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .tag-row .tree-card-seen[hidden] { display: none; }
 .tree-card-photo .tag-row > * { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16); padding: 4px 10px 4px 7px; }
 .tree-card-photo .tag-row .tree-card-seen { background: #fff; }
+
+/* A park page's place line under its H1, and the list's own breathing room
+   now that the linking sentence above it is gone (2026-10-04). */
+.content-page .page-place { margin: -0.5rem 0 1rem; font-size: 15px; color: var(--ink-light); }
+.content-page .page-place a { color: var(--ink); text-underline-offset: 3px; }
+.content-page .park-list { margin-top: 2rem; }
