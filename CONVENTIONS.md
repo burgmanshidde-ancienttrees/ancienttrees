@@ -1109,6 +1109,27 @@ URL captured at the time.
 
 ---
 
+## How big a cluster bubble is: one size, the number says how many (2026-10-04)
+
+Hidde, on the new Italy map: "doen andere apps dit ook zo doordat de ballen
+groter worden zie je bijna geen kaart meer benchmark dit eens."
+
+**Apple MapKit** draws a cluster as one `MKMarkerAnnotationView` balloon of the
+same size with the count in it. **Google's markerclusterer** (the current
+@googlemaps/markerclusterer DefaultRenderer) draws one fixed SVG bubble and
+varies only colour and the figure; the older library's growing m1 to m5 images
+are the thing it replaced. **Mapping guidance** (vp0.com on cluster UI, the
+PeerJ preprint "Rethinking the usage and experience of clustering markers in
+web mapping", via search 2026-10-04) says why: a size that varies is read as a
+quantity, which is a bubble chart's job, not a pin's; the number already says
+it. Mapbox's own cluster example does grow its circles (20, 30, 40), and that
+example is where ours came from.
+
+**What we do:** one size everywhere. Web clusters are 26 pixels plus the ring
+(`CLUSTER_RADIUS` in lib/map.ts, on /explore, the country and state maps and
+the account map); the app's `clusterPin` is 32 points whatever the count. They
+were 28 to 48 pixels on the web and 34 to 46 points in the app.
+
 ## How close two pins have to be before they become one
 
 **Reference: MapLibre and Mapbox GL.** Both cluster on a radius given in

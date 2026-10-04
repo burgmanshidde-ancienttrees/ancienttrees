@@ -45,6 +45,16 @@ setTimeout(function () {
   }
 }, 5000);`;
 
+
+/** ONE SIZE FOR EVERY CLUSTER (Hidde, 2026-10-04, on the Italy map: "doordat
+ *  de ballen groter worden zie je bijna geen kaart meer"). The bubbles grew
+ *  with their count, 28, 36 and 48 pixels across, so a country of piles was
+ *  mostly green. Apple's MapKit clusters and Google's markerclusterer draw
+ *  the count in a bubble of one size, and mapping guidance says why: a size
+ *  that varies is read as a quantity, and the number already says it. 13 is
+ *  a 26 pixel bubble plus its ring, the app's clusterPin at 32 points.
+ *  CONVENTIONS.md 2026-10-04. */
+const CLUSTER_RADIUS = 13;
 export function mapScript(body: string): string {
   return `\n<script defer src="${MAPLIBRE_JS}"></script>\n<script>\n` +
     `document.addEventListener("DOMContentLoaded", function () {\n${body}\n${COLLAPSE_ATTRIBUTION}\n});\n</script>\n`;
@@ -151,7 +161,7 @@ map.on('load', function() {
   map.addLayer({id: 'clusters', type: 'circle', source: 'trees',
     filter: ['has', 'point_count'],
     paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
-            'circle-radius': ['step', ['get', 'point_count'], 14, 10, 18, 30, 24],
+            'circle-radius': ${CLUSTER_RADIUS},
             'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
   map.addLayer({id: 'cluster-count', type: 'symbol', source: 'trees',
     filter: ['has', 'point_count'],
@@ -283,7 +293,7 @@ function initTreeLayers() {
   map.addLayer({id: 'clusters', type: 'circle', source: 'trees',
     filter: ['has', 'point_count'],
     paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
-            'circle-radius': ['step', ['get', 'point_count'], 14, 10, 18, 30, 24],
+            'circle-radius': ${CLUSTER_RADIUS},
             'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
   map.addLayer({id: 'cluster-count', type: 'symbol', source: 'trees',
     filter: ['has', 'point_count'],
@@ -537,7 +547,7 @@ function initMine() {
   map.addLayer({id: 'mine-clusters', type: 'circle', source: 'mine',
     filter: ['has', 'point_count'],
     paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
-            'circle-radius': ['step', ['get', 'point_count'], 14, 10, 18, 30, 24],
+            'circle-radius': ${CLUSTER_RADIUS},
             'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
   map.addLayer({id: 'mine-count', type: 'symbol', source: 'mine',
     filter: ['has', 'point_count'],

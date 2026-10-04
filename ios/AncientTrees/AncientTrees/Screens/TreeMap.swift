@@ -1697,10 +1697,13 @@ enum MapLayers {
     }
 
     /// A cluster bubble with its number already drawn in. Moss, white ring,
-    /// white figure, and it grows a little with the count so a pile of forty
-    /// reads as bigger than a pair.
+    /// white figure, and ONE SIZE whatever the count (Hidde, 2026-10-04: "doordat
+    /// de ballen groter worden zie je bijna geen kaart meer"). It grew from 34
+    /// to 46 points with the count; MapKit's own clusters and Google's
+    /// markerclusterer keep one size and let the number say how many, and the
+    /// website draws the same 30 (lib/map.ts CLUSTER_RADIUS).
     private static func clusterPin(count: Int) -> UIImage {
-        let d: CGFloat = count >= 25 ? 46 : (count >= 10 ? 40 : 34)
+        let d: CGFloat = 32
         let size = CGSize(width: d, height: d)
         return UIGraphicsImageRenderer(size: size).image { ctx in
             let rect = CGRect(origin: .zero, size: size).insetBy(dx: 2, dy: 2)
