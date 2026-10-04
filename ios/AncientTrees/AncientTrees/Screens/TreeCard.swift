@@ -206,6 +206,9 @@ struct TreeCard: View {
     /// tap away prints the sentence as written, hedge and disagreement and
     /// all, which is where a claim about what we do and do not know belongs.
     private func shortAge(_ s: String) -> String {
+        // The website's answer first (age_short in the feed, 2026-10-04): the
+        // rule below is the fallback for a feed that predates the field.
+        if let short = tree.ageShort, !short.isEmpty { return short }
         if let lo = tree.ageMin, lo > 0 {
             if let hi = tree.ageMax, hi > lo { return "\(lo)-\(hi) years" }
             return "\(lo) years"

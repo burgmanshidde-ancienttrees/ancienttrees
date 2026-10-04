@@ -160,6 +160,9 @@ export interface UIStrings {
    *  punctuation is part of the language: French wants a space before its
    *  colon and Japanese a full-width one. */
   photoCredit: (credit: string) => string;
+  /** The short age on a list card (age-short.ts, 2026-10-04): "250 years",
+   *  "135-175 years". The figure arrives already formatted. */
+  ageYears: (n: string) => string;
   /** The ambassador line under a city intro (2026-10-02): a reader who looks
    *  after the place and consented to be named. Nothing prints without that
    *  consent, so this string is only ever reached with a real name. */
@@ -516,6 +519,7 @@ const EN: UIStrings = {
   sentenceEnd: ".",
   photoCredit: (credit) => `Photo: ${credit}`,
   ambassadorRole: (place) => `${place} ambassador`,
+  ageYears: (n) => `${n} years`,
   ambassadorWanted: (place) => `${place} is looking for an ambassador`,
   ambassadorWantedLine: "Help us improve this list.",
   ambassadorApply: "Become the ambassador",
@@ -951,6 +955,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cuida la lista de ${place}`,
+    ageYears: (n) => `${n} años`,
     ambassadorWanted: (place) => `Se busca quien cuide la lista de ${place}`,
     ambassadorWantedLine: "Ayúdanos a mejorar esta lista.",
     ambassadorApply: "Quiero hacerlo",
@@ -1199,6 +1204,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cura la lista di ${place}`,
+    ageYears: (n) => `${n} anni`,
     ambassadorWanted: (place) => `Cerchiamo chi curi la lista di ${place}`,
     ambassadorWantedLine: "Aiutaci a migliorare questa lista.",
     ambassadorApply: "Mi candido",
@@ -1447,6 +1453,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Ambassadeur van ${place}`,
+    ageYears: (n) => `${n} jaar`,
     ambassadorWanted: (place) => `${place} zoekt een ambassadeur`,
     ambassadorWantedLine: "Help ons deze lijst te verbeteren.",
     ambassadorApply: "Ik doe mee",
@@ -1695,6 +1702,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Betreut die Liste für ${place}`,
+    ageYears: (n) => `${n} Jahre`,
     ambassadorWanted: (place) => `Wer betreut die Liste für ${place}?`,
     ambassadorWantedLine: "Hilf uns, diese Liste zu verbessern.",
     ambassadorApply: "Ich mache mit",
@@ -1943,6 +1951,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cuida da lista de ${place}`,
+    ageYears: (n) => `${n} anos`,
     ambassadorWanted: (place) => `Procuramos quem cuide da lista de ${place}`,
     ambassadorWantedLine: "Ajude-nos a melhorar esta lista.",
     ambassadorApply: "Quero participar",
@@ -2191,6 +2200,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
     ambassadorRole: (place) => `Veille sur la liste de ${place}`,
+    ageYears: (n) => `${n} ans`,
     ambassadorWanted: (place) => `Qui veillera sur la liste de ${place}\u00a0?`,
     ambassadorWantedLine: "Aidez-nous à améliorer cette liste.",
     ambassadorApply: "Ça m'intéresse",
@@ -2438,6 +2448,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: "\u3002",
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
     ambassadorRole: (place) => `${place}のアンバサダー`,
+    ageYears: (n) => `${n}年`,
     ambassadorWanted: (place) => `${place}のアンバサダーを募集中`,
     ambassadorWantedLine: "このリストをより良くするために力を貸してください。",
     ambassadorApply: "応募する",

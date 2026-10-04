@@ -194,6 +194,11 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// town. Decided by the website (site/src/lib/day-trips.ts) and read here,
     /// never re-decided: the answer travels, the rule stays on the server.
     public var dayTrip: DayTrip? = nil
+    /// The age a CARD prints ("250 years", "135-175 years"), decided once on
+    /// the website (site/src/lib/age-short.ts, 2026-10-04) and read here, so
+    /// TreeCard stops deciding it a second time. Nil when there is nothing
+    /// short to say; a `var` with a default for the memberwise initialiser.
+    public var ageShort: String? = nil
 
     public struct DayTrip: Codable, Hashable, Sendable {
         public let place: String
@@ -209,6 +214,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case transportRaw = "transport"
         case ageMin = "age_min"
         case ageMax = "age_max"
+        case ageShort = "age_short"
         case access, story, url, precision, photo, photos, peak
         case recogniseRaw = "how_to_recognise"
         case paidEntryRaw = "paid_entry"

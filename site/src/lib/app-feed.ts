@@ -17,6 +17,7 @@
 // every tree so an app can say "we know the park, not the trunk" exactly where
 // the website says it, and a photo carries its licence and attribution so an
 // app cannot show the picture while dropping the credit the licence demands.
+import { ageShort } from "./age-short";
 import { dayTrips, type DayTrip } from "./day-trips";
 import type { CityEntry } from "./trees";
 import { peakFor } from "./phenology";
@@ -51,6 +52,9 @@ export interface FeedTree {
   /// "oldest trees" shelf on these, which a prose age cannot do.
   age_min: number | null;
   age_max: number | null;
+  /// The card's age, decided once here (age-short.ts) so the app does not
+  /// decide it a second time in Swift. Null when there is nothing short to say.
+  age_short: string | null;
   lat: number;
   lng: number;
   city: string;
@@ -132,6 +136,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         age: t.age_estimate ?? null,
         age_min: (t as any).age_min ?? null,
         age_max: (t as any).age_max ?? null,
+        age_short: ageShort(t),
         lat: loc.latitude,
         lng: loc.longitude,
         city: city.data.city,

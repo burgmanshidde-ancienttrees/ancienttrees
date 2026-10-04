@@ -32,6 +32,7 @@
 import { getCollection } from "astro:content";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity } from "../../lib/trees";
 import { usablePhoto, thumbUrl, creditRequired, creditName } from "../../lib/images";
+import { ageShort } from "../../lib/age-short";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -43,7 +44,7 @@ export async function GET() {
       const photo = usablePhoto(tree);
       // The same three facts in the same order as TreeCard's meta line, joined
       // here rather than in the browser so a card cannot compose it differently.
-      const meta = [tree.species ?? "", tree.age_estimate ?? "", (tree.location?.neighbourhood ?? "")]
+      const meta = [tree.species ?? "", ageShort(tree) ?? "", (tree.location?.neighbourhood ?? "")]
         .map((s) => String(s ?? "").trim())
         .filter(Boolean)
         .join(" · ");
