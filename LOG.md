@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 night run, eighth attempt: nothing shipped
+
+Pulled; only the nuremberg claim stood, released with --force (register mined, earlier passes already hold its leads and blocks). `leads.py --ready` is 0 and every staged city is either mined or parked; the written Munich, Houston, Berlin, Fukuoka, Takachiho and Tree-of-the-Year trees are held for lacking a photograph or confirmed pin, not for the clock. No dispatch made: a verify pass on a mined register buys nothing.
+
+
 ## 2026-10-04 session with Hidde: lists, cards, labels and maps made consistent, live
 
 What changed for a visitor, all of it benchmarked first (CONVENTIONS.md 2026-10-04) and approved by Hidde screen by screen:
