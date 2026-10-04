@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 run, second continuation: scouted Liverpool, no trees
+
+Ready 0; the munich claim stands (6 held trees, no photo or pin). `scout_next.py --target` named Liverpool (#61): its council portal is a TPO layer and the only veteran list is the gated Woodland Trust inventory, same verdict as Bath and Edinburgh, recorded in data/register-scouting.json. Staged cities are all held on photo or pin. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
+
 ## 2026-10-04 run, continuation: scouted Boston, no trees
 
 Pulled; ready 0, the one standing claim (munich) force-released because its remaining trees (muc_056, 058 to 062) carry no photo or confirmed pin and cannot ship. Staged cities have nothing mergeable (all held on photo or pin). Ran `scout_next.py --target`: Boston has no heritage or champion register with coordinates (ArcGIS search returns only park boundaries); verdict recorded in data/register-scouting.json. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
