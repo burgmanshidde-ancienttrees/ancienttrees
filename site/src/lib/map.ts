@@ -320,24 +320,12 @@ function initTreeLayers() {
       });
     });
   });
+  // A pin opens its tree, as in the app (TreeMap.swift onSelectTree, and the
+  // city page since 2026-10-04). The popup this replaced was a third way of
+  // showing a tree, with its own links and its own Save pill.
   map.on('click', 'tree', function(e) {
     var p = e.features[0].properties;
-    var badge = p.now == 1 ? ' <span class="pop-now">at its best now</span>' : '';
-    // The heart rides in the popup (the 2026-08-14 consistency pass: the map
-    // is where AllTrails' hearts live most densely, and ours had none).
-    // TREE_ACTIONS_JS handles the click by delegation; atPaintSaves() sets
-    // the saved state on this late-added node.
-    var heart = '<button class="save-btn heart-btn heart-compact" type="button" data-tree="' + p.id +
-                '" data-name="' + p.name.replace(/"/g, '&quot;') + '" aria-pressed="false">' +
-                '<svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>' +
-                '<span>Save</span></button>';
-    new maplibregl.Popup({offset: 12})
-      .setLngLat(e.features[0].geometry.coordinates)
-      .setHTML('<strong>' + p.name + '</strong>' + badge + '<br>' + p.age + ' &middot; ' + p.city +
-               '<br><a href="' + p.url + '">See this tree &rarr;</a> &middot; ' +
-               '<a href="' + p.cs + '">All ' + p.city + ' trees &rarr;</a><br>' + heart)
-      .addTo(map);
-    if (window.atPaintSaves) window.atPaintSaves();
+    if (p.url) { window.location.href = p.url; }
   });
   ['clusters', 'tree'].forEach(function(l) {
     map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
@@ -549,10 +537,12 @@ function initMine() {
     var p = e.features[0].properties;
     // A tree only you have may have no page at all: sharing is what gives it
     // one, and somebody who turned that off has no url to point at.
+    // Straight to the tree when it has a page, as every other pin does since
+    // 2026-10-04; the name alone when sharing is off and there is no page.
+    if (p.url) { window.location.href = p.url; return; }
     new maplibregl.Popup({offset: 12})
       .setLngLat(e.features[0].geometry.coordinates)
-      .setHTML('<strong>' + p.name + '</strong><br>' + p.city +
-               (p.url ? '<br><a href="' + p.url + '">See this tree &rarr;</a>' : ''))
+      .setHTML('<strong>' + p.name + '</strong><br>' + p.city)
       .addTo(map);
   });
   map.on('click', 'mine-clusters', function(e) {

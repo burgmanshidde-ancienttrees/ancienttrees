@@ -2784,6 +2784,19 @@ guidance agrees (uxplanet, uxcel, DTA via search 2026-10-04): one primary
 target per card, the whole card clickable, auxiliary actions such as save
 kept to a quiet icon.
 
+**And a pin opens its tree (Hidde, same day: "trek je gelijk de functie van op
+kaart klikken en het boom kaart element consistent ... in de app aardig
+gedaan").** The app's TreeMap passes every pin tap to `onSelectTree`, which
+pushes the tree page, on the Map tab, a city, a collection and My trees alike.
+The website had three other answers: the city page flew the map and slid a copy
+of the card into the sheet, /explore opened a popup with two links and a Save
+pill, and the account map a popup with one link. All three now open the tree
+page, reading the card's own link on the city page so pin and card cannot
+disagree. Kept: the register dots' popup (they have no page) and the city dots
+on country maps (they open the city). So the web has two tree shapes, as the
+app does: the list card (TreeCard) and the small shelf card (home shelves,
+"Trees nearby").
+
 **What we do:** TreeCard.astro and /saved's card are one stretched link each,
 the heart is a 36px white circle on the photo (44px to hit; at the end of the
 name row when there is no photo), and the tick moved off the card: the card

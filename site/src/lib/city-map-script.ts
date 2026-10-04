@@ -305,9 +305,18 @@ markers.forEach(function(m, idx) {
     bits.innerHTML = '<i></i><i></i><i></i>';
     el.appendChild(bits);
   }
+  // A PIN OPENS ITS TREE (Hidde, 2026-10-04: "trek de functie van op kaart
+  // klikken en het boom kaart element consistent ... in de app aardig
+  // gedaan"). The app's TreeMap hands every pin tap to onSelectTree, which
+  // pushes the tree page, on the city page, the Map tab and everywhere else;
+  // the web used to fly the map and slide the sheet to a copy of the card.
+  // The card's own link is the address, so the pin and the card cannot
+  // disagree about where a tree lives.
   el.addEventListener('click', function(e) {
     e.stopPropagation();
-    setActive(idx, true, true);
+    var card = document.getElementById('tree-' + (idx + 1));
+    var a = card && card.querySelector('.tree-name a');
+    if (a) { window.location.href = a.href; } else { setActive(idx, true, true); }
   });
   new maplibregl.Marker({ element: el }).setLngLat([m.lng, m.lat]).addTo(map);
   pins.push(el);
