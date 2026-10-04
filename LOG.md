@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 run: three trees merged, the pace cap has cleared
+
+Visits 7d: 1583. Rung 2 clear. The cap that blocked the earlier attempts no longer refuses: preflight passed. Merged the written trees that carry a photograph or confirmed pin: muc_055 (Silver Lime, Dachau) and muc_057 (Copper Beech, Dachau) into Munich, with German overlay entries and the "52" title, and lon_027 (Dulwich Park Turkey Oak, photo approved) into London, with its FAQ now saying twenty-seven. Held, left alone: muc_056, 058, 059, 060 (approximate pin, no photo). Munich claim stays for those. Not done: Houston, Berlin, Fukuoka and Takachiho written trees still need a photo or pin pass.
+
 ## 2026-10-04 night run, seventh attempt: nothing shipped, pace cap still shut
 
 It is 00:18 UTC and the 24h cap (60 new trees) clears about 12:54 UTC. Ready 0. Claimed and force-released nuremberg without a pass, since its output would also hit the cap. Munich claim kept for the 6 written trees. After the cap: merge muc_055 to 060, nbg_014/015, lon_027, hou_009 to 011, ber_041, fuk_017.
