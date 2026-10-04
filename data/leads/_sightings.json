@@ -848,6 +848,33 @@
    "status": "lead",
    "why": "LOOKED 2026-10-04: own sighting (mine), no girth, age or note entered, no register or write-up within 300 m, photograph file not on this runner so not judged. Nothing sets this ginkgo apart from its neighbours. Stays a lead.",
    "seen": "2026-10-04"
+  },
+  {
+   "sighting_id": "8f4e7266-cc24-46b3-9a6d-5e8a94bba199",
+   "user_id": "3f3fd52d-4665-41f3-bbaf-1cd863381908",
+   "mine": false,
+   "name": "Pedunculate Oak",
+   "species": "Pedunculate Oak",
+   "age": "245",
+   "girth_cm": 440,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 47.4928390241821,
+   "longitude": 2.74713394979848,
+   "taken_at": "2025-06-09T13:03:40+00:00",
+   "photo": "3f3fd52d-4665-41f3-bbaf-1cd863381908/8F4E7266-CC24-46B3-9A6D-5E8A94BBA199.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [],
+   "nearest_published_m": null,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-04"
   }
  ]
 }
