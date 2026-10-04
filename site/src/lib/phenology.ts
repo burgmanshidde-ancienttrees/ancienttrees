@@ -476,7 +476,12 @@ export function seasonBlock(tree: Tree, lat: number): string {
     }
   }
 
-  const keys = moments.map((mo) => `<span class="ph-key">${KIND_ICONS[mo.kind]}${esc(mo.label || mo.kind.charAt(0).toUpperCase() + mo.kind.slice(1))}</span>`).join("");
+  // A key that says what the best-time line under it already says is printed
+  // once, in the line (Hidde, 2026-10-04: the autumn sentence stood twice).
+  const said = hasBt ? (bt.label ?? "").toLowerCase() : "";
+  const keys = moments
+    .filter((mo) => !(mo.label && said.includes(mo.label.toLowerCase())))
+    .map((mo) => `<span class="ph-key">${KIND_ICONS[mo.kind]}${esc(mo.label || mo.kind.charAt(0).toUpperCase() + mo.kind.slice(1))}</span>`).join("");
   const nowBadge = inSeason ? seasonChipHtml(CHIP_KEY[kind] ?? "peak") : "";
   const labelLine = hasBt ? `<p class="season-label">${esc(bt.label!)}</p>` : "";
 
@@ -494,7 +499,7 @@ export function seasonBlock(tree: Tree, lat: number): string {
       ${ticks}
     </svg>
     </div>
-    <p class="ph-keys">${keys}</p>
+    ${keys ? `<p class="ph-keys">${keys}</p>` : ""}
     ${labelLine}
     <p class="ph-foot">The line is our estimate of how much there is to see, not a measurement. Typical for this species where this tree stands; exact weeks shift with the year.</p>
   </figure>`;

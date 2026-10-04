@@ -2874,3 +2874,13 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16); padding: 4px 10px 4px 7px; }
 /* With the chip on the top left, the Seen badge goes to the bottom left. */
 .tree-card-photo .tree-card-seen { top: auto; bottom: 10px; }
+
+/* THE SEASON BLOCK'S RHYTHM (Hidde, 2026-10-04: "vertical spacing in the
+   seasonality graph and the text below seem to be off"). It was 3, 6, 8 and 8
+   pixels between its parts, set in four places. One 12px step now, and the
+   best-time line reads as the sentence it is rather than a second heading. */
+figure.season > * + * { margin-top: 12px; }
+figure.season .season-plot { margin-top: 8px; }
+figure.season .ph-keys { gap: 8px 14px; }
+figure.season .season-label { font-size: 14px; line-height: 1.5; color: var(--ink); }
+figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
