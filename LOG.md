@@ -20,7 +20,7 @@ Verified: full build, qa.py on 17,981 pages (one source-only finding fixed), cro
 
 ## 2026-10-04 run, fifth continuation: Munich verify empty again, no trees
 
-Shelf under its floor (ready 0). Claimed Munich and ran a verify pass: Commons geosearch found no tree photographs, the OSM join showed every unmined row with a node is already live, blocked or a lead, and one pin (Dachau ND 12) was caught mismatching its nearest node. Two leads added, nothing publishable; claim released with --force (its 6 trees are held on photo or pin). `scout_next.py --target` now names Saratoga Springs (#84), not scouted this window. Wikimedia API rate-limits after about 12 quick requests; overpass-api.de answered a GET here despite the blocklist.
+Shelf under its floor (ready 0). Claimed Munich and ran a verify pass: Commons geosearch found no tree photographs, the OSM join showed every unmined row with a node is already live, blocked or a lead, and one pin (Dachau ND 12) was caught mismatching its nearest node. Two leads added, nothing publishable; claim released with --force (its 6 trees are held on photo or pin). `scout_next.py --target` named Saratoga Springs (#84): no tree-level register found, verdict `empty` written to data/register-scouting.json. Wikimedia API rate-limits after about 12 quick requests; overpass-api.de answered a GET here despite the blocklist.
 
 ## 2026-10-04 run, fourth continuation: scouted Huntsville, no trees
 
