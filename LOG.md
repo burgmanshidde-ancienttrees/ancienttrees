@@ -2,6 +2,22 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 session with Hidde: lists, cards, labels and maps made consistent, live
+
+What changed for a visitor, all of it benchmarked first (CONVENTIONS.md 2026-10-04) and approved by Hidde screen by screen:
+
+- **Ambassador seat on every city without one**, web (eight languages) and app: one tappable row, "Tokyo is looking for an ambassador / Help us improve this list." Signed out opens sign-in; signed in writes a submissions row of kind `ambassador`. The knock answers each once with the editor questions (`ambassador.py --requests --send`, new in nightly.yml); the digest counts them in their own column.
+- **One tree card on every list** (city, park, species, country, state, collection, saved): the whole card opens the tree, the heart sits on the photo, the number beside the name, two lines of story (the whole story stays in the HTML). Save, "I have seen this one" and "Read more" left the card.
+- **Labels:** "AT ITS BEST NOW" became the moment named on its own soft tint ("In bloom" pink, "Autumn colour" peach, "In fruit" amber...). "Ticked off" became "Seen" everywhere, a light pill. At most two in one row: on the photo, or under the title without one. Both travel to the app (`season_key` in the feed).
+- **Short age on cards** ("130 years", "~210 years") from `age-short.ts`, sent to the app as `age_short`.
+- **Maps:** a pin opens its tree on every web map, as in the app; country and state maps show every tree clustered instead of piled city labels; clusters are one size on web (30px) and app (32pt).
+- **Home shelves** end their heading in "See all >", as the app's Discover does.
+- **Visual audit** of 97 screenshots by a fresh reviewer, plain errors fixed: card title margin, lead paragraph smaller than body, thin headings on content pages (a duplicated font-weight), footer line, sign-in close ring, %-encoded source labels, "oldest" with nothing after it, lowercase "the Parque" titles (app feed too), the tree page's address and recognition line run together, the season block's rhythm and duplicated sentence. The park page's "All 5 stand in San Diego..." became a place line under the name; the city page lost "Suggestions feed curation; the list itself stays editorial."
+- **copycheck** gained a list of Dutch-in-English phrases ("we'll write to you") and runs on both surfaces and in the pre-push hook.
+
+Verified: full build, qa.py on 17,981 pages (one source-only finding fixed), crosscheck, copycheck, paritycheck, screenshots at 375px and desktop. Not verifiable here: the app half (no Xcode in this sandbox; ios.yml judges it), and the `submissions` table accepting kind `ambassador` (no service key here; the first real tap will show it). The app's season chip shows only with the season switch on (`Launch.season`).
+
+
 ## 2026-10-04 run, fourth continuation: scouted Huntsville, no trees
 
 Ready 0. Munich claim released (force; its 6 trees are held on photo or pin). `scout_next.py --target` named Huntsville (#82): only Alabama's statewide champion program, no tree-level register; verdict `empty` in data/register-scouting.json. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
