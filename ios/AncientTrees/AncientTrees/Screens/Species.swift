@@ -48,7 +48,7 @@ struct SpeciesView: View {
                                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                                 .accessibilityIdentifier("species-scientific")
                         }
-                        Text("\(trees.count) on the map, photographed first")
+                        Text("\(trees.count) on the map")
                             .font(.footnote).foregroundStyle(Brand.inkSoft)
                     }
                 }

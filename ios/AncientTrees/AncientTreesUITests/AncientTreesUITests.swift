@@ -367,7 +367,7 @@ final class AncientTreesUITests: XCTestCase {
         // not written down: it said 14 for two days after Amsterdam lost five
         // trees to the ticket ruling.
         let progress = app.staticTexts.matching(
-            NSPredicate(format: "label CONTAINS 'ticked off'")).firstMatch
+            NSPredicate(format: "label ENDSWITH ' seen'")).firstMatch
         XCTAssertTrue(progress.waitForExistence(timeout: 8), "the walk shows no progress line")
         let parts = progress.label.components(separatedBy: " ")
         XCTAssertEqual(parts.first, "1",

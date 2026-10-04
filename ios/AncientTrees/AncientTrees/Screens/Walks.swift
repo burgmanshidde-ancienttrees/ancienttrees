@@ -123,7 +123,7 @@ struct WalkDetail: View {
             }
             VStack(spacing: 0) {
                 if walk.shape == nil {
-                    Text("The line shows the order, not the route: nobody has walked this one for us yet.")
+                    Text("The line shows the order, not the route.")
                         .font(.caption2).foregroundStyle(.secondary)
                         .padding(.horizontal, 16).padding(.vertical, 6)
                         .frame(maxWidth: .infinity)

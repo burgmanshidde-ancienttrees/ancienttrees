@@ -29,7 +29,7 @@ struct ContributeView: View {
                     Section {
                         Label("Thank you", systemImage: "checkmark.seal.fill")
                             .font(.headline)
-                        Text("Everything sent in is checked against independent sources before it goes live, and a wrong pin gets looked at the same day. You will hear what your tip changed.")
+                        Text("We read every tip.")
                             .font(.footnote).foregroundStyle(.secondary)
                     }
                 } else {

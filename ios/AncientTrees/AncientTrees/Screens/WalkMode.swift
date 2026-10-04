@@ -227,7 +227,7 @@ struct WalkMode: View {
                     .font(.brand(15, .bold))
                     .foregroundStyle(Brand.ink)
                     .lineLimit(1)
-                Text("\(done) of \(trees.count) ticked off")
+                Text("\(done) of \(trees.count) seen")
                     .font(.caption)
                     .foregroundStyle(Brand.inkSoft)
                     .monospacedDigit()

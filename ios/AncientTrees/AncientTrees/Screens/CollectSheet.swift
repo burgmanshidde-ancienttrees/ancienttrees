@@ -882,7 +882,7 @@ struct CollectSheet: View {
 
             // The honest empty state, and the reason the 551 matter.
             if t.photo == nil && t.howToRecognise.isEmpty && t.precision == .approximate {
-                Text("We have no photograph of this one, nothing written down about what tells it from its neighbours, and only a rough pin. We cannot help you be sure, and we would rather say so.")
+                Text("We have no photograph or description of this one and only a rough pin, so we cannot help you be sure.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }

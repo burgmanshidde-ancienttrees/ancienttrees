@@ -1213,7 +1213,7 @@ struct CollectView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("No trees yet")
                     .font(.brand(24, .bold, relativeTo: .title)).foregroundStyle(Brand.ink)
-                Text("You can start your collection by photographing any tree. There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) of ours to find in \(Set(catalogue.trees.map(\.country)).count) countries, and any tree you photograph is yours whether we map it or not.")
+                Text("You can start your collection by photographing any tree, whether we map it or not.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }

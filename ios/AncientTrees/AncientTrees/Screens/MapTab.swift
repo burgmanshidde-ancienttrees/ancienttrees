@@ -1069,7 +1069,7 @@ struct MapTab: View {
                     // a checked route on 2026-08-25, which took it from about a
                     // half to about three quarters. Begin fetches a live route
                     // for the rest, so this line is about the preview above it.
-                    Label("The line shows the order, not the streets. About three quarters of our walks have a checked route; Begin works one out for the rest.",
+                    Label("The line shows the order, not the streets.",
                           systemImage: "info.circle")
                         .font(.caption).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
