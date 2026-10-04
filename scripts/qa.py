@@ -61,6 +61,15 @@ BUSINESS_RULE_PHRASES = [
     "a page of its own", "have enough mapped", "appear as new cities join",
     "qualifies for a page", "publish gate", "we only publish",
     "below the usual four tree floor", "four tree floor",
+    # The template sentences found on 2026-10-04 (Hidde, on "All 5 stand in San
+    # Diego, which maps 6 remarkable trees in total": "feels completely random
+    # and wrong", then "kom je er daar nog meer van tegen?"). Each existed to
+    # carry a link or a count, or explained our process to the reader.
+    "remarkable trees in total", "each one researched and verified",
+    "suggestions feed curation", "the list itself stays editorial",
+    "a themed collection spanning", "this page maps",
+    "we are mapping every remarkable tree", "download all 1 tree",
+    "data/registers/",
 ]
 
 

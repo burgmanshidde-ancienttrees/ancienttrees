@@ -140,7 +140,7 @@ const midName = (n: string) => n.replace(/^The /, "the ");
 const answer = oldest
   ? `The oldest tree we map in ${state} is ${midName(oldest.tree.name)} in ${oldest.stat.name}, at ${oldest.tree.age_estimate ?? "an uncertain age"}.`
   : `These are the remarkable trees we map in ${state}.`;
-const countLine = `We map ${nTrees(total)} across ${places.length} places in ${state}, each one researched and verified.`;
+const countLine = `We map ${nTrees(total)} across ${places.length} places in ${state}.`;
 
 const faceUrl = (() => {
   for (const c of ranked) {

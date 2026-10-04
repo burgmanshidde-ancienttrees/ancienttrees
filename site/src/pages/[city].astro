@@ -313,9 +313,9 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
         </section>
       )}
       <div class="panel-foot">
-        <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world.</b> Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
+        <p class="subtle-suggest">Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
         <div class="take-with-you">
-          <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>Download all {nTrees(trees.length)}</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
+          <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>{trees.length === 1 ? "Download this tree" : `Download all ${nTrees(trees.length)}`}</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
         </div>
         <div class="app-pitch">
           <strong>Walk them with the app</strong>
@@ -344,7 +344,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
                 {citySpeciesLinks.map(([common, spSlug], i) => (
                   <Fragment>
                     {i > 0 && " · "}
-                    <a href={`/species/${spSlug}`}>Every {common.toLowerCase()} on the site</a>
+                    <a href={`/species/${spSlug}`}>Every {common} on the site</a>
                   </Fragment>
                 ))}
               </dd>

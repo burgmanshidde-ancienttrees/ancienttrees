@@ -176,7 +176,7 @@ const cityHasQuestion = hasQuestionPage(city);
         </section>
       )}
       <div class="panel-foot">
-        <p class="subtle-suggest"><b>{U.mappingAll}</b> {U.missingOrWrong(tr.city)} <a href="/contribute?kind=tree">{U.tellUs}</a>.</p>
+        <p class="subtle-suggest">{U.missingOrWrong(tr.city)} <a href="/contribute?kind=tree">{U.tellUs}</a>.</p>
         <div class="take-with-you">
           <strong>{U.goingThere}</strong> <a href={`/${cslug}.gpx`} download>{U.downloadTrees(trees.length)}</a> {U.worksOffline}
         </div>
