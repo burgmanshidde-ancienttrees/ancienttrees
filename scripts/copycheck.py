@@ -141,6 +141,32 @@ DATA_ABSOLUTES = [
 ]
 
 
+# DUTCH WEARING ENGLISH (Hidde, 2026-10-04, on "Thanks, we'll write to you."
+# under the ambassador row: "Is dat een normale zin? Had jij niet een copy check
+# ooit gebouwd?"). It was not a tic of register, it was a calque: "we schrijven
+# je" put into English word for word, where every product says "we'll be in
+# touch". The tics above never ran on the website at all, so this list runs on
+# BOTH surfaces. It holds phrases a native writer would not choose, each with
+# the one they would, and it grows the next time he catches one.
+CALQUES = [
+    (re.compile(r"\bwe(?:'ll| will) write (?:to )?you\b", re.I),
+     "calque of 'we schrijven je': say \"we'll be in touch\" or \"we'll let you know\""),
+    (re.compile(r"\bmake (?:a |the )?(?:photo|photograph|picture)\b", re.I),
+     "calque of 'een foto maken': say \"take a photo\""),
+    (re.compile(r"\bon (?:this|that|the) moment\b", re.I),
+     "calque of 'op dit moment': say \"at the moment\" or \"right now\""),
+    (re.compile(r"\bin the (?:app|website) you can\b", re.I),
+     "Dutch word order: put the reader first, \"You can ... in the app\""),
+]
+
+
+def calque(text):
+    for pattern, why in CALQUES:
+        if pattern.search(text):
+            return why
+    return None
+
+
 def data_promise(text):
     """The offence, or None. Both halves have to be present."""
     if not DATA_WORDS.search(text):
@@ -219,7 +245,7 @@ def main():
             continue
         # Interpolated strings are mostly numbers and names; the tics live in
         # the prose around them and this still sees that.
-        promise = data_promise(text)
+        promise = data_promise(text) or calque(text)
         if promise:
             hits.append((path, line, text, promise))
             continue
@@ -229,7 +255,7 @@ def main():
                 break
 
     for path, line, text in site_sentences():
-        promise = data_promise(text)
+        promise = data_promise(text) or calque(text)
         if promise:
             hits.append((path, line, text, promise))
 

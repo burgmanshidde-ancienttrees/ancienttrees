@@ -140,7 +140,7 @@ struct AmbassadorWantedRow: View {
                         .font(.system(size: 14, weight: .bold))
                         .foregroundStyle(Brand.ink)
                         .fixedSize(horizontal: false, vertical: true)
-                    Text(asked ? "Thanks, we'll write to you." : "Help us improve this list.")
+                    Text(asked ? "Thanks, we'll be in touch." : "Help us improve this list.")
                         .font(.system(size: 12))
                         .foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
