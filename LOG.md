@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 night run (00:14 UTC): nothing could ship, pace cap still shut
+
+Visits 7d: 1578. Rung 2 clear. The written Munich (muc_055 to 060), Nuremberg, London, Houston and Berlin trees still sit behind the 24h accident cap (clears about 12:54 UTC); the munich claim stays for them. Recognition lines are at 100 percent (3603 of 3603), so that lane is done. Ran the free `photo_hunt.py --recheck` sweep (40 trees, queue now 1786 trees with a candidate); the shortlist candidates look like filename-matched noise, so no viewing pass was dispatched. Next window after the cap: merge muc_055 to 060 and the Nuremberg two.
+
 ## 2026-10-03 night run, fourth attempt: scouted Edinburgh, no trees (pace cap still shut)
 
 Pulled; no claims, ready 0. Claimed and force-released nuremberg (its two verified trees stay held by the 24h pace cap, clears about 12:54 UTC 10-04). Scouted Edinburgh as scout_next named it: only a TPO layer and an unverified Trees inventory, verdict `stalled` in data/register-scouting.json. Next window after the cap: merge muc_055 to 060 and the Nuremberg two.
