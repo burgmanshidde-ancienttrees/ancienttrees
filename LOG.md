@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 night run, seventh attempt: nothing shipped, pace cap still shut
+
+It is 00:18 UTC and the 24h cap (60 new trees) clears about 12:54 UTC. Ready 0. Claimed and force-released nuremberg without a pass, since its output would also hit the cap. Munich claim kept for the 6 written trees. After the cap: merge muc_055 to 060, nbg_014/015, lon_027, hou_009 to 011, ber_041, fuk_017.
+
 ## 2026-10-04 night run, sixth attempt: nothing shipped, pace cap still shut
 
 Pulled; ready 0, munich claim kept (release refused: 8 verified trees unmerged). The 24h cap clears about 12:54 UTC; any verify pass now would only add trees that hit it. Merge muc_055 to 060, nbg_014/015, lon_027, hou_009 to 011, ber_041, fuk_017 after that.
