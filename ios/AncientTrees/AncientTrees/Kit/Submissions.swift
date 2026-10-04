@@ -69,6 +69,29 @@ public enum Submission {
         ], token: token)
     }
 
+    /// The open ambassador seat (2026-10-04): one row of kind 'ambassador',
+    /// the same shape the website's button writes (AmbassadorLine.astro), so
+    /// scripts/ambassador.py --requests cannot tell the surfaces apart.
+    public static func requestAmbassador(city: String, token: String?) async -> Bool {
+        await post([
+            "kind": "ambassador",
+            "city": city,
+            "tree": "",
+            "why": "ambassador request",
+            "page": "app" as Any,
+        ], token: token)
+    }
+
+    /// Whether this account already asked for this city, read from the
+    /// account rather than remembered on the phone.
+    public static func askedToBeAmbassador(city: String, token: String?) async -> Bool {
+        guard let token else { return false }
+        let q = city.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? city
+        let rows = await Supa.rows(path + "?select=id&kind=eq.ambassador&city=eq.\(q)&limit=1",
+                                   token: token)
+        return !rows.isEmpty
+    }
+
     /// A TREE YOU SENT US THROUGH THE FORM, read back.
     ///
     /// The app's camera writes to `sightings` and the website's form writes

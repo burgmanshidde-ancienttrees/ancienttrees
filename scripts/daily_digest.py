@@ -1637,13 +1637,19 @@ def product_section(today):
                          "tree,why,user_id", key)
         seen_sub = set()
         ours_n = {"trees": 0, "feedback": 0, "accounts": 0}
+
+        def _sub_kind(r):
+            # An ambassador request (the open seat on every city page,
+            # 2026-10-04) is a person offering to look after a place: its own
+            # column, never folded into feedback.
+            k = r.get("kind")
+            return "trees" if k in ("tree", "city") else ("ambassador" if k == "ambassador" else "feedback")
         for r in rows_:
             if r.get("id") in TEST_SUBMISSION_IDS:
                 continue
             if is_ours(r.get("user_id")):
                 if not (r.get("why") or "").startswith("vote undone"):
-                    ours_n["trees" if r.get("kind") in ("tree", "city")
-                           else "feedback"] += 1
+                    ours_n[_sub_kind(r) if _sub_kind(r) != "ambassador" else "feedback"] += 1
                 continue
             if (r.get("why") or "").startswith("vote undone"):
                 continue  # a cancelled vote is bookkeeping, not feedback
@@ -1653,8 +1659,7 @@ def product_section(today):
                 if fp in seen_sub:
                     continue
                 seen_sub.add(fp)
-            bump(str(r.get("created_at"))[:10],
-                 "trees" if r.get("kind") in ("tree", "city") else "feedback")
+            bump(str(r.get("created_at"))[:10], _sub_kind(r))
         rows_, _ = _supa("/rest/v1/events?select=created_at&name=eq.save"
                          "&created_at=gte.%sT00:00:00" % since.isoformat(), key)
         for r in rows_:
@@ -1668,18 +1673,19 @@ def product_section(today):
         days_ = [(since + datetime.timedelta(days=i)).isoformat() for i in range(15)]
         if any(series.get(d) for d in days_):
             out.append("")
-            out.append("| Day | Accounts | Android waitlist | Saves | Trees sent | Feedback |")
-            out.append("|---|---:|---:|---:|---:|---:|")
+            out.append("| Day | Accounts | Android waitlist | Saves | Trees sent | Feedback | Ambassador asks |")
+            out.append("|---|---:|---:|---:|---:|---:|---:|")
             for d in days_:
                 v = series.get(d, {})
-                out.append("| %s | %d | %d | %d | %d | %d |" % (
+                out.append("| %s | %d | %d | %d | %d | %d | %d |" % (
                     d[5:], v.get("accounts", 0), v.get("waitlist", 0),
-                    v.get("saves", 0), v.get("trees", 0), v.get("feedback", 0)))
+                    v.get("saves", 0), v.get("trees", 0), v.get("feedback", 0),
+                    v.get("ambassador", 0)))
             tot = {k: sum(v.get(k, 0) for d, v in series.items() if d in days_)
-                   for k in ("accounts", "waitlist", "saves", "trees", "feedback")}
-            out.append("| **14 days** | **%d** | **%d** | **%d** | **%d** | **%d** |" % (
+                   for k in ("accounts", "waitlist", "saves", "trees", "feedback", "ambassador")}
+            out.append("| **14 days** | **%d** | **%d** | **%d** | **%d** | **%d** | **%d** |" % (
                 tot["accounts"], tot["waitlist"], tot["saves"],
-                tot["trees"], tot["feedback"]))
+                tot["trees"], tot["feedback"], tot["ambassador"]))
             if any(ours_n.values()):
                 out.append("- Our own rows are not in this table: %s. They are "
                            "testing, and counting them reads as traction."

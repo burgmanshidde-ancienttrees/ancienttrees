@@ -107,3 +107,69 @@ struct AmbassadorRow: View {
         .accessibilityIdentifier("ambassador-row")
     }
 }
+
+/// The open seat on a city page with nobody named (Hidde, 2026-10-04: "Tokio
+/// is looking for an ambassador met een knop"). The same row as AmbassadorRow
+/// with a dashed, empty avatar and one button, as the website draws it under
+/// the intro (AmbassadorLine.astro). Convention: Google Maps' "Join Local
+/// Guides", one tap (CONVENTIONS.md 2026-10-04). Signed out opens the sign-in
+/// sheet; signed in writes one request row and says thanks. The badge follows
+/// the person's answer to our mail, never the tap.
+struct AmbassadorWantedRow: View {
+    let place: String
+
+    @Environment(Account.self) private var account
+    @State private var asked = false
+    @State private var sending = false
+    @State private var signingIn = false
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "checkmark.seal")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Brand.moss)
+                .frame(width: 32, height: 32)
+                .overlay(Circle().strokeBorder(Brand.moss, style: StrokeStyle(lineWidth: 1.5, dash: [3, 3])))
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 1) {
+                Text("\(place) is looking for an ambassador")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundStyle(Brand.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text(asked ? "Thanks, we'll write to you." : "Add photos and help keep the list right.")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 8)
+            if !asked {
+                Button("Become the ambassador", action: tap)
+                    .font(.system(size: 13, weight: .bold))
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.capsule)
+                    .tint(Brand.moss)
+                    .controlSize(.small)
+                    .frame(minHeight: 44)
+                    .disabled(sending)
+                    .accessibilityIdentifier("ambassador-apply")
+            }
+        }
+        .accessibilityIdentifier("ambassador-wanted")
+        .task(id: account.isSignedIn) {
+            asked = await Submission.askedToBeAmbassador(city: place, token: await account.freshToken())
+        }
+        .sheet(isPresented: $signingIn) {
+            SignInSheet(reason: .feedback, localCount: 0)
+        }
+    }
+
+    private func tap() {
+        guard account.isSignedIn else { signingIn = true; return }
+        sending = true
+        Task {
+            let ok = await Submission.requestAmbassador(city: place, token: await account.freshToken())
+            sending = false
+            if ok { asked = true }
+        }
+    }
+}

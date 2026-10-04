@@ -168,6 +168,13 @@ export interface UIStrings {
    *  line saying what they are. Where the noun would be gendered the line says
    *  what they do instead, so one string serves any name. */
   ambassadorRole: (place: string) => string;
+  /** The open seat, on every city page with no named ambassador (Hidde,
+   *  2026-10-04: "Tokyo is looking for an ambassador met een knop"). Name
+   *  line, one grey line, the button, and what the button says once sent. */
+  ambassadorWanted: (place: string) => string;
+  ambassadorWantedLine: string;
+  ambassadorApply: string;
+  ambassadorApplied: string;
   /** The photo viewer, added 2026-09-03. `photoOpen` labels the button the
    *  photograph itself becomes, `photoFull` is the step Wikipedia's Media
    *  Viewer puts one click further in: the original file at full resolution. */
@@ -505,6 +512,10 @@ const EN: UIStrings = {
   sentenceEnd: ".",
   photoCredit: (credit) => `Photo: ${credit}`,
   ambassadorRole: (place) => `${place} ambassador`,
+  ambassadorWanted: (place) => `${place} is looking for an ambassador`,
+  ambassadorWantedLine: "Add photos and help keep the list right.",
+  ambassadorApply: "Become the ambassador",
+  ambassadorApplied: "Thanks, we'll write to you.",
   photoOpen: "Open the photograph",
   photoPrev: "Previous photograph",
   photoNext: "Next photograph",
@@ -934,6 +945,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cuida la lista de ${place}`,
+    ambassadorWanted: (place) => `Se busca quien cuide la lista de ${place}`,
+    ambassadorWantedLine: "Añade fotos y ayuda a mantener la lista al día.",
+    ambassadorApply: "Quiero hacerlo",
+    ambassadorApplied: "Gracias, te escribiremos.",
     photoOpen: "Abrir la fotografía",
     photoPrev: "Fotografía anterior",
     photoNext: "Fotografía siguiente",
@@ -1177,6 +1192,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cura la lista di ${place}`,
+    ambassadorWanted: (place) => `Cerchiamo chi curi la lista di ${place}`,
+    ambassadorWantedLine: "Aggiungi foto e aiuta a tenere giusta la lista.",
+    ambassadorApply: "Mi candido",
+    ambassadorApplied: "Grazie, ti scriveremo.",
     photoOpen: "Apri la fotografia",
     photoPrev: "Fotografia precedente",
     photoNext: "Fotografia successiva",
@@ -1420,6 +1439,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Ambassadeur van ${place}`,
+    ambassadorWanted: (place) => `${place} zoekt een ambassadeur`,
+    ambassadorWantedLine: "Voeg foto's toe en help de lijst te laten kloppen.",
+    ambassadorApply: "Ik doe mee",
+    ambassadorApplied: "Dank je, we mailen je.",
     photoOpen: "Open de foto",
     photoPrev: "Vorige foto",
     photoNext: "Volgende foto",
@@ -1663,6 +1686,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Betreut die Liste für ${place}`,
+    ambassadorWanted: (place) => `Wer betreut die Liste für ${place}?`,
+    ambassadorWantedLine: "Füge Fotos hinzu und hilf, die Liste aktuell zu halten.",
+    ambassadorApply: "Ich mache mit",
+    ambassadorApplied: "Danke, wir schreiben dir.",
     photoOpen: "Foto öffnen",
     photoPrev: "Vorheriges Foto",
     photoNext: "Nächstes Foto",
@@ -1906,6 +1933,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cuida da lista de ${place}`,
+    ambassadorWanted: (place) => `Procuramos quem cuide da lista de ${place}`,
+    ambassadorWantedLine: "Adicione fotos e ajude a manter a lista certa.",
+    ambassadorApply: "Quero participar",
+    ambassadorApplied: "Obrigado, vamos escrever-lhe.",
     photoOpen: "Abrir a fotografia",
     photoPrev: "Fotografia anterior",
     photoNext: "Fotografia seguinte",
@@ -2149,6 +2180,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
     ambassadorRole: (place) => `Veille sur la liste de ${place}`,
+    ambassadorWanted: (place) => `Qui veillera sur la liste de ${place}\u00a0?`,
+    ambassadorWantedLine: "Ajoutez des photos et aidez à garder la liste juste.",
+    ambassadorApply: "Ça m'intéresse",
+    ambassadorApplied: "Merci, nous vous écrirons.",
     photoOpen: "Ouvrir la photographie",
     photoPrev: "Photographie précédente",
     photoNext: "Photographie suivante",
@@ -2391,6 +2426,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: "\u3002",
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
     ambassadorRole: (place) => `${place}のアンバサダー`,
+    ambassadorWanted: (place) => `${place}のアンバサダーを募集中`,
+    ambassadorWantedLine: "写真を追加して、リストを正確に保つ手伝いをしてください。",
+    ambassadorApply: "応募する",
+    ambassadorApplied: "ありがとうございます。ご連絡します。",
     photoOpen: "写真を開く",
     photoPrev: "前の写真",
     photoNext: "次の写真",

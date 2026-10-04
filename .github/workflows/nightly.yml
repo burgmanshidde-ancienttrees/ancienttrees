@@ -242,6 +242,9 @@ jobs:
           # photograph is live in a place with no ambassador is invited once,
           # from the same address. The badge follows their answer, by hand.
           python3 scripts/ambassador.py --invite-scan --send
+          # The open seat (2026-10-04): somebody who pressed "Become the
+          # ambassador" on a city page gets the editor questions once.
+          python3 scripts/ambassador.py --requests --send
           if ! git diff --quiet data/outreach-sent.json data/ambassadors.json; then
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"

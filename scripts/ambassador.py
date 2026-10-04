@@ -15,6 +15,7 @@ CLAUDE.md ("Ambassadors"); this script only records the answer.
     python3 scripts/ambassador.py --sync
     python3 scripts/ambassador.py --grant-named "<Name>" <place_slug>
     python3 scripts/ambassador.py --invite-scan [--send]
+    python3 scripts/ambassador.py --requests [--send]
 
 --invite-scan is the standard first contact (Hidde, 2026-10-02: "lets make it
 a standard thing whenever someone adds something to a city we dont have a
@@ -25,6 +26,13 @@ invitation once, from the Ancient Trees address the other contributor mails use
 (never as Hidde: hard rule 4). The badge is NOT granted here: it follows their
 answer, by hand, with --grant. Without --send it prints the mails it would send.
 The invitations live in data/ambassadors.json under "invited".
+
+--requests answers the OPEN SEAT (Hidde, 2026-10-04: every city with nobody
+named shows "Tokyo is looking for an ambassador" with a button). The button
+writes a submissions row of kind 'ambassador'; this sends each new one the
+editor mail once (how they see the list, what to take off or add, photographs),
+the same second mail Giulia Torta got, and records it under "requested" so it
+never repeats. The badge still follows their answer, by hand, with --grant.
 
 --grant-named is for somebody who gave us trees by MAIL and has no app account
 (Hidde, 2026-10-02, on Hans Erik Lund and Paulo Araujo: "dont email paulo or
@@ -342,6 +350,96 @@ def invite_scan(send):
     return 0
 
 
+REQUEST_SUBJECT = "Looking after {place}"
+REQUEST_BODY = (
+    "Hi,\n\n"
+    "Thanks for offering to look after our {place} list. Here it is as it stands:\n{listlink}\n\n"
+    "Three questions, answer whichever you like: how do you see the list, which trees would you "
+    "take off or add, and do you have photographs of any of them? Those would go on the pages.\n\n"
+    "Thanks,\nAncient Trees\n"
+)
+
+
+def _slug_for(city):
+    """The page slug for the English city name the request row carries."""
+    want = (city or "").strip().lower()
+    for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        with open(path, encoding="utf-8") as fh:
+            if (json.load(fh).get("city") or "").strip().lower() == want:
+                return os.path.basename(path)[:-5]
+    return None
+
+
+def requests_scan(send):
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import ours
+    try:
+        from contributor_reply import mailcheck_ok
+    except Exception:
+        mailcheck_ok = None
+    if not KEY:
+        print("ambassador --requests: no SUPABASE_SERVICE_KEY, nothing read")
+        return 0
+    with open(FILE, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    requested = doc.setdefault("requested", [])
+    seen_rows = {r.get("row") for r in requested}
+    asked = {(r["user_id"], r["place_slug"]) for r in requested if r.get("user_id")}
+    badged = {(e.get("user_id"), e["place_slug"]) for e in doc.get("ambassadors", [])}
+    rows_ = _req("/rest/v1/submissions?select=id,user_id,city,created_at"
+                 "&kind=eq.ambassador&order=created_at.asc") or []
+    n = 0
+    for row in rows_:
+        uid, rid = row.get("user_id"), row.get("id")
+        if rid in seen_rows or not uid or ours.is_ours(uid):
+            continue
+        slug = _slug_for(row.get("city"))
+        if not slug:
+            print(f"request {rid}: no published place called {row.get('city')!r}")
+            continue
+        if (uid, slug) in asked or (uid, slug) in badged:
+            requested.append({"row": rid, "user_id": uid, "place_slug": slug, "date": None, "note": "repeat"})
+            continue
+        place = place_name(slug)
+        subject = REQUEST_SUBJECT.format(place=place)
+        body = REQUEST_BODY.format(place=place, listlink=f"{BASE_URL}/{slug}")
+        if mailcheck_ok:
+            ok, why = mailcheck_ok(body, app_user=True)
+            if not ok:
+                print(f"request {rid} / {slug}: held by mailcheck\n{why}")
+                continue
+        addr = _address(uid)
+        creds = {k: os.environ.get(f"OUTREACH_{k}") for k in ("SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS", "FROM")}
+        if not send or not addr or not all(creds.values()):
+            why = "dry run" if not send else ("no address" if not addr else "no mail credentials")
+            print(f"request {rid} {uid[:8]} / {slug} ({why}):\n  {subject}\n" + "\n".join("  " + l for l in body.splitlines()))
+            continue
+        if "burgmans.hidde" in creds["FROM"].lower():
+            print("REFUSED: a reply would go out under a personal address")
+            continue
+        msg = EmailMessage()
+        msg["From"], msg["To"], msg["Subject"] = creds["FROM"], addr, subject
+        msg.set_content(body)
+        try:
+            with smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=60) as server:
+                server.starttls()
+                server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+                server.send_message(msg)
+        except Exception as e:
+            print(f"request {rid} / {slug}: transport failed ({e.__class__.__name__})")
+            continue
+        requested.append({"row": rid, "user_id": uid, "place_slug": slug, "place_name": place,
+                          "date": datetime.date.today().isoformat()})
+        asked.add((uid, slug))
+        n += 1
+        print(f"request {rid} / {slug}: editor mail sent")
+    with open(FILE, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+    print(f"ambassador --requests: {n} mail(s) sent")
+    return 0
+
+
 def listing():
     with open(FILE, encoding="utf-8") as fh:
         doc = json.load(fh)
@@ -358,6 +456,8 @@ def main(argv):
         return listing()
     if "--sync" in argv:
         return sync()
+    if "--requests" in argv:
+        return requests_scan("--send" in argv)
     if "--invite-scan" in argv:
         return invite_scan("--send" in argv)
     if "--grant-named" in argv:

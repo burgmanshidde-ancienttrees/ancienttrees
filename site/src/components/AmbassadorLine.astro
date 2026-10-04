@@ -20,13 +20,34 @@
  * Hidde, 2026-10-02: "ambassador idea is perfect lets implement it in both app
  * and web." The app shows the same badge beside the name in People and on the
  * person's own My trees header (Screens/AmbassadorBadge.swift).
+ *
+ * THE OPEN SEAT (Hidde, 2026-10-04: "de ambassadeur regel ... bij elke stad
+ * toevoegen met de vraag Tokio is looking for an ambassador met een knop").
+ * A city with nobody named gets the same row with an empty dashed avatar and a
+ * button, instead of nothing. Convention (CONVENTIONS.md 2026-10-04): Google
+ * Maps' Contribute tab carries "Join Local Guides" as one tap, and a Reddit
+ * community recruiting moderators says so where its members read and takes the
+ * application as a prefilled message. One tap here too: signed out opens the
+ * sign-in dialog (the account is the reply channel, 2026-08-21), signed in
+ * writes one submissions row of kind 'ambassador' and the button says thanks.
+ * The badge still follows the person's ANSWER, never the tap: the knock mails
+ * them the editor questions (scripts/ambassador.py --requests) and a session
+ * grants it. Whether this account already asked is read from the account,
+ * never remembered in the browser.
  */
 import { icon } from "../lib/icons";
+import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { ui } from "../lib/i18n";
 import type { Ambassador } from "../lib/ambassadors";
 
-interface Props { people: Ambassador[]; lang?: string; place?: string }
-const { people, lang = "en", place } = Astro.props as Props;
+interface Props {
+  people: Ambassador[]; lang?: string; place?: string;
+  /** The city's ENGLISH name, written into the request row so the pipeline
+   *  reads one spelling whatever language the page was in. Without it no
+   *  open seat is drawn. */
+  requestCity?: string;
+}
+const { people, lang = "en", place, requestCity } = Astro.props as Props;
 const U = ui(lang);
 ---
 {people.length > 0 && (
@@ -45,6 +66,63 @@ const U = ui(lang);
     ))}
   </ul>
 )}
+{people.length === 0 && place && requestCity && (
+  <div class="ambassadors ambassador-open" data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
+    <div class="ambassador">
+      <span class="ambassador-avatar ambassador-avatar-open" aria-hidden="true">
+        <Fragment set:html={icon("seal-check", "bold", "ic")} />
+      </span>
+      <span class="ambassador-text">
+        <span class="ambassador-name">{U.ambassadorWanted(place)}</span>
+        <span class="ambassador-role">{U.ambassadorWantedLine}</span>
+      </span>
+    </div>
+    <button type="button" class="ambassador-apply" data-done={U.ambassadorApplied}>{U.ambassadorApply}</button>
+  </div>
+  <script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    var box = document.querySelector('.ambassador-open');
+    var C = window.atCollection;
+    if (!box || !C) return;
+    var btn = box.querySelector('.ambassador-apply');
+    var city = box.getAttribute('data-city');
+    var SB = box.getAttribute('data-sb'), KEY = box.getAttribute('data-key');
+    function done() { btn.textContent = btn.getAttribute('data-done'); btn.disabled = true; box.classList.add('ambassador-asked'); }
+    function headers(s, json) {
+      var h = { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token };
+      if (json) { h['Content-Type'] = 'application/json'; h['Prefer'] = 'return=minimal'; }
+      return h;
+    }
+    // Already asked, on any device: the account's own rows answer it.
+    C.verify().then(function(ok) {
+      var s = ok && C.session();
+      if (!s) return;
+      fetch(SB + '/rest/v1/submissions?select=id&kind=eq.ambassador&city=eq.' + encodeURIComponent(city) + '&limit=1',
+            { headers: headers(s) })
+        .then(function(r) { return r.ok ? r.json() : []; })
+        .then(function(rows) { if (rows && rows.length) done(); })
+        .catch(function() {});
+    });
+    btn.addEventListener('click', function() {
+      var s = C.session();
+      if (!s) { if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback'); return; }
+      btn.disabled = true;
+      fetch(SB + '/rest/v1/submissions', {
+        method: 'POST', headers: headers(s, true),
+        body: JSON.stringify({ kind: 'ambassador', city: city, tree: '', why: 'ambassador request', page: location.pathname })
+      }).then(function(r) {
+        if (r.status === 401 || r.status === 403) { C.forget(); btn.disabled = false; if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback'); return; }
+        if (r.ok) { done(); if (window.at && at.track) at.track('ambassador-request'); }
+        else btn.disabled = false;
+      }).catch(function() { btn.disabled = false; });
+    });
+    document.addEventListener('at:signedout', function() {
+      btn.textContent = btn.getAttribute('data-label'); btn.disabled = false; box.classList.remove('ambassador-asked');
+    });
+    btn.setAttribute('data-label', btn.textContent);
+  });
+  </script>
+)}
 
 <style>
   .ambassadors { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
@@ -62,4 +140,16 @@ const U = ui(lang);
   .ambassador-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
   .ambassador-name { font-size: 14px; font-weight: 700; color: var(--ink); }
   .ambassador-role { font-size: 12px; color: var(--ink-mid); }
+  .ambassador-open { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; }
+  .ambassador-open .ambassador { flex: 1 1 220px; min-width: 0; }
+  .ambassador-avatar-open { background: transparent; border: 1.5px dashed var(--moss); }
+  .ambassador-avatar-open :global(.ic) { width: 16px; height: 16px; fill: var(--moss); }
+  .ambassador-apply {
+    flex: none; min-height: 36px; padding: 0 14px; border-radius: 999px;
+    border: 1.5px solid var(--moss); background: transparent; color: var(--moss);
+    font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+  }
+  .ambassador-apply:hover { background: var(--moss-light); }
+  .ambassador-apply:disabled { cursor: default; opacity: 1; }
+  .ambassador-asked .ambassador-apply { border-color: transparent; padding: 0; font-weight: 500; color: var(--ink-mid); }
 </style>

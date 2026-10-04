@@ -2751,6 +2751,31 @@ Hidde asked whether an action like "Add a tree" should carry at least one line o
 
 **A confirmation that needs no answer is Apple's grey HUD.** Music's "Added to Library" and Photos' "Saved": a rounded material square in the middle, a checkmark over one or two words, gone in about a second and a half, nothing to tap. Used for "Tree saved" (Kit/DoneHUD.swift). Anything offering Undo is a Google Maps snackbar at the bottom instead.
 
+## Asking for somebody to look after a place: the open seat (2026-10-04)
+
+Hidde: "Is het een idee om de ambassadeur regel die we toegevoegd hebben bij
+Florence bij elke stad toe te voegen met de vraag Tokio is looking for an
+ambassador met een knop."
+
+**Google Maps / Local Guides** (support.google.com/local-guides and Google's
+own blog, via search 2026-10-04): the Contribute tab carries "Join Local
+Guides" as a single tap; contributing is what earns the level and the badge.
+**Reddit** (r/ModSupport's Mod Recruiter, r/NeedAMod, via search 2026-10-04):
+a community that wants moderators says so where its members already read, and
+takes the application as a PREFILLED message or a short form, then a human
+decides. **komoot Pioneers** (komoot.com/pioneers, via search; the site
+blocks our fetcher): the status is earned per region by contributing, there is
+no application at all. Not fetched this time: whether a komoot region page
+shows an empty Pioneer slot; nothing seen says it does.
+
+**What we do:** the byline row with an empty dashed avatar, "Tokyo is looking
+for an ambassador", one grey line ("Add photos and help keep the list right.")
+and one button, "Become the ambassador". One tap like Google's Join, a human
+decision after it like Reddit's: the tap writes a request, the editor mail
+asks the questions, the badge follows the answer. Same row on the app's city
+page. Where we differ from komoot: at our volume nobody earns a region by
+upvotes, so the seat has to be offered rather than waited for.
+
 ## Crediting the person behind a list: a byline, never a sentence (2026-10-03)
 
 **The interaction: a public page names the person who looks after it.** Looked
