@@ -104,6 +104,16 @@ function firstSentence(s: string): string {
 }
 
 const text = note ?? (variant === "full" ? story : firstSentence(story));
+// ONE SHAPE ON EVERY LIST (Hidde, 2026-10-04, choosing variant 3 of three
+// mockups: "versie 3 ziet er goed uit ... verwerk gelijk consistent over alle
+// lijsten"). AllTrails' list card: the photograph full width at the top with
+// the map number and the heart on it, then a bold name, one meta line and two
+// lines of story. A tree without a photograph gets NO empty frame (variant 2
+// tried that, and three of Barcelona's first four cards were blank boxes):
+// the number sits in a small round badge before the name and the heart at the
+// end of the same row. The whole story stays in the HTML and is clamped to two
+// lines by CSS, so Contract C's story is still on the page for search.
+//
 // THE WHOLE CARD OPENS THE TREE, on every page, the city page included
 // (Hidde, 2026-10-04, on a Barcelona card: "the save and I've seen this one
 // clutter this page ... the app just makes the whole tile clickable"). The
@@ -147,6 +157,7 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
                    treeUrl={href}
                    photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
                    meta={metaParts.join(" \u00b7 ") || undefined} />
+        {index !== undefined && <span class="tree-num">{index}</span>}
         {canTick && <span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{L.done}</span></span>}
       </div>
       {creditLine && (creditLink
@@ -160,7 +171,7 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
                 treeUrl={href}
                 photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
                 meta={metaParts.join(" \u00b7 ") || undefined} />}
-    {index !== undefined && <span class="tree-num">{index}</span>}
+    {index !== undefined && !(photo && photo.url) && <span class="tree-num">{index}</span>}
     {headingLevel === 2 ? (
       <h2 class="tree-name">
         {linkName ? <a href={href}>{name}</a> : name}

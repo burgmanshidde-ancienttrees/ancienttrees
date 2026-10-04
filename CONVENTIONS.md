@@ -2805,6 +2805,16 @@ guidance agrees (uxplanet, uxcel, DTA via search 2026-10-04): one primary
 target per card, the whole card clickable, auxiliary actions such as save
 kept to a quiet icon.
 
+**And the card itself, chosen from three mockups (Hidde, same day: "versie 3
+ziet er goed uit ... verwerk gelijk consistent over alle lijsten").**
+AllTrails' "best trails in" lists render each trail as one card: a photo, the
+name, one stats line and a short description snippet (browse.sh's AllTrails
+skill and Apify's scraper docs, via search 2026-10-04). Ours copies it with one
+difference: a tree without a photograph gets no empty frame (variant 2 tried
+it and three of Barcelona's first four cards were blank boxes), so the number
+becomes a round badge before the name and the heart closes that row. Two lines
+of story on screen, the whole story in the HTML for Contract C.
+
 **And a pin opens its tree (Hidde, same day: "trek je gelijk de functie van op
 kaart klikken en het boom kaart element consistent ... in de app aardig
 gedaan").** The app's TreeMap passes every pin tap to `onSelectTree`, which
