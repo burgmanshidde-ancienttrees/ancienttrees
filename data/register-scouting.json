@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Tampa",
+      "country": "United States",
+      "status": "stalled",
+      "note": "SCOUTED 2026-10-04 on scout_next.py --target (#91). The city runs a Heritage Tree designation (native species, 36 in DBH or more) and a Grand Tree list (32 in or more) with a heritage tree map, but a web search finds no downloadable list with coordinates. Next angle: the City of Tampa ArcGIS open-data hub for a Heritage/Grand Tree layer, and the Florida Champion Trees register (FDACS) for Hillsborough County. Not yet tried."
+    },
+    {
       "place": "Chattanooga",
       "country": "United States",
       "status": "stalled",

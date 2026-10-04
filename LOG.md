@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 twelfth attempt (evening): nothing publishable, Tampa scouted
+
+leads.py --ready is 0 and no claims stood. The Munich (muc_056, 058, 059, 060), Nuremberg (nbg_014, 015), ptl_027 and bos_013 all fail photo-or-pin (approximate pin, no photograph), so none was merged; muc_055 and 057 are already live. Judged the one reader sighting of an unmapped tree (pedunculate oak, 440 cm, central France): no register or article nearby, one contributor, stays a lead. Scouted Tampa (#91): heritage and grand tree programmes exist but no downloadable list with coordinates; next angle recorded in register-scouting.json. Preflight 0 problems.
+
 ## 2026-10-04 run, eleventh attempt: Munich released, St. Louis scouted, no trees
 
 Ready 0, so no write pass. The one rung-1 sighting (the Cher oak at 440 cm) already had its lead verdict. Munich claimed and released with --force: it has been mined three times and its trees are held for photo or pin. Scouted St. Louis (#88): two guessed official URLs returned 404 and no register turned up, so the verdict is `empty`, recorded as a thin check. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
