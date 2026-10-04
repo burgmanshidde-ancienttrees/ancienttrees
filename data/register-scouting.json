@@ -786,6 +786,12 @@
       "country": "United States",
       "status": "empty",
       "note": "SCOUTED 2026-10-04 on scout_next.py --target (#87). Florida Champion Trees feature service holds exactly one Pinellas County row, a sweetbay magnolia at 28.031, -82.782 (Dunedin area, about 40 km north of St Petersburg, the state's own location text is a fragment). Nothing in the city. No city heritage-tree register surfaced. A from-zero pass is off by rule. Do not re-scout without a new angle."
+    },
+    {
+      "place": "St. Louis",
+      "country": "United States",
+      "status": "empty",
+      "note": "SCOUTED 2026-10-04 on scout_next.py --target (#88). Two guessed city forestry and Missouri Dept of Conservation champion-tree URLs returned 404 from the runner; no tree-level register with coordinates found. Thin check: re-scout only with a concrete angle (Missouri Champion Tree Program list, Forest ReLeaf, Tower Grove Park tree inventory)."
     }
   ],
   "out_of_focus": {

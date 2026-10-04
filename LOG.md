@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 run, eleventh attempt: Munich released, St. Louis scouted, no trees
+
+Ready 0, so no write pass. The one rung-1 sighting (the Cher oak at 440 cm) already had its lead verdict. Munich claimed and released with --force: it has been mined three times and its trees are held for photo or pin. Scouted St. Louis (#88): two guessed official URLs returned 404 and no register turned up, so the verdict is `empty`, recorded as a thin check. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
+
 ## 2026-10-04 night run, tenth attempt: nothing shipped
 
 Pulled, no stale claims, READY 0. Claimed Frankfurt (Germany, below target) and the brief showed 0 register candidates in 20 km, so web research from zero, which the doctrine rules out; released it. Dresden's brief is also fully mined (every remaining lead is an avenue or group). The one unjudged reader sighting, the Cher oak at 440 cm, is single-contributor, no register or article within 300 m, so it stays a lead. Next real supply needs a scout: `scout_next.py --target` says St. Louis.
