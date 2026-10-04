@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-04 night run, fifth attempt: nothing shipped, pace cap still shut
+
+Pulled; only the munich claim stands (kept for the written trees held by the 24h cap, clears about 12:54 UTC). `leads.py --ready` is 0 and every staged city's output would also hit the cap, so I dispatched nothing. Next window after the cap: merge muc_055 to 060, the Nuremberg two, lon_027, hou_009 to 011, ber_041, fuk_017.
+
 ## 2026-10-04 night run (00:14 UTC): nothing could ship, pace cap still shut
 
 Visits 7d: 1578. Rung 2 clear. The written Munich (muc_055 to 060), Nuremberg, London, Houston and Berlin trees still sit behind the 24h accident cap (clears about 12:54 UTC); the munich claim stays for them. Recognition lines are at 100 percent (3603 of 3603), so that lane is done. Ran the free `photo_hunt.py --recheck` sweep (40 trees, queue now 1786 trees with a candidate); the shortlist candidates look like filename-matched noise, so no viewing pass was dispatched. Next window after the cap: merge muc_055 to 060 and the Nuremberg two.
