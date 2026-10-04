@@ -9250,191 +9250,13 @@
    "tokens": 120000,
    "trees": 0,
    "note": "register exhausted: all candidates with photo or pin already live; ND12 pin conflict, Vaterstetten blocked, 8 rural leads"
-  }
- ],
- "2026-10-03": [
+  },
   {
    "target": "munich",
    "kind": "verify",
-   "tokens": 185000,
+   "tokens": 178000,
    "trees": 0,
-   "note": "unmined Bayern ND rows around Munich exhausted: 3 leads, 2 blocked, nothing with life evidence plus photo or confirmed pin"
-  },
-  {
-   "target": "london",
-   "kind": "verify",
-   "tokens": 177000,
-   "trees": 0,
-   "note": "4 Great Trees of London delivered, 3 leads groups recorded"
-  },
-  {
-   "target": "london",
-   "kind": "write",
-   "tokens": 174000,
-   "trees": 3,
-   "note": "3 stories merged with approved Commons photos; lon_027 held by 60-in-24h pace cap"
-  },
-  {
-   "target": "reykjavik",
-   "kind": "photo",
-   "tokens": 0,
-   "trees": 0,
-   "note": "session work: 3 reader photographs judged by run, 2 published (rey_001, rey_002), 1 held"
-  }
- ],
- "passes": [
-  {
-   "date": "2026-10-01",
-   "target": "species intros (187 reviewed, 132 rewritten)",
-   "kind": "write",
-   "tokens": 570000,
-   "trees": 0,
-   "note": "species page intro/meta fix after the 09-28 demotion audit; counts removed, top tree named from live data; 6 data issues reported"
-  },
-  {
-   "date": "2026-10-01",
-   "kind": "photo-judge",
-   "target": "photo-review-good-2026-10-01 identity check",
-   "tokens": 45000,
-   "trees": 0,
-   "photos_approved": 5,
-   "note": "21 owner-approved photos checked for identity: 5 approved, 16 held; wrong species or wrong tree was the main failure"
-  },
-  {
-   "date": "2026-10-01",
-   "kind": "phenology",
-   "target": "18 species season calendars",
-   "tokens": 195000,
-   "trees": 0,
-   "note": "species most common on proven-city trees without a calendar; sources Wikipedia, NC State Extension, PFAF, Trees and Shrubs Online"
-  },
-  {
-   "date": "2026-10-01",
-   "kind": "verify",
-   "target": "fukuoka (Itoshima, Rokusho Shrine)",
-   "tokens": 170000,
-   "trees": 0,
-   "note": "two prefectural-monument camphors verified (no. 41, 1960, 8.5 and 7.5 m) but held: no open-licence photo, pin only to the grove. Hidde's Oimatsu camphor stays a lead."
-  },
-  {
-   "date": "2026-10-01",
-   "kind": "verify",
-   "target": "copenhagen (Hans Erik Lund's register extract)",
-   "tokens": 215000,
-   "trees": 0,
-   "note": "7 verified with photo and confirmed pin (cph_043-049), 34 of 60 extract trees already live; awaiting a write pass and the pace limit"
-  },
-  {
-   "date": "2026-10-01",
-   "kind": "photo",
-   "target": "paris par_031 reader photo; wilparting wpg_001",
-   "tokens": 0,
-   "trees": 0,
-   "note": "session work, no agent: 9 reader photographs judged (1 published, 8 declined), 1 Commons photo approved; Houston 3 trees held back by pace gate and photo-or-pin rule"
-  },
-  {
-   "date": "2026-10-02",
-   "kind": "verify",
-   "target": "kagoshima (Kirishima Jingu cedar, Shiroyama leaning camphor; Hidde's sightings)",
-   "tokens": 173000,
-   "trees": 0,
-   "note": "kag_015 confirmed pin + Commons photo; kag_016 unnamed, flagged on his photo and fix; awaiting a write pass"
-  },
-  {
-   "date": "2026-10-02",
-   "kind": "verify",
-   "target": "takachiho (Hidde's sightings: Chichibu-sugi, Meoto-sugi; plus Amano Iwato ogatama)",
-   "tokens": 198000,
-   "trees": 0,
-   "wasted": 15000,
-   "note": "3 verified (tkc_001-003), Takachiho needs a fourth; Shimono Hachiman's national-monument ginkgo and zelkova lack a trunk pin or photo, pin pass dispatched"
-  },
-  {
-   "date": "2026-10-02",
-   "kind": "verify",
-   "target": "takachiho (Shimono Hachiman pin pass)",
-   "tokens": 157000,
-   "trees": 0,
-   "note": "ginkgo and zelkova (national monuments) written approximate; no crown separable on GSI aerial, no open photo; Takachiho stays at three"
-  },
-  {
-   "date": "2026-10-02",
-   "kind": "write",
-   "target": "kagoshima (kag_015, kag_016) EN+JA",
-   "tokens": 171000,
-   "trees": 2,
-   "note": "Kirishima cedar and the Shiroyama leaning camphor; kag_016 held by preflight for no source, then published on Hidde's call with the visit as its source"
-  },
-  {
-   "date": "2026-10-02",
-   "kind": "write",
-   "target": "takachiho (tkc_001-003)",
-   "tokens": 165000,
-   "trees": 3,
-   "note": "city opened at three on Hidde's call; ogatama species aligned to existing name"
-  },
-  {
-   "date": "2026-10-02",
-   "kind": "verify",
-   "target": "seattle (sea_013-016)",
-   "tokens": 167000,
-   "trees": 4,
-   "note": "SDOT Heritage Trees layer, public land only, confirmed pins, no photos"
-  },
-  {
-   "date": "2026-10-02",
-   "kind": "write",
-   "target": "seattle (sea_013-016)",
-   "tokens": 150000,
-   "trees": 4,
-   "note": "merged; intro and question context rewritten for 16"
-  },
-  {
-   "date": "2026-10-02",
-   "kind": "verify",
-   "target": "austin",
-   "tokens": 160000,
-   "trees": 0,
-   "note": "source set exhausted; 3 Tree of the Year leads recorded, no photo or pin"
-  }
- ],
- "2026-10-02": [
-  {
-   "target": "belfast+breda+budapest",
-   "kind": "photo",
-   "tokens": 0,
-   "trees": 0,
-   "note": "session work, no agent: viewing pass approved 3 Commons photographs (bfs_005, bre_011, bud_013); a 4th sighting rejected (acorn on gravel)"
-  },
-  {
-   "target": "Oahu",
-   "kind": "verify",
-   "tokens": 150000,
-   "trees": 0,
-   "note": "register coords rounded to 1.1 km and Commons has no tree-specific photos, so photo-or-pin blocks all; 4 leads added",
-   "wasted": 150000,
-   "brief_wrong": false
-  },
-  {
-   "target": "Berlin",
-   "kind": "verify",
-   "tokens": 183000,
-   "trees": 7,
-   "note": "Naturdenkmal register tree-level coords + CC0 Commons geotags gave 7 confirmed pins; ber_041 zoo oak stayed lead (approximate, no photo)"
-  },
-  {
-   "target": "Berlin",
-   "kind": "write",
-   "tokens": 147000,
-   "trees": 7,
-   "note": "8 stories; merged 7; Niemeyer building naming removed as unsourced, ber_038 access tightened"
-  },
-  {
-   "target": "de/berlin",
-   "kind": "translate",
-   "tokens": 142000,
-   "trees": 0,
-   "note": "7 overlay entries plus title count; required or deploy refuses"
+   "note": "no candidate could end with a photograph or confirmed pin; OSM join caught ND 12 pin mismatch; two leads added"
   }
  ],
  "2026-10-03": [
@@ -9629,6 +9451,161 @@
    "trees": 0,
    "verified": 4,
    "note": "Capped at 30 tool calls, used 25: 4 verified (El Pino, Endicott Pear, Travilah Oak, Sentinel), Linden Oak dead, Alley Pond Giant already ours. ~41k per verified tree against a 50k budget for the whole pass: a tool-call cap does not cap tokens."
+  }
+ ],
+ "passes": [
+  {
+   "date": "2026-10-01",
+   "target": "species intros (187 reviewed, 132 rewritten)",
+   "kind": "write",
+   "tokens": 570000,
+   "trees": 0,
+   "note": "species page intro/meta fix after the 09-28 demotion audit; counts removed, top tree named from live data; 6 data issues reported"
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "photo-judge",
+   "target": "photo-review-good-2026-10-01 identity check",
+   "tokens": 45000,
+   "trees": 0,
+   "photos_approved": 5,
+   "note": "21 owner-approved photos checked for identity: 5 approved, 16 held; wrong species or wrong tree was the main failure"
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "phenology",
+   "target": "18 species season calendars",
+   "tokens": 195000,
+   "trees": 0,
+   "note": "species most common on proven-city trees without a calendar; sources Wikipedia, NC State Extension, PFAF, Trees and Shrubs Online"
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "verify",
+   "target": "fukuoka (Itoshima, Rokusho Shrine)",
+   "tokens": 170000,
+   "trees": 0,
+   "note": "two prefectural-monument camphors verified (no. 41, 1960, 8.5 and 7.5 m) but held: no open-licence photo, pin only to the grove. Hidde's Oimatsu camphor stays a lead."
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "verify",
+   "target": "copenhagen (Hans Erik Lund's register extract)",
+   "tokens": 215000,
+   "trees": 0,
+   "note": "7 verified with photo and confirmed pin (cph_043-049), 34 of 60 extract trees already live; awaiting a write pass and the pace limit"
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "photo",
+   "target": "paris par_031 reader photo; wilparting wpg_001",
+   "tokens": 0,
+   "trees": 0,
+   "note": "session work, no agent: 9 reader photographs judged (1 published, 8 declined), 1 Commons photo approved; Houston 3 trees held back by pace gate and photo-or-pin rule"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "verify",
+   "target": "kagoshima (Kirishima Jingu cedar, Shiroyama leaning camphor; Hidde's sightings)",
+   "tokens": 173000,
+   "trees": 0,
+   "note": "kag_015 confirmed pin + Commons photo; kag_016 unnamed, flagged on his photo and fix; awaiting a write pass"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "verify",
+   "target": "takachiho (Hidde's sightings: Chichibu-sugi, Meoto-sugi; plus Amano Iwato ogatama)",
+   "tokens": 198000,
+   "trees": 0,
+   "wasted": 15000,
+   "note": "3 verified (tkc_001-003), Takachiho needs a fourth; Shimono Hachiman's national-monument ginkgo and zelkova lack a trunk pin or photo, pin pass dispatched"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "verify",
+   "target": "takachiho (Shimono Hachiman pin pass)",
+   "tokens": 157000,
+   "trees": 0,
+   "note": "ginkgo and zelkova (national monuments) written approximate; no crown separable on GSI aerial, no open photo; Takachiho stays at three"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "write",
+   "target": "kagoshima (kag_015, kag_016) EN+JA",
+   "tokens": 171000,
+   "trees": 2,
+   "note": "Kirishima cedar and the Shiroyama leaning camphor; kag_016 held by preflight for no source, then published on Hidde's call with the visit as its source"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "write",
+   "target": "takachiho (tkc_001-003)",
+   "tokens": 165000,
+   "trees": 3,
+   "note": "city opened at three on Hidde's call; ogatama species aligned to existing name"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "verify",
+   "target": "seattle (sea_013-016)",
+   "tokens": 167000,
+   "trees": 4,
+   "note": "SDOT Heritage Trees layer, public land only, confirmed pins, no photos"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "write",
+   "target": "seattle (sea_013-016)",
+   "tokens": 150000,
+   "trees": 4,
+   "note": "merged; intro and question context rewritten for 16"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "verify",
+   "target": "austin",
+   "tokens": 160000,
+   "trees": 0,
+   "note": "source set exhausted; 3 Tree of the Year leads recorded, no photo or pin"
+  }
+ ],
+ "2026-10-02": [
+  {
+   "target": "belfast+breda+budapest",
+   "kind": "photo",
+   "tokens": 0,
+   "trees": 0,
+   "note": "session work, no agent: viewing pass approved 3 Commons photographs (bfs_005, bre_011, bud_013); a 4th sighting rejected (acorn on gravel)"
+  },
+  {
+   "target": "Oahu",
+   "kind": "verify",
+   "tokens": 150000,
+   "trees": 0,
+   "note": "register coords rounded to 1.1 km and Commons has no tree-specific photos, so photo-or-pin blocks all; 4 leads added",
+   "wasted": 150000,
+   "brief_wrong": false
+  },
+  {
+   "target": "Berlin",
+   "kind": "verify",
+   "tokens": 183000,
+   "trees": 7,
+   "note": "Naturdenkmal register tree-level coords + CC0 Commons geotags gave 7 confirmed pins; ber_041 zoo oak stayed lead (approximate, no photo)"
+  },
+  {
+   "target": "Berlin",
+   "kind": "write",
+   "tokens": 147000,
+   "trees": 7,
+   "note": "8 stories; merged 7; Niemeyer building naming removed as unsourced, ber_038 access tightened"
+  },
+  {
+   "target": "de/berlin",
+   "kind": "translate",
+   "tokens": 142000,
+   "trees": 0,
+   "note": "7 overlay entries plus title count; required or deploy refuses"
   }
  ]
 }

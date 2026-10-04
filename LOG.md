@@ -18,6 +18,10 @@ What changed for a visitor, all of it benchmarked first (CONVENTIONS.md 2026-10-
 Verified: full build, qa.py on 17,981 pages (one source-only finding fixed), crosscheck, copycheck, paritycheck, screenshots at 375px and desktop. Not verifiable here: the app half (no Xcode in this sandbox; ios.yml judges it), and the `submissions` table accepting kind `ambassador` (no service key here; the first real tap will show it). The app's season chip shows only with the season switch on (`Launch.season`).
 
 
+## 2026-10-04 run, fifth continuation: Munich verify empty again, no trees
+
+Shelf under its floor (ready 0). Claimed Munich and ran a verify pass: Commons geosearch found no tree photographs, the OSM join showed every unmined row with a node is already live, blocked or a lead, and one pin (Dachau ND 12) was caught mismatching its nearest node. Two leads added, nothing publishable; claim released with --force (its 6 trees are held on photo or pin). `scout_next.py --target` now names Saratoga Springs (#84), not scouted this window. Wikimedia API rate-limits after about 12 quick requests; overpass-api.de answered a GET here despite the blocklist.
+
 ## 2026-10-04 run, fourth continuation: scouted Huntsville, no trees
 
 Ready 0. Munich claim released (force; its 6 trees are held on photo or pin). `scout_next.py --target` named Huntsville (#82): only Alabama's statewide champion program, no tree-level register; verdict `empty` in data/register-scouting.json. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
