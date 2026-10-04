@@ -2769,7 +2769,7 @@ no application at all. Not fetched this time: whether a komoot region page
 shows an empty Pioneer slot; nothing seen says it does.
 
 **What we do:** the byline row with an empty dashed avatar, "Tokyo is looking
-for an ambassador", one grey line ("Add photos and help keep the list right.")
+for an ambassador", one grey line ("Help us improve this list.")
 and one button, "Become the ambassador". One tap like Google's Join, a human
 decision after it like Reddit's: the tap writes a request, the editor mail
 asks the questions, the badge follows the answer. Same row on the app's city
