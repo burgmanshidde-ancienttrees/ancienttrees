@@ -22,7 +22,11 @@
    "date": "2026-09-05",
    "tree_id": "brn_001",
    "file": "brn_001-the-cantonspark-dawn-redwood.jpg",
-   "reason": "Whole tree centered, blue sky, well exposed, in leaf. Better of the two dawn redwood shots taken minutes apart."
+   "reason": "Whole tree centered, blue sky, well exposed, in leaf. Better of the two dawn redwood shots taken minutes apart.",
+   "lat": 52.2091,
+   "lon": 5.2988,
+   "taken_at": "2026-09-05T07:14:39+00:00",
+   "pin_checked": "2026-10-05"
   },
   "e14cfc81-ae02-4189-93e3-0ca64ad5c118": {
    "outcome": "rejected",
@@ -121,7 +125,11 @@
    "date": "2026-09-11",
    "tree_id": "kyo_019",
    "file": "kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
-   "reason": "Sent as kyo_016 (Sudajii) and showed a neighbouring muku at the park's edge instead; published as its own tree kyo_019 on Hidde's ruling ('ik vind hem vet'). kyo_016 photo back to missing."
+   "reason": "Sent as kyo_016 (Sudajii) and showed a neighbouring muku at the park's edge instead; published as its own tree kyo_019 on Hidde's ruling ('ik vind hem vet'). kyo_016 photo back to missing.",
+   "lat": 35.017,
+   "lon": 135.7605,
+   "taken_at": "2026-09-11T05:20:28+00:00",
+   "pin_checked": "2026-10-05"
   },
   "aec13148-46f8-49c4-8735-7d8a2c7c3c28": {
    "outcome": "published",
@@ -142,14 +150,22 @@
    "date": "2026-09-11",
    "tree_id": "kyo_011",
    "file": "kyo_011-the-hackberry-of-demizu-guchi.jpg",
-   "reason": "kyo_011 had no photo. Whole tree visible, ascending branch structure readable, daylight, in leaf, person for scale."
+   "reason": "kyo_011 had no photo. Whole tree visible, ascending branch structure readable, daylight, in leaf, person for scale.",
+   "lat": 35.0195,
+   "lon": 135.7593,
+   "taken_at": "2026-09-11T06:14:42+00:00",
+   "pin_checked": "2026-10-05"
   },
   "5d5debc9-0545-40a6-88a1-79f40b62cbd1": {
    "outcome": "published",
    "date": "2026-09-11",
    "tree_id": "kyo_018",
    "file": "kyo_018-ginkgo-of-inui-gate-kyoto-gyoen.jpg",
-   "reason": "kyo_018 had no photo. Whole tree in frame, trunk and crown both readable, daylight, in leaf."
+   "reason": "kyo_018 had no photo. Whole tree in frame, trunk and crown both readable, daylight, in leaf.",
+   "lat": 35.028,
+   "lon": 135.7595,
+   "taken_at": "2026-09-11T06:23:09+00:00",
+   "pin_checked": "2026-10-05"
   },
   "d0e24fa3-7097-47b1-b108-ac1dc932c287": {
    "outcome": "lead",
@@ -172,7 +188,11 @@
    "date": "2026-09-13",
    "tree_id": "kyo_017",
    "file": "kyo_017-camphor-of-shimodachiuri-gate-kyoto-gyoen.jpg",
-   "reason": "Closes a photo gap on kyo_017, which had none. The stone retaining wall and wooden gate in frame match the recognise line exactly (\"just inside Shimodachiuri-gomon in the west wall\"); the crown and trunk fill the frame, daylight, in leaf, good exposure. Species seen: single grey-barked trunk, dense "
+   "reason": "Closes a photo gap on kyo_017, which had none. The stone retaining wall and wooden gate in frame match the recognise line exactly (\"just inside Shimodachiuri-gomon in the west wall\"); the crown and trunk fill the frame, daylight, in leaf, good exposure. Species seen: single grey-barked trunk, dense ",
+   "lat": 35.0195774,
+   "lon": 135.7595584,
+   "taken_at": "2026-09-11T06:12:59+00:00",
+   "pin_checked": "2026-10-05"
   },
   "01c07566-c1a7-48ee-a9a7-c9053bb506a5": {
    "outcome": "lead",
@@ -444,15 +464,6 @@
    "taken_at": "2026-09-04T16:29:22+00:00",
    "pin_checked": "2026-10-05"
   },
-  "322fc46b-8bed-4ea1-a971-14a894bbf367": {
-   "outcome": "held",
-   "date": "2026-10-03",
-   "tree_id": "rey_003",
-   "reason": "Crown is dark and underexposed and a crowd and car park dominate the foreground; probably the right sycamore at Vonarstraeti but not a frame that shows the tree well.",
-   "lat": 64.1467888333333,
-   "lon": -21.94277,
-   "taken_at": "2026-09-04T15:38:13+00:00"
-  },
   "6151f7e2-9211-4c2b-8ce8-e1bf17daa3e7": {
    "outcome": "lead",
    "date": "2026-10-04"
@@ -460,6 +471,34 @@
   "8f4e7266-cc24-46b3-9a6d-5e8a94bba199": {
    "outcome": "lead",
    "date": "2026-10-04"
+  },
+  "322fc46b-8bed-4ea1-a971-14a894bbf367": {
+   "outcome": "added",
+   "date": "2026-10-05",
+   "tree_id": "rey_003",
+   "file": "rey_003-the-city-hall-maple-322fc46b.jpg",
+   "reason": "Vouched for by Hidde: Hidde, 2026-10-05, on the Reykjavik reader: 'zet de andere foto's van onze Reykjavik gebruiker ook maar online ik vertrouw hem meer dan jou eerlijk gezegd ook zijn semi slechte foto's beter dan geen'",
+   "lat": 64.1467888333333,
+   "lon": -21.94277,
+   "taken_at": "2026-09-04T15:38:13+00:00",
+   "pin_checked": "2026-10-05"
+  },
+  "e0458b06-5210-49c5-9346-2380ad069f7f": {
+   "outcome": "published",
+   "date": "2026-10-05",
+   "tree_id": "mel_013",
+   "file": "mel_013-the-southern-mahogany-of-edinburgh-gardens.jpg",
+   "reason": "Whole tree in daylight, crown and trunk readable, isolated on lawn. Species seen: Eucalyptus: dense rounded crown of lance leaves, thick rough fibrous dark bark on a short massive trunk. Fits the description: Very large, broad single trunk with rough bark, standing in open grass at a street corner o",
+   "lat": -37.7860992095202,
+   "lon": 144.984188407152,
+   "taken_at": "2026-10-05T05:22:00+00:00",
+   "pin_checked": "2026-10-05"
+  },
+  "1b9adcb8-c06f-48b5-b8c0-398f6227a257": {
+   "outcome": "rejected",
+   "date": "2026-10-05",
+   "tree_id": "mel_001",
+   "reason": "Bare deciduous tree with a forked trunk; a holm oak is evergreen and dense. The dark evergreen oaks are the neighbours at the sides, not the subject."
   }
  }
 }

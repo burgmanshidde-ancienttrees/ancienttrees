@@ -418,10 +418,18 @@
       },
       "curation_status": "flagged",
       "notes": "No age figure exists in any source: Kamigyo Ward's pride-tree register records dimensions only. Second source (Ministry of Environment) describes Kyoto Gyoen's giant-tree population generally and does not name this individual tree, so this is effectively single-sourced and flagged for that reason, not for doubt about the tree's existence or species. Coordinates are a gate-area estimate, not a GPS fix on the trunk.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by the crown, 32.9 metres across on a tree only 22.5 metres tall, and by a trunk 4.98 metres round. It stands inside Demizu-guchi, the pedestrian gate in the park's west wall.",
       "girth_cm": 498,
-      "height_m": 22.5
+      "height_m": 22.5,
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "b77fcaee-e20e-4722-9b42-5d60aca6a3cc",
+        "taken_at": "2026-09-11T06:14:42+00:00",
+        "moved_m": 0,
+        "date": "2026-10-05",
+        "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      }
     },
     {
       "id": "kyo_012",
@@ -563,7 +571,7 @@
         "address": "",
         "neighbourhood": "Near Inui-gomon, northwest corner of Kyoto Gyoen, Kamigyo-ku"
       },
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "best_time": {
         "months": [
@@ -592,7 +600,15 @@
       },
       "how_to_recognise": "You can recognise it by the trunk, 3.15 metres round under 19.5 metres of ginkgo. It stands at Inui-gomon, the gate in the northwest corner of the park, a kilometre and a half up the gravel from the Demizu gate.",
       "girth_cm": 315,
-      "height_m": 19.5
+      "height_m": 19.5,
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "5d5debc9-0545-40a6-88a1-79f40b62cbd1",
+        "taken_at": "2026-09-11T06:23:09+00:00",
+        "moved_m": 0,
+        "date": "2026-10-05",
+        "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      }
     },
     {
       "id": "kyo_015",
@@ -636,12 +652,12 @@
       "name": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
       "species": "Camphor Tree (Cinnamomum camphora)",
       "location": {
-        "latitude": 35.0195774,
-        "longitude": 135.7595584,
+        "latitude": 35.019577,
+        "longitude": 135.759558,
         "address": "",
         "neighbourhood": "Near Shimodachiuri-gomon, west side of Kyoto Gyoen, Kamigyo-ku"
       },
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Early cinema ran on this species. Camphor crystals, steam-distilled from the wood and leaves of Cinnamomum camphora, were what made celluloid film stock and photographic plates flexible enough to use, and for decades Japan and its colonies supplied most of the world's camphor, until the chemical industry worked out how to make it from turpentine instead. The trees that fed that trade came down by the forest. This one did not.\n\nIt grows just inside Shimodachiuri-gomon, a gate in the west wall of Kyoto Gyoen, and Kamigyo Ward lists it among its pride trees at 12.3 metres tall with a trunk 2.76 metres around. Its age appears nowhere. That ward register is the only document naming this tree, and it records dimensions rather than years.\n\nCamphors are evergreen, so this is the same tree in February as in July: dense, dark, heavily leaved, and smelling of a medicine cabinet if you crush a leaf between your fingers. It is not the biggest camphor in this park. The one at Munakata Shrine, a short walk away, is far larger and several centuries older, and this is the tree most people go straight past on their way to it. Which is a decent argument for looking up on the way.",
       "verified_sources": [
@@ -664,7 +680,15 @@
       },
       "how_to_recognise": "You can recognise it by being the small camphor, 12.3 metres tall on a trunk 2.76 metres round, not the far larger one at Munakata Shrine nearby. It stands just inside Shimodachiuri-gomon in the west wall.",
       "girth_cm": 276,
-      "height_m": 12.3
+      "height_m": 12.3,
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "4f9e3110-5807-4226-951e-537c61658dee",
+        "taken_at": "2026-09-11T06:12:59+00:00",
+        "moved_m": 0,
+        "date": "2026-10-05",
+        "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      }
     },
     {
       "id": "kyo_019",
@@ -677,7 +701,7 @@
         "address": "",
         "neighbourhood": "On the stone perimeter wall near Omiya-gomon, Kyoto Gyoen, Kamigyo-ku"
       },
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Go looking for the old chinkapin at the Omiya gate and this is the tree that catches your eye. Its trunk is pale grey and smooth, shedding in long strips, and it does not so much rise as wander: it leans, twists back on itself and swells into a burl where it clears the top of the stone wall, while its roots spill over the kerb onto the path.\n\nIt stands on the edge of the park, in the outer belt of woodland that the garden's own managers describe as full of big muku, hackberry and zelkova. We believe it is a muku, Aphananthe aspera, from the bark and the leaves in the one photograph we have. Nobody has measured it, dated it or put it on a register, so if you know better, or have a tape measure with you, we would like to hear from you.\n\nIf it is a muku, the leaves are worth touching. They are rough enough that craftsmen once used them as sandpaper, to polish wood, horn and lacquer. In autumn it drops small black fruit that is sweet enough to eat straight from the ground.\n\nThe camphor at Munakata Shrine is a few minutes' walk away.",
       "how_to_recognise": "You can recognise it by its pale grey trunk, shedding in long strips, that twists up past the top of the stone wall into a big burl, with roots spilling over the kerb and a darker, mossy trunk right behind it.",
@@ -699,7 +723,15 @@
         "note": "Hidde's own photograph, sent through the app on 2026-09-11 while looking for kyo_016 (the Sudajii); it shows this tree instead. Looked at in session 2026-09-11: whole tree in frame, trunk and crown readable, daylight, in leaf. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "verify_notes": "Added 2026-09-11 on Hidde's own ruling after seeing it: 'voeg m maar gewoon toe ik vind hem vet'. The evidence for this trunk is his photograph alone. Species is our identification from bark and leaves in that photograph (muku; keyaki the alternative, less likely because the bark shows no orange patches). No register, measurement or age. The cited source (the Kyoto Gyoen office, Ministry of the Environment) documents the setting, the park's outer woodland with many giant muku, enoki and keyaki, not this tree. Pin is kyo_016's approximate gate-area coordinate: Hidde reports it stands at that spot on the park's edge. The app recorded our pin rather than his phone's fix (CollectSheet.swift records t.lat/t.lng for a listed tree), so there is no GPS for the photograph.",
-      "curation_note": "species identified from a photograph; ask readers"
+      "curation_note": "species identified from a photograph; ask readers",
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "84ebae36-c683-4d39-86ac-a7db33d70910",
+        "taken_at": "2026-09-11T05:20:28+00:00",
+        "moved_m": 0,
+        "date": "2026-10-05",
+        "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      }
     }
   ],
   "oldest_tree_id": "kyo_007",

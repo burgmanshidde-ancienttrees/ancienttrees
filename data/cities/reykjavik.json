@@ -159,7 +159,21 @@
         "moved_m": 92,
         "date": "2026-10-05",
         "note": "The pin marks where a reader stood to photograph this tree. That photograph is held for its light, not its identity, so the fix alone would not move a pin; it does here because Wikidata's coordinate for the 1994 Tree of the Year (Q62412941) lies 14 m from it, two independent positions agreeing. Moved on Hidde's word, 2026-10-05."
-      }
+      },
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/rey_003-the-city-hall-maple-322fc46b.jpg",
+          "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+          "attribution": null,
+          "status": "approved",
+          "width": 1600,
+          "height": 1200,
+          "source": "contributor",
+          "contributor_user_id": "01b4d9c0-3841-43bb-9bd0-37d3c904be29",
+          "sighting_id": "322fc46b-8bed-4ea1-a971-14a894bbf367",
+          "note": "Photographed by a reader and sent through the app (2026-09-04); a viewing pass approved it on 2026-10-05: Vouched for by Hidde: Hidde, 2026-10-05, on the Reykjavik reader: 'zet de andere foto's van onze Reykjavik gebruiker ook maar online ik vertrouw hem meer dan jou eerlijk gezegd ook zijn semi slechte foto's beter dan geen'. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+        }
+      ]
     },
     {
       "id": "rey_004",

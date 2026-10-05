@@ -18,6 +18,50 @@
    "agreed": null
   },
   {
+   "id": "sight:e0458b06-5210-49c5-9346-2380ad069f7f",
+   "seen": "2026-10-05",
+   "kind": "photo of a tree we map",
+   "tree": "The Southern Mahogany of Edinburgh Gardens",
+   "city": "Melbourne",
+   "species": "Southern Mahogany (Eucalyptus botryoides)",
+   "photo": "out/sightings/e0458b06-5210-49c5-9346-2380ad069f7f.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": ""
+   },
+   "verdict": "publish",
+   "reason": "Viewed: eucalyptus with rough fibrous bark and broad crown fits the record (434 cm, 25 m); tree had no photograph, so it leads.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:1b9adcb8-c06f-48b5-b8c0-398f6227a257",
+   "seen": "2026-10-05",
+   "kind": "photo of a tree we map",
+   "tree": "The Finer Holm Oak of Edinburgh Gardens",
+   "city": "Melbourne",
+   "species": "Holm Oak (Quercus ilex)",
+   "photo": "out/sightings/1b9adcb8-c06f-48b5-b8c0-398f6227a257.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": ""
+   },
+   "verdict": "hold",
+   "reason": "Viewed: bare deciduous forked tree, not an evergreen holm oak; rejected as wrong tree.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
    "id": "lead:6151f7e2-9211-4c2b-8ce8-e1bf17daa3e7",
    "seen": "2026-10-04",
    "kind": "a tree we do not map",

@@ -2,9 +2,9 @@
   "city": "Nuremberg",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Nine of Nuremberg's sixteen protected trees stand within a kilometre of the old town, six of them in the Kontumazgarten, a park of under two hectares named after a quarantine station. Three more stand apart in Woehrd: a Stadtpark lime with a trunk eight metres round, at around four hundred years the best documented of the lot, and a pair of undated beeches in Cramer-Klett-Park. The rest are further out: three protected oaks along the Nummernweiher in the Volkspark Dutzendteich, one of them growing in the footpath, and in Gebersdorf a wild pear named after Gustav Adolf of Sweden.",
-  "meta_description": "Sixteen protected Nuremberg trees, nine in one walk: a 400-year lime, six in a former quarantine garden, three lakeside oaks, a pear named for a king.",
-  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus fifteen more.",
+  "intro": "Nine of Nuremberg's seventeen protected trees stand within a kilometre of the old town, six of them in the Kontumazgarten, a park of under two hectares named after a quarantine station. In Woehrd stand a Stadtpark lime eight metres round, at around four hundred years the best documented of the lot, and a pair of undated beeches in Cramer-Klett-Park. Further out are three oaks along the Nummernweiher in the Volkspark Dutzendteich, a bricked-up oak nearly seven metres round on the Platnersberg, and in Gebersdorf a wild pear named after Gustav Adolf of Sweden.",
+  "meta_description": "Seventeen protected Nuremberg trees, nine in one walk: a 400-year lime, six in a former quarantine garden, a bricked-up oak, a pear named for a king.",
+  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus sixteen more.",
   "question_answer": "The oldest tree in Nuremberg is the large-leaved lime in the Stadtpark, reckoned at around four hundred years with a trunk about eight metres round, which makes it both the oldest and the thickest tree on this page. It stands in a free public park about fifteen minutes' walk from the Kontumazgarten cluster. It is also the best documented: two independent sources describe it, where most of the city's protected trees rest on the ordinance alone.",
   "question_context": "Nuremberg protects individual trees by city ordinance rather than through a state heritage list, and the Bavarian register that carries them gives a number, a German name and a coordinate, with no species column, no girth and no age. So the species on this page were established from the city's own 2020 ordinance and from local sources, and several are identified at genus level or inferred from the tree's German name rather than confirmed outright; each of those says so in its own story. The same thinness cuts the other way too. Cross-checking the state layer against the current city ordinance turned up two protected trees that the state still lists as current and that the ordinance no longer carries, both at addresses where German sources record monuments lost to fungal infection. Those are absent here. Four more are on private ground, one is a seventy-nine tree avenue with nowhere to stand, and two are in institutional courtyards.",
   "faq": [
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can I see Nuremberg's protected trees in one walk?",
-      "a": "Nine of the sixteen, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime and the Cramer-Klett-Park pair are separate stops in Woehrd, a further fifteen to twenty minutes on foot from the old town. The three Dutzendteich oaks in the south-east and the Gustav Adolf pear in Gebersdorf, in the west, are separate trips."
+      "a": "Nine of the seventeen, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime and the Cramer-Klett-Park pair are separate stops in Woehrd, a further fifteen to twenty minutes on foot from the old town. The three Dutzendteich oaks in the south-east, the Bear Oak on the Platnersberg in the east and the Gustav Adolf pear in Gebersdorf, in the west, are separate trips."
     },
     {
       "q": "Are they free to visit?",
@@ -564,6 +564,42 @@
       },
       "how_to_recognise": "You can recognise it as the lone wild pear by Hügelstrasse, white with blossom in mid-April. It stands south-west of the Gebersdorf sports ground.",
       "verify_notes": "Register name: 'Holzbirnbaum in der Huegelstrasse, Gustav Adolf-Birne'; de.wikipedia list: 'Holzbirne an der Huegelstrasse suedwestlich der Sportanlage (Gustav-Adolf-Birnbaum in Gebersdorf)'. Register coordinate 49.42627,11.01195 and Wikipedia 49.42628,11.01197 agree within about 2 m: pin confirmed. Alive: Commons category holds six photographs dated April 2022 including the tree in blossom (OLD, 4 years). The name suggests a tie to King Gustav Adolf of Sweden and the 1632 battle around Gebersdorf (Gebersdorf was on the 1632 battlefield per de.wikipedia's Gebersdorf article snippet), but NO source seen states that the tree itself witnessed it: do not write that. No age, girth or height in any source seen; wild pears seldom pass 200-275 years so keep any age band loose. Needs access check and licence check on the Commons photos before page build. Register only; flagged."
+    },
+    {
+      "id": "nbg_017",
+      "name": "The Bear Oak (Bäreneiche), Platnersberg",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 300,
+      "age_max": 350,
+      "age_basis": "source",
+      "girth_cm": 677,
+      "height_m": 28,
+      "location": {
+        "address": "Platnersberganlage, beside the Bärenbrunnen, Erlenstegen, 90491 Nürnberg",
+        "latitude": 49.4713741,
+        "longitude": 11.1300582,
+        "neighbourhood": "Erlenstegen"
+      },
+      "verified_sources": [
+        "https://www.monumentale-eichen.de/bayern/2-kategorie/n%C3%BCrnberg/",
+        "https://de.wikipedia.org/wiki/Platnersberg",
+        "https://www.nordbayern.de/nuernberg/400-jahre-und-gesund-das-sind-nurnbergs-alteste-baume-1.9659342",
+        "https://www.openstreetmap.org/node/717591141",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg"
+      ],
+      "access": "Free. Platnersberganlage is a public green space owned by the city since 1907; the lawns either side of the footpath are open as Liegewiesen. The oak stands on the meadow beside the Bärenbrunnen.",
+      "transport": "Tram line 8 to Erlenstegen (VAG); exact stop and walk time not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Around 1960 somebody filled the base of this oak's trunk with brickwork, and the tree has been slowly growing over the masonry ever since. The Bear Oak, the Bäreneiche, is the thickest of six old oaks lining a path on the Platnersberg in Erlenstegen: 6.77 metres round at chest height when it was measured for a survey of Germany's monumental oaks in 2014, and about 28 metres tall. In 1934 the same trunk measured 5.35 metres.\n\nThe row once led to the summer house of Georg Thummen, who bought this land in 1533. The path was later moved to spare the oaks. The tree itself came later than Thummen: an estimate made in 2016 put it at about 300 years, and a city tree official told the Nordbayern paper it is almost as old as the old lime on the Hallerwiese. Read that as 300 to 350 years, a reckoning rather than a count.\n\nIt takes its name from the Bärenbrunnen, a fountain going back to 1500 that stands a few paces south and still has a festival every year. The oak keeps company of its own: a 2004 survey found two summer roosts of Daubenton's bats inside it.\n\nIt is not untroubled. A sulphur polypore, a wood-rotting fungus, has lived in it for some years, though the man who measured it still called its vitality fine. Nuremberg has protected it as a natural monument since 1986.",
+      "how_to_recognise": "You can recognise it by the trunk, bricked up at the base and nearly seven metres round, the thickest in the row of old oaks. It stands at the front of the row, beside the Bärenbrunnen fountain.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

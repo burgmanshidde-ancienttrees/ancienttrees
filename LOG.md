@@ -2,6 +2,22 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Continuation attempt: nothing new to ship, all claims released
+
+READY is 0. Portland (1 held lead, ptl_027, deliberately held), Spokane (1 unmined register row) and Dresden (register-less, Wikidata rows are groups or already judged leads) were each checked against their briefs and none reaches six fresh candidates, so no verify agent was dispatched. All three claims released. Scout target stays Atlanta (#132); the verify shelf needs a new register rather than another pass on these cities.
+
+## 2026-10-05 Nuremberg +1: the Bear Oak (Bäreneiche)
+
+Visits last 7 days: 1469. Shelf under floor, so a verify pass on Nuremberg (Spokane released first: 1 unmined row). It cleared two of 109 register rows; one had a confirmed pin (OSM node within 2 m of the register point), written and merged (Nuremberg 16 to 17, German overlay too; commit 2b35fc94). nbg_018 (ND 35 oak) stays held: approximate pin, unviewed photo, a lawn before flats with unconfirmed public access. Two new leads filed. Nuremberg's register pool is now essentially mined. No tool refusals.
+
+## 2026-10-05 Later attempt: Frankfurt, Leipzig, Edinburgh checked, nothing shipped
+
+READ is 0 and the shelf is empty. Frankfurt has 0 register rows in 20 km and its leads are all held (previous logs call it a wall); Leipzig was worked an hour ago and only lpz_019 (manor access) stands held; Edinburgh has supply 1. All claims released, none left standing. Not spending a window on from-zero web research that three earlier passes proved empty. Next scout target: Salt Lake City (#131).
+
+## 2026-10-05 Munich +2 (Obermarbach, Grafing limes), Melbourne reader photo, Jersey City scouted
+
+Visits last 7 days: 1464. Rung 1: two reader photographs from Edinburgh Gardens, Melbourne. The Southern Mahogany (mel_013) went live as lead photo; the "holm oak" (mel_001) was rejected because the frame is a bare deciduous forked tree, not an evergreen holm oak (the dark evergreens at its sides are the oaks). Preflight wanted a written verdict for the published one, and judgement.py --verdict needs a stub that the queue no longer holds after publishing, so I wrote both stubs by script; worth reordering in sightings_publish. Then the shelf: Munich's city register is exhausted (blocked, published or groups), so verify delivered two outlying trees with geotagged CC photos, 33 km out, written and merged (Munich 59 to 61, German overlay too). muc_058 (approximate pin, no photo) and lpz_019 (manor access unknown) stay held. Portland claim released, only 1 of 17 leads has a coordinate. Scouted Jersey City: empty (NJDEP Big Trees has 3 Hoboken points, licence not open); verdict recorded. No tool refusals this window.
+
 ## 2026-10-05 session: a reader's GPS fix now moves the pin, by itself
 
 - **Reykjavik's pins, from its one contributor.** The reader who sent El Gran Capitan (Seville) photographed three Reykjavik trees on 2026-09-04 and added them from his camera roll on 10-03. His fixes stood 11 m (whitebeam), 20 m (larch) and 92 m (City Hall maple) from our approximate pins. All three are confirmed now; the maple's photograph is still held for its light, so its move rests on Wikidata's 1994 Tree of the Year coordinate (Q62412941) agreeing within 14 m, and on Hidde's word.
