@@ -203,19 +203,19 @@
    "demand": 412181,
    "basis": "measured",
    "status": "published",
-   "trees": 62,
+   "trees": 63,
    "photos": 23,
    "walks": 5,
    "register": 195,
-   "ready": 3,
-   "supply": 792,
+   "ready": 2,
+   "supply": 790,
    "target": 60,
    "impressions_10d": 80,
    "clicks_10d": 3,
    "ease": 1.5,
    "work_score": 67.28,
    "travel": 21405,
-   "wikidata": 594
+   "wikidata": 593
   },
   {
    "rank": 10,
@@ -319,12 +319,12 @@
    "demand": 224067,
    "basis": "measured",
    "status": "published",
-   "trees": 61,
+   "trees": 62,
    "photos": 31,
    "walks": 8,
-   "register": 77,
+   "register": 76,
    "ready": 12,
-   "supply": 89,
+   "supply": 88,
    "target": 60,
    "impressions_10d": 69,
    "clicks_10d": 3,
@@ -413,9 +413,9 @@
    "demand": null,
    "basis": "measured",
    "status": "published",
-   "trees": 8,
+   "trees": 11,
    "photos": 0,
-   "walks": 0,
+   "walks": 1,
    "register": 0,
    "ready": 0,
    "supply": 0,
@@ -668,19 +668,19 @@
    "demand": 283090,
    "basis": "measured",
    "status": "published",
-   "trees": 32,
+   "trees": 43,
    "photos": 19,
    "walks": 5,
-   "register": 376,
-   "ready": 0,
-   "supply": 379,
+   "register": 427,
+   "ready": 6,
+   "supply": 435,
    "target": 60,
    "impressions_10d": 43,
    "clicks_10d": 1,
    "ease": 1.5,
    "work_score": 36.16,
    "travel": 15481,
-   "wikidata": 3
+   "wikidata": 2
   },
   {
    "rank": 30,
@@ -1469,7 +1469,30 @@
    "clicks_10d": 0
   },
   {
+   "city": "Key West",
+   "country": "United States",
+   "status": "pending",
+   "trees": 0,
+   "travel": 7907,
+   "source": "pool_audit 2026-09-01",
+   "score": 15.81,
+   "basis": "predicted (travel demand)",
+   "work_score": 18.02,
    "rank": 64,
+   "photos": 0,
+   "walks": 0,
+   "register": 7,
+   "ready": 0,
+   "wikidata": 0,
+   "supply": 7,
+   "target": 10,
+   "ease": 1.14,
+   "slug": "key-west",
+   "impressions_10d": 0,
+   "clicks_10d": 0
+  },
+  {
+   "rank": 65,
    "city": "Cyprus",
    "country": "Cyprus",
    "slug": "cyprus",
@@ -1493,7 +1516,7 @@
    "wikidata": 1
   },
   {
-   "rank": 65,
+   "rank": 66,
    "city": "Madeira",
    "country": "Portugal",
    "slug": "madeira",
@@ -1526,7 +1549,7 @@
    "score": 17.66,
    "basis": "predicted (travel demand)",
    "work_score": 17.66,
-   "rank": 66,
+   "rank": 67,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1540,7 +1563,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 67,
+   "rank": 68,
    "city": "Vilnius",
    "country": "Lithuania",
    "slug": "vilnius",
@@ -1563,7 +1586,7 @@
    "wikidata": 6
   },
   {
-   "rank": 68,
+   "rank": 69,
    "city": "Fukuoka",
    "country": "Japan",
    "slug": "fukuoka",
@@ -1586,7 +1609,7 @@
    "wikidata": 2
   },
   {
-   "rank": 69,
+   "rank": 70,
    "city": "Kanazawa",
    "country": "Japan",
    "slug": "kanazawa",
@@ -1609,7 +1632,7 @@
    "wikidata": 0
   },
   {
-   "rank": 70,
+   "rank": 71,
    "city": "Sardinia",
    "country": "Italy",
    "slug": "sardinia",
@@ -1633,7 +1656,7 @@
    "wikidata": 7
   },
   {
-   "rank": 71,
+   "rank": 72,
    "city": "Pamplona",
    "country": "Spain",
    "slug": "pamplona",
@@ -1669,7 +1692,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 16.82,
-   "rank": 72,
+   "rank": 73,
    "impressions_10d": 15,
    "clicks_10d": 1,
    "score": 8.41,
@@ -1688,7 +1711,7 @@
    "score": 16.68,
    "basis": "predicted (travel demand)",
    "work_score": 16.68,
-   "rank": 73,
+   "rank": 74,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -1702,7 +1725,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 74,
+   "rank": 75,
    "city": "Boston",
    "country": "United States",
    "slug": "boston",
@@ -1710,7 +1733,7 @@
    "demand": 385902,
    "basis": "measured",
    "status": "published",
-   "trees": 12,
+   "trees": 13,
    "photos": 2,
    "walks": 2,
    "register": 0,
@@ -1736,29 +1759,6 @@
    "score": 16.06,
    "basis": "predicted (travel demand)",
    "work_score": 16.06,
-   "rank": 75,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "wikidata": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.0,
-   "slug": "santa-cruz",
-   "impressions_10d": 0,
-   "clicks_10d": 0
-  },
-  {
-   "city": "Key West",
-   "country": "United States",
-   "status": "pending",
-   "trees": 0,
-   "travel": 7907,
-   "source": "pool_audit 2026-09-01",
-   "score": 15.81,
-   "basis": "predicted (travel demand)",
-   "work_score": 15.81,
    "rank": 76,
    "photos": 0,
    "walks": 0,
@@ -1768,7 +1768,7 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "slug": "key-west",
+   "slug": "santa-cruz",
    "impressions_10d": 0,
    "clicks_10d": 0
   },
@@ -2515,6 +2515,29 @@
   },
   {
    "rank": 109,
+   "city": "Miami",
+   "country": "United States",
+   "slug": "miami",
+   "score": 9.48,
+   "demand": 278558,
+   "basis": "predicted (travel demand)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 15,
+   "ready": 0,
+   "supply": 15,
+   "target": 30,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.3,
+   "work_score": 12.32,
+   "travel": 4740,
+   "wikidata": 0
+  },
+  {
+   "rank": 110,
    "city": "Stockholm",
    "country": "Sweden",
    "slug": "stockholm",
@@ -2537,7 +2560,7 @@
    "wikidata": 12
   },
   {
-   "rank": 110,
+   "rank": 111,
    "city": "Strasbourg",
    "country": "France",
    "slug": "strasbourg",
@@ -2560,7 +2583,7 @@
    "wikidata": 0
   },
   {
-   "rank": 111,
+   "rank": 112,
    "city": "Denver",
    "country": "United States",
    "slug": "denver",
@@ -2583,7 +2606,7 @@
    "wikidata": 0
   },
   {
-   "rank": 112,
+   "rank": 113,
    "city": "Granada",
    "country": "Spain",
    "slug": "granada",
@@ -2606,7 +2629,7 @@
    "wikidata": 0
   },
   {
-   "rank": 113,
+   "rank": 114,
    "city": "Chiang Mai",
    "country": "Thailand",
    "slug": "chiang-mai",
@@ -2639,7 +2662,7 @@
    "score": 11.39,
    "basis": "predicted (travel demand)",
    "work_score": 11.39,
-   "rank": 114,
+   "rank": 115,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2653,7 +2676,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 115,
+   "rank": 116,
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
@@ -2677,7 +2700,7 @@
    "wikidata": 0
   },
   {
-   "rank": 116,
+   "rank": 117,
    "city": "Sacramento",
    "country": "United States",
    "slug": "sacramento",
@@ -2713,7 +2736,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 11.22,
-   "rank": 117,
+   "rank": 118,
    "impressions_10d": 10,
    "clicks_10d": 0,
    "score": 5.61,
@@ -2723,7 +2746,7 @@
    "slug": "amersfoort"
   },
   {
-   "rank": 118,
+   "rank": 119,
    "city": "Jerusalem",
    "country": "Israel",
    "slug": "jerusalem",
@@ -2746,7 +2769,7 @@
    "wikidata": 0
   },
   {
-   "rank": 119,
+   "rank": 120,
    "city": "Dubai",
    "country": "United Arab Emirates",
    "slug": "dubai",
@@ -2770,7 +2793,7 @@
    "settled": "Verification pass, 2026-09-02, ~30 minutes, time-boxed per BRIEF_RESEARCH.md. VERDICT: Dubai has no publishable supply right now. Zero trees verified. This matches the pattern in BRIEF_RESEARCH.md's naming-body section: Dubai's tree culture is bulk municipal protection (a 2014-16 project numbered 10,000+ ghaf trees emirate-wide with barcodes and GPS tags) rather than individually storied specimens, so nobody has distinguished ONE tree from its neighbours the way a heritage decree or champion register does elsewhere. Checked: Dubai Municipality's Aged Trees Numbering Project (Gulf News 2014/2016/2016, Arabic press), the Zabeel 1 'first tagged' ghaf tree, Al Fahidi historical district (Local House restaurant courtyard sidr tree), Mushrif Park/Forest ghaf population, the Shabhana tree and Al Bateen Sidra tree (both turned out to be in Abu Dhabi, out of scope), Al Qudra/desert ghaf stands (out of reach without a car and permission, not searched further per the brief's own steer), Dubai Miracle Garden and Safa Park (not searched in depth: ornamental, near-certainly too young per the brief). Arabic search (شجرة الغاف دبي معمرة, أقدم شجرة غاف الزعبيل) surfaced the same municipal bulk-numbering story and no additional named specimen. Two candidates below are real leads worth a future pass revisiting IF Dubai Municipality's tree database (data.dubai.ae or a FOI request) ever becomes fetchable and gives per-tree coordinates; www.dubaipulse.gov.ae is on the blocklist (hangs) and was not attempted."
   },
   {
-   "rank": 120,
+   "rank": 121,
    "city": "Oslo",
    "country": "Norway",
    "slug": "oslo",
@@ -2793,7 +2816,7 @@
    "wikidata": 7
   },
   {
-   "rank": 121,
+   "rank": 122,
    "city": "Nice",
    "country": "France",
    "slug": "nice",
@@ -2825,7 +2848,7 @@
    "score": 10.63,
    "basis": "predicted (travel demand)",
    "work_score": 10.63,
-   "rank": 122,
+   "rank": 123,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2848,7 +2871,7 @@
    "score": 10.08,
    "basis": "predicted (travel demand)",
    "work_score": 10.48,
-   "rank": 123,
+   "rank": 124,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2866,7 +2889,7 @@
    }
   },
   {
-   "rank": 124,
+   "rank": 125,
    "city": "Salt Lake City",
    "country": "United States",
    "slug": "salt-lake-city",
@@ -2898,7 +2921,7 @@
    "score": 10.29,
    "basis": "predicted (travel demand)",
    "work_score": 10.29,
-   "rank": 125,
+   "rank": 126,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2921,7 +2944,7 @@
    "score": 10.25,
    "basis": "predicted (travel demand)",
    "work_score": 10.25,
-   "rank": 126,
+   "rank": 127,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2935,7 +2958,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 127,
+   "rank": 128,
    "city": "Geneva",
    "country": "Switzerland",
    "slug": "geneva",
@@ -2971,7 +2994,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 10.1,
-   "rank": 128,
+   "rank": 129,
    "impressions_10d": 9,
    "clicks_10d": 0,
    "score": 5.05,
@@ -2981,7 +3004,7 @@
    "slug": "tilburg"
   },
   {
-   "rank": 129,
+   "rank": 130,
    "city": "Las Vegas",
    "country": "United States",
    "slug": "las-vegas",
@@ -3013,7 +3036,7 @@
    "score": 10.07,
    "basis": "predicted (travel demand)",
    "work_score": 10.07,
-   "rank": 130,
+   "rank": 131,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -3027,7 +3050,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 131,
+   "rank": 132,
    "city": "Bali",
    "country": "Indonesia",
    "slug": "bali",
@@ -3060,7 +3083,7 @@
    "score": 9.76,
    "basis": "predicted (travel demand)",
    "work_score": 9.76,
-   "rank": 132,
+   "rank": 133,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -3083,7 +3106,7 @@
    "score": 9.7,
    "basis": "predicted (travel demand)",
    "work_score": 9.7,
-   "rank": 133,
+   "rank": 134,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -3097,7 +3120,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 134,
+   "rank": 135,
    "city": "Santorini",
    "country": "Greece",
    "slug": "santorini",
@@ -3118,29 +3141,6 @@
    "work_score": 9.63,
    "travel": 9628,
    "kind": "island",
-   "wikidata": 0
-  },
-  {
-   "rank": 135,
-   "city": "Miami",
-   "country": "United States",
-   "slug": "miami",
-   "score": 9.48,
-   "demand": 278558,
-   "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 30,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.0,
-   "work_score": 9.48,
-   "travel": 4740,
    "wikidata": 0
   },
   {
@@ -4753,8 +4753,8 @@
    "demand": 65717,
    "basis": "measured",
    "status": "published",
-   "trees": 13,
-   "photos": 7,
+   "trees": 15,
+   "photos": 8,
    "walks": 2,
    "register": 87,
    "ready": 0,
@@ -6585,9 +6585,9 @@
    "demand": 107243,
    "basis": "measured",
    "status": "published",
-   "trees": 12,
+   "trees": 15,
    "photos": 3,
-   "walks": 2,
+   "walks": 3,
    "register": 34,
    "ready": 0,
    "supply": 40,
@@ -7780,7 +7780,30 @@
    "wikidata": 0
   },
   {
+   "city": "Fort Lauderdale",
+   "country": "United States",
+   "status": "published",
+   "trees": 4,
+   "travel": 9214,
+   "source": "pool_audit 2026-09-01",
+   "score": 1.12,
+   "basis": "measured",
+   "work_score": 1.34,
    "rank": 336,
+   "photos": 0,
+   "walks": 0,
+   "register": 9,
+   "ready": 0,
+   "wikidata": 1,
+   "supply": 10,
+   "target": 20,
+   "ease": 1.2,
+   "slug": "fort-lauderdale",
+   "impressions_10d": 1,
+   "clicks_10d": 0
+  },
+  {
+   "rank": 337,
    "city": "Antalya",
    "country": "Turkey",
    "slug": "antalya",
@@ -7803,7 +7826,7 @@
    "wikidata": 0
   },
   {
-   "rank": 337,
+   "rank": 338,
    "city": "Colmar",
    "country": "France",
    "slug": "colmar",
@@ -7826,7 +7849,7 @@
    "wikidata": 0
   },
   {
-   "rank": 338,
+   "rank": 339,
    "city": "Bodrum",
    "country": "Turkey",
    "slug": "bodrum",
@@ -7849,7 +7872,7 @@
    "wikidata": 0
   },
   {
-   "rank": 339,
+   "rank": 340,
    "city": "Nafplio",
    "country": "Greece",
    "slug": "nafplio",
@@ -7872,7 +7895,7 @@
    "wikidata": 0
   },
   {
-   "rank": 340,
+   "rank": 341,
    "city": "Evora",
    "country": "Portugal",
    "slug": "evora",
@@ -7893,29 +7916,6 @@
    "clicks_10d": 0,
    "travel": 776,
    "wikidata": 2
-  },
-  {
-   "city": "Fort Lauderdale",
-   "country": "United States",
-   "status": "published",
-   "trees": 4,
-   "travel": 9214,
-   "source": "pool_audit 2026-09-01",
-   "score": 1.12,
-   "basis": "measured",
-   "work_score": 1.14,
-   "rank": 341,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "wikidata": 1,
-   "supply": 1,
-   "target": 20,
-   "ease": 1.02,
-   "slug": "fort-lauderdale",
-   "impressions_10d": 1,
-   "clicks_10d": 0
   },
   {
    "rank": 342,

@@ -181,6 +181,27 @@ def register_points(warn=False):
                   "file has data, register_points() cannot see its shape."
                   % (os.path.basename(p), len(rows)))
         pts.extend(got)
+    # Register rows imported straight into a leads file count too (2026-10-06).
+    # The Florida champion register went into data/leads/miami.json and its
+    # neighbours on 10-04, 64 Miami rows with fine coordinates, and this
+    # function read only data/registers/, so Miami sat at supply 0 and never
+    # reached --next while the US is our biggest audience. Only open rows
+    # whose source names a register: a research lead is not register supply.
+    for p in sorted(glob.glob(os.path.join(ROOT, "data", "leads", "*.json"))):
+        try:
+            with open(p, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, json.JSONDecodeError):
+            continue
+        rows = d.get("leads", []) if isinstance(d, dict) else []
+        for r in rows:
+            if not isinstance(r, dict) or r.get("status") != "open":
+                continue
+            if "register" not in str(r.get("source", "")).lower():
+                continue
+            q = row_point(r)
+            if q and (_fine(q[0]) or _fine(q[1])):
+                pts.append(q)
     return pts
 
 
