@@ -593,19 +593,24 @@
    "name": "Kapellenlinden St. Aegidius, Grafing (ND 81, two limes)",
    "species": "Large-leaved Lime (Tilia platyphyllos)",
    "status": "lead",
-   "why": "2026-10-05 verify pass: de.wikipedia list gives 48.048974, 11.970504, girths 7.90 and 5.45 m (2015), about 260 years each, photos on Commons. About 33 km east of Munich, over the 30-minute line, and two trees at a chapel (a pair, not one trunk). Not delivered."
+   "why": "[DELIVERED 2026-10-05 as muc_067/muc_066 in munich-verified.json, flagged, honest transport] 2026-10-05 verify pass: de.wikipedia list gives 48.048974, 11.970504, girths 7.90 and 5.45 m (2015), about 260 years each, photos on Commons. About 33 km east of Munich, over the 30-minute line, and two trees at a chapel (a pair, not one trunk). Not delivered."
   },
   {
    "name": "Hohle Linde in Obermarbach (Petershausen)",
    "species": "Lime (Tilia sp.)",
    "status": "lead",
-   "why": "2026-10-05 verify pass: de.wikipedia list gives 10.2 m girth and about 400 years at 48.427312, 11.482496. About 33 km north of Munich, beyond the day-trip line. Not checked further."
+   "why": "[DELIVERED 2026-10-05 as muc_067/muc_066 in munich-verified.json, flagged, honest transport] 2026-10-05 verify pass: de.wikipedia list gives 10.2 m girth and about 400 years at 48.427312, 11.482496. About 33 km north of Munich, beyond the day-trip line. Not checked further."
   },
   {
    "name": "Edignalinde, Puch (Fürstenfeldbruck): delivered as muc_063; Sauerlach lime as muc_064; Ingelsberg ash as muc_065",
    "species": "",
    "status": "lead",
    "why": "Method note 2026-10-05: the Wikipedia 'Liste markanter und alter Baumexemplare in Bayern' (wikitext rows, filtered to Munich-area places) plus Commons geosearch of CATEGORIES near Munich found these three where the register join found none, because they carry Commons photographs. Remaining rows from that list within 35 km of Munich are the three leads above."
+  },
+  {
+   "name": "Unmined Munich-city register rows (2026-10-05 deepen pass, method note)",
+   "status": "lead",
+   "why": "Every unmined row inside Munich city (ND 1/8, 2/8, 2/2, 3/3, 4/3, 1/2, 14/9, 10/1, 5/3, 5/1, 12/9, 11/1, 3/1) is already published, blocked by an earlier pass, or a multi-tree group (ND 3/1, 5 Platanen at 48.13283,11.56858: group, not collectible). The Dachau county rows (about 14 to 18 km) were mined on earlier passes; remaining ones are groups or have no photo in reach. Nothing further deliverable from the register this pass."
   }
  ],
  "blocked": [
