@@ -1,696 +1,822 @@
 {
-  "city": "Vienna",
-  "country": "Austria",
-  "generated": "2026-08-05",
-  "source": "Vienna Naturdenkmal register (data/registers/wien-naturdenkmale.json) joined to the city Baumkataster (data.wien.gv.at, ogdwien:BAUMKATOGD). Scope of this pass: the 50 single-tree monuments within 2.2 km of Stephansplatz. The register's other 344 single trees and 368 group designations are untouched and are not repeated here.",
-  "leads": [
-    {
-      "register_id": 3257651,
-      "name": "Platane",
-      "species": "Platanus x hybrida",
-      "place": "1., Rathauspark",
-      "latitude": 48.211148,
-      "longitude": 16.359228,
-      "baumkataster": {
-        "baum_id": 147537,
-        "planted": 1873,
-        "girth_cm": 597,
-        "offset_m": 5.2
-      },
-      "why_not_yet": "Rathauspark's second-thickest tree at 597 cm, but it is a London plane in a park that already publishes one (vie_006) plus the fern-leaved beech added this pass. Three planes in one park is padding. UPDATE (verify pass, 2026-08-19): verified and delivered to data/research/vienna-verified.json as vie_026, despite the padding concern noted above, since it is the strongest remaining candidate in the park and the age caveat is recorded in verify_notes. The sibling 3257650 was left here deliberately to avoid a third plane in the same park."
-    },
-    {
-      "register_id": 3257650,
-      "name": "Platane (third Rathauspark plane)",
-      "species": "Platanus x hybrida",
-      "place": "1., Rathauspark",
-      "latitude": 48.211068,
-      "longitude": 16.359967,
-      "baumkataster": {
-        "baum_id": 147511,
-        "planted": 1873,
-        "girth_cm": 526,
-        "offset_m": 2.9
-      },
-      "why_not_yet": "RESOLVED (verify pass, 2026-08-22): verified and delivered to data/research/vienna-verified.json as vie_029. Kept here for traceability."
-    },
-    {
-      "register_id": 3257888,
-      "name": "Platane",
-      "species": "Platanus x hybrida",
-      "place": "1., Dr. Karl Lueger-Platz",
-      "latitude": 48.20761,
-      "longitude": 16.379579,
-      "baumkataster": {
-        "baum_id": 157763,
-        "planted": 1928,
-        "girth_cm": 434,
-        "offset_m": 0.0
-      },
-      "why_not_yet": "a 1928 plane, 434 cm, sitting exactly in the 950 m gap between vie_001 and the Stadtpark, so geographically ideal. Held back on two grounds: at 98 years it is the least remarkable candidate in the centre, and its address, Dr.-Karl-Lueger-Platz, is the subject of a live public argument in Vienna that a tree page has no business walking into."
-    },
-    {
-      "register_id": 3257933,
-      "name": "Ginkgo",
-      "species": "Ginkgo biloba",
-      "place": "2., Vivariumstraße 17",
-      "latitude": 48.215053,
-      "longitude": 16.394513,
-      "baumkataster": {
-        "baum_id": 301498,
-        "planted": 1864,
-        "girth_cm": 408,
-        "offset_m": 6.9
-      },
-      "why_not_yet": "the strongest single lead in Vienna: a ginkgo the Baumkataster dates to 1864, 408 cm around, older than the Stadtpark's. It sits inside '02., Prater - Verwaltung', the Prater administration grounds at Vivariumstrasse 17, and whether the public can walk to it was NOT established this pass. Settle access before anything else. UPDATE (verify pass, this session): the address is now Vivariumstrasse 13-17, a Gemeindebau (municipal housing, Wiener Wohnen), built 1955-1957 on the former Vivarium/Prater-administration site. The complex is described in its own Wiener Wohnen materials as having an \"open\" layout that \"breaks with the Viennese tradition of the closed courtyard form\", which suggests it is more walkable than a typical private Hof, but no source found this pass positively confirms public pedestrian access to the tree itself. Register's own address label \"02., Prater - Verwaltung\" may be stale (the Prater administration function is no longer here). Left unverified per hard rule 10: access must be established, not merely plausible, before this ships."
-    },
-    {
-      "register_id": 3257866,
-      "name": "Platane",
-      "species": "Platanus x hybrida",
-      "place": "9., Alser Straße",
-      "latitude": 48.215321,
-      "longitude": 16.346265,
-      "baumkataster": {
-        "baum_id": 126884,
-        "planted": 1894,
-        "girth_cm": 315,
-        "offset_m": 2.0
-      },
-      "why_not_yet": "[RESOLVED 2026-08-21, delivered as vie_028] verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
-    },
-    {
-      "register_id": 3257747,
-      "name": "Feldulme",
-      "species": "Ulmus minor",
-      "place": "7., Burggasse 39",
-      "latitude": 48.204183,
-      "longitude": 16.35179,
-      "baumkataster": {
-        "baum_id": 1323,
-        "planted": 1915,
-        "girth_cm": 290,
-        "offset_m": 0.6
-      },
-      "why_not_yet": "a field elm that survived Dutch elm disease, planted 1915, 290 cm. Good story, but it stands 900 m west of the Ring walk in Neubau and opens a second walk this pass had no room for. UPDATE (verify pass, this session): verified and delivered to data/research/vienna-verified.json."
-    },
-    {
-      "register_id": 3257587,
-      "name": "Baumhasel",
-      "species": "Corylus colurna",
-      "place": "4., Resselpark",
-      "latitude": 48.199219,
-      "longitude": 16.369851,
-      "baumkataster": {
-        "baum_id": 208820,
-        "planted": 1900,
-        "girth_cm": 281,
-        "offset_m": 0.0
-      },
-      "why_not_yet": "the older of the two Resselpark hazels, planted 1900, 281 cm. Same note as 3257586. UPDATE (verify pass, this session): verified and delivered to data/research/vienna-verified.json."
-    },
-    {
-      "register_id": 3257586,
-      "name": "Baumhasel",
-      "species": "Corylus colurna",
-      "place": "4., Resselpark",
-      "latitude": 48.199122,
-      "longitude": 16.370237,
-      "baumkataster": {
-        "baum_id": 208790,
-        "planted": 1917,
-        "girth_cm": 237,
-        "offset_m": 0.0
-      },
-      "why_not_yet": "Turkish hazel at Karlsplatz, planted 1917, 237 cm. Modest tree, but Resselpark would link the Stadtpark end of the walk to the Rennweg end if a better Karlsplatz tree turns up. UPDATE (verify pass, this session): verified and delivered to data/research/vienna-verified.json."
-    },
-    {
-      "register_id": 3247583,
-      "name": "Eibe",
-      "species": "Taxus baccata",
-      "place": "2., Augartenstraße 26-28",
-      "latitude": 48.222931,
-      "longitude": 16.37454,
-      "baumkataster": {
-        "baum_id": 45577,
-        "planted": 0,
-        "girth_cm": 174,
-        "offset_m": 0.1
-      },
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3247584,
-      "name": "Eibe",
-      "species": "Taxus baccata",
-      "place": "2., Augartenstraße 26-28",
-      "latitude": 48.222995,
-      "longitude": 16.37443,
-      "baumkataster": {
-        "baum_id": 45578,
-        "planted": 0,
-        "girth_cm": 148,
-        "offset_m": 0.0
-      },
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257961,
-      "name": "Kugeltrompetenbaum",
-      "species": "Catalpa bignonioides \"Nana\"",
-      "place": "7., Schrankgasse 7-9",
-      "latitude": 48.20377,
-      "longitude": 16.35445,
-      "baumkataster": {
-        "baum_id": 167096,
-        "planted": 1977,
-        "girth_cm": 117,
-        "offset_m": 0.4
-      },
-      "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass [RESOLVED 2026-08-31, delivered as vie_032]"
-    },
-    {
-      "register_id": 3257962,
-      "name": "Kugeltrompetenbaum",
-      "species": "Catalpa bignonioides \"Nana\"",
-      "place": "7., Schrankgasse 7-9",
-      "latitude": 48.203709,
-      "longitude": 16.354475,
-      "baumkataster": {
-        "baum_id": 283099,
-        "planted": 2016,
-        "girth_cm": 37,
-        "offset_m": 0.8
-      },
-      "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass [RESOLVED 2026-08-31, delivered as vie_033]"
-    },
-    {
-      "register_id": 3247699,
-      "name": "Stieleiche",
-      "species": "Quercus robur",
-      "place": "3., Grimmelshausengasse",
-      "latitude": 48.200701,
-      "longitude": 16.381997,
-      "baumkataster": null,
-      "why_not_yet": "a pedunculate oak on Grimmelshausengasse, halfway between the Stadtpark and Rennweg, which is exactly where the walk thins. No Baumkataster record and therefore no age."
-    },
-    {
-      "register_id": 3247711,
-      "name": "Morgenländische Platane",
-      "species": "Platanus orientalis",
-      "place": "3., Ungargasse 60",
-      "latitude": 48.19698,
-      "longitude": 16.386942,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257408,
-      "name": "Robinie",
-      "species": "Robinia pseudoacacia",
-      "place": "5., Schönbrunner Straße 20",
-      "latitude": 48.193843,
-      "longitude": 16.358557,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257591,
-      "name": "Weißer Maulbeerbaum",
-      "species": "Morus alba",
-      "place": "3., Weißgerberlände 42",
-      "latitude": 48.208525,
-      "longitude": 16.395098,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257653,
-      "name": "Platane",
-      "species": "Platanus x hybrida",
-      "place": "4., Plößlgasse 15",
-      "latitude": 48.193556,
-      "longitude": 16.374728,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3247676,
-      "name": "Baumhasel",
-      "species": "Corylus colurna",
-      "place": "7., Schottenfeldgasse 75A",
-      "latitude": 48.204604,
-      "longitude": 16.342303,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3247677,
-      "name": "Baumhasel",
-      "species": "Corylus colurna",
-      "place": "7., Schottenfeldgasse 75A",
-      "latitude": 48.204601,
-      "longitude": 16.342354,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3247678,
-      "name": "Sommerlinde",
-      "species": "Tilia platyphyllos",
-      "place": "7., Schottenfeldgasse 75A",
-      "latitude": 48.204592,
-      "longitude": 16.342741,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3247596,
-      "name": "Eibe",
-      "species": "Taxus baccata",
-      "place": "3., Rennweg 12",
-      "latitude": 48.193808,
-      "longitude": 16.382355,
-      "baumkataster": null,
-      "why_not_yet": "one of two yews at Rennweg 12, 200 m from the Mozart-Platane (vie_005), so it would thicken that stop. No Baumkataster record at all, which usually means institutional ground; Rennweg 12 adjoins the university's botanical institute. Check access and find an age before proposing it. UPDATE (verify pass, this session): moved to blocked, access confirmed restricted, see blocked list."
-    },
-    {
-      "register_id": 3247597,
-      "name": "Eibe",
-      "species": "Taxus baccata",
-      "place": "3., Rennweg 12",
-      "latitude": 48.193797,
-      "longitude": 16.382512,
-      "baumkataster": null,
-      "why_not_yet": "the second Rennweg 12 yew, same note as 3247596, and the pair would have to be folded into one entry or dropped. UPDATE (verify pass, this session): moved to blocked, access confirmed restricted, see blocked list."
-    },
-    {
-      "register_id": 3247598,
-      "name": "Weißer Maulbeerbaum",
-      "species": "Morus alba",
-      "place": "3., Landstraßer Hauptstraße 4A",
-      "latitude": 48.204339,
-      "longitude": 16.385603,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257899,
-      "name": "Judasbaum",
-      "species": "Cercis siliquastrum",
-      "place": "9., Alser Straße 4",
-      "latitude": 48.217105,
-      "longitude": 16.352582,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens UPDATE (verify pass, this session): verified and delivered to data/research/vienna-verified.json."
-    },
-    {
-      "register_id": 3257902,
-      "name": "Feldulme",
-      "species": "Ulmus minor",
-      "place": "4., Floragasse 5",
-      "latitude": 48.194476,
-      "longitude": 16.368988,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257913,
-      "name": "Ginkgo",
-      "species": "Ginkgo biloba",
-      "place": "8., Josefstädterstraße 17",
-      "latitude": 48.20891,
-      "longitude": 16.351792,
-      "baumkataster": null,
-      "why_not_yet": "Naturdenkmal 774, a ginkgo in a courtyard at Josefstaedter Strasse 17, protected 1999. No Baumkataster record. Worth a look because it is 400 m from the Schoenbornpark lime shipped this pass, but courtyard access has to be established first. UPDATE (verify pass, this session): Josefstaedter Strasse 17 is \"Zu den vier Schimmeln\", a historic residential/office building (birthplace of Karl von Frisch, once home to Gottfried Keller), with a garden containing a marble bust of Franz Exner. No source found confirms public access to that garden/courtyard; reads as a private building garden. Left unverified."
-    },
-    {
-      "register_id": 3257916,
-      "name": "Blutbuche",
-      "species": "Fagus sylvatica Atropurpurea",
-      "place": "9., Beethovengasse 6",
-      "latitude": 48.217981,
-      "longitude": 16.357028,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257917,
-      "name": "Morgenländische Platane",
-      "species": "Platanus orientalis",
-      "place": "9., Spitalgasse 23",
-      "latitude": 48.219263,
-      "longitude": 16.351243,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257923,
-      "name": "Edelkastanie",
-      "species": "Castanea sativa",
-      "place": "8., Bennogasse 10",
-      "latitude": 48.212696,
-      "longitude": 16.342901,
-      "baumkataster": null,
-      "why_not_yet": "Naturdenkmal 783, a sweet chestnut in a courtyard at Bennogasse 10, protected 2003. No Baumkataster record, access unknown. Re-checked 2026-08-27: Bennogasse 10 is a residential apartment building (OSM, confirmed 'apartments'); typical of Vienna's Gruenderzeit blocks, which often have a private Innenhof not open to the public. No source found stating the tree is visible or reachable from the street. Still not shippable."
-    },
-    {
-      "register_id": 3257802,
-      "name": "Winterlinde",
-      "species": "Tilia cordata",
-      "place": "5., Margaretenstraße 89",
-      "latitude": 48.190016,
-      "longitude": 16.357347,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257825,
-      "name": "Platane",
-      "species": "Platanus x hybrida",
-      "place": "9., Porzellangasse 48",
-      "latitude": 48.223505,
-      "longitude": 16.362218,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": 3257827,
-      "name": "Blauglockenbaum",
-      "species": "Paulownia tomentosa",
-      "place": "9., Währinger Straße 5-7",
-      "latitude": 48.216731,
-      "longitude": 16.359008,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens UPDATE (verify pass, this session): register text (Naturdenkmal Nr. 702, protected 21 July 1982) gives only the street address and size (2.80 m girth, ~15 m tall in 1982), no courtyard wording. Could not identify the current building/institution at Waehringer Strasse 5-7 or confirm public access. Left unverified."
-    },
-    {
-      "register_id": 3257859,
-      "name": "Rosskastanie",
-      "species": "Aesculus hippocastanum",
-      "place": "7., Halbgasse 8",
-      "latitude": 48.203432,
-      "longitude": 16.342233,
-      "baumkataster": null,
-      "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
-    },
-    {
-      "register_id": null,
-      "name": "Kaukasische Fluegelnuss, second and third stems",
-      "species": "Pterocarya fraxinifolia",
-      "place": "1., Stadtpark",
-      "latitude": 48.20509918,
-      "longitude": 16.37945883,
-      "baumkataster": {
-        "baum_id": "194188 and 194190",
-        "planted": 1921,
-        "girth_cm": "253 and 324",
-        "offset_m": 2.0
-      },
-      "why_not_yet": "folded into vie_015. The monument register carries one entry for this point; the Baumkataster carries three stems of the same 1921 planting within five metres, which is what a Caucasian wingnut does to itself by suckering. Recorded here so a later pass does not re-propose them as separate trees."
-    },
-    {
-      "register_id": 3247636,
-      "name": "Morgenländische Platane",
-      "species": "Platanus orientalis",
-      "place": "13., Auhofstraße 11A",
-      "latitude": 48.187186,
-      "longitude": 16.295324,
-      "baumkataster": null,
-      "why_not_yet": "Species conflict found this pass (verify session, 2026-08-09): the Vienna Naturdenkmal register lists this as Platanus orientalis, but monumentaltrees.com has a dedicated page for a plane at the near-identical address 'Auhofstraße 11' (https://www.monumentaltrees.com/de/aut/wien/hietzing/15159_auhofstrae11/, browser session, verification use only) recording it as Platanus x hispanica (a different, hybrid species), girth ~4m, height ~27m, measured 26 Jan 2017. The 1949 Natur und Land survey (Naturdenkmal Nr. 178, https://www.zobodat.at/pdf/nat-land_1949_11_0199-0202.pdf p.201) just says 'Platane' with no species qualifier, so it does not resolve the conflict. Possibly two different trees at 11 vs 11A, possibly one tree misidentified by one source. No Baumkataster match found within 20m either (nearest match at 17.9m was a Rosskastanie, wrong species entirely, so likely a private courtyard tree the city inventory does not cover). Needs a pass with a mapped/photographed visit to resolve before shipping; do not silently pick a species."
-    },
-    {
-      "register_id": 3247640,
-      "name": "Platane",
-      "species": "Platanus x hybrida",
-      "place": "13., Dommayergasse 7",
-      "latitude": 48.18783,
-      "longitude": 16.299149,
-      "baumkataster": null,
-      "why_not_yet": "Naturdenkmal Nr. 182 (1949 Natur und Land survey, no destruction note, so it survived WWII). No Baumkataster match (nearest live match at 31m was a 2020-planted Tilia, unrelated). Dommayergasse is a short street near the well-known Cafe Dommayer restaurant block in Hietzing; whether this specific tree stands on public street frontage or inside a restaurant/building courtyard was not established this pass. Leave for a pass that can check access before shipping. Re-checked 2026-08-27: no further evidence found on public/private access at Dommayergasse 7 specifically; the nearby Cafe Dommayer is a genuine public business but does not establish this address. Still not shippable."
-    },
-    {
-      "register_id": null,
-      "name": "Four Platanus entries, Meiereistraße 3",
-      "species": "Platanus (unspecified)",
-      "place": "2., Meiereistraße 3, near the Prater/Hauptallee",
-      "latitude": 48.2088,
-      "longitude": 16.4175,
-      "baumkataster": null,
-      "why_not_yet": "register_ids 3257979, 3257980, 3257981, 3257982, all within about 35m of each other and about 430-460m from the published vie_003 (Chestnut Avenue of the Hauptallee). Not individually checked for access this pass (ran out of window): Meiereistraße hosts a restaurant/dairy building (a 'Meierei') near the Prater, so this could be a public streetside row or a restaurant courtyard. A genuine four-tree micro-cluster worth a dedicated look, since it would sit close enough to extend a Prater-area walk alongside vie_003. RESOLVED (verify pass, 2026-08-22): de.wikipedia.org Liste der Naturdenkmaeler in Wien/Leopoldstadt gives Naturdenkmal Nr. 853 for these four planes, exact text 'Die Platanen konnten sich auf dem Gelaende der Bildhaueratelier gut entwickeln' (the planes developed well on the sculptor studios' grounds), i.e. private studio grounds, matching the Nominatim address-mismatch suspicion already recorded here. Moved to blocked."
-    },
-    {
-      "register_id": null,
-      "name": "Pötzleinsdorf-area single trees near vie_009 (Riesenmammutbaum, Schwarzkiefer x4, Feldahorn), within 900m",
-      "species": "various",
-      "place": "18./19. district, Khevenhüllerstraße, Franz-Barwig-Weg, Glanzinggasse, Wilbrandtgasse, Hackenbergweg",
-      "latitude": null,
-      "longitude": null,
-      "baumkataster": null,
-      "why_not_yet": "Checked this pass (verify session, 2026-08-09) as a possible third cluster around the published vie_009 (Giant Sequoias of Pötzleinsdorfer Schlosspark). All addresses found (Khevenhuellerstrasse, Franz-Barwig-Weg, Glanzinggasse, Wilbrandtgasse, Hackenbergweg) read as private villa streets in this part of Doebling/Waehring, typical of Vienna's 18th/19th-district garden-villa belt; none checked individually for public access, but the pattern strongly suggests private gardens rather than a walkable public cluster. Not pursued further given the time budget; a future pass could still check each address before writing this off completely."
-    },
-    {
-      "register_id": 3257478,
-      "name": "Platane",
-      "species": "Platanus x hybrida",
-      "place": "13., Huegelgasse, vor Nr. 7",
-      "latitude": 48.190158,
-      "longitude": 16.285557,
-      "baumkataster": null,
-      "why_not_yet": "UPDATE (verify pass, 2026-08-19): verified and delivered to data/research/vienna-verified.json as vie_027. Kept here for completeness and traceability."
-    },
-    {
-      "register_id": 3257507,
-      "name": "Morgenlaendische Platane",
-      "species": "Platanus orientalis",
-      "place": "13., Wattmanngasse 8",
-      "latitude": 48.183983,
-      "longitude": 16.297178,
-      "baumkataster": null,
-      "why_not_yet": "Checked this pass (verify session, 2026-08-19): a strong specimen, girth 4.2m, height 24m, crown 17m, which de.wikipedia.org Liste der Naturdenkmaeler in Wien/Hietzing dates to the second half of the 18th century (a real source estimate, not derived by us). Only 280m from the published Schoenbrunn cluster (vie_004/020/021/022), so geographically ideal. Held back on access alone: the Wikipedia description gives no courtyard note (unlike several other entries in the same list, which explicitly say so when private), but it also gives no street-facing note either, unlike the Huegelgasse plane delivered this pass which is explicitly 'vor Nr. 7'. Overpass shows only an ordinary villa building at that address, no park or public-access tag. Genuinely the best undelivered lead in Vienna right now; a future pass should try a Vienna tree-walk blog or the Bezirksmuseum Hietzing before writing it off."
-    },
-    {
-      "register_id": 3257483,
-      "name": "Ginkgo",
-      "species": "Ginkgo biloba",
-      "place": "13., Neue-Welt-Gasse 14",
-      "latitude": 48.186606,
-      "longitude": 16.291642,
-      "baumkataster": null,
-      "why_not_yet": "Checked this pass (verify session, 2026-08-19): girth 3m, crown 16m, height about 16m, protected for its size, crown form and townscape-defining effect per de.wikipedia.org Liste der Naturdenkmaeler in Wien/Hietzing, which suggests street visibility but is not a positive access statement. Overpass shows only ordinary villa buildings nearby, the same Cottage/Hietzing garden-villa belt that blocked the Poetzleinsdorf-area candidates on 2026-08-09. Not delivered on that precedent. 550m from the delivered Huegelgasse plane (vie_027) and 130m from the Neue-Welt-Gasse 11 holly below; the three together could become a small satellite cluster if access on any of them is ever confirmed."
-    },
-    {
-      "register_id": 3247641,
-      "name": "Stechpalme",
-      "species": "Ilex aquifolium",
-      "place": "13., Neue-Welt-Gasse 11",
-      "latitude": 48.186376,
-      "longitude": 16.29086,
-      "baumkataster": null,
-      "why_not_yet": "Checked this pass (verify session, 2026-08-19): protected for beauty and rarity per de.wikipedia.org Liste der Naturdenkmaeler in Wien/Hietzing, no girth or age given, no access statement either way. Same villa-belt caution as the Neue-Welt-Gasse 14 ginkgo above. Not pursued further this pass."
-    },
-    {
-      "register_id": null,
-      "name": "2 Kugeltrompetenbaeume (Catalpa bignonioides Nana), Schrankgasse 7-9",
-      "species": "Catalpa bignonioides Nana",
-      "place": "7., Schrankgasse 7-9, Parkanlage",
-      "latitude": 48.203742,
-      "longitude": 16.354461,
-      "baumkataster": null,
-      "why_not_yet": "CORRECTION (verify pass, 2026-08-19): register_ids 3257961 and 3257962, previously left in this file as verifying fine but weaker or off the Ring walk. de.wikipedia.org Liste der Naturdenkmaeler in Wien/Neubau states they stand on either side of a footpath through a small public park, not a courtyard as their lack of a Baumkataster record would otherwise suggest. So the earlier access assumption was wrong; the real objection is remarkability, not access: the Baumkataster (checked 2026-08-05 per vienna-extra.md) dates the two trees to 1977 and 2016, too young to be genuinely old, and their interest is an ornamental globe-crown effect rather than age or spectacle. Left undelivered on that basis, not on access."
-    },
-    {
-      "register_id": null,
-      "name": "Four Platanus entries, Meiereistrasse 3 (Krieau/Prater)",
-      "species": "Platanus (unspecified)",
-      "place": "2., Meiereistrasse 3 (register_ids 3257979-3257982)",
-      "latitude": 48.2088,
-      "longitude": 16.4175,
-      "baumkataster": null,
-      "why_not_yet": "Checked this pass (verify session, 2026-08-19): Nominatim resolves the point to a sculptor's studio building at Meiereistrasse 245, an address-numbering mismatch against the register's Meiereistrasse 3 that was not resolved this pass. The area is the Krieau/WU-Campus part of the Prater, closer to sports and institutional grounds than to the Hauptallee's open public avenue. Access not established either way; not pursued further given the time budget. RESOLVED (verify pass, 2026-08-22): de.wikipedia.org Liste der Naturdenkmaeler in Wien/Leopoldstadt gives Naturdenkmal Nr. 853 for these four planes, exact text 'Die Platanen konnten sich auf dem Gelaende der Bildhaueratelier gut entwickeln' (the planes developed well on the sculptor studios' grounds), i.e. private studio grounds, matching the Nominatim address-mismatch suspicion already recorded here. Moved to blocked."
-    },
-    {
-      "register_id": 3257659,
-      "name": "Winterlinde, Klostergasse 37",
-      "species": "Tilia cordata",
-      "place": "18., Klostergasse 37, KG Weinhaus",
-      "latitude": 48.228034,
-      "longitude": 16.334585,
-      "baumkataster": null,
-      "why_not_yet": "Checked this pass (verify session, 2026-08-22): Naturdenkmal Nr. 581, protection date 28.03.1974, described as a healthy tree with a 70 cm stem diameter at breast height, three-stemmed above 3 m. Unlike the Ebner-Eschenbach-Park pine 130 m away (shipped this pass as vie_030), the location text is a plain street number with no park reference, and de.wikipedia.org's own entry gives no accessibility note either way. Left unverified: address alone does not establish this is inside the public park versus a private plot fronting Klostergasse."
-    },
-    {
-      "register_id": 3257958,
-      "name": "Ginkgo, Tuerkenschanzstrasse 46 (with 3257959, Riesenmammutbaum, same address)",
-      "species": "Ginkgo biloba / Sequoiadendron giganteum",
-      "place": "18., Tuerkenschanzstrasse 46",
-      "latitude": 48.23316,
-      "longitude": 16.33668,
-      "baumkataster": null,
-      "why_not_yet": "Naturdenkmal Nr. 817 (verify session, 2026-08-22): register and wien.gv.at both give only the street address, no park reference. Search found no positive evidence of public access (not a known institution or park frontage); the street sits near the Vienna Observatory (Sternwarte) and a seniors' residence but neither is confirmed as this specific number. Left unverified per hard rule 10."
-    },
-    {
-      "register_id": 3257378,
-      "name": "Schwarzkiefer, Ebner-Eschenbach-Park",
-      "species": "Pinus nigra",
-      "place": "18., Klostergasse, Ebner-Eschenbach-Park",
-      "latitude": 48.226892,
-      "longitude": 16.334663,
-      "baumkataster": null,
-      "why_not_yet": "RESOLVED (verify pass, 2026-08-22): verified and delivered to data/research/vienna-verified.json as vie_030. Kept here for traceability."
-    },
-    {
-      "register_id": 3257960,
-      "name": "Traubeneiche, Prater - Belvedereallee",
-      "species": "Quercus petraea",
-      "place": "2., Prater - Belvedereallee",
-      "latitude": 48.192401,
-      "longitude": 16.428753,
-      "baumkataster": null,
-      "why_not_yet": "RESOLVED (verify pass, 2026-08-22): verified and delivered to data/research/vienna-verified.json as vie_031. Kept here for traceability."
-    }
-  ],
-  "blocked": [
-    {
-      "register_id": 3257963,
-      "name": "Gewöhnliche Platane",
-      "species": "Platanus x hispanica",
-      "place": "2., Schwarzingergasse 4(SCHULE)",
-      "latitude": 48.219316,
-      "longitude": 16.377723,
-      "baumkataster": {
-        "baum_id": 88843,
-        "planted": 0,
-        "girth_cm": 359,
-        "offset_m": 0.1
-      },
-      "reason": "school grounds, Schwarzingergasse 4 is a school and the tree stands inside its yard, not open to visitors"
-    },
-    {
-      "register_id": 3257870,
-      "name": "Schwarzer Maulbeerbaum",
-      "species": "Morus nigra",
-      "place": "6., Hirschengasse 18(SCHULE)",
-      "latitude": 48.194743,
-      "longitude": 16.347515,
-      "baumkataster": {
-        "baum_id": 76081,
-        "planted": 0,
-        "girth_cm": 252,
-        "offset_m": 1.8
-      },
-      "reason": "school grounds, Hirschengasse 18 is a school and the tree stands inside its yard, not open to visitors"
-    },
-    {
-      "register_id": 3257745,
-      "name": "Kirschlorbeer",
-      "species": "Prunus laurocerasus",
-      "place": "4., Rechte Wienzeile 25-27",
-      "latitude": 48.197411,
-      "longitude": 16.362565,
-      "baumkataster": null,
-      "reason": "a cherry laurel, a large shrub rather than a tree, in a private courtyard at Rechte Wienzeile 25-27"
-    },
-    {
-      "register_id": 3257748,
-      "name": "Götterbaum",
-      "species": "Ailanthus altissima",
-      "place": "7., Lindengasse 46",
-      "latitude": 48.199891,
-      "longitude": 16.347244,
-      "baumkataster": null,
-      "reason": "tree of heaven in a private courtyard at Lindengasse 46, and an invasive species the city elsewhere removes"
-    },
-    {
-      "register_id": 3257529,
-      "name": "Baumhasel",
-      "species": "Corylus colurna",
-      "place": "6., Windmühlgasse 28(KAMMER F.ARB.U.ANG.F.NOE.)",
-      "latitude": 48.198623,
-      "longitude": 16.355221,
-      "baumkataster": null,
-      "reason": "institutional courtyard of the Lower Austrian chamber of labour at Windmuehlgasse 28, not a public space"
-    },
-    {
-      "register_id": 3257530,
-      "name": "Baumhasel",
-      "species": "Corylus colurna",
-      "place": "6., Windmühlgasse 28(KAMMER F.ARB.U.ANG.F.NOE.)",
-      "latitude": 48.19856,
-      "longitude": 16.355108,
-      "baumkataster": null,
-      "reason": "institutional courtyard of the Lower Austrian chamber of labour at Windmuehlgasse 28, not a public space"
-    },
-    {
-      "register_id": null,
-      "name": "All 368 group designations in the Vienna register",
-      "species": null,
-      "place": "citywide",
-      "latitude": null,
-      "longitude": null,
-      "baumkataster": null,
-      "reason": "the register's ND_TYP field marks these as Wald, Baumgruppe (ab 4 Baeumen), Allee, Baumzeile, Wiese, Gewaesser or Geologischer Aufschluss. None is one identifiable tree with one obvious place to stand, so none is a collectible point. Already flagged 'group': true in data/registers/wien-naturdenkmale.json; do not mine them for entries."
-    },
-    {
-      "register_id": null,
-      "name": "Register entries whose place is a private Garten or Hof",
-      "species": null,
-      "place": "citywide",
-      "latitude": null,
-      "longitude": null,
-      "baumkataster": null,
-      "reason": "hard rule 10. The Vienna register protects trees wherever they stand, including inside private gardens and closed courtyards, and a protection order is not an invitation. Any candidate whose address is a residential Garten, a Hof with no public passage, a school yard or an institutional courtyard stays blocked until public access is positively established, not merely unrefuted."
-    },
-    {
-      "register_id": 3247596,
-      "name": "Eibe (Tausendjaehrige Eibe / thousand-year yew, plus two more yews)",
-      "species": "Taxus baccata",
-      "place": "3., Rennweg 12",
-      "latitude": 48.193808,
-      "longitude": 16.382355,
-      "baumkataster": null,
-      "reason": "Verified this pass (verify session, 2026-08-08): the yews at Rennweg 12 stand on the grounds of the European Patent Office, not the adjacent Botanical Garden. Vienna's oldest natural monument, called the thousand-year yew, 3.20 m girth, last remnant of a Roman-era yew grove per local sources. But access is confirmed restricted, not merely unestablished: a documented visitor (walterschattauer.eu) was turned away twice at the gate and could only view the tree from about 20 m away. Fails hard rule 10 (\"genuinely open to visitors\"). The same source notes the adjacent Botanischer Garten der Universitaet Wien (Rennweg 14, free entry, publicly open) has its own old yews as an alternative, worth scouting separately in a future pass."
-    },
-    {
-      "register_id": 3247597,
-      "name": "Eibe, second Rennweg 12 yew",
-      "species": "Taxus baccata",
-      "place": "3., Rennweg 12",
-      "latitude": 48.193797,
-      "longitude": 16.382512,
-      "baumkataster": null,
-      "reason": "Same site as register_id 3247596 (European Patent Office grounds, Rennweg 12), same access finding: confirmed restricted, not open to the public. See that entry."
-    },
-    {
-      "register_id": 3247637,
-      "name": "Japanischer Schnurbaum",
-      "species": "Styphnolobium japonicum (Sophora japonica)",
-      "place": "13., Schönbrunn, Botanischer Garten",
-      "latitude": 48.184434,
-      "longitude": 16.301375,
-      "baumkataster": null,
-      "reason": "BLOCKED, verify pass 2026-08-09 (depth pass, Schönbrunn cluster): Naturdenkmal Nr. 179. Anonym, 'Verzeichnis der Wiener Naturdenkmale (Fortsetzung)', Natur und Land 1949, Vol. 11, p.201 (https://www.zobodat.at/pdf/nat-land_1949_11_0199-0202.pdf) states explicitly: 'durch Kriegsereignisse vernichtet' (destroyed by war events). The LIVE city Naturdenkmal WFS layer (data.wien.gv.at, ogdwien:NATDENKMALPKTOGD) still carries this register_id as an active designation at this coordinate in 2026, which means the city's own current 'official' register contains at least one stale entry for a tree confirmed destroyed 80+ years ago, unless it was replanted and nobody has updated the record either way. No modern source (searched this pass) confirms a living tree at this spot today. Never ship without a dated modern confirmation (photo, observation, Bundesgärten record) that a Sophora japonica genuinely stands here now. Worth flagging generally: a Naturdenkmal register_id existing in the live layer is not by itself proof of life, contrary to how it reads at a glance. Its two neighbours 12-30m away (Stieleiche ND180, Eibe ND181) carry no such destruction note in the same 1949 document and were verified and delivered this pass as vie_021 and vie_022."
-    },
-    {
-      "register_id": null,
-      "name": "Four Platanus entries, Meiereistrasse 3 (Prater/Krieau)",
-      "species": "Platanus (unspecified)",
-      "place": "2., Meiereistrasse 3",
-      "reason": "Naturdenkmal Nr. 853 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Leopoldstadt, verify pass 2026-08-22): register text states explicitly the four planes 'konnten sich auf dem Gelaende der Bildhaueratelier gut entwickeln' (developed well on the sculptor studios' grounds), i.e. private institutional/studio land, not public Prater parkland despite the Meiereistrasse/Prater address. Never ship; do not re-research."
-    },
-    {
-      "register_id": null,
-      "name": "Winterlinde, Paulinengasse 9",
-      "species": "Tilia cordata",
-      "place": "18., Paulinengasse 9",
-      "reason": "Naturdenkmal Nr. 100 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Waehring, verify pass 2026-08-22): location given as 'Innenhof des Lindenhofes', an internal courtyard, private. Never ship; do not re-research."
-    },
-    {
-      "register_id": 3257608,
-      "name": "Baumhasel, Koehlergasse 20",
-      "species": "Corylus colurna",
-      "place": "18., Koehlergasse 20",
-      "reason": "Naturdenkmal Nr. 622 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Waehring, verify pass 2026-08-22): location given as 'im Garten hinter dem Gebaeude' (in the garden behind the building), private. Never ship; do not re-research."
-    }
-  ]
+ "city": "Vienna",
+ "country": "Austria",
+ "generated": "2026-08-05",
+ "source": "Vienna Naturdenkmal register (data/registers/wien-naturdenkmale.json) joined to the city Baumkataster (data.wien.gv.at, ogdwien:BAUMKATOGD). Scope of this pass: the 50 single-tree monuments within 2.2 km of Stephansplatz. The register's other 344 single trees and 368 group designations are untouched and are not repeated here.",
+ "leads": [
+  {
+   "register_id": 3257651,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "1., Rathauspark",
+   "latitude": 48.211148,
+   "longitude": 16.359228,
+   "baumkataster": {
+    "baum_id": 147537,
+    "planted": 1873,
+    "girth_cm": 597,
+    "offset_m": 5.2
+   },
+   "why_not_yet": "Rathauspark's second-thickest tree at 597 cm, but it is a London plane in a park that already publishes one (vie_006) plus the fern-leaved beech added this pass. Three planes in one park is padding. UPDATE (verify pass, 2026-08-19): verified and delivered to data/research/vienna-verified.json as vie_026, despite the padding concern noted above, since it is the strongest remaining candidate in the park and the age caveat is recorded in verify_notes. The sibling 3257650 was left here deliberately to avoid a third plane in the same park."
+  },
+  {
+   "register_id": 3257650,
+   "name": "Platane (third Rathauspark plane)",
+   "species": "Platanus x hybrida",
+   "place": "1., Rathauspark",
+   "latitude": 48.211068,
+   "longitude": 16.359967,
+   "baumkataster": {
+    "baum_id": 147511,
+    "planted": 1873,
+    "girth_cm": 526,
+    "offset_m": 2.9
+   },
+   "why_not_yet": "RESOLVED (verify pass, 2026-08-22): verified and delivered to data/research/vienna-verified.json as vie_029. Kept here for traceability."
+  },
+  {
+   "register_id": 3257888,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "1., Dr. Karl Lueger-Platz",
+   "latitude": 48.20761,
+   "longitude": 16.379579,
+   "baumkataster": {
+    "baum_id": 157763,
+    "planted": 1928,
+    "girth_cm": 434,
+    "offset_m": 0.0
+   },
+   "why_not_yet": "a 1928 plane, 434 cm, sitting exactly in the 950 m gap between vie_001 and the Stadtpark, so geographically ideal. Held back on two grounds: at 98 years it is the least remarkable candidate in the centre, and its address, Dr.-Karl-Lueger-Platz, is the subject of a live public argument in Vienna that a tree page has no business walking into."
+  },
+  {
+   "register_id": 3257933,
+   "name": "Ginkgo",
+   "species": "Ginkgo biloba",
+   "place": "2., Vivariumstraße 17",
+   "latitude": 48.215053,
+   "longitude": 16.394513,
+   "baumkataster": {
+    "baum_id": 301498,
+    "planted": 1864,
+    "girth_cm": 408,
+    "offset_m": 6.9
+   },
+   "why_not_yet": "the strongest single lead in Vienna: a ginkgo the Baumkataster dates to 1864, 408 cm around, older than the Stadtpark's. It sits inside '02., Prater - Verwaltung', the Prater administration grounds at Vivariumstrasse 17, and whether the public can walk to it was NOT established this pass. Settle access before anything else. UPDATE (verify pass, this session): the address is now Vivariumstrasse 13-17, a Gemeindebau (municipal housing, Wiener Wohnen), built 1955-1957 on the former Vivarium/Prater-administration site. The complex is described in its own Wiener Wohnen materials as having an \"open\" layout that \"breaks with the Viennese tradition of the closed courtyard form\", which suggests it is more walkable than a typical private Hof, but no source found this pass positively confirms public pedestrian access to the tree itself. Register's own address label \"02., Prater - Verwaltung\" may be stale (the Prater administration function is no longer here). Left unverified per hard rule 10: access must be established, not merely plausible, before this ships."
+  },
+  {
+   "register_id": 3257866,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "9., Alser Straße",
+   "latitude": 48.215321,
+   "longitude": 16.346265,
+   "baumkataster": {
+    "baum_id": 126884,
+    "planted": 1894,
+    "girth_cm": 315,
+    "offset_m": 2.0
+   },
+   "why_not_yet": "[RESOLVED 2026-08-21, delivered as vie_028] verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3257747,
+   "name": "Feldulme",
+   "species": "Ulmus minor",
+   "place": "7., Burggasse 39",
+   "latitude": 48.204183,
+   "longitude": 16.35179,
+   "baumkataster": {
+    "baum_id": 1323,
+    "planted": 1915,
+    "girth_cm": 290,
+    "offset_m": 0.6
+   },
+   "why_not_yet": "a field elm that survived Dutch elm disease, planted 1915, 290 cm. Good story, but it stands 900 m west of the Ring walk in Neubau and opens a second walk this pass had no room for. UPDATE (verify pass, this session): verified and delivered to data/research/vienna-verified.json."
+  },
+  {
+   "register_id": 3257587,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "4., Resselpark",
+   "latitude": 48.199219,
+   "longitude": 16.369851,
+   "baumkataster": {
+    "baum_id": 208820,
+    "planted": 1900,
+    "girth_cm": 281,
+    "offset_m": 0.0
+   },
+   "why_not_yet": "the older of the two Resselpark hazels, planted 1900, 281 cm. Same note as 3257586. UPDATE (verify pass, this session): verified and delivered to data/research/vienna-verified.json."
+  },
+  {
+   "register_id": 3257586,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "4., Resselpark",
+   "latitude": 48.199122,
+   "longitude": 16.370237,
+   "baumkataster": {
+    "baum_id": 208790,
+    "planted": 1917,
+    "girth_cm": 237,
+    "offset_m": 0.0
+   },
+   "why_not_yet": "Turkish hazel at Karlsplatz, planted 1917, 237 cm. Modest tree, but Resselpark would link the Stadtpark end of the walk to the Rennweg end if a better Karlsplatz tree turns up. UPDATE (verify pass, this session): verified and delivered to data/research/vienna-verified.json."
+  },
+  {
+   "register_id": 3247583,
+   "name": "Eibe",
+   "species": "Taxus baccata",
+   "place": "2., Augartenstraße 26-28",
+   "latitude": 48.222931,
+   "longitude": 16.37454,
+   "baumkataster": {
+    "baum_id": 45577,
+    "planted": 0,
+    "girth_cm": 174,
+    "offset_m": 0.1
+   },
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247584,
+   "name": "Eibe",
+   "species": "Taxus baccata",
+   "place": "2., Augartenstraße 26-28",
+   "latitude": 48.222995,
+   "longitude": 16.37443,
+   "baumkataster": {
+    "baum_id": 45578,
+    "planted": 0,
+    "girth_cm": 148,
+    "offset_m": 0.0
+   },
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257961,
+   "name": "Kugeltrompetenbaum",
+   "species": "Catalpa bignonioides \"Nana\"",
+   "place": "7., Schrankgasse 7-9",
+   "latitude": 48.20377,
+   "longitude": 16.35445,
+   "baumkataster": {
+    "baum_id": 167096,
+    "planted": 1977,
+    "girth_cm": 117,
+    "offset_m": 0.4
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass [RESOLVED 2026-08-31, delivered as vie_032]"
+  },
+  {
+   "register_id": 3257962,
+   "name": "Kugeltrompetenbaum",
+   "species": "Catalpa bignonioides \"Nana\"",
+   "place": "7., Schrankgasse 7-9",
+   "latitude": 48.203709,
+   "longitude": 16.354475,
+   "baumkataster": {
+    "baum_id": 283099,
+    "planted": 2016,
+    "girth_cm": 37,
+    "offset_m": 0.8
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass [RESOLVED 2026-08-31, delivered as vie_033]"
+  },
+  {
+   "register_id": 3247699,
+   "name": "Stieleiche",
+   "species": "Quercus robur",
+   "place": "3., Grimmelshausengasse",
+   "latitude": 48.200701,
+   "longitude": 16.381997,
+   "baumkataster": null,
+   "why_not_yet": "a pedunculate oak on Grimmelshausengasse, halfway between the Stadtpark and Rennweg, which is exactly where the walk thins. No Baumkataster record and therefore no age."
+  },
+  {
+   "register_id": 3247711,
+   "name": "Morgenländische Platane",
+   "species": "Platanus orientalis",
+   "place": "3., Ungargasse 60",
+   "latitude": 48.19698,
+   "longitude": 16.386942,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257408,
+   "name": "Robinie",
+   "species": "Robinia pseudoacacia",
+   "place": "5., Schönbrunner Straße 20",
+   "latitude": 48.193843,
+   "longitude": 16.358557,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257591,
+   "name": "Weißer Maulbeerbaum",
+   "species": "Morus alba",
+   "place": "3., Weißgerberlände 42",
+   "latitude": 48.208525,
+   "longitude": 16.395098,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257653,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "4., Plößlgasse 15",
+   "latitude": 48.193556,
+   "longitude": 16.374728,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247676,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "7., Schottenfeldgasse 75A",
+   "latitude": 48.204604,
+   "longitude": 16.342303,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247677,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "7., Schottenfeldgasse 75A",
+   "latitude": 48.204601,
+   "longitude": 16.342354,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247678,
+   "name": "Sommerlinde",
+   "species": "Tilia platyphyllos",
+   "place": "7., Schottenfeldgasse 75A",
+   "latitude": 48.204592,
+   "longitude": 16.342741,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247596,
+   "name": "Eibe",
+   "species": "Taxus baccata",
+   "place": "3., Rennweg 12",
+   "latitude": 48.193808,
+   "longitude": 16.382355,
+   "baumkataster": null,
+   "why_not_yet": "one of two yews at Rennweg 12, 200 m from the Mozart-Platane (vie_005), so it would thicken that stop. No Baumkataster record at all, which usually means institutional ground; Rennweg 12 adjoins the university's botanical institute. Check access and find an age before proposing it. UPDATE (verify pass, this session): moved to blocked, access confirmed restricted, see blocked list."
+  },
+  {
+   "register_id": 3247597,
+   "name": "Eibe",
+   "species": "Taxus baccata",
+   "place": "3., Rennweg 12",
+   "latitude": 48.193797,
+   "longitude": 16.382512,
+   "baumkataster": null,
+   "why_not_yet": "the second Rennweg 12 yew, same note as 3247596, and the pair would have to be folded into one entry or dropped. UPDATE (verify pass, this session): moved to blocked, access confirmed restricted, see blocked list."
+  },
+  {
+   "register_id": 3247598,
+   "name": "Weißer Maulbeerbaum",
+   "species": "Morus alba",
+   "place": "3., Landstraßer Hauptstraße 4A",
+   "latitude": 48.204339,
+   "longitude": 16.385603,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257899,
+   "name": "Judasbaum",
+   "species": "Cercis siliquastrum",
+   "place": "9., Alser Straße 4",
+   "latitude": 48.217105,
+   "longitude": 16.352582,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens UPDATE (verify pass, this session): verified and delivered to data/research/vienna-verified.json."
+  },
+  {
+   "register_id": 3257902,
+   "name": "Feldulme",
+   "species": "Ulmus minor",
+   "place": "4., Floragasse 5",
+   "latitude": 48.194476,
+   "longitude": 16.368988,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257913,
+   "name": "Ginkgo",
+   "species": "Ginkgo biloba",
+   "place": "8., Josefstädterstraße 17",
+   "latitude": 48.20891,
+   "longitude": 16.351792,
+   "baumkataster": null,
+   "why_not_yet": "Naturdenkmal 774, a ginkgo in a courtyard at Josefstaedter Strasse 17, protected 1999. No Baumkataster record. Worth a look because it is 400 m from the Schoenbornpark lime shipped this pass, but courtyard access has to be established first. UPDATE (verify pass, this session): Josefstaedter Strasse 17 is \"Zu den vier Schimmeln\", a historic residential/office building (birthplace of Karl von Frisch, once home to Gottfried Keller), with a garden containing a marble bust of Franz Exner. No source found confirms public access to that garden/courtyard; reads as a private building garden. Left unverified."
+  },
+  {
+   "register_id": 3257916,
+   "name": "Blutbuche",
+   "species": "Fagus sylvatica Atropurpurea",
+   "place": "9., Beethovengasse 6",
+   "latitude": 48.217981,
+   "longitude": 16.357028,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257917,
+   "name": "Morgenländische Platane",
+   "species": "Platanus orientalis",
+   "place": "9., Spitalgasse 23",
+   "latitude": 48.219263,
+   "longitude": 16.351243,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257923,
+   "name": "Edelkastanie",
+   "species": "Castanea sativa",
+   "place": "8., Bennogasse 10",
+   "latitude": 48.212696,
+   "longitude": 16.342901,
+   "baumkataster": null,
+   "why_not_yet": "Naturdenkmal 783, a sweet chestnut in a courtyard at Bennogasse 10, protected 2003. No Baumkataster record, access unknown. Re-checked 2026-08-27: Bennogasse 10 is a residential apartment building (OSM, confirmed 'apartments'); typical of Vienna's Gruenderzeit blocks, which often have a private Innenhof not open to the public. No source found stating the tree is visible or reachable from the street. Still not shippable."
+  },
+  {
+   "register_id": 3257802,
+   "name": "Winterlinde",
+   "species": "Tilia cordata",
+   "place": "5., Margaretenstraße 89",
+   "latitude": 48.190016,
+   "longitude": 16.357347,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257825,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "9., Porzellangasse 48",
+   "latitude": 48.223505,
+   "longitude": 16.362218,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257827,
+   "name": "Blauglockenbaum",
+   "species": "Paulownia tomentosa",
+   "place": "9., Währinger Straße 5-7",
+   "latitude": 48.216731,
+   "longitude": 16.359008,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens UPDATE (verify pass, this session): register text (Naturdenkmal Nr. 702, protected 21 July 1982) gives only the street address and size (2.80 m girth, ~15 m tall in 1982), no courtyard wording. Could not identify the current building/institution at Waehringer Strasse 5-7 or confirm public access. Left unverified."
+  },
+  {
+   "register_id": 3257859,
+   "name": "Rosskastanie",
+   "species": "Aesculus hippocastanum",
+   "place": "7., Halbgasse 8",
+   "latitude": 48.203432,
+   "longitude": 16.342233,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": null,
+   "name": "Kaukasische Fluegelnuss, second and third stems",
+   "species": "Pterocarya fraxinifolia",
+   "place": "1., Stadtpark",
+   "latitude": 48.20509918,
+   "longitude": 16.37945883,
+   "baumkataster": {
+    "baum_id": "194188 and 194190",
+    "planted": 1921,
+    "girth_cm": "253 and 324",
+    "offset_m": 2.0
+   },
+   "why_not_yet": "folded into vie_015. The monument register carries one entry for this point; the Baumkataster carries three stems of the same 1921 planting within five metres, which is what a Caucasian wingnut does to itself by suckering. Recorded here so a later pass does not re-propose them as separate trees."
+  },
+  {
+   "register_id": 3247636,
+   "name": "Morgenländische Platane",
+   "species": "Platanus orientalis",
+   "place": "13., Auhofstraße 11A",
+   "latitude": 48.187186,
+   "longitude": 16.295324,
+   "baumkataster": null,
+   "why_not_yet": "Species conflict found this pass (verify session, 2026-08-09): the Vienna Naturdenkmal register lists this as Platanus orientalis, but monumentaltrees.com has a dedicated page for a plane at the near-identical address 'Auhofstraße 11' (https://www.monumentaltrees.com/de/aut/wien/hietzing/15159_auhofstrae11/, browser session, verification use only) recording it as Platanus x hispanica (a different, hybrid species), girth ~4m, height ~27m, measured 26 Jan 2017. The 1949 Natur und Land survey (Naturdenkmal Nr. 178, https://www.zobodat.at/pdf/nat-land_1949_11_0199-0202.pdf p.201) just says 'Platane' with no species qualifier, so it does not resolve the conflict. Possibly two different trees at 11 vs 11A, possibly one tree misidentified by one source. No Baumkataster match found within 20m either (nearest match at 17.9m was a Rosskastanie, wrong species entirely, so likely a private courtyard tree the city inventory does not cover). Needs a pass with a mapped/photographed visit to resolve before shipping; do not silently pick a species."
+  },
+  {
+   "register_id": 3247640,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "13., Dommayergasse 7",
+   "latitude": 48.18783,
+   "longitude": 16.299149,
+   "baumkataster": null,
+   "why_not_yet": "Naturdenkmal Nr. 182 (1949 Natur und Land survey, no destruction note, so it survived WWII). No Baumkataster match (nearest live match at 31m was a 2020-planted Tilia, unrelated). Dommayergasse is a short street near the well-known Cafe Dommayer restaurant block in Hietzing; whether this specific tree stands on public street frontage or inside a restaurant/building courtyard was not established this pass. Leave for a pass that can check access before shipping. Re-checked 2026-08-27: no further evidence found on public/private access at Dommayergasse 7 specifically; the nearby Cafe Dommayer is a genuine public business but does not establish this address. Still not shippable."
+  },
+  {
+   "register_id": null,
+   "name": "Four Platanus entries, Meiereistraße 3",
+   "species": "Platanus (unspecified)",
+   "place": "2., Meiereistraße 3, near the Prater/Hauptallee",
+   "latitude": 48.2088,
+   "longitude": 16.4175,
+   "baumkataster": null,
+   "why_not_yet": "register_ids 3257979, 3257980, 3257981, 3257982, all within about 35m of each other and about 430-460m from the published vie_003 (Chestnut Avenue of the Hauptallee). Not individually checked for access this pass (ran out of window): Meiereistraße hosts a restaurant/dairy building (a 'Meierei') near the Prater, so this could be a public streetside row or a restaurant courtyard. A genuine four-tree micro-cluster worth a dedicated look, since it would sit close enough to extend a Prater-area walk alongside vie_003. RESOLVED (verify pass, 2026-08-22): de.wikipedia.org Liste der Naturdenkmaeler in Wien/Leopoldstadt gives Naturdenkmal Nr. 853 for these four planes, exact text 'Die Platanen konnten sich auf dem Gelaende der Bildhaueratelier gut entwickeln' (the planes developed well on the sculptor studios' grounds), i.e. private studio grounds, matching the Nominatim address-mismatch suspicion already recorded here. Moved to blocked."
+  },
+  {
+   "register_id": null,
+   "name": "Pötzleinsdorf-area single trees near vie_009 (Riesenmammutbaum, Schwarzkiefer x4, Feldahorn), within 900m",
+   "species": "various",
+   "place": "18./19. district, Khevenhüllerstraße, Franz-Barwig-Weg, Glanzinggasse, Wilbrandtgasse, Hackenbergweg",
+   "latitude": null,
+   "longitude": null,
+   "baumkataster": null,
+   "why_not_yet": "Checked this pass (verify session, 2026-08-09) as a possible third cluster around the published vie_009 (Giant Sequoias of Pötzleinsdorfer Schlosspark). All addresses found (Khevenhuellerstrasse, Franz-Barwig-Weg, Glanzinggasse, Wilbrandtgasse, Hackenbergweg) read as private villa streets in this part of Doebling/Waehring, typical of Vienna's 18th/19th-district garden-villa belt; none checked individually for public access, but the pattern strongly suggests private gardens rather than a walkable public cluster. Not pursued further given the time budget; a future pass could still check each address before writing this off completely."
+  },
+  {
+   "register_id": 3257478,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "13., Huegelgasse, vor Nr. 7",
+   "latitude": 48.190158,
+   "longitude": 16.285557,
+   "baumkataster": null,
+   "why_not_yet": "UPDATE (verify pass, 2026-08-19): verified and delivered to data/research/vienna-verified.json as vie_027. Kept here for completeness and traceability."
+  },
+  {
+   "register_id": 3257507,
+   "name": "Morgenlaendische Platane",
+   "species": "Platanus orientalis",
+   "place": "13., Wattmanngasse 8",
+   "latitude": 48.183983,
+   "longitude": 16.297178,
+   "baumkataster": null,
+   "why_not_yet": "Checked this pass (verify session, 2026-08-19): a strong specimen, girth 4.2m, height 24m, crown 17m, which de.wikipedia.org Liste der Naturdenkmaeler in Wien/Hietzing dates to the second half of the 18th century (a real source estimate, not derived by us). Only 280m from the published Schoenbrunn cluster (vie_004/020/021/022), so geographically ideal. Held back on access alone: the Wikipedia description gives no courtyard note (unlike several other entries in the same list, which explicitly say so when private), but it also gives no street-facing note either, unlike the Huegelgasse plane delivered this pass which is explicitly 'vor Nr. 7'. Overpass shows only an ordinary villa building at that address, no park or public-access tag. Genuinely the best undelivered lead in Vienna right now; a future pass should try a Vienna tree-walk blog or the Bezirksmuseum Hietzing before writing it off."
+  },
+  {
+   "register_id": 3257483,
+   "name": "Ginkgo",
+   "species": "Ginkgo biloba",
+   "place": "13., Neue-Welt-Gasse 14",
+   "latitude": 48.186606,
+   "longitude": 16.291642,
+   "baumkataster": null,
+   "why_not_yet": "Checked this pass (verify session, 2026-08-19): girth 3m, crown 16m, height about 16m, protected for its size, crown form and townscape-defining effect per de.wikipedia.org Liste der Naturdenkmaeler in Wien/Hietzing, which suggests street visibility but is not a positive access statement. Overpass shows only ordinary villa buildings nearby, the same Cottage/Hietzing garden-villa belt that blocked the Poetzleinsdorf-area candidates on 2026-08-09. Not delivered on that precedent. 550m from the delivered Huegelgasse plane (vie_027) and 130m from the Neue-Welt-Gasse 11 holly below; the three together could become a small satellite cluster if access on any of them is ever confirmed."
+  },
+  {
+   "register_id": 3247641,
+   "name": "Stechpalme",
+   "species": "Ilex aquifolium",
+   "place": "13., Neue-Welt-Gasse 11",
+   "latitude": 48.186376,
+   "longitude": 16.29086,
+   "baumkataster": null,
+   "why_not_yet": "Checked this pass (verify session, 2026-08-19): protected for beauty and rarity per de.wikipedia.org Liste der Naturdenkmaeler in Wien/Hietzing, no girth or age given, no access statement either way. Same villa-belt caution as the Neue-Welt-Gasse 14 ginkgo above. Not pursued further this pass."
+  },
+  {
+   "register_id": null,
+   "name": "2 Kugeltrompetenbaeume (Catalpa bignonioides Nana), Schrankgasse 7-9",
+   "species": "Catalpa bignonioides Nana",
+   "place": "7., Schrankgasse 7-9, Parkanlage",
+   "latitude": 48.203742,
+   "longitude": 16.354461,
+   "baumkataster": null,
+   "why_not_yet": "CORRECTION (verify pass, 2026-08-19): register_ids 3257961 and 3257962, previously left in this file as verifying fine but weaker or off the Ring walk. de.wikipedia.org Liste der Naturdenkmaeler in Wien/Neubau states they stand on either side of a footpath through a small public park, not a courtyard as their lack of a Baumkataster record would otherwise suggest. So the earlier access assumption was wrong; the real objection is remarkability, not access: the Baumkataster (checked 2026-08-05 per vienna-extra.md) dates the two trees to 1977 and 2016, too young to be genuinely old, and their interest is an ornamental globe-crown effect rather than age or spectacle. Left undelivered on that basis, not on access."
+  },
+  {
+   "register_id": null,
+   "name": "Four Platanus entries, Meiereistrasse 3 (Krieau/Prater)",
+   "species": "Platanus (unspecified)",
+   "place": "2., Meiereistrasse 3 (register_ids 3257979-3257982)",
+   "latitude": 48.2088,
+   "longitude": 16.4175,
+   "baumkataster": null,
+   "why_not_yet": "Checked this pass (verify session, 2026-08-19): Nominatim resolves the point to a sculptor's studio building at Meiereistrasse 245, an address-numbering mismatch against the register's Meiereistrasse 3 that was not resolved this pass. The area is the Krieau/WU-Campus part of the Prater, closer to sports and institutional grounds than to the Hauptallee's open public avenue. Access not established either way; not pursued further given the time budget. RESOLVED (verify pass, 2026-08-22): de.wikipedia.org Liste der Naturdenkmaeler in Wien/Leopoldstadt gives Naturdenkmal Nr. 853 for these four planes, exact text 'Die Platanen konnten sich auf dem Gelaende der Bildhaueratelier gut entwickeln' (the planes developed well on the sculptor studios' grounds), i.e. private studio grounds, matching the Nominatim address-mismatch suspicion already recorded here. Moved to blocked."
+  },
+  {
+   "register_id": 3257659,
+   "name": "Winterlinde, Klostergasse 37",
+   "species": "Tilia cordata",
+   "place": "18., Klostergasse 37, KG Weinhaus",
+   "latitude": 48.228034,
+   "longitude": 16.334585,
+   "baumkataster": null,
+   "why_not_yet": "Checked this pass (verify session, 2026-08-22): Naturdenkmal Nr. 581, protection date 28.03.1974, described as a healthy tree with a 70 cm stem diameter at breast height, three-stemmed above 3 m. Unlike the Ebner-Eschenbach-Park pine 130 m away (shipped this pass as vie_030), the location text is a plain street number with no park reference, and de.wikipedia.org's own entry gives no accessibility note either way. Left unverified: address alone does not establish this is inside the public park versus a private plot fronting Klostergasse."
+  },
+  {
+   "register_id": 3257958,
+   "name": "Ginkgo, Tuerkenschanzstrasse 46 (with 3257959, Riesenmammutbaum, same address)",
+   "species": "Ginkgo biloba / Sequoiadendron giganteum",
+   "place": "18., Tuerkenschanzstrasse 46",
+   "latitude": 48.23316,
+   "longitude": 16.33668,
+   "baumkataster": null,
+   "why_not_yet": "Naturdenkmal Nr. 817 (verify session, 2026-08-22): register and wien.gv.at both give only the street address, no park reference. Search found no positive evidence of public access (not a known institution or park frontage); the street sits near the Vienna Observatory (Sternwarte) and a seniors' residence but neither is confirmed as this specific number. Left unverified per hard rule 10."
+  },
+  {
+   "register_id": 3257378,
+   "name": "Schwarzkiefer, Ebner-Eschenbach-Park",
+   "species": "Pinus nigra",
+   "place": "18., Klostergasse, Ebner-Eschenbach-Park",
+   "latitude": 48.226892,
+   "longitude": 16.334663,
+   "baumkataster": null,
+   "why_not_yet": "RESOLVED (verify pass, 2026-08-22): verified and delivered to data/research/vienna-verified.json as vie_030. Kept here for traceability."
+  },
+  {
+   "register_id": 3257960,
+   "name": "Traubeneiche, Prater - Belvedereallee",
+   "species": "Quercus petraea",
+   "place": "2., Prater - Belvedereallee",
+   "latitude": 48.192401,
+   "longitude": 16.428753,
+   "baumkataster": null,
+   "why_not_yet": "RESOLVED (verify pass, 2026-08-22): verified and delivered to data/research/vienna-verified.json as vie_031. Kept here for traceability."
+  },
+  {
+   "register_id": null,
+   "name": "Sommerlinde, Döblinger Hauptstraße 92 (ND 336)",
+   "species": "Tilia platyphyllos",
+   "place": "19., Döblinger Hauptstraße 92",
+   "latitude": 48.242178,
+   "longitude": 16.356004,
+   "why_not_yet": "Baumkataster row 5 m away, 432 cm girth, but its cadastre address is 'Döblinger Hauptstraße 92, AMT' i.e. the grounds of a government office; access question not settled. Verify pass 2026-10-05."
+  },
+  {
+   "register_id": null,
+   "name": "Ginkgo, Kreindlgasse 24 (ND 574)",
+   "species": "Ginkgo biloba",
+   "place": "19., Kreindlgasse 24",
+   "latitude": 48.240209,
+   "longitude": 16.35252,
+   "why_not_yet": "Cadastre 397 cm, 21-25 m, a big ginkgo, but the cadastre address is 'Kreindlgasse 24, SCH' (school); see school rule. Needs evidence the grounds are open."
+  },
+  {
+   "register_id": null,
+   "name": "Esche, Döblinger Hauptstraße 60 (ND 505)",
+   "species": "Fraxinus excelsior",
+   "place": "19., Döblinger Hauptstraße 60",
+   "latitude": 48.238306,
+   "longitude": 16.355737,
+   "why_not_yet": "de.wikipedia: about 200 years, about 21 m high, has a photo on Commons, but no Baumkataster row within 40 m, so it is not on city-managed ground and access is unknown; no photo or exact pin in reach beyond the register point."
+  },
+  {
+   "register_id": null,
+   "name": "Serbische Fichte, Peter-Jordan-Straße 60 (ND 728)",
+   "species": "Picea omorika",
+   "place": "19., Peter-Jordan-Straße/Gregor-Mendel-Straße",
+   "latitude": 48.237194,
+   "longitude": 16.33761,
+   "why_not_yet": "Columnar spruce dominating a junction; no measurements anywhere, no cadastre row within 40 m; ordinary size, not worth the walk on current evidence."
+  },
+  {
+   "register_id": null,
+   "name": "Winterlinde, Grinzinger Straße 18 (ND 593)",
+   "species": "Tilia cordata",
+   "place": "19., Grinzinger Straße 18",
+   "latitude": 48.253395,
+   "longitude": 16.347358,
+   "why_not_yet": "de.wikipedia: girth 2.9 m, shapes the village streetscape; no cadastre row within 40 m so ground ownership and access unknown."
+  },
+  {
+   "register_id": 3257831,
+   "name": "Zerreiche, Steinhofgründe",
+   "species": "Quercus cerris",
+   "place": "14., Steinhofgründe",
+   "latitude": 48.213375,
+   "longitude": 16.274214,
+   "why_not_yet": "Public hillside park, but no girth, age or cadastre row found in this pass; register point only. Needs a measurement or photo before it is worth a page."
+  },
+  {
+   "register_id": 3247698,
+   "name": "Eibe, Streckerpark",
+   "species": "Taxus baccata",
+   "place": "13., Streckerpark",
+   "latitude": 48.190364,
+   "longitude": 16.271556,
+   "why_not_yet": "Public park (MA 42), cadastre yew 183 cm at 0 m, height class 11-15 m; modest, no age, no photo found. Could ship later if a photo or the Wikipedia note appears."
+  },
+  {
+   "register_id": 3257950,
+   "name": "Feldahorn, Josef-Kaderka-Park",
+   "species": "Acer campestre",
+   "place": "17., Josef-Kaderka-Park",
+   "latitude": 48.229417,
+   "longitude": 16.302248,
+   "why_not_yet": "Cadastre 171 cm, planted 1950; ordinary for the species, not worth the walk."
+  },
+  {
+   "register_id": 3247681,
+   "name": "Eibe and Esche, Altmannsdorfer Schloßpark",
+   "species": "Taxus baccata / Fraxinus excelsior",
+   "place": "12., Altmannsdorfer Schloßpark",
+   "latitude": 48.163848,
+   "longitude": 16.320029,
+   "why_not_yet": "Two register points about 50 m apart (3247681, 3247682); no cadastre rows and no Wikipedia measurements found, no photo; parked until a measurement exists."
+  },
+  {
+   "register_id": 3257506,
+   "name": "Graupappel, Auer-Welsbach-Park",
+   "species": "Populus x canescens",
+   "place": "15., Auer-Welsbach-Park",
+   "latitude": 48.186557,
+   "longitude": 16.319501,
+   "why_not_yet": "Register point is 11 m from the nearest cadastre rows and none is a poplar; the monument may be gone. Not delivered, alive not confirmed."
+  },
+  {
+   "register_id": 3257660,
+   "name": "Schwarzkiefer, Mayer-von-Rosenau-Park",
+   "species": "Pinus nigra",
+   "place": "23., Mayer-von-Rosenau-Park",
+   "latitude": 48.148224,
+   "longitude": 16.290053,
+   "why_not_yet": "No cadastre row of a black pine at the register point (only young trees within 11 m); alive not confirmed, no photo."
+  },
+  {
+   "register_id": null,
+   "name": "Hängeesche (ND 830) and Blaue Atlaszeder (ND 831), Matzleinsdorfer Friedhof",
+   "species": "Fraxinus excelsior 'Pendula' / Cedrus atlantica 'Glauca'",
+   "place": "10., Triester Straße 1, Friedhof Matzleinsdorf",
+   "latitude": 48.177509,
+   "longitude": 16.359855,
+   "why_not_yet": "Cemetery, public and alive (iNaturalist 2024-11-07), photos on Commons (HeinzLW, CC BY-SA 3.0 AT), but modest: weeping ash 150 cm and 7.5 m tall, blue Atlas cedar 210 cm and 9 m tall, both about 60 years old at designation. Not remarkable for size or age; a visitor-interest judgement, can ship if the page wants a cemetery stop."
+  },
+  {
+   "register_id": 3257746,
+   "name": "Trauerschnurbaum, Pius-Parsch-Platz",
+   "species": "Sophora japonica 'Pendula'",
+   "place": "21., Pius-Parsch-Platz 3",
+   "latitude": 48.25832,
+   "longitude": 16.399508,
+   "why_not_yet": "Cadastre 180 cm, planted 1958 on the church square; modest, no photo found."
+  },
+  {
+   "register_id": null,
+   "name": "Kataster plane 667 cm planted 1829, Parkanlage Emil-Reich-Hof",
+   "species": "Platanus x acerifolia",
+   "place": "19., Emil-Reich-Hof park beside Max-Patat-Weg",
+   "latitude": 48.243786,
+   "longitude": 16.354398,
+   "why_not_yet": "Found while verifying vie_041: the MA 42 Baumkataster lists a 667 cm plane planted 1829 about 29 m from the ND 457 register point (and a 428 cm one planted 1879 at 9 m). No source names either as a monument; possibly the true giant of the site. The coordinate given is the ND 457 register point, NOT the tree: read the cadastre row (BAUM_ID near this point, GATTUNG_ART Platanus x acerifolia, STAMMUMFANG 667) for its own pin before use."
+  }
+ ],
+ "blocked": [
+  {
+   "register_id": 3257963,
+   "name": "Gewöhnliche Platane",
+   "species": "Platanus x hispanica",
+   "place": "2., Schwarzingergasse 4(SCHULE)",
+   "latitude": 48.219316,
+   "longitude": 16.377723,
+   "baumkataster": {
+    "baum_id": 88843,
+    "planted": 0,
+    "girth_cm": 359,
+    "offset_m": 0.1
+   },
+   "reason": "school grounds, Schwarzingergasse 4 is a school and the tree stands inside its yard, not open to visitors"
+  },
+  {
+   "register_id": 3257870,
+   "name": "Schwarzer Maulbeerbaum",
+   "species": "Morus nigra",
+   "place": "6., Hirschengasse 18(SCHULE)",
+   "latitude": 48.194743,
+   "longitude": 16.347515,
+   "baumkataster": {
+    "baum_id": 76081,
+    "planted": 0,
+    "girth_cm": 252,
+    "offset_m": 1.8
+   },
+   "reason": "school grounds, Hirschengasse 18 is a school and the tree stands inside its yard, not open to visitors"
+  },
+  {
+   "register_id": 3257745,
+   "name": "Kirschlorbeer",
+   "species": "Prunus laurocerasus",
+   "place": "4., Rechte Wienzeile 25-27",
+   "latitude": 48.197411,
+   "longitude": 16.362565,
+   "baumkataster": null,
+   "reason": "a cherry laurel, a large shrub rather than a tree, in a private courtyard at Rechte Wienzeile 25-27"
+  },
+  {
+   "register_id": 3257748,
+   "name": "Götterbaum",
+   "species": "Ailanthus altissima",
+   "place": "7., Lindengasse 46",
+   "latitude": 48.199891,
+   "longitude": 16.347244,
+   "baumkataster": null,
+   "reason": "tree of heaven in a private courtyard at Lindengasse 46, and an invasive species the city elsewhere removes"
+  },
+  {
+   "register_id": 3257529,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "6., Windmühlgasse 28(KAMMER F.ARB.U.ANG.F.NOE.)",
+   "latitude": 48.198623,
+   "longitude": 16.355221,
+   "baumkataster": null,
+   "reason": "institutional courtyard of the Lower Austrian chamber of labour at Windmuehlgasse 28, not a public space"
+  },
+  {
+   "register_id": 3257530,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "6., Windmühlgasse 28(KAMMER F.ARB.U.ANG.F.NOE.)",
+   "latitude": 48.19856,
+   "longitude": 16.355108,
+   "baumkataster": null,
+   "reason": "institutional courtyard of the Lower Austrian chamber of labour at Windmuehlgasse 28, not a public space"
+  },
+  {
+   "register_id": null,
+   "name": "All 368 group designations in the Vienna register",
+   "species": null,
+   "place": "citywide",
+   "latitude": null,
+   "longitude": null,
+   "baumkataster": null,
+   "reason": "the register's ND_TYP field marks these as Wald, Baumgruppe (ab 4 Baeumen), Allee, Baumzeile, Wiese, Gewaesser or Geologischer Aufschluss. None is one identifiable tree with one obvious place to stand, so none is a collectible point. Already flagged 'group': true in data/registers/wien-naturdenkmale.json; do not mine them for entries."
+  },
+  {
+   "register_id": null,
+   "name": "Register entries whose place is a private Garten or Hof",
+   "species": null,
+   "place": "citywide",
+   "latitude": null,
+   "longitude": null,
+   "baumkataster": null,
+   "reason": "hard rule 10. The Vienna register protects trees wherever they stand, including inside private gardens and closed courtyards, and a protection order is not an invitation. Any candidate whose address is a residential Garten, a Hof with no public passage, a school yard or an institutional courtyard stays blocked until public access is positively established, not merely unrefuted."
+  },
+  {
+   "register_id": 3247596,
+   "name": "Eibe (Tausendjaehrige Eibe / thousand-year yew, plus two more yews)",
+   "species": "Taxus baccata",
+   "place": "3., Rennweg 12",
+   "latitude": 48.193808,
+   "longitude": 16.382355,
+   "baumkataster": null,
+   "reason": "Verified this pass (verify session, 2026-08-08): the yews at Rennweg 12 stand on the grounds of the European Patent Office, not the adjacent Botanical Garden. Vienna's oldest natural monument, called the thousand-year yew, 3.20 m girth, last remnant of a Roman-era yew grove per local sources. But access is confirmed restricted, not merely unestablished: a documented visitor (walterschattauer.eu) was turned away twice at the gate and could only view the tree from about 20 m away. Fails hard rule 10 (\"genuinely open to visitors\"). The same source notes the adjacent Botanischer Garten der Universitaet Wien (Rennweg 14, free entry, publicly open) has its own old yews as an alternative, worth scouting separately in a future pass."
+  },
+  {
+   "register_id": 3247597,
+   "name": "Eibe, second Rennweg 12 yew",
+   "species": "Taxus baccata",
+   "place": "3., Rennweg 12",
+   "latitude": 48.193797,
+   "longitude": 16.382512,
+   "baumkataster": null,
+   "reason": "Same site as register_id 3247596 (European Patent Office grounds, Rennweg 12), same access finding: confirmed restricted, not open to the public. See that entry."
+  },
+  {
+   "register_id": 3247637,
+   "name": "Japanischer Schnurbaum",
+   "species": "Styphnolobium japonicum (Sophora japonica)",
+   "place": "13., Schönbrunn, Botanischer Garten",
+   "latitude": 48.184434,
+   "longitude": 16.301375,
+   "baumkataster": null,
+   "reason": "BLOCKED, verify pass 2026-08-09 (depth pass, Schönbrunn cluster): Naturdenkmal Nr. 179. Anonym, 'Verzeichnis der Wiener Naturdenkmale (Fortsetzung)', Natur und Land 1949, Vol. 11, p.201 (https://www.zobodat.at/pdf/nat-land_1949_11_0199-0202.pdf) states explicitly: 'durch Kriegsereignisse vernichtet' (destroyed by war events). The LIVE city Naturdenkmal WFS layer (data.wien.gv.at, ogdwien:NATDENKMALPKTOGD) still carries this register_id as an active designation at this coordinate in 2026, which means the city's own current 'official' register contains at least one stale entry for a tree confirmed destroyed 80+ years ago, unless it was replanted and nobody has updated the record either way. No modern source (searched this pass) confirms a living tree at this spot today. Never ship without a dated modern confirmation (photo, observation, Bundesgärten record) that a Sophora japonica genuinely stands here now. Worth flagging generally: a Naturdenkmal register_id existing in the live layer is not by itself proof of life, contrary to how it reads at a glance. Its two neighbours 12-30m away (Stieleiche ND180, Eibe ND181) carry no such destruction note in the same 1949 document and were verified and delivered this pass as vie_021 and vie_022."
+  },
+  {
+   "register_id": null,
+   "name": "Four Platanus entries, Meiereistrasse 3 (Prater/Krieau)",
+   "species": "Platanus (unspecified)",
+   "place": "2., Meiereistrasse 3",
+   "reason": "Naturdenkmal Nr. 853 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Leopoldstadt, verify pass 2026-08-22): register text states explicitly the four planes 'konnten sich auf dem Gelaende der Bildhaueratelier gut entwickeln' (developed well on the sculptor studios' grounds), i.e. private institutional/studio land, not public Prater parkland despite the Meiereistrasse/Prater address. Never ship; do not re-research."
+  },
+  {
+   "register_id": null,
+   "name": "Winterlinde, Paulinengasse 9",
+   "species": "Tilia cordata",
+   "place": "18., Paulinengasse 9",
+   "reason": "Naturdenkmal Nr. 100 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Waehring, verify pass 2026-08-22): location given as 'Innenhof des Lindenhofes', an internal courtyard, private. Never ship; do not re-research."
+  },
+  {
+   "register_id": 3257608,
+   "name": "Baumhasel, Koehlergasse 20",
+   "species": "Corylus colurna",
+   "place": "18., Koehlergasse 20",
+   "reason": "Naturdenkmal Nr. 622 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Waehring, verify pass 2026-08-22): location given as 'im Garten hinter dem Gebaeude' (in the garden behind the building), private. Never ship; do not re-research."
+  }
+ ]
 }

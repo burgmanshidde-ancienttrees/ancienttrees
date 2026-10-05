@@ -153,5 +153,135 @@
     "story": "At 6.5 metres around, this is a serious lime, and it stands in a small park in Heiligenstadt that most visitors to the city never reach. The city's tree cadastre lists it as a small-leaved lime with a recorded planting year of 1725 and a girth of 654 centimetres, and puts its height in the 21 to 25 metre class. If the year is close, the tree is roughly three hundred years old, which would make it older than the park around it by a wide margin.\n\nTreat that date with care. A cadastre entry for a tree this age is an estimate recorded by the city's gardeners, not a planting document, and we found no second source for it, so the page carries the figure as a broad range rather than a fact. What does stand up is the trunk. A girth of 654 centimetres in a small-leaved lime is a serious tree, and the register protects it as a Natural Monument.\n\nThe park lies in Heiligenstadt, which is now part of Döbling. Two horse chestnuts stand within a few metres, planted in 1896 and 1961 according to the cadastre, so the lime is easy to tell from its neighbours by size alone. If you measure it, tell us what you get.",
     "how_to_recognise": "A small-leaved lime with a trunk about 6.5 metres round, standing beside two much younger horse chestnuts.",
     "verify_notes": "FLAGGED: register-only plus the city's own cadastre (both Vienna, not independent for age). Register_id 3257456 in wien-naturdenkmale.json; no de.wikipedia list entry found for this tree in the Doebling list (searched 'Heiligenstaedter Park' - none), so ND number and protection wording not confirmed. Baumkataster BAUM_ID 265109: Tilia cordata, PFLANZJAHR 1725, STAMMUMFANG 654, height class 21-25 m, offset 0.0 m. A 1725 planting year on a cadastre is almost certainly an estimate; age band 250-320 broad. Neighbours in cadastre: Aesculus hippocastanum planted 1896 (296 cm) at 7.8 m, and 1961 (180 cm) at 9.3 m. No photograph candidate found (Commons geosearch within 100 m only shows park and Beethoven Museum views). Pin confirmed by register + cadastre. lifecheck RECENT (iNaturalist 2025-2026 near coords). Park public per Wikimedia 'Heiligenstaedter Park' photos; not independently checked for opening hours."
+  },
+  {
+    "id": "vie_040",
+    "name": "The Wertheimsteinpark Copper Beech",
+    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+    "age_estimate": "roughly 100 years",
+    "age_min": 100,
+    "age_max": 125,
+    "girth_cm": 340,
+    "location": {
+      "address": "Wertheimsteinpark, Döbling",
+      "latitude": 48.242933,
+      "longitude": 16.357827,
+      "neighbourhood": "Döbling (19th district)"
+    },
+    "verified_sources": [
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (register id 3257969, Naturdenkmal Wien)",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/D%C3%B6bling (ND 826)",
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42)"
+    ],
+    "access": "Free. Public city park (Parkanlage managed by MA 42).",
+    "transport": "Heiligenstadt (U4, S-Bahn), about 12 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Natural Monument 826, the fourth of four trees protected together in this park on 2012-02-08 (siblings already live: vie_035 hazel 827, vie_036 service tree 829, lime 828). City text (de.wikipedia list, quoting the designation): girth 3.40 m at 1 m height, crown about 16 m, age 'about 100 years' estimated at designation in 2012; praised for its splendid free-standing crown and vitality. Baumkataster (MA 42) has a Fagus sylvatica 'Atropurpurea' 3 m from the register point at 360 cm girth, height class 21-25 m, PFLANZJAHR 0 (undefined); girth_cm kept at the designation figure 340, cadastre says 360. Age is the city's own 2012 estimate, so add the years since. Pin: register tree-level point and de.wikipedia coordinate (48.243024,16.357927) agree within 10 m, cadastre within 3 m. Alive: lifecheck RECENT, iNaturalist observation 2026-09-08. Photo exists, not hunted here: Commons category 'Wiener Naturdenkmal 826 (Wien-Döbling)' has 10 files by Michael Kranewitter, CC BY-SA 3.0 AT, 2014-03-22. Completes the park's four monuments, so the writer can walk the reader past all four.",
+    "story": "This copper beech was the last of four. On 8 February 2012 Vienna protected four trees in the Wertheimsteinpark on a single day, a lime, a Turkish hazel, a service tree and this one, Natural Monument 826, and together they make the park one of the few places in the city where you can collect a whole set in one short walk, all four within about two hundred metres.\n\nThe designation praised it for a splendid free-standing crown and for its vitality, which is the right emphasis. Nothing crowds it. The crown spreads about 16 metres, and the city's tree cadastre puts the height in the 21 to 25 metre class, so this is a tree built to be walked around rather than past.\n\nThe trunk measured 3.40 metres round at a metre above the ground when it was protected. The cadastre's own, later figure is 3.60 metres, so it has kept growing. The city estimated its age at about a hundred years in 2012, which puts it somewhere past a century and a decade now: an estimate, not a planting record, since the cadastre leaves the planting year blank.\n\nCopper beeches open their leaves purple in spring and darken through summer. Come in October and the whole crown goes copper before it falls.",
+    "how_to_recognise": "You can recognise it by its dark purple leaves on a free-standing crown about 16 metres wide, the only copper beech among the park's four monuments. It stands roughly 125 metres from the service tree."
+  },
+  {
+    "id": "vie_041",
+    "name": "The Max-Patat-Weg Plane",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "age_estimate": "not documented",
+    "girth_cm": 510,
+    "location": {
+      "address": "Max-Patat-Weg, off Döblinger Hauptstraße 87-93, Döbling",
+      "latitude": 48.243786,
+      "longitude": 16.354398,
+      "neighbourhood": "Döbling (19th district)"
+    },
+    "verified_sources": [
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien, Platanus orientalis, Doeblinger Hauptstrasse 87-93)",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/D%C3%B6bling (ND 457 and ND 620)",
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, 'Parkanlage Emil-Reich-Hof, MA42')"
+    ],
+    "access": "Free. Stands in the city's Parkanlage Emil-Reich-Hof beside the public Max-Patat-Weg lane; no opening hours found.",
+    "transport": "Döblinger Hauptstraße, Döbling; a short walk from the Wertheimsteinpark (about 300 m); nearest stop not verified.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Natural Monument 457. de.wikipedia list text: 'one of the mightiest planes in Vienna', girth 5.1 m, height about 26 m, crown a good 25 m. Photo exists, not hunted here: Commons categories 'Wiener Naturdenkmal 457 (Wien-Doebling)' (Kranewitter, CC BY-SA 3.0 AT, 2014; GuentherZ, CC BY 3.0, 2011, filenames say 'Max-Patat-Weg') and a joint photo of ND 457 and ND 620 (two planes and a lime). IDENTITY CAVEAT, why flagged and the pin approximate: the Baumkataster (MA 42, current) lists three big trees within 30 m of the register point: a Platanus x acerifolia 428 cm planted 1879 at 9 m, a Platanus x acerifolia 667 cm planted 1829 at 29 m, and a Tilia cordata 340 cm planted 1909 at 17 m. Register and Wikipedia coordinates are the same source, so which of the planes is ND 457 (5.1 m in the designation text) is not settled by us; the 667 cm 1829 plane may be the real giant of the site and is NOT named by any source as a monument. Sister monument ND 620 (Bergahorn, Sommerlinde, Platane, Doeblinger Hauptstr. 87-93, 48.243583,16.354661) stands about 25 m away and is folded here. Writer: describe the group of old planes at the lane, do not claim an age for the register tree (the 1829 and 1879 planting years belong to cadastre rows we cannot tie to ND 457). Alive: lifecheck NONE for iNaturalist/Commons, but the cadastre rows for this park are current city data, so the site is alive and managed. girth_cm 510 is the designation figure, undated.",
+    "story": "The city's own description calls this one of the mightiest planes in Vienna, and the numbers back it: 5.1 metres round the trunk, about 26 metres tall, a crown a good 25 metres across. It is Natural Monument 457, an oriental plane on the Max-Patat-Weg, the lane running off Döblinger Hauptstraße beside the Emil-Reich-Hof.\n\nThe complication is that it does not stand alone. The city's tree cadastre records three big old trees within thirty metres of the register's point: two planes, one 4.28 metres round and one 6.67 metres round, and a small-leaved lime. A second protected group, Natural Monument 620, a sycamore maple, a lime and another plane, stands about 25 metres away. So this corner of Döbling holds a small stand of veteran planes, and the register's coordinates do not settle which trunk carries number 457. The thickest of them, at 6.67 metres, is named as a monument by no source we have found.\n\nNobody has published an age for the protected tree, so we give none. What you can do is stand in the lane and look up at all of them. If you know which plane is number 457, or have a tape measure, tell us. The Wertheimsteinpark and its four monuments are about 300 metres away.",
+    "how_to_recognise": "You can recognise the spot by a group of very large old planes at the Max-Patat-Weg off Döblinger Hauptstraße 87 to 93; which trunk is No. 457 is not settled; the register gives it as 5.1 metres round."
+  },
+  {
+    "id": "vie_042",
+    "name": "The Währinger Park Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "girth_cm": 290,
+    "location": {
+      "address": "Währinger Park, at Peezgasse, Währing/Döbling",
+      "latitude": 48.233122,
+      "longitude": 16.35075,
+      "neighbourhood": "Währing / Döbling border (18th and 19th district)"
+    },
+    "verified_sources": [
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (register id 3257519, Naturdenkmal Wien)",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/D%C3%B6bling (ND 458, designated 1956-07-09)",
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42, Währinger Park)"
+    ],
+    "access": "Free. Public city park (Währinger Park, MA 42).",
+    "transport": "Währinger Park, Peezgasse side; nearest stop not verified.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Natural Monument 458, protected 1956-07-09 (older than most Vienna monuments). de.wikipedia list: girth 2.9 m, height 16 m, crown 12 m. CONFLICT between sources, hence flagged: the Baumkataster (MA 42) holds a tree 2 m from the register point listed as Quercus robur 'Fastigiata' (Säuleneiche, columnar oak), 412 cm girth, height class 16-20 m, planted 1887; the register and de.wikipedia call it plain Stieleiche at 290 cm. Same tree measured at different times/ways or the cadastre's cultivar label differs; do not pick a winner in prose: say the city lists it at 2.9 m at designation and the cadastre records 4.1 m. A 1887 planting year is the cadastre's own for that row, not tied by any source to ND 458 beyond the 2 m match, so no age asserted. Do NOT confuse with ND 801 (Stieleiche planted 1923 at the park's opening, 48.232519,16.349594, about 110 m away, in the Währing list). Pin: register tree-level point and de.wikipedia (48.233122,16.35075) identical, cadastre within 2 m. Alive: lifecheck RECENT, iNaturalist observation 2026-08-26. Photo exists, not hunted here: Commons category 'Wiener Naturdenkmal 458 (Wien-Doebling)' includes a photo of the monument plaque (GuentherZ, CC BY 3.0, 2012-07-18) and six by Kranewitter (CC BY-SA 3.0 AT, 2014).",
+    "story": "Vienna protected this oak in July 1956, which makes it one of the older entries on a register that most of the city's trees joined decades later. It is Natural Monument 458, standing at the Peezgasse side of the Währinger Park, right on the line where the 18th district meets the 19th.\n\nThe two official descriptions of it do not quite agree, and that is worth knowing before you go. The monument list calls it a plain pedunculate oak, 2.9 metres round, 16 metres tall, with a crown 12 metres across. The city's tree cadastre, which records a tree two metres from the same point, calls it a columnar oak, the upright cultivar of the same species, and measures the trunk at 4.1 metres. It may be one tree measured at different times or in different ways, or two labels for the same trunk. We have not settled it. Standing in front of it, you may be able to: a columnar oak grows narrow and upright, a plain one spreads.\n\nThere is a second protected oak in this park, about 110 metres away, planted in 1923 when the park opened. This is not that one. Nobody has published a reliable age for number 458, so we give none. If you know it, or can tell us which shape the crown has, tell us.",
+    "how_to_recognise": "You can recognise it as the oak on the Peezgasse side of the park, near the Döbling edge. The park's other protected oak, planted in 1923, stands about 110 metres away and is a different tree."
+  },
+  {
+    "id": "vie_043",
+    "name": "The Lombardy Poplar of Franz-Josefs-Bahnhof",
+    "species": "Lombardy Poplar (Populus nigra 'Italica')",
+    "age_estimate": "about 130 years",
+    "age_min": 120,
+    "age_max": 135,
+    "girth_cm": 308,
+    "location": {
+      "address": "Julius-Tandler-Platz, in front of Franz-Josefs-Bahnhof, Alsergrund",
+      "latitude": 48.226041,
+      "longitude": 16.361661,
+      "neighbourhood": "Alsergrund (9th district)"
+    },
+    "verified_sources": [
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (register id 3257636, Naturdenkmal Wien)",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Alsergrund (ND 644)",
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, Julius-Tandler-Platz, 0 m from the register point)"
+    ],
+    "access": "Free. On the public square in front of the station.",
+    "transport": "Right beside Franz-Josefs-Bahnhof (trains); Julius-Tandler-Platz tram stop, under 2 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Natural Monument 644. de.wikipedia: protected for its status in a vegetation-free surroundings and its role for the townscape; the monument 'consisted of three, lastly two' Lombardy poplars, past tense, so only one registered point survives in the register today (3257636). Baumkataster (current city data) holds exactly one Populus nigra 'Italica' at the register point (0 m): planted 1892 per the cadastre's PFLANZJAHR for this tree, girth 308 cm, height class 16-20 m. The 1892 date is the city's own record for the individual tree (not a park-wide bridge); age_min/max derived as 1892 to now, about 130 years, which is very old for a Lombardy poplar (a short-lived species). Alive: lifecheck RECENT, iNaturalist observation 2026-09-17 at the spot. Photo exists, not hunted here: Commons category 'Wiener Naturdenkmal 644 (Wien-Alsergrund)' has three photos by Maclemo (CC BY-SA 3.0 AT, 2014) and one of the plaque (GuentherZ, CC BY 3.0, 2010). The two older neighbours of the original group are gone; writer can say so only as 'the group was three, then two' per Wikipedia.",
+    "story": "Lombardy poplars are not supposed to get old. They grow fast, stand tall and narrow, and are known as a short-lived tree. The one in front of Franz-Josefs-Bahnhof was planted in 1892, according to the city's tree cadastre, which makes it roughly 130 years old and a genuine veteran of its kind.\n\nIt was not always alone. Vienna protected the poplars here as Natural Monument 644, and the monument list describes the group in the past tense: it consisted of three trees, and lastly of two. Today the register keeps a single point, and the cadastre a single Lombardy poplar standing exactly on it, 3.08 metres round and in the 16 to 20 metre height class.\n\nThe reason given for protecting them is unusual, and it explains why this tree matters more than its size suggests. The list cites the poplars' place in surroundings with almost no vegetation and their part in the look of the townscape. That is a legal order written not for a giant but for a landmark: a column of green on a paved square, in front of a railway station, where very little else grows.\n\nSo this is a tree to collect on the way somewhere. Trams stop on Julius-Tandler-Platz, two minutes away, and the station is right behind it. Look up before you go in.",
+    "how_to_recognise": "You can recognise it as the tall, narrow poplar on Julius-Tandler-Platz, directly in front of Franz-Josefs-Bahnhof: a single column of a tree, 3.08 metres round, on a paved square."
+  },
+  {
+    "id": "vie_044",
+    "name": "The Silver Poplars of Freiligrathpark",
+    "species": "White Poplar (Populus alba)",
+    "age_estimate": "about 125 years",
+    "age_min": 120,
+    "age_max": 130,
+    "girth_cm": 443,
+    "location": {
+      "address": "Freiligrathpark (Freiligrathplatz), Floridsdorf",
+      "latitude": 48.251365,
+      "longitude": 16.411967,
+      "neighbourhood": "Floridsdorf (21st district)"
+    },
+    "verified_sources": [
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (register ids 3257921 and 3257922, Naturdenkmal Wien)",
+      "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, '21., Freiligrathpark, MA42')"
+    ],
+    "access": "Free. Public city park (Freiligrathpark, MA 42).",
+    "transport": "Freiligrathpark, Floridsdorf; nearest stop not verified.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "REGISTER ONLY, flagged. Two register Einzelbaum rows folded into one entry: 3257921 at 48.251365,16.411967 and 3257922 at 48.251709,16.411422, about 55 m apart in the same small park, both White Poplar (Populus alba). Baumkataster (MA 42, current) matches each within 2-3 m: the first planted 1899, 443 cm girth, height class 16-20 m; the second planted 1900, 415 cm girth, height class 16-20 m. The planting years are the city's own for these individual trees, so age is derived from them (about 125 years) and counts as source-based; girth 443 and 415 are very heavy for a white poplar. No Wikipedia ND text found for these (not in the Wien Naturdenkmal Wikipedia list with a matching address). Alive: lifecheck OLD only (Commons photo 2016-06-07 'Wien 21 Freiligrathpark e.jpg'), cadastre rows are current so it stands. Photo not confirmed for these specific trees; the pin is tree-level (register + cadastre agree), which satisfies pin-or-photo. Stand-alone stop in the north-east, not part of a walkable cluster with the Döbling or Alsergrund entries.",
+    "story": "Two white poplars in a small Floridsdorf park were planted a year apart, in 1899 and 1900, and both are now well over four metres round. The city's tree cadastre records the first at 4.43 metres and the second at 4.15, and either figure is a very heavy trunk for a white poplar.\n\nVienna lists both in its natural monument register, as two separate entries about 55 metres apart in the Freiligrathpark. We have folded them into one stop, because you will want to see them together and the walk between them takes under a minute. Both fall in the cadastre's 16 to 20 metre height class. The planting years are the cadastre's own records for these two individual trees, which puts them at about 125 years old.\n\nThat is about all the paperwork says. Neither tree appears in the German Wikipedia list of Vienna's monuments with a matching address, and there is no published description of why they were protected. The most recent photograph we have found dates from 2016, though the cadastre that carries them is the city's current data.\n\nThe park is out in the north-east, across the Danube from the old town and on no walk with the other trees on this page. If you go, look for the silvery undersides of the leaves, which is how the species got its name, and tell us how they are doing.",
+    "how_to_recognise": "You can recognise them by the leaves, white and felted underneath, on two big poplars about 55 metres apart in the Freiligrathpark. The thicker one, 4.43 metres round, is where the pin sits."
   }
 ]
