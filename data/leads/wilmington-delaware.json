@@ -1,0 +1,38 @@
+{
+ "city": "Wilmington, Delaware",
+ "country": "United States",
+ "note": "Delaware Forest Service champions around Wilmington (2026-10-06). The verified set is in data/research/wilmington-delaware-verified.json.",
+ "leads": [
+  {
+   "name": "white ash",
+   "species": "white ash (Fraxinus americana)",
+   "lat": 39.757069,
+   "lng": -75.548453,
+   "register_location": "Brandywine Creek Park",
+   "girth_cm": 419,
+   "height_m": 31.4,
+   "register_status": null,
+   "sources": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+   ],
+   "source": "Delaware Forest Service big tree champions on FirstMap (state government). Northern Delaware (Wilmington) is a Philadelphia day trip by train: real place name and true travel time. Facts only.",
+   "status": "held: no recent sighting, emerald ash borer; confirm alive before writing"
+  },
+  {
+   "name": "white ash",
+   "species": "white ash (Fraxinus americana)",
+   "lat": 39.756822,
+   "lng": -75.5485,
+   "register_location": "Brandywine Creek Park",
+   "girth_cm": 533,
+   "height_m": 36.6,
+   "register_status": null,
+   "sources": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+   ],
+   "source": "Delaware Forest Service big tree champions on FirstMap (state government). Northern Delaware (Wilmington) is a Philadelphia day trip by train: real place name and true travel time. Facts only.",
+   "status": "held: no recent sighting, emerald ash borer; confirm alive before writing"
+  }
+ ],
+ "blocked": []
+}
