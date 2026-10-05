@@ -13,6 +13,16 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-05
+
+Web half: read leipzig (19), dresden (18), munich (61), nuremberg (17) and san-francisco (7); title, meta and body counts agree with the city files, and the pages hold no em dashes or banned words. Nothing found on the web half.
+
+Monday copy reading (English strings added in the last seven days: ambassador dialog, season chips, collect and tree-page lines): reads well. The one line that strains is "We have no photograph or description of this one and only a rough pin, so we cannot help you be sure." (Screens), which would read better as "We have no photograph or description of this tree and only a rough pin, so we can't help you check it's the right one." Not a defect.
+
+App half (collect-away, collect-compare, collect-describe, collect-identify, collect-intro, collect-place):
+
+- WARN APP: all six screenshots are the same "Add a tree" sheet (Take a photo / Choose from your photos) over a tree photograph, and none shows the screen its name promises (away, compare, describe, identify, intro, place). The sweep's launch arguments for the collect flow no longer reach their steps, so six screens ship unlooked-at (CLAUDE.md 3c: a screen no argument can open ships unseen). Same shape as the 2026-10-04 city-map finding; for a session.
+
 ## 2026-10-04
 
 Web half: read los-angeles.html (11 in title and body, intro agrees), the El Pino tree page, and the title and meta of london (27), munich (52), portland (32), nuremberg (14), washington-dc (16) and reykjavik (4); counts match their data files. No em dashes or banned words in the changed city files, and the reader-photograph licence string does not render on the Reykjavik page.
