@@ -114,7 +114,7 @@ const speciesOgImage = speciesFaceUrl
     <h1>{common}</h1>
     <p class="sci-name"><i lang="la">{scientific}</i></p>
     <p class="answer-first">
-      {firstSentence} This page maps every {common.toLowerCase()} (<i lang="la">{scientific}</i>) on the site, {n} so far across {byCity.size} cit{byCity.size === 1 ? "y" : "ies"}.
+      {firstSentence} We map {n} of them, in {byCity.size} cit{byCity.size === 1 ? "y" : "ies"}.
     </p>
     {introRest && <div class="prose-block"><p>{introRest}</p></div>}
     {sections.map(({ city, cslug, rows }) => (

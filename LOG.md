@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 session with Hidde: the city list calmed down, live
+
+- **City sheet header is one header at every drag height.** "Ancient Trees in Reykjavik" keeps its size, and the country eyebrow and the "4 trees on the map" line are gone, because the numbered list already says how many (web, all eight languages; the app never had the line).
+- **Tree list on a phone:** no hover fill or underline left behind by iOS on the last card touched, meta and story line up under the title instead of under the number, and the photo credit closes the card instead of splitting the photo from its name (CONVENTIONS.md "A list card on a phone").
+- **Template sentences:** species pages said "This page maps every cork oak on the site"; now "We map 12 of them, in 5 cities." Sorrento's oak no longer prints our own data/registers path as a source link; it cites MASAF like the other 91 Italian trees.
+- **Also in this merge, from 10-04:** the remaining template sentences on the web, the app copy pass ("Seen", "We read every tip."), and its UI test.
+
 ## 2026-10-04 session with Hidde: lists, cards, labels and maps made consistent, live
 
 What changed for a visitor, all of it benchmarked first (CONVENTIONS.md 2026-10-04) and approved by Hidde screen by screen:
