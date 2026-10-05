@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 (night run) - Wilmington, Delaware merged; Fort Worth and Chicago wait on the pace cap
+
+7-day visits: 1,560 visits, 1,753 page views. Rung 4: merged the parked Wilmington, Delaware draft (8 champion trees, new place, `wilmington-delaware` added to us-states.json and city-aliases), preflight 0 problems, committed. Fort Worth's 13-tree merge was tried first and preflight's accident guard refused it (64 new trees in 24 h against the cap of 60), so I reverted it; Chicago (11) is blocked by the same cap. Both stay ready in data/research/ for the first run after the 24-hour window clears. superlatives.py shows one old collision (chr_001 vs dnk_001, "first entry in the European Tree"), not from this merge. Nothing was refused by the tool list.
+
 ## 2026-10-06 (session) - US trees from government registers: Fort Worth +13, Chicago 11 ready to merge, ~1,250 US leads with coordinates
 
 **The new route, and it halves the cost per tree.** Government tree registers on ArcGIS (24 of them, `data/register-sources-us.json`, read by `scripts/register_import.py`) now hold ~1,250 US leads with coordinates: Seattle 268, Norfolk 256, Miami 64, Chicago 77, Philadelphia 75, Washington DC 70, New York 78, Portland 76, Salt Lake City 70, Fort Worth 58 and more. Under the one-official-register rule, verification is a SCRIPT: register as the source, its tree-level point as a confirmed pin, `scripts/lifecheck.py` for life. Only the write pass costs tokens, ~16 to 17k per tree including city copy, against 37 to 41k for the web-research passes of 10-03.
