@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 afternoon window: Vienna +5, Boston +1
+
+Visits last 7 days: 1,540 (1,730 pageviews). Munich was full, so Vienna (379 register rows) took the verify pass: 5 Naturdenkmal trees (vie_040 to 044; the Max-Patat plane has an approximate pin, the Wahring oak and Freiligrath poplars are flagged). Merged with German overlay, Vienna 43, Austria 84. Also merged Boston's Endicott Pear (Danvers, about 25 km out, labelled as such). Held: lpz_019 and nbg_018 (access unconfirmed). fdl_001 duplicates spa_001; the two pins are 3 km apart, so spa_001 needs a pin check. Preflight 0 problems.
+
 ## 2026-10-05 later window: Graz +2 (sweet chestnut, cornelian cherry)
 
 Verify on Graz found its register almost all private parcels, schools and housing courtyards: 2 public trees with confirmed pins (Lustbuehel chestnut with a photo, Johannhoehe cornelian cherry), both flagged for alive-evidence from old photos. Written, merged with German overlay, Graz 13 to 15, Austria intro count fixed to 79. Other pending research files are held trees (access or pin) or stale. Claim released.
