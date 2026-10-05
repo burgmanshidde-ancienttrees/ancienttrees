@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 write pass: Potsdam +5, Bamberg +1
+
+Potsdam finally has trees in Potsdam: the thousand-year oak at Sacrow (685 cm, the age is a name, not a measurement), the columnar oaks of Bassinplatz, the Weberplatz lime, the Schiffbauergasse oak and the Jungfernsee trio (approximate pin). All register-only and flagged; the Weberplatz lime and Schiffbauergasse oak ask readers to confirm they still stand. Intro, meta, question page and FAQ rewritten for 9 trees, German overlay extended. Bamberg gains the Kilianseiche in Schesslitz, 15 km out but about 26 minutes on the regional bus (VGN line 969 timetable), so inside the day-trip boundary; species and survival are asked of readers. Germany intro count to 66 cities, 303 trees. Preflight 0 problems. None of the six has a photograph yet, so under today's index rule their pages stay out of Google until one is added; the verify notes name Commons files for Sacrow, Bassinplatz, the Schiffbauergasse oak, the Jungfernsee trio and the Kilianseiche, which makes them cheap photo work.
+
 ## 2026-10-06 session: only tree pages with a photograph stay in Google
 
 - **Why:** search has sat at ~50 to 70 impressions a day since 09-28 (2 percent of before). The rising average position is an artefact of that tiny tail, not a further fall. Meanwhile ~1,850 indexed tree pages had an AI-drafted story and no photograph, the scaled-content shape the spam update targets.
