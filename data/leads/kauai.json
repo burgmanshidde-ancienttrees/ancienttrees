@@ -80,6 +80,38 @@
    "girth_cm": 457.2,
    "vitality": "Fair",
    "reason": "Same TMK and same mission/preschool boundary ambiguity as register_id 1151, and likely a near-twin of it (same locality text, girths 30cm apart). Left as a lead for the same reason."
+  },
+  {
+   "name": "Malaysian Apple",
+   "species": "Malaysian Apple (Syzygium malaccense)",
+   "lat": 21.925822,
+   "lng": -159.494842,
+   "register_location": "Lāwaʻi",
+   "girth_cm": 76,
+   "height_m": 12.8,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2017/12/IMG_7757-768x1024.jpg"
+  },
+  {
+   "name": "Indian Almond",
+   "species": "Indian Almond (Terminalia catappa)",
+   "lat": 21.981,
+   "lng": -159.367,
+   "register_location": "Lῑhu‘e",
+   "girth_cm": 518,
+   "height_m": 27.4,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": " "
   }
  ],
  "blocked": [

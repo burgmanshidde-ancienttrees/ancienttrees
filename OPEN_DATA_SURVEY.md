@@ -190,6 +190,26 @@ Found while `scout_next.py --target` pointed at Las Vegas (#22, no supply, no ve
 
 **Licence: no explicit open-licence statement found**, only a generic NV.gov accuracy disclaimer on a sibling site. Not clean enough to import wholesale as register-layer dots per the licence-first rule. Ruled **usable as a verification/lead source for hand-verified layer-1 entries only** (the same treatment OPEN_DATA_SURVEY.md already gives Kyoto's DB and other unlicensed government documents): a session may use it to find candidates and cross-check species/measurements, but every entry still needs its own second source and its own hand-written story before it ships, same as any other single-source register lead.
 
+## US government registers on ArcGIS Online, found by searching the portal itself (2026-10-06)
+
+Hidde: "zoek meer van dit soort registers in de us!" The method that found them is the transferable part: ArcGIS Online's public search API (`arcgis.com/sharing/rest/search`) queried for titles like champion, heritage, landmark, notable, significant, witness, legacy and big trees, restricted to Feature and Map Services inside a US extent. 335 hits, most of them student exercises and copies; the official ones are below. None carries an open licence, so all are FACTS-ONLY sources for layer-1 leads under the one-official-register rule of 2026-09-28, never map dots. `scripts/register_import.py` reads them, with each layer's filters in `data/register-sources-us.json`.
+
+| Register | Owner | Rows | Coordinates | Imported into |
+|---|---|---:|---|---|
+| Forest Preserve champion trees | Cook County (IL) | 106 | GNSS points, Public_Access field (all Yes) | chicago +77 |
+| NCR witness trees 2018 | National Park Service | 49 | points, NPGallery image links | washington-dc +28 |
+| NCR notable trees (UERLA storymap) | National Park Service | 15 | points, images with per-image use limits | washington-dc +6 |
+| Heritage trees (public) | City of Independence (MO) | 19 | points; approved AND public-ground rows only (3); carries submitter email/phone, never copied | kansas-city +3 |
+| Big tree champions | Hawaii DLNR | 19 | Latitude/Longitude fields (geometry is a buffer polygon) | oahu +4, hawaii +12, kauai +2 |
+| Big and Heritage Trees of NJ | NJDEP | 716 | points; every row carries the owner's permission to list; Emeritus rows blocked | new-york +28 (NJ day trip), princeton +13 |
+| Champion trees of Kansas | Kansas Forest Service | 145 | points | NOT YET: no Kansas place we publish besides Kansas City, check the KS side |
+| Significant trees | Norfolk (VA), via HRPDC | 471 | points, Public_Yes_No field | NOT YET: no Norfolk page; a 471-row register with a public flag is an opening candidate |
+| MD champion trees 2024 | ESRGC (MD) | 11 | points | NOT YET |
+| Heritage trees | City of San José | ? | MapServer timed out | retry |
+| Big tree champs | Delaware FirstMap | ? | service returned non-JSON | retry |
+
+Dead ends worth recording so nobody repeats them: Pasadena's Landmark Trees layer is parcels with zero public rows; Tennessee's champion layer is county outlines only; Cincinnati's "Legacy Tree" map is the full 295,000-tree inventory; "Champion Trees (April 2022)" owned by Montgomery is Montgomery Botanical Center in Florida, already in the Florida register.
+
 ## Florida Champion Trees register: usable as a verification/lead source, real API, one dense cluster already shipped (scouted 2026-09-10)
 
 Found while `scout_next.py --target` pointed at Daytona Beach (#65, no supply, no verdict). Volusia County (Daytona Beach's county) turned out thin, only 2 register trees, both 20+ km from the city with no realistic public transport, so Daytona Beach itself is still unopened. But the register behind it is real, statewide, and rich elsewhere, which is the more useful finding.

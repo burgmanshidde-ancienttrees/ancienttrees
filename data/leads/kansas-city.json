@@ -1,0 +1,276 @@
+{
+ "city": "kansas-city",
+ "leads": [
+  {
+   "name": "Bur Oak",
+   "species": "Bur Oak (Quercus)",
+   "lat": 39.100009,
+   "lng": -94.420607,
+   "register_location": "McCoy Park",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "COM",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "Smoke",
+   "species": "Smoke (Cotinus)",
+   "lat": 39.107333,
+   "lng": -94.416792,
+   "register_location": "Vaile Mansion & Arboretum,1500 N Liberty St",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "LEG",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "Yellow-Poplar",
+   "species": "Yellow-Poplar (Liriodendron)",
+   "lat": 39.085017,
+   "lng": -94.41081,
+   "register_location": "Woodlawn Cemetery",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "BOT",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Green Ash",
+   "species": "Green Ash (Fraxinus)",
+   "lat": 39.092604,
+   "lng": -94.417566,
+   "register_location": "Liberty & Lexington",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "NONE",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='PRIV': not an approved public entry"
+  },
+  {
+   "name": "Ginkgo biloba",
+   "species": "Ginkgo biloba (Ginkgo)",
+   "lat": 39.092858,
+   "lng": -94.422401,
+   "register_location": "611 W Maple Ave",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "HIST",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='IDK': not an approved public entry"
+  },
+  {
+   "name": "Flowering Dogwood",
+   "species": "Flowering Dogwood (Cornus)",
+   "lat": 39.085739,
+   "lng": -94.416083,
+   "register_location": "620 S Main St",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "LAND",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='PRIV': not an approved public entry"
+  },
+  {
+   "name": "Black Cherry",
+   "species": "Black Cherry (Prunus)",
+   "lat": 39.061999,
+   "lng": -94.43398,
+   "register_location": "3212 S Crysler Ave",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "LEG",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='PRIV': not an approved public entry"
+  },
+  {
+   "name": "American Elm",
+   "species": "American Elm",
+   "lat": 39.091779,
+   "lng": -94.412682,
+   "register_location": "Hiram Young Park",
+   "girth_cm": null,
+   "height_m": 30.5,
+   "register_status": "BOT",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Legacy_Tree_Status='SUB': not an approved public entry"
+  },
+  {
+   "name": "Black Walnut",
+   "species": "Black Walnut",
+   "lat": 39.096775,
+   "lng": -94.421329,
+   "register_location": "123 Test Lane",
+   "girth_cm": null,
+   "height_m": 15.2,
+   "register_status": "LEG",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='PRIV': not an approved public entry"
+  },
+  {
+   "name": "Black Oak",
+   "species": "Black Oak",
+   "lat": 39.081903,
+   "lng": -94.425492,
+   "register_location": "123 South Ave",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "HIST",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='PRIV': not an approved public entry"
+  },
+  {
+   "name": "Alaska-Cedar",
+   "species": "Alaska-Cedar (Aesculus)",
+   "lat": 39.092233,
+   "lng": -94.394531,
+   "register_location": "123 main st",
+   "girth_cm": null,
+   "height_m": 13.7,
+   "register_status": "Community Ties",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='PRIV': not an approved public entry"
+  },
+  {
+   "name": "Bigtooth Maple",
+   "species": "Bigtooth Maple (Acer)",
+   "lat": 39.090886,
+   "lng": -94.399123,
+   "register_location": "123 S Main St",
+   "girth_cm": null,
+   "height_m": 7.0,
+   "register_status": "Landmark",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='PRIV': not an approved public entry"
+  },
+  {
+   "name": "Allegheny Chinkapin",
+   "species": "Allegheny Chinkapin (Acer)",
+   "lat": 39.093521,
+   "lng": -94.39147,
+   "register_location": "223 tester lane",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "Historical Significance",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Legacy_Tree_Status='SUB': not an approved public entry"
+  },
+  {
+   "name": "Unknown",
+   "species": "Unknown (Unknown)",
+   "lat": 39.040896,
+   "lng": -94.342204,
+   "register_location": "20201 E Jackson",
+   "girth_cm": null,
+   "height_m": 15.2,
+   "register_status": "Historical Significance",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='IDK': not an approved public entry"
+  },
+  {
+   "name": "Bear Oak",
+   "species": "Bear Oak (Morus)",
+   "lat": 39.041111,
+   "lng": -94.342361,
+   "register_location": "20201 E Jackson Dr.",
+   "girth_cm": null,
+   "height_m": 6.1,
+   "register_status": "Legacy (Size)",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Legacy_Tree_Status='SUB': not an approved public entry"
+  },
+  {
+   "name": "Sugarberry",
+   "species": "Sugarberry (Celtis)",
+   "lat": 39.092278,
+   "lng": -94.324084,
+   "register_location": "21500 e truman rd",
+   "girth_cm": null,
+   "height_m": 19.8,
+   "register_status": "Legacy (Size)",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='IDK': not an approved public entry"
+  },
+  {
+   "name": "unnamed",
+   "species": "",
+   "lat": 39.086564,
+   "lng": -94.447619,
+   "register_location": "1830 harvard",
+   "girth_cm": null,
+   "height_m": 18.3,
+   "register_status": "Botanical Interest",
+   "sources": [
+    "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0"
+   ],
+   "source": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only.",
+   "status": "open",
+   "reason": "register field Leacy_Tree_Loc_Type='PRIV': not an approved public entry"
+  }
+ ]
+}

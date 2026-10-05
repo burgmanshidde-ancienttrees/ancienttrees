@@ -1,0 +1,220 @@
+{
+ "note": "US government tree registers read straight from their ArcGIS layers by scripts/register_import.py (2026-10-06). Facts only: none of these carries an open licence for republishing the dataset, so they feed layer-1 leads and never map dots. Each entry says where it points, what it filters out (hard rule 10) and what not to copy.",
+ "sources": [
+  {
+   "name": "Cook County FP champions",
+   "place": "chicago",
+   "centre": [
+    41.8781,
+    -87.6298
+   ],
+   "radius_km": 35,
+   "layer": "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0",
+   "map": {
+    "common": "CommonName",
+    "sci": "ScientificName",
+    "circ": "Circumference",
+    "height": "Height",
+    "loc": "Site_Name",
+    "status": "Champion"
+   },
+   "block_if": {
+    "Public_Access": [
+     "no",
+     "n",
+     "0",
+     "false"
+    ]
+   },
+   "source_url": "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0",
+   "source_note": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field."
+  },
+  {
+   "name": "NPS NCR witness trees",
+   "place": "washington-dc",
+   "centre": [
+    38.8977,
+    -77.0365
+   ],
+   "radius_km": 35,
+   "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0",
+   "map": {
+    "common": "Common_Name",
+    "sci": "Scientific_Name",
+    "loc": "UnitName",
+    "photo": "ImageLink",
+    "status": "GroupName"
+   },
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0",
+   "source_note": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit)."
+  },
+  {
+   "name": "NPS NCR notable trees",
+   "place": "washington-dc",
+   "centre": [
+    38.8977,
+    -77.0365
+   ],
+   "radius_km": 35,
+   "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0",
+   "map": {
+    "name": "PopUp_Heading",
+    "loc": "UNITNAME",
+    "photo": "ImageURL_Large"
+   },
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0",
+   "source_note": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit)."
+  },
+  {
+   "name": "Independence MO heritage trees",
+   "place": "kansas-city",
+   "centre": [
+    39.0997,
+    -94.5786
+   ],
+   "radius_km": 30,
+   "layer": "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0",
+   "map": {
+    "common": "Variety",
+    "sci": "Genus_Species",
+    "height": "Height",
+    "loc": "Location",
+    "status": "Legacy_Tree_Category"
+   },
+   "keep_if": {
+    "Leacy_Tree_Loc_Type": [
+     "PUB"
+    ],
+    "Legacy_Tree_Status": [
+     "APP"
+    ]
+   },
+   "source_url": "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0",
+   "source_note": "City of Independence (MO) heritage trees (government), approved entries on public ground only. The layer carries submitter email and phone fields: NEVER copy them. Facts only."
+  },
+  {
+   "name": "Hawaii DLNR champions, Oahu",
+   "place": "oahu",
+   "centre": [
+    21.4389,
+    -158.0001
+   ],
+   "radius_km": 45,
+   "latlng_fields": [
+    "Latitude",
+    "Longitude"
+   ],
+   "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0",
+   "map": {
+    "common": "Common_Nam",
+    "sci": "Scientific",
+    "height": "Height_ft",
+    "circ": "Circumfere",
+    "loc": "Location",
+    "photo": "Photo"
+   },
+   "source_url": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0",
+   "source_note": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only."
+  },
+  {
+   "name": "Hawaii DLNR champions, Big Island",
+   "place": "hawaii",
+   "centre": [
+    19.6,
+    -155.5
+   ],
+   "radius_km": 120,
+   "latlng_fields": [
+    "Latitude",
+    "Longitude"
+   ],
+   "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0",
+   "map": {
+    "common": "Common_Nam",
+    "sci": "Scientific",
+    "height": "Height_ft",
+    "circ": "Circumfere",
+    "loc": "Location",
+    "photo": "Photo"
+   },
+   "source_url": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0",
+   "source_note": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only."
+  },
+  {
+   "name": "Hawaii DLNR champions, Kauai",
+   "place": "kauai",
+   "centre": [
+    22.07,
+    -159.5
+   ],
+   "radius_km": 45,
+   "latlng_fields": [
+    "Latitude",
+    "Longitude"
+   ],
+   "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0",
+   "map": {
+    "common": "Common_Nam",
+    "sci": "Scientific",
+    "height": "Height_ft",
+    "circ": "Circumfere",
+    "loc": "Location",
+    "photo": "Photo"
+   },
+   "source_url": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0",
+   "source_note": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only."
+  },
+  {
+   "name": "NJDEP big and heritage trees, NYC day trip",
+   "place": "new-york",
+   "centre": [
+    40.758,
+    -73.9855
+   ],
+   "radius_km": 22,
+   "layer": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19",
+   "map": {
+    "name": "LOCALNAME",
+    "common": "COMMONNAME",
+    "sci": "BOTANICALNAME",
+    "circ": "CIRCUMFERENCE",
+    "height": "HEIGHT",
+    "loc": "STREETADDRESS",
+    "status": "STATUS"
+   },
+   "block_if": {
+    "STATUS": [
+     "emeritus"
+    ]
+   },
+   "source_url": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19",
+   "source_note": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan."
+  },
+  {
+   "name": "NJDEP big and heritage trees, Princeton",
+   "place": "princeton-new-jersey",
+   "centre": [
+    40.3573,
+    -74.6672
+   ],
+   "radius_km": 15,
+   "layer": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19",
+   "map": {
+    "name": "LOCALNAME",
+    "common": "COMMONNAME",
+    "sci": "BOTANICALNAME",
+    "circ": "CIRCUMFERENCE",
+    "height": "HEIGHT",
+    "loc": "STREETADDRESS",
+    "status": "STATUS"
+   },
+   "block_if": {
+    "STATUS": [
+     "emeritus"
+    ]
+   },
+   "source_url": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19",
+   "source_note": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies."
+  }
+ ]
+}

@@ -127,6 +127,426 @@
     "neighbourhood": ""
    },
    "reason": "2026-10-01 verify pass: The 1654 Pell Treaty Oak burned in 1906; an elm planted on 1 May 1915 replaced it (Untapped). About 110 years old; species and survival not verified. Museum grounds are ticketed."
+  },
+  {
+   "name": "Pin Oak",
+   "species": "Pin Oak (Quercus_palustris)",
+   "lat": 40.906626,
+   "lng": -74.089101,
+   "register_location": "423 Saddle River Rd.",
+   "girth_cm": 401,
+   "height_m": 33.5,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "American Horsechestnut",
+   "species": "American Horsechestnut (Aesculus_hippocastanum)",
+   "lat": 40.923382,
+   "lng": -73.964632,
+   "register_location": "145 Dean Dr.",
+   "girth_cm": 333,
+   "height_m": 14.9,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Slippery Elm",
+   "species": "Slippery Elm (Ulmus_rubra)",
+   "lat": 40.825549,
+   "lng": -74.118942,
+   "register_location": "424 Stuyvesant Ave.",
+   "girth_cm": 282,
+   "height_m": 26.8,
+   "register_status": "Co-Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Slippery Elm",
+   "species": "Slippery Elm (Ulmus_rubra)",
+   "lat": 40.825378,
+   "lng": -74.119004,
+   "register_location": "93 Dean Court",
+   "girth_cm": 216,
+   "height_m": 20.7,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Eastern Cottonwood",
+   "species": "Eastern Cottonwood (Populus_deltoides)",
+   "lat": 40.74692,
+   "lng": -74.024974,
+   "register_location": "9 Castle Point Ter.",
+   "girth_cm": 485,
+   "height_m": 26.8,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "American Elm",
+   "species": "American Elm (Ulmus_americana)",
+   "lat": 40.744653,
+   "lng": -74.024674,
+   "register_location": "99 Castle Point Ter.",
+   "girth_cm": 526,
+   "height_m": 27.4,
+   "register_status": "Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "American Elm",
+   "species": "American Elm (Ulmus_americana)",
+   "lat": 40.7443,
+   "lng": -74.024848,
+   "register_location": "99 Castle Point Ter.",
+   "girth_cm": 480,
+   "height_m": 27.4,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Black Oak",
+   "species": "Black Oak (Quercus_velutina)",
+   "lat": 40.765068,
+   "lng": -74.237436,
+   "register_location": "315 Carteret Pl.",
+   "girth_cm": 417,
+   "height_m": 30.5,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "American Hornbeam",
+   "species": "American Hornbeam (Carpinus_caroliniana)",
+   "lat": 40.79199,
+   "lng": -74.239661,
+   "register_location": "23 Bloomfield Way 07052",
+   "girth_cm": 460,
+   "height_m": 16.8,
+   "register_status": "National_Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Kentucky Coffee Tree",
+   "species": "Kentucky Coffee Tree (Gymnocladus_dioicus)",
+   "lat": 40.755592,
+   "lng": -74.184123,
+   "register_location": "287 1st St.",
+   "girth_cm": 335,
+   "height_m": 22.6,
+   "register_status": "Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Kentucky Coffee Tree",
+   "species": "Kentucky Coffee Tree (Gymnocladus_dioicus)",
+   "lat": 40.755662,
+   "lng": -74.183926,
+   "register_location": "287 1st St.",
+   "girth_cm": 246,
+   "height_m": 20.7,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Pin Oak",
+   "species": "Pin Oak (Quercus_palustris)",
+   "lat": 40.825437,
+   "lng": -74.108205,
+   "register_location": "176 Rutherford Ave.",
+   "girth_cm": 287,
+   "height_m": 30.5,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Tulip Tree",
+   "species": "Tulip Tree (Liriodendron_tulipifera)",
+   "lat": 40.858611,
+   "lng": -74.194104,
+   "register_location": "130 Pearl Brook Dr.",
+   "girth_cm": 447,
+   "height_m": 33.5,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Red Beech",
+   "species": "Red Beech (Nothofagus_fusca)",
+   "lat": 40.870321,
+   "lng": -74.17173,
+   "register_location": "68 Thanksgiving Ln.",
+   "girth_cm": 295,
+   "height_m": 19.8,
+   "register_status": "Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Black Oak",
+   "species": "Black Oak (Quercus_velutina)",
+   "lat": 40.85933,
+   "lng": -73.980532,
+   "register_location": "205 Oratam Terrace",
+   "girth_cm": 467,
+   "height_m": 31.4,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Sycamore",
+   "species": "Sycamore (Platanus_occidentalis)",
+   "lat": 40.768917,
+   "lng": -74.169962,
+   "register_location": "547 Clifton Ave.",
+   "girth_cm": 521,
+   "height_m": 29.6,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Sugar Maple",
+   "species": "Sugar Maple (Acer_saccharum)",
+   "lat": 40.893206,
+   "lng": -73.971279,
+   "register_location": "32 Hillside Ave.",
+   "girth_cm": 287,
+   "height_m": 22.9,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Pin Oak",
+   "species": "Pin Oak (Quercus_palustris)",
+   "lat": 40.930999,
+   "lng": -74.101508,
+   "register_location": "37-03 Lindsay Rd.",
+   "girth_cm": 292,
+   "height_m": 33.5,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "American Elm",
+   "species": "American Elm (Ulmus_americana)",
+   "lat": 40.901141,
+   "lng": -74.061908,
+   "register_location": "3 Fairway",
+   "girth_cm": 356,
+   "height_m": 24.4,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Silver Maple",
+   "species": "Silver Maple (Acer_saccharinum)",
+   "lat": 40.901271,
+   "lng": -74.06217,
+   "register_location": "3 Fairway",
+   "girth_cm": 478,
+   "height_m": 21.3,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Quercus_rubra",
+   "species": "Quercus_rubra (Quercus_rubra)",
+   "lat": 40.821455,
+   "lng": -74.164705,
+   "register_location": "398 Chestnut St",
+   "girth_cm": 508,
+   "height_m": 30.2,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Hamamelis_virginiana",
+   "species": "Hamamelis_virginiana (Hamamelis_virginiana)",
+   "lat": 40.801192,
+   "lng": -74.212164,
+   "register_location": "26 Marston Place",
+   "girth_cm": 183,
+   "height_m": 3.7,
+   "register_status": "Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Quercus_rubra",
+   "species": "Quercus_rubra (Quercus_rubra)",
+   "lat": 40.799094,
+   "lng": -74.2366,
+   "register_location": "17 Moore Terrace",
+   "girth_cm": 417,
+   "height_m": 22.9,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Juglans_nigra",
+   "species": "Juglans_nigra (Juglans_nigra)",
+   "lat": 40.793049,
+   "lng": -74.154335,
+   "register_location": "189 Hornblower Ave.",
+   "girth_cm": 297,
+   "height_m": 20.4,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Quercus_rubra",
+   "species": "Quercus_rubra (Quercus_rubra)",
+   "lat": 40.945999,
+   "lng": -74.007376,
+   "register_location": "119  Seminole Ave.",
+   "girth_cm": 640,
+   "height_m": 30.5,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Ulmus_americana",
+   "species": "Ulmus_americana (Ulmus_americana)",
+   "lat": 40.88419,
+   "lng": -74.158188,
+   "register_location": "17 May St.",
+   "girth_cm": 335,
+   "height_m": 14.0,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Acer_saccharinum",
+   "species": "Acer_saccharinum (Acer_saccharinum)",
+   "lat": 40.784741,
+   "lng": -74.191675,
+   "register_location": "24 Berkeley Heights Park",
+   "girth_cm": 399,
+   "height_m": 24.4,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
+  },
+  {
+   "name": "Quercus_alba",
+   "species": "Quercus_alba (Quercus_alba)",
+   "lat": 40.833509,
+   "lng": -74.204792,
+   "register_location": "290 Park St.",
+   "girth_cm": 447,
+   "height_m": 25.0,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
+   "status": "open"
   }
  ],
  "blocked": [

@@ -96,6 +96,70 @@
    "species": "Monkeypod (Albizia saman)",
    "locality": "Central Union Church, 1660 S. Beretania St., girth 750 cm",
    "reason": "2026-10-02 pass: church grounds would pass access, but Commons search and 150 m geosearch returned nothing for it; register pin is grid-rounded. No photo or exact pin; worth a reader photograph."
+  },
+  {
+   "name": "White Hibiscus",
+   "species": "White Hibiscus (Hibiscus arnottianus)",
+   "lat": 21.337,
+   "lng": -157.811,
+   "register_location": "Mānoa Cliff Trail",
+   "girth_cm": 88,
+   "height_m": 10.1,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2016/11/Hibis3-768x1024.jpg"
+  },
+  {
+   "name": "Hawaiian Syzygium",
+   "species": "Hawaiian Syzygium (Syzygium sandwicense)",
+   "lat": 21.411193,
+   "lng": -157.901019,
+   "register_location": "Aiea Ridge Trail",
+   "girth_cm": 208,
+   "height_m": 8.2,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/IMG_8021-768x1024.jpg"
+  },
+  {
+   "name": "Yellow Hibiscus",
+   "species": "Yellow Hibiscus (Hibiscus brackenridgei)",
+   "lat": 21.524826,
+   "lng": -158.027951,
+   "register_location": "Oʻahu Army Natural Resources Program Interpretive Garden, Wahiawa",
+   "girth_cm": 74,
+   "height_m": 4.9,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/IMG_7941-768x1024.jpg"
+  },
+  {
+   "name": "Soapberry",
+   "species": "Soapberry (Sapindus oahuensis)",
+   "lat": 21.542054,
+   "lng": -158.191629,
+   "register_location": "Pahole Forest Reserve",
+   "girth_cm": 143,
+   "height_m": 18.3,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2017/12/IMG_7824-526x1024.jpg"
   }
  ],
  "blocked": [

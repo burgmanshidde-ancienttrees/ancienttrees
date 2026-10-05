@@ -1,0 +1,250 @@
+{
+ "city": "princeton-new-jersey",
+ "leads": [
+  {
+   "name": "Paw Paw",
+   "species": "Paw Paw (Asimina_triloba)",
+   "lat": 40.311474,
+   "lng": -74.516824,
+   "register_location": "19 North Main St.",
+   "girth_cm": 84,
+   "height_m": 11.0,
+   "register_status": "Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Paper Birch",
+   "species": "Paper Birch (Betula_papyrifera)",
+   "lat": 40.378703,
+   "lng": -74.799734,
+   "register_location": "165 Stony Brook Rd.",
+   "girth_cm": 257,
+   "height_m": 15.2,
+   "register_status": "Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Green Ash",
+   "species": "Green Ash (Fraxinus_pennsylvanica)",
+   "lat": 40.272389,
+   "lng": -74.535616,
+   "register_location": "440 Stockton St.",
+   "girth_cm": 389,
+   "height_m": 34.4,
+   "register_status": "Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Cucumber Magnolia",
+   "species": "Cucumber Magnolia (Magnolia_acuminata)",
+   "lat": 40.339921,
+   "lng": -74.670843,
+   "register_location": "78 Lovers Ln.",
+   "girth_cm": 622,
+   "height_m": 25.9,
+   "register_status": "Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Empress Tree",
+   "species": "Pawlonia (Pawlonia_tomentosa)",
+   "lat": 40.340867,
+   "lng": -74.671957,
+   "register_location": "60 Lovers Ln.",
+   "girth_cm": 528,
+   "height_m": 18.0,
+   "register_status": "Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Norway Spruce",
+   "species": "Norway Spruce (Picea_abies)",
+   "lat": 40.332269,
+   "lng": -74.676185,
+   "register_location": "468 Mercer St.",
+   "girth_cm": 444,
+   "height_m": 25.3,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Brearly Oak",
+   "species": "Black Oak (Quercus_velutina)",
+   "lat": 40.290345,
+   "lng": -74.710349,
+   "register_location": "3100 Princeton Pike",
+   "girth_cm": 655,
+   "height_m": 33.5,
+   "register_status": "Co-Champion",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Sycamore",
+   "species": "Sycamore (Platanus_occidentalis)",
+   "lat": 40.352743,
+   "lng": -74.644623,
+   "register_location": "41 Harrison Street",
+   "girth_cm": 409,
+   "height_m": 23.5,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Quercus_alba",
+   "species": "Quercus_alba (Quercus_alba)",
+   "lat": 40.478331,
+   "lng": -74.734099,
+   "register_location": "281 Longhill Rd",
+   "girth_cm": 531,
+   "height_m": 33.5,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Quercus_bicolor",
+   "species": "Quercus_bicolor (Quercus_bicolor)",
+   "lat": 40.323627,
+   "lng": -74.607381,
+   "register_location": "73 Groves Mill Rd",
+   "girth_cm": 404,
+   "height_m": 32.3,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Ulmus_americana",
+   "species": "Ulmus_americana (Ulmus_americana)",
+   "lat": 40.36814,
+   "lng": -74.662038,
+   "register_location": "274 Mount Lucas Rd",
+   "girth_cm": 414,
+   "height_m": 32.0,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Quercus_bicolor",
+   "species": "Quercus_bicolor (Quercus_bicolor)",
+   "lat": 40.376258,
+   "lng": -74.590608,
+   "register_location": "21 Monroe Ct.",
+   "girth_cm": 384,
+   "height_m": 21.6,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  },
+  {
+   "name": "Prunus_subhirtella_pendula",
+   "species": "Prunus_subhirtella_pendula (Prunus_subhirtella_pendula)",
+   "lat": 40.231911,
+   "lng": -74.661291,
+   "register_location": "40 Maple Shade",
+   "girth_cm": 345,
+   "height_m": 8.8,
+   "register_status": "Signature",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Pecan",
+   "species": "Pecan (Carya_illinoinensis)",
+   "lat": 40.328205,
+   "lng": -74.674122,
+   "register_location": "500 Mercer Rd.",
+   "girth_cm": 318,
+   "height_m": 29.0,
+   "register_status": "Emeritus",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open",
+   "reason": "register field STATUS='emeritus': not public or not to be listed (hard rule 10)"
+  },
+  {
+   "name": "American Beech",
+   "species": "American Beech (Fagus_grandifolia)",
+   "lat": 40.329142,
+   "lng": -74.675569,
+   "register_location": "500  Mercer Rd.",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "Emeritus",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open",
+   "reason": "register field STATUS='emeritus': not public or not to be listed (hard rule 10)"
+  },
+  {
+   "name": "Paper Birch",
+   "species": "Paper Birch (Betula_papyrifera)",
+   "lat": 40.328985,
+   "lng": -74.67506,
+   "register_location": "500 Mercer Rd.",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "Emeritus",
+   "sources": [
+    "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19"
+   ],
+   "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies.",
+   "status": "open",
+   "reason": "register field STATUS='emeritus': not public or not to be listed (hard rule 10)"
+  }
+ ]
+}

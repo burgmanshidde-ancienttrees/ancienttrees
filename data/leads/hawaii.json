@@ -11,6 +11,198 @@
    "name": null,
    "species": "Chinese Banyan (Ficus microcarpa)",
    "reason": "No girth recorded, locality only 'Kona' (no address), coords 19.64,-156.0 (park-level grid). No independent source found identifying a specific notable Chinese Banyan in Kailua-Kona within the time window; general searching surfaced the Burgess/Banyan Court Moreton Bay fig and the two royal Indian Banyan cuttings but nothing matching this species and location. Needs a dedicated search pass before it can be verified or placed."
+  },
+  {
+   "name": "Koa",
+   "species": "Koa (Acacia koa)",
+   "lat": 19.184722,
+   "lng": -155.809444,
+   "register_location": "Kona Hema Preserve, South Kona",
+   "girth_cm": 872,
+   "height_m": 35.1,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/02/koa11-200x300.jpg"
+  },
+  {
+   "name": "Hopbush",
+   "species": "Hopbush (Dodonaea viscosa)",
+   "lat": 19.231816,
+   "lng": -155.837845,
+   "register_location": "Kona Hema Preserve (The Nature Conservancy)",
+   "girth_cm": 81,
+   "height_m": 11.6,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/aaliiDodonaea-viscosa-Kapua-2655-1024x683.jpg"
+  },
+  {
+   "name": "Hawaiian Ebony",
+   "species": "Hawaiian Ebony (Diospyros sandwicensis)",
+   "lat": 19.416282,
+   "lng": -154.951133,
+   "register_location": "Pu‘u Wa‘awa‘a Forest Reserve",
+   "girth_cm": 91,
+   "height_m": 5.5,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2016/11/Lama-768x1024.jpg"
+  },
+  {
+   "name": "Soapberry Wingleaf",
+   "species": "Soapberry Wingleaf (Sapindus saponaria)",
+   "lat": 19.443,
+   "lng": -155.318,
+   "register_location": "Hawaiʻi Volcanoes National Park",
+   "girth_cm": 408,
+   "height_m": 21.6,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2017/12/big-tree-Sapindus-saponaria-Kipuka-Ki-1961-160x300.jpg"
+  },
+  {
+   "name": "Colicwood",
+   "species": "Colicwood (Myrsine lessertiana)",
+   "lat": 19.448048,
+   "lng": -155.303438,
+   "register_location": "Kῑpukapuaulu, Hawai‘i Volcanoes National Park",
+   "girth_cm": 168,
+   "height_m": 18.0,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/big-tree-Myrsine-lessertiana-Kipuka-Puaulu-7216-683x1024.jpg"
+  },
+  {
+   "name": "Australasian Catchbird Tree",
+   "species": "Australasian Catchbird Tree (Pisonia brunoniana)",
+   "lat": 19.46,
+   "lng": -155.247,
+   "register_location": "Hawai'i Volcanoes National Park",
+   "girth_cm": 330,
+   "height_m": 16.2,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/big-tree-Pisonia-brunoniana-Olaa-7180-683x1024.jpg"
+  },
+  {
+   "name": "Hawaiian Holly",
+   "species": "Hawaiian Holly (Ilex anomala)",
+   "lat": 19.603032,
+   "lng": -155.152322,
+   "register_location": "Hawai‘i Volcanoes National Park",
+   "girth_cm": 244,
+   "height_m": 15.2,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/big-tree-Ilex-anomala-Olaa-7185-683x1024.jpg"
+  },
+  {
+   "name": "Sea Hibiscus",
+   "species": "Sea Hibiscus (Hibiscus tiliaceus)",
+   "lat": 19.639444,
+   "lng": -155.984444,
+   "register_location": "Hulihe‘e Palace Kailua-Kona",
+   "girth_cm": 279,
+   "height_m": 6.1,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/02/hau-both_trees-300x225.jpg"
+  },
+  {
+   "name": "Hawaiian Sumac",
+   "species": "Hawaiian Sumac (Rhus sandwicensis)",
+   "lat": 19.686123,
+   "lng": -155.118354,
+   "register_location": "Kaumana",
+   "girth_cm": 51,
+   "height_m": 5.8,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2017/12/big-tree-Rhus-sandwicensis-Kaumana-7234-1024x683.jpg"
+  },
+  {
+   "name": "Mamane",
+   "species": "Mamane (Sophora chrysohylla)",
+   "lat": 19.792167,
+   "lng": -155.39949,
+   "register_location": "Mauna Kea Forest Reserve",
+   "girth_cm": 750,
+   "height_m": 7.3,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/03/photo-1-300x225.jpg"
+  },
+  {
+   "name": "Hawaiian Olive",
+   "species": "Hawaiian Olive (Nestegis sandwicensis)",
+   "lat": 19.808985,
+   "lng": -155.842638,
+   "register_location": "Pu‘u Wa‘awa‘a Forest Reserve",
+   "girth_cm": 519,
+   "height_m": 9.8,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/11/olopua1-300x217.jpg"
+  },
+  {
+   "name": "Hawaiian Coral Tree",
+   "species": "Hawaiian Coral Tree (Erythrina sandwicensis)",
+   "lat": 19.929924,
+   "lng": -155.799182,
+   "register_location": "Waikoloa Dry Forest",
+   "girth_cm": 475,
+   "height_m": 12.2,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+   ],
+   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+   "status": "open",
+   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/02/Waikoloa_Wiliwili_1-300x199.jpg"
   }
  ],
  "blocked": [
