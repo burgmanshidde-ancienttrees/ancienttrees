@@ -1,0 +1,95 @@
+{
+ "_note": "it overlay for verona, written 2026-10-06 from data/cities/verona.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Verona",
+ "title": "Alberi monumentali di Verona: gli 8 più notevoli",
+ "meta_description": "Gli alberi più notevoli di Verona, dal cedro secolare appena salvato accanto all'Arena al viale di cipressi che conquistò Goethe nel 1786.",
+ "intro": "Verona conta meno alberi monumentali censiti della vicina Bologna o di Napoli, appena tre nell'elenco nazionale entro i confini comunali, ma quelli che ha si raccolgono attorno a luoghi che tutti visitano già: il cedro che fa ombra alla piazza davanti all'Arena, il viale di cipressi di cui Goethe scrisse a casa, un platano che riempie da solo un intero giardino pubblico. La lista unisce quel breve elenco, il giardino rinascimentale sopravvissuto proprio all'albero che lo aveva reso famoso e alcuni esemplari che la città si è battuta per tenere in piedi. Sono otto, e ognuno ha una storia documentata.",
+ "question_title": "Qual è l'albero più antico di Verona? (piantato nel 1873)",
+ "question_meta": "L'albero più antico documentato di Verona è un cedro piantato nel 1873 in Piazza Bra, accanto all'Arena. La sua storia e altri sette alberi.",
+ "question_answer": "L'albero di Verona con la data più precisamente documentata è il cedro del Libano di Piazza Bra, piantato nel 1873 nell'ambito del primo progetto di giardino della piazza e ancora in piedi accanto all'Arena romana, a circa 153 anni di età. Si visita gratuitamente nella piazza più grande e centrale della città.",
+ "question_context": "Il patrimonio arboreo di Verona è più esile, nei registri ufficiali, di quello di altre città italiane: solo tre esemplari entro i confini comunali compaiono nell'elenco nazionale degli Alberi Monumentali d'Italia, tutti aggiunti negli ultimi anni. Fra questi, e fra gli esemplari ben documentati nei parchi e nei giardini della città, il cedro del Libano di Piazza Bra ha la data di impianto più precisamente ricostruibile, legata al riallestimento del giardino della piazza negli anni Settanta dell'Ottocento più che a una stima arrotondata. Nel 2025 è finito sui giornali locali quando gli arboricoltori si sono affrettati a stabilizzarlo dopo che le radici avevano mostrato segni di cedimento, un salvataggio concluso e verificato stabile entro ottobre di quell'anno. Il viale dei cipressi del Giardino Giusti, più antico per fama e ammirato da Goethe nella sua visita del 1786, non può vantare la stessa precisione: il suo albero originale più famoso è caduto in una tempesta nel 2020 ed è stato ripiantato, quindi l'età del viale oggi è un insieme di superstiti e ricrescita più che un impianto datato. La piazza è gratuita e sempre aperta.",
+ "faq": [
+  {
+   "q": "Qual è l'albero più antico di Verona?",
+   "a": "Il cedro del Libano di Piazza Bra, piantato nel 1873 e ancora in piedi accanto all'Arena romana, a circa 150 anni di età. Il Comune lo ha stabilizzato nel 2025 dopo che le radici avevano mostrato segni di cedimento."
+  },
+  {
+   "q": "Che fine ha fatto il famoso cipresso di Goethe?",
+   "a": "Il cipresso del Giardino Giusti che conquistò Goethe nel 1786, un albero che ha superato i seicento anni di vita, è stato sradicato da una violenta tempesta il 23 agosto 2020. Nel viale storico del giardino sono stati ripiantati cipressi più giovani, ma l'albero preciso descritto da Goethe non esiste più."
+  },
+  {
+   "q": "Gli alberi notevoli di Verona si vedono gratis?",
+   "a": "Quasi tutti quelli in piazze e parchi pubblici sono gratuiti. Il Giardino Giusti chiede un biglietto d'ingresso, e il cedro dell'Himalaya di Villa Bersani cresce su una proprietà privata e si vede dall'angolo di strada su cui si affaccia, non dall'interno del giardino."
+  },
+  {
+   "q": "Perché in questa lista ci sono otto alberi e non dieci?",
+   "a": "Il patrimonio arboreo documentato ufficialmente a Verona è più piccolo di quello di diverse altre città italiane. Questa lista si ferma a otto alberi ben documentati; altri potranno aggiungersi quando emergeranno fonti migliori."
+  }
+ ],
+ "trees": {
+  "ver_001": {
+   "name": "Il Cedro di Piazza Bra",
+   "species": "Cedro del Libano (Cedrus libani)",
+   "age_estimate": "piantato nel 1873",
+   "access": "Gratuito, piazza pubblica",
+   "transport": "Accanto all'Arena di Verona, a 5 minuti a piedi dalla stazione di Verona Porta Nuova",
+   "story": "Questo cedro sta accanto all'Arena romana da più tempo della maggior parte degli edifici che oggi circondano la piazza. Piazza Bra ebbe il suo primo giardino progettato nel 1870, quando il Comune decise che lo spazio aveva bisogno di ombra e di decoro all'altezza del suo ruolo di cuore civico di Verona, e nel 1873 disegnò tre aiuole circolari attorno a una fontana centrale. Il cedro piantato allora è uno degli ultimi superstiti di quel progetto originale: oggi sfiora i 20 metri di altezza e pesa, secondo le stime, 16 tonnellate. Nel giugno 2025 un giardiniere dell'azienda comunale del verde notò che il terreno intorno alle radici si stava sollevando in modo anomalo, segnale che l'albero rischiava di ribaltarsi in uno degli spazi pubblici più frequentati della città. Ne seguì un vero piccolo dramma cittadino, raccontato per settimane dalle testate veronesi: i tecnici piantarono tre punti di ancoraggio a circa quattro metri di profondità, collegati da venti pali d'acciaio annegati nel cemento, e stabilizzarono la zolla radicale senza abbattere l'albero. I lavori si chiusero poco prima di Ferragosto, e da allora il cedro, a detta di tutti, è in salute e dovrebbe restare in piedi ancora per decenni."
+  },
+  "ver_002": {
+   "name": "Il Platano di Piazza Indipendenza",
+   "species": "Platano comune (Platanus x acerifolia)",
+   "age_estimate": "già adulto nel 1941",
+   "access": "Gratuito, piazza pubblica",
+   "transport": "10 minuti a piedi da Piazza delle Erbe",
+   "story": "Un solo albero occupa quasi tutto il giardino al centro di Piazza Indipendenza: un tronco di 505 centimetri di circonferenza che regge una chioma alta 35,5 metri, misure ufficiali che ne fanno, per altezza, uno dei platani più grandi mai registrati a Verona. Gli archivi comunali lo descrivono già come un esemplare adulto e ben sviluppato nel 1941, il che sposta la messa a dimora indietro di qualche decennio, anche se nelle fonti consultate per questa scheda non sopravvive un anno preciso. La piazza si trova dentro l'antico centro murato di Verona ed è stata riqualificata e riaperta al pubblico nel 2017 dopo un periodo di restauro. L'ufficio ambiente del Comune ha scelto proprio questo platano, insieme a un ginkgo vicino, per lanciare un progetto per smartphone che racconta le storie dei singoli alberi della città: un piccolo segno di quanto questo esemplare conti già per i veronesi. I platani comuni come questo possono vivere secoli nelle condizioni giuste, e questo, ancora visibilmente sano e oggi tutelato dall'elenco nazionale degli alberi monumentali, sembra destinato a sopravvivere alla piazza attuale tanto quanto è sopravvissuto alla precedente."
+  },
+  "ver_003": {
+   "name": "Il Ginkgo di Piazza Indipendenza",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "non datata, matura",
+   "access": "Gratuito, piazza pubblica",
+   "transport": "10 minuti a piedi da Piazza delle Erbe",
+   "story": "L'elenco ufficiale degli alberi monumentali registra questo ginkgo come un gruppo e non come un singolo tronco: una circonferenza media di 323 centimetri e un'altezza media di 23,5 metri per gli esemplari che crescono insieme in Piazza Indipendenza, nello stesso piccolo giardino del platano molto più alto. Il Ginkgo biloba è un vero relitto vivente, l'ultimo superstite di una famiglia di alberi che copriva buona parte del pianeta prima che esistessero le piante con fiori, e discende tutto da popolazioni sopravvissute in poche valli riparate della Cina sudorientale mentre la specie scompariva ovunque altrove. L'età precisa di questo gruppo non è documentata, ma la sua presenza nell'elenco nazionale dei monumentali conferma che si tratta di un impianto di lunga data e non di una piantagione recente. Nel 2018 il Comune ha scelto proprio questa piazza per lanciare un progetto pubblico sulla storia degli alberi, con codici QR che ne raccontano le vicende: segno che questo ginkgo e il platano vicino sono considerati in città fra i monumenti vegetali più importanti di Verona, elenco ufficiale o no."
+  },
+  "ver_004": {
+   "name": "Il Cedro dell'Himalaya di Via Nino Bixio",
+   "species": "Cedro dell'Himalaya (Cedrus deodara)",
+   "age_estimate": "non datata, matura",
+   "access": "Gratuito, viale pubblico",
+   "transport": "10 minuti a piedi da Ponte Garibaldi",
+   "story": "Questo cedro svetta su Viale Nino Bixio, il viale alberato che attraversa Borgo Trento dall'ospedale verso Ponte Garibaldi, ed è uno dei soli tre alberi entro i confini comunali di Verona riconosciuti formalmente dall'elenco nazionale degli alberi monumentali. Le sue misure ufficiali, un tronco di 309 centimetri di circonferenza e una chioma che arriva a 28 metri, gli sono valse l'iscrizione per il valore paesaggistico, non per un'età documentata o un legame storico: un criterio più modesto rispetto a quello di età e dimensioni applicato ai suoi vicini di Piazza Indipendenza. Il Cedrus deodara è originario dell'Himalaya occidentale, dove cresce fino a 3.000 metri di quota in condizioni che non hanno nulla a che vedere con la pianura urbana e fluviale di Borgo Trento. La sua presenza su un viale residenziale veronese riflette la stessa moda dell'Ottocento e del primo Novecento per le grandi conifere a crescita rapida che in quegli anni riempì i giardini pubblici e istituzionali di tutta Italia. Non è registrata alcuna data di impianto, quindi qui la sua età è indicata come una stima ampia, da albero maturo, e non come una cifra precisa."
+  },
+  "ver_005": {
+   "name": "Il Viale dei Cipressi del Giardino Giusti",
+   "species": "Cipresso comune (Cupressus sempervirens)",
+   "age_estimate": "impianto rinnovato dal 2020, restano esemplari più vecchi",
+   "access": "A pagamento, Giardino Giusti",
+   "transport": "10 minuti a piedi da Piazza delle Erbe",
+   "story": "Un lungo viale di cipressi sale dal palazzo rinascimentale all'ingresso del giardino fino a una grotta e a un mascherone di pietra in fondo: l'unico asse attorno al quale Agostino Giusti costruì l'intero giardino dopo il 1570, usando la prospettiva forzata per far sembrare la passeggiata più lunga e solenne di quanto il terreno permetta davvero. Per oltre due secoli l'albero più famoso del viale fu un singolo cipresso che aveva già centinaia di anni quando Johann Wolfgang von Goethe lo visitò nel 1786 e lo ammirò al punto da annotare il momento nel suo Viaggio in Italia. Quell'albero non esiste più: una violenta tempesta il 23 agosto 2020 lo sradicò del tutto, chiudendo una vita di oltre seicento anni e portandosi via l'elemento più fotografato del giardino. Da allora il giardino ha ripiantato cipressi lungo la stessa linea storica, più giovani e molto più bassi di quello caduto, accanto agli esemplari più vecchi che la tempesta ha risparmiato in altri punti del filare. Visitarlo oggi significa percorrere lo stesso asse di Goethe, dentro lo stesso disegno, ma onestamente non più sotto l'albero che lo rese famoso."
+  },
+  "ver_006": {
+   "name": "Il Bosco di Tassi e Allori del Giardino Giusti",
+   "species": "Tasso (Taxus baccata)",
+   "age_estimate": "non datata, matura",
+   "access": "A pagamento, Giardino Giusti",
+   "transport": "10 minuti a piedi da Piazza delle Erbe",
+   "story": "Dietro il viale dei cipressi e le aiuole geometriche del Giardino Giusti, il giardino si fa decisamente più selvatico: una parte boscosa di tassi e allori, un sottobosco sempreverde pensato per sembrare un boschetto naturale più che un paesaggio progettato, che scende verso una grotta cinquecentesca ispirata alle caverne artificiali di moda nei giardini italiani del Rinascimento. Il Taxus baccata è fra le specie arboree più longeve coltivate nei giardini europei: può vivere molti secoli ed è notoriamente difficile da datare con precisione, perché il legno interno tende a svuotarsi e a marcire molto prima che l'albero muoia. Gli esemplari più vecchi di questo bosco seguono lo stesso schema, con una presenza documentata ma senza un'età documentata. La grotta che circondano fu costruita per far sentire al visitatore di entrare in un paesaggio più selvaggio e mitologico dopo la parte anteriore del giardino, rigidamente geometrica. Più di quattro secoli dopo, questo impianto di tassi e allori produce ancora esattamente quel contrasto, come previsto dal progetto, qualunque sia stata la sorte del cipresso più famoso là davanti."
+  },
+  "ver_007": {
+   "name": "Il Cedro di Villa Bersani",
+   "species": "Cedro dell'Himalaya (Cedrus deodara)",
+   "age_estimate": "centenario, non datato",
+   "access": "Visibile solo dall'angolo della strada pubblica (proprietà privata)",
+   "transport": "15 minuti a piedi dal centro storico, Borgo Venezia",
+   "story": "Questo cedro domina l'angolo fra Via Volta e Via Cipolla, abbastanza alto da fare da punto di riferimento per tutto l'incrocio molto prima che qualcuno noti la villa liberty a cui appartiene. Villa Bersani si trova in un tratto di Borgo Venezia che il riconoscimento UNESCO ha contribuito a proteggere, e il cedro del suo giardino è diventato più un pezzo di identità condivisa del quartiere che un elemento di un giardino privato. È così amato che nel maggio 2015 i residenti hanno chiesto formalmente al Comune di inserirlo nell'elenco degli alberi monumentali d'Italia per storia, valore paesaggistico ed età. La richiesta non ha portato a un'iscrizione ufficiale, a differenza dei tre alberi veronesi entrati nell'elenco nazionale, ma la fama locale dell'albero e la forma stessa dell'incrocio, che sembra disegnato per lasciargli spazio per crescere, raccontano la loro storia a prescindere dalle carte. Sta su una proprietà privata e si vede dall'angolo di strada che domina, non dall'interno di un giardino in cui il pubblico non può entrare: un limite onesto per un albero così riconoscibile."
+  },
+  "ver_008": {
+   "name": "La Collezione Storica del Parco delle Colombare",
+   "species": "Gelso bianco (Morus alba)",
+   "age_estimate": "non datata, matura",
+   "access": "Gratuito, parco pubblico",
+   "transport": "15 minuti a piedi da Piazza delle Erbe, in salita verso Valdonega",
+   "story": "Un grande gelso fa da perno a ciò che resta della collezione arborea di una tenuta privata: è uno degli esemplari più vecchi documentati nel Parco delle Colombare, un parco in collina passato di mano più volte prima che il Comune lo acquistasse nel 1967 e lo aprisse al pubblico. Il nome viene da Villa Colombari, costruita da un mercante che commerciava le terre ocra estratte nella proprietà. Un rilievo del 1946 contò circa 260 alberi d'alto fusto nella sola parte boscosa, accanto a una fascia agricola di viti, olivi, ciliegi, peri e cotogni che da allora è sbiadita ma ha lasciato una traccia nel paesaggio. Oltre al gelso, la collezione superstite comprende carpino, faggio, albero dei tulipani, ginkgo, una sterculia australiana, un cedro dell'incenso californiano e cipressi sia mediterranei sia del Kashmir: una varietà insolitamente ampia per una sola tenuta in collina. L'età dei singoli esemplari non è documentata oltre l'età generale della collezione, ma già la gamma delle specie la identifica come un vero arboreto privato fra Ottocento e primo Novecento, oggi gratuito e aperto a chiunque abbia voglia di salire sulla collina sopra il centro storico di Verona."
+  }
+ }
+}

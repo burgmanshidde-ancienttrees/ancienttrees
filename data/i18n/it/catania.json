@@ -1,0 +1,63 @@
+{
+ "_note": "it overlay for catania, written 2026-10-06 from data/cities/catania.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Catania",
+ "title": "Alberi monumentali di Catania: 4 giganti su Via Etnea",
+ "meta_description": "Gli alberi monumentali di Catania: un ficus gigante a Villa Bellini, due pini di Bunya australiani e un albero del drago delle Canarie su Via Etnea.",
+ "intro": "I quattro alberi monumentali di Catania stanno a pochi minuti l'uno dall'altro su Via Etnea. Villa Bellini, il principale giardino pubblico della città, ospita un ficus con un tronco di quattordici metri di circonferenza e una coppia di pini di Bunya australiani iscritti uno per uno nell'elenco, tutti e tre visibili gratis ogni giorno dell'anno. Poco più su lungo Via Etnea, un albero del drago delle Canarie sta dietro la biglietteria dell'Orto botanico dell'università e condivide lo scalone con un secondo albero del drago, non iscritto.",
+ "question_title": "Qual è l'albero più antico di Catania? (circa 146-165 anni)",
+ "question_meta": "L'albero datato più antico di Catania è il ficus magnolioide di Villa Bellini, piantato forse intorno al 1860. Dove si trova, e altri tre alberi.",
+ "question_answer": "L'albero di Catania con la data di impianto dichiarata più antica è il ficus magnolioide di Villa Bellini, che una fonte data al 1860 e un secondo registro indipendente colloca più vicino ai 146 anni; nessuna delle due cifre è stata ritirata, quindi questa pagina le riporta entrambe invece di sceglierne una. Gli altri tre alberi non hanno alcuna età: due pini di Bunya nello stesso giardino e un albero del drago nell'Orto botanico dell'università non sono mai stati datati da alcuna fonte, cosa normale per le loro specie e detta chiaramente invece che indovinata.",
+ "question_context": "Ogni albero di questa pagina viene dall'elenco nazionale degli alberi monumentali d'Italia, confrontato con il registro indipendente RAMI e, dove esiste, con la stampa locale. L'elenco nazionale fornisce circonferenza e posizione rilevata e raramente un'età, ed è per questo che tre di queste quattro schede non ne hanno; inoltre le sue altezze per entrambi i pini di Bunya non coincidono con le misure di RAMI, una discrepanza che la storia di ciascun albero dichiara invece di risolverla in silenzio. Tre dei quattro stanno a Villa Bellini, il principale giardino pubblico di Catania, gratuito e aperto tutti i giorni; il quarto, un albero del drago, sta pochi minuti più su lungo Via Etnea, dentro l'Orto botanico dell'università, che chiede un piccolo biglietto e chiude la domenica. Un altro grande ficus, a Villa San Saverio, sorge nel recinto di un collegio universitario con reception controllata e senza alcun accesso pubblico documentato, e per questo non compare qui.",
+ "faq": [
+  {
+   "q": "Qual è l'albero più antico di Catania?",
+   "a": "Il ficus magnolioide di Villa Bellini, datato intorno al 1860 da una fonte, anche se un altro registro colloca la sua età più vicino ai 146 anni. Nessuna delle due cifre è confermata rispetto all'altra."
+  },
+  {
+   "q": "Gli alberi monumentali di Catania si visitano gratis?",
+   "a": "Tre su quattro sì. Villa Bellini, dove stanno il ficus ed entrambi i pini di Bunya, è un parco pubblico gratuito aperto tutti i giorni. L'albero del drago sta dentro l'Orto botanico dell'università, che chiede un piccolo biglietto e chiude la domenica."
+  },
+  {
+   "q": "Si possono vedere tutti in una sola passeggiata?",
+   "a": "Sì. Stanno tutti e quattro entro circa un chilometro l'uno dall'altro, su Via Etnea o appena fuori, e da un capo all'altro sono circa quindici-venti minuti a piedi; la stazione di Catania Centrale è il punto di partenza naturale."
+  },
+  {
+   "q": "Qual è l'albero più grande di Catania?",
+   "a": "Il ficus magnolioide di Villa Bellini, con un tronco di circa quattordici metri di circonferenza e una chioma larga quarantatré metri, il secondo più grande della sua specie registrato in Sicilia."
+  }
+ ],
+ "trees": {
+  "cat_001": {
+   "name": "Il Ficus magnolioide di Villa Bellini",
+   "species": "Ficus magnolioide (Ficus macrophylla)",
+   "age_estimate": "circa 165 anni",
+   "access": "Gratuito, Villa Bellini è il principale parco pubblico di Catania, aperto tutti i giorni.",
+   "transport": "Centro di Catania, su Via Etnea; circa 10-15 minuti a piedi dalla stazione di Catania Centrale o da Piazza Stesicoro.",
+   "story": "Quattordici metri di circonferenza al tronco e una chioma larga quarantatré metri. Stando alle misure pubblicate dai registri italiani degli alberi, in Sicilia c'è un solo ficus magnolioide più grande, il gigante dell'Orto botanico di Palermo. Ma a Villa Bellini la gente si ferma per quello che succede a terra. Il Ficus macrophylla lascia scendere dai rami radici aeree che, una volta toccato il suolo, si ispessiscono in contrafforti, e questo ne ha sparse sul terreno una lunga distesa attorcigliata, il genere di forma che fa pensare subito ai tentacoli di una piovra.\n\nLa sua età è davvero incerta. Il racconto di un collaboratore indica come anno di impianto il 1860, il che gli darebbe circa 165 anni e lo avrebbe messo a dimora l'anno prima che l'Italia diventasse un solo paese. Il registro italiano che lo ha misurato più di recente indica un'età di circa 146 anni. Le due cifre non si conciliano, nessuna delle due è stata ritirata, quindi qui ci sono entrambe.\n\nLa cronaca recente è più solida. Una valutazione del 2026 giudica il suo stato di salute discreto più che buono, e la corteccia porta graffiti e vernice di visitatori che non sono riusciti a tenere le mani a posto. Passaci sotto, giragli intorno, lascialo stare. Sta nel principale parco pubblico di Catania, su Via Etnea, gratuito e aperto tutti i giorni."
+  },
+  "cat_002": {
+   "name": "Il Pino di Bunya maggiore di Villa Bellini",
+   "species": "Pino di Bunya (Araucaria bidwillii)",
+   "age_estimate": "non documentata",
+   "access": "Gratuito, Villa Bellini è il principale parco pubblico di Catania, aperto tutti i giorni.",
+   "transport": "Centro di Catania, su Via Etnea; circa 10-15 minuti a piedi dalla stazione di Catania Centrale o da Piazza Stesicoro.",
+   "story": "L'elenco nazionale degli alberi monumentali registra questo pino di Bunya a 45 metri di altezza. La cifra non regge. Un secondo registro ha misurato lo stesso esemplare a circa 22 metri, e 45 sarebbero straordinari per un'Araucaria bidwillii cresciuta in qualunque posto fuori dalla sua foresta d'origine. Il tronco è il numero più affidabile: 3,00 metri di circonferenza sulla scheda nazionale contro 3,33 sull'altra, abbastanza vicini considerati gli anni fra le due misurazioni.\n\nLa specie cresce spontanea in poche sacche del Queensland sudorientale e in nessun altro posto al mondo. Costruisce una cupola scura e simmetrica su una colonna di tronco dritta, porta foglie rigide e lucide disposte a spirale lungo i rami e lascia cadere dalla cima della chioma pigne di diversi chili, motivo per cui i parchi australiani mettono cartelli sul terreno sottostante.\n\nVilla Bellini ospita un'intera collezione di araucarie, fra cui il pino di Norfolk, il pino di Cook e l'araucaria di Cunningham, ma solo due sono iscritte singolarmente come monumentali: questa e la sua vicina, a venti o trenta metri dall'altra parte del giardino. Dal vialetto si leggono come una coppia, e non c'è motivo di vederle in altro modo. Nessuna fonte registra un'età per l'una o per l'altra. Nessuno annotò la messa a dimora, e i due registri che ne hanno misurato i tronchi non hanno azzardato una cifra."
+  },
+  "cat_003": {
+   "name": "Il Pino di Bunya minore di Villa Bellini",
+   "species": "Pino di Bunya (Araucaria bidwillii)",
+   "age_estimate": "non documentata",
+   "access": "Gratuito, Villa Bellini è il principale parco pubblico di Catania, aperto tutti i giorni.",
+   "transport": "Centro di Catania, su Via Etnea; circa 10-15 minuti a piedi dalla stazione di Catania Centrale o da Piazza Stesicoro.",
+   "story": "Quaranta centimetri di tronco sono tutta la differenza fra questo pino di Bunya e quello che sta a venti o trenta metri di distanza. L'elenco nazionale li registra come due monumenti distinti, a 3,00 e 3,40 metri di circonferenza, e un secondo registro li ha rimisurati a 3,05 e 3,33. In altezza la differenza quasi sparisce e potrebbe persino rovesciarsi: questo risulta alto circa 22,5 metri contro i 22 del vicino, uno scarto che nessuno coglierebbe dal vialetto. L'elenco nazionale assegna a questo albero 40 metri, cifra che la misura indipendente non conferma e che sembra un errore di scheda, lo stesso tipo di errore che gonfia il vicino a 45.\n\nL'Araucaria bidwillii è originaria di un piccolo tratto del Queensland sudorientale, e in un giardino siciliano fa quello che fa a casa sua: una colonna dritta e spoglia che regge una chioma scura a palchi, con foglie così rigide e appuntite che conviene non afferrarle.\n\nNessuno dei due alberi ha un'età documentata. Non sopravvive alcun registro di impianto e nessuno dei due elenchi riporta una cifra, quindi al visitatore resta la dimensione più che gli anni. I due stanno abbastanza vicini da essere un'unica tappa in una passeggiata per Villa Bellini, ed è il modo onesto di vederli: fianco a fianco, quaranta centimetri di differenza sulla carta e quasi identici dal vivo."
+  },
+  "cat_004": {
+   "name": "L'Albero del Drago dell'Orto Botanico",
+   "species": "Albero del drago (Dracaena draco)",
+   "age_estimate": "non documentata",
+   "access": "Ingresso a pagamento all'Orto Botanico (orto botanico dell'Università di Catania): 3 euro intero, 2 euro ridotto. Aperto lun-ven 9:00-19:00 (ultimo ingresso 18:00), sab 9:00-14:00 (ultimo ingresso 13:00), chiuso la domenica e i giorni festivi.",
+   "transport": "Su Via Etnea, nel centro di Catania, circa 15-20 minuti a piedi dalla stazione di Catania Centrale, vicino a Villa Bellini.",
+   "story": "Due alberi del drago affiancano lo scalone di marmo dell'edificio neoclassico dell'Orto botanico. L'elenco nazionale degli alberi monumentali ne registra uno, di due metri di circonferenza, e non dice quale. Si vedono entrambi dai piedi della scalinata, quindi sul posto la domanda si risolve da sola.\n\nLa Dracaena draco è endemica delle Canarie e non è originaria di nessun luogo vicino alla Sicilia, e ha l'aspetto che ci si aspetta: un tronco grigio chiaro che si biforca, e poi si biforca ancora, in una chioma piatta di rosette, ciascuna un ciuffo di lame rigide verde-azzurre. Le biforcazioni sono il suo modo di crescere. Il fusto si divide solo dopo la fioritura, e fiorisce a intervalli di molti anni, che è anche il motivo per cui nessuno sa dire quanti anni abbia questo albero. Un albero del drago non forma anelli annuali, quindi il metodo consueto semplicemente non funziona, e nessuna fonte ha pubblicato un'età per l'esemplare di Catania.\n\nIl nome non è decorativo. Se si incide la corteccia la linfa si ossida in rosso scuro, venduta per secoli in tutta Europa come sangue di drago e usata in vernici, tinture e medicine.\n\nA differenza degli alberi di Villa Bellini, pochi minuti più giù su Via Etnea, questo sta dietro la biglietteria dell'Orto botanico dell'Università di Catania: tre euro, due il ridotto, nei giorni feriali fino alle sette e il sabato mattina, chiuso la domenica."
+  }
+ }
+}

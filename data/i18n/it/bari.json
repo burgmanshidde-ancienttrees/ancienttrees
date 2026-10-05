@@ -1,0 +1,70 @@
+{
+ "_note": "it overlay for bari, written 2026-10-06 from data/cities/bari.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Bari",
+ "title": "Alberi monumentali di Bari: 5 giganti tra città e Murgia",
+ "meta_description": "I cinque alberi monumentali di Bari: un ombù argentino, una mangiafumo messicana, un pino scalato dai ragazzi, il leccio delle bugie e una roverella.",
+ "intro": "L'elenco regionale della Puglia riconosce come ufficialmente monumentali cinque alberi a Bari e dintorni, e questa lista li comprende tutti e cinque. Due condividono un'aiuola nei giardini di Piazza Umberto I: un ombù argentino troppo pesante per le sue stesse radici e una nolina messicana che i baresi chiamano la mangiafumo. Un terzo, un pino d'Aleppo segnato dagli anni a Carrassi, viene scalato dai ragazzi del quartiere da decenni. Gli altri due stanno a Toritto, nella Murgia, a mezz'ora di distanza: l'Albero della Bugia di Quasano e una roverella dentro una masseria in attività, raggiungibile solo prenotando una passeggiata.",
+ "question_title": "Qual è l'albero più antico di Bari? (circa 125-175 anni)",
+ "question_meta": "L'albero più antico di Bari potrebbe essere l'Albero della Bugia di Quasano, un leccio ottocentesco a 30 km, alla pari con il Pino di Carrassi.",
+ "question_answer": "In base alle prove migliori disponibili, l'albero più antico di Bari è l'Albero della Bugia di Quasano, un leccio nella frazione murgiana di Toritto piantato nella seconda metà dell'Ottocento, il che gli dà circa 125-175 anni. Il Pino di Carrassi, dentro la città, rientra in un intervallo quasi identico: un botanico dell'Università di Bari lo stima intorno ai 150 anni, avvertendo che datare con precisione l'uno o l'altro è molto difficile.",
+ "question_context": "Qui l'età è questione di prove migliori più che di precisione, perché nessuno dei cinque alberi monumentali ufficiali di Bari ha una data di impianto misurata. L'Albero della Bugia di Quasano ha la base documentaria più solida: secondo le fonti locali non compare nei registri fondiari della tenuta prima della metà dell'Ottocento, e il suo nome viene dalle lamentele che i contadini si scambiavano sotto la sua chioma negli anni disillusi dopo l'Unità d'Italia. Il Pino di Carrassi si basa sulla stima di circa un secolo e mezzo di un botanico dell'Università di Bari, data con la stessa cautela. I due alberi più giovani, un ombù argentino e una nolina messicana che condividono un'aiuola in Piazza Umberto I davanti alla stazione centrale, non si possono datare con gli anelli di crescita (tecnicamente sono entrambi erbe giganti, non veri alberi) né hanno un impianto documentato. La roverella della Masseria Pilapalucci non ha alcuna registrazione dell'età. L'albero di Quasano e la roverella della masseria sono vere gite in giornata, a circa 30 km dal centro e senza treno diretto; gli altri tre stanno entro pochi chilometri da Bari Centrale.",
+ "faq": [
+  {
+   "q": "Qual è l'albero più antico di Bari?",
+   "a": "Probabilmente l'Albero della Bugia di Quasano, un leccio di circa 125-175 anni nella frazione murgiana di Toritto, anche se il Pino di Carrassi, in città, è stimato a un'età molto simile e nessuno dei due si può datare con precisione."
+  },
+  {
+   "q": "Perché Bari ha così pochi alberi monumentali?",
+   "a": "L'elenco regionale pugliese degli alberi monumentali ne riconosce solo cinque in tutto il comune di Bari e nei dintorni. È una designazione giuridica rigorosa, non un conteggio di ogni albero notevole della zona, e questa lista li comprende tutti e cinque."
+  },
+  {
+   "q": "Gli alberi di Bari si vedono gratis?",
+   "a": "Quasi tutti. L'ombù e la mangiafumo stanno nei giardini pubblici di Piazza Umberto I, il pino a un angolo di strada aperto a Carrassi e l'Albero della Bugia lungo una strada pubblica a Quasano, nessuno con biglietto. Il quinto, una roverella della Masseria Pilapalucci a Toritto, sta in una masseria privata in attività e si visita solo durante gli eventi programmati dalla masseria."
+  },
+  {
+   "q": "Che cosa significa «Albero della Bugia»?",
+   "a": "È il nome che il leccio di Quasano si è guadagnato con le lamentele che i contadini sfogavano sotto la sua chioma sulle promesse mancate dei patrioti dell'Unità d'Italia, e il nome è sopravvissuto alle lamentele."
+  }
+ ],
+ "trees": {
+  "bar_001": {
+   "name": "L'Ombù di Piazza Umberto I",
+   "species": "Ombù (Phytolacca dioica)",
+   "age_estimate": "circa 70 anni",
+   "access": "Gratuito, giardino pubblico, aperto tutti i giorni",
+   "transport": "Stazione di Bari Centrale, circa 5 minuti a piedi",
+   "story": "Salvare uno dei quattro alberi monumentali ufficiali di Bari costerebbe, secondo un preventivo, circa mille euro, e quei soldi non sono stati spesi. L'albero è un ombù, sta nei giardini di Piazza Umberto I a cinque minuti dalla stazione centrale, ed è inclinato. Si inclina perché da anni si allunga verso la luce oltre i lecci che lo circondano, e perché l'asfalto steso fino alla sua base ha danneggiato il piatto radicale. Un'associazione civica del quartiere ha messo tutto questo in una lettera al sindaco, chiedendo un intervento modesto.\n\nLa specie è più strana di quanto l'albero lasci intendere. La Phytolacca dioica non è un albero in senso botanico ma un'erba gigante delle pampas sudamericane, con un tronco gonfio di tessuti che immagazzinano acqua invece che di legno, ed è per questo che nessuno può datarne una contando gli anelli. L'Italia la importò a metà Ottocento come curiosità ornamentale, e quasi nessuno di quegli esemplari ha mai raggiunto queste dimensioni. Questo misura 2,5 metri di circonferenza ed è alto circa sei metri, basso, massiccio e grigio, e sia l'elenco pugliese sia quello nazionale lo classificano monumentale in base a queste misure.\n\nLa sua età è un'ipotesi dei suoi stessi difensori, la cui lettera dice che fu probabilmente piantato negli anni Cinquanta. Nessuno ha fissato una data più sicura. Se ne conosci una, scrivici."
+  },
+  "bar_002": {
+   "name": "La Mangiafumo di Piazza Umberto I",
+   "species": "Pianta mangiafumo (Nolina longifolia)",
+   "access": "Gratuito, giardino pubblico, aperto tutti i giorni",
+   "transport": "Stazione di Bari Centrale, circa 5 minuti a piedi",
+   "story": "A Bari la chiamano la mangiafumo, convinti che inghiotta i gas di scarico delle strade intorno. Questa parte è folclore. Non è folclore la base: tre metri di circonferenza, gonfia come un grigio piede d'elefante che trattiene acqua, in un giardino pubblico a due minuti dalla stazione centrale.\n\nLa Nolina longifolia è una pianta messicana dei pendii calcarei secchi d'altura, e gli esemplari che l'Europa piantò nei suoi giardini come curiosità ornamentali sono rimasti quasi tutti modesti. Questo no. Tre metri di circonferenza sotto quattro metri e mezzo di altezza sono bastati perché l'elenco pugliese e quello nazionale la riconoscessero come albero monumentale, uno dei soli quattro di tutta Bari e uno dei 74 della regione. Un secondo di quei quattro, l'ombù, sta a pochi metri nella stessa aiuola, quindi si può vedere metà degli alberi ufficialmente notevoli della città senza nemmeno voltarsi.\n\nI giardini intorno nacquero dalla fusione di due giardini ottocenteschi e furono ricostruiti nel 1905 attorno alla statua equestre di Umberto I. L'arrivo della mangiafumo, invece, nessuno lo registrò. Non forma anelli da contare e non è emersa alcuna data di impianto, per cui arriva su questa pagina senza neppure un intervallo di età. Se sai quando fu piantata, scrivici."
+  },
+  "bar_003": {
+   "name": "Il Pino di Carrassi",
+   "species": "Pino d'Aleppo (Pinus halepensis)",
+   "age_estimate": "circa 150 anni",
+   "access": "Gratuito, aiuola pubblica a bordo strada. L'albero sta in una piccola aiuola recintata dietro un muretto di cemento proprio all'angolo della strada, visibile e raggiungibile dal marciapiede a qualsiasi ora; nessun cancello, biglietto o permesso.",
+   "transport": "Quartiere Carrassi, circa 3 km a sud della stazione di Bari Centrale; raggiungibile con gli autobus urbani lungo Corso Alcide De Gasperi, nessuna stazione ferroviaria vicina.",
+   "story": "Una ventina d'anni fa una forte nevicata spezzò un ramo di questo pino d'Aleppo, e i forestali di Bari si limitarono a tagliare il moncone a filo e a lasciare in piedi il resto, quasi sei metri di circonferenza al tronco. Cresce in un'aiuola recintata a un angolo di strada a Carrassi, dietro un muretto di cemento così basso che generazioni di ragazzi del quartiere l'hanno scavalcato per arrampicarsi sull'albero, cosa che il giornale locale racconta come un segreto di Pulcinella più che come un problema che qualcuno abbia mai fermato.\n\nÈ uno dei soli quattro alberi di tutta Bari riconosciuti dall'elenco pugliese dei monumentali, anche se perfino le carte discutono su cosa sia: la scheda ufficiale lo chiama pino d'Aleppo, un'altra indagine botanica chiama lo stesso albero pino domestico, e nessuno ha risolto la questione. Un botanico dell'Università di Bari gli attribuisce circa un secolo e mezzo, la stessa stima che dà per un secondo albero monumentale lontano da qui, avvertendo nella stessa frase che datarli con precisione è quasi impossibile.\n\nNon va confuso con il pino che sorgeva un incrocio più avanti sulla stessa strada ed è stato abbattuto nel 2025. Questo, all'angolo fra De Gasperi e Via Ugo La Malfa, è ancora lì."
+  },
+  "bar_004": {
+   "name": "L'Albero della Bugia di Quasano",
+   "species": "Leccio (Quercus ilex)",
+   "age_estimate": "piantato nella seconda metà dell'Ottocento, quindi circa 125-175 anni",
+   "access": "Gratuito, all'aperto a un incrocio nel centro della frazione di Quasano; nessun cancello, biglietto o permesso.",
+   "transport": "Circa 30 km dal centro di Bari, senza collegamento ferroviario diretto; raggiungibile con la rete di autobus regionali STP via Toritto, o in auto lungo la SP231, circa 45 minuti a tratta. Una vera gita in giornata più che una tappa in città.",
+   "story": "A Quasano il leccio si chiama l'Albero della Bugia. Il nome è una lamentela rimasta in piedi: dopo l'Unità d'Italia i contadini si riunivano sotto la sua chioma per sfogarsi sulle promesse che i patrioti garibaldini avevano fatto e mai mantenuto, e l'amarezza è diventata il nome dell'albero. Nessuno annotò una data di impianto, ma la sua assenza dai registri fondiari della tenuta prima delle divisioni delle terre di metà Ottocento è quanto di più simile a un certificato di nascita possieda, e lo colloca oltre il secolo e mezzo.\n\nSta esattamente dove avrebbe potuto ascoltare quelle lamentele, proprio davanti al cancello della vecchia masseria baronale di Quasano, piazzato così di traverso che un tempo i carri dovevano aggirarlo per passare. Di fronte c'è una piccola cappella, poi inglobata in un edificio universitario. Con 3,2 metri di circonferenza e 11 di altezza, nel 2021 è entrato nell'elenco pugliese degli alberi monumentali, tutelato dalla legge nazionale per gli alberi di età, dimensioni o storia eccezionali. Dal 2006 gli italiani l'hanno segnalato sette volte ai Luoghi del Cuore del FAI, una serie di affetto insolitamente lunga per un albero che porta il nome di una bugia.\n\nIl cancello che ostruisce oggi non porta a niente di più grandioso di piccoli poderi spartiti, perché la vecchia tenuta è stata smembrata da tempo. L'albero è sopravvissuto all'ordine di cose di cui si lamentava."
+  },
+  "bar_005": {
+   "name": "La Roverella di Pilapalucci",
+   "species": "Roverella (Quercus pubescens)",
+   "age_estimate": "non documentata",
+   "access": "Masseria privata in attività (Masseria Storica Pilapalucci, complesso del Cinquecento iscritto all'ADSI, l'Associazione Dimore Storiche Italiane). Non si visita presentandosi senza preavviso; l'albero sta all'interno della proprietà, fra uliveti e mandorleti. È inserito negli eventi pubblici programmati della masseria, come la passeggiata di Ferragosto, prenotabili da chiunque; controlla il calendario della masseria prima di andare.",
+   "transport": "Solo in auto: nessun mezzo pubblico raggiunge in tempi ragionevoli le contrade rurali di Toritto da Bari. Circa 30-35 minuti di guida dal centro di Bari.",
+   "story": "La Roverella di Pilapalucci cresce dentro le mura di una masseria in attività, il che significa che nessuno ci arriva per caso. La Masseria Storica Pilapalucci è un complesso fortificato del Cinquecento, iscritto fra le dimore storiche private d'Italia, e questa roverella sta fra i suoi uliveti e mandorleti, non lungo una strada pubblica. La masseria apre i cancelli per eventi programmati, fra cui una passeggiata guidata negli uliveti che si ferma all'albero che considera il suo esemplare monumentale: è così che un estraneo può arrivare a stargli sotto.\n\nLa roverella è la quercia da lavoro dell'altopiano delle Murge, fatta per il suolo calcareo sottile e le estati secche più che per lo spettacolo, e questa ha fatto la cosa ordinaria per moltissimo tempo: un tronco di poco più di tre metri di circonferenza, una chioma che sale fino a venti metri. Nessuno ha annotato quando fu piantata. Secoli di lavoro agricolo intorno a una masseria lasciano di rado appunti del genere, e l'elenco regionale che la tutela registra dimensioni e specie, mai una data di nascita.\n\nLa visita è reale, solo condizionata. Controlla il calendario degli eventi della masseria prima di metterti in viaggio verso Toritto, e vai in un giorno in cui è davvero aperta."
+  }
+ }
+}

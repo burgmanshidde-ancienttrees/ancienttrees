@@ -1,0 +1,126 @@
+{
+ "_note": "it overlay for padua, written 2026-10-06 from data/cities/padua.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Padova",
+ "title": "Alberi monumentali di Padova: 12 alberi in un chilometro",
+ "meta_description": "Gli alberi più antichi di Padova, attorno all'Orto Botanico del 1545, a un chiostro del Santo e a un parco pubblico, in poco più di un chilometro.",
+ "intro": "Gli alberi più antichi di Padova rispondono quasi tutti a un'università. L'Orto Botanico del 1545, il primo orto universitario del mondo, custodisce ancora sette degli esemplari che lo hanno reso famoso, fra cui una palma nana attorno a cui Goethe costruì un libro e il primo cedro dell'Himalaya d'Italia. Una magnolia cresce di traverso in un chiostro dietro la Basilica di Sant'Antonio, due platani e un bagolaro sdraiato condividono un parco pubblico a circa un chilometro, e una coppia di sofore segna un cortile universitario che esiste dal Trecento. Tutti in poco più di un chilometro a piedi.",
+ "question_title": "Qual è l'albero più antico di Padova? (circa 440 anni)",
+ "question_meta": "L'albero più antico di Padova è la Palma di Goethe, una palma nana dell'Orto Botanico piantata nel 1585, di circa 440 anni.",
+ "question_answer": "L'albero più antico di Padova è la Palma di Goethe (Palma di San Pietro), una palma nana dell'Orto Botanico, piantata nel 1585 e di circa 440 anni. Cresce dentro una serra ottagonale costruita apposta, in Via Orto Botanico, a cinque minuti a piedi dalla Basilica di Sant'Antonio, ed è uno degli esemplari più antichi ancora vivi in tutto l'orto. L'età confermata successiva su questa pagina è quella del platano orientale dello stesso orto, circa 345 anni.",
+ "question_context": "L'Orto Botanico di Padova, patrimonio mondiale UNESCO dal 1997, fu fondato nel 1545 come primo orto botanico universitario del mondo, e la Palma di Goethe è una delle poche piante ancora vive risalenti a un periodo vicino ai suoi primi secoli. Johann Wolfgang von Goethe la vide durante il viaggio in Italia del 1786 e la usò nei suoi scritti botanici sulla metamorfosi delle piante, ed è per questo che porta il suo nome accanto a quello locale più antico, Palma di San Pietro. Da vicino non è un tronco solo ma un cespo di circa venticinque fusti, e d'inverno vive al riparo della sua serra di vetro. Gli altri alberi antichi di Padova sono più giovani e, al confronto, più ordinari: una magnolia da giardino, una coppia di platani in un parco, un bagolaro che la città ha tutelato per la forma più che per le dimensioni. Nessuno si avvicina ai quattro secoli e mezzo della palma sotto vetro.",
+ "faq": [
+  {
+   "q": "Qual è l'albero più antico di Padova?",
+   "a": "La Palma di Goethe, una palma nana dell'Orto Botanico piantata nel 1585 e di circa 440 anni, che supera gli inverni padovani dentro la sua serra di vetro."
+  },
+  {
+   "q": "Si può andare a piedi da un albero all'altro?",
+   "a": "Quasi sempre. L'Orto Botanico e il chiostro della Basilica di Sant'Antonio stanno a poche centinaia di metri l'uno dall'altro. Il Parco Treves è circa un chilometro a nord dell'orto, e Piazza Capitaniato, vicino al centro storico universitario, chiude un giro di poco più di un chilometro per l'intera lista."
+  },
+  {
+   "q": "Si paga per vederli?",
+   "a": "L'Orto Botanico è a pagamento, e il biglietto copre la Palma di Goethe, il platano, il ginkgo, la magnolia del 1786, il cedro dell'Himalaya, una criptomeria che sarebbe stata piantata nel 1850 e un secondo ginkgo in un'altra parte dell'orto. La magnolia del chiostro del Santo si vede con il biglietto cumulativo dei musei della Basilica. Il Parco Treves e Piazza Capitaniato sono luoghi pubblici, gratuiti e aperti."
+  },
+  {
+   "q": "Quale ha la storia migliore?",
+   "a": "La Palma di Goethe. Una sola palma nana aiutò a ispirare una delle teorie botaniche di Goethe, e oggi vive dentro una serra ottagonale costruita apposta per lei."
+  }
+ ],
+ "trees": {
+  "pad_001": {
+   "name": "La Palma di Goethe",
+   "species": "Palma nana (Chamaerops humilis)",
+   "age_estimate": "circa 440 anni",
+   "access": "A pagamento (serve il biglietto d'ingresso all'Orto Botanico; prezzo attuale non verificato)",
+   "transport": "Circa 1,9 km, 25-30 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "Goethe attraversò questo orto nel 1786, si fermò davanti a una palma e ne uscì con l'inizio di una teoria. Stava lavorando al suo saggio sulla metamorfosi delle piante, l'idea che ogni organo di una pianta sia una foglia trasformata, e questa palma nana, le cui fronde cambiano forma man mano che salgono lungo il fusto, è l'esemplare a cui si attribuisce il merito di averlo aiutato. È in terra dal 1585, una delle prime piante messe a dimora dopo la fondazione dell'Orto Botanico nel 1545, il che le dà circa 440 anni. La Chamaerops humilis è una pianta mediterranea che non sopporta le gelate venete, quindi l'orto le ha costruito una casa di vetro intorno, una serra ottagonale alzata su misura per un solo arbusto. Da vicino non è un unico tronco ma un cespo di circa 25 fusti, ciascuno di circa mezzo metro di circonferenza, 4,5 metri in tutto. L'elenco italiano giudica buono il suo stato di salute, verificato l'ultima volta nel luglio 2026, e la registra con un secondo nome, Palma di San Pietro, che è come la chiamava Padova molto prima che arrivasse un poeta tedesco. Un pannello accanto al vetro racconta il resto. È l'albero meno imponente di questa lista e l'unico finito in un libro su come sono fatte le piante."
+  },
+  "pad_002": {
+   "name": "Il Platano orientale dell'Orto Botanico",
+   "species": "Platano orientale (Platanus orientalis)",
+   "age_estimate": "circa 345 anni",
+   "access": "A pagamento (serve il biglietto d'ingresso all'Orto Botanico)",
+   "transport": "Circa 1,9 km, 25-30 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "Un fulmine ha aperto questo platano dalla base verso l'alto, e lui è andato avanti. Il tronco è cavo, un guscio in cui si può guardare dentro, e l'albero mette ancora le foglie ogni primavera, perché i tessuti che portano l'acqua stanno nel legno esterno e non nel cuore. Fu piantato nel 1680 secondo il pieghevole per i visitatori dell'orto, il che gli dà circa 345 anni, ed è stato misurato a 6,2 metri di circonferenza e quasi 25 di altezza. Vale la pena essere precisi sulla specie: questo è il Platanus orientalis, il platano orientale, spontaneo in Italia solo in poche sacche di Calabria e Sicilia. Quasi ogni albero chiamato platano in una città europea, compresi altri due di questa lista, è l'ibrido arrivato dopo. La data si basa su quel pieghevole e sul fatto che le fonti italiane di storia dei giardini concordano sugli stessi due dettagli, l'impianto del 1680 e il fulmine, più che su una seconda scheda di registro: va letta come ben confermata, non come documentata due volte. Com'era da qui il suo primo secolo: Venezia governava ancora Padova e aveva davanti altri cento anni di repubblica, e l'orto botanico intorno aveva già 135 anni ed era occupato a catalogare le piante in arrivo dalle Americhe. L'elenco giudica buone le sue condizioni."
+  },
+  "pad_003": {
+   "name": "Il Ginkgo innestato dell'Orto Botanico",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "circa 275 anni",
+   "access": "A pagamento (serve il biglietto d'ingresso all'Orto Botanico)",
+   "transport": "Circa 1,9 km, 25-30 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "A metà Ottocento qualcuno innestò un ramo femminile su questo ginkgo maschio, così qui un solo albero libera polline in primavera e lascia cadere frutti in autunno dallo stesso tronco. I ginkgo sono normalmente o maschi o femmine, e i frutti femminili sono famosi per un odore da animale morto, quindi l'innesto fu o un esercizio didattico o uno scherzo sopravvissuto a tutti i suoi autori. L'albero fu piantato nel 1750, fra i primi della sua specie portati in Italia. Il registro dell'orto si spinge oltre e dice che potrebbe essere stato il primo del paese e il secondo d'Europa, dopo un albero piantato a Utrecht nel 1727; va preso come un'affermazione del registro più che come un fatto accertato. È alto da 17 a 20 metri su un tronco di quattro metri di circonferenza. La specie è l'ultima sopravvissuta di un ordine di piante diffuso prima dei dinosauri e ridotto a pochi boschetti coltivati in Cina quando i collezionisti europei la trovarono, una biografia che nient'altro in questo orto può eguagliare. L'elenco giudica le sue condizioni discrete più che buone, con l'ultimo controllo nel luglio 2026, quindi non è un albero senza problemi. Vieni a novembre lo stesso."
+  },
+  "pad_004": {
+   "name": "La Magnolia del 1786 dell'Orto Botanico",
+   "species": "Magnolia (Magnolia grandiflora)",
+   "age_estimate": "circa 240 anni",
+   "access": "A pagamento (serve il biglietto d'ingresso all'Orto Botanico)",
+   "transport": "Circa 1,9 km, 25-30 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "Questa magnolia fu piantata nel 1786, lo stesso anno in cui Goethe varcò il cancello. È una delle prime Magnolia grandiflora messe a dimora in Italia, a quanto si dice fra le più vecchie ancora in piedi in Europa, e sta in questo arboreto da 240 anni, con una chioma larga circa 13 metri. La specie era arrivata in Europa dal sudest americano solo qualche decennio prima, e il compito di un orto botanico negli anni Ottanta del Settecento era esattamente questo: mettere in terra la nuova pianta e scoprire se superava l'inverno. Lo superò. La sua circonferenza è una piccola lezione su come leggere i registri. Una scheda riporta 2,22 metri, da un documento che il registro stesso segnala come da aggiornare, mentre una nuova misura del 2026 dà 2,54 metri. Gli alberi non si restringono, quindi la cifra più vecchia è quella di cui diffidare. La magnolia grandiflora è sempreverde, scura e coriacea tutto l'anno, e questo fa della fioritura l'evento: fiori bianco crema, profumati di limone, grandi come un piatto, che si aprono pochi alla volta, così l'albero non è mai coperto tutto insieme e non ha mai davvero finito. L'altra famosa magnolia di Padova, a 300 metri in un chiostro della Basilica, è un albero diverso piantato una generazione dopo. Le due vengono confuse di continuo, anche da fonti che dovrebbero saperne di più."
+  },
+  "pad_005": {
+   "name": "La Magnolia del Santo",
+   "species": "Magnolia (Magnolia grandiflora)",
+   "age_estimate": "circa 215 anni",
+   "access": "Il chiostro si trova dentro il complesso museale della Basilica e si raggiunge con il biglietto cumulativo dei musei (secondo santantonio.org: mar-dom 9:00-13:00 e 14:00-18:00, chiuso il lunedì; biglietto intero indicato a 10 euro e ridotto a 7 euro alla ricerca del 6 agosto 2026, non riverificato di persona alla biglietteria)",
+   "transport": "Circa 1,7 km, 25 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "Il chiostro prende il nome dall'albero. Il Chiostro della Magnolia è il primo cortile della Basilica di Sant'Antonio, la chiesa di pellegrinaggio del Duecento che attira visitatori a Padova da 800 anni, e la magnolia al centro fu piantata nel 1810 secondo il racconto della Basilica stessa. Questo le dà circa 215 anni, 25 metri di altezza e 4,4 di circonferenza, ed è iscritta nell'elenco nazionale degli alberi monumentali con un suo codice. Quello che vale il biglietto è il portamento. I rami partono bassi dal tronco e diversi poggiano a terra, così invece di una colonna con una chioma in cima si ha una stanza verde con le pareti, che riempie quasi tutto il cortile. L'albero fu piantato mentre l'Italia settentrionale era ancora contesa fra Francia e Austria, ed è cresciuto da allora nello stesso quadrato d'aria chiuso, riparato su quattro lati dalla pietra, che è più o meno il motivo per cui una magnolia della Georgia e della Florida si trova così bene così a nord. Non va confusa con la magnolia del 1786 dell'Orto Botanico, 300 metri a sud. Padova ha tre magnolie famose con tre date diverse e le fonti le mescolano regolarmente. Questa è quella dentro il complesso museale della Basilica, raggiungibile con il biglietto cumulativo, e chiusa il lunedì."
+  },
+  "pad_006": {
+   "name": "Il Grande Platano del Parco Treves",
+   "species": "Platano comune (Platanus x acerifolia)",
+   "age_estimate": "circa 155 anni",
+   "access": "Gratuito, parco pubblico",
+   "transport": "Circa 1,6 km, 24 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "Quarantotto metri. È questo che ha fatto entrare questo platano nell'elenco nazionale degli alberi monumentali, non l'età, che con circa 155 anni è piuttosto ordinaria per la specie. Sta nel Parco Treves de' Bonfili, un piccolo parco costruito sulle mura veneziane cinquecentesche di Padova, e nel 2022 il suo tronco è stato misurato a 6,37 metri di circonferenza. Il parco è il motivo per cui è cresciuto così. Giuseppe Jappelli lo disegnò fra il 1829 e il 1835 per i fratelli Treves de' Bonfili come primo giardino progettato di Padova, in parte collezione botanica privata e in parte paesaggio romantico, piantato per l'effetto e per il lungo periodo da persone che si aspettavano di essere morte prima di vederlo funzionare. Delle architetture non resta quasi nulla: un tempietto neoclassico, la casa del giardiniere e una piccola edicola con cariatidi, e questo è tutto. Gli alberi sono sopravvissuti all'architettura. L'elenco giudica le condizioni di questo esemplare discrete più che buone, il che a 48 metri non sorprende, ed è bene saperlo prima di fermarcisi sotto con il vento. Altri due alberi iscritti stanno entro 60 metri, un secondo platano e un bagolaro sdraiato, il che ne fa la più breve passeggiata fra alberi della città che valga la pena: tre alberi tutelati, una decina di minuti, nessun biglietto."
+  },
+  "pad_007": {
+   "name": "Il Secondo Platano del Parco Treves",
+   "species": "Platano comune (Platanus x acerifolia)",
+   "age_estimate": "circa 150 anni (non datato dal registro; stimato dall'albero vicino)",
+   "access": "Gratuito, parco pubblico",
+   "transport": "Circa 1,6 km, 25 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "Nessuno ha datato questo albero. Sta a circa 60 metri dal grande platano del Parco Treves, ha un suo codice nello stesso elenco nazionale degli alberi monumentali, nel 2022 è stato misurato a 5,05 metri di circonferenza, e il campo dell'età nella sua scheda è semplicemente vuoto. I 150 anni indicati qui sono un'inferenza dal vicino, che sta nello stesso parco e quasi certamente fu piantato insieme a lui, e vanno letti come una stima e non come un fatto. Tutto il resto è confermato due volte: specie, posizione, stato di tutela. È il secondo per grandezza fra i platani del parco e, a differenza del più grande, l'elenco giudica buone le sue condizioni, quindi l'albero più piccolo è quello più sano. Entrambi sono cresciuti dentro un giardino che Giuseppe Jappelli disegnò negli anni Trenta dell'Ottocento perché sembrasse paesaggio più che parco, ed entrambi hanno attraversato il secolo in cui i bastioni di Padova smisero di essere difese e diventarono un posto dove portare a spasso il cane. Vale la pena vederli insieme anche solo per il confronto: stessa specie, stesso suolo, stessa partenza, cinque metri di tronco contro sei e mezzo. Gli alberi che partono insieme raramente arrivano alla stessa misura, e stare fra questi due è il modo più chiaro per vedere quanto della vita di un albero dipenda da dove gli è capitato di finire."
+  },
+  "pad_008": {
+   "name": "Il Bagolaro sdraiato del Parco Treves",
+   "species": "Bagolaro americano (Celtis occidentalis)",
+   "age_estimate": "non stabilita dal registro; maturo e monumentale per forma più che per età misurata",
+   "access": "Gratuito, parco pubblico",
+   "transport": "Circa 1,7 km, 26 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "Questo albero è nell'elenco nazionale per avere la forma sbagliata. Il bagolaro sdraiato del Parco Treves misura 1,6 metri di circonferenza, che il registro stesso definisce nulla di speciale per la specie; è stato iscritto per portamento, forma e valore paesaggistico invece che per le dimensioni. Invece di salire si inclina, allungando i rami di lato e bassi sopra il prato. Come sia arrivato a crescere così non è registrato. Circola una storia locale su una tempesta, ma il registro non ne parla e non siamo riusciti a confermarla da una seconda fonte, quindi resta una storia finché qualcuno non dimostra il contrario. Quello che risulta agli atti: nessuna età, condizioni discrete e un codice monumentale nazionale tutto suo, il quarto assegnato dentro questo piccolo parco. Il Celtis occidentalis è un albero nordamericano, abbastanza comune nei parchi italiani come specie robusta da ombra e da viale, il che rende l'iscrizione insieme più strana e più bella. Qualcuno in un ufficio ha deciso che un bagolaro qualunque cresciuto di sbieco in un giardino di Jappelli meritasse la stessa tutela legale di alberi dieci volte più grandi, e aveva ragione. È anche, fra i tre alberi tutelati del parco, quello davanti a cui è più facile passare senza accorgersene, e sarebbe un peccato sprecare così la deviazione."
+  },
+  "pad_009": {
+   "name": "Le Sofore di Piazza Capitaniato",
+   "species": "Sofora del Giappone (Styphnolobium japonicum)",
+   "age_estimate": "circa 165 anni",
+   "access": "Gratuito, piazza pubblica aperta",
+   "transport": "Circa 1,1 km, 17 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "Questi due alberi furono piantati nel 1861, quando Padova era ancora austriaca. Cinque anni dopo il Veneto votò per entrare nel nuovo Regno d'Italia, e le sofore di Piazza Capitaniato hanno attraversato tutto quello che è venuto dopo, in una piazza che era già da sei secoli alla sua seconda vita. Nacque come cortile della reggia trecentesca dei Carraresi e oggi appartiene all'Università di Padova, con il Palazzo del Capitanio sul fronte, aperta su tutti i lati e liberamente accessibile a qualsiasi ora. Il registro conta due alberi. Un visitatore conta un solo impianto. Stanno a circa 20 metri l'uno dall'altro sull'asse della piazza: il più grande ha 4,6 metri di circonferenza ed è datato a quella campagna del 1861, il secondo non ha data nel registro ed è in condizioni migliori del vicino, ed è per questo che qui sono descritti come un'unica scheda. Le fonti di storia locale indicano lo stesso anno di impianto in modo indipendente, e i conti tornano. Lo Styphnolobium japonicum arrivò in Europa dalla Cina tramite i collezionisti gesuiti, nonostante il nome, e il suo asso nella manica è il tempismo: fiorisce ad agosto, quando quasi nient'altro in una piazza di città fa qualcosa, e per settimane lascia cadere piccoli fiori color crema sul selciato. Gli studenti di Padova ci passano in mezzo andando a lezione da prima che Padova fosse italiana."
+  },
+  "pad_010": {
+   "name": "Il Cedro dell'Himalaya dell'Orto Botanico",
+   "species": "Cedro dell'Himalaya (Cedrus deodara)",
+   "age_estimate": "circa 198 anni",
+   "access": "A pagamento (serve il biglietto d'ingresso all'Orto Botanico)",
+   "transport": "Circa 1,9 km, 25-30 minuti a piedi dalla stazione ferroviaria di Padova",
+   "story": "La specie arrivò in Europa nel 1822, e sei anni dopo questo esemplare fu messo a dimora qui, il primo Cedrus deodara coltivato in Italia. Il racconto dell'orto stesso lo colloca fra la Montagnola, una collinetta artificiale costruita nel Settecento, e la Fontana delle Quattro Stagioni, e ogni cedro deodara piantato in seguito nel paese discende da alberi come questo.\n\nNella sua Himalaya d'origine il cedro deodara cresce fra 1.200 e 3.500 metri, su versanti montani d'inverno molto più freddi della pianura veneta, e anche per questo si è adattato così volentieri alla coltivazione qui. Due secoli dopo misura circa quattro metri e mezzo di circonferenza, una delle conifere più vecchie di un arboreto che ospita anche cedri dell'Atlante e cedri del Libano per il confronto: una lezione piantata su come il genere Cedrus si sia diviso fra tre catene montuose separate.\n\nLa nota onesta: l'elenco italiano degli alberi monumentali giudica scadente il suo stato di salute attuale, il tipo di valutazione che invita a fare attenzione, non a stare alla larga. Quasi duecento anni e primo della sua specie nel paese sono molta biografia per un solo albero, e la sta portando dentro la vecchiaia, non fuori da essa."
+  },
+  "pad_011": {
+   "name": "La Criptomeria dell'Orto Botanico",
+   "species": "Criptomeria (Cryptomeria japonica)",
+   "age_estimate": "circa 175 anni",
+   "access": "A pagamento (serve il biglietto d'ingresso all'Orto Botanico)",
+   "transport": "Circa 1,9 km, 25-30 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "Un tronco sottile per l'età che gli si attribuisce: si dice che questa criptomeria sia entrata nell'orto botanico di Padova nel 1850, il che le darebbe circa 175 anni, e ottantatré centimetri di circonferenza sono una prova modesta per un albero che ha avuto tutto quel tempo. Il registro che la riporta attenua la sua stessa data con un «sarebbe», invece di darla per certa, e un blog locale sugli alberi colloca in modo indipendente lo stesso vecchio esemplare sul vialetto che porta alla biglietteria dell'orto, senza aggiungere una data più solida.\n\nLa Cryptomeria japonica è l'albero nazionale del Giappone, apprezzata là per il legno a fibra dritta e piantata dai boschi sacri dei templi ai versanti rimboschiti; in un orto botanico europeo arrivava di solito come curiosità, con la stessa stagione di raccolta di piante esotiche che riempì l'orto di Padova di una magnolia del 1786 e di un ginkgo innestato datato al 1750. Questa sta a poche decine di metri da entrambi, oltre che da un platano orientale, parte dello stesso gruppo vicino al vialetto principale dell'orto.\n\nL'orto, il più antico orto botanico del suo genere ancora nella sede originale in tutto il mondo, richiede il normale biglietto d'ingresso. Se la data del 1850 è più di un'ipotesi di lavoro, scrivici."
+  },
+  "pad_012": {
+   "name": "Il Secondo Ginkgo dell'Orto Botanico",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "access": "A pagamento (serve il biglietto d'ingresso all'Orto Botanico)",
+   "transport": "Circa 1,9 km, 25-30 minuti a piedi dalla stazione ferroviaria di Padova; fermata di autobus o tram più vicina non verificata",
+   "story": "L'orto botanico di Padova ha due ginkgo per cui vale la pena fermarsi, ed entrambi hanno lo stesso curioso trucco: un ramo femminile innestato su un albero maschio, così un solo tronco produce i frutti molli e maleodoranti che un ginkgo tutto maschio non darebbe mai. Il più famoso dei due è datato al 1750. Questo è il secondo, il «Ginko dell'Orto Botanico n. 2» del registro, un albero distinto di tre metri di circonferenza, senza una data di impianto propria agli atti.\n\nIl Ginkgo biloba è dioico, cioè ogni albero nasce rigorosamente maschio o rigorosamente femmina, e i giardini europei innestano rami femminili su esemplari maschi almeno dal Settecento, in parte per curiosità e in parte perché i vivai riuscivano a fornire con sicurezza alberi maschi. Entrambi i ginkgo di Padova portano l'innesto, il che fa di questo orto un posto insolitamente diretto per vedere il trucco eseguito due volte.\n\nAlto diciassette metri su tre di circonferenza, sta a un tiro di sasso dal ginkgo più noto, in un orto che richiede il normale biglietto d'ingresso. Nessuno ha registrato quando fu piantato. Se lo sai, diccelo."
+  }
+ }
+}
