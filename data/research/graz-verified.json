@@ -1,0 +1,61 @@
+[
+  {
+    "id": "grz_014",
+    "name": "The Lustbuhel Sweet Chestnut",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "",
+    "location": {
+      "address": "Waltendorfer Hauptstrasse (car park by the Lustbuhel hill), Graz",
+      "latitude": 47.069641,
+      "longitude": 15.498169,
+      "neighbourhood": "Waltendorf / Lustbuhel"
+    },
+    "verified_sources": [
+      "https://data.graz.gv.at (Graz Naturdenkmale register, data/registers/graz-naturdenkmale.json, CC BY 4.0, owner: oeffentlich, register_id 69)",
+      "https://commons.wikimedia.org/wiki/File:Graz_Castanea_sativa_ID1121.JPG"
+    ],
+    "access": "Stands beside a public car park on Waltendorfer Hauptstrasse at the foot of the Lustbuhel landscape-protection hill; the register lists the owner as public. Seen from the car park and road; nothing needs asking.",
+    "transport": "Bus to Waltendorf / Lustbuhel direction; exact stop and walk time not verified",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "- Styrian Naturdenkmal ID 1121 (Commons file description). Register point 47.069641,15.498169 and the geotagged Commons photo 47.069642,15.498181 agree within about 1 m, so the pin is on the individual trunk.\n- Photo (Christian Pirkl, CC BY-SA 3.0 at, 2014-05-08) shows a very thick, deeply fissured chestnut with a storm-snapped top and new limbs, in leaf. I looked at the file. Leaves of a compound-leaved neighbour overhang.\n- Register carries species only: no age, girth, height or vitality. No girth_cm recorded (nothing to read it from).\n- Alive: lifecheck NONE, no iNaturalist observation within 50 m. Only evidence is the 2014 Commons photo, so register only plus an old photo: flagged. The snapped crown is visible there, so the page should ask readers how it looks now.\n- Access: OSM reverse geocode puts the point on amenity=parking, Waltendorfer Hauptstrasse. A fence line runs behind the tree in the photo; the tree may stand at the edge of a pasture, visitor stands on the car park side.\n- Unverified: whether the Lustbuhel car park is open all day; two verified hosts did not answer (sterz.stmk.gv.at returns 403).",
+    "photo_candidate": {
+      "url": "https://commons.wikimedia.org/wiki/File:Graz_Castanea_sativa_ID1121.JPG",
+      "license": "CC BY-SA 3.0 at",
+      "attribution": "Christian Pirkl",
+      "note": "geotagged 1 m from register point; viewed, one trunk dominant"
+    },
+    "story": "A storm once snapped the top off this chestnut, and it carried on regardless. The only dated picture of it, taken in May 2014, shows the damage plainly: a very thick trunk, deeply furrowed, a splintered end where the leader used to rise, and a set of younger limbs climbing past the break.\n\nIt stands at the edge of a public car park on Waltendorfer Hauptstrasse, at the foot of the Lustbühel, the hill on the eastern side of Graz that is kept under landscape protection. A fence runs behind it, so the trunk may sit on the boundary of a field. You look at it from the car park side, which is close enough to take in the girth.\n\nStyria lists it as Naturdenkmal 1121, which protects it by law, and that is very nearly all the record says: the species, a public owner, a point on the map. No age, no girth, no height, no planting date. The 2014 photograph was taken within a metre of the register's own point, so there is no doubt which tree this is.\n\nWhat nobody has written down since 2014 is how it is doing, and a tree that has already lost its top is the kind worth checking on. If you have stood in front of it recently, tell us how it looks, and if you have a tape measure, how far it is round the trunk.",
+    "how_to_recognise": "You can recognise it by the very thick, deeply furrowed trunk with a broken top and younger limbs rising past the break. It stands at the edge of the car park on Waltendorfer Hauptstrasse, a fence behind it."
+  },
+  {
+    "id": "grz_015",
+    "name": "The Johannhohe Cornelian Cherry",
+    "species": "Cornelian Cherry (Cornus mas)",
+    "age_estimate": "",
+    "location": {
+      "address": "Johannhohe (service road on the ridge), Kroisbach, Graz",
+      "latitude": 47.099705,
+      "longitude": 15.468162,
+      "neighbourhood": "Kroisbach / Mariatrost"
+    },
+    "verified_sources": [
+      "https://data.graz.gv.at (Graz Naturdenkmale register, data/registers/graz-naturdenkmale.json, CC BY 4.0, owner: oeffentlich, register_id 23)",
+      "https://commons.wikimedia.org/wiki/File:ID_997_Dirndlbeere_2.jpg"
+    ],
+    "access": "Register lists the owner as public; OSM puts the point on the Johannhohe service road (a public hill road). Not checked whether the road is open to cars; on foot it is a public way.",
+    "transport": "Not verified; bus to Kroisbach then a steep climb, walk time unknown",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "- Styrian Naturdenkmal ID 997 (Commons file description). Register point 47.099705,15.468162; geotagged Commons photo (Christian Pirkl, CC BY-SA 3.0 at, 2015-03-30) at 47.099685,15.468212, about 4 m away.\n- The photo shows only the crown in full yellow flower against sky (late March bloom). No trunk or surroundings visible, so it proves species-in-flower and the pin, nothing about size. I looked at the file. Not a photo to lead with.\n- Season: Cornus mas flowers late February to March, a real seasonal peak and unusual to see as a large old specimen; a Cornus mas Naturdenkmal is rare, which is why it is listed.\n- Register carries species only, no age, girth or vitality. Alive: lifecheck NONE, no iNaturalist observation; only the 2015 photo. Flagged, register only.\n- Weakest of the delivered trees on 'worth the walk': the case rests on being a protected old Cornelian cherry on a viewpoint ridge, with no size figure.",
+    "story": "The only photograph on record of this tree shows no trunk at all. Taken from underneath on 30 March 2015, it is a crown of small yellow flowers against a blue sky, and nothing else.\n\nThat is the cornelian cherry's moment. It flowers between late February and March, among the first trees of the year to do so, and in Austria, where its fruit is the Dirndlbeere, it is far more often met as a hedge or a shrub than as a protected monument. Styria lists this one as Naturdenkmal 997, on public ground beside the service road that runs along the Johannhöhe ridge above Kroisbach, in the hills north-east of the centre. The photograph's coordinates sit about four metres from the register's point.\n\nBeyond that the record is thin. The register names the species and the owner and stops there: no age, no girth, no height. Nobody has measured how big it is, and the 2015 picture is the latest evidence that it is still standing.\n\nGetting there is a steep climb from the bus in Kroisbach; on foot the ridge road is a public way. Go in March, when you will know it by the colour. If you have seen it since 2015, or have put a tape round its trunk, tell us what you found.",
+    "how_to_recognise": "You can recognise it in late February and March by the crown, covered in small yellow flowers before the leaves. It stands beside the service road along the Johannhöhe ridge above Kroisbach.",
+    "best_time": {
+      "months": [
+        3
+      ],
+      "kind": "flowers",
+      "label": "March, when the whole crown flowers yellow, sometimes from late February"
+    }
+  }
+]

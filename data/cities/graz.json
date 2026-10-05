@@ -2,11 +2,11 @@
   "city": "Graz",
   "country": "Austria",
   "status": "needs_curation",
-  "intro": "Graz's city government keeps a live register of protected trees, and thirteen ship here across three clusters: ten in the city centre, from a Schlossberg maple to a Volksgarten trio to two Panoramagasse oaks of very different girth to a plane on Elisabethstrasse, and three more on the western side, a paid-entry pine and copper beech inside Schlosspark Eggenberg plus a free oak in a nearby public park. Most carry no recorded age, an honest gap stated rather than guessed past.",
+  "intro": "Graz's city government keeps a live register of protected trees, and fifteen ship here in four groups: ten in the city centre, from a Schlossberg maple to a Volksgarten trio, two Panoramagasse oaks and an Elisabethstrasse plane; a paid-entry pine and copper beech in Schlosspark Eggenberg plus a free oak nearby; and in the eastern hills a storm-broken sweet chestnut by the Lustbühel and a cornelian cherry on the Johannhöhe that flowers yellow in March. Most carry no recorded age, an honest gap stated rather than guessed past.",
   "meta_description": "Graz's protected trees: a Volksgarten oak-and-plane cluster, two Panoramagasse oaks of very different girth, a pine and beech in the Eggenberg palace park.",
-  "question_meta": "Graz's most solidly dated protected tree is a field maple in the Augarten, already recorded in a 1956 survey. Its story, and twelve more.",
+  "question_meta": "Graz's most solidly dated protected tree is a field maple in the Augarten, already recorded in a 1956 survey. Its story, and fourteen more.",
   "question_answer": "Graz's most solidly dated protected tree is the Augarten Field Maple, growing at the eastern edge of the Augarten park in the Jakomini district. Its formal legal protection dates to 1979, but Wikipedia's own record of Graz's protected trees cites an earlier source, a 1956 survey of the city's planted broadleaf trees, which already listed this exact maple as worth protecting. That gives it a documented floor of at least seventy years old, decades before most of Graz's other protected trees, whose designation dates cluster in 1979, 1990 and 2000 with no age ever published for the trees themselves. Two oaks on Panoramagasse, protected on the same day in July 1979, carry real 2015 field-measured girths (2.80 and 4.90 metres), and those measurements now date them: at the published growth rate for oak they come out at roughly 100 to 200 years and roughly 175 to 350, which puts the larger one older than the maple on the arithmetic while the maple keeps the better paper trail. Both are bands a century or more wide, because that is the honest width of a girth estimate.",
-  "question_context": "This page is built on the City of Graz's own live Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), cross-checked tree by tree against Wikipedia's independently maintained 'Liste der Naturdenkmaler in Graz', which geocodes each entry separately and sometimes carries a real field measurement or historical citation the register itself lacks. This page publishes twelve trees that verified against two independent sources and pass the access test: nine around the city centre, spanning the Schlossberg hill, the Volksgarten park, the Augarten, Schillerplatz, Elisabethstrasse and the Panoramagasse hillside, and three more on the western side near Schlosspark Eggenberg, a UNESCO World Heritage palace park about 3.5km west, where a wider planting of ten designated trees yielded only one pine and one beech with documentation strong enough to publish, plus a free oak in a public park 900 metres from the palace gate. The remaining eight Eggenberg trees (five planes, three pines) share an address and a date but no individuating record, reading as one avenue rather than separate points. Several more candidates, a kindergarten Paulownia, a youth-care-home pair and a villa plane among them, were held back under this project's rule against sending visitors onto grounds without clear evidence they are open.",
+  "question_context": "This page is built on the City of Graz's own live Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), cross-checked tree by tree against Wikipedia's independently maintained 'Liste der Naturdenkmaler in Graz', which geocodes each entry separately and sometimes carries a real field measurement or historical citation the register itself lacks. This page publishes fifteen trees: ten around the city centre, spanning the Schlossberg hill, the Volksgarten park, the Augarten, Schillerplatz, Elisabethstrasse and the Panoramagasse hillside, and three more on the western side near Schlosspark Eggenberg, a UNESCO World Heritage palace park about 3.5km west, where a wider planting of ten designated trees yielded only one pine and one beech with documentation strong enough to publish, plus a free oak in a public park 900 metres from the palace gate, and two in the eastern hills, a sweet chestnut by the Lustbühel and a cornelian cherry on the Johannhöhe ridge, each known from the register and a dated photograph. The remaining eight Eggenberg trees (five planes, three pines) share an address and a date but no individuating record, reading as one avenue rather than separate points.",
   "faq": [
     {
       "q": "What is the oldest tree in Graz?",
@@ -14,15 +14,15 @@
     },
     {
       "q": "Are Graz's protected trees free to see?",
-      "a": "Eleven of the thirteen, yes, all free. The other two, inside Schlosspark Eggenberg, need a paid ticket into the palace park."
+      "a": "Thirteen of the fifteen, yes, all free. The other two, inside Schlosspark Eggenberg, need a paid ticket into the palace park."
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Not in one walk. The ten city-centre trees split into a Schlossberg-and-Volksgarten pairing within about a kilometre and a further Augarten, Schillerplatz, Elisabethstrasse and Panoramagasse outing. The Eggenberg pine and beech, inside the palace park about 3.5km west, and the free Annaplatz oak roughly 900 metres from its gate, form a genuinely separate second visit."
+      "a": "Not in one walk. The ten city-centre trees split into a Schlossberg-and-Volksgarten pairing within about a kilometre and a further Augarten, Schillerplatz, Elisabethstrasse and Panoramagasse outing. The Eggenberg pine and beech, inside the palace park about 3.5km west, and the free Annaplatz oak roughly 900 metres from its gate, form a genuinely separate second visit. The Lustbühel chestnut in Waltendorf and the cornelian cherry up on the Johannhöhe ridge above Kroisbach sit in the eastern hills and are outings of their own."
     },
     {
       "q": "Why does Graz protect trees with no recorded age?",
-      "a": "The city's Naturdenkmal register records a protection date, a species and an owner, but rarely a planting date or a trunk measurement; only three of the thirteen trees here carry a documented girth. This page states that gap honestly rather than inventing a number, and welcomes a reader with a tape measure."
+      "a": "The city's Naturdenkmal register records a protection date, a species and an owner, but rarely a planting date or a trunk measurement; only three of the fifteen trees here carry a documented girth. This page states that gap honestly rather than inventing a number, and welcomes a reader with a tape measure."
     }
   ],
   "hero_tree_id": "grz_005",
@@ -482,6 +482,81 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "grz_014",
+      "name": "The Lustbuhel Sweet Chestnut",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Waltendorfer Hauptstrasse (car park by the Lustbuhel hill), Graz",
+        "latitude": 47.069641,
+        "longitude": 15.498169,
+        "neighbourhood": "Waltendorf / Lustbuhel"
+      },
+      "verified_sources": [
+        "https://data.graz.gv.at (Graz Naturdenkmale register, data/registers/graz-naturdenkmale.json, CC BY 4.0, owner: oeffentlich, register_id 69)",
+        "https://commons.wikimedia.org/wiki/File:Graz_Castanea_sativa_ID1121.JPG"
+      ],
+      "access": "Stands beside a public car park on Waltendorfer Hauptstrasse at the foot of the Lustbuhel landscape-protection hill; the register lists the owner as public. Seen from the car park and road; nothing needs asking.",
+      "transport": "Bus to Waltendorf / Lustbuhel direction; exact stop and walk time not verified",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A storm once snapped the top off this chestnut, and it carried on regardless. The only dated picture of it, taken in May 2014, shows the damage plainly: a very thick trunk, deeply furrowed, a splintered end where the leader used to rise, and a set of younger limbs climbing past the break.\n\nIt stands at the edge of a public car park on Waltendorfer Hauptstrasse, at the foot of the Lustbühel, the hill on the eastern side of Graz that is kept under landscape protection. A fence runs behind it, so the trunk may sit on the boundary of a field. You look at it from the car park side, which is close enough to take in the girth.\n\nStyria lists it as Naturdenkmal 1121, which protects it by law, and that is very nearly all the record says: the species, a public owner, a point on the map. No age, no girth, no height, no planting date. The 2014 photograph was taken within a metre of the register's own point, so there is no doubt which tree this is.\n\nWhat nobody has written down since 2014 is how it is doing, and a tree that has already lost its top is the kind worth checking on. If you have stood in front of it recently, tell us how it looks, and if you have a tape measure, how far it is round the trunk.",
+      "how_to_recognise": "You can recognise it by the very thick, deeply furrowed trunk with a broken top and younger limbs rising past the break. It stands at the edge of the car park on Waltendorfer Hauptstrasse, a fence behind it.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Graz_Castanea_sativa_ID1121.JPG",
+        "license": "CC BY-SA 3.0 at",
+        "attribution": "Christian Pirkl, via Wikimedia Commons",
+        "status": "found_needs_check",
+        "width": 1600,
+        "height": 2400
+      },
+      "photos": [],
+      "notes": "Graz Naturdenkmale register id 69 (Styrian Naturdenkmal 1121), owner public, species only. Geotagged Commons photo (Christian Pirkl, 2014-05-08) within about 1 m of the register point. No age, girth, height or recent alive evidence; the 2014 photo shows a storm-snapped top, so the page asks readers how it looks now."
+    },
+    {
+      "id": "grz_015",
+      "name": "The Johannhohe Cornelian Cherry",
+      "species": "Cornelian Cherry (Cornus mas)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Johannhohe (service road on the ridge), Kroisbach, Graz",
+        "latitude": 47.099705,
+        "longitude": 15.468162,
+        "neighbourhood": "Kroisbach / Mariatrost"
+      },
+      "verified_sources": [
+        "https://data.graz.gv.at (Graz Naturdenkmale register, data/registers/graz-naturdenkmale.json, CC BY 4.0, owner: oeffentlich, register_id 23)",
+        "https://commons.wikimedia.org/wiki/File:ID_997_Dirndlbeere_2.jpg"
+      ],
+      "access": "Register lists the owner as public; OSM puts the point on the Johannhohe service road (a public hill road). Not checked whether the road is open to cars; on foot it is a public way.",
+      "transport": "Not verified; bus to Kroisbach then a steep climb, walk time unknown",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The only photograph on record of this tree shows no trunk at all. Taken from underneath on 30 March 2015, it is a crown of small yellow flowers against a blue sky, and nothing else.\n\nThat is the cornelian cherry's moment. It flowers between late February and March, among the first trees of the year to do so, and in Austria, where its fruit is the Dirndlbeere, it is far more often met as a hedge or a shrub than as a protected monument. Styria lists this one as Naturdenkmal 997, on public ground beside the service road that runs along the Johannhöhe ridge above Kroisbach, in the hills north-east of the centre. The photograph's coordinates sit about four metres from the register's point.\n\nBeyond that the record is thin. The register names the species and the owner and stops there: no age, no girth, no height. Nobody has measured how big it is, and the 2015 picture is the latest evidence that it is still standing.\n\nGetting there is a steep climb from the bus in Kroisbach; on foot the ridge road is a public way. Go in March, when you will know it by the colour. If you have seen it since 2015, or have put a tape round its trunk, tell us what you found.",
+      "how_to_recognise": "You can recognise it in late February and March by the crown, covered in small yellow flowers before the leaves. It stands beside the service road along the Johannhöhe ridge above Kroisbach.",
+      "best_time": {
+        "months": [
+          3
+        ],
+        "kind": "flowers",
+        "label": "March, when the whole crown flowers yellow, sometimes from late February"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "notes": "Graz Naturdenkmale register id 23 (Styrian Naturdenkmal 997), owner public, species only. Geotagged Commons photo (Christian Pirkl, 2015-03-30) about 4 m from the register point, showing only the flowering crown. No age, girth or recent alive evidence."
     }
   ]
 }
