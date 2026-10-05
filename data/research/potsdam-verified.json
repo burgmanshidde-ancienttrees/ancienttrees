@@ -1,0 +1,116 @@
+[
+  {
+    "id": "pot_005",
+    "name": "The Thousand-Year Oak of Sacrow",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "girth_cm": 685,
+    "location": {
+      "address": "Schlosspark Sacrow, Krampnitzer Strasse 33, 14469 Potsdam",
+      "latitude": 52.427544,
+      "longitude": 13.092245,
+      "neighbourhood": "Sacrow"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (reproduces the city's Naturdenkmal list: no. 15, girth 685 cm, coordinates, Flurstueck 118/14)",
+      "https://www.wikidata.org/wiki/Q106393691",
+      "https://www.inaturalist.org/observations/293834514 (observation 2025-06-29 at the spot)"
+    ],
+    "access": "Free. Stands in the Schlosspark Sacrow, a public landscape park by the Havel (Lenne design); open in daylight. ",
+    "transport": "Sacrow lies north-east of central Potsdam; line and stop not verified, say only 'by bus from Potsdam, then on foot through the park'.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register only (official Potsdam Naturdenkmal list via de.wikipedia reproduction), one source for species and girth. Girth 685 cm is the thickest of the Potsdam oak monuments, from the register's Umfang column, no measurement date given. The name '1000-jaehrige Eiche' is the register's own designation, NOT a measured age: do not state 1000 years as fact, say 'known as the thousand-year oak'. No age field in the register. Commons has its own category 'Tausendjaehrige Eiche (Sacrow)' and photographs (file 1000-jaehrige Eiche in Sacrow, 1.jpg), so a photograph is in reach. Alive: iNaturalist observation 2025-06-29 at the coordinate (RECENT per lifecheck; proves something photographed there, not the trunk). Note the register's neighbouring Sacrow oaks nos. 13 and 14 (600 and 575 cm, Krampnitzer Strasse) have swapped Commons file labels (ND 13/ND 14), so identity of those two is ambiguous; left as leads."
+  },
+  {
+    "id": "pot_006",
+    "name": "The Columnar Oaks of Bassinplatz",
+    "species": "Fastigiate Pedunculate Oak (Quercus robur 'Fastigiata')",
+    "age_estimate": "not documented",
+    "girth_cm": 600,
+    "location": {
+      "address": "Bassinplatz, 14467 Potsdam",
+      "latitude": 52.401872,
+      "longitude": 13.062176,
+      "neighbourhood": "Brandenburger Vorstadt / Innenstadt"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (nos. 31 and 32, Flurstueck 692, girths 600 and 395 cm)",
+      "https://www.wikidata.org/wiki/Q106393708",
+      "https://www.wikidata.org/wiki/Q106393709",
+      "https://www.inaturalist.org/observations/373183774 (2026-06-18) and https://www.inaturalist.org/observations/373177043 (2026-06-18)"
+    ],
+    "access": "Free. A public city square in central Potsdam, open at all times.",
+    "transport": "Central Potsdam, a short walk from the Brandenburger Tor and the Hauptbahnhof area (walking time not measured).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FOLDED twin: register nos. 31 (52.401872, 13.062176, girth 600 cm) and 32 (52.40203, 13.06268, girth 395 cm) both on Flurstueck 692, about 40 m apart; shown as one stop, pin on no. 31. Register only, one source. Both are fastigiate (columnar) oaks, a cultivar, which is the point of them: an upright form of the English oak on a square. 600 cm girth is large for a fastigiate cultivar, which is a plain register figure, unverified by us (a girth like this on a columnar form is unusual; flagged in case it is a multi-stem measurement). No age in register; do not derive one. Alive: two iNaturalist observations dated 2026-06-18 at the two coordinates (RECENT). Photographs in reach on Commons (files named Naturdenkmal Nr. 31 / Nr. 32 Saeulen-Eiche auf dem Bassinplatz)."
+  },
+  {
+    "id": "pot_007",
+    "name": "The Lime of Weberplatz",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "not documented",
+    "girth_cm": 380,
+    "location": {
+      "address": "Weberplatz, beside the Friedrichskirche (Bohemian church), in front of the sacristy, 14482 Potsdam",
+      "latitude": 52.394149,
+      "longitude": 13.095911,
+      "neighbourhood": "Babelsberg Nord (Weberviertel)"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (no. 53, Standort 'Weberplatz, an der Kirche vor der Sakristei', girth 380 cm)",
+      "https://www.wikidata.org/wiki/Q106393734"
+    ],
+    "access": "Free. On the public Weberplatz square beside the church; open at all times.",
+    "transport": "Babelsberg Nord, within walking distance of Babelsberg station (distance not measured).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register only, one source, flagged. Alive check weak: lifecheck returned OLD (2011) within the radius, and that Commons photo is of the square, not necessarily this trunk; no recent dated confirmation found, so the page should ask readers to confirm it still stands. The register's own place text 'an der Kirche vor der Sakristei' places it by the church, which is a clear recognition line. The church on the square is the Bohemian Protestant church (Weberplatz 'Boehmisches Dorf' Babelsberg, built for the Bohemian weaver colony); I did not source that history here, writer must not use it unsourced. Neighbouring register no. 52, a white mulberry (370 cm) at Weberplatz / corner Lutherstrasse (52.394441, 13.095122), is about 70 m away and also a candidate (lifecheck OLD 2011); kept as a lead, not folded."
+  },
+  {
+    "id": "pot_008",
+    "name": "The Oak of the Schiffbauergasse",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "girth_cm": 480,
+    "location": {
+      "address": "Schiffbauergasse cultural site, Berliner Strasse 28, 14467 Potsdam",
+      "latitude": 52.404586,
+      "longitude": 13.074413,
+      "neighbourhood": "Berliner Vorstadt, Tiefer See"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (no. 29, girth 480 cm, Flurstueck 899)",
+      "https://www.wikidata.org/wiki/Q106393707"
+    ],
+    "access": "Free. Stands on the grounds of the Schiffbauergasse cultural quarter on the Tiefer See, which is open to the public (theatre, restaurants, lakeside walk); not checked against opening times of individual venues.",
+    "transport": "On the Tiefer See waterfront, Berliner Vorstadt; public transport stop not verified.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register only, one source. Alive check weak: lifecheck returned OLD (2009) and the matched Commons file is a view of the Tiefer See, not clearly this trunk, so recent proof of life is missing and the page should ask readers. Commons has a dedicated photograph (Naturdenkmal Nr 29 Stiel-Eiche auf dem Gelaende der Schiffbauergasse.jpg), so a photograph is in reach. Pin is the register coordinate; I did not check it against imagery, so call it confirmed only because it is the register's tree-level point. If the writer or a later pass finds the point lands off the crown, downgrade to approximate. No age in register."
+  },
+  {
+    "id": "pot_009",
+    "name": "The Oaks of the Jungfernsee",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "girth_cm": 590,
+    "location": {
+      "address": "Bertinistrasse, on the shore of the Jungfernsee, 14467 Potsdam",
+      "latitude": 52.429927,
+      "longitude": 13.064992,
+      "neighbourhood": "Nauener Vorstadt / Jungfernsee"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (no. 19, three oaks, girths 460, 515 and 590 cm, three coordinates)",
+      "https://www.wikidata.org/wiki/Q106393695",
+      "https://commons.wikimedia.org/wiki/File:Stiel-Eichen_am_Jungfernsee_3.jpg (dated 2025-04-27, lifecheck RECENT)"
+    ],
+    "access": "Free. Along Bertinistrasse by the lake; a public street and shore path. Not verified whether any of the three stands inside a fenced private plot (register Flurstuecke 275, 276, 730); check before the writer states they can be touched.",
+    "transport": "On the Jungfernsee shore north of the centre; public transport stop not verified.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register only, one source. Three oaks, register points 52.429927,13.064992 / 52.429316,13.064753 / 52.428601,13.064674, spread over about 150 m along the shore: a trio read as one stop, not a single trunk. Girths 460, 515 and 590 cm, but the register does not say which point carries which girth, so the thickest cannot be pinned individually: pin is the northernmost point and precision is approximate for that reason. Alive: Commons photograph dated 2025-04-27 of the trio (RECENT). A photograph is in reach on Commons (Stiel-Eichen am Jungfernsee)."
+  }
+]
