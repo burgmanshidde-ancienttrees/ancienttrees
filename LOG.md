@@ -9,6 +9,55 @@
 - **Template sentences:** species pages said "This page maps every cork oak on the site"; now "We map 12 of them, in 5 cities." Sorrento's oak no longer prints our own data/registers path as a source link; it cites MASAF like the other 91 Italian trees.
 - **Also in this merge, from 10-04:** the remaining template sentences on the web, the app copy pass ("Seen", "We read every tip."), and its UI test.
 
+## 2026-10-05 Dresden +5: Pillnitz camellia, Babisnau poplar, Marienlust beech, Hueblerstrasse oak, Five Brothers
+
+Earlier logs called Dresden a wall; the Wikidata candidates plus Commons and city Naturdenkmal pages still gave five verified trees (dre_014 to 018), taking Dresden from 13 to 18. Three carry a Commons photograph looked at before attaching; the poplar and the oak have confirmed pins and no photo (the frames show the neighbour or the felled twin). The Five Brothers pin is approximate but findable via a 40 m site and recognition line. Beech access (medical-centre garden) is unconfirmed and the page says so. German overlay, intro, meta and FAQ updated to 18; preflight 0 problems. Frankfurt claim released (no supply).
+
+## 2026-10-05 Held trees freed by a photo look: Nuremberg +2, San Francisco +1
+
+Second pass of the same window: a write pass hunted Commons photographs for 11 held trees and found usable ones for three, all looked at before attaching. Nuremberg goes to 16 (nbg_014, nbg_015), San Francisco to 7 (sfo_007, the Pohutukawa on Stanyan Street, which stands in a private front garden and is seen from the sidewalk; the page says so and the pin should mark the viewing place, worth a check). Eight stay held (ptl_027, sfo_008, hou_009 to 011, fuk_017, tkc_004, 005): no open photo. Two cited iNaturalist alive observations turned out not to be the tree and were removed. hou_010's Cemetery Oak may be 300 m from our pin. Preflight 0 problems.
+
+## 2026-10-05 Munich +7: Dachau limes and oaks, Puch, Sauerlach, Ingelsberg
+
+Visits last 7 days: 1457. Shelf was empty, so Munich was verified again, this time from the Bayern Wikipedia list of notable trees plus Commons categories instead of the exhausted register join: three flagged trees (the Edigna lime of Puch, the seven-stemmed lime of Sauerlach, the Ingelsberg ash). A write pass then merged those with four Dachau-area trees held since yesterday (muc_056, 059, 060, 061), each now carrying a Commons photograph that was looked at before attaching, plus a German overlay. Munich goes from 52 to 59. muc_058 stays held (its only photo is mostly parked cars, approximate pin). muc_059's access is unconfirmed and the story says so. Edigna's lime is beyond the 30 minute line and the page says that. Preflight 0 problems. No command refused.
+
+## 2026-10-05 Later attempt in the window: stale claims released, Washington DC scouted
+
+Dresden and Frankfurt were claimed by an earlier attempt but both are already published, so the claims were released and nothing dispatched. READY is 0. scout_next.py named Washington DC (#112): DC Open Data holds no heritage-tree point dataset, only a StoryMap, so the verdict is `stalled` with Casey Trees and DDOT layers as next angles. No trees shipped; no command refused.
+
+## 2026-10-05 Shelf still empty: Frankfurt and Dresden are walls, Lansing and Detroit scouted
+
+Visits last 7 days: 1455. Writable pile is 0 and every held tree lacks a photo or confirmed pin, so no write pass existed. Checked the verify targets for supply: Spokane has one unmined candidate (already judged yesterday), Frankfurt and Dresden have no imported register and an earlier pass already worked both (claimed and released each, nothing dispatched). scout_next.py named Lansing (#103) and then Detroit (#104): no city heritage-tree register with coordinates for either, only the Michigan Botanical Society's statewide Big Tree champion list, recorded as a finding aid with next angles in data/register-scouting.json. No trees shipped; no command refused.
+
+## 2026-10-04 Leipzig +8: Naturdenkmal oaks, lindens and planes
+
+Leipzig goes from 7 trees to 15, all from the city's Naturdenkmal list: the Menzellinde in Schoenefeld (the lime Adolf von Menzel drew, 200 to 300 years, now the page's oldest tree), the Dufourstrasse oak above the Pleissemuehlgraben, two Lindenau street oaks 150 m apart, Wahren's Friedenseiche (no peace or year claimed, the list gives none), the Leibnizstrasse plane, a Lebanon oak in Schoenau and ND 1, the medlar-leaved oak on the Martin-Luther-Ring. Every one ships with a Commons photograph I looked at before approving, so all eight are findable despite approximate pins; each has a recognition line, and only the lime got a best_time (July flowering). Intro, meta, question page and FAQ now describe 15 trees, oldest_tree_id is the Menzellinde, and the German overlay carries all 8 new trees and the new counts. bos_013 (Endicott Pear) was not written: Danvers is 75+ minutes from Boston by public transport, the alive evidence is one unopened search result and its only photo is from 1997. Preflight 0 problems.
+
+## 2026-10-04 thirteenth attempt: Spokane verify found nothing, Cincinnati scouted
+
+Visits last 7 days: 1840. Shelf was under its floor, so claimed and verified Spokane: of 5 unmined register candidates none has an open photograph or a confirmable pin (Reid Family Tree is a private residence, treated as blocked), so zero trees; leads updated, claim released. Scouted Cincinnati (#97): no city register with coordinates, Spring Grove and ODNR champion lists recorded as next angles. No trees shipped; no command refused.
+
+## 2026-10-04 twelfth attempt (evening): nothing publishable, Tampa scouted
+
+leads.py --ready is 0 and no claims stood. The Munich (muc_056, 058, 059, 060), Nuremberg (nbg_014, 015), ptl_027 and bos_013 all fail photo-or-pin (approximate pin, no photograph), so none was merged; muc_055 and 057 are already live. Judged the one reader sighting of an unmapped tree (pedunculate oak, 440 cm, central France): no register or article nearby, one contributor, stays a lead. Scouted Tampa (#91): heritage and grand tree programmes exist but no downloadable list with coordinates; next angle recorded in register-scouting.json. Preflight 0 problems.
+
+## 2026-10-04 run, eleventh attempt: Munich released, St. Louis scouted, no trees
+
+Ready 0, so no write pass. The one rung-1 sighting (the Cher oak at 440 cm) already had its lead verdict. Munich claimed and released with --force: it has been mined three times and its trees are held for photo or pin. Scouted St. Louis (#88): two guessed official URLs returned 404 and no register turned up, so the verdict is `empty`, recorded as a thin check. Next: a photo or pin pass on the held Munich, Houston, Berlin and Fukuoka trees.
+
+## 2026-10-04 night run, tenth attempt: nothing shipped
+
+Pulled, no stale claims, READY 0. Claimed Frankfurt (Germany, below target) and the brief showed 0 register candidates in 20 km, so web research from zero, which the doctrine rules out; released it. Dresden's brief is also fully mined (every remaining lead is an avenue or group). The one unjudged reader sighting, the Cher oak at 440 cm, is single-contributor, no register or article within 300 m, so it stays a lead. Next real supply needs a scout: `scout_next.py --target` says St. Louis.
+
+## 2026-10-04 night run, ninth attempt: nothing shipped, two verdicts and two scouting records
+
+Rung 1: two new reader sightings judged (a Cher oak at 440 cm and a Tokyo ginkgo, both single-contributor with nothing setting them apart), both stay leads, verdicts written with judgement.py. Rung 2: health says the live site is behind main and `gh workflow run deploy.yml` is refused with HTTP 403 from the runner, so that dispatch needs a laptop push or the schedule. Shelf was empty again; Munich and Nuremberg are mined and their written trees are held for photo or pin, so no verify dispatched. Scouted the next two US targets: West Palm Beach (no Palm Beach County rows in the Florida champion register) and Saint Petersburg (one Pinellas row, in Dunedin), both recorded as empty in register-scouting.json. 7-day visits: 1,654.
+
+## 2026-10-04 night run, eighth attempt: nothing shipped
+
+Pulled; only the nuremberg claim stood, released with --force (register mined, earlier passes already hold its leads and blocks). `leads.py --ready` is 0 and every staged city is either mined or parked; the written Munich, Houston, Berlin, Fukuoka, Takachiho and Tree-of-the-Year trees are held for lacking a photograph or confirmed pin, not for the clock. No dispatch made: a verify pass on a mined register buys nothing.
+
+
 ## 2026-10-04 session with Hidde: lists, cards, labels and maps made consistent, live
 
 What changed for a visitor, all of it benchmarked first (CONVENTIONS.md 2026-10-04) and approved by Hidde screen by screen:
@@ -24,6 +73,10 @@ What changed for a visitor, all of it benchmarked first (CONVENTIONS.md 2026-10-
 
 Verified: full build, qa.py on 17,981 pages (one source-only finding fixed), crosscheck, copycheck, paritycheck, screenshots at 375px and desktop. Not verifiable here: the app half (no Xcode in this sandbox; ios.yml judges it), and the `submissions` table accepting kind `ambassador` (no service key here; the first real tap will show it). The app's season chip shows only with the season switch on (`Launch.season`).
 
+
+## 2026-10-04 run, fifth continuation: Munich verify empty again, no trees
+
+Shelf under its floor (ready 0). Claimed Munich and ran a verify pass: Commons geosearch found no tree photographs, the OSM join showed every unmined row with a node is already live, blocked or a lead, and one pin (Dachau ND 12) was caught mismatching its nearest node. Two leads added, nothing publishable; claim released with --force (its 6 trees are held on photo or pin). `scout_next.py --target` named Saratoga Springs (#84): no tree-level register found, verdict `empty` written to data/register-scouting.json. Wikimedia API rate-limits after about 12 quick requests; overpass-api.de answered a GET here despite the blocklist.
 
 ## 2026-10-04 run, fourth continuation: scouted Huntsville, no trees
 

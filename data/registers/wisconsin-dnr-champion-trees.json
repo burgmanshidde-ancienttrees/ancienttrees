@@ -1,0 +1,933 @@
+{
+ "source": "Wisconsin Department of Natural Resources, Division of Forestry: Wisconsin Champion Tree Program, public-property champions layer (CT_Nomination_PUB_TREE_MAP_View)",
+ "endpoint": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0 (linked from https://dnr.wisconsin.gov/topic/forests/championtrees)",
+ "licence": "Wisconsin state agency public record; the layer and its web map assert no copyright or reuse restriction, only an accuracy and navigation disclaimer. Read as US state public domain data, same tier as the Massachusetts DCR list.",
+ "licence_proof": "ArcGIS item ffca45f2133140ef99e718681d424ed5 licenseInfo: \"The information shown on these maps have been obtained from various sources, and are of varying age, reliability and resolution. These maps are not intended to be used for navigation...\" (disclaimer only, no reuse restriction). Fetched 2026-10-05.",
+ "designation": "State champion trees: the largest verified specimen per species, nominated and measured, scored circumference in + height ft + 1/4 crown spread ft.",
+ "attribution": "Wisconsin DNR Division of Forestry, Champion Tree Program",
+ "fetched": "2026-10-05",
+ "privacy_note": "Private-property rows are kept with coordinates withheld from publication by hard rule 10 (private_property true); owner personal names are deliberately not stored.",
+ "vitality_field": "None. Alive-now is a per-tree check.",
+ "trees": [
+  {
+   "common_name": "Black Tupelo",
+   "scientific_name": "Nyssa sylvatica",
+   "county": "Dane",
+   "access_note": "UW Arboretum at the McKay Center, Madison",
+   "private_property": false,
+   "owner_org": "UW Madison Arboretum",
+   "history": "2-24-21 David Garison Stevens Curator- Longenecker Horticultural Gardens: This tree was received in 1956 from a nursery in Exeter, NH and is very much alive and well. If you come to the UW Arboretum Visitor Center it is impossible to miss, located on the NW corner just to the east of the gate that divides the N and S parking lots. The tree has been given the cultivar name 'Carolyn' .",
+   "circumference_in": 63.5,
+   "height_ft": 39,
+   "crown_spread_ft": [
+    45,
+    44
+   ],
+   "champion_points": 113.625,
+   "latitude": 43.041354,
+   "longitude": -89.430758,
+   "map_display": "Exact location",
+   "objectid": 82
+  },
+  {
+   "common_name": "Blue Ash",
+   "scientific_name": "Fraxinus quadrangulata",
+   "county": "Dane",
+   "access_note": "UW Arboretum in Longnecker Garden, Ash collection, Madison",
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 70.5,
+   "height_ft": 44,
+   "crown_spread_ft": [
+    49,
+    52
+   ],
+   "champion_points": 127.125,
+   "latitude": 43.0438952760001,
+   "longitude": -89.4291090419999,
+   "map_display": "Exact location",
+   "objectid": 142
+  },
+  {
+   "common_name": "Bur Oak",
+   "scientific_name": "Quercus macrocarpa",
+   "county": "Waukesha",
+   "access_note": "W394 S4086 Highway Z, Stone Fences Farm, Dousman The Champion Tree is located behind the new house (not the house at the enterance). A champion Sign is next to the tree.",
+   "private_property": true,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 268,
+   "height_ft": 71,
+   "crown_spread_ft": [
+    96,
+    95
+   ],
+   "champion_points": 362.875,
+   "latitude": 42.97179723494219,
+   "longitude": -88.52968686340844,
+   "map_display": "Exact location",
+   "objectid": 260
+  },
+  {
+   "common_name": "Chestnut Oak",
+   "scientific_name": "Quercus prinus",
+   "county": "Columbia",
+   "access_note": "Located W of conservation exhibit and S of fence, Twn of Dekorra",
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 70,
+   "height_ft": 66,
+   "crown_spread_ft": [
+    36,
+    25
+   ],
+   "champion_points": 143.62,
+   "latitude": 43.399442,
+   "longitude": -89.367662,
+   "map_display": "Exact location",
+   "objectid": 349
+  },
+  {
+   "common_name": "Chinquapin Oak",
+   "scientific_name": "Quercus muehlenbergii",
+   "county": "Milwaukee",
+   "access_note": "50th and W. Custer. Just on west side of path going north. Light pole just east of path. ",
+   "private_property": false,
+   "owner_org": "City of Milwaukee",
+   "history": null,
+   "circumference_in": 137,
+   "height_ft": 83,
+   "crown_spread_ft": [
+    102,
+    91
+   ],
+   "champion_points": 244,
+   "latitude": 43.11607957700005,
+   "longitude": -87.97514783999998,
+   "map_display": "Exact location",
+   "objectid": 373
+  },
+  {
+   "common_name": "American Chestnut",
+   "scientific_name": "Castanea dentata",
+   "county": "Dane",
+   "access_note": "5114 Milward Dr - Backyard of a house across from Odana Golf course-at the west end, Madison",
+   "private_property": true,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 110,
+   "height_ft": 65,
+   "crown_spread_ft": [
+    66,
+    55
+   ],
+   "champion_points": 190.125,
+   "latitude": 43.04827643342594,
+   "longitude": -89.46718813154509,
+   "map_display": "Exact location",
+   "objectid": 453
+  },
+  {
+   "common_name": "Bald Cypress",
+   "scientific_name": "Taxodium distichum",
+   "county": "Dane",
+   "access_note": "4110 Mandan Crescent, left side of house, Madison",
+   "private_property": true,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 142.9,
+   "height_ft": 76.7,
+   "crown_spread_ft": [
+    49,
+    44
+   ],
+   "champion_points": 231.225,
+   "latitude": 43.043353,
+   "longitude": -89.442682,
+   "map_display": "Exact location",
+   "objectid": 680
+  },
+  {
+   "common_name": "Bald Cypress",
+   "scientific_name": "Taxodium distichum",
+   "county": "Kenosha",
+   "access_note": "Bong Recreation area - On the East side of access road in group of marked Champion Trees, Brighton Twp",
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 138,
+   "height_ft": 81,
+   "crown_spread_ft": [
+    51,
+    45
+   ],
+   "champion_points": 231,
+   "latitude": 42.644957392,
+   "longitude": -88.12942506,
+   "map_display": "Exact location",
+   "objectid": 681
+  },
+  {
+   "common_name": "Basswood",
+   "scientific_name": "Tilia americana",
+   "county": "Florence",
+   "access_note": "On the assessor's trail with sign indicating it is a basswood tree. ",
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 161,
+   "height_ft": 120,
+   "crown_spread_ft": [
+    68,
+    70
+   ],
+   "champion_points": 298.25,
+   "latitude": 45.88054549884598,
+   "longitude": -88.55435731829009,
+   "map_display": "Exact location",
+   "objectid": 739
+  },
+  {
+   "common_name": "Bigtooth Aspen",
+   "scientific_name": "Populus grandidentata",
+   "county": "Burnett",
+   "access_note": "1446 Hilltop Road, Shell Lake, WI -Near the base of a northwest slope at the end of a glacial tunnel channel. ",
+   "private_property": true,
+   "owner_org": null,
+   "history": "Spared from the chainsaw when neighboring trees in the grove were harvested in 2020. Neighboring trees were similar in size and had from 80-103 growth rings. ",
+   "circumference_in": 100,
+   "height_ft": 105.5,
+   "crown_spread_ft": [
+    42.8,
+    29.2
+   ],
+   "champion_points": 214.5,
+   "latitude": 45.72615255854792,
+   "longitude": -92.05376146028885,
+   "map_display": "Exact location",
+   "objectid": 751
+  },
+  {
+   "common_name": "Ginkgo",
+   "scientific_name": "Ginkgo biloba",
+   "county": "Green",
+   "access_note": "1205 13th St, Corner of 12th St and 13th Ave, Monroe",
+   "private_property": true,
+   "owner_org": null,
+   "history": "Planted 1882",
+   "circumference_in": 230.6,
+   "height_ft": 76.5,
+   "crown_spread_ft": [
+    74,
+    87
+   ],
+   "champion_points": 327,
+   "latitude": 42.5999,
+   "longitude": -89.64353,
+   "map_display": "Exact location",
+   "objectid": 897
+  },
+  {
+   "common_name": "Littleleaf Linden",
+   "scientific_name": "Tilia cordata",
+   "county": "Kenosha",
+   "access_note": "919 60th St - First United Methodist Church, Kenosha",
+   "private_property": true,
+   "owner_org": "First Methodist Church",
+   "history": "On the grounds of First Methodist Church.",
+   "circumference_in": 103,
+   "height_ft": 52,
+   "crown_spread_ft": [
+    44,
+    41
+   ],
+   "champion_points": 165.625,
+   "latitude": 42.58070957800004,
+   "longitude": -87.82245983099995,
+   "map_display": "Exact location",
+   "objectid": 1094
+  },
+  {
+   "common_name": "Mugo Pine",
+   "scientific_name": "Pinus mugo",
+   "county": "Ashland",
+   "access_note": "North side of Chippewa Lake Road at the corner of Bass Lake Road. ",
+   "private_property": true,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 45,
+   "height_ft": 39,
+   "crown_spread_ft": [
+    12.5,
+    11
+   ],
+   "champion_points": 86.9375,
+   "latitude": 45.98177648500007,
+   "longitude": -90.59498184299997,
+   "map_display": "Exact location",
+   "objectid": 1114
+  },
+  {
+   "common_name": "Northern Catalpa",
+   "scientific_name": "Catalpa speciosa",
+   "county": "Grant",
+   "access_note": "1 University Plaza - Thirty yards south of Karrmann library on the campus of UW-Platteville, Plateville",
+   "private_property": false,
+   "owner_org": null,
+   "history": "8-25-21 I’m re-measuring an old champ. UW-Platteville campus. Trunk is splitting 3-5 feet above the ground, but foliage is still full. The large bough splitting off toward the west is now supported on concrete blocks.I measured the diameter at 3’ (36”) above the ground due to this splitting.",
+   "circumference_in": 264,
+   "height_ft": 92,
+   "crown_spread_ft": [
+    78,
+    74
+   ],
+   "champion_points": 375,
+   "latitude": 42.7338,
+   "longitude": -90.49303,
+   "map_display": "Exact location",
+   "objectid": 1144
+  },
+  {
+   "common_name": "River Birch",
+   "scientific_name": "Betula nigra",
+   "county": "La Crosse",
+   "access_note": "In the lawn near a residence, barn and bunkhouse. Access to the tree is via W7197 County Road Z Onalaska, WI or from the boat landing to the southwest.",
+   "private_property": true,
+   "owner_org": null,
+   "history": "Appears in a watercolor painting by a local artist. Once had a tree swing hung on the lower limb. ",
+   "circumference_in": 121,
+   "height_ft": 71,
+   "crown_spread_ft": [
+    102,
+    78
+   ],
+   "champion_points": 214.5,
+   "latitude": 43.915446,
+   "longitude": -91.265111,
+   "map_display": "Exact location",
+   "objectid": 1503
+  },
+  {
+   "common_name": "Shingle Oak",
+   "scientific_name": "Quercus imbricaria",
+   "county": "Rock",
+   "access_note": "2348 Butlin Dr - backyard, Beloit",
+   "private_property": true,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 136,
+   "height_ft": 72,
+   "crown_spread_ft": [
+    84,
+    51
+   ],
+   "champion_points": 224.87,
+   "latitude": 42.53662,
+   "longitude": -89.01534,
+   "map_display": "Exact location",
+   "objectid": 1594
+  },
+  {
+   "common_name": "Dawn Redwood",
+   "scientific_name": "Metasequoia glyptostroboides",
+   "county": "Dane",
+   "access_note": "5806 Dorsett Dr - backyard, Madison",
+   "private_property": false,
+   "owner_org": "Gregory",
+   "history": null,
+   "circumference_in": 115,
+   "height_ft": 74,
+   "crown_spread_ft": [
+    34,
+    41
+   ],
+   "champion_points": 198.375,
+   "latitude": 43.03857,
+   "longitude": -89.48023,
+   "map_display": "Exact location",
+   "objectid": 1718
+  },
+  {
+   "common_name": "Eastern White Pine",
+   "scientific_name": "Pinus strobus",
+   "county": "Forest",
+   "access_note": "On US Forest Service Land, visible from Forest Road 2454 (Huff Creek Road) to the east. ",
+   "private_property": false,
+   "owner_org": "US Forest Service",
+   "history": null,
+   "circumference_in": 156,
+   "height_ft": 157,
+   "crown_spread_ft": [
+    53,
+    49
+   ],
+   "champion_points": 325.75,
+   "latitude": 46.00999883800006,
+   "longitude": -88.69986782799998,
+   "map_display": "Exact location",
+   "objectid": 1921
+  },
+  {
+   "common_name": "European Beech",
+   "scientific_name": "Fagus sylvatica",
+   "county": "Milwaukee",
+   "access_note": "3510 N Lake Drive, Shorewood, WI ",
+   "private_property": true,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 190,
+   "height_ft": 68,
+   "crown_spread_ft": [
+    72,
+    54
+   ],
+   "champion_points": 273.75,
+   "latitude": 43.08224743,
+   "longitude": -87.87221883,
+   "map_display": "Exact location",
+   "objectid": 1996
+  },
+  {
+   "common_name": "Silver Maple",
+   "scientific_name": "Acer saccharinum",
+   "county": "Dane",
+   "access_note": "Edgewood Campus, near Edgewood and Madison St., Madison",
+   "private_property": false,
+   "owner_org": "Edgewood Campus School",
+   "history": null,
+   "circumference_in": 202.9,
+   "height_ft": 110.4,
+   "crown_spread_ft": [
+    82,
+    87
+   ],
+   "champion_points": 334.425,
+   "latitude": 43.06157,
+   "longitude": -89.42065,
+   "map_display": "Exact location",
+   "objectid": 2053
+  },
+  {
+   "common_name": "Sugar Maple",
+   "scientific_name": "Acer saccharum",
+   "county": "Forest",
+   "access_note": "Will need to use lat long to find this tree. It is within an old hardwood cutting unit, behind a forest service gate on National Forest Land. ",
+   "private_property": false,
+   "owner_org": "US Forest Service",
+   "history": "Found within an old timber sale unit. ",
+   "circumference_in": 149,
+   "height_ft": 108,
+   "crown_spread_ft": [
+    55,
+    47
+   ],
+   "champion_points": 269.75,
+   "latitude": 45.813971981000066,
+   "longitude": -88.73444485499994,
+   "map_display": "Exact location",
+   "objectid": 2127
+  },
+  {
+   "common_name": "Sweet Birch",
+   "scientific_name": "Betula lenta",
+   "county": "Columbia",
+   "access_note": "MacKenzie Center - Tree is at west end of western part of the arboretum, Poynette",
+   "private_property": false,
+   "owner_org": "MacKenzie Center",
+   "history": null,
+   "circumference_in": 85,
+   "height_ft": 70,
+   "crown_spread_ft": [
+    65,
+    55
+   ],
+   "champion_points": 170,
+   "latitude": 43.399658,
+   "longitude": -89.367401,
+   "map_display": "Exact location",
+   "objectid": 2181
+  },
+  {
+   "common_name": "Sycamore",
+   "scientific_name": "Platanus occidentalis",
+   "county": "Fond du Lac",
+   "access_note": "City of Fond Du Lac - next to post office",
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 255,
+   "height_ft": 83,
+   "crown_spread_ft": [
+    101,
+    87
+   ],
+   "champion_points": 361.5,
+   "latitude": 43.7762017,
+   "longitude": -88.4518823,
+   "map_display": "Exact location",
+   "objectid": 2209
+  },
+  {
+   "common_name": "White Fir",
+   "scientific_name": "Abies concolor",
+   "county": "Green",
+   "access_note": "1907 29th Ave - In front of cemetery office",
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 103,
+   "height_ft": 84,
+   "crown_spread_ft": [
+    65,
+    55
+   ],
+   "champion_points": 202,
+   "latitude": 42.5931932080001,
+   "longitude": -89.62476843,
+   "map_display": "Exact location",
+   "objectid": 2342
+  },
+  {
+   "common_name": "White Oak",
+   "scientific_name": "Quercus alba",
+   "county": "Waukesha",
+   "access_note": "N 79 W33693 Peterson Road - Behind home in the woods., Oconomowoc",
+   "private_property": true,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 220,
+   "height_ft": 98,
+   "crown_spread_ft": [
+    88,
+    88
+   ],
+   "champion_points": 340,
+   "latitude": 43.16328080000005,
+   "longitude": -88.41397249999994,
+   "map_display": "Exact location",
+   "objectid": 2394
+  },
+  {
+   "common_name": "Yellow Buckeye",
+   "scientific_name": "Aesculus octandra",
+   "county": "Columbia",
+   "access_note": "In W part of arboretum W of sidewalk and N of office. Twn of Dekorra",
+   "private_property": false,
+   "owner_org": "MacKenzie Center",
+   "history": null,
+   "circumference_in": 89,
+   "height_ft": 74,
+   "crown_spread_ft": [
+    43,
+    40
+   ],
+   "champion_points": 173.37,
+   "latitude": 43.400127,
+   "longitude": -89.365303,
+   "map_display": "Exact location",
+   "objectid": 2486
+  },
+  {
+   "common_name": "Overcup Oak",
+   "scientific_name": "Quercus lyrata",
+   "county": "Milwaukee",
+   "access_note": "Forest Home Cemetery - Near Edward Schmidt Monument, Milwaukee",
+   "private_property": true,
+   "owner_org": "Forest Home Cemetery",
+   "history": null,
+   "circumference_in": 102,
+   "height_ft": 74,
+   "crown_spread_ft": [
+    64,
+    62
+   ],
+   "champion_points": 192,
+   "latitude": 43.00087400900003,
+   "longitude": -87.93903745399996,
+   "map_display": "Exact location",
+   "objectid": 2702
+  },
+  {
+   "common_name": "Paperbark Maple",
+   "scientific_name": "Acer griseum",
+   "county": "Milwaukee",
+   "access_note": "Tree is located in the Bay View area. Tree is northwest of the intersection of East Oklahoma Ave and South Howell Ave. Residence is at the east end of the circle with the tree in the front yard within a few feet of the sidewalk. Also within a mile of East Holt Ave exit from I94. ",
+   "private_property": true,
+   "owner_org": null,
+   "history": "Planted in May 2001. ",
+   "circumference_in": 50,
+   "height_ft": 35,
+   "crown_spread_ft": [
+    39.5,
+    35
+   ],
+   "champion_points": 94.3125,
+   "latitude": 42.98959057600007,
+   "longitude": -87.90546787099998,
+   "map_display": "Exact location",
+   "objectid": 2737
+  },
+  {
+   "common_name": "Pecan",
+   "scientific_name": "Carya illinoinensis",
+   "county": "Kenosha",
+   "access_note": "Located in backyard. Backyard gated & locked. Please contact Jim to gain access to backyard.",
+   "private_property": true,
+   "owner_org": null,
+   "history": "3 pecan trees were planted in backyard when owner was 6. Two died. This tree bears nuts, but they do not mature. ",
+   "circumference_in": 106,
+   "height_ft": 76,
+   "crown_spread_ft": [
+    78,
+    89
+   ],
+   "champion_points": 202.875,
+   "latitude": 42.583786718000056,
+   "longitude": -87.82557486699994,
+   "map_display": "Exact location",
+   "objectid": 2745
+  },
+  {
+   "common_name": "Pin Oak",
+   "scientific_name": "Quercus palustris",
+   "county": "Dane",
+   "access_note": "Located in center of Camp Randall. SW Tree of 3 in Center of Park",
+   "private_property": false,
+   "owner_org": "UW Madison",
+   "history": null,
+   "circumference_in": 155.2,
+   "height_ft": 83.2,
+   "crown_spread_ft": [
+    99,
+    85
+   ],
+   "champion_points": 261.4,
+   "latitude": 43.07038,
+   "longitude": -89.41012,
+   "map_display": "Exact location",
+   "objectid": 2759
+  },
+  {
+   "common_name": "Ponderosa Pine",
+   "scientific_name": "Pinus ponderosa",
+   "county": "Dane",
+   "access_note": "620 Babcock Dr - at NW corner behind building, UW ID #56-1527, Madison",
+   "private_property": false,
+   "owner_org": "Allen Centennial Garden",
+   "history": null,
+   "circumference_in": 98.3,
+   "height_ft": 62.7,
+   "crown_spread_ft": [
+    35,
+    36
+   ],
+   "champion_points": 170,
+   "latitude": 43.077312,
+   "longitude": -89.41328,
+   "map_display": "Exact location",
+   "objectid": 2767
+  },
+  {
+   "common_name": "Red Oak",
+   "scientific_name": "Quercus rubra",
+   "county": "Dane",
+   "access_note": "Mendota Mental Health Institute, about 250 ft N of East wing on Eagle Effigy Mound, which is behind the westerly building on Muir Drive.",
+   "private_property": false,
+   "owner_org": "Mendota Mental Health Institute",
+   "history": "Appeared to be dying on 20-Aug-13 . Surprised it is still alive. (MWR 05- Aug-22)",
+   "circumference_in": 235,
+   "height_ft": 90,
+   "crown_spread_ft": [
+    71,
+    66
+   ],
+   "champion_points": 342.125,
+   "latitude": 43.13007,
+   "longitude": -89.3974,
+   "map_display": "Exact location",
+   "objectid": 2788
+  },
+  {
+   "common_name": "Red Pine",
+   "scientific_name": "Pinus resinosa",
+   "county": "Douglas",
+   "access_note": "Lucious Wood County Park - 9231 East Marion Avenue Solon Springs, WI 54873 - At SW corner of parking lot in center of park, hand drawn map in file, Twn of Solon Springs",
+   "private_property": false,
+   "owner_org": "Douglas County Parks & Rec",
+   "history": null,
+   "circumference_in": 103.5,
+   "height_ft": 112.3,
+   "crown_spread_ft": [
+    40.8,
+    40.6
+   ],
+   "champion_points": 225.975,
+   "latitude": 46.3506580000001,
+   "longitude": -91.8181049999999,
+   "map_display": "Exact location",
+   "objectid": 2802
+  },
+  {
+   "common_name": "Eastern Cottonwood",
+   "scientific_name": "Populus deltoides",
+   "county": "Door",
+   "access_note": " located in Institute on the west side of Highway 57, near the Institute Saloon.",
+   "private_property": true,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 293,
+   "height_ft": 108,
+   "crown_spread_ft": [
+    114,
+    97
+   ],
+   "champion_points": 427.375,
+   "latitude": 44.893297485603,
+   "longitude": -87.2880475991207,
+   "map_display": "Exact location",
+   "objectid": 2886
+  },
+  {
+   "common_name": "White Willow",
+   "scientific_name": "Salix alba",
+   "county": "Sauk",
+   "access_note": "Directly off the front porch",
+   "private_property": true,
+   "owner_org": null,
+   "history": "It is the oldest tree on the farmstead.  It is possible it dates back to just after the construction of the house which is around 1880.",
+   "circumference_in": 276,
+   "height_ft": 75,
+   "crown_spread_ft": [
+    77,
+    79
+   ],
+   "champion_points": 370.5,
+   "latitude": 43.4491259807018,
+   "longitude": -89.6399539660848,
+   "map_display": "Exact location",
+   "objectid": 2892
+  },
+  {
+   "common_name": "Quaking Aspen",
+   "scientific_name": "Populus tremuloides",
+   "county": "Vilas",
+   "access_note": "Travel south from Star Lake Campground on Vilas County Highway N approximately 0.3 mile, to the intersection with Hook Road.  Turn right (westerly) onto unpaved Hook Road; before reaching the dead end, after about 0.7 on Hook Road, turn into a parking lot for a footpath called Tramper's Trail.  On foot, travel southerly on the marked trail, keeping Star Lake to your right.  Within a short distance (50 feet or so), the footpath forks; a sign and arrow indicate that Tramper's Trail goes right, but instead you travel on the left fork, away from Star Lake.  After about one mile on this unnamed footpath, you will encounter a stand of approximately six aspens on your right.  These half-dozen-or-so aspens are mixed in with large hemlocks and some maples.  The nominated quaking aspen tree is the aspen nearest to the footpath, about 20 feet away.The accompanying map indicates the approximate location of the parking lot for Tramper's Trail, off Hook Road.",
+   "private_property": false,
+   "owner_org": "Plum Lake Hemlock Forest State Natural Area",
+   "history": "It's in amongst large hemlocks with 4 or 5 other large aspen.  It sits approximately 10 yards north (trail right as you are walking toward Plum Lake) ",
+   "circumference_in": 105,
+   "height_ft": 92,
+   "crown_spread_ft": [
+    64,
+    52
+   ],
+   "champion_points": 211.5,
+   "latitude": 46.0181788954309,
+   "longitude": -89.482448747514,
+   "map_display": "Exact Location",
+   "objectid": 2902
+  },
+  {
+   "common_name": "American Elm",
+   "scientific_name": "Ulmus americana",
+   "county": "milwaukee",
+   "access_note": "it is a street tree and readily visible",
+   "private_property": false,
+   "owner_org": "City of Milwaukee Public Works",
+   "history": "“Tree Hunter\" is the third installment in NASF “Tree Stories\" series​, a collection of short films that illustrates the importance of the different—but equally valuable—bonds that people enjoy with trees. https://www.stateforesters.org/tree-stories/",
+   "circumference_in": 193.2,
+   "height_ft": 94,
+   "crown_spread_ft": [
+    127,
+    99
+   ],
+   "champion_points": 343.7,
+   "latitude": 43.06504064799857,
+   "longitude": -87.88067545799703,
+   "map_display": "Exact location",
+   "objectid": 2911
+  },
+  {
+   "common_name": "Tuliptree",
+   "scientific_name": "Liriodendron tulipifera",
+   "county": "Green",
+   "access_note": "1907 29th Ave - Just west of Greenwood Cemetery office",
+   "private_property": false,
+   "owner_org": "Greenwood Cemetery Association",
+   "history": null,
+   "circumference_in": 125,
+   "height_ft": 92.4,
+   "crown_spread_ft": [
+    54,
+    56
+   ],
+   "champion_points": 231.15,
+   "latitude": 42.59295,
+   "longitude": -89.6249,
+   "map_display": "Exact location",
+   "objectid": 2949
+  },
+  {
+   "common_name": "Kentucky Coffeetree",
+   "scientific_name": "Gymnocladus dioicus",
+   "county": "Dane",
+   "access_note": "In property owners yard next to driveway on Holly Ave",
+   "private_property": true,
+   "owner_org": null,
+   "history": "\n",
+   "circumference_in": 126,
+   "height_ft": 90,
+   "crown_spread_ft": [
+    74,
+    71
+   ],
+   "champion_points": 234.13,
+   "latitude": 43.0594842181681,
+   "longitude": -89.4455288647427,
+   "map_display": "Exact location",
+   "objectid": 2955
+  },
+  {
+   "common_name": "Eastern Cottonwood",
+   "scientific_name": "Populus deltoides",
+   "county": "La Crosse",
+   "access_note": "Access to the trail is at Myrick Park.",
+   "private_property": false,
+   "owner_org": null,
+   "history": "The public trail passing this giant cottonwood is named for the the tree (Cottonwood Trail) and is located in the La Crosse Marsh.",
+   "circumference_in": 312,
+   "height_ft": 97,
+   "crown_spread_ft": [
+    100,
+    83
+   ],
+   "champion_points": 432,
+   "latitude": 43.8283080806698,
+   "longitude": -91.2259868571572,
+   "map_display": "Exact location",
+   "objectid": 2997
+  },
+  {
+   "common_name": "Black Cherry",
+   "scientific_name": "Prunus serotina",
+   "county": "Waukesha",
+   "access_note": "Located near the Kettle Moraine State Headquarters building, use parking lot and walking paths to locate.",
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 108,
+   "height_ft": 105,
+   "crown_spread_ft": [
+    66,
+    65
+   ],
+   "champion_points": 229.375,
+   "latitude": 42.874,
+   "longitude": -88.522,
+   "map_display": "Exact location",
+   "objectid": 3005
+  },
+  {
+   "common_name": "Norway Spruce",
+   "scientific_name": "Picea abies",
+   "county": "Dane",
+   "access_note": "On private property; 5754 River Road, waunakee; down long driveway in front of house",
+   "private_property": true,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 167.4,
+   "height_ft": 102,
+   "crown_spread_ft": [
+    68,
+    80
+   ],
+   "champion_points": 287.9,
+   "latitude": 43.1297500163956,
+   "longitude": -89.3697168651326,
+   "map_display": "Exact location",
+   "objectid": 3007
+  },
+  {
+   "common_name": "Northern White Cedar",
+   "scientific_name": "Thuja occidentalis",
+   "county": "Forest",
+   "access_note": null,
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 117,
+   "height_ft": 67,
+   "crown_spread_ft": [
+    29,
+    32
+   ],
+   "champion_points": 191.63,
+   "latitude": 45.5666101233456,
+   "longitude": -88.5453301235744,
+   "map_display": "Exact location",
+   "objectid": 3019
+  },
+  {
+   "common_name": "Common Hackberry",
+   "scientific_name": "Celtis occidentalis",
+   "county": "Dane",
+   "access_note": "904 Oakland Avenue in Terrace on Madison Street (Side Street)",
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 151.7,
+   "height_ft": 99,
+   "crown_spread_ft": [
+    62,
+    69
+   ],
+   "champion_points": 267.07,
+   "latitude": 43.06658,
+   "longitude": -89.41279,
+   "map_display": "Exact location",
+   "objectid": 3021
+  },
+  {
+   "common_name": "Shagbark Hickory",
+   "scientific_name": "Carya ovata",
+   "county": "Milwaukee",
+   "access_note": "Use coordinates to locate tree, its north of the Oak Creek Water Tower at the north end of a hardwood forest.",
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 108,
+   "height_ft": 105,
+   "crown_spread_ft": [
+    60,
+    58
+   ],
+   "champion_points": 227.75,
+   "latitude": 42.8941464,
+   "longitude": -87.9429562,
+   "map_display": "Exact location",
+   "objectid": 3023
+  },
+  {
+   "common_name": "Swamp White Oak",
+   "scientific_name": "Quercus bicolor",
+   "county": "Jefferson",
+   "access_note": null,
+   "private_property": false,
+   "owner_org": null,
+   "history": null,
+   "circumference_in": 174,
+   "height_ft": 76,
+   "crown_spread_ft": [
+    89,
+    93
+   ],
+   "champion_points": 272.75,
+   "latitude": 43.14194,
+   "longitude": -88.56518,
+   "map_display": "Exact location",
+   "objectid": 3025
+  }
+ ]
+}

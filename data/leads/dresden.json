@@ -1,150 +1,182 @@
 {
- "city": "Dresden",
- "country": "Germany",
- "city_slug": "dresden",
- "note": "Candidates found during the 2026-08-28 verification pass (city not yet published) that did not ship as one of the four delivered trees. The official Naturdenkmal register is reproduced in de.wikipedia's 'Liste der Naturdenkmale in Dresden' (fetched as wikitext), which is where most of these were found.",
- "leads": [
-  {
-   "name": "Seidenakazie Elsasser Strasse 11",
-   "species": "Albizia julibrissin (Persian silk tree)",
-   "lat": 51.054659,
-   "lng": 13.75966,
-   "status": "lead",
-   "why": "ND 123, Johannstadt. Two-stemmed, stem circumferences 70cm and 55cm, crown 10m at 13m height, designated Jan 2015, flower clusters and viable seed set every year since 1990 despite the species not being reliably frost-hardy this far north. Held back only on access: de.wikipedia's own description places it 'to the right of the entrance' of Elsasser Strasse 11 and does not say whether that is a public verge or a private front-garden strip. A quick street-level check (Street View or a reader) would settle it; if it is street-side rather than in the building's own front garden, this is a strong fourth or fifth tree for Dresden."
-  },
-  {
-   "name": "Splitter oak's neighbours: general Grosser Garten register",
-   "species": "various",
-   "lat": null,
-   "lng": null,
-   "status": "lead",
-   "why": "Grosser Garten is a large historic public park (not itself individually Naturdenkmal-listed tree by tree beyond the Splittereiche) and is felling roughly 300-425 drought- and disease-weakened trees over the 2025/26 season per 2026 news coverage. Worth a dedicated pass to check whether any of its other old specimens (it has old lindens and oaks along the Hauptallee) are individually documented and undamaged; not pursued this pass to stay within the four-candidate limit."
-  },
-  {
-   "name": "Zerr-Eichen Liststrasse",
-   "species": "Quercus cerris (Turkey oak)",
-   "lat": null,
-   "lng": null,
-   "status": "blocked",
-   "blocked_reason": "not a collectible point",
-   "why": "ND 96, an avenue/group of Turkey oaks on Liststrasse in the Aussere Neustadt (Baumgruppe, Allee). No single tree to stand at; fails the collectible-point test."
-  },
-  {
-   "name": "Rosskastanien-Allee Bluherstrasse",
-   "species": "Aesculus hippocastanum (horse chestnut)",
-   "lat": 51.042243,
-   "lng": 13.746354,
-   "status": "blocked",
-   "blocked_reason": "not a collectible point",
-   "why": "ND 93, a chestnut avenue, not a single identifiable tree."
-  },
-  {
-   "name": "Fluttering elms of Sachsenplatz",
-   "species": "Ulmus laevis (European white elm)",
-   "lat": null,
-   "lng": null,
-   "status": "blocked",
-   "blocked_reason": "not a collectible point",
-   "why": "ND 94, a Baumgruppe (tree group) rather than one tree or a compact famous ensemble with an obvious single place to stand."
-  },
-  {
-   "name": "Krim-Linden Wallotstrasse",
-   "species": "Tilia (Crimean linden)",
-   "lat": null,
-   "lng": null,
-   "status": "blocked",
-   "blocked_reason": "not a collectible point",
-   "why": "ND 97, a linden avenue/group, same reasoning as the other Baumgruppe/Allee entries above."
-  },
-  {
-   "name": "Rosskastanien Marschnerstrasse",
-   "species": "Aesculus flava, Aesculus pavia",
-   "lat": null,
-   "lng": null,
-   "status": "blocked",
-   "blocked_reason": "not a collectible point",
-   "why": "ND 103, another chestnut group/avenue."
-  },
-  {
-   "name": "Drei Eiben Blochmannstrasse 2",
-   "species": "Taxus baccata (European yew)",
-   "lat": 51.046633,
-   "lng": 13.754056,
-   "status": "blocked",
-   "blocked_reason": "access unconfirmed",
-   "why": "ND, three yews in front of the south gable of the Ehrlichsches Stift building at Blochmannstrasse 2, designated Jan 2015 after a dispute with a school-campus development. Institutional grounds (a Stift/foundation building, later contested by a school-campus project); no source found confirming the public can walk up to them without business at the institution, so this stays out per the schools/institutional-grounds caution in the house rules until better evidence turns up."
-  },
-  {
-   "name": "Weisse Maulbeere Georgplatz",
-   "species": "Morus alba (white mulberry)",
-   "lat": 51.046013,
-   "lng": 13.741723,
-   "status": "blocked",
-   "blocked_reason": "dead",
-   "why": "NEVER SHIP as this entry. ND 82, once a genuinely remarkable specimen (18m tall, 2.90m girth, ~140 years old, protected since 1999, probably originally on the grounds of the Kreuzgymnasium built 1866), but confirmed felled by a storm in 2020. A replacement tree was planted nearby; not old enough to qualify on its own yet."
-  },
-  {
-   "name": "Eisenholzbaum Mozartstrasse",
-   "species": "Parrotia persica (Persian ironwood)",
-   "lat": 51.034538,
-   "lng": 13.750757,
-   "status": "blocked",
-   "blocked_reason": "private land",
-   "why": "NEVER SHIP as this entry. ND 28, a genuinely rare and large specimen for its species (12m tall, 1.4m girth, protected since the 3 Jan 1985 resolution alongside the Albertplatz plane and Fetscherplatz oak), but multiple sources place it specifically in the front garden (Vorgarten) of the private property at Mozartstrasse 10. Hard rule 10: front gardens of dwellings stay out whatever the register says, however fine the tree."
-  },
-  {
-   "name": "The Rotbuche of the Dresdner Heide",
-   "species": "European Beech (Fagus sylvatica)",
-   "lat": 51.09819,
-   "lng": 13.849767,
-   "status": "lead",
-   "why": "ND 108, Dresdner Heide. Verified and written 2026-10-03 (story and how_to_recognise kept below), held back only on photo-or-pin: the pin is approximate (Wikidata coordinate matches the de.wikipedia prose description only roughly) and no specific photograph has been checked. Commons category Naturdenkmal_Rotbuche_Dresdner_Heide holds CC BY-SA 3.0 files by Dr. Bernd Gross (2015) and CC BY-SA 4.0 by Staubi59 (2017); one checked frame, or a confirmed pin, makes it publishable as dre_007.",
-   "verified_tree": {
-    "id": "dre_007",
-    "name": "The Rotbuche of the Dresdner Heide",
-    "species": "European Beech (Fagus sylvatica)",
-    "age_estimate": "roughly 250 years",
-    "age_min": 230,
-    "age_max": 300,
-    "girth_cm": 570,
-    "height_m": 35,
-    "location": {
-     "address": "Dresdner Heide, forest section 109 (Revier Langebruck), about 150 m north-west of the crossing of Radeberger Strasse and Schneise 8",
-     "latitude": 51.09819,
-     "longitude": 13.849767,
-     "neighbourhood": "Dresdner Heide"
+  "city": "Dresden",
+  "country": "Germany",
+  "city_slug": "dresden",
+  "note": "Candidates found during the 2026-08-28 verification pass (city not yet published) that did not ship as one of the four delivered trees. The official Naturdenkmal register is reproduced in de.wikipedia's 'Liste der Naturdenkmale in Dresden' (fetched as wikitext), which is where most of these were found.",
+  "leads": [
+    {
+      "name": "Seidenakazie Elsasser Strasse 11",
+      "species": "Albizia julibrissin (Persian silk tree)",
+      "lat": 51.054659,
+      "lng": 13.75966,
+      "status": "lead",
+      "why": "ND 123, Johannstadt. Two-stemmed, stem circumferences 70cm and 55cm, crown 10m at 13m height, designated Jan 2015, flower clusters and viable seed set every year since 1990 despite the species not being reliably frost-hardy this far north. Held back only on access: de.wikipedia's own description places it 'to the right of the entrance' of Elsasser Strasse 11 and does not say whether that is a public verge or a private front-garden strip. A quick street-level check (Street View or a reader) would settle it; if it is street-side rather than in the building's own front garden, this is a strong fourth or fifth tree for Dresden."
     },
-    "verified_sources": [
-     "https://de.wikipedia.org/wiki/Rotbuche_Dresdner_Heide",
-     "https://www.wikidata.org/wiki/Q96146116",
-     "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Rotbuche_Dresdner_Heide"
-    ],
-    "access": "Free. Stands in the public forest of the Dresdner Heide (Sachsenforst), a short way off the Schneise 8 forest ride; no entry charge.",
-    "transport": "Not verified. Inside the Heide, over 30 minutes from the centre; reached on foot from the Radeberger Strasse side. Check timetables before quoting a stop.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "story": "In October 2002 a hurricane found a fork in this beech that nobody knew was failing, and more than a third of the crown came down. Two years earlier Dresden had made it a natural monument, measured at about 35 metres tall, 5.70 metres round and with a crown some 28 metres across. At that point only one beech in the city was bigger, the one behind the Weisses Schloss in Cossebaude.\n\nWhat stands in forest section 109 of the Dresdner Heide today is the tree that came out of that storm: lower than the 35 metres in the record and lopsided where the crown went. Every photograph on file was taken after the damage, so they show the beech as a visitor will meet it rather than as it looked on the day it was designated.\n\nThe age given in 2000 was about 250 years, and that was an estimate then. Add the years since and it lands somewhere around 275, give or take a few decades. The ordinance protects a ring of 18 metres around the trunk along with the tree itself.\n\nIt stands a short way into the forest, about 150 metres north-west of the point where Radeberger Strasse crosses the forest ride called Schneise 8. Our pin is approximate, so expect to look around for the broken crown once you reach the crossing.",
-    "photo": {
-     "url": null,
-     "license": null,
-     "attribution": null,
-     "status": "missing"
+    {
+      "name": "Splitter oak's neighbours: general Grosser Garten register",
+      "species": "various",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Grosser Garten is a large historic public park (not itself individually Naturdenkmal-listed tree by tree beyond the Splittereiche) and is felling roughly 300-425 drought- and disease-weakened trees over the 2025/26 season per 2026 news coverage. Worth a dedicated pass to check whether any of its other old specimens (it has old lindens and oaks along the Hauptallee) are individually documented and undamaged; not pursued this pass to stay within the four-candidate limit."
     },
-    "how_to_recognise": "You can recognise it by the lopsided crown, more than a third of it lost to a storm in 2002, above a trunk about 5.70 metres round. It stands about 150 metres north-west of where Radeberger Strasse crosses Schneise 8.",
-    "verify_notes": "Register only (city Naturdenkmal ND 108, designated Dec 2000). Wikidata coordinate 51.09819,13.849767 agrees with the de.wikipedia description (150 m NW of the Radeberger Strasse / Schneise 8 crossing) only in prose, which I did not measure, so precision is stated approximate. Photos on Commons: CC BY-SA 3.0 by Dr. Bernd Gross (2015-05-26, 22 files) and CC BY-SA 4.0 Staubi59 (2017). lifecheck on the pin returned NONE. Measurements at designation in 2000: height about 35 m, girth 5.70 m, crown diameter about 28 m. After an unseen fork defect plus a hurricane in October 2002 more than a third of the crown broke off, so today's tree is lower and lopsided; the 35 m figure is the pre-2002 height. The photos show the tree after the damage, which a writer should check. Age 250 years was an estimate in 2000. At designation only the beech behind the Weisses Schloss in Cossebaude (ND 66) was a bigger beech in Dresden. Protected zone 18 m around the trunk."
-   }
-  },
-  {
-   "name": "Lutherlinde Albertstadt",
-   "reason": "Planted 2016 in the garden of the MDR Landesfunkhaus Sachsen (Königsbrücker Str. 88), access not established and tree is young; no photo or pin in reach. Wikidata Q141064350.",
-   "date": "2026-10-03"
-  }
- ],
- "blocked": [
-  {
-   "name": "Berg-Hemlocktanne Käthe-Kollwitz-Ufer 91",
-   "reason": "ND 36, 12 m tall, 1 m girth, but de.wikipedia says it stands in the front garden (Vorgarten) of Villa Friederike, a private dwelling: not publishable under hard rule 10. Register pin 51.058295,13.797106.",
-   "date": "2026-10-03"
-  }
- ]
+    {
+      "name": "Zerr-Eichen Liststrasse",
+      "species": "Quercus cerris (Turkey oak)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 96, an avenue/group of Turkey oaks on Liststrasse in the Aussere Neustadt (Baumgruppe, Allee). No single tree to stand at; fails the collectible-point test."
+    },
+    {
+      "name": "Rosskastanien-Allee Bluherstrasse",
+      "species": "Aesculus hippocastanum (horse chestnut)",
+      "lat": 51.042243,
+      "lng": 13.746354,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 93, a chestnut avenue, not a single identifiable tree."
+    },
+    {
+      "name": "Fluttering elms of Sachsenplatz",
+      "species": "Ulmus laevis (European white elm)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 94, a Baumgruppe (tree group) rather than one tree or a compact famous ensemble with an obvious single place to stand."
+    },
+    {
+      "name": "Krim-Linden Wallotstrasse",
+      "species": "Tilia (Crimean linden)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 97, a linden avenue/group, same reasoning as the other Baumgruppe/Allee entries above."
+    },
+    {
+      "name": "Rosskastanien Marschnerstrasse",
+      "species": "Aesculus flava, Aesculus pavia",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 103, another chestnut group/avenue."
+    },
+    {
+      "name": "Drei Eiben Blochmannstrasse 2",
+      "species": "Taxus baccata (European yew)",
+      "lat": 51.046633,
+      "lng": 13.754056,
+      "status": "blocked",
+      "blocked_reason": "access unconfirmed",
+      "why": "ND, three yews in front of the south gable of the Ehrlichsches Stift building at Blochmannstrasse 2, designated Jan 2015 after a dispute with a school-campus development. Institutional grounds (a Stift/foundation building, later contested by a school-campus project); no source found confirming the public can walk up to them without business at the institution, so this stays out per the schools/institutional-grounds caution in the house rules until better evidence turns up."
+    },
+    {
+      "name": "Weisse Maulbeere Georgplatz",
+      "species": "Morus alba (white mulberry)",
+      "lat": 51.046013,
+      "lng": 13.741723,
+      "status": "blocked",
+      "blocked_reason": "dead",
+      "why": "NEVER SHIP as this entry. ND 82, once a genuinely remarkable specimen (18m tall, 2.90m girth, ~140 years old, protected since 1999, probably originally on the grounds of the Kreuzgymnasium built 1866), but confirmed felled by a storm in 2020. A replacement tree was planted nearby; not old enough to qualify on its own yet."
+    },
+    {
+      "name": "Eisenholzbaum Mozartstrasse",
+      "species": "Parrotia persica (Persian ironwood)",
+      "lat": 51.034538,
+      "lng": 13.750757,
+      "status": "blocked",
+      "blocked_reason": "private land",
+      "why": "NEVER SHIP as this entry. ND 28, a genuinely rare and large specimen for its species (12m tall, 1.4m girth, protected since the 3 Jan 1985 resolution alongside the Albertplatz plane and Fetscherplatz oak), but multiple sources place it specifically in the front garden (Vorgarten) of the private property at Mozartstrasse 10. Hard rule 10: front gardens of dwellings stay out whatever the register says, however fine the tree."
+    },
+    {
+      "name": "The Rotbuche of the Dresdner Heide",
+      "species": "European Beech (Fagus sylvatica)",
+      "lat": 51.09819,
+      "lng": 13.849767,
+      "status": "lead",
+      "why": "ND 108, Dresdner Heide. Verified and written 2026-10-03 (story and how_to_recognise kept below), held back only on photo-or-pin: the pin is approximate (Wikidata coordinate matches the de.wikipedia prose description only roughly) and no specific photograph has been checked. Commons category Naturdenkmal_Rotbuche_Dresdner_Heide holds CC BY-SA 3.0 files by Dr. Bernd Gross (2015) and CC BY-SA 4.0 by Staubi59 (2017); one checked frame, or a confirmed pin, makes it publishable as dre_007.",
+      "verified_tree": {
+        "id": "dre_007",
+        "name": "The Rotbuche of the Dresdner Heide",
+        "species": "European Beech (Fagus sylvatica)",
+        "age_estimate": "roughly 250 years",
+        "age_min": 230,
+        "age_max": 300,
+        "girth_cm": 570,
+        "height_m": 35,
+        "location": {
+          "address": "Dresdner Heide, forest section 109 (Revier Langebruck), about 150 m north-west of the crossing of Radeberger Strasse and Schneise 8",
+          "latitude": 51.09819,
+          "longitude": 13.849767,
+          "neighbourhood": "Dresdner Heide"
+        },
+        "verified_sources": [
+          "https://de.wikipedia.org/wiki/Rotbuche_Dresdner_Heide",
+          "https://www.wikidata.org/wiki/Q96146116",
+          "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Rotbuche_Dresdner_Heide"
+        ],
+        "access": "Free. Stands in the public forest of the Dresdner Heide (Sachsenforst), a short way off the Schneise 8 forest ride; no entry charge.",
+        "transport": "Not verified. Inside the Heide, over 30 minutes from the centre; reached on foot from the Radeberger Strasse side. Check timetables before quoting a stop.",
+        "location_precision": "approximate",
+        "curation_status": "flagged",
+        "story": "In October 2002 a hurricane found a fork in this beech that nobody knew was failing, and more than a third of the crown came down. Two years earlier Dresden had made it a natural monument, measured at about 35 metres tall, 5.70 metres round and with a crown some 28 metres across. At that point only one beech in the city was bigger, the one behind the Weisses Schloss in Cossebaude.\n\nWhat stands in forest section 109 of the Dresdner Heide today is the tree that came out of that storm: lower than the 35 metres in the record and lopsided where the crown went. Every photograph on file was taken after the damage, so they show the beech as a visitor will meet it rather than as it looked on the day it was designated.\n\nThe age given in 2000 was about 250 years, and that was an estimate then. Add the years since and it lands somewhere around 275, give or take a few decades. The ordinance protects a ring of 18 metres around the trunk along with the tree itself.\n\nIt stands a short way into the forest, about 150 metres north-west of the point where Radeberger Strasse crosses the forest ride called Schneise 8. Our pin is approximate, so expect to look around for the broken crown once you reach the crossing.",
+        "photo": {
+          "url": null,
+          "license": null,
+          "attribution": null,
+          "status": "missing"
+        },
+        "how_to_recognise": "You can recognise it by the lopsided crown, more than a third of it lost to a storm in 2002, above a trunk about 5.70 metres round. It stands about 150 metres north-west of where Radeberger Strasse crosses Schneise 8.",
+        "verify_notes": "Register only (city Naturdenkmal ND 108, designated Dec 2000). Wikidata coordinate 51.09819,13.849767 agrees with the de.wikipedia description (150 m NW of the Radeberger Strasse / Schneise 8 crossing) only in prose, which I did not measure, so precision is stated approximate. Photos on Commons: CC BY-SA 3.0 by Dr. Bernd Gross (2015-05-26, 22 files) and CC BY-SA 4.0 Staubi59 (2017). lifecheck on the pin returned NONE. Measurements at designation in 2000: height about 35 m, girth 5.70 m, crown diameter about 28 m. After an unseen fork defect plus a hurricane in October 2002 more than a third of the crown broke off, so today's tree is lower and lopsided; the 35 m figure is the pre-2002 height. The photos show the tree after the damage, which a writer should check. Age 250 years was an estimate in 2000. At designation only the beech behind the Weisses Schloss in Cossebaude (ND 66) was a bigger beech in Dresden. Protected zone 18 m around the trunk."
+      }
+    },
+    {
+      "name": "Lutherlinde Albertstadt",
+      "reason": "Planted 2016 in the garden of the MDR Landesfunkhaus Sachsen (Königsbrücker Str. 88), access not established and tree is young; no photo or pin in reach. Wikidata Q141064350.",
+      "date": "2026-10-03"
+    },
+    {
+      "name": "Weymouths-Kiefer Sebastian-Bach-Strasse 2",
+      "species": "Pinus strobus (Eastern white pine)",
+      "lat": 51.05025,
+      "lng": 13.80886,
+      "status": "lead",
+      "why": "ND 139, Blasewitz: girth nearly 3 m, crown 14 m, about 1 m from the pavement of Tolkewitzer Strasse behind the house on corner plot Sebastian-Bach-Strasse 2 (de.wikipedia). Held back on access: it is on a residential plot; if the pavement view is the whole point it could ship as a view-only tree but no source says so.",
+      "date": "2026-10-05"
+    },
+    {
+      "name": "Haenge-Buchen im Helfenberger Park",
+      "species": "Fagus sylvatica f. pendula",
+      "lat": 51.036222,
+      "lng": 13.863639,
+      "status": "lead",
+      "why": "ND 78, park of Schloss Helfenberg. The stronger of the two weeping beeches was uprooted by storm Niklas on 31 March 2015, the survivor is the smaller one (girth about 4.7 m in 2018 per baumkunde.de, concrete-filled cavity, a big limb lost); grafted trees thought planted about 1806-1811 or about 180 years old. Weaker entry now; could be written as the survivor if a photograph of it is found.",
+      "date": "2026-10-05"
+    },
+    {
+      "name": "Eichen Striesener Strasse (ND 90)",
+      "species": "Quercus macrocarpa (bur oak)",
+      "lat": 51.04934,
+      "lng": 13.759246,
+      "status": "lead",
+      "why": "Group of 2 bur oaks, 18 m, girths 2.30 m and 2.60 m (city list): modest for the species, no story found. Wikidata Q113253130 has a Commons photograph. Not worth the walk unless a source gives a reason.",
+      "date": "2026-10-05"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Berg-Hemlocktanne Käthe-Kollwitz-Ufer 91",
+      "reason": "ND 36, 12 m tall, 1 m girth, but de.wikipedia says it stands in the front garden (Vorgarten) of Villa Friederike, a private dwelling: not publishable under hard rule 10. Register pin 51.058295,13.797106.",
+      "date": "2026-10-03"
+    },
+    {
+      "name": "Mammutbaum Meusslitzer Strasse 134",
+      "reason": "ND 137, giant sequoia, girth 3 m, the largest known in the Dresden area, but de.wikipedia says it stands in the front garden (Vorgarten) of the residential plot Meusslitzer Strasse 134 about 4 m from the pavement: somebody's home, hard rule 10. Pin 51.000078,13.851131 (register).",
+      "date": "2026-10-05"
+    }
+  ]
 }

@@ -567,6 +567,45 @@
    "status": "lead",
    "why": "no photo or exact pin in reach (2026-10-04 verify pass): rural register point, no Commons photograph within 150 m that shows a tree, access and exact trunk not settled (OSM access query impossible: Overpass 406 from this environment).",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Oak near Ampermoching, Hebertshausen (ND-00418, Fl.Nr. 85/4)",
+   "species": "Oak (Quercus sp.)",
+   "lat": 48.30574,
+   "lng": 11.48668,
+   "register_ref": "Bayern LfU ND-00418; OSM node 3711592633 natural_monument 4 m from register point",
+   "status": "lead",
+   "why": "No photo or exact pin to ship on (2026-10-04 verify pass): OSM node gives a tree-level pin agreeing with the register, but the site is 18.5 km out in farmland, beyond the 30-minute public-transport boundary of Munich, no Commons photograph within 120 m, lifecheck not run. Needs a photograph or a place that reaches four."
+  },
+  {
+   "name": "OSM natural_monument join, Munich 20 km (2026-10-04 verify pass, method note)",
+   "species": "",
+   "status": "lead",
+   "why": "Overpass (overpass-api.de answered on a GET with data=; kumi timed out) returned 112 tree nodes. Joined to bayern-naturdenkmale.json within 40 m: every unmined register row with a node is already live, blocked or a lead. OSM node 3669658626 (48.25983,11.43816) is NOT Dachau ND 12: it matches register ND-00393 (3 Rotbuchen, Fl.Nr. 834/4, a garden group) and sits 80+ m from ND 12 (48.26045,11.43887, de.wikipedia single Rotbuche NW of the public car park), so it must not be used to confirm ND 12. Commons geosearch (120 m) around the Dachau Eibe ND 11, Sumpfzypressen ND 13, Blutbuche 720, Esche 625/3 and Prittlbach Linde returned no tree photographs."
+  },
+  {
+   "name": "Alte Linden Mariabrunn (Ampermoching/Röhrmoos), Landkreis Dachau Naturdenkmal",
+   "species": "Lime (Tilia sp.)",
+   "status": "lead",
+   "why": "2026-10-05 verify pass: Commons category 'Bei den drei Linden (Ampermoching)' holds eight CC BY-SA 4.0 photographs of the natural monument 'Alte Linden Mariabrunn' taken 2026-02-28 (alive, recent). It is a group of lindens near the Mariabrunn pilgrimage place, about 25 km north-west of Munich and well beyond 30 minutes by public transport, so not delivered. Species, count and girth not established; needs the Landkreis Dachau ND list row."
+  },
+  {
+   "name": "Kapellenlinden St. Aegidius, Grafing (ND 81, two limes)",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "status": "lead",
+   "why": "2026-10-05 verify pass: de.wikipedia list gives 48.048974, 11.970504, girths 7.90 and 5.45 m (2015), about 260 years each, photos on Commons. About 33 km east of Munich, over the 30-minute line, and two trees at a chapel (a pair, not one trunk). Not delivered."
+  },
+  {
+   "name": "Hohle Linde in Obermarbach (Petershausen)",
+   "species": "Lime (Tilia sp.)",
+   "status": "lead",
+   "why": "2026-10-05 verify pass: de.wikipedia list gives 10.2 m girth and about 400 years at 48.427312, 11.482496. About 33 km north of Munich, beyond the day-trip line. Not checked further."
+  },
+  {
+   "name": "Edignalinde, Puch (Fürstenfeldbruck): delivered as muc_063; Sauerlach lime as muc_064; Ingelsberg ash as muc_065",
+   "species": "",
+   "status": "lead",
+   "why": "Method note 2026-10-05: the Wikipedia 'Liste markanter und alter Baumexemplare in Bayern' (wikitext rows, filtered to Munich-area places) plus Commons geosearch of CATEGORIES near Munich found these three where the register join found none, because they carry Commons photographs. Remaining rows from that list within 35 km of Munich are the three leads above."
   }
  ],
  "blocked": [

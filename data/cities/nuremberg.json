@@ -2,9 +2,9 @@
   "city": "Nuremberg",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Nine of Nuremberg's fourteen protected trees stand within a kilometre of the old town, six of them in the Kontumazgarten, a park of under two hectares named after a quarantine station. Three more stand apart in Woehrd: a Stadtpark lime with a trunk eight metres round, at around four hundred years the best documented of the lot, and a pair of undated beeches in Cramer-Klett-Park. The last two are further out: an oak on the shore of the Nummernweiher in the Volkspark Dutzendteich, and in Gebersdorf a wild pear named after Gustav Adolf of Sweden.",
-  "meta_description": "Fourteen protected Nuremberg trees, nine in one walk: a 400-year lime, six in a former quarantine garden, a lakeside oak, a pear named for a king.",
-  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus thirteen more.",
+  "intro": "Nine of Nuremberg's sixteen protected trees stand within a kilometre of the old town, six of them in the Kontumazgarten, a park of under two hectares named after a quarantine station. Three more stand apart in Woehrd: a Stadtpark lime with a trunk eight metres round, at around four hundred years the best documented of the lot, and a pair of undated beeches in Cramer-Klett-Park. The rest are further out: three protected oaks along the Nummernweiher in the Volkspark Dutzendteich, one of them growing in the footpath, and in Gebersdorf a wild pear named after Gustav Adolf of Sweden.",
+  "meta_description": "Sixteen protected Nuremberg trees, nine in one walk: a 400-year lime, six in a former quarantine garden, three lakeside oaks, a pear named for a king.",
+  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus fifteen more.",
   "question_answer": "The oldest tree in Nuremberg is the large-leaved lime in the Stadtpark, reckoned at around four hundred years with a trunk about eight metres round, which makes it both the oldest and the thickest tree on this page. It stands in a free public park about fifteen minutes' walk from the Kontumazgarten cluster. It is also the best documented: two independent sources describe it, where most of the city's protected trees rest on the ordinance alone.",
   "question_context": "Nuremberg protects individual trees by city ordinance rather than through a state heritage list, and the Bavarian register that carries them gives a number, a German name and a coordinate, with no species column, no girth and no age. So the species on this page were established from the city's own 2020 ordinance and from local sources, and several are identified at genus level or inferred from the tree's German name rather than confirmed outright; each of those says so in its own story. The same thinness cuts the other way too. Cross-checking the state layer against the current city ordinance turned up two protected trees that the state still lists as current and that the ordinance no longer carries, both at addresses where German sources record monuments lost to fungal infection. Those are absent here. Four more are on private ground, one is a seventy-nine tree avenue with nowhere to stand, and two are in institutional courtyards.",
   "faq": [
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can I see Nuremberg's protected trees in one walk?",
-      "a": "Nine of the fourteen, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime and the Cramer-Klett-Park pair are separate stops in Woehrd, a further fifteen to twenty minutes on foot from the old town. The Dutzendteich oak in the south-east and the Gustav Adolf pear in Gebersdorf, in the west, are separate trips."
+      "a": "Nine of the sixteen, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime and the Cramer-Klett-Park pair are separate stops in Woehrd, a further fifteen to twenty minutes on foot from the old town. The three Dutzendteich oaks in the south-east and the Gustav Adolf pear in Gebersdorf, in the west, are separate trips."
     },
     {
       "q": "Are they free to visit?",
@@ -463,6 +463,68 @@
       },
       "how_to_recognise": "You can recognise it as the oak right on the north shore of the eastern Nummernweiher. It stands a short way west of protected oak No. 33, which grows in the footpath itself.",
       "verify_notes": "Register only (Bavarian Naturdenkmal register, row ND-05060, 'aktuell'; Nuremberg's own 2020 ordinance list per earlier pass). Register coordinate 49.428955,11.109193 and de.wikipedia's list coordinate 49.42894,11.10923 agree within about 3 m, and a Commons photograph of this exact monument is geotagged at the same point, so the pin is confirmed to tree level. Species: de.wikipedia list and the photographer's Commons category 'Quercus robur in Nuremberg' (the species label is the Commons contributor's, not the register's; the register says only 'Eiche'). Photograph in hand: Commons file 'Eiche im Volkspark Dutzendteich am Nordufer des oestlichen Nummernweihers.jpg' (found by lifecheck, dated 2019-06-20; licence not yet checked here, a photo pass must verify it). Alive: lifecheck gave OLD (2019) only; no vitality field in register; deliver flagged. No girth, height or age given by any source seen. Part of a walkable group around the Dutzendteich lakes with ND 33 and ND 31 (all within roughly 450 m)."
+    },
+    {
+      "id": "nbg_014",
+      "name": "ND Nr. 33 Oak in the Nummernweiher footpath, Dutzendteich",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Volkspark Dutzendteich, north shore of the eastern Nummernweiher, east side, in the footpath surface",
+        "latitude": 49.42912686,
+        "longitude": 11.11003101,
+        "neighbourhood": "Gleisshammer"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+        "data/registers/bayern-naturdenkmale.json ND-05059 (Bavarian Naturdenkmal register, status aktuell)",
+        "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers,_an_der_Ostseite_im_Gehweg.jpg"
+      ],
+      "access": "Free. Public city park, open all hours; the tree grows in the footpath along the lake shore.",
+      "transport": "Tram 4 terminus or S-Bahn Dutzendteich, roughly 10 minutes on foot (estimate)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This oak grows in the footpath itself. It stands on the north shore of the eastern Nummernweiher, one of the ponds of Nuremberg's Volkspark Dutzendteich, and the German Wikipedia list of the city's natural monuments describes it exactly that way: on the east side, in the path.\n\nIt carries Bavarian registration number 33, one of three protected oaks along this stretch of water. Its neighbour, number 34, stands a short way west on the shore and already has a page here. Number 31 is further round, between the pond and Jakob-Wolff-Strasse.\n\nThe official records do not quite agree on where 33 stands. Bavaria's state register and the Wikipedia list put it about 30 metres apart, which is why our pin is marked approximate. In practice that matters less than it sounds, because a tree growing out of the path surface is hard to walk past without noticing.\n\nThe register calls it simply Eiche, oak, and photographs of it are filed as pedunculate oak. The most recent we found was taken in June 2019, so whether it looks the same today is something a visitor can tell us better than any document.\n\nNobody has published its girth, its height or its age. If you have stood beside it with a tape measure, tell us.",
+      "how_to_recognise": "You can recognise it as the oak standing in the footpath itself rather than beside it. It is on the east side of the north shore of the eastern Nummernweiher, a short way east of protected oak No. 34 on the shore.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers%2C_an_der_Ostseite_im_Gehweg.jpg",
+        "license": "CC0",
+        "attribution": "Kayron TB, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3024,
+        "height": 4032
+      }
+    },
+    {
+      "id": "nbg_015",
+      "name": "ND Nr. 31 Oak north of the Nummernweiher, Dutzendteich",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Volkspark Dutzendteich, north of the Nummernweiher, south of Jakob-Wolff-Strasse, Nuremberg",
+        "latitude": 49.43011472,
+        "longitude": 11.10669369,
+        "neighbourhood": "Gleisshammer"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+        "data/registers/bayern-naturdenkmale.json ND-05057 (Bavarian Naturdenkmal register, status aktuell)",
+        "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_n%C3%B6rdlich_des_Nummernweihers,_s%C3%BCdlich_der_Jakob-Wolff-Stra%C3%9Fe_20170825_130211.jpg"
+      ],
+      "access": "Free. Public city park, open all hours; the tree stands between the lake and Jakob-Wolff-Strasse.",
+      "transport": "Tram 4 terminus or S-Bahn Dutzendteich, roughly 10 minutes on foot (estimate)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Of the three protected oaks along the Nummernweiher in Nuremberg's Volkspark Dutzendteich, number 31 is the one that stands back from the water. Its official name places it by two edges at once: north of the pond, south of Jakob-Wolff-Strasse. Somewhere in that strip of park between the shore path and the street is an oak the state of Bavaria has decided must not be cut down.\n\nThe register says little else. It calls the tree Eiche, oak, with no species, no girth, no height and no age. A photographer who stood beside it in August 2017 filed it as a pedunculate oak, Quercus robur, and that photograph is the most recent record we have of it. Bavaria's register still lists it as current, but nobody has put a fresh date on it since that summer, so if you have seen it lately, tell us it is still there.\n\nWhere exactly it stands is a matter of about twenty metres. The register and the German Wikipedia list of the city's natural monuments give coordinates that far apart, so our pin is approximate.\n\nThe other two oaks make it an easy detour. Number 34 stands on the north shore of the eastern pond, and number 33 grows in the footpath a little further east. If you measure this one round the trunk at chest height, tell us the number.",
+      "how_to_recognise": "You can recognise it as the oak in the strip of park between the Nummernweiher and Jakob-Wolff-Strasse, back from the water. The oak on the lawn by the flats at Jakob-Wolff-Strasse 19 to 23 is a different one.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Eiche_im_Volkspark_Dutzendteich_n%C3%B6rdlich_des_Nummernweihers%2C_s%C3%BCdlich_der_Jakob-Wolff-Stra%C3%9Fe_20170825_130211.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Buendia22, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3024,
+        "height": 4032
+      }
     },
     {
       "id": "nbg_016",
