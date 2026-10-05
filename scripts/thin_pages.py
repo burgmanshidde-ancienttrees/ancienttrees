@@ -91,6 +91,28 @@ def question_evidence():
     return seen
 
 
+def roster():
+    """Cities that had 10+ impressions the day before the demotion
+    (data/depth-roster-frozen.json). Their place pages earned readers, so a
+    missing photograph does not take them out (2026-10-06)."""
+    try:
+        return set(json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json")))["cities"])
+    except (OSError, ValueError, KeyError):
+        return set()
+
+
+def page_evidence():
+    """Tree pages Search Console showed in a digest's top pages before the
+    demotion. Frozen like question_evidence(): a page readers found keeps its
+    place in the index while it waits for a photograph."""
+    seen = set()
+    txt = open(os.path.join(ROOT, "DATA.md"), encoding="utf-8").read()
+    for line in re.findall(r"Top pages \(10d\): (.*)", txt):
+        for path in re.findall(r"(/[a-z0-9/-]+) \(c\d+/i\d+\)", line):
+            seen.add(BASE + path)
+    return seen
+
+
 def destination(t):
     """A tree somebody would travel for by itself: written up in two or more
     language Wikipedias, or a SOURCED age of a thousand years or more. The
@@ -112,6 +134,8 @@ def main():
     translated = {lang: {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(ROOT, "data", "i18n", lang, "*.json"))}
                   for lang in LANGS}
     q_keep = question_evidence()
+    on_roster = roster()
+    t_keep = page_evidence()
 
     groups = {"fallback": [], "thin_places": [], "question_pages": [], "weak_trees": []}
     kept_thin, a_places = [], []
@@ -143,7 +167,12 @@ def main():
         for t, ts in zip(trees, tslugs):
             if has_photo(t) if INDEX_NEEDS_PHOTO else findable(t):
                 continue
-            groups["weak_trees"] += [f"{BASE}/{slug}/{ts}"] + [f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real]
+            urls = [f"{BASE}/{slug}/{ts}"] + [f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real]
+            # A tree page readers found before 09-28 stays while it waits
+            # for a photograph, if it is still findable on the ground.
+            if INDEX_NEEDS_PHOTO and findable(t):
+                urls = [u for u in urls if u not in t_keep]
+            groups["weak_trees"] += urls
         # 2. Places with one to three trees: the PLACE pages leave the index,
         #    the tree pages stay, because the tree page is the one with the story.
         i = imps.get(slug, 0)
@@ -163,7 +192,8 @@ def main():
         #     pages are already out under INDEX_NEEDS_PHOTO; without this a new
         #     place of four photo-less trees would still enter Google as a city
         #     page. Returns with its first photograph.
-        if INDEX_NEEDS_PHOTO and not any(has_photo(t) for t in trees):
+        #     Not a place on the frozen roster: those pages had readers.
+        if INDEX_NEEDS_PHOTO and slug not in on_roster and not any(has_photo(t) for t in trees):
             groups["thin_places"] += city_urls + q_urls
             continue
         # 3. Question pages: ~45 percent template shared with every other
