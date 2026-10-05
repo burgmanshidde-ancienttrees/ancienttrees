@@ -2,27 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-18T05:20:01+00:00",
-   "date": "2026-08-18",
-   "run_id": "32102460284",
-   "minutes": 15.3,
-   "minutes_basis": "measured",
-   "turns": 116,
-   "denials": 27,
-   "denials_source": "permission_denials: Bash",
-   "ended": "success",
-   "tokens": 19682600,
-   "claims_held": [
-    "seville",
-    "zaragoza",
-    "Las Vegas"
-   ],
-   "commits": 6,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-18T08:24:06+00:00",
    "date": "2026-08-18",
    "run_id": "32116167489",
@@ -20715,6 +20694,44 @@
     }
    ],
    "trees": 13,
+   "logged": true
+  },
+  {
+   "started": "2026-10-05T23:27:31+00:00",
+   "date": "2026-10-05",
+   "run_id": "37388547756",
+   "minutes": 2.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 55,
+   "denials": 1,
+   "denials_source": "permission_denials: Workflow",
+   "ended": "success",
+   "tokens": 455650,
+   "claims_held": [
+    "freiburg"
+   ],
+   "commits": 6,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "wilmington-delaware",
+     "trees": 8
+    },
+    {
+     "city": "bergamo",
+     "trees": 0
+    },
+    {
+     "city": "catania",
+     "trees": 0
+    },
+    {
+     "city": "padua",
+     "trees": 0
+    }
+   ],
+   "trees": 8,
    "logged": true
   }
  ],
