@@ -35,8 +35,8 @@
       "age_max": 144,
       "location": {
         "address": "Víkurgarður (Fógetagarður), corner of Aðalstræti and Kirkjustræti, Reykjavik",
-        "latitude": 64.1474,
-        "longitude": -21.9418,
+        "latitude": 64.147422,
+        "longitude": -21.942013,
         "neighbourhood": "City Center"
       },
       "story": "Reykjavik's oldest tree stands on ground that was the city's main burial ground for roughly six centuries, from a church first recorded around 1200 until the last graves stopped in 1839. In 1883 the Danish health director Georg Schierbeck took over the disused churchyard for horticultural experiments, planting vegetables, grain, shrubs and trees to test what could actually grow in Iceland's climate, and the following summer he put a Swedish whitebeam in the ground at the corner of Aðalstræti and Kirkjustræti. It survived when almost everything else in his experimental garden did not, and at around 142 years old it now holds the title of the oldest planted tree in the country, not just the city, a distinction that says as much about Iceland's near-total historical deforestation as it does about the tree itself. Schierbeck left for Denmark a decade later, and the site passed to a local magistrate's family who kept tending it, which is most of why anything from his original planting survived at all. The whitebeam has outlasted the churchyard's headstones, the garden's original purpose, and a 1972 redesign that turned the space into more of a square than a garden, one of only a few of Schierbeck's original trees still standing.",
@@ -59,8 +59,16 @@
         "note": "Photographed by a reader and sent through the app (2026-09-04); a viewing pass approved it on 2026-10-03: Whole crown readable, tree is the subject, daylight; a group stands at the base but the tree fills the frame. Species seen: broad leathery ovate leaves, pale undersides, wide multi-stemmed domed crown, consistent with Sorbus intermedia. Fits the description: a single large old tree in a small paved urban park among buildings, as the recognition line says.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it as the one old tree in the little park, put in the ground in 1884 at the corner of Adalstraeti and Kirkjustraeti and reckoned the oldest planted tree in the country."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the one old tree in the little park, put in the ground in 1884 at the corner of Adalstraeti and Kirkjustraeti and reckoned the oldest planted tree in the country.",
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "55b91b6b-2126-4579-800f-41cf3f12d87a",
+        "taken_at": "2026-09-04T15:45:35+00:00",
+        "moved_m": 11,
+        "date": "2026-10-05",
+        "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      }
     },
     {
       "id": "rey_002",
@@ -71,8 +79,8 @@
       "age_max": 98,
       "location": {
         "address": "Hólavallagarður cemetery, Suðurgata, Reykjavik",
-        "latitude": 64.1446,
-        "longitude": -21.9479,
+        "latitude": 64.144417,
+        "longitude": -21.947863,
         "neighbourhood": "Vesturbær"
       },
       "story": "European larch does not grow wild anywhere near Iceland, and conifers in general struggle against the country's wind and thin soil more than almost any other kind of tree, which is part of why Iceland's forestry society singled one out in 2011 growing inside Hólavallagarður, Reykjavik's oldest surviving cemetery. Consecrated in 1838 and still the resting place of many of the country's most significant historical figures, the cemetery has become, almost by accident, one of the most heavily wooded plots of ground in the capital, its narrow gravel paths winding between headstones and trees rather than through open lawn the way most cemeteries are laid out. The larch was already about 80 years old when it won its designation, putting its planting around the early 1930s, decades into Iceland's first serious attempts at organized forestry after centuries in which the country had almost none. Larches lose their needles every winter, unusual for a conifer, so for several months a year this one stands bare among the cemetery's evergreens, a reminder that even the country's championed trees keep behaving like nothing else planted around them.",
@@ -95,8 +103,16 @@
         "note": "Photographed by a reader and sent through the app (2026-09-04); a viewing pass approved it on 2026-10-03: Gnarled old conifer, trunk and limbs fully readable, in a cemetery among headstones with an information sign. Species seen: deciduous conifer with soft tufted needles on twisted limbs, fissured bark, consistent with Larix decidua. Fits the description: an old conifer growing along gravel paths between headstones in Holavallagardur.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it in winter, when it stands bare among the cemetery's evergreens: a conifer that drops its needles. It grows in Holavallagardur, along the gravel paths between the headstones."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it in winter, when it stands bare among the cemetery's evergreens: a conifer that drops its needles. It grows in Holavallagardur, along the gravel paths between the headstones.",
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "c3722c87-18af-4a1e-9d8c-a7beddf77f09",
+        "taken_at": "2026-09-04T16:29:22+00:00",
+        "moved_m": 20,
+        "date": "2026-10-05",
+        "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      }
     },
     {
       "id": "rey_003",
@@ -107,14 +123,15 @@
       "age_max": 110,
       "location": {
         "address": "Corner of Suðurgata and Vonarstræti, near Reykjavik City Hall",
-        "latitude": 64.146,
-        "longitude": -21.9422,
+        "latitude": 64.146789,
+        "longitude": -21.94277,
         "neighbourhood": "City Center"
       },
       "story": "In 1918, the year the Act of Union made Iceland a sovereign state in union with Denmark, a sycamore maple went into the ground at the corner of Suðurgata and Vonarstræti, on a small patch of grass squeezed against what would later become a parking area. It grew alongside the birth of modern Icelandic statehood, was named the country's Tree of the Year in 1994, and by every recent assessment is still, in the Icelandic forestry society's own phrase, healthy as a horse, crown maintained, foliage vigorous, standing its ground on a corner most passers by would assume was chosen for parking rather than for a tree planted before the country existed in its current form. Sycamore maple is not native to Iceland any more than most of the species on this list, and a specimen this size at this age, over a century into a climate its ancestors never evolved for, represents one of the country's oldest continuous experiments in whether an imported tree can actually thrive here. It stands close enough to Reykjavik's City Hall and the Tjörnin pond that most visitors to either landmark walk directly past it without knowing it predates both the current city hall building and, in an informal sense, the country's independence itself.",
       "verified_sources": [
         "https://heidmork.is/borgartre-og-tre-arsins-i-reykjavik/",
-        "https://heidmork.is/gardahlynur-acer-pseudoplatanus/"
+        "https://heidmork.is/gardahlynur-acer-pseudoplatanus/",
+        "https://www.wikidata.org/wiki/Q62412941"
       ],
       "access": "Free, public street corner, viewable anytime",
       "transport": "Downtown Reykjavik, beside Reykjavik City Hall and Tjörnin pond",
@@ -125,7 +142,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           10,
@@ -134,7 +151,15 @@
         "label": "October to November: winged seeds that spin down in pairs",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by where it stands, on the small patch of grass at the corner of Sudurgata and Vonarstraeti, hard against the parking area near City Hall."
+      "how_to_recognise": "You can recognise it by where it stands, on the small patch of grass at the corner of Sudurgata and Vonarstraeti, hard against the parking area near City Hall.",
+      "pin_source": {
+        "kind": "reader GPS fix, corroborated by Wikidata",
+        "sighting_id": "322fc46b-8bed-4ea1-a971-14a894bbf367",
+        "taken_at": "2026-09-04T15:38:13+00:00",
+        "moved_m": 92,
+        "date": "2026-10-05",
+        "note": "The pin marks where a reader stood to photograph this tree. That photograph is held for its light, not its identity, so the fix alone would not move a pin; it does here because Wikidata's coordinate for the 1994 Tree of the Year (Q62412941) lies 14 m from it, two independent positions agreeing. Moved on Hidde's word, 2026-10-05."
+      }
     },
     {
       "id": "rey_004",

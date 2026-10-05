@@ -9,6 +9,10 @@ lose each other's work.
 
     python3 scripts/sightings_publish.py verdicts.json [more.json] [--send]
     python3 scripts/sightings_publish.py --vouched [--send]
+    python3 scripts/sightings_publish.py --pins    (only the pin catch-up below)
+
+PINS (2026-10-05): every accepted photograph moves its tree's pin to the
+photograph's GPS fix when our pin says approximate; see move_pin().
 
 Input: a JSON array of {sighting_id, verdict, reason, species_seen,
 species_match, description_seen, description_match}, verdict one of
@@ -95,6 +99,10 @@ SENT_PATH = os.path.join(ROOT, "data", "outreach-sent.json")
 BASE_URL = "https://ancienttrees.app"
 LONG = 1600
 FALLBACK_NAME = "a reader of Ancient Trees"
+# A reader's fix further than this from our own approximate pin is not taken
+# on trust: either the pin is badly wrong or the reader picked the wrong tree,
+# and telling those apart needs somebody to look. Printed, never applied.
+READER_PIN_MAX_M = 300
 
 
 def slugify(s):
@@ -242,6 +250,144 @@ def apply_to_city(entry, block, as_extra=False):
     return None if as_extra else (old or {}).get("url")
 
 
+def metres(lat1, lon1, lat2, lon2):
+    import math
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dp, dl = p2 - p1, math.radians(lon2 - lon1)
+    a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * 6371000 * math.asin(math.sqrt(a))
+
+
+def move_pin(tree, lat, lon, sighting_id, taken_at, today):
+    """The reader's GPS fix becomes the pin, when ours admits it is approximate.
+
+    Hidde, 2026-10-05, on the Reykjavik reader whose three photographs stood
+    11, 20 and 92 metres from our pins: "verbeter de pins en doe dit standaard
+    vanaf nu". The rule itself is CLAUDE.md's of 2026-09-08: a reader's fix
+    beats a pin of ours that says approximate, and never one that says
+    confirmed. Our own field says which kind it is, so this is arithmetic.
+
+    It runs only for a photograph a viewing pass (or Hidde) has already
+    accepted as THIS tree, which is what turns a coordinate into evidence: the
+    pin then marks a spot somebody stood and photographed the tree from. The
+    fix is the photograph's own location (LibraryPicker reads it off the asset;
+    the camera takes it at the shutter), not where the phone was at upload.
+
+    Pure on the tree dict, so it can be tested without a file. Returns a line
+    for the log, or None when nothing moved.
+    """
+    if lat is None or lon is None:
+        return None
+    if tree.get("location_precision") != "approximate":
+        return None
+    loc = tree.setdefault("location", {})
+    if loc.get("latitude") is None or loc.get("longitude") is None:
+        return None
+    d = metres(loc["latitude"], loc["longitude"], lat, lon)
+    if d > READER_PIN_MAX_M:
+        return (f"NOT MOVED {tree.get('id')}: the reader stood {round(d)} m from our pin, "
+                f"over {READER_PIN_MAX_M} m; look before trusting it")
+    loc["latitude"], loc["longitude"] = round(lat, 6), round(lon, 6)
+    tree["location_precision"] = "confirmed"
+    tree["pin_source"] = {
+        "kind": "reader GPS fix",
+        "sighting_id": sighting_id,
+        "taken_at": taken_at,
+        "moved_m": round(d),
+        "date": today,
+        "note": ("The pin marks where a reader stood to photograph this tree; the "
+                 "photograph was checked to show it (CLAUDE.md 2026-09-08, made "
+                 "automatic 2026-10-05)."),
+    }
+    return f"PIN {tree.get('id')}: moved {round(d)} m to the reader's fix, now confirmed"
+
+
+def pin_from_reader(city_slug, tree_id, lat, lon, sighting_id, taken_at, today):
+    """move_pin on the tree in its city file, saved only when it moved."""
+    path = os.path.join(ROOT, "data", "cities", f"{city_slug}.json")
+    if not os.path.exists(path):
+        return None
+    city = json.load(open(path, encoding="utf-8"))
+    for t in city.get("trees", []):
+        if t.get("id") == tree_id:
+            line = move_pin(t, lat, lon, sighting_id, taken_at, today)
+            if line and line.startswith("PIN "):
+                save(path, city, indent=2)
+            return line
+    return None
+
+
+def catch_up_pins(done, today):
+    """Every photograph already published whose tree still has a rough pin.
+
+    Runs on every call, so a fix recorded before this existed, or one whose
+    move was refused once over the distance cap and has since been looked at,
+    is picked up without anybody remembering it. Coordinates come from the
+    processed record (written since 2026-10-05) or, for older ones, from
+    Supabase when the service key is present.
+    """
+    lines = []
+    want = {}
+    for sid, rec in done.items():
+        if rec.get("outcome") not in ("published", "added") or not rec.get("tree_id"):
+            continue
+        if rec.get("pin_checked"):
+            continue
+        want[sid] = rec
+    if not want:
+        return lines
+    trees = {}
+    import glob
+    for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        slug = os.path.basename(path)[:-5]
+        for t in (load(path, {}).get("trees") or []):
+            trees[t.get("id")] = (slug, t.get("location_precision"))
+    missing = [sid for sid, rec in want.items()
+               if rec.get("lat") is None and trees.get(rec["tree_id"], (None, None))[1] == "approximate"]
+    fetched = supa_coordinates(missing) if missing else {}
+    for sid, rec in want.items():
+        slug, prec = trees.get(rec["tree_id"], (None, None))
+        if slug is None:
+            continue
+        if prec != "approximate":
+            rec["pin_checked"] = today
+            continue
+        lat, lon, taken = rec.get("lat"), rec.get("lon"), rec.get("taken_at")
+        if lat is None and sid in fetched:
+            lat, lon, taken = fetched[sid]
+            rec["lat"], rec["lon"], rec["taken_at"] = lat, lon, taken
+        if lat is None:
+            continue  # no coordinate known yet; try again next run
+        line = pin_from_reader(slug, rec["tree_id"], lat, lon, sid, taken, today)
+        if line:
+            lines.append(line)
+        rec["pin_checked"] = today
+    return lines
+
+
+def supa_coordinates(sighting_ids):
+    """{sighting_id: (lat, lng, taken_at)} from Supabase, {} without the key."""
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if not key or not sighting_ids:
+        return {}
+    import urllib.request
+    out = {}
+    for i in range(0, len(sighting_ids), 50):
+        ids = ",".join(sighting_ids[i:i + 50])
+        req = urllib.request.Request(
+            f"{SUPA}/rest/v1/sightings?select=id,lat,lng,taken_at&id=in.({ids})",
+            headers={"apikey": key, "Authorization": f"Bearer {key}"})
+        try:
+            rows = json.load(urllib.request.urlopen(req, timeout=20))
+        except Exception as e:
+            print(f"  pins: could not read coordinates ({e.__class__.__name__})")
+            return out
+        for r in rows:
+            if r.get("lat") is not None and r.get("lng") is not None:
+                out[str(r["id"]).lower()] = (r["lat"], r["lng"], r.get("taken_at"))
+    return out
+
+
 def mail_for(entry, reason):
     page = f"{BASE_URL}/{entry['city_slug']}/{slugify(entry['tree_name'])}"
     name = credit_name(entry.get("display_name"))
@@ -385,7 +531,7 @@ def main():
                          "species_seen": "vouched", "species_match": "vouched",
                          "description_seen": "vouched", "description_match": "vouched"})
         print(f"sightings publish: {len(rows)} vouched photograph(s) in the queue")
-    elif not files:
+    elif not files and "--pins" not in sys.argv:
         print(__doc__)
         return 1
     for f in files:
@@ -447,7 +593,14 @@ def main():
         old_url = apply_to_city(entry, block, as_extra=extra)
         dropped = drop_vendored(old_url) if old_url and old_url != block["url"] else 0
         done[sid] = {"outcome": "added" if extra else "published", "date": today,
-                     "tree_id": entry["tree_id"], "file": fname, "reason": reason[:300]}
+                     "tree_id": entry["tree_id"], "file": fname, "reason": reason[:300],
+                     "lat": entry.get("latitude"), "lon": entry.get("longitude"),
+                     "taken_at": entry.get("taken_at")}
+        pin = pin_from_reader(entry["city_slug"], entry["tree_id"], entry.get("latitude"),
+                              entry.get("longitude"), sid, entry.get("taken_at"), today)
+        done[sid]["pin_checked"] = today
+        if pin:
+            print(f"  {pin}")
         counts["add" if extra else "approve"] += 1
         mark_status(sid, verdict, really)
         published.append(entry)
@@ -462,6 +615,9 @@ def main():
             send_mail(addr, subject, body, really, sid)
         else:
             print(f"  mail: no address resolved for {entry['user_id'][:8]} (no service key, or account gone)")
+    # And any photograph published earlier whose tree still has a rough pin.
+    for line in catch_up_pins(done, today):
+        print(f"  {line}")
     # Judged entries leave the queue; the rest wait for the next pass.
     qdoc["queue"] = [e for e in qdoc.get("queue", []) if e["sighting_id"] not in done]
     save(QUEUE, qdoc)
