@@ -998,6 +998,31 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
             print("A reader's submission is the exception: --deepen \"reader submission row N\".")
             return 1
 
+    # A FULL CITY STAYS FULL (Hidde, 2026-10-05: "we have 62 trees in Berlin
+    # that's more than enough let's not overdo certain pages"). The target in
+    # data/city-queue.json was always meant as a ceiling (CITY_QUEUE.md: "a
+    # stopping point, never a quota"), and nothing enforced it: Berlin went to
+    # 62 against 60. A verify or write claim on a city at or past its target is
+    # refused; a reader's submission is the reason to go past it (--deepen).
+    if kind in ("verify", "write") and not deepen:
+        match, _ = resolve(target, cities())
+        if match:
+            try:
+                rows = json.load(open(os.path.join(ROOT, "data", "city-queue.json")))
+                rows = rows if isinstance(rows, list) else rows.get("cities", [])
+            except (OSError, ValueError):
+                rows = []
+            row = next((r for r in rows if r.get("slug") == match["slug"]), None)
+            have = len(match.get("trees") or []) if isinstance(match.get("trees"), list) else (row or {}).get("trees")
+            cap = (row or {}).get("target")
+            if cap and have is not None and have >= cap:
+                print(f"REFUSED: {target} already has {have} trees against its target of {cap}.")
+                print("A full city stays full (Hidde, 2026-10-05). Depth on it is still fine")
+                print("(photos, pins, recognition lines); new trees go to a city with room:")
+                print("`python3 scripts/city_queue.py --next`. A reader's submission is the")
+                print('exception: --deepen "reader submission row N".')
+                return 1
+
     # Focus membership is computed whether or not US_ONLY is on: the focus
     # countries gate new trees (Hidde, 2026-10-01), US_ONLY only decides
     # whether the US leads the queue. Found 2026-10-02 when US_ONLY went off
