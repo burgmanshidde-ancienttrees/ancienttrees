@@ -242,54 +242,6 @@
    "status": "open"
   },
   {
-   "name": "Mango (Florida Champion)",
-   "species": "Mango (Mangifera indica)",
-   "lat": 26.0734,
-   "lng": -80.31077,
-   "register_location": "In Flamingo Gardens near the historic BBQ pavilion.",
-   "girth_cm": 381,
-   "height_m": 23.8,
-   "register_status": "Florida Champion",
-   "measured": 1724773447000,
-   "sources": [
-    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/710"
-   ],
-   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-   "status": "open"
-  },
-  {
-   "name": "Haitian catalpa (Florida Champion)",
-   "species": "Haitian catalpa (Catalpa lingissima)",
-   "lat": 26.07342,
-   "lng": -80.31178,
-   "register_location": "Flamingo Gardens",
-   "girth_cm": 295,
-   "height_m": 25.3,
-   "register_status": "Florida Champion",
-   "measured": 1456332521000,
-   "sources": [
-    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/713"
-   ],
-   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-   "status": "open"
-  },
-  {
-   "name": "Ceyon cinnamon (Florida Champion)",
-   "species": "Ceyon cinnamon (Cinnamomum verum)",
-   "lat": 26.07401,
-   "lng": -80.31174,
-   "register_location": "Flamingo pond area of Flamingo Gardens",
-   "girth_cm": 109,
-   "height_m": 9.4,
-   "register_status": "Florida Champion",
-   "measured": 1727970908000,
-   "sources": [
-    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/716"
-   ],
-   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-   "status": "open"
-  },
-  {
    "name": "Candlenut tree (Florida Champion)",
    "species": "Candlenut tree (Aleurites moluccanus)",
    "lat": 26.07296,
@@ -301,22 +253,6 @@
    "measured": 1724774180000,
    "sources": [
     "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/717"
-   ],
-   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-   "status": "open"
-  },
-  {
-   "name": "Black Calabash (Florida champion)",
-   "species": "Black Calabash (Amphitecna latifolia)",
-   "lat": 26.07382,
-   "lng": -80.31177,
-   "register_location": "Flamingo pond area of Flamingo Gardens.",
-   "girth_cm": 91,
-   "height_m": 7.9,
-   "register_status": "Florida champion",
-   "measured": 1732644106000,
-   "sources": [
-    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/719"
    ],
    "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
    "status": "open"
@@ -368,22 +304,6 @@
    ],
    "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
    "status": "open"
-  },
-  {
-   "name": "Florida Strangler Fig (Florida Challenger)",
-   "species": "Florida Strangler Fig (Ficus aurea)",
-   "lat": 26.0735,
-   "lng": -80.31174,
-   "register_location": "Flamingo Gardens.",
-   "girth_cm": 841,
-   "height_m": 31.4,
-   "register_status": "Florida Challenger",
-   "measured": 1727975619000,
-   "sources": [
-    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/725"
-   ],
-   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-   "status": "open"
   }
  ],
  "blocked": [
@@ -420,6 +340,91 @@
    "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
    "status": "open",
    "reason": "school grounds; needs evidence the grounds are open (hard rule 10)"
+  },
+  {
+   "name": "Mango (Florida Champion)",
+   "species": "Mango (Mangifera indica)",
+   "lat": 26.0734,
+   "lng": -80.31077,
+   "register_location": "In Flamingo Gardens near the historic BBQ pavilion.",
+   "girth_cm": 381,
+   "height_m": 23.8,
+   "register_status": "Florida Champion",
+   "measured": 1724773447000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/710"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open",
+   "reason": "already published as The Earpod Tree of Flamingo Gardens (fort-lauderdale), 166 m away with matching name words"
+  },
+  {
+   "name": "Haitian catalpa (Florida Champion)",
+   "species": "Haitian catalpa (Catalpa lingissima)",
+   "lat": 26.07342,
+   "lng": -80.31178,
+   "register_location": "Flamingo Gardens",
+   "girth_cm": 295,
+   "height_m": 25.3,
+   "register_status": "Florida Champion",
+   "measured": 1456332521000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/713"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open",
+   "reason": "already published as The Earpod Tree of Flamingo Gardens (fort-lauderdale), 69 m away with matching name words"
+  },
+  {
+   "name": "Ceyon cinnamon (Florida Champion)",
+   "species": "Ceyon cinnamon (Cinnamomum verum)",
+   "lat": 26.07401,
+   "lng": -80.31174,
+   "register_location": "Flamingo pond area of Flamingo Gardens",
+   "girth_cm": 109,
+   "height_m": 9.4,
+   "register_status": "Florida Champion",
+   "measured": 1727970908000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/716"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open",
+   "reason": "already published as The Earpod Tree of Flamingo Gardens (fort-lauderdale), 72 m away with matching name words"
+  },
+  {
+   "name": "Black Calabash (Florida champion)",
+   "species": "Black Calabash (Amphitecna latifolia)",
+   "lat": 26.07382,
+   "lng": -80.31177,
+   "register_location": "Flamingo pond area of Flamingo Gardens.",
+   "girth_cm": 91,
+   "height_m": 7.9,
+   "register_status": "Florida champion",
+   "measured": 1732644106000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/719"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open",
+   "reason": "already published as The Earpod Tree of Flamingo Gardens (fort-lauderdale), 63 m away with matching name words"
+  },
+  {
+   "name": "Florida Strangler Fig (Florida Challenger)",
+   "species": "Florida Strangler Fig (Ficus aurea)",
+   "lat": 26.0735,
+   "lng": -80.31174,
+   "register_location": "Flamingo Gardens.",
+   "girth_cm": 841,
+   "height_m": 31.4,
+   "register_status": "Florida Challenger",
+   "measured": 1727975619000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/725"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open",
+   "reason": "already published as The Earpod Tree of Flamingo Gardens (fort-lauderdale), 69 m away with matching name words"
   }
  ]
 }

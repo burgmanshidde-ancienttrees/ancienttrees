@@ -569,21 +569,6 @@
       "status": "open"
     },
     {
-      "name": "Red pine",
-      "species": "Red pine (Pinus resinosa)",
-      "lat": 41.938313,
-      "lng": -87.844853,
-      "register_location": "Indian Boundary Golf Course",
-      "girth_cm": 167,
-      "height_m": 19.5,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
       "name": "Blackgum",
       "species": "Blackgum (Nyssa sylvatica)",
       "lat": 41.571172,
@@ -1252,6 +1237,22 @@
       "name": "Illinois Big Tree Register entries elsewhere in Cook County (non-Chicago)",
       "species": "various: eastern wahoo (Bemis Woods), green hawthorn (Moraine Valley Community College), slippery elm (St. James at Sag Bridge Cemetery), butternut (Busse Woods), dotted hawthorn (Midway Woods), American elm (Wheeling HS), Allegheny serviceberry (Tinley Creek Ravines), blackhaw (Sand Ridge Nature Center), choke cherry (Skokie Lagoons)",
       "reason": "2026-08-09 pass: queried the IBTR feature service for the full County='Cook' set (12 records; see resolved_2026_08_09 below). All 12 addresses checked by coordinate; only the boxelder (chi_004, Edgebrook) and red pine (chi_005, Indian Boundary) fall inside actual Chicago city limits. The other 9 are in far suburbs (Western Springs, Palos Hills, Lemont, Schaumburg/Elk Grove, Wheeling, Homewood-Flossmoor, Winnetka/Glencoe, Tinley Park, South Chicago Heights), well outside the ~30 minute day-trip boundary of downtown, and most of the species (hawthorns, wahoo, serviceberry, blackhaw) are shrubs/small trees rather than remarkable specimens anyway. Do not re-query the register for Chicago; it has been exhausted for this city."
+    },
+    {
+      "name": "Red pine",
+      "species": "Red pine (Pinus resinosa)",
+      "lat": 41.938313,
+      "lng": -87.844853,
+      "register_location": "Indian Boundary Golf Course",
+      "girth_cm": 167,
+      "height_m": 19.5,
+      "register_status": "Yes",
+      "sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+      ],
+      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+      "status": "open",
+      "reason": "already published as The Champion Red Pine of Indian Boundary (chicago), 91 m away with matching name words"
     }
   ],
   "unexplored_2026_08_08": [

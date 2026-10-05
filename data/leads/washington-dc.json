@@ -339,22 +339,6 @@
    "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
   },
   {
-   "name": "Tulip Poplar",
-   "species": "Tulip Poplar (Liriodendron tulipifera)",
-   "lat": 38.914449,
-   "lng": -77.061124,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Rock Creek Park",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/b46fa667-f180-4180-8e09-39e678004169/original.jpg?"
-  },
-  {
    "name": "Pin oak or Royal Pin Oak",
    "species": "Pin oak or Royal Pin Oak (Quercus palustris)",
    "lat": 38.71797,
@@ -419,22 +403,6 @@
    "register_photo": "https://npgallery.nps.gov/GetAsset/419d158f-f470-484a-8dc3-b5a3fc9c14f9/original.jpg?"
   },
   {
-   "name": "White Mulberry",
-   "species": "White Mulberry (Morus alba)",
-   "lat": 38.888968,
-   "lng": -77.036347,
-   "register_location": "Washington Monument",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/756ed568-9c51-4039-be9f-100f6b60c884/original.jpg?"
-  },
-  {
    "name": "Red Maple",
    "species": "Red Maple (Acer rubrum)",
    "lat": 38.802232,
@@ -449,22 +417,6 @@
    "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
    "status": "open",
    "register_photo": "https://npgallery.nps.gov/GetAsset/9c5d2a1d-940a-4f65-a3ee-d046de22fa12/original.jpg?"
-  },
-  {
-   "name": "Chestnut Oak",
-   "species": "Chestnut Oak (Quercus prinus)",
-   "lat": 38.930449,
-   "lng": -77.096134,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Rock Creek Park",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/00d5d7fe-9dd7-412a-8944-ae8da139cc36/original.jpg?"
   },
   {
    "name": "Boxwood",
@@ -546,40 +498,6 @@
    "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
    "status": "open",
    "register_photo": "https://npgallery.nps.gov/GetAsset/5ecb27f4-3630-4033-8176-82679e83b14e/original.jpg?",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Montrose Park Tulip-poplar",
-   "species": "Tulip Tree (Liriodendron sp.)",
-   "lat": 38.914583,
-   "lng": -77.061073,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/b46fa667-f180-4180-8e09-39e678004169/original.jpg?",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Chestnut Oak at Battery Kemble Park",
-   "species": "Sweet Chestnut (Castanea sp.)",
-   "lat": 38.930503,
-   "lng": -77.096086,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/00d5d7fe-9dd7-412a-8944-ae8da139cc36/original.jpg?",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
@@ -1179,6 +1097,93 @@
     39.0228,
     -77.1022
    ]
+  },
+  {
+   "name": "Tulip Poplar",
+   "species": "Tulip Poplar (Liriodendron tulipifera)",
+   "lat": 38.914449,
+   "lng": -77.061124,
+   "register_location": "Rock Creek Park",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "Rock Creek Park",
+   "sources": [
+    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+   ],
+   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+   "status": "open",
+   "register_photo": "https://npgallery.nps.gov/GetAsset/b46fa667-f180-4180-8e09-39e678004169/original.jpg?",
+   "reason": "already published as The Montrose Park Tulip Poplar (washington-dc), 172 m away with matching name words"
+  },
+  {
+   "name": "White Mulberry",
+   "species": "White Mulberry (Morus alba)",
+   "lat": 38.888968,
+   "lng": -77.036347,
+   "register_location": "Washington Monument",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "National Mall and Memorial Parks",
+   "sources": [
+    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+   ],
+   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+   "status": "open",
+   "register_photo": "https://npgallery.nps.gov/GetAsset/756ed568-9c51-4039-be9f-100f6b60c884/original.jpg?",
+   "reason": "already published as The Washington Monument Witness Mulberry (washington-dc), 112 m away with matching name words"
+  },
+  {
+   "name": "Chestnut Oak",
+   "species": "Chestnut Oak (Quercus prinus)",
+   "lat": 38.930449,
+   "lng": -77.096134,
+   "register_location": "Rock Creek Park",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "Rock Creek Park",
+   "sources": [
+    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+   ],
+   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+   "status": "open",
+   "register_photo": "https://npgallery.nps.gov/GetAsset/00d5d7fe-9dd7-412a-8944-ae8da139cc36/original.jpg?",
+   "reason": "already published as The Battery Kemble Chestnut Oak (washington-dc), 177 m away with matching name words"
+  },
+  {
+   "name": "Montrose Park Tulip-poplar",
+   "species": "Tulip Tree (Liriodendron sp.)",
+   "lat": 38.914583,
+   "lng": -77.061073,
+   "register_location": "Rock Creek Park",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
+   ],
+   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
+   "status": "open",
+   "register_photo": "https://npgallery.nps.gov/GetAsset/b46fa667-f180-4180-8e09-39e678004169/original.jpg?",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "already published as The Montrose Park Tulip Poplar (washington-dc), 162 m away with matching name words"
+  },
+  {
+   "name": "Chestnut Oak at Battery Kemble Park",
+   "species": "Sweet Chestnut (Castanea sp.)",
+   "lat": 38.930503,
+   "lng": -77.096086,
+   "register_location": "Rock Creek Park",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
+   ],
+   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
+   "status": "open",
+   "register_photo": "https://npgallery.nps.gov/GetAsset/00d5d7fe-9dd7-412a-8944-ae8da139cc36/original.jpg?",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "already published as The Battery Kemble Chestnut Oak (washington-dc), 174 m away with matching name words"
   }
  ]
 }

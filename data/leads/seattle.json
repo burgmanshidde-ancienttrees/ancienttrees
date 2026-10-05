@@ -677,21 +677,6 @@
       "status": "open"
     },
     {
-      "name": "Grand (Giant) Fir",
-      "species": "Grand (Giant) Fir (Abies grandis)",
-      "lat": 47.512534,
-      "lng": -122.266826,
-      "register_location": "9817 55TH AVE S",
-      "girth_cm": null,
-      "height_m": null,
-      "register_status": "GOOD",
-      "sources": [
-        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
-      ],
-      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-      "status": "open"
-    },
-    {
       "name": "Common (Fruiting) Pear Tree",
       "species": "Common (Fruiting) Pear Tree (Pyrus communis)",
       "lat": 47.529997,
@@ -982,21 +967,6 @@
       "lat": 47.679253,
       "lng": -122.372083,
       "register_location": "6749 12TH AVE NW",
-      "girth_cm": null,
-      "height_m": null,
-      "register_status": null,
-      "sources": [
-        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
-      ],
-      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-      "status": "open"
-    },
-    {
-      "name": "Red Oak",
-      "species": "Red Oak (Quercus rubra)",
-      "lat": 47.578567,
-      "lng": -122.3844,
-      "register_location": "2700 CALIFORNIA AVE SW",
       "girth_cm": null,
       "height_m": null,
       "register_status": null,
@@ -4554,6 +4524,38 @@
       "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
       "status": "open",
       "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Grand (Giant) Fir",
+      "species": "Grand (Giant) Fir (Abies grandis)",
+      "lat": 47.512534,
+      "lng": -122.266826,
+      "register_location": "9817 55TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "already published as The Grand Fir of Kubota Garden (seattle), 84 m away with matching name words"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.578567,
+      "lng": -122.3844,
+      "register_location": "2700 CALIFORNIA AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "already published as The Hiawatha Playfield Red Oak (seattle), 61 m away with matching name words"
     }
   ]
 }

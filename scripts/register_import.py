@@ -26,11 +26,24 @@ def feats(layer,where='1=1'):
         if not r.get('exceededTransferLimit') or not fs: break
         off+=len(fs)
     return out
-pub=[]
+pub=[]; pubn=[]
+_STOP={'the','of','tree','trees','a','in','at','and','on','by','park','national','old','big','great','common','american','eastern','western','southern','northern'}
+def _toks(x):
+    import re as __re
+    return {w for w in __re.findall(r'[a-z]+',(x or '').lower()) if w not in _STOP and len(w)>2}
 for f in glob.glob('data/cities/*.json'):
     for t in json.load(open(f))['trees']:
-        try: pub.append((float(t['location']['latitude']),float(t['location']['longitude'])))
+        try:
+            pub.append((float(t['location']['latitude']),float(t['location']['longitude'])))
+            pubn.append((pub[-1][0],pub[-1][1],_toks(t['name']+' '+t.get('species',''))))
         except: pass
+def _near_named(lat,lng,words):
+    # 2026-10-06: Washington DC's NPS trees were already ours 100 to 300 m from
+    # the register's point, under our own names. Within 300 m, two shared name
+    # words mean the same tree.
+    for a,b,tk in pubn:
+        if abs(a-lat)<0.004 and abs(b-lng)<0.005 and km(lat,lng,a,b)<=0.3 and len(words & tk)>=2: return True
+    return False
 import re as _re
 _EMAIL=_re.compile(r'[\w.+-]+@[\w-]+\.[\w.]+')
 _PHONE=_re.compile(r'\(?\b\d{3}\)?[-. ]\d{3}[-. ]\d{4}\b')
@@ -67,6 +80,7 @@ for s in SOURCES:
         if lat is None: continue
         if km(lat,lng,cen[0],cen[1])>s['radius_km']: continue
         if any(km(lat,lng,x,y)<0.06 for x,y in pub): continue
+        if _near_named(lat,lng,_toks(' '.join(str(a.get(s['map'].get(k)) or '') for k in ('name','common','sci','loc')))): continue
         if (round(lat,4),round(lng,4)) in have: continue
         m=s['map']; v=lambda k: (_scrub(a.get(m[k])) if m.get(k) else None)
         common=(v('common') or '').strip(); sci=(v('sci') or '').strip()
