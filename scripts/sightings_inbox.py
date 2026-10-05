@@ -54,6 +54,7 @@ SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 KEY = os.environ.get("SUPABASE_SERVICE_KEY")
 QUEUE = os.path.join(ROOT, "data", "sighting-queue.json")
 PROCESSED = os.path.join(ROOT, "data", "sightings-processed.json")
+VOUCHED = os.path.join(ROOT, "data", "sightings-vouched.json")
 LEADS = os.path.join(ROOT, "data", "leads", "_sightings.json")
 OUT = os.path.join(ROOT, "out", "sightings")
 MATCH_M = 30  # a phone's GPS in a park is rarely better than this
@@ -606,6 +607,14 @@ def main():
                                           "sightings_publish.py.", "done": {}})
     done = processed.setdefault("done", {})
     index = tree_index()
+    # VOUCHED (Hidde, 2026-10-05: "ik vertrouw hem meer dan jou"). A sighting
+    # he vouches for is reopened even when a run held or rejected it, and its
+    # sender's id is learned so the next photograph from them carries the vouch.
+    vouched = load(VOUCHED, {"sightings": {}, "users": {}})
+    v_sight, v_user = vouched.setdefault("sightings", {}), vouched.setdefault("users", {})
+    for row in rows:
+        if row["id"] in v_sight and row.get("user_id") and row["user_id"] not in v_user:
+            v_user[row["user_id"]] = v_sight[row["id"]]
     leads_doc = load(LEADS, {"_note": "Trees readers added through the app that match "
                                       "nothing we map. Leads for the normal pipeline, never "
                                       "an import: a page needs the bar every tree meets. "
@@ -641,7 +650,9 @@ def main():
             # tree we publish. A real verdict (published, held, duplicate)
             # still stands, and so does a lead the map has not caught up with.
             reopen = (outcome == "ours"
-                      or (outcome == "lead" and match(row, index)[0] is not None))
+                      or (outcome == "lead" and match(row, index)[0] is not None)
+                      or (outcome in ("held", "rejected")
+                          and (sid in v_sight or row.get("user_id") in v_user)))
             if not reopen:
                 skipped += 1
                 continue
@@ -754,6 +765,7 @@ def main():
             "latitude": row.get("lat"), "longitude": row.get("lng"),
             "file": os.path.relpath(dest, ROOT),
             "light": light(dest),
+            "vouched": v_sight.get(sid) or v_user.get(row["user_id"]),
         })
         queue[-1]["rank"], queue[-1]["worth"] = worth(queue[-1])
     queue.sort(key=lambda e: (e["rank"], -(e.get("distance_m") or 0)))
@@ -764,6 +776,7 @@ def main():
                           "every knock from the rows without a verdict.",
                  "written": today, "queue": queue})
     save(PROCESSED, processed)
+    save(VOUCHED, vouched)
     # SELF-HEALING DEDUPE. The guard above is `sid not in lead_ids`, which only
     # works on rows that carry a sighting_id, and older ones did not: on
     # 2026-09-08 six of fourteen leads were second copies of a photograph

@@ -8,6 +8,7 @@ Commons queue and for the same reason: several passes writing the same files
 lose each other's work.
 
     python3 scripts/sightings_publish.py verdicts.json [more.json] [--send]
+    python3 scripts/sightings_publish.py --vouched [--send]
 
 Input: a JSON array of {sighting_id, verdict, reason, species_seen,
 species_match, description_seen, description_match}, verdict one of
@@ -367,13 +368,28 @@ def send_mail(addr, subject, body, really, sighting_id):
 def main():
     files = [a for a in sys.argv[1:] if not a.startswith("--")]
     really = "--send" in sys.argv
-    if not files:
+    qdoc = load(QUEUE, {"queue": []})
+    rows = []
+    # --vouched: the photographs of a reader Hidde vouches for go live as they
+    # are (data/sightings-vouched.json; 2026-10-05, "ook zijn semi slechte
+    # foto's beter dan geen"). Lead when the tree has none, extra beside it
+    # when it has; his word stands in for the species and description look.
+    if "--vouched" in sys.argv:
+        for e in qdoc.get("queue", []):
+            if not e.get("vouched"):
+                continue
+            has_lead = e.get("current_photo") not in (None, "", "missing")
+            rows.append({"sighting_id": e["sighting_id"],
+                         "verdict": "add" if has_lead else "approve",
+                         "reason": f"Vouched for by Hidde: {e['vouched']}",
+                         "species_seen": "vouched", "species_match": "vouched",
+                         "description_seen": "vouched", "description_match": "vouched"})
+        print(f"sightings publish: {len(rows)} vouched photograph(s) in the queue")
+    elif not files:
         print(__doc__)
         return 1
-    rows = []
     for f in files:
         rows += json.load(open(f, encoding="utf-8"))
-    qdoc = load(QUEUE, {"queue": []})
     queue = {e["sighting_id"]: e for e in qdoc.get("queue", [])}
     processed = load(PROCESSED, {"done": {}})
     done = processed.setdefault("done", {})
@@ -398,20 +414,22 @@ def main():
             continue
         seen = (r.get("species_seen") or "").strip()
         match = (r.get("species_match") or "").strip().lower()
-        if match != "yes" or not seen:
+        vouch = match == "vouched" and bool(entry.get("vouched"))
+        if not vouch and (match != "yes" or not seen):
             print(f"  REFUSED {entry['tree_id']} {entry['tree_name'][:40]}: an approval needs "
                   f"species_seen and species_match 'yes' (got {match or 'nothing'!r}); "
                   f"a mismatch or doubt is a hold. Left in the queue.")
             continue
         fits = (r.get("description_seen") or "").strip()
         fit = (r.get("description_match") or "").strip().lower()
-        if fit != "yes" or not fits:
+        if not vouch and (fit != "yes" or not fits):
             print(f"  REFUSED {entry['tree_id']} {entry['tree_name'][:40]}: an approval needs "
                   f"description_seen and description_match 'yes' (got {fit or 'nothing'!r}); "
                   f"a photograph that does not fit what we wrote about the tree is a hold. "
                   f"Left in the queue.")
             continue
-        reason = f"{reason.strip()} Species seen: {seen}. Fits the description: {fits}.".strip()
+        if not vouch:
+            reason = f"{reason.strip()} Species seen: {seen}. Fits the description: {fits}.".strip()
         src = os.path.join(ROOT, entry["file"])
         if not os.path.exists(src):
             print(f"  {sid}: file missing at {entry['file']}, run sightings_inbox.py again")

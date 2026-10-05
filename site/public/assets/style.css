@@ -2956,3 +2956,23 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .tree-card:not(.tree-card-nonum) > .tree-card-seen-line { margin-left: calc(var(--gutter) + 36px); }
 .tree-card .tree-card-credit { margin: 8px var(--gutter) 0; }
 .tree-card:not(.tree-card-nonum) > .tree-card-credit { margin-left: calc(var(--gutter) + 36px); }
+/* The sheet's title row: name and share button on one centre line, the
+   Maps place-sheet header (2026-10-05). It was top-aligned with a 2px nudge,
+   which on a one-line title left the button hanging below the name. */
+@media (max-width: 800px) {
+  .sheet-grab .page-head { align-items: center; }
+  .sheet-grab .share-btn { margin-top: 0; }
+  .sheet-grab .panel-head { padding: 0.4rem var(--gutter) 0.75rem; }
+  .panel[data-detent] .panel-head h1 { font-size: 1.3rem; line-height: 1.25; }
+}
+/* The sheet's foot, read as a whole (Hidde, 2026-10-05: "kijk even naar het
+   totaal"). The map-file note and the app pitch were two boxes with two
+   different looks (a grey 4px slab and a cream box that vanished on white)
+   and their own inner insets, so "Walk them with the app" started 28px right
+   of every other line. Both now wear the tree card's shape: white, a hairline,
+   14px radius, the gutter as padding. And the first card no longer touches
+   the divider over it. */
+.sheet-body > .tree-card:first-of-type { margin-top: 12px; }
+.panel-foot .take-with-you, .panel-foot .app-pitch { background: #fff; border: 1px solid var(--cream-dark);
+  border-radius: 14px; padding: 14px var(--gutter); margin: 1rem 0; }
+.panel-foot .app-pitch { margin-bottom: 2rem; }
