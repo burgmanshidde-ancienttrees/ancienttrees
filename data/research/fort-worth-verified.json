@@ -1,0 +1,310 @@
+[
+ {
+  "id": "ftw_006",
+  "name": "Traders Oak",
+  "species": "Oak (Quercus sp.)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.774251,
+   "longitude": -97.331485,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Free, public ground near the Trinity River bluffs (check exact setting).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: The Traders Oak may be the most well-known tree in Fort Worth. Camp Worth (later Fort Worth) was established in 1849 at the junction of the West and Clear forks of the Trinity River on the bluffs overlooking the surrounding valley. Federal regulations prohibited merchants within one mile of the military outpost so Henry Clay Daggett and Archibald Franklin Leonard constructed a log cabin trading post in a group of sprawling live oak trees growing near Cold Springs. Soldiers, settlers and Native Americans all came to trade goods and relax at the springs in what became the first successful business in Fort Worth. The first election (in now Tarrant County) was held in front of the store in 1850 and Birdville was decided as the county seat. The first Tarrant County Court was also conducted within the trading post. When the fort was abandoned in 1853, Daggett and Leonard moved the trading post to a vacated structure on the bluffs. This tree still proudly grows, as it has for well over 200 years, marking the location where the trading post once stood on this historic site. | Species: The register says the trading post of 1849 stood in \"a group of sprawling live oak trees\"; it does not give this tree's own species. Ask the reader which oak.. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_007",
+  "name": "Van Zandt Cottage Live Oak",
+  "species": "Texas Live Oak (Quercus fusiformis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.743968,
+   "longitude": -97.358881,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Free, public park ground.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This large live oak watches over the Van Zandt Cottage, the oldest structure in Fort Worth still in its original location. One of Fort Worth's most influential figures, Major Khleber Van Zandt, resided in the home and adjoining acreage which included modern day sites such as Trinity Park, Fort Worth Botanic Garden and the Cultural District. | Species: Species read from the name; the TCU entry in the same register names Fort Worth live oaks as Q. fusiformis.. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_008",
+  "name": "Van Zandt Farm Live Oak",
+  "species": "Texas Live Oak (Quercus fusiformis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.744105,
+   "longitude": -97.358045,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Free, public park ground.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This magnificent live oak sits east of the Van Zandt Cottage within Trinity Park. Once hidden by a ramshackle storage building along Crestline Rd, the tree is now the centerpiece of a small parking area off Farmhouse Way. This area of the park was vastly | Species: as above. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_009",
+  "name": "Steele's Tavern Oak",
+  "species": "Texas Live Oak (Quercus fusiformis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.757801,
+   "longitude": -97.334699,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Free, public park ground.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This live oak still grows where Steele's Inn and Tavern once stood. The spot was the location of the official mail service to Fort Worth (1856) and served as the terminus of the Fort Worth-Jacksboro stagecoach line. Passengers from southern and eastern states often stopped and rested at the inn before continuing their journey to Jacksboro, where they connected with the Butterfield Overland Stage, which took them across the Southwest and into California. | Species: register calls it a live oak. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_010",
+  "name": "Royal Flying Corps Live Oak",
+  "species": "Texas Live Oak (Quercus fusiformis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.7631,
+   "longitude": -97.364013,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "In Greenwood Cemetery, open to visitors in daylight.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This large live oak grows in Greenwood Cemetery (also home to The Turner Oak) and shelters a group of Commonwealth War Graves, the final resting place of Royal Flying Corps pilots killed in training exercises in Tarrant County during World War I. Trained to take aerial photos of German positions and shoot down observation balloons despite only receiving 15 hours of training in biplanes, over 1,500 pilots earned their wings in Fort Worth. | Species: register calls it a live oak. | Life check (scripts/lifecheck.py, 40 m): NONE. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_011",
+  "name": "Inspiration Point Live Oak",
+  "species": "Texas Live Oak (Quercus fusiformis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.7952,
+   "longitude": -97.414564,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Free, public park ground.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This large live oak in Marion Sansom Park overlooks Lake Worth, as it has done for generations. Visiting the tree will provide tremendous views of the surrounding area and a glimpse into the past as this tree grows beside an old CCC rock shelter. It's safe to say this tree has witnessed more than a few stolen kisses, too. | Species: register calls it a live oak. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_012",
+  "name": "George T. Reynolds Live Oak",
+  "species": "Texas Live Oak (Quercus fusiformis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.794904,
+   "longitude": -97.452884,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Free, public park ground.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This great, old tree in Arrow S Park grows on land once part of an expansive ranch owned by George T. Reynolds. Mr. Reynolds was one of the founders of the Reynolds Cattle Company, famous across the west from Texas to Canada. He eventually gave or sold lands from the ranch which led to the formation of Mosque Point (once Reynolds Point), Camp Leroy Shuman, Arrow S Park, Amon Carter's Shady Oak Farm, and more. | Species: register calls it a live oak. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_013",
+  "name": "The TCU Original Oak",
+  "species": "Texas Live Oak (Quercus fusiformis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.710054,
+   "longitude": -97.36055,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Free, on the open Texas Christian University campus.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: Live oak (Quercus fusiformis) This beautiful live oak proudly spreads its canopy across the middle of campus at Texas Christian University, just west of University Dr and northeast of TCU’s Reed Hall. The turf near the tree is adorned with a small plaque, dedicated in 2011, stating “Original Oak Tree: The only tree present on the new TCU campus was this live oak transplanted ‘from the forest’ by the class of 1912.” The Class of 1912 was the first group of students to graduate from TCU’s permanent Fort Worth campus after fire destroyed the former location in Waco. This group of seniors worked with the Texas Shade Tree Company in the spring of 1912 to transplant a large live oak growing in a wooded area nearby to the campus grounds and thus established the Original Oak—the first tree on the beautiful, tree-covered campus as we know it today. | Species: register names Quercus fusiformis. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_014",
+  "name": "National Champion Chittamwood",
+  "species": "Chittamwood (Sideroxylon lanuginosum)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.738057,
+   "longitude": -97.359854,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Near the Botanic Garden and Trinity Park: check whether the point is inside the paid garden or on free park ground.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This Chittamwood (Sideroxylon lanuginosum), or Gum Bumelia, is recognized as the largest of its kind in the United States. | Species: register names Sideroxylon lanuginosum; national champion of its species. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_015",
+  "name": "The Hollow Pecan",
+  "species": "Pecan (Carya illinoinensis)",
+  "age_estimate": "over 200 years (register estimate)",
+  "age_min": 200,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.734385,
+   "longitude": -97.364852,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Inside the Fort Worth Botanic Garden, which charges admission; confirm current hours.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: A Fort Worth Botanic Garden treasure, this pecan is estimated to be over 200 years old. Located in the Rock Springs area of the park, this tree has seen visitors from Native Americans, pre-settlement traders, pioneering families of Fort Worth, and tens of thousands of visitors since. | Species: register calls it a pecan. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_016",
+  "name": "Quanah Parker Park Pecan",
+  "species": "Pecan (Carya illinoinensis)",
+  "age_estimate": "150+ years (register)",
+  "age_min": 150,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.772444,
+   "longitude": -97.246857,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Free, public park ground.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This pecan was selected for its massive size (85'+ in height, 160\"+ in circumference), age (150+ years), and majestic shape. | Species: register: 85 ft+ tall, 160 in+ circumference, 150+ years. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_017",
+  "name": "Timberline Post Oak",
+  "species": "Post Oak (Quercus stellata)",
+  "age_estimate": "\"likely one of the oldest trees in Fort Worth\" (register; no figure)",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.695147,
+   "longitude": -97.296526,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Visible from the public street: it stands directly behind a stop sign at an intersection. Do not cross private gardens.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This ancient post oak is likely to be one of the oldest trees in all of Fort Worth. It has been spared numerous times by roadwork, as demonstrated by the tree's location--directly behind a stop sign at a busy intersection. | Species: register calls it a post oak. | Life check (scripts/lifecheck.py, 40 m): NONE. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_018",
+  "name": "Memorial Bur Oak",
+  "species": "Bur Oak (Quercus macrocarpa)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.663753,
+   "longitude": -97.445115,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Access not stated by the register: check whether the point is public ground before publishing.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This massive bur oak is the former Texas Champion and remains the second largest bur oak in the state. | Species: register: former Texas champion, second largest bur oak in the state. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ },
+ {
+  "id": "ftw_019",
+  "name": "Forest Park Witness Tree",
+  "species": "Bur Oak (Quercus macrocarpa)",
+  "age_estimate": "standing in 1845, so roughly two centuries or more",
+  "age_min": 180,
+  "age_max": null,
+  "location": {
+   "address": "Fort Worth, Texas (see register_location in verify_notes)",
+   "latitude": 32.722723,
+   "longitude": -97.360133,
+   "neighbourhood": ""
+  },
+  "verified_sources": [
+   "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+  ],
+  "access": "Free, public park ground.",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (City of Fort Worth heritage tree register, 2026-09-28 rule). Register text, verbatim facts for the writer, do not copy wording: This bur oak (and its neighbor removed in 2014 due to the drought and related stresses) were used as \"witness trees\" in the 1845 E.S. Harris survey. A witness tree was used as a survey point, often to establish corners. Trees were selected based on their durability and resistance to decay. Bur oaks were a preferred species due to their longevity and resistance to fires. | Species: register: bur oak, an 1845 survey witness tree. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | Pin: the register's own point, tree-level. | Writer: fill address/neighbourhood and transport from the register text only; leave transport empty rather than guess."
+ }
+]
