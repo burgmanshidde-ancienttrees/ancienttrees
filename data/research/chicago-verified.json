@@ -1,0 +1,266 @@
+[
+ {
+  "id": "chi_007",
+  "name": "The Sugar Maple of Busse Forest South",
+  "species": "Sugar Maple (Acer saccharum)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 247,
+  "height_m": 36.6,
+  "location": {
+   "address": "Busse Forest South, Forest Preserves of Cook County, Illinois",
+   "latitude": 42.022437,
+   "longitude": -87.998853,
+   "neighbourhood": "Busse Forest South"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Sugar maple (Acer saccharum), champion rank #2 SuM in the Forest Preserves of Cook County, circumference 97.39 in (247 cm), height 120 ft (36.6 m), crown spread 72/39 ft, measured 1692939600000. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years."
+ },
+ {
+  "id": "chi_008",
+  "name": "The Silver Maple of Thatcher Woods",
+  "species": "Silver Maple (Acer saccharinum)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 427,
+  "height_m": 26.8,
+  "location": {
+   "address": "Thatcher Woods, Forest Preserves of Cook County, Illinois",
+   "latitude": 41.899989,
+   "longitude": -87.832488,
+   "neighbourhood": "Thatcher Woods"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Silver maple (Acer saccharinum), champion rank #2 SiM in the Forest Preserves of Cook County, circumference 168 in (427 cm), height 88 ft (26.8 m), crown spread 61/43 ft, measured 1698123600000. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE."
+ },
+ {
+  "id": "chi_009",
+  "name": "The Hackberry of Thatcher Woods",
+  "species": "Common Hackberry (Celtis occidentalis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 351,
+  "height_m": 36.6,
+  "location": {
+   "address": "Thatcher Woods, Forest Preserves of Cook County, Illinois",
+   "latitude": 41.900515,
+   "longitude": -87.833081,
+   "neighbourhood": "Thatcher Woods"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Hackberry (Celtis occidentalis), champion rank #1 H in the Forest Preserves of Cook County, circumference 138.2 in (351 cm), height 120 ft (36.6 m), crown spread 72/67 ft, measured 1699941600000. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | NAME CLASH: another entry shares this name at the same site; name them apart by the register rank (e.g. 'the county champion' and 'the second-ranked'), nothing invented."
+ },
+ {
+  "id": "chi_010",
+  "name": "The Hackberry of National Grove",
+  "species": "Common Hackberry (Celtis occidentalis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 351,
+  "height_m": 34.1,
+  "location": {
+   "address": "National Grove, Forest Preserves of Cook County, Illinois",
+   "latitude": 41.839231,
+   "longitude": -87.830116,
+   "neighbourhood": "National Grove"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Hackberry (Celtis occidentalis), champion rank #3 H in the Forest Preserves of Cook County, circumference 138.2 in (351 cm), height 112 ft (34.1 m), crown spread 77/71 ft, measured 1703138400000. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE."
+ },
+ {
+  "id": "chi_011",
+  "name": "The White Oak of Red Gate Woods",
+  "species": "White Oak (Quercus alba)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 421,
+  "height_m": 29.3,
+  "location": {
+   "address": "Red Gate Woods, Forest Preserves of Cook County, Illinois",
+   "latitude": 41.706313,
+   "longitude": -87.901928,
+   "neighbourhood": "Red Gate Woods"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: White oak (Quercus alba), champion rank #1 WO in the Forest Preserves of Cook County, circumference 165.6 in (421 cm), height 96 ft (29.3 m), crown spread 75/72 ft, measured 1715016004765. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years."
+ },
+ {
+  "id": "chi_012",
+  "name": "The White Oak of McClaughrey Springs Woods",
+  "species": "White Oak (Quercus alba)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 476,
+  "height_m": 21.0,
+  "location": {
+   "address": "McClaughrey Springs Woods, Forest Preserves of Cook County, Illinois",
+   "latitude": 41.676874,
+   "longitude": -87.851525,
+   "neighbourhood": "McClaughrey Springs Woods"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: White oak (Quercus alba), champion rank #2 WO in the Forest Preserves of Cook County, circumference 187.3 in (476 cm), height 69 ft (21.0 m), crown spread 68/55 ft, measured 1718120375381. Comments: At trail edge.Some branch dieback. Joel Rosario reported. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years."
+ },
+ {
+  "id": "chi_013",
+  "name": "The Sassafras of Thorn Creek Division",
+  "species": "Sassafras (Sassafras albidum)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 326,
+  "height_m": 12.2,
+  "location": {
+   "address": "Thorn Creek Division, Forest Preserves of Cook County, Illinois",
+   "latitude": 41.569596,
+   "longitude": -87.594439,
+   "neighbourhood": "Thorn Creek Division LM"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Sassafras (Sassafras albidum), champion rank #1 S in the Forest Preserves of Cook County, circumference 128.4 in (326 cm), height 40 ft (12.2 m), crown spread 43/31 ft, measured 1719930099058. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE."
+ },
+ {
+  "id": "chi_014",
+  "name": "The Basswood of Busse Forest South",
+  "species": "American Basswood (Tilia americana)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 391,
+  "height_m": 24.4,
+  "location": {
+   "address": "Busse Forest South, Forest Preserves of Cook County, Illinois",
+   "latitude": 42.027453,
+   "longitude": -88.026522,
+   "neighbourhood": "Busse Forest South"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Basswood/American linden (Tilia americana), champion rank #1 B in the Forest Preserves of Cook County, circumference 153.86 in (391 cm), height 80 ft (24.4 m), crown spread 52/57 ft, measured None. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE. | NAME CLASH: another entry shares this name at the same site; name them apart by the register rank (e.g. 'the county champion' and 'the second-ranked'), nothing invented."
+ },
+ {
+  "id": "chi_015",
+  "name": "The Basswood of Busse Forest South",
+  "species": "American Basswood (Tilia americana)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 311,
+  "height_m": 24.4,
+  "location": {
+   "address": "Busse Forest South, Forest Preserves of Cook County, Illinois",
+   "latitude": 42.033998,
+   "longitude": -88.026044,
+   "neighbourhood": "Busse Forest South"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Basswood/American linden (Tilia americana), champion rank #3 B in the Forest Preserves of Cook County, circumference 122.46 in (311 cm), height 80 ft (24.4 m), crown spread 62/52 ft, measured None. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | NAME CLASH: another entry shares this name at the same site; name them apart by the register rank (e.g. 'the county champion' and 'the second-ranked'), nothing invented."
+ },
+ {
+  "id": "chi_016",
+  "name": "The Hackberry of Thatcher Woods",
+  "species": "Common Hackberry (Celtis occidentalis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 335,
+  "height_m": 39.0,
+  "location": {
+   "address": "Thatcher Woods, Forest Preserves of Cook County, Illinois",
+   "latitude": 41.900247,
+   "longitude": -87.832372,
+   "neighbourhood": "Thatcher Woods"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Hackberry (Celtis occidentalis), champion rank #2 H in the Forest Preserves of Cook County, circumference 131.88 in (335 cm), height 128 ft (39.0 m), crown spread 64/51 ft, measured None. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE. | NAME CLASH: another entry shares this name at the same site; name them apart by the register rank (e.g. 'the county champion' and 'the second-ranked'), nothing invented."
+ },
+ {
+  "id": "chi_017",
+  "name": "The Pin Oak of Rolling Knolls",
+  "species": "Pin Oak (Quercus palustris)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 359,
+  "height_m": 29.0,
+  "location": {
+   "address": "Rolling Knolls, Forest Preserves of Cook County, Illinois",
+   "latitude": 42.037074,
+   "longitude": -88.231272,
+   "neighbourhood": "Rolling Knolls"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+  ],
+  "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+  "transport": "",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Pin oak (Quercus palustris), champion rank #1 PO in the Forest Preserves of Cook County, circumference 141.3 in (359 cm), height 95 ft (29.0 m), crown spread 85/73 ft, measured None. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years."
+ }
+]
