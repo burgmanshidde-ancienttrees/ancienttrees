@@ -215,6 +215,134 @@
    },
    "source_url": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19",
    "source_note": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only. Many stand at home addresses: hard rule 10 applies."
+  },
+  {
+   "name": "South Carolina champion trees (Clemson)",
+   "place": "charleston",
+   "centre": [
+    32.7765,
+    -79.9311
+   ],
+   "radius_km": 30,
+   "layer": "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/South_Carolina_Champion_Tree_Database/FeatureServer/0",
+   "map": {
+    "common": "tree_common_name",
+    "sci": "tree_science_name",
+    "circ": "Circumference",
+    "height": "Height",
+    "loc": "notes_remark",
+    "status": "champion"
+   },
+   "block_if": {
+    "land_type": [
+     "private"
+    ],
+    "tree_cond": [
+     "dead",
+     "deceased",
+     "removed"
+    ]
+   },
+   "source_url": "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/South_Carolina_Champion_Tree_Database/FeatureServer/0",
+   "source_note": "South Carolina champion tree database, maintained with Clemson University for the state programme (government). Private-ground rows blocked; rows with no land_type still need an access check. Facts only."
+  },
+  {
+   "name": "Prince George's County native champions",
+   "place": "washington-dc",
+   "centre": [
+    38.8977,
+    -77.0365
+   ],
+   "radius_km": 35,
+   "layer": "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0",
+   "map": {
+    "common": "Tree_Type",
+    "loc": "Other_location_details",
+    "status": "State_Champion_"
+   },
+   "source_url": "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0",
+   "source_note": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only."
+  },
+  {
+   "name": "Ohio DNR champions, Cincinnati",
+   "place": "cincinnati",
+   "centre": [
+    39.1031,
+    -84.512
+   ],
+   "radius_km": 25,
+   "layer": "https://services.arcgis.com/JyZag7oO4NteHGiq/arcgis/rest/services/ODNR_Champions/FeatureServer/0",
+   "map": {
+    "common": "name",
+    "sci": "scientific_name",
+    "circ": "circumference",
+    "height": "height",
+    "loc": "address"
+   },
+   "source_url": "https://services.arcgis.com/JyZag7oO4NteHGiq/arcgis/rest/services/ODNR_Champions/FeatureServer/0",
+   "source_note": "Ohio Department of Natural Resources champion tree list (state government). The layer carries owner and contact names, phones and emails: NEVER copy them. An address may be a home, hard rule 10. Facts only."
+  },
+  {
+   "name": "Ohio DNR champions, Columbus",
+   "place": "columbus",
+   "centre": [
+    39.9612,
+    -82.9988
+   ],
+   "radius_km": 25,
+   "layer": "https://services.arcgis.com/JyZag7oO4NteHGiq/arcgis/rest/services/ODNR_Champions/FeatureServer/0",
+   "map": {
+    "common": "name",
+    "sci": "scientific_name",
+    "circ": "circumference",
+    "height": "height",
+    "loc": "address"
+   },
+   "source_url": "https://services.arcgis.com/JyZag7oO4NteHGiq/arcgis/rest/services/ODNR_Champions/FeatureServer/0",
+   "source_note": "Ohio Department of Natural Resources champion tree list (state government). The layer carries owner and contact names, phones and emails: NEVER copy them. An address may be a home, hard rule 10. Facts only."
+  },
+  {
+   "name": "Norfolk significant trees",
+   "place": "norfolk",
+   "centre": [
+    36.8508,
+    -76.2859
+   ],
+   "radius_km": 20,
+   "layer": "https://services3.arcgis.com/IFfZzsUkSirJaEqg/arcgis/rest/services/Norfolk_Significant_Trees/FeatureServer/0",
+   "map": {
+    "common": "Common_Name",
+    "sci": "Genus",
+    "height": "Height__ft_",
+    "status": "Subjective_Points"
+   },
+   "block_if": {
+    "Public_Yes_No": [
+     "no",
+     "n"
+    ]
+   },
+   "source_url": "https://data.norfolk.gov/d/jz6u-9g3c",
+   "source_note": "City of Norfolk (VA) significant trees, via its open-data portal and the HRPDC layer (government). Coordinates are published to three decimals (about 100 m), so pins start approximate. Private rows blocked. Facts only; DBH in inches is in the source, not converted here."
+  },
+  {
+   "name": "Tempe treasured trees",
+   "place": "tempe",
+   "centre": [
+    33.4255,
+    -111.94
+   ],
+   "radius_km": 15,
+   "layer": "https://services.arcgis.com/lQySeXwbBg53XWDi/arcgis/rest/services/Tempe_Treasured_Trees/FeatureServer/0",
+   "map": {
+    "name": "Name",
+    "common": "TreeSpecies",
+    "loc": "Location",
+    "status": "Category",
+    "photo": "Picture"
+   },
+   "source_url": "https://services.arcgis.com/lQySeXwbBg53XWDi/arcgis/rest/services/Tempe_Treasured_Trees/FeatureServer/0",
+   "source_note": "City of Tempe (AZ) Treasured Trees programme (government), with a story link per tree (StoryURL). Facts only; the city's pictures are not ours to republish without a licence."
   }
  ]
 }

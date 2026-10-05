@@ -203,12 +203,18 @@ Hidde: "zoek meer van dit soort registers in de us!" The method that found them 
 | Big tree champions | Hawaii DLNR | 19 | Latitude/Longitude fields (geometry is a buffer polygon) | oahu +4, hawaii +12, kauai +2 |
 | Big and Heritage Trees of NJ | NJDEP | 716 | points; every row carries the owner's permission to list; Emeritus rows blocked | new-york +28 (NJ day trip), princeton +13 |
 | Champion trees of Kansas | Kansas Forest Service | 145 | points | NOT YET: no Kansas place we publish besides Kansas City, check the KS side |
-| Significant trees | Norfolk (VA), via HRPDC | 471 | points, Public_Yes_No field | NOT YET: no Norfolk page; a 471-row register with a public flag is an opening candidate |
 | MD champion trees 2024 | ESRGC (MD) | 11 | points | NOT YET |
+| SC champion tree database | Clemson University for the state programme | 263 | Latitude/Longitude; land_type Private blocked | charleston +3 (most rows are elsewhere in SC) |
+| Native champion trees | Prince George's County (MD) | 39 | points, many in parks | washington-dc +36 |
+| Champion tree list | Ohio DNR | 117 | points; owner and contact fields NEVER copied | cincinnati +30, columbus +12 (both new places) |
+| Significant trees | Norfolk (VA) open data, also via HRPDC | 471 | three-decimal coordinates (~100 m), Public_Yes_No | norfolk +256, 35 private blocked (new place) |
+| Treasured Trees | City of Tempe (AZ) | 28 | points, a story URL per tree | tempe +19 (new place) |
+| Exceptional trees on Oahu | Honolulu open data | 339 | CC0, BUT coordinates rounded to 0.01 degree (~1.1 km): useless for pins, same as the imported Hawaii register | not imported |
+| VA state champions view | Virginia Tech | 378 | county-level points only | not imported; the real VA big tree database needs a direct ask |
 | Heritage trees | City of San José | ? | MapServer timed out | retry |
 | Big tree champs | Delaware FirstMap | ? | service returned non-JSON | retry |
 
-Dead ends worth recording so nobody repeats them: Pasadena's Landmark Trees layer is parcels with zero public rows; Tennessee's champion layer is county outlines only; Cincinnati's "Legacy Tree" map is the full 295,000-tree inventory; "Champion Trees (April 2022)" owned by Montgomery is Montgomery Botanical Center in Florida, already in the Florida register.
+Second round the same day searched Socrata's catalogue (api.us.socrata.com/api/catalog/v1) as well; data.gov's CKAN endpoint has moved (404). Dead ends worth recording so nobody repeats them: Pasadena's Landmark Trees layer is parcels with zero public rows; Tennessee's champion layer is county outlines only; Cincinnati's "Legacy Tree" map is the full 295,000-tree inventory; "Champion Trees (April 2022)" owned by Montgomery is Montgomery Botanical Center in Florida, already in the Florida register.
 
 ## Florida Champion Trees register: usable as a verification/lead source, real API, one dense cluster already shipped (scouted 2026-09-10)
 

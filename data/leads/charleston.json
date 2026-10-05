@@ -1,5 +1,51 @@
 {
-  "leads": [],
+  "leads": [
+    {
+      "name": "Tamarisk",
+      "species": "Tamarisk (Tamarix chinensis)",
+      "lat": 32.763472,
+      "lng": -79.861917,
+      "register_location": "Grows as a hedge in front of a house",
+      "girth_cm": 183,
+      "height_m": 7.6,
+      "register_status": "No",
+      "sources": [
+        "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/South_Carolina_Champion_Tree_Database/FeatureServer/0"
+      ],
+      "source": "South Carolina champion tree database, maintained with Clemson University for the state programme (government). Private-ground rows blocked; rows with no land_type still need an access check. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Live Oak",
+      "species": "Live Oak (Quercus virginiana)",
+      "lat": 32.901722,
+      "lng": -80.137444,
+      "register_location": "Tree crown damaged in storm",
+      "girth_cm": 978,
+      "height_m": 18.9,
+      "register_status": "No",
+      "sources": [
+        "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/South_Carolina_Champion_Tree_Database/FeatureServer/0"
+      ],
+      "source": "South Carolina champion tree database, maintained with Clemson University for the state programme (government). Private-ground rows blocked; rows with no land_type still need an access check. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Live Oak",
+      "species": "Live Oak (Quercus virginianna)",
+      "lat": 32.789232,
+      "lng": -79.982181,
+      "register_location": null,
+      "girth_cm": 1115,
+      "height_m": 16.2,
+      "register_status": null,
+      "sources": [
+        "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/South_Carolina_Champion_Tree_Database/FeatureServer/0"
+      ],
+      "source": "South Carolina champion tree database, maintained with Clemson University for the state programme (government). Private-ground rows blocked; rows with no land_type still need an access check. Facts only.",
+      "status": "open"
+    }
+  ],
   "blocked": [
     {
       "site": "St Philip's Church graveyard, Church Street",
