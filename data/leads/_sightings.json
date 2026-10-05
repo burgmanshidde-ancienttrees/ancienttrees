@@ -875,6 +875,45 @@
    "status": "lead",
    "why": "Reader photograph of a pedunculate oak, girth 440 cm, age given as 245. Corroborate.py: no register entry within 100 m and no encyclopaedia article within 300 m. Single contributor, no source, and 440 cm is ordinary for a pedunculate oak; stays a lead until a second account or a source names it. Reviewed 2026-10-04.",
    "seen": "2026-10-04"
+  },
+  {
+   "sighting_id": "d9c08351-03d1-4b51-a6ec-972f08d308e8",
+   "user_id": "3f3fd52d-4665-41f3-bbaf-1cd863381908",
+   "mine": false,
+   "name": "London Plane in Paris",
+   "species": "London Plane",
+   "age": "186",
+   "girth_cm": 450,
+   "girth_hugs": null,
+   "note": "This tree has a beautiful heart-shaped crown. \n\nIt stands in the central field. Given its circumference, it seems likely that it has been there since the park opened. If so, it has witnessed the parties in the early 1900s thrown by the artist, who received the key to the park from the park ranger, so he could have fun there with his friends. \n\n« Le Jardin », poem by Jacques Prévert, in Paroles :\nDes milliers et des milliers d'années\nNe sauraient suffire\nPour dire la petite seconde d'éternité\nOù ",
+   "latitude": 48.8228727047413,
+   "longitude": 2.33626432208671,
+   "taken_at": "2026-10-05T10:02:44+00:00",
+   "photo": "3f3fd52d-4665-41f3-bbaf-1cd863381908/D9C08351-03D1-4B51-A6EC-972F08D308E8.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [],
+   "nearest_published_m": 178,
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 44 m away (paris-arbres-remarquables): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 48.8226040553664,
+      "lng": 2.3367012188551644,
+      "source": "paris-arbres-remarquables",
+      "designation": "Arbre remarquable de Paris",
+      "name": "Hêtre 'riversii'",
+      "species": "Fagus sylvatica",
+      "girth_cm": 420.0,
+      "height_m": 22.0,
+      "distance_m": 43.8
+     }
+    ]
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-05"
   }
  ]
 }
