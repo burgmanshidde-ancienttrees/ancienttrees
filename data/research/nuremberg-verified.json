@@ -1,70 +1,110 @@
 [
- {
-  "id": "nbg_013",
-  "name": "ND Nr. 34 Oak at the Nummernweiher, Volkspark Dutzendteich",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "location": {"address": "Volkspark Dutzendteich, north shore of the eastern Nummernweiher, Nuremberg", "latitude": 49.42895546, "longitude": 11.10919291, "neighbourhood": "Gleisshammer"},
-  "verified_sources": [
-    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
-    "data/registers/bayern-naturdenkmale.json ND-05060 (Bavarian Naturdenkmal register, status aktuell)",
-    "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers.jpg"
-  ],
-  "access": "Free. Public city park (Volkspark Dutzendteich), open all hours; the tree stands on the lake's north shore.",
-  "transport": "Tram 4 terminus or S-Bahn Dutzendteich, roughly 10 minutes on foot (estimate, stop-to-park distance not measured)",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "Register only (Bavarian Naturdenkmal register, row ND-05060, 'aktuell'; Nuremberg's own 2020 ordinance list per earlier pass). Register coordinate 49.428955,11.109193 and de.wikipedia's list coordinate 49.42894,11.10923 agree within about 3 m, and a Commons photograph of this exact monument is geotagged at the same point, so the pin is confirmed to tree level. Species: de.wikipedia list and the photographer's Commons category 'Quercus robur in Nuremberg' (the species label is the Commons contributor's, not the register's; the register says only 'Eiche'). Photograph in hand: Commons file 'Eiche im Volkspark Dutzendteich am Nordufer des oestlichen Nummernweihers.jpg' (found by lifecheck, dated 2019-06-20; licence not yet checked here, a photo pass must verify it). Alive: lifecheck gave OLD (2019) only; no vitality field in register; deliver flagged. No girth, height or age given by any source seen. Part of a walkable group around the Dutzendteich lakes with ND 33 and ND 31 (all within roughly 450 m)."
- },
- {
-  "id": "nbg_014",
-  "name": "ND Nr. 33 Oak on the Nummernweiher footpath, Volkspark Dutzendteich",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "location": {"address": "Volkspark Dutzendteich, north shore of the eastern Nummernweiher, east side, in the footpath surface", "latitude": 49.42912686, "longitude": 11.11003101, "neighbourhood": "Gleisshammer"},
-  "verified_sources": [
-    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
-    "data/registers/bayern-naturdenkmale.json ND-05059 (Bavarian Naturdenkmal register, status aktuell)",
-    "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers,_an_der_Ostseite_im_Gehweg.jpg"
-  ],
-  "access": "Free. Public city park, open all hours; the tree grows in the footpath along the lake shore.",
-  "transport": "Tram 4 terminus or S-Bahn Dutzendteich, roughly 10 minutes on foot (estimate)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Register row ND-05059 is at 49.429127,11.110031; de.wikipedia's list puts the same monument at 49.42920,11.11040, about 30 m east. Two official-derived coordinates disagree by that much, so the pin is approximate (the lakeshore path, with this tree about 30 m either side). The Wikipedia list's own wording places it 'on the east side, in the footpath' of the Nummernweiher north shore, which helps a visitor identify it on arrival. Species as for ND 34 (Commons category Quercus robur; register says 'Eiche' only). Photograph in hand: Commons file '...an der Ostseite im Gehweg.jpg' (lifecheck OLD 2019-06-20; licence to be verified by a photo pass). No age, girth or height in any source. Register only; flagged."
- },
- {
-  "id": "nbg_015",
-  "name": "ND Nr. 31 Oak north of the Nummernweiher, Volkspark Dutzendteich",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "location": {"address": "Volkspark Dutzendteich, north of the Nummernweiher, south of Jakob-Wolff-Strasse, Nuremberg", "latitude": 49.43011472, "longitude": 11.10669369, "neighbourhood": "Gleisshammer"},
-  "verified_sources": [
-    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
-    "data/registers/bayern-naturdenkmale.json ND-05057 (Bavarian Naturdenkmal register, status aktuell)",
-    "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_n%C3%B6rdlich_des_Nummernweihers,_s%C3%BCdlich_der_Jakob-Wolff-Stra%C3%9Fe_20170825_130211.jpg"
-  ],
-  "access": "Free. Public city park, open all hours; the tree stands between the lake and Jakob-Wolff-Strasse.",
-  "transport": "Tram 4 terminus or S-Bahn Dutzendteich, roughly 10 minutes on foot (estimate)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Register row ND-05057 at 49.430115,11.106694; de.wikipedia list at 49.42999,11.10690, about 20 m apart, so approximate. The official name places it north of the Nummernweiher and south of Jakob-Wolff-Strasse. Species: Commons file 2017-08-25 by Buendia22 (CC BY-SA 4.0, uploader's description 'Naturdenkmal Eiche (Quercus robur)'); register says only 'Eiche'. Photograph in hand: that Commons file, taken 2017 (OLD, lifecheck at the coordinate returned NONE), so alive is thin; flagged. No age, girth or height anywhere. Neighbour register entry ND 35 (oak at Jakob-Wolff-Strasse 19/21/23, 49.42985,11.10555) stands on a lawn in front of a residential block and is held back as a lead, not delivered."
- },
- {
-  "id": "nbg_016",
-  "name": "Gustav Adolf Pear (ND Nr. 23), Gebersdorf",
-  "species": "Wild Pear (Pyrus pyraster)",
-  "age_estimate": "not documented",
-  "location": {"address": "Hügelstrasse, south-west of the sports ground, Gebersdorf, Nuremberg", "latitude": 49.42627, "longitude": 11.01195, "neighbourhood": "Gebersdorf"},
-  "verified_sources": [
-    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
-    "data/registers/bayern-naturdenkmale.json (ND Nr. 23 Holzbirnbaum in der Hügelstrasse, Gustav Adolf-Birne, status aktuell)",
-    "https://commons.wikimedia.org/wiki/Category:Holzbirne_auf_dem_Gustav-Adolf-H%C3%BCgel_(N%C3%BCrnberg)"
-  ],
-  "access": "Not verified: stands by Huegelstrasse next to the sports ground in Gebersdorf; whether the tree is reachable from public ground was not established. The page should say 'visible from the street' only if a photo pass or reader confirms it.",
-  "transport": "Gebersdorf, south-west Nuremberg, about 5.5 km from the centre; bus or U-Bahn to Gebersdorf (stop and time not verified)",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "Register name: 'Holzbirnbaum in der Huegelstrasse, Gustav Adolf-Birne'; de.wikipedia list: 'Holzbirne an der Huegelstrasse suedwestlich der Sportanlage (Gustav-Adolf-Birnbaum in Gebersdorf)'. Register coordinate 49.42627,11.01195 and Wikipedia 49.42628,11.01197 agree within about 2 m: pin confirmed. Alive: Commons category holds six photographs dated April 2022 including the tree in blossom (OLD, 4 years). The name suggests a tie to King Gustav Adolf of Sweden and the 1632 battle around Gebersdorf (Gebersdorf was on the 1632 battlefield per de.wikipedia's Gebersdorf article snippet), but NO source seen states that the tree itself witnessed it: do not write that. No age, girth or height in any source seen; wild pears seldom pass 200-275 years so keep any age band loose. Needs access check and licence check on the Commons photos before page build. Register only; flagged."
- }
+  {
+    "id": "nbg_013",
+    "name": "ND Nr. 34 Oak at the Nummernweiher, Volkspark Dutzendteich",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Volkspark Dutzendteich, north shore of the eastern Nummernweiher, Nuremberg",
+      "latitude": 49.42895546,
+      "longitude": 11.10919291,
+      "neighbourhood": "Gleisshammer"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+      "data/registers/bayern-naturdenkmale.json ND-05060 (Bavarian Naturdenkmal register, status aktuell)",
+      "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers.jpg"
+    ],
+    "access": "Free. Public city park (Volkspark Dutzendteich), open all hours; the tree stands on the lake's north shore.",
+    "transport": "Tram 4 terminus or S-Bahn Dutzendteich, roughly 10 minutes on foot (estimate, stop-to-park distance not measured)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register only (Bavarian Naturdenkmal register, row ND-05060, 'aktuell'; Nuremberg's own 2020 ordinance list per earlier pass). Register coordinate 49.428955,11.109193 and de.wikipedia's list coordinate 49.42894,11.10923 agree within about 3 m, and a Commons photograph of this exact monument is geotagged at the same point, so the pin is confirmed to tree level. Species: de.wikipedia list and the photographer's Commons category 'Quercus robur in Nuremberg' (the species label is the Commons contributor's, not the register's; the register says only 'Eiche'). Photograph in hand: Commons file 'Eiche im Volkspark Dutzendteich am Nordufer des oestlichen Nummernweihers.jpg' (found by lifecheck, dated 2019-06-20; licence not yet checked here, a photo pass must verify it). Alive: lifecheck gave OLD (2019) only; no vitality field in register; deliver flagged. No girth, height or age given by any source seen. Part of a walkable group around the Dutzendteich lakes with ND 33 and ND 31 (all within roughly 450 m)."
+  },
+  {
+    "id": "nbg_014",
+    "name": "ND Nr. 33 Oak on the Nummernweiher footpath, Volkspark Dutzendteich",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Volkspark Dutzendteich, north shore of the eastern Nummernweiher, east side, in the footpath surface",
+      "latitude": 49.42912686,
+      "longitude": 11.11003101,
+      "neighbourhood": "Gleisshammer"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+      "data/registers/bayern-naturdenkmale.json ND-05059 (Bavarian Naturdenkmal register, status aktuell)",
+      "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers,_an_der_Ostseite_im_Gehweg.jpg"
+    ],
+    "access": "Free. Public city park, open all hours; the tree grows in the footpath along the lake shore.",
+    "transport": "Tram 4 terminus or S-Bahn Dutzendteich, roughly 10 minutes on foot (estimate)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register row ND-05059 is at 49.429127,11.110031; de.wikipedia's list puts the same monument at 49.42920,11.11040, about 30 m east. Two official-derived coordinates disagree by that much, so the pin is approximate (the lakeshore path, with this tree about 30 m either side). The Wikipedia list's own wording places it 'on the east side, in the footpath' of the Nummernweiher north shore, which helps a visitor identify it on arrival. Species as for ND 34 (Commons category Quercus robur; register says 'Eiche' only). Photograph in hand: Commons file '...an der Ostseite im Gehweg.jpg' (lifecheck OLD 2019-06-20; licence to be verified by a photo pass). No age, girth or height in any source. Register only; flagged.",
+    "story": "This oak grows in the footpath itself. It stands on the north shore of the eastern Nummernweiher, one of the ponds of Nuremberg's Volkspark Dutzendteich, and the German Wikipedia list of the city's natural monuments describes it exactly that way: on the east side, in the path.\n\nIt carries Bavarian registration number 33, one of three protected oaks along this stretch of water. Its neighbour, number 34, stands a short way west on the shore and already has a page here. Number 31 is further round, between the pond and Jakob-Wolff-Strasse.\n\nThe official records do not quite agree on where 33 stands. Bavaria's state register and the Wikipedia list put it about 30 metres apart, which is why our pin is marked approximate. In practice that matters less than it sounds, because a tree growing out of the path surface is hard to walk past without noticing.\n\nThe register calls it simply Eiche, oak, and photographs of it are filed as pedunculate oak. The most recent we found was taken in June 2019, so whether it looks the same today is something a visitor can tell us better than any document.\n\nNobody has published its girth, its height or its age. If you have stood beside it with a tape measure, tell us.",
+    "how_to_recognise": "You can recognise it as the oak standing in the footpath itself rather than beside it. It is on the east side of the north shore of the eastern Nummernweiher, a short way east of protected oak No. 34 on the shore.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Eiche_im_Volkspark_Dutzendteich_am_Nordufer_des_%C3%B6stlichen_Nummernweihers%2C_an_der_Ostseite_im_Gehweg.jpg",
+      "license": "CC0",
+      "attribution": "Kayron TB, via Wikimedia Commons",
+      "status": "approved",
+      "width": 3024,
+      "height": 4032
+    }
+  },
+  {
+    "id": "nbg_015",
+    "name": "ND Nr. 31 Oak north of the Nummernweiher, Volkspark Dutzendteich",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Volkspark Dutzendteich, north of the Nummernweiher, south of Jakob-Wolff-Strasse, Nuremberg",
+      "latitude": 49.43011472,
+      "longitude": 11.10669369,
+      "neighbourhood": "Gleisshammer"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+      "data/registers/bayern-naturdenkmale.json ND-05057 (Bavarian Naturdenkmal register, status aktuell)",
+      "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_n%C3%B6rdlich_des_Nummernweihers,_s%C3%BCdlich_der_Jakob-Wolff-Stra%C3%9Fe_20170825_130211.jpg"
+    ],
+    "access": "Free. Public city park, open all hours; the tree stands between the lake and Jakob-Wolff-Strasse.",
+    "transport": "Tram 4 terminus or S-Bahn Dutzendteich, roughly 10 minutes on foot (estimate)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register row ND-05057 at 49.430115,11.106694; de.wikipedia list at 49.42999,11.10690, about 20 m apart, so approximate. The official name places it north of the Nummernweiher and south of Jakob-Wolff-Strasse. Species: Commons file 2017-08-25 by Buendia22 (CC BY-SA 4.0, uploader's description 'Naturdenkmal Eiche (Quercus robur)'); register says only 'Eiche'. Photograph in hand: that Commons file, taken 2017 (OLD, lifecheck at the coordinate returned NONE), so alive is thin; flagged. No age, girth or height anywhere. Neighbour register entry ND 35 (oak at Jakob-Wolff-Strasse 19/21/23, 49.42985,11.10555) stands on a lawn in front of a residential block and is held back as a lead, not delivered.",
+    "story": "Of the three protected oaks along the Nummernweiher in Nuremberg's Volkspark Dutzendteich, number 31 is the one that stands back from the water. Its official name places it by two edges at once: north of the pond, south of Jakob-Wolff-Strasse. Somewhere in that strip of park between the shore path and the street is an oak the state of Bavaria has decided must not be cut down.\n\nThe register says little else. It calls the tree Eiche, oak, with no species, no girth, no height and no age. A photographer who stood beside it in August 2017 filed it as a pedunculate oak, Quercus robur, and that photograph is the most recent record we have of it. Bavaria's register still lists it as current, but nobody has put a fresh date on it since that summer, so if you have seen it lately, tell us it is still there.\n\nWhere exactly it stands is a matter of about twenty metres. The register and the German Wikipedia list of the city's natural monuments give coordinates that far apart, so our pin is approximate.\n\nThe other two oaks make it an easy detour. Number 34 stands on the north shore of the eastern pond, and number 33 grows in the footpath a little further east. If you measure this one round the trunk at chest height, tell us the number.",
+    "how_to_recognise": "You can recognise it as the oak in the strip of park between the Nummernweiher and Jakob-Wolff-Strasse, back from the water. The oak on the lawn by the flats at Jakob-Wolff-Strasse 19 to 23 is a different one.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Eiche_im_Volkspark_Dutzendteich_n%C3%B6rdlich_des_Nummernweihers%2C_s%C3%BCdlich_der_Jakob-Wolff-Stra%C3%9Fe_20170825_130211.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Buendia22, via Wikimedia Commons",
+      "status": "approved",
+      "width": 3024,
+      "height": 4032
+    }
+  },
+  {
+    "id": "nbg_016",
+    "name": "Gustav Adolf Pear (ND Nr. 23), Gebersdorf",
+    "species": "Wild Pear (Pyrus pyraster)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Hügelstrasse, south-west of the sports ground, Gebersdorf, Nuremberg",
+      "latitude": 49.42627,
+      "longitude": 11.01195,
+      "neighbourhood": "Gebersdorf"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+      "data/registers/bayern-naturdenkmale.json (ND Nr. 23 Holzbirnbaum in der Hügelstrasse, Gustav Adolf-Birne, status aktuell)",
+      "https://commons.wikimedia.org/wiki/Category:Holzbirne_auf_dem_Gustav-Adolf-H%C3%BCgel_(N%C3%BCrnberg)"
+    ],
+    "access": "Not verified: stands by Huegelstrasse next to the sports ground in Gebersdorf; whether the tree is reachable from public ground was not established. The page should say 'visible from the street' only if a photo pass or reader confirms it.",
+    "transport": "Gebersdorf, south-west Nuremberg, about 5.5 km from the centre; bus or U-Bahn to Gebersdorf (stop and time not verified)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register name: 'Holzbirnbaum in der Huegelstrasse, Gustav Adolf-Birne'; de.wikipedia list: 'Holzbirne an der Huegelstrasse suedwestlich der Sportanlage (Gustav-Adolf-Birnbaum in Gebersdorf)'. Register coordinate 49.42627,11.01195 and Wikipedia 49.42628,11.01197 agree within about 2 m: pin confirmed. Alive: Commons category holds six photographs dated April 2022 including the tree in blossom (OLD, 4 years). The name suggests a tie to King Gustav Adolf of Sweden and the 1632 battle around Gebersdorf (Gebersdorf was on the 1632 battlefield per de.wikipedia's Gebersdorf article snippet), but NO source seen states that the tree itself witnessed it: do not write that. No age, girth or height in any source seen; wild pears seldom pass 200-275 years so keep any age band loose. Needs access check and licence check on the Commons photos before page build. Register only; flagged."
+  }
 ]
