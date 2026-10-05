@@ -2,6 +2,16 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (session) - Twelve cities translated in their own language; translations are indexed by the photo rule
+
+**Indexing, settled with Hidde:** translate whatever is relevant; a translated page goes into Google exactly when its English twin does (a tree page with a photograph, a city of four or more trees with at least one photograph). Fallback pages and question pages stay out. No separate language rule. A photograph now returns up to eight pages at once. The 80-new-URLs-per-deploy and 1.5-pages-per-tree checks still meter it (0.45 per tree today).
+
+**Shipped (79 trees):** Italian for Verona, Bari, Catania, Padua and Bergamo; German for Frankfurt, Freiburg and Hallstatt; French for Luxembourg City and Senonches; Spanish for Ronda and Tarragona. These are proven cities from the frozen 09-27 roster, each in its local language. The translators found English copy that contradicted its own data, and it is fixed: the Padua palm graft (it belongs to the ginkgos), the Sant'Antonio cloister wrongly listed as free, Bergamo's outside count and upper town, Catania's three Villa Bellini trees, Freiburg's copy still describing four trees (its oldest_tree_id moved to the frb_006 limes, about 380 years by tradition), and stale lines in Hallstatt, Frankfurt and Tarragona.
+
+**`langcheck.py --next` fixed:** it was ranking Jauze and Wilparting first, single-tree places whose impressions come from bot queries. It now skips bot-demand places and any place a translation could never get indexed (under four trees, or no photograph).
+
+**Next in line:** Italian for Genoa, Lucca, Como and Trieste (72 trees); then Dutch (Ede, Utrecht, Amersfoort and more) and Portuguese (Bucaco, Guimaraes), which have not yet passed their English twins. Cost was ~570k tokens for 79 trees across three passes, including the copy fixes.
+
 ## 2026-10-05 (night run) - Wilmington, Delaware merged; Fort Worth and Chicago wait on the pace cap
 
 7-day visits: 1,560 visits, 1,753 page views. Rung 4: merged the parked Wilmington, Delaware draft (8 champion trees, new place, `wilmington-delaware` added to us-states.json and city-aliases), preflight 0 problems, committed. Fort Worth's 13-tree merge was tried first and preflight's accident guard refused it (64 new trees in 24 h against the cap of 60), so I reverted it; Chicago (11) is blocked by the same cap. Both stay ready in data/research/ for the first run after the 24-hour window clears. superlatives.py shows one old collision (chr_001 vs dnk_001, "first entry in the European Tree"), not from this merge. Nothing was refused by the tool list.
