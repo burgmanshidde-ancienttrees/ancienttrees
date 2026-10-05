@@ -2,23 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-18T02:47:51+00:00",
-   "date": "2026-08-18",
-   "run_id": "32093128350",
-   "minutes": 29.2,
-   "minutes_basis": "measured",
-   "turns": 221,
-   "denials": 10,
-   "denials_source": "permission_denials: Bash, Monitor",
-   "ended": "success",
-   "tokens": 51383033,
-   "claims_held": [],
-   "commits": 11,
-   "cities_touched": 3,
-   "trees": 13,
-   "logged": true
-  },
-  {
    "started": "2026-08-18T05:20:01+00:00",
    "date": "2026-08-18",
    "run_id": "32102460284",
@@ -20685,6 +20668,53 @@
     }
    ],
    "trees": 16,
+   "logged": true
+  },
+  {
+   "started": "2026-10-05T21:33:44+00:00",
+   "date": "2026-10-05",
+   "run_id": "37376588520",
+   "minutes": 33.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 66,
+   "denials": 16,
+   "denials_source": "permission_denials: Bash(cat ; ? ; ? ; ? ...), Bash(cat ; ls | grep | vienna ...), Bash(cd && curl ; wc ; head), Bash(curl ; wc ; grep | ? ...), Bash(curl ; wc ; head), Bash(for ; do | tail ; done), Bash(git && git && git ; python3 ...), Bash(git && git && git | tail ...), Bash(git), Bash(mkdir && python3 ; import ; Urweltmammutbaum ...), Bash(pdftotext | head), Bash(python3 ; import ; ? ; import ...), Bash(python3 ; import ; ? ; line ...), Bash(python3 ; import ; for ; for ...), Bash(python3 ; import ; for ; if ...), Bash(sed && python3)",
+   "ended": "success",
+   "tokens": 822967,
+   "claims_held": [
+    "vienna",
+    "salzburg"
+   ],
+   "commits": 16,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "potsdam",
+     "trees": 5
+    },
+    {
+     "city": "vienna",
+     "trees": 5
+    },
+    {
+     "city": "bamberg",
+     "trees": 1
+    },
+    {
+     "city": "boston",
+     "trees": 1
+    },
+    {
+     "city": "dresden",
+     "trees": 1
+    },
+    {
+     "city": "graz",
+     "trees": 0
+    }
+   ],
+   "trees": 13,
    "logged": true
   }
  ],
