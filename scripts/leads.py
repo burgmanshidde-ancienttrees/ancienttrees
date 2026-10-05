@@ -637,7 +637,8 @@ def readiness(entry):
     # night runs merged and reverted the same seven such trees again and again
     # (Houston, Fukuoka, Takachiho, the zoo oak), because "ready" said yes and
     # preflight said no.
-    if not has_photo_or_pin(entry):
+    from findable import ADD_NEEDS_FINDABLE
+    if ADD_NEEDS_FINDABLE and not has_photo_or_pin(entry):
         missing.append("photo or pin (preflight refuses a new tree with neither)")
     return missing
 

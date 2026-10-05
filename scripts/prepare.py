@@ -81,6 +81,12 @@ def claimable():
             proven = set((json.load(fh).get("cities") or {}).keys())
     except (OSError, ValueError):
         proven = set()
+    try:
+        from passcheck import PROVEN_ONLY
+    except Exception:
+        PROVEN_ONLY = True
+    if not PROVEN_ONLY:
+        proven = set()   # a preference now, not a filter (2026-10-05)
     return proven, set(FOCUS_COUNTRIES), list(SUPPLY_FOCUS)
 
 
@@ -301,6 +307,9 @@ def pipeline_status():
     # offering held trees back as READY: a queue that cannot see completion.
     try:
         from leads import has_photo_or_pin as _photo_or_pin
+        from findable import ADD_NEEDS_FINDABLE
+        if not ADD_NEEDS_FINDABLE:
+            _photo_or_pin = lambda t: True
     except Exception:
         _photo_or_pin = lambda t: True
     _proven = claimable()[0]

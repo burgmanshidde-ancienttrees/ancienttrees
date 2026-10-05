@@ -854,6 +854,13 @@ OPEN_FLOOR = 4  # a place at or above the floor is open; claiming it is deepenin
 # verified tree it held was outside the US or over the pace. The US still
 # leads city_queue.py --next by demand; it no longer refuses the rest.
 US_ONLY = False
+# The frozen 09-27 roster (data/depth-roster-frozen.json) was a REFUSAL from
+# 2026-10-01: new trees only in cities that had readers before the demotion.
+# Off on 2026-10-05 (Hidde: "the night runs should keep on adding trees"):
+# inside it the supply ran out, and Munich was claimed six times in three days.
+# A city outside it gets a NOTE; the focus countries, the full-city cap and the
+# four-tree floor for a new place still hold. True brings the refusal back.
+PROVEN_ONLY = False
 US_COUNTRY = "United States"
 # Widened the same day, Hidde 2026-10-01: "focus op us, uk, japan, west europa
 # frankrijk spanj portugal italie en scandinavie, maakt vertalingen als het
@@ -1063,7 +1070,10 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None, retry
         except (OSError, ValueError):
             proven = set()
         match, _ = resolve(target, cities()) if proven else (None, None)
-        if proven and not (match and match["slug"] in proven):
+        if proven and not (match and match["slug"] in proven) and not PROVEN_ONLY:
+            print(f"NOTE: {target} is not on the 09-27 roster of proven cities; allowed since "
+                  "2026-10-05, proven cities still go first.")
+        elif proven and not (match and match["slug"] in proven):
             print(f"REFUSED: {target} is not a proven city. New trees go to cities that had")
             print("readers before the demotion (data/depth-roster-frozen.json), not to new")
             print("places (Hidde, 2026-10-01). `python3 scripts/city_queue.py --next` lists them.")

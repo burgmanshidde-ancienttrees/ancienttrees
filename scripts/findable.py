@@ -27,6 +27,18 @@ here. Removing or loosening it needs Hidde.
 
 SITE_MAX_M = 50
 
+# ADDING is not INDEXING (Hidde, 2026-10-05: "the night runs should keep on
+# adding trees", "we just should be considerate about what to add to google",
+# "the google situation is grim anyway right - why not make the product
+# better?"). Since 2026-10-01 a tree that is not findable was refused outright,
+# and with the shelf dry that left the night runs nothing to add: 20 of 41 runs
+# from 09-30 to 10-05 shipped no tree with 110 of 120 minutes unspent. A tree on
+# the map serves the product whether or not Google sees its page, and
+# thin_pages.py already keeps every tree that is not findable out of the index,
+# recomputed every deploy, so it enters Google the day it gains a photo or a
+# pin. So preflight no longer refuses it. True brings the refusal back.
+ADD_NEEDS_FINDABLE = False
+
 
 def has_photo(tree):
     ph = tree.get("photo") or {}

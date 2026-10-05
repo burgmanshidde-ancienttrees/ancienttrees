@@ -19,7 +19,7 @@
 
 **Fixed tonight:** a verify claim records the city's tree count; a release that adds no tree writes the city to `data/walls.json`, and for 48 hours `passcheck.py --claim` refuses a verify pass there (`--retry "<new source>"` overrides) and `prepare.py --status` stops recommending it and prints the walls. Seeded with Frankfurt, Spokane, Portland and Dresden from this morning's logs. That stops the re-checking loop; it does not create supply.
 
-**FOR HIDDE, the real lever is yours:** with the walls removed, what is left for a night run is Munich, Nuremberg and scouting. More windows will produce trees only if one lane opens: (1) your photo review page, since 855 noindexed trees need only a photo or pin and runs may not approve photos themselves in recovery mode; (2) letting verify passes go beyond the frozen 09-27 roster in the US, UK and Germany; or (3) accepting that most windows will end early until search recovers, which costs nothing but tokens.
+**Then opened, on Hidde's word ("the night runs should keep on adding trees", "be considerate about what to add to google", "why not make the product better?"):** adding is no longer indexing. A tree without photo or exact pin may go live again and stays out of Google via thin_pages.py until it gains one (`ADD_NEEDS_FINDABLE = False`, scripts/findable.py); cities outside the 09-27 proven roster may take new trees (`PROVEN_ONLY = False`, scripts/passcheck.py, now a note). Effect on the shelf at once: READY 0 to 16, 29 verified trees awaiting a writer, leads needing only a source 49 to 232, 79 claimable staged cities. Still standing for Google: no new place below four trees, the sitemap ratio check, the full-city cap.
 
 ## 2026-10-05 session: the app inbox emptied
 

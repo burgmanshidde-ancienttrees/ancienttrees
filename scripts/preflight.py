@@ -1283,6 +1283,11 @@ def check_covered_countries_want_a_photo_or_a_pin():
     Trees already live on 2026-09-28 sit in data/covered-baseline.json and
     stay, because retiring a live page is hard rule 3. Removing this needs Hidde.
     """
+    from findable import ADD_NEEDS_FINDABLE
+    if not ADD_NEEDS_FINDABLE:
+        # Off since 2026-10-05: such a tree goes live and thin_pages.py keeps
+        # its page out of Google until it is findable.
+        return []
     try:
         with open(os.path.join("data", "covered-baseline.json"), encoding="utf-8") as fh:
             grand = set(json.load(fh).get("ids", []))
