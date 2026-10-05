@@ -255,5 +255,203 @@
     "verify_notes": "Register coordinate: de.wikipedia Liste der Gedenkbäume in Dresden gives 51/3/19 N, 13/47/40.5 E (51.05528, 13.79458), identical to Wikidata. OSM node 8551492274 (named Bismarckeiche, Quercus robur, planted=1895) lies at 51.055298,13.7944222, about 11 m west of that point. Two sources agree within about 11 m, but the list says the tree is 'Teil einer Baumgruppe' and the Commons photos have no geotag, so the pin is APPROXIMATE, not confirmed; the photograph is what meets the photo-or-pin requirement. I used the OSM point as the pin. Facts: planted 1895 for Bismarck's 80th birthday; the stone beside it was originally dedicated to Bismarck, its bronze portrait medallion lost shortly after WWII; the existing sandstone block was rededicated in 1998 with a bronze plaque 'Zur Erinnerung an den Gestalter der Waldparkanlage Hofgärtner H. S. Neumann 1829-1880'; no information sign. Age is the documented 1895 planting per the list (about 131 years); no girth or height found. Alive: Commons photos 2017 and the OSM node; lifecheck not run. One source cluster: flagged. Modest as a tree; the draw is the Waldpark and the stone.",
     "story": "The stone beside this oak has changed its mind about who it honours. The tree was planted in 1895 for Otto von Bismarck's 80th birthday, and the sandstone block next to it was dedicated to him too, with his portrait in a bronze medallion. The medallion went missing shortly after the Second World War. In 1998 the block was given a new bronze plaque, this time remembering Hofgärtner H. S. Neumann, 1829 to 1880, the court gardener who designed the Waldpark itself.\n\nSo the oak has outlasted the man it was planted for and the monument that explained it. At about 130 years old it is no giant, and nobody has published its girth or height. What it offers is the park its stone now commemorates, and a small lesson in how a memorial gets rewritten when the century moves on.\n\nBe warned before you go: there is no information sign, and the Bismarck Oak stands as part of a group of trees. Our pin is approximate, close to the spot but not on the trunk, so you will have to pick the right oak yourself. The stone is the giveaway. Find the sandstone block with the Neumann plaque on the Lothringer Weg, west of the tennis courts, and the oak is the one beside it.",
     "written": true
+  },
+  {
+    "id": "dre_014",
+    "name": "The Pillnitz Camellia",
+    "species": "Common Camellia (Camellia japonica)",
+    "age_estimate": "over 250 years",
+    "age_min": 225,
+    "age_max": 300,
+    "location": {
+      "address": "Kamelienhaus, Schloss und Park Pillnitz, August-Böckstiegel-Straße 2, 01326 Dresden",
+      "latitude": 51.011678,
+      "longitude": 13.869539,
+      "neighbourhood": "Pillnitz"
+    },
+    "verified_sources": [
+      "https://www.schloesserland-sachsen.de/de/news-presse/pressemitteilungen/?tx_news_pi1%5Bnews%5D=1615&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=fe72b25182061af33760d8bc9d6300be",
+      "https://www.schlosspillnitz.de/de/veranstaltungen-ausstellungen/detailseite/event/kamelienbluete-im-pillnitzer-schlosspark-1/28399/",
+      "https://de.wikipedia.org/wiki/Pillnitzer_Kamelie"
+    ],
+    "access": "Inside Schloss & Park Pillnitz (owner Staatliche Schloesser, Burgen und Gaerten Sachsen). The camellia stands in its own glass house, open to visitors only in the bloom season, 28 Feb to 12 Apr 2026, daily 10:00-17:00; EUR 5 until 27 March (camellia and palm house), then included in the EUR 8 Schloss & Park Pillnitz ticket. From May to the autumn the glass house is rolled aside and the tree stands in the park; October to May it is inside the heated house.",
+    "transport": "Schloss Pillnitz, about 12 km upriver (east) of the Altstadt; the Elbe paddle steamers call at Pillnitz. We have not timed the bus route, so check the DVB journey planner before you go.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Alive: the owner's press release of 16 May 2025 (ICS title 'Historische Kamelie', first German camellia so honoured) and the 2026 bloom-season programme; lifecheck RECENT (iNaturalist obs 2026-05-28 at the spot). Pin: five Commons files geotagged 3-22 m from 51.0117,13.8695 depict the Kamelienhaus (a 13 m high rolling glass house, unmistakable); the tree is inside it. Size per owner: 'ueber 250 Jahre alt', 'fast neun Meter hoch'; de.wikipedia adds crown diameter almost 11 m, up to 35,000 crimson single flowers Feb-April. Documented fact: planted at this spot in 1801 by gardener Carl Adolph Terscheck; reached the Dresden court between 1770 and 1790 (so 225+ years at this spot is documented, 250 is the owner's figure). The popular legend that it is one of four plants Thunberg brought from Japan 1775-76 is increasingly doubted (no Kew record); do NOT state it as fact. Genetic study (TU Dresden 2015) found near-identity with the old camellias of Caserta, Campobello (PT) and Greifswald, pointing to vegetative propagation from one stock. Anecdote: wooden winter house burned down in early January 1905 at about -20 C, the firefighting water froze into an ice shell and the plant survived and re-sprouted in spring. Current glass house inaugurated 1992, 13.2 m high, 54 t, 1864 m3, heated to 4-6 C, runs on rails (track gauge 10,800 mm). Claims 'largest and oldest of its kind north of the Alps' is the owner's wording. No girth recorded: multi-stem shrub-tree, only height and crown given. Species is a large evergreen shrub grown as a tree; flag for the writer to say 'camellia tree'. Best time: March main bloom (owner: first buds mid/late Feb, main bloom March, last blooms early/mid April). Photo exists: Commons 'Dresden-Pillnitz, Schloss, die Kamelie.jpg' (CC BY 3.0, user Dguendel, geotagged 14 m away) and others; photo not judged by this pass. Register: not a Naturdenkmal; owner-published tree (counts per BRIEF_RESEARCH). Distance: Pillnitz is outside the walkable centre, label honestly as a Pillnitz stop.",
+    "best_time": {
+      "months": [
+        3
+      ],
+      "kind": "flowers",
+      "label": "March, when the glass house opens and up to 35,000 crimson flowers are out"
+    },
+    "how_to_recognise": "You can recognise it by the 13-metre glass house on rails that covers it from October to May. In summer the house is rolled aside and it stands in the open park beside its tracks, a dark evergreen dome almost nine metres high.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Dresden-Pillnitz%2C_Schloss%2C_die_Kamelie.jpg",
+      "license": "CC BY 3.0",
+      "attribution": "Dguendel, via Wikimedia Commons",
+      "status": "approved",
+      "width": 4272,
+      "height": 2848
+    },
+    "story": "In January 1905 this camellia's winter house burned down at about minus 20 degrees, and the water from the fire hoses froze around the plant in a shell of ice. It survived, and sprouted again that spring.\n\nIt has stood on this spot since 1801, when the court gardener Carl Adolph Terscheck planted it. The camellia reached the Dresden court somewhere between 1770 and 1790, so 225 years at Pillnitz are documented; the palace's owners, the Saxon state palaces administration, put it at over 250. A favourite story says it is one of four plants the botanist Carl Peter Thunberg brought back from Japan in the 1770s. Kew has no record of that, and the claim is increasingly doubted. A 2015 study at TU Dresden found it almost genetically identical to the old camellias of Caserta, Campobello in Portugal and Greifswald, which points to cuttings from one shared stock.\n\nStrictly it is a shrub grown into a tree: almost nine metres high, with a crown nearly eleven metres across. In 2025 it became the first camellia in Germany to be named a Historic Camellia by the International Camellia Society.\n\nFrom October to May it lives inside a heated 13-metre glass house that weighs 54 tonnes and runs on rails. In summer the house rolls aside and the tree stands in the open park. The owners call it the largest and oldest of its kind north of the Alps. Come in March, when up to 35,000 crimson flowers are open.",
+    "photos": []
+  },
+  {
+    "id": "dre_015",
+    "name": "The Babisnau Poplar",
+    "species": "Black Poplar (Populus nigra)",
+    "age_estimate": "about 217 years",
+    "age_min": 215,
+    "age_max": 220,
+    "girth_cm": 550,
+    "location": {
+      "address": "Zughuebel, about 800 m west of Babisnau, Kreischa (on the Babisnau/Golberode boundary), south of Dresden",
+      "latitude": 50.97423,
+      "longitude": 13.7497,
+      "neighbourhood": "Babisnau (Kreischa), about 9 km south of Dresden Altstadt"
+    },
+    "verified_sources": [
+      "https://osterzgebirge.org/de/natur-erkunden/schutzgebiete/naturdenkmale/baum-naturdenkmale/nd-babisnauer-pappel/",
+      "https://de.wikipedia.org/wiki/Babisnauer_Pappel"
+    ],
+    "access": "Free, open-air. Stands alone on an open field plateau with a steel viewing platform beside it; reached by field and hiking paths (about 800 m from Babisnau village). Land owned by the Landesverein Saechsischer Heimatschutz since 1996. Not in the city: label as a day trip to Kreischa/Babisnau outside Dresden.",
+    "transport": "About 9 km south of the Altstadt, outside the city in Kreischa, and 800 m on foot from Babisnau village along field paths. We have not checked the bus connection to Babisnau; use the VVO journey planner.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Alive but weakened, so flagged. Planting is documented: farmer Johann Gottlieb Becke planted it in 1808 as a boundary tree (both sources). Designated Naturdenkmal 1936 and again 1958. Measurements per osterzgebirge.org (Natur im Osterzgebirge, 2025): girth 5.50 m, height 15 m, 'significantly reduced vitality', only a few side branches leafed; the same page gives 2004 as 5.15 m girth, 26 m height. de.wikipedia says 17.3 m and 5.1 m (older figures), so sources disagree on height: use the 2025 figure and say it has shrunk. The crown lost a third in a thunderstorm on 20 July 1967 (about 26 m down to about 20 m) and most of the round crown in storms in 1996; the main stems were later topped. Alive evidence: lifecheck RECENT, Commons photo 'Babisnauer Pappel (Dezember 2024)', geotagged files from 28 Jan 2024. Pin: more than a dozen Commons files geotagged within 3-16 m of 50.9742,13.7497; the poplar is a lone landmark on an open plateau, so confirmed. Only 10 m away stands the Bismarck oak planted 1890, which now dominates the skyline visually (per osterzgebirge.org); do not confuse the two. Story material: the Gebirgsverein bought the tree in 1884 for 300 Mark to save it from being felled by a farmer who feared the crowds, and built a viewing frame in 1885 (rebuilt 1922, 1963, 1999). Used as a lookout in the 1866 war and as a geodetic sighting mark. Legend: when it blooms (really the fluffy ripe fruit clusters) a war is about to end; reported 1870, 1918, 1943 (Victor Klemperer noted it in his diary 23 May 1943). Cuttings taken in 1993 and a clone planted next to it on 8 April 2006. Panorama over the Elbe valley, Saxon Switzerland and the Ore Mountains. Photo: plenty on Commons (not judged by this pass). Age is documented from the planting year, not an estimate.",
+    "how_to_recognise": "You can recognise it by its cut-down crown: topped main stems and only a few leafy side branches. The fuller tree about 10 metres away is the Bismarck oak of 1890, and the young poplar nearby is its 2006 clone.",
+    "photo_candidate": {
+      "file": "File:Babisnauer Pappel (Dezember 2024).jpg",
+      "license": "CC0",
+      "attribution": "Romzig",
+      "note": "Viewed 2026-10-05: good daylight frame of the current state, but it shows the poplar and the Bismarck oak side by side with equal weight, so the tree is not unmistakably the subject. Not attached; the pin is confirmed."
+    },
+    "story": "Legend says that when this poplar blooms, a war is about to end. People reported it in 1870, in 1918 and in 1943, when Victor Klemperer noted it in his diary on 23 May. What appears is not really a bloom but the fluffy white seed of the ripe fruit, and it does not come every year.\n\nThe landowner Johann Gottlieb Becke planted the black poplar in 1808 to mark the edge of his property. By 1884 it drew so many visitors that a farmer wanted it felled to keep them off his land, and the local mountain club bought the tree for 300 marks to save it. A viewing frame went up beside it the following year and has been rebuilt in 1922, 1963 and 1999. In the war of 1866 it served as a lookout, and surveyors used it as a sighting mark.\n\nThe weather has been harder on it than people were. A thunderstorm on 20 July 1967 took a third of the crown, storms in 1996 took most of the rest, and the main stems were later topped. The 2025 survey gives 15 metres of height where 2004 recorded 26, a trunk 5.50 metres round, and only a few side branches still in leaf. A clone grown from its cuttings was planted a few metres away in 2006, in case.\n\nIt stands alone on an open plateau outside the city, and the platform looks over the Elbe valley to Saxon Switzerland and the Ore Mountains.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "photos": []
+  },
+  {
+    "id": "dre_016",
+    "name": "The Copper Beech of Villa Marienlust",
+    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+    "age_estimate": "about 175 years",
+    "age_min": 170,
+    "age_max": 185,
+    "girth_cm": 535,
+    "location": {
+      "address": "Naumannstrasse 3 (garden of Villa Marienlust, Aerztehaus Blasewitz), 01309 Dresden",
+      "latitude": 51.053762,
+      "longitude": 13.806219,
+      "neighbourhood": "Blasewitz"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Blutbuche_Naumannstra%C3%9Fe_3",
+      "https://www.aerztehaus-blasewitz.de/?seite=geschichte",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden"
+    ],
+    "access": "In the garden of Villa Marienlust, now the Ärztehaus Blasewitz medical centre. The crown can be seen from Naumannstrasse; we have not confirmed whether visitors may walk into the garden.",
+    "transport": "Blasewitz, about 5 km east of the Altstadt, near Schillerplatz. We have not checked the nearest tram stop and walking time.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Natural monument ND 34 of the city of Dresden, protected since the council decision of 3 Jan 1985 (wikipedia). Figures per de.wikipedia's tree article: height about 25 m, crown diameter about 24 m, girth 5.35 m measured at 0.3 m height (so not a breast-height girth; the register list gives height 25 m, girth 5.35 m). Girth at 0.3 m inflates the figure, say so; the beech grows 'like a giant shrub' (wikipedia). Planting: the owner's own history page (aerztehaus-blasewitz.de) says it was planted in 1849 as a 4-year-old tree on the 17,000 m2 property and still stands 'after more than 177 years'; wikipedia says about 1840/1849 (two sources, a documented planting date for this specimen, owner-published). Alive: owner statement above plus lifecheck RECENT (Commons photo 2023-06-19 of the ND, geotagged 24 m from the pin). Pin: city register coordinate 51.053762,13.806219; the crown is 24 m wide so it is one unmistakable tree; a plaque on the tree states its protection (wikipedia). Story: in the early 1970s a planned polyclinic building (the later Blasewitz Poliklinik) lay on the axis of the villa and would have required felling it; volunteer conservationists negotiated and the building site was moved about 25 m south-east, with an angled connecting wing and 30,000 Mark extra cost, judged 'a great but necessary sacrifice'. Photos: Commons category Naturdenkmal Blutbuche Naumannstrasse Blasewitz Dresden, 3 files geotagged 24-33 m away (2023-06-19); not judged. Not visited; the access caveat is the reason for the flag. Nearby (about 450 m SW): the two ND oaks of Hueblerstrasse (ND 35, group of 2, 23 m high, girths 4.65 m and 4.80 m per the city list), a possible cluster partner.",
+    "how_to_recognise": "You can recognise it by the dark purple leaves on a broad, low-branched crown about 24 metres across, with a protection plaque on the trunk. It stands in the garden of Villa Marienlust at Naumannstrasse 3.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Naturdenkmal_blutbuche_naumannstra%C3%9Fe_2023-06-19_1.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Z thomas, via Wikimedia Commons",
+      "status": "approved",
+      "width": 2448,
+      "height": 2717
+    },
+    "story": "In the early 1970s a new clinic in Blasewitz was moved 25 metres to spare this tree. The polyclinic had been drawn on the axis of Villa Marienlust, which meant the copper beech in its garden would have had to come down. Volunteer conservationists negotiated, the building went up further south-east with an angled wing to join it to the villa, and the change cost 30,000 marks, judged at the time a great but necessary sacrifice.\n\nThe beech was planted in 1849, already four years old, in the villa's 17,000 square metre grounds. The villa now houses a medical centre, the Ärztehaus Blasewitz, whose own history page counts more than 177 years. It has grown about 25 metres tall, with a crown about 24 metres across, so broad and low that it is said to grow like a giant shrub. The register gives its girth as 5.35 metres, but that was measured 30 centimetres above the ground, where any trunk is wider than at the usual chest height.\n\nThe city made it natural monument number 34 in January 1985, and a plaque on the tree says so. It stands in the medical centre's garden. The crown can be seen from Naumannstrasse, and we have not confirmed whether the garden is open to walk into; if you have been in, tell us. The surviving oak of Hüblerstrasse stands about 450 metres to the south-west.",
+    "photos": []
+  },
+  {
+    "id": "dre_017",
+    "name": "The Last Oak of Hueblerstrasse",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 375 years",
+    "age_min": 350,
+    "age_max": 400,
+    "girth_cm": 480,
+    "location": {
+      "address": "Hueblerstrasse 23 (street verge), 01309 Dresden",
+      "latitude": 51.050885,
+      "longitude": 13.802852,
+      "neighbourhood": "Blasewitz"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Stieleichen_H%C3%BCblerstra%C3%9Fe",
+      "https://dawo-dresden.de/2025/06/23/375-jahre-alte-eiche-gefaellt/",
+      "https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/06/pm_067.php"
+    ],
+    "access": "Free, on the public street verge of Hueblerstrasse, between two listed villas; no entry needed.",
+    "transport": "About 300 m west of Schillerplatz in Blasewitz, near the Blue Wonder bridge. We have not checked the nearest tram stop.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "THIS IS ONE TREE NOW, not the pair. Natural monument ND 35 listed 'Stieleichen Hueblerstrasse' (Baumgruppe, 2 oaks), pair protected since 22 Aug 1938 and by council ruling 3 Jan 1985. One of the two was felled on 22 June 2025 because of fungi, viruses and bacteria and lost stability (dawo-dresden.de, de.wikipedia; the city's press release pm_067 exists, but the page returned HTTP 503 so was not read; the headline '375 Jahre alte Eiche verliert Kampf gegen Pilz' came through search only). dawo-dresden.de: 'Nur wenige Meter von der gefaellten Eiche steht noch ihr gesunder Baumbruder, der ebenfalls um 1650 gepflanzt wurde' (healthy). The city plans a replacement of a more climate-adapted oak species in autumn 2025 or spring 2026 (so a young tree may now stand beside it; the writer should not confuse them). The writer must make clear that the page is about the surviving one, and that the felled one was its twin. Figures (de.wikipedia, before the felling, for the pair): height about 23 m, crown diameter about 22 m, girths 4.65 m and 4.80 m: I could not establish which girth belongs to the survivor, so girth_cm 480 is the larger of the two and is approximate; do not state a girth for the survivor with precision. Age: a resistograph measurement in 1995 suggests the trees stood by 1650 (wikipedia); the press and dawo say 'planted around 1650' and '375 years'. That is a derived, not a documented, figure, so 350-400 is the honest band. Alive: lifecheck RECENT, Commons photos of Hueblerstrasse 23/25 dated 2025-09-03 (after the felling) and a Commons photo of the felled stump 2025-07-13. Pin: the register coordinate 51.050885,13.802852 and 10+ Commons files geotagged within 12 m; two oaks stood a few metres apart on the verge, one remains, so the pin is on the spot to within metres; the visitor will see the remaining oak and the stump or new planting. Story material: until 1998 the oaks stood with half their trunks in the roadway; protection discs were built in 1998 and the soil to 60 cm depth replaced with a suction vehicle, which uncovered an old granite-paved road half a metre down beside the oaks; root bridges at neighbouring driveways, crown care. The oaks predate the villa district: around 1866 the surroundings were still unbuilt and the road was the old route Striesen-Blasewitz-Loschwitz; the crown form suggests they once stood free and served for acorn mast. The house at Hueblerstrasse 23 was destroyed in WW2 while the oaks survived, between listed villas 21a and 25. Photos: Commons category Naturdenkmal Stieleichen Hueblerstrasse Dresden (files from before 2025 show both oaks; a post-felling file 2025-09-03 shows the survivor); not judged by this pass. Cluster partner: the copper beech of Naumannstrasse 3 (dre_016) is about 450 m north-east.",
+    "how_to_recognise": "You can recognise it as the one standing oak on the Hüblerstrasse verge, between the villas at numbers 21a and 25. A few metres away is the stump of its felled twin, or the young oak planted to replace it.",
+    "story": "Until June 2025 there were two of them. These pedunculate oaks stood a few metres apart on the verge of Hüblerstrasse for something like 375 years, until fungi, viruses and bacteria left one unstable and it was felled on 22 June. This is the survivor, which the local press called its healthy brother. The stump of the twin stands beside it, and the city planned to plant a young oak of a more climate-tolerant kind in its place.\n\nThe age comes from a resistograph test in 1995 that suggested the pair already stood by 1650, so read it as somewhere between 350 and 400 years rather than a birth certificate. Either way they are older than the villa quarter around them. Around 1866 this was still open ground and the road was the old route from Striesen through Blasewitz to Loschwitz; the shape of the crowns suggests the oaks once stood free, perhaps kept for their acorns to fatten pigs. The house at number 23 was destroyed in the Second World War. The oaks came through.\n\nUntil 1998 they stood with half their trunks in the roadway. That year protective barriers went in, root bridges were laid at the neighbouring driveways, and the soil was replaced to 60 centimetres with a suction vehicle, which uncovered an old granite road half a metre down. Before the felling they were about 23 metres tall, with trunks of 4.65 and 4.80 metres; nobody recorded which girth belongs to the survivor.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "photos": []
+  },
+  {
+    "id": "dre_018",
+    "name": "The Five Brothers of Oberwartha",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "roughly 400 years",
+    "age_min": 350,
+    "age_max": 420,
+    "girth_cm": 620,
+    "location": {
+      "address": "Fuenf-Brueder-Weg at the entrance to the Taennichtgrund, 01156 Oberwartha, Dresden",
+      "latitude": 51.08084,
+      "longitude": 13.59881,
+      "neighbourhood": "Oberwartha (Cossebaude), west Dresden"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/F%C3%BCnf_Br%C3%BCder_(Oberwartha)",
+      "https://www.dresden-elbland.de/de/poi/naturdenkmal/naturdenkmal-fuenf-brueder/12741614/",
+      "https://www.stadtwikidd.de/wiki/F%C3%BCnf_Br%C3%BCder"
+    ],
+    "access": "Free. Beside a public lane and footpath, the Fünf-Brüder-Weg, at the edge of the village on the way into the Tännichtgrund valley. A signposted natural monument, open-air, no entry needed.",
+    "transport": "In the far west of Dresden, about 13 km from the Altstadt. The nearest rail stop is Niederwartha, on the line from Dresden Hbf towards Elsterwerda-Biehla; we have not timed the walk from there.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Fuenf-Brueder-Weg at the edge of the Taennichtgrund",
+      "radius_m": 40
+    },
+    "curation_status": "ai_generated",
+    "verify_notes": "Ensemble of five sweet chestnuts, one obvious place to stand, one natural monument (ND 67 per Stadtwiki Dresden; protected since 1958 per a search result, not read at source). de.wikipedia (a designated natural monument; the register itself was not read) gives: heights 12 to 25 m, crowns 10 to 20 m, girths at 1.30 m between 4.15 m and 6.20 m; planting 'in the first half of the 17th century' (de.wikipedia, Stadtwiki and the Dresden-Elbland tourism board all agree; one web page says 1624, which none of the others confirm, so do not use it). girth_cm 620 is the thickest of the five, not an average. Age is the sources' 'first half of the 17th century', i.e. roughly 375 to 425 years; band widened for safety. Alive: lifecheck RECENT (iNaturalist observation 2026-04-08 at the spot) and the tourism board still lists it. Pin: three sources give three points within about 25 m of each other (Wikidata 51.080838,13.598625; Dresden-Elbland 51.080877,13.598992; Commons geotag 51.080837,13.598671); the five trunks are spread along the path, so the pin is the group, location_precision approximate with a 40 m site. Tell-apart line for the writer: they stand along the Fuenf-Brueder-Weg where it leaves the village; the thickest is 6.20 m round. Legends (all three reported by de.wikipedia, none documented): a girl abducted by a dragon whose five brothers died looking for her and who planted the trees in their memory; six monks from Kloster Altzella planted six chestnuts before a crusade, only five grew and only five monks came home; five brothers who went out into the world and returned rich, each planting a tree. Stadtwiki: they replaced five lindens that were sacred to the Nisan people at the Gertrud spring (a spring shrine); this is a Stadtwiki claim only, treat as folklore. The lane and the stream (Fuenf-Brueder-Bach) are named after the group. Photos: Commons category Naturdenkmal Fuenf Brueder Oberwartha Dresden (several files, lead file listed on the Wikidata item 'Naturdenkmal Fuenf Brueder Oberwartha Dresden 04.JPG'); not judged. It is a day trip west of the centre, not a walk from the other Dresden trees; the Oberwartha lime (Naturdenkmal Dorflinde Oberwartha, Q68667250, 51.0777,13.6024, 'heritage monument') is about 450 m away (by coordinates; not researched) as a possible pair.",
+    "best_time": {
+      "months": [
+        10
+      ],
+      "kind": "fruit",
+      "label": "October, when the chestnuts drop along the lane"
+    },
+    "how_to_recognise": "You can recognise them as the five old chestnut trunks lining the Fünf-Brüder-Weg where it leaves the village for the Tännichtgrund, beside the natural monument sign. The thickest is 6.20 metres round.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Naturdenkmal_F%C3%BCnf_Br%C3%BCder_Oberwartha_Dresden_%282021%29_01.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Derbrauni, via Wikimedia Commons",
+      "status": "approved",
+      "width": 4000,
+      "height": 3000
+    },
+    "story": "Nobody agrees why there are five. One legend has a girl carried off by a dragon and her five brothers dying in the search for her, with the trees planted in their memory. Another has six monks from Altzella monastery planting six chestnuts before a crusade: five grew, and five monks came home. A third has five brothers who went out into the world, came back rich and planted a tree each. Dresden's city wiki adds that they replaced five limes at a spring once sacred to the Slavic Nisani, which is folklore too.\n\nWhat the sources do agree on is the date, the first half of the 17th century, which makes these sweet chestnuts roughly 400 years old. They stand along a lane at the edge of Oberwartha, on the far western rim of Dresden, where it runs down into the Tännichtgrund valley. The lane is the Fünf-Brüder-Weg and the stream below is the Fünf-Brüder-Bach, both named after the trees, which tells you how long they have been the landmark here.\n\nThey run from 12 to 25 metres tall, with crowns 10 to 20 metres across, and their trunks measure between 4.15 and 6.20 metres round at chest height. The group is a protected natural monument, signposted beside the lane. Come in October, when the chestnuts drop.",
+    "photos": []
   }
 ]

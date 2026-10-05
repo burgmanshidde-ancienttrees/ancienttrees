@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Dresden +5: Pillnitz camellia, Babisnau poplar, Marienlust beech, Hueblerstrasse oak, Five Brothers
+
+Earlier logs called Dresden a wall; the Wikidata candidates plus Commons and city Naturdenkmal pages still gave five verified trees (dre_014 to 018), taking Dresden from 13 to 18. Three carry a Commons photograph looked at before attaching; the poplar and the oak have confirmed pins and no photo (the frames show the neighbour or the felled twin). The Five Brothers pin is approximate but findable via a 40 m site and recognition line. Beech access (medical-centre garden) is unconfirmed and the page says so. German overlay, intro, meta and FAQ updated to 18; preflight 0 problems. Frankfurt claim released (no supply).
+
 ## 2026-10-05 Held trees freed by a photo look: Nuremberg +2, San Francisco +1
 
 Second pass of the same window: a write pass hunted Commons photographs for 11 held trees and found usable ones for three, all looked at before attaching. Nuremberg goes to 16 (nbg_014, nbg_015), San Francisco to 7 (sfo_007, the Pohutukawa on Stanyan Street, which stands in a private front garden and is seen from the sidewalk; the page says so and the pin should mark the viewing place, worth a check). Eight stay held (ptl_027, sfo_008, hou_009 to 011, fuk_017, tkc_004, 005): no open photo. Two cited iNaturalist alive observations turned out not to be the tree and were removed. hou_010's Cemetery Oak may be 300 m from our pin. Preflight 0 problems.
