@@ -67,7 +67,7 @@ BUSINESS_RULE_PHRASES = [
     # carry a link or a count, or explained our process to the reader.
     "remarkable trees in total", "each one researched and verified",
     "suggestions feed curation", "the list itself stays editorial",
-    "a themed collection spanning", "this page maps",
+    "a themed collection spanning", "this page maps every",
     "we are mapping every remarkable tree", "download all 1 tree",
     "data/registers/",
 ]
