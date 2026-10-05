@@ -42,14 +42,7 @@
     "ND-05047"
    ],
    "name": "Ten oaks, ND Nr. 12-21, Grünanlage Platnersberg, Erlenstegen",
-   "reason": "Not individually researched this pass: about 4.2-4.3 km from centre, outside the roughly 2 km walk radius this pass focused on (Kontumazgarten/Hallerwiese/Stadtpark). Officially in a public green space (Grünanlage Platnersberg per the city ordinance, Erlenstegen district), not private, so access looks fine on paper, but which individual oak is which within the ten is unresolved. A local survey (nordbayern.de) names one famous specimen in this area, the 'Bäreneiche' (Bear Oak) near the Bärenbrunnen fountain, roughly 350 years old, 28m tall, 20m crown, 6.8m girth: that could anchor a second Nuremberg walk/cluster in Erlenstegen if a future pass wants to pursue it, but none of these ten ND numbers has been matched to the Bäreneiche specifically yet."
-  },
-  {
-   "register_id": "ND-05061",
-   "name": "ND Nr. 35 Eiche in der Jakob-Wolff-Strasse",
-   "reason": "No photo or exact pin in reach: register 49.42985,11.10555 vs Wikipedia 49.42983,11.10578 (17 m apart); Commons has a 2017 Quercus robur photo, but the tree stands on a lawn in front of a residential block (Jakob-Wolff-Strasse 19/21/23), access unclear.",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "reason": "Not individually researched this pass: about 4.2-4.3 km from centre, outside the roughly 2 km walk radius this pass focused on (Kontumazgarten/Hallerwiese/Stadtpark). Officially in a public green space (Grünanlage Platnersberg per the city ordinance, Erlenstegen district), not private, so access looks fine on paper, but which individual oak is which within the ten is unresolved. A local survey (nordbayern.de) names one famous specimen in this area, the 'Bäreneiche' (Bear Oak) near the Bärenbrunnen fountain, roughly 350 years old, 28m tall, 20m crown, 6.8m girth: that could anchor a second Nuremberg walk/cluster in Erlenstegen if a future pass wants to pursue it, but none of these ten ND numbers has been matched to the Bäreneiche specifically yet. UPDATE 2026-10-05: the Bäreneiche is ND Nr. 16 (register point 49.47137,11.13005 matches OSM node 'Bäreneiche' 49.4713741,11.1300582) and was delivered as nbg_017. The other nine oaks stay unresolved: the avenue has two more known girths (5.60 m and 5.25 m, 2014, monumentale-eichen.de) but they cannot be tied to ND numbers."
   },
   {
    "register_id": "ND-05058",
@@ -94,6 +87,16 @@
     "https://commons.wikimedia.org/wiki/File:Eiche_im_Volkspark_Dutzendteich_n%C3%B6rdlich_des_Nummernweihers,_s%C3%BCdlich_der_Jakob-Wolff-Stra%C3%9Fe_20170825_130211.jpg"
    ],
    "access": "Free. Public city park, open all hours; the tree stands between the lake and Jakob-Wolff-Strasse."
+  },
+  {
+   "name": "ND Nr. 44 six-stemmed willow in the fields, Kleinreuth hinter der Veste",
+   "register_id": "ND-Nr44",
+   "reason": "Not researched: de.wikipedia list carries a 2013 Commons photo (Naturdenkmal Weide Kleinreuth h.d. Veste 2013 DSC 2875.jpg) and a point at 49.47737,11.07985, about 3.5 km west of the centre. Photo licence, species (Salix) and access across the field not checked."
+  },
+  {
+   "name": "ND Nr. 46-50 and 47-49 oaks along Ziegelsteinstrasse 134-150, Fritz-Munkert-Platz",
+   "register_id": "ND-46..50",
+   "reason": "Not researched: a row of street oaks 49.48362-49.48414,11.10526-11.10532 (about 50 m span), no photograph on de.wikipedia, no girth or age; ordinary street oaks until a source says otherwise. No photo or exact pin in reach."
   }
  ],
  "blocked": [
