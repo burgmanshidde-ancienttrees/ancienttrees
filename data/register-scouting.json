@@ -9,6 +9,12 @@
  },
  "places": [
   {
+   "place": "Salt Lake City",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-10-05 on scout_next.py --target (#131). Utah Community Forest Council (utahurbanforest.org) holds a Big Tree Directory and a heritage tree map: about 8-10 Salt Lake City entries, listed by city and species with points only, no coordinates or addresses, no licence or reuse statement, no download or API. SLC Urban Forestry (slc.gov) has no protected-tree list. Not an importable register. Use only as a finding aid (e.g. the national champion White Fringetree at 2502 S 700 E, Lone Cedar Tree); each tree would need two independent sources and its own pin. Next angle if retried: the UCFC heritage map's per-tree pages for addresses."
+  },
+  {
    "place": "Jersey City",
    "country": "United States",
    "status": "empty",
