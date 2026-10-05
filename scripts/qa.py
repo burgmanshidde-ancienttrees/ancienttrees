@@ -1069,6 +1069,29 @@ def check_one_tree_places_have_no_question_page():
     return out
 
 
+def check_an_organisation_beside_a_name_was_asked_for():
+    """An ambassador's organisation is printed only on an explicit yes.
+
+    Hidde, 2026-10-05: "we can only add their company if they explicitly say
+    so". Pražské stromy went onto the Prague page beside Aleš Rudl because the
+    ask had offered to name it, which is not the same as him asking for it.
+    So an `affiliation` in data/ambassadors.json needs `affiliation_consent`
+    beside it, saying who said yes and when. Removing this check needs Hidde.
+    """
+    try:
+        doc = json.load(open(os.path.join(ROOT, "data", "ambassadors.json"), encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    bad = [a.get("display_name") or a.get("place_slug") or "?"
+           for a in doc.get("ambassadors", [])
+           if a.get("affiliation") and not (a.get("affiliation_consent") or "").strip()]
+    if bad:
+        return ["data/ambassadors.json prints an organisation beside %s without "
+                "affiliation_consent: an organisation is named only when the person "
+                "asked for it or Hidde vouched for it (2026-10-05)." % ", ".join(bad)]
+    return []
+
+
 def check_no_owner_name():
     """The thirteenth ratchet check, from 2026-08-24.
 
@@ -2546,6 +2569,7 @@ def main():
         check_icons_are_drawn,
         check_css_braces_balance,
         check_hidden_means_hidden,
+        check_an_organisation_beside_a_name_was_asked_for,
     ]
     if args.source_only:
         # The photo checks are left out on purpose: they read every image in
@@ -2586,6 +2610,7 @@ def main():
     failures += check_one_tree_card()
     failures += check_one_owner_per_event()
     failures += check_no_owner_name()
+    failures += check_an_organisation_beside_a_name_was_asked_for()
     failures += check_no_personal_address()
     failures += check_walks_go_to_the_app()
     failures += check_one_tree_places_have_no_question_page()
