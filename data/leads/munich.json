@@ -582,6 +582,30 @@
    "species": "",
    "status": "lead",
    "why": "Overpass (overpass-api.de answered on a GET with data=; kumi timed out) returned 112 tree nodes. Joined to bayern-naturdenkmale.json within 40 m: every unmined register row with a node is already live, blocked or a lead. OSM node 3669658626 (48.25983,11.43816) is NOT Dachau ND 12: it matches register ND-00393 (3 Rotbuchen, Fl.Nr. 834/4, a garden group) and sits 80+ m from ND 12 (48.26045,11.43887, de.wikipedia single Rotbuche NW of the public car park), so it must not be used to confirm ND 12. Commons geosearch (120 m) around the Dachau Eibe ND 11, Sumpfzypressen ND 13, Blutbuche 720, Esche 625/3 and Prittlbach Linde returned no tree photographs."
+  },
+  {
+   "name": "Alte Linden Mariabrunn (Ampermoching/Röhrmoos), Landkreis Dachau Naturdenkmal",
+   "species": "Lime (Tilia sp.)",
+   "status": "lead",
+   "why": "2026-10-05 verify pass: Commons category 'Bei den drei Linden (Ampermoching)' holds eight CC BY-SA 4.0 photographs of the natural monument 'Alte Linden Mariabrunn' taken 2026-02-28 (alive, recent). It is a group of lindens near the Mariabrunn pilgrimage place, about 25 km north-west of Munich and well beyond 30 minutes by public transport, so not delivered. Species, count and girth not established; needs the Landkreis Dachau ND list row."
+  },
+  {
+   "name": "Kapellenlinden St. Aegidius, Grafing (ND 81, two limes)",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "status": "lead",
+   "why": "2026-10-05 verify pass: de.wikipedia list gives 48.048974, 11.970504, girths 7.90 and 5.45 m (2015), about 260 years each, photos on Commons. About 33 km east of Munich, over the 30-minute line, and two trees at a chapel (a pair, not one trunk). Not delivered."
+  },
+  {
+   "name": "Hohle Linde in Obermarbach (Petershausen)",
+   "species": "Lime (Tilia sp.)",
+   "status": "lead",
+   "why": "2026-10-05 verify pass: de.wikipedia list gives 10.2 m girth and about 400 years at 48.427312, 11.482496. About 33 km north of Munich, beyond the day-trip line. Not checked further."
+  },
+  {
+   "name": "Edignalinde, Puch (Fürstenfeldbruck): delivered as muc_063; Sauerlach lime as muc_064; Ingelsberg ash as muc_065",
+   "species": "",
+   "status": "lead",
+   "why": "Method note 2026-10-05: the Wikipedia 'Liste markanter und alter Baumexemplare in Bayern' (wikitext rows, filtered to Munich-area places) plus Commons geosearch of CATEGORIES near Munich found these three where the register join found none, because they carry Commons photographs. Remaining rows from that list within 35 km of Munich are the three leads above."
   }
  ],
  "blocked": [
