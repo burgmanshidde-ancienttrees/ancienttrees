@@ -3120,3 +3120,7 @@ Reference: AllTrails' and Airbnb's phone result lists, and the ordered-list conv
 ## Asking to become an ambassador: confirm, then a receipt (2026-10-05)
 
 Reference: Google Maps "Join Local Guides" opens a sheet that says what the role is and asks for a yes, then shows that you are in; iOS apps confirm a request with a standard alert and answer it with a second one. Nobody swaps a grey line in place, which is what ours did ("Thanks, we'll be in touch." under an underlined title, Hidde 2026-10-05: "ik zou eerder een pop up verwachten"). Web: tapping the open seat opens a dialog (what the role is, Send request / Not now), and the same dialog turns into "Request sent". App: the same two steps as two alerts. Nothing is written until Send request.
+
+## No numbers on the tree list (2026-10-05)
+
+Hidde: "zijn die nummers echt nodig? mss subtieler?" AllTrails, Google Maps and Airbnb number no result list, the pins on our map carry no numbers, and the app's card never had one, so the number pointed at nothing and took the title's width. Removed; the hanging indent of the same morning goes with it, because there is no marker left to hang from. The selected card on the desktop split wears a moss border rather than a bar inside its rounded corner.

@@ -154,7 +154,7 @@ const SEEN_MARK = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 const metaHtml = metaParts.map(esc).join(" &middot; ");
 ---
 <article
-  class:list={["tree-card", "tree-card-link", { "tree-card-nonum": index === undefined, "tree-card-nophoto": !(photo && photo.url) }]}
+  class:list={["tree-card", "tree-card-link", { "tree-card-nonum": true, "tree-card-nophoto": !(photo && photo.url) }]}
   id={index === undefined ? undefined : `tree-${index}`}
   data-tree-id={tree.id}
 >
@@ -180,7 +180,10 @@ const metaHtml = metaParts.map(esc).join(" &middot; ");
                 treeUrl={href}
                 photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
                 meta={metaParts.join(" \u00b7 ") || undefined} />}
-    {index !== undefined && <span class="tree-num">{index}</span>}
+    {/* NO NUMBER (Hidde, 2026-10-05: "zijn die nummers echt nodig?"). The pins
+        carry none, so the number pointed at nothing and cost the title its
+        width; AllTrails, Google Maps and Airbnb number no result list, and
+        the app's card never had one. The order of the list still holds. */}
     {headingLevel === 2 ? (
       <h2 class="tree-name">
         {linkName ? <a href={href}>{name}</a> : name}

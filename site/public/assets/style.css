@@ -2990,3 +2990,9 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .tree-card .tree-card-top { align-items: flex-start; }
 .tree-card .tree-num { margin-top: -1px; }
 .tree-card .tree-card-top .heart-card { align-self: flex-start; margin-top: -6px; }
+/* The selected card on the desktop split (its pin was tapped or hovered): a
+   moss border round the whole card, instead of a 3px bar drawn inside the
+   rounded corner, which read as a rendering fault (2026-10-05). */
+@media (hover: hover) and (min-width: 801px) {
+  .tree-card.active { box-shadow: none; border-color: var(--moss); background: #fff; }
+}
