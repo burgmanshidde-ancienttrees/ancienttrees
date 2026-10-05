@@ -144,6 +144,16 @@ def languages_proven():
     return {l for l, res in by_lang.items() if sum(res) >= 2}
 
 
+def _bot_demand():
+    try:
+        return set(json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json"))).get("dropped_as_bot_demand", []))
+    except (OSError, ValueError):
+        return set()
+
+
+BOT_DEMAND = _bot_demand()
+
+
 def show_next():
     """The highest-impression untranslated city per language area.
 
@@ -168,6 +178,16 @@ def show_next():
             continue
         lang = CITY_AREA.get(city.get("city", "")) or AREA.get(city.get("country", ""))
         if not lang or (lang, slug) in have:
+            continue
+        # A translation is indexed only where its English twin is (photo rule,
+        # thin_pages.py), so a place under four trees or with no photograph
+        # yields pages Google never sees, and bot-demand places (jauze,
+        # wilparting: "kasukabe new city hall construction bid") rank on
+        # impressions nobody typed. 2026-10-06.
+        trees = city.get("trees", [])
+        if slug in BOT_DEMAND or len(trees) < 4 or not any(
+                (t.get("photo") or {}).get("url") and (t.get("photo") or {}).get("status") != "held"
+                for t in trees):
             continue
         clicks, impressions = imps.get(slug, (0, 0))
         rows.append((impressions, clicks, lang, slug, len(city.get("trees", []))))
