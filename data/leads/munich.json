@@ -449,8 +449,9 @@
    "lat": 48.26045,
    "lng": 11.43887,
    "register_ref": "Bayern LfU 'Rotbuche' 48.26041,11.43902; de.wikipedia Dachau ND 12",
-   "status": "lead",
-   "why": "Roughly 190 years per the county list, stands immediately NW of a public car park at Martin-Huber-/Dr.-Engert-Strasse. Register and Wikipedia pins agree within 12 m. No photograph on Commons and lifecheck.py returned NONE (2026-10-03), so no proof of life and neither photo nor confirmed pin to ship on. Needs a photograph."
+   "status": "held",
+   "why": "Roughly 190 years per the county list, stands immediately NW of a public car park at Martin-Huber-/Dr.-Engert-Strasse. Register and Wikipedia pins agree within 12 m. No photograph on Commons and lifecheck.py returned NONE (2026-10-03), so no proof of life and neither photo nor confirmed pin to ship on. Needs a photograph.",
+   "write_note": "Write pass 2026-10-05: only fact in any source is 'about 190 years' beside a car park (Landkreis list); not old or big for a beech, no story, no photo: a lead until a photograph or a measurement gives it a reason."
   },
   {
    "name": "Poplar of the Amper bridge, Rotkreuzplatz, Dachau (ND 15)",
@@ -458,8 +459,9 @@
    "lat": 48.25671,
    "lng": 11.43549,
    "register_ref": "Bayern LfU 'Pappel' 48.25664,11.43548; de.wikipedia Dachau ND 15",
-   "status": "lead",
-   "why": "About 100 years old per the county list, on the embankment at the Amper bridge. Public ground. No photograph on Commons, lifecheck NONE, poplar is short-lived. Weak case; needs a photograph."
+   "status": "held",
+   "why": "About 100 years old per the county list, on the embankment at the Amper bridge. Public ground. No photograph on Commons, lifecheck NONE, poplar is short-lived. Weak case; needs a photograph.",
+   "write_note": "Write pass 2026-10-05: only fact is 'about 100 years' (Landkreis list); nothing that sets it apart, no photo."
   },
   {
    "name": "Silver Poplars by the stadium, Dachau (ND 19 and 20)",
@@ -477,8 +479,9 @@
    "lng": 11.61092,
    "register_ref": "Bavarian Naturdenkmal register ND-07044; Munich Naturdenkmalverordnung 2021, Schwabing-Freimann 12",
    "owner": "Freistaat Bayern Schwabing 1083",
-   "status": "lead",
-   "why": "no photo or exact pin in reach (2026-10-04 verify pass): public park, de.wikipedia says the lime is already on 1807 plans, but the register point (48.17188, 11.61092) and de.wikipedia's own coordinate (48.17295, 11.61225) differ by about 140 m, no Commons photograph within 150 m of either, so neither a confirmed pin nor a photo. lifecheck at register point RECENT 2026-05-08 but that only shows something photographed near the spot. Needs a photograph of the tree or an OSM node."
+   "status": "duplicate",
+   "why": "no photo or exact pin in reach (2026-10-04 verify pass): public park, de.wikipedia says the lime is already on 1807 plans, but the register point (48.17188, 11.61092) and de.wikipedia's own coordinate (48.17295, 11.61225) differ by about 140 m, no Commons photograph within 150 m of either, so neither a confirmed pin nor a photo. lifecheck at register point RECENT 2026-05-08 but that only shows something photographed near the spot. Needs a photograph of the tree or an OSM node.",
+   "write_note": "Write pass 2026-10-05: duplicate of muc_020 The Lime of the Englischer Garten, which sits on de.wikipedia's coordinate for this same ND (the register point is 140 m off)."
   },
   {
    "name": "Oak at Unterpfaffenhofen, Germering (Fl.Nr. 2021)",
@@ -487,9 +490,10 @@
    "lng": 11.33162,
    "register_ref": "bayern-naturdenkmale.json",
    "owner": "unknown",
-   "status": "lead",
+   "status": "held",
    "why": "no photo or exact pin in reach (2026-10-04 verify pass): rural register point, no Commons photograph within 150 m that shows a tree, access and exact trunk not settled (OSM access query impossible: Overpass 406 from this environment).",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "write_note": "Write pass 2026-10-05: register point and a genus only: no fact to write from and access not stated honestly."
   },
   {
    "name": "Oak at Unterpfaffenhofen, Germering (Fl.Nr. 748)",
@@ -498,9 +502,10 @@
    "lng": 11.3296,
    "register_ref": "bayern-naturdenkmale.json",
    "owner": "unknown",
-   "status": "lead",
+   "status": "held",
    "why": "no photo or exact pin in reach (2026-10-04 verify pass): rural register point, no Commons photograph within 150 m that shows a tree, access and exact trunk not settled (OSM access query impossible: Overpass 406 from this environment).",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "write_note": "Write pass 2026-10-05: register point and a genus only: no fact to write from and access not stated honestly."
   },
   {
    "name": "Oak at Unterpfaffenhofen, Germering (Fl.Nr. 2973/2974)",
@@ -509,9 +514,10 @@
    "lng": 11.3263,
    "register_ref": "bayern-naturdenkmale.json",
    "owner": "unknown",
-   "status": "lead",
+   "status": "held",
    "why": "no photo or exact pin in reach (2026-10-04 verify pass): rural register point, no Commons photograph within 150 m that shows a tree, access and exact trunk not settled (OSM access query impossible: Overpass 406 from this environment).",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "write_note": "Write pass 2026-10-05: register point and a genus only: no fact to write from and access not stated honestly."
   },
   {
    "name": "Linde at Argelsried, Gilching (Fl.Nr. 353/4)",
@@ -520,9 +526,10 @@
    "lng": 11.32514,
    "register_ref": "bayern-naturdenkmale.json",
    "owner": "unknown",
-   "status": "lead",
+   "status": "held",
    "why": "no photo or exact pin in reach (2026-10-04 verify pass): rural register point, no Commons photograph within 150 m that shows a tree, access and exact trunk not settled (OSM access query impossible: Overpass 406 from this environment).",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "write_note": "Write pass 2026-10-05: register point and a genus only: no fact to write from and access not stated honestly."
   },
   {
    "name": "Oak at Gauting (Fl.Nr. 1232/8)",
@@ -531,9 +538,10 @@
    "lng": 11.36187,
    "register_ref": "bayern-naturdenkmale.json",
    "owner": "unknown",
-   "status": "lead",
+   "status": "held",
    "why": "no photo or exact pin in reach (2026-10-04 verify pass): rural register point, no Commons photograph within 150 m that shows a tree, access and exact trunk not settled (OSM access query impossible: Overpass 406 from this environment).",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "write_note": "Write pass 2026-10-05: register point and a genus only: no fact to write from and access not stated honestly."
   },
   {
    "name": "Oak at Strasslach (Fl.Nr. 25)",
@@ -542,9 +550,10 @@
    "lng": 11.51251,
    "register_ref": "bayern-naturdenkmale.json",
    "owner": "unknown",
-   "status": "lead",
+   "status": "held",
    "why": "no photo or exact pin in reach (2026-10-04 verify pass): rural register point, no Commons photograph within 150 m that shows a tree, access and exact trunk not settled (OSM access query impossible: Overpass 406 from this environment).",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "write_note": "Write pass 2026-10-05: register point and a genus only: no fact to write from and access not stated honestly."
   },
   {
    "name": "Oak at Alling (Fl.Nr. 2802/2806)",
@@ -553,9 +562,10 @@
    "lng": 11.31202,
    "register_ref": "bayern-naturdenkmale.json",
    "owner": "unknown",
-   "status": "lead",
+   "status": "held",
    "why": "no photo or exact pin in reach (2026-10-04 verify pass): rural register point, no Commons photograph within 150 m that shows a tree, access and exact trunk not settled (OSM access query impossible: Overpass 406 from this environment).",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "write_note": "Write pass 2026-10-05: register point and a genus only: no fact to write from and access not stated honestly."
   },
   {
    "name": "Winter Lime at Oberhaching (Fl.Nr. 636)",
@@ -564,9 +574,10 @@
    "lng": 11.55472,
    "register_ref": "bayern-naturdenkmale.json",
    "owner": "unknown",
-   "status": "lead",
+   "status": "held",
    "why": "no photo or exact pin in reach (2026-10-04 verify pass): rural register point, no Commons photograph within 150 m that shows a tree, access and exact trunk not settled (OSM access query impossible: Overpass 406 from this environment).",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "write_note": "Write pass 2026-10-05: register point and a genus only: no fact to write from and access not stated honestly."
   },
   {
    "name": "Oak near Ampermoching, Hebertshausen (ND-00418, Fl.Nr. 85/4)",
@@ -574,8 +585,9 @@
    "lat": 48.30574,
    "lng": 11.48668,
    "register_ref": "Bayern LfU ND-00418; OSM node 3711592633 natural_monument 4 m from register point",
-   "status": "lead",
-   "why": "No photo or exact pin to ship on (2026-10-04 verify pass): OSM node gives a tree-level pin agreeing with the register, but the site is 18.5 km out in farmland, beyond the 30-minute public-transport boundary of Munich, no Commons photograph within 120 m, lifecheck not run. Needs a photograph or a place that reaches four."
+   "status": "held",
+   "why": "No photo or exact pin to ship on (2026-10-04 verify pass): OSM node gives a tree-level pin agreeing with the register, but the site is 18.5 km out in farmland, beyond the 30-minute public-transport boundary of Munich, no Commons photograph within 120 m, lifecheck not run. Needs a photograph or a place that reaches four.",
+   "write_note": "Write pass 2026-10-05: outside the Munich day-trip boundary and no place of its own reaches four."
   },
   {
    "name": "OSM natural_monument join, Munich 20 km (2026-10-04 verify pass, method note)",

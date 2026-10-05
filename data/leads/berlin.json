@@ -219,7 +219,8 @@
         "neighbourhood": "Tiergarten, Mitte"
       },
       "reason": "Skipped this pass only because it stands about 24 m from live ber_010 (the Giant Sequoia), inside the 80 m exclusion. Has a CC0 geotagged 2024-05-09 Commons photo (geotag 52.51651,13.34657) and a tree-level register point, so it can be added later as its own entry if a writer wants the pair. monumentaltrees.com claim of planting 1954 remains an unverified lead (403).",
-      "status": "lead"
+      "status": "held",
+      "write_note": "Write pass 2026-10-05: writable (register 1-40/B, designated 1993-03-02, reasons beauty, rarity, regional heritage; CC0 photos by Leonhard Lenz 2024-05-09, file '... 2024-05-09 06.jpg' looked at and good), but Berlin is at its tree cap and passcheck refuses a write claim. Ships if the cap moves or a reader asks."
     },
     {
       "name": "Amerikanischer Zuergelbaum (American Hackberry) at Canisius-Kolleg",
@@ -231,7 +232,8 @@
         "neighbourhood": "Tiergarten, Mitte"
       },
       "reason": "Has a Commons photo but stands on school grounds (Canisius-Kolleg is a Jesuit school); hard-rule-10 school exception applies: no evidence the grounds are open. Not publishable without that evidence.",
-      "status": "lead"
+      "status": "held",
+      "write_note": "Write pass 2026-10-05: school grounds with no evidence they are open (hard rule 10 school exception)."
     },
     {
       "id": "ber_041",
