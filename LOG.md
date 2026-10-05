@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Munich +2 (Obermarbach, Grafing limes), Melbourne reader photo, Jersey City scouted
+
+Visits last 7 days: 1464. Rung 1: two reader photographs from Edinburgh Gardens, Melbourne. The Southern Mahogany (mel_013) went live as lead photo; the "holm oak" (mel_001) was rejected because the frame is a bare deciduous forked tree, not an evergreen holm oak (the dark evergreens at its sides are the oaks). Preflight wanted a written verdict for the published one, and judgement.py --verdict needs a stub that the queue no longer holds after publishing, so I wrote both stubs by script; worth reordering in sightings_publish. Then the shelf: Munich's city register is exhausted (blocked, published or groups), so verify delivered two outlying trees with geotagged CC photos, 33 km out, written and merged (Munich 59 to 61, German overlay too). muc_058 (approximate pin, no photo) and lpz_019 (manor access unknown) stay held. Portland claim released, only 1 of 17 leads has a coordinate. Scouted Jersey City: empty (NJDEP Big Trees has 3 Hoboken points, licence not open); verdict recorded. No tool refusals this window.
+
 ## 2026-10-05 session: a reader's GPS fix now moves the pin, by itself
 
 - **Reykjavik's pins, from its one contributor.** The reader who sent El Gran Capitan (Seville) photographed three Reykjavik trees on 2026-09-04 and added them from his camera roll on 10-03. His fixes stood 11 m (whitebeam), 20 m (larch) and 92 m (City Hall maple) from our approximate pins. All three are confirmed now; the maple's photograph is still held for its light, so its move rests on Wikidata's 1994 Tree of the Year coordinate (Q62412941) agreeing within 14 m, and on Hidde's word.

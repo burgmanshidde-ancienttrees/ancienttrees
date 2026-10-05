@@ -9,6 +9,12 @@
  },
  "places": [
   {
+   "place": "Jersey City",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-10-05 (#125). NJDEP Big and Heritage Trees layer (public ArcGIS FeatureServer, https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/NJDEP_Big_and_Heritage_Trees_in_New_Jersey/FeatureServer/19, 716 points, tree-level lon/lat, girth, height, status, county, municipality, PERMISSIONTOLIST all YES) holds ZERO trees in Jersey City and only 3 in all of Hudson County, all Hoboken (American elm champion, elm signature, eastern cottonwood signature, about 40.745 N -74.025 W). Licence is NOT open: NJDEP Data Distribution Agreement requires an NJDEP credit/disclaimer and says it makes no warranty the data is free of copyright claims, no CC/PDDL statement, so treat as finding aid only. Jersey City's own open data (data.jerseycitynj.gov 2021 Tree Inventory) is a full street inventory, never imported. Earlier passes already recorded Jersey City as a duplicate of New York. Do not re-scout; the Hoboken three could be hand-verified as New York-area leads at most."
+  },
+  {
    "place": "Washington DC",
    "country": "United States",
    "status": "stalled",
