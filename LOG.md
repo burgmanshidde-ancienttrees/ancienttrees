@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Nuremberg +1: the Bear Oak (Bäreneiche)
+
+Visits last 7 days: 1469. Shelf under floor, so a verify pass on Nuremberg (Spokane released first: 1 unmined row). It cleared two of 109 register rows; one had a confirmed pin (OSM node within 2 m of the register point), written and merged (Nuremberg 16 to 17, German overlay too; commit 2b35fc94). nbg_018 (ND 35 oak) stays held: approximate pin, unviewed photo, a lawn before flats with unconfirmed public access. Two new leads filed. Nuremberg's register pool is now essentially mined. No tool refusals.
+
 ## 2026-10-05 Later attempt: Frankfurt, Leipzig, Edinburgh checked, nothing shipped
 
 READ is 0 and the shelf is empty. Frankfurt has 0 register rows in 20 km and its leads are all held (previous logs call it a wall); Leipzig was worked an hour ago and only lpz_019 (manor access) stands held; Edinburgh has supply 1. All claims released, none left standing. Not spending a window on from-zero web research that three earlier passes proved empty. Next scout target: Salt Lake City (#131).
