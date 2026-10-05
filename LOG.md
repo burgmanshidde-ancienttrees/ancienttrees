@@ -21,6 +21,8 @@
 
 **Then opened, on Hidde's word ("the night runs should keep on adding trees", "be considerate about what to add to google", "why not make the product better?"):** adding is no longer indexing. A tree without photo or exact pin may go live again and stays out of Google via thin_pages.py until it gains one (`ADD_NEEDS_FINDABLE = False`, scripts/findable.py); cities outside the 09-27 proven roster may take new trees (`PROVEN_ONLY = False`, scripts/passcheck.py, now a note). Effect on the shelf at once: READY 0 to 16, 29 verified trees awaiting a writer, leads needing only a source 49 to 232, 79 claimable staged cities. Still standing for Google: no new place below four trees, the sitemap ratio check, the full-city cap.
 
+**And the order follows the paying visitors (Hidde: "work on prioritised stuff - countries where potential paying customers come from"):** Austria joins the US, the UK and Germany in `SUPPLY_FOCUS` (Cloudflare 28 days: US, DE, GB, AT). The staged list, the refill batches, `city_queue.py --next` and now `leads.py --ready` all put those countries first; Vienna leads with 379 candidates on hand, then Graz and Salzburg. Other focus countries are not refused, they come after.
+
 ## 2026-10-05 session: the app inbox emptied
 
 - **Reader photographs:** 66 on file, all already handled; nothing waiting for a look.

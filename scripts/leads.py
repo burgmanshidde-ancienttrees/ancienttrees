@@ -765,6 +765,19 @@ def main():
 
     b = buckets(a.city)
     ready, needs, blocked = b["ready"], b["needs"], b["blocked"]
+    # The countries paying visitors come from go first (2026-10-05), so a write
+    # pass taking the top 15 to 20 takes theirs.
+    try:
+        from passcheck import SUPPLY_FOCUS
+        def _country(slug):
+            try:
+                return json.load(open(os.path.join(ROOT, "data", "cities", slug + ".json"),
+                                      encoding="utf-8")).get("country")
+            except (OSError, ValueError):
+                return None
+        ready.sort(key=lambda r: _country(r[0]) not in SUPPLY_FOCUS)
+    except Exception:
+        pass
     done, folded, matched = b["done"], b["folded"], b["matched"]
     total = len(ready) + len(needs) + len(blocked) + len(done) + len(folded)
     print(f"\n{total} leads. Fail-open: anything not matching data/block-reasons.json ships.\n")

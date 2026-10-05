@@ -717,15 +717,21 @@ def main():
             print("  2026-10-02 (~150k tokens each) shipped nothing. Pick a row with supply.\n")
         vis = visitors_first(doc)
         if vis:
-            print("WHERE THE VISITORS ARE (Hidde, 2026-10-03): the US, the UK and Germany.")
+            print("WHERE THE VISITORS ARE (Hidde, 2026-10-03): the US, the UK, Germany and Austria.")
             print("Cities there below target that HOLD SUPPLY, so a pass can start tonight.")
             print("The Netherlands is over-represented (most trees of any country); it is")
             print("not refused, it is not promoted.\n")
             print("  city                  country          trees  target  impr10d  supply")
+            try:
+                from passcheck import recent_walls
+                walls = recent_walls()
+            except Exception:
+                walls = {}
             for c in vis[:15]:
-                print("  %-21s %-16s %5d %7d %8d %7d" % (
+                print("  %-21s %-16s %5d %7d %8d %7d%s" % (
                     c["city"][:21], c.get("country", "")[:16], c.get("trees", 0),
-                    max(c.get("target") or 10, 10), c.get("impressions_10d") or 0, supply_of(c)))
+                    max(c.get("target") or 10, 10), c.get("impressions_10d") or 0, supply_of(c),
+                    "  WALL: verified empty <48h" if c.get("slug") in walls else ""))
             print()
         if US_ONLY:
             # Hidde, 2026-10-01: all focus on the US. passcheck --claim refuses

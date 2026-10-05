@@ -294,7 +294,7 @@ def pipeline_status():
     print("  staged for verify : %d claimable  %s" % (
         len(ok), " ".join("%s%s" % (s, "*" if qc.get(s) in supply else "") for s in ok) or "(empty)"))
     if ok:
-        print("      (* = where the visitors are: the US, the UK, Germany. Take those first.)")
+        print("      (* = where the visitors are: the US, the UK, Germany, Austria. Take those first.)")
     if parked:
         print("  parked            : %d staged file(s) a verify claim would refuse, or "
               "whose coordinates cannot become a confirmed pin" % len(parked))

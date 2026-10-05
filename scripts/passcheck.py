@@ -882,7 +882,10 @@ FOCUS_COUNTRIES = {"United States", "United Kingdom", "Japan", "France", "Spain"
 # supply in the US. These three lead city_queue.py --next and a claim outside
 # them prints a NOTE naming where the supply is; nothing is refused, because
 # the US-only refusal of 2026-10-01 bought nine empty windows in one day.
-SUPPLY_FOCUS = ["United States", "United Kingdom", "Germany"]
+# Austria joined 2026-10-05 (Hidde: "work on prioritised stuff - countries
+# where potential paying customers come from"): Cloudflare's 28-day visitors
+# read US, DE, GB, AT, in that order, with AT level with GB.
+SUPPLY_FOCUS = ["United States", "United Kingdom", "Germany", "Austria"]
 OVER_REPRESENTED = {"Netherlands"}
 # Contiguous states, Alaska, Hawaii. Rough on purpose: it decides which country
 # a place a run names is in, and a border town is a question for --country.
@@ -1129,7 +1132,7 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None, retry
     if kind not in DEPTH_KINDS and country and country not in SUPPLY_FOCUS:
         # A nudge, not a wall (Hidde, 2026-10-03). The claim stands.
         tail = " and the Netherlands is over-represented already" if country in OVER_REPRESENTED else ""
-        print(f"NOTE: {target} is in {country}; the visitors are in the US, the UK and Germany{tail}.")
+        print(f"NOTE: {target} is in {country}; the visitors are in the US, the UK, Germany and Austria{tail}.")
         print("      `python3 scripts/city_queue.py --next` prints the cities there that hold supply.")
 
     # The prompt has said "claim only what this window can finish" since
