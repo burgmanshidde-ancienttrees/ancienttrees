@@ -2,32 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-17T23:16:55+00:00",
-   "date": "2026-08-17",
-   "run_id": "32079748572",
-   "minutes": 12.4,
-   "minutes_basis": "measured",
-   "turns": 79,
-   "denials": 17,
-   "denials_source": "permission_denials: Bash",
-   "ended": "success",
-   "tokens": 10369228,
-   "claims_held": [
-    "yakushima",
-    "krakow",
-    "rome",
-    "perugia",
-    "berlin",
-    "paris",
-    "kyoto",
-    "ottawa"
-   ],
-   "commits": 7,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-18T02:47:51+00:00",
    "date": "2026-08-18",
    "run_id": "32093128350",
@@ -20664,6 +20638,53 @@
     }
    ],
    "trees": 1,
+   "logged": true
+  },
+  {
+   "started": "2026-10-05T16:34:17+00:00",
+   "date": "2026-10-05",
+   "run_id": "37341792342",
+   "minutes": 21.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 122,
+   "denials": 22,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; ? ...), Bash(cat ; import ; storm ; It ...), Bash(cd && curl && file), Bash(cd && curl | python3 ; ?), Bash(cd ; python3 | sed ; python3 ...), Bash(curl ; echo), Bash(curl ; head), Bash(curl ; wc ; grep | ? ...), Bash(curl | python3 ; import ; ? ...), Bash(for ; do ; echo ; curl ...), Bash(for ; do ; timeout | head ...), Bash(mkdir && curl ; sleep ; curl ...), Bash(python3 ; ? && rm), Bash(python3 ; import ; ? ; for ...), Bash(python3 ; import ; for ; if ...), Bash(python3 ; import ; if ; ? ...), Bash(rm ; python3 | head), Bash(rm), Bash(sed && python3), Bash(sed | grep | Beschreibung | ? ...), Bash(sleep ; cd && curl ; file)",
+   "ended": "success",
+   "tokens": 926061,
+   "claims_held": [
+    "nuremberg",
+    "bamberg"
+   ],
+   "commits": 10,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "vienna",
+     "trees": 6
+    },
+    {
+     "city": "houston",
+     "trees": 3
+    },
+    {
+     "city": "salzburg",
+     "trees": 3
+    },
+    {
+     "city": "graz",
+     "trees": 2
+    },
+    {
+     "city": "berlin",
+     "trees": 1
+    },
+    {
+     "city": "munich",
+     "trees": 1
+    }
+   ],
+   "trees": 16,
    "logged": true
   }
  ],
