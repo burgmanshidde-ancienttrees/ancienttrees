@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 session: the app inbox emptied
+
+- **Reader photographs:** 66 on file, all already handled; nothing waiting for a look.
+- **Three worth-it votes** from the app (Lisbon's dragon tree lis_030, Paris par_031 and par_033 in Square Rene-Le Gall) marked `holds`, as every worth-it vote before them.
+- **The central-France oak (row 343):** looked at the photograph the earlier verdict had not opened. It shows a stone garden well, not the oak, in what reads as a private garden. Stays a lead with outcome `open_question`; a frame of the tree and whether the public can reach it would reopen it. No reply written, so no mail goes out.
+
 ## 2026-10-05 Continuation attempt: nothing new to ship, all claims released
 
 READY is 0. Portland (1 held lead, ptl_027, deliberately held), Spokane (1 unmined register row) and Dresden (register-less, Wikidata rows are groups or already judged leads) were each checked against their briefs and none reaches six fresh candidates, so no verify agent was dispatched. All three claims released. Scout target stays Atlanta (#132); the verify shelf needs a new register rather than another pass on these cities.
