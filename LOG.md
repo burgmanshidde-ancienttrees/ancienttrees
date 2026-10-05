@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Continuation attempt: nothing new to ship, all claims released
+
+READY is 0. Portland (1 held lead, ptl_027, deliberately held), Spokane (1 unmined register row) and Dresden (register-less, Wikidata rows are groups or already judged leads) were each checked against their briefs and none reaches six fresh candidates, so no verify agent was dispatched. All three claims released. Scout target stays Atlanta (#132); the verify shelf needs a new register rather than another pass on these cities.
+
 ## 2026-10-05 Nuremberg +1: the Bear Oak (Bäreneiche)
 
 Visits last 7 days: 1469. Shelf under floor, so a verify pass on Nuremberg (Spokane released first: 1 unmined row). It cleared two of 109 register rows; one had a confirmed pin (OSM node within 2 m of the register point), written and merged (Nuremberg 16 to 17, German overlay too; commit 2b35fc94). nbg_018 (ND 35 oak) stays held: approximate pin, unviewed photo, a lawn before flats with unconfirmed public access. Two new leads filed. Nuremberg's register pool is now essentially mined. No tool refusals.
