@@ -9,6 +9,18 @@
   },
   "places": [
     {
+      "place": "Detroit",
+      "country": "United States",
+      "status": "stalled",
+      "note": "SCOUTED 2026-10-05 on scout_next.py --target (#104), same sweep as Lansing. No city heritage-tree register with coordinates found. Only the Michigan Botanical Society Big Tree register (statewide champion list, a finding aid, licence unchecked). Next angle: the same MBS pull filtered to Wayne County, plus the Belle Isle and Detroit Historical Society tree pages."
+    },
+    {
+      "place": "Lansing",
+      "country": "United States",
+      "status": "stalled",
+      "note": "SCOUTED 2026-10-05 on scout_next.py --target (#103). One web search finds no city or county heritage-tree register with coordinates. The Michigan Botanical Society's Big Tree register (639 active trees, Michigan Big Tree Program, online and by smartphone) is a champion list: a finding aid, licence and coordinates unchecked, and nothing shows a Lansing-area entry. ReLeaf Michigan's 2026 Big Tree Hunt is a nomination drive. Next angle: pull the MBS register and filter to Ingham County, read its terms first; Michigan State University campus arboretum (East Lansing) as a non-register source."
+    },
+    {
       "place": "Cincinnati",
       "country": "United States",
       "status": "stalled",

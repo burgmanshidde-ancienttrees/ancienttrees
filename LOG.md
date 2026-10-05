@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Shelf still empty: Frankfurt and Dresden are walls, Lansing and Detroit scouted
+
+Visits last 7 days: 1455. Writable pile is 0 and every held tree lacks a photo or confirmed pin, so no write pass existed. Checked the verify targets for supply: Spokane has one unmined candidate (already judged yesterday), Frankfurt and Dresden have no imported register and an earlier pass already worked both (claimed and released each, nothing dispatched). scout_next.py named Lansing (#103) and then Detroit (#104): no city heritage-tree register with coordinates for either, only the Michigan Botanical Society's statewide Big Tree champion list, recorded as a finding aid with next angles in data/register-scouting.json. No trees shipped; no command refused.
+
 ## 2026-10-04 Leipzig +8: Naturdenkmal oaks, lindens and planes
 
 Leipzig goes from 7 trees to 15, all from the city's Naturdenkmal list: the Menzellinde in Schoenefeld (the lime Adolf von Menzel drew, 200 to 300 years, now the page's oldest tree), the Dufourstrasse oak above the Pleissemuehlgraben, two Lindenau street oaks 150 m apart, Wahren's Friedenseiche (no peace or year claimed, the list gives none), the Leibnizstrasse plane, a Lebanon oak in Schoenau and ND 1, the medlar-leaved oak on the Martin-Luther-Ring. Every one ships with a Commons photograph I looked at before approving, so all eight are findable despite approximate pins; each has a recognition line, and only the lime got a best_time (July flowering). Intro, meta, question page and FAQ now describe 15 trees, oldest_tree_id is the Menzellinde, and the German overlay carries all 8 new trees and the new counts. bos_013 (Endicott Pear) was not written: Danvers is 75+ minutes from Boston by public transport, the alive evidence is one unopened search result and its only photo is from 1997. Preflight 0 problems.
