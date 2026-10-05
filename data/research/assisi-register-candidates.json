@@ -1,0 +1,140 @@
+[
+ {
+  "sheet_id": "02/A475/PG/10",
+  "region": "UMBRIA",
+  "province": "Perugia",
+  "comune": "Assisi",
+  "locality": "Porta Santa Chiara - Via Borgo Aretino",
+  "species": "Taxus baccata L.",
+  "name_it": "Tasso",
+  "girth_cm": 450.0,
+  "height_m": 12.5,
+  "altitude_m": 420.0,
+  "urban": true,
+  "latitude": 43.068572,
+  "longitude": 12.617906,
+  "register": "italy-masaf",
+  "km_from_centre": 0.81,
+  "near_published": {
+   "metres": 0.0,
+   "id": "asi_001",
+   "name": "The Yew of Count Pucci",
+   "species": "European Yew (Taxus baccata)"
+  }
+ },
+ {
+  "sheet_id": "01/A475/PG/10",
+  "region": "UMBRIA",
+  "province": "Perugia",
+  "comune": "Assisi",
+  "locality": "Via Lorenzo Perosi - Porta Cappuccini",
+  "species": "Quercus pubescens Willd.",
+  "name_it": "Roverella",
+  "girth_cm": 480.0,
+  "height_m": 21.0,
+  "altitude_m": 475.0,
+  "urban": false,
+  "latitude": 43.068761,
+  "longitude": 12.624692,
+  "register": "italy-masaf",
+  "km_from_centre": 0.98,
+  "near_published": {
+   "metres": 0.0,
+   "id": "asi_002",
+   "name": "The Downy Oak of Porta Cappuccini",
+   "species": "Downy Oak (Quercus pubescens)"
+  }
+ },
+ {
+  "sheet_id": "06/A475/PG/10",
+  "region": "UMBRIA",
+  "province": "Perugia",
+  "comune": "Assisi",
+  "locality": "Via di Valecchie",
+  "species": "Quercus pubescens Willd.",
+  "name_it": "Roverella",
+  "girth_cm": 520.0,
+  "height_m": 30.0,
+  "altitude_m": 273.0,
+  "urban": false,
+  "latitude": 43.067628,
+  "longitude": 12.606933,
+  "register": "italy-masaf",
+  "km_from_centre": 1.25,
+  "near_published": {
+   "metres": 0.0,
+   "id": "asi_003",
+   "name": "The Oak of Via di Valecchie",
+   "species": "Downy Oak (Quercus pubescens)"
+  }
+ },
+ {
+  "sheet_id": "04/A475/PG/10",
+  "region": "UMBRIA",
+  "province": "Perugia",
+  "comune": "Assisi",
+  "locality": "Eremo delle Carceri",
+  "species": "Quercus ilex L.",
+  "name_it": "Leccio",
+  "girth_cm": 300.0,
+  "height_m": 23.0,
+  "altitude_m": 795.0,
+  "urban": false,
+  "latitude": 43.063114,
+  "longitude": 12.650853,
+  "register": "italy-masaf",
+  "km_from_centre": 3.06,
+  "near_published": {
+   "metres": 0.5,
+   "id": "asi_005",
+   "name": "The Second Holm Oak of the Eremo",
+   "species": "Holm Oak (Quercus ilex)"
+  }
+ },
+ {
+  "sheet_id": "03/A475/PG/10",
+  "region": "UMBRIA",
+  "province": "Perugia",
+  "comune": "Assisi",
+  "locality": "Eremo delle Carceri",
+  "species": "Quercus ilex L.",
+  "name_it": "Leccio",
+  "girth_cm": 200.0,
+  "height_m": 9.0,
+  "altitude_m": 800.0,
+  "urban": false,
+  "latitude": 43.062897,
+  "longitude": 12.652539,
+  "register": "italy-masaf",
+  "km_from_centre": 3.19,
+  "near_published": {
+   "metres": 0.3,
+   "id": "asi_004",
+   "name": "The Tree of St. Francis's Time",
+   "species": "Holm Oak (Quercus ilex)"
+  }
+ },
+ {
+  "sheet_id": "05/A475/PG/10",
+  "region": "UMBRIA",
+  "province": "Perugia",
+  "comune": "Assisi",
+  "locality": "Rifugio di Vallonica",
+  "species": "Crataegus monogyna Jacq.",
+  "name_it": "Biancospino comune",
+  "girth_cm": null,
+  "height_m": 6.0,
+  "altitude_m": 1075.0,
+  "urban": false,
+  "latitude": 43.058144,
+  "longitude": 12.661317,
+  "register": "italy-masaf",
+  "km_from_centre": 4.07,
+  "near_published": {
+   "metres": 0.0,
+   "id": "asi_006",
+   "name": "The Hawthorn of Vallonica",
+   "species": "Common Hawthorn (Crataegus monogyna)"
+  }
+ }
+]

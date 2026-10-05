@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 night run: 8 trees live
+
+Visits last 7 days: 1,507 (1,677 pageviews). Rung 1: one reader photograph, a London plane in Parc Montsouris (450 cm, ordinary for the species, no source), logged as a lead. Merged five already-written trees (Houston 3, Berlin Zoo oak, Dachau lime; Houston copy counts fixed) and ran a Salzburg verify-plus-write pass for three register oaks (szb_013 to 015, view-from-street access stated). The de overlays for Berlin, Munich and Salzburg were written by hand to keep the deploy green. Preflight 0 problems. Not merged: Fukuoka, Portland, San Francisco, Takachiho and tree-of-the-year showed as written but were already published or not mergeable. The iOS workflow is red since 10-05 and untouched.
+
 ## 2026-10-05 session: why so many night runs "fail" with usage left
 
 **They do not fail, they run out of permitted work in about five minutes.** GitHub shows 39 of the last 40 runs green; usage is nowhere near binding (week 446 of 8000 minutes, no limit deaths). What happens instead, per run:

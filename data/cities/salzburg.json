@@ -3,8 +3,8 @@
   "country": "Austria",
   "status": "needs_curation",
   "oldest_tree_id": "szb_003",
-  "intro": "Salzburg's baroque gardens get the postcards, but most of its oldest protected trees stand on ordinary ground: a farm oak once used to fatten pigs, a riverside poplar from a vanished floodplain forest, an oak and two limes on plain Riedenburg streets, a plane and a black pine that outlasted the grand hotel whose park they once grew in. The Naturdenkmal register lists dozens more; these twelve, from Itzling to Morzg to the Fordhof estate and the Aigen streets south of the centre, clear the bar this pass, alongside one import, a Californian sequoia in the Mirabellgarten.",
-  "meta_description": "Salzburg's oldest protected trees stand on farms and streets, not the baroque gardens. 12 trees, from a 1933 oak to survivors of a bombed hotel.",
+  "intro": "Salzburg's baroque gardens get the postcards, but most of its oldest protected trees stand on ordinary ground: a farm oak once used to fatten pigs, a riverside poplar from a vanished floodplain forest, an oak and two limes on plain Riedenburg streets, a plane and a black pine that outlasted the grand hotel whose park they once grew in. The Naturdenkmal register lists dozens more; these fifteen, from Itzling to Morzg to the Fordhof estate and the Aigen streets south of the centre, clear the bar this pass, alongside one import, a Californian sequoia in the Mirabellgarten.",
+  "meta_description": "Salzburg's oldest protected trees stand on farms and streets, not the baroque gardens. 15 trees, from a 1933 oak to survivors of a bombed hotel.",
   "question_meta": "Salzburg's oldest confirmed tree is the Stephan-Ludwig-Roth Oak in Morzg, over 200 years old, recorded in an 1817 account. Full list of 12.",
   "question_answer": "Salzburg's oldest documented tree is the Stephan-Ludwig-Roth Oak, a pedunculate oak at a woodland edge in Morzg. A source records the Transylvanian Saxon leader and pedagogue Stephan Ludwig Roth resting under it on 15 September 1817, which means it was already a landmark two centuries ago; a local blog puts its age at over 200 years today.",
   "question_context": "The oak has real urgency behind it: the same source reports a fungal infection and expects the tree to survive only about twenty more years, which makes it worth seeing sooner rather than later. Salzburg's Naturdenkmal register runs to dozens of entries, and the nine here come from five corners of the city rather than one walkable cluster, though three, an oak and two limes on separate Riedenburg streets, sit close enough to walk in one afternoon. The Erentrudishof Oak, the city's longest-protected tree (1933), stands in a working farmyard in Morzg where pigs once fattened on its acorns. A black poplar on the Josef-Mayburger-Kai promenade is one of the last traces of the riparian forest that used to line the Salzach. A plane and a black pine share a housing-estate courtyard near the main station, the only two trees left from a grand hotel's bombed-out park, and a giant sequoia stands beside a coast redwood in the formal Mirabellgarten, the only deliberately planted tree here. None of the nine carries a hard planting date; ages come from designation years, a sighting, a claim about a pair of survivors, or a visitor's tape measure, and each page says so.",
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Salzburg's trees free to visit?",
-      "a": "Yes, all twelve stand on public ground, a working farm's publicly accessible yard, or an open housing-estate courtyard, with no entrance fee."
+      "a": "Yes, all fifteen can be seen from public ground, a working farm's publicly accessible yard, or an open housing-estate courtyard, with no entrance fee."
     },
     {
       "q": "Why don't Salzburg's official register trees carry ages?",
@@ -409,6 +409,105 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "szb_013",
+      "name": "The Oak of Sebastian-Kneipp-Straße",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 400,
+      "height_m": 24,
+      "location": {
+        "address": "Northern end of Sebastian-Kneipp-Straße, Maxglan, Salzburg",
+        "latitude": 47.787276,
+        "longitude": 13.013937,
+        "neighbourhood": "Maxglan"
+      },
+      "verified_sources": [
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00177, protected 1980, CC BY 4.0)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://commons.wikimedia.org/wiki/File:Salzburg-2590.jpg"
+      ],
+      "access": "Stands at the end of a public residential street; view from the street. Not checked whether the trunk itself is on public ground.",
+      "transport": "Maxglan, about 4 km south-west of the old town; nearest bus stop not checked",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Where Salzburg's city streets give out and the Untersberg moor begins, one oak stands at the northern end of Sebastian-Kneipp-Straße, and it is there because of what used to surround it. The register of Land Salzburg describes it as a relic of the old moor litter meadows, the damp fields that were mown for bedding straw, at the edge of the Untersberger Moor and its oak woodland. The meadows are houses now. The oak is what remained of that landscape, and the province protected it as a natural monument in 1980.\n\nIt is a pedunculate oak, a species that keeps a rounded crown when it has room, and this one has: the entry in the photo record describes a spherical crown, about 24 metres tall, with a trunk some four metres round at chest height. Those figures come from the description attached to a 2014 photograph that quotes the monument text, so treat them as approximate. Nobody has written down an age, and we will not guess one.\n\nWhat the oak offers is a clear view of a vanished kind of ground. Stand at the end of the street, look up into the crown, then look at the housing around it, and the order of events is easy to read. The tree was here first. If you have a tape measure or know its age, tell us.",
+      "how_to_recognise": "You will find it at the very northern end of Sebastian-Kneipp-Straße, a single oak with a rounded crown standing alone beside the street.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "Register only (Land Salzburg Naturdenkmal NDM00177, protected 1980). The register polygon is 93 m2, so its centroid sits within a few metres of the trunk; pin taken from it. Height 24 m and chest-height girth 4 m come from the Commons file description (Wiki Loves Earth 2014, which quotes the Naturdenkmal text), not seen on the register itself: flagged. Wikipedia list: relic of the former moor litter meadows at the edge of the Untersberger Moor and its oak woodland. Spherical crown, shapes the landscape (Commons description). Alive: lifecheck NONE; Commons photo 2014-04-17 CC BY-SA 3.0 at (WOKRIE) shows the tree; current register extract of 2026-08-16 still lists it, not on the Wikipedia list of former monuments. No age; page should ask the reader."
+    },
+    {
+      "id": "szb_014",
+      "name": "The Embankment Oak of Itzlinger Hauptstraße",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Itzlinger Hauptstraße, Itzling, Salzburg",
+        "latitude": 47.826135,
+        "longitude": 13.037925,
+        "neighbourhood": "Itzling"
+      },
+      "verified_sources": [
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00207, protected 1987, CC BY 4.0)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://commons.wikimedia.org/wiki/File:00207_Eiche_an_der_Itzlinger_Hauptstra%C3%9Fe.jpg"
+      ],
+      "access": "Visible from the public pavement of Itzlinger Hauptstraße; the tree stands on the high embankment above the street, so view only. Whether the embankment can be entered not checked.",
+      "transport": "Itzlinger Hauptstraße is a trolleybus route (Commons categorises it under Trolleybus route 6); about 3.4 km north of the old town; exact stop not checked",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Above the traffic of Itzlinger Hauptstraße, an oak stands on a high embankment, and for decades it has been one of the things that gives this stretch of Itzling its look. The province of Salzburg made it a natural monument in 1987, and the official description is short and to the point: the tree shapes the view on the steep bank west of the Goethe-Siedlung, the housing estate beside it.\n\nThat is the whole of what the register says, and it is honest to leave it there. We know it is an oak, but the record names no species more closely than the genus Quercus, and nobody has published an age, a girth or a height. What can be said is where it stands: on a slope above a busy street served by the trolleybus, beside a housing estate.\n\nThat contrast is the reason to look. Lifted above the road on its bank, the crown is read against the sky. Stand on the pavement below and look up. You can see it from the street; the embankment itself is not a place we can promise you can enter. If you know its species or its girth, a message to us fills a gap the register left open.",
+      "how_to_recognise": "You will find it on the high grassy embankment above Itzlinger Hauptstraße, just west of the Goethe-Siedlung, the one oak on the bank.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "Register only (NDM00207, protected 1987). Register polygon 82 m2, centroid within a few metres of the trunk. Species given only as Quercus (Commons category); genus level, say so on the page. Wikipedia list text: the tree shapes the view on the high embankment above Itzlinger Hauptstraße, west of the Goethe-Siedlung. Alive: lifecheck NONE; Commons photo 2015-10-13 (Georg Pflugbeil, CC BY-SA 3.0 at) shows it; still in the 2026-08-16 register extract. No age, girth or height known."
+    },
+    {
+      "id": "szb_015",
+      "name": "The Boundary Oak of Flurweg",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Flurweg 19, Morzg, Salzburg",
+        "latitude": 47.773943,
+        "longitude": 13.055252,
+        "neighbourhood": "Morzg"
+      },
+      "verified_sources": [
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00225, protected 1989, CC BY 4.0)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://commons.wikimedia.org/wiki/File:00225_Eiche_am_Flurweg.jpg",
+        "https://www.inaturalist.org/observations/256063431"
+      ],
+      "access": "Seen from the public street at the edge of the building land (the list calls it widely visible); the plot at Flurweg 19 is probably private, so view from the road only.",
+      "transport": "Morzg, about 3.5 km south of the old town; stop not checked",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "A boundary tree is a plain job: it marks where one man's land stops and the next begins. This oak at Flurweg 19 in Morzg once did that for the old Davidengut, a farm of the district, and when the fields around it were turned into building land it was left standing at the edge of them. In 1989 the province of Salzburg protected it as a natural monument. The register entry for the tree is the oldest kind of record in the city, a plot reduced to a few dozen square metres around a single trunk.\n\nThe list of Salzburg's natural monuments calls it widely visible, and that is how you should plan to meet it: from the public road, looking at the tree at the point where the building land begins. The plot at Flurweg 19 is most likely private, so this is a tree to see from the street and not to walk up to.\n\nWe do not know its species beyond oak, and nobody has recorded its age, girth or height. A tree that was a boundary marker for a farm is likely to be old, but likely is not a fact, and we will not print a number. What we have is a firm location, a documented purpose and a protection that has held for over thirty years. If you know more, tell us.",
+      "how_to_recognise": "You will find it at Flurweg 19 in Morzg, a lone oak at the point where the houses stop and the open ground begins, visible from the road.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "Register NDM00225, protected 1989, polygon 59 m2 so centroid is at the trunk to a few metres. Wikipedia list text: once a boundary tree of the old Davidengut, now at the edge of the building land, widely visible. lifecheck RECENT: iNaturalist observation 2024-12-24 at the spot (shows something was photographed there, not necessarily this trunk). Commons photo 2014-09-04 CC BY-SA 3.0 at. Genus-level species. No age or measurements."
     }
   ]
 }
