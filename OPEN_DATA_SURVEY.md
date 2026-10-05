@@ -215,6 +215,12 @@ Hidde: "zoek meer van dit soort registers in de us!" The method that found them 
 | Heritage trees | Clackamas County (OR) | 116 | points; nominator and owner fields never copied | portland +76 (Lake Oswego, Milwaukie, Oregon City) |
 | Heritage trees (service named Test) | City of Fort Worth | 64 | points, park name | fort-worth +58 |
 | Heritage trees | Westchester County (NY) | 51 | points, DBH | new-york +50 |
+| Big trees | Utah FFSL | 268 | points, PUBLIC_ACCESS field (No blocked); owner and nominator never copied | salt-lake-city +70, 45 private blocked (new place) |
+| Champion tree register | Oklahoma Forestry Services | 213 | points, Dead_NF field blocked; ADDRESS held owners' emails and phones, scrubbed, and street addresses read as homes went to blocked | tulsa +5, oklahoma-city +12 |
+| Big tree champions + unusual big trees | Delaware Forest Service, FirstMap | 206 + 15 | points | philadelphia +75 (northern Delaware, a train day trip) |
+| Big Tree Program | Iowa DNR | 295 | points; owner, phone and nominator fields | not imported: no Iowa place we publish |
+| Cobb County champions | Cobb County GA | 4 | points, photos | not imported: no Atlanta page |
+| Virginia champion tree information | Virginia Tech | 22 | the layer itself says "Location of the tree is confidential" | NEVER: hard rule 10 |
 | Heritage trees | City of San José | ? | MapServer timed out | retry |
 | Big tree champs | Delaware FirstMap | ? | service returned non-JSON | retry |
 

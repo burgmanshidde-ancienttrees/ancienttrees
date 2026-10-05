@@ -1,0 +1,226 @@
+{
+ "city": "tulsa",
+ "leads": [
+  {
+   "name": "Bur Oak",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "lat": 36.284885,
+   "lng": -95.752649,
+   "register_location": null,
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Eastern Redcedar",
+   "species": "Eastern Redcedar (Juniperous virginiana)",
+   "lat": 36.216582,
+   "lng": -96.262209,
+   "register_location": "",
+   "girth_cm": 3,
+   "height_m": 0.3,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Eastern White Pine",
+   "species": "Eastern White Pine (Pinus strobus)",
+   "lat": 36.114444,
+   "lng": -95.962916,
+   "register_location": "3325 S Yorktown, Tulsa OK",
+   "girth_cm": 188,
+   "height_m": 18.6,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Pin Oak",
+   "species": "Pin Oak (Quercus palustris)",
+   "lat": 36.139832,
+   "lng": -95.958869,
+   "register_location": "P.O. Box 14066 Tulsa, OK 74159",
+   "girth_cm": 523,
+   "height_m": 27.7,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Dawn redwood",
+   "species": "Dawn redwood (Metasequoia glyptostroboides)",
+   "lat": 36.128769,
+   "lng": -95.97172,
+   "register_location": null,
+   "girth_cm": 80,
+   "height_m": 25.9,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Northern Red Oak",
+   "species": "Northern Red Oak (Quercus rubra)",
+   "lat": 36.131503,
+   "lng": -95.955536,
+   "register_location": "2465 E. 22nd Street, Tulsa, OK",
+   "girth_cm": 466,
+   "height_m": 28.2,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "American Elm",
+   "species": "American Elm (Ulmus americana)",
+   "lat": 36.153404,
+   "lng": -95.925146,
+   "register_location": "4543 E. 5th Pl. Tulsa, OK 74112 -",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Slippery Elm",
+   "species": "Slippery Elm (Ulmus rubra)",
+   "lat": 36.063286,
+   "lng": -95.89937,
+   "register_location": "6781 S 69th Ave. East - Tulsa OK 74133",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "English Oak",
+   "species": "English Oak (Quercus robur)",
+   "lat": 36.128825,
+   "lng": -95.972162,
+   "register_location": "1717 Charles Page Blvd - Tulsa OK 74127",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Black Walnut",
+   "species": "Black Walnut (Juglans nigra)",
+   "lat": 35.968244,
+   "lng": -95.895379,
+   "register_location": "16409 Woodruff Ave. Bell Flower, CA 907606",
+   "girth_cm": 531,
+   "height_m": 25.6,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Northern Catalpa",
+   "species": "Northern Catalpa (Catalpa speciosa)",
+   "lat": 36.208858,
+   "lng": -95.673256,
+   "register_location": "27844 1/2 S. 4120 Rd. Claremore, OK",
+   "girth_cm": 625,
+   "height_m": 25.9,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Lacebark Elm",
+   "species": "Lacebark Elm (ulmus parvifolia)",
+   "lat": 36.169568,
+   "lng": -96.010432,
+   "register_location": "701 N Union Ave, Tulsa, OK 74127",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "lat": 36.113876,
+   "lng": -95.967421,
+   "register_location": "3338 S Utica Ave. Tulsa, OK",
+   "girth_cm": 292,
+   "height_m": 19.2,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Eastern White Pine",
+   "species": "Eastern White Pine (Pinus strobus)",
+   "lat": 36.116269,
+   "lng": -95.977474,
+   "register_location": "1214 E. 32nd Place, Tulsa, OK 74105",
+   "girth_cm": 347,
+   "height_m": 16.8,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  }
+ ]
+}

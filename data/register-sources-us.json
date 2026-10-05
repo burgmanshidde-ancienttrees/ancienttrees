@@ -425,6 +425,114 @@
    },
    "source_url": "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6",
    "source_note": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only."
+  },
+  {
+   "name": "Utah big trees (FFSL)",
+   "place": "salt-lake-city",
+   "centre": [
+    40.7608,
+    -111.891
+   ],
+   "radius_km": 40,
+   "layer": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0",
+   "map": {
+    "common": "COMMON_NAME",
+    "sci": "SCIENTIFIC_NAME",
+    "circ": "CIRCUMFERENCE",
+    "height": "HEIGHT",
+    "loc": "ADDRESS",
+    "status": "STATE_CHAMP_STATUS"
+   },
+   "block_if": {
+    "PUBLIC_ACCESS": [
+     "no",
+     "n"
+    ]
+   },
+   "source_url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0",
+   "source_note": "Utah Division of Forestry, Fire and State Lands big tree register (state government). PUBLIC_ACCESS=No rows blocked. The layer carries owner and nominator names: NEVER copy them. Facts only."
+  },
+  {
+   "name": "Oklahoma champions, Tulsa",
+   "place": "tulsa",
+   "centre": [
+    36.154,
+    -95.9928
+   ],
+   "radius_km": 30,
+   "block_if_set": [
+    "Dead_NF"
+   ],
+   "layer": "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0",
+   "map": {
+    "common": "Common_Name",
+    "sci": "Genus_Species",
+    "circ": "Circ",
+    "height": "Ht",
+    "loc": "Address"
+   },
+   "source_url": "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0",
+   "source_note": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked; many rows wait for a remeasure (To_Do). Owner and reporter fields NEVER copied; an address may be a home, hard rule 10."
+  },
+  {
+   "name": "Oklahoma champions, Oklahoma City",
+   "place": "oklahoma-city",
+   "centre": [
+    35.4676,
+    -97.5164
+   ],
+   "radius_km": 30,
+   "block_if_set": [
+    "Dead_NF"
+   ],
+   "layer": "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0",
+   "map": {
+    "common": "Common_Name",
+    "sci": "Genus_Species",
+    "circ": "Circ",
+    "height": "Ht",
+    "loc": "Address"
+   },
+   "source_url": "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0",
+   "source_note": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10."
+  },
+  {
+   "name": "Delaware big tree champions",
+   "place": "philadelphia",
+   "centre": [
+    39.9526,
+    -75.1652
+   ],
+   "radius_km": 45,
+   "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+   "map": {
+    "common": "NAME",
+    "sci": "SCIENTIFIC",
+    "circ": "CIRCUMFERENCE_INCHES",
+    "height": "HEIGHT_FEET",
+    "loc": "ADDRESS"
+   },
+   "source_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+   "source_note": "Delaware Forest Service big tree champions on FirstMap (state government). Northern Delaware (Wilmington) is a Philadelphia day trip by train: real place name and true travel time. Facts only."
+  },
+  {
+   "name": "Delaware unusual big trees",
+   "place": "philadelphia",
+   "centre": [
+    39.9526,
+    -75.1652
+   ],
+   "radius_km": 45,
+   "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/1",
+   "map": {
+    "common": "COMMON_NAME",
+    "sci": "SCIENTIFIC_NAME",
+    "circ": "C_B_H_",
+    "height": "HEIGHT__FT_",
+    "loc": "LOCATION"
+   },
+   "source_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/1",
+   "source_note": "Delaware Forest Service unusual big trees (state government), e.g. Rockwood Park in Wilmington. Real place name and travel time. Facts only."
   }
  ]
 }

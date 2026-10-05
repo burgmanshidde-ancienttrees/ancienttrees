@@ -31,6 +31,17 @@ for f in glob.glob('data/cities/*.json'):
     for t in json.load(open(f))['trees']:
         try: pub.append((float(t['location']['latitude']),float(t['location']['longitude'])))
         except: pass
+import re as _re
+_EMAIL=_re.compile(r'[\w.+-]+@[\w-]+\.[\w.]+')
+_PHONE=_re.compile(r'\(?\b\d{3}\)?[-. ]\d{3}[-. ]\d{4}\b')
+def _scrub(v):
+    # 2026-10-06: Oklahoma's address field carried owners' emails and phone
+    # numbers. Personal contact data never leaves the register, whatever field
+    # it hides in; preflight's check_register_leads_carry_no_contact_data()
+    # refuses a lead that still holds one.
+    if not isinstance(v,str): return v
+    return _re.sub(r'\s{2,}',' ',_PHONE.sub('',_EMAIL.sub('',v))).strip(' ,;-')
+
 def num(v):
     try: return float(v)
     except: return None
@@ -57,7 +68,7 @@ for s in SOURCES:
         if km(lat,lng,cen[0],cen[1])>s['radius_km']: continue
         if any(km(lat,lng,x,y)<0.06 for x,y in pub): continue
         if (round(lat,4),round(lng,4)) in have: continue
-        m=s['map']; v=lambda k: (a.get(m[k]) if m.get(k) else None)
+        m=s['map']; v=lambda k: (_scrub(a.get(m[k])) if m.get(k) else None)
         common=(v('common') or '').strip(); sci=(v('sci') or '').strip()
         circ=num(v('circ')); h=num(v('height'))
         lead={'name':(v('name') or common or sci or 'unnamed').strip(),'species':f"{common} ({sci})" if sci else common,
@@ -70,6 +81,8 @@ for s in SOURCES:
         for k,bad in (s.get('block_if') or {}).items():
             val=str(a.get(k) or '').strip().lower()
             if val in bad: blk=f"register field {k}={val!r}: not public or not to be listed (hard rule 10)"
+        for k in (s.get('block_if_set') or []):
+            if str(a.get(k) or '').strip(): blk=blk or f"register field {k}={a.get(k)!r}: marked dead or not found"
         for k,good in (s.get('keep_if') or {}).items():
             val=str(a.get(k) or '').strip().upper()
             if val not in good: blk=blk or f"register field {k}={val!r}: not an approved public entry"

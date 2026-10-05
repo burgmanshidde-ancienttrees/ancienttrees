@@ -2705,6 +2705,37 @@ def check_every_tree_has_a_recognition_line():
     return out
 
 
+def check_register_leads_carry_no_contact_data():
+    """No email address or phone number in a lead imported from a register.
+
+    2026-10-06: the Oklahoma Forestry register carried owners' emails and
+    phone numbers inside its ADDRESS field, and scripts/register_import.py
+    copied two of them into data/leads before a grep caught it. Leads are not
+    rendered, but they are in a public repository, and a stranger's phone
+    number has no business there. The importer scrubs both now; this refuses
+    the push if one ever gets through again. Scoped to register_location,
+    the one field the importer copies free text into, so the institutional
+    contact routes recorded in hand-written research notes are untouched."""
+    email = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
+    phone = re.compile(r"\(?\b\d{3}\)?[-. ]\d{3}[-. ]\d{4}\b")
+    out = []
+    for path in sorted(glob.glob("data/leads/*.json")):
+        try:
+            d = json.load(open(path, encoding="utf-8"))
+        except ValueError:
+            continue
+        if not isinstance(d, dict):
+            continue
+        for kind in ("leads", "blocked"):
+            for l in d.get(kind) or []:
+                v = (l or {}).get("register_location") if isinstance(l, dict) else None
+                if isinstance(v, str) and (email.search(v) or phone.search(v)):
+                    out.append("%s: a register lead (%s) carries an email or phone number in "
+                               "register_location; remove it (scripts/register_import.py scrubs these)"
+                               % (path, l.get("name")))
+    return out
+
+
 def check_every_us_place_has_a_state():
     """Contract L (blueprint v1.22, 2026-09-26): data/us-states.json names the
     state of every published US place, and the build fails on one it does not
@@ -2813,6 +2844,7 @@ def main():
                 + check_park_words_match()
                 + check_photo_fields_reach_the_site()
                 + check_every_us_place_has_a_state()
+                + check_register_leads_carry_no_contact_data()
                 + check_every_tree_has_a_recognition_line())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:

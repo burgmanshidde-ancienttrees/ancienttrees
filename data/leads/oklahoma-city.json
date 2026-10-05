@@ -1,0 +1,315 @@
+{
+ "city": "oklahoma-city",
+ "leads": [
+  {
+   "name": "Cedar Elm",
+   "species": "Cedar Elm (Ulmus crassifolia)",
+   "lat": 35.492794,
+   "lng": -97.497771,
+   "register_location": null,
+   "girth_cm": 202,
+   "height_m": 16.3,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Red Mulberry",
+   "species": "Red Mulberry (Morus rubra)",
+   "lat": 35.483588,
+   "lng": -97.57049,
+   "register_location": "1409 N. Drexel, OKC, OK 73107",
+   "girth_cm": 549,
+   "height_m": 14.6,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Lacebark Elm",
+   "species": "Lacebark Elm (ulmus parvifolia)",
+   "lat": 35.523392,
+   "lng": -97.471294,
+   "register_location": null,
+   "girth_cm": 203,
+   "height_m": 14.9,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Bur Oak",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "lat": 35.522251,
+   "lng": -97.473359,
+   "register_location": null,
+   "girth_cm": 351,
+   "height_m": 23.2,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Bald Cypress",
+   "species": "Bald Cypress (Taxodium distichum)",
+   "lat": 35.522253,
+   "lng": -97.470823,
+   "register_location": null,
+   "girth_cm": 295,
+   "height_m": 23.5,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Shumard Oak",
+   "species": "Shumard Oak (Quercus shumardii)",
+   "lat": 35.478331,
+   "lng": -97.48863,
+   "register_location": null,
+   "girth_cm": 371,
+   "height_m": 18.3,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Osage Orange",
+   "species": "Osage Orange (Maclura pomifera)",
+   "lat": 35.657397,
+   "lng": -97.478488,
+   "register_location": "215 N. Boulevard Edmond, OK 73034",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Mexican Plum",
+   "species": "Mexican Plum (Prunus mexicana)",
+   "lat": 35.604048,
+   "lng": -97.609639,
+   "register_location": null,
+   "girth_cm": 116,
+   "height_m": 6.7,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Persimmon",
+   "species": "Persimmon (Diospyros virginiana)",
+   "lat": 35.247855,
+   "lng": -97.633959,
+   "register_location": "1302 NW 1st - Newcastle OK 73065",
+   "girth_cm": 217,
+   "height_m": 19.5,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Sawtooth Oak",
+   "species": "Sawtooth Oak (Quercus acutissima)",
+   "lat": 35.485661,
+   "lng": -97.563345,
+   "register_location": "16th & Ross, Oklahoma City",
+   "girth_cm": 279,
+   "height_m": 20.4,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Bur Oak",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "lat": 35.625386,
+   "lng": -97.600776,
+   "register_location": null,
+   "girth_cm": 495,
+   "height_m": 17.1,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  },
+  {
+   "name": "Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "lat": 35.51729,
+   "lng": -97.583713,
+   "register_location": "4505 N Portland - Oklahoma City OK 73112",
+   "girth_cm": 295,
+   "height_m": 13.7,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Mimosa",
+   "species": "Mimosa (Albizia Julibrissin)",
+   "lat": 35.248,
+   "lng": -97.703563,
+   "register_location": "2314 Fox Lane Dr. - Blanchard OK",
+   "girth_cm": 244,
+   "height_m": 13.7,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register field Dead_NF='Dead': marked dead or not found"
+  },
+  {
+   "name": "Sawtooth Oak",
+   "species": "Sawtooth Oak (quercus acutissima)",
+   "lat": 35.568748,
+   "lng": -97.553037,
+   "register_location": "2248 Carlton Way, The Village, OK 73120",
+   "girth_cm": 305,
+   "height_m": 21.9,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Arizona Cypress",
+   "species": "Arizona Cypress (Cupressus arizonica)",
+   "lat": 35.204492,
+   "lng": -97.452961,
+   "register_location": "939 S. Flood Ave, Norman, OK 73069",
+   "girth_cm": 245,
+   "height_m": 17.4,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Chinese Pisty",
+   "species": "Chinese Pisty (Pistachia chinensis)",
+   "lat": 35.519993,
+   "lng": -97.557235,
+   "register_location": "2515 NW 48th St. Okc, OK 73112",
+   "girth_cm": 415,
+   "height_m": 15.2,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Boxelder",
+   "species": "Boxelder (Acer negundo)",
+   "lat": 35.479853,
+   "lng": -97.587728,
+   "register_location": "1132 NW Roff St. OKC",
+   "girth_cm": 299,
+   "height_m": 17.7,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Southern Magnolia",
+   "species": "Southern Magnolia (Magnolia grandiflora)",
+   "lat": 35.512746,
+   "lng": -97.689293,
+   "register_location": "9804 Stonebridge Drive, Yukon OK 73099",
+   "girth_cm": 183,
+   "height_m": 16.8,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Siberian Elm",
+   "species": "Siberian Elm (Ulmus pumila)",
+   "lat": 35.563333,
+   "lng": -97.467777,
+   "register_location": "9102 N Hassett Rd - Oklahoma City OK 73131",
+   "girth_cm": 427,
+   "height_m": 14.6,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  },
+  {
+   "name": "Lebanon Cedar",
+   "species": "Lebanon Cedar (Cedrus libani)",
+   "lat": 35.207278,
+   "lng": -97.452541,
+   "register_location": "818 West Brooks St. Norman, Ok",
+   "girth_cm": 444,
+   "height_m": 24.7,
+   "register_status": null,
+   "sources": [
+    "https://services3.arcgis.com/yrIZ0Nv0mSGTWJsH/arcgis/rest/services/Champion_Tree_Map_View/FeatureServer/0"
+   ],
+   "source": "Oklahoma Forestry Services champion tree register (state government). Rows marked dead or not found blocked. Owner and reporter fields NEVER copied; an address may be a home, hard rule 10.",
+   "status": "open",
+   "reason": "register address is a street address, most likely a home (hard rule 10); reopen only with evidence the tree stands on public ground"
+  }
+ ]
+}
