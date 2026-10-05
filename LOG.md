@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Held trees freed by a photo look: Nuremberg +2, San Francisco +1
+
+Second pass of the same window: a write pass hunted Commons photographs for 11 held trees and found usable ones for three, all looked at before attaching. Nuremberg goes to 16 (nbg_014, nbg_015), San Francisco to 7 (sfo_007, the Pohutukawa on Stanyan Street, which stands in a private front garden and is seen from the sidewalk; the page says so and the pin should mark the viewing place, worth a check). Eight stay held (ptl_027, sfo_008, hou_009 to 011, fuk_017, tkc_004, 005): no open photo. Two cited iNaturalist alive observations turned out not to be the tree and were removed. hou_010's Cemetery Oak may be 300 m from our pin. Preflight 0 problems.
+
 ## 2026-10-05 Munich +7: Dachau limes and oaks, Puch, Sauerlach, Ingelsberg
 
 Visits last 7 days: 1457. Shelf was empty, so Munich was verified again, this time from the Bayern Wikipedia list of notable trees plus Commons categories instead of the exhausted register join: three flagged trees (the Edigna lime of Puch, the seven-stemmed lime of Sauerlach, the Ingelsberg ash). A write pass then merged those with four Dachau-area trees held since yesterday (muc_056, 059, 060, 061), each now carrying a Commons photograph that was looked at before attaching, plus a German overlay. Munich goes from 52 to 59. muc_058 stays held (its only photo is mostly parked cars, approximate pin). muc_059's access is unconfirmed and the story says so. Edigna's lime is beyond the 30 minute line and the page says that. Preflight 0 problems. No command refused.
