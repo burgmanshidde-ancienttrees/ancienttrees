@@ -10,6 +10,7 @@ Potsdam finally has trees in Potsdam: the thousand-year oak at Sacrow (685 cm, t
 
 - **Why:** search has sat at ~50 to 70 impressions a day since 09-28 (2 percent of before). The rising average position is an artefact of that tiny tail, not a further fall. Meanwhile ~1,850 indexed tree pages had an AI-drafted story and no photograph, the scaled-content shape the spam update targets.
 - **What changed (Hidde's yes):** `INDEX_NEEDS_PHOTO = True` in scripts/thin_pages.py. Tree pages without a photo get noindex in every language; they stay live and return on the next deploy after gaining a photo. noindex.json: 8,935 to 11,487 paths, about 1,700 site pages remain indexable. The new paths carry 2026-10-06 in sitemap-recrawl.xml so Google refetches them soon.
+- **And places with no photograph at all** (about 85) leave the index too, city and question page, so a new place of photo-less trees no longer enters Google as a city page. Adding trees for readers continues as before. noindex.json now 11,600 paths.
 - **Consequence for runs:** a photograph is now the only way a tree page reaches Google. Photo work (photo_gaps, the review page) outranks pins and recognition lines as depth.
 - **Not done, open for Hidde:** pausing new trees altogether (step 1 of the session proposal). Also Search Console: is sitemap-recrawl.xml submitted, and is "Excluded by noindex" rising.
 

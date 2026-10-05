@@ -157,6 +157,15 @@ def main():
                 groups["thin_places"] += city_urls + q_urls
                 a_places.append((d.get("city", slug), d.get("country", ""), n, i))
                 continue
+        # 2b. A place where no tree has a photograph leaves the index too
+        #     (Hidde, 2026-10-06: keep adding trees for readers, "maar ze
+        #     gewoon niet aan google meegeven tot ze fotos krijgen"). Its tree
+        #     pages are already out under INDEX_NEEDS_PHOTO; without this a new
+        #     place of four photo-less trees would still enter Google as a city
+        #     page. Returns with its first photograph.
+        if INDEX_NEEDS_PHOTO and not any(has_photo(t) for t in trees):
+            groups["thin_places"] += city_urls + q_urls
+            continue
         # 3. Question pages: ~45 percent template shared with every other
         #    question page and with their own city page. Kept only where
         #    Search Console ever showed one.
