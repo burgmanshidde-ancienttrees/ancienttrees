@@ -272,7 +272,11 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
           <a class="dir-link" href={google} target="_blank" rel="noopener"><Fragment set:html={icon("arrow-bend-up-right")} />{U.takeMeThere}</a>
           <SaveHeart treeId={tree.id} treeName={p.name} labelSave={U.cardSave} labelSaved={U.cardSaved} />
         </div>
-        <div class="td-side-map"></div>
+        {/* The side map's way out to the whole map, as AllTrails and Airbnb
+            put an expand control in the corner of a detail page's map
+            (Hidde, 2026-10-05: "the map is not clickable"). The phone's
+            inset already carries the same link. */}
+        <div class="td-side-map"><a class="td-side-expand" href={expandUrl} aria-label={U.openFullMap} title={U.openFullMap}><Fragment set:html={icon("arrows-out-simple")} /></a></div>
       </div>
     </aside>
   </div>
