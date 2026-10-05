@@ -2,6 +2,16 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (session) - US trees from government registers: Fort Worth +13, Chicago 11 ready to merge, ~1,250 US leads with coordinates
+
+**The new route, and it halves the cost per tree.** Government tree registers on ArcGIS (24 of them, `data/register-sources-us.json`, read by `scripts/register_import.py`) now hold ~1,250 US leads with coordinates: Seattle 268, Norfolk 256, Miami 64, Chicago 77, Philadelphia 75, Washington DC 70, New York 78, Portland 76, Salt Lake City 70, Fort Worth 58 and more. Under the one-official-register rule, verification is a SCRIPT: register as the source, its tree-level point as a confirmed pin, `scripts/lifecheck.py` for life. Only the write pass costs tokens, ~16 to 17k per tree including city copy, against 37 to 41k for the web-research passes of 10-03.
+
+- **Fort Worth +13 (5 to 18)**: committed by a background job once the 60-in-24h pace guard allowed (00:31 UTC). ftw_018 Memorial Bur Oak is written and held in data/research/fort-worth-verified.json: the register states no access; merge it only with evidence the ground is public.
+- **Chicago: 11 trees WRITTEN AND READY TO MERGE** in data/research/chicago-verified.json (`ready_to_merge: true`), with the new intro, meta and FAQ answers in data/research/chicago-copy-draft.json. **Next run with pace room: merge all 11 into data/cities/chicago.json, apply the copy draft, run preflight, commit.** No research or writing needed. The draft also fixes a live contradiction about the golf-course trees' green fee.
+- **Next cities on the same recipe**: Philadelphia (Delaware champions, 31 above p90, check access per tree: many are home addresses), Washington DC (Farragut Square pagoda tree, Tudor Place tulip poplar; most NPS trees were already ours), Miami (free trees at Simpson Park first; most champions are behind paid gates).
+- **Never copy**: four registers carry owners' or submitters' names, emails and phones. The importer scrubs them and preflight's `check_register_leads_carry_no_contact_data()` refuses one that gets through. Virginia's layer declares its locations confidential and is never used (hard rule 10).
+- **The pace guard is now the brake**: with night runs adding trees too, about 60 new trees a day site-wide is the ceiling.
+
 ## 2026-10-06 write pass: Potsdam +5, Bamberg +1
 
 Potsdam finally has trees in Potsdam: the thousand-year oak at Sacrow (685 cm, the age is a name, not a measurement), the columnar oaks of Bassinplatz, the Weberplatz lime, the Schiffbauergasse oak and the Jungfernsee trio (approximate pin). All register-only and flagged; the Weberplatz lime and Schiffbauergasse oak ask readers to confirm they still stand. Intro, meta, question page and FAQ rewritten for 9 trees, German overlay extended. Bamberg gains the Kilianseiche in Schesslitz, 15 km out but about 26 minutes on the regional bus (VGN line 969 timetable), so inside the day-trip boundary; species and survival are asked of readers. Germany intro count to 66 cities, 303 trees. Preflight 0 problems. None of the six has a photograph yet, so under today's index rule their pages stay out of Google until one is added; the verify notes name Commons files for Sacrow, Bassinplatz, the Schiffbauergasse oak, the Jungfernsee trio and the Kilianseiche, which makes them cheap photo work.
