@@ -9301,6 +9301,20 @@
    "tokens": 0,
    "trees": 4,
    "note": "session work, no agent: merged 4 already-written verified trees, fixed Houston counts, wrote German overlays for Berlin and Munich"
+  },
+  {
+   "target": "vienna",
+   "kind": "verify",
+   "tokens": 185000,
+   "trees": 6,
+   "note": "register deepen, 6 Naturdenkmal trees with tree-level pins and stories"
+  },
+  {
+   "target": "vienna",
+   "kind": "translate",
+   "tokens": 35000,
+   "trees": 0,
+   "note": "German overlay for the 6 new Vienna trees"
   }
  ],
  "2026-10-04": [

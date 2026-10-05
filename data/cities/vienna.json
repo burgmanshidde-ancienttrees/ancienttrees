@@ -4,9 +4,9 @@
   "status": "needs_curation",
   "hero_tree_id": "vie_014",
   "intro": "Vienna keeps its oldest trees on an official register: since 1936, remarkable specimens have qualified as Naturdenkmäler, natural monuments protected the same way a listed building is. That bureaucratic habit is why this city can name an exact protection date for almost every tree on this list, down to the day. The trees below range from a plane tree Mozart is said to have walked past on his way to piano lessons to a ginkgo planted beside a composer's statue in the city's first public park. All of them are free to see.",
-  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. 32 remarkable trees, all free to visit.",
+  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. 38 remarkable trees, all free to visit.",
   "question_answer": "The oldest tree in Vienna is a plane tree tucked into the Fähnrichhof courtyard off Singerstraße in the old town, estimated at more than 280 years old. A 1987 survey already measured its age at over 250 years, and in the centuries since it has grown around part of the iron fence from St Stephen's old cathedral graveyard, closed in the 1730s. It stands a short walk from Stephansplatz, reached through a public passage from Blutgasse.",
-  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstrasse courtyard. Where it stands, and 31 more remarkable trees.",
+  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstrasse courtyard. Where it stands, and 37 more remarkable trees.",
   "question_context": "Vienna's natural monument register, running since 1936, gives an exact protection date for almost every historic tree in the city, but planting dates are rarer, so ages here are mostly expert estimates rather than documented facts. The Singerstraße plane is the exception: a formal 1987 survey put its age at more than 250 years even then, which is about as close to a hard number as Vienna's tree records get, ahead of the ginkgo by the Schubert monument and the Hauptallee's chestnut avenue, both estimated rather than surveyed. It grows in the Fähnrichhof, a courtyard reached through a passage (a Durchhaus, in local terms) connecting Blutgasse and Singerstraße in the first district, a few minutes on foot from Stephansplatz. The tree's most remarkable feature is not visible: part of the iron fence that once enclosed St Stephen's Cathedral's own graveyard, closed to burials in the 1730s, is sealed inside its trunk, absorbed by decades of growth.",
   "faq": [
     {
@@ -1166,6 +1166,203 @@
       "girth_cm": 37,
       "verify_notes": "Planted 2016, girth 37cm, per Vienna's own Baumkataster (Baum-ID 283099), offset 0.8m from the register address point.",
       "how_to_recognise": "You can recognise it by the same round, ball-shaped crown as its neighbour but on a much slimmer trunk, 0.37 metres round against the older tree's 1.17. It stands a few metres away at Schrankgasse 7-9."
+    },
+    {
+      "id": "vie_034",
+      "name": "The Wertheimsteinpark Lime",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "not documented",
+      "girth_cm": 600,
+      "location": {
+        "address": "Wertheimsteinpark, Döbling",
+        "latitude": 48.242388,
+        "longitude": 16.359928,
+        "neighbourhood": "Oberdöbling (19th district)"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/D%C3%B6bling (Naturdenkmal 828, protected 2012-02-08)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, BAUM_ID 268444, 605 cm, 6.7 m from register point)",
+        "https://de.wikipedia.org/wiki/Wertheimsteinpark"
+      ],
+      "access": "Free. Public city park, open at all hours.",
+      "transport": "Heiligenstadt (U4, S-Bahn), about 12 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Six metres round at chest height, and then the trunk stops being one trunk. About two metres up it divides into seven massive stems, and some of those divide again a metre higher. Part of the tree is hollow, and still the crown spreads 23 metres across. Vienna lists it as Natural Monument 828, protected in February 2012 together with three neighbours in the same park, and it is the thickest of the four by a wide margin: the park's Turkish hazel measures 3.5 metres and its service tree 2.3.\n\nThe city's tree cadastre records the lime at 605 centimetres and gives no planting year, so nobody has written down how old it is, and we will not guess. The ground itself has a paper trail. In 1834 the textile manufacturer Rudolf von Arthaber built a country house here and laid out a private garden. It later passed to the banker Leopold von Wertheimstein and his wife Josephine, whose circle included the writer Ferdinand von Saar, who has a bust in the park today. Whether this lime stood in their garden, no source says.\n\nWhat you can say from the path is simpler. A large-leaved lime has grown into a candelabra of seven trunks, is hollowing slowly from the inside, and is very much alive. The park falls steeply toward the Donaukanal, so come in from the Döblinger Hauptstraße side and walk down to it.",
+      "how_to_recognise": "The thickest of the park's four protected trees: a broad lime whose trunk splits into seven stems about two metres up and is partly hollow.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "Register entry 3257971 (wien-naturdenkmale.json) matches ND 828. de.wikipedia list text: girth 6 m at 1 m, divides into 7 stems at 2 m, some divide again at 3 m, partly hollow, crown 23 m. Baumkataster 605 cm, height class 16-20 m, PFLANZJAHR 0 (not defined), so no age basis; age left empty, page should ask. Commons has a photo file named 'Wiener Naturdenkmal 828 - Sommerlinde (Döbling) b.JPG' (photo hunt not done here). lifecheck on the nearby coordinate returned RECENT iNaturalist observations (2026). Pin: register point plus Baumkataster within 7 m, tree-level. Park is a public Parkanlage (62,500 m2) per de.wikipedia. Ferdinand von Saar bust and Arthaber/Wertheimstein history from de.wikipedia Wertheimsteinpark. Sister entries vie_035 (hazel) and vie_036 (service tree) in same park."
+    },
+    {
+      "id": "vie_035",
+      "name": "The Wertheimsteinpark Turkish Hazel",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "age_estimate": "not documented",
+      "girth_cm": 350,
+      "location": {
+        "address": "Wertheimsteinpark, Döbling",
+        "latitude": 48.242268,
+        "longitude": 16.360377,
+        "neighbourhood": "Oberdöbling (19th district)"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/D%C3%B6bling (Naturdenkmal 827, protected 2012-02-08)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, BAUM_ID 268437, 350 cm, 3.4 m from register point)"
+      ],
+      "access": "Free. Public city park, open at all hours.",
+      "transport": "Heiligenstadt (U4, S-Bahn), about 12 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "A Turkish hazel with a crown 25 metres wide is a surprise, because this is a species usually met as a neat, narrow street tree. Here, in the Wertheimsteinpark, one has been left to do what it wants. The trunk measures 3.5 metres round at a metre above the ground, and the crown spreads wider than the tree is tall. The city's tree cadastre puts its height in the 16 to 20 metre class, so it is a tree built outward rather than upward.\n\nVienna protected it in February 2012 as Natural Monument 827, the same day as three other trees in this park. The register gives no age and neither does the cadastre, which records no planting year, so the number of years it has stood here stays an open question. Girth for girth it is a heavy tree for its kind, and the crown, not the trunk, is the reason somebody wanted it kept.\n\nTurkish hazel comes from south-eastern Europe and Asia Minor, and its corky, flaking bark gives it an architectural look in winter, when the shape of the crown is easiest to read. The park slopes down toward the Donaukanal and holds many old and exotic plants, so it makes sense to take this tree together with the lime and the service tree on the way.",
+      "how_to_recognise": "A very wide, low-spreading hazel with grey, flaking bark and a crown wider than the tree is tall, about 100 metres from the big lime.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "Register entry 3257970 matches ND 827. de.wikipedia: girth 3.5 m at 1 m, crown 25 m, no age. Baumkataster 350 cm, height class 16-20 m, PFLANZJAHR 0. No age basis; left empty. Pin: register + Baumkataster within 3.4 m. Commons photo file named 'Wiener Naturdenkmal 827 - Baumhasel (Döbling) d.JPG' exists. Hazel is about 100 m from the lime (register points). Winter bark remark is general species knowledge, not from the registers. Lifecheck RECENT for park coordinates (2026 iNaturalist)."
+    },
+    {
+      "id": "vie_036",
+      "name": "The Wertheimsteinpark Service Tree",
+      "species": "Service Tree (Sorbus domestica)",
+      "age_estimate": "not documented",
+      "girth_cm": 230,
+      "location": {
+        "address": "Wertheimsteinpark, Döbling",
+        "latitude": 48.242431,
+        "longitude": 16.359352,
+        "neighbourhood": "Oberdöbling (19th district)"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/D%C3%B6bling (Naturdenkmal 829, protected 2012-02-08)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, BAUM_ID 269741, 236 cm, 3.0 m from register point)"
+      ],
+      "access": "Free. Public city park, open at all hours.",
+      "transport": "Heiligenstadt (U4, S-Bahn), about 12 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Most people walk past a service tree without knowing what it is, and in Central Europe that is partly because there are so few of them. Sorbus domestica is a scarce, slow-growing relative of the rowan, and this one in the Wertheimsteinpark is 2.3 metres round at a metre above the ground, with a crown about 13 metres across. The city's tree cadastre measures it at 236 centimetres and puts its height in the 16 to 20 metre class.\n\nVienna protected it in February 2012 as Natural Monument 829, one of four trees in this park given that status on the same day. It is the smallest of the four in girth, and the only one that is a rarity by species rather than by size: the lime beside it is the giant, the service tree is the curiosity.\n\nThe fruit is the reason the species has a name in German. Speierling, the small pear-shaped fruit, is traditionally added to apple wine in parts of Germany, where its tannins are valued. In Vienna's park it stands without a label of that kind, so look for pinnate leaves like an ash and flaking, scaly bark on an old trunk, and check the fruit if you come in autumn. No planting year is recorded for it, so we do not offer an age.",
+      "how_to_recognise": "A tall tree with ash-like compound leaves and scaly bark, about 40 metres from the park's big seven-stemmed lime.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "Register entry 3257972 matches ND 829. de.wikipedia: girth 2.3 m at 1 m, crown ~13 m. Baumkataster 236 cm, height class 16-20 m, PFLANZJAHR 0. No age basis. Pin within 3 m of Baumkataster point of same species. Commons photo file 'Wiener Naturdenkmal 829 - Speierling (Döbling) a.JPG' exists. The apple-wine use and 'scarce in Central Europe' are general species knowledge, not from the registers; writer may soften. Distance to lime vie_034: register points 48.242431,16.359352 vs 48.242381,16.359929 = about 43 m. Alive: lifecheck RECENT for park coords."
+    },
+    {
+      "id": "vie_037",
+      "name": "The Alois-Drasche-Park Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "about 130 years",
+      "age_min": 100,
+      "age_max": 160,
+      "girth_cm": 337,
+      "location": {
+        "address": "Alois-Drasche-Park, Wieden",
+        "latitude": 48.185895,
+        "longitude": 16.368166,
+        "neighbourhood": "Wieden (4th district)"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Wieden (Naturdenkmal 842, protected 2018-06-18)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, BAUM_ID 227677, planted 1895, 337 cm, 0.0 m from register point)"
+      ],
+      "access": "Free. Public city park.",
+      "transport": "Wien Hauptbahnhof (U1, S-Bahn, trains), about 8 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "When a city protects a tree for its profile, it is saying something simple: this one shapes the neighbourhood. Vienna entered the beech of the Alois-Drasche-Park in June 2018 as Natural Monument 842, and its description is exactly that, a mighty free-standing crown that marks the character of its surroundings. A beech grows into that shape only when nothing has crowded it for a long time.\n\nThe city's tree cadastre puts the planting at 1895, which makes it about 130 years old, and records the trunk at 337 centimetres round and the height in the 21 to 25 metre class. A planting year in a cadastre is a record rather than a birth certificate, so read the age as a broad range, but it fits the girth: a beech with a trunk like this is a large tree by any standard.\n\nThe park is a small green block in Wieden, a short walk from the Hauptbahnhof, and the beech is the thing in it you notice from a distance. A Serbian spruce and a yew stand beside it, both recorded in the cadastre as planted around 2000. They make a useful scale: the beech has been growing for more than four times as long as either. It is one of the more recently protected Natural Monuments in the register, and one of the easiest to reach.",
+      "how_to_recognise": "The one big free-standing beech with a very wide crown, with a young Serbian spruce and a yew beside it.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "Register entry 3257993 matches ND 842, protected 2018-06-18, wording from de.wikipedia: 'maechtige ortsbildpraegende Freistandskrone', protected for its special character for the surroundings. Baumkataster BAUM_ID 227677: PFLANZJAHR 1895, STAMMUMFANG 337, height class 21-25 m, offset 0.0 m. Age band 100-160 derived from the cadastre planting year (a recorded year, not independent). Neighbours in cadastre: Picea omorika planted 2001, Taxus baccata 1997 (my reading 'planted around 2000'). Commons photo file 'Wiener Naturdenkmal 842 - Rotbuche, Wieden 03.jpg' exists. lifecheck RECENT."
+    },
+    {
+      "id": "vie_038",
+      "name": "The Waldmüllerpark Wingnuts",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "not documented",
+      "girth_cm": 251,
+      "location": {
+        "address": "Waldmüllerpark, Landgutgasse 61-65",
+        "latitude": 48.180707,
+        "longitude": 16.365965,
+        "neighbourhood": "Favoriten (10th district)"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Favoriten (Naturdenkmal 845, protected 2019-01-07)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, BAUM_ID 193701, 251 cm, 6.8 m from register point 3257996)"
+      ],
+      "access": "Free. Public city park.",
+      "transport": "Wien Hauptbahnhof (U1, S-Bahn, trains), about 12 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The city protected these two trees for a reason that is almost modest: rarity. Natural Monument 845, entered in January 2019, covers a pair of Caucasian wingnuts in the Waldmüllerpark in Favoriten, which the register says deserve keeping because of their scarcity and the character they give the landscape. Nothing is claimed about age or fame. The case rests on the trees themselves.\n\nThe cadastre measures one of the two at 251 centimetres round and places its height in the 31 to 35 metre class, a rough figure but a tall one. It records no planting year, so we offer no age. Wingnuts grow fast and wide and throw up suckers, which is why old ones often look like a thicket of stems rather than one trunk.\n\nPterocarya fraxinifolia comes from the Caucasus and northern Iran. The leaves look like an ash's, long and divided, and in summer the tree hangs chains of winged fruit that give the genus its name. That is the thing to look for. The two trees stand about 25 metres apart, and the register treats them as one monument.",
+      "how_to_recognise": "A pair of tall wingnuts about 25 metres apart, with long ash-like leaves and, in summer, hanging chains of winged fruit.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "Pair folded into one entry: register ids 3257995 (48.180492,16.366176) and 3257996 (48.180707,16.365965). ND 845, protected 2019-01-07, de.wikipedia says 'der suedoestlichere der beiden Baeume' for the 48.180491 point. WARNING on pin: Baumkataster at 3257995 point returns a Celtis occidentalis 3.4 m away, not a wingnut, so only the 3257996 tree is confirmed by the cadastre (Pterocarya, BAUM_ID 193701, 251 cm, height class 31-35 m, PFLANZJAHR 0, 6.8 m offset). Pin set on 3257996. Commons file 'Wien 10 Waldmuellerpark b.jpg' is attached in the wiki list. No age basis. lifecheck RECENT (2026 iNaturalist)."
+    },
+    {
+      "id": "vie_039",
+      "name": "The Heiligenstädter Park Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 320,
+      "girth_cm": 654,
+      "location": {
+        "address": "Heiligenstädter Park, Döbling",
+        "latitude": 48.253169,
+        "longitude": 16.355912,
+        "neighbourhood": "Heiligenstadt (19th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, BAUM_ID 265109, Tilia cordata, PFLANZJAHR 1725, 654 cm, 0.0 m from register point)",
+        "data/registers/wien-naturdenkmale.json (register_id 3257456, Winterlinde, Heiligenstädter Park)"
+      ],
+      "access": "Free. Public city park.",
+      "transport": "Heiligenstadt (U4, S-Bahn), about 12 minutes on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "At 6.5 metres around, this is a serious lime, and it stands in a small park in Heiligenstadt that most visitors to the city never reach. The city's tree cadastre lists it as a small-leaved lime with a recorded planting year of 1725 and a girth of 654 centimetres, and puts its height in the 21 to 25 metre class. If the year is close, the tree is roughly three hundred years old, which would make it older than the park around it by a wide margin.\n\nTreat that date with care. A cadastre entry for a tree this age is an estimate recorded by the city's gardeners, not a planting document, and we found no second source for it, so the page carries the figure as a broad range rather than a fact. What does stand up is the trunk. A girth of 654 centimetres in a small-leaved lime is a serious tree, and the register protects it as a Natural Monument.\n\nThe park lies in Heiligenstadt, which is now part of Döbling. Two horse chestnuts stand within a few metres, planted in 1896 and 1961 according to the cadastre, so the lime is easy to tell from its neighbours by size alone. If you measure it, tell us what you get.",
+      "how_to_recognise": "A small-leaved lime with a trunk about 6.5 metres round, standing beside two much younger horse chestnuts.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "FLAGGED: register-only plus the city's own cadastre (both Vienna, not independent for age). Register_id 3257456 in wien-naturdenkmale.json; no de.wikipedia list entry found for this tree in the Doebling list (searched 'Heiligenstaedter Park' - none), so ND number and protection wording not confirmed. Baumkataster BAUM_ID 265109: Tilia cordata, PFLANZJAHR 1725, STAMMUMFANG 654, height class 21-25 m, offset 0.0 m. A 1725 planting year on a cadastre is almost certainly an estimate; age band 250-320 broad. Neighbours in cadastre: Aesculus hippocastanum planted 1896 (296 cm) at 7.8 m, and 1961 (180 cm) at 9.3 m. No photograph candidate found (Commons geosearch within 100 m only shows park and Beethoven Museum views). Pin confirmed by register + cadastre. lifecheck RECENT (iNaturalist 2025-2026 near coords). Park public per Wikimedia 'Heiligenstaedter Park' photos; not independently checked for opening hours."
     }
   ],
   "oldest_tree_id": "vie_001"
