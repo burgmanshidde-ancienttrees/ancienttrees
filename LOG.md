@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 session: only tree pages with a photograph stay in Google
+
+- **Why:** search has sat at ~50 to 70 impressions a day since 09-28 (2 percent of before). The rising average position is an artefact of that tiny tail, not a further fall. Meanwhile ~1,850 indexed tree pages had an AI-drafted story and no photograph, the scaled-content shape the spam update targets.
+- **What changed (Hidde's yes):** `INDEX_NEEDS_PHOTO = True` in scripts/thin_pages.py. Tree pages without a photo get noindex in every language; they stay live and return on the next deploy after gaining a photo. noindex.json: 8,935 to 11,487 paths, about 1,700 site pages remain indexable. The new paths carry 2026-10-06 in sitemap-recrawl.xml so Google refetches them soon.
+- **Consequence for runs:** a photograph is now the only way a tree page reaches Google. Photo work (photo_gaps, the review page) outranks pins and recognition lines as depth.
+- **Not done, open for Hidde:** pausing new trees altogether (step 1 of the session proposal). Also Search Console: is sitemap-recrawl.xml submitted, and is "Excluded by noindex" rising.
+
 ## 2026-10-05 afternoon window: Vienna +5, Boston +1
 
 Visits last 7 days: 1,540 (1,730 pageviews). Munich was full, so Vienna (379 register rows) took the verify pass: 5 Naturdenkmal trees (vie_040 to 044; the Max-Patat plane has an approximate pin, the Wahring oak and Freiligrath poplars are flagged). Merged with German overlay, Vienna 43, Austria 84. Also merged Boston's Endicott Pear (Danvers, about 25 km out, labelled as such). Held: lpz_019 and nbg_018 (access unconfirmed). fdl_001 duplicates spa_001; the two pins are 3 km apart, so spa_001 needs a pin check. Preflight 0 problems.

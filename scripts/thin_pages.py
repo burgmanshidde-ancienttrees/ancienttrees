@@ -27,7 +27,17 @@ import os
 import re
 import unicodedata
 
-from findable import findable
+from findable import findable, has_photo
+
+# Only a tree page WITH a photograph stays in Google's index (Hidde, 2026-10-06:
+# "laten we voor stap 2 gaan", after the demotion had held flat for eight days
+# while the night runs kept adding trees). A page with an AI-drafted story and
+# no picture is the scaled-content shape the September 2026 spam update hits,
+# however findable the tree is on the ground. findable() still decides what a
+# night run may ADD (preflight); this decides only what Google is asked to list.
+# The page stays live, and it returns to the index on the next deploy after it
+# gains a photograph. False restores the findable rule of 2026-10-04.
+INDEX_NEEDS_PHOTO = True
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://ancienttrees.app"
@@ -129,8 +139,9 @@ def main():
         #    gains either.
         #    Widened 2026-10-04: a pin on a small named site plus a recognition
         #    line counts as findable too (scripts/findable.py, shared with preflight).
+        #    Narrowed 2026-10-06: a photograph is required (INDEX_NEEDS_PHOTO).
         for t, ts in zip(trees, tslugs):
-            if findable(t):
+            if has_photo(t) if INDEX_NEEDS_PHOTO else findable(t):
                 continue
             groups["weak_trees"] += [f"{BASE}/{slug}/{ts}"] + [f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real]
         # 2. Places with one to three trees: the PLACE pages leave the index,
@@ -181,7 +192,7 @@ def main():
            f"| 1 | Fallback language pages: the English text on a /de/, /es/ ... URL | {len(set(groups['fallback']))} |",
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
-           f"| 4 | Tree pages nobody could find: no photograph, no confirmed pin, no small site with a recognition line | {len(set(groups['weak_trees']))} |",
+           f"| 4 | Tree pages without a photograph (since 2026-10-06; before that: without a photo, a confirmed pin or a small site) | {len(set(groups['weak_trees']))} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",
            f"Thin places kept indexed ({len(kept_thin)}), a destination tree or real impressions: " +
