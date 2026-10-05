@@ -1,0 +1,111 @@
+{
+ "_note": "fr overlay for luxembourg-city, written 2026-10-06 from data/cities/luxembourg-city.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Luxembourg-Ville",
+ "title": "Arbres remarquables de Luxembourg-Ville : les 10 plus beaux",
+ "meta_description": "Les arbres protégés de Luxembourg-Ville, une promenade à travers deux vallées : un marronnier planté pour un prince en 1921, un séquoia sans son jumeau.",
+ "intro": "Presque tous se trouvent à moins de vingt minutes à pied les uns des autres, ce qui est rare pour une capitale. La vieille ville est posée sur un rocher entouré de deux vallées fluviales, et les arbres protégés se tiennent dans ces vallées et dans la ceinture de parcs qui longe le rebord : un hêtre calé contre le mur d'un bastion, un marronnier planté en 1921 pour la naissance d'un prince, un ginkgo devenu plus épais et plus court entre deux mesures. L'État les recense tous par règlement. La plupart, il ne les a jamais mesurés.",
+ "question_title": "Quel est le plus vieil arbre de Luxembourg ? (env. 150 ans)",
+ "question_meta": "Le séquoia géant du parc Amélie est le plus vieil arbre de Luxembourg-Ville, avec environ 150 ans. Où il se trouve, et ce qui est arrivé à son jumeau.",
+ "question_answer": "Le plus vieil arbre de Luxembourg-Ville, sur la seule base publiée, est le séquoia géant du parc Amélie, âgé d'environ 150 ans : on l'estimait à quelque 140 ans en 2018. Il se dresse près du monument à la grande-duchesse Amalia, à sept ou huit minutes à pied de l'arrêt de tram Royal-Hamilius, et jusqu'au 28 février 2026 il avait un jumeau à quatorze mètres, abattu ce jour-là à cause d'un armillaire installé dans ses racines.",
+ "question_context": "La réponse s'accompagne d'une réserve, car la ville protège ses arbres remarquables par règlement sans les dater. La plupart des arbres de cette liste n'ont aucun âge enregistré : le registre donne un numéro, une espèce et un emplacement, et s'arrête là. Pour le hêtre sous le bastion Beck, la source se contente de dire que son âge dépasse sûrement cent ans. Pour le ginkgo de la place Dargent, la source déclare franchement que son âge n'est pas connu. Le séquoia emporte donc le titre sur la foi d'une seule estimation publiée, environ 140 ans en 2018, et n'importe lequel des arbres non datés pourrait en principe être plus vieux. Un arbre de la liste a bien une date, et de la sorte la plus solide qui soit. Le marronnier du parc Pescatore a été planté en 1921 pour célébrer la naissance du prince Jean, futur grand-duc, et porte son nom depuis, ce qui lui donne exactement 105 ans. Quant au jumeau abattu du séquoia, il a laissé une souche dans le parc Amélie. Si quelqu'un en a compté les cernes, nous aimerions le savoir.",
+ "faq": [
+  {
+   "q": "Quel est le plus vieil arbre de Luxembourg-Ville ?",
+   "a": "Le séquoia géant du parc Amélie, avec environ 150 ans. C'est une estimation plutôt qu'une donnée enregistrée : la plupart des arbres protégés de la ville n'ont jamais été datés."
+  },
+  {
+   "q": "Peut-on aller de l'un à l'autre à pied ?",
+   "a": "Tous sauf le chêne du Bambesch, qui se trouve en forêt au-dessus du Rollingergrund. Les autres sont sur les sentiers des vallées de la Pétrusse et de l'Alzette et dans les parcs de l'avenue Marie-Thérèse, à une vingtaine de minutes à pied les uns des autres. On rejoint l'érable sycomore du Pfaffenthal par l'ascenseur qui descend du plateau."
+  },
+  {
+   "q": "La visite est-elle gratuite ?",
+   "a": "Oui. Chaque arbre de cette page se trouve dans un parc public, sur un sentier public de vallée ou dans une forêt publique. Ni billet, ni grille."
+  },
+  {
+   "q": "Qu'est-il arrivé au second séquoia du parc Amélie ?",
+   "a": "Il a été abattu le 28 février 2026 après la découverte d'un armillaire dans ses racines. Son bois doit servir à fabriquer des bancs pour le parc, et un jeune séquoia a été planté à sa place."
+  }
+ ],
+ "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+ "trees": {
+  "lux_001": {
+   "name": "Le marronnier du square Robert-Brasseur",
+   "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, dans un square public du centre-ville",
+   "transport": "Arrêt de tram et de bus Théâtre, 2 min à pied ; gare de Luxembourg, environ 20 min à pied",
+   "story": "Ce marronnier se divise vers trois mètres en dix branches vigoureuses et monte de là comme un candélabre, déployant une couronne d'une quinzaine de mètres au-dessus d'un petit square face au Grand Théâtre. Il mesure 23,5 mètres de haut. Sa bonne santé tient en partie à l'endroit où il se trouve : les marronniers supportent mal le sel répandu sur les routes en hiver, et celui-ci est assez en retrait pour que le ruissellement ne l'atteigne pas.\n\nIl pousse aussi très lentement. Le registre a mesuré le tronc à 1,30 mètre vers l'an 2000 et à 1,37 en 2022, soit sept centimètres en vingt-deux ans. Lisez-y un rythme plutôt qu'une valeur absolue : les sources ne disent pas clairement si le chiffre est la circonférence du tronc ou son diamètre, ce qui fait toute la différence entre un arbre élancé et un arbre massif.\n\nPersonne ne l'a daté. Le règlement grand-ducal qui protège les arbres remarquables du Luxembourg le recense par un numéro, une espèce et une section, et les ouvrages de référence qui le décrivent donnent des mesures sans année de plantation. Il est entré sur la liste officielle en 2002. Si une trace de sa plantation existe quelque part, nous aimerions la voir."
+  },
+  "lux_002": {
+   "name": "Le ginkgo de la place Dargent",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, dans un parc public place Dargent",
+   "transport": "Arrêts de bus Eich, Rue de Trèves, environ 5 min à pied",
+   "story": "Entre deux mesures, ce ginkgo a gagné presque un mètre de tour et perdu presque un mètre de hauteur. Le tronc est passé de 3,67 mètres de circonférence vers l'an 2000 à 4,59 en 2023. La hauteur est descendue de 24 mètres à 23,1 sur la même période. Ce second chiffre est consigné tel quel, sans la moindre explication nulle part, et nous le transmettons de la même façon.\n\nIl pousse dans le parc de la villa qui appartenait au notaire Fritz Weber, place Dargent à Eich, que les gens d'ici appellent l'Eecher Plaz. La littérature luxembourgeoise consacrée aux arbres remarquables le présente comme le ginkgo le plus imposant de son espèce dans le pays, et il figure sur la liste officielle depuis 2002.\n\nSon âge n'est pas connu, et la source le dit en toutes lettres au lieu d'avancer un chiffre. Cela mérite d'être noté, car un ginkgo de cette taille invite à deviner, et l'espèce pousse assez lentement pour que n'importe quelle estimation se trompe de plusieurs décennies.\n\nC'est en novembre qu'il vaut le déplacement. Les feuilles de ginkgo virent à un jaune beurre uniforme puis tombent presque toutes ensemble, si bien que l'arbre passe quelques jours tout doré et quelques autres debout dans un cercle d'or qu'il a lui-même formé."
+  },
+  "lux_003": {
+   "name": "Le hêtre du bastion Beck",
+   "species": "Hêtre commun (Fagus sylvatica)",
+   "age_estimate": "plus d'un siècle",
+   "access": "Gratuit, sur le sentier public qui traverse le parc de la vallée de la Pétrusse",
+   "transport": "Place de la Constitution ou pont Adolphe, environ 10 min à pied en descendant dans la vallée",
+   "story": "En vingt-trois ans, ce hêtre a ajouté un centimètre à son tronc. Le registre le donne à 1,30 mètre vers l'an 2000 et à 1,31 en 2023. En hauteur, il a mieux réussi, passant de 22 mètres à 22,7, et sa couronne n'a poussé que dans un sens : pleine et large au-dessus de la vallée de la Pétrusse, étriquée et courte du côté du mur de la forteresse. Un arbre qui a passé sa vie à s'écarter de la maçonnerie finit par prendre la forme de l'espace qu'on lui a laissé.\n\nSes branches ont été haubanées par des arboristes quelques années avant le dernier relevé, ce qui arrive à un arbre que l'État a décidé de garder.\n\nOn l'atteint à pied depuis l'avenue Marie-Thérèse, en descendant dans la vallée, en passant le pont Adolphe et en suivant le sentier jusqu'à un ancien bâtiment de transformateur. Le hêtre est sur la droite. La descente prend une dizaine de minutes depuis la place de la Constitution, et le chemin est public sur toute sa longueur.\n\nPersonne ne l'a daté. La source qui le décrit le plus en détail se contente de dire que son âge dépasse sûrement cent ans, et nous l'avons laissé tel quel plutôt que d'en faire un chiffre plus flatteur et moins juste."
+  },
+  "lux_004": {
+   "name": "Le hêtre pourpre du parc Pescatore",
+   "species": "Hêtre pourpre (Fagus sylvatica f. purpurea)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, dans le parc Pescatore, parc public",
+   "transport": "Arrêt de tram Royal-Hamilius, environ 7 min à pied",
+   "story": "L'État a placé cet arbre sous protection, puis n'a plus rien écrit à son sujet. Il figure dans le règlement grand-ducal du 31 janvier 2025 sous le numéro 129, un hêtre pourpre du parc Pescatore, et c'est là tout le dossier public : ni âge, ni circonférence, ni hauteur, ni photographie. Ses voisins du même parc s'en sont nettement mieux tirés. Le marronnier à quelques pas a une année de plantation, un nom, une plaque et une cage.\n\nCe qui se trouve réellement là, c'est un hêtre pourpre, la forme à feuilles pourpres du hêtre commun, dans un parc du centre-ville donnant sur l'avenue Marie-Thérèse, qui abrite aussi des sculptures et plusieurs autres arbres classés. Fin avril et en mai, il fait ce pour quoi on plante cette forme : ses jeunes feuilles s'ouvrent d'un rouge translucide avant de foncer pour l'été. En août, il paraît presque noir au milieu de tout ce qui l'entoure.\n\nSi vous y allez, les deux choses utiles à rapporter sont un tour de tronc mesuré à hauteur de poitrine et une photographie. L'une ou l'autre nous en apprendrait davantage sur cet arbre que le registre, et le registre est pour l'instant le seul à savoir qu'il existe."
+  },
+  "lux_005": {
+   "name": "Le séquoia géant du parc Amélie",
+   "species": "Séquoia géant (Sequoiadendron giganteum)",
+   "age_estimate": "environ 150 ans",
+   "access": "Gratuit, dans le parc Amélie, parc public",
+   "transport": "Arrêt de tram Royal-Hamilius, environ 8 min à pied",
+   "story": "Jusqu'en février de cette année, ils étaient deux. Une paire de séquoias géants se dressait à 14,6 mètres l'un de l'autre dans le parc Amélie, près du monument à la grande-duchesse Amalia, plantés ensemble et grandis ensemble pendant environ un siècle et demi. Le 28 février 2026, le plus grand est tombé. L'armillaire s'était installé dans ses racines et il n'y avait plus moyen de le garder. Son bois doit devenir des bancs pour le parc où il a poussé, et un jeune séquoia a été mis en terre à sa place.\n\nLe survivant est le plus petit des deux, 27 mètres de haut pour un tronc de 4,58 mètres au dernier relevé, contre 32 mètres et 6,15 pour celui qui a été abattu. On l'estimait à environ 140 ans en 2018, ce qui le met près de 150 aujourd'hui. On attribue généralement la paire à l'architecte paysagiste Édouard André, qui a dessiné cette suite de parcs le long du plateau, mais aucun document ne donne l'année de leur plantation.\n\nUne remarque honnête sur le repère de la carte. Le registre contient deux coordonnées distantes de 14,6 mètres sans jamais dire quel arbre correspond à laquelle, nous avons donc marqué la paire plutôt que de deviner. Sur place, impossible de se tromper : l'un est un séquoia adulte, l'autre une souche avec un jeune plant à côté."
+  },
+  "lux_006": {
+   "name": "Le marronnier du Prince Jean",
+   "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+   "age_estimate": "105 ans",
+   "access": "Gratuit, dans le parc Pescatore, parc public",
+   "transport": "Arrêt de tram Royal-Hamilius, environ 7 min à pied",
+   "story": "C'est le seul arbre de cette liste dont personne n'a à estimer l'âge. Il a été planté en 1921 pour célébrer la naissance du prince Jean, le 5 janvier de cette année-là, et il porte son nom depuis. Le prince est devenu grand-duc. L'arbre a 105 ans.\n\nC'est un marronnier du parc Pescatore, qui mesurait 3,64 mètres de tour et 23 mètres de haut au dernier relevé, vers l'an 2000. Porter un nom lui a coûté un peu de liberté. La plaque Arbre du Prince Jean était autrefois fixée sur le tronc même, comme le montre encore une photographie de 2002 ; en 2008, une cage métallique a été posée autour du tronc pour le protéger, et la plaque est passée sur la cage.\n\nL'homme qu'il honore a gardé l'habitude. En 1989, pour le vingt-cinquième anniversaire de son accession au trône, le grand-duc Jean a offert un jeune tilleul à chaque commune du pays, si bien qu'il existe toute une génération de tilleuls luxembourgeois du même âge pour la même raison.\n\nSeptembre et octobre sont les mois où il vaut un détour avec des enfants. Les marronniers lâchent leurs marrons, et un arbre adulte au-dessus d'une allée de parc en lâche énormément."
+  },
+  "lux_007": {
+   "name": "Le chêne du Bambesch",
+   "species": "Chêne pédonculé (Quercus robur)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, dans la zone de loisirs forestière publique du Bambesch",
+   "transport": "Bus jusqu'à Rollingergrund/Bambesch, puis à pied par un chemin forestier ; compter 20 à 25 min depuis le centre-ville en bus et à pied",
+   "story": "Le registre luxembourgeois prévoit une demi-douzaine de motifs pour protéger un arbre, et ce chêne a été inscrit pour un seul d'entre eux : sa forme. Pas sa place dans le paysage, pas sa biologie, pas sa dendrologie, ni l'histoire ni la commémoration. Quelqu'un s'est tenu devant lui, a jugé que sa silhouette méritait d'être conservée, et a noté un numéro.\n\nCe numéro est le 136 du règlement grand-ducal du 31 janvier 2025, et c'est à peu près tout ce que contient le dossier public. Ni âge, ni circonférence, ni hauteur, et aucune photographie partout où nous avons cherché, ce qui en fait l'entrée la plus mince d'ici et sans doute la plus intéressante de la liste. Personne ne vous a dit à quoi vous attendre.\n\nC'est aussi le seul arbre de la liste vraiment hors de la ville. Le Bambesch est une forêt publique au-dessus du Rollingergrund, à vingt ou vingt-cinq minutes du centre en bus puis à pied, et c'est un grand bois. Notre repère est le point du registre lui-même, qui situe la forêt plutôt que le tronc, alors prévoyez de le chercher.\n\nSi vous le trouvez, photographiez-le. Pour autant que nous sachions, ce serait la première image de cet arbre où que ce soit."
+  },
+  "lux_008": {
+   "name": "L'érable sycomore de Hollerich",
+   "species": "Érable sycomore (Acer pseudoplatanus)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, sur le sentier public de la vallée de la Pétrusse",
+   "transport": "Arrêts de bus Hollerich, Rue de Bouillon, environ 10 min à pied en descendant dans la vallée",
+   "story": "Quelqu'un a photographié cet érable sycomore, et personne ne l'a mesuré. La photographie se trouve sur Wikimedia Commons, calée sur la coordonnée du registre à un tiers de mètre près, et au-delà il n'existe qu'une ligne dans un règlement. Ni âge, ni circonférence, ni hauteur.\n\nLe règlement donne tout de même ses raisons de conserver l'arbre, et il en nomme deux plutôt qu'une : sa place dans le paysage et son intérêt biologique. En quoi consiste cet intérêt biologique, aucune source que nous ayons trouvée ne le précise, ce qui est dommage, car sur un arbre adulte c'est souvent la moitié la plus intéressante de la réponse.\n\nIl se trouve sur le tronçon de Hollerich du sentier de la vallée de la Pétrusse, à l'autre bout de la même promenade qui passe sous le hêtre haubané du bastion Beck. La vallée continue vers l'ouest hors du rocher de la forteresse et traverse Hollerich, et le sentier reste public tout du long. Depuis les arrêts de bus de la rue de Bouillon, il faut une dizaine de minutes pour descendre.\n\nNi cet érable ni celui du Pfaffenthal n'ont jamais été datés. Si vous savez quoi que ce soit sur l'un ou l'autre, y compris qui les a plantés et à peu près quand, nous sommes preneurs."
+  },
+  "lux_009": {
+   "name": "L'érable sycomore du Pfaffenthal",
+   "species": "Érable sycomore (Acer pseudoplatanus)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit. Il se trouve sur les chemins de la vallée du Pfaffenthal, sous la vieille ville, qui sont publics. Nous n'avons pas confirmé quel chemin passe au plus près du tronc, alors attendez-vous à chercher un peu une fois en bas.",
+   "transport": "Station de l'ascenseur et du funiculaire Pfaffenthal-Kirchberg, puis courte marche",
+   "story": "C'est le seul arbre de cette liste auquel on accède en ascenseur. La station Pfaffenthal-Kirchberg vous fait descendre du plateau jusqu'à la ville basse au bord de l'Alzette, et l'érable se trouve quelque part sur les chemins de la vallée sous l'ancienne ville fortifiée, à quelques pas de la porte.\n\nQuelque part est le mot honnête. Le registre donne un point, une photographie de Commons et un nœud OpenStreetMap concordent avec ce point à un mètre près, et pas une seule source ne décrit comment on s'approche réellement de l'arbre. Les chemins en contrebas sont publics et le Pfaffenthal n'est pas un grand quartier, vous y arriverez donc, mais attendez-vous à chercher. Nous préférons le dire plutôt que d'envoyer quelqu'un en bas avec une fausse assurance.\n\nLe règlement le classe sous deux rubriques, l'intérêt paysager et l'intérêt dendrologique, ce qui veut dire qu'on le juge digne d'être vu en tant que spécimen, et pas seulement pour son emplacement. L'âge, la circonférence et la hauteur sont vides, et aucune mesure de cet arbre ne semble avoir été publiée nulle part.\n\nCe que la promenade offre de toute façon, c'est la vue d'en bas : la ville basse au bord de la rivière, le plateau qui la domine, et un grand érable au milieu de tout cet ensemble."
+  },
+  "lux_010": {
+   "name": "Le chêne Krombach",
+   "species": "Chêne pédonculé (Quercus robur)",
+   "access": "Gratuit, dans le parc Louvigny, parc public de la Ville-Haute ; ouvert en permanence, aucune restriction relevée.",
+   "transport": "Centre de Luxembourg-Ville, Ville-Haute, près de la Villa Louvigny ; accessible à pied depuis le centre, à environ 500 m du séquoia géant du parc Amélie et de l'érable sycomore de Hollerich.",
+   "story": "Quelqu'un a planté ce chêne en l'honneur d'un botaniste, puis a oublié de noter quand.\n\nLe chêne Krombach se dresse dans le parc Louvigny, dans la ville haute de Luxembourg, et porte le nom de Jean-Henri-Guillaume Krombach, pharmacien et botaniste qui vécut de 1791 à 1881. La fiche associée à l'arbre donne l'année 1875 sans dire ce qui s'est passé en 1875. Si c'est la plantation, Krombach avait plus de quatre-vingts ans et a pu voir mettre en terre l'arbre qui porte son nom. Si c'est plutôt la dédicace, le chêne pourrait être plus vieux ou plus jeune que la date ne le laisse croire. Personne n'a tranché, l'âge reste donc ici une question ouverte plutôt qu'un chiffre, et quiconque a passé un mètre ruban autour du tronc peut en régler l'essentiel en un message.\n\nLe reste ne fait pas de doute. C'est un chêne pédonculé dans un parc public sans grille ni horaires, à cinq cents mètres du séquoia géant du parc Amélie et de l'érable de Hollerich, ce qui place trois des meilleurs arbres de la ville à moins de vingt minutes à pied les uns des autres.\n\nL'homme qu'il honore a consacré sa vie aux plantes et a reçu une plante. Celui qui a fait ce choix a pris le monument le plus lent qui soit, et celui qui a le plus de chances de survivre à ceux qui se souviennent de sa raison d'être."
+  }
+ }
+}

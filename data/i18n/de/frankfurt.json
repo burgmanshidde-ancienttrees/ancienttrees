@@ -1,0 +1,79 @@
+{
+ "_note": "de overlay for frankfurt, written 2026-10-06 from data/cities/frankfurt.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Frankfurt",
+ "title": "Alte Bäume in Frankfurt: 6 bemerkenswerte Naturdenkmäler",
+ "meta_description": "Frankfurts Naturdenkmal-Bäume: die Linde, um die sich die U-Bahn biegt, eine Blutbuche von 1815 im Palmengarten und eine Platane mit sieben Metern Umfang.",
+ "intro": "Frankfurt hat lieber eine U-Bahn-Strecke gekrümmt, als eine Linde zu verlieren. Ungefähr so steht die Stadt zu ihren alten Bäumen: Ein amtliches Naturdenkmalverzeichnis, zuletzt im Oktober 2025 aktualisiert, schützt einzelne Bäume Straße für Straße. Vier der sechs Bäume hier stehen wenige hundert Meter voneinander entfernt im Westend, zwischen Palmengarten, Botanischem Garten und Grüneburgpark, und das ist der Spaziergang. Die anderen beiden sind die Linde selbst, draußen in Eschersheim, und eine Platane von etwa 1820 in einem Parkstreifen mitten in der Stadt.",
+ "question_title": "Was ist der älteste Baum Frankfurts? (über 300 Jahre)",
+ "question_meta": "Die Eschersheimer Linde, eine Sommerlinde vom Ende des 17. Jahrhunderts, ist Frankfurts ältester geschützter Baum. Die Station Lindenbaum heißt nach ihr.",
+ "question_answer": "Frankfurts ältester dokumentierter Baum ist die Eschersheimer Linde an der Eschersheimer Landstraße, eine Sommerlinde, die auf das Ende des 17. Jahrhunderts datiert wird und seit 1937 als Naturdenkmal geschützt ist. Sie steht neben der nach ihr benannten U-Bahn-Station Lindenbaum, an einem Abschnitt, an dem die Strecke einen leichten Bogen macht, statt unter ihren Wurzeln hindurchzuführen.",
+ "question_context": "Frankfurt datiert seine geschützten Bäume über ein städtisches Verzeichnis und nicht über Legenden, was die Antwort ungewöhnlich überprüfbar und ungewöhnlich bescheiden macht. Die Eschersheimer Linde ist der einzige Baum dieser Liste aus der Zeit vor dem 19. Jahrhundert. Alles andere mit einem Datum ist eine Parkpflanzung: eine Blutbuche von 1815, eine Hängebuche von 1845, eine Platane am Nebbienschen Gartenhaus von etwa 1820 und ein Urweltmammutbaum von etwa 1950, was so alt ist, wie ein Urweltmammutbaum in Europa überhaupt sein kann, denn die Art war nur aus Fossilien bekannt, bis 1943 in China lebende Bäume gefunden wurden. Der Stamm der Linde misst fünf Meter Umfang. Ihr Alter wird als Ende des 17. Jahrhunderts angegeben und nicht als Jahreszahl, was die ehrliche Form ist für einen Baum, den niemand angebohrt hat. Ein Baum hier hat überhaupt kein Alter: die achtstämmige Linde im Grüneburgpark, eine Bündelpflanzung, deren Pflanzjahr keine Quelle nennt, die wir gefunden haben. Wenn Sie es kennen, schreiben Sie uns.",
+ "faq": [
+  {
+   "q": "Was ist der älteste Baum Frankfurts?",
+   "a": "Die Eschersheimer Linde, eine Sommerlinde vom Ende des 17. Jahrhunderts, seit 1937 als Naturdenkmal geschützt. Sie steht an der öffentlichen Straße neben der U-Bahn-Station Lindenbaum."
+  },
+  {
+   "q": "Kann man mehrere alte Bäume Frankfurts auf einem Spaziergang sehen?",
+   "a": "Ja. Vier der sechs stehen im Westend, wenige hundert Meter voneinander entfernt: zwei Buchen im Palmengarten, der Urweltmammutbaum im Botanischen Garten nebenan und die achtstämmige Linde im Grüneburgpark. Die Station für alle vier ist Bockenheimer Warte."
+  },
+  {
+   "q": "Kosten Frankfurts alte Bäume Eintritt?",
+   "a": "Vier der sechs nicht: Die Eschersheimer Linde steht an einer öffentlichen Straße, Grüneburgpark und Bockenheimer Anlage sind offene Parks, und der Botanische Garten verlangt nichts. Die beiden Buchen stehen im Palmengarten, der Eintritt kostet."
+  },
+  {
+   "q": "Warum macht die U-Bahn an der Station Lindenbaum einen Bogen?",
+   "a": "Weil die Linde zuerst da war und die Stadt sie behalten hat. Die Station trägt den Namen des Baumes, und die Strecke biegt dort, wo er steht, leicht ab."
+  }
+ ],
+ "strings_note": "Felder pro Baum: name, species (deutscher Artname, gleiche lateinische Bezeichnung), age_estimate, access, transport, story. Stories 150-250 Wörter, gleiche Messlatte wie im Englischen, keine Gedankenstriche.",
+ "trees": {
+  "frk_001": {
+   "name": "Die Eschersheimer Linde",
+   "species": "Sommerlinde (Tilia platyphyllos)",
+   "age_estimate": "über 300 Jahre",
+   "access": "Kostenlos, direkt an der öffentlichen Straße (Eschersheimer Landstraße), jederzeit sichtbar",
+   "transport": "U-Bahn-Station Lindenbaum (U1/U2/U3/U8) direkt daneben; die U-Bahn macht um den Baum einen Bogen",
+   "story": "Frankfurt hat lieber eine U-Bahn-Strecke gekrümmt, als diese Linde zu verlieren. Die U-Bahn unter der Eschersheimer Landstraße macht dort, wo der Baum steht, einen leichten Bogen, die Station daneben heißt Lindenbaum, und die Straße ebenso. Das ist eine Menge Infrastruktur, benannt nach einer einzigen Sommerlinde.\n\nGepflanzt wurde sie Ende des 17. Jahrhunderts als Landmarke an einer damals offenen Landstraße aus der Stadt hinaus, und sie war die kleinere von zweien. Die Leute nannten sie die Kleine Linde, weil ganz in der Nähe eine noch größere stand, die Große Linde, bis ein Sturm sie 1923 umwarf. Mit rund fünf Metern Umfang und etwa 25 Metern Höhe ist sie seit 1937 als Naturdenkmal geschützt.\n\nLandmarke an einer Straße zu sein, aus der eine Stadt wurde, hat sie einiges gekostet. Die Straße wurde gepflastert, der Boden ringsum versiegelt, und die Wurzeln begannen zu ersticken. 1955 und noch einmal 1974 bekam sie Baumchirurgie, 1968 eine Drainage, und 1984 pumpte die Stadt Wasser und Luft in den Boden um sie herum, um sie am Leben zu halten. Siebzig Jahre Intensivpflege hat Frankfurt inzwischen in einen Baum gesteckt, den es an einem Nachmittag hätte fällen können.\n\nSie steht direkt an der öffentlichen Straße, es gibt also nichts zu bezahlen und nichts zu betreten. An der Station Lindenbaum aussteigen, und sie steht genau da, was ja der ganze Sinn des Namens ist."
+  },
+  "frk_002": {
+   "name": "Der Urweltmammutbaum im Botanischen Garten",
+   "species": "Urweltmammutbaum (Metasequoia glyptostroboides)",
+   "age_estimate": "etwa 75 Jahre",
+   "access": "Eintritt frei in den Botanischen Garten (Botanischer Garten Frankfurt, neben dem Palmengarten), während der Öffnungszeiten des Gartens",
+   "transport": "Knotenpunkt Bockenheimer Warte (U-Bahn und Tram), etwa 10 Gehminuten; oder Tramhaltestellen im Westend näher am Gartentor",
+   "story": "Bis 1943 kannte man diese Art nur als Fossil. Metasequoia war aus dem Stein beschrieben und längst als ausgestorben abgeschrieben, dann tauchten in Zentralchina lebende Bäume auf, und innerhalb weniger Jahre ging Saatgut an die botanischen Gärten der Welt. Deshalb lässt sich jeder große Urweltmammutbaum in Europa auf ein Menschenleben genau datieren, und dieser gehört zu den ersten: Er wurde um 1950 als Steckling im Frankfurter Botanischen Garten gepflanzt.\n\nFünfundsiebzig Jahre später misst sein Stamm in Brusthöhe 5,72 Meter Umfang, womit ihn die Deutsche Dendrologische Gesellschaft als zweitdickstes erfasstes Exemplar seiner Art im Land führt. Er ist ein Nadelbaum, der sich wie ein Laubbaum benimmt: Im Frühjahr treibt er weiche, fedrige Nadeln aus, im Herbst wirft er jede einzelne ab, sobald sie rostorange geworden ist.\n\nEr steht in der Ostasien-Abteilung, gegenüber dem Flachdachgebäude und rechts vom Bienenhaus, was genau genug ist, um hinzufinden. Der Eintritt in den Botanischen Garten ist frei. Nebenan liegt der Palmengarten mit seinen beiden geschützten Buchen, die zwei Gärten ergeben also einen einzigen Nachmittag, und 2025 nahm die Stadt diesen Baum in ihr Naturdenkmalverzeichnis auf.\n\nDer seltsame Gedanke, den man darunter mitnehmen kann: Dieser Baum ist jünger als die Nachricht von seiner eigenen Art, und er gehört schon zu den größten in Deutschland."
+  },
+  "frk_003": {
+   "name": "Die Hängebuche im Palmengarten",
+   "species": "Hängebuche (Fagus sylvatica 'Pendula')",
+   "age_estimate": "etwa 180 Jahre",
+   "access": "Kostenpflichtiger Eintritt in den Palmengarten (botanischer Garten mit Eintrittskarte)",
+   "transport": "U-Bahn-Stationen Bockenheimer Warte oder Westend, kurzer Fußweg zum Eingang des Palmengartens",
+   "story": "Diese Buche hat still und leise mehr aus sich gemacht. Wo ihre hängenden Äste den Boden erreichten, schlugen sie Wurzeln, und aus einem Baum ist eine Halle aus Laub geworden, in die man hineingehen kann. Von außen wirkt sie wie eine einzige schwere grüne Kuppel. Von unten ist sie ein Raum, getragen vom Mutterstamm und von Astspitzen, denen Beine gewachsen sind.\n\nDas Frankfurter Baumkataster datiert die Pflanzung auf 1845. Sie misst gut vier Meter Umfang und etwa 16 Meter Höhe, und ein Baumgutachter, der sie im Juni 2023 vermaß, notierte sie als vital mit einigen Astbrüchen, was eben passiert, wenn eine Hängebuche so viel Gewicht seitwärts trägt. 2025 nahm die Stadt sie in ihr Naturdenkmalverzeichnis auf.\n\nHängebuchen sind keine Wildform. Jede einzelne geht auf eine Mutation zurück, die hängt, statt nach oben zu streben. Ein Garten, der 1845 eine pflanzte, kaufte also eine Kuriosität, und so sieht eine Kuriosität aus, die man 180 Jahre in Ruhe gelassen hat.\n\nSie steht im westlichen Teil des Palmengartens beim Gesellschaftshaus, ein kurzes Stück vom Palmenhaus und von der Blutbuche entfernt, die noch einmal drei Jahrzehnte älter ist. Der Palmengarten kostet Eintritt, diese Buche und die Blutbuche sind also die beiden Bäume dieser Liste, unter die man sich nur gegen Bezahlung stellen kann. In diese hier kann man außerdem hineingehen, was die bessere Art ist."
+  },
+  "frk_004": {
+   "name": "Die Blutbuche im Palmengarten",
+   "species": "Blutbuche (Fagus sylvatica f. purpurea)",
+   "age_estimate": "etwa 210 Jahre",
+   "access": "Kostenpflichtiger Eintritt in den Palmengarten (botanischer Garten mit Eintrittskarte)",
+   "transport": "U-Bahn-Stationen Bockenheimer Warte oder Westend, kurzer Fußweg zum Eingang des Palmengartens",
+   "story": "Der Palmengarten wurde 1871 eröffnet. Diese Buche war da schon 56 Jahre alt. Das Frankfurter Baumkataster datiert ihre Pflanzung auf 1815, das Jahr von Waterloo, damit ist sie älter als der Garten, der heute Eintritt dafür nimmt, dass man sie ansehen darf.\n\nSie ist eine veredelte Blutbuche, wie fast alle. Die rotblättrige Form fällt aus Samen nicht zuverlässig echt, deshalb wird ein Trieb davon auf eine gewöhnliche grüne Buchenunterlage gesetzt, und an alten Exemplaren findet man die Veredelungsstelle oft noch tief unten am Stamm. Ein Gutachter maß im August 2022 viereinhalb Meter Umfang und notierte ihren Zustand als vital. 2025 wurde sie als Naturdenkmal eingetragen, unter der Rubrik Schönheit und Seltenheit, was für ein Verzeichnis ungewöhnlich offenherzig ist.\n\nSie steht frei auf der Wiese im mittleren Teil des Parks, mit Platz um sich herum, sodass man die ganze niedrige, breite Krone auf einmal erfasst statt stückweise durch andere Bäume hindurch.\n\nAm besten kommt man Ende April oder im Mai, nicht im August. Die jungen Blätter öffnen sich durchscheinend rot und dunkeln erst über den Sommer nach, und in der Hochsaison ist der Baum fast schwarzviolett geworden und hat die Hälfte dessen verloren, wofür sich der Weg lohnt."
+  },
+  "frk_005": {
+   "name": "Die achtstämmige Linde im Grüneburgpark",
+   "species": "Linde (Tilia sp.)",
+   "access": "Kostenlos, öffentlicher Park (Grüneburgpark), jederzeit offen",
+   "transport": "Bus- und Tramhaltestellen Miquel-/Adickesallee oder Holzhausenstraße; etwa 10 bis 15 Gehminuten vom U-Bahnhof Bockenheimer Warte",
+   "story": "Acht Stämme kommen hier in einem engen Ring aus dem Boden, und sie sind ein einziger Baum. Das ist eine Bündelpflanzung: mehrere junge Linden in ein Pflanzloch gesetzt, damit sie gemeinsam aufwachsen und zu einer Krone verschmelzen. Das ist Absicht und kein Zufall der Selbstaussaat, und es ist selten genug, dass Frankfurt diese hier 2025 zum Naturdenkmal erklärt hat.\n\nSie steht an einer Wegkreuzung mitten im Grüneburgpark, neben dem kleinen Kinderspielplatz, liegt also auf jedermanns Weg und auf fast niemandes Liste. Wer zwischen die Stämme tritt, steht im Baum statt davor, mit acht Säulen ringsum und einem Blätterdach darüber.\n\nWie alt sie ist, hat niemand festgestellt. Keine veröffentlichte Quelle, die wir finden konnten, nennt ein Pflanzjahr, die Unterschutzstellung auch nicht, also rät diese Seite nicht. Dasselbe gilt für die Frage, welche Linde es ist: Winterlinde, Sommerlinde und ihre Kreuzung sind sich ähnlich genug, dass sich keine der Quellen festlegt, und wir legen uns nicht für sie fest.\n\nWenn Sie eine der beiden Antworten kennen, aus einem Parkarchiv, von einem alten Foto oder einer Tafel, die wir übersehen haben, schreiben Sie uns, und sie kommt auf die Seite. Bis dahin ist der Park kostenlos und rund um die Uhr offen, und der Baum ist unverwechselbar, sobald man nach acht von irgendetwas Ausschau hält."
+  },
+  "frk_006": {
+   "name": "Die Platane am Nebbienschen Gartenhaus",
+   "species": "Ahornblättrige Platane (Platanus x acerifolia)",
+   "age_estimate": "etwa 210 Jahre",
+   "access": "Kostenlos, öffentlicher Park (Bockenheimer Anlage), uneingeschränkt zugänglich, bestätigt durch ein unabhängiges Baumgutachten vom Oktober 2025",
+   "transport": "U-Bahn-Stationen Alte Oper oder Bockenheimer Warte, wenige Gehminuten durch die Wallanlagen",
+   "story": "Sieben Meter und dreizehn Zentimeter Stammumfang, gemessen im Oktober 2025. Das ist eine Platane, um die man nicht einmal ein Zehntel herumgreifen könnte, in einem Parkstreifen wenige Minuten von der Frankfurter Oper. Ein unabhängiges Großbaum-Gutachten notierte im vergangenen Herbst 713 Zentimeter, ein anderer Gutachter maß 2022 deren 704. Zwei Messungen im Abstand von drei Jahren, die so eng beieinanderliegen, sind die Art Zahl, der man trauen kann.\n\nGepflanzt wurde sie 1820, zehn Jahre nach dem klassizistischen Pavillon, hinter dem sie steht, dem Nebbienschen Gartenhaus. Beide liegen in der Bockenheimer Anlage, einem Teil des Parkrings, den Frankfurt dort anlegte, wo einst die Stadtmauern standen, weshalb das Grün in diesem Teil der Stadt in einem Bogen verläuft statt im Raster. Der Baum ist rund 35 Meter hoch, mit einer Krone von etwa 26 Metern Durchmesser, und trägt die Nummer 028 im städtischen Naturdenkmalverzeichnis.\n\nZwei Jahrhunderte sind für eine Platane nicht besonders alt. Für diese Adresse schon, an der ein Gartenpavillon von 1810 heute in Sichtweite der Banktürme steht.\n\nDer Zugang ist kostenlos und zu jeder Stunde uneingeschränkt, was erwähnenswert ist, weil zwei der geschützten Bäume dieser Liste hinter einer Kasse stehen. Dieser steht einfach in einem öffentlichen Park, und man kann die Hand auf ihn legen."
+  }
+ }
+}

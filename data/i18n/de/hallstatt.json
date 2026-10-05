@@ -1,0 +1,69 @@
+{
+ "_note": "de overlay for hallstatt, written 2026-10-06 from data/cities/hallstatt.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Hallstatt",
+ "title": "Alte Bäume in Hallstatt: 5 Naturdenkmäler rund um den See",
+ "meta_description": "Hallstatts geschützte Bäume: eine Eibe an der Schiffsanlegestelle, die das Postkartenbild prägt, drei weitere Eiben am See und eine Blutbuche bei Gosau.",
+ "intro": "Hallstatt ist für einen einzigen Blick berühmt: die Häuser am Seeufer, unter dem Berg übereinander gestapelt, das Bild auf jeder Postkarte. Was die Postkarte weglässt, sind die fünf geschützten Bäume darin und ringsum: vier Eiben, drei davon so unscheinbar, dass das Verzeichnis des Landes die einzige Beschreibung von ihnen ist, dazu eine Blutbuche auf einem Hügel über Gosau, geschützt wegen der fast vollkommenen Kuppel ihrer Krone. Eine Eibe steht direkt an der Schiffsanlegestelle, im Vordergrund des Blicks, und prägt ihn per Gesetz.",
+ "question_title": "Was ist der älteste Baum Hallstatts? (rund 200 Jahre)",
+ "question_meta": "Hallstatts ältester datierter Baum ist die Obertrauner Dorfeibe, geschätzt auf rund 200 bis 260 Jahre.",
+ "question_answer": "Hallstatts ältester Baum mit angegebenem Alter ist die Obertrauner Dorfeibe, eine Dorfeibe an der Hauptstraße im benachbarten Obertraun. Das Land schätzte ihr Alter bei der Unterschutzstellung 1980 auf rund 200 Jahre, heute also etwas über 200; eine festere Zahl hat niemand veröffentlicht. Sie steht unmittelbar vor der Abzweigung zum Gemeindeamt.",
+ "question_context": "Das oberösterreichische Naturdenkmalverzeichnis stellte die Obertrauner Eibe am 18. Dezember 1980 unter Schutz und nannte sie ein Dorfdenkmal, als einzige der vier Eiben Hallstatts im Verzeichnis mit diesem Wort. Damals maß sie 136 Zentimeter Umfang und etwa zehn Meter Höhe, und die Akte schätzte ihr Alter auf rund 200 Jahre. Seit dieser Messung sind 46 Jahre vergangen, das tatsächliche Alter liegt heute also etwas über zwei Jahrhunderten; das Verzeichnis hat die Zählung nie wiederholt. Die anderen drei Eiben auf dieser Seite sind allein am Umfang gemessen dicker (der Baum an der Hallstätter Schiffsanlegestelle über 2,6 Meter, die Kircheneibe in Bad Goisern 2,25 Meter, die Wieseneibe von Untersee 2,1 Meter). Nur die Eibe in Bad Goisern trägt ebenfalls ein Alter, wieder rund 200 Jahre, aber geschätzt 2006, sechsundzwanzig Jahre nach der Obertrauner Zahl, weshalb Obertraun den Titel bekommt. Hallstatts fünfter geschützter Baum, eine Blutbuche auf einem Hügel über Gosau, wurde wegen der Form ihrer Krone ausgewiesen und nicht wegen Größe oder Alter, und trägt keines von beiden. Die vier Eiben liegen eine kurze Zug- oder Schifffahrt voneinander entfernt rund um den See; die Buche steht abseits, die Talstraße hinauf Richtung Gosau.",
+ "faq": [
+  {
+   "q": "Was ist der älteste Baum Hallstatts?",
+   "a": "Die Obertrauner Dorfeibe, bei ihrer Unterschutzstellung 1980 auf rund 200 Jahre geschätzt, heute also etwas über 200. Die Kircheneibe in Bad Goisern wurde ebenfalls auf rund 200 Jahre geschätzt, aber erst 2006; die anderen beiden Eiben haben einen Umfang, aber kein Datum."
+  },
+  {
+   "q": "Kann man diese Bäume kostenlos besuchen?",
+   "a": "Ja. Alle fünf stehen an öffentlichen Straßen, Promenaden oder auf offenem Gelände: die Eibe an der Schiffsanlegestelle in Hallstatt selbst, eine an der Hauptstraße von Obertraun, eine über dem See bei Untersee, eine am Kircheneingang in Bad Goisern und eine Blutbuche auf offener Hangweide über Gosau."
+  },
+  {
+   "q": "Warum weiß das Verzeichnis so wenig über diese Bäume?",
+   "a": "Die oberösterreichische Naturdenkmal-Datenbank erfasst die rechtliche Ausweisung, einen Umfang und manchmal eine Höhe zum Zeitpunkt der Unterschutzstellung. Ein Feld für Alter oder Zustand hat sie nicht, und keiner dieser fünf Bäume ist irgendwo sonst unabhängig beschrieben worden, soweit wir finden konnten."
+  },
+  {
+   "q": "Stehen alle Bäume Hallstatts wirklich in Hallstatt?",
+   "a": "Nein. Nur einer, die Eibe an der Schiffsanlegestelle, steht im Ort Hallstatt selbst. Die anderen vier sind kurze Ausflüge entfernt: einer an der Hauptstraße von Obertraun und zwei rund um Bad Goisern (Untersee und die Pfarrkirche), alle an der Salzkammergutbahn, die den See umrundet, dazu ein fünfter das Tal hinauf in Gosau, mit dem Auto oder Bus statt mit der Bahn erreichbar."
+  }
+ ],
+ "strings_note": "Felder pro Baum: name, species (deutscher Artname, gleiche lateinische Bezeichnung), age_estimate, access, transport, story. Stories 150-250 Wörter, gleiche Messlatte wie im Englischen, keine Gedankenstriche.",
+ "trees": {
+  "hst_001": {
+   "name": "Die Eibe an der Schiffsanlegestelle Hallstatt",
+   "species": "Gewöhnliche Eibe (Taxus baccata)",
+   "access": "Kostenlos, an der öffentlichen Seepromenade neben der Schiffsanlegestelle im Ortszentrum",
+   "transport": "Hallstatt hat im Ort keinen eigenen Bahnhof; die Fähre vom Bahnhof Hallstatt (Salzkammergutbahn, gegenüberliegendes Ufer) legt direkt an dieser Stelle an",
+   "story": "Das oberösterreichische Naturdenkmalverzeichnis sagt mit eigenen Worten, dass diese Eibe ein Teil dessen ist, warum Hallstatt aussieht wie Hallstatt. Prägend für das Landschaftsbild. So schreiben Behördenakten normalerweise nicht.\n\nSie steht an der Schiffsanlegestelle, etwa 25 Meter nordöstlich der Pfarrkirche, im Vordergrund jenes Blicks, für den der ganze Ort berühmt ist. Die Fähre vom Bahnhof am anderen Ufer legt neben ihr an. Wer mit Zug und Schiff kommt, und so kommen die meisten, trifft hier also auf den ersten Baum Hallstatts. Fast alle schauen dabei stattdessen zum Berg hinauf.\n\nDas Land stellte sie am 4. März 1991 unter Schutz und schrieb die beiden Zahlen auf, die es hatte: mehr als 2,6 Meter Umfang, etwa 15 Meter Höhe. Ein Alter verzeichnete es nicht, und seither hat niemand eines genannt. Eiben sind die am langsamsten wachsenden und langlebigsten Bäume Europas, was den Umfang zu einer schlechten Uhr macht. Wenn Sie wissen, wann diese gepflanzt wurde, schreiben Sie uns.\n\nAlles, was es schriftlich über sie gibt, geht auf diese eine Unterschutzstellung zurück; eine unabhängige Beschreibung des Baumes ist nicht aufgetaucht. Unstrittig ist, wo sie steht. An der Wasserlinie eines Ortes, der seit der Urgeschichte Salz abbaut, vor der Kirche, wartend auf das nächste Schiff."
+  },
+  "hst_002": {
+   "name": "Die Obertrauner Dorfeibe",
+   "species": "Gewöhnliche Eibe (Taxus baccata)",
+   "age_estimate": "etwa 200 Jahre",
+   "access": "Kostenlos, an der öffentlichen Hauptstraße von Obertraun",
+   "transport": "Bahnhof Obertraun-Dachsteinhöhlen (Salzkammergutbahn), kurzer Fußweg ins Ortszentrum",
+   "story": "Österreich schützt Bäume wegen ihrer Seltenheit, ihrer wissenschaftlichen Bedeutung oder ihrer Größe. Diesen Baum schützte es dafür, dass er zum Dorf gehört. Die Naturdenkmalakte nennt die Obertrauner Eibe ein Dorfdenkmal, ein sentimentales Wort für eine staatliche Datenbank und ungefähr so nah, wie eine Behörde an den Satz herankommt, dass hier jeder diesen Baum kennt.\n\nSie steht an der Hauptstraße, unmittelbar vor der Abzweigung zum Gemeindeamt, wer in Obertraun auf dem Amt zu tun hat, geht also an ihr vorbei. Als das Land sie am 18. Dezember 1980 unter Schutz stellte, maß sie 136 Zentimeter Umfang und etwa zehn Meter Höhe, und die Akte schätzte ihr Alter auf rund 200 Jahre. Das war vor 46 Jahren, und das ist die einzige Rechnung, die die Belege erlauben: heute etwas über zwei Jahrhunderte, und keine glattere Zahl als diese.\n\nEine Eibe dieser Größe ist aus der Ferne nicht spektakulär. Das Besondere an dieser ist ihre Adresse. Sie stand schon, als die Salzkammergutbahn durch das Tal unter dem Dachstein gebaut wurde, sie sah zu, wie die Eishöhlen über dem Ort Obertraun zu einem Ziel machten, an dem Leute aus dem Zug steigen, und sie war bei jeder Gemeindeentscheidung zugegen, die dreißig Meter entfernt getroffen wurde.\n\nDas Verzeichnis ist die einzige Quelle, die sie beschreibt. Sonst hat niemand über sie geschrieben."
+  },
+  "hst_003": {
+   "name": "Die Wieseneibe von Untersee",
+   "species": "Gewöhnliche Eibe (Taxus baccata)",
+   "access": "Scheint offen zu sein (das Verzeichnis kennzeichnet sie nicht als privat, anders als andere Einträge derselben Liste, die das ausdrücklich tun); sie steht frei auf einer Hangwiese nahe einem benannten Haus und nicht hinter einem Tor. Hier vermerkt, weil die genaue Grenze der Wiese bei unserer Prüfung nicht unabhängig bestätigt wurde.",
+   "transport": "Haltestelle Obersee der Salzkammergutbahn (zwischen Hallstatt und Bad Goisern), dann zu Fuß am Seeufer entlang",
+   "story": "Eine Eibe, die allein auf einer offenen Wiese steht, ist ein ungewöhnlicher Anblick. Eiben sind Wald- und Kirchhofbäume, meist in Gesellschaft und meist im Schatten. Diese steht frei an einem Hang über dem Hallstätter See, und Oberösterreich stellte sie am 22. Juli 1960 unter Schutz, die älteste Schutzverfügung unter den Eiben auf dieser Seite.\n\nDas Land maß damals 2,1 Meter Umfang. Diese Zahl ist inzwischen 66 Jahre alt, und sie ist die einzige Messung, die je jemand festgehalten hat: kein Alter, keine Höhe, sonst nichts. Eiben wachsen so langsam, dass ein solcher Umfang ganz verschiedene Jahrhunderte bedeuten kann, die ehrliche Antwort ist also, dass niemand diesen Baum datiert hat. Wenn Sie in letzter Zeit ein Maßband um ihn gelegt haben, hätten wir gern die Zahl.\n\nDie Unterlagen sind sich nicht einmal einig, zu welchem Weiler sie gehört. Die eigene Ortsangabe des Verzeichnisses setzt sie nahe dem Haus Untersee Nr. 40, frei am Hang stehend, während die Liste, die das Verzeichnis wiedergibt, sie unter Obersee führt. Beides sind benachbarte Seeufersiedlungen von Bad Goisern, Minuten voneinander entfernt, und wir sind der genaueren der beiden Angaben gefolgt.\n\nSie ist leichter zu erreichen als auf dem Papier zu verorten. An der Haltestelle Obersee aussteigen, am Ufer entlanggehen, den Hang hinaufschauen. Die Wiese ist offenes Gelände und kein eingezäunter Garten, wo genau der Feldrand verläuft, sollte man unterwegs aber im Auge behalten."
+  },
+  "hst_004": {
+   "name": "Die Eibe an der Pfarrkirche Bad Goisern",
+   "species": "Gewöhnliche Eibe (Taxus baccata)",
+   "age_estimate": "etwa 200 Jahre",
+   "access": "Kostenlos, an der öffentlichen Straße beim Kircheneingang im Ortszentrum",
+   "transport": "Bahnhof Bad Goisern (Salzkammergutbahn), kurzer Fußweg ins Ortszentrum",
+   "story": "Auf dem Weg in die Kirche geht man unter dieser hier hindurch. Die Eibe steht an der Straße beim Eingang der Pfarrkirche Bad Goisern, auf der öffentlichen Seite der Schwelle und nicht zwischen den Gräbern, wo Eiben in diesem Teil Europas sonst meist landen.\n\nOberösterreich stellte sie am 4. August 2006 unter Schutz und war, ungewöhnlich für dieses Verzeichnis, bereit, ein Alter zu nennen: rund 200 Jahre, geschätzt und nicht gezählt, und es lohnt sich, die Zahl genau so locker zu lassen, wie das Land sie gelassen hat. Niemand hat diesen Baum angebohrt. Die beiden Zahlen, die Messungen und keine Vermutungen sind, sind ein Stammumfang von 2,25 Metern im Jahr 2006 und eine Höhe von etwa 15 Metern, was für eine Eibe hoch ist; von Natur aus sind sie langsame, dichte, niedrige Gewächse, und diese ist in die Höhe gegangen.\n\nZwei Jahrhunderte, mehr oder weniger, setzen ihre frühen Jahre in ein Tal, das von Salz und Holz lebte. Sie war ausgewachsen, als die Salzkammergutbahn kam und Goisern von einem Arbeitsdorf zu einem Ort machte, an dem Leute aus dem Zug steigen, und sie hat seither an dieser Tür jede Hochzeit und jede Beerdigung miterlebt.\n\nEines sollte man auseinanderhalten: Bad Goisern hat eine zweite geschützte Eibe, drei Kilometer entfernt im Weiler Untersee, allein auf einer Wiese. Das hier ist nicht dieser Baum."
+  },
+  "hst_005": {
+   "name": "Die Blutbuche am Forsthügel in Gosau",
+   "species": "Blutbuche (Fagus sylvatica f. purpurea)",
+   "access": "Offene Hangweide, laut keiner der herangezogenen Quellen eingezäunt oder mit Tor; von der Straße beim Forstamt aus sichtbar. Der genaue Verlauf der Feldgrenze und ob ein Weg darüber führt, wurde bei unserer Prüfung nicht unabhängig bestätigt.",
+   "transport": "Mit dem Auto oder Regionalbus nach Gosau (von Bad Goisern oder Hallstatt), dann zu Fuß auf den Hügel neben dem Forstamt",
+   "story": "Die meisten geschützten Bäume rund um Hallstatt verdanken diesen Status ihrem Alter oder ihrer Größe, Zahlen, die das Land in eine Akte schreiben konnte. Dieser verdankt ihn seiner Form. Als Oberösterreich die Gosauer Buche am 18. Dezember 1980 ins Naturdenkmalverzeichnis aufnahm, nannte es keines von beiden als Grund, sondern die auffallend kugelige Form der Krone. Eine Buche, die durch Zufall und nicht durch Schnitt zu etwas nahe an einer vollkommenen Kuppel gewachsen ist.\n\nSie steht allein im offenen Hanggras, etwa 80 Meter nordwestlich des Gebäudes der Gosauer Forstverwaltung, an einer so freien Stelle, dass, wer sie 1980 begutachtete, die ganze Silhouette auf einmal erfassen konnte, statt sie durch benachbarte Äste hindurch zu erraten. Keine Erhebung seither hat einen Umfang oder ein Alter festgehalten, deshalb steht keine der beiden Zahlen auf dieser Seite. Ein Foto, das 2015 am selben Hang entstand, zeigt noch die Form, die das Verzeichnis beschrieb, mit einer Krone, die so rund wirkt, wie der Umriss eines Baumes nur werden kann.\n\nGosau liegt ein Stück das Dachsteintal hinauf, an der Straße zwischen Bad Goisern und dem Gletschersee an seinem Ende, was dies eher zu einem Halt auf der Durchreise macht als zu einem Ziel für sich. Das Forstgebäude gibt dem Weg einen festen Punkt, auf den man zusteuern kann. Der Baum ist die Form auf dem Hügel darüber."
+  }
+ }
+}

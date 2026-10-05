@@ -1,0 +1,65 @@
+{
+ "_note": "es overlay for tarragona, written 2026-10-06 from data/cities/tarragona.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Tarragona",
+ "title": "Árboles monumentales de Tarragona: 4 de libre acceso",
+ "meta_description": "Árboles monumentales de Tarragona: un plátano que llena la plaza de un pueblo, cipreses junto a un monasterio y un peral silvestre declarado en 1991.",
+ "intro": "Cataluña protege por ley árboles concretos desde 1987, y talar uno está prohibido. En la región hay 299 árboles monumentales declarados, y cuatro de ellos están al alcance de Tarragona en terrenos de libre acceso: un plátano que llena la plaza de un pueblo, un pino piñonero en la carretera del aeropuerto, una pareja de cipreses en el patio de un ayuntamiento junto a un monasterio cisterciense y un peral silvestre en una pista de las montañas de Prades. El resto de los árboles del registro cercanos están en fincas privadas, y por eso esta página es corta.",
+ "question_title": "¿Cuál es el árbol más antiguo de Tarragona? (sin datar)",
+ "question_meta": "El registro catalán no recoge edades, así que el árbol más antiguo de Tarragona se desconoce. Lo que sí mide, y 4 árboles que merecen el viaje.",
+ "question_answer": "Nadie publica la edad de los árboles monumentales de Cataluña, así que no se puede nombrar el más antiguo de Tarragona. El registro recoge especie, estado, altura, perímetro del tronco y anchura de copa, y el mayor de los cuatro de esta página es el Pi de Bofarull, en Reus, un pino piñonero de 20,5 metros de alto con un tronco de 4,28 metros de perímetro, declarado árbol monumental en 1991.",
+ "question_context": "El registro catalán es preciso en todo menos en la edad. Para cada árbol declarado publica la especie, el estado, la altura total, el perímetro del tronco a 1,3 metros y el diámetro medio de copa, junto con una ubicación con cinco decimales y una página oficial de ficha, y no tiene ninguna columna de edad. Es una decisión deliberada y no un descuido: datar un árbol vivo sin extraer un testigo de madera es adivinar, y el registro se hizo para proteger árboles, no para datarlos. Lo que sí recoge es que estos cuatro están vivos y en estado normal, lo que importa más de lo que parece, porque el mismo registro marca como muertos a bastantes árboles de esta provincia sin dejar de listarlos. Así que la respuesta honesta para Tarragona es un tamaño y no una edad: el Pi de Bofarull, en la carretera del aeropuerto de Reus, mide 20,5 metros de alto, tiene un tronco de 4,28 metros de perímetro y una copa de 21,4 metros de diámetro, y está protegido desde 1991. Cómo llegar: unos 15 minutos en coche desde Tarragona en dirección a Reus.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Tarragona?",
+   "a": "Se desconoce, y el registro que protege estos árboles no intenta responderlo. Cataluña recoge especie, estado, altura, perímetro del tronco y anchura de copa de cada árbol monumental, y no tiene columna de edad. El mayor de esta página es el Pi de Bofarull, en Reus."
+  },
+  {
+   "q": "¿Qué significa árbol monumental en Cataluña?",
+   "a": "Una figura legal. Desde 1987 se pueden declarar árboles concretos como arbre monumental, y a partir de entonces está prohibido talarlos o arrancarlos, total o parcialmente. Hay 299 declarados, y en 2025 se añadieron 24 más tras casi una década sin ninguno."
+  },
+  {
+   "q": "¿Se pueden visitar gratis?",
+   "a": "Sí, los cuatro. Uno está en la plaza de un pueblo, otro junto a una carretera pública, dos en el patio de un ayuntamiento junto al monasterio de Santes Creus y uno en una pista de las montañas de Prades."
+  },
+  {
+   "q": "¿Por qué solo hay cuatro?",
+   "a": "Porque la mayoría de los árboles monumentales cercanos a Tarragona están en fincas privadas, los mas y las masies, y esta web no envía a nadie a terrenos privados. Varios ejemplares magníficos quedan fuera por ese motivo, entre ellos una encina del Mas de Borbo con un tronco de 6,45 metros de perímetro."
+  },
+  {
+   "q": "¿Se puede ir andando de uno a otro?",
+   "a": "No. Son cuatro paradas separadas, repartidas en 30 kilómetros, a entre 9 y 29 kilómetros de Tarragona, y a cada una se llega con un trayecto corto en coche."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Catalan place names are kept as written on the sign.",
+ "trees": {
+  "tgn_001": {
+   "name": "El plátano de la plaza de La Riera de Gaià",
+   "species": "Plátano de sombra (Platanus x acerifolia)",
+   "access": "Gratuito, en la plaza pública del centro del pueblo",
+   "transport": "A unos 11 km al noreste de Tarragona, unos 15 minutos en coche",
+   "story": "Este árbol es la plaza. La Riera de Gaià es un pueblo pequeño del interior, al norte de Tarragona, y el plátano que se alza en su Plaça de la Vila ocupa casi toda la plaza, que es como solían ir las cosas en los pueblos catalanes: se plantaba un plátano en la plaza porque crece rápido, da una sombra densa ya en junio y aguanta una poda drástica cada pocos años sin quejarse, y luego sobrevivía a la razón por la que se plantó y acababa siendo aquello por lo que se conoce la plaza. Cataluña lo declaró árbol monumental en 1992, lo que convierte su tala en ilegal. Es uno de los árboles seleccionados para el libro Árboles singulares de España, donde ocupa una doble página. El registro lo da en estado normal y, cosa rara en esa fuente, no publica ninguna medida, así que esta página no puede decirle lo grueso que es, solo que Cataluña lo consideró digno de protección y que un estudio nacional de los árboles singulares de España estuvo de acuerdo. Si lo ha medido, cuéntenoslo."
+  },
+  "tgn_002": {
+   "name": "El pino de Bofarull",
+   "species": "Pino piñonero (Pinus pinea)",
+   "access": "Gratuito, junto a una carretera pública",
+   "transport": "A unos 9 km al oeste de Tarragona, en la carretera del aeropuerto de Reus, unos 15 minutos en coche",
+   "story": "Un árbol protegido en la carretera de un aeropuerto es una combinación extraña, y este ha sabido mantenerse. El Pi de Bofarull se alza junto a la carretera del aeropuerto, en Reus, con 20,5 metros de alto, un tronco de 4,28 metros de perímetro y una copa de 21,4 metros de diámetro, y Cataluña lo declaró árbol monumental en 1991, lo que significa que no puede talarse legalmente por muy incómodo que le resulte a la carretera. El pino piñonero es el pino paraguas del Mediterráneo, el de la copa plana que todo el mundo dibuja, y en España se cultiva tanto por los piñones como por la sombra: las piñas tardan tres años en madurar y las semillas que guardan son los piñones, el fruto seco más caro del país. Un pino piñonero que llega a 20 metros suele llevar mucho tiempo sin que nadie lo toque, porque a la especie normalmente se la mantiene baja y ancha. El registro lo da en estado normal y, como en toda ficha catalana, no le asigna edad. Es el mayor de los cuatro árboles de esta página, que es la única clasificación que permiten los datos."
+  },
+  "tgn_003": {
+   "name": "Los cipreses del Palau de l'Abat de Santes Creus",
+   "species": "Ciprés mediterráneo (Cupressus sempervirens)",
+   "access": "Gratuito, en el patio del ayuntamiento de Santes Creus, junto al monasterio",
+   "transport": "A unos 27 km al norte de Tarragona, unos 35 minutos en coche",
+   "story": "Dos cipreses en el patio de un monasterio cisterciense, y el patio pertenece ahora al ayuntamiento. Santes Creus se fundó en el siglo XII y es una de las tres grandes casas cistercienses de Cataluña, con reyes de Aragón enterrados en su iglesia; el palacio del abad, contiguo, pasó a manos civiles tras la exclaustración de 1835, y el consistorio ocupa parte de él. Los dos cipreses se alzan en su patio, con 18 metros de alto sobre troncos de 3,37 metros de perímetro y copas de solo 9,1 metros de diámetro, que es la forma de la especie: Cupressus sempervirens crece como una columna verde oscura y casi nada más, y por eso se ha plantado en monasterios y cementerios de todo el Mediterráneo durante dos mil años. Cataluña los tiene en su registro de árboles monumentales como pareja. El estado que figura es que la declaración está en trámite y no completada, así que están en la lista y la protección sigue su curso. Nadie ha publicado su edad."
+  },
+  "tgn_004": {
+   "name": "El peral silvestre de El Cisterer",
+   "species": "Peral de hoja de almendro (Pyrus spinosa)",
+   "age_estimate": "entre unos 75 y 150 años, estimado a partir de un tronco de 1,97 m de perímetro",
+   "access": "Gratuito, a la derecha de una pista pública por encima del pueblo",
+   "transport": "A unos 29 km al noroeste de Tarragona, en las montañas de Prades, unos 40 minutos en coche",
+   "story": "Cataluña protege 299 árboles y uno de ellos es un peral silvestre, lo que dice algo de cómo se hizo la lista. Pyrus spinosa es una planta espinosa y achaparrada de las laderas secas mediterráneas, casi siempre un arbusto y rara vez digna de una segunda mirada, y este ejemplar mide 10,5 metros de alto, con un tronco de poco menos de dos metros de perímetro y una copa de 16 metros de diámetro, lo que para la especie es enorme. Está en el Cap del Plans, por encima de Prades, a la derecha de la pista, en las montañas de Prades, donde el suelo es de arenisca roja y los pueblos se asientan por encima de los 900 metros. Se declaró árbol monumental en 1991. El registro da su estado como normal. Lo que justifica el viaje no es el tamaño en términos absolutos, porque casi todos los demás árboles de esta web son más grandes, sino que aquí la especie rinde en lo más alto de sus posibilidades: un arbusto de seto al que se dejó tranquilo el tiempo suficiente para convertirse en árbol. El registro no da ninguna edad, como en toda ficha catalana; los 75 a 150 años que figuran aquí se estiman a partir del perímetro."
+  }
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "_note": "es overlay for ronda, written 2026-10-06 from data/cities/ronda.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Ronda",
+ "title": "Árboles singulares de Ronda: 6 en la Serranía",
+ "meta_description": "Árboles singulares de Ronda: pinsapos únicos en el mundo, un castaño de 14 metros de perímetro bajo el que se oyó misa y un tejo de cinco siglos.",
+ "intro": "Las montañas que rodean Ronda guardan un abeto que no crece en ningún otro lugar del mundo. El Abies pinsapo sobrevive en tres pequeñas manchas de la Serranía de Ronda y Grazalema, una reliquia de cuando se retiró el hielo y el clima se secó, y el catálogo andaluz de árboles singulares recoge media docena de pinsapos concretos en estas sierras, cada uno con su ficha de medidas. Junto a ellos hay castaños que detienen al caminante en la pista, y un tejo cuyo perímetro lo sitúa en cinco siglos. Casi todo queda dentro de la Sierra de las Nieves.",
+ "question_title": "¿El árbol más antiguo cerca de Ronda? (quizá 800 años)",
+ "question_meta": "El Castaño Santo, posiblemente de 800 años, es el árbol más antiguo cerca de Ronda. Lo que muestran sus medidas, y 5 más en la Sierra de las Nieves.",
+ "question_answer": "El árbol más antiguo cerca de Ronda es el Castaño Santo de Istán, un castaño cuya ficha oficial del catálogo le atribuye posiblemente unos 800 años. Su tronco mide 14,65 metros de perímetro a la altura del pecho y 21,5 metros en la base, y debe su nombre a una misa que las tropas cristianas oyeron a sus pies en el siglo XVI.",
+ "question_context": "El catálogo andaluz de árboles singulares publica una ficha con medidas para cada árbol, así que las edades de esta página pueden contrastarse con algo. La ficha del Castaño Santo da 24,5 metros de altura, 14,65 metros de perímetro a 1,30 metros y 21,5 en la base, y dice que la edad posiblemente ronda los 800 años; la palabra posiblemente es del catálogo y esta página la conserva. El tejo de Froncaile es el caso más interesante, porque su ficha enseña las cuentas. Razona a partir de estudios dendrológicos publicados que un tejo de cinco metros de perímetro tiene en general entre 500 y 600 años, señala que este mide 4,50 y crece en condiciones pobres que lo frenan todavía más, y concluye que su presencia podría remontarse a cinco siglos. Es una estimación con una base declarada y no un número en un cartel, y es del tipo que esta web repite. Los pinsapos se datan con más holgura: al de las Escaleretas se le atribuyen entre 350 y 550 años. Cómo llegar al Castaño Santo: a pocos metros de una vereda por encima de Istán, a unos 40 minutos de Ronda en coche.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo cerca de Ronda?",
+   "a": "El Castaño Santo de Istán, un castaño al que su ficha oficial del catálogo atribuye posiblemente unos 800 años. El catálogo usa la palabra posiblemente, y esta página también."
+  },
+  {
+   "q": "¿Qué es un pinsapo?",
+   "a": "El Abies pinsapo, el abeto español, un abeto relicto que solo sobrevive en estado silvestre en tres pequeñas zonas de las montañas de Ronda y Grazalema. Sus acículas salen alrededor de todo el ramillo en lugar de peinarse hacia los lados, algo que no hace ningún otro abeto europeo, y sus piñas se mantienen erguidas y se deshacen en el propio árbol."
+  },
+  {
+   "q": "¿Se pueden visitar gratis?",
+   "a": "Sí, ninguno cobra nada. Tres de los seis están en terreno público dentro de la Sierra de las Nieves. Los otros tres están en ladera privada, dos de ellos a pocos metros de una pista o vereda pública, y uno en un risco sin sendero hasta su pie, como su ficha dice claramente."
+  },
+  {
+   "q": "¿Se puede ir andando de uno a otro?",
+   "a": "No. Son seis puntos separados, repartidos por 25 kilómetros de montaña en cuatro municipios distintos, a los que se llega por carretera de montaña y después a pie. Mejor tomarlos como una serie de excursiones de un día desde Ronda que como un paseo."
+  },
+  {
+   "q": "¿Qué fiabilidad tienen las medidas?",
+   "a": "Son las mejores de esta web. Andalucía publica una ficha de una página para cada árbol singular con la altura total, la altura del fuste, el perímetro a 1,30 metros, el perímetro en la base, el diámetro de copa en dos direcciones y la superficie de copa, además de una nota sobre la propiedad y el entorno. Todas las cifras de esta página salen de esas fichas."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Place names are kept as written on the sign.",
+ "trees": {
+  "rnd_001": {
+   "name": "El pinsapo de las Escaleretas",
+   "species": "Pinsapo (Abies pinsapo)",
+   "age_estimate": "de 350 a 550 años",
+   "access": "Gratuito, terreno público dentro de la Sierra de las Nieves; el árbol queda por debajo de la pista de acceso y hay que bajar a pie hasta él",
+   "transport": "Parauta, a unos 20 km al este de Ronda por carretera de montaña, y después a pie",
+   "story": "Este árbol tiene un monumento natural para él solo. Andalucía protege paisajes enteros como monumentos naturales y ha declarado uno para un único abeto, el Monumento Natural Pinsapo de las Escaleretas, dentro de la Sierra de las Nieves. Mide 26 metros de alto, 5,10 metros de perímetro a la altura del pecho y 9 en la base, donde las raíces cercanas al tronco asoman del suelo, y el catálogo le atribuye entre 350 y 550 años. Las cicatrices cerradas de ramas cortadas lo hacen parecer más viejo todavía. El lugar debe su nombre a cómo se disponen las losas planas del sendero, como peldaños, y el abeto crece al pie de un talud junto a unos arroyos, de modo que desde la pista de acceso solo se ve lo alto de la copa; hay que bajar hasta él. La vista desde donde está abarca el pico Torrecilla y el cerro de la Alcazaba. Se cuenta que creció sobre la tumba de una mujer conocida por ayudar a viajeros y a la gente de la sierra, a quienes trataba con remedios de plantas. El terreno es público."
+  },
+  "rnd_002": {
+   "name": "El pinsapo de la Perra",
+   "species": "Pinsapo (Abies pinsapo)",
+   "access": "Gratuito, terreno público dentro de la Sierra de las Nieves, cerca de un sendero y un arroyo",
+   "transport": "Tolox, a unos 40 km al este de Ronda, y después a pie hacia el Puerto de la Perra",
+   "story": "Crece como un candelabro, cosa que un abeto no debería hacer. El tronco de este pinsapo apenas recorre 60 centímetros antes de partirse en dos, y uno de esos dos se divide a su vez en tres, así que lo que se alza en la ladera sobre el Puerto de la Perra es una forma retorcida y ramificada en lugar de la aguja recta y única que suele formar la especie. El catálogo mide 5,10 metros de perímetro bajo la horquilla y casi 8 en la base, en un árbol de 22 metros de alto. Los abetos acaban con esa forma por algún daño, el viento, el peso de la nieve o la pérdida de la guía, y el resultado es un ejemplar que merece la caminata precisamente porque está mal hecho. Se encuentra cerca de un sendero y de un arroyo de montaña que corta la ladera noreste del cerro del Chaparral, con otros pinsapos alrededor y, en el sotobosque, quejigos de Quercus alpestris, un roble endémico de esta sierra y de ningún otro sitio. El terreno es público y está dentro del parque natural. Nadie ha publicado su edad, lo que en un árbol con esta forma es una laguna real: si la conoce, cuéntenoslo."
+  },
+  "rnd_003": {
+   "name": "El tejo de Froncaile",
+   "species": "Tejo (Taxus baccata)",
+   "age_estimate": "posiblemente unos cinco siglos, calculado a partir del perímetro y de las tasas de crecimiento publicadas para el tejo",
+   "access": "Gratuito, terreno público dentro de la Sierra de las Nieves; terreno muy empinado, y el árbol queda escondido entre pinsapos",
+   "transport": "Tolox, a unos 40 km al este de Ronda, y después a pie hasta la zona de Froncaile",
+   "story": "Este es el único árbol de esta página cuya edad viene con las cuentas hechas. La ficha del catálogo no se limita a afirmar una cifra: explica que los estudios dendrológicos sobre el tejo sitúan un perímetro de cinco metros en algún punto entre 500 y 600 años, señala que este ejemplar mide 4,50 metros y crece en condiciones tan pobres que lo frenan aún más, y concluye que podría remontarse a cinco siglos. Es una estimación con método, algo más raro de lo que debería. El tejo mide 19 metros de alto y crece en una ladera quebrada orientada al noreste, tan empinada y de suelo tan escaso que casi no hay estrato de matorral, terreno ideal para la cabra montés y duro para todo lo demás. Está escondido entre pinsapos y roca desnuda, y cuesta encontrarlo. En un día claro se ve desde allí Sierra Nevada, a 150 kilómetros al este. El tejo es lo más lento de esta montaña y se vuelve más lento con la edad, que es justamente por lo que las cuentas funcionan."
+  },
+  "rnd_004": {
+   "name": "El Castaño Santo",
+   "species": "Castaño (Castanea sativa)",
+   "age_estimate": "posiblemente unos 800 años",
+   "access": "Gratuito, a pocos metros de una vereda pública; el terreno de alrededor es pasto privado, así que no se salga del camino",
+   "transport": "Istán, a unos 45 km al sureste de Ronda por carretera, y después a pie",
+   "story": "Las tropas cristianas oyeron misa al pie de este castaño antes de entrar en combate, y de ahí viene su nombre. La misa se celebró en el siglo XVI, antes de una batalla contra los moriscos, los musulmanes de estas sierras a los que se había obligado a convertirse y que se alzaron dos veces contra España. Es, con mucha diferencia, el árbol más grande de esta página. Su tronco mide 14,65 metros de perímetro a la altura del pecho y 21,5 en la base, alcanza 24,5 metros de alto, y sus dos enormes ramas principales sostienen una copa que cubre 510 metros cuadrados. El catálogo le atribuye posiblemente unos 800 años y lo ha propuesto como Monumento Natural de Andalucía. Se asienta en un rellano de una ladera orientada al este, en un bosque denso de alcornoques y quejigos andaluces con otros castaños dispersos, en una finca donde todavía se suelta a los cerdos a comer bellota, y alguien ha levantado detrás un murete de piedra para que la erosión no le descalce las raíces. El terreno es privado, pero el árbol queda a pocos metros de una vereda pública."
+  },
+  "rnd_005": {
+   "name": "El Castaño Arena",
+   "species": "Castaño (Castanea sativa)",
+   "access": "Gratuito, al borde de una pista pública; el terreno de alrededor es privado",
+   "transport": "Cartajima, a unos 20 km al sur de Ronda, en el Camino del Molino Real",
+   "story": "Nadie que recorra el Camino del Molino Real pasa por delante de este sin pararse. El Castaño Arena se alza al borde de la pista que baja hacia el valle del río Genal, justo donde una pendiente media empieza a caer hacia uno de los arroyos que lo alimentan, y la propia ficha del catálogo lo dice: no pasa desapercibido para el caminante. El tronco mide 7,20 metros de perímetro a la altura del pecho y 10,20 en la base, en un árbol de 17 metros de alto, y el catálogo atribuye ese grosor sin rodeos a una edad avanzada, sin ponerle cifra. Destaca sobre todo lo que lo rodea, y lo que lo rodea es la clave. El valle del Genal es un castañar continuo, decenas de miles de árboles que cubren toda la cuenca y siguen hacia Pujerra e Igualeja, y a finales de octubre el valle entero se vuelve cobrizo a la vez. Es la razón por la que la gente recorre esta carretera en otoño. El terreno es privado y la pista es pública. No se ha publicado ninguna edad: si la conoce, cuéntenoslo."
+  },
+  "rnd_006": {
+   "name": "El pinsapo solitario",
+   "species": "Pinsapo (Abies pinsapo)",
+   "access": "Gratuito para verlo desde el Puerto del Pinsapo; el terreno es privado y no hay sendero hasta el árbol, así que es una vista más que una visita",
+   "transport": "Junto a la carretera al este de Ronda en dirección a la Sierra de las Nieves, a unos 15 km",
+   "story": "Es el único árbol a la vista, y en eso consiste todo. El pinsapo solitario crece en un risco de roca desnuda cerca del Puerto del Pinsapo, en un tramo de montaña sin bosque alguno, así que de lejos se lee como una sola forma oscura sobre la piedra gris. Mide 17 metros de alto y 3,50 metros de perímetro a la altura del pecho, y la base mide el doble, 7 metros, porque el tronco se ha extendido hacia los lados para salvar y rodear las rocas de las que brotó, algunas de las cuales va tragándose poco a poco. El catálogo lo llama testigo silencioso de la distribución que tuvo la especie, que es la manera honesta de decirlo: el pinsapar cubría mucho más de estas montañas antes de que el clima se secara y la gente talara y pastoreara el resto, y un abeto aislado en un risco pelado es lo que queda de un bosque. Las únicas plantas cercanas son las que esos suelos permiten: cornicabra, coscoja y majuelo. El terreno es privado y no hay sendero hasta su pie, así que es un árbol para mirar desde el puerto y no para ponerse debajo."
+  }
+ }
+}

@@ -2,13 +2,13 @@
   "city": "Freiburg",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Germany's tallest tree grows in Freiburg's city forest: Waldtraut vom Mühlwald, a Douglas fir planted in 1913 and measured at 67.85 metres in 2024, a proper forest walk from the tram network. Closer to the centre, a weeping beech that survived a fight with the state government, a protected ginkgo on a former car park, and an oak named for a nineteenth-century forester stand on their own street corners. Every one of these is a designated natural monument, free to visit, no ticket needed.",
-  "meta_description": "Freiburg's ancient trees: Germany's tallest tree, a Douglas fir at 67.85m, plus a saved weeping beech, a car-park ginkgo and a forester's oak.",
-  "question_meta": "The tallest tree in Freiburg, and Germany, is Waldtraut vom Mühlwald, a Douglas fir measured at 67.85m in 2024. Where it stands and how to reach it.",
-  "question_answer": "Freiburg's most notable tree by measurement is Waldtraut vom Mühlwald, a coastal Douglas fir in the Günterstäler Stadtwald, Germany's tallest tree at 67.85 metres as of an April 2024 survey. It is also the one tree here with a documented age, planted in 1913, about 116 years old. The other three trees on this page carry no recorded age at all, so none can honestly be called older or younger than it.",
-  "question_context": "Waldtraut's height is well documented (67.85 metres in April 2024, up from 67.10 in an earlier measurement) and its age is a written planting date rather than a guess: a three-year sapling put in during a 1913 forestry trial that had been testing North American conifers in the Freiburg city forest since 1896. That makes it, at around 116 years, almost certainly one of the youngest trees on this page by trunk, not the oldest. The Sedanquartier Weeping Beech, the Bernhardstraße Ginkgo and the Alexandereiche all carry no age or girth in any source found, and this page says so plainly rather than guessing. The Alexandereiche has the oldest designation date, 1974, which speaks to how long it has been protected rather than how old the tree itself is. Reaching Waldtraut means a signed 2.5 km forest walk from the Kyburg tram stop in Günterstal, about 150 metres of climbing, an hour or more each way with no viewing platform, just wooden information boards at the foot of the tree. The other three stand on ordinary Freiburg streets and squares, reachable on foot or by tram in minutes.",
+  "intro": "Germany's tallest tree grows in Freiburg's city forest: Waldtraut vom Mühlwald, a Douglas fir planted in 1913 and measured at 67.85 metres in 2024, a proper forest walk from the tram network. The oldest recorded age belongs elsewhere, to a pair of limes on the Lorettoberg that local tradition dates to 1645. In town, a weeping beech that survived a fight with the state government, a car-park ginkgo, a forester's oak, a Gründerzeit giant sequoia and a monastery plane make up the rest. All seven are designated natural monuments, and every one can be seen without a ticket.",
+  "meta_description": "Freiburg's ancient trees: Germany's tallest tree, a Douglas fir at 67.85m, limes dated by tradition to 1645, a saved weeping beech and a car-park ginkgo.",
+  "question_meta": "Freiburg's oldest recorded tree is a pair of limes on the Lorettoberg, dated by tradition to 1645, about 380 years. Plus Germany's tallest tree.",
+  "question_answer": "Freiburg's oldest tree, as far as recorded ages go, is the pair of large-leaved limes on the Kapellenweg up the Lorettoberg, beside the Lorettokapelle. Local tradition puts their planting in 1645, roughly 380 years ago, and they were the first entry on the city's natural monument register when it opened in 1954. The 1645 date is tradition rather than a measurement, and four of Freiburg's seven trees carry no recorded age at all, so an older one cannot be ruled out.",
+  "question_context": "Only three of Freiburg's seven trees carry an age, and each rests on a different kind of evidence. The Kapellenweg limes, at roughly 380 years, rest on local tradition: a planting in 1645, in the last years of the Thirty Years' War, beside the path to a chapel built in 1657 to give thanks for the peace. No single source ties this exact pair to that foundation, so the date stays a tradition. The Starkenstraße giant sequoia, at roughly 130 to 150 years, is dated by the Gründerzeit planting window a newspaper account places it in, not by a ring count. Waldtraut vom Mühlwald is the only one with a written planting date, 1913, which makes it about 116 years old and, at 67.85 metres, Germany's tallest tree. The Sedanquartier Weeping Beech, the Bernhardstraße Ginkgo, the Alexandereiche and the Kartaus Plane carry no age in any source found, and this page says so rather than guessing. The limes stand a twenty to twenty-five minute walk uphill from the Altstadt through Wiehre, on a path open at all times.",
   "hero_tree_id": "frb_001",
-  "oldest_tree_id": "frb_001",
+  "oldest_tree_id": "frb_006",
   "faq": [
     {
       "q": "What is the tallest tree in Freiburg?",
@@ -16,11 +16,11 @@
     },
     {
       "q": "Is Waldtraut the oldest tree here too?",
-      "a": "No, and it is the only one of the four with a documented age: about 116 years, from a written 1913 planting record. The other three carry no recorded age at all."
+      "a": "No. As far as recorded ages go, the oldest are the limes on the Kapellenweg, dated by local tradition to 1645, roughly 380 years. Waldtraut is about 116 years old, from a written 1913 planting record, and four of the seven trees carry no recorded age at all."
     },
     {
       "q": "Are these trees free to visit?",
-      "a": "Yes, every tree on this page is free to visit. Waldtraut needs a proper forest walk from the tram network; the rest are ordinary street and square trees, reachable in minutes."
+      "a": "Yes, every tree on this page can be seen for free. Waldtraut needs a proper forest walk from the tram network, and the Kartaus Plane is seen from the street, with the monastery garden itself open on Friday afternoons. The rest stand on streets, squares and a hillside path."
     },
     {
       "q": "How do I get to Waldtraut vom Mühlwald?",

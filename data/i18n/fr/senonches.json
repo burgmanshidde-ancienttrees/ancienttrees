@@ -1,0 +1,64 @@
+{
+ "_note": "fr overlay for senonches, written 2026-10-06 from data/cities/senonches.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Senonches",
+ "title": "Arbres remarquables de Senonches : 4 vénérables",
+ "meta_description": "Senonches : une boucle balisée en forêt, devant un chêne fauteuil à cinq troncs, les Trois Frères, un châtaignier centenaire et des séquoias géants.",
+ "intro": "La forêt de Senonches, forêt domaniale de chênes et de hêtres du parc naturel régional du Perche, balise ses arbres vénérables sur une boucle de 11,6 kilomètres entre quatre carrefours. Deux étapes sont des chênes devenus plus étranges avec l'âge : un « fauteuil » à cinq troncs, avec un siège dans le creux entre ses tiges, et trois tiges de chêne sessile sorties d'une même souche, que les forestiers appellent les Trois Frères. Un châtaignier planté par une famille de forestier et des séquoias géants, issus de graines arrivées d'Amérique en 1854, complètent une promenade bâtie autour des chênes.",
+ "question_title": "Quel est le plus vieil arbre de Senonches ? (env. 340 ans)",
+ "question_meta": "Le plus vieil arbre de Senonches est Les Trois Frères, trois tiges de chêne sessile d'environ 340 ans, sur la boucle des arbres vénérables.",
+ "question_answer": "Le plus vieil arbre de la forêt de Senonches est Les Trois Frères, trois tiges de chêne sessile issues d'une même souche, qu'un relevé de 2010 donnait à 325 ans, 32 mètres de haut et 5,5 mètres de tour, soit environ 340 ans aujourd'hui. Il se dresse au Rond d'Angoulême, au bord de la D941. À quelques centaines de mètres sous les arbres, le Chêne Fauteuil à cinq troncs le suit de près avec 300 à 340 ans, et un creux en forme de fauteuil entre ses tiges.",
+ "question_context": "Les deux vieux chênes et les deux étapes plus jeunes se trouvent sur la même boucle balisée de 11,6 kilomètres, l'itinéraire des arbres vénérables, que la forêt signale depuis le parking du Rond de Monsieur, sur la route de La Loupe. Ce parking est lui-même une étape : sept séquoias géants et un cèdre entourent le carrefour, issus de graines arrivées en France en 1854 et plantés ici il y a environ un siècle. À peu de distance, au Rond de Condé, un châtaignier planté par une famille de forestier se distingue dans une forêt surtout faite de chênes et de hêtres, son âge exact n'ayant jamais été noté au-delà de plus d'un siècle. Les Trois Frères se dressent directement au bord de la route, au Rond d'Angoulême, à quelques minutes de la voiture. Le Chêne Fauteuil demande encore dix à quinze minutes de chemins forestiers du Rond de Monsieur au Rond de Condé, et un périmètre de sécurité balisé tient les visiteurs à quelques mètres de son tronc, qui perd du bois mort. Tout cela est forêt domaniale, gratuite et ouverte, sans transport en commun jusqu'à l'intérieur.",
+ "faq": [
+  {
+   "q": "Quel est le plus vieil arbre de Senonches ?",
+   "a": "Les Trois Frères, trois tiges de chêne sessile issues d'une même souche, mesurées en 2010 à 325 ans, 32 mètres de haut et 5,5 mètres de tour, soit environ 340 ans aujourd'hui. Le Chêne Fauteuil à cinq troncs, tout proche, le suit de près avec 300 à 340 ans."
+  },
+  {
+   "q": "Pourquoi le Chêne Fauteuil a-t-il un périmètre de sécurité ?",
+   "a": "L'arbre décline visiblement, avec du bois mort dans la couronne et des cavités ouvertes dans ses cinq troncs. Une zone balisée au sol tient les visiteurs à quelques mètres des chutes de bois mort."
+  },
+  {
+   "q": "D'où viennent les séquoias géants du Rond de Monsieur ?",
+   "a": "Leurs graines sont arrivées d'Amérique en France en 1854. Les sept arbres qui entourent le carrefour, plus un cèdre poussé tout contre l'un d'eux, sont estimés entre 85 et 115 ans environ, plantés bien après l'arrivée de ces graines."
+  },
+  {
+   "q": "La forêt de Senonches est-elle gratuite ?",
+   "a": "Oui. C'est une forêt domaniale sans droit d'entrée, accessible par le parking du Rond de Monsieur ; aucun transport en commun ne dessert l'intérieur de la forêt."
+  }
+ ],
+ "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+ "trees": {
+  "sno_001": {
+   "name": "Le Chêne Fauteuil",
+   "species": "Chêne sessile (Quercus petraea)",
+   "age_estimate": "plus de 300 ans",
+   "access": "Gratuit, sans autorisation. Forêt domaniale (forêt domaniale de Senonches, dans le Parc naturel régional du Perche), rejointe à pied depuis le parking du Rond de Monsieur par un chemin forestier balisé ; fait partie d'une boucle de randonnée officielle des arbres vénérables. Une petite zone de sécurité est balisée autour du tronc à cause des chutes de bois mort, on le regarde donc juste à l'extérieur de ce périmètre sans approcher du tronc.",
+   "transport": "Aucun transport en commun ne dessert vraiment l'intérieur de la forêt ; se garer au Rond de Monsieur et marcher environ 10 à 15 minutes par les chemins forestiers jusqu'au Rond de Condé. Ville la plus proche : Senonches.",
+   "story": "Ce chêne s'est fait pousser son propre fauteuil. Cinq troncs partent d'une même souche, et les creux entre eux forment un siège, d'où son nom. Les forestiers d'ici l'appellent le Roi de la forêt. Les mesures confirment le surnom. L'ensemble fait 6,8 mètres de tour à hauteur de poitrine, et l'arbre avait 285 ans selon un relevé de 1980, ce qui place sa première saison vers 1695, dans les dernières années de Louis XIV. Une plaque lue sur place en 2011 indiquait environ 310 ans. Les deux lectures concordent à une décennie près : disons entre 300 et 340 ans aujourd'hui. Il ne vieillit pas en silence. Il y a du bois mort dans la couronne, des cavités ouvertes dans les troncs et une zone de sécurité balisée autour du pied, dont on demande aux visiteurs de rester à l'extérieur parce que des morceaux tombent. On le regarde à quelques mètres plutôt qu'assis dans le fauteuil. Il se dresse en forêt domaniale entre trois carrefours nommés, le Rond de Condé, le Rond de Monsieur et le Rond des Ruelles, sur la boucle de 11,6 kilomètres que la forêt balise comme celle de ses arbres vénérables. La même promenade passe par un chêne à trois tiges au bord de la D941, un châtaignier solitaire et un cercle de séquoias de Californie. Garez-vous au Rond de Monsieur et comptez dix à quinze minutes par les chemins forestiers."
+  },
+  "sno_002": {
+   "name": "Les Trois Frères",
+   "species": "Chêne sessile (Quercus petraea)",
+   "age_estimate": "environ 340 ans",
+   "access": "Gratuit, sans autorisation. Forêt domaniale (forêt domaniale de Senonches, Parc naturel régional du Perche), au Rond d'Angoulême près de la route départementale D941, sur la même boucle de randonnée officielle des arbres vénérables que le Chêne Fauteuil.",
+   "transport": "Aucun transport en commun jusqu'à l'intérieur de la forêt ; accessible par la boucle balisée depuis les parkings du Rond de Monsieur ou du Rond de Battenberg. Ville la plus proche : Senonches.",
+   "story": "Officiellement, il n'y a qu'un arbre ici. On en voit trois. Les Trois Frères forment une cépée, trois tiges de chêne sessile issues d'une même souche, et c'est à ce titre que la France le recense comme Arbre remarquable. Les chiffres datent de 2010 : 325 ans, 32 mètres de haut, 5,5 mètres de tour à hauteur de poitrine, 1,75 mètre de diamètre. En avançant l'âge jusqu'à aujourd'hui, les frères approchent des 340 ans, ce qui place leur première saison dans les années 1680, quand la cour s'installait encore à Versailles. La forêt qui les entoure compte environ trois quarts de chêne sessile et un cinquième de hêtre, et ces trois tiges font partie de la poignée d'arbres que les forestiers désignent par un nom. Ce sont aussi les plus faciles d'accès de la promenade. Là où le Chêne Fauteuil attend à dix minutes sous les arbres derrière un périmètre de sécurité, les Trois Frères se dressent au Rond d'Angoulême, un carrefour au bord de la D941 : une minute après avoir quitté la voiture, on lève les yeux le long de 32 mètres de chêne. La boucle balisée des arbres vénérables de la forêt de Senonches passe devant eux puis rejoint le Fauteuil, un cercle de séquoias géants au Rond de Monsieur et un châtaignier solitaire au Rond de Condé : 11,6 kilomètres, quatre étapes, et c'est par celle-ci qu'il faut commencer si l'on n'a qu'une heure."
+  },
+  "sno_003": {
+   "name": "Le Châtaignier du Rond de Condé",
+   "species": "Châtaignier (Castanea sativa)",
+   "age_estimate": "plus d'un siècle",
+   "access": "Gratuit, sans autorisation. Forêt domaniale (forêt domaniale de Senonches, Parc naturel régional du Perche), sur l'aire de pique-nique du Rond de Condé, sur la même boucle officielle des arbres vénérables que le Chêne Fauteuil (un peu plus loin sur le même circuit).",
+   "transport": "Aucun transport en commun jusqu'à l'intérieur de la forêt ; accessible à pied depuis le parking du Rond de Monsieur par la boucle balisée, ou par le chemin empierré qui mène directement au Rond de Condé. Ville la plus proche : Senonches.",
+   "story": "Ceux qui ont planté cet arbre vivaient dans une maison forestière au Rond de Condé. La maison a disparu. Leur châtaignier mesure 22,3 mètres. C'est aussi un étranger ici. La forêt de Senonches compte environ trois quarts de chêne sessile et un cinquième de hêtre, et le châtaignier y est presque absent : l'association forestière locale, qui tient la carte des arbres remarquables de la forêt, le présente comme l'un des très rares châtaigniers de tout le massif. Son tronc mesure 1,13 mètre de diamètre, soit environ 3,55 mètres de tour. Personne ne l'a daté. La fiche de l'association dit seulement qu'il a probablement été planté il y a plus d'un siècle, par les habitants de cette maison disparue, sans avancer de chiffre. Ses deux voisins de promenade ont un âge à l'année près, si bien que ce manque se remarque au lieu de passer pour la norme. Si vous savez quand il a été planté, dites-le-nous. C'est en octobre qu'il vaut le détour. Le châtaignier lâche ses bogues épineuses, elles s'ouvrent au sol, et l'arbre se dresse sur l'aire de pique-nique du Rond de Condé plutôt qu'au milieu des futaies, si bien que la récolte tombe là où les gens s'assoient. La boucle balisée des arbres vénérables passe par ici, et le Chêne Fauteuil à cinq troncs est à deux pas, au même carrefour. La plupart des visiteurs viennent pour les chênes et trouvent celui-ci."
+  },
+  "sno_004": {
+   "name": "Les Séquoias et le Cèdre du Rond de Monsieur",
+   "species": "Séquoia géant (Sequoiadendron giganteum) et cèdre de l'Atlas ou du Liban (Cedrus sp.)",
+   "age_estimate": "environ 90 à 100 ans",
+   "access": "Gratuit, sans autorisation. Forêt domaniale (forêt domaniale de Senonches, Parc naturel régional du Perche) ; les arbres entourent le carrefour du Rond de Monsieur, principal parking de la boucle des arbres vénérables, traversé par la route qui relie Senonches à La Loupe (la D25 selon l'itinéraire de Visorando).",
+   "transport": "Aucun transport en commun jusqu'à l'intérieur de la forêt ; le Rond de Monsieur est le parking qu'utilisent la plupart des visiteurs pour toute la promenade des arbres vénérables de Senonches. Ville la plus proche : Senonches.",
+   "story": "Sept séquoias géants entourent un seul carrefour dans une forêt française de chênes et de hêtres. L'association forestière locale, qui tient la carte des arbres remarquables de la forêt, rapporte que les graines des premiers séquoias de France ont été importées d'Amérique en 1854, et décrit ce cercle comme unique dans la forêt de Senonches. Un cèdre pousse collé à un séquoia voisin, si près que l'association présente les deux comme un couple. Un inventaire spécialisé des séquoias de France compte huit troncs au Rond, et compte peut-être ce cèdre parmi eux, une erreur pardonnable à cette taille. Les dimensions varient d'un tronc à l'autre. Les circonférences mesurées à hauteur de poitrine vont de 2,8 à 5,5 mètres, de sorte que les 5,59 mètres souvent cités pour ce site appartiennent à un arbre représentatif plutôt qu'à tous. Le plus haut séquoia atteint 34,2 mètres, le cèdre 29,7. L'âge est moins établi que l'origine. L'association leur donnait 90 ans en 2024 ; un visiteur écrivant en 2011 décrivait un cercle de séquoias d'environ un siècle. Quelque part entre 85 et 115 ans, donc, et la date de 1854 est celle de l'arrivée des graines en France, pas celle de la plantation de ces arbres-là. C'est aussi ici que commence la promenade. Le Rond de Monsieur est le parking de toute la boucle des arbres vénérables, et un panneau d'interprétation se trouve sur place."
+  }
+ }
+}
