@@ -42,7 +42,13 @@ window.atCollection = (function() {
   // that is storage too, and the rule is the rule.
   var cardsWait = null;
 
+  // The server's verdict on the stored session: null until it answers, then
+  // true or false. A session the server refused is no session, whatever the
+  // browser still holds (2026-10-05, the sixth time Hidde saw a heart work
+  // signed out).
+  var confirmed = null;
   function session() {
+    if (confirmed === false) return null;
     try {
       var s = JSON.parse(localStorage.getItem('ancienttrees_session'));
       return (s && s.access_token && s.expires_at > Date.now() / 1000) ? s : null;
@@ -79,12 +85,24 @@ window.atCollection = (function() {
     if (!s) return (verified = Promise.resolve(false));
     verified = fetch(SB + '/auth/v1/user', { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token } })
       .then(function(r) {
-        if (r.status === 401 || r.status === 403) { forget(); return false; }
+        if (r.status === 401 || r.status === 403) { confirmed = false; forget(); return false; }
+        confirmed = r.ok;
         return r.ok;
       })
-      .catch(function() { return true; });   // offline: keep the session, the next write decides
+      .catch(function() { confirmed = true; return true; });   // offline: keep the session, the next write decides
     return verified;
   }
+  // EVERY GATED TAP GOES THROUGH HERE: save, seen, vote, photo, report. It
+  // acts only once the server has said this session is real; otherwise it
+  // opens sign-in and does nothing else. One door, so no control can trust the
+  // browser on its own again.
+  function gate(onIn, onOut) {
+    verify().then(function(ok) {
+      var s = ok && session();
+      if (s) onIn(s); else onOut();
+    });
+  }
+  window.atGate = gate;
   function api(path, s, opts) {
     opts = opts || {};
     var h = { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token };
@@ -176,6 +194,7 @@ window.atCollection = (function() {
     session: session,
     forget: forget,
     verify: verify,
+    gate: gate,
     catalogue: catalogue,
     card: card,
     esc: esc,

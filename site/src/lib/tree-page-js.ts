@@ -131,6 +131,8 @@ if (pick) {
 var pinDlg = document.querySelector('.pin-dlg');
 var pinMap = null;
 function session() {
+  // The one answer, verified with the server (collection-js), when it is on the page.
+  if (window.atCollection && window.atCollection.session) return window.atCollection.session();
   try {
     var s = JSON.parse(localStorage.getItem('ancienttrees_session'));
     return (s && s.expires_at > Date.now() / 1000) ? s : null;

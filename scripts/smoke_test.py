@@ -433,6 +433,82 @@ f.addEventListener('load', function () {
 </script>"""
 
 
+SIGNEDOUT_HARNESS = """<!doctype html><meta charset="utf-8"><title>signedout</title>
+<style>html,body{margin:0}iframe{width:402px;height:874px;border:0}</style>
+<iframe id="f"></iframe><pre id="r">pending</pre>
+<script>
+// EVERY GATED CONTROL, SIGNED OUT (2026-10-05). Hidde, for the sixth time: "I
+// can still push the heart button without logging in ... every form of these
+// interaction always forces login". One page at a time, nobody signed in: tap
+// the first of each control that acts on an account and require that the
+// sign-in dialog opens and that nothing is left pressed.
+try { localStorage.clear(); } catch (e) {}
+var pages = new URLSearchParams(location.search).get('u').split(',');
+var f = document.getElementById('f'), out = [], i = 0;
+var SEL = ['.save-btn', '.seen-btn', '.worthit-btn', '.ambassador-apply'];
+function next() {
+  if (i >= pages.length) { document.getElementById('r').textContent = 'RESULT ' + JSON.stringify(out); return; }
+  f.src = pages[i++];
+}
+f.addEventListener('load', function () {
+  var w = f.contentWindow, d = f.contentDocument, page = pages[i - 1], k = 0;
+  function one() {
+    if (k >= SEL.length) { setTimeout(next, 50); return; }
+    var sel = SEL[k++], b = d.querySelector(sel);
+    if (!b) { one(); return; }
+    var dlg = d.getElementById('signin-dialog');
+    if (dlg && dlg.open) dlg.close();
+    b.click();
+    setTimeout(function () {
+      var r = { page: page, control: sel,
+                dialog: Boolean(dlg && dlg.open),
+                pressed: d.querySelectorAll('[aria-pressed="true"].save-btn, [aria-pressed="true"].seen-btn, .worthit-btn[aria-pressed="true"], .worthit.is-voted').length,
+                stored: (function () { try { return Object.keys(w.localStorage).filter(function (k) { return k !== 'ancienttrees_pending'; }).length; } catch (e) { return 0; } })() };
+      out.push(r);
+      one();
+    }, 1500);
+  }
+  setTimeout(one, 2500);
+});
+next();
+</script>"""
+
+
+def signed_out_controls_ask(chrome, base, pages):
+    """Signed out, every control that acts on an account opens the sign-in
+    dialog and changes nothing (Hidde, 2026-10-05, the sixth time: "every form
+    of these interaction always forces login"). Hearts, the Seen tick, the
+    worth-it vote and the ambassador button, on every page type that carries
+    them. Removing this check needs Hidde."""
+    url = "%s/__signedout.html?u=%s" % (base, ",".join(pages))
+    out = subprocess.run(
+        [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+         "--window-size=420,900", "--virtual-time-budget=%d" % (12000 * len(pages)),
+         "--dump-dom", url],
+        capture_output=True, text=True, timeout=300).stdout
+    m = re.search(r"RESULT (\[.*?\])</pre>", out, re.S)
+    if not m:
+        return ["signed out: the harness produced no result (Chrome or the pages did not run)"]
+    try:
+        rows = json.loads(m.group(1).replace("&quot;", '"').replace("&amp;", "&"))
+    except Exception:
+        return ["signed out: the harness result was unreadable"]
+    fails = []
+    for r in rows:
+        if not r.get("dialog"):
+            fails.append("signed out: %s on %s did not open the sign-in dialog" % (r["control"], r["page"]))
+        if r.get("pressed"):
+            fails.append("signed out: %s on %s left something pressed without an account" % (r["control"], r["page"]))
+        if r.get("stored"):
+            # ancienttrees_pending is the sign-in INTENT (what to finish after the
+            # magic link), cleared when the sheet is dismissed; anything else is
+            # a save kept in the browser.
+            fails.append("signed out: %s on %s wrote to localStorage" % (r["control"], r["page"]))
+    if not rows:
+        fails.append("signed out: no gated control found on any page tested")
+    return fails
+
+
 def stale_session_is_refused(chrome, base, page):
     """A session the server does not recognise must not paint the site signed
     in, and a save made on it must come back off (Hidde, 2026-10-02: "I can
@@ -821,6 +897,8 @@ setTimeout(function(){
     sheet_page.write_text(SHEET_HARNESS, encoding="utf-8")
     stale_page = DIST / "__stale.html"
     stale_page.write_text(STALE_HARNESS, encoding="utf-8")
+    out_page = DIST / "__signedout.html"
+    out_page.write_text(SIGNEDOUT_HARNESS, encoding="utf-8")
 
     failures = []
     base_fails, base_warns = check_basemap(DIST)
@@ -834,6 +912,18 @@ setTimeout(function(){
     for line in stale:
         print("SMOKE FAIL: %s" % line)
     failures += stale
+
+    # And signed out, every gated control on every page type asks (2026-10-05).
+    gated = [f"/{city.name}", f"/{city.stem}/{tree.name}"]
+    for pattern in ("species/*.html", "parks/*.html", "collections/*.html", "es/*.html"):
+        hit = sorted(DIST.glob(pattern))
+        hit = [h for h in hit if "<article" in h.read_text(encoding="utf-8", errors="ignore")[:400000]]
+        if hit:
+            gated.append("/" + str(hit[0].relative_to(DIST)))
+    asked = signed_out_controls_ask(chrome, base, gated)
+    for line in asked:
+        print("SMOKE FAIL: %s" % line)
+    failures += asked
 
     for url, label, wants in checks:
         dom = ""
@@ -938,7 +1028,7 @@ setTimeout(function(){
 
     # sheet_page too: it used to be left in dist, where qa.py's orphan check
     # then failed the deploy on a file the smoke test itself had written.
-    for page in (fit_page, align_page, sheet_page):
+    for page in (fit_page, align_page, sheet_page, stale_page, out_page):
         try:
             page.unlink()
         except OSError:

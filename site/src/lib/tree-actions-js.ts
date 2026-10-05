@@ -131,12 +131,13 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     e.stopPropagation();
     // The same gate the heart carries, for the same reason: a log that lives
     // in a browser is not a log (PRINCIPLES.md #12, and 2026-09-02).
-    if (!C.session()) {
+    C.gate(function() { tick(s); }, function() {
       if (window.atOpenSignIn) {
         window.atOpenSignIn(s.dataset.name, null, { kind: 'visit', tree: s.dataset.tree });
       }
-      return;
-    }
+    });
+  });
+  function tick(s) {
     // NO PROXIMITY CHECK. DECISIONS.md 2026-08-20: "GPS proximity is a BONUS,
     // never a gate." The dead handler this replaces asked the browser where
     // you were and refused a tick from more than a few metres out, which
@@ -146,7 +147,7 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     if (on) { try { at.track('visit'); } catch (err) {} }
     paintSeen();
     if (window.atPaintPassport) window.atPaintPassport();
-  });
+  }
 
   document.addEventListener('click', function(e) {
     // Directions is tracked once, in Base.astro, off the Google Maps href.
@@ -156,13 +157,11 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     // moeten mensen naar inloggen pushen"). Every time rather than once a
     // visit, because it is a gate rather than a nudge and a gate that gives up
     // is not a gate. AllTrails blocks the save the same way.
-    if (!C.session()) {
+    C.gate(function() { window.atSaveTree(b.dataset.tree); }, function() {
       if (window.atOpenSignIn) {
         window.atOpenSignIn(b.dataset.name, null, { kind: 'save', tree: b.dataset.tree });
       }
-      return;
-    }
-    window.atSaveTree(b.dataset.tree);
+    });
   });
 })();
 </script>
