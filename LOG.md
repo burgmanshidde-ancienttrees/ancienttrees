@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Later attempt: Frankfurt, Leipzig, Edinburgh checked, nothing shipped
+
+READ is 0 and the shelf is empty. Frankfurt has 0 register rows in 20 km and its leads are all held (previous logs call it a wall); Leipzig was worked an hour ago and only lpz_019 (manor access) stands held; Edinburgh has supply 1. All claims released, none left standing. Not spending a window on from-zero web research that three earlier passes proved empty. Next scout target: Salt Lake City (#131).
+
 ## 2026-10-05 Munich +2 (Obermarbach, Grafing limes), Melbourne reader photo, Jersey City scouted
 
 Visits last 7 days: 1464. Rung 1: two reader photographs from Edinburgh Gardens, Melbourne. The Southern Mahogany (mel_013) went live as lead photo; the "holm oak" (mel_001) was rejected because the frame is a bare deciduous forked tree, not an evergreen holm oak (the dark evergreens at its sides are the oaks). Preflight wanted a written verdict for the published one, and judgement.py --verdict needs a stub that the queue no longer holds after publishing, so I wrote both stubs by script; worth reordering in sightings_publish. Then the shelf: Munich's city register is exhausted (blocked, published or groups), so verify delivered two outlying trees with geotagged CC photos, 33 km out, written and merged (Munich 59 to 61, German overlay too). muc_058 (approximate pin, no photo) and lpz_019 (manor access unknown) stay held. Portland claim released, only 1 of 17 leads has a coordinate. Scouted Jersey City: empty (NJDEP Big Trees has 3 Hoboken points, licence not open); verdict recorded. No tool refusals this window.
