@@ -272,7 +272,17 @@ def pipeline_status():
     ok = [s for s in names if (not proven or s in proven) and (not focus or qc.get(s) in focus)
           and has_tree_level(s)]
     global STAGED_FIRST
-    STAGED_FIRST = [s for s in ok if qc.get(s) in supply]
+    # A city a verify pass just came back empty from is a wall, not work
+    # (passcheck.py WALLS, 2026-10-05): naming it again is how Munich got
+    # claimed six times in three days.
+    try:
+        from passcheck import recent_walls
+        walls = recent_walls()
+    except Exception:
+        walls = {}
+    STAGED_FIRST = [s for s in ok if qc.get(s) in supply and s not in walls]
+    if walls:
+        print("  walls (verified empty in the last 48h, do not re-verify): %s" % " ".join(sorted(walls)))
     ok.sort(key=lambda s: (qc.get(s) not in supply, s))
     parked = [s for s in names if s not in ok]
     print("  staged for verify : %d claimable  %s" % (

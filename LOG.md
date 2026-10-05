@@ -2,6 +2,25 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 session: why so many night runs "fail" with usage left
+
+**They do not fail, they run out of permitted work in about five minutes.** GitHub shows 39 of the last 40 runs green; usage is nowhere near binding (week 446 of 8000 minutes, no limit deaths). What happens instead, per run:
+
+| | measured |
+|---|---|
+| window | 120 min |
+| minutes actually used | typically 3 to 10 (all four attempts together) |
+| attempt 1 | 30 to 60 turns, sometimes a tree, then "nothing more to ship" |
+| attempts 2 to 4 | 9 to 30 turns, 20 to 60 seconds each, re-orient, find the same walls, stop |
+| tokens per attempt just to start | ~400k (mostly the corpus read in cache) |
+| runs with zero trees, 09-30 to 10-05 | 20 of 41 |
+
+**Why the shelf is empty:** the recovery-mode gates of 10-01 to 10-05 (proven roster only, photo-or-pin worldwide, no thin places, focus countries, full cities capped) shrank the claimable universe, and the supply inside it is exhausted: READY 0, recognition lines 100% done, photo candidates wait on Hidde's review page. And the pointer runs follow ("verify a STAGED city first") kept naming the same exhausted cities: since 10-02 Munich was claimed 6 times, Frankfurt 4 times for zero trees, Berlin 4 times, Spokane, Portland and Dresden re-checked every few hours.
+
+**Fixed tonight:** a verify claim records the city's tree count; a release that adds no tree writes the city to `data/walls.json`, and for 48 hours `passcheck.py --claim` refuses a verify pass there (`--retry "<new source>"` overrides) and `prepare.py --status` stops recommending it and prints the walls. Seeded with Frankfurt, Spokane, Portland and Dresden from this morning's logs. That stops the re-checking loop; it does not create supply.
+
+**FOR HIDDE, the real lever is yours:** with the walls removed, what is left for a night run is Munich, Nuremberg and scouting. More windows will produce trees only if one lane opens: (1) your photo review page, since 855 noindexed trees need only a photo or pin and runs may not approve photos themselves in recovery mode; (2) letting verify passes go beyond the frozen 09-27 roster in the US, UK and Germany; or (3) accepting that most windows will end early until search recovers, which costs nothing but tokens.
+
 ## 2026-10-05 session: the app inbox emptied
 
 - **Reader photographs:** 66 on file, all already handled; nothing waiting for a look.

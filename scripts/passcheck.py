@@ -938,8 +938,80 @@ def country_of(target, coord=None):
     return None
 
 
-def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
+# WALLS (2026-10-05). A verify pass that comes back with no new tree has
+# proved the city is a wall for now, and nothing recorded it: prepare.py kept
+# naming the same staged cities, so in the three days to 10-05 Munich was
+# claimed six times and Frankfurt four times for zero trees, each attempt
+# paying ~450k tokens of orientation to rediscover it and then going home
+# with 110 of its 120 minutes unspent. Hidde asked why so many night runs
+# "fail" with usage left; this was most of the answer. So a claim remembers
+# how many trees the city held, a release that adds none writes the city to
+# data/walls.json, and for WALL_HOURS a verify claim on it is refused and
+# prepare.py stops recommending it. `--retry "<why>"` overrides, for a pass
+# that brings a genuinely new source.
+WALLS = os.path.join(ROOT, "data", "walls.json")
+WALL_HOURS = 48
+
+
+def _slug(target):
+    return re.sub(r"[^a-z0-9]+", "-", target.lower()).strip("-")
+
+
+def tree_count(target):
+    try:
+        with open(os.path.join(ROOT, "data", "cities", _slug(target) + ".json"), encoding="utf-8") as fh:
+            return len(json.load(fh).get("trees") or [])
+    except (OSError, ValueError):
+        return None
+
+
+def recent_walls(hours=WALL_HOURS):
+    """{slug: released_at} for verify passes that came back empty lately."""
+    try:
+        rows = json.load(open(WALLS, encoding="utf-8")).get("walls") or []
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for r in rows:
+        try:
+            at = datetime.datetime.fromisoformat(r["released_at"])
+        except (KeyError, ValueError):
+            continue
+        if at.tzinfo is None:
+            at = at.replace(tzinfo=datetime.timezone.utc)
+        if (_now() - at).total_seconds() < hours * 3600:
+            out[r["slug"]] = r["released_at"]
+    return out
+
+
+def record_wall(target, kind):
+    try:
+        doc = json.load(open(WALLS, encoding="utf-8"))
+    except (OSError, ValueError):
+        doc = {"note": "Verify passes that came back with no new tree. Written by "
+                       "passcheck.py --release, read by passcheck --claim and prepare.py; "
+                       "a city here is refused a verify claim for WALL_HOURS. See WALLS "
+                       "in scripts/passcheck.py.", "walls": []}
+    rows = [r for r in doc.get("walls", []) if r.get("slug") != _slug(target)]
+    rows.append({"slug": _slug(target), "kind": kind,
+                 "released_at": _now().replace(microsecond=0).isoformat()})
+    doc["walls"] = rows[-200:]
+    with open(WALLS, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+
+
+def do_claim(target, kind, by, deepen=None, outside_us=None, country=None, retry=None):
     doc, live = load_inflight()
+
+    if kind == "verify" and not retry and not deepen:
+        walled = recent_walls().get(_slug(target))
+        if walled:
+            print(f"REFUSED: a verify pass on {target} came back with no new tree at {walled}.")
+            print(f"  It is a wall for {WALL_HOURS} hours (data/walls.json). Pick another target")
+            print("  from prepare.py --status, or scout_next.py --target. A pass that brings a")
+            print(f'  genuinely new source: --claim {target} --retry "<the new source>"')
+            return 1
 
     # GOOGLE RECOVERY (2026-10-01): two brakes that send a run to the right work.
     # 1. The publishing pace. Once the last 24 hours already added PACE_PER_DAY
@@ -1130,7 +1202,8 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None):
         print("Pick another target, or --release it if that pass is dead.")
         return 1
     live.append({"target": target, "kind": kind, "by": by,
-                 "claimed_at": _now().replace(microsecond=0).isoformat()})
+                 "claimed_at": _now().replace(microsecond=0).isoformat(),
+                 "trees_at_claim": tree_count(target)})
     save_inflight(doc, live)
     print(f"CLAIMED {target} ({kind}) by {by}.")
     print("Commit and push data/in-flight.json now, or the night runs cannot see it.")
@@ -1184,11 +1257,18 @@ def do_release(target, force=False):
         print(f"  Merge them first, or --release {target} --force if this pass really is dead.")
         return 1
     doc, live = load_inflight()
-    keep = [c for c in live if c not in claims_for(target, live)]
+    mine = claims_for(target, live)
+    keep = [c for c in live if c not in mine]
     if len(keep) == len(live):
         print(f"no live claim on {target} (already released, or it expired)")
     else:
         print(f"released {target}")
+        for c in mine:
+            before, now = c.get("trees_at_claim"), tree_count(c["target"])
+            if c.get("kind") == "verify" and now is not None and before is not None and now <= before:
+                record_wall(c["target"], c["kind"])
+                print(f"  no new tree since the claim ({now}), so {c['target']} is a wall for "
+                      f"{WALL_HOURS}h (data/walls.json). Commit that file with the release.")
     save_inflight(doc, keep)
     return 0
 
@@ -1599,6 +1679,11 @@ def main():
             i = args.index("--outside-us")
             outside_us = args[i + 1] if i + 1 < len(args) else "unstated"
             del args[i:i + 2]
+        retry = None
+        if "--retry" in args:
+            i = args.index("--retry")
+            retry = args[i + 1] if i + 1 < len(args) else "unstated"
+            del args[i:i + 2]
         country = None
         if "--country" in args:
             i = args.index("--country")
@@ -1606,9 +1691,9 @@ def main():
             del args[i:i + 2]
         if not args:
             print("usage: passcheck.py --claim <place> [--kind verify|write|photo] [--by who] "
-                  "[--deepen why] [--outside-us why] [--country name]")
+                  "[--deepen why] [--outside-us why] [--country name] [--retry why]")
             return 1
-        return do_claim(" ".join(args), kind, by, deepen, outside_us, country)
+        return do_claim(" ".join(args), kind, by, deepen, outside_us, country, retry)
     if "--release" in args:
         args.remove("--release")
         if not args:
