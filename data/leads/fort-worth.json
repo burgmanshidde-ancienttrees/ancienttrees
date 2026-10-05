@@ -252,6 +252,876 @@
       "status": "published",
       "verified_as": "ftw_005",
       "note": "Verified this pass (2026-09-27), see data/research/texas-famous-verified.json. Alive confirmed via a dated 2025-03-18 waymarking.com visit log requiring an original on-site photo; exact spot settled as the traffic circle just past the Greenwood Memorial Park main entrance (3100 White Settlement Rd), GPS from the waymark."
+    },
+    {
+      "name": "Ancient Cross Timbers Forest",
+      "species": "",
+      "lat": 32.852838,
+      "lng": -97.48506,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Rockwood GC Live Oaks",
+      "species": "",
+      "lat": 32.774196,
+      "lng": -97.368222,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Crestwood Drive Live Oaks",
+      "species": "",
+      "lat": 32.761336,
+      "lng": -97.37604,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Monticello Park Live Oak",
+      "species": "",
+      "lat": 32.758018,
+      "lng": -97.370275,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ruth Carter Stevenson Live Oak",
+      "species": "",
+      "lat": 32.743916,
+      "lng": -97.369404,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Harley Live Oaks",
+      "species": "",
+      "lat": 32.743003,
+      "lng": -97.361774,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bellaire Drive Indian Marker Tree",
+      "species": "",
+      "lat": 32.701771,
+      "lng": -97.394295,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Carter-Riverside HS Post Oaks",
+      "species": "",
+      "lat": 32.781546,
+      "lng": -97.300953,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Quanah Parker Park Pecan",
+      "species": "",
+      "lat": 32.772444,
+      "lng": -97.246857,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Homeless Christmas Tree",
+      "species": "",
+      "lat": 32.75348,
+      "lng": -97.27231,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Timberline Post Oak",
+      "species": "",
+      "lat": 32.695147,
+      "lng": -97.296526,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "National Champion Chittamwood",
+      "species": "",
+      "lat": 32.738057,
+      "lng": -97.359854,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Memorial Bur Oak",
+      "species": "",
+      "lat": 32.663753,
+      "lng": -97.445115,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "John Peter Smith Oak",
+      "species": "",
+      "lat": 32.747875,
+      "lng": -97.363205,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Magnolia Streetscape-700 Block",
+      "species": "",
+      "lat": 32.730557,
+      "lng": -97.331857,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Traders Oak",
+      "species": "",
+      "lat": 32.774251,
+      "lng": -97.331485,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Oakland-Martel Pecan Streetscape",
+      "species": "",
+      "lat": 32.756,
+      "lng": -97.261746,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "\"Trinity Trees\" Bur Oak",
+      "species": "",
+      "lat": 32.723443,
+      "lng": -97.367038,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "TCU-Brite Divinity School Elm",
+      "species": "",
+      "lat": 32.709926,
+      "lng": -97.359229,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Foster Park Trident Maple",
+      "species": "",
+      "lat": 32.68673,
+      "lng": -97.375608,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Van Zandt Cottage Live Oak",
+      "species": "",
+      "lat": 32.743968,
+      "lng": -97.358881,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Riverside Park Pecans",
+      "species": "",
+      "lat": 32.775183,
+      "lng": -97.315155,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Poindexter Live Oak",
+      "species": "",
+      "lat": 32.773835,
+      "lng": -97.330832,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "The Big Greene Tree",
+      "species": "",
+      "lat": 32.713235,
+      "lng": -97.358339,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "TX Co-Champion Green Hawthorn",
+      "species": "",
+      "lat": 32.739165,
+      "lng": -97.36299,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "The Hollow Pecan",
+      "species": "",
+      "lat": 32.734385,
+      "lng": -97.364852,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "1904 World's Fair Red Oak",
+      "species": "",
+      "lat": 32.747185,
+      "lng": -97.364865,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Steele's Tavern Oak",
+      "species": "",
+      "lat": 32.757801,
+      "lng": -97.334699,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Forest Park Witness Tree",
+      "species": "",
+      "lat": 32.722723,
+      "lng": -97.360133,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Marion Sansom Park Oak Motte",
+      "species": "",
+      "lat": 32.7963,
+      "lng": -97.409235,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Riverside Magnolia",
+      "species": "",
+      "lat": 32.770678,
+      "lng": -97.301517,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Casino Beach Pavilion Post Oak",
+      "species": "",
+      "lat": 32.818888,
+      "lng": -97.454533,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Casino Beach Pecan",
+      "species": "",
+      "lat": 32.819951,
+      "lng": -97.453867,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Inspiration Point Live Oak",
+      "species": "",
+      "lat": 32.7952,
+      "lng": -97.414564,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "CCC Camp Post Oaks",
+      "species": "",
+      "lat": 32.815163,
+      "lng": -97.473093,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Veterans Memorial Park Grove",
+      "species": "",
+      "lat": 32.744027,
+      "lng": -97.379757,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Fursman Bur Oak",
+      "species": "",
+      "lat": 32.751409,
+      "lng": -97.40925,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Downtown Red Mulberry",
+      "species": "",
+      "lat": 32.756941,
+      "lng": -97.327398,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Camp Carter YMCA Grandmother Oak",
+      "species": "",
+      "lat": 32.787594,
+      "lng": -97.40555,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "DFW Regional Champion Sweetgum",
+      "species": "",
+      "lat": 32.826708,
+      "lng": -97.447204,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "DFW Regional Co-Champion Tree of Heaven",
+      "species": "",
+      "lat": 32.823056,
+      "lng": -97.452703,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "DFW Regional Champion Blackjack Oak",
+      "species": "",
+      "lat": 32.820601,
+      "lng": -97.453658,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "DFW Regional Co-Champion Western Soapberry",
+      "species": "",
+      "lat": 32.79535,
+      "lng": -97.453587,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "George T. Reynolds Live Oak",
+      "species": "",
+      "lat": 32.794904,
+      "lng": -97.452884,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "DFW Regional Champion Green Ash",
+      "species": "",
+      "lat": 32.853392,
+      "lng": -97.494436,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "TX Champion Black Willow",
+      "species": "",
+      "lat": 32.808807,
+      "lng": -97.49292,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lotus Marsh Boardwalk Chinquapin Oaks",
+      "species": "",
+      "lat": 32.849408,
+      "lng": -97.490111,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Casino Beach Cottonwoods",
+      "species": "",
+      "lat": 32.820996,
+      "lng": -97.449187,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Mosque Point Live Oak",
+      "species": "",
+      "lat": 32.803771,
+      "lng": -97.463847,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lake Worth Sailing Club Post Oak",
+      "species": "",
+      "lat": 32.813857,
+      "lng": -97.468938,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Royal Flying Corps Live Oak",
+      "species": "",
+      "lat": 32.7631,
+      "lng": -97.364013,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lake Worth Indian Marker Tree",
+      "species": "",
+      "lat": 32.795416,
+      "lng": -97.452576,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lake Country Cedar Elm",
+      "species": "",
+      "lat": 32.873016,
+      "lng": -97.435606,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Garden of Eden Pecans",
+      "species": "",
+      "lat": 32.782417,
+      "lng": -97.256687,
+      "register_location": "",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Van Zandt Farm Live Oak",
+      "species": "",
+      "lat": 32.744105,
+      "lng": -97.358045,
+      "register_location": "",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lone Oak Drive Post Oaks",
+      "species": "",
+      "lat": 32.757677,
+      "lng": -97.37971,
+      "register_location": "",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "The TCU Original Oak",
+      "species": "",
+      "lat": 32.710054,
+      "lng": -97.36055,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "The Millennium Tree",
+      "species": "",
+      "lat": 32.757581,
+      "lng": -97.332725,
+      "register_location": null,
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
+      ],
+      "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
+      "status": "open"
     }
   ],
   "blocked": [

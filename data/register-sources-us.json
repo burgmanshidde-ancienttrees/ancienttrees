@@ -343,6 +343,88 @@
    },
    "source_url": "https://services.arcgis.com/lQySeXwbBg53XWDi/arcgis/rest/services/Tempe_Treasured_Trees/FeatureServer/0",
    "source_note": "City of Tempe (AZ) Treasured Trees programme (government), with a story link per tree (StoryURL). Facts only; the city's pictures are not ours to republish without a licence."
+  },
+  {
+   "name": "Seattle heritage street trees (SDOT)",
+   "place": "seattle",
+   "centre": [
+    47.6062,
+    -122.3321
+   ],
+   "radius_km": 20,
+   "where": "HERITAGE='Y'",
+   "layer": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0",
+   "map": {
+    "common": "COMMON_NAME",
+    "sci": "SCIENTIFIC_NAME",
+    "loc": "UNITDESC",
+    "status": "CONDITION"
+   },
+   "block_if": {
+    "CURRENT_STATUS": [
+     "removed",
+     "rmv",
+     "dead"
+    ],
+    "CONDITION": [
+     "dead",
+     "very poor"
+    ]
+   },
+   "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0",
+   "source_note": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only."
+  },
+  {
+   "name": "Clackamas County heritage trees",
+   "place": "portland",
+   "centre": [
+    45.5152,
+    -122.6784
+   ],
+   "radius_km": 25,
+   "layer": "https://services3.arcgis.com/I2eWXOndpF9m8oKC/arcgis/rest/services/Heritage_Trees/FeatureServer/0",
+   "map": {
+    "common": "Common",
+    "sci": "Botanical",
+    "loc": "Address",
+    "status": "Category"
+   },
+   "source_url": "https://services3.arcgis.com/I2eWXOndpF9m8oKC/arcgis/rest/services/Heritage_Trees/FeatureServer/0",
+   "source_note": "Clackamas County (OR) heritage trees (government; Lake Oswego, Milwaukie, Oregon City and neighbours). The layer names nominators and owners: NEVER copy them. An address may be a home, hard rule 10. Real place name and travel time from Portland."
+  },
+  {
+   "name": "Fort Worth heritage trees",
+   "place": "fort-worth",
+   "centre": [
+    32.7555,
+    -97.3308
+   ],
+   "radius_km": 25,
+   "layer": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0",
+   "map": {
+    "name": "Name",
+    "loc": "Park"
+   },
+   "source_url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0",
+   "source_note": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only."
+  },
+  {
+   "name": "Westchester County heritage trees",
+   "place": "new-york",
+   "centre": [
+    40.758,
+    -73.9855
+   ],
+   "radius_km": 35,
+   "layer": "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6",
+   "map": {
+    "name": "Name",
+    "common": "Common_Name",
+    "sci": "Scientific_Name",
+    "loc": "Notes"
+   },
+   "source_url": "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6",
+   "source_note": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only."
   }
  ]
 }

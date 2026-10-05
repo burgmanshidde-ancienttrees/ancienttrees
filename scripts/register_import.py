@@ -18,10 +18,10 @@ def get(u,p):
     u+='?'+urllib.parse.urlencode(p)
     return json.load(urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'AncientTrees/1.0'}),timeout=60))
 def km(a,b,c,d): return 6371*2*math.asin(math.sqrt(math.sin(math.radians(c-a)/2)**2+math.cos(math.radians(a))*math.cos(math.radians(c))*math.sin(math.radians(d-b)/2)**2))
-def feats(layer):
+def feats(layer,where='1=1'):
     out=[];off=0
     while True:
-        r=get(layer+'/query',{'where':'1=1','outFields':'*','outSR':4326,'f':'json','resultOffset':off,'resultRecordCount':1000})
+        r=get(layer+'/query',{'where':where,'outFields':'*','outSR':4326,'f':'json','resultOffset':off,'resultRecordCount':1000})
         fs=r.get('features',[]); out+=fs
         if not r.get('exceededTransferLimit') or not fs: break
         off+=len(fs)
@@ -39,7 +39,7 @@ SOURCES=_cfg['sources'] if isinstance(_cfg,dict) else _cfg
 if len(sys.argv)>2: SOURCES=[x for x in SOURCES if sys.argv[2].lower() in x['name'].lower()]
 summary={}
 for s in SOURCES:
-    fs=feats(s['layer'])
+    fs=feats(s['layer'],s.get('where','1=1'))
     slug=s['place']; cen=s['centre']
     p=f'data/leads/{slug}.json'
     doc=json.load(open(p)) if os.path.exists(p) else {'city':slug,'leads':[],'blocked':[]}

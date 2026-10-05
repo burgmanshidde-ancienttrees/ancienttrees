@@ -90,6 +90,4026 @@
       "name": "Green Lake giant sequoias, northeast corner",
       "species": "Giant Sequoia (Sequoiadendron giganteum)",
       "note": "Three massive sequoias beside the path per the city Green Lake tree walk. No measurements or planting date seen; the separate famous Green Lake sequoia at Woodlawn Ave N is blocked (removed)."
+    },
+    {
+      "name": "Laceleaf Maple",
+      "species": "Laceleaf Maple (Acer palmatum var. dissectum)",
+      "lat": 47.626592,
+      "lng": -122.337739,
+      "register_location": "800 TERRY AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sweetgum",
+      "species": "Sweetgum (Liquidambar styraciflua)",
+      "lat": 47.633429,
+      "lng": -122.281734,
+      "register_location": "3950 E MADISON ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "lat": 47.659269,
+      "lng": -122.39942,
+      "register_location": "4254 33RD AV W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sweetgum",
+      "species": "Sweetgum (Liquidambar styraciflua)",
+      "lat": 47.625651,
+      "lng": -122.314508,
+      "register_location": "720 14TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "European Chestnut",
+      "species": "European Chestnut (Castanea sativa)",
+      "lat": 47.664247,
+      "lng": -122.338973,
+      "register_location": "1609 N 49TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sweetgum",
+      "species": "Sweetgum (Liquidambar styraciflua)",
+      "lat": 47.625649,
+      "lng": -122.314534,
+      "register_location": "708 14TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Silver (Silverleaf) Maple",
+      "species": "Silver (Silverleaf) Maple (Acer saccharinum)",
+      "lat": 47.674505,
+      "lng": -122.380763,
+      "register_location": "1743 NW 63RD ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Locust",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "lat": 47.685164,
+      "lng": -122.374176,
+      "register_location": "7701 14TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ginkgo, Maidenhair Tree",
+      "species": "Ginkgo, Maidenhair Tree (Ginkgo biloba)",
+      "lat": 47.571979,
+      "lng": -122.308777,
+      "register_location": "1756 S SPOKANE ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Yoshino Cherry",
+      "species": "Yoshino Cherry (Prunus x yedoensis)",
+      "lat": 47.656886,
+      "lng": -122.339311,
+      "register_location": "1508 N 41ST ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.611902,
+      "lng": -122.284201,
+      "register_location": "1116 Newport Way",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Japanese Umbrella Pine",
+      "species": "Japanese Umbrella Pine (Sciadopitys virticillata)",
+      "lat": 47.603137,
+      "lng": -122.302188,
+      "register_location": "172 23RD AVE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.689846,
+      "lng": -122.366699,
+      "register_location": "8322 DIBBLE AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lawson Cypress, Port Orford Cedar",
+      "species": "Lawson Cypress, Port Orford Cedar (Chamaecyparis lawsoniana)",
+      "lat": 47.654404,
+      "lng": -122.275573,
+      "register_location": "4727 NE 36TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "American (White) Elm",
+      "species": "American (White) Elm (Ulmus americana)",
+      "lat": 47.71433,
+      "lng": -122.345612,
+      "register_location": "11111 AURORA AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Pacific) Madrona",
+      "species": "(Pacific) Madrona (Arbutus menziesii)",
+      "lat": 47.665111,
+      "lng": -122.290047,
+      "register_location": "5006 35TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "London Plane (Tree)",
+      "species": "London Plane (Tree) (Platanus x acerifolia)",
+      "lat": 47.638698,
+      "lng": -122.303081,
+      "register_location": "2056 23RD AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.508033,
+      "lng": -122.263296,
+      "register_location": "10403 56TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western White Pine",
+      "species": "Western White Pine (Pinus monticola)",
+      "lat": 47.573413,
+      "lng": -122.308199,
+      "register_location": "3320 BEACON AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Oregon White (Garry) Oak",
+      "species": "Oregon White (Garry) Oak (Quercus garryana)",
+      "lat": 47.625736,
+      "lng": -122.3244,
+      "register_location": "730 BELMONT AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ginkgo, Maidenhair Tree",
+      "species": "Ginkgo, Maidenhair Tree (Ginkgo biloba)",
+      "lat": 47.683797,
+      "lng": -122.397379,
+      "register_location": "7525 31ST AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.588444,
+      "lng": -122.384322,
+      "register_location": "1634 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Common (Japanese) Zelkova",
+      "species": "Common (Japanese) Zelkova (Zelkova serrata)",
+      "lat": 47.704256,
+      "lng": -122.359793,
+      "register_location": "139 NW 104TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Weeping Beech",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "lat": 47.627252,
+      "lng": -122.287853,
+      "register_location": "3409 E WARD ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bigleaf Maple",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "lat": 47.673723,
+      "lng": -122.379407,
+      "register_location": "1707 NW 62ND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Common (Euro) Mountain Ash",
+      "species": "Common (Euro) Mountain Ash (Sorbus aucuparia)",
+      "lat": 47.642803,
+      "lng": -122.401831,
+      "register_location": "2552 35TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Copper Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "lat": 47.647697,
+      "lng": -122.406764,
+      "register_location": "3008 39TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.706347,
+      "lng": -122.28227,
+      "register_location": "4129 NE 107TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Douglas Fir",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "lat": 47.569321,
+      "lng": -122.402032,
+      "register_location": "3833 54TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.68148,
+      "lng": -122.26561,
+      "register_location": "7306 58TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western White Pine",
+      "species": "Western White Pine (Pinus monticola)",
+      "lat": 47.694747,
+      "lng": -122.314753,
+      "register_location": "9028 12TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "lat": 47.630516,
+      "lng": -122.304597,
+      "register_location": "2105 E HIGHLAND DR",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "English Walnut",
+      "species": "English Walnut (Juglans regia)",
+      "lat": 47.687553,
+      "lng": -122.335033,
+      "register_location": "8022 BURKE AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Oregon Crab Apple",
+      "species": "Oregon Crab Apple (Malus fusca)",
+      "lat": 47.639482,
+      "lng": -122.295027,
+      "register_location": "2300 ARBORETUM DR E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sawara Cypress",
+      "species": "Sawara Cypress (Chamaecyparis pisifera)",
+      "lat": 47.674253,
+      "lng": -122.356546,
+      "register_location": "6203 PALATINE AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "lat": 47.575807,
+      "lng": -122.293634,
+      "register_location": "3013 SOUTH MOUNT BAKER BLVD",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.574463,
+      "lng": -122.371648,
+      "register_location": "3217 30TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "London Plane (Tree)",
+      "species": "London Plane (Tree) (Platanus x acerifolia)",
+      "lat": 47.638646,
+      "lng": -122.303062,
+      "register_location": "2056 23RD AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sugar Maple",
+      "species": "Sugar Maple (Acer saccharum)",
+      "lat": 47.624954,
+      "lng": -122.310064,
+      "register_location": "615 17TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Grand (Giant) Fir",
+      "species": "Grand (Giant) Fir (Abies grandis)",
+      "lat": 47.512534,
+      "lng": -122.266826,
+      "register_location": "9817 55TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Common (Fruiting) Pear Tree",
+      "species": "Common (Fruiting) Pear Tree (Pyrus communis)",
+      "lat": 47.529997,
+      "lng": -122.349987,
+      "register_location": "1117 SW ELMGROVE ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Golden Weeping Willow",
+      "species": "Golden Weeping Willow (Salix x sepulcralis `Chrysocom)",
+      "lat": 47.572416,
+      "lng": -122.40767,
+      "register_location": "5826 SW SPOKANE ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "White Oak",
+      "species": "White Oak (Quercus alba)",
+      "lat": 47.542338,
+      "lng": -122.389007,
+      "register_location": "4338 SW WILLOW ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bigleaf Maple",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "lat": 47.659026,
+      "lng": -122.361795,
+      "register_location": "4300 4TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.610993,
+      "lng": -122.308937,
+      "register_location": "921 18TH AVE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Horse Chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "lat": 47.640024,
+      "lng": -122.352829,
+      "register_location": "206 MCGRAW ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.671284,
+      "lng": -122.377555,
+      "register_location": "1525 NW 59TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Sweet) Mazzard Cherry",
+      "species": "(Sweet) Mazzard Cherry (Prunus avium)",
+      "lat": 47.597386,
+      "lng": -122.299278,
+      "register_location": "519 26TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.553637,
+      "lng": -122.307695,
+      "register_location": "5407 20TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "American (White) Elm",
+      "species": "American (White) Elm (Ulmus americana)",
+      "lat": 47.620058,
+      "lng": -122.318167,
+      "register_location": "1110 E JOHN ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Manzanita",
+      "species": "Manzanita (Arctostaphylos manzanita)",
+      "lat": 47.641597,
+      "lng": -122.306871,
+      "register_location": "1907 E MILLER ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Pacific Yew",
+      "species": "Pacific Yew (Taxus brevifolia)",
+      "lat": 47.696853,
+      "lng": -122.274286,
+      "register_location": "4999 NE 93rd St",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.637315,
+      "lng": -122.394548,
+      "register_location": "2015 29TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.67024,
+      "lng": -122.309333,
+      "register_location": "5706 17TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Deodar Cedar",
+      "species": "Deodar Cedar (Cedrus deodara)",
+      "lat": 47.689925,
+      "lng": -122.352733,
+      "register_location": "356 N 84TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "American (common) Persimmon",
+      "species": "American (common) Persimmon (Diospyros virginiana)",
+      "lat": 47.619088,
+      "lng": -122.342108,
+      "register_location": "100 DEXTER AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Akebono Cherry",
+      "species": "Akebono Cherry (Prunus x yedoensis `Akebono`)",
+      "lat": 47.693859,
+      "lng": -122.314787,
+      "register_location": "8922 12TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.674587,
+      "lng": -122.328026,
+      "register_location": "102 NE 63RD ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "lat": 47.708038,
+      "lng": -122.340253,
+      "register_location": "10740 INTERLAKE AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Yoshino Cherry",
+      "species": "Yoshino Cherry (Prunus x yedoensis)",
+      "lat": 47.679253,
+      "lng": -122.372083,
+      "register_location": "6749 12TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.578567,
+      "lng": -122.3844,
+      "register_location": "2700 CALIFORNIA AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Deodar Cedar",
+      "species": "Deodar Cedar (Cedrus deodara)",
+      "lat": 47.6352,
+      "lng": -122.367822,
+      "register_location": "1811 8TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "European (Green) Beech",
+      "species": "European (Green) Beech (Fagus sylvatica)",
+      "lat": 47.617394,
+      "lng": -122.283294,
+      "register_location": "1733 39TH AVE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Wild Weeping (Higan) Cherry",
+      "species": "Wild Weeping (Higan) Cherry (Prunus pendula)",
+      "lat": 47.516178,
+      "lng": -122.396535,
+      "register_location": "9653 50TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Cork Oak",
+      "species": "Cork Oak (Quercus suber)",
+      "lat": 47.646402,
+      "lng": -122.412579,
+      "register_location": "2853 44TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Katsura Tree",
+      "species": "Katsura Tree (Cercidiphyllum japonicum)",
+      "lat": 47.632473,
+      "lng": -122.293361,
+      "register_location": "2300 ARBORETUM DR E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Coulter Pine",
+      "species": "Coulter Pine (Pinus coulteri)",
+      "lat": 47.720524,
+      "lng": -122.323062,
+      "register_location": "12534 5TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Flame Narrowleaf Ash",
+      "species": "Flame Narrowleaf Ash (Fraxinus angustifolia `Flame`)",
+      "lat": 47.624388,
+      "lng": -122.320817,
+      "register_location": "600 BROADWAY E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Atlas Cedar",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "lat": 47.672422,
+      "lng": -122.311052,
+      "register_location": "5827 16TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Swedish Whitebeam",
+      "species": "Swedish Whitebeam (Sorbus intermedia)",
+      "lat": 47.564945,
+      "lng": -122.360699,
+      "register_location": "4155 21ST AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Wild Weeping (Higan) Cherry",
+      "species": "Wild Weeping (Higan) Cherry (Prunus pendula)",
+      "lat": 47.700807,
+      "lng": -122.37155,
+      "register_location": "9725 12TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sawara Cypress",
+      "species": "Sawara Cypress (Chamaecyparis pisifera)",
+      "lat": 47.674218,
+      "lng": -122.356548,
+      "register_location": "6203 PALATINE AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Silk Tree/Mimosa",
+      "species": "Silk Tree/Mimosa (Albizia julibrissin)",
+      "lat": 47.653928,
+      "lng": -122.332715,
+      "register_location": "3827 BAGLEY AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.574625,
+      "lng": -122.284724,
+      "register_location": "3212 HUNTER BLVD S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ponderosa Pine",
+      "species": "Ponderosa Pine (Pinus ponderosa)",
+      "lat": 47.687883,
+      "lng": -122.33618,
+      "register_location": "8034 WALLINGFORD AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.685971,
+      "lng": -122.368909,
+      "register_location": "7726 10TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Horse Chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "lat": 47.628028,
+      "lng": -122.290833,
+      "register_location": "1016 32ND AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Apricot Tree",
+      "species": "Apricot Tree (Prunus armeniaca)",
+      "lat": 47.654592,
+      "lng": -122.338456,
+      "register_location": "3902 WOODLAWN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "American (White) Elm",
+      "species": "American (White) Elm (Ulmus americana)",
+      "lat": 47.670581,
+      "lng": -122.311562,
+      "register_location": "1507 NE RAVENNA BLVD",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.626811,
+      "lng": -122.311376,
+      "register_location": "747 16TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Japanese Umbrella Pine",
+      "species": "Japanese Umbrella Pine (Sciadopitys virticillata)",
+      "lat": 47.635111,
+      "lng": -122.320231,
+      "register_location": "1801 10TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.688024,
+      "lng": -122.336047,
+      "register_location": "8034 WALLINGFORD AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Oregon White (Garry) Oak",
+      "species": "Oregon White (Garry) Oak (Quercus garryana)",
+      "lat": 47.542597,
+      "lng": -122.270355,
+      "register_location": "6555 51ST AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Pacific Dogwood",
+      "species": "Pacific Dogwood (Cornus nuttallii)",
+      "lat": 47.670577,
+      "lng": -122.356993,
+      "register_location": "5703 PALATINE AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ponderosa Pine",
+      "species": "Ponderosa Pine (Pinus ponderosa)",
+      "lat": 47.624091,
+      "lng": -122.300081,
+      "register_location": "443 25TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Common (Fruiting) Pear Tree",
+      "species": "Common (Fruiting) Pear Tree (Pyrus communis)",
+      "lat": 47.608167,
+      "lng": -122.297358,
+      "register_location": "704 27TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "London Plane (Tree)",
+      "species": "London Plane (Tree) (Platanus x acerifolia)",
+      "lat": 47.657521,
+      "lng": -122.315596,
+      "register_location": "4123 12TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "European Chestnut",
+      "species": "European Chestnut (Castanea sativa)",
+      "lat": 47.662926,
+      "lng": -122.352544,
+      "register_location": "502 N 47TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Empress Tree",
+      "species": "Empress Tree (Paulownia tomentosa)",
+      "lat": 47.658912,
+      "lng": -122.270178,
+      "register_location": "5314 NE 42ND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "lat": 47.631187,
+      "lng": -122.353584,
+      "register_location": "1406 ORANGE PL N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "European (Green) Beech",
+      "species": "European (Green) Beech (Fagus sylvatica)",
+      "lat": 47.609687,
+      "lng": -122.308987,
+      "register_location": "815 18TH AVE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Japanese Umbrella Pine",
+      "species": "Japanese Umbrella Pine (Sciadopitys virticillata)",
+      "lat": 47.628761,
+      "lng": -122.304908,
+      "register_location": "1107 21ST AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Common (Fruiting) Pear Tree",
+      "species": "Common (Fruiting) Pear Tree (Pyrus communis)",
+      "lat": 47.66994,
+      "lng": -122.313616,
+      "register_location": "5614 BROOKLYN AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.692668,
+      "lng": -122.312991,
+      "register_location": "1241 NE 89TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Montezuma Pine",
+      "species": "Montezuma Pine (Pinus montezumae)",
+      "lat": 47.638043,
+      "lng": -122.293636,
+      "register_location": "2300 ARBORETUM DR E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "China Fir, Cunninghamia",
+      "species": "China Fir, Cunninghamia (Cunninghamia lanceolata 'Glauc)",
+      "lat": 47.687043,
+      "lng": -122.309105,
+      "register_location": "8009 18TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sugar Maple",
+      "species": "Sugar Maple (Acer saccharum)",
+      "lat": 47.631251,
+      "lng": -122.311309,
+      "register_location": "1219 16TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Oregon White (Garry) Oak",
+      "species": "Oregon White (Garry) Oak (Quercus garryana)",
+      "lat": 47.725583,
+      "lng": -122.309223,
+      "register_location": "13325 19TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.645905,
+      "lng": -122.40822,
+      "register_location": "2840 40TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Golden Weeping Willow",
+      "species": "Golden Weeping Willow (Salix x sepulcralis `Chrysocom)",
+      "lat": 47.696438,
+      "lng": -122.335902,
+      "register_location": "9220 WALLINGFORD AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.543872,
+      "lng": -122.383289,
+      "register_location": "6531 40TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "European White Elm",
+      "species": "European White Elm (Ulmus laevis)",
+      "lat": 47.643904,
+      "lng": -122.320573,
+      "register_location": "950 E ROANOKE ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bigleaf Maple",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "lat": 47.625698,
+      "lng": -122.289359,
+      "register_location": "620 33RD AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Hemlock",
+      "species": "Western Hemlock (Tsuga heterophylla)",
+      "lat": 47.636061,
+      "lng": -122.355054,
+      "register_location": "110 Howe St",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.537879,
+      "lng": -122.268396,
+      "register_location": "7217 Orchard Pl S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "White Oak",
+      "species": "White Oak (Quercus alba)",
+      "lat": 47.542334,
+      "lng": -122.388914,
+      "register_location": "4338 SW WILLOW ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Scarlet Oak",
+      "species": "Scarlet Oak (Quercus coccinea)",
+      "lat": 47.676693,
+      "lng": -122.312142,
+      "register_location": "1410 NE 66TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Pacific Dogwood",
+      "species": "Pacific Dogwood (Cornus nuttallii)",
+      "lat": 47.708406,
+      "lng": -122.311507,
+      "register_location": "1521 NE NORTHGATE WAY",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Higan (Spring) Cherry",
+      "species": "Higan (Spring) Cherry (Prunus x subhirtella)",
+      "lat": 47.67934,
+      "lng": -122.354208,
+      "register_location": "6820 PHINNEY AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "English Elm",
+      "species": "English Elm (Ulmus procera)",
+      "lat": 47.674624,
+      "lng": -122.30845,
+      "register_location": "1732 NE NAOMI PL",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "English Midland Hawthorn",
+      "species": "English Midland Hawthorn (Crataegus laevigata)",
+      "lat": 47.63853,
+      "lng": -122.329102,
+      "register_location": "2210 FAIRVIEW AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.601009,
+      "lng": -122.286647,
+      "register_location": "201 LAKESIDE AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Deodar Cedar",
+      "species": "Deodar Cedar (Cedrus deodara)",
+      "lat": 47.684041,
+      "lng": -122.396792,
+      "register_location": "7530 31ST AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Paper (Canoe) Birch",
+      "species": "Paper (Canoe) Birch (Betula papyrifera)",
+      "lat": 47.67426,
+      "lng": -122.306423,
+      "register_location": "6278 20TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "London Plane (Tree)",
+      "species": "London Plane (Tree) (Platanus x acerifolia)",
+      "lat": 47.601948,
+      "lng": -122.333849,
+      "register_location": "600 1ST AVE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.659515,
+      "lng": -122.275956,
+      "register_location": "4812 NE 42ND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Norway Spruce",
+      "species": "Norway Spruce (Picea abies)",
+      "lat": 47.684288,
+      "lng": -122.359487,
+      "register_location": "136 NW 76TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Shirotae Flowering Cherry",
+      "species": "Shirotae Flowering Cherry (Prunus  `Shirotae` (Sato Zakur)",
+      "lat": 47.571884,
+      "lng": -122.387065,
+      "register_location": "3601 CALIFORNIA AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Shirotae Flowering Cherry",
+      "species": "Shirotae Flowering Cherry (Prunus  `Shirotae` (Sato Zakur)",
+      "lat": 47.571843,
+      "lng": -122.387077,
+      "register_location": "3601 CALIFORNIA AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Monkey Puzzle",
+      "species": "Monkey Puzzle (Araucaria araucana)",
+      "lat": 47.669616,
+      "lng": -122.28569,
+      "register_location": "5538 39TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.703066,
+      "lng": -122.378226,
+      "register_location": "10219 VALMAY AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Chestnut Oak",
+      "species": "Chestnut Oak (Quercus prinus)",
+      "lat": 47.718054,
+      "lng": -122.373221,
+      "register_location": "1231 NW 122ND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "American (White) Elm",
+      "species": "American (White) Elm (Ulmus americana)",
+      "lat": 47.565977,
+      "lng": -122.396117,
+      "register_location": "5012 SW GENESEE ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Cedar of Lebanon",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "lat": 47.641455,
+      "lng": -122.367775,
+      "register_location": "2525 8TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Holm (Holly) Oak",
+      "species": "Holm (Holly) Oak (Quercus ilex)",
+      "lat": 47.550927,
+      "lng": -122.259271,
+      "register_location": "5747 S ORCAS ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sitka Spruce",
+      "species": "Sitka Spruce (Picea sitchensis)",
+      "lat": 47.682584,
+      "lng": -122.301377,
+      "register_location": "7340 24TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "English (Hedge) Maple",
+      "species": "English (Hedge) Maple (Acer campestre)",
+      "lat": 47.68257,
+      "lng": -122.301603,
+      "register_location": "7340 24TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Scarlet Oak",
+      "species": "Scarlet Oak (Quercus coccinea)",
+      "lat": 47.68585,
+      "lng": -122.304197,
+      "register_location": "7741 22ND AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.561798,
+      "lng": -122.390633,
+      "register_location": "4538 46TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Sweet) Mazzard Cherry",
+      "species": "(Sweet) Mazzard Cherry (Prunus avium)",
+      "lat": 47.623319,
+      "lng": -122.313701,
+      "register_location": "511 MALDEN AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Copper Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "lat": 47.631188,
+      "lng": -122.367533,
+      "register_location": "1400 8TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ponderosa Pine",
+      "species": "Ponderosa Pine (Pinus ponderosa)",
+      "lat": 47.672704,
+      "lng": -122.380452,
+      "register_location": "1736 NW 60TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.626104,
+      "lng": -122.289976,
+      "register_location": "639 33RD AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Wild Weeping (Higan) Cherry",
+      "species": "Wild Weeping (Higan) Cherry (Prunus pendula)",
+      "lat": 47.667644,
+      "lng": -122.290103,
+      "register_location": "5230 35TH AV NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Pacific) Madrona",
+      "species": "(Pacific) Madrona (Arbutus menziesii)",
+      "lat": 47.628034,
+      "lng": -122.302792,
+      "register_location": "1025 23RD AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Yellowwood",
+      "species": "Yellowwood (Cladrastis kentukea)",
+      "lat": 47.630824,
+      "lng": -122.299311,
+      "register_location": "1221 26TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lombardy Poplar",
+      "species": "Lombardy Poplar (Populus nigra `Italica`)",
+      "lat": 47.671284,
+      "lng": -122.372675,
+      "register_location": "1143 NW 59TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lombardy Poplar",
+      "species": "Lombardy Poplar (Populus nigra `Italica`)",
+      "lat": 47.671281,
+      "lng": -122.372541,
+      "register_location": "1143 NW 59TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Douglas Fir",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "lat": 47.716997,
+      "lng": -122.362049,
+      "register_location": "12030 4TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Pacific) Madrona",
+      "species": "(Pacific) Madrona (Arbutus menziesii)",
+      "lat": 47.639662,
+      "lng": -122.372103,
+      "register_location": "2232 12TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.515734,
+      "lng": -122.386721,
+      "register_location": "9661 42ND AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bigleaf Maple",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "lat": 47.621674,
+      "lng": -122.287785,
+      "register_location": "311 36TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bigleaf Maple",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "lat": 47.621539,
+      "lng": -122.287342,
+      "register_location": "307 36TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Persian Ironwood, Parrotia",
+      "species": "Persian Ironwood, Parrotia (Parrotia persica)",
+      "lat": 47.66337,
+      "lng": -122.329307,
+      "register_location": "4625 EASTERN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "lat": 47.66326,
+      "lng": -122.329242,
+      "register_location": "4625 EASTERN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Copper Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "lat": 47.663265,
+      "lng": -122.329424,
+      "register_location": "4625 EASTERN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Copper Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "lat": 47.663344,
+      "lng": -122.329574,
+      "register_location": "4625 EASTERN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tanoak",
+      "species": "Tanoak (Lithocarpus densiflorus)",
+      "lat": 47.663423,
+      "lng": -122.329627,
+      "register_location": "4625 EASTERN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Scarlet Oak",
+      "species": "Scarlet Oak (Quercus coccinea)",
+      "lat": 47.663473,
+      "lng": -122.329622,
+      "register_location": "4625 EASTERN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Judas Tree",
+      "species": "Judas Tree (Cercis siliquastrum)",
+      "lat": 47.663517,
+      "lng": -122.329352,
+      "register_location": "4625 EASTERN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Dove Tree",
+      "species": "Dove Tree (Davidia involucrata)",
+      "lat": 47.663481,
+      "lng": -122.3293,
+      "register_location": "4625 EASTERN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "lat": 47.670489,
+      "lng": -122.413301,
+      "register_location": "4510 W SHERIDAN ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "lat": 47.687857,
+      "lng": -122.339632,
+      "register_location": "8029 ASHWORTH AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "lat": 47.670603,
+      "lng": -122.413292,
+      "register_location": "4510 W SHERIDAN ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.67449,
+      "lng": -122.314751,
+      "register_location": "6311 BROOKLYN AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Oregon White (Garry) Oak",
+      "species": "Oregon White (Garry) Oak (Quercus garryana)",
+      "lat": 47.539327,
+      "lng": -122.272058,
+      "register_location": "4812 S MYRTLE ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Scarlet Oak",
+      "species": "Scarlet Oak (Quercus coccinea)",
+      "lat": 47.720939,
+      "lng": -122.282352,
+      "register_location": "12556 42ND AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Scarlet Oak",
+      "species": "Scarlet Oak (Quercus coccinea)",
+      "lat": 47.72084,
+      "lng": -122.28238,
+      "register_location": "12556 42ND AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "English (Hedge) Maple",
+      "species": "English (Hedge) Maple (Acer campestre)",
+      "lat": 47.638911,
+      "lng": -122.305011,
+      "register_location": "2020 E NEWTON ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "lat": 47.569762,
+      "lng": -122.358545,
+      "register_location": "3814 20TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "lat": 47.509603,
+      "lng": -122.269553,
+      "register_location": "10202 51ST AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western White Pine",
+      "species": "Western White Pine (Pinus monticola)",
+      "lat": 47.564041,
+      "lng": -122.389283,
+      "register_location": "4422 45TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Cottonwood",
+      "species": "Black Cottonwood (Populus balsamifera ssp. Trich)",
+      "lat": 47.630259,
+      "lng": -122.371293,
+      "register_location": "1144 ELLIOTT AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "China Fir",
+      "species": "China Fir (Cunninghamia lanceolata)",
+      "lat": 47.670616,
+      "lng": -122.413624,
+      "register_location": "4510 W SHERIDAN ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "California (Coast) Live Oak",
+      "species": "California (Coast) Live Oak (Quercus agrifolia)",
+      "lat": 47.668541,
+      "lng": -122.26143,
+      "register_location": "6049 NE KESWICK DR",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Northern (Western) Catalpa",
+      "species": "Northern (Western) Catalpa (Catalpa speciosa)",
+      "lat": 47.648508,
+      "lng": -122.368805,
+      "register_location": "3218 CONKLING PL W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lombardy Poplar Grove",
+      "species": "Lombardy Poplar Grove (Populus nigra 'Italica')",
+      "lat": 47.7021,
+      "lng": -122.369313,
+      "register_location": "10019 9th Ave NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ginkgo, Maidenhair Tree",
+      "species": "Ginkgo, Maidenhair Tree (Ginkgo biloba)",
+      "lat": 47.526552,
+      "lng": -122.318639,
+      "register_location": "1032 S CLOVERDALE ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Common Serviceberry",
+      "species": "Common Serviceberry (Amelanchier arborea)",
+      "lat": 47.707023,
+      "lng": -122.356861,
+      "register_location": "10703 PALATINE AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.647169,
+      "lng": -122.370866,
+      "register_location": "3007 10th Ave W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Snow Gum",
+      "species": "Snow Gum (Eucalyptus pauciflora)",
+      "lat": 47.699335,
+      "lng": -122.359224,
+      "register_location": "9550 2ND AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.557567,
+      "lng": -122.292825,
+      "register_location": "4903 31ST AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Eastern White Pine",
+      "species": "Eastern White Pine (Pinus strobus)",
+      "lat": 47.689668,
+      "lng": -122.302533,
+      "register_location": "8240 23RD AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Golden Rain Tree",
+      "species": "Golden Rain Tree (Koelreuteria paniculata)",
+      "lat": 47.67495,
+      "lng": -122.363851,
+      "register_location": "6226 6th Ave NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Pin Oak",
+      "species": "Pin Oak (Quercus palustris)",
+      "lat": 47.652261,
+      "lng": -122.278461,
+      "register_location": "4316 NE 33rd St",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Pin Oak",
+      "species": "Pin Oak (Quercus palustris)",
+      "lat": 47.652284,
+      "lng": -122.278712,
+      "register_location": "4316 NE 33RD ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Strawberry tree",
+      "species": "Strawberry tree (Arbutus unedo)",
+      "lat": 47.569537,
+      "lng": -122.301329,
+      "register_location": "3826 24TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.521023,
+      "lng": -122.380894,
+      "register_location": "3729 SW BARTON ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Cork Oak",
+      "species": "Cork Oak (Quercus suber)",
+      "lat": 47.661426,
+      "lng": -122.320426,
+      "register_location": "700 NE 45TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Allee Lacebark Elm",
+      "species": "Allee Lacebark Elm (Ulmus parvifolia 'Emer II')",
+      "lat": 47.668563,
+      "lng": -122.399727,
+      "register_location": "3233 NW Market st",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Deodar Cedar",
+      "species": "Deodar Cedar (Cedrus deodara)",
+      "lat": 47.706514,
+      "lng": -122.356623,
+      "register_location": "10550 PALATINE AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "FAIR",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.709083,
+      "lng": -122.281142,
+      "register_location": "4238 NE 110TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.658723,
+      "lng": -122.316496,
+      "register_location": "4204 11th Ave NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.641621,
+      "lng": -122.30496,
+      "register_location": "2011 E MILLER ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Fern Leaf Beech",
+      "species": "Fern Leaf Beech (Fagus sylvatica 'Asplenifolia')",
+      "lat": 47.645231,
+      "lng": -122.404828,
+      "register_location": "2680 Bishop Pl W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.549235,
+      "lng": -122.268003,
+      "register_location": "5136 S RAYMOND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Net Leaf Oak",
+      "species": "Net Leaf Oak (Quercus rugosa)",
+      "lat": 47.548969,
+      "lng": -122.268277,
+      "register_location": "5136 S RAYMOND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "lat": 47.730521,
+      "lng": -122.308169,
+      "register_location": "14004 19TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.708242,
+      "lng": -122.361079,
+      "register_location": "10743 3RD AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Yew",
+      "species": "Yew (Taxus sp.)",
+      "lat": 47.620908,
+      "lng": -122.285787,
+      "register_location": "3698 E HIGH LANE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "lat": 47.595741,
+      "lng": -122.309182,
+      "register_location": "800 HIAWATHA PL S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Grand (Giant) Fir",
+      "species": "Grand (Giant) Fir (Abies grandis)",
+      "lat": 47.560947,
+      "lng": -122.27011,
+      "register_location": "4626 50TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.685179,
+      "lng": -122.371742,
+      "register_location": "1208 NW 77TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.55809,
+      "lng": -122.381688,
+      "register_location": "4835 FAUNTLEROY WAY SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.558138,
+      "lng": -122.381649,
+      "register_location": "4835 FAUNTLEROY WAY SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Copper Beech",
+      "species": "Copper Beech (Fagus sylvatica 'Atropurpurea')",
+      "lat": 47.53737,
+      "lng": -122.394911,
+      "register_location": "7306 VIEW LN SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Dogwood",
+      "species": "Dogwood (Cornus sp.)",
+      "lat": 47.558094,
+      "lng": -122.277029,
+      "register_location": "4421 S FERDINAND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.643056,
+      "lng": -122.302205,
+      "register_location": "2553 24th Ave E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sweetgum",
+      "species": "Sweetgum (Liquidambar styraciflua)",
+      "lat": 47.549212,
+      "lng": -122.268282,
+      "register_location": "5136 S RAYMOND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Spanish Fir",
+      "species": "Spanish Fir (Abies pinsapo)",
+      "lat": 47.549093,
+      "lng": -122.268059,
+      "register_location": "5136 S RAYMOND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Sweet) Mazzard Cherry",
+      "species": "(Sweet) Mazzard Cherry (Prunus avium)",
+      "lat": 47.673587,
+      "lng": -122.397187,
+      "register_location": "3033 NW 62ND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "lat": 47.655878,
+      "lng": -122.343063,
+      "register_location": "1414 MIDVALE AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Columnar English Oak",
+      "species": "Columnar English Oak (Quercus robur f fastigiata)",
+      "lat": 47.629052,
+      "lng": -122.366762,
+      "register_location": "1107 7TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Kousa Dogwood",
+      "species": "Kousa Dogwood (Cornus kousa)",
+      "lat": 47.659019,
+      "lng": -122.277836,
+      "register_location": "4554 NE 41st St",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Schwedler Norway Maple",
+      "species": "Schwedler Norway Maple (Acer platanoides f Schwedler)",
+      "lat": 47.610462,
+      "lng": -122.325368,
+      "register_location": "1120 SPRING ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(European) White Birch",
+      "species": "(European) White Birch (Betula pendula)",
+      "lat": 47.544813,
+      "lng": -122.389765,
+      "register_location": "6561 FAUNTLEROY WAY SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bigleaf Maple",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "lat": 47.706865,
+      "lng": -122.373569,
+      "register_location": "10556 14TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "lat": 47.703596,
+      "lng": -122.361403,
+      "register_location": "10303 3rd AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "lat": 47.717689,
+      "lng": -122.28638,
+      "register_location": "3812 NE 123rd St",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "FAIR",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "American Sycamore",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "lat": 47.701609,
+      "lng": -122.306413,
+      "register_location": "10011 21st Ave NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "FAIR",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Laceleaf Maple",
+      "species": "Laceleaf Maple (Acer palmatum var. dissectum)",
+      "lat": 47.638715,
+      "lng": -122.315293,
+      "register_location": "2213 EVERETT AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ginkgo, Maidenhair Tree",
+      "species": "Ginkgo, Maidenhair Tree (Ginkgo biloba)",
+      "lat": 47.616407,
+      "lng": -122.289014,
+      "register_location": "1636 34th Ave",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "FAIR",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.571932,
+      "lng": -122.381935,
+      "register_location": "3441 39th Ave SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Lawson Cypress, Port Orford Cedar",
+      "species": "Lawson Cypress, Port Orford Cedar (Chamaecyparis lawsoniana)",
+      "lat": 47.553365,
+      "lng": -122.384147,
+      "register_location": "5412 41st Ave SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Oregon White (Garry) Oak",
+      "species": "Oregon White (Garry) Oak (Quercus garryana)",
+      "lat": 47.525988,
+      "lng": -122.275686,
+      "register_location": "8604 45th Ave S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Frisia Black Locust",
+      "species": "Frisia Black Locust (Robinia pseudoacacia 'Frisia')",
+      "lat": 47.515918,
+      "lng": -122.261343,
+      "register_location": "9631 58th Ave S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "FAIR",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Scarlet Oak",
+      "species": "Scarlet Oak (Quercus coccinea)",
+      "lat": 47.660517,
+      "lng": -122.273391,
+      "register_location": "4411 51st Ave NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "English Oak",
+      "species": "English Oak (Quercus robur)",
+      "lat": 47.658316,
+      "lng": -122.28289,
+      "register_location": "4123 NE 41st St",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "FAIR",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sycamore Maple",
+      "species": "Sycamore Maple (Acer pseudoplatanus)",
+      "lat": 47.610645,
+      "lng": -122.325742,
+      "register_location": "1101 SENECA ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Saucer Magnolia",
+      "species": "Saucer Magnolia (Magnolia x Soulangiana)",
+      "lat": 47.524792,
+      "lng": -122.39248,
+      "register_location": "8802 FAUNTLEROY WAY SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Pacific) Madrona",
+      "species": "(Pacific) Madrona (Arbutus menziesii)",
+      "lat": 47.631529,
+      "lng": -122.377747,
+      "register_location": "1201 Amgen Court",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Laceleaf Maple",
+      "species": "Laceleaf Maple (Acer palmatum var. dissectum)",
+      "lat": 47.571063,
+      "lng": -122.375454,
+      "register_location": "3403 SW MANNING ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Noble Fir",
+      "species": "Noble Fir (Abies procera)",
+      "lat": 47.52489,
+      "lng": -122.390339,
+      "register_location": "4502 SW TRENTON ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.671624,
+      "lng": -122.31095,
+      "register_location": "5805 16TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "lat": 47.693916,
+      "lng": -122.378302,
+      "register_location": "8749 16TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.687513,
+      "lng": -122.294168,
+      "register_location": "3116 NE 81ST ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.709486,
+      "lng": -122.285663,
+      "register_location": "11039 40th AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.717351,
+      "lng": -122.370785,
+      "register_location": "12043 11TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.671593,
+      "lng": -122.311105,
+      "register_location": "5805 16TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Pacific Dogwood",
+      "species": "Pacific Dogwood (Cornus nuttallii)",
+      "lat": 47.671628,
+      "lng": -122.311298,
+      "register_location": "5805 16TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Pin Oak",
+      "species": "Pin Oak (Quercus palustris)",
+      "lat": 47.659023,
+      "lng": -122.337491,
+      "register_location": "4219 WALLINGFORD AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "European (Green) Beech",
+      "species": "European (Green) Beech (Fagus sylvatica)",
+      "lat": 47.637081,
+      "lng": -122.347942,
+      "register_location": "455 CROCKETT ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.571081,
+      "lng": -122.330446,
+      "register_location": "3613 4TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "European Chestnut",
+      "species": "European Chestnut (Castanea sativa)",
+      "lat": 47.709421,
+      "lng": -122.285944,
+      "register_location": "11039 40TH AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "American Chestnut",
+      "species": "American Chestnut (Castanea dentata)",
+      "lat": 47.599947,
+      "lng": -122.29352,
+      "register_location": "310 30TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Deodar Cedar",
+      "species": "Deodar Cedar (Cedrus deodara)",
+      "lat": 47.632869,
+      "lng": -122.282573,
+      "register_location": "3906 E MADISON ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Pacific) Madrona",
+      "species": "(Pacific) Madrona (Arbutus menziesii)",
+      "lat": 47.731508,
+      "lng": -122.339777,
+      "register_location": "14039 ASHWORTH AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.652995,
+      "lng": -122.413978,
+      "register_location": "3607 43rd Ave W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Oak",
+      "species": "Red Oak (Quercus rubra)",
+      "lat": 47.689216,
+      "lng": -122.286326,
+      "register_location": "8226 39TH AV NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Atlas Cedar",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "lat": 47.542302,
+      "lng": -122.276867,
+      "register_location": "6725 45TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western White Pine",
+      "species": "Western White Pine (Pinus monticola)",
+      "lat": 47.69593,
+      "lng": -122.3222,
+      "register_location": "520 NE 92ND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "American Sycamore",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "lat": 47.688589,
+      "lng": -122.378783,
+      "register_location": "8060 17TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bigleaf Maple",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "lat": 47.589348,
+      "lng": -122.383453,
+      "register_location": "1544 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.589688,
+      "lng": -122.383704,
+      "register_location": "1534 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.589633,
+      "lng": -122.383656,
+      "register_location": "1540PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Paperbark Maple",
+      "species": "Paperbark Maple (Acer griseum)",
+      "lat": 47.589595,
+      "lng": -122.383633,
+      "register_location": "1540PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "lat": 47.589169,
+      "lng": -122.383443,
+      "register_location": "1602 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Kousa Dogwood",
+      "species": "Kousa Dogwood (Cornus kousa)",
+      "lat": 47.589196,
+      "lng": -122.383537,
+      "register_location": "1602 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Palm Tree",
+      "species": "Palm Tree (Palm sp.)",
+      "lat": 47.589196,
+      "lng": -122.383646,
+      "register_location": "1602 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Evergreen (Southern) Magnolia",
+      "species": "Evergreen (Southern) Magnolia (Magnolia grandiflora)",
+      "lat": 47.589145,
+      "lng": -122.383688,
+      "register_location": "1602 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Thundercloud Purpleleaf Plum",
+      "species": "Thundercloud Purpleleaf Plum (Prunus cerasifera `Thunderclou)",
+      "lat": 47.588664,
+      "lng": -122.384153,
+      "register_location": "1626 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Thundercloud Purpleleaf Plum",
+      "species": "Thundercloud Purpleleaf Plum (Prunus cerasifera `Thunderclou)",
+      "lat": 47.588614,
+      "lng": -122.384233,
+      "register_location": "1634 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Thundercloud Purpleleaf Plum",
+      "species": "Thundercloud Purpleleaf Plum (Prunus cerasifera `Thunderclou)",
+      "lat": 47.588574,
+      "lng": -122.384268,
+      "register_location": "1634 PALM AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Cherry/Plum/Laurel",
+      "species": "Cherry/Plum/Laurel (Prunus sp.)",
+      "lat": 47.57797,
+      "lng": -122.401959,
+      "register_location": "5357 SW Admiral Way",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Oregon White (Garry) Oak",
+      "species": "Oregon White (Garry) Oak (Quercus garryana)",
+      "lat": 47.631172,
+      "lng": -122.28709,
+      "register_location": "1318 BROADMOOR DR E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Copper Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "lat": 47.637301,
+      "lng": -122.367833,
+      "register_location": "2137 8TH AVE W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Catalina Ironwood",
+      "species": "Catalina Ironwood (Lyonothamnus floribundus)",
+      "lat": 47.500932,
+      "lng": -122.377605,
+      "register_location": "11420 37TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ginkgo, Maidenhair Tree",
+      "species": "Ginkgo, Maidenhair Tree (Ginkgo biloba)",
+      "lat": 47.62449,
+      "lng": -122.313742,
+      "register_location": "607 MALDEN AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Austrian Black Pine",
+      "species": "Austrian Black Pine (Pinus nigra)",
+      "lat": 47.644534,
+      "lng": -122.394384,
+      "register_location": "2645 29th Ave W",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.549383,
+      "lng": -122.377542,
+      "register_location": "5926 36TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "London Plane (Tree)",
+      "species": "London Plane (Tree) (Platanus x acerifolia)",
+      "lat": 47.662913,
+      "lng": -122.343307,
+      "register_location": "1206 N 47TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Ponderosa Pine",
+      "species": "Ponderosa Pine (Pinus ponderosa)",
+      "lat": 47.633004,
+      "lng": -122.301285,
+      "register_location": "1524 24TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Chinese Fan (Windmill) Palm",
+      "species": "Chinese Fan (Windmill) Palm (Trachycarpus fortunei)",
+      "lat": 47.55321,
+      "lng": -122.382727,
+      "register_location": "5416 40TH AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Durmast Oak",
+      "species": "Durmast Oak (Quercus petraea)",
+      "lat": 47.607447,
+      "lng": -122.300116,
+      "register_location": "500 23RD AVE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.557457,
+      "lng": -122.292814,
+      "register_location": "4903 31ST AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "White Oak",
+      "species": "White Oak (Quercus alba)",
+      "lat": 47.585988,
+      "lng": -122.384899,
+      "register_location": "1925 42ND AVE SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "(Smooth) Japanese Maple",
+      "species": "(Smooth) Japanese Maple (Acer palmatum)",
+      "lat": 47.576921,
+      "lng": -122.287426,
+      "register_location": "2851 MT RAINIER DR S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "GOOD",
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Maple",
+      "species": "Maple (Acer sp.)",
+      "lat": 47.679255,
+      "lng": -122.345985,
+      "register_location": "6819 AURORA AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open"
     }
   ],
   "blocked": [
@@ -102,6 +4122,438 @@
       "name": "Green Lake Emperor Oak",
       "species": "Daimyo/Emperor Oak (Quercus dentata)",
       "reason": "DEAD/REMOVED. Per Arthur Lee Jacobson's Plant of the Month, June 2024 (arthurleej.com/plant-of-month/p-o-m-June24.html): the Green Lake giant (93.75 ft tall, 103.5 ft wide, 15 ft 2 in girth) broke so severely that the entire tree was cut down. Still listed on the city's Green Lake tree walk map."
+    },
+    {
+      "name": "Lombardy Poplar Grove",
+      "species": "Lombardy Poplar Grove (Populus nigra 'Italica')",
+      "lat": 47.709653,
+      "lng": -122.345179,
+      "register_location": "11111 AURORA AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "lat": 47.640367,
+      "lng": -122.316977,
+      "register_location": "2322 12 AV E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "English Elm",
+      "species": "English Elm (Ulmus procera)",
+      "lat": 47.629187,
+      "lng": -122.322771,
+      "register_location": "1125 HARVARD AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Fir",
+      "species": "Fir (Abies sp.)",
+      "lat": 47.640709,
+      "lng": -122.294289,
+      "register_location": "2000 ARBORETUM DR E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Canyon Live Oak",
+      "species": "Canyon Live Oak (Quercus chrysolepis)",
+      "lat": 47.665984,
+      "lng": -122.397037,
+      "register_location": "3015 NW 54 ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Flame Narrowleaf Ash",
+      "species": "Flame Narrowleaf Ash (Fraxinus angustifolia `Flame`)",
+      "lat": 47.624469,
+      "lng": -122.320819,
+      "register_location": "600 BROADWAY E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Atlas Cedar",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "lat": 47.58157,
+      "lng": -122.313251,
+      "register_location": "2336 15TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "English Walnut",
+      "species": "English Walnut (Juglans regia)",
+      "lat": 47.548622,
+      "lng": -122.305597,
+      "register_location": "5946 22ND AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Northern (Western) Catalpa",
+      "species": "Northern (Western) Catalpa (Catalpa speciosa)",
+      "lat": 47.630401,
+      "lng": -122.285454,
+      "register_location": "1222 37TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Common (Fruiting) Pear Tree",
+      "species": "Common (Fruiting) Pear Tree (Pyrus communis)",
+      "lat": 47.528823,
+      "lng": -122.265322,
+      "register_location": "5312 S GRATTAN ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "London Plane (Tree)",
+      "species": "London Plane (Tree) (Platanus x acerifolia)",
+      "lat": 47.601873,
+      "lng": -122.333982,
+      "register_location": "600 1ST AVE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "(European) White Birch",
+      "species": "(European) White Birch (Betula pendula)",
+      "lat": 47.544554,
+      "lng": -122.389807,
+      "register_location": "6561 FAUNTLEROY WAY SW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.67107,
+      "lng": -122.291611,
+      "register_location": "3311 NE 60TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 47.671084,
+      "lng": -122.292469,
+      "register_location": "3311 NE 60TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Sweetgum",
+      "species": "Sweetgum (Liquidambar styraciflua)",
+      "lat": 47.717935,
+      "lng": -122.373193,
+      "register_location": "1231 NW 122ND ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Bigleaf Maple",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "lat": 47.674208,
+      "lng": -122.386473,
+      "register_location": "2235 NW 63RD ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Camperdown Elm",
+      "species": "Camperdown Elm (Ulmus glabra `Camperdownii`)",
+      "lat": 47.624801,
+      "lng": -122.32703,
+      "register_location": "615 BELLEVUE AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "White Ash",
+      "species": "White Ash (Fraxinus americana)",
+      "lat": 47.631641,
+      "lng": -122.299773,
+      "register_location": "1412 25TH AVE E",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 47.663421,
+      "lng": -122.3292,
+      "register_location": "4625 EASTERN AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "American (White) Elm",
+      "species": "American (White) Elm (Ulmus americana)",
+      "lat": 47.557074,
+      "lng": -122.29405,
+      "register_location": "5000 30TH AVE S",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Lawson Cypress, Port Orford Cedar",
+      "species": "Lawson Cypress, Port Orford Cedar (Chamaecyparis lawsoniana)",
+      "lat": 47.687801,
+      "lng": -122.339309,
+      "register_location": "8029 ASHWORTH AVE N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Lawson Cypress, Port Orford Cedar",
+      "species": "Lawson Cypress, Port Orford Cedar (Chamaecyparis lawsoniana)",
+      "lat": 47.707702,
+      "lng": -122.356964,
+      "register_location": "10729 Palatine Ave N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Lawson Cypress, Port Orford Cedar",
+      "species": "Lawson Cypress, Port Orford Cedar (Chamaecyparis lawsoniana)",
+      "lat": 47.707453,
+      "lng": -122.35688,
+      "register_location": "10729 Palatine Ave N",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Bigleaf Maple",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "lat": 47.706832,
+      "lng": -122.373973,
+      "register_location": "10556 14TH AVE NW",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Sterling Linden",
+      "species": "Sterling Linden (Tilia tomentosa 'Sterling')",
+      "lat": 47.665115,
+      "lng": -122.305486,
+      "register_location": "2102 NE 50TH ST",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Oregon Myrtle, California Bay",
+      "species": "Oregon Myrtle, California Bay (Umbellularia californica)",
+      "lat": 47.665778,
+      "lng": -122.313185,
+      "register_location": "5031 UNIVERSITY WAY NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
+    },
+    {
+      "name": "Silk Tree/Mimosa",
+      "species": "Silk Tree/Mimosa (Albizia julibrissin)",
+      "lat": 47.685863,
+      "lng": -122.304322,
+      "register_location": "7741 22ND AVE NE",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
+      ],
+      "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
+      "status": "open",
+      "reason": "register field CURRENT_STATUS='removed': not public or not to be listed (hard rule 10)"
     }
   ]
 }

@@ -547,6 +547,756 @@
    ],
    "source": "NJDEP Big and Heritage Trees of New Jersey (state government; every row carries the owner's permission to list). Facts only under the NJDEP data distribution agreement. Many stand at home addresses: hard rule 10 applies, a front garden never ships. Real place name and true travel time from Manhattan.",
    "status": "open"
+  },
+  {
+   "name": "ULAM",
+   "species": "American elm (Ulmus americana)",
+   "lat": 41.027449,
+   "lng": -73.86746,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "LITU",
+   "species": "Tulip Poplar (Liriodendron tulipifera)",
+   "lat": 41.032661,
+   "lng": -73.844602,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "SAAL",
+   "species": "Sassafras (Sassafras albidum)",
+   "lat": 41.027939,
+   "lng": -73.870414,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "SAAL",
+   "species": "Sassafras (Sassafras albidum)",
+   "lat": 41.029026,
+   "lng": -73.870222,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "SAAL",
+   "species": "Sassafras (Sassafras albidum)",
+   "lat": 41.029055,
+   "lng": -73.870165,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUVE",
+   "species": "Eastern black oak (Quercus velutina)",
+   "lat": 41.023768,
+   "lng": -73.874186,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUVE",
+   "species": "Eastern black oak (Quercus velutina)",
+   "lat": 41.048143,
+   "lng": -73.858904,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUVE",
+   "species": "Eastern black oak (Quercus velutina)",
+   "lat": 41.034991,
+   "lng": -73.866738,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QURU",
+   "species": "Northern red oak (Quercus rubra)",
+   "lat": 41.046709,
+   "lng": -73.86598,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUAL",
+   "species": "White oak (Quercus alba)",
+   "lat": 41.042672,
+   "lng": -73.857138,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUAL",
+   "species": "White oak (Quercus alba)",
+   "lat": 41.03743,
+   "lng": -73.846085,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "NYSY",
+   "species": "Black gum (Nyssa sylvatica)",
+   "lat": 41.041639,
+   "lng": -73.850597,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "META",
+   "species": "Dawn redwood (Metasequoia)",
+   "lat": 41.039108,
+   "lng": -73.871176,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "MAAC",
+   "species": "Cucumber tree (Magnolia acuminata)",
+   "lat": 41.04634,
+   "lng": -73.862272,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "MAAC",
+   "species": "Cucumber tree (Magnolia acuminata)",
+   "lat": 41.043061,
+   "lng": -73.863768,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "LITU",
+   "species": "Tulip Poplar (Liriodendron tulipifera)",
+   "lat": 41.02627,
+   "lng": -73.875365,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "LIST",
+   "species": "Sweetgum (Liquidambar styraciflua)",
+   "lat": 41.045302,
+   "lng": -73.862569,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "JUNI",
+   "species": "Black walnut (Juglans nigra)",
+   "lat": 41.027282,
+   "lng": -73.86715,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "JUNI",
+   "species": "Black walnut (Juglans nigra)",
+   "lat": 41.042721,
+   "lng": -73.864574,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "GIBI",
+   "species": "Ginko (Ginkgo biloba)",
+   "lat": 41.042957,
+   "lng": -73.863817,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "FASY",
+   "species": "European beech (Fagus sylvatica)",
+   "lat": 41.035216,
+   "lng": -73.871466,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "FASY",
+   "species": "European beech (Fagus sylvatica)",
+   "lat": 41.03929,
+   "lng": -73.867335,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "FASY",
+   "species": "European beech (Fagus sylvatica)",
+   "lat": 41.030159,
+   "lng": -73.869908,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "FRAM",
+   "species": "White ash (Fraxinus americana)",
+   "lat": 41.023859,
+   "lng": -73.870092,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "FAGR",
+   "species": "American beech (Fagus grandifolia)",
+   "lat": 41.038203,
+   "lng": -73.868466,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUAL",
+   "species": "White oak (Quercus alba)",
+   "lat": 41.029003,
+   "lng": -73.861965,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUAL",
+   "species": "White oak (Quercus alba)",
+   "lat": 41.029607,
+   "lng": -73.861223,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUAL",
+   "species": "White oak (Quercus alba)",
+   "lat": 41.036362,
+   "lng": -73.858406,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUAL",
+   "species": "White oak (Quercus alba)",
+   "lat": 41.036296,
+   "lng": -73.858813,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUMA",
+   "species": "",
+   "lat": 41.02729,
+   "lng": -73.867312,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.045888,
+   "lng": -73.866575,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.026373,
+   "lng": -73.874686,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.037474,
+   "lng": -73.870466,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.03438,
+   "lng": -73.866856,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.035306,
+   "lng": -73.866217,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.025795,
+   "lng": -73.868497,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.02676,
+   "lng": -73.868044,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.026862,
+   "lng": -73.867959,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.027222,
+   "lng": -73.867812,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.027709,
+   "lng": -73.867608,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.027853,
+   "lng": -73.867518,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.027813,
+   "lng": -73.867558,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.026448,
+   "lng": -73.86819,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.026583,
+   "lng": -73.868112,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.027143,
+   "lng": -73.867822,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.026677,
+   "lng": -73.868084,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.027582,
+   "lng": -73.867674,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.026005,
+   "lng": -73.868397,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "PLOC",
+   "species": "",
+   "lat": 41.027645,
+   "lng": -73.867627,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
+  },
+  {
+   "name": "QUMO",
+   "species": "",
+   "lat": 41.028416,
+   "lng": -73.860983,
+   "register_location": "",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": null,
+   "sources": [
+    "https://services.arcgis.com/XKEHpOulfycN9cGC/arcgis/rest/services/Heritage_Trees_Joined/FeatureServer/6"
+   ],
+   "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
+   "status": "open"
   }
  ],
  "blocked": [
