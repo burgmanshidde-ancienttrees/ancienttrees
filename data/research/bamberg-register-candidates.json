@@ -1,0 +1,114 @@
+[
+ {
+  "register_id": "ND-03742",
+  "name": "Naturdenkmal 1 Eiche",
+  "status": "aktuell",
+  "latitude": 49.88712413,
+  "longitude": 10.87526291,
+  "group": false,
+  "point_count": 1,
+  "register": "bayern-naturdenkmale",
+  "km_from_centre": 0.96,
+  "near_published": {
+   "metres": 3.8,
+   "id": "bam_002",
+   "name": "The Oak of the Teufelsgraben",
+   "species": "Pedunculate Oak (Quercus robur)"
+  }
+ },
+ {
+  "register_id": "ND-03743",
+  "name": "Naturdenkmal 1 Eiche",
+  "status": "aktuell",
+  "latitude": 49.88112265,
+  "longitude": 10.89084448,
+  "group": false,
+  "point_count": 1,
+  "register": "bayern-naturdenkmale",
+  "km_from_centre": 1.18
+ },
+ {
+  "register_id": "ND-03617",
+  "name": "Naturdenkmal 1 Eiche",
+  "status": "aktuell",
+  "latitude": 49.8865781,
+  "longitude": 10.87209331,
+  "group": false,
+  "point_count": 1,
+  "register": "bayern-naturdenkmale",
+  "km_from_centre": 1.19
+ },
+ {
+  "register_id": "ND-03649",
+  "name": "Naturdenkmal 2 Linden",
+  "status": "aktuell",
+  "latitude": 49.8945068,
+  "longitude": 10.87102038,
+  "group": false,
+  "point_count": 1,
+  "register": "bayern-naturdenkmale",
+  "km_from_centre": 1.19,
+  "near_published": {
+   "metres": 2.5,
+   "id": "bam_001",
+   "name": "The Lindens of the Ottobrunnen",
+   "species": "Small-leaved Lime (Tilia cordata)"
+  }
+ },
+ {
+  "register_id": "ND-03728",
+  "name": "Naturdenkmal 1 Linde",
+  "status": "aktuell",
+  "latitude": 49.88550958,
+  "longitude": 10.86292575,
+  "group": false,
+  "point_count": 1,
+  "register": "bayern-naturdenkmale",
+  "km_from_centre": 1.84,
+  "near_published": {
+   "metres": 21.3,
+   "id": "bam_004",
+   "name": "The Linden of the Old Rothof",
+   "species": "Small-leaved Lime (Tilia cordata)"
+  }
+ },
+ {
+  "register_id": "ND-03610",
+  "name": "Naturdenkmal 1 Eiche",
+  "status": "aktuell",
+  "latitude": 49.91593704,
+  "longitude": 10.88372343,
+  "group": false,
+  "point_count": 1,
+  "register": "bayern-naturdenkmale",
+  "km_from_centre": 2.74
+ },
+ {
+  "register_id": "ND-03741",
+  "name": "Naturdenkmal 1 Linde",
+  "status": "aktuell",
+  "latitude": 49.86937641,
+  "longitude": 10.9115233,
+  "group": false,
+  "point_count": 1,
+  "register": "bayern-naturdenkmale",
+  "km_from_centre": 3.02
+ },
+ {
+  "register_id": "ND-03739",
+  "name": "Naturdenkmal 1 Linde",
+  "status": "aktuell",
+  "latitude": 49.86740535,
+  "longitude": 10.907398,
+  "group": false,
+  "point_count": 1,
+  "register": "bayern-naturdenkmale",
+  "km_from_centre": 3.04,
+  "near_published": {
+   "metres": 24.6,
+   "id": "bam_003",
+   "name": "The Linden of the Buger Hof",
+   "species": "Small-leaved Lime (Tilia cordata)"
+  }
+ }
+]
