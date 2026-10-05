@@ -23,6 +23,17 @@ App half (collect-away, collect-compare, collect-describe, collect-identify, col
 
 - WARN APP: all six screenshots are the same "Add a tree" sheet (Take a photo / Choose from your photos) over a tree photograph, and none shows the screen its name promises (away, compare, describe, identify, intro, place). The sweep's launch arguments for the collect flow no longer reach their steps, so six screens ship unlooked-at (CLAUDE.md 3c: a screen no argument can open ships unseen). Same shape as the 2026-10-04 city-map finding; for a session.
 
+Second pass the same day (also checked prague.html: the Pražské stromy affiliation no longer renders, so the affiliation_consent fix holds). The iOS workflow is red since 2026-10-05; the two repeated sweep findings (city-map, collect-*) may share that cause and are worth checking together.
+
+- NOTE: "You help keep this list right: you add photographs, check the facts and tell us which trees are missing." (i18n.ts, ambassadorAskBody) is grammatical but states as fact what the reader has not yet agreed to; "You'd help keep this list right by adding photographs, checking facts and telling us which trees are missing." would match the question in the title.
+
+Monday corpus rot (suggest only):
+
+- NOTE: CLAUDE.md "GOOGLE RECOVERY MODE" still carries the superseded "the US is not first but ONLY" paragraph followed by its own reversal, and the 2026-10-01 "no new tree without photo or pin" bullet that the 2026-10-05 "ADDING IS NOT INDEXING" bullet overrides. Suggest one line each and the history moved to DECISIONS.md.
+- NOTE: CLAUDE.md "How they actually fire" is operating history (knock.yml, twelve knocks, the 120-minute cap) in a file that says workflow prompts carry mechanics only; it could move to DECISIONS.md, leaving two sentences and the `run_health.py --week` pointer.
+
+---
+
 ## 2026-10-04
 
 Web half: read los-angeles.html (11 in title and body, intro agrees), the El Pino tree page, and the title and meta of london (27), munich (52), portland (32), nuremberg (14), washington-dc (16) and reykjavik (4); counts match their data files. No em dashes or banned words in the changed city files, and the reader-photograph licence string does not render on the Reykjavik page.
