@@ -2208,6 +2208,41 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "muc_058",
+      "name": "The Lime of the Wayside Cross, Dachau",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 100 years",
+      "age_min": 90,
+      "age_max": 130,
+      "girth_cm": null,
+      "location": {
+        "address": "Etzenhausener Straße, about 20 m south of the Prälat-Pfanzelt-Straße junction, near Dachau Stadt station, 85221 Dachau",
+        "latitude": 48.26642,
+        "longitude": 11.43823,
+        "neighbourhood": "Dachau, Etzenhausener Straße"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
+        "https://commons.wikimedia.org/wiki/File:Linde_mit_Wegkreuz_-_N%C3%A4he_Bhf_DAH-Stadt_-_2023-09-03_-_136b.jpg",
+        "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) point 'Linde in Dachau auf Fl.Nr. 68' 48.26643, 11.43826"
+      ],
+      "access": "Free, beside a public street and a wayside cross; parked cars crowd the foot of it",
+      "transport": "S2 from Munich to Dachau, roughly 25 minutes from central Munich; the tree stands near Dachau Stadt station (walk time not measured). Dachau is outside Munich city; label as Dachau.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The cross at the foot of this lime still carries a prayer for field and house, written when the ground around it was grain fields. The fields are gone. Today it is a street near Dachau Stadt station, and when this tree was photographed in September 2023 the parked cars stood almost up against its trunk.\n\nThat pairing is the reason to come. The Landkreis Dachau protects the lime as a natural monument, and the photograph shows the tree and the wayside cross together, which is also the easiest way to be sure you have found the right one. The cross has outlasted the farming its prayer was written for.\n\nThe county list puts the lime at about 100 years, without a date or a method, so read that as a rough band of 90 to 130 years. By that estimate it has stood here through most of Dachau's twentieth century. The list calls it only Linde, a lime, and does not say which kind. If you know, tell us, and a girth or height would be welcome too, since neither has been published.\n\nThe list places it on Etzenhausener Straße, about 20 metres south of the turning into Prälat-Pfanzelt-Straße, and two map points agree to within a few metres. Look for the cross first. Dachau is about 25 minutes from central Munich on the S2.",
+      "how_to_recognise": "You can recognise it by the wayside cross at its foot, whose plaque carries a short prayer for field and house. It stands on Etzenhausener Straße, about 20 metres south of the Prälat-Pfanzelt-Straße turning.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "- Landkreis Dachau Naturdenkmal ND 26, 'Linde': 'Etzenhausener Strasse, ca. 20 m suedlich der Abzweigung Praelat-Pfanzelt-Strasse. Etwa 100 Jahre alt.'\n- Pin approximate: Wikipedia 48.26642, 11.43823 and LfU register 48.26643, 11.43826 agree within 3 m, no geotagged file; the Commons photo shows a lime with a wayside cross (Wegkreuz) whose plaque carries a short prayer for field and house, from when the land was grain fields. Cross plus tree is the identifying pair.\n- Commons caption (Martinus KE, 2023-09-03) notes many parked cars at the foot of the tree.\n- Alive: photographed in leaf 2023-09-03.\n- Modest age (about a century) and a street tree: weakest of this batch on remarkableness; the cross is its story. Transport: the S-Bahn station name and walk time were not confirmed by this pass, only the Commons phrase 'Naehe Bahnhof Dachau Stadt'; writer should say 'near Dachau Stadt station' without a minute count.\n- Photo candidate: File:Linde mit Wegkreuz - Nähe Bhf DAH-Stadt - 2023-09-03 - 136b.jpg, CC BY-SA 4.0."
     }
   ]
 }

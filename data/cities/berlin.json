@@ -2284,6 +2284,41 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "ber_041",
+      "name": "The 500-Year Oak of Berlin Zoo",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 500 years",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": null,
+      "location": {
+        "address": "Zoologischer Garten Berlin, south of the hippo house, Hardenbergplatz 8, Berlin-Charlottenburg",
+        "latitude": 52.508685,
+        "longitude": 13.336639,
+        "neighbourhood": "Tiergarten (Zoologischer Garten), Mitte"
+      },
+      "verified_sources": [
+        "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
+        "https://stadtundgruen.de/artikel/wo-alte-baeume-neue-wege-saeumen-und-biodiversitaet-gefoerdert-wird-gruenflaechen-in-zoo-und-tierpark-berlin-19695",
+        "https://commons.wikimedia.org/wiki/File:Stieleiche_in_Berlin_Zoo,_ungef%C3%A4hr_500_Jahre_alte_Eiche,_Naturdenkmal.jpg"
+      ],
+      "access": "Paid entry: inside the Zoologischer Garten Berlin, ticket required (check current Zoo prices and hours before visiting).",
+      "transport": "S/U Zoologischer Garten, the Hardenbergplatz entrance is about 200 m from the register point; inside the zoo, a few minutes' walk.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Berlin Zoo calls it the eternal oak, and says it has been giving shade for 500 years. If the zoo's figure is right, the tree was already old when the zoo itself opened in 1844, the first in Germany. The zoo also gives it a second name, the Columbus oak, without explaining it.\n\nTreat the number as the owner's word rather than a measurement. It is a round figure, no method is given, and nobody has published a girth to check it against. A photograph of the tree on Wikimedia Commons is captioned the same way, about 500 years old. So the honest version is: about 500 years, according to the zoo.\n\nThere is a second thing we cannot quite close. Berlin's register protects one pedunculate oak inside the zoo, Naturdenkmal 1-52/B, south of the hippo house, listed in 1993 for its distinctiveness and for regional heritage. That is the tree we have mapped. It is the only protected oak the register lists in the grounds, which makes it almost certainly the eternal oak, but no source we have read says in so many words that the two are the same tree. The zoo counts eleven protected natural monuments on its ground in all.\n\nYou will need a ticket, and our pin comes from the register rather than from a visit, so expect to look around south of the hippo house. If you have stood under it, tell us whether we have the right one.",
+      "how_to_recognise": "You can recognise it as the old pedunculate oak south of the hippo house, the only oak Berlin's register protects inside the zoo. Our pin is approximate, so look around that end of the hippo house rather than for an exact spot.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "REGISTER: Naturdenkmal 1-52/B, Stiel-Eiche, 'Zoologischer Garten, suedlich Flusspferdhaus, Hardenbergplatz 8', designated 1993-03-02, reasons Eigenart and landeskundliche Gruende; tree-level register coordinate 52.508685,13.336639. AGE: the zoo's own park article (Stadt und Gruen, fetched directly) has a numbered feature 'Schatten seit 500 Jahren: Die ewige Eiche (Columbus-Eiche / Pedunculate Oak)' and says the historic oak stock is to be preserved, and says the zoo holds eleven Naturdenkmaeler. A Commons photo uploaded by User:Istriana is captioned 'ungefaehr 500 Jahre alte Eiche, Naturdenkmal' for the same Wikidata item. LIMIT: no fetched source states in so many words that the 'ewige Eiche' IS register tree 1-52/B (it is the only ND oak the register lists in the zoo, and the Commons caption ties the 500-year figure to the Naturdenkmal, but this is two inferences, not one statement), and 500 years is a round figure from the owner with no method. Deliver flagged; the writer says 'about 500 years, according to the zoo'. A Quercus robur of 500 years in central Berlin is plausible as a remnant of the pre-park Tiergarten oaks but that is NOT sourced; do not write it. PIN: approximate because the Commons photo is not geotagged, so only the register point supports it; it is a tree-level point inside the zoo (a plan or aerial view would settle it). ALIVE: lifecheck RECENT 2024-10-09 (iNaturalist observation 246793865 at the point) plus the 2024-06-25 Commons photo. PHOTO CANDIDATE (not approved, unlooked): https://commons.wikimedia.org/wiki/File:Stieleiche_in_Berlin_Zoo,_ungef%C3%A4hr_500_Jahre_alte_Eiche,_Naturdenkmal.jpg , CC BY-SA 4.0, by Istriana, 2024-06-25, 3456x4608 (credit required). Paid entry counts as a yes under hard rule 10; page must say so. WRITER (2026-10-02): the story keeps both limits explicit: the 500-year figure is attributed to the zoo, and the identification of register tree 1-52/B with the zoo's 'ewige Eiche' is stated as probable, not proven."
     }
   ]
 }
