@@ -21,7 +21,22 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Sugar maple (Acer saccharum), champion rank #2 SuM in the Forest Preserves of Cook County, circumference 97.39 in (247 cm), height 120 ft (36.6 m), crown spread 72/39 ft, measured 1692939600000. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years."
+  "story": "This sugar maple stands 36.6 metres tall, 120 feet, and the Forest Preserves of Cook County rank it second among all the sugar maples on their land. Their champion tree register measured it on 25 August 2023: a trunk 2.47 metres round at chest height, and a crown spreading 22 metres one way and only 12 the other.\n\nThat shape is what makes it worth the walk. A trunk under two and a half metres round is slim for a tree of this height, and the narrow crown tells the same story: this maple went up rather than out. Compare the Comfort Maple in Pelham, Ontario, another sugar maple on our map, whose trunk is six metres round. The Busse tree carries well under half that girth, yet the county's champion hackberry at Thatcher Woods, the biggest of its kind on preserve land, is recorded at exactly the same 120 feet.\n\nBusse Forest South holds two more ranked trees: the county's champion basswood, about two and a half kilometres to the west, and its third-ranked basswood a little further north. Three register trees in one preserve make an afternoon of it.\n\nThe register records size, rank and place, and nothing about age. Nobody has dated this maple. If you know how old it is, or what stood here before the preserve, tell us. Come in October, when sugar maples colour.",
+  "how_to_recognise": "You can recognise it by its height, 36.6 metres on a trunk only 2.47 metres round, with a narrow crown. It stands at the register's point in Busse Forest South, about 2.4 km east of the champion basswood.",
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "autumn colour",
+   "label": "October, when the sugar maple turns orange and red"
+  },
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_008",
@@ -45,11 +60,19 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Silver maple (Acer saccharinum), champion rank #2 SiM in the Forest Preserves of Cook County, circumference 168 in (427 cm), height 88 ft (26.8 m), crown spread 61/43 ft, measured 1698123600000. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE."
+  "story": "This silver maple's trunk is 4.27 metres round, and in October 2023 the Forest Preserves of Cook County measured it as the second-biggest silver maple on all their land. It stands 26.8 metres tall, with a crown about 18.6 metres across one way and 13 the other.\n\nFour metres of girth is a lot of trunk for a silver maple. On our own map, the Silver Maple of Wołoska in Warsaw measures 3.39 metres round at 20 metres tall, and Bruges' Canada Tree, planted in 1947, measures 2.44. Only two silver maples we list with a recorded girth are thicker: one in Warsaw's Park Zaslawa Malickiego at 5.02 metres, and Montreal's McKenna Silver Maple at 5.81.\n\nWhat makes Thatcher Woods unusual is the company. Within 80 metres of this maple the register lists two more ranked trees, both hackberries: the county's champion, and its second-ranked, which at 39 metres is the taller of the two. Three register trees inside one short loop make this the easiest stop of the lot.\n\nThe register gives size, rank and place, and nothing more: no planting date, no history, no age. Nobody has dated this maple. If you know how old it is, or have photographs of it from years back, tell us.",
+  "how_to_recognise": "You can recognise it by the thick trunk, 4.27 metres round, on a maple about 27 metres tall. It stands in Thatcher Woods roughly 30 metres from the taller second-ranked hackberry.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_009",
-  "name": "The Hackberry of Thatcher Woods",
+  "name": "The Champion Hackberry of Thatcher Woods",
   "species": "Common Hackberry (Celtis occidentalis)",
   "age_estimate": "",
   "age_min": null,
@@ -69,7 +92,15 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Hackberry (Celtis occidentalis), champion rank #1 H in the Forest Preserves of Cook County, circumference 138.2 in (351 cm), height 120 ft (36.6 m), crown spread 72/67 ft, measured 1699941600000. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | NAME CLASH: another entry shares this name at the same site; name them apart by the register rank (e.g. 'the county champion' and 'the second-ranked'), nothing invented."
+  "story": "This is the biggest hackberry the Forest Preserves of Cook County have on their land, ranked first in their champion tree register. Measured in November 2023, it stands 36.6 metres tall on a trunk 3.51 metres round, under a crown about 22 metres wide in both directions.\n\nFor scale, the only other hackberry of this species we have measured is the Leaning Hackberry of Parco Treves in Padua: 1.55 metres round and 9 metres tall. The Thatcher Woods champion has more than twice its girth and four times its height.\n\nIt is not even the tallest hackberry in these woods. About 66 metres away stands the county's second-ranked hackberry, slimmer at 3.35 metres round but taller at 39 metres. The register still ranks the thicker, wider tree first. A silver maple ranked second in the county stands between the two, so three register trees share one short stretch of woodland.\n\nAnother hackberry, at National Grove, matches this trunk exactly at 3.51 metres and ranks third, two and a half metres shorter.\n\nThe register says nothing about age, and nobody has dated this tree. If you know how old it is, or have watched it over the years, tell us.",
+  "how_to_recognise": "You can recognise it by the broad crown, about 22 metres across both ways, over a 3.51 metre trunk. It stands in Thatcher Woods some 66 metres from the taller, slimmer second-ranked hackberry.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_010",
@@ -93,7 +124,15 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Hackberry (Celtis occidentalis), champion rank #3 H in the Forest Preserves of Cook County, circumference 138.2 in (351 cm), height 112 ft (34.1 m), crown spread 77/71 ft, measured 1703138400000. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE."
+  "story": "Of the three hackberries at the top of the Forest Preserves of Cook County's champion register, this one has the widest crown: about 23.5 metres one way and 21.6 the other, measured in December 2023. The register places it third among all the hackberries on preserve land.\n\nIts trunk is 3.51 metres round, exactly the girth of the county champion at Thatcher Woods, about seven kilometres to the north. What separates them is height. The champion stands 36.6 metres, this tree 34.1, and the second-ranked hackberry at Thatcher Woods reaches 39. Three trees of one species, within 16 centimetres of each other in girth and all past 34 metres tall: Cook County grows hackberries big.\n\nThe gap with the rest of our map is wider. The only other hackberry of this species we have measured, the Leaning Hackberry of Parco Treves in Padua, is 1.55 metres round and 9 metres tall. National Grove's tree is nearly four times as tall, and its crown spans more than two and a half times the Padua tree's whole height.\n\nUnlike the Thatcher pair, it has no ranked neighbour on our map. It is a stop of its own.\n\nThe register records size, rank and site, and no age. Nobody has dated this hackberry. If you know how old it is, tell us.",
+  "how_to_recognise": "You can recognise it by the crown, about 23.5 by 21.6 metres, the widest of the county's top three hackberries, over a 3.51 metre trunk. It stands at the register's point in National Grove.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_011",
@@ -117,7 +156,15 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: White oak (Quercus alba), champion rank #1 WO in the Forest Preserves of Cook County, circumference 165.6 in (421 cm), height 96 ft (29.3 m), crown spread 75/72 ft, measured 1715016004765. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years."
+  "story": "The champion white oak of the Forest Preserves of Cook County is not the thickest white oak they have measured. It wins on everything else. When the register's surveyors measured it in May 2024, they recorded a trunk 4.21 metres round, a height of 29.3 metres and a crown about 23 metres across in both directions, nearly a perfect circle.\n\nThe county's second-ranked white oak, at McClaughrey Springs Woods about five kilometres to the southeast, has the fatter trunk at 4.76 metres. It is also eight metres shorter and narrower in the crown, and the register puts Red Gate Woods first.\n\nOur map holds some famous white oaks to measure it against. The Devil's Den Witness Tree at Gettysburg is 4.11 metres round, a whisker thinner than this one. The Ruxton Liberty Tree in Baltimore reaches 5.49 metres and the Travilah Oak outside Washington 5.82. Red Gate Woods' champion does not match those two for girth. What it has is balance: height, trunk and crown together, enough to make it the county's champion.\n\nThe register gives size, rank and site, and no age, and girth alone is a poor clock for an oak. Nobody has dated this one. If you know how old it is, or have a core count, tell us.",
+  "how_to_recognise": "You can recognise it by the round, even crown, about 23 metres across both ways, over a 4.21 metre trunk and 29.3 metres of height. It stands at the register's point in Red Gate Woods.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_012",
@@ -141,7 +188,15 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: White oak (Quercus alba), champion rank #2 WO in the Forest Preserves of Cook County, circumference 187.3 in (476 cm), height 69 ft (21.0 m), crown spread 68/55 ft, measured 1718120375381. Comments: At trail edge.Some branch dieback. Joel Rosario reported. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years."
+  "story": "This white oak is 4.76 metres round at chest height, more than half a metre thicker than the county's champion white oak, and it still ranks second. The Forest Preserves of Cook County measured it in June 2024.\n\nWhat it lacks is height. The champion at Red Gate Woods, about five kilometres to the northwest, is thinner at 4.21 metres but stands 29.3 metres tall. This one stops at 21, with a crown about 21 metres one way and 17 the other. Short and heavy against tall and even: the register prefers the second, a visitor may well prefer the first.\n\nFor comparison, the Devil's Den Witness Tree at Gettysburg, another white oak on our map, is 4.11 metres round. The Ruxton Liberty Tree in Baltimore, at 5.49, and the Travilah Oak near Washington, at 5.82, are bigger still, but McClaughrey Springs' oak is in that company.\n\nThe surveyors left two notes. It stands at the edge of a trail, which makes it easy to reach. And it shows some branch dieback, which is worth knowing before you go and worth telling us about if you see it worsen.\n\nThe register gives no age, and nobody has dated this oak. If you know how old it is, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, 4.76 metres round, on a short oak of 21 metres with some dead branches. It stands at the edge of a trail in McClaughrey Springs Woods.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_013",
@@ -156,7 +211,7 @@
    "address": "Thorn Creek Division, Forest Preserves of Cook County, Illinois",
    "latitude": 41.569596,
    "longitude": -87.594439,
-   "neighbourhood": "Thorn Creek Division LM"
+   "neighbourhood": "Thorn Creek Division"
   },
   "verified_sources": [
    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
@@ -165,11 +220,26 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Sassafras (Sassafras albidum), champion rank #1 S in the Forest Preserves of Cook County, circumference 128.4 in (326 cm), height 40 ft (12.2 m), crown spread 43/31 ft, measured 1719930099058. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE."
+  "story": "This sassafras is only 12.2 metres tall, and its trunk is 3.26 metres round. That makes it the biggest sassafras the Forest Preserves of Cook County have on their land, ranked first in their champion register when it was measured in July 2024.\n\nThose two numbers sit oddly together, which is the reason to go. Set it beside another tree on our Chicago page, the county's second-ranked sugar maple at Busse Forest South: the maple is three times as tall, at 36.6 metres, and its trunk is thinner, at 2.47. The sassafras put its growth into girth. The crown follows suit, about 13 metres one way and 9 the other, low and compact over a trunk that would look at home on a tree twice its height.\n\nIt stands far from the other champions on this page, at Thorn Creek Division in southern Cook County, so it is a trip of its own rather than a stop on a walk.\n\nThe only other sassafras on our map stands in Green-Wood Cemetery in Brooklyn, and we hold no measurement for it, so for now this is the one with numbers.\n\nThe register gives no age, and nobody has dated this tree. If you know how old it is, tell us. Come in October, when sassafras turns orange and red.",
+  "how_to_recognise": "You can recognise it by the thick trunk, 3.26 metres round, on a low tree only about 12 metres tall with a compact crown. It stands at the register's point in Thorn Creek Division.",
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "autumn colour",
+   "label": "October, when the mitten-shaped leaves turn orange and red"
+  },
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_014",
-  "name": "The Basswood of Busse Forest South",
+  "name": "The Champion Basswood of Busse Forest South",
   "species": "American Basswood (Tilia americana)",
   "age_estimate": "",
   "age_min": null,
@@ -189,11 +259,19 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Basswood/American linden (Tilia americana), champion rank #1 B in the Forest Preserves of Cook County, circumference 153.86 in (391 cm), height 80 ft (24.4 m), crown spread 52/57 ft, measured None. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE. | NAME CLASH: another entry shares this name at the same site; name them apart by the register rank (e.g. 'the county champion' and 'the second-ranked'), nothing invented."
+  "story": "This is the biggest basswood on all the land of the Forest Preserves of Cook County, first in their champion tree register. Its trunk is 3.91 metres round, and it stands 24.4 metres tall under a crown about 16 metres one way and 17 the other.\n\nThe same preserve holds the county's third-ranked basswood, about 730 metres to the north, and the two are an instructive pair. They are exactly the same height, 24.4 metres each. The difference is all in the trunk: this one is 80 centimetres thicker round, and the register ranks it first and the other third. Stand at one and then the other, and you are looking at the same species, the same height and the same woods, with the champion simply carrying more wood.\n\nBusse Forest South holds a third ranked tree as well, the county's second-ranked sugar maple, about two and a half kilometres to the east and twelve metres taller than either basswood. Together they make a long walk past three trees the county has measured and ranked.\n\nThe register records the size and place but no measurement date, and nothing about age. Nobody has dated this basswood. If you know how old it is, or when it was last measured, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, 3.91 metres round, the thicker of the two ranked basswoods in Busse Forest South. It stands about 730 metres south of the third-ranked one, at the register's point.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_015",
-  "name": "The Basswood of Busse Forest South",
+  "name": "The Third-Ranked Basswood of Busse Forest South",
   "species": "American Basswood (Tilia americana)",
   "age_estimate": "",
   "age_min": null,
@@ -213,11 +291,19 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Basswood/American linden (Tilia americana), champion rank #3 B in the Forest Preserves of Cook County, circumference 122.46 in (311 cm), height 80 ft (24.4 m), crown spread 62/52 ft, measured None. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years. | NAME CLASH: another entry shares this name at the same site; name them apart by the register rank (e.g. 'the county champion' and 'the second-ranked'), nothing invented."
+  "story": "This basswood is the third biggest the Forest Preserves of Cook County have measured on their land, and it stands just 730 metres from the champion. The two are exactly the same height, 24.4 metres each.\n\nWhere they part is the trunk. This one is 3.11 metres round against the champion's 3.91. Its crown, though, is the wider of the two, about 19 metres one way and 16 the other, so from a distance it may look the larger tree. Up close, the trunk tells them apart, and the register ranks this one third.\n\nThat makes Busse Forest South a good place to train your eye. Walk between the two basswoods and you see how much a species can vary in one woodland: same height, same ground, eighty centimetres of trunk between them. The preserve's other ranked tree, the county's second-ranked sugar maple, stands about two and a half kilometres to the southeast and rises to 36.6 metres, half as tall again as either basswood.\n\nThe register records size and place but no date of measurement and no age. Nobody has dated this tree. If you know how old it is, or have measured it yourself, tell us.",
+  "how_to_recognise": "You can recognise it by the wide crown, about 19 by 16 metres, over a trunk 3.11 metres round, slimmer than the champion's. It stands about 730 metres north of the champion basswood.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_016",
-  "name": "The Hackberry of Thatcher Woods",
+  "name": "The Second-Ranked Hackberry of Thatcher Woods",
   "species": "Common Hackberry (Celtis occidentalis)",
   "age_estimate": "",
   "age_min": null,
@@ -237,7 +323,15 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Hackberry (Celtis occidentalis), champion rank #2 H in the Forest Preserves of Cook County, circumference 131.88 in (335 cm), height 128 ft (39.0 m), crown spread 64/51 ft, measured None. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): NONE. | NAME CLASH: another entry shares this name at the same site; name them apart by the register rank (e.g. 'the county champion' and 'the second-ranked'), nothing invented."
+  "story": "At 39 metres, 128 feet, this hackberry is taller than the county's champion hackberry, and it still ranks only second. The Forest Preserves of Cook County put it behind a stouter neighbour in the same woods.\n\nThe champion stands about 66 metres away. It is shorter, at 36.6 metres, but thicker, at 3.51 metres round against this tree's 3.35, and broader in the crown. The register ranks the stout one first. This one went for height, under a crown about 19.5 metres one way and 15.5 the other.\n\nHow tall is 39 metres for a hackberry? The only other one of this species we have measured, the Leaning Hackberry of Parco Treves in Padua, stands 9 metres tall. This tree is more than four times that. Even the second-ranked sugar maple at Busse Forest South tops out two and a half metres lower.\n\nThirty metres away stands the county's second-ranked silver maple, so three register trees share a few minutes' walk in Thatcher Woods.\n\nThe register records no measurement date and no age. Nobody has dated this hackberry. If you know how old it is, tell us.",
+  "how_to_recognise": "You can recognise it by its height, 39 metres, taller and slimmer than the champion hackberry 66 metres away. It stands in Thatcher Woods about 30 metres from the second-ranked silver maple.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  },
  {
   "id": "chi_017",
@@ -261,6 +355,14 @@
   "transport": "",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "ONE OFFICIAL SOURCE (Forest Preserves of Cook County champion tree register, 2026-09-28 rule). Register facts: Pin oak (Quercus palustris), champion rank #1 PO in the Forest Preserves of Cook County, circumference 141.3 in (359 cm), height 95 ft (29.0 m), crown spread 85/73 ft, measured None. Comments: none. | Pin: the register's GNSS point, tree-level. | Story: the register gives size, rank and site only; say what it is (the biggest of its kind the county's forest preserves have measured) and never invent history for the site. Age unknown: ask the reader. | Life check (scripts/lifecheck.py, 40 m): RECENT, a dated iNaturalist observation at the spot in the last four years."
+  "story": "This pin oak's crown spreads about 26 metres one way and 22 the other, on a tree only 29 metres tall. It is the champion pin oak of the Forest Preserves of Cook County, first among all those on preserve land, and it is nearly as wide as it is high.\n\nThe trunk is 3.59 metres round. Put the tree beside the county's champion white oak at Red Gate Woods, itself notable for a broad, even crown: that oak is 29.3 metres tall, almost the same, yet its crown is about three metres narrower across its widest line. No crown among the Cook County champions on our Chicago page spreads further than this one.\n\nPin oaks are familiar on our map from the other side of the Atlantic. We list them in Dutch parks in Haarlem, Apeldoorn, Eindhoven and Sittard, where the registers record planting dates between the 1860s and about 1910. None of those carries a measured trunk or crown on our pages, so this champion is the first pin oak we can describe in numbers.\n\nRolling Knolls lies at the far western edge of the trees on this page, a trip of its own rather than part of a walk.\n\nThe register records no measurement date and no age. Nobody has dated this oak. If you know how old it is, tell us.",
+  "how_to_recognise": "You can recognise it by the crown, about 26 by 22 metres, nearly as wide as the 29-metre tree is tall, over a trunk 3.59 metres round. It stands at the register's point in Rolling Knolls.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "ready_to_merge": true
  }
 ]

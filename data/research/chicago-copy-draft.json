@@ -1,0 +1,21 @@
+{
+ "_note": "Draft copy for data/cities/chicago.json when chi_007 to chi_017 merge (6 to 17 trees). Fields not listed here (question_answer, the zoo-oak FAQ) stay as they are. The free-to-visit FAQ also corrects a live contradiction: the current intro says the two golf-course champions generally need a green fee, while the current FAQ says all six are free.",
+ "intro": "Chicago is a young city on old prairie, and its oldest trees are the prairie's survivors: bur oaks that stood here before the city had a name. One shaded the Midway while the 1893 World's Fair was built around it, a grove on Wooded Island survived the same fair, and a Norwood Park savanna remnant may be older than the United States. Out in the county's forest preserves stand eleven ranked champions, among them a 39-metre hackberry in Thatcher Woods and a white oak 4.76 metres round. Fifteen of the seventeen are free to visit.",
+ "meta_description": "Chicago's remarkable trees: prairie bur oaks older than the city, and Cook County's champions, from a 39-metre hackberry to a 4.76-metre white oak.",
+ "question_meta": "Chicago's oldest trees are the bur oaks of Union Ridge Cemetery, estimated at 325 to 375 years. Their story, and 16 more remarkable trees.",
+ "question_context_addition": "Append after the sentence ending 'records size, not age': The Forest Preserves of Cook County keep their own champion register, and it is the same: the eleven county champions on this page come with girths, heights and crowns, and not one with an age.",
+ "faq": [
+  {
+   "q": "Are Chicago's remarkable trees free to visit?",
+   "a": "Fifteen of the seventeen are free. The Midway oak and the Wooded Island grove stand in public parks, Union Ridge is a cemetery open in daylight hours, the Kenilworth oak is a parkway tree seen from the sidewalk, and the eleven forest preserve champions stand on public preserve land. The champion boxelder and the champion red pine stand on public golf courses, where a green fee is generally needed to walk the course; ask at the clubhouse."
+  },
+  {
+   "q": "Why are the oldest ones bur oaks?",
+   "a": "Because the bur oak is the prairie's survivor: thick corky bark made it the one tree that shrugged off the prairie fires that cleared everything else. What was here before Chicago was mostly bur oak savanna, so what outlived Chicago's building is too."
+  },
+  {
+   "q": "Where are Chicago's champion trees?",
+   "a": "Mostly in the Forest Preserves of Cook County. Thatcher Woods holds three ranked trees within 80 metres of each other: the county's champion hackberry, a second-ranked hackberry 39 metres tall, and the second-ranked silver maple. Busse Forest South holds the champion basswood, a third-ranked basswood and the second-ranked sugar maple. The champion white oak, pin oak and sassafras stand alone in Red Gate Woods, Rolling Knolls and Thorn Creek Division."
+  }
+ ]
+}
