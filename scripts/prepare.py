@@ -635,6 +635,43 @@ def arm_the_hooks():
         pass  # never let a git quirk stop a run from starting
 
 
+def backup_lanes():
+    """What a run does when no lead, staged city or refill batch moves.
+
+    Hidde, 2026-10-05: "if leads cant find anything to do - as back up they
+    should either search register or start translated pages". Both were rungs
+    already (scout_next.py, langcheck.py --next), and neither was in front of
+    a run at the moment it decided there was nothing left: 15 continuations on
+    10-02 and most attempts on 10-05 ended there instead. So the two commands
+    run here and their answer is printed, and a run picks one rather than
+    deriving it. Translations go German first: Germany and Austria are two of
+    the four countries paying visitors come from (SUPPLY_FOCUS).
+    """
+    import subprocess
+    def run(*cmd):
+        try:
+            return subprocess.run([sys.executable] + list(cmd), cwd=ROOT, capture_output=True,
+                                  text=True, timeout=120).stdout
+        except Exception:
+            return ""
+    print("\n  BACKUP, when nothing above moves (no READY lead, no claimable staged city,")
+    print("  no refill batch): never end the window empty, do ONE of these, both are real work.")
+    scout = next((l for l in run("scripts/scout_next.py", "--target").splitlines() if l.strip()), "")
+    if scout:
+        print("    1. register: " + scout.strip()[:220])
+    rows = [l for l in run("scripts/langcheck.py", "--next").splitlines()
+            if l.startswith("| ") and not l.startswith("| Lang") and not l.startswith("|---")]
+    rows.sort(key=lambda l: l.split("|")[1].strip() != "de")
+    if rows:
+        print("    2. translate (German first), top of langcheck.py --next:")
+        for l in rows[:4]:
+            c = [x.strip() for x in l.strip("|").split("|")]
+            print("         %-3s %-22s %s English impressions" % (c[0], c[1], c[2]))
+        print("       claim it (--kind translate), python3 scripts/transbrief.py --brief <lang> <city>,")
+        print("       dispatch the translate agent, then transbrief.py --apply <file>; batch several cities")
+        print("       of one language in one pass.")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--status", action="store_true")
@@ -642,6 +679,7 @@ def main():
     arm_the_hooks()
     if a.status:
         pipeline_status()
+        backup_lanes()
         return 0
 
     with open(os.path.join(ROOT, "data", "city-queue.json"), encoding="utf-8") as fh:

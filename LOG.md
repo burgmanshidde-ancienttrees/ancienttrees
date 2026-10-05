@@ -23,6 +23,8 @@
 
 **And the order follows the paying visitors (Hidde: "work on prioritised stuff - countries where potential paying customers come from"):** Austria joins the US, the UK and Germany in `SUPPLY_FOCUS` (Cloudflare 28 days: US, DE, GB, AT). The staged list, the refill batches, `city_queue.py --next` and now `leads.py --ready` all put those countries first; Vienna leads with 379 candidates on hand, then Graz and Salzburg. Other focus countries are not refused, they come after.
 
+**Backup lane (Hidde: "if leads cant find anything to do - as back up they should either search register or start translated pages"):** `prepare.py --status` now ends with a BACKUP block that runs scout_next.py and langcheck.py and names one register to scout and the pages to translate, German first. Both nightly.yml prompts point at it instead of ending the window.
+
 ## 2026-10-05 session: the app inbox emptied
 
 - **Reader photographs:** 66 on file, all already handled; nothing waiting for a look.

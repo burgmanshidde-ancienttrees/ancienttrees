@@ -38,10 +38,10 @@ env:
        consider anything else, and do it again if the clock allows.
     4. Only if that list is empty: `python3 scripts/prepare.py --status`. If
        it names a staged city where the visitors are, claim it and dispatch a
-       verify agent on it now. If it names nothing workable, run
-       `python3 scripts/scout_next.py --target` and do what it prints.
-       Ending with nothing dispatched is not an option while either names
-       work. Then read CLAUDE.md for anything else Step 0 asks.
+       verify agent on it now. If it names nothing workable, take its
+       BACKUP block: scout the register it names, or translate the page it
+       names (German first). Ending with nothing dispatched is not an option
+       while either names work. Then read CLAUDE.md for anything else Step 0 asks.
 
     The one thing not to repeat: do not spend this attempt on orientation and
     claiming. Reading state, staging candidates and recording a claim are the
@@ -470,10 +470,12 @@ jobs:
             of the ladder unavailable, so refilling it is not a lane competing
             with the others, it is what puts them back.
 
-            AND WHEN NOTHING ON HAND CAN REFILL IT, YOU SCOUT. If every lane
-            you checked is shown empty or dead (no ready leads, no register
-            rows that pass preflight), run `python3 scripts/scout_next.py
-            --target` and do what it prints: SCOUT or RETRY means a scouting
+            AND WHEN NOTHING ON HAND CAN REFILL IT, YOU SCOUT OR TRANSLATE.
+            prepare.py --status ends with a BACKUP block naming both: a
+            register to scout and a page to translate (German first). Take
+            either; both are real work, and a window that does neither has
+            handed itself back. For the scouting half, run
+            `python3 scripts/scout_next.py --target` and do what it prints: SCOUT or RETRY means a scouting
             pass on that place this window, its verdict written to
             data/register-scouting.json whatever it finds. "Dispatched
             nothing" is never the end of a window while that command names a
