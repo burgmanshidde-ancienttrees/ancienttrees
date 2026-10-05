@@ -2984,3 +2984,9 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .prose-more { display: inline-block; margin: 0.35rem 0 0; padding: 0; min-height: 32px; background: none; border: 0;
   cursor: pointer; font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--moss); }
 .td-access .td-more { justify-self: start; text-align: left; }
+/* The number and the heart sit on the title's FIRST line, not the middle of a
+   two-line title (2026-10-05, New York's "9" beside "The Red Oak of the Thain
+   Family / Forest"): a numbered list hangs its marker off the first line. */
+.tree-card .tree-card-top { align-items: flex-start; }
+.tree-card .tree-num { margin-top: -1px; }
+.tree-card .tree-card-top .heart-card { align-self: flex-start; margin-top: -6px; }

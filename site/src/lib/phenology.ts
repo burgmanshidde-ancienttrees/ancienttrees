@@ -51,10 +51,18 @@ const KIND_ALIASES: Record<string, string> = {
 const KIND_HINTS: [string, string[]][] = [
   ["catkins", ["catkin"]],
   ["flowers", ["flower", "blossom", "bloom", "wisteria"]],
-  ["autumn colour", ["autumn", "gold", "golden", "scarlet", "crimson", "turns", "fall colour", "fall color"]],
-  ["fruit", ["fruit", "berries", "acorn", "fig ripen", "chestnut drop"]],
-  ["fresh leaves", ["fresh leaves", "new leaves", "leaf-out", "unfurl"]],
+  ["autumn colour", ["autumn", "gold", "golden", "scarlet", "crimson", "turns", "turn ", "copper", "rust", "foliage", "fall colour", "fall color", "leaves redden"]],
+  ["fruit", ["fruit", "berries", "acorn", "ripen", "chestnuts drop", "chestnut drop", "conker", "arils", "mandarins", "oranges", "olives"]],
+  ["fresh leaves", ["fresh leaves", "new leaves", "leaf-out", "unfurl", "leaves emerge"]],
 ];
+
+// WHEN A LABEL NAMES TWO MOMENTS ("turns white with chestnut blossom", "the
+// chestnuts drop and its leaves turn gold"), THE MONTHS DECIDE (2026-10-05).
+// It used to give up and print an icon-less "In season" chip, which says
+// nothing (Hidde, on New York's red oak). Spring months read as bloom or
+// fresh leaves first, autumn months as colour then fruit.
+const SPRING_FIRST = ["flowers", "catkins", "fresh leaves", "fruit", "autumn colour"];
+const AUTUMN_FIRST = ["autumn colour", "fruit", "flowers", "fresh leaves", "catkins"];
 
 interface BestTime {
   months?: number[];
@@ -71,8 +79,13 @@ export function seasonKind(bt: BestTime): string {
     return "";
   }
   const label = (bt.label ?? "").toLowerCase();
-  const hits = KIND_HINTS.filter(([, words]) => words.some((w) => label.includes(w)));
-  return hits.length === 1 ? hits[0][0] : "";
+  const hits = KIND_HINTS.filter(([, words]) => words.some((w) => label.includes(w))).map(([k]) => k);
+  if (hits.length <= 1) return hits[0] ?? "";
+  const ms = bt.months ?? [];
+  const autumn = ms.some((m) => m >= 8 && m <= 12);
+  const spring = ms.some((m) => m >= 2 && m <= 7);
+  const order = autumn && !spring ? AUTUMN_FIRST : spring && !autumn ? SPRING_FIRST : [];
+  return order.find((k) => hits.includes(k)) ?? "";
 }
 
 type Pt = [number, number];
@@ -151,7 +164,7 @@ export function seasonCurve(tree: Tree): string {
     const by = (peakY / H) * 100;
     peakBadge = `<span class="sc-peakbadge" style="left:${bx.toFixed(1)}%;top:${by.toFixed(1)}%">${KIND_ICONS[kind]}</span>`;
   }
-  const nowBadge = inSeason && kind ? seasonChipHtml(CHIP_KEY[kind] ?? "peak") : (inSeason ? seasonChipHtml("peak") : "");
+  const nowBadge = inSeason && CHIP_KEY[kind] ? seasonChipHtml(CHIP_KEY[kind]) : "";
 
   return `
 <figure class="season">
@@ -191,12 +204,14 @@ const CHIP_KEY: Record<string, string> = {
   "fresh leaves": "leaves", catkins: "catkins", "bare silhouette": "winter",
 };
 
-/** The chip's key for a tree's best_time ("bloom", "autumn", ...), or "peak"
+/** The chip's key for a tree's best_time ("bloom", "autumn", ...), or null
  *  when the kind is unknown, or null when the tree has no best_time at all. */
 export function seasonKey(tree: Tree): string | null {
   const bt = tree.best_time;
   if (!bt || !bt.label) return null;
-  return CHIP_KEY[seasonKind(bt)] ?? "peak";
+  // Unknown is no chip at all, on both surfaces (2026-10-05): "In season"
+  // with no icon named nothing.
+  return CHIP_KEY[seasonKind(bt)] ?? null;
 }
 
 /** The chip, but only in the months it is true. Empty otherwise. */
@@ -482,7 +497,7 @@ export function seasonBlock(tree: Tree, lat: number): string {
   const keys = moments
     .filter((mo) => !(mo.label && said.includes(mo.label.toLowerCase())))
     .map((mo) => `<span class="ph-key">${KIND_ICONS[mo.kind]}${esc(mo.label || mo.kind.charAt(0).toUpperCase() + mo.kind.slice(1))}</span>`).join("");
-  const nowBadge = inSeason ? seasonChipHtml(CHIP_KEY[kind] ?? "peak") : "";
+  const nowBadge = inSeason && CHIP_KEY[kind] ? seasonChipHtml(CHIP_KEY[kind]) : "";
   const labelLine = hasBt ? `<p class="season-label">${esc(bt.label!)}</p>` : "";
 
   return `

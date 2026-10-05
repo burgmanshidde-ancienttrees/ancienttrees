@@ -72,7 +72,7 @@ export async function GET() {
           ? { p: thumbUrl(photo.url, 500), p9: thumbUrl(photo.url, 900) }
           : {}),
         ...(credit ? { cr: `${credit} (${photo!.license})` } : {}),
-        ...(tree.best_time?.months?.length ? { bt: tree.best_time.months, sk: seasonKey(tree) ?? "peak" } : {}),
+        ...(tree.best_time?.months?.length ? { bt: tree.best_time.months, ...(seasonKey(tree) ? { sk: seasonKey(tree) } : {}) } : {}),
       };
     }
   }

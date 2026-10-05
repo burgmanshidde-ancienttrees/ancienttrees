@@ -143,11 +143,11 @@ window.atCollection = (function() {
     // own name and tint, on the photograph when there is one. English, as the
     // rest of this card is; the key arrives from /api/cards.json.
     var chip = '';
-    if (c.bt && c.bt.indexOf(new Date().getMonth() + 1) !== -1) {
-      var words = { bloom: 'In bloom', autumn: 'Autumn colour', fruit: 'In fruit', leaves: 'Fresh leaves',
-                    catkins: 'Catkins', winter: 'Winter shape', peak: 'In season' };
-      var k = words[c.sk] ? c.sk : 'peak';
-      chip = '<span class="best-now-inline sn-chip sn-' + k + '">' + words[k] + '</span>';
+    var words = { bloom: 'In bloom', autumn: 'Autumn colour', fruit: 'In fruit', leaves: 'Fresh leaves',
+                  catkins: 'Catkins', winter: 'Winter shape' };
+    // No key, no chip: an unnamed "In season" said nothing (2026-10-05).
+    if (c.bt && words[c.sk] && c.bt.indexOf(new Date().getMonth() + 1) !== -1) {
+      chip = '<span class="best-now-inline sn-chip sn-' + c.sk + '">' + words[c.sk] + '</span>';
     }
     // The tag row (TreeCard.astro, 2026-10-04): season first, then Seen.
     var seen = visited ? '<span class="tree-card-seen">'
