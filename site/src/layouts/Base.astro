@@ -13,7 +13,7 @@ import SignInModal from "../components/SignInModal.astro";
 import { SIGNIN_JS, SIGNIN_CATCH_JS } from "../lib/signin-js";
 import { UNITS_JS } from "../lib/units-js";
 import LanguagePicker from "../components/LanguagePicker.astro";
-import { toEnglishPath } from "../lib/i18n";
+import { toEnglishPath, ui } from "../lib/i18n";
 import { isNoindexed, cleanPath } from "../lib/noindex";
 import { chrome } from "../lib/ui-strings";
 import AppModal from "../components/AppModal.astro";
@@ -544,5 +544,23 @@ window.atPaintNav = function(inNow) {
     everywhere, so it lives here now and nowhere else. */}
 <SignInModal lang={lang} />
 <Fragment set:html={SIGNIN_JS} />
+{/* THE LONG INTRO, CLAMPED ON A PHONE (2026-10-05). The city page has done
+    this since 2026-08-18 ("afkappen maar klikbaar maken"); the species, park,
+    collection and country pages ran their whole intro before the first tree.
+    Same three lines and the same left-aligned Read more, the AllTrails and
+    Airbnb "Show more" convention. The text stays in the page for search. */}
+<script is:inline define:vars={{ moreLabel: ui(lang).readMore }}>
+  (function() {
+    if (!window.matchMedia('(max-width: 800px)').matches) return;
+    document.querySelectorAll('.content-page > .prose-block').forEach(function(el) {
+      el.classList.add('prose-clamp');
+      if (el.scrollHeight <= el.clientHeight + 1) { el.classList.remove('prose-clamp'); return; }
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'prose-more'; b.textContent = moreLabel;
+      b.addEventListener('click', function() { el.classList.remove('prose-clamp'); b.remove(); });
+      el.insertAdjacentElement('afterend', b);
+    });
+  })();
+</script>
 </body>
 </html>

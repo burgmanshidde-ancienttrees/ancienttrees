@@ -2976,3 +2976,11 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .panel-foot .take-with-you, .panel-foot .app-pitch { background: #fff; border: 1px solid var(--cream-dark);
   border-radius: 14px; padding: 14px var(--gutter); margin: 1rem 0; }
 .panel-foot .app-pitch { margin-bottom: 2rem; }
+/* Long intros clamp on a phone, as the city intro does (2026-10-05); the
+   button is the city page's own Read more. And the tree page's Read more
+   under the access line sits at the text's left edge, not centred by the
+   grid it lives in. */
+.prose-clamp { max-height: 7em; overflow: hidden; margin-bottom: 0 !important; -webkit-mask-image: linear-gradient(#000 55%, transparent); mask-image: linear-gradient(#000 55%, transparent); }
+.prose-more { display: inline-block; margin: 0.35rem 0 0; padding: 0; min-height: 32px; background: none; border: 0;
+  cursor: pointer; font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--moss); }
+.td-access .td-more { justify-self: start; text-align: left; }
