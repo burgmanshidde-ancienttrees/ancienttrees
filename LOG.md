@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Leipzig +4 (Hungarian oak, honey locust, wych elm, copper beech), Milwaukee register imported
+
+Visits last 7 days: 1455. Shelf was empty and Spokane is exhausted (released), so I scouted Milwaukee (queue #124) and found the Wisconsin DNR Champion Tree Program's public ArcGIS layer: 46 rows with exact coordinates, girth, height and a private-property flag, imported as data/registers/wisconsin-dnr-champion-trees.json with owner names left out. Milwaukee holds exactly 4 public-access champions (McGovern Park chinkapin oak, Forest Home Cemetery overcup oak, a city-street American elm, Oak Creek shagbark hickory); it is not on the frozen proven-city roster, so passcheck refused a claim and nothing was opened. Then Leipzig verify (5 found), write (4 stories) and a photo look at the four Commons files: lpz_016, 017, 018, 020 merged with photos, German overlay, counts 15 to 19. lpz_019 (Kleinzschocher manor ginkgo) held: access may be a manor's grounds. The Dufourstrasse-style claim that lpz_016 is the tallest on the list rests on register heights only. Preflight 0 problems. Next: Milwaukee waits for the roster to widen or a reader's submission; Leipzig has 30 more Wikidata candidates, mostly outer districts or villa grounds.
+
 ## 2026-10-05 session with Hidde: the city list calmed down, live
 
 - **City sheet header is one header at every drag height.** "Ancient Trees in Reykjavik" keeps its size, and the country eyebrow and the "4 trees on the map" line are gone, because the numbered list already says how many (web, all eight languages; the app never had the line).
