@@ -143,6 +143,11 @@ belongs in Helpful Details or nowhere.
 - A mission sentence alone is a slogan. The concrete sentence under it is what
   makes it true, so it never gets cut to tighten the paragraph.
 
+**telling a contributor he was wrong instead of asking him, the one who stood there** (added 2026-10-05)
+
+- NO: "Your second photo, the one for the holm oak, shows one of the park's elms. The holm oak is the dark evergreen one"
+- YES: "Maybe we put the pin in the wrong place: you stood there, do you know which tree it is?"
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
