@@ -231,6 +231,8 @@ def check_pin_upgrades():
                 continue
             if tree.get("location_precision") != "confirmed":
                 continue
+            if tree.get("pin_source"):
+                continue  # a reader's accepted GPS fix, sightings_publish.move_pin
             if not PIN_NEW_EVIDENCE.search(" ".join(tree.get("verified_sources") or [])):
                 out.append(
                     "%s: %s is marked confirmed, but %s recorded this pin as approximate "

@@ -104,5 +104,39 @@ def json_dump(o):
     return json.dumps(o)
 
 
+class TestReaderPin(unittest.TestCase):
+    """A reader's accepted fix replaces an approximate pin, never a confirmed one."""
+
+    def tree(self, precision="approximate", lat=64.1474, lon=-21.9418):
+        return {"id": "rey_001", "location_precision": precision,
+                "location": {"latitude": lat, "longitude": lon}}
+
+    def test_approximate_moves_and_becomes_confirmed(self):
+        t = self.tree()
+        line = pub.move_pin(t, 64.1474222, -21.9420133, "sid", "2026-09-04T15:45:35Z", "2026-10-05")
+        self.assertTrue(line.startswith("PIN "))
+        self.assertEqual(t["location"]["latitude"], 64.147422)
+        self.assertEqual(t["location_precision"], "confirmed")
+        self.assertEqual(t["pin_source"]["sighting_id"], "sid")
+        self.assertEqual(t["pin_source"]["moved_m"], 11)
+
+    def test_confirmed_is_never_touched(self):
+        t = self.tree("confirmed")
+        self.assertIsNone(pub.move_pin(t, 64.1475, -21.9420, "sid", None, "2026-10-05"))
+        self.assertEqual(t["location"]["latitude"], 64.1474)
+        self.assertNotIn("pin_source", t)
+
+    def test_too_far_is_reported_not_applied(self):
+        t = self.tree()
+        line = pub.move_pin(t, 64.1600, -21.9418, "sid", None, "2026-10-05")
+        self.assertTrue(line.startswith("NOT MOVED"))
+        self.assertEqual(t["location_precision"], "approximate")
+        self.assertEqual(t["location"]["latitude"], 64.1474)
+
+    def test_no_fix_no_change(self):
+        t = self.tree()
+        self.assertIsNone(pub.move_pin(t, None, None, "sid", None, "2026-10-05"))
+
+
 if __name__ == "__main__":
     unittest.main()
