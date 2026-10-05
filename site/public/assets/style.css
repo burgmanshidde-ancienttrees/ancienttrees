@@ -204,7 +204,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    these the desktop split renders a stray back button and a tree count
    under the heading, because their display rules live inside the phone
    media query. */
-.sheet-back, .sheet-count { display: none; }
+.sheet-back { display: none; }
 /* The walking-routes overlay reuses the sign-in dialog wholesale; all it adds
    is the three-line list of what the app does (2026-08-18). */
 .app-dialog-list { list-style: none; margin: 0 0 1.1rem; padding: 0; text-align: left; }
@@ -1772,7 +1772,6 @@ footer { border-top: 1px solid var(--cream-dark); }
      convention every scrolling sheet uses. */
   .sheet-grab { border-bottom: 1px solid var(--cream-dark);
     box-shadow: 0 2px 6px rgba(26, 32, 18, 0.05); position: relative; z-index: 1; }
-  .sheet-count { display: block; font-size: 13px; color: var(--ink-light); }
   .sheet-body { flex: 1 1 auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain; touch-action: pan-y; }
   /* The peek is one line and a count, the way Maps shows a single row above
@@ -1783,14 +1782,14 @@ footer { border-top: 1px solid var(--cream-dark); }
      list, and a 1.6rem heading over a country eyebrow costs a whole tree card
      at half. Maps keeps its sheet header to one line and a subtitle, so this
      does too, and only the full sheet spends room on the city intro. */
-  .panel[data-detent="peek"] .panel-head h1,
-  .panel[data-detent="half"] .panel-head h1 { font-size: 1.15rem; margin-bottom: 0.15rem;
+  /* ONE header at every detent (Hidde, 2026-10-05: "keep the title
+     consistent"). The sheet's title does not change size or grow an eyebrow
+     as it is dragged, the way a Maps place sheet keeps its name fixed; the
+     "4 trees on the map" line went with it, since the numbered list under it
+     already says how many. */
+  .panel[data-detent] .panel-head h1 { font-size: 1.15rem; margin-bottom: 0;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .panel[data-detent="peek"] .panel-head .eyebrow,
-  .panel[data-detent="half"] .panel-head .eyebrow { display: none; }
-  /* The count is the peek's subtitle and the half's orientation line; at full
-     the intro says it better. */
-  .panel[data-detent="full"] .sheet-count { display: none; }
+  .panel[data-detent] .panel-head .eyebrow { display: none; }
   /* /explore's peek is its title and its search field, which is the primary
      action on a map page. Its description would double the peek's height for
      something a visitor reads once. The city page's own peek line is a COUNT
@@ -1815,7 +1814,7 @@ footer { border-top: 1px solid var(--cream-dark); }
     padding: 0.2rem 0; cursor: pointer; }
   .panel.is-detail .panel-head h1, .panel.is-detail .panel-head .eyebrow,
   .panel.is-detail .city-intro,
-  .panel.is-detail .sheet-count, .panel.is-detail .panel-foot { display: none; }
+  .panel.is-detail .panel-foot { display: none; }
   .panel.is-detail .tree-card { display: none; }
   .panel.is-detail .tree-card.is-open { display: block; }
   .crumbs { display: none; }
