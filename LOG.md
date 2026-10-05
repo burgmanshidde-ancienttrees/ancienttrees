@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Later attempt in the window: stale claims released, Washington DC scouted
+
+Dresden and Frankfurt were claimed by an earlier attempt but both are already published, so the claims were released and nothing dispatched. READY is 0. scout_next.py named Washington DC (#112): DC Open Data holds no heritage-tree point dataset, only a StoryMap, so the verdict is `stalled` with Casey Trees and DDOT layers as next angles. No trees shipped; no command refused.
+
 ## 2026-10-05 Shelf still empty: Frankfurt and Dresden are walls, Lansing and Detroit scouted
 
 Visits last 7 days: 1455. Writable pile is 0 and every held tree lacks a photo or confirmed pin, so no write pass existed. Checked the verify targets for supply: Spokane has one unmined candidate (already judged yesterday), Frankfurt and Dresden have no imported register and an earlier pass already worked both (claimed and released each, nothing dispatched). scout_next.py named Lansing (#103) and then Detroit (#104): no city heritage-tree register with coordinates for either, only the Michigan Botanical Society's statewide Big Tree champion list, recorded as a finding aid with next angles in data/register-scouting.json. No trees shipped; no command refused.

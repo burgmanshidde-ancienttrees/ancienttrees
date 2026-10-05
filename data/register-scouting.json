@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Washington DC",
+      "country": "United States",
+      "status": "stalled",
+      "note": "SCOUTED 2026-10-05 on scout_next.py --target (#112). DC Open Data (opendata.dc.gov) search for heritage or special trees returns only a StoryMap on heritage tree relocations, no point dataset of protected trees. The Urban Forest Preservation Act protects them but no coordinates list was found. Next angles: Casey Trees champion list (check licence and coordinates), DDOT Urban Forestry layers for a heritage flag. Already a live city, so this is deepening supply only."
+    },
+    {
       "place": "Detroit",
       "country": "United States",
       "status": "stalled",
