@@ -122,6 +122,12 @@ struct AmbassadorWantedRow: View {
     @State private var asked = false
     @State private var sending = false
     @State private var signingIn = false
+    /// Confirm first, then say it arrived (Hidde, 2026-10-05: "ik zou eerder
+    /// een pop up verwachten"): the standard iOS alert pair, as Google Maps'
+    /// "Join Local Guides" asks for a yes and then says you are in. The
+    /// website draws the same two steps in one dialog (AmbassadorLine.astro).
+    @State private var confirming = false
+    @State private var sentShown = false
 
     /// THE WHOLE ROW IS THE CONTROL (Hidde, 2026-10-04: "just make the whole
     /// thing clickable instead of adding a huge button"), an iOS list row with
@@ -140,7 +146,7 @@ struct AmbassadorWantedRow: View {
                         .font(.system(size: 14, weight: .bold))
                         .foregroundStyle(Brand.ink)
                         .fixedSize(horizontal: false, vertical: true)
-                    Text(asked ? "Thanks, we'll be in touch." : "Help us improve this list.")
+                    Text(asked ? "Request sent." : "Help us improve this list.")
                         .font(.system(size: 12))
                         .foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
@@ -165,15 +171,30 @@ struct AmbassadorWantedRow: View {
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .feedback, localCount: 0)
         }
+        .alert("Become the ambassador for \(place)?", isPresented: $confirming) {
+            Button("Send request") { send() }
+            Button("Not now", role: .cancel) {}
+        } message: {
+            Text("You help keep this list right: you add photographs, check the facts and tell us which trees are missing.")
+        }
+        .alert("Request sent", isPresented: $sentShown) {
+            Button("Done", role: .cancel) {}
+        } message: {
+            Text("We'll email you soon with a few questions about the list.")
+        }
     }
 
     private func tap() {
         guard account.isSignedIn else { signingIn = true; return }
+        confirming = true
+    }
+
+    private func send() {
         sending = true
         Task {
             let ok = await Submission.requestAmbassador(city: place, token: await account.freshToken())
             sending = false
-            if ok { asked = true }
+            if ok { asked = true; sentShown = true }
         }
     }
 }
