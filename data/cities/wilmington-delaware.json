@@ -1,0 +1,312 @@
+{
+  "city": "Wilmington, Delaware",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Delaware's champion tulip tree stands at Winterthur, just outside Wilmington: 50.9 metres tall, with a trunk 620 centimetres round. A second tulip tree, north of the city at First State National Historical Park, reaches 53 metres. Eight trees from the state's big tree register make up this page. Two stand in the city itself, a champion honeylocust in Brandywine Park and a hemlock in Brandywine Cemetery, a short walk apart; the rest grow on parks and museum estates within ten kilometres. None of them has a recorded age, and if you know one, tell us.",
+  "meta_description": "Delaware's champion tulip tree, 50.9 metres tall, stands at Winterthur near Wilmington. Eight state-ranked trees, from a 53 metre giant to a city hemlock.",
+  "question_meta": "Nobody has dated Wilmington's big trees. The largest is Delaware's champion tulip tree at Winterthur, 620 cm round. Where to find it and seven more.",
+  "question_answer": "Nobody has dated any of the eight trees we map around Wilmington, Delaware, so the oldest is not known. The biggest is the state champion tulip tree at Winterthur, 620 centimetres round and 50.9 metres tall, and the tallest is a second tulip tree at First State National Historical Park, 53 metres. One age can be bounded: the champion dawn redwood at Winterthur can be no older than 1948, when seed of the species first reached gardens outside China.",
+  "question_context": "All eight come from the Delaware Forest Service's big tree register, which measures trunk, height and crown and records no planting dates. That is why every age on this page is a question rather than a number.\n\nTwo trees stand in the city proper, the champion honeylocust in Brandywine Park and the eastern hemlock in Brandywine Cemetery at 701 Delaware Avenue, about 560 metres apart and both free. The rest are outside the city limits. Winterthur holds the champion tulip tree and the champion dawn redwood, about 400 metres apart on one paid ticket. Hagley, the other museum estate, holds the champion green ash, also paid. Valley Garden Park, Bellevue State Park and First State National Historical Park are free public ground.\n\nTwo trees need a reader's eyes. The emerald ash borer has killed most of Delaware's ashes, so the Hagley green ash, alive in a dated observation within the last four years, deserves a fresh check. And the cemetery hemlock has no recent dated observation at all; its newest confirmation is the register's own ranking of November 2024.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Wilmington, Delaware?",
+      "a": "Nobody knows. The Delaware Forest Service's register, the source for every tree on this page, measures size and records no ages, and we have found no planting dates for any of them. The only age we can bound is the youngest: the champion dawn redwood at Winterthur can be no older than 1948, when the species first reached gardens outside China. If you know the history of any of these trees, tell us."
+    },
+    {
+      "q": "What is the biggest tree near Wilmington?",
+      "a": "Delaware's champion tulip tree, at Winterthur, about eight kilometres northwest of downtown: 50.9 metres tall with a trunk 620 centimetres round. A second tulip tree at First State National Historical Park is taller, at 53 metres, but thinner, and the state ranks it second."
+    },
+    {
+      "q": "Are Wilmington's champion trees free to visit?",
+      "a": "Five of the eight are. The honeylocust in Brandywine Park, the hemlock in Brandywine Cemetery, and the trees in Valley Garden Park, Bellevue State Park and First State National Historical Park stand on free public ground. The two Winterthur trees and the Hagley green ash are inside museum grounds with paid entry."
+    },
+    {
+      "q": "Is the Hagley green ash still alive?",
+      "a": "It was when the state ranked it first in October 2024, and a dated observation at the spot within the last four years shows it standing. The emerald ash borer has killed most of Delaware's ash trees since the 2010s, so we cannot promise more than that. If you visit Hagley, tell us how it looks."
+    }
+  ],
+  "hero_tree_id": "wil_002",
+  "trees": [
+    {
+      "id": "wil_001",
+      "name": "The Tulip Tree of First State National Historical Park",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 546,
+      "height_m": 53.0,
+      "location": {
+        "address": "First State National Historical Park, north of Wilmington, New Castle County, Delaware",
+        "latitude": 39.832728,
+        "longitude": -75.562692,
+        "neighbourhood": "First State National Historical Park, about 10 km north of downtown Wilmington"
+      },
+      "verified_sources": [
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+      ],
+      "access": "Free, public park or historic ground.",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tulip tree is 53 metres tall, and Delaware still ranks it second. The Delaware Forest Service measured it at 174 feet, with a trunk 546 centimetres round and a crown averaging about 37 metres across, and placed it behind the state champion at Winterthur, a few kilometres to the west, which is two metres shorter and noticeably thicker. Big tree registers score the whole tree, trunk and crown as well as height, so the tallest does not automatically win.\n\nFor scale: the Davie Poplar in Chapel Hill, the best known tulip tree we publish in the American South, stands 30.5 metres. The tallest European ones on our map, in Geneva and Copenhagen, reach 30 and 26.5. This one clears every one of them by more than twenty metres, which makes it the tallest measured tulip tree on this site.\n\nIt grows on the grounds of First State National Historical Park, about ten kilometres north of downtown Wilmington and outside the city itself. Entry is free. The register's ranking dates from November 2024, and a dated observation at the spot within the last four years says it was still standing then.\n\nWhat the register does not give is an age. Nobody has dated this tree, as far as we can find, and no planting record turns up. If you know its history, or have a tape and an afternoon, tell us.",
+      "how_to_recognise": "You can recognise it by sheer height, 53 metres, over a trunk 546 centimetres round. It stands on the grounds of First State National Historical Park, north of Wilmington, at the point the state register gives.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when 53 metres of crown turns clear yellow"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wil_002",
+      "name": "The Tulip Tree of Winterthur",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 620,
+      "height_m": 50.9,
+      "location": {
+        "address": "Winterthur Museum, Garden and Library, Winterthur, Delaware",
+        "latitude": 39.807218,
+        "longitude": -75.600964,
+        "neighbourhood": "Winterthur, about 8 km northwest of downtown Wilmington"
+      },
+      "verified_sources": [
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+      ],
+      "access": "Paid entry: inside the museum and garden grounds.",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Delaware's champion tulip tree is not its tallest, and it does not need to be. The Delaware Forest Service ranks this one first in the state: 50.9 metres high, a crown averaging about 32 metres across, and a trunk 620 centimetres round. Another tulip tree north of Wilmington stands two metres taller, but this trunk is wider by more than 70 centimetres, and on a register that scores the whole tree, girth carries the day.\n\nThat trunk is the thing to come for. Of the tulip trees we publish worldwide, only one is thicker, at the Biscainhos garden in Braga, Portugal, at 650 centimetres. The big ones we map in Arnhem and Porto sit around 530. And none of those comes near 50 metres in height; this tree is roughly twenty metres taller than the best measured European examples on our map.\n\nIt grows on the Winterthur estate, the museum and garden about eight kilometres northwest of downtown Wilmington, outside the city. Entry is paid. Four hundred metres away on the same grounds stands Delaware's champion dawn redwood, so one ticket covers two state records.\n\nThe ranking dates from November 2024, and a dated observation at the spot within the past four years confirms it was alive then. The register carries no age and we have found no planting date. If you know when it went in, or who planted it, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 620 centimetres round, on Delaware's champion tulip tree, 50.9 metres tall. It stands on the Winterthur grounds about 400 metres from the champion dawn redwood.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when a crown fifty metres up turns clear yellow"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "wil_003",
+      "name": "The Sycamore of Valley Garden Park",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 589,
+      "height_m": 39.6,
+      "location": {
+        "address": "Valley Garden Park, northwest of Wilmington, New Castle County, Delaware",
+        "latitude": 39.786211,
+        "longitude": -75.615136,
+        "neighbourhood": "Valley Garden Park, about 7 km northwest of downtown Wilmington"
+      },
+      "verified_sources": [
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+      ],
+      "access": "Free, public park or historic ground.",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This sycamore spreads almost as wide as it stands tall. The Delaware Forest Service measured it at 39.6 metres high with a crown averaging 38.7 metres across, which leaves barely a metre between the two numbers. The trunk is 589 centimetres round.\n\nThose numbers put it ahead of the best known sycamore in the region. The Brandywine Sycamore at Chadds Ford, across the Pennsylvania line to the north, the tree the Battle of Brandywine was fought around in 1777, measures 559 centimetres and 33.8 metres. This one is thicker by 30 centimetres and taller by nearly six metres. Of the American sycamores we publish, it is the tallest; the trunks at Sunderland in Massachusetts and Simsbury in Connecticut are much wider, at 782 and 884, but neither reaches 35 metres.\n\nEven so, the state ranks it only second in Delaware, which says something about how big Delaware's sycamores grow. The ranking dates from November 2024, and a dated observation at the spot within the last four years confirms it was alive then.\n\nIt stands in Valley Garden Park, about seven kilometres northwest of downtown Wilmington and outside the city, on free public ground. Unlike its Chadds Ford neighbour, it has no battle attached and no recorded age. If you know how old it is, or what the ground was before it became a park, tell us.",
+      "how_to_recognise": "You can recognise it by a crown nearly as wide as the tree is tall, 38.7 metres across on a 39.6 metre sycamore, over a trunk 589 centimetres round. It stands in Valley Garden Park, at the state register's point.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wil_004",
+      "name": "The Pin Oak of Bellevue State Park",
+      "species": "Pin Oak (Quercus palustris)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 462,
+      "height_m": 29.3,
+      "location": {
+        "address": "Cauffiel Estate, Bellevue State Park, northeast of Wilmington, New Castle County, Delaware",
+        "latitude": 39.77564,
+        "longitude": -75.48671,
+        "neighbourhood": "Bellevue State Park, about 6 km northeast of downtown Wilmington"
+      },
+      "verified_sources": [
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+      ],
+      "access": "Free, public park or historic ground.",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Most pin oaks people know are street trees, planted in rows and kept slim. This one has a trunk 462 centimetres round. The Delaware Forest Service measured it at 29.3 metres tall with a crown averaging 25 metres across, and ranks it second among the pin oaks of the state.\n\nWe publish four other pin oaks, all in Dutch parks, in Apeldoorn, Haarlem, Eindhoven and Sittard, where the species arrived as an ornamental from North America. None of them carries a measurement on our pages. This is the first pin oak on the site with numbers attached, and it is also the first standing in its native range: pin oak is a tree of the eastern United States, at home in low, damp ground.\n\nIt grows on the Cauffiel Estate within Bellevue State Park, about six kilometres northeast of downtown Wilmington, outside the city limits. The park is public ground. The register's ranking dates from November 2024, and a dated observation at the spot within the past four years confirms it was alive then.\n\nWhat nobody has recorded is how old it is. The register gives no age and no planting date, and we have found nothing that says whether it predates the estate or was planted for it. If you know, or if you have measured it yourself, tell us. In late autumn, look at the lower branches: pin oaks often hold their dead brown leaves well into winter.",
+      "how_to_recognise": "You can recognise it by a trunk 462 centimetres round, far heavier than a street pin oak, under a crown about 25 metres across. It stands on the Cauffiel Estate in Bellevue State Park, at the state register's point.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the leaves turn red and the lower ones hang on into winter"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wil_006",
+      "name": "The Honeylocust of Brandywine Park",
+      "species": "Honey Locust (Gleditsia triacanthos)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 231,
+      "height_m": 25.0,
+      "location": {
+        "address": "Brandywine Park, Wilmington, Delaware",
+        "latitude": 39.753164,
+        "longitude": -75.547997,
+        "neighbourhood": "Brandywine Park, under a kilometre from downtown Wilmington"
+      },
+      "verified_sources": [
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+      ],
+      "access": "Free, public park or historic ground.",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Delaware's champion honeylocust has a trunk less than half as thick as one we map in Florence. That is not a knock on it. The Delaware Forest Service ranks this tree first among the honeylocusts of the state, at 231 centimetres round, 25 metres tall and a crown averaging about 13 metres across. The Florence tree is 525 centimetres round and 21 metres tall.\n\nSo the champion makes its case upward rather than outward. It is taller than every honey locust we publish: the Florence giant, the Warsaw one at 18 metres, the Cagliari one at 15. A narrow crown on a tall stem is what you are looking at.\n\nThis is also the most central tree in Wilmington on our map. It stands in Brandywine Park, less than a kilometre from downtown, free and open, and the champion eastern hemlock in Brandywine Cemetery is a walk of about 560 metres away. Together they make the short city walk; the bigger trees on this page stand outside the city.\n\nThe ranking dates from November 2024, and a dated observation at the spot within the last four years confirms it was alive then. The register has no age for it and no planting date, and we have not found one either. If you know when it went into the park, tell us.",
+      "how_to_recognise": "You can recognise it by its height for the species, 25 metres on a trunk only 231 centimetres round, with a narrow crown about 13 metres across. It stands in Brandywine Park, about 560 metres from the cemetery hemlock.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wil_007",
+      "name": "The Eastern Hemlock of Brandywine Cemetery",
+      "species": "Eastern Hemlock (Tsuga canadensis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 259,
+      "height_m": 25.6,
+      "location": {
+        "address": "Brandywine Cemetery, 701 Delaware Ave, Wilmington, Delaware",
+        "latitude": 39.750139,
+        "longitude": -75.553197,
+        "neighbourhood": "Brandywine Cemetery, under a kilometre from downtown Wilmington"
+      },
+      "verified_sources": [
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+      ],
+      "access": "Free, public park or historic ground.",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The second-largest eastern hemlock in Delaware grows in a cemetery a few minutes' walk from downtown Wilmington. The Delaware Forest Service measured it at 25.6 metres tall, with a trunk 259 centimetres round and a crown averaging about 13 metres across, and ranked it second in the state in November 2024.\n\nThat trunk is wider than the hemlock we publish in Minneapolis, at the Eloise Butler wildflower garden, which measures 213.\n\nIt is also the tree on this page we are least sure about. For the others, a dated observation at the spot within the last four years shows they were standing recently. For this one we found none. That is not evidence it has gone, only that nobody has posted a dated record of it, and it means the newest confirmation we hold is the register's own ranking. If you walk past 701 Delaware Avenue, tell us whether it is still there; a photograph would settle it.\n\nThe cemetery is free to enter, and Delaware's champion honeylocust stands in Brandywine Park about 560 metres away, so the two make a short walk together. Nobody has dated this hemlock, and the register gives no age. If you know when it was planted, tell us that too.",
+      "how_to_recognise": "You can recognise it as a hemlock, an evergreen conifer with short flat needles, 25.6 metres tall on a trunk 259 centimetres round. It stands in Brandywine Cemetery at 701 Delaware Avenue, at the state register's point.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wil_008",
+      "name": "The Green Ash of Hagley Museum",
+      "species": "Green Ash (Fraxinus pennsylvanica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 422,
+      "height_m": 42.7,
+      "location": {
+        "address": "Hagley Museum and Library, near Wilmington, New Castle County, Delaware",
+        "latitude": 39.77921,
+        "longitude": -75.57346,
+        "neighbourhood": "Hagley Museum, about 4 km northwest of downtown Wilmington"
+      },
+      "verified_sources": [
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+      ],
+      "access": "Paid entry: inside the museum and garden grounds.",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The most remarkable thing about Delaware's champion green ash is that it is still standing. The emerald ash borer, a beetle from Asia, has killed most of the ash trees in Delaware since the 2010s, and this one, at Hagley, was still alive when the Delaware Forest Service ranked it first in the state at the end of October 2024.\n\nIt is a big tree by any measure: 42.7 metres tall, a crown averaging about 31 metres across, and a trunk 422 centimetres round. The only other green ash we publish with a measured trunk, in Barcelona, is 320 centimetres. For a species most people know as a modest street tree, 42 metres is a lot of ash.\n\nWe hold one more sign of life: a dated observation at the spot within the last four years. Beyond that we cannot vouch for it, and with the borer in the state, we would rather say so plainly than imply it is safe. If you visit Hagley, tell us whether the tree is still standing and whether the crown looks healthy. A photograph would help more than anything.\n\nIt grows on the grounds of Hagley, the museum estate about four kilometres northwest of downtown Wilmington, outside the city. Entry is paid. The register gives no age and we have found no planting date, so if you know its history, tell us that as well.",
+      "how_to_recognise": "You can recognise it by its height, 42.7 metres, over a trunk 422 centimetres round, the champion green ash of Delaware. It stands on the Hagley museum grounds, at the state register's point.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "wil_009",
+      "name": "The Dawn Redwood of Winterthur",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 556,
+      "height_m": 33.5,
+      "location": {
+        "address": "Winterthur Museum, Garden and Library, Winterthur, Delaware",
+        "latitude": 39.807233,
+        "longitude": -75.596339,
+        "neighbourhood": "Winterthur, about 8 km northwest of downtown Wilmington"
+      },
+      "verified_sources": [
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+      ],
+      "access": "Paid entry: inside the museum and garden grounds.",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tree grew a trunk 556 centimetres round in under eighty years. It cannot be older than that: the dawn redwood was known to botanists only as a fossil until the 1940s, when living trees were found in central China, and seed first reached gardens outside China in 1948. Every dawn redwood in America dates from then or later.\n\nThe Delaware Forest Service ranks this one first in the state: 33.5 metres tall, a crown averaging about 22 metres across, and that trunk. It holds up against the best we map anywhere. The dawn redwood by the pond in Bad Homburg, Germany, is a little thicker at 580 centimetres but stands 28 metres, so this one is more than five metres taller. Frankfurt's botanical garden tree measures 572 round. The Hoyt Arboretum tree in Portland, Oregon, is 329.\n\nIt stands on the Winterthur estate, the museum and garden about eight kilometres northwest of downtown Wilmington, outside the city. Entry is paid. About 400 metres away on the same grounds is Delaware's champion tulip tree, 50.9 metres tall, so one visit takes in two state records.\n\nThe register ranked it in November 2024, and a dated observation at the spot within the last four years confirms it was alive then. What we do not know is its planting year. If you know it, tell us. And come in late autumn, when this conifer turns rust and drops every needle.",
+      "how_to_recognise": "You can recognise it as a conifer that goes bare in winter, 33.5 metres tall on a trunk 556 centimetres round. It stands on the Winterthur grounds about 400 metres from the champion tulip tree.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the needles turn rust and fall, which is not what a conifer is supposed to do"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}
