@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-05 Munich +7: Dachau limes and oaks, Puch, Sauerlach, Ingelsberg
+
+Visits last 7 days: 1457. Shelf was empty, so Munich was verified again, this time from the Bayern Wikipedia list of notable trees plus Commons categories instead of the exhausted register join: three flagged trees (the Edigna lime of Puch, the seven-stemmed lime of Sauerlach, the Ingelsberg ash). A write pass then merged those with four Dachau-area trees held since yesterday (muc_056, 059, 060, 061), each now carrying a Commons photograph that was looked at before attaching, plus a German overlay. Munich goes from 52 to 59. muc_058 stays held (its only photo is mostly parked cars, approximate pin). muc_059's access is unconfirmed and the story says so. Edigna's lime is beyond the 30 minute line and the page says that. Preflight 0 problems. No command refused.
+
 ## 2026-10-05 Later attempt in the window: stale claims released, Washington DC scouted
 
 Dresden and Frankfurt were claimed by an earlier attempt but both are already published, so the claims were released and nothing dispatched. READY is 0. scout_next.py named Washington DC (#112): DC Open Data holds no heritage-tree point dataset, only a StoryMap, so the verdict is `stalled` with Casey Trees and DDOT layers as next angles. No trees shipped; no command refused.
