@@ -3132,3 +3132,17 @@ Reference: Google Maps "Join Local Guides" opens a sheet that says what the role
 ## No numbers on the tree list (2026-10-05)
 
 Hidde: "zijn die nummers echt nodig? mss subtieler?" AllTrails, Google Maps and Airbnb number no result list, the pins on our map carry no numbers, and the app's card never had one, so the number pointed at nothing and took the title's width. Removed; the hanging indent of the same morning goes with it, because there is no marker left to hang from. The selected card on the desktop split wears a moss border rather than a bar inside its rounded corner.
+
+## The desktop bar when signed out: "Log in" in words (2026-10-06, looked up)
+
+**Asked because** Hidde found no "log in" anywhere on the desktop site, and applied to be an ambassador three times while signed in without knowing it: the bar showed the same avatar either way, and its menu read Saved trees and Your account in both states.
+
+**What they do, seen in the browser the same day, signed out:**
+
+| Product | Desktop bar, signed out | Signed in |
+|---|---|---|
+| AllTrails | text link "Log in" at the far right, beside "Get the app" | avatar with menu |
+| komoot | a filled button "Login or Signup" beside "App" | avatar with menu |
+| Airbnb | avatar plus menu icon; the menu opens on "Log in / Sign up" | the same icon, the menu shows your things |
+
+**What we do:** the AllTrails and komoot shape. Signed out the bar shows a "Sign in" pill (ui-strings `signIn`, in every language) that opens the sign-in sheet in place; signed in it shows the avatar menu as before. One CSS swap on html[data-signed-in], set by the inline painter before first paint. The phone sheet already had its own "Sign in" pill at the foot and is unchanged.

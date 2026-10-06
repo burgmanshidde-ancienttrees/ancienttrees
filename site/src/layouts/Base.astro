@@ -237,6 +237,19 @@ const canonicalHref = noindexed ? `https://ancienttrees.app${cleanPath(Astro.url
         </div>
       </details>
     )}
+    {/* SIGNED OUT, the desktop bar says so in words (Hidde, 2026-10-06: "its
+        weird we dont have log in somewhere"). The avatar alone looked the same
+        signed in or out, so he applied to be an ambassador three times while
+        signed in without knowing it. AllTrails prints "Log in" and komoot a
+        "Login or Signup" button in the bar when you are signed out, and the
+        avatar menu only once you are in (CONVENTIONS.md 2026-10-06). The href
+        does the work, as with the phone sheet's pill: signin-js opens the
+        sign-in sheet in place for any /account link while signed out. CSS
+        swaps the two on html[data-signed-in], which the inline painter below
+        sets before first paint from the stored session. */}
+    {AUTH_ENABLED && (
+      <a href="/account" class="bar-signin only-desktop">{t.signIn}</a>
+    )}
     {/* The app pill stands in the bar at EVERY width (Hidde, 2026-09-04: "zullen
         we iig de download app knop uit het menu halen en altijd zichtbaar",
         with the correction that decides where it matters: "volgens mij doet

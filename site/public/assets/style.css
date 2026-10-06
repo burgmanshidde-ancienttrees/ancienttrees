@@ -139,6 +139,14 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .nav-acct .acct-avatar svg { width: 18px; height: 18px; }
 .nav-acct .acct-word { position: absolute; width: 1px; height: 1px; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap; }
+/* Signed out: "Sign in" in words; signed in: the avatar menu (2026-10-06,
+   AllTrails and komoot, CONVENTIONS.md). Desktop only; the phone sheet has its
+   own pill. */
+.bar-signin { font-size: 13px; font-weight: 700; color: var(--ink); text-decoration: none;
+  padding: 7px 12px; border-radius: 999px; border: 1px solid var(--cream-dark); background: var(--surface); }
+.bar-signin:hover { background: var(--cream-dark); }
+html[data-signed-in="1"] .bar-signin { display: none; }
+html:not([data-signed-in="1"]) .nav-acct.only-desktop { display: none; }
 .nav-drop summary { display: inline-flex; align-items: center; font-size: 13px; font-weight: 700; color: var(--ink); cursor: pointer; list-style: none; }
 .nav-drop summary::-webkit-details-marker { display: none; }
 .nav-drop summary::after { content: " ▾"; font-size: 10px; }
