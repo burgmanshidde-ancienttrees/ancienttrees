@@ -2071,6 +2071,44 @@ def check_robots_is_the_file_we_wrote():
     return []
 
 
+def check_people_s_addresses_stay_out_of_the_repo():
+    """The repository is PUBLIC, and it carried 600+ email addresses of people
+    we wrote to, their replies and the waitlist (found 2026-10-06). They live
+    in Supabase now (scripts/private_store.py). This refuses a push that puts
+    one of those files back under git, or a new draft in drafts/ carrying an
+    address that is not our own. Removing it needs Hidde."""
+    import fnmatch
+    import subprocess
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import private_store
+    if not private_store.migrated():
+        return []
+    try:
+        tracked = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True,
+                                 text=True, timeout=30).stdout.split("\n")
+    except Exception:
+        return []
+    out = []
+    for f in tracked:
+        if any(fnmatch.fnmatch(f, pat) for pat in private_store.MOVED):
+            out.append(f"{f}: holds people's addresses and is tracked again; it belongs in Supabase "
+                       "(scripts/private_store.py push, then git rm --cached)")
+    ours = re.compile(r"@(ancienttrees\.app|users\.noreply\.github\.com|example\.(com|org))$", re.I)
+    addr = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}")
+    for f in tracked:
+        if not f.startswith("drafts/") or not f.endswith((".md", ".json", ".txt")):
+            continue
+        try:
+            text = (ROOT / f).read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        found = sorted({m.group(0) for m in addr.finditer(text) if not ours.search(m.group(0))})
+        if found:
+            out.append(f"{f}: carries {len(found)} address(es) in a public repository; keep mail drafts "
+                       "in drafts/batches/ (in Supabase) or add the file to MOVED in scripts/private_store.py")
+    return out
+
+
 def check_no_personal_address():
     """The fourteenth ratchet check, from 2026-09-03.
 
@@ -2566,6 +2604,7 @@ def main():
         check_a_thumbnail_is_actually_a_thumbnail,
         check_every_feed_field_reaches_the_app,
         check_no_personal_address,
+        check_people_s_addresses_stay_out_of_the_repo,
         check_icons_are_drawn,
         check_css_braces_balance,
         check_hidden_means_hidden,
@@ -2596,6 +2635,7 @@ def main():
     failures = []
     failures += check_scripts_are_valid_python()
     failures += check_auth_corpus_agreement()
+    failures += check_people_s_addresses_stay_out_of_the_repo()
     failures += check_icons_are_drawn()
     failures += check_photo_orientation()
     failures += check_photo_resolution()

@@ -42,7 +42,11 @@ jobs:
       # Always, whatever the confirmation says: the dry run prints who would be
       # written to, and it is the last chance to read that list in the log.
       - name: Dry run
-        run: python3 scripts/outreach_send.py "${{ inputs.batch }}"
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          python3 scripts/private_store.py pull
+          python3 scripts/outreach_send.py "${{ inputs.batch }}"
 
       - name: Send
         if: inputs.confirm == 'SEND'
@@ -58,12 +62,6 @@ jobs:
       # address the never-mail-twice check will happily mail again tomorrow.
       - name: Record what went out
         if: inputs.confirm == 'SEND'
-        run: |
-          git config user.name "burgmanshidde-ancienttrees"
-          git config user.email "304936064+burgmanshidde-ancienttrees@users.noreply.github.com"
-          git add data/outreach-sent.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Waitlist mail sent: record the addresses"
-            git -c rebase.autoStash=true pull --rebase
-            git push
-          fi
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python3 scripts/private_store.py push

@@ -237,6 +237,10 @@ jobs:
           OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
           OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
         run: |
+          # People's addresses live in Supabase, not in this public repository
+          # (scripts/private_store.py, 2026-10-06). No pull, no send: an empty
+          # log would make every address look new.
+          python3 scripts/private_store.py pull
           python3 scripts/contributor_reply.py --send
           # The standard first contact (Hidde, 2026-10-02): a reader whose
           # photograph is live in a place with no ambassador is invited once,
@@ -245,10 +249,11 @@ jobs:
           # The open seat (2026-10-04): somebody who pressed "Become the
           # ambassador" on a city page gets the editor questions once.
           python3 scripts/ambassador.py --requests --send
-          if ! git diff --quiet data/outreach-sent.json data/ambassadors.json; then
+          python3 scripts/private_store.py push
+          if ! git diff --quiet data/ambassadors.json; then
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"
-            git add data/outreach-sent.json data/ambassadors.json
+            git add data/ambassadors.json
             git commit -m "Contributor replies and ambassador invitations sent, log updated"
             git push
           fi
@@ -262,20 +267,16 @@ jobs:
       - name: Continue an approved outreach batch
         continue-on-error: true
         env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           OUTREACH_SMTP_HOST: ${{ secrets.OUTREACH_SMTP_HOST }}
           OUTREACH_SMTP_PORT: ${{ secrets.OUTREACH_SMTP_PORT }}
           OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
           OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
           OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
         run: |
+          python3 scripts/private_store.py pull
           python3 scripts/outreach_continue.py --send
-          if ! git diff --quiet data/outreach-sent.json drafts/batches; then
-            git config user.name "claude[bot]"
-            git config user.email "41898282+claude[bot]@users.noreply.github.com"
-            git add data/outreach-sent.json drafts/batches
-            git commit -m "Outreach batch continued, log updated"
-            git push
-          fi
+          python3 scripts/private_store.py push
 
       # The per-page lastmod record (scripts/lastmod.py): deploy.yml computes
       # it before every build and does not commit it, so this is where the

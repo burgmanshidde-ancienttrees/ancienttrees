@@ -150,7 +150,10 @@ jobs:
           OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
           OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
           OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
-        run: python3 scripts/contributor_reply.py --send
+        run: |
+          python3 scripts/private_store.py pull
+          python3 scripts/contributor_reply.py --send
+          python3 scripts/private_store.py push
 
       - name: Commit if there is a new entry
         run: |
@@ -171,9 +174,9 @@ jobs:
           # were never fetched at all, while last_seen on the two live links sat
           # frozen at the day they were found.
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json \
-            data/outreach-sent.json data/cities data/backlinks.json \
+            data/cities data/backlinks.json \
             data/city-coords.json data/research/*-register-candidates.json 2>/dev/null || \
-            git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json data/city-coords.json data/outreach-sent.json data/backlinks.json
+            git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json data/city-coords.json data/backlinks.json
           if git diff --cached --quiet; then
             echo "No new entry today."
           else

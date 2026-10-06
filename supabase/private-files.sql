@@ -1,5 +1,3 @@
-supa
--- private-files.sql (2026-10-06)
 -- Private working files: outreach logs, contacts and mail drafts.
 --
 -- Hidde, 2026-10-06, on finding that the public GitHub repository carried

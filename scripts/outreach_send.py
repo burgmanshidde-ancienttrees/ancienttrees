@@ -83,6 +83,14 @@ def main():
         return 1
     batch_path = sys.argv[1]
     really = "--send" in sys.argv
+    # The log lives in Supabase since 2026-10-06 (scripts/private_store.py).
+    # A session on the Mac merges and fetches it first, so a send made by a
+    # night run an hour ago is in the never-mail-twice check; a run in CI has
+    # already pulled. If that fails, nothing is sent.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import private_store
+    if really and not os.environ.get("CI") and private_store.migrated():
+        private_store.sync()
     batch = json.load(open(batch_path))
     sent_log = load_sent()
     today = datetime.date.today().isoformat()
@@ -252,4 +260,9 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    code = main()
+    if "--send" in sys.argv and not os.environ.get("CI"):
+        import private_store
+        if private_store.migrated():
+            private_store.push()
+    sys.exit(code)
