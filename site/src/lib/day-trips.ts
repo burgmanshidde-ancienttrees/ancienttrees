@@ -110,6 +110,17 @@ export function dayTrips(city: string, trees: TreeLike[]): Map<string, DayTrip> 
       dir: compass(centre, [lat, lng]),
     };
     for (const t of g) out.set(t.id, label);
+    // A tree in the SAME named place joins its outing even when it stands
+    // just inside the distance line: Fortunegen is in Jaegersborg Dyrehave
+    // with six other day-trip oaks, and listing it under the city sent the
+    // map's opening frame to the deer park (Hidde, 2026-10-06). A shared
+    // place name, not proximity, so a suburb tree nearby stays in town.
+    for (const t of pts) {
+      if (out.has(t.id) || placeOf(t.location?.neighbourhood, t.location?.address) !== place) continue;
+      const addr = norm(`${t.location?.address ?? ""} ${t.location?.neighbourhood ?? ""}`);
+      if (names.some((n) => addr.includes(n))) continue;
+      out.set(t.id, label);
+    }
   }
   return out;
 }
