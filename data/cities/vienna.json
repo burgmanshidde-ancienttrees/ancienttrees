@@ -58,7 +58,12 @@
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 726, protected since 20 October 1987. Age figure is the 1987 survey's '>250 years' projected forward to 2026; no more recent measurement has surfaced. Location upgraded to confirmed: the approved photo's own Commons geolocation data (48°12'27.15\"N 16°22'27.82\"E, added by the photographer, Vienna monument specialist GuentherZ) places the tree itself, about 80m from the previous courtyard estimate.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, two and a half metres round when it was measured in 1987, under a crown ten metres across. It stands alone in the Fähnrichhof courtyard, through the passage from Blutgasse 3."
+      "how_to_recognise": "You can recognise it by the trunk, two and a half metres round when it was measured in 1987, under a crown ten metres across. It stands alone in the Fähnrichhof courtyard, through the passage from Blutgasse 3.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257855",
+        "url": "https://www.geschichtewiki.wien.gv.at/Naturdenkmal_726"
+      },
+      "girth_cm": 250
     },
     {
       "id": "vie_002",
@@ -97,7 +102,12 @@
       "curation_status": "flagged",
       "notes": "Replaces the dead Stock im Eisen relic on 2026-07-27 per Hidde's 'we doen niet aan dode bomen' rule (CLAUDE.md Step 1); id vie_002 reused so the existing URL keeps resolving, same precedent as Barcelona's bcn_008 swap. Naturdenkmal Nr. 569, protected since 3 July 1973 (Vienna's own Naturdenkmal list). The circa-1900 planting date and Heinrich Braun attribution are corroborated across independent secondary sources (cityabc.at's Stadtpark walking-route page and general web search) but not yet traced to a primary municipal record, so flagged. Photo resolved 2026-07-28: a prior pass found only GuentherZ's companion photo of the tree's Naturdenkmal plaque and left the entry honestly missing rather than use a plaque photo to stand in for the tree; a wider same-photographer search this pass found the tree photo itself from the same 2010-02-27 shoot (three sequential files: 0152/0153 the tree, 0155 the plaque), CC BY 3.0. Viewed both directly: 0152 shows a mature bare-winter tree above Stadtpark's grand facades, and 0155 shows the plaque itself nailed to the bark reading \"WIENER NATURDENKMAL NR: 569 GINKGO BILOBA\" plus a second plaque \"FACHERBLATTERBAUM Ginkgo biloba\", the exact German nickname this entry's own story already quotes, taken minutes apart in the same sequence, about as strong an identity match as a citizen photo can carry. Approved on 0152 as the representative tree photo. Pin upgraded to confirmed 2026-07-28: German Wikipedia's own Liste der Naturdenkmäler in Wien/Innere Stadt carries this exact tree's own surveyed coordinate (Breitengrad/Längengrad 48.206070/16.380028, Grundstücksnummer 1343/1) read directly from the article's raw wikitext template rather than a rendered summary, replacing the Schubert-monument landmark anchor previously used. The same table row's own photo field cites GuentherZ's file 0153 from the same 2010-02-27 sequence as this entry's approved photo, independently corroborating that photo as the correct tree.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the plaque bolted to the trunk naming it a Fächerblätterbaum, and by the fan-shaped leaves that all turn gold at once in autumn. It stands beside the marble statue of Franz Schubert."
+      "how_to_recognise": "You can recognise it by the plaque bolted to the trunk naming it a Fächerblätterbaum, and by the fan-shaped leaves that all turn gold at once in autumn. It stands beside the marble statue of Franz Schubert.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257652",
+        "url": null
+      },
+      "girth_cm": 295
     },
     {
       "id": "vie_003",
@@ -178,7 +188,11 @@
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 110, protected since 4 February 1939. Pin and location corrected 2026-07-27: the stored coordinates and \"near the Wagenburg, Hietzinger Allee\" description (originally cross-checked only against monumentaltrees.com, used for verification not as a source) were about 700m from the tree's actual position. Vienna's own Naturdenkmal register, published as a table on German Wikipedia's List of Natural Monuments in Hietzing, gives this specific entry (Nr. 110, Ginkgo biloba, imported 1781, oldest in Austria, protected since 4 February 1939, an exact match on every fact) individual coordinates placing it in Schönbrunn's Botanical Garden, not near the Wagenburg. Moved to that point and corrected the story/transport text to match.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, roughly five metres round under a crown about twenty metres tall, and by the seeds a grafted female branch drops on an otherwise male tree. It stands in the Botanical Garden, on the park's east side."
+      "how_to_recognise": "You can recognise it by the trunk, roughly five metres round under a crown about twenty metres tall, and by the seeds a grafted female branch drops on an otherwise male tree. It stands in the Botanical Garden, on the park's east side.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3247691",
+        "url": null
+      }
     },
     {
       "id": "vie_005",
@@ -211,7 +225,12 @@
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 9, protected since 22 December 1936. Coordinates from the Wikimedia Commons category page for this natural monument.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the memorial stone at its base naming it the Jacquin-Platane, and by the partly hollow trunk, roughly six metres round. It stands on the Rennweg pavement, just outside the Botanical Institute fence."
+      "how_to_recognise": "You can recognise it by the memorial stone at its base naming it the Jacquin-Platane, and by the partly hollow trunk, roughly six metres round. It stands on the Rennweg pavement, just outside the Botanical Institute fence.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3247601",
+        "url": null
+      },
+      "girth_cm": 638
     },
     {
       "id": "vie_006",
@@ -244,7 +263,12 @@
       "curation_status": "flagged",
       "notes": "One of three plane trees in Rathauspark individually registered as natural monuments (Nr. 564, 566, 567), protected since 3 July 1973; this entry covers the specific tree identified by the park's own registry as the oldest, tree catalogue number 252. Location upgraded to confirmed: the approved photo's own Commons geolocation data (48°12'36.34\"N 16°21'33.07\"E, added by the photographer, Vienna monument specialist GuentherZ) places the tree itself, about 150m from the previous park-address estimate.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, six metres round under a crown thirty metres tall, listed in the city register as the park's oldest tree. It stands at the front of the park, facing Rathausplatz."
+      "how_to_recognise": "You can recognise it by the trunk, six metres round under a crown thirty metres tall, listed in the city register as the park's oldest tree. It stands at the front of the park, facing Rathausplatz.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257649",
+        "url": null
+      },
+      "girth_cm": 534
     },
     {
       "id": "vie_007",
@@ -278,7 +302,13 @@
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 376 (girth 3.6 m, height and crown 20 m each) is confirmed by two independent sources. The '200 years old' figure and the Empress Elisabeth nickname story appear only in secondary tourism sources, not in either primary source, so age is flagged as a single-source estimate. Location upgraded to confirmed: baumkunde.de (a German tree register site) gives this tree's own surveyed geo-coordinates, tied to its Naturdenkmal 376 designation, about 150m from the previous fountain-area estimate.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the crown, twenty metres across in every direction on a trunk about three and a half metres round. It stands near the fountain at the heart of the Volksgarten, close to the Theseus Temple."
+      "how_to_recognise": "You can recognise it by the crown, twenty metres across in every direction on a trunk about three and a half metres round. It stands near the fountain at the heart of the Volksgarten, close to the Theseus Temple.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257402",
+        "url": null
+      },
+      "girth_cm": 360,
+      "height_m": 20
     },
     {
       "id": "vie_008",
@@ -319,7 +349,12 @@
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 846. Girth (4.28 m) and crown diameter (approx. 45 m) are confirmed by two independent sources; age is not documented anywhere found and is estimated from size only, so it is flagged. Coordinates taken from the EXIF geotag on the CC BY-SA 4.0 photo of this specific tree.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the crown, roughly 45 metres across on a trunk of only 4.28 metres, low and spreading rather than tall. It stands alone in the open on the Sulzwiese meadow in the Grüner Prater."
+      "how_to_recognise": "You can recognise it by the crown, roughly 45 metres across on a trunk of only 4.28 metres, low and spreading rather than tall. It stands alone in the open on the Sulzwiese meadow in the Grüner Prater.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257947",
+        "url": null
+      },
+      "girth_cm": 428
     },
     {
       "id": "vie_009",
@@ -391,7 +426,11 @@
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 817, protected since 25 January 2010, covering both the ginkgo and the giant sequoia at this address as a single designation. Ginkgo age ('around 100 years') is as stated at the time of the 2010 survey; no updated measurement has surfaced, so current age is an estimate projected forward.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them as a pair: a ginkgo 24 metres tall on a 2.35 metre trunk beside a giant sequoia of 27 metres whose 3.75 metre trunk leans and curves as it climbs. They stand together in the Sternwartepark."
+      "how_to_recognise": "You can recognise them as a pair: a ginkgo 24 metres tall on a 2.35 metre trunk beside a giant sequoia of 27 metres whose 3.75 metre trunk leans and curves as it climbs. They stand together in the Sternwartepark.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257958",
+        "url": null
+      }
     },
     {
       "id": "vie_011",
@@ -502,7 +541,11 @@
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 562, protected 3 July 1973 (Vienna monument register, register_id 3257648, 48.210209/16.359763). Baumkataster BAUM_ID 146749 at 48.2101646/16.3598198, 6.5 m away: PFLANZJAHR 1873, girth 600 cm, height class 5 (21-25 m), crown class 8 (>21 m). The 'thickest trunk in the park' claim is checked, not asserted: a query of all 449 Baumkataster records with OBJEKT_STRASSE '01., Rathauspark' returns 600 cm here against 597, 534 and 526 for the three protected planes, so it is the maximum. It does not conflict with vie_006's claim to be the park's OLDEST tree, which is a different superlative, but see data/research/vienna-extra.md: the Baumkataster dates vie_006 to 1876, not the 1783 that entry's story asserts, and that needs re-checking separately. Species string uses the corpus's existing common name 'Fern-leaved Beech' (Cordoba carries a Fagus sylvatica f. asplenifolia under it) with the cultivar name the Vienna registers actually use. Photo viewed directly at 960x1440 before approval: daylight, colour, the tree fills the frame, the buttressed base and the limb structure both readable, the Naturdenkmal plaque visible on a limb at upper right, and the centre band of the frame is trunk, so it survives the wide card crop.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the leaves, shredded into narrow ribbons so the canopy reads feathery, and by the trunk, six metres round, splitting at head height into a fused mass of grey limbs. It stands on the south lawn."
+      "how_to_recognise": "You can recognise it by the leaves, shredded into narrow ribbons so the canopy reads feathery, and by the trunk, six metres round, splitting at head height into a fused mass of grey limbs. It stands on the south lawn.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257648",
+        "url": null
+      }
     },
     {
       "id": "vie_014",
@@ -543,7 +586,11 @@
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 477, protected 5 November 1956 'aufgrund ihrer Seltenheit' (Vienna monument register, register_id 3257543, listed under the address Schmerlingplatz, 48.206851/16.359083). Baumkataster BAUM_ID 225310 at 48.20679769/16.35896258, 10.7 m away, the widest offset of any match in this pass: PFLANZJAHR 1940, girth 460 cm, height class 2 (6-10 m), crown class 6 (16-18 m). AGE IS FLAGGED, and this is the one place in this batch where the two departments do not sit comfortably together: a tree planted in 1940 would have been sixteen years old when the city declared it a natural monument in 1956. That is not impossible, since the decree's stated ground is the species' rarity rather than the tree's age, but 460 cm of fused base in 86 years is fast even for a multi-stemmed parrotia, so the age range here is deliberately open at the top and no precise figure is claimed. The girth is a base measurement across fused stems, not a single trunk, which the story says in plain words rather than in a number. Photo viewed directly at 960x643 before approval: daylight, colour, correctly exposed, the tree fills the frame with crown and base both readable, centre band is tree. Overhead tram wires cross the upper third, which is honest to the place.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by being twice as wide as it is tall, a low knot of leaning stems peeling in grey, green and fawn plates, 460 centimetres round at the base. It stands on the grass wedge beside the Justizpalast."
+      "how_to_recognise": "You can recognise it by being twice as wide as it is tall, a low knot of leaning stems peeling in grey, green and fawn plates, 460 centimetres round at the base. It stands on the grass wedge beside the Justizpalast.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257543",
+        "url": null
+      }
     },
     {
       "id": "vie_015",
@@ -622,7 +669,11 @@
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 276, protected 16 December 1941 (Vienna monument register, register_id 3257446, 48.203669/16.379102). Baumkataster BAUM_ID 193786 at the same point to within 0.0 m: PFLANZJAHR 1860, girth 444 cm, height class 5 (21-25 m), crown class 6 (16-18 m). Note the Baumkataster still files the species under the old name Sophora japonica; the corpus canonical name is 'Japanese Pagoda Tree (Styphnolobium japonicum)', which seven other trees on the site already use. A second, much younger pagoda tree (BAUM_ID 193723, 1938, 238 cm) stands 18 m away and is not the monument. The 1860-versus-1862 point is stated as the tension it is rather than resolved, because the register's planting year is the city's own figure and no planting document has been seen. Photo viewed directly at 960x1387 before approval: daylight, colour, blue sky, the tree fills the frame from root flare to crown, the low fork clearly readable, a small white stone monument behind it for scale. Portrait format, but the tree is centred so the wide card crop still lands on trunk and lower crown.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, 444 centimetres round, forking low and then leaning away from itself in two directions at once. It stands at the southern end of the park, near the Johannesgasse entrance."
+      "how_to_recognise": "You can recognise it by the trunk, 444 centimetres round, forking low and then leaning away from itself in two directions at once. It stands at the southern end of the park, near the Johannesgasse entrance.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257446",
+        "url": null
+      }
     },
     {
       "id": "vie_017",
@@ -662,7 +713,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the pink flowers pushing straight out of the old wood of the trunk in spring, and by the ten old stems with young shoots between them. It stands in the second courtyard, among the cafe tables."
+      "how_to_recognise": "You can recognise it by the pink flowers pushing straight out of the old wood of the trunk in spring, and by the ten old stems with young shoots between them. It stands in the second courtyard, among the cafe tables.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257899",
+        "url": null
+      }
     },
     {
       "id": "vie_018",
@@ -863,7 +918,8 @@
         "width": 500,
         "height": 375
       },
-      "how_to_recognise": "You can recognise it by the trunk, 434 centimetres round on a tree planted in 1928. It stands on Dr. Karl Lueger-Platz, the only protected tree on the stretch of Ring between Stubentor and the Stadtpark."
+      "how_to_recognise": "You can recognise it by the trunk, 434 centimetres round on a tree planted in 1928. It stands on Dr. Karl Lueger-Platz, the only protected tree on the stretch of Ring between Stubentor and the Stadtpark.",
+      "girth_cm": 434
     },
     {
       "id": "vie_025",

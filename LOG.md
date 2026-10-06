@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run) - enrichment: Vienna
+
+- Rung: enrichment first per prepare.py (vienna, 37 gaps on 18 indexed trees). Verify agent filled 13 trees: Naturdenkmale (Stadt Wien, MA 22) register ids matched by species and distance (within ~15 m of our pins), a GeschichteWiki record URL for vie_001, girth on vie_001/002/005/006/007/008/023, height on vie_007. Not filled: girth for six trees because the data.wien.gv.at Baumkataster WFS hung on every request after the first batch (candidate for data/fetch-blocklist.json), and no season set (plane species files have no striking moment). vie_009's sequoias have no individual register row. Preflight 0 problems. No new trees. 7-day visits: 1,910 visits, 2,160 page views. Refused: rm of temp files in out/enrich/ (harmless, runner is discarded).
+
 ## 2026-10-06 (night run, sixth attempt) - enrichment: Malaga
 
 - Enrich Malaga (5 indexed trees, 4 improved): La Concepcion olive got girth 330 cm (garden's own page, height of measurement unstated, flagged) and a real access line with prices, hours and free slots; the araucaria got height 46 m; El Barrilito and the Picasso Gardens fig got heights from the council's TreeTags release. No per-tree register record found (Junta catalogue not searched); Alameda ficus left alone (release figure is for another specimen); no season set. Preflight 0 problems. No new trees.
