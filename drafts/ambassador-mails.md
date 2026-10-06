@@ -138,3 +138,14 @@ Would you be up for it? And if a tree you have written about is still missing he
 Thanks,
 Hidde
 ```
+
+## When somebody says yes (standard, 2026-10-06)
+
+Record them with `python3 scripts/ambassador.py --grant-named "<Name>" <slug>` and
+`--link-address "<Name>" <slug> <the address they wrote from>`. The badge then
+finds their account by itself the day they sign in with that address, on the
+website or in the app (the knock runs `--sync`). The reply carries one line for it:
+
+> Your name is on the [city] page now. If you sign in on ancienttrees.app or in
+> the app with this email address, you'll see the ambassador badge on your own
+> profile too.

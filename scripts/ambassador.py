@@ -14,6 +14,7 @@ CLAUDE.md ("Ambassadors"); this script only records the answer.
     python3 scripts/ambassador.py --revoke <user_id> <place_slug>
     python3 scripts/ambassador.py --sync
     python3 scripts/ambassador.py --grant-named "<Name>" <place_slug>
+    python3 scripts/ambassador.py --link-address "<Name>" <place_slug> <address>
     python3 scripts/ambassador.py --invite-scan [--send]
     python3 scripts/ambassador.py --requests [--send]
 
@@ -144,6 +145,67 @@ def grant_named(name, slug):
     print(f"ambassador: {name} is named on /{slug} as the ambassador of {pname} (no account yet)")
 
 
+def _hmac(address):
+    """An address, keyed with the service key, so data/ambassadors.json (a
+    PUBLIC file) can recognise an ambassador's sign-in without holding the
+    address itself. Without the key the value says nothing."""
+    import hashlib
+    import hmac
+    return hmac.new(KEY.encode(), address.strip().lower().encode(), hashlib.sha256).hexdigest()
+
+
+def link_address(name, slug, address):
+    """Remember the address a mail ambassador wrote from, so that the day
+    they sign in with it the badge finds them by itself (Hidde, 2026-10-06:
+    "is the ambassador login flow done btw?"). Only the keyed hash is stored."""
+    if not KEY:
+        sys.exit("ambassador --link-address needs SUPABASE_SERVICE_KEY (source ~/.ancienttrees-supabase.env)")
+    with open(FILE, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    for e in doc["ambassadors"]:
+        if e.get("user_id") is None and e["place_slug"] == slug and e.get("display_name") == name:
+            hs = set(e.get("address_hmac") or [])
+            hs.add(_hmac(address))
+            e["address_hmac"] = sorted(hs)
+            break
+    else:
+        sys.exit(f"ambassador: no named ambassador '{name}' for {slug}; --grant-named first")
+    with open(FILE, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+    print(f"ambassador: {name} ({slug}) will be linked the day they sign in with that address")
+
+
+def _link_signed_in(doc):
+    """Named mail ambassadors who now have an account: give the account the
+    badge (a table row, public, because they said yes by mail) and remember
+    the link. Returns True when something changed."""
+    want = {h: e for e in doc.get("ambassadors", []) if e.get("user_id") is None
+            for h in e.get("address_hmac") or [] if not e.get("linked_user_id")}
+    if not want:
+        return False
+    changed, page = False, 1
+    while True:
+        res = _req(f"/auth/v1/admin/users?per_page=1000&page={page}") or {}
+        users = res.get("users") if isinstance(res, dict) else res
+        if not users:
+            break
+        for u in users:
+            e = want.get(_hmac(u.get("email") or ""))
+            if e and not e.get("linked_user_id"):
+                _req("/rest/v1/ambassadors?on_conflict=user_id,place_slug", "POST",
+                     [{"user_id": u["id"], "place_slug": e["place_slug"], "place_name": e["place_name"],
+                       "public": True, "since": e.get("since") or datetime.date.today().isoformat()}],
+                     prefer="resolution=merge-duplicates,return=minimal")
+                e["linked_user_id"] = u["id"]
+                changed = True
+                print(f"ambassador: {e['display_name']} signed in; their account now carries the {e['place_name']} badge")
+        if len(users) < 1000:
+            break
+        page += 1
+    return changed
+
+
 def sync():
     """data/ambassadors.json from the table. The file carries a display name
     ONLY for a row whose person consented (public), and that name is read
@@ -151,6 +213,16 @@ def sync():
     if not KEY:
         print("ambassador --sync: no SUPABASE_SERVICE_KEY, file left as it is")
         return 0
+    with open(FILE, encoding="utf-8") as fh:
+        before = json.load(fh)
+    try:
+        linked = _link_signed_in(before)
+    except urllib.error.HTTPError:
+        linked = False
+    if linked:
+        with open(FILE, "w", encoding="utf-8") as fh:
+            json.dump(before, fh, indent=2, ensure_ascii=False)
+            fh.write("\n")
     try:
         table = rows()
     except urllib.error.HTTPError as e:
@@ -164,6 +236,14 @@ def sync():
         q = ",".join(public_ids)
         for p in _req(f"/rest/v1/profiles?select=user_id,display_name&user_id=in.({q})") or []:
             names[p["user_id"]] = p.get("display_name")
+    with open(FILE, encoding="utf-8") as fh:
+        doc0 = json.load(fh)
+    linked_names = {e["linked_user_id"]: e.get("display_name") for e in doc0.get("ambassadors", [])
+                    if e.get("linked_user_id")}
+    for uid, nm in linked_names.items():
+        names.setdefault(uid, nm)
+        if not names.get(uid):
+            names[uid] = nm
     out = []
     for r in table:
         entry = {"user_id": r["user_id"], "place_slug": r["place_slug"],
@@ -180,7 +260,12 @@ def sync():
     with open(FILE, encoding="utf-8") as fh:
         doc = json.load(fh)
     # Named people without an account live only in this file; keep them.
+    # A linked one stays in the file (it holds the name and the link) but is
+    # marked so the site prints the account row instead of both.
     kept = [e for e in doc.get("ambassadors", []) if e.get("user_id") is None]
+    for e in kept:
+        if e.get("linked_user_id"):
+            e["public"] = False
     if out + kept == doc.get("ambassadors", []):
         # Nothing moved, so nothing is written: the knock commits any change
         # to this file as "a reader deleted their account", and on 2026-10-02
@@ -460,6 +545,9 @@ def main(argv):
         return requests_scan("--send" in argv)
     if "--invite-scan" in argv:
         return invite_scan("--send" in argv)
+    if "--link-address" in argv:
+        i = argv.index("--link-address")
+        return link_address(argv[i + 1], argv[i + 2], argv[i + 3])
     if "--grant-named" in argv:
         i = argv.index("--grant-named")
         return grant_named(argv[i + 1], argv[i + 2])

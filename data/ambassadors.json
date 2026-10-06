@@ -9,7 +9,10 @@
       "public": false,
       "since": "2026-10-02",
       "display_name": "Hans Erik Lund",
-      "source": "mail, granted by Hidde; name held off the page until the person says yes (Hidde, 2026-10-06)"
+      "source": "mail, granted by Hidde; name held off the page until the person says yes (Hidde, 2026-10-06)",
+      "address_hmac": [
+        "8a127cc19adad71fed5603c1dbbe3a8cb8fc497f002d962ebc437d5269c4c67f"
+      ]
     },
     {
       "user_id": null,
@@ -18,7 +21,10 @@
       "public": false,
       "since": "2026-10-02",
       "display_name": "Paulo V. Araujo",
-      "source": "mail, granted by Hidde; name held off the page until the person says yes (Hidde, 2026-10-06)"
+      "source": "mail, granted by Hidde; name held off the page until the person says yes (Hidde, 2026-10-06)",
+      "address_hmac": [
+        "7e7e48be67681f280b40e962d7c12a0689aab27adbb7f983cc964db811dddece"
+      ]
     },
     {
       "user_id": null,
@@ -29,7 +35,10 @@
       "display_name": "Giulia Torta",
       "source": "mail, granted by Hidde; institution on the page by her yes (mail, 2026-10-03)",
       "affiliation": "Orto botanico di Firenze",
-      "affiliation_consent": "she asked for her name and the Orto botanico on the page (mail, 2026-10-03)"
+      "affiliation_consent": "she asked for her name and the Orto botanico on the page (mail, 2026-10-03)",
+      "address_hmac": [
+        "f515622acba9f6faec3e7d7f5f80473cac4875fd477809fe9332af5fa3a3df51"
+      ]
     },
     {
       "user_id": null,
@@ -40,7 +49,10 @@
       "display_name": "Hugo Veríssimo",
       "source": "Quercus Lisboa, arborist; granted on Hidde's word (2026-10-05: \"hugo wil ambassadeur worden\"); Quercus Lisboa beside his name on Hidde's word",
       "affiliation": "Quercus Lisboa",
-      "affiliation_consent": "Hidde vouched for Quercus Lisboa (2026-10-05: \"cuercus is ok for hugo\")"
+      "affiliation_consent": "Hidde vouched for Quercus Lisboa (2026-10-05: \"cuercus is ok for hugo\")",
+      "address_hmac": [
+        "7ea8d1fadf5ba64fec89846ed3c3fd45f7aba5a4bb014d95d401746757b532e0"
+      ]
     },
     {
       "user_id": null,
@@ -49,7 +61,10 @@
       "public": true,
       "since": "2026-10-05",
       "display_name": "Aleš Rudl",
-      "source": "said yes by mail to the ambassador ask of 2026-10-02; granted on Hidde's word 2026-10-05. No organisation beside his name: an affiliation is printed only when the person explicitly asked for it (Hidde, 2026-10-05)"
+      "source": "said yes by mail to the ambassador ask of 2026-10-02; granted on Hidde's word 2026-10-05. No organisation beside his name: an affiliation is printed only when the person explicitly asked for it (Hidde, 2026-10-05)",
+      "address_hmac": [
+        "99ea4849df6200552bba55eb0d62d3db5b5b54ac5890ec65da76af6b8f07dbca"
+      ]
     },
     {
       "user_id": null,
@@ -58,7 +73,11 @@
       "public": true,
       "since": "2026-10-05",
       "display_name": "Daniel Daggfeldt",
-      "source": "arborist, Stockholm; said yes by mail to the ask of 2026-10-03; granted on Hidde's word 2026-10-05"
+      "source": "arborist, Stockholm; said yes by mail to the ask of 2026-10-03; granted on Hidde's word 2026-10-05",
+      "address_hmac": [
+        "9eef19a0f243440ecf6cc1f371f74cea6dd2837e56b6aaa331eaec1c730f77c1",
+        "eb42777376d742ceb2f9009e7c1cc32b791152657b7643dc47f6af0afd9221a0"
+      ]
     }
   ],
   "invited": [
