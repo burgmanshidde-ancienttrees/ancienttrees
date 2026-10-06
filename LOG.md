@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run, second continuation) - enrichment: Prague, 18 trees
+
+- Prague (18 indexed trees): AOPK memorial-tree register ids (`kod`) matched by coordinate (within 10 m of our pins) on 16 trees, one with its drusop page URL; Prague's own Významné stromy ids on Neruda's Pear and the Bonsai Ginkgo, plus girth 292 cm on the pear. Season set on prg_025 only (sessile oak acorns); plane and ash files hold no striking moment. Open: Jezerka plane register says 530 cm, we hold 517 (not changed); ginkgo girth measured at 80 cm so left out. Preflight 0 problems. Shipped 0 new trees. ~143k tokens, which closed 16 register links, so the pass paid.
+
 ## 2026-10-06 (night run, continuation) - enrichment: Cadiz closed nothing, Porto 2 trees
 
 - Cadiz: no per-tree authority record, monumentaltrees.com blocked (not used), two conflicting secondhand girths for the dragon tree; marked done. ~137k tokens wasted.
