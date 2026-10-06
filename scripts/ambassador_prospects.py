@@ -55,6 +55,10 @@ def main():
             if e and e not in contacts:
                 contacts[e] = c
 
+    # From scripts/outreach_threads.py: mail each way in Hidde's own box,
+    # which also holds the threads he wrote by hand.
+    tp = os.path.join(ROOT, "data", "outreach-threads.json")
+    threads = json.load(open(tp)) if os.path.exists(tp) else {}
     mailed = {}
     for m in sent["sent"]:
         e = (m.get("to") or "").strip().lower()
@@ -90,6 +94,18 @@ def main():
             status = "do_not_contact"
         elif any(n and (n in alltext or n.split()[-1] in e) for n in amb_names):
             status = "ambassador"
+        elif e in threads and (threads[e]["from_them"] >= 2 or
+                               (threads[e]["from_them"] >= 1 and threads[e]["to_them"] >= 4)):
+            # A running correspondence is Hidde's own, never a template
+            # (2026-10-06: "wolfgang jon etc all have been mailed numerous times").
+            status = "in_contact"
+        elif e in threads and threads[e]["to_them"] >= 3 and (
+                (e in answered and set(answered[e]) != {"auto"}) or any(k and k in alltext for k in reply_orgs)):
+            # They answered, from another address or by phone, and the thread
+            # ran on: a correspondence all the same.
+            status = "in_contact"
+        elif e in threads and threads[e]["from_them"] == 0 and threads[e]["to_them"] >= 3:
+            status = "mailed_enough"
         elif any("mbassad" in (x.get("batch", "") + x.get("subject", "")) for x in m):
             # Asked already (2026-10-02 onward) and not named yet: a nudge,
             # never a second ask.
@@ -102,7 +118,8 @@ def main():
             status = "recontact"
         else:
             status = "new"
-        rows.append({"email": e, "who": who, "city": city, "country": c.get("country", ""),
+        th = threads.get(e, {})
+        rows.append({"from_them": th.get("from_them"), "to_them": th.get("to_them"), "email": e, "who": who, "city": city, "country": c.get("country", ""),
                      "type": c.get("type", ""), "status": status,
                      "first_mailed": m[0]["date"] if m else None, "mails": len(m),
                      "reply_kinds": answered.get(e, []), "why": (c.get("why_them") or "")[:200]})
@@ -116,8 +133,10 @@ def main():
               open(os.path.join(ROOT, "data", "ambassador-prospects.json"), "w", encoding="utf-8"),
               indent=1, ensure_ascii=False)
 
-    order = ["asked", "replied", "recontact", "new", "ambassador", "do_not_contact"]
-    title = {"asked": "Asked to be an ambassador, no answer yet: a short nudge",
+    order = ["in_contact", "mailed_enough", "asked", "replied", "recontact", "new", "ambassador", "do_not_contact"]
+    title = {"in_contact": "In regular contact already: do NOT contact, these threads are personal",
+             "mailed_enough": "Mailed three times or more, never answered: leave alone",
+             "asked": "Asked to be an ambassador, no answer yet: a short nudge",
              "replied": "Wrote back, never asked to be an ambassador: ask first",
              "recontact": "Mailed, never answered: worth a second mail now there is an app and an ambassador programme",
              "new": "On file, never mailed",
@@ -130,7 +149,7 @@ def main():
     for s in order:
         out.append(f"| {title[s]} | {sum(1 for r in rows if r['status'] == s)} |")
     out.append(f"| Cities of four or more trees with nobody on file | {len(no_one)} |")
-    for s in order[:4]:
+    for s in order[2:6]:
         part = sorted((r for r in rows if r["status"] == s), key=lambda r: (r["country"], r["city"], r["who"]))
         out += ["", f"## {title[s]} ({len(part)})", "",
                 "| City | Country | Who | Address | First mailed | Answer |", "|---|---|---|---|---|---|"]
