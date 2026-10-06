@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, third attempt) - enrichment: New York
+
+- Enrich New York (5 indexed trees, 4 improved): NYC Parks Great Tree ids and girth/height on Hangman's Elm, Camperdown Elm, Queens Giant, Central Park West Elm. nycgovparks.org is blocked (405), so records were read from Wayback copies (`/web/2021/` works, `/2024/` gave 403 on some); three girths are derived as pi times the Parks' diameter, flagged in measure_source. Hangman's Elm register height of 40 m looks high, recorded as published. Sassafras of Green-Wood left open (not a Parks Great Tree). Preflight 0 problems.
+
 ## 2026-10-06 (night run, third attempt) - enrichment: Munich
 
 - Enrich Munich (30 indexed trees, 24 improved): 23 got their Bavarian LfU Naturdenkmal register id (matched within about 55 m of our pin with species or name agreeing), the Röth-Linde got girth 624 cm and height 23 m from German Wikipedia only (no authority page found, flagged in measure_source). Left open: muc_004 (nearest register row 68 m off, too loose), muc_060 (lime walk, only group rows), muc_061 (nearest row 3.8 km away). No access or season work done. Preflight 0 problems. No new trees; muc_062 stays verified and awaiting a writer (claim released with --force, it is a different pending item).

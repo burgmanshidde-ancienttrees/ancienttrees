@@ -44,7 +44,8 @@
       "verified_sources": [
         "https://www.nycgovparks.org/parks/washington-square-park/facilities/great-trees",
         "https://en.wikipedia.org/wiki/Hangman's_Elm",
-        "https://www.washingtonsquareparkblog.com/2025/05/16/washington-square-park-346-year-old-elm-designated-great-tree/"
+        "https://www.washingtonsquareparkblog.com/2025/05/16/washington-square-park-346-year-old-elm-designated-great-tree/",
+        "https://www.nycgovparks.org/facilities/great-trees?id=33"
       ],
       "access": "Free, public park",
       "transport": "West 4th Street (Metro A/B/C/D/E/F/M), 3 min walk",
@@ -59,7 +60,13 @@
       "curation_status": "flagged",
       "notes": "Age given as a range (300-346 years) because sources genuinely disagree, from NYC Parks' cautious 'more than 300 years' to a commonly cited 346. Pin confirmed 2026-07-27: OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Hangman's Elm\" (species Ulmus procera, planted 1679, matching this entry's high-end age estimate of 346 years almost exactly), a few metres from the existing estimate.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as one of the oldest trees on Manhattan, standing at the northwest corner of the park. It stands at Washington Square Park."
+      "how_to_recognise": "You can recognise it as one of the oldest trees on Manhattan, standing at the northwest corner of the park. It stands at Washington Square Park.",
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=33"
+      },
+      "girth_cm": 536,
+      "height_m": 40.0
     },
     {
       "id": "nyc_002",
@@ -131,7 +138,13 @@
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-27 (about 70m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Camperdown Elm\" (species Ulmus glabra 'Camperdownii', planted 1872, matching this entry's own planting year exactly), replacing the previous Boathouse-area estimate. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e0/...) 404'd, caught by a site-wide hash-path check against Commons' API; the real current path is 2/20. Fetched and viewed directly to confirm it's still the same weeping, umbrella-canopied elm before swapping.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its low, twisted, weeping canopy, propped and cabled, spreading wide enough that you duck to walk beneath it. It stands near the Boathouse in Prospect Park, Brooklyn."
+      "how_to_recognise": "You can recognise it by its low, twisted, weeping canopy, propped and cabled, spreading wide enough that you duck to walk beneath it. It stands near the Boathouse in Prospect Park, Brooklyn.",
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=8"
+      },
+      "girth_cm": 375,
+      "height_m": 6.2
     },
     {
       "id": "nyc_004",
@@ -211,7 +224,13 @@
         ],
         "label": "October, when its canopy turns a luminous golden yellow"
       },
-      "how_to_recognise": "You can recognise it by its height, 133.8 feet, the tallest carefully measured tree in New York City, rising from uncleared forest. It stands in Alley Pond Park, Queens."
+      "how_to_recognise": "You can recognise it by its height, 133.8 feet, the tallest carefully measured tree in New York City, rising from uncleared forest. It stands in Alley Pond Park, Queens.",
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees/120"
+      },
+      "girth_cm": 567,
+      "height_m": 40.8
     },
     {
       "id": "nyc_006",
@@ -432,7 +451,13 @@
         "width": 375,
         "height": 500
       },
-      "how_to_recognise": "You can recognise it by being wider than it is tall, just under 51 feet high with a 55 foot canopy, right at the park's edge. It stands at Central Park West and 77th Street."
+      "how_to_recognise": "You can recognise it by being wider than it is tall, just under 51 feet high with a 55 foot canopy, right at the park's edge. It stands at Central Park West and 77th Street.",
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=45"
+      },
+      "girth_cm": 329,
+      "height_m": 15.5
     },
     {
       "id": "nyc_012",
