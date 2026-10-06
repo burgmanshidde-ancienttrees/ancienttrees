@@ -6,6 +6,7 @@
 
 - Rung 1: five Tokyo photographs in the sightings inbox are the owner's own test frames (mine, unlisted, no age, nothing marking them out); verdict written as lead, no page.
 - Rung 4/enrich: Rome (10 trees, Lazio register ids and girth/height on 9, Orto Botanico ticket and hours) and Palermo (9 trees, MASAF register ids). Group register rows were not used for measurements where the maximum could not be tied to the tree. Season gaps stayed open: the species files hold no striking moment. Preflight 0 problems. Visits 7 days: 1860.
+- Oahu (5 trees): Honolulu register ids; the Kuhio Beach banyan register row says Not Accessible - Fence, our access line says always open, someone should check that.
 - health.py: deploy is behind main and gh workflow run was refused (403) from this runner; iOS app and Weekly analysis runs are red; digest 28h stale. Left for a session.
 
 ## 2026-10-06 (session) - an ambassador hears when their list grows

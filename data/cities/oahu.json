@@ -210,7 +210,8 @@
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Moanalua_Gardens",
         "https://www.hawaiimagazine.com/moanalua-gardens-home-of-the-hitachi-tree/",
-        "https://www.to-hawaii.com/oahu/gardens/moanaluagardens.php"
+        "https://www.to-hawaii.com/oahu/gardens/moanaluagardens.php",
+        "https://data.honolulu.gov/Community/Exceptional-Trees/84fd-3fzf"
       ],
       "access": "Paid entry, Moanalua Gardens admission (10 dollars), daily 08:30 to 16:00",
       "transport": "About 8 km from Waikiki; TheBus routes along Moanalua Road stop by the gardens, and there is parking at the gate",
@@ -233,6 +234,10 @@
         "source_name": "Hitachi Tree",
         "qid": "Q10280824",
         "views": 4884
+      },
+      "official_register": {
+        "name": "Exceptional Trees register (City and County of Honolulu, Act 105 of 1975), no. 20,140,816 (dataset object 848, noted 'Famous Hitachi Tree', Moanalua Gardens)",
+        "url": null
       }
     },
     {
@@ -318,7 +323,8 @@
       "verified_sources": [
         "https://www.hawaii.edu/news/2023/04/21/grow-for-it-explore-uh-manoa-plants/",
         "https://www.ilind.net/2019/01/29/huge-baobab-tree-tucked-into-one-side-of-the-uh-art-building/",
-        "https://www.edohawaii.com/baobab/uh.html"
+        "https://www.edohawaii.com/baobab/uh.html",
+        "https://data.honolulu.gov/Community/Exceptional-Trees/84fd-3fzf"
       ],
       "access": "Free, public university campus. UH Manoa's outdoor grounds and campus walkways (including McCarthy Mall) are open to the public without admission; the tree stands beside the Art Building's exterior, not inside it.",
       "transport": "On the UH Manoa campus; nearest TheBus stops on University Ave/Dole St, short walk (about 10 minutes) onto campus to McCarthy Mall.",
@@ -334,7 +340,11 @@
       },
       "verify_notes": "Register: Hawaii Exceptional Trees list, id 1294, species Adansonia digitata, locality 'UHM campus near Art building', vitality Excellent, no girth/height recorded in that row. UH's own 2023 arboretum news piece says UH Manoa is home to 'the largest Baobab tree in the United States', located at the Art Building, 2535 McCarthy Mall, and that the building was designed around the then-30-year-old tree when Gilmore Hall (built 1935) was demolished in 1973, implying the tree predates 1943 and was already established by 1935. ilind.net (2019, local Honolulu civic blogger) independently corroborates: a photo from around 1972 shows the tree already mature beside old Gilmore Hall before demolition; UH art faculty and students insisted the tree be saved and the new building built around it. edohawaii.com gives a tree-specific coordinate (21.2994, -157.81798) and photos of people at the base for scale. Age: 'the then 30-year-old tree' in 1973 is UH's own figure via secondary sources, not a planting record; treated loosely as circa-1943 planting giving roughly 80-90 years by 2026, kept broad rather than sharpened. No measured girth found in any source. Distinct from the Ala Moana Beach Park baobab grove (an ensemble with no single standout specimen, set aside as not a collectible point) and from Foster Botanical Garden's baobab (already published as hnl_001). Alive-now evidence: UH's own arboretum feature, published 2023-04-21, describes the tree in the present tense as a current campus landmark.",
       "story": "When the University of Hawaii tore down Gilmore Hall in 1973, one thing did not move. Art faculty and students had grown fond of the baobab already standing beside the old building, and when its replacement went up, the tree stayed exactly where it was and the new Art Building was built around it. More than fifty years later it still stands pressed against the exterior wall, close enough that photographs make it look almost part of the structure.\n\nThe University calls it the largest baobab in the United States, and the claim is plausible: baobabs are native to Africa and Madagascar and rarely reach this size far outside the tropics they evolved in, let alone on a university campus in the middle of the Pacific. The tree was already about 30 years old when the building rose around it, which puts its planting somewhere in the early 1940s, before Hawaii became a state.\n\nNobody has taped its girth for the record, and no register lists one. What survives instead is the story everyone on campus already knows: a tree stubborn enough, and loved enough, that an entire building changed shape to keep it standing.",
-      "how_to_recognise": "You can recognise it by its baobab trunk pressed right against the Art Building's outer wall, the building built around it. It stands beside McCarthy Mall on the UH Manoa campus."
+      "how_to_recognise": "You can recognise it by its baobab trunk pressed right against the Art Building's outer wall, the building built around it. It stands beside McCarthy Mall on the UH Manoa campus.",
+      "official_register": {
+        "name": "Exceptional Trees register (City and County of Honolulu, Act 105 of 1975), no. dataset object 1294 (Baobab, 'UHM campus near Art building'; no measurements recorded)",
+        "url": null
+      }
     },
     {
       "id": "hnl_010",
@@ -417,7 +427,8 @@
       },
       "verified_sources": [
         "https://imagesofoldhawaii.com/%CA%BBiolani-palace-trees/",
-        "https://www.iolanipalace.org/events/venue-planning-rentals/banyan-terrace/"
+        "https://www.iolanipalace.org/events/venue-planning-rentals/banyan-terrace/",
+        "https://data.honolulu.gov/Community/Exceptional-Trees/84fd-3fzf"
       ],
       "access": "Free. The 11-acre Iolani Palace grounds are open to the public without a ticket (Tue-Sat; check iolanipalace.org for current hours); only the guided tour of the palace interior requires paid admission.",
       "transport": "TheBus routes serve downtown Honolulu; Iolani Palace is about a 10-minute walk from the Aloha Tower / Chinatown area.",
@@ -432,6 +443,10 @@
         "status": "approved",
         "width": 3713,
         "height": 2784
+      },
+      "official_register": {
+        "name": "Exceptional Trees register (City and County of Honolulu, Act 105 of 1975), no. 20,140,373 (dataset object 388, Iolani Palace, back-right corner, plaque present)",
+        "url": null
       }
     },
     {
@@ -506,7 +521,8 @@
       },
       "verified_sources": [
         "https://historichawaii.org/historic-property-oa/honolulu-zoo-entry/",
-        "https://bomackison.com/still-in-honolulu-exploring-the-banyan-tree"
+        "https://bomackison.com/still-in-honolulu-exploring-the-banyan-tree",
+        "https://data.honolulu.gov/Community/Exceptional-Trees/84fd-3fzf"
       ],
       "access": "Free. These banyans stand outside the zoo's ticket gate, in the public grounds of Kapiolani Park; no zoo admission is needed to reach or sit under them.",
       "transport": "TheBus routes serve Kapahulu Ave / Kalakaua Ave; about a 15-20 minute walk from central Waikiki.",
@@ -521,6 +537,10 @@
         "status": "approved",
         "width": 500,
         "height": 375
+      },
+      "official_register": {
+        "name": "Exceptional Trees register (City and County of Honolulu, Act 105 of 1975), no. 20,140,388 (makai tree) and 20,140,386 (mauka tree), dataset objects 402 and 401, 'Honolulu Zoo outside entrance'",
+        "url": null
       }
     },
     {
@@ -623,7 +643,8 @@
       "verified_sources": [
         "https://data.honolulu.gov/Community/Exceptional-Trees/84fd-3fzf (City & County of Honolulu, Exceptional Trees register, Act 105 of 1975, CC0; register id 391, Ficus benghalensis, Kuhio Beach Park, girth 4053.8 cm, height 70 ft, vitality Good)",
         "https://www.openstreetmap.org/node/5216796590 (OSM node individually tagged genus=Ficus, denotation=natural_monument, last checked by a mapper 2026-03-29, at 21.2749708,-157.8248207, ~60m from the Duke Kahanamoku Statue beside the Hula Mound)",
-        "https://thishawaiilife.com/kuhio-beach-park/ (describes the 'giant banyan tree' at Kuhio Beach as the site of free Saturday-evening hula and music performances)"
+        "https://thishawaiilife.com/kuhio-beach-park/ (describes the 'giant banyan tree' at Kuhio Beach as the site of free Saturday-evening hula and music performances)",
+        "https://data.honolulu.gov/Community/Exceptional-Trees/84fd-3fzf"
       ],
       "access": "Free, always open. Kuhio Beach Park is a public city beach park in central Waikiki with no gate and no entry fee.",
       "transport": "In central Waikiki, an easy walk (under 15 minutes) from the Moana Banyan and the International Market Place Banyan already on this page; TheBus routes 8, 19, 20 and 23 and the Waikiki Trolley stop on Kalakaua Ave nearby.",
@@ -640,7 +661,12 @@
         "height": 4000
       },
       "age_min": null,
-      "age_max": null
+      "age_max": null,
+      "official_register": {
+        "name": "Exceptional Trees register (City and County of Honolulu, Act 105 of 1975), no. 20,140,376 (dataset object 391, Kuhio Beach Park)",
+        "url": null
+      },
+      "height_m": 21.3
     },
     {
       "id": "hnl_020",
