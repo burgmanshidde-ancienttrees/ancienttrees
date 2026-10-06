@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 session: people's addresses out of the repository, history rewritten
+
+- **Why:** the GitHub repository is public and carried 600+ email addresses of people we wrote to, their replies, the waitlist and every mail draft.
+- **Now:** those 96 files live in Supabase (`private_files`, locked to the public key, checked) and stay gitignored on disk; `scripts/private_store.py` syncs them, night runs pull before any mail step. qa refuses a push that tracks them again.
+- **History rewritten on Hidde's yes** (git filter-repo, 20 paths, all four branches force-pushed; today's tree is byte-identical, 92 commits that only touched those files dropped). Scheduled workflows were paused for the rewrite and are back on. Local stale worktree branches were removed; /Users/hidde/Documents/at-app was reset to the new main (it held no work of its own).
+- **FOR HIDDE:** GitHub still serves the old commits by their hash until GitHub Support purges them, and 4 pull requests keep references to old commits. Ask at support.github.com, "Remove sensitive data", naming this repository; I cannot file it from here.
+
 ## 2026-10-06 (session) - the digest now says where App Store downloads come from
 
 **Why:** reading the week (Google at 2 percent of pre-demotion impressions, visits from people down from about 90 a day to 20 or 30, while 38 first-time downloads, 33 reader photographs live in 11 cities and the first strangers running the whole find-walk-photograph loop), the app was the one channel still producing people, and nothing said what fed it: the site's own app button took 22 clicks in 14 days against 38 downloads.
