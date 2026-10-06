@@ -59,7 +59,12 @@
       "curation_status": "flagged",
       "notes": "Age is presented as a range because sources genuinely and substantially disagree (1633 legend vs. post-1814 estimates from city technicians), per the site's honesty standard rather than picking one figure. Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 4565394685, \"Ahuehuete del Parterre\"), which independently corroborates a Comunidad de Madrid singular-tree ficha reporting near-identical coordinates (40.41564, -3.68798) for the same tree. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e4/...) 404'd, a genuine dead link caught by a site-wide approved-photo spot-check, not just a rate limit; Commons' own API gives this exact filename's real path as f/f2, fetched and viewed directly there to confirm it is still the same fenced, multi-trunked Ahuehuete before swapping the URL.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the buttressed trunk and feathery foliage of a Mexican wetland cypress, standing in formal Spanish planting. It stands in the Jardin del Parterre, and Madrid calls it El Abuelo, the grandfather."
+      "how_to_recognise": "You can recognise it by the buttressed trunk and feathery foliage of a Mexican wetland cypress, standing in formal Spanish planting. It stands in the Jardin del Parterre, and Madrid calls it El Abuelo, the grandfather.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 228",
+        "url": null
+      },
+      "height_m": 25
     },
     {
       "id": "mad_002",
@@ -108,7 +113,8 @@
       "story": "Rather than one trunk, this yew splits into three, each thick enough to measure separately: 142, 120 and 140 centimetres around, fused into a single crown 18 metres wide standing beside the eastern wall of the Palacio de Velazquez, a red-brick exhibition hall built in 1883. European yews are famously slow growing and long lived, capable of reaching ages in the thousands of years in the right conditions, and famously toxic in almost every part except the flesh around the seed, a combination that has made the species a fixture of European churchyards for centuries, planted as much for its poison as its evergreen symbolism. At only 12 metres tall despite its age, this specimen shows the yew's characteristic patience: slow vertical growth traded for density and longevity. A wooden fence now rings the tree for its protection, a modest concession for one of only six trees in the whole of Retiro Park to hold official singular tree status from the Community of Madrid.",
       "verified_sources": [
         "http://elgatoporlasramas.blogspot.com/2014/11/tejo-del-palacio-de-velazquez-del-retiro.html?m=1",
-        "https://es.wikipedia.org/wiki/Tejo_del_Palacio_de_Vel%C3%A1zquez_del_Retiro"
+        "https://es.wikipedia.org/wiki/Tejo_del_Palacio_de_Vel%C3%A1zquez_del_Retiro",
+        "https://www.bocm.es/boletin/CM_Orden_BOCM/2015/02/04/BOCM-20150204-8.PDF"
       ],
       "access": "Free, public park",
       "transport": "Ibiza (Metro L9), 10 min walk",
@@ -132,7 +138,11 @@
         "label": "August to October: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the three separate trunks, 142, 120 and 140 centimetres round, fused into one crown 18 metres wide, and by the wooden fence around it. It stands against the eastern wall of the Palacio de Velazquez."
+      "how_to_recognise": "You can recognise it by the three separate trunks, 142, 120 and 140 centimetres round, fused into one crown 18 metres wide, and by the wooden fence around it. It stands against the eastern wall of the Palacio de Velazquez.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 327",
+        "url": null
+      }
     },
     {
       "id": "mad_004",
@@ -171,7 +181,11 @@
       "curation_status": "ai_generated",
       "notes": "This entry represents the grove of bald cypresses in the pond as a group, of which one specific specimen holds official singular tree status; sources do not distinguish which exact tree in the group carries the designation. Coordinates corrected 2026-07-26 to OpenStreetMap's own node for this tree (id 3919471940, named \"Ciprés Calvo del Estanque del Palacio de Cristal\", matching this entry's Spanish Wikipedia source), which at least pins the specific specimen the community has mapped under that name, even though which physical trunk in the pond that corresponds to is still not independently surveyed.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them by the trunks standing in the water itself, with the cypress knees breaking the surface around them. They grow calf deep in the pond in front of the Palacio de Cristal, not on the bank beside it."
+      "how_to_recognise": "You can recognise them by the trunks standing in the water itself, with the cypress knees breaking the surface around them. They grow calf deep in the pond in front of the Palacio de Cristal, not on the bank beside it.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 226",
+        "url": null
+      }
     },
     {
       "id": "mad_005",
@@ -206,7 +220,13 @@
       "notes": "Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 3170278091, \"Ciprés del Real Jardín Botánico\"), inside the garden on the Plano de la Flor terrace rather than the garden's street entrance.",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its height, 32 metres and the tallest tree in the garden, on a trunk a metre and a half across. It stands on the Plano de la Flor terrace, and it is the Mediterranean cypress there."
+      "how_to_recognise": "You can recognise it by its height, 32 metres and the tallest tree in the garden, on a trunk a metre and a half across. It stands on the Plano de la Flor terrace, and it is the Mediterranean cypress there.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 51",
+        "url": null
+      },
+      "girth_cm": 405,
+      "height_m": 32
     },
     {
       "id": "mad_006",
@@ -249,7 +269,13 @@
         "kind": "autumn colour"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its height, over 30 metres, and by what it is: a Caucasian zelkova, a relative of the elms without being one. It stands in the garden's north zone along the Paseo de Mutis, catalogued as singular tree 260."
+      "how_to_recognise": "You can recognise it by its height, over 30 metres, and by what it is: a Caucasian zelkova, a relative of the elms without being one. It stands in the garden's north zone along the Paseo de Mutis, catalogued as singular tree 260.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 260",
+        "url": null
+      },
+      "girth_cm": 485,
+      "height_m": 33
     },
     {
       "id": "mad_007",
@@ -344,7 +370,13 @@
       "curation_status": "flagged",
       "notes": "No source found gives a specific planting date or precise current age for this tree; the age range given is bounded only by the species' 1840 introduction to Europe and general knowledge of Atlas cedar growth rates, stated honestly as an estimate rather than a researched figure. Coordinates corrected 2026-07-26 to a named \"Cedro del Atlas\" node in OpenStreetMap (id 10261810384), the only tree in Parque del Oeste tagged with that Spanish common name, about 300m from the previous estimate but inside the same park and consistent with the Fuente de la Salud/Ruperto Chapi area sources describe. Photo added 2026-07-29: File:Cedrus atlantica 20090311.jpg (CC BY 3.0), whose own Commons description explicitly names Cedrus atlantica, Parque del Oeste, Madrid. Downloaded and personally viewed: a genuine, correctly-identified Atlas cedar branch and needle close-up, species confirmed by the silvery-blue needle clusters. Held at found_needs_check rather than approved: the photo carries no GPS data and is a needle macro with no trunk or landmark in frame, so it cannot positively confirm this is El Abuelo specifically rather than another Atlas cedar elsewhere in the park (OSM shows only one tree named that way, which favours it being the same tree, but the photo itself can't prove it).",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the Atlas cedar that people here call El Abuelo, the grandfather. It stands beside the artificial stream in the northern part of Parque del Oeste, near the Fuente de la Salud."
+      "how_to_recognise": "You can recognise it as the Atlas cedar that people here call El Abuelo, the grandfather. It stands beside the artificial stream in the northern part of Parque del Oeste, near the Fuente de la Salud.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 35",
+        "url": null
+      },
+      "girth_cm": 425,
+      "height_m": 26
     },
     {
       "id": "mad_010",
@@ -377,7 +409,13 @@
       "curation_status": "flagged",
       "notes": "Age is estimated from the park's known 1784-1839 construction period rather than a specific planting-date source. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.4km from El Capricho. Nominatim's own geocode of the park's official name, \"Jardin historico El Capricho de la Alameda Osuna,\" places it at 40.4563, -3.5980, matching the Barajas neighbourhood already stated here. Moved onto the park; still approximate since no source gives the Casa del Cura hermitage's own position within it. Photo added 2026-07-29: an iNaturalist CC BY observation (Cenaida, 22 Sept 2024, id 243394911) of a Pinus pinea inside El Capricho, viewed directly and confirmed as a genuine stone-pine photo taken in a shrubby, wooded corner of the park. Held at found_needs_check rather than approved because the park's own documentation describes several catalogued stone pines near the Casa del Cura meadow, and this photo's generic place_guess cannot confirm it is specifically the one singled out as the singular specimen rather than one of its neighbours. A 2026-07-31 session with working image tooling rendered it directly and agrees with this read: the frame shows two to three similar stone-pine trunks together from below, with no way to tell which, if any, is the catalogued specimen rather than a neighbour. Left at found_needs_check; this is an identity question a photo can't settle, not a framing or quality one, so a future session would need a source that individually locates the catalogued tree before promoting any photo here.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by where it grows, half hidden among shrubs rather than out in the open. It stands beside the Casa del Cura, the small hermitage in El Capricho, and it is the stone pine there."
+      "how_to_recognise": "You can recognise it by where it grows, half hidden among shrubs rather than out in the open. It stands beside the Casa del Cura, the small hermitage in El Capricho, and it is the stone pine there.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 134",
+        "url": null
+      },
+      "girth_cm": 340,
+      "height_m": 27
     },
     {
       "id": "mad_011",
@@ -460,7 +498,13 @@
         "label": "August to October: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the flat horizontal plates of branches and a crown 22 metres across on a tree 26 metres tall, so nearly as wide as it is high. It stands beside the Velazquez statue, by the Prado's busiest door."
+      "how_to_recognise": "You can recognise it by the flat horizontal plates of branches and a crown 22 metres across on a tree 26 metres tall, so nearly as wide as it is high. It stands beside the Velazquez statue, by the Prado's busiest door.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 40",
+        "url": null
+      },
+      "girth_cm": 450,
+      "height_m": 26
     },
     {
       "id": "mad_013",
@@ -526,7 +570,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Protected by the Comunidad de Madrid since the 1992 decree and carried through into the 2015 consolidated catalogue. Second source is Telemadrid's August 2024 survey (species, location, 22 metres, 140 years); the long-running ArbolesdeMadrid blog independently identifies the specimen and its 1992 protection. Age flagged as a range because the two figures in circulation, about 140 years and a planting around 1790, cannot both be right and neither is sourced to a core count. Pin is the OpenStreetMap node 'Picea del Himalaya' carrying Wikidata Q108653996 (40.4126313, -3.6918174), about six metres from the published coordinate. It is the only Picea smithiana in the square.",
-      "how_to_recognise": "You can recognise it by the side branches hanging almost vertically, carrying the longest needles of any spruce, so the tree looks like it is melting. It stands in the Plaza de Murillo, between the Prado and the Botanic Garden."
+      "how_to_recognise": "You can recognise it by the side branches hanging almost vertically, carrying the longest needles of any spruce, so the tree looks like it is melting. It stands in the Plaza de Murillo, between the Prado and the Botanic Garden.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 109",
+        "url": null
+      },
+      "girth_cm": 185,
+      "height_m": 22
     },
     {
       "id": "mad_015",
@@ -560,7 +610,13 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "notes": "Species is Acer saccharinum, the silver maple, per the Comunidad de Madrid catalogue and the tree's own name; the OpenStreetMap node tags it 'Acer saccharum', which is a different species and is treated here as a tagging error, not a source. Existence and centenarian age confirmed independently by Telemadrid's August 2024 survey, which places it in the Cecilio Rodriguez gardens. Pin is the individually named OpenStreetMap node carrying Wikidata Q108472384 (40.4139598, -3.678499).",
-      "how_to_recognise": "You can recognise it by the trunk splitting into four stems at about head height, and by the leaf undersides, pale silver white, so a breeze changes the colour of the whole crown. It stands in the Jardines de Cecilio Rodriguez."
+      "how_to_recognise": "You can recognise it by the trunk splitting into four stems at about head height, and by the leaf undersides, pale silver white, so a breeze changes the colour of the whole crown. It stands in the Jardines de Cecilio Rodriguez.",
+      "official_register": {
+        "name": "Catalogo Regional de Especies Amenazadas de Fauna y Flora Silvestres, categoria Arboles Singulares (Comunidad de Madrid), no. A.S. N 9",
+        "url": null
+      },
+      "girth_cm": 375,
+      "height_m": 20
     },
     {
       "id": "mad_016",
