@@ -2,23 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-19T02:49:48+00:00",
-   "date": "2026-08-19",
-   "run_id": "32209943153",
-   "minutes": 0.0,
-   "minutes_basis": "measured",
-   "turns": 1,
-   "denials": 0,
-   "denials_source": "permission_denials: no names in the record",
-   "ended": "success",
-   "tokens": null,
-   "claims_held": [],
-   "commits": 0,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-19T05:20:22+00:00",
    "date": "2026-08-19",
    "run_id": "32219039138",
@@ -20814,6 +20797,62 @@
     }
    ],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-06T22:33:15+00:00",
+   "date": "2026-10-06",
+   "run_id": "37541251761",
+   "minutes": 20.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 102,
+   "denials": 35,
+   "denials_source": "permission_denials: Bash(cat ; ? ; ? ; ? ...), Bash(cat ; import ; degli ; for ...), Bash(cat ; import ; for ; ? ...), Bash(cd && curl | head), Bash(cd && curl | sed | grep ...), Bash(cd && for ; do ; done ...), Bash(cd && for ; do ; done), Bash(cd && mkdir && cd && for ...), Bash(cd ; cat ; ? ; ? ...), Bash(cd ; curl ; pdftotext | grep ...), Bash(cd ; for ; do ; done), Bash(cd ; for ; do ; grep ...), Bash(cd ; for ; do ; python3 ...), Bash(cd ; for ; do | head ...), Bash(cd ; python3 ; import ; ? ...), Bash(curl ; ls ; file), Bash(curl | head ; echo ; echo), Bash(for ; do | sed | tr ...), Bash(head), Bash(mkdir && cat ; import | ? ...), Bash(mkdir && cd && curl ; ls ...), Bash(mkdir && cd && for ; do ...), Bash(mkdir && curl ; wc), Bash(mkdir ; cd ; curl ; curl ...), Bash(mkdir ; cd ; curl), Bash(mkdir ; curl ; curl), Bash(mkdir), Bash(python3 ; import ; ? ; for ...), Bash(python3 ; import ; Regional ; def ...), Bash(python3 ; mkdir ; sed | python3 ...), Bash(python3 | tail ; git ; git ...), Bash(rm ; python3 | tail ; python3 ...), Bash(subshell python3 || mkdir && python3 ; wc)",
+   "ended": "success",
+   "tokens": 2102963,
+   "claims_held": [],
+   "commits": 18,
+   "cities_touched": 9,
+   "cities": [
+    {
+     "city": "graz",
+     "trees": 1
+    },
+    {
+     "city": "austin",
+     "trees": 0
+    },
+    {
+     "city": "florence",
+     "trees": 0
+    },
+    {
+     "city": "glasgow",
+     "trees": 0
+    },
+    {
+     "city": "krakow",
+     "trees": 0
+    },
+    {
+     "city": "madrid",
+     "trees": 0
+    },
+    {
+     "city": "milan",
+     "trees": 0
+    },
+    {
+     "city": "new-orleans",
+     "trees": 0
+    },
+    {
+     "city": "sintra",
+     "trees": 0
+    }
+   ],
+   "trees": 1,
    "logged": true
   }
  ],
