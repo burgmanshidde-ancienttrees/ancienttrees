@@ -9840,6 +9840,22 @@
    "tokens": 141632,
    "trees": 0,
    "note": "wasted: sevilla.org unreachable, 1 of 8 closable and its figures unreread, so not applied. Host blocklisted."
+  },
+  {
+   "date": "2026-10-06",
+   "target": "rome",
+   "kind": "enrich",
+   "tokens": 149123,
+   "trees": 0,
+   "note": "Lazio register ids on 9 trees, girth/height on 7, Orto Botanico access line. Enrichment, no new trees."
+  },
+  {
+   "date": "2026-10-06",
+   "target": "palermo",
+   "kind": "enrich",
+   "tokens": 145840,
+   "trees": 0,
+   "note": "MASAF register ids on 9 trees, exact coordinate matches. Two group entries carry no measurement; no season moments."
   }
  ]
 }
