@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, third attempt) - enrichment: Munich
+
+- Enrich Munich (30 indexed trees, 24 improved): 23 got their Bavarian LfU Naturdenkmal register id (matched within about 55 m of our pin with species or name agreeing), the Röth-Linde got girth 624 cm and height 23 m from German Wikipedia only (no authority page found, flagged in measure_source). Left open: muc_004 (nearest register row 68 m off, too loose), muc_060 (lime walk, only group rows), muc_061 (nearest row 3.8 km away). No access or season work done. Preflight 0 problems. No new trees; muc_062 stays verified and awaiting a writer (claim released with --force, it is a different pending item).
+
 ## 2026-10-06 (night run, second attempt) - enrichment: Tokyo
 
 - Enrich Tokyo (12 indexed trees, 7 improved): Zenpukuji and Shiba Toshogu ginkgos got register status and girth/height, Head-Betting Ginkgo a girth (source rounds to 7 m, Wikipedia says about 6.5, flagged), Hamarikyu pine and Koishikawa ginkgo got price and hours, two trees named their Tokyo Natural Monument designation. No per-tree authority URLs or ids found (Nabunken WebGIS is JavaScript-only). Five trees stayed open: Ueno camphor, Kameido wisteria, Meiji Jingu avenue, Meoto Kusu, Yanaka cedar. No season set: no striking moment in the species files. Preflight 0 problems. No new trees; the writable shelf is still empty and 1,031 leads need a source.
