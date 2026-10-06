@@ -63,7 +63,13 @@
       "curation_status": "flagged",
       "notes": "Replaces The Quercia del Tasso on 2026-07-27: verified via Italian-language sources (ilgiornale.it's coverage of a 2025 exhibition at the Museo di Roma in Trastevere dedicated to the tree) that the oak on the Gianicolo is now explicitly described as 'secco, morto, corroso' (dry, dead, decayed), propped up inside a small wall, not the living tree the old entry's own sources had left ambiguous ('what remains of a monumental tree'). This is the same violation of Hidde's 'we doen niet aan dode bomen' rule (CLAUDE.md Step 1) as Queen Elizabeth's Oak and Stock im Eisen, found while sweeping Rome's suspects from the same list. Id rom_001 reused; a redirect for the old slug (quercia-del-tasso) is registered in scripts/build_site.py's RENAMED_TREE_SLUGS. This replacement is sourced to Rome's own municipal monumental-tree page and a dedicated registry-style page (alberimonumentali.info, used for verification of size/location only, not copied); the circa-1900s planting date and Wurts/Tower estate history are corroborated by independent general sources (Wikipedia's Villa Sciarra and Henrietta Tower articles, Walks in Rome) but not a single primary planting record, so flagged. No open-licensed photo found; one Flickr photo of this exact tree exists but is marked all-rights-reserved, not usable. Photo found and approved 2026-07-28 via Wikidata's Roma monumental-tree register (item tagged with this exact address, uploaded through Wiki Loves Monuments Italia 2021): viewed directly (fetched full image, not just metadata), shows an unmistakable ginkgo in full golden autumn foliage over a leaf-carpeted clearing with a visitor path and sign, matching this entry's own November best_time description exactly. Upgraded to confirmed 2026-07-28: Italy's official AMI national monumental-trees register lists a 'Ginco' at 'Villa Sciarra - Viale Adolfo Leducq' with circumference 310cm and height 25.0m, matching this story's own already-cited figures (just over three metres around, a 25 metre crown) exactly. Read with a purpose-built binary XLS parser (this session's tools could not parse MASAF's legacy .xls format with any library, so one was hand-written against the OLE2/BIFF8 spec), about 220m from the previous estimate.",
       "location_precision": "confirmed",
-      "how_to_recognise": "The one tree on the hillside with fan-shaped leaves in two lobes, just over three metres round and reaching 25 metres, taller than the villa's fake ruins around it."
+      "how_to_recognise": "The one tree on the hillside with fan-shaped leaves in two lobes, just over three metres round and reaching 25 metres, taller than the villa's fake ruins around it.",
+      "official_register": {
+        "name": "Alberi monumentali del Lazio (Regione Lazio, elenco 2025), no. 07/H501/RM/12",
+        "url": null
+      },
+      "girth_cm": 310,
+      "height_m": 25
     },
     {
       "id": "rom_002",
@@ -99,7 +105,11 @@
       "curation_status": "flagged",
       "notes": "Coordinates now come from Italy's national monumental tree registry (MASAF), which lists a single individually-catalogued Platanus orientalis at this exact site (Villa Borghese, Valle dei Platani), matching Adonis's description as the grove's one officially registered specimen; moved from a park-wide estimate to this registry point, about 290m away. The registry's own growth-based estimate gives 407 years against the 425 cited elsewhere, the same order of disagreement already carried openly on rom_005 and rom_006, so the age range here is left as is rather than resolved. Photo (2009, Patafisik) downloaded and viewed directly 2026-07-27: shows a large oriental plane with a prominent hollow cavity in its trunk, standing among several similarly aged planes in a grassy grove, an unusually strong match to Adonis's own described hollow trunk and grove setting. The file's own caption does not name Adonis specifically among the grove's nine survivors, so approved as an honest illustration of the tree and its grove rather than a certain single-specimen match, the same standard used elsewhere on this project for ensemble scenes.",
       "location_precision": "confirmed",
-      "how_to_recognise": "The biggest of the nine planes at the entrance to the Valle dei Platani, hollow-trunked and propped, with a young clone of itself planted nearby."
+      "how_to_recognise": "The biggest of the nine planes at the entrance to the Valle dei Platani, hollow-trunked and propped, with a young clone of itself planted nearby.",
+      "official_register": {
+        "name": "Alberi monumentali del Lazio (Regione Lazio, elenco 2025), no. 23/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_003",
@@ -117,9 +127,10 @@
       "story": "Two oriental planes here are older than the university that now owns them. Rome's Botanical Garden became a state institution in 1883, but the ground itself was a private garden of the Corsini family from 1660 onward, and these two trees, flanking Ferdinando Fuga's 1742 cascade of eleven fountains, were already mature when the last Corsini cardinals walked past them. Foresters place their age at over 300 years, among the oldest confirmed trees in Rome after Villa Borghese's plane grove. The staircase they frame, the Scalinata delle Undici Fontane, sends water down five stone basins toward eleven separate jets, an 18th-century flourish built as a backdrop for planting that already existed. The garden today holds 345 centuries-old specimens across 130 species, cork oaks, Himalayan cedars and Turkish oaks among them, but the two planes at the fountains remain the postcard image, framing water and stone the way they have for three centuries, regardless of which family or which state held the deed to the land around them.",
       "verified_sources": [
         "https://ortobotanico.web.uniroma1.it/en/monumental-trees",
-        "https://it.m.wikipedia.org/wiki/Orto_botanico_di_Roma"
+        "https://it.m.wikipedia.org/wiki/Orto_botanico_di_Roma",
+        "https://ortobotanico.web.uniroma1.it/en/visit-garden"
       ],
-      "access": "Paid entry, Orto Botanico di Roma",
+      "access": "Paid entry, 13 euro full price and 10 reduced, free for children to 5 years (garden's own page); open every day, 9:00 to 18:30 April to October and 9:00 to 16:30 November to March; free guided tours on Sundays with an ordinary ticket",
       "transport": "10 min walk from Trastevere (Piazza Trilussa), or tram 8 to Piazza Sonnino",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Scalone_Monumentale%2C_below_the_Fontana_degli_Undici_Zampilli_-_Orto_botanico_-_Rome%2C_Italy_-_DSC00275.jpg",
@@ -210,7 +221,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 460,
-      "how_to_recognise": "On the belvedere terrace above the Lago del Giglio, a cedar 4.6 metres round, and the only individually registered monumental tree in the whole park."
+      "how_to_recognise": "On the belvedere terrace above the Lago del Giglio, a cedar 4.6 metres round, and the only individually registered monumental tree in the whole park.",
+      "official_register": {
+        "name": "Alberi monumentali del Lazio (Regione Lazio, elenco 2025), no. 27/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_006",
@@ -245,7 +260,12 @@
       "notes": "Age genuinely disputed: the national registry's measured estimate (176 years) contradicts the traditional account (up to 300 years, tied to the 1784 garden redesign). Presented as a range rather than resolved.",
       "location_precision": "confirmed",
       "girth_cm": 430,
-      "how_to_recognise": "A holm oak right at the water's edge on Viale del Lago, 4.3 metres round, its dense evergreen crown reflected in the artificial lake."
+      "how_to_recognise": "A holm oak right at the water's edge on Viale del Lago, 4.3 metres round, its dense evergreen crown reflected in the artificial lake.",
+      "official_register": {
+        "name": "Alberi monumentali del Lazio (Regione Lazio, elenco 2025), no. 21/H501/RM12",
+        "url": null
+      },
+      "height_m": 20
     },
     {
       "id": "rom_007",
@@ -329,7 +349,11 @@
       "height_m": 28.0,
       "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 440,
-      "how_to_recognise": "On Viale Spellman near the Navicella entrance, the straight dark one of the pair: 4.4 metres round and 28 metres up, with a leaning pine a few metres away."
+      "how_to_recognise": "On Viale Spellman near the Navicella entrance, the straight dark one of the pair: 4.4 metres round and 28 metres up, with a leaning pine a few metres away.",
+      "official_register": {
+        "name": "Alberi monumentali del Lazio (Regione Lazio, elenco 2025), no. 14/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_009",
@@ -396,7 +420,12 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "At the foot of Michelangelo's Cordonata beside the Aracoeli church, a swollen buttressed trunk that looks sculpted rather than grown."
+      "how_to_recognise": "At the foot of Michelangelo's Cordonata beside the Aracoeli church, a swollen buttressed trunk that looks sculpted rather than grown.",
+      "official_register": {
+        "name": "Alberi monumentali del Lazio (Regione Lazio, elenco 2025), no. 02/H501/RM/12",
+        "url": null
+      },
+      "height_m": 20
     },
     {
       "id": "rom_011",
@@ -546,7 +575,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 345,
-      "how_to_recognise": "On Via delle Tre Pile, to the right of the Cordonata as you climb, 3.45 metres round; the ombu stands fifty metres away on the other flank of the same stair."
+      "how_to_recognise": "On Via delle Tre Pile, to the right of the Cordonata as you climb, 3.45 metres round; the ombu stands fifty metres away on the other flank of the same stair.",
+      "official_register": {
+        "name": "Alberi monumentali del Lazio (Regione Lazio, elenco 2025), no. 01/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_015",
@@ -592,7 +625,11 @@
       "height_m": 22.0,
       "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 410,
-      "how_to_recognise": "A flat candelabra crown leaning out over the rowing boats, 4.1 metres round and 22 tall, with the monumental holm oak seventy metres along the same bank."
+      "how_to_recognise": "A flat candelabra crown leaning out over the rowing boats, 4.1 metres round and 22 tall, with the monumental holm oak seventy metres along the same bank.",
+      "official_register": {
+        "name": "Alberi monumentali del Lazio (Regione Lazio, elenco 2025), no. 22/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_016",
@@ -708,7 +745,12 @@
         "height": 3472
       },
       "girth_cm": 600,
-      "how_to_recognise": "Beside Valadier's staircase up to the Casino Nobile, six metres round and 28 up, the thickest cedar anywhere on Rome's register."
+      "how_to_recognise": "Beside Valadier's staircase up to the Casino Nobile, six metres round and 28 up, the thickest cedar anywhere on Rome's register.",
+      "official_register": {
+        "name": "Alberi monumentali del Lazio (Regione Lazio, elenco 2025), no. 19/H501/RM12",
+        "url": null
+      },
+      "height_m": 28
     },
     {
       "id": "rom_019",
