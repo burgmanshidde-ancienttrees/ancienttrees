@@ -2,23 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-18T23:16:31+00:00",
-   "date": "2026-08-18",
-   "run_id": "32196458135",
-   "minutes": 0.0,
-   "minutes_basis": "measured",
-   "turns": 1,
-   "denials": 0,
-   "denials_source": "permission_denials: no names in the record",
-   "ended": "success",
-   "tokens": null,
-   "claims_held": [],
-   "commits": 0,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-19T02:49:48+00:00",
    "date": "2026-08-19",
    "run_id": "32209943153",
@@ -20793,6 +20776,40 @@
     },
     {
      "city": "paris",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-06T21:05:02+00:00",
+   "date": "2026-10-06",
+   "run_id": "37531229819",
+   "minutes": 20.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 95,
+   "denials": 20,
+   "denials_source": "permission_denials: Bash(cat ; ? ; ? ; ? ...), Bash(cat ; import ; def ; return ...), Bash(cat ; import ; stromy ; for ...), Bash(cat | head ; for ; do ...), Bash(cd && curl | sed | grep ...), Bash(cd && for ; do ; curl ...), Bash(curl ; wc ; grep | Volksgarten ...), Bash(curl ; wc), Bash(for ; do && break ; sleep ...), Bash(for ; do ; Linux | python3 ...), Bash(for ; do ; curl ; Linux ...), Bash(grep | prazskestromy | drusop | ? ...), Bash(head ; echo ; grep | sort ...), Bash(mkdir && cat ; import ; A ...), Bash(python3 && git && git && git ...), Bash(python3 ; wc), Bash(rm ; python3 ; ?), Bash(sed ; ? ; ? && python3)",
+   "ended": "success",
+   "tokens": 1071657,
+   "claims_held": [
+    "glasgow"
+   ],
+   "commits": 14,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "porto",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    },
+    {
+     "city": "vienna",
      "trees": 0
     }
    ],
