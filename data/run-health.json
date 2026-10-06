@@ -2,23 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-18T11:15:55+00:00",
-   "date": "2026-08-18",
-   "run_id": "32130850490",
-   "minutes": 0.0,
-   "minutes_basis": "measured",
-   "turns": 1,
-   "denials": 0,
-   "denials_source": "permission_denials: no names in the record",
-   "ended": "success",
-   "tokens": null,
-   "claims_held": [],
-   "commits": 0,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-18T20:16:38+00:00",
    "date": "2026-08-18",
    "run_id": "32181330901",
@@ -20745,6 +20728,54 @@
     }
    ],
    "trees": 20,
+   "logged": true
+  },
+  {
+   "started": "2026-10-06T16:18:55+00:00",
+   "date": "2026-10-06",
+   "run_id": "37494646333",
+   "minutes": 12.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 102,
+   "denials": 26,
+   "denials_source": "permission_denials: Bash(cat ; import ; if ; ? ...), Bash(cd && cat ; ? ; ? ...), Bash(cd && for ; do ; curl ...), Bash(cd && python3 | head), Bash(cd && rm ; cd ; python3 ...), Bash(curl ; echo), Bash(curl ; ls), Bash(curl ; wc), Bash(for ; do ; done ; curl), Bash(grep | masaf | comune.palermo | ? ...), Bash(ls | grep | tokyo | giant ...), Bash(mkdir && cat ; ? ; ? ...), Bash(mkdir && cat ; import ; ? ...), Bash(mkdir && cd && curl ; ls ...), Bash(mkdir && cd && for ; do ...), Bash(mkdir && curl), Bash(mkdir), Bash(pdftotext), Bash(python3 ; wc), Bash(python3 | ? | ? | ?), Bash(python3 | tail ; git ; git ...), Bash(python3 | tail ; python3 ; wc ...)",
+   "ended": "success",
+   "tokens": 1207759,
+   "claims_held": [],
+   "commits": 13,
+   "cities_touched": 7,
+   "cities": [
+    {
+     "city": "edinburgh",
+     "trees": 0
+    },
+    {
+     "city": "munich",
+     "trees": 0
+    },
+    {
+     "city": "new-york",
+     "trees": 0
+    },
+    {
+     "city": "oahu",
+     "trees": 0
+    },
+    {
+     "city": "palermo",
+     "trees": 0
+    },
+    {
+     "city": "rome",
+     "trees": 0
+    },
+    {
+     "city": "tokyo",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
    "logged": true
   }
  ],
