@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run, ninth continuation) - enrichment: New Orleans, 2 trees
+
+- New Orleans: Live Oak Society registry ids on nol_003 (no. 912, girth 510 cm, conflicting 25 ft elsewhere noted) and nol_004 (Etienne Bore, no. 21; girth left out, sources conflict). No heights (only hedged or monumentaltrees figures), no season, access unchanged: neworleanscitypark.com and audubonnatureinstitute.org block automated fetches (blocklist candidates). Preflight 0 problems, 0 new trees, ~140k tokens.
+
 ## 2026-10-06 (night run, eighth continuation) - enrichment: Florence, 6 trees
 
 - Florence: AMI register codes on flo_001, 002, 003, 011 and Tuscan regional list no. 36 on flo_012 (register_name and id only: the only per-tree pages are the citizen association's ilregistrodeglialberi.it, not an authority, so no register_url); measurements on flo_001 (380 cm, 18 m), flo_002 (427 cm), flo_003 (20.5 m, girth left out, not clearly at 1.30 m), flo_009 (300 cm, 18 m, approximate). flo_013 and flo_014 unchanged: the Comune di Firenze PDF "Piante Monumentali della città di Firenze" carries a pine figure (382 cm, 33.5 m) but could not be read here, best next lead. No season set. Preflight 0 problems, 0 new trees, ~150k tokens.
