@@ -128,6 +128,7 @@ struct AmbassadorWantedRow: View {
     /// website draws the same two steps in one dialog (AmbassadorLine.astro).
     @State private var confirming = false
     @State private var sentShown = false
+    @State private var failedShown = false
 
     /// THE WHOLE ROW IS THE CONTROL (Hidde, 2026-10-04: "just make the whole
     /// thing clickable instead of adding a huge button"), an iOS list row with
@@ -182,6 +183,11 @@ struct AmbassadorWantedRow: View {
         } message: {
             Text("We'll email you soon with a few questions about the list.")
         }
+        .alert("Request not sent", isPresented: $failedShown) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text("Something went wrong sending your request. Please try again in a moment.")
+        }
     }
 
     private func tap() {
@@ -189,12 +195,25 @@ struct AmbassadorWantedRow: View {
         confirming = true
     }
 
+    /// A request needs a LIVE session, not just one stored on the phone
+    /// (Hidde, 2026-10-06: "i just requested ambassador without being logged
+    /// in", then "its not working"). isSignedIn only asks whether a session is
+    /// saved; when it has expired and cannot be renewed, freshToken() is nil
+    /// and the old code sent the request anyway on the publishable key, which
+    /// the database refuses (supabase/postbox-needs-an-account.sql), and then
+    /// said nothing at all. Now: no token opens the sign-in sheet, and a send
+    /// that fails says so.
     private func send() {
         sending = true
         Task {
-            let ok = await Submission.requestAmbassador(city: place, token: await account.freshToken())
+            guard let token = await account.freshToken() else {
+                sending = false
+                signingIn = true
+                return
+            }
+            let ok = await Submission.requestAmbassador(city: place, token: token)
             sending = false
-            if ok { asked = true; sentShown = true }
+            if ok { asked = true; sentShown = true } else { failedShown = true }
         }
     }
 }
