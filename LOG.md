@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, continuation) - enrichment pass: Tenerife, Berlin
+
+Tenerife: 3 of 4 trees now carry a Cabildo register record, with girth and height for the two Vilaflor pines and an access line with prices for the Drago; the Gran Ficus stays open (no per-tree record, no measurements). Berlin: 19 trees name their Naturdenkmal register id, 7 gained girth or height from the Senate's archived pages, the Pfaueninsel access line now says the ferry costs 6 euro, and the red oak gained its autumn-colour season. Open conflicts: Dicke Marie's height is 15 to 16 m in one source and 26 m in another (none set); ber_004's register entry sits 77 m from our pin, so the pin may be off. No new trees. Preflight 0 problems.
+
 ## 2026-10-06 (night run) - enrichment pass: Amsterdam, Barcelona; Seville blocked
 
 Visits, 7 days: 1,484 visits, 1,659 pageviews. Took the enrich lane that prepare.py put first. Amsterdam: 4 trees now name the national register by id (the other 3 stay gaps: two wingnuts could not be told apart or matched, the Hortus cycad is not in the register). Barcelona: all 12 trees link their Arbres d'interes local record, 4 gained girth or height, and the Jardi Botanic Historic access line was corrected (the museum says admission is free, with seasonal hours, and a notice says the garden may be closed for maintenance, so those two pages may deserve a look). Seville closed nothing: sevilla.org never answered, so it is on the fetch blocklist, and the one figure the agent offered (sev_018 girth 220 cm) was not re-read from the source so I did not apply it. No new trees this window. Preflight 0 problems.
