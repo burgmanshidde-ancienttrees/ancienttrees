@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, third attempt) - Chicago 6 to 13 live
+
+Merged chi_007 to chi_013 (7 trees, all forest preserve champions) into Chicago, the most the 60-in-24-hours cap allowed. Rewrote the intro, meta, question_meta, question_context and the free-to-visit FAQ for 13 trees (also fixes the old golf-course contradiction). Preflight 0 problems. chi_014 to chi_017 stay in data/research/chicago-verified.json for after the window moves; the Chicago claim stays standing for them. Nothing else was ready: no READY leads, Vienna is a wall.
+
 ## 2026-10-06 (night run, second attempt) - Chicago retried, still capped; Vienna a wall
 
 Pulled, found no standing claims and no READY leads. Merged Chicago's 11 trees and the copy draft: the pace check failed at 64 of 60 in 24 hours and the question_context ran to 205 words. Reverted again. Chicago merges after the 24-hour window moves; the notes in the entry below still hold. Verify claim on Vienna released, no new tree, recorded as a wall for 48h. recognise.py --stuck has nothing to do. Did not touch the failed Fresh-eyes review, Weekly analysis or iOS runs.
