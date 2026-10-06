@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run, third continuation) - enrichment: Glasgow, 1 height
+
+- Rung: enrich, per prepare.py (7-day visits: 1,735 visits, 1,983 views). Glasgow had 6 gaps on 3 indexed trees; the verify pass closed one: 25 m height on the Argyle Street Ash (gla_005, Tree of the Year 2026 page). No per-tree register record exists for any of the three; the Darnley Sycamore was under-checked because the agent's batched curl was refused. Season left alone (ash has no striking moment). Preflight 0 problems, committed d58b1f9c. Shipped 0 new trees, ~128k tokens, thin yield. The shelf is still under its floor (REFILL THE SHELF names bamberg, graz, munich, potsdam, rothenburg, salzburg), which is the next run's first dispatch. Not checked: the iOS app's red scheduled run flagged at session start.
+
 ## 2026-10-06 (night run, second continuation) - translation: Ede (nl)
 
 - Dutch overlay for Ede (7 trees, city, 4 FAQ; English twin has 62 impressions). i18ncheck clean, 0 problems across 99 overlays. ~144k tokens.
