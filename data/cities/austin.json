@@ -48,7 +48,8 @@
       "story": "In 1989 a man poured enough Velpar herbicide around the roots of this tree to kill roughly a hundred trees. Austin reacted the way few cities react to an assault on a plant. Children taped notes to the trunk, arborists rigged a screen to shade it through the summer, and crews dug out the poisoned soil and fed what was left. Two thirds of the tree died anyway and more than half the crown had to come off. The rest of it held on, and in 1997 it set acorns again.\n\nWhat survived is a Texas live oak of around five hundred years, now permanently one sided. Local tribes are said to have called it the father of the forest, and tradition puts Stephen F. Austin under it signing his first boundary agreement with them, though that part is story rather than record. What is measured is the spread: before the poisoning its branches reached thirty nine metres across.\n\nIt has its own small park, which is the tell. A city does not buy a block of land in the middle of downtown for a tree it thinks is ordinary.",
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Treaty_Oak_(Austin,_Texas)",
-        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
+        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)",
+        "https://famoustreesoftexas.tfs.tamu.edu/treaty-oak/"
       ],
       "access": "Free. A small public city park, open daylight hours.",
       "transport": "About 15 minutes on foot west from 6th Street and Congress Avenue.",
@@ -62,7 +63,11 @@
       },
       "how_to_recognise": "A wide, low, visibly lopsided live oak standing alone in a small fenced park, with the crown much heavier on one side than the other.",
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Famous Trees of Texas (Texas A&M Forest Service)",
+        "url": "https://famoustreesoftexas.tfs.tamu.edu/treaty-oak/"
+      }
     },
     {
       "id": "aus_002",
@@ -141,9 +146,12 @@
       "story": "Father Antonio Olivares, the Franciscan who later founded San Antonio, wrote about this cypress in 1716. It was old then. Texas Parks and Wildlife calls it the oldest bald cypress on public land in the state and dates it past five hundred years, with some accounts reaching five hundred and fifty.\n\nIt stands where Onion Creek runs through the park, thirty one metres tall on a trunk just under five metres round, big enough that it now houses other things: nesting birds, ball moss, vines working up the bark. Bald cypress is a conifer that drops its needles, so the tree is bare through winter and turns rust orange before it goes, which is the week to come if you want the colour.\n\nOnion Creek has flooded around the trunk in 1869, in 2013 and again in 2015. Each time the water went down and the tree was where it had been. Take the Rock Shelter Trail northeast from the main parking area; it is signposted, and there is no mistaking it when you arrive.",
       "verified_sources": [
         "https://tpwd.texas.gov/state-parks/mckinney-falls/nature",
-        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
+        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)",
+        "https://tpwd.texas.gov/state-parks/mckinney-falls",
+        "https://tpwd.texas.gov/state-parks/mckinney-falls/nature (Texas Parks and Wildlife: 103 feet tall; the same page gives a trunk 195 inches around but does not say at what height, so no girth is recorded)",
+        "https://famoustreesoftexas.tfs.tamu.edu/old-baldy/"
       ],
-      "access": "Texas state park, entrance fee, open daily.",
+      "access": "Texas state park, open daily (gate 8 a.m. to 10 p.m.). Entrance $6 for adults, free for children 12 and under. The park often reaches capacity, so reserving a day pass online is recommended. The tree stands northeast of the main parking area.",
       "transport": "About 9 km southeast of downtown. Drive; there is parking at the trailhead.",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Old_Baldy_McKinney_Falls_State_Park_Texas_2022.jpg",
@@ -163,7 +171,12 @@
         "label": "November, when the needles turn rust before they drop",
         "kind": "autumn colour"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Famous Trees of Texas (Texas A&M Forest Service)",
+        "url": "https://famoustreesoftexas.tfs.tamu.edu/old-baldy/"
+      },
+      "height_m": 31.4
     },
     {
       "id": "aus_005",
@@ -181,7 +194,8 @@
       "story": "In the spring of 1842 Gideon White was out looking for livestock when riders caught him in the open. He got a tree between himself and them and fought from behind it, killing at least one before they killed him. The bullet holes and arrow marks stayed visible in the bark for decades afterwards.\n\nFour years later his daughter Louisa married Edward Seiders, an Austin grocer, and for a while the couple lived in her father's cabin by the spring. The spring took the family name and so did the grove. The Seiders then did something that reads oddly now and worked completely: they built bath houses, picnic tables and a dance pavilion along the creek to get Austin to come out and use the place. Austin came, and has not really stopped.\n\nFour big live oaks stand together in the middle of the greenbelt, reachable on paved path from either end. The Texas Forest Service notes they were already large when the city was being laid out in the 1830s, which puts them past two centuries and probably well past.",
       "verified_sources": [
         "https://shoalcreekconservancy.org/the-saga-of-seiders-springs/",
-        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
+        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)",
+        "https://famoustreesoftexas.tfs.tamu.edu/seiders-oak/"
       ],
       "access": "Free. Public greenbelt with paved paths, open daylight hours.",
       "transport": "About 4 km north of downtown along the Shoal Creek trail, off West 34th Street.",
@@ -195,7 +209,11 @@
       },
       "how_to_recognise": "A group of four heavy live oaks standing together in the open middle of a narrow creek greenbelt.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Famous Trees of Texas (Texas A&M Forest Service)",
+        "url": "https://famoustreesoftexas.tfs.tamu.edu/seiders-oak/"
+      }
     },
     {
       "id": "aus_006",

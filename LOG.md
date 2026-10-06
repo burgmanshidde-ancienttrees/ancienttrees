@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run, sixth continuation) - enrichment: Austin, 3 trees
+
+- Austin: Famous Trees of Texas (Texas A&M Forest Service) per-tree record on all 3 indexed trees (Treaty Oak, Old Baldy, Seiders Oak); Old Baldy got a 31.4 m height from Texas Parks and Wildlife and an access line with hours and fee from the park's own page. No girths or heights for the other two (no source I could open gives one). The register calls the Seiders Oaks Texas Live Oak (Quercus fusiformis) where we say Oak (Quercus sp.), a species refinement still open. No season set. Preflight 0 problems, 0 new trees, ~150k tokens.
+
 ## 2026-10-06 (night run, fifth continuation) - enrichment: Krakow, 6 trees
 
 - Krakow: GDOS/CRFOP register ids and girths on 6 of 7 indexed trees (from the Polish Wikipedia wykaz, state 2023, which carries each CRFOP id); no per-tree authority page opened (crfop.gdos.gov.pl is behind an Incapsula bot block). kra_002 Henryk Oak unmatched, left open. ogrod.uj.edu.pl returned 502 throughout, so botanical garden prices and hours are still missing for kra_001 and kra_004: add it to the fetch blocklist and retry later. No season set. Preflight 0 problems, 0 new trees, ~135k tokens. Next in enrich: austin.
