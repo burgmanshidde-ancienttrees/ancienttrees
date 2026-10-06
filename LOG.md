@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (session) - an ambassador hears when their list grows
+
+- **Hidde:** "shall we build a flow that once an ambassador is defined and that city has a new tree approved an automated message goes to that ambassador just for heads up". Built, on both ends of the knock's mail step.
+- **Convention (CONVENTIONS.md 2026-10-06):** the code owner's. Whoever looks after a part is told when it changes, once per change, never once per item. So `python3 scripts/ambassador.py --heads-up --send` sends ONE mail per ambassador per knock listing every tree that went live on their place since the last mail, only trees whose page is already in the feed, and the mail says reply is the way to answer and the way to stop. Signed Ancient Trees.
+- **Baseline seeded today for all six** (Copenhagen 49, Porto 27, Florence 27, Lisbon 36, Prague 30, Stockholm 8) under `told` in data/ambassadors.json: nobody is mailed about trees that were there when they said yes. The first heads-up goes out the first knock after a new tree in one of those six reaches the site.
+- **Address:** none of the six has an app account, so the mail goes to the address behind the keyed hash on their entry, resolved against the private outreach files the knock pulls from Supabase. An ambassador whose hash matches nothing is printed in the knock's log, never silently passed.
+- **Tested here** with one Stockholm tree taken out of the baseline and a stubbed feed: the body passes mailcheck; the live feed itself is unreachable from the sandbox, so the first real send is the knock's to make and its log line to read.
+
 ## 2026-10-06 (session) - the ambassador request, the third report: measured, not remembered
 
 - **Hidde:** "For the 3rd time - I can still request ambassadorship without being logged in can you close this loop. How do we keep track of people requesting this??"

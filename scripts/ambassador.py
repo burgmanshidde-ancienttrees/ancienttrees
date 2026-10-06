@@ -18,6 +18,7 @@ CLAUDE.md ("Ambassadors"); this script only records the answer.
     python3 scripts/ambassador.py --invite-scan [--send]
     python3 scripts/ambassador.py --requests [--send]
     python3 scripts/ambassador.py --asked
+    python3 scripts/ambassador.py --heads-up [--send]
 
 --invite-scan is the standard first contact (Hidde, 2026-10-02: "lets make it
 a standard thing whenever someone adds something to a city we dont have a
@@ -39,6 +40,20 @@ EVERY request is recorded there, ours and anonymous ones included with a note
 saying so (Hidde, 2026-10-06: "How do we keep track of people requesting
 this??"); --asked prints the ledger without a key. An anonymous row is proof
 the database accepts posts without an account, and the scan says so out loud.
+
+--heads-up tells an ambassador when THEIR list grew (Hidde, 2026-10-06: "once
+an ambassador is defined and that city has a new tree approved an automated
+message goes to that ambassador just for heads up"). The convention is the
+code-owner one: whoever looks after a part gets told when it changes, as
+GitHub requests a review from a CODEOWNER whenever a change touches their files
+(from memory; docs.github.com was unreachable from the sandbox). One mail per
+ambassador per knock, every new tree in it, never one mail per tree, and only
+for trees whose page is already LIVE in the feed. The first knock after an
+ambassador is granted seeds a baseline of the trees already on the list and
+mails nothing; "told" in data/ambassadors.json carries it per place. An address
+is resolved from the account, or for a mail ambassador from the keyed hash
+against the private outreach files the knock pulls; a person with neither is
+printed, never silently advanced past.
 
 --grant-named is for somebody who gave us trees by MAIL and has no app account
 (Hidde, 2026-10-02, on Hans Erik Lund and Paulo Araujo: "dont email paulo or
@@ -552,6 +567,170 @@ def requests_scan(send):
     return 0
 
 
+HEADS_UP_SUBJECT = "New on the {place} list"
+HEADS_UP_BODY = (
+    "Hi,\n\n"
+    "A heads-up, since you look after {place} for us: {what} on the list since we last wrote.\n"
+    "{links}\n\n"
+    "If anything about {them} is off, or you know a better photograph, just reply. "
+    "The full list is here:\n{listlink}\n"
+    "{appline}\n"
+    "Thanks,\nAncient Trees\n"
+)
+# Every outbound mail carries the App Store link (Hidde, 2026-09-03, enforced
+# by scripts/mailcheck.py), except to somebody who has said they cannot use
+# it (NO_APP_LINK there) and to somebody who already holds the app.
+HEADS_UP_APPLINE = "The app, if you want the list with you outside: {app}\n"
+
+
+def _private_addresses():
+    """Every address in the private outreach files the knock pulls
+    (scripts/private_store.py), as {hmac: address}. Nothing here is written
+    anywhere: it is read to find whom a hash on data/ambassadors.json means."""
+    import glob as _g
+    import re as _re
+    found = {}
+    if not KEY:
+        return found
+    pat = _re.compile(r"^[^@\s]+@[^@\s]+\.[a-z]{2,}$", _re.I)
+
+    def walk(v):
+        if isinstance(v, str):
+            if pat.match(v.strip()):
+                found.setdefault(_hmac(v), v.strip())
+        elif isinstance(v, dict):
+            for x in v.values():
+                walk(x)
+        elif isinstance(v, list):
+            for x in v:
+                walk(x)
+    paths = _g.glob(os.path.join(ROOT, "data", "outreach-*.json")) + \
+        [os.path.join(ROOT, "data", "research", "outreach-contacts.json")]
+    for path in paths:
+        try:
+            with open(path, encoding="utf-8") as fh:
+                walk(json.load(fh))
+        except Exception:
+            continue
+    return found
+
+
+def heads_up(send):
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    try:
+        from contributor_reply import mailcheck_ok
+    except Exception:
+        mailcheck_ok = None
+    with open(FILE, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    told = doc.setdefault("told", {})
+    private = None
+    creds = {k: os.environ.get(f"OUTREACH_{k}") for k in ("SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS", "FROM")}
+    sent_log_path = os.path.join(ROOT, "data", "outreach-sent.json")
+    today = datetime.date.today().isoformat()
+    n = 0
+    for e in doc.get("ambassadors", []):
+        slug = e["place_slug"]
+        path = os.path.join(ROOT, "data", "cities", f"{slug}.json")
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        trees = {t["id"]: t.get("name") or t["id"] for t in city.get("trees") or [] if t.get("id")}
+        place = city.get("city") or e.get("place_name") or slug
+        rec = told.get(slug)
+        if rec is None:
+            # The baseline: what was on the list the day the heads-up began.
+            # Nothing is mailed for it, these trees were there when they said yes.
+            told[slug] = {"trees": sorted(trees), "since": today, "mailed": []}
+            print(f"heads-up {slug}: baseline of {len(trees)} tree(s) recorded, nothing mailed")
+            continue
+        known = set(rec.get("trees") or [])
+        new = [tid for tid in trees if tid not in known]
+        if not new:
+            continue
+        urls = _tree_urls()
+        live = [tid for tid in new if tid in urls]
+        if not live:
+            print(f"heads-up {slug}: {len(new)} new tree(s) not on the site yet, next knock")
+            continue
+        who = e.get("display_name") or (e.get("user_id") or "?")[:8]
+        names = [trees[t] for t in live]
+        shown = names[:12]
+        what = (f"one new tree, {shown[0]}, is" if len(live) == 1
+                else f"{len(live)} new trees are")
+        links = "\n".join(f"{trees[t]}: {BASE_URL}{urls[t]}" for t in live[:12])
+        if len(live) > 12:
+            links += f"\nand {len(live) - 12} more on the list"
+        # Whom to write to: the account, or the hash against the private files.
+        addr, has_app = None, bool(e.get("user_id") or e.get("linked_user_id"))
+        if KEY:
+            if has_app:
+                addr = _address(e.get("user_id") or e.get("linked_user_id"))
+            if not addr and e.get("address_hmac"):
+                if private is None:
+                    private = _private_addresses()
+                for h in e["address_hmac"]:
+                    if h in private:
+                        addr = private[h]
+                        break
+        try:
+            from mailcheck import NO_APP_LINK, APP_STORE_URL
+        except Exception:
+            NO_APP_LINK, APP_STORE_URL = {}, "https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB"
+        no_link = has_app or (addr or "").lower() in NO_APP_LINK
+        appline = "" if no_link else HEADS_UP_APPLINE.format(app=APP_STORE_URL)
+        body = HEADS_UP_BODY.format(place=place, what=what, links=links,
+                                    them="it" if len(live) == 1 else "them",
+                                    listlink=f"{BASE_URL}/{slug}", appline=appline)
+        subject = HEADS_UP_SUBJECT.format(place=place)
+        if mailcheck_ok:
+            # Somebody on mailcheck's own no-app list is judged as the person
+            # already holding the app: the link is the one line they must not get.
+            ok, why = mailcheck_ok(body, app_user=no_link)
+            if not ok:
+                print(f"heads-up {slug} / {who}: held by mailcheck\n{why}")
+                continue
+        if not send or not addr or not all(creds.values()):
+            why = "dry run" if not send else ("no address resolves for this ambassador" if not addr else "no mail credentials")
+            print(f"heads-up {slug} / {who} ({why}): {len(live)} new tree(s)\n  {subject}\n"
+                  + "\n".join("  " + l for l in body.splitlines()))
+            continue
+        if "burgmans.hidde" in creds["FROM"].lower():
+            print("REFUSED: a heads-up would go out under a personal address")
+            continue
+        msg = EmailMessage()
+        msg["From"], msg["To"], msg["Subject"] = creds["FROM"], addr, subject
+        msg.set_content(body)
+        try:
+            with smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=60) as server:
+                server.starttls()
+                server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+                server.send_message(msg)
+        except Exception as ex:
+            print(f"heads-up {slug} / {who}: transport failed ({ex.__class__.__name__})")
+            continue
+        rec["trees"] = sorted(known | set(live))
+        rec.setdefault("mailed", []).append({"date": today, "trees": live})
+        try:
+            with open(sent_log_path, encoding="utf-8") as fh:
+                log = json.load(fh)
+            log.setdefault("sent", []).append({"date": today, "to": addr, "outlet": "ambassador heads-up",
+                                               "subject": subject, "batch": "ambassador-heads-up"})
+            with open(sent_log_path, "w", encoding="utf-8") as fh:
+                json.dump(log, fh, indent=2, ensure_ascii=False)
+                fh.write("\n")
+        except Exception:
+            pass
+        n += 1
+        print(f"heads-up {slug} / {who}: sent ({', '.join(names)[:70]})")
+    with open(FILE, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+    print(f"heads-up: {n} mail(s) sent")
+    return 0
+
+
 def asked_ledger():
     """Who asked to be an ambassador, from the file alone (no key needed).
 
@@ -619,6 +798,8 @@ def main(argv):
         return sync()
     if "--asked" in argv:
         return asked_ledger()
+    if "--heads-up" in argv:
+        return heads_up("--send" in argv)
     if "--requests" in argv:
         return requests_scan("--send" in argv)
     if "--invite-scan" in argv:

@@ -3125,6 +3125,14 @@ Hidde asked whether Discover should become an infinite scroll, with rows like tr
 
 Reference: AllTrails' and Airbnb's phone result lists, and the ordered-list convention for numbered rows. On a touch screen a card has no hover fill and no underlined title (iOS keeps :hover on the last thing touched, which is what painted Barcelona's first card cream). Every line of text hangs from one left edge, so with a number badge the meta, story and credit indent to the title, not to the badge. The photo credit closes the card instead of sitting between the photograph and its name.
 
+## Telling an ambassador their list changed (2026-10-06)
+
+Hidde: "once an ambassador is defined and that city has a new tree approved an automated message goes to that ambassador just for heads up."
+
+**Reference: GitHub code owners** (from memory; docs.github.com is blocked from the sandbox, re-fetch when a session can): when a pull request changes files somebody is listed as owning, that person is automatically requested for review and notified, once per pull request, never once per line. Ownership of a part means being told when that part changes, and the unit of the notice is the change, not the item. **Google Local Guides** (fetched 2026-10-02, above) writes to nobody about changes at places they contributed to; members set email preferences themselves. **Wikipedia watchlists** (from memory) mail once per page per visit, not once per edit, which is the same batching.
+
+What ours does: `scripts/ambassador.py --heads-up --send` on every knock sends one mail per ambassador listing every tree that went live on their place since the last mail, only trees whose page is already in the feed, nothing for the trees that were there when they said yes (a baseline is seeded, mailed to nobody). Reply is the way to answer and the way to stop; the mail says so in one line. Signed Ancient Trees, never Hidde (hard rule 4).
+
 ## Asking to become an ambassador: confirm, then a receipt (2026-10-05)
 
 Reference: Google Maps "Join Local Guides" opens a sheet that says what the role is and asks for a yes, then shows that you are in; iOS apps confirm a request with a standard alert and answer it with a second one. Nobody swaps a grey line in place, which is what ours did ("Thanks, we'll be in touch." under an underlined title, Hidde 2026-10-05: "ik zou eerder een pop up verwachten"). Web: tapping the open seat opens a dialog (what the role is, Send request / Not now), and the same dialog turns into "Request sent". App: the same two steps as two alerts. Nothing is written until Send request.

@@ -249,6 +249,10 @@ jobs:
           # The open seat (2026-10-04): somebody who pressed "Become the
           # ambassador" on a city page gets the editor questions once.
           python3 scripts/ambassador.py --requests --send
+          # And a heads-up to an ambassador whose list grew (Hidde,
+          # 2026-10-06): one mail per ambassador per knock, listing the trees
+          # that went live since the last one, never one mail per tree.
+          python3 scripts/ambassador.py --heads-up --send
           python3 scripts/private_store.py push
           if ! git diff --quiet data/ambassadors.json; then
             git config user.name "claude[bot]"
