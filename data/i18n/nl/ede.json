@@ -1,0 +1,88 @@
+{
+ "_note": "nl overlay for ede, written 2026-10-06 from data/cities/ede.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Ede",
+ "title": "Monumentale bomen in Ede: de 7 mooiste",
+ "meta_description": "Zeven bijzondere bomen rond Ede: een eeuwenoude eikenstoof in de Veluwse bossen, twee eiken bij Kasteel Hoekelum en een eik op de Hoge Veluwe.",
+ "intro": "Ede ligt op zand aan de westrand van de Veluwe, en dat is arme grond. Die arme grond is de reden dat de oudste boom hier geen boom in de gewone zin is. Het is een eikenstoof: een stronk die eeuwenlang telkens tot op de grond is afgezet en elke keer een nieuwe krans stammen opschoot, zodat wat overblijft de voet is, breed en laag en ouder dan welke stam erop ook. Daaromheen staan een kasteel met twee eiken, een beuk met een eigen naam in het Edese bos en een eik in een nationaal park.",
+ "question_title": "Wat is de oudste boom van Ede? (225 tot 275 jaar)",
+ "question_meta": "De oudste boom van Ede is een stoof van wintereik ten oosten van de Apeldoornseweg, uit de periode 1750 tot 1800. Waar hij staat, en nog zes.",
+ "question_answer": "De oudste boom van Ede is een stoof van wintereik in het oude hakhoutbos ten oosten van de Apeldoornseweg, bij de Immenweg, die het landelijk register in de plantperiode 1750 tot 1800 plaatst. Een stoof is wat overblijft als een boom generaties lang telkens tot op de grond is afgezet: het wortelstelsel en de voet leven door en schieten elke keer een nieuwe krans stammen op, zodat de stammen die je ziet een paar decennia oud kunnen zijn terwijl de stoof eronder eeuwen telt. Dit bos staat op topografische kaarten van 1830 tot 1850, werd in de jaren twintig en dertig van de vorige eeuw doorgeplant met naaldbomen, en langs de paden en op sommige percelen bleef een aantal oude eikenstoven gespaard. Dit is de grootste daarvan, in een rij langs een pad.",
+ "question_context": "De leeftijden op deze pagina komen uit het Landelijk Register Monumentale Bomen, dat een plantdecennium vastlegt en geen jaartal. Elk getal hier is dus een bandbreedte, en geen enkel getal is smaller gemaakt om preciezer te lijken. Het register is de editie van 2024 en is voor alle zeven de enige bron, en daarom zijn ze gemarkeerd. Bij de stoof vraagt het getal om zorgvuldig lezen: een hakhoutstoof heeft geen plantdatum in enige zinvolle betekenis, en de periode 1750 tot 1800 beschrijft wanneer de stoof is ontstaan, niet hoe oud iets is dat er nu uit groeit. Bij één boom loont het om de toegang na te gaan: de eik van De Pampel staat in Nationaal Park De Hoge Veluwe, waar je entree betaalt, en de twee eiken van Hoekelum staan op kasteelterrein dat in het register als bezoekbaar staat. Waar een pin als bij benadering is gemarkeerd, kennen we het bos of het veld, maar niet de precieze stam.",
+ "faq": [
+  {
+   "q": "Wat is een hakhoutstoof?",
+   "a": "De levende voet van een boom die telkens tot op de grond is afgezet. Eik, hazelaar, linde en andere soorten reageren op het kappen door uit de stronk een krans nieuwe loten op te schieten, die na tien tot twintig jaar opnieuw worden geoogst. Doe dat eeuwenlang en de stoof groeit uit tot een lage, brede ring, zodat de zichtbare stammen jong zijn en datgene waaruit ze groeien heel oud."
+  },
+  {
+   "q": "Wat is de oudste boom van Ede?",
+   "a": "De stoof van wintereik in het hakhoutbos ten oosten van de Apeldoornseweg bij de Immenweg, uit de periode 1750 tot 1800, en de grootste stoof in een rij langs het pad."
+  },
+  {
+   "q": "Moet ik betalen om een van deze bomen te zien?",
+   "a": "Voor één. De eik van De Pampel staat in Nationaal Park De Hoge Veluwe, waar je entree betaalt. De andere zes zijn gratis, al staan de twee bij Kasteel Hoekelum op kasteelterrein en is het verstandig dat na te gaan voor je er ver voor reist."
+  },
+  {
+   "q": "Waarom staat er een mammoetboom bij een brandweerkazerne?",
+   "a": "Omdat hij tussen 1880 en 1890 is geplant, toen het gebouw en het plein eromheen er heel anders uitzagen dan nu. De mammoetboom was in die tijd de modeboom om indruk mee te maken, en hij bleef staan terwijl al het andere op het Burgemeester van Dijkeplein om hem heen werd vervangen."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Dutch common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+ "trees": {
+  "ede_001": {
+   "name": "De Grote Eikenstoof",
+   "species": "Wintereik (Quercus petraea)",
+   "age_estimate": "ruwweg 225 tot 275 jaar als stoof, uit de plantperiode 1750 tot 1800 van het register; de stammen erop zijn veel jonger",
+   "access": "Gratis. Bos met openbare paden, ten oosten van de Apeldoornseweg.",
+   "transport": "Ongeveer 6 km ten noordoosten van station Ede-Wageningen, aan de Apeldoornseweg bij de Immenweg.",
+   "story": "Dit is geen boomstam. Het is een voet, breed en laag, met een krans stammen die eruit omhoog staan, en het is het oudste levende ding in Ede.\n\nHakhout is wat mensen duizend jaar lang met eiken op arme zandgrond deden, omdat het van een trage boom een oogst maakt die steeds terugkomt. Zaag een eik af tot op de grond en hij gaat niet dood: uit de stronk schiet een dichte krans nieuwe loten op, die tien of twintig jaar later opnieuw worden geoogst voor brandhout, afrasteringen, houtskool en schors voor de looierij. Herhaal dat eeuwenlang en de stronk groeit uit tot een laag, rond platform van oud hout, soms twee of drie meter breed, met een holle kern waar de oorspronkelijke stam is weggerot.\n\nDe leeftijd zit dus in de voet. De stammen die je ziet zijn jong. Waar ze op staan is misschien twintig keer afgezet en weer uitgelopen.\n\nDit bos staat op topografische kaarten van 1830 tot 1850. In de jaren twintig en dertig van de vorige eeuw werd het doorgeplant met naaldbomen, en op sommige percelen en langs sommige paden bleven de oude eikenstoven gespaard. Dit is de grootste daarvan, in een rij langs een pad.\n\nKom in de winter, dan zie je de vorm van de voet."
+  },
+  "ede_002": {
+   "name": "De Eik van De Pampel",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 165 tot 175 jaar, uit de plantperiode 1850 tot 1860 van het register",
+   "access": "Betaald. In Nationaal Park De Hoge Veluwe, waar je entree betaalt.",
+   "transport": "Ongeveer 15 km ten noordoosten van station Ede-Wageningen. Dichtstbijzijnde parkingang: Otterlo.",
+   "story": "Hij staat in een omheind nationaal park waar je moet betalen om te wandelen, en juist die twee dingen zijn de reden dat hij er goed bij staat.\n\nDe Hoge Veluwe is 55 vierkante kilometer zand, heide, stuifduinen en aangeplant bos, in de jaren 1910 bij elkaar gekocht door Anton en Helene Kröller-Müller en later aan de staat overgedragen. Het is omheind, het wordt beheerd, en het is een van de weinige landschappen in Nederland waar je een uur kunt lopen zonder het te verlaten. De Pampel is een plek in het noordwesten ervan, aan de Houtkampweg.\n\nDe eik valt in de plantperiode 1850 tot 1860, ruim voor de Kröller-Müllers, en hoort dus bij het landgoed- of boerenbos dat hier eerder stond. Op de Veluwe betekent dat meestal dat hij opgroeide op grond die bij mensenheugenis nog heide was, want veel van dit zand lag tot in de negentiende eeuw open en stoof, en werd pas daarna beplant.\n\nEen eik die zich op arm zand vestigt, groeit langzaam en zet dicht hout aan, dus zijn stamomtrek doet hem jonger lijken dan hij is.\n\nGa in oktober, en laat de eikels de reden zijn. De wilde zwijnen en herten hier leven ervan."
+  },
+  "ede_003": {
+   "name": "De Eik naast Kasteel Hoekelum",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 185 tot 195 jaar, uit de plantperiode 1830 tot 1840 van het register",
+   "access": "Kasteelterrein aan de Edeseweg, in het landelijk register vermeld als bezoekbaar.",
+   "transport": "Ongeveer 3 km ten zuidwesten van station Ede-Wageningen, aan de Edeseweg richting Bennekom.",
+   "story": "Hier staan twee eiken van dezelfde leeftijd, en ze zijn het waard om samen te bekijken, want samen laten ze zien wat open ruimte met een boom doet.\n\nDit is de eik naast het huis. Hij groeide op vlak bij gebouwen, met bebouwing en andere beplanting aan minstens één kant, en deed dus wat een ingeklemde boom doet: omhoog in plaats van opzij, een smallere kroon, en al vroeg zijn onderste takken kwijt. De andere, in de weide ervoor, had niets in de buurt en groeide juist breed uit.\n\nDezelfde soort, dezelfde plantperiode van 1830 tot 1840, vrijwel zeker hetzelfde oorspronkelijke ontwerp. Totaal verschillende vormen, en het enige verschil is hoeveel ruimte elk van de twee kreeg.\n\nDat is nuttiger om op te letten dan het klinkt, want zo lees je elke oude boom. Een brede, lage kroon met zware horizontale takken betekent dat de boom in het open veld opgroeide, ook als er sindsdien een bos omheen is gekomen. Een hoge, rechte stam zonder lage takken betekent concurrentie.\n\nKasteel Hoekelum ligt aan de Edeseweg tussen Ede en Bennekom, en het terrein staat in het landelijk register als bezoekbaar."
+  },
+  "ede_004": {
+   "name": "De Eik in de Weide van Hoekelum",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 185 tot 195 jaar, uit de plantperiode 1830 tot 1840 van het register",
+   "access": "Kasteelterrein aan de Edeseweg, in het landelijk register vermeld als bezoekbaar. De boom is vanaf de weg te zien.",
+   "transport": "Ongeveer 3 km ten zuidwesten van station Ede-Wageningen, aan de Edeseweg richting Bennekom.",
+   "story": "Een eik die in zijn eentje in een weiland staat, is een van de betrouwbaarste genoegens die dit land te bieden heeft, en hij staat er bijna altijd met opzet.\n\nSolitaire veldbomen werden gespaard of geplant om redenen die niets met uiterlijk te maken hadden. Schaduw voor het vee, een merkteken op een grens, een vast punt in een landschap waar er weinig van waren. Wat ze opleveren is een vorm die geen bosboom ooit krijgt: zware takken die laag uit de stam vertrekken en horizontaal uitlopen zo ver als het hout kan dragen, een kroon die veel breder is dan de boom hoog is, en open grond eronder.\n\nDeze heeft die ruimte sinds ongeveer 1830 tot 1840, in de weide voor Kasteel Hoekelum, terwijl zijn tweeling vlak bij het huis staat en er juist daardoor heel anders uitziet.\n\nEen vrijstaande eik van bijna tweehonderd jaar is ook een klein ecosysteem op zich. Oude eiken dragen meer soorten die van ze afhankelijk zijn dan welke andere boom in Noord-Europa ook, enkele honderden, de meeste in het dode hout en de spleten. De waarde zit dus in de delen die er verwaarloosd uitzien.\n\nGa bij lage winterzon, als het hele geraamte vanaf de weg te zien is."
+  },
+  "ede_005": {
+   "name": "Beuk Marjan",
+   "species": "Beuk (Fagus sylvatica)",
+   "age_estimate": "ruwweg 195 tot 205 jaar, uit de plantperiode 1820 tot 1830 van het register",
+   "access": "Gratis. Openbaar bos met paden.",
+   "transport": "Ongeveer 4 km ten noordoosten van station Ede-Wageningen, in het Edese bos ten noorden van de N224.",
+   "story": "Iemand noemde deze boom Marjan, en die naam belandde in het landelijk register.\n\nDat is iets kleins, en het is niet niks. Bijna elke vermelding in dat register is een soort en een adres. Een handvol draagt een naam, en een naam betekent een mens: iemand hier kende deze beuk goed genoeg om hem een naam te geven, gebruikte die vaak genoeg dat anderen het ook gingen doen, en uiteindelijk kwam hij op een officieel formulier terecht.\n\nDe boom zelf is een beuk van ongeveer tweehonderd jaar in het Edese bos, ten noorden van de N224, en juist die leeftijd is in dit landschap het interessante. Tweehonderd jaar geleden was een groot deel van de Veluwe open stuifzand, en de bossen rond Ede zijn grotendeels een schepping van de negentiende en twintigste eeuw, aangeplant om de grond vast te leggen en hout te telen. Een beuk uit de jaren 1820 stamt uit het allereerste begin daarvan.\n\nOp papier is de beuk ook de verkeerde boom voor deze grond. Hij wil vocht en doet het slecht op droog zand, dus een grote oude beuk hier heeft een beter plekje gevonden dan zijn buren.\n\nGebruik je hand. Die bast is het gladste in het hele bos."
+  },
+  "ede_006": {
+   "name": "De Mammoetboom bij de Brandweerkazerne",
+   "species": "Mammoetboom (Sequoiadendron giganteum)",
+   "age_estimate": "ruwweg 135 tot 145 jaar, uit de plantperiode 1880 tot 1890 van het register",
+   "access": "Gratis. Openbaar plein, altijd bereikbaar.",
+   "transport": "Ongeveer 2 km ten noorden van station Ede-Wageningen, aan het Burgemeester van Dijkeplein.",
+   "story": "Een boom uit de Sierra Nevada, in de jaren 1880 geplant in een Gelders dorp, staat nu naast een brandweerkazerne.\n\nDe mammoetboom was de statusboom van zijn tijd. In 1853 in Europa geïntroduceerd, dertig jaar later nog altijd duur, en onmiskenbaar uitheems in een landschap van eik en den, en dat was precies de bedoeling. Wie deze boom plantte, zei daarmee iets over de grond waarop hij stond, en die grond was toen nog geen gemeentelijk plein.\n\nAlles eromheen is sindsdien vervangen. De boom bleef, want een mammoetboom die in de jaren 1880 is geplant, haal je in de jaren 1950 niet meer zomaar weg, en nu is hij met afstand het oudste op het Burgemeester van Dijkeplein.\n\nDruk eens tegen de bast. Dat is het allerbeste aan deze soort, en bijna niemand doet het. De bast is dik, zacht en vezelig, en je vuist zakt erin weg. Het is een aanpassing aan bosbranden: de buitenlaag verkoolt en isoleert, terwijl het levende weefsel eronder het overleeft. Niets anders dat je in een Nederlands centrum kunt aanraken, gedraagt zich zo.\n\nAls we hem met rust laten, staat hij hier over duizend jaar nog."
+  },
+  "ede_007": {
+   "name": "De Eik aan de Dorpstraat",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 155 tot 165 jaar, uit de plantperiode 1860 tot 1870 van het register",
+   "access": "Gratis. Straatboom in het dorp, altijd bereikbaar.",
+   "transport": "Ongeveer 8 km ten noordwesten van station Ede-Wageningen, in Lunteren.",
+   "story": "Een dorpsstraat met een eik erin die ouder is dan de meeste huizen.\n\nLunteren is een Veluwedorp een paar kilometer ten noordwesten van Ede, en deze eik staat al aan de Dorpstraat sinds ergens tussen 1860 en 1870. Daarmee was hij er voordat de spoorlijn kwam, voordat het toerisme op gang kwam, en voor het grootste deel van de bebouwing die van een boerendorp een forensendorp maakte.\n\nEen eik aan een dorpsstraat heeft een zwaarder leven dan een eik in een bos, en dat zie je er meestal ook aan: teruggesnoeid voor de weg en de leidingen, wortels onder de bestrating, en een scheve kroon die overhelt naar de open ruimte die er nog is. Dat is niet zozeer schade als onderhandeling, gevoerd over anderhalve eeuw, tak voor tak.\n\nHet is ook het soort boom waar een dorp over steggelt. Elke generatie is er een reden om hem weg te halen, en tot nu toe heeft elke generatie besloten het niet te doen.\n\nGa aan de overkant staan in plaats van eronder. Vanaf de andere stoep zie je de hele vorm en lees je af waar de straat hem opzij heeft geduwd, en dat is het interessante deel."
+  }
+ }
+}
