@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run) - enrichment: Athens, closed nothing
+
+- Enrich Athens (6 indexed trees): the agent made two fetches and did not actually search for register records or measurements, so the pass was thin rather than exhausted; the holm oak and cypress species files mark no striking season. Marked done for 14 days anyway. About 113k tokens for nothing.
+
 ## 2026-10-06 (night run) - enrichment: London, closed nothing
 
 - Enrich London (19 indexed trees): the verify agent filled nothing. kew.org answers with a Cloudflare challenge (needs a session, not a night run), Wikipedia's Great Trees of London list has no per-tree pages or ids, and the pages reached held no sourced girth or height. Woodland Trust data untouched per the London gate. Marked done for 14 days so it is not re-served. About 132k tokens, wasted.

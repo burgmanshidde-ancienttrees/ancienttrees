@@ -9881,6 +9881,15 @@
    "trees": 0,
    "wasted": 132431,
    "note": "Closed nothing: kew.org Cloudflare challenge, no per-tree register page, no sourced measurements reachable."
+  },
+  {
+   "date": "2026-10-06",
+   "target": "athens (enrich)",
+   "kind": "verify",
+   "tokens": 113045,
+   "trees": 0,
+   "wasted": 113045,
+   "note": "Thin pass: two fetches, no register or measurement search. Nothing closed."
   }
  ]
 }
