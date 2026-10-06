@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, fifth attempt) - enrichment: Dublin
+
+- Enrich Dublin (4 indexed trees, 1 improved): the Champion Planes of New Square got a girth of 550 cm from a Trinity student tree blog (Trinity's own page says "5m+"; neither states the height of measurement, flagged in measure_source). No per-tree register page found for any of the four (Tree Council of Ireland and Dublin City Council pages gave nothing usable), so no register fields; no measurements for the Hungry Tree, St Anne's holm oaks or the Farmleigh sycamore; no season set. Preflight 0 problems. No new trees.
+
 ## 2026-10-06 (night run, fifth attempt) - enrichment: Brussels
 
 - Enrich Brussels (4 indexed trees, 2 improved): Kasterlinde (bru_002) and the Parc Leopold plane (bru_003) got their Inventaire du Patrimoine Naturel record (sites.heritage.brussels records 400 and 794) with girth and height from it; the plane is the thickest of its species in the region per the record. Pond oaks (bru_004) and Cinquantenaire chestnuts (bru_010) stay open: only a general listing exists, no tree-level record. No access hours or prices published, no season set (oriental plane has no striking moment). Preflight 0 problems. No new trees; writable shelf still empty (visits last 7 days: 1698).
