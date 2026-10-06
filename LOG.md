@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, sixth attempt) - enrichment: Malaga
+
+- Enrich Malaga (5 indexed trees, 4 improved): La Concepcion olive got girth 330 cm (garden's own page, height of measurement unstated, flagged) and a real access line with prices, hours and free slots; the araucaria got height 46 m; El Barrilito and the Picasso Gardens fig got heights from the council's TreeTags release. No per-tree register record found (Junta catalogue not searched); Alameda ficus left alone (release figure is for another specimen); no season set. Preflight 0 problems. No new trees.
+
 ## 2026-10-06 (night run, sixth attempt) - enrichment: Paris
 
 - Enrich Paris (10 indexed trees, 7 improved): seven trees got their Ville de Paris "Arbres remarquables" register id (matched within about 30 m of our pin, Saint-Gervais about 100 m); the Saint-Gervais elm also got girth 200 cm and height 12 m. Jardin des Plantes trees (Cedar of Jussieu, Second Robinier, Buffon Plane) stay open: the city register has no records there and mnhn.fr answers curl with a Cloudflare challenge (blocklist candidate). No access or season changes. Preflight 0 problems. No new trees; writable shelf still empty. Next in enrich queue: malaga.
