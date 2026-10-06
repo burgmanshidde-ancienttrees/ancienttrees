@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run, seventh continuation) - enrichment: Sintra, 2 trees
+
+- Sintra: sin_002 Fern Cork Oak got its ICNF entry KNJ1/303 (38 m from our pin, measured 2006), girth 475 cm, height 16.5 m; sin_001 Walking Tree got a 35 m height from the Parques de Sintra page (its 16.8 m perimeter is not tied to 1.30 m, so no girth). sin_004 Araucaria: no register entry, "more than 50 m" is a lower bound, seasonal opening hours ambiguous, nothing changed. No season set. Preflight 0 problems, 0 new trees, ~130k tokens. Enrichment passes are returning 2 to 6 trees each; next in the line is whatever `enrich.py --next` names.
+
 ## 2026-10-06 (night run, sixth continuation) - enrichment: Austin, 3 trees
 
 - Austin: Famous Trees of Texas (Texas A&M Forest Service) per-tree record on all 3 indexed trees (Treaty Oak, Old Baldy, Seiders Oak); Old Baldy got a 31.4 m height from Texas Parks and Wildlife and an access line with hours and fee from the park's own page. No girths or heights for the other two (no source I could open gives one). The register calls the Seiders Oaks Texas Live Oak (Quercus fusiformis) where we say Oak (Quercus sp.), a species refinement still open. No season set. Preflight 0 problems, 0 new trees, ~150k tokens.
