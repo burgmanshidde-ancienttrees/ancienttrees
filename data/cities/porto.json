@@ -259,7 +259,13 @@
       "curation_status": "ai_generated",
       "notes": "Age range, joint classification and 'oldest of species in Portugal' status confirmed by the city council's own classification announcement; garden history and species count confirmed independently via Wikipedia. Location upgraded to confirmed: an iNaturalist observation of this species inside the garden, the only Bischofia javanica recorded there, gives a surveyed point for one of the three (Bischofia javanica being rare enough in Portugal that a species match this specific is strong corroboration), about 130m from the previous whole-garden estimate. Photo replaced 2026-09-02: the iNaturalist image from that observation was a close-up of foliage and fruit, which the Cadiz standard rejects. Paulo V. Araujo's photograph, viewed directly, shows a whole tree in leaf with trunk and crown readable, in the garden. Flat overcast light (POOR on photo_light for contrast) and it still beats a leaf close-up: the subject is the tree. The observation stays the pin's evidence.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them as three trees growing together, evergreen with small dark fruit that stains when crushed. They stand in the Jardim Botanico do Porto."
+      "how_to_recognise": "You can recognise them as three trees growing together, evergreen with small dark fruit that stains when crushed. They stand in the Jardim Botanico do Porto.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP1312190I; AIP1312191I; AIP1312192I",
+        "url": null
+      },
+      "girth_cm": 365,
+      "height_m": 25
     },
     {
       "id": "por_007",
@@ -687,7 +693,11 @@
       "location_precision": "confirmed",
       "notes": "Reader tip by email, 2026-08-11; the sender is recorded off-site and is NOT named here or on the page, because a private email is not consent to be published. Confirmed in the ICNF national register as processo KNJ1/451, Ginkgo biloba, Jardim das Virtudes, classified D.R. n.o 6, II Serie de 10/01/2005, 200 years at the 2004 measurement, girth 4.3 m, height 35.5 m, crown 17 m. Register coordinate used directly, hence confirmed. The Dias com Arvores blog calls it by far the largest of its species in the country and possibly in Europe; that superlative is NOT repeated on the page under hard rule 8, since no survey settles it. Its December colour is documented there on 06/12/2004 and 05/12/2005. Photograph added 2026-08-11 with explicit written permission for this one image, from the 'Alerta amarelo' post of 05/12/2005 (the 2004 post's photographs belong to somebody else and were NOT granted). Shot on a Nikon D70s on 2005-12-04, which matches the post and the tree's December peak. Viewed before approving: the ginkgo fills the frame in full golden leaf, crown and trunk both readable, daylight, colour. Small at 319x480, so it will not fill the widest layouts, and it is the only photograph of this tree we have. Credited to the publication rather than the person, per the 2026-08-11 rule against putting a reader's name on the site.",
       "girth_cm": 430,
-      "how_to_recognise": "You can recognise it as the Rainha das Virtudes, the tallest tree in central Porto at 35.5 metres, seen whole from below on the terraced slope of the Jardim das Virtudes above the Douro."
+      "how_to_recognise": "You can recognise it as the Rainha das Virtudes, the tallest tree in central Porto at 35.5 metres, seen whole from below on the terraced slope of the Jardim das Virtudes above the Douro.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/451",
+        "url": null
+      }
     },
     {
       "id": "por_019",

@@ -10,6 +10,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run, continuation) - enrichment: Cadiz closed nothing, Porto 2 trees
+
+- Cadiz: no per-tree authority record, monumentaltrees.com blocked (not used), two conflicting secondhand girths for the dragon tree; marked done. ~137k tokens wasted.
+- Porto: ICNF register ids added to por_018 (ginkgo) and por_006 (Bischofia trio, plus girth 365 and height 25 from the register). por_001's id was ambiguous (two tulip-tree entries 8 m apart), so I dropped it rather than guess. Four trees have no register entry within 250 m. Shipped 0 new trees.
+
 ## 2026-10-06 (night run) - enrichment: Athens, closed nothing
 
 - Enrich Athens (6 indexed trees): the agent made two fetches and did not actually search for register records or measurements, so the pass was thin rather than exhausted; the holm oak and cypress species files mark no striking season. Marked done for 14 days anyway. About 113k tokens for nothing.
