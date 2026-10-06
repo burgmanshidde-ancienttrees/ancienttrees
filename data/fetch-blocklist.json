@@ -86,6 +86,12 @@
       "symptom": "hangs, no response at all (curl -m 20 exit 28, ECONNREFUSED/timeout on both the specific page and the bare domain root); burned the full 20s timeout twice during a Bordeaux/Strasbourg verify pass",
       "workaround": "unknown; the Collectivite europeenne d'Alsace's own remarkable-trees register (arbre-368, Platane du Parc du Contades) was cited via WebSearch's own extracted snippet instead of a direct fetch"
     },
+    "www.sevilla.org": {
+      "behaviour": "refused or hangs on every fetch (curl timeout, ECONNREFUSED)",
+      "seen": "2026-10-06",
+      "cost": "a Seville enrichment pass closed 1 of 8 trees because the per-tree ficha pages were unreachable",
+      "workaround": "retry from a different network; the city's tree inventory PDF on femas.es downloads but is vector outlines with no extractable text"
+    },
     "cultural.valencia.es": {
       "behaviour": "hangs, no response at all",
       "seen": "2026-08-06",

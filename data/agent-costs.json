@@ -9816,6 +9816,30 @@
    "tokens": 187850,
    "trees": 0,
    "note": "9 candidates kept, ~20k per candidate."
+  },
+  {
+   "date": "2026-10-06",
+   "target": "amsterdam enrich",
+   "kind": "verify",
+   "tokens": 142783,
+   "trees": 0,
+   "note": "4 of 7 indexed trees linked to the LRMB register by id; no trees added."
+  },
+  {
+   "date": "2026-10-06",
+   "target": "barcelona enrich",
+   "kind": "verify",
+   "tokens": 149457,
+   "trees": 0,
+   "note": "12 trees got register URL and id, 4 got measurements, 2 garden access lines corrected."
+  },
+  {
+   "date": "2026-10-06",
+   "target": "seville enrich",
+   "kind": "verify",
+   "tokens": 141632,
+   "trees": 0,
+   "note": "wasted: sevilla.org unreachable, 1 of 8 closable and its figures unreread, so not applied. Host blocklisted."
   }
  ]
 }

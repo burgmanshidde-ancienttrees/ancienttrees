@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run) - enrichment pass: Amsterdam, Barcelona; Seville blocked
+
+Visits, 7 days: 1,484 visits, 1,659 pageviews. Took the enrich lane that prepare.py put first. Amsterdam: 4 trees now name the national register by id (the other 3 stay gaps: two wingnuts could not be told apart or matched, the Hortus cycad is not in the register). Barcelona: all 12 trees link their Arbres d'interes local record, 4 gained girth or height, and the Jardi Botanic Historic access line was corrected (the museum says admission is free, with seasonal hours, and a notice says the garden may be closed for maintenance, so those two pages may deserve a look). Seville closed nothing: sevilla.org never answered, so it is on the fetch blocklist, and the one figure the agent offered (sev_018 girth 220 cm) was not re-read from the source so I did not apply it. No new trees this window. Preflight 0 problems.
+
 ## 2026-10-06 (night run, fourth attempt) - nothing merged, pace cap holds
 
 Retried chi_014, chi_015, chi_017: preflight failed at 63 of 60 new trees in 24 hours (and Chicago's copy says thirteen, so it needs rewriting for 16 at merge). Reverted. The Chicago claim stays for them. chi_016 duplicates chi_008 (30 m): fold into a lead. No READY leads. Staged where the visitors are: bamberg, graz, munich, potsdam, salzburg; new trees would hit the same cap today, so the next run after the window moves starts with the Chicago three.
