@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run) - Fort Worth +13 live; Chicago still held by the pace cap
+
+7-day visits: 1,450 visits, 1,625 page views. Rung 2 shows the iOS app, the Fresh-eyes review and the Weekly analysis as failed. I did not look into any of them this run. Merged Fort Worth (5 to 18 trees, new intro and FAQ) from data/research/fort-worth-city-merged.json, preflight 0 problems, committed. Chicago's 11 trees came next and preflight refused them: 64 new trees in 24 hours against the cap of 60. I reverted that merge. When Chicago is merged, trim its `question_context` by about five words, because the draft's added sentence took it to 205 against Contract B's 150-200. Keep the two existing FAQ entries (oldest tree, zoo oak) and replace the other two with the draft's three. The remaining ready trees (Fukuoka, Leipzig, Takachiho, Tree of the Year and others) hit the same cap, so I did not try them. Nothing was refused by the tool list.
+
 ## 2026-10-06 (session) - Twelve cities translated in their own language; translations are indexed by the photo rule
 
 **Indexing, settled with Hidde:** translate whatever is relevant; a translated page goes into Google exactly when its English twin does (a tree page with a photograph, a city of four or more trees with at least one photograph). Fallback pages and question pages stay out. No separate language rule. A photograph now returns up to eight pages at once. The 80-new-URLs-per-deploy and 1.5-pages-per-tree checks still meter it (0.45 per tree today).
