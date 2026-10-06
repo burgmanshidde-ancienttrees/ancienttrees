@@ -87,12 +87,14 @@ struct PlaceMapPage: View {
     private var inTown: [Tree] { isCity ? trees.filter { $0.dayTrip == nil } : trees }
 
     /// The day trips, one group per place, nearest first.
-    private var away: [(line: String, trees: [Tree])] {
+    private var away: [(trip: Tree.DayTrip, trees: [Tree])] {
         guard isCity else { return [] }
-        var groups: [String: (km: Int, trees: [Tree])] = [:]
-        for t in trees { if let d = t.dayTrip { groups[d.line, default: (d.km, [])].trees.append(t) } }
-        return groups.sorted { $0.value.km < $1.value.km }.map { (line: $0.key, trees: $0.value.trees) }
+        var groups: [String: (trip: Tree.DayTrip, trees: [Tree])] = [:]
+        for t in trees { if let d = t.dayTrip { groups[d.line, default: (d, [])].trees.append(t) } }
+        return groups.values.sorted { $0.trip.km < $1.trip.km }
     }
+
+    private var awayCount: Int { away.reduce(0) { $0 + $1.trees.count } }
 
     private func card(_ t: Tree) -> some View {
         SheetLink(route: .tree(t.id)) { TreeCard(tree: t) }
@@ -121,6 +123,7 @@ struct PlaceMapPage: View {
                 .frame(maxWidth: .infinity)
                 .padding(.bottom, 10)
         } content: {
+            ScrollViewReader { proxy in
             VStack(alignment: .leading, spacing: 18) {
                 // Who looks after this city, komoot's person row, above the
                 // trees as the website prints it under the intro.
@@ -132,6 +135,24 @@ struct PlaceMapPage: View {
                     // Nobody named: the open seat, as the website draws it.
                     if named.isEmpty { AmbassadorWantedRow(place: title) }
                 }
+                // The jump to the day trips, as the website draws it under
+                // its intro (benchmarked on Google Travel's "Day trips" tab,
+                // 2026-10-06): on a city of forty trees they sat unseen at
+                // the foot of the list.
+                if !away.isEmpty {
+                    Button {
+                        sheetHeight = .full
+                        withAnimation { proxy.scrollTo("day-trips", anchor: .top) }
+                    } label: {
+                        Text("\(awayCount) more \(awayCount == 1 ? "tree" : "trees") a day trip away")
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(Brand.moss)
+                            .padding(.horizontal, 12).padding(.vertical, 7)
+                            .overlay(Capsule().stroke(Brand.inkSoft.opacity(0.3)))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("day-trips-jump")
+                }
                 ForEach(inTown) { t in card(t) }
                 // A DAY TRIP AWAY, on the website's word (Hidde approved the
                 // Copenhagen mockup 2026-09-27, and found it missing here on
@@ -139,18 +160,21 @@ struct PlaceMapPage: View {
                 // place, nearest first. Cities only: a country page is all
                 // day trips by definition.
                 if !away.isEmpty {
+                    Divider().padding(.top, 10)
                     Text("A day trip away")
                         .font(.brand(20, .bold, relativeTo: .title3))
                         .foregroundStyle(Brand.ink)
-                        .padding(.top, 10)
                         .accessibilityAddTraits(.isHeader)
-                    ForEach(away, id: \.line) { g in
-                        Text(g.line)
-                            .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                        .id("day-trips")
+                    ForEach(away, id: \.trip.line) { g in
+                        (Text(g.trip.place).bold().foregroundStyle(Brand.ink)
+                         + Text(", \(g.trip.km) km \(g.trip.dir)").foregroundStyle(Brand.inkSoft))
+                            .font(.subheadline)
                         ForEach(g.trees) { t in card(t) }
                     }
                 }
                 Color.clear.frame(height: 24)
+            }
             }
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, alignment: .leading)

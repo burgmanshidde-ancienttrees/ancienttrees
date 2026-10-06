@@ -2857,6 +2857,15 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 .day-trips { margin-top: 2rem; }
 .day-trips-head { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; margin: 0 var(--gutter) 0.25rem; }
 .day-trip-where { color: var(--ink-mid); font-size: 0.95rem; margin: 0.75rem var(--gutter) 0.5rem; }
+/* Benchmarked 2026-10-06 on Google Travel, which gives a destination's day
+   trips their own tab at the top: here one line under the intro that jumps
+   down, because on a city of forty trees the section sat unseen at the foot.
+   The section opens with a rule like the intro's, so it reads as a second
+   part of the page, and each place leads with its name. */
+.day-trips-jump { display: inline-block; margin-top: 0.75rem; padding: 0.35rem 0.8rem; border: 1px solid var(--cream-dark); border-radius: 999px; color: var(--moss); font-size: 0.9rem; font-weight: 600; text-decoration: none; }
+.day-trips-jump:hover { border-color: var(--moss); }
+.day-trips { border-top: 1px solid var(--cream-dark); padding-top: 1.5rem; scroll-margin-top: 1rem; }
+.day-trip-where strong { color: var(--ink); font-weight: 700; }
 /* On the panel's own gutter, like the cards under them (seen on the live
    Copenhagen page the hour it shipped: the heading sat flush to the edge). */
 /* The card's Seen badge is painted by tree-actions-js; [hidden] must win over
