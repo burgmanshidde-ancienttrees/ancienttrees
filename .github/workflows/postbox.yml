@@ -33,3 +33,12 @@ jobs:
         env:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: python3 scripts/sqlcheck.py
+      # And who asked to be an ambassador, with or without an account: the
+      # ledger Hidde asked for the same day ("How do we keep track of people
+      # requesting this??"). Account ids are printed to eight characters,
+      # never an address.
+      - name: Who asked to be an ambassador
+        if: always()
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python3 scripts/ambassador.py --asked

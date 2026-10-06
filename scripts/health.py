@@ -55,6 +55,15 @@ WATCHED = {
                    "gh workflow run review.yml"),
     "weekly-analysis.yml": ("Weekly analysis", datetime.timedelta(days=8),
                             "gh workflow run weekly-analysis.yml"),
+    # THE POSTBOX, watched from 2026-10-06 (Hidde, the third time: "I can
+    # still request ambassadorship without being logged in"). The rule that a
+    # submission needs an account lives in the database and only he can paste
+    # it; sqlcheck's probe below reports it only when this script runs with
+    # the service key, which a sandbox session never has. postbox.yml runs the
+    # same probe daily from a runner and goes RED while the door is open, so
+    # the state is read here like any other failed check.
+    "postbox.yml": ("Postbox check", datetime.timedelta(hours=26),
+                    "gh workflow run postbox.yml"),
 }
 
 

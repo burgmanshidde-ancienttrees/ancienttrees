@@ -17,6 +17,7 @@ CLAUDE.md ("Ambassadors"); this script only records the answer.
     python3 scripts/ambassador.py --link-address "<Name>" <place_slug> <address>
     python3 scripts/ambassador.py --invite-scan [--send]
     python3 scripts/ambassador.py --requests [--send]
+    python3 scripts/ambassador.py --asked
 
 --invite-scan is the standard first contact (Hidde, 2026-10-02: "lets make it
 a standard thing whenever someone adds something to a city we dont have a
@@ -34,6 +35,10 @@ writes a submissions row of kind 'ambassador'; this sends each new one the
 editor mail once (how they see the list, what to take off or add, photographs),
 the same second mail Giulia Torta got, and records it under "requested" so it
 never repeats. The badge still follows their answer, by hand, with --grant.
+EVERY request is recorded there, ours and anonymous ones included with a note
+saying so (Hidde, 2026-10-06: "How do we keep track of people requesting
+this??"); --asked prints the ledger without a key. An anonymous row is proof
+the database accepts posts without an account, and the scan says so out loud.
 
 --grant-named is for somebody who gave us trees by MAIL and has no app account
 (Hidde, 2026-10-02, on Hans Erik Lund and Paulo Araujo: "dont email paulo or
@@ -474,9 +479,28 @@ def requests_scan(send):
     rows_ = _req("/rest/v1/submissions?select=id,user_id,city,created_at"
                  "&kind=eq.ambassador&order=created_at.asc") or []
     n = 0
+    anonymous = 0
     for row in rows_:
         uid, rid = row.get("user_id"), row.get("id")
-        if rid in seen_rows or not uid or ours.is_ours(uid):
+        if rid in seen_rows:
+            continue
+        # EVERY request is written down, not only the ones that get a mail
+        # (Hidde, 2026-10-06: "How do we keep track of people requesting
+        # this??"). A row with no account can only exist while the database
+        # accepts anonymous posts, which is the door
+        # supabase/postbox-needs-an-account.sql shuts; it is recorded as the
+        # evidence it is and said out loud, never skipped in silence.
+        if not uid:
+            anonymous += 1
+            print(f"request {rid} / {row.get('city')!r}: NO ACCOUNT. The postbox is open: "
+                  "a stranger posted this with the publishable key alone. "
+                  "Paste supabase/postbox-needs-an-account.sql.")
+            requested.append({"row": rid, "user_id": None, "place_slug": _slug_for(row.get("city")),
+                              "place_name": row.get("city"), "date": None, "note": "anonymous"})
+            continue
+        if ours.is_ours(uid):
+            requested.append({"row": rid, "user_id": uid, "place_slug": _slug_for(row.get("city")),
+                              "place_name": row.get("city"), "date": None, "note": "ours"})
             continue
         slug = _slug_for(row.get("city"))
         if not slug:
@@ -522,6 +546,58 @@ def requests_scan(send):
         json.dump(doc, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
     print(f"ambassador --requests: {n} mail(s) sent")
+    if anonymous:
+        print(f"ambassador --requests: {anonymous} request(s) with NO ACCOUNT reached the "
+              "table. The database is not refusing anonymous posts.")
+    return 0
+
+
+def asked_ledger():
+    """Who asked to be an ambassador, from the file alone (no key needed).
+
+    One line per request, in the order they came: the place, the account
+    (ours and anonymous flagged), when the editor mail went, and whether the
+    badge followed. Hidde, 2026-10-06: "How do we keep track of people
+    requesting this??" The answer is this list; the digest counts the same
+    rows in its own column.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import ours
+    with open(FILE, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    reqs = {r.get("row"): r for r in doc.get("requested", [])}
+    badged = {(e.get("user_id"), e["place_slug"]) for e in doc.get("ambassadors", [])}
+    # With the key, the table itself: every row of kind 'ambassador', whether
+    # or not a knock has recorded it yet, newest last, with where it was
+    # pressed (the page path, or "app").
+    live = []
+    if KEY:
+        live = _req("/rest/v1/submissions?select=id,created_at,city,user_id,page"
+                    "&kind=eq.ambassador&order=created_at.asc") or []
+        print(f"{len(live)} ambassador request(s) in the table")
+    rows = {r["id"]: r for r in live}
+    for rid in list(reqs):
+        rows.setdefault(rid, {"id": rid})
+    if not rows:
+        print("no ambassador requests yet, in the table or on file")
+        return 0
+    for rid in sorted(rows, key=lambda k: str(rows[k].get("created_at") or "")):
+        row, rec = rows[rid], reqs.get(rid, {})
+        uid = row.get("user_id") if row.get("user_id") is not None else rec.get("user_id")
+        place = row.get("city") or rec.get("place_name") or rec.get("place_slug") or "?"
+        when = str(row.get("created_at") or "")[:16].replace("T", " ") or "(not in table)"
+        where = row.get("page") or "?"
+        if not uid:
+            who = "NO ACCOUNT (postbox open)"
+        elif ours.is_ours(uid):
+            who = f"ours {uid[:8]}"
+        else:
+            who = uid[:8]
+        slug = rec.get("place_slug") or _slug_for(place)
+        state = ("badge granted" if (uid, slug) in badged
+                 else f"editor mail sent {rec['date']}" if rec.get("date")
+                 else rec.get("note") or ("recorded, not mailed" if rec else "not yet seen by a knock"))
+        print(f"{when:<17} {place:<22} {where:<28} {who:<26} {state}")
     return 0
 
 
@@ -541,6 +617,8 @@ def main(argv):
         return listing()
     if "--sync" in argv:
         return sync()
+    if "--asked" in argv:
+        return asked_ledger()
     if "--requests" in argv:
         return requests_scan("--send" in argv)
     if "--invite-scan" in argv:

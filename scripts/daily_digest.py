@@ -1635,6 +1635,7 @@ def product_section(today):
         # people, and the vote control carries no text to tell them apart.
         rows_, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,city,"
                          "tree,why,user_id", key)
+        subs_ = list(rows_ or [])   # kept: rows_ is reused for events below
         seen_sub = set()
         ours_n = {"trees": 0, "feedback": 0, "accounts": 0}
 
@@ -1692,6 +1693,23 @@ def product_section(today):
                            % ", ".join("%d %s" % (v, k) for k, v in ours_n.items() if v))
         else:
             out.append("- Nothing signed up, saved a tree or was submitted in 14 days.")
+        # A submission with NO account is not a person we can answer, it is
+        # proof that the database still accepts anonymous posts (Hidde,
+        # 2026-10-06, the third time: "I can still request ambassadorship
+        # without being logged in"). The rule lives in
+        # supabase/postbox-needs-an-account.sql and only he can paste it, so
+        # the digest says every day whether it holds. A privacy request may
+        # be anonymous by design and does not count.
+        no_account = [r for r in subs_ if not r.get("user_id") and r.get("kind") != "privacy"
+                      and str(r.get("created_at"))[:10] >= since.isoformat()
+                      and r.get("id") not in TEST_SUBMISSION_IDS
+                      and r.get("city") != "sqlcheck anon probe"]
+        if no_account:
+            out.append("- **The postbox is open:** %d submission(s) in 14 days arrived with no "
+                       "account (%s). Paste supabase/postbox-needs-an-account.sql; until then "
+                       "every sign-in gate on the site and in the app is JavaScript."
+                       % (len(no_account), ", ".join(sorted({"%s %s" % (r.get("kind"), r.get("city") or "")
+                                                             for r in no_account})[:6])))
     except Exception as e:
         out.append("- Sign-up series unreadable (%s)" % str(e)[:60])
 
