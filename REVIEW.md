@@ -17,6 +17,10 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 Web half: read berlin (63), barcelona (56), tenerife (4) and the Berlin tallest-tree page; titles and counts match the city files, no em dashes or banned words in berlin, barcelona, amsterdam, lisbon or christchurch. Nothing found on the web half.
 
+App half (collect-ticked, collection-tab-full, collection-tab, collection, contribute, directions): the screens read clearly and the sign-in sheet, directions chooser and collection page agree with their data (all eight oak entries carry confirmed pins).
+
+- NOTE APP: collection-tab-full shows the profile with "2 Trees" above "0 Species" and "0 Countries", so the stats contradict themselves for a collector who has two trees. Probably the test account's own-added trees carry no species or country; if a real reader's first photographed tree can read the same, the counts should fall back to the tree's own species and place. For a session.
+
 ## 2026-10-05
 
 Web half: read leipzig (19), dresden (18), munich (61), nuremberg (17) and san-francisco (7); title, meta and body counts agree with the city files, and the pages hold no em dashes or banned words. Nothing found on the web half.
