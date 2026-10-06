@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (session) - the digest now says where App Store downloads come from
+
+**Why:** reading the week (Google at 2 percent of pre-demotion impressions, visits from people down from about 90 a day to 20 or 30, while 38 first-time downloads, 33 reader photographs live in 11 cities and the first strangers running the whole find-walk-photograph loop), the app was the one channel still producing people, and nothing said what fed it: the site's own app button took 22 clicks in 14 days against 38 downloads.
+
+**What changed:** `scripts/asc_downloads.py` fetches the report rows once (`download_rows`) and derives both the daily first-time table and a new source split (`split_by_source`: Apple's Source Type and Source Info per row, plus Territory). `daily_digest.py` prints it as "Where the downloads came from", a second table under the daily one, same first-time unit, never a column inside it, so the daily table still checks against Trends. The CLI prints the same table. Parsing tested offline on the report's column shape; the first live table arrives with tomorrow's digest, since the Apple key lives only in data-digest.yml's secrets.
+
+**Advice given, not built:** freeze the index rule for a month (it changed four times in six days and no daily Search Console line can tell which change did what); keep the night runs on enrichment; shift attention from Search Console to the contributors in Paris and Reykjavik, the open outreach asks, and this new number.
+
 ## 2026-10-06 (night run, continuation) - enrichment pass: Tenerife, Berlin
 
 Tenerife: 3 of 4 trees now carry a Cabildo register record, with girth and height for the two Vilaflor pines and an access line with prices for the Drago; the Gran Ficus stays open (no per-tree record, no measurements). Berlin: 19 trees name their Naturdenkmal register id, 7 gained girth or height from the Senate's archived pages, the Pfaueninsel access line now says the ferry costs 6 euro, and the red oak gained its autumn-colour season. Open conflicts: Dicke Marie's height is 15 to 16 m in one source and 26 m in another (none set); ber_004's register entry sits 77 m from our pin, so the pin may be off. No new trees. Preflight 0 problems.

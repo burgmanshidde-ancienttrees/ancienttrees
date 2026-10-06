@@ -2671,8 +2671,10 @@ def app_store_downloads_lines():
         return []
     try:
         sys.path.insert(0, os.path.dirname(__file__))
-        from asc_downloads import daily_downloads_by_type
-        split, note = daily_downloads_by_type(days=14)
+        from asc_downloads import (download_rows, split_by_type,
+                                   split_by_source, source_lines)
+        rows, note = download_rows(days=14)
+        split = split_by_type(rows)
         totals = {d: sum(v.values()) for d, v in split.items()}
     except Exception as e:
         return ["", "**App Store downloads**", "- Unreadable (%s)" % str(e)[:100]]
@@ -2701,6 +2703,16 @@ def app_store_downloads_lines():
     out.append("| **%d days** | **%d** |" % (len(days_sorted), tf))
     out.append("- First-time downloads only, which is what App Store Connect's Trends "
                "screen counts; redownloads and updates are not in this table.")
+    # WHERE THEY CAME FROM (Hidde, 2026-10-06, "Sure", on being told the one
+    # channel producing people was the one whose feed nobody knew). Same rows,
+    # same unit, a second table under the first rather than a column in it,
+    # so the daily table stays the one Trends can be checked against.
+    sources, territories = split_by_source(rows)
+    src = source_lines(sources, territories)
+    if src:
+        out.append("")
+        out.append("**Where the downloads came from** (14 days, Apple's attribution)")
+        out.extend(src)
     return out
 
 

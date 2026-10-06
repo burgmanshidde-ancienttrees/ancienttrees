@@ -150,8 +150,83 @@ def _segment_rows(token, instance_id):
     return rows
 
 
+def download_rows(days=14):
+    """Every row of the daily report for the newest `days` instances, as
+    (date, row) pairs, first-time downloads only. One fetch that both the
+    daily table and the source table are derived from, so the digest does
+    not walk Apple's segment chain twice for one block (2026-10-06)."""
+    token = bearer_token()
+    state = _load_state()
+    request_id = _ensure_request(token, state)
+    report_id = _ensure_report(token, state, request_id)
+    instances = _daily_instances(token, report_id, limit=days)
+    if not instances:
+        return [], "no report instances yet (first one can take up to 48h " \
+                   "after the request was created)"
+    out = []
+    for inst in instances:
+        date = inst["attributes"].get("processingDate")
+        for row in _segment_rows(token, inst["id"]):
+            if _download_type(row) in NEW_PERSON:
+                out.append((date, row))
+    return out, None
+
+
+def _count(row):
+    for k in row:
+        if k.strip().lower() in ("counts", "count", "units"):
+            try:
+                return int(row[k])
+            except (ValueError, TypeError):
+                return 0
+    return 0
+
+
+def _col(row, name, default="unknown"):
+    for k in row:
+        if k.strip().lower() == name:
+            v = str(row[k]).strip()
+            return v or default
+    return default
+
+
+def split_by_type(rows):
+    """{date: {"first-time download": n}} from download_rows() output."""
+    split = {}
+    for date, row in rows:
+        bucket = split.setdefault(date, {})
+        kind = _download_type(row)
+        bucket[kind] = bucket.get(kind, 0) + _count(row)
+    return split
+
+
+def split_by_source(rows):
+    """WHERE THE DOWNLOADS CAME FROM (2026-10-06), the question the week of
+    the Google demotion could not answer: the site's own "get the app" button
+    took 22 clicks in 14 days against 38 first-time downloads, so most people
+    found the app some other way, and nothing here said which.
+
+    Apple's App Downloads Standard report carries it per row: "Source Type"
+    (App Store search, App Store browse, App referrer, Web referrer,
+    Institutional purchase, Unavailable), "Source Info" (the referring
+    domain or app, where there is one) and "Territory". Returns
+    ({(source_type, source_info): n}, {territory: n}) over the whole window,
+    first-time downloads only, same unit as the daily table. A row shape
+    without the columns lands in "unknown" rather than being dropped."""
+    sources, territories = {}, {}
+    for _date, row in rows:
+        n = _count(row)
+        if not n:
+            continue
+        key = (_col(row, "source type"), _col(row, "source info", default="-"))
+        sources[key] = sources.get(key, 0) + n
+        t = _col(row, "territory")
+        territories[t] = territories.get(t, 0) + n
+    return sources, territories
+
+
 def daily_downloads_by_type(days=14):
-    """{date: {"first-time download": n, "redownload": n}} per day.
+    """{date: {"first-time download": n}} per day.
 
     Split rather than summed since 2026-09-10, because the total could never
     be reconciled with the screen Hidde actually looks at. App Store Connect's
@@ -166,36 +241,10 @@ def daily_downloads_by_type(days=14):
     the number is rather than to pick a side. The digest prints both, and the
     first-time column is the one that should equal Trends to the unit.
     """
-    token = bearer_token()
-    state = _load_state()
-    request_id = _ensure_request(token, state)
-    report_id = _ensure_report(token, state, request_id)
-    instances = _daily_instances(token, report_id, limit=days)
-    if not instances:
-        return {}, "no report instances yet (first one can take up to 48h " \
-                    "after the request was created)"
-    split = {}
-    for inst in instances:
-        date = inst["attributes"].get("processingDate")
-        rows = _segment_rows(token, inst["id"])
-        count_col = None
-        for row in rows:
-            if count_col is None:
-                for k in row:
-                    if k.strip().lower() in ("counts", "count", "units"):
-                        count_col = k
-                        break
-            if not count_col:
-                continue
-            kind = _download_type(row)
-            if kind not in NEW_PERSON:
-                continue
-            try:
-                bucket = split.setdefault(date, {})
-                bucket[kind] = bucket.get(kind, 0) + int(row[count_col])
-            except (ValueError, TypeError):
-                pass
-    return split, None
+    rows, note = download_rows(days)
+    if note:
+        return {}, note
+    return split_by_type(rows), None
 
 
 def daily_download_totals(days=14):
@@ -241,11 +290,43 @@ def _download_type(row):
     return "first-time download"
 
 
+def source_lines(sources, territories, limit=8):
+    """Digest-ready markdown for the source split; shared by the CLI and
+    daily_digest.py so the two never print different tables."""
+    out = []
+    if not sources:
+        return out
+    total = sum(sources.values())
+    out.append("")
+    out.append("| Came from | Via | Downloads |")
+    out.append("|---|---|---:|")
+    ranked = sorted(sources.items(), key=lambda kv: (-kv[1], kv[0]))
+    shown = 0
+    for (kind, info), n in ranked[:limit]:
+        out.append("| %s | %s | %d |" % (kind, info, n))
+        shown += n
+    if total > shown:
+        out.append("| other | - | %d |" % (total - shown))
+    out.append("| **window** | | **%d** |" % total)
+    if territories:
+        top = sorted(territories.items(), key=lambda kv: (-kv[1], kv[0]))[:6]
+        out.append("- Countries: " + "; ".join("%s (%d)" % (t, n) for t, n in top))
+    out.append("- Apple's own source split, first-time downloads only. \"Web referrer\" "
+               "with our own domain is the site's app page; \"App Store search\" is "
+               "somebody who typed into the store. \"Unavailable\" is Apple's word for "
+               "a source it could not attribute.")
+    return out
+
+
 if __name__ == "__main__":
-    split, note = daily_downloads_by_type()
+    rows, note = download_rows()
     if note:
         print(note)
+    split = split_by_type(rows)
     print("%-12s %10s" % ("date", "downloads"))
     for date in sorted(split):
         print("%-12s %10d" % (date, split[date].get("first-time download", 0)))
     print("first-time downloads only, the unit App Store Connect's Trends screen counts.")
+    sources, territories = split_by_source(rows)
+    for line in source_lines(sources, territories):
+        print(line)
