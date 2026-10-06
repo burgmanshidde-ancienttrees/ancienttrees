@@ -239,5 +239,5 @@ const cityHasQuestion = hasQuestionPage(city);
       </div>
     </div>
   </div>
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS + SHARE_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, [], [], split.inTown.map((t: any) => ({ lat: t.location.latitude, lng: t.location.longitude }))) + SHEET_JS + SHARE_JS} />
 </Base>

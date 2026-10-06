@@ -81,6 +81,19 @@ struct PlaceMapPage: View {
         return max(m * 1.3, 1200)
     }
 
+    /// The opening frame. A country frames its mainland; a city with day
+    /// trips frames its OWN trees, so Copenhagen opens on Copenhagen and not
+    /// on Dyrehaven as well (Hidde, 2026-10-06, the website does the same).
+    /// The day-trip pins are still on the map, a pinch away.
+    private var openingBox: (sw: CLLocationCoordinate2D, ne: CLLocationCoordinate2D)? {
+        if let m = mainland { return m }
+        guard isCity, !away.isEmpty, inTown.count >= 2 else { return nil }
+        let lats = inTown.map(\.lat), lngs = inTown.map(\.lng)
+        let pad = 0.004
+        return (sw: CLLocationCoordinate2D(latitude: lats.min()! - pad, longitude: lngs.min()! - pad),
+                ne: CLLocationCoordinate2D(latitude: lats.max()! + pad, longitude: lngs.max()! + pad))
+    }
+
     private var isCity: Bool { if case .city = place { true } else { false } }
 
     /// The list's first part: everything that is not a day trip.
@@ -112,7 +125,7 @@ struct PlaceMapPage: View {
                     // The whole point of this page is these trees, so it frames
                     // them rather than a point near them. See fitsTrees.
                     fitsTrees: true,
-                    fitBox: mainland,
+                    fitBox: openingBox,
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
         } header: {

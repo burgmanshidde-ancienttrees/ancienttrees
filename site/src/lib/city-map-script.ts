@@ -81,7 +81,11 @@ export function cityMapScript(
   center: [number, number],
   route: Walk | null,
   otherCities: OtherCity[],
-  walks: Walk[]
+  walks: Walk[],
+  /** The city's own trees, without its day trips (lib/day-trips.ts). The
+   *  opening frame is drawn round these, so Copenhagen opens on Copenhagen
+   *  and not on Dyrehaven as well (Hidde, 2026-10-06). */
+  inTown?: { lat: number; lng: number }[]
 ): string {
   const data = JSON.stringify(markers);
   const routeCoords = JSON.stringify(route && markers.length > 1 ? route.order.map((i) => [markers[i].lng, markers[i].lat]) : []);
@@ -111,7 +115,7 @@ export function cityMapScript(
     ranked.map((c) => ({ url: c.slug, city: c.city, country: c.country, n: c.n, ph: c.ph, lat: c.lat, lng: c.lng }))
   );
 
-  const home = homeBounds(markers);
+  const home = homeBounds(inTown && inTown.length >= 2 ? inTown : markers);
 
   return mapScript(`
 var markers = ${data};

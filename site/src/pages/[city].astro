@@ -405,5 +405,5 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       </div>
     </div>
   </div>
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, otherCities, []) + SHEET_JS + SHARE_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, otherCities, [], split.inTown.map((t: any) => ({ lat: t.location.latitude, lng: t.location.longitude }))) + SHEET_JS + SHARE_JS} />
 </Base>
