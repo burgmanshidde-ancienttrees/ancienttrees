@@ -212,7 +212,7 @@ def pipeline_status():
     print("  *** ENRICH THE INDEXED PAGES FIRST (Hidde, 2026-10-06): register record, measurement,")
     print("      access facts, season, on tree pages that HAVE a photograph, proven cities first. ***")
     print("      " + nxt)
-    print("      claim it (passcheck.py --claim <city> --kind verify, push), verify agent on the brief, then enrich.py --apply out/enrich/<city>.answer.json")
+    print("      claim it (passcheck.py --claim <city> --kind enrich, push), verify agent on the brief, then enrich.py --apply out/enrich/<city>.answer.json")
     print("      A pass that closed nothing: enrich.py --done <city>. Only when this says nothing to do,")
     print("      take the rest of THE LINE below (new trees, refill, backup).")
     # Rung 1 before any of the stages below it, because a photograph somebody

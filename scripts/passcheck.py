@@ -1031,7 +1031,7 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None, retry
     #    no users"). Depth on a page that already exists (photo, pin, recognition
     #    line) is not new, and the pages with pre-demotion readers are mostly
     #    outside the US, so depth kinds are exempt.
-    DEPTH_KINDS = {"photo", "pin", "recognise", "depth"}
+    DEPTH_KINDS = {"photo", "pin", "recognise", "depth", "enrich"}  # enrich: scripts/enrich.py, 2026-10-06
     # A write pass on research that is already verified is finishing work: the
     # pace is enforced where it bites, at commit time (preflight), so refusing
     # the claim would only leave verified trees unwritten.
@@ -1703,7 +1703,7 @@ def main():
             country = args[i + 1] if i + 1 < len(args) else None
             del args[i:i + 2]
         if not args:
-            print("usage: passcheck.py --claim <place> [--kind verify|write|photo] [--by who] "
+            print("usage: passcheck.py --claim <place> [--kind verify|write|photo|enrich] [--by who] "
                   "[--deepen why] [--outside-us why] [--country name] [--retry why]")
             return 1
         return do_claim(" ".join(args), kind, by, deepen, outside_us, country, retry)
