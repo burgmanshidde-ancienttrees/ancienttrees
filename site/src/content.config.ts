@@ -151,6 +151,9 @@ export const treeSchema = z.object({
    * because a visitor deserves to know that before the walk rather than
    * after. */
   how_to_recognise: z.string().optional(),
+  // The official register this tree is listed in, set by an enrichment pass
+  // that opened the authority's own record (scripts/enrich.py, 2026-10-06).
+  official_register: z.object({ name: z.string(), url: z.string().nullable().optional() }).optional(),
   label: z.string().optional(),
   notes: z.string().optional(),
   best_time: bestTimeSchema,

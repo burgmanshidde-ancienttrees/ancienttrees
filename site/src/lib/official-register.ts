@@ -67,7 +67,11 @@ function registerNames(): Map<string, string> {
   return NAMES;
 }
 
-export function officialRegister(tree: { verified_sources?: string[] }): OfficialRegister | null {
+export function officialRegister(tree: { verified_sources?: string[]; official_register?: { name?: string; url?: string } }): OfficialRegister | null {
+  // Set by an enrichment pass (scripts/enrich.py) that opened the authority's
+  // own record for this tree: it wins, because a person checked it.
+  const own = tree.official_register;
+  if (own?.name) return { name: String(own.name), url: own.url && /^https?:\/\//.test(own.url) ? own.url : null };
   const src = (tree.verified_sources ?? []).map((s) => String(s ?? "").trim()).filter(Boolean);
   for (const s of src) {
     if (!/^https?:\/\//i.test(s)) continue;

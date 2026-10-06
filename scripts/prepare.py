@@ -200,6 +200,21 @@ def pipeline_status():
     staged = sorted(glob.glob(os.path.join(ROOT, "data", "research", "*-register-candidates.json")))
     verified = sorted(glob.glob(os.path.join(ROOT, "data", "research", "*-verified.json")))
     print("\nTHE LINE, stage by stage:")
+    # ENRICH FIRST (Hidde, 2026-10-06, "ja"): the pages Google can see get what
+    # no AI can make up before new trees are added, because a new tree without
+    # a photograph never reaches the index. scripts/enrich.py holds the rule.
+    try:
+        import subprocess
+        nxt = subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "enrich.py"), "--next"],
+                             capture_output=True, text=True, timeout=60).stdout.strip()
+    except Exception as e:  # never let the printer die on its own advice
+        nxt = f"enrich.py could not run ({e})"
+    print("  *** ENRICH THE INDEXED PAGES FIRST (Hidde, 2026-10-06): register record, measurement,")
+    print("      access facts, season, on tree pages that HAVE a photograph, proven cities first. ***")
+    print("      " + nxt)
+    print("      claim it (passcheck.py --claim <city> --kind verify, push), verify agent on the brief, then enrich.py --apply out/enrich/<city>.answer.json")
+    print("      A pass that closed nothing: enrich.py --done <city>. Only when this says nothing to do,")
+    print("      take the rest of THE LINE below (new trees, refill, backup).")
     # Rung 1 before any of the stages below it, because a photograph somebody
     # walked to a tree to take outranks anything the machine found by itself.
     # Printed here rather than left to memory: the queue is written by a
