@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run, fifth continuation) - enrichment: Krakow, 6 trees
+
+- Krakow: GDOS/CRFOP register ids and girths on 6 of 7 indexed trees (from the Polish Wikipedia wykaz, state 2023, which carries each CRFOP id); no per-tree authority page opened (crfop.gdos.gov.pl is behind an Incapsula bot block). kra_002 Henryk Oak unmatched, left open. ogrod.uj.edu.pl returned 502 throughout, so botanical garden prices and hours are still missing for kra_001 and kra_004: add it to the fetch blocklist and retry later. No season set. Preflight 0 problems, 0 new trees, ~135k tokens. Next in enrich: austin.
+
 ## 2026-10-06 (night run, fourth continuation) - enrichment: Madrid and Milan, 20 trees
 
 - Madrid: Comunidad de Madrid Arboles Singulares ids on 10 trees (from a fan transcription of the catalogue sheets, no per-tree authority page), girth and height on 7, height on mad_001; mad_016 left open. Milan: MASAF ids matched by sheet id and pin within 10 m on 10 trees, girth and height on mil_002 and mil_014. No season set (no striking moments in the species files). Preflight 0 problems, 0 new trees, ~315k tokens. Add rjb.csic.es to the fetch blocklist (hangs). Not checked: the iOS app's red scheduled run.

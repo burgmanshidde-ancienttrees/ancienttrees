@@ -67,7 +67,12 @@
         "kind": "fruit"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the trunk, six metres round, the garden's own choice for its most impressive tree. It stands at the heart of the Botanical Garden of the Jagiellonian University."
+      "how_to_recognise": "You can recognise it by the trunk, six metres round, the garden's own choice for its most impressive tree. It stands at the heart of the Botanical Garden of the Jagiellonian University.",
+      "official_register": {
+        "name": "Pomniki przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1261011.2976",
+        "url": null
+      },
+      "girth_cm": 587
     },
     {
       "id": "kra_002",
@@ -189,7 +194,12 @@
         "kind": "flowers"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the multiple gnarled stems, more like an old apple tree than a shrub, unlabelled along the Botanical Garden's main path. It flowers before anything else in the garden wakes."
+      "how_to_recognise": "You can recognise it by the multiple gnarled stems, more like an old apple tree than a shrub, unlabelled along the Botanical Garden's main path. It flowers before anything else in the garden wakes.",
+      "official_register": {
+        "name": "Pomniki przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1261011.2876, PL.ZIPOP.1393.PP.1261011.2877",
+        "url": null
+      },
+      "girth_cm": 86
     },
     {
       "id": "kra_005",
@@ -255,7 +265,11 @@
       "curation_status": "flagged",
       "notes": "Girth 375cm and the 1987 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.892, gid 72079). Age DERIVED from girth with the published growth factor for green ash, the closest documented proxy in the same genus; 150-220 band, not to be narrowed without a dendrochronological source.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, 375 centimetres round, the thickest ash on this page. It stands on the pavement of ul. Straszewskiego, on Planty's western edge a few minutes below Wawel."
+      "how_to_recognise": "You can recognise it by the trunk, 375 centimetres round, the thickest ash on this page. It stands on the pavement of ul. Straszewskiego, on Planty's western edge a few minutes below Wawel.",
+      "official_register": {
+        "name": "Pomniki przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1261011.892",
+        "url": null
+      }
     },
     {
       "id": "kra_008",
@@ -979,7 +993,11 @@
       },
       "how_to_recognise": "You can recognise it by the trunk, 290 centimetres round, a European white elm, a species most of the continent has lost. It stands at ul. Karmelicka 51 in Piasek, a few streets west of Planty.",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 290 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 290 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Pomniki przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1261011.970",
+        "url": null
+      }
     },
     {
       "id": "kra_028",
@@ -1053,7 +1071,11 @@
         "width": 3685,
         "height": 5115
       },
-      "how_to_recognise": "You can recognise it by the trunk, 339 centimetres round, between Krakow's two other small-leaved limes in girth. It stands on ul. Pilsudskiego 29, about 700 metres from the Straszewskiego Ash."
+      "how_to_recognise": "You can recognise it by the trunk, 339 centimetres round, between Krakow's two other small-leaved limes in girth. It stands on ul. Pilsudskiego 29, about 700 metres from the Straszewskiego Ash.",
+      "official_register": {
+        "name": "Pomniki przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1261011.1039",
+        "url": null
+      }
     },
     {
       "id": "kra_030",
@@ -1086,7 +1108,11 @@
         "width": 1994,
         "height": 2129
       },
-      "how_to_recognise": "You can recognise it by the trunk, 420 centimetres round, between Krakow's two other register planes in girth. It stands in the Ogrod Strzelecki, beside the marksmen's hall near the main station."
+      "how_to_recognise": "You can recognise it by the trunk, 420 centimetres round, between Krakow's two other register planes in girth. It stands in the Ogrod Strzelecki, beside the marksmen's hall near the main station.",
+      "official_register": {
+        "name": "Pomniki przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1261011.858",
+        "url": null
+      }
     },
     {
       "id": "kra_031",
