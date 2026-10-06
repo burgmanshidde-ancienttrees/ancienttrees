@@ -160,7 +160,10 @@ Per gap:
   register page about this one tree: Naturdenkmal entry, monumental-tree sheet,
   heritage-tree page). Return register_url (that page) and register_name (the
   register's own name, e.g. "Arvoredo de Interesse Público (ICNF)"). A register
-  homepage, a data endpoint or a news article is not a record.
+  homepage, a data endpoint or a news article is not a record. Where the register
+  has NO per-tree page but you found this tree's own entry in its data, return
+  register_name and register_id (the register's number for this tree) instead.
+  Girth is circumference at 1.30 m; a base circumference is not a girth, leave it out.
 - measurement: girth_cm and/or height_m from a register, a plaque or the authority's
   page, with measure_source. Never from our own story, never the species' maximum.
 - access: one plain line a visitor can act on: free or the price, opening days and
@@ -171,7 +174,7 @@ Per gap:
   is the kind that shows it. Otherwise leave it. Scarcity is the point.
 
 Answer: a JSON list written to out/enrich/{slug}.answer.json, one object per tree you
-improved: {{"id", "register_url"?, "register_name"?, "add_source"?, "girth_cm"?, "height_m"?, "measure_source"?, "access"?, "best_time"?}}.
+improved: {{"id", "register_url"?, "register_name"?, "register_id"?, "add_source"?, "girth_cm"?, "height_m"?, "measure_source"?, "access"?, "best_time"?}}.
 Do not edit data/ yourself. No em dashes.
 
 TREES:
@@ -195,10 +198,12 @@ def apply(path):
                 u = a.get(k)
                 if u and u.startswith("http") and u not in src:
                     src.append(u)
-            if a.get("register_name") and str(a.get("register_url", "")).startswith("http"):
-                t["official_register"] = {"name": a["register_name"], "url": a["register_url"]}
-                if a["register_url"] not in src:
-                    src.append(a["register_url"])
+            url = str(a.get("register_url") or "")
+            if a.get("register_name") and (url.startswith("http") or a.get("register_id")):
+                name = a["register_name"] + (f", no. {a['register_id']}" if a.get("register_id") else "")
+                t["official_register"] = {"name": name, "url": url if url.startswith("http") else None}
+                if url.startswith("http") and url not in src:
+                    src.append(url)
             ok_measure = bool(a.get("measure_source"))
             for k in ("girth_cm", "height_m"):
                 if a.get(k) and ok_measure and not t.get(k):
