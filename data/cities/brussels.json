@@ -88,7 +88,8 @@
       "story": "A single lime tree marks the exact spot where three Brussels communes meet, and it has been doing the job since at least 1777, when the Ferraris map, the first detailed survey of the Austrian Netherlands, recorded it at the boundary point of Molenbeek-Saint-Jean, Berchem-Sainte-Agathe and Dilbeek. Later maps track it by name: an 1821 survey shows it beside a chapel demolished that same decade, and an 1858 map of Brussels and its surroundings labels the spot simply Kaster Linde. Its trunk has thickened from 2.75 metres around in the early 1900s, when the Belgian botanist Chalon first measured it for his book on the country's trees, to 3.15 metres today, growth that puts its real age comfortably past two centuries even before the documentary trail is counted. A street and a nearby cafe, In de Linde, both take their name from it. Unlike a garden specimen chosen for its looks, this tree exists because generations of surveyors needed a fixed point that would not move, and a slow growing lime, marking a boundary since before Belgium existed as a country, turned out to be exactly that.",
       "verified_sources": [
         "https://sites.heritage.brussels/fr/trees/400",
-        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles"
+        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
+        "https://sites.heritage.brussels/fr/trees/400 (circumference 328 cm at 1.50 m, measured 2025; height about 7 m; listed on the safeguard list 13 July 2006)"
       ],
       "access": "Free, public street corner",
       "transport": "Bus to the Berchem-Sainte-Agathe / Dilbeek border",
@@ -103,7 +104,13 @@
       "curation_status": "ai_generated",
       "notes": "Documentary trail (1777 Ferraris map, 1821 and 1858 surveys, Chalon's early 20th century measurement) is unusually solid for a single tree, corroborated across the official heritage inventory and an independent citizen blog. Photo verified on Commons: Flanders Immovable Heritage Agency's own inventory photo of the Dilbeek Kasterlindenstraat boundary tree, matching the described location precisely. Pin corrected 2026-07-28: the stored coordinate (50.8672, 4.2965) turned out to be about 1.3km from the real Kasterlindenstraat, discovered while Nominatim-geocoding the street named in this entry's own sources. Triangulated three independent ways: Kasterlindenstraat's own OSM geocode, neighbouring Kerselaarstraat's, and a direct name match for 'In De Linde' (a real cafe at 177 Kasterlindenstraat, exactly the landmark this entry's own story already names), all converging on the same spot. The heritage inventory page (inventaris.onroerenderfgoed.be/erfgoedobjecten/302035) confirms the crossroads/cemetery description but its own precise coordinate isn't exposed through this session's tooling; Brussels' own remarkable-tree register (sites.heritage.brussels) is blocked (403) for the same reason prior passes found, still true 2026-07-29. Resolved to confirmed 2026-07-29: an OpenStreetMap node individually named \"Kasterlinde\" (this entry's exact tree name, not just a street or landmark match) sits 15m from the prior anchor, at 50.8557989, 4.2898155. Treated as a surveyed point for the tree itself rather than another nearby anchor, since the node's name is the tree, not a building or street.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its 3.15 metre trunk marking the exact point where three Brussels communes meet. It stands on Kasterlindenstraat in Dilbeek, opposite Cafe In de Linde."
+      "how_to_recognise": "You can recognise it by its 3.15 metre trunk marking the exact point where three Brussels communes meet. It stands on Kasterlindenstraat in Dilbeek, opposite Cafe In de Linde.",
+      "official_register": {
+        "name": "Inventaire du Patrimoine Naturel (Region de Bruxelles-Capitale, heritage.brussels), no. 400",
+        "url": "https://sites.heritage.brussels/fr/trees/400"
+      },
+      "girth_cm": 328,
+      "height_m": 7
     },
     {
       "id": "bru_003",
@@ -121,7 +128,8 @@
       "story": "The thickest tree of its kind anywhere in Brussels stands in a park built over a vanished stream. This oriental plane, measured at 6.48 metres around in 2023, only joined the region's legal heritage inventory in August 2024, a formal recognition that arrived roughly two centuries after the tree itself. Plane trees have marked water since antiquity, when Greeks planted them by springs and wells to shade travellers, and this one keeps the tradition without anyone intending it to: the Maelbeek stream still runs underground nearby, beneath the Chaussee d'Etterbeek, and a small tower at the foot of the park's hill once operated as a 17th century fishery pond house long before the plane tree existed. At around 33 metres tall with a crown spreading 38 metres wide, the tree now shades a park built in the 1850s around a private estate, later absorbed into the district that today surrounds the European Parliament. It is, by circumference, the largest specimen of its species in the entire Brussels-Capital Region, a two hundred year old tree standing quietly behind institutions considerably younger than it is.",
       "verified_sources": [
         "https://sites.heritage.brussels/fr/trees/794",
-        "https://www.monumentaltrees.com/fr/bel/bruxelles/bruxelles/1074_parcleopold/4033/"
+        "https://www.monumentaltrees.com/fr/bel/bruxelles/bruxelles/1074_parcleopold/4033/",
+        "https://sites.heritage.brussels/fr/trees/794 (circumference 648 cm at 1.50 m, measured 2023; height about 33 m; entered on the legal inventory 19 August 2024; the thickest of its species in the Brussels-Capital Region)"
       ],
       "access": "Free, public park",
       "transport": "Metro to Maelbeek or Schuman, short walk",
@@ -137,7 +145,12 @@
       "notes": "Circumference and 2024 legal inventory listing corroborated by the official heritage inventory; monumentaltrees.com used for cross-check only, per hard rule 1, not copied. Photo verified on Commons, captioned in French as this exact tree: 'notable tree, bicentennial oriental plane, Parc Leopold, Brussels'.",
       "location_precision": "confirmed",
       "girth_cm": 648,
-      "how_to_recognise": "You can recognise it by its huge 38 metre crown and 6.48 metre trunk, the thickest oriental plane in Brussels. It stands in Parc Leopold on Rue Belliard."
+      "how_to_recognise": "You can recognise it by its huge 38 metre crown and 6.48 metre trunk, the thickest oriental plane in Brussels. It stands in Parc Leopold on Rue Belliard.",
+      "official_register": {
+        "name": "Inventaire du Patrimoine Naturel (Region de Bruxelles-Capitale, heritage.brussels), no. 794",
+        "url": "https://sites.heritage.brussels/fr/trees/794"
+      },
+      "height_m": 33
     },
     {
       "id": "bru_004",

@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, fifth attempt) - enrichment: Brussels
+
+- Enrich Brussels (4 indexed trees, 2 improved): Kasterlinde (bru_002) and the Parc Leopold plane (bru_003) got their Inventaire du Patrimoine Naturel record (sites.heritage.brussels records 400 and 794) with girth and height from it; the plane is the thickest of its species in the region per the record. Pond oaks (bru_004) and Cinquantenaire chestnuts (bru_010) stay open: only a general listing exists, no tree-level record. No access hours or prices published, no season set (oriental plane has no striking moment). Preflight 0 problems. No new trees; writable shelf still empty (visits last 7 days: 1698).
+
 ## 2026-10-06 (night run, fourth attempt) - enrichment: Edinburgh
 
 - Enrich Edinburgh (5 indexed trees, 2 improved): Great Yew of Ormiston got its SYTHI register record plus the Ancient Yew Group entry as a second source (girth left out: both measurements are at 30 cm, not 1.30 m); Craigmillar Castle Yews got a booking and concession access line (no hours or standard price on the HES page). The Botanics chestnut, Wentworth Elms and Hermitage of Braid beeches stay open (no per-tree record or measurement found; Woodland Trust Ancient Tree Inventory not queried). No season set. Preflight 0 problems. No new trees; writable shelf still empty.
