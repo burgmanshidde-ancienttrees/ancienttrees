@@ -2,23 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-18T20:16:38+00:00",
-   "date": "2026-08-18",
-   "run_id": "32181330901",
-   "minutes": 0.0,
-   "minutes_basis": "measured",
-   "turns": 1,
-   "denials": 0,
-   "denials_source": "permission_denials: no names in the record",
-   "ended": "success",
-   "tokens": null,
-   "claims_held": [],
-   "commits": 0,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-18T23:16:31+00:00",
    "date": "2026-08-18",
    "run_id": "32196458135",
@@ -20772,6 +20755,44 @@
     },
     {
      "city": "tokyo",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-06T16:37:26+00:00",
+   "date": "2026-10-06",
+   "run_id": "37497049939",
+   "minutes": 7.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 65,
+   "denials": 15,
+   "denials_source": "permission_denials: Bash(curl ; ls ; head), Bash(for ; do ; python3 ; import ...), Bash(git && git && git | tail ...), Bash(grep ; ? | sort | head), Bash(grep | ? | head), Bash(grep | euro | opening | hours ...), Bash(grep), Bash(ls), Bash(mkdir && cd && curl ; curl ...), Bash(mkdir && cd && for ; do ...), Bash(mkdir && curl ; wc), Bash(mkdir ; curl ; curl ; wc), Bash(python3 && git && git && git ...), Bash(python3 ; wc), Bash(sed | tr | grep | champion ...)",
+   "ended": "success",
+   "tokens": 832664,
+   "claims_held": [
+    "vienna"
+   ],
+   "commits": 6,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "brussels",
+     "trees": 0
+    },
+    {
+     "city": "dublin",
+     "trees": 0
+    },
+    {
+     "city": "malaga",
+     "trees": 0
+    },
+    {
+     "city": "paris",
      "trees": 0
     }
    ],
