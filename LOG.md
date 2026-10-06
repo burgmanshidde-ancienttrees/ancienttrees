@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, fourth attempt) - nothing merged, pace cap holds
+
+Retried chi_014, chi_015, chi_017: preflight failed at 63 of 60 new trees in 24 hours (and Chicago's copy says thirteen, so it needs rewriting for 16 at merge). Reverted. The Chicago claim stays for them. chi_016 duplicates chi_008 (30 m): fold into a lead. No READY leads. Staged where the visitors are: bamberg, graz, munich, potsdam, salzburg; new trees would hit the same cap today, so the next run after the window moves starts with the Chicago three.
+
 ## 2026-10-06 (night run, third attempt) - Chicago 6 to 13 live
 
 Merged chi_007 to chi_013 (7 trees, all forest preserve champions) into Chicago, the most the 60-in-24-hours cap allowed. Rewrote the intro, meta, question_meta, question_context and the free-to-visit FAQ for 13 trees (also fixes the old golf-course contradiction). Preflight 0 problems. chi_014 to chi_017 stay in data/research/chicago-verified.json for after the window moves; the Chicago claim stays standing for them. Nothing else was ready: no READY leads, Vienna is a wall.
