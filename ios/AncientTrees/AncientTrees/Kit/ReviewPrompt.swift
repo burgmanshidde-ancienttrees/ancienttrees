@@ -1,12 +1,12 @@
 // Asking for an App Store review, the same restraint as Nudge.swift but for
 // a different ask.
 //
-// Convention: Apple's own developer guidance (developer.apple.com, read
-// 2026-09-03) says to use the native SKStoreReviewController prompt only,
-// never a custom "are you enjoying this?" gate in front of it (App Store
-// Review Guideline 5.6.1 forbids that), and to ask once somebody has shown
-// engagement, at a pause rather than in the middle of something. Never from
-// a button and never on launch. See CONVENTIONS.md.
+// Convention: Apple's own developer guidance says to use the native
+// SKStoreReviewController prompt (never a homemade rating screen) and to ask
+// once somebody has shown engagement, at a pause rather than mid-task. Never
+// from a button and never on launch. Since 2026-10-06 a plain "are you
+// enjoying it?" question comes first, as Polarsteps does; see ReviewAsk below
+// and CONVENTIONS.md.
 //
 // WHAT COUNTS AS ENGAGEMENT CHANGED ON 2026-09-04, on Hidde's ruling:
 // "afgevinkte bomen is wel te lang - ik denk naar 3 bomen bekeken in de
@@ -151,16 +151,36 @@ public final class ReviewPrompt {
 /// The prompt is passed in rather than read from the environment, because
 /// this modifier is applied ABOVE the root's own `.appObjects` and would
 /// therefore be looking for something injected below it.
+///
+/// FIRST A QUESTION, since 2026-10-06 (Hidde: "Polarsteps doet dat ook
+/// gewoon"). The old comment said Guideline 5.6.1 forbids an "are you
+/// enjoying this?" step in front of the system dialog. It does not: 5.6.1
+/// disallows CUSTOM REVIEW PROMPTS, meaning a homemade rating screen in
+/// place of Apple's, and the "no gating" rule people quote is Google Play's.
+/// Polarsteps and many apps on the store ask a plain question first. A yes
+/// gets Apple's own dialog; a no opens the feedback form, which is the
+/// better outcome for somebody unhappy and for us: they are heard, and we
+/// learn what is wrong instead of reading it in a one-star review.
 struct ReviewAsk: ViewModifier {
     let prompt: ReviewPrompt
     @Environment(\.requestReview) private var requestReview
+    @State private var asking = false
+    @State private var feedback = false
 
     func body(content: Content) -> some View {
-        content.onChange(of: prompt.pending) { _, now in
-            guard now else { return }
-            prompt.pending = false
-            requestReview()
-        }
+        content
+            .onChange(of: prompt.pending) { _, now in
+                guard now else { return }
+                prompt.pending = false
+                asking = true
+            }
+            .alert("Are you enjoying Ancient Trees?", isPresented: $asking) {
+                Button("Yes") { requestReview() }
+                Button("Not really") { feedback = true }
+            } message: {
+                Text("You can tell us what would make it better.")
+            }
+            .sheet(isPresented: $feedback) { ContributeView(feedbackMode: true) }
     }
 }
 

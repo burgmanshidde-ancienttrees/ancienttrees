@@ -1933,10 +1933,18 @@ control, and Polarsteps, komoot and AllTrails all put one in their hero.
 ## Asking for an App Store review
 
 **Reference: Apple's own SKStoreReviewController guidance**, not a specific
-third-party app. Use the native `.requestReview` SwiftUI environment action
-only; never a custom "are you enjoying this?" screen in front of it, which
-App Store Review Guideline 5.6.1 forbids as satisfaction gating. Never wire
-it to a "Rate us" button. Ask at the end of a sequence the person has just
+third-party app. Use the native `.requestReview` SwiftUI environment action,
+never a homemade rating screen in its place (that is what Guideline 5.6.1
+actually disallows: "custom review prompts"). Never wire it to a "Rate us"
+button.
+
+**A plain question first is allowed and is what we do, corrected by Hidde on
+2026-10-06** ("Polarsteps doet dat ook gewoon"). This entry used to say 5.6.1
+forbids an "are you enjoying this?" step as satisfaction gating. It does
+not; the no-gating rule is Google Play's, and Polarsteps asks exactly that on
+the App Store. So: a native alert, "Are you enjoying Ancient Trees?", Yes
+opens Apple's dialog, Not really opens the feedback form. The cost of having
+been wrong for a month was every unhappy reader going unheard. Ask at the end of a sequence the person has just
 completed successfully, never on launch and never mid-task.
 
 **What counts, corrected by Hidde on 2026-09-04: trees LOOKED AT, not
