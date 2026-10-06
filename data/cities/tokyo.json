@@ -44,7 +44,8 @@
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/%E5%96%84%E7%A6%8F%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
         "https://visit-minato-city.tokyo/en/places/1047",
-        "https://japantoday.com/category/features/travel/a-visit-to-zenpukuji-temple-in-azabu-to-see-the-oldest-tree-in-tokyo"
+        "https://japantoday.com/category/features/travel/a-visit-to-zenpukuji-temple-in-azabu-to-see-the-oldest-tree-in-tokyo",
+        "https://adeac.jp/minato-city/texthtml/d110110/mp100110-110110/ht000850"
       ],
       "access": "Free, temple grounds open daily",
       "transport": "7 min walk from Azabu-Juban Station (Namboku/Oedo lines)",
@@ -65,7 +66,9 @@
         "label": "late November, when the ginkgo turns deep gold",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it by the aerial roots hanging off its lower branches like stalactites, the feature that earned it the name Sakasa Icho. It stands in the grounds of Zenpukuji temple in Motoazabu."
+      "how_to_recognise": "You can recognise it by the aerial roots hanging off its lower branches like stalactites, the feature that earned it the name Sakasa Icho. It stands in the grounds of Zenpukuji temple in Motoazabu.",
+      "girth_cm": 1040,
+      "height_m": 18
     },
     {
       "id": "tok_002",
@@ -177,7 +180,8 @@
         "label": "late November, at the peak of its golden colour",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it by the trunk, about seven metres round, on the ginkgo that was moved 450 metres across the park in 1902 rather than felled for the road. It stands at the edge of Hibiya Park beside the Matsumotoro restaurant."
+      "how_to_recognise": "You can recognise it by the trunk, about seven metres round, on the ginkgo that was moved 450 metres across the park in 1902 rather than felled for the road. It stands at the edge of Hibiya Park beside the Matsumotoro restaurant.",
+      "girth_cm": 700
     },
     {
       "id": "tok_005",
@@ -196,7 +200,8 @@
       "verified_sources": [
         "https://wood.jp/8-jumoku/kyoju/tokyo/sibatoushouguu-icho.html",
         "https://www.shibatoshogu.com/",
-        "https://note.com/fu9da/n/na876737abf77"
+        "https://note.com/fu9da/n/na876737abf77",
+        "https://adeac.jp/minato-city/texthtml/d110110/mp100110-110110/ht000850"
       ],
       "access": "Free, shrine grounds open daily",
       "transport": "3 min walk from Shibakoen Station (Toei Mita line)",
@@ -217,7 +222,9 @@
         "label": "late November, when the ginkgo turns gold",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it by Tokyo Tower rising directly behind it: this is the tree in the foreground of everybody's photograph, about 21 metres tall. It stands in front of the gate at Shiba Toshogu."
+      "how_to_recognise": "You can recognise it by Tokyo Tower rising directly behind it: this is the tree in the foreground of everybody's photograph, about 21 metres tall. It stands in front of the gate at Shiba Toshogu.",
+      "girth_cm": 650,
+      "height_m": 21.5
     },
     {
       "id": "tok_006",
@@ -237,9 +244,10 @@
         "https://www.tokyo-greenbizmap.metro.tokyo.lg.jp/tokusyu/meiboku/",
         "https://ja.wikipedia.org/wiki/%E6%B5%9C%E9%9B%A2%E5%AE%AE%E6%81%A9%E8%B3%9C%E5%BA%AD%E5%9C%92",
         "https://www.jalan.net/kankou/spt_guide000000190885/",
-        "https://www.openstreetmap.org/node/2493399895"
+        "https://www.openstreetmap.org/node/2493399895",
+        "https://www.tokyo-park.or.jp/park/hama-rikyu/index.html"
       ],
-      "access": "Paid entry, 300 yen",
+      "access": "Paid entry, 300 yen (150 yen for ages 65 and over). Open 9:00 to 17:00, last entry 16:30; closed over the New Year period.",
       "transport": "7 min walk from Shiodome Station (Oedo/Yurikamome lines)",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Hama-Rikyu_300-year-old_pine.jpg",
@@ -272,9 +280,10 @@
       "verified_sources": [
         "https://www.bg.s.u-tokyo.ac.jp/koishikawa/overview/memorial.html",
         "https://koishikawa-bg.jp/ennai/ginkgo/",
-        "https://www.openstreetmap.org/node/4683343152"
+        "https://www.openstreetmap.org/node/4683343152",
+        "https://www.bg.s.u-tokyo.ac.jp/koishikawa/"
       ],
-      "access": "Paid entry, 500 yen (University of Tokyo botanical garden)",
+      "access": "Paid entry, 500 yen for adults (150 yen for children). Open 9:00 to 16:30 as shown on the garden's own site; check its home page for closed days.",
       "transport": "10 min walk from Hakusan Station (Toei Mita line)",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Tokyo%2C_Koishikawa_%282005%29_11.jpg",

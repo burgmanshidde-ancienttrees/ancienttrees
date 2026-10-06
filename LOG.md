@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, second attempt) - enrichment: Tokyo
+
+- Enrich Tokyo (12 indexed trees, 7 improved): Zenpukuji and Shiba Toshogu ginkgos got register status and girth/height, Head-Betting Ginkgo a girth (source rounds to 7 m, Wikipedia says about 6.5, flagged), Hamarikyu pine and Koishikawa ginkgo got price and hours, two trees named their Tokyo Natural Monument designation. No per-tree authority URLs or ids found (Nabunken WebGIS is JavaScript-only). Five trees stayed open: Ueno camphor, Kameido wisteria, Meiji Jingu avenue, Meoto Kusu, Yanaka cedar. No season set: no striking moment in the species files. Preflight 0 problems. No new trees; the writable shelf is still empty and 1,031 leads need a source.
+
 ## 2026-10-06 (night run) - enrichment: Rome and Palermo
 
 - Rung 1: five Tokyo photographs in the sightings inbox are the owner's own test frames (mine, unlisted, no age, nothing marking them out); verdict written as lead, no page.
