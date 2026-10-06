@@ -14,6 +14,74 @@ roughly double the real number, and do not compare one across that date.
 because those point at /app and the listener matched the href. Every other
 event on the list is unaffected.
 
+## Weekly analysis 2026-10-06
+
+Tenth weekly analysis. Compares 09-28 to 10-04 (the first week after the
+demotion) with 09-21 to 09-27, read from the daily entries. 10-04 is still
+partial in Search Console and the 10-05 daily entry is not in this file yet.
+
+**Scorecard**
+
+| Week | Impressions | Clicks | CTR | Avg position | Visits (beacon, 8d) | Directions (14d) | App-CTA (14d) | App downloads (first-time) | Waitlist total | Submissions total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 09-21 to 09-27 | 15,217 | 377 | 2.5% | ~7.6 | about 1,440 (spike excluded) | 43 | 42 | 24+ (09-21 not in table) | 20 (Android) | 27 |
+| 09-28 to 10-04 | 400 | 14 | 3.5% | 18 to 39 | 220 (09-27 to 10-04) | 34 | 22 | 13 | 20 (Android) | 32 |
+
+**What moved:**
+1. Search is at the floor. Impressions fell 97% (15,217 to 400) and clicks
+   96% (377 to 14): about 55 impressions a day since 09-28 against about
+   2,000 before. Average position went from 7.5 to 22 to 39, so Google shows
+   the site far less everywhere, not a few pages losing. The 3.5% CTR is 14
+   clicks and means nothing. No sign of recovery in 7 days; the change is
+   the demotion, not a content trend.
+2. Site visits followed: 220 beacon visits in 8 days, the daily number
+   falling from 90 (09-27) to 0 to 30 (10-04 is partial). Pageviews now
+   come mostly from our own app host (240 of 460), Google gives 100. Page
+   load p50 3.8 s, p90 9.4 s.
+3. The app held up better than the site. Downloads were 13 in the week
+   (09-30 is missing from the table) against 24 or more the week before,
+   with 09-26 (9) the peak. asc_downloads.py is moving again, so last
+   week's top suggestion is closed. App events over 14 days: 144 opens, 515
+   trees opened, 36 sightings from 68 installs. Volumes are small, and one
+   install made 79 of a day's 109 events on 10-04.
+4. Readers still give. 5 submissions this week (32 total), 3 accounts on
+   10-01 and 2 on 10-05 (7 in 14 days), and six reader photographs went live
+   (Reykjavik x3, Fukuoka, Melbourne, one added beside an existing lead).
+   The ambassador asks on 10-05 (Reykjavik, Barcelona) are ours.
+5. The machine is working: 529 minutes in its week so far, and on 10-06 it
+   ran enrichment passes on Malaga, Paris, Dublin, Brussels, Edinburgh, New
+   York, Munich, Tokyo, Rome and Palermo (register ids, girth, height).
+   Right work for this phase; not measurable in search yet.
+
+**Suggestions, ranked:**
+1. **[run]** Keep the enrichment pass on the cities that held impressions
+   before 09-28, in the digest's depth-roster order (prague, amsterdam,
+   lisbon, seville, munich, berlin). 6,204 of 7,599 impressions in the
+   10-day window sat on proven cities; nothing else in the data says which
+   pages Google may restore first.
+2. **[run]** Photographs on indexed pages with none come first. Only tree
+   pages with a photograph are indexed since 10-06, 855 trees are kept out
+   for lacking photo and pin, and reader photographs were the only recent
+   additions to the indexable set. Work the sighting queue every knock.
+3. **[sessie]** Check Search Console's Manual actions, Security issues and
+   Page indexing reports, to confirm this is the algorithmic demotion we
+   assume and not an action against the site. The data cannot separate the
+   two, and the answer decides whether more content work or a
+   reconsideration request is the next move.
+4. **[run]** Do not read the zero-click pages as demand. /jauze,
+   /wilparting and /komjatice show 84 to 222 impressions at 0 clicks, and
+   their top queries ("kasukabe new city hall construction bid") are not
+   tree searches. Keep them off the depth list unless seolearn's NOT_DEMAND
+   rule clears them.
+5. **[FOR HIDDE]** Decide how long recovery mode waits before a harder step
+   (reconsideration request, or pruning more of the 8,935 noindexed pages).
+   Search Console is flat at about 55 impressions a day for 7 days; the case
+   for a second move builds if it is still flat after two more weeks.
+
+**Watch next week:** daily impressions rising above 100 (first sign of
+recovery), the Page indexing count, whether downloads hold near 2 a day
+with search gone, and the share of pageviews coming from our own host.
+
 ## 2026-10-04 (previous UTC day)
 
 **Today: 2 tree submissions arrived today (32 total); an account was opened today (23 total).**
