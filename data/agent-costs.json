@@ -9890,6 +9890,31 @@
    "trees": 0,
    "wasted": 113045,
    "note": "Thin pass: two fetches, no register or measurement search. Nothing closed."
+  },
+  {
+   "date": "2026-10-06",
+   "target": "glasgow",
+   "kind": "enrich",
+   "tokens": 128378,
+   "trees": 0,
+   "note": "1 height closed (gla_005); no register records found; thin yield"
+  },
+  {
+   "date": "2026-10-06",
+   "target": "graz",
+   "kind": "verify",
+   "tokens": 173753,
+   "trees": 0,
+   "note": "1 flagged plane verified; 11 register rows resolved to houses/schools and blocked"
+  },
+  {
+   "date": "2026-10-06",
+   "target": "graz",
+   "kind": "write",
+   "tokens": 147637,
+   "trees": 1,
+   "note": "grz_016 merged with de overlay; fdl_001 skipped as duplicate of spa_001 (brief wrong)",
+   "brief_wrong": true
   }
  ]
 }
