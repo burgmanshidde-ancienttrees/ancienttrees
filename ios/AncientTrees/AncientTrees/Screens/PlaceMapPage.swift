@@ -94,7 +94,6 @@ struct PlaceMapPage: View {
         return groups.values.sorted { $0.trip.km < $1.trip.km }
     }
 
-    private var awayCount: Int { away.reduce(0) { $0 + $1.trees.count } }
 
     private func card(_ t: Tree) -> some View {
         SheetLink(route: .tree(t.id)) { TreeCard(tree: t) }
@@ -123,7 +122,6 @@ struct PlaceMapPage: View {
                 .frame(maxWidth: .infinity)
                 .padding(.bottom, 10)
         } content: {
-            ScrollViewReader { proxy in
             VStack(alignment: .leading, spacing: 18) {
                 // Who looks after this city, komoot's person row, above the
                 // trees as the website prints it under the intro.
@@ -134,24 +132,6 @@ struct PlaceMapPage: View {
                     }
                     // Nobody named: the open seat, as the website draws it.
                     if named.isEmpty { AmbassadorWantedRow(place: title) }
-                }
-                // The jump to the day trips, as the website draws it under
-                // its intro (benchmarked on Google Travel's "Day trips" tab,
-                // 2026-10-06): on a city of forty trees they sat unseen at
-                // the foot of the list.
-                if !away.isEmpty {
-                    Button {
-                        sheetHeight = .full
-                        withAnimation { proxy.scrollTo("day-trips", anchor: .top) }
-                    } label: {
-                        Text("\(awayCount) more \(awayCount == 1 ? "tree" : "trees") a day trip away")
-                            .font(.subheadline.weight(.semibold))
-                            .foregroundStyle(Brand.moss)
-                            .padding(.horizontal, 12).padding(.vertical, 7)
-                            .overlay(Capsule().stroke(Brand.inkSoft.opacity(0.3)))
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityIdentifier("day-trips-jump")
                 }
                 ForEach(inTown) { t in card(t) }
                 // A DAY TRIP AWAY, on the website's word (Hidde approved the
@@ -165,7 +145,6 @@ struct PlaceMapPage: View {
                         .font(.brand(20, .bold, relativeTo: .title3))
                         .foregroundStyle(Brand.ink)
                         .accessibilityAddTraits(.isHeader)
-                        .id("day-trips")
                     ForEach(away, id: \.trip.line) { g in
                         (Text(g.trip.place).bold().foregroundStyle(Brand.ink)
                          + Text(String(g.trip.line.dropFirst(g.trip.place.count))).foregroundStyle(Brand.inkSoft))
@@ -174,7 +153,6 @@ struct PlaceMapPage: View {
                     }
                 }
                 Color.clear.frame(height: 24)
-            }
             }
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, alignment: .leading)

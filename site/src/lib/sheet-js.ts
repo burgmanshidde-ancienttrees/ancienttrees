@@ -195,17 +195,6 @@ export const SHEET_JS = `
 
   document.addEventListener('click', function(e) {
     if (e.target.closest('.sheet-back')) { closeTree(); }
-    // "7 more trees a day trip away": a plain #anchor did not move the
-    // panel (seen live 2026-10-06), so scroll it by hand, and on a phone
-    // raise the sheet first so the section is not scrolled behind the map.
-    var jump = e.target.closest('.day-trips-jump');
-    if (jump) {
-      var target = document.getElementById('day-trips');
-      if (!target) return;
-      e.preventDefault();
-      if (mq.matches && at !== 'full') setDetent('full');
-      setTimeout(function() { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, mq.matches ? 320 : 0);
-    }
   });
 
   // The map script already marks a card active when its pin is tapped, and

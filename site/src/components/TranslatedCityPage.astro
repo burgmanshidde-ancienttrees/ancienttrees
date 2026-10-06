@@ -143,9 +143,6 @@ const cityHasQuestion = hasQuestionPage(city);
         <p class="lede">{tr.intro}</p>
         <button type="button" class="city-intro-more">{U.readMore}</button>
         <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} place={tr.city} requestCity={city.data.city} />
-        {split.away.length > 0 && (
-          <a class="day-trips-jump" href="#day-trips">{U.dayTripJump(split.away.reduce((n, g) => n + g.trees.length, 0))}</a>
-        )}
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
           <span class="passport-total" id="passport-total"></span>

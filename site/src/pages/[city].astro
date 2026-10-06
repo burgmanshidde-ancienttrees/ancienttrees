@@ -288,9 +288,6 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
         <p class="lede">{intro}</p>
         <button type="button" class="city-intro-more">Read more</button>
         <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={cityName} />
-        {split.away.length > 0 && (
-          <a class="day-trips-jump" href="#day-trips">{ui("en").dayTripJump(split.away.reduce((n, g) => n + g.trees.length, 0))}</a>
-        )}
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
           <span class="passport-total" id="passport-total"></span>
