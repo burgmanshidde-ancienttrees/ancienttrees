@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, sixth attempt) - enrichment: Paris
+
+- Enrich Paris (10 indexed trees, 7 improved): seven trees got their Ville de Paris "Arbres remarquables" register id (matched within about 30 m of our pin, Saint-Gervais about 100 m); the Saint-Gervais elm also got girth 200 cm and height 12 m. Jardin des Plantes trees (Cedar of Jussieu, Second Robinier, Buffon Plane) stay open: the city register has no records there and mnhn.fr answers curl with a Cloudflare challenge (blocklist candidate). No access or season changes. Preflight 0 problems. No new trees; writable shelf still empty. Next in enrich queue: malaga.
+
 ## 2026-10-06 (night run, fifth attempt) - enrichment: Dublin
 
 - Enrich Dublin (4 indexed trees, 1 improved): the Champion Planes of New Square got a girth of 550 cm from a Trinity student tree blog (Trinity's own page says "5m+"; neither states the height of measurement, flagged in measure_source). No per-tree register page found for any of the four (Tree Council of Ireland and Dublin City Council pages gave nothing usable), so no register fields; no measurements for the Hungry Tree, St Anne's holm oaks or the Farmleigh sycamore; no season set. Preflight 0 problems. No new trees.
