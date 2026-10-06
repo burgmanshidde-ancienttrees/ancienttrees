@@ -9872,6 +9872,15 @@
    "tokens": 152913,
    "trees": 0,
    "note": "Enrichment: register ids on 13 trees, girth on 7; Baumkataster WFS hung, so girth missing for 6. No new trees."
+  },
+  {
+   "date": "2026-10-06",
+   "target": "london (enrich)",
+   "kind": "verify",
+   "tokens": 132431,
+   "trees": 0,
+   "wasted": 132431,
+   "note": "Closed nothing: kew.org Cloudflare challenge, no per-tree register page, no sourced measurements reachable."
   }
  ]
 }

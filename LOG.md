@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-06 (night run) - enrichment: London, closed nothing
+
+- Enrich London (19 indexed trees): the verify agent filled nothing. kew.org answers with a Cloudflare challenge (needs a session, not a night run), Wikipedia's Great Trees of London list has no per-tree pages or ids, and the pages reached held no sourced girth or height. Woodland Trust data untouched per the London gate. Marked done for 14 days so it is not re-served. About 132k tokens, wasted.
+
 ## 2026-10-06 (night run) - enrichment: Vienna
 
 - Rung: enrichment first per prepare.py (vienna, 37 gaps on 18 indexed trees). Verify agent filled 13 trees: Naturdenkmale (Stadt Wien, MA 22) register ids matched by species and distance (within ~15 m of our pins), a GeschichteWiki record URL for vie_001, girth on vie_001/002/005/006/007/008/023, height on vie_007. Not filled: girth for six trees because the data.wien.gv.at Baumkataster WFS hung on every request after the first batch (candidate for data/fetch-blocklist.json), and no season set (plane species files have no striking moment). vie_009's sequoias have no individual register row. Preflight 0 problems. No new trees. 7-day visits: 1,910 visits, 2,160 page views. Refused: rm of temp files in out/enrich/ (harmless, runner is discarded).
