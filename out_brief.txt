@@ -1,0 +1,161 @@
+ENRICHMENT PASS: Florence (8 indexed trees with gaps). Use the verify agent.
+
+Fill what each tree page lacks, from sources you actually open. Never invent: a gap
+you cannot close stays a gap, and that is a finished answer. Time-box: report
+after about forty minutes.
+
+Per gap:
+- register: find the AUTHORITY'S OWN RECORD for this tree (a government or national
+  register page about this one tree: Naturdenkmal entry, monumental-tree sheet,
+  heritage-tree page). Return register_url (that page) and register_name (the
+  register's own name, e.g. "Arvoredo de Interesse Público (ICNF)"). A register
+  homepage, a data endpoint or a news article is not a record. Where the register
+  has NO per-tree page but you found this tree's own entry in its data, return
+  register_name and register_id (the register's number for this tree) instead.
+  Girth is circumference at 1.30 m; a base circumference is not a girth, leave it out.
+- measurement: girth_cm and/or height_m from a register, a plaque or the authority's
+  page, with measure_source. Never from our own story, never the species' maximum.
+- access: one plain line a visitor can act on: free or the price, opening days and
+  hours where the site publishes them, from the site's own page (add it as add_source).
+  Keep what the current line says that is still true.
+- season: read season_file; set best_time {"months": [...], "label": "...", "kind": "..."}
+  only if the species has a moment marked "striking" or "worth the trip" and this tree
+  is the kind that shows it. Otherwise leave it. Scarcity is the point.
+
+Answer: a JSON list written to out/enrich/florence.answer.json, one object per tree you
+improved: {"id", "register_url"?, "register_name"?, "register_id"?, "add_source"?, "girth_cm"?, "height_m"?, "measure_source"?, "access"?, "best_time"?}.
+Do not edit data/ yourself. No em dashes.
+
+TREES:
+[
+ {
+  "id": "flo_001",
+  "name": "The Micheli Yew",
+  "species": "European Yew (Taxus baccata)",
+  "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+  "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+  "gaps": [
+   "register"
+  ],
+  "sources": [
+   "https://ilregistrodeglialberi.it/6491-tasso-giardino-dei-semplici-tasso-firenze-fi-toscana",
+   "https://www.ortobotanicoitalia.it/toscana/unifirenze/"
+  ],
+  "season_file": null
+ },
+ {
+  "id": "flo_002",
+  "name": "The Cork Oak of the Giardino dei Semplici",
+  "species": "Cork Oak (Quercus suber)",
+  "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+  "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+  "gaps": [
+   "register",
+   "season"
+  ],
+  "sources": [
+   "https://ilregistrodeglialberi.it/6490-quercia-da-sughero-firenze-fi-toscana",
+   "https://www.ortobotanicoitalia.it/toscana/unifirenze/"
+  ],
+  "season_file": "data/phenology/cork-oak.json"
+ },
+ {
+  "id": "flo_003",
+  "name": "The Montezuma Cypress",
+  "species": "Montezuma Cypress (Taxodium mucronatum)",
+  "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+  "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+  "gaps": [
+   "register",
+   "measurement"
+  ],
+  "sources": [
+   "https://ilregistrodeglialberi.it/6487-cipresso-di-montezuma-firenze-fi-toscana",
+   "https://commons.wikimedia.org/wiki/File:Taxodium_mucronatum_01_by_Line1.jpg",
+   "https://www.ascuoladaglialberi.net/firenze/"
+  ],
+  "season_file": null
+ },
+ {
+  "id": "flo_009",
+  "name": "The Ginkgo of Piazzale Michelangelo",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "address": "Piazzale Michelangelo, 50125 Firenze",
+  "access": "Free, public piazza, always open",
+  "gaps": [
+   "register",
+   "measurement"
+  ],
+  "sources": [
+   "https://ilregistrodeglialberi.it/6510-ginkgo-del-piazzale-ginkgo-firenze-fi-toscana",
+   "https://commons.wikimedia.org/wiki/File:Ginkgo_Biloba_a_Firenze_(piazzale_Michelangelo).jpg",
+   "https://www.firenzetoday.it/cronaca/segreti-piazzale-michelangelo.html"
+  ],
+  "season_file": null
+ },
+ {
+  "id": "flo_011",
+  "name": "The Caucasian Elm That Was Cut Back to Save It",
+  "species": "Caucasian Elm (Zelkova carpinifolia)",
+  "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+  "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+  "gaps": [
+   "register"
+  ],
+  "sources": [
+   "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+   "https://ilregistrodeglialberi.it/6488-olmo-del-caucaso-firenze-fi-toscana",
+   "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+  ],
+  "season_file": null
+ },
+ {
+  "id": "flo_012",
+  "name": "The Zelkova Somebody Keeps Measuring",
+  "species": "Saw-leaf Zelkova (Zelkova serrata)",
+  "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+  "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+  "gaps": [
+   "register"
+  ],
+  "sources": [
+   "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+   "https://ilregistrodeglialberi.it/6499-zelkova-giapponese-dellorto-botanico-zelkova-giapponese-firenze-fi-toscana",
+   "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+  ],
+  "season_file": null
+ },
+ {
+  "id": "flo_013",
+  "name": "The Flag-Crowned Pine",
+  "species": "Turkish Pine (Pinus brutia)",
+  "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+  "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+  "gaps": [
+   "register"
+  ],
+  "sources": [
+   "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+   "https://www.consiglio.regione.toscana.it/upload/crt/resoconti-aula/2439_5388.pdf",
+   "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+  ],
+  "season_file": null
+ },
+ {
+  "id": "flo_014",
+  "name": "The Himalayan Cedar of the Semplici",
+  "species": "Himalayan Cedar (Cedrus deodara)",
+  "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+  "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+  "gaps": [
+   "register",
+   "season"
+  ],
+  "sources": [
+   "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+   "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+  ],
+  "season_file": "data/phenology/himalayan-cedar.json"
+ }
+]
+
