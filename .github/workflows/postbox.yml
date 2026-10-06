@@ -1,0 +1,35 @@
+# Ask the database one question, from a runner: does the postbox need an
+# account? (Hidde, 2026-10-06, the third time: "I can still request
+# ambassadorship without being logged in".)
+#
+# The rule lives in supabase/postbox-needs-an-account.sql and can only be
+# pasted by Hidde, so the honest state of it has to be MEASURED, not
+# remembered: scripts/sqlcheck.py pushes one marked row through with the
+# publishable key and no session, and deletes it again when it lands. The
+# nightly run already carries this inside health.py, where its verdict is
+# read by an agent on a good night and by nobody on a short one; a session
+# in the sandbox cannot run it at all, because the sandbox's proxy does not
+# reach supabase.co. This is the same probe on a button: dispatch it, read
+# the one line. It is also the daily alarm, at a time no other schedule
+# uses, and it FAILS when the door is open so that health.py's watched list
+# can name it like any other red check.
+name: Postbox check
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "40 6 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Does the postbox need an account
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python3 scripts/sqlcheck.py
