@@ -367,6 +367,10 @@ public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
     /// the website (data/ambassadors.json). Cities only, usually absent. A var
     /// with a default so older code building a facet by hand still compiles.
     public var ambassadors: [CityAmbassador]? = nil
+    /// True when the city has an ambassador who has not (yet) agreed to be
+    /// named: the seat is taken, so the open seat is not drawn (2026-10-06,
+    /// decided on the website from data/ambassadors.json).
+    public var seated: Bool? = nil
 
     public var id: String { slug ?? name }
 }
@@ -446,6 +450,7 @@ public struct BrowseFacets: Sendable {
     public func aka(city slug: String) -> [String] { cityBySlug[slug]?.aka ?? [] }
     public func popularity(city slug: String) -> Int { cityBySlug[slug]?.popularity ?? 0 }
     public func ambassadors(city slug: String) -> [CityAmbassador] { cityBySlug[slug]?.ambassadors ?? [] }
+    public func seated(city slug: String) -> Bool { cityBySlug[slug]?.seated ?? false }
     public func face(country name: String) -> String? { countryByName[name]?.face }
     public func face(species commonName: String) -> String? { speciesByName[commonName]?.face }
     public func intro(species commonName: String) -> String? { speciesByName[commonName]?.intro }

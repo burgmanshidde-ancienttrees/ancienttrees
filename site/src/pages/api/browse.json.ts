@@ -33,7 +33,7 @@ import { cityFaceTree, countryFaceTree, speciesFaceTree, parkFaceTree, usablePho
 import { groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey, parkTitle } from "../../lib/parks";
 import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
-import { namedAmbassadorsFor } from "../../lib/ambassadors";
+import { namedAmbassadorsFor, placeHasAmbassador } from "../../lib/ambassadors";
 import { collectionEntries } from "../../lib/collection-rank";
 import { citySearchNames } from "../../lib/city-aliases";
 import { cityPopularity } from "../../lib/popularity";
@@ -82,6 +82,9 @@ export async function GET() {
     ...(namedAmbassadorsFor(c.id).length
       ? { ambassadors: namedAmbassadorsFor(c.id).map((a) => ({ name: a.display_name!, ...(a.affiliation ? { affiliation: a.affiliation } : {}) })) }
       : {}),
+    // A seat taken by somebody not (yet) named: the app must not offer it as
+    // empty, exactly as the website stops drawing the open seat (2026-10-06).
+    ...(!namedAmbassadorsFor(c.id).length && placeHasAmbassador(c.id) ? { seated: true } : {}),
   }));
 
   // Contract D's own gate, the one /collections applies: a draft is built for

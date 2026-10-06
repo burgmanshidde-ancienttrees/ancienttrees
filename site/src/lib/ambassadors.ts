@@ -41,3 +41,11 @@ function all(): Ambassador[] {
 export function namedAmbassadorsFor(slug: string): Ambassador[] {
   return all().filter((a) => a.place_slug === slug && a.public && a.display_name);
 }
+
+/** Whether this place HAS an ambassador, named or not (2026-10-06). An
+ *  ambassador who has not yet said yes to being named stays off the page, and
+ *  the page must not then advertise the seat as empty either: both pages and
+ *  the feed's `seated` flag ask here. */
+export function placeHasAmbassador(slug: string): boolean {
+  return all().some((a) => a.place_slug === slug);
+}

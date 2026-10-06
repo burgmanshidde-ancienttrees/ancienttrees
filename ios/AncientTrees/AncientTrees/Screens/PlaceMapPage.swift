@@ -143,8 +143,9 @@ struct PlaceMapPage: View {
                     ForEach(named, id: \.self) { a in
                         AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
                     }
-                    // Nobody named: the open seat, as the website draws it.
-                    if named.isEmpty { AmbassadorWantedRow(place: title) }
+                    // Nobody named: the open seat, as the website draws it,
+                    // unless an ambassador holds it who is not named yet.
+                    if named.isEmpty && !catalogue.facets.seated(city: slug) { AmbassadorWantedRow(place: title) }
                 }
                 ForEach(inTown) { t in card(t) }
                 // A DAY TRIP AWAY, on the website's word (Hidde approved the

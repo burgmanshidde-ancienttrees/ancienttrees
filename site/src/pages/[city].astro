@@ -16,7 +16,7 @@ import { peakFor } from "../lib/phenology";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { nTrees } from "../lib/tree-count";
 import AmbassadorLine from "../components/AmbassadorLine.astro";
-import { namedAmbassadorsFor } from "../lib/ambassadors";
+import { namedAmbassadorsFor, placeHasAmbassador } from "../lib/ambassadors";
 import { fitTitle } from "../lib/title";
 import { arm } from "../lib/copy-test";
 import { submitLink, ageToken } from "../lib/tree-copy";
@@ -287,7 +287,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="city-intro">
         <p class="lede">{intro}</p>
         <button type="button" class="city-intro-more">Read more</button>
-        <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={cityName} />
+        <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={placeHasAmbassador(city.id) ? undefined : cityName} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
           <span class="passport-total" id="passport-total"></span>
