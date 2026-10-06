@@ -95,7 +95,13 @@
       "curation_status": "flagged",
       "notes": "No planting date or age documented anywhere found; age range is a wide, honest estimate from trunk girth alone, bounded loosely by the park's 1784 founding. A candidate Commons photo (Platano_secolare_ai_Giardini_Montanelli.jpg) was viewed and rejected: its caption identifies it only as 'a centuries-old plane tree' in the gardens generally, and the park holds several large planes, so it could not be confirmed as this specific, individually surveyed specimen. The photograph now on the page is a different file (Albero_secolare_nei_giardini_di_Milano.jpg) and it is attached to this tree by evidence rather than by caption: it is the image of Wikidata Q55741802, a pianta monumentale whose own coordinate sits 14 m from our pin, with the next registered plane in the gardens 260 m away.",
       "location_precision": "confirmed",
-      "how_to_recognise": "About fifty metres from the Montanelli statue: a deeply fluted base 8.36 metres round that splits almost at ground level into five limbs, opening like a vase rather than rising as a column."
+      "how_to_recognise": "About fifty metres from the Montanelli statue: a deeply fluted base 8.36 metres round that splits almost at ground level into five limbs, opening like a vase rather than rising as a column.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/F205/MI/03",
+        "url": null
+      },
+      "girth_cm": 830,
+      "height_m": 24
     },
     {
       "id": "mil_003",
@@ -129,7 +135,11 @@
       "notes": "The 164-year age figure comes from RAMI's registry only; the second source (comune.milano.it) confirms species, location and monumental status but not that specific number, so the age is flagged as single-sourced.",
       "location_precision": "confirmed",
       "girth_cm": 424,
-      "how_to_recognise": "Four and a quarter metres round and 27 metres tall, with none of the drama of the contorted trees near it, and small dark cherry-like fruit in autumn."
+      "how_to_recognise": "Four and a quarter metres round and 27 metres tall, with none of the drama of the contorted trees near it, and small dark cherry-like fruit in autumn.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 07/F205/MI/03",
+        "url": null
+      }
     },
     {
       "id": "mil_004",
@@ -168,7 +178,11 @@
       "curation_status": "flagged",
       "notes": "Age genuinely disputed between two calculation methods: RAMI's registry gives 235 years from growth data, while the garden's own 250th-anniversary material (2026) implies a 251-year planting-date count from 1775. Presented as a range rather than asserting either. Two Commons garden photos were checked (Brera Botanical Garden - 4.jpg, Orto botanico Brera a Milano 319.jpg) and rejected: neither caption identifies a ginkgo specifically among the garden's roughly 300 plant beds. Photo status corrected 2026-07-30: a CC BY iNaturalist observation (obs 288159360, codrin_bucur, June 2025, geotagged within a few metres of this entry's own coordinates, observer's own note reads \"From 1775\" matching this entry's planting date exactly) had been rejected by a 2026-07-28 session as showing \"vine-like leaves climbing the trunk, not the unmistakable fan-shaped leaves.\" Downloaded and viewed the full-resolution original directly this session: the canopy filling most of the frame (upper left, upper right, along the branches) is unmistakably ginkgo, dozens of the distinctive notched fan-shaped leaves visible throughout. A separate, smaller cluster of grayer, rounder leaves partway up the trunk, likely an incidental vine growing on the tree, is what the prior session's description matches, not the canopy as a whole. Approved on this session's direct look; noting the reversal plainly since it corrects a specific prior call.",
       "location_precision": "confirmed",
-      "how_to_recognise": "A pair rather than one tree, male and female planted together, in the garden behind the Brera courtyard; both turn gold and drop within days in November."
+      "how_to_recognise": "A pair rather than one tree, male and female planted together, in the garden behind the Brera courtyard; both turn gold and drop within days in November.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 81/F205/MI/03",
+        "url": null
+      }
     },
     {
       "id": "mil_005",
@@ -251,7 +265,11 @@
       "height_m": 18.0,
       "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (3 m away).",
       "girth_cm": 465,
-      "how_to_recognise": "Held up since 2019 by a discreet steel exoskeleton around the crown, in front of the old Porta Ticinese customs arches; deep oxidised red in October."
+      "how_to_recognise": "Held up since 2019 by a discreet steel exoskeleton around the crown, in front of the old Porta Ticinese customs arches; deep oxidised red in October.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 17/F205/MI/03",
+        "url": null
+      }
     },
     {
       "id": "mil_007",
@@ -365,7 +383,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (5 m away).",
       "girth_cm": 644,
-      "how_to_recognise": "On the street corner, 6.44 metres round, with a small wooden owl carved at the foot of the trunk and an old metal cable bracket still fixed higher up."
+      "how_to_recognise": "On the street corner, 6.44 metres round, with a small wooden owl carved at the foot of the trunk and an old metal cable bracket still fixed higher up.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/F205/MI/03",
+        "url": null
+      }
     },
     {
       "id": "mil_010",
@@ -408,7 +430,11 @@
       "height_m": 18.0,
       "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 435,
-      "how_to_recognise": "Leaning almost horizontally out over the pond beside the Ponte delle Sirenette, 4.35 metres round, its lower limbs bending nearly to the water."
+      "how_to_recognise": "Leaning almost horizontally out over the pond beside the Ponte delle Sirenette, 4.35 metres round, its lower limbs bending nearly to the water.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 04/F205/MI/03",
+        "url": null
+      }
     },
     {
       "id": "mil_011",
@@ -487,7 +513,11 @@
       "height_m": 32.0,
       "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 483,
-      "how_to_recognise": "On the Via Palestro side, 4.83 metres round, its main limbs tied back to the trunk with anchoring cables and a low fence around the base."
+      "how_to_recognise": "On the Via Palestro side, 4.83 metres round, its main limbs tied back to the trunk with anchoring cables and a low fence around the base.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 12/F205/MI/03",
+        "url": null
+      }
     },
     {
       "id": "mil_013",
@@ -530,7 +560,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 550,
-      "how_to_recognise": "On the gardens' western edge toward Via Manin, the broad many-stemmed one at 5.5 metres round, squat and wide rather than tall."
+      "how_to_recognise": "On the gardens' western edge toward Via Manin, the broad many-stemmed one at 5.5 metres round, squat and wide rather than tall.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 02/F205/MI/03",
+        "url": null
+      }
     },
     {
       "id": "mil_014",
@@ -563,7 +597,13 @@
       "curation_status": "flagged",
       "notes": "Two independent sources: the Comune di Milano monumental-tree page (VTA 44854, trunk diameter 195 cm, crown reduced, fungal decay, periodic checks) and the national MASAF register (Platanus acerifolia, Giardino Roberto Balzen, Corso di Porta Romana 112-116, girth 600 cm, height 16 m; the register's spelling 'Balzen' is a typo for Bazlen). The two coordinates agree to within about 22 m, which is why this pin is confirmed rather than approximate. No age is published by either source; the range is estimated from girth. The tree is alive and monitored as of the comune page's last update, but its own manager says it stays only while it is safe above the playground, so a future pass should re-check before this entry ages.",
       "location_precision": "confirmed",
-      "how_to_recognise": "In the playground square, topped at some point so it is stocky rather than tall, with a trunk 1.95 metres through that the play equipment arranges itself around."
+      "how_to_recognise": "In the playground square, topped at some point so it is stocky rather than tall, with a trunk 1.95 metres through that the play equipment arranges itself around.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 05/F205/MI/03",
+        "url": null
+      },
+      "girth_cm": 600,
+      "height_m": 16
     },
     {
       "id": "mil_015",
@@ -901,6 +941,10 @@
         "status": "approved",
         "width": 4003,
         "height": 5188
+      },
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 23/F205/MI/03",
+        "url": null
       }
     },
     {
