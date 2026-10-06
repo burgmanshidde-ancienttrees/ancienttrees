@@ -168,7 +168,7 @@ struct PlaceMapPage: View {
                         .id("day-trips")
                     ForEach(away, id: \.trip.line) { g in
                         (Text(g.trip.place).bold().foregroundStyle(Brand.ink)
-                         + Text(", \(g.trip.km) km \(g.trip.dir)").foregroundStyle(Brand.inkSoft))
+                         + Text(String(g.trip.line.dropFirst(g.trip.place.count))).foregroundStyle(Brand.inkSoft))
                             .font(.subheadline)
                         ForEach(g.trees) { t in card(t) }
                     }
