@@ -44,9 +44,12 @@
       "verified_sources": [
         "https://es.wikipedia.org/wiki/Drago_de_Icod_de_los_Vinos",
         "https://en.wikipedia.org/wiki/El_Drago_Milenario",
-        "https://icoddelosvinos.es/patrimonio/drago-milenario/"
+        "https://icoddelosvinos.es/patrimonio/drago-milenario/",
+        "https://www.webtenerife.com/que-visitar/jardines-y-parques/parque-del-drago/",
+        "https://www.tenerife.es/w/drago-milenario (Cabildo record: height 18 m; its 1,850 cm perimeter is a trunk-base figure, so no girth is given. The Icod town council page says about 21 m, a conflict left unresolved)",
+        "https://www.tenerife.es/w/drago-milenario"
       ],
-      "access": "Paid entry to Parque del Drago, the 3-hectare botanical park laid out around the tree in 1996. The tree is partly visible from outside the park; the full view of the crown and base is from inside.",
+      "access": "Paid entry to Parque del Drago, the 3-hectare botanical park around the tree: adults 5 euros, students and pensioners 3, children 6 to 11 2.50, under 6 free (Canary residents pay less). Open daily, 09:00 to 20:00 April to October and 09:00 to 18:00 November to March. The tree is partly visible from outside the park; the full view of the crown and base is from inside.",
       "transport": "Central Icod de los Vinos, a few minutes on foot from the town's main square. A car is the realistic way to reach the town, roughly 20 km west of Puerto de la Cruz.",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Dragon%27s_blood_tree_%28%D0%94%D0%A0%D0%90%D0%9A%D0%9E%D0%9D%D0%9E%D0%92%D0%9E_%D0%94%D0%95%D0%A0%D0%95%D0%92%D0%9E%29_-_panoramio_%282%29.jpg",
@@ -60,7 +63,12 @@
       "notes": "Age is a genuine, unresolved disagreement and is deliberately left unresolved. es.wikipedia cites a current scientific estimate of approximately 700 years with a margin of error of 100-150 years (roughly 550-850); popular and tourist sources claim 800-1,000+, and folklore claims up to 3,000 are unconfirmed and not used as a bound. Dracaena draco has no annual growth rings, so it cannot be dated dendrologically and no girth-based derivation was attempted for this species. Height 18m (es.wikipedia) to 21m (other sources); trunk perimeter about 20m at base (girth_cm 2000, an unusually wide multi-stemmed base typical of the species rather than a single narrow trunk); crown diameter about 20m; over 300 primary branches. Declared a Spanish national monument in 1917. Underwent 'profound sanitation' in 1985 (internal ventilation installed against fungal rot); the road past it was relocated in 1993. No evidence of recent storm damage or a lost branch; status per sources is protected and stable, with a health study run Oct 2023-Mar 2024 per eldiario.es informing conservation work.",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "A trunk about twenty metres round at the base splitting into more than three hundred branches, standing alone in the park that was laid out around it in 1996."
+      "how_to_recognise": "A trunk about twenty metres round at the base splitting into more than three hundred branches, standing alone in the park that was laid out around it in 1996.",
+      "official_register": {
+        "name": "Árboles Monumentales (Cabildo de Tenerife), protection: Regional",
+        "url": "https://www.tenerife.es/w/drago-milenario"
+      },
+      "height_m": 18
     },
     {
       "id": "tfe_002",
@@ -79,7 +87,9 @@
       "verified_sources": [
         "https://www.medianiasdetenerife.com/ficha.cfm?id=82&idioma=esp",
         "https://canariaslife.com/el-pino-gordo-de-vilaflor/",
-        "https://www.xn--arbolybosquedelao-uxb.es/el-pino-gordo-vilaflor-de-chasna-santa-cruz-de-tenerife/"
+        "https://www.xn--arbolybosquedelao-uxb.es/el-pino-gordo-vilaflor-de-chasna-santa-cruz-de-tenerife/",
+        "https://turismo.vilaflordechasna.es/arboles-monumentales (Vilaflor town council: circumference at breast height 9.36 m, total height 45.12 m; the Cabildo record gives 47 m and a 1,000 cm perimeter without saying at what height)",
+        "https://www.tenerife.es/w/pino-gordo-1"
       ],
       "access": "Free. A marked trail of roughly 150 to 200 metres from a signed parking and viewpoint area just off the TF-21 mountain road toward the Parador; benches and information panels on site.",
       "transport": "By car via the TF-21 a few kilometres above Vilaflor village. No public transport reaches the viewpoint directly, so a car is the realistic way.",
@@ -101,7 +111,13 @@
         "source_name": "Pino Gordo, Vilaflor de Chasna",
         "qid": "Q66002146",
         "views": 19
-      }
+      },
+      "official_register": {
+        "name": "Árboles Monumentales (Cabildo de Tenerife), protection: Regional",
+        "url": "https://www.tenerife.es/w/pino-gordo-1"
+      },
+      "girth_cm": 936,
+      "height_m": 45.12
     },
     {
       "id": "tfe_003",
@@ -119,7 +135,9 @@
       "story": "At 56 metres this is the tallest native tree in Spain, and it stands 150 metres from the thickest one. Pino de las Dos Pernadas is the taller and slimmer half of the pair above Vilaflor de Chasna: about eight metres around against Pino Gordo's 9.36, and roughly 500 to 600 years old against its neighbour's 700 to 800. The name is a description rather than a story. At around ten metres up, the trunk divides into two limbs of near-identical thickness that carry on skyward side by side, two legs, dos pernadas, and the split is the first thing you notice from the bench below. On the age estimates it germinated somewhere around the Castilian conquest of the island in the 1490s, and it has spent the centuries since on a slope that burns periodically; like every Canary pine here its bark is thick enough to survive fire that would kill most conifers outright. The setting is the Corona Forestal at over 1,400 metres, looking out over the pine belt below Teide. It is free, on the same short marked trail from the same parking area on the TF-21, which is what makes these two a genuine pair rather than two entries that happen to share a road.",
       "verified_sources": [
         "https://www.medianiasdetenerife.com/ficha.cfm?id=82&idioma=esp",
-        "https://www.geocaching.com/geocache/GCAJGMT"
+        "https://www.geocaching.com/geocache/GCAJGMT",
+        "https://turismo.vilaflordechasna.es/arboles-monumentales (Vilaflor town council: circumference at breast height 8.30 m, height 56.03 m; the Cabildo record gives 56 m and a 900 cm perimeter without saying at what height)",
+        "https://www.tenerife.es/w/pino-de-las-dos-pernadas"
       ],
       "access": "Free. On a small rise by the same signed viewpoint and parking area as Pino Gordo, with benches for viewing.",
       "transport": "By car via the TF-21 above Vilaflor village, the same stop as Pino Gordo. No public transport reaches the viewpoint directly.",
@@ -141,7 +159,13 @@
         "source_name": "Pino de las dos Pernadas, Vilaflor de Chasna",
         "qid": "Q125426611",
         "views": 10
-      }
+      },
+      "official_register": {
+        "name": "Árboles Monumentales (Cabildo de Tenerife), protection: Regional",
+        "url": "https://www.tenerife.es/w/pino-de-las-dos-pernadas"
+      },
+      "girth_cm": 830,
+      "height_m": 56.03
     },
     {
       "id": "tfe_004",
@@ -160,7 +184,8 @@
       "verified_sources": [
         "https://es.wikipedia.org/wiki/Jard%C3%ADn_de_Aclimataci%C3%B3n_de_La_Orotava",
         "https://getawayguide.co.uk/botanical-garden-puerto-de-la-cruz/",
-        "https://therealtenerife.com/posts/the-botanical-gardens-in-tenerife-a-tropical-paradise/"
+        "https://therealtenerife.com/posts/the-botanical-gardens-in-tenerife-a-tropical-paradise/",
+        "https://www.webtenerife.co.uk/what-see/gardens-and-parks/jardin-botanico/"
       ],
       "access": "Paid entry to the botanical garden (around 3 euros), open daily 09:00-18:00, closed 1 January, Good Friday and 25 December.",
       "transport": "Central Puerto de la Cruz, walkable from the town centre, with a local bus stop 'Jardin Botanico' right outside. Between the island's three stops, a car is the realistic way.",
