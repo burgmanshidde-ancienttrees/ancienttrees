@@ -1217,6 +1217,7 @@ struct TreeDetail: View {
     private var factsBlock: some View {
         VStack(alignment: .leading, spacing: 0) {
             columns
+            if mine == nil, let reg = tree.register { registerRow(reg) }
             locationLine
             if mine == nil, tree.paidEntry { ticketBand }
         }
@@ -1448,6 +1449,41 @@ struct TreeDetail: View {
             }
         }
         .accessibilityIdentifier("tree-girth-fact")
+    }
+
+    /// The official register, the website's tb-register row (2026-10-06):
+    /// a link out to the authority's record when there is one, plain text when
+    /// the register is only named. Wikipedia's infobox and iNaturalist's
+    /// observation page carry a designation the same way, as a labelled fact.
+    @ViewBuilder private func registerRow(_ reg: Tree.Register) -> some View {
+        Group {
+            if let s = reg.url, let u = URL(string: s) {
+                Link(destination: u) {
+                    column("In the official register") {
+                        HStack(alignment: .firstTextBaseline, spacing: 4) {
+                            Text(reg.name)
+                                .font(.brand(16, .bold, relativeTo: .body))
+                                .multilineTextAlignment(.leading)
+                            Image(systemName: "arrow.up.right")
+                                .font(.system(size: 11, weight: .semibold))
+                        }
+                        .foregroundStyle(Brand.moss)
+                    }
+                    .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                    .contentShape(.rect)
+                }
+            } else {
+                column("In the official register") {
+                    Text(reg.name)
+                        .font(.brand(16, .bold, relativeTo: .body))
+                        .foregroundStyle(Brand.ink)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 10)
+        .overlay(alignment: .top) { hairline }
     }
 
     private var hairline: some View {

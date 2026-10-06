@@ -238,6 +238,8 @@ export interface UIStrings {
    *  disappearing, which is what it did before this existed. */
   treeLabels: Record<string, string>;
   labelSpecies: string;
+  /** The fact-card row naming the official register a tree is listed in (lib/official-register.ts). */
+  labelRegister: string;
   labelGirth: string;
   labelAge: string;
   labelLocation: string;
@@ -581,6 +583,7 @@ const EN: UIStrings = {
     return `${head} in ${where}.`;
   },
   labelSpecies: "Species",
+  labelRegister: "In the official register",
   labelGirth: "Girth",
   labelAge: "Age estimate",
   labelLocation: "Location",
@@ -838,6 +841,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Especie",
+    labelRegister: "En el registro oficial",
     labelGirth: "Perímetro",
     labelAge: "Edad estimada",
     labelLocation: "Ubicación",
@@ -1096,6 +1100,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Specie",
+    labelRegister: "Nel registro ufficiale",
     labelGirth: "Circonferenza",
     labelAge: "Età stimata",
     labelLocation: "Posizione",
@@ -1354,6 +1359,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `${d} verderop`,
     labelSpecies: "Soort",
+    labelRegister: "In het officiële register",
     labelGirth: "Omtrek",
     labelAge: "Geschatte leeftijd",
     labelLocation: "Locatie",
@@ -1612,6 +1618,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `${d} entfernt`,
     labelSpecies: "Art",
+    labelRegister: "Im amtlichen Register",
     labelGirth: "Umfang",
     labelAge: "Geschätztes Alter",
     labelLocation: "Standort",
@@ -1870,6 +1877,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Espécie",
+    labelRegister: "No registo oficial",
     labelGirth: "Perímetro",
     labelAge: "Idade estimada",
     labelLocation: "Localização",
@@ -2128,6 +2136,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `\u00e0 ${d}`,
     labelSpecies: "Espèce",
+    labelRegister: "Au registre officiel",
     labelGirth: "Circonférence",
     labelAge: "Âge estimé",
     labelLocation: "Emplacement",
@@ -2385,6 +2394,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     },
     distanceAway: (d) => `${d}\u5148`,
     labelSpecies: "樹種",
+    labelRegister: "公式登録",
     labelGirth: "幹回り",
     labelAge: "推定樹齢",
     labelLocation: "場所",

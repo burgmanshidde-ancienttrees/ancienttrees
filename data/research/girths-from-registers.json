@@ -2,22 +2,22 @@
  "note": "girth_cm copied onto published trees from an imported register, by scripts/girths.py. Kept so the provenance of a measurement is not lost the moment it is written.",
  "filled": [
   {
-   "city": "Brussels",
-   "id": "bru_031",
-   "tree": "The Tree of Heaven of the Grand Sablon",
-   "girth_cm": 342,
-   "column": "girth_cm",
-   "register": "brussels-arbres-remarquables.json",
-   "metres": 0.1
+   "city": "Azeitao",
+   "id": "aze_001",
+   "tree": "The Millennial Olives of Azeitao",
+   "girth_cm": 524,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 10.7
   },
   {
-   "city": "Caserta",
-   "id": "cas_016",
-   "tree": "The Himalayan Chir Pine of the English Garden",
-   "girth_cm": 350,
+   "city": "Christchurch",
+   "id": "chc_002",
+   "tree": "The Albert Edward Oak",
+   "girth_cm": 474,
    "column": "girth_cm",
-   "register": "italy-masaf.json",
-   "metres": 0.5
+   "register": "christchurch-district-plan-trees.json",
+   "metres": 0.0
   }
  ]
 }

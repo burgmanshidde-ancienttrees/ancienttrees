@@ -24,6 +24,7 @@ import { peakFor, seasonKey } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
 import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText } from "./images";
 import { BASE_URL } from "./schema";
+import { officialRegister, type OfficialRegister } from "./official-register";
 
 /** The feed is read by an app on somebody's phone, which has no page to
  * resolve a relative path against. thumbUrl() returns "/photos/..." for the
@@ -91,6 +92,10 @@ export interface FeedTree {
    * the app decodes an Int: one 365.8 would make Swift reject the whole trees
    * array, and every phone would quietly stop updating. */
   girth_cm: number | null;
+  /** The official register this tree is listed in, decided once in
+   * lib/official-register.ts: its name, and the authority's own record for
+   * this tree when one exists (else null). Sent only when there is one. */
+  register?: OfficialRegister;
   /** Set only on a tree that is a day trip from its city (lib/day-trips.ts). */
   day_trip?: DayTrip;
   url: string;
@@ -164,6 +169,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
           return Number.isFinite(g) && g > 0 ? Math.round(g) : null;
         })(),
         url: `/${city.id}/${slugify(t.name)}`,
+        ...((reg) => (reg ? { register: reg } : {}))(officialRegister(t as any)),
         ...(trips.get(t.id) ? { day_trip: trips.get(t.id) } : {}),
         photo: resolvePhoto(p),
         // MORE THAN ONE PHOTOGRAPH (2026-09-12). Sent only when there IS more

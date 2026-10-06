@@ -21,6 +21,7 @@ platforms only). `bold` matches SF Symbols' regular weight best at UI sizes.
 | tram.fill                          | train-simple            |
 | ticket.fill                        | ticket fill             |
 | chevron.right                      | caret-right             |
+| arrow.up.right                     | arrow-up-right          |
 | arrow.up.left.and.arrow.down.right | arrows-out-simple       |
 | building.2                         | buildings               |
 | square.stack                       | stack                   |

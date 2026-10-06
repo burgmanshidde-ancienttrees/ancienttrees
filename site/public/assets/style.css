@@ -2716,6 +2716,10 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 .tb-row > span { display: block; }
 .tb-row > b { display: flex; align-items: center; gap: 3px; font-size: 16px; color: var(--moss); margin-top: 2px; }
 .tb-row { padding: 0.6rem 1rem 0.8rem; }
+/* The official register (lib/official-register.ts): a link out when the
+   authority has a record for this tree, plain text when it only names it. */
+.tb-register > b { flex-wrap: wrap; overflow-wrap: anywhere; }
+div.tb-register > b { color: var(--ink); }
 .td-pin-open { font: inherit; background: none; border: 0; padding: 0; color: var(--moss);
   text-decoration: underline; cursor: pointer; min-height: 44px; }
 .td-page .tb-loc-approx { display: flex; flex-wrap: wrap; align-items: center; gap: 0 0.35rem; padding-top: 0; padding-bottom: 0; }

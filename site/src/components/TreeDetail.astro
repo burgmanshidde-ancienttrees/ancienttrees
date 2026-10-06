@@ -42,6 +42,7 @@ import { locationIsApproximate } from "../lib/tree-copy";
 import { icon } from "../lib/icons";
 import { ui } from "../lib/i18n";
 import { treeSources } from "../lib/tree-sources";
+import { officialRegister } from "../lib/official-register";
 import type { Tree } from "../lib/trees";
 
 interface Props {
@@ -88,6 +89,7 @@ const isApprox = locationIsApproximate(tree);
 // sources are the evidence that each one was checked. Facts, not text, so
 // identical in every language; only the heading and line are looked up.
 const sources = treeSources(tree);
+const register = officialRegister(tree as any);
 
 // "Moreton Bay Fig (Ficus macrophylla)" -> the name a reader knows. The card
 // shows only that, exactly as the app's card does (Hidde, 2026-09-24: "maak
@@ -188,6 +190,11 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
           </div>
           {p.girth && p.speciesUrl && <a class="tb-row tb-species" href={p.speciesUrl}><span>{U.labelSpecies}</span><b>{spCommon}<Fragment set:html={icon("caret-right", "bold", "ic fact-go")} /></b></a>}
           {p.girth && !p.speciesUrl && <div class="tb-row tb-species"><span>{U.labelSpecies}</span><b>{spCommon}</b></div>}
+          {register && (register.url ? (
+            <a class="tb-row tb-register" href={register.url} target="_blank" rel="noopener"><span>{U.labelRegister}</span><b>{register.name}<Fragment set:html={icon("arrow-up-right", "bold", "ic fact-go")} /></b></a>
+          ) : (
+            <div class="tb-row tb-register"><span>{U.labelRegister}</span><b>{register.name}</b></div>
+          ))}
           {isApprox && (
             <p class="tb-loc tb-loc-approx">
               <b>{U.locApprox}</b>{" "}
