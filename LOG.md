@@ -2,6 +2,15 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (session) - the ambassador request, the third report: measured, not remembered
+
+- **Hidde:** "For the 3rd time - I can still request ambassadorship without being logged in can you close this loop. How do we keep track of people requesting this??"
+- **Measured from a runner, twice (10:36 and 10:39 UTC), with the service key:** the database refuses a submission with no account. `sqlcheck`'s probe pushes an anonymous row through with the publishable key and it is refused; 27 objects applied. The 2026-09-24 LOG entry saying the door was still open is out of date: he pasted `supabase/postbox-needs-an-account.sql` since, and nothing had re-measured it.
+- **The ledger, read live from the table:** 4 ambassador requests ever, all four from our own two accounts, all four from the website (Reykjavik 10-05 03:12, Barcelona 10-05 07:39, Tokyo 10-06 02:10, Verona 10-06 10:30). The newest is minutes before his message and carries his account id, so that browser held a confirmed session: the database cannot have taken it otherwise. None had been recorded anywhere, because `--requests` skipped our own rows in silence and `requested` in data/ambassadors.json stood at zero.
+- **Built:** `.github/workflows/postbox.yml`, the probe on a button and daily at 06:40 UTC, red while the door is open, on `health.py`'s watched list. `ambassador.py --asked` prints who asked (when, place, page or app, account with ours flagged, mail sent / badge / nothing yet), live on a runner and from the file without a key; the knock now records EVERY request, ours and anonymous ones with a note, and names an anonymous row as proof the policy is missing. The digest adds a line the day a submission arrives with no account. CLAUDE.md's ambassador section carries the rule.
+- **What was NOT found:** a path by which a stranger can request. The web button acts only after Supabase confirms the session (`atCollection.gate`), the app opens sign-in without a fresh token since this morning, and the smoke test taps the button signed out on the city and Spanish pages. The one scenario not ruled out from here: signing out on the phone while a laptop browser still holds a session from an earlier magic link, which keeps that browser signed in until its token is refused.
+- **Pre-push hooks did not run in this sandbox** (`core.hooksPath` unset in the clone); `qa.py --source-only` (21 checks) and the workflow checks were run by hand and pass.
+
 ## 2026-10-06 session: people's addresses out of the repository, history rewritten
 
 - **Why:** the GitHub repository is public and carried 600+ email addresses of people we wrote to, their replies, the waitlist and every mail draft.
