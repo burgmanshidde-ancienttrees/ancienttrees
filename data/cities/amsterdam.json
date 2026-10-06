@@ -100,7 +100,11 @@
       "location_precision": "approximate",
       "notes": "PIN CORRECTED 2026-08-09: the previous pin (52.3628, 4.8823) sat about 93m from the pair's actual position. Amsterdam's municipal register (data/registers/amsterdam-bijzondere-bomen.json) carries both trunks individually, register ids 504491 (52.3623964, 4.8810688, girth 714cm, planted 1863) and 510594 (52.3626145, 4.8809702, girth 715cm, planted 1863), 25m apart, matching this entry's story (moved 1925, 7m+ girth each) exactly. New pin is the midpoint of the two register coordinates. Marked approximate rather than confirmed because a single pin cannot exactly mark two trunks 25m apart, even though each trunk's own coordinate is precise.",
       "girth_cm": 715,
-      "how_to_recognise": "Two planes with the thickest trunks in the city, over seven metres each, one of them carrying a small carved woodcutter astride a branch, apparently sawing it off."
+      "how_to_recognise": "Two planes with the thickest trunks in the city, over seven metres each, one of them carrying a small carved woodcutter astride a branch, apparently sawing it off.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686059",
+        "url": null
+      }
     },
     {
       "id": "ams_003",
@@ -243,7 +247,11 @@
       "location_precision": "confirmed",
       "verify_notes": "The lorry is OUT, twice over. bomenstichting.nl says 'enkele jaren geleden heeft een vrachtwagen de slurftak aangereden', and our story first turned that into a truck tearing off part of the TRUNK in 2015, which was wrong in three ways at once. Corrected on 2026-08-17 to what that source says. Then Hanna Hirsch of Bomenstichting Amsterdam wrote on 2026-08-22: 'Ook al staat het op de website van de Bomenstichting, de iep is niet aangereden door een vrachtwagen.' She is the local branch of the organisation whose own national page carries the claim, so the collision is gone entirely rather than hedged. What survives is what anyone standing there can see: the low heavy branch and the support under it. Do not put the lorry back from that source.",
       "girth_cm": 625,
-      "how_to_recognise": "The twin-stemmed elm on the Zeeburgerdijk with one branch grown so low and heavy that the city built it a prop, which is the branch the name refers to."
+      "how_to_recognise": "The twin-stemmed elm on the Zeeburgerdijk with one branch grown so low and heavy that the city built it a prop, which is the branch the name refers to.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686172",
+        "url": null
+      }
     },
     {
       "id": "ams_007",
@@ -277,7 +285,11 @@
       "notes": "Species is the regionally typical London plane but not explicitly confirmed in sources found. Exact planting date is not documented; estimated from the Plan Zuid development timeline (council approval 1917). The wartime survival story is explicitly unverified local lore, not a sourced fact. Photo viewed directly 2026-07-26 and confirmed: it shows a narrow Plan-Zuid street with tall plane trees interlocking overhead into exactly the tunnel effect the story describes, matching the Commons 'Lomanstraat, Amsterdam' category. Approved.",
       "location_precision": "confirmed",
       "girth_cm": 259,
-      "how_to_recognise": "Not one tree but the whole street: the crowns from both pavements lean inward and meet overhead in a continuous tunnel."
+      "how_to_recognise": "Not one tree but the whole street: the crowns from both pavements lean inward and meet overhead in a continuous tunnel.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686043",
+        "url": null
+      }
     },
     {
       "id": "ams_008",
@@ -402,7 +414,11 @@
         "kind": "catkins"
       },
       "girth_cm": 466,
-      "how_to_recognise": "In the southeast corner of the museum gardens beside the director's villa, 4.66 metres round and over 19 metres tall."
+      "how_to_recognise": "In the southeast corner of the museum gardens beside the director's villa, 4.66 metres round and over 19 metres tall.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686057",
+        "url": null
+      }
     },
     {
       "id": "ams_011",
