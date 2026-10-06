@@ -45,7 +45,7 @@
         "https://www.scotsman.com/whats-on/arts-and-entertainment/craigmillar-castle-and-the-yew-trees-of-mary-queen-of-scots-596445",
         "https://www.historicenvironment.scot/visit-a-place/places/craigmillar-castle/"
       ],
-      "access": "Paid entry, Historic Environment Scotland site",
+      "access": "Paid entry, Historic Environment Scotland site. Visits are booked online for a date and time; Historic Scotland members and Explorer Pass holders enter free, and Scots aged 7 to 25 with a Young Scot or National Entitlement Card pay GBP 1.",
       "transport": "Bus from city centre to Craigmillar Castle Road, short walk to entrance",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Craigmillar_inner_court.jpg",
@@ -554,7 +554,8 @@
         "https://www.ancient-yew.org/yew_tree_database/ormiston/",
         "https://en.wikipedia.org/wiki/Ormiston_Yew",
         "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/scotland/great-yew-of-ormiston/",
-        "https://www.eastlothiancourier.com/news/24056690.its-sycamore-gap-1-000-year-old-ormiston-tree-vandalised/"
+        "https://www.eastlothiancourier.com/news/24056690.its-sycamore-gap-1-000-year-old-ormiston-tree-vandalised/",
+        "https://www.ancient-yew.org/yew_trees/ormiston-660/"
       ],
       "access": "Free, no fees or set hours. Scotland's Yew Tree Heritage Initiative (SYTHI) records access as public. The yew stands on the former grounds of Ormiston Hall, now partly a housing development at Ormiston village; reached via a marked path off the Ormiston Hall driveway, past the hall ruins. Ancient Yew Group's 2001 site visit called it a private estate with unclear ownership and difficult to locate; SYTHI's page (which carries the precise coordinate and a current access line) supersedes that as the more recent, specific source, so this is delivered as a day-trip out of Edinburgh rather than an in-town tree.",
       "transport": "No direct rail link. By car via the A6093 (Ormiston village, ~16.7km / c.25 min drive from Edinburgh centre); day bus services run from Edinburgh/Tranent to Ormiston village, then roughly 15-20 minutes on foot to the site (no specific verified route number, N113 is a night-only service to Ormiston).",
@@ -585,6 +586,10 @@
         "source_name": "Ormiston Yew",
         "qid": "Q81464073",
         "views": 70
+      },
+      "official_register": {
+        "name": "Scotland's Yew Tree Heritage Initiative (SYTHI) yew site record, Ormiston Hall",
+        "url": "https://scotlands-yew-trees.org/yewtree/ormiston-hall-east-lothian/"
       }
     }
   ]

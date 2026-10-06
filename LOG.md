@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-06 (night run, fourth attempt) - enrichment: Edinburgh
+
+- Enrich Edinburgh (5 indexed trees, 2 improved): Great Yew of Ormiston got its SYTHI register record plus the Ancient Yew Group entry as a second source (girth left out: both measurements are at 30 cm, not 1.30 m); Craigmillar Castle Yews got a booking and concession access line (no hours or standard price on the HES page). The Botanics chestnut, Wentworth Elms and Hermitage of Braid beeches stay open (no per-tree record or measurement found; Woodland Trust Ancient Tree Inventory not queried). No season set. Preflight 0 problems. No new trees; writable shelf still empty.
+
 ## 2026-10-06 (night run, third attempt) - enrichment: New York
 
 - Enrich New York (5 indexed trees, 4 improved): NYC Parks Great Tree ids and girth/height on Hangman's Elm, Camperdown Elm, Queens Giant, Central Park West Elm. nycgovparks.org is blocked (405), so records were read from Wayback copies (`/web/2021/` works, `/2024/` gave 403 on some); three girths are derived as pi times the Parks' diameter, flagged in measure_source. Hangman's Elm register height of 40 m looks high, recorded as published. Sassafras of Green-Wood left open (not a Parks Great Tree). Preflight 0 problems.
