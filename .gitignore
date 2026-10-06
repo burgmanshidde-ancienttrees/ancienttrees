@@ -28,3 +28,24 @@ data/i18n/*/_*.json
 # `release.py` refuse to archive on a "dirty ios/" that was nothing of the kind
 # (2026-09-04). Apple ships the same line in its own .gitignore template.
 **/xcuserdata/
+
+# People's addresses live in Supabase (scripts/private_store.py, 2026-10-06)
+data/outreach-*.json
+data/ambassador-prospects.json
+data/research/outreach-contacts.json
+drafts/OUTREACH.md
+drafts/ambassador-prospects.md
+drafts/batches/*.json
+drafts/batch-*-preview.md
+drafts/batch-licence-asks.md
+drafts/backlinks-parks.md
+drafts/bomenstichting-permission.md
+drafts/catalonia-permission.md
+drafts/coimbra-jardim-botanico.md
+drafts/mail-paulo-link.md
+drafts/permission-us-registers.md
+drafts/reply-clara-visser-link.md
+drafts/woodland-trust-permission.md
+drafts/woodland-trust-reply.md
+drafts/app-review-2.1-reply.md
+drafts/app-review-notes-field.txt
