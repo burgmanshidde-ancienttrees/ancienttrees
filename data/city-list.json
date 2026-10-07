@@ -633,7 +633,7 @@
    "country": "Germany",
    "slug": "dresden",
    "status": "published",
-   "trees": 19
+   "trees": 25
   },
   {
    "city": "Geneva",
@@ -1842,6 +1842,13 @@
    "trees": 0
   },
   {
+   "city": "Münsterland",
+   "country": "Germany",
+   "slug": "munsterland",
+   "status": "published",
+   "trees": 4
+  },
+  {
    "city": "Nara",
    "country": "Japan",
    "slug": "nara",
@@ -2017,13 +2024,6 @@
    "slug": "zehdenick",
    "status": "published",
    "trees": 1
-  },
-  {
-   "city": "Münsterland",
-   "country": "Germany",
-   "slug": "munsterland",
-   "status": "published",
-   "trees": 4
   }
  ]
 }
