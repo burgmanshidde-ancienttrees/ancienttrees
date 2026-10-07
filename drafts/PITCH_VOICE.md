@@ -158,6 +158,11 @@ belongs in Helpful Details or nowhere.
 - NO: "- Ancient Trees is made to get people outside to marvel at old trees."
 - YES: "Ancient Trees is about getting outside and standing in front of trees that have been around for centuries. It actually started in Lisbon..."
 
+**explaining our internal publishing rules to an outsider bores them; ask for what we need instead** (added 2026-10-07)
+
+- NO: "One honest note: the Kopfulme stands in Billerbeck, a bit outside Münster, and we only open a new place once it has at least four remarkable trees."
+- YES: "(no internal rules; just ask for more trees from that area)"
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**

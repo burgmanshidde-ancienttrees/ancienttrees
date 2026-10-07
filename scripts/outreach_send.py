@@ -227,13 +227,13 @@ def main():
               and ("@" + a.lower().split("@")[-1]) not in dnc]
         if cc:
             msg["Cc"] = ", ".join(cc)
-        msg["Subject"] = m["subject"]
+        msg["Subject"] = " ".join(m["subject"].split())  # a folded header copied from a reply carries newlines
         # A reply lands in the recipient's existing thread when it carries the
         # Message-ID it answers (2026-10-01, Hidde: "neem onze vorige berichten
         # even mee in je bericht we hebben veel gemaild").
         if m.get("in_reply_to"):
-            msg["In-Reply-To"] = m["in_reply_to"]
-            msg["References"] = m.get("references") or m["in_reply_to"]
+            msg["In-Reply-To"] = " ".join(m["in_reply_to"].split())
+            msg["References"] = " ".join((m.get("references") or m["in_reply_to"]).split())
         msg.set_content(m["body"])
         if server is None:
             server = smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=30)
