@@ -99,7 +99,13 @@
         "kind": "autumn colour"
       },
       "notes": "A 1913 preservation monument records \"over 1,000 years\"; a later trunk-based estimate suggests closer to 600. Both figures are stated rather than one being picked as correct. Coordinates are the shrine's own location, not the tree's exact spot within the grounds.",
-      "how_to_recognise": "You can recognise it by its hollow lower trunk and cut-back limbs, propped and ringed with metal, turning a dense cone of gold each November. It stands beside the Gion Yamakasa starting point at Kushida Shrine."
+      "how_to_recognise": "You can recognise it by its hollow lower trunk and cut-back limbs, propped and ringed with metal, turning a dense cone of gold each November. It stands beside the Gion Yamakasa starting point at Kushida Shrine.",
+      "official_register": {
+        "name": "Fukuoka City cultural properties database (Kushida Shrine ginkgo record)",
+        "url": "https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/459"
+      },
+      "girth_cm": 598,
+      "height_m": 20.8
     },
     {
       "id": "fuk_003",
@@ -235,7 +241,13 @@
       "curation_status": "flagged",
       "notes": "Age estimates run from 300 to 2,000 depending on source; the range covers the defensible span and the entry quotes the official marker's own hedging rather than picking a number. The 1922 designation covers several camphors; the municipal register records this as the largest.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its deeply fluted, hollow-based trunk, 11.7 metres round and 28.5 metres tall, the largest camphor here. It stands west of the Seishinkan at Dazaifu Tenmangu."
+      "how_to_recognise": "You can recognise it by its deeply fluted, hollow-based trunk, 11.7 metres round and 28.5 metres tall, the largest camphor here. It stands west of the Seishinkan at Dazaifu Tenmangu.",
+      "official_register": {
+        "name": "国指定天然記念物 太宰府神社のクス (Agency for Cultural Affairs, Natural Monument; Dazaifu City record)",
+        "url": "https://www.city.dazaifu.lg.jp/site/bunkazai/2380.html"
+      },
+      "girth_cm": 1170,
+      "height_m": 28.5
     },
     {
       "id": "fuk_007",
@@ -268,7 +280,11 @@
       "curation_status": "flagged",
       "notes": "Beyond the usual day-trip radius at about 45 minutes, stated plainly rather than rounded down. Age sources conflict by a factor of two and both are reported. Coordinates come from a photograph's camera GPS rather than a mapped tree node, so the pin is the precinct.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its full, dense, unbroken crown, about 15 metres round and 30 metres tall, a single trunk despite its name. It stands at Umi Hachimangu, about 100 metres from its companion camphor."
+      "how_to_recognise": "You can recognise it by its full, dense, unbroken crown, about 15 metres round and 30 metres tall, a single trunk despite its name. It stands at Umi Hachimangu, about 100 metres from its companion camphor.",
+      "official_register": {
+        "name": "国指定天然記念物 湯蓋の森・衣掛の森 (Agency for Cultural Affairs, Natural Monument, designated 1922-03-08)",
+        "url": "https://www.town.umi.lg.jp/site/miru/kanko121.html"
+      }
     },
     {
       "id": "fuk_008",
@@ -301,7 +317,11 @@
       "curation_status": "flagged",
       "notes": "Beyond the usual day-trip radius at about 45 minutes, stated plainly. The age disagreement is severe and both figures are reported; the 20m girth is agreed by two sources. Photo licence recorded but the visual check was blocked by rate limiting, so it stays unapproved.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its huge girth, about 20 metres round, its upper trunk gone and a large rough cavity open in the side. It stands at Umi Hachimangu, about 100 metres from its companion camphor."
+      "how_to_recognise": "You can recognise it by its huge girth, about 20 metres round, its upper trunk gone and a large rough cavity open in the side. It stands at Umi Hachimangu, about 100 metres from its companion camphor.",
+      "official_register": {
+        "name": "国指定天然記念物 湯蓋の森・衣掛の森 (Agency for Cultural Affairs, Natural Monument, designated 1922-03-08)",
+        "url": "https://www.town.umi.lg.jp/site/miru/kanko121.html"
+      }
     },
     {
       "id": "fuk_009",

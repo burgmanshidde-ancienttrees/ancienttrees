@@ -1,0 +1,130 @@
+ENRICHMENT PASS: Venice (6 indexed trees with gaps). Use the verify agent.
+
+Fill what each tree page lacks, from sources you actually open. Never invent: a gap
+you cannot close stays a gap, and that is a finished answer. Time-box: report
+after about forty minutes.
+
+Per gap:
+- register: find the AUTHORITY'S OWN RECORD for this tree (a government or national
+  register page about this one tree: Naturdenkmal entry, monumental-tree sheet,
+  heritage-tree page). Return register_url (that page) and register_name (the
+  register's own name, e.g. "Arvoredo de Interesse Público (ICNF)"). A register
+  homepage, a data endpoint or a news article is not a record. Where the register
+  has NO per-tree page but you found this tree's own entry in its data, return
+  register_name and register_id (the register's number for this tree) instead.
+  Girth is circumference at 1.30 m; a base circumference is not a girth, leave it out.
+- measurement: girth_cm and/or height_m from a register, a plaque or the authority's
+  page, with measure_source. Never from our own story, never the species' maximum.
+- access: one plain line a visitor can act on: free or the price, opening days and
+  hours where the site publishes them, from the site's own page (add it as add_source).
+  Keep what the current line says that is still true.
+- season: read season_file; set best_time {"months": [...], "label": "...", "kind": "..."}
+  only if the species has a moment marked "striking" or "worth the trip" and this tree
+  is the kind that shows it. Otherwise leave it. Scarcity is the point.
+
+Answer: a JSON list written to out/enrich/venice.answer.json, one object per tree you
+improved: {"id", "register_url"?, "register_name"?, "register_id"?, "add_source"?, "girth_cm"?, "height_m"?, "measure_source"?, "access"?, "best_time"?}.
+Do not edit data/ yourself. No em dashes.
+
+TREES:
+[
+ {
+  "id": "ven_001",
+  "name": "The Founding Trees of the Giardini della Biennale",
+  "species": "Mixed species (Napoleonic public garden)",
+  "address": "Giardini della Biennale, Castello, 30122 Venezia",
+  "access": "Free, public gardens; the Biennale exhibition areas require a ticket during the Art and Architecture Biennale seasons",
+  "gaps": [
+   "register",
+   "measurement"
+  ],
+  "sources": [
+   "https://it.wikipedia.org/wiki/Giardini_Napoleonici",
+   "https://en.wikipedia.org/wiki/Giardini_della_Biennale"
+  ],
+  "season_file": null
+ },
+ {
+  "id": "ven_002",
+  "name": "The Cypresses of San Michele Cemetery",
+  "species": "Mediterranean Cypress (Cupressus sempervirens)",
+  "address": "Cimitero di San Michele, Isola di San Michele, 30121 Venezia",
+  "access": "Free, open daily (hours vary by season, typically morning to early evening)",
+  "gaps": [
+   "register",
+   "measurement",
+   "season"
+  ],
+  "sources": [
+   "https://it.wikipedia.org/wiki/Cimitero_di_San_Michele_(Venezia)",
+   "https://en.wikipedia.org/wiki/San_Michele_Cemetery,_Venice"
+  ],
+  "season_file": "data/phenology/mediterranean-cypress.json"
+ },
+ {
+  "id": "ven_004",
+  "name": "The Cypress Ring of San Francesco del Deserto",
+  "species": "Mediterranean Cypress (Cupressus sempervirens)",
+  "address": "Isola di San Francesco del Deserto, 30012 Burano, Venezia",
+  "access": "Free entry, donation welcome; guided visits Tuesday-Sunday 9:00-11:00 and 15:00-17:00, closed Monday",
+  "gaps": [
+   "register",
+   "measurement",
+   "season"
+  ],
+  "sources": [
+   "https://www.metropolitano.it/san-francesco-venezia/",
+   "https://en.wikipedia.org/wiki/San_Francesco_del_Deserto"
+  ],
+  "season_file": "data/phenology/mediterranean-cypress.json"
+ },
+ {
+  "id": "ven_007",
+  "name": "The Garden Trees of Giardini Papadopoli",
+  "species": "Mixed species (19th-century public garden)",
+  "address": "Giardini Papadopoli, Santa Croce, 30135 Venezia",
+  "access": "Free, public garden",
+  "gaps": [
+   "register",
+   "measurement"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Giardini_Papadopoli",
+   "https://www.idealista.it/news/vacanze/mete-turistiche/2026/01/08/309235-dove-si-trovano-i-giardini-papadopoli-a-venezia-e-come-arrivarci-da-piazzale-roma"
+  ],
+  "season_file": null
+ },
+ {
+  "id": "ven_009",
+  "name": "The Garden of Ca' Zenobio degli Armeni",
+  "species": "Mixed species (romantic garden)",
+  "address": "Ca' Zenobio degli Armeni, Fondamenta del Soccorso 2596-2598, Dorsoduro, 30123 Venezia",
+  "access": "Free when open; the garden hosts temporary exhibitions and events, check the current schedule before visiting",
+  "gaps": [
+   "register",
+   "measurement"
+  ],
+  "sources": [
+   "https://luoghi.italianbotanicalheritage.com/en/ca-zenobio-degli-armeni-garden/",
+   "https://en.wikipedia.org/wiki/Ca'_Zenobio_degli_Armeni"
+  ],
+  "season_file": null
+ },
+ {
+  "id": "ven_010",
+  "name": "Forte Marghera's Century Trees",
+  "species": "Mixed species (fortress park)",
+  "address": "Forte Marghera, Via Forte Marghera, 30173 Mestre, Venezia",
+  "access": "Free, public park",
+  "gaps": [
+   "register",
+   "measurement"
+  ],
+  "sources": [
+   "https://live.comune.venezia.it/it/storia-forte-marghera-venezia",
+   "https://siviaggia.it/idee-di-viaggio/forte-marghera-venezia-parco-arte-gatti/583246/"
+  ],
+  "season_file": null
+ }
+]
+
