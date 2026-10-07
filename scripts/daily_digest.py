@@ -2495,6 +2495,21 @@ def _ph_ours():
     clauses = ["""distinct_id NOT IN (
             SELECT distinct_id FROM events GROUP BY distinct_id
             HAVING min(timestamp) < toDateTime('%s'))""" % live]
+    # DEBUG BUILDS ARE OURS, added 2026-10-07 on Hidde's "yes plz" after he
+    # asked whether his own app was in these numbers. It was, partly: the
+    # first-seen rule above stops at go-live, and every Xcode install after it
+    # (a reinstall, a new simulator, a new phone) makes a fresh id the rule
+    # cannot see, while `excluded_installs` had stayed empty for five weeks
+    # because finding an id in PostHog is work nobody does. Measure.swift now
+    # sends `build` with every event, and an install that has EVER sent a
+    # debug event is cut whole, earlier events included, so the testing on a
+    # device does not leak into the count through the events it sent before
+    # the property existed. TestFlight is not cut here: a tester who is not
+    # us is a person. The build names which installs to drop; nothing may
+    # inject into it, so it is a literal rather than a config value.
+    clauses.append("""distinct_id NOT IN (
+            SELECT DISTINCT distinct_id FROM events
+            WHERE properties.build = 'debug')""")
     # Ids come from a file we write, and are still filtered to what an install
     # id can contain. A quote reaching a query string is how a config file
     # becomes an injection.
@@ -2599,9 +2614,10 @@ def app_section(today):
             """ % ours, key, project)
         if cut:
             out.append("- Ours is not in this table: %d install(s), %d events, "
-                       "the testing before the app went live on %s. Any install "
-                       "first seen before that stays excluded, so testing on the "
-                       "same phone never reads as a stranger."
+                       "the testing before the app went live on %s and every "
+                       "install built by Xcode since (the app says how it was "
+                       "built with each event). An App Store copy on our own "
+                       "phone is the one kind this cannot see."
                        % (int(cut[0][0]), int(cut[0][1]),
                           str(cfg.get("live_at"))[:10]))
     # INSTALLS, not people, and the distinction is not pedantry: the id is a

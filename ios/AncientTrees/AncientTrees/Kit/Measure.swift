@@ -20,7 +20,8 @@
 // today. What is left is one HTTP POST of a JSON object, which is what an
 // analytics SDK is underneath.
 //
-// WHAT WE SEND: an event name, the app version, the major OS version, and an
+// WHAT WE SEND: an event name, the app version, the major OS version, how the
+// copy was built (debug, testflight or appstore, see `build` below), and an
 // install id that is a random UUID made on this phone. No email, no account id,
 // no coordinates, no advertising identifier, nothing Apple would call linked to
 // a person. `$process_person_profile: false` tells PostHog not to build a
@@ -64,6 +65,35 @@ public enum Measure {
         #endif
     }
 
+    /// HOW THIS COPY WAS BUILT, sent with every event, so the digest can tell
+    /// our own phone from a stranger's without anybody hunting install ids.
+    ///
+    /// Added 2026-10-07 on Hidde's "yes plz", after asking whether his own app
+    /// was in the digest's numbers. The first-seen rule in data/app-measure.json
+    /// catches the testing before go-live and nothing after it: every reinstall
+    /// and every Xcode install onto a new simulator or device makes a fresh
+    /// install id that the digest counted as a new person, and the hand list
+    /// for those ids had stayed empty for five weeks because finding an id in
+    /// PostHog is work nobody does. The build is a fact the app already knows.
+    ///
+    /// `debug` is any Xcode install, which is how Hidde carries the app and how
+    /// every development device gets it; `testflight` is the sandbox receipt;
+    /// `appstore` is everything else, which is the only kind a stranger has.
+    /// The digest cuts `debug` installs. It does NOT cut TestFlight on its own,
+    /// because a tester who is not us is a person, and it still cannot tell an
+    /// App Store reinstall on our own phone from anybody else's: that one stays
+    /// the hand list's job.
+    static var build: String {
+        #if DEBUG
+        return "debug"
+        #else
+        if Bundle.main.appStoreReceiptURL?.lastPathComponent == "sandboxReceipt" {
+            return "testflight"
+        }
+        return "appstore"
+        #endif
+    }
+
     /// A random id per install. Not a device id: it is made here, it is ours
     /// alone, it goes when the app does, and it identifies nobody. Renaming
     /// this key costs no data, only a discontinuity in the numbers, which is
@@ -96,6 +126,7 @@ public enum Measure {
         p["$process_person_profile"] = false
         p["app_version"] = version
         p["os"] = "iOS \(ProcessInfo.processInfo.operatingSystemVersion.majorVersion)"
+        p["build"] = build
         let body: [String: Any] = [
             "api_key": key,
             "event": name,

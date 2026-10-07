@@ -10,6 +10,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-10-07 (session) - the digest's app table no longer counts Hidde's own phone
+
+- **Hidde:** "the app rsults is my app not part of those numbers?" Partly. The first-seen rule in data/app-measure.json cut the testing before go-live (20 installs, 472 events) and nothing after it: every Xcode install since (a reinstall, a new simulator, a new phone) made a fresh install id that read as a stranger, and the hand list for those ids had stayed empty for five weeks. The digest had been flagging the shape itself: one install made 13 of yesterday's 21 events.
+- **Fixed, both surfaces in one change:** Measure.swift sends `build` with every event (debug for any Xcode install, testflight for a sandbox receipt, appstore otherwise), and `_ph_ours()` in daily_digest.py drops any install that ever sent a debug event, earlier events included. TestFlight is not dropped, because a tester who is not us is a person. The "Ours is not in this table" line says what it now covers.
+- **What it still cannot see:** an App Store copy on our own phone looks like anybody's. That one remains the hand list's job (`excluded_installs`), and the concentration line in the table still points at it.
+- Takes effect from the next app build that reaches his phone; events sent by the copy he carries today carry no `build` until then.
+
 ## 2026-10-07 (session) - did anybody ask for a seat before the fix
 
 - **Hidde:** "do we have an idea of knowing if people requested it before this fix".
