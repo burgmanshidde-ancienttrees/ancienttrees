@@ -44,9 +44,10 @@
         "https://www.begin.or.jp/~marusei/yuuryuunomatu.htm",
         "https://totteoki.kyoto.travel/34557/",
         "https://ecoloquia.co.jp/20220110-02/",
-        "https://www.openstreetmap.org/node/12358009109"
+        "https://www.openstreetmap.org/node/12358009109",
+        "http://www.yoshiminedera.com/information/haikan/index.html"
       ],
-      "access": "Paid entry to Yoshimine-dera (500 yen adult)",
+      "access": "Paid entry to Yoshimine-dera: 500 yen adult, 300 yen high school, 200 yen primary and middle school. Open 8:30 to 17:00 on weekdays and 8:00 to 17:00 on weekends and holidays, last entry 16:45; no booking needed for individuals. The temple sits on a hillside with many steps and slopes, and wheelchair visits are hard.",
       "transport": "Hankyu Bus to Yoshiminedera stop, 8 min walk uphill",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Yoshimenedera_Yuryunomatsu.jpg",
@@ -80,9 +81,10 @@
         "https://commons.wikimedia.org/wiki/File:Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
         "https://takumist.wordpress.com/2018/12/09/visiting-rikushu-no-matsu-%E9%99%B8%E8%88%9F%E3%81%AE%E6%9D%BE/",
         "https://kazahana.holy.jp/kinkakuji.html",
-        "https://www.openstreetmap.org/node/3521144622"
+        "https://www.openstreetmap.org/node/3521144622",
+        "https://www.shokoku-ji.jp/en/kinkakuji/access/"
       ],
-      "access": "Paid entry to Kinkaku-ji",
+      "access": "Paid entry to Kinkaku-ji: 500 yen adult, 300 yen primary and middle school. Open daily 9:00 to 17:00; hours and fee can change for special exhibitions.",
       "transport": "Kyoto City Bus 101/205 to Kinkakuji-michi, 3 min walk",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
@@ -115,9 +117,11 @@
       "verified_sources": [
         "https://souda-kyoto.jp/guide/spot/housenin.html",
         "https://www.kyoto-tabiya.com/2021/07/06/93253/",
-        "https://ja.wikipedia.org/wiki/%E5%AE%9D%E6%B3%89%E9%99%A2"
+        "https://ja.wikipedia.org/wiki/%E5%AE%9D%E6%B3%89%E9%99%A2",
+        "http://hosenin.net/haikan/",
+        "https://www2.city.kyoto.lg.jp/bunshi/bunkazai/siteisyasinn/tennnennsetumei.html"
       ],
-      "access": "Paid entry to Hosen-in (includes matcha service)",
+      "access": "Paid entry to Hosen-in: 1,000 yen adult, 900 yen middle and high school, 800 yen child, matcha and a sweet included. Open 9:00 to 17:00, last entry 16:30; closed on some event days, so check the temple's notices.",
       "transport": "Kyoto Bus to Ohara, 12 min walk",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/%E5%AE%9D%E6%B3%89%E9%99%A2_01.JPG",
@@ -131,7 +135,12 @@
       "notes": "The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. A candidate photo captioned \"Hosen-in, Bankan-en (Garden)\" was viewed directly on an earlier pass and rejected: it shows an illuminated Japanese maple against a bamboo grove at night, not a pine at all, so the garden-name caption evidently covers more than just this one tree. A second candidate, Commons file \"宝泉院_01.JPG\" (Category:Goḳō-no-matsu, Hōsen-in, the tree's own name), was downloaded and viewed directly this pass: it is the temple's signature framed-garden shot, the pine's gnarled poled branches seen through the guest-hall window with tatami in the foreground, an unambiguous match. Approved. Pin corrected 2026-07-28, about 625m: the previous coordinate was a street-level address estimate that turned out to be a genuine error, not just imprecise; OpenStreetMap carries two independently mapped nodes both named Hosen-in within about 150m of each other, one explicitly tagged with this entry's own street number (187), used here instead. The temple is a single small building around one guest hall and garden, so this building-level point puts a visitor at the pine itself, not just in the neighbourhood.",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its shape, trained to echo the cone of Mount Mikami, framed through the temple hall's doorway. It stands in the garden of Hosen-in, Ohara."
+      "how_to_recognise": "You can recognise it by its shape, trained to echo the cone of Mount Mikami, framed through the temple hall's doorway. It stands in the garden of Hosen-in, Ohara.",
+      "official_register": {
+        "name": "Kyoto City Natural Monument (京都市指定・登録文化財 天然記念物), 宝泉院のゴヨウマツ",
+        "url": "https://www2.city.kyoto.lg.jp/bunshi/bunkazai/siteisyasinn/tennnennsetumei.html"
+      },
+      "height_m": 11
     },
     {
       "id": "kyo_004",
@@ -156,7 +165,8 @@
       "verified_sources": [
         "https://media.mk-group.co.jp/entry/koyo-nishihonganji/",
         "https://hanako.tokyo/learn/341156/",
-        "https://tenshin.or.jp/archives/4802"
+        "https://tenshin.or.jp/archives/4802",
+        "https://www2.city.kyoto.lg.jp/bunshi/bunkazai/siteisyasinn/tennnennsetumei.html"
       ],
       "access": "Free, Nishi Honganji precinct open daily",
       "transport": "Kyoto Station, 15 min walk, or bus to Nishihonganji-mae",
@@ -171,7 +181,11 @@
       "curation_status": "ai_generated",
       "notes": "Photo (\"Grand Ginkgo Tree in West Honganji Temple\") viewed directly: shows a massive, wide, low-spreading ginkgo fenced off in a temple courtyard, consistent with the Sakasa Icho (inverted ginkgo) shape the story describes. Approved.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its low, wide shape, heavy branches spreading close to the ground before the trunk narrows above them. It stands in front of Nishi Honganji's Goeido Hall."
+      "how_to_recognise": "You can recognise it by its low, wide shape, heavy branches spreading close to the ground before the trunk narrows above them. It stands in front of Nishi Honganji's Goeido Hall.",
+      "official_register": {
+        "name": "Kyoto City Natural Monument (京都市指定・登録文化財 天然記念物), 本願寺（西本願寺）のイチョウ",
+        "url": "https://www2.city.kyoto.lg.jp/bunshi/bunkazai/siteisyasinn/tennnennsetumei.html"
+      }
     },
     {
       "id": "kyo_005",
@@ -229,7 +243,8 @@
       "story": "Kyoto Gyoen, the wooded park that surrounds the old Imperial Palace, holds more than 200 trees old and large enough to be called giants by the environment ministry that manages the grounds today. This camphor, growing at Munakata Shrine in the park's southwest corner, is generally named as the single oldest and largest tree in Kyoto Gyoen, though sources disagree on the tree's exact age by as much as two centuries, a spread wide enough that it is stated here as a range rather than a false certainty. The shrine itself dates to 795, founded when Emperor Kanmu had a protective deity brought from the original Munakata Shrine in what is now Fukuoka Prefecture to watch over the new capital at Heian-kyo, and this camphor has grown at the site for a large fraction of the park's history since. Kyoto Gyoen has been public parkland since the Meiji era moved the imperial residence to Tokyo, and its giant trees, ginkgos, zelkovas, hackberries and camphors among them, now shade a park most Kyoto residents walk through rather than one they think to visit specifically.",
       "verified_sources": [
         "https://kyototravels.com/guidemunakatajinja/",
-        "https://www.kyotonikanpai.com/spot/01_03_kyoto_gosho/munakata_jinja.php"
+        "https://www.kyotonikanpai.com/spot/01_03_kyoto_gosho/munakata_jinja.php",
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012386.html"
       ],
       "access": "Free, Kyoto Gyoen open daily",
       "transport": "Marutamachi (Karasuma Line) or Karasuma-Marutamachi bus stop, 5 min walk",
@@ -267,7 +282,13 @@
           "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
           "note": "Photographed by a reader and sent through the app (2026-09-12), and added BESIDE the wide shot rather than in place of it: that one shows where the tree stands, this one shows the limb structure and the root flare from underneath, which is what tells you it is this trunk. The photographer identified it as the same tree as the existing photograph; the file carries no GPS tag (stripped in transit) so that identification rests on his word rather than on a coordinate. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
         }
-      ]
+      ],
+      "official_register": {
+        "name": "Kamigyo Ward Proud Trees (上京区の史蹟百選・誇りの木), Kyoto City",
+        "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012386.html"
+      },
+      "girth_cm": 857,
+      "height_m": 24.5
     },
     {
       "id": "kyo_007",
@@ -286,7 +307,8 @@
       "verified_sources": [
         "https://rekishinokura.com/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE%EF%BC%88%E4%BA%AC%E9%83%BD%EF%BC%89%E3%80%9C%E5%A4%A7%E6%A8%9F%E3%81%8C%E9%8E%AE%E5%BA%A7%E3%81%99%E3%82%8B%E4%BA%AC%E9%83%BD%E4%B8%89%E7%86%8A%E9%87%8E/",
         "https://furafurakyoto.com/imakumano-jinjya/",
-        "https://ja.wikipedia.org/wiki/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
+        "https://ja.wikipedia.org/wiki/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE",
+        "https://www2.city.kyoto.lg.jp/bunshi/bunkazai/siteisyasinn/tennnennsetumei.html"
       ],
       "access": "Free, shrine grounds open daily",
       "transport": "Keihan Bus to Sennyuji-michi, 2 min walk",
@@ -301,7 +323,13 @@
       "curation_status": "ai_generated",
       "notes": "Photo is titled \"Shoryu Benzaiten\" (樟龍弁財天), an alternate name Japanese-language sources confirm is used for this exact great camphor at Imakumano Shrine, since its large limbs are said to resemble a dragon and the tree is worshipped as the seat of a dragon-riding Benzaiten. Embedded coordinates (34.9843, 135.7742) sit within about 50m of this entry's pin. A text-search workflow cannot visually confirm the tree fills the frame, so flagged found_needs_check per house practice.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its canopy, 23.5 metres wide, visible from the surrounding streets before the shrine buildings themselves. It stands at Imakumano Shrine."
+      "how_to_recognise": "You can recognise it by its canopy, 23.5 metres wide, visible from the surrounding streets before the shrine buildings themselves. It stands at Imakumano Shrine.",
+      "official_register": {
+        "name": "Kyoto City Natural Monument (京都市指定・登録文化財 天然記念物), 新熊野神社の大樟",
+        "url": "https://www2.city.kyoto.lg.jp/bunshi/bunkazai/siteisyasinn/tennnennsetumei.html"
+      },
+      "girth_cm": 658,
+      "height_m": 21.9
     },
     {
       "id": "kyo_008",
@@ -320,9 +348,10 @@
       "verified_sources": [
         "https://www.mlit.go.jp/tagengo-db/R1-00340.html",
         "https://kaze-kyoto.com/tsuredure/%E4%BA%AC%E9%83%BD%E3%83%BB%E9%86%8D%E9%86%90%E5%AF%BA%E3%81%AE%E5%A4%A7%E3%81%97%E3%81%A0%E3%82%8C%E6%A1%9C%E3%80%82%E7%A7%80%E5%90%89%E3%81%AE%E3%80%8C%E9%86%8D%E9%86%90%E3%81%AE%E8%8A%B1%E8%A6%8B%E3%80%8D/",
-        "https://www.daigoji.or.jp/grounds/sanboin.html"
+        "https://www.daigoji.or.jp/grounds/sanboin.html",
+        "https://www.daigoji.or.jp/guide/time.html"
       ],
-      "access": "Paid entry to Sanboin",
+      "access": "Paid entry to Sanboin, where the cherry stands in the garden: adult ticket 600 yen normally, 800 yen in the spring period (20 March to the third Sunday of April). Open 9:00 to 17:00 (to 16:30 from December to February), last entry 30 minutes before closing. Check the temple's page for the current fee.",
       "transport": "Daigo (Tozai Line), 12 min walk",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Semboin_subtemple_in_Daigoji_%283471809451%29.jpg",
@@ -608,6 +637,10 @@
         "moved_m": 0,
         "date": "2026-10-05",
         "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      },
+      "official_register": {
+        "name": "Kamigyo Ward Proud Trees (上京区民の誇りの木), Kyoto City",
+        "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012404.html"
       }
     },
     {
@@ -688,6 +721,10 @@
         "moved_m": 0,
         "date": "2026-10-05",
         "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      },
+      "official_register": {
+        "name": "Kamigyo Ward Proud Trees (上京区民の誇りの木), Kyoto City",
+        "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012432.html"
       }
     },
     {
