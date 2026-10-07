@@ -125,6 +125,58 @@ def anon_can_post_a_tree():
     return True
 
 
+# EVERY TABLE THAT HOLDS WHAT A PERSON DOES, probed the same way (hard rule 11,
+# 2026-10-07: "can you finally confirm that all these ends are closed"). A
+# marked row is pushed through with the publishable key and no session; any
+# 2xx is a door and the row is deleted again with the service key. Anything
+# else (401, 403, a NOT NULL on user_id, a foreign key) is the database
+# refusing, which is the only boundary the device cannot talk its way past.
+# diagnostics (crash reports) and waitlist take anonymous rows BY DESIGN and
+# are not here.
+PERSON_TABLES = {
+    "saves": {"tree_id": "sqlcheck anon probe"},
+    "visited": {"tree_id": "sqlcheck anon probe"},
+    "sightings": {"name": "sqlcheck anon probe", "lat": 0, "lng": 0},
+    "follows": {"followed": "00000000-0000-0000-0000-000000000000"},
+    "profiles": {"display_name": "sqlcheck anon probe"},
+    "blocks": {"blocked": "00000000-0000-0000-0000-000000000000"},
+    "reports": {"reported": "00000000-0000-0000-0000-000000000000", "reason": "sqlcheck anon probe"},
+    "ambassadors": {"place_slug": "sqlcheck-anon-probe", "place_name": "sqlcheck anon probe"},
+}
+
+
+def anon_can_write(table, row):
+    """True when a stranger's row LANDED in `table`; the row is deleted again."""
+    req = urllib.request.Request(
+        f"{SUPA}/rest/v1/{table}", method="POST",
+        data=json.dumps(row).encode(),
+        headers={"apikey": ANON, "Content-Type": "application/json",
+                 "Prefer": "return=representation"})
+    try:
+        body = urllib.request.urlopen(req, timeout=20).read()
+    except urllib.error.HTTPError:
+        return False          # refused, whichever way: that is the answer wanted
+    except Exception as e:
+        print(f"sqlcheck: could not probe {table} ({e.__class__.__name__})")
+        return False
+    # It landed. Take it straight back out by the id it came back with.
+    try:
+        rid = (json.loads(body) or [{}])[0].get("id")
+    except Exception:
+        rid = None
+    if rid is not None:
+        gone = urllib.request.Request(
+            f"{SUPA}/rest/v1/{table}?id=eq.{urllib.parse.quote(str(rid))}", method="DELETE",
+            headers={"apikey": KEY, "Authorization": "Bearer " + KEY})
+        try:
+            urllib.request.urlopen(gone, timeout=20).read()
+        except Exception:
+            print(f"sqlcheck: the probe row in {table} could NOT be deleted, remove it by hand (id {rid})")
+    else:
+        print(f"sqlcheck: a probe row landed in {table} and came back without an id; remove it by hand")
+    return True
+
+
 def main():
     if not KEY:
         print("sqlcheck: SUPABASE_SERVICE_KEY absent, nothing checked")
@@ -144,9 +196,14 @@ def main():
                      "gate is JavaScript and is not a boundary. An anonymous row "
                      "can never reach the sender's account page and can never be "
                      "answered: supabase/postbox-needs-an-account.sql")
+    open_tables = [t for t, row in PERSON_TABLES.items() if anon_can_write(t, row)]
+    for t in open_tables:
+        doors.append(f"anybody can write to {t} with no account at all (the publishable "
+                     "key alone): the table's insert policy is missing or wrong")
     if not missing and not doors:
         print(f"sqlcheck: {len(seen)} object(s), every migration is applied, "
-              f"and the postbox needs an account")
+              f"the postbox needs an account, and {len(PERSON_TABLES)} tables "
+              f"refuse a row without one ({', '.join(PERSON_TABLES)})")
         return 0
     for d in doors:
         print("sqlcheck: " + d)
