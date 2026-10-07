@@ -1,0 +1,27 @@
+# The LIVE site, signed out, tapped from a runner with network (2026-10-07).
+# Hidde: "on the website i can still click on the ambassador thing without
+# logging in". Everything else measures the build; this measures what a
+# stranger's browser actually gets from ancienttrees.app, edge cache included.
+# On a button, and daily after the first deploy of the day.
+name: Live sign-in check
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "50 6 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-save playwright-core
+      - name: Tap every account control on the live site with no session
+        run: node scripts/livecheck.js
