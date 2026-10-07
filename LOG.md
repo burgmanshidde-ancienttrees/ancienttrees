@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 Continuation: Utrecht Dutch overlay, Spokane a wall
+
+Spokane released after the brief showed 1 unmined row (wall for 48h). Hong Kong enrich claim left by the earlier attempt released unfinished. Translated Utrecht into Dutch (30 trees, English twin earns 54 impressions); i18ncheck and preflight clean. Translator flagged English to check: utr_021 girth wording ("three and seventy metres"), ginkgo FAQ sex sentence, utr_019 vs utr_026 both place a four-metre beech.
+
 ## 2026-10-07 (continuation 3) Utrecht enrich, Dresden +7
 
 - **Visits, 7 days:** 1,723 visits, 1,990 page views.
