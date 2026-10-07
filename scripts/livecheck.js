@@ -25,7 +25,11 @@ const controls = ['.ambassador-apply', '.save-btn', '.worthit-btn', '.mf[data-f=
     const html = await page.content();
     const build = { served, gate: html.includes("C.gate(function() { open(); }"), intent: html.includes("kind: 'ambassador'"), writeTo: html.includes('amb-who'), chipsBeforeMap: html.indexOf("querySelectorAll('.mf[data-f]')") > 0 && html.indexOf("querySelectorAll('.mf[data-f]')") < html.indexOf('new maplibregl.Map') };
     console.log('PAGE ' + p + ' ' + JSON.stringify(build));
-    await page.evaluate(() => { try { localStorage.clear(); sessionStorage.clear(); } catch (e) {} });
+    // No session, and NOT A VISITOR: at_notrack is the flag the page beacon
+    // honours, so a runner's taps never land in the product funnel. The first
+    // four runs on 2026-10-07 had put eight sign-in opens on /aachen into the
+    // events table, which the seat-tap probe then had to explain away.
+    await page.evaluate(() => { try { localStorage.clear(); sessionStorage.clear(); localStorage.setItem('at_notrack', '1'); } catch (e) {} });
     await page.reload({ waitUntil: 'networkidle' });
     await page.waitForTimeout(2500);
     for (const sel of controls) {
@@ -74,7 +78,7 @@ const controls = ['.ambassador-apply', '.save-btn', '.worthit-btn', '.mf[data-f=
   // A refused click that was then pressed through is reported for the
   // record, not counted: the row that follows it is the verdict.
   const pressed = new Set(out.filter(r => !r.error).map(r => r.page + ' ' + r.control));
-  const bad = out.filter(r => (r.error && !pressed.has(r.page + ' ' + r.control)) || (!r.error && !r.signinOpen) || (r.signinOpen && !r.signinVisible) || r.ambassadorConfirmOpen || (r.writes && r.writes.length) || (r.stored && r.stored.some(k => k !== 'ancienttrees_pending')));
+  const bad = out.filter(r => (r.error && !pressed.has(r.page + ' ' + r.control)) || (!r.error && !r.signinOpen) || (r.signinOpen && !r.signinVisible) || r.ambassadorConfirmOpen || (r.writes && r.writes.length) || (r.stored && r.stored.some(k => k !== 'ancienttrees_pending' && k !== 'at_notrack')));
   console.log(bad.length ? 'LIVE: ' + bad.length + ' control(s) did not ask, or asked invisibly, or acted' : 'LIVE: every control asked for sign-in, visibly, and nothing was stored or sent');
   process.exit(bad.length ? 1 : 0);
 })();
