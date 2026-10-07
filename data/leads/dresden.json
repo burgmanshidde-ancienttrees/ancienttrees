@@ -167,6 +167,60 @@
       "status": "lead",
       "why": "Group of 2 bur oaks, 18 m, girths 2.30 m and 2.60 m (city list): modest for the species, no story found. Wikidata Q113253130 has a Commons photograph. Not worth the walk unless a source gives a reason.",
       "date": "2026-10-05"
+    },
+    {
+      "name": "Dohna-Eiche (Lausa)",
+      "species": "Quercus robur",
+      "lat": 51.151528,
+      "lng": 13.808917,
+      "status": "lead",
+      "why": "ND 106, planted 1815 for the 10th death anniversary of Burggraefin Marianna Amalia zu Dohna; girth 3.85 m, 20 m tall, crown 15 m (city fact sheet via de.wikipedia). Stands in the NE of the PARSONAGE garden of the Pastor-Roller-Kirche (Lausa), Koenigsbruecker Landstrasse 375; Commons photos titled 'Pfarrhof Lausa' and 'Koenigsbruecker Landstrasse'. Held back on access: no source says the parsonage garden is open or that the trunk is visible from the road. The 2008 city hiking route past five Naturdenkmale (Dresdner Norden) includes it but the press-release page 404s. If a source or reader confirms it is visible from the street it could ship view-only. Commons photos exist.",
+      "date": "2026-10-07"
+    },
+    {
+      "name": "Schillerlinde Blasewitz",
+      "species": "Tilia (winter linden per Wikidata Q124630887)",
+      "lat": 51.052144,
+      "lng": 13.807439,
+      "status": "lead",
+      "why": "Memorial linden in the Schillergarten at Schillerplatz, Blasewitz; Wikidata Q124630887 has a photograph (Commons 'Linde mit Lindner.jpg'). Listed in de.wikipedia's Liste der Gedenkbaeume in Dresden as the (first) Schillerlinde. Not verified this pass: no size, age or condition figure read, no article of its own. Candidate for a later pass; the planting year is in the list's wikitext.",
+      "date": "2026-10-07"
+    },
+    {
+      "name": "Marschall-Eiche (St.-Pauli-Friedhof)",
+      "species": "Quercus",
+      "lat": 51.0875,
+      "lng": 13.74,
+      "status": "lead",
+      "why": "Planted 1868 for forest master Count Marschall, on a mound with a memorial stone, about 20 m east of the Meschwitz oak (dre_021) but on the far side of the old cemetery wall. Part of a tree group; Commons category Marschalleiche has photos. No size or species detail read this pass. Could be folded into the dre_021 page as a neighbour or verified later.",
+      "date": "2026-10-07"
+    },
+    {
+      "name": "Luthereiche Strehlen (Saeuleneiche, Mockritzer Strasse 17)",
+      "species": "Quercus robur 'Fastigiata'",
+      "lat": 51.0236,
+      "lng": 13.7619,
+      "status": "lead",
+      "why": "ND since 1998, planted 10 Nov 1883, girth 3.70 m, 26 m tall, crown 16.5 m; but it stands in the yard of the 47th primary school (Grundschule). House rule on schools: ships only with evidence the grounds are open; none found. Commons photos exist.",
+      "date": "2026-10-07"
+    },
+    {
+      "name": "Luthereiche Schoenfeld",
+      "species": "Quercus",
+      "lat": 51.0331,
+      "lng": 13.8948,
+      "status": "lead",
+      "why": "Planted 1883 at the Markt by the Schlossteich, with a gilded stone inscribed Luther-Eiche, one of a pair of trees, near Schloss Schoenfeld; size and status not read this pass. Public square, so a plausible later tree; needs species, girth and a pin from a source.",
+      "date": "2026-10-07"
+    },
+    {
+      "name": "Luthereichen Gorbitz",
+      "species": "Quercus",
+      "lat": 51.03905,
+      "lng": 13.66579,
+      "status": "lead",
+      "why": "Two oaks planted 10 Nov 1883 for the then separate villages of Ober- and Niedergorbitz, in front of the chapel at Uthmannstrasse 26. Group of two, no size data read, no sign. Low priority.",
+      "date": "2026-10-07"
     }
   ],
   "blocked": [
@@ -179,6 +233,11 @@
       "name": "Mammutbaum Meusslitzer Strasse 134",
       "reason": "ND 137, giant sequoia, girth 3 m, the largest known in the Dresden area, but de.wikipedia says it stands in the front garden (Vorgarten) of the residential plot Meusslitzer Strasse 134 about 4 m from the pavement: somebody's home, hard rule 10. Pin 51.000078,13.851131 (register).",
       "date": "2026-10-05"
+    },
+    {
+      "name": "Ginkgos Bachstrasse (ND, Neustadt)",
+      "reason": "An allee of ginkgos (Wikidata Q136804828 calls it 'allee and natural monument'): not one collectible point.",
+      "date": "2026-10-07"
     }
   ]
 }

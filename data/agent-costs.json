@@ -9933,6 +9933,22 @@
    "tokens": 151496,
    "trees": 0,
    "note": "Enrich pass: only 2 weeping-beech best_time applied. Register ids dropped (Dansk Traeregister is a society register, 38 of 41 pages unfetched), no measurements or access found."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "dresden (dre_020-025)",
+   "kind": "verify",
+   "tokens": 218701,
+   "trees": 6,
+   "note": "Verified from de.wikipedia Gedenkbaeume/Naturdenkmal plus Commons categories; Dohna-Eiche held on access."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "dresden (dre_020-025)",
+   "kind": "write",
+   "tokens": 188400,
+   "trees": 6,
+   "note": "Merged 6, de overlay translated, counts rewritten for 25. preflight 0 problems."
   }
  ]
 }

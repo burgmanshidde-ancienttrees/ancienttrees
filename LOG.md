@@ -24,7 +24,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Visits, last 7 days: 1,697 visits, 1,955 page views. Rung picked: enrich first (prepare.py named it above everything); no submissions, health clear as far as prepare showed.
 - **Guerneville:** both Armstrong Redwoods trees now carry the State Parks fee and hours plus the free walk-in route (Old-Growth Forest Network), with parks.ca.gov as source. No register record, girth or season exists for them.
 - **Copenhagen:** a thin pass. Two weeping beeches got an October to November best_time. The 41 Dansk Traeregister links the agent returned were NOT applied: it is a dendrological society's register rather than an authority's record, and 38 of the pages were never opened. No measurements or access lines found.
-- Both preflight clean, 0 problems. No new trees: prepare.py reports 0 writable leads and the shelf-refill verify batch (Bamberg, Munich, Portland and others) was not reached in this window.
+- **Dresden, 6 new trees (dre_020 to dre_025, now 25):** the Schulmeisterlinde of Kaditz (planted 1622), the Meschwitz Oak, the Moreau Oaks, and the Luther, Oberpoyritz and Albert oaks of three village squares. Verified from de.wikipedia's Naturdenkmal lists and Commons categories, written, German overlay translated, preflight 0 problems. Three have confirmed pins, two a small-site pin with a recognition line, the Meschwitz Oak an approximate pin and no photo (it stays out of Google until it gains one). Dohna-Eiche, Luthereiche Strehlen and others held as leads on access.
+- Passcheck refused Portland (32 of 30) and Munich (62 of 60) as full, so Dresden was the pick from city_queue.py --next.
 
 ## 2026-10-07 (session) - hard rule 11: nothing a person does is saved on the device
 
