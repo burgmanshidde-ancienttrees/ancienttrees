@@ -44,7 +44,8 @@
       "verified_sources": [
         "https://pl.wikipedia.org/wiki/D%C4%85b_Mieszko_I",
         "https://otwartawarszawa.pl/przewodnik/dab-mieszko-i",
-        "https://warszawawpigulce.pl/warszawskie-drzewa-ktore-sa-najstarsze-a-z-ktorymi-zwiazana-jest-niezwykla-historia/"
+        "https://warszawawpigulce.pl/warszawskie-drzewa-ktore-sa-najstarsze-a-z-ktorymi-zwiazana-jest-niezwykla-historia/",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
       ],
       "access": "Free, public street/forest edge, open at any time",
       "transport": "Bus or metro to Ursynow, then a short walk, roughly 30-40 minutes from the centre",
@@ -66,7 +67,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by steel cables holding up its one surviving thick branch and a cavity filled with brick and cement. It stands at the edge of Natolin Forest, on Nowoursynowska Street."
+      "how_to_recognise": "You can recognise it by steel cables holding up its one surviving thick branch and a cavity filled with brick and cement. It stands at the edge of Natolin Forest, on Nowoursynowska Street.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.3205",
+        "url": null
+      }
     },
     {
       "id": "war_002",
@@ -85,7 +90,8 @@
       "verified_sources": [
         "https://pl.wikipedia.org/wiki/Topola_Obro%C5%84c%C3%B3w",
         "https://zzw.waw.pl/2026/03/02/warszawska-topola-w-finale-konkursu-drzewo-roku-2026/",
-        "https://warszawawpigulce.pl/warszawskie-drzewa-ktore-sa-najstarsze-a-z-ktorymi-zwiazana-jest-niezwykla-historia/"
+        "https://warszawawpigulce.pl/warszawskie-drzewa-ktore-sa-najstarsze-a-z-ktorymi-zwiazana-jest-niezwykla-historia/",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
       ],
       "access": "Free, public street, open at any time",
       "transport": "Tram or bus to Ochota, then a short walk, roughly 15-20 minutes from the centre",
@@ -99,7 +105,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its trunk, 453 centimetres round, standing beside the Barykada Wrzesnia monument. It stands on ul. Grojecka, Ochota."
+      "how_to_recognise": "You can recognise it by its trunk, 453 centimetres round, standing beside the Barykada Wrzesnia monument. It stands on ul. Grojecka, Ochota.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.3377",
+        "url": null
+      },
+      "girth_cm": 419,
+      "height_m": 28
     },
     {
       "id": "war_004",
@@ -131,7 +143,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing at the corner beside the one building on this stretch old enough to have survived the war. It stands at ul. Karolkowa and ul. Jaktorowska, Wola."
+      "how_to_recognise": "You can recognise it by standing at the corner beside the one building on this stretch old enough to have survived the war. It stands at ul. Karolkowa and ul. Jaktorowska, Wola.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.4449",
+        "url": null
+      }
     },
     {
       "id": "war_005",
@@ -314,7 +330,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise them as five pedunculate oaks standing together, registered as a single natural monument. They stand near Palac Szustra in Park Promenada-Morskie Oko."
+      "how_to_recognise": "You can recognise them as five pedunculate oaks standing together, registered as a single natural monument. They stand near Palac Szustra in Park Promenada-Morskie Oko.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.2969",
+        "url": null
+      }
     },
     {
       "id": "war_010",
@@ -371,9 +391,10 @@
       "verified_sources": [
         "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.2968",
         "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Botaniczny_Uniwersytetu_Warszawskiego",
-        "https://zielonyogrodek.pl/ogrod/wizyty-w-ogrodach/930-ogrod-botaniczny-uw-uniwersytetu-warszawskiego"
+        "https://zielonyogrodek.pl/ogrod/wizyty-w-ogrodach/930-ogrod-botaniczny-uw-uniwersytetu-warszawskiego",
+        "https://www.ogrod.uw.edu.pl/zwiedzanie/godziny-otwarcia-i-bilety/"
       ],
-      "access": "Paid entry to the Botanical Garden. Open March to October; in winter only the greenhouses open, so the outdoor grounds where this tree stands are seasonal.",
+      "access": "Paid entry to the Botanical Garden: 24 zl full, 12 zl reduced (12 zl for everyone on Mondays in season). Open daily 10:00 to 20:00 May to August, 10:00 to 18:00 in September, 10:00 to 17:00 in October; the ticket office closes an hour earlier. Greenhouses are closed November to February, and the garden's page does not state outdoor opening for those months, so check before a winter visit.",
       "transport": "Tram or bus to Plac Na Rozdrozu, right by the garden gate on Aleje Ujazdowskie; also walkable from Metro Politechnika (M1 line)",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -394,7 +415,11 @@
         "label": "November: the whole crown turns butter gold, then drops in a day or two",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it as the ginkgo planted in 1824, protected since 1974 along with 22 other trees in the garden. It stands in the Warsaw University Botanical Garden."
+      "how_to_recognise": "You can recognise it as the ginkgo planted in 1824, protected since 1974 along with 22 other trees in the garden. It stands in the Warsaw University Botanical Garden.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.2968",
+        "url": "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.2968"
+      }
     },
     {
       "id": "war_012",
@@ -577,6 +602,10 @@
         "status": "approved",
         "width": 375,
         "height": 500
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.3258",
+        "url": null
       }
     },
     {
@@ -772,6 +801,10 @@
         "status": "approved",
         "width": 2912,
         "height": 3488
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.3143",
+        "url": null
       }
     },
     {
@@ -805,7 +838,12 @@
         "status": "approved",
         "width": 3560,
         "height": 2926
-      }
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.5183",
+        "url": null
+      },
+      "height_m": 6
     },
     {
       "id": "war_023",
@@ -838,7 +876,12 @@
         "status": "approved",
         "width": 1654,
         "height": 1922
-      }
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.3290",
+        "url": null
+      },
+      "height_m": 32
     },
     {
       "id": "war_024",
@@ -921,6 +964,10 @@
         "status": "approved",
         "width": 3667,
         "height": 2907
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.3053",
+        "url": null
       }
     },
     {
@@ -954,6 +1001,10 @@
         "status": "approved",
         "width": 2904,
         "height": 3376
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.4570",
+        "url": null
       }
     },
     {
@@ -988,7 +1039,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the odd one out of the park's three protected trees, a poplar rather than an ash, of a species nobody has settled. It stands roughly 85 metres from the two ashes (war_026), toward ul. Leczycka."
+      "how_to_recognise": "You can recognise it as the odd one out of the park's three protected trees, a poplar rather than an ash, of a species nobody has settled. It stands roughly 85 metres from the two ashes (war_026), toward ul. Leczycka.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.4749",
+        "url": null
+      }
     },
     {
       "id": "war_029",
@@ -1153,6 +1208,10 @@
         "status": "approved",
         "width": 2319,
         "height": 3500
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.4810",
+        "url": null
       }
     },
     {
@@ -1335,6 +1394,10 @@
         "status": "approved",
         "width": 3328,
         "height": 4432
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP, GDOS), no. PL.ZIPOP.1393.PP.1465011.3025",
+        "url": null
       }
     },
     {
