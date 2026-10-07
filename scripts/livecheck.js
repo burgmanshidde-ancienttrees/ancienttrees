@@ -29,8 +29,15 @@ const controls = ['.ambassador-apply', '.save-btn', '.worthit-btn', '.mf[data-f=
     await page.reload({ waitUntil: 'networkidle' });
     await page.waitForTimeout(2500);
     for (const sel of controls) {
-      const b = await page.$(sel);
+      // The first VISIBLE match: a tree page carries a hidden heart in the bar
+      // before the one on the page.
+      let b = null;
+      for (const cand of await page.$$(sel)) { const bb = await cand.boundingBox(); if (bb && bb.width > 0 && bb.height > 0) { b = cand; break; } }
       if (!b) continue;
+      // Bring it into view the way the page scrolls (a city page scrolls in a
+      // container, not the window), then measure where it is.
+      await b.evaluate(el => el.scrollIntoView({ block: 'center', inline: 'nearest' }));
+      await page.waitForTimeout(400);
       const w0 = writes.length;
       await page.evaluate(() => { const d = document.getElementById('signin-dialog'); if (d && d.open) d.close(); });
       await page.waitForTimeout(200);
@@ -42,12 +49,12 @@ const controls = ['.ambassador-apply', '.save-btn', '.worthit-btn', '.mf[data-f=
                  onTop: top ? (top.tagName.toLowerCase() + (top.id ? '#' + top.id : '') + (top.className && typeof top.className === 'string' ? '.' + top.className.trim().split(/\s+/).slice(0, 2).join('.') : '')) : null,
                  covered: !!(top && el !== top && !el.contains(top)) };
       }, sel);
-      try { await b.scrollIntoViewIfNeeded(); await b.click({ timeout: 8000 }); }
+      try { await b.click({ timeout: 8000 }); }
       catch (e) {
         // Say what stood in the way, then press through it the way a finger
         // that has scrolled would, so the gate itself is still measured.
         out.push({ page: p, control: sel, error: String(e).split('\n').filter(l => /intercepts|outside|not visible|hidden|receives/.test(l)).slice(0, 2).join(' | ').slice(0, 160) || String(e).slice(0, 120), where, build });
-        try { await b.click({ force: true, timeout: 5000 }); } catch (e2) { continue; }
+        try { await b.evaluate(el => el.click()); } catch (e2) { continue; }
       }
       await page.waitForTimeout(1500);
       const r = await page.evaluate((sel) => {
