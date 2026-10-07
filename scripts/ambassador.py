@@ -819,7 +819,7 @@ def dropped(since="2026-10-04"):
             parts = parts[1:]
         return parts[0] if len(parts) == 1 and parts[0] in cities else None
 
-    seat = [(r["created_at"][:10], city_of(r.get("path")), r.get("path"))
+    seat = [(r["created_at"][:10], city_of(r.get("path")), r.get("path"), r["created_at"][:19])
             for r in rows if r["name"] == "signin-open" and r.get("detail") == "feedback"
             and city_of(r.get("path"))]
     done = [(r["created_at"][:16], r.get("detail") or "direct") for r in rows if r["name"] == "signin-done"]
@@ -835,6 +835,23 @@ def dropped(since="2026-10-04"):
             by[(day, path)] += 1
         for (day, path), n in sorted(by.items()):
             print(f"  {day}  {path:<32} {n}")
+        # Each tap by the minute, with whatever else the same page sent in the
+        # ten minutes around it, so a tap can be told from a test: a reader
+        # arrives, reads, taps the seat and maybe a heart; a test taps the
+        # seat and leaves. Nothing here names a person, the beacon has none.
+        print("each tap, with what else that page sent within ten minutes:")
+        everything = _req(f"/rest/v1/events?select=created_at,name,detail,path&created_at=gte.{since}T00:00:00Z"
+                          "&order=created_at.asc&limit=20000") or []
+        import datetime as _dt
+        def _t(x):
+            return _dt.datetime.fromisoformat(x[:19])
+        for day, city, path, when in seat:
+            t0 = _t(when)
+            near = [e for e in everything if e.get("path") == path
+                    and abs((_t(e["created_at"]) - t0).total_seconds()) <= 600
+                    and not (e["name"] == "signin-open" and e["created_at"][:19] == when)]
+            around = ", ".join(f"{e['name']}{'=' + e['detail'] if e.get('detail') else ''}@{e['created_at'][11:16]}" for e in near) or "nothing else"
+            print(f"  {when.replace('T', ' ')}  {path:<20} {around}")
     if done:
         print("sign-ins finished in the window (reason):")
         for when, kind in done:
