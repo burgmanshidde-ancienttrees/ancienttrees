@@ -846,6 +846,12 @@
    "country": "United States",
    "status": "lead_list",
    "note": "SCOUTED 2026-10-07. No government register: City of Atlanta has no heritage-tree list found on its ArcGIS hub. Best source is the Trees Atlanta (nonprofit) Champion Tree Program, public ArcGIS FeatureServer services6.arcgis.com/BZn8g8tzu5WfMokL/arcgis/rest/services/TreeChampionData_2019/FeatureServer/0: 437 rows, exact point per tree, species, girth, height, rank 1st-3rd, Status Alive/Dead, LocationType flag, no licence stated so NOT imported into data/registers. 141 rows pass Alive + public/semi-public + girth >=100 in, saved as finding aid data/leads/_atlanta-champions.json (top: Willow Oak 221 in at Manor Ridge Dr, Water Oak 248 in at Josephine St, Sycamore 205 in at Monroe Circle). Each needs a source of its own under one-credible-source (Trees Atlanta page or news), alive via lifecheck.py, and an access check since PublicAccess often means a street address beside a house. Georgia Forestry Commission champion page not reached (gfc.georgia.gov did not connect). Next angle: ask Trees Atlanta for reuse terms, then it becomes importable."
+  },
+  {
+   "place": "Anchorage",
+   "country": "United States",
+   "status": "no_supply",
+   "note": "SCOUTED 2026-10-07. Nothing usable. No Municipality of Anchorage heritage or landmark tree list found (ArcGIS Online search for Anchorage tree and owner MOA returned only a UAA student StoryMap on Food Forest Park, a spruce decline web map and forest-health aerial survey layers, none a tree register). Alaska Division of Forestry champion page (forestry.alaska.gov/champion-trees) is a 404; the Alaska Big Tree register is run by the state Big Tree Coordinator under American Forests, and American Forests states it never discloses exact locations of listed trees, so per hard rule 10 it is neither a coordinate source nor usable for pins. Nothing imported, no lead file written. Alaska's real big trees (Sitka spruce, Tongass Landmark Trees Project) are in Southeast, far outside Anchorage's day-trip boundary. Anchorage has no register and no naming body; do not re-scout without a new named source."
   }
  ],
  "out_of_focus": {
