@@ -65,7 +65,11 @@
         "label": "May, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it as the tree Geneva's sautier checks each spring for the season's first open leaf, opposite the Tour Baudet. It stands on the Promenade de la Treille."
+      "how_to_recognise": "You can recognise it as the tree Geneva's sautier checks each spring for the season's first open leaf, opposite the Tour Baudet. It stands on the Promenade de la Treille.",
+      "official_register": {
+        "name": "Ville de Genève, official page for the Marronnier de la Treille",
+        "url": "https://www.geneve.ch/marronnier-treille"
+      }
     },
     {
       "id": "gen_002",
@@ -106,7 +110,8 @@
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise them by two Cedars of Lebanon standing close together, the taller one missing several metres of crown to a lightning strike. They stand in Parc Beaulieu."
+      "how_to_recognise": "You can recognise them by two Cedars of Lebanon standing close together, the taller one missing several metres of crown to a lightning strike. They stand in Parc Beaulieu.",
+      "height_m": 27
     },
     {
       "id": "gen_003",
@@ -180,7 +185,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise them by their branches spreading naturally rather than pollarded tight like Geneva's street planes. They form the central avenue of the Jardin botanique."
+      "how_to_recognise": "You can recognise them by their branches spreading naturally rather than pollarded tight like Geneva's street planes. They form the central avenue of the Jardin botanique.",
+      "official_register": {
+        "name": "Système d'information du patrimoine vert (SIPV), Ville de Genève",
+        "url": "https://www.patrimoine-vert-geneve.ch/node/2"
+      },
+      "girth_cm": 450,
+      "height_m": 37
     },
     {
       "id": "gen_005",
@@ -284,7 +295,11 @@
         "kind": "fruit"
       },
       "height_m": 31.0,
-      "verify_notes": "Height 31.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 31.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Inventaire cantonal des arbres isolés (SITG, SIPV-ICA), no. 19800587I0",
+        "url": null
+      }
     },
     {
       "id": "gen_008",

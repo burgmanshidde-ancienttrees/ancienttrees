@@ -10,6 +10,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (night run, continuation): Geneva enriched
+
+- Geneva: register records on gen_001, gen_004, gen_007; height on gen_002 and gen_004 (girth on gen_002 dropped: the city page gives one figure for two cedars together); gen_003 unclosed (no Geneva page of its own).
+- Dresden's 4 READY leads left alone: a broken-crown beech, a trunk torso, and an oak in a yard; each fails the worth-the-visit test or access. Claim released.
+
 ## 2026-10-07 (night run) - enrichment pass: Hong Kong, Kyoto, Leipzig
 
 - **Rung:** enrichment of indexed pages (recovery mode default), `enrich.py --next` order. 7-day visits: 1,880 visits, 2,200 views. The shelf is under its floor (1,031 leads need only a source), but the enrich lane comes first by Hidde's 2026-10-06 ruling.
