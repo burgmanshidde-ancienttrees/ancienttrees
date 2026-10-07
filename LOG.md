@@ -10,6 +10,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 - Night run 2026-10-07 00:14 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 1.4 minutes of its 120 minute window, 8 turns, 3 commands refused by the allowlist, ended clean (success). 3 commit(s), none of them a published tree. Claims left behind: guerneville, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: You've hit your weekly limit · resets 9am (UTC)
+
 ## 2026-10-06 (night run, ninth continuation) - enrichment: New Orleans, 2 trees
 
 - New Orleans: Live Oak Society registry ids on nol_003 (no. 912, girth 510 cm, conflicting 25 ft elsewhere noted) and nol_004 (Etienne Bore, no. 21; girth left out, sources conflict). No heights (only hedged or monumentaltrees figures), no season, access unchanged: neworleanscitypark.com and audubonnatureinstitute.org block automated fetches (blocklist candidates). Preflight 0 problems, 0 new trees, ~140k tokens.
