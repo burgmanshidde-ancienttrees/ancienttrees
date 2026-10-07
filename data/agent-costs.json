@@ -9965,6 +9965,22 @@
    "tokens": 221175,
    "trees": 5,
    "note": "Merged 5, de overlay, counts to 11, oldest_tree_id pinned to frk_001. preflight 0 problems."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "billerbeck/munsterland (msl_001-004)",
+   "kind": "verify",
+   "tokens": 215460,
+   "trees": 4,
+   "note": "Baumkunde register around the Baumberge on Wolfgang Schurmann's pointer; 4 verified, 9 parked or blocked."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "munsterland (msl_001-004)",
+   "kind": "write",
+   "tokens": 179808,
+   "trees": 4,
+   "note": "New region place file with stories, intro, question set and FAQ."
   }
  ]
 }

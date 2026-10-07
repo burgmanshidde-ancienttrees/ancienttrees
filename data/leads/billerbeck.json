@@ -20,8 +20,100 @@
         "precision": "approximate, from the register page"
       },
       "added": "2026-10-02",
+      "status": "published",
+      "published_as": "msl_001"
+    },
+    {
+      "name": "Antoniusbaum in Goxel",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "note": "Naturdenkmal, 5.22 m girth (2020), 16 m, planted 1811 at a Bildstock of St Anthony after the Napoleonic invasion (second tree died); OSM tree node at 51.92952 7.10866 (confirmed pin). Stands 'mitten im Feld' with the nearest mapped way a grade3 track 250 m west; no foot access found, so access not stated honestly. Goxel is Coesfeld, ~15 km from Billerbeck. Deliver if a field path to it is found.",
+      "sources": [
+        "https://www.baumkunde.de/baumregister/217-antoniusbaum_in_goxel/"
+      ],
+      "added": "2026-10-07",
+      "status": "lead"
+    },
+    {
+      "name": "Silber-Weide bei Laer (Flooth)",
+      "species": "Silver Willow (Salix alba)",
+      "note": "Hollow, 6.4 m girth (2024), 15 m, 200 yr, on a public Wirtschaftsweg at the Neben Aa east of Laer, register visit 30.01.2026; 52.0669 7.3882 per register (52 03.6693 N, 7 23.8821 E). Unremarkable for the walk, no OSM check made; spare.",
+      "sources": [
+        "https://www.baumkunde.de/baumregister/7189-silber_weide_bei_laer/"
+      ],
+      "added": "2026-10-07",
+      "status": "lead"
+    },
+    {
+      "name": "Efeu als Baum bei Billerbeck (L581)",
+      "species": "Common Ivy (Hedera helix)",
+      "note": "Ivy-clad host tree 25 m high on the L581 towards Havixbeck, public roadside, 51.97212 7.32474, register visit 2019 only. Host tree and ivy not separately dated; not a collectible trunk, not delivered.",
+      "sources": [
+        "https://www.baumkunde.de/baumregister/6978-efeu_als_baum_bei_billerbeck/"
+      ],
+      "added": "2026-10-07",
+      "status": "lead"
+    },
+    {
+      "name": "Eibe bei Burg Huelshoff (Havixbeck)",
+      "species": "European Yew (Taxus baccata)",
+      "note": "4.8 m girth (2014), ~300 years, possibly fused multi-stem, row of 8 older yews in the winter boskett at Wasserburg Huelshoff; register: 'Privatgelaende geduldet, Zutrittszeiten beachten'; park/museum with opening hours and entry. Access and which yew not settled this pass; 51.97081 7.50447.",
+      "sources": [
+        "https://www.baumkunde.de/baumregister/3510-eiben_bei_burg_huelshoff/"
+      ],
+      "added": "2026-10-07",
+      "status": "lead"
+    },
+    {
+      "name": "Kreuzwegbuchen bei Stevede",
+      "species": "European Beech (Fagus sylvatica)",
+      "note": "Oddly shaped beeches along the Steveder Kreuzweg, ~220 m wood path, public; ~3 m girth, planted 1880; ensemble not a single point, 51.91221 7.09173, ~15 km away. Spare.",
+      "sources": [
+        "https://www.baumkunde.de/baumregister/2738-kreuzwegbuchen_bei_stevede/"
+      ],
+      "added": "2026-10-07",
+      "status": "lead"
+    },
+    {
+      "name": "Linde bei Schloss Westerwinkel (Herbern)",
+      "species": "Small-leaved Lime",
+      "note": "9.2 m girth, 600 yr, 17 m; register says public but it is a private castle estate; ~30 km, outside range.",
+      "sources": [
+        "https://www.baumkunde.de/baumregister/1547-linde_bei_schloss_westerwinkel_bei_herbern/"
+      ],
+      "added": "2026-10-07",
       "status": "lead"
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "name": "Walnuss auf Gut Holtmann",
+      "reason": "register: Privatgelaende geduldet, private farm estate",
+      "added": "2026-10-07"
+    },
+    {
+      "name": "Buche Bombeck (5.3 m)",
+      "reason": "register: Privatgelaende, 2016 visit only",
+      "added": "2026-10-07"
+    },
+    {
+      "name": "Linde am Hof Grothues, Coesfeld-Sirksfeld",
+      "reason": "behind a private farm, Privatgelaende geduldet",
+      "added": "2026-10-07"
+    },
+    {
+      "name": "Sommerlinde Darfeld (7 m, ca.)",
+      "reason": "Privatgelaende",
+      "added": "2026-10-07"
+    },
+    {
+      "name": "Eibe im Pfarrgarten Rorup",
+      "reason": "parsonage garden, Privatgelaende geduldet",
+      "added": "2026-10-07"
+    },
+    {
+      "name": "Flatter-Ulme Beerlage bei Temming",
+      "reason": "Privatgelaende",
+      "added": "2026-10-07"
+    }
+  ]
 }

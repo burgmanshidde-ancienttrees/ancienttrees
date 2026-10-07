@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 session: Münsterland opens with four court and pollard trees
+
+- **New region page /munsterland**, 4 trees, all confirmed pins: the Kopfulme in der Beerlage (Billerbeck), the Dicke Linde of Asbeck (Legden), the Krüsellinde (Altenberge), the Heidenbaum (Laer). Source: the Baumkunde.de register Wolfgang Schürmann pointed to when asked; his favourite tree, the Kopfulme, is the heart of the page. A region rather than "Billerbeck" because three of the four stand in other villages 9 to 13 km away.
+- **Not in Google yet:** no tree has a photograph, so the place sits on the noindex list until one does. Commons has candidates for the Dicke Linde and the Krüsellinde; they go to the photo review page.
+- 9 candidates parked or blocked in data/leads/billerbeck.json (six on private ground, one field tree without a path).
+
 ## 2026-10-07 (session) - the website clicked signed out, every button on every page type
 
 - **Hidde:** "please just test the website if there are more signin loops that need to be closed". Not reasoned, measured: a harness loaded 18 page types in headless Chromium with no session, clicked every button on each, and recorded for each one whether the sign-in dialog opened, whether anything was written to Supabase, whether any state changed and whether anything was stored.
