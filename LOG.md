@@ -10,6 +10,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (session) - the live site, tapped signed out from a runner
+
+- **Hidde:** "on the website i can still click on the ambassador thing without logging in", then "i think its my cache or something", then "yeah it worked incognito".
+- **Measured on ancienttrees.app itself** (`.github/workflows/livecheck.yml`, `scripts/livecheck.js`, Playwright on a runner with network, no session, storage cleared): the city, tree, explore and Spanish city pages were served fresh (modified 13:50 UTC today, the gate, the intent and the write-to line in them). Pressed: the ambassador seat opened the sign-in dialog, visibly, and stored the ambassador intent; the hearts stored a save intent; the vote and both map chips opened sign-in and stored the filter intent. Nothing was written to the account anywhere. The one request any tap made was our own anonymous page-event beacon.
+- **So the gate holds for a stranger, and his own browser held a session**: incognito has none, which is why it asked there. That is the same state as the five requests on the ledger, all from his account, and the reason the confirm step now prints "We'll write to <address>": a session you forgot is visible at the moment you commit.
+- **Cache, for the record:** nothing in the repository sets a lifetime, so pages carry GitHub Pages' ten-minute browser cache and Cloudflare served the runner fresh copies; no reader holds an old page for longer than that after a deploy.
+- **Standing:** the live check runs daily at 06:50 UTC and on a button, is on `health.py`'s watched list, and fails on any account control that acts without asking, asks invisibly, or stores anything but an intent.
+
 ## 2026-10-07 Continuation: Utrecht Dutch overlay, Spokane a wall
 
 Spokane released after the brief showed 1 unmined row (wall for 48h). Hong Kong enrich claim left by the earlier attempt released unfinished. Translated Utrecht into Dutch (30 trees, English twin earns 54 impressions); i18ncheck and preflight clean. Translator flagged English to check: utr_021 girth wording ("three and seventy metres"), ginkgo FAQ sex sentence, utr_019 vs utr_026 both place a four-metre beech.

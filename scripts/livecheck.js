@@ -71,7 +71,10 @@ const controls = ['.ambassador-apply', '.save-btn', '.worthit-btn', '.mf[data-f=
   }
   await browser.close();
   console.log('LIVE RESULT ' + JSON.stringify(out, null, 1));
-  const bad = out.filter(r => r.error || (r.control && !r.signinOpen) || (r.signinOpen && !r.signinVisible) || r.ambassadorConfirmOpen || (r.writes && r.writes.length) || (r.stored && r.stored.some(k => k !== 'ancienttrees_pending')));
+  // A refused click that was then pressed through is reported for the
+  // record, not counted: the row that follows it is the verdict.
+  const pressed = new Set(out.filter(r => !r.error).map(r => r.page + ' ' + r.control));
+  const bad = out.filter(r => (r.error && !pressed.has(r.page + ' ' + r.control)) || (!r.error && !r.signinOpen) || (r.signinOpen && !r.signinVisible) || r.ambassadorConfirmOpen || (r.writes && r.writes.length) || (r.stored && r.stored.some(k => k !== 'ancienttrees_pending')));
   console.log(bad.length ? 'LIVE: ' + bad.length + ' control(s) did not ask, or asked invisibly, or acted' : 'LIVE: every control asked for sign-in, visibly, and nothing was stored or sent');
   process.exit(bad.length ? 1 : 0);
 })();

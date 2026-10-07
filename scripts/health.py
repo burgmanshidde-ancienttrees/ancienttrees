@@ -64,6 +64,14 @@ WATCHED = {
     # the state is read here like any other failed check.
     "postbox.yml": ("Postbox check", datetime.timedelta(hours=26),
                     "gh workflow run postbox.yml"),
+    # THE LIVE SITE, tapped signed out from a runner (2026-10-07, Hidde: "on
+    # the website i can still click on the ambassador thing without logging
+    # in"; a clean browser got sign-in, his own held a session). Everything
+    # else measures the build; this measures what a stranger's browser gets
+    # from ancienttrees.app, daily, and goes red if any account control acts
+    # without asking.
+    "livecheck.yml": ("Live sign-in check", datetime.timedelta(hours=26),
+                      "gh workflow run livecheck.yml"),
 }
 
 
