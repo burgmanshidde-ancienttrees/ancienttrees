@@ -791,6 +791,58 @@ def listing():
               f"{'named: ' + e['display_name'] if e.get('display_name') else 'badge only'}")
 
 
+def dropped(since="2026-10-04"):
+    """Seat taps that opened sign-in and were lost, before the intent travelled.
+
+    Hidde, 2026-10-07: "do we have an idea of knowing if people requested
+    it before this fix". Until 2026-10-07 a signed-out tap on the open seat
+    opened the sign-in dialog and then FORGOT the request, so no row was
+    ever written for it. What survives is the page beacon: `signin-open`
+    with reason `feedback` on a CITY page path can only be the seat (the
+    vote, the report and the pin pass the same reason on TREE pages; hearts
+    pass `save`), and `signin-done` says whether anybody finished signing
+    in afterwards. The beacon is cookieless and has no account, so this
+    counts taps, never people, and a tap on the app's seat left nothing at
+    all. Needs the key; the seat went live on 2026-10-04.
+    """
+    if not KEY:
+        print("ambassador --dropped: no SUPABASE_SERVICE_KEY, nothing read")
+        return 0
+    cities = {f[:-5] for f in os.listdir(os.path.join(ROOT, "data", "cities")) if f.endswith(".json")}
+    rows = _req("/rest/v1/events?select=created_at,name,detail,path"
+                f"&name=in.(signin-open,signin-done)&created_at=gte.{since}T00:00:00Z"
+                "&order=created_at.asc&limit=5000") or []
+
+    def city_of(path):
+        parts = [p for p in (path or "").split("/") if p]
+        if parts and len(parts[0]) == 2 and parts[0] != "ar":
+            parts = parts[1:]
+        return parts[0] if len(parts) == 1 and parts[0] in cities else None
+
+    seat = [(r["created_at"][:10], city_of(r.get("path")), r.get("path"))
+            for r in rows if r["name"] == "signin-open" and r.get("detail") == "feedback"
+            and city_of(r.get("path"))]
+    done = [(r["created_at"][:16], r.get("detail") or "direct") for r in rows if r["name"] == "signin-done"]
+    opens = sum(1 for r in rows if r["name"] == "signin-open")
+    print(f"since {since}: {opens} sign-in dialogs opened on the site, {len(done)} sign-ins finished")
+    if not seat:
+        print("no signed-out tap on an open seat is in the beacon (signin-open, feedback, on a city page)")
+    else:
+        print(f"{len(seat)} signed-out tap(s) on an open seat, each one dropped before 2026-10-07:")
+        by = {}
+        for day, city, path in seat:
+            by.setdefault((day, path), 0)
+            by[(day, path)] += 1
+        for (day, path), n in sorted(by.items()):
+            print(f"  {day}  {path:<32} {n}")
+    if done:
+        print("sign-ins finished in the window (reason):")
+        for when, kind in done:
+            print(f"  {when.replace('T', ' ')}  {kind}")
+    print("A tap is not a person: the beacon is cookieless, and the app's seat left no trace at all.")
+    return 0
+
+
 def main(argv):
     if "--list" in argv or len(argv) == 1:
         return listing()
@@ -798,6 +850,9 @@ def main(argv):
         return sync()
     if "--asked" in argv:
         return asked_ledger()
+    if "--dropped" in argv:
+        i = argv.index("--dropped")
+        return dropped(argv[i + 1]) if len(argv) > i + 1 and argv[i + 1][:1] != "-" else dropped()
     if "--heads-up" in argv:
         return heads_up("--send" in argv)
     if "--requests" in argv:

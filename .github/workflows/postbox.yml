@@ -42,3 +42,11 @@ jobs:
         env:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: python3 scripts/ambassador.py --asked
+      # And the taps on an open seat that opened sign-in and were lost before
+      # the intent travelled with it (2026-10-07): the beacon's trace of a
+      # request that never became a row. Taps, never people.
+      - name: Seat taps dropped before the intent travelled
+        if: always()
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python3 scripts/ambassador.py --dropped
