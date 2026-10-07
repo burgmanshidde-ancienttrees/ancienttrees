@@ -697,10 +697,10 @@ struct MapTab: View {
             } label: {
                 Label(saved.isVisited(t.id) ? "Seen" : "I have seen this one",
                       systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "checkmark.seal")
-                    .accessibilityIdentifier("seen-tick")
                     .font(.subheadline.weight(.semibold))
                     .frame(maxWidth: .infinity).padding(.vertical, 13)
             }
+            .accessibilityIdentifier("seen-tick")
             .buttonStyle(.borderedProminent)
             .tint(saved.isVisited(t.id) ? Color(Brand.inkSoft) : Brand.canopy)
             .sensoryFeedback(.success, trigger: saved.isVisited(t.id)) { _, now in now }

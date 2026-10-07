@@ -28,14 +28,17 @@ final class SignedOutWalk: XCTestCase {
         return app
     }
 
-    /// Scroll until the control is there and hittable, then tap it.
+    /// Scroll until the control exists (a lazy list keeps what is below the
+    /// fold out of the tree entirely), then tap it; a control that exists but
+    /// reads as not hittable (the bar's heart, behind the sheet's hit test) is
+    /// tapped at its centre, which is what a finger does.
     private func tap(_ app: XCUIApplication, _ id: String, file: StaticString = #filePath, line: UInt = #line) {
         let b = app.descendants(matching: .any)[id].firstMatch
-        XCTAssertTrue(b.waitForExistence(timeout: 20), "no control \(id) on screen", file: file, line: line)
         var tries = 0
-        while !b.isHittable && tries < 5 { app.swipeUp(); tries += 1 }
-        XCTAssertTrue(b.isHittable, "\(id) is on screen but cannot be tapped", file: file, line: line)
-        b.tap()
+        while !b.waitForExistence(timeout: 4) && tries < 8 { app.swipeUp(); tries += 1 }
+        XCTAssertTrue(b.exists, "no control \(id) on screen", file: file, line: line)
+        if b.isHittable { b.tap() }
+        else { b.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap() }
     }
 
     private func expectSignIn(_ app: XCUIApplication, after id: String, file: StaticString = #filePath, line: UInt = #line) {
@@ -50,12 +53,17 @@ final class SignedOutWalk: XCTestCase {
     }
 
     func testVoteAsks() {
+        // The tree page's own vote is WorthItButton; the thumbs pair
+        // (worth-the-trip-up) lives on the payoff screen after a tick.
         let app = launch(["-tree=ams_001"])
-        tap(app, "worth-the-trip-up"); expectSignIn(app, after: "worth-the-trip-up")
+        tap(app, "worthit-button"); expectSignIn(app, after: "worthit-button")
     }
 
     func testSeenTickAsks() {
+        // -select opens the map's sheet at its peek; raise it the way
+        // FlowWalk does so the card's buttons are in reach.
         let app = launch(["-tab=0", "-select=ams_001"])
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
         tap(app, "seen-tick"); expectSignIn(app, after: "seen-tick")
     }
 
@@ -82,7 +90,9 @@ final class SignedOutWalk: XCTestCase {
 
     func testContributeAsks() {
         // The form opens sign-in by itself for anybody without an account.
-        let app = launch(["-contribute"])
+        // -contribute is read by the Collection tab's screen (Profile.swift),
+        // so that tab has to be the one on screen.
+        let app = launch(["-tab=2", "-contribute"])
         expectSignIn(app, after: "-contribute")
     }
 }
