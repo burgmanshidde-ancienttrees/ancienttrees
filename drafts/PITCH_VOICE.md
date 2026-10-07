@@ -148,6 +148,11 @@ belongs in Helpful Details or nowhere.
 - NO: "Your second photo, the one for the holm oak, shows one of the park's elms. The holm oak is the dark evergreen one"
 - YES: "Maybe we put the pin in the wrong place: you stood there, do you know which tree it is?"
 
+**listing features instead of saying why it exists and where it came from** (added 2026-10-07)
+
+- NO: "Ancient Trees maps the city's most remarkable trees, each with its story, where exactly to find it, and when it looks its best."
+- YES: "Ancient Trees is made to get people outside to marvel at old trees. Lisbon was the inspiration for the app."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
