@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (night run, continuation 2): Stockholm enriched
+
+- Stockholm: girth on sto_001 (diameter 202 cm from sv.wikipedia, times pi) and sto_006, height on sto_004; no per-tree register page found for any of the four, Lyell's Oak left (girth taken at 1 m, not 1.30 m).
+
 ## 2026-10-07 (night run, continuation): Geneva enriched
 
 - Geneva: register records on gen_001, gen_004, gen_007; height on gen_002 and gen_004 (girth on gen_002 dropped: the city page gives one figure for two cedars together); gen_003 unclosed (no Geneva page of its own).
