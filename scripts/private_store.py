@@ -64,11 +64,15 @@ MOVED = [
 
 
 def key():
-    k = os.environ.get("SUPABASE_SERVICE_KEY")
-    if not k and os.path.exists(ENV_FILE):
+    # The Mac's own key file wins over the environment: ~/.ancienttrees-mail.env
+    # also exports a SUPABASE_SERVICE_KEY, an older one that Supabase refuses
+    # (401, found 2026-10-07), and sourcing it before a send shadowed this one.
+    k = None
+    if os.path.exists(ENV_FILE):
         for line in open(ENV_FILE):
             if line.strip().startswith(("SUPABASE_SERVICE_KEY=", "export SUPABASE_SERVICE_KEY=")):
                 k = line.split("=", 1)[1].strip().strip('"').strip("'")
+    k = k or os.environ.get("SUPABASE_SERVICE_KEY")
     if not k:
         sys.exit("private_store: no SUPABASE_SERVICE_KEY; nothing pulled, and nothing may be sent")
     return k
