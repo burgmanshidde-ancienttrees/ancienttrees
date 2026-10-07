@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (continuation 2) Venice, Fukuoka, Seoul enrich
+
+- **Fukuoka:** register records and measurements on 5 trees (Dazaifu camphor 28.5 m / 11.7 m girth, Kushida Ginkgo 20.8 m / 598 cm from the city's cultural-property record, plus register names for fuk_007, fuk_008 and fuk_015). Six others have no per-tree record found.
+- **Seoul:** register ids on 4 of 5 trees (Natural Monuments 59, 194, 271, Seoul Monuments 2 and 33), heights on three. heritage.go.kr timed out, so measurements come from Korean Wikipedia text derived from the Heritage Service, not the register page. seo_007's girth is our conversion from an 82 cm diameter.
+- **Venice:** nothing found. No per-tree register records or measurements, cypress file has no striking moment; marked done. live.comune.venezia.it returned 404 on the Forte Marghera path.
+- Left standing: fuk_017 is verified in data/research and still needs a writer; READY leads are only 2.
+
 ## 2026-10-07 (continuation) Istanbul enrich
 
 An earlier attempt's Istanbul enrich claim finished: official record AVR-20AA0027 plus girth 1030 cm and height 26 m on the Taşlı Çınar (ist_004). The other three Istanbul trees have no per-tree official record found; their gaps stay. READY leads were only 2 (Dresden Luthereichen), not dispatched. Note: anitagac.istanbul fails TLS verification from the runner.
