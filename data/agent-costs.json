@@ -9916,5 +9916,23 @@
    "note": "grz_016 merged with de overlay; fdl_001 skipped as duplicate of spa_001 (brief wrong)",
    "brief_wrong": true
   }
+ ],
+ "2026-10-07": [
+  {
+   "date": "2026-10-07",
+   "target": "guerneville",
+   "kind": "enrich",
+   "tokens": 124282,
+   "trees": 0,
+   "note": "Enrich pass: official State Parks access line (fee, hours, walk-in) on gue_001 and gue_002; no register, measurement or season to be had."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "copenhagen",
+   "kind": "enrich",
+   "tokens": 151496,
+   "trees": 0,
+   "note": "Enrich pass: only 2 weeping-beech best_time applied. Register ids dropped (Dansk Traeregister is a society register, 38 of 41 pages unfetched), no measurements or access found."
+  }
  ]
 }

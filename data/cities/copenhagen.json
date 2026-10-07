@@ -330,7 +330,15 @@
         }
       ],
       "girth_cm": 329,
-      "height_m": 15
+      "height_m": 15,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "cop_008",
@@ -1955,7 +1963,15 @@
         "height": 1500
       },
       "story": "This beech is eating a fence. Somebody once put an iron railing round a grave in Garnisons Kirkegård, the tree grew beside it, and over the years the trunk has closed round part of the ironwork and taken it in. The Danish Tree Register records it in plain words, and the photograph that goes with the entry shows the railing disappearing into the bark.\n\nIt is a weeping beech, the cultivated form whose branches fall to the ground in a curtain, and like most weeping beeches it is a grafted tree: a weeping crown set on an ordinary beech rootstock. You can see the join in the measurements. Above the graft, at about a metre, the trunk is 3.22 metres round. Below it, the rootstock is only 2.48. The crown stands 13 metres tall, and the register recorded the whole tree as living and healthy in December 2018 and rates it remarkable at municipal level. Someone photographed a tree within thirty metres of it in August 2025.\n\nGarnisons Kirkegård is the old garrison cemetery of Østerbro, a few minutes' walk from Østerport, and the register's directions are precise: 45 metres out, in line with the south gable of the embassy beside it.\n\nIf you have already met the weeping beech we map in Assistens Kirkegård, this is its counterpart across town, slightly thinner and stranger. Nobody has recorded when this one was planted. If you know its age, tell us.",
-      "how_to_recognise": "You can recognise it by the iron grave railing grown into its trunk. It is a weeping beech, branches falling to the ground, standing 45 metres out in line with the south gable of the embassy."
+      "how_to_recognise": "You can recognise it by the iron grave railing grown into its trunk. It is a weeping beech, branches falling to the ground, standing 45 metres out in line with the south gable of the embassy.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
+        "kind": "autumn colour"
+      }
     }
   ]
 }

@@ -19,6 +19,13 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Digest (Hidde, same morning: "can you add to the daily digest to tell me if there are new ambassadors?"):** `ambassador_lines()` prints an Ambassadors table under the people table, granted yesterday / 14 days / total, invitations sent and open-seat requests answered, with the new ones named where they said yes to being named.
 - **Not provable from this sandbox:** the stale-session smoke check needs Supabase to answer, which the sandbox proxy blocks, so its two local failures are the network and not the site; CI runs it with the network.
 
+## 2026-10-07 (night run) - enrichment pass: Guerneville and Copenhagen
+
+- Visits, last 7 days: 1,697 visits, 1,955 page views. Rung picked: enrich first (prepare.py named it above everything); no submissions, health clear as far as prepare showed.
+- **Guerneville:** both Armstrong Redwoods trees now carry the State Parks fee and hours plus the free walk-in route (Old-Growth Forest Network), with parks.ca.gov as source. No register record, girth or season exists for them.
+- **Copenhagen:** a thin pass. Two weeping beeches got an October to November best_time. The 41 Dansk Traeregister links the agent returned were NOT applied: it is a dendrological society's register rather than an authority's record, and 38 of the pages were never opened. No measurements or access lines found.
+- Both preflight clean, 0 problems. No new trees: prepare.py reports 0 writable leads and the shelf-refill verify batch (Bamberg, Munich, Portland and others) was not reached in this window.
+
 ## 2026-10-07 (session) - hard rule 11: nothing a person does is saved on the device
 
 - **Hidde:** "can we once and for all write somewhere as a hard rule that we never save stuff locally, we need to stop making these mistakes." Said for the eighth time since 2026-08-25.
