@@ -87,11 +87,13 @@ final class SignedOutWalk: XCTestCase {
     }
 
     func testAmbassadorSeatAsks() {
-        // Cadiz has no ambassador and five trees, so its page shows the open
-        // seat a short scroll down the sheet (Amsterdam's thirty-odd trees put
-        // the row beyond the walk's reach): raise the sheet, then scroll to it.
-        let app = launch(["-open=city:cadiz"])
-        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
+        // Cadiz has no ambassador, so its page shows the open seat at the top
+        // of the sheet's content, under the header. A city page opens its
+        // sheet at HALF, not at peek (PlaceMapPage.sheetHeight), so the map
+        // tab's raise-the-sheet tap lands on a tree card here and pushes a
+        // tree page, which is how this test failed twice. -sheet=full opens
+        // the sheet as the page instead, the way the screen sweep does.
+        let app = launch(["-tab=0", "-open=city:cadiz", "-sheet=full"])
         tap(app, "ambassador-wanted"); expectSignIn(app, after: "ambassador-wanted")
     }
 
