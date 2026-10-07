@@ -222,3 +222,14 @@ The same rule the rest of the corpus runs on: when he corrects the same kind
 of sentence twice, the pair goes in here and, if it can be grepped, into
 `scripts/pitchcheck.py`. A pair is worth more than a rule, because I can
 imitate a pair and I can argue my way around a rule.
+
+## The standard points about the app (Hidde, 2026-10-07)
+
+When somebody asks what to say about Ancient Trees (a partner page, a newsletter, a press note), these are his points, shaped with him for Quercus Lisboa. Reuse them; swap the city for theirs, and the trees for two of theirs from our page.
+
+- Ancient Trees helps you find the remarkable old trees around you, and gives you a reason to go outside and enjoy nature.
+- It started in Lisbon. Walking through the city's parks, I kept stumbling on huge, beautiful old trees and wanted a way to find more of them.
+- Many of [city]'s oldest trees are on it, from [tree] to [tree], along with trees in many other cities.
+- Anyone can add a tree they love, on the website or in the app.
+
+Then the city page link and the App Store link (https://apps.apple.com/app/id6806177833), and the logo with and without the name (https://ancienttrees.app/assets/press/). Bullets are fine; each one is a sentence a person would say. Nothing about price, nothing about how we work.
