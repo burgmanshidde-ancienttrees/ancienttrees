@@ -10,6 +10,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (continuation) Istanbul enrich
+
+An earlier attempt's Istanbul enrich claim finished: official record AVR-20AA0027 plus girth 1030 cm and height 26 m on the Taşlı Çınar (ist_004). The other three Istanbul trees have no per-tree official record found; their gaps stay. READY leads were only 2 (Dresden Luthereichen), not dispatched. Note: anitagac.istanbul fails TLS verification from the runner.
+
 ## 2026-10-07 session: Münsterland opens with four court and pollard trees
 
 - **New region page /munsterland**, 4 trees, all confirmed pins: the Kopfulme in der Beerlage (Billerbeck), the Dicke Linde of Asbeck (Legden), the Krüsellinde (Altenberge), the Heidenbaum (Laer). Source: the Baumkunde.de register Wolfgang Schürmann pointed to when asked; his favourite tree, the Kopfulme, is the heart of the page. A region rather than "Billerbeck" because three of the four stand in other villages 9 to 13 km away.

@@ -139,7 +139,8 @@
       "story": "A stone was lodged inside this tree's bark for roughly three centuries, and until about ten years ago you could still see it. According to the story attached to the tree, Sultan Ahmed I rode past on his white horse sometime between 1590 and 1617 while the Alemdar gate and fountain to what is now Gülhane Park were being built, and a stone kicked loose from a horseshoe struck the sapling and stayed there as it grew, sealed a few metres up the trunk like a fossil. Whether or not the horse is real, the tree is: Istanbul's own monumental tree registry lists it at roughly 446 years old, 26 metres tall, with a trunk 328 centimetres around, the thickest Oriental plane in the district. The embedded stone was removed during conservation work about a decade ago, leaving a visible cavity where it used to sit. What remains is a tree that has watched the road outside Gülhane Park go from Ottoman thoroughfare to tram line, still standing exactly where a legend says a sultan's horse put it there.",
       "verified_sources": [
         "https://anitagac.istanbul/agac/AVR-20AA0027",
-        "https://yedikita.com.tr/bir-agac-ile-tasin-300-yillik-hikayesi/"
+        "https://yedikita.com.tr/bir-agac-ile-tasin-300-yillik-hikayesi/",
+        "https://anitagac.istanbul/agac/AVR-20AA0027 (record lists trunk circumference 1030 cm, trunk diameter 328 cm, height 26 m, approximate age 446 years; location Fatih / Cankurtaran / Alemdar Cadde; its text names the Alemdar Taşlı Çınar)"
       ],
       "access": "Free, public street corner",
       "transport": "1 min walk from Gülhane tram stop (T1 line)",
@@ -154,7 +155,13 @@
       "curation_status": "ai_generated",
       "notes": "Upgraded to confirmed 2026-07-29: found the registry's own underlying data feed (anitagac.istanbul/treeList, a GeoJSON layer the site's map loads client-side, not reachable through page-rendering tools but fetchable directly) and matched record AVR-20AA0027, already cited as this entry's source, against it directly. The record's age (446), height (26m) and girth (328cm) all match this entry's own figures exactly, confirming it as the same tree rather than a same-species neighbour. Its surveyed coordinate is about 417m from the prior street-corner estimate. Photo added 2026-07-29: an iNaturalist CC BY 4.0 observation (Platanus orientalis, observed 2026-05-30) about 200m from this pin, at the Archaeology Museum/Gülhane boundary. Viewed directly: a large, clearly old plane trunk behind an official heritage-protection fence bearing a municipal culture-department seal, next to a carved stone architectural fragment and an old stone building, consistent with this street corner. Held at found_needs_check rather than approved since more than one large plane could plausibly stand in this immediate micro-area and the photo doesn't itself carry the tree's name.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the visible cavity partway up its trunk, left after a centuries-old embedded stone was removed. It stands on Alemdar Caddesi outside Gülhane Park's Alemdar gate."
+      "how_to_recognise": "You can recognise it by the visible cavity partway up its trunk, left after a centuries-old embedded stone was removed. It stands on Alemdar Caddesi outside Gülhane Park's Alemdar gate.",
+      "official_register": {
+        "name": "Anıt Ağaç İstanbul (Istanbul Metropolitan Municipality monumental tree register), no. AVR-20AA0027",
+        "url": "https://anitagac.istanbul/agac/AVR-20AA0027"
+      },
+      "girth_cm": 1030,
+      "height_m": 26
     },
     {
       "id": "ist_005",
