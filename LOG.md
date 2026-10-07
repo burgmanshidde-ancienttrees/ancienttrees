@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (session) - hard rule 11: nothing a person does is saved on the device
+
+- **Hidde:** "can we once and for all write somewhere as a hard rule that we never save stuff locally, we need to stop making these mistakes." Said for the eighth time since 2026-08-25.
+- **Written as hard rule 11 in CLAUDE.md**, bundling what already enforces it on both surfaces (the cross-device register and `crossdevice.py` in the pre-push hook, `check_nothing_is_stored_locally`, the two session checks, `signed_out_controls_ask`, `check_every_gate_asks_the_server`) with the closed list of what a device may hold: the session token, a tap's intent waiting on sign-in, an unsent draft, and device settings. Everything else is the account's. A new account control joins the signed-out smoke list in the same change.
+- Nothing in the code changed in this entry; the rule names the checks that exist so no session re-derives it.
+
 ## 2026-10-07 (session) - every sign-in gate asks the server, and the act finishes after the sign-in
 
 - **Hidde:** "in the map if I press favourites or mytrees as a filter it should force people to login. Can you check whether there are more paths where users should be nudged to login ... We are losing opportunities here."
