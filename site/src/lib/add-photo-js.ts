@@ -120,15 +120,18 @@ export const ADD_PHOTO_JS = `
     // The gate is the one the hearts and the worth-it control use: anybody may
     // see it, sending needs the account that lets us write back and that the
     // deletion promise hangs on.
-    if (!session()) {
+    // The one door (atCollection.gate, 2026-10-05): the server says whether
+    // there is an account, never the browser.
+    var C = window.atCollection;
+    var ask = function() {
       // The sign-in sheet is the whole answer; a sentence under the button
       // saying the same thing was clutter (Hidde, 2026-09-24). Only where the
       // sheet is missing does the page say it in words.
       if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback');
       else say(msgSignIn);
-      return;
-    }
-    file.click();
+    };
+    if (C && C.gate) C.gate(function() { file.click(); }, ask);
+    else if (session()) file.click(); else ask();
   });
 
   file.addEventListener('change', function() {

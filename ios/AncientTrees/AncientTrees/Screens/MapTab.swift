@@ -916,10 +916,18 @@ struct MapTab: View {
                 // and a control that quietly empties the map is worse than one
                 // that says what it needs. Same gate as the heart and the
                 // camera, through the same nudge.
+                // AND THE TAP FINISHES AFTER THE SIGN-IN (Hidde, 2026-10-07:
+                // "it should force people to login"): the chip they pressed
+                // switches on once the account is in, the same continuation
+                // the heart and the Seen tick use, rather than landing them
+                // back on an unfiltered map having been asked for nothing.
                 FilterChip(label: "Favourites", icon: "heart",
                            on: filters.favouritesOnly) {
                     guard account.isSignedIn else {
-                        nudge.require(.general)
+                        nudge.require(.general) {
+                            filters = MapFilters()
+                            filters.favouritesOnly = true
+                        }
                         return
                     }
                     let want = !filters.favouritesOnly
@@ -931,7 +939,11 @@ struct MapTab: View {
                 FilterChip(label: "My trees", icon: "checkmark.seal",
                            on: filters.collectedOnly) {
                     guard account.isSignedIn else {
-                        nudge.require(.general)
+                        nudge.require(.general) {
+                            filters = MapFilters()
+                            filters.collectedOnly = true
+                            shownWalk = nil
+                        }
                         return
                     }
                     let want = !filters.collectedOnly

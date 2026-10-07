@@ -177,12 +177,16 @@ if (pinDlg) {
   });
   pinDlg.querySelector('.pin-cancel').addEventListener('click', function () { pinDlg.close(); });
   sendBtn.addEventListener('click', function () {
-    var s = session();
-    if (!s) {
+    // The one door (atCollection.gate): the server decides, never the browser.
+    var C = window.atCollection;
+    var ask = function () {
       pinDlg.close();
       if (window.atOpenSignIn) window.atOpenSignIn(pinDlg.dataset.name, 'feedback');
-      return;
-    }
+    };
+    if (C && C.gate) C.gate(function (s) { sendPin(s); }, ask);
+    else if (session()) sendPin(session()); else ask();
+  });
+  function sendPin(s) {
     var c = pinMap.getCenter();
     sendBtn.disabled = true;
     sendBtn.textContent = pinDlg.dataset.sending;
@@ -208,7 +212,7 @@ if (pinDlg) {
       sendBtn.textContent = pinDlg.dataset.send;
       note.textContent = pinDlg.dataset.failed;
     });
-  });
+  }
 }
 `);
 }

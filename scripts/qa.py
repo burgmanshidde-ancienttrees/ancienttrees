@@ -2071,6 +2071,39 @@ def check_robots_is_the_file_we_wrote():
     return []
 
 
+def check_every_gate_asks_the_server():
+    """Every control that opens sign-in decides WITH THE SERVER, through
+    atCollection.gate, never from the session the browser holds.
+
+    Hidde, 2026-10-07, the fourth and fifth time in a week on one gate or
+    another: "if I press favourites or mytrees as a filter it should force
+    people to login ... check whether there are more paths". The 2026-10-05
+    rule put every gated tap through one door, and five scripts had stayed on
+    their own door: the map's account chips, the worth-it vote and report, the
+    pin report and the photo button each asked `session()` (a stored token
+    believed on its own say-so), so a session the server had already refused
+    passed the gate and the act was lost in silence, with no sign-in shown.
+    From outside that is indistinguishable from the feature working signed
+    out, which is exactly what he reported.
+
+    So: a script under site/src/lib that opens sign-in must call `.gate(`.
+    signin-js and collection-js are the door itself. Removing this check needs
+    Hidde."""
+    root = ROOT / "site" / "src" / "lib"
+    own = {"signin-js.ts", "collection-js.ts"}
+    bad = []
+    for path in sorted(root.glob("*.ts")):
+        if path.name in own:
+            continue
+        text = path.read_text(encoding="utf-8")
+        if "atOpenSignIn(" in text and ".gate(" not in text:
+            bad.append(path.name)
+    if bad:
+        return ["a gate that decides from the browser's stored session rather than "
+                "with the server (no atCollection.gate call): " + ", ".join(bad)]
+    return []
+
+
 def check_people_s_addresses_stay_out_of_the_repo():
     """The repository is PUBLIC, and it carried 600+ email addresses of people
     we wrote to, their replies and the waitlist (found 2026-10-06). They live
@@ -2605,6 +2638,7 @@ def main():
         check_every_feed_field_reaches_the_app,
         check_no_personal_address,
         check_people_s_addresses_stay_out_of_the_repo,
+        check_every_gate_asks_the_server,
         check_icons_are_drawn,
         check_css_braces_balance,
         check_hidden_means_hidden,
@@ -2636,6 +2670,7 @@ def main():
     failures += check_scripts_are_valid_python()
     failures += check_auth_corpus_agreement()
     failures += check_people_s_addresses_stay_out_of_the_repo()
+    failures += check_every_gate_asks_the_server()
     failures += check_icons_are_drawn()
     failures += check_photo_orientation()
     failures += check_photo_resolution()

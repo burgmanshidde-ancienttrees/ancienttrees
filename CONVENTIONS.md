@@ -3125,6 +3125,14 @@ Hidde asked whether Discover should become an infinite scroll, with rows like tr
 
 Reference: AllTrails' and Airbnb's phone result lists, and the ordered-list convention for numbered rows. On a touch screen a card has no hover fill and no underlined title (iOS keeps :hover on the last thing touched, which is what painted Barcelona's first card cream). Every line of text hangs from one left edge, so with a number badge the meta, story and credit indent to the title, not to the badge. The photo credit closes the card instead of sitting between the photograph and its name.
 
+## The account filters on the map, signed out (2026-10-07)
+
+Hidde: "in the map if I press favourites or mytrees as a filter it should force people to login. Can you check whether there are more paths where users should be nudged to login to use these account functionalities but the app doesn't. We are losing opportunities here."
+
+**Reference: Google Maps** (CONVENTIONS.md 2026-09-24, above): the gate is at the entrance, and acting on an account feature signed out opens the Google account sheet, after which the act goes through. **AllTrails** (from memory): tapping Favorites or a saved-list filter signed out opens sign-up, and the list you asked for is there after it. Both: the gate is decided by the account, never by a stale token on the device, and the act you came for finishes after the sign-in.
+
+What ours does now: both chips already asked for sign-in since 2026-08-29 on both surfaces; what they lacked was the two halves above. They now decide with the server (`atCollection.gate` on the web; the app's `isSignedIn` is refreshed against the server on every launch) and the chip you pressed switches on after the sign-in (the nudge's continuation in the app, the `filter` intent on the web). The same door now carries the vote, the report, the pin report and the photo button on the web, which had each kept their own; `check_every_gate_asks_the_server()` in qa.py refuses a script that opens sign-in without going through it.
+
 ## Signing in on the way to a request, then finishing it, with the address shown (2026-10-07)
 
 Hidde, the fourth time: "When I am logged out I apply for ambassador - it should fire a login screen and after that confirm ambassadorship so that we know the email address of that person and we can contact them."

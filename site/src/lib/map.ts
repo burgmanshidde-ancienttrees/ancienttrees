@@ -430,22 +430,48 @@ function applyFilters() {
 // rather than emptying the map, which is the rule Hidde set for the app's own
 // two: "als je uitgelogd op favourites of my trees filter klikt moet er ook
 // een inlog scherm opkomen."
-function needsAccount(name) {
-  if (window.atSignedIn && window.atSignedIn()) return false;
-  if (window.atOpenSignIn) window.atOpenSignIn(name);
-  return true;
+// AND THE SERVER DECIDES whether there is an account, through the one door
+// every gated tap uses (atCollection.gate, 2026-10-05). This chip used to ask
+// the browser (a stored session believed on its own say-so), so a token the
+// server had already refused let the filter switch on and empty the map, with
+// no sign-in in sight (Hidde, 2026-10-07: "if I press favourites or mytrees
+// as a filter it should force people to login").
+function toggleFilter(b, f) {
+  FILTERS[f] = !FILTERS[f];
+  b.classList.toggle('is-on', FILTERS[f]);
+  b.setAttribute('aria-pressed', FILTERS[f] ? 'true' : 'false');
+  applyFilters();
 }
 document.querySelectorAll('.mf[data-f]').forEach(function(b) {
   b.addEventListener('click', function() {
     var f = b.dataset.f;
-    if ((f === 'fav' || f === 'mine') && !FILTERS[f]
-        && needsAccount(b.dataset.label || b.textContent.trim())) return;
-    FILTERS[f] = !FILTERS[f];
-    b.classList.toggle('is-on', FILTERS[f]);
-    b.setAttribute('aria-pressed', FILTERS[f] ? 'true' : 'false');
-    applyFilters();
+    if ((f === 'fav' || f === 'mine') && !FILTERS[f]) {
+      var C = window.atCollection;
+      var ask = function() {
+        // Signed out: sign in and come back with THIS chip on, rather than
+        // landing on an unfiltered map having been asked for nothing.
+        if (window.atOpenSignIn) window.atOpenSignIn(b.dataset.label || b.textContent.trim(), null, { kind: 'filter', filter: f });
+      };
+      if (C && C.gate) C.gate(function() { toggleFilter(b, f); }, ask);
+      else ask();
+      return;
+    }
+    toggleFilter(b, f);
   });
 });
+// Back from signing in with a chip to switch on (signin-js hands it over).
+if (window.atPendingFilter) {
+  var pf = window.atPendingFilter; window.atPendingFilter = null;
+  var pb = document.querySelector('.mf[data-f="' + pf + '"]');
+  var PC = window.atCollection;
+  if (pb && !FILTERS[pf] && PC && PC.gate) {
+    // After the saved and seen lists have arrived, or the filter keeps nothing.
+    var jobs = [];
+    if (window.atSyncSaves) jobs.push(Promise.resolve(window.atSyncSaves()));
+    if (window.atSyncVisited) jobs.push(Promise.resolve(window.atSyncVisited()));
+    PC.gate(function() { Promise.all(jobs).then(function() { toggleFilter(pb, pf); }).catch(function() {}); }, function() {});
+  }
+}
 // The species chip wears the chosen species, the way the app's does
 // (FilterChipLabel(label: filters.species ?? "Species")). The select is the
 // invisible tap layer over it, so the filled state and the word both belong to

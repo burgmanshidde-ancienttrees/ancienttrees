@@ -249,35 +249,40 @@ export const WORTHIT_JS = `
       if (state(box.dataset.tree).reported) reportDone(box);
     });
   });
+  // THE ONE DOOR (atCollection.gate, 2026-10-05): the server says whether
+  // there is an account, never the browser. A stored session the server had
+  // refused used to pass this gate and lose the vote in silence.
+  function gated(box, act) {
+    var C = window.atCollection;
+    var ask = function() { if (window.atOpenSignIn) window.atOpenSignIn(box.dataset.name, 'feedback'); };
+    if (C && C.gate) C.gate(act, ask); else if (session()) act(); else ask();
+  }
   document.addEventListener('submit', function(e) {
     var form = e.target.closest('.worthit-detail');
     if (!form) return;
     e.preventDefault();
     var box = form.closest('.worthit');
-    if (!session()) {
-      if (window.atOpenSignIn) window.atOpenSignIn(box.dataset.name, 'feedback');
-      return;
-    }
-    var text = (form.querySelector('textarea').value || '').trim();
-    if (!text) return;
-    send(box, 'report detail', text.slice(0, 1000));
-    state(box.dataset.tree).detailed = true;
-    reportDone(box);
+    gated(box, function() {
+      var text = (form.querySelector('textarea').value || '').trim();
+      if (!text) return;
+      send(box, 'report detail', text.slice(0, 1000));
+      state(box.dataset.tree).detailed = true;
+      reportDone(box);
+    });
   });
   document.addEventListener('click', function(e) {
     var btn = e.target.closest('.worthit-btn, .worthit-chip, .worthit-report');
     if (!btn || btn.type === 'submit') return;
     var box = btn.closest('.worthit');
     if (!box) return;
-    var tree = box.dataset.tree;
 
     // The gate: options visible to everyone, acting needs the account.
     // Opening the why-list stays free (it is looking, not acting).
-    if (!session() && !btn.classList.contains('worthit-report')) {
-      if (window.atOpenSignIn) window.atOpenSignIn(box.dataset.name, 'feedback');
-      return;
-    }
-
+    if (btn.classList.contains('worthit-report')) act(btn, box);
+    else gated(box, function() { act(btn, box); });
+  });
+  function act(btn, box) {
+    var tree = box.dataset.tree;
     if (btn.classList.contains('worthit-report')) {
       var why = box.querySelector('.worthit-why');
       var open = why && why.hidden;
@@ -323,7 +328,7 @@ export const WORTHIT_JS = `
     state(tree).reason = btn.dataset.reason;
     send(box, 'report', btn.dataset.reason);
     reportDone(box);
-  });
+  }
 })();
 </script>
 `;

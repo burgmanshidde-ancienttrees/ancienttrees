@@ -112,6 +112,7 @@ export const SIGNIN_JS = `
     // An ambassador request has no tree: the city page's own script reads
     // this on DOMContentLoaded and reopens the confirm step (AmbassadorLine).
     if (want.kind === 'ambassador') { window.atPendingAmbassador = want.city || true; return; }
+    if (want.kind === 'filter') { window.atPendingFilter = want.filter; return; }
     if (!want.tree) return;
     if (!document.querySelector('[data-tree="' + want.tree + '"]')) return;
     // The account's answer FIRST. Both lists were fetched by their own scripts
@@ -286,6 +287,11 @@ export const SIGNIN_JS = `
       if (want && want.tree) {
         localStorage.setItem('ancienttrees_pending',
           JSON.stringify({ kind: want.kind, tree: want.tree, at: Date.now() }));
+      } else if (want && want.kind === 'filter' && want.filter) {
+        // The map's Favourites or My trees chip (2026-10-07): switched on
+        // after the sign-in rather than forgotten by it.
+        localStorage.setItem('ancienttrees_pending',
+          JSON.stringify({ kind: 'filter', filter: want.filter, at: Date.now() }));
       } else if (want && want.kind === 'ambassador' && want.city) {
         // The open seat (Hidde, 2026-10-07: "it should fire a login screen
         // and after that confirm ambassadorship"): the city, so the page

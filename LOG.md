@@ -10,6 +10,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (session) - every sign-in gate asks the server, and the act finishes after the sign-in
+
+- **Hidde:** "in the map if I press favourites or mytrees as a filter it should force people to login. Can you check whether there are more paths where users should be nudged to login ... We are losing opportunities here."
+- **Audit, both surfaces.** Every account feature was already gated: web (heart, Seen, vote, report and its detail, pin report, photo, ambassador, contribute, the two map chips) and app (heart, Seen, camera, add-tree pin, contribute, profile edit, follow, block, season alerts, walk mode's tick, the two map chips, ambassador). The chips have asked since 2026-08-29 on both.
+- **What was uneven, and it reproduces his report.** Five website scripts decided the gate from the browser's stored session (`session()`) instead of with the server (`atCollection.gate`, the 2026-10-05 rule): the map's Favourites and My trees chips, the vote and report, the pin report, the photo button. A token the server had refused passed them, the act was lost in silence and no sign-in appeared, which from outside is the feature working signed out. The app decides from the phone's session, refreshed against the server on every launch; a refused refresh signs it out.
+- **And the act was forgotten after the sign-in** on the chips (both surfaces) and the rest of the web five: sign in, land back on the page, nothing you asked for happened.
+- **Now:** all five go through `atCollection.gate`; the chip you pressed switches on after the sign-in (web: `filter` intent, read back by map.ts; app: the nudge's continuation, the same one the heart uses). `check_every_gate_asks_the_server()` in qa.py refuses a script under site/src/lib that opens sign-in without the door. CONVENTIONS.md 2026-10-07 carries the reference (Google Maps, AllTrails).
+- **Not resumed on purpose:** a vote, a report or a photo after sign-in, because each sends content on the person's behalf and the ask is the safer step; they stay one tap away.
+
 ## 2026-10-07 (session) - the ambassador tap finishes after sign-in and names the address
 
 - **Hidde, the fourth time:** "When I am logged out I apply for ambassador - it should fire a login screen and after that confirm ambassadorship so that we know the email address of that person and we can contact them. Right now I can do this without logging in."
