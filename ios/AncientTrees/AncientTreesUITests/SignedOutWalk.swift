@@ -55,14 +55,18 @@ final class SignedOutWalk: XCTestCase {
     func testVoteAsks() {
         // The tree page's own vote is WorthItButton; the thumbs pair
         // (worth-the-trip-up) lives on the payoff screen after a tick.
+        // The compact one in the line under the name is on screen at load;
+        // the full one sits further down the page.
         let app = launch(["-tree=ams_001"])
-        tap(app, "worthit-button"); expectSignIn(app, after: "worthit-button")
+        tap(app, "worthit-count"); expectSignIn(app, after: "worthit-count")
     }
 
     func testSeenTickAsks() {
-        // -select opens the map's sheet at its peek; raise it the way
-        // FlowWalk does so the card's buttons are in reach.
-        let app = launch(["-tab=0", "-select=ams_001"])
+        // The Seen tick is on the ARRIVAL card, which the map shows when the
+        // phone stands within reach of a tree and nothing is selected. -at=
+        // puts the phone at the Heimanseik; the sheet is raised the way
+        // FlowWalk does it so the card is in reach.
+        let app = launch(["-tab=0", "-at=52.3652537,4.9182379"])
         app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
         tap(app, "seen-tick"); expectSignIn(app, after: "seen-tick")
     }
@@ -83,16 +87,18 @@ final class SignedOutWalk: XCTestCase {
     }
 
     func testAmbassadorSeatAsks() {
-        // Amsterdam has no ambassador, so its page shows the open seat.
+        // Amsterdam has no ambassador, so its page shows the open seat, at the
+        // foot of the city's sheet: raise the sheet, then scroll to it.
         let app = launch(["-open=city:amsterdam"])
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
         tap(app, "ambassador-wanted"); expectSignIn(app, after: "ambassador-wanted")
     }
 
     func testContributeAsks() {
         // The form opens sign-in by itself for anybody without an account.
-        // -contribute is read by the Collection tab's screen (Profile.swift),
-        // so that tab has to be the one on screen.
-        let app = launch(["-tab=2", "-contribute"])
+        // -contribute is read by the profile screen (Profile.swift), which is
+        // pushed from the Collection tab, so push it with -open=profile.
+        let app = launch(["-tab=2", "-open=profile:me", "-contribute"])
         expectSignIn(app, after: "-contribute")
     }
 }
