@@ -2,25 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-19T22:29:46+00:00",
-   "date": "2026-08-19",
-   "run_id": "32309055748",
-   "minutes": 5.4,
-   "minutes_basis": "measured",
-   "turns": 47,
-   "denials": 7,
-   "denials_source": "permission_denials: Bash",
-   "ended": "success",
-   "tokens": 4636974,
-   "claims_held": [
-    "houston"
-   ],
-   "commits": 2,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-20T00:27:23+00:00",
    "date": "2026-08-20",
    "run_id": "32317366676",
@@ -20912,6 +20893,46 @@
     }
    ],
    "trees": 7,
+   "logged": true
+  },
+  {
+   "started": "2026-10-07T19:50:00+00:00",
+   "date": "2026-10-07",
+   "run_id": "37677400522",
+   "minutes": 14.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 83,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash(cd && curl | grep | ? ...), Bash(cd && curl | grep | sort ...), Bash(cd && curl | head ; echo ...), Bash(cd && for ; do ; curl ...), Bash(cd && mkdir && cd && for ...), Bash(cd && mkdir && curl ; ls ...), Bash(cd && python3 | head), Bash(curl ; grep | sort | head ...), Bash(curl ; ls ; file ; which), Bash(curl ; wc ; head), Bash(grep | Tauchnitz | Kollwitz | ? ...), Bash(iconv | sed | grep | ? ...), Bash(mkdir && cat ; ? ; ? ...), Bash(mkdir && cd && curl ; wc ...), Bash(mkdir), Bash(python3 ; import ; ? ; for ...), Bash(python3 ; import ; ? ; or ...), Bash(python3 | cut ; import ; ? ...), Bash(wc)",
+   "ended": "success",
+   "tokens": 1495756,
+   "claims_held": [],
+   "commits": 14,
+   "cities_touched": 5,
+   "cities": [
+    {
+     "city": "geneva",
+     "trees": 0
+    },
+    {
+     "city": "hong-kong",
+     "trees": 0
+    },
+    {
+     "city": "kyoto",
+     "trees": 0
+    },
+    {
+     "city": "leipzig",
+     "trees": 0
+    },
+    {
+     "city": "stockholm",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
    "logged": true
   }
  ],
