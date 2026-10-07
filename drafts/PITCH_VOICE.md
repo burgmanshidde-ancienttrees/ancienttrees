@@ -153,6 +153,11 @@ belongs in Helpful Details or nowhere.
 - NO: "Ancient Trees maps the city's most remarkable trees, each with its story, where exactly to find it, and when it looks its best."
 - YES: "Ancient Trees is made to get people outside to marvel at old trees. Lisbon was the inspiration for the app."
 
+**bullet points in a mail to a person read like a form; tell it as a short story in his voice** (added 2026-10-07)
+
+- NO: "- Ancient Trees is made to get people outside to marvel at old trees."
+- YES: "Ancient Trees is about getting outside and standing in front of trees that have been around for centuries. It actually started in Lisbon..."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
