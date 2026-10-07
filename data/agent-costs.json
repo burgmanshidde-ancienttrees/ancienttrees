@@ -9949,6 +9949,22 @@
    "tokens": 188400,
    "trees": 6,
    "note": "Merged 6, de overlay translated, counts rewritten for 25. preflight 0 problems."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "frankfurt (frk_007-011)",
+   "kind": "verify",
+   "tokens": 186546,
+   "trees": 5,
+   "note": "Naturdenkmal register mirror plus Wayback copies of frankfurt.de city pages (the site is Cloudflare-blocked); 4 leads added."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "frankfurt (frk_007-011)",
+   "kind": "write",
+   "tokens": 221175,
+   "trees": 5,
+   "note": "Merged 5, de overlay, counts to 11, oldest_tree_id pinned to frk_001. preflight 0 problems."
   }
  ]
 }

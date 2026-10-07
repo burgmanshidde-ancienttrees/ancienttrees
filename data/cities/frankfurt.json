@@ -2,11 +2,11 @@
   "city": "Frankfurt",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Frankfurt bent a subway line rather than lose a lime tree. That is roughly the city's relationship with its old ones: an official Naturdenkmal register, refreshed in October 2025, that protects individual trees street by street. Four of the six here stand within a few hundred metres of each other in the Westend, between the Palmengarten, the Botanical Garden and Gruneburgpark, which makes that the walk. The other two are the lime itself, out in Eschersheim, and a plane from about 1820 in a strip of park in the middle of town.",
+  "intro": "Frankfurt bent a subway line rather than lose a lime tree, and its Naturdenkmal register, refreshed in October 2025, protects old trees one by one. Four of the eleven here stand within a few hundred metres of each other in the Westend, between the Palmengarten, the Botanical Garden and Gruneburgpark, which makes that the walk. The rest are out in the districts: the lime in Eschersheim, a ginkgo from about 1750 in Rödelheim, a peace oak of 1871 in Sossenheim, and some thirty wood-pasture oaks in the Schwanheimer Wald that may be the oldest of all.",
   "meta_description": "Frankfurt's protected Naturdenkmal trees: the lime the U-Bahn curves around, an 1815 copper beech in the Palmengarten, and a plane seven metres round.",
-  "question_answer": "Frankfurt's oldest documented tree is the Eschersheimer Linde on Eschersheimer Landstrasse, a large-leaved lime dated to the end of the 17th century and protected as a Naturdenkmal since 1937. It stands beside the U-Bahn station named after it, Lindenbaum, on a stretch where the line curves slightly rather than run under its roots.",
+  "question_answer": "Frankfurt's oldest documented tree is the Eschersheimer Linde on Eschersheimer Landstrasse, a large-leaved lime dated to the end of the 17th century and protected as a Naturdenkmal since 1937. It stands beside the U-Bahn station named after it, Lindenbaum, on a stretch where the line curves slightly rather than run under its roots. Its only rivals are the Schwanheim oaks, a group the city dates to up to 500 years without dating any single trunk.",
   "question_meta": "The Eschersheimer Linde, a large-leaved lime from the late 1600s, is Frankfurt's oldest protected tree. The U-Bahn station Lindenbaum is named after it.",
-  "question_context": "Frankfurt dates its protected trees through a municipal register rather than through folklore, which makes the answer unusually checkable and unusually modest. The Eschersheimer Linde is the only tree on this list from before the 19th century. Everything else with a date is a park planting: a copper beech set in 1815, a weeping beech in 1845, a plane at the Nebbiensches Gartenhaus around 1820, and a dawn redwood from about 1950, which is as old as any dawn redwood in Europe can be, because the species was known only from fossils until living trees were found in China in 1943. The lime's trunk measures five metres around. Its age is given as the end of the 17th century rather than as a year, which is the honest form for a tree nobody cored. One tree here has no age at all: the eight-stemmed lime in Gruneburgpark, a bundle planting whose date no source we found records. If you know it, tell us.",
+  "question_context": "Frankfurt dates its protected trees through a municipal register rather than through folklore, which makes the answer unusually checkable and unusually modest. The Eschersheimer Linde, from the end of the 17th century, is the oldest single tree here with a dated record; nobody cored it, so its age is a period rather than a year. The Schwanheim oaks may be older: the city's own page gives the group up to 500 years, the register as mirrored on Wikipedia 600 to 1,000, and no single trunk has been dated, so they stay a rival rather than the answer. The Goethe Ginkgo in Rödelheim was planted around 1750, half a century or more after the lime. Everything else with a date is younger: a copper beech set in 1815, a plane at the Nebbiensches Gartenhaus around 1820, a weeping beech in 1845, the Sossenheim peace oak of 1871, and a dawn redwood from about 1950, as old as any in Europe can be, because the species was known only from fossils until living trees were found in China in 1943. One tree here has no age at all: the eight-stemmed lime in Gruneburgpark. If you know it, tell us.",
   "faq": [
     {
       "q": "What is the oldest tree in Frankfurt?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Can I see several of Frankfurt's old trees in one walk?",
-      "a": "Yes. Four of the six are in the Westend within a few hundred metres of each other: two beeches in the Palmengarten, the dawn redwood in the Botanical Garden next door, and the eight-stemmed lime in Gruneburgpark. Bockenheimer Warte is the station for all four."
+      "a": "Yes. Four of the eleven are in the Westend within a few hundred metres of each other: two beeches in the Palmengarten, the dawn redwood in the Botanical Garden next door, and the eight-stemmed lime in Gruneburgpark. Bockenheimer Warte is the station for all four."
     },
     {
       "q": "Are Frankfurt's old trees free to visit?",
-      "a": "Four of the six are: the Eschersheimer Linde stands on a public street, Gruneburgpark and the Bockenheimer Anlage are open parks, and the Botanical Garden charges nothing. The two beeches are inside the Palmengarten, which sells an admission ticket."
+      "a": "Eight of the eleven cost nothing and have no gate: the trees on public streets and squares, in Gruneburgpark, the Bockenheimer Anlage, the Botanical Garden and the Schwanheimer Wald. The two beeches are inside the Palmengarten, which sells an admission ticket. The Goethe Ginkgo is free, but the Petrihaus grounds in Rödelheim open only for events and on the last Sunday afternoon of each month from spring to autumn."
     },
     {
       "q": "Why does the U-Bahn curve at Lindenbaum?",
@@ -248,6 +248,183 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by its trunk, 7.13 metres round, standing directly behind the neoclassical Nebbiensches Gartenhaus. It stands in the Bockenheimer Anlage."
+    },
+    {
+      "id": "frk_007",
+      "name": "The Goethe Ginkgo of Roedelheim",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 270 years",
+      "age_min": 260,
+      "age_max": 280,
+      "location": {
+        "address": "Petrihaus, Alt-Roedelheim, 60489 Frankfurt am Main",
+        "latitude": 50.123927,
+        "longitude": 8.613951,
+        "neighbourhood": "Roedelheim"
+      },
+      "location_site": {
+        "name": "Grounds of the Petrihaus, Alt-Roedelheim",
+        "radius_m": 30
+      },
+      "story": "In September 1815 Goethe wrote a poem about a single ginkgo leaf, split down the middle and still one leaf, and sent it to Marianne von Willemer with two real ginkgo leaves fixed to the page. Rödelheim would like those leaves to have come from this tree. It has a case, and it does not have proof.\n\nThe ginkgo went in around 1750 beside the Petrihaus, in what was then the little County of Solms-Rödelheim. The house later belonged to the banker Georg Brentano, and in September 1814 Goethe was a guest of the Brentano family in Rödelheim. A year later came 'Gingo biloba'. The board at the tree suggests the connection. Wikipedia calls it possible and says the leaves cannot be traced to this tree with certainty, which is where the evidence stops, and so does this page.\n\nThe tree needs no poem. The city register gives it about 260 years and 18 metres; the Wikipedia article says over 270 and calls it the oldest ginkgo in Germany, which is that article's claim rather than ours. It stands a few metres south of the Petrihaus, with the Nidda weir just beyond and Brentanopark on the far bank.\n\nThe catch is the gate. The grounds open only for events of the Förderverein Petrihaus and on the last Sunday afternoon of each month from spring to autumn, so check before you go. The newest dated photograph we found is from 2017; if you have stood under it since, tell us.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the fan-shaped leaves turn gold"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Ginkgo_in_R%C3%B6delheim",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main",
+        "https://commons.wikimedia.org/wiki/File:FFM-Roedelheim_Ginkgo_biloba_02.jpg"
+      ],
+      "access": "Stands in the grounds of the Petrihaus, which are open to the public only at events of the Foerderverein Petrihaus and on the afternoon of the last Sunday of each month from spring to autumn (per de.wikipedia). Outside those times the tree is not reachable; check the Foerderverein before going.",
+      "transport": "S-Bahn S3, S4, S5 to Frankfurt-Roedelheim, about 500 m (7 min walk); bus 34 or 72 to Alt-Roedelheim, a few metres away.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it as the one ginkgo in the Petrihaus grounds, about 18 metres tall, with fan-shaped leaves split down the middle. It stands a few metres south of the house, between it and the Nidda weir."
+    },
+    {
+      "id": "frk_008",
+      "name": "The Paradieseiche of Sachsenhausen",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "140 to 160 years",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": 420,
+      "location": {
+        "address": "Corner of Oberer Schafhofweg and Saechsenhaeuser Landwehrweg, 60599 Frankfurt am Main",
+        "latitude": 50.085418,
+        "longitude": 8.676653,
+        "neighbourhood": "Sachsenhausen-Sued"
+      },
+      "story": "Frankfurt protects this oak for two reasons, and one of them is a beetle. The city's register entry 035 lists the tree's rare, striking form, and then adds that it is habitat for the stag beetle, a protected species that depends on old oaks.\n\nIt was not always the main event. The city's own description says it was once just one oak among many in the Stadtwald, the city forest on Frankfurt's south side, and is now a solitary tree that shapes the landscape around it. Somewhere along the way people started calling it the Paradieseiche, the Paradise Oak. The city records the nickname and does not explain it. If you know where it comes from, tell us.\n\nThe numbers are the city's own. It is 140 to 160 years old, which puts it in the second half of the 19th century, with a trunk about 4.2 metres round, a crown about 20 metres across and a height of 25 metres. For an oak of that age, that is a lot of tree.\n\nIt stands at the corner of Oberer Schafhofweg and Sachsenhäuser Landwehrweg, on the forest edge in Sachsenhausen-Süd, and you see it from the road. There is nothing to pay and no gate, and a protected zone of 20 metres runs around the trunk.",
+      "verified_sources": [
+        "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/stieleiche-in-sachsenhausen",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_in_Sachsenhausen,_Paradieseiche.jpg"
+      ],
+      "access": "Free. Stands at a street corner on the edge of the Stadtwald; visible from the public roads. Protected zone of 20 m around the tree.",
+      "transport": "Not verified; Sachsenhausen-Sued, roughly 2 km south of the Sachsenhausen centre. Check RMV for the nearest stop.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it as the lone big oak at the street corner, about 25 metres tall with a trunk 4.2 metres round, standing apart from the forest. It stands where Oberer Schafhofweg meets Sachsenhäuser Landwehrweg."
+    },
+    {
+      "id": "frk_009",
+      "name": "The Schwanheim Old Oaks",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "up to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 275,
+      "location": {
+        "address": "Alteichen-Pfad, Schwanheimer Wald, 60529 Frankfurt am Main",
+        "latitude": 50.0823,
+        "longitude": 8.5898,
+        "neighbourhood": "Schwanheim"
+      },
+      "story": "Until the 1920s, pigs were driven into this wood to feed under these oaks, and in the Middle Ages sheep, goats, horses and cattle grazed here too. That is the whole explanation for the place: about thirty pedunculate oaks that grew up on open, grazed ground rather than packed into a forest, which is what wood-pasture means.\n\nGermany was once full of it. From the 18th century most of it was replaced with spruce plantations, and what survived became a favourite subject for the painters of the Kronberg colony. One of them, Fritz Wucherer, painted 'Bei den Schwanheimer Eichen' in 1899, showing a conspicuous oak whose trunk forks in two. A large reproduction stands on the path, so you can compare the painting with the trees.\n\nHow old they are depends on which official text you read. The city's own page says up to 500 years; the register as mirrored on German Wikipedia says 600 to 1,000. Several centuries is as far as the sources agree. They are only 12 to 16 metres tall, and the trunks average about 2.75 metres round.\n\nThe thickest carries thumb-thick galleries bored by the great capricorn beetle, and woodpeckers come for the larvae. Not all the news is good. For some years the oaks have been suffering from climate change, their crowns thinning and branches dying, and some of the group is already dead wood.\n\nThe Alteichen-Pfad, part of Frankfurt's GrünGürtel, runs through the group. It is open forest, and free.",
+      "verified_sources": [
+        "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/schwanheimer-alteichen",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main",
+        "https://commons.wikimedia.org/wiki/Category:Schwanheimer_Alteichen"
+      ],
+      "access": "Free. Open forest path (the Alteichen-Pfad, part of the Frankfurt GruenGuertel) through the group, with information stelae.",
+      "transport": "Not verified; Schwanheim in the southwest of Frankfurt, reached on foot from the district through the Schwanheimer Wald. Check RMV for the nearest stop.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise them as the group of about thirty old oaks along the Alteichen-Pfad, with information stelae and a large reproduction of Wucherer's 1899 painting beside the path. They stand in the Schwanheimer Wald."
+    },
+    {
+      "id": "frk_010",
+      "name": "The Peace Oak of Sossenheim",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 140 years",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": 460,
+      "location": {
+        "address": "Wiesenfeldweg, 65936 Frankfurt am Main",
+        "latitude": 50.118534,
+        "longitude": 8.568319,
+        "neighbourhood": "Sossenheim"
+      },
+      "story": "Lightning once split this oak from its crown to its roots, and it is still standing. The crack is part of the city's own description of the tree, entry 022 on Frankfurt's register of natural monuments.\n\nIt was planted in 1871 to mark the peace that ended the Franco-Prussian War, which makes it a Friedenseiche, a peace oak, put in the ground in the same year the German Empire was proclaimed. That gives it something most old trees lack: a known birthday, and an age of about 150 years that nobody had to estimate.\n\nIt also stands on an old line. Sossenheim was a village before it was part of Frankfurt, and until about 1800 it was closed in by a Haingraben, a fence and hedge with a ditch along it. The oak stands where the village edge used to be. Today that edge is the Wiesenfeldweg, between housing and allotment gardens, and the tree has outlasted both the Empire it was planted under and the peace it was planted for.\n\nIt is 4.60 metres round and about 18 metres tall, a broad trunk for a century and a half. The city does not say whether the lightning crack is weakening it, and we will not guess. The newest dated photograph we have found is from 2020; if you have walked past since, tell us how it looks.\n\nIt is free, and seen from the public way at the southern edge of Sossenheim.",
+      "verified_sources": [
+        "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/sossenheimer-friedenseiche",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main",
+        "https://www.openstreetmap.org/node/5365412440",
+        "https://commons.wikimedia.org/wiki/File:Sossenheimer_Friedenseiche.jpg"
+      ],
+      "access": "Free. Stands on the Wiesenfeldweg at the southern edge of Sossenheim, between housing and allotment gardens; seen from the public way. Protected zone of 20 m.",
+      "transport": "Not verified; southern edge of Sossenheim. Check RMV for the nearest stop.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 4.60 metres round, and the lightning crack the city records from crown to roots. It stands on the Wiesenfeldweg at the southern edge of Sossenheim, between the houses and the allotments."
+    },
+    {
+      "id": "frk_011",
+      "name": "The Castle Square Oak of Hoechst",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": 180,
+      "girth_cm": 260,
+      "location": {
+        "address": "Hoechster Schlossplatz, in front of the Zollhaus, 65929 Frankfurt am Main",
+        "latitude": 50.0987,
+        "longitude": 8.54776,
+        "neighbourhood": "Hoechst"
+      },
+      "location_site": {
+        "name": "Hoechster Schlossplatz",
+        "radius_m": 50
+      },
+      "story": "Frankfurt's register entry for this oak says it is still fairly young and has not reached its full size, which is a candid thing to write into the document that protects it. It is over 150 years old, about 13 metres tall and 2.6 metres round. None of that is a record. What it has is the square.\n\nThe Höchster Schlossplatz sits in the tight old town of Höchst, beside the castle on the Main, and the city's own text calls the oak the formative centre of the place. Its crown spreads about 21 metres, wider than the tree is tall, over a square closed in by old buildings. A wooden bench runs in a ring around the trunk, which tells you what the square thinks the tree is for.\n\nIt stands in front of the entrance to the Zollhaus, and it was already here when Höchst was still a town of its own. Frankfurt only absorbed it in 1928, so this oak has been the middle of the square under two different town halls. Today the city protects it as natural monument 024, with a zone of ten metres around the trunk.\n\nSo come for the place rather than the measurements. There is nothing to pay and nothing to find: walk into the square, look for the bench, and sit on it.",
+      "verified_sources": [
+        "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/schlossplatzeiche-in-hoechst",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main",
+        "https://commons.wikimedia.org/wiki/File:Schlossplatzeiche_in_Frankfurt-H%C3%B6chst.jpg"
+      ],
+      "access": "Free. On the public Hoechster Schlossplatz in the old town, in front of the Zollhaus entrance; a wooden bench rings the trunk.",
+      "transport": "Not verified; Hoechst old town, beside the Hoechst Schloss on the Main. Check RMV (Hoechst S-Bahn is in the district).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by the wooden bench built in a ring around its trunk. It stands on the Höchster Schlossplatz, in front of the entrance to the Zollhaus."
     }
-  ]
+  ],
+  "oldest_tree_id": "frk_001"
 }
