@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (night run) - enrichment pass: Hong Kong, Kyoto, Leipzig
+
+- **Rung:** enrichment of indexed pages (recovery mode default), `enrich.py --next` order. 7-day visits: 1,880 visits, 2,200 views. The shelf is under its floor (1,031 leads need only a source), but the enrich lane comes first by Hidde's 2026-10-06 ruling.
+- **Hong Kong:** Kam Tin Tree House got its register id (LCSD YL/6, Old and Valuable Trees). Forbes Street found no authority record. **Kyoto:** 9 of 11 trees got a register record, 3 got girth and height from the city pages, 4 got access lines with price and hours. **Leipzig:** 19 trees carry their Naturdenkmal Leipzig number (the city list holds no girths or heights); the bald cypress got an autumn-colour best_time.
+- Preflight 0 problems, each city committed alone. No commit pushed by me (push credential is the workflow's job). Stopped here for the window's first stretch; next on `enrich.py --next` after these is whatever it prints.
+
 ## 2026-10-07 (session) - the ambassador seat on the app's city page, and the last red iOS test
 
 - **The iOS gate was red on one test only, the signed-out walk's tap on the ambassador seat, and the cause was a product gap rather than a test.** The app has two city screens: the browse page a person lands on from Discover and from a link (CityView: map preview, walks, the trees), and the pushed map page behind "Expand map" (PlaceMapPage: map and sheet). The named-ambassador row and the open seat lived only on the second, so the page somebody actually reads never showed who looks after the city, and the walk, which opens the browse page, could not find the row. The website prints the line on the city page itself.

@@ -10005,6 +10005,30 @@
    "tokens": 175000,
    "trees": 7,
    "note": "7 stories plus recognition lines merged, German overlay for the 7 and count copy updated."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "hong-kong",
+   "kind": "enrich",
+   "tokens": 151557,
+   "trees": 0,
+   "note": "Enrich pass: LCSD YL/6 register id on the Kam Tin Tree House; Forbes Street has no authority record found, no measurements or season."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "kyoto",
+   "kind": "enrich",
+   "tokens": 188306,
+   "trees": 0,
+   "note": "Enrich pass: 9 of 11 trees got a register record (city natural monument, Kamigyo proud trees, national monument), girth/height on 3, access lines on 4."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "leipzig",
+   "kind": "enrich",
+   "tokens": 177497,
+   "trees": 0,
+   "note": "Enrich pass: Naturdenkmal Leipzig ND numbers on 19 trees from the Wikipedia list; no measurements exist in it; bald cypress autumn peak."
   }
  ]
 }
