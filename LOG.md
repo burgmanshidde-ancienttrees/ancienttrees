@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (session) - the ambassador seat on the app's city page, and the last red iOS test
+
+- **The iOS gate was red on one test only, the signed-out walk's tap on the ambassador seat, and the cause was a product gap rather than a test.** The app has two city screens: the browse page a person lands on from Discover and from a link (CityView: map preview, walks, the trees), and the pushed map page behind "Expand map" (PlaceMapPage: map and sheet). The named-ambassador row and the open seat lived only on the second, so the page somebody actually reads never showed who looks after the city, and the walk, which opens the browse page, could not find the row. The website prints the line on the city page itself.
+- **Fixed:** CityView draws the same rows under the map preview (named ambassadors, else "X is looking for an ambassador" with its one tap). The walk now taps the seat on both pages (`testAmbassadorSeatAsks` on the browse page, `testAmbassadorSeatOnTheMapPageAsks` on the map page with the sheet open full), and both must open sign-in. gatecheck, the screen lists, parity and convention checks are clean. Three earlier attempts had tried to RAISE the map page's sheet with the map tab's tap, which on a city page opens at half and lands on a tree card; that was the wrong page all along.
+- **Verdict pending from ios.yml** on this push; the previous run (609) passed every other signed-out test, the flow walks and the refused-permissions walk.
+
 ## 2026-10-07 (session) - the live site, tapped signed out from a runner
 
 - **Hidde:** "on the website i can still click on the ambassador thing without logging in", then "i think its my cache or something", then "yeah it worked incognito".

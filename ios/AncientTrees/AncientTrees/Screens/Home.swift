@@ -798,6 +798,21 @@ struct CityView: View {
                 .accessibilityIdentifier("city-open-map")
                 .padding(.horizontal, 16)
 
+                // WHO LOOKS AFTER THIS CITY, under the map as the website
+                // prints it under the intro (AmbassadorLine.astro): the named
+                // ambassadors, else the open seat with its one tap. It stood
+                // only on the pushed map page until 2026-10-07, so the page a
+                // person actually lands on from Discover and from a link never
+                // showed it, and the signed-out walk could not find it there.
+                let named = catalogue.facets.ambassadors(city: slug)
+                ForEach(named, id: \.self) { a in
+                    AmbassadorRow(name: a.name, place: name, affiliation: a.affiliation)
+                        .padding(.horizontal, 16)
+                }
+                if named.isEmpty && !catalogue.facets.seated(city: slug) {
+                    AmbassadorWantedRow(place: name).padding(.horizontal, 16)
+                }
+
                 // BEHIND THE LAUNCH FLAG, like every other walk surface
                 // (Kit/Launch.swift). This one was not, so the app launched
                 // free with no reference to Plus anywhere except here: a shelf
