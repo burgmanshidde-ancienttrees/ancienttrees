@@ -13,6 +13,15 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-07
+
+Web half: read utrecht (30 trees; title, meta and the ginkgo and linden ages agree with the city file) and the Oude Hortus Ginkgo page, and scanned utrecht, vienna, tokyo, warsaw and munich for em dashes and banned words. Nothing found on the web half.
+
+App half (explore, feedback, map-full, map, own-tree, paywall): discover, map, the feedback sign-in and the paywall read clearly and agree with each other.
+
+- WARN APP: map-full, the floating "Map" pill sits on top of the second card's title ("The Weteringp... ch Elm") and hides part of the name; the pill should sit clear of the list. This control was the odd one out in the 2026-09 sweeps too.
+- NOTE APP: own-tree shows a large flat drawn tree as the hero of a reader's own tree, with no sentence saying no photograph exists; CLAUDE.md allows the silhouette only beside that sentence. Probably the sweep fixture has no photo, but a real tree added without one would read the same.
+
 ## 2026-10-06
 
 Web half: read berlin (63), barcelona (56), tenerife (4) and the Berlin tallest-tree page; titles and counts match the city files, no em dashes or banned words in berlin, barcelona, amsterdam, lisbon or christchurch. Nothing found on the web half.
