@@ -523,7 +523,11 @@ f.addEventListener('load', function () {
     setTimeout(function () {
       var opened = Boolean(dlg && dlg.open);
       var stored = Object.keys(w.localStorage || {}).filter(function (k) { return k !== 'ancienttrees_pending'; }).length - stored0;
-      var row = { page: page, label: label(b), dialog: opened, writes: writes.slice(w0), changed: state(b) !== before, stored: stored };
+      // A pressed state that flips is a finding only on a control that touches
+      // the account: "Free to visit" and the species pick are plain filters
+      // and may toggle for anybody. Writes and stores are findings on any button.
+      var accountish = b.matches('.save-btn, .seen-btn, .worthit-btn, .worthit-chip, .ambassador-apply, .mf[data-f="fav"], .mf[data-f="mine"], [data-tree]');
+      var row = { page: page, label: label(b), dialog: opened, writes: writes.slice(w0), changed: accountish && state(b) !== before, stored: stored };
       if (row.writes.length || (row.changed && !opened) || stored > 0) out.push(row);
       if (dlg && dlg.open) dlg.close();
       Array.prototype.forEach.call(d.querySelectorAll('dialog[open]'), function (x) { try { x.close(); } catch (e) {} });
