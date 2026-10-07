@@ -14,7 +14,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - **Rung:** enrichment of indexed pages (recovery mode default), `enrich.py --next` order. 7-day visits: 1,880 visits, 2,200 views. The shelf is under its floor (1,031 leads need only a source), but the enrich lane comes first by Hidde's 2026-10-06 ruling.
 - **Hong Kong:** Kam Tin Tree House got its register id (LCSD YL/6, Old and Valuable Trees). Forbes Street found no authority record. **Kyoto:** 9 of 11 trees got a register record, 3 got girth and height from the city pages, 4 got access lines with price and hours. **Leipzig:** 19 trees carry their Naturdenkmal Leipzig number (the city list holds no girths or heights); the bald cypress got an autumn-colour best_time.
-- Preflight 0 problems, each city committed alone. No commit pushed by me (push credential is the workflow's job). Stopped here for the window's first stretch; next on `enrich.py --next` after these is whatever it prints.
+- **Granada:** closed nothing. None of its three trees is in the Andalusian register (REDIAM has one Granada entry, 2 km away); the Robinia's 460 cm girth appears only on a tourism site and monumentaltrees.com, so it stays out. Marked done so the queue moves on.
+- Preflight 0 problems, each city committed alone and pushed.
 
 ## 2026-10-07 (session) - the ambassador seat on the app's city page, and the last red iOS test
 
