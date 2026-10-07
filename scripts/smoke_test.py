@@ -461,8 +461,11 @@ f.addEventListener('load', function () {
     var sel = SEL[k++], b = d.querySelector(sel);
     if (!b) { one(); return; }
     var dlg = d.getElementById('signin-dialog');
+    // Close the previous sheet and let its close EVENT run before the next
+    // tap: the event is queued a task after close(), and a tap in the same
+    // task stores its intent only to have that event wipe it (2026-10-07).
     if (dlg && dlg.open) dlg.close();
-    b.click();
+    setTimeout(function () { b.click(); }, 60);
     setTimeout(function () {
       var r = { page: page, control: sel,
                 dialog: Boolean(dlg && dlg.open),

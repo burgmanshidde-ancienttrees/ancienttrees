@@ -382,6 +382,11 @@ export const SIGNIN_JS = `
   // Escape, and the swipe below all call close()), so the act it was going to
   // finish is dropped in one place rather than in four.
   dlg.addEventListener('close', function() {
+    // The close event arrives a task AFTER close(). If the sheet has been
+    // opened again by then for a new act (a second tap in the same instant),
+    // the intent in storage is the new one, and wiping it here would lose it
+    // (2026-10-07, found by the smoke harness tapping two gates back to back).
+    if (dlg.open) return;
     // Unless a link is already in their inbox. That sheet is CLOSED on purpose
     // by somebody going off to read their mail, often on the other device, and
     // the save they asked for should still be waiting when the link brings them
