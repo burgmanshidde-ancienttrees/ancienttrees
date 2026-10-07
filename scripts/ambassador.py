@@ -830,7 +830,7 @@ def dropped(since="2026-10-04"):
     else:
         print(f"{len(seat)} signed-out tap(s) on an open seat, each one dropped before 2026-10-07:")
         by = {}
-        for day, city, path in seat:
+        for day, city, path, _when in seat:
             by.setdefault((day, path), 0)
             by[(day, path)] += 1
         for (day, path), n in sorted(by.items()):
