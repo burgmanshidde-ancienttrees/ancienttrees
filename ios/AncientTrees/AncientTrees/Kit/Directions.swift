@@ -81,6 +81,9 @@ enum Directions {
         }
     }
 
+    // Main actor like the function it forwards to: the newer Xcode on the
+    // floor-runtime runner refuses a nonisolated call into it (2026-10-07).
+    @MainActor
     static func walk(to tree: Tree) { walk(lat: tree.lat, lng: tree.lng, name: tree.name) }
 
     /// Opens the remembered app, or asks first. The asking is presented from
