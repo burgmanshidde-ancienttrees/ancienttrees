@@ -94,6 +94,7 @@ const closeLabel = signInCopy(lang).close;
       <span class="ambassador-avatar ambassador-avatar-open amb-mark" aria-hidden="true"><Fragment set:html={icon("seal-check", "bold", "ic")} /></span>
       <h3 id="amb-title">{U.ambassadorAskTitle(place)}</h3>
       <p>{U.ambassadorAskBody}</p>
+      <p class="amb-who" data-tpl={U.ambassadorWriteTo("{email}")} hidden></p>
       <button type="button" class="go-btn amb-send">{U.ambassadorAskSend}</button>
       <button type="button" class="amb-later">{U.ambassadorNotNow}</button>
     </div>
@@ -101,6 +102,7 @@ const closeLabel = signInCopy(lang).close;
       <span class="ambassador-avatar amb-mark amb-mark-done" aria-hidden="true"><Fragment set:html={icon("seal-check", "fill", "ic")} /></span>
       <h3>{U.ambassadorSentTitle}</h3>
       <p>{U.ambassadorSentBody}</p>
+      <p class="amb-who" data-tpl={U.ambassadorWriteTo("{email}")} hidden></p>
       <button type="button" class="go-btn amb-done">{U.ambassadorDone}</button>
     </div>
   </dialog>
@@ -134,12 +136,32 @@ const closeLabel = signInCopy(lang).close;
     var ask = dlg.querySelector('.amb-ask'), sent = dlg.querySelector('.amb-sent');
     var send = dlg.querySelector('.amb-send');
     function close() { if (dlg.open) dlg.close(); }
-    function open() { ask.hidden = false; sent.hidden = true; send.disabled = false; dlg.showModal(); }
+    // THE ADDRESS WE WILL WRITE TO, printed in the confirm step and in the
+    // receipt (Hidde, 2026-10-07: "so that we know the email address of that
+    // person and we can contact them"). It is the server's answer to who this
+    // session is, so a request can never look anonymous from either side.
+    function who() {
+      var e = C.who();
+      dlg.querySelectorAll('.amb-who').forEach(function(p) {
+        if (e) { p.textContent = p.getAttribute('data-tpl').replace('{email}', e); p.hidden = false; }
+        else p.hidden = true;
+      });
+    }
+    function open() { who(); ask.hidden = false; sent.hidden = true; send.disabled = false; dlg.showModal(); }
     btn.addEventListener('click', function() {
       C.gate(function() { open(); }, function() {
-        if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback');
+        // Signed out: sign in first, and come back to THIS step. The intent
+        // travels with the sign-in (signin-js keeps it for the page they land
+        // on), so the tap is finished rather than swallowed.
+        if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback', { kind: 'ambassador', city: city });
       });
     });
+    // Back from signing in with the request still to make: reopen the confirm
+    // step, never send on their behalf. Nothing is written until Send request.
+    if (window.atPendingAmbassador && (window.atPendingAmbassador === true || window.atPendingAmbassador === city)) {
+      window.atPendingAmbassador = null;
+      C.gate(function() { if (!btn.disabled) open(); }, function() {});
+    }
     dlg.querySelector('.amb-close').addEventListener('click', close);
     dlg.querySelector('.amb-later').addEventListener('click', close);
     dlg.querySelector('.amb-done').addEventListener('click', close);

@@ -79,6 +79,11 @@ window.atCollection = (function() {
     return false;
   }
   var verified = null;
+  // WHO the server says this is, kept from the same answer: the address a
+  // gated act will be answered at. A control that commits somebody to
+  // something (the ambassador request, 2026-10-07) prints it, so "signed in"
+  // is never a guess on either side of the screen.
+  var who = null;
   function verify() {
     if (verified) return verified;
     var s = session();
@@ -87,7 +92,8 @@ window.atCollection = (function() {
       .then(function(r) {
         if (r.status === 401 || r.status === 403) { confirmed = false; forget(); return false; }
         confirmed = r.ok;
-        return r.ok;
+        if (!r.ok) return false;
+        return r.json().then(function(u) { who = (u && u.email) || null; return true; }, function() { return true; });
       })
       .catch(function() { confirmed = true; return true; });   // offline: keep the session, the next write decides
     return verified;
@@ -192,6 +198,7 @@ window.atCollection = (function() {
 
   return {
     session: session,
+    who: function() { return who; },
     forget: forget,
     verify: verify,
     gate: gate,

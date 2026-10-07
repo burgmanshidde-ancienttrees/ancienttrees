@@ -3125,6 +3125,14 @@ Hidde asked whether Discover should become an infinite scroll, with rows like tr
 
 Reference: AllTrails' and Airbnb's phone result lists, and the ordered-list convention for numbered rows. On a touch screen a card has no hover fill and no underlined title (iOS keeps :hover on the last thing touched, which is what painted Barcelona's first card cream). Every line of text hangs from one left edge, so with a number badge the meta, story and credit indent to the title, not to the badge. The photo credit closes the card instead of sitting between the photograph and its name.
 
+## Signing in on the way to a request, then finishing it, with the address shown (2026-10-07)
+
+Hidde, the fourth time: "When I am logged out I apply for ambassador - it should fire a login screen and after that confirm ambassadorship so that we know the email address of that person and we can contact them."
+
+**Reference: Google Maps "Join Local Guides"** (CONVENTIONS.md 2026-10-04, above): the join sheet shows the Google account it will join with, and a signed-out tap goes through sign-in and lands back on the sheet. **Apple's purchase sheet** (from memory): confirms with the Apple ID shown, after Face ID, never before. **Stripe Checkout** (from memory): the email you pay with sits at the top of the confirm step. The pattern is one thing: at the moment somebody commits, the screen names the account that is committing, and a sign-in on the way there returns to that step rather than to the page.
+
+What ours does now, both surfaces: a signed-out tap opens sign-in with the intent kept (web: `ancienttrees_pending` of kind `ambassador` with the city; app: the sheet's dismissal), and signing in reopens the confirm step. The confirm step and the receipt print "We'll write to <address>", the address being the server's answer to who the session is (`atCollection.who()` on the web, `account.email` in the app). Nothing is written until Send request. The smoke test refuses a signed-out ambassador tap that keeps no intent.
+
 ## Telling an ambassador their list changed (2026-10-06)
 
 Hidde: "once an ambassador is defined and that city has a new tree approved an automated message goes to that ambassador just for heads up."

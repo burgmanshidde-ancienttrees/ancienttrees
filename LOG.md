@@ -10,6 +10,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (session) - the ambassador tap finishes after sign-in and names the address
+
+- **Hidde, the fourth time:** "When I am logged out I apply for ambassador - it should fire a login screen and after that confirm ambassadorship so that we know the email address of that person and we can contact them. Right now I can do this without logging in."
+- **What was actually wrong, on both surfaces:** the gate held (the database refuses a row without an account, measured yesterday from a runner, and every request on record carries one of our own accounts), but the flow after the gate was broken in a way that looks identical from his side. Signed out, the tap opened sign-in and then SWALLOWED the request: signing in landed back on the page with nothing to finish. Signed in, the confirm step never said which account was asking, so a session he did not know he had looked like no session at all. Two states, same screen.
+- **Now (CONVENTIONS.md 2026-10-07, the Local Guides join sheet):** the intent travels with the sign-in and the confirm step reopens on return, on the web (`ancienttrees_pending` kind `ambassador`, read back by AmbassadorLine) and in the app (the sign-in sheet's dismissal opens the confirm alert). The confirm step and the receipt print "We'll write to <address>", the server's own answer to who the session is (`atCollection.who()` from `/auth/v1/user`, `account.email` in the app), in all eight languages. Nothing is written until Send request.
+- **Guarded:** `signed_out_controls_ask()` in smoke_test.py now also refuses a signed-out ambassador tap that keeps no intent for after sign-in. The app half is judged by ios.yml.
+- **Not reproduced from here:** a request landing without an account. If it still happens, the one fact that settles it is whether the confirm step shows an address; if it does, that browser or phone holds a session.
 ## 2026-10-07 - Night run 2026-10-07 05:21 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 1 commit(s), none of them a published tree.

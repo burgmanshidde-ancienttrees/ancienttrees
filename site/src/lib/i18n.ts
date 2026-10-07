@@ -189,6 +189,7 @@ export interface UIStrings {
   ambassadorNotNow: string;
   ambassadorSentTitle: string;
   ambassadorSentBody: string;
+  ambassadorWriteTo: (email: string) => string;
   ambassadorDone: string;
   /** The photo viewer, added 2026-09-03. `photoOpen` labels the button the
    *  photograph itself becomes, `photoFull` is the step Wikipedia's Media
@@ -546,6 +547,7 @@ const EN: UIStrings = {
   ambassadorNotNow: "Not now",
   ambassadorSentTitle: "Request sent",
   ambassadorSentBody: "We'll email you soon with a few questions about the list.",
+  ambassadorWriteTo: (email) => `We'll write to ${email}.`,
   ambassadorDone: "Done",
   photoOpen: "Open the photograph",
   photoPrev: "Previous photograph",
@@ -993,6 +995,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorNotNow: "Ahora no",
     ambassadorSentTitle: "Solicitud enviada",
     ambassadorSentBody: "Pronto te escribiremos con algunas preguntas sobre la lista.",
+    ambassadorWriteTo: (email) => `Te escribiremos a ${email}.`,
     ambassadorDone: "Hecho",
     photoOpen: "Abrir la fotografía",
     photoPrev: "Fotografía anterior",
@@ -1252,6 +1255,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorNotNow: "Non ora",
     ambassadorSentTitle: "Richiesta inviata",
     ambassadorSentBody: "Presto ti scriveremo con qualche domanda sulla lista.",
+    ambassadorWriteTo: (email) => `Ti scriveremo a ${email}.`,
     ambassadorDone: "Fatto",
     photoOpen: "Apri la fotografia",
     photoPrev: "Fotografia precedente",
@@ -1511,6 +1515,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorNotNow: "Nu niet",
     ambassadorSentTitle: "Aanvraag verstuurd",
     ambassadorSentBody: "We mailen je binnenkort met een paar vragen over de lijst.",
+    ambassadorWriteTo: (email) => `We mailen je op ${email}.`,
     ambassadorDone: "Klaar",
     photoOpen: "Open de foto",
     photoPrev: "Vorige foto",
@@ -1770,6 +1775,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorNotNow: "Nicht jetzt",
     ambassadorSentTitle: "Anfrage gesendet",
     ambassadorSentBody: "Wir schreiben dir bald mit ein paar Fragen zur Liste.",
+    ambassadorWriteTo: (email) => `Wir schreiben dir an ${email}.`,
     ambassadorDone: "Fertig",
     photoOpen: "Foto öffnen",
     photoPrev: "Vorheriges Foto",
@@ -2029,6 +2035,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorNotNow: "Agora não",
     ambassadorSentTitle: "Pedido enviado",
     ambassadorSentBody: "Em breve enviamos-lhe um email com algumas perguntas sobre a lista.",
+    ambassadorWriteTo: (email) => `Escrevemos-lhe para ${email}.`,
     ambassadorDone: "Concluído",
     photoOpen: "Abrir a fotografia",
     photoPrev: "Fotografia anterior",
@@ -2288,6 +2295,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorNotNow: "Pas maintenant",
     ambassadorSentTitle: "Demande envoyée",
     ambassadorSentBody: "Nous vous écrirons bientôt avec quelques questions sur la liste.",
+    ambassadorWriteTo: (email) => `Nous vous écrirons à ${email}.`,
     ambassadorDone: "Terminé",
     photoOpen: "Ouvrir la photographie",
     photoPrev: "Photographie précédente",
@@ -2546,6 +2554,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorNotNow: "今はしない",
     ambassadorSentTitle: "申請を送信しました",
     ambassadorSentBody: "リストについていくつか質問をメールでお送りします。",
+    ambassadorWriteTo: (email) => `${email} 宛にご連絡します。`,
     ambassadorDone: "完了",
     photoOpen: "写真を開く",
     photoPrev: "前の写真",

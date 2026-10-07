@@ -169,25 +169,35 @@ struct AmbassadorWantedRow: View {
         .task(id: account.isSignedIn) {
             asked = await Submission.askedToBeAmbassador(city: place, token: await account.freshToken())
         }
-        .sheet(isPresented: $signingIn) {
+        // Sign in, THEN the confirm step (Hidde, 2026-10-07: "it should fire a
+        // login screen and after that confirm ambassadorship"). The sheet
+        // dismisses itself once the account is in; the tap is finished here
+        // rather than swallowed, and nothing is sent until Send request.
+        .sheet(isPresented: $signingIn, onDismiss: { if account.isSignedIn { confirming = true } }) {
             SignInSheet(reason: .feedback, localCount: 0)
         }
         .alert("Become the ambassador for \(place)?", isPresented: $confirming) {
             Button("Send request") { send() }
             Button("Not now", role: .cancel) {}
         } message: {
-            Text("You help keep this list right: you add photographs, check the facts and tell us which trees are missing.")
+            // The address we will write to, so the request can never look
+            // anonymous from either side (the website prints the same line).
+            Text("You help keep this list right: you add photographs, check the facts and tell us which trees are missing." + writeTo)
         }
         .alert("Request sent", isPresented: $sentShown) {
             Button("Done", role: .cancel) {}
         } message: {
-            Text("We'll email you soon with a few questions about the list.")
+            Text("We'll email you soon with a few questions about the list." + writeTo)
         }
         .alert("Request not sent", isPresented: $failedShown) {
             Button("OK", role: .cancel) {}
         } message: {
             Text("Something went wrong sending your request. Please try again in a moment.")
         }
+    }
+
+    private var writeTo: String {
+        account.email.map { " We'll write to \($0)." } ?? ""
     }
 
     private func tap() {

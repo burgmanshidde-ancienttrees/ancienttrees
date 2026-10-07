@@ -463,7 +463,8 @@ f.addEventListener('load', function () {
       var r = { page: page, control: sel,
                 dialog: Boolean(dlg && dlg.open),
                 pressed: d.querySelectorAll('[aria-pressed="true"].save-btn, [aria-pressed="true"].seen-btn, .worthit-btn[aria-pressed="true"], .worthit.is-voted').length,
-                stored: (function () { try { return Object.keys(w.localStorage).filter(function (k) { return k !== 'ancienttrees_pending'; }).length; } catch (e) { return 0; } })() };
+                stored: (function () { try { return Object.keys(w.localStorage).filter(function (k) { return k !== 'ancienttrees_pending'; }).length; } catch (e) { return 0; } })(),
+                pending: (function () { try { return w.localStorage.getItem('ancienttrees_pending') || ''; } catch (e) { return ''; } })() };
       out.push(r);
       one();
     }, 1500);
@@ -504,6 +505,12 @@ def signed_out_controls_ask(chrome, base, pages):
             # magic link), cleared when the sheet is dismissed; anything else is
             # a save kept in the browser.
             fails.append("signed out: %s on %s wrote to localStorage" % (r["control"], r["page"]))
+        if r["control"] == ".ambassador-apply" and '"ambassador"' not in (r.get("pending") or ""):
+            # The tap must survive the sign-in (Hidde, 2026-10-07: "it should
+            # fire a login screen and after that confirm ambassadorship"):
+            # without the intent, signing in lands back on the page with the
+            # request unmade and nothing says so.
+            fails.append("signed out: %s on %s kept no ambassador intent for after sign-in" % (r["control"], r["page"]))
     if not rows:
         fails.append("signed out: no gated control found on any page tested")
     return fails

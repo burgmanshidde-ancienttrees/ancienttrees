@@ -109,6 +109,9 @@ export const SIGNIN_JS = `
     // signin-link-sent said who was asked and who typed an address, and nothing
     // said who arrived back signed in.
     try { at.track('signin-done', want.kind || 'direct'); } catch (e) {}
+    // An ambassador request has no tree: the city page's own script reads
+    // this on DOMContentLoaded and reopens the confirm step (AmbassadorLine).
+    if (want.kind === 'ambassador') { window.atPendingAmbassador = want.city || true; return; }
     if (!want.tree) return;
     if (!document.querySelector('[data-tree="' + want.tree + '"]')) return;
     // The account's answer FIRST. Both lists were fetched by their own scripts
@@ -283,6 +286,13 @@ export const SIGNIN_JS = `
       if (want && want.tree) {
         localStorage.setItem('ancienttrees_pending',
           JSON.stringify({ kind: want.kind, tree: want.tree, at: Date.now() }));
+      } else if (want && want.kind === 'ambassador' && want.city) {
+        // The open seat (Hidde, 2026-10-07: "it should fire a login screen
+        // and after that confirm ambassadorship"): the city, so the page
+        // they land back on reopens the confirm step rather than swallowing
+        // the tap.
+        localStorage.setItem('ancienttrees_pending',
+          JSON.stringify({ kind: 'ambassador', city: want.city, at: Date.now() }));
       } else {
         localStorage.removeItem('ancienttrees_pending');
       }
