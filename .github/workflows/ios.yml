@@ -141,6 +141,12 @@ jobs:
       - name: One door to the network
         run: python3 scripts/netcheck.py
 
+      # Also free: every account gate is walked signed out by SignedOutWalk, or
+      # names its reason (2026-10-07, hard rule 11). A new gated screen with
+      # neither stops here rather than shipping untested.
+      - name: Every gate is walked signed out
+        run: python3 scripts/gatecheck.py
+
       - name: Which Xcode
         run: |
           # THE NEWEST ONE ON THE RUNNER, and say which, out loud.

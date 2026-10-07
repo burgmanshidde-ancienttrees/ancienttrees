@@ -445,7 +445,11 @@ SIGNEDOUT_HARNESS = """<!doctype html><meta charset="utf-8"><title>signedout</ti
 try { localStorage.clear(); } catch (e) {}
 var pages = new URLSearchParams(location.search).get('u').split(',');
 var f = document.getElementById('f'), out = [], i = 0;
-var SEL = ['.save-btn', '.seen-btn', '.worthit-btn', '.ambassador-apply', '.mf[data-f="fav"]', '.mf[data-f="mine"]'];
+// Every selector here must be FOUND on at least one tested page, or the test
+// fails (2026-10-07): a control the list names and no page renders is either a
+// control that went missing or a list nobody updated, and both are findings.
+// .seen-btn left the list that day: SeenButton.astro is included by no page.
+var SEL = ['.save-btn', '.worthit-btn', '.ambassador-apply', '.mf[data-f="fav"]', '.mf[data-f="mine"]'];
 function next() {
   if (i >= pages.length) { document.getElementById('r').textContent = 'RESULT ' + JSON.stringify(out); return; }
   f.src = pages[i++];
@@ -475,6 +479,94 @@ next();
 </script>"""
 
 
+EVERY_BUTTON_HARNESS = """<!doctype html><meta charset="utf-8"><title>every button</title>
+<style>html,body{margin:0}iframe{width:420px;height:900px;border:0}</style>
+<iframe id="f"></iframe><pre id="r">pending</pre>
+<script>
+// CLICK EVERYTHING, SIGNED OUT (2026-10-07). The lists above name the controls
+// somebody remembered; this names none. It loads each page with no session,
+// clicks every button on it, and watches the three things no button may do
+// without an account: write to Supabase, flip a pressed state, store something.
+// Found the day it was written: two map chips wired behind a constructor that
+// can throw, and a Seen button no page rendered.
+var pages = new URLSearchParams(location.search).get('u').split(',');
+var f = document.getElementById('f'), out = [], i = 0, idx = 0, loads = 0;
+function visible(el) { var r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; }
+function label(b) { return ((b.getAttribute('aria-label') || b.textContent || b.value || '').trim().replace(/\\s+/g, ' ')).slice(0, 50); }
+function state(b) { return (b.getAttribute('aria-pressed') || '') + '|' + (b.classList.contains('is-on') ? 'on' : ''); }
+function next() {
+  if (i >= pages.length) { document.getElementById('r').textContent = 'RESULT ' + JSON.stringify(out); return; }
+  idx = 0; loads = 0; f.src = pages[i++];
+}
+f.addEventListener('load', function () {
+  loads++;
+  if (loads > 8) { out.push({ page: pages[i - 1], label: '(page reloads itself)', writes: ['reload loop'], changed: false, stored: 0 }); setTimeout(next, 50); return; }
+  var w = f.contentWindow, d = f.contentDocument, page = pages[i - 1];
+  try { w.localStorage.clear(); } catch (e) {}
+  var writes = [];
+  var of = w.fetch;
+  w.fetch = function (u, o) {
+    var m = ((o && o.method) || 'GET').toUpperCase(), s = String(u);
+    if (s.indexOf('supabase') >= 0 && m !== 'GET') writes.push(m + ' ' + s.replace(/^.*\\/(rest|auth|storage)\\/v1\\//, '').split('?')[0]);
+    return of.apply(this, arguments);
+  };
+  var dlg = d.getElementById('signin-dialog');
+  var all = Array.prototype.slice.call(d.querySelectorAll('button, [role=button], input[type=submit]'))
+    .filter(function (b) { return !b.closest('#signin-dialog') && !b.closest('form[role=search]') && !b.closest('.maplibregl-ctrl'); });
+  function one() {
+    if (idx >= all.length) { setTimeout(next, 50); return; }
+    var b = all[idx++];
+    if (!visible(b)) { one(); return; }
+    var before = state(b), w0 = writes.length;
+    var stored0 = Object.keys(w.localStorage || {}).filter(function (k) { return k !== 'ancienttrees_pending'; }).length;
+    try { b.click(); } catch (e) {}
+    setTimeout(function () {
+      var opened = Boolean(dlg && dlg.open);
+      var stored = Object.keys(w.localStorage || {}).filter(function (k) { return k !== 'ancienttrees_pending'; }).length - stored0;
+      var row = { page: page, label: label(b), dialog: opened, writes: writes.slice(w0), changed: state(b) !== before, stored: stored };
+      if (row.writes.length || (row.changed && !opened) || stored > 0) out.push(row);
+      if (dlg && dlg.open) dlg.close();
+      Array.prototype.forEach.call(d.querySelectorAll('dialog[open]'), function (x) { try { x.close(); } catch (e) {} });
+      one();
+    }, 700);
+  }
+  setTimeout(one, 2500);
+});
+next();
+</script>"""
+
+
+def every_button_asks_or_does_nothing(chrome, base, pages):
+    """Signed out, click every button on every page type and fail on any that
+    writes to the account, flips a pressed state without opening sign-in, or
+    stores something (hard rule 11; Hidde, 2026-10-07: "how do we make sure
+    we dont have more gaps and this doesnt happen in the future"). The listed
+    controls above are what somebody remembered; this is what the page
+    actually has. Removing this check needs Hidde."""
+    url = "%s/__everybutton.html?u=%s" % (base, ",".join(pages))
+    out = subprocess.run(
+        [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+         "--window-size=420,900", "--virtual-time-budget=%d" % (60000 * len(pages)),
+         "--dump-dom", url],
+        capture_output=True, text=True, timeout=900).stdout
+    m = re.search(r"RESULT (\[.*?\])</pre>", out, re.S)
+    if not m:
+        return ["every button: the harness produced no result (Chrome or the pages did not run)"]
+    try:
+        rows = json.loads(m.group(1).replace("&quot;", '"').replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">"))
+    except Exception:
+        return ["every button: the harness result was unreadable"]
+    fails = []
+    for r in rows:
+        if r.get("writes"):
+            fails.append("every button: %r on %s wrote to the account signed out (%s)" % (r["label"], r["page"], ", ".join(r["writes"])))
+        elif r.get("stored"):
+            fails.append("every button: %r on %s stored something in the browser signed out" % (r["label"], r["page"]))
+        elif r.get("changed"):
+            fails.append("every button: %r on %s changed its pressed state signed out without opening sign-in" % (r["label"], r["page"]))
+    return fails
+
+
 def signed_out_controls_ask(chrome, base, pages):
     """Signed out, every control that acts on an account opens the sign-in
     dialog and changes nothing (Hidde, 2026-10-05, the sixth time: "every form
@@ -495,6 +587,13 @@ def signed_out_controls_ask(chrome, base, pages):
     except Exception:
         return ["signed out: the harness result was unreadable"]
     fails = []
+    # A listed control no tested page renders is a finding, not a skip
+    # (2026-10-07: the Seen button sat on the list for weeks while no page
+    # rendered it, and the explore chips sat on no list at all).
+    listed = re.search(r"var SEL = \[(.*?)\];", SIGNEDOUT_HARNESS).group(1)
+    for sel in re.findall(r"'([^']+)'", listed):
+        if not any(r.get("control") == sel for r in rows):
+            fails.append("signed out: the list names %s and no tested page renders it; restore the control or take it off the list" % sel)
     for r in rows:
         if not r.get("dialog"):
             fails.append("signed out: %s on %s did not open the sign-in dialog" % (r["control"], r["page"]))
@@ -906,6 +1005,7 @@ setTimeout(function(){
     stale_page.write_text(STALE_HARNESS, encoding="utf-8")
     out_page = DIST / "__signedout.html"
     out_page.write_text(SIGNEDOUT_HARNESS, encoding="utf-8")
+    (DIST / "__everybutton.html").write_text(EVERY_BUTTON_HARNESS, encoding="utf-8")
 
     failures = []
     base_fails, base_warns = check_basemap(DIST)
@@ -931,6 +1031,24 @@ setTimeout(function(){
         if hit:
             gated.append("/" + str(hit[0].relative_to(DIST)))
     asked = signed_out_controls_ask(chrome, base, gated)
+    # And every button on every page type, not only the listed ones.
+    sweep = list(gated)
+    for extra in ("/index.html", "/contribute.html", "/in-season.html", "/cities.html",
+                  "/countries.html", "/account/settings.html", "/auth.html", "/about.html"):
+        if (DIST / extra.lstrip("/")).exists():
+            sweep.append(extra)
+    countries_dir = DIST / "countries"
+    if countries_dir.exists():
+        for c in sorted(countries_dir.glob("*.html"))[:1]:
+            if (DIST / c.name).exists():
+                sweep.append("/" + c.name)
+    es_tree = next((h for h in sorted(DIST.glob("es/*/*.html")) if "arbol-mas" not in h.name and h.name != "index.html"), None)
+    if es_tree:
+        sweep.append("/" + str(es_tree.relative_to(DIST)))
+    every = every_button_asks_or_does_nothing(chrome, base, sweep)
+    for line in every:
+        print("SMOKE FAIL: %s" % line)
+    failures += every
     for line in asked:
         print("SMOKE FAIL: %s" % line)
     failures += asked

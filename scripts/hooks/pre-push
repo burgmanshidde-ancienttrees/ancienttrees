@@ -295,6 +295,7 @@ for check in \
     "scripts/icon_check.py" \
     "scripts/conventioncheck.py" \
     "scripts/crossdevice.py" \
+    "scripts/gatecheck.py" \
     "scripts/darkcheck.py" \
     "scripts/standingpoint.py" \
     "scripts/map_style_dark.py --check" \

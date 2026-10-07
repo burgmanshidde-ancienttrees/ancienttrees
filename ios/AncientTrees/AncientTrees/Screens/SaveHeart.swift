@@ -43,6 +43,7 @@ struct SaveHeart: View {
     var body: some View {
         Button(action: tap) { glyph }
             .buttonStyle(.plain)
+            .accessibilityIdentifier("save-heart")
             .accessibilityLabel(isSaved ? "Saved \(tree.name). Tap to remove"
                                         : "Save \(tree.name)")
             .sensoryFeedback(.selection, trigger: isSaved)

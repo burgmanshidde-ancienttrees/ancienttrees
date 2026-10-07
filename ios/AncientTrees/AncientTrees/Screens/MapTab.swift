@@ -697,6 +697,7 @@ struct MapTab: View {
             } label: {
                 Label(saved.isVisited(t.id) ? "Seen" : "I have seen this one",
                       systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "checkmark.seal")
+                    .accessibilityIdentifier("seen-tick")
                     .font(.subheadline.weight(.semibold))
                     .frame(maxWidth: .infinity).padding(.vertical, 13)
             }
@@ -934,6 +935,7 @@ struct MapTab: View {
                     filters = MapFilters()
                     filters.favouritesOnly = want
                 }
+                .accessibilityIdentifier("filter-favourites")
                 // "My trees" here too, so the map and the page agree about
                 // what the word means (Hidde, 2026-08-26). One root, one word.
                 FilterChip(label: "My trees", icon: "checkmark.seal",
@@ -951,6 +953,7 @@ struct MapTab: View {
                     filters.collectedOnly = want
                     if want { shownWalk = nil }
                 }
+                .accessibilityIdentifier("filter-mine")
 
                 // A chip, so it behaves like the chips beside it: off, tap to
                 // choose; on, tap to clear; tap again to choose afresh (Hidde,

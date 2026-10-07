@@ -17,6 +17,13 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Venice:** nothing found. No per-tree register records or measurements, cypress file has no striking moment; marked done. live.comune.venezia.it returned 404 on the Forte Marghera path.
 - Left standing: fuk_017 is verified in data/research and still needs a writer; READY leads are only 2.
 
+## 2026-10-07 (session) - the sign-in sweep becomes the standing check, on both surfaces
+
+- **Hidde:** "my god what a mess - how do we make sure we dont have more gaps and this doesnt happen in the future", then "did you also check the app?" and "please double check web again".
+- **Web:** the click-everything harness that found this morning's two gaps is now `every_button_asks_or_does_nothing()` in smoke_test.py, run on every deploy over every page type (city, tree, species, park, collection, Spanish city and tree, explore, home, contribute, in-season, cities, countries, a country, settings, auth, about): no button may write to the account, flip a pressed state without sign-in, or store anything, signed out. The listed controls must each be found on a tested page, so an orphan like the Seen button is a failure, not a silent skip; `.seen-btn` came off the list because no page renders it (the website has no Seen tick today; the app does).
+- **Explore chips, re-probed on the rebuilt site:** signed out, Favourites and My trees now open sign-in and keep the filter to switch on afterwards, even where MapLibre cannot start.
+- **App:** `SignedOutWalk.swift` launches with no session and taps the heart, the worth-it vote, the Seen tick, both map chips, the camera tab and the ambassador seat, and opens the contribute form, asserting the sign-in sheet each time (identifiers added: save-heart, seen-tick, filter-favourites, filter-mine). `scripts/gatecheck.py` refuses a Swift file that gates on the account without an identifier the walk taps or a written reason; eleven files carry a reason. In the pre-push hook and ios.yml. The app's code audit this morning found every account control gated; this is the test that keeps it so.
+- **Judged by:** the local smoke on the rebuilt site (running), CI's smoke and deploy on this push, ios.yml for the walk.
 ## 2026-10-07 (continuation) Istanbul enrich
 
 An earlier attempt's Istanbul enrich claim finished: official record AVR-20AA0027 plus girth 1030 cm and height 26 m on the Taşlı Çınar (ist_004). The other three Istanbul trees have no per-tree official record found; their gaps stay. READY leads were only 2 (Dresden Luthereichen), not dispatched. Note: anitagac.istanbul fails TLS verification from the runner.
