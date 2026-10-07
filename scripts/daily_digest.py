@@ -1517,6 +1517,50 @@ def searched_for(rows, days=14):
     return out
 
 
+def ambassador_lines(today):
+    """Who looks after a place, and who is new (Hidde, 2026-10-07: "can you add
+    to the daily digest to tell me if there are new ambassadors?"). Read from
+    data/ambassadors.json, which the knock rewrites: granted in the last 14
+    days (by `since`), an account that linked itself to a mail ambassador,
+    invitations the knock sent and open-seat requests it answered. A name is
+    printed only where the person said yes to being named (`public`), because
+    DATA.md is in a public repository; otherwise the place alone."""
+    path = os.path.join(ROOT, "data", "ambassadors.json")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+    except Exception:
+        return []
+    since14 = (today - datetime.timedelta(days=14)).isoformat()
+    yday = (today - datetime.timedelta(days=1)).isoformat()
+    amb = doc.get("ambassadors") or []
+
+    def who(e):
+        return ("%s (%s)" % (e["display_name"], e["place_name"]) if e.get("public") and e.get("display_name")
+                else e.get("place_name") or e.get("place_slug"))
+    new = [e for e in amb if (e.get("since") or "") >= since14]
+    new_y = [e for e in new if (e.get("since") or "") >= yday]
+    linked = [e for e in amb if e.get("linked_user_id") and (e.get("linked_on") or "") >= since14]
+    invited = [i for i in (doc.get("invited") or []) if (i.get("date") or "") >= since14 and i.get("place_slug") != "*"]
+    asked = [r for r in (doc.get("requested") or []) if (r.get("date") or "") >= since14]
+    out = ["", "| Ambassadors | Yesterday | 14 days | Total |", "|---|---:|---:|---:|",
+           "| Granted | %d | %d | %d |" % (len(new_y), len(new), len(amb)),
+           "| Invitations sent (app contributors) | %d | %d | %d |" % (
+               sum(1 for i in invited if (i.get("date") or "") >= yday), len(invited),
+               sum(1 for i in (doc.get("invited") or []) if i.get("place_slug") != "*")),
+           "| Open-seat requests answered | %d | %d | %d |" % (
+               sum(1 for r in asked if (r.get("date") or "") >= yday), len(asked),
+               sum(1 for r in (doc.get("requested") or []) if r.get("date")))]
+    if new:
+        out.append("- New in 14 days: " + ", ".join("%s since %s" % (who(e), e.get("since")) for e in new) + ".")
+    else:
+        out.append("- No new ambassador in 14 days; %d in all (%s)." % (
+            len(amb), ", ".join(e.get("place_name") or "?" for e in amb)))
+    if linked:
+        out.append("- Signed in with their mail address, badge now in the app: " + ", ".join(who(e) for e in linked) + ".")
+    return out
+
+
 def product_section(today):
     """Block 1, and the only block that answers goal 1.
 
@@ -1693,6 +1737,7 @@ def product_section(today):
                            % ", ".join("%d %s" % (v, k) for k, v in ours_n.items() if v))
         else:
             out.append("- Nothing signed up, saved a tree or was submitted in 14 days.")
+        out.extend(ambassador_lines(today))
         # A submission with NO account is not a person we can answer, it is
         # proof that the database still accepts anonymous posts (Hidde,
         # 2026-10-06, the third time: "I can still request ambassadorship

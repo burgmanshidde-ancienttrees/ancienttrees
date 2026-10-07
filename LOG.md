@@ -10,6 +10,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (session) - the website clicked signed out, every button on every page type
+
+- **Hidde:** "please just test the website if there are more signin loops that need to be closed". Not reasoned, measured: a harness loaded 18 page types in headless Chromium with no session, clicked every button on each, and recorded for each one whether the sign-in dialog opened, whether anything was written to Supabase, whether any state changed and whether anything was stored.
+- **Result: no button on any page writes to the account or stores anything signed out.** Every heart, every worth-it vote and reason chip, the ambassador seat and the contribute form open sign-in. The only "state change without a dialog" is the "Something's wrong" button, which expands the list of reasons: looking, not acting, by design. The ambassador tap keeps its intent on the Spanish page as on the English one (the local smoke run said otherwise once; a direct replay of its own sequence could not reproduce it, and CI's run on the same head decides).
+- **Two things the sweep found that were not loops but were gaps.** (1) The explore map's Favourites and My trees chips were wired AFTER the map constructor in the same script, so a browser where MapLibre cannot start (no WebGL, which is this sandbox) got two dead chips, exactly the "it does not force login" shape; the filter model and the chips now come before the map, and the chips ask for sign-in whether or not a map ever draws. (2) CI's signed-out smoke never visited the explore page, so nothing measured those chips; it does now, with both chips on its list.
+- **And one orphan:** `SeenButton.astro` is included by no page, so the website has no Seen tick today; every seen-tick gate the smoke lists on the web finds nothing to tap. Not a sign-in loop, a parity question for a session with eyes.
+- **Digest (Hidde, same morning: "can you add to the daily digest to tell me if there are new ambassadors?"):** `ambassador_lines()` prints an Ambassadors table under the people table, granted yesterday / 14 days / total, invitations sent and open-seat requests answered, with the new ones named where they said yes to being named.
+- **Not provable from this sandbox:** the stale-session smoke check needs Supabase to answer, which the sandbox proxy blocks, so its two local failures are the network and not the site; CI runs it with the network.
+
 ## 2026-10-07 (session) - hard rule 11: nothing a person does is saved on the device
 
 - **Hidde:** "can we once and for all write somewhere as a hard rule that we never save stuff locally, we need to stop making these mistakes." Said for the eighth time since 2026-08-25.

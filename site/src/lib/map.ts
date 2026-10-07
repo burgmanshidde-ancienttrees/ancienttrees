@@ -237,6 +237,116 @@ export function exploreMapScript(features: ExploreTreeFeature[], cities: Explore
 var DATA = ${geojson};
 var CITIES = ${citiesJson};
 var SPECIES = ${speciesJson};
+// THE FILTER MODEL AND THE ACCOUNT CHIPS COME BEFORE THE MAP (2026-10-07):
+// MapLibre throws where WebGL is unavailable, and everything below the
+// constructor then never runs. A chip that cannot ask for sign-in because
+// the map failed is the dead control Hidde keeps finding; it asks first.
+// ---- THE FILTER ROW (2026-09-12).
+//
+// Convention, looked up rather than invented (CONVENTIONS.md): Google Maps
+// puts a scrolling row of capsule chips over the top of the map and nothing
+// else; AllTrails and Airbnb put a Filters BUTTON that opens a sheet, which is
+// the right shape for eight filters and the wrong one for four. Our own app
+// draws the chip row, so the website draws the same row: same capsules, same
+// words, same order.
+//
+// WHICH CHIPS, and this is the half that needed checking rather than copying.
+// MapFilters.swift still DEFINES five (peaking, photo, walkable, species,
+// mine) and the app's row carried four of them for a while. It does not now:
+// what ships on the phone today is the walk chip, Favourites, My trees and
+// Species, because Hidde cut the rest, and his reasons are in MapTab.swift.
+// "At their best" is a pulse on the pins rather than a filter, "with a photo"
+// was doing the editorial order's job, and "within 2 km" was doing the
+// distance-ordered list's job. So the website takes the row the app actually
+// has, minus the walk chip, which is Plus.
+//
+// Plus one the app has not got: FREE TO VISIT (Hidde, 2026-09-12: "ik zou nog
+// wel een filter willen bouwen voor betaalde bomen waar je een ticket voor
+// moet kopen - dat je die weg kunt halen"). It is the oldest complaint about
+// this site wearing a control: a city page that turns out to be a garden page
+// (2026-08-23, "ik heb liever 34 goede bereikbare dan 39"). 241 of our trees
+// stand behind a ticket, and somebody who wants an afternoon out for nothing
+// should be able to say so. It belongs in the app's row too; that half needs
+// a Mac and is written down.
+//
+// FILTERING RE-SOURCES, it does not hide a layer. A "filter" on the circle
+// layer would leave the CLUSTER counts including everything it hides, so a
+// cluster would say 40 and open to three. setData re-clusters, which is the
+// only honest way to filter a clustered map.
+var FILTERS = { free: false, fav: false, mine: false, sp: -1 };
+function filtersOn() {
+  return FILTERS.free || FILTERS.fav || FILTERS.mine || FILTERS.sp >= 0;
+}
+function keepsTree(f) {
+  var p = f.properties;
+  if (FILTERS.free && p.paid === 1) return false;
+  if (FILTERS.sp >= 0 && p.sp !== FILTERS.sp) return false;
+  if (FILTERS.fav && !(window.atHasSaved && window.atHasSaved(p.id))) return false;
+  if (FILTERS.mine && !(window.atHasVisited && window.atHasVisited(p.id))) return false;
+  return true;
+}
+function applyFilters() {
+  var src = (typeof map !== 'undefined' && map && map.getSource) ? map.getSource('trees') : null;
+  if (!src) return;
+  var kept = filtersOn() ? DATA.features.filter(keepsTree) : DATA.features;
+  src.setData({ type: 'FeatureCollection', features: kept });
+  var note = document.getElementById('mf-count');
+  if (note) {
+    // A number only while a filter is on. The map's own copy carries no counts
+    // on purpose (2026-07-29), and this is not copy: it is the answer to what
+    // you just pressed, and zero has to be sayable.
+    note.hidden = !filtersOn();
+    note.textContent = kept.length === 0 ? 'No trees match'
+      : (kept.length === 1 ? '1 tree' : kept.length + ' trees');
+  }
+}
+// Both lists live in the account, so both chips need one. Signed out they ask
+// rather than emptying the map, which is the rule Hidde set for the app's own
+// two: "als je uitgelogd op favourites of my trees filter klikt moet er ook
+// een inlog scherm opkomen."
+// AND THE SERVER DECIDES whether there is an account, through the one door
+// every gated tap uses (atCollection.gate, 2026-10-05). This chip used to ask
+// the browser (a stored session believed on its own say-so), so a token the
+// server had already refused let the filter switch on and empty the map, with
+// no sign-in in sight (Hidde, 2026-10-07: "if I press favourites or mytrees
+// as a filter it should force people to login").
+function toggleFilter(b, f) {
+  FILTERS[f] = !FILTERS[f];
+  b.classList.toggle('is-on', FILTERS[f]);
+  b.setAttribute('aria-pressed', FILTERS[f] ? 'true' : 'false');
+  applyFilters();
+}
+document.querySelectorAll('.mf[data-f]').forEach(function(b) {
+  b.addEventListener('click', function() {
+    var f = b.dataset.f;
+    if ((f === 'fav' || f === 'mine') && !FILTERS[f]) {
+      var C = window.atCollection;
+      var ask = function() {
+        // Signed out: sign in and come back with THIS chip on, rather than
+        // landing on an unfiltered map having been asked for nothing.
+        if (window.atOpenSignIn) window.atOpenSignIn(b.dataset.label || b.textContent.trim(), null, { kind: 'filter', filter: f });
+      };
+      if (C && C.gate) C.gate(function() { toggleFilter(b, f); }, ask);
+      else ask();
+      return;
+    }
+    toggleFilter(b, f);
+  });
+});
+// Back from signing in with a chip to switch on (signin-js hands it over).
+if (window.atPendingFilter) {
+  var pf = window.atPendingFilter; window.atPendingFilter = null;
+  var pb = document.querySelector('.mf[data-f="' + pf + '"]');
+  var PC = window.atCollection;
+  if (pb && !FILTERS[pf] && PC && PC.gate) {
+    // After the saved and seen lists have arrived, or the filter keeps nothing.
+    var jobs = [];
+    if (window.atSyncSaves) jobs.push(Promise.resolve(window.atSyncSaves()));
+    if (window.atSyncVisited) jobs.push(Promise.resolve(window.atSyncVisited()));
+    PC.gate(function() { Promise.all(jobs).then(function() { toggleFilter(pb, pf); }).catch(function() {}); }, function() {});
+  }
+}
+
 // One world only (Hidde, 2026-07-29: "ik hoef niet 2 werelden te zien").
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
@@ -367,111 +477,6 @@ function initTreeLayers() {
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
 
-// ---- THE FILTER ROW (2026-09-12).
-//
-// Convention, looked up rather than invented (CONVENTIONS.md): Google Maps
-// puts a scrolling row of capsule chips over the top of the map and nothing
-// else; AllTrails and Airbnb put a Filters BUTTON that opens a sheet, which is
-// the right shape for eight filters and the wrong one for four. Our own app
-// draws the chip row, so the website draws the same row: same capsules, same
-// words, same order.
-//
-// WHICH CHIPS, and this is the half that needed checking rather than copying.
-// MapFilters.swift still DEFINES five (peaking, photo, walkable, species,
-// mine) and the app's row carried four of them for a while. It does not now:
-// what ships on the phone today is the walk chip, Favourites, My trees and
-// Species, because Hidde cut the rest, and his reasons are in MapTab.swift.
-// "At their best" is a pulse on the pins rather than a filter, "with a photo"
-// was doing the editorial order's job, and "within 2 km" was doing the
-// distance-ordered list's job. So the website takes the row the app actually
-// has, minus the walk chip, which is Plus.
-//
-// Plus one the app has not got: FREE TO VISIT (Hidde, 2026-09-12: "ik zou nog
-// wel een filter willen bouwen voor betaalde bomen waar je een ticket voor
-// moet kopen - dat je die weg kunt halen"). It is the oldest complaint about
-// this site wearing a control: a city page that turns out to be a garden page
-// (2026-08-23, "ik heb liever 34 goede bereikbare dan 39"). 241 of our trees
-// stand behind a ticket, and somebody who wants an afternoon out for nothing
-// should be able to say so. It belongs in the app's row too; that half needs
-// a Mac and is written down.
-//
-// FILTERING RE-SOURCES, it does not hide a layer. A "filter" on the circle
-// layer would leave the CLUSTER counts including everything it hides, so a
-// cluster would say 40 and open to three. setData re-clusters, which is the
-// only honest way to filter a clustered map.
-var FILTERS = { free: false, fav: false, mine: false, sp: -1 };
-function filtersOn() {
-  return FILTERS.free || FILTERS.fav || FILTERS.mine || FILTERS.sp >= 0;
-}
-function keepsTree(f) {
-  var p = f.properties;
-  if (FILTERS.free && p.paid === 1) return false;
-  if (FILTERS.sp >= 0 && p.sp !== FILTERS.sp) return false;
-  if (FILTERS.fav && !(window.atHasSaved && window.atHasSaved(p.id))) return false;
-  if (FILTERS.mine && !(window.atHasVisited && window.atHasVisited(p.id))) return false;
-  return true;
-}
-function applyFilters() {
-  var src = map.getSource('trees');
-  if (!src) return;
-  var kept = filtersOn() ? DATA.features.filter(keepsTree) : DATA.features;
-  src.setData({ type: 'FeatureCollection', features: kept });
-  var note = document.getElementById('mf-count');
-  if (note) {
-    // A number only while a filter is on. The map's own copy carries no counts
-    // on purpose (2026-07-29), and this is not copy: it is the answer to what
-    // you just pressed, and zero has to be sayable.
-    note.hidden = !filtersOn();
-    note.textContent = kept.length === 0 ? 'No trees match'
-      : (kept.length === 1 ? '1 tree' : kept.length + ' trees');
-  }
-}
-// Both lists live in the account, so both chips need one. Signed out they ask
-// rather than emptying the map, which is the rule Hidde set for the app's own
-// two: "als je uitgelogd op favourites of my trees filter klikt moet er ook
-// een inlog scherm opkomen."
-// AND THE SERVER DECIDES whether there is an account, through the one door
-// every gated tap uses (atCollection.gate, 2026-10-05). This chip used to ask
-// the browser (a stored session believed on its own say-so), so a token the
-// server had already refused let the filter switch on and empty the map, with
-// no sign-in in sight (Hidde, 2026-10-07: "if I press favourites or mytrees
-// as a filter it should force people to login").
-function toggleFilter(b, f) {
-  FILTERS[f] = !FILTERS[f];
-  b.classList.toggle('is-on', FILTERS[f]);
-  b.setAttribute('aria-pressed', FILTERS[f] ? 'true' : 'false');
-  applyFilters();
-}
-document.querySelectorAll('.mf[data-f]').forEach(function(b) {
-  b.addEventListener('click', function() {
-    var f = b.dataset.f;
-    if ((f === 'fav' || f === 'mine') && !FILTERS[f]) {
-      var C = window.atCollection;
-      var ask = function() {
-        // Signed out: sign in and come back with THIS chip on, rather than
-        // landing on an unfiltered map having been asked for nothing.
-        if (window.atOpenSignIn) window.atOpenSignIn(b.dataset.label || b.textContent.trim(), null, { kind: 'filter', filter: f });
-      };
-      if (C && C.gate) C.gate(function() { toggleFilter(b, f); }, ask);
-      else ask();
-      return;
-    }
-    toggleFilter(b, f);
-  });
-});
-// Back from signing in with a chip to switch on (signin-js hands it over).
-if (window.atPendingFilter) {
-  var pf = window.atPendingFilter; window.atPendingFilter = null;
-  var pb = document.querySelector('.mf[data-f="' + pf + '"]');
-  var PC = window.atCollection;
-  if (pb && !FILTERS[pf] && PC && PC.gate) {
-    // After the saved and seen lists have arrived, or the filter keeps nothing.
-    var jobs = [];
-    if (window.atSyncSaves) jobs.push(Promise.resolve(window.atSyncSaves()));
-    if (window.atSyncVisited) jobs.push(Promise.resolve(window.atSyncVisited()));
-    PC.gate(function() { Promise.all(jobs).then(function() { toggleFilter(pb, pf); }).catch(function() {}); }, function() {});
-  }
-}
 // The species chip wears the chosen species, the way the app's does
 // (FilterChipLabel(label: filters.species ?? "Species")). The select is the
 // invisible tap layer over it, so the filled state and the word both belong to

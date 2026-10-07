@@ -445,7 +445,7 @@ SIGNEDOUT_HARNESS = """<!doctype html><meta charset="utf-8"><title>signedout</ti
 try { localStorage.clear(); } catch (e) {}
 var pages = new URLSearchParams(location.search).get('u').split(',');
 var f = document.getElementById('f'), out = [], i = 0;
-var SEL = ['.save-btn', '.seen-btn', '.worthit-btn', '.ambassador-apply'];
+var SEL = ['.save-btn', '.seen-btn', '.worthit-btn', '.ambassador-apply', '.mf[data-f="fav"]', '.mf[data-f="mine"]'];
 function next() {
   if (i >= pages.length) { document.getElementById('r').textContent = 'RESULT ' + JSON.stringify(out); return; }
   f.src = pages[i++];
@@ -921,7 +921,10 @@ setTimeout(function(){
     failures += stale
 
     # And signed out, every gated control on every page type asks (2026-10-05).
-    gated = [f"/{city.name}", f"/{city.stem}/{tree.name}"]
+    # The explore map's Favourites and My trees chips too (Hidde, 2026-10-07:
+    # "in the map if I press favourites or mytrees as a filter it should force
+    # people to login"): they were on no list, so nothing measured them.
+    gated = [f"/{city.name}", f"/{city.stem}/{tree.name}", "/explore.html"]
     for pattern in ("species/*.html", "parks/*.html", "collections/*.html", "es/*.html"):
         hit = sorted(DIST.glob(pattern))
         hit = [h for h in hit if "<article" in h.read_text(encoding="utf-8", errors="ignore")[:400000]]
