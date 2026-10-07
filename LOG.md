@@ -10,6 +10,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (session) - did anybody ask for a seat before the fix
+
+- **Hidde:** "do we have an idea of knowing if people requested it before this fix".
+- **What the table knows, read live from a runner (postbox run 5):** 5 ambassador requests in all, every one from his own two accounts (Reykjavik, Barcelona, Tokyo, Verona, Rome), no anonymous row, and the postbox still refuses one.
+- **What a lost tap left behind:** until today a signed-out tap on the seat opened sign-in and then forgot the request, so it never became a row. The page beacon keeps one trace of it: a sign-in dialog opened with reason `feedback` on a CITY page path can only be the seat. `python3 scripts/ambassador.py --dropped` (new, on postbox.yml daily) counts them since the seat went live on 10-04: **11 taps, 10-06 and 10-07**, of which Tokyo and /es/barcelona on 10-06 line up with his own testing and the four on /aachen and /es/aachen on 10-07 are the live check's own runs. **Up to four may be strangers: Paris (2), Glasgow (1), Leuven (1), all on 10-07.** None of them finished a sign-in (one sign-in finished in the whole window, this evening, direct), so there is no account and no address behind any of them. A tap on the app's seat left no trace at all.
+- **So: nobody's request is sitting unanswered**, and at most four people saw the dialog and walked away, which is now impossible to lose: since today the intent travels with the sign-in and becomes a row.
+- **Fixed on the way:** the live check now sets `at_notrack` before tapping, so a runner's taps stop landing in the product funnel.
+
 ## 2026-10-07 (night run, continuation 2): Stockholm enriched
 
 - Stockholm: girth on sto_001 (diameter 202 cm from sv.wikipedia, times pi) and sto_006, height on sto_004; no per-tree register page found for any of the four, Lyell's Oak left (girth taken at 1 m, not 1.30 m).
