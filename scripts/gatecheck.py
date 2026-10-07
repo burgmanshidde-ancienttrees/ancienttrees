@@ -19,7 +19,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 APP = ROOT / "ios" / "AncientTrees" / "AncientTrees"
 WALK = ROOT / "ios" / "AncientTrees" / "AncientTreesUITests" / "SignedOutWalk.swift"
 GATE = re.compile(r"nudge\.require\(|signingIn = true")
-IDENT = re.compile(r'accessibilityIdentifier\("([^"\\]+)')
+# Every string literal inside accessibilityIdentifier(...), so a conditional
+# like accessibilityIdentifier(compact ? "a" : "b") yields both.
+IDENT_CALL = re.compile(r'accessibilityIdentifier\(([^)]*)\)')
+IDENT_STR = re.compile(r'"([^"\\]+)')
 
 # Files whose gate is reached through a control walked elsewhere, or that
 # cannot be put on screen signed out without another account. Each line is a
@@ -52,7 +55,7 @@ def main():
             continue
         # An interpolated identifier ("worth-the-trip-\(value)") is matched on
         # the part before the interpolation.
-        ids = [i.split("\\(")[0] for i in IDENT.findall(text)]
+        ids = [i.split("\\(")[0] for call in IDENT_CALL.findall(text) for i in IDENT_STR.findall(call)]
         if any(i and (f'"{i}"' in walk or f'"{i}' in walk) for i in ids):
             continue
         if path.name in REACHED_ANOTHER_WAY:
