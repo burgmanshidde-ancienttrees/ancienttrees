@@ -83,9 +83,10 @@
       "story": "A ginkgo is either male or female for its entire life, except this one, which has been both since sometime in the 19th century, when a gardener grafted a female branch onto the male trunk so the tree could finally produce the seeds its species is famous for. The graft still shows on the bark today, a visible seam between two sexes on one plant, and it worked: this ginkgo, planted around 1770 in what was then Utrecht University's working medicinal garden, is now old enough that the University Museum's own researchers call it possibly one of the oldest ginkgos growing anywhere outside Japan. The species itself had only just reached Europe when this seedling went into the ground, imported from a country most Dutch botanists of the time had never visited, decades before Charles Darwin was born. The garden around it operated as a teaching collection for medicinal and useful plants from 1723 until 1920, when the university's plant science moved elsewhere and left this walled plot as what it is today, a quiet historic garden behind the University Museum rather than a working laboratory. The tree has outlived that entire purpose. A visit requires a museum ticket, the price of admission for standing next to something that predates the country's current constitution by decades.",
       "verified_sources": [
         "https://umu.nl/oude-hortus/bijzondere-bomen-en-planten-in-de-oude-hortus/",
-        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-utrecht.html"
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-utrecht.html",
+        "https://umu.nl/oude-hortus/bijzondere-bomen-en-planten-in-de-oude-hortus/vaantjesboom/"
       ],
-      "access": "Paid entry, Universiteitsmuseum ticket or separate Oude Hortus ticket",
+      "access": "Paid entry, Universiteitsmuseum ticket or separate Oude Hortus ticket; UMU and the Oude Hortus are open Tuesday to Sunday, 10:00 to 17:00",
       "transport": "10-15 minute walk from Utrecht Centraal station",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Old_ginkgo_tree%2C_old_Hortus_Botanicus%2C_Utrecht_University%2C_August_2024_-_1.jpg",
@@ -105,7 +106,13 @@
         "kind": "autumn colour"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by a visible graft seam in the bark, where a female branch was grafted onto this otherwise male tree in the 19th century. It stands in the Oude Hortus, behind the Universiteitsmuseum."
+      "how_to_recognise": "You can recognise it by a visible graft seam in the bark, where a female branch was grafted onto this otherwise male tree in the 19th century. It stands in the Oude Hortus, behind the Universiteitsmuseum.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678131",
+        "url": "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-utrecht.html"
+      },
+      "girth_cm": 442,
+      "height_m": 21.2
     },
     {
       "id": "utr_003",
@@ -124,7 +131,7 @@
       "verified_sources": [
         "https://umu.nl/oude-hortus/bijzondere-bomen-en-planten-in-de-oude-hortus/vaantjesboom/"
       ],
-      "access": "Paid entry, Universiteitsmuseum ticket or separate Oude Hortus ticket",
+      "access": "Paid entry, Universiteitsmuseum ticket or separate Oude Hortus ticket; UMU and the Oude Hortus are open Tuesday to Sunday, 10:00 to 17:00",
       "transport": "10-15 minute walk from Utrecht Centraal station",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Davidia_Involicrata_%28Vaantjesboom_of_zakdoekenboom%29_in_Botanische_tuin.jpg",
@@ -509,7 +516,15 @@
         "height": 4000
       },
       "how_to_recognise": "You can recognise it as the youngest tree on this walk, a copper beech planted as a liberation memorial after May 1945. It stands on Servaasbolwerk, near number 15.",
-      "height_m": 11
+      "height_m": 11,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper leaves turn",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "utr_016",
