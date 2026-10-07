@@ -35,7 +35,7 @@ final class SignedOutWalk: XCTestCase {
     private func tap(_ app: XCUIApplication, _ id: String, file: StaticString = #filePath, line: UInt = #line) {
         let b = app.descendants(matching: .any)[id].firstMatch
         var tries = 0
-        while !b.waitForExistence(timeout: 4) && tries < 8 { app.swipeUp(); tries += 1 }
+        while !b.waitForExistence(timeout: 3) && tries < 14 { app.swipeUp(); tries += 1 }
         XCTAssertTrue(b.exists, "no control \(id) on screen", file: file, line: line)
         if b.isHittable { b.tap() }
         else { b.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap() }
@@ -87,9 +87,10 @@ final class SignedOutWalk: XCTestCase {
     }
 
     func testAmbassadorSeatAsks() {
-        // Amsterdam has no ambassador, so its page shows the open seat, at the
-        // foot of the city's sheet: raise the sheet, then scroll to it.
-        let app = launch(["-open=city:amsterdam"])
+        // Cadiz has no ambassador and five trees, so its page shows the open
+        // seat a short scroll down the sheet (Amsterdam's thirty-odd trees put
+        // the row beyond the walk's reach): raise the sheet, then scroll to it.
+        let app = launch(["-open=city:cadiz"])
         app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
         tap(app, "ambassador-wanted"); expectSignIn(app, after: "ambassador-wanted")
     }
