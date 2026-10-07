@@ -840,6 +840,12 @@
    "country": "United States",
    "status": "supply",
    "note": "SCOUTED 2026-10-05 (#124). Wisconsin DNR Champion Tree Program publishes a public ArcGIS FeatureServer (CT_Nomination_PUB_TREE_MAP_View, 47 rows statewide, exact coordinates, girth/height/points, privateProperty flag). Imported as data/registers/wisconsin-dnr-champion-trees.json. Milwaukee area holds exactly 4 public-access champions (McGovern Park chinkapin oak, Forest Home Cemetery overcup oak, a city-street American elm, Oak Creek shagbark hickory) plus 2 private-property rows that must not ship (hard rule 10). Floor of four, so verify alive and access before opening."
+  },
+  {
+   "place": "Atlanta",
+   "country": "United States",
+   "status": "lead_list",
+   "note": "SCOUTED 2026-10-07. No government register: City of Atlanta has no heritage-tree list found on its ArcGIS hub. Best source is the Trees Atlanta (nonprofit) Champion Tree Program, public ArcGIS FeatureServer services6.arcgis.com/BZn8g8tzu5WfMokL/arcgis/rest/services/TreeChampionData_2019/FeatureServer/0: 437 rows, exact point per tree, species, girth, height, rank 1st-3rd, Status Alive/Dead, LocationType flag, no licence stated so NOT imported into data/registers. 141 rows pass Alive + public/semi-public + girth >=100 in, saved as finding aid data/leads/_atlanta-champions.json (top: Willow Oak 221 in at Manor Ridge Dr, Water Oak 248 in at Josephine St, Sycamore 205 in at Monroe Circle). Each needs a source of its own under one-credible-source (Trees Atlanta page or news), alive via lifecheck.py, and an access check since PublicAccess often means a street address beside a house. Georgia Forestry Commission champion page not reached (gfc.georgia.gov did not connect). Next angle: ask Trees Atlanta for reuse terms, then it becomes importable."
   }
  ],
  "out_of_focus": {
