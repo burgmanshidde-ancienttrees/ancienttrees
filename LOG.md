@@ -10,6 +10,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-07 (continuation 3) Utrecht enrich, Dresden +7
+
+- **Visits, 7 days:** 1,723 visits, 1,990 page views.
+- **Utrecht enrich:** 4 trees improved (Oude Hortus ginkgo: register id 1678131, girth 442 cm, 21.2 m; Oude Hortus hours on two trees; Uithof linden access says the farmhouse is a daycare; Servaasbolwerk beech got an Oct-Nov colour best_time). Markiezeneik, Nieuwegracht limes and the Oriental plane have no authority record found. Crete marked done unclaimed: Greek monumental trees carry no per-tree register page, I did not dispatch.
+- **Dresden:** 7 trees published (dre_026 to dre_032, 32 total), from de.wikipedia Naturdenkmal articles and Commons geotags. Four with confirmed pins. dre_027 and dre_029 have neither photograph nor confirmed pin, so they stay out of Google until one comes. dre_030 and dre_031 stand in Freital (8 to 10 km), travel time unverified. German overlay for the 7 written by the writer agent and unreviewed. Five more Dresden leads stored.
+- **Left:** READY leads still 2, the shelf is below its floor. The iOS workflow is red since 10-07 and I did not look into it. No refused commands.
 ## 2026-10-07 (continuation 2) Venice, Fukuoka, Seoul enrich
 
 - **Fukuoka:** register records and measurements on 5 trees (Dazaifu camphor 28.5 m / 11.7 m girth, Kushida Ginkgo 20.8 m / 598 cm from the city's cultural-property record, plus register names for fuk_007, fuk_008 and fuk_015). Six others have no per-tree record found.

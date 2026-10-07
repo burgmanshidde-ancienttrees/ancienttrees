@@ -9981,6 +9981,30 @@
    "tokens": 179808,
    "trees": 4,
    "note": "New region place file with stories, intro, question set and FAQ."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "utrecht",
+   "kind": "enrich",
+   "tokens": 149171,
+   "trees": 0,
+   "note": "Enrich pass: 4 trees improved (ginkgo register id, girth, height; access hours; one beech best_time)."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "dresden",
+   "kind": "verify",
+   "tokens": 140000,
+   "trees": 7,
+   "note": "Register-less deepen via de.wikipedia Naturdenkmal articles and Commons geotags; 7 flagged, 5 leads."
+  },
+  {
+   "date": "2026-10-07",
+   "target": "dresden",
+   "kind": "write",
+   "tokens": 175000,
+   "trees": 7,
+   "note": "7 stories plus recognition lines merged, German overlay for the 7 and count copy updated."
   }
  ]
 }
