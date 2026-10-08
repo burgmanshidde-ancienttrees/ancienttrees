@@ -39,6 +39,19 @@ from findable import findable, has_photo
 # gains a photograph. False restores the findable rule of 2026-10-04.
 INDEX_NEEDS_PHOTO = True
 
+# THE SPLIT, Hidde 2026-10-08 ("Ok do the split"). The robots meta is read by
+# every engine, so the 2026-10-01 noindex also took 11,500 pages out of Bing,
+# which never demoted us: Bing's referrals went from 30 to 40 a window to zero
+# the day the tag went on, and Bing is the index ChatGPT's search reads. Only
+# ONE group was ever Google's objection and nobody else's: the honest tree pages
+# that lack a photograph. They now carry <meta name="googlebot" content="noindex">
+# (Google reads it, Bing, DuckDuckGo and Yahoo ignore it) and are offered to
+# Bing in sitemap-bing.xml, which robots.txt never names so Google never sees
+# it. The other groups (fallback pages, which are duplicates in any index; thin
+# places; question pages) keep the generic tag. False puts the generic tag back
+# on everything; reversing it needs Hidde.
+GOOGLE_ONLY_WEAK_TREES = True
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://ancienttrees.app"
 LANGS = ["de", "es", "fr", "it", "ja", "nl", "pt"]
@@ -218,10 +231,17 @@ def main():
     except (OSError, ValueError):
         prev = {}
     paths = {p: prev.get(p, today) for p in sorted({u[len(BASE):] for u in every})}
+    # Google-only: a weak tree page that is on NO other list. A tree page of a
+    # thin place is not on the thin_places list (that list holds place and
+    # question pages), so in practice this is the whole weak_trees group; the
+    # subtraction is what keeps it true if a group ever grows to include one.
+    others = {u[len(BASE):] for k, v in groups.items() if k != "weak_trees" for u in v}
+    google_only = sorted({u[len(BASE):] for u in groups["weak_trees"]} - others) if GOOGLE_ONLY_WEAK_TREES else []
     json.dump({"generated": "scripts/thin_pages.py",
-               "approved": "Hidde, 2026-10-01, in session: 'start with point 1 to 4'",
-               "note": "Every path here renders <meta name=robots content=noindex> and a self canonical (site/src/layouts/Base.astro), and so leaves sitemap.xml. Pages stay live. Undo by emptying 'paths' and removing the thin_pages step from deploy.yml.",
+               "approved": "Hidde, 2026-10-01, in session: 'start with point 1 to 4'; the engine split 2026-10-08: 'Ok do the split'",
+               "note": "Every path here leaves sitemap.xml and renders a self canonical (site/src/layouts/Base.astro). A path in google_only renders <meta name=googlebot content=noindex>, which only Google reads, and is offered to Bing in sitemap-bing.xml; every other path renders <meta name=robots content=noindex> for every engine. Pages stay live. Undo by emptying 'paths' and removing the thin_pages step from deploy.yml.",
                "counts": {k: len(set(v)) for k, v in groups.items()},
+               "google_only": google_only,
                "paths": paths},
               open(nf, "w"), indent=1, ensure_ascii=False)
 
@@ -231,8 +251,9 @@ def main():
            f"| 1 | Fallback language pages: the English text on a /de/, /es/ ... URL | {len(set(groups['fallback']))} |",
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
-           f"| 4 | Tree pages without a photograph (since 2026-10-06; before that: without a photo, a confirmed pin or a small site) | {len(set(groups['weak_trees']))} |",
+           f"| 4 | Tree pages without a photograph (since 2026-10-06; before that: without a photo, a confirmed pin or a small site). Out of GOOGLE only since 2026-10-08: Bing, DuckDuckGo and Yahoo keep them, via sitemap-bing.xml | {len(set(groups['weak_trees']))} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
+           f"| | of which Google-only (the googlebot tag) | {len(google_only)} |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",
            f"Thin places kept indexed ({len(kept_thin)}), a destination tree or real impressions: " +
            ", ".join(c for c, n, i in sorted(kept_thin)) + "\n",

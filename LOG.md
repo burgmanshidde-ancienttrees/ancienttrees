@@ -2,6 +2,16 @@
 
 <!-- archive-index -->
 
+## 2026-10-08 (session) - the noindex split by engine: photo-less tree pages leave Google only, Bing keeps them
+
+**Why:** Hidde asked whether Bing needs the same noindex as Google and said "Ok do the split". The generic robots tag had emptied Bing, DuckDuckGo and Yahoo of 11,500 pages too; Bing never demoted us and its referrals fell to zero the day the tag went on (DATA.md referrer rows, 09-12 to 10-04).
+
+**What changed:** 3,775 tree pages without a photograph (1,005 of them real translations) now carry the googlebot-only noindex tag and are listed in a new sitemap-bing.xml; the 7,922 fallback, thin-place and question pages keep the generic tag. thin_pages.py writes `google_only` into data/noindex.json, noindex.ts and Base.astro read it, the sitemap integration writes the Bing file, indexnow.py reads it so Bing hears about changes. New ratchet check `check_the_noindex_split_holds()` in qa.py. Record in DECISIONS.md 2026-10-08 and in CLAUDE.md's photo-index bullet.
+
+**Found by the new check, fixed the same hour (rung 3, something published was wrong):** five published trees had REDIRECT STUBS for pages, because the build writes the stubs for REMOVED_TREE_SLUGS over the real pages. Las Vegas lvg_012/013/014 were pulled for size on 08-20 and deliberately restored on 08-26 under the size ruling, but their slugs stayed on the map, so the city page has linked to three pages that bounce back to it for six weeks: the slugs are off the map and the pages render again. Leiden lei_012/013 were pulled on Hidde's 08-23 ruling (padding) and re-merged by a 09-07 write pass that never read the leads file: they are back in data/leads/leiden.json with the reason, Leiden is 18 again, and its English and Dutch copy say eighteen. New ratchet check `check_no_published_tree_is_a_redirect()` in scripts/preflight.py refuses a published tree whose slug the map redirects, in either direction. Preflight: 719 cities, 0 problems.
+
+**FOR HIDDE:** submit `https://ancienttrees.app/sitemap-bing.xml` in Bing Webmaster Tools (Sitemaps), once the deploy is live. It must NOT go into Search Console and is deliberately absent from robots.txt. While there, check Site Explorer for how many pages Bing holds.
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-09](archive/LOG-2026-09.md)

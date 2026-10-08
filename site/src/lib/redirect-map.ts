@@ -122,6 +122,13 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // two big Winchester Park eucalypts, the mulberry students actually meet under,
 // the one native, and the three anomalies of a species growing where it should
 // not. Stories and sources kept in data/leads/las-vegas.json.
+// RESTORED 2026-08-26 as lvg_012/013/014 under the 2026-08-10 ruling that a
+// judgement about size never blocks publication, and their three slugs were
+// left in REMOVED_TREE_SLUGS below, so from that day the city page linked to
+// three tree pages that bounced straight back to it. Found 2026-10-08 by the
+// noindex split check; the slugs are gone from the list and
+// check_no_published_tree_is_a_redirect() in scripts/preflight.py now refuses
+// a published tree whose slug the map redirects.
 // bucaco/the-redwoods-of-santo-elias (bsc_005, 2026-08-21): the Fundacao Mata
 // do Bucaco replied to our outreach and its biologist asked for these two
 // redwoods to come off the app, because it is not possible to walk to them.
@@ -207,9 +214,6 @@ const REMOVED_TREE_SLUGS: [string, string][] = [
   ["amsterdam", "shellbark-hickory-of-the-hortus"],
   ["amsterdam", "ginkgo-of-the-hortus"],
   ["bucaco", "the-redwoods-of-santo-elias"],
-  ["las-vegas", "weeping-camperdown-elm-at-carlson"],
-  ["las-vegas", "buddhist-pine-of-white-hall"],
-  ["las-vegas", "texas-olive-behind-the-paint-shop"],
   ["lyon", "cedar-of-ile-barbe"],
   ["munich", "copper-beech-of-nymphenburg"],
   ["munich", "nymphenburg-lime"],

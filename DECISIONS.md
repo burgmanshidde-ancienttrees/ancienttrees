@@ -1,5 +1,43 @@
 # Decisions
 
+## 2026-10-08: the noindex is Google's alone where only Google objects
+
+Hidde, asked whether Bing needs the same noindex as Google: "Ok do the split."
+
+**Why.** The 2026-10-01 noindex used the generic robots meta, which every
+engine reads, so it took 11,500 pages out of Bing, DuckDuckGo and Yahoo as
+well. Bing never demoted the site: its referrals ran at 30 to 40 pageviews a
+window before and read zero from the day the tag went on, and Bing is the
+index behind DuckDuckGo, Yahoo, half of Ecosia and ChatGPT's web search. Of
+the four noindex groups only one was Google's objection and nobody else's:
+the tree pages without a photograph, real pages with a real story that the
+September 2026 spam update reads as scaled content.
+
+**What changed.** Those pages (3,775 on the day, 1,005 of them real
+translations) carry `<meta name="googlebot" content="noindex, follow">`, which
+Google reads and the Bing family ignores, and are listed in
+`sitemap-bing.xml`, which is submitted in Bing Webmaster Tools only and is
+named nowhere Google reads: not robots.txt, not a sitemap index. They stay out
+of sitemap.xml as before. The fallback language pages (English text on a
+language URL, duplicates in any index), the thin places and the question
+pages keep the generic tag. IndexNow reads the Bing sitemap too, so Bing hears
+about those pages on every deploy.
+
+**Where it lives.** `GOOGLE_ONLY_WEAK_TREES` in scripts/thin_pages.py writes
+`google_only` into data/noindex.json; `noindexScope()` in
+site/src/lib/noindex.ts reads it; Base.astro picks the tag name from it; the
+sitemap integration writes sitemap-bing.xml from it.
+`check_the_noindex_split_holds()` in scripts/qa.py refuses a build where a
+Google-only page lacks the googlebot tag or carries the generic one, where any
+other listed page lacks the generic tag, where a Google-only page is back in
+sitemap.xml, where sitemap-bing.xml and the list disagree, or where robots.txt
+names the Bing sitemap. Removing it needs Hidde. Setting the flag to False
+puts the generic tag back on everything.
+
+**What it does not change.** The Google side is untouched: the same pages
+are out of Google, the index-rule freeze of 2026-10-07 holds. Hard rule 3
+holds: no URL moves, nothing is deleted.
+
 ## 2026-10-04: a reader's photograph is ours to use, permanently
 
 Hidde, on hearing that the terms let a reader ask for a published photograph

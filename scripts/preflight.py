@@ -2466,6 +2466,53 @@ def check_city_indent():
     return out
 
 
+def check_no_published_tree_is_a_redirect():
+    """A tree in data/cities whose slug REMOVED_TREE_SLUGS redirects has no page:
+    the build writes the redirect stub AFTER the pages, over the real one, so
+    the city page links to a tree that bounces straight back to the city.
+
+    Written 2026-10-08, found by the noindex split check. Two ways it had
+    happened, a month apart and in opposite directions. Las Vegas: three trees
+    pulled for size on 08-20 were restored on 08-26 under the ruling that size
+    never blocks publication, and nobody took their slugs off the map, so three
+    live trees had stub pages for six weeks. Leiden: two trees Hidde pulled on
+    08-23 as padding were re-merged by a write pass on 09-07 that never read
+    the leads file, against his ruling. Same symptom, and the same Utrecht
+    lesson as check_register_says_the_tree_is_gone(): a removal that lives in
+    one file is undone by the next pass that reads the other. The fix is the
+    map when the restoration was deliberate, the data when it was not; this
+    check only insists that the two agree. Removing it needs Hidde.
+    """
+    from thin_pages import slugify
+    path = os.path.join("site", "src", "lib", "redirect-map.ts")
+    try:
+        src = open(path, encoding="utf-8").read()
+    except OSError:
+        return []
+    m = re.search(r"const REMOVED_TREE_SLUGS[^=]*=\s*\[(.*?)\n\];", src, re.S)
+    if not m:
+        return ["check_no_published_tree_is_a_redirect: REMOVED_TREE_SLUGS not found in redirect-map.ts"]
+    removed = set(re.findall(r'\["([^"]+)",\s*"([^"]+)"\]', m.group(1)))
+    out = []
+    for p in sorted(glob.glob("data/cities/*.json")):
+        city = os.path.basename(p)[:-5]
+        try:
+            doc = json.load(open(p, encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        for t in doc.get("trees") or []:
+            if not t.get("story"):
+                continue
+            slug = slugify(t.get("name") or "")
+            if (city, slug) in removed:
+                out.append("%s (%s, %s): published tree whose slug is in REMOVED_TREE_SLUGS, so its "
+                           "page is a redirect to the city. Either the tree was restored on purpose "
+                           "(take the slug off the map in site/src/lib/redirect-map.ts) or a pass "
+                           "re-imported a removed tree (move it back to data/leads/%s.json)."
+                           % (t.get("id"), t.get("name"), city, city))
+    return out
+
+
 def check_register_says_the_tree_is_gone():
     """No published tree may cite a register row the register itself calls dead.
 
@@ -2841,6 +2888,7 @@ def main():
                 + check_story_length()
                 + check_one_common_name_per_species()
                 + check_register_says_the_tree_is_gone()
+                + check_no_published_tree_is_a_redirect()
                 + check_park_words_match()
                 + check_photo_fields_reach_the_site()
                 + check_every_us_place_has_a_state()

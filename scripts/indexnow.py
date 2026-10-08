@@ -64,6 +64,13 @@ def main(argv):
     except Exception as e:
         print("indexnow: could not read the sitemap (%s); nothing sent" % e)
         return 0
+    # The pages Google alone is asked not to list (2026-10-08, the engine
+    # split) are in sitemap-bing.xml and nowhere Google reads; Bing is the
+    # engine behind IndexNow, so it hears about them like any other page.
+    try:
+        entries += sitemap_entries("https://%s/sitemap-bing.xml" % HOST)
+    except Exception as e:
+        print("indexnow: no sitemap-bing.xml (%s); Google-only pages not sent" % e)
     if send_all:
         # The noindexed pages too (2026-10-01): Bing only drops them once it
         # has refetched them and seen the tag.

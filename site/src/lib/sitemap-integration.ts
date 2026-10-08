@@ -12,6 +12,7 @@ import type { AstroIntegration } from "astro";
 import { buildRedirectStubs } from "./redirect-map";
 import { slugify } from "./slug";
 import { QUESTION_SLUG } from "./i18n";
+import { googleOnlyPaths } from "./noindex";
 
 const BASE_URL = "https://ancienttrees.app";
 
@@ -94,6 +95,25 @@ export default function sitemapIntegration(): AstroIntegration {
             `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rec}</urlset>\n`,
           );
           logger.info(`wrote sitemap-recrawl.xml with ${dated.length} url(s)`);
+        }
+        // Bing's sitemap (2026-10-08, Hidde: "Ok do the split"): the tree pages
+        // Google alone is asked not to list. They carry the googlebot tag and
+        // so fall out of sitemap.xml above (which Google reads, via robots.txt),
+        // while Bing, DuckDuckGo and Yahoo are welcome to them. This file is
+        // submitted in Bing Webmaster Tools only and is named nowhere Google
+        // looks: not in robots.txt, not in a sitemap index. The same lastmod
+        // as the main sitemap, because it is the same page.
+        const bing = googleOnlyPaths();
+        if (bing.length) {
+          const rows = bing
+            .map((p) => `${BASE_URL}${p}`)
+            .map((u) => `  <url><loc>${u}</loc><lastmod>${lastmod(u) ?? fallback}</lastmod></url>\n`)
+            .join("");
+          fs.writeFileSync(
+            path.join(distRoot, "sitemap-bing.xml"),
+            `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rows}</urlset>\n`,
+          );
+          logger.info(`wrote sitemap-bing.xml with ${bing.length} url(s)`);
         }
 
       },
