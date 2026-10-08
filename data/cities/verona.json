@@ -100,7 +100,13 @@
       "curation_status": "flagged",
       "notes": "Dimensions (505cm circumference, 35.5m height) from the official AMI national monumental-trees listing, corroborated by the city's own press office covering the same tree as part of its tree-heritage app project. No individual planting date documented beyond 'already mature by 1941'. Photo verified directly: shows a large plane trunk and canopy in a garden square setting with a stone balustrade, consistent with the described location. Pin refined 2026-07-27 and set to confirmed: ilregistrodeglialberi.it, a registry aggregator explicitly citing this tree's AMI listing, gives GPS coordinates (45.442705, 11.000061) with an identical circumference and height (505cm, 35.50m) to this entry's own figures, an exact match rather than a mere corroboration.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its huge trunk, over five metres round, filling most of the small garden. It stands at the centre of Piazza Indipendenza, beside a ginkgo."
+      "how_to_recognise": "You can recognise it by its huge trunk, over five metres round, filling most of the small garden. It stands at the centre of Piazza Indipendenza, beside a ginkgo.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 02/L781/VR/05",
+        "url": null
+      },
+      "girth_cm": 505,
+      "height_m": 35.5
     },
     {
       "id": "ver_003",
@@ -140,7 +146,11 @@
       "curation_status": "flagged",
       "notes": "Dimensions (323cm average circumference, 23.5m average height) from the official AMI national monumental-trees listing; the tree's own dedicated Wikimedia Commons category (structured data, coordinates matching Piazza Indipendenza) independently corroborates its identity and location. Presented as a group entry since the register itself lists it that way rather than as one single specimen. Photo verified directly: shows unmistakable ginkgo fan-shaped foliage and bark, matching the species and general setting. Coordinates now taken from the register's own GIS record for this entry (its circumference and height match this story's figures exactly, confirmed identically across two independent fetches of the source spreadsheet), about 45m from the previous square-wide estimate. The plane tree and cedar entries in the same register file could not be matched with the same confidence this pass (the tool's reads of those two rows were inconsistent across attempts), so ver_002 and ver_004 stay approximate rather than risk a wrong pin.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the group of ginkgos sharing the small garden with the square's much taller plane tree. It stands in Piazza Indipendenza."
+      "how_to_recognise": "You can recognise it as the group of ginkgos sharing the small garden with the square's much taller plane tree. It stands in Piazza Indipendenza.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/L781/VR/05",
+        "url": null
+      }
     },
     {
       "id": "ver_004",
@@ -192,9 +202,10 @@
       "story": "A long avenue of cypresses climbs from the Renaissance palace at the garden's entrance toward a grotto and grotesque stone mask at the far end, the single axis around which Agostino Giusti built his entire garden after 1570, using forced perspective to make the walk feel longer and grander than the plot of land actually allows. For over two centuries the most famous tree in that avenue was a single cypress that had already stood for hundreds of years when Johann Wolfgang von Goethe visited in 1786 and admired it enough to record the moment in his own Italian Journey. That specific tree no longer exists: a violent storm on 23 August 2020 tore it from the ground entirely, ending a run of more than six hundred years and taking with it the garden's single most photographed feature. The garden has since replanted cypresses along the same historic line, younger and considerably shorter than what fell, alongside the surviving older specimens elsewhere in the row that the storm did not reach. Visiting today means walking the same axis Goethe walked, framed by the same design, honestly no longer beneath the exact tree that made it famous.",
       "verified_sources": [
         "https://www.veronasera.it/cronaca/crollo-caduta-cipresso-goethe-giardino-giusti-verona-24-agosto-2020.html",
-        "https://www.heraldo.it/2020/09/04/giardino-giusti-la-ripresa-dopo-la-tempesta/"
+        "https://www.heraldo.it/2020/09/04/giardino-giusti-la-ripresa-dopo-la-tempesta/",
+        "https://www.giardinogiusti.com/"
       ],
-      "access": "Paid entry, Giardino Giusti",
+      "access": "Paid entry at Giardino Giusti. Open all year except 25 December; winter hours 10:00 to 18:00, summer hours 9:00 to 19:00 (price not stated on the garden's page).",
       "transport": "10 min walk from Piazza delle Erbe",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg",

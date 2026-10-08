@@ -11,6 +11,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Verona enrichment, Dresden READY leads
+
+Verona: the Plane of Piazza Indipendenza got its MASAF register sheet (02/L781/VR/05) with girth 505 cm and height 35.5 m; its Ginkgo got the register id; Giardino Giusti got opening hours (price not published). The Piazza Bra cedar has no register entry. The four READY Dresden leads were false positives (no source URL; a school yard; a possibly dying beech; a torso), so none shipped and they went back to verify or held. Next: `enrich.py --next`.
+
 ## 2026-10-08 Perth enrichment
 
 Perth's 3 indexed trees: Gija Jumulu got a 18 m height and free daily access from the Kings Park authority; the Moreton Bay Fig and the Proclamation Tree got their heritage-register records (inHerit 02047, Heritage Council WA 00841). No girth or season found.
