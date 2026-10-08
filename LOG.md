@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-08 (night run, third window) - Salzburg +2
+
+**Rung:** shelf refill; 7-day visits 1,697. Rung 2 clear. Stuttgart claimed first, then released as a wall (no register, from-zero is off).
+**Done:** Salzburg verify from the Naturdenkmal register, then write: szb_019 (Thousand-Year Linden of Faistenau, photo found_needs_check, nobody has viewed it) and szb_020 (Gschirrnlinde of Eugendorf, photo viewed and approved) live, Salzburg at 20, German overlay, preflight 0 problems. Elsbethen linde and two publishable=false groups stay leads. Costs logged.
+**Notes:** Salzburg is now at its target. Faistenau is about 14 km out, beyond the day-trip line, and the page says so. No tool refusals.
+
 ## 2026-10-08 (night run, later window) - Salzburg +3
 
 **Rung:** shelf refill; 7-day visits 1,683. Rung 2 clear.
