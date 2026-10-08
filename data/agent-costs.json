@@ -10079,6 +10079,14 @@
    "tokens": 138591,
    "trees": 0,
    "note": "Enrich pass: NPS per-tree page for the Quinault Big Spruce only. Kalaloch cedar, Tree of Life and Duncan Cedar have no authority record; resort figures not taken as measurements."
+  },
+  {
+   "date": "2026-10-08",
+   "target": "nuremberg",
+   "kind": "enrich",
+   "tokens": 136043,
+   "trees": 0,
+   "note": "Enrich pass: Bavarian Naturdenkmal ids (ND-numbers) on four trees; the Hallerwiese lime match is probable, not certain. No measurements found."
   }
  ]
 }

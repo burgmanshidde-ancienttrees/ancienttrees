@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Nuremberg enrichment
+
+Four trees got their Bavarian Naturdenkmal id (the three oaks ND-05057, 05059, 05060; the Hallerwiese lime ND-04981, a probable rather than certain match since the city list has only one lime there). No per-tree register page exists and no girth or height is published, so measurements stay gaps. Released the claim with --force: nbg_018 is a separate verified tree awaiting a writer, not part of this pass.
+
 ## 2026-10-08 Olympic National Park enrichment
 
 Thin yield: only the Quinault Big Spruce got a register link (NPS has a page for that one tree). The Kalaloch cedar and Tree of Life have no NPS record, and the Duncan Cedar's only figures are a diameter, so none were converted to a girth. The resort's measurements for the spruce were not taken (the resort's claim, not an authority's). Next: `enrich.py --next`.
