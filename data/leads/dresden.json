@@ -200,9 +200,10 @@
       "species": "Quercus robur 'Fastigiata'",
       "lat": 51.0236,
       "lng": 13.7619,
-      "status": "lead",
+      "status": "held",
       "why": "ND since 1998, planted 10 Nov 1883, girth 3.70 m, 26 m tall, crown 16.5 m; but it stands in the yard of the 47th primary school (Grundschule). House rule on schools: ships only with evidence the grounds are open; none found. Commons photos exist.",
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "held_reason": "School grounds (47. Grundschule yard): stays a lead until a source shows the yard is genuinely open to the public (CLAUDE.md hard rule 10, schools). 2026-10-08 write pass: not writable, sent back to verify. No source URL on the entry (only a register summary in `why`), so a story would rest on nothing a page can cite."
     },
     {
       "name": "Luthereiche Schoenfeld",
@@ -211,7 +212,9 @@
       "lng": 13.8948,
       "status": "lead",
       "why": "Planted 1883 at the Markt by the Schlossteich, with a gilded stone inscribed Luther-Eiche, one of a pair of trees, near Schloss Schoenfeld; size and status not read this pass. Public square, so a plausible later tree; needs species, girth and a pin from a source.",
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "needs_verification": true,
+      "verify_todo": "2026-10-08 write pass: not writable, sent back to verify. No source URL on the entry (only a register summary in `why`), so a story would rest on nothing a page can cite. Also needs species beyond genus, girth and a sourced pin."
     },
     {
       "name": "Luthereichen Gorbitz",
@@ -229,7 +232,9 @@
       "lng": 13.59584,
       "status": "lead",
       "why": "ND 69, Niederwartha. Girth 4.05 m, 25 m in 2017, but the crown broke at about 6 m in autumn 2017 and the dnn.de headline (2019) says the historical witness is dying; only a trunk remnant with carved KPD/SED/swastika marks stands. Alive status doubtful, remote spot. Re-check before any use; Commons category Naturdenkmal Politische Buche im Kleditschgrund has photos.",
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "needs_verification": true,
+      "verify_todo": "2026-10-08 write pass: not writable, sent back to verify. No source URL on the entry (only a register summary in `why`), so a story would rest on nothing a page can cite. Also needs a dated proof of life: crown broke 2017 and dnn.de (2019) called it dying."
     },
     {
       "name": "Rotbuche Tännichtstraße (Rochwitz)",
@@ -238,7 +243,9 @@
       "lng": 13.832722,
       "status": "lead",
       "why": "ND 62, protected 1939, girth 4.55 m but only a trunk torso about 5 m high ('imposanter Rest' in 2000), still vigorous. Photos on Commons (Dr. Bernd Gross 2015). Torso, not a spectacle; weak entry unless a source gives a reason.",
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "needs_verification": true,
+      "verify_todo": "2026-10-08 write pass: not writable, sent back to verify. No source URL on the entry (only a register summary in `why`), so a story would rest on nothing a page can cite. Also needs a current proof of life for the torso (last read 2015) and a pin precision."
     },
     {
       "name": "Alberteiche im Großen Garten",
