@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Padua enrichment
+
+Four indexed trees: register ids (Il Registro degli Alberi 3247/3248/3251/3254), girth/height for the plane, ginkgo and magnolia, access lines from the garden's own tickets page (ortobotanico1545.it; ortobotanicopd.it fails SSL). No best_time: nothing above 'nice' in the species file. Preflight 0 problems.
+
 ## 2026-10-08 Nuremberg enrichment
 
 Four trees got their Bavarian Naturdenkmal id (the three oaks ND-05057, 05059, 05060; the Hallerwiese lime ND-04981, a probable rather than certain match since the city list has only one lime there). No per-tree register page exists and no girth or height is published, so measurements stay gaps. Released the claim with --force: nbg_018 is a separate verified tree awaiting a writer, not part of this pass.
