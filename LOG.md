@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Olympic National Park enrichment
+
+Thin yield: only the Quinault Big Spruce got a register link (NPS has a page for that one tree). The Kalaloch cedar and Tree of Life have no NPS record, and the Duncan Cedar's only figures are a diameter, so none were converted to a girth. The resort's measurements for the spruce were not taken (the resort's claim, not an authority's). Next: `enrich.py --next`.
+
 ## 2026-10-08 Belgrade enrichment
 
 All five trees got a protected-tree register entry from Zelenilo Beograd's list (the Topčider plane only a decision number, no authority page found) and four got girth and height; the Serbian Wikipedia figures disagree with Zelenilo's on three trees and the measure_source says so. Zemun yews have no measurement anywhere, no access line changed, no season set. Next: `enrich.py --next`.
