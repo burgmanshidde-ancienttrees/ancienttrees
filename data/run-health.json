@@ -2,25 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-20T04:23:22+00:00",
-   "date": "2026-08-20",
-   "run_id": "32331696879",
-   "minutes": 26.7,
-   "minutes_basis": "measured",
-   "turns": 204,
-   "denials": 15,
-   "denials_source": "permission_denials: Bash",
-   "ended": "success",
-   "tokens": 36251336,
-   "claims_held": [
-    "rome"
-   ],
-   "commits": 13,
-   "cities_touched": 2,
-   "trees": 5,
-   "logged": true
-  },
-  {
    "started": "2026-08-20T06:21:21+00:00",
    "date": "2026-08-20",
    "run_id": "32339238020",
@@ -20970,6 +20951,95 @@
     }
    ],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-08T08:40:54+00:00",
+   "date": "2026-10-08",
+   "run_id": "37751392115",
+   "minutes": 44.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 145,
+   "denials": 41,
+   "denials_source": "permission_denials: Bash(cat && for ; do ; cat ...), Bash(cat ; ? ; ? ; ? ...), Bash(cat ; import ; ? ; ? ...), Bash(cd && curl | python3 ; curl ...), Bash(cd && curl | python3 ; import ...), Bash(cd && for ; do ; curl ...), Bash(cd && ls | grep | masaf ...), Bash(cd && mkdir && cd && curl ...), Bash(cd && mkdir && cd && for ...), Bash(cd && python3 ; An ; Commons ...), Bash(cd && sed && python3), Bash(cd ; grep ; sed ; python3 ...), Bash(cd ; grep | ? | ND- ...), Bash(cd ; head ; echo ; for ...), Bash(cd ; head ; echo ; head ...), Bash(cd ; head), Bash(cd ; ls | grep | publish ...), Bash(cd ; mkdir ; for ; do ...), Bash(cd ; python3 ; import ; ? ...), Bash(cd ; python3 ; import ; for ...), Bash(curl ; curl ; curl ; curl ...), Bash(curl ; grep | nd_ | eiche ...), Bash(curl ; wc ; head), Bash(curl ; wc), Bash(for ; do ; python3 | tail ...), Bash(grep), Bash(mkdir && cd && curl ; wc ...), Bash(mkdir && cd && for ; do ...), Bash(mkdir ; cd ; curl ; wc ...), Bash(mkdir ; cd ; for ; do ...), Bash(mkdir), Bash(pdftotext), Bash(python3 ; ? ; rm ; git), Bash(python3 ; cat ; E ; head), Bash(python3 | tail ; git ; git ...), Bash(rm && python3 ; import ; ? ...), Bash(rm ; python3 | tail ; python3 ...), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 1361361,
+   "claims_held": [
+    "genoa",
+    "amersfoort",
+    "bucaco",
+    "graz"
+   ],
+   "commits": 24,
+   "cities_touched": 16,
+   "cities": [
+    {
+     "city": "vienna",
+     "trees": 7
+    },
+    {
+     "city": "chicago",
+     "trees": 3
+    },
+    {
+     "city": "takachiho",
+     "trees": 2
+    },
+    {
+     "city": "fukuoka",
+     "trees": 1
+    },
+    {
+     "city": "nuremberg",
+     "trees": 1
+    },
+    {
+     "city": "portland",
+     "trees": 1
+    },
+    {
+     "city": "san-francisco",
+     "trees": 1
+    },
+    {
+     "city": "sao-paulo",
+     "trees": 1
+    },
+    {
+     "city": "belgrade",
+     "trees": 0
+    },
+    {
+     "city": "bologna",
+     "trees": 0
+    },
+    {
+     "city": "dresden",
+     "trees": 0
+    },
+    {
+     "city": "graz",
+     "trees": 0
+    },
+    {
+     "city": "lucca",
+     "trees": 0
+    },
+    {
+     "city": "olympic-national-park",
+     "trees": 0
+    },
+    {
+     "city": "padua",
+     "trees": 0
+    },
+    {
+     "city": "salzburg",
+     "trees": 0
+    }
+   ],
+   "trees": 17,
    "logged": true
   }
  ],
