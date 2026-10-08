@@ -2,28 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-20T02:46:06+00:00",
-   "date": "2026-08-20",
-   "run_id": "32325803604",
-   "minutes": 16.4,
-   "minutes_basis": "measured",
-   "turns": 118,
-   "denials": 15,
-   "denials_source": "permission_denials: Bash",
-   "ended": "success",
-   "tokens": 14928803,
-   "claims_held": [
-    "bari",
-    "lyon",
-    "krakow",
-    "warsaw"
-   ],
-   "commits": 6,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-20T04:23:22+00:00",
    "date": "2026-08-20",
    "run_id": "32331696879",
@@ -20950,6 +20928,44 @@
     },
     {
      "city": "verona",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-08T06:20:55+00:00",
+   "date": "2026-10-08",
+   "run_id": "37737050075",
+   "minutes": 8.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 77,
+   "denials": 16,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; for ...), Bash(cd && mkdir && cd && curl ...), Bash(curl ; file), Bash(curl ; ls), Bash(curl ; wc ; curl | grep ...), Bash(for ; do ; grep | worth ...), Bash(ls | grep | lyon | ? ...), Bash(mkdir && cat ; ? ; ? ...), Bash(mkdir && cd && curl ; ls ...), Bash(mkdir && curl ; ls), Bash(pdftotext), Bash(python3 ; import ; ? ; ? ...), Bash(python3 ; import ; for ; for ...), Bash(python3 ; wc ; ls | head ...), Bash(rm ; cd && git | head), Bash(timeout ; do ; ? ; ls ...)",
+   "ended": "success",
+   "tokens": 597767,
+   "claims_held": [
+    "bologna"
+   ],
+   "commits": 10,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "leiden",
+     "trees": 0
+    },
+    {
+     "city": "luxembourg-city",
+     "trees": 0
+    },
+    {
+     "city": "lyon",
+     "trees": 0
+    },
+    {
+     "city": "tallinn",
      "trees": 0
     }
    ],
