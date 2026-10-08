@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Bologna enrichment
+
+Rung: enrichment, per prepare.py (7-day visits 1,700). Five of seven trees got a RAMI/AMI register id (Sequoia, Minghetti plane, Malpighi plane, Rizzoli cedar, Cavour ginkgo); the Rizzoli cedar also got 520 cm girth and 29.2 m height. Montagnola planes (ensemble, no single AMI code) and the Villa Ghigi cedar stay gaps; bbcc.regione.emilia-romagna.it returned 403 to curl. No season set. No new trees; the writable pile is still empty. health.py: only 6 of 12 knocks delivered in 24h, not dispatched by hand. Next: belgrade.
+
 ## 2026-10-08 Night run: enrichment of Tallinn, Leiden, Luxembourg City
 
 Rung: enrichment first, per prepare.py. 7-day visits: 1,553. Tallinn: EELIS records and 1997 survey measurements for the linden and the ginkgo (the Russalka oak has no register entry). Leiden: Hortus hours and prices on four trees, register links on the catalpa and the Groenesteeg beech, autumn colour season for the weeping beech. Luxembourg: ANF register ids for four trees (the geojson has no measurements; the Krombach oak is not in it). No new trees: the writable pile is still empty and the refill (1031 leads needing a source) was not touched. health.py also flagged only 5 of 12 knocks delivered in 24h; I did not dispatch one by hand since this run was already live. Pass-reported hosts that did not resolve: register.keskkonnainfo.ee, www3.tallinn.ee. Lyon after that: the Pin de Bunge got the city's own 2024 press-release measurements (267 cm girth, 21 m) and its A.R.B.R.E.S. label; the Osage orange and the Chartreux garden stay gaps (no register or authority figure). One verify agent's cleanup (rm) was refused as expected.
