@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Salzburg enrichment
+
+Three Naturdenkmal trees got register ids (NDM00196, NDM00215, NDM00232, Land Salzburg open dataset via de.wikipedia list). No per-tree authority page found (salzburg.gv.at naturdenkmaeler page 404), no measurements published, access lines unchanged.
+
 ## 2026-10-08 Padua enrichment
 
 Four indexed trees: register ids (Il Registro degli Alberi 3247/3248/3251/3254), girth/height for the plane, ginkgo and magnolia, access lines from the garden's own tickets page (ortobotanico1545.it; ortobotanicopd.it fails SSL). No best_time: nothing above 'nice' in the species file. Preflight 0 problems.
