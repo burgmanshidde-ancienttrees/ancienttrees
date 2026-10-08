@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Dresden enrichment
+
+Nine of twelve indexed trees: per-tree Umweltamt records (stadtplan.dresden.de Kurzdokumentation) as register URLs with ND numbers, four heights, Pillnitz camellia height, two best_time entries (lime flowering, beech colour). Splittereiche, Saengereiche and Bismarck Oak are not Naturdenkmale and stay gaps. dre_016's stored girth 535 is a 0.3 m base figure, not a 1.30 m girth: worth a correction when a real figure turns up.
+
 ## 2026-10-08 Lucca enrichment
 
 Three trees: MASAF register sheet numbers (26/E715/LU/09, 34/E715/LU/09, 25/E715/LU/09), Orto Botanico price and hours from the garden's own visit page, Torre Guinigi booking and steps from turismo.lucca.it. No new measurements (two already had them; the tower oaks are a group record).
