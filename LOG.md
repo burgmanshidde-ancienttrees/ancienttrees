@@ -11,6 +11,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Perth enrichment
+
+Perth's 3 indexed trees: Gija Jumulu got a 18 m height and free daily access from the Kings Park authority; the Moreton Bay Fig and the Proclamation Tree got their heritage-register records (inHerit 02047, Heritage Council WA 00841). No girth or season found.
+
 ## 2026-10-08 Kagoshima enrichment
 
 Enrichment pass on Kagoshima's 7 indexed trees. Two got the authority's own record: kag_003 (city preserved-tree no. 6, height 13.5 m; the 4.85 m girth was measured at 1.5 m, so left out) and kag_010 (Special Natural Monument of Japan, height about 30 m). The other five have no record in the city list or the prefecture's pages; no season set (no camphor moment worth the trip). Four READY Dresden leads wait for a write pass (under the six-tree floor). Next: `enrich.py --next`.
