@@ -44,7 +44,8 @@
       "story": "A chronicler is said to lie under this lime. Christian Kelch, the Baltic-German pastor who wrote a chronicle of Livonia and died in 1710, gave the tree the name it still carries, and the tradition in Tallinn is that he is buried at its foot. Nobody has dug to check.\n\nThe numbers are firmer than the legend, if older than anyone would like. In 1999 the trunk measured 462 centimetres round at chest height, the tree stood 16 metres tall, and a ring assessment put it at 340 to 350 years. Carry that forward and it lands near 370 now, which sits comfortably with the other date attached to it: a 1938 newspaper gave its planting as 1680. It is generally called the oldest tree in Tallinn.\n\nIt looks its age. Two main branches are what remains of the crown, the base is hollow and has been sealed against further rot, and it has been pruned to keep weight off what is still holding. When Tallinn was named European Tree City in 2015, this tree was part of the argument.\n\nIt stands beside Niguliste, the church that burned in the air raid of March 1944 and took decades to rebuild. The lime, by then already close to three centuries old, needed no rebuilding.",
       "verified_sources": [
         "https://et.wikipedia.org/wiki/Kelchi_p%C3%A4rn",
-        "http://entsyklopeedia.ee/artikkel/kelchi_p%C3%A4rn"
+        "http://entsyklopeedia.ee/artikkel/kelchi_p%C3%A4rn",
+        "https://eelis.ee/default.aspx?state=4%3B68547596%3Best%3Beelisand%3B%3B&comp=objresult%3Dala&obj_id=706"
       ],
       "access": "Free, stands in public space near Niguliste Church in the Old Town",
       "transport": "Central Tallinn Old Town, short walk from Vabaduse väljak (Freedom Square) tram/bus stops",
@@ -66,7 +67,13 @@
         ],
         "label": "July to August, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "official_register": {
+        "name": "EELIS (Estonian Nature Information System), protected natural monument KLO4000069, no. KLO4000069",
+        "url": "https://eelis.ee/default.aspx?state=4%3B68547596%3Best%3Beelisand%3B%3B&comp=objresult%3Dala&obj_id=706"
+      },
+      "girth_cm": 462,
+      "height_m": 18
     },
     {
       "id": "tln_002",
@@ -107,7 +114,13 @@
       },
       "how_to_recognise": "The only ginkgo on the corner, and the fan-shaped leaves give it away at any time of year it has them.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "EELIS (Estonian Nature Information System), protected natural monument KLO4000051, no. KLO4000051",
+        "url": "https://eelis.ee/default.aspx?state=2%3B-1158249072%3Best%3Beelisand%3B%3B&comp=objresult%3Dala&obj_id=708"
+      },
+      "girth_cm": 164,
+      "height_m": 13
     },
     {
       "id": "tln_003",
