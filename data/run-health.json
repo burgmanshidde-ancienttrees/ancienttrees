@@ -2,25 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-20T00:27:23+00:00",
-   "date": "2026-08-20",
-   "run_id": "32317366676",
-   "minutes": 6.9,
-   "minutes_basis": "measured",
-   "turns": 65,
-   "denials": 8,
-   "denials_source": "permission_denials: Bash",
-   "ended": "success",
-   "tokens": 7693181,
-   "claims_held": [
-    "houston"
-   ],
-   "commits": 1,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-20T02:46:06+00:00",
    "date": "2026-08-20",
    "run_id": "32325803604",
@@ -20929,6 +20910,46 @@
     },
     {
      "city": "stockholm",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-08T00:06:34+00:00",
+   "date": "2026-10-08",
+   "run_id": "37705873696",
+   "minutes": 12.9,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 66,
+   "denials": 22,
+   "denials_source": "permission_denials: Bash(cat ; ? ; ? ; ? ...), Bash(cat | head ; mkdir ; for ...), Bash(cat | head ; mkdir), Bash(cd && curl ; wc), Bash(cd && for ; do ; curl ...), Bash(cd && mkdir && cd && for ...), Bash(curl ; wc), Bash(grep | grep | biglietti | tickets ...), Bash(grep | head), Bash(mkdir ; cd ; curl ; curl ...), Bash(mkdir ; cd ; for ; do ...), Bash(mkdir), Bash(python3 ; import ; ? ; ? ...), Bash(python3 ; import ; write ; for ...), Bash(python3 | tail ; git ; git ...), Bash(rm ; python3 ; archive-index ; 2026-10-08 ...), Bash(timeout ; echo ; tail)",
+   "ended": "success",
+   "tokens": 1490794,
+   "claims_held": [],
+   "commits": 13,
+   "cities_touched": 5,
+   "cities": [
+    {
+     "city": "kagoshima",
+     "trees": 0
+    },
+    {
+     "city": "nice",
+     "trees": 0
+    },
+    {
+     "city": "perth",
+     "trees": 0
+    },
+    {
+     "city": "sequoia-national-park",
+     "trees": 0
+    },
+    {
+     "city": "verona",
      "trees": 0
     }
    ],
