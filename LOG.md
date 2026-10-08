@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Vienna verify + write pass, 17 trees merged
+
+Enrichment queue is empty on the proven cities (Padua, Salzburg, Graz, Lucca, Dresden done above). Then Vienna: 7 new Wien Naturdenkmal park trees (vie_045 to vie_051; vie_051's pin stays approximate, a group of four poplars). The write pass also merged 10 already-written trees waiting in research files: chi_014/015/017, fdl_001, fuk_017, nbg_018, ptl_027, sfo_008, tkc_004/005. German overlays for Vienna and Nuremberg, Japanese for Fukuoka, count copy fixed in Chicago, San Francisco, Vienna. Held back on rule 10 (access unstated): lpz_019, ftw_018. tree-of-the-year std_001/nsb_001 wait on the four-tree place floor. Not delivered from Vienna: Schönbrunn trio (no pin or photo), Prater black poplar (maybe gone). Preflight 0 problems. Note: vie_047 uses Salix alba Tristis while other cities use Salix babylonica for weeping willow.
+
 ## 2026-10-08 Dresden enrichment
 
 Nine of twelve indexed trees: per-tree Umweltamt records (stadtplan.dresden.de Kurzdokumentation) as register URLs with ND numbers, four heights, Pillnitz camellia height, two best_time entries (lime flowering, beech colour). Splittereiche, Saengereiche and Bismarck Oak are not Naturdenkmale and stay gaps. dre_016's stored girth 535 is a 0.3 m base figure, not a 1.30 m girth: worth a correction when a real figure turns up.

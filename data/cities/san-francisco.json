@@ -3,11 +3,11 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "sfo_001",
-  "intro": "San Francisco was a town of a few hundred people in 1848 and Golden Gate Park was bare dunes into the 1870s, so every tree here was planted on purpose, and 150 years counts as old. Six of the seven are city Landmark Trees, designated one at a time by ordinance: a cork oak atop a stairway street, an Australian fig outside a hospital, two flowering ash at a library door, the Dolores Street palms, and a Cole Valley pohutukawa that flowers yellow instead of red. The seventh is the tree the city lights every Christmas.",
+  "intro": "San Francisco was a town of a few hundred people in 1848 and Golden Gate Park was bare dunes into the 1870s, so every tree here was planted on purpose, and 150 years counts as old. Seven of the eight are city Landmark Trees, designated one at a time by ordinance: a cork oak atop a stairway street, an Australian fig outside a hospital, two flowering ash at a library door, the Dolores Street palms, the Quesada Avenue palms, and a Cole Valley pohutukawa that flowers yellow instead of red. The eighth is the tree the city lights every Christmas.",
   "meta_description": "Every tree in San Francisco was planted on purpose. The city's Landmark Trees, plus the cypress it has lit as its Christmas tree since 1929.",
   "question_answer": "Nobody has dated most of San Francisco's remarkable trees, so the honest answer is a planting era rather than an age. The oldest here is Uncle John's Tree, the Monterey cypress on the lawn outside McLaren Lodge at the eastern end of Golden Gate Park, which the park's historians put at planted around 1880, so roughly 135 to 155 years old. It is named for John McLaren, the park's long-serving superintendent, who died in 1943, and it has been lit as the city's Christmas tree since 1929. Of the other six, only the yellow-flowered pohutukawa on Stanyan Street has a planting era on record, the late 1950s; the rest carry no documented planting date, and the city's Landmark Tree register does not record one. If you know a date, or have a photograph old enough to help, tell us.",
   "question_meta": "Uncle John's Tree, a Monterey cypress planted around 1880 outside McLaren Lodge, is the oldest tree on this San Francisco page. Where to find it.",
-  "question_context": "San Francisco keeps a Landmark Tree register rather than an ancient-tree register, and the difference explains this page. Trees are designated one at a time under Article 16 of the Public Works Code, on grounds of size, rarity or the part they play in a street, and the list runs to roughly twenty-five trees citywide. Six of the seven here come off it. What that register does not record is age, and neither does anything else within reach: not the 2005 Board of Supervisors resolution that landmarked the bay laurel outside the Customs House, not the city's own entry for the Dolores Street palms, not Mike Sullivan's Trees of San Francisco, which is the standard reference for this city. That leaves the dating to circumstance. The gold rush arrived in 1849, Golden Gate Park was sand dunes until the 1870s, and the Mission and Bernal Heights streets these trees stand on were laid out later still, so a tree of 150 years is an early one by local reckoning. If you can date any of the seven, that is the gap this page would most like closed.",
+  "question_context": "San Francisco keeps a Landmark Tree register rather than an ancient-tree register, and the difference explains this page. Trees are designated one at a time under Article 16 of the Public Works Code, on grounds of size, rarity or the part they play in a street, and the list runs to roughly twenty-five trees citywide. Seven of the eight here come off it. What that register does not record is age, and neither does anything else within reach: not the 2005 Board of Supervisors resolution that landmarked the bay laurel outside the Customs House, not the city's own entry for the Dolores Street palms, not Mike Sullivan's Trees of San Francisco, which is the standard reference for this city. That leaves the dating to circumstance. The gold rush arrived in 1849, Golden Gate Park was sand dunes until the 1870s, and the Mission and Bernal Heights streets these trees stand on were laid out later still, so a tree of 150 years is an early one by local reckoning. If you can date any of the seven, that is the gap this page would most like closed.",
   "faq": [
     {
       "q": "What is the oldest tree in San Francisco?",
@@ -266,6 +266,31 @@
         "width": 3000,
         "height": 4000
       }
+    },
+    {
+      "id": "sfo_008",
+      "name": "The Canary Palms of Quesada Avenue",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "age_estimate": "around a century",
+      "age_min": 90,
+      "age_max": 105,
+      "location": {
+        "address": "Quesada Avenue median, just west of 3rd Street",
+        "latitude": 37.731,
+        "longitude": -122.3893,
+        "neighbourhood": "Bayview"
+      },
+      "verified_sources": [
+        "https://sfpublicworks.org/services/significant-and-landmark-trees (SF Public Works official list: 'Quesada Street Median (West of 3rd Street to dead end): 13 Canary Island Date Palms')",
+        "https://www.sanfranciscostory.com/quesada-gardens/ (fetched directly: median planted around 1920 with Canary Island Date Palms, same as Dolores Street; palms survived the twentieth century)"
+      ],
+      "access": "Free, public street median in the Bayview; walk along the sidewalk.",
+      "transport": "Muni T Third or the 15 bus on 3rd Street, then a short walk west on Quesada (stop not verified)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Official Landmark Tree group of 13 palms on one compact block, one place to stand (like the Dolores palms already published as sfo_002). Planting date conflict: sanfranciscostory.com says about 1920; a search summary (lead only) says about 1932. Do not narrow. Pin: Nominatim places Quesada Avenue between roughly 37.7299,-122.3854 and 37.7331,-122.3911; I set an approximate mid-block point, NOT checked on aerial imagery. lifecheck NONE at pin: alive evidence is only the official list and undated-recent articles; flag. Girth and height unknown.",
+      "story": "Thirteen Canary Island date palms line the median of Quesada Avenue in the Bayview, and San Francisco counts all thirteen as one Landmark Tree. Public Works lists them that way: the Quesada Street median, from just west of 3rd Street to the dead end, 13 palms.\n\nThey are the same species as the far better known palms down the middle of Dolores Street. Local history has the Quesada median planted with them around 1920. One account puts it closer to 1932, and we have not been able to settle which, so call them roughly a century old, give or take a decade.\n\nWhat they have seen since is most of the Bayview's twentieth century, and they outlasted all of it; the city's current landmark list still carries all thirteen. A palm of this kind holds no rings to count, and nobody has published the height or the girth of any of the thirteen, so the age rests on the planting date alone.\n\nThis is a street, not a park, and that is the appeal: the whole landmark stands on one compact block, so there is one place to go and thirteen trees to count. Walk the sidewalk rather than the median itself.\n\nOur pin is a mid-block point that has not been checked against aerial imagery, so treat it as the street rather than a spot. The 3rd Street end is the easy one to find. If you know when these palms were really planted, tell us.",
+      "how_to_recognise": "You can recognise them as the row of thirteen Canary Island date palms down the median of Quesada Avenue, running west from 3rd Street to the dead end."
     }
   ]
 }

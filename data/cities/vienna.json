@@ -4,9 +4,9 @@
   "status": "needs_curation",
   "hero_tree_id": "vie_014",
   "intro": "Vienna keeps its oldest trees on an official register: since 1936, remarkable specimens have qualified as Naturdenkmäler, natural monuments protected the same way a listed building is. That bureaucratic habit is why this city can name an exact protection date for almost every tree on this list, down to the day. The trees below range from a plane tree Mozart is said to have walked past on his way to piano lessons to a ginkgo planted beside a composer's statue in the city's first public park. All of them are free to see.",
-  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. 43 remarkable trees, all free to visit.",
+  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. 50 remarkable trees, all free to visit.",
   "question_answer": "The oldest tree in Vienna is a plane tree tucked into the Fähnrichhof courtyard off Singerstraße in the old town, estimated at more than 280 years old. A 1987 survey already measured its age at over 250 years, and in the centuries since it has grown around part of the iron fence from St Stephen's old cathedral graveyard, closed in the 1730s. It stands a short walk from Stephansplatz, reached through a public passage from Blutgasse.",
-  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstrasse courtyard. Where it stands, and 42 more remarkable trees.",
+  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstrasse courtyard. Where it stands, and 49 more remarkable trees.",
   "question_context": "Vienna's natural monument register, running since 1936, gives an exact protection date for almost every historic tree in the city, but planting dates are rarer, so ages here are mostly expert estimates rather than documented facts. The Singerstraße plane is the exception: a formal 1987 survey put its age at more than 250 years even then, which is about as close to a hard number as Vienna's tree records get, ahead of the ginkgo by the Schubert monument and the Hauptallee's chestnut avenue, both estimated rather than surveyed. It grows in the Fähnrichhof, a courtyard reached through a passage (a Durchhaus, in local terms) connecting Blutgasse and Singerstraße in the first district, a few minutes on foot from Stephansplatz. The tree's most remarkable feature is not visible: part of the iron fence that once enclosed St Stephen's Cathedral's own graveyard, closed to burials in the 1730s, is sealed inside its trunk, absorbed by decades of growth.",
   "faq": [
     {
@@ -1587,6 +1587,206 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "vie_045",
+      "name": "The Theodor-Körner-Park Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 180 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 430,
+      "location": {
+        "address": "Theodor-Körner-Park, opposite Breitenfurter Straße 13, Meidling",
+        "latitude": 48.172975,
+        "longitude": 16.328572,
+        "neighbourhood": "Meidling (12th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Meidling (ND 847)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Quercus robur, 430 cm, planting year 1842, 0 m from the register point, Theodor-Körner-Park)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This oak has its own boulder. Beside the trunk in Theodor-Körner-Park sits a stone with an inscription plaque, and the oak it refers to is known as the Theodor-Körner-Eiche. Vienna lists it as Natural Monument 847, and the monument list gives its reasons in three words: size, habit and vitality.\n\nThe size is easy to check. The city's tree cadastre measures the trunk at 4.3 metres round, and records a planting year of 1842. That is the cadastre's own entry for this tree rather than a dated document, so read it as a guide: somewhere between 150 and 200 years, with 1842 the likeliest. If it holds, the oak was a sapling while Meidling was still a separate village, and it has stood through the village becoming part of Vienna in 1892 and through two world wars.\n\nOne thing the paperwork does not say is why the oak carries the name it does, or when the stone was set beside it. It would be tidy to assume the tree was planted in somebody's honour, and no source we have found says so. The stone points at the tree; the tree came first, or at least nobody has shown otherwise.\n\nIt is a free walk in a public park with no opening hours. Go in leaf, when the crown that earned the protection is at its fullest. If you know the story of the stone, tell us.",
+      "how_to_recognise": "You can recognise it by the boulder with an inscription plaque that stands beside the trunk, 4.3 metres round. It stands opposite Breitenfurter Straße 13; the big horse chestnut about 30 metres away is a different tree.",
+      "best_time": null
+    },
+    {
+      "id": "vie_046",
+      "name": "The Venediger-Au-Park Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 175 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 546,
+      "location": {
+        "address": "Venediger-Au-Park, Leopoldstadt",
+        "latitude": 48.218538,
+        "longitude": 16.395899,
+        "neighbourhood": "Leopoldstadt (2nd district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Leopoldstadt (ND 781, protected 2012-08-11)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Platanus x acerifolia, 546 cm, planting year 1849, 2 m from the register point, Venediger-Au-Park)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The thickest tree in the Venediger-Au-Park was protected only in 2012, when it was already more than a century and a half old. Vienna made this London plane Natural Monument 781 that August, and the reason on the list is its role in the landscape: the park would look like a different place without it.\n\nThe trunk explains why. The city's tree cadastre puts it at 5.46 metres round, which is a very heavy plane by any city's standard, and records a planting year of 1849. That year is the cadastre's entry rather than a planting document, so we give it as a band, roughly 150 to 200 years. If 1849 is right, the plane went into the ground a year after the revolution of 1848 shook Vienna.\n\nSince then it has outlasted a great deal of the Leopoldstadt around it. It was here when the Danube was straightened in the 1870s, and here while the district's Jewish community grew into one of the largest in Europe and was then destroyed in the 1930s and 1940s. The tree stood through all of it in what is now a small neighbourhood park, and for most of that time nobody wrote it down.\n\nThe other big trees here are a 1914 lime and a 1921 ash, both around three metres round. Next to them this one looks like it belongs to an older map, which it does.",
+      "how_to_recognise": "You can recognise it as the thickest trunk in the park, 5.46 metres round, with the patchy flaking bark of a plane. The park's next biggest trees, a lime and an ash, stand about 30 metres off and are far slimmer.",
+      "best_time": null
+    },
+    {
+      "id": "vie_047",
+      "name": "The Bruno-Morpurgo-Park Weeping Willow",
+      "species": "Weeping Willow (Salix alba Tristis)",
+      "age_estimate": "not documented",
+      "girth_cm": 305,
+      "location": {
+        "address": "Bruno-Morpurgo-Park, Endresstraße 10-14, Liesing",
+        "latitude": 48.148165,
+        "longitude": 16.291391,
+        "neighbourhood": "Liesing (23rd district), Atzgersdorf"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Liesing (ND 814)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Salix alba Tristis, 305 cm, planting year 1970, 1 m from the register point, Bruno-Morpurgo-Park)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Vienna protects plenty of trees for being old. This weeping willow in Atzgersdorf was protected for its character. It is Natural Monument 814, and the monument list says the reason plainly: it gives the Bruno-Morpurgo-Park its look.\n\nIt does that lopsidedly. The list describes an asymmetric crown about ten metres across and roughly twelve metres tall, the long hanging shoots falling further on one side than the other. When it was designated, the trunk measured 2.40 metres round at one metre up. The city's tree cadastre now records 3.05 metres. That is how willows behave: they put on girth fast, which is also why a thick willow is a poor guide to age.\n\nSo we do not give one. The cadastre carries a planting year, but nothing we have found shows it to be more than an estimate, and on a tree that grows this quickly a guess would be worse than nothing. What can be said is that weeping willows are not long-lived trees, and one large enough and shapely enough to be singled out by the city is worth a stop on its own terms.\n\nIt stands in a small public park on Endresstraße in the 23rd district, free and open. Come in early spring, when the curtain of shoots turns yellow-green before almost anything else around it has leafed. If you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the hanging curtain of shoots and the crown that leans further to one side, about ten metres across. It stands in the Bruno-Morpurgo-Park on Endresstraße, trunk about three metres round.",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "kind": "fresh leaves",
+        "label": "late March into April, when the hanging shoots turn yellow-green ahead of everything else"
+      }
+    },
+    {
+      "id": "vie_048",
+      "name": "The Hugo-Pepper-Park Wingnut",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "not documented",
+      "girth_cm": 427,
+      "location": {
+        "address": "Wolkersbergenstraße / Eugen-Jettel-Weg turning loop (Hugo-Pepper-Park), Hietzing",
+        "latitude": 48.175308,
+        "longitude": 16.273842,
+        "neighbourhood": "Hietzing (13th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Hietzing (ND 816)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Pterocarya fraxinifolia, 427 cm, height class 21-25 m, 4 m from the register point, Hugo-Pepper-Park)"
+      ],
+      "access": "Free. Stands in the public Hugo-Pepper-Park (MA 42 Parkanlage) at the end of Wolkersbergenstraße.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Its crown is wider than it is tall. When Vienna listed this Caucasian wingnut as Natural Monument 816, the measurements came out at about 26 metres across and about 18 metres high, a tree spreading sideways over the end of a suburban street in Hietzing.\n\nThat shape is the whole reason it is protected. The monument list says the free-standing crown shapes the look of the place, and the place is unglamorous: the turning loop at the end of Wolkersbergenstraße, where it meets the Eugen-Jettel-Weg, in the small public Hugo-Pepper-Park. It is a tree that would not look out of place in a palace garden, standing where a road runs out.\n\nWingnuts come from the Caucasus and northern Iran and were planted in European parks from the nineteenth century, prized for exactly this habit of growing big, fast and wide. The trunk measured 4.10 metres round at one metre when it was designated; the city's tree cadastre now gives 4.27 metres and puts the height in the 21 to 25 metre class. No source we have found records when it was planted, so we give no age. If you know, tell us.\n\nCome in early summer. That is when the wingnut hangs out the strings of winged seeds that give it its name, long green chains dangling all over that enormous crown.",
+      "how_to_recognise": "You can recognise it by the crown, far wider than it is tall, spreading over the turning loop at the end of Wolkersbergenstraße. The trunk is about 4.3 metres round, and in summer long green seed chains hang from it.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "fruit",
+        "label": "June and July, when long chains of winged seeds hang all over the crown"
+      }
+    },
+    {
+      "id": "vie_049",
+      "name": "The Maurer Schubertpark Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "not documented",
+      "girth_cm": 320,
+      "location": {
+        "address": "Maurer Schubertpark, corner Rielgasse / Kaserngasse, Liesing",
+        "latitude": 48.149932,
+        "longitude": 16.259543,
+        "neighbourhood": "Liesing (23rd district), Mauer"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Liesing (ND 813)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Tilia cordata, 304 cm, height class 11-15 m, 0 m from the register point, Maurer Schubertpark)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Vienna protected this lime for owning a street corner. The monument list says Natural Monument 813 dominates the crossing of Rielgasse and Kaserngasse in Mauer, and that is the job it still does from the corner of the Maurer Schubertpark.\n\nThe measurements are those of a broad, low tree rather than a tall one. At designation the trunk was 3.20 metres round at one metre up, the crown about 18 metres across and the height about 16 metres, so the crown is wider than the tree is high. The city's tree cadastre, which records it at exactly the register point, gives 3.04 metres and an 11 to 15 metre height class. The gap between the two girths is most likely a different measuring height or date, not a shrinking tree.\n\nMauer was a wine village on the southern edge of Vienna until it joined the city in 1938, and small-leaved limes like this one are the classic village tree of Central Europe, planted at crossings, churches and greens. Nobody has published a planting date for this one, so we give no age. If you know it, tell us.\n\nGo at the end of June or in early July. Small-leaved limes flower then, and a crown this size fills the corner with the scent and the hum of bees.",
+      "how_to_recognise": "You can recognise it as the broad lime commanding the corner of Rielgasse and Kaserngasse, crown wider than it is tall, trunk just over three metres round. It stands at the edge of the Maurer Schubertpark.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers and the corner smells of it"
+      }
+    },
+    {
+      "id": "vie_050",
+      "name": "The Münchenstraße Park Ash",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "not documented",
+      "girth_cm": 458,
+      "location": {
+        "address": "Parkanlage Münchenstraße, Werthenburggasse 9, Meidling",
+        "latitude": 48.169349,
+        "longitude": 16.297026,
+        "neighbourhood": "Meidling (12th district), Hetzendorf"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Meidling (ND 356, protected 1946-05-03)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Fraxinus excelsior, 458 cm, height class 21-25 m, 1 m from the register point, Parkanlage Münchenstraße)"
+      ],
+      "access": "Free. Stands in the public Parkanlage Münchenstraße (MA 42); register address is Werthenburggasse 9, the park side, not a private garden (cadastre files it under the public park).",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Vienna made this ash a natural monument on 3 May 1946, less than a year after the war ended, while the city was still divided between four occupying powers and short of almost everything, firewood included. It is Natural Monument 356, one of the older entries on the register, and the list says nothing at all about why.\n\nThe trunk is argument enough. The city's tree cadastre measures it at 4.58 metres round, with a height in the 21 to 25 metre class, which makes it a very large common ash. Ash trees that size have become rarer across Europe in the last twenty years, as ash dieback has killed them by the million, so a big, living one in a city park is worth seeking out.\n\nIt stands in the Parkanlage Münchenstraße in Hetzendorf, in the 12th district. The register files it under the address Werthenburggasse 9, which sounds like a front garden and is not: the city's cadastre places the tree inside the public park, one metre from the register point. Entry is free.\n\nNobody has published a planting date, so we give no age. If you know more, tell us, and if you visit, tell us how the crown looks.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.58 metres round, an unusually heavy common ash in the 21 to 25 metre height class. It stands in the Parkanlage Münchenstraße on the Werthenburggasse side.",
+      "best_time": null
+    },
+    {
+      "id": "vie_051",
+      "name": "The Märzpark Lombardy Poplar",
+      "species": "Lombardy Poplar (Populus nigra 'Italica')",
+      "age_estimate": "not documented",
+      "girth_cm": 346,
+      "location": {
+        "address": "Märzpark, Vogelweidplatz, Rudolfsheim-Fünfhaus",
+        "latitude": 48.20191,
+        "longitude": 16.335824,
+        "neighbourhood": "Rudolfsheim-Fünfhaus (15th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Rudolfsheim-F%C3%BCnfhaus (ND 97, protected 1938)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Populus nigra Italica, 346 cm, height class 26-30 m, 3 m from the register point, Märzpark)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Almost every Lombardy poplar you have ever seen is male. The columnar tree spread across Europe from cuttings, and female trees of it are rare, so rare in German-speaking countries that when Vienna found four old ones together in the Märzpark it protected the group in 1938 as Natural Monument 97.\n\nThe trunks were 1.50 to 2.10 metres round then. What stands there now is less certain, and we would rather say so. The register still keeps one point for the group. The city's tree cadastre records a Lombardy poplar three metres from that point, 3.46 metres round and in the 26 to 30 metre height class, with a planting year of 1911, which would make it well over a century old if the cadastre's year is right. That is a lot of growth since 1938, though plausible for a poplar, and we have not reconciled the two. Whether the other three of the four still stand, we have not been able to check.\n\nThat matters because Lombardy poplars are short-lived trees, and a group that has made it from 1938 into the present would be remarkable in itself. It is also why our pin marks the park rather than a trunk. Look for the tallest, narrowest trees in the Märzpark by the Vogelweidplatz; the one in the cadastre reaches somewhere near thirty metres.\n\nIf you go, count them, and tell us how many of the four are left.",
+      "how_to_recognise": "You can recognise them as the tall, narrow column-shaped poplars in the Märzpark, the tallest near 30 metres with a trunk about 3.5 metres round. Our pin marks the park, not a single trunk.",
+      "best_time": null
     }
   ],
   "oldest_tree_id": "vie_001"
