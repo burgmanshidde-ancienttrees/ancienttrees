@@ -46,6 +46,11 @@ export interface SignInStrings {
    *  person came to do, because they did not press anything to get here. */
   titleContribute: string;
   subContribute: string;
+  /** The heading and line when the dialog opens from the ambassador seat
+   *  (2026-10-08): "have your say" was the vote's wording and named nothing
+   *  the person had pressed. */
+  titleAmbassador: string;
+  subAmbassador: string;
   /** An example address, in the local convention. */
   placeholder: string;
   send: string;
@@ -92,6 +97,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subFeedback: "Every vote, correction and tip gets checked and answered, and your account is how the answer reaches you.",
     titleContribute: "You need an account to add a tree",
     subContribute: "Your account keeps the trees you send, so you can see what happened to each one.",
+    titleAmbassador: "Sign in to apply",
+    subAmbassador: "Your account is how we reach you about the list.",
     placeholder: "you@example.com",
     send: "Email me a sign-in link",
     google: "Continue with Google",
@@ -123,6 +130,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subFeedback: "Cada voto, corrección y sugerencia se comprueba y se responde, y tu cuenta es como te llega la respuesta.",
     titleContribute: "Necesitas una cuenta para añadir un árbol",
     subContribute: "Tu cuenta guarda los árboles que envías, así que puedes ver qué pasó con cada uno.",
+    titleAmbassador: "Inicia sesión para solicitarlo",
+    subAmbassador: "Tu cuenta es como te escribimos sobre la lista.",
     placeholder: "tu@ejemplo.com",
     send: "Envíame un enlace de acceso",
     google: "Continuar con Google",
@@ -153,6 +162,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subFeedback: "Controlliamo e rispondiamo a ogni voto, correzione e segnalazione, e la risposta ti arriva sul tuo account.",
     titleContribute: "Serve un account per aggiungere un albero",
     subContribute: "Il tuo account conserva gli alberi che invii, così puoi vedere che fine ha fatto ciascuno.",
+    titleAmbassador: "Accedi per candidarti",
+    subAmbassador: "Il tuo account è il modo in cui ti scriviamo sulla lista.",
     placeholder: "tu@esempio.com",
     send: "Inviami un link di accesso",
     google: "Continua con Google",
@@ -180,6 +191,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subFeedback: "We controleren en beantwoorden elke stem, correctie en tip, en via je account krijg je het antwoord.",
     titleContribute: "Je hebt een account nodig om een boom toe te voegen",
     subContribute: "Je account bewaart de bomen die je stuurt, zodat je kunt zien wat er met elke boom is gebeurd.",
+    titleAmbassador: "Log in om je aan te melden",
+    subAmbassador: "Via je account nemen we contact met je op over de lijst.",
     placeholder: "jij@voorbeeld.nl",
     send: "Mail me een inloglink",
     google: "Doorgaan met Google",
@@ -207,6 +220,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subFeedback: "Wir prüfen und beantworten jede Stimme, jede Korrektur und jeden Hinweis, und über dein Konto erreicht dich die Antwort.",
     titleContribute: "Für einen neuen Baum brauchst du ein Konto",
     subContribute: "Dein Konto behält die Bäume, die du schickst, damit du siehst, was aus jedem geworden ist.",
+    titleAmbassador: "Melde dich an, um dich zu bewerben",
+    subAmbassador: "Über dein Konto schreiben wir dir zur Liste.",
     placeholder: "du@beispiel.de",
     send: "Schick mir einen Anmeldelink",
     google: "Weiter mit Google",
@@ -234,6 +249,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subFeedback: "Verificamos e respondemos a cada voto, correção e sugestão, e a resposta chega-te através da tua conta.",
     titleContribute: "Precisa de uma conta para adicionar uma árvore",
     subContribute: "A sua conta guarda as árvores que envia, para poder ver o que aconteceu a cada uma.",
+    titleAmbassador: "Inicie sessão para se candidatar",
+    subAmbassador: "A sua conta é como lhe escrevemos sobre a lista.",
     placeholder: "tu@exemplo.com",
     send: "Envia-me um link de acesso",
     google: "Continuar com Google",
@@ -261,6 +278,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subFeedback: "Nous vérifions et répondons à chaque vote, correction et suggestion, et la réponse vous parvient par votre compte.",
     titleContribute: "Il vous faut un compte pour ajouter un arbre",
     subContribute: "Votre compte conserve les arbres que vous envoyez, pour que vous puissiez voir ce qu'il est advenu de chacun.",
+    titleAmbassador: "Connectez-vous pour postuler",
+    subAmbassador: "Votre compte nous permet de vous écrire au sujet de la liste.",
     placeholder: "vous@exemple.com",
     send: "Envoyez-moi un lien de connexion",
     google: "Continuer avec Google",
@@ -288,6 +307,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subFeedback: "投票も訂正も情報も、すべて確認して返事をする。返事はアカウントに届く。",
     titleContribute: "木を追加するにはアカウントが必要です",
     subContribute: "アカウントが送った木を保存するので、それぞれがどうなったかを確認できます。",
+    titleAmbassador: "サインインして申し込む",
+    subAmbassador: "リストについての連絡はアカウント宛てに届きます。",
     placeholder: "sample@example.com",
     send: "サインインのリンクを送る",
     google: "Googleで続ける",

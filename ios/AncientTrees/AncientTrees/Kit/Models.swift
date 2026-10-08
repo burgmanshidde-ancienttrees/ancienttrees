@@ -203,18 +203,6 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// "autumn", "fruit", "leaves", "catkins", "winter", "peak"), decided on the
     /// website (phenology.ts seasonKey, 2026-10-04). Nil without a best_time.
     public var seasonKey: String? = nil
-    /// The official register this tree is listed in, decided on the website
-    /// (site/src/lib/official-register.ts, 2026-10-06) and read here, never
-    /// re-decided. `url` is the authority's own record for this tree, nil when
-    /// the register is only named. A `var` with a default for the memberwise
-    /// initialiser and for catalogues written before the feed carried it.
-    public var register: Register? = nil
-
-    public struct Register: Codable, Hashable, Sendable {
-        public let name: String
-        public let url: String?
-    }
-
     public struct DayTrip: Codable, Hashable, Sendable {
         public let place: String
         public let km: Int
@@ -238,7 +226,6 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case bestTime = "best_time"
         case girthCm = "girth_cm"
         case dayTrip = "day_trip"
-        case register
     }
 
     /// The common name only, without the Latin in parentheses. Map pins and

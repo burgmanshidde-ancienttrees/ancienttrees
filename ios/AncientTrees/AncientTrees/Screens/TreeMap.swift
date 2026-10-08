@@ -1819,6 +1819,9 @@ enum MapLayers {
 final class RecentreButton: UIButton {
     private weak var map: MLNMapView?
     private let onRefused: (() -> Void)?
+    /// Kept alive, because a CLLocationManager released mid-request takes its
+    /// question with it and the system never shows the dialog.
+    private let asker = CLLocationManager()
 
     init(map: MLNMapView, onRefused: (() -> Void)? = nil) {
         self.map = map
@@ -1852,6 +1855,16 @@ final class RecentreButton: UIButton {
     @objc private func recentre() {
         guard let map else { return }
         let status = CLLocationManager().authorizationStatus
+        // NEVER ASKED IS NOT REFUSED (2026-10-08, after Hidde pressed this and
+        // nothing happened). It went to the refused branch, whose sheet says
+        // to open Settings, where an app that never asked has no Location row
+        // to switch on. A first tap is the moment to ask, the way Apple Maps'
+        // own location button does; the answer arrives at every manager,
+        // LocationProvider's included, and the next tap centres.
+        if status == .notDetermined {
+            asker.requestWhenInUseAuthorization()
+            return
+        }
         guard status == .authorizedWhenInUse || status == .authorizedAlways else {
             // Never silence. A control that answers a tap with nothing is worse
             // than one that is not there, because the person tries it twice and

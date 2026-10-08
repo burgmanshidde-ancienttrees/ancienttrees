@@ -310,14 +310,20 @@ export const SIGNIN_JS = `
     var sub = document.getElementById('signin-sub');
     var title = document.getElementById('signin-title');
     var appMode = !!document.querySelector('#signin-openapp:not([hidden])');
+    // The ambassador seat names what was pressed (2026-10-08), the app's
+    // SignInReason.ambassador.
+    var amb = want && want.kind === 'ambassador';
     if (title && !appMode) {
       title.textContent = title.getAttribute(
-        reason === 'contribute' ? 'data-contribute'
+        amb ? 'data-ambassador'
+        : reason === 'contribute' ? 'data-contribute'
         : reason === 'feedback' ? 'data-feedback'
         : reason === 'expired' ? 'data-expired' : 'data-generic') || title.textContent;
     }
     if (sub && !appMode) {
-      if (reason === 'contribute') {
+      if (amb) {
+        sub.textContent = sub.getAttribute('data-ambassador') || sub.getAttribute('data-generic');
+      } else if (reason === 'contribute') {
         sub.textContent = sub.getAttribute('data-contribute') || sub.getAttribute('data-generic');
       } else if (reason === 'expired') {
         sub.textContent = sub.getAttribute('data-expired') || sub.getAttribute('data-generic');

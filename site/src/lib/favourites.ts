@@ -13,6 +13,9 @@
 import type { CollectionEntry } from "astro:content";
 import { cityFaceTree, usablePhoto } from "./images";
 import { renderableTrees } from "./trees";
+import fs from "node:fs";
+import path from "node:path";
+import { DATA } from "./data-dir";
 
 export const FAVOURITE_CITIES = ["barcelona", "rome", "paris", "berlin", "amsterdam", "london", "new-york", "lisbon", "vienna", "edinburgh"];
 
@@ -60,4 +63,29 @@ export const COLLECTION_MONTHS: Record<string, number[]> = {
 /** The collections in season this month, in the table's order. */
 export function collectionsInSeason(month: number): string[] {
   return Object.entries(COLLECTION_MONTHS).filter(([, m]) => m.includes(month)).map(([slug]) => slug);
+}
+
+// THE AUTUMN SHELVES LEAD WITH AUTUMN PHOTOGRAPHS (Hidde, 2026-10-08: "select
+// as much as possible trees that have photos that are yellow from autumn").
+// scripts/photo_autumn.py measures how much of each lead photograph's centre
+// band is gold, orange or red and writes data/photo-autumn.json; these shelves
+// put the most autumnal first and keep the collection's own order otherwise. A
+// score is only trusted while it belongs to the tree's CURRENT photograph.
+const AUTUMN_SORTED = new Set(["autumn-colour-trees", "ginkgos-worth-a-november-trip"]);
+let autumnCache: Record<string, { url: string; autumn: number }> | null = null;
+
+export function orderForSeason(slug: string, ids: string[], photoUrl: (id: string) => string | undefined): string[] {
+  if (!AUTUMN_SORTED.has(slug)) return ids;
+  if (!autumnCache) {
+    const f = path.join(DATA, "photo-autumn.json");
+    autumnCache = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")) : {};
+  }
+  const score = (id: string) => {
+    const s = autumnCache![id];
+    return s && s.url === photoUrl(id) ? s.autumn : 0;
+  };
+  return ids
+    .map((id, i) => ({ id, i, s: score(id) }))
+    .sort((a, b) => b.s - a.s || a.i - b.i)
+    .map((x) => x.id);
 }

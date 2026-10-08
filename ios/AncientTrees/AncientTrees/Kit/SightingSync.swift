@@ -45,6 +45,19 @@ enum SightingSync {
             // only travel phone to account, so a photograph filed under the
             // wrong tree stayed wrong forever on the phone that took it.
             let known = sightings.all.first { $0.id == id }
+            // A PICTURE THAT NEVER ARRIVED IS ASKED FOR AGAIN (2026-10-08,
+            // Hidde: "several of my trees no longer have a photo"). A row was
+            // adopted with no picture whenever its one download failed, was
+            // marked synced, and every later merge skipped it on the line
+            // below, so the photograph stayed missing on the phone for good
+            // while the account held it all along. The retry touches the
+            // picture and nothing else, because the row itself may carry an
+            // edit of this phone's that has not been sent yet.
+            if let known, known.photo == nil, let file = row["photo"] as? String,
+               let data = await download(file, token: s.accessToken),
+               let img = UIImage(data: data) {
+                sightings.attachPhoto(id, image: img)
+            }
             if known != nil,
                !takeRemote(remoteUpdated: stamp(row["updated_at"]),
                            localSynced: known?.syncedAt) { continue }

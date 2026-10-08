@@ -174,15 +174,22 @@ struct AmbassadorWantedRow: View {
         // dismisses itself once the account is in; the tap is finished here
         // rather than swallowed, and nothing is sent until Send request.
         .sheet(isPresented: $signingIn, onDismiss: { if account.isSignedIn { confirming = true } }) {
-            SignInSheet(reason: .feedback, localCount: 0)
+            SignInSheet(reason: .ambassador, localCount: 0)
         }
-        .alert("Become the ambassador for \(place)?", isPresented: $confirming) {
-            Button("Send request") { send() }
-            Button("Not now", role: .cancel) {}
-        } message: {
-            // The address we will write to, so the request can never look
-            // anonymous from either side (the website prints the same line).
-            Text("You help keep this list right: you add photographs, check the facts and tell us which trees are missing." + writeTo)
+        // WHAT THE ROLE IS, BEFORE THE YES (Hidde, 2026-10-08: "add some text
+        // in an overlay both app and web that says an ambassador helps make
+        // this list as good as possible for city, help with photos info and
+        // walks. Apply here"). It was a bare alert with one sentence. Google
+        // Maps' Local Guides join sheet is the convention: what you will do,
+        // one line each, and one button. The website's dialog carries the
+        // same three lines (AmbassadorLine.astro, i18n ambassadorAskPoints).
+        .sheet(isPresented: $confirming) {
+            AmbassadorApplySheet(place: place, writeTo: writeTo) {
+                confirming = false
+                send()
+            }
+            .presentationDetents([.medium, .large])
+            .presentationDragIndicator(.visible)
         }
         .alert("Request sent", isPresented: $sentShown) {
             Button("Done", role: .cancel) {}
@@ -224,6 +231,64 @@ struct AmbassadorWantedRow: View {
             let ok = await Submission.requestAmbassador(city: place, token: token)
             sending = false
             if ok { asked = true; sentShown = true } else { failedShown = true }
+        }
+    }
+}
+
+/// The ambassador explainer and its one button. The same three lines as the
+/// website's dialog, in the same order.
+struct AmbassadorApplySheet: View {
+    let place: String
+    let writeTo: String
+    let apply: () -> Void
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Image(systemName: "checkmark.seal")
+                .font(.system(size: 22, weight: .semibold))
+                .foregroundStyle(Brand.moss)
+                .frame(width: 48, height: 48)
+                .overlay(Circle().strokeBorder(Brand.moss, style: StrokeStyle(lineWidth: 1.5, dash: [3, 3])))
+            Text("Become the ambassador for \(place)")
+                .font(.brand(22, .bold, relativeTo: .title2))
+                .foregroundStyle(Brand.ink)
+                .fixedSize(horizontal: false, vertical: true)
+            Text("An ambassador helps make this list as good as it can be.")
+                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            VStack(alignment: .leading, spacing: 12) {
+                point("camera", "Add photographs of the trees")
+                point("checkmark.circle", "Check the facts and tell us which trees are missing")
+                point("figure.walk", "Help put together walks past them")
+            }
+            if !writeTo.isEmpty {
+                Text(writeTo.trimmingCharacters(in: .whitespaces))
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+            }
+            Spacer(minLength: 0)
+            Button("Apply", action: apply)
+                .buttonStyle(BrandButtonStyle(prominent: true))
+                .frame(maxWidth: .infinity)
+                .accessibilityIdentifier("ambassador-apply")
+            Button("Not now") { dismiss() }
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(Brand.inkSoft)
+                .frame(maxWidth: .infinity, minHeight: 44)
+        }
+        .padding(24)
+        .brandGround()
+    }
+
+    private func point(_ symbol: String, _ text: String) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 12) {
+            Image(systemName: symbol)
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(Brand.moss)
+                .frame(width: 22)
+            Text(text)
+                .font(.subheadline).foregroundStyle(Brand.ink)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 }

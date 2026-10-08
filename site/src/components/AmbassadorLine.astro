@@ -94,6 +94,12 @@ const closeLabel = signInCopy(lang).close;
       <span class="ambassador-avatar ambassador-avatar-open amb-mark" aria-hidden="true"><Fragment set:html={icon("seal-check", "bold", "ic")} /></span>
       <h3 id="amb-title">{U.ambassadorAskTitle(place)}</h3>
       <p>{U.ambassadorAskBody}</p>
+      {/* What the role is, before anybody applies (Hidde, 2026-10-08: "an
+          ambassador helps make this list as good as possible for city, help
+          with photos, info and walks. Apply here"). Google Maps' Local Guides
+          join sheet lists what you will do the same way. The app's sheet
+          (AmbassadorBadge.swift) carries the same three lines. */}
+      <ul class="amb-points">{U.ambassadorAskPoints.map((pt) => <li>{pt}</li>)}</ul>
       <p class="amb-who" data-tpl={U.ambassadorWriteTo("{email}")} hidden></p>
       <button type="button" class="go-btn amb-send">{U.ambassadorAskSend}</button>
       <button type="button" class="amb-later">{U.ambassadorNotNow}</button>
@@ -189,6 +195,8 @@ const closeLabel = signInCopy(lang).close;
 )}
 
 <style>
+  .amb-points { margin: 0.25rem 0 0.75rem; padding-left: 1.2rem; text-align: left; }
+  .amb-points li { margin: 0.3rem 0; }
   .ambassadors { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
   .ambassador { display: flex; align-items: center; gap: 10px; max-width: 100%; }
   .ambassador-avatar {

@@ -2,6 +2,24 @@
 
 <!-- archive-index -->
 
+## 2026-10-08 (session) - Hidde's app walk: Discover, the tree page, tags, the ambassador sheet, and why his account looked empty
+
+**Why:** Hidde walked the app on his phone and sent one long list. Everything below shipped on web and app together.
+
+**Discover (app):** "Trees near you" is the first row (with a real fix only); "Your favourites" is second, with an empty state that explains the heart; the sentence under each autumn card is gone; December to February get "At their best this month" (trees whose best_time is now, mostly bare winter silhouettes) because no seasonal collection covers them; the autumn shelves lead with the most autumnal photographs (new `scripts/photo_autumn.py` scores each lead photo's gold and red share into data/photo-autumn.json, browse.json orders by it, the daily digest refreshes it; the first scoring from this sandbox got only part of the way because the proxy blocks Wikimedia here, so the digest finishes it).
+
+**Tree page:** the official register row is gone from the app (and from the feed) and moved on the website from the fact card to the first line of Sources. The line under the name is a breadcrumb, Country · City · District, both surfaces; the district is plain text. Discover more shows places only, no collections, both surfaces. The access and transport lines are reading size with a moss glyph.
+
+**Tags:** "Seen" is the white pill everywhere (the app's MineCard and the website's no-photo cards were green); the app's season chips carry the website's glyphs. Your own trees say "Your tree" until they make the map and then "On the map"; no pending or declined wording anywhere.
+
+**Ambassador:** the seat opens a sheet explaining the role (photographs, facts and missing trees, walks) with Apply, app and website in eight languages; sign-in from it says "Sign in to apply". The seat has been on the app's city page since 10-07 15:39; a build from before that only had it on the city's map page, which is why it looked random.
+
+**Account bugs, root-caused and fixed in the app:** any refresh answer that was not a 2xx or 5xx counted as a refusal, so a rate limit, a hotel or train proxy or a captive portal signed you out, and the sign-out forgets the profile and the synced photos. Only Supabase's own 400/401 refusal signs out now. The profile was also cleared whenever a launch could not renew the token, and nothing re-read the account on sign-in; both fixed (`reloadTheAccount()` on sign-in and on returning to the app). A photograph whose one download failed was never asked for again; the merge now retries it, so the missing photos come back from the account by themselves. The map's location button sent a never-asked phone to Settings; it now asks.
+
+**Sign-in sheet (app):** the website's heading ("Keep your trees on every device") and the brand face and colours.
+
+**Kagoshima:** the leaning camphor at the Shiroyama car park is already live as kag_016 (photo approved, pin confirmed). Itoshima's two camphors are live under Fukuoka (fuk_016, fuk_018).
+
 ## 2026-10-08 (session) - the noindex split by engine: photo-less tree pages leave Google only, Bing keeps them
 
 **Why:** Hidde asked whether Bing needs the same noindex as Google and said "Ok do the split". The generic robots tag had emptied Bing, DuckDuckGo and Yahoo of 11,500 pages too; Bing never demoted us and its referrals fell to zero the day the tag went on (DATA.md referrer rows, 09-12 to 10-04).

@@ -83,7 +83,9 @@ export const MY_TREES_JS = `
 
   function card(row) {
     var meta = [row.species, when(row.taken_at)].filter(Boolean).join(' \\u00b7 ');
-    var label = LABEL[row.status] || LABEL.mine;
+    // Yours until it makes the map, and nothing said in between (Hidde,
+    // 2026-10-08: no pending message; MineCard.swift draws the same two).
+    var label = row.status === 'published' ? LABEL.published : 'Your tree';
     return '<article class="tree-card tree-card-nonum mine-card" data-id="' + esc(row.id) + '">'
       + '<div class="tree-card-photo mine-photo"' + (row.photo ? '' : ' hidden') + '>'
         + '<img alt="' + esc(titleOf(row)) + '" loading="lazy"></div>'
@@ -119,8 +121,8 @@ export const MY_TREES_JS = `
   var yourState = {};
   function photoState(status) {
     if (status === 'published') return "Your photo is on the tree's page";
-    if (status === 'declined') return '';
-    return 'Sent to us';
+    // Nothing while it waits or after a no (2026-10-08, Sighting.photoState).
+    return '';
   }
 
   function clear() {

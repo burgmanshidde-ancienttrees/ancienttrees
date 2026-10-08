@@ -61,9 +61,10 @@ interface Props {
   girthLabel: string;
   recognise?: string | null;
   address?: string | null;
-  place: string;
-  /** After the place, as its own link, only when no district stands in front
-   * of the city (the app's rule, so the line stays one line). Null on the
+  /** The district, last in the breadcrumb and plain text: there is no page
+   * for it, so it must not look like a link (lib/place-line.ts placeDistrict). */
+  district?: string | null;
+  /** First in the breadcrumb, a link when the country has a page. Null on the
    * translated pages, which have no country pages. */
   country?: string | null;
   countryUrl?: string | null;
@@ -165,10 +166,16 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
       <div class="td-group">
         <h1>{p.name}{(tree as any).label && <span class="tree-label">{(tree as any).label}</span>}</h1>
         <div class="tree-place-row">
-          {/* City and country are two links, as in the app (Hidde, 2026-09-24:
-              "op Sydney en Australia apart kunnen klikken"). */}
-          <p class="tree-place"><a href={p.cityUrl}>{p.place}</a>{p.country && (
-            <Fragment>, {p.countryUrl ? <a href={p.countryUrl}>{p.country}</a> : <span>{p.country}</span>}</Fragment>
+          {/* A BREADCRUMB, broad to narrow: country, city, district (Hidde,
+              2026-10-08: "Japan - Tokyo - neighbourhood is the build up and
+              all clickable or at least only make things look clickable"). The
+              order AllTrails, Tripadvisor and Wikipedia use. Country and city
+              are links and underlined; the district has no page, so it is
+              plain text and looks it. Same on the app's tree page. */}
+          <p class="tree-place">{p.country && (
+            <Fragment>{p.countryUrl ? <a href={p.countryUrl}>{p.country}</a> : <span>{p.country}</span>}<span class="tree-place-sep" aria-hidden="true">·</span></Fragment>
+          )}<a href={p.cityUrl}>{p.cityName}</a>{p.district && (
+            <Fragment><span class="tree-place-sep" aria-hidden="true">·</span><span class="tree-place-district">{p.district}</span></Fragment>
           )}</p>
           <span class="tree-place-dot" aria-hidden="true">·</span>
           <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="vote" lang={p.lang} />
@@ -190,11 +197,6 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
           </div>
           {p.girth && p.speciesUrl && <a class="tb-row tb-species" href={p.speciesUrl}><span>{U.labelSpecies}</span><b>{spCommon}<Fragment set:html={icon("caret-right", "bold", "ic fact-go")} /></b></a>}
           {p.girth && !p.speciesUrl && <div class="tb-row tb-species"><span>{U.labelSpecies}</span><b>{spCommon}</b></div>}
-          {register && (register.url ? (
-            <a class="tb-row tb-register" href={register.url} target="_blank" rel="noopener"><span>{U.labelRegister}</span><b>{register.name}<Fragment set:html={icon("arrow-up-right", "bold", "ic fact-go")} /></b></a>
-          ) : (
-            <div class="tb-row tb-register"><span>{U.labelRegister}</span><b>{register.name}</b></div>
-          ))}
           {isApprox && (
             <p class="tb-loc tb-loc-approx">
               <b>{U.locApprox}</b>{" "}
@@ -227,11 +229,17 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
         {p.transport && <p><Fragment set:html={icon("train-simple")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.transport}</span></p>}
       </div>
 
-      {sources.length > 0 && (
+      {/* The official register lives HERE, as the first source, and not in
+          the fact card (Hidde, 2026-10-08: "they should just be on the website
+          less prominent, they are just there for Google"). It sat in the card
+          beside age and species for two days; a designation is evidence, so
+          it goes with the evidence. Gone from the app entirely. */}
+      {(sources.length > 0 || register) && (
         <section class="td-section tree-sources">
           <h2>{U.sourcesHeading}</h2>
           <p>{U.sourcesLine}</p>
           <ul>
+            {register && <li class="tree-sources-register">{U.labelRegister}: {register.url ? <a href={register.url} target="_blank" rel="noopener">{register.name}</a> : <span>{register.name}</span>}</li>}
             {sources.map((s) => (
               <li>{s.href ? <a href={s.href} target="_blank" rel="noopener">{s.label}</a> : <span>{s.label}</span>}</li>
             ))}

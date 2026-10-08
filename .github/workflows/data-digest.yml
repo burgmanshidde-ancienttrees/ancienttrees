@@ -90,6 +90,12 @@ jobs:
       - name: Measure new photographs
         run: python3 scripts/photo_res.py || true
 
+      # How much autumn is in each seasonal tree's lead photograph, so the
+      # app's autumn shelves lead with gold (2026-10-08). Only new or changed
+      # photographs are fetched, throttled, and a failure costs a number.
+      - name: Score autumn photographs
+        run: timeout 900 python3 scripts/photo_autumn.py || true
+
       # The mutual watchdog. The night runs already redispatch THIS workflow
       # when it goes stale (CLAUDE.md rung 2); until now nothing did the
       # reverse, so a stretch of dropped nightly schedules would only ever be
@@ -174,7 +180,7 @@ jobs:
           # were never fetched at all, while last_seen on the two live links sat
           # frozen at the day they were found.
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json \
-            data/cities data/backlinks.json \
+            data/cities data/backlinks.json data/photo-autumn.json \
             data/city-coords.json data/research/*-register-candidates.json 2>/dev/null || \
             git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json data/city-coords.json data/backlinks.json
           if git diff --cached --quiet; then

@@ -21,7 +21,7 @@ import { mapHead } from "../../lib/map";
 import { treePageScript } from "../../lib/tree-page-js";
 import TreeDetail from "../../components/TreeDetail.astro";
 import { hreflangForCity, ui } from "../../lib/i18n";
-import { placeParts } from "../../lib/place-line";
+import { placeDistrict } from "../../lib/place-line";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -101,7 +101,7 @@ const parkPage = parkName ? (parkPages as Map<string, any>).get(parkGroupKey(cit
 
 const cityName = city.data.city;
 const country = city.data.country;
-const placeLine = placeParts(tree.location.neighbourhood, cityName, country);
+const district = placeDistrict(tree.location.neighbourhood, cityName);
 const cslug = city.id;
 // Contract B v1.18. This chip has been gated on `allTrees.length > 1` since
 // long before the rule was written down, which is the same line; it reads it
@@ -230,11 +230,12 @@ const nearbyCards = nearby.map((t) => ({
 // and question-page links live here.
 const chips = [
   // Names only, the app's discoverChip labels (Hidde, 2026-09-24: "or use the
-  // same short labels"): the city, the collections this tree is in, the
-  // country; plus the species, the park and the question page, which the web
+  // same short labels"): the city and the country; plus the species, the park and the question page, which the web
   // has pages for and Contract A links to.
+  // No collections (Hidde, 2026-10-08: "should not show collections just
+  // cities parks countries islands provinces"). Places, and the species,
+  // never the lists a tree is on. Contract A asks for none.
   { href: `/${cslug}`, label: cityName, icon: "buildings" },
-  ...collections.map((c) => ({ href: `/collections/${c.slug}`, label: c.title, icon: "stack" })),
   ...(spSlug ? [{ href: `/species/${spSlug}`, label: spCommon, icon: "leaf" }] : []),
   ...(parkPage ? [{ href: `/parks/${parkPage.slug}`, label: parkPage.name || parkPage.park, icon: "tree" }] : []),
   ...(countryUrl ? [{ href: `/${countryPages.get(country)}`, label: country, icon: "globe-hemisphere-east" }] : []),
@@ -254,8 +255,8 @@ const scripts = treePageScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TRE
     story={tree.story ?? ""} access={tree.access ?? ""} transport={tree.transport ?? ""}
     ageLabel={ageLabel} ageValue={ageValue} girth={girth} girthLabel="Girth"
     recognise={tree.how_to_recognise ?? null} address={loc.address ?? null}
-    place={placeLine.place}
-    country={placeLine.country}
+    district={district}
+    country={country}
     countryUrl={countryUrl ? `/${countryPages.get(country)}` : null}
     cityName={cityName} cityUrl={`/${cslug}`} crumbs={crumbItems} canonical={canonical}
     shots={shots} nearby={nearbyCards} chips={chips} seasonHtml={seasonHtml} />

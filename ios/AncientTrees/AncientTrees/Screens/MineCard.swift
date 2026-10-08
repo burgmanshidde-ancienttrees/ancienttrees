@@ -26,12 +26,7 @@ struct MineCard: View {
                     // 2026-09-27: "you've definitely seen them as well"): you
                     // photographed it standing there.
                     .overlay(alignment: .topLeading) {
-                        Label("Seen", systemImage: "checkmark.seal.fill")
-                            .font(.caption2.weight(.semibold))
-                            .foregroundStyle(.white)
-                            .padding(.horizontal, 8).padding(.vertical, 5)
-                            .background(Brand.canopy, in: .capsule)
-                            .padding(10)
+                        SeenTag().padding(10)
                     }
             }
             VStack(alignment: .leading, spacing: 6) {
@@ -40,20 +35,27 @@ struct MineCard: View {
                         .font(.cardTitle).foregroundStyle(Brand.ink)
                         .lineLimit(2).multilineTextAlignment(.leading)
                     Spacer(minLength: 6)
-                    Text("Your tree")
-                        .font(.caption2.weight(.semibold))
-                        .foregroundStyle(Brand.moss)
-                        .padding(.horizontal, 8).padding(.vertical, 4)
-                        .background(Brand.moss.opacity(0.15), in: .capsule)
-                }
-                HStack(spacing: 6) {
-                    Text(sighting.species ?? sighting.date.formatted(date: .abbreviated, time: .omitted))
-                    if sighting.status != .mine {
-                        Text("·")
-                        Text(sighting.status.label)
-                            .foregroundStyle(sighting.status == .published ? Brand.moss : Brand.inkSoft)
+                    // YOUR TREE, AND THEN THE UPGRADE (Hidde, 2026-10-08: no
+                    // pending message; a tree is yours first and "upgrades to
+                    // an ancient tree official"). iNaturalist's Research Grade
+                    // is the convention: one quiet label while it is yours, one
+                    // filled one the day it makes the map, and nothing said
+                    // about anything in between or about a no.
+                    if sighting.status == .published {
+                        Label("On the map", systemImage: "checkmark.seal.fill")
+                            .font(.caption2.weight(.semibold))
+                            .foregroundStyle(.white)
+                            .padding(.horizontal, 8).padding(.vertical, 4)
+                            .background(Brand.moss, in: .capsule)
+                    } else {
+                        Text("Your tree")
+                            .font(.caption2.weight(.semibold))
+                            .foregroundStyle(Brand.moss)
+                            .padding(.horizontal, 8).padding(.vertical, 4)
+                            .background(Brand.moss.opacity(0.15), in: .capsule)
                     }
                 }
+                Text(sighting.species ?? sighting.date.formatted(date: .abbreviated, time: .omitted))
                 .font(.caption).foregroundStyle(Brand.inkSoft)
             }
             .padding(.horizontal, 14).padding(.vertical, 12)

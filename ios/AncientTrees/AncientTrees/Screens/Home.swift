@@ -46,6 +46,7 @@ struct HomeView: View {
     @Environment(\.locationState) private var location
     @Environment(CatalogueStore.self) private var store
     @Environment(Navigator.self) private var navigator
+    @Environment(Saved.self) private var saved
     @State private var searching = false
     /// Worked out once rather than on every redraw.
     ///
@@ -69,6 +70,11 @@ struct HomeView: View {
         var thickest: (collection: TreeCollection, trees: [Tree])? = nil
         var islands: [(slug: String, name: String, country: String, count: Int)] = []
         var inSeason: [(collection: TreeCollection, trees: [Tree])] = []
+        /// The photographed trees closest to you, nearest first.
+        var near: [Tree] = []
+        /// Trees whose best_time includes this month, for the months no
+        /// seasonal collection covers (December to February).
+        var atTheirBest: [Tree] = []
     }
 
     private var month: Int { Calendar.current.component(.month, from: Date()) }
@@ -159,6 +165,30 @@ struct HomeView: View {
                     return ($0.ageMin ?? 0) > ($1.ageMin ?? 0)
                 }
             if best.count >= 4 { s.home = (here, Array(best.prefix(12))) }
+        }
+
+        // TREES NEAR YOU, FIRST (Hidde, 2026-10-08: "it make sense to make the
+        // first list on top of discover trees near you"). AllTrails' Explore
+        // opens on "Trails near you" and Google Maps' Explore on what is around
+        // the map's centre. Only with a real fix, for the same reason as "best
+        // in your country": a list "near you" built from the fallback is a lie.
+        if location.known {
+            let near = catalogue.nearest(to: origin.lat, origin.lng, limit: 60, withinKm: 50)
+                .map(\.tree).filter { $0.photo != nil }
+            if near.count >= 3 { s.near = Array(near.prefix(12)) }
+        }
+
+        // WHEN AUTUMN TURNS TO WINTER (Hidde, 2026-10-08: "what happens when
+        // autumn turns to winter?"). The seasonal collections cover March to
+        // November; December to February had no shelf at all. In those months
+        // the shelf is the trees whose own best_time is now, which is the
+        // website's /in-season answer read per tree (in January that is mostly
+        // bare winter silhouettes, the one season where the frame is the show).
+        if s.inSeason.isEmpty {
+            let best = catalogue.trees.filter {
+                $0.photo != nil && ($0.bestTime?.months ?? []).contains(month)
+            }
+            if best.count >= 4 { s.atTheirBest = Array(best.prefix(12)) }
         }
 
         s.islands = catalogue.facets.islands.compactMap(card)
@@ -389,6 +419,44 @@ struct HomeView: View {
         }
     }
 
+    /// YOUR FAVOURITES, second on Discover (Hidde, 2026-10-08: "you could also
+    /// add a favourites list? To get people to favourite and log in").
+    ///
+    /// Convention: Netflix's "My List" and Spotify's "Your library" rows sit
+    /// near the top of the browse screen, and Airbnb's wishlist shows an empty
+    /// state that tells you what the heart does rather than hiding. So the row
+    /// is there with or without saves: full, it is your trees; empty, it is one
+    /// sentence pointing at the heart. The heart itself asks for sign-in when
+    /// it has to, so this card carries no button and gates nothing.
+    ///
+    /// Read live from Saved rather than built into the deck, so a heart tapped
+    /// on a tree page is on this row when you come back.
+    @ViewBuilder private var favouritesShelf: some View {
+        let mine = saved.favourites.compactMap { catalogue.tree($0.treeId) }
+        if !mine.isEmpty {
+            shelf(title: "Your favourites", subtitle: nil, trees: Array(mine.prefix(12)))
+        } else {
+            VStack(alignment: .leading, spacing: 12) {
+                ShelfHeader(title: "Your favourites")
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "heart")
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundStyle(Brand.moss)
+                        .frame(width: 28)
+                    Text("You can keep the trees you want to visit here by tapping the heart on any tree.")
+                        .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Spacer(minLength: 0)
+                }
+                .padding(16)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .brandCard(12)
+                .padding(.horizontal, 16)
+                .accessibilityIdentifier("discover-favourites-empty")
+            }
+        }
+    }
+
     private var topSpeciesHere: [(name: String, count: Int)] { deck.species }
 
     // MARK: - the browse state
@@ -405,6 +473,12 @@ struct HomeView: View {
         // shows Places, Home, Work and Your Guides, none of which claims to be
         // near anything. Ours was ranking every walk by its distance from Dam
         // square and titling the result "Walks near you".
+        if !deck.near.isEmpty {
+            shelf(title: "Trees near you", subtitle: nil, trees: deck.near)
+        }
+
+        favouritesShelf
+
         if Launch.walks, !walksNear.isEmpty, location.known { walkShelf }
 
         cityShelf
@@ -413,7 +487,6 @@ struct HomeView: View {
             shelf(title: "The oldest trees we map",
                   subtitle: nil,
                   trees: oldest,
-                  season: false,
                   more: .index(.oldest))
         }
 
@@ -425,21 +498,24 @@ struct HomeView: View {
         // above this line is the screen as he approved it.
         if let h = deck.home {
             shelf(title: "Best in \(Self.withArticle(h.country))", subtitle: nil,
-                  trees: h.trees, season: false, more: .country(h.country))
+                  trees: h.trees, more: .country(h.country))
         }
 
         ForEach(deck.inSeason, id: \.collection.slug) { c in
             shelf(title: c.collection.title, subtitle: nil, trees: c.trees,
-                  season: true, more: .collection(c.collection.slug))
+                  more: .collection(c.collection.slug))
+        }
+        if !deck.atTheirBest.isEmpty {
+            shelf(title: "At their best this month", subtitle: nil, trees: deck.atTheirBest)
         }
 
         if let t = deck.tallest {
             shelf(title: "The tallest trees", subtitle: nil, trees: t.trees,
-                  season: false, more: .collection(t.collection.slug))
+                  more: .collection(t.collection.slug))
         }
         if let t = deck.thickest {
             shelf(title: "The thickest trunks", subtitle: nil, trees: t.trees,
-                  season: false, more: .collection(t.collection.slug))
+                  more: .collection(t.collection.slug))
         }
         if deck.islands.count >= 3 { islandShelf }
     }
@@ -510,7 +586,7 @@ struct HomeView: View {
     }
 
     private func shelf(title: String, subtitle: String?, trees: [Tree],
-                       season: Bool, more: Route? = nil) -> some View {
+                       more: Route? = nil) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             // No padding here. ShelfHeader puts its own 16 on, and a second
             // one stacks: the header sat at 32 while every card under it sat
@@ -523,16 +599,12 @@ struct HomeView: View {
                 HStack(alignment: .top, spacing: 12) {
                     ForEach(trees) { t in
                         NavigationLink(value: Route.tree(t.id)) {
-                            VStack(alignment: .leading, spacing: 6) {
-                                TreeCard(tree: t, uniformTitle: true)
-                                if season, let b = t.bestTime {
-                                    Text(b.label)
-                                        .font(.caption).foregroundStyle(Brand.inkSoft)
-                                        .lineLimit(2).fixedSize(horizontal: false, vertical: true)
-                                        .padding(.horizontal, 2)
-                                }
-                            }
-                            .frame(width: 260)
+                            // No season sentence under the card (Hidde,
+                            // 2026-10-08: "the sentence below the cards of
+                            // autumn worth the trip should be gone"). The
+                            // shelf's title already says why these are here.
+                            TreeCard(tree: t, uniformTitle: true)
+                                .frame(width: 260)
                         }
                         .buttonStyle(.plain)
                         .accessibilityIdentifier("tree-card")

@@ -60,8 +60,16 @@ KNOWN_OPTIONAL = {
 # Models.swift that ever declared it wrote `let whyGoRaw: String?`, so no
 # shipped build can fail on its absence, and the property it fed is gone from
 # TreeDetail in the same change.
+#
+# register, removed 2026-10-08 (Hidde: the official register is for Google, on
+# the website only). The one version of Models.swift that ever declared it
+# wrote `public var register: Register? = nil`, an Optional, which synthesized
+# Decodable reads with decodeIfPresent, so its absence fails no installed copy.
 KNOWN_GONE = {
     ("/api/trees.json", "trees[].why_go"),
+    ("/api/trees.json", "trees[].register"),
+    ("/api/trees.json", "trees[].register.name"),
+    ("/api/trees.json", "trees[].register.url"),
 }
 
 

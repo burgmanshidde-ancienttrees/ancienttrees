@@ -106,7 +106,12 @@ public final class Profiles {
 
     /// Your own row, and the two counts beside it.
     public func load(userId: String?, token: String?) async {
-        guard let userId, let token else { me = nil; followers = 0; following = 0; return }
+        // Signed out clears; a token we could not renew does NOT (2026-10-08).
+        // The old guard wiped the avatar and the follow counts on every launch
+        // where the refresh found no signal, although the person was still
+        // signed in. Without a token the reads go out on the publishable key,
+        // which the profile and count reads accept.
+        guard let userId else { me = nil; meLoaded = false; followers = 0; following = 0; return }
         if let data = try? await send(request(
             "profiles?select=user_id,display_name,avatar_url,units&user_id=eq.\(userId)",
             "GET", token: token)),
