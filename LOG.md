@@ -11,6 +11,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Kagoshima enrichment
+
+Enrichment pass on Kagoshima's 7 indexed trees. Two got the authority's own record: kag_003 (city preserved-tree no. 6, height 13.5 m; the 4.85 m girth was measured at 1.5 m, so left out) and kag_010 (Special Natural Monument of Japan, height about 30 m). The other five have no record in the city list or the prefecture's pages; no season set (no camphor moment worth the trip). Four READY Dresden leads wait for a write pass (under the six-tree floor). Next: `enrich.py --next`.
+
 ## 2026-10-08 (night run) - Nice enrichment, two access lines
 
 - **Rung:** enrichment first (prepare.py). Visits last 7 days: 1,498 (1,775 views). Health rung 2: only 6 of 12 knocks delivered in 24h (GitHub dropping the cron); I did not dispatch one by hand.
