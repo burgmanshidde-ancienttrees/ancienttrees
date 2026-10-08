@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Lucca enrichment
+
+Three trees: MASAF register sheet numbers (26/E715/LU/09, 34/E715/LU/09, 25/E715/LU/09), Orto Botanico price and hours from the garden's own visit page, Torre Guinigi booking and steps from turismo.lucca.it. No new measurements (two already had them; the tower oaks are a group record).
+
 ## 2026-10-08 Graz enrichment
 
 Eight Naturdenkmal trees: register ids from the Stadt Graz open-data layer (CC BY 4.0), Schloss Eggenberg park price and hours for the copper beech (official tickets page), best_time for the copper beech (autumn colour) and the Lustbuhel chestnut (October fruit) from the species files. No measurements published anywhere found.
