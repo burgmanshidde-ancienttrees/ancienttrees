@@ -11,6 +11,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Sequoia National Park enrichment
+
+General Sherman got the NPS page for the tree, an 83.8 m height and the fee and trail facts; the other three got the fee line only. No girth (the NPS figure is a base measure), no season (no giant sequoia moment worth the trip).
+
 ## 2026-10-08 Verona enrichment, Dresden READY leads
 
 Verona: the Plane of Piazza Indipendenza got its MASAF register sheet (02/L781/VR/05) with girth 505 cm and height 35.5 m; its Ginkgo got the register id; Giardino Giusti got opening hours (price not published). The Piazza Bra cedar has no register entry. The four READY Dresden leads were false positives (no source URL; a school yard; a possibly dying beech; a torso), so none shipped and they went back to verify or held. Next: `enrich.py --next`.

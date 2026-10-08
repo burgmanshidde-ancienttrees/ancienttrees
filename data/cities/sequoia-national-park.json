@@ -48,9 +48,12 @@
       },
       "verified_sources": [
         "https://en.wikipedia.org/wiki/General_Sherman_Tree",
-        "https://home.nps.gov/seki/learn/nature/sherman.htm"
+        "https://home.nps.gov/seki/learn/nature/sherman.htm",
+        "https://www.nps.gov/seki/planyourvisit/fees.htm",
+        "https://www.nps.gov/seki/learn/nature/sherman.htm (NPS statistics table: height above base 274.9 ft / 83.8 m; circumference at ground 31.1 m is a base figure, not girth at 1.30 m, so girth is left out)",
+        "https://www.nps.gov/seki/learn/nature/sherman.htm"
       ],
-      "access": "Paid entry (Sequoia National Park entrance fee); a short, partly paved, downhill walk from the main parking lot (uphill on the return, or use the seasonal shuttle).",
+      "access": "Park entry fee: $35 per private vehicle (valid 1-7 days; other passes accepted; non-US residents 16+ pay an extra $100 unless on an annual or America the Beautiful pass; the park takes no cash). The Main Trail starts at the Wolverton Road parking lot and runs half a mile (0.8 km) downhill, paved with a few stairs, and back uphill. Disability-placard holders can park at a small lot on Generals Highway with a short accessible trail; shuttles serve it in shuttle season. In snow the Wolverton lot closes and the Generals Highway lot opens to all, and the trail can be icy. Stay on the paved trail; a fence protects the roots.",
       "transport": "No public transit; the nearest town is Three Rivers, CA, about 45 minutes' drive from the park entrance.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -64,7 +67,11 @@
         "width": 5289,
         "height": 7933
       },
-      "how_to_recognise": "You can recognise it by its immense base, about 31 metres round, the largest trunk volume of any living tree on Earth. It stands on the Main Trail in the Giant Forest, near the Sherman Tree parking lot."
+      "how_to_recognise": "You can recognise it by its immense base, about 31 metres round, the largest trunk volume of any living tree on Earth. It stands on the Main Trail in the Giant Forest, near the Sherman Tree parking lot.",
+      "official_register": {
+        "name": "National Park Service, Sequoia & Kings Canyon: The General Sherman Tree",
+        "url": "https://www.nps.gov/seki/learn/nature/sherman.htm"
+      }
     },
     {
       "id": "seq_002",
@@ -83,9 +90,10 @@
       },
       "verified_sources": [
         "https://en.wikipedia.org/wiki/President_(tree)",
-        "https://www.americansouthwest.net/california/sequoia/congress-trail.html"
+        "https://www.americansouthwest.net/california/sequoia/congress-trail.html",
+        "https://www.nps.gov/seki/planyourvisit/fees.htm"
       ],
-      "access": "Paid entry (Sequoia National Park entrance fee); on the paved Congress Trail loop, reached from the Sherman Tree parking lot near General Sherman.",
+      "access": "Park entry fee: $35 per private vehicle (valid 1-7 days; other passes accepted; non-US residents 16+ pay an extra $100 unless on an annual or America the Beautiful pass; the park takes no cash). On the paved Congress Trail loop, reached from the Sherman Tree parking lot near General Sherman.",
       "transport": "No public transit; nearest town Three Rivers, CA, about 45 minutes' drive from the park entrance.",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -118,9 +126,10 @@
       },
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Chief_Sequoyah_Tree",
-        "https://www.sequoiaquest.com/chief-sequoyah.html"
+        "https://www.sequoiaquest.com/chief-sequoyah.html",
+        "https://www.nps.gov/seki/planyourvisit/fees.htm"
       ],
-      "access": "Paid entry (Sequoia National Park entrance fee); on the paved Congress Trail loop.",
+      "access": "Park entry fee: $35 per private vehicle (valid 1-7 days; other passes accepted; non-US residents 16+ pay an extra $100 unless on an annual or America the Beautiful pass; the park takes no cash). Beside the paved Congress Trail loop, a few steps from the President.",
       "transport": "No public transit; nearest town Three Rivers, CA, about 45 minutes' drive from the park entrance.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -153,9 +162,10 @@
       },
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Lincoln_Tree",
-        "https://sequoiaquest.com/lincoln.html"
+        "https://sequoiaquest.com/lincoln.html",
+        "https://www.nps.gov/seki/planyourvisit/fees.htm"
       ],
-      "access": "Paid entry (Sequoia National Park entrance fee); Giant Forest grove, reached from the Congress Trail area near General Sherman.",
+      "access": "Park entry fee: $35 per private vehicle (valid 1-7 days; other passes accepted; non-US residents 16+ pay an extra $100 unless on an annual or America the Beautiful pass; the park takes no cash). Giant Forest grove, reached from the Congress Trail area near General Sherman.",
       "transport": "No public transit; nearest town Three Rivers, CA, about 45 minutes' drive from the park entrance.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
