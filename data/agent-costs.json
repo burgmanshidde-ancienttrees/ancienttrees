@@ -10054,5 +10054,15 @@
    "trees": 0,
    "note": "Enrich pass: Naturdenkmal Leipzig ND numbers on 19 trees from the Wikipedia list; no measurements exist in it; bald cypress autumn peak."
   }
+ ],
+ "2026-10-08": [
+  {
+   "date": "2026-10-08",
+   "target": "bologna",
+   "kind": "enrich",
+   "tokens": 141226,
+   "trees": 0,
+   "note": "Enrich pass: RAMI/AMI register ids on five trees, girth and height on the Rizzoli cedar. Montagnola and Villa Ghigi stay gaps; bbcc.regione.emilia-romagna.it returned 403."
+  }
  ]
 }
