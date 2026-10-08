@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Graz enrichment
+
+Eight Naturdenkmal trees: register ids from the Stadt Graz open-data layer (CC BY 4.0), Schloss Eggenberg park price and hours for the copper beech (official tickets page), best_time for the copper beech (autumn colour) and the Lustbuhel chestnut (October fruit) from the species files. No measurements published anywhere found.
+
 ## 2026-10-08 Salzburg enrichment
 
 Three Naturdenkmal trees got register ids (NDM00196, NDM00215, NDM00232, Land Salzburg open dataset via de.wikipedia list). No per-tree authority page found (salzburg.gv.at naturdenkmaeler page 404), no measurements published, access lines unchanged.

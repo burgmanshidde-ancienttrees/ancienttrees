@@ -59,7 +59,11 @@
       "curation_status": "flagged",
       "notes": "Register (id 118) plus Wikipedia's Naturdenkmal list agree within 3m on location. Register gives species as Acer campestre; Wikipedia's entry only says 'Ahorn' (maple, genus level), so species rests on the register alone. No age or girth found in either source.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by being a field maple, an unassuming hedgerow tree rather than a park's usual grand specimen. It stands on the wooded Schlossberg hill above the old town, below the clock tower."
+      "how_to_recognise": "You can recognise it by being a field maple, an unassuming hedgerow tree rather than a park's usual grand specimen. It stands on the wooded Schlossberg hill above the old town, below the clock tower.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Graz, Stadtvermessungsamt, open data), no. 118",
+        "url": null
+      }
     },
     {
       "id": "grz_002",
@@ -101,7 +105,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by being the pedunculate oak nearest the Muhlgasse side of the Volksgarten. It stands with two more protected trees, a plane just steps away and another within 170 metres."
+      "how_to_recognise": "You can recognise it by being the pedunculate oak nearest the Muhlgasse side of the Volksgarten. It stands with two more protected trees, a plane just steps away and another within 170 metres.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Graz, Stadtvermessungsamt, open data), no. 117",
+        "url": null
+      }
     },
     {
       "id": "grz_003",
@@ -135,7 +143,11 @@
       "curation_status": "flagged",
       "notes": "Register (id 119) and Wikipedia geocode within 3m. Register and Wikipedia use slightly different Latin binomials for the same London Plane hybrid (Platanus x hispanica / Platanus x acerifolia); recorded here as Platanus x acerifolia to match this project's existing canonical name for the species (hard rule 9). A dated Commons photo filed under Naturdenkmal 1290 independently corroborates the tree stands in the Volksgarten itself. No age or girth found. Part of a three-tree Volksgarten cluster with grz_002 and grz_004.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing a few paces from the Volksgarten's protected oak, forming Graz's tightest cluster of designated trees. It stands on the Muhlgasse side of the park."
+      "how_to_recognise": "You can recognise it by standing a few paces from the Volksgarten's protected oak, forming Graz's tightest cluster of designated trees. It stands on the Muhlgasse side of the park.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Graz, Stadtvermessungsamt, open data), no. 119",
+        "url": null
+      }
     },
     {
       "id": "grz_004",
@@ -168,7 +180,11 @@
       "curation_status": "flagged",
       "notes": "Register (id 120) and Wikipedia geocode within 3m. Confirmed as a separately registered tree on a different cadastral plot (742/6) from the Muhlgasse pair (742/2), not a duplicate registration. No age or girth found.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing apart from the park's other two protected trees, 170 metres away near the Volksgartenstrasse entrance. It stands on its own legal plot rather than beside its Muhlgasse neighbours."
+      "how_to_recognise": "You can recognise it by standing apart from the park's other two protected trees, 170 metres away near the Volksgartenstrasse entrance. It stands on its own legal plot rather than beside its Muhlgasse neighbours.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Graz, Stadtvermessungsamt, open data), no. 120",
+        "url": null
+      }
     },
     {
       "id": "grz_005",
@@ -234,7 +250,11 @@
       "curation_status": "flagged",
       "notes": "Register (id 89) and Wikipedia geocode within 2m. A dated 2014 Commons photo, filed under the Naturdenkmal 1138 category, independently shows the tree standing at that date. No age or girth found in any source checked.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing on Schillerplatz itself, an ordinary public square rather than a landscaped park, easy to walk past without a second glance. It stands in the St. Leonhard district, reachable directly by tram or bus."
+      "how_to_recognise": "You can recognise it by standing on Schillerplatz itself, an ordinary public square rather than a landscaped park, easy to walk past without a second glance. It stands in the St. Leonhard district, reachable directly by tram or bus.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Graz, Stadtvermessungsamt, open data), no. 89",
+        "url": null
+      }
     },
     {
       "id": "grz_007",
@@ -369,9 +389,10 @@
       "story": "Wikipedia's list places this copper beech at Eggenberger Allee 90 with a set of coordinates that match, to six decimal places, the GPS tag on a photograph taken here in June 2014 and filed on Wikimedia Commons under the tree's own protection number. Two facts agreeing that precisely is about as solid as a location gets on this page, even though the tree carries a smaller shadow of documentation than most of its neighbours: it sits in Austria's national monument register rather than the City of Graz's own separately maintained list, which does not carry it at all, and nobody has photographed or measured it since that one 2014 image. Fagus sylvatica 'Purpurea' is a cultivar bred for its dark red foliage rather than a wild variant, planted widely across European parks precisely for that colour, and this one earned formal protection in 1979 regardless of the missing girth and age figures. It grows inside Schlosspark Eggenberg, the grounds of a UNESCO World Heritage palace on the city's western edge, fifty seven metres from a protected Weymouth pine that shares its address and its 1979 designation date, reachable on the same paid ticket into the park.",
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 1506, protected 11.07.1979, reproducing Austria's national Naturdenkmal open-data register)",
-        "https://commons.wikimedia.org/wiki/File:Blutbuche_Graz,_Eggenberger_Allee_90_02.jpg (dated 2014-06-15, GPS-tagged at the exact register coordinate, filed under Steirisches Naturdenkmal 1506)"
+        "https://commons.wikimedia.org/wiki/File:Blutbuche_Graz,_Eggenberger_Allee_90_02.jpg (dated 2014-06-15, GPS-tagged at the exact register coordinate, filed under Steirisches Naturdenkmal 1506)",
+        "https://www.museum-joanneum.at/schloss-eggenberg-prunkraeume-und-gaerten/ihr-besuch/tickets-und-oeffnungszeiten"
       ],
-      "access": "Paid entry: stands inside Schlosspark Eggenberg, the grounds of Schloss Eggenberg (UNESCO World Heritage palace), about 57 metres from the Eggenberg Weymouth Pine.",
+      "access": "Paid entry: stands inside Schlosspark Eggenberg (park ticket 3 EUR for adults, 20 EUR annual pass). Park open daily all year, 8:00 to 19:00 from 15 March to 31 October and 8:00 to 17:00 in winter, closed 25 December. About 57 metres from the Eggenberg Weymouth Pine.",
       "transport": "Graz public transport toward the Eggenberg district; Eggenberger Allee 90 is the palace's signposted main entrance",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Blutbuche_Graz%2C_Eggenberger_Allee_90_02.jpg",
@@ -385,7 +406,15 @@
       "notes": "Flagged for two narrow reasons, not existence: (1) absent from the City of Graz's own live municipal GIS layer (checked directly; the other nine Eggenberg trees all appear in it, this one does not), so the two-source bar rests on Austria's national register (via Wikipedia) plus a dated, geo-tagged Commons photo rather than two independent GIS layers. (2) Alive-now evidence is a single 2014 photograph, 12 years old, no more recent sighting found. Location itself is solid: register coordinates and photo GPS agree to six decimal places.",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its dark red foliage, a copper beech cultivar bred for that colour. It stands inside Schlosspark Eggenberg, fifty seven metres from the protected Weymouth pine."
+      "how_to_recognise": "You can recognise it by its dark red foliage, a copper beech cultivar bred for that colour. It stands inside Schlosspark Eggenberg, fifty seven metres from the protected Weymouth pine.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper leaves turn and fall",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "grz_011",
@@ -418,7 +447,11 @@
       "curation_status": "flagged",
       "notes": "Register (id 27) and Wikipedia's independent Naturdenkmal list agree on coordinates within 4.5m. A dated Commons photo (Platane Elisabethstrasse 48.JPG, taken 14 May 2014, GPS-tagged at the exact register coordinate) independently shows the tree alive at that date; no more recent sighting found. Register lists species as Platanus x hispanica; recorded here as Platanus x acerifolia to match this project's existing canonical name for the species (hard rule 9). Reverse-geocoding the coordinate (Nominatim) returns a bridge feature (man_made=bridge) on Elisabethstrasse at this exact point, independent corroboration of a streamside public setting rather than a claim joining separate sources. No age or girth found.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing at the spot where a small bridge crosses a stream on Elisabethstrasse, a streamside verge planting. It stands in St. Leonhard, less than a kilometre from the Schillerplatz plane."
+      "how_to_recognise": "You can recognise it by standing at the spot where a small bridge crosses a stream on Elisabethstrasse, a streamside verge planting. It stands in St. Leonhard, less than a kilometre from the Schillerplatz plane.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Graz, Stadtvermessungsamt, open data), no. 27",
+        "url": null
+      }
     },
     {
       "id": "grz_012",
@@ -516,7 +549,18 @@
         "height": 2400
       },
       "photos": [],
-      "notes": "Graz Naturdenkmale register id 69 (Styrian Naturdenkmal 1121), owner public, species only. Geotagged Commons photo (Christian Pirkl, 2014-05-08) within about 1 m of the register point. No age, girth, height or recent alive evidence; the 2014 photo shows a storm-snapped top, so the page asks readers how it looks now."
+      "notes": "Graz Naturdenkmale register id 69 (Styrian Naturdenkmal 1121), owner public, species only. Geotagged Commons photo (Christian Pirkl, 2014-05-08) within about 1 m of the register point. No age, girth, height or recent alive evidence; the 2014 photo shows a storm-snapped top, so the page asks readers how it looks now.",
+      "official_register": {
+        "name": "Naturdenkmale (Stadt Graz, Stadtvermessungsamt, open data), no. 69",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the chestnuts ripen in their spiny burs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "grz_015",
