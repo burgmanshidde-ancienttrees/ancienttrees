@@ -11,6 +11,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 (night run) - Nice enrichment, two access lines
+
+- **Rung:** enrichment first (prepare.py). Visits last 7 days: 1,498 (1,775 views). Health rung 2: only 6 of 12 knocks delivered in 24h (GitHub dropping the cron); I did not dispatch one by hand.
+- **Done:** enrich pass on Nice (6 indexed trees). Closed access with opening hours for Parc Vigier (nce_008) and a free-entry source for Villa Masse (nce_007). Register and measurement stay open on all six: they are ensembles with no per-tree record, a finished answer. Next in line is Kagoshima (12 gaps, 7 trees).
+- **Cost:** ~144k tokens for two access lines, poor yield. Staged "awaiting a writer" trees are the held kind (no photograph or confirmed pin), so I left them alone.
+
 ## 2026-10-07 (session) - the digest's app table no longer counts Hidde's own phone
 
 - **Hidde:** "the app rsults is my app not part of those numbers?" Partly. The first-seen rule in data/app-measure.json cut the testing before go-live (20 installs, 472 events) and nothing after it: every Xcode install since (a reinstall, a new simulator, a new phone) made a fresh install id that read as a stranger, and the hand list for those ids had stayed empty for five weeks. The digest had been flagging the shape itself: one install made 13 of yesterday's 21 events.
