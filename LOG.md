@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Night run: enrichment of Tallinn, Leiden, Luxembourg City
+
+Rung: enrichment first, per prepare.py. 7-day visits: 1,553. Tallinn: EELIS records and 1997 survey measurements for the linden and the ginkgo (the Russalka oak has no register entry). Leiden: Hortus hours and prices on four trees, register links on the catalpa and the Groenesteeg beech, autumn colour season for the weeping beech. Luxembourg: ANF register ids for four trees (the geojson has no measurements; the Krombach oak is not in it). No new trees: the writable pile is still empty and the refill (1031 leads needing a source) was not touched. health.py also flagged only 5 of 12 knocks delivered in 24h; I did not dispatch one by hand since this run was already live. Pass-reported hosts that did not resolve: register.keskkonnainfo.ee, www3.tallinn.ee. One verify agent's cleanup (rm) was refused as expected.
+
 ## 2026-10-08 Sequoia National Park enrichment
 
 General Sherman got the NPS page for the tree, an 83.8 m height and the fee and trail facts; the other three got the fee line only. No girth (the NPS figure is a base measure), no season (no giant sequoia moment worth the trip).
