@@ -2,23 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-20T06:21:21+00:00",
-   "date": "2026-08-20",
-   "run_id": "32339238020",
-   "minutes": 55.5,
-   "minutes_basis": "measured",
-   "turns": 434,
-   "denials": 11,
-   "denials_source": "permission_denials: Bash(curl), Bash(echo), Bash(git), Bash(if), Bash(python3), Bash(rm)",
-   "ended": "success",
-   "tokens": 121537161,
-   "claims_held": [],
-   "commits": 22,
-   "cities_touched": 9,
-   "trees": 39,
-   "logged": true
-  },
-  {
    "started": "2026-08-20T08:21:34+00:00",
    "date": "2026-08-20",
    "run_id": "32348393037",
@@ -21040,6 +21023,41 @@
     }
    ],
    "trees": 17,
+   "logged": true
+  },
+  {
+   "started": "2026-10-08T12:07:38+00:00",
+   "date": "2026-10-08",
+   "run_id": "37774622703",
+   "minutes": 11.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 90,
+   "denials": 9,
+   "denials_source": "permission_denials: Bash(cat ; import ; if ; for ...), Bash(cd && sed ; ? && python3), Bash(cd ; cat ; import ; def ...), Bash(cd ; curl ; echo ; curl), Bash(cd ; for ; do ; timeout ...), Bash(cd ; for | ? | ? ...), Bash(python3 ; import ; ? ; for ...), Bash(python3 | tail ; python3 ; wc ...)",
+   "ended": "success",
+   "tokens": 1218531,
+   "claims_held": [
+    "delft",
+    "vienna"
+   ],
+   "commits": 6,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "delft",
+     "trees": 3
+    },
+    {
+     "city": "sao-paulo",
+     "trees": 0
+    },
+    {
+     "city": "vienna",
+     "trees": 0
+    }
+   ],
+   "trees": 3,
    "logged": true
   }
  ],
