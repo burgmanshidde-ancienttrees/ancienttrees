@@ -3,11 +3,11 @@
   "country": "Austria",
   "status": "needs_curation",
   "oldest_tree_id": "szb_003",
-  "intro": "Salzburg's baroque gardens get the postcards, but most of its oldest protected trees stand on ordinary ground: a farm oak once used to fatten pigs, a riverside poplar from a vanished floodplain forest, an oak and two limes on plain Riedenburg streets, a plane and a black pine that outlasted the grand hotel whose park they once grew in. The Naturdenkmal register lists dozens more; these fifteen, from Itzling to Morzg to the Fordhof estate and the Aigen streets south of the centre, clear the bar this pass, alongside one import, a Californian sequoia in the Mirabellgarten.",
-  "meta_description": "Salzburg's oldest protected trees stand on farms and streets, not the baroque gardens. 15 trees, from a 1933 oak to survivors of a bombed hotel.",
-  "question_meta": "Salzburg's oldest confirmed tree is the Stephan-Ludwig-Roth Oak in Morzg, over 200 years old, recorded in an 1817 account. Full list of 12.",
+  "intro": "Salzburg's baroque gardens get the postcards, but most of its oldest protected trees stand on ordinary ground: a farm oak once used to fatten pigs, a riverside poplar from a vanished floodplain forest, a plane and a black pine that outlasted a bombed grand hotel, and four limes planted around 1810 to guard a wayside shrine in Freisaal. These eighteen run from Itzling to Morzg and the Aigen streets, with a meadow oak at Gois and a farm sycamore in Puch bei Hallein beyond the city, plus one import, a Californian sequoia in the Mirabellgarten.",
+  "meta_description": "Salzburg's oldest protected trees stand on farms and streets, not the baroque gardens. 18 trees, from a 1933 oak to survivors of a bombed hotel.",
+  "question_meta": "Salzburg's oldest confirmed tree is the Stephan-Ludwig-Roth Oak in Morzg, over 200 years old, recorded in an 1817 account. Full list of 18.",
   "question_answer": "Salzburg's oldest documented tree is the Stephan-Ludwig-Roth Oak, a pedunculate oak at a woodland edge in Morzg. A source records the Transylvanian Saxon leader and pedagogue Stephan Ludwig Roth resting under it on 15 September 1817, which means it was already a landmark two centuries ago; a local blog puts its age at over 200 years today.",
-  "question_context": "The oak has real urgency behind it: the same source reports a fungal infection and expects the tree to survive only about twenty more years, which makes it worth seeing sooner rather than later. Salzburg's Naturdenkmal register runs to dozens of entries, and the nine here come from five corners of the city rather than one walkable cluster, though three, an oak and two limes on separate Riedenburg streets, sit close enough to walk in one afternoon. The Erentrudishof Oak, the city's longest-protected tree (1933), stands in a working farmyard in Morzg where pigs once fattened on its acorns. A black poplar on the Josef-Mayburger-Kai promenade is one of the last traces of the riparian forest that used to line the Salzach. A plane and a black pine share a housing-estate courtyard near the main station, the only two trees left from a grand hotel's bombed-out park, and a giant sequoia stands beside a coast redwood in the formal Mirabellgarten, the only deliberately planted tree here. None of the nine carries a hard planting date; ages come from designation years, a sighting, a claim about a pair of survivors, or a visitor's tape measure, and each page says so.",
+  "question_context": "The oak has real urgency behind it: the same source reports a fungal infection and expects the tree to survive only about twenty more years, which makes it worth seeing sooner rather than later. Salzburg's Naturdenkmal register runs to dozens of entries, and the eighteen here are spread across the city and beyond it, though three, an oak and two limes on separate Riedenburg streets, sit close enough to walk in one afternoon. The Erentrudishof Oak, the city's longest-protected tree (1933), stands in a working farmyard in Morzg where pigs once fattened on its acorns. A black poplar on the Josef-Mayburger-Kai promenade is one of the last traces of the riparian forest that used to line the Salzach. A plane and a black pine share a housing-estate courtyard near the main station, the only two trees left from a grand hotel's bombed-out park, and a giant sequoia stands beside a coast redwood in the formal Mirabellgarten, the one import on the list. Only the Freisaal limes carry a planting date, around 1810; other ages come from designation years, a sighting, a claim about a pair of survivors, or a visitor's tape measure, and each page says so.",
   "faq": [
     {
       "q": "What is the oldest tree in Salzburg?",
@@ -15,11 +15,11 @@
     },
     {
       "q": "Where are Salzburg's most remarkable trees?",
-      "a": "Spread across the city rather than one walk: a farm in Morzg, a riverside promenade in Itzling, three trees on separate Riedenburg streets, a housing-estate courtyard near the main station, a residential street in Maxglan, the formal Mirabellgarten in the centre, and a second cluster to the south in Aigen, Morzg and Nonntal."
+      "a": "Spread across the city rather than one walk: a farm in Morzg, a riverside promenade in Itzling, three trees on separate Riedenburg streets, a housing-estate courtyard near the main station, a residential street in Maxglan, the formal Mirabellgarten in the centre, and a second cluster to the south in Aigen, Morzg and Nonntal, where the Freisaal limes and hornbeam stand on one meadow path. Two more stand outside the city, a meadow oak at Gois and a sycamore in Puch bei Hallein."
     },
     {
       "q": "Are Salzburg's trees free to visit?",
-      "a": "Yes, all fifteen can be seen from public ground, a working farm's publicly accessible yard, or an open housing-estate courtyard, with no entrance fee."
+      "a": "Yes, none of the eighteen charges entry. Most stand on public ground or can be seen from it; the oak at Gois and the sycamore in Puch bei Hallein stand in meadows where you look from the edge or from a hiking trail."
     },
     {
       "q": "Why don't Salzburg's official register trees carry ages?",
@@ -520,6 +520,131 @@
       },
       "photos": [],
       "verify_notes": "Register NDM00225, protected 1989, polygon 59 m2 so centroid is at the trunk to a few metres. Wikipedia list text: once a boundary tree of the old Davidengut, now at the edge of the building land, widely visible. lifecheck RECENT: iNaturalist observation 2024-12-24 at the spot (shows something was photographed there, not necessarily this trunk). Commons photo 2014-09-04 CC BY-SA 3.0 at. Genus-level species. No age or measurements."
+    },
+    {
+      "id": "szb_016",
+      "name": "The Tofferl Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 500,
+      "height_m": 25,
+      "location": {
+        "address": "Goiser Wiesen, Gois, Wals-Siezenheim (west of Salzburg, near the A1 towards Walserberg)",
+        "latitude": 47.768447,
+        "longitude": 12.959484,
+        "neighbourhood": "Gois, Wals-Siezenheim"
+      },
+      "verified_sources": [
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00198, CC BY 4.0)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Salzburg-Umgebung",
+        "https://wiki.sn.at/wiki/Tofferleiche",
+        "https://commons.wikimedia.org/wiki/File:Tofferl-Eiche_-_DSC04805_35.jpg"
+      ],
+      "access": "Stands in open meadows (Goiser Wiesen). Public geocaches GC92DTT and GC4E7W2 are placed at the tree, but whether the trunk itself is on public ground or reached by a public path was not established.",
+      "transport": "Gois, Wals-Siezenheim, about 7 km west of Salzburg old town; bus stop not checked",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The Tofferl Oak's crown is nearly as wide as the tree is tall. The province's register gives it a good 25 metres in height, a crown 20 to 25 metres across and a trunk five metres round, which is the shape a pedunculate oak takes when nothing has ever crowded it.\n\nIt stands in the Goiser Wiesen, open meadow at Gois in Wals-Siezenheim, about seven kilometres west of Salzburg's old town and not far from the A1 on its way to the Walserberg. That is a neighbouring municipality rather than the city, and no other tree on this page is within walking distance.\n\nLand Salzburg protected it as a natural monument on 26 November 1985 and lists it in the Salzburger Naturschutzbuch, the province's record of protected nature, as a tree that shapes the landscape around it. SalzburgWiki gives the same measurements, probably taken from the same register, so read them as one source rather than two.\n\nNobody has published an age for it, and we will not invent one. If you know how old it is, or where the name Tofferl comes from, tell us.\n\nTwo geocaches are hidden at the tree, so people clearly find their way to it. What we have not established is whether the trunk stands on public ground or beside a public path, so plan to see it from the edge of the meadow. Go in winter if you can: with the leaves down, the whole frame of that crown shows.",
+      "how_to_recognise": "You can recognise it by its spread: a lone oak with a crown 20 to 25 metres across and a trunk five metres round. It stands in the open Goiser Wiesen at Gois, west of the city near the A1.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are gone and the whole 20-metre spread of the crown shows"
+      },
+      "age_basis": "source",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Tofferl-Eiche_-_DSC04805_04.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Flanierer, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4912,
+        "height": 3264
+      },
+      "photos": [],
+      "verify_notes": "Register: Land Salzburg Naturdenkmal NDM00198 (Katastralgemeinde Gois, plot 341/13 plus surrounding ground), protected since 1985-11-26 per the de.wikipedia list (the preceding row's 1972 date belongs to a different entry); the list gives height 'gut 25 m', crown 20-25 m, girth 5 m. SalzburgWiki independently repeats ca. 25 m / 5 m / 20-25 m and calls it a landscape-shaping Naturdenkmal listed in the Salzburger Naturschutzbuch; SalzburgWiki may derive from the same register so treat the two as one family of data. No age anywhere: leave empty, page asks reader (girth 5 m of an oak in open pasture suggests a few centuries but no basis written down). Pin: register polygon centroid 47.768447,12.959484; Commons photos by Flanierer (CC BY-SA 4.0, 2025-03-08, a dozen frames) carry exactly the same coordinate, so that is not independent pin evidence beyond register; polygon is 616 m2 around one tree so centroid is within a few metres of the trunk; marked confirmed on that basis. Alive: lifecheck RECENT 2025-03-08. PHOTO: openly licensed photographs of this tree exist on Commons (category Tofferl-Eiche, Flanierer, CC BY-SA 4.0, 2025). Photo-or-pin: both. Out-of-town (7 km), not a walk from the other trees."
+    },
+    {
+      "id": "szb_017",
+      "name": "The Sycamore of Schartenbauer",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "not documented",
+      "girth_cm": 420,
+      "height_m": 25,
+      "location": {
+        "address": "Beim Schartenbauern, Thurnberg, Puch bei Hallein",
+        "latitude": 47.717543,
+        "longitude": 13.112956,
+        "neighbourhood": "Thurnberg, Puch bei Hallein"
+      },
+      "verified_sources": [
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00231, CC BY 4.0)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Hallein",
+        "https://commons.wikimedia.org/wiki/File:Bergahorn_beim_Schartenbauern_-_DSC04960.jpg"
+      ],
+      "access": "Stands in a farm meadow beside a waymarked hiking path (a yellow Wanderweg signpost stands next to the trunk in the 2025 photograph). The land belongs to the Schartenbauer farm; not checked whether the meadow itself may be entered, so view from the path.",
+      "transport": "Thurnberg, Puch bei Hallein, about 10 km south-east of Salzburg old town; public transport and walking time not checked",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The protection on this sycamore does not stop at the bark. When Land Salzburg made it a natural monument on 7 December 1990, the order covered a circle reaching 20 metres out from the trunk in every direction, across three plots of farmland belonging to the Schartenbauer farm.\n\nWhat sits at the centre of that circle is a big tree by any measure. The monument text records a height of 25 metres, a crown 18 to 20 metres wide and a trunk 4.20 metres round at chest height, dividing into its main limbs about three metres up. Those are the figures from the day it was surveyed. In German it is a Bergahorn, a mountain maple, and this one grows where the name says, on a slope below the woods.\n\nIt stands in a sloping meadow at Thurnberg, in Puch bei Hallein, about ten kilometres south-east of Salzburg's old town, with woodland behind it. That puts it well outside the city and a long way from any other tree on this page. Ivy climbs the lower trunk, and a yellow hiking signpost stands at its foot, because a waymarked trail runs right beside it.\n\nThat trail is how to meet it. The meadow is farmland, and we have not established whether you may walk into it, so look from the path. Nobody has published an age for the tree either. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by the ivy on its lower trunk and the yellow hiking signpost at its foot. It stands alone in a sloping meadow at Thurnberg, Puch bei Hallein, with woodland behind.",
+      "age_basis": "source",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Bergahorn_beim_Schartenbauern_-_DSC04960.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Flanierer, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3264,
+        "height": 4912
+      },
+      "photos": [],
+      "verify_notes": "Register only: Land Salzburg Naturdenkmal NDM00231 (Katastralgemeinde Thurnberg, plot 733), protected 1990-12-07. De.wikipedia list (Hallein district) quotes the monument text: height 25 m, crown 18-20 m, girth at breast height 4.20 m at time of survey, branching at 3 m, protected area 20 m radius around the trunk (plots 731/1, 729, 737). Wikidata Q133481867. No age. Pin: register centroid 47.717512,13.112974, list coordinate 47.717543,13.112956; Commons photographs 2025-03-22 (Flanierer, CC BY-SA 4.0, geotagged 6.5 m from the register point) show a single large maple with a hiking signpost at its foot, so the pin is on the trunk. Alive: lifecheck RECENT 2025-03-22; crown in 2025 photo is open, bare in March, trunk ivy-covered. PHOTO exists on Commons (category Bergahorn beim Schartenbauern, Puch bei Hallein, CC BY-SA 4.0). Photo-or-pin: both. Outlying, a rural stop, not a walk from the other Salzburg trees. Recognition (from the 2025 photo): single maple in sloping meadow, ivy on lower trunk, waymarker beside it, woodland behind."
+    },
+    {
+      "id": "szb_018",
+      "name": "The Lindens of Freisaal",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "planted around 1810",
+      "age_min": 200,
+      "age_max": 230,
+      "location": {
+        "address": "Freisaalweg, between Akademiestraße and Schloss Freisaal, Nonntal, Salzburg",
+        "latitude": 47.78888,
+        "longitude": 13.055419,
+        "neighbourhood": "Nonntal"
+      },
+      "verified_sources": [
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00100, CC BY 4.0)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://commons.wikimedia.org/wiki/File:Linden_in_Freisaal_01.jpg"
+      ],
+      "access": "Free. Stands beside a public footpath across an open meadow; no gate.",
+      "transport": "Nonntal, about 1.5 km south of the old town; walk from Salzburg Hauptbahnhof or Akademiestraße bus stops not checked",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Four limes were planted around 1810 to stand guard over a roadside image of the Virgin Mary, and more than two centuries later they are still at their post. The register of Land Salzburg records both the date and the reason: the trees were set along the Freisaalweg around an old Marian wayside shrine as a symbolic protection for it. Most old trees leave their purpose to guesswork. These four had theirs written down.\n\nThey went in the year Salzburg passed from Austrian to Bavarian rule, and they were already standing when it returned to Austria six years later. The province protected them as a natural monument in 1972.\n\nThe path runs from Akademiestraße across an open meadow to Schloss Freisaal, and it is public and free, with no gate to pass. Stand by the shrine and the whole arrangement is in front of you: four big trunks, the small shrine between them, and the Hohensalzburg fortress on its hill behind. The Hornbeam of Freisaalweg is about 380 metres away on the same ground, so the two make an easy pair.\n\nWhat the register does not say is which lime these are. It names them only as Linden, and nobody has published a girth or a height. If you can tell small-leaved from large-leaved by the leaves, or have a tape measure with you, tell us what you find.",
+      "how_to_recognise": "You can recognise them as the four limes standing around a small wayside shrine on the meadow path. They are on the Freisaalweg between Akademiestraße and Schloss Freisaal, with the fortress on the hill behind.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the limes flower and the meadow path smells of them"
+      },
+      "age_basis": "source",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Linden_in_Freisaal_01.jpg",
+        "license": "CC BY-SA 3.0 at",
+        "attribution": "Eweht, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1024,
+        "height": 682
+      },
+      "photos": [],
+      "verify_notes": "Register: Land Salzburg Naturdenkmal NDM00100, protected 1972, area 1,191 m2. The register text (quoted on de.wikipedia list): four trees planted around 1810 along the Freisaalweg (leading from Akademiestraße to Schloss Freisaal) as symbolic protection around an old Marian wayside shrine (Marienbildstock). That is a documented planting date for these four trees themselves, not a bridge from the garden. Species is not stated in the register beyond 'Linden' (genus only; page should ask the reader). Not measured: no girth or height in the sources seen. Four separately sited trunks around ONE shrine: treated as one compact ensemble with one obvious place to stand (the shrine), pin = register centroid and Commons geotag (47.788880,13.055419, identical) which lands on the shrine. Commons photo Linden in Freisaal 01.jpg (Eweht, 2014-04-07, CC BY-SA 3.0 AT, geotagged at that point) shows four large bare-crowned limes around the shrine on a path in an open meadow with Hohensalzburg fortress on the hill behind. Alive: lifecheck RECENT, iNaturalist observation 2026-08-27 at the spot (https://www.inaturalist.org/observations/394935812; proves something was recorded there, not which trunk). Photo-or-pin: both. Same area as szb_010 (Hornbeam of Freisaalweg, about 380 m away): walkable pair. Earlier lead in leads/salzburg.json is superseded. Recognition: four limes around a small wayside shrine on the meadow path, the fortress visible behind."
     }
   ]
 }
