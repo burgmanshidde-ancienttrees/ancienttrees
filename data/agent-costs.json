@@ -10063,6 +10063,14 @@
    "tokens": 141226,
    "trees": 0,
    "note": "Enrich pass: RAMI/AMI register ids on five trees, girth and height on the Rizzoli cedar. Montagnola and Villa Ghigi stay gaps; bbcc.regione.emilia-romagna.it returned 403."
+  },
+  {
+   "date": "2026-10-08",
+   "target": "belgrade",
+   "kind": "enrich",
+   "tokens": 155585,
+   "trees": 0,
+   "note": "Enrich pass: Zelenilo Beograd protected-tree list entries on four trees, girth and height on four (Wikipedia-cited for the Topcider plane). Zemun yews measurement, access and Topcider authority record stay gaps."
   }
  ]
 }

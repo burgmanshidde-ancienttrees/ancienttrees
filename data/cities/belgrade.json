@@ -50,7 +50,8 @@
       },
       "verified_sources": [
         "https://sr.wikipedia.org/sr-el/%D0%A1%D0%BF%D0%BE%D0%BC%D0%B5%D0%BD%D0%B8%D0%BA_%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%B5_%D0%A5%D1%80%D0%B0%D1%81%D1%82_%D0%BD%D0%B0_%D0%A6%D0%B2%D0%B5%D1%82%D0%BD%D0%BE%D0%BC_%D1%82%D1%80%D0%B3%D1%83",
-        "https://eupravozato.mondo.rs/energetika-i-zivotna-sredina/klimatske-promene/a2155/Beograd-ima-28-zasticenih-stabala-Hrast-na-Cevtnom-trgu-je-samo-jedno-od-njih.html"
+        "https://eupravozato.mondo.rs/energetika-i-zivotna-sredina/klimatske-promene/a2155/Beograd-ima-28-zasticenih-stabala-Hrast-na-Cevtnom-trgu-je-samo-jedno-od-njih.html",
+        "https://www.zelenilo.rs/qr/en/en-zasticena-pojedinacna-stabla"
       ],
       "access": "Free, public square, viewable anytime",
       "transport": "Vračar district, Njegoševa ulica; about a 15 minute walk from Slavija Square",
@@ -64,7 +65,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, 4 metres round with branches held by steel cables, the last survivor of the woodland the square replaced. It stands in the middle of Cvetni trg."
+      "how_to_recognise": "You can recognise it by the trunk, 4 metres round with branches held by steel cables, the last survivor of the woodland the square replaced. It stands in the middle of Cvetni trg.",
+      "official_register": {
+        "name": "Protected individual trees, natural monuments of Belgrade (JKP Zelenilo-Beograd)",
+        "url": "https://www.zelenilo.rs/qr/en/en-zasticena-pojedinacna-stabla"
+      },
+      "girth_cm": 430,
+      "height_m": 19
     },
     {
       "id": "bel_002",
@@ -97,7 +104,9 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the seventeen iron posts propping its 49 metre spread, trunk 7.35 metres round. It stands in front of Milosev Konak in Topciderski park."
+      "how_to_recognise": "You can recognise it by the seventeen iron posts propping its 49 metre spread, trunk 7.35 metres round. It stands in front of Milosev Konak in Topciderski park.",
+      "girth_cm": 735,
+      "height_m": 34
     },
     {
       "id": "bel_003",
@@ -124,7 +133,8 @@
       },
       "verified_sources": [
         "https://sr.wikipedia.org/sr-el/%D0%A1%D0%BF%D0%BE%D0%BC%D0%B5%D0%BD%D0%B8%D0%BA_%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%B5_%D0%94%D0%B2%D0%B5_%D1%82%D0%B8%D1%81%D0%B5_%D0%A1%D0%B0%D0%B1%D0%BE%D1%80%D0%BD%D0%B5_%D1%86%D1%80%D0%BA%D0%B2%D0%B5",
-        "https://en.wikipedia.org/wiki/St._Michael%27s_Cathedral,_Belgrade"
+        "https://en.wikipedia.org/wiki/St._Michael%27s_Cathedral,_Belgrade",
+        "https://www.zelenilo.rs/qr/en/en-zasticena-pojedinacna-stabla"
       ],
       "access": "Free, public church courtyard, viewable during normal visiting hours",
       "transport": "Stari Grad, Kneza Sime Markovića; a 5 minute walk from Knez Mihailova street",
@@ -138,7 +148,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them as a pair flanking the courtyard gate, one male at 13.3 metres, the other female at 11.8 metres. They stand either side of the entrance to Belgrade Cathedral."
+      "how_to_recognise": "You can recognise them as a pair flanking the courtyard gate, one male at 13.3 metres, the other female at 11.8 metres. They stand either side of the entrance to Belgrade Cathedral.",
+      "official_register": {
+        "name": "Protected individual trees, natural monuments of Belgrade (JKP Zelenilo-Beograd)",
+        "url": "https://www.zelenilo.rs/qr/en/en-zasticena-pojedinacna-stabla"
+      },
+      "girth_cm": 200,
+      "height_m": 12.5
     },
     {
       "id": "bel_004",
@@ -165,7 +181,8 @@
       },
       "verified_sources": [
         "https://sr.wikipedia.org/sr-el/%D0%9F%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%BD%D0%B8_%D1%81%D0%BF%D0%BE%D0%BC%D0%B5%D0%BD%D0%B8%D0%BA_%D0%A1%D1%82%D0%B0%D0%B1%D0%BB%D0%B0_%D1%83_%D0%97%D0%B5%D0%BC%D1%83%D0%BD%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D0%B0%D1%80%D0%BA%D1%83",
-        "https://www.wikidata.org/wiki/Q57935578"
+        "https://www.wikidata.org/wiki/Q57935578",
+        "https://www.zelenilo.rs/qr/en/en-zasticena-pojedinacna-stabla"
       ],
       "access": "Free, public park, open daily",
       "transport": "Zemun, on the Danube waterfront; about a 25 minute bus ride from central Belgrade",
@@ -179,7 +196,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise them as dark, dense evergreens among nine trees protected as one designation, five yews and four wingnut stands. They stand scattered through Zemun's Gradski park."
+      "how_to_recognise": "You can recognise them as dark, dense evergreens among nine trees protected as one designation, five yews and four wingnut stands. They stand scattered through Zemun's Gradski park.",
+      "official_register": {
+        "name": "Protected individual trees, natural monuments of Belgrade (JKP Zelenilo-Beograd)",
+        "url": "https://www.zelenilo.rs/qr/en/en-zasticena-pojedinacna-stabla"
+      }
     },
     {
       "id": "bel_005",
@@ -215,7 +236,11 @@
       "photos": [],
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "The tall plane tree behind the low fence of the Trandafilović restaurant garden, at the crossroads where five streets meet on Makenzijeva; a parking sign stands almost against its trunk."
+      "how_to_recognise": "The tall plane tree behind the low fence of the Trandafilović restaurant garden, at the crossroads where five streets meet on Makenzijeva; a parking sign stands almost against its trunk.",
+      "official_register": {
+        "name": "Protected individual trees, natural monuments of Belgrade (JKP Zelenilo-Beograd)",
+        "url": "https://www.zelenilo.rs/qr/en/en-zasticena-pojedinacna-stabla"
+      }
     }
   ]
 }

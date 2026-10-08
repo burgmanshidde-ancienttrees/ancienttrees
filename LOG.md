@@ -21,6 +21,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 Belgrade enrichment
+
+All five trees got a protected-tree register entry from Zelenilo Beograd's list (the Topčider plane only a decision number, no authority page found) and four got girth and height; the Serbian Wikipedia figures disagree with Zelenilo's on three trees and the measure_source says so. Zemun yews have no measurement anywhere, no access line changed, no season set. Next: `enrich.py --next`.
+
 ## 2026-10-08 Bologna enrichment
 
 Rung: enrichment, per prepare.py (7-day visits 1,700). Five of seven trees got a RAMI/AMI register id (Sequoia, Minghetti plane, Malpighi plane, Rizzoli cedar, Cavour ginkgo); the Rizzoli cedar also got 520 cm girth and 29.2 m height. Montagnola planes (ensemble, no single AMI code) and the Villa Ghigi cedar stay gaps; bbcc.regione.emilia-romagna.it returned 403 to curl. No season set. No new trees; the writable pile is still empty. health.py: only 6 of 12 knocks delivered in 24h, not dispatched by hand. Next: belgrade.
