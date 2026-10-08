@@ -21,6 +21,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-08 (night run, midday) Deploy fix + Delft +3
+
+**Rung 2:** deploy and smoke were red because Sao Paulo (1 tree) and Vienna (4) carried `"best_time": null`, which the Astro schema rejects; the keys are dropped, preflight 0 problems, pushed. The other red item (6 of 12 knocks delivered) is GitHub dropping the cron.
+**Trees:** Nuremberg and Frankfurt are walls (Nuremberg's register is mined out, 0 new; Frankfurt has no register), both released with 48h walls. Delft +3 (del_009 Botterbrug plane and del_010 Annageer plane with PDOK-confirmed pins, del_011 Oostpoort ash on a 40 m small site, approximate, needs a reader photo), merged, preflight 0 problems; 13 leads/blocked in data/leads/delft.json. Delft is now 11. Visits line: 1611 visits in 7 days.
+**Refused commands:** none this window. Stopped at ~3 passes; the 19 written-awaiting trees elsewhere are held for lack of photo or pin.
+
 ## 2026-10-08 Vienna verify + write pass, 17 trees merged
 
 Enrichment queue is empty on the proven cities (Padua, Salzburg, Graz, Lucca, Dresden done above). Then Vienna: 7 new Wien Naturdenkmal park trees (vie_045 to vie_051; vie_051's pin stays approximate, a group of four poplars). The write pass also merged 10 already-written trees waiting in research files: chi_014/015/017, fdl_001, fuk_017, nbg_018, ptl_027, sfo_008, tkc_004/005. German overlays for Vienna and Nuremberg, Japanese for Fukuoka, count copy fixed in Chicago, San Francisco, Vienna. Held back on rule 10 (access unstated): lpz_019, ftw_018. tree-of-the-year std_001/nsb_001 wait on the four-tree place floor. Not delivered from Vienna: Schönbrunn trio (no pin or photo), Prater black poplar (maybe gone). Preflight 0 problems. Note: vie_047 uses Salix alba Tristis while other cities use Salix babylonica for weeping willow.

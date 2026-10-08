@@ -1,0 +1,112 @@
+{
+ "city": "Delft",
+ "country": "Netherlands",
+ "city_slug": "delft",
+ "note": "Deepen pass 2026-10-08 from the LRMB register (all Delft entries within 2.2 km checked). The register's other in-town entries are already published as del_001..del_008. Register carries no species column here, species read from the Dutch names.",
+ "leads": [
+  {
+   "name": "Oosterse plataan, Doelentuin (LRMB 1691009)",
+   "species": "Platanus orientalis",
+   "lat": 52.014568,
+   "lng": 4.359936,
+   "status": "lead",
+   "why": "Municipal park garden, visitable ja, planted 1860-1870, so one of the older planes in town and a lead worth a photograph. Aerial shows a dense multi-crown stand so the pin cannot be matched to one crown (approximate), and no tree photograph in reach, so it fails photo-or-pin. Needs a reader photograph or a picture of the trunk. Sits 2 m from the 3 Vederesdoorn (LRMB 1691010, Pterocarya) entry: treat as one site."
+  },
+  {
+   "name": "Vederesdoorn (3 trees), Doelentuin (LRMB 1691010)",
+   "species": "Pterocarya fraxinifolia",
+   "lat": 52.014549,
+   "lng": 4.359956,
+   "status": "lead",
+   "why": "3 trees in the same garden as the Oosterse plataan; ensemble with no single trunk to stand at, no photo or exact pin."
+  },
+  {
+   "name": "Priëel iep / Hollandse iep, Jaffa cemetery (LRMB 1681488)",
+   "species": "Ulmus x hollandica",
+   "lat": 52.003803,
+   "lng": 4.372925,
+   "status": "lead",
+   "why": "Municipal cemetery, visitable ja (visible onbekend/nee), reason dendrologisch with Treurvorm (weeping form) elms, 3 trees (1681488), also an elm at 52.003797,4.371974 (1681489). Aerial is dense canopy and no single crown can be assigned, no photo in reach. A weeping-form pergola elm would be a distinctive tree if a reader photograph appears."
+  },
+  {
+   "name": "Gewone platanen (3 trees), Nieuwe Plantage 13-17 (LRMB 1680758)",
+   "species": "Platanus x acerifolia",
+   "lat": 52.018198,
+   "lng": 4.355721,
+   "status": "lead",
+   "why": "Three planes planted at the rampart renovation, 1880-1890. 88 m from the published wingnut; ensemble of three with no single trunk. Park, visitable ja. Fold into Nieuwe Plantage walk if a writer wants it."
+  },
+  {
+   "name": "Zilveresdoorn, Wallertuin (LRMB 1680757)",
+   "species": "Acer saccharinum or Fraxinus (register 'zilveresdoorn' is likely silver maple)",
+   "lat": 52.018826,
+   "lng": 4.3535,
+   "status": "lead",
+   "why": "Behind the former mayor's house at Wateringsevest 58, locally the Wallertuin; register says visitable ja, owner gemeente, but a garden behind a house is the home/doorbell case and no source says the garden is open. Species term is ambiguous in Dutch, not set. Lead until access is evidenced."
+  },
+  {
+   "name": "Bruine beuken en peer, Phoenixstraat courtyards (LRMB 1686351)",
+   "species": "Fagus sylvatica f. purpurea; Pyrus",
+   "lat": 52.01141,
+   "lng": 4.355131,
+   "status": "lead",
+   "why": "Courtyards of the Hoogheemraadschap/Bestuurshuis and former hospital (Delfstede) at Phoenixstraat/Oude Delft: owner is a public body but the register's visible is onbekend and these are inner courtyards of offices, not evidenced as open without asking. Nrs 1686351, 1686349, 1690190."
+  },
+  {
+   "name": "Rode beuk, Nieuwe Kerk (LRMB 1696462)",
+   "species": "Fagus sylvatica f. purpurea",
+   "lat": 52.012514,
+   "lng": 4.361833,
+   "status": "lead",
+   "why": "Religious owner, visitable nee, visible ja from the street. Only about 110 years old by the register band, and view-only with a pin at the tree rather than a viewing place. Not remarkable enough on its own."
+  },
+  {
+   "name": "Zwarte moerbei, Paardenmarkt 62 (duplicate of published del_001) (LRMB 1691134)",
+   "species": "Morus nigra",
+   "lat": 52.016403,
+   "lng": 4.35743,
+   "status": "lead",
+   "why": "Already published as del_001 (14 m). NOTE for the writer: the register's 1691134 history quotes Boomzorg Aug 2023 (Hanneke Tax): research with the municipality and Copijn Boomspecialisten says the mulberry was probably planted with the hofje in 1707, i.e. about 316 years in 2023, among the oldest fruit trees of the Netherlands, article https://www.boomzorg.nl/article/43633/moerbei-uit-1707-in-delfts-hofje-moet-op-monumentale-bomenlijst (not fetched by this pass). Register visitable onbekend, owner particulier, in a back garden of the hofje; check the published del_001 access line against this."
+  },
+  {
+   "name": "Trompetboom, Koningsplein 83 school yard (LRMB 1690077)",
+   "species": "Catalpa",
+   "lat": 52.017525,
+   "lng": 4.356112,
+   "status": "blocked",
+   "why": "Schoolyard of Delftsche Schoolvereeniging, owner particulier, no evidence the grounds are open (school rule)."
+  },
+  {
+   "name": "Bruine beuk, Noordeinde 12 back garden (LRMB 1692656)",
+   "species": "Fagus sylvatica f. purpurea",
+   "lat": 52.015766,
+   "lng": 4.353333,
+   "status": "blocked",
+   "why": "Private back garden (particulier), visitable and visible onbekend. Private land."
+  },
+  {
+   "name": "Witte paardenkastanje, Oude Delft 214 garden (LRMB 1692256)",
+   "species": "Aesculus hippocastanum",
+   "lat": 52.014137,
+   "lng": 4.354594,
+   "status": "blocked",
+   "why": "Private garden, visitable and visible onbekend."
+  },
+  {
+   "name": "Bruine beuk, Oude Delft 159 courtyard (LRMB 1686350)",
+   "species": "Fagus sylvatica f. purpurea",
+   "lat": 52.011301,
+   "lng": 4.355326,
+   "status": "blocked",
+   "why": "Private courtyard of a dwelling (particulier), visible ja but not reachable."
+  },
+  {
+   "name": "Canadese populieren (4 trees), Koningsplein (LRMB 1691007)",
+   "species": "Populus x canadensis",
+   "lat": 52.017965,
+   "lng": 4.35659,
+   "status": "blocked",
+   "why": "Row of four poplars along the Koningsplein, an avenue and not a collectible point."
+  }
+ ]
+}
