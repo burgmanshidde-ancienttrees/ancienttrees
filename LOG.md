@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-08 (night run) - Vienna +5
+
+**Rung:** shelf refill (prepare.py said the writable pile was under its floor), 7-day visits 1,652. Rung 2 clear (deploy and smoke green); only 6 of 12 knocks arrived in 24h.
+**Done:** Leipzig claimed then released as a wall (no register, Wikidata only). Vienna verify pass from the Naturdenkmale register joined to the city's tree inventory: 5 public street trees with tree-level pins shipped as vie_052 to vie_056 (55 live), written and merged with the German overlay, preflight 0 problems. 8 rejects went to data/leads/vienna.json, mostly access not established. Costs logged.
+**Notes:** www.wien.gv.at hangs from the runner (blocklist candidate). vie_055's species differs between sources and is published as Populus sp. with the dispute stated. Photos for vie_052, 055 and 056 are queued candidates nobody has looked at. No tool refusals.
+
 ## 2026-10-08 (session) - Hidde's app walk: Discover, the tree page, tags, the ambassador sheet, and why his account looked empty
 
 **Why:** Hidde walked the app on his phone and sent one long list. Everything below shipped on web and app together.
