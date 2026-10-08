@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-08 (night run, later window) - Salzburg +3
+
+**Rung:** shelf refill; 7-day visits 1,683. Rung 2 clear.
+**Done:** Vienna's 7 READY leads were this morning's own verify declines (access unestablished, one possibly lost), so the write pass wrote nothing and marked them held, which stops leads.py sending the next run after them. Salzburg verify from the Land Salzburg Naturdenkmal register, then write: szb_016 to szb_018 live (18 trees), each with a looked-at Commons photograph and a confirmed pin, German overlay, counts updated 15 to 18. Preflight 0 problems. Costs logged.
+**Notes:** leads.py cannot see a decline written only in `why_not_yet`; worth teaching it. salzburg-reiseinfo.com fails TLS. Commons API gave 429 after ~10 quick calls. No tool refusals.
+
 ## 2026-10-08 (night run) - Vienna +5
 
 **Rung:** shelf refill (prepare.py said the writable pile was under its floor), 7-day visits 1,652. Rung 2 clear (deploy and smoke green); only 6 of 12 knocks arrived in 24h.
