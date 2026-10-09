@@ -16,6 +16,8 @@ A strategy session Hidde opened with "have a high level look at the goal product
 
 4. **No new tree unless its page is rich or a reader added it** (Hidde, later the same session: "Let's not add any more trees unless rich page and or added by user right?"). Rich is the same `enriched()` rule, so what is added is what Google may see; `check_a_new_tree_is_rich_or_a_readers()` in preflight refuses the rest, data/rich-baseline.json holds the 3,716 trees live that day, BRIEF_RESEARCH.md and passcheck's brief carry it to the verify pass. It narrows the 2026-10-05 "adding is not indexing" ruling without reversing it.
 
+5. **The night run may approve photographs again** (Hidde, later still: "why cant nightrun approve photos", then "ok do that"). The 10-01 queue-for-review rule is retired; the viewing pass runs under its existing guards (pixels, exposure, a geotag or filename settling the trunk, else held) and his review page becomes the overrule. `photo_apply.py` stamps `approved_by` and `approved_on`; the digest's opening table lists each approval with the one-line command that reverses it.
+
 **What was advised and NOT decided, recorded so it is a choice later and not a drift:** a 90-day freeze on new places, twelve hero cities, the app as the product and the site as its brochure, a weekly outreach rhythm as the ambassador channel, and "people who stood at a tree this week" as the north star. Hidde has not ruled on any of these.
 ## 2026-10-08: the noindex is Google's alone where only Google objects
 

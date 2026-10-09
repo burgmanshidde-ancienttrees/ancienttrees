@@ -212,6 +212,8 @@ def pipeline_status():
     print("  *** ENRICH THE INDEXED PAGES FIRST (Hidde, 2026-10-06): register record, measurement,")
     print("      access facts, season, pin evidence, on EVERY tree page of a proven city, indexed first (2026-10-09). ***")
     print("      " + nxt)
+    print("      A PHOTOGRAPH FIRST, and you may APPROVE it (Hidde, 2026-10-09): photo_fetch.py --zero --out <dir> --per-tree 3,")
+    print("      LOOK at the files, photo_verdicts.py applies your verdicts. Held, never approved, when two similar trees stand nearby.")
     print("      claim it (passcheck.py --claim <city> --kind enrich, push), verify agent on the brief, then enrich.py --apply out/enrich/<city>.answer.json")
     print("      A pass that closed nothing: enrich.py --done <city> (dead-ends the briefed gaps, 90 days). Only when this says nothing to do,")
     print("      take the rest of THE LINE below (new trees, refill, backup).")

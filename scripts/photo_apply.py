@@ -208,6 +208,13 @@ def photo_block(cand, status, note=None):
     }
     if note is not None:
         block["note"] = note
+    if status == "approved":
+        # Who approved it and when (2026-10-09, Hidde: the night run may approve
+        # again; his review page is the overrule). The digest lists these two
+        # days back so one can be reversed in a minute: photo_apply.py hold <id> <url>.
+        import datetime
+        block["approved_by"] = "viewing pass"
+        block["approved_on"] = datetime.date.today().isoformat()
     if w and h:
         block["width"] = w
         block["height"] = h

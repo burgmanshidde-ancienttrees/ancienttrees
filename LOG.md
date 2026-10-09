@@ -103,6 +103,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
   - scripts/enrich.py: every tree in a proven city in scope, indexed first, 20 per brief; dead ends per tree and gap (data/enrich-done.json, 90 days) instead of a city-level done mark; `pin` gap closable with a sourced small site or a sourced coordinate within 300 m; `--status` prints what the rule returns. The old city-level ledger is dropped, deliberately. `--next` now says Singapore (19 gaps on 34 trees) instead of Tallinn.
   - **No new tree unless rich or reader-added (Hidde, same session).** `check_a_new_tree_is_rich_or_a_readers()` in preflight, `ADD_NEEDS_RICH` and `reader_added()` in findable.py, data/rich-baseline.json (3,716 ids). BRIEF_RESEARCH.md, passcheck's brief and prepare.py say it to the runs.
 - **The register fact line is web-only, on purpose (Hidde: "app doesnt need to please google right").** crosscheck found the feed sending `tree.register` to phones that never read it; recorded in data/cross-surface-allow.json with the reason, so the check is quiet and the exception is a decision.
+  - **The night run may approve photographs again (Hidde, "ok do that").** CLAUDE.md recovery block, prepare.py names the viewing pass first, photo_apply.py stamps approved_by/approved_on, and the digest's opening table shows each approval with its overrule command.
 - **Not done, advised only:** the 90-day freeze on new places, the twelve hero cities, the north-star change. Hidde's to rule on.
 
 ## 2026-10-08 (night run, midday) Deploy fix + Delft +3

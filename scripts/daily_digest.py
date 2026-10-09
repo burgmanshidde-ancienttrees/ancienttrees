@@ -1901,6 +1901,28 @@ def readers_gave_section(today):
         what = "a reader's photograph, published" + (
             " beside the one it had" if d.get("outcome") == "added" else "")
         out.append("| %s | %s | %s | %s |" % (day.isoformat()[5:], name, city, what))
+    # Photographs the NIGHT RUN approved (Hidde, 2026-10-09: "ok do that", on
+    # letting the viewing pass approve again with his review page as the
+    # overrule rather than the gate). photo_apply.py stamps approved_by and
+    # approved_on; each one is printed here with the command that reverses it.
+    import glob as _glob
+    for fp in _glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        try:
+            c = json.load(open(fp))
+        except ValueError:
+            continue
+        for t in c.get("trees", []):
+            ph = t.get("photo") or {}
+            if ph.get("approved_by") != "viewing pass" or ph.get("status") != "approved":
+                continue
+            try:
+                day = datetime.date.fromisoformat(str(ph.get("approved_on"))[:10])
+            except (TypeError, ValueError):
+                continue
+            if day < since:
+                continue
+            out.append("| %s | %s | %s | the night run approved a photograph (overrule: `photo_apply.py hold %s \"%s\"`) |"
+                       % (day.isoformat()[5:], t.get("name"), c.get("city"), t.get("id"), ph.get("url")))
     key = os.environ.get("SUPABASE_SERVICE_KEY")
     if key:
         try:
@@ -1917,7 +1939,7 @@ def readers_gave_section(today):
             pass
     if not out:
         return None
-    return "\n".join(["**What readers gave us, and it went live**", "",
+    return "\n".join(["**What readers gave us, and what the night run approved, and it went live**", "",
                       "| Day | Tree | Where | What |", "|---|---|---|---|", *out])
 
 
