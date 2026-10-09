@@ -105,6 +105,21 @@ FALLBACK_NAME = "a reader of Ancient Trees"
 READER_PIN_MAX_M = 300
 
 
+# NO LEAD IS SPELT "none" BY THE QUEUE (2026-10-09). sightings_inbox.py's
+# tree_index() writes photo_status "none" for a tree whose photo block carries
+# no url, and this file tested current_photo against (None, "", "missing"),
+# so a vouched photograph for a tree with NO picture at all was judged to
+# have one and went in as an extra. That is how Hidde's overrule on the City
+# Hall Maple (2026-10-05) ran and still left rey_003 reading "missing": the
+# photograph sat in photos[] under a lead that did not exist. One test, read
+# by the vouched path and by the inbox's ranking.
+NO_LEAD = (None, "", "missing", "none")
+
+
+def has_lead(status):
+    return status not in NO_LEAD
+
+
 def slugify(s):
     s = re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
     return s or "tree"
@@ -227,7 +242,7 @@ def apply_to_city(entry, block, as_extra=False):
     """
     path = os.path.join(ROOT, "data", "cities", f"{entry['city_slug']}.json")
     city = json.load(open(path, encoding="utf-8"))
-    old = None
+    old, promoted = None, []
     for t in city.get("trees", []):
         if t.get("id") == entry["tree_id"]:
             old = t.get("photo") or {}
@@ -241,11 +256,30 @@ def apply_to_city(entry, block, as_extra=False):
                 break
             if old.get("url") and old.get("url") != block["url"]:
                 t["photo_replaced"] = {k: old.get(k) for k in ("url", "license", "attribution", "status")}
+            # PROMOTION (2026-10-09): the same photograph may already sit in
+            # photos[] as an extra (the has_lead bug above put one there under
+            # no lead at all). Becoming the lead takes it out of the strip,
+            # and its separately named file with it, or the page would show
+            # the picture twice.
+            kept = []
+            for x in t.get("photos") or []:
+                if (x or {}).get("sighting_id") == entry["sighting_id"] or (x or {}).get("url") == block["url"]:
+                    promoted.append(x.get("url"))
+                else:
+                    kept.append(x)
+            if t.get("photos") is not None:
+                if kept:
+                    t["photos"] = kept
+                else:
+                    del t["photos"]
             t["photo"] = block
             break
     else:
         raise KeyError(f"{entry['tree_id']} not in {path}")
     save(path, city, indent=2)  # data/cities convention, see preflight's check_city_indent
+    for url in promoted:
+        if url and url != block["url"]:
+            drop_vendored(url)
     # Nothing is replaced by an extra, so nothing may be un-vendored either.
     return None if as_extra else (old or {}).get("url")
 
@@ -524,9 +558,8 @@ def main():
         for e in qdoc.get("queue", []):
             if not e.get("vouched"):
                 continue
-            has_lead = e.get("current_photo") not in (None, "", "missing")
             rows.append({"sighting_id": e["sighting_id"],
-                         "verdict": "add" if has_lead else "approve",
+                         "verdict": "add" if has_lead(e.get("current_photo")) else "approve",
                          "reason": f"Vouched for by Hidde: {e['vouched']}",
                          "species_seen": "vouched", "species_match": "vouched",
                          "description_seen": "vouched", "description_match": "vouched"})

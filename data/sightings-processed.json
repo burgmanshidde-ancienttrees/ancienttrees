@@ -472,17 +472,6 @@
    "outcome": "lead",
    "date": "2026-10-04"
   },
-  "322fc46b-8bed-4ea1-a971-14a894bbf367": {
-   "outcome": "added",
-   "date": "2026-10-05",
-   "tree_id": "rey_003",
-   "file": "rey_003-the-city-hall-maple-322fc46b.jpg",
-   "reason": "Vouched for by Hidde: Hidde, 2026-10-05, on the Reykjavik reader: 'zet de andere foto's van onze Reykjavik gebruiker ook maar online ik vertrouw hem meer dan jou eerlijk gezegd ook zijn semi slechte foto's beter dan geen'",
-   "lat": 64.1467888333333,
-   "lon": -21.94277,
-   "taken_at": "2026-09-04T15:38:13+00:00",
-   "pin_checked": "2026-10-05"
-  },
   "e0458b06-5210-49c5-9346-2380ad069f7f": {
    "outcome": "published",
    "date": "2026-10-05",
@@ -523,6 +512,17 @@
   "038ab20e-98e0-4335-b154-08263b494999": {
    "outcome": "lead",
    "date": "2026-10-06"
+  },
+  "322fc46b-8bed-4ea1-a971-14a894bbf367": {
+   "outcome": "published",
+   "date": "2026-10-09",
+   "tree_id": "rey_003",
+   "file": "rey_003-the-city-hall-maple.jpg",
+   "reason": "Hidde overruled the 2026-10-03 hold (judgement.py feedback: the Reykjavik reader's photographs go online, semi-poor light included). Looked at the file again: the whole domed crown is readable in daylight, the tree is the subject, a tour group stands beneath it and a car park fills the foreground, w",
+   "lat": 64.1467888333333,
+   "lon": -21.94277,
+   "taken_at": "2026-09-04T15:38:13+00:00",
+   "pin_checked": "2026-10-09"
   }
  }
 }

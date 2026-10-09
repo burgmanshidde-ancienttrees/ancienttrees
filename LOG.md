@@ -2,10 +2,18 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Reykjavik: Hidde's overrule on the City Hall Maple carried out, and the bug that swallowed it
+
+**Why:** On 2026-10-03 a viewing pass held the Reykjavik reader's photograph of rey_003 for its light and the crowd in front of it, and Hidde overruled it ("ook zijn semi slechte foto's zijn beter dan geen"). The vouched path ran on 2026-10-05 and the page still read "missing" four days later.
+**Found:** the queue spells "no photograph" as `none` and `sightings_publish.py --vouched` tested for `missing`, so a tree with no picture at all counted as having one and the photograph went into `photos[]` as an extra under a lead that did not exist. Nothing rendered it and nothing reported it.
+**Done:** one `has_lead()` test in sightings_publish.py that knows `none` (the inbox's ranking reads the same list); an approve now PROMOTES an extra of the same sighting instead of showing the picture twice, and drops its separately named file. The sighting was reopened, re-queued, looked at again (a broad domed sycamore maple on the Vonarstraeti corner, the street sign in frame, a tour group beneath it) and published through the script as the lead: rey_003 carries `source: contributor` with the reader's id, the judgement record says publish with his overrule as the reason. Preflight 0 problems; qa runs in CI (no build here).
+**Notes:** the same reader's other photographs (rey_001, rey_002 and Seville's El Gran Capitan) were already live; nothing else of theirs is held. rey_003's pin was already moved to his fix on 2026-10-05 and is untouched.
+
 ## 2026-10-09 (session) - "Official" for your own tree, and search stays at full height
 
 **Changed:** a reader's own tree that makes it onto Ancient Trees now says "Official" (app card, website My trees) and its page says "An official Ancient Tree"; "On the map" was wrong because your own trees are on the map too (Hidde). The map's search field now grows into the list's header as the list is dragged to full height, the Apple Maps and Google Maps convention, so search is reachable at every height (app).
 **Kept, on Hidde's word:** the website's photo thank-you still promises "you will hear what happened to yours"; people should end up with a message when their tree joins the database. Today that message is the "Official" upgrade in the app; a mail for it is not built.
+
 
 ## 2026-10-08 (night run, third window) - Salzburg +2
 
