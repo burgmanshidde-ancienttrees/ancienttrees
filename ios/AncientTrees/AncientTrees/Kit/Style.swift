@@ -46,6 +46,9 @@ public enum Brand {
     /// A quieter surface, for a row inside a card. Neutral grey, not cream,
     /// same ruling as the ground.
     public static let surfaceMuted = Color(light: 0xF2F2F2, dark: 0x262A24)
+    /// The website's --cream-dark: the quiet pill on the sign-in sheet
+    /// (More options, Continue with email) and the close cross's disc.
+    public static let creamDark = Color(light: 0xECEAE3, dark: 0x262A24)
     public static let ink = Color(light: 0x26301E, dark: 0xECEFE4)
     public static let inkSoft = Color(light: 0x5C6350, dark: 0xA7AE9E)
     /// The one colour that means "press this".

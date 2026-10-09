@@ -109,16 +109,17 @@ struct GoogleSignInButton: View {
             }
             .frame(maxWidth: .infinity)
             .padding(.horizontal, 12)
-            .frame(maxWidth: .infinity, minHeight: 52)
-            .foregroundStyle(scheme == .dark ? Color(white: 0.89) : Color(red: 0.12, green: 0.12, blue: 0.12))
-            .background(scheme == .dark ? Color(red: 0.075, green: 0.086, blue: 0.098) : .white,
-                        in: .capsule)
-            .overlay {
-                Capsule().strokeBorder(scheme == .dark
-                                       ? Color(red: 0.54, green: 0.56, blue: 0.58)
-                                       : Color(red: 0.455, green: 0.463, blue: 0.459),
-                                       lineWidth: 1)
-            }
+            .frame(maxWidth: .infinity, minHeight: 48)
+            // THE WEBSITE'S QUIET PILL (Hidde, 2026-10-09, shown the web
+            // dialog beside the app's sheet: "this looks better ... maybe you
+            // can steal of it"). Filled cream, no outline, 48 tall, the same
+            // pill as Continue with email under it, so the stack reads as one
+            // loud button and two quiet ones rather than three kinds. Google's
+            // 2023 button rules allow a neutral fill beside the light and dark
+            // ones; the four-colour G stays untouched, which is what they
+            // actually protect.
+            .foregroundStyle(Brand.ink)
+            .background(Brand.creamDark, in: .capsule)
         }
         .buttonStyle(.plain)
     }

@@ -143,10 +143,12 @@ struct SignInSheet: View {
         VStack(alignment: .leading, spacing: 24) {
             header
 
-            // 8 between the buttons, Apple's minimum, after 12 read as three
-            // separate offers rather than one stack (Hidde, 2026-10-09: "the
-            // buttons should be closer to each other vertically").
-            VStack(spacing: 8) {
+            // 16 between 48-tall buttons, the website's own dialog measured
+            // against AllTrails (CONVENTIONS.md, the shape of a sign-in
+            // sheet). Hidde, 2026-10-09, after one loud and two outlined
+            // buttons at 12 read as three separate offers: the website's
+            // stack, one dark and two cream, "looks better ... steal of it".
+            VStack(spacing: 16) {
                 SignInWithAppleButton(.continue) { request in
                     rawNonce = Self.nonce()
                     // The name as well, which Apple gives ONCE, on the first
@@ -167,7 +169,7 @@ struct SignInSheet: View {
                     }
                 }
                 .signInWithAppleButtonStyle(scheme == .dark ? .white : .black)
-                .frame(height: 52)
+                .frame(height: 48)
                 .clipShape(.capsule)
 
                 GoogleSignInButton {
@@ -195,12 +197,12 @@ struct SignInSheet: View {
                 withAnimation(.snappy) { emailOpen = true }
                 focus = .email
             } label: {
+                // The website's quiet pill, the same one Google wears above.
                 Label("Continue with email", systemImage: "envelope")
                     .font(.system(size: 19, weight: .medium))
                     .foregroundStyle(Brand.ink)
-                    .frame(maxWidth: .infinity).frame(height: 52)
-                    .background(Color(.systemBackground), in: .capsule)
-                    .overlay { Capsule().strokeBorder(Color(.separator), lineWidth: 1) }
+                    .frame(maxWidth: .infinity).frame(height: 48)
+                    .background(Brand.creamDark, in: .capsule)
                     .contentShape(.capsule)
             }
             .buttonStyle(.plain)
@@ -341,6 +343,12 @@ struct SignInSheet: View {
     /// extra side inset keeps a long headline out from under the cross.
     private var header: some View {
         VStack(spacing: 8) {
+            // THE APP'S OWN ICON above the headline, as the website's dialog
+            // draws it (56, radius 14, a hairline so the cream tile has an
+            // edge on white). Hidde, 2026-10-09, shown that dialog beside the
+            // app's sheet: "this looks better ... maybe you can steal of it".
+            AppIconTile()
+                .padding(.bottom, 16)
             // The brand's display face and ink, as every other heading in the
             // app and the website's dialog (Hidde, 2026-10-08: "the design of
             // the overlay to login is a bit off"). It was the system bold in
@@ -381,8 +389,8 @@ struct SignInSheet: View {
         Text("By continuing you agree to the [Terms](https://ancienttrees.app/terms) and the [Privacy notice](https://ancienttrees.app/privacy).")
             .font(.footnote).foregroundStyle(.secondary)
             .tint(brand)
-            .multilineTextAlignment(.leading)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .multilineTextAlignment(.center)
+            .frame(maxWidth: .infinity)
     }
 
     private func finishIfSignedIn() async {
@@ -416,6 +424,34 @@ private struct FlushBottomOnFloatingSheet: ViewModifier {
             content.ignoresSafeArea(.container, edges: .bottom)
         } else {
             content
+        }
+    }
+}
+
+
+/// The icon the home screen shows, read from the bundle so the sheet can never
+/// carry a tile that resembles the app's icon without being it (the website's
+/// rule for its own tile, CONVENTIONS.md, the app button). The asset catalog
+/// only ships an icon set, so this asks Info.plist which file that became.
+struct AppIconTile: View {
+    private static var image: UIImage? {
+        let icons = Bundle.main.infoDictionary?["CFBundleIcons"] as? [String: Any]
+        let primary = icons?["CFBundlePrimaryIcon"] as? [String: Any]
+        let name = (primary?["CFBundleIconFiles"] as? [String])?.last ?? "AppIcon"
+        return UIImage(named: name) ?? UIImage(named: "AppIcon")
+    }
+
+    var body: some View {
+        if let ui = Self.image {
+            Image(uiImage: ui)
+                .resizable()
+                .frame(width: 56, height: 56)
+                .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                .overlay {
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .strokeBorder(Brand.ink.opacity(0.1), lineWidth: 1)
+                }
+                .accessibilityHidden(true)
         }
     }
 }
