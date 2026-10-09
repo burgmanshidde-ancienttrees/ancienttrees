@@ -8,6 +8,7 @@ storefront probed. Apple indexes the name, the subtitle and the keyword field,
 nothing else, and the keyword field was a third duplicates.
 
 Character limits: name 30, subtitle 30, keywords 100, description 4000.
+What's New is written from `git log -- ios/` only, never from the site's commits: the register fact line is web-only (cross-surface-allow.json, 2026-10-09) and a first draft claimed it for the app.
 Keywords: commas, no spaces, no word that is already in the name or subtitle,
 no plurals (Apple handles them).
 
@@ -43,7 +44,6 @@ What's new in 1.0.3 (the field was empty):
 
 ```
 City ambassadors: every city has a seat for somebody who knows its trees, and you can ask for it on the city page.
-Tree pages name the official register a tree is listed in, with a link to the record.
 Discover shows the best trees in your country, the tallest, the thickest and the tree islands.
 Every card carries the tree's age and its season.
 City maps open on the city's own trees.
@@ -119,7 +119,6 @@ What's new:
 
 ```
 Stadsambassadeurs: elke stad heeft een plek voor iemand die de bomen kent, en je vraagt die aan op de stadspagina.
-Boompagina's noemen het officiële register waarin een boom staat, met een link naar het record.
 Ontdekken toont de beste bomen in jouw land, de hoogste, de dikste en de bomeneilanden.
 Elke kaart draagt de leeftijd en het seizoen van de boom.
 Stadskaarten openen op de bomen van de stad zelf.
@@ -175,7 +174,6 @@ What's new:
 
 ```
 Stadtbotschafter: jede Stadt hat einen Platz für jemanden, der ihre Bäume kennt, und du kannst ihn auf der Stadtseite anfragen.
-Baumseiten nennen das amtliche Verzeichnis, in dem ein Baum steht, mit Link zum Eintrag.
 Entdecken zeigt die besten Bäume in deinem Land, die höchsten, die dicksten und die Bauminseln.
 Jede Karte trägt Alter und Jahreszeit des Baums.
 Stadtkarten öffnen auf den Bäumen der Stadt selbst.
@@ -231,7 +229,6 @@ What's new:
 
 ```
 Ambassadeurs de ville : chaque ville a une place pour quelqu'un qui connaît ses arbres, et vous pouvez la demander sur la page de la ville.
-Les pages d'arbres nomment le registre officiel où l'arbre est inscrit, avec un lien vers la fiche.
 Découvrir montre les meilleurs arbres de votre pays, les plus hauts, les plus gros et les îles aux arbres.
 Chaque carte porte l'âge et la saison de l'arbre.
 Les cartes de ville s'ouvrent sur les arbres de la ville elle-même.
@@ -287,7 +284,6 @@ What's new:
 
 ```
 Embajadores de ciudad: cada ciudad tiene un sitio para alguien que conoce sus árboles, y puedes pedirlo en la página de la ciudad.
-Las páginas de árboles nombran el catálogo oficial en el que figura el árbol, con enlace a la ficha.
 Descubrir muestra los mejores árboles de tu país, los más altos, los más gruesos y las islas de árboles.
 Cada tarjeta lleva la edad y la estación del árbol.
 Los mapas de ciudad se abren sobre los árboles de la propia ciudad.
@@ -343,7 +339,6 @@ What's new:
 
 ```
 Ambasciatori di città: ogni città ha un posto per chi ne conosce gli alberi, e puoi chiederlo dalla pagina della città.
-Le pagine degli alberi indicano l'elenco ufficiale in cui l'albero è iscritto, con il link alla scheda.
 Scopri mostra i migliori alberi del tuo paese, i più alti, i più grossi e le isole degli alberi.
 Ogni scheda riporta l'età e la stagione dell'albero.
 Le mappe di città si aprono sugli alberi della città stessa.
@@ -399,7 +394,6 @@ What's new:
 
 ```
 Embaixadores de cidade: cada cidade tem um lugar para quem conhece as suas árvores, e pode pedi-lo na página da cidade.
-As páginas das árvores indicam o registo oficial em que a árvore está inscrita, com ligação à ficha.
 Descobrir mostra as melhores árvores do seu país, as mais altas, as mais grossas e as ilhas de árvores.
 Cada cartão traz a idade e a estação da árvore.
 Os mapas de cidade abrem nas árvores da própria cidade.
@@ -455,7 +449,6 @@ What's new:
 
 ```
 街のアンバサダー：どの街にも、その木をよく知る人のための席があり、街のページから申し込めます。
-木のページに、その木が載っている公式台帳と記録へのリンクを表示。
 「さがす」に、あなたの国の名木、最も高い木、最も太い木、木の島を追加。
 すべてのカードに樹齢と季節を表示。
 街の地図は、その街自身の木から開きます。
