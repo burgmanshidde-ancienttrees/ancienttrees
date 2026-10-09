@@ -10380,6 +10380,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "florence",
+   "kind": "enrich",
+   "tokens": 170860,
+   "trees": 16,
+   "note": "14 MASAF ids, 1 height, 1 pin, garden hours; flo_026 id withheld on a 208 m conflict"
+  },
+  {
+   "date": "2026-10-09",
    "target": "athens",
    "kind": "enrich",
    "tokens": 137151,
