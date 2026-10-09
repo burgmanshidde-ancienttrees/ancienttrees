@@ -10164,6 +10164,14 @@
  "2026-10-09": [
   {
    "date": "2026-10-09",
+   "target": "seville",
+   "kind": "enrich",
+   "tokens": 152175,
+   "trees": 8,
+   "note": "Alcazar and cathedral hours, ficha ids on 5 trees; sevilla.org fichas unreachable"
+  },
+  {
+   "date": "2026-10-09",
    "target": "barcelona",
    "kind": "enrich",
    "tokens": 150898,
