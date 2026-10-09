@@ -53,7 +53,7 @@
         "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
         "https://opendata.porto.digital/dataset/identificacao-e-caracterizacao-das-arvores-classificadas-no-municipio-do-porto"
       ],
-      "access": "Free, public park, open daily",
+      "access": "Free, public park, open daily: 08:00 to 21:00 from April to September, 08:00 to 19:00 from October to March.",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
       "photo": {
         "url": "https://ancienttrees.app/photos/por_001-tulip-tree-of-casa-tait.jpg",
@@ -68,7 +68,12 @@
       "notes": "Protection since 1950 and 250+ year age confirmed by both the Porto city council's own parks page and an independent garden-history source. Location upgraded to confirmed: the municipality's own open-data register of classified trees carries a Liriodendron tulipifera record with the exact same legal reference and 1950-09-01 classification date cited above, giving a surveyed point about 170m from the previous whole-garden estimate. A second Liriodendron tulipifera also appears in the open-data set nearby, classified separately in 2021 (a different legal reference and date), matching the story's own note about a second, less formally distinguished tulip tree in the same grounds; the 1950 record was used since it matches this tree's own citation. Photo search 2026-07-29: no openly-licensed photo found. Checked Wikimedia Commons (full-text and category search, including the dedicated 'Liriodendron tulipifera in Portugal' category, which has no Porto entries), iNaturalist (one CC-BY-NC-only observation logged at this exact tree's coordinates, unusable), Openverse and a Flickr CC search. Still missing.",
       "location_precision": "confirmed",
       "girth_cm": 500,
-      "how_to_recognise": "You can recognise it by the trunk, five metres round, growing beside Casa Tait. A second, taller tulip tree stands nearby in the same grounds but carries no formal protection; this is the protected one."
+      "how_to_recognise": "You can recognise it by the trunk, five metres round, growing beside Casa Tait. A second, taller tulip tree stands nearby in the same grounds but carries no formal protection; this is the protected one.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/113",
+        "url": null
+      },
+      "height_m": 36
     },
     {
       "id": "por_002",
@@ -90,7 +95,7 @@
         "https://sigservices.icnf.pt/server/rest/services/BDG/AIP/MapServer/0",
         "https://www.noticiasaominuto.com/pais/1759119/icnf-classifica-de-interesse-publico-duas-arvores-seculares-na-casa-tait"
       ],
-      "access": "Free, public park, open daily",
+      "access": "Free, public park, open daily: 08:00 to 21:00 from April to September, 08:00 to 19:00 from October to March.",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
       "best_time": {
         "months": [
@@ -111,7 +116,12 @@
       "notes": "Girth (over 6 m) confirmed by both the city council's parks page and an independent garden-history source. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim, cross-checked across two independent address results that agree within 40m); at that time the tree wasn't in the municipality's classified-trees open dataset, so it stayed a building-level anchor. Location upgraded to confirmed and classification status corrected, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries a Magnolia grandiflora record at 'Rua de Entre Quintas 219, Casa Tait' (id 531) matching this tree exactly, including a height of 22.5m consistent with the city's own '22 metres' figure elsewhere; gives a surveyed point about 28m from the previous building-level estimate. A news report (noticiasaominuto.com, 21 May 2021) confirms the ICNF classified this magnolia, alongside a second tulip tree in the same grounds, as a tree of public interest that day, so the story's 'currently working through classification' line was stale and has been corrected to say when it happened. Age corrected 2026-08-01, per Hidde's dispatch order: the fuller ICNF WFS export at data/registers/portugal-icnf.json (processo AIP131218102I, same address, 0m from this pin) carries an age_register field of 200 years as of its 2021 survey, which the 2026-07-29 session's live-API check apparently didn't pull in ('No documented planting date; age is an estimate from the tree's size' was wrong, not just stale). Projected to 2026 that's roughly 205; age_estimate updated from '100+ years' to match, previous figure was a guess from girth alone and undersold it by about a century. Photo search 2026-07-29: no openly-licensed photo found despite checking Wikimedia Commons, iNaturalist (multiple observations at this exact tree, all CC-BY-NC only), Openverse and a Flickr CC search. Still missing.",
       "location_precision": "confirmed",
       "girth_cm": 450,
-      "how_to_recognise": "You can recognise it by its glossy, leathery leaves and a base over six metres round. It stands at Casa Tait, in the Jardins do Palacio de Cristal."
+      "how_to_recognise": "You can recognise it by its glossy, leathery leaves and a base over six metres round. It stands at Casa Tait, in the Jardins do Palacio de Cristal.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP131218102I",
+        "url": null
+      },
+      "height_m": 22.5
     },
     {
       "id": "por_003",
@@ -132,7 +142,7 @@
         "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
         "https://opendata.porto.digital/dataset/identificacao-e-caracterizacao-das-arvores-classificadas-no-municipio-do-porto"
       ],
-      "access": "Free, public park, open daily",
+      "access": "Free, public park, open daily: 08:00 to 21:00 from April to September, 08:00 to 19:00 from October to March.",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
       "photo": {
         "url": "https://ancienttrees.app/photos/por_003-the-metrosidero-of-the-library.jpg",
@@ -154,7 +164,11 @@
         ],
         "label": "May into July, when it blazes with red flowers, six months off from the New Zealand Christmas the tree is named for"
       },
-      "how_to_recognise": "You can recognise it as the pohutukawa, a New Zealand species that blazes with red flowers in summer. It stands near the Biblioteca Almeida Garrett, in the Jardins do Palacio de Cristal."
+      "how_to_recognise": "You can recognise it as the pohutukawa, a New Zealand species that blazes with red flowers in summer. It stands near the Biblioteca Almeida Garrett, in the Jardins do Palacio de Cristal.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP13121858I",
+        "url": null
+      }
     },
     {
       "id": "por_004",
@@ -174,7 +188,7 @@
         "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3",
         "https://pt.wikipedia.org/wiki/Jardins_do_Pal%C3%A1cio_de_Cristal"
       ],
-      "access": "Free, public park, open daily (Museu Romântico interior charges separate admission)",
+      "access": "Free, public park, open daily: 08:00 to 21:00 from April to September, 08:00 to 19:00 from October to March (Museu Romântico interior charges separate admission).",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
       "photo": {
         "url": "https://ancienttrees.app/photos/por_004-plane-of-quinta-da-macieirinha.jpg",
@@ -207,9 +221,10 @@
       "story": "Porto calls itself the City of Camellias, and the oldest proof of that claim is a set of hedges, not a single tree. More than sixty camellia specimens grow around Casa Tait inside the Jardins do Palácio de Cristal, several over a century old, planted as living, blooming partitions that section off parts of the garden the way a wall or fence would elsewhere. Camellias arrived in Portugal from China and Japan in the 18th and 19th centuries, and the country's mild, humid north proved so well suited to the plant that Portuguese growers eventually exported specimens back to camellia breeders across the rest of Europe, an unusual reversal of the typical colonial plant trade. Porto in particular leaned into the association hard enough that camellia season, roughly November through March depending on variety, now anchors a genuine tourism calendar, with garden openings and flower shows timed around peak bloom. Casa Tait's own hedges do the quieter version of that job every year: structuring the garden's paths, screening one glorieta from the next, doing exactly what a well-placed camellia has done in Portuguese gardens for two centuries. Nobody photographs a hedge the way they photograph a single dramatic tree, which may be exactly why this one has survived so many changes of garden fashion intact.",
       "verified_sources": [
         "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
-        "https://ambiente.cm-porto.pt/cidade-das-camelias/parque-de-serralves"
+        "https://ambiente.cm-porto.pt/cidade-das-camelias/parque-de-serralves",
+        "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3"
       ],
-      "access": "Free, public park, open daily",
+      "access": "Free, public park, open daily: 08:00 to 21:00 from April to September, 08:00 to 19:00 from October to March.",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
       "best_time": {
         "months": [
@@ -304,7 +319,12 @@
       "notes": "Classification status confirmed by the city council's announcement; general garden context via Wikipedia. No age, planting date or measurement found in either source, so age is left as unknown rather than guessed. Location upgraded to confirmed, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries an Arbutus xalapensis record (id 539) explicitly at 'Jardim Botânico da universidade do Porto', the only one in the whole city dataset, a genuinely distinctive species match; no legal classification reference is filled in yet there, consistent with this story's 'under formal review' status. Gives a surveyed point about 57m from the previous whole-garden estimate. Photo search 2026-07-29: no openly-licensed photo found; the two iNaturalist observations at this tree and a Flickr photo (karlgercens) from the same garden are all-rights-reserved, so none used. Still missing.",
       "location_precision": "confirmed",
       "girth_cm": 100,
-      "how_to_recognise": "You can recognise it by the reddish, peeling bark, close kin to the strawberry tree native to Portugal's own hillsides. It stands in the Jardim Botanico do Porto."
+      "how_to_recognise": "You can recognise it by the reddish, peeling bark, close kin to the strawberry tree native to Portugal's own hillsides. It stands in the Jardim Botanico do Porto.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP13121889I",
+        "url": null
+      },
+      "height_m": 16
     },
     {
       "id": "por_008",
@@ -322,9 +342,10 @@
       "story": "At around 24 metres tall, this Himalayan cedar is one of the largest of its species growing anywhere in Porto, a claim made cautiously since more than one Porto garden has a candidate for the title and no citywide survey has settled the question. It grows in the Jardins do Palácio de Cristal, high enough on the hillside that its crown clears the rooftops below and looks out over the Douro valley, and its size alone marks it out in a garden better known for camellias and formal beds than for conifers this large. Cedrus deodara is native to the western Himalayas, where it is the national tree of Pakistan and grows at altitudes most other cedars can't tolerate, and it reached European gardens in the 19th century as one of several Himalayan conifers collectors raced to introduce once British expansion into the region made seed collection possible. Its drooping, slightly weeping branch tips distinguish it at a glance from the stiffer, more horizontal cedars of Lebanon and Atlas that grow in other Porto gardens. No precise planting date has surfaced for this specimen, only its approximate current height, so its age here is an estimate rather than a documented fact. What isn't in question is the view: few other trees in the garden let you see this much of the city at once.",
       "verified_sources": [
         "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
-        "https://commons.wikimedia.org/wiki/File:%C3%81rvore_dos_Jardins_do_Pal%C3%A1cio_de_Cristal.jpg"
+        "https://commons.wikimedia.org/wiki/File:%C3%81rvore_dos_Jardins_do_Pal%C3%A1cio_de_Cristal.jpg",
+        "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3"
       ],
-      "access": "Free, public park, open daily",
+      "access": "Free, public park, open daily: 08:00 to 21:00 from April to September, 08:00 to 19:00 from October to March.",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/%C3%81rvore_dos_Jardins_do_Pal%C3%A1cio_de_Cristal.jpg",
@@ -460,7 +481,8 @@
       "story": "The road came second. This camphor is very probably one of the original plantings of the Quinta do Gólgota, the 19th-century estate that Via Panorâmica Edgar Cardoso was later cut through, which makes it the survivor of a garden that has otherwise gone. Porto's city council says as much on its own record for the tree. Camphor is an East Asian evergreen, grown for the aromatic crystals distilled from its wood, and it reached Porto with the estate owners who collected the world's trees the way other people collected porcelain. This one measures around four metres in circumference at chest height and six at the base, stands 21 metres tall and spreads a crown roughly 20 metres wide. There is a healed wound low on the trunk, the kind a tree closes over decades, and the council records it as stable. Everything else around it has changed: the estate broken up, a scenic road driven along the Douro bluff, the Faculty of Architecture built next door, and the plot the tree stands on now in private hands with development potential on the municipal record. That last fact decides the visit. The land is not open and there is no way up to the trunk. You look at this tree from the pavement of the public road, and that is the whole of it. At that size it is enough, because from the roadside a camphor of four metres reads as a green wall.",
       "verified_sources": [
         "ICNF national register (data/registers/portugal-icnf.json, processo AIP13121882I): girth 4.25m, age_register 100, last measured 2020, lugar 'Via Panorâmica Edgar Cardoso'",
-        "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/canforeira-via-panoramica-edgar-cardoso (Porto city council, Ambiente): confirms species, over 100 years old, height 21m, crown 20m, perimeter at 1.3m of 4m"
+        "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/canforeira-via-panoramica-edgar-cardoso (Porto city council, Ambiente): confirms species, over 100 years old, height 21m, crown 20m, perimeter at 1.3m of 4m",
+        "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/canforeira-via-panoramica-edgar-cardoso"
       ],
       "access": "Free to view from the public road. The tree itself stands on a privately owned plot beside Via Panorâmica Edgar Cardoso (a public scenic road along the Douro bluff, next to the FAUP campus); the municipal source notes the plot has development potential, so view it from the pavement rather than entering the land.",
       "transport": "STCP bus to Via Panorâmica Edgar Cardoso / Rua de Entre-Quintas, then a short walk along the road.",
@@ -473,7 +495,12 @@
         "status": "missing"
       },
       "girth_cm": 425,
-      "how_to_recognise": "You can recognise it by the healed wound low on the trunk and by its size, four metres round at chest height and six at the base. It stands on private land beside Via Panoramica Edgar Cardoso; view it from the public road only."
+      "how_to_recognise": "You can recognise it by the healed wound low on the trunk and by its size, four metres round at chest height and six at the base. It stands on private land beside Via Panoramica Edgar Cardoso; view it from the public road only.",
+      "official_register": {
+        "name": "Árvores de Interesse Público (Câmara Municipal do Porto / ICNF), no. AIP13121882I",
+        "url": "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/canforeira-via-panoramica-edgar-cardoso"
+      },
+      "height_m": 22
     },
     {
       "id": "por_013",
@@ -491,7 +518,8 @@
       "story": "Three named architects have worked on this small garden, and the trees outlasted every plan. Casa Primo Madeira is a late 19th-century palacete on Rua do Campo Alegre, built for the textile industrialist Primo Monteiro Madeira, altered for him by José Marques da Silva, then bought by the University of Porto and restored between 1986 and 1988 by Fernando Távora, with the garden itself remodelled by the landscape architect Francisco Caldeira Cabral. Through all of it the Atlas cedar stayed exactly where it was. On 30 November 2004 Portugal's official gazette classified it a tree of public interest together with two neighbours on the same lawn, a tulip tree and a plane, which is a high concentration of protected trees for a garden this size. The cedar measures 4.05 metres around at chest height and stands about 20 metres tall, with a crown roughly as wide as it is high. Cedrus atlantica comes from the Atlas Mountains of Morocco and Algeria, where it is now classed as endangered in the wild while growing untroubled in park after European park, an inversion that says more about grazing and logging at home than about the tree. The house is Pólo 3 of the University today. Walk in during university hours, stand on the lawn, and all three protected trees are in sight at once.",
       "verified_sources": [
         "ICNF national register (data/registers/portugal-icnf.json, processo KNJ1/443): girth 4.05m, age_register 100, classified D.R. n.º281 II Série de 30/11/2004, lugar 'Jardim da Casa do Professor'",
-        "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/cedro-do-atlas-quinta-primo-madeira (Porto city council, Ambiente): same girth (4.05m at 1.3m height), height 20m, crown 20m, address Rua do Campo Alegre nº877, Quinta Primo Madeira, over 100 years old, privately owned"
+        "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/cedro-do-atlas-quinta-primo-madeira (Porto city council, Ambiente): same girth (4.05m at 1.3m height), height 20m, crown 20m, address Rua do Campo Alegre nº877, Quinta Primo Madeira, over 100 years old, privately owned",
+        "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/cedro-do-atlas-quinta-primo-madeira"
       ],
       "access": "Free during university hours. Casa Primo Madeira is Pólo 3 of the University of Porto, a late-19th-century palacete restored 1986-88 by architect Fernando Távora with its garden remodelled by landscape architect Francisco Caldeira Cabral; it is an academic building on a walkable campus, and opened its doors to the public for Open House Porto in 2019.",
       "transport": "STCP bus along Rua do Campo Alegre; a 10-15 minute walk from the Jardim Botânico do Porto entrance.",
@@ -504,7 +532,12 @@
         "status": "missing"
       },
       "girth_cm": 405,
-      "how_to_recognise": "You can recognise it by the trunk, 4.05 metres round, one of three protected trees sharing the same lawn at Casa Primo Madeira, alongside a tulip tree and a London plane."
+      "how_to_recognise": "You can recognise it by the trunk, 4.05 metres round, one of three protected trees sharing the same lawn at Casa Primo Madeira, alongside a tulip tree and a London plane.",
+      "official_register": {
+        "name": "Árvores de Interesse Público (Câmara Municipal do Porto / ICNF), no. KNJ1/443",
+        "url": "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/cedro-do-atlas-quinta-primo-madeira"
+      },
+      "height_m": 20
     },
     {
       "id": "por_014",
@@ -561,7 +594,8 @@
       "story": "At 6.4 metres around, this plane carries one of the thickest trunks measured anywhere in Porto. It is also the shortest of the three protected trees in the garden of Casa Primo Madeira, 17 metres tall against a crown 25 metres wide, which is the profile of a tree that never had to compete for light and put its growth sideways instead. Planes are the standard street tree of half of Europe and get treated accordingly: pollarded back to knuckles every few winters, cut clear of tram wires, kept to whatever size a pavement can hold. This one was left alone behind a wall for a century, and that difference is the reason to go and look at it. Portugal's official gazette classified it a tree of public interest on 30 November 2004, in one notice with the Atlas cedar and the tulip tree on the same lawn. The house behind it was built for the textile industrialist Primo Monteiro Madeira, acquired by the University of Porto, restored by Fernando Távora in the late 1980s, and now serves as Pólo 3, an academic building on a walkable campus that opened its doors to the public for Open House Porto in 2019. Come during university hours. The three trees stand within a minute of one another.",
       "verified_sources": [
         "ICNF national register (data/registers/portugal-icnf.json, processo KNJ1/445): girth 6.4m, age_register 100, classified D.R. n.º281 II Série de 30/11/2004, lugar 'Jardim da Casa do Professor'",
-        "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/platano-hibrido-quinta-primo-madeira (Porto city council, Ambiente): species Platanus x acerifolia ('plátano híbrido'), address Rua do Campo Alegre nº877, Quinta Primo Madeira, over 100 years old, classified via the same 2004 gazette notice"
+        "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/platano-hibrido-quinta-primo-madeira (Porto city council, Ambiente): species Platanus x acerifolia ('plátano híbrido'), address Rua do Campo Alegre nº877, Quinta Primo Madeira, over 100 years old, classified via the same 2004 gazette notice",
+        "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/platano-hibrido-quinta-primo-madeira"
       ],
       "access": "Free during university hours, same site as / (Casa Primo Madeira, Pólo 3 of the University of Porto).",
       "transport": "STCP bus along Rua do Campo Alegre; a 10-15 minute walk from the Jardim Botânico do Porto entrance.",
@@ -574,7 +608,12 @@
         "status": "missing"
       },
       "girth_cm": 640,
-      "how_to_recognise": "You can recognise it by the trunk, 6.4 metres round, one of the thickest measured anywhere in Porto, short at 17 metres with a crown spreading 25 metres. It shares the lawn at Casa Primo Madeira with the cedar and tulip tree."
+      "how_to_recognise": "You can recognise it by the trunk, 6.4 metres round, one of the thickest measured anywhere in Porto, short at 17 metres with a crown spreading 25 metres. It shares the lawn at Casa Primo Madeira with the cedar and tulip tree.",
+      "official_register": {
+        "name": "Árvores de Interesse Público (Câmara Municipal do Porto / ICNF), no. KNJ1/445",
+        "url": "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/platano-hibrido-quinta-primo-madeira"
+      },
+      "height_m": 17
     },
     {
       "id": "por_016",
@@ -925,9 +964,10 @@
       "verified_sources": [
         "data/registers/portugal-icnf.json (processo AIP13121857C, classified D.R. n.º 60, II Série de 26/03/2019)",
         "https://www.100milarvores.pt/2021/10/jardins-do-palacio-de-cristal-regresse-a-expo-de-1865.html",
-        "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal"
+        "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal",
+        "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3"
       ],
-      "access": "Free, public garden, one of Porto's most visited green spaces",
+      "access": "Free, public park, open daily: 08:00 to 21:00 from April to September, 08:00 to 19:00 from October to March.",
       "transport": "Central Porto; several STCP bus routes and a short walk from Casa da Música metro station",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -940,7 +980,11 @@
         "height": 2000,
         "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-02, with the permission he gave for the first batch in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
       },
-      "how_to_recognise": "You can recognise them as seven Mexican fan palms standing in a line, all the same age, reaching almost 25 metres. They stand along the Avenida das Tilias in the Jardins do Palacio de Cristal."
+      "how_to_recognise": "You can recognise them as seven Mexican fan palms standing in a line, all the same age, reaching almost 25 metres. They stand along the Avenida das Tilias in the Jardins do Palacio de Cristal.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP13121857C",
+        "url": null
+      }
     },
     {
       "id": "por_025",
@@ -980,7 +1024,12 @@
         "status": "missing"
       },
       "girth_cm": 243,
-      "how_to_recognise": "You are looking for thirteen magnolias among 96 planes and 57 camellias: thick dark leaves with rust-brown felt on the underside, and in early summer flowers the size of a plate."
+      "how_to_recognise": "You are looking for thirteen magnolias among 96 planes and 57 camellias: thick dark leaves with rust-brown felt on the underside, and in early summer flowers the size of a plate.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP13121083C",
+        "url": null
+      },
+      "height_m": 18.83
     },
     {
       "id": "por_026",

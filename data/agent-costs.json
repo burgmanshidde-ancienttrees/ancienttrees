@@ -10348,6 +10348,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "porto",
+   "kind": "enrich",
+   "tokens": 169060,
+   "trees": 12,
+   "note": "ICNF ids on 10, 7 heights, Palacio de Cristal hours"
+  },
+  {
+   "date": "2026-10-09",
    "target": "athens",
    "kind": "enrich",
    "tokens": 137151,
