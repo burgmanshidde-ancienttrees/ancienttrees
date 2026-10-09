@@ -1,0 +1,189 @@
+{
+  "city": "Salt Lake City",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Utah's biggest London plane stands in Liberty Park, 505 centimetres round and 30.5 metres tall. Five state champion trees from Utah's big tree register make up this page. Two stand together on one corner of Washington Square, a hackberry and an Ohio buckeye about 15 metres apart. Two more grow on Temple Square: a European wych elm beside the Tabernacle, and a Cedar of Lebanon at the temple that, by the story told of it, arrived around 1949 in a suitcase. None has a recorded planting date, and if you know one, tell us.",
+  "meta_description": "Utah's champion London plane, 505 cm round, stands in Liberty Park. Five state record trees in Salt Lake City, from Washington Square to Temple Square.",
+  "question_meta": "Nobody has dated Salt Lake City's champion trees. The biggest is Utah's champion London plane in Liberty Park, 505 cm round. Where to find all five.",
+  "question_answer": "No planting date is recorded for any of the five trees we map in Salt Lake City, so the oldest is not known. The biggest is the state champion London plane in Liberty Park, 505 centimetres round and 30.5 metres tall. The best documented is the Cedar of Lebanon on Temple Square, which the Deseret News reported arrived around 1949 as a seedling seven inches high.",
+  "question_context": "All five come from the big tree register of the Utah Division of Forestry, Fire and State Lands, which measures trunk, height and crown and records no planting dates. Each one is the largest of its species in the state.\n\nFour stand downtown. The champion hackberry and the champion Ohio buckeye share the southwest corner of Washington Square, around the City and County Building. The wych elm stands at the northeast corner of the Tabernacle on Temple Square, and the Cedar of Lebanon at the southeast corner of the Salt Lake Temple, a few minutes' walk apart. The London plane is in Liberty Park, about three kilometres south-east of downtown. All five are free to visit.\n\nTemple Square has been under renovation since 2020, with work expected to finish by the end of 2026, and parts of the grounds have been closed during it. The cedar was measured in 2019, before the excavation around the temple began, so it deserves a fresh look from anyone passing.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Salt Lake City?",
+      "a": "Nobody knows. Utah's big tree register, the source for every tree on this page, measures size and records no ages. The one tree with a documented arrival is the Cedar of Lebanon on Temple Square, reported to have come to the square around 1949 as a seedling seven inches tall. If you know the history of any of the others, tell us."
+    },
+    {
+      "q": "What is the biggest tree in Salt Lake City?",
+      "a": "Of the trees we map, the state champion London plane in Liberty Park: 505 centimetres round, 30.5 metres tall, with a crown about 26 metres across, measured in 2025. It stands north of the park's tennis courts."
+    },
+    {
+      "q": "Can you see the trees on Temple Square during the renovation?",
+      "a": "Partly. The whole west side of the square, where the Tabernacle and its wych elm stand, has been open to visitors since February 2025. The cedar stands at the southeast corner of the temple, where work continues until the end of 2026, and we have no dated sighting of it since 2019. If you go, tell us what you could see."
+    }
+  ],
+  "hero_tree_id": "slc_001",
+  "trees": [
+    {
+      "id": "slc_001",
+      "name": "The Liberty Park London Planetree",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 505,
+      "height_m": 30.5,
+      "location": {
+        "address": "Liberty Park, north of the tennis courts, Salt Lake City",
+        "latitude": 40.746826,
+        "longitude": -111.875903,
+        "neighbourhood": "Liberty Park"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0",
+        "https://en.wikipedia.org/wiki/Liberty_Park_(Salt_Lake_City)"
+      ],
+      "access": "Free, in the public city park Liberty Park, open daily",
+      "transport": "Liberty Park, about 3 km south-east of downtown; walk from the park's 700 East or 900 South edges",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The biggest London plane in Utah stands north of the tennis courts in Liberty Park, and it is five metres round. The Utah Division of Forestry, Fire and State Lands lists it as the state champion of its species and as a Heritage Tree, and its foresters measured it in 2025: a trunk 505 centimetres in circumference, a height of 30.5 metres, and a crown spreading about 26 metres, not far short of its own height.\n\nThe park around it has a well-recorded history. The land belonged to Brigham Young from 1860, he is recorded planting trees on it, and Salt Lake City bought it from his estate in 1881. On 17 June 1882 the 80-acre parcel opened as Liberty Park. It is tempting to give the tree those dates, and nothing supports doing so: no source we have found says when this plane went in, or ties it to Young's planting or to the park's opening. It could be a nineteenth-century tree or a twentieth-century one that simply grew fast.\n\nWhat the record does give is the measurement, and it was taken last year, so the tree was standing then. London planes are the hybrid that lines streets from London to New York, with bark that flakes off in patches of grey, cream and olive, and this one is the largest of its kind that Utah has on its register.\n\nNobody has dated it. If you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by its size: a London plane 505 centimetres round and 30.5 metres tall, with a crown about 26 metres across. It stands in Liberty Park, north of the tennis courts.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_002",
+      "name": "The Washington Square Hackberry",
+      "species": "Common Hackberry (Celtis occidentalis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 373,
+      "height_m": 18.3,
+      "location": {
+        "address": "Washington Square, 451 S State St, Salt Lake City (southwest corner)",
+        "latitude": 40.758844,
+        "longitude": -111.887543,
+        "neighbourhood": "Downtown"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0",
+        "https://en.wikipedia.org/wiki/Salt_Lake_City_and_County_Building"
+      ],
+      "access": "Free; the public grounds around the City and County Building, open daily",
+      "transport": "Downtown; a few minutes' walk from the Library or Courthouse TRAX stops",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Utah's champion hackberry is wider than it is tall. The state's Division of Forestry, Fire and State Lands measured it in 2018 at 18.3 metres high, with a crown spreading 24.7 metres and a trunk 373 centimetres round, and the register lists it as a Heritage Tree as well as the biggest of its species in the state. A hackberry is a tree of the American interior, with warty grey bark and small berries the birds strip in autumn. This one grew into the shape of a shade tree.\n\nIt stands at the southwest corner of Washington Square, the block that holds the Salt Lake City and County Building. That building had a turbulent start: its cornerstone was laid in July 1892, it was finished in 1894 after stoppages and a financial panic, and it was designed to rival the Salt Lake Temple as the city's architectural centrepiece. When Utah became a state in 1896 it served as the first state capitol, until the present Capitol opened in 1915. How much of that the hackberry was here for, nobody has written down.\n\nThe square is public ground and free. An observation logged at this spot in May 2025 shows a tree standing there, which is the newest sign of life we have. Its neighbour about 15 metres away is the state's champion Ohio buckeye, narrower and slightly taller.\n\nNobody has recorded its age. If you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the crown, about 25 metres across on a trunk 373 centimetres round. It stands at the southwest corner of Washington Square, about 15 metres from the narrower, taller Ohio buckeye.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_003",
+      "name": "The Washington Square Ohio Buckeye",
+      "species": "Ohio Buckeye (Aesculus glabra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 213,
+      "height_m": 19.2,
+      "location": {
+        "address": "Washington Square, 451 S State St, Salt Lake City (southwest corner)",
+        "latitude": 40.759024,
+        "longitude": -111.887653,
+        "neighbourhood": "Downtown"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0",
+        "https://en.wikipedia.org/wiki/Salt_Lake_City_and_County_Building"
+      ],
+      "access": "Free; the public grounds around the City and County Building, open daily",
+      "transport": "Downtown; a few minutes' walk from the Library or Courthouse TRAX stops",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The taller of the two state champions on this corner of Washington Square is the slim one. Utah's register measured this Ohio buckeye in 2018 at 19.2 metres, almost a metre above the champion hackberry standing about 15 metres away, on a trunk of 213 centimetres and a crown only 13.7 metres across. Two record trees of two different species, on one corner of a city block.\n\nThe Ohio buckeye is a Midwestern tree, Ohio's state tree, and a long way from home on the Wasatch Front. Buckeyes are among the first trees to leaf out in spring, opening hand-shaped leaves of five leaflets, then pale yellow-green flower spikes. In autumn it drops spiny husks holding a glossy brown nut with a pale eye, the buckeye that gives it its name. The nuts are poisonous, so admire them and leave them.\n\nThe square around it holds the Salt Lake City and County Building, finished in 1894 and Utah's first state capitol from 1896 to 1915. Nobody has written down whether the buckeye was planted before or after any of that.\n\nThe register's measurement dates from 2018, and the newest observation we can find is of its neighbour, in May 2025, not of this trunk. It was standing at the last count. If you pass the southwest corner of the square, tell us how it looks, and if you know its age, tell us that too.",
+      "how_to_recognise": "You can recognise it as the narrower of two big trees at the southwest corner of Washington Square, its crown about 14 metres across. The broad hackberry stands about 15 metres away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_004",
+      "name": "The Temple Square Wych Elm",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 414,
+      "height_m": 25.6,
+      "location": {
+        "address": "Temple Square, northeast corner of the Tabernacle, Salt Lake City",
+        "latitude": 40.770774,
+        "longitude": -111.892583,
+        "neighbourhood": "Downtown"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0",
+        "https://en.wikipedia.org/wiki/Salt_Lake_Tabernacle",
+        "https://newsroom.churchofjesuschrist.org/article/temple-square-renovation-update-february-2025"
+      ],
+      "access": "Free; Temple Square grounds are open to visitors daily (grounds hours set by the owner, the church)",
+      "transport": "Downtown; Temple Square is a short walk from the Temple Square or Gallivan Center TRAX stops",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Utah's biggest wych elm is a European tree growing at the corner of one of the most recognisable buildings in the American West. The state's register measured it in 2019 at 25.6 metres tall, with a trunk 414 centimetres round and a crown 22.9 metres across, and ranks it first of its species in Utah. It stands at the northeast corner of the Tabernacle on Temple Square.\n\nWych elm is native to Europe, from the Scottish glens to the mountains of the east, and Dutch elm disease has taken enormous numbers of mature ones there. A trunk over four metres round, standing in a city block in the Great Basin, is a tree many European parks no longer have.\n\nThe building beside it was raised between 1864 and 1867, first used for the church's October 1867 conference and dedicated in 1875. No source we have found says when the elm was planted, so we cannot say how much of the Tabernacle's history it has stood beside.\n\nThe square has been under a long renovation centred on the Salt Lake Temple, expected to finish by the end of 2026. The whole west side of the square, where the Tabernacle stands, has been open to visitors again since February 2025, and an observation logged at this spot in September 2026 shows a tree standing there. Entry to the grounds is free.\n\nNobody has dated it. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by its size, 414 centimetres round and 25.6 metres tall, with a crown about 23 metres wide. It stands at the northeast corner of the Tabernacle on Temple Square.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_005",
+      "name": "The Temple Square Cedar of Lebanon",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 277,
+      "height_m": 20.1,
+      "location": {
+        "address": "Temple Square, southeast corner of the Salt Lake Temple, Salt Lake City",
+        "latitude": 40.770044,
+        "longitude": -111.891382,
+        "neighbourhood": "Downtown"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0",
+        "https://www.deseret.com/1995/4/1/20768422/silent-history-embraced-in-magnificent-limbs",
+        "https://www.deseret.com/faith/2020/1/17/21071192/lds-salt-lake-temple-mormon-reconstruction-demolished-temple-square/"
+      ],
+      "access": "Free; Temple Square grounds are open to visitors daily (grounds hours set by the owner, the church)",
+      "transport": "Downtown; short walk from the Temple Square or Gallivan Center TRAX stops",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Temple Square's famous cedar is said to have arrived around 1949 in a suitcase, seven inches tall. The Deseret News told its story in 1995: the seedling came in the luggage of a Mrs. Petty of Sugar House and was planted in a corner of the square. Its top was later sheared off, and the gardeners trained a side branch up as a new leader. When the South Visitors' Center was built, the cedar was still marked for removal by oversight; a gardener, Peter Lassig, caught the mistake, and the architect, Emil Fetzer, stopped the crews.\n\nIt was nearly lost again in 2020. As the Salt Lake Temple's seismic renovation began, crews removed many trees around the 1893 temple, and the church said a tall, 70-year-old Cedar of Lebanon would be kept, with great efforts to preserve it while they excavated around it.\n\nUtah's big tree register lists the state champion Cedar of Lebanon at the southeast corner of the temple, measured in 2019 at 20.1 metres tall, with a trunk 277 centimetres round and a crown 18.6 metres across. That is almost certainly the suitcase cedar, but no source we found names both together, so take the join as ours.\n\nThe register measured it before the excavation, and we have no dated sighting since. The renovation is expected to finish by the end of 2026 and parts of the square have been closed during the work. If you see it, tell us how it came through.",
+      "how_to_recognise": "You can recognise it as an evergreen conifer 20 metres tall on a trunk 277 centimetres round. It stands at the southeast corner of the Salt Lake Temple.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
