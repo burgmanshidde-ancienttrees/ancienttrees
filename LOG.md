@@ -14,6 +14,11 @@
 **Changed:** a reader's own tree that makes it onto Ancient Trees now says "Official" (app card, website My trees) and its page says "An official Ancient Tree"; "On the map" was wrong because your own trees are on the map too (Hidde). The map's search field now grows into the list's header as the list is dragged to full height, the Apple Maps and Google Maps convention, so search is reachable at every height (app).
 **Kept, on Hidde's word:** the website's photo thank-you still promises "you will hear what happened to yours"; people should end up with a message when their tree joins the database. Today that message is the "Official" upgrade in the app; a mail for it is not built.
 
+## 2026-10-09 (night run) - Salt Lake City opened (5), Salzburg +1
+
+**Rung:** shelf refill; 7-day visits 1,518. Rung 2 clear.
+**Done:** Salzburg write pass on the 4 READY leads: only the Walser Birnbaum (szb_021, a 2015 replacement pear, said plainly) shipped, Salzburg at 21; the other three stay leads (access unestablished, ordinary linden, no data). Salt Lake City opened from the Utah big-tree register: slc_001 to slc_005 (Liberty Park plane, two Washington Square trees, two Temple Square trees), all register-only so flagged, confirmed pins, no photos yet; slc_006 held (address and pin disagree). Preflight 0 problems. Costs logged.
+**Notes:** leads marked READY with no sources are not ready; leads.py should count them as source-less. The Temple Square cedar's survival since the 2020 works is unconfirmed, and the page asks. No tool refusals.
 
 ## 2026-10-08 (night run, third window) - Salzburg +2
 
