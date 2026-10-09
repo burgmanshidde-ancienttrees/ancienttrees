@@ -120,10 +120,10 @@ def submit_via_bing_api(entries, urls):
             sent += len(batch)
         except urllib.error.HTTPError as e:
             print("indexnow: Bing Webmaster API HTTP %d %s" % (e.code, e.read()[:200]))
-            break
+            return sent or None
         except Exception as e:
             print("indexnow: Bing Webmaster API failed: %s" % e)
-            break
+            return sent or None
     print("indexnow: %d of %d URLs sent through the Bing Webmaster API (quota left today was %d)%s"
           % (sent, len(urls), left,
              "; the other %d wait for the next deploy" % (len(urls) - sent) if len(urls) > sent else ""))
@@ -183,8 +183,10 @@ def main(argv):
     # Webmaster Tools (2026-10-03: "Why are all night runs failing?"). So a
     # refusal is a visible warning annotation on the run, not a failure.
     if refused:
+        # None: the API channel is off or broke; 0: it is up and today's
+        # quota is spent, which is not a warning, the next deploy continues.
         sent = submit_via_bing_api(entries, urls)
-        if not sent:
+        if sent is None:
             print("::warning::indexnow: %d batch(es) refused or failed; Bing has "
                   "not accepted the key for this site yet" % refused)
     return 0
