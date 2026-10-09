@@ -2,6 +2,15 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Bing hears about changed pages again, through the Webmaster API
+
+**Why:** Hidde: "fix the bing thing with this api key". Bing's IndexNow endpoint has refused our key since 10-01 (403 UserForbiddedToAccessSite), so nothing changed on the site had reached Bing for eight days, and Bing is the index ChatGPT's search reads and the one engine that never demoted us.
+
+**What I found first:** with his Bing Webmaster Tools API key, the site reads as VERIFIED, the IndexNow key file is served correctly (200, 32 bytes, also with bingbot's user agent, straight from GitHub Pages with no Cloudflare in front) and Bing's own endpoint still answers 403. So the refusal is on Bing's side and not fixable from here. Also found in the feed list: sitemap-bing.xml was already submitted and crawled (3,815 URLs), and a mistyped `sitemap-recrawl.xml.` (trailing dot) sat as a 404; removed it through the API and submitted the right URL, which Bing fetched at once (11,760 URLs, Success).
+
+**What changed:** `scripts/indexnow.py` still tries IndexNow first on every deploy (free, and it works the day Bing accepts the key), and when refused it sends the same changed pages through the Bing Webmaster URL Submission API, newest lastmod first, sitemap.xml pages before sitemap-bing.xml ones, up to what the quota endpoint says is left. The quota is the limit: 100 URLs a day, 2,300 a month, against 200 to 400 changed pages a day this week, so the rest wait for the next deploy. The key is Hidde's and lives in the `BING_API_KEY` secret, passed by `indexnow.yml`; it never enters the repository. First real run from this Mac: 346 changed URLs, 100 sent, quota read back as 0 today and 2,200 this month.
+
+**Not done:** IndexNow itself. If Bing Webmaster Tools' IndexNow section offers to generate a key for the site, that key would replace the one in the script and lift the 100-a-day ceiling; nothing in the API does that.
 ## 2026-10-09 (session) - Bing's own numbers join the digest; sitemap-bing.xml submitted
 
 **Why:** Hidde opened Bing Webmaster Tools after submitting sitemap-bing.xml and it showed 13 clicks on 231 impressions for 2 to 6 October, about 3 clicks a day, more than Google sent in the same days. Cloudflare's referrer table had shown Bing as zero since 10-01, which was its rounding to tens, not a drop; the earlier reading of "Bing went to zero" is withdrawn.
