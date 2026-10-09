@@ -10348,6 +10348,23 @@
   },
   {
    "date": "2026-10-09",
+   "target": "athens",
+   "kind": "enrich",
+   "tokens": 137151,
+   "trees": 0,
+   "wasted": 137151,
+   "note": "no Greek register imported, culture ministry domains fail DNS; nothing filled"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "pamplona",
+   "kind": "enrich",
+   "tokens": 201921,
+   "trees": 14,
+   "note": "Navarra MN ids and fichas on 6, 5 measurements, 8 river-park ids"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
