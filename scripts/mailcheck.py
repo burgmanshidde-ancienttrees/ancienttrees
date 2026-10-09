@@ -230,6 +230,7 @@ def role_in_first_mail_hits(path, text):
     have said yes or sent something (drafts/ambassador-mails.md). So a mail
     with no in_reply_to and no resend_reason, which is a first contact, must
     not name the role in any of the languages we write in."""
+    import json
     if not path.endswith(".json"):
         return []
     try:
