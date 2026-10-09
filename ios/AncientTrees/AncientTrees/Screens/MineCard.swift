@@ -17,7 +17,7 @@ struct MineCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            if let img = sightings.image(sighting) {
+            if let img = sightings.thumbnail(sighting, maxPixel: 900) {
                 Image(uiImage: img)
                     .resizable().aspectRatio(contentMode: .fill)
                     .frame(height: 170).frame(maxWidth: .infinity)

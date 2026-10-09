@@ -49,7 +49,7 @@ struct CollectionMapPage: View {
     var body: some View {
         TreeMap(trees: mine,
                 mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
-                                                 photo: sightings.image($0)) },
+                                                 photo: sightings.thumbnail($0, maxPixel: 160)) },
                 collected: Set(saved.collected.map(\.treeId)),
                 favourites: Set(saved.favourites.map(\.treeId)),
                 onSelectMine: { navigator.push = .mine($0) },

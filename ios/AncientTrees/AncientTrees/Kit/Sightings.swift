@@ -32,6 +32,7 @@
 import Foundation
 import Observation
 import UIKit
+import ImageIO
 
 /// Main-actor isolated, like every store the root holds. See Account.swift for
 /// why: SwiftUI already reads these from the main actor, so the annotation
@@ -481,6 +482,34 @@ final class Sightings {
         guard let f = s.photo else { return nil }
         return UIImage(contentsOfFile: folder.appendingPathComponent(f).path)
     }
+
+    /// The photograph scaled down to `maxPixel` on its long side, decoded once
+    /// and kept (Hidde, 2026-10-09: "de app is heel laggy"). `image()` decodes
+    /// the full camera file, twelve megapixels, and every grid tile, card and
+    /// map pin was calling it on each redraw, on the main thread: scrolling
+    /// stuttered and a tap waited for the decoding to finish. ImageIO reads a
+    /// subsampled image straight from the file, which is many times cheaper
+    /// than decoding the whole picture and shrinking it afterwards, and the
+    /// cache makes every later redraw free. Use `image()` only where the full
+    /// file is the point: sending it, sharing it, the full-screen viewer.
+    func thumbnail(_ s: Sighting, maxPixel: CGFloat = 600) -> UIImage? {
+        guard let f = s.photo else { return nil }
+        let key = "\(f)@\(Int(maxPixel))" as NSString
+        if let hit = thumbs.object(forKey: key) { return hit }
+        let url = folder.appendingPathComponent(f) as CFURL
+        guard let src = CGImageSourceCreateWithURL(url, nil) else { return nil }
+        let opts: [CFString: Any] = [
+            kCGImageSourceCreateThumbnailFromImageAlways: true,
+            kCGImageSourceCreateThumbnailWithTransform: true,
+            kCGImageSourceShouldCacheImmediately: true,
+            kCGImageSourceThumbnailMaxPixelSize: maxPixel,
+        ]
+        guard let cg = CGImageSourceCreateThumbnailAtIndex(src, 0, opts as CFDictionary) else { return nil }
+        let img = UIImage(cgImage: cg)
+        thumbs.setObject(img, forKey: key)
+        return img
+    }
+    @ObservationIgnored private let thumbs = NSCache<NSString, UIImage>()
 
     /// The photograph of the sign, when somebody took one.
     func signImage(_ s: Sighting) -> UIImage? {

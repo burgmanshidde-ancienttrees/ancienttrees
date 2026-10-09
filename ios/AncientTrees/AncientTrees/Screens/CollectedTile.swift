@@ -31,7 +31,7 @@ struct CollectedTile: View {
     @ViewBuilder private var picture: some View {
         switch kind {
         case .ours(let t):
-            if let own = sightings.ofTree(t.id).first.flatMap({ sightings.image($0) }) {
+            if let own = sightings.ofTree(t.id).first.flatMap({ sightings.thumbnail($0, maxPixel: 500) }) {
                 Image(uiImage: own).resizable().scaledToFill()
             } else if let url = t.photo?.card {
                 TreePhoto(url: url) { Brand.surfaceMuted }
@@ -39,7 +39,7 @@ struct CollectedTile: View {
                 named(t.name)
             }
         case .mine(let s):
-            if let img = sightings.image(s) {
+            if let img = sightings.thumbnail(s, maxPixel: 500) {
                 Image(uiImage: img).resizable().scaledToFill()
             } else {
                 named(s.name)

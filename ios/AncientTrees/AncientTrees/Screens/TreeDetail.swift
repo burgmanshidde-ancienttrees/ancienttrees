@@ -865,9 +865,9 @@ struct TreeDetail: View {
     /// it stays the hero, since it is the picture everybody else sees, and
     /// yours sits in its own row under the facts.
     private var heroOwnShot: UIImage? {
-        if let m = mine { return sightings.image(m) }
+        if let m = mine { return sightings.thumbnail(m, maxPixel: 1600) }
         guard tree.photo == nil, let first = yourShots.first else { return nil }
-        return sightings.image(first)
+        return sightings.thumbnail(first, maxPixel: 1600)
     }
 
     /// Your photographs, as a row of thumbnails with the day you took each.
@@ -888,7 +888,7 @@ struct TreeDetail: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 10) {
                         ForEach(shots) { s in
-                            if let img = sightings.image(s) {
+                            if let img = sightings.thumbnail(s, maxPixel: 420) {
                                 Button { viewingOwn = s } label: {
                                     VStack(alignment: .leading, spacing: 6) {
                                         Color.clear

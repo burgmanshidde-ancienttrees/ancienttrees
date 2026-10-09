@@ -51,6 +51,10 @@ struct CollectView: View {
     /// 2026-10-09: "the option to select under collected per country is
     /// really good").
     @State private var country: String?
+    /// See nearestTree. A class, so filling it while drawing changes nothing
+    /// SwiftUI watches.
+    final class PlaceMemo { var tree: [UUID: Tree?] = [:] }
+    @State private var placeMemo = PlaceMemo()
     /// Trees this account sent us through the website's form. The app's camera
     /// writes to sightings; the form writes to submissions, and until
     /// 2026-09-23 neither surface read the second one back (see
@@ -150,9 +154,7 @@ struct CollectView: View {
     private func countryOf(_ item: TimelineItem) -> String? {
         switch item {
         case .tree(let t, _): return t.country
-        case .mine(let s):
-            if let id = s.treeId, let t = catalogue.tree(id) { return t.country }
-            return catalogue.nearest(to: s.lat, s.lng, limit: 1).first?.tree.country
+        case .mine(let s): return nearestTree(s)?.country
         case .sent(let t):
             return catalogue.trees.first { $0.city == t.city }?.country
         }
@@ -163,11 +165,21 @@ struct CollectView: View {
     private func cityOf(_ item: TimelineItem) -> String? {
         switch item {
         case .tree(let t, _): return t.city
-        case .mine(let s):
-            if let id = s.treeId, let t = catalogue.tree(id) { return t.city }
-            return catalogue.nearest(to: s.lat, s.lng, limit: 1).first?.tree.city
+        case .mine(let s): return nearestTree(s)?.city
         case .sent(let t): return t.city
         }
+    }
+
+    /// The tree of ours a find of yours is placed by, worked out ONCE per
+    /// find. Asking `nearest` scans every tree we map, and the chips, the
+    /// filter and each tile's city were asking it for every find on every
+    /// redraw, which is part of why the grid stuttered (Hidde, 2026-10-09).
+    private func nearestTree(_ s: Sightings.Sighting) -> Tree? {
+        if let id = s.treeId, let t = catalogue.tree(id) { return t }
+        if let hit = placeMemo.tree[s.id] { return hit }
+        let t = catalogue.nearest(to: s.lat, s.lng, limit: 1).first?.tree
+        placeMemo.tree[s.id] = t
+        return t
     }
 
     /// Countries in the collection, most trees first.
@@ -414,7 +426,7 @@ struct CollectView: View {
         TreeMap(trees: visitedShown,
                 mine: mineShown.map {
                     (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
-                     photo: sightings.image($0)) },
+                     photo: sightings.thumbnail($0, maxPixel: 160)) },
                 collected: Set(saved.collected.map(\.treeId)),
                 favourites: Set(saved.favourites.map(\.treeId)),
                 onSelectMine: { navigator.push = .mine($0) },
@@ -1217,7 +1229,7 @@ struct CollectView: View {
         // raising the sheet. See BottomSheet.swift.
         SheetLink(route: .tree(t.id)) {
             TreeCard(tree: t, showHeart: heart,
-                     ownPhoto: sightings.ofTree(t.id).first.flatMap { sightings.image($0) },
+                     ownPhoto: sightings.ofTree(t.id).first.flatMap { sightings.thumbnail($0, maxPixel: 900) },
                      ownState: sightings.ofTree(t.id).first?.photoState(onItsPage: false))
         }
         .accessibilityIdentifier("tree-card")
