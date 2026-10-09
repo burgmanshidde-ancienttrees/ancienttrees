@@ -350,7 +350,15 @@ export const SIGNIN_JS = `
     // told apart from "few people are ever asked to", which are opposite
     // problems with opposite fixes. The detail says what asked: a save, a
     // gated vote or report, or the plain sign-in link in the bar.
-    try { at.track('signin-open', reason || (treeName ? 'save' : 'direct')); } catch (e) {}
+    // And it counts a PERSON ASKING, never a page showing (2026-10-09). The
+    // contribute page opens this dialog by itself on load for anybody signed
+    // out, which is the gate working, and for a fortnight every such load
+    // counted as a sign-in open: 340 of 394, 228 of them on one day. A number
+    // that cannot tell a tap from a pageview answers nothing, so an auto-open
+    // passes want.quiet and is not counted.
+    if (!(want && want.quiet)) {
+      try { at.track('signin-open', reason || (treeName ? 'save' : 'direct')); } catch (e) {}
+    }
   };
   document.addEventListener('click', function(e) {
     var t = e.target.closest('[data-signin]');
