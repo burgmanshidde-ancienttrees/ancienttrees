@@ -218,8 +218,8 @@ jobs:
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           echo "at=$(date -u +%Y-%m-%dT%H:%M:%S+00:00)" >> "$GITHUB_OUTPUT"
           # The same time in a file the run can Read, because the prompt may
-          # not carry an expression (2026-10-09): one `${{ }}` inside it makes
-          # GitHub evaluate the whole 22k-character prompt as an expression,
+          # not carry an expression (2026-10-09): one expression inside it makes
+          # GitHub evaluate the whole prompt as an expression,
           # and the cap is 21,000. Every knock from 11:35 UTC died at
           # validation on exactly that, "Exceeded max expression length".
           mkdir -p out/tmp
@@ -452,11 +452,7 @@ jobs:
 
             THE JOB IS THE WINDOW, NOT ONE ITEM. This window started at the
             UTC time written in out/tmp/window-start.txt (Read it first) and
-            the job is killed 120 minutes after that. Measured over the week to 2026-10-09: 46 runs averaged
-            16 minutes inside 120-minute windows, and the week's budget stood
-            at 676 of 8000 machine minutes. The runs did the right work (an
-            enrichment pass, a write pass, a city opened) and then stopped
-            after ONE of it, every time. So: when an item is merged,
+            the job is killed 120 minutes after that. When an item is merged,
             preflighted, committed and pushed, do NOT write LOG.md and stop.
             Run `date -u`; if more than 25 minutes of the window remain, go
             back to the shelf and take the next item: `python3
@@ -475,10 +471,7 @@ jobs:
             command at a time. A heredoc (python3 - <<'EOF'), a shell construct
             (for/if/while), a subshell or a pipeline into something unlisted
             cannot be matched to a single entry, so it is refused even when
-            every binary in it is allowed. Measured over the week to 2026-09-01:
-            952 refusals across 42 runs, about 23 each, and the most refused
-            names were python3, curl, cd, echo, cat and git, all of which are on
-            the allowlist. So: one command per call; write a script to a file
+            every binary in it is allowed. So: one command per call; write a script to a file
             with Write and then run it rather than piping it in; let Read, Glob
             and Grep do what you would have done with a for loop. rm is denied
             on purpose, so reach for git rm or leave the file.
@@ -486,9 +479,7 @@ jobs:
             AND NEVER `python3 -c "..."` WITH MORE THAN ONE STATEMENT IN IT.
             The matcher reads the semicolons and newlines INSIDE the quotes as
             a chain, so `python3 -c "import json; print(...)"` is refused
-            exactly like `a && b`. Measured over the week to 2026-10-09 it was
-            the single most refused shape, 9 of 46 runs each for the two
-            forms, and this prompt had been recommending it. Any Python longer
+            exactly like `a && b`. Any Python longer
             than one bare expression goes into out/tmp/<name>.py with the
             Write tool, then `python3 out/tmp/<name>.py`, one command. The
             same holds for `curl ... | wc` and `python3 ... | tail`: a pipe
@@ -514,12 +505,6 @@ jobs:
             dispatch, a verify agent per BRIEF_RESEARCH.md, before you take
             anything else off the ladder. Claim it first like any other pass.
 
-            This exists because the pile went from 366 leads on 2026-08-28 to 16
-            on 2026-09-01 while every run in between read the warning and walked
-            past it. An empty shelf is the one state that makes the cheapest rung
-            of the ladder unavailable, so refilling it is not a lane competing
-            with the others, it is what puts them back.
-
             AND WHEN NOTHING ON HAND CAN REFILL IT, YOU SCOUT OR TRANSLATE.
             prepare.py --status ends with a BACKUP block naming both: a
             register to scout and a page to translate (German first). Take
@@ -539,22 +524,10 @@ jobs:
             it has to be the one that ends with trees merged into data/cities in
             THIS window, not the one that prepares them for a later one.
 
-            Written on 2026-08-28 after a run did everything right except this:
-            it dispatched two verify passes, confirmed five trees, staged
-            fourteen more, and put nothing live.
-
             Not a claim, not pagegaps, not a survey of what could be done. Claiming a city is the note you leave BEFORE
             doing work; a run that ends holding claims and no trees has left a
             note and gone home, and it also blocks the top of the queue for the
             next knock.
-
-            This is a runner fact, not advice, and it is measured. Every
-            zero-tree run since 2026-08-15 ended the same way: is_error false,
-            47 to 122 turns, one claim commit, an hour and three quarters of a
-            two-hour window handed back. The 2026-08-28 05:28 run is the clean
-            example: 114 turns, 12.6 minutes, four cities claimed, four verify
-            passes dispatched of them ZERO. Nothing stopped it. It did the
-            paperwork for work it never started.
 
             So: if you reach turn 30 without having dispatched a write agent
             (or a verify agent, when there was nothing ready to write), stop
@@ -592,10 +565,7 @@ jobs:
             window ends. A Python snippet with a semicolon or a second line is
             refused too, inside `-c` quotes or not, because the tool list
             matches the whole command: Write it to out/tmp/<name>.py with the
-            Write tool and run `python3 out/tmp/<name>.py`. Those two shapes
-            were the most refused commands of the week of 2026-09-20 (rm in 14
-            of 23 runs, inline python in most of them) and again of the week
-            to 2026-10-09.
+            Write tool and run `python3 out/tmp/<name>.py`.
 
             AND WRITE LOG.md ONLY AFTER `git log -1` SHOWS THE TREES COMMITTED.
             The 19:40 run of 2026-09-25 verified and wrote 23 trees, had its
@@ -605,24 +575,15 @@ jobs:
 
             WHAT KIND OF WORK, and this prompt deliberately does not say. Read
             CLAUDE.md's "The course after the fortnight" paragraph in Step 0 and
-            follow it; it holds the two rules (supply from the cheap end, depth
-            only where there is demand) and it is the ONLY place they live.
-            This prompt used to restate the phase as well, which is exactly how
-            the superseded 2026-08-06 tourist-city rollout was still being
-            executed here six days after CITY_QUEUE.md replaced it: two copies of
-            a course means the one nobody edits wins. So strategy lives in
+            follow it; it is the ONLY place the course lives. Strategy lives in
             CLAUDE.md and CITY_QUEUE.md, and this prompt carries only what is
             true of THIS RUNNER and nothing else knows.
 
             Runner facts, which are the reason this prompt exists at all:
             - YOU CAN JUDGE PHOTOGRAPHS HERE. This runner reaches
               upload.wikimedia.org, its 500px and 960px thumbnails, the Commons
-              API, Openverse and iNaturalist, all 200 OK, measured 2026-09-01.
-              The line that stood here for 25 days said the opposite and it was
-              a misdiagnosis: the 2026-08-07 failures were 400s on a thumbnail
-              width Wikimedia does not serve (it renders fixed buckets, 250 330
-              500 960, which site/src/lib/images.ts already knew), read as a
-              proxy block. Nothing was ever blocked.
+              API, Openverse and iNaturalist, all 200 OK (Wikimedia serves fixed
+              thumbnail buckets only: 250 330 500 960).
               So a viewing pass is a lane you may take: `photo_fetch.py --zero
               --out <dir> --per-tree 3` downloads and exposure-scores the
               candidates, you READ the files it wrote and judge them against
@@ -641,17 +602,11 @@ jobs:
               `while`, `until` or `if` loops. The allowlist matches the WHOLE
               command string, so a chain is refused even when every binary in it
               is allowed, and a shell keyword matches nothing at all. This is not
-              a style note, it is the largest avoidable cost in the window:
-              measured 2026-09-19 over 39 runs in 7 days, 1,394 of 14,692 turns
-              were refused commands, one in eleven, and `for` appeared in 37 of
-              those 39 runs. Each refusal costs the turn plus the retry.
+              a style note, it is the largest avoidable cost in the window.
               When you need a loop, a pipeline or several steps, do it in Python
               instead: Write the code to out/tmp/<name>.py and run
               `python3 out/tmp/<name>.py`. Not a heredoc and not
-              `python3 -c "a; b"`: both are read as a chain and refused (this
-              line recommended first the heredoc, until 2026-10-03, and then
-              the `-c` form, until 2026-10-09, each time the most refused shape
-              of its week).
+              `python3 -c "a; b"`: both are read as a chain and refused.
               If a single uncompounded command is still refused, say which one in
               LOG.md. That is now a fact worth reporting rather than noise: since
               2026-09-19 the record names the whole shape, so a refusal with no

@@ -147,6 +147,27 @@ STRATEGY_IN_WORKFLOW = [
 ]
 
 
+def check_workflows_carry_no_empty_expression():
+    """No workflow may contain an empty `${{ }}`, comments included.
+
+    GitHub parses expressions everywhere in a workflow file, comments inside a
+    `run:` block too, and an empty one is "An expression was expected": the
+    whole file is refused at validation and no job starts. On 2026-10-09 the
+    comment explaining the night run's expression cap quoted the syntax as an
+    empty pair of braces, and every knock from 12:02 UTC died on it while the
+    fix that wrote it was believed to have worked. Write "an expression" in
+    words instead. Removing this needs Hidde."""
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    for path in sorted((root / ".github" / "workflows").glob("*.y*ml")):
+        for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if re.search(r"\$\{\{\s*\}\}", line):
+                out.append("%s:%d: an empty ${{ }} makes GitHub refuse the whole "
+                           "workflow file, even inside a comment; write it in words"
+                           % (path.relative_to(root), n))
+    return out
+
+
 def check_run_prompt_carries_no_expression():
     """The night-run prompt must not contain a `${{ }}` expression.
 
@@ -2787,6 +2808,7 @@ def main():
     SOURCE_ONLY = [
         check_run_prompt_forbids_compound_commands,
         check_run_prompt_carries_no_expression,
+        check_workflows_carry_no_empty_expression,
         check_scripts_are_valid_python,
         check_no_strategy_in_workflows,
         check_the_digest_never_shows_bots,
@@ -2978,6 +3000,7 @@ def main():
     failures += check_a_stored_session_is_verified_with_the_server()
     failures += check_run_prompt_forbids_compound_commands()
     failures += check_run_prompt_carries_no_expression()
+    failures += check_workflows_carry_no_empty_expression()
     failures += check_app_downloads_are_their_own_block()
     failures += check_one_city_order()
     failures += check_copy_test_renders()
