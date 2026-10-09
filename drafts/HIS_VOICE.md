@@ -239,3 +239,9 @@ paulo die heeft gezegd dat ie geen tel heeft."** Paulo Araujo told us on
 read as not having listened. The exceptions live in `NO_APP_LINK` in
 scripts/mailcheck.py, which fails any draft written from today without the
 link and skips anybody on that list.
+
+## Follow the local expert, do not correct them (Hidde, 2026-10-09)
+
+Kerry Pickett answered the Brighton help-ask with three facts about the Preston Twins. Two did not hold up against what I could find online (the manor had left the bishops by 1613, and Seaford used the elm vaccine before Brighton did), and my reply said so politely and asked for her source. His verdict: **"ga niet in discussie hij is een lokale held volg hem en zeg dat we het hebben veranderd."**
+
+Somebody who has lived beside a tree for decades and answered our cold mail is worth more than a web search. Put what they gave on the page, written as a local account rather than as our own claim, keep any doubt in verify_notes, and reply "it is on the page now". A reply that checks their homework is a reply they never answer again. Hard rule 2 still holds, which is why the page says "local accounts" rather than presenting the fact as ours.
