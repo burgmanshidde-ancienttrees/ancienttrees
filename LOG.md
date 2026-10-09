@@ -29,7 +29,9 @@
 **Rung:** enrichment pass (default work). Visits last 7 days: 1,690 visits, 2,130 page views.
 **Lisbon:** 8 trees got ICNF register name and process number, 6 got girth and height from the register, the two ombus got height only (their register girths are buttress masses, not girth at 1.30 m). The two pin upgrades were refused by enrich.py (no source URL). Ajuda jacarandas closed nothing (not in the register, official pages 403/404).
 **Amsterdam:** 17 trees got register ids (15 national, 2 Amsterdam Bijzondere Bomen), 12 got measurements, Van Loon got an access line and an Oct-Nov best_time. Left open: ams_004, 005, 007, and the ARTIS opening hours (JS-rendered pages).
-**Cost:** two verify passes, ~150k tokens each. Preflight 0 problems on both.
+**Amsterdam batch 2:** 12 more trees got national register ids, 4 girths from the Amsterdam register (two pin upgrades refused again for a missing source URL). Amstelveen trees have no measurement source.
+**Barcelona:** 20 trees got Arbres d'interès local ids and heights, 3 got girths, all from the imported register (barcelona.cat is blocklisted). The register lists bcn_010 (Misericòrdia palms) as private ownership; the courtyard is a public cultural complex, so the access line stands.
+**Cost:** four verify passes, ~145k tokens each. Preflight 0 problems on all.
 
 ## 2026-10-09 (session) - Brighton follows Kerry Pickett; BUND Leipzig thanked
 
