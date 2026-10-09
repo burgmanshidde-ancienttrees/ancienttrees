@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Bing's own numbers join the digest; sitemap-bing.xml submitted
+
+**Why:** Hidde opened Bing Webmaster Tools after submitting sitemap-bing.xml and it showed 13 clicks on 231 impressions for 2 to 6 October, about 3 clicks a day, more than Google sent in the same days. Cloudflare's referrer table had shown Bing as zero since 10-01, which was its rounding to tens, not a drop; the earlier reading of "Bing went to zero" is withdrawn.
+
+**What changed:** `scripts/bing_search.py` reads GetRankAndTrafficStats and GetQueryStats from the Bing Webmaster API; `bing_section()` in daily_digest.py prints a per-day clicks and impressions table with the top Bing queries, as its own block under the Google table; data-digest.yml passes `BING_WEBMASTER_KEY`. Without the secret the block prints nothing. Parsing tested offline; the live table arrives with the first digest after the secret is set.
+
+**FOR HIDDE:** the key was pasted into chat, so generate a fresh one in Bing Webmaster Tools (gear, API access, API Key) and store it as the `BING_WEBMASTER_KEY` repository secret in GitHub; this container can reach neither GitHub's secrets endpoint nor Bing's API, so it cannot be done or tested from here. In Bing's Sitemaps screen, delete the errored `sitemap-recrawl.xml.` row (submitted with a trailing full stop on 10-01; that file is for Google only).
+
 ## 2026-10-09 (night run) - Singapore enrichment pass, no new trees
 
 **Rung:** 2 checked first: the newest red deploy (04:18) was superseded by later runs already in flight from other sessions, so nothing to fix. Then the enrichment lane (prepare.py named Singapore). The write shelf had nothing mergeable (the four "ready" trees are held by the rich/photo-or-pin rules).

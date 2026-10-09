@@ -55,6 +55,7 @@ jobs:
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
           ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+          BING_WEBMASTER_KEY: ${{ secrets.BING_WEBMASTER_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/daily_digest.py ${{ inputs.force && '--force' || '' }}
 
