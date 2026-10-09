@@ -3273,3 +3273,5 @@ Hidde: "the cards are not like instagram - like 9 trees in rows of 3 i think tha
 **AllTrails and Airbnb:** saved lists, the things you have NOT done yet, stay as cards with a name and the facts, because you are choosing between them.
 
 **What we do:** Collected is a 3-column grid of 3:4 tiles, edge to edge, no names (the name is on the tree's page); a tree you added carries its one label ("Your tree", "Approved"), because that is what the photograph cannot say. Want to visit was to keep its cards, because it is a plan; Hidde chose the same grid for it the same day ("maak van want to visit maar hetzelfde raster"), so both lanes are one shape. Read 2026-10-09.
+
+**Text on a tile: none (Hidde, 2026-10-09: "doe maar de insta versie").** Tried the same day behind a flag: the city in small white type on a dark fade, Polarsteps' trip covers. He chose Instagram's bare grid; the place is on the tree's page.
