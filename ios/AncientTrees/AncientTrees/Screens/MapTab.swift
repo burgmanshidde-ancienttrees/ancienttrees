@@ -341,6 +341,19 @@ struct MapTab: View {
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
         } header: {
+                // THE SEARCH FIELD STAYS WHEN THE LIST IS THE PAGE (Hidde,
+                // 2026-10-09: "do the search thing"). Apple Maps and Google
+                // Maps keep search at the top of the sheet at every height;
+                // ours floated over the map and faded with it, so a list
+                // dragged all the way up had no way to search. It grows into
+                // the sheet's header with the same drag that fades the
+                // floating one out, so the two never show at once.
+                pageSearchField
+                    .frame(height: 62 * pageProgress, alignment: .bottom)
+                    .clipped()
+                    .opacity(pageProgress)
+                    .allowsHitTesting(pageProgress > 0.5)
+                    .accessibilityHidden(pageProgress < 0.5)
                 // The count is the header now, outside the scroll view: it stays
                 // visible while the list scrolls and it is the handle that makes
                 // the sheet draggable again once it has (2026-08-25).
@@ -1137,7 +1150,13 @@ struct MapTab: View {
             .prefix(14).map(\.key))
     }
 
-    private var searchField: some View {
+    /// The same field, in the sheet's header at full height, under its own
+    /// identifier so a test can tell the two apart.
+    private var pageSearchField: some View { searchButton(id: "map-search-field-page") }
+
+    private var searchField: some View { searchButton(id: "map-search-field") }
+
+    private func searchButton(id: String) -> some View {
         Button { searching = true } label: {
             HStack(spacing: 8) {
                 Image(systemName: "magnifyingglass")
@@ -1161,7 +1180,7 @@ struct MapTab: View {
             .contentShape(.capsule)
         }
         .buttonStyle(.plain)
-        .accessibilityIdentifier("map-search-field")
+        .accessibilityIdentifier(id)
     }
 
 }

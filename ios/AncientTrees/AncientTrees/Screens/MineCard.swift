@@ -42,7 +42,11 @@ struct MineCard: View {
                     // filled one the day it makes the map, and nothing said
                     // about anything in between or about a no.
                     if sighting.status == .published {
-                        Label("On the map", systemImage: "checkmark.seal.fill")
+                        // "Official", not "On the map" (Hidde, 2026-10-09: "on
+                        // the map is not a great term, your trees are also on
+                        // the map"). His own word from the day before: a tree
+                        // "upgrades to an ancient tree official".
+                        Label("Official", systemImage: "checkmark.seal.fill")
                             .font(.caption2.weight(.semibold))
                             .foregroundStyle(.white)
                             .padding(.horizontal, 8).padding(.vertical, 4)

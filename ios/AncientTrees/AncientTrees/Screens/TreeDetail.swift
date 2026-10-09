@@ -1596,7 +1596,7 @@ struct TreeDetail: View {
 
     private func headline(for status: Sightings.Status) -> String {
         switch status {
-        case .published: "On the map"
+        case .published: "An official Ancient Tree"
         case .declined: "Yours only"
         default: "Added to your trees"
         }
@@ -1605,7 +1605,7 @@ struct TreeDetail: View {
     private func sentence(for status: Sightings.Status) -> String {
         switch status {
         case .published:
-            "This one made the map everybody sees."
+            "We checked it and added it to Ancient Trees for everybody to find."
         case .declined:
             // Honest, and it never was before: a declined tree carried the
             // sentence about us still looking at it, which is a promise we had
