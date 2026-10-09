@@ -341,19 +341,6 @@ struct MapTab: View {
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
         } header: {
-                // THE SEARCH FIELD STAYS WHEN THE LIST IS THE PAGE (Hidde,
-                // 2026-10-09: "do the search thing"). Apple Maps and Google
-                // Maps keep search at the top of the sheet at every height;
-                // ours floated over the map and faded with it, so a list
-                // dragged all the way up had no way to search. It grows into
-                // the sheet's header with the same drag that fades the
-                // floating one out, so the two never show at once.
-                pageSearchField
-                    .frame(height: 62 * pageProgress, alignment: .bottom)
-                    .clipped()
-                    .opacity(pageProgress)
-                    .allowsHitTesting(pageProgress > 0.5)
-                    .accessibilityHidden(pageProgress < 0.5)
                 // The count is the header now, outside the scroll view: it stays
                 // visible while the list scrolls and it is the handle that makes
                 // the sheet draggable again once it has (2026-08-25).
@@ -665,6 +652,17 @@ struct MapTab: View {
     /// arrangement Google Maps and Apple Maps both use.
     @ViewBuilder private var sheet: some View {
         VStack(spacing: 0) {
+            // THE SEARCH FIELD STAYS WHEN THE LIST IS THE PAGE (Hidde,
+            // 2026-10-09: "do the search thing"). Apple Maps and Google Maps
+            // keep search reachable at every height; ours floated over the map
+            // and faded with it, so a list dragged all the way up had no way to
+            // search. At full height it heads the list, the way a search field
+            // heads a list in iOS Settings. In the list and not in the sheet's
+            // header, because the header is the grip that drags the sheet back
+            // down, and a button there takes the drag (CI caught exactly that).
+            if sheetHeight == .full && !searching {
+                pageSearchField.padding(.bottom, 6)
+            }
             if shownWalk != nil && sheetHeight != .peek { walkCard }
             if let t = arrived, sheetHeight != .peek { arrivalCard(t) }
             list
