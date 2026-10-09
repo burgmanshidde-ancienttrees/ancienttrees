@@ -943,13 +943,14 @@
       "girth_cm": 208,
       "location": {
         "address": "Place du Grand Sablon, 1000 Brussels",
-        "latitude": 50.841,
-        "longitude": 4.3557,
+        "latitude": 50.84066238191115,
+        "longitude": 4.356102161849973,
         "neighbourhood": "Sablon"
       },
       "story": "The Grand Sablon is better known for its antiques market and its chocolate shops than for a tree, which is exactly why the Turkish hazel standing in it is easy to walk past. The region's official inventory of remarkable trees ranks it eleventh of its species anywhere in Brussels, 17 metres tall with a 16 metre crown and a trunk 208 centimetres around, recorded as fully healthy and holding, in the register's own words, a central position in the square's landscape.\n\nTurkish hazel is the one hazel that grows as a proper tree rather than a multi-stemmed shrub, with a straight trunk and a tidy, pyramidal crown that made it a favourite for European city squares long before anyone thought to protect individual specimens. It flowers in late winter, small and easy to miss, and carries its nuts through summer inside a spiky husk that looks nothing like a supermarket hazelnut.\n\nOnly the official register documents this specific tree so far, which is stated here rather than smoothed over. What the register gives is precise and consistent (rank, dimensions, a health check), which is a different kind of confidence than a second written source, and one this page is honest about.",
       "verified_sources": [
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables"
+        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
+        "https://sites.heritage.brussels/fr/trees/3429"
       ],
       "access": "Free, public square, open at all hours",
       "transport": "Metro to Louise or Gare Centrale, short walk",
@@ -961,10 +962,21 @@
       },
       "curation_status": "flagged",
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3429) names this tree; no second independent source found this pass, exactly as the leads file recorded. Shipped flagged per CLAUDE.md Step 2 (a tree with only one source ships flagged rather than waiting). No age estimate: no published growth factor for Corylus colurna in this climate was found this pass.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by its straight trunk and tidy pyramidal crown, 17 metres tall and 2.08 metres round. It stands near the centre of Place du Grand Sablon.",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 208 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 208 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 3429",
+        "url": "https://sites.heritage.brussels/fr/trees/3429"
+      },
+      "height_m": 17,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://sites.heritage.brussels/fr/trees/3429",
+        "date": "2026-10-09",
+        "moved_m": 47
+      }
     },
     {
       "id": "bru_024",
@@ -1007,7 +1019,12 @@
       "girth_cm": 166,
       "how_to_recognise": "You can recognise it by its 1.66 metre trunk growing from the raised terrace garden of the Mont des Arts. It stands between the Royal Library and the Avenue des Arts.",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 166 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 166 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 3438",
+        "url": "https://sites.heritage.brussels/fr/trees/3438"
+      },
+      "height_m": 17
     },
     {
       "id": "bru_025",
@@ -1040,7 +1057,12 @@
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3440) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
       "location_precision": "confirmed",
       "girth_cm": 321,
-      "how_to_recognise": "You can recognise it by its unusually wide 3.21 metre trunk, a Tree of Heaven kept rather than pulled out. It stands near the Mont des Arts garden, close to its oak and Caucasian wingnut."
+      "how_to_recognise": "You can recognise it by its unusually wide 3.21 metre trunk, a Tree of Heaven kept rather than pulled out. It stands near the Mont des Arts garden, close to its oak and Caucasian wingnut.",
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 3440",
+        "url": "https://sites.heritage.brussels/fr/trees/3440"
+      },
+      "height_m": 11
     },
     {
       "id": "bru_026",
@@ -1082,7 +1104,12 @@
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 7292) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
       "location_precision": "confirmed",
       "girth_cm": 173,
-      "how_to_recognise": "You can recognise it by long, pendulous strings of winged seeds hanging through late summer, on a 1.73 metre trunk. It stands near the Mont des Arts garden, close to its oak and ailanthus."
+      "how_to_recognise": "You can recognise it by long, pendulous strings of winged seeds hanging through late summer, on a 1.73 metre trunk. It stands near the Mont des Arts garden, close to its oak and ailanthus.",
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 7292",
+        "url": "https://sites.heritage.brussels/fr/trees/7292"
+      },
+      "height_m": 10
     },
     {
       "id": "bru_027",
@@ -1114,7 +1141,12 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 140,
-      "how_to_recognise": "You can recognise it by the surprise: from a distance it reads as a shrub, and close up it has a trunk 1.40 metres round. It stands on the western lawns towards Rue aux Laines, with its own signpost."
+      "how_to_recognise": "You can recognise it by the surprise: from a distance it reads as a shrub, and close up it has a trunk 1.40 metres round. It stands on the western lawns towards Rue aux Laines, with its own signpost.",
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 638",
+        "url": "https://sites.heritage.brussels/fr/trees/638"
+      },
+      "height_m": 10
     },
     {
       "id": "bru_028",
@@ -1125,8 +1157,8 @@
       "age_max": null,
       "location": {
         "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
-        "latitude": 50.83777,
-        "longitude": 4.35714,
+        "latitude": 50.83770492747664,
+        "longitude": 4.357139267365676,
         "neighbourhood": "Sablon / Bruxelles-Ville"
       },
       "story": "Brussels files this tree under a name and a nationality that are both wrong. The register lists it as Sophora japonica. Botanists moved the species to Styphnolobium some time ago and most registers have not caught up, and it was never Japanese in the first place: it is native to China and Korea, and reached Europe by way of Japanese gardens, which is how it collected an epithet that has now outlived two corrections.\n\nIn China it was the tree of the imperial court, planted at palaces and tombs, and by tradition it was a pagoda tree on Coal Hill in Beijing that the last Ming emperor hanged himself from in 1644, with rebel armies already inside the city.\n\nThis one is a quieter proposition. Surveyors walked Parc d'Egmont in July 2019 and entered it on the region's inventory of remarkable trees, where it ranks inside the top thirty of its species for Brussels. There are not many to rank. The pagoda tree has never been planted here in quantity, which is exactly how a specimen of no great size ends up on an official list.\n\nThat survey logged one point on the lawns for the trees it added rather than a coordinate per trunk, so the pin puts you in the right corner of a park you can cross in three minutes and no closer. Nobody has recorded its age.",
@@ -1152,8 +1184,19 @@
       },
       "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7111), one of three trees the July 2019 Egmont survey added. That register is a government source and is accepted as such under the register-layer rule; no independent second source names this tree, so the entry is flagged. Location_precision is approximate on purpose: the survey recorded a single shared coordinate (50.83777, 4.35714) for the three trees it entered rather than pinning each trunk, and the story says so in plain words. Girth is recorded for the group at up to 164 cm and is not attributed per tree here, because the source does not attribute it per tree either. No age in the register and no growth-rate basis, so none was derived. Deliberately shares no claim with bru_008, the region's sixth-thickest pagoda tree at the Abbaye de la Cambre: different specimen, different ranking, no overlapping content.",
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "Light, open, pinnate foliage on a modest trunk, on the lawns towards the Passage de Milan gate. The pin is the survey's shared point for three trees rather than this trunk, so expect to look around once you are through the gate."
+      "location_precision": "confirmed",
+      "how_to_recognise": "Light, open, pinnate foliage on a modest trunk, on the lawns towards the Passage de Milan gate. The pin is the survey's shared point for three trees rather than this trunk, so expect to look around once you are through the gate.",
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 7111",
+        "url": "https://sites.heritage.brussels/fr/trees/7111"
+      },
+      "girth_cm": 164,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://sites.heritage.brussels/fr/trees/7111",
+        "date": "2026-10-09",
+        "moved_m": 7
+      }
     },
     {
       "id": "bru_029",
@@ -1164,8 +1207,8 @@
       "age_max": null,
       "location": {
         "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
-        "latitude": 50.83777,
-        "longitude": 4.35714,
+        "latitude": 50.83762395198289,
+        "longitude": 4.356415259879761,
         "neighbourhood": "Sablon / Bruxelles-Ville"
       },
       "story": "A weeping ash has no top of its own. The weeping habit is a mutation that will not throw a leading shoot, so these trees are almost always grafted onto the head of an ordinary ash stem: the trunk rises as far as the grafter's join and then stops, and everything above it falls back down in a dome. Find the change in the bark somewhere around head height and you are looking at the seam between two different plants.\n\nThis one grows on the lawns of Parc d'Egmont and went onto the region's inventory of remarkable trees after a survey in July 2019. It ranks inside the top thirty of its kind recorded in Brussels.\n\nThe species underneath the graft is having a bad century. Ash dieback, a fungus out of east Asia, has worked its way across Belgium over the past fifteen years and killed ash trees at a rate European forestry has no answer to. Nobody can promise what that means for this one, which is an argument for going to look at it rather than against.\n\nThe July survey logged a single coordinate for the trees it added rather than one per trunk, so the pin marks the group and not this stem. No age is recorded, here or anywhere: the inventory measures and ranks, and lets the years alone.",
@@ -1183,8 +1226,19 @@
       },
       "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7109), one of three trees the July 2019 Egmont survey added, and flagged for that reason; the register is a government source and is accepted as such under the register-layer rule. Location_precision is approximate: the survey recorded one shared coordinate (50.83777, 4.35714) for the three 2019 additions instead of pinning each trunk, and the story states that plainly. The register writes the name as Fraxinus excelsior f. pendula; the species field uses the cultivar form 'Pendula' to match the convention already live in the corpus (arn_006, yor_001). Girth for the 2019 group is recorded at up to 164 cm and is not attributed to this tree, because the source does not attribute it either. No age and no growth-rate basis, so none was derived. Nothing in the story asserts anything about this tree's own health: ash dieback is named as a fact about the species in Belgium, not as a diagnosis of this specimen.",
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "A small domed tree whose branches all curve back towards the ground, with a straight trunk that stops abruptly at the graft. The pin is the 2019 survey's shared point for three trees, so look around the lawns near the Passage de Milan gate."
+      "location_precision": "confirmed",
+      "how_to_recognise": "A small domed tree whose branches all curve back towards the ground, with a straight trunk that stops abruptly at the graft. The pin is the 2019 survey's shared point for three trees, so look around the lawns near the Passage de Milan gate.",
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 7109",
+        "url": "https://sites.heritage.brussels/fr/trees/7109"
+      },
+      "girth_cm": 134,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://sites.heritage.brussels/fr/trees/7109",
+        "date": "2026-10-09",
+        "moved_m": 53
+      }
     },
     {
       "id": "bru_030",
@@ -1195,8 +1249,8 @@
       "age_max": null,
       "location": {
         "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
-        "latitude": 50.83777,
-        "longitude": 4.35714,
+        "latitude": 50.83743507798278,
+        "longitude": 4.35550672829566,
         "neighbourhood": "Sablon / Bruxelles-Ville"
       },
       "story": "A wild honey locust grows thorns hard enough to go through a tyre. Some are twenty centimetres long and branched like antlers. The usual explanation is that they are about thirteen thousand years out of date, sized for the giant ground sloths and mastodons that browsed North American woodland until the end of the last ice age, ate the tree's long twisted pods for the sweet pulp inside and carried the seed off in their guts. The pods still drop every autumn. Now they rot where they land.\n\nThis tree has none of it. The inermis on its register entry means unarmed, and the thornless form is the only one anybody puts in a city park.\n\nSurveyors added this specimen to the region's inventory of remarkable trees after a pass through Parc d'Egmont in July 2019, and it sits inside the top thirty of its species for Brussels. None of the three trees that survey added is big: the thickest measures 164 centimetres round.\n\nThe survey gave one coordinate for the group instead of a pin per tree, so the exact spot inside the park is not on record. Look for the finest leaves in Egmont, leaflets small enough that the shade under a honey locust is barely shade. Nobody has dated it.",
@@ -1214,8 +1268,19 @@
       },
       "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7110), the third of the three trees the July 2019 Egmont survey added, and flagged for that reason; the register is a government source, accepted as such under the register-layer rule. Location_precision is approximate: the survey recorded one shared coordinate (50.83777, 4.35714) for all three 2019 additions rather than pinning each trunk, and the story says so. The 164 cm figure is the register's maximum for the 2019 group and is stated in the story as exactly that, a group maximum, not as this tree's own girth. No age in the register and no growth-rate basis available, so none was derived. The megafauna account of the thorns is presented in the story as the usual explanation rather than as settled fact, because it is a hypothesis about the species and not a claim about this tree. Common name follows the corpus convention of giving a distinct variant its own common name (compare arn_006 Weeping Japanese Pagoda Tree, yor_001 Narrow-Leaved Ash 'Lentiscifolia'); plain Gleditsia triacanthos is already live as Honey Locust in five other cities and is untouched.",
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "Very fine, doubly pinnate foliage that casts almost no shadow, on a smooth trunk with no thorns on it. The pin is the 2019 survey's shared point for three trees, so look across the lawns near the Passage de Milan gate."
+      "location_precision": "confirmed",
+      "how_to_recognise": "Very fine, doubly pinnate foliage that casts almost no shadow, on a smooth trunk with no thorns on it. The pin is the 2019 survey's shared point for three trees, so look across the lawns near the Passage de Milan gate.",
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 7110",
+        "url": "https://sites.heritage.brussels/fr/trees/7110"
+      },
+      "girth_cm": 140,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://sites.heritage.brussels/fr/trees/7110",
+        "date": "2026-10-09",
+        "moved_m": 121
+      }
     },
     {
       "id": "bru_031",
@@ -1246,7 +1311,12 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "Broad compound leaves on long red-tinged stalks, unlike the horse chestnut and lime beside it; the trunk is the thickest of the three and stands closest to the square's antique stalls.",
-      "girth_cm": 342
+      "girth_cm": 342,
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 3426",
+        "url": "https://sites.heritage.brussels/fr/trees/3426"
+      },
+      "height_m": 19
     },
     {
       "id": "bru_032",
@@ -1275,7 +1345,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 795",
+        "url": "https://sites.heritage.brussels/fr/trees/795"
+      },
+      "height_m": 30
     },
     {
       "id": "bru_033",
@@ -1312,7 +1387,12 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
-      }
+      },
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 774",
+        "url": "https://sites.heritage.brussels/fr/trees/774"
+      },
+      "height_m": 34
     },
     {
       "id": "bru_034",
@@ -1349,7 +1429,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 7286",
+        "url": "https://sites.heritage.brussels/fr/trees/7286"
+      },
+      "height_m": 25
     },
     {
       "id": "bru_035",
@@ -1379,7 +1464,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Inventaire des arbres remarquables de la Region de Bruxelles-Capitale (heritage.brussels), no. 3423",
+        "url": "https://sites.heritage.brussels/fr/trees/3423"
+      },
+      "height_m": 21
     }
   ],
   "hero_tree_id": "bru_003"

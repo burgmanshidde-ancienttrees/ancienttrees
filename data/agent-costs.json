@@ -10276,6 +10276,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "brussels",
+   "kind": "enrich",
+   "tokens": 158055,
+   "trees": 13,
+   "note": "batch 2: records, measurements on 13 trees, 4 register pins"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
